@@ -1,0 +1,87 @@
+# xVerminz World of Warcraft UI
+
+## Addons included
+
+- [!Beautycase1](https://www.wowinterface.com/downloads/info19675-Beautycase.html)
+- [!Beautycase2](https://www.wowinterface.com/downloads/info19675-Beautycase.html)
+- !BugGrabber
+- !Colorz
+- Align
+- Aptechka
+- AptechkaOptions
+- AtlasLootClassic
+- AtlasLootClassic_Collections
+- AtlasLootClassic_Crafting
+- AtlasLootClassic_DungeonsAndRaids
+- AtlasLootClassic_Factions
+- AtlasLootClassic_Maps
+- AtlasLootClassic_Options
+- AtlasLootClassic_PvP
+- Auctionator
+- BiSTracker
+- BlizzMove
+- BugSack
+- cargBags_Nivaya
+- ChocolateBar
+- ClassicAuraDurations
+- ClassicAutoDismount
+- ClassicCastbars
+- ClassicCastbars_Options
+- ClassicSpellActivations
+- DBM-AQ20
+- DBM-AQ40
+- DBM-Azeroth
+- DBM-BWL
+- DBM-Core
+- DBM-DefaultSkin
+- DBM-GUI
+- DBM-MC
+- DBM-Naxx
+- DBM-Onyxia
+- DBM-Party-Classic
+- DBM-StatusBarTimers
+- DBM-ZG
+- Demonly-FP
+- Details
+- Details_TinyThreat
+- EavesDrop
+- gmMoney
+- InFlight
+- InFlight_Load
+- Leatrix_Maps
+- Leatrix_Plus
+- Lorti UI Classic
+- ls_Toasts
+- MikScrollingBattleText
+- MonkeyBuddy
+- MonkeyLibrary
+- MonkeyQuest
+- MonkeyQuestLog
+- MSBTOptions
+- nBuff
+- NeatPlates
+- NeatPlatesHub
+- NeatPlatesWidgets
+- NeatPlates_Neon
+- nMainbar
+- nMinimap
+- nPower
+- nTooltip
+- oGlow
+- OmniCC
+- OmniCC_Config
+- picoFPS
+- Postal
+- Questie
+- RealMobHealth
+- SharedMedia
+- TellMeWhen
+- TellMeWhen_Options
+- TradeSkillMaster
+- UnitFramesImproved
+- xDamageFont
+- xVerminz
+
+## Known issues
+
+
