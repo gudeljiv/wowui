@@ -1,0 +1,13 @@
+
+EavesDropStatsDB = {
+	["profileKeys"] = {
+		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
+		["Judawise - Golemagg"] = "Judawise - Golemagg",
+	},
+	["profiles"] = {
+		["Greenwise - Golemagg"] = {
+		},
+		["Judawise - Golemagg"] = {
+		},
+	},
+}

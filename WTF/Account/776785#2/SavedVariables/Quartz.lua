@@ -1,0 +1,74 @@
+
+Quartz3DB = {
+	["namespaces"] = {
+		["Swing"] = {
+			["profiles"] = {
+				["Default"] = {
+					["swingheight"] = 1,
+					["y"] = 470,
+					["x"] = 0,
+					["remainingtext"] = false,
+					["durationtext"] = false,
+					["swingposition"] = "bottom",
+				},
+			},
+		},
+		["Buff"] = {
+		},
+		["Interrupt"] = {
+		},
+		["Flight"] = {
+		},
+		["Mirror"] = {
+		},
+		["Player"] = {
+			["profiles"] = {
+				["Default"] = {
+					["h"] = 20,
+					["w"] = 300,
+					["y"] = 334.256591796875,
+					["border"] = "None",
+					["fontsize"] = 12,
+					["x"] = 900.256469726562,
+					["texture"] = "Details Flat",
+				},
+			},
+		},
+		["GCD"] = {
+		},
+		["EnemyCasts"] = {
+			["profiles"] = {
+				["Default"] = {
+					["instanceonly"] = false,
+				},
+			},
+		},
+		["Range"] = {
+		},
+		["Latency"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Vermin - Golemagg"] = "Default",
+		["Vermins - Stonespine"] = "Default",
+		["Verminz - Golemagg"] = "Default",
+		["Vermins - Dreadmist"] = "Default",
+		["Gheylord - Dreadmist"] = "Default",
+		["Ozrencic - Golemagg"] = "Default",
+		["Paydo - Dreadmist"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["modules"] = {
+				["Tradeskill"] = false,
+				["Buff"] = false,
+				["Interrupt"] = false,
+				["Mirror"] = false,
+				["GCD"] = false,
+				["Timer"] = false,
+				["Range"] = false,
+				["Latency"] = false,
+			},
+		},
+	},
+}

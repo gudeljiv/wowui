@@ -1,0 +1,7 @@
+## Interface: 40300
+## Title: |cffff0000x|rDamageFont
+## Author: Xzatly
+## Version: 40300
+## Notes: Change your Damage Font.
+
+xDamageFont.lua 

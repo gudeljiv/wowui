@@ -1,0 +1,104 @@
+
+MaoRUIDB = {
+	["AutoSell"] = true,
+	["KeystoneInfo"] = {
+	},
+	["NumberFormat"] = 2,
+	["SystemInfoType"] = 1,
+	["ChatFilterList"] = "%*",
+	["totalGold"] = {
+		["Stonespine"] = {
+			["Vermins"] = {
+				0, -- [1]
+				"WARRIOR", -- [2]
+			},
+		},
+	},
+	["RepairType"] = 1,
+	["AutoBubbles"] = false,
+	["GuildSortOrder"] = true,
+	["SkadaRequest"] = true,
+	["VersionCheck"] = true,
+	["NameplateFilter"] = {
+		{
+		}, -- [1]
+		{
+		}, -- [2]
+	},
+	["ResetDetails"] = true,
+	["Timestamp"] = false,
+	["DetectVersion"] = "0.1.4",
+	["UIScale"] = 0.8,
+	["LockUIScale"] = false,
+	["DBMRequest"] = false,
+	["BWRequest"] = true,
+	["GuildSortBy"] = 1,
+	["TexStyle"] = 3,
+}
+ShiGuangDB = {
+	["BaudErrorFrameConfig"] = {
+	},
+	["WhisperPop"] = {
+		["help"] = 1,
+		["sound"] = 1,
+		["time"] = 1,
+	},
+	["MingyAutoComplete"] = false,
+	["FriendGroupsCollapsed"] = {
+	},
+	["FriendGroupsHideOffline"] = true,
+}
+CurrencyTrackingDB = nil
+VLegionToDo = nil
+CastbarsDB = nil
+iKeystonesDB = nil
+iKeystonesConfig = nil
+DialogKeyDB = {
+	["profileKeys"] = {
+		["Vermins - Stonespine"] = "Default",
+	},
+	["global"] = {
+		["shownBindWarning"] = true,
+	},
+}
+AzeritePowerWeightsDB = nil
+TinyRosterDB = {
+	["TradeSkillFrame.SearchBox"] = {
+		["depands"] = "Blizzard_TradeSkillUI",
+	},
+	["MountJournalSearchBox"] = {
+		["depands"] = "Blizzard_Collections",
+	},
+	["EncounterJournalSearchBox"] = {
+		["depands"] = "Blizzard_EncounterJournal",
+	},
+	["BankItemSearchBox"] = {
+	},
+	["AchievementFrame.searchBox"] = {
+		["depands"] = "Blizzard_AchievementUI",
+	},
+	["BrowseName"] = {
+		["depands"] = "Blizzard_AuctionUI",
+	},
+	["ToyBox.searchBox"] = {
+		["depands"] = "Blizzard_Collections",
+	},
+	["PetJournalSearchBox"] = {
+		["depands"] = "Blizzard_Collections",
+	},
+	["BagItemSearchBox"] = {
+	},
+	["HeirloomsJournalSearchBox"] = {
+		["depands"] = "Blizzard_Collections",
+	},
+	["GuildItemSearchBox"] = {
+		["depands"] = "Blizzard_GuildBankUI",
+	},
+	["WardrobeCollectionFrameSearchBox"] = {
+		["depands"] = "Blizzard_Collections",
+	},
+	["SendMailNameEditBox"] = {
+		["list"] = {
+		},
+	},
+}

@@ -1,0 +1,5 @@
+VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Heroic Strike
+/startattack
+/cast Heroic Strike
+END

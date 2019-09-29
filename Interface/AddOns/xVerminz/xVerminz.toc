@@ -1,0 +1,18 @@
+## Interface: 54000
+## Title: |cffff0000x|rxVerminz Custom Settings 
+## Author: Verminz
+## Version: 54000
+
+buffs.lua
+chat.lua
+darker.lua
+customscale.lua
+customcontainers.lua
+autocarrot.lua
+grooplootframe.lua
+xVerminz.lua
+bindings.lua
+bestfood.lua
+errors.lua
+
+garbagecollector.lua

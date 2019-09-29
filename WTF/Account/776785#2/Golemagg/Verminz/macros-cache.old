@@ -1,0 +1,50 @@
+VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Taunt
+/startattack
+/cast [@mouseover, exists][@target, exists][] Taunt
+END
+VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Cleave
+/startattack
+/cast Cleave
+/cast Bloodrage
+/cast Overpower
+END
+VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Charge
+/cast [nostance:1]Battle Stance
+/startattack
+/cast Charge
+/cast Rend
+END
+VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Shield Bash
+/startattack
+/eq Cobalt Buckler
+/eq Grunt Axe of Stamina
+/cast Shield Bash
+END
+VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Defensive Stance
+/cast [nostance:2]Defensive Stance
+/eq Cobalt Buckler
+/eq Wingblade
+END
+VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Battle Stance
+/cast [nostance:1]Battle Stance
+/equip Battle Slayer of the Monkey
+END
+VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Thunder Clap
+/cast [nostance:1]Battle Stance
+/startattack
+/cast Thunder Clap
+END
+VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Heroic Strike
+/startattack
+/cast Heroic Strike
+/cast Bloodrage
+/cast Overpower
+END

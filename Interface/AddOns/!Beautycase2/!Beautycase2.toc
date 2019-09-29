@@ -1,0 +1,4 @@
+## Interface: 40300
+## Title: !|cff99CCFFBeautycase (new)|r
+
+!Beautycase2.lua
