@@ -18,7 +18,6 @@
 - AtlasLootClassic_Options
 - AtlasLootClassic_PvP
 - Auctionator
-- BiSTracker
 - BlizzMove
 - BugSack
 - cargBags_Nivaya
