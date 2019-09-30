@@ -2,8 +2,7 @@
 
 ## Addons included
 
-- [!Beautycase1](https://www.wowinterface.com/downloads/info19675-Beautycase.html) (old version)
-- [!Beautycase2](https://www.wowinterface.com/downloads/info19675-Beautycase.html) (new version - not used but i keep it just in case)
+- [!Beautycase](https://www.wowinterface.com/downloads/info19675-Beautycase.html)
 - !BugGrabber
 - !Colorz
 - Align

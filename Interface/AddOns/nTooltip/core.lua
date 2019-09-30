@@ -2,7 +2,7 @@
 local _, nTooltip = ...
 local cfg = nTooltip.Config
 
-local beautyBorderLoaded = IsAddOnLoaded("!Beautycase1")
+local beautyBorderLoaded = IsAddOnLoaded("!Beautycase")
 
 local select = select
 local format = string.format
