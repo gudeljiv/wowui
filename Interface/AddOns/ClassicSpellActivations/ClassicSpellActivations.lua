@@ -65,12 +65,23 @@ local spellNamesByID = {
     [14269] = "MongooseBite",
     [14270] = "MongooseBite",
     [14271] = "MongooseBite",
+
+    [879] = "Exorcism",
+    [5614] = "Exorcism",
+    [5615] = "Exorcism",
+    [10312] = "Exorcism",
+    [10313] = "Exorcism",
+    [10314] = "Exorcism",
+
+    [24275] = "HammerOfWrath",
+    [24274] = "HammerOfWrath",
+    [24239] = "HammerOfWrath",
 }
 
 f:RegisterEvent("PLAYER_LOGIN")
 function f:PLAYER_LOGIN()
 
-    if class == "WARRIOR" or class == "ROGUE" or class == "HUNTER" or class == "WARLOCK" then
+    if class == "WARRIOR" or class == "ROGUE" or class == "HUNTER" or class == "WARLOCK" or class == "PALADIN" then
         self:RegisterEvent("SPELLS_CHANGED")
         self:SPELLS_CHANGED()
 
@@ -120,6 +131,7 @@ local function FindAura(unit, spellID, filter)
     end
 end
 
+local hadShadowTrance
 function f:SPELLS_CHANGED()
     if class == "WARRIOR" then
         self:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
@@ -143,6 +155,8 @@ function f:SPELLS_CHANGED()
         if ns.findHighestRank("Execute") then
             self:RegisterEvent("PLAYER_TARGET_CHANGED")
             self:RegisterUnitEvent("UNIT_HEALTH", "target")
+            self.PLAYER_TARGET_CHANGED = ns.ExecuteCheck
+            self.UNIT_HEALTH = ns.ExecuteCheck
         else
             self:UnregisterEvent("PLAYER_TARGET_CHANGED")
             self:UnregisterEvent("UNIT_HEALTH")
@@ -156,6 +170,23 @@ function f:SPELLS_CHANGED()
             self:UnregisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
             self:SetScript("OnUpdate", nil)
         end
+
+    elseif class == "PALADIN" then
+        if ns.findHighestRank("Exorcism") then
+            self:RegisterEvent("PLAYER_TARGET_CHANGED")
+            self.PLAYER_TARGET_CHANGED = ns.PaladinExorcismCheck
+            self:SetScript("OnUpdate", self.timerOnUpdate)
+
+            if ns.findHighestRank("HammerOfWrath") then
+                self:RegisterUnitEvent("UNIT_HEALTH", "target")
+                self.PLAYER_TARGET_CHANGED = function(...)
+                    ns.PaladinExorcismCheck(...)
+                    ns.HOWCheck(...)
+                end
+                self.UNIT_HEALTH = ns.HOWCheck
+            end
+        end
+
     elseif class == "HUNTER" then
         self:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
         self:SetScript("OnUpdate", self.timerOnUpdate)
@@ -175,7 +206,6 @@ function f:SPELLS_CHANGED()
     elseif class == "WARLOCK" then
         if IsPlayerSpell(18094) or IsPlayerSpell(18095) then
             self:RegisterUnitEvent("UNIT_AURA", "player")
-            local hadShadowTrance
             self.UNIT_AURA = function(self, event, unit)
                 local name, _, _, _, duration, expirationTime = FindAura(unit, 17941, "HELPFUL") -- Shadow Trance
                 local haveShadowTrance = name ~= nil
@@ -253,6 +283,8 @@ local reverseSpellRanks = {
     Execute = { 20662, 20661, 20660, 20658, 5308 },
     ShadowBolt = { 25307, 11661, 11660, 11659, 7641, 1106, 1088, 705, 695, 686 },
     MongooseBite = { 14271, 14270, 14269, 1495 },
+    Exorcism = { 10314, 10313, 10312, 5615, 5614, 879 },
+    HammerOfWrath = { 24239, 24274, 24275 },
 }
 function ns.findHighestRank(spellName)
     for _, spellID in ipairs(reverseSpellRanks[spellName]) do
@@ -287,7 +319,19 @@ function f:Deactivate(spellName)
         self:FanoutEvent("SPELL_ACTIVATION_OVERLAY_GLOW_HIDE", highestRankSpellID)
     end
 end
+
+local _OnUpdateCounter = 0
+local periodicCheck = nil
 function f.timerOnUpdate(self, elapsed)
+    _OnUpdateCounter = _OnUpdateCounter + elapsed
+    if _OnUpdateCounter < 0.2 then return end
+    _OnUpdateCounter = 0
+
+
+    if periodicCheck then
+        periodicCheck()
+    end
+
     local now = GetTime()
     for spellName, state in pairs(activations) do
         if state.expirationTime and now >= state.expirationTime then
@@ -296,7 +340,7 @@ function f.timerOnUpdate(self, elapsed)
     end
 end
 
-function f:COMBAT_LOG_EVENT_UNFILTERED(self, event)
+function f:COMBAT_LOG_EVENT_UNFILTERED(event)
     local timestamp, eventType, hideCaster,
     srcGUID, srcName, srcFlags, srcFlags2,
     dstGUID, dstName, dstFlags, dstFlags2,
@@ -312,7 +356,7 @@ end
 -- WARRIOR
 -----------------
 
-function f:UNIT_HEALTH(event, unit)
+function ns.ExecuteCheck(self, event, unit)
     if UnitExists("target") and not UnitIsFriend("player", "target") then
         local h = UnitHealth("target")
         local hm = UnitHealthMax("target")
@@ -325,7 +369,6 @@ function f:UNIT_HEALTH(event, unit)
         f:Deactivate("Execute")
     end
 end
-f.PLAYER_TARGET_CHANGED = f.UNIT_HEALTH
 
 function ns.CheckOverpower(eventType, isSrcPlayer, isDstPlayer, ...)
     if isSrcPlayer then
@@ -454,5 +497,80 @@ function ns.CheckMongooseBite(eventType, isSrcPlayer, isDstPlayer, ...)
         if spellName == LocalizedMongooseBite then
             f:Deactivate("MongooseBite", 5)
         end
+    end
+end
+
+-----------------
+-- PALADIN
+-----------------
+
+do
+    local LocalDemonTypes = { "Demon", "Dämon", "Demonio", "Demonio", "Démon", "Demone", "Demônio", "Демон", "악마", "恶魔", "惡魔" }
+    local LocalUndeadTypes = { "Undead", "Untoter", "No-muerto", "No-muerto", "Mort-vivant", "Non Morto", "Renegado", "Нежить", "언데드", "亡灵", "不死族" }
+    local LocIDs = {
+        ["enUS"] = 1,
+        ["deDE"] = 2,
+        ["esES"] = 3,
+        ["esMX"] = 4,
+        ["frFR"] = 5,
+        ["itIT"] = 6,
+        ["ptBR"] = 7,
+        ["ruRU"] = 8,
+        ["koKR"] = 9,
+        ["zhCN"] = 10,
+        ["zhTW"] = 11,
+    }
+    local UndeadType
+    local DemonType
+    local locID = LocIDs[GetLocale()]
+    if locID then
+        UndeadType = LocalUndeadTypes[locID]
+        DemonType = LocalDemonTypes[locID]
+    end
+
+    local exorcismTicker
+    local exorcismCooldownState
+    local exorcismTickerFunc = function()
+        local startTime, duration, enabled = GetSpellCooldown(8092) -- fistt Rank
+        local newState
+        if duration <= 1.5 then
+            newState = false
+        else
+            newState = true
+        end
+
+        if newState ~= exorcismCooldownState then
+            if newState == false then
+                f:Activate("Exorcism", 5)
+            else
+                f:Deactivate("Exorcism")
+            end
+        end
+        exorcismCooldownState = newState
+    end
+
+    function ns.PaladinExorcismCheck(self, event)
+        if UnitExists("target") and (UnitCreatureType("target") == UndeadType or UnitCreatureType("target") == DemonType) then
+            exorcismCooldownState = not exorcismCooldownState
+            exorcismTickerFunc()
+            periodicCheck = exorcismTickerFunc
+        else
+            f:Deactivate("Exorcism")
+            periodicCheck = nil
+        end
+    end
+end
+
+function ns.HOWCheck(self, event, unit)
+    if UnitExists("target") and not UnitIsFriend("player", "target") then
+        local h = UnitHealth("target")
+        local hm = UnitHealthMax("target")
+        if h > 0 and h/hm <= 0.2 then
+            f:Activate("HammerOfWrath", 10)
+        else
+            f:Deactivate("HammerOfWrath")
+        end
+    else
+        f:Deactivate("HammerOfWrath")
     end
 end

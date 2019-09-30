@@ -1,6 +1,7 @@
 # ClassicSpellActivations
 
-## [1.13.7](https://github.com/rgd87/ClassicSpellActivations/tree/1.13.7) (2019-08-15)
-[Full Changelog](https://github.com/rgd87/ClassicSpellActivations/compare/1.13.6...1.13.7)
+## [1.13.9](https://github.com/rgd87/ClassicSpellActivations/tree/1.13.9) (2019-09-30)
+[Full Changelog](https://github.com/rgd87/ClassicSpellActivations/compare/1.13.8...1.13.9)
 
-- actually ElvUI support  
+- Hammer of Wrath  
+- Fixed Shadow Bolt getting stuck  
