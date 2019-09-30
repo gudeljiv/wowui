@@ -1,14 +1,10 @@
-VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
-#showtooltip Taunt
-/startattack
-/cast [@mouseover, exists][@target, exists][] Taunt
-END
 VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Cleave
 /startattack
 /cast Cleave
 /cast Bloodrage
 /cast Overpower
+/cast Revenge
 END
 VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Charge
@@ -47,4 +43,10 @@ VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 /cast Heroic Strike
 /cast Bloodrage
 /cast Overpower
+/cast Revenge
+END
+VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Taunt
+/startattack
+/cast [@mouseover, exists][@target, exists][] Taunt
 END

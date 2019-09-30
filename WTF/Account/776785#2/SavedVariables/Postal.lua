@@ -1,5 +1,32 @@
 
 Postal3DB = {
+	["profileKeys"] = {
+		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
+		["Blooq - Genesis"] = "Blooq - Genesis",
+		["Tukac - Genesis"] = "DEFAULT",
+		["Korupcija - Genesis"] = "Korupcija - Genesis",
+		["Verminz - Golemagg"] = "Verminz - Golemagg",
+		["Gheylord - Dreadmist"] = "Gheylord - Dreadmist",
+		["Pepecocorita - Genesis"] = "Pepecocorita - Genesis",
+		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
+		["Mulatz - Genesis"] = "Mulatz - Genesis",
+		["Spija - Genesis"] = "Spija - Genesis",
+		["Handrmandr - Genesis"] = "DEFAULT",
+		["Vermins - Stonespine"] = "Vermins - Stonespine",
+		["Verminz - Genesis"] = "DEFAULT",
+		["Vermins - Dreadmist"] = "Vermins - Dreadmist",
+		["Elohssa - Stonespine"] = "Elohssa - Stonespine",
+		["Pitchwise - Golemagg"] = "Pitchwise - Golemagg",
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Pitchwise - Genesis"] = "Pitchwise - Genesis",
+		["Paydo - Dreadmist"] = "Paydo - Dreadmist",
+		["Konza - Genesis"] = "Konza - Genesis",
+		["Judawise - Golemagg"] = "Judawise - Golemagg",
+		["Korupcija - Stonespine"] = "Korupcija - Stonespine",
+		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
+		["Ozrencic - Golemagg"] = "Ozrencic - Golemagg",
+		["Whatevs - Stonespine"] = "Whatevs - Stonespine",
+	},
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
@@ -64,33 +91,6 @@ Postal3DB = {
 			},
 		},
 	},
-	["profileKeys"] = {
-		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
-		["Blooq - Genesis"] = "Blooq - Genesis",
-		["Tukac - Genesis"] = "DEFAULT",
-		["Korupcija - Genesis"] = "Korupcija - Genesis",
-		["Verminz - Golemagg"] = "Verminz - Golemagg",
-		["Gheylord - Dreadmist"] = "Gheylord - Dreadmist",
-		["Pepecocorita - Genesis"] = "Pepecocorita - Genesis",
-		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
-		["Mulatz - Genesis"] = "Mulatz - Genesis",
-		["Spija - Genesis"] = "Spija - Genesis",
-		["Handrmandr - Genesis"] = "DEFAULT",
-		["Vermins - Stonespine"] = "Vermins - Stonespine",
-		["Verminz - Genesis"] = "DEFAULT",
-		["Vermins - Dreadmist"] = "Vermins - Dreadmist",
-		["Elohssa - Stonespine"] = "Elohssa - Stonespine",
-		["Pitchwise - Golemagg"] = "Pitchwise - Golemagg",
-		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
-		["Pitchwise - Genesis"] = "Pitchwise - Genesis",
-		["Korupcija - Stonespine"] = "Korupcija - Stonespine",
-		["Konza - Genesis"] = "Konza - Genesis",
-		["Judawise - Golemagg"] = "Judawise - Golemagg",
-		["Paydo - Dreadmist"] = "Paydo - Dreadmist",
-		["Vermin - Golemagg"] = "Vermin - Golemagg",
-		["Ozrencic - Golemagg"] = "Ozrencic - Golemagg",
-		["Whatevs - Stonespine"] = "Whatevs - Stonespine",
-	},
 	["profiles"] = {
 		["Dotwise - Golemagg"] = {
 		},
@@ -107,6 +107,7 @@ Postal3DB = {
 		["Kosturko - Golemagg"] = {
 		},
 		["Mulatz - Genesis"] = {
+			["OpenSpeed"] = 0.3,
 			["BlackBook"] = {
 				["recent"] = {
 					"Verminz|Genesis|Horde", -- [1]
@@ -114,7 +115,6 @@ Postal3DB = {
 					"Handrmandr|Genesis|Horde", -- [3]
 				},
 			},
-			["OpenSpeed"] = 0.3,
 		},
 		["Spija - Genesis"] = {
 		},
@@ -126,17 +126,13 @@ Postal3DB = {
 		},
 		["Pitchwise - Golemagg"] = {
 		},
-		["Greenwise - Golemagg"] = {
+		["Konza - Genesis"] = {
 		},
-		["Korupcija - Stonespine"] = {
+		["Pitchwise - Genesis"] = {
 		},
 		["Vermin - Golemagg"] = {
 		},
 		["DEFAULT"] = {
-			["OpenSpeed"] = 0.3,
-			["OpenAll"] = {
-				["KeepFreeSpace"] = 2,
-			},
 			["BlackBook"] = {
 				["recent"] = {
 					"Malinac|Genesis|Horde", -- [1]
@@ -153,14 +149,18 @@ Postal3DB = {
 				},
 				["DisableBlizzardAutoComplete"] = true,
 			},
+			["OpenAll"] = {
+				["KeepFreeSpace"] = 2,
+			},
+			["OpenSpeed"] = 0.3,
 		},
 		["Pepecocorita - Genesis"] = {
 		},
 		["Judawise - Golemagg"] = {
 		},
-		["Pitchwise - Genesis"] = {
+		["Korupcija - Stonespine"] = {
 		},
-		["Konza - Genesis"] = {
+		["Greenwise - Golemagg"] = {
 		},
 		["Ozrencic - Golemagg"] = {
 		},

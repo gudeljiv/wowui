@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 166,
 	["lastSanitation"] = 3,
+	["session"] = 167,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVerminz\\buffs.lua:158: Usage: hooksecurefunc([table,] \"function\", hookfunc)",
@@ -93,8 +93,8 @@ BugGrabberDB = {
 		}, -- [11]
 		{
 			["message"] = "(null)",
-			["session"] = 131,
 			["time"] = "2019/09/29 17:23:09",
+			["session"] = 131,
 			["counter"] = 12,
 		}, -- [12]
 		{
