@@ -45,7 +45,6 @@
 - [TellMeWhen](https://www.wowinterface.com/downloads/info25152-TellMeWhenClassic.html)
 - [TradeSkillMaster](https://www.tradeskillmaster.com/)
 - [UnitFramesImproved](https://www.wowisclassic.com/en/addons/unitframesimproved/)
-- xDamageFont
 - xVerminz (my set of scripts)
 
 ## Known issues
