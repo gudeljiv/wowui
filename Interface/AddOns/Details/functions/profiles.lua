@@ -916,6 +916,7 @@ local default_profile = {
 		disable_stretch_button = false,
 		disable_alldisplays_window = false,
 		damage_taken_everything = false,
+		force_class_icons = false,
 	
 	--> info window
 		player_details_window = {

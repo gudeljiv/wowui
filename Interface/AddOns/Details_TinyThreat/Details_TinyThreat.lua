@@ -19,7 +19,10 @@ local _UnitGroupRolesAssigned = function (unitId)
 		if (guid) then
 			local playerSpec = Details.cached_specs [guid]
 			if (playerSpec) then
-				return Details:GetRoleFromSpec (playerSpec, guid) or "NONE"
+				
+				local role = Details:GetRoleFromSpec (playerSpec, guid) or "NONE"
+				--print ("tt:24", "playerSpec", playerSpec, "role", role)
+				return role
 			end
 		end
 		return "NONE"
