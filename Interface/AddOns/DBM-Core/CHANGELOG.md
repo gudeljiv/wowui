@@ -1,6 +1,6 @@
 # Deadly Boss Mods Core
 
-## [1.13.9](https://github.com/DeadlyBossMods/DBM-Classic/tree/1.13.9) (2019-09-16)
-[Full Changelog](https://github.com/DeadlyBossMods/DBM-Classic/compare/1.13.8...1.13.9)
+## [1.13.13b](https://github.com/DeadlyBossMods/DBM-Classic/tree/1.13.13b) (2019-09-26)
+[Full Changelog](https://github.com/DeadlyBossMods/DBM-Classic/compare/1.13.13...1.13.13b)
 
-- Handle this fix better, to avoid Lua errors, closes #12  
+- Revert "Optimized checkForSafeSender"  
