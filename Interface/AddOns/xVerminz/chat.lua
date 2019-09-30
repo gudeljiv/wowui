@@ -184,20 +184,29 @@ chat:SetScript("OnEvent", function()
 	ChatFrame5Tab:Show()
 	ChatFrame5Background:SetAlpha(0.6)
 	
-	ChatFrame1.ClearAllPoints = function() end
+	-- ChatFrame1.ClearAllPoints = function() end
 	ChatFrame1.SetPoint = function() end
+	-- ChatFrame1.SetClampRectInsets = function() end
 	ChatFrame1Background.SetAlpha = function() end
-	ChatFrame2.ClearAllPoints = function() end
+	
+	-- ChatFrame2.ClearAllPoints = function() end
 	ChatFrame2.SetPoint = function() end
+	-- ChatFrame2.SetClampRectInsets = function() end
 	ChatFrame2Background.SetAlpha = function() end
-	ChatFrame3.ClearAllPoints = function() end
+	
+	-- ChatFrame3.ClearAllPoints = function() end
 	ChatFrame3.SetPoint = function() end
+	-- ChatFrame3.SetClampRectInsets = function() end
 	ChatFrame3Background.SetAlpha = function() end
-	ChatFrame4.ClearAllPoints = function() end
+	
+	-- ChatFrame4.ClearAllPoints = function() end
 	ChatFrame4.SetPoint = function() end
+	-- ChatFrame4.SetClampRectInsets = function() end
 	ChatFrame4Background.SetAlpha = function() end
-	ChatFrame5.ClearAllPoints = function() end
+
+	-- ChatFrame5.ClearAllPoints = function() end
 	ChatFrame5.SetPoint = function() end
+	-- ChatFrame5.SetClampRectInsets = function() end
 	ChatFrame5Background.SetAlpha = function() end
 
 	for i,v in pairs({

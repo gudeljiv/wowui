@@ -24,7 +24,7 @@ frame:SetScript("OnEvent", function(self, event, ...)
 )
 
 
-font = "Interface\\AddOns\\xVerminz\\media\\fontAtari.ttf"
+local font = "Interface\\AddOns\\xVerminz\\media\\fontAtari.ttf"
 RAID_CLASS_COLORS["SHAMAN"] = {r = 050 / 255, g = 111 / 255, b = 255 / 255, colorStr = "ff326fff"}
 
 local f = CreateFrame("Frame")

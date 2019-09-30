@@ -1,3 +1,5 @@
+
+local font = "Interface\\AddOns\\xVerminz\\media\\fontAtari.ttf"
 -----------------------------------------------------------------------------------------------------------------------------
 -- Garbage Collector
 -----------------------------------------------------------------------------------------------------------------------------
@@ -9,7 +11,6 @@ cgt.text = cgt:CreateFontString(nil,"ARTWORK")
 cgt.text:SetFont(font, 11, "NONE")
 cgt.text:SetPoint("RIGHT", CustomContainer_Combat, "RIGHT", -3, 2)
 cgt:Hide()
-
 
 local counter = 0
 

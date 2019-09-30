@@ -3,8 +3,8 @@ TargetHealthFrame:SetWidth(1)
 TargetHealthFrame:SetHeight(1) 
 TargetHealthFrame:SetAlpha(0.9);
 TargetHealthFrame:SetPoint("CENTER", UIParent, "CENTER", 100, -40)
-TargetHealthFrame.text = f:CreateFontString(nil,"ARTWORK") 
-TargetHealthFrame.text:SetFont("Fonts\\ARIALN.ttf", 20, "THINOUTLINE")
+TargetHealthFrame.text = TargetHealthFrame:CreateFontString(nil,"ARTWORK") 
+TargetHealthFrame.text:SetFont("Fonts\\ARIALN.ttf", 28, "THINOUTLINE")
 TargetHealthFrame.text:SetPoint("CENTER", TargetHealthFrame, "CENTER", 0,0)
 
 local PlayerHealthFrame = CreateFrame("Frame","PlayerHealthFrame",UIParent)
@@ -12,8 +12,8 @@ PlayerHealthFrame:SetWidth(1)
 PlayerHealthFrame:SetHeight(1) 
 PlayerHealthFrame:SetAlpha(0.9);
 PlayerHealthFrame:SetPoint("CENTER", UIParent, "CENTER", -100, -40)
-PlayerHealthFrame.text = f:CreateFontString(nil,"ARTWORK") 
-PlayerHealthFrame.text:SetFont("Fonts\\ARIALN.ttf", 20, "THINOUTLINE")
+PlayerHealthFrame.text = PlayerHealthFrame:CreateFontString(nil,"ARTWORK") 
+PlayerHealthFrame.text:SetFont("Fonts\\ARIALN.ttf", 28, "THINOUTLINE")
 PlayerHealthFrame.text:SetPoint("CENTER", PlayerHealthFrame, "CENTER", 0,0)
 
 local function PHealthShow()

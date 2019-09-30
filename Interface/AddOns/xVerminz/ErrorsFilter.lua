@@ -14,7 +14,8 @@ local messages = {
 	"You are too far away!",
 	"Out of range",
 	"You are facing the wrong way",
-	"Target to close",
+	"Target too close",
+	"You are in combat",
 }
 
 local enable

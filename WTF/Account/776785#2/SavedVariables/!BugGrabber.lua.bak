@@ -1,131 +1,31 @@
 
 BugGrabberDB = {
+	["session"] = 200,
 	["lastSanitation"] = 3,
-	["session"] = 177,
 	["errors"] = {
 		{
-			["message"] = "Interface\\AddOns\\xVerminz\\buffs.lua:158: Usage: hooksecurefunc([table,] \"function\", hookfunc)",
-			["time"] = "2019/09/29 17:23:06",
-			["locals"] = "(*temporary) = <table> {\n UpdateOnBarHighlightMarksBySpell = <function> defined @Interface\\FrameXML\\ActionButton.lua:70\n ERR_OUT_OF_CHI = \"Not enough chi\"\n DH_HAVOC_CORE_ABILITY_2 = \"Strong melee attack that consumes Fury. If it critical strikes, some Fury is refunded.\"\n MerchantItem9ItemButtonStock = MerchantItem9ItemButtonStock {\n }\n GetTrainerServiceTypeFilter = <function> defined =[C]:-1\n UNIT_NAMES_COMBATLOG_TOOLTIP = \"Color unit names.\"\n SetTrainerServiceTypeFilter = <function> defined =[C]:-1\n LE_GAME_ERR_CHAT_RAID_RESTRICTED_TRIAL = 741\n SPELL_FAILED_CUSTOM_ERROR_71 = \"This partygoer wants to dance with you.\"\n LE_GAME_ERR_PET_SPELL_TARGETS_DEAD = 399\n ERROR_CLUB_TICKET_COUNT_AT_MAX_COMMUNITY = \"Can't create any more invite links for this group.\"\n RecruitAFriendFrame = RecruitAFriendFrame {\n }\n CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture = CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture {\n }\n ERR_TRADE_EQUIPPED_BAG = \"You can't trade equipped bags.\"\n PVP_RANK_6_1 = \"Corporal\"\n MultiBarLeftButton7 = MultiBarLeftButton7 {\n }\n InterfaceOptionsNamesPanelUnitNameplatesShowAll = InterfaceOptionsNamesPanelUnitNameplatesShowAll {\n }\n VideoOptionsFrameCategoryFrameButton17ToggleHighlightTexture = VideoOptionsFrameCategoryFrameButton17ToggleHighlightTexture {\n }\n MerchantItem2AltCurrencyFrameItem1Text = MerchantItem2AltCurrencyFrameItem1Text {\n }\n OPTION_TOOLTIP_ACTION_BUTTON_USE_KEY_DOWN = \"Action button keybinds will respond on key down, rather than on key up.\"\n BINDING_NAME_NAMEPLATES = \"Show Enemy Name Plates\"\n INSTANCE_UNAVAILABLE_OTHER_TEMPORARILY_DISABLED = \"%s cannot enter. This instance is temporarily disabled.\"\n MultiBarBottomRightButton8Shine5 = MultiBarBottomRightButton8Shine5 {\n }\n IsReferAFriendLinked = <function> defined =[C]:-1\n MAIL_LETTER_TOOLTIP = \"Click to make a permanent\ncopy of this letter.\"\n UnitFrameManaBar_UnregisterDefaultEvents = <function> defined @Interface\\FrameXML\\UnitFrame.lua:602\n MANA = \"Mana\"\n CHAT_CONFIG_OTHER_COMBAT = <table> {\n }\n FCFDockOverflowButton_OnClick = <function> defined @Interface\\FrameXML\\FloatingChatFrame.lua:2373\n BOOST2_WARRIOR_COLOSSUSSMASH = \"Use |cFFFFFFFFColossus Smash|r.\n\n|cFFFFFFFFColossus Smash|r increases your damage.\"\n BN_UNABLE_TO_RESOLVE_NAME = \"Unable to whisper '%s'. Blizzard services may be unavailable.\"\n LE_GAME_ERR_RECRUIT_A_FRIEND_FAILED = 951\n _hack_prime_log = <function> defined @Interface\\AddOns\\Questie\\Modules\\QuestieEventHandler.lua:1\n CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight = CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight {\n }\n LE_GAME_ERR_ONLY_ONE_QUIVER = 32\n SpellButton6Cooldown = SpellButton6Cooldown {\n }\n LOSS_OF_CONTROL_DISPLAY_FEAR = \"Feared\"\n Graphics_QualityText = Graphics_QualityText {\n }\n VOICEMACRO_4_Sc_1_FEMALE = \"Help me attack!\"\n StanceButton4FlyoutArrow = StanceButton4FlyoutArrow {\n }\n MultiBarRightButton7Shine9 = MultiBarRightButton7Shine9 {\n }\n BankFrameItem17SearchOverlay = BankFrameItem17SearchOverlay {\n }\n DMG_LCD = \"DMG\"\n RaidGraphics_EnvironmentalDetailSlider = RaidGraphics_EnvironmentalDetailSlider {\n }\n HubPanelProfileDefaultFriendlyNameColorMode = HubPanelProfileDefaultFriendlyNameColorMode {\n }\n Is64BitClient = <function> defined =[C]:-1\n SecureCmdItemParse = <function> defined @Interface\\FrameXML\\ChatFrame.lua:1111\n SLASH_STOPATTACK1 = \"/stopattack\"\n SortQuestWatches = <function> defined =[C]:-1\n ContainerFrame4Item16Cooldown = ContainerFrame4Item16Cooldown {\n }\n MINIMAP_TRACKING_TRAINER_CLASS = \"Class Trainer\"\n SLASH_DISMOUNT2 = \"/dismount\"\n DUNGEON_FLOOR_DRAGONBLIGHTCHROMIESCENARIO2 = \"Andorhal\"\n PlayerFrame_UpdateReadyCheck = <function> defined @Interface\\FrameXML\\PlayerFrame.lua:345\n EMOTE69_CMD1 = \"/nosepick\"\n WowTokenRedemptionFrameBg = WowTokenRedemptionFrameBg {\n }\n SPELL_FAILED_CUSTOM_ERROR_152 = \"You must choose a specialization to use Ascendance.\"\n AutoFollowStatus = AutoFollowStatus {\n }\n GuildControlPopupFrame = GuildControlPopupFrame {\n }\n ARENA_CASUAL = \"Skirmish\"\n SendStationeryBackgroundRight = SendSta",
-			["stack"] = "[C]: in function `hooksecurefunc'\nInterface\\AddOns\\xVerminz\\buffs.lua:158: in main chunk",
-			["session"] = 101,
-			["counter"] = 1,
+			["message"] = "Interface\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:62: '<eof>' expected near 'end'",
+			["time"] = "2019/09/30 20:25:42",
+			["locals"] = "",
+			["stack"] = "",
+			["session"] = 193,
+			["counter"] = 4,
 		}, -- [1]
 		{
-			["message"] = "Interface\\AddOns\\xVerminz\\xVerminz-54000.lua:212: attempt to index global 'TargetFrameHealthBarText' (a nil value)",
-			["time"] = "2019/09/29 17:32:24",
-			["locals"] = "point = <function> defined =[C]:-1\npoint = <function> defined =[C]:-1\npoint = <function> defined =[C]:-1\n(*temporary) = nil\n(*temporary) = TargetFrameTextureFrameName {\n 0 = <userdata>\n SetPoint = <function> defined =[C]:-1\n}\n(*temporary) = \"SetPoint\"\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = \"SetPoint\"\n(*temporary) = 8\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'TargetFrameHealthBarText' (a nil value)\"\n",
-			["stack"] = "Interface\\AddOns\\xVerminz\\xVerminz-54000.lua:212: in function <Interface\\AddOns\\xVerminz\\xVerminz.lua:24>",
-			["session"] = 107,
-			["counter"] = 1,
+			["message"] = "Interface\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:50: 'then' expected near 'SetRaidTarget'",
+			["time"] = "2019/09/30 20:29:43",
+			["locals"] = "",
+			["stack"] = "",
+			["session"] = 197,
+			["counter"] = 4,
 		}, -- [2]
 		{
-			["message"] = "Interface\\AddOns\\xVerminz\\chat-Chat.lua:234: unexpected symbol near ')'",
-			["time"] = "2019/09/29 20:09:47",
-			["locals"] = "",
-			["stack"] = "",
-			["session"] = 119,
-			["counter"] = 4,
-		}, -- [3]
-		{
-			["message"] = "Interface\\AddOns\\xVerminz\\chat-Chat.lua:246: attempt to call global 'SetChatChannels' (a nil value)",
-			["time"] = "2019/09/29 20:10:05",
-			["locals"] = "self = ChatFrame1Tab {\n 0 = <userdata>\n leftHighlightTexture = ChatFrame1TabHighlightLeft {\n }\n middleHighlightTexture = ChatFrame1TabHighlightMiddle {\n }\n SetAlpha = <function> defined @Interface\\AddOns\\xVerminz\\chat.lua:338\n rightHighlightTexture = ChatFrame1TabHighlightRight {\n }\n mouseOverAlpha = 1\n middleTexture = ChatFrame1TabMiddle {\n }\n rightSelectedTexture = ChatFrame1TabSelectedRight {\n }\n Text = ChatFrame1TabText {\n }\n leftTexture = ChatFrame1TabLeft {\n }\n wasShown = true\n Show = <function> defined =[C]:-1\n glow = ChatFrame1TabGlow {\n }\n middleSelectedTexture = ChatFrame1TabSelectedMiddle {\n }\n rightTexture = ChatFrame1TabRight {\n }\n noMouseAlpha = 0\n alerting = false\n textWidth = 38.333340\n leftSelectedTexture = ChatFrame1TabSelectedLeft {\n }\n}\nselected = true\n(*temporary) = nil\n(*temporary) = \"attempt to call global 'SetChatChannels' (a nil value)\"\n",
-			["stack"] = "Interface\\AddOns\\xVerminz\\chat-Chat.lua:246: in function <Interface\\AddOns\\xVerminz\\chat.lua:239>\n[C]: in function `FCFTab_UpdateColors'\nInterface\\FrameXML\\FloatingChatFrame.lua:2094: in function `FCFDock_UpdateTabs'\nInterface\\FrameXML\\FloatingChatFrame.lua:1487: in function `FCF_DockUpdate'\nInterface\\FrameXML\\UIParent.lua:2496: in function `UIParentManageFramePositions'\nInterface\\FrameXML\\UIParent.lua:1793: in function <Interface\\FrameXML\\UIParent.lua:1780>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2503: in function <Interface\\FrameXML\\UIParent.lua:2501>\n[C]: ?\n[C]: in function `UIParent_ManageFramePositions'\nInterface\\FrameXML\\FloatingChatFrame.lua:1264: in function `FCF_RestorePositionAndDimensions'\nInterface\\FrameXML\\FloatingChatFrame.lua:219: in function `FloatingChatFrame_Update'\nInterface\\FrameXML\\FloatingChatFrame.lua:110: in function `FloatingChatFrame_OnEvent'\n[string \"*:OnEvent\"]:2: in function <[string \"*:OnEvent\"]:1>",
-			["session"] = 121,
-			["counter"] = 36,
-		}, -- [4]
-		{
-			["message"] = "Interface\\AddOns\\xVerminz\\xVerminz-54000.lua:358: attempt to call global 'FixBindings' (a nil value)",
-			["time"] = "2019/09/29 20:14:28",
-			["locals"] = "frame = CVarSet {\n 0 = <userdata>\n}\nf = <unnamed> {\n 0 = <userdata>\n}\ntDelay = 0\nFastLoot = <function> defined @Interface\\AddOns\\xVerminz\\xVerminz.lua:339\nfaster = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = \"attempt to call global 'FixBindings' (a nil value)\"\n",
-			["stack"] = "Interface\\AddOns\\xVerminz\\xVerminz-54000.lua:358: in main chunk",
-			["session"] = 125,
-			["counter"] = 1,
-		}, -- [5]
-		{
-			["message"] = "[string \"print(UnitHealth(target))\"]:1: Usage: UnitHealth(\"unit\")",
-			["time"] = "2019/09/29 20:16:44",
-			["locals"] = "(*temporary) = nil\n",
-			["stack"] = "[C]: in function `UnitHealth'\n[string \"print(UnitHealth(target))\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4609: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4270: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4306: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
-			["session"] = 126,
-			["counter"] = 2,
-		}, -- [6]
-		{
-			["message"] = "Interface\\AddOns\\xVerminz\\xVerminz-54000.lua:360: unexpected symbol near ')'",
-			["time"] = "2019/09/29 20:21:23",
-			["locals"] = "",
-			["stack"] = "",
-			["session"] = 127,
-			["counter"] = 4,
-		}, -- [7]
-		{
-			["message"] = "Interface\\AddOns\\xVerminz\\xVerminz-54000.lua:380: unexpected symbol near ')'",
-			["time"] = "2019/09/29 20:23:58",
-			["locals"] = "",
-			["stack"] = "",
-			["session"] = 128,
-			["counter"] = 4,
-		}, -- [8]
-		{
-			["message"] = "Interface\\AddOns\\xVerminz\\xVerminz-54000.lua:385: '<eof>' expected near 'end'",
-			["time"] = "2019/09/29 20:24:25",
-			["locals"] = "",
-			["stack"] = "",
-			["session"] = 129,
-			["counter"] = 4,
-		}, -- [9]
-		{
-			["message"] = "Interface\\AddOns\\xVerminz\\xVerminz-54000.lua:370: Attempt to find 'this' in non-table object (used '.' instead of ':' ?)",
-			["time"] = "2019/09/29 20:24:57",
-			["locals"] = "",
-			["stack"] = "[C]: in function `Hide'\nInterface\\AddOns\\xVerminz\\xVerminz-54000.lua:370: in main chunk",
-			["session"] = 130,
-			["counter"] = 1,
-		}, -- [10]
-		{
-			["message"] = "Interface\\AddOns\\xVerminz\\xVerminz-54000.lua:369: Attempt to find 'this' in non-table object (used '.' instead of ':' ?)",
-			["time"] = "2019/09/29 20:26:49",
-			["locals"] = "",
-			["stack"] = "[C]: in function `Hide'\nInterface\\AddOns\\xVerminz\\xVerminz-54000.lua:369: in main chunk",
-			["session"] = 131,
-			["counter"] = 1,
-		}, -- [11]
-		{
-			["message"] = "[string \"(UnitCanAttack(\"player\",\"target\") and not UnitIsDeadOrGhost(\"ta...\"]:1: syntax error near '<eof>'",
-			["time"] = "2019/09/29 20:50:55",
-			["locals"] = "(*temporary) = \"(UnitCanAttack(\"player\",\"target\") and not UnitIsDeadOrGhost(\"target\"))\"\n",
-			["stack"] = "[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4609: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4270: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4306: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
-			["session"] = 144,
-			["counter"] = 1,
-		}, -- [12]
-		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVerminz' tried to call the protected function 'TargetFrameToT:Show()'.",
-			["time"] = "2019/09/29 17:18:47",
+			["time"] = "2019/09/30 21:16:47",
 			["locals"] = "InCombatSkipped",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Show'\nInterface\\FrameXML\\TargetFrame.lua:910: in function <Interface\\FrameXML\\TargetFrame.lua:905>\n[C]: in function `TargetofTarget_Update'\nInterface\\FrameXML\\TargetFrame.lua:109: in function <Interface\\FrameXML\\TargetFrame.lua:99>\n[C]: in function `TargetFrame_Update'\nInterface\\FrameXML\\TargetFrame.lua:150: in function <Interface\\FrameXML\\TargetFrame.lua:142>\n[C]: in function `CameraOrSelectOrMoveStop'\n[string \"CAMERAORSELECTORMOVE\"]:4: in function <[string \"CAMERAORSELECTORMOVE\"]:1>",
-			["session"] = 163,
-			["counter"] = 10,
-		}, -- [13]
-		{
-			["message"] = "Error loading Interface\\AddOns\\Postal\\locales\\esMX-Spanish (Latin American).lua",
-			["session"] = 170,
-			["time"] = "2019/09/30 17:15:07",
-			["counter"] = 12,
-		}, -- [14]
-		{
-			["message"] = "Interface\\AddOns\\xVerminz\\chat-Chat.lua:243: Attempt to find 'this' in non-table object (used '.' instead of ':' ?)",
-			["time"] = "2019/09/30 17:40:56",
-			["locals"] = "(*temporary) = \"UPDATE_CHAT_WINDOWS\"\n",
-			["stack"] = "[C]: in function `RegisterEvent'\nInterface\\AddOns\\xVerminz\\chat-Chat.lua:243: in main chunk",
-			["session"] = 172,
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Show'\nInterface\\FrameXML\\TargetFrame.lua:910: in function <Interface\\FrameXML\\TargetFrame.lua:905>\n[C]: ?\n[C]: ?\n[C]: in function `TargetofTarget_Update'\nInterface\\FrameXML\\TargetFrame.lua:420: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[C]: ?",
+			["session"] = 200,
 			["counter"] = 1,
-		}, -- [15]
-		{
-			["message"] = "(null)",
-			["time"] = "2019/09/29 17:23:09",
-			["session"] = 172,
-			["counter"] = 15,
-		}, -- [16]
+		}, -- [3]
 	},
 }
