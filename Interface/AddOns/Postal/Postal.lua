@@ -100,7 +100,7 @@ function Postal:OnInitialize()
 	if not self.version then self.version = GetAddOnMetadata("Postal", "Version") end
 
 	-- Initialize database
-	self.db = LibStub("AceDB-3.0"):New("Postal3DB", defaults)
+	self.db = LibStub("AceDB-3.0"):New("Postal3ClassicDB", defaults)
 	self.db.RegisterCallback(self, "OnProfileChanged", "OnProfileChanged")
 	self.db.RegisterCallback(self, "OnProfileCopied", "OnProfileChanged")
 	self.db.RegisterCallback(self, "OnProfileReset", "OnProfileChanged")

@@ -1,11 +1,12 @@
-## Interface: 80000
-## Title: Postal
-## Version: v3.6.0
+## Interface: 11302
+## X-Min-Interface: 11302
+## Title: Postal Classic
+## Version: v3.6.2
 ## X-Build: 409
 ## X-ReleaseDate: 2018-07-20T8:41:50Z
 ## X-Revision: $Revision: 409 $
 ## Author: Xinhuan
-## X-Credits: Ammo, Rabbit, Grennon, Mikk, oscarucb
+## X-Credits: Ammo, Rabbit, Grennon, Mikk, oscarucb, Vanger
 ## X-Category: Mail
 ## Notes: Postal: Enhanced Mailbox support
 ## Notes-ruRU: Postal: Расширенная поддержка почтового ящика
@@ -15,7 +16,7 @@
 ## Notes-zhCN: Postal: 增强信箱功能
 ## Notes-ptBR: Postal: Apoio caixa reforçada
 ## OptionalDeps: Ace3, !BlizzBugsSuck, !ClassColors
-## SavedVariables: Postal3DB
+## SavedVariables: Postal3ClassicDB
 
 ## LoadManagers: AddonLoader
 ## X-LoadOn-Mailbox: true
@@ -31,7 +32,7 @@ Libs\AceHook-3.0\AceHook-3.0.xml
 Libs\AceLocale-3.0\AceLocale-3.0.xml
 #@end-no-lib-strip@
 
-Localization.lua
+locales\locales.xml
 Postal.lua
 
 # Users can comment out any module (or delete the .lua) of any module they do not wish to load

@@ -357,9 +357,9 @@ end
 
 function Postal_BlackBook:SortAndCountNumFriends()
 	wipe(sorttable)
-	local numFriends = GetNumFriends()
+	local numFriends = C_FriendList.GetNumFriends()
 	for i = 1, numFriends do
-		sorttable[i] = GetFriendInfo(i)
+		sorttable[i] = C_FriendList.GetFriendInfoByIndex(i).name
 	end
 
 	-- Battle.net friends
@@ -368,6 +368,7 @@ function Postal_BlackBook:SortAndCountNumFriends()
 		for i= 1, numBNetOnline do
 			local presenceID, presenceName, battleTag, isBattleTagPresence, toonName, toonID, client, isOnline, lastOnline, isAFK, isDND, messageText, noteText, isRIDFriend, messageTime, canSoR = BNGetFriendInfo(i)
 			if (toonName and client == BNET_CLIENT_WOW and CanCooperateWithGameAccount(toonID)) then
+
 				-- Check if already on friends list
 				local alreadyOnList = false
 				for j = 1, numFriends do
@@ -585,7 +586,6 @@ elseif UIDROPDOWNMENU_MENU_VALUE == "allalt" then
 		elseif UIDROPDOWNMENU_MENU_VALUE == "friend" then
 			-- Friends list
 			local numFriends = Postal_BlackBook:SortAndCountNumFriends()
-
 			-- 25 or less, don't need multi level menus
 			if numFriends > 0 and numFriends <= 25 then
 				for i = 1, numFriends do
