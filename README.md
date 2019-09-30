@@ -3,82 +3,50 @@
 ## Addons included
 
 - [!Beautycase](https://www.wowinterface.com/downloads/info19675-Beautycase.html)
-- !BugGrabber
-- !Colorz
-- Align
-- Aptechka
-- AptechkaOptions
-- AtlasLootClassic
-- AtlasLootClassic_Collections
-- AtlasLootClassic_Crafting
-- AtlasLootClassic_DungeonsAndRaids
-- AtlasLootClassic_Factions
-- AtlasLootClassic_Maps
-- AtlasLootClassic_Options
-- AtlasLootClassic_PvP
-- Auctionator
-- BlizzMove
-- BugSack
-- cargBags_Nivaya
-- ChocolateBar
-- ClassicAuraDurations
-- ClassicAutoDismount
-- ClassicCastbars
-- ClassicCastbars_Options
-- ClassicSpellActivations
-- DBM-AQ20
-- DBM-AQ40
-- DBM-Azeroth
-- DBM-BWL
-- DBM-Core
-- DBM-DefaultSkin
-- DBM-GUI
-- DBM-MC
-- DBM-Naxx
-- DBM-Onyxia
-- DBM-Party-Classic
-- DBM-StatusBarTimers
-- DBM-ZG
-- Demonly-FP
-- Details
-- Details_TinyThreat
-- EavesDrop
-- gmMoney
-- InFlight
-- InFlight_Load
-- Leatrix_Maps
-- Leatrix_Plus
-- Lorti UI Classic
-- ls_Toasts
-- MikScrollingBattleText
-- MonkeyBuddy
-- MonkeyLibrary
-- MonkeyQuest
-- MonkeyQuestLog
-- MSBTOptions
-- nBuff
-- NeatPlates
-- NeatPlatesHub
-- NeatPlatesWidgets
-- NeatPlates_Neon
-- nMainbar
-- nMinimap
-- nPower
-- nTooltip
-- oGlow
-- OmniCC
-- OmniCC_Config
-- picoFPS
-- Postal
-- Questie
-- RealMobHealth
-- SharedMedia
-- TellMeWhen
-- TellMeWhen_Options
-- TradeSkillMaster
-- UnitFramesImproved
+- [!BugGrabber](https://www.wowinterface.com/downloads/info23141-BugGrabber.html)
+- [!Colorz](https://github.com/lithammer/NeavUI/tree/master/Interface/AddOns/!Colorz)
+- [Align](https://www.wowinterface.com/downloads/info6153-Align.html)
+- [Aptechka](https://www.wowinterface.com/downloads/info25050-AptechkaClassic.html)
+- [AtlasLootClassic](https://www.wowinterface.com/downloads/info25185-AtlasLootClassic.html)
+- [Auctionator](https://www.wowinterface.com/downloads/info24958-AuctionatorClassicquickfix.html)
+- [BlizzMove](https://www.wowinterface.com/downloads/info25092-BlizzMoveClassic.html)
+- [BugSack](https://www.wowinterface.com/downloads/info5995-BugSack.html)
+- [cargBags_Nivaya](https://www.wowinterface.com/downloads/info22329-cargBagsNivayaRealUIstandalone.html) (modified in order to skin with BeautyCase)
+- [ChocolateBar](https://www.wowinterface.com/downloads/info12326-ChocolateBarBrokerDisplay.html)
+- [ClassicAuraDurations](https://www.wowinterface.com/downloads/info25006-ClassicAuraDurations.html) (modified to remove swiper and leave only cooldown text)
+- [ClassicAutoDismount](https://www.wowinterface.com/downloads/info25010-ClassicAutoDismount.html)
+- [ClassicCastbars](https://www.wowinterface.com/downloads/info24925-ClassicCastbars.html) (modified in order to skin with BeautyCase)
+- [ClassicSpellActivations](https://www.wowinterface.com/downloads/info25000-ClassicSpellActivations.html)
+- [DBM](https://www.wowinterface.com/downloads/info24921-DeadlyBossMods-Classic.html)
+- [Demonly-FP](https://www.wowinterface.com/downloads/info25273-DemonlysFlightMasterMap.html)
+- [Details](https://www.wowinterface.com/downloads/info25068-DetailsDamageMeterClassic.html)
+- [EavesDrop](https://www.curseforge.com/wow/addons/eavesdropclassic/files) (modified in order to skin with BeautyCase)
+- [gmMoney](https://www.wowinterface.com/downloads/info16245-gMoney.html)
+- [InFlight](https://www.wowinterface.com/downloads/info25202-InFlightClassic.html) (modified in order to skin with BeautyCase)
+- [Leatrix_Maps](https://www.curseforge.com/wow/addons/leatrix-maps-classic)
+- [Lorti UI Classic](https://github.com/Chordsy/Lorti-UI-Classic)
+- [ls_Toasts](https://www.curseforge.com/wow/addons/ls-toasts/files) (11302.02 version)
+- [MikScrollingBattleText](https://www.wowinterface.com/downloads/info24962-MikScrollingBattleTextClassicquickfix.html)
+- [MonkeyBuddy](https://www.wowinterface.com/downloads/info25136-MonkeyBuddyClassic.html)
+- [MonkeyQuest](https://www.wowinterface.com/downloads/info25137-MonkeyQuestClassic.html)
+- [nBuff](https://github.com/L3n1n/NeavUI-Classic)
+- [nMainbar](https://github.com/L3n1n/NeavUI-Classic) (modified to properly hide stance bar and changed font for xp/rep bar)
+- [nMinimap](https://github.com/L3n1n/NeavUI-Classic) (modified to hide guild and above the minimap tab)
+- [nPower](https://github.com/L3n1n/NeavUI-Classic)
+- [nTooltip](https://github.com/L3n1n/NeavUI-Classic) (added RealMobHealth reference)
+- [NeatPlates](https://www.curseforge.com/wow/addons/neatplates)
+- [oGlow](https://www.wowinterface.com/downloads/info25098-oGlowClassic.html)
+- [OmniCC](https://www.wowinterface.com/downloads/info24989-OmniCCClassic.html)
+- [picoFPS](https://www.wowinterface.com/downloads/info10240-picoFPS.html)
+- [Postal](https://www.wowinterface.com/downloads/info25366-Postal_Classic.html)
+- [Questie](https://www.wowinterface.com/downloads/info24994-Questie.html)
+- [RealMobHealth](https://www.wowinterface.com/downloads/info24924-RealMobHealth.html)
+- [SharedMedia](https://www.curseforge.com/wow/addons/sharedmedia)
+- [TellMeWhen](https://www.wowinterface.com/downloads/info25152-TellMeWhenClassic.html)
+- [TradeSkillMaster](https://www.tradeskillmaster.com/)
+- [UnitFramesImproved](https://www.wowisclassic.com/en/addons/unitframesimproved/)
 - xDamageFont
-- xVerminz
+- xVerminz (my set of scripts)
 
 ## Known issues
 

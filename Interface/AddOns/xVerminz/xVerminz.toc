@@ -14,5 +14,6 @@ xVerminz.lua
 bindings.lua
 bestfood.lua
 errors.lua
+xDamageFont.lua
 
 garbagecollector.lua
