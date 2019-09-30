@@ -3,17 +3,18 @@
 ## Author: Verminz
 ## Version: 54000
 
-buffs.lua
-chat.lua
-darker.lua
-customscale.lua
-customcontainers.lua
-autocarrot.lua
-grooplootframe.lua
-xVerminz.lua
-bindings.lua
-bestfood.lua
-errors.lua
+AutoCarrot.lua
+BestFood.lua
+Bindings.lua
+Chat.lua
+CustomContainers.lua
+DefaultFramesCustomScale.lua
+DefaultFramesDarker.lua
+ErrorsFilter.lua
+GarbageCollector.lua
+GroopLootFrame.lua
+PlayerTargetHealthPercentage.lua
+SkinBuffs.lua
 xDamageFont.lua
+xVerminz.lua
 
-garbagecollector.lua

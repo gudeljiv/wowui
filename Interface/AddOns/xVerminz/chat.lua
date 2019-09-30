@@ -222,7 +222,9 @@ chat:SetScript("OnEvent", function()
 	ChatFrame1Tab:Click()
 
 end)
-chat:RegisterEvent("PLAYER_ENTERING_WORLD")
+chat:RegisterEvent("PLAYER_LOGIN")
+
+
 
 local function SetChatChannels()
 	ChatFrame_RemoveChannel(ChatFrame1, "LookingForGroup")
@@ -237,16 +239,6 @@ local function SetChatChannels()
 	ChatFrame_AddChannel(ChatFrame5, "LocalDefense")
 	ChatFrame_AddChannel(ChatFrame5, "WorldDefense")
 end
-
-ChatFrame1Tab:HookScript("OnClick", function()
-	SetChatChannels()
-end)
-
-
-
-
-
-
 
 -- Tab text colors for the tabs
 hooksecurefunc("FCFTab_UpdateColors", function(self, selected)

@@ -14068,13 +14068,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3229"] = 1898,
 			["mr"] = 1898,
 		},
-		["Red Woolen Bag"] = {
-			["H3229"] = 800,
-			["mr"] = 800,
+		["Aurora Boots"] = {
+			["H3229"] = 6000,
+			["mr"] = 6000,
 		},
-		["Dwarven Magestaff of the Boar"] = {
-			["H3228"] = 8000,
-			["mr"] = 8000,
+		["Crimson Lotus"] = {
+			["H3229"] = 75,
+			["mr"] = 75,
 		},
 		["Banded Pauldrons of Stamina"] = {
 			["H3229"] = 4900,
@@ -15994,13 +15994,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3229"] = 46780,
 			["mr"] = 46780,
 		},
-		["Plans: Deadly Bronze Poniard"] = {
-			["H3229"] = 794,
-			["mr"] = 794,
+		["Ancestral Tunic"] = {
+			["H3228"] = 1594,
+			["mr"] = 1594,
 		},
-		["Darkmist Wraps of Stamina"] = {
-			["H3229"] = 12900,
-			["mr"] = 12900,
+		["Frenzied Striker"] = {
+			["H3229"] = 170000,
+			["mr"] = 170000,
 		},
 		["Forester's Axe of the Monkey"] = {
 			["H3229"] = 4556,
@@ -16615,9 +16615,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3229"] = 10447,
 			["mr"] = 10447,
 		},
-		["Manual: Strong Anti-Venom"] = {
-			["H3229"] = 34299,
-			["mr"] = 34299,
+		["Sturdy Quarterstaff of the Boar"] = {
+			["H3229"] = 2925,
+			["mr"] = 2925,
 		},
 		["Soldier's Boots of the Bear"] = {
 			["H3228"] = 1299,
@@ -16631,9 +16631,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3229"] = 55,
 			["mr"] = 55,
 		},
-		["Plans: Shadow Crescent Axe"] = {
-			["H3229"] = 1384,
-			["mr"] = 1384,
+		["Pattern: Frostsaber Leggings"] = {
+			["H3229"] = 50000,
+			["mr"] = 50000,
 		},
 		["Archer's Trousers of the Whale"] = {
 			["H3228"] = 8900,
@@ -16643,9 +16643,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3229"] = 23500,
 			["mr"] = 23500,
 		},
-		["Pattern: Frostsaber Leggings"] = {
-			["H3229"] = 50000,
-			["mr"] = 50000,
+		["Plans: Shadow Crescent Axe"] = {
+			["H3229"] = 1384,
+			["mr"] = 1384,
 		},
 		["Dark Iron Residue"] = {
 			["H3229"] = 100,
@@ -16659,9 +16659,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3229"] = 4000,
 			["mr"] = 4000,
 		},
-		["Sturdy Quarterstaff of the Boar"] = {
-			["H3229"] = 2925,
-			["mr"] = 2925,
+		["Manual: Strong Anti-Venom"] = {
+			["H3229"] = 34299,
+			["mr"] = 34299,
 		},
 		["Plans: Frost Tiger Blade"] = {
 			["H3229"] = 1609,
@@ -17759,13 +17759,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3228"] = 12352,
 			["mr"] = 12352,
 		},
-		["Frenzied Striker"] = {
-			["H3229"] = 170000,
-			["mr"] = 170000,
+		["Darkmist Wraps of Stamina"] = {
+			["H3229"] = 12900,
+			["mr"] = 12900,
 		},
-		["Ancestral Tunic"] = {
-			["H3228"] = 1594,
-			["mr"] = 1594,
+		["Plans: Deadly Bronze Poniard"] = {
+			["H3229"] = 794,
+			["mr"] = 794,
 		},
 		["Schematic: Voice Amplification Modulator"] = {
 			["H3228"] = 100000,
@@ -18875,13 +18875,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3229"] = 50000,
 			["mr"] = 50000,
 		},
-		["Crimson Lotus"] = {
-			["H3229"] = 75,
-			["mr"] = 75,
+		["Dwarven Magestaff of the Boar"] = {
+			["H3228"] = 8000,
+			["mr"] = 8000,
 		},
-		["Aurora Boots"] = {
-			["H3229"] = 6000,
-			["mr"] = 6000,
+		["Red Woolen Bag"] = {
+			["H3229"] = 800,
+			["mr"] = 800,
 		},
 		["Spiked Chain Gauntlets of the Boar"] = {
 			["H3229"] = 1999,
@@ -20737,13 +20737,13 @@ AUCTIONATOR_STACKING_PREFS = {
 		["numstacks"] = 0,
 		["stacksize"] = 1,
 	},
-	["magnificent hide"] = {
-		["stacksize"] = 1,
+	["exotic leather"] = {
+		["stacksize"] = 20,
 		["numstacks"] = 0,
 	},
-	["reef octopus"] = {
-		["numstacks"] = 0,
-		["stacksize"] = 10,
+	["*_herbs"] = {
+		["numstacks"] = -1,
+		["stacksize"] = 20,
 	},
 	["sha crystal"] = {
 		["numstacks"] = 0,
@@ -20757,12 +20757,12 @@ AUCTIONATOR_STACKING_PREFS = {
 		["numstacks"] = 0,
 		["stacksize"] = 10,
 	},
-	["*_herbs"] = {
-		["numstacks"] = -1,
-		["stacksize"] = 20,
+	["reef octopus"] = {
+		["numstacks"] = 0,
+		["stacksize"] = 10,
 	},
-	["exotic leather"] = {
-		["stacksize"] = 20,
+	["magnificent hide"] = {
+		["stacksize"] = 1,
 		["numstacks"] = 0,
 	},
 }

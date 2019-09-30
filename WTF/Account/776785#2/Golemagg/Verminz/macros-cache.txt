@@ -3,9 +3,8 @@ VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 /startattack
 /cast Cleave
 /cast Bloodrage
-/cast Overpower
-/cast Execute
-/cast Revenge
+/cast [stance:1]Overpower
+/cast [stance:2]Revenge
 END
 VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Charge
@@ -43,9 +42,8 @@ VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 /startattack
 /cast Heroic Strike
 /cast Bloodrage
-cast [nostance:1]Overpower
-/cast Execute
-/cast Revenge
+/cast [stance:1]Overpower
+/cast [stance:2]Revenge
 END
 VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Taunt
@@ -54,8 +52,9 @@ VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000001000009 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [stance:1]Defensive Stance;[stance:2]Battle Stance;
-/equip [stance:2]Wingblade
-/equip [stance:2]Cobalt Buckler
-/equip [stance:1]Battle Slayer of the Monkey
+/cast [stance:1]Defensive Stance
+/cast [stance:2]Battle Stance
+/eq Battle Slayer of the Monkey
+/eq [stance:2]Wingblade
+/eq [stance:2]Cobalt Buckler
 END

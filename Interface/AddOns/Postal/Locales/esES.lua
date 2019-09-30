@@ -1,4 +1,4 @@
-local L = LibStub("AceLocale-3.0"):NewLocale("Postal", "esMX")
+local L = LibStub("AceLocale-3.0"):NewLocale("Postal", "esES")
 if not L then return end
 L["|cffeda55fAlt-Click|r to send this item to %s."] = "|cffeda55fAlt-Clic|r para enviar este objeto a %s"
 L["|cffeda55fControl-Click|r to attach similar items."] = "|cffeda55fCtrl-Clic|r para adjuntar objetos similares."

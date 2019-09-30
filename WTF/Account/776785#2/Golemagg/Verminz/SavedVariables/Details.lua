@@ -7,33 +7,433 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 142,
+					["combatId"] = 150,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.002172,
+							["totalabsorbed"] = 0.004814,
 							["damage_from"] = {
 								["Bleakheart Trickster"] = true,
 							},
 							["targets"] = {
-								["Bleakheart Trickster"] = 1046,
+								["Deer"] = 106,
 							},
-							["spec"] = 72,
 							["pets"] = {
 							},
 							["on_hold"] = false,
 							["classe"] = "WARRIOR",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 1046.002172,
-							["end_time"] = 1569845651,
+							["total_without_pet"] = 106.004814,
 							["colocacao"] = 1,
-							["dps_started"] = false,
-							["total"] = 1046.002172,
 							["friendlyfire"] = {
 							},
+							["dps_started"] = false,
+							["end_time"] = 1569858733,
 							["friendlyfire_total"] = 0,
+							["spec"] = 72,
+							["nome"] = "Verminz",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 106,
+										["targets"] = {
+											["Deer"] = 106,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 106,
+										["n_min"] = 106,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 106,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 106.004814,
+							["serial"] = "Player-4465-010B6E50",
+							["last_dps"] = 54.7828496174129,
+							["custom"] = 0,
+							["last_event"] = 1569858732,
+							["damage_taken"] = 17.004814,
+							["start_time"] = 1569858732,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.004135,
+							["monster"] = true,
+							["damage_from"] = {
+								["Pink"] = true,
+							},
+							["targets"] = {
+								["Verminz"] = 17,
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 17.004135,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 17.004135,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4446-1-161-3767-000012245E",
+							["nome"] = "Bleakheart Trickster",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Poison"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Verminz"] = 17,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 17,
+										["n_min"] = 17,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 17,
+										["c_max"] = 0,
+										["id"] = "Poison",
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1569858733,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 91.004135,
+							["start_time"] = 1569858732,
+							["delay"] = 0,
+							["last_event"] = 1569858732,
+						}, -- [2]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.002911,
+							["damage_from"] = {
+								["Verminz"] = true,
+							},
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.002911,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 0.002911,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4446-1-161-883-0000122193",
+							["nome"] = "Deer",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1569858733,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 106.002911,
+							["start_time"] = 1569858733,
+							["delay"] = 0,
+							["last_event"] = 0,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 150,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 150,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["received"] = 1.001659,
+							["resource"] = 0.001659,
+							["targets"] = {
+								["Verminz"] = 1,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 1,
+							["classe"] = "WARRIOR",
+							["passiveover"] = 0.001659,
+							["total"] = 1.001659,
+							["nome"] = "Verminz",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									["Unbridled Wrath"] = {
+										["total"] = 1,
+										["id"] = "Unbridled Wrath",
+										["totalover"] = 0,
+										["targets"] = {
+											["Verminz"] = 1,
+										},
+										["counter"] = 1,
+									},
+								},
+							},
+							["grupo"] = true,
+							["flag_original"] = 1297,
+							["alternatepower"] = 0.001659,
+							["last_event"] = 1569858733,
+							["spec"] = 72,
+							["tipo"] = 3,
+							["serial"] = "Player-4465-010B6E50",
+							["totalover"] = 0.001659,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 150,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Charge Stun"] = {
+										["activedamt"] = -1,
+										["id"] = "Charge Stun",
+										["targets"] = {
+										},
+										["actived_at"] = 1569858732,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 1,
+							["classe"] = "WARRIOR",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Battle Shout"] = {
+										["activedamt"] = 1,
+										["id"] = "Battle Shout",
+										["targets"] = {
+										},
+										["uptime"] = 1,
+										["appliedamt"] = 1,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["debuff_uptime"] = 0,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 72,
+							["grupo"] = true,
+							["spell_cast"] = {
+								["Battle Shout"] = 1,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1569858733,
+							["nome"] = "Verminz",
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-010B6E50",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 150,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Verminz"] = true,
+				},
+				["tempo_start"] = 1569858732,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["TotalElapsedCombatTime"] = 1287743.896,
+				["enemy"] = "Bleakheart Trickster",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					122.976521, -- [1]
+					0, -- [2]
+					{
+						0.993833, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					106, -- [1]
+					0, -- [2]
+					{
+						1, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["last_events_tables"] = {
+				},
+				["frags_need_refresh"] = true,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Verminz"] = 106.004814,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 1287743.896,
+				["instance_type"] = "none",
+				["combat_id"] = 150,
+				["combat_counter"] = 2689,
+				["player_last_events"] = {
+				},
+				["CombatEndedAt"] = 1287743.896,
+				["spells_cast_timeline"] = {
+				},
+				["data_fim"] = "17:52:14",
+				["data_inicio"] = "17:52:12",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Deer"] = 1,
+				},
+				["start_time"] = 1287741.961,
+				["TimeData"] = {
+				},
+				["pvp"] = true,
+			}, -- [1]
+			{
+				{
+					["combatId"] = 149,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.00192,
+							["damage_from"] = {
+								["Bleakheart Trickster"] = true,
+							},
+							["targets"] = {
+								["Bleakheart Trickster"] = 920,
+							},
+							["total"] = 920.00192,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "WARRIOR",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 920.00192,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1569858725,
+							["friendlyfire_total"] = 0,
+							["spec"] = 72,
 							["nome"] = "Verminz",
 							["spells"] = {
 								["tipo"] = 2,
@@ -49,15 +449,197 @@ _detalhes_database = {
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 0,
-										["DODGE"] = 1,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["a_amt"] = 0,
+										["counter"] = 1,
 										["total"] = 0,
 										["c_max"] = 0,
 										["MISS"] = 1,
 										["id"] = 0,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["c_dmg"] = 0,
+										["g_amt"] = 1,
+										["n_max"] = 86,
+										["targets"] = {
+											["Bleakheart Trickster"] = 406,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 326,
+										["n_min"] = 74,
+										["g_dmg"] = 80,
+										["counter"] = 5,
+										["total"] = 406,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 74,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Execute"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 103,
+										["targets"] = {
+											["Bleakheart Trickster"] = 103,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 103,
+										["n_min"] = 103,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 103,
+										["c_max"] = 0,
+										["id"] = "Execute",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Rend"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 10,
+										["targets"] = {
+											["Bleakheart Trickster"] = 55,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 55,
+										["n_min"] = 9,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 55,
+										["c_max"] = 0,
+										["id"] = "Rend",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 6,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Heroic Strike"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 229,
+										["g_amt"] = 0,
+										["n_max"] = 127,
+										["targets"] = {
+											["Bleakheart Trickster"] = 356,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 127,
+										["n_min"] = 127,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 356,
+										["c_max"] = 229,
+										["id"] = "Heroic Strike",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 229,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-010B6E50",
+							["last_dps"] = 38.5971605975876,
+							["custom"] = 0,
+							["last_event"] = 1569858723,
+							["damage_taken"] = 549.00192,
+							["start_time"] = 1569858701,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.002831,
+							["damage_from"] = {
+								["Verminz"] = true,
+							},
+							["targets"] = {
+								["Verminz"] = 549,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 549.002831,
+							["monster"] = true,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1569858732,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Bleakheart Trickster",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Verminz"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["DODGE"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["a_amt"] = 0,
+										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
@@ -69,23 +651,23 @@ _detalhes_database = {
 										["n_amt"] = 0,
 										["r_amt"] = 0,
 										["c_min"] = 0,
-									},
+									}, -- [1]
 									["!Melee"] = {
-										["c_amt"] = 0,
+										["c_amt"] = 2,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 141,
 										["g_amt"] = 0,
-										["n_max"] = 87,
+										["n_max"] = 39,
 										["targets"] = {
-											["Bleakheart Trickster"] = 414,
+											["Verminz"] = 396,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 414,
-										["n_min"] = 80,
+										["n_dmg"] = 255,
+										["n_min"] = 31,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 414,
-										["c_max"] = 0,
+										["counter"] = 9,
+										["total"] = 396,
+										["c_max"] = 79,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -95,9 +677,655 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 5,
+										["n_amt"] = 7,
+										["r_amt"] = 0,
+										["c_min"] = 62,
+									},
+									["Poison"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Verminz"] = 153,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 153,
+										["n_min"] = 17,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["total"] = 153,
+										["c_max"] = 0,
+										["id"] = "Poison",
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 9,
 										["r_amt"] = 0,
 										["c_min"] = 0,
+									},
+								},
+							},
+							["total"] = 549.002831,
+							["serial"] = "Creature-0-4446-1-161-3767-000012245E",
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1569858729,
+							["damage_taken"] = 920.002831,
+							["start_time"] = 1569858701,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 149,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "WARRIOR",
+							["totalover"] = 0.003729,
+							["total_without_pet"] = 66.003729,
+							["total"] = 66.003729,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-010B6E50",
+							["totalabsorb"] = 0.003729,
+							["last_hps"] = 3.19120673984068,
+							["targets"] = {
+								["Verminz"] = 66,
+							},
+							["totalover_without_pet"] = 0.003729,
+							["healing_taken"] = 66.003729,
+							["fight_component"] = true,
+							["end_time"] = 1569858725,
+							["healing_from"] = {
+								["Verminz"] = true,
+							},
+							["nome"] = "Verminz",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									["Blood Craze"] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 14,
+										["targets"] = {
+											["Verminz"] = 66,
+										},
+										["n_min"] = 13,
+										["counter"] = 5,
+										["overheal"] = 0,
+										["total"] = 66,
+										["c_max"] = 0,
+										["id"] = "Blood Craze",
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 66,
+										["n_amt"] = 5,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1569858714,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["spec"] = 72,
+							["totaldenied"] = 0.003729,
+							["delay"] = 0,
+							["last_event"] = 1569858722,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 149,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["received"] = 31.008804,
+							["resource"] = 0.008804,
+							["targets"] = {
+								["Verminz"] = 31,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 1,
+							["classe"] = "WARRIOR",
+							["passiveover"] = 0.008804,
+							["fight_component"] = true,
+							["total"] = 31.008804,
+							["nome"] = "Verminz",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									["Bloodrage"] = {
+										["total"] = 20,
+										["id"] = "Bloodrage",
+										["totalover"] = 0,
+										["targets"] = {
+											["Verminz"] = 20,
+										},
+										["counter"] = 11,
+									},
+									["Charge"] = {
+										["total"] = 9,
+										["id"] = "Charge",
+										["totalover"] = 0,
+										["targets"] = {
+											["Verminz"] = 9,
+										},
+										["counter"] = 1,
+									},
+									["Unbridled Wrath"] = {
+										["total"] = 2,
+										["id"] = "Unbridled Wrath",
+										["totalover"] = 0,
+										["targets"] = {
+											["Verminz"] = 2,
+										},
+										["counter"] = 2,
+									},
+								},
+							},
+							["grupo"] = true,
+							["flag_original"] = 1297,
+							["alternatepower"] = 0.008804,
+							["last_event"] = 1569858731,
+							["spec"] = 72,
+							["tipo"] = 3,
+							["serial"] = "Player-4465-010B6E50",
+							["totalover"] = 0.008804,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 149,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Rend"] = {
+										["activedamt"] = 0,
+										["id"] = "Rend",
+										["targets"] = {
+										},
+										["uptime"] = 21,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Charge Stun"] = {
+										["activedamt"] = -1,
+										["id"] = "Charge Stun",
+										["targets"] = {
+										},
+										["actived_at"] = 1569858701,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 57,
+							["classe"] = "WARRIOR",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Enrage"] = {
+										["activedamt"] = 1,
+										["id"] = "Enrage",
+										["targets"] = {
+										},
+										["uptime"] = 13,
+										["appliedamt"] = 1,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Blood Craze"] = {
+										["activedamt"] = 1,
+										["id"] = "Blood Craze",
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Bloodrage"] = {
+										["activedamt"] = 1,
+										["id"] = "Bloodrage",
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Battle Shout"] = {
+										["activedamt"] = 1,
+										["id"] = "Battle Shout",
+										["targets"] = {
+										},
+										["uptime"] = 24,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 21,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 72,
+							["grupo"] = true,
+							["spell_cast"] = {
+								["Bloodrage"] = 1,
+								["Rend"] = 2,
+								["Heroic Strike"] = 3,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1569858725,
+							["nome"] = "Verminz",
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-010B6E50",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 149,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Verminz"] = true,
+				},
+				["CombatStartedAt"] = 1287741.01,
+				["tempo_start"] = 1569858701,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Bleakheart Trickster",
+				["combat_counter"] = 2688,
+				["playing_solo"] = true,
+				["totals"] = {
+					1468.975948, -- [1]
+					66, -- [2]
+					{
+						31, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+					["Verminz"] = {
+						{
+							true, -- [1]
+							"Poison", -- [2]
+							17, -- [3]
+							1569858726.989, -- [4]
+							320, -- [5]
+							"Bleakheart Trickster", -- [6]
+							nil, -- [7]
+							8, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [1]
+						{
+							true, -- [1]
+							"Poison", -- [2]
+							17, -- [3]
+							1569858730.008, -- [4]
+							333, -- [5]
+							"Bleakheart Trickster", -- [6]
+							nil, -- [7]
+							8, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [2]
+						{
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 3,
+					},
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatEndedAt"] = 1287735.339,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "17:51:42",
+				["end_time"] = 1287735.339,
+				["totals_grupo"] = {
+					920, -- [1]
+					66, -- [2]
+					{
+						31, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["combat_id"] = 149,
+				["TotalElapsedCombatTime"] = 1287735.339,
+				["frags_need_refresh"] = true,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Verminz"] = 66.003729,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Verminz"] = 920.00192,
+						}, -- [1]
+					},
+				},
+				["frags"] = {
+					["Bleakheart Trickster"] = 1,
+					["Bleakheart Shadowstalker"] = 1,
+				},
+				["data_fim"] = "17:52:06",
+				["instance_type"] = "none",
+				["CombatSkillCache"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 1287711.503,
+				["contra"] = "Bleakheart Trickster",
+				["TimeData"] = {
+				},
+			}, -- [2]
+			{
+				{
+					["combatId"] = 148,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.006267,
+							["damage_from"] = {
+								["Bleakheart Trickster"] = true,
+							},
+							["targets"] = {
+								["Bleakheart Trickster"] = 940,
+							},
+							["total"] = 940.006267,
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "WARRIOR",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 940.006267,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["end_time"] = 1569858684,
+							["friendlyfire_total"] = 0,
+							["spec"] = 72,
+							["nome"] = "Verminz",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Bleakheart Trickster"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["MISS"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["a_amt"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									}, -- [1]
+									[0] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Bleakheart Trickster"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["DODGE"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["a_amt"] = 0,
+										["id"] = 0,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 2,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 135,
+										["g_amt"] = 1,
+										["n_max"] = 85,
+										["targets"] = {
+											["Bleakheart Trickster"] = 379,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 164,
+										["n_min"] = 79,
+										["g_dmg"] = 80,
+										["counter"] = 4,
+										["total"] = 379,
+										["c_max"] = 135,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 135,
+									},
+									["Execute"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 176,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Bleakheart Trickster"] = 176,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 176,
+										["c_max"] = 176,
+										["id"] = "Execute",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 176,
 									},
 									["Rend"] = {
 										["c_amt"] = 0,
@@ -133,16 +1361,16 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 98,
+										["n_max"] = 87,
 										["targets"] = {
-											["Bleakheart Trickster"] = 98,
+											["Bleakheart Trickster"] = 87,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 98,
-										["n_min"] = 98,
+										["n_dmg"] = 87,
+										["n_min"] = 87,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 98,
+										["total"] = 87,
 										["c_max"] = 0,
 										["id"] = "Overpower",
 										["r_dmg"] = 0,
@@ -156,6 +1384,3148 @@ _detalhes_database = {
 										["n_amt"] = 1,
 										["r_amt"] = 0,
 										["c_min"] = 0,
+									},
+									["Heroic Strike"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 116,
+										["targets"] = {
+											["Bleakheart Trickster"] = 226,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 226,
+										["n_min"] = 110,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 226,
+										["c_max"] = 0,
+										["id"] = "Heroic Strike",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-010B6E50",
+							["last_dps"] = 28.870858042419,
+							["custom"] = 0,
+							["last_event"] = 1569858683,
+							["damage_taken"] = 712.006267,
+							["start_time"] = 1569858651,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.001184,
+							["damage_from"] = {
+								["Verminz"] = true,
+								["Nimm"] = true,
+							},
+							["targets"] = {
+								["Verminz"] = 712,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 712.001184,
+							["monster"] = true,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1569858701,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Bleakheart Trickster",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Verminz"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									}, -- [1]
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 40,
+										["targets"] = {
+											["Verminz"] = 542,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 542,
+										["n_min"] = 31,
+										["g_dmg"] = 0,
+										["counter"] = 15,
+										["total"] = 542,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 15,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Poison"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Verminz"] = 170,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 170,
+										["n_min"] = 17,
+										["g_dmg"] = 0,
+										["counter"] = 10,
+										["total"] = 170,
+										["c_max"] = 0,
+										["id"] = "Poison",
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 10,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["total"] = 712.001184,
+							["serial"] = "Creature-0-4446-1-161-3767-0000122415",
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1569858700,
+							["damage_taken"] = 1061.001184,
+							["start_time"] = 1569858652,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 148,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 148,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["received"] = 32.005446,
+							["resource"] = 0.005446,
+							["targets"] = {
+								["Verminz"] = 32,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 1,
+							["classe"] = "WARRIOR",
+							["passiveover"] = 0.005446,
+							["total"] = 32.005446,
+							["nome"] = "Verminz",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+									["Bloodrage"] = {
+										["total"] = 20,
+										["id"] = "Bloodrage",
+										["totalover"] = 0,
+										["targets"] = {
+											["Verminz"] = 20,
+										},
+										["counter"] = 11,
+									},
+									["Charge"] = {
+										["total"] = 9,
+										["id"] = "Charge",
+										["totalover"] = 0,
+										["targets"] = {
+											["Verminz"] = 9,
+										},
+										["counter"] = 1,
+									},
+									["Unbridled Wrath"] = {
+										["total"] = 3,
+										["id"] = "Unbridled Wrath",
+										["totalover"] = 0,
+										["targets"] = {
+											["Verminz"] = 3,
+										},
+										["counter"] = 3,
+									},
+								},
+							},
+							["grupo"] = true,
+							["flag_original"] = 1297,
+							["alternatepower"] = 0.005446,
+							["last_event"] = 1569858700,
+							["spec"] = 72,
+							["tipo"] = 3,
+							["serial"] = "Player-4465-010B6E50",
+							["totalover"] = 0.005446,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 148,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Rend"] = {
+										["activedamt"] = 0,
+										["id"] = "Rend",
+										["targets"] = {
+										},
+										["uptime"] = 24,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 37,
+							["classe"] = "WARRIOR",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Battle Shout"] = {
+										["activedamt"] = 2,
+										["id"] = "Battle Shout",
+										["targets"] = {
+										},
+										["uptime"] = 27,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Bloodrage"] = {
+										["activedamt"] = 1,
+										["id"] = "Bloodrage",
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["debuff_uptime"] = 24,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 72,
+							["grupo"] = true,
+							["spell_cast"] = {
+								["Battle Shout"] = 1,
+								["Bloodrage"] = 1,
+								["Overpower"] = 1,
+								["Rend"] = 3,
+								["Heroic Strike"] = 4,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1569858684,
+							["nome"] = "Verminz",
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-010B6E50",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 148,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Verminz"] = true,
+				},
+				["CombatStartedAt"] = 1287710.669,
+				["tempo_start"] = 1569858651,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Bleakheart Trickster",
+				["combat_counter"] = 2687,
+				["playing_solo"] = true,
+				["totals"] = {
+					1651.970781, -- [1]
+					-0.00377200000002631, -- [2]
+					{
+						32, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+					["Verminz"] = {
+						{
+							true, -- [1]
+							"Poison", -- [2]
+							17, -- [3]
+							1569858685.589, -- [4]
+							687, -- [5]
+							"Bleakheart Trickster", -- [6]
+							nil, -- [7]
+							8, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [1]
+						{
+							true, -- [1]
+							"Poison", -- [2]
+							17, -- [3]
+							1569858688.541, -- [4]
+							700, -- [5]
+							"Bleakheart Trickster", -- [6]
+							nil, -- [7]
+							8, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [2]
+						{
+							true, -- [1]
+							"Poison", -- [2]
+							17, -- [3]
+							1569858691.627, -- [4]
+							714, -- [5]
+							"Bleakheart Trickster", -- [6]
+							nil, -- [7]
+							8, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [3]
+						{
+							true, -- [1]
+							"Poison", -- [2]
+							17, -- [3]
+							1569858694.629, -- [4]
+							758, -- [5]
+							"Bleakheart Trickster", -- [6]
+							nil, -- [7]
+							8, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [4]
+						{
+							true, -- [1]
+							"Poison", -- [2]
+							17, -- [3]
+							1569858697.632, -- [4]
+							771, -- [5]
+							"Bleakheart Trickster", -- [6]
+							nil, -- [7]
+							8, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [5]
+						{
+							true, -- [1]
+							"Poison", -- [2]
+							17, -- [3]
+							1569858700.551, -- [4]
+							815, -- [5]
+							"Bleakheart Trickster", -- [6]
+							nil, -- [7]
+							8, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 7,
+					},
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatEndedAt"] = 1287694.072,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "17:50:52",
+				["end_time"] = 1287694.072,
+				["totals_grupo"] = {
+					940, -- [1]
+					0, -- [2]
+					{
+						32, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["combat_id"] = 148,
+				["TotalElapsedCombatTime"] = 1287694.072,
+				["frags_need_refresh"] = true,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Verminz"] = 940.006267,
+						}, -- [1]
+					},
+				},
+				["frags"] = {
+					["Bleakheart Trickster"] = 1,
+					["Bleakheart Shadowstalker"] = 1,
+				},
+				["data_fim"] = "17:51:24",
+				["instance_type"] = "none",
+				["CombatSkillCache"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 1287661.513,
+				["contra"] = "Bleakheart Trickster",
+				["TimeData"] = {
+				},
+			}, -- [3]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 147,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.008124,
+							["damage_from"] = {
+								["Bleakheart Shadowstalker"] = true,
+							},
+							["targets"] = {
+								["Bleakheart Shadowstalker"] = 917,
+							},
+							["pets"] = {
+							},
+							["delay"] = 0,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 917.008124,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["dps_started"] = false,
+							["total"] = 917.008124,
+							["classe"] = "WARRIOR",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Bleakheart Shadowstalker"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["c_min"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["b_dmg"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["DODGE"] = 1,
+									}, -- [1]
+									[0] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Bleakheart Trickster"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["RESIST"] = 1,
+										["id"] = 0,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 87,
+										["targets"] = {
+											["Bleakheart Shadowstalker"] = 458,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 458,
+										["n_min"] = 65,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 458,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 6,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Execute"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 88,
+										["targets"] = {
+											["Bleakheart Shadowstalker"] = 88,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 88,
+										["n_min"] = 88,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 88,
+										["c_max"] = 0,
+										["id"] = "Execute",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Rend"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 9,
+										["targets"] = {
+											["Bleakheart Shadowstalker"] = 63,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 63,
+										["n_min"] = 9,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 63,
+										["c_max"] = 0,
+										["id"] = "Rend",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 7,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Overpower"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 79,
+										["targets"] = {
+											["Bleakheart Shadowstalker"] = 79,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 79,
+										["n_min"] = 79,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 79,
+										["c_max"] = 0,
+										["id"] = "Overpower",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Heroic Strike"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 117,
+										["targets"] = {
+											["Bleakheart Shadowstalker"] = 229,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 229,
+										["n_min"] = 112,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 229,
+										["c_max"] = 0,
+										["id"] = "Heroic Strike",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["nome"] = "Verminz",
+							["spec"] = 72,
+							["grupo"] = true,
+							["end_time"] = 1569858576,
+							["damage_taken"] = 366.008124,
+							["last_dps"] = 33.5421238521847,
+							["colocacao"] = 1,
+							["last_event"] = 1569858650,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1569858548,
+							["serial"] = "Player-4465-010B6E50",
+							["on_hold"] = false,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.002098,
+							["damage_from"] = {
+								["Pink"] = true,
+								["Verminz"] = true,
+								["Nimm"] = true,
+							},
+							["targets"] = {
+								["Verminz"] = 366,
+								["Pink"] = 66,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 432.002098,
+							["last_event"] = 1569858620,
+							["friendlyfire"] = {
+							},
+							["fight_component"] = true,
+							["end_time"] = 1569858651,
+							["friendlyfire_total"] = 0,
+							["delay"] = 1569858620,
+							["nome"] = "Bleakheart Shadowstalker",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Verminz"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 0,
+										["c_max"] = 0,
+										["c_min"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["b_dmg"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["MISS"] = 2,
+									}, -- [1]
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 39,
+										["targets"] = {
+											["Verminz"] = 366,
+											["Pink"] = 66,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 432,
+										["n_min"] = 20,
+										["g_dmg"] = 0,
+										["counter"] = 13,
+										["total"] = 432,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 13,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["monster"] = true,
+							["total"] = 432.002098,
+							["damage_taken"] = 2217.002098,
+							["dps_started"] = false,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["start_time"] = 1569858579,
+							["serial"] = "Creature-0-4446-1-161-3770-00001222A8",
+							["last_dps"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 147,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 147,
+					["_ActorTable"] = {
+						{
+							["received"] = 31.008625,
+							["resource"] = 0.008625,
+							["targets"] = {
+								["Verminz"] = 31,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 1,
+							["classe"] = "WARRIOR",
+							["passiveover"] = 0.008625,
+							["total"] = 31.008625,
+							["nome"] = "Verminz",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Unbridled Wrath"] = {
+										["total"] = 2,
+										["id"] = "Unbridled Wrath",
+										["totalover"] = 0,
+										["targets"] = {
+											["Verminz"] = 2,
+										},
+										["counter"] = 2,
+									},
+									["Charge"] = {
+										["total"] = 9,
+										["id"] = "Charge",
+										["totalover"] = 0,
+										["targets"] = {
+											["Verminz"] = 9,
+										},
+										["counter"] = 1,
+									},
+									["Bloodrage"] = {
+										["total"] = 20,
+										["id"] = "Bloodrage",
+										["totalover"] = 0,
+										["targets"] = {
+											["Verminz"] = 20,
+										},
+										["counter"] = 11,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["totalover"] = 0.008625,
+							["alternatepower"] = 0.008625,
+							["last_event"] = 1569858650,
+							["tipo"] = 3,
+							["spec"] = 72,
+							["serial"] = "Player-4465-010B6E50",
+							["flag_original"] = 1297,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 147,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Charge Stun"] = {
+										["activedamt"] = -1,
+										["id"] = "Charge Stun",
+										["targets"] = {
+										},
+										["actived_at"] = 1569858549,
+										["uptime"] = 0,
+										["counter"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["appliedamt"] = 0,
+									},
+									["Rend"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = "Rend",
+										["uptime"] = 21,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["pets"] = {
+							},
+							["classe"] = "WARRIOR",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Bloodrage"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Bloodrage",
+										["uptime"] = 10,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									["Battle Shout"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Battle Shout",
+										["uptime"] = 24,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 21,
+							["nome"] = "Verminz",
+							["spec"] = 72,
+							["grupo"] = true,
+							["spell_cast"] = {
+								["Battle Shout"] = 1,
+								["Bloodrage"] = 1,
+								["Rend"] = 2,
+								["Overpower"] = 1,
+								["Heroic Strike"] = 2,
+							},
+							["tipo"] = 4,
+							["last_event"] = 1569858576,
+							["debuff_uptime_targets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["serial"] = "Player-4465-010B6E50",
+							["buff_uptime"] = 34,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 147,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Verminz"] = true,
+				},
+				["CombatStartedAt"] = 1287660.846,
+				["tempo_start"] = 1569858548,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 2685,
+				["playing_solo"] = true,
+				["totals"] = {
+					1348.944465, -- [1]
+					0, -- [2]
+					{
+						31, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["totals_grupo"] = {
+					917, -- [1]
+					0, -- [2]
+					{
+						31, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "17:49:37",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Bleakheart Shadowstalker",
+				["TotalElapsedCombatTime"] = 1287586.469,
+				["CombatEndedAt"] = 1287586.469,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Verminz"] = 917.008124,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["end_time"] = 1287586.469,
+				["combat_id"] = 147,
+				["player_last_events"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["data_inicio"] = "17:49:09",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Bleakheart Shadowstalker",
+				["start_time"] = 1287559.13,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Bleakheart Satyr"] = 1,
+					["Bleakheart Shadowstalker"] = 2,
+				},
+			}, -- [4]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 146,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.003304,
+							["damage_from"] = {
+								["Bleakheart Satyr"] = true,
+							},
+							["targets"] = {
+								["Bleakheart Satyr"] = 859,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["custom"] = 0,
+							["last_dps"] = 32.760127531489,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 859.003304,
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Bleakheart Satyr"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["r_amt"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["DODGE"] = 1,
+									}, -- [1]
+									[0] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Bleakheart Satyr"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["r_amt"] = 0,
+										["id"] = 0,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["a_amt"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 86,
+										["targets"] = {
+											["Bleakheart Satyr"] = 404,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 404,
+										["n_min"] = 75,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 404,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Rend"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 9,
+										["targets"] = {
+											["Bleakheart Satyr"] = 45,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 45,
+										["n_min"] = 9,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 45,
+										["c_max"] = 0,
+										["id"] = "Rend",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Overpower"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 87,
+										["targets"] = {
+											["Bleakheart Satyr"] = 87,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 87,
+										["n_min"] = 87,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 87,
+										["c_max"] = 0,
+										["id"] = "Overpower",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Heroic Strike"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 214,
+										["g_amt"] = 0,
+										["n_max"] = 109,
+										["targets"] = {
+											["Bleakheart Satyr"] = 323,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 109,
+										["n_min"] = 109,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 323,
+										["c_max"] = 214,
+										["id"] = "Heroic Strike",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 214,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["dps_started"] = false,
+							["total"] = 859.003304,
+							["damage_taken"] = 380.003304,
+							["tipo"] = 1,
+							["nome"] = "Verminz",
+							["spec"] = 72,
+							["grupo"] = true,
+							["end_time"] = 1569857907,
+							["on_hold"] = false,
+							["colocacao"] = 1,
+							["last_event"] = 1569857906,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1569857881,
+							["serial"] = "Player-4465-010B6E50",
+							["classe"] = "WARRIOR",
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.003431,
+							["damage_from"] = {
+								["Verminz"] = true,
+								["Nimm"] = true,
+							},
+							["targets"] = {
+								["Verminz"] = 380,
+								["Nimm"] = 113,
+							},
+							["pets"] = {
+							},
+							["last_dps"] = 0,
+							["total"] = 493.003431,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 493.003431,
+							["delay"] = 1569858416,
+							["fight_component"] = true,
+							["end_time"] = 1569858548,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Bleakheart Satyr",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Verminz"] = 0,
+											["Pink"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 0,
+										["r_amt"] = 0,
+										["c_max"] = 0,
+										["a_dmg"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["a_amt"] = 0,
+										["DODGE"] = 1,
+									}, -- [1]
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 39,
+										["targets"] = {
+											["Verminz"] = 380,
+											["Nimm"] = 113,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 493,
+										["n_min"] = 26,
+										["g_dmg"] = 0,
+										["counter"] = 15,
+										["total"] = 493,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 15,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["last_event"] = 1569858416,
+							["damage_taken"] = 983.003431,
+							["dps_started"] = false,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1569858014,
+							["serial"] = "Creature-0-4446-1-161-3765-00001220C8",
+							["monster"] = true,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 146,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 146,
+					["_ActorTable"] = {
+						{
+							["received"] = 10.006128,
+							["resource"] = 0.006128,
+							["targets"] = {
+								["Verminz"] = 10,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 1,
+							["classe"] = "WARRIOR",
+							["passiveover"] = 0.006128,
+							["total"] = 10.006128,
+							["nome"] = "Verminz",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Unbridled Wrath"] = {
+										["total"] = 1,
+										["id"] = "Unbridled Wrath",
+										["totalover"] = 0,
+										["targets"] = {
+											["Verminz"] = 1,
+										},
+										["counter"] = 1,
+									},
+									["Charge"] = {
+										["total"] = 9,
+										["id"] = "Charge",
+										["totalover"] = 0,
+										["targets"] = {
+											["Verminz"] = 9,
+										},
+										["counter"] = 1,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["totalover"] = 0.006128,
+							["alternatepower"] = 0.006128,
+							["last_event"] = 1569858548,
+							["tipo"] = 3,
+							["spec"] = 72,
+							["serial"] = "Player-4465-010B6E50",
+							["flag_original"] = 1297,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 146,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Charge Stun"] = {
+										["activedamt"] = -1,
+										["id"] = "Charge Stun",
+										["targets"] = {
+										},
+										["actived_at"] = 1569857881,
+										["uptime"] = 0,
+										["counter"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["appliedamt"] = 0,
+									},
+									["Rend"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = "Rend",
+										["uptime"] = 15,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["pets"] = {
+							},
+							["classe"] = "WARRIOR",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Battle Shout"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Battle Shout",
+										["uptime"] = 26,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 15,
+							["nome"] = "Verminz",
+							["spec"] = 72,
+							["grupo"] = true,
+							["spell_cast"] = {
+								["Overpower"] = 1,
+								["Heroic Strike"] = 3,
+							},
+							["tipo"] = 4,
+							["last_event"] = 1569857907,
+							["buff_uptime_targets"] = {
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["serial"] = "Player-4465-010B6E50",
+							["buff_uptime"] = 26,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 146,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Verminz"] = true,
+				},
+				["CombatStartedAt"] = 1287558.447,
+				["tempo_start"] = 1569857881,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					1351.94034, -- [1]
+					0, -- [2]
+					{
+						10, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "17:38:27",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Bleakheart Satyr",
+				["TotalElapsedCombatTime"] = 1286917.163,
+				["CombatEndedAt"] = 1286917.163,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "17:38:01",
+				["end_time"] = 1286917.163,
+				["combat_id"] = 146,
+				["totals_grupo"] = {
+					859, -- [1]
+					0, -- [2]
+					{
+						10, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["frags"] = {
+					["Bleakheart Satyr"] = 1,
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Verminz"] = 859.003304,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["combat_counter"] = 2678,
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Bleakheart Satyr",
+				["start_time"] = 1286890.942,
+				["TimeData"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+			}, -- [5]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 145,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.001579,
+							["damage_from"] = {
+								["Bleakheart Shadowstalker"] = true,
+							},
+							["targets"] = {
+								["Bleakheart Shadowstalker"] = 921,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["custom"] = 0,
+							["friendlyfire_total"] = 0,
+							["classe"] = "WARRIOR",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 921.001579,
+							["spells"] = {
+								["_ActorTable"] = {
+									["Rend"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 9,
+										["targets"] = {
+											["Bleakheart Shadowstalker"] = 45,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 45,
+										["n_min"] = 9,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 45,
+										["c_max"] = 0,
+										["id"] = "Rend",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["!Melee"] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 458,
+										["g_amt"] = 0,
+										["n_max"] = 81,
+										["targets"] = {
+											["Bleakheart Shadowstalker"] = 539,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 81,
+										["n_min"] = 81,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 539,
+										["c_max"] = 159,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 144,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Heroic Strike"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 115,
+										["targets"] = {
+											["Bleakheart Shadowstalker"] = 337,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 337,
+										["n_min"] = 109,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 337,
+										["c_max"] = 0,
+										["id"] = "Heroic Strike",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["dps_started"] = false,
+							["total"] = 921.001579,
+							["damage_taken"] = 289.001579,
+							["tipo"] = 1,
+							["nome"] = "Verminz",
+							["spec"] = 72,
+							["grupo"] = true,
+							["last_dps"] = 46.0132683351904,
+							["end_time"] = 1569857876,
+							["colocacao"] = 1,
+							["last_event"] = 1569857875,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1569857855,
+							["serial"] = "Player-4465-010B6E50",
+							["on_hold"] = false,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.008049,
+							["damage_from"] = {
+								["Verminz"] = true,
+							},
+							["targets"] = {
+								["Verminz"] = 289,
+							},
+							["pets"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 289.008049,
+							["delay"] = 0,
+							["monster"] = true,
+							["total"] = 289.008049,
+							["end_time"] = 1569857876,
+							["damage_taken"] = 921.008049,
+							["nome"] = "Bleakheart Shadowstalker",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Verminz"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["r_amt"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["MISS"] = 1,
+									}, -- [1]
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 41,
+										["targets"] = {
+											["Verminz"] = 289,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 289,
+										["n_min"] = 32,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 289,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 8,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["friendlyfire"] = {
+							},
+							["custom"] = 0,
+							["last_event"] = 1569857871,
+							["on_hold"] = false,
+							["start_time"] = 1569857855,
+							["serial"] = "Creature-0-4446-1-161-3770-0000121CDE",
+							["fight_component"] = true,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 145,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 145,
+					["_ActorTable"] = {
+						{
+							["received"] = 31.001483,
+							["resource"] = 0.001483,
+							["targets"] = {
+								["Verminz"] = 31,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 1,
+							["classe"] = "WARRIOR",
+							["passiveover"] = 0.001483,
+							["total"] = 31.001483,
+							["nome"] = "Verminz",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Unbridled Wrath"] = {
+										["total"] = 2,
+										["id"] = "Unbridled Wrath",
+										["totalover"] = 0,
+										["targets"] = {
+											["Verminz"] = 2,
+										},
+										["counter"] = 2,
+									},
+									["Charge"] = {
+										["total"] = 9,
+										["id"] = "Charge",
+										["totalover"] = 0,
+										["targets"] = {
+											["Verminz"] = 9,
+										},
+										["counter"] = 1,
+									},
+									["Bloodrage"] = {
+										["total"] = 20,
+										["id"] = "Bloodrage",
+										["totalover"] = 0,
+										["targets"] = {
+											["Verminz"] = 20,
+										},
+										["counter"] = 11,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["totalover"] = 0.001483,
+							["alternatepower"] = 0.001483,
+							["last_event"] = 1569857880,
+							["tipo"] = 3,
+							["spec"] = 72,
+							["serial"] = "Player-4465-010B6E50",
+							["flag_original"] = 1297,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 145,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Charge Stun"] = {
+										["activedamt"] = -1,
+										["id"] = "Charge Stun",
+										["targets"] = {
+										},
+										["actived_at"] = 1569857855,
+										["uptime"] = 0,
+										["counter"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["appliedamt"] = 0,
+									},
+									["Rend"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = "Rend",
+										["uptime"] = 15,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["pets"] = {
+							},
+							["classe"] = "WARRIOR",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Battle Shout"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 2,
+										["refreshamt"] = 0,
+										["id"] = "Battle Shout",
+										["uptime"] = 17,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+									["Bloodrage"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Bloodrage",
+										["uptime"] = 10,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 15,
+							["nome"] = "Verminz",
+							["spec"] = 72,
+							["grupo"] = true,
+							["spell_cast"] = {
+								["Bloodrage"] = 1,
+								["Rend"] = 1,
+								["Battle Shout"] = 1,
+								["Heroic Strike"] = 3,
+							},
+							["tipo"] = 4,
+							["last_event"] = 1569857876,
+							["buff_uptime_targets"] = {
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["serial"] = "Player-4465-010B6E50",
+							["buff_uptime"] = 27,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 145,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Verminz"] = true,
+				},
+				["CombatStartedAt"] = 1286889.924,
+				["tempo_start"] = 1569857855,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					1209.995348, -- [1]
+					0, -- [2]
+					{
+						31, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "17:37:56",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Bleakheart Shadowstalker",
+				["TotalElapsedCombatTime"] = 1286886.321,
+				["CombatEndedAt"] = 1286886.321,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "17:37:35",
+				["end_time"] = 1286886.321,
+				["combat_id"] = 145,
+				["totals_grupo"] = {
+					921, -- [1]
+					0, -- [2]
+					{
+						31, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["spells_cast_timeline"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Verminz"] = 921.001579,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["combat_counter"] = 2677,
+				["CombatSkillCache"] = {
+				},
+				["TimeData"] = {
+				},
+				["start_time"] = 1286864.954,
+				["contra"] = "Bleakheart Shadowstalker",
+				["frags"] = {
+					["Bleakheart Shadowstalker"] = 1,
+				},
+			}, -- [6]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 144,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.006307,
+							["damage_from"] = {
+								["Verminz"] = true,
+							},
+							["targets"] = {
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["total"] = 0.006307,
+							["classe"] = "WARRIOR",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.006307,
+							["damage_taken"] = 13.006307,
+							["fight_component"] = true,
+							["end_time"] = 1569857799,
+							["friendlyfire"] = {
+								["Verminz"] = {
+									["total"] = 13,
+									["spells"] = {
+										["Chest Pains"] = 13,
+									},
+								},
+							},
+							["tipo"] = 1,
+							["nome"] = "Verminz",
+							["spec"] = 72,
+							["grupo"] = true,
+							["last_dps"] = 0,
+							["dps_started"] = false,
+							["custom"] = 0,
+							["last_event"] = 1569857798,
+							["on_hold"] = false,
+							["start_time"] = 1569857798,
+							["serial"] = "Player-4465-010B6E50",
+							["friendlyfire_total"] = 13,
+						}, -- [1]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 144,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 144,
+					["_ActorTable"] = {
+						{
+							["received"] = 9.005379,
+							["resource"] = 0.005379,
+							["targets"] = {
+								["Verminz"] = 9,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 1,
+							["classe"] = "WARRIOR",
+							["passiveover"] = 0.005379,
+							["total"] = 9.005379,
+							["nome"] = "Verminz",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Charge"] = {
+										["total"] = 9,
+										["id"] = "Charge",
+										["totalover"] = 0,
+										["targets"] = {
+											["Verminz"] = 9,
+										},
+										["counter"] = 1,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["totalover"] = 0.005379,
+							["alternatepower"] = 0.005379,
+							["last_event"] = 1569857854,
+							["tipo"] = 3,
+							["spec"] = 72,
+							["serial"] = "Player-4465-010B6E50",
+							["flag_original"] = 1297,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 144,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["nome"] = "Verminz",
+							["spec"] = 72,
+							["grupo"] = true,
+							["fight_component"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
+							["classe"] = "WARRIOR",
+							["buff_uptime"] = 1,
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Battle Shout"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Battle Shout",
+										["uptime"] = 1,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["serial"] = "Player-4465-010B6E50",
+							["last_event"] = 1569857799,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 144,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Verminz"] = true,
+				},
+				["CombatStartedAt"] = 1286864.104,
+				["tempo_start"] = 1569857798,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["enemy"] = "Unknown",
+				["combat_counter"] = 2676,
+				["totals"] = {
+					0, -- [1]
+					0, -- [2]
+					{
+						9, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags"] = {
+				},
+				["frags_need_refresh"] = false,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Verminz"] = 0.006307,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["end_time"] = 1286808.776,
+				["cleu_timeline"] = {
+				},
+				["combat_id"] = 144,
+				["instance_type"] = "none",
+				["data_inicio"] = "17:36:38",
+				["hasSaved"] = true,
+				["spells_cast_timeline"] = {
+				},
+				["data_fim"] = "17:36:39",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatSkillCache"] = {
+				},
+				["totals_grupo"] = {
+					13, -- [1]
+					0, -- [2]
+					{
+						9, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["start_time"] = 1286807.775,
+				["TimeData"] = {
+				},
+				["pvp"] = true,
+			}, -- [7]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 143,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.004414,
+							["damage_from"] = {
+								["Verminz"] = true,
+							},
+							["targets"] = {
+								["Verminz"] = 514,
+							},
+							["pets"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 514.004414,
+							["delay"] = 0,
+							["monster"] = true,
+							["total"] = 514.004414,
+							["end_time"] = 1569857770,
+							["damage_taken"] = 906.004414,
+							["nome"] = "Bleakheart Shadowstalker",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Verminz"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["r_amt"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["a_amt"] = 0,
+									}, -- [1]
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 39,
+										["targets"] = {
+											["Verminz"] = 514,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 514,
+										["n_min"] = 31,
+										["g_dmg"] = 0,
+										["counter"] = 15,
+										["total"] = 514,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 15,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["friendlyfire"] = {
+							},
+							["custom"] = 0,
+							["last_event"] = 1569857764,
+							["on_hold"] = false,
+							["start_time"] = 1569857734,
+							["serial"] = "Creature-0-4446-1-161-3770-0000121C22",
+							["fight_component"] = true,
+						}, -- [1]
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.005264,
+							["damage_from"] = {
+								["Bleakheart Shadowstalker"] = true,
+							},
+							["targets"] = {
+								["Bleakheart Shadowstalker"] = 906,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["custom"] = 0,
+							["friendlyfire_total"] = 0,
+							["classe"] = "WARRIOR",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 906.005264,
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Bleakheart Shadowstalker"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["g_dmg"] = 0,
+										["n_min"] = 0,
+										["a_amt"] = 0,
+										["counter"] = 3,
+										["total"] = 0,
+										["r_amt"] = 0,
+										["c_max"] = 0,
+										["b_dmg"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["spellschool"] = 1,
+										["n_amt"] = 0,
+										["MISS"] = 1,
+										["DODGE"] = 1,
+									}, -- [1]
+									["Rend"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 9,
+										["targets"] = {
+											["Bleakheart Shadowstalker"] = 72,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 72,
+										["n_min"] = 9,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 72,
+										["c_max"] = 0,
+										["id"] = "Rend",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 8,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 2,
+										["n_max"] = 87,
+										["targets"] = {
+											["Bleakheart Shadowstalker"] = 394,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 254,
+										["n_min"] = 82,
+										["g_dmg"] = 140,
+										["counter"] = 5,
+										["total"] = 394,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Heroic Strike"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 1,
+										["c_dmg"] = 228,
+										["g_amt"] = 0,
+										["n_max"] = 112,
+										["targets"] = {
+											["Bleakheart Shadowstalker"] = 440,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 212,
+										["n_min"] = 100,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 440,
+										["c_max"] = 228,
+										["id"] = "Heroic Strike",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 228,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 100,
+										["n_amt"] = 2,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["dps_started"] = false,
+							["total"] = 906.005264,
+							["damage_taken"] = 514.005264,
+							["tipo"] = 1,
+							["nome"] = "Verminz",
+							["spec"] = 72,
+							["grupo"] = true,
+							["last_dps"] = 27.130779900699,
+							["end_time"] = 1569857770,
+							["colocacao"] = 1,
+							["last_event"] = 1569857768,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1569857735,
+							["serial"] = "Player-4465-010B6E50",
+							["on_hold"] = false,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 143,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 143,
+					["_ActorTable"] = {
+						{
+							["received"] = 23.007448,
+							["resource"] = 0.007448,
+							["targets"] = {
+								["Verminz"] = 23,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 1,
+							["classe"] = "WARRIOR",
+							["passiveover"] = 0.007448,
+							["total"] = 23.007448,
+							["nome"] = "Verminz",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Unbridled Wrath"] = {
+										["total"] = 3,
+										["id"] = "Unbridled Wrath",
+										["totalover"] = 0,
+										["targets"] = {
+											["Verminz"] = 3,
+										},
+										["counter"] = 3,
+									},
+									["Bloodrage"] = {
+										["total"] = 20,
+										["id"] = "Bloodrage",
+										["totalover"] = 0,
+										["targets"] = {
+											["Verminz"] = 20,
+										},
+										["counter"] = 11,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["totalover"] = 0.007448,
+							["alternatepower"] = 0.007448,
+							["last_event"] = 1569857769,
+							["tipo"] = 3,
+							["spec"] = 72,
+							["serial"] = "Player-4465-010B6E50",
+							["flag_original"] = 1297,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 143,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Rend"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = "Rend",
+										["uptime"] = 24,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["pets"] = {
+							},
+							["classe"] = "WARRIOR",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Bloodrage"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Bloodrage",
+										["uptime"] = 10,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									["Battle Shout"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Battle Shout",
+										["uptime"] = 30,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 24,
+							["nome"] = "Verminz",
+							["spec"] = 72,
+							["grupo"] = true,
+							["spell_cast"] = {
+								["Bloodrage"] = 1,
+								["Rend"] = 2,
+								["Battle Shout"] = 1,
+								["Heroic Strike"] = 3,
+							},
+							["tipo"] = 4,
+							["last_event"] = 1569857770,
+							["buff_uptime_targets"] = {
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["serial"] = "Player-4465-010B6E50",
+							["buff_uptime"] = 40,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 143,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Verminz"] = true,
+				},
+				["tempo_start"] = 1569857734,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					1420, -- [1]
+					0, -- [2]
+					{
+						23, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "17:36:10",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Bleakheart Shadowstalker",
+				["TotalElapsedCombatTime"] = 1286779.819,
+				["CombatEndedAt"] = 1286779.819,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "17:35:35",
+				["end_time"] = 1286779.819,
+				["combat_id"] = 143,
+				["totals_grupo"] = {
+					906, -- [1]
+					0, -- [2]
+					{
+						23, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["frags"] = {
+					["Bleakheart Shadowstalker"] = 1,
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Verminz"] = 906.005264,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["combat_counter"] = 2675,
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Bleakheart Shadowstalker",
+				["start_time"] = 1286744.657,
+				["TimeData"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+			}, -- [8]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 142,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.002172,
+							["damage_from"] = {
+								["Bleakheart Trickster"] = true,
+							},
+							["targets"] = {
+								["Bleakheart Trickster"] = 1046,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["custom"] = 0,
+							["friendlyfire_total"] = 0,
+							["classe"] = "WARRIOR",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1046.002172,
+							["last_dps"] = 29.7929924520806,
+							["dps_started"] = false,
+							["total"] = 1046.002172,
+							["damage_taken"] = 743.002172,
+							["tipo"] = 1,
+							["nome"] = "Verminz",
+							["spec"] = 72,
+							["grupo"] = true,
+							["friendlyfire"] = {
+							},
+							["spells"] = {
+								["_ActorTable"] = {
+									[0] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Bleakheart Trickster"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["g_dmg"] = 0,
+										["n_min"] = 0,
+										["MISS"] = 1,
+										["counter"] = 3,
+										["total"] = 0,
+										["r_amt"] = 0,
+										["c_max"] = 0,
+										["b_dmg"] = 0,
+										["id"] = 0,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["spellschool"] = 1,
+										["n_amt"] = 0,
+										["a_amt"] = 0,
+										["DODGE"] = 1,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 87,
+										["targets"] = {
+											["Bleakheart Trickster"] = 414,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 414,
+										["n_min"] = 80,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 414,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Rend"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 9,
+										["targets"] = {
+											["Bleakheart Trickster"] = 72,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 72,
+										["n_min"] = 9,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 72,
+										["c_max"] = 0,
+										["id"] = "Rend",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 8,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Overpower"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 98,
+										["targets"] = {
+											["Bleakheart Trickster"] = 98,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 98,
+										["n_min"] = 98,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 98,
+										["c_max"] = 0,
+										["id"] = "Overpower",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									["Heroic Strike"] = {
 										["c_amt"] = 1,
@@ -175,28 +4545,26 @@ _detalhes_database = {
 										["c_max"] = 235,
 										["id"] = "Heroic Strike",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["r_amt"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 235,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 235,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["serial"] = "Player-4465-010B6E50",
-							["last_dps"] = 29.7929924520806,
-							["custom"] = 0,
+							["colocacao"] = 1,
 							["last_event"] = 1569845650,
-							["damage_taken"] = 743.002172,
+							["on_hold"] = false,
 							["start_time"] = 1569845616,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Player-4465-010B6E50",
+							["end_time"] = 1569845651,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -209,19 +4577,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["friendlyfire_total"] = 0,
+							["last_dps"] = 0,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 743.002042,
-							["monster"] = true,
+							["delay"] = 1569845675,
 							["fight_component"] = true,
-							["dps_started"] = true,
+							["end_time"] = 1569857734,
 							["total"] = 743.002042,
-							["timeMachine"] = 11,
-							["friendlyfire_total"] = 0,
+							["damage_taken"] = 1046.002042,
 							["nome"] = "Bleakheart Trickster",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -237,22 +4605,22 @@ _detalhes_database = {
 										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 3,
-										["MISS"] = 1,
+										["r_amt"] = 0,
 										["total"] = 0,
 										["c_max"] = 0,
-										["DODGE"] = 2,
+										["spellschool"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["b_dmg"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["DODGE"] = 2,
+										["MISS"] = 1,
 									}, -- [1]
 									["!Melee"] = {
 										["c_amt"] = 1,
@@ -272,16 +4640,16 @@ _detalhes_database = {
 										["c_max"] = 64,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["r_amt"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 64,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 12,
-										["r_amt"] = 0,
-										["c_min"] = 64,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									["Poison"] = {
 										["c_amt"] = 0,
@@ -301,40 +4669,41 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Poison",
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["r_amt"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 16,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["on_hold"] = true,
-							["serial"] = "Creature-0-4446-1-161-3767-000011F0A4",
+							["tipo"] = 1,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
+							["monster"] = true,
 							["custom"] = 0,
 							["last_event"] = 1569845675,
-							["damage_taken"] = 1046.002042,
-							["start_time"] = 1569845617,
-							["delay"] = 1569845675,
-							["tipo"] = 1,
+							["on_hold"] = false,
+							["start_time"] = 1569857675,
+							["serial"] = "Creature-0-4446-1-161-3767-000011F0A4",
+							["dps_started"] = false,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 142,
 					["tipo"] = 3,
+					["combatId"] = 142,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["targets_overheal"] = {
+							["healing_from"] = {
+								["Verminz"] = true,
 							},
 							["pets"] = {
 							},
@@ -351,7 +4720,7 @@ _detalhes_database = {
 							["on_hold"] = false,
 							["serial"] = "Player-4465-010B6E50",
 							["totalabsorb"] = 0.007513,
-							["last_hps"] = 1.10576635804616,
+							["last_hps"] = 0.911661197983508,
 							["targets"] = {
 								["Verminz"] = 32,
 							},
@@ -359,12 +4728,9 @@ _detalhes_database = {
 							["healing_taken"] = 32.007513,
 							["fight_component"] = true,
 							["end_time"] = 1569845651,
-							["healing_from"] = {
-								["Verminz"] = true,
-							},
+							["spec"] = 72,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Blood Craze"] = {
 										["c_amt"] = 0,
@@ -385,31 +4751,33 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 32,
-										["n_amt"] = 3,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
 										["m_healed"] = 0,
+										["n_amt"] = 3,
+										["n_curado"] = 32,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
+							["targets_overheal"] = {
+							},
 							["heal_enemy_amt"] = 0,
-							["start_time"] = 1569845641,
 							["custom"] = 0,
 							["tipo"] = 2,
-							["spec"] = 72,
 							["totaldenied"] = 0.007513,
+							["start_time"] = 1569845641,
 							["delay"] = 0,
 							["last_event"] = 1569845645,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 142,
 					["tipo"] = 7,
+					["combatId"] = 142,
 					["_ActorTable"] = {
 						{
 							["received"] = 21.007583,
@@ -426,7 +4794,6 @@ _detalhes_database = {
 							["total"] = 21.007583,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									["Unbridled Wrath"] = {
 										["total"] = 1,
@@ -447,38 +4814,27 @@ _detalhes_database = {
 										["counter"] = 11,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["flag_original"] = 1297,
+							["totalover"] = 0.007583,
 							["alternatepower"] = 0.007583,
 							["last_event"] = 1569845632,
-							["spec"] = 72,
 							["tipo"] = 3,
+							["spec"] = 72,
 							["serial"] = "Player-4465-010B6E50",
-							["totalover"] = 0.007583,
+							["flag_original"] = 1297,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 142,
 					["tipo"] = 9,
+					["combatId"] = 142,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
-									["Rend"] = {
-										["activedamt"] = 0,
-										["id"] = "Rend",
-										["targets"] = {
-										},
-										["uptime"] = 25,
-										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
 									["Charge Stun"] = {
 										["activedamt"] = -1,
 										["id"] = "Charge Stun",
@@ -486,63 +4842,75 @@ _detalhes_database = {
 										},
 										["actived_at"] = 1569845616,
 										["uptime"] = 0,
-										["appliedamt"] = 0,
+										["counter"] = 0,
 										["refreshamt"] = 0,
 										["actived"] = false,
+										["appliedamt"] = 0,
+									},
+									["Rend"] = {
 										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = "Rend",
+										["uptime"] = 25,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 63,
 							["classe"] = "WARRIOR",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Bloodrage"] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = "Bloodrage",
+										["uptime"] = 10,
 										["targets"] = {
 										},
-										["uptime"] = 10,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									["Blood Craze"] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = "Blood Craze",
-										["targets"] = {
-										},
 										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Enrage"] = {
-										["activedamt"] = 1,
-										["id"] = "Enrage",
 										["targets"] = {
 										},
-										["uptime"] = 12,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									["Battle Shout"] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = "Battle Shout",
+										["uptime"] = 35,
 										["targets"] = {
 										},
-										["uptime"] = 35,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
+									},
+									["Enrage"] = {
 										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Enrage",
+										["uptime"] = 12,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 25,
@@ -556,112 +4924,59 @@ _detalhes_database = {
 								["Overpower"] = 1,
 								["Heroic Strike"] = 6,
 							},
-							["debuff_uptime_targets"] = {
-							},
 							["last_event"] = 1569845651,
+							["tipo"] = 4,
 							["nome"] = "Verminz",
 							["pets"] = {
 							},
 							["serial"] = "Player-4465-010B6E50",
-							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 142,
 					["tipo"] = 2,
+					["combatId"] = 142,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
 					["Verminz"] = true,
 				},
+				["CombatStartedAt"] = 1286744.14,
 				["tempo_start"] = 1569845616,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["TotalElapsedCombatTime"] = 271755.888,
-				["enemy"] = "Bleakheart Trickster",
 				["cleu_events"] = {
 					["n"] = 1,
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					1789, -- [1]
+					1788.976782, -- [1]
 					32, -- [2]
 					{
 						21, -- [1]
-						[0] = 0,
+						[0] = -0.00443500000000086,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
-				["totals_grupo"] = {
-					1046, -- [1]
-					32, -- [2]
-					{
-						21, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["last_events_tables"] = {
-				},
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Verminz"] = 32.007513,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Verminz"] = 1046.002172,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 271755.888,
-				["instance_type"] = "none",
-				["combat_id"] = 142,
-				["combat_counter"] = 2670,
 				["player_last_events"] = {
 					["Verminz"] = {
 						{
@@ -821,25 +5136,80 @@ _detalhes_database = {
 						["n"] = 10,
 					},
 				},
-				["CombatEndedAt"] = 271755.888,
-				["spells_cast_timeline"] = {
-				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
 				["data_fim"] = "14:14:11",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Bleakheart Trickster",
+				["TotalElapsedCombatTime"] = 271755.888,
+				["CombatEndedAt"] = 271755.888,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
 				["data_inicio"] = "14:13:36",
-				["CombatSkillCache"] = {
+				["end_time"] = 271755.888,
+				["combat_id"] = 142,
+				["totals_grupo"] = {
+					1046, -- [1]
+					32, -- [2]
+					{
+						21, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
 				},
 				["frags"] = {
 					["Bleakheart Trickster"] = 1,
 				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Verminz"] = 1046.002172,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Verminz"] = 32.007513,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["combat_counter"] = 2670,
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Bleakheart Trickster",
 				["start_time"] = 271720.779,
 				["TimeData"] = {
 				},
-				["contra"] = "Bleakheart Trickster",
-			}, -- [1]
+				["spells_cast_timeline"] = {
+				},
+			}, -- [9]
 			{
 				{
-					["combatId"] = 141,
 					["tipo"] = 2,
+					["combatId"] = 141,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -850,24 +5220,16 @@ _detalhes_database = {
 							["targets"] = {
 								["Bleakheart Trickster"] = 932,
 							},
-							["total"] = 932.003217,
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["custom"] = 0,
+							["friendlyfire_total"] = 0,
 							["classe"] = "WARRIOR",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 932.003217,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1569845578,
-							["friendlyfire_total"] = 0,
-							["spec"] = 72,
-							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["Rend"] = {
 										["c_amt"] = 0,
@@ -887,16 +5249,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Rend",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["r_amt"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 5,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -916,16 +5278,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["r_amt"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									["Heroic Strike"] = {
 										["c_amt"] = 2,
@@ -945,28 +5307,36 @@ _detalhes_database = {
 										["c_max"] = 233,
 										["id"] = "Heroic Strike",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["r_amt"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 227,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 227,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["serial"] = "Player-4465-010B6E50",
-							["last_dps"] = 50.199462296694,
-							["custom"] = 0,
-							["last_event"] = 1569845577,
+							["dps_started"] = false,
+							["total"] = 932.003217,
 							["damage_taken"] = 363.003217,
-							["start_time"] = 1569845558,
-							["delay"] = 0,
 							["tipo"] = 1,
+							["nome"] = "Verminz",
+							["spec"] = 72,
+							["grupo"] = true,
+							["last_dps"] = 50.199462296694,
+							["end_time"] = 1569845578,
+							["colocacao"] = 1,
+							["last_event"] = 1569845577,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1569845558,
+							["serial"] = "Player-4465-010B6E50",
+							["on_hold"] = false,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -979,19 +5349,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["friendlyfire_total"] = 0,
+							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 363.003642,
-							["monster"] = true,
-							["fight_component"] = true,
+							["delay"] = 0,
 							["dps_started"] = false,
+							["total"] = 363.003642,
 							["end_time"] = 1569845578,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
+							["damage_taken"] = 932.003642,
 							["nome"] = "Bleakheart Trickster",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -1009,19 +5379,19 @@ _detalhes_database = {
 										["counter"] = 1,
 										["total"] = 0,
 										["c_max"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
 										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["spellschool"] = 1,
+										["a_amt"] = 0,
 									}, -- [1]
 									["!Melee"] = {
 										["c_amt"] = 2,
@@ -1041,40 +5411,41 @@ _detalhes_database = {
 										["c_max"] = 76,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["r_amt"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 75,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 6,
-										["r_amt"] = 0,
-										["c_min"] = 75,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["total"] = 363.003642,
-							["serial"] = "Creature-0-4446-1-161-3767-000011F126",
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1569845575,
-							["damage_taken"] = 932.003642,
+							["on_hold"] = false,
 							["start_time"] = 1569845561,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4446-1-161-3767-000011F126",
+							["monster"] = true,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 141,
 					["tipo"] = 3,
+					["combatId"] = 141,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["targets_overheal"] = {
+							["healing_from"] = {
+								["Verminz"] = true,
 							},
 							["pets"] = {
 							},
@@ -1099,12 +5470,9 @@ _detalhes_database = {
 							["healing_taken"] = 22.00426,
 							["fight_component"] = true,
 							["end_time"] = 1569845578,
-							["healing_from"] = {
-								["Verminz"] = true,
-							},
+							["spec"] = 72,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Blood Craze"] = {
 										["c_amt"] = 0,
@@ -1125,31 +5493,33 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 22,
-										["n_amt"] = 2,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
 										["m_healed"] = 0,
+										["n_amt"] = 2,
+										["n_curado"] = 22,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
+							["targets_overheal"] = {
+							},
 							["heal_enemy_amt"] = 0,
-							["start_time"] = 1569845574,
 							["custom"] = 0,
 							["tipo"] = 2,
-							["spec"] = 72,
 							["totaldenied"] = 0.00426,
+							["start_time"] = 1569845574,
 							["delay"] = 0,
 							["last_event"] = 1569845577,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 141,
 					["tipo"] = 7,
+					["combatId"] = 141,
 					["_ActorTable"] = {
 						{
 							["received"] = 32.001423,
@@ -1166,7 +5536,6 @@ _detalhes_database = {
 							["total"] = 32.001423,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									["Bloodrage"] = {
 										["total"] = 20,
@@ -1196,38 +5565,27 @@ _detalhes_database = {
 										["counter"] = 3,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["flag_original"] = 1297,
+							["totalover"] = 0.001423,
 							["alternatepower"] = 0.001423,
 							["last_event"] = 1569845615,
-							["spec"] = 72,
 							["tipo"] = 3,
+							["spec"] = 72,
 							["serial"] = "Player-4465-010B6E50",
-							["totalover"] = 0.001423,
+							["flag_original"] = 1297,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 141,
 					["tipo"] = 9,
+					["combatId"] = 141,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
-									["Rend"] = {
-										["activedamt"] = 0,
-										["id"] = "Rend",
-										["targets"] = {
-										},
-										["uptime"] = 15,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
 									["Charge Stun"] = {
 										["activedamt"] = -1,
 										["id"] = "Charge Stun",
@@ -1235,63 +5593,75 @@ _detalhes_database = {
 										},
 										["actived_at"] = 1569845558,
 										["uptime"] = 0,
-										["appliedamt"] = 0,
+										["counter"] = 0,
 										["refreshamt"] = 0,
 										["actived"] = false,
+										["appliedamt"] = 0,
+									},
+									["Rend"] = {
 										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = "Rend",
+										["uptime"] = 15,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 40,
 							["classe"] = "WARRIOR",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Bloodrage"] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = "Bloodrage",
+										["uptime"] = 10,
 										["targets"] = {
 										},
-										["uptime"] = 10,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									["Blood Craze"] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 1,
 										["id"] = "Blood Craze",
+										["uptime"] = 6,
 										["targets"] = {
 										},
-										["uptime"] = 6,
 										["appliedamt"] = 1,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Enrage"] = {
-										["activedamt"] = 1,
-										["id"] = "Enrage",
-										["targets"] = {
-										},
-										["uptime"] = 6,
-										["appliedamt"] = 1,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									["Battle Shout"] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = "Battle Shout",
+										["uptime"] = 18,
 										["targets"] = {
 										},
-										["uptime"] = 18,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
+									},
+									["Enrage"] = {
 										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 1,
+										["id"] = "Enrage",
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 15,
@@ -1305,20 +5675,20 @@ _detalhes_database = {
 								["Bloodrage"] = 1,
 								["Heroic Strike"] = 3,
 							},
-							["buff_uptime_targets"] = {
-							},
 							["last_event"] = 1569845578,
+							["tipo"] = 4,
 							["nome"] = "Verminz",
 							["pets"] = {
 							},
 							["serial"] = "Player-4465-010B6E50",
-							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 141,
 					["tipo"] = 2,
+					["combatId"] = 141,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -1327,14 +5697,13 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 271720.258,
 				["tempo_start"] = 1569845558,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
+				["cleu_events"] = {
+					["n"] = 1,
 				},
-				["enemy"] = "Bleakheart Trickster",
-				["combat_counter"] = 2669,
 				["playing_solo"] = true,
 				["totals"] = {
 					1294.994459, -- [1]
@@ -1343,27 +5712,32 @@ _detalhes_database = {
 						32, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
 				["player_last_events"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "14:12:58",
+				["cleu_timeline"] = {
 				},
+				["enemy"] = "Bleakheart Trickster",
+				["TotalElapsedCombatTime"] = 271682.983,
 				["CombatEndedAt"] = 271682.983,
 				["aura_timeline"] = {
 				},
@@ -1371,6 +5745,7 @@ _detalhes_database = {
 				},
 				["data_inicio"] = "14:12:38",
 				["end_time"] = 271682.983,
+				["combat_id"] = 141,
 				["totals_grupo"] = {
 					932, -- [1]
 					22, -- [2]
@@ -1378,28 +5753,32 @@ _detalhes_database = {
 						32, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 141,
-				["TotalElapsedCombatTime"] = 271682.983,
-				["frags_need_refresh"] = true,
+				["spells_cast_timeline"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Verminz"] = 932.003217,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -1409,60 +5788,44 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Verminz"] = 932.003217,
-						}, -- [1]
-					},
 				},
-				["frags"] = {
-					["Bleakheart Trickster"] = 1,
-				},
-				["data_fim"] = "14:12:58",
-				["instance_type"] = "none",
+				["combat_counter"] = 2669,
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
+				["TimeData"] = {
 				},
 				["start_time"] = 271663.175,
 				["contra"] = "Bleakheart Trickster",
-				["TimeData"] = {
+				["frags"] = {
+					["Bleakheart Trickster"] = 1,
 				},
-			}, -- [2]
+			}, -- [10]
 			{
 				{
-					["combatId"] = 140,
 					["tipo"] = 2,
+					["combatId"] = 140,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["totalabsorbed"] = 0.001413,
-							["spec"] = 72,
 							["damage_from"] = {
-								["Voidwalker Minion"] = true,
 								["Bleakheart Hellcaller"] = true,
+								["Voidwalker Minion"] = true,
 							},
 							["targets"] = {
-								["Bleakheart Hellcaller"] = 410,
 								["Voidwalker Minion"] = 497,
+								["Bleakheart Hellcaller"] = 410,
 							},
+							["delay"] = 1569845463,
 							["pets"] = {
 							},
-							["colocacao"] = 1,
-							["end_time"] = 1569845558,
+							["custom"] = 0,
+							["damage_taken"] = 1608.001413,
 							["classe"] = "WARRIOR",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 907.001413,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["total"] = 907.001413,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -1480,19 +5843,19 @@ _detalhes_database = {
 										["counter"] = 3,
 										["total"] = 0,
 										["c_max"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
 										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 3,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["spellschool"] = 1,
+										["a_amt"] = 0,
 									}, -- [1]
 									[0] = {
 										["c_amt"] = 0,
@@ -1510,19 +5873,19 @@ _detalhes_database = {
 										["counter"] = 1,
 										["total"] = 0,
 										["c_max"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["id"] = 0,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
 										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["spellschool"] = 1,
+										["a_amt"] = 0,
 									},
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -1531,8 +5894,8 @@ _detalhes_database = {
 										["g_amt"] = 1,
 										["n_max"] = 95,
 										["targets"] = {
-											["Bleakheart Hellcaller"] = 177,
 											["Voidwalker Minion"] = 94,
+											["Bleakheart Hellcaller"] = 177,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 265,
@@ -1543,16 +5906,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["r_amt"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									["Cleave"] = {
 										["c_amt"] = 1,
@@ -1561,8 +5924,8 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 101,
 										["targets"] = {
-											["Voidwalker Minion"] = 231,
 											["Bleakheart Hellcaller"] = 170,
+											["Voidwalker Minion"] = 231,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 260,
@@ -1573,16 +5936,16 @@ _detalhes_database = {
 										["c_max"] = 141,
 										["id"] = "Cleave",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["r_amt"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 141,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 141,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									["Rend"] = {
 										["c_amt"] = 0,
@@ -1591,8 +5954,8 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 9,
 										["targets"] = {
-											["Bleakheart Hellcaller"] = 63,
 											["Voidwalker Minion"] = 63,
+											["Bleakheart Hellcaller"] = 63,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 126,
@@ -1603,16 +5966,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Rend",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["r_amt"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 14,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									["Heroic Strike"] = {
 										["c_amt"] = 0,
@@ -1632,28 +5995,36 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Heroic Strike",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["r_amt"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["serial"] = "Player-4465-010B6E50",
-							["last_dps"] = 22.0268939699524,
-							["custom"] = 0,
-							["last_event"] = 1569845463,
-							["damage_taken"] = 1608.001413,
-							["start_time"] = 1569845515,
-							["delay"] = 1569845463,
+							["dps_started"] = false,
+							["total"] = 907.001413,
+							["on_hold"] = false,
 							["tipo"] = 1,
+							["nome"] = "Verminz",
+							["spec"] = 72,
+							["grupo"] = true,
+							["last_dps"] = 22.0268939699524,
+							["friendlyfire_total"] = 0,
+							["colocacao"] = 1,
+							["last_event"] = 1569845463,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1569845515,
+							["serial"] = "Player-4465-010B6E50",
+							["end_time"] = 1569845558,
 						}, -- [1]
 						{
 							["flag_original"] = 70216,
@@ -1666,20 +6037,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["fight_component"] = true,
-							["end_time"] = 1569845462,
+							["last_event"] = 1569845458,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 894.00779,
-							["on_hold"] = false,
+							["end_time"] = 1569845462,
 							["dps_started"] = false,
 							["total"] = 894.00779,
+							["delay"] = 0,
 							["classe"] = "PET",
-							["serial"] = "Creature-0-4446-1-161-8996-000011D9D9",
 							["nome"] = "Voidwalker Minion",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 1,
@@ -1699,28 +6068,30 @@ _detalhes_database = {
 										["c_max"] = 86,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["r_amt"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 86,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 20,
-										["r_amt"] = 0,
-										["c_min"] = 86,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
+							["damage_taken"] = 497.00779,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 497.00779,
+							["on_hold"] = false,
 							["start_time"] = 1569845421,
-							["delay"] = 0,
-							["last_event"] = 1569845458,
+							["serial"] = "Creature-0-4446-1-161-8996-000011D9D9",
+							["fight_component"] = true,
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
@@ -1733,20 +6104,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4446-1-161-3771-000011D9D8",
-							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["total"] = 714.006354,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 714.006354,
+							["delay"] = 0,
 							["monster"] = true,
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["total"] = 714.006354,
 							["end_time"] = 1569845462,
-							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["damage_taken"] = 410.006354,
 							["nome"] = "Bleakheart Hellcaller",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -1762,22 +6132,22 @@ _detalhes_database = {
 										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 2,
-										["DODGE"] = 1,
+										["r_amt"] = 0,
 										["total"] = 0,
 										["c_max"] = 0,
-										["a_amt"] = 0,
+										["spellschool"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["b_dmg"] = 0,
+										["m_amt"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_amt"] = 0,
+										["DODGE"] = 1,
 									}, -- [1]
 									["!Melee"] = {
 										["c_amt"] = 3,
@@ -1797,39 +6167,41 @@ _detalhes_database = {
 										["c_max"] = 72,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["r_amt"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 57,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 16,
-										["r_amt"] = 0,
-										["c_min"] = 57,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["on_hold"] = false,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 1569845462,
-							["damage_taken"] = 410.006354,
+							["on_hold"] = false,
 							["start_time"] = 1569845421,
-							["delay"] = 0,
-							["tipo"] = 1,
+							["serial"] = "Creature-0-4446-1-161-3771-000011D9D8",
+							["classe"] = "UNKNOW",
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 140,
 					["tipo"] = 3,
+					["combatId"] = 140,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["targets_overheal"] = {
+							["healing_from"] = {
+								["Verminz"] = true,
 							},
 							["pets"] = {
 							},
@@ -1854,12 +6226,9 @@ _detalhes_database = {
 							["healing_taken"] = 592.006305,
 							["fight_component"] = true,
 							["end_time"] = 1569845462,
-							["healing_from"] = {
-								["Verminz"] = true,
-							},
+							["spec"] = 72,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Healing Potion"] = {
 										["c_amt"] = 0,
@@ -1880,12 +6249,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 532,
-										["n_amt"] = 1,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
 										["m_healed"] = 0,
+										["n_amt"] = 1,
+										["n_curado"] = 532,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 									["Blood Craze"] = {
@@ -1907,31 +6276,33 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 60,
-										["n_amt"] = 6,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
 										["m_healed"] = 0,
+										["n_amt"] = 6,
+										["n_curado"] = 60,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
+							["targets_overheal"] = {
+							},
 							["heal_enemy_amt"] = 0,
-							["start_time"] = 1569845453,
 							["custom"] = 0,
 							["tipo"] = 2,
-							["spec"] = 72,
 							["totaldenied"] = 0.006305,
+							["start_time"] = 1569845453,
 							["delay"] = 1569845442,
 							["last_event"] = 1569845462,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 140,
 					["tipo"] = 7,
+					["combatId"] = 140,
 					["_ActorTable"] = {
 						{
 							["received"] = 30.00677,
@@ -1948,7 +6319,6 @@ _detalhes_database = {
 							["total"] = 30.00677,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									["Unbridled Wrath"] = {
 										["total"] = 1,
@@ -1978,38 +6348,27 @@ _detalhes_database = {
 										["counter"] = 11,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["flag_original"] = 1297,
+							["totalover"] = 0.00677,
 							["alternatepower"] = 0.00677,
 							["last_event"] = 1569845557,
-							["spec"] = 72,
 							["tipo"] = 3,
+							["spec"] = 72,
 							["serial"] = "Player-4465-010B6E50",
-							["totalover"] = 0.00677,
+							["flag_original"] = 1297,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 140,
 					["tipo"] = 9,
+					["combatId"] = 140,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
-									["Rend"] = {
-										["activedamt"] = 2,
-										["id"] = "Rend",
-										["targets"] = {
-										},
-										["uptime"] = 25,
-										["appliedamt"] = 4,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
 									["Charge Stun"] = {
 										["activedamt"] = -1,
 										["id"] = "Charge Stun",
@@ -2017,63 +6376,75 @@ _detalhes_database = {
 										},
 										["actived_at"] = 1569845421,
 										["uptime"] = 0,
-										["appliedamt"] = 0,
+										["counter"] = 0,
 										["refreshamt"] = 0,
 										["actived"] = false,
+										["appliedamt"] = 0,
+									},
+									["Rend"] = {
 										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 2,
+										["refreshamt"] = 0,
+										["id"] = "Rend",
+										["uptime"] = 25,
+										["targets"] = {
+										},
+										["appliedamt"] = 4,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 76,
 							["classe"] = "WARRIOR",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Battle Shout"] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = "Battle Shout",
+										["uptime"] = 34,
 										["targets"] = {
 										},
-										["uptime"] = 34,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									["Blood Craze"] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 2,
+										["refreshamt"] = 2,
 										["id"] = "Blood Craze",
-										["targets"] = {
-										},
 										["uptime"] = 13,
-										["appliedamt"] = 2,
-										["refreshamt"] = 2,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Enrage"] = {
-										["activedamt"] = 2,
-										["id"] = "Enrage",
 										["targets"] = {
 										},
-										["uptime"] = 19,
 										["appliedamt"] = 2,
-										["refreshamt"] = 2,
-										["actived"] = false,
-										["counter"] = 0,
 									},
 									["Bloodrage"] = {
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
+										["refreshamt"] = 0,
 										["id"] = "Bloodrage",
+										["uptime"] = 10,
 										["targets"] = {
 										},
-										["uptime"] = 10,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
+									},
+									["Enrage"] = {
 										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 2,
+										["refreshamt"] = 2,
+										["id"] = "Enrage",
+										["uptime"] = 19,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 25,
@@ -2089,20 +6460,20 @@ _detalhes_database = {
 								["Healing Potion"] = 1,
 								["Heroic Strike"] = 2,
 							},
-							["buff_uptime_targets"] = {
-							},
 							["last_event"] = 1569845462,
+							["tipo"] = 4,
 							["nome"] = "Verminz",
 							["pets"] = {
 							},
 							["serial"] = "Player-4465-010B6E50",
-							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 140,
 					["tipo"] = 2,
+					["combatId"] = 140,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -2111,10 +6482,6 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 271662.372,
 				["tempo_start"] = 1569845421,
-				["cleu_timeline"] = {
-				},
-				["alternate_power"] = {
-				},
 				["last_events_tables"] = {
 					{
 						{
@@ -2506,12 +6873,15 @@ _detalhes_database = {
 						"WARRIOR", -- [4]
 						1026, -- [5]
 						"0m 41s", -- [6]
-						["dead_at"] = 41.1769999999669,
 						["dead"] = true,
+						["dead_at"] = 41.1769999999669,
 					}, -- [1]
 				},
-				["enemy"] = "Bleakheart Hellcaller",
-				["combat_counter"] = 2668,
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					2514.981946, -- [1]
@@ -2520,27 +6890,32 @@ _detalhes_database = {
 						30, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 1,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
 				["player_last_events"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "14:11:03",
+				["cleu_timeline"] = {
 				},
+				["enemy"] = "Bleakheart Hellcaller",
+				["TotalElapsedCombatTime"] = 271567.495,
 				["CombatEndedAt"] = 271567.495,
 				["aura_timeline"] = {
 				},
@@ -2548,6 +6923,7 @@ _detalhes_database = {
 				},
 				["data_inicio"] = "14:10:22",
 				["end_time"] = 271567.495,
+				["combat_id"] = 140,
 				["totals_grupo"] = {
 					907, -- [1]
 					592, -- [2]
@@ -2555,28 +6931,32 @@ _detalhes_database = {
 						30, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
 						["dead"] = 1,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 140,
-				["TotalElapsedCombatTime"] = 271567.495,
-				["frags_need_refresh"] = true,
+				["spells_cast_timeline"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage"] = {
+						{
+							["Verminz"] = 898.001413,
+						}, -- [1]
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -2586,26 +6966,18 @@ _detalhes_database = {
 					},
 					["damage_section"] = {
 					},
-					["damage"] = {
-						{
-							["Verminz"] = 898.001413,
-						}, -- [1]
-					},
 				},
-				["frags"] = {
-					["Bleakheart Shadowstalker"] = 1,
-				},
-				["data_fim"] = "14:11:03",
-				["instance_type"] = "none",
+				["combat_counter"] = 2668,
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
+				["TimeData"] = {
 				},
 				["start_time"] = 271526.318,
 				["contra"] = "Bleakheart Hellcaller",
-				["TimeData"] = {
+				["frags"] = {
+					["Bleakheart Shadowstalker"] = 1,
 				},
-			}, -- [3]
+			}, -- [11]
 			{
 				{
 					["tipo"] = 2,
@@ -2624,16 +6996,17 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["last_event"] = 1569791179,
-							["end_time"] = 1569791181,
+							["classe"] = "WARRIOR",
+							["tipo"] = 1,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1506.008205,
-							["delay"] = 0,
+							["serial"] = "Player-4465-010B6E50",
 							["dps_started"] = false,
 							["total"] = 1506.008205,
-							["classe"] = "WARRIOR",
+							["friendlyfire"] = {
+							},
 							["damage_taken"] = 937.008205,
 							["nome"] = "Verminz",
 							["spells"] = {
@@ -2645,30 +7018,30 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["Bleakheart Hellcaller"] = 0,
 											["Voidwalker Minion"] = 0,
+											["Bleakheart Hellcaller"] = 0,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 2,
-										["c_min"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
+										["c_max"] = 0,
+										["DODGE"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
 										["b_dmg"] = 0,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["n_amt"] = 0,
-										["DODGE"] = 1,
-										["a_amt"] = 0,
+										["spellschool"] = 1,
+										["total"] = 0,
 									}, -- [1]
 									[0] = {
 										["c_amt"] = 0,
@@ -2686,19 +7059,19 @@ _detalhes_database = {
 										["counter"] = 1,
 										["total"] = 0,
 										["c_max"] = 0,
-										["c_min"] = 0,
+										["DODGE"] = 1,
 										["id"] = 0,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["spellschool"] = 1,
 										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["c_min"] = 0,
 										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["DODGE"] = 1,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["!Melee"] = {
 										["c_amt"] = 1,
@@ -2719,16 +7092,16 @@ _detalhes_database = {
 										["c_max"] = 169,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["c_min"] = 169,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 169,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 5,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 									["Cleave"] = {
 										["c_amt"] = 0,
@@ -2749,16 +7122,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Cleave",
 										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 									["Execute"] = {
 										["c_amt"] = 0,
@@ -2778,16 +7151,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Execute",
 										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 									["Overpower"] = {
 										["c_amt"] = 1,
@@ -2808,16 +7181,16 @@ _detalhes_database = {
 										["c_max"] = 165,
 										["id"] = "Overpower",
 										["r_dmg"] = 0,
-										["c_min"] = 165,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 165,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 									["Rend"] = {
 										["c_amt"] = 0,
@@ -2838,16 +7211,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Rend",
 										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 12,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 									["Heroic Strike"] = {
 										["c_amt"] = 0,
@@ -2867,30 +7240,29 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Heroic Strike",
 										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 39.5651588114619,
 							["colocacao"] = 1,
-							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1569791146,
-							["serial"] = "Player-4465-010B6E50",
+							["last_dps"] = 39.5651588114619,
+							["custom"] = 0,
+							["last_event"] = 1569791179,
 							["on_hold"] = false,
+							["start_time"] = 1569791146,
+							["delay"] = 0,
+							["end_time"] = 1569791181,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -2904,18 +7276,18 @@ _detalhes_database = {
 							["pets"] = {
 								"Voidwalker Minion <Bleakheart Hellcaller>", -- [1]
 							},
-							["last_event"] = 1569791176,
-							["friendlyfire"] = {
-							},
-							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["on_hold"] = false,
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 298.001512,
-							["delay"] = 0,
-							["monster"] = true,
+							["serial"] = "Creature-0-4446-1-161-3771-0000111C41",
+							["fight_component"] = true,
 							["total"] = 937.001512,
-							["classe"] = "UNKNOW",
-							["damage_taken"] = 778.001512,
+							["monster"] = true,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Bleakheart Hellcaller",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -2933,22 +7305,22 @@ _detalhes_database = {
 										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 3,
-										["c_min"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
+										["DODGE"] = 2,
 										["r_amt"] = 0,
+										["c_max"] = 0,
+										["a_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
 										["b_dmg"] = 0,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["DODGE"] = 2,
+										["spellschool"] = 1,
+										["total"] = 0,
 									}, -- [1]
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -2968,29 +7340,29 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 9,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["dps_started"] = false,
-							["last_dps"] = 0,
-							["end_time"] = 1569791181,
-							["custom"] = 0,
 							["tipo"] = 1,
-							["on_hold"] = false,
+							["end_time"] = 1569791181,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1569791176,
+							["damage_taken"] = 778.001512,
 							["start_time"] = 1569791143,
-							["serial"] = "Creature-0-4446-1-161-3771-0000111C41",
-							["fight_component"] = true,
+							["delay"] = 0,
+							["friendlyfire_total"] = 0,
 						}, -- [2]
 						{
 							["flag_original"] = 4680,
@@ -3003,17 +7375,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["last_event"] = 1569791178,
-							["friendlyfire"] = {
-							},
-							["friendlyfire_total"] = 0,
+							["fight_component"] = true,
+							["tipo"] = 1,
+							["classe"] = "PET",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 639.007125,
-							["delay"] = 0,
-							["fight_component"] = true,
+							["serial"] = "Creature-0-4446-1-161-8996-0000111C4A",
+							["dps_started"] = false,
 							["total"] = 639.007125,
-							["classe"] = "PET",
+							["on_hold"] = false,
 							["ownerName"] = "Bleakheart Hellcaller",
 							["nome"] = "Voidwalker Minion <Bleakheart Hellcaller>",
 							["spells"] = {
@@ -3034,19 +7405,19 @@ _detalhes_database = {
 										["counter"] = 3,
 										["total"] = 0,
 										["c_max"] = 0,
-										["c_min"] = 0,
+										["DODGE"] = 3,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["spellschool"] = 1,
 										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["c_min"] = 0,
 										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["DODGE"] = 3,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 									["!Melee"] = {
 										["c_amt"] = 1,
@@ -3066,29 +7437,30 @@ _detalhes_database = {
 										["c_max"] = 79,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["c_min"] = 79,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 79,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 14,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["damage_taken"] = 728.007125,
+							["friendlyfire"] = {
+							},
 							["end_time"] = 1569791181,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
+							["last_event"] = 1569791178,
+							["damage_taken"] = 728.007125,
 							["start_time"] = 1569791146,
-							["serial"] = "Creature-0-4446-1-161-8996-0000111C4A",
-							["dps_started"] = false,
+							["delay"] = 0,
+							["friendlyfire_total"] = 0,
 						}, -- [3]
 					},
 				}, -- [1]
@@ -3104,7 +7476,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["classe"] = "WARRIOR",
 							["totalover"] = 0.001843,
 							["total_without_pet"] = 30.001843,
 							["total"] = 30.001843,
@@ -3146,12 +7518,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["m_healed"] = 0,
 										["c_min"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 3,
-										["n_curado"] = 30,
 										["m_amt"] = 0,
+										["n_curado"] = 30,
+										["n_amt"] = 3,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -3160,13 +7532,13 @@ _detalhes_database = {
 							["grupo"] = true,
 							["targets_overheal"] = {
 							},
-							["last_event"] = 1569791152,
+							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
 							["tipo"] = 2,
-							["totaldenied"] = 0.001843,
 							["start_time"] = 1569791176,
+							["totaldenied"] = 0.001843,
 							["delay"] = 1569791152,
-							["classe"] = "WARRIOR",
+							["last_event"] = 1569791152,
 						}, -- [1]
 					},
 				}, -- [2]
@@ -3221,12 +7593,12 @@ _detalhes_database = {
 								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["totalover"] = 0.00569,
+							["flag_original"] = 1297,
 							["last_event"] = 1569845420,
 							["alternatepower"] = 0.00569,
 							["tipo"] = 3,
 							["serial"] = "Player-4465-010B6E50",
-							["flag_original"] = 1297,
+							["totalover"] = 0.00569,
 						}, -- [1]
 					},
 				}, -- [3]
@@ -3239,15 +7611,15 @@ _detalhes_database = {
 							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
 									["Rend"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = "Rend",
-										["uptime"] = 23,
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
-										["appliedamt"] = 3,
+										["activedamt"] = 0,
+										["uptime"] = 23,
+										["id"] = "Rend",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 								},
 								["tipo"] = 9,
@@ -3257,55 +7629,55 @@ _detalhes_database = {
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									["Bloodrage"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Bloodrage",
-										["uptime"] = 10,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = "Bloodrage",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									["Blood Craze"] = {
-										["counter"] = 0,
-										["actived"] = false,
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
 										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Blood Craze",
 										["uptime"] = 6,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Battle Shout"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
+										["id"] = "Blood Craze",
 										["refreshamt"] = 0,
-										["id"] = "Battle Shout",
-										["uptime"] = 38,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									["Enrage"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Enrage",
-										["uptime"] = 12,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
+										["uptime"] = 12,
+										["id"] = "Enrage",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Battle Shout"] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 38,
+										["id"] = "Battle Shout",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 								},
 								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 23,
-							["debuff_uptime_targets"] = {
+							["buff_uptime_targets"] = {
 							},
 							["grupo"] = true,
 							["spell_cast"] = {
@@ -3315,14 +7687,14 @@ _detalhes_database = {
 								["Overpower"] = 2,
 								["Heroic Strike"] = 1,
 							},
-							["tipo"] = 4,
-							["last_event"] = 1569791181,
-							["buff_uptime_targets"] = {
+							["debuff_uptime_targets"] = {
 							},
+							["last_event"] = 1569791181,
+							["nome"] = "Verminz",
 							["pets"] = {
 							},
 							["serial"] = "Player-4465-010B6E50",
-							["nome"] = "Verminz",
+							["tipo"] = 4,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -3341,7 +7713,9 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 2666,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					2443, -- [1]
@@ -3350,21 +7724,21 @@ _detalhes_database = {
 						32, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
 				["totals_grupo"] = {
 					1506, -- [1]
@@ -3373,18 +7747,18 @@ _detalhes_database = {
 						32, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
@@ -3405,10 +7779,7 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Verminz"] = 1506.008205,
-						}, -- [1]
+					["damage_section"] = {
 					},
 					["heal_section"] = {
 					},
@@ -3417,30 +7788,31 @@ _detalhes_database = {
 							["Verminz"] = 30.001843,
 						}, -- [1]
 					},
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Verminz"] = 1506.008205,
+						}, -- [1]
 					},
 				},
 				["end_time"] = 1220190.607,
 				["combat_id"] = 139,
-				["player_last_events"] = {
+				["combat_counter"] = 2666,
+				["frags"] = {
+					["Voidwalker Minion"] = 1,
+					["Bleakheart Hellcaller"] = 1,
 				},
 				["spells_cast_timeline"] = {
 				},
-				["data_inicio"] = "23:05:43",
-				["cleu_events"] = {
-					["n"] = 1,
+				["player_last_events"] = {
 				},
 				["CombatSkillCache"] = {
 				},
-				["contra"] = "Bleakheart Hellcaller",
-				["start_time"] = 1220152.543,
 				["TimeData"] = {
 				},
-				["frags"] = {
-					["Bleakheart Hellcaller"] = 1,
-					["Voidwalker Minion"] = 1,
-				},
-			}, -- [4]
+				["start_time"] = 1220152.543,
+				["contra"] = "Bleakheart Hellcaller",
+				["data_inicio"] = "23:05:43",
+			}, -- [12]
 			{
 				{
 					["tipo"] = 2,
@@ -3457,16 +7829,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["tipo"] = 1,
-							["total"] = 923.003811,
+							["friendlyfire_total"] = 0,
+							["last_event"] = 1569791100,
 							["classe"] = "WARRIOR",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 923.003811,
-							["delay"] = 0,
+							["serial"] = "Player-4465-010B6E50",
 							["dps_started"] = false,
 							["end_time"] = 1569791103,
-							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
 							["damage_taken"] = 531.003811,
 							["nome"] = "Verminz",
 							["spells"] = {
@@ -3485,22 +7857,22 @@ _detalhes_database = {
 										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 2,
-										["c_min"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
+										["MISS"] = 1,
 										["r_amt"] = 0,
+										["c_max"] = 0,
+										["a_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
 										["b_dmg"] = 0,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["MISS"] = 1,
+										["spellschool"] = 1,
+										["total"] = 0,
 									}, -- [1]
 									[0] = {
 										["c_amt"] = 0,
@@ -3518,19 +7890,19 @@ _detalhes_database = {
 										["counter"] = 1,
 										["total"] = 0,
 										["c_max"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
 										["id"] = 0,
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_dmg"] = 0,
+										["spellschool"] = 1,
+										["m_amt"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["Rend"] = {
 										["c_amt"] = 0,
@@ -3550,16 +7922,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Rend",
 										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 9,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 									["!Melee"] = {
 										["c_amt"] = 1,
@@ -3579,16 +7951,16 @@ _detalhes_database = {
 										["c_max"] = 148,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["c_min"] = 148,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 148,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 									["Heroic Strike"] = {
 										["c_amt"] = 0,
@@ -3608,30 +7980,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Heroic Strike",
 										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 93,
 										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 24.7699812414224,
 							["colocacao"] = 1,
-							["last_event"] = 1569791100,
-							["on_hold"] = false,
-							["start_time"] = 1569791067,
-							["serial"] = "Player-4465-010B6E50",
+							["last_dps"] = 24.7699812414224,
+							["custom"] = 0,
+							["tipo"] = 1,
 							["friendlyfire"] = {
 							},
+							["start_time"] = 1569791067,
+							["delay"] = 0,
+							["total"] = 923.003811,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -3644,17 +8016,17 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["tipo"] = 1,
-							["dps_started"] = false,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 531.002809,
-							["delay"] = 0,
 							["monster"] = true,
 							["end_time"] = 1569791103,
 							["friendlyfire_total"] = 0,
-							["damage_taken"] = 923.002809,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 531.002809,
+							["serial"] = "Creature-0-4446-1-161-3770-0000111AB5",
+							["fight_component"] = true,
+							["total"] = 531.002809,
+							["dps_started"] = false,
+							["on_hold"] = false,
 							["nome"] = "Bleakheart Shadowstalker",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -3672,22 +8044,22 @@ _detalhes_database = {
 										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 3,
-										["c_min"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
+										["MISS"] = 1,
 										["r_amt"] = 0,
+										["c_max"] = 0,
+										["a_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
 										["b_dmg"] = 0,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 2,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["MISS"] = 1,
+										["spellschool"] = 1,
+										["total"] = 0,
 									}, -- [1]
 									["!Melee"] = {
 										["c_amt"] = 1,
@@ -3707,30 +8079,30 @@ _detalhes_database = {
 										["c_max"] = 72,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["c_min"] = 72,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 72,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 13,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["total"] = 531.002809,
-							["last_dps"] = 0,
+							["last_event"] = 1569791098,
 							["friendlyfire"] = {
 							},
+							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1569791098,
-							["on_hold"] = false,
+							["tipo"] = 1,
+							["damage_taken"] = 923.002809,
 							["start_time"] = 1569791066,
-							["serial"] = "Creature-0-4446-1-161-3770-0000111AB5",
-							["fight_component"] = true,
+							["delay"] = 0,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -3746,7 +8118,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["classe"] = "WARRIOR",
 							["totalover"] = 0.008559,
 							["total_without_pet"] = 31.008559,
 							["total"] = 31.008559,
@@ -3788,12 +8160,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["m_healed"] = 0,
 										["c_min"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 3,
-										["n_curado"] = 31,
 										["m_amt"] = 0,
+										["n_curado"] = 31,
+										["n_amt"] = 3,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -3802,13 +8174,13 @@ _detalhes_database = {
 							["grupo"] = true,
 							["targets_overheal"] = {
 							},
-							["last_event"] = 1569791102,
+							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
 							["tipo"] = 2,
-							["totaldenied"] = 0.008559,
 							["start_time"] = 1569791098,
+							["totaldenied"] = 0.008559,
 							["delay"] = 0,
-							["classe"] = "WARRIOR",
+							["last_event"] = 1569791102,
 						}, -- [1]
 					},
 				}, -- [2]
@@ -3854,12 +8226,12 @@ _detalhes_database = {
 								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["totalover"] = 0.002679,
+							["flag_original"] = 1297,
 							["last_event"] = 1569791085,
 							["alternatepower"] = 0.002679,
 							["tipo"] = 3,
 							["serial"] = "Player-4465-010B6E50",
-							["flag_original"] = 1297,
+							["totalover"] = 0.002679,
 						}, -- [1]
 					},
 				}, -- [3]
@@ -3872,15 +8244,15 @@ _detalhes_database = {
 							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
 									["Rend"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 1,
-										["id"] = "Rend",
-										["uptime"] = 29,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 0,
+										["uptime"] = 29,
+										["id"] = "Rend",
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 								},
 								["tipo"] = 9,
@@ -3890,55 +8262,55 @@ _detalhes_database = {
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									["Battle Shout"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Battle Shout",
-										["uptime"] = 31,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 31,
+										["id"] = "Battle Shout",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									["Blood Craze"] = {
-										["counter"] = 0,
-										["actived"] = false,
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
 										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Blood Craze",
 										["uptime"] = 6,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Bloodrage"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
+										["id"] = "Blood Craze",
 										["refreshamt"] = 0,
-										["id"] = "Bloodrage",
-										["uptime"] = 10,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									["Enrage"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Enrage",
-										["uptime"] = 7,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
+										["uptime"] = 7,
+										["id"] = "Enrage",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Bloodrage"] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = "Bloodrage",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 								},
 								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 29,
-							["buff_uptime_targets"] = {
+							["debuff_uptime_targets"] = {
 							},
 							["grupo"] = true,
 							["spell_cast"] = {
@@ -3947,14 +8319,14 @@ _detalhes_database = {
 								["Battle Shout"] = 1,
 								["Heroic Strike"] = 4,
 							},
-							["pets"] = {
+							["buff_uptime_targets"] = {
 							},
 							["last_event"] = 1569791103,
-							["debuff_uptime_targets"] = {
-							},
+							["nome"] = "Verminz",
 							["tipo"] = 4,
 							["serial"] = "Player-4465-010B6E50",
-							["nome"] = "Verminz",
+							["pets"] = {
+							},
 						}, -- [1]
 					},
 				}, -- [4]
@@ -3984,21 +8356,21 @@ _detalhes_database = {
 						21, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
 				["totals_grupo"] = {
 					923, -- [1]
@@ -4007,18 +8379,18 @@ _detalhes_database = {
 						21, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
@@ -4039,10 +8411,7 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Verminz"] = 923.003811,
-						}, -- [1]
+					["damage_section"] = {
 					},
 					["heal_section"] = {
 					},
@@ -4051,30 +8420,33 @@ _detalhes_database = {
 							["Verminz"] = 31.008559,
 						}, -- [1]
 					},
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Verminz"] = 923.003811,
+						}, -- [1]
 					},
 				},
 				["end_time"] = 1220112.477,
 				["combat_id"] = 138,
 				["combat_counter"] = 2665,
+				["spells_cast_timeline"] = {
+				},
 				["frags"] = {
-					["Imp Minion"] = 1,
+					["Bleakheart Hellcaller"] = 1,
 					["Bleakheart Shadowstalker"] = 1,
 					["Bleakheart Trickster"] = 1,
-					["Bleakheart Hellcaller"] = 1,
+					["Imp Minion"] = 1,
 				},
 				["player_last_events"] = {
 				},
-				["TimeData"] = {
-				},
 				["CombatSkillCache"] = {
 				},
-				["data_inicio"] = "23:04:26",
-				["start_time"] = 1220075.214,
 				["contra"] = "Bleakheart Shadowstalker",
-				["spells_cast_timeline"] = {
+				["start_time"] = 1220075.214,
+				["TimeData"] = {
 				},
-			}, -- [5]
+				["data_inicio"] = "23:04:26",
+			}, -- [13]
 			{
 				{
 					["tipo"] = 2,
@@ -4090,17 +8462,24 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "WARRIOR",
-							["tipo"] = 1,
+							["fight_component"] = true,
+							["last_event"] = 1569790707,
 							["friendlyfire_total"] = 31,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.004606,
-							["serial"] = "Player-4465-010B6E50",
-							["fight_component"] = true,
+							["delay"] = 0,
+							["dps_started"] = false,
 							["total"] = 0.004606,
+							["friendlyfire"] = {
+								["Verminz"] = {
+									["total"] = 31,
+									["spells"] = {
+										["Chest Pains"] = 31,
+									},
+								},
+							},
 							["damage_taken"] = 31.004606,
-							["on_hold"] = false,
 							["nome"] = "Verminz",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -4111,18 +8490,11 @@ _detalhes_database = {
 							["end_time"] = 1569790708,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1569790707,
-							["friendlyfire"] = {
-								["Verminz"] = {
-									["spells"] = {
-										["Chest Pains"] = 31,
-									},
-									["total"] = 31,
-								},
-							},
+							["tipo"] = 1,
+							["on_hold"] = false,
 							["start_time"] = 1569790707,
-							["delay"] = 0,
-							["dps_started"] = false,
+							["serial"] = "Player-4465-010B6E50",
+							["classe"] = "WARRIOR",
 						}, -- [1]
 					},
 				}, -- [1]
@@ -4168,37 +8540,45 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
 				["player_last_events"] = {
 				},
-				["cleu_timeline"] = {
+				["frags"] = {
 				},
 				["frags_need_refresh"] = false,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "22:58:27",
+				["end_time"] = 1219717.143,
+				["cleu_timeline"] = {
+				},
+				["instance_type"] = "none",
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Verminz"] = 0.004606,
+						}, -- [1]
 					},
 					["heal_section"] = {
 					},
@@ -4206,39 +8586,12 @@ _detalhes_database = {
 						{
 						}, -- [1]
 					},
-					["damage"] = {
-						{
-							["Verminz"] = 0.004606,
-						}, -- [1]
+					["damage_section"] = {
 					},
-				},
-				["end_time"] = 1219717.143,
-				["data_inicio"] = "22:58:27",
-				["instance_type"] = "none",
-				["totals_grupo"] = {
-					31, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
 				},
 				["combat_id"] = 137,
 				["hasSaved"] = true,
-				["frags"] = {
+				["spells_cast_timeline"] = {
 				},
 				["data_fim"] = "22:58:28",
 				["cleu_events"] = {
@@ -4246,13 +8599,32 @@ _detalhes_database = {
 				},
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
+				["totals_grupo"] = {
+					31, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
 				},
 				["start_time"] = 1219716.142,
 				["TimeData"] = {
 				},
 				["pvp"] = true,
-			}, -- [6]
+			}, -- [14]
 			{
 				{
 					["tipo"] = 2,
@@ -4269,17 +8641,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["tipo"] = 1,
+							["last_event"] = 1569790686,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 399.001777,
-							["fight_component"] = true,
+							["classe"] = "PET",
 							["dps_started"] = false,
 							["total"] = 399.001777,
-							["serial"] = "Creature-0-4446-1-161-8996-0000111A9C",
-							["friendlyfire"] = {
-							},
+							["delay"] = 1569790686,
+							["on_hold"] = false,
 							["nome"] = "Voidwalker Minion",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -4299,19 +8670,19 @@ _detalhes_database = {
 										["counter"] = 1,
 										["total"] = 0,
 										["c_max"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["m_amt"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
-										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["a_amt"] = 0,
 									}, -- [1]
 									["!Melee"] = {
 										["c_amt"] = 1,
@@ -4331,54 +8702,56 @@ _detalhes_database = {
 										["c_max"] = 72,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 72,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 8,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["damage_taken"] = 666.001777,
+							["friendlyfire"] = {
+							},
 							["end_time"] = 1569790703,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1569790686,
-							["on_hold"] = false,
+							["tipo"] = 1,
+							["damage_taken"] = 666.001777,
 							["start_time"] = 1569790684,
-							["delay"] = 1569790686,
-							["classe"] = "PET",
+							["serial"] = "Creature-0-4446-1-161-8996-0000111A9C",
+							["fight_component"] = true,
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
 							["totalabsorbed"] = 0.001279,
 							["damage_from"] = {
-								["Bleakheart Hellcaller"] = true,
 								["Voidwalker Minion"] = true,
+								["Bleakheart Hellcaller"] = true,
 							},
 							["targets"] = {
-								["Voidwalker Minion"] = 666,
 								["Bleakheart Hellcaller"] = 704,
+								["Voidwalker Minion"] = 666,
 							},
 							["pets"] = {
 							},
-							["classe"] = "WARRIOR",
-							["last_event"] = 1569790702,
+							["total"] = 1370.001279,
+							["tipo"] = 1,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1370.001279,
-							["serial"] = "Player-4465-010B6E50",
+							["delay"] = 0,
 							["dps_started"] = false,
-							["total"] = 1370.001279,
+							["end_time"] = 1569790703,
+							["friendlyfire"] = {
+							},
 							["on_hold"] = false,
-							["damage_taken"] = 860.001279,
 							["nome"] = "Verminz",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -4398,19 +8771,19 @@ _detalhes_database = {
 										["counter"] = 1,
 										["total"] = 0,
 										["c_max"] = 0,
-										["MISS"] = 1,
+										["r_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
-										["successful_casted"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
 										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["MISS"] = 1,
 									}, -- [1]
 									[0] = {
 										["c_amt"] = 0,
@@ -4428,19 +8801,19 @@ _detalhes_database = {
 										["counter"] = 1,
 										["total"] = 0,
 										["c_max"] = 0,
-										["MISS"] = 1,
+										["r_amt"] = 0,
 										["id"] = 0,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
-										["successful_casted"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
 										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["MISS"] = 1,
 									},
 									["!Melee"] = {
 										["c_amt"] = 2,
@@ -4449,8 +8822,8 @@ _detalhes_database = {
 										["g_amt"] = 1,
 										["n_max"] = 95,
 										["targets"] = {
-											["Voidwalker Minion"] = 448,
 											["Bleakheart Hellcaller"] = 214,
+											["Voidwalker Minion"] = 448,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 237,
@@ -4461,16 +8834,16 @@ _detalhes_database = {
 										["c_max"] = 185,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 168,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									["Cleave"] = {
 										["c_amt"] = 0,
@@ -4479,8 +8852,8 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 102,
 										["targets"] = {
-											["Voidwalker Minion"] = 182,
 											["Bleakheart Hellcaller"] = 193,
+											["Voidwalker Minion"] = 182,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 375,
@@ -4491,16 +8864,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Cleave",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 4,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									["Execute"] = {
 										["c_amt"] = 0,
@@ -4520,16 +8893,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Execute",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									["Rend"] = {
 										["c_amt"] = 0,
@@ -4538,8 +8911,8 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 10,
 										["targets"] = {
-											["Voidwalker Minion"] = 36,
 											["Bleakheart Hellcaller"] = 85,
+											["Voidwalker Minion"] = 36,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 121,
@@ -4550,16 +8923,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Rend",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 13,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									["Heroic Strike"] = {
 										["c_amt"] = 0,
@@ -4579,30 +8952,29 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Heroic Strike",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["colocacao"] = 1,
-							["last_dps"] = 40.2219922785745,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
+							["last_dps"] = 40.2219922785745,
+							["colocacao"] = 1,
+							["last_event"] = 1569790702,
+							["damage_taken"] = 860.001279,
 							["start_time"] = 1569790672,
-							["delay"] = 0,
-							["end_time"] = 1569790703,
+							["serial"] = "Player-4465-010B6E50",
+							["classe"] = "WARRIOR",
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
@@ -4615,17 +8987,17 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["dps_started"] = false,
-							["end_time"] = 1569790703,
 							["friendlyfire_total"] = 0,
+							["monster"] = true,
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 461.006199,
-							["serial"] = "Creature-0-4446-1-161-3771-0000111A9B",
-							["monster"] = true,
-							["total"] = 461.006199,
+							["delay"] = 0,
 							["fight_component"] = true,
-							["on_hold"] = false,
+							["total"] = 461.006199,
+							["end_time"] = 1569790703,
+							["damage_taken"] = 704.006199,
 							["nome"] = "Bleakheart Hellcaller",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -4645,19 +9017,19 @@ _detalhes_database = {
 										["counter"] = 1,
 										["total"] = 0,
 										["c_max"] = 0,
-										["MISS"] = 1,
+										["r_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
-										["successful_casted"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
 										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["MISS"] = 1,
 									}, -- [1]
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -4677,30 +9049,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 15,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["last_event"] = 1569790699,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 704.006199,
+							["last_event"] = 1569790699,
+							["on_hold"] = false,
 							["start_time"] = 1569790669,
-							["delay"] = 0,
-							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4446-1-161-3771-0000111A9B",
+							["dps_started"] = false,
 						}, -- [3]
 					},
 				}, -- [1]
@@ -4758,12 +9130,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 31,
-										["n_amt"] = 3,
 										["totaldenied"] = 0,
+										["m_amt"] = 0,
 										["m_healed"] = 0,
+										["n_amt"] = 3,
+										["n_curado"] = 31,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -4772,13 +9144,13 @@ _detalhes_database = {
 							["grupo"] = true,
 							["targets_overheal"] = {
 							},
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
 							["tipo"] = 2,
-							["start_time"] = 1569790698,
-							["totaldenied"] = 0.002795,
-							["delay"] = 1569790684,
+							["custom"] = 0,
 							["last_event"] = 1569790684,
+							["totaldenied"] = 0.002795,
+							["start_time"] = 1569790698,
+							["delay"] = 1569790684,
+							["heal_enemy_amt"] = 0,
 						}, -- [1]
 					},
 				}, -- [2]
@@ -4824,12 +9196,12 @@ _detalhes_database = {
 								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["flag_original"] = 1297,
+							["totalover"] = 0.002831,
 							["last_event"] = 1569790683,
 							["alternatepower"] = 0.002831,
 							["tipo"] = 3,
 							["serial"] = "Player-4465-010B6E50",
-							["totalover"] = 0.002831,
+							["flag_original"] = 1297,
 						}, -- [1]
 					},
 				}, -- [3]
@@ -4842,15 +9214,15 @@ _detalhes_database = {
 							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
 									["Rend"] = {
-										["appliedamt"] = 3,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = "Rend",
+										["uptime"] = 30,
 										["targets"] = {
 										},
-										["activedamt"] = 0,
-										["uptime"] = 30,
-										["id"] = "Rend",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 3,
 									},
 								},
 								["tipo"] = 9,
@@ -4860,71 +9232,71 @@ _detalhes_database = {
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									["Bloodrage"] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Bloodrage",
+										["uptime"] = 10,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 10,
-										["id"] = "Bloodrage",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 									["Blood Craze"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
-										["uptime"] = 6,
+										["refreshamt"] = 0,
 										["id"] = "Blood Craze",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Enrage"] = {
-										["appliedamt"] = 1,
+										["uptime"] = 6,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 12,
-										["id"] = "Enrage",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 									["Battle Shout"] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Battle Shout",
+										["uptime"] = 27,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 27,
-										["id"] = "Battle Shout",
-										["refreshamt"] = 0,
-										["actived"] = false,
+										["appliedamt"] = 1,
+									},
+									["Enrage"] = {
 										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Enrage",
+										["uptime"] = 12,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
 									},
 								},
 								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 30,
-							["buff_uptime_targets"] = {
-							},
+							["nome"] = "Verminz",
 							["grupo"] = true,
 							["spell_cast"] = {
 								["Bloodrage"] = 1,
 								["Rend"] = 3,
-								["Heroic Strike"] = 2,
 								["Cleave"] = 2,
-							},
-							["debuff_uptime_targets"] = {
+								["Heroic Strike"] = 2,
 							},
 							["last_event"] = 1569790702,
-							["nome"] = "Verminz",
+							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
 							["pets"] = {
 							},
 							["serial"] = "Player-4465-010B6E50",
-							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
 					},
 				}, -- [4]
@@ -4953,42 +9325,23 @@ _detalhes_database = {
 						21, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
-				["totals_grupo"] = {
-					1370, -- [1]
-					31, -- [2]
-					{
-						21, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
+				["player_last_events"] = {
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
@@ -5003,12 +9356,45 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "22:57:48",
+				["end_time"] = 1219712.522,
+				["combat_id"] = 136,
+				["totals_grupo"] = {
+					1370, -- [1]
+					31, -- [2]
+					{
+						21, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["frags"] = {
+					["Porca"] = 1,
+					["Bleakheart Trickster"] = 1,
+					["Voidwalker Minion"] = 1,
+					["Bleakheart Hellcaller"] = 1,
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Verminz"] = 1370.001279,
+						}, -- [1]
 					},
 					["heal_section"] = {
 					},
@@ -5017,33 +9403,19 @@ _detalhes_database = {
 							["Verminz"] = 31.002795,
 						}, -- [1]
 					},
-					["damage"] = {
-						{
-							["Verminz"] = 1370.001279,
-						}, -- [1]
+					["damage_section"] = {
 					},
 				},
-				["end_time"] = 1219712.522,
-				["combat_id"] = 136,
 				["combat_counter"] = 2660,
-				["frags"] = {
-					["Porca"] = 1,
-					["Bleakheart Trickster"] = 1,
-					["Bleakheart Hellcaller"] = 1,
-					["Voidwalker Minion"] = 1,
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Voidwalker Minion",
+				["start_time"] = 1219677.377,
+				["TimeData"] = {
 				},
 				["spells_cast_timeline"] = {
 				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 1219677.377,
-				["contra"] = "Voidwalker Minion",
-				["data_inicio"] = "22:57:48",
-			}, -- [7]
+			}, -- [15]
 			{
 				{
 					["tipo"] = 2,
@@ -5059,24 +9431,17 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["dps_started"] = false,
-							["last_event"] = 1569790654,
 							["classe"] = "WARRIOR",
+							["tipo"] = 1,
+							["friendlyfire_total"] = 9,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.00348,
-							["delay"] = 0,
+							["serial"] = "Player-4465-010B6E50",
 							["fight_component"] = true,
 							["total"] = 0.00348,
+							["damage_taken"] = 9.00348,
 							["on_hold"] = false,
-							["friendlyfire"] = {
-								["Verminz"] = {
-									["total"] = 9,
-									["spells"] = {
-										["Chest Pains"] = 9,
-									},
-								},
-							},
 							["nome"] = "Verminz",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -5087,11 +9452,18 @@ _detalhes_database = {
 							["end_time"] = 1569790654,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 9.00348,
+							["last_event"] = 1569790654,
+							["friendlyfire"] = {
+								["Verminz"] = {
+									["spells"] = {
+										["Chest Pains"] = 9,
+									},
+									["total"] = 9,
+								},
+							},
 							["start_time"] = 1569790654,
-							["serial"] = "Player-4465-010B6E50",
-							["friendlyfire_total"] = 9,
+							["delay"] = 0,
+							["dps_started"] = false,
 						}, -- [1]
 					},
 				}, -- [1]
@@ -5112,35 +9484,35 @@ _detalhes_database = {
 					["combatId"] = 135,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1047,
-							["nome"] = "Verminz",
-							["grupo"] = true,
 							["fight_component"] = true,
-							["pets"] = {
-							},
 							["buff_uptime_targets"] = {
 							},
-							["classe"] = "WARRIOR",
-							["last_event"] = 1569790654,
+							["grupo"] = true,
+							["flag_original"] = 1047,
 							["buff_uptime"] = 0,
+							["nome"] = "Verminz",
+							["last_event"] = 1569790654,
+							["tipo"] = 4,
+							["pets"] = {
+							},
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									["Battle Shout"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Battle Shout",
-										["uptime"] = 0,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 0,
+										["id"] = "Battle Shout",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 								},
 								["tipo"] = 9,
 							},
 							["serial"] = "Player-4465-010B6E50",
-							["tipo"] = 4,
+							["classe"] = "WARRIOR",
 						}, -- [1]
 					},
 				}, -- [4]
@@ -5168,55 +9540,24 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
 				["player_last_events"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
-				["frags_need_refresh"] = false,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Verminz"] = 0.00348,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 1219663.883,
-				["cleu_timeline"] = {
-				},
-				["instance_type"] = "none",
-				["data_inicio"] = "22:57:34",
 				["totals_grupo"] = {
 					9, -- [1]
 					0, -- [2]
@@ -5224,20 +9565,50 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
 				},
+				["frags_need_refresh"] = false,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "22:57:34",
+				["end_time"] = 1219663.883,
+				["cleu_timeline"] = {
+				},
+				["instance_type"] = "none",
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Verminz"] = 0.00348,
+						}, -- [1]
+					},
+				},
+				["combat_id"] = 135,
 				["hasSaved"] = true,
 				["frags"] = {
 				},
@@ -5247,12 +9618,13 @@ _detalhes_database = {
 				},
 				["CombatSkillCache"] = {
 				},
-				["combat_id"] = 135,
+				["spells_cast_timeline"] = {
+				},
 				["start_time"] = 1219663.466,
 				["TimeData"] = {
 				},
 				["pvp"] = true,
-			}, -- [8]
+			}, -- [16]
 			{
 				{
 					["tipo"] = 2,
@@ -5269,18 +9641,17 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["end_time"] = 1569790590,
-							["tipo"] = 1,
 							["classe"] = "WARRIOR",
+							["last_event"] = 1569790589,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 849.001135,
-							["delay"] = 0,
+							["serial"] = "Player-4465-010B6E50",
 							["dps_started"] = false,
 							["total"] = 849.001135,
+							["on_hold"] = false,
 							["damage_taken"] = 267.001135,
-							["friendlyfire"] = {
-							},
 							["nome"] = "Verminz",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -5300,19 +9671,19 @@ _detalhes_database = {
 										["counter"] = 1,
 										["total"] = 0,
 										["c_max"] = 0,
-										["r_amt"] = 0,
+										["MISS"] = 1,
 										["id"] = 0,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["spellschool"] = 1,
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["c_min"] = 0,
 										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["MISS"] = 1,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["!Melee"] = {
 										["c_amt"] = 1,
@@ -5332,16 +9703,16 @@ _detalhes_database = {
 										["c_max"] = 170,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 170,
 										["m_amt"] = 0,
+										["c_min"] = 170,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 									["Execute"] = {
 										["c_amt"] = 0,
@@ -5361,16 +9732,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Execute",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 									["Rend"] = {
 										["c_amt"] = 0,
@@ -5390,16 +9761,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Rend",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 5,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 									["Heroic Strike"] = {
 										["c_amt"] = 0,
@@ -5419,29 +9790,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Heroic Strike",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 41.147731062062,
 							["colocacao"] = 1,
-							["last_event"] = 1569790589,
-							["on_hold"] = false,
+							["last_dps"] = 41.147731062062,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1569790569,
-							["serial"] = "Player-4465-010B6E50",
-							["friendlyfire_total"] = 0,
+							["delay"] = 0,
+							["end_time"] = 1569790590,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -5454,17 +9826,17 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1569790590,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 267.002051,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1569790590,
+							["serial"] = "Creature-0-4446-1-161-3770-000011197C",
+							["monster"] = true,
 							["total"] = 267.002051,
-							["damage_taken"] = 849.002051,
+							["fight_component"] = true,
+							["on_hold"] = false,
 							["nome"] = "Bleakheart Shadowstalker",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -5482,22 +9854,22 @@ _detalhes_database = {
 										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 2,
-										["total"] = 0,
+										["DODGE"] = 1,
 										["r_amt"] = 0,
 										["c_max"] = 0,
-										["spellschool"] = 1,
+										["a_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["b_dmg"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["DODGE"] = 1,
+										["spellschool"] = 1,
+										["total"] = 0,
 									}, -- [1]
 									["!Melee"] = {
 										["c_amt"] = 1,
@@ -5517,30 +9889,30 @@ _detalhes_database = {
 										["c_max"] = 61,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 61,
 										["m_amt"] = 0,
+										["c_min"] = 61,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 6,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
+							["last_event"] = 1569790587,
 							["friendlyfire"] = {
 							},
+							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1569790587,
-							["on_hold"] = false,
+							["tipo"] = 1,
+							["damage_taken"] = 849.002051,
 							["start_time"] = 1569790572,
-							["serial"] = "Creature-0-4446-1-161-3770-000011197C",
-							["monster"] = true,
+							["delay"] = 0,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
@@ -5556,7 +9928,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["classe"] = "WARRIOR",
 							["totalover"] = 0.004246,
 							["total_without_pet"] = 31.004246,
 							["total"] = 31.004246,
@@ -5598,12 +9970,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["m_healed"] = 0,
 										["c_min"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 3,
-										["n_curado"] = 31,
 										["m_amt"] = 0,
+										["n_curado"] = 31,
+										["n_amt"] = 3,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -5612,13 +9984,13 @@ _detalhes_database = {
 							["grupo"] = true,
 							["targets_overheal"] = {
 							},
-							["last_event"] = 1569790578,
+							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
 							["tipo"] = 2,
-							["totaldenied"] = 0.004246,
 							["start_time"] = 1569790585,
+							["totaldenied"] = 0.004246,
 							["delay"] = 1569790578,
-							["classe"] = "WARRIOR",
+							["last_event"] = 1569790578,
 						}, -- [1]
 					},
 				}, -- [2]
@@ -5664,12 +10036,12 @@ _detalhes_database = {
 								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["totalover"] = 0.007029,
+							["flag_original"] = 1297,
 							["last_event"] = 1569790589,
 							["alternatepower"] = 0.007029,
 							["tipo"] = 3,
 							["serial"] = "Player-4465-010B6E50",
-							["flag_original"] = 1297,
+							["totalover"] = 0.007029,
 						}, -- [1]
 					},
 				}, -- [3]
@@ -5682,15 +10054,15 @@ _detalhes_database = {
 							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
 									["Rend"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = "Rend",
-										["uptime"] = 15,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 0,
+										["uptime"] = 15,
+										["id"] = "Rend",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 								},
 								["tipo"] = 9,
@@ -5700,55 +10072,55 @@ _detalhes_database = {
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									["Enrage"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Enrage",
-										["uptime"] = 12,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 12,
+										["id"] = "Enrage",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									["Blood Craze"] = {
-										["counter"] = 0,
-										["actived"] = false,
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
 										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Blood Craze",
 										["uptime"] = 6,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Bloodrage"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
+										["id"] = "Blood Craze",
 										["refreshamt"] = 0,
-										["id"] = "Bloodrage",
-										["uptime"] = 10,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 									["Battle Shout"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Battle Shout",
-										["uptime"] = 15,
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
+										["uptime"] = 15,
+										["id"] = "Battle Shout",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Bloodrage"] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = "Bloodrage",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 								},
 								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 15,
-							["buff_uptime_targets"] = {
+							["debuff_uptime_targets"] = {
 							},
 							["grupo"] = true,
 							["spell_cast"] = {
@@ -5757,14 +10129,14 @@ _detalhes_database = {
 								["Battle Shout"] = 1,
 								["Heroic Strike"] = 2,
 							},
-							["pets"] = {
+							["buff_uptime_targets"] = {
 							},
 							["last_event"] = 1569790590,
-							["debuff_uptime_targets"] = {
-							},
+							["nome"] = "Verminz",
 							["tipo"] = 4,
 							["serial"] = "Player-4465-010B6E50",
-							["nome"] = "Verminz",
+							["pets"] = {
+							},
 						}, -- [1]
 					},
 				}, -- [4]
@@ -5782,7 +10154,9 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 2657,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					1115.975032, -- [1]
@@ -5791,21 +10165,21 @@ _detalhes_database = {
 						23, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
 				["totals_grupo"] = {
 					849, -- [1]
@@ -5814,18 +10188,18 @@ _detalhes_database = {
 						23, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
@@ -5846,10 +10220,7 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Verminz"] = 849.001135,
-						}, -- [1]
+					["damage_section"] = {
 					},
 					["heal_section"] = {
 					},
@@ -5858,31 +10229,32 @@ _detalhes_database = {
 							["Verminz"] = 31.004246,
 						}, -- [1]
 					},
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Verminz"] = 849.001135,
+						}, -- [1]
 					},
 				},
 				["end_time"] = 1219599.848,
 				["combat_id"] = 134,
-				["player_last_events"] = {
+				["combat_counter"] = 2657,
+				["frags"] = {
+					["Bleakheart Shadowstalker"] = 1,
+					["Imp Minion"] = 1,
+					["Bleakheart Hellcaller"] = 1,
 				},
 				["spells_cast_timeline"] = {
 				},
-				["data_inicio"] = "22:56:10",
-				["cleu_events"] = {
-					["n"] = 1,
+				["player_last_events"] = {
 				},
 				["CombatSkillCache"] = {
 				},
-				["contra"] = "Bleakheart Shadowstalker",
-				["start_time"] = 1219579.215,
 				["TimeData"] = {
 				},
-				["frags"] = {
-					["Bleakheart Shadowstalker"] = 1,
-					["Bleakheart Hellcaller"] = 1,
-					["Imp Minion"] = 1,
-				},
-			}, -- [9]
+				["start_time"] = 1219579.215,
+				["contra"] = "Bleakheart Shadowstalker",
+				["data_inicio"] = "22:56:10",
+			}, -- [17]
 			{
 				{
 					["tipo"] = 2,
@@ -5899,18 +10271,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 910.00386,
-							["last_event"] = 1569790532,
 							["friendlyfire_total"] = 0,
+							["tipo"] = 1,
+							["classe"] = "WARRIOR",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 910.00386,
-							["serial"] = "Player-4465-010B6E50",
+							["delay"] = 0,
 							["dps_started"] = false,
 							["end_time"] = 1569790534,
+							["damage_taken"] = 493.00386,
 							["friendlyfire"] = {
 							},
-							["on_hold"] = false,
 							["nome"] = "Verminz",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -5928,22 +10300,22 @@ _detalhes_database = {
 										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 2,
-										["MISS"] = 1,
 										["total"] = 0,
+										["r_amt"] = 0,
 										["c_max"] = 0,
-										["DODGE"] = 1,
+										["spellschool"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["r_amt"] = 0,
+										["DODGE"] = 1,
+										["MISS"] = 1,
 									}, -- [1]
 									[0] = {
 										["c_amt"] = 0,
@@ -5961,19 +10333,19 @@ _detalhes_database = {
 										["counter"] = 1,
 										["total"] = 0,
 										["c_max"] = 0,
-										["MISS"] = 1,
+										["r_amt"] = 0,
 										["id"] = 0,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["c_min"] = 0,
-										["successful_casted"] = 0,
 										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
 										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["MISS"] = 1,
 									},
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -5993,16 +10365,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 6,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									["Execute"] = {
 										["c_amt"] = 0,
@@ -6022,16 +10394,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Execute",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									["Rend"] = {
 										["c_amt"] = 0,
@@ -6051,16 +10423,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Rend",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 9,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									["Heroic Strike"] = {
 										["c_amt"] = 0,
@@ -6080,29 +10452,29 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Heroic Strike",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["colocacao"] = 1,
-							["last_dps"] = 28.3111053729323,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 493.00386,
+							["last_dps"] = 28.3111053729323,
+							["colocacao"] = 1,
+							["last_event"] = 1569790532,
+							["on_hold"] = false,
 							["start_time"] = 1569790502,
-							["delay"] = 0,
-							["classe"] = "WARRIOR",
+							["serial"] = "Player-4465-010B6E50",
+							["total"] = 910.00386,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -6115,18 +10487,17 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 493.003804,
-							["on_hold"] = false,
 							["classe"] = "UNKNOW",
+							["last_dps"] = 0,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 493.003804,
-							["serial"] = "Creature-0-4446-1-161-3770-0000111A1D",
+							["delay"] = 0,
 							["fight_component"] = true,
 							["end_time"] = 1569790569,
 							["monster"] = true,
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["nome"] = "Bleakheart Shadowstalker",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -6146,19 +10517,19 @@ _detalhes_database = {
 										["counter"] = 2,
 										["total"] = 0,
 										["c_max"] = 0,
-										["MISS"] = 2,
+										["r_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["c_min"] = 0,
-										["successful_casted"] = 0,
 										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
 										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["MISS"] = 2,
 									}, -- [1]
 									["!Melee"] = {
 										["c_amt"] = 1,
@@ -6178,29 +10549,30 @@ _detalhes_database = {
 										["c_max"] = 64,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 64,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 12,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["tipo"] = 1,
-							["dps_started"] = false,
-							["damage_taken"] = 910.003804,
-							["custom"] = 0,
 							["last_event"] = 1569790568,
-							["last_dps"] = 0,
+							["damage_taken"] = 910.003804,
+							["dps_started"] = false,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1569790503,
-							["delay"] = 0,
-							["friendlyfire_total"] = 0,
+							["serial"] = "Creature-0-4446-1-161-3770-0000111A1D",
+							["total"] = 493.003804,
 						}, -- [2]
 					},
 				}, -- [1]
@@ -6258,12 +10630,12 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 41,
-										["n_amt"] = 4,
 										["m_healed"] = 0,
+										["c_min"] = 0,
 										["totaldenied"] = 0,
+										["n_amt"] = 4,
+										["n_curado"] = 41,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -6272,13 +10644,13 @@ _detalhes_database = {
 							["grupo"] = true,
 							["targets_overheal"] = {
 							},
-							["classe"] = "WARRIOR",
-							["custom"] = 0,
 							["last_event"] = 1569790509,
-							["start_time"] = 1569790527,
-							["totaldenied"] = 0.007615,
-							["delay"] = 1569790509,
+							["custom"] = 0,
 							["tipo"] = 2,
+							["totaldenied"] = 0.007615,
+							["start_time"] = 1569790527,
+							["delay"] = 1569790509,
+							["classe"] = "WARRIOR",
 						}, -- [1]
 					},
 				}, -- [2]
@@ -6324,12 +10696,12 @@ _detalhes_database = {
 								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["flag_original"] = 1297,
+							["totalover"] = 0.002214,
 							["last_event"] = 1569790519,
 							["alternatepower"] = 0.002214,
 							["tipo"] = 3,
 							["serial"] = "Player-4465-010B6E50",
-							["totalover"] = 0.002214,
+							["flag_original"] = 1297,
 						}, -- [1]
 					},
 				}, -- [3]
@@ -6341,27 +10713,27 @@ _detalhes_database = {
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
-									["Sunder Armor"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 24,
-										["id"] = "Sunder Armor",
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
 									["Rend"] = {
-										["appliedamt"] = 2,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = "Rend",
+										["uptime"] = 27,
 										["targets"] = {
 										},
-										["activedamt"] = 0,
-										["uptime"] = 27,
-										["id"] = "Rend",
-										["refreshamt"] = 0,
-										["actived"] = false,
+										["appliedamt"] = 2,
+									},
+									["Sunder Armor"] = {
 										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 1,
+										["id"] = "Sunder Armor",
+										["uptime"] = 24,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
 									},
 								},
 								["tipo"] = 9,
@@ -6371,72 +10743,72 @@ _detalhes_database = {
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									["Enrage"] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 1,
+										["id"] = "Enrage",
+										["uptime"] = 13,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 13,
-										["id"] = "Enrage",
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 									["Blood Craze"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
-										["uptime"] = 7,
-										["id"] = "Blood Craze",
 										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Bloodrage"] = {
-										["appliedamt"] = 1,
+										["id"] = "Blood Craze",
+										["uptime"] = 7,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 10,
-										["id"] = "Bloodrage",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 									["Battle Shout"] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Battle Shout",
+										["uptime"] = 32,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 32,
-										["id"] = "Battle Shout",
-										["refreshamt"] = 0,
-										["actived"] = false,
+										["appliedamt"] = 1,
+									},
+									["Bloodrage"] = {
 										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Bloodrage",
+										["uptime"] = 10,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
 									},
 								},
 								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 51,
-							["buff_uptime_targets"] = {
+							["debuff_uptime_targets"] = {
 							},
 							["grupo"] = true,
 							["spell_cast"] = {
-								["Overpower"] = 1,
-								["Bloodrage"] = 1,
 								["Sunder Armor"] = 2,
+								["Bloodrage"] = 1,
+								["Overpower"] = 1,
 								["Rend"] = 2,
 								["Heroic Strike"] = 1,
 							},
-							["nome"] = "Verminz",
 							["tipo"] = 4,
-							["debuff_uptime_targets"] = {
+							["last_event"] = 1569790534,
+							["buff_uptime_targets"] = {
 							},
 							["pets"] = {
 							},
 							["serial"] = "Player-4465-010B6E50",
-							["last_event"] = 1569790534,
+							["nome"] = "Verminz",
 						}, -- [1]
 					},
 				}, -- [4]
@@ -6464,22 +10836,78 @@ _detalhes_database = {
 						22, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
+				["totals_grupo"] = {
+					910, -- [1]
+					41, -- [2]
+					{
+						22, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "22:55:35",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Bleakheart Shadowstalker",
+				["TotalElapsedCombatTime"] = 1219544.02,
+				["CombatEndedAt"] = 1219544.02,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Verminz"] = 910.00386,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Verminz"] = 41.007615,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["end_time"] = 1219544.02,
+				["combat_id"] = 133,
 				["player_last_events"] = {
 					["Verminz"] = {
 						{
@@ -6559,3984 +10987,21 @@ _detalhes_database = {
 						["n"] = 2,
 					},
 				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "22:55:35",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Bleakheart Shadowstalker",
-				["TotalElapsedCombatTime"] = 1219544.02,
-				["CombatEndedAt"] = 1219544.02,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
+				["spells_cast_timeline"] = {
 				},
 				["data_inicio"] = "22:55:03",
-				["end_time"] = 1219544.02,
-				["combat_id"] = 133,
 				["cleu_events"] = {
 					["n"] = 1,
 				},
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Bleakheart Shadowstalker"] = 1,
-				},
-				["totals_grupo"] = {
-					910, -- [1]
-					41, -- [2]
-					{
-						22, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
 				["CombatSkillCache"] = {
 				},
-				["TimeData"] = {
-				},
-				["start_time"] = 1219511.877,
 				["contra"] = "Bleakheart Shadowstalker",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Verminz"] = 41.007615,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Verminz"] = 910.00386,
-						}, -- [1]
-					},
-				},
-			}, -- [10]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 132,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.003228,
-							["damage_from"] = {
-								["Verminz"] = true,
-								["Bleakheart Shadowstalker"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["last_event"] = 1569790464,
-							["friendlyfire_total"] = 9,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.003228,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 0.003228,
-							["damage_taken"] = 82.003228,
-							["on_hold"] = false,
-							["nome"] = "Verminz",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["end_time"] = 1569790465,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["friendlyfire"] = {
-								["Verminz"] = {
-									["total"] = 9,
-									["spells"] = {
-										["Chest Pains"] = 9,
-									},
-								},
-							},
-							["start_time"] = 1569790464,
-							["serial"] = "Player-4465-010B6E50",
-							["classe"] = "WARRIOR",
-						}, -- [1]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 132,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 132,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 132,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["nome"] = "Verminz",
-							["grupo"] = true,
-							["fight_component"] = true,
-							["pets"] = {
-							},
-							["buff_uptime_targets"] = {
-							},
-							["last_event"] = 1569790465,
-							["tipo"] = 4,
-							["buff_uptime"] = 1,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Battle Shout"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Battle Shout",
-										["uptime"] = 1,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-010B6E50",
-							["classe"] = "WARRIOR",
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 132,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Verminz"] = true,
-				},
-				["CombatStartedAt"] = 1219509.609,
-				["tempo_start"] = 1569790464,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["enemy"] = "Unknown",
-				["combat_counter"] = 2653,
-				["totals"] = {
-					-0.00620000000000687, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-					["Verminz"] = {
-						{
-							true, -- [1]
-							"!Melee", -- [2]
-							73, -- [3]
-							1569790500.457, -- [4]
-							1026, -- [5]
-							"Bleakheart Shadowstalker", -- [6]
-							nil, -- [7]
-							1, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [1]
-						{
-						}, -- [2]
-						{
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 2,
-					},
-				},
-				["frags"] = {
-				},
-				["frags_need_refresh"] = false,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Verminz"] = 0.003228,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 1219474.973,
-				["cleu_timeline"] = {
-				},
-				["combat_id"] = 132,
-				["instance_type"] = "none",
-				["data_inicio"] = "22:54:25",
-				["hasSaved"] = true,
-				["spells_cast_timeline"] = {
-				},
-				["data_fim"] = "22:54:26",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["totals_grupo"] = {
-					9, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["start_time"] = 1219473.947,
-				["TimeData"] = {
-				},
-				["pvp"] = true,
-			}, -- [11]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 131,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.008388,
-							["damage_from"] = {
-								["Verminz"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["end_time"] = 1569790454,
-							["tipo"] = 1,
-							["classe"] = "WARRIOR",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.008388,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 0.008388,
-							["on_hold"] = false,
-							["damage_taken"] = 15.008388,
-							["nome"] = "Verminz",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["friendlyfire_total"] = 15,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1569790453,
-							["friendlyfire"] = {
-								["Verminz"] = {
-									["total"] = 15,
-									["spells"] = {
-										["Chest Pains"] = 15,
-									},
-								},
-							},
-							["start_time"] = 1569790453,
-							["serial"] = "Player-4465-010B6E50",
-							["fight_component"] = true,
-						}, -- [1]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 131,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 131,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 131,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["nome"] = "Verminz",
-							["grupo"] = true,
-							["fight_component"] = true,
-							["pets"] = {
-							},
-							["buff_uptime_targets"] = {
-							},
-							["last_event"] = 1569790454,
-							["tipo"] = 4,
-							["buff_uptime"] = 1,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Battle Shout"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Battle Shout",
-										["uptime"] = 1,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-010B6E50",
-							["classe"] = "WARRIOR",
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 131,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Verminz"] = true,
-				},
-				["tempo_start"] = 1569790453,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["enemy"] = "Unknown",
-				["combat_counter"] = 2652,
-				["totals"] = {
-					0, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags"] = {
-				},
-				["frags_need_refresh"] = false,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Verminz"] = 0.008388,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 1219464.406,
-				["cleu_timeline"] = {
-				},
-				["combat_id"] = 131,
-				["instance_type"] = "none",
-				["data_inicio"] = "22:54:14",
-				["hasSaved"] = true,
-				["spells_cast_timeline"] = {
-				},
-				["data_fim"] = "22:54:15",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["totals_grupo"] = {
-					15, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["start_time"] = 1219463.405,
-				["TimeData"] = {
-				},
-				["pvp"] = true,
-			}, -- [12]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 130,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.008291,
-							["damage_from"] = {
-								["Gromkaas"] = true,
-								["Cat"] = true,
-								["Verminz"] = true,
-							},
-							["targets"] = {
-								["Verminz"] = 721,
-							},
-							["pets"] = {
-								"Imp Minion <Bleakheart Hellcaller>", -- [1]
-							},
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 546.008291,
-							["delay"] = 0,
-							["monster"] = true,
-							["total"] = 721.008291,
-							["end_time"] = 1569790452,
-							["damage_taken"] = 927.008291,
-							["nome"] = "Bleakheart Hellcaller",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 62,
-										["g_amt"] = 0,
-										["n_max"] = 37,
-										["targets"] = {
-											["Verminz"] = 546,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 484,
-										["n_min"] = 28,
-										["g_dmg"] = 0,
-										["counter"] = 16,
-										["total"] = 546,
-										["c_max"] = 62,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 62,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 15,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1569790448,
-							["on_hold"] = false,
-							["start_time"] = 1569790418,
-							["serial"] = "Creature-0-4446-1-161-3771-0000111971",
-							["fight_component"] = true,
-						}, -- [1]
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.004918,
-							["damage_from"] = {
-								["Bleakheart Hellcaller"] = true,
-								["Verminz"] = true,
-								["Imp Minion <Bleakheart Hellcaller>"] = true,
-							},
-							["targets"] = {
-								["Imp Minion <Bleakheart Hellcaller>"] = 283,
-								["Bleakheart Hellcaller"] = 761,
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["custom"] = 0,
-							["friendlyfire_total"] = 17,
-							["classe"] = "WARRIOR",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1044.004918,
-							["damage_taken"] = 738.004918,
-							["dps_started"] = false,
-							["end_time"] = 1569790452,
-							["friendlyfire"] = {
-								["Verminz"] = {
-									["total"] = 17,
-									["spells"] = {
-										["Chest Pains"] = 17,
-									},
-								},
-							},
-							["tipo"] = 1,
-							["nome"] = "Verminz",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Bleakheart Hellcaller"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["DODGE"] = 1,
-									}, -- [1]
-									[0] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Imp Minion"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 0,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["MISS"] = 1,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 87,
-										["targets"] = {
-											["Imp Minion <Bleakheart Hellcaller>"] = 164,
-											["Bleakheart Hellcaller"] = 241,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 405,
-										["n_min"] = 70,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 405,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 70,
-										["n_amt"] = 5,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Cleave"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 101,
-										["targets"] = {
-											["Imp Minion <Bleakheart Hellcaller>"] = 101,
-											["Bleakheart Hellcaller"] = 88,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 189,
-										["n_min"] = 88,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 189,
-										["c_max"] = 0,
-										["id"] = "Cleave",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Execute"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 99,
-										["targets"] = {
-											["Bleakheart Hellcaller"] = 99,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 99,
-										["n_min"] = 99,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 99,
-										["c_max"] = 0,
-										["id"] = "Execute",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Rend"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Imp Minion <Bleakheart Hellcaller>"] = 18,
-											["Bleakheart Hellcaller"] = 45,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 63,
-										["n_min"] = 9,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 63,
-										["c_max"] = 0,
-										["id"] = "Rend",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 7,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Overpower"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 167,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Bleakheart Hellcaller"] = 167,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 167,
-										["c_max"] = 167,
-										["id"] = "Overpower",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 167,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Heroic Strike"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 121,
-										["targets"] = {
-											["Bleakheart Hellcaller"] = 121,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 121,
-										["n_min"] = 121,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 121,
-										["c_max"] = 0,
-										["id"] = "Heroic Strike",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["last_dps"] = 31.9825052232467,
-							["total"] = 1044.004918,
-							["colocacao"] = 1,
-							["last_event"] = 1569790450,
-							["on_hold"] = false,
-							["start_time"] = 1569790420,
-							["serial"] = "Player-4465-010B6E50",
-							["fight_component"] = true,
-						}, -- [2]
-						{
-							["flag_original"] = 70216,
-							["totalabsorbed"] = 0.006719,
-							["damage_from"] = {
-								["Verminz"] = true,
-							},
-							["targets"] = {
-								["Verminz"] = 175,
-							},
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 175.006719,
-							["delay"] = 1569790432,
-							["dps_started"] = false,
-							["total"] = 175.006719,
-							["end_time"] = 1569790452,
-							["ownerName"] = "Bleakheart Hellcaller",
-							["nome"] = "Imp Minion <Bleakheart Hellcaller>",
-							["spells"] = {
-								["_ActorTable"] = {
-									[0] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Verminz"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 0,
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["RESIST"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 4,
-									},
-									["Firebolt"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 37,
-										["targets"] = {
-											["Verminz"] = 175,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 175,
-										["n_min"] = 33,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 175,
-										["c_max"] = 0,
-										["id"] = "Firebolt",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 6,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["damage_taken"] = 283.006719,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1569790432,
-							["on_hold"] = false,
-							["start_time"] = 1569790441,
-							["serial"] = "Creature-0-4446-1-161-12922-00001119CC",
-							["fight_component"] = true,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 130,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["healing_from"] = {
-								["Verminz"] = true,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "WARRIOR",
-							["totalover"] = 0.004167,
-							["total_without_pet"] = 31.004167,
-							["total"] = 31.004167,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-010B6E50",
-							["totalabsorb"] = 0.004167,
-							["last_hps"] = 1.38405281015242,
-							["targets"] = {
-								["Verminz"] = 31,
-							},
-							["totalover_without_pet"] = 0.004167,
-							["healing_taken"] = 31.004167,
-							["fight_component"] = true,
-							["end_time"] = 1569790452,
-							["nome"] = "Verminz",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Blood Craze"] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 11,
-										["targets"] = {
-											["Verminz"] = 31,
-										},
-										["n_min"] = 10,
-										["counter"] = 3,
-										["overheal"] = 0,
-										["total"] = 31,
-										["c_max"] = 0,
-										["id"] = "Blood Craze",
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["totaldenied"] = 0,
-										["m_amt"] = 0,
-										["m_healed"] = 0,
-										["n_amt"] = 3,
-										["n_curado"] = 31,
-										["c_min"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["targets_overheal"] = {
-							},
-							["tipo"] = 2,
-							["custom"] = 0,
-							["last_event"] = 1569790440,
-							["totaldenied"] = 0.004167,
-							["start_time"] = 1569790447,
-							["delay"] = 1569790440,
-							["heal_enemy_amt"] = 0,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 130,
-					["_ActorTable"] = {
-						{
-							["received"] = 25.007797,
-							["resource"] = 0.007797,
-							["targets"] = {
-								["Verminz"] = 25,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 1,
-							["classe"] = "WARRIOR",
-							["passiveover"] = 0.007797,
-							["fight_component"] = true,
-							["total"] = 25.007797,
-							["nome"] = "Verminz",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Unbridled Wrath"] = {
-										["total"] = 5,
-										["id"] = "Unbridled Wrath",
-										["totalover"] = 0,
-										["targets"] = {
-											["Verminz"] = 5,
-										},
-										["counter"] = 5,
-									},
-									["Bloodrage"] = {
-										["total"] = 20,
-										["id"] = "Bloodrage",
-										["totalover"] = 0,
-										["targets"] = {
-											["Verminz"] = 20,
-										},
-										["counter"] = 11,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["totalover"] = 0.007797,
-							["last_event"] = 1569790437,
-							["alternatepower"] = 0.007797,
-							["tipo"] = 3,
-							["serial"] = "Player-4465-010B6E50",
-							["flag_original"] = 1297,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 130,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 2632,
-							["nome"] = "Bleakheart Hellcaller",
-							["classe"] = "UNKNOW",
-							["pets"] = {
-								"Imp Minion <Bleakheart Hellcaller>", -- [1]
-							},
-							["monster"] = true,
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-4446-1-161-3771-0000111971",
-							["fight_component"] = true,
-						}, -- [1]
-						{
-							["flag_original"] = 70216,
-							["ownerName"] = "Bleakheart Hellcaller",
-							["nome"] = "Imp Minion <Bleakheart Hellcaller>",
-							["last_event"] = 0,
-							["spell_cast"] = {
-								["Firebolt"] = 6,
-							},
-							["pets"] = {
-							},
-							["classe"] = "PET",
-							["tipo"] = 4,
-							["serial"] = "Creature-0-4446-1-161-12922-00001119CC",
-							["fight_component"] = true,
-						}, -- [2]
-						{
-							["flag_original"] = 1297,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Chest Pains"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = "Chest Pains",
-										["uptime"] = 5,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Rend"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = "Rend",
-										["uptime"] = 17,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 56,
-							["classe"] = "WARRIOR",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Battle Shout"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Battle Shout",
-										["uptime"] = 28,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Blood Craze"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Blood Craze",
-										["uptime"] = 6,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Bloodrage"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Bloodrage",
-										["uptime"] = 10,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Enrage"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Enrage",
-										["uptime"] = 12,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 22,
-							["nome"] = "Verminz",
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Battle Shout"] = 1,
-								["Chest Pains"] = 1,
-								["Cleave"] = 1,
-								["Bloodrage"] = 1,
-								["Rend"] = 3,
-								["Overpower"] = 1,
-								["Heroic Strike"] = 1,
-							},
-							["last_event"] = 1569790452,
-							["tipo"] = 4,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-010B6E50",
-							["debuff_uptime_targets"] = {
-							},
-						}, -- [3]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 130,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Verminz"] = true,
-				},
-				["tempo_start"] = 1569790418,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					1764.976525, -- [1]
-					31, -- [2]
-					{
-						25, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "22:54:12",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Bleakheart Hellcaller",
-				["TotalElapsedCombatTime"] = 1219461.787,
-				["CombatEndedAt"] = 1219461.787,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "22:53:39",
-				["end_time"] = 1219461.787,
-				["combat_id"] = 130,
-				["totals_grupo"] = {
-					1061, -- [1]
-					31, -- [2]
-					{
-						25, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["frags"] = {
-					["Bleakheart Hellcaller"] = 2,
-					["Imp Minion"] = 2,
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Verminz"] = 1044.004918,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Verminz"] = 31.004167,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["combat_counter"] = 2651,
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Bleakheart Hellcaller",
-				["start_time"] = 1219427.86,
-				["TimeData"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-			}, -- [13]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 129,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.007187,
-							["damage_from"] = {
-								["Verminz"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["end_time"] = 1569790396,
-							["tipo"] = 1,
-							["classe"] = "WARRIOR",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.007187,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 0.007187,
-							["on_hold"] = false,
-							["damage_taken"] = 10.007187,
-							["nome"] = "Verminz",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["friendlyfire_total"] = 10,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1569790395,
-							["friendlyfire"] = {
-								["Verminz"] = {
-									["total"] = 10,
-									["spells"] = {
-										["Chest Pains"] = 10,
-									},
-								},
-							},
-							["start_time"] = 1569790395,
-							["serial"] = "Player-4465-010B6E50",
-							["fight_component"] = true,
-						}, -- [1]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 129,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 129,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 129,
-					["_ActorTable"] = {
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 129,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Verminz"] = true,
-				},
-				["CombatStartedAt"] = 1219426.175,
-				["tempo_start"] = 1569790395,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["enemy"] = "Unknown",
-				["combat_counter"] = 2650,
-				["totals"] = {
-					-0.0157710000000004, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags"] = {
-				},
-				["frags_need_refresh"] = false,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Verminz"] = 0.007187,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 1219406.493,
-				["cleu_timeline"] = {
-				},
-				["combat_id"] = 129,
-				["instance_type"] = "none",
-				["data_inicio"] = "22:53:16",
-				["hasSaved"] = true,
-				["spells_cast_timeline"] = {
-				},
-				["data_fim"] = "22:53:17",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["totals_grupo"] = {
-					10, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["start_time"] = 1219405.492,
-				["TimeData"] = {
-				},
-				["pvp"] = true,
-			}, -- [14]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 128,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.007397,
-							["damage_from"] = {
-								["Bleakheart Shadowstalker"] = true,
-								["Imp Minion <Bleakheart Hellcaller>"] = true,
-								["Bleakheart Hellcaller"] = true,
-							},
-							["targets"] = {
-								["Bleakheart Shadowstalker"] = 90,
-								["Imp Minion <Bleakheart Hellcaller>"] = 232,
-							},
-							["pets"] = {
-							},
-							["classe"] = "WARRIOR",
-							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 322.007397,
-							["serial"] = "Player-4465-010B6E50",
-							["dps_started"] = false,
-							["total"] = 322.007397,
-							["on_hold"] = false,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Verminz",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Imp Minion"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["MISS"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["c_min"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									[0] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Bleakheart Shadowstalker"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["a_amt"] = 0,
-										["id"] = 0,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["m_amt"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									["Rend"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 10,
-										["targets"] = {
-											["Imp Minion <Bleakheart Hellcaller>"] = 20,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 20,
-										["n_min"] = 10,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 20,
-										["c_max"] = 0,
-										["id"] = "Rend",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 112,
-										["targets"] = {
-											["Bleakheart Shadowstalker"] = 90,
-											["Imp Minion <Bleakheart Hellcaller>"] = 212,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 302,
-										["n_min"] = 90,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 302,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["colocacao"] = 1,
-							["last_dps"] = 9.60442022847204,
-							["custom"] = 0,
-							["last_event"] = 1569790356,
-							["damage_taken"] = 559.007397,
-							["start_time"] = 1569790366,
-							["delay"] = 1569790356,
-							["end_time"] = 1569790377,
-						}, -- [1]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.006185,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Verminz"] = 341,
-							},
-							["pets"] = {
-								"Imp Minion <Bleakheart Hellcaller>", -- [1]
-							},
-							["dps_started"] = false,
-							["damage_taken"] = 0.006185,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 237.006185,
-							["serial"] = "Creature-0-4446-1-161-3771-0000111971",
-							["fight_component"] = true,
-							["total"] = 341.006185,
-							["monster"] = true,
-							["on_hold"] = false,
-							["nome"] = "Bleakheart Hellcaller",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Verminz"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["a_amt"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["m_amt"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 74,
-										["g_amt"] = 0,
-										["n_max"] = 36,
-										["targets"] = {
-											["Verminz"] = 237,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 163,
-										["n_min"] = 28,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 237,
-										["c_max"] = 74,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 74,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["end_time"] = 1569790377,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1569790356,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1569790364,
-							["delay"] = 1569790356,
-							["friendlyfire_total"] = 0,
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.001371,
-							["damage_from"] = {
-								["Emor"] = true,
-								["Cat"] = true,
-								["Verminz"] = true,
-								["Searing Totem II"] = true,
-								["Elatin"] = true,
-								["Gromkaas"] = true,
-							},
-							["targets"] = {
-								["Gromkaas"] = 63,
-								["Verminz"] = 218,
-								["Emor"] = 34,
-							},
-							["pets"] = {
-							},
-							["dps_started"] = false,
-							["damage_taken"] = 869.001371,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 315.001371,
-							["serial"] = "Creature-0-4446-1-161-3770-0000111928",
-							["fight_component"] = true,
-							["total"] = 315.001371,
-							["monster"] = true,
-							["on_hold"] = false,
-							["nome"] = "Bleakheart Shadowstalker",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 39,
-										["targets"] = {
-											["Gromkaas"] = 63,
-											["Verminz"] = 218,
-											["Emor"] = 34,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 315,
-										["n_min"] = 29,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 315,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 9,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["end_time"] = 1569790377,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1569790356,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1569790365,
-							["delay"] = 1569790356,
-							["friendlyfire_total"] = 0,
-						}, -- [3]
-						{
-							["flag_original"] = 70216,
-							["totalabsorbed"] = 0.001361,
-							["damage_from"] = {
-								["Verminz"] = true,
-							},
-							["targets"] = {
-								["Verminz"] = 104,
-							},
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["tipo"] = 1,
-							["classe"] = "PET",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 104.001361,
-							["serial"] = "Creature-0-4446-1-161-12922-0000111975",
-							["dps_started"] = false,
-							["total"] = 104.001361,
-							["damage_taken"] = 232.001361,
-							["ownerName"] = "Bleakheart Hellcaller",
-							["nome"] = "Imp Minion <Bleakheart Hellcaller>",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Firebolt"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 35,
-										["targets"] = {
-											["Verminz"] = 104,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 104,
-										["n_min"] = 34,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 104,
-										["c_max"] = 0,
-										["id"] = "Firebolt",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 3,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["end_time"] = 1569790377,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1569790350,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1569790372,
-							["delay"] = 1569790350,
-							["friendlyfire_total"] = 0,
-						}, -- [4]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 128,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["healing_from"] = {
-								["Verminz"] = true,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "WARRIOR",
-							["totalover"] = 0.001252,
-							["total_without_pet"] = 37.001252,
-							["total"] = 37.001252,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-010B6E50",
-							["totalabsorb"] = 0.001252,
-							["last_hps"] = 1.10362549586894,
-							["targets"] = {
-								["Verminz"] = 37,
-							},
-							["totalover_without_pet"] = 0.001252,
-							["healing_taken"] = 37.001252,
-							["fight_component"] = true,
-							["end_time"] = 1569790377,
-							["nome"] = "Verminz",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Blood Craze"] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 13,
-										["targets"] = {
-											["Verminz"] = 37,
-										},
-										["n_min"] = 12,
-										["counter"] = 3,
-										["overheal"] = 0,
-										["total"] = 37,
-										["c_max"] = 0,
-										["id"] = "Blood Craze",
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 37,
-										["n_amt"] = 3,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["targets_overheal"] = {
-							},
-							["heal_enemy_amt"] = 0,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["start_time"] = 1569790372,
-							["totaldenied"] = 0.001252,
-							["delay"] = 1569790350,
-							["last_event"] = 1569790350,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 128,
-					["_ActorTable"] = {
-						{
-							["received"] = 3.007953,
-							["resource"] = 0.007953,
-							["targets"] = {
-								["Verminz"] = 3,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 1,
-							["classe"] = "WARRIOR",
-							["passiveover"] = 0.007953,
-							["fight_component"] = true,
-							["total"] = 3.007953,
-							["nome"] = "Verminz",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Unbridled Wrath"] = {
-										["total"] = 3,
-										["id"] = "Unbridled Wrath",
-										["totalover"] = 0,
-										["targets"] = {
-											["Verminz"] = 3,
-										},
-										["counter"] = 3,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["flag_original"] = 1297,
-							["last_event"] = 1569790357,
-							["alternatepower"] = 0.007953,
-							["tipo"] = 3,
-							["serial"] = "Player-4465-010B6E50",
-							["totalover"] = 0.007953,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 128,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Intimidating Shout"] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 8,
-										["id"] = "Intimidating Shout",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Rend"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 6,
-										["id"] = "Rend",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 51,
-							["classe"] = "WARRIOR",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Enrage"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 12,
-										["id"] = "Enrage",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Blood Craze"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 6,
-										["id"] = "Blood Craze",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Battle Shout"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 33,
-										["id"] = "Battle Shout",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 14,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Intimidating Shout"] = 1,
-								["Rend"] = 2,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["last_event"] = 1569790377,
-							["nome"] = "Verminz",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-010B6E50",
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 2632,
-							["nome"] = "Bleakheart Hellcaller",
-							["last_event"] = 0,
-							["pets"] = {
-								"Imp Minion <Bleakheart Hellcaller>", -- [1]
-							},
-							["fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["tipo"] = 4,
-							["serial"] = "Creature-0-4446-1-161-3771-0000111971",
-							["monster"] = true,
-						}, -- [2]
-						{
-							["flag_original"] = 70216,
-							["ownerName"] = "Bleakheart Hellcaller",
-							["nome"] = "Imp Minion <Bleakheart Hellcaller>",
-							["tipo"] = 4,
-							["spell_cast"] = {
-								["Firebolt"] = 3,
-							},
-							["fight_component"] = true,
-							["last_event"] = 0,
-							["classe"] = "PET",
-							["serial"] = "Creature-0-4446-1-161-12922-0000111975",
-							["pets"] = {
-							},
-						}, -- [3]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 128,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Verminz"] = true,
-				},
-				["tempo_start"] = 1569790344,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					977.96732, -- [1]
-					37, -- [2]
-					{
-						3, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					322, -- [1]
-					37, -- [2]
-					{
-						3, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "22:52:58",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Bleakheart Hellcaller",
-				["TotalElapsedCombatTime"] = 1219387.694,
-				["CombatEndedAt"] = 1219387.694,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Verminz"] = 37.001252,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Verminz"] = 322.007397,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 1219387.694,
-				["combat_id"] = 128,
-				["combat_counter"] = 2648,
-				["frags"] = {
-					["Imp Minion"] = 1,
-					["Bleakheart Shadowstalker"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 1219354.167,
-				["contra"] = "Bleakheart Hellcaller",
-				["data_inicio"] = "22:52:25",
-			}, -- [15]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 127,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.003675,
-							["damage_from"] = {
-								["Bleakheart Satyr"] = true,
-							},
-							["targets"] = {
-								["Bleakheart Satyr"] = 868,
-							},
-							["pets"] = {
-							},
-							["end_time"] = 1569790269,
-							["last_event"] = 1569790267,
-							["classe"] = "WARRIOR",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 868.003675,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 868.003675,
-							["friendlyfire"] = {
-							},
-							["damage_taken"] = 335.003675,
-							["nome"] = "Verminz",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Bleakheart Satyr"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 0,
-										["r_amt"] = 0,
-										["c_max"] = 0,
-										["spellschool"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 0,
-										["MISS"] = 1,
-										["DODGE"] = 1,
-									}, -- [1]
-									["Rend"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Bleakheart Satyr"] = 45,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 45,
-										["n_min"] = 9,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 45,
-										["c_max"] = 0,
-										["id"] = "Rend",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Overpower"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 86,
-										["targets"] = {
-											["Bleakheart Satyr"] = 86,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 86,
-										["n_min"] = 86,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 86,
-										["c_max"] = 0,
-										["id"] = "Overpower",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 1,
-										["n_max"] = 78,
-										["targets"] = {
-											["Bleakheart Satyr"] = 363,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 288,
-										["n_min"] = 66,
-										["g_dmg"] = 75,
-										["counter"] = 5,
-										["total"] = 363,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Heroic Strike"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 249,
-										["g_amt"] = 0,
-										["n_max"] = 125,
-										["targets"] = {
-											["Bleakheart Satyr"] = 374,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 125,
-										["n_min"] = 125,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 374,
-										["c_max"] = 249,
-										["id"] = "Heroic Strike",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 249,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 32.6673318655723,
-							["colocacao"] = 1,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1569790242,
-							["serial"] = "Player-4465-010B6E50",
-							["friendlyfire_total"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.005992,
-							["damage_from"] = {
-								["Verminz"] = true,
-							},
-							["targets"] = {
-								["Verminz"] = 335,
-							},
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 335.005992,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 335.005992,
-							["monster"] = true,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Bleakheart Satyr",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Verminz"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["a_amt"] = 0,
-									}, -- [1]
-									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 60,
-										["g_amt"] = 0,
-										["n_max"] = 38,
-										["targets"] = {
-											["Verminz"] = 335,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 275,
-										["n_min"] = 30,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 335,
-										["c_max"] = 60,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 60,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 8,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1569790262,
-							["last_dps"] = 0,
-							["end_time"] = 1569790269,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 868.005992,
-							["start_time"] = 1569790244,
-							["serial"] = "Creature-0-4446-1-161-3765-0000111909",
-							["fight_component"] = true,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 127,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["healing_from"] = {
-								["Verminz"] = true,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.005161,
-							["total_without_pet"] = 37.005161,
-							["total"] = 37.005161,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-010B6E50",
-							["totalabsorb"] = 0.005161,
-							["last_hps"] = 1.39268981220147,
-							["targets"] = {
-								["Verminz"] = 37,
-							},
-							["totalover_without_pet"] = 0.005161,
-							["healing_taken"] = 37.005161,
-							["fight_component"] = true,
-							["end_time"] = 1569790269,
-							["nome"] = "Verminz",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Blood Craze"] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 13,
-										["targets"] = {
-											["Verminz"] = 37,
-										},
-										["n_min"] = 12,
-										["counter"] = 3,
-										["overheal"] = 0,
-										["total"] = 37,
-										["c_max"] = 0,
-										["id"] = "Blood Craze",
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["m_healed"] = 0,
-										["c_min"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 3,
-										["n_curado"] = 37,
-										["m_amt"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["targets_overheal"] = {
-							},
-							["last_event"] = 1569790256,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["totaldenied"] = 0.005161,
-							["start_time"] = 1569790264,
-							["delay"] = 1569790256,
-							["classe"] = "WARRIOR",
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 127,
-					["_ActorTable"] = {
-						{
-							["received"] = 23.005242,
-							["resource"] = 0.005242,
-							["targets"] = {
-								["Verminz"] = 23,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 1,
-							["classe"] = "WARRIOR",
-							["passiveover"] = 0.005242,
-							["fight_component"] = true,
-							["total"] = 23.005242,
-							["nome"] = "Verminz",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Unbridled Wrath"] = {
-										["total"] = 3,
-										["id"] = "Unbridled Wrath",
-										["totalover"] = 0,
-										["targets"] = {
-											["Verminz"] = 3,
-										},
-										["counter"] = 3,
-									},
-									["Bloodrage"] = {
-										["total"] = 20,
-										["id"] = "Bloodrage",
-										["totalover"] = 0,
-										["targets"] = {
-											["Verminz"] = 20,
-										},
-										["counter"] = 11,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["totalover"] = 0.005242,
-							["last_event"] = 1569790268,
-							["alternatepower"] = 0.005242,
-							["tipo"] = 3,
-							["serial"] = "Player-4465-010B6E50",
-							["flag_original"] = 1297,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 127,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Rend"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = "Rend",
-										["uptime"] = 15,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 51,
-							["classe"] = "WARRIOR",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Battle Shout"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Battle Shout",
-										["uptime"] = 23,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Blood Craze"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Blood Craze",
-										["uptime"] = 6,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Bloodrage"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Bloodrage",
-										["uptime"] = 10,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Enrage"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Enrage",
-										["uptime"] = 12,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 15,
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Battle Shout"] = 1,
-								["Bloodrage"] = 1,
-								["Rend"] = 1,
-								["Overpower"] = 1,
-								["Heroic Strike"] = 2,
-							},
-							["tipo"] = 4,
-							["last_event"] = 1569790269,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-010B6E50",
-							["nome"] = "Verminz",
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 127,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Verminz"] = true,
-				},
-				["CombatStartedAt"] = 1219352.416,
-				["tempo_start"] = 1569790242,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 2646,
-				["playing_solo"] = true,
-				["totals"] = {
-					1202.931282, -- [1]
-					36.995445, -- [2]
-					{
-						22.996482, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["totals_grupo"] = {
-					868, -- [1]
-					37, -- [2]
-					{
-						23, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "22:51:09",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Bleakheart Satyr",
-				["TotalElapsedCombatTime"] = 1219278.306,
-				["CombatEndedAt"] = 1219278.306,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Verminz"] = 868.003675,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Verminz"] = 37.005161,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 1219278.306,
-				["combat_id"] = 127,
-				["player_last_events"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["data_inicio"] = "22:50:42",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Bleakheart Satyr",
-				["start_time"] = 1219251.735,
+				["start_time"] = 1219511.877,
 				["TimeData"] = {
 				},
 				["frags"] = {
 					["Bleakheart Shadowstalker"] = 1,
-					["Bleakheart Satyr"] = 1,
 				},
-			}, -- [16]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 126,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.001383,
-							["damage_from"] = {
-								["Voidwalker Minion"] = true,
-								["Bleakheart Hellcaller"] = true,
-							},
-							["targets"] = {
-								["Voidwalker Minion"] = 630,
-								["Bleakheart Hellcaller"] = 762,
-							},
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["tipo"] = 1,
-							["classe"] = "WARRIOR",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1392.001383,
-							["serial"] = "Player-4465-010B6E50",
-							["dps_started"] = false,
-							["end_time"] = 1569790135,
-							["damage_taken"] = 870.001383,
-							["on_hold"] = false,
-							["nome"] = "Verminz",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Voidwalker Minion"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["MISS"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["m_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["r_amt"] = 0,
-									}, -- [1]
-									["Execute"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 109,
-										["targets"] = {
-											["Voidwalker Minion"] = 109,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 109,
-										["n_min"] = 109,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 109,
-										["c_max"] = 0,
-										["id"] = "Execute",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["Rend"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 10,
-										["targets"] = {
-											["Bleakheart Hellcaller"] = 50,
-											["Voidwalker Minion"] = 70,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 120,
-										["n_min"] = 10,
-										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 120,
-										["c_max"] = 0,
-										["id"] = "Rend",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 12,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 1,
-										["n_max"] = 96,
-										["targets"] = {
-											["Voidwalker Minion"] = 169,
-											["Bleakheart Hellcaller"] = 444,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 537,
-										["n_min"] = 84,
-										["g_dmg"] = 76,
-										["counter"] = 7,
-										["total"] = 613,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["Cleave"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 97,
-										["targets"] = {
-											["Bleakheart Hellcaller"] = 268,
-											["Voidwalker Minion"] = 282,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 550,
-										["n_min"] = 82,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 550,
-										["c_max"] = 0,
-										["id"] = "Cleave",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["colocacao"] = 1,
-							["last_dps"] = 39.0145851341084,
-							["custom"] = 0,
-							["last_event"] = 1569790134,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1569790102,
-							["delay"] = 0,
-							["total"] = 1392.001383,
-						}, -- [1]
-						{
-							["flag_original"] = 70216,
-							["totalabsorbed"] = 0.005891,
-							["damage_from"] = {
-								["Verminz"] = true,
-								["Gromkaas"] = true,
-							},
-							["targets"] = {
-								["Verminz"] = 529,
-								["Gromkaas"] = 244,
-							},
-							["pets"] = {
-							},
-							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 773.005891,
-							["dps_started"] = false,
-							["fight_component"] = true,
-							["end_time"] = 1569790242,
-							["serial"] = "Creature-0-4446-1-161-8996-00001114DD",
-							["classe"] = "PET",
-							["nome"] = "Voidwalker Minion",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Verminz"] = 0,
-											["Gromkaas"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["MISS"] = 3,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["DODGE"] = 2,
-										["r_amt"] = 0,
-										["c_max"] = 0,
-										["b_dmg"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["m_amt"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 2,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 0,
-										["total"] = 0,
-										["a_amt"] = 0,
-									}, -- [1]
-									["!Melee"] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 153,
-										["g_amt"] = 0,
-										["n_max"] = 42,
-										["targets"] = {
-											["Verminz"] = 529,
-											["Gromkaas"] = 244,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 620,
-										["n_min"] = 30,
-										["g_dmg"] = 0,
-										["counter"] = 19,
-										["total"] = 773,
-										["c_max"] = 78,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 75,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 17,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1569790149,
-							["damage_taken"] = 726.005891,
-							["start_time"] = 1569790194,
-							["delay"] = 1569790149,
-							["total"] = 773.005891,
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.006046,
-							["damage_from"] = {
-								["Verminz"] = true,
-								["Gromkaas"] = true,
-							},
-							["targets"] = {
-								["Verminz"] = 341,
-								["Gromkaas"] = 212,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["damage_taken"] = 1396.006046,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 553.006046,
-							["serial"] = "Creature-0-4446-1-161-3771-00001114DB",
-							["fight_component"] = true,
-							["end_time"] = 1569790242,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Bleakheart Hellcaller",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Verminz"] = 0,
-											["Gromkaas"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["MISS"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["DODGE"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["r_amt"] = 0,
-									}, -- [1]
-									["!Melee"] = {
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 178,
-										["g_amt"] = 0,
-										["n_max"] = 34,
-										["targets"] = {
-											["Verminz"] = 341,
-											["Gromkaas"] = 212,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 375,
-										["n_min"] = 22,
-										["g_dmg"] = 0,
-										["counter"] = 16,
-										["total"] = 553,
-										["c_max"] = 65,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 50,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 13,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["dps_started"] = false,
-							["custom"] = 0,
-							["last_event"] = 1569790147,
-							["on_hold"] = false,
-							["start_time"] = 1569790208,
-							["delay"] = 1569790147,
-							["total"] = 553.006046,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 126,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["healing_from"] = {
-								["Verminz"] = true,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.004107,
-							["total_without_pet"] = 112.004107,
-							["total"] = 112.004107,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-010B6E50",
-							["totalabsorb"] = 0.004107,
-							["last_hps"] = 3.13921654194311,
-							["targets"] = {
-								["Verminz"] = 112,
-							},
-							["totalover_without_pet"] = 0.004107,
-							["healing_taken"] = 112.004107,
-							["fight_component"] = true,
-							["end_time"] = 1569790135,
-							["nome"] = "Verminz",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Blood Craze"] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 13,
-										["targets"] = {
-											["Verminz"] = 112,
-										},
-										["n_min"] = 12,
-										["counter"] = 9,
-										["overheal"] = 0,
-										["total"] = 112,
-										["c_max"] = 0,
-										["id"] = "Blood Craze",
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["n_curado"] = 112,
-										["n_amt"] = 9,
-										["m_healed"] = 0,
-										["totaldenied"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["targets_overheal"] = {
-							},
-							["classe"] = "WARRIOR",
-							["custom"] = 0,
-							["last_event"] = 1569790134,
-							["start_time"] = 1569790116,
-							["totaldenied"] = 0.004107,
-							["delay"] = 1569790106,
-							["tipo"] = 2,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 126,
-					["_ActorTable"] = {
-						{
-							["received"] = 22.005037,
-							["resource"] = 0.005037,
-							["targets"] = {
-								["Verminz"] = 22,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 1,
-							["classe"] = "WARRIOR",
-							["passiveover"] = 0.005037,
-							["fight_component"] = true,
-							["total"] = 22.005037,
-							["nome"] = "Verminz",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Bloodrage"] = {
-										["total"] = 20,
-										["id"] = "Bloodrage",
-										["totalover"] = 0,
-										["targets"] = {
-											["Verminz"] = 20,
-										},
-										["counter"] = 11,
-									},
-									["Unbridled Wrath"] = {
-										["total"] = 2,
-										["id"] = "Unbridled Wrath",
-										["totalover"] = 0,
-										["targets"] = {
-											["Verminz"] = 2,
-										},
-										["counter"] = 2,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["flag_original"] = 1297,
-							["last_event"] = 1569790133,
-							["alternatepower"] = 0.005037,
-							["tipo"] = 3,
-							["serial"] = "Player-4465-010B6E50",
-							["totalover"] = 0.005037,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 126,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Rend"] = {
-										["appliedamt"] = 3,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 23,
-										["id"] = "Rend",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Charge Stun"] = {
-										["activedamt"] = -1,
-										["id"] = "Charge Stun",
-										["targets"] = {
-										},
-										["actived_at"] = 1569790100,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 92,
-							["classe"] = "WARRIOR",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Enrage"] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 2,
-										["uptime"] = 29,
-										["id"] = "Enrage",
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Blood Craze"] = {
-										["appliedamt"] = 3,
-										["targets"] = {
-										},
-										["activedamt"] = 3,
-										["uptime"] = 18,
-										["id"] = "Blood Craze",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Bloodrage"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 10,
-										["id"] = "Bloodrage",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Battle Shout"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 35,
-										["id"] = "Battle Shout",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 23,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Bloodrage"] = 1,
-								["Rend"] = 3,
-								["Cleave"] = 3,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["tipo"] = 4,
-							["nome"] = "Verminz",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-010B6E50",
-							["last_event"] = 1569790135,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 126,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Verminz"] = true,
-				},
-				["CombatStartedAt"] = 1219249.983,
-				["tempo_start"] = 1569790100,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 2644,
-				["playing_solo"] = true,
-				["totals"] = {
-					2717.94263, -- [1]
-					112, -- [2]
-					{
-						21.98719, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "22:48:55",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Bleakheart Hellcaller",
-				["TotalElapsedCombatTime"] = 1219144.699,
-				["CombatEndedAt"] = 1219144.699,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "22:48:20",
-				["end_time"] = 1219144.699,
-				["combat_id"] = 126,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Voidwalker Minion"] = 1,
-					["Bleakheart Hellcaller"] = 1,
-				},
-				["totals_grupo"] = {
-					1392, -- [1]
-					112, -- [2]
-					{
-						22, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 1219109.02,
-				["contra"] = "Bleakheart Hellcaller",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Verminz"] = 112.004107,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Verminz"] = 1392.001383,
-						}, -- [1]
-					},
-				},
-			}, -- [17]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 125,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.001696,
-							["damage_from"] = {
-								["Verminz"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["last_event"] = 1569790079,
-							["friendlyfire_total"] = 31,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.001696,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 0.001696,
-							["on_hold"] = false,
-							["friendlyfire"] = {
-								["Verminz"] = {
-									["total"] = 31,
-									["spells"] = {
-										["Chest Pains"] = 31,
-									},
-								},
-							},
-							["nome"] = "Verminz",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["end_time"] = 1569790081,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 31.001696,
-							["start_time"] = 1569790079,
-							["serial"] = "Player-4465-010B6E50",
-							["classe"] = "WARRIOR",
-						}, -- [1]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 125,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 125,
-					["_ActorTable"] = {
-						{
-							["received"] = 9.006955,
-							["resource"] = 0.006955,
-							["targets"] = {
-								["Verminz"] = 9,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 1,
-							["classe"] = "WARRIOR",
-							["passiveover"] = 0.006955,
-							["total"] = 9.006955,
-							["nome"] = "Verminz",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Charge"] = {
-										["total"] = 9,
-										["id"] = "Charge",
-										["totalover"] = 0,
-										["targets"] = {
-											["Verminz"] = 9,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["flag_original"] = 1297,
-							["last_event"] = 1569790099,
-							["alternatepower"] = 0.006955,
-							["tipo"] = 3,
-							["serial"] = "Player-4465-010B6E50",
-							["totalover"] = 0.006955,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 125,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["nome"] = "Verminz",
-							["grupo"] = true,
-							["fight_component"] = true,
-							["pets"] = {
-							},
-							["buff_uptime_targets"] = {
-							},
-							["classe"] = "WARRIOR",
-							["last_event"] = 1569790081,
-							["buff_uptime"] = 2,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Battle Shout"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Battle Shout",
-										["uptime"] = 2,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-010B6E50",
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 125,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Verminz"] = true,
-				},
-				["CombatStartedAt"] = 1219108.203,
-				["tempo_start"] = 1569790079,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["enemy"] = "Unknown",
-				["combat_counter"] = 2642,
-				["totals"] = {
-					-0.0310700000000068, -- [1]
-					0, -- [2]
-					{
-						9, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags"] = {
-				},
-				["frags_need_refresh"] = false,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "22:48:00",
-				["end_time"] = 1219090.539,
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Verminz"] = 0.001696,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["combat_id"] = 125,
-				["totals_grupo"] = {
-					31, -- [1]
-					0, -- [2]
-					{
-						9, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["cleu_timeline"] = {
-				},
-				["hasSaved"] = true,
-				["spells_cast_timeline"] = {
-				},
-				["data_fim"] = "22:48:01",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["instance_type"] = "none",
-				["start_time"] = 1219089.538,
-				["TimeData"] = {
-				},
-				["pvp"] = true,
 			}, -- [18]
 		},
 	},
@@ -10652,7 +11117,7 @@ _detalhes_database = {
 		}, -- [3]
 	},
 	["nick_tag_cache"] = {
-		["nextreset"] = 1571037473,
+		["last_version"] = 11,
 		["Raisinx"] = {
 			"Raisin", -- [1]
 			"", -- [2]
@@ -10722,7 +11187,7 @@ _detalhes_database = {
 			}, -- [6]
 			6, -- [7]
 		},
-		["last_version"] = 11,
+		["nextreset"] = 1571037473,
 	},
 	["last_instance_id"] = 43,
 	["announce_interrupts"] = {
@@ -10742,17 +11207,17 @@ _detalhes_database = {
 	["plugin_database"] = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 0.2,
-			["showamount"] = false,
+			["enabled"] = true,
 			["animate"] = false,
 			["useplayercolor"] = false,
-			["author"] = "Details! Team",
 			["useclasscolors"] = false,
+			["author"] = "Details! Team",
 			["playercolor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 			},
-			["enabled"] = true,
+			["showamount"] = false,
 		},
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["enabled"] = true,
@@ -10765,20 +11230,15 @@ _detalhes_database = {
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = true,
 			["opened"] = 0,
-			["max_emote_segments"] = 3,
 			["show_icon"] = 5,
+			["author"] = "Details! Team",
 			["hide_on_combat"] = false,
-			["author"] = "Details! Team",
+			["max_emote_segments"] = 3,
 		},
-		["DETAILS_PLUGIN_YANP"] = {
+		["DETAILS_PLUGIN_DPS_TUNING"] = {
 			["enabled"] = true,
-			["rightclick_closed"] = false,
-			["auto_open"] = true,
-			["hide_on_combat"] = true,
 			["author"] = "Details! Team",
-			["deaths_table"] = {
-			},
-			["shown_time"] = 30,
+			["SpellBarsShowType"] = 1,
 		},
 		["DETAILS_PLUGIN_TIME_ATTACK"] = {
 			["enabled"] = true,
@@ -10791,3160 +11251,33 @@ _detalhes_database = {
 			},
 			["time"] = 40,
 			["history_lastindex"] = 0,
-			["realm_lastamt"] = 0,
+			["author"] = "Details! Team",
 			["realm_history"] = {
 			},
-			["author"] = "Details! Team",
+			["realm_lastamt"] = 0,
 		},
-		["DETAILS_PLUGIN_DPS_TUNING"] = {
+		["DETAILS_PLUGIN_YANP"] = {
 			["enabled"] = true,
+			["rightclick_closed"] = false,
+			["auto_open"] = true,
 			["author"] = "Details! Team",
-			["SpellBarsShowType"] = 1,
+			["hide_on_combat"] = true,
+			["deaths_table"] = {
+			},
+			["shown_time"] = 30,
 		},
+	},
+	["combat_counter"] = 2689,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
 	["announce_prepots"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
 		["reverse"] = false,
 	},
-	["combat_counter"] = 2670,
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
 	["last_realversion"] = 140,
-	["character_data"] = {
-		["logons"] = 1089,
-	},
-	["combat_id"] = 142,
-	["savedStyles"] = {
-		{
-			["show_statusbar"] = false,
-			["desaturated_menu2"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0, -- [4]
-			},
-			["menu_anchor"] = {
-				-60, -- [1]
-				0, -- [2]
-				["side"] = 1,
-			},
-			["menu2_icons"] = {
-				true, -- [1]
-				true, -- [2]
-				true, -- [3]
-			},
-			["bg_r"] = 0,
-			["hide_out_of_combat"] = false,
-			["name"] = "final",
-			["following"] = {
-				["bar_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
-				["enabled"] = false,
-				["text_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
-			},
-			["color_buttons"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["switch_healer"] = false,
-			["bars_sort_direction"] = 1,
-			["menu_icons_size"] = 1,
-			["backdrop_texture"] = "None",
-			["switch_healer_in_combat"] = false,
-			["menu2_icons_size"] = 1.20000004768372,
-			["tooltip"] = {
-				["n_abilities"] = 3,
-				["n_enemies"] = 3,
-			},
-			["stretch_button_side"] = 2,
-			["skin"] = "Minimalistic",
-			["switch_all_roles_in_combat"] = {
-				2, -- [1]
-				1, -- [2]
-				8, -- [3]
-			},
-			["instance_button_anchor"] = {
-				-27, -- [1]
-				1, -- [2]
-			},
-			["bg_alpha"] = 0.0199999995529652,
-			["row_info"] = {
-				["textR_outline"] = false,
-				["textL_outline"] = false,
-				["icon_file"] = "Interface\\AddOns\\Details\\images\\classes_small_alpha",
-				["texture_background_file"] = "Interface\\TargetingFrame\\UI-StatusBar",
-				["percent_type"] = 1,
-				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
-				["textR_enable_custom_text"] = true,
-				["texture_background_class_color"] = true,
-				["textL_enable_custom_text"] = true,
-				["textL_show_number"] = false,
-				["space"] = {
-					["right"] = 0,
-					["left"] = 0,
-					["between"] = 0,
-				},
-				["fixed_texture_background_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					0.680000007152557, -- [4]
-				},
-				["textR_custom_text"] = "{data1} ({data2}) ",
-				["start_after_icon"] = false,
-				["font_face_file"] = "Fonts\\ARIALN.TTF",
-				["fixed_text_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
-				["backdrop"] = {
-					["enabled"] = false,
-					["size"] = 12,
-					["color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["texture"] = "Details BarBorder 2",
-				},
-				["textL_class_colors"] = false,
-				["textL_custom_text"] = "{data3}{data2}",
-				["textR_class_colors"] = false,
-				["alpha"] = 0,
-				["no_icon"] = false,
-				["font_size"] = 11,
-				["texture_background"] = "Blizzard",
-				["font_face"] = "Arial Narrow",
-				["texture_class_colors"] = true,
-				["height"] = 20,
-				["texture_file"] = "Interface\\AddOns\\Details\\images\\BantoBar",
-				["texture"] = "BantoBar",
-				["fixed_texture_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
-			},
-			["closebutton_config"] = {
-				["pushed_texture"] = "Interface\\Buttons\\UI-Panel-MinimizeButton-Down",
-				["highlight_texture"] = "Interface\\Buttons\\UI-Panel-MinimizeButton-Highlight",
-				["anchor"] = {
-					0, -- [1]
-					0, -- [2]
-				},
-				["normal_texture"] = "Interface\\Buttons\\UI-Panel-MinimizeButton-Up",
-				["alpha"] = 0.8,
-				["size"] = {
-					19, -- [1]
-					19, -- [2]
-				},
-			},
-			["menu_alpha"] = {
-				["enabled"] = false,
-				["onenter"] = 1,
-				["iconstoo"] = true,
-				["ignorebars"] = false,
-				["onleave"] = 1,
-			},
-			["auto_hide_menu"] = {
-				["left"] = true,
-				["right"] = true,
-			},
-			["menu2_anchor_down"] = {
-				32, -- [1]
-				0, -- [2]
-			},
-			["statusbar_info"] = {
-				["alpha"] = 0,
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
-			},
-			["strata"] = "LOW",
-			["row_show_animation"] = {
-				["anim"] = "Fade",
-				["options"] = {
-				},
-			},
-			["resetbutton_config"] = {
-				["anchor"] = {
-					2, -- [1]
-					0, -- [2]
-				},
-				["normal_texture"] = "Interface\\Addons\\Details\\Images\\reset_button2",
-				["highlight_texture"] = "Interface\\Addons\\Details\\Images\\reset_button2",
-				["normal_texcoord"] = {
-					0, -- [1]
-					1, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
-				["highlight_vertexcolor"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
-				["highlight_texcoord"] = {
-					0, -- [1]
-					1, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
-				["normal_vertexcolor"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
-				["size"] = {
-					13, -- [1]
-					13, -- [2]
-				},
-			},
-			["switch_tank"] = false,
-			["hide_in_combat_alpha"] = 0,
-			["plugins_grow_direction"] = 1,
-			["menu_icons"] = {
-				true, -- [1]
-				true, -- [2]
-				true, -- [3]
-				true, -- [4]
-			},
-			["desaturated_menu"] = false,
-			["show_sidebars"] = false,
-			["window_scale"] = 1,
-			["menu_anchor_down"] = {
-				-22, -- [1]
-				0, -- [2]
-			},
-			["grab_on_top"] = false,
-			["instancebutton_config"] = {
-				["textcolor"] = {
-					0.8, -- [1]
-					0.6, -- [2]
-					0, -- [3]
-					0.8, -- [4]
-				},
-				["highlight_texture"] = "Interface\\Buttons\\UI-Panel-MinimizeButton-Highlight",
-				["size"] = {
-					20, -- [1]
-					16, -- [2]
-				},
-				["anchor"] = {
-					5, -- [1]
-					0, -- [2]
-				},
-				["textsize"] = 15,
-				["textfont"] = "Friz Quadrata TT",
-				["textshadow"] = false,
-			},
-			["switch_damager_in_combat"] = false,
-			["hide_icon"] = true,
-			["menu2_anchor"] = {
-				32, -- [1]
-				3, -- [2]
-			},
-			["micro_displays_side"] = 2,
-			["auto_current"] = true,
-			["toolbar_side"] = 2,
-			["bg_g"] = 0,
-			["bars_grow_direction"] = 1,
-			["hide_in_combat"] = false,
-			["switch_damager"] = false,
-			["switch_all_roles_after_wipe"] = false,
-			["hide_in_combat_type"] = 1,
-			["wallpaper"] = {
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
-				["texcoord"] = {
-					0, -- [1]
-					1, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
-				["enabled"] = false,
-				["anchor"] = "all",
-				["height"] = 0,
-				["alpha"] = 0.5,
-				["width"] = 0,
-			},
-			["total_bar"] = {
-				["enabled"] = false,
-				["only_in_group"] = true,
-				["icon"] = "Interface\\ICONS\\INV_Sigil_Thorim",
-				["color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
-			},
-			["version"] = 3,
-			["switch_tank_in_combat"] = false,
-			["attribute_text"] = {
-				["enabled"] = false,
-				["shadow"] = false,
-				["side"] = 1,
-				["text_size"] = 11,
-				["anchor"] = {
-					-17, -- [1]
-					10, -- [2]
-				},
-				["text_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
-				["text_face"] = "Arial Narrow",
-			},
-			["bg_b"] = 0,
-		}, -- [1]
-	},
-	["force_font_outline"] = "",
-	["on_death_menu"] = true,
-	["announce_deaths"] = {
-		["enabled"] = false,
-		["last_hits"] = 1,
-		["only_first"] = 5,
-		["where"] = 1,
-	},
-	["tabela_overall"] = {
-		{
-			["tipo"] = 2,
-			["_ActorTable"] = {
-				{
-					["flag_original"] = 1297,
-					["totalabsorbed"] = 0.008389,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Lost Barrens Kodo"] = 0,
-						["Bleakheart Shadowstalker"] = 0,
-						["Rotting Slime"] = 0,
-						["Bleakheart Trickster"] = 0,
-						["Imp Minion"] = 0,
-						["Voidwalker Minion <Bleakheart Hellcaller>"] = 0,
-						["Imp Minion <Bleakheart Hellcaller>"] = 0,
-						["Ashenvale Outrunner"] = 0,
-						["Voidwalker Minion"] = 0,
-						["Jro"] = 0,
-						["Bleakheart Satyr"] = 0,
-						["Dopeguy"] = 0,
-						["Bleakheart Hellcaller"] = 0,
-					},
-					["pets"] = {
-					},
-					["damage_taken"] = 0.008389,
-					["classe"] = "WARRIOR",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.008389,
-					["last_dps"] = 0,
-					["dps_started"] = false,
-					["end_time"] = 1569748504,
-					["delay"] = 0,
-					["total"] = 0.008389,
-					["nome"] = "Verminz",
-					["spells"] = {
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Bleakheart Shadowstalker"] = 0,
-									["Rotting Slime"] = 0,
-									["Bleakheart Trickster"] = 0,
-									["Imp Minion"] = 0,
-									["Ashenvale Outrunner"] = 0,
-									["Voidwalker Minion"] = 0,
-									["Bleakheart Satyr"] = 0,
-									["Dopeguy"] = 0,
-									["Bleakheart Hellcaller"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							}, -- [1]
-							[0] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Bleakheart Shadowstalker"] = 0,
-									["Rotting Slime"] = 0,
-									["Bleakheart Trickster"] = 0,
-									["Imp Minion"] = 0,
-									["Ashenvale Outrunner"] = 0,
-									["Voidwalker Minion"] = 0,
-									["Bleakheart Satyr"] = 0,
-									["Dopeguy"] = 0,
-									["Bleakheart Hellcaller"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 0,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["Hamstring"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Dopeguy"] = 0,
-									["Bleakheart Shadowstalker"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Hamstring",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["Cleave"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Voidwalker Minion <Bleakheart Hellcaller>"] = 0,
-									["Imp Minion <Bleakheart Hellcaller>"] = 0,
-									["Bleakheart Hellcaller"] = 0,
-									["Ashenvale Outrunner"] = 0,
-									["Rotting Slime"] = 0,
-									["Bleakheart Trickster"] = 0,
-									["Voidwalker Minion"] = 0,
-									["Imp Minion"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Cleave",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["Execute"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Voidwalker Minion"] = 0,
-									["Bleakheart Shadowstalker"] = 0,
-									["Bleakheart Trickster"] = 0,
-									["Ashenvale Outrunner"] = 0,
-									["Rotting Slime"] = 0,
-									["Jro"] = 0,
-									["Bleakheart Satyr"] = 0,
-									["Bleakheart Hellcaller"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Execute",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["Rend"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Lost Barrens Kodo"] = 0,
-									["Bleakheart Shadowstalker"] = 0,
-									["Rotting Slime"] = 0,
-									["Bleakheart Trickster"] = 0,
-									["Imp Minion"] = 0,
-									["Voidwalker Minion <Bleakheart Hellcaller>"] = 0,
-									["Imp Minion <Bleakheart Hellcaller>"] = 0,
-									["Ashenvale Outrunner"] = 0,
-									["Voidwalker Minion"] = 0,
-									["Bleakheart Satyr"] = 0,
-									["Dopeguy"] = 0,
-									["Bleakheart Hellcaller"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Rend",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Lost Barrens Kodo"] = 0,
-									["Bleakheart Shadowstalker"] = 0,
-									["Rotting Slime"] = 0,
-									["Bleakheart Trickster"] = 0,
-									["Imp Minion"] = 0,
-									["Voidwalker Minion <Bleakheart Hellcaller>"] = 0,
-									["Imp Minion <Bleakheart Hellcaller>"] = 0,
-									["Ashenvale Outrunner"] = 0,
-									["Voidwalker Minion"] = 0,
-									["Jro"] = 0,
-									["Bleakheart Satyr"] = 0,
-									["Dopeguy"] = 0,
-									["Bleakheart Hellcaller"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["m_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-							["Retaliation"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Dopeguy"] = 0,
-									["Bleakheart Trickster"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Retaliation",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["Overpower"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Voidwalker Minion <Bleakheart Hellcaller>"] = 0,
-									["Bleakheart Shadowstalker"] = 0,
-									["Bleakheart Trickster"] = 0,
-									["Ashenvale Outrunner"] = 0,
-									["Rotting Slime"] = 0,
-									["Bleakheart Satyr"] = 0,
-									["Dopeguy"] = 0,
-									["Bleakheart Hellcaller"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Overpower",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["!Autoshot"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Bleakheart Satyr"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "!Autoshot",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["m_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-							["Heroic Strike"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Bleakheart Shadowstalker"] = 0,
-									["Bleakheart Satyr"] = 0,
-									["Ashenvale Outrunner"] = 0,
-									["Rotting Slime"] = 0,
-									["Bleakheart Trickster"] = 0,
-									["Dopeguy"] = 0,
-									["Bleakheart Hellcaller"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Heroic Strike",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["grupo"] = true,
-					["tipo"] = 1,
-					["friendlyfire"] = {
-						["Verminz"] = {
-							["spells"] = {
-								["Chest Pains"] = 0,
-							},
-							["total"] = 0,
-						},
-					},
-					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1569748501,
-					["serial"] = "Player-4465-010B6E50",
-					["friendlyfire_total"] = 0,
-				}, -- [1]
-				{
-					["flag_original"] = 68136,
-					["totalabsorbed"] = 0.008339,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Verminz"] = 0,
-					},
-					["pets"] = {
-					},
-					["tipo"] = 1,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.008339,
-					["friendlyfire_total"] = 0,
-					["dps_started"] = false,
-					["end_time"] = 1569748504,
-					["delay"] = 0,
-					["on_hold"] = false,
-					["nome"] = "Lost Barrens Kodo",
-					["spells"] = {
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Verminz"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["m_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							}, -- [1]
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Verminz"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["m_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-							["Kodo Stomp"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Verminz"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Kodo Stomp",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["last_dps"] = 0,
-					["total"] = 0.008339,
-					["friendlyfire"] = {
-					},
-					["custom"] = 0,
-					["last_event"] = 0,
-					["damage_taken"] = 0.008339,
-					["start_time"] = 1569748501,
-					["serial"] = "Creature-0-4448-1-248-3234-0000105BDE",
-					["fight_component"] = true,
-				}, -- [2]
-				{
-					["flag_original"] = 68168,
-					["totalabsorbed"] = 0.003068,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Verminz"] = 0,
-						["Cachorra"] = 0,
-					},
-					["pets"] = {
-					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.003068,
-					["serial"] = "Creature-0-4448-1-248-4127-0000106983",
-					["dps_started"] = false,
-					["end_time"] = 1569750231,
-					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
-					["nome"] = "Hecklefang Hyena",
-					["spells"] = {
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Cachorra"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							}, -- [1]
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Verminz"] = 0,
-									["Cachorra"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.003068,
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.003068,
-					["start_time"] = 1569750228,
-					["delay"] = 0,
-					["monster"] = true,
-				}, -- [3]
-				{
-					["flag_original"] = 68168,
-					["totalabsorbed"] = 0.006825,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Verminz"] = 0,
-					},
-					["pets"] = {
-					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.006825,
-					["serial"] = "Creature-0-4448-1-248-3255-0000105E16",
-					["dps_started"] = false,
-					["end_time"] = 1569750231,
-					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
-					["nome"] = "Sunscale Screecher",
-					["spells"] = {
-						["_ActorTable"] = {
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Verminz"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.006825,
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.006825,
-					["start_time"] = 1569750228,
-					["delay"] = 0,
-					["monster"] = true,
-				}, -- [4]
-				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.001813,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Bargore"] = 0,
-						["Verminz"] = 0,
-						["Wyrus"] = 0,
-						["Unknown"] = 0,
-						["Gromkaas"] = 0,
-						["Zarimuni"] = 0,
-						["Raah"] = 0,
-					},
-					["pets"] = {
-					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.001813,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.001813,
-					["serial"] = "Creature-0-4446-1-161-3771-000090A3C6",
-					["monster"] = true,
-					["end_time"] = 1569770229,
-					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
-					["nome"] = "Bleakheart Hellcaller",
-					["spells"] = {
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Verminz"] = 0,
-									["Gromkaas"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							}, -- [1]
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Gromkaas"] = 0,
-									["Unknown"] = 0,
-									["Verminz"] = 0,
-									["Bargore"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["Summon Voidwalker"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Summon Voidwalker",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.001813,
-					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
-					["start_time"] = 1569770226,
-					["delay"] = 0,
-					["fight_component"] = true,
-				}, -- [5]
-				{
-					["flag_original"] = 70216,
-					["totalabsorbed"] = 0.005889,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Verminz"] = 0,
-						["Juk'mon"] = 0,
-					},
-					["pets"] = {
-					},
-					["last_event"] = 0,
-					["classe"] = "PET",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.005889,
-					["fight_component"] = true,
-					["dps_started"] = false,
-					["end_time"] = 1569770229,
-					["serial"] = "Creature-0-4446-1-161-12922-000010A3CD",
-					["damage_taken"] = 0.005889,
-					["nome"] = "Imp Minion",
-					["spells"] = {
-						["_ActorTable"] = {
-							["Firebolt"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Verminz"] = 0,
-									["Juk'mon"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Firebolt",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["on_hold"] = false,
-					["total"] = 0.005889,
-					["friendlyfire"] = {
-					},
-					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
-					["start_time"] = 1569770226,
-					["delay"] = 0,
-					["friendlyfire_total"] = 0,
-				}, -- [6]
-				{
-					["flag_original"] = 66888,
-					["totalabsorbed"] = 0.00569,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Verminz"] = 0,
-					},
-					["enemy"] = true,
-					["pets"] = {
-					},
-					["last_event"] = 0,
-					["classe"] = "UNGROUPPLAYER",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.00569,
-					["fight_component"] = true,
-					["dps_started"] = false,
-					["end_time"] = 1569770229,
-					["serial"] = "Player-4465-012447E0",
-					["damage_taken"] = 0.00569,
-					["nome"] = "Dopeguy",
-					["spells"] = {
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Verminz"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							}, -- [1]
-							["Eviscerate"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Eviscerate",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["Slice and Dice"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Slice and Dice",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Verminz"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["Riposte"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Verminz"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Riposte",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["Sinister Strike"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Verminz"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Sinister Strike",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							[0] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Verminz"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 0,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["friendlyfire"] = {
-					},
-					["on_hold"] = false,
-					["total"] = 0.00569,
-					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
-					["start_time"] = 1569770226,
-					["delay"] = 0,
-					["friendlyfire_total"] = 0,
-				}, -- [7]
-				{
-					["flag_original"] = 68168,
-					["totalabsorbed"] = 0.003928,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Pedellus"] = 0,
-						["Bensiano"] = 0,
-						["Verminz"] = 0,
-						["Emor"] = 0,
-						["Gromkaas"] = 0,
-						["Paragan"] = 0,
-						["Fiwier"] = 0,
-					},
-					["pets"] = {
-					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.003928,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.003928,
-					["serial"] = "Creature-0-4446-1-161-3770-000010A3C6",
-					["monster"] = true,
-					["end_time"] = 1569770229,
-					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
-					["nome"] = "Bleakheart Shadowstalker",
-					["spells"] = {
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Pedellus"] = 0,
-									["Paragan"] = 0,
-									["Verminz"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							}, -- [1]
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Pedellus"] = 0,
-									["Bensiano"] = 0,
-									["Verminz"] = 0,
-									["Emor"] = 0,
-									["Gromkaas"] = 0,
-									["Paragan"] = 0,
-									["Fiwier"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.003928,
-					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
-					["start_time"] = 1569770226,
-					["delay"] = 0,
-					["fight_component"] = true,
-				}, -- [8]
-				{
-					["flag_original"] = 68168,
-					["totalabsorbed"] = 0.001808,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Verminz"] = 0,
-					},
-					["pets"] = {
-					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.001808,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.001808,
-					["serial"] = "Creature-0-4446-1-161-12856-000010A28A",
-					["monster"] = true,
-					["end_time"] = 1569770229,
-					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
-					["nome"] = "Ashenvale Outrunner",
-					["spells"] = {
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Verminz"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							}, -- [1]
-							["Shoot"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Verminz"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Shoot",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["Snap Kick"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Verminz"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Snap Kick",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Verminz"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["Ashenvale Outrunner Sneak"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Ashenvale Outrunner Sneak",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["Scorpid Sting"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Scorpid Sting",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							[0] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Verminz"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 0,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.001808,
-					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
-					["start_time"] = 1569770226,
-					["delay"] = 0,
-					["fight_component"] = true,
-				}, -- [9]
-				{
-					["flag_original"] = 68168,
-					["totalabsorbed"] = 0.001527,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Verminz"] = 0,
-					},
-					["pets"] = {
-					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.001527,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.001527,
-					["serial"] = "Creature-0-4446-1-161-3928-000010A1DE",
-					["monster"] = true,
-					["end_time"] = 1569770229,
-					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
-					["nome"] = "Rotting Slime",
-					["spells"] = {
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Verminz"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							}, -- [1]
-							[0] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Verminz"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 0,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["Diseased Slime"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Diseased Slime",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Verminz"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.001527,
-					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
-					["start_time"] = 1569770226,
-					["delay"] = 0,
-					["fight_component"] = true,
-				}, -- [10]
-				{
-					["flag_original"] = 68168,
-					["totalabsorbed"] = 0.003251,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Ørzech"] = 0,
-						["Verminz"] = 0,
-						["Elatin"] = 0,
-						["Paragan"] = 0,
-						["Fiwier"] = 0,
-					},
-					["pets"] = {
-					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.003251,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.003251,
-					["delay"] = 0,
-					["monster"] = true,
-					["end_time"] = 1569770585,
-					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
-					["nome"] = "Bleakheart Satyr",
-					["spells"] = {
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Elatin"] = 0,
-									["Ørzech"] = 0,
-									["Fiwier"] = 0,
-									["Verminz"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							}, -- [1]
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Ørzech"] = 0,
-									["Verminz"] = 0,
-									["Elatin"] = 0,
-									["Paragan"] = 0,
-									["Fiwier"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["tipo"] = 1,
-					["total"] = 0.003251,
-					["on_hold"] = false,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["last_dps"] = 0,
-					["start_time"] = 1569770582,
-					["serial"] = "Creature-0-4446-1-161-3765-000010CBAC",
-					["fight_component"] = true,
-				}, -- [11]
-				{
-					["flag_original"] = 68168,
-					["totalabsorbed"] = 0.008214,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Emor"] = 0,
-						["Ørzech"] = 0,
-						["Liuso"] = 0,
-						["Verminz"] = 0,
-					},
-					["pets"] = {
-					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.008214,
-					["delay"] = 0,
-					["dps_started"] = false,
-					["end_time"] = 1569770710,
-					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
-					["nome"] = "Bleakheart Trickster",
-					["spells"] = {
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Ørzech"] = 0,
-									["Emor"] = 0,
-									["Verminz"] = 0,
-									["Liuso"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["m_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							}, -- [1]
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Emor"] = 0,
-									["Ørzech"] = 0,
-									["Liuso"] = 0,
-									["Verminz"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["m_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-							["Poison"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Liuso"] = 0,
-									["Ørzech"] = 0,
-									["Verminz"] = 0,
-									["Emor"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Poison",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["m_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["tipo"] = 1,
-					["total"] = 0.008214,
-					["on_hold"] = false,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["damage_taken"] = 0.008214,
-					["start_time"] = 1569770707,
-					["serial"] = "Creature-0-4446-1-161-3767-000010CC65",
-					["monster"] = true,
-				}, -- [12]
-				{
-					["flag_original"] = 66888,
-					["totalabsorbed"] = 0.008956,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Zarimuni"] = 0,
-					},
-					["enemy"] = true,
-					["pets"] = {
-					},
-					["last_event"] = 0,
-					["classe"] = "UNGROUPPLAYER",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.008956,
-					["fight_component"] = true,
-					["dps_started"] = false,
-					["end_time"] = 1569788672,
-					["serial"] = "Player-4465-00DEF841",
-					["damage_taken"] = 0.008956,
-					["nome"] = "Jro",
-					["spells"] = {
-						["_ActorTable"] = {
-							["Corruption"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Zarimuni"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Corruption",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["Shoot"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Shoot",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["Curse of Agony"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Zarimuni"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Curse of Agony",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["friendlyfire"] = {
-					},
-					["on_hold"] = false,
-					["total"] = 0.008956,
-					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
-					["start_time"] = 1569788669,
-					["delay"] = 0,
-					["friendlyfire_total"] = 0,
-				}, -- [13]
-				{
-					["flag_original"] = 70216,
-					["totalabsorbed"] = 0.001008,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Verminz"] = 0,
-						["Gromkaas"] = 0,
-					},
-					["pets"] = {
-					},
-					["tipo"] = 1,
-					["classe"] = "PET",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.001008,
-					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
-					["end_time"] = 1569790197,
-					["delay"] = 0,
-					["on_hold"] = false,
-					["nome"] = "Voidwalker Minion",
-					["spells"] = {
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Verminz"] = 0,
-									["Gromkaas"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							}, -- [1]
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Verminz"] = 0,
-									["Gromkaas"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["last_dps"] = 0,
-					["total"] = 0.001008,
-					["friendlyfire"] = {
-					},
-					["custom"] = 0,
-					["last_event"] = 0,
-					["damage_taken"] = 0.001008,
-					["start_time"] = 1569790194,
-					["serial"] = "Creature-0-4446-1-161-8996-00001114DD",
-					["dps_started"] = false,
-				}, -- [14]
-				{
-					["flag_original"] = 70216,
-					["totalabsorbed"] = 0.007255,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Verminz"] = 0,
-					},
-					["pets"] = {
-					},
-					["tipo"] = 1,
-					["classe"] = "PET",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.007255,
-					["friendlyfire_total"] = 0,
-					["dps_started"] = false,
-					["end_time"] = 1569790387,
-					["delay"] = 0,
-					["last_dps"] = 0,
-					["nome"] = "Imp Minion <Bleakheart Hellcaller>",
-					["spells"] = {
-						["_ActorTable"] = {
-							[0] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Verminz"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 0,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
-							},
-							["Firebolt"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Verminz"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Firebolt",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["m_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["damage_taken"] = 0.007255,
-					["total"] = 0.007255,
-					["friendlyfire"] = {
-					},
-					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1569790384,
-					["serial"] = "Creature-0-4446-1-161-12922-0000111975",
-					["fight_component"] = true,
-				}, -- [15]
-				{
-					["flag_original"] = 4680,
-					["totalabsorbed"] = 0.005402,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Verminz"] = 0,
-					},
-					["pets"] = {
-					},
-					["on_hold"] = false,
-					["classe"] = "PET",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.005402,
-					["fight_component"] = true,
-					["dps_started"] = false,
-					["end_time"] = 1569845372,
-					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
-					["nome"] = "Voidwalker Minion <Bleakheart Hellcaller>",
-					["spells"] = {
-						["tipo"] = 2,
-						["_ActorTable"] = {
-							{
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Verminz"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = 1,
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							}, -- [1]
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Verminz"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							},
-						},
-					},
-					["friendlyfire_total"] = 0,
-					["total"] = 0.005402,
-					["serial"] = "Creature-0-4446-1-161-8996-0000111C4A",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.005402,
-					["start_time"] = 1569845369,
-					["delay"] = 0,
-					["last_dps"] = 0,
-				}, -- [16]
-			},
-		}, -- [1]
-		{
-			["tipo"] = 3,
-			["_ActorTable"] = {
-				{
-					["flag_original"] = 1297,
-					["totalabsorb"] = 0.006451,
-					["last_hps"] = 0,
-					["targets_overheal"] = {
-					},
-					["targets"] = {
-						["Verminz"] = 0,
-					},
-					["end_time"] = 1569770229,
-					["pets"] = {
-					},
-					["totalover_without_pet"] = 0.006451,
-					["healing_from"] = {
-					},
-					["healing_taken"] = 0.006451,
-					["totalover"] = 0.006451,
-					["total_without_pet"] = 0.006451,
-					["iniciar_hps"] = false,
-					["start_time"] = 1569770226,
-					["fight_component"] = true,
-					["total"] = 0.006451,
-					["classe"] = "WARRIOR",
-					["heal_enemy_amt"] = 0,
-					["nome"] = "Verminz",
-					["targets_absorbs"] = {
-					},
-					["grupo"] = true,
-					["spells"] = {
-						["_ActorTable"] = {
-							["Healing Potion"] = {
-								["c_amt"] = 0,
-								["totalabsorb"] = 0,
-								["targets_overheal"] = {
-								},
-								["n_max"] = 0,
-								["targets"] = {
-									["Verminz"] = 0,
-								},
-								["n_min"] = 0,
-								["counter"] = 0,
-								["overheal"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Healing Potion",
-								["targets_absorbs"] = {
-								},
-								["c_curado"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["n_curado"] = 0,
-								["n_amt"] = 0,
-								["totaldenied"] = 0,
-								["m_healed"] = 0,
-								["absorbed"] = 0,
-							},
-							["Blood Craze"] = {
-								["c_amt"] = 0,
-								["totalabsorb"] = 0,
-								["targets_overheal"] = {
-								},
-								["n_max"] = 0,
-								["targets"] = {
-									["Verminz"] = 0,
-								},
-								["n_min"] = 0,
-								["counter"] = 0,
-								["overheal"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Blood Craze",
-								["targets_absorbs"] = {
-								},
-								["c_curado"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["n_curado"] = 0,
-								["n_amt"] = 0,
-								["totaldenied"] = 0,
-								["m_healed"] = 0,
-								["absorbed"] = 0,
-							},
-						},
-						["tipo"] = 3,
-					},
-					["heal_enemy"] = {
-					},
-					["serial"] = "Player-4465-010B6E50",
-					["custom"] = 0,
-					["tipo"] = 2,
-					["on_hold"] = false,
-					["totaldenied"] = 0.006451,
-					["delay"] = 0,
-					["last_event"] = 0,
-				}, -- [1]
-			},
-		}, -- [2]
-		{
-			["tipo"] = 7,
-			["_ActorTable"] = {
-				{
-					["received"] = 0.007003,
-					["resource"] = 2.487652,
-					["targets"] = {
-						["Verminz"] = 0,
-					},
-					["pets"] = {
-					},
-					["powertype"] = 1,
-					["classe"] = "WARRIOR",
-					["passiveover"] = 0.007003,
-					["total"] = 0.007003,
-					["nome"] = "Verminz",
-					["spells"] = {
-						["_ActorTable"] = {
-							["Unbridled Wrath"] = {
-								["total"] = 0,
-								["id"] = "Unbridled Wrath",
-								["totalover"] = 0,
-								["targets"] = {
-									["Verminz"] = 0,
-								},
-								["counter"] = 0,
-							},
-							["Charge"] = {
-								["total"] = 0,
-								["id"] = "Charge",
-								["totalover"] = 0,
-								["targets"] = {
-									["Verminz"] = 0,
-								},
-								["counter"] = 0,
-							},
-							["Bloodrage"] = {
-								["total"] = 0,
-								["id"] = "Bloodrage",
-								["totalover"] = 0,
-								["targets"] = {
-									["Verminz"] = 0,
-								},
-								["counter"] = 0,
-							},
-						},
-						["tipo"] = 7,
-					},
-					["grupo"] = true,
-					["totalover"] = 0.007003,
-					["tipo"] = 3,
-					["alternatepower"] = 0.007003,
-					["last_event"] = 0,
-					["serial"] = "Player-4465-010B6E50",
-					["flag_original"] = 1297,
-				}, -- [1]
-			},
-		}, -- [3]
-		{
-			["tipo"] = 9,
-			["_ActorTable"] = {
-				{
-					["flag_original"] = 1297,
-					["debuff_uptime_spells"] = {
-						["_ActorTable"] = {
-							["Charge Stun"] = {
-								["id"] = "Charge Stun",
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							["Chest Pains"] = {
-								["id"] = "Chest Pains",
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							["Recently Bandaged"] = {
-								["id"] = "Recently Bandaged",
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							["Intimidating Shout"] = {
-								["id"] = "Intimidating Shout",
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							["Sunder Armor"] = {
-								["id"] = "Sunder Armor",
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							["Hamstring"] = {
-								["id"] = "Hamstring",
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							["Rend"] = {
-								["id"] = "Rend",
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-						},
-						["tipo"] = 9,
-					},
-					["pets"] = {
-					},
-					["classe"] = "WARRIOR",
-					["buff_uptime_spells"] = {
-						["_ActorTable"] = {
-							["Battle Shout"] = {
-								["id"] = "Battle Shout",
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							["Enrage"] = {
-								["id"] = "Enrage",
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							["Honorless Target"] = {
-								["id"] = "Honorless Target",
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							["Retaliation"] = {
-								["id"] = "Retaliation",
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							["Bloodrage"] = {
-								["id"] = "Bloodrage",
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							["Blood Craze"] = {
-								["id"] = "Blood Craze",
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							["Battle Stance"] = {
-								["id"] = "Battle Stance",
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							["Defensive Stance"] = {
-								["id"] = "Defensive Stance",
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-						},
-						["tipo"] = 9,
-					},
-					["debuff_uptime"] = 0,
-					["buff_uptime_targets"] = {
-					},
-					["grupo"] = true,
-					["spell_cast"] = {
-						["Battle Shout"] = 0,
-						["Intimidating Shout"] = 0,
-						["Chest Pains"] = 0,
-						["Cleave"] = 0,
-						["Bloodrage"] = 0,
-						["Rend"] = 0,
-						["Shoot Bow"] = 0,
-						["Defensive Stance"] = 0,
-						["Hamstring"] = 0,
-						["Overpower"] = 0,
-						["Revenge"] = 0,
-						["Retaliation"] = 0,
-						["Battle Stance"] = 0,
-						["Sunder Armor"] = 0,
-						["Healing Potion"] = 0,
-						["Heroic Strike"] = 0,
-					},
-					["nome"] = "Verminz",
-					["last_event"] = 0,
-					["debuff_uptime_targets"] = {
-					},
-					["buff_uptime"] = 0,
-					["serial"] = "Player-4465-010B6E50",
-					["tipo"] = 4,
-				}, -- [1]
-				{
-					["fight_component"] = true,
-					["nome"] = "Lost Barrens Kodo",
-					["tipo"] = 4,
-					["spell_cast"] = {
-						["Kodo Stomp"] = 0,
-					},
-					["flag_original"] = 68136,
-					["classe"] = "UNKNOW",
-					["last_event"] = 0,
-					["serial"] = "Creature-0-4448-1-248-3234-0000105BA4",
-					["pets"] = {
-					},
-				}, -- [2]
-				{
-					["fight_component"] = true,
-					["nome"] = "Imp Minion",
-					["classe"] = "PET",
-					["spell_cast"] = {
-						["Firebolt"] = 0,
-					},
-					["flag_original"] = 70216,
-					["last_event"] = 0,
-					["tipo"] = 4,
-					["serial"] = "Creature-0-4446-1-161-12922-000010A3CD",
-					["pets"] = {
-					},
-				}, -- [3]
-				{
-					["monster"] = true,
-					["tipo"] = 4,
-					["nome"] = "Bleakheart Hellcaller",
-					["pets"] = {
-					},
-					["spell_cast"] = {
-						["Summon Voidwalker"] = 0,
-					},
-					["flag_original"] = 2632,
-					["last_event"] = 0,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-4446-1-161-3771-000010A417",
-					["classe"] = "UNKNOW",
-				}, -- [4]
-				{
-					["fight_component"] = true,
-					["pets"] = {
-					},
-					["nome"] = "Dopeguy",
-					["enemy"] = true,
-					["spell_cast"] = {
-						["Eviscerate"] = 0,
-						["Slice and Dice"] = 0,
-						["Sinister Strike"] = 0,
-						["Riposte"] = 0,
-					},
-					["flag_original"] = 66888,
-					["last_event"] = 0,
-					["tipo"] = 4,
-					["serial"] = "Player-4465-012447E0",
-					["classe"] = "UNGROUPPLAYER",
-				}, -- [5]
-				{
-					["monster"] = true,
-					["tipo"] = 4,
-					["nome"] = "Ashenvale Outrunner",
-					["pets"] = {
-					},
-					["spell_cast"] = {
-						["Shoot"] = 0,
-						["Snap Kick"] = 0,
-						["Scorpid Sting"] = 0,
-						["Ashenvale Outrunner Sneak"] = 0,
-					},
-					["flag_original"] = 68168,
-					["last_event"] = 0,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-4446-1-161-12856-000010A28A",
-					["classe"] = "UNKNOW",
-				}, -- [6]
-				{
-					["monster"] = true,
-					["tipo"] = 4,
-					["nome"] = "Rotting Slime",
-					["pets"] = {
-					},
-					["spell_cast"] = {
-						["Diseased Slime"] = 0,
-					},
-					["flag_original"] = 2632,
-					["last_event"] = 0,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-4446-1-161-3928-000010A1DE",
-					["classe"] = "UNKNOW",
-				}, -- [7]
-				{
-					["fight_component"] = true,
-					["spell_cast"] = {
-						["Shoot"] = 0,
-					},
-					["nome"] = "Jro",
-					["enemy"] = true,
-					["pets"] = {
-					},
-					["flag_original"] = 66888,
-					["last_event"] = 0,
-					["tipo"] = 4,
-					["serial"] = "Player-4465-00DEF841",
-					["classe"] = "UNGROUPPLAYER",
-				}, -- [8]
-				{
-					["fight_component"] = true,
-					["nome"] = "Imp Minion <Bleakheart Hellcaller>",
-					["last_event"] = 0,
-					["spell_cast"] = {
-						["Firebolt"] = 0,
-					},
-					["pets"] = {
-					},
-					["tipo"] = 4,
-					["classe"] = "PET",
-					["serial"] = "Creature-0-4446-1-161-12922-0000111975",
-					["flag_original"] = 70216,
-				}, -- [9]
-			},
-		}, -- [4]
-		{
-			["tipo"] = 2,
-			["_ActorTable"] = {
-			},
-		}, -- [5]
-		["raid_roster"] = {
-		},
-		["tempo_start"] = 1569748201,
-		["last_events_tables"] = {
-		},
-		["alternate_power"] = {
-		},
-		["combat_counter"] = 2562,
-		["totals"] = {
-			0, -- [1]
-			0, -- [2]
-			{
-				0, -- [1]
-				[0] = 0,
-				["alternatepower"] = 0,
-				[3] = 0,
-				[6] = 0,
-			}, -- [3]
-			{
-				["buff_uptime"] = 0,
-				["ress"] = 0,
-				["cooldowns_defensive"] = 0,
-				["dispell"] = 0,
-				["interrupt"] = 0,
-				["debuff_uptime"] = 0,
-				["cc_break"] = 0,
-				["dead"] = 0,
-			}, -- [4]
-			["frags_total"] = 0,
-			["voidzone_damage"] = 0,
-		},
-		["player_last_events"] = {
-		},
-		["frags_need_refresh"] = false,
-		["aura_timeline"] = {
-		},
-		["__call"] = {
-		},
-		["data_inicio"] = 0,
-		["spells_cast_timeline"] = {
-		},
-		["totals_grupo"] = {
-			0, -- [1]
-			0, -- [2]
-			{
-				0, -- [1]
-				[0] = 0,
-				["alternatepower"] = 0,
-				[3] = 0,
-				[6] = 0,
-			}, -- [3]
-			{
-				["buff_uptime"] = 0,
-				["ress"] = 0,
-				["cooldowns_defensive"] = 0,
-				["dispell"] = 0,
-				["interrupt"] = 0,
-				["debuff_uptime"] = 0,
-				["cc_break"] = 0,
-				["dead"] = 0,
-			}, -- [4]
-		},
-		["overall_refreshed"] = true,
-		["hasSaved"] = true,
-		["frags"] = {
-		},
-		["data_fim"] = 0,
-		["cleu_timeline"] = {
-		},
-		["CombatSkillCache"] = {
-		},
-		["cleu_events"] = {
-			["n"] = 1,
-		},
-		["start_time"] = 0,
-		["TimeData"] = {
-		},
-		["PhaseData"] = {
-			{
-				1, -- [1]
-				1, -- [2]
-			}, -- [1]
-			["damage_section"] = {
-			},
-			["heal_section"] = {
-			},
-			["heal"] = {
-			},
-			["damage"] = {
-			},
-		},
-	},
-	["mythic_dungeon_currentsaved"] = {
-		["dungeon_name"] = "",
-		["started"] = false,
-		["segment_id"] = 0,
-		["ej_id"] = 0,
-		["started_at"] = 0,
-		["run_id"] = 0,
-		["level"] = 0,
-		["dungeon_zone_id"] = 0,
-		["previous_boss_killed_at"] = 0,
-	},
-	["ignore_nicktag"] = true,
 	["cached_talents"] = {
 		["Player-4465-010B6E50"] = {
 			{
@@ -14417,10 +11750,3146 @@ _detalhes_database = {
 			}, -- [52]
 		},
 	},
-	["announce_cooldowns"] = {
+	["combat_id"] = 150,
+	["savedStyles"] = {
+		{
+			["hide_in_combat_type"] = 1,
+			["desaturated_menu2"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0, -- [4]
+			},
+			["menu_anchor"] = {
+				-60, -- [1]
+				0, -- [2]
+				["side"] = 1,
+			},
+			["menu2_icons"] = {
+				true, -- [1]
+				true, -- [2]
+				true, -- [3]
+			},
+			["bg_r"] = 0,
+			["hide_out_of_combat"] = false,
+			["name"] = "final",
+			["following"] = {
+				["enabled"] = false,
+				["bar_color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+				["text_color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+			},
+			["color_buttons"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["switch_healer"] = false,
+			["bars_sort_direction"] = 1,
+			["skin"] = "Minimalistic",
+			["menu_icons_size"] = 1,
+			["backdrop_texture"] = "None",
+			["menu2_icons_size"] = 1.20000004768372,
+			["tooltip"] = {
+				["n_abilities"] = 3,
+				["n_enemies"] = 3,
+			},
+			["stretch_button_side"] = 2,
+			["switch_healer_in_combat"] = false,
+			["switch_all_roles_in_combat"] = {
+				2, -- [1]
+				1, -- [2]
+				8, -- [3]
+			},
+			["switch_tank_in_combat"] = false,
+			["version"] = 3,
+			["attribute_text"] = {
+				["enabled"] = false,
+				["shadow"] = false,
+				["side"] = 1,
+				["text_size"] = 11,
+				["anchor"] = {
+					-17, -- [1]
+					10, -- [2]
+				},
+				["text_color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
+				["text_face"] = "Arial Narrow",
+			},
+			["closebutton_config"] = {
+				["pushed_texture"] = "Interface\\Buttons\\UI-Panel-MinimizeButton-Down",
+				["highlight_texture"] = "Interface\\Buttons\\UI-Panel-MinimizeButton-Highlight",
+				["anchor"] = {
+					0, -- [1]
+					0, -- [2]
+				},
+				["normal_texture"] = "Interface\\Buttons\\UI-Panel-MinimizeButton-Up",
+				["alpha"] = 0.8,
+				["size"] = {
+					19, -- [1]
+					19, -- [2]
+				},
+			},
+			["menu_alpha"] = {
+				["enabled"] = false,
+				["onenter"] = 1,
+				["iconstoo"] = true,
+				["ignorebars"] = false,
+				["onleave"] = 1,
+			},
+			["show_sidebars"] = false,
+			["switch_damager"] = false,
+			["auto_hide_menu"] = {
+				["left"] = true,
+				["right"] = true,
+			},
+			["strata"] = "LOW",
+			["bars_grow_direction"] = 1,
+			["resetbutton_config"] = {
+				["normal_vertexcolor"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
+				["highlight_texcoord"] = {
+					0, -- [1]
+					1, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
+				["highlight_texture"] = "Interface\\Addons\\Details\\Images\\reset_button2",
+				["normal_texcoord"] = {
+					0, -- [1]
+					1, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
+				["highlight_vertexcolor"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
+				["normal_texture"] = "Interface\\Addons\\Details\\Images\\reset_button2",
+				["anchor"] = {
+					2, -- [1]
+					0, -- [2]
+				},
+				["size"] = {
+					13, -- [1]
+					13, -- [2]
+				},
+			},
+			["switch_tank"] = false,
+			["hide_in_combat_alpha"] = 0,
+			["switch_all_roles_after_wipe"] = false,
+			["menu_icons"] = {
+				true, -- [1]
+				true, -- [2]
+				true, -- [3]
+				true, -- [4]
+			},
+			["menu2_anchor_down"] = {
+				32, -- [1]
+				0, -- [2]
+			},
+			["statusbar_info"] = {
+				["alpha"] = 0,
+				["overlay"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+			},
+			["menu_anchor_down"] = {
+				-22, -- [1]
+				0, -- [2]
+			},
+			["window_scale"] = 1,
+			["switch_damager_in_combat"] = false,
+			["instancebutton_config"] = {
+				["textcolor"] = {
+					0.8, -- [1]
+					0.6, -- [2]
+					0, -- [3]
+					0.8, -- [4]
+				},
+				["highlight_texture"] = "Interface\\Buttons\\UI-Panel-MinimizeButton-Highlight",
+				["size"] = {
+					20, -- [1]
+					16, -- [2]
+				},
+				["anchor"] = {
+					5, -- [1]
+					0, -- [2]
+				},
+				["textsize"] = 15,
+				["textfont"] = "Friz Quadrata TT",
+				["textshadow"] = false,
+			},
+			["hide_icon"] = true,
+			["grab_on_top"] = false,
+			["menu2_anchor"] = {
+				32, -- [1]
+				3, -- [2]
+			},
+			["micro_displays_side"] = 2,
+			["auto_current"] = true,
+			["toolbar_side"] = 2,
+			["bg_g"] = 0,
+			["row_show_animation"] = {
+				["anim"] = "Fade",
+				["options"] = {
+				},
+			},
+			["hide_in_combat"] = false,
+			["desaturated_menu"] = false,
+			["plugins_grow_direction"] = 1,
+			["show_statusbar"] = false,
+			["wallpaper"] = {
+				["enabled"] = false,
+				["texcoord"] = {
+					0, -- [1]
+					1, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
+				["overlay"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
+				["anchor"] = "all",
+				["height"] = 0,
+				["alpha"] = 0.5,
+				["width"] = 0,
+			},
+			["total_bar"] = {
+				["enabled"] = false,
+				["only_in_group"] = true,
+				["icon"] = "Interface\\ICONS\\INV_Sigil_Thorim",
+				["color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+			},
+			["bg_alpha"] = 0.0199999995529652,
+			["instance_button_anchor"] = {
+				-27, -- [1]
+				1, -- [2]
+			},
+			["row_info"] = {
+				["textR_outline"] = false,
+				["textL_outline"] = false,
+				["icon_file"] = "Interface\\AddOns\\Details\\images\\classes_small_alpha",
+				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
+				["textL_enable_custom_text"] = true,
+				["texture_background_file"] = "Interface\\TargetingFrame\\UI-StatusBar",
+				["textR_enable_custom_text"] = true,
+				["texture_background_class_color"] = true,
+				["percent_type"] = 1,
+				["textL_show_number"] = false,
+				["space"] = {
+					["right"] = 0,
+					["left"] = 0,
+					["between"] = 0,
+				},
+				["fixed_texture_background_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					0.680000007152557, -- [4]
+				},
+				["textR_custom_text"] = "{data1} ({data2}) ",
+				["texture"] = "BantoBar",
+				["font_face_file"] = "Fonts\\ARIALN.TTF",
+				["fixed_text_color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
+				["textL_custom_text"] = "{data3}{data2}",
+				["texture_background"] = "Blizzard",
+				["alpha"] = 0,
+				["textL_class_colors"] = false,
+				["backdrop"] = {
+					["enabled"] = false,
+					["size"] = 12,
+					["color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["texture"] = "Details BarBorder 2",
+				},
+				["no_icon"] = false,
+				["font_size"] = 11,
+				["textR_class_colors"] = false,
+				["font_face"] = "Arial Narrow",
+				["texture_class_colors"] = true,
+				["height"] = 20,
+				["texture_file"] = "Interface\\AddOns\\Details\\images\\BantoBar",
+				["start_after_icon"] = false,
+				["fixed_texture_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
+			},
+			["bg_b"] = 0,
+		}, -- [1]
+	},
+	["ignore_nicktag"] = true,
+	["mythic_dungeon_currentsaved"] = {
+		["dungeon_name"] = "",
+		["started"] = false,
+		["segment_id"] = 0,
+		["ej_id"] = 0,
+		["started_at"] = 0,
+		["run_id"] = 0,
+		["level"] = 0,
+		["dungeon_zone_id"] = 0,
+		["previous_boss_killed_at"] = 0,
+	},
+	["announce_deaths"] = {
 		["enabled"] = false,
+		["last_hits"] = 1,
+		["only_first"] = 5,
+		["where"] = 1,
+	},
+	["tabela_overall"] = {
+		{
+			["tipo"] = 2,
+			["_ActorTable"] = {
+				{
+					["flag_original"] = 1297,
+					["totalabsorbed"] = 0.008389,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Lost Barrens Kodo"] = 0,
+						["Bleakheart Shadowstalker"] = 0,
+						["Rotting Slime"] = 0,
+						["Bleakheart Trickster"] = 0,
+						["Imp Minion"] = 0,
+						["Voidwalker Minion <Bleakheart Hellcaller>"] = 0,
+						["Imp Minion <Bleakheart Hellcaller>"] = 0,
+						["Bleakheart Satyr"] = 0,
+						["Ashenvale Outrunner"] = 0,
+						["Voidwalker Minion"] = 0,
+						["Jro"] = 0,
+						["Dopeguy"] = 0,
+						["Bleakheart Hellcaller"] = 0,
+					},
+					["pets"] = {
+					},
+					["on_hold"] = false,
+					["classe"] = "WARRIOR",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.008389,
+					["friendlyfire_total"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1569748504,
+					["serial"] = "Player-4465-010B6E50",
+					["total"] = 0.008389,
+					["nome"] = "Verminz",
+					["spells"] = {
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Bleakheart Shadowstalker"] = 0,
+									["Rotting Slime"] = 0,
+									["Bleakheart Trickster"] = 0,
+									["Imp Minion"] = 0,
+									["Ashenvale Outrunner"] = 0,
+									["Voidwalker Minion"] = 0,
+									["Bleakheart Satyr"] = 0,
+									["Dopeguy"] = 0,
+									["Bleakheart Hellcaller"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							}, -- [1]
+							[0] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Bleakheart Shadowstalker"] = 0,
+									["Rotting Slime"] = 0,
+									["Bleakheart Trickster"] = 0,
+									["Imp Minion"] = 0,
+									["Ashenvale Outrunner"] = 0,
+									["Voidwalker Minion"] = 0,
+									["Bleakheart Satyr"] = 0,
+									["Dopeguy"] = 0,
+									["Bleakheart Hellcaller"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 0,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Hamstring"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Dopeguy"] = 0,
+									["Bleakheart Shadowstalker"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Hamstring",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Cleave"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Imp Minion"] = 0,
+									["Ashenvale Outrunner"] = 0,
+									["Rotting Slime"] = 0,
+									["Voidwalker Minion"] = 0,
+									["Voidwalker Minion <Bleakheart Hellcaller>"] = 0,
+									["Bleakheart Trickster"] = 0,
+									["Bleakheart Hellcaller"] = 0,
+									["Imp Minion <Bleakheart Hellcaller>"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Cleave",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Execute"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Ashenvale Outrunner"] = 0,
+									["Bleakheart Shadowstalker"] = 0,
+									["Jro"] = 0,
+									["Voidwalker Minion"] = 0,
+									["Rotting Slime"] = 0,
+									["Bleakheart Satyr"] = 0,
+									["Bleakheart Trickster"] = 0,
+									["Bleakheart Hellcaller"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Execute",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Rend"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Lost Barrens Kodo"] = 0,
+									["Bleakheart Shadowstalker"] = 0,
+									["Rotting Slime"] = 0,
+									["Bleakheart Trickster"] = 0,
+									["Imp Minion"] = 0,
+									["Voidwalker Minion <Bleakheart Hellcaller>"] = 0,
+									["Imp Minion <Bleakheart Hellcaller>"] = 0,
+									["Ashenvale Outrunner"] = 0,
+									["Voidwalker Minion"] = 0,
+									["Bleakheart Satyr"] = 0,
+									["Dopeguy"] = 0,
+									["Bleakheart Hellcaller"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Rend",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Lost Barrens Kodo"] = 0,
+									["Bleakheart Shadowstalker"] = 0,
+									["Rotting Slime"] = 0,
+									["Bleakheart Trickster"] = 0,
+									["Imp Minion"] = 0,
+									["Voidwalker Minion <Bleakheart Hellcaller>"] = 0,
+									["Imp Minion <Bleakheart Hellcaller>"] = 0,
+									["Bleakheart Satyr"] = 0,
+									["Ashenvale Outrunner"] = 0,
+									["Voidwalker Minion"] = 0,
+									["Jro"] = 0,
+									["Dopeguy"] = 0,
+									["Bleakheart Hellcaller"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
+							},
+							["Retaliation"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Dopeguy"] = 0,
+									["Bleakheart Trickster"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Retaliation",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Overpower"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Rotting Slime"] = 0,
+									["Bleakheart Shadowstalker"] = 0,
+									["Bleakheart Satyr"] = 0,
+									["Ashenvale Outrunner"] = 0,
+									["Voidwalker Minion <Bleakheart Hellcaller>"] = 0,
+									["Bleakheart Trickster"] = 0,
+									["Dopeguy"] = 0,
+									["Bleakheart Hellcaller"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Overpower",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["!Autoshot"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Bleakheart Satyr"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "!Autoshot",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
+							},
+							["Heroic Strike"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Voidwalker Minion"] = 0,
+									["Bleakheart Shadowstalker"] = 0,
+									["Bleakheart Trickster"] = 0,
+									["Ashenvale Outrunner"] = 0,
+									["Rotting Slime"] = 0,
+									["Bleakheart Satyr"] = 0,
+									["Dopeguy"] = 0,
+									["Bleakheart Hellcaller"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Heroic Strike",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["grupo"] = true,
+					["last_event"] = 0,
+					["friendlyfire"] = {
+						["Verminz"] = {
+							["total"] = 0,
+							["spells"] = {
+								["Chest Pains"] = 0,
+							},
+						},
+					},
+					["custom"] = 0,
+					["tipo"] = 1,
+					["damage_taken"] = 0.008389,
+					["start_time"] = 1569748501,
+					["delay"] = 0,
+					["last_dps"] = 0,
+				}, -- [1]
+				{
+					["flag_original"] = 68136,
+					["totalabsorbed"] = 0.008339,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Verminz"] = 0,
+					},
+					["pets"] = {
+					},
+					["last_event"] = 0,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.008339,
+					["dps_started"] = false,
+					["fight_component"] = true,
+					["end_time"] = 1569748504,
+					["serial"] = "Creature-0-4448-1-248-3234-0000105BDE",
+					["damage_taken"] = 0.008339,
+					["nome"] = "Lost Barrens Kodo",
+					["spells"] = {
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Verminz"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
+							}, -- [1]
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Verminz"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
+							},
+							["Kodo Stomp"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Verminz"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Kodo Stomp",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["on_hold"] = false,
+					["total"] = 0.008339,
+					["friendlyfire"] = {
+					},
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1569748501,
+					["delay"] = 0,
+					["friendlyfire_total"] = 0,
+				}, -- [2]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.003068,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Verminz"] = 0,
+						["Cachorra"] = 0,
+					},
+					["pets"] = {
+					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.003068,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.003068,
+					["delay"] = 0,
+					["monster"] = true,
+					["end_time"] = 1569750231,
+					["friendlyfire_total"] = 0,
+					["friendlyfire"] = {
+					},
+					["nome"] = "Hecklefang Hyena",
+					["spells"] = {
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Cachorra"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							}, -- [1]
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Verminz"] = 0,
+									["Cachorra"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["tipo"] = 1,
+					["total"] = 0.003068,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["last_dps"] = 0,
+					["start_time"] = 1569750228,
+					["serial"] = "Creature-0-4448-1-248-4127-0000106983",
+					["fight_component"] = true,
+				}, -- [3]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.006825,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Verminz"] = 0,
+					},
+					["pets"] = {
+					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.006825,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.006825,
+					["delay"] = 0,
+					["monster"] = true,
+					["end_time"] = 1569750231,
+					["friendlyfire_total"] = 0,
+					["friendlyfire"] = {
+					},
+					["nome"] = "Sunscale Screecher",
+					["spells"] = {
+						["_ActorTable"] = {
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Verminz"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["tipo"] = 1,
+					["total"] = 0.006825,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["last_dps"] = 0,
+					["start_time"] = 1569750228,
+					["serial"] = "Creature-0-4448-1-248-3255-0000105E16",
+					["fight_component"] = true,
+				}, -- [4]
+				{
+					["flag_original"] = 2632,
+					["totalabsorbed"] = 0.001813,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Bargore"] = 0,
+						["Verminz"] = 0,
+						["Wyrus"] = 0,
+						["Gromkaas"] = 0,
+						["Unknown"] = 0,
+						["Zarimuni"] = 0,
+						["Raah"] = 0,
+					},
+					["pets"] = {
+					},
+					["monster"] = true,
+					["last_dps"] = 0,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.001813,
+					["delay"] = 0,
+					["fight_component"] = true,
+					["end_time"] = 1569770229,
+					["friendlyfire_total"] = 0,
+					["damage_taken"] = 0.001813,
+					["nome"] = "Bleakheart Hellcaller",
+					["spells"] = {
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Verminz"] = 0,
+									["Gromkaas"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							}, -- [1]
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Unknown"] = 0,
+									["Bargore"] = 0,
+									["Verminz"] = 0,
+									["Gromkaas"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Summon Voidwalker"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Summon Voidwalker",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["tipo"] = 1,
+					["total"] = 0.001813,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["friendlyfire"] = {
+					},
+					["start_time"] = 1569770226,
+					["serial"] = "Creature-0-4446-1-161-3771-000090A3C6",
+					["dps_started"] = false,
+				}, -- [5]
+				{
+					["flag_original"] = 70216,
+					["totalabsorbed"] = 0.005889,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Verminz"] = 0,
+						["Juk'mon"] = 0,
+					},
+					["pets"] = {
+					},
+					["tipo"] = 1,
+					["classe"] = "PET",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.005889,
+					["friendlyfire_total"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1569770229,
+					["delay"] = 0,
+					["last_dps"] = 0,
+					["nome"] = "Imp Minion",
+					["spells"] = {
+						["_ActorTable"] = {
+							["Firebolt"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Verminz"] = 0,
+									["Juk'mon"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Firebolt",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["damage_taken"] = 0.005889,
+					["total"] = 0.005889,
+					["friendlyfire"] = {
+					},
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1569770226,
+					["serial"] = "Creature-0-4446-1-161-12922-000010A3CD",
+					["fight_component"] = true,
+				}, -- [6]
+				{
+					["flag_original"] = 66888,
+					["totalabsorbed"] = 0.00569,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Verminz"] = 0,
+					},
+					["enemy"] = true,
+					["pets"] = {
+					},
+					["tipo"] = 1,
+					["classe"] = "UNGROUPPLAYER",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.00569,
+					["friendlyfire_total"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1569770229,
+					["delay"] = 0,
+					["last_dps"] = 0,
+					["nome"] = "Dopeguy",
+					["spells"] = {
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Verminz"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							}, -- [1]
+							["Eviscerate"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Eviscerate",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Slice and Dice"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Slice and Dice",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Verminz"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							[0] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Verminz"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 0,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Sinister Strike"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Verminz"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Sinister Strike",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Riposte"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Verminz"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Riposte",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["damage_taken"] = 0.00569,
+					["on_hold"] = false,
+					["total"] = 0.00569,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["friendlyfire"] = {
+					},
+					["start_time"] = 1569770226,
+					["serial"] = "Player-4465-012447E0",
+					["fight_component"] = true,
+				}, -- [7]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.003928,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Pedellus"] = 0,
+						["Bensiano"] = 0,
+						["Verminz"] = 0,
+						["Fiwier"] = 0,
+						["Gromkaas"] = 0,
+						["Paragan"] = 0,
+						["Emor"] = 0,
+					},
+					["pets"] = {
+					},
+					["monster"] = true,
+					["last_dps"] = 0,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.003928,
+					["delay"] = 0,
+					["fight_component"] = true,
+					["end_time"] = 1569770229,
+					["friendlyfire_total"] = 0,
+					["damage_taken"] = 0.003928,
+					["nome"] = "Bleakheart Shadowstalker",
+					["spells"] = {
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Pedellus"] = 0,
+									["Paragan"] = 0,
+									["Verminz"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							}, -- [1]
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Pedellus"] = 0,
+									["Bensiano"] = 0,
+									["Verminz"] = 0,
+									["Fiwier"] = 0,
+									["Gromkaas"] = 0,
+									["Paragan"] = 0,
+									["Emor"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["tipo"] = 1,
+					["total"] = 0.003928,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["friendlyfire"] = {
+					},
+					["start_time"] = 1569770226,
+					["serial"] = "Creature-0-4446-1-161-3770-000010A3C6",
+					["dps_started"] = false,
+				}, -- [8]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.001808,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Verminz"] = 0,
+					},
+					["pets"] = {
+					},
+					["monster"] = true,
+					["last_dps"] = 0,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.001808,
+					["delay"] = 0,
+					["fight_component"] = true,
+					["end_time"] = 1569770229,
+					["friendlyfire_total"] = 0,
+					["damage_taken"] = 0.001808,
+					["nome"] = "Ashenvale Outrunner",
+					["spells"] = {
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Verminz"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							}, -- [1]
+							["Shoot"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Verminz"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Shoot",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Snap Kick"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Verminz"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Snap Kick",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Verminz"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Ashenvale Outrunner Sneak"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Ashenvale Outrunner Sneak",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							[0] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Verminz"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 0,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Scorpid Sting"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Scorpid Sting",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["tipo"] = 1,
+					["total"] = 0.001808,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["friendlyfire"] = {
+					},
+					["start_time"] = 1569770226,
+					["serial"] = "Creature-0-4446-1-161-12856-000010A28A",
+					["dps_started"] = false,
+				}, -- [9]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.001527,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Verminz"] = 0,
+					},
+					["pets"] = {
+					},
+					["monster"] = true,
+					["last_dps"] = 0,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.001527,
+					["delay"] = 0,
+					["fight_component"] = true,
+					["end_time"] = 1569770229,
+					["friendlyfire_total"] = 0,
+					["damage_taken"] = 0.001527,
+					["nome"] = "Rotting Slime",
+					["spells"] = {
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Verminz"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							}, -- [1]
+							[0] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Verminz"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 0,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Diseased Slime"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Diseased Slime",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Verminz"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["tipo"] = 1,
+					["total"] = 0.001527,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["friendlyfire"] = {
+					},
+					["start_time"] = 1569770226,
+					["serial"] = "Creature-0-4446-1-161-3928-000010A1DE",
+					["dps_started"] = false,
+				}, -- [10]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.003251,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Ørzech"] = 0,
+						["Verminz"] = 0,
+						["Fiwier"] = 0,
+						["Elatin"] = 0,
+						["Paragan"] = 0,
+						["Nimm"] = 0,
+					},
+					["pets"] = {
+					},
+					["monster"] = true,
+					["last_dps"] = 0,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.003251,
+					["serial"] = "Creature-0-4446-1-161-3765-000010CBAC",
+					["fight_component"] = true,
+					["end_time"] = 1569770585,
+					["friendlyfire_total"] = 0,
+					["damage_taken"] = 0.003251,
+					["nome"] = "Bleakheart Satyr",
+					["spells"] = {
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Ørzech"] = 0,
+									["Fiwier"] = 0,
+									["Elatin"] = 0,
+									["Verminz"] = 0,
+									["Pink"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
+							}, -- [1]
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Ørzech"] = 0,
+									["Verminz"] = 0,
+									["Fiwier"] = 0,
+									["Elatin"] = 0,
+									["Paragan"] = 0,
+									["Nimm"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["total"] = 0.003251,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["friendlyfire"] = {
+					},
+					["start_time"] = 1569770582,
+					["delay"] = 0,
+					["dps_started"] = false,
+				}, -- [11]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.008214,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Liuso"] = 0,
+						["Ørzech"] = 0,
+						["Verminz"] = 0,
+						["Emor"] = 0,
+					},
+					["pets"] = {
+					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.008214,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.008214,
+					["serial"] = "Creature-0-4446-1-161-3767-000010CC65",
+					["monster"] = true,
+					["end_time"] = 1569770710,
+					["friendlyfire_total"] = 0,
+					["friendlyfire"] = {
+					},
+					["nome"] = "Bleakheart Trickster",
+					["spells"] = {
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Verminz"] = 0,
+									["Emor"] = 0,
+									["Liuso"] = 0,
+									["Ørzech"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
+							}, -- [1]
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Liuso"] = 0,
+									["Ørzech"] = 0,
+									["Verminz"] = 0,
+									["Emor"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
+							},
+							["Poison"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Ørzech"] = 0,
+									["Emor"] = 0,
+									["Verminz"] = 0,
+									["Liuso"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Poison",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["total"] = 0.008214,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1569770707,
+					["delay"] = 0,
+					["fight_component"] = true,
+				}, -- [12]
+				{
+					["flag_original"] = 66888,
+					["totalabsorbed"] = 0.008956,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Zarimuni"] = 0,
+					},
+					["enemy"] = true,
+					["pets"] = {
+					},
+					["tipo"] = 1,
+					["classe"] = "UNGROUPPLAYER",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.008956,
+					["friendlyfire_total"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1569788672,
+					["delay"] = 0,
+					["last_dps"] = 0,
+					["nome"] = "Jro",
+					["spells"] = {
+						["_ActorTable"] = {
+							["Corruption"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Zarimuni"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Corruption",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Shoot"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Shoot",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Curse of Agony"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Zarimuni"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Curse of Agony",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["damage_taken"] = 0.008956,
+					["on_hold"] = false,
+					["total"] = 0.008956,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["friendlyfire"] = {
+					},
+					["start_time"] = 1569788669,
+					["serial"] = "Player-4465-00DEF841",
+					["fight_component"] = true,
+				}, -- [13]
+				{
+					["flag_original"] = 70216,
+					["totalabsorbed"] = 0.001008,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Verminz"] = 0,
+						["Gromkaas"] = 0,
+					},
+					["pets"] = {
+					},
+					["last_event"] = 0,
+					["classe"] = "PET",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.001008,
+					["fight_component"] = true,
+					["dps_started"] = false,
+					["end_time"] = 1569790197,
+					["serial"] = "Creature-0-4446-1-161-8996-00001114DD",
+					["damage_taken"] = 0.001008,
+					["nome"] = "Voidwalker Minion",
+					["spells"] = {
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Verminz"] = 0,
+									["Gromkaas"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
+							}, -- [1]
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Verminz"] = 0,
+									["Gromkaas"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["on_hold"] = false,
+					["total"] = 0.001008,
+					["friendlyfire"] = {
+					},
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1569790194,
+					["delay"] = 0,
+					["friendlyfire_total"] = 0,
+				}, -- [14]
+				{
+					["flag_original"] = 70216,
+					["totalabsorbed"] = 0.007255,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Verminz"] = 0,
+					},
+					["pets"] = {
+					},
+					["last_event"] = 0,
+					["classe"] = "PET",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.007255,
+					["dps_started"] = false,
+					["fight_component"] = true,
+					["end_time"] = 1569790387,
+					["serial"] = "Creature-0-4446-1-161-12922-0000111975",
+					["on_hold"] = false,
+					["nome"] = "Imp Minion <Bleakheart Hellcaller>",
+					["spells"] = {
+						["_ActorTable"] = {
+							[0] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Verminz"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 0,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Firebolt"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Verminz"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Firebolt",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["last_dps"] = 0,
+					["total"] = 0.007255,
+					["friendlyfire"] = {
+					},
+					["custom"] = 0,
+					["tipo"] = 1,
+					["damage_taken"] = 0.007255,
+					["start_time"] = 1569790384,
+					["delay"] = 0,
+					["friendlyfire_total"] = 0,
+				}, -- [15]
+				{
+					["flag_original"] = 4680,
+					["totalabsorbed"] = 0.005402,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Verminz"] = 0,
+					},
+					["pets"] = {
+					},
+					["tipo"] = 1,
+					["classe"] = "PET",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.005402,
+					["friendlyfire_total"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1569845372,
+					["delay"] = 0,
+					["damage_taken"] = 0.005402,
+					["nome"] = "Voidwalker Minion <Bleakheart Hellcaller>",
+					["spells"] = {
+						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Verminz"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							}, -- [1]
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Verminz"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["on_hold"] = false,
+					["total"] = 0.005402,
+					["friendlyfire"] = {
+					},
+					["custom"] = 0,
+					["last_event"] = 0,
+					["last_dps"] = 0,
+					["start_time"] = 1569845369,
+					["serial"] = "Creature-0-4446-1-161-8996-0000111C4A",
+					["fight_component"] = true,
+				}, -- [16]
+			},
+		}, -- [1]
+		{
+			["tipo"] = 3,
+			["_ActorTable"] = {
+				{
+					["flag_original"] = 1297,
+					["totalabsorb"] = 0.006451,
+					["last_hps"] = 0,
+					["healing_from"] = {
+					},
+					["targets"] = {
+						["Verminz"] = 0,
+					},
+					["delay"] = 0,
+					["pets"] = {
+					},
+					["iniciar_hps"] = false,
+					["targets_overheal"] = {
+					},
+					["classe"] = "WARRIOR",
+					["totalover"] = 0.006451,
+					["total_without_pet"] = 0.006451,
+					["totalover_without_pet"] = 0.006451,
+					["totaldenied"] = 0.006451,
+					["fight_component"] = true,
+					["total"] = 0.006451,
+					["heal_enemy_amt"] = 0,
+					["healing_taken"] = 0.006451,
+					["nome"] = "Verminz",
+					["targets_absorbs"] = {
+					},
+					["grupo"] = true,
+					["end_time"] = 1569770229,
+					["heal_enemy"] = {
+					},
+					["tipo"] = 2,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1569770226,
+					["serial"] = "Player-4465-010B6E50",
+					["spells"] = {
+						["_ActorTable"] = {
+							["Healing Potion"] = {
+								["c_amt"] = 0,
+								["totalabsorb"] = 0,
+								["targets_overheal"] = {
+								},
+								["n_max"] = 0,
+								["targets"] = {
+									["Verminz"] = 0,
+								},
+								["n_min"] = 0,
+								["counter"] = 0,
+								["overheal"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Healing Potion",
+								["targets_absorbs"] = {
+								},
+								["c_curado"] = 0,
+								["m_crit"] = 0,
+								["totaldenied"] = 0,
+								["m_amt"] = 0,
+								["m_healed"] = 0,
+								["n_amt"] = 0,
+								["n_curado"] = 0,
+								["c_min"] = 0,
+								["absorbed"] = 0,
+							},
+							["Blood Craze"] = {
+								["c_amt"] = 0,
+								["totalabsorb"] = 0,
+								["targets_overheal"] = {
+								},
+								["n_max"] = 0,
+								["targets"] = {
+									["Verminz"] = 0,
+								},
+								["n_min"] = 0,
+								["counter"] = 0,
+								["overheal"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Blood Craze",
+								["targets_absorbs"] = {
+								},
+								["c_curado"] = 0,
+								["m_crit"] = 0,
+								["totaldenied"] = 0,
+								["m_amt"] = 0,
+								["m_healed"] = 0,
+								["n_amt"] = 0,
+								["n_curado"] = 0,
+								["c_min"] = 0,
+								["absorbed"] = 0,
+							},
+						},
+						["tipo"] = 3,
+					},
+				}, -- [1]
+			},
+		}, -- [2]
+		{
+			["tipo"] = 7,
+			["_ActorTable"] = {
+				{
+					["received"] = 0.007003,
+					["resource"] = 3.224267,
+					["targets"] = {
+						["Verminz"] = 0,
+					},
+					["pets"] = {
+					},
+					["powertype"] = 1,
+					["classe"] = "WARRIOR",
+					["passiveover"] = 0.007003,
+					["total"] = 0.007003,
+					["nome"] = "Verminz",
+					["spells"] = {
+						["_ActorTable"] = {
+							["Unbridled Wrath"] = {
+								["total"] = 0,
+								["id"] = "Unbridled Wrath",
+								["totalover"] = 0,
+								["targets"] = {
+									["Verminz"] = 0,
+								},
+								["counter"] = 0,
+							},
+							["Charge"] = {
+								["total"] = 0,
+								["id"] = "Charge",
+								["totalover"] = 0,
+								["targets"] = {
+									["Verminz"] = 0,
+								},
+								["counter"] = 0,
+							},
+							["Bloodrage"] = {
+								["total"] = 0,
+								["id"] = "Bloodrage",
+								["totalover"] = 0,
+								["targets"] = {
+									["Verminz"] = 0,
+								},
+								["counter"] = 0,
+							},
+						},
+						["tipo"] = 7,
+					},
+					["grupo"] = true,
+					["flag_original"] = 1297,
+					["tipo"] = 3,
+					["alternatepower"] = 0.007003,
+					["last_event"] = 0,
+					["serial"] = "Player-4465-010B6E50",
+					["totalover"] = 0.007003,
+				}, -- [1]
+			},
+		}, -- [3]
+		{
+			["tipo"] = 9,
+			["_ActorTable"] = {
+				{
+					["flag_original"] = 1297,
+					["debuff_uptime_spells"] = {
+						["_ActorTable"] = {
+							["Charge Stun"] = {
+								["id"] = "Charge Stun",
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							["Chest Pains"] = {
+								["id"] = "Chest Pains",
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							["Recently Bandaged"] = {
+								["id"] = "Recently Bandaged",
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							["Sunder Armor"] = {
+								["id"] = "Sunder Armor",
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							["Rend"] = {
+								["id"] = "Rend",
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							["Hamstring"] = {
+								["id"] = "Hamstring",
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							["Intimidating Shout"] = {
+								["id"] = "Intimidating Shout",
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+						},
+						["tipo"] = 9,
+					},
+					["pets"] = {
+					},
+					["classe"] = "WARRIOR",
+					["buff_uptime_spells"] = {
+						["_ActorTable"] = {
+							["Battle Shout"] = {
+								["id"] = "Battle Shout",
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							["Enrage"] = {
+								["id"] = "Enrage",
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							["Honorless Target"] = {
+								["id"] = "Honorless Target",
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							["Retaliation"] = {
+								["id"] = "Retaliation",
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							["Bloodrage"] = {
+								["id"] = "Bloodrage",
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							["Blood Craze"] = {
+								["id"] = "Blood Craze",
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							["Battle Stance"] = {
+								["id"] = "Battle Stance",
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							["Defensive Stance"] = {
+								["id"] = "Defensive Stance",
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+						},
+						["tipo"] = 9,
+					},
+					["debuff_uptime"] = 0,
+					["debuff_uptime_targets"] = {
+					},
+					["grupo"] = true,
+					["spell_cast"] = {
+						["Battle Shout"] = 0,
+						["Intimidating Shout"] = 0,
+						["Chest Pains"] = 0,
+						["Cleave"] = 0,
+						["Bloodrage"] = 0,
+						["Rend"] = 0,
+						["Defensive Stance"] = 0,
+						["Shoot Bow"] = 0,
+						["Healing Potion"] = 0,
+						["Sunder Armor"] = 0,
+						["Revenge"] = 0,
+						["Retaliation"] = 0,
+						["Battle Stance"] = 0,
+						["Overpower"] = 0,
+						["Hamstring"] = 0,
+						["Heroic Strike"] = 0,
+					},
+					["nome"] = "Verminz",
+					["last_event"] = 0,
+					["buff_uptime_targets"] = {
+					},
+					["tipo"] = 4,
+					["serial"] = "Player-4465-010B6E50",
+					["buff_uptime"] = 0,
+				}, -- [1]
+				{
+					["fight_component"] = true,
+					["nome"] = "Lost Barrens Kodo",
+					["classe"] = "UNKNOW",
+					["spell_cast"] = {
+						["Kodo Stomp"] = 0,
+					},
+					["pets"] = {
+					},
+					["last_event"] = 0,
+					["tipo"] = 4,
+					["serial"] = "Creature-0-4448-1-248-3234-0000105BA4",
+					["flag_original"] = 68136,
+				}, -- [2]
+				{
+					["fight_component"] = true,
+					["nome"] = "Imp Minion",
+					["last_event"] = 0,
+					["spell_cast"] = {
+						["Firebolt"] = 0,
+					},
+					["pets"] = {
+					},
+					["tipo"] = 4,
+					["classe"] = "PET",
+					["serial"] = "Creature-0-4446-1-161-12922-000010A3CD",
+					["flag_original"] = 70216,
+				}, -- [3]
+				{
+					["monster"] = true,
+					["last_event"] = 0,
+					["nome"] = "Bleakheart Hellcaller",
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["flag_original"] = 2632,
+					["tipo"] = 4,
+					["fight_component"] = true,
+					["serial"] = "Creature-0-4446-1-161-3771-000010A417",
+					["spell_cast"] = {
+						["Summon Voidwalker"] = 0,
+					},
+				}, -- [4]
+				{
+					["fight_component"] = true,
+					["last_event"] = 0,
+					["nome"] = "Dopeguy",
+					["enemy"] = true,
+					["pets"] = {
+					},
+					["classe"] = "UNGROUPPLAYER",
+					["tipo"] = 4,
+					["spell_cast"] = {
+						["Eviscerate"] = 0,
+						["Slice and Dice"] = 0,
+						["Sinister Strike"] = 0,
+						["Riposte"] = 0,
+					},
+					["serial"] = "Player-4465-012447E0",
+					["flag_original"] = 66888,
+				}, -- [5]
+				{
+					["monster"] = true,
+					["last_event"] = 0,
+					["nome"] = "Ashenvale Outrunner",
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["flag_original"] = 68168,
+					["tipo"] = 4,
+					["fight_component"] = true,
+					["serial"] = "Creature-0-4446-1-161-12856-000010A28A",
+					["spell_cast"] = {
+						["Shoot"] = 0,
+						["Snap Kick"] = 0,
+						["Scorpid Sting"] = 0,
+						["Ashenvale Outrunner Sneak"] = 0,
+					},
+				}, -- [6]
+				{
+					["monster"] = true,
+					["last_event"] = 0,
+					["nome"] = "Rotting Slime",
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["flag_original"] = 2632,
+					["tipo"] = 4,
+					["fight_component"] = true,
+					["serial"] = "Creature-0-4446-1-161-3928-000010A1DE",
+					["spell_cast"] = {
+						["Diseased Slime"] = 0,
+					},
+				}, -- [7]
+				{
+					["fight_component"] = true,
+					["last_event"] = 0,
+					["nome"] = "Jro",
+					["enemy"] = true,
+					["spell_cast"] = {
+						["Shoot"] = 0,
+					},
+					["classe"] = "UNGROUPPLAYER",
+					["tipo"] = 4,
+					["pets"] = {
+					},
+					["serial"] = "Player-4465-00DEF841",
+					["flag_original"] = 66888,
+				}, -- [8]
+				{
+					["fight_component"] = true,
+					["nome"] = "Imp Minion <Bleakheart Hellcaller>",
+					["tipo"] = 4,
+					["spell_cast"] = {
+						["Firebolt"] = 0,
+					},
+					["flag_original"] = 70216,
+					["classe"] = "PET",
+					["last_event"] = 0,
+					["serial"] = "Creature-0-4446-1-161-12922-0000111975",
+					["pets"] = {
+					},
+				}, -- [9]
+			},
+		}, -- [4]
+		{
+			["tipo"] = 2,
+			["_ActorTable"] = {
+			},
+		}, -- [5]
+		["raid_roster"] = {
+		},
+		["tempo_start"] = 1569748201,
+		["last_events_tables"] = {
+		},
+		["alternate_power"] = {
+		},
+		["combat_counter"] = 2562,
+		["totals"] = {
+			0, -- [1]
+			0, -- [2]
+			{
+				0, -- [1]
+				[0] = 0,
+				["alternatepower"] = 0,
+				[6] = 0,
+				[3] = 0,
+			}, -- [3]
+			{
+				["buff_uptime"] = 0,
+				["ress"] = 0,
+				["dead"] = 0,
+				["cc_break"] = 0,
+				["interrupt"] = 0,
+				["debuff_uptime"] = 0,
+				["dispell"] = 0,
+				["cooldowns_defensive"] = 0,
+			}, -- [4]
+			["voidzone_damage"] = 0,
+			["frags_total"] = 0,
+		},
+		["player_last_events"] = {
+		},
+		["frags_need_refresh"] = false,
+		["aura_timeline"] = {
+		},
+		["__call"] = {
+		},
+		["data_inicio"] = 0,
+		["frags"] = {
+		},
+		["PhaseData"] = {
+			{
+				1, -- [1]
+				1, -- [2]
+			}, -- [1]
+			["damage"] = {
+			},
+			["heal_section"] = {
+			},
+			["heal"] = {
+			},
+			["damage_section"] = {
+			},
+		},
+		["overall_refreshed"] = true,
+		["hasSaved"] = true,
+		["spells_cast_timeline"] = {
+		},
+		["data_fim"] = 0,
+		["cleu_events"] = {
+			["n"] = 1,
+		},
+		["CombatSkillCache"] = {
+		},
+		["cleu_timeline"] = {
+		},
+		["start_time"] = 0,
+		["TimeData"] = {
+		},
+		["totals_grupo"] = {
+			0, -- [1]
+			0, -- [2]
+			{
+				0, -- [1]
+				[0] = 0,
+				["alternatepower"] = 0,
+				[6] = 0,
+				[3] = 0,
+			}, -- [3]
+			{
+				["buff_uptime"] = 0,
+				["ress"] = 0,
+				["dead"] = 0,
+				["cc_break"] = 0,
+				["interrupt"] = 0,
+				["debuff_uptime"] = 0,
+				["dispell"] = 0,
+				["cooldowns_defensive"] = 0,
+			}, -- [4]
+		},
+	},
+	["on_death_menu"] = true,
+	["force_font_outline"] = "",
+	["character_data"] = {
+		["logons"] = 1100,
+	},
+	["announce_cooldowns"] = {
 		["ignored_cooldowns"] = {
 		},
+		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},

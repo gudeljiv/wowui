@@ -4,6 +4,7 @@ VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 /cast Cleave
 /cast Bloodrage
 /cast Overpower
+/cast Execute
 /cast Revenge
 END
 VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
@@ -42,11 +43,20 @@ VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 /startattack
 /cast Heroic Strike
 /cast Bloodrage
-/cast Overpower
+cast [nostance:1]Overpower
+/cast Execute
 /cast Revenge
 END
 VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Taunt
 /startattack
 /cast [@mouseover, exists][@target, exists][] Taunt
+END
+VER 3 0000000001000009 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [stance:1]Defensive Stance
+/cast [stance:2]Battle Stance
+/eq Battle Slayer of the Monkey
+/eq [stance:2]Wingblade
+/eq [stance:2]Cobalt Buckler
 END

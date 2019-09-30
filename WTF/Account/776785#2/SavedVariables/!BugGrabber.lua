@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 178,
 	["lastSanitation"] = 3,
-	["session"] = 167,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVerminz\\buffs.lua:158: Usage: hooksecurefunc([table,] \"function\", hookfunc)",
@@ -92,19 +92,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [11]
 		{
-			["message"] = "(null)",
-			["time"] = "2019/09/29 17:23:09",
-			["session"] = 131,
-			["counter"] = 12,
-		}, -- [12]
-		{
 			["message"] = "[string \"(UnitCanAttack(\"player\",\"target\") and not UnitIsDeadOrGhost(\"ta...\"]:1: syntax error near '<eof>'",
 			["time"] = "2019/09/29 20:50:55",
 			["locals"] = "(*temporary) = \"(UnitCanAttack(\"player\",\"target\") and not UnitIsDeadOrGhost(\"target\"))\"\n",
 			["stack"] = "[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4609: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4270: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4306: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 144,
 			["counter"] = 1,
-		}, -- [13]
+		}, -- [12]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVerminz' tried to call the protected function 'TargetFrameToT:Show()'.",
 			["time"] = "2019/09/29 17:18:47",
@@ -112,6 +106,26 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Show'\nInterface\\FrameXML\\TargetFrame.lua:910: in function <Interface\\FrameXML\\TargetFrame.lua:905>\n[C]: in function `TargetofTarget_Update'\nInterface\\FrameXML\\TargetFrame.lua:109: in function <Interface\\FrameXML\\TargetFrame.lua:99>\n[C]: in function `TargetFrame_Update'\nInterface\\FrameXML\\TargetFrame.lua:150: in function <Interface\\FrameXML\\TargetFrame.lua:142>\n[C]: in function `CameraOrSelectOrMoveStop'\n[string \"CAMERAORSELECTORMOVE\"]:4: in function <[string \"CAMERAORSELECTORMOVE\"]:1>",
 			["session"] = 163,
 			["counter"] = 10,
+		}, -- [13]
+		{
+			["message"] = "Error loading Interface\\AddOns\\Postal\\locales\\esMX-Spanish (Latin American).lua",
+			["time"] = "2019/09/30 17:15:07",
+			["session"] = 170,
+			["counter"] = 12,
 		}, -- [14]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\chat-Chat.lua:243: Attempt to find 'this' in non-table object (used '.' instead of ':' ?)",
+			["time"] = "2019/09/30 17:40:56",
+			["locals"] = "(*temporary) = \"UPDATE_CHAT_WINDOWS\"\n",
+			["stack"] = "[C]: in function `RegisterEvent'\nInterface\\AddOns\\xVerminz\\chat-Chat.lua:243: in main chunk",
+			["session"] = 172,
+			["counter"] = 1,
+		}, -- [15]
+		{
+			["message"] = "(null)",
+			["session"] = 172,
+			["time"] = "2019/09/29 17:23:09",
+			["counter"] = 15,
+		}, -- [16]
 	},
 }

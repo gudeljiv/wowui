@@ -1,170 +1,17 @@
 
-Postal3DB = {
+Postal3ClassicDB = {
 	["profileKeys"] = {
-		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
-		["Blooq - Genesis"] = "Blooq - Genesis",
-		["Tukac - Genesis"] = "DEFAULT",
-		["Korupcija - Genesis"] = "Korupcija - Genesis",
 		["Verminz - Golemagg"] = "Verminz - Golemagg",
-		["Gheylord - Dreadmist"] = "Gheylord - Dreadmist",
-		["Pepecocorita - Genesis"] = "Pepecocorita - Genesis",
-		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
-		["Mulatz - Genesis"] = "Mulatz - Genesis",
-		["Spija - Genesis"] = "Spija - Genesis",
-		["Handrmandr - Genesis"] = "DEFAULT",
-		["Vermins - Stonespine"] = "Vermins - Stonespine",
-		["Verminz - Genesis"] = "DEFAULT",
-		["Vermins - Dreadmist"] = "Vermins - Dreadmist",
-		["Elohssa - Stonespine"] = "Elohssa - Stonespine",
-		["Pitchwise - Golemagg"] = "Pitchwise - Golemagg",
-		["Pitchwise - Genesis"] = "Pitchwise - Genesis",
-		["Vermin - Golemagg"] = "Vermin - Golemagg",
-		["Paydo - Dreadmist"] = "Paydo - Dreadmist",
-		["Konza - Genesis"] = "Konza - Genesis",
-		["Judawise - Golemagg"] = "Judawise - Golemagg",
-		["Korupcija - Stonespine"] = "Korupcija - Stonespine",
-		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
-		["Ozrencic - Golemagg"] = "Ozrencic - Golemagg",
-		["Whatevs - Stonespine"] = "Whatevs - Stonespine",
 	},
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
-				"Babajagaa|Grim Batol|Alliance|9|WARLOCK", -- [1]
-				"Babyfinger|Grim Batol|Neutral|8|WARRIOR", -- [2]
-				"Battitude|Dentarg|Horde|62|ROGUE", -- [3]
-				"Bbqt|Ragnaros|Horde|1|HUNTER", -- [4]
-				"Blooq|Genesis|Horde|10|WARLOCK", -- [5]
-				"Dotwise|Golemagg|Horde|3|WARLOCK", -- [6]
-				"Elohssa|Stonespine|Horde|1|HUNTER", -- [7]
-				"Gheylord|Dreadmist|Horde|1|WARLOCK", -- [8]
-				"Govance|Dentarg|Horde|10|MAGE", -- [9]
-				"Greenwise|Golemagg|Horde|1|HUNTER", -- [10]
-				"Handrmandr|Dentarg|Horde|90|MONK", -- [11]
-				"Handrmandr|Genesis|Horde|13|MONK", -- [12]
-				"Handrmandr|Grim Batol|Alliance|1|PALADIN", -- [13]
-				"Handrmandr|Outland|Horde|27|MONK", -- [14]
-				"Handrmandr|Ragnaros|Horde|30|MONK", -- [15]
-				"Izlijesa|Ragnaros|Horde|55|DEATHKNIGHT", -- [16]
-				"Judawise|Golemagg|Horde|1|PRIEST", -- [17]
-				"Klanac|Grim Batol|Alliance|15|HUNTER", -- [18]
-				"Konza|Dentarg|Horde|90|DEATHKNIGHT", -- [19]
-				"Konza|Genesis|Horde|64|DEATHKNIGHT", -- [20]
-				"Korupcija|Dentarg|Horde|90|PALADIN", -- [21]
-				"Korupcija|Genesis|Horde|25|PALADIN", -- [22]
-				"Korupcija|Ragnaros|Horde|59|PALADIN", -- [23]
-				"Korupcija|Stonespine|Horde|9|WARLOCK", -- [24]
-				"Kosturko|Golemagg|Horde|1|PRIEST", -- [25]
-				"Kostur|Dentarg|Horde|90|PRIEST", -- [26]
-				"Krndija|Dentarg|Horde|13|HUNTER", -- [27]
-				"Kurcoglavi|Grim Batol|Alliance|11|HUNTER", -- [28]
-				"Latica|Talnivarr|Horde|81|DEATHKNIGHT", -- [29]
-				"Leru|Grim Batol|Alliance|60|DEATHKNIGHT", -- [30]
-				"Ljut|Ragnaros|Horde|55|DEATHKNIGHT", -- [31]
-				"Mulac|Dentarg|Horde|90|DRUID", -- [32]
-				"Mulatz|Genesis|Horde|90|DRUID", -- [33]
-				"Ozrencic|Golemagg|Horde|1|WARRIOR", -- [34]
-				"Paydo|Dreadmist|Horde|4|WARRIOR", -- [35]
-				"Pepecocorita|Genesis|Horde|23|PRIEST", -- [36]
-				"Pitchwise|Dentarg|Horde|90|SHAMAN", -- [37]
-				"Pitchwise|Genesis|Horde|1|SHAMAN", -- [38]
-				"Pitchwise|Golemagg|Horde|1|SHAMAN", -- [39]
-				"Roxorz|Outland|Horde|55|DEATHKNIGHT", -- [40]
-				"Snpr|Grim Batol|Alliance|7|HUNTER", -- [41]
-				"Spija|Genesis|Alliance|1|PRIEST", -- [42]
-				"Tsimtsum|Dentarg|Horde|1|MAGE", -- [43]
-				"Tsimtsum|Outland|Horde|55|DEATHKNIGHT", -- [44]
-				"Tsimtsum|Ragnaros|Horde|58|DEATHKNIGHT", -- [45]
-				"Tukac|Genesis|Horde|90|HUNTER", -- [46]
-				"Tuka|Dentarg|Horde|90|HUNTER", -- [47]
-				"Vermindrei|Talnivarr|Horde|72|DRUID", -- [48]
-				"Vermins|Dentarg|Horde|90|WARRIOR", -- [49]
-				"Vermins|Dreadmist|Horde|6|WARRIOR", -- [50]
-				"Vermins|Grim Batol|Neutral|1|WARRIOR", -- [51]
-				"Vermins|Stonespine|Horde|2|WARRIOR", -- [52]
-				"Verminz|Genesis|Horde|90|WARRIOR", -- [53]
-				"Verminz|Golemagg|Horde|26|WARRIOR", -- [54]
-				"Vermin|Golemagg|Horde|6|WARRIOR", -- [55]
-				"Verson|Dentarg|Horde|89|WARLOCK", -- [56]
-				"Whatevs|Stonespine|Horde|1|WARRIOR", -- [57]
-				"Yacaya|Talnivarr|Horde|81|PALADIN", -- [58]
+				"Verminz|Golemagg|Horde|26|WARRIOR", -- [1]
 			},
 		},
 	},
 	["profiles"] = {
-		["Dotwise - Golemagg"] = {
-		},
-		["Blooq - Genesis"] = {
-		},
-		["Korupcija - Genesis"] = {
-		},
 		["Verminz - Golemagg"] = {
-		},
-		["Gheylord - Dreadmist"] = {
-		},
-		["Paydo - Dreadmist"] = {
-		},
-		["Kosturko - Golemagg"] = {
-		},
-		["Mulatz - Genesis"] = {
-			["OpenSpeed"] = 0.3,
-			["BlackBook"] = {
-				["recent"] = {
-					"Verminz|Genesis|Horde", -- [1]
-					"Malinac|Genesis|Horde", -- [2]
-					"Handrmandr|Genesis|Horde", -- [3]
-				},
-			},
-		},
-		["Spija - Genesis"] = {
-		},
-		["Vermins - Stonespine"] = {
-		},
-		["Elohssa - Stonespine"] = {
-		},
-		["Vermins - Dreadmist"] = {
-		},
-		["Pitchwise - Golemagg"] = {
-		},
-		["Konza - Genesis"] = {
-		},
-		["Vermin - Golemagg"] = {
-		},
-		["Pitchwise - Genesis"] = {
-		},
-		["DEFAULT"] = {
-			["BlackBook"] = {
-				["recent"] = {
-					"Malinac|Genesis|Horde", -- [1]
-					"Pepecocorita|Genesis|Horde", -- [2]
-					"Mulatz|Genesis|Horde", -- [3]
-					"Eline-Genesis|Genesis|Horde", -- [4]
-					"Tukac|Genesis|Horde", -- [5]
-					"Verminz|Genesis|Horde", -- [6]
-					"Blackkobra|Genesis|Horde", -- [7]
-					"Handrmandr|Genesis|Horde", -- [8]
-					"Zelenasmrt-Genesis|Genesis|Horde", -- [9]
-					"nacova|Genesis|Horde", -- [10]
-					"Korupcija|Genesis|Horde", -- [11]
-				},
-				["DisableBlizzardAutoComplete"] = true,
-			},
-			["OpenAll"] = {
-				["KeepFreeSpace"] = 2,
-			},
-			["OpenSpeed"] = 0.3,
-		},
-		["Pepecocorita - Genesis"] = {
-		},
-		["Judawise - Golemagg"] = {
-		},
-		["Korupcija - Stonespine"] = {
-		},
-		["Greenwise - Golemagg"] = {
-		},
-		["Ozrencic - Golemagg"] = {
-		},
-		["Whatevs - Stonespine"] = {
 		},
 	},
 }
