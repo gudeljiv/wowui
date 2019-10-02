@@ -43,6 +43,7 @@
 - [RealMobHealth](https://www.wowinterface.com/downloads/info24924-RealMobHealth.html)
 - [SharedMedia](https://www.curseforge.com/wow/addons/sharedmedia)
 - [TellMeWhen](https://www.wowinterface.com/downloads/info25152-TellMeWhenClassic.html)
+- [TomTom](https://www.wowinterface.com/downloads/info7032-TomTom.html)
 - [TradeSkillMaster](https://www.tradeskillmaster.com/)
 - [UnitFramesImproved](https://www.wowisclassic.com/en/addons/unitframesimproved/)
 - xVerminz (my set of scripts)
