@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 214,
 	["lastSanitation"] = 3,
-	["session"] = 203,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:62: '<eof>' expected near 'end'",
@@ -35,5 +35,37 @@ BugGrabberDB = {
 			["session"] = 203,
 			["counter"] = 1,
 		}, -- [4]
+		{
+			["message"] = "[string \"print(UnitGroupRolesAssigned(\"player\"))\"]:1: attempt to call global 'UnitGroupRolesAssigned' (a nil value)",
+			["time"] = "2019/10/02 18:32:32",
+			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = nil\n(*temporary) = \"player\"\n(*temporary) = \"attempt to call global 'UnitGroupRolesAssigned' (a nil value)\"\n",
+			["stack"] = "[string \"print(UnitGroupRolesAssigned(\"player\"))\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4609: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4270: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4306: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 208,
+			["counter"] = 1,
+		}, -- [5]
+		{
+			["message"] = "[string \"print(UnitGroupRolesAssigned(\"target\"))\"]:1: attempt to call global 'UnitGroupRolesAssigned' (a nil value)",
+			["time"] = "2019/10/02 18:32:40",
+			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = nil\n(*temporary) = \"target\"\n(*temporary) = \"attempt to call global 'UnitGroupRolesAssigned' (a nil value)\"\n",
+			["stack"] = "[string \"print(UnitGroupRolesAssigned(\"target\"))\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4609: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4270: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4306: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 208,
+			["counter"] = 1,
+		}, -- [6]
+		{
+			["message"] = "[string \"print(UnitGroupRolesAssigned(target))\"]:1: attempt to call global 'UnitGroupRolesAssigned' (a nil value)",
+			["time"] = "2019/10/02 18:32:48",
+			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to call global 'UnitGroupRolesAssigned' (a nil value)\"\n",
+			["stack"] = "[string \"print(UnitGroupRolesAssigned(target))\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4609: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4270: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4306: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 208,
+			["counter"] = 1,
+		}, -- [7]
+		{
+			["message"] = "Interface\\AddOns\\nTooltip\\core.lua:206: attempt to call global 'UnitGroupRolesAssigned' (a nil value)",
+			["time"] = "2019/10/02 18:27:39",
+			["locals"] = "unit = \"player\"\n(*temporary) = nil\n(*temporary) = \"player\"\n(*temporary) = \"attempt to call global 'UnitGroupRolesAssigned' (a nil value)\"\ntankIcon = \"|TInterface\\LFGFrame\\UI-LFG-ICON-PORTRAITROLES.blp:13:13:0:0:64:64:0:19:22:41|t\"\nhealIcon = \"|TInterface\\LFGFrame\\UI-LFG-ICON-PORTRAITROLES.blp:13:13:0:0:64:64:20:39:1:20|t\"\ndamagerIcon = \"|TInterface\\LFGFrame\\UI-LFG-ICON-PORTRAITROLES.blp:13:13:0:0:64:64:20:39:22:41|t\"\n",
+			["stack"] = "Interface\\AddOns\\nTooltip\\core.lua:206: in function <Interface\\AddOns\\nTooltip\\core.lua:205>\nInterface\\AddOns\\nTooltip\\core.lua:337: in function <Interface\\AddOns\\nTooltip\\core.lua:295>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function `SetUnit'\nInterface\\FrameXML\\UnitFrame.lua:291: in function `UnitFrame_UpdateTooltip'\nInterface\\FrameXML\\UnitFrame.lua:277: in function <Interface\\FrameXML\\UnitFrame.lua:264>",
+			["session"] = 208,
+			["counter"] = 14,
+		}, -- [8]
 	},
 }

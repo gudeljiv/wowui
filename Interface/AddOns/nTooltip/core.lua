@@ -83,6 +83,8 @@ local function ApplyTooltipStyle(self)
             self:CreateBeautyBorder(12)
         end
     end
+
+
 end
 
 for _, tooltip in pairs({
@@ -123,7 +125,6 @@ if cfg.itemqualityBorderColor then
     for _, tooltip in pairs({
         GameTooltip,
         ItemRefTooltip,
-
         ShoppingTooltip1,
         ShoppingTooltip2,
         ShoppingTooltip3,
@@ -255,13 +256,15 @@ local function GetUnitPVPIcon(unit)
         if cfg.showPVPIcons then
             return CreateTextureMarkup([[Interface\AddOns\nTooltip\media\UI-PVP-FFA]], 32,32, 16,16, 0,1,0,1, -2,-1)
         else
-            return "|cffFF0000# |r"
+            -- return "|cffFF0000# |r"
+            return ""
         end
     elseif factionGroup and UnitIsPVP(unit) then
         if cfg.showPVPIcons then
             return CreateTextureMarkup([[Interface\AddOns\nTooltip\media\UI-PVP-]]..factionGroup, 32,32, 14,14, 0,1,0,1, -2,-1)
         else
-            return "|cff00FF00# |r"
+            -- return "|cff00FF00# |r"
+            return ""
         end
     else
         return ""
@@ -377,7 +380,7 @@ GameTooltip:HookScript("OnTooltipSetUnit", function(self, ...)
             -- Move the healthbar inside the tooltip
 
         if GameTooltipStatusBar:IsShown() then
-            self:AddLine(" ")
+            self:AddLine("                         ") -- min width empty spaces :)
             GameTooltipStatusBar:ClearAllPoints()
             GameTooltipStatusBar:SetPoint("LEFT", self:GetName().."TextLeft"..self:NumLines(), 1, -3)
             GameTooltipStatusBar:SetPoint("RIGHT", self, -10, 0)
@@ -430,7 +433,7 @@ end
 
 local function CreateAnchor()
     local anchorFrame = CreateFrame("Frame", "nTooltip_Anchor", UIParent)
-    anchorFrame:SetSize(250, 50)
+    anchorFrame:SetSize(50, 50)
     anchorFrame:SetScale(1.2)
     anchorFrame:SetPoint(unpack(cfg.position))
     anchorFrame:SetFrameStrata("HIGH")

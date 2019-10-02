@@ -1,6 +1,6 @@
 
 AptechkaDB_Global = {
-	["showSolo"] = false,
+	["healthOrientation"] = "HORIZONTAL",
 	["nameFontName"] = "Accidental Presidency",
 	["disableTooltip"] = true,
 	["healthTexture"] = "Glamour2",
@@ -11,7 +11,7 @@ AptechkaDB_Global = {
 	["charspec"] = {
 	},
 	["useDebuffOrdering"] = false,
-	["cropNamesLen"] = 15,
+	["debuffSize"] = 16,
 	["showAFK"] = true,
 	["groupGrowth"] = "BOTTOM",
 	["width"] = 100,
@@ -22,11 +22,11 @@ AptechkaDB_Global = {
 			["point"] = "CENTER",
 		}, -- [1]
 	},
-	["healthOrientation"] = "HORIZONTAL",
-	["nameFontSize"] = 16,
-	["debuffSize"] = 16,
-	["unitGrowth"] = "BOTTOM",
+	["showSolo"] = false,
 	["fgColorMultiplier"] = 0,
+	["cropNamesLen"] = 15,
+	["nameFontSize"] = 16,
+	["unitGrowth"] = "BOTTOM",
 }
 AptechkaConfigCustom = {
 	["HUNTER"] = {
