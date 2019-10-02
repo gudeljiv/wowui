@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 214,
 	["lastSanitation"] = 3,
+	["session"] = 217,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:62: '<eof>' expected near 'end'",
@@ -20,29 +20,13 @@ BugGrabberDB = {
 			["counter"] = 4,
 		}, -- [2]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVerminz' tried to call the protected function 'TargetFrameToT:Show()'.",
-			["time"] = "2019/09/30 21:16:47",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Show'\nInterface\\FrameXML\\TargetFrame.lua:910: in function <Interface\\FrameXML\\TargetFrame.lua:905>\n[C]: ?\n[C]: ?\n[C]: in function `TargetofTarget_Update'\nInterface\\FrameXML\\TargetFrame.lua:420: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[C]: ?",
-			["session"] = 200,
-			["counter"] = 1,
-		}, -- [3]
-		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn '!Colorz' tried to call the protected function 'CompactRaidFrame2:ClearAllPoints()'.",
-			["time"] = "2019/10/02 12:16:33",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `ClearAllPoints'\nInterface\\FrameXML\\FlowContainer.lua:157: in function `FlowContainer_DoLayout'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:69: in function `CompactRaidFrameContainer_OnSizeChanged'\n[string \"*:OnSizeChanged\"]:1: in function <[string \"*:OnSizeChanged\"]:1>\n[C]: in function `?'\nInterface\\FrameXML\\FlowContainer.lua:133: in function `FlowContainer_DoLayout'\nInterface\\FrameXML\\FlowContainer.lua:17: in function `FlowContainer_ResumeUpdates'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:185: in function `CompactRaidFrameContainer_LayoutFrames'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:130: in function `CompactRaidFrameContainer_TryUpdate'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:57: in function `CompactRaidFrameContainer_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
-			["session"] = 203,
-			["counter"] = 1,
-		}, -- [4]
-		{
 			["message"] = "[string \"print(UnitGroupRolesAssigned(\"player\"))\"]:1: attempt to call global 'UnitGroupRolesAssigned' (a nil value)",
 			["time"] = "2019/10/02 18:32:32",
 			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = nil\n(*temporary) = \"player\"\n(*temporary) = \"attempt to call global 'UnitGroupRolesAssigned' (a nil value)\"\n",
 			["stack"] = "[string \"print(UnitGroupRolesAssigned(\"player\"))\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4609: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4270: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4306: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 208,
 			["counter"] = 1,
-		}, -- [5]
+		}, -- [3]
 		{
 			["message"] = "[string \"print(UnitGroupRolesAssigned(\"target\"))\"]:1: attempt to call global 'UnitGroupRolesAssigned' (a nil value)",
 			["time"] = "2019/10/02 18:32:40",
@@ -50,7 +34,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"print(UnitGroupRolesAssigned(\"target\"))\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4609: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4270: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4306: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 208,
 			["counter"] = 1,
-		}, -- [6]
+		}, -- [4]
 		{
 			["message"] = "[string \"print(UnitGroupRolesAssigned(target))\"]:1: attempt to call global 'UnitGroupRolesAssigned' (a nil value)",
 			["time"] = "2019/10/02 18:32:48",
@@ -58,7 +42,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"print(UnitGroupRolesAssigned(target))\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4609: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4270: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4306: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 208,
 			["counter"] = 1,
-		}, -- [7]
+		}, -- [5]
 		{
 			["message"] = "Interface\\AddOns\\nTooltip\\core.lua:206: attempt to call global 'UnitGroupRolesAssigned' (a nil value)",
 			["time"] = "2019/10/02 18:27:39",
@@ -66,6 +50,29 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\nTooltip\\core.lua:206: in function <Interface\\AddOns\\nTooltip\\core.lua:205>\nInterface\\AddOns\\nTooltip\\core.lua:337: in function <Interface\\AddOns\\nTooltip\\core.lua:295>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function `SetUnit'\nInterface\\FrameXML\\UnitFrame.lua:291: in function `UnitFrame_UpdateTooltip'\nInterface\\FrameXML\\UnitFrame.lua:277: in function <Interface\\FrameXML\\UnitFrame.lua:264>",
 			["session"] = 208,
 			["counter"] = 14,
+		}, -- [6]
+		{
+			["message"] = "Interface\\AddOns\\TomTom\\TomTom_CrazyArrow.lua:289: <unnamed>:SetScale(): Scale must be > 0",
+			["time"] = "2019/10/02 19:41:43",
+			["stack"] = "[C]: in function `SetScale'\nInterface\\AddOns\\TomTom\\TomTom_CrazyArrow.lua:289: in function `ShowHideCrazyArrow'\nInterface\\AddOns\\TomTom\\TomTom_Config.lua:38: in function <Interface\\AddOns\\TomTom\\TomTom_Config.lua:20>\n[C]: ?\n...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0-78.lua:51: in function <...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0.lua:49>\n...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0-78.lua:843: in function <...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0.lua:664>\n...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0-78.lua:895: in function <...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0.lua:883>\n[C]: ?\n...assicCastbars_Options\\Libs\\AceGUI-3.0\\AceGUI-3.0-40.lua:72: in function <...assicCastbars_Options\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:70>\n...assicCastbars_Options\\Libs\\AceGUI-3.0\\AceGUI-3.0-40.lua:290: in function `Fire'\n...eBar\\libs\\AceGUI-3.0-40\\widgets\\AceGUIWidget-Slider.lua:69: in function <...eBar\\libs\\AceGUI-3.0\\widgets\\AceGUIWidget-Slider.lua:60>",
+			["session"] = 216,
+			["counter"] = 3,
+		}, -- [7]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVerminz' tried to call the protected function 'TargetFrameToT:Show()'.",
+			["time"] = "2019/09/30 21:16:47",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Show'\nInterface\\FrameXML\\TargetFrame.lua:910: in function <Interface\\FrameXML\\TargetFrame.lua:905>\n[C]: ?\n[C]: ?\n[C]: in function `TargetofTarget_Update'\nInterface\\FrameXML\\TargetFrame.lua:420: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[C]: ?",
+			["session"] = 216,
+			["counter"] = 2,
 		}, -- [8]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn '!Colorz' tried to call the protected function 'CompactRaidFrame2:ClearAllPoints()'.",
+			["time"] = "2019/10/02 12:16:33",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `ClearAllPoints'\nInterface\\FrameXML\\FlowContainer.lua:157: in function `FlowContainer_DoLayout'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:69: in function `CompactRaidFrameContainer_OnSizeChanged'\n[string \"*:OnSizeChanged\"]:1: in function <[string \"*:OnSizeChanged\"]:1>\n[C]: in function `?'\nInterface\\FrameXML\\FlowContainer.lua:133: in function `FlowContainer_DoLayout'\nInterface\\FrameXML\\FlowContainer.lua:17: in function `FlowContainer_ResumeUpdates'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:185: in function `CompactRaidFrameContainer_LayoutFrames'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:130: in function `CompactRaidFrameContainer_TryUpdate'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:57: in function `CompactRaidFrameContainer_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
+			["session"] = 217,
+			["counter"] = 2,
+		}, -- [9]
 	},
 }
