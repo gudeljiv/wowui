@@ -1,11 +1,3 @@
-### 1.13.33
-
-- Arcane Brilliance duration is 60m now
-
-### 1.13.32
-
-- Shadow Weaving now refreshes on MF and SWP applications
-
 ### 1.13.31
 
 - Fixed Healing Way

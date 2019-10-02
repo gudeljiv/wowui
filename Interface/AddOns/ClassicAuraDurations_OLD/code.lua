@@ -544,11 +544,11 @@ f.EnemyBuffsTargetFrameHook = function(self)
                     duration = durationNew
                     expirationTime = expirationTimeNew
                 end
-				
-				-- we set alpha of color to swiper to 0... its a hide!
-				frameCooldown:SetSwipeColor(0, 0, 0, 0)
-				-- if last argument false then spark for cooldown swipe is not shown
-				CooldownFrame_Set(frameCooldown, expirationTime - duration, duration, duration > 0, false);
+                
+                -- we set alpha of color to swiper to 0... its a hide!
+                frameCooldown:SetSwipeColor(0, 0, 0, 0)
+                -- if last argument false then spark for cooldown swipe is not shown
+                CooldownFrame_Set(frameCooldown, expirationTime - duration, duration, duration > 0, false);
 
                 --[[ PORTRAIT AURA ]]
                 if db.portraitIcon then
@@ -632,11 +632,12 @@ f.EnemyBuffsTargetFrameHook = function(self)
                         duration = durationNew
                         expirationTime = expirationTimeNew
                     end
-				
-					-- we set alpha of color to swiper to 0... its a hide!
-					frameCooldown:SetSwipeColor(0, 0, 0, 0)
-					-- if last argument false then spark for cooldown swipe is not shown
-					CooldownFrame_Set(frameCooldown, expirationTime - duration, duration, duration > 0, false);					
+
+                    -- we set alpha of color to swiper to 0... its a hide!
+                    frameCooldown:SetSwipeColor(0, 0, 0, 0)
+                    -- if last argument false then spark for cooldown swipe is not shown
+                    CooldownFrame_Set(frameCooldown, expirationTime - duration, duration, duration > 0, false);
+
 
                     --[[ PORTRAIT AURA ]]
                     if db.portraitIcon then
