@@ -430,7 +430,7 @@ end
 
 local function CreateAnchor()
     local anchorFrame = CreateFrame("Frame", "nTooltip_Anchor", UIParent)
-    anchorFrame:SetSize(50, 50)
+    anchorFrame:SetSize(250, 50)
     anchorFrame:SetScale(1.2)
     anchorFrame:SetPoint(unpack(cfg.position))
     anchorFrame:SetFrameStrata("HIGH")

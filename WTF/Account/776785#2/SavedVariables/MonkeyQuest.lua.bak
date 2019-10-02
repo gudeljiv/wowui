@@ -8,20 +8,17 @@ MonkeyQuestConfig = {
 			["Ashenvale - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Warrior - true"] = {
-				["m_bChecked"] = false,
+			["Between a Rock and a Thistlefur - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Amongst the Ruins - false"] = {
+				["m_bChecked"] = true,
 			},
 			["A New Ore Sample - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Stonetalon Mountains - true"] = {
+			["Blackfathom Deeps - true"] = {
 				["m_bChecked"] = false,
-			},
-			["Stonetalon Standstill - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Je'neu of the Earthen Ring - false"] = {
-				["m_bChecked"] = true,
 			},
 			["The Barrens - true"] = {
 				["m_bChecked"] = false,
@@ -29,20 +26,20 @@ MonkeyQuestConfig = {
 			["Ordanus - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Warsong Supplies - false"] = {
+			["The Essence of Aku'Mai - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Brutal Armor - false"] = {
 				["m_bChecked"] = true,
 			},
-			["The Lost Pages - false"] = {
-				["m_bChecked"] = true,
+			["Warrior - true"] = {
+				["m_bChecked"] = false,
 			},
 			["Calling in the Reserves - false"] = {
 				["m_bChecked"] = true,
 			},
-			["The Befouled Element - false"] = {
-				["m_bChecked"] = true,
+			["Stonetalon Mountains - true"] = {
+				["m_bChecked"] = false,
 			},
 			["Razorfen Kraul - true"] = {
 				["m_bChecked"] = false,
@@ -406,6 +403,29 @@ MonkeyQuestConfig = {
 			},
 		},
 	},
+	["Dreadmist|Paydo"] = {
+		["m_aQuestList"] = {
+			["Cutting Teeth - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Vile Familiars - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Sarkoth - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Lazy Peons - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Valley of Trials - true"] = {
+				["m_bChecked"] = true,
+			},
+		},
+	},
+	["Golemagg|Judawise"] = {
+		["m_aQuestList"] = {
+		},
+	},
 	["Dreadmist|Vermins"] = {
 		["m_iFont"] = 0,
 		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
@@ -423,19 +443,19 @@ MonkeyQuestConfig = {
 		["m_bShowZoneHighlight"] = true,
 		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
 		["m_aQuestList"] = {
-			["Durotar - true"] = {
+			["Break a Few Eggs - false"] = {
 				["m_bChecked"] = true,
 			},
 			["From The Wreckage.... - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Break a Few Eggs - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Encroachment - false"] = {
+			["Durotar - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Vanquish the Betrayers - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Encroachment - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -472,30 +492,7 @@ MonkeyQuestConfig = {
 		["m_bAlwaysHeaders"] = false,
 		["m_bGrowUp"] = false,
 	},
-	["Golemagg|Judawise"] = {
-		["m_aQuestList"] = {
-		},
-	},
-	["Dreadmist|Paydo"] = {
-		["m_aQuestList"] = {
-			["Cutting Teeth - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Vile Familiars - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Sarkoth - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Lazy Peons - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Valley of Trials - true"] = {
-				["m_bChecked"] = true,
-			},
-		},
-	},
-	["Genesis|Lonatz"] = {
+	["Genesis|Spija"] = {
 		["m_iFont"] = 0,
 		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
 		["m_strSpecialObjectiveColour"] = "|cFFFFFF00",
@@ -574,7 +571,7 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = true,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 824.899719238281,
+		["m_iFrameBottom"] = 811.56640625,
 		["m_bHideTitleButtons"] = false,
 		["m_iFrameLeft"] = 1670.73352050781,
 		["m_bColourDoneOrFailed"] = true,
@@ -973,13 +970,13 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Vermin"] = {
 		["m_aQuestList"] = {
-			["Minshina's Skull - false"] = {
+			["Zalazane - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Thwarting Kolkar Aggression - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Durotar - true"] = {
+			["Minshina's Skull - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Practical Prey - false"] = {
@@ -988,7 +985,7 @@ MonkeyQuestConfig = {
 			["Report to Orgnil - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Zalazane - false"] = {
+			["Durotar - true"] = {
 				["m_bChecked"] = true,
 			},
 			["A Peon's Burden - false"] = {
@@ -1003,7 +1000,7 @@ MonkeyQuestConfig = {
 		["m_aQuestList"] = {
 		},
 	},
-	["Genesis|Spija"] = {
+	["Genesis|Lonatz"] = {
 		["m_iFont"] = 0,
 		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
 		["m_strSpecialObjectiveColour"] = "|cFFFFFF00",
