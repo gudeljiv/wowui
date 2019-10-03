@@ -293,23 +293,22 @@ addon_data.player.UpdateVisualsOnSettingsChange = function()
     local settings = character_player_settings
     if settings.enabled then
         frame:Show()
-        frame:CreateBeautyBorder(4)
         frame:ClearAllPoints()
         frame:SetPoint(settings.point, UIParent, settings.rel_point, settings.x_offset, settings.y_offset)
         frame:SetWidth(settings.width)
         if settings.show_border then
-        --     frame.backplane:SetBackdrop({
-        --         bgFile = "Interface/AddOns/WeaponSwingTimer/Images/Background", 
-        --         edgeFile = "Interface/AddOns/WeaponSwingTimer/Images/Border", 
-        --         tile = true, tileSize = 16, edgeSize = 12, 
-        --         insets = { left = 8, right = 8, top = 8, bottom = 8}})
-        -- else
+            frame.backplane:SetBackdrop({
+                bgFile = "Interface/AddOns/WeaponSwingTimer/Images/Background", 
+                edgeFile = "Interface/AddOns/WeaponSwingTimer/Images/Border", 
+                tile = true, tileSize = 16, edgeSize = 12, 
+                insets = { left = 8, right = 8, top = 8, bottom = 8}})
+        else
             frame.backplane:SetBackdrop({
                 bgFile = "Interface/AddOns/WeaponSwingTimer/Images/Background", 
                 edgeFile = nil, 
                 tile = true, tileSize = 16, edgeSize = 16, 
                 insets = { left = 8, right = 8, top = 8, bottom = 8}})
-        -- end
+        end
         frame.backplane:SetBackdropColor(0,0,0,settings.backplane_alpha)
         frame.main_bar:SetPoint("TOPLEFT", 0, 0)
         frame.main_bar:SetHeight(settings.height)

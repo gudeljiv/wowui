@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 234,
 	["lastSanitation"] = 3,
-	["session"] = 229,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:62: '<eof>' expected near 'end'",
@@ -59,21 +59,13 @@ BugGrabberDB = {
 			["counter"] = 3,
 		}, -- [7]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVerminz' tried to call the protected function 'TargetFrameToT:Show()'.",
-			["time"] = "2019/09/30 21:16:47",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Show'\nInterface\\FrameXML\\TargetFrame.lua:910: in function <Interface\\FrameXML\\TargetFrame.lua:905>\n[C]: ?\n[C]: ?\n[C]: in function `TargetofTarget_Update'\nInterface\\FrameXML\\TargetFrame.lua:420: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[C]: ?",
-			["session"] = 216,
-			["counter"] = 2,
-		}, -- [8]
-		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn '!Colorz' tried to call the protected function 'CompactRaidFrame2:ClearAllPoints()'.",
 			["time"] = "2019/10/02 12:16:33",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `ClearAllPoints'\nInterface\\FrameXML\\FlowContainer.lua:157: in function `FlowContainer_DoLayout'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:69: in function `CompactRaidFrameContainer_OnSizeChanged'\n[string \"*:OnSizeChanged\"]:1: in function <[string \"*:OnSizeChanged\"]:1>\n[C]: in function `?'\nInterface\\FrameXML\\FlowContainer.lua:133: in function `FlowContainer_DoLayout'\nInterface\\FrameXML\\FlowContainer.lua:17: in function `FlowContainer_ResumeUpdates'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:185: in function `CompactRaidFrameContainer_LayoutFrames'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:130: in function `CompactRaidFrameContainer_TryUpdate'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:57: in function `CompactRaidFrameContainer_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
 			["session"] = 217,
 			["counter"] = 2,
-		}, -- [9]
+		}, -- [8]
 		{
 			["message"] = "Interface\\AddOns\\nMainbar\\modules\\hotkey.lua:8: bad argument #2 to 'gsub' (string expected, got nil)",
 			["time"] = "2019/10/03 16:57:10",
@@ -81,7 +73,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: ?\nInterface\\AddOns\\nMainbar\\modules\\hotkey.lua:8: in function <Interface\\AddOns\\nMainbar\\modules\\hotkey.lua:4>\n[C]: in function `ActionButton_UpdateHotkeys'\nInterface\\FrameXML\\ActionButton.lua:711: in function `ActionButton_OnEvent'\nInterface\\FrameXML\\ActionButton.lua:207: in function <Interface\\FrameXML\\ActionButton.lua:204>\n[C]: in function `SetBinding'\nInterface\\AddOns\\xVerminz\\Bindings.lua:5: in function `FixBindings'\nInterface\\AddOns\\xVerminz\\Bindings.lua:124: in main chunk",
 			["session"] = 225,
 			["counter"] = 12,
-		}, -- [10]
+		}, -- [9]
 		{
 			["message"] = "...Details\\Libs\\DF\\Details-Framework-Classic\\slider.lua:816: Details! Framework: OnSwitch() -NONAME- error: ...nterface\\AddOns\\Details\\classes\\classe_instancia.lua:935: DetailsBaseFrame1:SetPoint(): DetailsBaseFrame2 is dependent on this",
 			["time"] = "2019/10/03 17:07:08",
@@ -89,7 +81,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `error'\n...Details\\Libs\\DF\\Details-Framework-Classic\\slider.lua:816: in function <...Details\\Libs\\DF\\Details-Framework-Classic\\slider.lua:763>",
 			["session"] = 226,
 			["counter"] = 2,
-		}, -- [11]
+		}, -- [10]
 		{
 			["message"] = "...nterface\\AddOns\\Details\\classes\\classe_instancia.lua:935: DetailsBaseFrame1:SetPoint(): DetailsBaseFrame2 is dependent on this",
 			["time"] = "2019/10/03 17:07:22",
@@ -97,7 +89,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `SetPoint'\n...nterface\\AddOns\\Details\\classes\\classe_instancia.lua:935: in function `BaseFrameSnap'\nInterface\\AddOns\\Details\\gumps\\janela_principal.lua:787: in function <Interface\\AddOns\\Details\\gumps\\janela_principal.lua:772>\nInterface\\AddOns\\Details\\gumps\\janela_principal.lua:1060: in function <Interface\\AddOns\\Details\\gumps\\janela_principal.lua:1047>",
 			["session"] = 226,
 			["counter"] = 1,
-		}, -- [12]
+		}, -- [11]
 		{
 			["message"] = "...\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Player.lua:315: attempt to call method 'CreateBeautyBorder' (a nil value)",
 			["time"] = "2019/10/03 21:08:15",
@@ -105,7 +97,7 @@ BugGrabberDB = {
 			["stack"] = "...\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Player.lua:315: in function `UpdateVisualsOnSettingsChange'\n...\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Player.lua:444: in function `InitializeVisuals'\n...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:542: in function <...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:541>\n...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:662: in function <...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:644>\n...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:673: in function <...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:669>",
 			["session"] = 228,
 			["counter"] = 1,
-		}, -- [13]
+		}, -- [12]
 		{
 			["message"] = "...\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Target.lua:313: attempt to index local 'frame' (a nil value)",
 			["time"] = "2019/10/03 21:08:19",
@@ -113,6 +105,46 @@ BugGrabberDB = {
 			["stack"] = "...\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Target.lua:313: in function `UpdateVisualsOnUpdate'\n...\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Target.lua:125: in function `OnUpdate'\n...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:576: in function <...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:574>",
 			["session"] = 228,
 			["counter"] = 279,
+		}, -- [13]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVerminz' tried to call the protected function 'TargetFrameToT:Show()'.",
+			["time"] = "2019/09/30 21:16:47",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Show'\nInterface\\FrameXML\\TargetFrame.lua:910: in function <Interface\\FrameXML\\TargetFrame.lua:905>\n[C]: ?\n[C]: ?\n[C]: in function `TargetofTarget_Update'\nInterface\\FrameXML\\TargetFrame.lua:420: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[C]: ?",
+			["session"] = 231,
+			["counter"] = 3,
 		}, -- [14]
+		{
+			["message"] = "...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:529: attempt to index field 'player' (a nil value)",
+			["time"] = "2019/10/03 21:18:20",
+			["locals"] = "(*temporary) = nil\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = \"attempt to index field 'player' (a nil value)\"\naddon_data = <table> {\n core = <table> {\n }\n utils = <table> {\n }\n target = <table> {\n }\n hunter = <table> {\n }\n localization_table = <table> {\n }\n config = <table> {\n }\n}\n",
+			["stack"] = "...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:529: in function <...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:527>\n...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:661: in function <...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:644>\n...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:673: in function <...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:669>",
+			["session"] = 232,
+			["counter"] = 1,
+		}, -- [15]
+		{
+			["message"] = "Interface\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Player.lua:834: 'end' expected (to close 'function' at line 291) near '<eof>'",
+			["time"] = "2019/10/03 21:18:20",
+			["locals"] = "",
+			["stack"] = "",
+			["session"] = 232,
+			["counter"] = 4,
+		}, -- [16]
+		{
+			["message"] = "...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:683: attempt to index field 'player' (a nil value)",
+			["time"] = "2019/10/03 21:18:24",
+			["locals"] = "self = WeaponSwingTimerCoreFrame {\n 0 = <userdata>\n}\nevent = \"COMBAT_LOG_EVENT_UNFILTERED\"\nargs = <table> {\n}\ncombat_info = <table> {\n 1 = 1570130305.058000\n 2 = \"SPELL_AURA_APPLIED\"\n 3 = false\n 4 = \"Player-4465-011C68ED\"\n 5 = \"Bexkiller\"\n 6 = 1304\n 7 = 0\n 8 = \"Player-4465-011C68ED\"\n 9 = \"Bexkiller\"\n 10 = 1304\n 11 = 0\n 12 = 0\n 13 = \"Blink\"\n 14 = 64\n 15 = \"BUFF\"\n}\n(*temporary) = nil\n(*temporary) = \"SPELL_AURA_APPLIED\"\n(*temporary) = \"attempt to index field 'player' (a nil value)\"\nOnAddonLoaded = <function> defined @Interface\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:644\naddon_data = <table> {\n core = <table> {\n }\n utils = <table> {\n }\n target = <table> {\n }\n hunter = <table> {\n }\n localization_table = <table> {\n }\n config = <table> {\n }\n}\n",
+			["stack"] = "...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:683: in function <...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:669>",
+			["session"] = 232,
+			["counter"] = 3,
+		}, -- [17]
+		{
+			["message"] = "...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:575: attempt to index field 'player' (a nil value)",
+			["time"] = "2019/10/03 21:18:24",
+			["locals"] = "self = WeaponSwingTimerCoreFrame {\n 0 = <userdata>\n}\nelapsed = 0.017000\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'player' (a nil value)\"\naddon_data = <table> {\n core = <table> {\n }\n utils = <table> {\n }\n target = <table> {\n }\n hunter = <table> {\n }\n localization_table = <table> {\n }\n config = <table> {\n }\n}\n",
+			["stack"] = "...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:575: in function <...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:574>",
+			["session"] = 232,
+			["counter"] = 258,
+		}, -- [18]
 	},
 }

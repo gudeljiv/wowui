@@ -7,15 +7,17 @@ oGlowDB = {
 		["merchant"] = true,
 		["bags"] = true,
 		["tradeskill"] = true,
-		["gbank"] = true,
 		["char"] = true,
+		["voidstore"] = true,
 		["char-flyout"] = true,
 		["loot"] = true,
 		["trade"] = true,
 		["mail"] = true,
 		["inspect"] = true,
-		["voidstore"] = true,
+		["gbank"] = true,
 		["bank"] = true,
+	},
+	["Colors"] = {
 	},
 	["EnabledFilters"] = {
 		["Quality border"] = {
@@ -30,7 +32,5 @@ oGlowDB = {
 			["tradeskill"] = true,
 			["bank"] = true,
 		},
-	},
-	["Colors"] = {
 	},
 }

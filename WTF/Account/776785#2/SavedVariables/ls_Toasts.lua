@@ -25,8 +25,8 @@ LS_TOASTS_GLOBAL_CONFIG = {
 					["point"] = {
 						["y"] = 494,
 						["x"] = 220,
-						["rP"] = "BOTTOMLEFT",
 						["p"] = "BOTTOMLEFT",
+						["rP"] = "BOTTOMLEFT",
 					},
 					["growth_direction"] = "UP",
 				}, -- [1]
@@ -48,9 +48,9 @@ LS_TOASTS_GLOBAL_CONFIG = {
 					["dnd"] = false,
 					["sfx"] = true,
 					["anchor"] = 1,
-					["threshold"] = 1,
-					["quest"] = false,
 					["ilvl"] = true,
+					["quest"] = false,
+					["threshold"] = 1,
 				},
 			},
 		},
