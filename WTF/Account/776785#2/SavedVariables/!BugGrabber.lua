@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 226,
+	["session"] = 230,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -98,5 +98,21 @@ BugGrabberDB = {
 			["session"] = 226,
 			["counter"] = 1,
 		}, -- [12]
+		{
+			["message"] = "...\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Player.lua:315: attempt to call method 'CreateBeautyBorder' (a nil value)",
+			["time"] = "2019/10/03 21:08:15",
+			["locals"] = "frame = WeaponSwingTimerPlayerFrame {\n 0 = <userdata>\n off_spark = <unnamed> {\n }\n main_left_text = <unnamed> {\n }\n main_right_text = <unnamed> {\n }\n off_left_text = <unnamed> {\n }\n backplane = WeaponSwingTimerPlayerBackdropFrame {\n }\n main_spark = <unnamed> {\n }\n off_right_text = <unnamed> {\n }\n main_bar = <unnamed> {\n }\n off_bar = <unnamed> {\n }\n}\nsettings = <table> {\n off_a = 1\n ooc_alpha = 0.250000\n classic_bars = true\n show_left_text = false\n off_g = 0.100000\n main_text_a = 1\n off_r = 0.100000\n in_combat_alpha = 1\n enabled = true\n y_offset = -200\n x_offset = 0\n height = 10\n show_right_text = true\n point = \"CENTER\"\n show_border = false\n off_text_b = 1\n main_text_b = 1\n main_b = 0.900000\n fill_empty = true\n off_text_a = 1\n main_g = 0.100000\n off_text_g = 1\n off_b = 0.900000\n show_offhand = true\n width = 200\n main_text_g = 1\n main_a = 1\n backplane_alpha = 0.500000\n main_text_r = 1\n off_text_r = 1\n is_locked = false\n rel_point = \"CENTER\"\n main_r = 0.100000\n}\n(*temporary) = nil\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = 8\n(*temporary) = \"attempt to call method 'CreateBeautyBorder' (a nil value)\"\naddon_data = <table> {\n core = <table> {\n }\n player = <table> {\n }\n config = <table> {\n }\n target = <table> {\n }\n hunter = <table> {\n }\n localization_table = <table> {\n }\n utils = <table> {\n }\n}\n",
+			["stack"] = "...\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Player.lua:315: in function `UpdateVisualsOnSettingsChange'\n...\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Player.lua:444: in function `InitializeVisuals'\n...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:542: in function <...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:541>\n...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:662: in function <...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:644>\n...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:673: in function <...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:669>",
+			["session"] = 228,
+			["counter"] = 1,
+		}, -- [13]
+		{
+			["message"] = "...\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Target.lua:313: attempt to index local 'frame' (a nil value)",
+			["time"] = "2019/10/03 21:08:19",
+			["locals"] = "settings = <table> {\n off_a = 1\n ooc_alpha = 0.250000\n classic_bars = true\n show_left_text = true\n off_g = 0.100000\n main_text_a = 1\n off_r = 0.800000\n in_combat_alpha = 1\n enabled = false\n y_offset = -230\n x_offset = 0\n height = 10\n show_right_text = true\n point = \"CENTER\"\n show_border = true\n off_text_b = 1\n main_text_b = 1\n main_b = 0.100000\n fill_empty = true\n off_text_a = 1\n main_g = 0.100000\n off_text_g = 1\n off_b = 0.100000\n show_offhand = true\n width = 200\n main_text_g = 1\n main_a = 1\n backplane_alpha = 0.500000\n main_text_r = 1\n off_text_r = 1\n is_locked = false\n rel_point = \"CENTER\"\n main_r = 0.800000\n}\nframe = nil\n(*temporary) = false\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'frame' (a nil value)\"\naddon_data = <table> {\n core = <table> {\n }\n player = <table> {\n }\n config = <table> {\n }\n target = <table> {\n }\n hunter = <table> {\n }\n localization_table = <table> {\n }\n utils = <table> {\n }\n}\n",
+			["stack"] = "...\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Target.lua:313: in function `UpdateVisualsOnUpdate'\n...\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Target.lua:125: in function `OnUpdate'\n...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:576: in function <...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:574>",
+			["session"] = 228,
+			["counter"] = 279,
+		}, -- [14]
 	},
 }

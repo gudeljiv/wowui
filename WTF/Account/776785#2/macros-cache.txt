@@ -11,5 +11,5 @@ VER 3 0000000000000006 "Drink" "Inv_misc_questionmark"
 END
 VER 3 0000000000000005 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [mod:alt] item:0; item:0
+/use [mod:alt] item:0; item:422
 END

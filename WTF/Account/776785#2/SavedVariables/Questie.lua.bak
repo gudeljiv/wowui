@@ -4403,6 +4403,13 @@ QuestieConfig = {
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
 				}, -- [326]
+				{
+					["Timestamp"] = 1570117158,
+					["Party"] = {
+					},
+					["Event"] = "Level",
+					["NewLevel"] = 28,
+				}, -- [327]
 			},
 			["complete"] = {
 				[871] = true,

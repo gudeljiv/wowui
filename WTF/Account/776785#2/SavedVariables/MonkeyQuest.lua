@@ -586,7 +586,7 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = true,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 521.566467285156,
+		["m_iFrameBottom"] = 579.899780273438,
 		["m_bHideTitleButtons"] = false,
 		["m_iFrameLeft"] = 1670.73352050781,
 		["m_bColourDoneOrFailed"] = true,
@@ -985,13 +985,13 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Vermin"] = {
 		["m_aQuestList"] = {
-			["Zalazane - false"] = {
+			["Minshina's Skull - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Thwarting Kolkar Aggression - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Minshina's Skull - false"] = {
+			["Durotar - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Practical Prey - false"] = {
@@ -1000,7 +1000,7 @@ MonkeyQuestConfig = {
 			["Report to Orgnil - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Durotar - true"] = {
+			["Zalazane - false"] = {
 				["m_bChecked"] = true,
 			},
 			["A Peon's Burden - false"] = {

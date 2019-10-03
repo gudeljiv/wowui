@@ -23,10 +23,10 @@ AptechkaDB_Global = {
 		}, -- [1]
 	},
 	["healthOrientation"] = "HORIZONTAL",
-	["nameFontSize"] = 16,
-	["debuffSize"] = 16,
 	["unitGrowth"] = "BOTTOM",
+	["debuffSize"] = 16,
 	["fgColorMultiplier"] = 0,
+	["nameFontSize"] = 16,
 }
 AptechkaConfigCustom = {
 	["HUNTER"] = {

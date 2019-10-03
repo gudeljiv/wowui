@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 225,
+	["session"] = 229,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:62: '<eof>' expected near 'end'",
@@ -82,5 +82,37 @@ BugGrabberDB = {
 			["session"] = 225,
 			["counter"] = 12,
 		}, -- [10]
+		{
+			["message"] = "...Details\\Libs\\DF\\Details-Framework-Classic\\slider.lua:816: Details! Framework: OnSwitch() -NONAME- error: ...nterface\\AddOns\\Details\\classes\\classe_instancia.lua:935: DetailsBaseFrame1:SetPoint(): DetailsBaseFrame2 is dependent on this",
+			["time"] = "2019/10/03 17:07:08",
+			["locals"] = "(*temporary) = \"Details! Framework: OnSwitch() -NONAME- error: ...nterface\\AddOns\\Details\\classes\\classe_instancia.lua:935: DetailsBaseFrame1:SetPoint(): DetailsBaseFrame2 is dependent on this\"\n",
+			["stack"] = "[C]: in function `error'\n...Details\\Libs\\DF\\Details-Framework-Classic\\slider.lua:816: in function <...Details\\Libs\\DF\\Details-Framework-Classic\\slider.lua:763>",
+			["session"] = 226,
+			["counter"] = 2,
+		}, -- [11]
+		{
+			["message"] = "...nterface\\AddOns\\Details\\classes\\classe_instancia.lua:935: DetailsBaseFrame1:SetPoint(): DetailsBaseFrame2 is dependent on this",
+			["time"] = "2019/10/03 17:07:22",
+			["locals"] = "(*temporary) = DetailsBaseFrame1 {\n 0 = <userdata>\n _place = <table> {\n }\n faded = false\n statusbar = DetailsStatusBar1 {\n }\n resize_esquerda = Details_Resize_Esquerda1 {\n }\n fading_out = false\n instance = <table> {\n }\n hidden = false\n button_down = DetailsScrollDown1 {\n }\n button_up = DetailsScrollUp1 {\n }\n rodape = <table> {\n }\n button_stretch = DetailsButtonStretch1 {\n }\n id_texture2 = <unnamed> {\n }\n scroll_middle = <unnamed> {\n }\n barra_esquerda = <unnamed> {\n }\n id_texture1 = <unnamed> {\n }\n anti_menu_overlap = Details_WindowFrameAntiMenuOverlap1 {\n }\n barra_fundo = <unnamed> {\n }\n HaveGradientEffect = false\n isStretching = false\n cabecalho = <table> {\n }\n isResizing = false\n _instance = <table> {\n }\n isMoving = false\n lock_button = Details_Lock_Button1 {\n }\n fading_in = false\n UPFrame = DetailsUpFrameInstance1 {\n }\n BoxBarrasAltura = 136.640854\n UPFrameLeftPart = DetailsUpFrameLeftPart1 {\n }\n scroll_down = <unnamed> {\n }\n scroll_up = <unnamed> {\n }\n isLocked = true\n wallpaper = <unnamed> {\n }\n DOWNFrame = DetailsDownFrame1 {\n }\n barra_direita = <unnamed> {\n }\n UPFrameConnect = DetailsAntiGap1 {\n }\n alert = DetailsAlertFrame1 {\n }\n resize_direita = Details_Resize_Direita1 {\n }\n}\n(*temporary) = \"TOPRIGHT\"\n(*temporary) = DetailsBaseFrame2 {\n 0 = <userdata>\n _place = <table> {\n }\n faded = false\n statusbar = DetailsStatusBar2 {\n }\n resize_esquerda = Details_Resize_Esquerda2 {\n }\n fading_out = false\n instance = <table> {\n }\n hidden = false\n button_down = DetailsScrollDown2 {\n }\n button_up = DetailsScrollUp2 {\n }\n rodape = <table> {\n }\n button_stretch = DetailsButtonStretch2 {\n }\n id_texture2 = <unnamed> {\n }\n id_texture1 = <unnamed> {\n }\n scroll_middle = <unnamed> {\n }\n barra_esquerda = <unnamed> {\n }\n anti_menu_overlap = Details_WindowFrameAntiMenuOverlap2 {\n }\n barra_fundo = <unnamed> {\n }\n HaveGradientEffect = false\n isStretching = false\n cabecalho = <table> {\n }\n isResizing = false\n _instance = <table> {\n }\n isMoving = false\n lock_button = Details_Lock_Button2 {\n }\n fading_in = false\n UPFrame = DetailsUpFrameInstance2 {\n }\n BoxBarrasAltura = 136.640854\n UPFrameLeftPart = DetailsUpFrameLeftPart2 {\n }\n scroll_down = <unnamed> {\n }\n scroll_up = <unnamed> {\n }\n isLocked = true\n wallpaper = <unnamed> {\n }\n DOWNFrame = DetailsDownFrame2 {\n }\n barra_direita = <unnamed> {\n }\n UPFrameConnect = DetailsAntiGap2 {\n }\n alert = DetailsAlertFrame2 {\n }\n resize_direita = Details_Resize_Direita2 {\n }\n}\n(*temporary) = \"TOPLEFT\"\n",
+			["stack"] = "[C]: in function `SetPoint'\n...nterface\\AddOns\\Details\\classes\\classe_instancia.lua:935: in function `BaseFrameSnap'\nInterface\\AddOns\\Details\\gumps\\janela_principal.lua:787: in function <Interface\\AddOns\\Details\\gumps\\janela_principal.lua:772>\nInterface\\AddOns\\Details\\gumps\\janela_principal.lua:1060: in function <Interface\\AddOns\\Details\\gumps\\janela_principal.lua:1047>",
+			["session"] = 226,
+			["counter"] = 1,
+		}, -- [12]
+		{
+			["message"] = "...\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Player.lua:315: attempt to call method 'CreateBeautyBorder' (a nil value)",
+			["time"] = "2019/10/03 21:08:15",
+			["locals"] = "frame = WeaponSwingTimerPlayerFrame {\n 0 = <userdata>\n off_spark = <unnamed> {\n }\n main_left_text = <unnamed> {\n }\n main_right_text = <unnamed> {\n }\n off_left_text = <unnamed> {\n }\n backplane = WeaponSwingTimerPlayerBackdropFrame {\n }\n main_spark = <unnamed> {\n }\n off_right_text = <unnamed> {\n }\n main_bar = <unnamed> {\n }\n off_bar = <unnamed> {\n }\n}\nsettings = <table> {\n off_a = 1\n ooc_alpha = 0.250000\n classic_bars = true\n show_left_text = false\n off_g = 0.100000\n main_text_a = 1\n off_r = 0.100000\n in_combat_alpha = 1\n enabled = true\n y_offset = -200\n x_offset = 0\n height = 10\n show_right_text = true\n point = \"CENTER\"\n show_border = false\n off_text_b = 1\n main_text_b = 1\n main_b = 0.900000\n fill_empty = true\n off_text_a = 1\n main_g = 0.100000\n off_text_g = 1\n off_b = 0.900000\n show_offhand = true\n width = 200\n main_text_g = 1\n main_a = 1\n backplane_alpha = 0.500000\n main_text_r = 1\n off_text_r = 1\n is_locked = false\n rel_point = \"CENTER\"\n main_r = 0.100000\n}\n(*temporary) = nil\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = 8\n(*temporary) = \"attempt to call method 'CreateBeautyBorder' (a nil value)\"\naddon_data = <table> {\n core = <table> {\n }\n player = <table> {\n }\n config = <table> {\n }\n target = <table> {\n }\n hunter = <table> {\n }\n localization_table = <table> {\n }\n utils = <table> {\n }\n}\n",
+			["stack"] = "...\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Player.lua:315: in function `UpdateVisualsOnSettingsChange'\n...\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Player.lua:444: in function `InitializeVisuals'\n...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:542: in function <...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:541>\n...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:662: in function <...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:644>\n...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:673: in function <...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:669>",
+			["session"] = 228,
+			["counter"] = 1,
+		}, -- [13]
+		{
+			["message"] = "...\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Target.lua:313: attempt to index local 'frame' (a nil value)",
+			["time"] = "2019/10/03 21:08:19",
+			["locals"] = "settings = <table> {\n off_a = 1\n ooc_alpha = 0.250000\n classic_bars = true\n show_left_text = true\n off_g = 0.100000\n main_text_a = 1\n off_r = 0.800000\n in_combat_alpha = 1\n enabled = false\n y_offset = -230\n x_offset = 0\n height = 10\n show_right_text = true\n point = \"CENTER\"\n show_border = true\n off_text_b = 1\n main_text_b = 1\n main_b = 0.100000\n fill_empty = true\n off_text_a = 1\n main_g = 0.100000\n off_text_g = 1\n off_b = 0.100000\n show_offhand = true\n width = 200\n main_text_g = 1\n main_a = 1\n backplane_alpha = 0.500000\n main_text_r = 1\n off_text_r = 1\n is_locked = false\n rel_point = \"CENTER\"\n main_r = 0.800000\n}\nframe = nil\n(*temporary) = false\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'frame' (a nil value)\"\naddon_data = <table> {\n core = <table> {\n }\n player = <table> {\n }\n config = <table> {\n }\n target = <table> {\n }\n hunter = <table> {\n }\n localization_table = <table> {\n }\n utils = <table> {\n }\n}\n",
+			["stack"] = "...\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Target.lua:313: in function `UpdateVisualsOnUpdate'\n...\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Target.lua:125: in function `OnUpdate'\n...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:576: in function <...ce\\AddOns\\WeaponSwingTimer\\WeaponSwingTimer_Core.lua:574>",
+			["session"] = 228,
+			["counter"] = 279,
+		}, -- [14]
 	},
 }
