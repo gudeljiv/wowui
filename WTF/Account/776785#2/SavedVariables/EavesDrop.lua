@@ -16,15 +16,19 @@ EavesDropDB = {
 		["Elohssa - Stonespine"] = "Default",
 		["Pitchwise - Genesis"] = "Pitchwise - Genesis",
 		["Pitchwise - Golemagg"] = "Default",
-		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
+		["Greenwise - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Default",
 		["Pepecocorita - Genesis"] = "Default",
-		["Greenwise - Golemagg"] = "Default",
+		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
 		["Ozrencic - Golemagg"] = "Ozrencic - Golemagg",
 		["Whatevs - Stonespine"] = "Default",
 	},
 	["profiles"] = {
 		["Dotwise - Golemagg"] = {
+		},
+		["Elohssa - Stonespine"] = {
+		},
+		["Pitchwise - Golemagg"] = {
 		},
 		["Verminz - Golemagg"] = {
 			["LINEWIDTH"] = 100,
@@ -38,10 +42,6 @@ EavesDropDB = {
 			["TOOLTIPSANCHOR"] = "Left",
 			["y"] = -3.73324210405553,
 		},
-		["Pitchwise - Golemagg"] = {
-		},
-		["Elohssa - Stonespine"] = {
-		},
 		["Kosturko - Golemagg"] = {
 		},
 		["Korupcija - Stonespine"] = {
@@ -50,32 +50,32 @@ EavesDropDB = {
 			["LINEWIDTH"] = 130,
 			["BORDER"] = {
 				["a"] = 0,
-				["b"] = 0.607843137254902,
-				["g"] = 0.607843137254902,
 				["r"] = 0.607843137254902,
+				["g"] = 0.607843137254902,
+				["b"] = 0.607843137254902,
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
-			["HIDETAB"] = true,
+			["SCROLLBUTTON"] = true,
 			["TEXTSIZE"] = 13,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
 			["NUMLINES"] = 16,
 			["LINEHEIGHT"] = 16,
-			["SCROLLBUTTON"] = true,
+			["HIDETAB"] = true,
 		},
 		["Greenwise - Golemagg"] = {
 		},
-		["Pitchwise - Genesis"] = {
+		["Judawise - Golemagg"] = {
 		},
 		["Default"] = {
 			["LINEWIDTH"] = 130,
 			["BORDER"] = {
 				["a"] = 0,
-				["b"] = 0.607843137254902,
-				["g"] = 0.607843137254902,
 				["r"] = 0.607843137254902,
+				["g"] = 0.607843137254902,
+				["b"] = 0.607843137254902,
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
@@ -90,7 +90,7 @@ EavesDropDB = {
 		},
 		["Golemagg"] = {
 		},
-		["Judawise - Golemagg"] = {
+		["Pitchwise - Genesis"] = {
 		},
 		["Spija - Genesis"] = {
 		},

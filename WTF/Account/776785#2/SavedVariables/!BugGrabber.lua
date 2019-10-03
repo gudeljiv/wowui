@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 226,
 	["lastSanitation"] = 3,
-	["session"] = 217,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:62: '<eof>' expected near 'end'",
@@ -74,5 +74,29 @@ BugGrabberDB = {
 			["session"] = 217,
 			["counter"] = 2,
 		}, -- [9]
+		{
+			["message"] = "Interface\\AddOns\\nMainbar\\modules\\hotkey.lua:8: bad argument #2 to 'gsub' (string expected, got nil)",
+			["time"] = "2019/10/03 16:57:10",
+			["locals"] = "(*temporary) = \"1\"\n(*temporary) = nil\n(*temporary) = \"+\"\n(*temporary) = \"string expected, got nil\"\n",
+			["stack"] = "[C]: ?\nInterface\\AddOns\\nMainbar\\modules\\hotkey.lua:8: in function <Interface\\AddOns\\nMainbar\\modules\\hotkey.lua:4>\n[C]: in function `ActionButton_UpdateHotkeys'\nInterface\\FrameXML\\ActionButton.lua:711: in function `ActionButton_OnEvent'\nInterface\\FrameXML\\ActionButton.lua:207: in function <Interface\\FrameXML\\ActionButton.lua:204>\n[C]: in function `SetBinding'\nInterface\\AddOns\\xVerminz\\Bindings.lua:5: in function `FixBindings'\nInterface\\AddOns\\xVerminz\\Bindings.lua:124: in main chunk",
+			["session"] = 225,
+			["counter"] = 12,
+		}, -- [10]
+		{
+			["message"] = "...Details\\Libs\\DF\\Details-Framework-Classic\\slider.lua:816: Details! Framework: OnSwitch() -NONAME- error: ...nterface\\AddOns\\Details\\classes\\classe_instancia.lua:935: DetailsBaseFrame1:SetPoint(): DetailsBaseFrame2 is dependent on this",
+			["time"] = "2019/10/03 17:07:08",
+			["locals"] = "(*temporary) = \"Details! Framework: OnSwitch() -NONAME- error: ...nterface\\AddOns\\Details\\classes\\classe_instancia.lua:935: DetailsBaseFrame1:SetPoint(): DetailsBaseFrame2 is dependent on this\"\n",
+			["stack"] = "[C]: in function `error'\n...Details\\Libs\\DF\\Details-Framework-Classic\\slider.lua:816: in function <...Details\\Libs\\DF\\Details-Framework-Classic\\slider.lua:763>",
+			["session"] = 226,
+			["counter"] = 2,
+		}, -- [11]
+		{
+			["message"] = "...nterface\\AddOns\\Details\\classes\\classe_instancia.lua:935: DetailsBaseFrame1:SetPoint(): DetailsBaseFrame2 is dependent on this",
+			["time"] = "2019/10/03 17:07:22",
+			["locals"] = "(*temporary) = DetailsBaseFrame1 {\n 0 = <userdata>\n _place = <table> {\n }\n faded = false\n statusbar = DetailsStatusBar1 {\n }\n resize_esquerda = Details_Resize_Esquerda1 {\n }\n fading_out = false\n instance = <table> {\n }\n hidden = false\n button_down = DetailsScrollDown1 {\n }\n button_up = DetailsScrollUp1 {\n }\n rodape = <table> {\n }\n button_stretch = DetailsButtonStretch1 {\n }\n id_texture2 = <unnamed> {\n }\n scroll_middle = <unnamed> {\n }\n barra_esquerda = <unnamed> {\n }\n id_texture1 = <unnamed> {\n }\n anti_menu_overlap = Details_WindowFrameAntiMenuOverlap1 {\n }\n barra_fundo = <unnamed> {\n }\n HaveGradientEffect = false\n isStretching = false\n cabecalho = <table> {\n }\n isResizing = false\n _instance = <table> {\n }\n isMoving = false\n lock_button = Details_Lock_Button1 {\n }\n fading_in = false\n UPFrame = DetailsUpFrameInstance1 {\n }\n BoxBarrasAltura = 136.640854\n UPFrameLeftPart = DetailsUpFrameLeftPart1 {\n }\n scroll_down = <unnamed> {\n }\n scroll_up = <unnamed> {\n }\n isLocked = true\n wallpaper = <unnamed> {\n }\n DOWNFrame = DetailsDownFrame1 {\n }\n barra_direita = <unnamed> {\n }\n UPFrameConnect = DetailsAntiGap1 {\n }\n alert = DetailsAlertFrame1 {\n }\n resize_direita = Details_Resize_Direita1 {\n }\n}\n(*temporary) = \"TOPRIGHT\"\n(*temporary) = DetailsBaseFrame2 {\n 0 = <userdata>\n _place = <table> {\n }\n faded = false\n statusbar = DetailsStatusBar2 {\n }\n resize_esquerda = Details_Resize_Esquerda2 {\n }\n fading_out = false\n instance = <table> {\n }\n hidden = false\n button_down = DetailsScrollDown2 {\n }\n button_up = DetailsScrollUp2 {\n }\n rodape = <table> {\n }\n button_stretch = DetailsButtonStretch2 {\n }\n id_texture2 = <unnamed> {\n }\n id_texture1 = <unnamed> {\n }\n scroll_middle = <unnamed> {\n }\n barra_esquerda = <unnamed> {\n }\n anti_menu_overlap = Details_WindowFrameAntiMenuOverlap2 {\n }\n barra_fundo = <unnamed> {\n }\n HaveGradientEffect = false\n isStretching = false\n cabecalho = <table> {\n }\n isResizing = false\n _instance = <table> {\n }\n isMoving = false\n lock_button = Details_Lock_Button2 {\n }\n fading_in = false\n UPFrame = DetailsUpFrameInstance2 {\n }\n BoxBarrasAltura = 136.640854\n UPFrameLeftPart = DetailsUpFrameLeftPart2 {\n }\n scroll_down = <unnamed> {\n }\n scroll_up = <unnamed> {\n }\n isLocked = true\n wallpaper = <unnamed> {\n }\n DOWNFrame = DetailsDownFrame2 {\n }\n barra_direita = <unnamed> {\n }\n UPFrameConnect = DetailsAntiGap2 {\n }\n alert = DetailsAlertFrame2 {\n }\n resize_direita = Details_Resize_Direita2 {\n }\n}\n(*temporary) = \"TOPLEFT\"\n",
+			["stack"] = "[C]: in function `SetPoint'\n...nterface\\AddOns\\Details\\classes\\classe_instancia.lua:935: in function `BaseFrameSnap'\nInterface\\AddOns\\Details\\gumps\\janela_principal.lua:787: in function <Interface\\AddOns\\Details\\gumps\\janela_principal.lua:772>\nInterface\\AddOns\\Details\\gumps\\janela_principal.lua:1060: in function <Interface\\AddOns\\Details\\gumps\\janela_principal.lua:1047>",
+			["session"] = 226,
+			["counter"] = 1,
+		}, -- [12]
 	},
 }

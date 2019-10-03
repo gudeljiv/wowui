@@ -2,3 +2,4 @@ ZygorGuidesViewerClassic: enabled
 DugisGuideViewerZ: disabled
 BiSTracker: disabled
 Auctionator: enabled
+nMainbar: enabled
