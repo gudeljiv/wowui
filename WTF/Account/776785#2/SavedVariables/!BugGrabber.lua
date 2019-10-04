@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 252,
 	["lastSanitation"] = 3,
+	["session"] = 269,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:62: '<eof>' expected near 'end'",
@@ -219,19 +219,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [27]
 		{
-			["message"] = "(null)",
-			["time"] = "2019/10/04 17:04:44",
-			["session"] = 248,
-			["counter"] = 24,
-		}, -- [28]
-		{
 			["message"] = "[string \"if not THO then local f,t,c=CreateFrame(\"Fr...\"]:1: attempt to call global 'SetTracking' (a nil value)",
 			["time"] = "2019/10/04 18:10:24",
 			["locals"] = "_ = THO {\n 0 = <userdata>\n}\ne = 0.016000\n(*temporary) = nil\n(*temporary) = 1\n(*temporary) = \"attempt to call global 'SetTracking' (a nil value)\"\nc = 0\nt = 1\n",
 			["stack"] = "[string \"if not THO then local f,t,c=CreateFrame(\"Fr...\"]:1: in function <[string \"if not THO then local f,t,c=CreateFrame(\"Fr...\"]:1>",
 			["session"] = 252,
 			["counter"] = 1,
-		}, -- [29]
+		}, -- [28]
 		{
 			["message"] = "[string \"SetTracking(1)\"]:1: attempt to call global 'SetTracking' (a nil value)",
 			["time"] = "2019/10/04 18:11:06",
@@ -239,6 +233,42 @@ BugGrabberDB = {
 			["stack"] = "[string \"SetTracking(1)\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4609: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4270: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4306: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 252,
 			["counter"] = 1,
+		}, -- [29]
+		{
+			["message"] = "...ace\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:52: attempt to index local 'temp' (a nil value)",
+			["time"] = "2019/10/04 21:36:16",
+			["locals"] = "TargetHealthFrame = TargetHealthFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nPlayerHealthFrame = PlayerHealthFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nPHealthShow = <function> defined @Interface\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:19\nTHealthHide = <function> defined @Interface\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:26\nTHealthShow = <function> defined @Interface\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:29\ntemp = nil\nUpdate = <function> defined @Interface\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:48\n(*temporary) = true\n(*temporary) = nil\n(*temporary) = <function> defined @Interface\\FrameXML\\PlayerFrame.lua:360\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'temp' (a nil value)\"\n",
+			["stack"] = "...ace\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:52: in main chunk",
+			["session"] = 254,
+			["counter"] = 1,
 		}, -- [30]
+		{
+			["message"] = "...ace\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:51: attempt to index global 'this' (a nil value)",
+			["time"] = "2019/10/04 21:41:06",
+			["locals"] = "TargetHealthFrame = TargetHealthFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nPlayerHealthFrame = PlayerHealthFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nPHealthShow = <function> defined @Interface\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:19\nTHealthHide = <function> defined @Interface\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:26\nTHealthShow = <function> defined @Interface\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:29\nUpdate = <function> defined @Interface\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:47\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = <function> defined @Interface\\FrameXML\\PlayerFrame.lua:360\n(*temporary) = \"attempt to index global 'this' (a nil value)\"\n",
+			["stack"] = "...ace\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:51: in main chunk",
+			["session"] = 257,
+			["counter"] = 1,
+		}, -- [31]
+		{
+			["message"] = "(null)",
+			["session"] = 257,
+			["time"] = "2019/10/04 17:04:44",
+			["counter"] = 30,
+		}, -- [32]
+		{
+			["message"] = "[string \"(SetTarget(\"player\", 0))\"]:1: syntax error near '<eof>'",
+			["time"] = "2019/10/04 21:59:07",
+			["locals"] = "(*temporary) = \"(SetTarget(\"player\", 0))\"\n",
+			["stack"] = "[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4609: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4270: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4306: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 268,
+			["counter"] = 1,
+		}, -- [33]
+		{
+			["message"] = "Couldn't open Interface\\AddOns\\xVerminz\\PlayerTargetSetMark.xml",
+			["time"] = "2019/10/04 21:57:35",
+			["session"] = 269,
+			["counter"] = 9,
+		}, -- [34]
 	},
 }

@@ -350,4 +350,3 @@ end
 local faster = CreateFrame("Frame")
 faster:RegisterEvent("LOOT_READY")
 faster:SetScript("OnEvent", FastLoot)
-

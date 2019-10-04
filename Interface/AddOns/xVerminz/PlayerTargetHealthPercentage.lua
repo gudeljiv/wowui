@@ -43,3 +43,4 @@ end
 
 UIParent:HookScript("OnUpdate", THealthShow)
 PlayerFrame:HookScript("OnUpdate", PHealthShow)
+

@@ -3,6 +3,8 @@
 ## Author: Verminz
 ## Version: 54000
 
+
+
 AutoCarrot.lua
 BestFood.lua
 Bindings.lua
@@ -14,6 +16,7 @@ ErrorsFilter.lua
 GarbageCollector.lua
 GroopLootFrame.lua
 PlayerTargetHealthPercentage.lua
+PlayerTargetSetMark.lua
 SkinBuffs.lua
 Unit.lua
 xDamageFont.lua
