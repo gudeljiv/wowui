@@ -25,6 +25,14 @@ local CONSUMABLES = {
         { 8766 }, -- 2934 mps
         { 18300 }, -- 4200 mps
         { 5350, 2288, 2136, 3772, 8077, 8078, 8079 } -- conjured
+    },
+    ["HEALINGPOTIONS"] = {
+        { 118 },
+        { 4596, 858 },
+        { 929 },
+        { 1710 },
+        { 3928, 18839 },
+        { 13446 },
     }
 }
 
@@ -47,11 +55,11 @@ end
 
 local function CreateOrUpdateMacro(macroName, nomodID, modID)
     local macrotext = nil
-    if macroName == "Food" then
-        macrotext = string.format("#showtooltip\n/use [mod:alt] item:%d; item:%d", modID, nomodID)
-    else
-        macrotext = string.format("#showtooltip\n/use item:%d", nomodID)
-    end
+    
+    if macroName == "Food" then macrotext = string.format("#showtooltip\n/use [mod:alt] item:%d; item:%d", modID, nomodID) end
+    if macroName == "Drink" then macrotext = string.format("#showtooltip\n/use item:%d", nomodID) end
+    if macroName == "HealingPotion" then macrotext = string.format("#showtooltip\n/use item:%d", nomodID) end
+
     local macroID = GetMacroIndexByName(macroName)
     if macroID == 0 then
         CreateMacro(macroName, "Inv_misc_questionmark", macrotext, nil, nil)
@@ -64,7 +72,8 @@ local function UpdateMacros()
     local best = {
         ["FOOD"] = {},
         ["BUFF"] = {},
-        ["DRINK"] = {}
+        ["DRINK"] = {},
+        ["HEALINGPOTIONS"] = {},
     }
     local playerlevel = UnitLevel("player")
     for bag = 0,4 do
@@ -106,6 +115,7 @@ local function UpdateMacros()
 
     CreateOrUpdateMacro("Food", best["FOOD"][1], best["BUFF"][1])
     CreateOrUpdateMacro("Drink", best["DRINK"][1])
+    CreateOrUpdateMacro("HealingPotion", best["HEALINGPOTIONS"][1])
 end
 
 local function EventHandler(self, event, ...)

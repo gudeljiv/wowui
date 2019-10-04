@@ -7,8 +7,8 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 430,
 					["tipo"] = 2,
+					["combatId"] = 430,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -18,40 +18,39 @@ _detalhes_database = {
 							},
 							["targets"] = {
 							},
-							["on_hold"] = false,
 							["pets"] = {
 							},
-							["friendlyfire"] = {
-							},
-							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["classe"] = "WARRIOR",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.001819,
-							["spec"] = 72,
+							["serial"] = "Player-4465-010B6E50",
 							["dps_started"] = false,
 							["total"] = 0.001819,
-							["classe"] = "WARRIOR",
-							["serial"] = "Player-4465-010B6E50",
+							["spec"] = 72,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
 							["end_time"] = 1570134654,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
+							["last_event"] = 0,
 							["damage_taken"] = 132.001819,
 							["start_time"] = 1570134654,
 							["delay"] = 0,
-							["last_event"] = 0,
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.006544,
-							["monster"] = true,
 							["damage_from"] = {
 								["Nekked"] = true,
 							},
@@ -61,20 +60,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["fight_component"] = true,
+							["dps_started"] = true,
 							["timeMachine"] = 1,
-							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 151.006544,
-							["on_hold"] = true,
-							["dps_started"] = true,
-							["total"] = 151.006544,
-							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-4470-0-267-2384-0000165A0E",
+							["fight_component"] = true,
+							["total"] = 151.006544,
+							["monster"] = true,
+							["on_hold"] = true,
 							["nome"] = "Starving Mountain Lion",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -96,15 +94,15 @@ _detalhes_database = {
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["m_amt"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["a_dmg"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									}, -- [1]
 									["!Melee"] = {
 										["c_amt"] = 1,
@@ -128,43 +126,45 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 37,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 6,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 37,
 									},
 								},
+								["tipo"] = 2,
 							},
+							["tipo"] = 1,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
+							["last_event"] = 1570134661,
 							["damage_taken"] = 112.006544,
 							["start_time"] = 1570134644,
 							["delay"] = 1570134661,
-							["last_event"] = 1570134661,
+							["friendlyfire_total"] = 0,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 430,
 					["tipo"] = 3,
+					["combatId"] = 430,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 430,
 					["tipo"] = 7,
+					["combatId"] = 430,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 430,
 					["tipo"] = 9,
+					["combatId"] = 430,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
@@ -176,54 +176,54 @@ _detalhes_database = {
 							["nome"] = "Verminz",
 							["pets"] = {
 							},
-							["last_event"] = 1570134654,
 							["classe"] = "WARRIOR",
+							["tipo"] = 4,
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Enrage"] = {
-										["activedamt"] = 1,
-										["id"] = "Enrage",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = "Enrage",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blood Craze"] = {
-										["activedamt"] = 1,
-										["id"] = "Blood Craze",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = "Blood Craze",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = "Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["serial"] = "Player-4465-010B6E50",
-							["tipo"] = 4,
+							["last_event"] = 1570134654,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 430,
 					["tipo"] = 2,
+					["combatId"] = 430,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -231,22 +231,20 @@ _detalhes_database = {
 					["Verminz"] = true,
 				},
 				["tempo_start"] = 1570134644,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["TotalElapsedCombatTime"] = 1563665.75,
-				["enemy"] = "Starving Mountain Lion",
 				["cleu_events"] = {
 					["n"] = 1,
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					150.846098999997, -- [1]
+					150.206363999995, -- [1]
 					0, -- [2]
 					{
-						-0.00589800000000018, -- [1]
-						[0] = -0.00722100000001547,
+						-0.0127290000000002, -- [1]
+						[0] = -0.0158120000000963,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -254,10 +252,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -277,17 +275,23 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["last_events_tables"] = {
-				},
 				["frags_need_refresh"] = false,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "22:30:54",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Starving Mountain Lion",
+				["TotalElapsedCombatTime"] = 1563665.75,
+				["CombatEndedAt"] = 1563665.75,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
@@ -297,13 +301,13 @@ _detalhes_database = {
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -312,40 +316,37 @@ _detalhes_database = {
 					},
 				},
 				["end_time"] = 1563665.75,
-				["instance_type"] = "none",
 				["combat_id"] = 430,
 				["combat_counter"] = 3026,
-				["player_last_events"] = {
-				},
-				["CombatEndedAt"] = 1563665.75,
-				["spells_cast_timeline"] = {
-				},
-				["data_fim"] = "22:30:54",
-				["data_inicio"] = "22:30:44",
-				["CombatSkillCache"] = {
-				},
 				["frags"] = {
 				},
-				["start_time"] = 1563655.625,
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
 				["TimeData"] = {
 				},
+				["start_time"] = 1563655.625,
 				["contra"] = "Starving Mountain Lion",
+				["data_inicio"] = "22:30:44",
 			}, -- [1]
 			{
 				{
-					["combatId"] = 429,
 					["tipo"] = 2,
+					["combatId"] = 429,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["totalabsorbed"] = 0.004323,
-							["spec"] = 72,
 							["damage_from"] = {
 								["Hillsbrad Peasant"] = true,
 							},
 							["targets"] = {
 								["Hillsbrad Peasant"] = 738,
 							},
+							["serial"] = "Player-4465-010B6E50",
 							["pets"] = {
 							},
 							["colocacao"] = 1,
@@ -354,15 +355,14 @@ _detalhes_database = {
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 738.004323,
-							["friendlyfire"] = {
-							},
+							["spec"] = 72,
 							["dps_started"] = false,
 							["total"] = 738.004323,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
+							["last_event"] = 1570134502,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[0] = {
 										["c_amt"] = 0,
@@ -384,15 +384,15 @@ _detalhes_database = {
 										["id"] = 0,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["b_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["!Melee"] = {
 										["c_amt"] = 1,
@@ -415,13 +415,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 108,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 7,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 108,
 									},
 									["Overpower"] = {
 										["c_amt"] = 0,
@@ -444,13 +444,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Rend"] = {
 										["c_amt"] = 0,
@@ -473,13 +473,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 5,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Hamstring"] = {
 										["c_amt"] = 0,
@@ -502,13 +502,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Heroic Strike"] = {
 										["c_amt"] = 0,
@@ -531,25 +531,26 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-010B6E50",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 31.4017667859896,
 							["custom"] = 0,
-							["last_event"] = 1570134502,
+							["tipo"] = 1,
 							["damage_taken"] = 162.004323,
 							["start_time"] = 1570134482,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["on_hold"] = false,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -562,20 +563,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4470-0-267-2267-000096599A",
 							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 162.00138,
-							["monster"] = true,
-							["fight_component"] = true,
+							["serial"] = "Creature-0-4470-0-267-2267-000096599A",
 							["dps_started"] = false,
 							["total"] = 162.00138,
 							["end_time"] = 1570134504,
-							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
 							["nome"] = "Hillsbrad Peasant",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -592,21 +592,21 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 3,
 										["MISS"] = 1,
-										["total"] = 0,
+										["r_amt"] = 0,
 										["c_max"] = 0,
 										["a_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 2,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["total"] = 0,
 									}, -- [1]
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -629,38 +629,39 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 5,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["on_hold"] = false,
+							["last_event"] = 1570134494,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1570134494,
+							["tipo"] = 1,
 							["damage_taken"] = 738.00138,
 							["start_time"] = 1570134489,
 							["delay"] = 1570134494,
-							["tipo"] = 1,
+							["fight_component"] = true,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 429,
 					["tipo"] = 3,
+					["combatId"] = 429,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 429,
 					["tipo"] = 7,
+					["combatId"] = 429,
 					["_ActorTable"] = {
 						{
 							["received"] = 5.003726,
@@ -676,7 +677,6 @@ _detalhes_database = {
 							["total"] = 5.003726,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									["Unbridled Wrath"] = {
 										["total"] = 5,
@@ -688,6 +688,7 @@ _detalhes_database = {
 										["counter"] = 5,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["flag_original"] = 1297,
@@ -701,77 +702,77 @@ _detalhes_database = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 429,
 					["tipo"] = 9,
+					["combatId"] = 429,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Hamstring"] = {
-										["activedamt"] = 0,
-										["id"] = "Hamstring",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = "Hamstring",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Rend"] = {
-										["activedamt"] = 0,
-										["id"] = "Rend",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = "Rend",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 72,
 							["classe"] = "WARRIOR",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 24,
-										["appliedamt"] = 1,
+										["id"] = "Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Strength"] = {
-										["activedamt"] = 1,
-										["id"] = "Strength",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 24,
-										["appliedamt"] = 1,
+										["id"] = "Strength",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Battle Shout"] = {
-										["activedamt"] = 1,
-										["id"] = "Battle Shout",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 24,
-										["appliedamt"] = 1,
+										["id"] = "Battle Shout",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 25,
 							["buff_uptime_targets"] = {
@@ -784,20 +785,20 @@ _detalhes_database = {
 								["Hamstring"] = 1,
 								["Heroic Strike"] = 2,
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["tipo"] = 4,
 							["last_event"] = 1570134504,
 							["nome"] = "Verminz",
-							["pets"] = {
+							["debuff_uptime_targets"] = {
 							},
 							["serial"] = "Player-4465-010B6E50",
-							["tipo"] = 4,
+							["pets"] = {
+							},
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 429,
 					["tipo"] = 2,
+					["combatId"] = 429,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -806,14 +807,13 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 1563654.407,
 				["tempo_start"] = 1570134480,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
+				["cleu_events"] = {
+					["n"] = 1,
 				},
-				["enemy"] = "Hillsbrad Peasant",
-				["combat_counter"] = 3025,
 				["playing_solo"] = true,
 				["totals"] = {
 					899.963055, -- [1]
@@ -828,28 +828,16 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatEndedAt"] = 1563515.562,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "22:28:01",
-				["end_time"] = 1563515.562,
 				["totals_grupo"] = {
 					738, -- [1]
 					0, -- [2]
@@ -863,29 +851,39 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 429,
-				["TotalElapsedCombatTime"] = 1563515.562,
 				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "22:28:24",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Hillsbrad Peasant",
+				["TotalElapsedCombatTime"] = 1563515.562,
+				["CombatEndedAt"] = 1563515.562,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -893,24 +891,28 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 1563515.562,
+				["combat_id"] = 429,
+				["combat_counter"] = 3025,
+				["spells_cast_timeline"] = {
+				},
 				["frags"] = {
 					["Hillsbrad Peasant"] = 1,
 				},
-				["data_fim"] = "22:28:24",
-				["instance_type"] = "none",
+				["player_last_events"] = {
+				},
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 1563492.06,
 				["contra"] = "Hillsbrad Peasant",
+				["start_time"] = 1563492.06,
 				["TimeData"] = {
 				},
+				["data_inicio"] = "22:28:01",
 			}, -- [2]
 			{
 				{
-					["combatId"] = 428,
 					["tipo"] = 2,
+					["combatId"] = 428,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -923,21 +925,20 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["last_event"] = 1570134480,
 							["classe"] = "WARRIOR",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 661.003959,
+							["serial"] = "Player-4465-010B6E50",
+							["dps_started"] = false,
+							["end_time"] = 1570134461,
+							["damage_taken"] = 172.003959,
 							["friendlyfire"] = {
 							},
-							["end_time"] = 1570134461,
-							["dps_started"] = false,
-							["total"] = 661.003959,
-							["colocacao"] = 1,
-							["friendlyfire_total"] = 0,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -959,15 +960,15 @@ _detalhes_database = {
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["b_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 									[0] = {
 										["c_amt"] = 0,
@@ -989,15 +990,15 @@ _detalhes_database = {
 										["id"] = 0,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["m_amt"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["a_dmg"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["!Melee"] = {
 										["c_amt"] = 1,
@@ -1020,13 +1021,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 116,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 5,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 116,
 									},
 									["Execute"] = {
 										["c_amt"] = 0,
@@ -1049,13 +1050,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Rend"] = {
 										["c_amt"] = 0,
@@ -1078,13 +1079,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 5,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Hamstring"] = {
 										["c_amt"] = 0,
@@ -1107,13 +1108,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Heroic Strike"] = {
 										["c_amt"] = 0,
@@ -1136,25 +1137,26 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 79,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-010B6E50",
+							["colocacao"] = 1,
 							["last_dps"] = 37.5271919499546,
 							["custom"] = 0,
-							["last_event"] = 1570134480,
-							["damage_taken"] = 172.003959,
+							["tipo"] = 1,
+							["on_hold"] = false,
 							["start_time"] = 1570134444,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 661.003959,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -1169,20 +1171,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4470-0-267-2266-000096599A",
 							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 338.007881,
-							["monster"] = true,
-							["fight_component"] = true,
+							["serial"] = "Creature-0-4470-0-267-2266-000096599A",
 							["dps_started"] = false,
 							["total"] = 338.007881,
 							["end_time"] = 1570134461,
-							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
 							["nome"] = "Hillsbrad Farmer",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -1200,21 +1201,21 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 4,
 										["DODGE"] = 2,
-										["total"] = 0,
+										["r_amt"] = 0,
 										["c_max"] = 0,
 										["a_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 2,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["total"] = 0,
 									}, -- [1]
 									["!Melee"] = {
 										["c_amt"] = 1,
@@ -1238,13 +1239,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 55,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 10,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 55,
 									},
 									["Disarm"] = {
 										["c_amt"] = 0,
@@ -1270,31 +1271,33 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["on_hold"] = false,
+							["last_event"] = 1570134460,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1570134460,
+							["tipo"] = 1,
 							["damage_taken"] = 1239.007881,
 							["start_time"] = 1570134446,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["fight_component"] = true,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 428,
 					["tipo"] = 3,
+					["combatId"] = 428,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["targets_overheal"] = {
+							["healing_from"] = {
+								["Verminz"] = true,
 							},
 							["pets"] = {
 							},
@@ -1319,12 +1322,8 @@ _detalhes_database = {
 							["healing_taken"] = 16.007908,
 							["fight_component"] = true,
 							["end_time"] = 1570134461,
-							["healing_from"] = {
-								["Verminz"] = true,
-							},
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Blood Craze"] = {
 										["c_amt"] = 0,
@@ -1354,8 +1353,11 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
+							["targets_overheal"] = {
+							},
 							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
 							["tipo"] = 2,
@@ -1367,8 +1369,8 @@ _detalhes_database = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 428,
 					["tipo"] = 7,
+					["combatId"] = 428,
 					["_ActorTable"] = {
 						{
 							["received"] = 31.008927,
@@ -1385,7 +1387,6 @@ _detalhes_database = {
 							["total"] = 31.008927,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									["Unbridled Wrath"] = {
 										["total"] = 2,
@@ -1415,6 +1416,7 @@ _detalhes_database = {
 										["counter"] = 11,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["flag_original"] = 1297,
@@ -1427,13 +1429,12 @@ _detalhes_database = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 428,
 					["tipo"] = 9,
+					["combatId"] = 428,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Charge Stun"] = {
 										["activedamt"] = -1,
@@ -1448,101 +1449,102 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									["Hamstring"] = {
-										["activedamt"] = 0,
-										["id"] = "Hamstring",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = "Hamstring",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Rend"] = {
-										["activedamt"] = 0,
-										["id"] = "Rend",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = "Rend",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 68,
 							["classe"] = "WARRIOR",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Battle Shout"] = {
-										["activedamt"] = 1,
-										["id"] = "Battle Shout",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 14,
-										["appliedamt"] = 1,
+										["id"] = "Battle Shout",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Enrage"] = {
-										["activedamt"] = 1,
-										["id"] = "Enrage",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = "Enrage",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Bloodrage"] = {
-										["activedamt"] = 1,
-										["id"] = "Bloodrage",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = "Bloodrage",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blood Craze"] = {
-										["activedamt"] = 1,
-										["id"] = "Blood Craze",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = "Blood Craze",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Strength"] = {
-										["activedamt"] = 1,
-										["id"] = "Strength",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 17,
-										["appliedamt"] = 1,
+										["id"] = "Strength",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 17,
-										["appliedamt"] = 1,
+										["id"] = "Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 21,
@@ -1567,8 +1569,8 @@ _detalhes_database = {
 						}, -- [1]
 						{
 							["flag_original"] = 2632,
-							["nome"] = "Hillsbrad Farmer",
 							["tipo"] = 4,
+							["nome"] = "Hillsbrad Farmer",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -1583,8 +1585,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 428,
 					["tipo"] = 2,
+					["combatId"] = 428,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -1593,14 +1595,13 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 1563490.926,
 				["tempo_start"] = 1570134444,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
+				["cleu_events"] = {
+					["n"] = 1,
 				},
-				["enemy"] = "Hillsbrad Farmer",
-				["combat_counter"] = 3024,
 				["playing_solo"] = true,
 				["totals"] = {
 					998.990871, -- [1]
@@ -1615,28 +1616,16 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatEndedAt"] = 1563473.028,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "22:27:24",
-				["end_time"] = 1563473.028,
 				["totals_grupo"] = {
 					661, -- [1]
 					16, -- [2]
@@ -1650,22 +1639,34 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 428,
-				["TotalElapsedCombatTime"] = 1563473.028,
 				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "22:27:42",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Hillsbrad Farmer",
+				["TotalElapsedCombatTime"] = 1563473.028,
+				["CombatEndedAt"] = 1563473.028,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -1673,33 +1674,35 @@ _detalhes_database = {
 							["Verminz"] = 16.007908,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Verminz"] = 661.003959,
 						}, -- [1]
 					},
 				},
+				["end_time"] = 1563473.028,
+				["combat_id"] = 428,
+				["combat_counter"] = 3024,
+				["spells_cast_timeline"] = {
+				},
 				["frags"] = {
 					["Hillsbrad Footman"] = 1,
 					["Hillsbrad Farmer"] = 1,
 				},
-				["data_fim"] = "22:27:42",
-				["instance_type"] = "none",
+				["player_last_events"] = {
+				},
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 1563455.414,
 				["contra"] = "Hillsbrad Farmer",
+				["start_time"] = 1563455.414,
 				["TimeData"] = {
 				},
+				["data_inicio"] = "22:27:24",
 			}, -- [3]
 			{
 				{
-					["combatId"] = 427,
 					["tipo"] = 2,
+					["combatId"] = 427,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -1713,19 +1716,18 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["classe"] = "WARRIOR",
+							["last_event"] = 1570134424,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 749.007687,
-							["friendlyfire"] = {
-							},
-							["colocacao"] = 1,
+							["serial"] = "Player-4465-010B6E50",
 							["dps_started"] = false,
-							["end_time"] = 1570134425,
-							["friendlyfire_total"] = 0,
+							["total"] = 749.007687,
 							["on_hold"] = false,
+							["damage_taken"] = 260.007687,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -1745,19 +1747,19 @@ _detalhes_database = {
 										["DODGE"] = 1,
 										["total"] = 0,
 										["c_max"] = 0,
-										["a_amt"] = 0,
+										["b_dmg"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["m_amt"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
 									}, -- [1]
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -1780,13 +1782,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 46,
 										["n_amt"] = 7,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Overpower"] = {
 										["c_amt"] = 1,
@@ -1809,13 +1811,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 138,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 138,
 									},
 									["Execute"] = {
 										["c_amt"] = 0,
@@ -1838,13 +1840,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Rend"] = {
 										["c_amt"] = 0,
@@ -1867,13 +1869,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 5,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Hamstring"] = {
 										["c_amt"] = 1,
@@ -1896,13 +1898,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 7,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 7,
 									},
 									["Heroic Strike"] = {
 										["c_amt"] = 0,
@@ -1925,26 +1927,27 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 749.007687,
-							["serial"] = "Player-4465-010B6E50",
+							["colocacao"] = 1,
 							["last_dps"] = 32.5146590986888,
 							["custom"] = 0,
-							["last_event"] = 1570134424,
-							["damage_taken"] = 260.007687,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1570134402,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["end_time"] = 1570134425,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -1961,19 +1964,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 523.005324,
-							["monster"] = true,
-							["fight_component"] = true,
 							["dps_started"] = false,
 							["end_time"] = 1570134444,
 							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 523.005324,
+							["serial"] = "Creature-0-4470-0-267-2267-000096585F",
+							["monster"] = true,
+							["total"] = 523.005324,
+							["fight_component"] = true,
 							["on_hold"] = false,
 							["nome"] = "Hillsbrad Peasant",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -1990,21 +1993,21 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 2,
 										["DODGE"] = 1,
-										["total"] = 0,
+										["r_amt"] = 0,
 										["c_max"] = 0,
 										["a_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["total"] = 0,
 									}, -- [1]
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -2029,13 +2032,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 17,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Pierce Armor"] = {
 										["c_amt"] = 0,
@@ -2061,34 +2064,34 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["total"] = 523.005324,
-							["serial"] = "Creature-0-4470-0-267-2267-000096585F",
+							["last_event"] = 1570134441,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1570134441,
+							["tipo"] = 1,
 							["damage_taken"] = 1521.005324,
 							["start_time"] = 1570134403,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 427,
 					["tipo"] = 3,
+					["combatId"] = 427,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 427,
 					["tipo"] = 7,
+					["combatId"] = 427,
 					["_ActorTable"] = {
 						{
 							["received"] = 9.003745,
@@ -2104,7 +2107,6 @@ _detalhes_database = {
 							["total"] = 9.003745,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									["Charge"] = {
 										["total"] = 9,
@@ -2116,6 +2118,7 @@ _detalhes_database = {
 										["counter"] = 1,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["flag_original"] = 1297,
@@ -2128,15 +2131,12 @@ _detalhes_database = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 427,
 					["tipo"] = 9,
+					["combatId"] = 427,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["debuff_uptime"] = 24,
-							["nome"] = "Verminz",
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Charge Stun"] = {
 										["activedamt"] = -1,
@@ -2151,90 +2151,93 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									["Hamstring"] = {
-										["activedamt"] = 0,
-										["id"] = "Hamstring",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 9,
-										["appliedamt"] = 1,
+										["id"] = "Hamstring",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Rend"] = {
-										["activedamt"] = 0,
-										["id"] = "Rend",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = "Rend",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime_targets"] = {
+							["pets"] = {
 							},
+							["classe"] = "WARRIOR",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Armor"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 23,
+										["id"] = "Armor",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Strength"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 23,
+										["id"] = "Strength",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Battle Shout"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 23,
+										["id"] = "Battle Shout",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 24,
+							["nome"] = "Verminz",
 							["grupo"] = true,
-							["debuff_uptime_targets"] = {
-							},
-							["buff_uptime"] = 69,
 							["spell_cast"] = {
 								["Overpower"] = 1,
 								["Rend"] = 1,
 								["Hamstring"] = 1,
 								["Heroic Strike"] = 1,
 							},
-							["pets"] = {
+							["debuff_uptime_targets"] = {
 							},
 							["tipo"] = 4,
-							["last_event"] = 1570134425,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									["Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Armor",
-										["targets"] = {
-										},
-										["uptime"] = 23,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Strength"] = {
-										["activedamt"] = 1,
-										["id"] = "Strength",
-										["targets"] = {
-										},
-										["uptime"] = 23,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Battle Shout"] = {
-										["activedamt"] = 1,
-										["id"] = "Battle Shout",
-										["targets"] = {
-										},
-										["uptime"] = 23,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
+							["buff_uptime_targets"] = {
 							},
+							["last_event"] = 1570134425,
 							["serial"] = "Player-4465-010B6E50",
-							["classe"] = "WARRIOR",
+							["buff_uptime"] = 69,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["nome"] = "Hillsbrad Peasant",
 							["tipo"] = 4,
+							["nome"] = "Hillsbrad Peasant",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -2249,8 +2252,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 427,
 					["tipo"] = 2,
+					["combatId"] = 427,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -2259,14 +2262,13 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 1563454.797,
 				["tempo_start"] = 1570134402,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
+				["cleu_events"] = {
+					["n"] = 1,
 				},
-				["enemy"] = "Hillsbrad Peasant",
-				["combat_counter"] = 3023,
 				["playing_solo"] = true,
 				["totals"] = {
 					1271.982217, -- [1]
@@ -2281,28 +2283,16 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatEndedAt"] = 1563437.033,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "22:26:43",
-				["end_time"] = 1563437.033,
 				["totals_grupo"] = {
 					749, -- [1]
 					0, -- [2]
@@ -2316,29 +2306,39 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 427,
-				["TotalElapsedCombatTime"] = 1563437.033,
 				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "22:27:06",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Hillsbrad Peasant",
+				["TotalElapsedCombatTime"] = 1563437.033,
+				["CombatEndedAt"] = 1563437.033,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -2346,24 +2346,28 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 1563437.033,
+				["combat_id"] = 427,
+				["combat_counter"] = 3023,
+				["spells_cast_timeline"] = {
+				},
 				["frags"] = {
 					["Hillsbrad Peasant"] = 1,
 				},
-				["data_fim"] = "22:27:06",
-				["instance_type"] = "none",
+				["player_last_events"] = {
+				},
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 1563413.997,
 				["contra"] = "Hillsbrad Peasant",
+				["start_time"] = 1563413.997,
 				["TimeData"] = {
 				},
+				["data_inicio"] = "22:26:43",
 			}, -- [4]
 			{
 				{
-					["combatId"] = 426,
 					["tipo"] = 2,
+					["combatId"] = 426,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -2377,19 +2381,18 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["classe"] = "WARRIOR",
+							["last_event"] = 1570134393,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 778.004471,
-							["friendlyfire"] = {
-							},
-							["colocacao"] = 1,
+							["serial"] = "Player-4465-010B6E50",
 							["dps_started"] = false,
-							["end_time"] = 1570134394,
-							["friendlyfire_total"] = 0,
+							["total"] = 778.004471,
 							["on_hold"] = false,
+							["damage_taken"] = 182.004471,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 2,
@@ -2412,13 +2415,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 105,
 										["successful_casted"] = 0,
 										["b_dmg"] = 37,
 										["n_amt"] = 4,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 105,
 									},
 									["Execute"] = {
 										["c_amt"] = 0,
@@ -2441,13 +2444,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Rend"] = {
 										["c_amt"] = 0,
@@ -2470,13 +2473,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 5,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Hamstring"] = {
 										["c_amt"] = 0,
@@ -2499,13 +2502,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Heroic Strike"] = {
 										["c_amt"] = 1,
@@ -2528,26 +2531,27 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 150,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 150,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 778.004471,
-							["serial"] = "Player-4465-010B6E50",
+							["colocacao"] = 1,
 							["last_dps"] = 46.3649863527238,
 							["custom"] = 0,
-							["last_event"] = 1570134393,
-							["damage_taken"] = 182.004471,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1570134377,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["end_time"] = 1570134394,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -2560,19 +2564,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 182.005959,
-							["monster"] = true,
-							["fight_component"] = true,
 							["dps_started"] = false,
 							["end_time"] = 1570134394,
 							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 182.005959,
+							["serial"] = "Creature-0-4470-0-267-2268-0000165962",
+							["monster"] = true,
+							["total"] = 182.005959,
+							["fight_component"] = true,
 							["on_hold"] = false,
 							["nome"] = "Hillsbrad Footman",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -2589,21 +2593,21 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 2,
 										["a_amt"] = 0,
-										["total"] = 0,
+										["r_amt"] = 0,
 										["c_max"] = 0,
 										["MISS"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["total"] = 0,
 									}, -- [1]
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -2626,13 +2630,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 6,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Defensive Stance"] = {
 										["c_amt"] = 0,
@@ -2658,34 +2662,34 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["total"] = 182.005959,
-							["serial"] = "Creature-0-4470-0-267-2268-0000165962",
+							["last_event"] = 1570134392,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1570134392,
+							["tipo"] = 1,
 							["damage_taken"] = 778.005959,
 							["start_time"] = 1570134380,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 426,
 					["tipo"] = 3,
+					["combatId"] = 426,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 426,
 					["tipo"] = 7,
+					["combatId"] = 426,
 					["_ActorTable"] = {
 						{
 							["received"] = 30.002959,
@@ -2701,7 +2705,6 @@ _detalhes_database = {
 							["total"] = 30.002959,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									["Unbridled Wrath"] = {
 										["total"] = 1,
@@ -2731,6 +2734,7 @@ _detalhes_database = {
 										["counter"] = 11,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["flag_original"] = 1297,
@@ -2743,16 +2747,12 @@ _detalhes_database = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 426,
 					["tipo"] = 9,
+					["combatId"] = 426,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["debuff_uptime"] = 19,
-							["debuff_uptime_targets"] = {
-							},
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Charge Stun"] = {
 										["activedamt"] = -1,
@@ -2767,100 +2767,104 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									["Hamstring"] = {
-										["activedamt"] = 0,
-										["id"] = "Hamstring",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = "Hamstring",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Rend"] = {
-										["activedamt"] = 0,
-										["id"] = "Rend",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = "Rend",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime_targets"] = {
+							["buff_uptime"] = 61,
+							["classe"] = "WARRIOR",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Armor"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 17,
+										["id"] = "Armor",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Bloodrage"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = "Bloodrage",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Strength"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 17,
+										["id"] = "Strength",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Battle Shout"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 17,
+										["id"] = "Battle Shout",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 19,
+							["debuff_uptime_targets"] = {
 							},
 							["grupo"] = true,
-							["nome"] = "Verminz",
 							["spell_cast"] = {
 								["Bloodrage"] = 1,
 								["Rend"] = 1,
 								["Hamstring"] = 1,
 								["Heroic Strike"] = 2,
 							},
+							["nome"] = "Verminz",
+							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
+							["last_event"] = 1570134394,
+							["serial"] = "Player-4465-010B6E50",
 							["pets"] = {
 							},
-							["buff_uptime"] = 61,
-							["tipo"] = 4,
-							["last_event"] = 1570134394,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									["Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Armor",
-										["targets"] = {
-										},
-										["uptime"] = 17,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Bloodrage"] = {
-										["activedamt"] = 1,
-										["id"] = "Bloodrage",
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Strength"] = {
-										["activedamt"] = 1,
-										["id"] = "Strength",
-										["targets"] = {
-										},
-										["uptime"] = 17,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Battle Shout"] = {
-										["activedamt"] = 1,
-										["id"] = "Battle Shout",
-										["targets"] = {
-										},
-										["uptime"] = 17,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-4465-010B6E50",
-							["classe"] = "WARRIOR",
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["nome"] = "Hillsbrad Footman",
 							["tipo"] = 4,
+							["nome"] = "Hillsbrad Footman",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -2875,8 +2879,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 426,
 					["tipo"] = 2,
+					["combatId"] = 426,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -2885,14 +2889,13 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 1563413.113,
 				["tempo_start"] = 1570134377,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
+				["cleu_events"] = {
+					["n"] = 1,
 				},
-				["enemy"] = "Hillsbrad Footman",
-				["combat_counter"] = 3022,
 				["playing_solo"] = true,
 				["totals"] = {
 					959.975423, -- [1]
@@ -2907,28 +2910,16 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatEndedAt"] = 1563405.891,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "22:26:18",
-				["end_time"] = 1563405.891,
 				["totals_grupo"] = {
 					778, -- [1]
 					0, -- [2]
@@ -2942,29 +2933,39 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 426,
-				["TotalElapsedCombatTime"] = 1563405.891,
 				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "22:26:34",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Hillsbrad Footman",
+				["TotalElapsedCombatTime"] = 1563405.891,
+				["CombatEndedAt"] = 1563405.891,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -2972,25 +2973,29 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 1563405.891,
+				["combat_id"] = 426,
+				["combat_counter"] = 3022,
+				["spells_cast_timeline"] = {
+				},
 				["frags"] = {
 					["Hillsbrad Footman"] = 1,
 					["Hillsbrad Peasant"] = 1,
 				},
-				["data_fim"] = "22:26:34",
-				["instance_type"] = "none",
+				["player_last_events"] = {
+				},
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 1563389.111,
 				["contra"] = "Hillsbrad Footman",
+				["start_time"] = 1563389.111,
 				["TimeData"] = {
 				},
+				["data_inicio"] = "22:26:18",
 			}, -- [5]
 			{
 				{
-					["combatId"] = 425,
 					["tipo"] = 2,
+					["combatId"] = 425,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -3006,19 +3011,18 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["classe"] = "WARRIOR",
+							["last_event"] = 1570134336,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1502.005469,
-							["friendlyfire"] = {
-							},
-							["colocacao"] = 1,
+							["serial"] = "Player-4465-010B6E50",
 							["dps_started"] = false,
-							["end_time"] = 1570134338,
-							["friendlyfire_total"] = 0,
+							["total"] = 1502.005469,
 							["on_hold"] = false,
+							["damage_taken"] = 793.005469,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -3039,19 +3043,19 @@ _detalhes_database = {
 										["MISS"] = 1,
 										["total"] = 0,
 										["c_max"] = 0,
-										["a_amt"] = 0,
+										["b_dmg"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["m_amt"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 2,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
 									}, -- [1]
 									["!Melee"] = {
 										["c_amt"] = 4,
@@ -3075,13 +3079,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 84,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 6,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 84,
 									},
 									["Hamstring"] = {
 										["c_amt"] = 0,
@@ -3104,13 +3108,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Execute"] = {
 										["c_amt"] = 1,
@@ -3133,13 +3137,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 209,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 209,
 									},
 									["Rend"] = {
 										["c_amt"] = 0,
@@ -3163,13 +3167,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 8,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Overpower"] = {
 										["c_amt"] = 0,
@@ -3192,13 +3196,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Heroic Strike"] = {
 										["c_amt"] = 0,
@@ -3221,26 +3225,27 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 1502.005469,
-							["serial"] = "Player-4465-010B6E50",
+							["colocacao"] = 1,
 							["last_dps"] = 29.0007234514243,
 							["custom"] = 0,
-							["last_event"] = 1570134336,
-							["damage_taken"] = 793.005469,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1570134286,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["end_time"] = 1570134338,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -3255,19 +3260,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 603.005749,
-							["monster"] = true,
-							["fight_component"] = true,
 							["dps_started"] = false,
 							["end_time"] = 1570134377,
 							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 603.005749,
+							["serial"] = "Creature-0-4470-0-267-2267-00009657F0",
+							["monster"] = true,
+							["total"] = 603.005749,
+							["fight_component"] = true,
 							["on_hold"] = false,
 							["nome"] = "Hillsbrad Peasant",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -3290,15 +3295,15 @@ _detalhes_database = {
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["m_amt"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 2,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["a_dmg"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									}, -- [1]
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -3322,13 +3327,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 19,
 										["n_amt"] = 19,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Pierce Armor"] = {
 										["c_amt"] = 0,
@@ -3354,22 +3359,22 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["total"] = 603.005749,
-							["serial"] = "Creature-0-4470-0-267-2267-00009657F0",
+							["last_event"] = 1570134375,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1570134375,
+							["tipo"] = 1,
 							["damage_taken"] = 1905.005749,
 							["start_time"] = 1570134319,
 							["delay"] = 1570134322,
-							["tipo"] = 1,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
@@ -3384,19 +3389,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 562.004254,
-							["monster"] = true,
-							["fight_component"] = true,
 							["dps_started"] = false,
 							["end_time"] = 1570134377,
 							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 562.004254,
+							["serial"] = "Creature-0-4470-0-267-2266-00009657F0",
+							["monster"] = true,
+							["total"] = 562.004254,
+							["fight_component"] = true,
 							["on_hold"] = false,
 							["nome"] = "Hillsbrad Farmer",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -3417,19 +3422,19 @@ _detalhes_database = {
 										["MISS"] = 1,
 										["total"] = 0,
 										["c_max"] = 0,
-										["a_amt"] = 0,
+										["b_dmg"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["m_amt"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
 									}, -- [1]
 									["!Melee"] = {
 										["c_amt"] = 2,
@@ -3453,13 +3458,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 56,
 										["successful_casted"] = 0,
 										["b_dmg"] = 61,
 										["n_amt"] = 15,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 56,
 									},
 									["Disarm"] = {
 										["c_amt"] = 0,
@@ -3485,32 +3490,33 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["total"] = 562.004254,
-							["serial"] = "Creature-0-4470-0-267-2266-00009657F0",
+							["last_event"] = 1570134376,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1570134376,
+							["tipo"] = 1,
 							["damage_taken"] = 787.004254,
 							["start_time"] = 1570134306,
 							["delay"] = 1570134294,
-							["tipo"] = 1,
+							["classe"] = "UNKNOW",
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 425,
 					["tipo"] = 3,
+					["combatId"] = 425,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["targets_overheal"] = {
+							["healing_from"] = {
+								["Verminz"] = true,
 							},
 							["pets"] = {
 							},
@@ -3535,12 +3541,8 @@ _detalhes_database = {
 							["healing_taken"] = 301.008638,
 							["fight_component"] = true,
 							["end_time"] = 1570134338,
-							["healing_from"] = {
-								["Verminz"] = true,
-							},
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["First Aid"] = {
 										["c_amt"] = 0,
@@ -3597,8 +3599,11 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
+							["targets_overheal"] = {
+							},
 							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
 							["tipo"] = 2,
@@ -3610,8 +3615,8 @@ _detalhes_database = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 425,
 					["tipo"] = 7,
+					["combatId"] = 425,
 					["_ActorTable"] = {
 						{
 							["received"] = 33.003093,
@@ -3628,7 +3633,6 @@ _detalhes_database = {
 							["total"] = 33.003093,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									["Bloodrage"] = {
 										["total"] = 20,
@@ -3658,6 +3662,7 @@ _detalhes_database = {
 										["counter"] = 4,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["flag_original"] = 1297,
@@ -3670,54 +3675,53 @@ _detalhes_database = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 425,
 					["tipo"] = 9,
+					["combatId"] = 425,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Intimidating Shout"] = {
-										["activedamt"] = 0,
-										["id"] = "Intimidating Shout",
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 8,
-										["appliedamt"] = 2,
+										["id"] = "Intimidating Shout",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Hamstring"] = {
-										["activedamt"] = 0,
-										["id"] = "Hamstring",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = "Hamstring",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Recently Bandaged"] = {
-										["activedamt"] = 1,
-										["id"] = "Recently Bandaged",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 33,
-										["appliedamt"] = 1,
+										["id"] = "Recently Bandaged",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Rend"] = {
-										["activedamt"] = 0,
-										["id"] = "Rend",
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 25,
-										["appliedamt"] = 2,
+										["id"] = "Rend",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -3735,90 +3739,91 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 174,
 							["classe"] = "WARRIOR",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Battle Shout"] = {
-										["activedamt"] = 1,
-										["id"] = "Battle Shout",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 23,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Armor",
-										["targets"] = {
-										},
-										["uptime"] = 52,
-										["appliedamt"] = 1,
+										["id"] = "Battle Shout",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Enrage"] = {
-										["activedamt"] = 1,
-										["id"] = "Enrage",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 19,
-										["appliedamt"] = 1,
+										["id"] = "Enrage",
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									["Bloodrage"] = {
-										["activedamt"] = 1,
-										["id"] = "Bloodrage",
+									["Strength"] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["uptime"] = 10,
+										["activedamt"] = 1,
+										["uptime"] = 52,
+										["id"] = "Strength",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Armor"] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 52,
+										["id"] = "Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blood Craze"] = {
-										["activedamt"] = 2,
-										["id"] = "Blood Craze",
-										["targets"] = {
-										},
-										["uptime"] = 13,
 										["appliedamt"] = 2,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Strength"] = {
-										["activedamt"] = 1,
-										["id"] = "Strength",
 										["targets"] = {
 										},
-										["uptime"] = 52,
-										["appliedamt"] = 1,
+										["activedamt"] = 2,
+										["uptime"] = 13,
+										["id"] = "Blood Craze",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["First Aid"] = {
-										["activedamt"] = 1,
-										["id"] = "First Aid",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
+										["id"] = "First Aid",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Bloodrage"] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = "Bloodrage",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 70,
@@ -3846,8 +3851,8 @@ _detalhes_database = {
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["nome"] = "Hillsbrad Peasant",
 							["tipo"] = 4,
+							["nome"] = "Hillsbrad Peasant",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -3861,8 +3866,8 @@ _detalhes_database = {
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
-							["nome"] = "Hillsbrad Farmer",
 							["tipo"] = 4,
+							["nome"] = "Hillsbrad Farmer",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -3877,8 +3882,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 425,
 					["tipo"] = 2,
+					["combatId"] = 425,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -3887,14 +3892,13 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 1563388.46,
 				["tempo_start"] = 1570134286,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
+				["cleu_events"] = {
+					["n"] = 1,
 				},
-				["enemy"] = "Hillsbrad Peasant",
-				["combat_counter"] = 3021,
 				["playing_solo"] = true,
 				["totals"] = {
 					2666.972073, -- [1]
@@ -3909,28 +3913,16 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatEndedAt"] = 1563349.579,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "22:24:46",
-				["end_time"] = 1563349.579,
 				["totals_grupo"] = {
 					1502, -- [1]
 					301, -- [2]
@@ -3944,22 +3936,34 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 425,
-				["TotalElapsedCombatTime"] = 1563349.579,
 				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "22:25:38",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Hillsbrad Peasant",
+				["TotalElapsedCombatTime"] = 1563349.579,
+				["CombatEndedAt"] = 1563349.579,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -3967,33 +3971,35 @@ _detalhes_database = {
 							["Verminz"] = 301.008638,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Verminz"] = 1502.005469,
 						}, -- [1]
 					},
 				},
+				["end_time"] = 1563349.579,
+				["combat_id"] = 425,
+				["combat_counter"] = 3021,
+				["spells_cast_timeline"] = {
+				},
 				["frags"] = {
 					["Hillsbrad Farmer"] = 1,
 					["Hillsbrad Peasant"] = 1,
 				},
-				["data_fim"] = "22:25:38",
-				["instance_type"] = "none",
+				["player_last_events"] = {
+				},
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 1563297.787,
 				["contra"] = "Hillsbrad Peasant",
+				["start_time"] = 1563297.787,
 				["TimeData"] = {
 				},
+				["data_inicio"] = "22:24:46",
 			}, -- [6]
 			{
 				{
-					["combatId"] = 424,
 					["tipo"] = 2,
+					["combatId"] = 424,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -4007,19 +4013,18 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["classe"] = "WARRIOR",
+							["last_event"] = 1570134243,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 671.005746,
-							["friendlyfire"] = {
-							},
-							["colocacao"] = 1,
+							["serial"] = "Player-4465-010B6E50",
 							["dps_started"] = false,
-							["end_time"] = 1570134246,
-							["friendlyfire_total"] = 0,
+							["total"] = 671.005746,
 							["on_hold"] = false,
+							["damage_taken"] = 273.005746,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -4041,15 +4046,15 @@ _detalhes_database = {
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["m_amt"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["a_dmg"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									}, -- [1]
 									[0] = {
 										["c_amt"] = 0,
@@ -4071,15 +4076,15 @@ _detalhes_database = {
 										["id"] = 0,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["b_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -4102,13 +4107,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 7,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Execute"] = {
 										["c_amt"] = 0,
@@ -4131,13 +4136,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Rend"] = {
 										["c_amt"] = 0,
@@ -4160,13 +4165,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 5,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Hamstring"] = {
 										["c_amt"] = 0,
@@ -4189,13 +4194,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Heroic Strike"] = {
 										["c_amt"] = 0,
@@ -4218,26 +4223,27 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 671.005746,
-							["serial"] = "Player-4465-010B6E50",
+							["colocacao"] = 1,
 							["last_dps"] = 28.5704566975663,
 							["custom"] = 0,
-							["last_event"] = 1570134243,
-							["damage_taken"] = 273.005746,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1570134222,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["end_time"] = 1570134246,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -4250,19 +4256,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 273.002142,
-							["monster"] = true,
-							["fight_component"] = true,
 							["dps_started"] = false,
 							["end_time"] = 1570134246,
 							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 273.002142,
+							["serial"] = "Creature-0-4470-0-267-2267-00009658B4",
+							["monster"] = true,
+							["total"] = 273.002142,
+							["fight_component"] = true,
 							["on_hold"] = false,
 							["nome"] = "Hillsbrad Peasant",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -4284,15 +4290,15 @@ _detalhes_database = {
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["m_amt"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["a_dmg"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									}, -- [1]
 									["!Melee"] = {
 										["c_amt"] = 1,
@@ -4315,37 +4321,38 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 66,
 										["successful_casted"] = 0,
 										["b_dmg"] = 22,
 										["n_amt"] = 7,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 66,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["total"] = 273.002142,
-							["serial"] = "Creature-0-4470-0-267-2267-00009658B4",
+							["last_event"] = 1570134238,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1570134238,
+							["tipo"] = 1,
 							["damage_taken"] = 671.002142,
 							["start_time"] = 1570134223,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 424,
 					["tipo"] = 3,
+					["combatId"] = 424,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["targets_overheal"] = {
+							["healing_from"] = {
+								["Verminz"] = true,
 							},
 							["pets"] = {
 							},
@@ -4370,12 +4377,8 @@ _detalhes_database = {
 							["healing_taken"] = 25.00468,
 							["fight_component"] = true,
 							["end_time"] = 1570134246,
-							["healing_from"] = {
-								["Verminz"] = true,
-							},
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Blood Craze"] = {
 										["c_amt"] = 0,
@@ -4405,8 +4408,11 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
+							["targets_overheal"] = {
+							},
 							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
 							["tipo"] = 2,
@@ -4418,8 +4424,8 @@ _detalhes_database = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 424,
 					["tipo"] = 7,
+					["combatId"] = 424,
 					["_ActorTable"] = {
 						{
 							["received"] = 14.006128,
@@ -4436,7 +4442,6 @@ _detalhes_database = {
 							["total"] = 14.006128,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									["Unbridled Wrath"] = {
 										["total"] = 5,
@@ -4457,6 +4462,7 @@ _detalhes_database = {
 										["counter"] = 1,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["flag_original"] = 1297,
@@ -4469,13 +4475,12 @@ _detalhes_database = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 424,
 					["tipo"] = 9,
+					["combatId"] = 424,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Charge Stun"] = {
 										["activedamt"] = -1,
@@ -4490,90 +4495,91 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									["Hamstring"] = {
-										["activedamt"] = 0,
-										["id"] = "Hamstring",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 11,
-										["appliedamt"] = 1,
+										["id"] = "Hamstring",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Rend"] = {
-										["activedamt"] = 0,
-										["id"] = "Rend",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = "Rend",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 90,
 							["classe"] = "WARRIOR",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Battle Shout"] = {
-										["activedamt"] = 1,
-										["id"] = "Battle Shout",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 24,
-										["appliedamt"] = 1,
+										["id"] = "Battle Shout",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 24,
-										["appliedamt"] = 1,
+										["id"] = "Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blood Craze"] = {
-										["activedamt"] = 1,
-										["id"] = "Blood Craze",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = "Blood Craze",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Strength"] = {
-										["activedamt"] = 1,
-										["id"] = "Strength",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 24,
-										["appliedamt"] = 1,
+										["id"] = "Strength",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Enrage"] = {
-										["activedamt"] = 1,
-										["id"] = "Enrage",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = "Enrage",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 26,
@@ -4597,8 +4603,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 424,
 					["tipo"] = 2,
+					["combatId"] = 424,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -4607,14 +4613,13 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 1563296.887,
 				["tempo_start"] = 1570134222,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
+				["cleu_events"] = {
+					["n"] = 1,
 				},
-				["enemy"] = "Hillsbrad Peasant",
-				["combat_counter"] = 3020,
 				["playing_solo"] = true,
 				["totals"] = {
 					943.972046, -- [1]
@@ -4629,28 +4634,16 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatEndedAt"] = 1563257.672,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "22:23:43",
-				["end_time"] = 1563257.672,
 				["totals_grupo"] = {
 					671, -- [1]
 					25, -- [2]
@@ -4664,22 +4657,34 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 424,
-				["TotalElapsedCombatTime"] = 1563257.672,
 				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "22:24:06",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Hillsbrad Peasant",
+				["TotalElapsedCombatTime"] = 1563257.672,
+				["CombatEndedAt"] = 1563257.672,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -4687,32 +4692,34 @@ _detalhes_database = {
 							["Verminz"] = 25.00468,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Verminz"] = 671.005746,
 						}, -- [1]
 					},
 				},
+				["end_time"] = 1563257.672,
+				["combat_id"] = 424,
+				["combat_counter"] = 3020,
+				["spells_cast_timeline"] = {
+				},
 				["frags"] = {
 					["Hillsbrad Peasant"] = 1,
 				},
-				["data_fim"] = "22:24:06",
-				["instance_type"] = "none",
+				["player_last_events"] = {
+				},
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 1563234.186,
 				["contra"] = "Hillsbrad Peasant",
+				["start_time"] = 1563234.186,
 				["TimeData"] = {
 				},
+				["data_inicio"] = "22:23:43",
 			}, -- [7]
 			{
 				{
-					["combatId"] = 423,
 					["tipo"] = 2,
+					["combatId"] = 423,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -4725,21 +4732,20 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["last_event"] = 1570134202,
 							["classe"] = "WARRIOR",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 780.001732,
+							["serial"] = "Player-4465-010B6E50",
+							["dps_started"] = false,
+							["end_time"] = 1570134204,
+							["damage_taken"] = 372.001732,
 							["friendlyfire"] = {
 							},
-							["end_time"] = 1570134204,
-							["dps_started"] = false,
-							["total"] = 780.001732,
-							["colocacao"] = 1,
-							["friendlyfire_total"] = 0,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -4756,21 +4762,21 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 2,
 										["DODGE"] = 1,
-										["total"] = 0,
+										["r_amt"] = 0,
 										["c_max"] = 0,
 										["a_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["total"] = 0,
 									}, -- [1]
 									[0] = {
 										["c_amt"] = 0,
@@ -4792,15 +4798,15 @@ _detalhes_database = {
 										["id"] = 0,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["m_amt"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 2,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["a_dmg"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -4823,13 +4829,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 34,
 										["n_amt"] = 8,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Hamstring"] = {
 										["c_amt"] = 0,
@@ -4852,13 +4858,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Execute"] = {
 										["c_amt"] = 0,
@@ -4881,13 +4887,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Rend"] = {
 										["c_amt"] = 0,
@@ -4910,13 +4916,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 9,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Overpower"] = {
 										["c_amt"] = 0,
@@ -4939,13 +4945,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Heroic Strike"] = {
 										["c_amt"] = 0,
@@ -4968,25 +4974,26 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 63,
 										["n_amt"] = 2,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-010B6E50",
+							["colocacao"] = 1,
 							["last_dps"] = 25.3321338053588,
 							["custom"] = 0,
-							["last_event"] = 1570134202,
-							["damage_taken"] = 372.001732,
+							["tipo"] = 1,
+							["on_hold"] = false,
 							["start_time"] = 1570134174,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 780.001732,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -4999,20 +5006,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4470-0-267-2268-000016564E",
 							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 372.002774,
-							["monster"] = true,
-							["fight_component"] = true,
+							["serial"] = "Creature-0-4470-0-267-2268-000016564E",
 							["dps_started"] = false,
 							["total"] = 372.002774,
 							["end_time"] = 1570134204,
-							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
 							["nome"] = "Hillsbrad Footman",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -5029,21 +5035,21 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 3,
 										["MISS"] = 2,
-										["total"] = 0,
+										["r_amt"] = 0,
 										["c_max"] = 0,
 										["a_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["total"] = 0,
 									}, -- [1]
 									["!Melee"] = {
 										["c_amt"] = 1,
@@ -5066,13 +5072,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 56,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 11,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 56,
 									},
 									["Defensive Stance"] = {
 										["c_amt"] = 0,
@@ -5098,31 +5104,33 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["on_hold"] = false,
+							["last_event"] = 1570134201,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1570134201,
+							["tipo"] = 1,
 							["damage_taken"] = 780.002774,
 							["start_time"] = 1570134174,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["fight_component"] = true,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 423,
 					["tipo"] = 3,
+					["combatId"] = 423,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["targets_overheal"] = {
+							["healing_from"] = {
+								["Verminz"] = true,
 							},
 							["pets"] = {
 							},
@@ -5147,12 +5155,8 @@ _detalhes_database = {
 							["healing_taken"] = 16.005009,
 							["fight_component"] = true,
 							["end_time"] = 1570134204,
-							["healing_from"] = {
-								["Verminz"] = true,
-							},
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Blood Craze"] = {
 										["c_amt"] = 0,
@@ -5182,8 +5186,11 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
+							["targets_overheal"] = {
+							},
 							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
 							["tipo"] = 2,
@@ -5195,8 +5202,8 @@ _detalhes_database = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 423,
 					["tipo"] = 7,
+					["combatId"] = 423,
 					["_ActorTable"] = {
 						{
 							["received"] = 33.008852,
@@ -5213,7 +5220,6 @@ _detalhes_database = {
 							["total"] = 33.008852,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									["Bloodrage"] = {
 										["total"] = 20,
@@ -5243,6 +5249,7 @@ _detalhes_database = {
 										["counter"] = 4,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["flag_original"] = 1297,
@@ -5255,13 +5262,12 @@ _detalhes_database = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 423,
 					["tipo"] = 9,
+					["combatId"] = 423,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Charge Stun"] = {
 										["activedamt"] = -1,
@@ -5276,101 +5282,102 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									["Hamstring"] = {
-										["activedamt"] = 0,
-										["id"] = "Hamstring",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 14,
-										["appliedamt"] = 1,
+										["id"] = "Hamstring",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Rend"] = {
-										["activedamt"] = 0,
-										["id"] = "Rend",
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 27,
-										["appliedamt"] = 2,
+										["id"] = "Rend",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 108,
 							["classe"] = "WARRIOR",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Battle Shout"] = {
-										["activedamt"] = 1,
-										["id"] = "Battle Shout",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 30,
-										["appliedamt"] = 1,
+										["id"] = "Battle Shout",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Enrage"] = {
-										["activedamt"] = 1,
-										["id"] = "Enrage",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = "Enrage",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Bloodrage"] = {
-										["activedamt"] = 1,
-										["id"] = "Bloodrage",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = "Bloodrage",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blood Craze"] = {
-										["activedamt"] = 1,
-										["id"] = "Blood Craze",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = "Blood Craze",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Strength"] = {
-										["activedamt"] = 1,
-										["id"] = "Strength",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 30,
-										["appliedamt"] = 1,
+										["id"] = "Strength",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 30,
-										["appliedamt"] = 1,
+										["id"] = "Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 41,
@@ -5395,8 +5402,8 @@ _detalhes_database = {
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["nome"] = "Hillsbrad Footman",
 							["tipo"] = 4,
+							["nome"] = "Hillsbrad Footman",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -5411,8 +5418,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 423,
 					["tipo"] = 2,
+					["combatId"] = 423,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -5421,14 +5428,13 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 1563233.369,
 				["tempo_start"] = 1570134174,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
+				["cleu_events"] = {
+					["n"] = 1,
 				},
-				["enemy"] = "Hillsbrad Footman",
-				["combat_counter"] = 3019,
 				["playing_solo"] = true,
 				["totals"] = {
 					1151.98423, -- [1]
@@ -5443,28 +5449,16 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatEndedAt"] = 1563216.338,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "22:22:54",
-				["end_time"] = 1563216.338,
 				["totals_grupo"] = {
 					780, -- [1]
 					16, -- [2]
@@ -5478,22 +5472,34 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 423,
-				["TotalElapsedCombatTime"] = 1563216.338,
 				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "22:23:25",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Hillsbrad Footman",
+				["TotalElapsedCombatTime"] = 1563216.338,
+				["CombatEndedAt"] = 1563216.338,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -5501,33 +5507,35 @@ _detalhes_database = {
 							["Verminz"] = 16.005009,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Verminz"] = 780.001732,
 						}, -- [1]
 					},
 				},
+				["end_time"] = 1563216.338,
+				["combat_id"] = 423,
+				["combat_counter"] = 3019,
+				["spells_cast_timeline"] = {
+				},
 				["frags"] = {
 					["Hillsbrad Footman"] = 1,
 					["Hillsbrad Peasant"] = 2,
 				},
-				["data_fim"] = "22:23:25",
-				["instance_type"] = "none",
+				["player_last_events"] = {
+				},
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 1563185.547,
 				["contra"] = "Hillsbrad Footman",
+				["start_time"] = 1563185.547,
 				["TimeData"] = {
 				},
+				["data_inicio"] = "22:22:54",
 			}, -- [8]
 			{
 				{
-					["combatId"] = 422,
 					["tipo"] = 2,
+					["combatId"] = 422,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -5541,19 +5549,18 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["classe"] = "WARRIOR",
+							["last_event"] = 1570134153,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 819.004753,
-							["friendlyfire"] = {
-							},
-							["colocacao"] = 1,
+							["serial"] = "Player-4465-010B6E50",
 							["dps_started"] = false,
-							["end_time"] = 1570134155,
-							["friendlyfire_total"] = 0,
+							["total"] = 819.004753,
 							["on_hold"] = false,
+							["damage_taken"] = 360.004753,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["Execute"] = {
 										["c_amt"] = 0,
@@ -5576,13 +5583,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Rend"] = {
 										["c_amt"] = 0,
@@ -5605,13 +5612,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 7,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -5634,13 +5641,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 105,
 										["n_amt"] = 12,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Heroic Strike"] = {
 										["c_amt"] = 0,
@@ -5663,26 +5670,27 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 61,
 										["n_amt"] = 2,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 819.004753,
-							["serial"] = "Player-4465-010B6E50",
+							["colocacao"] = 1,
 							["last_dps"] = 24.2956022842155,
 							["custom"] = 0,
-							["last_event"] = 1570134153,
-							["damage_taken"] = 360.004753,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1570134124,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["end_time"] = 1570134155,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -5695,19 +5703,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 360.007622,
-							["monster"] = true,
-							["fight_component"] = true,
 							["dps_started"] = false,
 							["end_time"] = 1570134155,
 							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 360.007622,
+							["serial"] = "Creature-0-4470-0-267-2268-000096572F",
+							["monster"] = true,
+							["total"] = 360.007622,
+							["fight_component"] = true,
 							["on_hold"] = false,
 							["nome"] = "Hillsbrad Footman",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -5724,21 +5732,21 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 3,
 										["a_amt"] = 0,
-										["total"] = 0,
+										["r_amt"] = 0,
 										["c_max"] = 0,
 										["MISS"] = 2,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["total"] = 0,
 									}, -- [1]
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -5761,13 +5769,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 12,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Defensive Stance"] = {
 										["c_amt"] = 0,
@@ -5793,34 +5801,34 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["total"] = 360.007622,
-							["serial"] = "Creature-0-4470-0-267-2268-000096572F",
+							["last_event"] = 1570134149,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1570134149,
+							["tipo"] = 1,
 							["damage_taken"] = 819.007622,
 							["start_time"] = 1570134121,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 422,
 					["tipo"] = 3,
+					["combatId"] = 422,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 422,
 					["tipo"] = 7,
+					["combatId"] = 422,
 					["_ActorTable"] = {
 						{
 							["received"] = 33.00872,
@@ -5836,7 +5844,6 @@ _detalhes_database = {
 							["total"] = 33.00872,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									["Unbridled Wrath"] = {
 										["total"] = 4,
@@ -5866,6 +5873,7 @@ _detalhes_database = {
 										["counter"] = 11,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["flag_original"] = 1297,
@@ -5878,101 +5886,101 @@ _detalhes_database = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 422,
 					["tipo"] = 9,
+					["combatId"] = 422,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["debuff_uptime"] = 24,
-							["debuff_uptime_targets"] = {
-							},
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Rend"] = {
-										["activedamt"] = 0,
-										["id"] = "Rend",
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 24,
-										["appliedamt"] = 2,
+										["id"] = "Rend",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime_targets"] = {
+							["buff_uptime"] = 106,
+							["classe"] = "WARRIOR",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Armor"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 34,
+										["id"] = "Armor",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Battle Shout"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 28,
+										["id"] = "Battle Shout",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Strength"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 34,
+										["id"] = "Strength",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Bloodrage"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = "Bloodrage",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 24,
+							["debuff_uptime_targets"] = {
 							},
 							["grupo"] = true,
-							["nome"] = "Verminz",
 							["spell_cast"] = {
 								["Bloodrage"] = 1,
 								["Rend"] = 2,
 								["Battle Shout"] = 1,
 								["Heroic Strike"] = 2,
 							},
+							["nome"] = "Verminz",
+							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
+							["last_event"] = 1570134155,
+							["serial"] = "Player-4465-010B6E50",
 							["pets"] = {
 							},
-							["buff_uptime"] = 106,
-							["tipo"] = 4,
-							["last_event"] = 1570134155,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									["Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Armor",
-										["targets"] = {
-										},
-										["uptime"] = 34,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Battle Shout"] = {
-										["activedamt"] = 1,
-										["id"] = "Battle Shout",
-										["targets"] = {
-										},
-										["uptime"] = 28,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Strength"] = {
-										["activedamt"] = 1,
-										["id"] = "Strength",
-										["targets"] = {
-										},
-										["uptime"] = 34,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Bloodrage"] = {
-										["activedamt"] = 1,
-										["id"] = "Bloodrage",
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-4465-010B6E50",
-							["classe"] = "WARRIOR",
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["nome"] = "Hillsbrad Footman",
 							["tipo"] = 4,
+							["nome"] = "Hillsbrad Footman",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -5987,8 +5995,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 422,
 					["tipo"] = 2,
+					["combatId"] = 422,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -5997,14 +6005,13 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 1563185.163,
 				["tempo_start"] = 1570134121,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
+				["cleu_events"] = {
+					["n"] = 1,
 				},
-				["enemy"] = "Hillsbrad Footman",
-				["combat_counter"] = 3018,
 				["playing_solo"] = true,
 				["totals"] = {
 					1178.989385, -- [1]
@@ -6019,28 +6026,16 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatEndedAt"] = 1563166.932,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "22:22:02",
-				["end_time"] = 1563166.932,
 				["totals_grupo"] = {
 					819, -- [1]
 					0, -- [2]
@@ -6054,29 +6049,39 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 422,
-				["TotalElapsedCombatTime"] = 1563166.932,
 				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "22:22:35",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Hillsbrad Footman",
+				["TotalElapsedCombatTime"] = 1563166.932,
+				["CombatEndedAt"] = 1563166.932,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -6084,26 +6089,30 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 1563166.932,
+				["combat_id"] = 422,
+				["combat_counter"] = 3018,
+				["spells_cast_timeline"] = {
+				},
 				["frags"] = {
 					["Farmer Kalaba"] = 1,
 					["Hillsbrad Peasant"] = 1,
 					["Hillsbrad Footman"] = 1,
 				},
-				["data_fim"] = "22:22:35",
-				["instance_type"] = "none",
+				["player_last_events"] = {
+				},
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 1563133.222,
 				["contra"] = "Hillsbrad Footman",
+				["start_time"] = 1563133.222,
 				["TimeData"] = {
 				},
+				["data_inicio"] = "22:22:02",
 			}, -- [9]
 			{
 				{
-					["combatId"] = 421,
 					["tipo"] = 2,
+					["combatId"] = 421,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -6115,24 +6124,23 @@ _detalhes_database = {
 							["targets"] = {
 								["Hillsbrad Farmer"] = 221,
 							},
-							["total"] = 221.008228,
+							["serial"] = "Player-4465-010B6E50",
 							["pets"] = {
 							},
+							["colocacao"] = 1,
 							["on_hold"] = false,
-							["classe"] = "WARRIOR",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 221.008228,
-							["colocacao"] = 1,
+							["spec"] = 72,
+							["dps_started"] = false,
+							["total"] = 221.008228,
 							["friendlyfire"] = {
 							},
-							["dps_started"] = false,
-							["end_time"] = 1570134092,
-							["friendlyfire_total"] = 0,
-							["spec"] = 72,
+							["last_event"] = 1570134121,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -6150,21 +6158,21 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 3,
 										["a_amt"] = 0,
-										["total"] = 0,
+										["r_amt"] = 0,
 										["c_max"] = 0,
 										["MISS"] = 2,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["total"] = 0,
 									}, -- [1]
 									[0] = {
 										["c_amt"] = 0,
@@ -6186,15 +6194,15 @@ _detalhes_database = {
 										["id"] = 0,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["b_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -6217,13 +6225,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Rend"] = {
 										["c_amt"] = 0,
@@ -6246,13 +6254,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 5,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Hamstring"] = {
 										["c_amt"] = 0,
@@ -6275,13 +6283,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Overpower"] = {
 										["c_amt"] = 0,
@@ -6304,25 +6312,26 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-010B6E50",
+							["end_time"] = 1570134092,
 							["last_dps"] = 7.18142089360419,
 							["custom"] = 0,
-							["last_event"] = 1570134121,
+							["tipo"] = 1,
 							["damage_taken"] = 389.008228,
 							["start_time"] = 1570134073,
 							["delay"] = 1570134079,
-							["tipo"] = 1,
+							["classe"] = "WARRIOR",
 						}, -- [1]
 						{
 							["flag_original"] = 2632,
@@ -6336,19 +6345,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 386.007312,
-							["monster"] = true,
-							["fight_component"] = true,
 							["dps_started"] = false,
 							["end_time"] = 1570134121,
 							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 386.007312,
+							["serial"] = "Creature-0-4470-0-267-2267-0000165746",
+							["monster"] = true,
+							["total"] = 386.007312,
+							["fight_component"] = true,
 							["on_hold"] = false,
 							["nome"] = "Hillsbrad Peasant",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -6365,21 +6374,21 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 3,
 										["MISS"] = 1,
-										["total"] = 0,
+										["r_amt"] = 0,
 										["c_max"] = 0,
 										["DODGE"] = 2,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["total"] = 0,
 									}, -- [1]
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -6403,27 +6412,27 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 12,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["total"] = 386.007312,
-							["serial"] = "Creature-0-4470-0-267-2267-0000165746",
+							["last_event"] = 1570134121,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1570134121,
+							["tipo"] = 1,
 							["damage_taken"] = 770.007312,
 							["start_time"] = 1570134097,
 							["delay"] = 1570134101,
-							["tipo"] = 1,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
@@ -6436,19 +6445,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 251.003492,
-							["monster"] = true,
-							["fight_component"] = true,
 							["dps_started"] = false,
 							["end_time"] = 1570134092,
 							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 251.003492,
+							["serial"] = "Creature-0-4470-0-267-2266-000096577D",
+							["monster"] = true,
+							["total"] = 251.003492,
+							["fight_component"] = true,
 							["on_hold"] = false,
 							["nome"] = "Hillsbrad Farmer",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -6471,13 +6480,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 8,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Disarm"] = {
 										["c_amt"] = 0,
@@ -6503,34 +6512,34 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["total"] = 251.003492,
-							["serial"] = "Creature-0-4470-0-267-2266-000096577D",
+							["last_event"] = 1570134076,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1570134076,
+							["tipo"] = 1,
 							["damage_taken"] = 221.003492,
 							["start_time"] = 1570134077,
 							["delay"] = 1570134076,
-							["tipo"] = 1,
+							["classe"] = "UNKNOW",
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 421,
 					["tipo"] = 3,
+					["combatId"] = 421,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 421,
 					["tipo"] = 7,
+					["combatId"] = 421,
 					["_ActorTable"] = {
 						{
 							["received"] = 30.004578,
@@ -6546,7 +6555,6 @@ _detalhes_database = {
 							["total"] = 30.004578,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									["Bloodrage"] = {
 										["total"] = 20,
@@ -6576,6 +6584,7 @@ _detalhes_database = {
 										["counter"] = 1,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["flag_original"] = 1297,
@@ -6589,21 +6598,42 @@ _detalhes_database = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 421,
 					["tipo"] = 9,
+					["combatId"] = 421,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
-									["Intimidating Shout"] = {
-										["activedamt"] = 0,
-										["id"] = "Intimidating Shout",
+									["Rend"] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["uptime"] = 8,
+										["activedamt"] = 0,
+										["uptime"] = 15,
+										["id"] = "Rend",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Intimidating Shout"] = {
 										["appliedamt"] = 2,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 8,
+										["id"] = "Intimidating Shout",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Hamstring"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 14,
+										["id"] = "Hamstring",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -6620,80 +6650,59 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									["Hamstring"] = {
-										["activedamt"] = 0,
-										["id"] = "Hamstring",
-										["targets"] = {
-										},
-										["uptime"] = 14,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Rend"] = {
-										["activedamt"] = 0,
-										["id"] = "Rend",
-										["targets"] = {
-										},
-										["uptime"] = 15,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 103,
 							["classe"] = "WARRIOR",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 31,
-										["appliedamt"] = 1,
+										["id"] = "Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Bloodrage"] = {
-										["activedamt"] = 1,
-										["id"] = "Bloodrage",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = "Bloodrage",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Strength"] = {
-										["activedamt"] = 1,
-										["id"] = "Strength",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 31,
-										["appliedamt"] = 1,
+										["id"] = "Strength",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Battle Shout"] = {
-										["activedamt"] = 1,
-										["id"] = "Battle Shout",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 31,
-										["appliedamt"] = 1,
+										["id"] = "Battle Shout",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 37,
 							["buff_uptime_targets"] = {
@@ -6707,19 +6716,19 @@ _detalhes_database = {
 								["Overpower"] = 1,
 								["Rend"] = 2,
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["tipo"] = 4,
 							["last_event"] = 1570134092,
 							["nome"] = "Verminz",
-							["pets"] = {
+							["debuff_uptime_targets"] = {
 							},
 							["serial"] = "Player-4465-010B6E50",
-							["tipo"] = 4,
+							["pets"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["nome"] = "Hillsbrad Farmer",
 							["tipo"] = 4,
+							["nome"] = "Hillsbrad Farmer",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -6734,8 +6743,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 421,
 					["tipo"] = 2,
+					["combatId"] = 421,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -6744,14 +6753,13 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 1563132.054,
 				["tempo_start"] = 1570134061,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
+				["cleu_events"] = {
+					["n"] = 1,
 				},
-				["enemy"] = "Hillsbrad Farmer",
-				["combat_counter"] = 3017,
 				["playing_solo"] = true,
 				["totals"] = {
 					857.985235, -- [1]
@@ -6766,28 +6774,16 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatEndedAt"] = 1563104.115,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "22:21:02",
-				["end_time"] = 1563104.115,
 				["totals_grupo"] = {
 					221, -- [1]
 					0, -- [2]
@@ -6801,29 +6797,39 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 421,
-				["TotalElapsedCombatTime"] = 1563104.115,
 				["frags_need_refresh"] = false,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "22:21:33",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Hillsbrad Farmer",
+				["TotalElapsedCombatTime"] = 1563104.115,
+				["CombatEndedAt"] = 1563104.115,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -6831,23 +6837,27 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
-				["frags"] = {
-				},
-				["data_fim"] = "22:21:33",
-				["instance_type"] = "none",
-				["CombatSkillCache"] = {
-				},
+				["end_time"] = 1563104.115,
+				["combat_id"] = 421,
+				["combat_counter"] = 3017,
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 1563073.34,
+				["frags"] = {
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
 				["contra"] = "Hillsbrad Farmer",
+				["start_time"] = 1563073.34,
 				["TimeData"] = {
 				},
+				["data_inicio"] = "22:21:02",
 			}, -- [10]
 			{
 				{
-					["combatId"] = 420,
 					["tipo"] = 2,
+					["combatId"] = 420,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -6858,24 +6868,23 @@ _detalhes_database = {
 							["targets"] = {
 								["Hillsbrad Footman"] = 800,
 							},
-							["total"] = 800.008046,
+							["serial"] = "Player-4465-010B6E50",
 							["pets"] = {
 							},
+							["colocacao"] = 1,
 							["on_hold"] = false,
-							["classe"] = "WARRIOR",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 800.008046,
-							["colocacao"] = 1,
+							["spec"] = 72,
+							["dps_started"] = false,
+							["total"] = 800.008046,
 							["friendlyfire"] = {
 							},
-							["dps_started"] = false,
-							["end_time"] = 1570134049,
-							["friendlyfire_total"] = 0,
-							["spec"] = 72,
+							["last_event"] = 1570134047,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["Hamstring"] = {
 										["c_amt"] = 0,
@@ -6898,13 +6907,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Rend"] = {
 										["c_amt"] = 0,
@@ -6927,13 +6936,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 7,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["!Melee"] = {
 										["c_amt"] = 2,
@@ -6956,13 +6965,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 100,
 										["successful_casted"] = 0,
 										["b_dmg"] = 39,
 										["n_amt"] = 8,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 100,
 									},
 									["Heroic Strike"] = {
 										["c_amt"] = 0,
@@ -6985,25 +6994,26 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-010B6E50",
+							["end_time"] = 1570134049,
 							["last_dps"] = 33.9908245240176,
 							["custom"] = 0,
-							["last_event"] = 1570134047,
+							["tipo"] = 1,
 							["damage_taken"] = 272.008046,
 							["start_time"] = 1570134024,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["classe"] = "WARRIOR",
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -7019,19 +7029,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 304.004908,
-							["monster"] = true,
-							["fight_component"] = true,
 							["dps_started"] = false,
 							["end_time"] = 1570134049,
 							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 304.004908,
+							["serial"] = "Creature-0-4470-0-267-2268-0000165805",
+							["monster"] = true,
+							["total"] = 304.004908,
+							["fight_component"] = true,
 							["on_hold"] = false,
 							["nome"] = "Hillsbrad Footman",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -7049,21 +7059,21 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 3,
 										["a_amt"] = 0,
-										["total"] = 0,
+										["r_amt"] = 0,
 										["c_max"] = 0,
 										["DODGE"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 2,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["total"] = 0,
 									}, -- [1]
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -7087,13 +7097,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 10,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Defensive Stance"] = {
 										["c_amt"] = 0,
@@ -7119,34 +7129,34 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["total"] = 304.004908,
-							["serial"] = "Creature-0-4470-0-267-2268-0000165805",
+							["last_event"] = 1570134044,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1570134044,
+							["tipo"] = 1,
 							["damage_taken"] = 969.004908,
 							["start_time"] = 1570134024,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 420,
 					["tipo"] = 3,
+					["combatId"] = 420,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 420,
 					["tipo"] = 7,
+					["combatId"] = 420,
 					["_ActorTable"] = {
 						{
 							["received"] = 11.002889,
@@ -7162,7 +7172,6 @@ _detalhes_database = {
 							["total"] = 11.002889,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									["Unbridled Wrath"] = {
 										["total"] = 2,
@@ -7183,6 +7192,7 @@ _detalhes_database = {
 										["counter"] = 1,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["flag_original"] = 1297,
@@ -7196,13 +7206,12 @@ _detalhes_database = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 420,
 					["tipo"] = 9,
+					["combatId"] = 420,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Charge Stun"] = {
 										["activedamt"] = -1,
@@ -7217,68 +7226,69 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									["Hamstring"] = {
-										["activedamt"] = 0,
-										["id"] = "Hamstring",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = "Hamstring",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Rend"] = {
-										["activedamt"] = 0,
-										["id"] = "Rend",
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 23,
-										["appliedamt"] = 2,
+										["id"] = "Rend",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 75,
 							["classe"] = "WARRIOR",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 25,
-										["appliedamt"] = 1,
+										["id"] = "Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Strength"] = {
-										["activedamt"] = 1,
-										["id"] = "Strength",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 25,
-										["appliedamt"] = 1,
+										["id"] = "Strength",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Battle Shout"] = {
-										["activedamt"] = 1,
-										["id"] = "Battle Shout",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 25,
-										["appliedamt"] = 1,
+										["id"] = "Battle Shout",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 38,
 							["buff_uptime_targets"] = {
@@ -7290,19 +7300,19 @@ _detalhes_database = {
 								["Hamstring"] = 1,
 								["Heroic Strike"] = 2,
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["tipo"] = 4,
 							["last_event"] = 1570134049,
 							["nome"] = "Verminz",
-							["pets"] = {
+							["debuff_uptime_targets"] = {
 							},
 							["serial"] = "Player-4465-010B6E50",
-							["tipo"] = 4,
+							["pets"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["nome"] = "Hillsbrad Footman",
 							["tipo"] = 4,
+							["nome"] = "Hillsbrad Footman",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -7317,8 +7327,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 420,
 					["tipo"] = 2,
+					["combatId"] = 420,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -7327,14 +7337,13 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 1563072.523,
 				["tempo_start"] = 1570134024,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
+				["cleu_events"] = {
+					["n"] = 1,
 				},
-				["enemy"] = "Hillsbrad Footman",
-				["combat_counter"] = 3016,
 				["playing_solo"] = true,
 				["totals"] = {
 					1103.986533, -- [1]
@@ -7349,28 +7358,16 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatEndedAt"] = 1563060.78,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "22:20:24",
-				["end_time"] = 1563060.78,
 				["totals_grupo"] = {
 					800, -- [1]
 					0, -- [2]
@@ -7384,29 +7381,39 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 420,
-				["TotalElapsedCombatTime"] = 1563060.78,
 				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "22:20:49",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Hillsbrad Footman",
+				["TotalElapsedCombatTime"] = 1563060.78,
+				["CombatEndedAt"] = 1563060.78,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -7414,24 +7421,28 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 1563060.78,
+				["combat_id"] = 420,
+				["combat_counter"] = 3016,
+				["spells_cast_timeline"] = {
+				},
 				["frags"] = {
 					["Hillsbrad Footman"] = 1,
 				},
-				["data_fim"] = "22:20:49",
-				["instance_type"] = "none",
+				["player_last_events"] = {
+				},
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 1563035.743,
 				["contra"] = "Hillsbrad Footman",
+				["start_time"] = 1563035.743,
 				["TimeData"] = {
 				},
+				["data_inicio"] = "22:20:24",
 			}, -- [11]
 			{
 				{
-					["combatId"] = 419,
 					["tipo"] = 2,
+					["combatId"] = 419,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -7442,24 +7453,23 @@ _detalhes_database = {
 							["targets"] = {
 								["Hillsbrad Peasant"] = 748,
 							},
-							["total"] = 748.003828,
+							["serial"] = "Player-4465-010B6E50",
 							["pets"] = {
 							},
+							["colocacao"] = 1,
 							["on_hold"] = false,
-							["classe"] = "WARRIOR",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 748.003828,
-							["colocacao"] = 1,
+							["spec"] = 72,
+							["dps_started"] = false,
+							["total"] = 748.003828,
 							["friendlyfire"] = {
 							},
-							["dps_started"] = false,
-							["end_time"] = 1570134012,
-							["friendlyfire_total"] = 0,
-							["spec"] = 72,
+							["last_event"] = 1570134011,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -7482,13 +7492,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 8,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Execute"] = {
 										["c_amt"] = 0,
@@ -7511,13 +7521,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Rend"] = {
 										["c_amt"] = 0,
@@ -7540,13 +7550,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 5,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Hamstring"] = {
 										["c_amt"] = 0,
@@ -7569,13 +7579,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Heroic Strike"] = {
 										["c_amt"] = 0,
@@ -7598,25 +7608,26 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-010B6E50",
+							["end_time"] = 1570134012,
 							["last_dps"] = 30.5482246181073,
 							["custom"] = 0,
-							["last_event"] = 1570134011,
+							["tipo"] = 1,
 							["damage_taken"] = 286.003828,
 							["start_time"] = 1570133987,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["classe"] = "WARRIOR",
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -7629,19 +7640,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 286.007349,
-							["monster"] = true,
-							["fight_component"] = true,
 							["dps_started"] = false,
 							["end_time"] = 1570134012,
 							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 286.007349,
+							["serial"] = "Creature-0-4470-0-267-2267-000016577D",
+							["monster"] = true,
+							["total"] = 286.007349,
+							["fight_component"] = true,
 							["on_hold"] = false,
 							["nome"] = "Hillsbrad Peasant",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -7664,39 +7675,39 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 27,
 										["n_amt"] = 9,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["total"] = 286.007349,
-							["serial"] = "Creature-0-4470-0-267-2267-000016577D",
+							["last_event"] = 1570134005,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1570134005,
+							["tipo"] = 1,
 							["damage_taken"] = 748.007349,
 							["start_time"] = 1570133987,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 419,
 					["tipo"] = 3,
+					["combatId"] = 419,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 419,
 					["tipo"] = 7,
+					["combatId"] = 419,
 					["_ActorTable"] = {
 						{
 							["received"] = 32.001017,
@@ -7712,7 +7723,6 @@ _detalhes_database = {
 							["total"] = 32.001017,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									["Bloodrage"] = {
 										["total"] = 20,
@@ -7742,6 +7752,7 @@ _detalhes_database = {
 										["counter"] = 3,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["flag_original"] = 1297,
@@ -7755,13 +7766,12 @@ _detalhes_database = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 419,
 					["tipo"] = 9,
+					["combatId"] = 419,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Charge Stun"] = {
 										["activedamt"] = -1,
@@ -7776,79 +7786,80 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									["Hamstring"] = {
-										["activedamt"] = 0,
-										["id"] = "Hamstring",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 7,
-										["appliedamt"] = 1,
+										["id"] = "Hamstring",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Rend"] = {
-										["activedamt"] = 0,
-										["id"] = "Rend",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = "Rend",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 82,
 							["classe"] = "WARRIOR",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 25,
-										["appliedamt"] = 1,
+										["id"] = "Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Bloodrage"] = {
-										["activedamt"] = 1,
-										["id"] = "Bloodrage",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = "Bloodrage",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Strength"] = {
-										["activedamt"] = 1,
-										["id"] = "Strength",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 25,
-										["appliedamt"] = 1,
+										["id"] = "Strength",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Battle Shout"] = {
-										["activedamt"] = 2,
-										["id"] = "Battle Shout",
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 22,
-										["appliedamt"] = 2,
+										["id"] = "Battle Shout",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 22,
 							["buff_uptime_targets"] = {
@@ -7862,20 +7873,20 @@ _detalhes_database = {
 								["Rend"] = 1,
 								["Heroic Strike"] = 2,
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["tipo"] = 4,
 							["last_event"] = 1570134012,
 							["nome"] = "Verminz",
-							["pets"] = {
+							["debuff_uptime_targets"] = {
 							},
 							["serial"] = "Player-4465-010B6E50",
-							["tipo"] = 4,
+							["pets"] = {
+							},
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 419,
 					["tipo"] = 2,
+					["combatId"] = 419,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -7884,14 +7895,13 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 1563034.859,
 				["tempo_start"] = 1570133987,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
+				["cleu_events"] = {
+					["n"] = 1,
 				},
-				["enemy"] = "Hillsbrad Peasant",
-				["combat_counter"] = 3015,
 				["playing_solo"] = true,
 				["totals"] = {
 					1033.991063, -- [1]
@@ -7906,28 +7916,16 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatEndedAt"] = 1563023.9,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "22:19:47",
-				["end_time"] = 1563023.9,
 				["totals_grupo"] = {
 					748, -- [1]
 					0, -- [2]
@@ -7941,29 +7939,39 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 419,
-				["TotalElapsedCombatTime"] = 1563023.9,
 				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "22:20:12",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Hillsbrad Peasant",
+				["TotalElapsedCombatTime"] = 1563023.9,
+				["CombatEndedAt"] = 1563023.9,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -7971,24 +7979,28 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 1563023.9,
+				["combat_id"] = 419,
+				["combat_counter"] = 3015,
+				["spells_cast_timeline"] = {
+				},
 				["frags"] = {
 					["Hillsbrad Peasant"] = 1,
 				},
-				["data_fim"] = "22:20:12",
-				["instance_type"] = "none",
+				["player_last_events"] = {
+				},
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 1562998.497,
 				["contra"] = "Hillsbrad Peasant",
+				["start_time"] = 1562998.497,
 				["TimeData"] = {
 				},
+				["data_inicio"] = "22:19:47",
 			}, -- [12]
 			{
 				{
-					["combatId"] = 418,
 					["tipo"] = 2,
+					["combatId"] = 418,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -7999,24 +8011,23 @@ _detalhes_database = {
 							["targets"] = {
 								["Hillsbrad Peasant"] = 749,
 							},
-							["total"] = 749.006231,
+							["serial"] = "Player-4465-010B6E50",
 							["pets"] = {
 							},
+							["colocacao"] = 1,
 							["on_hold"] = false,
-							["classe"] = "WARRIOR",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 749.006231,
-							["colocacao"] = 1,
+							["spec"] = 72,
+							["dps_started"] = false,
+							["total"] = 749.006231,
 							["friendlyfire"] = {
 							},
-							["dps_started"] = false,
-							["end_time"] = 1570133946,
-							["friendlyfire_total"] = 0,
-							["spec"] = 72,
+							["last_event"] = 1570133938,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -8039,13 +8050,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 8,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Execute"] = {
 										["c_amt"] = 0,
@@ -8068,13 +8079,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Rend"] = {
 										["c_amt"] = 0,
@@ -8097,13 +8108,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 6,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Hamstring"] = {
 										["c_amt"] = 0,
@@ -8126,13 +8137,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Heroic Strike"] = {
 										["c_amt"] = 0,
@@ -8155,25 +8166,26 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-010B6E50",
+							["end_time"] = 1570133946,
 							["last_dps"] = 25.5572467671611,
 							["custom"] = 0,
-							["last_event"] = 1570133938,
+							["tipo"] = 1,
 							["damage_taken"] = 242.006231,
 							["start_time"] = 1570133916,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["classe"] = "WARRIOR",
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -8188,20 +8200,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4470-0-267-2267-0001165746",
 							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 533.001851,
+							["serial"] = "Creature-0-4470-0-267-2267-0001165746",
 							["monster"] = true,
-							["end_time"] = 1570133987,
-							["dps_started"] = false,
 							["total"] = 533.001851,
-							["fight_component"] = true,
-							["friendlyfire_total"] = 0,
+							["end_time"] = 1570133987,
+							["on_hold"] = false,
 							["nome"] = "Hillsbrad Peasant",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -8223,15 +8234,15 @@ _detalhes_database = {
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["m_amt"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["a_dmg"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									}, -- [1]
 									["!Melee"] = {
 										["c_amt"] = 2,
@@ -8255,13 +8266,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 60,
 										["successful_casted"] = 0,
 										["b_dmg"] = 22,
 										["n_amt"] = 14,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 60,
 									},
 									[0] = {
 										["c_amt"] = 0,
@@ -8283,40 +8294,41 @@ _detalhes_database = {
 										["id"] = 0,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["b_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["on_hold"] = false,
+							["last_event"] = 1570133970,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1570133970,
+							["tipo"] = 1,
 							["damage_taken"] = 2121.001851,
 							["start_time"] = 1570133954,
 							["delay"] = 1570133970,
-							["tipo"] = 1,
+							["dps_started"] = false,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 418,
 					["tipo"] = 3,
+					["combatId"] = 418,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 418,
 					["tipo"] = 7,
+					["combatId"] = 418,
 					["_ActorTable"] = {
 						{
 							["received"] = 31.00836,
@@ -8332,7 +8344,6 @@ _detalhes_database = {
 							["total"] = 31.00836,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									["Bloodrage"] = {
 										["total"] = 20,
@@ -8362,6 +8373,7 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["flag_original"] = 1297,
@@ -8375,88 +8387,88 @@ _detalhes_database = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 418,
 					["tipo"] = 9,
+					["combatId"] = 418,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Hamstring"] = {
-										["activedamt"] = 0,
-										["id"] = "Hamstring",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 9,
-										["appliedamt"] = 1,
+										["id"] = "Hamstring",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Rend"] = {
-										["activedamt"] = 0,
-										["id"] = "Rend",
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 20,
-										["appliedamt"] = 2,
+										["id"] = "Rend",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 100,
 							["classe"] = "WARRIOR",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 30,
-										["appliedamt"] = 1,
+										["id"] = "Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Bloodrage"] = {
-										["activedamt"] = 1,
-										["id"] = "Bloodrage",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = "Bloodrage",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Strength"] = {
-										["activedamt"] = 1,
-										["id"] = "Strength",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 30,
-										["appliedamt"] = 1,
+										["id"] = "Strength",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Battle Shout"] = {
-										["activedamt"] = 1,
-										["id"] = "Battle Shout",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 30,
-										["appliedamt"] = 1,
+										["id"] = "Battle Shout",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 29,
 							["buff_uptime_targets"] = {
@@ -8469,20 +8481,20 @@ _detalhes_database = {
 								["Hamstring"] = 1,
 								["Heroic Strike"] = 2,
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["tipo"] = 4,
 							["last_event"] = 1570133946,
 							["nome"] = "Verminz",
-							["pets"] = {
+							["debuff_uptime_targets"] = {
 							},
 							["serial"] = "Player-4465-010B6E50",
-							["tipo"] = 4,
+							["pets"] = {
+							},
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 418,
 					["tipo"] = 2,
+					["combatId"] = 418,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -8491,14 +8503,13 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 1562997.579,
 				["tempo_start"] = 1570133916,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
+				["cleu_events"] = {
+					["n"] = 1,
 				},
-				["enemy"] = "Hillsbrad Peasant",
-				["combat_counter"] = 3014,
 				["playing_solo"] = true,
 				["totals"] = {
 					1281.942973, -- [1]
@@ -8513,28 +8524,16 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatEndedAt"] = 1562957.464,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "22:18:37",
-				["end_time"] = 1562957.464,
 				["totals_grupo"] = {
 					749, -- [1]
 					0, -- [2]
@@ -8548,29 +8547,39 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 418,
-				["TotalElapsedCombatTime"] = 1562957.464,
 				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "22:19:06",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Hillsbrad Peasant",
+				["TotalElapsedCombatTime"] = 1562957.464,
+				["CombatEndedAt"] = 1562957.464,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -8578,37 +8587,41 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 1562957.464,
+				["combat_id"] = 418,
+				["combat_counter"] = 3014,
+				["spells_cast_timeline"] = {
+				},
 				["frags"] = {
 					["Hillsbrad Farmer"] = 1,
 					["Hillsbrad Peasant"] = 1,
 					["Hillsbrad Councilman"] = 1,
 				},
-				["data_fim"] = "22:19:06",
-				["instance_type"] = "none",
+				["player_last_events"] = {
+				},
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 1562928.157,
 				["contra"] = "Hillsbrad Peasant",
+				["start_time"] = 1562928.157,
 				["TimeData"] = {
 				},
+				["data_inicio"] = "22:18:37",
 			}, -- [13]
 			{
 				{
-					["combatId"] = 417,
 					["tipo"] = 2,
+					["combatId"] = 417,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["totalabsorbed"] = 0.007499,
-							["spec"] = 72,
 							["damage_from"] = {
 								["Hillsbrad Peasant"] = true,
 							},
 							["targets"] = {
 								["Hillsbrad Peasant"] = 668,
 							},
+							["serial"] = "Player-4465-010B6E50",
 							["pets"] = {
 							},
 							["colocacao"] = 1,
@@ -8617,15 +8630,14 @@ _detalhes_database = {
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 668.007499,
-							["friendlyfire"] = {
-							},
+							["spec"] = 72,
 							["dps_started"] = false,
 							["total"] = 668.007499,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
+							["last_event"] = 1570133908,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["Hamstring"] = {
 										["c_amt"] = 0,
@@ -8648,13 +8660,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Rend"] = {
 										["c_amt"] = 0,
@@ -8677,13 +8689,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 5,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["!Melee"] = {
 										["c_amt"] = 1,
@@ -8706,13 +8718,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 103,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 6,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 103,
 									},
 									["Heroic Strike"] = {
 										["c_amt"] = 1,
@@ -8735,25 +8747,26 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 191,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 191,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-010B6E50",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 40.1278007451663,
 							["custom"] = 0,
-							["last_event"] = 1570133908,
+							["tipo"] = 1,
 							["damage_taken"] = 116.007499,
 							["start_time"] = 1570133893,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["on_hold"] = false,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -8766,20 +8779,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4470-0-267-2267-0001965746",
 							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 116.005594,
-							["monster"] = true,
-							["fight_component"] = true,
+							["serial"] = "Creature-0-4470-0-267-2267-0001965746",
 							["dps_started"] = false,
 							["total"] = 116.005594,
 							["end_time"] = 1570133909,
-							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
 							["nome"] = "Hillsbrad Peasant",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -8796,21 +8808,21 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 2,
 										["DODGE"] = 1,
-										["total"] = 0,
+										["r_amt"] = 0,
 										["c_max"] = 0,
 										["a_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["total"] = 0,
 									}, -- [1]
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -8833,13 +8845,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 26,
 										["n_amt"] = 4,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Pierce Armor"] = {
 										["c_amt"] = 0,
@@ -8865,33 +8877,34 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["on_hold"] = false,
+							["last_event"] = 1570133903,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1570133903,
+							["tipo"] = 1,
 							["damage_taken"] = 668.005594,
 							["start_time"] = 1570133893,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["fight_component"] = true,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 417,
 					["tipo"] = 3,
+					["combatId"] = 417,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 417,
 					["tipo"] = 7,
+					["combatId"] = 417,
 					["_ActorTable"] = {
 						{
 							["received"] = 13.007254,
@@ -8907,7 +8920,6 @@ _detalhes_database = {
 							["total"] = 13.007254,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									["Unbridled Wrath"] = {
 										["total"] = 4,
@@ -8928,6 +8940,7 @@ _detalhes_database = {
 										["counter"] = 1,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["flag_original"] = 1297,
@@ -8941,13 +8954,12 @@ _detalhes_database = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 417,
 					["tipo"] = 9,
+					["combatId"] = 417,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Charge Stun"] = {
 										["activedamt"] = -1,
@@ -8962,68 +8974,69 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									["Hamstring"] = {
-										["activedamt"] = 0,
-										["id"] = "Hamstring",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 9,
-										["appliedamt"] = 1,
+										["id"] = "Hamstring",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Rend"] = {
-										["activedamt"] = 0,
-										["id"] = "Rend",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = "Rend",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 48,
 							["classe"] = "WARRIOR",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 16,
-										["appliedamt"] = 1,
+										["id"] = "Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Strength"] = {
-										["activedamt"] = 1,
-										["id"] = "Strength",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 16,
-										["appliedamt"] = 1,
+										["id"] = "Strength",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Battle Shout"] = {
-										["activedamt"] = 1,
-										["id"] = "Battle Shout",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 16,
-										["appliedamt"] = 1,
+										["id"] = "Battle Shout",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 24,
 							["buff_uptime_targets"] = {
@@ -9035,19 +9048,19 @@ _detalhes_database = {
 								["Hamstring"] = 1,
 								["Heroic Strike"] = 1,
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["tipo"] = 4,
 							["last_event"] = 1570133909,
 							["nome"] = "Verminz",
-							["pets"] = {
+							["debuff_uptime_targets"] = {
 							},
 							["serial"] = "Player-4465-010B6E50",
-							["tipo"] = 4,
+							["pets"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["nome"] = "Hillsbrad Peasant",
 							["tipo"] = 4,
+							["nome"] = "Hillsbrad Peasant",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -9062,8 +9075,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 417,
 					["tipo"] = 2,
+					["combatId"] = 417,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -9072,14 +9085,13 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 1562927.156,
 				["tempo_start"] = 1570133893,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
+				["cleu_events"] = {
+					["n"] = 1,
 				},
-				["enemy"] = "Hillsbrad Peasant",
-				["combat_counter"] = 3013,
 				["playing_solo"] = true,
 				["totals"] = {
 					783.962885, -- [1]
@@ -9094,28 +9106,16 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatEndedAt"] = 1562921.051,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "22:18:13",
-				["end_time"] = 1562921.051,
 				["totals_grupo"] = {
 					668, -- [1]
 					0, -- [2]
@@ -9129,29 +9129,39 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 417,
-				["TotalElapsedCombatTime"] = 1562921.051,
 				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "22:18:30",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Hillsbrad Peasant",
+				["TotalElapsedCombatTime"] = 1562921.051,
+				["CombatEndedAt"] = 1562921.051,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -9159,26 +9169,30 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 1562921.051,
+				["combat_id"] = 417,
+				["combat_counter"] = 3013,
+				["spells_cast_timeline"] = {
+				},
 				["frags"] = {
 					["Hillsbrad Footman"] = 1,
 					["Hillsbrad Peasant"] = 1,
 					["Hillsbrad Farmer"] = 2,
 				},
-				["data_fim"] = "22:18:30",
-				["instance_type"] = "none",
+				["player_last_events"] = {
+				},
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 1562904.404,
 				["contra"] = "Hillsbrad Peasant",
+				["start_time"] = 1562904.404,
 				["TimeData"] = {
 				},
+				["data_inicio"] = "22:18:13",
 			}, -- [14]
 			{
 				{
-					["combatId"] = 416,
 					["tipo"] = 2,
+					["combatId"] = 416,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -9191,21 +9205,20 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["last_event"] = 1570133872,
 							["classe"] = "WARRIOR",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 734.001064,
+							["serial"] = "Player-4465-010B6E50",
+							["dps_started"] = false,
+							["end_time"] = 1570133873,
+							["damage_taken"] = 158.001064,
 							["friendlyfire"] = {
 							},
-							["end_time"] = 1570133873,
-							["dps_started"] = false,
-							["total"] = 734.001064,
-							["colocacao"] = 1,
-							["friendlyfire_total"] = 0,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									[0] = {
 										["c_amt"] = 0,
@@ -9227,15 +9240,15 @@ _detalhes_database = {
 										["id"] = 0,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["b_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -9258,13 +9271,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 7,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Execute"] = {
 										["c_amt"] = 0,
@@ -9287,13 +9300,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Rend"] = {
 										["c_amt"] = 0,
@@ -9316,13 +9329,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 5,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Hamstring"] = {
 										["c_amt"] = 0,
@@ -9345,13 +9358,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Heroic Strike"] = {
 										["c_amt"] = 1,
@@ -9374,25 +9387,26 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 180,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 180,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-010B6E50",
+							["colocacao"] = 1,
 							["last_dps"] = 38.7029298179149,
 							["custom"] = 0,
-							["last_event"] = 1570133872,
-							["damage_taken"] = 158.001064,
+							["tipo"] = 1,
+							["on_hold"] = false,
 							["start_time"] = 1570133854,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 734.001064,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -9405,20 +9419,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4470-0-267-2267-00001656DA",
 							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 158.002193,
-							["monster"] = true,
-							["fight_component"] = true,
+							["serial"] = "Creature-0-4470-0-267-2267-00001656DA",
 							["dps_started"] = false,
 							["total"] = 158.002193,
 							["end_time"] = 1570133873,
-							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
 							["nome"] = "Hillsbrad Peasant",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -9440,15 +9453,15 @@ _detalhes_database = {
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["b_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -9471,13 +9484,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 5,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Pierce Armor"] = {
 										["c_amt"] = 0,
@@ -9503,33 +9516,34 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["on_hold"] = false,
+							["last_event"] = 1570133865,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1570133865,
+							["tipo"] = 1,
 							["damage_taken"] = 734.002193,
 							["start_time"] = 1570133855,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["fight_component"] = true,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 416,
 					["tipo"] = 3,
+					["combatId"] = 416,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 416,
 					["tipo"] = 7,
+					["combatId"] = 416,
 					["_ActorTable"] = {
 						{
 							["received"] = 31.006153,
@@ -9545,7 +9559,6 @@ _detalhes_database = {
 							["total"] = 31.006153,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									["Unbridled Wrath"] = {
 										["total"] = 2,
@@ -9575,6 +9588,7 @@ _detalhes_database = {
 										["counter"] = 11,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["flag_original"] = 1297,
@@ -9588,15 +9602,12 @@ _detalhes_database = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 416,
 					["tipo"] = 9,
+					["combatId"] = 416,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["debuff_uptime"] = 21,
-							["nome"] = "Verminz",
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Charge Stun"] = {
 										["activedamt"] = -1,
@@ -9611,35 +9622,85 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									["Hamstring"] = {
-										["activedamt"] = 0,
-										["id"] = "Hamstring",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = "Hamstring",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Rend"] = {
-										["activedamt"] = 0,
-										["id"] = "Rend",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = "Rend",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime_targets"] = {
+							["pets"] = {
 							},
+							["classe"] = "WARRIOR",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Armor"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 19,
+										["id"] = "Armor",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Bloodrage"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = "Bloodrage",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Strength"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 19,
+										["id"] = "Strength",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Battle Shout"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 19,
+										["id"] = "Battle Shout",
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 21,
+							["nome"] = "Verminz",
 							["grupo"] = true,
-							["debuff_uptime_targets"] = {
-							},
-							["buff_uptime"] = 67,
 							["spell_cast"] = {
 								["Battle Shout"] = 1,
 								["Hamstring"] = 2,
@@ -9647,66 +9708,19 @@ _detalhes_database = {
 								["Rend"] = 1,
 								["Heroic Strike"] = 1,
 							},
-							["pets"] = {
+							["debuff_uptime_targets"] = {
 							},
 							["tipo"] = 4,
-							["last_event"] = 1570133873,
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									["Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Armor",
-										["targets"] = {
-										},
-										["uptime"] = 19,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Bloodrage"] = {
-										["activedamt"] = 1,
-										["id"] = "Bloodrage",
-										["targets"] = {
-										},
-										["uptime"] = 10,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Strength"] = {
-										["activedamt"] = 1,
-										["id"] = "Strength",
-										["targets"] = {
-										},
-										["uptime"] = 19,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Battle Shout"] = {
-										["activedamt"] = 1,
-										["id"] = "Battle Shout",
-										["targets"] = {
-										},
-										["uptime"] = 19,
-										["appliedamt"] = 1,
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
+							["buff_uptime_targets"] = {
 							},
+							["last_event"] = 1570133873,
 							["serial"] = "Player-4465-010B6E50",
-							["classe"] = "WARRIOR",
+							["buff_uptime"] = 67,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["nome"] = "Hillsbrad Peasant",
 							["tipo"] = 4,
+							["nome"] = "Hillsbrad Peasant",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -9721,8 +9735,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 416,
 					["tipo"] = 2,
+					["combatId"] = 416,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -9731,14 +9745,13 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 1562903.704,
 				["tempo_start"] = 1570133854,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
+				["cleu_events"] = {
+					["n"] = 1,
 				},
-				["enemy"] = "Hillsbrad Peasant",
-				["combat_counter"] = 3012,
 				["playing_solo"] = true,
 				["totals"] = {
 					891.94652, -- [1]
@@ -9753,28 +9766,16 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatEndedAt"] = 1562885.022,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "22:17:35",
-				["end_time"] = 1562885.022,
 				["totals_grupo"] = {
 					734, -- [1]
 					0, -- [2]
@@ -9788,35 +9789,50 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 416,
-				["TotalElapsedCombatTime"] = 1562885.022,
 				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "22:17:54",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Hillsbrad Peasant",
+				["TotalElapsedCombatTime"] = 1562885.022,
+				["CombatEndedAt"] = 1562885.022,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Verminz"] = 734.001064,
 						}, -- [1]
 					},
+				},
+				["end_time"] = 1562885.022,
+				["combat_id"] = 416,
+				["combat_counter"] = 3012,
+				["spells_cast_timeline"] = {
 				},
 				["frags"] = {
 					["Hillsbrad Footman"] = 1,
@@ -9825,21 +9841,20 @@ _detalhes_database = {
 					["Hillsbrad Peasant"] = 1,
 					["Blacksmith Verringtan"] = 1,
 				},
-				["data_fim"] = "22:17:54",
-				["instance_type"] = "none",
+				["player_last_events"] = {
+				},
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 1562866.057,
 				["contra"] = "Hillsbrad Peasant",
+				["start_time"] = 1562866.057,
 				["TimeData"] = {
 				},
+				["data_inicio"] = "22:17:35",
 			}, -- [15]
 			{
 				{
-					["combatId"] = 415,
 					["tipo"] = 2,
+					["combatId"] = 415,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -9855,19 +9870,18 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["classe"] = "WARRIOR",
+							["last_event"] = 1570133817,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1413.001581,
-							["friendlyfire"] = {
-							},
-							["colocacao"] = 1,
+							["serial"] = "Player-4465-010B6E50",
 							["dps_started"] = false,
-							["end_time"] = 1570133818,
-							["friendlyfire_total"] = 0,
+							["total"] = 1413.001581,
 							["on_hold"] = false,
+							["damage_taken"] = 471.001581,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -9889,15 +9903,15 @@ _detalhes_database = {
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["m_amt"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["a_dmg"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									}, -- [1]
 									["!Melee"] = {
 										["c_amt"] = 2,
@@ -9921,13 +9935,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 98,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 10,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 98,
 									},
 									["Execute"] = {
 										["c_amt"] = 0,
@@ -9950,13 +9964,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Rend"] = {
 										["c_amt"] = 0,
@@ -9980,13 +9994,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 10,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Hamstring"] = {
 										["c_amt"] = 0,
@@ -10010,13 +10024,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Heroic Strike"] = {
 										["c_amt"] = 1,
@@ -10040,26 +10054,27 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 178,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 178,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 1413.001581,
-							["serial"] = "Player-4465-010B6E50",
+							["colocacao"] = 1,
 							["last_dps"] = 32.0881476326261,
 							["custom"] = 0,
-							["last_event"] = 1570133817,
-							["damage_taken"] = 471.001581,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1570133776,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["end_time"] = 1570133818,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -10074,19 +10089,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 677.003088,
-							["monster"] = true,
-							["fight_component"] = true,
 							["dps_started"] = false,
 							["end_time"] = 1570133818,
 							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 677.003088,
+							["serial"] = "Creature-0-4470-0-267-2267-00011656FA",
+							["monster"] = true,
+							["total"] = 677.003088,
+							["fight_component"] = true,
 							["on_hold"] = false,
 							["nome"] = "Hillsbrad Peasant",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -10107,19 +10122,19 @@ _detalhes_database = {
 										["a_amt"] = 0,
 										["total"] = 0,
 										["c_max"] = 0,
-										["MISS"] = 2,
+										["b_dmg"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["m_amt"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 2,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
+										["MISS"] = 2,
 									}, -- [1]
 									[0] = {
 										["c_amt"] = 0,
@@ -10141,15 +10156,15 @@ _detalhes_database = {
 										["id"] = 0,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["m_amt"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["a_dmg"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Pierce Armor"] = {
 										["c_amt"] = 0,
@@ -10175,8 +10190,8 @@ _detalhes_database = {
 										["successful_casted"] = 2,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["r_amt"] = 0,
 									},
 									["!Melee"] = {
 										["c_amt"] = 3,
@@ -10200,27 +10215,27 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 55,
 										["successful_casted"] = 0,
 										["b_dmg"] = 19,
 										["n_amt"] = 16,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 55,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["total"] = 677.003088,
-							["serial"] = "Creature-0-4470-0-267-2267-00011656FA",
+							["last_event"] = 1570133797,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1570133797,
+							["tipo"] = 1,
 							["damage_taken"] = 1886.003088,
 							["start_time"] = 1570133794,
 							["delay"] = 1570133797,
-							["tipo"] = 1,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
@@ -10237,19 +10252,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 403.007453,
-							["monster"] = true,
-							["fight_component"] = true,
 							["dps_started"] = false,
 							["end_time"] = 1570133854,
 							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 403.007453,
+							["serial"] = "Creature-0-4470-0-267-2266-000216567F",
+							["monster"] = true,
+							["total"] = 403.007453,
+							["fight_component"] = true,
 							["on_hold"] = false,
 							["nome"] = "Hillsbrad Farmer",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -10271,19 +10286,19 @@ _detalhes_database = {
 										["DODGE"] = 4,
 										["total"] = 0,
 										["c_max"] = 0,
-										["a_amt"] = 0,
+										["b_dmg"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["m_amt"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
 									}, -- [1]
 									["!Melee"] = {
 										["c_amt"] = 1,
@@ -10307,13 +10322,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 56,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 12,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 56,
 									},
 									["Disarm"] = {
 										["c_amt"] = 0,
@@ -10339,32 +10354,33 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["total"] = 403.007453,
-							["serial"] = "Creature-0-4470-0-267-2266-000216567F",
+							["last_event"] = 1570133853,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1570133853,
+							["tipo"] = 1,
 							["damage_taken"] = 1906.007453,
 							["start_time"] = 1570133798,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["classe"] = "UNKNOW",
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 415,
 					["tipo"] = 3,
+					["combatId"] = 415,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["targets_overheal"] = {
+							["healing_from"] = {
+								["Verminz"] = true,
 							},
 							["pets"] = {
 							},
@@ -10389,12 +10405,8 @@ _detalhes_database = {
 							["healing_taken"] = 75.008845,
 							["fight_component"] = true,
 							["end_time"] = 1570133818,
-							["healing_from"] = {
-								["Verminz"] = true,
-							},
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Blood Craze"] = {
 										["c_amt"] = 0,
@@ -10424,8 +10436,11 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
+							["targets_overheal"] = {
+							},
 							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
 							["tipo"] = 2,
@@ -10437,8 +10452,8 @@ _detalhes_database = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 415,
 					["tipo"] = 7,
+					["combatId"] = 415,
 					["_ActorTable"] = {
 						{
 							["received"] = 33.003965,
@@ -10455,7 +10470,6 @@ _detalhes_database = {
 							["total"] = 33.003965,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									["Bloodrage"] = {
 										["total"] = 20,
@@ -10485,6 +10499,7 @@ _detalhes_database = {
 										["counter"] = 4,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["flag_original"] = 1297,
@@ -10497,110 +10512,110 @@ _detalhes_database = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 415,
 					["tipo"] = 9,
+					["combatId"] = 415,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Hamstring"] = {
-										["activedamt"] = 0,
-										["id"] = "Hamstring",
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 13,
-										["appliedamt"] = 2,
+										["id"] = "Hamstring",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Rend"] = {
-										["activedamt"] = 0,
-										["id"] = "Rend",
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 30,
-										["appliedamt"] = 2,
+										["id"] = "Rend",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 181,
 							["classe"] = "WARRIOR",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Enrage"] = {
-										["activedamt"] = 2,
-										["id"] = "Enrage",
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 26,
-										["appliedamt"] = 2,
+										["id"] = "Enrage",
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Bloodrage"] = {
-										["activedamt"] = 1,
-										["id"] = "Bloodrage",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = "Bloodrage",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 44,
-										["appliedamt"] = 1,
+										["id"] = "Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blood Craze"] = {
-										["activedamt"] = 3,
-										["id"] = "Blood Craze",
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 3,
 										["uptime"] = 18,
-										["appliedamt"] = 3,
+										["id"] = "Blood Craze",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Strength"] = {
-										["activedamt"] = 1,
-										["id"] = "Strength",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 44,
-										["appliedamt"] = 1,
+										["id"] = "Strength",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Battle Shout"] = {
-										["activedamt"] = 1,
-										["id"] = "Battle Shout",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 39,
-										["appliedamt"] = 1,
+										["id"] = "Battle Shout",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 43,
@@ -10625,8 +10640,8 @@ _detalhes_database = {
 						}, -- [1]
 						{
 							["flag_original"] = 2632,
-							["nome"] = "Hillsbrad Peasant",
 							["tipo"] = 4,
+							["nome"] = "Hillsbrad Peasant",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -10640,8 +10655,8 @@ _detalhes_database = {
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
-							["nome"] = "Hillsbrad Farmer",
 							["tipo"] = 4,
+							["nome"] = "Hillsbrad Farmer",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -10656,8 +10671,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 415,
 					["tipo"] = 2,
+					["combatId"] = 415,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -10666,14 +10681,13 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 1562865.189,
 				["tempo_start"] = 1570133774,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
+				["cleu_events"] = {
+					["n"] = 1,
 				},
-				["enemy"] = "Hillsbrad Peasant",
-				["combat_counter"] = 3011,
 				["playing_solo"] = true,
 				["totals"] = {
 					2492.936963, -- [1]
@@ -10688,28 +10702,16 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatEndedAt"] = 1562830.328,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "22:16:15",
-				["end_time"] = 1562830.328,
 				["totals_grupo"] = {
 					1413, -- [1]
 					75, -- [2]
@@ -10723,22 +10725,34 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 415,
-				["TotalElapsedCombatTime"] = 1562830.328,
 				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "22:16:59",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Hillsbrad Peasant",
+				["TotalElapsedCombatTime"] = 1562830.328,
+				["CombatEndedAt"] = 1562830.328,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -10746,33 +10760,35 @@ _detalhes_database = {
 							["Verminz"] = 75.008845,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Verminz"] = 1413.001581,
 						}, -- [1]
 					},
 				},
+				["end_time"] = 1562830.328,
+				["combat_id"] = 415,
+				["combat_counter"] = 3011,
+				["spells_cast_timeline"] = {
+				},
 				["frags"] = {
 					["Hillsbrad Farmer"] = 1,
 					["Hillsbrad Peasant"] = 3,
 				},
-				["data_fim"] = "22:16:59",
-				["instance_type"] = "none",
+				["player_last_events"] = {
+				},
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 1562786.293,
 				["contra"] = "Hillsbrad Peasant",
+				["start_time"] = 1562786.293,
 				["TimeData"] = {
 				},
+				["data_inicio"] = "22:16:15",
 			}, -- [16]
 			{
 				{
-					["combatId"] = 414,
 					["tipo"] = 2,
+					["combatId"] = 414,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -10786,19 +10802,18 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["classe"] = "WARRIOR",
+							["last_event"] = 1570133774,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 683.006828,
-							["friendlyfire"] = {
-							},
-							["colocacao"] = 1,
+							["serial"] = "Player-4465-010B6E50",
 							["dps_started"] = false,
-							["end_time"] = 1570133757,
-							["friendlyfire_total"] = 0,
+							["total"] = 683.006828,
 							["on_hold"] = false,
+							["damage_taken"] = 240.006828,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -10820,15 +10835,15 @@ _detalhes_database = {
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["b_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 									[0] = {
 										["c_amt"] = 0,
@@ -10850,15 +10865,15 @@ _detalhes_database = {
 										["id"] = 0,
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["m_amt"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["a_dmg"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -10881,13 +10896,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 6,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Execute"] = {
 										["c_amt"] = 0,
@@ -10910,13 +10925,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Rend"] = {
 										["c_amt"] = 0,
@@ -10939,13 +10954,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 4,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Hamstring"] = {
 										["c_amt"] = 0,
@@ -10968,13 +10983,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Heroic Strike"] = {
 										["c_amt"] = 0,
@@ -10997,26 +11012,27 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 683.006828,
-							["serial"] = "Player-4465-010B6E50",
+							["colocacao"] = 1,
 							["last_dps"] = 35.421990872518,
 							["custom"] = 0,
-							["last_event"] = 1570133774,
-							["damage_taken"] = 240.006828,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1570133738,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["end_time"] = 1570133757,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -11030,19 +11046,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 240.005942,
-							["monster"] = true,
-							["fight_component"] = true,
 							["dps_started"] = false,
 							["end_time"] = 1570133757,
 							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 240.005942,
+							["serial"] = "Creature-0-4470-0-267-2266-00009656DA",
+							["monster"] = true,
+							["total"] = 240.005942,
+							["fight_component"] = true,
 							["on_hold"] = false,
 							["nome"] = "Hillsbrad Farmer",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -11059,21 +11075,21 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 2,
 										["a_amt"] = 0,
-										["total"] = 0,
+										["r_amt"] = 0,
 										["c_max"] = 0,
 										["DODGE"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["total"] = 0,
 									}, -- [1]
 									["!Melee"] = {
 										["c_amt"] = 1,
@@ -11096,37 +11112,38 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 64,
 										["successful_casted"] = 0,
 										["b_dmg"] = 18,
 										["n_amt"] = 6,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 64,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["total"] = 240.005942,
-							["serial"] = "Creature-0-4470-0-267-2266-00009656DA",
+							["last_event"] = 1570133753,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1570133753,
+							["tipo"] = 1,
 							["damage_taken"] = 798.005942,
 							["start_time"] = 1570133739,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 414,
 					["tipo"] = 3,
+					["combatId"] = 414,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["targets_overheal"] = {
+							["healing_from"] = {
+								["Verminz"] = true,
 							},
 							["pets"] = {
 							},
@@ -11151,12 +11168,8 @@ _detalhes_database = {
 							["healing_taken"] = 24.001928,
 							["fight_component"] = true,
 							["end_time"] = 1570133757,
-							["healing_from"] = {
-								["Verminz"] = true,
-							},
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Blood Craze"] = {
 										["c_amt"] = 0,
@@ -11186,8 +11199,11 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
+							["targets_overheal"] = {
+							},
 							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
 							["tipo"] = 2,
@@ -11199,8 +11215,8 @@ _detalhes_database = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 414,
 					["tipo"] = 7,
+					["combatId"] = 414,
 					["_ActorTable"] = {
 						{
 							["received"] = 33.003929,
@@ -11217,7 +11233,6 @@ _detalhes_database = {
 							["total"] = 33.003929,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									["Bloodrage"] = {
 										["total"] = 20,
@@ -11247,6 +11262,7 @@ _detalhes_database = {
 										["counter"] = 4,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["flag_original"] = 1297,
@@ -11259,13 +11275,12 @@ _detalhes_database = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 414,
 					["tipo"] = 9,
+					["combatId"] = 414,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Charge Stun"] = {
 										["activedamt"] = -1,
@@ -11280,101 +11295,102 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									["Hamstring"] = {
-										["activedamt"] = 0,
-										["id"] = "Hamstring",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 3,
-										["appliedamt"] = 1,
+										["id"] = "Hamstring",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Rend"] = {
-										["activedamt"] = 0,
-										["id"] = "Rend",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = "Rend",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 83,
 							["classe"] = "WARRIOR",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Battle Shout"] = {
-										["activedamt"] = 1,
-										["id"] = "Battle Shout",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 19,
-										["appliedamt"] = 1,
+										["id"] = "Battle Shout",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Enrage"] = {
-										["activedamt"] = 1,
-										["id"] = "Enrage",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = "Enrage",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Bloodrage"] = {
-										["activedamt"] = 1,
-										["id"] = "Bloodrage",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = "Bloodrage",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blood Craze"] = {
-										["activedamt"] = 1,
-										["id"] = "Blood Craze",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = "Blood Craze",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Strength"] = {
-										["activedamt"] = 1,
-										["id"] = "Strength",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 19,
-										["appliedamt"] = 1,
+										["id"] = "Strength",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 19,
-										["appliedamt"] = 1,
+										["id"] = "Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 18,
@@ -11399,8 +11415,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 414,
 					["tipo"] = 2,
+					["combatId"] = 414,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -11409,14 +11425,13 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 1562784.675,
 				["tempo_start"] = 1570133738,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
+				["cleu_events"] = {
+					["n"] = 1,
 				},
-				["enemy"] = "Hillsbrad Farmer",
-				["combat_counter"] = 3010,
 				["playing_solo"] = true,
 				["totals"] = {
 					922.974212, -- [1]
@@ -11431,28 +11446,16 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatEndedAt"] = 1562768.845,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "22:15:38",
-				["end_time"] = 1562768.845,
 				["totals_grupo"] = {
 					683, -- [1]
 					24, -- [2]
@@ -11466,22 +11469,34 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 414,
-				["TotalElapsedCombatTime"] = 1562768.845,
 				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "22:15:57",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Hillsbrad Farmer",
+				["TotalElapsedCombatTime"] = 1562768.845,
+				["CombatEndedAt"] = 1562768.845,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -11489,32 +11504,34 @@ _detalhes_database = {
 							["Verminz"] = 24.001928,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Verminz"] = 683.006828,
 						}, -- [1]
 					},
 				},
+				["end_time"] = 1562768.845,
+				["combat_id"] = 414,
+				["combat_counter"] = 3010,
+				["spells_cast_timeline"] = {
+				},
 				["frags"] = {
 					["Hillsbrad Farmer"] = 2,
 				},
-				["data_fim"] = "22:15:57",
-				["instance_type"] = "none",
+				["player_last_events"] = {
+				},
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 1562749.563,
 				["contra"] = "Hillsbrad Farmer",
+				["start_time"] = 1562749.563,
 				["TimeData"] = {
 				},
+				["data_inicio"] = "22:15:38",
 			}, -- [17]
 			{
 				{
-					["combatId"] = 413,
 					["tipo"] = 2,
+					["combatId"] = 413,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -11527,21 +11544,20 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["last_event"] = 1570133716,
 							["classe"] = "WARRIOR",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 691.003432,
+							["serial"] = "Player-4465-010B6E50",
+							["dps_started"] = false,
+							["end_time"] = 1570133717,
+							["damage_taken"] = 382.003432,
 							["friendlyfire"] = {
 							},
-							["end_time"] = 1570133717,
-							["dps_started"] = false,
-							["total"] = 691.003432,
-							["colocacao"] = 1,
-							["friendlyfire_total"] = 0,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -11558,21 +11574,21 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 4,
 										["a_amt"] = 0,
-										["total"] = 0,
+										["r_amt"] = 0,
 										["c_max"] = 0,
 										["MISS"] = 2,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 2,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["total"] = 0,
 									}, -- [1]
 									[0] = {
 										["c_amt"] = 0,
@@ -11589,21 +11605,21 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 2,
 										["MISS"] = 1,
-										["total"] = 0,
+										["r_amt"] = 0,
 										["c_max"] = 0,
 										["a_amt"] = 0,
 										["id"] = 0,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["total"] = 0,
 									},
 									["!Melee"] = {
 										["c_amt"] = 1,
@@ -11626,13 +11642,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 117,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 7,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 117,
 									},
 									["Rend"] = {
 										["c_amt"] = 0,
@@ -11655,13 +11671,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 6,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Hamstring"] = {
 										["c_amt"] = 0,
@@ -11684,13 +11700,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Heroic Strike"] = {
 										["c_amt"] = 0,
@@ -11713,25 +11729,26 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-010B6E50",
+							["colocacao"] = 1,
 							["last_dps"] = 21.5871112777194,
 							["custom"] = 0,
-							["last_event"] = 1570133716,
-							["damage_taken"] = 382.003432,
+							["tipo"] = 1,
+							["on_hold"] = false,
 							["start_time"] = 1570133685,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 691.003432,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -11746,20 +11763,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4470-0-267-2266-0001165698",
 							["classe"] = "UNKNOW",
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 557.005158,
-							["monster"] = true,
-							["fight_component"] = true,
+							["serial"] = "Creature-0-4470-0-267-2266-0001165698",
 							["dps_started"] = false,
 							["total"] = 557.005158,
 							["end_time"] = 1570133738,
-							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
 							["nome"] = "Hillsbrad Farmer",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -11777,21 +11793,21 @@ _detalhes_database = {
 										["g_dmg"] = 0,
 										["counter"] = 2,
 										["DODGE"] = 1,
-										["total"] = 0,
+										["r_amt"] = 0,
 										["c_max"] = 0,
 										["MISS"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["total"] = 0,
 									}, -- [1]
 									["Disarm"] = {
 										["c_amt"] = 0,
@@ -11817,8 +11833,8 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["r_amt"] = 0,
 									},
 									["!Melee"] = {
 										["c_amt"] = 2,
@@ -11842,36 +11858,38 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 49,
 										["successful_casted"] = 0,
 										["b_dmg"] = 18,
 										["n_amt"] = 16,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 49,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["on_hold"] = false,
+							["last_event"] = 1570133736,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1570133736,
+							["tipo"] = 1,
 							["damage_taken"] = 1215.005158,
 							["start_time"] = 1570133685,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["fight_component"] = true,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 413,
 					["tipo"] = 3,
+					["combatId"] = 413,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["targets_overheal"] = {
+							["healing_from"] = {
+								["Verminz"] = true,
 							},
 							["pets"] = {
 							},
@@ -11896,12 +11914,8 @@ _detalhes_database = {
 							["healing_taken"] = 25.008392,
 							["fight_component"] = true,
 							["end_time"] = 1570133717,
-							["healing_from"] = {
-								["Verminz"] = true,
-							},
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Blood Craze"] = {
 										["c_amt"] = 0,
@@ -11931,8 +11945,11 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
+							["targets_overheal"] = {
+							},
 							["heal_enemy_amt"] = 0,
 							["custom"] = 0,
 							["tipo"] = 2,
@@ -11944,8 +11961,8 @@ _detalhes_database = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 413,
 					["tipo"] = 7,
+					["combatId"] = 413,
 					["_ActorTable"] = {
 						{
 							["received"] = 12.004357,
@@ -11962,7 +11979,6 @@ _detalhes_database = {
 							["total"] = 12.004357,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									["Unbridled Wrath"] = {
 										["total"] = 3,
@@ -11983,6 +11999,7 @@ _detalhes_database = {
 										["counter"] = 1,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["flag_original"] = 1297,
@@ -11995,99 +12012,99 @@ _detalhes_database = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 413,
 					["tipo"] = 9,
+					["combatId"] = 413,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Hamstring"] = {
-										["activedamt"] = 0,
-										["id"] = "Hamstring",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 15,
-										["appliedamt"] = 1,
+										["id"] = "Hamstring",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Rend"] = {
-										["activedamt"] = 0,
-										["id"] = "Rend",
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 20,
-										["appliedamt"] = 2,
+										["id"] = "Rend",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 114,
 							["classe"] = "WARRIOR",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Battle Shout"] = {
-										["activedamt"] = 1,
-										["id"] = "Battle Shout",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 32,
-										["appliedamt"] = 1,
+										["id"] = "Battle Shout",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 32,
-										["appliedamt"] = 1,
+										["id"] = "Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blood Craze"] = {
-										["activedamt"] = 1,
-										["id"] = "Blood Craze",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = "Blood Craze",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Strength"] = {
-										["activedamt"] = 1,
-										["id"] = "Strength",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 32,
-										["appliedamt"] = 1,
+										["id"] = "Strength",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Enrage"] = {
-										["activedamt"] = 1,
-										["id"] = "Enrage",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 1,
+										["id"] = "Enrage",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 35,
@@ -12110,8 +12127,8 @@ _detalhes_database = {
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["nome"] = "Hillsbrad Farmer",
 							["tipo"] = 4,
+							["nome"] = "Hillsbrad Farmer",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -12126,8 +12143,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 413,
 					["tipo"] = 2,
+					["combatId"] = 413,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -12136,13 +12153,10 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 1562748.612,
 				["tempo_start"] = 1570133685,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Hillsbrad Farmer",
 				["combat_counter"] = 3009,
 				["playing_solo"] = true,
 				["totals"] = {
@@ -12158,10 +12172,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -12170,16 +12184,51 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "22:15:18",
+				["cleu_timeline"] = {
 				},
+				["enemy"] = "Hillsbrad Farmer",
+				["TotalElapsedCombatTime"] = 1562729.264,
 				["CombatEndedAt"] = 1562729.264,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "22:14:46",
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Verminz"] = 25.008392,
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Verminz"] = 691.003432,
+						}, -- [1]
+					},
+				},
 				["end_time"] = 1562729.264,
+				["combat_id"] = 413,
+				["frags"] = {
+					["Hillsbrad Farmer"] = 1,
+					["Hillsbrad Peasant"] = 1,
+					["Cow"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["totals_grupo"] = {
 					691, -- [1]
 					25, -- [2]
@@ -12193,52 +12242,21 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 413,
-				["TotalElapsedCombatTime"] = 1562729.264,
-				["frags_need_refresh"] = true,
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Verminz"] = 25.008392,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Verminz"] = 691.003432,
-						}, -- [1]
-					},
-				},
-				["frags"] = {
-					["Hillsbrad Farmer"] = 1,
-					["Hillsbrad Peasant"] = 1,
-					["Cow"] = 1,
-				},
-				["data_fim"] = "22:15:18",
-				["instance_type"] = "none",
 				["CombatSkillCache"] = {
 				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 1562697.254,
 				["contra"] = "Hillsbrad Farmer",
+				["start_time"] = 1562697.254,
 				["TimeData"] = {
 				},
+				["data_inicio"] = "22:14:46",
 			}, -- [18]
 		},
 	},
@@ -12459,7 +12477,7 @@ _detalhes_database = {
 	},
 	["last_instance_time"] = 1569743963,
 	["active_profile"] = "Default",
-	["last_day"] = "03",
+	["last_day"] = "04",
 	["benchmark_db"] = {
 		["frame"] = {
 		},
@@ -12527,19 +12545,19 @@ _detalhes_database = {
 			["SpellBarsShowType"] = 1,
 		},
 	},
-	["combat_counter"] = 3026,
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
 	["announce_prepots"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
 		["reverse"] = false,
 	},
+	["combat_counter"] = 3042,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
 	["last_realversion"] = 140,
 	["character_data"] = {
-		["logons"] = 1157,
+		["logons"] = 1173,
 	},
 	["combat_id"] = 430,
 	["savedStyles"] = {
@@ -12637,10 +12655,6 @@ _detalhes_database = {
 					1, -- [3]
 					1, -- [4]
 				},
-				["textL_custom_text"] = "{data3}{data2}",
-				["texture_background"] = "Blizzard",
-				["alpha"] = 0,
-				["textL_class_colors"] = false,
 				["backdrop"] = {
 					["enabled"] = false,
 					["size"] = 12,
@@ -12652,9 +12666,13 @@ _detalhes_database = {
 					},
 					["texture"] = "Details BarBorder 2",
 				},
+				["textL_class_colors"] = false,
+				["textL_custom_text"] = "{data3}{data2}",
+				["textR_class_colors"] = false,
+				["alpha"] = 0,
 				["no_icon"] = false,
 				["font_size"] = 11,
-				["textR_class_colors"] = false,
+				["texture_background"] = "Blizzard",
 				["font_face"] = "Arial Narrow",
 				["texture_class_colors"] = true,
 				["height"] = 20,
@@ -12688,11 +12706,21 @@ _detalhes_database = {
 				["ignorebars"] = false,
 				["onleave"] = 1,
 			},
-			["show_sidebars"] = false,
-			["switch_damager"] = false,
 			["auto_hide_menu"] = {
 				["left"] = true,
 				["right"] = true,
+			},
+			["menu2_anchor_down"] = {
+				32, -- [1]
+				0, -- [2]
+			},
+			["statusbar_info"] = {
+				["alpha"] = 0,
+				["overlay"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
 			},
 			["strata"] = "LOW",
 			["row_show_animation"] = {
@@ -12745,24 +12773,14 @@ _detalhes_database = {
 				true, -- [3]
 				true, -- [4]
 			},
-			["menu2_anchor_down"] = {
-				32, -- [1]
-				0, -- [2]
-			},
-			["statusbar_info"] = {
-				["alpha"] = 0,
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
-			},
+			["desaturated_menu"] = false,
+			["show_sidebars"] = false,
 			["window_scale"] = 1,
 			["menu_anchor_down"] = {
 				-22, -- [1]
 				0, -- [2]
 			},
-			["switch_damager_in_combat"] = false,
+			["grab_on_top"] = false,
 			["instancebutton_config"] = {
 				["textcolor"] = {
 					0.8, -- [1]
@@ -12783,8 +12801,8 @@ _detalhes_database = {
 				["textfont"] = "Friz Quadrata TT",
 				["textshadow"] = false,
 			},
+			["switch_damager_in_combat"] = false,
 			["hide_icon"] = true,
-			["grab_on_top"] = false,
 			["menu2_anchor"] = {
 				32, -- [1]
 				3, -- [2]
@@ -12795,7 +12813,7 @@ _detalhes_database = {
 			["bg_g"] = 0,
 			["bars_grow_direction"] = 1,
 			["hide_in_combat"] = false,
-			["desaturated_menu"] = false,
+			["switch_damager"] = false,
 			["switch_all_roles_after_wipe"] = false,
 			["hide_in_combat_type"] = 1,
 			["wallpaper"] = {
@@ -12873,39 +12891,39 @@ _detalhes_database = {
 						["Befouled Water Elemental"] = 0,
 						["Tideress"] = 0,
 						["Jro"] = 0,
-						["Hillsbrad Footman"] = 0,
-						["Hillsbrad Apprentice Blacksmith"] = 0,
-						["Wrathtail Priestess"] = 0,
-						["Strength of Earth Totem II <Foulweald Shaman>"] = 0,
-						["Foulweald Ursa"] = 0,
-						["Hillsbrad Peasant"] = 0,
-						["Foulweald Pathfinder"] = 0,
-						["Mudsnout Gnoll"] = 0,
 						["Foulweald Warrior"] = 0,
 						["Wildthorn Stalker"] = 0,
+						["Hillsbrad Peasant"] = 0,
+						["Strength of Earth Totem II <Foulweald Shaman>"] = 0,
+						["Foulweald Ursa"] = 0,
 						["Giant Moss Creeper"] = 0,
+						["Foulweald Pathfinder"] = 0,
+						["Mudsnout Gnoll"] = 0,
+						["Hillsbrad Footman"] = 0,
+						["Hillsbrad Farmhand"] = 0,
 						["Thistlefur Avenger"] = 0,
-						["Mudsnout Shaman"] = 0,
+						["Bleakheart Satyr"] = 0,
+						["Bleakheart Shadowstalker"] = 0,
 						["Foulweald Shaman"] = 0,
 						["Wrathtail Razortail"] = 0,
-						["Bleakheart Satyr"] = 0,
+						["Mudsnout Shaman"] = 0,
 						["Deer"] = 0,
 						["Foulweald Totemic"] = 0,
 						["Farmer Kalaba"] = 0,
-						["Bleakheart Shadowstalker"] = 0,
-						["Searing Totem II <Foulweald Totemic>"] = 0,
-						["Voidwalker Minion <Bleakheart Hellcaller>"] = 0,
-						["Thistlefur Pathfinder"] = 0,
-						["Syndicate Shadow Mage"] = 0,
-						["Strength of Earth Totem II"] = 0,
-						["Foulweald Den Watcher"] = 0,
-						["Chief Murgut"] = 0,
+						["Wrathtail Priestess"] = 0,
 						["Wrathtail Sea Witch"] = 0,
+						["Syndicate Shadow Mage"] = 0,
+						["Voidwalker Minion <Bleakheart Hellcaller>"] = 0,
+						["Enraged Foulweald"] = 0,
+						["Strength of Earth Totem II"] = 0,
+						["Hillsbrad Apprentice Blacksmith"] = 0,
+						["Chief Murgut"] = 0,
+						["Thistlefur Pathfinder"] = 0,
 						["Hillsbrad Farmer"] = 0,
 						["Wild Buck"] = 0,
 						["Ghostpaw Runner"] = 0,
 						["Syndicate Watchman"] = 0,
-						["Enraged Foulweald"] = 0,
+						["Foulweald Den Watcher"] = 0,
 						["Wrathtail Myrmidon"] = 0,
 						["Lost Barrens Kodo"] = 0,
 						["Imp Minion <Bleakheart Hellcaller>"] = 0,
@@ -12915,12 +12933,12 @@ _detalhes_database = {
 						["Starving Mountain Lion"] = 0,
 						["Thistlefur Shaman"] = 0,
 						["Vicious Gray Bear"] = 0,
-						["Wrathtail Sorceress"] = 0,
+						["Searing Totem II <Foulweald Totemic>"] = 0,
 						["Spined Crawler"] = 0,
 						["Syndicate Rogue"] = 0,
 						["Ashenvale Outrunner"] = 0,
 						["Elder Gray Bear"] = 0,
-						["Hillsbrad Farmhand"] = 0,
+						["Wrathtail Sorceress"] = 0,
 						["Dopeguy"] = 0,
 						["Bleakheart Hellcaller"] = 0,
 					},
@@ -12947,28 +12965,28 @@ _detalhes_database = {
 								["n_max"] = 0,
 								["targets"] = {
 									["Bleakheart Shadowstalker"] = 0,
-									["Hillsbrad Footman"] = 0,
-									["Hillsbrad Peasant"] = 0,
+									["Foulweald Warrior"] = 0,
+									["Foulweald Den Watcher"] = 0,
 									["Bleakheart Trickster"] = 0,
 									["Syndicate Shadow Mage"] = 0,
 									["Imp Minion"] = 0,
-									["Foulweald Warrior"] = 0,
-									["Voidwalker Minion"] = 0,
 									["Mudsnout Shaman"] = 0,
+									["Hillsbrad Farmer"] = 0,
+									["Voidwalker Minion"] = 0,
 									["Befouled Water Elemental"] = 0,
 									["Tideress"] = 0,
 									["Syndicate Watchman"] = 0,
-									["Hillsbrad Farmer"] = 0,
-									["Foulweald Den Watcher"] = 0,
-									["Foulweald Pathfinder"] = 0,
-									["Thistlefur Shaman"] = 0,
-									["Foulweald Ursa"] = 0,
-									["Thistlefur Avenger"] = 0,
-									["Rotting Slime"] = 0,
-									["Mudsnout Gnoll"] = 0,
-									["Enraged Foulweald"] = 0,
-									["Vicious Gray Bear"] = 0,
 									["Giant Moss Creeper"] = 0,
+									["Thistlefur Shaman"] = 0,
+									["Thistlefur Avenger"] = 0,
+									["Foulweald Pathfinder"] = 0,
+									["Foulweald Ursa"] = 0,
+									["Enraged Foulweald"] = 0,
+									["Rotting Slime"] = 0,
+									["Hillsbrad Peasant"] = 0,
+									["Mudsnout Gnoll"] = 0,
+									["Vicious Gray Bear"] = 0,
+									["Hillsbrad Footman"] = 0,
 									["Starving Mountain Lion"] = 0,
 									["Syndicate Rogue"] = 0,
 									["Ashenvale Outrunner"] = 0,
@@ -13004,27 +13022,27 @@ _detalhes_database = {
 								["n_max"] = 0,
 								["targets"] = {
 									["Bleakheart Shadowstalker"] = 0,
-									["Hillsbrad Footman"] = 0,
-									["Hillsbrad Farmer"] = 0,
-									["Hillsbrad Peasant"] = 0,
-									["Bleakheart Trickster"] = 0,
 									["Foulweald Totemic"] = 0,
-									["Imp Minion"] = 0,
-									["Searing Totem II"] = 0,
+									["Bleakheart Trickster"] = 0,
 									["Mudsnout Shaman"] = 0,
+									["Searing Totem II"] = 0,
+									["Hillsbrad Farmer"] = 0,
+									["Imp Minion"] = 0,
+									["Foulweald Shaman"] = 0,
 									["Bleakheart Satyr"] = 0,
 									["Befouled Water Elemental"] = 0,
-									["Foulweald Shaman"] = 0,
-									["Syndicate Watchman"] = 0,
 									["Voidwalker Minion"] = 0,
-									["Thistlefur Shaman"] = 0,
+									["Hillsbrad Footman"] = 0,
+									["Syndicate Watchman"] = 0,
 									["Giant Moss Creeper"] = 0,
+									["Hillsbrad Peasant"] = 0,
+									["Enraged Foulweald"] = 0,
 									["Foulweald Pathfinder"] = 0,
 									["Foulweald Ursa"] = 0,
 									["Starving Mountain Lion"] = 0,
 									["Rotting Slime"] = 0,
 									["Mudsnout Gnoll"] = 0,
-									["Enraged Foulweald"] = 0,
+									["Thistlefur Shaman"] = 0,
 									["Vicious Gray Bear"] = 0,
 									["Thistlefur Avenger"] = 0,
 									["Foulweald Den Watcher"] = 0,
@@ -13061,12 +13079,14 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
+									["Hillsbrad Footman"] = 0,
 									["Bleakheart Shadowstalker"] = 0,
 									["Foulweald Ursa"] = 0,
+									["Wildthorn Stalker"] = 0,
 									["Elder Gray Bear"] = 0,
 									["Hillsbrad Peasant"] = 0,
-									["Wildthorn Stalker"] = 0,
 									["Dopeguy"] = 0,
+									["Hillsbrad Farmer"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -13099,23 +13119,23 @@ _detalhes_database = {
 									["Bleakheart Trickster"] = 0,
 									["Syndicate Shadow Mage"] = 0,
 									["Imp Minion"] = 0,
-									["Hillsbrad Peasant"] = 0,
 									["Wrathtail Priestess"] = 0,
 									["Befouled Water Elemental"] = 0,
+									["Voidwalker Minion"] = 0,
 									["Wrathtail Sorceress"] = 0,
 									["Syndicate Watchman"] = 0,
-									["Voidwalker Minion"] = 0,
-									["Thistlefur Shaman"] = 0,
+									["Hillsbrad Peasant"] = 0,
 									["Wrathtail Razortail"] = 0,
 									["Foulweald Shaman"] = 0,
+									["Thistlefur Shaman"] = 0,
 									["Foulweald Ursa"] = 0,
-									["Wrathtail Sea Witch"] = 0,
+									["Imp Minion <Bleakheart Hellcaller>"] = 0,
 									["Rotting Slime"] = 0,
 									["Starving Mountain Lion"] = 0,
 									["Giant Moss Creeper"] = 0,
-									["Vicious Gray Bear"] = 0,
+									["Wrathtail Sea Witch"] = 0,
 									["Thistlefur Avenger"] = 0,
-									["Imp Minion <Bleakheart Hellcaller>"] = 0,
+									["Vicious Gray Bear"] = 0,
 									["Enraged Foulweald"] = 0,
 									["Ashenvale Outrunner"] = 0,
 									["Hillsbrad Farmer"] = 0,
@@ -13150,24 +13170,24 @@ _detalhes_database = {
 								["n_max"] = 0,
 								["targets"] = {
 									["Bleakheart Shadowstalker"] = 0,
-									["Hillsbrad Footman"] = 0,
-									["Hillsbrad Apprentice Blacksmith"] = 0,
-									["Hillsbrad Peasant"] = 0,
-									["Bleakheart Trickster"] = 0,
 									["Foulweald Totemic"] = 0,
+									["Hillsbrad Apprentice Blacksmith"] = 0,
+									["Bleakheart Satyr"] = 0,
+									["Bleakheart Trickster"] = 0,
+									["Hillsbrad Farmer"] = 0,
 									["Foulweald Den Watcher"] = 0,
 									["Chief Murgut"] = 0,
-									["Syndicate Watchman"] = 0,
-									["Bleakheart Satyr"] = 0,
+									["Befouled Water Elemental"] = 0,
 									["Wild Buck"] = 0,
-									["Hillsbrad Farmer"] = 0,
-									["Jro"] = 0,
 									["Voidwalker Minion"] = 0,
-									["Foulweald Warrior"] = 0,
-									["Thistlefur Shaman"] = 0,
-									["Giant Moss Creeper"] = 0,
-									["Foulweald Ursa"] = 0,
+									["Syndicate Watchman"] = 0,
+									["Jro"] = 0,
+									["Hillsbrad Footman"] = 0,
 									["Vicious Gray Bear"] = 0,
+									["Giant Moss Creeper"] = 0,
+									["Hillsbrad Peasant"] = 0,
+									["Foulweald Ursa"] = 0,
+									["Thistlefur Shaman"] = 0,
 									["Rotting Slime"] = 0,
 									["Starving Mountain Lion"] = 0,
 									["Enraged Foulweald"] = 0,
@@ -13178,7 +13198,7 @@ _detalhes_database = {
 									["Ashenvale Outrunner"] = 0,
 									["Elder Gray Bear"] = 0,
 									["Hillsbrad Farmhand"] = 0,
-									["Befouled Water Elemental"] = 0,
+									["Foulweald Warrior"] = 0,
 									["Bleakheart Hellcaller"] = 0,
 								},
 								["m_dmg"] = 0,
@@ -13221,12 +13241,12 @@ _detalhes_database = {
 									["Foulweald Totemic"] = 0,
 									["Farmer Kalaba"] = 0,
 									["Bleakheart Shadowstalker"] = 0,
-									["Hillsbrad Footman"] = 0,
-									["Thistlefur Pathfinder"] = 0,
-									["Hillsbrad Apprentice Blacksmith"] = 0,
-									["Hillsbrad Peasant"] = 0,
-									["Foulweald Den Watcher"] = 0,
 									["Foulweald Warrior"] = 0,
+									["Thistlefur Pathfinder"] = 0,
+									["Hillsbrad Peasant"] = 0,
+									["Hillsbrad Apprentice Blacksmith"] = 0,
+									["Foulweald Den Watcher"] = 0,
+									["Hillsbrad Footman"] = 0,
 									["Voidwalker Minion <Bleakheart Hellcaller>"] = 0,
 									["Giant Moss Creeper"] = 0,
 									["Wild Buck"] = 0,
@@ -13235,14 +13255,14 @@ _detalhes_database = {
 									["Hillsbrad Farmhand"] = 0,
 									["Vorsha the Lasher"] = 0,
 									["Lost Barrens Kodo"] = 0,
-									["Enraged Foulweald"] = 0,
+									["Vicious Gray Bear"] = 0,
 									["Wrathtail Wave Rider"] = 0,
 									["Foulweald Pathfinder"] = 0,
-									["Vicious Gray Bear"] = 0,
+									["Enraged Foulweald"] = 0,
 									["Thistlefur Shaman"] = 0,
+									["Starving Mountain Lion"] = 0,
 									["Wrathtail Sea Witch"] = 0,
 									["Imp Minion <Bleakheart Hellcaller>"] = 0,
-									["Starving Mountain Lion"] = 0,
 									["Spined Crawler"] = 0,
 									["Syndicate Rogue"] = 0,
 									["Ashenvale Outrunner"] = 0,
@@ -13291,12 +13311,12 @@ _detalhes_database = {
 									["Foulweald Totemic"] = 0,
 									["Bleakheart Shadowstalker"] = 0,
 									["Thistlefur Pathfinder"] = 0,
-									["Hillsbrad Footman"] = 0,
+									["Foulweald Warrior"] = 0,
 									["Syndicate Shadow Mage"] = 0,
 									["Foulweald Den Watcher"] = 0,
 									["Hillsbrad Apprentice Blacksmith"] = 0,
 									["Hillsbrad Peasant"] = 0,
-									["Foulweald Warrior"] = 0,
+									["Hillsbrad Footman"] = 0,
 									["Wild Buck"] = 0,
 									["Ghostpaw Runner"] = 0,
 									["Syndicate Watchman"] = 0,
@@ -13305,12 +13325,12 @@ _detalhes_database = {
 									["Bleakheart Satyr"] = 0,
 									["Foulweald Pathfinder"] = 0,
 									["Wrathtail Wave Rider"] = 0,
-									["Starving Mountain Lion"] = 0,
-									["Enraged Foulweald"] = 0,
-									["Thistlefur Shaman"] = 0,
-									["Befouled Water Elemental"] = 0,
 									["Vicious Gray Bear"] = 0,
+									["Enraged Foulweald"] = 0,
+									["Starving Mountain Lion"] = 0,
+									["Thistlefur Shaman"] = 0,
 									["Wrathtail Sea Witch"] = 0,
+									["Befouled Water Elemental"] = 0,
 									["Spined Crawler"] = 0,
 									["Syndicate Rogue"] = 0,
 									["Ashenvale Outrunner"] = 0,
@@ -13411,39 +13431,39 @@ _detalhes_database = {
 									["Voidwalker Minion"] = 0,
 									["Tideress"] = 0,
 									["Jro"] = 0,
-									["Hillsbrad Footman"] = 0,
-									["Hillsbrad Apprentice Blacksmith"] = 0,
+									["Foulweald Warrior"] = 0,
+									["Wildthorn Stalker"] = 0,
 									["Strength of Earth Totem II <Foulweald Shaman>"] = 0,
 									["Foulweald Ursa"] = 0,
 									["Rotting Slime"] = 0,
 									["Foulweald Pathfinder"] = 0,
-									["Mudsnout Gnoll"] = 0,
 									["Hillsbrad Peasant"] = 0,
-									["Foulweald Warrior"] = 0,
+									["Giant Moss Creeper"] = 0,
+									["Hillsbrad Footman"] = 0,
 									["Thistlefur Avenger"] = 0,
-									["Wildthorn Stalker"] = 0,
-									["Hillsbrad Farmhand"] = 0,
+									["Bleakheart Satyr"] = 0,
+									["Mudsnout Shaman"] = 0,
 									["Foulweald Shaman"] = 0,
 									["Wrathtail Razortail"] = 0,
-									["Mudsnout Shaman"] = 0,
+									["Hillsbrad Farmhand"] = 0,
 									["Deer"] = 0,
 									["Foulweald Totemic"] = 0,
 									["Farmer Kalaba"] = 0,
 									["Bleakheart Shadowstalker"] = 0,
-									["Giant Moss Creeper"] = 0,
 									["Wrathtail Myrmidon"] = 0,
+									["Imp Minion <Bleakheart Hellcaller>"] = 0,
 									["Thistlefur Pathfinder"] = 0,
+									["Hillsbrad Apprentice Blacksmith"] = 0,
 									["Syndicate Shadow Mage"] = 0,
-									["Strength of Earth Totem II"] = 0,
 									["Foulweald Den Watcher"] = 0,
 									["Chief Murgut"] = 0,
-									["Searing Totem II <Foulweald Totemic>"] = 0,
-									["Imp Minion <Bleakheart Hellcaller>"] = 0,
+									["Starving Mountain Lion"] = 0,
+									["Strength of Earth Totem II"] = 0,
 									["Wild Buck"] = 0,
 									["Ghostpaw Runner"] = 0,
 									["Syndicate Watchman"] = 0,
 									["Hillsbrad Farmer"] = 0,
-									["Starving Mountain Lion"] = 0,
+									["Searing Totem II <Foulweald Totemic>"] = 0,
 									["Lost Barrens Kodo"] = 0,
 									["Befouled Water Elemental"] = 0,
 									["Wrathtail Wave Rider"] = 0,
@@ -13457,7 +13477,7 @@ _detalhes_database = {
 									["Syndicate Rogue"] = 0,
 									["Ashenvale Outrunner"] = 0,
 									["Elder Gray Bear"] = 0,
-									["Bleakheart Satyr"] = 0,
+									["Mudsnout Gnoll"] = 0,
 									["Dopeguy"] = 0,
 									["Bleakheart Hellcaller"] = 0,
 								},
@@ -13555,14 +13575,15 @@ _detalhes_database = {
 									["Bleakheart Shadowstalker"] = 0,
 									["Voidwalker Minion <Bleakheart Hellcaller>"] = 0,
 									["Bleakheart Trickster"] = 0,
-									["Enraged Foulweald"] = 0,
 									["Hillsbrad Peasant"] = 0,
-									["Foulweald Pathfinder"] = 0,
 									["Mudsnout Gnoll"] = 0,
 									["Mudsnout Shaman"] = 0,
-									["Rotting Slime"] = 0,
 									["Thistlefur Shaman"] = 0,
+									["Foulweald Pathfinder"] = 0,
+									["Enraged Foulweald"] = 0,
+									["Rotting Slime"] = 0,
 									["Starving Mountain Lion"] = 0,
+									["Hillsbrad Footman"] = 0,
 									["Vicious Gray Bear"] = 0,
 									["Thistlefur Avenger"] = 0,
 									["Giant Moss Creeper"] = 0,
@@ -13689,7 +13710,7 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["end_time"] = 1569748504,
 					["delay"] = 0,
-					["damage_taken"] = 0.008339,
+					["on_hold"] = false,
 					["nome"] = "Lost Barrens Kodo",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -13780,13 +13801,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["total"] = 0.008339,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.008339,
 					["start_time"] = 1569748501,
 					["serial"] = "Creature-0-4448-1-248-3234-0000105BDE",
 					["fight_component"] = true,
@@ -13802,18 +13823,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.003068,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003068,
 					["serial"] = "Creature-0-4448-1-248-4127-0000106983",
-					["monster"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1569750231,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["nome"] = "Hecklefang Hyena",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -13882,10 +13903,10 @@ _detalhes_database = {
 					["total"] = 0.003068,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.003068,
 					["start_time"] = 1569750228,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["monster"] = true,
 				}, -- [3]
 				{
 					["flag_original"] = 68168,
@@ -13897,18 +13918,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.006825,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006825,
 					["serial"] = "Creature-0-4448-1-248-3255-0000105E16",
-					["monster"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1569750231,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["nome"] = "Sunscale Screecher",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -13948,10 +13969,10 @@ _detalhes_database = {
 					["total"] = 0.006825,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.006825,
 					["start_time"] = 1569750228,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["monster"] = true,
 				}, -- [4]
 				{
 					["flag_original"] = 2632,
@@ -13969,17 +13990,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["damage_taken"] = 0.001813,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001813,
 					["serial"] = "Creature-0-4446-1-161-3771-000090A3C6",
-					["fight_component"] = true,
+					["monster"] = true,
 					["end_time"] = 1569770229,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.001813,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Bleakheart Hellcaller",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14019,10 +14041,10 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Unknown"] = 0,
-									["Bargore"] = 0,
-									["Verminz"] = 0,
 									["Gromkaas"] = 0,
+									["Unknown"] = 0,
+									["Verminz"] = 0,
+									["Bargore"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -14078,11 +14100,10 @@ _detalhes_database = {
 					["total"] = 0.001813,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["start_time"] = 1569770226,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["fight_component"] = true,
 				}, -- [5]
 				{
 					["flag_original"] = 70216,
@@ -14104,7 +14125,7 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["end_time"] = 1569770229,
 					["serial"] = "Creature-0-4446-1-161-12922-000010A3CD",
-					["last_dps"] = 0,
+					["damage_taken"] = 0.005889,
 					["nome"] = "Imp Minion",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14140,13 +14161,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.005889,
+					["on_hold"] = false,
 					["total"] = 0.005889,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["start_time"] = 1569770226,
 					["delay"] = 0,
 					["friendlyfire_total"] = 0,
@@ -14171,7 +14192,7 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["end_time"] = 1569770229,
 					["serial"] = "Player-4465-012447E0",
-					["last_dps"] = 0,
+					["damage_taken"] = 0.00569,
 					["nome"] = "Dopeguy",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14372,13 +14393,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.00569,
+					["friendlyfire"] = {
+					},
 					["on_hold"] = false,
 					["total"] = 0.00569,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["start_time"] = 1569770226,
 					["delay"] = 0,
 					["friendlyfire_total"] = 0,
@@ -14403,17 +14424,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["damage_taken"] = 0.003928,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003928,
 					["serial"] = "Creature-0-4446-1-161-3770-000010A3C6",
-					["fight_component"] = true,
+					["monster"] = true,
 					["end_time"] = 1569770229,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.003928,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Bleakheart Shadowstalker",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14495,11 +14517,10 @@ _detalhes_database = {
 					["total"] = 0.003928,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["start_time"] = 1569770226,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["fight_component"] = true,
 				}, -- [8]
 				{
 					["flag_original"] = 68168,
@@ -14511,17 +14532,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["damage_taken"] = 0.001808,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001808,
 					["serial"] = "Creature-0-4446-1-161-12856-000010A28A",
-					["fight_component"] = true,
+					["monster"] = true,
 					["end_time"] = 1569770229,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.001808,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Ashenvale Outrunner",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14727,11 +14749,10 @@ _detalhes_database = {
 					["total"] = 0.001808,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["start_time"] = 1569770226,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["fight_component"] = true,
 				}, -- [9]
 				{
 					["flag_original"] = 68168,
@@ -14743,17 +14764,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["damage_taken"] = 0.001527,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001527,
 					["serial"] = "Creature-0-4446-1-161-3928-000010A1DE",
-					["fight_component"] = true,
+					["monster"] = true,
 					["end_time"] = 1569770229,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.001527,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Rotting Slime",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14876,11 +14898,10 @@ _detalhes_database = {
 					["total"] = 0.001527,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["start_time"] = 1569770226,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["fight_component"] = true,
 				}, -- [10]
 				{
 					["flag_original"] = 68168,
@@ -14899,17 +14920,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["damage_taken"] = 0.003251,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003251,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["monster"] = true,
 					["end_time"] = 1569770585,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.003251,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Bleakheart Satyr",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14988,11 +15010,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["start_time"] = 1569770582,
 					["serial"] = "Creature-0-4446-1-161-3765-000010CBAC",
-					["dps_started"] = false,
+					["fight_component"] = true,
 				}, -- [11]
 				{
 					["flag_original"] = 68168,
@@ -15012,18 +15033,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.008214,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008214,
 					["delay"] = 0,
-					["monster"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1569770710,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["nome"] = "Bleakheart Trickster",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15167,10 +15188,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.008214,
 					["start_time"] = 1569770707,
 					["serial"] = "Creature-0-4446-1-161-3767-000010CC65",
-					["fight_component"] = true,
+					["monster"] = true,
 				}, -- [12]
 				{
 					["flag_original"] = 66888,
@@ -15192,7 +15213,7 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["end_time"] = 1569788672,
 					["serial"] = "Player-4465-00DEF841",
-					["last_dps"] = 0,
+					["damage_taken"] = 0.008956,
 					["nome"] = "Jro",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15282,13 +15303,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.008956,
+					["friendlyfire"] = {
+					},
 					["on_hold"] = false,
 					["total"] = 0.008956,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["start_time"] = 1569788669,
 					["delay"] = 0,
 					["friendlyfire_total"] = 0,
@@ -15313,7 +15334,7 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1569790197,
 					["delay"] = 0,
-					["damage_taken"] = 0.001008,
+					["on_hold"] = false,
 					["nome"] = "Voidwalker Minion",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15378,13 +15399,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["total"] = 0.001008,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.001008,
 					["start_time"] = 1569790194,
 					["serial"] = "Creature-0-4446-1-161-8996-00001114DD",
 					["dps_started"] = false,
@@ -15408,7 +15429,7 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["end_time"] = 1569790387,
 					["delay"] = 0,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["nome"] = "Imp Minion <Bleakheart Hellcaller>",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15471,13 +15492,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.007255,
 					["total"] = 0.007255,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["last_event"] = 0,
-					["damage_taken"] = 0.007255,
+					["on_hold"] = false,
 					["start_time"] = 1569790384,
 					["serial"] = "Creature-0-4446-1-161-12922-0000111975",
 					["fight_component"] = true,
@@ -15501,7 +15522,7 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["end_time"] = 1569845372,
 					["serial"] = "Creature-0-4446-1-161-8996-0000111C4A",
-					["damage_taken"] = 0.005402,
+					["on_hold"] = false,
 					["nome"] = "Voidwalker Minion <Bleakheart Hellcaller>",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15564,13 +15585,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["total"] = 0.005402,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.005402,
 					["start_time"] = 1569845369,
 					["delay"] = 0,
 					["friendlyfire_total"] = 0,
@@ -15593,20 +15614,20 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["end_time"] = 1569862818,
 					["serial"] = "Creature-0-4446-1-161-883-0000122193",
-					["damage_taken"] = 0.002585,
+					["on_hold"] = false,
 					["nome"] = "Deer",
 					["spells"] = {
 						["_ActorTable"] = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["total"] = 0.002585,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.002585,
 					["start_time"] = 1569862815,
 					["delay"] = 0,
 					["friendlyfire_total"] = 0,
@@ -15630,7 +15651,7 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["end_time"] = 1569863395,
 					["serial"] = "",
-					["last_dps"] = 0,
+					["damage_taken"] = 0.006568,
 					["nome"] = "Environment (Fire)",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15665,13 +15686,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.006568,
+					["on_hold"] = false,
 					["total"] = 0.006568,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["start_time"] = 1569863392,
 					["delay"] = 0,
 					["friendlyfire_total"] = 0,
@@ -15692,17 +15713,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["damage_taken"] = 0.005191,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005191,
 					["serial"] = "Creature-0-4446-1-161-3917-000012457D",
-					["fight_component"] = true,
+					["monster"] = true,
 					["end_time"] = 1569867337,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.005191,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Befouled Water Elemental",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15870,11 +15892,10 @@ _detalhes_database = {
 					["total"] = 0.005191,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["start_time"] = 1569867334,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["fight_component"] = true,
 				}, -- [19]
 				{
 					["flag_original"] = 68168,
@@ -15886,17 +15907,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["damage_taken"] = 0.004655,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004655,
 					["serial"] = "Creature-0-4446-1-161-12759-000012453F",
-					["fight_component"] = true,
+					["monster"] = true,
 					["end_time"] = 1569867337,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.004655,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Tideress",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16019,11 +16041,10 @@ _detalhes_database = {
 					["total"] = 0.004655,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["start_time"] = 1569867334,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["fight_component"] = true,
 				}, -- [20]
 				{
 					["flag_original"] = 68168,
@@ -16036,17 +16057,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["damage_taken"] = 0.005461,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005461,
 					["serial"] = "Creature-0-4446-1-161-3750-0000123DB4",
-					["fight_component"] = true,
+					["monster"] = true,
 					["end_time"] = 1569867337,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.005461,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Foulweald Totemic",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16171,11 +16193,10 @@ _detalhes_database = {
 					["total"] = 0.005461,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["start_time"] = 1569867334,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["fight_component"] = true,
 				}, -- [21]
 				{
 					["flag_original"] = 8776,
@@ -16196,7 +16217,7 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1569867337,
 					["serial"] = "Creature-0-4446-1-161-3902-0000123DF4",
-					["last_dps"] = 0,
+					["damage_taken"] = 0.001923,
 					["nome"] = "Searing Totem II <Foulweald Totemic>",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16259,13 +16280,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.001923,
+					["on_hold"] = false,
 					["total"] = 0.001923,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["start_time"] = 1569867334,
 					["delay"] = 0,
 					["friendlyfire_total"] = 0,
@@ -16282,17 +16303,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["damage_taken"] = 0.006178,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006178,
 					["serial"] = "Creature-0-4446-1-161-3743-0000123D70",
-					["fight_component"] = true,
+					["monster"] = true,
 					["end_time"] = 1569867337,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.006178,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Foulweald Warrior",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16393,11 +16415,10 @@ _detalhes_database = {
 					["total"] = 0.006178,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["start_time"] = 1569867334,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["fight_component"] = true,
 				}, -- [23]
 				{
 					["flag_original"] = 68168,
@@ -16412,17 +16433,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["damage_taken"] = 0.007564,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007564,
 					["serial"] = "Creature-0-4446-1-161-3746-0000123CE8",
-					["fight_component"] = true,
+					["monster"] = true,
 					["end_time"] = 1569867337,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.007564,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Foulweald Den Watcher",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16551,11 +16573,10 @@ _detalhes_database = {
 					["total"] = 0.007564,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["start_time"] = 1569867334,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["fight_component"] = true,
 				}, -- [24]
 				{
 					["flag_original"] = 68168,
@@ -16568,17 +16589,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["damage_taken"] = 0.005597,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005597,
 					["serial"] = "Creature-0-4446-1-161-3749-0000923CE8",
-					["fight_component"] = true,
+					["monster"] = true,
 					["end_time"] = 1569867337,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.005597,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Foulweald Ursa",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16705,11 +16727,10 @@ _detalhes_database = {
 					["total"] = 0.005597,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["start_time"] = 1569867334,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["fight_component"] = true,
 				}, -- [25]
 				{
 					["flag_original"] = 68168,
@@ -16721,17 +16742,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["damage_taken"] = 0.007352,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007352,
 					["serial"] = "Creature-0-4446-1-161-3819-0000125327",
-					["fight_component"] = true,
+					["monster"] = true,
 					["end_time"] = 1569871074,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.007352,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Wildthorn Stalker",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16854,11 +16876,10 @@ _detalhes_database = {
 					["total"] = 0.007352,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["start_time"] = 1569871071,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["fight_component"] = true,
 				}, -- [26]
 				{
 					["flag_original"] = 68168,
@@ -16870,17 +16891,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["damage_taken"] = 0.001101,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001101,
 					["serial"] = "Creature-0-4446-1-161-3745-00001244B7",
-					["fight_component"] = true,
+					["monster"] = true,
 					["end_time"] = 1569871074,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.001101,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Foulweald Pathfinder",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -17004,11 +17026,10 @@ _detalhes_database = {
 					["total"] = 0.001101,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["start_time"] = 1569871071,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["fight_component"] = true,
 				}, -- [27]
 				{
 					["flag_original"] = 68168,
@@ -17021,18 +17042,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.005558,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005558,
 					["serial"] = "Creature-0-4468-1-32-3715-0000146EC4",
-					["monster"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1570011301,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["nome"] = "Wrathtail Sea Witch",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -17157,10 +17178,10 @@ _detalhes_database = {
 					["total"] = 0.005558,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.005558,
 					["start_time"] = 1570011298,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["monster"] = true,
 				}, -- [28]
 				{
 					["flag_original"] = 68136,
@@ -17181,7 +17202,7 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["end_time"] = 1570011301,
 					["serial"] = "Creature-0-4468-1-32-3814-000313F9F9",
-					["damage_taken"] = 0.006492,
+					["on_hold"] = false,
 					["nome"] = "Spined Crawler",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -17244,13 +17265,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["total"] = 0.006492,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.006492,
 					["start_time"] = 1570011298,
 					["delay"] = 0,
 					["friendlyfire_total"] = 0,
@@ -17267,17 +17288,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["damage_taken"] = 0.006141,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006141,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["monster"] = true,
 					["end_time"] = 1570033283,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.006141,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Thistlefur Avenger",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -17403,11 +17425,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["start_time"] = 1570033280,
 					["serial"] = "Creature-0-4468-1-32-3925-0000147A95",
-					["dps_started"] = false,
+					["fight_component"] = true,
 				}, -- [30]
 				{
 					["flag_original"] = 68168,
@@ -17420,17 +17441,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["damage_taken"] = 0.001524,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001524,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["monster"] = true,
 					["end_time"] = 1570033283,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.001524,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Thistlefur Shaman",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -17582,11 +17604,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["start_time"] = 1570033280,
 					["serial"] = "Creature-0-4468-1-32-3924-00001479AA",
-					["dps_started"] = false,
+					["fight_component"] = true,
 				}, -- [31]
 				{
 					["flag_original"] = 68168,
@@ -17598,17 +17619,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["damage_taken"] = 0.007145,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007145,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["monster"] = true,
 					["end_time"] = 1570033283,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.007145,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Thistlefur Pathfinder",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -17704,11 +17726,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["start_time"] = 1570033280,
 					["serial"] = "Creature-0-4468-1-32-3926-0000147250",
-					["dps_started"] = false,
+					["fight_component"] = true,
 				}, -- [32]
 				{
 					["flag_original"] = 1298,
@@ -17760,34 +17781,6 @@ _detalhes_database = {
 								["a_amt"] = 0,
 								["a_dmg"] = 0,
 							},
-							["!Autoshot"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Thistlefur Shaman"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "!Autoshot",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["m_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
 							["Arcane Explosion"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
@@ -17806,6 +17799,34 @@ _detalhes_database = {
 								["total"] = 0,
 								["c_max"] = 0,
 								["id"] = "Arcane Explosion",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Cone of Cold"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Thistlefur Avenger"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Cone of Cold",
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
@@ -17875,14 +17896,14 @@ _detalhes_database = {
 								["a_amt"] = 0,
 								["a_dmg"] = 0,
 							},
-							["Cone of Cold"] = {
+							["!Autoshot"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Thistlefur Avenger"] = 0,
+									["Thistlefur Shaman"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -17891,7 +17912,7 @@ _detalhes_database = {
 								["counter"] = 0,
 								["total"] = 0,
 								["c_max"] = 0,
-								["id"] = "Cone of Cold",
+								["id"] = "!Autoshot",
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
@@ -17959,18 +17980,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008331,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["fight_component"] = true,
 					["end_time"] = 1570033911,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.008331,
 					["nome"] = "Ghostpaw Runner",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18038,10 +18058,11 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["damage_taken"] = 0.008331,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1570033908,
 					["serial"] = "Creature-0-4468-1-268-3823-000014B47D",
-					["monster"] = true,
+					["dps_started"] = false,
 				}, -- [34]
 				{
 					["flag_original"] = 68136,
@@ -18062,7 +18083,7 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["end_time"] = 1570034578,
 					["serial"] = "Creature-0-4468-1-268-3816-0000148A9F",
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["nome"] = "Wild Buck",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18097,13 +18118,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.008383,
 					["total"] = 0.008383,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.008383,
+					["on_hold"] = false,
 					["start_time"] = 1570034575,
 					["delay"] = 0,
 					["friendlyfire_total"] = 0,
@@ -18119,18 +18140,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.002707,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.002707,
 					["serial"] = "Creature-0-4468-1-268-12940-000014D5DF",
-					["monster"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1570036993,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["nome"] = "Vorsha the Lasher",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18226,10 +18247,10 @@ _detalhes_database = {
 					["total"] = 0.002707,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.002707,
 					["start_time"] = 1570036990,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["monster"] = true,
 				}, -- [36]
 				{
 					["flag_original"] = 68168,
@@ -18241,18 +18262,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.001443,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001443,
 					["serial"] = "Creature-0-4468-1-268-3711-000014D5A2",
-					["monster"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1570036993,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["nome"] = "Wrathtail Myrmidon",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18348,10 +18369,10 @@ _detalhes_database = {
 					["total"] = 0.001443,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.001443,
 					["start_time"] = 1570036990,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["monster"] = true,
 				}, -- [37]
 				{
 					["flag_original"] = 2632,
@@ -18363,18 +18384,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.007887,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007887,
 					["serial"] = "Creature-0-4468-1-268-3944-000014D5A2",
-					["monster"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1570036993,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["nome"] = "Wrathtail Priestess",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18524,10 +18545,10 @@ _detalhes_database = {
 					["total"] = 0.007887,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.007887,
 					["start_time"] = 1570036990,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["monster"] = true,
 				}, -- [38]
 				{
 					["flag_original"] = 2632,
@@ -18539,18 +18560,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.006575,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006575,
 					["serial"] = "Creature-0-4468-1-268-3713-000014D588",
-					["monster"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1570036993,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["nome"] = "Wrathtail Wave Rider",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18618,10 +18639,10 @@ _detalhes_database = {
 					["total"] = 0.006575,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.006575,
 					["start_time"] = 1570036990,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["monster"] = true,
 				}, -- [39]
 				{
 					["flag_original"] = 2632,
@@ -18633,18 +18654,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.002271,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.002271,
 					["serial"] = "Creature-0-4468-1-268-3712-000014D588",
-					["monster"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1570036993,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["nome"] = "Wrathtail Razortail",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18766,10 +18787,10 @@ _detalhes_database = {
 					["total"] = 0.002271,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.002271,
 					["start_time"] = 1570036990,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["monster"] = true,
 				}, -- [40]
 				{
 					["flag_original"] = 68168,
@@ -18781,18 +18802,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.002414,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.002414,
 					["serial"] = "Creature-0-4468-1-268-3717-000014D588",
-					["monster"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1570036993,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["nome"] = "Wrathtail Sorceress",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18887,10 +18908,10 @@ _detalhes_database = {
 					["total"] = 0.002414,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.002414,
 					["start_time"] = 1570036990,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["monster"] = true,
 				}, -- [41]
 				{
 					["flag_original"] = 68168,
@@ -18902,18 +18923,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.00626,
 					["serial"] = "Creature-0-4470-0-267-2356-000014DA8E",
-					["dps_started"] = false,
+					["fight_component"] = true,
 					["end_time"] = 1570041861,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.00626,
 					["nome"] = "Elder Gray Bear",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18981,10 +19001,11 @@ _detalhes_database = {
 					["total"] = 0.00626,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.00626,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1570041858,
 					["delay"] = 0,
-					["monster"] = true,
+					["dps_started"] = false,
 				}, -- [42]
 				{
 					["flag_original"] = 68168,
@@ -18996,18 +19017,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003364,
 					["serial"] = "Creature-0-4470-0-272-1889-000014ECBD",
-					["dps_started"] = false,
+					["fight_component"] = true,
 					["end_time"] = 1570041861,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.003364,
 					["nome"] = "Dalaran Wizard",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -19074,10 +19094,11 @@ _detalhes_database = {
 					["total"] = 0.003364,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.003364,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1570041858,
 					["delay"] = 0,
-					["monster"] = true,
+					["dps_started"] = false,
 				}, -- [43]
 				{
 					["flag_original"] = 2632,
@@ -19089,18 +19110,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003368,
 					["serial"] = "Creature-0-4470-0-272-1888-000014EEB7",
-					["dps_started"] = false,
+					["fight_component"] = true,
 					["end_time"] = 1570041861,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.003368,
 					["nome"] = "Dalaran Watcher",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -19168,10 +19188,11 @@ _detalhes_database = {
 					["total"] = 0.003368,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.003368,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1570041858,
 					["delay"] = 0,
-					["monster"] = true,
+					["dps_started"] = false,
 				}, -- [44]
 				{
 					["flag_original"] = 68168,
@@ -19184,18 +19205,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004644,
 					["serial"] = "Creature-0-4470-0-272-1778-000094E9ED",
-					["dps_started"] = false,
+					["fight_component"] = true,
 					["end_time"] = 1570041861,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.004644,
 					["nome"] = "Ferocious Grizzled Bear",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -19264,10 +19284,11 @@ _detalhes_database = {
 					["total"] = 0.004644,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.004644,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1570041858,
 					["delay"] = 0,
-					["monster"] = true,
+					["dps_started"] = false,
 				}, -- [45]
 				{
 					["flag_original"] = 1298,
@@ -19520,18 +19541,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008462,
 					["serial"] = "Creature-0-4468-1-268-12921-000014E477",
-					["dps_started"] = false,
+					["fight_component"] = true,
 					["end_time"] = 1570041861,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.008462,
 					["nome"] = "Enraged Foulweald",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -19630,10 +19650,11 @@ _detalhes_database = {
 					["total"] = 0.008462,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.008462,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1570041858,
 					["delay"] = 0,
-					["monster"] = true,
+					["dps_started"] = false,
 				}, -- [47]
 				{
 					["flag_original"] = 68168,
@@ -19645,18 +19666,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007213,
 					["serial"] = "Creature-0-4468-1-268-12918-000014E48E",
-					["dps_started"] = false,
+					["fight_component"] = true,
 					["end_time"] = 1570041861,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.007213,
 					["nome"] = "Chief Murgut",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -19751,10 +19771,11 @@ _detalhes_database = {
 					["total"] = 0.007213,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.007213,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1570041858,
 					["delay"] = 0,
-					["monster"] = true,
+					["dps_started"] = false,
 				}, -- [48]
 				{
 					["flag_original"] = 2632,
@@ -19766,18 +19787,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001019,
 					["serial"] = "Creature-0-4468-1-268-3748-000094E1E0",
-					["dps_started"] = false,
+					["fight_component"] = true,
 					["end_time"] = 1570041861,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.001019,
 					["nome"] = "Foulweald Shaman",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -19901,10 +19921,11 @@ _detalhes_database = {
 					["total"] = 0.001019,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.001019,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1570041858,
 					["delay"] = 0,
-					["monster"] = true,
+					["dps_started"] = false,
 				}, -- [49]
 				{
 					["flag_original"] = 74312,
@@ -19924,20 +19945,20 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1570041861,
 					["serial"] = "Creature-0-4468-1-268-5921-000014E3F4",
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["nome"] = "Strength of Earth Totem II",
 					["spells"] = {
 						["_ActorTable"] = {
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.005425,
 					["total"] = 0.005425,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.005425,
+					["on_hold"] = false,
 					["start_time"] = 1570041858,
 					["delay"] = 0,
 					["friendlyfire_total"] = 0,
@@ -19960,20 +19981,20 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1570041861,
 					["serial"] = "Creature-0-4468-1-268-5921-000014E221",
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["nome"] = "Strength of Earth Totem II <Foulweald Shaman>",
 					["spells"] = {
 						["_ActorTable"] = {
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.004764,
 					["total"] = 0.004764,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.004764,
+					["on_hold"] = false,
 					["start_time"] = 1570041858,
 					["delay"] = 0,
 					["friendlyfire_total"] = 0,
@@ -19985,28 +20006,28 @@ _detalhes_database = {
 					},
 					["targets"] = {
 						["Sinkue"] = 0,
+						["Kustka"] = 0,
 						["Konzazt <Tadronus>"] = 0,
-						["Konzazt"] = 0,
 						["Verminz"] = 0,
 						["Kragdok"] = 0,
 						["Plonta"] = 0,
 						["Tadronus"] = 0,
-						["Kustka"] = 0,
+						["Konzazt"] = 0,
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.001627,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001627,
 					["delay"] = 0,
-					["monster"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1570113707,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["nome"] = "Vicious Gray Bear",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -20048,13 +20069,13 @@ _detalhes_database = {
 								["n_max"] = 0,
 								["targets"] = {
 									["Sinkue"] = 0,
+									["Kustka"] = 0,
 									["Konzazt <Tadronus>"] = 0,
-									["Konzazt"] = 0,
 									["Verminz"] = 0,
 									["Kragdok"] = 0,
 									["Plonta"] = 0,
 									["Tadronus"] = 0,
-									["Kustka"] = 0,
+									["Konzazt"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -20083,10 +20104,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.001627,
 					["start_time"] = 1570113704,
 					["serial"] = "Creature-0-4470-0-267-2354-000014FC56",
-					["fight_component"] = true,
+					["monster"] = true,
 				}, -- [52]
 				{
 					["flag_original"] = 68168,
@@ -20094,29 +20115,31 @@ _detalhes_database = {
 					["damage_from"] = {
 					},
 					["targets"] = {
+						["Bear"] = 0,
+						["Hathnak <Mamoa>"] = 0,
 						["Kitsolne"] = 0,
 						["Grannys"] = 0,
 						["Verminz"] = 0,
 						["Mamoa"] = 0,
-						["Sebawen"] = 0,
 						["Michailov"] = 0,
+						["Sebawen"] = 0,
 						["Prase <Farkycz>"] = 0,
-						["Hathnak <Mamoa>"] = 0,
+						["Sygx"] = 0,
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.005288,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005288,
 					["delay"] = 0,
-					["monster"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1570113707,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["nome"] = "Hillsbrad Farmer",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -20127,13 +20150,16 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
+									["Bear"] = 0,
+									["Michailov"] = 0,
 									["Kitsolne"] = 0,
 									["Grannys"] = 0,
 									["Verminz"] = 0,
 									["Mamoa"] = 0,
-									["Prase"] = 0,
-									["Michailov"] = 0,
 									["Sebawen"] = 0,
+									["Prase"] = 0,
+									["Sygx"] = 0,
+									["Tyrrokcz"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -20188,14 +20214,16 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
+									["Bear"] = 0,
+									["Hathnak <Mamoa>"] = 0,
 									["Kitsolne"] = 0,
 									["Grannys"] = 0,
 									["Verminz"] = 0,
 									["Mamoa"] = 0,
-									["Sebawen"] = 0,
 									["Michailov"] = 0,
+									["Sebawen"] = 0,
 									["Prase <Farkycz>"] = 0,
-									["Hathnak <Mamoa>"] = 0,
+									["Sygx"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -20252,10 +20280,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.005288,
 					["start_time"] = 1570113704,
 					["serial"] = "Creature-0-4470-0-267-2266-000014FC3C",
-					["fight_component"] = true,
+					["monster"] = true,
 				}, -- [53]
 				{
 					["flag_original"] = 68168,
@@ -20269,18 +20297,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.008516,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008516,
 					["delay"] = 0,
-					["monster"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1570113707,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["nome"] = "Hillsbrad Farmhand",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -20351,10 +20379,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.008516,
 					["start_time"] = 1570113704,
 					["serial"] = "Creature-0-4470-0-267-2360-000014F78C",
-					["fight_component"] = true,
+					["monster"] = true,
 				}, -- [54]
 				{
 					["flag_original"] = 68168,
@@ -20362,28 +20390,29 @@ _detalhes_database = {
 					["damage_from"] = {
 					},
 					["targets"] = {
+						["Nekked"] = 0,
 						["Lanney"] = 0,
 						["Verminz"] = 0,
-						["Biozop"] = 0,
 						["Myrkynnielly"] = 0,
+						["Mikser"] = 0,
 						["Plonta"] = 0,
 						["Tadronus"] = 0,
-						["Mikser"] = 0,
+						["Biozop"] = 0,
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.00197,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.00197,
 					["delay"] = 0,
-					["monster"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1570113707,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["nome"] = "Starving Mountain Lion",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -20426,13 +20455,14 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
+									["Nekked"] = 0,
 									["Lanney"] = 0,
 									["Verminz"] = 0,
-									["Biozop"] = 0,
 									["Myrkynnielly"] = 0,
+									["Mikser"] = 0,
 									["Plonta"] = 0,
 									["Tadronus"] = 0,
-									["Mikser"] = 0,
+									["Biozop"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -20461,10 +20491,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.00197,
 					["start_time"] = 1570113704,
 					["serial"] = "Creature-0-4470-0-267-2384-000014F88B",
-					["fight_component"] = true,
+					["monster"] = true,
 				}, -- [55]
 				{
 					["flag_original"] = 68168,
@@ -20476,18 +20506,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.007824,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007824,
 					["serial"] = "Creature-0-4470-0-267-2261-000116109A",
-					["monster"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1570129181,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["nome"] = "Syndicate Watchman",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -20611,10 +20641,10 @@ _detalhes_database = {
 					["total"] = 0.007824,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.007824,
 					["start_time"] = 1570129178,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["monster"] = true,
 				}, -- [56]
 				{
 					["flag_original"] = 68168,
@@ -20627,18 +20657,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.002478,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.002478,
 					["serial"] = "Creature-0-4470-0-267-2260-00001613A9",
-					["monster"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1570129181,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["nome"] = "Syndicate Rogue",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -20735,10 +20765,10 @@ _detalhes_database = {
 					["total"] = 0.002478,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.002478,
 					["start_time"] = 1570129178,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["monster"] = true,
 				}, -- [57]
 				{
 					["flag_original"] = 68168,
@@ -20750,18 +20780,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.005848,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005848,
 					["serial"] = "Creature-0-4470-0-267-2244-00001613ED",
-					["monster"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1570129181,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["nome"] = "Syndicate Shadow Mage",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -20884,10 +20914,10 @@ _detalhes_database = {
 					["total"] = 0.005848,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.005848,
 					["start_time"] = 1570129178,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["monster"] = true,
 				}, -- [58]
 				{
 					["flag_original"] = 276,
@@ -21195,18 +21225,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.003266,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003266,
 					["serial"] = "Creature-0-4470-0-267-2349-0000160BD0",
-					["monster"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1570129181,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["nome"] = "Giant Moss Creeper",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -21302,10 +21332,10 @@ _detalhes_database = {
 					["total"] = 0.003266,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["damage_taken"] = 0.003266,
 					["start_time"] = 1570129178,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["monster"] = true,
 				}, -- [67]
 				{
 					["flag_original"] = 2632,
@@ -21320,17 +21350,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["damage_taken"] = 0.005615,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005615,
 					["serial"] = "Creature-0-4470-0-267-2372-0000163FFB",
-					["fight_component"] = true,
+					["monster"] = true,
 					["end_time"] = 1570130001,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.005615,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Mudsnout Gnoll",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -21430,11 +21461,10 @@ _detalhes_database = {
 					["total"] = 0.005615,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["start_time"] = 1570129998,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["fight_component"] = true,
 				}, -- [68]
 				{
 					["flag_original"] = 68168,
@@ -21448,17 +21478,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["damage_taken"] = 0.006966,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006966,
 					["serial"] = "Creature-0-4470-0-267-2373-0000164687",
-					["fight_component"] = true,
+					["monster"] = true,
 					["end_time"] = 1570130001,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.006966,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Mudsnout Shaman",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -21584,11 +21615,10 @@ _detalhes_database = {
 					["total"] = 0.006966,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["start_time"] = 1570129998,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["fight_component"] = true,
 				}, -- [69]
 				{
 					["flag_original"] = 68168,
@@ -21600,17 +21630,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
-					["monster"] = true,
+					["dps_started"] = false,
+					["damage_taken"] = 0.003478,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003478,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["monster"] = true,
 					["end_time"] = 1570131059,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.003478,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Gray Bear",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -21632,9 +21663,9 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
@@ -21650,11 +21681,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["start_time"] = 1570131056,
 					["serial"] = "Creature-0-4470-0-267-2351-0000164BBF",
-					["dps_started"] = false,
+					["fight_component"] = true,
 				}, -- [70]
 				{
 					["flag_original"] = 68168,
@@ -21666,17 +21696,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
-					["monster"] = true,
+					["dps_started"] = false,
+					["damage_taken"] = 0.006414,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006414,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["monster"] = true,
 					["end_time"] = 1570131059,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.006414,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Forest Moss Creeper",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -21698,9 +21729,9 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = 1,
 								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
@@ -21726,9 +21757,9 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
@@ -21744,11 +21775,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["start_time"] = 1570131056,
 					["serial"] = "Creature-0-4470-0-267-2350-0000164832",
-					["dps_started"] = false,
+					["fight_component"] = true,
 				}, -- [71]
 				{
 					["flag_original"] = 68168,
@@ -21757,32 +21787,32 @@ _detalhes_database = {
 					},
 					["targets"] = {
 						["Targhul"] = 0,
+						["Archmagister"] = 0,
 						["Elszakal"] = 0,
 						["Hathnak <Mamoa>"] = 0,
+						["Michailov"] = 0,
 						["Verminz"] = 0,
 						["Mamoa"] = 0,
-						["Michailov"] = 0,
-						["Mämmi"] = 0,
 						["Sebawen"] = 0,
+						["Mämmi"] = 0,
+						["Sygx"] = 0,
 						["Tyrrokcz"] = 0,
 					},
-					["fight_component"] = true,
 					["pets"] = {
 					},
-					["end_time"] = 1570132663,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003767,
-					["friendlyfire"] = {
-					},
-					["dps_started"] = false,
-					["total"] = 0.003767,
-					["last_event"] = 0,
+					["serial"] = "Creature-0-4470-0-267-2267-0002165284",
+					["fight_component"] = true,
+					["end_time"] = 1570132663,
 					["friendlyfire_total"] = 0,
+					["damage_taken"] = 0.003767,
 					["nome"] = "Hillsbrad Peasant",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -21791,11 +21821,12 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
+									["Sebawen"] = 0,
 									["Verminz"] = 0,
 									["Targhul"] = 0,
-									["Sebawen"] = 0,
-									["Mämmi"] = 0,
 									["Michailov"] = 0,
+									["Mämmi"] = 0,
+									["Sygx"] = 0,
 									["Tyrrokcz"] = 0,
 								},
 								["m_dmg"] = 0,
@@ -21814,8 +21845,8 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["r_amt"] = 0,
 								["c_min"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 							[0] = {
 								["c_amt"] = 0,
@@ -21824,8 +21855,9 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Verminz"] = 0,
 									["Michailov"] = 0,
+									["Verminz"] = 0,
+									["Sygx"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -21843,8 +21875,8 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["r_amt"] = 0,
 								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 							["Pierce Armor"] = {
 								["c_amt"] = 0,
@@ -21870,8 +21902,8 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["r_amt"] = 0,
 								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 							["!Melee"] = {
 								["c_amt"] = 0,
@@ -21881,13 +21913,15 @@ _detalhes_database = {
 								["n_max"] = 0,
 								["targets"] = {
 									["Targhul"] = 0,
+									["Archmagister"] = 0,
 									["Elszakal"] = 0,
 									["Hathnak <Mamoa>"] = 0,
+									["Michailov"] = 0,
 									["Verminz"] = 0,
 									["Mamoa"] = 0,
-									["Michailov"] = 0,
-									["Mämmi"] = 0,
 									["Sebawen"] = 0,
+									["Mämmi"] = 0,
+									["Sygx"] = 0,
 									["Tyrrokcz"] = 0,
 								},
 								["m_dmg"] = 0,
@@ -21906,20 +21940,22 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["r_amt"] = 0,
 								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["monster"] = true,
+					["last_event"] = 0,
 					["on_hold"] = false,
-					["serial"] = "Creature-0-4470-0-267-2267-0002165284",
+					["total"] = 0.003767,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.003767,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1570132660,
 					["delay"] = 0,
-					["last_dps"] = 0,
+					["dps_started"] = false,
 				}, -- [72]
 				{
 					["flag_original"] = 2632,
@@ -21929,23 +21965,21 @@ _detalhes_database = {
 					["targets"] = {
 						["Verminz"] = 0,
 					},
-					["fight_component"] = true,
 					["pets"] = {
 					},
-					["end_time"] = 1570132663,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008652,
-					["friendlyfire"] = {
-					},
-					["dps_started"] = false,
-					["total"] = 0.008652,
-					["last_event"] = 0,
+					["serial"] = "Creature-0-4470-0-267-2451-0000164EA9",
+					["fight_component"] = true,
+					["end_time"] = 1570132663,
 					["friendlyfire_total"] = 0,
+					["damage_taken"] = 0.008652,
 					["nome"] = "Farmer Kalaba",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -21972,8 +22006,8 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["r_amt"] = 0,
 								["c_min"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 							["!Melee"] = {
 								["c_amt"] = 0,
@@ -22000,20 +22034,22 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["r_amt"] = 0,
 								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["monster"] = true,
+					["last_event"] = 0,
 					["on_hold"] = false,
-					["serial"] = "Creature-0-4470-0-267-2451-0000164EA9",
+					["total"] = 0.008652,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.008652,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1570132660,
 					["delay"] = 0,
-					["last_dps"] = 0,
+					["dps_started"] = false,
 				}, -- [73]
 				{
 					["flag_original"] = 68168,
@@ -22023,23 +22059,21 @@ _detalhes_database = {
 					["targets"] = {
 						["Verminz"] = 0,
 					},
-					["fight_component"] = true,
 					["pets"] = {
 					},
-					["end_time"] = 1570132663,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008977,
-					["friendlyfire"] = {
-					},
-					["dps_started"] = false,
-					["total"] = 0.008977,
-					["last_event"] = 0,
+					["serial"] = "Creature-0-4470-0-267-2265-0000164E70",
+					["fight_component"] = true,
+					["end_time"] = 1570132663,
 					["friendlyfire_total"] = 0,
+					["damage_taken"] = 0.008977,
 					["nome"] = "Hillsbrad Apprentice Blacksmith",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							["!Melee"] = {
 								["c_amt"] = 0,
@@ -22066,20 +22100,22 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["r_amt"] = 0,
 								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["monster"] = true,
+					["last_event"] = 0,
 					["on_hold"] = false,
-					["serial"] = "Creature-0-4470-0-267-2265-0000164E70",
+					["total"] = 0.008977,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.008977,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1570132660,
 					["delay"] = 0,
-					["last_dps"] = 0,
+					["dps_started"] = false,
 				}, -- [74]
 				{
 					["flag_original"] = 68168,
@@ -22088,24 +22124,23 @@ _detalhes_database = {
 					},
 					["targets"] = {
 						["Verminz"] = 0,
+						["Alemon"] = 0,
 					},
-					["fight_component"] = true,
 					["pets"] = {
 					},
-					["end_time"] = 1570132663,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006679,
-					["friendlyfire"] = {
-					},
-					["dps_started"] = false,
-					["total"] = 0.006679,
-					["last_event"] = 0,
+					["serial"] = "Creature-0-4470-0-267-2268-0000164CE3",
+					["fight_component"] = true,
+					["end_time"] = 1570132663,
 					["friendlyfire_total"] = 0,
+					["damage_taken"] = 0.006679,
 					["nome"] = "Hillsbrad Footman",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							{
 								["c_amt"] = 0,
@@ -22115,6 +22150,7 @@ _detalhes_database = {
 								["n_max"] = 0,
 								["targets"] = {
 									["Verminz"] = 0,
+									["Bear"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -22132,8 +22168,8 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["r_amt"] = 0,
 								["c_min"] = 0,
+								["r_amt"] = 0,
 							}, -- [1]
 							["!Melee"] = {
 								["c_amt"] = 0,
@@ -22143,6 +22179,7 @@ _detalhes_database = {
 								["n_max"] = 0,
 								["targets"] = {
 									["Verminz"] = 0,
+									["Alemon"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -22160,8 +22197,8 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["r_amt"] = 0,
 								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 							["Defensive Stance"] = {
 								["c_amt"] = 0,
@@ -22187,20 +22224,22 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["r_amt"] = 0,
 								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["monster"] = true,
+					["last_event"] = 0,
 					["on_hold"] = false,
-					["serial"] = "Creature-0-4470-0-267-2268-0000164CE3",
+					["total"] = 0.006679,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.006679,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1570132660,
 					["delay"] = 0,
-					["last_dps"] = 0,
+					["dps_started"] = false,
 				}, -- [75]
 			},
 		}, -- [1]
@@ -22222,15 +22261,15 @@ _detalhes_database = {
 					["totalover_without_pet"] = 0.006451,
 					["healing_from"] = {
 					},
-					["heal_enemy_amt"] = 0,
+					["healing_taken"] = 0.006451,
 					["totalover"] = 0.006451,
 					["total_without_pet"] = 0.006451,
 					["iniciar_hps"] = false,
 					["start_time"] = 1569770226,
 					["fight_component"] = true,
 					["total"] = 0.006451,
-					["healing_taken"] = 0.006451,
 					["classe"] = "WARRIOR",
+					["heal_enemy_amt"] = 0,
 					["nome"] = "Verminz",
 					["targets_absorbs"] = {
 					},
@@ -22345,14 +22384,14 @@ _detalhes_database = {
 					["totalover_without_pet"] = 0.008101,
 					["healing_from"] = {
 					},
-					["healing_taken"] = 0.008101,
+					["classe"] = "UNGROUPPLAYER",
 					["totalover"] = 0.008101,
 					["total_without_pet"] = 0.008101,
 					["start_time"] = 1570033280,
 					["iniciar_hps"] = false,
 					["fight_component"] = true,
 					["total"] = 0.008101,
-					["heal_enemy_amt"] = 0,
+					["healing_taken"] = 0.008101,
 					["delay"] = 0,
 					["nome"] = "Earybeary",
 					["spells"] = {
@@ -22387,7 +22426,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 3,
 					},
-					["classe"] = "UNGROUPPLAYER",
+					["heal_enemy_amt"] = 0,
 					["end_time"] = 1570033283,
 					["heal_enemy"] = {
 					},
@@ -22402,7 +22441,7 @@ _detalhes_database = {
 				}, -- [2]
 				{
 					["flag_original"] = 1298,
-					["targets_overheal"] = {
+					["healing_from"] = {
 					},
 					["pets"] = {
 					},
@@ -22426,7 +22465,8 @@ _detalhes_database = {
 					["healing_taken"] = 0.001981,
 					["fight_component"] = true,
 					["end_time"] = 1570041861,
-					["heal_enemy_amt"] = 0,
+					["targets_overheal"] = {
+					},
 					["nome"] = "Skulldread",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -22542,15 +22582,14 @@ _detalhes_database = {
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["healing_from"] = {
-					},
-					["spec"] = 72,
-					["custom"] = 0,
 					["tipo"] = 2,
+					["heal_enemy_amt"] = 0,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["start_time"] = 1570041858,
 					["totaldenied"] = 0.001981,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["spec"] = 72,
 				}, -- [3]
 				{
 					["flag_original"] = 1304,
@@ -22567,14 +22606,14 @@ _detalhes_database = {
 					["iniciar_hps"] = false,
 					["healing_from"] = {
 					},
-					["healing_taken"] = 0.007292,
+					["classe"] = "UNGROUPPLAYER",
 					["totalover"] = 0.007292,
 					["total_without_pet"] = 0.007292,
 					["start_time"] = 1570113704,
 					["totalover_without_pet"] = 0.007292,
 					["fight_component"] = true,
 					["total"] = 0.007292,
-					["heal_enemy_amt"] = 0,
+					["healing_taken"] = 0.007292,
 					["delay"] = 0,
 					["nome"] = "Lanna",
 					["spells"] = {
@@ -22621,7 +22660,7 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["totaldenied"] = 0.007292,
 					["serial"] = "Player-4465-012B2764",
-					["classe"] = "UNGROUPPLAYER",
+					["heal_enemy_amt"] = 0,
 				}, -- [4]
 				{
 					["flag_original"] = 1304,
@@ -22637,14 +22676,14 @@ _detalhes_database = {
 					["iniciar_hps"] = false,
 					["healing_from"] = {
 					},
-					["classe"] = "UNGROUPPLAYER",
+					["heal_enemy_amt"] = 0,
 					["totalover"] = 0.004522,
 					["total_without_pet"] = 0.004522,
 					["total"] = 0.004522,
 					["totalover_without_pet"] = 0.004522,
 					["fight_component"] = true,
 					["end_time"] = 1570114072,
-					["healing_taken"] = 0.004522,
+					["classe"] = "UNGROUPPLAYER",
 					["serial"] = "Player-4465-012B603B",
 					["nome"] = "Dillzaayx",
 					["spells"] = {
@@ -22708,7 +22747,7 @@ _detalhes_database = {
 					},
 					["targets_absorbs"] = {
 					},
-					["heal_enemy_amt"] = 0,
+					["healing_taken"] = 0.004522,
 					["heal_enemy"] = {
 					},
 					["totaldenied"] = 0.004522,
@@ -22727,18 +22766,18 @@ _detalhes_database = {
 					},
 					["targets"] = {
 					},
-					["healing_taken"] = 0.004397,
+					["heal_enemy_amt"] = 0,
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
 					["healing_from"] = {
 					},
-					["heal_enemy_amt"] = 0,
+					["classe"] = "PRIEST",
 					["totalover"] = 0.004397,
 					["total_without_pet"] = 0.004397,
 					["totalover_without_pet"] = 0.004397,
 					["start_time"] = 1570129178,
-					["classe"] = "PRIEST",
+					["healing_taken"] = 0.004397,
 					["end_time"] = 1570129181,
 					["total"] = 0.004397,
 					["spells"] = {
@@ -22769,18 +22808,18 @@ _detalhes_database = {
 					},
 					["targets"] = {
 					},
-					["healing_taken"] = 0.003406,
+					["heal_enemy_amt"] = 0,
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
 					["healing_from"] = {
 					},
-					["heal_enemy_amt"] = 0,
+					["classe"] = "HUNTER",
 					["totalover"] = 0.003406,
 					["total_without_pet"] = 0.003406,
 					["totalover_without_pet"] = 0.003406,
 					["start_time"] = 1570129178,
-					["classe"] = "HUNTER",
+					["healing_taken"] = 0.003406,
 					["end_time"] = 1570129181,
 					["total"] = 0.003406,
 					["spells"] = {
@@ -22811,18 +22850,18 @@ _detalhes_database = {
 					},
 					["targets"] = {
 					},
-					["healing_taken"] = 0.006441,
+					["heal_enemy_amt"] = 0,
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
 					["healing_from"] = {
 					},
-					["heal_enemy_amt"] = 0,
+					["classe"] = "WARLOCK",
 					["totalover"] = 0.006441,
 					["total_without_pet"] = 0.006441,
 					["totalover_without_pet"] = 0.006441,
 					["start_time"] = 1570129178,
-					["classe"] = "WARLOCK",
+					["healing_taken"] = 0.006441,
 					["end_time"] = 1570129181,
 					["total"] = 0.006441,
 					["spells"] = {
@@ -22853,18 +22892,18 @@ _detalhes_database = {
 					},
 					["targets"] = {
 					},
-					["healing_taken"] = 0.005503,
+					["heal_enemy_amt"] = 0,
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
 					["healing_from"] = {
 					},
-					["heal_enemy_amt"] = 0,
+					["classe"] = "MAGE",
 					["totalover"] = 0.005503,
 					["total_without_pet"] = 0.005503,
 					["totalover_without_pet"] = 0.005503,
 					["start_time"] = 1570129178,
-					["classe"] = "MAGE",
+					["healing_taken"] = 0.005503,
 					["end_time"] = 1570129181,
 					["total"] = 0.005503,
 					["spells"] = {
@@ -22895,18 +22934,18 @@ _detalhes_database = {
 					},
 					["targets"] = {
 					},
-					["healing_taken"] = 0.001897,
+					["heal_enemy_amt"] = 0,
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
 					["healing_from"] = {
 					},
-					["heal_enemy_amt"] = 0,
+					["classe"] = "MONK",
 					["totalover"] = 0.001897,
 					["total_without_pet"] = 0.001897,
 					["totalover_without_pet"] = 0.001897,
 					["start_time"] = 1570129178,
-					["classe"] = "MONK",
+					["healing_taken"] = 0.001897,
 					["end_time"] = 1570129181,
 					["total"] = 0.001897,
 					["spells"] = {
@@ -22937,18 +22976,18 @@ _detalhes_database = {
 					},
 					["targets"] = {
 					},
-					["healing_taken"] = 0.006153,
+					["heal_enemy_amt"] = 0,
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
 					["healing_from"] = {
 					},
-					["heal_enemy_amt"] = 0,
+					["classe"] = "ROGUE",
 					["totalover"] = 0.006153,
 					["total_without_pet"] = 0.006153,
 					["totalover_without_pet"] = 0.006153,
 					["start_time"] = 1570129178,
-					["classe"] = "ROGUE",
+					["healing_taken"] = 0.006153,
 					["end_time"] = 1570129181,
 					["total"] = 0.006153,
 					["spells"] = {
@@ -22979,18 +23018,18 @@ _detalhes_database = {
 					},
 					["targets"] = {
 					},
-					["healing_taken"] = 0.006529,
+					["heal_enemy_amt"] = 0,
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
 					["healing_from"] = {
 					},
-					["heal_enemy_amt"] = 0,
+					["classe"] = "DEATHKNIGHT",
 					["totalover"] = 0.006529,
 					["total_without_pet"] = 0.006529,
 					["totalover_without_pet"] = 0.006529,
 					["start_time"] = 1570129178,
-					["classe"] = "DEATHKNIGHT",
+					["healing_taken"] = 0.006529,
 					["end_time"] = 1570129181,
 					["total"] = 0.006529,
 					["spells"] = {
@@ -23021,18 +23060,18 @@ _detalhes_database = {
 					},
 					["targets"] = {
 					},
-					["healing_taken"] = 0.007252,
+					["heal_enemy_amt"] = 0,
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
 					["healing_from"] = {
 					},
-					["heal_enemy_amt"] = 0,
+					["classe"] = "WARRIOR",
 					["totalover"] = 0.007252,
 					["total_without_pet"] = 0.007252,
 					["totalover_without_pet"] = 0.007252,
 					["start_time"] = 1570129178,
-					["classe"] = "WARRIOR",
+					["healing_taken"] = 0.007252,
 					["end_time"] = 1570129181,
 					["total"] = 0.007252,
 					["spells"] = {
@@ -23062,7 +23101,7 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["received"] = 0.007003,
-					["resource"] = 8.208524,
+					["resource"] = 9.626956,
 					["targets"] = {
 						["Verminz"] = 0,
 					},
@@ -23293,6 +23332,12 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
+							["Armor"] = {
+								["id"] = "Armor",
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
 							["Battle Stance"] = {
 								["id"] = "Battle Stance",
 								["targets"] = {
@@ -23301,6 +23346,12 @@ _detalhes_database = {
 							},
 							["Battle Shout"] = {
 								["id"] = "Battle Shout",
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							["Strength"] = {
+								["id"] = "Strength",
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -23351,13 +23402,13 @@ _detalhes_database = {
 				{
 					["fight_component"] = true,
 					["nome"] = "Lost Barrens Kodo",
-					["classe"] = "UNKNOW",
+					["tipo"] = 4,
 					["spell_cast"] = {
 						["Kodo Stomp"] = 0,
 					},
 					["flag_original"] = 68136,
+					["classe"] = "UNKNOW",
 					["last_event"] = 0,
-					["tipo"] = 4,
 					["serial"] = "Creature-0-4448-1-248-3234-0000105BA4",
 					["pets"] = {
 					},
@@ -23365,13 +23416,13 @@ _detalhes_database = {
 				{
 					["fight_component"] = true,
 					["nome"] = "Imp Minion",
-					["last_event"] = 0,
+					["classe"] = "PET",
 					["spell_cast"] = {
 						["Firebolt"] = 0,
 					},
 					["flag_original"] = 70216,
+					["last_event"] = 0,
 					["tipo"] = 4,
-					["classe"] = "PET",
 					["serial"] = "Creature-0-4446-1-161-12922-000010A3CD",
 					["pets"] = {
 					},
@@ -23460,14 +23511,14 @@ _detalhes_database = {
 				{
 					["fight_component"] = true,
 					["nome"] = "Imp Minion <Bleakheart Hellcaller>",
-					["tipo"] = 4,
+					["last_event"] = 0,
 					["spell_cast"] = {
 						["Firebolt"] = 0,
 					},
 					["pets"] = {
 					},
+					["tipo"] = 4,
 					["classe"] = "PET",
-					["last_event"] = 0,
 					["serial"] = "Creature-0-4446-1-161-12922-0000111975",
 					["flag_original"] = 70216,
 				}, -- [9]
@@ -23521,13 +23572,13 @@ _detalhes_database = {
 				{
 					["fight_component"] = true,
 					["nome"] = "Searing Totem II <Foulweald Totemic>",
-					["last_event"] = 0,
+					["classe"] = "PET",
 					["spell_cast"] = {
 						["Attack"] = 0,
 					},
 					["flag_original"] = 8776,
+					["last_event"] = 0,
 					["tipo"] = 4,
-					["classe"] = "PET",
 					["serial"] = "Creature-0-4446-1-161-3902-0000123DF4",
 					["pets"] = {
 					},
@@ -23610,7 +23661,7 @@ _detalhes_database = {
 				{
 					["fight_component"] = true,
 					["nome"] = "Earybeary",
-					["last_event"] = 0,
+					["classe"] = "UNGROUPPLAYER",
 					["spell_cast"] = {
 						["Mark of the Wild"] = 0,
 						["Rejuvenation"] = 0,
@@ -23619,8 +23670,8 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
+					["last_event"] = 0,
 					["tipo"] = 4,
-					["classe"] = "UNGROUPPLAYER",
 					["serial"] = "Player-4465-007CC160",
 					["flag_original"] = 1304,
 				}, -- [19]
@@ -23677,8 +23728,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["pets"] = {
-					},
+					["buff_uptime"] = 0,
 					["classe"] = "MAGE",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
@@ -23728,14 +23778,15 @@ _detalhes_database = {
 						["Cone of Cold"] = 0,
 						["Fire Blast"] = 0,
 					},
-					["tipo"] = 4,
+					["pets"] = {
+					},
 					["last_event"] = 0,
 					["buff_uptime_targets"] = {
 					},
+					["tipo"] = 4,
+					["serial"] = "Player-4465-011106E5",
 					["debuff_uptime_targets"] = {
 					},
-					["serial"] = "Player-4465-011106E5",
-					["buff_uptime"] = 0,
 				}, -- [21]
 				{
 					["monster"] = true,
@@ -23980,30 +24031,30 @@ _detalhes_database = {
 				{
 					["fight_component"] = true,
 					["nome"] = "Lanna",
-					["classe"] = "UNGROUPPLAYER",
+					["tipo"] = 4,
 					["spell_cast"] = {
 						["Power Word: Fortitude"] = 0,
 						["Renew"] = 0,
 					},
 					["pets"] = {
 					},
+					["classe"] = "UNGROUPPLAYER",
 					["last_event"] = 0,
-					["tipo"] = 4,
 					["serial"] = "Player-4465-012B2764",
 					["flag_original"] = 1304,
 				}, -- [33]
 				{
 					["fight_component"] = true,
 					["nome"] = "Dillzaayx",
-					["last_event"] = 0,
+					["classe"] = "UNGROUPPLAYER",
 					["spell_cast"] = {
 						["Lesser Healing Wave"] = 0,
 						["Ghost Wolf"] = 0,
 						["Healing Wave"] = 0,
 					},
 					["flag_original"] = 1304,
+					["last_event"] = 0,
 					["tipo"] = 4,
-					["classe"] = "UNGROUPPLAYER",
 					["serial"] = "Player-4465-012B603B",
 					["pets"] = {
 					},
@@ -24070,8 +24121,8 @@ _detalhes_database = {
 				}, -- [38]
 				{
 					["monster"] = true,
-					["nome"] = "Hillsbrad Peasant",
 					["tipo"] = 4,
+					["nome"] = "Hillsbrad Peasant",
 					["pets"] = {
 					},
 					["spell_cast"] = {
@@ -24085,8 +24136,8 @@ _detalhes_database = {
 				}, -- [39]
 				{
 					["monster"] = true,
-					["nome"] = "Hillsbrad Footman",
 					["tipo"] = 4,
+					["nome"] = "Hillsbrad Footman",
 					["pets"] = {
 					},
 					["spell_cast"] = {
@@ -24697,5 +24748,6 @@ _detalhes_database = {
 		["channel"] = "SELF",
 	},
 	["cached_specs"] = {
+		["Player-4465-010B6E50"] = 72,
 	},
 }

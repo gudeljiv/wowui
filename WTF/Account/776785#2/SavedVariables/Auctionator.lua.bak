@@ -2,13 +2,13 @@
 AUCTIONATOR_SAVEDVARS = {
 	["_50000"] = 500,
 	["_2000"] = 100,
+	["_10000"] = 200,
+	["_500"] = 5,
+	["_1000000"] = 2500,
 	["_200000"] = 1000,
 	["STARTING_DISCOUNT"] = 5,
-	["_1000000"] = 2500,
-	["_5000000"] = 10000,
 	["LOG_DE_DATA_X"] = true,
-	["_500"] = 5,
-	["_10000"] = 200,
+	["_5000000"] = 10000,
 }
 AUCTIONATOR_PRICING_HISTORY = {
 	["Shredder Operating Manual - Page 3"] = {
@@ -162,12 +162,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 0,
 			["mr"] = 243,
 		},
-		["Wool Cloth"] = {
-			["H3212"] = 177,
+		["Bolt of Silk Cloth"] = {
+			["H3212"] = 2100,
 			["cc"] = 7,
-			["id"] = "2592:0:0:0:0",
+			["id"] = "4305:0:0:0:0",
 			["sc"] = 0,
-			["mr"] = 177,
+			["mr"] = 2100,
 		},
 		["Barbaric Cloth Vest"] = {
 			["H3212"] = 900,
@@ -318,19 +318,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 1,
 			["mr"] = 4000,
 		},
-		["Bolt of Silk Cloth"] = {
-			["H3212"] = 2100,
-			["cc"] = 7,
-			["id"] = "4305:0:0:0:0",
-			["sc"] = 0,
-			["mr"] = 2100,
-		},
 		["Barbaric Loincloth"] = {
 			["H3212"] = 400,
 			["cc"] = 4,
 			["id"] = "3309:0:0:0:0",
 			["sc"] = 1,
 			["mr"] = 400,
+		},
+		["Wool Cloth"] = {
+			["H3212"] = 177,
+			["cc"] = 7,
+			["id"] = "2592:0:0:0:0",
+			["sc"] = 0,
+			["mr"] = 177,
 		},
 		["Bloodspattered Loincloth of the Tiger"] = {
 			["H3212"] = 2200,
@@ -13180,17 +13180,17 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3228"] = 18999,
 			["mr"] = 18999,
 		},
-		["Sequoia Hammer of the Monkey"] = {
-			["H3229"] = 7500,
-			["mr"] = 7500,
+		["Geomancer's Spaulders of the Owl"] = {
+			["H3228"] = 5500,
+			["mr"] = 5500,
 		},
 		["Greater Stoneshield Potion"] = {
 			["H3229"] = 15000,
 			["mr"] = 15000,
 		},
-		["Geomancer's Spaulders of the Owl"] = {
-			["H3228"] = 5500,
-			["mr"] = 5500,
+		["Orange Mageweave Shirt"] = {
+			["H3228"] = 7779,
+			["mr"] = 7779,
 		},
 		["Barbaric Battle Axe of Stamina"] = {
 			["H3229"] = 5000,
@@ -13551,21 +13551,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3229"] = 20000,
 			["mr"] = 20000,
 		},
-		["Big Bronze Bomb"] = {
-			["H3229"] = 990,
-			["mr"] = 990,
+		["Highborne Crown"] = {
+			["H3229"] = 48832,
+			["mr"] = 48832,
 		},
 		["Twilight Cowl of the Whale"] = {
 			["H3229"] = 10500,
 			["mr"] = 10500,
 		},
-		["Highborne Crown"] = {
-			["H3229"] = 48832,
-			["mr"] = 48832,
-		},
 		["Infiltrator Shoulders of the Whale"] = {
 			["H3228"] = 3699,
 			["mr"] = 3699,
+		},
+		["Big Bronze Bomb"] = {
+			["H3229"] = 990,
+			["mr"] = 990,
 		},
 		["Savory Deviate Delight"] = {
 			["H3229"] = 699,
@@ -13667,9 +13667,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3229"] = 7999,
 			["mr"] = 7999,
 		},
-		["Resilient Boots"] = {
-			["H3229"] = 3000,
-			["mr"] = 3000,
+		["Pattern: Phoenix Pants"] = {
+			["H3228"] = 1680,
+			["mr"] = 1680,
 		},
 		["Wild Leather Shoulders of the Whale"] = {
 			["H3228"] = 8900,
@@ -13691,9 +13691,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3229"] = 15000,
 			["mr"] = 15000,
 		},
-		["Bright Sphere"] = {
-			["H3229"] = 3999,
-			["mr"] = 3999,
+		["Resilient Boots"] = {
+			["H3229"] = 3000,
+			["mr"] = 3000,
 		},
 		["Darkmist Wizard Hat of Intellect"] = {
 			["H3228"] = 25000,
@@ -13740,13 +13740,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3229"] = 9199,
 			["mr"] = 9199,
 		},
+		["Conjurer's Cloak of Shadow Wrath"] = {
+			["H3229"] = 9900,
+			["mr"] = 9900,
+		},
 		["Gloom Reaper of Stamina"] = {
 			["H3228"] = 12000,
 			["mr"] = 12000,
-		},
-		["Diamond-Tip Bludgeon of the Monkey"] = {
-			["H3229"] = 42000,
-			["mr"] = 42000,
 		},
 		["Warden's Cloak"] = {
 			["H3228"] = 9999,
@@ -13984,17 +13984,17 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3228"] = 10000,
 			["mr"] = 10000,
 		},
-		["Stone Hammer of Spirit"] = {
-			["H3229"] = 15999,
-			["mr"] = 15999,
+		["19 Pound Catfish"] = {
+			["H3229"] = 624,
+			["mr"] = 624,
 		},
 		["Knight's Pauldrons of the Tiger"] = {
 			["H3229"] = 7000,
 			["mr"] = 7000,
 		},
-		["Twilight Belt of Intellect"] = {
-			["H3228"] = 4680,
-			["mr"] = 4680,
+		["Stone Hammer of Spirit"] = {
+			["H3229"] = 15999,
+			["mr"] = 15999,
 		},
 		["Thick Murloc Scale"] = {
 			["H3229"] = 495,
@@ -14913,9 +14913,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3229"] = 6393,
 			["mr"] = 6393,
 		},
-		["Archer's Gloves of the Monkey"] = {
-			["H3228"] = 8000,
-			["mr"] = 8000,
+		["Cutthroat's Pants of the Gorilla"] = {
+			["H3229"] = 10364,
+			["mr"] = 10364,
 		},
 		["Linen Bandage"] = {
 			["H3229"] = 11,
@@ -14925,9 +14925,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3228"] = 1800,
 			["mr"] = 1800,
 		},
-		["Huntsman's Belt of the Tiger"] = {
-			["H3229"] = 13500,
-			["mr"] = 13500,
+		["Archer's Gloves of the Monkey"] = {
+			["H3228"] = 8000,
+			["mr"] = 8000,
 		},
 		["Ranger Shoulders of the Monkey"] = {
 			["H3229"] = 14900,
@@ -14941,9 +14941,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3228"] = 6500,
 			["mr"] = 6500,
 		},
-		["Cutthroat's Pants of the Gorilla"] = {
-			["H3229"] = 10364,
-			["mr"] = 10364,
+		["Huntsman's Belt of the Tiger"] = {
+			["H3229"] = 13500,
+			["mr"] = 13500,
 		},
 		["Wizard's Hand of Intellect"] = {
 			["H3228"] = 99143,
@@ -15745,13 +15745,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3229"] = 1600,
 			["mr"] = 1600,
 		},
+		["Pagan Wraps of Intellect"] = {
+			["H3228"] = 2900,
+			["mr"] = 2900,
+		},
 		["Swashbuckler's Gloves of the Monkey"] = {
 			["H3229"] = 35000,
 			["mr"] = 35000,
-		},
-		["White Leather Jerkin"] = {
-			["H3229"] = 390,
-			["mr"] = 390,
 		},
 		["Scouting Cloak of the Monkey"] = {
 			["H3229"] = 7000,
@@ -15761,9 +15761,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3229"] = 5000,
 			["mr"] = 5000,
 		},
-		["Pagan Wraps of Intellect"] = {
-			["H3228"] = 2900,
-			["mr"] = 2900,
+		["White Leather Jerkin"] = {
+			["H3229"] = 390,
+			["mr"] = 390,
 		},
 		["Oak Mallet of the Eagle"] = {
 			["H3229"] = 3700,
@@ -15810,17 +15810,17 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3228"] = 9000,
 			["mr"] = 9000,
 		},
-		["Magefist Gloves"] = {
-			["H3229"] = 85000,
-			["mr"] = 85000,
+		["Recipe: Elixir of Poison Resistance"] = {
+			["H3229"] = 13000,
+			["mr"] = 13000,
 		},
 		["Solid Grinding Stone"] = {
 			["H3229"] = 1595,
 			["mr"] = 1595,
 		},
-		["Recipe: Elixir of Poison Resistance"] = {
-			["H3229"] = 13000,
-			["mr"] = 13000,
+		["Bloodspattered Sabatons of the Bear"] = {
+			["H3228"] = 1495,
+			["mr"] = 1495,
 		},
 		["Plans: Silvered Bronze Breastplate"] = {
 			["H3229"] = 4999,
@@ -16105,14 +16105,14 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3228"] = 99500,
 			["mr"] = 99500,
 		},
+		["Linked Chain Shoulderpads"] = {
+			["H3228"] = 1299,
+			["mr"] = 1299,
+		},
 		["Twig of the World Tree"] = {
 			["mr"] = 89999,
 			["H3228"] = 250000,
 			["L3228"] = 89999,
-		},
-		["Scaled Leather Bracers of Stamina"] = {
-			["H3228"] = 12240,
-			["mr"] = 12240,
 		},
 		["Wanderer's Belt of the Owl"] = {
 			["H3228"] = 45010,
@@ -16558,21 +16558,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3229"] = 2200,
 			["mr"] = 2200,
 		},
-		["Knight's Bracers of the Monkey"] = {
-			["H3229"] = 29148,
-			["mr"] = 29148,
+		["Wrangler's Buckler of the Eagle"] = {
+			["H3229"] = 6132,
+			["mr"] = 6132,
 		},
 		["Elixir of Minor Agility"] = {
 			["H3229"] = 450,
 			["mr"] = 450,
 		},
-		["Wrangler's Buckler of the Eagle"] = {
-			["H3229"] = 6132,
-			["mr"] = 6132,
-		},
 		["Sparkleshell Bracers of Power"] = {
 			["H3228"] = 5961,
 			["mr"] = 5961,
+		},
+		["Knight's Bracers of the Monkey"] = {
+			["H3229"] = 29148,
+			["mr"] = 29148,
 		},
 		["Duskwoven Bracers of the Owl"] = {
 			["H3228"] = 42000,
@@ -16634,13 +16634,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3228"] = 9000,
 			["mr"] = 9000,
 		},
+		["Speckled Shell Fragment"] = {
+			["H3229"] = 1980,
+			["mr"] = 1980,
+		},
 		["Pillager's Crown of the Eagle"] = {
 			["H3228"] = 20000,
 			["mr"] = 20000,
-		},
-		["Light Shot"] = {
-			["H3229"] = 10,
-			["mr"] = 10,
 		},
 		["Native Branch of Intellect"] = {
 			["H3228"] = 1395,
@@ -17544,9 +17544,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3229"] = 264,
 			["mr"] = 264,
 		},
-		["Speckled Shell Fragment"] = {
-			["H3229"] = 1980,
-			["mr"] = 1980,
+		["Light Shot"] = {
+			["H3229"] = 10,
+			["mr"] = 10,
 		},
 		["Darkmist Wizard Hat of the Owl"] = {
 			["H3228"] = 24900,
@@ -17828,9 +17828,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3228"] = 2900,
 			["mr"] = 2900,
 		},
-		["Linked Chain Shoulderpads"] = {
-			["H3228"] = 1299,
-			["mr"] = 1299,
+		["Scaled Leather Bracers of Stamina"] = {
+			["H3228"] = 12240,
+			["mr"] = 12240,
 		},
 		["Greenweave Mantle of Frozen Wrath"] = {
 			["H3228"] = 12352,
@@ -17993,9 +17993,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3229"] = 15000,
 			["mr"] = 15000,
 		},
-		["Bloodspattered Sabatons of the Bear"] = {
-			["H3228"] = 1495,
-			["mr"] = 1495,
+		["Magefist Gloves"] = {
+			["H3229"] = 85000,
+			["mr"] = 85000,
 		},
 		["Pathfinder Vest of Stamina"] = {
 			["H3228"] = 9821,
@@ -19030,9 +19030,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3229"] = 5,
 			["mr"] = 5,
 		},
-		["19 Pound Catfish"] = {
-			["H3229"] = 624,
-			["mr"] = 624,
+		["Twilight Belt of Intellect"] = {
+			["H3228"] = 4680,
+			["mr"] = 4680,
 		},
 		["Vorpal Dagger of Power"] = {
 			["H3229"] = 40950,
@@ -19159,9 +19159,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3229"] = 3000,
 			["mr"] = 3000,
 		},
-		["Conjurer's Cloak of Shadow Wrath"] = {
-			["H3229"] = 9900,
-			["mr"] = 9900,
+		["Diamond-Tip Bludgeon of the Monkey"] = {
+			["H3229"] = 42000,
+			["mr"] = 42000,
 		},
 		["Elders' Square Postbox Key"] = {
 			["H3229"] = 20000,
@@ -19196,9 +19196,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3229"] = 196,
 			["mr"] = 196,
 		},
-		["Pattern: Phoenix Pants"] = {
-			["H3228"] = 1680,
-			["mr"] = 1680,
+		["Bright Sphere"] = {
+			["H3229"] = 3999,
+			["mr"] = 3999,
 		},
 		["Infiltrator Boots of the Whale"] = {
 			["H3229"] = 7000,
@@ -19476,9 +19476,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3229"] = 10000,
 			["mr"] = 10000,
 		},
-		["Orange Mageweave Shirt"] = {
-			["H3228"] = 7779,
-			["mr"] = 7779,
+		["Sequoia Hammer of the Monkey"] = {
+			["H3229"] = 7500,
+			["mr"] = 7500,
 		},
 		["Jagged Star of Shadow Wrath"] = {
 			["H3229"] = 3600,

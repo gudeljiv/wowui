@@ -161,4 +161,4 @@ end
 -- TargetFrame:HookScript("OnUpdate", SkinTarget)
 -- PetFrame:HookScript("OnUpdate", SkinPet)
 hooksecurefunc("TargetFrame_UpdateAuras", SkinTarget)
-hooksecurefunc("PetFrame_UpdateAuras", SkinPet)
+hooksecurefunc("PlayerFrame_Update", SkinPet)

@@ -5,7 +5,7 @@ AptechkaDB_Global = {
 	["disableTooltip"] = true,
 	["healthTexture"] = "Glamour2",
 	["bgColorMultiplier"] = 1,
-	["nameFontSize"] = 16,
+	["stackFontSize"] = 8,
 	["height"] = 45,
 	["powerTexture"] = "Smooth v2",
 	["charspec"] = {
@@ -23,10 +23,10 @@ AptechkaDB_Global = {
 		}, -- [1]
 	},
 	["healthOrientation"] = "HORIZONTAL",
-	["fgColorMultiplier"] = 0,
+	["nameFontSize"] = 16,
 	["debuffSize"] = 16,
-	["stackFontSize"] = 8,
 	["unitGrowth"] = "BOTTOM",
+	["fgColorMultiplier"] = 0,
 }
 AptechkaConfigCustom = {
 	["HUNTER"] = {

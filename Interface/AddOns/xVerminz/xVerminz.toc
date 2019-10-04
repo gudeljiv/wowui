@@ -15,6 +15,7 @@ GarbageCollector.lua
 GroopLootFrame.lua
 PlayerTargetHealthPercentage.lua
 SkinBuffs.lua
+Unit.lua
 xDamageFont.lua
 xVerminz.lua
 

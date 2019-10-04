@@ -11,7 +11,7 @@ MonkeyQuestConfig = {
 			["Amongst the Ruins - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Elixir of Pain - false"] = {
+			["Battle of Hillsbrad - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Stonetalon Mountains - true"] = {
@@ -24,9 +24,6 @@ MonkeyQuestConfig = {
 				["m_bChecked"] = true,
 			},
 			["Hillsbrad Foothills - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Souvenirs of Death - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Razorfen Kraul - true"] = {
@@ -47,13 +44,16 @@ MonkeyQuestConfig = {
 			["The Essence of Aku'Mai - false"] = {
 				["m_bChecked"] = true,
 			},
+			["Undercity - true"] = {
+				["m_bChecked"] = false,
+			},
 			["Calling in the Reserves - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Battle of Hillsbrad - false"] = {
+			["Elixir of Agony - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Elixir of Agony - false"] = {
+			["To Steal From Thieves - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -583,7 +583,7 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = true,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 676.566528320313,
+		["m_iFrameBottom"] = 681.89990234375,
 		["m_bHideTitleButtons"] = false,
 		["m_iFrameLeft"] = 1670.73352050781,
 		["m_bColourDoneOrFailed"] = true,
@@ -595,7 +595,7 @@ MonkeyQuestConfig = {
 		["m_bShowTooltipObjectives"] = true,
 		["m_bColourSubObjectivesByProgress"] = true,
 		["m_iFrameWidth"] = 270,
-		["m_iFontHeight"] = 12,
+		["m_iFontHeight"] = 11,
 		["m_strQuestTitleColour"] = "|cFFFFFFFF",
 		["m_bWorkComplete"] = true,
 		["m_bHideQuestsEnabled"] = false,
@@ -982,13 +982,13 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Vermin"] = {
 		["m_aQuestList"] = {
-			["Durotar - true"] = {
+			["Zalazane - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Thwarting Kolkar Aggression - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Zalazane - false"] = {
+			["Minshina's Skull - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Practical Prey - false"] = {
@@ -997,7 +997,7 @@ MonkeyQuestConfig = {
 			["Report to Orgnil - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Minshina's Skull - false"] = {
+			["Durotar - true"] = {
 				["m_bChecked"] = true,
 			},
 			["A Peon's Burden - false"] = {

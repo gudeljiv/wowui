@@ -37,42 +37,42 @@ f:SetScript("OnEvent", function(self, event, ...)
 end)
 
 
-cc_inrange = CreateFrame("Frame", "CustomContainer_InRange", cc)
-cc_inrange:SetWidth(10)
-cc_inrange:SetHeight(10)
-cc_inrange:SetPoint("LEFT", CustomContainer_Combat, "LEFT", 5, 0)
-cc_inrange:SetBackdrop({ 
-	-- bgFile = "Interface\\Tooltips\\UI-Tooltip-Background", 
-	bgFile = "Interface\\Buttons\\WHITE8x8", 
-	edgeFile = "", tile = false, tileSize = 0, edgeSize = 0, 
-	insets = { left = 0, right = 0, top = 0, bottom = 0 }
-});
-cc_inrange:SetBackdropColor(0,0,0,0.4);
-cc_inrange:Hide();
-cc_inrange:SetFrameStrata("LOW")
-cc_inrange:CreateBeautyBorder(2)
+-- cc_inrange = CreateFrame("Frame", "CustomContainer_InRange", cc)
+-- cc_inrange:SetWidth(10)
+-- cc_inrange:SetHeight(10)
+-- cc_inrange:SetPoint("LEFT", CustomContainer_Combat, "LEFT", 5, 0)
+-- cc_inrange:SetBackdrop({ 
+-- 	-- bgFile = "Interface\\Tooltips\\UI-Tooltip-Background", 
+-- 	bgFile = "Interface\\Buttons\\WHITE8x8", 
+-- 	edgeFile = "", tile = false, tileSize = 0, edgeSize = 0, 
+-- 	insets = { left = 0, right = 0, top = 0, bottom = 0 }
+-- });
+-- cc_inrange:SetBackdropColor(0,0,0,0.4);
+-- cc_inrange:Hide();
+-- cc_inrange:SetFrameStrata("LOW")
+-- cc_inrange:CreateBeautyBorder(2)
 
-local function TargetInRangeHide()
-	cc_inrange:Hide();
-end
-local function TargetInRangeShow()
-	TargetInRangeHide();
-	if(UnitCanAttack("player","target") and not UnitIsDeadOrGhost("target")) then
-		local playerClass, englishClass = UnitClass("player")
-		local spell = "";
+-- local function TargetInRangeHide()
+-- 	cc_inrange:Hide();
+-- end
+-- local function TargetInRangeShow()
+-- 	TargetInRangeHide();
+-- 	if(UnitCanAttack("player","target") and not UnitIsDeadOrGhost("target")) then
+-- 		local playerClass, englishClass = UnitClass("player")
+-- 		local spell = "";
 		
-		if(englishClass == "WARLOCK") then spell = "Immolate" end
-		if(englishClass == "WARRIOR") then spell = "Charge" end
+-- 		if(englishClass == "WARLOCK") then spell = "Immolate" end
+-- 		if(englishClass == "WARRIOR") then spell = "Charge" end
 
-		if(spell ~= "") then
-			cc_inrange:Show();
-			inRange = IsSpellInRange(spell, target)
-			-- print(inRange)
-			if(inRange == 1) then cc_inrange:SetBackdropColor(0,1,0,1) end
-			if(inRange == 0) then cc_inrange:SetBackdropColor(1,0,0,1) end
-		end
-	end
-end
+-- 		if(spell ~= "") then
+-- 			cc_inrange:Show();
+-- 			inRange = IsSpellInRange(spell, target)
+-- 			-- print(inRange)
+-- 			if(inRange == 1) then cc_inrange:SetBackdropColor(0,1,0,1) end
+-- 			if(inRange == 0) then cc_inrange:SetBackdropColor(1,0,0,1) end
+-- 		end
+-- 	end
+-- end
 -- TargetFrame:HookScript("OnUpdate", TargetInRangeShow)
 -- TargetFrame:HookScript('OnHide', TargetInRangeHide)
 

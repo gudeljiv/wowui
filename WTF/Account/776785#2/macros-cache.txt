@@ -13,3 +13,7 @@ VER 3 0000000000000005 "Food" "Inv_misc_questionmark"
 #showtooltip
 /use [mod:alt] item:0; item:4607
 END
+VER 3 0000000000000009 "HealingPotion" "Inv_misc_questionmark"
+#showtooltip
+/use item:929
+END

@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 235,
+	["session"] = 251,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:62: '<eof>' expected near 'end'",
@@ -146,5 +146,83 @@ BugGrabberDB = {
 			["session"] = 232,
 			["counter"] = 258,
 		}, -- [18]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\SkinBuffs.lua:164: hooksecurefunc(): PetFrame_UpdateAuras is not a function",
+			["time"] = "2019/10/04 17:04:44",
+			["locals"] = "",
+			["stack"] = "[C]: in function `hooksecurefunc'\nInterface\\AddOns\\xVerminz\\SkinBuffs.lua:164: in main chunk",
+			["session"] = 236,
+			["counter"] = 1,
+		}, -- [19]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\SkinBuffs.lua:164: hooksecurefunc(): PlayerFrame_UpdateAuras is not a function",
+			["time"] = "2019/10/04 17:05:41",
+			["locals"] = "",
+			["stack"] = "[C]: in function `hooksecurefunc'\nInterface\\AddOns\\xVerminz\\SkinBuffs.lua:164: in main chunk",
+			["session"] = 237,
+			["counter"] = 1,
+		}, -- [20]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\BestFood.lua:76: '}' expected (to close '{' at line 72) near '['",
+			["time"] = "2019/10/04 17:12:56",
+			["locals"] = "",
+			["stack"] = "",
+			["session"] = 239,
+			["counter"] = 4,
+		}, -- [21]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\Unit.lua:10: attempt to index global 'cgt' (a nil value)",
+			["time"] = "2019/10/04 17:27:06",
+			["locals"] = "font = \"Interface\\AddOns\\xVerminz\\media\\fontAtari.ttf\"\ncus = CustomContainer_CombatUnitState {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = 10\n(*temporary) = <userdata>\n(*temporary) = \"CENTER\"\n(*temporary) = 0\n(*temporary) = 2\n(*temporary) = <userdata>\n(*temporary) = \"attempt to index global 'cgt' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVerminz\\Unit.lua:10: in main chunk",
+			["session"] = 242,
+			["counter"] = 1,
+		}, -- [22]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\Unit.lua:15: attempt to call global 'UnitIsDNS' (a nil value)",
+			["time"] = "2019/10/04 17:27:49",
+			["locals"] = "font = \"Interface\\AddOns\\xVerminz\\media\\fontAtari.ttf\"\ncus = CustomContainer_CombatUnitState {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nafk = false\n(*temporary) = nil\n(*temporary) = \"player\"\n(*temporary) = \"attempt to call global 'UnitIsDNS' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVerminz\\Unit.lua:15: in main chunk",
+			["session"] = 243,
+			["counter"] = 1,
+		}, -- [23]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\Unit.lua:17: attempt to index global 'cgt' (a nil value)",
+			["time"] = "2019/10/04 17:28:08",
+			["locals"] = "font = \"Interface\\AddOns\\xVerminz\\media\\fontAtari.ttf\"\ncus = CustomContainer_CombatUnitState {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nafk = false\ndnd = false\n(*temporary) = nil\n(*temporary) = false\n(*temporary) = \"LEFT\"\n(*temporary) = 3\n(*temporary) = 2\n(*temporary) = <userdata>\n(*temporary) = \"attempt to index global 'cgt' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVerminz\\Unit.lua:17: in main chunk",
+			["session"] = 244,
+			["counter"] = 1,
+		}, -- [24]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\Unit.lua:17: attempt to call method 'Setext' (a nil value)",
+			["time"] = "2019/10/04 17:28:33",
+			["locals"] = "font = \"Interface\\AddOns\\xVerminz\\media\\fontAtari.ttf\"\ncus = CustomContainer_CombatUnitState {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nafk = false\ndnd = false\n(*temporary) = nil\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = \"\"\n(*temporary) = \"attempt to call method 'Setext' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVerminz\\Unit.lua:17: in main chunk",
+			["session"] = 245,
+			["counter"] = 1,
+		}, -- [25]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\Unit.lua:17: hooksecurefunc(): Update is not a function",
+			["time"] = "2019/10/04 17:42:43",
+			["locals"] = "",
+			["stack"] = "[C]: in function `hooksecurefunc'\nInterface\\AddOns\\xVerminz\\Unit.lua:17: in main chunk",
+			["session"] = 247,
+			["counter"] = 1,
+		}, -- [26]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\Unit.lua:17: hooksecurefunc(): OnUpdate is not a function",
+			["time"] = "2019/10/04 17:43:01",
+			["locals"] = "",
+			["stack"] = "[C]: in function `hooksecurefunc'\nInterface\\AddOns\\xVerminz\\Unit.lua:17: in main chunk",
+			["session"] = 248,
+			["counter"] = 1,
+		}, -- [27]
+		{
+			["message"] = "(null)",
+			["session"] = 248,
+			["time"] = "2019/10/04 17:04:44",
+			["counter"] = 24,
+		}, -- [28]
 	},
 }
