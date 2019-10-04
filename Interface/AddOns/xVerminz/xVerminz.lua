@@ -194,7 +194,6 @@ f:SetScript("OnEvent", function()
 		PetFrameManaBarText.SetPoint = function() end
 	end)
 
-
 	local point = TargetFrame.SetPoint
 	hooksecurefunc(TargetFrame, "SetPoint", function()
 		point(TargetFrame, "CENTER", UIParent, "CENTER", 250, -96)
@@ -332,10 +331,10 @@ f:RegisterEvent("PLAYER_ENTERING_WORLD")
 
 
 
--- Time delay
-local tDelay = 0
-
+-------------------------------------------
 -- Fast loot function
+-------------------------------------------
+local tDelay = 0
 local function FastLoot()
 	if GetTime() - tDelay >= 0.3 then
 		tDelay = GetTime()
@@ -348,7 +347,6 @@ local function FastLoot()
 	end
 end
 
--- Event frame
 local faster = CreateFrame("Frame")
 faster:RegisterEvent("LOOT_READY")
 faster:SetScript("OnEvent", FastLoot)
