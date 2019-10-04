@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 252,
 	["lastSanitation"] = 3,
-	["session"] = 251,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:62: '<eof>' expected near 'end'",
@@ -220,9 +220,25 @@ BugGrabberDB = {
 		}, -- [27]
 		{
 			["message"] = "(null)",
-			["session"] = 248,
 			["time"] = "2019/10/04 17:04:44",
+			["session"] = 248,
 			["counter"] = 24,
 		}, -- [28]
+		{
+			["message"] = "[string \"if not THO then local f,t,c=CreateFrame(\"Fr...\"]:1: attempt to call global 'SetTracking' (a nil value)",
+			["time"] = "2019/10/04 18:10:24",
+			["locals"] = "_ = THO {\n 0 = <userdata>\n}\ne = 0.016000\n(*temporary) = nil\n(*temporary) = 1\n(*temporary) = \"attempt to call global 'SetTracking' (a nil value)\"\nc = 0\nt = 1\n",
+			["stack"] = "[string \"if not THO then local f,t,c=CreateFrame(\"Fr...\"]:1: in function <[string \"if not THO then local f,t,c=CreateFrame(\"Fr...\"]:1>",
+			["session"] = 252,
+			["counter"] = 1,
+		}, -- [29]
+		{
+			["message"] = "[string \"SetTracking(1)\"]:1: attempt to call global 'SetTracking' (a nil value)",
+			["time"] = "2019/10/04 18:11:06",
+			["locals"] = "(*temporary) = nil\n(*temporary) = 1\n(*temporary) = \"attempt to call global 'SetTracking' (a nil value)\"\n",
+			["stack"] = "[string \"SetTracking(1)\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4609: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4270: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4306: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 252,
+			["counter"] = 1,
+		}, -- [30]
 	},
 }

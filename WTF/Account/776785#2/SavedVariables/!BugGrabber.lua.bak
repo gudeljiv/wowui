@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 250,
 	["lastSanitation"] = 3,
+	["session"] = 251,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:62: '<eof>' expected near 'end'",
@@ -220,8 +220,8 @@ BugGrabberDB = {
 		}, -- [27]
 		{
 			["message"] = "(null)",
-			["time"] = "2019/10/04 17:04:44",
 			["session"] = 248,
+			["time"] = "2019/10/04 17:04:44",
 			["counter"] = 24,
 		}, -- [28]
 	},
