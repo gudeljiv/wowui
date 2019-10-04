@@ -1,4 +1,3 @@
-
 local f = CreateFrame("Frame")
 f:SetScript("OnUpdate", function()
   if(AutoCarrot_Disabled) then return end
