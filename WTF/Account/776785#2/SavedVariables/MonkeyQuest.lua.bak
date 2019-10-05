@@ -415,6 +415,29 @@ MonkeyQuestConfig = {
 			},
 		},
 	},
+	["Dreadmist|Paydo"] = {
+		["m_aQuestList"] = {
+			["Cutting Teeth - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Vile Familiars - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Sarkoth - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Lazy Peons - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Valley of Trials - true"] = {
+				["m_bChecked"] = true,
+			},
+		},
+	},
+	["Golemagg|Judawise"] = {
+		["m_aQuestList"] = {
+		},
+	},
 	["Dreadmist|Vermins"] = {
 		["m_iFont"] = 0,
 		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
@@ -432,19 +455,19 @@ MonkeyQuestConfig = {
 		["m_bShowZoneHighlight"] = true,
 		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
 		["m_aQuestList"] = {
-			["Durotar - true"] = {
+			["Break a Few Eggs - false"] = {
 				["m_bChecked"] = true,
 			},
 			["From The Wreckage.... - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Break a Few Eggs - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Encroachment - false"] = {
+			["Durotar - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Vanquish the Betrayers - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Encroachment - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -481,30 +504,7 @@ MonkeyQuestConfig = {
 		["m_bAlwaysHeaders"] = false,
 		["m_bGrowUp"] = false,
 	},
-	["Golemagg|Judawise"] = {
-		["m_aQuestList"] = {
-		},
-	},
-	["Dreadmist|Paydo"] = {
-		["m_aQuestList"] = {
-			["Cutting Teeth - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Vile Familiars - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Sarkoth - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Lazy Peons - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Valley of Trials - true"] = {
-				["m_bChecked"] = true,
-			},
-		},
-	},
-	["Genesis|Lonatz"] = {
+	["Genesis|Spija"] = {
 		["m_iFont"] = 0,
 		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
 		["m_strSpecialObjectiveColour"] = "|cFFFFFF00",
@@ -982,13 +982,13 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Vermin"] = {
 		["m_aQuestList"] = {
-			["Zalazane - false"] = {
+			["Durotar - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Thwarting Kolkar Aggression - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Minshina's Skull - false"] = {
+			["Zalazane - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Practical Prey - false"] = {
@@ -997,7 +997,7 @@ MonkeyQuestConfig = {
 			["Report to Orgnil - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Durotar - true"] = {
+			["Minshina's Skull - false"] = {
 				["m_bChecked"] = true,
 			},
 			["A Peon's Burden - false"] = {
@@ -1012,7 +1012,7 @@ MonkeyQuestConfig = {
 		["m_aQuestList"] = {
 		},
 	},
-	["Genesis|Spija"] = {
+	["Genesis|Lonatz"] = {
 		["m_iFont"] = 0,
 		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
 		["m_strSpecialObjectiveColour"] = "|cFFFFFF00",

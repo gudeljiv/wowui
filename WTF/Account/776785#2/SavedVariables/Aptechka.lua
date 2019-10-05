@@ -23,10 +23,10 @@ AptechkaDB_Global = {
 		}, -- [1]
 	},
 	["showSolo"] = false,
-	["unitGrowth"] = "BOTTOM",
-	["cropNamesLen"] = 15,
-	["fgColorMultiplier"] = 0,
 	["stackFontSize"] = 8,
+	["cropNamesLen"] = 15,
+	["unitGrowth"] = "BOTTOM",
+	["fgColorMultiplier"] = 0,
 }
 AptechkaConfigCustom = {
 	["HUNTER"] = {

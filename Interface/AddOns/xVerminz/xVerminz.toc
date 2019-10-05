@@ -18,6 +18,7 @@ GroopLootFrame.lua
 PlayerTargetHealthPercentage.lua
 PlayerTargetSetMark.lua
 SkinBuffs.lua
+TrackingIcon.lua
 Unit.lua
 xDamageFont.lua
 xVerminz.lua

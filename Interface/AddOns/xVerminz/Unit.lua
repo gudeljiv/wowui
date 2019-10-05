@@ -18,3 +18,4 @@ PlayerFrame:HookScript("OnUpdate", function ()
 end)
 
 cus.text:SetTextColor(0.058, 0.901, 0.466, 1)
+

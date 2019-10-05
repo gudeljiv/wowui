@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 269,
+	["session"] = 295,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:62: '<eof>' expected near 'end'",
@@ -251,24 +251,120 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [31]
 		{
-			["message"] = "(null)",
-			["session"] = 257,
-			["time"] = "2019/10/04 17:04:44",
-			["counter"] = 30,
-		}, -- [32]
-		{
 			["message"] = "[string \"(SetTarget(\"player\", 0))\"]:1: syntax error near '<eof>'",
 			["time"] = "2019/10/04 21:59:07",
 			["locals"] = "(*temporary) = \"(SetTarget(\"player\", 0))\"\n",
 			["stack"] = "[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4609: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4270: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4306: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 268,
 			["counter"] = 1,
-		}, -- [33]
+		}, -- [32]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\xVerminz\\PlayerTargetSetMark.xml",
 			["time"] = "2019/10/04 21:57:35",
 			["session"] = 269,
 			["counter"] = 9,
+		}, -- [33]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\PlayerTargetSetMark.lua:14: Usage: SetRaidTarget(unit, index)",
+			["time"] = "2019/10/05 20:47:02",
+			["locals"] = "(*temporary) = \"player\"\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n",
+			["stack"] = "[C]: in function `SetRaidTarget'\nInterface\\AddOns\\xVerminz\\PlayerTargetSetMark.lua:14: in function <Interface\\AddOns\\xVerminz\\PlayerTargetSetMark.lua:12>\n[C]: in function `CameraOrSelectOrMoveStop'\n[string \"CAMERAORSELECTORMOVE\"]:4: in function <[string \"CAMERAORSELECTORMOVE\"]:1>",
+			["session"] = 270,
+			["counter"] = 2,
 		}, -- [34]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\PlayerTargetSetMark.lua:6: attempt to compare number with nil",
+			["time"] = "2019/10/05 20:48:15",
+			["locals"] = "arg = \"1\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to compare number with nil\"\nrt = 6\n",
+			["stack"] = "Interface\\AddOns\\xVerminz\\PlayerTargetSetMark.lua:6: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4609: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4270: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4306: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 271,
+			["counter"] = 1,
+		}, -- [35]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\PlayerTargetSetMark.lua:17: Usage: SetRaidTarget(unit, index)",
+			["time"] = "2019/10/05 20:47:53",
+			["locals"] = "(*temporary) = \"player\"\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n",
+			["stack"] = "[C]: in function `SetRaidTarget'\nInterface\\AddOns\\xVerminz\\PlayerTargetSetMark.lua:17: in function <Interface\\AddOns\\xVerminz\\PlayerTargetSetMark.lua:12>\n[C]: in function `CameraOrSelectOrMoveStop'\n[string \"CAMERAORSELECTORMOVE\"]:4: in function <[string \"CAMERAORSELECTORMOVE\"]:1>",
+			["session"] = 271,
+			["counter"] = 2,
+		}, -- [36]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\PlayerTargetSetMark.lua:6: attempt to compare number with string",
+			["time"] = "2019/10/05 20:48:57",
+			["locals"] = "arg = \"1\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to compare number with string\"\nrt = 6\n",
+			["stack"] = "Interface\\AddOns\\xVerminz\\PlayerTargetSetMark.lua:6: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4609: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4270: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4306: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 272,
+			["counter"] = 1,
+		}, -- [37]
+		{
+			["message"] = "[string \"TrackingIconFrame:SetPoint(\"BOTTOM\", Custom...\"]:1: attempt to index global 'TrackingIconFrame' (a nil value)",
+			["time"] = "2019/10/05 21:04:19",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'TrackingIconFrame' (a nil value)\"\n",
+			["stack"] = "[string \"TrackingIconFrame:SetPoint(\"BOTTOM\", Custom...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4609: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4270: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4306: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 279,
+			["counter"] = 1,
+		}, -- [38]
+		{
+			["message"] = "[string \"CustomContainer_TrackingIconFrame:SetStrata...\"]:1: attempt to call method 'SetStrata' (a nil value)",
+			["time"] = "2019/10/05 21:06:36",
+			["locals"] = "(*temporary) = nil\n(*temporary) = CustomContainer_TrackingIconFrame {\n 0 = <userdata>\n beautyBorder = <table> {\n }\n beautyShadow = <table> {\n }\n}\n(*temporary) = \"high\"\n(*temporary) = \"attempt to call method 'SetStrata' (a nil value)\"\n",
+			["stack"] = "[string \"CustomContainer_TrackingIconFrame:SetStrata...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4609: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4270: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4306: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 279,
+			["counter"] = 2,
+		}, -- [39]
+		{
+			["message"] = "[string \"CustomContainer_TrackingIconFrame:SetTextur...\"]:1: attempt to call method 'SetTexture' (a nil value)",
+			["time"] = "2019/10/05 21:15:08",
+			["locals"] = "(*temporary) = nil\n(*temporary) = CustomContainer_TrackingIconFrame {\n 0 = <userdata>\n beautyBorder = <table> {\n }\n beautyShadow = <table> {\n }\n}\n(*temporary) = \"Interface\\Icons\\spell_nature_earthquake\"\n(*temporary) = \"attempt to call method 'SetTexture' (a nil value)\"\n",
+			["stack"] = "[string \"CustomContainer_TrackingIconFrame:SetTextur...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4609: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4270: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2699: in function <Interface\\FrameXML\\ChatFrame.lua:2692>\n[C]: ?\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:338: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 279,
+			["counter"] = 1,
+		}, -- [40]
+		{
+			["message"] = "[string \"print(GetProfessions())\"]:1: attempt to call global 'GetProfessions' (a nil value)",
+			["time"] = "2019/10/05 21:19:53",
+			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = nil\n(*temporary) = \"attempt to call global 'GetProfessions' (a nil value)\"\n",
+			["stack"] = "[string \"print(GetProfessions())\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4609: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4270: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4306: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 283,
+			["counter"] = 1,
+		}, -- [41]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\Unit.lua:47: attempt to call global 'GetProfessions' (a nil value)",
+			["time"] = "2019/10/05 21:22:12",
+			["locals"] = "font = \"Interface\\AddOns\\xVerminz\\media\\fontAtari.ttf\"\ncus = CustomContainer_CombatUnitState {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nTrackingIconFrame = CustomContainer_TrackingIconFrame {\n 0 = <userdata>\n Icon = <unnamed> {\n }\n beautyBorder = <table> {\n }\n beautyShadow = <table> {\n }\n}\nTrackingIcon = <function> defined @Interface\\AddOns\\xVerminz\\Unit.lua:33\n(*temporary) = nil\n(*temporary) = \"attempt to call global 'GetProfessions' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVerminz\\Unit.lua:47: in main chunk",
+			["session"] = 284,
+			["counter"] = 1,
+		}, -- [42]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\Unit.lua:49: attempt to call global 'GetSpellName' (a nil value)",
+			["time"] = "2019/10/05 21:25:10",
+			["locals"] = "font = \"Interface\\AddOns\\xVerminz\\media\\fontAtari.ttf\"\ncus = CustomContainer_CombatUnitState {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nTrackingIconFrame = CustomContainer_TrackingIconFrame {\n 0 = <userdata>\n Icon = <unnamed> {\n }\n beautyBorder = <table> {\n }\n beautyShadow = <table> {\n }\n}\nTrackingIcon = <function> defined @Interface\\AddOns\\xVerminz\\Unit.lua:33\ni = 1\n(*temporary) = nil\n(*temporary) = 1\n(*temporary) = \"spell\"\n(*temporary) = \"attempt to call global 'GetSpellName' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVerminz\\Unit.lua:49: in main chunk",
+			["session"] = 285,
+			["counter"] = 1,
+		}, -- [43]
+		{
+			["message"] = "(null)",
+			["session"] = 285,
+			["time"] = "2019/10/04 17:04:44",
+			["counter"] = 36,
+		}, -- [44]
+		{
+			["message"] = "[string \"GetSpellName(1)\"]:1: attempt to call global 'GetSpellName' (a nil value)",
+			["time"] = "2019/10/05 21:26:20",
+			["locals"] = "(*temporary) = nil\n(*temporary) = 1\n(*temporary) = \"attempt to call global 'GetSpellName' (a nil value)\"\n",
+			["stack"] = "[string \"GetSpellName(1)\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4609: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4270: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4306: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 285,
+			["counter"] = 1,
+		}, -- [45]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\TrackingIcon.lua:37: attempt to index global 'cus' (a nil value)",
+			["time"] = "2019/10/05 21:39:00",
+			["locals"] = "tabName = \"General\"\ntabTexture = 132219\ntabOffset = 0\nnumEntries = 17\n(for index) = 11\n(for limit) = 17\n(for step) = 1\ni = 11\nspellName = \"Find Minerals\"\nspellSubName = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = 2580\n(*temporary) = \"attempt to index global 'cus' (a nil value)\"\nTrackingIconMinerals = <function> defined @Interface\\AddOns\\xVerminz\\TrackingIcon.lua:11\nTrackingIconHerbs = <function> defined @Interface\\AddOns\\xVerminz\\TrackingIcon.lua:22\n",
+			["stack"] = "Interface\\AddOns\\xVerminz\\TrackingIcon.lua:37: in function <Interface\\AddOns\\xVerminz\\TrackingIcon.lua:32>",
+			["session"] = 293,
+			["counter"] = 2,
+		}, -- [46]
 	},
 }
