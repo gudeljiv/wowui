@@ -1,0 +1,22 @@
+
+RealMobHealth_Options = {
+	["ShowStatusBarTextAdditions"] = true,
+	["ShowNamePlateHealthText"] = true,
+	["ShowTooltipText"] = true,
+	["EnablePeerCache"] = true,
+	["ModifyHealthBarText"] = true,
+	["ShowTooltipHealthText"] = true,
+}
+RealMobHealth_CreatureHealthCache = {
+}
+RealMobHealth_PeerHealthCache = {
+	["5616-40"] = 1829,
+	["5422-41"] = 1902,
+	["2248-31"] = 1135,
+	["2729-40"] = 292,
+	["2248-30"] = 1070,
+	["2249-32"] = 1163,
+	["5422-40"] = 1995,
+	["2734-41"] = 695,
+	["5623-45"] = 2262,
+}

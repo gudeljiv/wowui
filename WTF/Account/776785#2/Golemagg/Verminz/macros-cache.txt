@@ -23,7 +23,7 @@ END
 VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Defensive Stance
 /cast [nostance:2]Defensive Stance
-/eq Cobalt Buckler
+/eq Deadskull Shield
 /eq Wingblade
 END
 VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
@@ -56,5 +56,5 @@ VER 3 0000000001000009 " " "INV_MISC_QUESTIONMARK"
 /cast [stance:2]Battle Stance
 /eq Battle Slayer of the Monkey
 /eq [stance:2]Wingblade
-/eq [stance:2]Cobalt Buckler
+/eq [stance:2]Deadskull Shield
 END

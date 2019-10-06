@@ -1,7 +1,5 @@
 VER 3 0000000000000008 " " "132089"
-/run CustomContainer_TrackingIconFrame:SetPoint("BOTTOM", CustomContainer_Combat, "TOP", 0, 115)
-/run CustomContainer_TrackingIconFrame:SetSize(45, 45)
-/run CustomContainer_TrackingIconFrame:SetTexture("Interface\\Icons\\spell_nature_earthquake")
+/run CustomContainer_TrackingIconFrame:SetPoint("BOTTOM", CustomContainer_Combat, "TOP", 0, 10)
 END
 VER 3 0000000000000006 "Drink" "Inv_misc_questionmark"
 #showtooltip

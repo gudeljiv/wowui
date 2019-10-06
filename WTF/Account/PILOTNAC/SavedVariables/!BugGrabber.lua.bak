@@ -1,0 +1,15 @@
+
+BugGrabberDB = {
+	["lastSanitation"] = 3,
+	["session"] = 1,
+	["errors"] = {
+		{
+			["message"] = "...rface\\AddOns\\MikScrollingBattleText\\MSBTProfiles.lua:1807: Couldn't find CVar named 'floatingCombatTextCombatHealing'",
+			["time"] = "2019/10/06 14:05:14",
+			["locals"] = "(*temporary) = \"floatingCombatTextCombatHealing\"\n(*temporary) = 0\n",
+			["stack"] = "[C]: in function `SetCVar'\n...rface\\AddOns\\MikScrollingBattleText\\MSBTProfiles.lua:1807: in function <...rface\\AddOns\\MikScrollingBattleText\\MSBTProfiles.lua:1804>\n...rface\\AddOns\\MikScrollingBattleText\\MSBTProfiles.lua:2222: in function <...rface\\AddOns\\MikScrollingBattleText\\MSBTProfiles.lua:2194>",
+			["session"] = 1,
+			["counter"] = 1,
+		}, -- [1]
+	},
+}

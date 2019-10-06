@@ -3,9 +3,8 @@ VER 3 0000000001000008 " " "INV_MISC_QUESTIONMARK"
 /startattack
 /cast Cleave
 /cast Bloodrage
-/cast Overpower
-/cast Execute
-/cast Revenge
+/cast [stance:1]Overpower
+/cast [stance:2]Revenge
 END
 VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Charge
@@ -24,7 +23,7 @@ END
 VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Defensive Stance
 /cast [nostance:2]Defensive Stance
-/eq Cobalt Buckler
+/eq Battleforge Shield of the Bear
 /eq Wingblade
 END
 VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
@@ -43,9 +42,8 @@ VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 /startattack
 /cast Heroic Strike
 /cast Bloodrage
-cast [nostance:1]Overpower
-/cast Execute
-/cast Revenge
+/cast [stance:1]Overpower
+/cast [stance:2]Revenge
 END
 VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Taunt
@@ -58,5 +56,5 @@ VER 3 0000000001000009 " " "INV_MISC_QUESTIONMARK"
 /cast [stance:2]Battle Stance
 /eq Battle Slayer of the Monkey
 /eq [stance:2]Wingblade
-/eq [stance:2]Cobalt Buckler
+/eq [stance:2]Battleforge Shield of the Bear
 END

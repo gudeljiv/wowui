@@ -1,15 +1,20 @@
 
-local type = 2
+local type = 8
 
 local function srt()
-	SetRaidTarget("player", type)
-	SetRaidTarget("player", 0)
 	if(UnitInParty("player")) then
 		if(UnitIsGroupLeader("player")) then
-			if TargetFrame:IsShown() then SetRaidTarget("target", type) end
+			SetRaidTarget("player", type)
+			if TargetFrame:IsShown() then
+				SetRaidTarget("target", type)
+			end
 		end
 	else
-		if TargetFrame:IsShown() then SetRaidTarget("target", type) end
+		if TargetFrame:IsShown() then
+			SetRaidTarget("target", type)
+		else
+			SetRaidTarget("player", type)
+		end
 	end
 end
 

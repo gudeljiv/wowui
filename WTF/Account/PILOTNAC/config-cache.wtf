@@ -1,0 +1,5 @@
+SET flaggedTutorials "v"
+SET actionedAdventureJournalEntries "v"
+SET statusText "1"
+SET statusTextDisplay "NUMERIC"
+SET cameraDistanceMaxZoomFactor "2"
