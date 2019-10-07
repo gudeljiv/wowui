@@ -6,6 +6,7 @@ TargetHealthFrame:SetPoint("CENTER", UIParent, "CENTER", 100, -40)
 TargetHealthFrame.text = TargetHealthFrame:CreateFontString(nil,"ARTWORK") 
 TargetHealthFrame.text:SetFont("Fonts\\ARIALN.ttf", 28, "THINOUTLINE")
 TargetHealthFrame.text:SetPoint("CENTER", TargetHealthFrame, "CENTER", 0,0)
+TargetHealthFrame:SetFrameStrata("LOW")
 
 local PlayerHealthFrame = CreateFrame("Frame","PlayerHealthFrame",UIParent)
 PlayerHealthFrame:SetWidth(1) 
@@ -15,6 +16,7 @@ PlayerHealthFrame:SetPoint("CENTER", UIParent, "CENTER", -100, -40)
 PlayerHealthFrame.text = PlayerHealthFrame:CreateFontString(nil,"ARTWORK") 
 PlayerHealthFrame.text:SetFont("Fonts\\ARIALN.ttf", 28, "THINOUTLINE")
 PlayerHealthFrame.text:SetPoint("CENTER", PlayerHealthFrame, "CENTER", 0,0)
+PlayerHealthFrame:SetFrameStrata("LOW")
 
 local function PHealthShow()
 	local playerHP = format("%.0f",(UnitHealth("player") / UnitHealthMax("player")) * 100)
@@ -28,14 +30,15 @@ local function THealthHide()
 end
 local function THealthShow()
 	if TargetFrame:IsShown() then
-		if(UnitCanAttack("player","target") and not UnitIsDeadOrGhost("target")) then
-			local targetHP = UnitHealth("target")
+		-- if(UnitCanAttack("player","target") and not UnitIsDeadOrGhost("target")) then
+		-- if(not UnitIsDeadOrGhost("target")) then
+			local targetHP = format("%.0f",(UnitHealth("target") / UnitHealthMax("target")) * 100)
 			TargetHealthFrame.text:SetText(targetHP)
 			TargetHealthFrame.text:SetVertexColor(1, 1, 1)
 			TargetHealthFrame.text:Show();
-		else 
-			THealthHide()
-		end
+		-- else
+		-- 	THealthHide()
+		-- end
 	else 
 		THealthHide()
 	end

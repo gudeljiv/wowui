@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 308,
 	["lastSanitation"] = 3,
+	["session"] = 321,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:62: '<eof>' expected near 'end'",
@@ -252,8 +252,8 @@ BugGrabberDB = {
 		}, -- [31]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\xVerminz\\PlayerTargetSetMark.xml",
-			["session"] = 269,
 			["time"] = "2019/10/04 21:57:35",
+			["session"] = 269,
 			["counter"] = 9,
 		}, -- [32]
 		{
@@ -337,19 +337,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [42]
 		{
-			["message"] = "(null)",
-			["time"] = "2019/10/04 17:04:44",
-			["session"] = 285,
-			["counter"] = 36,
-		}, -- [43]
-		{
 			["message"] = "[string \"GetSpellName(1)\"]:1: attempt to call global 'GetSpellName' (a nil value)",
 			["time"] = "2019/10/05 21:26:20",
 			["locals"] = "(*temporary) = nil\n(*temporary) = 1\n(*temporary) = \"attempt to call global 'GetSpellName' (a nil value)\"\n",
 			["stack"] = "[string \"GetSpellName(1)\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4609: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4270: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4306: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 285,
 			["counter"] = 1,
-		}, -- [44]
+		}, -- [43]
 		{
 			["message"] = "Interface\\AddOns\\xVerminz\\TrackingIcon.lua:37: attempt to index global 'cus' (a nil value)",
 			["time"] = "2019/10/05 21:39:00",
@@ -357,7 +351,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVerminz\\TrackingIcon.lua:37: in function <Interface\\AddOns\\xVerminz\\TrackingIcon.lua:32>",
 			["session"] = 293,
 			["counter"] = 2,
-		}, -- [45]
+		}, -- [44]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVerminz' tried to call the protected function 'TargetFrameToT:Show()'.",
 			["time"] = "2019/09/30 21:16:47",
@@ -365,7 +359,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Show'\nInterface\\FrameXML\\TargetFrame.lua:910: in function <Interface\\FrameXML\\TargetFrame.lua:905>\n[C]: ?\n[C]: ?\n[C]: in function `TargetofTarget_Update'\nInterface\\FrameXML\\TargetFrame.lua:420: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[C]: ?",
 			["session"] = 305,
 			["counter"] = 4,
-		}, -- [46]
+		}, -- [45]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn '!Colorz' tried to call the protected function 'CompactRaidFrame1:ClearAllPoints()'.",
 			["time"] = "2019/10/06 12:40:06",
@@ -373,6 +367,28 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `ClearAllPoints'\nInterface\\FrameXML\\FlowContainer.lua:157: in function `FlowContainer_DoLayout'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:69: in function `CompactRaidFrameContainer_OnSizeChanged'\n[string \"*:OnSizeChanged\"]:1: in function <[string \"*:OnSizeChanged\"]:1>\n[C]: in function `?'\nInterface\\FrameXML\\FlowContainer.lua:133: in function `FlowContainer_DoLayout'\nInterface\\FrameXML\\FlowContainer.lua:17: in function `FlowContainer_ResumeUpdates'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:185: in function `CompactRaidFrameContainer_LayoutFrames'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:130: in function `CompactRaidFrameContainer_TryUpdate'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:57: in function `CompactRaidFrameContainer_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
 			["session"] = 308,
 			["counter"] = 2,
+		}, -- [46]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\PlayerTargetSetMark.lua:20: attempt to call global 'wsrt_wait' (a nil value)",
+			["time"] = "2019/10/07 23:10:52",
+			["locals"] = "type = 8\nsrt = <function> defined @Interface\\AddOns\\xVerminz\\PlayerTargetSetMark.lua:4\n(*temporary) = nil\n(*temporary) = 5\n(*temporary) = nil\n(*temporary) = \"attempt to call global 'wsrt_wait' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVerminz\\PlayerTargetSetMark.lua:20: in main chunk",
+			["session"] = 316,
+			["counter"] = 1,
 		}, -- [47]
+		{
+			["message"] = "(null)",
+			["session"] = 316,
+			["time"] = "2019/10/04 17:04:44",
+			["counter"] = 39,
+		}, -- [48]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\PlayerTargetSetMark.lua:4: attempt to call global 'clear_mark' (a nil value)",
+			["time"] = "2019/10/07 23:18:51",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"attempt to call global 'clear_mark' (a nil value)\"\ntype = 8\n",
+			["stack"] = "Interface\\AddOns\\xVerminz\\PlayerTargetSetMark.lua:4: in function <Interface\\AddOns\\xVerminz\\PlayerTargetSetMark.lua:3>\n[C]: in function `CameraOrSelectOrMoveStop'\n[string \"CAMERAORSELECTORMOVE\"]:4: in function <[string \"CAMERAORSELECTORMOVE\"]:1>",
+			["session"] = 320,
+			["counter"] = 2,
+		}, -- [49]
 	},
 }
