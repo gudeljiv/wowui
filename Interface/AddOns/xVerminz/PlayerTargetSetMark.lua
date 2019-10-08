@@ -7,15 +7,16 @@ end
 local function set_mark()
     clear_mark()
 
-	if(UnitInParty("player")) then
-		if(UnitIsGroupLeader("player")) then
-			if TargetFrame:IsShown() then
+	local faction = "nil"
+	if TargetFrame:IsShown() then
+		faction, _ = UnitFactionGroup("target")
+
+		if faction ~= "Alliance" then
+			if(UnitInParty("player") and UnitIsGroupLeader("player")) then
+				SetRaidTarget("target", type)
+			elseif(not UnitInParty("player")) then
 				SetRaidTarget("target", type)
 			end
-		end
-	else
-		if TargetFrame:IsShown() then
-			SetRaidTarget("target", type)
 		end
 	end
 end

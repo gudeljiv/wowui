@@ -1,11 +1,11 @@
 
 NeatPlatesOptions = {
-	["NameplateClickableWidth"] = 1,
+	["OverrideOutline"] = 1,
 	["HealthFrequent"] = true,
 	["SecondSpecProfile"] = "Default",
 	["FriendlyAutomation"] = "No Automation",
 	["EnemyAutomation"] = "No Automation",
-	["OverrideOutline"] = 1,
+	["WelcomeShown"] = true,
 	["FourthSpecProfile"] = "Default",
 	["ThirdSpecProfile"] = "Default",
 	["ForceBlizzardFont"] = false,
@@ -14,6 +14,6 @@ NeatPlatesOptions = {
 	["BlizzardScaling"] = false,
 	["ActiveTheme"] = "Neon",
 	["NameplateClickableHeight"] = 1,
-	["WelcomeShown"] = true,
+	["NameplateClickableWidth"] = 1,
 	["FirstSpecProfile"] = "Default",
 }

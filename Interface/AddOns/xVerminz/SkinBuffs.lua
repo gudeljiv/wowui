@@ -52,7 +52,7 @@ local function SkinTarget()
 		for i=1, numDebuffs do
 			local frame = _G["TargetFrameDebuff"..i]
 			local frameBorder = _G["TargetFrameDebuff"..i.."Border"];
-			local frameCount = _G["TargetFrameBuff"..i.."Count"];
+			local frameCount = _G["TargetFrameDebuff"..i.."Count"];
 			if (frameBorder~=nil) then frameBorder:Hide() end
 			
 			if (frameCount~=nil) then

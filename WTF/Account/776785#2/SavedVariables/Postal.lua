@@ -2,16 +2,20 @@
 Postal3ClassicDB = {
 	["profileKeys"] = {
 		["Verminz - Golemagg"] = "Verminz - Golemagg",
+		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
 	},
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
-				"Verminz|Golemagg|Horde|30|WARRIOR", -- [1]
+				"Greenwise|Golemagg|Horde|1|HUNTER", -- [1]
+				"Verminz|Golemagg|Horde|30|WARRIOR", -- [2]
 			},
 		},
 	},
 	["profiles"] = {
 		["Verminz - Golemagg"] = {
+		},
+		["Greenwise - Golemagg"] = {
 		},
 	},
 }
