@@ -26,17 +26,6 @@ ChocolateBarDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["locked"] = false,
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["r"] = 0,
-					["g"] = 0,
-					["b"] = 0,
-				},
-				["textureName"] = "None",
-			},
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -57,9 +46,20 @@ ChocolateBarDB = {
 					["barOffx"] = -88.3325424194336,
 				},
 			},
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["r"] = 0,
+					["g"] = 0,
+					["b"] = 0,
+				},
+				["textureName"] = "None",
+			},
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
 			},
+			["locked"] = false,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
@@ -235,14 +235,14 @@ ChocolateBarDB = {
 					["customLabel"] = "B",
 				},
 			},
-			["desaturated"] = false,
+			["gap"] = 5,
 			["forceColor"] = false,
 			["fixedStrata"] = true,
 			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["gap"] = 5,
+			["fontName"] = "Friz Quadrata TT",
 			["textOffset"] = 2,
 			["height"] = 20,
-			["fontName"] = "Friz Quadrata TT",
+			["desaturated"] = false,
 			["moveFrames"] = false,
 			["textColor"] = {
 				["a"] = 1,
@@ -264,7 +264,7 @@ CB_PlayedTime = {
 		["total"] = 3552,
 	},
 	["Verminz-"] = {
-		["total"] = 288605,
+		["total"] = 298175,
 	},
 	["Paydo-"] = {
 		["total"] = 18945,

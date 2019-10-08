@@ -1,9 +1,10 @@
 VER 3 0000000000000008 " " "132089"
-/run CustomContainer_TrackingIconFrame:SetPoint("BOTTOM", CustomContainer_Combat, "TOP", 0, 10)
+/run SetRaidTarget("player", 8)
+/run SetRaidTarget("player", 0)
 END
 VER 3 0000000000000006 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use item:0
+/use item:9451
 END
 VER 3 0000000000000005 "Food" "Inv_misc_questionmark"
 #showtooltip

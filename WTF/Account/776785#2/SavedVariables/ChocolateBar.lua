@@ -27,29 +27,19 @@ ChocolateBarDB = {
 	["profiles"] = {
 		["Default"] = {
 			["locked"] = false,
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["b"] = 0,
+					["g"] = 0,
+					["r"] = 0,
+				},
+				["textureName"] = "None",
 			},
 			["moveFrames"] = false,
-			["barSettings"] = {
-				["ChocolateBar1"] = {
-					["barPoint"] = "TOPRIGHT",
-					["align"] = "custom",
-					["width"] = 147.000030517578,
-					["autohide"] = false,
-					["barOffy"] = -207.589706420898,
-					["hideBarInCombat"] = false,
-					["barOffx"] = -31.9219512939453,
-				},
-				["ChocolateBar2"] = {
-					["barOffy"] = -256.666748046875,
-					["barPoint"] = "TOPRIGHT",
-					["barName"] = "ChocolateBar2",
-					["align"] = "custom",
-					["barOffx"] = -88.3325424194336,
-					["index"] = 1,
-					["width"] = 147,
-				},
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
 			},
 			["fixedStrata"] = true,
 			["objSettings"] = {
@@ -223,26 +213,36 @@ ChocolateBarDB = {
 					["showIcon"] = false,
 				},
 			},
-			["gap"] = 5,
 			["fontName"] = "Friz Quadrata TT",
+			["desaturated"] = false,
 			["forceColor"] = false,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
-			["desaturated"] = false,
+			["gap"] = 5,
 			["textOffset"] = 2,
 			["height"] = 20,
 			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["b"] = 0,
-					["g"] = 0,
-					["r"] = 0,
+			["barSettings"] = {
+				["ChocolateBar1"] = {
+					["barPoint"] = "TOPRIGHT",
+					["align"] = "custom",
+					["width"] = 147.000030517578,
+					["autohide"] = false,
+					["barOffy"] = -207.589706420898,
+					["hideBarInCombat"] = false,
+					["barOffx"] = -31.9219512939453,
 				},
-				["textureName"] = "None",
+				["ChocolateBar2"] = {
+					["barOffy"] = -256.666748046875,
+					["barPoint"] = "TOPRIGHT",
+					["barName"] = "ChocolateBar2",
+					["align"] = "custom",
+					["barOffx"] = -88.3325424194336,
+					["index"] = 1,
+					["width"] = 147,
+				},
 			},
 			["textColor"] = {
 				["a"] = 1,
@@ -264,7 +264,7 @@ CB_PlayedTime = {
 		["total"] = 3552,
 	},
 	["Verminz-"] = {
-		["total"] = 288718,
+		["total"] = 298252,
 	},
 	["Paydo-"] = {
 		["total"] = 18945,

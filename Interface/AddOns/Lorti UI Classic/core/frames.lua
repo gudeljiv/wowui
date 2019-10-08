@@ -162,8 +162,8 @@
    				TargetFrameToTTextureFrameTexture,
 				CastingBarFrame.Border,
 				MirrorTimer1Border,
+				MirrorTimer2Border,
 				TargetFrameSpellBar.Border,
-
 			}) do
                 v:SetVertexColor(.05, .05, .05)
 			end
