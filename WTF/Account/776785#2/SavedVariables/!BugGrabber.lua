@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 340,
 	["lastSanitation"] = 3,
-	["session"] = 337,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:62: '<eof>' expected near 'end'",
@@ -244,8 +244,8 @@ BugGrabberDB = {
 		}, -- [30]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\xVerminz\\PlayerTargetSetMark.xml",
-			["time"] = "2019/10/04 21:57:35",
 			["session"] = 269,
+			["time"] = "2019/10/04 21:57:35",
 			["counter"] = 9,
 		}, -- [31]
 		{
@@ -370,8 +370,8 @@ BugGrabberDB = {
 		}, -- [46]
 		{
 			["message"] = "(null)",
-			["session"] = 316,
 			["time"] = "2019/10/04 17:04:44",
+			["session"] = 316,
 			["counter"] = 39,
 		}, -- [47]
 		{

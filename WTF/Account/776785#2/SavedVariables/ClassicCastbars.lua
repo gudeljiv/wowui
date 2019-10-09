@@ -23,7 +23,7 @@ ClassicCastbarsDB = {
 		["showCastInfoOnly"] = false,
 		["width"] = 220.1,
 		["castBorder"] = "",
-		["showTimer"] = false,
+		["iconPositionY"] = 0,
 		["statusColorChannel"] = {
 			0, -- [1]
 			1, -- [2]
@@ -42,7 +42,7 @@ ClassicCastbarsDB = {
 			0, -- [3]
 			1, -- [4]
 		},
-		["iconPositionY"] = 0,
+		["showTimer"] = false,
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]
@@ -70,7 +70,7 @@ ClassicCastbarsDB = {
 		["showCastInfoOnly"] = false,
 		["width"] = 106,
 		["castBorder"] = "Interface\\CastingBar\\UI-CastingBar-Border-Small",
-		["showTimer"] = false,
+		["iconPositionY"] = 0,
 		["statusColorChannel"] = {
 			0, -- [1]
 			1, -- [2]
@@ -89,7 +89,7 @@ ClassicCastbarsDB = {
 			0, -- [3]
 			1, -- [4]
 		},
-		["iconPositionY"] = 0,
+		["showTimer"] = false,
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]
