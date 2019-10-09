@@ -54,7 +54,7 @@ local function SkinTarget()
 			local frameBorder = _G["TargetFrameDebuff"..i.."Border"];
 			local frameCount = _G["TargetFrameDebuff"..i.."Count"];
 			if (frameBorder~=nil) then frameBorder:Hide() end
-			
+
 			if (frameCount~=nil) then
 				frameCount:SetFont(font, 10, 'THINOUTLINE')
 				frameCount:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", 0, 2)
