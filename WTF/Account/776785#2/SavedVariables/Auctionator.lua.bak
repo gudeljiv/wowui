@@ -14956,6 +14956,14 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3228"] = 8000,
 			["mr"] = 8000,
 		},
+		["Chief Brigadier Bracers"] = {
+			["H3229"] = 3000,
+			["mr"] = 3000,
+		},
+		["Cutthroat's Pants of the Gorilla"] = {
+			["H3229"] = 10364,
+			["mr"] = 10364,
+		},
 		["Wizard's Hand of Intellect"] = {
 			["H3228"] = 99143,
 			["mr"] = 99143,

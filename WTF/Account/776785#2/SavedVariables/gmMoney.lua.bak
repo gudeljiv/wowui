@@ -38,6 +38,14 @@ GMMONEY = {
 			["CLASS"] = "HUNTER",
 		},
 		},
+		["Korupcija"] = {
+			["GOLD"] = 19010642,
+			["CLASS"] = "PALADIN",
+		},
+		["Blooq"] = {
+			["GOLD"] = 10031,
+			["CLASS"] = "WARLOCK",
+		},
 	},
 	["Dreadmist"] = {
 		["Paydo"] = {

@@ -901,7 +901,8 @@ NeatPlatesSpellDB = {
 		},
 		["Mongoose Bite"] = {
 		},
-		["Sap"] = {
+		["Solid Sharpening Stone"] = {
+			["castTime"] = 2969,
 		},
 		["Armor +24"] = {
 			["castTime"] = 3052,
@@ -920,7 +921,7 @@ NeatPlatesSpellDB = {
 		},
 		["Slice and Dice"] = {
 		},
-		["Dazed"] = {
+		["Summon Smolderweb"] = {
 		},
 		["Summon Smolderweb"] = {
 		},
@@ -966,7 +967,8 @@ NeatPlatesSpellDB = {
 		["Handstitched Leather Bracers"] = {
 			["castTime"] = 4337,
 		},
-		["Heroic Strike"] = {
+		["Handstitched Leather Bracers"] = {
+			["castTime"] = 4337,
 		},
 		["Kidney Shot"] = {
 		},
@@ -1139,8 +1141,7 @@ NeatPlatesSpellDB = {
 		},
 		["Enchant Bracer - Intellect"] = {
 		},
-		["Spirit"] = {
-			["castTime"] = 14262,
+		["Enchant Weapon - Striking"] = {
 		},
 		["Heavy Woolen Gloves"] = {
 			["castTime"] = 7222,
@@ -1209,7 +1210,7 @@ NeatPlatesSpellDB = {
 		},
 		["Aquatic Form"] = {
 		},
-		["Frost Trap"] = {
+		["Aquatic Form"] = {
 		},
 		["Sagefish Delight"] = {
 			["castTime"] = 2986,
@@ -1239,7 +1240,7 @@ NeatPlatesSpellDB = {
 			["castTime"] = 6656,
 		},
 		["Healing Touch"] = {
-			["castTime"] = 3436,
+			["castTime"] = 3487,
 		},
 		["Enchant Gloves - Agility"] = {
 			["castTime"] = 5049.0000000149,
@@ -1646,16 +1647,18 @@ NeatPlatesSpellDB = {
 		["Formal White Shirt"] = {
 			["castTime"] = 11393,
 		},
-		["Flamestrike"] = {
-			["castTime"] = 3943,
+		["Mocking Blow"] = {
 		},
 		["Hearthstone"] = {
 			["castTime"] = 10200,
 		},
-		["Mocking Blow"] = {
+		["Black Silk Pack"] = {
+			["castTime"] = 26884.0000000298,
 		},
 		["Volley"] = {
 			["castTime"] = 459.999999940395,
+		},
+		["Evocation"] = {
 		},
 		["Holy Fire"] = {
 			["castTime"] = 3102,
@@ -1693,7 +1696,8 @@ NeatPlatesSpellDB = {
 		["Thistle Tea"] = {
 			["castTime"] = 3003,
 		},
-		["Evocation"] = {
+		["Volley"] = {
+			["castTime"] = 459.999999940395,
 		},
 		["Fire Oil"] = {
 			["castTime"] = 5055,
@@ -1701,8 +1705,8 @@ NeatPlatesSpellDB = {
 		["Rough Grinding Stone"] = {
 			["castTime"] = 3570,
 		},
-		["Enchant Shield - Minor Stamina"] = {
-			["castTime"] = 783,
+		["Immolate"] = {
+			["castTime"] = 2402,
 		},
 		["Mind Soothe"] = {
 		},
@@ -4461,9 +4465,8 @@ NeatPlatesSpellDB = {
 			},
 			["2580"] = {
 			},
-		},
-		["Aural Shock"] = {
-			["8927"] = {
+			["3207"] = {
+				["castTime"] = 2091,
 			},
 		},
 		["Summon Silithid Grub"] = {

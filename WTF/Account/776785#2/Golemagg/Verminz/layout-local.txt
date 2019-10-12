@@ -89,7 +89,7 @@ Anchor: RIGHT
 X: -185
 Y: -123
 W: 274
-H: 234
+H: 98
 Frame: MkQL_Main_Frame
 FrameLevel: 1
 Anchor: TOP

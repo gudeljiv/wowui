@@ -4157,6 +4157,11 @@ QuestieConfig = {
 				}, -- [280]
 				{
 					["Party"] = {
+						{
+							["Class"] = "Priest",
+							["Name"] = "Oboracek",
+							["Level"] = 23,
+						}, -- [1]
 					},
 					["Timestamp"] = 1569614227,
 					["Quest"] = 830,
@@ -4212,7 +4217,9 @@ QuestieConfig = {
 				{
 					["Party"] = {
 					},
-					["SubType"] = "Accept",
+					["Timestamp"] = 1569613285,
+					["Quest"] = 906,
+					["Level"] = 24,
 					["Event"] = "Quest",
 					["Timestamp"] = 1569693491,
 					["Quest"] = 822,
@@ -4279,6 +4286,10 @@ QuestieConfig = {
 					["Quest"] = 6981,
 					["Level"] = 26,
 					["Event"] = "Quest",
+				}, -- [285]
+				{
+					["Party"] = {
+					},
 					["SubType"] = "Complete",
 				}, -- [292]
 				{
@@ -4538,6 +4549,11 @@ QuestieConfig = {
 				}, -- [320]
 				{
 					["Party"] = {
+						{
+							["Class"] = "Shaman",
+							["Name"] = "Kendyman",
+							["Level"] = 27,
+						}, -- [1]
 					},
 					["Timestamp"] = 1570043524,
 					["Quest"] = 527,
@@ -4607,6 +4623,7 @@ QuestieConfig = {
 					["SubType"] = "Complete",
 				}, -- [328]
 				{
+					["Timestamp"] = 1569869966,
 					["Party"] = {
 					},
 					["Timestamp"] = 1570130625,
@@ -4818,6 +4835,7 @@ QuestieConfig = {
 					["Timestamp"] = 1570359291,
 				}, -- [350]
 				{
+					["Timestamp"] = 1570117158,
 					["Party"] = {
 						{
 							["Class"] = "Priest",
@@ -4909,7 +4927,9 @@ QuestieConfig = {
 							["Level"] = 60,
 						}, -- [1]
 					},
-					["SubType"] = "Complete",
+					["Timestamp"] = 1570130659,
+					["Quest"] = 501,
+					["Level"] = 28,
 					["Event"] = "Quest",
 					["Timestamp"] = 1570366202,
 					["Quest"] = 552,
@@ -4923,7 +4943,9 @@ QuestieConfig = {
 							["Level"] = 60,
 						}, -- [1]
 					},
-					["SubType"] = "Accept",
+					["Timestamp"] = 1570130661,
+					["Quest"] = 502,
+					["Level"] = 28,
 					["Event"] = "Quest",
 					["Timestamp"] = 1570366203,
 					["Quest"] = 553,
@@ -4937,7 +4959,9 @@ QuestieConfig = {
 							["Level"] = 60,
 						}, -- [1]
 					},
-					["SubType"] = "Complete",
+					["Timestamp"] = 1570130665,
+					["Quest"] = 509,
+					["Level"] = 28,
 					["Event"] = "Quest",
 					["Timestamp"] = 1570368607,
 					["Quest"] = 553,
@@ -4965,7 +4989,9 @@ QuestieConfig = {
 							["Level"] = 60,
 						}, -- [1]
 					},
-					["SubType"] = "Accept",
+					["Timestamp"] = 1570130670,
+					["Quest"] = 499,
+					["Level"] = 28,
 					["Event"] = "Quest",
 					["Timestamp"] = 1570368881,
 					["Quest"] = 550,
@@ -4979,7 +5005,6 @@ QuestieConfig = {
 							["Level"] = 60,
 						}, -- [1]
 					},
-					["SubType"] = "Complete",
 					["Event"] = "Quest",
 					["Timestamp"] = 1570369715,
 					["Quest"] = 550,
@@ -4993,6 +5018,9 @@ QuestieConfig = {
 							["Level"] = 60,
 						}, -- [1]
 					},
+					["Level"] = 28,
+					["Quest"] = 528,
+					["Timestamp"] = 1570134734,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
 					["Timestamp"] = 1570370164,
@@ -5086,7 +5114,13 @@ QuestieConfig = {
 					["Timestamp"] = 1570546444,
 				}, -- [372]
 				{
+					["Timestamp"] = 1570358406,
 					["Party"] = {
+						{
+							["Class"] = "Priest",
+							["Name"] = "Konac",
+							["Level"] = 60,
+						}, -- [1]
 					},
 					["Event"] = "Quest",
 					["SubType"] = "Abandon",
@@ -5096,6 +5130,11 @@ QuestieConfig = {
 				}, -- [373]
 				{
 					["Party"] = {
+						{
+							["Class"] = "Priest",
+							["Name"] = "Konac",
+							["Level"] = 60,
+						}, -- [1]
 					},
 					["Level"] = 29,
 					["Quest"] = 5881,
@@ -5105,6 +5144,11 @@ QuestieConfig = {
 				}, -- [374]
 				{
 					["Party"] = {
+						{
+							["Class"] = "Priest",
+							["Name"] = "Konac",
+							["Level"] = 60,
+						}, -- [1]
 					},
 					["Level"] = 29,
 					["Quest"] = 4542,
@@ -5114,6 +5158,11 @@ QuestieConfig = {
 				}, -- [375]
 				{
 					["Party"] = {
+						{
+							["Class"] = "Priest",
+							["Name"] = "Konac",
+							["Level"] = 60,
+						}, -- [1]
 					},
 					["Level"] = 29,
 					["Quest"] = 5151,
@@ -5123,6 +5172,11 @@ QuestieConfig = {
 				}, -- [376]
 				{
 					["Party"] = {
+						{
+							["Class"] = "Priest",
+							["Name"] = "Konac",
+							["Level"] = 60,
+						}, -- [1]
 					},
 					["Level"] = 29,
 					["Quest"] = 5151,
@@ -5132,6 +5186,11 @@ QuestieConfig = {
 				}, -- [377]
 				{
 					["Party"] = {
+						{
+							["Class"] = "Priest",
+							["Name"] = "Konac",
+							["Level"] = 60,
+						}, -- [1]
 					},
 					["Level"] = 29,
 					["Quest"] = 4542,
@@ -5141,6 +5200,11 @@ QuestieConfig = {
 				}, -- [378]
 				{
 					["Party"] = {
+						{
+							["Class"] = "Priest",
+							["Name"] = "Konac",
+							["Level"] = 60,
+						}, -- [1]
 					},
 					["Level"] = 29,
 					["Quest"] = 4841,
@@ -5150,6 +5214,11 @@ QuestieConfig = {
 				}, -- [379]
 				{
 					["Party"] = {
+						{
+							["Class"] = "Priest",
+							["Name"] = "Konac",
+							["Level"] = 60,
+						}, -- [1]
 					},
 					["Level"] = 29,
 					["Quest"] = 4767,
@@ -5168,6 +5237,11 @@ QuestieConfig = {
 				}, -- [381]
 				{
 					["Party"] = {
+						{
+							["Class"] = "Priest",
+							["Name"] = "Konac",
+							["Level"] = 60,
+						}, -- [1]
 					},
 					["Level"] = 29,
 					["Quest"] = 5147,
@@ -5184,6 +5258,11 @@ QuestieConfig = {
 				}, -- [383]
 				{
 					["Party"] = {
+						{
+							["Class"] = "Priest",
+							["Name"] = "Konac",
+							["Level"] = 60,
+						}, -- [1]
 					},
 					["Timestamp"] = 1570553522,
 					["Quest"] = 1361,
@@ -5193,6 +5272,11 @@ QuestieConfig = {
 				}, -- [384]
 				{
 					["Party"] = {
+						{
+							["Class"] = "Priest",
+							["Name"] = "Konac",
+							["Level"] = 60,
+						}, -- [1]
 					},
 					["Timestamp"] = 1570553538,
 					["Quest"] = 1718,
@@ -5202,6 +5286,11 @@ QuestieConfig = {
 				}, -- [385]
 				{
 					["Party"] = {
+						{
+							["Class"] = "Priest",
+							["Name"] = "Konac",
+							["Level"] = 60,
+						}, -- [1]
 					},
 					["Timestamp"] = 1570554144,
 					["Quest"] = 1718,
@@ -5211,6 +5300,11 @@ QuestieConfig = {
 				}, -- [386]
 				{
 					["Party"] = {
+						{
+							["Class"] = "Priest",
+							["Name"] = "Konac",
+							["Level"] = 60,
+						}, -- [1]
 					},
 					["Timestamp"] = 1570554148,
 					["Quest"] = 1719,
@@ -5220,6 +5314,11 @@ QuestieConfig = {
 				}, -- [387]
 				{
 					["Party"] = {
+						{
+							["Class"] = "Priest",
+							["Name"] = "Konac",
+							["Level"] = 60,
+						}, -- [1]
 					},
 					["Timestamp"] = 1570554415,
 					["Quest"] = 1719,
@@ -5229,6 +5328,11 @@ QuestieConfig = {
 				}, -- [388]
 				{
 					["Party"] = {
+						{
+							["Class"] = "Priest",
+							["Name"] = "Konac",
+							["Level"] = 60,
+						}, -- [1]
 					},
 					["Timestamp"] = 1570554421,
 					["Quest"] = 1791,
@@ -5238,6 +5342,11 @@ QuestieConfig = {
 				}, -- [389]
 				{
 					["Party"] = {
+						{
+							["Class"] = "Priest",
+							["Name"] = "Konac",
+							["Level"] = 60,
+						}, -- [1]
 					},
 					["Timestamp"] = 1570555740,
 					["Quest"] = 1164,
@@ -5247,6 +5356,11 @@ QuestieConfig = {
 				}, -- [390]
 				{
 					["Party"] = {
+						{
+							["Class"] = "Priest",
+							["Name"] = "Konac",
+							["Level"] = 60,
+						}, -- [1]
 					},
 					["Timestamp"] = 1570556015,
 					["Quest"] = 1791,

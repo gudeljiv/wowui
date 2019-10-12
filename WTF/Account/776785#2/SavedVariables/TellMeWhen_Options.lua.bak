@@ -251,6 +251,7 @@ TMWOptDB = {
 				["agility"] = 2,
 				["ghoul rot"] = 1,
 				["first aid"] = 2,
+				["ghoul rot"] = 1,
 				["infected wound"] = 1,
 				["trap"] = 2,
 				["cheap shot"] = 2,
@@ -5387,8 +5388,8 @@ TMWOptDB = {
 										}, -- [2]
 									},
 								},
-								[138] = {
-									["ClockGCD"] = true,
+								[102] = {
+									["GUID"] = "TMW:icon:1RYjOKqM=xzp",
 									["Type"] = "conditionicon",
 									["Name"] = "280735",
 									["Enabled"] = true,
@@ -6059,6 +6060,63 @@ TMWOptDB = {
 							["GUID"] = "TMW:group:1Ov1GPZDfFXX",
 							["Name"] = "Main Rotation (Meta)",
 							["Columns"] = 1,
+							["EnabledSpecs"] = {
+								[72] = false,
+								[73] = false,
+							},
+							["Scale"] = 1.75434064865112,
+							["Conditions"] = {
+								{
+									["PrtsBefore"] = 3,
+									["Type"] = "REACT",
+									["Level"] = 1,
+									["Unit"] = "target",
+								}, -- [1]
+								{
+									["Type"] = "COUNTER",
+									["PrtsAfter"] = 1,
+									["Name"] = "target_toggle",
+								}, -- [2]
+								{
+									["PrtsBefore"] = 1,
+									["Type"] = "COMBAT",
+									["AndOr"] = "OR",
+								}, -- [3]
+								{
+									["Type"] = "COUNTER",
+									["PrtsAfter"] = 2,
+									["Name"] = "combat_toggle",
+								}, -- [4]
+								{
+									["Type"] = "COUNTER",
+									["Name"] = "target_toggle",
+									["PrtsBefore"] = 1,
+									["AndOr"] = "OR",
+									["Level"] = 1,
+								}, -- [5]
+								{
+									["PrtsBefore"] = 2,
+									["Type"] = "COMBAT",
+								}, -- [6]
+								{
+									["Type"] = "COUNTER",
+									["PrtsAfter"] = 1,
+									["Name"] = "combat_toggle",
+								}, -- [7]
+								{
+									["Type"] = "COUNTER",
+									["Name"] = "combat_toggle",
+									["PrtsBefore"] = 1,
+									["AndOr"] = "OR",
+									["PrtsAfter"] = 4,
+									["Level"] = 1,
+								}, -- [8]
+								{
+									["Level"] = 1,
+									["Type"] = "VEHICLE",
+								}, -- [9]
+								["n"] = 9,
+							},
 							["EnabledSpecs"] = {
 								[72] = false,
 								[73] = false,

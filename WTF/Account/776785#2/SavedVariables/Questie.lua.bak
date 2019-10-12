@@ -541,7 +541,7 @@ QuestieConfig = {
 					["Timestamp"] = 1568143554,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
-				}, -- [13]
+				}, -- [12]
 				{
 					["Party"] = {
 					},
@@ -702,6 +702,16 @@ QuestieConfig = {
 				}, -- [31]
 				{
 					["Party"] = {
+						{
+							["Class"] = "Priest",
+							["Name"] = "Neris",
+							["Level"] = 8,
+						}, -- [1]
+						{
+							["Class"] = "Priest",
+							["Name"] = "Neris",
+							["Level"] = 8,
+						}, -- [2]
 					},
 					["Timestamp"] = 1570806681,
 					["Quest"] = 805,
@@ -711,6 +721,11 @@ QuestieConfig = {
 				}, -- [32]
 				{
 					["Party"] = {
+						{
+							["Class"] = "Shaman",
+							["Name"] = "Alie",
+							["Level"] = 6,
+						}, -- [1]
 					},
 					["Timestamp"] = 1570806690,
 					["Quest"] = 808,
@@ -1331,6 +1346,7 @@ QuestieConfig = {
 					["Event"] = "Quest",
 				}, -- [93]
 				{
+					["Timestamp"] = 1568399398,
 					["Party"] = {
 					},
 					["SubType"] = "Complete",
@@ -1342,6 +1358,9 @@ QuestieConfig = {
 				{
 					["Party"] = {
 					},
+					["Level"] = 12,
+					["Quest"] = 5726,
+					["Timestamp"] = 1568400484,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
 					["Timestamp"] = 1568399295,
@@ -1350,7 +1369,15 @@ QuestieConfig = {
 				}, -- [95]
 				{
 					["Party"] = {
+						{
+							["Class"] = "Mage",
+							["Name"] = "Uzhas",
+							["Level"] = 46,
+						}, -- [1]
 					},
+					["Level"] = 12,
+					["Quest"] = 6385,
+					["Timestamp"] = 1568402030,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
 					["Timestamp"] = 1568399398,
@@ -1366,6 +1393,11 @@ QuestieConfig = {
 				}, -- [97]
 				{
 					["Party"] = {
+						{
+							["Class"] = "Mage",
+							["Name"] = "Uzhas",
+							["Level"] = 46,
+						}, -- [1]
 					},
 					["Level"] = 12,
 					["Quest"] = 5726,
@@ -1601,6 +1633,7 @@ QuestieConfig = {
 					["Event"] = "Quest",
 				}, -- [119]
 				{
+					["Timestamp"] = 1568650767,
 					["Party"] = {
 					},
 					["Timestamp"] = 1568649058,
@@ -1734,6 +1767,7 @@ QuestieConfig = {
 					["Timestamp"] = 1568661101,
 				}, -- [134]
 				{
+					["Timestamp"] = 1568661136,
 					["Party"] = {
 					},
 					["Event"] = "Quest",
@@ -1814,7 +1848,20 @@ QuestieConfig = {
 				}, -- [143]
 				{
 					["Party"] = {
+						{
+							["Class"] = "Warrior",
+							["Name"] = "Nëgro",
+							["Level"] = 16,
+						}, -- [1]
+						{
+							["Class"] = "Warrior",
+							["Name"] = "Nëgro",
+							["Level"] = 16,
+						}, -- [2]
 					},
+					["Timestamp"] = 1568669475,
+					["Quest"] = 898,
+					["Level"] = 18,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
 					["Level"] = 18,
@@ -1971,7 +2018,7 @@ QuestieConfig = {
 				{
 					["Party"] = {
 					},
-					["SubType"] = "Accept",
+					["SubType"] = "Complete",
 					["Event"] = "Quest",
 					["Timestamp"] = 1568672797,
 					["Quest"] = 879,
@@ -2219,6 +2266,7 @@ QuestieConfig = {
 					["Event"] = "Quest",
 				}, -- [185]
 				{
+					["Timestamp"] = 1568814968,
 					["Party"] = {
 					},
 					["Level"] = 19,
@@ -2408,7 +2456,7 @@ QuestieConfig = {
 				{
 					["Party"] = {
 					},
-					["SubType"] = "Accept",
+					["SubType"] = "Abandon",
 					["Event"] = "Quest",
 					["Timestamp"] = 1568820947,
 					["Quest"] = 6382,
@@ -2417,6 +2465,9 @@ QuestieConfig = {
 				{
 					["Party"] = {
 					},
+					["Level"] = 20,
+					["Quest"] = 863,
+					["Timestamp"] = 1568821545,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
 					["Timestamp"] = 1568820961,
@@ -2426,6 +2477,9 @@ QuestieConfig = {
 				{
 					["Party"] = {
 					},
+					["Level"] = 20,
+					["Quest"] = 1221,
+					["Timestamp"] = 1568821568,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
 					["Timestamp"] = 1568820967,
@@ -2591,6 +2645,9 @@ QuestieConfig = {
 				{
 					["Party"] = {
 					},
+					["Timestamp"] = 1568924082,
+					["Quest"] = 1824,
+					["Level"] = 21,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
 					["Level"] = 21,
@@ -2600,6 +2657,9 @@ QuestieConfig = {
 				{
 					["Party"] = {
 					},
+					["Timestamp"] = 1568924085,
+					["Quest"] = 1825,
+					["Level"] = 21,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
 					["Level"] = 21,
@@ -2852,6 +2912,9 @@ QuestieConfig = {
 				{
 					["Party"] = {
 					},
+					["Timestamp"] = 1569355699,
+					["Quest"] = 6381,
+					["Level"] = 23,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
 					["Level"] = 23,
@@ -2861,6 +2924,9 @@ QuestieConfig = {
 				{
 					["Party"] = {
 					},
+					["Timestamp"] = 1569355795,
+					["Quest"] = 5723,
+					["Level"] = 23,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
 					["Level"] = 23,
@@ -2870,6 +2936,9 @@ QuestieConfig = {
 				{
 					["Party"] = {
 					},
+					["Timestamp"] = 1569355799,
+					["Quest"] = 5722,
+					["Level"] = 23,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
 					["Level"] = 23,
@@ -2902,6 +2971,7 @@ QuestieConfig = {
 					["Level"] = 24,
 				}, -- [261]
 				{
+					["Timestamp"] = 1569442820,
 					["Party"] = {
 					},
 					["SubType"] = "Accept",
@@ -2998,6 +3068,11 @@ QuestieConfig = {
 				}, -- [271]
 				{
 					["Party"] = {
+						{
+							["Class"] = "Priest",
+							["Name"] = "Oboracek",
+							["Level"] = 23,
+						}, -- [1]
 					},
 					["Level"] = 24,
 					["Quest"] = 849,
@@ -3026,6 +3101,10 @@ QuestieConfig = {
 				{
 					["Party"] = {
 					},
+					["Level"] = 24,
+					["Quest"] = 849,
+					["Timestamp"] = 1569612994,
+					["SubType"] = "Complete",
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
 					["Level"] = 24,
@@ -3058,6 +3137,7 @@ QuestieConfig = {
 					["Timestamp"] = 1569613322,
 				}, -- [278]
 				{
+					["Timestamp"] = 1569613319,
 					["Party"] = {
 					},
 					["Event"] = "Quest",
@@ -3168,6 +3248,9 @@ QuestieConfig = {
 				{
 					["Party"] = {
 					},
+					["Timestamp"] = 1569693491,
+					["Quest"] = 822,
+					["Level"] = 25,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
 					["Level"] = 26,
@@ -3175,7 +3258,28 @@ QuestieConfig = {
 					["Timestamp"] = 1569747999,
 				}, -- [289]
 				{
+					["Timestamp"] = 1569745414,
 					["Party"] = {
+						{
+							["Class"] = "Hunter",
+							["Name"] = "Zeroeffort",
+							["Level"] = 21,
+						}, -- [1]
+						{
+							["Class"] = "Hunter",
+							["Name"] = "Zeroeffort",
+							["Level"] = 21,
+						}, -- [2]
+						{
+							["Class"] = "Hunter",
+							["Name"] = "Zeroeffort",
+							["Level"] = 21,
+						}, -- [3]
+						{
+							["Class"] = "Hunter",
+							["Name"] = "Zeroeffort",
+							["Level"] = 21,
+						}, -- [4]
 					},
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
@@ -3299,7 +3403,6 @@ QuestieConfig = {
 							["Level"] = 27,
 						}, -- [1]
 					},
-					["SubType"] = "Complete",
 					["Event"] = "Quest",
 					["Timestamp"] = 1569863792,
 					["Quest"] = 6441,
@@ -3316,6 +3419,11 @@ QuestieConfig = {
 				}, -- [304]
 				{
 					["Party"] = {
+						{
+							["Class"] = "Shaman",
+							["Name"] = "Kendyman",
+							["Level"] = 27,
+						}, -- [1]
 					},
 					["Timestamp"] = 1569868895,
 					["Quest"] = 1918,
@@ -3935,7 +4043,15 @@ QuestieConfig = {
 				}, -- [364]
 				{
 					["Party"] = {
+						{
+							["Class"] = "Priest",
+							["Name"] = "Konac",
+							["Level"] = 60,
+						}, -- [1]
 					},
+					["Timestamp"] = 1570369715,
+					["Quest"] = 550,
+					["Level"] = 29,
 					["Event"] = "Quest",
 					["SubType"] = "Abandon",
 					["Level"] = 29,
@@ -3944,6 +4060,11 @@ QuestieConfig = {
 				}, -- [365]
 				{
 					["Party"] = {
+						{
+							["Class"] = "Priest",
+							["Name"] = "Konac",
+							["Level"] = 60,
+						}, -- [1]
 					},
 					["Level"] = 29,
 					["Quest"] = 1145,
@@ -3953,6 +4074,11 @@ QuestieConfig = {
 				}, -- [366]
 				{
 					["Party"] = {
+						{
+							["Class"] = "Priest",
+							["Name"] = "Konac",
+							["Level"] = 60,
+						}, -- [1]
 					},
 					["Level"] = 29,
 					["Quest"] = 1145,
@@ -4485,6 +4611,11 @@ QuestieConfig = {
 				}, -- [4]
 				{
 					["Party"] = {
+						{
+							["Class"] = "Priest",
+							["Name"] = "Konac",
+							["Level"] = 18,
+						}, -- [1]
 					},
 					["Timestamp"] = 1567293643,
 					["Quest"] = 790,
@@ -4494,6 +4625,11 @@ QuestieConfig = {
 				}, -- [5]
 				{
 					["Party"] = {
+						{
+							["Class"] = "Priest",
+							["Name"] = "Konac",
+							["Level"] = 18,
+						}, -- [1]
 					},
 					["Timestamp"] = 1567293794,
 					["Quest"] = 788,
@@ -4521,6 +4657,11 @@ QuestieConfig = {
 				}, -- [8]
 				{
 					["Party"] = {
+						{
+							["Class"] = "Priest",
+							["Name"] = "Konac",
+							["Level"] = 18,
+						}, -- [1]
 					},
 					["Timestamp"] = 1567293805,
 					["Quest"] = 792,
@@ -4599,6 +4740,9 @@ QuestieConfig = {
 				{
 					["Party"] = {
 					},
+					["Timestamp"] = 1567293805,
+					["Quest"] = 792,
+					["Level"] = 2,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
 					["Level"] = 4,
@@ -4658,6 +4802,7 @@ QuestieConfig = {
 					["Event"] = "Quest",
 				}, -- [24]
 				{
+					["Timestamp"] = 1567294620,
 					["Party"] = {
 					},
 					["Level"] = 5,
@@ -4705,6 +4850,9 @@ QuestieConfig = {
 				{
 					["Party"] = {
 					},
+					["Level"] = 4,
+					["Quest"] = 792,
+					["Timestamp"] = 1567321187,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
 					["Timestamp"] = 1567321755,
@@ -4714,6 +4862,9 @@ QuestieConfig = {
 				{
 					["Party"] = {
 					},
+					["Level"] = 4,
+					["Quest"] = 794,
+					["Timestamp"] = 1567321187,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
 					["Timestamp"] = 1567321757,
@@ -4894,6 +5045,7 @@ QuestieConfig = {
 					["NewLevel"] = 4,
 				}, -- [13]
 				{
+					["Timestamp"] = 1567323789,
 					["Party"] = {
 					},
 					["SubType"] = "Complete",
@@ -5113,6 +5265,7 @@ QuestieConfig = {
 					["SubType"] = "Complete",
 				}, -- [38]
 				{
+					["Timestamp"] = 1569096911,
 					["Party"] = {
 					},
 					["Timestamp"] = 1569173524,
@@ -5160,6 +5313,9 @@ QuestieConfig = {
 				{
 					["Party"] = {
 					},
+					["Timestamp"] = 1569097771,
+					["Quest"] = 382,
+					["Level"] = 5,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
 					["Level"] = 7,

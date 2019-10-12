@@ -13178,9 +13178,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3229"] = 20000,
 			["mr"] = 20000,
 		},
-		["Defender Boots of Defense"] = {
-			["H3229"] = 5500,
-			["mr"] = 5500,
+		["Crude Scope"] = {
+			["mr"] = 160,
+			["H3228"] = 173,
+			["L3228"] = 160,
 		},
 		["Orange Mageweave Shirt"] = {
 			["H3228"] = 7779,
@@ -13548,9 +13549,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3229"] = 1780,
 			["mr"] = 1780,
 		},
-		["Clay Ring of the Boar"] = {
-			["H3229"] = 20000,
-			["mr"] = 20000,
+		["Pattern: Tough Scorpid Shoulders"] = {
+			["H3229"] = 1490,
+			["mr"] = 1490,
 		},
 		["Conk Hammer of the Eagle"] = {
 			["H3228"] = 50000,
@@ -13568,13 +13569,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3229"] = 990,
 			["mr"] = 990,
 		},
-		["Mageweave Cloth"] = {
-			["H3229"] = 507,
-			["mr"] = 507,
+		["Clay Ring of the Boar"] = {
+			["H3229"] = 20000,
+			["mr"] = 20000,
 		},
-		["Zesty Clam Meat"] = {
-			["H3229"] = 107,
-			["mr"] = 107,
+		["Conk Hammer of the Eagle"] = {
+			["H3228"] = 50000,
+			["mr"] = 50000,
 		},
 		["Infiltrator Shoulders of the Whale"] = {
 			["H3228"] = 3699,
@@ -16272,6 +16273,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "14530:0:0:0:0",
 			["H3229"] = 2504,
 			["cc"] = 0,
+		},
+		["Aboriginal Loincloth of the Owl"] = {
+			["H3229"] = 2000,
+			["mr"] = 2000,
 		},
 		["Aboriginal Loincloth of the Owl"] = {
 			["H3229"] = 2000,

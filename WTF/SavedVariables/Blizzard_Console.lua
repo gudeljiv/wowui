@@ -4007,6 +4007,342 @@ Blizzard_Console_SavedVars = {
 			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [1001]
+		{
+			"Attempted to register existing command: ShowObjUsage\n", -- [1]
+			0, -- [2]
+		}, -- [1002]
+		{
+			"Attempted to register existing command: SetDifficulty\n", -- [1]
+			0, -- [2]
+		}, -- [1003]
+		{
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [1004]
+		{
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [1005]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [1006]
+		{
+			"Proficiency in item class 2 set to 0x0000000001", -- [1]
+			0, -- [2]
+		}, -- [1007]
+		{
+			"Proficiency in item class 2 set to 0x0000000005", -- [1]
+			0, -- [2]
+		}, -- [1008]
+		{
+			"Proficiency in item class 4 set to 0x0000000001", -- [1]
+			0, -- [2]
+		}, -- [1009]
+		{
+			"Proficiency in item class 2 set to 0x0000004005", -- [1]
+			0, -- [2]
+		}, -- [1010]
+		{
+			"Proficiency in item class 4 set to 0x0000000005", -- [1]
+			0, -- [2]
+		}, -- [1011]
+		{
+			"Proficiency in item class 4 set to 0x0000000007", -- [1]
+			0, -- [2]
+		}, -- [1012]
+		{
+			"Proficiency in item class 2 set to 0x0000004005", -- [1]
+			0, -- [2]
+		}, -- [1013]
+		{
+			"Proficiency in item class 4 set to 0x0000000007", -- [1]
+			0, -- [2]
+		}, -- [1014]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [1015]
+		{
+			"Time set to 10/8/2019 (Tue) 22:08", -- [1]
+			0, -- [2]
+		}, -- [1016]
+		{
+			"Gamespeed set from 0.017 to 0.017", -- [1]
+			0, -- [2]
+		}, -- [1017]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [1018]
+		{
+			"Total: 0d 0h 8m 51s", -- [1]
+			0, -- [2]
+		}, -- [1019]
+		{
+			"Level: 0d 0h 8m 51s", -- [1]
+			0, -- [2]
+		}, -- [1020]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [1021]
+		{
+			"Total: 0d 0h 9m 45s", -- [1]
+			0, -- [2]
+		}, -- [1022]
+		{
+			"Level: 0d 0h 9m 45s", -- [1]
+			0, -- [2]
+		}, -- [1023]
+		{
+			"Skill 45 increased from 1 to 2", -- [1]
+			0, -- [2]
+		}, -- [1024]
+		{
+			"Skill 44 increased from 1 to 7", -- [1]
+			0, -- [2]
+		}, -- [1025]
+		{
+			"Skill 44 increased from 2 to 8", -- [1]
+			0, -- [2]
+		}, -- [1026]
+		{
+			"Skill 95 increased from 1 to 2", -- [1]
+			0, -- [2]
+		}, -- [1027]
+		{
+			"Skill 44 increased from 3 to 9", -- [1]
+			0, -- [2]
+		}, -- [1028]
+		{
+			"Skill 44 increased from 4 to 10", -- [1]
+			0, -- [2]
+		}, -- [1029]
+		{
+			"Skill 45 increased from 2 to 3", -- [1]
+			0, -- [2]
+		}, -- [1030]
+		{
+			"Skill 95 increased from 2 to 3", -- [1]
+			0, -- [2]
+		}, -- [1031]
+		{
+			"Skill 45 increased from 3 to 4", -- [1]
+			0, -- [2]
+		}, -- [1032]
+		{
+			"Skill 45 increased from 4 to 5", -- [1]
+			0, -- [2]
+		}, -- [1033]
+		{
+			"Skill 51 increased from 5 to 10", -- [1]
+			0, -- [2]
+		}, -- [1034]
+		{
+			"Skill 125 increased from 5 to 10", -- [1]
+			0, -- [2]
+		}, -- [1035]
+		{
+			"Skill 163 increased from 5 to 10", -- [1]
+			0, -- [2]
+		}, -- [1036]
+		{
+			"Skill 183 increased from 5 to 10", -- [1]
+			0, -- [2]
+		}, -- [1037]
+		{
+			"Skill 45 increased from 5 to 6", -- [1]
+			0, -- [2]
+		}, -- [1038]
+		{
+			"Skill 45 increased from 6 to 7", -- [1]
+			0, -- [2]
+		}, -- [1039]
+		{
+			"Skill 44 increased from 5 to 11", -- [1]
+			0, -- [2]
+		}, -- [1040]
+		{
+			"Skill 45 increased from 7 to 8", -- [1]
+			0, -- [2]
+		}, -- [1041]
+		{
+			"Skill 45 increased from 8 to 9", -- [1]
+			0, -- [2]
+		}, -- [1042]
+		{
+			"Skill 95 increased from 3 to 4", -- [1]
+			0, -- [2]
+		}, -- [1043]
+		{
+			"Skill 44 increased from 6 to 12", -- [1]
+			0, -- [2]
+		}, -- [1044]
+		{
+			"Skill 95 increased from 4 to 5", -- [1]
+			0, -- [2]
+		}, -- [1045]
+		{
+			"Skill 44 increased from 7 to 13", -- [1]
+			0, -- [2]
+		}, -- [1046]
+		{
+			"Skill 44 increased from 8 to 14", -- [1]
+			0, -- [2]
+		}, -- [1047]
+		{
+			"Skill 95 increased from 5 to 6", -- [1]
+			0, -- [2]
+		}, -- [1048]
+		{
+			"Skill 44 increased from 9 to 15", -- [1]
+			0, -- [2]
+		}, -- [1049]
+		{
+			"Skill 95 increased from 6 to 7", -- [1]
+			0, -- [2]
+		}, -- [1050]
+		{
+			"Skill 45 increased from 9 to 10", -- [1]
+			0, -- [2]
+		}, -- [1051]
+		{
+			"Skill 95 increased from 7 to 8", -- [1]
+			0, -- [2]
+		}, -- [1052]
+		{
+			"Skill 51 increased from 10 to 15", -- [1]
+			0, -- [2]
+		}, -- [1053]
+		{
+			"Skill 125 increased from 10 to 15", -- [1]
+			0, -- [2]
+		}, -- [1054]
+		{
+			"Skill 163 increased from 10 to 15", -- [1]
+			0, -- [2]
+		}, -- [1055]
+		{
+			"Skill 183 increased from 10 to 15", -- [1]
+			0, -- [2]
+		}, -- [1056]
+		{
+			"Skill 45 increased from 10 to 11", -- [1]
+			0, -- [2]
+		}, -- [1057]
+		{
+			"Skill 95 increased from 8 to 9", -- [1]
+			0, -- [2]
+		}, -- [1058]
+		{
+			"Skill 44 increased from 10 to 16", -- [1]
+			0, -- [2]
+		}, -- [1059]
+		{
+			"Skill 44 increased from 11 to 17", -- [1]
+			0, -- [2]
+		}, -- [1060]
+		{
+			"Skill 95 increased from 9 to 10", -- [1]
+			0, -- [2]
+		}, -- [1061]
+		{
+			"Skill 44 increased from 12 to 18", -- [1]
+			0, -- [2]
+		}, -- [1062]
+		{
+			"Skill 45 increased from 11 to 12", -- [1]
+			0, -- [2]
+		}, -- [1063]
+		{
+			"Skill 44 increased from 13 to 19", -- [1]
+			0, -- [2]
+		}, -- [1064]
+		{
+			"Skill 44 increased from 14 to 20", -- [1]
+			0, -- [2]
+		}, -- [1065]
+		{
+			"Skill 95 increased from 10 to 11", -- [1]
+			0, -- [2]
+		}, -- [1066]
+		{
+			"Skill 45 increased from 12 to 13", -- [1]
+			0, -- [2]
+		}, -- [1067]
+		{
+			"Skill 95 increased from 11 to 12", -- [1]
+			0, -- [2]
+		}, -- [1068]
+		{
+			"Skill 45 increased from 13 to 14", -- [1]
+			0, -- [2]
+		}, -- [1069]
+		{
+			"Skill 45 increased from 14 to 15", -- [1]
+			0, -- [2]
+		}, -- [1070]
+		{
+			"Skill 95 increased from 12 to 13", -- [1]
+			0, -- [2]
+		}, -- [1071]
+		{
+			"Skill 51 increased from 15 to 20", -- [1]
+			0, -- [2]
+		}, -- [1072]
+		{
+			"Skill 125 increased from 15 to 20", -- [1]
+			0, -- [2]
+		}, -- [1073]
+		{
+			"Skill 163 increased from 15 to 20", -- [1]
+			0, -- [2]
+		}, -- [1074]
+		{
+			"Skill 183 increased from 15 to 20", -- [1]
+			0, -- [2]
+		}, -- [1075]
+		{
+			"Skill 50 increased from 0 to 20", -- [1]
+			0, -- [2]
+		}, -- [1076]
+		{
+			"Skill 45 increased from 15 to 16", -- [1]
+			0, -- [2]
+		}, -- [1077]
+		{
+			"Skill 45 increased from 16 to 17", -- [1]
+			0, -- [2]
+		}, -- [1078]
+		{
+			"Skill 45 increased from 17 to 18", -- [1]
+			0, -- [2]
+		}, -- [1079]
+		{
+			"Skill 95 increased from 13 to 14", -- [1]
+			0, -- [2]
+		}, -- [1080]
+		{
+			"Skill 44 increased from 15 to 21", -- [1]
+			0, -- [2]
+		}, -- [1081]
+		{
+			"Skill 45 increased from 18 to 19", -- [1]
+			0, -- [2]
+		}, -- [1082]
+		{
+			"Skill 44 increased from 16 to 22", -- [1]
+			0, -- [2]
+		}, -- [1083]
+		{
+			"Skill 95 increased from 14 to 15", -- [1]
+			0, -- [2]
+		}, -- [1084]
+		{
+			"Skill 44 increased from 17 to 23", -- [1]
+			0, -- [2]
+		}, -- [1085]
 	},
 	["isShown"] = false,
 	["fontHeight"] = 14,

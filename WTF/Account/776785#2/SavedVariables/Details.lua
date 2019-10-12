@@ -148,7 +148,7 @@ _detalhes_global = {
 		[2271] = "Dalaran Shield Guard",
 		[2274] = "Enraged Stanley",
 		[5053] = "Deviate Crocolisk",
-		[5055] = "Deviate Lasher",
+		[3809] = "Impi",
 		[685] = "Stranglethorn Raptor",
 		[3765] = "Bleakheart Satyr",
 		[2540] = "Dalaran Serpent",
@@ -180,6 +180,8 @@ _detalhes_global = {
 		[2375] = "Torn Fin Coastrunner",
 		[5676] = "Summoned Voidwalker",
 		[3115] = "Dustwind Harpy",
+		[5676] = "Summoned Voidwalker",
+		[1151] = "Saltwater Crocolisk",
 		[1935] = "Tirisfal Farmhand",
 		[2354] = "Vicious Gray Bear",
 		[2335] = "Magistrate Burnside",
@@ -352,7 +354,7 @@ _detalhes_global = {
 		[8118] = 1,
 		["Dampen Magic"] = 8,
 		[23234] = 1,
-		["Thrash"] = "Deviate Ravager",
+		[19705] = 3,
 		["Restore Mana"] = 5,
 		["Fireball"] = 8,
 		["Arcane Intellect"] = 8,
@@ -476,7 +478,7 @@ _detalhes_global = {
 		["!Autoshot"] = 1,
 		["Dismiss Pet"] = 3,
 		["Gouge"] = 4,
-		["Cat Form"] = 11,
+		[2374] = 1,
 		["Shadow Bolt"] = 9,
 		[7301] = 8,
 		["Power Word: Shield"] = 5,
@@ -980,14 +982,23 @@ _detalhes_global = {
 						1, -- [3]
 					},
 				},
-				["normal_texture"] = "Interface\\Addons\\Details\\Images\\reset_button2",
-				["anchor"] = {
-					2, -- [1]
-					0, -- [2]
+				["border_texture"] = "None",
+				["header_statusbar"] = {
+					0.3, -- [1]
+					0.3, -- [2]
+					0.3, -- [3]
+					0.8, -- [4]
+					false, -- [5]
+					false, -- [6]
+					"WorldState Score", -- [7]
 				},
-				["size"] = {
-					13, -- [1]
-					13, -- [2]
+				["fontshadow"] = true,
+				["maximize_method"] = 2,
+				["border_size"] = 15,
+				["menus_bg_texture"] = "Interface\\SPELLBOOK\\Spellbook-Page-1",
+				["anchor_screen_pos"] = {
+					-263.132913814092, -- [1]
+					529.999959104431, -- [2]
 				},
 			},
 			["switch_tank"] = false,
@@ -1025,6 +1036,7 @@ _detalhes_global = {
 				["anchor"] = {
 					5, -- [1]
 					0, -- [2]
+					["side"] = 2,
 				},
 				["textsize"] = 15,
 				["textfont"] = "Friz Quadrata TT",
@@ -1766,7 +1778,7 @@ _detalhes_global = {
 						1, -- [4]
 					},
 					["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-					["micro_displays_locked"] = true,
+					["bars_sort_direction"] = 1,
 					["tooltip"] = {
 						["n_abilities"] = 3,
 						["n_enemies"] = 3,
@@ -1788,12 +1800,23 @@ _detalhes_global = {
 						["show_timer"] = {
 							true, -- [1]
 							true, -- [2]
-							true, -- [3]
+							false, -- [3]
 						},
 						["text_color"] = {
 							1, -- [1]
 							1, -- [2]
 							1, -- [3]
+						},
+						["space"] = {
+							["right"] = 0,
+							["left"] = 0,
+							["between"] = 1,
+						},
+						["texture_background_class_color"] = false,
+						["textL_outline_small_color"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
 							1, -- [4]
 						},
 					},
@@ -1874,7 +1897,7 @@ _detalhes_global = {
 								["textFace"] = "Accidental Presidency",
 								["textXMod"] = 6,
 								["textAlign"] = 0,
-								["timeType"] = 1,
+								["textFace"] = "Arial Narrow",
 								["textStyle"] = 2,
 								["textSize"] = 10,
 								["textYMod"] = 1,
@@ -1888,10 +1911,10 @@ _detalhes_global = {
 					["__locked"] = true,
 					["menu_alpha"] = {
 						["enabled"] = false,
-						["onleave"] = 1,
-						["ignorebars"] = false,
-						["iconstoo"] = true,
 						["onenter"] = 1,
+						["iconstoo"] = true,
+						["ignorebars"] = false,
+						["onleave"] = 1,
 					},
 					["__snapH"] = false,
 					["show_statusbar"] = false,
@@ -2344,26 +2367,30 @@ _detalhes_global = {
 					1, -- [3]
 					1, -- [4]
 				},
-				["arena_enabled"] = true,
+				["line_height"] = 16,
+				["line_color"] = {
+					0.1, -- [1]
+					0.1, -- [2]
+					0.1, -- [3]
+					0.3, -- [4]
+				},
 				["font_shadow"] = "NONE",
-				["font_size"] = 18,
-				["mythic_dungeon_enabled"] = true,
-				["sample_size"] = 5,
+				["font_size"] = 10,
 				["font_face"] = "Friz Quadrata TT",
 				["frame"] = {
-					["show_title"] = false,
+					["show_title"] = true,
 					["strata"] = "LOW",
 					["backdrop_color"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						0.2, -- [4]
+						0.16, -- [1]
+						0.16, -- [2]
+						0.16, -- [3]
+						0.47, -- [4]
 					},
 					["locked"] = false,
-					["height"] = 65,
-					["width"] = 220,
+					["height"] = 300,
+					["width"] = 250,
 				},
-				["update_interval"] = 0.3,
+				["line_texture"] = "Details Serenity",
 				["options_frame"] = {
 				},
 			},
@@ -3557,7 +3584,7 @@ _detalhes_global = {
 					["bar_color"] = {
 						1, -- [1]
 						1, -- [2]
-						1, -- [3]
+						8, -- [3]
 					},
 					["enabled"] = false,
 					["text_color"] = {

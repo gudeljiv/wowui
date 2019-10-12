@@ -228,6 +228,7 @@ ChocolateBarDB = {
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
+				["textureName"] = "None",
 			},
 			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["fixedStrata"] = true,

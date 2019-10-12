@@ -244,6 +244,7 @@ TMWOptDB = {
 				["water breathing"] = 2,
 				["wild regeneration"] = 1,
 				["creeping mold"] = 1,
+				["cobrahn serpent form"] = 1,
 				["elixir of the mongoose"] = 2,
 				["cobrahn serpent form"] = 1,
 				["rumsey rum black label"] = 2,
@@ -1335,6 +1336,7 @@ TMWOptDB = {
 						}, -- [1]
 						{
 							["DefaultText"] = "[Stacks:Hide(0)]",
+							["StringName"] = "Stacks",
 							["Anchors"] = {
 								{
 									["point"] = "BOTTOMRIGHT",
@@ -4979,7 +4981,7 @@ TMWOptDB = {
 									["SettingsPerView"] = {
 										["icon"] = {
 											["Texts"] = {
-												[2] = "Predict Help",
+												[2] = "On",
 											},
 										},
 									},
