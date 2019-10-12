@@ -4,7 +4,7 @@ VER 3 0000000000000008 " " "132089"
 END
 VER 3 0000000000000006 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use item:159
+/use item:0
 END
 VER 3 0000000000000005 "Food" "Inv_misc_questionmark"
 #showtooltip

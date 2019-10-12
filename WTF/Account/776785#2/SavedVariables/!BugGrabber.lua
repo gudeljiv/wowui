@@ -1,8 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 344,
 	["lastSanitation"] = 3,
-	["session"] = 341,
+	["session"] = 342,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:62: '<eof>' expected near 'end'",
@@ -245,8 +244,8 @@ BugGrabberDB = {
 		}, -- [30]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\xVerminz\\PlayerTargetSetMark.xml",
-			["time"] = "2019/10/04 21:57:35",
 			["session"] = 269,
+			["time"] = "2019/10/04 21:57:35",
 			["counter"] = 9,
 		}, -- [31]
 		{
@@ -363,8 +362,8 @@ BugGrabberDB = {
 		}, -- [45]
 		{
 			["message"] = "(null)",
-			["session"] = 316,
 			["time"] = "2019/10/04 17:04:44",
+			["session"] = 316,
 			["counter"] = 39,
 		}, -- [46]
 		{
@@ -415,5 +414,101 @@ BugGrabberDB = {
 			["session"] = 343,
 			["counter"] = 3,
 		}, -- [52]
+		{
+			["message"] = "WTF\\Account\\776785#2\\SavedVariables\\Auctionator-8.1.0.lua:20629: '}' expected (to close '{' at line 16108) near 'AUCTIONATOR_LAST_SCAN_TIME'",
+			["time"] = "2019/10/12 16:37:01",
+			["locals"] = "",
+			["stack"] = "",
+			["session"] = 342,
+			["counter"] = 1,
+		}, -- [53]
+		{
+			["message"] = "WTF\\Account\\776785#2\\SavedVariables\\cargBags_Nivaya.lua:276: unexpected symbol near '<eof>'",
+			["time"] = "2019/10/12 16:37:01",
+			["locals"] = "",
+			["stack"] = "",
+			["session"] = 342,
+			["counter"] = 1,
+		}, -- [54]
+		{
+			["message"] = "WTF\\Account\\776785#2\\SavedVariables\\ChocolateBar-@project-version@.lua:269: unexpected symbol near '<eof>'",
+			["time"] = "2019/10/12 16:37:01",
+			["locals"] = "",
+			["stack"] = "",
+			["session"] = 342,
+			["counter"] = 1,
+		}, -- [55]
+		{
+			["message"] = "WTF\\Account\\776785#2\\SavedVariables\\DBM-Core-1.13.13b.lua:271: unexpected symbol near '}'",
+			["time"] = "2019/10/12 16:37:01",
+			["locals"] = "",
+			["stack"] = "",
+			["session"] = 342,
+			["counter"] = 1,
+		}, -- [56]
+		{
+			["message"] = "WTF\\Account\\776785#2\\SavedVariables\\Details-140.nil.lua:641: unexpected symbol near '['",
+			["time"] = "2019/10/12 16:37:01",
+			["locals"] = "",
+			["stack"] = "",
+			["session"] = 342,
+			["counter"] = 1,
+		}, -- [57]
+		{
+			["message"] = "WTF\\Account\\776785#2\\SavedVariables\\EavesDrop-1.0.0.lua:86: unexpected symbol near '<eof>'",
+			["time"] = "2019/10/12 16:37:01",
+			["locals"] = "",
+			["stack"] = "",
+			["session"] = 342,
+			["counter"] = 1,
+		}, -- [58]
+		{
+			["message"] = "WTF\\Account\\776785#2\\SavedVariables\\gmMoney-820-2019062801.lua:94: '}' expected (to close '{' at line 53) near '<eof>'",
+			["time"] = "2019/10/12 16:37:01",
+			["locals"] = "",
+			["stack"] = "",
+			["session"] = 342,
+			["counter"] = 1,
+		}, -- [59]
+		{
+			["message"] = "WTF\\Account\\776785#2\\SavedVariables\\MonkeyQuest-2.9.39.lua:1133: '}' expected (to close '{' at line 1012) near '<eof>'",
+			["time"] = "2019/10/12 16:37:01",
+			["locals"] = "",
+			["stack"] = "",
+			["session"] = 342,
+			["counter"] = 1,
+		}, -- [60]
+		{
+			["message"] = "WTF\\Account\\776785#2\\SavedVariables\\NeatPlates-1.13.2.12-Classic.lua:11003: '}' expected (to close '{' at line 5019) near '<eof>'",
+			["time"] = "2019/10/12 16:37:01",
+			["locals"] = "",
+			["stack"] = "",
+			["session"] = 342,
+			["counter"] = 1,
+		}, -- [61]
+		{
+			["message"] = "WTF\\Account\\776785#2\\SavedVariables\\NeatPlatesHub.lua:451: unexpected symbol near '<eof>'",
+			["time"] = "2019/10/12 16:37:01",
+			["locals"] = "",
+			["stack"] = "",
+			["session"] = 342,
+			["counter"] = 1,
+		}, -- [62]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\xVerminz-54000.lua:129: attempt to index global 'ChocolateBar2' (a nil value)",
+			["time"] = "2019/10/12 16:37:06",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = 145\n(*temporary) = <userdata>\n(*temporary) = \"LEFT\"\n(*temporary) = 5\n(*temporary) = 0\n(*temporary) = \"attempt to index global 'ChocolateBar2' (a nil value)\"\nfont = \"Interface\\AddOns\\xVerminz\\media\\fontAtari.ttf\"\n",
+			["stack"] = "Interface\\AddOns\\xVerminz\\xVerminz-54000.lua:129: in function <Interface\\AddOns\\xVerminz\\xVerminz.lua:31>",
+			["session"] = 342,
+			["counter"] = 1,
+		}, -- [63]
+		{
+			["message"] = "WTF\\Account\\776785#2\\SavedVariables\\TellMeWhen_Options.lua:1622: unexpected symbol near '}'",
+			["time"] = "2019/10/12 16:37:06",
+			["locals"] = "(*temporary) = <no value>\n",
+			["stack"] = "[C]: in function `resume'\nInterface\\AddOns\\TellMeWhen\\TellMeWhen-8.6.9.lua:2777: in function <Interface\\AddOns\\TellMeWhen\\TellMeWhen.lua:2738>",
+			["session"] = 342,
+			["counter"] = 3,
+		}, -- [64]
 	},
 }
