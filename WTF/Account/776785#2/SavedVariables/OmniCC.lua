@@ -56,21 +56,17 @@ OmniCC4Config = {
 					["scale"] = 1.20000004768372,
 				},
 			},
-			["fontFace"] = "Fonts\\ARIALN.TTF",
-		},
-		["Ignore"] = {
-			["enabled"] = false,
-			["styles"] = {
-				["soon"] = {
-					["a"] = 1,
-					["r"] = 1,
-					["scale"] = 1.5,
-					["g"] = 0.1,
-					["b"] = 0.1,
-				},
-				["minutes"] = {
-					["a"] = 1,
-					["r"] = 1,
+			["mmSSDuration"] = 0,
+			["minSize"] = 0.5,
+			["spiralOpacity"] = 1.00999997742474,
+			["minDuration"] = 2,
+			["xOff"] = 0,
+			["tenthsDuration"] = 0,
+			["fontOutline"] = "OUTLINE",
+			["anchor"] = "CENTER",
+			["minEffectDuration"] = 30,
+			["scaleText"] = true,
+			["yOff"] = 0,
 					["scale"] = 1,
 					["g"] = 1,
 					["b"] = 1,
@@ -113,18 +109,10 @@ OmniCC4Config = {
 			["minEffectDuration"] = 30,
 			["yOff"] = 0,
 			["minDuration"] = 3,
-		},
-	},
-	["version"] = "8.1.1",
-	["engine"] = "AniUpdater",
-	["groups"] = {
-		{
-			["id"] = "Ignore",
-			["rules"] = {
-				"LossOfControl", -- [1]
-				"TotemFrame", -- [2]
-			},
-			["enabled"] = true,
-		}, -- [1]
-	},
-}
+			["yOff"] = 0,
+			["effect"] = "pulse",
+			["scaleText"] = true,
+			["minEffectDuration"] = 30,
+			["anchor"] = "CENTER",
+			["spiralOpacity"] = 1,
+			["minDuration"] = 3,

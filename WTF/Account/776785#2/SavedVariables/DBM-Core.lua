@@ -100,27 +100,17 @@ DBM_AllSavedOptions = {
 			1, -- [2]
 			0, -- [3]
 		},
-		["ChatFrame"] = "DEFAULT_CHAT_FRAME",
-		["DontShowPTText"] = false,
-		["SWarnClassColor"] = true,
-		["HideTooltips"] = false,
-		["SpecialWarningFontSize2"] = 36,
-		["DontShowSpecialWarningText"] = false,
-		["RangeFrameSound2"] = "none",
-		["ShowLHFrame"] = true,
-		["DontShowReminders"] = false,
-		["DontShowCTCount"] = false,
-		["SetCurrentMapOnPull"] = true,
-		["SpecialWarningFlashAlph4"] = 0.4,
-		["AlwaysShowHealthFrame"] = false,
-		["SpecialWarningFlashCol4"] = {
-			1, -- [1]
-			0, -- [2]
+		["SpecialWarningFlashCol5"] = {
+			0.2, -- [1]
+			1, -- [2]
 			1, -- [3]
 		},
-		["ChallengeBest"] = "Realm",
-		["PTCountThreshold2"] = 5,
-		["FixCLEUOnCombatStart"] = false,
+		["DontShowPTText"] = false,
+		["DontShowSpecialWarningText"] = false,
+		["SpecialWarningFlashRepeat1"] = false,
+		["SpecialWarningFontSize2"] = 36,
+		["DisableCinematics"] = false,
+		["AdvancedAutologBosses"] = false,
 		["SpecialWarningFlashDura5"] = 1,
 		["EventSoundDungeonBGM"] = "None",
 		["ShowLoadMessage"] = true,
@@ -206,14 +196,11 @@ DBM_AllSavedOptions = {
 		["WarningFontSize"] = 20,
 		["EventSoundVictory2"] = "None",
 		["SpecialWarningFlashDura2"] = 0.4,
-		["LastRevision"] = 8086,
-		["ShowEngageMessage"] = true,
-		["SettingsMessageShown"] = true,
-		["RangeFrameFrames"] = "both",
-		["SWarnNameInNote"] = true,
-		["HealthFrameGrowUp"] = false,
-		["AutoRespond"] = true,
-		["DontSetIcons"] = false,
+		["WarningY"] = 260,
+		["CustomSounds"] = 0,
+		["ShowAdvSWSound"] = true,
+		["SpecialWarningFlashRepeat3"] = true,
+		["ShortTimerText"] = true,
 		["BigBrotherAnnounceToRaid"] = false,
 		["UseRetailShamanColor"] = false,
 		["CountdownVoice"] = "Corsica",
@@ -221,15 +208,11 @@ DBM_AllSavedOptions = {
 		["CountdownVoice3"] = "Smooth",
 		["SpecialWarningFlashRepeat2"] = false,
 		["DontShowUserTimers"] = false,
-		["SpecialWarningFlashRepeat5"] = true,
-		["DisableStatusWhisper"] = false,
-		["EventDungMusicMythicFilter"] = true,
-		["SpecialWarningFlashRepeat4"] = false,
-		["HideBossEmoteFrame"] = false,
-		["DontPlayCountdowns"] = false,
-		["ShowBigBrotherOnCombatStart"] = false,
-		["SpecialWarningIcon"] = true,
 		["SpecialWarningFontColor"] = {
+			0, -- [1]
+			0, -- [2]
+			1, -- [3]
+		},
 			0, -- [1]
 			0, -- [2]
 			1, -- [3]

@@ -5,6 +5,96 @@ EavesDropStatsDB = {
 	},
 	["profiles"] = {
 		["Greenwise - Golemagg"] = {
+			{
+				["heal"] = {
+					["Healing Potion"] = {
+						[-2] = {
+							["time"] = "|cffffffff10/11/19 05:28:09|r\n|Hunit:Player-4465-012659A9:Greenwise|hGreenwise's|h |Hspell:0:0:SPELL_HEAL|h|cffffffffHealing Potion|r|h heals |Hunit:Player-4465-012659A9:Greenwise|hGreenwise|h for |cffffffff78|r.",
+							["amount"] = 78,
+						},
+						[2] = {
+						},
+					},
+				},
+				["hit"] = {
+					["Auto Shot"] = {
+						[-2] = {
+							["time"] = "|cffffffff10/11/19 05:40:57|r\n|Hunit:Player-4465-012659A9:Greenwise|hGreenwise's|h ranged shot hit |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-1-190-3207-0000209F69:Hexed Troll|hHexed Troll|h for |cffffffff22|r |cffffffffPhysical|r.",
+							["amount"] = 22,
+						},
+						[2] = {
+							["time"] = "|cffffffff10/11/19 05:01:07|r\n|Hunit:Player-4465-012659A9:Greenwise|hGreenwise's|h ranged shot hit |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-1-190-3102-0000209236:Felstalker|hFelstalker|h for |cffffffff28|r |cffffffffPhysical|r.(Critical)",
+							["amount"] = 28,
+						},
+					},
+					["Raptor Strike"] = {
+						[-2] = {
+							["time"] = "|cffffffff10/11/19 05:08:55|r\n|Hunit:Player-4465-012659A9:Greenwise|hGreenwise's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffRaptor Strike|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-1-190-3098-0000209758:Mottled Boar|hMottled Boar|h for |cffffffff10|r |cffffffffPhysical|r.(7 Overkill)",
+							["amount"] = 17,
+						},
+						[2] = {
+							["time"] = "|cffffffff10/11/19 05:02:03|r\n|Hunit:Player-4465-012659A9:Greenwise|hGreenwise's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffRaptor Strike|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-1-190-3102-00002079FE:Felstalker|hFelstalker|h for |cffffffff31|r |cffffffffPhysical|r.(Critical)",
+							["amount"] = 31,
+						},
+						["icon"] = 132223,
+					},
+					["Serpent Sting"] = {
+						[-2] = {
+							["time"] = "|cffffffff10/08/19 10:36:42|r\n|Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4471-1-276-3098-00001CF074:Mottled Boar|hMottled Boar|h suffers |cffffffff4|r |cffffffffNature|r damage from |Hunit:Player-4465-012659A9:Greenwise|hGreenwise's|h |Hspell:0:0:SPELL_PERIODIC_DAMAGE|h|cffffffffSerpent Sting|r|h.",
+							["amount"] = 4,
+						},
+						[2] = {
+						},
+						["icon"] = 132204,
+					},
+					["Melee Attack"] = {
+						[-2] = {
+							["time"] = "|cffffffff10/11/19 05:00:45|r\n|Hunit:Player-4465-012659A9:Greenwise|hGreenwise's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-1-190-3101-00002098F4:Vile Familiar|hVile Familiar|h for |cffffffff5|r |cffffffffPhysical|r.(7 Overkill)",
+							["amount"] = 12,
+						},
+						[2] = {
+							["time"] = "|cffffffff10/11/19 05:03:03|r\n|Hunit:Player-4465-012659A9:Greenwise|hGreenwise's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-1-190-3101-00002091D3:Vile Familiar|hVile Familiar|h for |cffffffff23|r |cffffffffPhysical|r.(Critical)",
+							["amount"] = 23,
+						},
+					},
+				},
+			}, -- [1]
+			[-1] = {
+				["hit"] = {
+					["Shadow"] = {
+						[-2] = {
+							["time"] = "|cffffffff10/11/19 05:05:30|r\n|Hunit:Player-4465-012659A9:Greenwise|hGreenwise|h suffers |cffff13136|r |cffff1313Shadow|r damage from |Hicon:128:source|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-1-190-3183-0000209A1D:Yarrog Baneshadow|hYarrog Baneshadow's|h |Hspell:0:0:SPELL_PERIODIC_DAMAGE|h|cffff1313Corruption|r|h.",
+							["amount"] = 6,
+						},
+						[2] = {
+						},
+					},
+					["Physical"] = {
+						[-2] = {
+							["time"] = "|cffffffff10/11/19 05:33:10|r\n|Hunit:Creature-0-4468-1-190-3206-0000A09D3B:Voodoo Troll|hVoodoo Troll's|h melee swing hits |Hunit:Player-4465-012659A9:Greenwise|hGreenwise|h for |cffff131313|r |cffff1313Physical|r.",
+							["amount"] = 13,
+						},
+						[2] = {
+						},
+					},
+					["Fire"] = {
+						[-2] = {
+							["time"] = "|cffffffff10/11/19 05:35:42|r\n|Hunit:Creature-0-4468-1-190-3207-000020A110:Hexed Troll|hHexed Troll's|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Immolate|r|h hits |Hunit:Player-4465-012659A9:Greenwise|hGreenwise|h for |cffff13138|r |cffff1313Fire|r.",
+							["amount"] = 8,
+						},
+						[2] = {
+						},
+					},
+					["Nature"] = {
+						[-2] = {
+							["time"] = "|cffffffff10/11/19 05:31:54|r\n|Hunit:Creature-0-4468-1-190-3206-0000209D3B:Voodoo Troll|hVoodoo Troll's|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Lightning Shield|r|h hits |Hunit:Player-4465-012659A9:Greenwise|hGreenwise|h for |cffff131310|r |cffff1313Nature|r.",
+							["amount"] = 10,
+						},
+						[2] = {
+						},
+					},
+				},
+			},
 		},
 	},
 }

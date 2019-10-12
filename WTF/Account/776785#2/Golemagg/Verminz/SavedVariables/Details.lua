@@ -674,7 +674,7 @@ _detalhes_database = {
 				["combat_counter"] = 3318,
 				["playing_solo"] = true,
 				["totals"] = {
-					2838.903625, -- [1]
+					2838.882726, -- [1]
 					373, -- [2]
 					{
 						22, -- [1]
@@ -11895,7 +11895,7 @@ _detalhes_database = {
 	},
 	["last_instance_time"] = 1569743963,
 	["active_profile"] = "Default",
-	["last_day"] = "10",
+	["last_day"] = "11",
 	["benchmark_db"] = {
 		["frame"] = {
 		},

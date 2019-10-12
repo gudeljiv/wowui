@@ -44,13 +44,13 @@ MonkeyQuestConfig = {
 			["Brutal Armor - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Orgrimmar - true"] = {
+			["Thousand Needles - true"] = {
 				["m_bChecked"] = false,
 			},
 			["Pacify the Centaur - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Thousand Needles - true"] = {
+			["Orgrimmar - true"] = {
 				["m_bChecked"] = false,
 			},
 			["Regthar Deathgate - false"] = {
@@ -639,13 +639,8 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = true,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 681.899780273438,
-		["m_bHideCompletedQuests"] = true,
-		["m_iFrameLeft"] = 1670.73352050781,
-		["m_bColourDoneOrFailed"] = true,
-		["m_bLocked"] = true,
-		["m_bNoBorder"] = true,
-		["m_bNoHeaders"] = false,
+		["m_iFrameBottom"] = 741.066589355469,
+		["m_bHideTitleButtons"] = false,
 		["m_iAlpha"] = 0.5,
 		["m_strOverviewColour"] = "|cff7f7f7f",
 		["m_bShowNumQuests"] = true,
@@ -983,22 +978,18 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Greenwise"] = {
 		["m_aQuestList"] = {
-			["Galgar's Cactus Apple Surprise - false"] = {
+			["Minshina's Skull - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Your Place In The World - false"] = {
+			["Thwarting Kolkar Aggression - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Lazy Peons - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Hunter - true"] = {
+			["Encroachment - false"] = {
 				["m_bChecked"] = true,
-			},
-			["Valley of Trials - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Vile Familiars - false"] = {
+			["A Solvent Spirit - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Burning Blade Medallion - false"] = {
@@ -1010,35 +1001,19 @@ MonkeyQuestConfig = {
 			["Cutting Teeth - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Etched Parchment - false"] = {
+			["Practical Prey - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Sting of the Scorpid - false"] = {
+			["Zalazane - false"] = {
 				["m_bChecked"] = true,
 			},
-		},
-	},
-	["Genesis|Nacova"] = {
-		["m_iFont"] = 0,
-		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
-		["m_strSpecialObjectiveColour"] = "|cFFFFFF00",
-		["m_iFrameAlpha"] = 1,
-		["m_bColourTitle"] = true,
-		["m_strAnchor"] = "ANCHOR_TOPLEFT",
-		["m_bAllowRightClick"] = true,
-		["m_strZoneHighlightColour"] = "|cff494961",
-		["m_strFinishObjectiveColour"] = "|cFF33DDFF",
-		["m_bShowHidden"] = true,
-		["m_bItemsOnLeft"] = true,
-		["m_bShowNoobTips"] = true,
-		["m_bHideCompletedObjectives"] = false,
-		["m_bShowZoneHighlight"] = true,
-		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
-		["m_aQuestList"] = {
-		},
-		["m_bDisplay"] = false,
-		["m_bMinimized"] = false,
-		["m_strInitialObjectiveColour"] = "|cFFD82619",
+			["Durotar - true"] = {
+				["m_bChecked"] = true,
+			},
+			["A Peon's Burden - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Report to Orgnil - false"] = {
 		["m_iHighlightAlpha"] = 1,
 		["m_bShowQuestLevel"] = true,
 		["m_bShowDailyNumQuests"] = false,
@@ -1096,38 +1071,22 @@ MonkeyQuestConfig = {
 			},
 		},
 	},
-	["Stonespine|Korupcija"] = {
-		["m_aQuestList"] = {
-			["At War With The Scarlet Crusade - false"] = {
+			["Minshina's Skull - false"] = {
 				["m_bChecked"] = true,
 			},
-			["A New Plague - false"] = {
+			["Thwarting Kolkar Aggression - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Wanted: Maggot Eye - false"] = {
+			["Durotar - true"] = {
 				["m_bChecked"] = true,
 			},
-			["The Haunted Mills - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Chill of Death - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Mills Overrun - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Tirisfal Glades - true"] = {
-				["m_bChecked"] = true,
+			["Practical Prey - false"] = {
 			},
 			["Deaths in the Family - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Graverobbers - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Doom Weed - false"] = {
-				["m_bChecked"] = true,
-			},
+			["Zalazane - false"] = {
 		},
 	},
 	["Golemagg|Ozrencic"] = {

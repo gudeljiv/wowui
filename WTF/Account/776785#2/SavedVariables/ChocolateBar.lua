@@ -26,6 +26,17 @@ ChocolateBarDB = {
 	["addonVersion"] = "@project-version@",
 	["profiles"] = {
 		["Default"] = {
+			["locked"] = false,
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["r"] = 0,
+					["g"] = 0,
+					["b"] = 0,
+				},
+				["textureName"] = "None",
+			},
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -46,29 +57,12 @@ ChocolateBarDB = {
 					["width"] = 147,
 				},
 			},
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["b"] = 0,
-					["g"] = 0,
-					["r"] = 0,
-				},
-				["textureName"] = "None",
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
 			},
-			["forceColor"] = false,
-			["locked"] = false,
-			["moveFrames"] = false,
-			["objSettings"] = {
-				["Skada"] = {
-					["enabled"] = false,
-					["barName"] = "ChocolateBar1",
-				},
+			["moduleOptions"] = {
 				["MoreChocolate"] = {
-					["enabled"] = false,
-					["showText"] = false,
 					["barName"] = "ChocolateBar1",
-					["align"] = "right",
 				},
 				["PitBull4"] = {
 					["enabled"] = false,
@@ -241,32 +235,15 @@ ChocolateBarDB = {
 			["textOffset"] = 2,
 			["height"] = 20,
 			["gap"] = 5,
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["textColor"] = {
-				["a"] = 1,
-				["r"] = 1,
-				["g"] = 1,
-				["b"] = 1,
-			},
-		},
-	},
-}
-CB_PlayedTime = {
-	["Greenwise-"] = {
-		["total"] = 585,
-	},
-	["Whatevs-"] = {
-		["total"] = 213,
-	},
-	["Elohssa-"] = {
-		["total"] = 3552,
-	},
-	["Verminz-"] = {
-		["total"] = 299943,
-	},
-	["Paydo-"] = {
+			["gap"] = 5,
+			["forceColor"] = false,
+			["fixedStrata"] = true,
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["fontName"] = "Friz Quadrata TT",
+			["textOffset"] = 2,
+			["height"] = 20,
+			["desaturated"] = false,
+			["moveFrames"] = false,
 		["total"] = 18945,
 	},
 	["Ozrencic-"] = {
@@ -287,4 +264,4 @@ CB_PlayedTime = {
 	["Korupcija-"] = {
 		["total"] = 21359,
 	},
-}
+		["total"] = 300081,

@@ -29,17 +29,14 @@ GMMONEY = {
 			["GOLD"] = 100008560,
 			["CLASS"] = "PRIEST",
 		},
-		["Pitchwise"] = {
-			["GOLD"] = 10000,
-			["CLASS"] = "SHAMAN",
-		},
-		["Korupcija"] = {
-			["GOLD"] = 19010642,
-			["CLASS"] = "PALADIN",
-		},
-		["Blooq"] = {
-			["GOLD"] = 10031,
+		["Dotwise"] = {
+			["GOLD"] = 94,
 			["CLASS"] = "WARLOCK",
+		},
+		["Greenwise"] = {
+			["GOLD"] = 334,
+			["CLASS"] = "HUNTER",
+		},
 		},
 	},
 	["Dreadmist"] = {

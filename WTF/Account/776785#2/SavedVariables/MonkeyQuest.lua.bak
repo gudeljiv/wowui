@@ -557,33 +557,30 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Pitchwise"] = {
 		["m_aQuestList"] = {
-		},
-	},
-	["Global"] = {
-		["m_bItemsEnabled"] = true,
-		["m_iFont"] = 0,
-		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
-		["m_strSpecialObjectiveColour"] = "|cFFFFFF00",
-		["m_iFrameAlpha"] = 1,
-		["m_bColourTitle"] = true,
-		["m_strAnchor"] = "ANCHOR_TOPLEFT",
-		["m_bAllowRightClick"] = true,
-		["m_strZoneHighlightColour"] = "|cff494961",
-		["m_strFinishObjectiveColour"] = "|cFF33DDFF",
-		["m_bShowHidden"] = true,
-		["m_bItemsOnLeft"] = true,
-		["m_bShowNoobTips"] = true,
-		["m_bHideCompletedObjectives"] = false,
-		["m_bShowZoneHighlight"] = true,
-		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
-		["m_bAlwaysHeaders"] = false,
-		["m_bDisplay"] = true,
-		["m_bMinimized"] = false,
-		["m_strInitialObjectiveColour"] = "|cFFD82619",
-		["m_iHighlightAlpha"] = 0,
-		["m_bShowQuestLevel"] = true,
-		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 681.899780273438,
+			["Zalazane - false"] = {
+				["m_bChecked"] = true,
+			},
+			["A Peon's Burden - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Minshina's Skull - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Practical Prey - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Report to Orgnil - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Durotar - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Thwarting Kolkar Aggression - false"] = {
+				["m_bChecked"] = true,
+			},
+			["A Solvent Spirit - false"] = {
+				["m_bChecked"] = true,
+			},
 		["m_bHideTitleButtons"] = false,
 		["m_iFrameLeft"] = 1670.73352050781,
 		["m_bColourDoneOrFailed"] = true,
@@ -610,13 +607,8 @@ MonkeyQuestConfig = {
 		["m_bShowQuestTextTooltip"] = false,
 		["m_bHideTitle"] = false,
 		["m_bHideCompletedQuests"] = true,
-		["m_bGrowUp"] = false,
-	},
-	["Genesis|Pitchwise"] = {
-		["m_iFont"] = 0,
-		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
-		["m_strSpecialObjectiveColour"] = "|cFFFFFF00",
-		["m_iFrameAlpha"] = 1,
+		["m_iFrameBottom"] = 695.233215332031,
+		["m_bHideCompletedQuests"] = true,
 		["m_bColourTitle"] = true,
 		["m_strAnchor"] = "ANCHOR_TOPLEFT",
 		["m_bAllowRightClick"] = true,
@@ -927,22 +919,22 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Greenwise"] = {
 		["m_aQuestList"] = {
-			["Galgar's Cactus Apple Surprise - false"] = {
+			["Report to Orgnil - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Your Place In The World - false"] = {
+			["Minshina's Skull - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Etched Parchment - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Hunter - true"] = {
+			["A Solvent Spirit - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Valley of Trials - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Vile Familiars - false"] = {
+			["Valley of Trials - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Sting of the Scorpid - false"] = {
@@ -965,56 +957,34 @@ MonkeyQuestConfig = {
 	["Genesis|Malinac"] = {
 		["m_iFont"] = 0,
 		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
-		["m_strSpecialObjectiveColour"] = "|cFFFFFF00",
-		["m_iFrameAlpha"] = 1,
-		["m_bColourTitle"] = true,
-		["m_strAnchor"] = "ANCHOR_TOPLEFT",
-		["m_bAllowRightClick"] = true,
+			["Thwarting Kolkar Aggression - false"] = {
 		["m_strZoneHighlightColour"] = "|cff494961",
 		["m_strFinishObjectiveColour"] = "|cFF33DDFF",
 		["m_bShowHidden"] = true,
 		["m_bItemsOnLeft"] = true,
 		["m_bShowNoobTips"] = true,
-		["m_bHideCompletedObjectives"] = false,
-		["m_bShowZoneHighlight"] = true,
-		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
-		["m_aQuestList"] = {
-		},
+			["Zalazane - false"] = {
 		["m_bDisplay"] = false,
 		["m_bMinimized"] = false,
 		["m_strInitialObjectiveColour"] = "|cFFD82619",
 		["m_iHighlightAlpha"] = 1,
 		["m_bShowQuestLevel"] = true,
-		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 848.399881525947,
-		["m_bAlwaysHeaders"] = false,
-		["m_bLocked"] = false,
-		["m_bNoBorder"] = true,
-		["m_bNoHeaders"] = false,
-		["m_iAlpha"] = 0.5,
-		["m_strOverviewColour"] = "|cFF7F7F7F",
-		["m_bHideCompletedQuests"] = false,
-		["m_bCrashBorder"] = false,
-		["m_bShowTooltipObjectives"] = true,
-		["m_iFontHeight"] = 12,
-		["m_strQuestTitleColour"] = "|cFFFFFFFF",
-		["m_bWorkComplete"] = true,
-		["m_iFrameWidth"] = 300,
-		["m_strMidObjectiveColour"] = "|cFFFFFF00",
-		["m_bHideTitleButtons"] = false,
-		["m_strHeaderOpenColour"] = "|cFFBFBFFF",
-		["m_iFrameTop"] = 887.399962154502,
-		["m_bObjectives"] = true,
+			["Practical Prey - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Thazz'ril's Pick - false"] = {
+				["m_bChecked"] = true,
+			},
+			["A Peon's Burden - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Durotar - true"] = {
 		["m_bHideHeader"] = false,
 		["m_bShowNumQuests"] = true,
 		["m_iQuestPadding"] = 1,
 		["m_bColourSubObjectivesByProgress"] = true,
 		["m_bHideTitle"] = false,
-		["m_iFrameLeft"] = 1425.90026473384,
-		["m_bGrowUp"] = false,
-	},
-	["Golemagg|Vermin"] = {
-		["m_aQuestList"] = {
+			["Report to Sen'jin Village - false"] = {
 			["Zalazane - false"] = {
 				["m_bChecked"] = true,
 			},

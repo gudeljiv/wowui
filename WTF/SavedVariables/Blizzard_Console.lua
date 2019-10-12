@@ -2392,7 +2392,7 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [597]
 		{
-			"Time played:", -- [1]
+			"NetClient::HandleConnect()\n", -- [1]
 			0, -- [2]
 		}, -- [598]
 		{
@@ -2404,7 +2404,7 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [600]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"[GlueLogin] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [601]
 		{
@@ -3588,7 +3588,7 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [896]
 		{
-			"Time played:", -- [1]
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [897]
 		{
@@ -3800,7 +3800,7 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [949]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Skill 95 increased from 15 to 16", -- [1]
 			0, -- [2]
 		}, -- [950]
 		{
@@ -3964,7 +3964,7 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [990]
 		{
-			"Proficiency in item class 4 set to 0x000000004f", -- [1]
+			"Level: 0d 0h 25m 17s", -- [1]
 			0, -- [2]
 		}, -- [991]
 		{
@@ -3992,7 +3992,7 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [997]
 		{
-			"Time played:", -- [1]
+			"Skill 163 increased from 30 to 35", -- [1]
 			0, -- [2]
 		}, -- [998]
 		{

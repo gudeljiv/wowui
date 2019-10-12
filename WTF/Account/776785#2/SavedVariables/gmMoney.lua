@@ -83,17 +83,11 @@ GMMONEY = {
 			["GOLD"] = 10000,
 			["CLASS"] = "SHAMAN",
 		},
-		["Korupcija"] = {
-			["GOLD"] = 19010642,
-			["CLASS"] = "PALADIN",
-		},
-		["Blooq"] = {
-			["GOLD"] = 10031,
+		["Dotwise"] = {
+			["GOLD"] = 94,
 			["CLASS"] = "WARLOCK",
 		},
-	},
-}
-GMMONEYSET = {
-	["TEXTMODE"] = true,
-	["FULLDISP"] = true,
+		["Greenwise"] = {
+			["GOLD"] = 1195,
+			["CLASS"] = "HUNTER",
 }
