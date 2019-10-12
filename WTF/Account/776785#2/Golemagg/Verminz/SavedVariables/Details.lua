@@ -52,7 +52,6 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
 										["b_dmg"] = 0,
 										["c_min"] = 0,
 										["m_crit"] = 0,
@@ -84,7 +83,6 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["id"] = 0,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
 										["b_dmg"] = 0,
 										["c_min"] = 0,
 										["m_crit"] = 0,
@@ -265,10 +263,13 @@ _detalhes_database = {
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.006952,
 							["damage_from"] = {
+								["Agurk"] = true,
 								["Verminz"] = true,
+								["Naeras"] = true,
 							},
 							["targets"] = {
 								["Verminz"] = 1052,
+								["Naeras"] = 414,
 							},
 							["pets"] = {
 							},
@@ -306,7 +307,6 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
 										["b_dmg"] = 0,
 										["c_min"] = 0,
 										["m_crit"] = 0,
@@ -326,13 +326,14 @@ _detalhes_database = {
 										["n_max"] = 88,
 										["targets"] = {
 											["Verminz"] = 1052,
+											["Naeras"] = 414,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 930,
-										["n_min"] = 51,
+										["n_dmg"] = 1344,
+										["n_min"] = 44,
 										["g_dmg"] = 0,
-										["counter"] = 15,
-										["total"] = 1052,
+										["counter"] = 23,
+										["total"] = 1466,
 										["c_max"] = 122,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
@@ -379,8 +380,7 @@ _detalhes_database = {
 							["totalover"] = 0.007154,
 							["total_without_pet"] = 373.007154,
 							["total"] = 373.007154,
-							["targets_absorbs"] = {
-							},
+							["spec"] = 72,
 							["heal_enemy"] = {
 							},
 							["colocacao"] = 1,
@@ -674,11 +674,11 @@ _detalhes_database = {
 				["combat_counter"] = 3318,
 				["playing_solo"] = true,
 				["totals"] = {
-					2838.882726, -- [1]
+					2838.891423, -- [1]
 					373, -- [2]
 					{
 						22, -- [1]
-						[0] = 0,
+						[0] = -0.00892999999996391,
 						["alternatepower"] = 0,
 						[6] = 0,
 						[3] = -0.0122569999999982,
@@ -2226,8 +2226,6 @@ _detalhes_database = {
 							["fight_component"] = true,
 							["nome"] = "Xteam",
 							["enemy"] = true,
-							["pets"] = {
-							},
 							["spell_cast"] = {
 								["Sinister Strike"] = 3,
 								["Eviscerate"] = 1,
@@ -2895,8 +2893,6 @@ _detalhes_database = {
 							["fight_component"] = true,
 							["nome"] = "Xteam",
 							["enemy"] = true,
-							["pets"] = {
-							},
 							["spell_cast"] = {
 								["Sinister Strike"] = 3,
 								["Eviscerate"] = 1,
@@ -5043,7 +5039,8 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["buff_uptime"] = 57,
+							["pets"] = {
+							},
 							["classe"] = "WARRIOR",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
@@ -8859,8 +8856,7 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["pets"] = {
-							},
+							["buff_uptime"] = 23,
 							["classe"] = "WARRIOR",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
@@ -10108,8 +10104,7 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["pets"] = {
-							},
+							["buff_uptime"] = 36,
 							["classe"] = "WARRIOR",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
@@ -11900,7 +11895,7 @@ _detalhes_database = {
 	},
 	["last_instance_time"] = 1569743963,
 	["active_profile"] = "Default",
-	["last_day"] = "11",
+	["last_day"] = "12",
 	["benchmark_db"] = {
 		["frame"] = {
 		},
@@ -12230,424 +12225,173 @@ _detalhes_database = {
 				4, -- [3]
 				2, -- [4]
 				2, -- [5]
-				267, -- [6]
+				72, -- [6]
 				2, -- [7]
-			}, -- [27]
+			}, -- [28]
 			{
-				136206, -- [1]
-				0, -- [2]
+				136224, -- [1]
+				5, -- [2]
 				4, -- [3]
 				3, -- [4]
 				2, -- [5]
-				267, -- [6]
-				5, -- [7]
-			}, -- [28]
-			{
-				136154, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				2, -- [5]
-				267, -- [6]
+				72, -- [6]
 				5, -- [7]
 			}, -- [29]
 			{
-				136184, -- [1]
+				132340, -- [1]
+				0, -- [2]
+				5, -- [3]
+				1, -- [4]
+				2, -- [5]
+				72, -- [6]
+				5, -- [7]
+			}, -- [30]
+			{
+				136146, -- [1]
 				0, -- [2]
 				5, -- [3]
 				2, -- [4]
 				2, -- [5]
-				267, -- [6]
+				72, -- [6]
 				1, -- [7]
-			}, -- [30]
+			}, -- [31]
 			{
-				132386, -- [1]
+				132307, -- [1]
 				0, -- [2]
 				5, -- [3]
 				4, -- [4]
 				2, -- [5]
-				267, -- [6]
+				72, -- [6]
 				2, -- [7]
-			}, -- [31]
+			}, -- [32]
 			{
-				136203, -- [1]
+				136009, -- [1]
+				0, -- [2]
+				6, -- [3]
+				1, -- [4]
+				2, -- [5]
+				72, -- [6]
+				2, -- [7]
+			}, -- [33]
+			{
+				132152, -- [1]
 				0, -- [2]
 				6, -- [3]
 				3, -- [4]
 				2, -- [5]
-				267, -- [6]
+				72, -- [6]
 				5, -- [7]
-			}, -- [32]
-			{
-				136160, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				2, -- [5]
-				267, -- [6]
-				1, -- [7]
-			}, -- [33]
-			{
-				134131, -- [1]
-				0, -- [2]
-				7, -- [3]
-				3, -- [4]
-				2, -- [5]
-				267, -- [6]
-				2, -- [7]
 			}, -- [34]
 			{
-				136197, -- [1]
-				5, -- [2]
+				136012, -- [1]
+				0, -- [2]
+				7, -- [3]
+				2, -- [4]
+				2, -- [5]
+				72, -- [6]
+				1, -- [7]
+			}, -- [35]
+			{
+				134952, -- [1]
+				0, -- [2]
 				1, -- [3]
 				2, -- [4]
 				3, -- [5]
-				266, -- [6]
-				5, -- [7]
-			}, -- [35]
-			{
-				135831, -- [1]
-				0, -- [2]
-				1, -- [3]
-				3, -- [4]
-				3, -- [5]
-				266, -- [6]
+				73, -- [6]
 				5, -- [7]
 			}, -- [36]
 			{
-				136146, -- [1]
-				5, -- [2]
-				2, -- [3]
-				2, -- [4]
+				136056, -- [1]
+				0, -- [2]
+				1, -- [3]
+				3, -- [4]
 				3, -- [5]
-				266, -- [6]
+				73, -- [6]
 				5, -- [7]
 			}, -- [37]
 			{
-				135805, -- [1]
+				132277, -- [1]
+				0, -- [2]
+				2, -- [3]
+				1, -- [4]
+				3, -- [5]
+				73, -- [6]
+				2, -- [7]
+			}, -- [38]
+			{
+				135892, -- [1]
 				0, -- [2]
 				2, -- [3]
 				3, -- [4]
 				3, -- [5]
-				266, -- [6]
+				73, -- [6]
 				5, -- [7]
-			}, -- [38]
-			{
-				135809, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				3, -- [5]
-				266, -- [6]
-				2, -- [7]
 			}, -- [39]
 			{
-				136136, -- [1]
+				135995, -- [1]
 				0, -- [2]
-				3, -- [3]
-				2, -- [4]
+				2, -- [3]
+				4, -- [4]
 				3, -- [5]
-				266, -- [6]
-				2, -- [7]
+				73, -- [6]
+				5, -- [7]
 			}, -- [40]
 			{
-				135813, -- [1]
-				5, -- [2]
+				135871, -- [1]
+				0, -- [2]
 				3, -- [3]
-				3, -- [4]
+				1, -- [4]
 				3, -- [5]
-				266, -- [6]
-				5, -- [7]
+				73, -- [6]
+				1, -- [7]
 			}, -- [41]
 			{
-				136191, -- [1]
-				1, -- [2]
+				132110, -- [1]
+				0, -- [2]
+				3, -- [3]
+				2, -- [4]
+				3, -- [5]
+				73, -- [6]
+				3, -- [7]
+			}, -- [42]
+			{
+				132353, -- [1]
+				0, -- [2]
+				3, -- [3]
+				3, -- [4]
+				3, -- [5]
+				73, -- [6]
+				3, -- [7]
+			}, -- [43]
+			{
+				132347, -- [1]
+				0, -- [2]
 				3, -- [3]
 				4, -- [4]
 				3, -- [5]
-				266, -- [6]
-				1, -- [7]
-			}, -- [42]
-			{
-				135819, -- [1]
-				2, -- [2]
-				4, -- [3]
-				1, -- [4]
-				3, -- [5]
-				266, -- [6]
-				2, -- [7]
-			}, -- [43]
-			{
-				136133, -- [1]
-				2, -- [2]
-				4, -- [3]
-				2, -- [4]
-				3, -- [5]
-				266, -- [6]
-				2, -- [7]
+				73, -- [6]
+				5, -- [7]
 			}, -- [44]
 			{
-				135827, -- [1]
+				132363, -- [1]
 				0, -- [2]
 				4, -- [3]
-				4, -- [4]
+				1, -- [4]
 				3, -- [5]
-				266, -- [6]
-				5, -- [7]
+				73, -- [6]
+				3, -- [7]
 			}, -- [45]
 			{
-				135830, -- [1]
+				132343, -- [1]
 				0, -- [2]
-				5, -- [3]
-				1, -- [4]
+				4, -- [3]
+				2, -- [4]
 				3, -- [5]
-				266, -- [6]
-				2, -- [7]
+				73, -- [6]
+				3, -- [7]
 			}, -- [46]
 			{
-				135817, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				3, -- [5]
-				266, -- [6]
-				5, -- [7]
-			}, -- [47]
-			{
-				136207, -- [1]
-				1, -- [2]
-				5, -- [3]
-				3, -- [4]
-				3, -- [5]
-				266, -- [6]
-				1, -- [7]
-			}, -- [48]
-			{
-				135826, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				3, -- [5]
-				266, -- [6]
-				5, -- [7]
-			}, -- [49]
-			{
-				135807, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				3, -- [5]
-				266, -- [6]
-				1, -- [7]
-			}, -- [50]
-		},
-	},
-	["combat_id"] = 622,
-	["savedStyles"] = {
-		{
-			["hide_in_combat_type"] = 1,
-			["desaturated_menu2"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0, -- [4]
-			},
-			["menu_anchor"] = {
-				-60, -- [1]
-				0, -- [2]
-				["side"] = 1,
-			},
-			["menu2_icons"] = {
-				true, -- [1]
-				true, -- [2]
-				true, -- [3]
-			},
-			["bg_r"] = 0,
-			["hide_out_of_combat"] = false,
-			["name"] = "final",
-			["following"] = {
-				["enabled"] = false,
-				["bar_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
-				["text_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
-			},
-			["color_buttons"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["switch_healer"] = false,
-			["bars_sort_direction"] = 1,
-			["backdrop_texture"] = "None",
-			["switch_healer_in_combat"] = false,
-			["skin"] = "Minimalistic",
-			["menu2_icons_size"] = 1.20000004768372,
-			["tooltip"] = {
-				["n_abilities"] = 3,
-				["n_enemies"] = 3,
-			},
-			["stretch_button_side"] = 2,
-			["menu_icons_size"] = 1,
-			["switch_all_roles_in_combat"] = {
-				2, -- [1]
-				1, -- [2]
-				8, -- [3]
-			},
-			["switch_tank_in_combat"] = false,
-			["version"] = 3,
-			["attribute_text"] = {
-				["enabled"] = false,
-				["shadow"] = false,
-				["side"] = 1,
-				["text_size"] = 11,
-				["anchor"] = {
-					-17, -- [1]
-					10, -- [2]
-				},
-				["text_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
-				["text_face"] = "Arial Narrow",
-			},
-			["closebutton_config"] = {
-				["pushed_texture"] = "Interface\\Buttons\\UI-Panel-MinimizeButton-Down",
-				["highlight_texture"] = "Interface\\Buttons\\UI-Panel-MinimizeButton-Highlight",
-				["anchor"] = {
-					0, -- [1]
-					0, -- [2]
-				},
-				["normal_texture"] = "Interface\\Buttons\\UI-Panel-MinimizeButton-Up",
-				["alpha"] = 0.8,
-				["size"] = {
-					19, -- [1]
-					19, -- [2]
-				},
-			},
-			["menu_alpha"] = {
-				["enabled"] = false,
-				["onenter"] = 1,
-				["iconstoo"] = true,
-				["ignorebars"] = false,
-				["onleave"] = 1,
-			},
-			["statusbar_info"] = {
-				["alpha"] = 0,
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
-			},
-			["desaturated_menu"] = false,
-			["show_sidebars"] = false,
-			["strata"] = "LOW",
-			["bars_grow_direction"] = 1,
-			["resetbutton_config"] = {
-				["normal_vertexcolor"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
-				["highlight_texcoord"] = {
-					0, -- [1]
-					1, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
-				["highlight_texture"] = "Interface\\Addons\\Details\\Images\\reset_button2",
-				["normal_texcoord"] = {
-					0, -- [1]
-					1, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
-				["highlight_vertexcolor"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
-				["normal_texture"] = "Interface\\Addons\\Details\\Images\\reset_button2",
-				["anchor"] = {
-					2, -- [1]
-					0, -- [2]
-				},
-				["size"] = {
-					13, -- [1]
-					13, -- [2]
-				},
-			},
-			["switch_tank"] = false,
-			["hide_in_combat_alpha"] = 0,
-			["switch_all_roles_after_wipe"] = false,
-			["menu_icons"] = {
-				true, -- [1]
-				true, -- [2]
-				true, -- [3]
-				true, -- [4]
-			},
-			["switch_damager"] = false,
-			["auto_hide_menu"] = {
-				["left"] = true,
-				["right"] = true,
-			},
-			["menu_anchor_down"] = {
-				-22, -- [1]
-				0, -- [2]
-			},
-			["window_scale"] = 1,
-			["hide_icon"] = true,
-			["instancebutton_config"] = {
-				["textcolor"] = {
-					0.8, -- [1]
-					0.6, -- [2]
-					0, -- [3]
-					0.8, -- [4]
-				},
-				["highlight_texture"] = "Interface\\Buttons\\UI-Panel-MinimizeButton-Highlight",
-				["size"] = {
-					20, -- [1]
-					16, -- [2]
-				},
-				["anchor"] = {
-					5, -- [1]
-					0, -- [2]
-				},
-				["textsize"] = 15,
-				["textfont"] = "Friz Quadrata TT",
-				["textshadow"] = false,
-			},
-			["grab_on_top"] = false,
-			["switch_damager_in_combat"] = false,
-			["menu2_anchor"] = {
-				32, -- [1]
-				3, -- [2]
-			},
-			["micro_displays_side"] = 2,
-			["auto_current"] = true,
-			["toolbar_side"] = 2,
-			["bg_g"] = 0,
-			["row_show_animation"] = {
-				["anim"] = "Fade",
-				["options"] = {
-				},
-			},
-			["hide_in_combat"] = false,
-			["menu2_anchor_down"] = {
-				32, -- [1]
+				136080, -- [1]
 				0, -- [2]
 				4, -- [3]
 				3, -- [4]

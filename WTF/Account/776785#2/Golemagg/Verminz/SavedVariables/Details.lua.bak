@@ -7,8 +7,8 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 622,
 					["tipo"] = 2,
+					["combatId"] = 622,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -38,7 +38,6 @@ _detalhes_database = {
 							["last_event"] = 1570565065,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -248,6 +247,7 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
 							["friendlyfire_total"] = 0,
@@ -262,12 +262,14 @@ _detalhes_database = {
 						{
 							["flag_original"] = 68168,
 							["totalabsorbed"] = 0.006952,
-							["monster"] = true,
 							["damage_from"] = {
+								["Agurk"] = true,
 								["Verminz"] = true,
+								["Naeras"] = true,
 							},
 							["targets"] = {
 								["Verminz"] = 1052,
+								["Naeras"] = 414,
 							},
 							["pets"] = {
 							},
@@ -284,7 +286,6 @@ _detalhes_database = {
 							["damage_taken"] = 2729.006952,
 							["timeMachine"] = 1,
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									{
 										["c_amt"] = 0,
@@ -325,13 +326,14 @@ _detalhes_database = {
 										["n_max"] = 88,
 										["targets"] = {
 											["Verminz"] = 1052,
+											["Naeras"] = 414,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 930,
-										["n_min"] = 51,
+										["n_dmg"] = 1344,
+										["n_min"] = 44,
 										["g_dmg"] = 0,
-										["counter"] = 15,
-										["total"] = 1052,
+										["counter"] = 23,
+										["total"] = 1466,
 										["c_max"] = 122,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
@@ -347,6 +349,7 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["tipo"] = 1,
 							["last_dps"] = 0,
@@ -362,8 +365,8 @@ _detalhes_database = {
 					},
 				}, -- [1]
 				{
-					["combatId"] = 622,
 					["tipo"] = 3,
+					["combatId"] = 622,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -383,7 +386,7 @@ _detalhes_database = {
 							["on_hold"] = false,
 							["serial"] = "Player-4465-010B6E50",
 							["totalabsorb"] = 0.007154,
-							["last_hps"] = 12.1007998053482,
+							["last_hps"] = 10.5682718232093,
 							["targets"] = {
 								["Verminz"] = 373,
 							},
@@ -394,7 +397,6 @@ _detalhes_database = {
 							["last_event"] = 1570565061,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Healing Potion"] = {
 										["c_amt"] = 0,
@@ -451,6 +453,7 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
 							["healing_from"] = {
@@ -468,8 +471,8 @@ _detalhes_database = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 622,
 					["tipo"] = 7,
+					["combatId"] = 622,
 					["_ActorTable"] = {
 						{
 							["received"] = 22.003112,
@@ -486,7 +489,6 @@ _detalhes_database = {
 							["total"] = 22.003112,
 							["nome"] = "Verminz",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									["Bloodrage"] = {
 										["total"] = 20,
@@ -507,6 +509,7 @@ _detalhes_database = {
 										["counter"] = 2,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["flag_original"] = 1297,
@@ -520,13 +523,12 @@ _detalhes_database = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 622,
 					["tipo"] = 9,
+					["combatId"] = 622,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Rend"] = {
 										["appliedamt"] = 1,
@@ -540,11 +542,11 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 43,
 							["classe"] = "WARRIOR",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Enrage"] = {
 										["appliedamt"] = 1,
@@ -626,6 +628,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 15,
@@ -655,8 +658,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 622,
 					["tipo"] = 2,
+					["combatId"] = 622,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -664,12 +667,10 @@ _detalhes_database = {
 					["Verminz"] = true,
 				},
 				["tempo_start"] = 1570565031,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["TotalElapsedCombatTime"] = 423940.182,
-				["enemy"] = "Stranglethorn Raptor",
 				["cleu_events"] = {
 					["n"] = 1,
 				},
@@ -759,35 +760,6 @@ _detalhes_database = {
 				},
 				["spells_cast_timeline"] = {
 				},
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Verminz"] = 373.007154,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Verminz"] = 1373.004237,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 423940.182,
-				["instance_type"] = "none",
-				["combat_id"] = 622,
-				["combat_counter"] = 3318,
 				["player_last_events"] = {
 					["Verminz"] = {
 						{
@@ -803,6 +775,16 @@ _detalhes_database = {
 							-1, -- [10]
 						}, -- [1]
 						{
+							true, -- [1]
+							"Falling", -- [2]
+							31, -- [3]
+							1570565188.999, -- [4]
+							1219, -- [5]
+							"Environment (Falling)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
 						}, -- [2]
 						{
 						}, -- [3]
@@ -864,7 +846,7 @@ _detalhes_database = {
 						}, -- [31]
 						{
 						}, -- [32]
-						["n"] = 2,
+						["n"] = 3,
 					},
 				},
 				["CombatSkillCache"] = {
@@ -1329,8 +1311,7 @@ _detalhes_database = {
 							["totalover"] = 0.004989,
 							["total_without_pet"] = 368.004989,
 							["total"] = 368.004989,
-							["targets_absorbs"] = {
-							},
+							["spec"] = 72,
 							["heal_enemy"] = {
 							},
 							["colocacao"] = 1,
@@ -5058,7 +5039,8 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["buff_uptime"] = 57,
+							["pets"] = {
+							},
 							["classe"] = "WARRIOR",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
@@ -7139,44 +7121,6 @@ _detalhes_database = {
 				["aura_timeline"] = {
 				},
 				["__call"] = {
-				},
-				["data_inicio"] = "19:03:46",
-				["end_time"] = 413118.657,
-				["combat_id"] = 613,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Affray Challenger"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["totals_grupo"] = {
-					899, -- [1]
-					0, -- [2]
-					{
-						23, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Affray Challenger",
-				["start_time"] = 413099.225,
-				["TimeData"] = {
 				},
 				["data_inicio"] = "19:03:46",
 				["end_time"] = 413118.657,
@@ -9668,13 +9612,6 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
-				["enemy"] = "Galak Scout",
-				["TotalElapsedCombatTime"] = 407780.248,
-				["CombatEndedAt"] = 407780.248,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -11958,7 +11895,7 @@ _detalhes_database = {
 	},
 	["last_instance_time"] = 1569743963,
 	["active_profile"] = "Default",
-	["last_day"] = "08",
+	["last_day"] = "09",
 	["benchmark_db"] = {
 		["frame"] = {
 		},
@@ -11993,16 +11930,6 @@ _detalhes_database = {
 			["show_icon"] = 5,
 			["hide_on_combat"] = false,
 			["author"] = "Details! Team",
-		},
-		["DETAILS_PLUGIN_YANP"] = {
-			["enabled"] = true,
-			["rightclick_closed"] = false,
-			["auto_open"] = true,
-			["hide_on_combat"] = true,
-			["author"] = "Details! Team",
-			["deaths_table"] = {
-			},
-			["shown_time"] = 30,
 		},
 		["DETAILS_PLUGIN_YANP"] = {
 			["enabled"] = true,
@@ -12401,6 +12328,7 @@ _detalhes_database = {
 						["Wrathtail Priestess"] = 0,
 						["Hillsbrad Apprentice Blacksmith"] = 0,
 						["Chief Murgut"] = 0,
+						["Stranglethorn Raptor"] = 0,
 						["Wild Buck"] = 0,
 						["Syndicate Watchman"] = 0,
 						["Lost Barrens Kodo"] = 0,
@@ -12502,8 +12430,8 @@ _detalhes_database = {
 									["Mountain Yeti"] = 0,
 									["Syndicate Shadow Mage"] = 0,
 									["Foulweald Den Watcher"] = 0,
-									["Mountain Yeti"] = 0,
-									["Bleakheart Satyr"] = 0,
+									["Hillsbrad Miner"] = 0,
+									["Stranglethorn Raptor"] = 0,
 									["Dun Garok Rifleman"] = 0,
 									["Rotting Slime"] = 0,
 									["Hillsbrad Apprentice Blacksmith"] = 0,
@@ -12575,6 +12503,7 @@ _detalhes_database = {
 									["Bleakheart Shadowstalker"] = 0,
 									["Galak Wrangler"] = 0,
 									["Big Will"] = 0,
+									["Hillsbrad Farmhand"] = 0,
 									["Mountain Yeti"] = 0,
 									["Foulweald Den Watcher"] = 0,
 									["Dun Garok Rifleman"] = 0,
@@ -12837,6 +12766,7 @@ _detalhes_database = {
 									["Farmer Kalaba"] = 0,
 									["Bleakheart Shadowstalker"] = 0,
 									["Hillsbrad Apprentice Blacksmith"] = 0,
+									["Stranglethorn Raptor"] = 0,
 									["Wild Buck"] = 0,
 									["Syndicate Watchman"] = 0,
 									["Lost Barrens Kodo"] = 0,
@@ -13075,66 +13005,6 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-							["Revenge"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Syndicate Shadow Mage"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Revenge",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["Thunder Clap"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Wrathtail Myrmidon"] = 0,
-									["Hillsbrad Farmer"] = 0,
-									["Hillsbrad Peasant"] = 0,
-									["Wrathtail Priestess"] = 0,
-									["Wrathtail Sea Witch"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Thunder Clap",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
 								["a_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
@@ -13175,6 +13045,7 @@ _detalhes_database = {
 									["Searing Totem II <Foulweald Totemic>"] = 0,
 									["Hillsbrad Apprentice Blacksmith"] = 0,
 									["Chief Murgut"] = 0,
+									["Stranglethorn Raptor"] = 0,
 									["Wild Buck"] = 0,
 									["Syndicate Watchman"] = 0,
 									["Lost Barrens Kodo"] = 0,
@@ -13264,7 +13135,7 @@ _detalhes_database = {
 									["Foulweald Den Watcher"] = 0,
 									["Hillsbrad Apprentice Blacksmith"] = 0,
 									["Hillsbrad Footman"] = 0,
-									["Hillsbrad Apprentice Blacksmith"] = 0,
+									["Stranglethorn Raptor"] = 0,
 									["Hillsbrad Peasant"] = 0,
 									["Foulweald Shaman"] = 0,
 									["Hillsbrad Farmer"] = 0,
@@ -13342,6 +13213,7 @@ _detalhes_database = {
 									["Bleakheart Shadowstalker"] = 0,
 									["Galak Wrangler"] = 0,
 									["Voidwalker Minion <Bleakheart Hellcaller>"] = 0,
+									["Stranglethorn Raptor"] = 0,
 									["Big Will"] = 0,
 									["Magistrate Burnside"] = 0,
 									["Dun Garok Priest"] = 0,
@@ -26479,23 +26351,15 @@ _detalhes_database = {
 					["serial"] = "Player-4465-012AD017",
 					["dps_started"] = false,
 				}, -- [105]
-			},
-		}, -- [1]
-		{
-			["tipo"] = 3,
-			["_ActorTable"] = {
 				{
-					["flag_original"] = 1297,
-					["totalabsorb"] = 0.006451,
-					["last_hps"] = 0,
-					["targets_overheal"] = {
-						["Verminz"] = 0,
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.006823,
+					["damage_from"] = {
 					},
 					["targets"] = {
 						["Verminz"] = 0,
 						["Naeras"] = 0,
 					},
-					["end_time"] = 1569770229,
 					["pets"] = {
 					},
 					["fight_component"] = true,
@@ -26513,18 +26377,20 @@ _detalhes_database = {
 					["nome"] = "Stranglethorn Raptor",
 					["spells"] = {
 						["_ActorTable"] = {
-							["Healing Potion"] = {
+							{
 								["c_amt"] = 0,
-								["totalabsorb"] = 0,
-								["targets_overheal"] = {
-								},
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
 									["Verminz"] = 0,
 								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
 								["n_min"] = 0,
+								["g_dmg"] = 0,
 								["counter"] = 0,
-								["overheal"] = 0,
 								["total"] = 0,
 								["c_max"] = 0,
 								["id"] = 1,
@@ -26723,10 +26589,10 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["iniciar_hps"] = false,
+					["totalover_without_pet"] = 0.008101,
 					["healing_from"] = {
 					},
-					["classe"] = "UNGROUPPLAYER",
+					["heal_enemy_amt"] = 0,
 					["totalover"] = 0.008101,
 					["total_without_pet"] = 0.008101,
 					["start_time"] = 1570033280,
@@ -26788,7 +26654,7 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["classe"] = "WARRIOR",
+					["heal_enemy_amt"] = 0,
 					["totalover"] = 0.001981,
 					["total_without_pet"] = 0.001981,
 					["total"] = 0.001981,
@@ -26945,7 +26811,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["totalover_without_pet"] = 0.007292,
+					["iniciar_hps"] = false,
 					["healing_from"] = {
 					},
 					["heal_enemy_amt"] = 0,
@@ -27130,8 +26996,6 @@ _detalhes_database = {
 					["nome"] = "Elune",
 					["targets_absorbs"] = {
 					},
-					["nome"] = "Elune",
-					["spec"] = 256,
 					["grupo"] = true,
 					["serial"] = "0x0000-0000-0000",
 					["heal_enemy"] = {
@@ -27174,8 +27038,6 @@ _detalhes_database = {
 					["nome"] = "Huffer",
 					["targets_absorbs"] = {
 					},
-					["nome"] = "Huffer",
-					["spec"] = 254,
 					["grupo"] = true,
 					["serial"] = "0x0000-0000-0000",
 					["heal_enemy"] = {
@@ -27218,8 +27080,6 @@ _detalhes_database = {
 					["nome"] = "M'uru",
 					["targets_absorbs"] = {
 					},
-					["nome"] = "M'uru",
-					["spec"] = 265,
 					["grupo"] = true,
 					["serial"] = "0x0000-0000-0000",
 					["heal_enemy"] = {
@@ -27262,8 +27122,6 @@ _detalhes_database = {
 					["nome"] = "Ragnaros",
 					["targets_absorbs"] = {
 					},
-					["nome"] = "Ragnaros",
-					["spec"] = 63,
 					["grupo"] = true,
 					["serial"] = "0x0000-0000-0000",
 					["heal_enemy"] = {
@@ -27306,8 +27164,6 @@ _detalhes_database = {
 					["nome"] = "A Drunk Dawrf",
 					["targets_absorbs"] = {
 					},
-					["nome"] = "A Drunk Dawrf",
-					["spec"] = 268,
 					["grupo"] = true,
 					["serial"] = "0x0000-0000-0000",
 					["heal_enemy"] = {
@@ -27350,8 +27206,6 @@ _detalhes_database = {
 					["nome"] = "A PvP Player",
 					["targets_absorbs"] = {
 					},
-					["nome"] = "A PvP Player",
-					["spec"] = 260,
 					["grupo"] = true,
 					["serial"] = "0x0000-0000-0000",
 					["heal_enemy"] = {
@@ -27394,8 +27248,6 @@ _detalhes_database = {
 					["nome"] = "The Lich King",
 					["targets_absorbs"] = {
 					},
-					["nome"] = "The Lich King",
-					["spec"] = 251,
 					["grupo"] = true,
 					["serial"] = "0x0000-0000-0000",
 					["heal_enemy"] = {
@@ -27438,8 +27290,6 @@ _detalhes_database = {
 					["nome"] = "Verminz Snow",
 					["targets_absorbs"] = {
 					},
-					["nome"] = "Verminz Snow",
-					["spec"] = 72,
 					["grupo"] = true,
 					["serial"] = "0x0000-0000-0000",
 					["heal_enemy"] = {
@@ -28392,7 +28242,8 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["buff_uptime"] = 0,
+					["pets"] = {
+					},
 					["classe"] = "MAGE",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {

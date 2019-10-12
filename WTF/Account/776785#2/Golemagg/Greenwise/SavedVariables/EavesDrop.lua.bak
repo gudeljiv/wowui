@@ -9,34 +9,24 @@ EavesDropStatsDB = {
 				["hit"] = {
 					["Auto Shot"] = {
 						[-2] = {
-							["time"] = "|cffffffff10/11/19 05:59:38|r\n|Hunit:Player-4465-012659A9:Greenwise|hGreenwise's|h ranged shot hit |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-1-190-3121-000020A3EA:Durotar Tiger|hDurotar Tiger|h for |cffffffff23|r |cffffffffPhysical|r.",
-							["amount"] = 23,
+							["time"] = "|cffffffff10/08/19 10:36:42|r\n|Hunit:Player-4465-012659A9:Greenwise|hGreenwise's|h ranged shot hit |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4471-1-276-3098-00001CF074:Mottled Boar|hMottled Boar|h for |cffffffff14|r |cffffffffPhysical|r.",
+							["amount"] = 14,
 						},
 						[2] = {
-							["time"] = "|cffffffff10/11/19 06:06:06|r\n|Hunit:Player-4465-012659A9:Greenwise|hGreenwise's|h ranged shot hit |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-1-190-3121-000020908A:Durotar Tiger|hDurotar Tiger|h for |cffffffff43|r |cffffffffPhysical|r.(Critical)",
-							["amount"] = 43,
+							["time"] = "|cffffffff10/08/19 10:30:54|r\n|Hunit:Player-4465-012659A9:Greenwise|hGreenwise's|h ranged shot hit |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4471-1-276-3101-00009CF1E7:Vile Familiar|hVile Familiar|h for |cffffffff25|r |cffffffffPhysical|r.(Critical)",
+							["amount"] = 25,
 						},
 					},
 					["Raptor Strike"] = {
 						[-2] = {
-							["time"] = "|cffffffff10/11/19 05:08:55|r\n|Hunit:Player-4465-012659A9:Greenwise|hGreenwise's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffRaptor Strike|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-1-190-3098-0000209758:Mottled Boar|hMottled Boar|h for |cffffffff10|r |cffffffffPhysical|r.(7 Overkill)",
-							["amount"] = 17,
+							["time"] = "|cffffffff10/08/19 10:36:50|r\n|Hunit:Player-4465-012659A9:Greenwise|hGreenwise's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffRaptor Strike|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4471-1-276-3098-00001CEFB3:Mottled Boar|hMottled Boar|h for |cffffffff15|r |cffffffffPhysical|r.(1 Overkill)",
+							["amount"] = 16,
 						},
 						[2] = {
-							["time"] = "|cffffffff10/11/19 05:02:03|r\n|Hunit:Player-4465-012659A9:Greenwise|hGreenwise's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffRaptor Strike|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-1-190-3102-00002079FE:Felstalker|hFelstalker|h for |cffffffff31|r |cffffffffPhysical|r.(Critical)",
-							["amount"] = 31,
-						},
-						["icon"] = 132223,
-					},
-					["Melee Attack"] = {
-						[-2] = {
-							["time"] = "|cffffffff10/11/19 05:00:45|r\n|Hunit:Player-4465-012659A9:Greenwise|hGreenwise's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-1-190-3101-00002098F4:Vile Familiar|hVile Familiar|h for |cffffffff5|r |cffffffffPhysical|r.(7 Overkill)",
-							["amount"] = 12,
-						},
-						[2] = {
-							["time"] = "|cffffffff10/11/19 05:03:03|r\n|Hunit:Player-4465-012659A9:Greenwise|hGreenwise's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-1-190-3101-00002091D3:Vile Familiar|hVile Familiar|h for |cffffffff23|r |cffffffffPhysical|r.(Critical)",
+							["time"] = "|cffffffff10/08/19 10:31:31|r\n|Hunit:Player-4465-012659A9:Greenwise|hGreenwise's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffRaptor Strike|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4471-1-276-3101-00021CF20E:Vile Familiar|hVile Familiar|h for |cffffffff13|r |cffffffffPhysical|r.(10 Overkill) (Critical)",
 							["amount"] = 23,
 						},
+						["icon"] = 132223,
 					},
 					["Serpent Sting"] = {
 						[-2] = {
@@ -47,14 +37,14 @@ EavesDropStatsDB = {
 						},
 						["icon"] = 132204,
 					},
-				},
-				["heal"] = {
-					["Healing Potion"] = {
+					["Melee Attack"] = {
 						[-2] = {
-							["time"] = "|cffffffff10/11/19 05:28:09|r\n|Hunit:Player-4465-012659A9:Greenwise|hGreenwise's|h |Hspell:0:0:SPELL_HEAL|h|cffffffffHealing Potion|r|h heals |Hunit:Player-4465-012659A9:Greenwise|hGreenwise|h for |cffffffff78|r.",
-							["amount"] = 78,
+							["time"] = "|cffffffff10/08/19 10:40:26|r\n|Hunit:Player-4465-012659A9:Greenwise|hGreenwise's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4471-1-276-3101-00001CF36E:Vile Familiar|hVile Familiar|h for |cffffffff11|r |cffffffffPhysical|r.",
+							["amount"] = 11,
 						},
 						[2] = {
+							["time"] = "|cffffffff10/08/19 10:40:29|r\n|Hunit:Player-4465-012659A9:Greenwise|hGreenwise's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4471-1-276-3101-00001CF36E:Vile Familiar|hVile Familiar|h for |cffffffff18|r |cffffffffPhysical|r.(Critical)",
+							["amount"] = 18,
 						},
 					},
 				},
@@ -63,32 +53,24 @@ EavesDropStatsDB = {
 				["hit"] = {
 					["Physical"] = {
 						[-2] = {
-							["time"] = "|cffffffff10/11/19 05:45:37|r\n|Hicon:128:source|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-1-190-3122-0000A0A314:Bloodtalon Taillasher|hBloodtalon Taillasher's|h melee swing hits |Hunit:Player-4465-012659A9:Greenwise|hGreenwise|h for |cffff131328|r |cffff1313Physical|r.",
-							["amount"] = 28,
-						},
-						[2] = {
-						},
-					},
-					["Shadow"] = {
-						[-2] = {
-							["time"] = "|cffffffff10/11/19 05:05:30|r\n|Hunit:Player-4465-012659A9:Greenwise|hGreenwise|h suffers |cffff13136|r |cffff1313Shadow|r damage from |Hicon:128:source|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-1-190-3183-0000209A1D:Yarrog Baneshadow|hYarrog Baneshadow's|h |Hspell:0:0:SPELL_PERIODIC_DAMAGE|h|cffff1313Corruption|r|h.",
-							["amount"] = 6,
+							["time"] = "|cffffffff10/08/19 10:27:22|r\n|Hicon:128:source|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4471-1-276-3101-00011CF083:Vile Familiar|hVile Familiar's|h melee swing hits |Hunit:Player-4465-012659A9:Greenwise|hGreenwise|h for |cffff13134|r |cffff1313Physical|r.",
+							["amount"] = 4,
 						},
 						[2] = {
 						},
 					},
 					["Fire"] = {
 						[-2] = {
-							["time"] = "|cffffffff10/11/19 05:35:42|r\n|Hunit:Creature-0-4468-1-190-3207-000020A110:Hexed Troll|hHexed Troll's|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Immolate|r|h hits |Hunit:Player-4465-012659A9:Greenwise|hGreenwise|h for |cffff13138|r |cffff1313Fire|r.",
-							["amount"] = 8,
+							["time"] = "|cffffffff10/08/19 10:30:40|r\n|Hicon:128:source|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4471-1-276-3101-00001CF193:Vile Familiar|hVile Familiar's|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Fireball|r|h hits |Hunit:Player-4465-012659A9:Greenwise|hGreenwise|h for |cffff13135|r |cffff1313Fire|r.",
+							["amount"] = 5,
 						},
 						[2] = {
 						},
 					},
 					["Nature"] = {
 						[-2] = {
-							["time"] = "|cffffffff10/11/19 05:31:54|r\n|Hunit:Creature-0-4468-1-190-3206-0000209D3B:Voodoo Troll|hVoodoo Troll's|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Lightning Shield|r|h hits |Hunit:Player-4465-012659A9:Greenwise|hGreenwise|h for |cffff131310|r |cffff1313Nature|r.",
-							["amount"] = 10,
+							["time"] = "|cffffffff10/08/19 10:21:10|r\n|Hunit:Player-4465-012659A9:Greenwise|hGreenwise|h suffers |cffff13131|r |cffff1313Nature|r damage from |Hicon:128:source|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4471-1-276-3124-00001CEF74:Scorpid Worker|hScorpid Worker's|h |Hspell:0:0:SPELL_PERIODIC_DAMAGE|h|cffff1313Weak Poison|r|h.",
+							["amount"] = 1,
 						},
 						[2] = {
 						},

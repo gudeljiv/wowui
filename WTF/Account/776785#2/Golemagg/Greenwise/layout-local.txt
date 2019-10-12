@@ -3,9 +3,9 @@ Frame: EavesDropFrame
 FrameLevel: 1
 Anchor: RIGHT
 X: -29
-Y: 198
+Y: 167
 W: 154
-H: 260
+H: 322
 Frame: PlayerFrame
 FrameLevel: 1
 Anchor: CENTER
@@ -36,9 +36,9 @@ W: 384
 H: 260
 Frame: InterfaceOptionsFrame
 FrameLevel: 1
-Anchor: TOPRIGHT
-X: -270
-Y: -57
+Anchor: TOPLEFT
+X: 97
+Y: -8
 W: 858
 H: 660
 Frame: AddonList
