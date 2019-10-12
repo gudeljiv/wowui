@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 358,
 	["lastSanitation"] = 3,
-	["session"] = 345,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:62: '<eof>' expected near 'end'",
@@ -244,8 +244,8 @@ BugGrabberDB = {
 		}, -- [30]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\xVerminz\\PlayerTargetSetMark.xml",
-			["time"] = "2019/10/04 21:57:35",
 			["session"] = 269,
+			["time"] = "2019/10/04 21:57:35",
 			["counter"] = 9,
 		}, -- [31]
 		{
@@ -353,27 +353,19 @@ BugGrabberDB = {
 			["counter"] = 4,
 		}, -- [44]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn '!Colorz' tried to call the protected function 'CompactRaidFrame1:ClearAllPoints()'.",
-			["time"] = "2019/10/06 12:40:06",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `ClearAllPoints'\nInterface\\FrameXML\\FlowContainer.lua:157: in function `FlowContainer_DoLayout'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:69: in function `CompactRaidFrameContainer_OnSizeChanged'\n[string \"*:OnSizeChanged\"]:1: in function <[string \"*:OnSizeChanged\"]:1>\n[C]: in function `?'\nInterface\\FrameXML\\FlowContainer.lua:133: in function `FlowContainer_DoLayout'\nInterface\\FrameXML\\FlowContainer.lua:17: in function `FlowContainer_ResumeUpdates'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:185: in function `CompactRaidFrameContainer_LayoutFrames'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:130: in function `CompactRaidFrameContainer_TryUpdate'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:57: in function `CompactRaidFrameContainer_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
-			["session"] = 308,
-			["counter"] = 2,
-		}, -- [45]
-		{
 			["message"] = "Interface\\AddOns\\xVerminz\\PlayerTargetSetMark.lua:20: attempt to call global 'wsrt_wait' (a nil value)",
 			["time"] = "2019/10/07 23:10:52",
 			["locals"] = "type = 8\nsrt = <function> defined @Interface\\AddOns\\xVerminz\\PlayerTargetSetMark.lua:4\n(*temporary) = nil\n(*temporary) = 5\n(*temporary) = nil\n(*temporary) = \"attempt to call global 'wsrt_wait' (a nil value)\"\n",
 			["stack"] = "Interface\\AddOns\\xVerminz\\PlayerTargetSetMark.lua:20: in main chunk",
 			["session"] = 316,
 			["counter"] = 1,
-		}, -- [46]
+		}, -- [45]
 		{
 			["message"] = "(null)",
-			["session"] = 316,
 			["time"] = "2019/10/04 17:04:44",
+			["session"] = 316,
 			["counter"] = 39,
-		}, -- [47]
+		}, -- [46]
 		{
 			["message"] = "Interface\\AddOns\\xVerminz\\PlayerTargetSetMark.lua:4: attempt to call global 'clear_mark' (a nil value)",
 			["time"] = "2019/10/07 23:18:51",
@@ -381,7 +373,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVerminz\\PlayerTargetSetMark.lua:4: in function <Interface\\AddOns\\xVerminz\\PlayerTargetSetMark.lua:3>\n[C]: in function `CameraOrSelectOrMoveStop'\n[string \"CAMERAORSELECTORMOVE\"]:4: in function <[string \"CAMERAORSELECTORMOVE\"]:1>",
 			["session"] = 320,
 			["counter"] = 2,
-		}, -- [48]
+		}, -- [47]
 		{
 			["message"] = "[string \"TargetFramehealthBarText:Hide()\"]:1: attempt to index global 'TargetFramehealthBarText' (a nil value)",
 			["time"] = "2019/10/08 17:02:16",
@@ -389,7 +381,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"TargetFramehealthBarText:Hide()\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4609: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4270: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4306: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 322,
 			["counter"] = 1,
-		}, -- [49]
+		}, -- [48]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'RealMobHealth' tried to call the protected function 'PartyMemberFrame1:Hide()'.",
 			["time"] = "2019/10/12 17:16:42",
@@ -397,7 +389,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Hide'\nInterface\\FrameXML\\PartyMemberFrame.lua:143: in function `PartyMemberFrame_UpdateMember'\nInterface\\FrameXML\\PartyMemberFrame.lua:337: in function `PartyMemberFrame_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
 			["session"] = 343,
 			["counter"] = 1,
-		}, -- [50]
+		}, -- [49]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn '!Colorz' tried to call the protected function 'CompactRaidFrame2:ClearAllPoints()'.",
 			["time"] = "2019/10/02 12:16:33",
@@ -405,6 +397,30 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `ClearAllPoints'\nInterface\\FrameXML\\FlowContainer.lua:157: in function `FlowContainer_DoLayout'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:69: in function `CompactRaidFrameContainer_OnSizeChanged'\n[string \"*:OnSizeChanged\"]:1: in function <[string \"*:OnSizeChanged\"]:1>\n[C]: in function `?'\nInterface\\FrameXML\\FlowContainer.lua:133: in function `FlowContainer_DoLayout'\nInterface\\FrameXML\\FlowContainer.lua:17: in function `FlowContainer_ResumeUpdates'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:185: in function `CompactRaidFrameContainer_LayoutFrames'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:130: in function `CompactRaidFrameContainer_TryUpdate'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:57: in function `CompactRaidFrameContainer_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
 			["session"] = 343,
 			["counter"] = 4,
+		}, -- [50]
+		{
+			["message"] = "[string \"CharacterAmmoSlotBorder:Hide()\"]:1: attempt to index global 'CharacterAmmoSlotBorder' (a nil value)",
+			["time"] = "2019/10/12 19:56:01",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'CharacterAmmoSlotBorder' (a nil value)\"\n",
+			["stack"] = "[string \"CharacterAmmoSlotBorder:Hide()\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4609: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4270: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2699: in function <Interface\\FrameXML\\ChatFrame.lua:2692>\n[C]: ?\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:338: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 351,
+			["counter"] = 1,
 		}, -- [51]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn '!Colorz' tried to call the protected function 'CompactRaidFrame1:ClearAllPoints()'.",
+			["time"] = "2019/10/06 12:40:06",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `ClearAllPoints'\nInterface\\FrameXML\\FlowContainer.lua:157: in function `FlowContainer_DoLayout'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:69: in function `CompactRaidFrameContainer_OnSizeChanged'\n[string \"*:OnSizeChanged\"]:1: in function <[string \"*:OnSizeChanged\"]:1>\n[C]: in function `?'\nInterface\\FrameXML\\FlowContainer.lua:133: in function `FlowContainer_DoLayout'\nInterface\\FrameXML\\FlowContainer.lua:17: in function `FlowContainer_ResumeUpdates'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:185: in function `CompactRaidFrameContainer_LayoutFrames'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:130: in function `CompactRaidFrameContainer_TryUpdate'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:57: in function `CompactRaidFrameContainer_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
+			["session"] = 352,
+			["counter"] = 3,
+		}, -- [52]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\xVerminz-54000.lua:196: attempt to index global 'PetFramehealthBarText' (a nil value)",
+			["time"] = "2019/10/12 21:14:41",
+			["locals"] = "self = PetFrame {\n 0 = <userdata>\n portrait = PetPortrait {\n }\n manabar = PetFrameManaBar {\n }\n menu = <function> defined @Interface\\FrameXML\\PetFrame.lua:35\n unit = \"pet\"\n feedbackFontHeight = 30\n name = PetName {\n }\n feedbackText = PetHitIndicator {\n }\n attackModeSign = -1\n attackModeCounter = 0\n noTextPrefix = true\n healthbar = PetFrameHealthBar {\n }\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"TOPRIGHT\"\n(*temporary) = PetFrameManaBar {\n 0 = <userdata>\n currValue = 100\n frequentUpdates = true\n textLockable = 1\n unit = \"pet\"\n RightText = PetFrameManaBarTextRight {\n }\n capNumericDisplay = true\n TextString = PetFrameManaBarText {\n }\n cvar = \"statusText\"\n texture = <unnamed> {\n }\n cvarLabel = \"STATUS_TEXT_PET\"\n powerToken = \"FOCUS\"\n disconnected = false\n LeftText = PetFrameManaBarTextLeft {\n }\n powerType = 2\n lockShow = 0\n}\n(*temporary) = \"TOPRIGHT\"\n(*temporary) = 0\n(*temporary) = 0\n(*temporary) = \"attempt to index global 'PetFramehealthBarText' (a nil value)\"\nfont = \"Interface\\AddOns\\xVerminz\\media\\fontAtari.ttf\"\n",
+			["stack"] = "Interface\\AddOns\\xVerminz\\xVerminz-54000.lua:196: in function <Interface\\AddOns\\xVerminz\\xVerminz.lua:188>\n[C]: ?",
+			["session"] = 353,
+			["counter"] = 146,
+		}, -- [53]
 	},
 }

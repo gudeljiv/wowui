@@ -57,8 +57,9 @@ local function CreateOrUpdateMacro(macroName, nomodID, modID)
     local macrotext = nil
     
     if macroName == "Food" then macrotext = string.format("#showtooltip\n/use [mod:alt] item:%d; item:%d", modID, nomodID) end
+    if macroName == "FeedPet" then macrotext = string.format("#showtooltip\n/cast Feed Pet\n/use item:%d", nomodID) end
     if macroName == "Drink" then macrotext = string.format("#showtooltip\n/use item:%d", nomodID) end
-    if macroName == "HealingPotion" then macrotext = string.format("#showtooltip\n/use item:%d", nomodID) end
+    if macroName == "HP" then macrotext = string.format("#showtooltip\n/use item:%d", nomodID) end
 
     local macroID = GetMacroIndexByName(macroName)
     if macroID == 0 then
@@ -114,8 +115,9 @@ local function UpdateMacros()
     -- print("-----------------------")
 
     CreateOrUpdateMacro("Food", best["FOOD"][1], best["BUFF"][1])
+    CreateOrUpdateMacro("FeedPet", best["FOOD"][1], best["BUFF"][1])
     CreateOrUpdateMacro("Drink", best["DRINK"][1])
-    CreateOrUpdateMacro("HealingPotion", best["HEALINGPOTIONS"][1])
+    CreateOrUpdateMacro("HP", best["HEALINGPOTIONS"][1])
 end
 
 local function EventHandler(self, event, ...)

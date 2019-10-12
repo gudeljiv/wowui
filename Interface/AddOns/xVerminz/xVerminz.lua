@@ -192,6 +192,10 @@ f:SetScript("OnEvent", function()
 		PetFrameManaBarText:SetFont(font, 10, 'THINOUTLINE')
 		PetFrameManaBarText:SetPoint("TOPRIGHT", PetFrameManaBar, "TOPRIGHT", 0, 0)
 		PetFrameManaBarText.SetPoint = function() end
+
+		PetFrameHealthBarText:Hide()
+		PetFrameManaBarText:Hide()
+		PetName:Hide()
 	end)
 
 	local point = TargetFrame.SetPoint
@@ -354,4 +358,6 @@ faster:SetScript("OnEvent", FastLoot)
 -------------------------------------------
 -- Set font in Character font for ammo count
 -------------------------------------------
-CharacterAmmoSlotCount:SetFont(font, 12, 'THINOUTLINE')
+CharacterAmmoSlotCount:SetFont("Fonts\\ARIALN.ttf", 10, 'THINOUTLINE')
+CharacterAmmoSlotCount:ClearAllPoints()
+CharacterAmmoSlotCount:SetPoint("TOP", CharacterAmmoSlot, "BOTTOM", 10, -2)

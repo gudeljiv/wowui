@@ -1,16 +1,20 @@
 VER 3 0000000000000008 " " "132089"
-/run SetRaidTarget("player", 8)
-/run SetRaidTarget("player", 0)
+/run CharacterAmmoSlotBorder:Hide()
 END
 VER 3 0000000000000006 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use item:159
+/use item:0
+END
+VER 3 000000000000000A "FeedPet" "Inv_misc_questionmark"
+#showtooltip
+/cast Feed Pet
+/use item:2287
 END
 VER 3 0000000000000005 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [mod:alt] item:0; item:4536
+/use [mod:alt] item:0; item:2287
 END
-VER 3 0000000000000009 "HealingPotion" "Inv_misc_questionmark"
+VER 3 000000000000000B "HP" "Inv_misc_questionmark"
 #showtooltip
 /use item:0
 END
