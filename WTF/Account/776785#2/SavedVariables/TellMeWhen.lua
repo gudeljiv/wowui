@@ -446,6 +446,7 @@ TellMeWhenDB = {
 		},
 		["Vermins - Dreadmist"] = {
 			["Locked"] = true,
+			["NumGroups"] = 2,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TQuFk14Ix42",
@@ -488,6 +489,7 @@ TellMeWhenDB = {
 							["Type"] = "buff",
 							["Sort"] = -1,
 							["Name"] = "Battle Shout",
+							["DurationMinEnabled"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "RAGE_ABS",
@@ -497,7 +499,6 @@ TellMeWhenDB = {
 								["n"] = 1,
 							},
 							["DurationMin"] = 15,
-							["DurationMinEnabled"] = true,
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -609,7 +610,6 @@ TellMeWhenDB = {
 				}, -- [2]
 			},
 			["Version"] = 86907,
-			["NumGroups"] = 2,
 		},
 		["Verminz - Golemagg"] = {
 			["Version"] = 86907,
@@ -4939,8 +4939,14 @@ TellMeWhenDB = {
 				}, -- [3]
 				{
 					["GUID"] = "TMW:group:1Ov1GPZDfFXX",
+					["Point"] = {
+						["y"] = -53.132709187559,
+						["relativeTo"] = "TMW:group:1Qogrdv2HV3Z",
+						["point"] = "BOTTOM",
+						["relativePoint"] = "TOP",
+						["x"] = 0.0370833462401805,
+					},
 					["Name"] = "Main Rotation (Meta)",
-					["Columns"] = 1,
 					["EnabledSpecs"] = {
 						[72] = false,
 						[73] = false,
@@ -5055,13 +5061,7 @@ TellMeWhenDB = {
 							["Enabled"] = true,
 						}, -- [1]
 					},
-					["Point"] = {
-						["y"] = -53.132709187559,
-						["relativeTo"] = "TMW:group:1Qogrdv2HV3Z",
-						["point"] = "BOTTOM",
-						["relativePoint"] = "TOP",
-						["x"] = 0.0370833462401805,
-					},
+					["Columns"] = 1,
 				}, -- [4]
 				{
 					["GUID"] = "TMW:group:1QvCPR5qcfPC",
@@ -5107,6 +5107,7 @@ TellMeWhenDB = {
 							["Enabled"] = true,
 							["ShowTimer"] = true,
 							["Type"] = "cooldown",
+							["ShowTimerText"] = true,
 							["Events"] = {
 								{
 									["Type"] = "Animations",
@@ -5128,7 +5129,6 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
-							["Name"] = "6552",
 							["SettingsPerView"] = {
 								["icon"] = {
 									["Texts"] = {
@@ -5147,7 +5147,7 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
-							["ShowTimerText"] = true,
+							["Name"] = "6552",
 							["States"] = {
 								nil, -- [1]
 								{
@@ -5593,7 +5593,7 @@ TellMeWhenDB = {
 									},
 								},
 							},
-							["BarDisplay_Invert"] = true,
+							["CustomTex"] = "12294",
 							["Conditions"] = {
 								{
 									["BitFlags"] = {
@@ -5603,8 +5603,8 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
+							["BarDisplay_Invert"] = true,
 							["BarDisplay_Reverse"] = true,
-							["CustomTex"] = "12294",
 						}, -- [7]
 						{
 							["Enabled"] = true,
@@ -6049,31 +6049,6 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["Type"] = "conditionicon",
-							["ConditionDur"] = 5,
-							["ConditionDurEnabled"] = true,
-							["FakeHidden"] = true,
-							["OnlyIfCounting"] = true,
-							["ShowTimerText"] = true,
-							["SettingsPerView"] = {
-								["icon"] = {
-									["TextLayout"] = "bar1",
-									["Texts"] = {
-										"", -- [1]
-										"", -- [2]
-									},
-								},
-							},
-							["GUID"] = "TMW:icon:1T1lwuRfZ3C7",
-							["Conditions"] = {
-								{
-									["AndOr"] = "OR",
-									["Type"] = "COUNTER",
-									["Name"] = "menu_open_c",
-									["Level"] = 1,
-								}, -- [1]
-								["n"] = 1,
-							},
-							["CustomTex"] = "Attack",
 							["Events"] = {
 								{
 									["Type"] = "Counter",
@@ -6107,6 +6082,31 @@ TellMeWhenDB = {
 								}, -- [3]
 								["n"] = 3,
 							},
+							["ConditionDurEnabled"] = true,
+							["FakeHidden"] = true,
+							["OnlyIfCounting"] = true,
+							["ConditionDur"] = 5,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "bar1",
+									["Texts"] = {
+										"", -- [1]
+										"", -- [2]
+									},
+								},
+							},
+							["GUID"] = "TMW:icon:1T1lwuRfZ3C7",
+							["Conditions"] = {
+								{
+									["Level"] = 1,
+									["AndOr"] = "OR",
+									["Name"] = "menu_open_c",
+									["Type"] = "COUNTER",
+								}, -- [1]
+								["n"] = 1,
+							},
+							["CustomTex"] = "Attack",
+							["ShowTimerText"] = true,
 						}, -- [2]
 					},
 					["LayoutDirection"] = 4,
