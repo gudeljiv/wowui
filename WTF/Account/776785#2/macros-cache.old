@@ -12,9 +12,9 @@ VER 3 000000000000000A "FeedPet" "Inv_misc_questionmark"
 END
 VER 3 0000000000000005 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [mod:alt] item:0; item:4537
+/use [mod:alt] item:0; item:2287
 END
 VER 3 000000000000000B "HP" "Inv_misc_questionmark"
 #showtooltip
-/use item:858
+/use item:0
 END

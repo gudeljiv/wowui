@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 452,
 	["lastSanitation"] = 3,
-	["session"] = 445,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\nHealth\\core.lua:92: attempt to concatenate global 'max' (a function value)",
@@ -29,14 +29,14 @@ BugGrabberDB = {
 		}, -- [3]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVerminz\\AutoRepair.lua",
-			["session"] = 391,
 			["time"] = "2019/10/13 16:00:25",
+			["session"] = 391,
 			["counter"] = 6,
 		}, -- [4]
 		{
 			["message"] = "(null)",
-			["session"] = 391,
 			["time"] = "2019/10/13 16:00:25",
+			["session"] = 391,
 			["counter"] = 6,
 		}, -- [5]
 		{
@@ -113,9 +113,33 @@ BugGrabberDB = {
 		}, -- [14]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVerminz\\PetHapiness.lua",
-			["time"] = "2019/10/13 17:14:03",
 			["session"] = 430,
+			["time"] = "2019/10/13 17:14:03",
 			["counter"] = 6,
 		}, -- [15]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\AutoBuyAmmo.lua:15: Usage: GetItemInfo(itemID|\"name\"|\"itemlink\")",
+			["time"] = "2019/10/13 22:36:25",
+			["locals"] = "(*temporary) = nil\n",
+			["stack"] = "[C]: in function `GetItemInfo'\nInterface\\AddOns\\xVerminz\\AutoBuyAmmo.lua:15: in function <Interface\\AddOns\\xVerminz\\AutoBuyAmmo.lua:1>",
+			["session"] = 448,
+			["counter"] = 1,
+		}, -- [16]
+		{
+			["message"] = "[string \"print(GetMerchantItemCostItem(1))\"]:1: Usage: GetMerchantItemCostItem(index, itemIndex)",
+			["time"] = "2019/10/13 22:42:32",
+			["locals"] = "(*temporary) = 1\n",
+			["stack"] = "[C]: in function `GetMerchantItemCostItem'\n[string \"print(GetMerchantItemCostItem(1))\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4609: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4270: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4306: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 451,
+			["counter"] = 1,
+		}, -- [17]
+		{
+			["message"] = "[string \"print(GetItemInfo([Rought Arrow]))\"]:1: unexpected symbol near '['",
+			["time"] = "2019/10/13 22:47:31",
+			["locals"] = "(*temporary) = \"print(GetItemInfo([Rought Arrow]))\"\n",
+			["stack"] = "[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4609: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4270: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4306: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 451,
+			["counter"] = 1,
+		}, -- [18]
 	},
 }
