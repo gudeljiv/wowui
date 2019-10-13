@@ -3,7 +3,7 @@ Postal3ClassicDB = {
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
-				"Greenwise|Golemagg|Horde|10|HUNTER", -- [1]
+				"Greenwise|Golemagg|Horde|12|HUNTER", -- [1]
 				"Verminz|Golemagg|Horde|30|WARRIOR", -- [2]
 			},
 		},

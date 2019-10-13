@@ -53,8 +53,8 @@ EavesDropStatsDB = {
 							["amount"] = 30,
 						},
 						[2] = {
-							["time"] = "|cffffffff10/12/19 06:03:54|r\n|Hunit:Player-4465-012659A9:Greenwise|hGreenwise's|h ranged shot hit |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4470-1-409-3113-000021F8FA:Razormane Dustrunner|hRazormane Dustrunner|h for |cffffffff51|r |cffffffffPhysical|r.(Critical)",
-							["amount"] = 51,
+							["time"] = "|cffffffff10/13/19 01:02:56|r\n|Hunit:Player-4465-012659A9:Greenwise|hGreenwise's|h ranged shot hit |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-1-190-3198-0000230440:Burning Blade Apprentice|hBurning Blade Apprentice|h for |cffffffff41|r |cffffffffPhysical|r.(16 Overkill) (Critical)",
+							["amount"] = 57,
 						},
 					},
 					["Drain Life"] = {
@@ -89,14 +89,22 @@ EavesDropStatsDB = {
 			}, -- [1]
 			[-1] = {
 				["hit"] = {
+					["Shadow"] = {
+						[-2] = {
+							["time"] = "|cffffffff10/13/19 01:12:25|r\n|Hunit:Creature-0-4468-1-190-3198-0000230635:Burning Blade Apprentice|hBurning Blade Apprentice's|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Shadow Bolt|r|h hits |Hunit:Player-4465-012659A9:Greenwise|hGreenwise|h for |cffff131343|r |cffff1313Shadow|r.",
+							["amount"] = 43,
+						},
+						[2] = {
+						},
+					},
 					["Physical"] = {
 						[-2] = {
 							["time"] = "|cffffffff10/12/19 05:16:51|r\n|Hunit:Player-4465-012659A9:Greenwise|hGreenwise|h falls and loses |cffffffff50|r health.",
 							["amount"] = 50,
 						},
 						[2] = {
-							["time"] = "|cffffffff10/12/19 06:01:37|r\n|Hicon:128:source|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4470-1-409-3114-000021F897:Razormane Battleguard|hRazormane Battleguard's|h melee swing hits |Hunit:Player-4465-012659A9:Greenwise|hGreenwise|h for |cffff131324|r |cffff1313Physical|r.(Critical)",
-							["amount"] = 24,
+							["time"] = "|cffffffff10/13/19 12:56:02|r\n|Hicon:128:source|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-1-190-8996-000023005D:Voidwalker Minion|hVoidwalker Minion's|h melee swing hits |Hunit:Player-4465-012659A9:Greenwise|hGreenwise|h for |cffff131331|r |cffff1313Physical|r.(Critical)",
+							["amount"] = 31,
 						},
 					},
 					["Fire"] = {

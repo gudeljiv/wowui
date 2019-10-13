@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 358,
+	["session"] = 364,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -407,20 +407,20 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [51]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn '!Colorz' tried to call the protected function 'CompactRaidFrame1:ClearAllPoints()'.",
-			["time"] = "2019/10/06 12:40:06",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `ClearAllPoints'\nInterface\\FrameXML\\FlowContainer.lua:157: in function `FlowContainer_DoLayout'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:69: in function `CompactRaidFrameContainer_OnSizeChanged'\n[string \"*:OnSizeChanged\"]:1: in function <[string \"*:OnSizeChanged\"]:1>\n[C]: in function `?'\nInterface\\FrameXML\\FlowContainer.lua:133: in function `FlowContainer_DoLayout'\nInterface\\FrameXML\\FlowContainer.lua:17: in function `FlowContainer_ResumeUpdates'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:185: in function `CompactRaidFrameContainer_LayoutFrames'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:130: in function `CompactRaidFrameContainer_TryUpdate'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:57: in function `CompactRaidFrameContainer_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
-			["session"] = 352,
-			["counter"] = 3,
-		}, -- [52]
-		{
 			["message"] = "Interface\\AddOns\\xVerminz\\xVerminz-54000.lua:196: attempt to index global 'PetFramehealthBarText' (a nil value)",
 			["time"] = "2019/10/12 21:14:41",
 			["locals"] = "self = PetFrame {\n 0 = <userdata>\n portrait = PetPortrait {\n }\n manabar = PetFrameManaBar {\n }\n menu = <function> defined @Interface\\FrameXML\\PetFrame.lua:35\n unit = \"pet\"\n feedbackFontHeight = 30\n name = PetName {\n }\n feedbackText = PetHitIndicator {\n }\n attackModeSign = -1\n attackModeCounter = 0\n noTextPrefix = true\n healthbar = PetFrameHealthBar {\n }\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"TOPRIGHT\"\n(*temporary) = PetFrameManaBar {\n 0 = <userdata>\n currValue = 100\n frequentUpdates = true\n textLockable = 1\n unit = \"pet\"\n RightText = PetFrameManaBarTextRight {\n }\n capNumericDisplay = true\n TextString = PetFrameManaBarText {\n }\n cvar = \"statusText\"\n texture = <unnamed> {\n }\n cvarLabel = \"STATUS_TEXT_PET\"\n powerToken = \"FOCUS\"\n disconnected = false\n LeftText = PetFrameManaBarTextLeft {\n }\n powerType = 2\n lockShow = 0\n}\n(*temporary) = \"TOPRIGHT\"\n(*temporary) = 0\n(*temporary) = 0\n(*temporary) = \"attempt to index global 'PetFramehealthBarText' (a nil value)\"\nfont = \"Interface\\AddOns\\xVerminz\\media\\fontAtari.ttf\"\n",
 			["stack"] = "Interface\\AddOns\\xVerminz\\xVerminz-54000.lua:196: in function <Interface\\AddOns\\xVerminz\\xVerminz.lua:188>\n[C]: ?",
 			["session"] = 353,
 			["counter"] = 146,
+		}, -- [52]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn '!Colorz' tried to call the protected function 'CompactRaidFrame1:ClearAllPoints()'.",
+			["time"] = "2019/10/06 12:40:06",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `ClearAllPoints'\nInterface\\FrameXML\\FlowContainer.lua:157: in function `FlowContainer_DoLayout'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:69: in function `CompactRaidFrameContainer_OnSizeChanged'\n[string \"*:OnSizeChanged\"]:1: in function <[string \"*:OnSizeChanged\"]:1>\n[C]: in function `?'\nInterface\\FrameXML\\FlowContainer.lua:133: in function `FlowContainer_DoLayout'\nInterface\\FrameXML\\FlowContainer.lua:17: in function `FlowContainer_ResumeUpdates'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:185: in function `CompactRaidFrameContainer_LayoutFrames'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:130: in function `CompactRaidFrameContainer_TryUpdate'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:57: in function `CompactRaidFrameContainer_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
+			["session"] = 360,
+			["counter"] = 4,
 		}, -- [53]
 	},
 }

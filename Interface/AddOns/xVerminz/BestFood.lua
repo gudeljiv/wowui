@@ -9,6 +9,18 @@ local CONSUMABLES = {
         { 5349, 1113, 1114, 1487, 8075, 8076, 22895 }, -- conjured
         { 19994 }
     },
+    ["PETFOOD"] = {
+        { 4536, 117, 787, 6290, 4604, 2681, 2070, 2679, 7097, 4540, 4656, 961, 5057, 16166, 19223, 17344 }, -- 61 hps
+        { 12238, 4592, 5095, 1326, 6890, 4537, 2287, 4605, 414, 4541, 5066, 17119, 6316, 16167, 19304, 18633 }, -- 243 hps
+        { 4593, 3770, 4606, 7228, 733, 4538, 5478, 422, 5526, 4542, 2685, 16170, 19305, 1119 }, -- 552 hps
+        { 3771, 8364, 4544, 4594, 4539, 4607, 1707, 18632, 6807, 16169, 8543, 17407, 19224 }, -- 874.8 hps
+        { 6887, 3927, 4599, 16766, 13546, 13930, 4608, 4602, 21552, 4601, 9681, 21030, 19306, 17408, 16168, 18635 }, -- 1392 hps
+        { 8952, 8950, 8932, 8957, 13935, 8948, 13933, 8953, 21031, 11444, 21033, 23160, 19225, 22324, 11415, 16171, 12763 }, -- 2148 hps
+        { 5349, 1113, 1114, 1487, 8075, 8076, 22895 }, -- conjured
+        { 19994 },
+        { 7974, 12037, 12203, 5504, 3667, 12205, 12208, 3712, 12202, 5503, 769, 2674, 3731, 3173, 2672, 2673, 12206, 20424, 3730, 729, 5469, 1080, 5471, 4655, 2924, 12223, 12204, 5467}, -- meat
+
+    },
     ["BUFF"] = {
         { 2888, 5472, 6888, 2680, 12224, 17197, 17198, 11584, 5474, 7806, 7807, 7808, 17199 }, -- 2 stam/spi
         { 2684, 5525, 2683, 2687, 3220, 5477, 724, 3662, 5476 }, -- 4 stam/spi
@@ -54,10 +66,10 @@ local function Classify (id)
 end
 
 local function CreateOrUpdateMacro(macroName, nomodID, modID)
-    local macrotext = nil
-    
+    local macrotext
+
     if macroName == "Food" then macrotext = string.format("#showtooltip\n/use [mod:alt] item:%d; item:%d", modID, nomodID) end
-    if macroName == "FeedPet" then macrotext = string.format("#showtooltip\n/cast Feed Pet\n/use item:%d", nomodID) end
+    if macroName == "FeedPet" then macrotext = string.format("#showtooltip item:%d\n/cast Feed Pet\n/use item:%d", nomodID, nomodID) end
     if macroName == "Drink" then macrotext = string.format("#showtooltip\n/use item:%d", nomodID) end
     if macroName == "HP" then macrotext = string.format("#showtooltip\n/use item:%d", nomodID) end
 
@@ -72,6 +84,7 @@ end
 local function UpdateMacros()
     local best = {
         ["FOOD"] = {},
+        ["PETFOOD"] = {},
         ["BUFF"] = {},
         ["DRINK"] = {},
         ["HEALINGPOTIONS"] = {},
@@ -103,19 +116,17 @@ local function UpdateMacros()
         end
     end
 
-    -- print("-----------------------")
-    -- print(best["FOOD"][0])
-    -- print(best["FOOD"][1])
-    -- print(best["FOOD"][2])
-    -- print(best["FOOD"][3])
-    -- print(best["FOOD"][4])
-    -- print(best["FOOD"][5])
-    -- print(best["FOOD"][6])
-    -- print(best["FOOD"][7])
-    -- print("-----------------------")
+    local _, class, _ = UnitClass("player")
+    if(UnitExists("pet") and class == "HUNTER") then
+        local petType = UnitCreatureFamily("pet")
+        if(petType == "Bat" or petType == "Crab" or petType == "Gorilla" or petType == "Tallstrider" or petType == "Turtle" or petType == "Wind Serpent") then
+            CreateOrUpdateMacro("FeedPet", best["FOOD"][1])
+        else
+            CreateOrUpdateMacro("FeedPet", best["PETFOOD"][1])
+        end
+    end
 
     CreateOrUpdateMacro("Food", best["FOOD"][1], best["BUFF"][1])
-    CreateOrUpdateMacro("FeedPet", best["FOOD"][1], best["BUFF"][1])
     CreateOrUpdateMacro("Drink", best["DRINK"][1])
     CreateOrUpdateMacro("HP", best["HEALINGPOTIONS"][1])
 end
