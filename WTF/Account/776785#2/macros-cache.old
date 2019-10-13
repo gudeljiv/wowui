@@ -1,20 +1,20 @@
 VER 3 0000000000000008 " " "132089"
-/run CharacterAmmoSlotBorder:Hide()
+/run print(GetInventoryItemCount("player", GetInventorySlotInfo("AmmoSlot")))
 END
 VER 3 0000000000000006 "Drink" "Inv_misc_questionmark"
 #showtooltip
 /use item:0
 END
 VER 3 000000000000000A "FeedPet" "Inv_misc_questionmark"
-#showtooltip item:2287
+#showtooltip item:769
 /cast Feed Pet
-/use item:2287
+/use item:769
 END
 VER 3 0000000000000005 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [mod:alt] item:0; item:2287
+/use [mod:alt] item:0; item:4537
 END
 VER 3 000000000000000B "HP" "Inv_misc_questionmark"
 #showtooltip
-/use item:0
+/use item:858
 END

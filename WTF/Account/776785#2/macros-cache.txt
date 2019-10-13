@@ -1,5 +1,5 @@
 VER 3 0000000000000008 " " "132089"
-/run CharacterAmmoSlotBorder:Hide()
+/run print(GetInventoryItemCount("player", GetInventorySlotInfo("AmmoSlot")))
 END
 VER 3 0000000000000006 "Drink" "Inv_misc_questionmark"
 #showtooltip

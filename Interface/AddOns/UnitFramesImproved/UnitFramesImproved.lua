@@ -119,7 +119,6 @@ end
 function CreateStatusBarText(name, parentName, parent, point, x, y)
 	local fontString = parent:CreateFontString(parentName..name, nil, "TextStatusBarText")
 	fontString:SetPoint(point, parent, point, x, y)
-	
 	return fontString
 end
 

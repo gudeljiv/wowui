@@ -37,4 +37,3 @@ SlashCmdList["AUTOCARROT"] = function(msg)
     print("|cff00ff00Auto|cffed9121Carrot|cff1eff00: enabled")
   end
 end
-

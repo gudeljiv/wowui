@@ -1,6 +1,6 @@
 
-nPower = {
-    position = {"CENTER", UIParent, 0, -45},
+nHealth = {
+    position = {"CENTER", UIParent, 0, -30},
     sizeWidth = 200,
 	scale = 1.0,
     

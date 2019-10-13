@@ -6,6 +6,8 @@
 
 
 AutoCarrot.lua
+AutoBuyAmmo.lua
+AutoRepair.lua
 BestFood.lua
 Bindings.lua
 Chat.lua
@@ -15,6 +17,7 @@ DefaultFramesDarker.lua
 ErrorsFilter.lua
 GarbageCollector.lua
 GroopLootFrame.lua
+PetHappiness.lua
 PlayerTargetHealthPercentage.lua
 PlayerTargetSetMark.lua
 SkinBuffs.lua

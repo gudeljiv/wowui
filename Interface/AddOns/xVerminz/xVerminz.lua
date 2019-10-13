@@ -354,10 +354,3 @@ end
 local faster = CreateFrame("Frame")
 faster:RegisterEvent("LOOT_READY")
 faster:SetScript("OnEvent", FastLoot)
-
--------------------------------------------
--- Set font in Character font for ammo count
--------------------------------------------
-CharacterAmmoSlotCount:SetFont("Fonts\\ARIALN.ttf", 10, 'THINOUTLINE')
-CharacterAmmoSlotCount:ClearAllPoints()
-CharacterAmmoSlotCount:SetPoint("TOP", CharacterAmmoSlot, "BOTTOM", 10, -2)
