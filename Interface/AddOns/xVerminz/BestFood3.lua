@@ -7,14 +7,12 @@
 ]]
 
 local defaultFoodMacro = [[#showtooltip
-/use [mod:shift]<bandage>;[nocombat,mod]<buffFood>;[nocombat]<food>;[combat]<hPotions>
-]]
-local defaultPetFoodMacro = [[#showtooltip <petfood>
-/cast feed pet
-/use <petfood>
+/use [mod:shift]<bandage>;[nocombat,mod]<buffFood>;[nocombat]<food>
+/castsequence [combat]<hPotions>
 ]]
 local defaultDrinkMacro = [[#showtooltip
-/use [nocombat,mod]<manaBuff>;[nocombat]<drink>;[combat]<mPotions>
+/use [nocombat,mod]<manaBuff>;[nocombat]<drink>
+/castsequence [combat]<mPotions>
 ]]
 
 local function CreateOrUpdateMacro(macroName, text)
@@ -47,7 +45,7 @@ end)
 
 function NeedsFoodBadly:UpdateMacros()
     local best = {
-        food = {}, petfood = {}, buffFood = {}, drink = {}, buffDrink = {},
+        food = {}, buffFood = {}, drink = {}, buffDrink = {},
         hPotion = {}, mPotion = {}, healthstone = {}, manaGem = {},
         bandage = {}
     }
@@ -56,9 +54,6 @@ function NeedsFoodBadly:UpdateMacros()
             local id = GetContainerItemID(bag, slot)
             if not best.food[id] and self:IsUsableFood(self.Food[id]) then
                 best.food[id] = self.Food[id]
-            end
-            if not best.petfood[id] and self:IsUsablePetFood(self.PetFood[id]) then
-                best.petfood[id] = self.PetFood[id]
             end
             if not best.buffFood[id] and self:IsUsableBuffFood(self.Food[id]) then
                 best.buffFood[id] = self.Food[id]
@@ -87,7 +82,6 @@ function NeedsFoodBadly:UpdateMacros()
         end
     end
     best.food = self:Sorted(best.food, self.BetterFood)
-    best.petfood = self:Sorted(best.petfood, self.BetterPetFood)
     best.buffFood = self:Sorted(best.buffFood, self.BetterBuffFood)
     best.drink = self:Sorted(best.drink, self.BetterDrink)
     best.buffDrink = self:Sorted(best.buffDrink, self.BetterBuffDrink)
@@ -109,23 +103,6 @@ function NeedsFoodBadly:UpdateMacros()
     })
     CreateOrUpdateMacro("Food", foodMacro)
     CreateOrUpdateMacro("Drink", drinkMacro)
-
-    local _, class, _ = UnitClass("player")
-    if(UnitExists("pet") and class == "HUNTER") then
-        local petType = UnitCreatureFamily("pet")
-        if(petType == "Bat" or petType == "Crab" or petType == "Gorilla" or petType == "Tallstrider" or petType == "Turtle" or petType == "Wind Serpent") then
-            petfoodMacro = defaultPetFoodMacro:gsub("<%a+>", {
-                ["<petfood>"] = 'item:'..tostring(best.food[1] and best.food[1].id or 0),
-            })
-            CreateOrUpdateMacro("PetFood", petfoodMacro)
-        else
-            petfoodMacro = defaultPetFoodMacro:gsub("<%a+>", {
-                ["<petfood>"] = 'item:'..tostring(best.petfood[1] and best.petfood[1].id or 0),
-            })
-            CreateOrUpdateMacro("PetFood", petfoodMacro)
-        end
-    end
-
 end
 
 function NeedsFoodBadly:Sorted(t, f)
@@ -140,13 +117,6 @@ end
 function NeedsFoodBadly:IsUsableFood(food)
     return not not (food
             and food.lvl <= UnitLevel("player")
-            and food.hp
-            and not (food.hp5 or food.mp5 or food.str or food.agi or food.stam or food.int or food.spi))
-end
-
-function NeedsFoodBadly:IsUsablePetFood(food)
-    return not not (food
-            and (food.lvl <= UnitLevel("pet") or food.lvl == 999)
             and food.hp
             and not (food.hp5 or food.mp5 or food.str or food.agi or food.stam or food.int or food.spi))
 end
@@ -220,19 +190,6 @@ function NeedsFoodBadly.BetterFood(a, b)
     a_hp, b_hp = a.hp, b.hp
     if a_hp < 1 then a_hp = UnitHealthMax("player") * a_hp end
     if b_hp < 1 then b_hp = UnitHealthMax("player") * b_hp end
-    return (a_hp > b_hp) or (a_hp == b_hp and GetItemCount(a.id) <= GetItemCount(b.id))
-end
-
-function NeedsFoodBadly.BetterPetFood(a, b)
-    if a.conj and not b.conj then
-        return true
-    elseif b.conj and not a.conj then
-        return false
-    end
-    -- Percent food is stored as a decimal number, ie "Restores 2% health" is hp=0.02
-    a_hp, b_hp = a.hp, b.hp
-    if a_hp < 1 then a_hp = UnitHealthMax("pet") * a_hp end
-    if b_hp < 1 then b_hp = UnitHealthMax("pet") * b_hp end
     return (a_hp > b_hp) or (a_hp == b_hp and GetItemCount(a.id) <= GetItemCount(b.id))
 end
 
@@ -575,240 +532,4 @@ NeedsFoodBadly.Bandage = {
     [20066]={id=20066, name="Arathi Basin Runecloth Bandage", lvl=45, skill=225, hp=2000, bg=3},
     [20234]={id=20234, name="Defiler's Runecloth Bandage", lvl=45, skill=225, hp=2000, bg=3},
     [20243]={id=20243, name="Highlander's Runecloth Bandage", lvl=45, skill=225, hp=2000, bg=3}
-}
-NeedsFoodBadly.PetFood = {
-    [8932]={id=8932, name="Alterac Swiss", lvl=45, conj=false, hp=2148},
-    [4536]={id=4536, name="Shiny Red Apple", lvl=1, conj=false, hp=61.2},
-    [13546]={id=13546, name="Bloodbelly Fish", lvl=25, conj=false, hp=1392},
-    [159]={id=159, name="Refreshing Spring Water", lvl=2, conj=false, mp=151.2},
-    [13928]={id=13928, name="Grilled Squid", lvl=35, conj=false, hp=874.8, agi=10},
-    [18254]={id=18254, name="Runn Tum Tuber Surprise", lvl=45, conj=false, hp=1933.2, int=10},
-    [12218]={id=12218, name="Monster Omelet", lvl=40, conj=false, hp=1392, stam=12, spi=12},
-    [20452]={id=20452, name="Smoked Desert Dumplings", lvl=45, conj=false, hp=2148, str=20},
-    [12238]={id=12238, name="Darkshore Grouper", lvl=5, conj=false, hp=243.6},
-    [4791]={id=4791, name="Enchanted Water", lvl=25, conj=false, mp=1344.6},
-    [16971]={id=16971, name="Clamlette Surprise", lvl=40, conj=false, hp=1392, stam=12, spi=12},
-    [21023]={id=21023, name="Dirge's Kickin' Chimaerok Chops", lvl=55, conj=false, hp=2550, stam=25},
-    [4593]={id=4593, name="Bristle Whisker Catfish", lvl=15, conj=false, hp=552},
-    [1179]={id=1179, name="Ice Cold Milk", lvl=5, conj=false, mp=436.8},
-    [17222]={id=17222, name="Spider Sausage", lvl=35, conj=false, hp=1392, stam=12, spi=12},
-    [18255]={id=18255, name="Runn Tum Tuber", lvl=45, conj=false, hp=1392},
-    [11109]={id=11109, name="Special Chicken Feed", lvl=0, conj=false, hp=30},
-    [13724]={id=13724, name="Enriched Manna Biscuit", lvl=45, conj=false, hp=2148, mp=4410},
-    [5527]={id=5527, name="Goblin Deviled Clams", lvl=15, conj=false, hp=552, stam=6, spi=6},
-    [4592]={id=4592, name="Longjaw Mud Snapper", lvl=5, conj=false, hp=243.6},
-    [3729]={id=3729, name="Soothing Turtle Bisque", lvl=25, conj=false, hp=874.8, stam=8, spi=8},
-    [8952]={id=8952, name="Roasted Quail", lvl=45, conj=false, hp=2148},
-    [13810]={id=13810, name="Blessed Sunfruit", lvl=45, conj=false, hp=1933.2, str=10},
-    [4457]={id=4457, name="Barbecued Buzzard Wing", lvl=25, conj=false, hp=874.8, stam=8, spi=8},
-    [6299]={id=6299, name="Sickly Looking Fish", lvl=0, conj=false, hp=30},
-    [8766]={id=8766, name="Morning Glory Dew", lvl=45, conj=false, mp=2934},
-    [6887]={id=6887, name="Spotted Yellowtail", lvl=35, conj=false, hp=1392},
-    [8079]={id=8079, name="Conjured Crystal Water", lvl=55, conj=true, mp=4200},
-    [3771]={id=3771, name="Wild Hog Shank", lvl=25, conj=false, hp=874.8},
-    [18045]={id=18045, name="Tender Wolf Steak", lvl=40, conj=false, hp=1392, stam=12, spi=12},
-    [1645]={id=1645, name="Moonberry Juice", lvl=35, conj=false, mp=1992},
-    [3770]={id=3770, name="Mutton Chop", lvl=15, conj=false, hp=552},
-    [13851]={id=13851, name="Hot Wolf Ribs", lvl=25, conj=false, hp=874.8, stam=8, spi=8},
-    [8364]={id=8364, name="Mithril Head Trout", lvl=25, conj=false, hp=874.8},
-    [12216]={id=12216, name="Spiced Chili Crab", lvl=40, conj=false, hp=1392, stam=12, spi=12},
-    [4594]={id=4594, name="Rockscale Cod", lvl=25, conj=false, hp=874.8},
-    [4599]={id=4599, name="Cured Ham Steak", lvl=35, conj=false, hp=1392},
-    [1708]={id=1708, name="Sweet Nectar", lvl=25, conj=false, mp=1344.6},
-    [3927]={id=3927, name="Fine Aged Cheddar", lvl=35, conj=false, hp=1392},
-    [12213]={id=12213, name="Carrion Surprise", lvl=25, conj=false, hp=874.8, stam=8, spi=8},
-    [4544]={id=4544, name="Mulgore Spice Bread", lvl=25, conj=false, hp=874.8},
-    [2684]={id=2684, name="Coyote Steak", lvl=5, conj=false, hp=243.6, stam=4, spi=4},
-    [16766]={id=16766, name="Undermine Clam Chowder", lvl=35, conj=false, hp=1392},
-    [13927]={id=13927, name="Cooked Glossy Mightfish", lvl=35, conj=false, hp=874.8, stam=10},
-    [12214]={id=12214, name="Mystery Stew", lvl=25, conj=false, hp=874.8, stam=8, spi=8},
-    [117]={id=117, name="Tough Jerky", lvl=6, conj=false, hp=61.2},
-    [5525]={id=5525, name="Boiled Clams", lvl=5, conj=false, hp=243.6, stam=4, spi=4},
-    [3665]={id=3665, name="Curiously Tasty Omelet", lvl=15, conj=false, hp=552, stam=6, spi=6},
-    [19301]={id=19301, name="Alterac Manna Biscuit", lvl=51, conj=false, hp=4410, mp=4410},
-    [5095]={id=5095, name="Rainbow Fin Albacore", lvl=5, conj=false, hp=243.6},
-    [787]={id=787, name="Slitherskin Mackerel", lvl=0, conj=false, hp=61.2},
-    [3728]={id=3728, name="Tasty Lion Steak", lvl=20, conj=false, hp=874.8, stam=8, spi=8},
-    [6290]={id=6290, name="Brilliant Smallfish", lvl=0, conj=false, hp=61.2},
-    [12212]={id=12212, name="Jungle Stew", lvl=25, conj=false, hp=874.8, stam=8, spi=8},
-    [4604]={id=4604, name="Forest Mushroom Cap", lvl=4, conj=false, hp=61.2},
-    [12210]={id=12210, name="Roast Raptor", lvl=25, conj=false, hp=874.8, stam=8, spi=8},
-    [10841]={id=10841, name="Goldthorn Tea", lvl=25, conj=false, mp=1344.6},
-    [2683]={id=2683, name="Crab Cake", lvl=5, conj=false, hp=243.6, stam=4, spi=4},
-    [20074]={id=20074, name="Heavy Crocolisk Stew", lvl=20, conj=false, hp=874.8, stam=8, spi=8},
-    [8078]={id=8078, name="Conjured Sparkling Water", lvl=45, conj=true, mp=2934},
-    [13934]={id=13934, name="Mightfish Steak", lvl=45, conj=false, hp=1933.2, stam=10},
-    [2687]={id=2687, name="Dry Pork Ribs", lvl=5, conj=false, hp=243.6, stam=4, spi=4},
-    [4539]={id=4539, name="Goldenbark Apple", lvl=25, conj=false, hp=874.8},
-    [13930]={id=13930, name="Filet of Redgill", lvl=35, conj=false, hp=1392},
-    [18300]={id=18300, name="Hyjal Nectar", lvl=55, conj=false, mp=4200},
-    [6890]={id=6890, name="Smoked Bear Meat", lvl=5, conj=false, hp=243.6},
-    [4607]={id=4607, name="Delicious Cave Mold", lvl=25, conj=false, hp=874.8},
-    [1017]={id=1017, name="Seasoned Wolf Kabob", lvl=15, conj=false, hp=552, stam=6, spi=6},
-    [4537]={id=4537, name="Tel'Abim Banana", lvl=5, conj=false, hp=243.6},
-    [13935]={id=13935, name="Baked Salmon", lvl=45, conj=false, hp=2148},
-    [13929]={id=13929, name="Hot Smoked Bass", lvl=35, conj=false, hp=874.8, spi=10},
-    [4602]={id=4602, name="Moon Harvest Pumpkin", lvl=35, conj=false, hp=1392},
-    [2888]={id=2888, name="Beer Basted Boar Ribs", lvl=5, conj=false, hp=61.2, stam=2, spi=2},
-    [8077]={id=8077, name="Conjured Mineral Water", lvl=35, conj=true, mp=1992},
-    [13933]={id=13933, name="Lobster Stew", lvl=45, conj=false, hp=2148},
-    [5472]={id=5472, name="Kaldorei Spider Kabob", lvl=1, conj=false, hp=61.2, stam=2, spi=2},
-    [22895]={id=22895, name="Conjured Cinnamon Roll", lvl=55, conj=true, hp=3180},
-    [4608]={id=4608, name="Raw Black Truffle", lvl=35, conj=false, hp=1392},
-    [3666]={id=3666, name="Gooey Spider Cake", lvl=15, conj=false, hp=552, stam=6, spi=6},
-    [8957]={id=8957, name="Spinefin Halibut", lvl=45, conj=false, hp=2148},
-    [3220]={id=3220, name="Blood Sausage", lvl=5, conj=false, hp=243.6, stam=4, spi=4},
-    [7228]={id=7228, name="Tigule and Foror's Strawberry Ice Cream", lvl=15, conj=false, hp=552},
-    [1082]={id=1082, name="Redridge Goulash", lvl=10, conj=false, hp=552, stam=6, spi=6},
-    [2287]={id=2287, name="Haunch of Meat", lvl=5, conj=false, hp=243.6},
-    [1707]={id=1707, name="Stormwind Brie", lvl=25, conj=false, hp=874.8},
-    [8950]={id=8950, name="Homemade Cherry Pie", lvl=45, conj=false, hp=2148},
-    [18632]={id=18632, name="Moonbrook Riot Taffy", lvl=25, conj=false, hp=874.8},
-    [8948]={id=8948, name="Dried King Bolete", lvl=45, conj=false, hp=2148},
-    [3772]={id=3772, name="Conjured Spring Water", lvl=25, conj=true, mp=1344.6},
-    [12209]={id=12209, name="Lean Wolf Steak", lvl=15, conj=false, hp=552, stam=6, spi=6},
-    [3726]={id=3726, name="Big Bear Steak", lvl=15, conj=false, hp=552, stam=6, spi=6},
-    [733]={id=733, name="Westfall Stew", lvl=5, conj=false, hp=552},
-    [3664]={id=3664, name="Crocolisk Gumbo", lvl=15, conj=false, hp=552, stam=6, spi=6},
-    [1205]={id=1205, name="Melon Juice", lvl=15, conj=false, mp=835.2},
-    [4605]={id=4605, name="Red-speckled Mushroom", lvl=5, conj=false, hp=243.6},
-    [2682]={id=2682, name="Cooked Crab Claw", lvl=5, conj=false, hp=294, mp=294},
-    [20031]={id=20031, name="Essence Mango", lvl=55, conj=false, hp=2550, mp=4410},
-    [5477]={id=5477, name="Strider Stew", lvl=5, conj=false, hp=243.6, stam=4, spi=4},
-    [4606]={id=4606, name="Spongy Morel", lvl=15, conj=false, hp=552},
-    [5478]={id=5478, name="Dig Rat Stew", lvl=10, conj=false, hp=552},
-    [12215]={id=12215, name="Heavy Kodo Stew", lvl=35, conj=false, hp=1392, stam=12, spi=12},
-    [3663]={id=3663, name="Murloc Fin Soup", lvl=15, conj=false, hp=552, stam=6, spi=6},
-    [8953]={id=8953, name="Deep Fried Plantains", lvl=45, conj=false, hp=2148},
-    [5480]={id=5480, name="Lean Venison", lvl=15, conj=false, hp=552, stam=6, spi=6},
-    [2136]={id=2136, name="Conjured Purified Water", lvl=15, conj=true, mp=835.2},
-    [2681]={id=2681, name="Roasted Boar Meat", lvl=0, conj=false, hp=61.2},
-    [12224]={id=12224, name="Crispy Bat Wing", lvl=0, conj=false, hp=61.2, stam=2, spi=2},
-    [4538]={id=4538, name="Snapvine Watermelon", lvl=15, conj=false, hp=552},
-    [5479]={id=5479, name="Crispy Lizard Tail", lvl=12, conj=false, hp=552, stam=6, spi=6},
-    [3727]={id=3727, name="Hot Lion Chops", lvl=15, conj=false, hp=552, stam=6, spi=6},
-    [4601]={id=4601, name="Soft Banana Bread", lvl=35, conj=false, hp=1392},
-    [3448]={id=3448, name="Senggin Root", lvl=9, conj=false, hp=294, mp=294},
-    [6807]={id=6807, name="Frog Leg Stew", lvl=30, conj=false, hp=874.8},
-    [2680]={id=2680, name="Spiced Wolf Meat", lvl=0, conj=false, hp=61.2, stam=2, spi=2},
-    [21552]={id=21552, name="Striped Yellowtail", lvl=35, conj=false, hp=1392},
-    [2679]={id=2679, name="Charred Wolf Meat", lvl=0, conj=false, hp=61.2},
-    [6038]={id=6038, name="Giant Clam Scorcho", lvl=25, conj=false, hp=874.8, stam=8, spi=8},
-    [5066]={id=5066, name="Fissure Plant", lvl=5, conj=false, hp=243.6},
-    [6888]={id=6888, name="Herb Baked Egg", lvl=0, conj=false, hp=61.2, stam=2, spi=2},
-    [5526]={id=5526, name="Clam Chowder", lvl=10, conj=false, hp=552},
-    [5350]={id=5350, name="Conjured Water", lvl=0, conj=true, mp=151.2},
-    [1326]={id=1326, name="Sauteed Sunfish", lvl=12, conj=false, hp=243.6},
-    [21215]={id=21215, name="Graccu's Mince Meat Fruitcake", lvl=40, conj=false, hp=0.05, mp=0.05},
-    [8076]={id=8076, name="Conjured Sweet Roll", lvl=45, conj=true, hp=2148},
-    [9451]={id=9451, name="Bubbling Water", lvl=15, conj=false, mp=835.2},
-    [422]={id=422, name="Dwarven Mild", lvl=15, conj=false, hp=552},
-    [2070]={id=2070, name="Darnassian Bleu", lvl=1, conj=false, hp=61.2},
-    [4541]={id=4541, name="Freshly Baked Bread", lvl=5, conj=false, hp=243.6},
-    [414]={id=414, name="Dalaran Sharp", lvl=5, conj=false, hp=243.6},
-    [17197]={id=17197, name="Gingerbread Cookie", lvl=0, conj=false, hp=61.2, stam=2, spi=2},
-    [17119]={id=17119, name="Deeprun Rat Kabob", lvl=5, conj=false, hp=243.6},
-    [724]={id=724, name="Goretusk Liver Pie", lvl=5, conj=false, hp=243.6, stam=4, spi=4},
-    [8075]={id=8075, name="Conjured Sourdough", lvl=35, conj=true, hp=1392},
-    [4542]={id=4542, name="Moist Cornbread", lvl=15, conj=false, hp=552},
-    [2288]={id=2288, name="Conjured Fresh Water", lvl=5, conj=true, mp=436.8},
-    [17198]={id=17198, name="Egg Nog", lvl=0, conj=false, hp=61.2, stam=2, spi=2},
-    [9681]={id=9681, name="Grilled King Crawler Legs", lvl=35, conj=false, hp=1392},
-    [7097]={id=7097, name="Leg Meat", lvl=0, conj=false, hp=61.2},
-    [19300]={id=19300, name="Bottled Winterspring Water", lvl=35, conj=false, mp=1992},
-    [4540]={id=4540, name="Tough Hunk of Bread", lvl=6, conj=false, hp=61.2},
-    [3662]={id=3662, name="Crocolisk Steak", lvl=5, conj=false, hp=243.6, stam=4, spi=4},
-    [2685]={id=2685, name="Succulent Pork Ribs", lvl=10, conj=false, hp=552},
-    [11584]={id=11584, name="Cactus Apple Surprise", lvl=1, conj=false, hp=61.2, stam=2, spi=2},
-    [1487]={id=1487, name="Conjured Pumpernickel", lvl=25, conj=true, hp=874.8},
-    [1113]={id=1113, name="Conjured Bread", lvl=5, conj=true, hp=243.6},
-    [5474]={id=5474, name="Roasted Kodo Meat", lvl=0, conj=false, hp=61.2, stam=2, spi=2},
-    [5349]={id=5349, name="Conjured Muffin", lvl=0, conj=true, hp=61.2},
-    [19996]={id=19996, name="Harvest Fish", lvl=0, conj=false, hp=0.02},
-    [961]={id=961, name="Healing Herb", lvl=1, conj=false, hp=61.2},
-    [1114]={id=1114, name="Conjured Rye", lvl=15, conj=true, hp=552},
-    [5476]={id=5476, name="Fillet of Frenzy", lvl=5, conj=false, hp=243.6, stam=4, spi=4},
-    [21031]={id=21031, name="Cabbage Kimchi", lvl=45, conj=false, hp=2148},
-    [23172]={id=23172, name="Refreshing Red Apple", lvl=0, conj=false, hp=0.04, mp=0.04},
-    [21254]={id=21254, name="Winter Veil Cookie", lvl=0, conj=false, hp=0.02, stam=0.25, spi=0.25},
-    [11444]={id=11444, name="Grim Guzzler Boar", lvl=45, conj=false, hp=2148},
-    [4656]={id=4656, name="Small Pumpkin", lvl=8, conj=false, hp=61.2},
-    [11415]={id=11415, name="Mixed Berries", lvl=45, conj=false, hp=2148},
-    [6316]={id=6316, name="Loch Frenzy Delight", lvl=5, conj=false, hp=243.6},
-    [19299]={id=19299, name="Fizzy Faire Drink", lvl=15, conj=false, mp=835.2},
-    [20516]={id=20516, name="Bobbing Apple", lvl=0, conj=false, hp=0.02, stam=0.25, spi=0.25},
-    [19224]={id=19224, name="Red Hot Wings", lvl=25, conj=false, hp=874.8},
-    [19696]={id=19696, name="Harvest Bread", lvl=0, conj=true, hp=0.02},
-    [16170]={id=16170, name="Steamed Mandu", lvl=15, conj=false, hp=552},
-    [17406]={id=17406, name="Holiday Cheesewheel", lvl=5, conj=false, hp=243.6},
-    [21030]={id=21030, name="Darnassus Kimchi Pie", lvl=35, conj=false, hp=1392},
-    [17404]={id=17404, name="Blended Bean Brew", lvl=5, conj=false, mp=436.8},
-    [17344]={id=17344, name="Candy Cane", lvl=0, conj=false, hp=61.2},
-    [22324]={id=22324, name="Winter Kimchi", lvl=45, conj=false, hp=2148},
-    [16168]={id=16168, name="Heaven Peach", lvl=35, conj=false, hp=1392},
-    [5057]={id=5057, name="Ripe Watermelon", lvl=8, conj=false, hp=61.2},
-    [21236]={id=21236, name="Winter Veil Loaf", lvl=0, conj=false, hp=0.02},
-    [8543]={id=8543, name="Underwater Mushroom Cap", lvl=25, conj=false, hp=874.8},
-    [16167]={id=16167, name="Versicolor Treat", lvl=5, conj=false, hp=243.6},
-    [12763]={id=12763, name="Un'Goro Etherfruit", lvl=45, conj=false, hp=2148},
-    [21235]={id=21235, name="Winter Veil Roast", lvl=0, conj=false, hp=0.02},
-    [19306]={id=19306, name="Crunchy Frog", lvl=35, conj=false, hp=1392},
-    [17407]={id=17407, name="Graccu's Homemade Meat Pie", lvl=25, conj=false, hp=874.8},
-    [16169]={id=16169, name="Wild Ricecake", lvl=25, conj=false, hp=874.8},
-    [19304]={id=19304, name="Spiced Beef Jerky", lvl=5, conj=false, hp=243.6},
-    [18633]={id=18633, name="Styleen's Sour Suckerpop", lvl=5, conj=false, hp=243.6},
-    [7807]={id=7807, name="Candy Bar", lvl=0, conj=false, hp=61.2, stam=2, spi=2},
-    [7808]={id=7808, name="Chocolate Square", lvl=0, conj=false, hp=61.2, stam=2, spi=2},
-    [19994]={id=19994, name="Harvest Fruit", lvl=0, conj=false, hp=0.02},
-    [17199]={id=17199, name="Bad Egg Nog", lvl=0, conj=false, hp=61.2, stam=2, spi=2},
-    [23160]={id=23160, name="Friendship Bread", lvl=45, conj=false, hp=2148},
-    [17408]={id=17408, name="Spicy Beefstick", lvl=35, conj=false, hp=1392},
-    [19223]={id=19223, name="Darkmoon Dog", lvl=0, conj=false, hp=61.2},
-    [21033]={id=21033, name="Radish Kimchi", lvl=45, conj=false, hp=2148},
-    [19995]={id=19995, name="Harvest Boar", lvl=0, conj=false, hp=0.02},
-    [16171]={id=16171, name="Shinsollo", lvl=45, conj=false, hp=2148},
-    [12211]={id=12211, name="Spiced Wolf Ribs", lvl=25, conj=false, hp=874.8, stam=8, spi=8},
-    [7806]={id=7806, name="Lollipop", lvl=0, conj=false, hp=61.2, stam=2, spi=2},
-    [19225]={id=19225, name="Deep Fried Candybar", lvl=45, conj=false, hp=2148},
-    [18635]={id=18635, name="Bellara's Nutterbar", lvl=35, conj=false, hp=1392},
-    [21240]={id=21240, name="Winter Veil Candy", lvl=0, conj=false, hp=0.02},
-    [1119]={id=1119, name="Bottled Spirits", lvl=0, conj=false, hp=552},
-    [19305]={id=19305, name="Pickled Kodo Foot", lvl=15, conj=false, hp=552},
-    [16166]={id=16166, name="Bean Soup", lvl=0, conj=false, hp=61.2},
-    [13813]={id=13813, name="Blessed Sunfruit Juice", lvl=45, conj=false, mp=4410, spi=10},
-    [13931]={id=13931, name="Nightfin Soup", lvl=35, conj=false, hp=874.8, mp5=8},
-    [21217]={id=21217, name="Sagefish Delight", lvl=30, conj=false, hp=840.0, mp=1260, mp5=6},
-    [21072]={id=21072, name="Smoked Sagefish", lvl=10, conj=false, hp=378.0, mp=567, mp5=3},
-    [13932]={id=13932, name="Poached Sunscale Salmon", lvl=35, conj=false, hp=874.8, hp5=6},
-    [1401]={id=1401, name="Green Tea Leaf", lvl=4, conj=false, hp=30, mp=60},
-    [5473]={id=5473, name="Scorpid Surprise", lvl=0, conj=false, hp=294},
-    [19994]={id=19994, name="MEAT", lvl=0, conj=false, hp=99999},
-    [7974]={id=7974, name="MEAT", lvl=0, conj=false, hp=99999},
-    [12037]={id=12037, name="MEAT", lvl=0, conj=false, hp=99999},
-    [12203]={id=12203, name="MEAT", lvl=0, conj=false, hp=99999},
-    [5504]={id=5504, name="MEAT", lvl=0, conj=false, hp=99999},
-    [3667]={id=3667, name="MEAT", lvl=0, conj=false, hp=99999},
-    [12205]={id=12205, name="MEAT", lvl=0, conj=false, hp=99999},
-    [12208]={id=12208, name="MEAT", lvl=0, conj=false, hp=99999},
-    [3712]={id=3712, name="MEAT", lvl=0, conj=false, hp=99999},
-    [12202]={id=12202, name="MEAT", lvl=0, conj=false, hp=99999},
-    [5503]={id=5503, name="MEAT", lvl=0, conj=false, hp=99999},
-    [769]={id=769, name="MEAT", lvl=0, conj=false, hp=99999},
-    [2674]={id=2674, name="MEAT", lvl=0, conj=false, hp=99999},
-    [3731]={id=3731, name="MEAT", lvl=0, conj=false, hp=99999},
-    [3173]={id=3173, name="MEAT", lvl=0, conj=false, hp=99999},
-    [2672]={id=2672, name="MEAT", lvl=0, conj=false, hp=99999},
-    [2673]={id=2673, name="MEAT", lvl=0, conj=false, hp=99999},
-    [12206]={id=12206, name="MEAT", lvl=0, conj=false, hp=99999},
-    [20424]={id=20424, name="MEAT", lvl=0, conj=false, hp=99999},
-    [3730]={id=3730, name="MEAT", lvl=0, conj=false, hp=99999},
-    [729]={id=729, name="MEAT", lvl=0, conj=false, hp=99999},
-    [5469]={id=5469, name="MEAT", lvl=0, conj=false, hp=99999},
-    [1080]={id=1080, name="MEAT", lvl=0, conj=false, hp=99999},
-    [5471]={id=5471, name="MEAT", lvl=0, conj=false, hp=99999},
-    [4655]={id=4655, name="MEAT", lvl=0, conj=false, hp=99999},
-    [2924]={id=2924, name="MEAT", lvl=0, conj=false, hp=99999},
-    [12223]={id=12223, name="MEAT", lvl=0, conj=false, hp=99999},
-    [12204]={id=12204, name="MEAT", lvl=0, conj=false, hp=99999},
-    [5467]={id=5467, name="MEAT", lvl=0, conj=false, hp=99999},
 }

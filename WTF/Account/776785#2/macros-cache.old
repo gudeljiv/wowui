@@ -4,18 +4,14 @@ VER 3 0000000000000008 " " "132089"
 END
 VER 3 0000000000000006 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use item:159
-END
-VER 3 000000000000000A "FeedPet" "Inv_misc_questionmark"
-#showtooltip item:769
-/cast Feed Pet
-/use item:769
+/use [nocombat,mod]item:0;[nocombat]item:1179;[combat]
 END
 VER 3 0000000000000005 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [mod:alt] item:0; item:4604
+/use [mod:shift]item:1251;[nocombat,mod]item:0;[nocombat]item:2287;[combat]item:858
 END
-VER 3 000000000000000B "HP" "Inv_misc_questionmark"
-#showtooltip
-/use item:0
+VER 3 000000000000000B "PetFood" "Inv_misc_questionmark"
+#showtooltip item:2287
+/cast feed pet
+/use item:2287
 END

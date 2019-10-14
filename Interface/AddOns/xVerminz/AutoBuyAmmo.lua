@@ -3,7 +3,9 @@ local function BuyAmmo()
     local _, class, _ = UnitClass("player");
     local numItems = GetMerchantNumItems()
 
-    if class ~= "HUNTER" then return end
+    if class ~= ("HUNTER" or "WARRIOR") then
+        return
+    end
     BowEquipped = IsEquippedItemType("Bows") or IsEquippedItemType("Crossbows")
     GunEquipped = IsEquippedItemType("Guns")
 
@@ -26,7 +28,8 @@ local function BuyAmmo()
     end
 
     if index then
-        local maxammo = GetContainerNumSlots(1) * 200
+        local maxammo = 200
+        if class == "HUNTER" then maxammo = GetContainerNumSlots(1) * 200 end
         local ammoCount = GetInventoryItemCount("player", GetInventorySlotInfo("AmmoSlot"));
         local needtobuy = maxammo - ammoCount
         if needtobuy > 0 then
