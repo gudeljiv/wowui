@@ -272,3 +272,14 @@ GnomishVendorShrinker: disabled
 TradeSkillMaster_AppHelper: enabled
 ZygorGuidesViewerClassic: disabled
 DugisGuideViewerZ: disabled
+!BugGrabber: enabled
+BugSack: enabled
+ClassicAuraDurations: enabled
+ClassicCastbars: enabled
+ClassicCastbars_Options: enabled
+Details_TinyThreat: enabled
+InFlight: enabled
+InFlight_Load: enabled
+TomTom: enabled
+WeaponSwingTimer: enabled
+nHealth: enabled

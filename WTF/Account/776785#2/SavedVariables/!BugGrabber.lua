@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 460,
 	["lastSanitation"] = 3,
-	["session"] = 453,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\nHealth\\core.lua:92: attempt to concatenate global 'max' (a function value)",
@@ -29,14 +29,14 @@ BugGrabberDB = {
 		}, -- [3]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVerminz\\AutoRepair.lua",
-			["session"] = 391,
 			["time"] = "2019/10/13 16:00:25",
+			["session"] = 391,
 			["counter"] = 6,
 		}, -- [4]
 		{
 			["message"] = "(null)",
-			["session"] = 391,
 			["time"] = "2019/10/13 16:00:25",
+			["session"] = 391,
 			["counter"] = 6,
 		}, -- [5]
 		{
@@ -105,8 +105,8 @@ BugGrabberDB = {
 		}, -- [13]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVerminz\\PetHapiness.lua",
-			["time"] = "2019/10/13 17:14:03",
 			["session"] = 430,
+			["time"] = "2019/10/13 17:14:03",
 			["counter"] = 6,
 		}, -- [14]
 		{

@@ -24,20 +24,23 @@ cus.text:SetTextColor(0.058, 0.901, 0.466, 1)
 -----------------------------------------------------------------------------------------------------------------------------
 -- Unit (Player) ammo count
 -----------------------------------------------------------------------------------------------------------------------------
-local ac = CreateFrame("Frame", "CustomContainer_AmmoCount", CustomContainer_Combat)
-ac:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 2)
-ac:SetWidth(1)
-ac:SetHeight(1)
-ac.text = ac:CreateFontString(nil,"ARTWORK")
-ac.text:SetFont(font, 11, "NONE")
-ac.text:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 2)
+local _, class, _ = UnitClass("player");
+if class == "HUNTER" then
+	local ac = CreateFrame("Frame", "CustomContainer_AmmoCount", CustomContainer_Combat)
+	ac:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 2)
+	ac:SetWidth(1)
+	ac:SetHeight(1)
+	ac.text = ac:CreateFontString(nil,"ARTWORK")
+	ac.text:SetFont(font, 11, "NONE")
+	ac.text:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 2)
 
-PlayerFrame:HookScript("OnUpdate", function ()
-	ac.text:SetText("")
-	local ammoCount = GetInventoryItemCount("player", GetInventorySlotInfo("AmmoSlot"));
-	ac.text:SetText(ammoCount)
-	CharacterAmmoSlotCount:Hide()
-end)
+	PlayerFrame:HookScript("OnUpdate", function ()
+		ac.text:SetText("")
+		local ammoCount = GetInventoryItemCount("player", GetInventorySlotInfo("AmmoSlot"));
+		ac.text:SetText(ammoCount)
+		CharacterAmmoSlotCount:Hide()
+	end)
+end
 
 
 -------------------------------------------

@@ -1,8 +1,10 @@
 
 TomTomDB = {
 	["profileKeys"] = {
-		["Verminz - Golemagg"] = "Default",
 		["Greenwise - Golemagg"] = "Default",
+		["Dotwise - Golemagg"] = "Default",
+		["Verminz - Golemagg"] = "Default",
+		["Judawise - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -44,13 +46,19 @@ TomTomDB = {
 TomTomWaypoints = nil
 TomTomWaypointsM = {
 	["profileKeys"] = {
-		["Verminz - Golemagg"] = "Verminz - Golemagg",
 		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
+		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
+		["Verminz - Golemagg"] = "Verminz - Golemagg",
+		["Judawise - Golemagg"] = "Judawise - Golemagg",
 	},
 	["profiles"] = {
+		["Greenwise - Golemagg"] = {
+		},
+		["Dotwise - Golemagg"] = {
+		},
 		["Verminz - Golemagg"] = {
 		},
-		["Greenwise - Golemagg"] = {
+		["Judawise - Golemagg"] = {
 		},
 	},
 }
