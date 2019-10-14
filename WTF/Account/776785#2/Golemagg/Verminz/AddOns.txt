@@ -283,3 +283,4 @@ InFlight_Load: enabled
 TomTom: enabled
 WeaponSwingTimer: enabled
 nHealth: enabled
+Bagnon_VoidStorage: disabled

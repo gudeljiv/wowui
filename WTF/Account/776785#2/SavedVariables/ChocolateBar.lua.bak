@@ -108,17 +108,22 @@ ChocolateBarDB = {
 					["index"] = 2,
 					["barName"] = "ChocolateBar1",
 				},
-				["AskMrRobot"] = {
-					["showText"] = false,
-					["barName"] = "ChocolateBar1",
-					["align"] = "right",
-				},
 				["DBM"] = {
 					["showLabel"] = true,
 					["showText"] = false,
 					["barName"] = "ChocolateBar2",
 					["index"] = 1,
 					["showIcon"] = false,
+				},
+				["AskMrRobot"] = {
+					["showText"] = false,
+					["barName"] = "ChocolateBar1",
+					["align"] = "right",
+				},
+				["BagnonLauncher"] = {
+					["showText"] = false,
+					["barName"] = "ChocolateBar1",
+					["align"] = "right",
 				},
 				["VuhDo"] = {
 					["showText"] = false,
@@ -150,11 +155,8 @@ ChocolateBarDB = {
 					["index"] = 1,
 					["barName"] = "ChocolateBar1",
 				},
-				["Looter"] = {
-					["index"] = 3,
+				["Dugi"] = {
 					["barName"] = "ChocolateBar1",
-					["align"] = "center",
-					["showText"] = false,
 				},
 				["BigWigs"] = {
 					["index"] = 2,
@@ -167,6 +169,12 @@ ChocolateBarDB = {
 					["index"] = 3,
 					["barName"] = "ChocolateBar1",
 				},
+				["Looter"] = {
+					["index"] = 3,
+					["barName"] = "ChocolateBar1",
+					["align"] = "center",
+					["showText"] = false,
+				},
 				["TradeSkillMaster"] = {
 					["align"] = "right",
 					["showLabel"] = true,
@@ -174,9 +182,6 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar1",
 					["showText"] = false,
 					["customLabel"] = "TSM",
-				},
-				["Dugi"] = {
-					["barName"] = "ChocolateBar1",
 				},
 				["Prat"] = {
 					["enabled"] = false,
@@ -232,14 +237,14 @@ ChocolateBarDB = {
 					["customLabel"] = "B",
 				},
 			},
-			["gap"] = 5,
 			["fontName"] = "Friz Quadrata TT",
+			["desaturated"] = false,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
 			["forceColor"] = false,
-			["desaturated"] = false,
+			["gap"] = 5,
 			["textOffset"] = 2,
 			["height"] = 20,
 			["fixedStrata"] = true,
@@ -255,7 +260,7 @@ ChocolateBarDB = {
 }
 CB_PlayedTime = {
 	["Greenwise-"] = {
-		["total"] = 53355,
+		["total"] = 56685,
 	},
 	["Whatevs-"] = {
 		["total"] = 213,

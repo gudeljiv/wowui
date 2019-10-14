@@ -22,7 +22,7 @@ GMMONEY = {
 			["CLASS"] = "WARLOCK",
 		},
 		["Greenwise"] = {
-			["GOLD"] = 36337,
+			["GOLD"] = 35857,
 			["CLASS"] = "HUNTER",
 		},
 		["Pitchwise"] = {

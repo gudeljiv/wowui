@@ -6,15 +6,23 @@
         * Prefer PVP potions/bandages in battlegrounds (they're ignored for now)
 ]]
 
+--local defaultFoodMacro = [[#showtooltip
+--/use [mod:shift]<bandage>;[nocombat,mod]<buffFood>;[nocombat]<food>;[combat]<hPotions>
+--]]
 local defaultFoodMacro = [[#showtooltip
-/use [mod:shift]<bandage>;[nocombat,mod]<buffFood>;[nocombat]<food>;[combat]<hPotions>
+/use [nocombat]<food>
+/castsequence [combat]<hPotions>
 ]]
 local defaultPetFoodMacro = [[#showtooltip <petfood>
 /cast feed pet
 /use <petfood>
 ]]
+--local defaultDrinkMacro = [[#showtooltip
+--/use [nocombat,mod]<manaBuff>;[nocombat]<drink>;[combat]<mPotions>
+--]]
 local defaultDrinkMacro = [[#showtooltip
-/use [nocombat,mod]<manaBuff>;[nocombat]<drink>;[combat]<mPotions>
+/use [nocombat]<drink>
+/castsequence [combat]<mPotions>
 ]]
 
 local function CreateOrUpdateMacro(macroName, text)
@@ -106,6 +114,7 @@ function NeedsFoodBadly:UpdateMacros()
         ["<drink>"] = 'item:'..tostring(best.drink[1] and best.drink[1].id or 0),
         ["<manaBuff>"] = 'item:'..tostring(best.buffDrink[1] and best.buffDrink[1].id or 0),
         ["<mPotions>"] = self:BuildSequence(best.manaGem, best.mPotion)
+        --["<mPotions>"] = 'item:'..tostring(best.mPotion[1] and best.mPotion[1].id or 0)
     })
     CreateOrUpdateMacro("Food", foodMacro)
     CreateOrUpdateMacro("Drink", drinkMacro)
@@ -283,6 +292,7 @@ end
 
 function NeedsFoodBadly:BuildSequence(stone, potions)
     local sequence = {}
+
     if stone[1] then table.insert(sequence, 'item:'..tostring(stone[1].id)) end
     for _, potion in pairs(potions) do
         for _ = 1,GetItemCount(potion.id) do

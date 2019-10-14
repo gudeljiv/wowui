@@ -10,6 +10,8 @@ Bagnon_Sets = {
 	},
 	["inscribeColor"] = {
 	},
+	["soulColor"] = {
+	},
 	["locked"] = true,
 	["quiverColor"] = {
 	},
@@ -41,28 +43,38 @@ Bagnon_Sets = {
 				"quest", -- [19]
 				"misc", -- [20]
 				"equip/ammo", -- [21]
+				"all/souls", -- [22]
 			},
 			["point"] = "TOPRIGHT",
 			["hiddenBags"] = {
+				[4] = true,
 			},
-			["color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-			},
-			["hiddenRules"] = {
-			},
-			["y"] = -247.743347167969,
-			["x"] = -193.589599609375,
+			["scale"] = 1,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
-			["itemScale"] = 1,
-			["scale"] = 1,
+			["brokerObject"] = "BugSack",
+			["options"] = false,
+			["color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.844016253948212, -- [4]
+			},
+			["hiddenRules"] = {
+			},
+			["reverseBags"] = true,
+			["bagBreak"] = false,
+			["x"] = -344.42333984375,
+			["search"] = false,
+			["broker"] = false,
+			["reverseSlots"] = true,
+			["y"] = -324.409851074219,
 			["alpha"] = 1,
+			["itemScale"] = 1,
 		},
 		["vault"] = {
 			["rules"] = {
@@ -129,7 +141,6 @@ Bagnon_Sets = {
 			},
 		},
 		["bank"] = {
-			["enabled"] = true,
 			["rules"] = {
 				"all", -- [1]
 				"all/normal", -- [2]
@@ -152,27 +163,39 @@ Bagnon_Sets = {
 				"quest", -- [19]
 				"misc", -- [20]
 				"equip/ammo", -- [21]
+				"all/souls", -- [22]
 			},
 			["point"] = "TOPRIGHT",
 			["hiddenBags"] = {
 			},
+			["scale"] = 1,
+			["borderColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["enabled"] = true,
+			["brokerObject"] = "BagnonLauncher",
+			["options"] = false,
+			["itemScale"] = 1,
+			["y"] = -324.383728027344,
+			["x"] = -668.332641601563,
+			["search"] = false,
+			["broker"] = false,
 			["color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.801281824707985, -- [4]
 			},
 			["hiddenRules"] = {
 			},
-			["y"] = -247.716918945313,
-			["x"] = -521.666381835938,
 			["alpha"] = 1,
-			["borderColor"] = {
-			},
-			["scale"] = 1,
-			["itemScale"] = 1,
-			["options"] = true,
-			["brokerObject"] = "BagnonLauncher",
 		},
 	},
-	["glowAlpha"] = 0.6,
-	["emptySlots"] = false,
+	["glowAlpha"] = 0.75,
+	["emptySlots"] = true,
 	["normalColor"] = {
 	},
 	["profiles"] = {
@@ -181,6 +204,7 @@ Bagnon_Sets = {
 	},
 	["refrigeColor"] = {
 	},
+	["colorSlots"] = false,
 	["enchantColor"] = {
 	},
 	["displayBlizzard"] = false,

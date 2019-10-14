@@ -10,6 +10,8 @@ Bagnon_Sets = {
 	},
 	["inscribeColor"] = {
 	},
+	["soulColor"] = {
+	},
 	["locked"] = true,
 	["quiverColor"] = {
 	},
@@ -41,28 +43,38 @@ Bagnon_Sets = {
 				"quest", -- [19]
 				"misc", -- [20]
 				"equip/ammo", -- [21]
+				"all/souls", -- [22]
 			},
 			["point"] = "TOPRIGHT",
 			["hiddenBags"] = {
+				[4] = true,
 			},
-			["color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-			},
-			["hiddenRules"] = {
-			},
-			["y"] = -247.743347167969,
-			["x"] = -193.589599609375,
+			["scale"] = 1,
 			["borderColor"] = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
 				1, -- [4]
 			},
-			["alpha"] = 1,
-			["scale"] = 1,
+			["brokerObject"] = "BugSack",
+			["options"] = false,
+			["hiddenRules"] = {
+			},
 			["itemScale"] = 1,
+			["alpha"] = 1,
+			["bagBreak"] = false,
+			["x"] = -344.42333984375,
+			["search"] = false,
+			["broker"] = false,
+			["reverseSlots"] = true,
+			["y"] = -324.409851074219,
+			["reverseBags"] = true,
+			["color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.844016253948212, -- [4]
+			},
 		},
 		["vault"] = {
 			["rules"] = {
@@ -152,27 +164,38 @@ Bagnon_Sets = {
 				"quest", -- [19]
 				"misc", -- [20]
 				"equip/ammo", -- [21]
+				"all/souls", -- [22]
 			},
 			["point"] = "TOPRIGHT",
 			["hiddenBags"] = {
 			},
 			["color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.801281824707985, -- [4]
 			},
-			["hiddenRules"] = {
-			},
-			["y"] = -247.716918945313,
-			["x"] = -521.666381835938,
 			["brokerObject"] = "BagnonLauncher",
+			["alpha"] = 1,
+			["options"] = false,
+			["y"] = -324.383728027344,
+			["x"] = -668.332641601563,
+			["search"] = false,
 			["borderColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
 			},
-			["options"] = true,
 			["itemScale"] = 1,
 			["scale"] = 1,
-			["alpha"] = 1,
+			["broker"] = false,
+			["hiddenRules"] = {
+			},
 		},
 	},
-	["glowAlpha"] = 0.6,
-	["emptySlots"] = false,
+	["glowAlpha"] = 0.75,
+	["emptySlots"] = true,
 	["normalColor"] = {
 	},
 	["profiles"] = {
@@ -180,6 +203,7 @@ Bagnon_Sets = {
 	["mineColor"] = {
 	},
 	["displayBlizzard"] = false,
+	["colorSlots"] = false,
 	["enchantColor"] = {
 	},
 	["refrigeColor"] = {

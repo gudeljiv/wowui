@@ -1593,12 +1593,103 @@ QuestieConfig = {
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
 				}, -- [132]
+				{
+					["Party"] = {
+					},
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+					["Level"] = 16,
+					["Quest"] = 865,
+					["Timestamp"] = 1571085761,
+				}, -- [133]
+				{
+					["Party"] = {
+					},
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+					["Level"] = 16,
+					["Quest"] = 1069,
+					["Timestamp"] = 1571085766,
+				}, -- [134]
+				{
+					["Party"] = {
+					},
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+					["Level"] = 16,
+					["Quest"] = 894,
+					["Timestamp"] = 1571085824,
+				}, -- [135]
+				{
+					["Party"] = {
+					},
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+					["Level"] = 16,
+					["Quest"] = 1483,
+					["Timestamp"] = 1571085826,
+				}, -- [136]
+				{
+					["Party"] = {
+					},
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+					["Level"] = 16,
+					["Quest"] = 887,
+					["Timestamp"] = 1571085846,
+				}, -- [137]
+				{
+					["Party"] = {
+					},
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+					["Level"] = 16,
+					["Quest"] = 895,
+					["Timestamp"] = 1571085868,
+				}, -- [138]
+				{
+					["Party"] = {
+					},
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+					["Level"] = 16,
+					["Quest"] = 1492,
+					["Timestamp"] = 1571085887,
+				}, -- [139]
+				{
+					["Party"] = {
+					},
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+					["Level"] = 16,
+					["Quest"] = 896,
+					["Timestamp"] = 1571085889,
+				}, -- [140]
+				{
+					["Party"] = {
+					},
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+					["Level"] = 16,
+					["Quest"] = 959,
+					["Timestamp"] = 1571085911,
+				}, -- [141]
+				{
+					["Party"] = {
+					},
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+					["Level"] = 16,
+					["Quest"] = 891,
+					["Timestamp"] = 1571085938,
+				}, -- [142]
 			},
 			["complete"] = {
 				[829] = true,
 				[837] = true,
 				[845] = true,
 				[869] = true,
+				[1492] = true,
 				[790] = true,
 				[806] = true,
 				[830] = true,

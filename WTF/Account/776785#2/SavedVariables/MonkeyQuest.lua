@@ -592,7 +592,7 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = true,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 629.399719238281,
+		["m_iFrameBottom"] = 296.899749755859,
 		["m_bHideCompletedQuests"] = true,
 		["m_iFrameLeft"] = 1670.73352050781,
 		["m_bColourDoneOrFailed"] = true,
@@ -936,16 +936,40 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Greenwise"] = {
 		["m_aQuestList"] = {
+			["WANTED: Baron Longshore - false"] = {
+				["m_bChecked"] = true,
+			},
 			["Stolen Silver - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Raptor Horns - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Southsea Freebooters - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Trouble at the Docks - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Miner's Fortune - false"] = {
 				["m_bChecked"] = true,
 			},
 			["The Stagnant Oasis - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Verog the Dervish - false"] = {
+			["The Guns of Northwatch - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Samophlange - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Deepmoss Spider Eggs - false"] = {
 				["m_bChecked"] = true,
 			},
 			["The Barrens - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Wailing Caverns - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Consumed by Hatred - false"] = {
@@ -954,16 +978,16 @@ MonkeyQuestConfig = {
 			["Lost in Battle - false"] = {
 				["m_bChecked"] = true,
 			},
+			["Ziz Fizziks - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Verog the Dervish - false"] = {
+				["m_bChecked"] = true,
+			},
 			["The Angry Scytheclaws - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Echeyakee - false"] = {
-				["m_bChecked"] = true,
-			},
 			["Letter to Jin'Zil - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Wharfmaster Dizzywig - false"] = {
 				["m_bChecked"] = true,
 			},
 		},

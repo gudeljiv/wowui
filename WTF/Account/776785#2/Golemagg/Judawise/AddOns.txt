@@ -79,3 +79,8 @@ DBM-AQ20: enabled
 DBM-AQ40: enabled
 DBM-ZG: enabled
 Questie: enabled
+Bagnon_GuildBank: disabled
+Bagnon_Config: disabled
+Bagnon: disabled
+BagBrother: disabled
+Bagnon_VoidStorage: disabled
