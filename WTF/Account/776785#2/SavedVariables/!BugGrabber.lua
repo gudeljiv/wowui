@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 546,
 	["lastSanitation"] = 3,
-	["session"] = 535,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\nHealth\\core.lua:92: attempt to concatenate global 'max' (a function value)",
@@ -29,8 +29,8 @@ BugGrabberDB = {
 		}, -- [3]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVerminz\\AutoRepair.lua",
-			["session"] = 391,
 			["time"] = "2019/10/13 16:00:25",
+			["session"] = 391,
 			["counter"] = 6,
 		}, -- [4]
 		{
@@ -99,8 +99,8 @@ BugGrabberDB = {
 		}, -- [12]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVerminz\\PetHapiness.lua",
-			["time"] = "2019/10/13 17:14:03",
 			["session"] = 430,
+			["time"] = "2019/10/13 17:14:03",
 			["counter"] = 6,
 		}, -- [13]
 		{
@@ -184,29 +184,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [23]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn '!Colorz' tried to call the protected function 'CompactRaidFrame2:SetAttribute()'.",
-			["time"] = "2019/10/14 19:30:45",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\CompactUnitFrame.lua:161: in function `CompactUnitFrame_SetUnit'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:318: in function `CompactRaidFrameContainer_AddUnitFrame'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:272: in function `CompactRaidFrameContainer_AddPets'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:182: in function `CompactRaidFrameContainer_LayoutFrames'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:130: in function `CompactRaidFrameContainer_TryUpdate'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:62: in function `CompactRaidFrameContainer_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
-			["session"] = 508,
-			["counter"] = 1,
-		}, -- [24]
-		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn '!Colorz' tried to call the protected function 'CompactRaidFrame1:ClearAllPoints()'.",
-			["time"] = "2019/10/13 16:30:57",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `ClearAllPoints'\nInterface\\FrameXML\\FlowContainer.lua:157: in function `FlowContainer_DoLayout'\nInterface\\FrameXML\\FlowContainer.lua:17: in function `FlowContainer_ResumeUpdates'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:185: in function `CompactRaidFrameContainer_LayoutFrames'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:130: in function `CompactRaidFrameContainer_TryUpdate'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:62: in function `CompactRaidFrameContainer_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
-			["session"] = 509,
-			["counter"] = 3,
-		}, -- [25]
-		{
 			["message"] = "...xternal\\Wildpants\\libs\\AceEvent-3.0\\AceEvent-3.0-4.lua:33: Attempt to register unknown event \"VOID_STORAGE_OPEN\"",
 			["time"] = "2019/10/14 22:16:25",
 			["locals"] = "(*temporary) = AceEvent30Frame {\n 0 = <userdata>\n}\n(*temporary) = \"VOID_STORAGE_OPEN\"\n",
 			["stack"] = "[C]: in function `RegisterEvent'\n...xternal\\Wildpants\\libs\\AceEvent-3.0\\AceEvent-3.0-4.lua:33: in function `OnUsed'\n...sic\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:142: in function `RegisterEvent'\n...Wildpants\\libs\\LibItemCache-2.0\\LibItemCache-2.0-14.lua:42: in main chunk",
 			["session"] = 513,
 			["counter"] = 2,
-		}, -- [26]
+		}, -- [24]
 		{
 			["message"] = "...ldpants\\libs\\LibItemSearch-1.2\\LibItemSearch-1.2-15.lua:230: attempt to index global 'C_CurrencyInfo' (a nil value)",
 			["time"] = "2019/10/14 22:16:25",
@@ -214,7 +198,7 @@ BugGrabberDB = {
 			["stack"] = "...ldpants\\libs\\LibItemSearch-1.2\\LibItemSearch-1.2-15.lua:230: in main chunk",
 			["session"] = 513,
 			["counter"] = 2,
-		}, -- [27]
+		}, -- [25]
 		{
 			["message"] = "...ce\\AddOns\\Bagnon\\external\\Wildpants\\core\\classes.lua:40: CreateFrame: Unknown frame type 'ItemButton'",
 			["time"] = "2019/10/14 22:16:25",
@@ -222,35 +206,35 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `CreateFrame'\n...ce\\AddOns\\Bagnon\\external\\Wildpants\\core\\classes.lua:40: in function `NewClass'\n...AddOns\\Bagnon\\external\\Wildpants\\components\\item.lua:8: in main chunk",
 			["session"] = 513,
 			["counter"] = 2,
-		}, -- [28]
+		}, -- [26]
 		{
 			["message"] = "...e\\AddOns\\Bagnon\\external\\Wildpants\\core\\settings-Settings.lua:158: attempt to call method 'GetOwnerID' (a nil value)",
 			["time"] = "2019/10/14 22:16:32",
 			["stack"] = "...e\\AddOns\\Bagnon\\external\\Wildpants\\core\\settings-Settings.lua:158: in function `GetProfile'\n...e\\AddOns\\Bagnon\\external\\Wildpants\\core\\settings-Settings.lua:130: in function `StartupSettings'\nInterface\\AddOns\\Bagnon\\main.lua:10: in function <Interface\\AddOns\\Bagnon\\main.lua:9>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\n...xternal\\Wildpants\\libs\\AceAddon-3.0\\AceAddon-3.0-12.lua:558: in function `EnableAddon'\n...xternal\\Wildpants\\libs\\AceAddon-3.0\\AceAddon-3.0-12.lua:651: in function <...xternal\\Wildpants\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:636>\n[C]: in function `LoadAddOn'\nInterface\\FrameXML\\UIParent.lua:353: in function `UIParentLoadAddOn'\nInterface\\FrameXML\\UIParent.lua:424: in function `TimeManager_LoadUI'\nInterface\\FrameXML\\UIParent.lua:693: in function <Interface\\FrameXML\\UIParent.lua:658>",
 			["session"] = 513,
 			["counter"] = 2,
-		}, -- [29]
+		}, -- [27]
 		{
 			["message"] = "...xternal\\Wildpants\\libs\\AceEvent-3.0\\AceEvent-3.0-4.lua:33: Attempt to register unknown event \"PLAYERREAGENTBANKSLOTS_CHANGED\"",
 			["time"] = "2019/10/14 22:16:32",
 			["stack"] = "[C]: in function `RegisterEvent'\n...xternal\\Wildpants\\libs\\AceEvent-3.0\\AceEvent-3.0-4.lua:33: in function `OnUsed'\n...sic\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:142: in function `RegisterEvent'\n...ace\\AddOns\\Bagnon\\external\\Wildpants\\core\\events.lua:26: in function <...ace\\AddOns\\Bagnon\\external\\Wildpants\\core\\events.lua:20>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\n...xternal\\Wildpants\\libs\\AceAddon-3.0\\AceAddon-3.0-12.lua:558: in function `EnableAddon'\n...xternal\\Wildpants\\libs\\AceAddon-3.0\\AceAddon-3.0-12.lua:571: in function `EnableAddon'\n...xternal\\Wildpants\\libs\\AceAddon-3.0\\AceAddon-3.0-12.lua:651: in function <...xternal\\Wildpants\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:636>\n[C]: in function `LoadAddOn'\nInterface\\FrameXML\\UIParent.lua:353: in function `UIParentLoadAddOn'\nInterface\\FrameXML\\UIParent.lua:424: in function `TimeManager_LoadUI'\nInterface\\FrameXML\\UIParent.lua:693: in function <Interface\\FrameXML\\UIParent.lua:658>",
 			["session"] = 513,
 			["counter"] = 2,
-		}, -- [30]
+		}, -- [28]
 		{
 			["message"] = "...xternal\\Wildpants\\libs\\AceEvent-3.0\\AceEvent-3.0-4.lua:33: Attempt to register unknown event \"GUILDBANKFRAME_OPENED\"",
 			["time"] = "2019/10/14 22:16:32",
 			["stack"] = "[C]: in function `RegisterEvent'\n...xternal\\Wildpants\\libs\\AceEvent-3.0\\AceEvent-3.0-4.lua:33: in function `OnUsed'\n...sic\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:142: in function `RegisterEvent'\n...s\\Bagnon\\external\\Wildpants\\features\\autoDisplay.lua:60: in function `RegisterDisplayEvents'\n...s\\Bagnon\\external\\Wildpants\\features\\autoDisplay.lua:29: in function `RegisterGameEvents'\n...s\\Bagnon\\external\\Wildpants\\features\\autoDisplay.lua:13: in function <...s\\Bagnon\\external\\Wildpants\\features\\autoDisplay.lua:12>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\n...xternal\\Wildpants\\libs\\AceAddon-3.0\\AceAddon-3.0-12.lua:558: in function `EnableAddon'\n...xternal\\Wildpants\\libs\\AceAddon-3.0\\AceAddon-3.0-12.lua:571: in function `EnableAddon'\n...xternal\\Wildpants\\libs\\AceAddon-3.0\\AceAddon-3.0-12.lua:651: in function <...xternal\\Wildpants\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:636>\n[C]: in function `LoadAddOn'\nInterface\\FrameXML\\UIParent.lua:353: in function `UIParentLoadAddOn'\nInterface\\FrameXML\\UIParent.lua:424: in function `TimeManager_LoadUI'\nInterface\\FrameXML\\UIParent.lua:693: in function <Interface\\FrameXML\\UIParent.lua:658>",
 			["session"] = 513,
 			["counter"] = 2,
-		}, -- [31]
+		}, -- [29]
 		{
 			["message"] = "...Bagnon\\external\\Wildpants\\features\\tooltipCounts.lua:166: hooksecurefunc(): SetRecipeReagentItem is not a function",
 			["time"] = "2019/10/14 22:16:32",
 			["stack"] = "[C]: in function `hooksecurefunc'\n...Bagnon\\external\\Wildpants\\features\\tooltipCounts.lua:166: in function <...Bagnon\\external\\Wildpants\\features\\tooltipCounts.lua:162>\n...Bagnon\\external\\Wildpants\\features\\tooltipCounts.lua:178: in function <...Bagnon\\external\\Wildpants\\features\\tooltipCounts.lua:175>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\n...xternal\\Wildpants\\libs\\AceAddon-3.0\\AceAddon-3.0-12.lua:558: in function `EnableAddon'\n...xternal\\Wildpants\\libs\\AceAddon-3.0\\AceAddon-3.0-12.lua:571: in function `EnableAddon'\n...xternal\\Wildpants\\libs\\AceAddon-3.0\\AceAddon-3.0-12.lua:651: in function <...xternal\\Wildpants\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:636>\n[C]: in function `LoadAddOn'\nInterface\\FrameXML\\UIParent.lua:353: in function `UIParentLoadAddOn'\nInterface\\FrameXML\\UIParent.lua:424: in function `TimeManager_LoadUI'\nInterface\\FrameXML\\UIParent.lua:693: in function <Interface\\FrameXML\\UIParent.lua:658>",
 			["session"] = 513,
 			["counter"] = 2,
-		}, -- [32]
+		}, -- [30]
 		{
 			["message"] = "Interface\\AddOns\\BagBrother\\Startup.lua:57: Attempt to register unknown event \"VOID_STORAGE_OPEN\"",
 			["time"] = "2019/10/14 22:16:32",
@@ -258,19 +242,13 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `RegisterEvent'\nInterface\\AddOns\\BagBrother\\Startup.lua:57: in function `SetupEvents'\nInterface\\AddOns\\BagBrother\\Startup.lua:29: in function `?'\nInterface\\AddOns\\BagBrother\\Startup.lua:20: in function <Interface\\AddOns\\BagBrother\\Startup.lua:20>",
 			["session"] = 513,
 			["counter"] = 2,
-		}, -- [33]
-		{
-			["message"] = "(null)",
-			["session"] = 513,
-			["time"] = "2019/10/13 16:00:25",
-			["counter"] = 26,
-		}, -- [34]
+		}, -- [31]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Bagnon\\modules\\main.xml",
-			["session"] = 514,
 			["time"] = "2019/10/14 22:19:40",
+			["session"] = 514,
 			["counter"] = 3,
-		}, -- [35]
+		}, -- [32]
 		{
 			["message"] = "Interface\\AddOns\\xVerminz\\BestFood.lua:293: bad argument #1 to 'pairs' (table expected, got nil)",
 			["time"] = "2019/10/14 23:01:21",
@@ -278,6 +256,44 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `pairs'\nInterface\\AddOns\\xVerminz\\BestFood.lua:293: in function `BuildSequence'\nInterface\\AddOns\\xVerminz\\BestFood.lua:114: in function `UpdateMacros'\nInterface\\AddOns\\xVerminz\\BestFood.lua:46: in function <Interface\\AddOns\\xVerminz\\BestFood.lua:41>",
 			["session"] = 527,
 			["counter"] = 1,
+		}, -- [33]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn '!Colorz' tried to call the protected function 'CompactRaidFrame2:SetAttribute()'.",
+			["time"] = "2019/10/14 19:30:45",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\CompactUnitFrame.lua:161: in function `CompactUnitFrame_SetUnit'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:318: in function `CompactRaidFrameContainer_AddUnitFrame'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:272: in function `CompactRaidFrameContainer_AddPets'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:182: in function `CompactRaidFrameContainer_LayoutFrames'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:130: in function `CompactRaidFrameContainer_TryUpdate'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:62: in function `CompactRaidFrameContainer_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
+			["session"] = 538,
+			["counter"] = 2,
+		}, -- [34]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVerminz' tried to call the protected function 'TargetFrameToT:Show()'.",
+			["time"] = "2019/10/15 22:21:39",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Show'\nInterface\\FrameXML\\TargetFrame.lua:910: in function <Interface\\FrameXML\\TargetFrame.lua:905>\n[C]: in function `TargetofTarget_Update'\nInterface\\FrameXML\\TargetFrame.lua:420: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>",
+			["session"] = 541,
+			["counter"] = 1,
+		}, -- [35]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn '!Colorz' tried to call the protected function 'CompactRaidFrame1:ClearAllPoints()'.",
+			["time"] = "2019/10/13 16:30:57",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `ClearAllPoints'\nInterface\\FrameXML\\FlowContainer.lua:157: in function `FlowContainer_DoLayout'\nInterface\\FrameXML\\FlowContainer.lua:17: in function `FlowContainer_ResumeUpdates'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:185: in function `CompactRaidFrameContainer_LayoutFrames'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:130: in function `CompactRaidFrameContainer_TryUpdate'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:62: in function `CompactRaidFrameContainer_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
+			["session"] = 541,
+			["counter"] = 5,
 		}, -- [36]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\PetHappiness.lua:50: Attempt to find 'this' in non-table object (used '.' instead of ':' ?)",
+			["time"] = "2019/10/15 22:29:35",
+			["locals"] = "(*temporary) = \"OnEvent\"\n(*temporary) = <function> defined @Interface\\AddOns\\xVerminz\\PetHappiness.lua:11\n",
+			["stack"] = "[C]: in function `SetScript'\nInterface\\AddOns\\xVerminz\\PetHappiness.lua:50: in main chunk",
+			["session"] = 543,
+			["counter"] = 1,
+		}, -- [37]
+		{
+			["message"] = "(null)",
+			["time"] = "2019/10/13 16:00:25",
+			["session"] = 543,
+			["counter"] = 29,
+		}, -- [38]
 	},
 }

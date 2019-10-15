@@ -1,9 +1,11 @@
 local type = 8
 
 local function clear_mark()
-    for i=1,9 do SetRaidTarget("player",i) end
-end
+	if(not UnitInParty("player")) then
+		for i=1,9 do SetRaidTarget("player",i) end
+	end
 
+end
 local function set_mark()
     clear_mark()
 
@@ -12,9 +14,10 @@ local function set_mark()
 		faction, _ = UnitFactionGroup("target")
 
 		if faction ~= "Alliance" then
-			if(UnitInParty("player") and UnitIsGroupLeader("player")) then
-				SetRaidTarget("target", type)
-			elseif(not UnitInParty("player")) then
+			--if(UnitInParty("player") and UnitIsGroupLeader("player")) then
+			--	SetRaidTarget("target", type)
+			--else
+			if(not UnitInParty("player")) then
 				SetRaidTarget("target", type)
 			end
 		end

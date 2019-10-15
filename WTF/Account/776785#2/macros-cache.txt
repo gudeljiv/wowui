@@ -9,11 +9,11 @@ VER 3 0000000000000006 "Drink" "Inv_misc_questionmark"
 END
 VER 3 0000000000000005 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:4538
+/use [nocombat]item:2287
 /castsequence [combat]item:858
 END
 VER 3 000000000000000B "PetFood" "Inv_misc_questionmark"
-#showtooltip item:4538
+#showtooltip item:2287
 /cast feed pet
-/use item:4538
+/use item:2287
 END

@@ -90,13 +90,6 @@ X: -27
 Y: 27
 W: 50
 H: 50
-Frame: NivayacBniv_Bag
-FrameLevel: 2
-Anchor: RIGHT
-X: -257
-Y: -105
-W: 274
-H: 98
 Frame: TargetFrame
 FrameLevel: 1
 Anchor: CENTER
@@ -111,6 +104,13 @@ X: 480
 Y: 100
 W: 170
 H: 240
+Frame: NivayacBniv_Bag
+FrameLevel: 2
+Anchor: RIGHT
+X: -257
+Y: -105
+W: 274
+H: 98
 Frame: GameMenuFrame
 FrameLevel: 1
 Anchor: CENTER

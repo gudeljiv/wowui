@@ -18,7 +18,7 @@ local function InitializePetHappiness()
 	PetFrameHappiness:Hide()
 
 	local happiness, damagePercentage, loyaltyRate = GetPetHappiness()
-	if happiness then
+	if happiness and not UnitIsDead("pet") and UnitExists("pet") then
 		local happy = ({"Unhappy", "Content", "Happy"})[happiness]
 		local loyalty = loyaltyRate > 0 and "gaining" or "losing"
 		if(happiness ~= 3) then
@@ -34,13 +34,21 @@ local function InitializePetHappiness()
 		else
 			PetHappinessFrame:Hide()
 		end
+	else
+		PetHappinessFrame:Hide()
 	end
 
 end
 
 --local f = CreateFrame("Frame")
---f:RegisterEvent("PLAYER_ENTERING_WORLD")
+--f:RegisterEvent("PET_DISMISS_START")
+--f:RegisterEvent("UNIT_HAPPINESS")
+----f:SetScript("OnEvent", function()
+----	PetHappinessFrame:Hide()
+----end)
+--
 --f:SetScript("OnEvent", InitializePetHappiness)
 
-PetFrame:HookScript("OnShow", InitializePetHappiness)
-PetFrame:HookScript("OnUpdate", InitializePetHappiness)
+PlayerFrame:HookScript("OnShow", InitializePetHappiness)
+PlayerFrame:HookScript("OnUpdate", InitializePetHappiness)
+
