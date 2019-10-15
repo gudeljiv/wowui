@@ -1,4 +1,0 @@
-<Ui xmlns="http://www.blizzard.com/wow/ui/">
-  <Script file="group.lua"/>
-	<Script file="panels.lua"/>
-</Ui>
