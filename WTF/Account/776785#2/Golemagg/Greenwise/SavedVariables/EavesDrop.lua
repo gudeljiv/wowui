@@ -9,8 +9,8 @@ EavesDropStatsDB = {
 				["hit"] = {
 					["Raptor Strike"] = {
 						[-2] = {
-							["time"] = "|cffffffff10/14/19 07:51:18|r\n|Hunit:Player-4465-012659A9:Greenwise|hGreenwise's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffRaptor Strike|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4469-1-416-3415-000024B580:Savannah Huntress|hSavannah Huntress|h for |cffffffff39|r |cffffffffPhysical|r.",
-							["amount"] = 39,
+							["time"] = "|cffffffff10/16/19 10:05:45|r\n|Hunit:Player-4465-012659A9:Greenwise|hGreenwise's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffRaptor Strike|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-1-414-3273-000027767E:Kolkar Stormer|hKolkar Stormer|h for |cffffffff40|r |cffffffffPhysical|r.",
+							["amount"] = 40,
 						},
 						[2] = {
 							["time"] = "|cffffffff10/12/19 05:09:54|r\n|Hunit:Player-4465-012659A9:Greenwise|hGreenwise's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffRaptor Strike|r|h hits |Hunit:Creature-0-4470-1-409-3128-000021EAAB:Kul Tiras Sailor|hKul Tiras Sailor|h for |cffffffff32|r |cffffffffPhysical|r.(Critical)",
@@ -29,8 +29,8 @@ EavesDropStatsDB = {
 					},
 					["Melee Attack"] = {
 						[-2] = {
-							["time"] = "|cffffffff10/15/19 09:24:39|r\n|Hunit:Player-4465-012659A9:Greenwise|hGreenwise's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4470-1-183-4316-0000261C47:Kolkar Packhound|hKolkar Packhound|h for |cffffffff30|r |cffffffffPhysical|r.",
-							["amount"] = 30,
+							["time"] = "|cffffffff10/16/19 10:05:50|r\n|Hunit:Player-4465-012659A9:Greenwise|hGreenwise's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-1-414-3273-000027767E:Kolkar Stormer|hKolkar Stormer|h for |cffffffff33|r |cffffffffPhysical|r.",
+							["amount"] = 33,
 						},
 						[2] = {
 							["time"] = "|cffffffff10/14/19 07:51:01|r\n|Hunit:Player-4465-012659A9:Greenwise|hGreenwise's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4469-1-416-3415-000024B547:Savannah Huntress|hSavannah Huntress|h for |cffffffff60|r |cffffffffPhysical|r.(Critical)",

@@ -42,9 +42,9 @@ EavesDropDB = {
 			["SCROLLBUTTON"] = true,
 			["HIDETAB"] = true,
 		},
-		["Kosturko - Golemagg"] = {
+		["Greenwise - Golemagg"] = {
 		},
-		["Korupcija - Stonespine"] = {
+		["Kosturko - Golemagg"] = {
 		},
 		["Paydo - Dreadmist"] = {
 			["LINEWIDTH"] = 130,
@@ -65,7 +65,7 @@ EavesDropDB = {
 			["LINEHEIGHT"] = 16,
 			["HIDETAB"] = true,
 		},
-		["Greenwise - Golemagg"] = {
+		["Korupcija - Stonespine"] = {
 		},
 		["Judawise - Golemagg"] = {
 		},

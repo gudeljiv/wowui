@@ -37,7 +37,7 @@ nMainbar.Config = {
     },
 
     expBar = {
-        mouseover = false,
+        mouseover = true,
         fontsize = 12,
         -- font = 'Fonts\\ARIALN.ttf',
         font = 'Interface\\AddOns\\nMainbar\\media\\font.ttf',

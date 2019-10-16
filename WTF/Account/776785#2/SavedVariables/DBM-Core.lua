@@ -105,7 +105,7 @@ DBM_AllSavedOptions = {
 		["SpecialWarningFontSize2"] = 36,
 		["HideTooltips"] = false,
 		["SWarnClassColor"] = true,
-		["DontShowSpecialWarningText"] = false,
+		["DisableCinematics"] = false,
 		["RangeFrameSound2"] = "none",
 		["ShowLHFrame"] = true,
 		["DontShowReminders"] = false,
@@ -222,9 +222,9 @@ DBM_AllSavedOptions = {
 		["UseRetailShamanColor"] = false,
 		["SpecialWarningFlashRepeat4"] = false,
 		["DontShowNameplateIcons"] = false,
-		["CountdownVoice3"] = "Smooth",
 		["SpecialWarningFlashRepeat2"] = false,
 		["DontShowUserTimers"] = false,
+		["CountdownVoice3"] = "Smooth",
 		["SpecialWarningFlashRepeat5"] = true,
 		["DisableStatusWhisper"] = false,
 		["EventDungMusicMythicFilter"] = true,
@@ -261,12 +261,12 @@ DBM_AllSavedOptions = {
 		["ShowPizzaMessage"] = true,
 		["AdvancedAutologBosses"] = false,
 		["SpecialWarningFlashRepeat1"] = false,
+		["DontShowSpecialWarningText"] = false,
 		["SpecialWarningFlashCol5"] = {
 			0.2, -- [1]
 			1, -- [2]
 			1, -- [3]
 		},
-		["DisableCinematics"] = false,
 		["Enabled"] = true,
 		["DontRestoreIcons"] = false,
 		["AFKHealthWarning"] = false,

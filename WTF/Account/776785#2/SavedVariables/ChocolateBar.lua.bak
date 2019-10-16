@@ -60,7 +60,7 @@ ChocolateBarDB = {
 				["g"] = 0.819607843137255,
 			},
 			["locked"] = false,
-			["fixedStrata"] = true,
+			["moveFrames"] = false,
 			["objSettings"] = {
 				["Skada"] = {
 					["enabled"] = false,
@@ -237,18 +237,18 @@ ChocolateBarDB = {
 					["customLabel"] = "B",
 				},
 			},
-			["fontName"] = "Friz Quadrata TT",
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["gap"] = 5,
-			["moveFrames"] = false,
-			["desaturated"] = false,
-			["textOffset"] = 2,
-			["height"] = 20,
+			["fontName"] = "Friz Quadrata TT",
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
 			["forceColor"] = false,
+			["desaturated"] = false,
+			["textOffset"] = 2,
+			["height"] = 20,
+			["fixedStrata"] = true,
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["textColor"] = {
 				["a"] = 1,
 				["b"] = 1,
@@ -260,7 +260,7 @@ ChocolateBarDB = {
 }
 CB_PlayedTime = {
 	["Greenwise-"] = {
-		["total"] = 64104,
+		["total"] = 70008,
 	},
 	["Whatevs-"] = {
 		["total"] = 213,

@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 550,
+	["session"] = 582,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -295,5 +295,45 @@ BugGrabberDB = {
 			["session"] = 543,
 			["counter"] = 29,
 		}, -- [38]
+		{
+			["message"] = "[string \"print(UnitXPMax(pet))\"]:1: Usage: UnitXPMax(\"unit\")",
+			["time"] = "2019/10/16 22:00:32",
+			["locals"] = "(*temporary) = nil\n",
+			["stack"] = "[C]: in function `UnitXPMax'\n[string \"print(UnitXPMax(pet))\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4609: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4270: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4306: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 552,
+			["counter"] = 1,
+		}, -- [39]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\Experience.lua:30: attempt to call method 'SetText' (a nil value)",
+			["time"] = "2019/10/16 22:17:19",
+			["locals"] = "currentXP = 4138\nmaxXP = 19400\npercent = 21\n(*temporary) = nil\n(*temporary) = playerExpFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n(*temporary) = \"4138 / 19400 (21%)\"\n(*temporary) = \"attempt to call method 'SetText' (a nil value)\"\nplayerExpFrame = playerExpFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nclass = \"HUNTER\"\n",
+			["stack"] = "Interface\\AddOns\\xVerminz\\Experience.lua:30: in function <Interface\\AddOns\\xVerminz\\Experience.lua:26>\n[C]: ?",
+			["session"] = 559,
+			["counter"] = 257,
+		}, -- [40]
+		{
+			["message"] = "[string \"pplayerExpFrame:ClearAllPoints()\"]:1: attempt to index global 'pplayerExpFrame' (a nil value)",
+			["time"] = "2019/10/16 22:21:08",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'pplayerExpFrame' (a nil value)\"\n",
+			["stack"] = "[string \"pplayerExpFrame:ClearAllPoints()\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4609: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4270: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2699: in function <Interface\\FrameXML\\ChatFrame.lua:2692>\n[C]: ?\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:338: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 562,
+			["counter"] = 1,
+		}, -- [41]
+		{
+			["message"] = "[string \"MainMenuBarExp:Hide()\"]:1: attempt to index global 'MainMenuBarExp' (a nil value)",
+			["time"] = "2019/10/16 22:24:35",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'MainMenuBarExp' (a nil value)\"\n",
+			["stack"] = "[string \"MainMenuBarExp:Hide()\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4609: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4270: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4306: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 566,
+			["counter"] = 1,
+		}, -- [42]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\Experience.lua:32: <unnamed>:SetText(): Font not set",
+			["time"] = "2019/10/16 22:35:21",
+			["locals"] = "(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = \"player (18): 4393 / 19400 (22%)\"\n",
+			["stack"] = "[C]: in function `SetText'\nInterface\\AddOns\\xVerminz\\Experience.lua:32: in function <Interface\\AddOns\\xVerminz\\Experience.lua:28>\n[C]: ?",
+			["session"] = 575,
+			["counter"] = 353,
+		}, -- [43]
 	},
 }

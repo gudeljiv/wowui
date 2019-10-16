@@ -15,6 +15,7 @@ CustomContainers.lua
 DefaultFramesCustomScale.lua
 DefaultFramesDarker.lua
 ErrorsFilter.lua
+Experience.lua
 GarbageCollector.lua
 GroopLootFrame.lua
 PetHappiness.lua

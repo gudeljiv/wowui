@@ -42,9 +42,9 @@ EavesDropDB = {
 		},
 		["Elohssa - Stonespine"] = {
 		},
-		["Korupcija - Stonespine"] = {
+		["Kosturko - Golemagg"] = {
 		},
-		["Greenwise - Golemagg"] = {
+		["Korupcija - Stonespine"] = {
 		},
 		["Paydo - Dreadmist"] = {
 			["LINEWIDTH"] = 130,
@@ -65,7 +65,7 @@ EavesDropDB = {
 				["a"] = 0.4,
 			},
 		},
-		["Kosturko - Golemagg"] = {
+		["Greenwise - Golemagg"] = {
 		},
 		["Pitchwise - Genesis"] = {
 		},

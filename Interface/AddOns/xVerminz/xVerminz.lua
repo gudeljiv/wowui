@@ -178,13 +178,6 @@ f:SetScript("OnEvent", function()
 
 	MainMenuBarExpText:SetPoint("RIGHT", MainMenuExpBar, "RIGHT", -10, 2)
 
-	MainMenuExpBar:HookScript('OnUpdate', function()
-		local currentXP = UnitXP("player")
-		local maxXP = UnitXPMax("player")
-		local percent = floor((currentXP/maxXP)*100)
-		MainMenuBarExpText:SetText(currentXP.." / "..maxXP.." ("..percent.."%)")
-	end)
-
 	PetFrame:HookScript("OnUpdate", function(self)
 		PetFrameHealthBarText:SetFont(font, 10, 'THINOUTLINE')
 		PetFrameHealthBarText:SetPoint("TOPRIGHT", PetFrameHealthBar, "TOPRIGHT", 0, 2)

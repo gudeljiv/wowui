@@ -542,13 +542,13 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Vermin"] = {
 		["m_aQuestList"] = {
-			["Minshina's Skull - false"] = {
+			["Zalazane - false"] = {
 				["m_bChecked"] = true,
 			},
 			["A Peon's Burden - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Durotar - true"] = {
+			["Minshina's Skull - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Practical Prey - false"] = {
@@ -557,7 +557,7 @@ MonkeyQuestConfig = {
 			["Report to Orgnil - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Zalazane - false"] = {
+			["Durotar - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Thwarting Kolkar Aggression - false"] = {
@@ -936,43 +936,22 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Greenwise"] = {
 		["m_aQuestList"] = {
-			["WANTED: Baron Longshore - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Hezrul Bloodmark - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Jorn Skyseer - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Raptor Horns - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Southsea Freebooters - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Trouble at the Docks - false"] = {
-				["m_bChecked"] = true,
-			},
 			["Miner's Fortune - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Stolen Booty - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Smart Drinks - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Wenikee Boltbucket - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Verog the Dervish - false"] = {
+			["Smart Drinks - false"] = {
 				["m_bChecked"] = true,
 			},
-			["The Missing Shipment - false"] = {
+			["Altered Beings - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Samophlange - false"] = {
+			["Jorn Skyseer - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Wailing Caverns - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Deepmoss Spider Eggs - false"] = {
@@ -981,19 +960,19 @@ MonkeyQuestConfig = {
 			["The Barrens - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Wailing Caverns - true"] = {
-				["m_bChecked"] = true,
-			},
 			["Egg Hunt - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Ziz Fizziks - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Altered Beings - false"] = {
+			["Hezrul Bloodmark - false"] = {
 				["m_bChecked"] = true,
 			},
 			["The Guns of Northwatch - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Trouble at the Docks - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Letter to Jin'Zil - false"] = {
