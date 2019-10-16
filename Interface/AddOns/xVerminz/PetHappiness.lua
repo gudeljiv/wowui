@@ -40,15 +40,17 @@ local function InitializePetHappiness()
 
 end
 
---local f = CreateFrame("Frame")
---f:RegisterEvent("PET_DISMISS_START")
---f:RegisterEvent("UNIT_HAPPINESS")
-----f:SetScript("OnEvent", function()
-----	PetHappinessFrame:Hide()
-----end)
---
---f:SetScript("OnEvent", InitializePetHappiness)
+local f = CreateFrame("Frame")
+f:RegisterEvent("UNIT_HAPPINESS")
+f:RegisterEvent("PET_UI_UPDATE")
+f:RegisterEvent("PET_UI_CLOSE")
+f:RegisterEvent("UNIT_PET", "player")
+--f:SetScript("OnEvent", function()
+--	PetHappinessFrame:Hide()
+--end)
 
-PlayerFrame:HookScript("OnShow", InitializePetHappiness)
-PlayerFrame:HookScript("OnUpdate", InitializePetHappiness)
+f:SetScript("OnEvent", InitializePetHappiness)
+
+--PetFrame:HookScript("OnShow", InitializePetHappiness)
+--PetFrame:HookScript("OnUpdate", InitializePetHappiness)
 
