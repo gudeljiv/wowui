@@ -354,3 +354,12 @@ end
 local faster = CreateFrame("Frame")
 faster:RegisterEvent("LOOT_READY")
 faster:SetScript("OnEvent", FastLoot)
+
+
+
+--local f = CreateFrame("FRAME")
+--f:RegisterEvent("PLAYER_ENTERING_WORLD")
+--local function eventHandler(self, event, ...)
+--	print("Hello World! Hello " .. event)
+--end
+--f:SetScript("OnEvent", eventHandler)
