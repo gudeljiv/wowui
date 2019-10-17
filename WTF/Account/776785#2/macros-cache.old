@@ -1,8 +1,6 @@
 VER 3 0000000000000008 " " "132089"
-/run petExpFrame:ClearAllPoints()
-/run playerExpFrame:ClearAllPoints()
-/run petExpFrame:SetPoint("BOTTOMLEFT", ChatFrame1, "BOTTOMRIGHT", 10, 30)
-/run playerExpFrame:SetPoint("BOTTOMLEFT", ChatFrame1, "BOTTOMRIGHT", 10, 10)
+/run print(1 - (12 / 33))
+/run PetExpFrame.text:SetTextColor(1, 1, 0, 1)
 END
 VER 3 0000000000000006 "Drink" "Inv_misc_questionmark"
 #showtooltip
@@ -11,11 +9,11 @@ VER 3 0000000000000006 "Drink" "Inv_misc_questionmark"
 END
 VER 3 0000000000000005 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:6361
+/use [nocombat]item:3770
 /castsequence [combat]item:858
 END
 VER 3 000000000000000B "PetFood" "Inv_misc_questionmark"
-#showtooltip item:0
+#showtooltip item:3770
 /cast feed pet
-/use item:0
+/use item:3770
 END

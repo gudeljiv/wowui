@@ -16,15 +16,19 @@ EavesDropDB = {
 		["Elohssa - Stonespine"] = "Default",
 		["Pitchwise - Genesis"] = "Pitchwise - Genesis",
 		["Pitchwise - Golemagg"] = "Default",
-		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
+		["Greenwise - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Default",
 		["Pepecocorita - Genesis"] = "Default",
-		["Greenwise - Golemagg"] = "Default",
+		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
 		["Ozrencic - Golemagg"] = "Ozrencic - Golemagg",
 		["Whatevs - Stonespine"] = "Default",
 	},
 	["profiles"] = {
 		["Dotwise - Golemagg"] = {
+		},
+		["Elohssa - Stonespine"] = {
+		},
+		["Pitchwise - Golemagg"] = {
 		},
 		["Verminz - Golemagg"] = {
 			["LINEWIDTH"] = 100,
@@ -38,10 +42,6 @@ EavesDropDB = {
 			["SCROLLBUTTON"] = true,
 			["NUMLINES"] = 14,
 		},
-		["Pitchwise - Golemagg"] = {
-		},
-		["Elohssa - Stonespine"] = {
-		},
 		["Kosturko - Golemagg"] = {
 		},
 		["Korupcija - Stonespine"] = {
@@ -50,31 +50,31 @@ EavesDropDB = {
 			["LINEWIDTH"] = 130,
 			["BORDER"] = {
 				["a"] = 0,
-				["b"] = 0.607843137254902,
-				["g"] = 0.607843137254902,
 				["r"] = 0.607843137254902,
+				["g"] = 0.607843137254902,
+				["b"] = 0.607843137254902,
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
-			["HIDETAB"] = true,
+			["FRAME"] = {
+				["a"] = 0.4,
+			},
 			["TEXTSIZE"] = 13,
 			["SCROLLBUTTON"] = true,
 			["NUMLINES"] = 16,
 			["LINEHEIGHT"] = 16,
-			["FRAME"] = {
-				["a"] = 0.4,
-			},
+			["HIDETAB"] = true,
 		},
 		["Greenwise - Golemagg"] = {
 		},
-		["Pitchwise - Genesis"] = {
+		["Golemagg"] = {
 		},
 		["Default"] = {
 			["BORDER"] = {
 				["a"] = 0,
-				["b"] = 0.607843137254902,
-				["g"] = 0.607843137254902,
 				["r"] = 0.607843137254902,
+				["g"] = 0.607843137254902,
+				["b"] = 0.607843137254902,
 			},
 			["LINEWIDTH"] = 130,
 			["x"] = 551.714104134467,
@@ -90,7 +90,7 @@ EavesDropDB = {
 		},
 		["Judawise - Golemagg"] = {
 		},
-		["Golemagg"] = {
+		["Pitchwise - Genesis"] = {
 		},
 		["Spija - Genesis"] = {
 		},
