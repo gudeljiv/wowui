@@ -30,6 +30,7 @@
 - [MonkeyBuddy](https://www.wowinterface.com/downloads/info25136-MonkeyBuddyClassic.html)
 - [MonkeyQuest](https://www.wowinterface.com/downloads/info25137-MonkeyQuestClassic.html)
 - [nBuff](https://github.com/L3n1n/NeavUI-Classic)
+- nHealth (literally nPower changed to display health of target)
 - [nMainbar](https://github.com/L3n1n/NeavUI-Classic) (modified to properly hide stance bar and changed font for xp/rep bar)
 - [nMinimap](https://github.com/L3n1n/NeavUI-Classic) (modified to hide guild and above the minimap tab)
 - [nPower](https://github.com/L3n1n/NeavUI-Classic)
