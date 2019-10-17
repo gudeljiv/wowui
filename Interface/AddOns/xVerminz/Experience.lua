@@ -2,7 +2,7 @@
 local font = "Fonts\\ARIALN.ttf"
 local _, class, _ = UnitClass("player");
 
-if class == "HUNTER" and UnitExists("pet") then
+if class == "HUNTER" then
     local PetExpFrame = CreateFrame("Frame", "PetExpFrame", UIParent)
     PetExpFrame:SetWidth(1)
     PetExpFrame:SetHeight(1)
