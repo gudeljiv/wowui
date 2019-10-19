@@ -1,9 +1,7 @@
 ## Interface: 54000
-## Title: |cffff0000x|rxVerminz Custom Settings 
+## Title: |cffff0000x|rVerminz Custom Settings
 ## Author: Verminz
 ## Version: 54000
-
-
 
 AutoCarrot.lua
 AutoBuyAmmo.lua

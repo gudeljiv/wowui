@@ -162,3 +162,5 @@ end
 -- PetFrame:HookScript("OnUpdate", SkinPet)
 hooksecurefunc("TargetFrame_UpdateAuras", SkinTarget)
 hooksecurefunc("PlayerFrame_Update", SkinPet)
+
+-- CompactRaidFrame1Buff1

@@ -67,29 +67,29 @@ GMMONEY = {
 			["GOLD"] = 1,
 			["CLASS"] = "PRIEST",
 		},
-		["Ozrencic"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "WARRIOR",
-		},
-		["Verminz"] = {
-			["GOLD"] = 101772,
-			["CLASS"] = "WARRIOR",
-		},
 		["Pitchwise"] = {
 			["GOLD"] = 0,
 			["CLASS"] = "SHAMAN",
+		},
+		["Judawise"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "PRIEST",
+		},
+		["Ozrencic"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "WARRIOR",
 		},
 		["Dotwise"] = {
 			["GOLD"] = 115,
 			["CLASS"] = "WARLOCK",
 		},
 		["Greenwise"] = {
-			["GOLD"] = 35396,
+			["GOLD"] = 34068,
 			["CLASS"] = "HUNTER",
 		},
-		["Judawise"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "PRIEST",
+		["Verminz"] = {
+			["GOLD"] = 115127,
+			["CLASS"] = "WARRIOR",
 		},
 	},
 }

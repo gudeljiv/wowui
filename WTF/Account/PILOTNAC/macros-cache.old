@@ -14,7 +14,7 @@ VER 3 0000000000000002 "Flash Heal" "135907"
 END
 VER 3 0000000000000005 "renew" "INV_MISC_QUESTIONMARK"
 #showtooltip Renew
-/cast [target=mouseover,help,exist][help][@targettarget, help, exists][target=player] Renew
+/cast [@mouseover,help,nodead][@target,help,nodead][@player] Renew
 END
 VER 3 0000000000000004 "Shield" "INV_MISC_QUESTIONMARK"
 #showtooltip Power Word: Shield

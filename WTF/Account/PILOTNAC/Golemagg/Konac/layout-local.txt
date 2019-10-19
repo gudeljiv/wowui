@@ -20,3 +20,10 @@ X: -27
 Y: 27
 W: 50
 H: 50
+Frame: ItemRefTooltip
+FrameLevel: 1
+Anchor: CENTER
+X: 13
+Y: -100
+W: 267
+H: 584

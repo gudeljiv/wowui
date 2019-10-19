@@ -53,7 +53,14 @@ MainMenuExpBar:HookScript('OnUpdate', function()
     local currentXP = UnitXP("player")
     local maxXP = UnitXPMax("player")
     local percent = floor((currentXP/maxXP)*100)
-    PlayerExpFrame.text:SetText("player ("..UnitLevel("player").."):\n"..currentXP.." / "..maxXP.." ("..percent.."%)")
+    local _,_,rested = GetRestState()
+
+
+    local output = "player (" .. UnitLevel("player") .. "):"
+    if rested == 2 then output = output .. " [rested x2] " end
+    output = output .. "\n" .. currentXP .. " / " .. maxXP .. " (" .. percent .. "%)"
+
+    PlayerExpFrame.text:SetText(output)
 
     r,g,b = ColorGradient(percent / 100, 1,0,0, 1,1,0, 0,1,0)
     PlayerExpFrame.text:SetTextColor(r, g, b, 1)
