@@ -48,6 +48,15 @@ local HealthBarSetColorBG = function(self, r,g,b,a, mul)
     self:SetVertexColor(r*mul, g*mul, b*mul, a)
 end
 
+local formatMissingHealth = function(text, mh)
+    if mh < 1000 then
+        text:SetFormattedText("-%d", mh)
+    elseif mh < 10000 then
+        text:SetFormattedText("-%.1fk", mh / 1e3)
+    else
+        text:SetFormattedText("-%.0fk", mh / 1e3)
+    end
+end
 
 local SetJob_HealthBar = function(self, job)
     local c
@@ -168,10 +177,10 @@ local SetJob_Indicator = function(self,job)
     -- end
 end
 
-local CreateIndicator = function (parent,w,h,point,frame,to,x,y,nobackdrop)
+local CreateIndicator = function (parent,width,height,point,frame,to,x,y,nobackdrop)
     local f = CreateFrame("Frame",nil,parent)
-    local w = pixelperfect(w)
-    local h = pixelperfect(h)
+    local w = pixelperfect(width)
+    local h = pixelperfect(height)
     local border = pixelperfect(2)
 
     f:SetWidth(w); f:SetHeight(h);
@@ -450,10 +459,10 @@ local SetJob_StatusBar = function(self,job)
     self.bg:SetVertexColor(color[1]*0.25, color[2]*0.25, color[3]*0.25)
     -- self.pandot:SetVertexColor(color[1]*0.6, color[2]*0.6, color[3]*0.6)
 end
-local CreateStatusBar = function (parent,w,h,point,frame,to,x,y,nobackdrop, isVertical)
+local CreateStatusBar = function (parent,width,height,point,frame,to,x,y,nobackdrop, isVertical)
     local f = CreateFrame("StatusBar",nil,parent)
-    local w = pixelperfect(w)
-    local h = pixelperfect(h)
+    local w = pixelperfect(width)
+    local h = pixelperfect(height)
     local border = pixelperfect(2)
     f:SetWidth(w); f:SetHeight(h);
     if not nobackdrop then
@@ -508,6 +517,33 @@ local CreateStatusBar = function (parent,w,h,point,frame,to,x,y,nobackdrop, isVe
 end
 AptechkaDefaultConfig.GridSkin_CreateIndicator = CreateIndicator
 
+
+--[[
+local SetJob_RoundIndicator = function(self,job)
+    local color
+    if job.foreigncolor and job.isforeign then
+        color = job.foreigncolor
+    else
+        color = job.color or { 1,1,1,1 }
+    end
+    self.color:SetVertexColor(unpack(color))
+end
+local CreateRoundIndicator = function (parent,width,height,point,frame,to,x,y)
+    local ri = CreateFrame("Frame",nil, parent)
+    ri:SetFrameLevel(7)
+    ri:SetWidth(width); ri:SetHeight(height)
+    ri:SetPoint(point,frame,to,x,y)
+    local ritex = ri:CreateTexture(nil,"OVERLAY", nil, 2)
+    ritex:SetAllPoints(ri)
+    ritex:SetTexture("Interface\\AddOns\\Aptechka\\roundIndicator")
+    ri.color = ritex
+
+    ri:Hide()
+
+    ri.SetJob = SetJob_RoundIndicator
+    return ri
+end
+]]
 
 local SetJob_Icon = function(self,job)
     if job.fade then self.jobs[job.name] = nil; return end
@@ -574,7 +610,7 @@ local CreateIcon = function(parent,w,h,alpha,point,frame,to,x,y)
     icon:SetWidth(w); icon:SetHeight(h)
     icon:SetPoint(point,frame,to,x,y)
     local icontex = icon:CreateTexture(nil,"ARTWORK")
-    icontex:SetTexCoord(.1, .9, .1, .9)
+    icontex:SetTexCoord(0.07, 0.93, 0.07, 0.93)
     icon:SetFrameLevel(6)
     icontex:SetPoint("TOPLEFT",icon, "TOPLEFT",0,0)
     icontex:SetPoint("BOTTOMRIGHT",icon, "BOTTOMRIGHT",0,0)
@@ -585,6 +621,7 @@ local CreateIcon = function(parent,w,h,alpha,point,frame,to,x,y)
 
     local icd = CreateFrame("Cooldown",nil,icon, "CooldownFrameTemplate")
     icd.noCooldownCount = true -- disable OmniCC for this cooldown
+    icd:SetHideCountdownNumbers(true)
     icd:SetReverse(true)
     icd:SetDrawEdge(false)
     icd:SetAllPoints(icontex)
@@ -646,7 +683,7 @@ local function SetJob_DebuffIcon(self, debuffType, expirationTime, duration, ico
     self.debuffTypeTexture:SetVertexColor(color.r, color.g, color.b, 1)
 
     if isBossAura then
-        self:SetScale(1.4)
+        self:SetScale(Aptechka.db.debuffBossScale)
     else
         self:SetScale(1)
     end
@@ -655,6 +692,7 @@ end
 local SetDebuffOrientation = function(self, orientation, size)
     local it = self.texture
     local dtt = self.debuffTypeTexture
+    local text = self.stacktext
     -- local w = self.width
     -- local h = self.height
     local w = size
@@ -664,36 +702,43 @@ local SetDebuffOrientation = function(self, orientation, size)
     dtt:ClearAllPoints()
 
     -- local simple = false
+    -- local corner = true
 
     -- if simple then
     --     it:SetSize(pixelperfect(h - 2), pixelperfect(h - 2*p))
     --     it:SetPoint("TOPLEFT", self, "TOPLEFT", p, -p)
     --     dtt:SetSize(h, h)
     --     dtt:SetPoint("TOPLEFT", self, "TOPLEFT", 0, 0)
-    -- else
-        if orientation == "VERTICAL" then
-            self:SetSize(w,h)
-            it:SetSize(h,h)
-            it:SetPoint("TOPLEFT", self, "TOPLEFT", 0, 0)
-            dtt:SetSize(h*0.2,h)
-            dtt:SetPoint("TOPLEFT", it, "TOPRIGHT", 0, 0)
-            -- dtt:SetSize(h+2,h+2)
-            -- dtt:SetPoint("TOPLEFT", self, "TOPLEFT", -1, 1)
-        else
-            self:SetSize(h,w)
+    -- elseif corner then
+    --     self:SetSize(h,h)
+    --     it:SetSize(h,h)
+    --     it:SetPoint("TOPLEFT", self, "TOPLEFT", 0, 0)
 
-            -- dtt:SetSize(h,h*0.2)
-            -- dtt:SetPoint("BOTTOMLEFT", it, "TOPLEFT", 0, 0)
+    --     dtt:SetTexture[[Interface\AddOns\Aptechka\corner]]
+    --     dtt:SetTexCoord(1,1,0,1,1,0,0,0)
+    --     dtt:SetSize(h*0.6, h*0.6)
+    --     dtt:SetDrawLayer("ARTWORK", 3)
+    --     dtt:SetPoint("TOPLEFT", self, "TOPLEFT", 0,0)
 
-            dtt:SetSize(w,h*0.2)
-            dtt:SetPoint("BOTTOMLEFT", self, "BOTTOMLEFT", 0, 0)
-            -- dtt:SetPoint("TOPLEFT", it, "TOPLEFT", 0, h*0.2)
-            -- dtt:SetPoint("BOTTOMRIGHT", it, "BOTTOMRIGHT", 0, 0)
-
-            it:SetSize(h,h)
-            it:SetPoint("BOTTOMLEFT", dtt, "TOPLEFT", 0, 0)
-        end
-    -- end
+    if orientation == "VERTICAL" then
+        local dttLen = h*0.22
+        self:SetSize(h + dttLen,h)
+        it:SetSize(h,h)
+        it:SetPoint("TOPLEFT", self, "TOPLEFT", 0, 0)
+        dtt:SetSize(dttLen,h)
+        dtt:SetPoint("TOPLEFT", it, "TOPRIGHT", 0, 0)
+        dtt:SetTexCoord(0,1,0,1)
+        text:SetPoint("BOTTOMRIGHT", it,"BOTTOMRIGHT", 2,-1)
+    else
+        local dttLen = h*0.25
+        self:SetSize(h,w + dttLen)
+        dtt:SetSize(w, dttLen)
+        dtt:SetPoint("BOTTOMLEFT", self, "BOTTOMLEFT", 0, 0)
+        dtt:SetTexCoord(0,1,0,0,1,1,1,0)
+        it:SetSize(h,h)
+        it:SetPoint("BOTTOMLEFT", dtt, "TOPLEFT", 0, 0)
+        text:SetPoint("BOTTOMRIGHT", it,"BOTTOMRIGHT", 3,1)
+    end
 end
 
 local AlignDebuffIcons = function(icons, orientation)
@@ -735,18 +780,12 @@ local CreateDebuffIcon = function(parent, width, height, alpha, point, frame, to
     icontex:SetTexCoord(.2, .8, .2, .8)
 
     local dttex = icon:CreateTexture(nil, "ARTWORK", nil, -2)
-    dttex:SetTexture("Interface\\BUTTONS\\WHITE8X8")
+    dttex:SetTexture([[Interface\AddOns\Aptechka\debuffType]])
     icon.debuffTypeTexture = dttex
 
     icon.SetOrientation = SetDebuffOrientation
 
     icon:SetOrientation("VERTICAL", w)
-
-    -- icon:SetBackdrop{
-        -- bgFile = "Interface\\BUTTONS\\WHITE8X8", tile = true, tileSize = 0,
-        -- insets = {left = 0, right = -2, top = 0, bottom = 0},
-    -- }
-    -- icon:SetBackdropColor(0, 0, 0, 1)
 
     icon.SetJob = SetJob_DebuffIcon
 
@@ -797,9 +836,12 @@ local CreateProgressIcon = function(parent, width, height, alpha, point, frame, 
         self:GetParent():Hide()
     end)
 
+    local iconSubFrame = CreateFrame("Frame", nil, icon)
+    iconSubFrame:SetAllPoints(icon)
+    iconSubFrame:SetFrameLevel(8)
     local icontex = icon.texture
-    icontex:SetParent(cdf)
-    icontex:SetDrawLayer("ARTWORK", 3)
+    icontex:SetParent(iconSubFrame)
+    icontex:SetDrawLayer("ARTWORK", 5)
 
     icon.SetJob = SetJob_ProgressIcon
 
@@ -809,7 +851,7 @@ local CreateProgressIcon = function(parent, width, height, alpha, point, frame, 
 end
 
 local Text1_SetColor = function(self, r,g,b)
-    -- self:SetTextColor(r,g,b)
+    self:SetTextColor(r,g,b)
 end
 local Text1_SetColorInverted = function(self, r,g,b)
     self:SetTextColor(r*0.2,g*0.2,b*0.2)
@@ -832,15 +874,6 @@ local SetJob_Text1 = function(self,job)
         local r,g,b,a = unpack(c)
         local mul = Aptechka.db.nameColorMultiplier or 1
         self:SetColor(multiplyColor(mul, r,g,b,a))
-    end
-end
-local formatMissingHealth = function(text, mh)
-    if mh < 1000 then
-        text:SetFormattedText("-%d", mh)
-    elseif mh < 10000 then
-        text:SetFormattedText("-%.1fk", mh / 1e3)
-    else
-        text:SetFormattedText("-%.0fk", mh / 1e3)
     end
 end
 local SetJob_Text2 = function(self,job) -- text2 is always green
@@ -1016,7 +1049,7 @@ local function CreateAbsorbSideBar(hp)
     local absorb = CreateFrame("Frame", nil, hp)
     absorb:SetParent(hp)
     -- absorb:SetPoint("BOTTOMLEFT",self,"BOTTOMLEFT",0,0)
-    absorb:SetPoint("TOPLEFT",self,"TOPLEFT",-3,0)
+    absorb:SetPoint("TOPLEFT",hp,"TOPLEFT",-3,0)
     absorb:SetWidth(3)
 
     local at = absorb:CreateTexture(nil, "ARTWORK", nil, -4)
@@ -1113,11 +1146,14 @@ end
 AptechkaDefaultConfig.GridSkin_CreateTextTimer = CreateTextTimer
 
 
+local border_backdrop = {
+    edgeFile = "Interface\\Addons\\Aptechka\\border", tileEdge = true, edgeSize = 14,
+    insets = {left = -2, right = -2, top = -2, bottom = -2},
+}
 local SetJob_Border = function(self,job)
     if job.color then
-        -- self:SetBackdropColor(unpack(job.color))
         local r,g,b = unpack(job.color)
-        self:SetVertexColor(r,g,b,0.5)
+        self:SetBackdropBorderColor(r,g,b,0.5)
     end
 end
 
@@ -1186,6 +1222,9 @@ end
 
 local optional_widgets = {
         raidbuff = function(self) return CreateIndicator(self,5,5,"TOPLEFT",self,"TOPLEFT",0,0) end,
+        totemCluster1 = function(self) return CreateIndicator(self,5,5,"TOPLEFT",self,"TOPLEFT",7,0) end,
+        totemCluster2 = function(self) return CreateIndicator(self,5,5,"TOPLEFT",self,"TOPLEFT",14,0) end,
+        totemCluster3 = function(self) return CreateIndicator(self,5,5,"TOPLEFT",self,"TOPLEFT",21,0) end,
         --top
         spell1  = function(self) return CreateIndicator(self,9,9,"BOTTOMRIGHT",self,"BOTTOMRIGHT",0,0) end,
         --bottomright
@@ -1274,7 +1313,7 @@ local function Reconf(self)
         self.text1:SetShadowOffset(0,0)
     end
 
-    local stackFont = nameFont
+    local stackFont = LSM:Fetch("font", Aptechka.db.stackFontName)
     local stackFontSize = Aptechka.db.stackFontSize
     for i, icon in ipairs(self.debuffIcons) do
         icon.stacktext:SetFont(stackFont, stackFontSize, "OUTLINE")
@@ -1323,6 +1362,8 @@ local function Reconf(self)
         end
         self.debuffIcons:Align("VERTICAL")
 
+        self.bossdebuff:SetPoint("BOTTOMLEFT", self.debuffIcons[1], "BOTTOMRIGHT",0,0)
+
     else
         self.health:SetOrientation("HORIZONTAL")
         self.power:SetOrientation("HORIZONTAL")
@@ -1365,6 +1406,8 @@ local function Reconf(self)
             icon:SetOrientation("HORIZONTAL", debuffSize)
         end
         self.debuffIcons:Align("HORIZONTAL")
+
+        self.bossdebuff:SetPoint("BOTTOMLEFT", self.debuffIcons[1], "TOPLEFT",0,0)
     end
 
 end
@@ -1381,35 +1424,29 @@ AptechkaDefaultConfig.GridSkin = function(self)
     local font = LSM:Fetch("font",  Aptechka.db.nameFontName)
     local fontsize = Aptechka.db.nameFontSize
     local manabar_width = config.manabarwidth
-    local border = pixelperfect(2)
+    local outlineSize = pixelperfect(2)
 
     self.ReconfigureUnitFrame = Reconf
 
-    -- local backdrop = {
-    --     bgFile = "Interface\\BUTTONS\\WHITE8X8", tile = true, tileSize = 0,
-    --     insets = {left = -2, right = -2, top = -2, bottom = -2},
-    -- }
-    -- self:SetBackdrop(backdrop)
-    -- self:SetBackdropColor(0, 0, 0, 1)
-
-    local frameborder = MakeBorder(self, "Interface\\BUTTONS\\WHITE8X8", -border, -border, -border, -border, -2)
-    frameborder:SetVertexColor(0,0,0,1)
+    local outline = MakeBorder(self, "Interface\\BUTTONS\\WHITE8X8", -outlineSize, -outlineSize, -outlineSize, -outlineSize, -2)
+    outline:SetVertexColor(0,0,0,1)
 
     -- local powerbar = CreateFrame("StatusBar", nil, self)
     local powerbar = Aptechka.CreateCustomStatusBar(nil, self, "VERTICAL")
-	powerbar:SetWidth(4)
+    powerbar:SetWidth(4)
     powerbar:SetPoint("TOPRIGHT",self,"TOPRIGHT",0,0)
     powerbar:SetHeight(db.height)
-	powerbar:SetStatusBarTexture(powertexture)
+    powerbar:SetStatusBarTexture(powertexture)
     powerbar:GetStatusBarTexture():SetDrawLayer("ARTWORK",-6)
     powerbar:SetMinMaxValues(0,100)
     powerbar:SetOrientation("VERTICAL")
+    -- powerbar:SetStatusBarColor(0.5,0.5,1)
     powerbar.SetJob = SetJob_HealthBar
     powerbar.OnPowerTypeChange = PowerBar_OnPowerTypeChange
     powerbar.SetColor = HealthBarSetColorFG
 
     local pbbg = powerbar:CreateTexture(nil,"ARTWORK",nil,-8)
-	pbbg:SetAllPoints(powerbar)
+    pbbg:SetAllPoints(powerbar)
     pbbg:SetTexture(powertexture)
     pbbg.SetColor = HealthBarSetColorBG
     powerbar.bg = pbbg
@@ -1417,7 +1454,7 @@ AptechkaDefaultConfig.GridSkin = function(self)
 
     -- local hp = CreateFrame("StatusBar", nil, self)
     local hp = Aptechka.CreateCustomStatusBar(nil, self, "VERTICAL")
-	--hp:SetAllPoints(self)
+    --hp:SetAllPoints(self)
     hp:SetPoint("TOPLEFT",self,"TOPLEFT",0,0)
     hp:SetPoint("TOPRIGHT",powerbar,"TOPRIGHT",0,0)
     hp:SetHeight(db.height)
@@ -1430,7 +1467,7 @@ AptechkaDefaultConfig.GridSkin = function(self)
     --hp:SetValue(0)
 
     local hpbg = hp:CreateTexture(nil,"ARTWORK",nil,-8)
-	hpbg:SetAllPoints(hp)
+    hpbg:SetAllPoints(hp)
     hpbg:SetTexture(texture)
     hpbg.SetColor = HealthBarSetColorBG
     hp.bg = hpbg
@@ -1543,8 +1580,11 @@ AptechkaDefaultConfig.GridSkin = function(self)
     hp.incoming = hpi
 
     local p4 = pixelperfect(3.5)
-    local border = MakeBorder(self, "Interface\\BUTTONS\\WHITE8X8", -p4, -p4, -p4, -p4, -5)
-    border:SetVertexColor(1, 1, 1, 0.5)
+    local border = CreateFrame("Frame", nil, self)
+    border:SetPoint("TOPLEFT", self, "TOPLEFT", -p4, p4)
+    border:SetPoint("BOTTOMRIGHT", self, "BOTTOMRIGHT", p4, -p4)
+    border:SetBackdrop(border_backdrop)
+    border:SetBackdropBorderColor(1, 1, 1, 0.5)
     border.SetJob = SetJob_Border
     border:Hide()
 
@@ -1563,7 +1603,7 @@ AptechkaDefaultConfig.GridSkin = function(self)
     local text2 = hp:CreateFontString(nil, "ARTWORK", "GameFontNormal")
     text2:SetPoint("TOP",text,"BOTTOM",0,0)
     text2:SetJustifyH"CENTER"
-    text2:SetFont(font, fontsize-3)
+    text2:SetFont(font, fontsize-2)
     text2.SetJob = SetJob_Text2
     text2:SetTextColor(0.2, 1, 0.2)
     text2.parent = self
@@ -1627,10 +1667,13 @@ AptechkaDefaultConfig.GridSkin = function(self)
     self.debuffIcons:Align("VERTICAL")
 
     -- local brcorner = CreateCorner(self, 21, 21, "BOTTOMRIGHT", self, "BOTTOMRIGHT",0,0)
-    local blcorner = CreateCorner(self, 12, 12, "BOTTOMLEFT", self.dicon1, "BOTTOMRIGHT",0,0, "BOTTOMLEFT") --last arg changes orientation
+    local blcorner = CreateCorner(self, 16, 16, "BOTTOMLEFT", self.debuffIcons[1], "BOTTOMRIGHT",0,0, "BOTTOMLEFT") --last arg changes orientation
 
     local trcorner = CreateCorner(self, 16, 30, "TOPRIGHT", self, "TOPRIGHT",0,0, "TOPRIGHT")
     self.healfeedback = trcorner
+
+    -- local roundIndicator = CreateRoundIndicator(self, 13, 13, "BOTTOMLEFT", self, "BOTTOMLEFT",-8, -8)
+    -- self.dispel = roundIndicator
 
     self.health = hp
     self.text1 = text
@@ -1640,22 +1683,6 @@ AptechkaDefaultConfig.GridSkin = function(self)
     self.power = powerbar
 
     self.border = border
-
-    -- self.spell1 = br
-    -- self.spell2 = topind
-    -- self.spell3 = tr
-    -- self.spell4 = btm
-    -- self.spell5 = left
-    -- self.bar1 = bar1
-    -- self.bar2 = bar2
-    -- self.bar3 = bar3
-    -- self.bar4 = vbar1
-    -- self.bars = bars
-
-
-
-
-    -- self.bars = bars
 
     self._optional_widgets = optional_widgets
 
@@ -1689,7 +1716,6 @@ AptechkaDefaultConfig.GridSkin = function(self)
     end
 
     self.bossdebuff = blcorner
-    self.dispel = nil
     self.icon = icon
     self.castIcon = progressIcon
     self.raidicon = raidicon
@@ -1704,6 +1730,19 @@ AptechkaDefaultConfig.GridSkin = function(self)
     self.OnDead = OnDead
     self.OnAlive = OnAlive
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 do

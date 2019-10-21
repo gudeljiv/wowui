@@ -10,7 +10,7 @@ local DispelTypes = helpers.DispelTypes
 local RangeCheckBySpell = helpers.RangeCheckBySpell
 local IsPlayerSpell = IsPlayerSpell
 
-
+local color1 = { 0.9, 0, 0 }
 local bossDebuff = { type = "HARMFUL", assignto = "bossdebuff", color = color1, priority = 40, pulse = true }
 local tankCD = { type = "HELPFUL", assignto = "icon", global = true, showDuration = true, priority = 94}
 local survivalCD = { type = "HELPFUL", assignto = "shieldicon", global = true, showDuration = true, priority = 90 }
@@ -96,7 +96,7 @@ if playerClass == "PRIEST" then
         RangeCheckBySpell(2050),
     }
 
-    -- DispelTypes("MAGIC|DISEASE")
+    DispelTypes("Magic", "Disease")
 
 end
 
@@ -120,7 +120,7 @@ if playerClass == "DRUID" then
         RangeCheckBySpell(5185),
     }
 
-     -- DispelTypes("MAGIC|CURSE|POISON")
+    DispelTypes("Curse", "Poison")
 end
 
 
@@ -143,7 +143,7 @@ if playerClass == "PALADIN" then
         RangeCheckBySpell(635),
     }
 
-    -- DispelTypes("MAGIC|DISEASE|POISON")
+    DispelTypes("Magic", "Disease", "Poison")
 
 end
 
@@ -157,6 +157,22 @@ if playerClass == "SHAMAN" then
     -- Healing Way
     A{ id = 29203, type = "HELPFUL", assignto = "bar4", showStacks = 3, color = {38/255, 221/255, 163/255} }
 
+    -- Earth
+    A{ id = { 8072, 8156, 8157, 10403, 10404, 10405 }, type = "HELPFUL", assignto = "totemCluster2", isMine = true, color = {151/255, 86/255, 168/255} }  -- Stoneskin Totem
+    A{ id = { 8076, 8162, 8163, 10441, 25362 }, type = "HELPFUL", assignto = "totemCluster2", isMine = true, color = {15/255, 78/255, 60/255} }  -- Strength of Earth Totem
+    -- Fire
+    A{ id = { 8182, 10476, 10477 }, type = "HELPFUL", assignto = "raidbuff", isMine = true, color = { 1,0.4,0.4} }  -- Frost Resistance Totem
+    -- Water
+    A{ id = { 16191, 17355, 17360 }, type = "HELPFUL", assignto = "totemCluster1", isMine = true, color = {38/255, 221/255, 163/255} }  -- Mana Tide Totem
+    A{ id = { 5677, 10491, 10493, 10494 }, type = "HELPFUL", assignto = "totemCluster1", isMine = true, color = { 187/255, 75/255, 128/255 } }  -- Mana Spring Totem
+    A{ id = { 5672, 6371, 6372, 10460, 10461 }, type = "HELPFUL", assignto = "totemCluster1", isMine = true, color = { 0.63, 0.8, 0.35 } }  -- Healing Stream Totem
+    A{ id = { 8185, 10534, 10535 }, type = "HELPFUL", assignto = "totemCluster1", isMine = true, color = { 65/255, 110/255, 1 } }  -- Fire Resistance Totem
+    -- Air
+    A{ id = 8178, type = "HELPFUL", assignto = "totemCluster3", isMine = true, color = { 0.6, 0, 1 } }  -- Grounding Totem
+    A{ id = 25909, type = "HELPFUL", assignto = "totemCluster3", isMine = true, color = {149/255, 121/255, 214/255} }  -- Tranquil Air Totem
+    A{ id = { 8836, 10626, 25360 }, type = "HELPFUL", assignto = "totemCluster3", isMine = true, color = { 65/255, 110/255, 1 } }  -- Grace of Air Totem
+    A{ id = { 10596, 10598, 10599 }, type = "HELPFUL", assignto = "totemCluster3", isMine = true, color = {52/255, 172/255, 114/255} }  -- Nature Resistance Totem
+    
     -- Ancestral Healing
     A{ id = { 16177, 16236, 16237 }, type = "HELPFUL", assignto = "bars", showDuration = true, color = { 1, 0.85, 0} }
 
@@ -171,7 +187,7 @@ if playerClass == "SHAMAN" then
         RangeCheckBySpell(331),
     }
 
-    -- DispelTypes("POISON|DISEASE")
+    DispelTypes("Poison", "Disease")
 
 end
 
@@ -184,7 +200,7 @@ if playerClass == "MAGE" then
     -- Amplify Magic
     A{ id = { 1008, 8455, 10169, 10170 }, type = "HELPFUL", assignto = "spell3", color = {1,0.7,0.5}, priority = 80 }
 
-    -- DispelTypes("CURSE")
+    DispelTypes("Curse")
 end
 
 if playerClass == "WARRIOR" then

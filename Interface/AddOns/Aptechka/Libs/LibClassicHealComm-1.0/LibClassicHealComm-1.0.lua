@@ -1,13 +1,13 @@
 --[[
 Name: LibClassicHealComm-1.0
-Revision: $Revision: 19 $
+Revision: $Revision: 23 $
 Author(s): Aviana, Original by Shadowed (shadowed.wow@gmail.com)
 Description: Healing communication library. This is a heavily modified clone of LibHealComm-4.0.
 Dependencies: LibStub, ChatThrottleLib
 ]]
 
 local major = "LibClassicHealComm-1.0"
-local minor = 19
+local minor = 23
 assert(LibStub, string.format("%s requires LibStub.", major))
 
 local HealComm = LibStub:NewLibrary(major, minor)
@@ -390,35 +390,37 @@ local function filterData(spells, filterGUID, bitFlag, time, ignoreGUID)
 	local healAmount = 0
 	local currentTime = GetTime()
 	
-	for _, pending in pairs(spells) do
-		if( pending.bitType and bit.band(pending.bitType, bitFlag) > 0 ) then
-			for i=1, #(pending), 5 do
-				local guid = pending[i]
-				if( guid == filterGUID or ignoreGUID ) then
-					local amount = pending[i + 1]
-					local stack = pending[i + 2]
-					local endTime = pending[i + 3]
-					endTime = endTime > 0 and endTime or pending.endTime
+	if spells then
+		for _, pending in pairs(spells) do
+			if( pending.bitType and bit.band(pending.bitType, bitFlag) > 0 ) then
+				for i=1, #(pending), 5 do
+					local guid = pending[i]
+					if( guid == filterGUID or ignoreGUID ) then
+						local amount = pending[i + 1]
+						local stack = pending[i + 2]
+						local endTime = pending[i + 3]
+						endTime = endTime > 0 and endTime or pending.endTime
 
-					-- Direct heals are easy, if they match the filter then return them
-					if( ( pending.bitType == DIRECT_HEALS ) and ( not time or endTime <= time ) ) then
-						healAmount = healAmount + amount * stack
-					-- Channeled heals and hots, have to figure out how many times it'll tick within the given time band
-					elseif( ( pending.bitType == HOT_HEALS or pending.bitType == CHANNEL_HEALS ) and endTime > currentTime ) then
-						local ticksLeft = pending[i + 4]
-						if( not time or time >= endTime ) then
-							healAmount = healAmount + (amount * stack) * ticksLeft
-						else
-							local secondsLeft = endTime - currentTime
-							local bandSeconds = time - currentTime
-							local ticks = math.floor(math.min(bandSeconds, secondsLeft) / pending.tickInterval)
-							local nextTickIn = secondsLeft % pending.tickInterval
-							local fractionalBand = bandSeconds % pending.tickInterval
-							if( nextTickIn > 0 and nextTickIn < fractionalBand ) then
-								ticks = ticks + 1
+						-- Direct heals are easy, if they match the filter then return them
+						if( ( pending.bitType == DIRECT_HEALS ) and ( not time or endTime <= time ) ) then
+							healAmount = healAmount + amount * stack
+						-- Channeled heals and hots, have to figure out how many times it'll tick within the given time band
+						elseif( ( pending.bitType == HOT_HEALS or pending.bitType == CHANNEL_HEALS ) and endTime > currentTime ) then
+							local ticksLeft = pending[i + 4]
+							if( not time or time >= endTime ) then
+								healAmount = healAmount + (amount * stack) * ticksLeft
+							else
+								local secondsLeft = endTime - currentTime
+								local bandSeconds = time - currentTime
+								local ticks = math.floor(math.min(bandSeconds, secondsLeft) / pending.tickInterval)
+								local nextTickIn = secondsLeft % pending.tickInterval
+								local fractionalBand = bandSeconds % pending.tickInterval
+								if( nextTickIn > 0 and nextTickIn < fractionalBand ) then
+									ticks = ticks + 1
+								end
+								
+								healAmount = healAmount + (amount * stack) * math.min(ticks, ticksLeft)
 							end
-							
-							healAmount = healAmount + (amount * stack) * math.min(ticks, ticksLeft)
 						end
 					end
 				end
@@ -432,7 +434,7 @@ end
 -- Gets healing amount using the passed filters
 function HealComm:GetHealAmount(guid, bitFlag, time, casterGUID)
 	local amount = 0
-	if( casterGUID and pendingHeals[casterGUID] ) then
+	if( casterGUID and (pendingHeals[casterGUID] or pendingHots[casterGUID]) ) then
 		amount = filterData(pendingHeals[casterGUID], guid, bitFlag, time) + filterData(pendingHots[casterGUID], guid, bitFlag, time)
 	elseif( not casterGUID ) then
 		for _, spells in pairs(pendingHeals) do
@@ -708,7 +710,7 @@ if( playerClass == "DRUID" ) then
 				healAmount = healAmount * 1.50
 			end
 			
-			if( spellData[spellID].ticks ) then
+			if( spellName == Tranquility ) then
 				return CHANNEL_HEALS, math.ceil(healAmount / spellData[spellID].ticks), spellData[spellID].ticks, spellData[spellID].ticks
 			end
 			
@@ -919,7 +921,7 @@ if( playerClass == "PRIEST" ) then
 			local healAmount = hotData[spellID].average
 			local spellPower = GetSpellBonusHealing()
 			local healModifier, spModifier = playerHealModifier, 1
-			local totalTicks, duration
+			local totalTicks, duration, ticks
 
 			healModifier = healModifier + talentData[SpiritualHealing].current
 
@@ -1184,7 +1186,7 @@ function HealComm:UNIT_AURA(unit)
 	local increase, decrease, playerIncrease, playerDecrease = 1, 1, 1, 1
 
 	-- Scan debuffs
-	id = 1
+	local id = 1
 	while( true ) do
 		local _, _, stack, _, _, _, _, _, _, spellID = UnitAura(unit, id, "HARMFUL")
 		if( not spellID ) then break end
@@ -1291,6 +1293,7 @@ local function parseDirectHeal(casterGUID, spellID, amount, castTime, ...)
 	local endTime
 	if unit == "player" then
 		endTime = select(5, CastingInfo())
+		endTime = endTime / 1000
 	else
 		endTime = GetTime() + castTime
 	end
@@ -1320,6 +1323,8 @@ local function parseChannelHeal(casterGUID, spellID, amount, totalTicks, ...)
 	local startTime, endTime
 	if unit == "player" then
 		startTime, endTime = select(4, ChannelInfo())
+		startTime = startTime / 1000
+		endTime = endTime / 1000
 	else
 		startTime = GetTime()
 		endTime = GetTime() + (GetSpellInfo(spellID) == GetSpellInfo(136) and 5 or 10)
@@ -1475,16 +1480,16 @@ function HealComm:CHAT_MSG_ADDON(prefix, message, channel, sender)
 	if( not commType or not spellID or not casterGUID ) then return end
 	
 	-- New direct heal - D:<castTime>:<spellID>:<amount>:target1,target2...
-	if( commType == "D" and arg1 and arg2 ) then
+	if( commType == "D" and arg1 and arg2 and castTime ) then
 		parseDirectHeal(casterGUID, spellID, tonumber(arg1), castTime, string.split(",", arg2))
 	-- Direct or channel heal delayed - DL:<extra>:<spellID>:<start>:<end>...
 	elseif( commType == "DL" and arg1 and arg2 ) then
-		parseHealDelayed(casterGUID, tonumber(arg1)/1000, tonumber(arg2)/1000, spellID)
+		parseHealDelayed(casterGUID, tonumber(arg1), tonumber(arg2), spellID)
 	-- New channel heal - C:<extra>:<spellID>:<amount>:<totalTicks>:target1,target2...
 	elseif( commType == "C" and arg1 and arg3 ) then
 		parseChannelHeal(casterGUID, spellID, tonumber(arg1), tonumber(arg2), string.split(",", arg3))
 	-- New hot - H:<extra>:<spellID>:<amount>:<duration>:target1,target2...
-	elseif( commType == "H" and arg1 and arg2 ) then
+	elseif( commType == "H" and arg1 and arg2 and arg3) then
 		parseHotHeal(casterGUID, false, spellID, tonumber(arg1), tonumber(arg2), string.split(",", arg3))
 	-- Heal stopped - S:<extra>:<spellID>:<ended early: 0/1>:target1,target2...
 	elseif( commType == "S" or commType == "HS" ) then
@@ -1585,6 +1590,18 @@ function HealComm:COMBAT_LOG_EVENT_UNFILTERED()
 	-- New hot was applied
 	elseif( ( eventType == "SPELL_AURA_APPLIED" or eventType == "SPELL_AURA_REFRESH" or eventType == "SPELL_AURA_APPLIED_DOSE" ) and bit.band(sourceFlags, COMBATLOG_OBJECT_AFFILIATION_MINE) == COMBATLOG_OBJECT_AFFILIATION_MINE ) then
 		if( hotData[spellID] and guidToUnit[destGUID] ) then
+		
+			-- check for a downranked hot
+			for i=1,32 do
+				local name = UnitBuff(guidToUnit[destGUID],i)
+				if name == spellName then
+					spellID = select(10, UnitBuff(guidToUnit[destGUID],i))
+					break
+				elseif not name then
+					break
+				end
+			end
+			
 			-- Single target so we can just send it off now thankfully
 			local type, amount, duration = CalculateHotHealing(destGUID, spellID)
 			if( type ) then
@@ -1703,8 +1720,8 @@ function HealComm:UNIT_SPELLCAST_CHANNEL_STOP(casterUnit, castGUID, spellID)
 	if( casterUnit ~= "player" or not spellData[spellID] or spellID ~= castID ) then return end
 
 	castID = nil
-	parseHealEnd(playerGUID, nil, "name", spellID, false)
-	sendMessage(string.format("S::%d:0", spellID))
+	parseHealEnd(playerGUID, nil, "id", spellID, false)
+	sendMessage(string.format("HS::%d:0", spellID))
 end
 
 function HealComm:UNIT_SPELLCAST_INTERRUPTED(casterUnit, castGUID, spellID)
@@ -1724,13 +1741,13 @@ function HealComm:UNIT_SPELLCAST_DELAYED(casterUnit, castGUID, spellID)
 		local startTime, endTime = select(4, CastingInfo())
 		if( startTime and endTime ) then
 			parseHealDelayed(playerGUID, startTime / 1000, endTime / 1000, spellID)
-			sendMessage(string.format("DL::%d:%d:%d", spellID or 0, startTime, endTime))
+			sendMessage(string.format("DL::%d:%f:%f", spellID or 0, startTime/1000, endTime/1000))
 		end
 	elseif( pendingHeals[playerGUID][spellID].bitType == CHANNEL_HEALS ) then
 		local startTime, endTime = select(4, ChannelInfo())
 		if( startTime and endTime ) then
 			parseHealDelayed(playerGUID, startTime / 1000, endTime / 1000, spellID)
-			sendMessage(string.format("DL::%d:%d:%d", spellID or 0, startTime, endTime))
+			sendMessage(string.format("DL::%d:%f:%f", spellID or 0, startTime/1000, endTime/1000))
 		end
 	end
 end
@@ -1896,6 +1913,7 @@ local function clearGUIDData()
 	playerGUID = playerGUID or UnitGUID("player")
 	HealComm.guidToUnit = {[playerGUID] = "player"}
 	guidToUnit = HealComm.guidToUnit
+	HealComm:UNIT_PET("player")
 	
 	HealComm.guidToGroup = {}
 	guidToGroup = HealComm.guidToGroup
@@ -1938,7 +1956,7 @@ function HealComm:UNIT_PET(unit)
 	end
 end
 
--- Keep track of party GUIDs, ignored in raids as RRU will handle that mapping
+-- Keep track of party GUIDs
 function HealComm:GROUP_ROSTER_UPDATE()
 	updateDistributionChannel()
 	
@@ -1957,8 +1975,8 @@ function HealComm:GROUP_ROSTER_UPDATE()
 		for i=1, MAX_PARTY_MEMBERS do
 			local unit = "party" .. i
 			if( UnitExists(unit) ) then
-				local lastGroup = guidToGroup[guid]
 				local guid = UnitGUID(unit)
+				local lastGroup = guidToGroup[guid]
 				guidToUnit[guid] = unit
 				guidToGroup[guid] = 0
 				
@@ -1976,8 +1994,8 @@ function HealComm:GROUP_ROSTER_UPDATE()
 		for i=1, MAX_RAID_MEMBERS do
 			local unit = "raid" .. i
 			if( UnitExists(unit) ) then
-				local lastGroup = guidToGroup[guid]
 				local guid = UnitGUID(unit)
+				local lastGroup = guidToGroup[guid]
 				guidToUnit[guid] = unit
 				guidToGroup[guid] = select(3, GetRaidRosterInfo(i))
 				

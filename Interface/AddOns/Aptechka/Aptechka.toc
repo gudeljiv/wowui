@@ -1,7 +1,7 @@
 ## Interface: 11302
 ## Title: Aptechka
 ## Notes: Raid Frames
-## Version: 1.13.9
+## Version: 1.13.20
 ## Author: d87
 ## SavedVariablesPerCharacter: AptechkaDB_Char
 ## SavedVariables: AptechkaDB_Global, AptechkaConfigCustom
@@ -16,6 +16,7 @@ Libs\LibSpellLocks\LibSpellLocks.lua
 Libs\LibAuraTypes\LibAuraTypes.lua
 Libs\LibClassicDurations\LibClassicDurations.xml
 Libs\LibClassicHealComm-1.0\lib.xml
+Libs\LibBanzai-2.0\lib.xml
 
 helpers.lua
 config.lua
