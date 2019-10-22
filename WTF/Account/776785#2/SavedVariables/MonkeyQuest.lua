@@ -539,13 +539,13 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Vermin"] = {
 		["m_aQuestList"] = {
-			["Minshina's Skull - false"] = {
+			["Zalazane - false"] = {
 				["m_bChecked"] = true,
 			},
 			["A Peon's Burden - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Durotar - true"] = {
+			["Minshina's Skull - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Practical Prey - false"] = {
@@ -554,7 +554,7 @@ MonkeyQuestConfig = {
 			["Report to Orgnil - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Zalazane - false"] = {
+			["Durotar - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Thwarting Kolkar Aggression - false"] = {
@@ -589,7 +589,7 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = true,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 793.566589355469,
+		["m_iFrameBottom"] = 390.511291503906,
 		["m_bHideCompletedQuests"] = true,
 		["m_iFrameLeft"] = 1670.73352050781,
 		["m_bColourDoneOrFailed"] = true,
@@ -933,37 +933,22 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Greenwise"] = {
 		["m_aQuestList"] = {
-			["Wailing Caverns - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Hezrul Bloodmark - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Egg Hunt - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Ziz Fizziks - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Trouble at the Docks - false"] = {
-				["m_bChecked"] = true,
-			},
 			["Miner's Fortune - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Hidden Enemies - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Tribes at War - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Warsong Reports - false"] = {
+			["The Guns of Northwatch - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Smart Drinks - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Report to Kadrak - false"] = {
+			["Hezrul Bloodmark - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Jorn Skyseer - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Tribes at War - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Deepmoss Spider Eggs - false"] = {
@@ -972,19 +957,19 @@ MonkeyQuestConfig = {
 			["The Barrens - true"] = {
 				["m_bChecked"] = true,
 			},
-			["The Guns of Northwatch - false"] = {
+			["Wailing Caverns - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Nugget Slugs - false"] = {
+			["Egg Hunt - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Jorn Skyseer - false"] = {
+			["Ziz Fizziks - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Hamuul Runetotem - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Ragefire Chasm - true"] = {
+			["Trouble at the Docks - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Letter to Jin'Zil - false"] = {

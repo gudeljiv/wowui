@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 623,
+	["session"] = 643,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVerminz\\Experience.lua:7: bad argument #1 to 'select' (index out of range)",
@@ -43,5 +43,13 @@ BugGrabberDB = {
 			["session"] = 622,
 			["counter"] = 1,
 		}, -- [5]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVerminz' tried to call the protected function 'TargetFrameToT:Show()'.",
+			["time"] = "2019/10/22 20:58:45",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Show'\nInterface\\FrameXML\\TargetFrame.lua:910: in function <Interface\\FrameXML\\TargetFrame.lua:905>\n[C]: in function `TargetofTarget_Update'\nInterface\\FrameXML\\TargetFrame.lua:420: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>",
+			["session"] = 643,
+			["counter"] = 10,
+		}, -- [6]
 	},
 }

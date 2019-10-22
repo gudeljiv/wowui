@@ -104,8 +104,8 @@ EavesDropStatsDB = {
 					},
 					["Serpent Sting"] = {
 						[-2] = {
-							["time"] = "|cffffffff10/12/19 08:46:19|r\n|Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4470-1-409-3125-00002216BF:Clattering Scorpid|hClattering Scorpid|h suffers |cffffffff8|r |cffffffffNature|r damage from |Hunit:Player-4465-012659A9:Greenwise|hGreenwise's|h |Hspell:0:0:SPELL_PERIODIC_DAMAGE|h|cffffffffSerpent Sting|r|h.",
-							["amount"] = 8,
+							["time"] = "|cffffffff10/22/19 08:52:39|r\n|Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-1-414-3245-00002F4D70:Ornery Plainstrider|hOrnery Plainstrider|h suffers |cffffffff16|r |cffffffffNature|r damage from |Hunit:Player-4465-012659A9:Greenwise|hGreenwise's|h |Hspell:0:0:SPELL_PERIODIC_DAMAGE|h|cffffffffSerpent Sting|r|h.",
+							["amount"] = 16,
 						},
 						[2] = {
 						},

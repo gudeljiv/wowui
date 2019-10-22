@@ -5,6 +5,7 @@
 
 AutoCarrot.lua
 AutoBuyAmmo.lua
+AutoDismount.lua
 AutoRepair.lua
 BestFood.lua
 Bindings.lua

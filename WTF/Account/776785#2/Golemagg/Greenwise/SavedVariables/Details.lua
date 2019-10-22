@@ -7,20 +7,1011 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
+					["combatId"] = 819,
 					["tipo"] = 2,
-					["combatId"] = 799,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.001824,
+							["damage_from"] = {
+								["Boar <Greenwise>"] = true,
+								["Greenwise"] = true,
+							},
+							["targets"] = {
+								["Boar <Greenwise>"] = 33,
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 33.001824,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 33.001824,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4468-1-414-3244-00002F5340",
+							["nome"] = "Greater Plainstrider",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 11,
+										["targets"] = {
+											["Boar <Greenwise>"] = 33,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 33,
+										["n_min"] = 11,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 33,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1571772202,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 231.001824,
+							["start_time"] = 1571772196,
+							["delay"] = 0,
+							["last_event"] = 1571772200,
+						}, -- [1]
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.005876,
+							["friendlyfire"] = {
+							},
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Greater Plainstrider"] = 231,
+							},
+							["colocacao"] = 1,
+							["pets"] = {
+								"Boar <Greenwise>", -- [1]
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+								[128] = 231,
+							},
+							["total_without_pet"] = 157.005876,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 231.005876,
+							["classe"] = "HUNTER",
+							["serial"] = "Player-4465-012659A9",
+							["nome"] = "Greenwise",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Serpent Sting"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Greater Plainstrider"] = 16,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 16,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 16,
+										["c_max"] = 0,
+										["id"] = "Serpent Sting",
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 31,
+										["targets"] = {
+											["Greater Plainstrider"] = 120,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 120,
+										["n_min"] = 29,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 120,
+										["c_max"] = 0,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Arcane Shot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 21,
+										["targets"] = {
+											["Greater Plainstrider"] = 21,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 21,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 21,
+										["c_max"] = 0,
+										["id"] = "Arcane Shot",
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["end_time"] = 1571772202,
+							["last_dps"] = 39.3939079126782,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.005876,
+							["start_time"] = 1571772196,
+							["delay"] = 0,
+							["last_event"] = 1571772201,
+						}, -- [2]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.002201,
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
+							["damage_from"] = {
+								["Greater Plainstrider"] = true,
+							},
+							["targets"] = {
+								["Greater Plainstrider"] = 74,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+								[128] = 74,
+							},
+							["total_without_pet"] = 74.002201,
+							["dps_started"] = false,
+							["total"] = 74.002201,
+							["classe"] = "PET",
+							["ownerName"] = "Greenwise",
+							["nome"] = "Boar <Greenwise>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 24,
+										["targets"] = {
+											["Greater Plainstrider"] = 58,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 58,
+										["n_min"] = 17,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 58,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Bite"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Greater Plainstrider"] = 16,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 16,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 16,
+										["c_max"] = 0,
+										["id"] = "Bite",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1571772202,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 33.002201,
+							["start_time"] = 1571772196,
+							["delay"] = 0,
+							["last_event"] = 1571772200,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 819,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 819,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 819,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime"] = 0,
+							["debuff_uptime_targets"] = {
+							},
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Serpent Sting"] = {
+										["activedamt"] = -1,
+										["id"] = "Serpent Sting",
+										["targets"] = {
+										},
+										["actived_at"] = 1571772201,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Greenwise",
+							["spell_cast"] = {
+								["Auto Shot"] = 3,
+								["Arcane Shot"] = 1,
+							},
+							["pets"] = {
+								"Boar <Greenwise>", -- [1]
+							},
+							["buff_uptime"] = 6,
+							["tipo"] = 4,
+							["last_event"] = 1571772202,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Aspect of the Hawk"] = {
+										["activedamt"] = 1,
+										["id"] = "Aspect of the Hawk",
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-4465-012659A9",
+							["classe"] = "HUNTER",
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Greenwise",
+							["nome"] = "Boar <Greenwise>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								["Bite"] = 1,
+							},
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
+							["last_event"] = 0,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 819,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Greenwise"] = true,
+				},
+				["tempo_start"] = 1571772196,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["TotalElapsedCombatTime"] = 348115.971,
+				["enemy"] = "Greater Plainstrider",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					264, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					157, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["last_events_tables"] = {
+				},
+				["frags_need_refresh"] = true,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Greenwise"] = 231.005876,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 348115.971,
+				["instance_type"] = "none",
+				["combat_id"] = 819,
+				["combat_counter"] = 1115,
+				["player_last_events"] = {
+				},
+				["CombatEndedAt"] = 348115.971,
+				["spells_cast_timeline"] = {
+				},
+				["data_fim"] = "21:23:23",
+				["data_inicio"] = "21:23:17",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Greater Plainstrider"] = 1,
+				},
+				["start_time"] = 348109.924,
+				["TimeData"] = {
+				},
+				["pvp"] = true,
+			}, -- [1]
+			{
+				{
+					["combatId"] = 818,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.00443,
+							["damage_from"] = {
+								["Boar <Greenwise>"] = true,
+								["Greenwise"] = true,
+							},
+							["targets"] = {
+								["Boar <Greenwise>"] = 33,
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 33.00443,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 33.00443,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4468-1-414-3244-00002F53CC",
+							["nome"] = "Greater Plainstrider",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 12,
+										["targets"] = {
+											["Boar <Greenwise>"] = 33,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 33,
+										["n_min"] = 10,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 33,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1571771999,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 223.00443,
+							["start_time"] = 1571771993,
+							["delay"] = 0,
+							["last_event"] = 1571771997,
+						}, -- [1]
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.007483,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Greater Plainstrider"] = 223,
+							},
+							["pets"] = {
+								"Boar <Greenwise>", -- [1]
+							},
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+								[128] = 223,
+							},
+							["total_without_pet"] = 137.007483,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1571771999,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Greenwise",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Serpent Sting"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Greater Plainstrider"] = 32,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 32,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 32,
+										["c_max"] = 0,
+										["id"] = "Serpent Sting",
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 30,
+										["targets"] = {
+											["Greater Plainstrider"] = 84,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 84,
+										["n_min"] = 27,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 84,
+										["c_max"] = 0,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Arcane Shot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 21,
+										["targets"] = {
+											["Greater Plainstrider"] = 21,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 21,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 21,
+										["c_max"] = 0,
+										["id"] = "Arcane Shot",
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 223.007483,
+							["serial"] = "Player-4465-012659A9",
+							["last_dps"] = 42.6237543963507,
+							["custom"] = 0,
+							["last_event"] = 1571771998,
+							["damage_taken"] = 0.007483,
+							["start_time"] = 1571771993,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.008505,
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
+							["damage_from"] = {
+								["Greater Plainstrider"] = true,
+							},
+							["targets"] = {
+								["Greater Plainstrider"] = 86,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+								[128] = 86,
+							},
+							["total_without_pet"] = 86.008505,
+							["dps_started"] = false,
+							["total"] = 86.008505,
+							["classe"] = "PET",
+							["ownerName"] = "Greenwise",
+							["nome"] = "Boar <Greenwise>",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 30,
+										["g_amt"] = 0,
+										["n_max"] = 24,
+										["targets"] = {
+											["Greater Plainstrider"] = 70,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 40,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 70,
+										["c_max"] = 30,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 30,
+									},
+									["Bite"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Greater Plainstrider"] = 16,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 16,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 16,
+										["c_max"] = 0,
+										["id"] = "Bite",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1571771999,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 33.008505,
+							["start_time"] = 1571771993,
+							["delay"] = 0,
+							["last_event"] = 1571771997,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 818,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 818,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 818,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime"] = 0,
+							["debuff_uptime_targets"] = {
+							},
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Serpent Sting"] = {
+										["activedamt"] = -1,
+										["id"] = "Serpent Sting",
+										["targets"] = {
+										},
+										["actived_at"] = 1571771998,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["nome"] = "Greenwise",
+							["spell_cast"] = {
+								["Auto Shot"] = 3,
+								["Arcane Shot"] = 1,
+							},
+							["pets"] = {
+								"Boar <Greenwise>", -- [1]
+							},
+							["buff_uptime"] = 6,
+							["tipo"] = 4,
+							["last_event"] = 1571771999,
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Aspect of the Hawk"] = {
+										["activedamt"] = 1,
+										["id"] = "Aspect of the Hawk",
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["serial"] = "Player-4465-012659A9",
+							["classe"] = "HUNTER",
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Greenwise",
+							["nome"] = "Boar <Greenwise>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								["Bite"] = 1,
+							},
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
+							["last_event"] = 0,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 818,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Greenwise"] = true,
+				},
+				["CombatStartedAt"] = 348109.074,
+				["tempo_start"] = 1571771993,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Greater Plainstrider",
+				["combat_counter"] = 1114,
+				["playing_solo"] = true,
+				["totals"] = {
+					256, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatEndedAt"] = 347912.907,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "21:19:54",
+				["end_time"] = 347912.907,
+				["totals_grupo"] = {
+					137, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["combat_id"] = 818,
+				["TotalElapsedCombatTime"] = 347912.907,
+				["frags_need_refresh"] = true,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Greenwise"] = 223.007483,
+						}, -- [1]
+					},
+				},
+				["frags"] = {
+					["Greater Plainstrider"] = 1,
+				},
+				["data_fim"] = "21:20:00",
+				["instance_type"] = "none",
+				["CombatSkillCache"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 347907.258,
+				["TimeData"] = {
+				},
+				["pvp"] = true,
+			}, -- [2]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 817,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.008166,
+							["totalabsorbed"] = 0.007878,
 							["damage_from"] = {
-								["Environment (Falling)"] = true,
-								["Elder Mottled Boar"] = true,
-								["Environment (Fire)"] = true,
 							},
 							["targets"] = {
-								["Elder Mottled Boar"] = 181,
-								["Venomtail Scorpid"] = 194,
+								["Greater Plainstrider"] = 252,
 							},
 							["pets"] = {
 								"Boar <Greenwise>", -- [1]
@@ -29,17 +1020,105 @@ _detalhes_database = {
 							["tipo"] = 1,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
-								[128] = 346,
+								[128] = 252,
 							},
-							["total_without_pet"] = 261.008166,
-							["delay"] = 0,
+							["total_without_pet"] = 172.007878,
+							["serial"] = "Player-4465-012659A9",
 							["dps_started"] = false,
-							["total"] = 375.008166,
+							["total"] = 252.007878,
+							["damage_taken"] = 0.007878,
 							["on_hold"] = false,
-							["damage_taken"] = 78.008166,
 							["nome"] = "Greenwise",
 							["spells"] = {
 								["_ActorTable"] = {
+									["Serpent Sting"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Greater Plainstrider"] = 32,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 32,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 32,
+										["c_max"] = 0,
+										["id"] = "Serpent Sting",
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[2] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Greater Plainstrider"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = 2,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["c_min"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 31,
+										["targets"] = {
+											["Greater Plainstrider"] = 119,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 119,
+										["n_min"] = 28,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 119,
+										["c_max"] = 0,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
 									["Arcane Shot"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -47,17 +1126,470 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 21,
 										["targets"] = {
-											["Elder Mottled Boar"] = 21,
-											["Venomtail Scorpid"] = 21,
+											["Greater Plainstrider"] = 21,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 42,
+										["n_dmg"] = 21,
 										["n_min"] = 21,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 42,
+										["counter"] = 1,
+										["total"] = 21,
 										["c_max"] = 0,
 										["id"] = "Arcane Shot",
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["colocacao"] = 1,
+							["last_dps"] = 31.0584025141677,
+							["custom"] = 0,
+							["last_event"] = 1571771646,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1571771638,
+							["delay"] = 0,
+							["end_time"] = 1571771647,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.008694,
+							["damage_from"] = {
+								["Greater Plainstrider"] = true,
+							},
+							["targets"] = {
+								["Greater Plainstrider"] = 80,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+								[128] = 80,
+							},
+							["total_without_pet"] = 80.008694,
+							["classe"] = "PET",
+							["dps_started"] = false,
+							["total"] = 80.008694,
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
+							["ownerName"] = "Greenwise",
+							["nome"] = "Boar <Greenwise>",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 22,
+										["targets"] = {
+											["Greater Plainstrider"] = 66,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 66,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 66,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["Bite"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 14,
+										["targets"] = {
+											["Greater Plainstrider"] = 14,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 14,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 14,
+										["c_max"] = 0,
+										["id"] = "Bite",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["end_time"] = 1571771647,
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1571771645,
+							["damage_taken"] = 41.008694,
+							["start_time"] = 1571771638,
+							["delay"] = 0,
+							["friendlyfire"] = {
+							},
+						}, -- [2]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.00378,
+							["damage_from"] = {
+								["Boar <Greenwise>"] = true,
+								["Greenwise"] = true,
+							},
+							["targets"] = {
+								["Boar <Greenwise>"] = 41,
+							},
+							["pets"] = {
+							},
+							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 41.00378,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["total"] = 41.00378,
+							["serial"] = "Creature-0-4468-1-414-3244-00002F543F",
+							["friendlyfire"] = {
+							},
+							["nome"] = "Greater Plainstrider",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 11,
+										["targets"] = {
+											["Boar <Greenwise>"] = 41,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 41,
+										["n_min"] = 10,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 41,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["damage_taken"] = 252.00378,
+							["end_time"] = 1571771647,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1571771645,
+							["on_hold"] = false,
+							["start_time"] = 1571771638,
+							["delay"] = 0,
+							["classe"] = "UNKNOW",
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 817,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 817,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 817,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Serpent Sting"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 7,
+										["id"] = "Serpent Sting",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 15,
+							["classe"] = "HUNTER",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Quick Shots"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 6,
+										["id"] = "Quick Shots",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Aspect of the Hawk"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 9,
+										["id"] = "Aspect of the Hawk",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 7,
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								["Auto Shot"] = 5,
+								["Arcane Shot"] = 1,
+								["Serpent Sting"] = 1,
+							},
+							["nome"] = "Greenwise",
+							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
+							["last_event"] = 1571771647,
+							["serial"] = "Player-4465-012659A9",
+							["pets"] = {
+								"Boar <Greenwise>", -- [1]
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Greenwise",
+							["nome"] = "Boar <Greenwise>",
+							["pets"] = {
+							},
+							["spell_cast"] = {
+								["Bite"] = 1,
+								["Growl"] = 1,
+							},
+							["tipo"] = 4,
+							["classe"] = "PET",
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
+							["last_event"] = 0,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 817,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Greenwise"] = true,
+				},
+				["CombatStartedAt"] = 347905.576,
+				["tempo_start"] = 1571771638,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 1109,
+				["playing_solo"] = true,
+				["totals"] = {
+					293, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "21:14:07",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Greater Plainstrider",
+				["TotalElapsedCombatTime"] = 7.69799999997485,
+				["CombatEndedAt"] = 347560.609,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "21:13:59",
+				["end_time"] = 347560.609,
+				["combat_id"] = 817,
+				["spells_cast_timeline"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Greenwise"] = 252.007878,
+						}, -- [1]
+					},
+				},
+				["totals_grupo"] = {
+					172, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["CombatSkillCache"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["start_time"] = 347552.495,
+				["TimeData"] = {
+				},
+				["frags"] = {
+					["Greater Plainstrider"] = 1,
+				},
+			}, -- [3]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 816,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.002441,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Greater Plainstrider"] = 258,
+							},
+							["pets"] = {
+								"Boar <Greenwise>", -- [1]
+							},
+							["end_time"] = 1571771501,
+							["last_event"] = 1571771499,
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+								[128] = 258,
+							},
+							["total_without_pet"] = 167.002441,
+							["delay"] = 0,
+							["dps_started"] = false,
+							["total"] = 258.002441,
+							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Greenwise",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Serpent Sting"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Greater Plainstrider"] = 32,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 32,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 32,
+										["c_max"] = 0,
+										["id"] = "Serpent Sting",
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["a_amt"] = 0,
@@ -68,24 +1600,23 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
 										["a_dmg"] = 0,
-										["spellschool"] = 64,
+										["spellschool"] = 8,
 									},
 									["!Autoshot"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 29,
+										["n_max"] = 31,
 										["targets"] = {
-											["Elder Mottled Boar"] = 80,
-											["Venomtail Scorpid"] = 77,
+											["Greater Plainstrider"] = 114,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 157,
-										["n_min"] = 24,
+										["n_dmg"] = 114,
+										["n_min"] = 27,
 										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 157,
+										["counter"] = 4,
+										["total"] = 114,
 										["c_max"] = 0,
 										["id"] = "!Autoshot",
 										["r_dmg"] = 0,
@@ -96,27 +1627,124 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 6,
+										["n_amt"] = 4,
 										["a_dmg"] = 0,
 										["spellschool"] = 1,
 									},
-									["!Melee"] = {
+									["Arcane Shot"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 30,
+										["n_max"] = 21,
 										["targets"] = {
-											["Elder Mottled Boar"] = 30,
+											["Greater Plainstrider"] = 21,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 30,
-										["n_min"] = 30,
+										["n_dmg"] = 21,
+										["n_min"] = 21,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 30,
+										["total"] = 21,
+										["c_max"] = 0,
+										["id"] = "Arcane Shot",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 64,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["custom"] = 0,
+							["last_dps"] = 25.4289809777054,
+							["colocacao"] = 1,
+							["tipo"] = 1,
+							["damage_taken"] = 0.002441,
+							["start_time"] = 1571771491,
+							["serial"] = "Player-4465-012659A9",
+							["friendlyfire_total"] = 0,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.006334,
+							["damage_from"] = {
+								["Greater Plainstrider"] = true,
+							},
+							["targets"] = {
+								["Greater Plainstrider"] = 91,
+							},
+							["pets"] = {
+							},
+							["damage_taken"] = 39.006334,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+								[128] = 91,
+							},
+							["total_without_pet"] = 91.006334,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["total"] = 91.006334,
+							["delay"] = 0,
+							["ownerName"] = "Greenwise",
+							["nome"] = "Boar <Greenwise>",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Greater Plainstrider"] = 76,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 76,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 76,
 										["c_max"] = 0,
 										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 16,
+										["n_amt"] = 5,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Bite"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Greater Plainstrider"] = 15,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 15,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 15,
+										["c_max"] = 0,
+										["id"] = "Bite",
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["a_amt"] = 0,
@@ -129,76 +1757,42 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["spellschool"] = 1,
 									},
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 8,
-										["targets"] = {
-											["Elder Mottled Boar"] = 16,
-											["Venomtail Scorpid"] = 16,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 32,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 32,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
 								},
 								["tipo"] = 2,
 							},
-							["grupo"] = true,
+							["end_time"] = 1571771501,
+							["last_event"] = 1571771499,
+							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_dps"] = 17.1361801316329,
-							["colocacao"] = 1,
-							["last_event"] = 1571339231,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1571339210,
-							["serial"] = "Player-4465-012659A9",
-							["end_time"] = 1571339232,
-						}, -- [1]
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["start_time"] = 1571771491,
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
+							["classe"] = "PET",
+						}, -- [2]
 						{
-							["flag_original"] = 69905,
-							["totalabsorbed"] = 0.005401,
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.005459,
 							["damage_from"] = {
-								["Elder Mottled Boar"] = true,
-								["Venomtail Scorpid"] = true,
+								["Boar <Greenwise>"] = true,
+								["Greenwise"] = true,
 							},
 							["targets"] = {
-								["Elder Mottled Boar"] = 34,
-								["Venomtail Scorpid"] = 80,
+								["Boar <Greenwise>"] = 39,
 							},
 							["pets"] = {
 							},
-							["damage_taken"] = 78.005401,
+							["last_event"] = 1571771497,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
-								[128] = 85,
 							},
-							["total_without_pet"] = 114.005401,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["total"] = 114.005401,
+							["total_without_pet"] = 39.005459,
+							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["total"] = 39.005459,
 							["delay"] = 0,
-							["ownerName"] = "Greenwise",
-							["nome"] = "Boar <Greenwise>",
+							["damage_taken"] = 258.005459,
+							["nome"] = "Greater Plainstrider",
 							["spells"] = {
 								["_ActorTable"] = {
 									{
@@ -208,7 +1802,7 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["Elder Mottled Boar"] = 0,
+											["Boar"] = 0,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 0,
@@ -221,45 +1815,16 @@ _detalhes_database = {
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["a_dmg"] = 0,
-										["c_min"] = 0,
+										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["PARRY"] = 1,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
+										["a_amt"] = 0,
 										["n_amt"] = 0,
 										["spellschool"] = 1,
-										["a_amt"] = 0,
+										["MISS"] = 1,
 									}, -- [1]
-									["Bite"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 10,
-										["targets"] = {
-											["Venomtail Scorpid"] = 19,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 19,
-										["n_min"] = 9,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 19,
-										["c_max"] = 0,
-										["id"] = "Bite",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
 									["!Melee"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -267,15 +1832,14 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 14,
 										["targets"] = {
-											["Elder Mottled Boar"] = 34,
-											["Venomtail Scorpid"] = 61,
+											["Boar <Greenwise>"] = 39,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 95,
-										["n_min"] = 9,
+										["n_dmg"] = 39,
+										["n_min"] = 12,
 										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 95,
+										["counter"] = 3,
+										["total"] = 39,
 										["c_max"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
@@ -286,48 +1850,412 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 9,
+										["n_amt"] = 3,
 										["a_dmg"] = 0,
 										["spellschool"] = 1,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["end_time"] = 1571339232,
-							["last_event"] = 1571339230,
+							["on_hold"] = false,
+							["end_time"] = 1571771501,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1571339210,
-							["serial"] = "Pet-0-4469-1-134-3100-04001B7554",
-							["classe"] = "PET",
-						}, -- [2]
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1571771491,
+							["serial"] = "Creature-0-4468-1-414-3244-0000AF544A",
+							["dps_started"] = false,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 816,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 816,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 816,
+					["_ActorTable"] = {
 						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.006443,
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Serpent Sting"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = "Serpent Sting",
+										["uptime"] = 8,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 10,
+							["classe"] = "HUNTER",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Aspect of the Hawk"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Aspect of the Hawk",
+										["uptime"] = 10,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 8,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								["Auto Shot"] = 5,
+								["Serpent Sting"] = 1,
+								["Arcane Shot"] = 1,
+							},
+							["nome"] = "Greenwise",
+							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
+							["pets"] = {
+								"Boar <Greenwise>", -- [1]
+							},
+							["serial"] = "Player-4465-012659A9",
+							["last_event"] = 1571771501,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Greenwise",
+							["nome"] = "Boar <Greenwise>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
+							["spell_cast"] = {
+								["Bite"] = 1,
+								["Growl"] = 1,
+							},
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 816,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Greenwise"] = true,
+				},
+				["CombatStartedAt"] = 347405.545,
+				["tempo_start"] = 1571771491,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					297, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "21:11:42",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Greater Plainstrider",
+				["TotalElapsedCombatTime"] = 9.69599999999628,
+				["CombatEndedAt"] = 347415.241,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Greenwise"] = 258.002441,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["end_time"] = 347415.241,
+				["combat_id"] = 816,
+				["spells_cast_timeline"] = {
+				},
+				["totals_grupo"] = {
+					167, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["frags"] = {
+					["Greater Plainstrider"] = 1,
+				},
+				["CombatSkillCache"] = {
+				},
+				["combat_counter"] = 1107,
+				["start_time"] = 347405.095,
+				["TimeData"] = {
+				},
+				["data_inicio"] = "21:11:32",
+			}, -- [4]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 815,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.004633,
 							["damage_from"] = {
-								["Greenwise"] = true,
-								["Boar <Greenwise>"] = true,
 							},
 							["targets"] = {
-								["Greenwise"] = 13,
-								["Boar <Greenwise>"] = 46,
+								["Savannah Huntress"] = 224,
+							},
+							["pets"] = {
+								"Boar <Greenwise>", -- [1]
+							},
+							["friendlyfire_total"] = 0,
+							["tipo"] = 1,
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+								[128] = 224,
+							},
+							["total_without_pet"] = 139.004633,
+							["serial"] = "Player-4465-012659A9",
+							["dps_started"] = false,
+							["end_time"] = 1571771436,
+							["friendlyfire"] = {
+							},
+							["damage_taken"] = 0.004633,
+							["nome"] = "Greenwise",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Arcane Shot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 21,
+										["targets"] = {
+											["Savannah Huntress"] = 21,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 21,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 21,
+										["c_max"] = 0,
+										["id"] = "Arcane Shot",
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[2] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Savannah Huntress"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = 2,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 29,
+										["targets"] = {
+											["Savannah Huntress"] = 86,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 86,
+										["n_min"] = 28,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 86,
+										["c_max"] = 0,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["Serpent Sting"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Savannah Huntress"] = 32,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 32,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 32,
+										["c_max"] = 0,
+										["id"] = "Serpent Sting",
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["colocacao"] = 1,
+							["last_dps"] = 29.0387131188677,
+							["custom"] = 0,
+							["last_event"] = 1571771434,
+							["on_hold"] = false,
+							["start_time"] = 1571771428,
+							["delay"] = 0,
+							["total"] = 224.004633,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.00762,
+							["damage_from"] = {
+								["Savannah Huntress"] = true,
+							},
+							["targets"] = {
+								["Savannah Huntress"] = 85,
 							},
 							["pets"] = {
 							},
-							["last_event"] = 1571339229,
+							["on_hold"] = false,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
+								[128] = 85,
 							},
-							["total_without_pet"] = 59.006443,
-							["classe"] = "UNKNOW",
+							["total_without_pet"] = 85.00762,
+							["classe"] = "PET",
 							["dps_started"] = false,
-							["total"] = 59.006443,
-							["delay"] = 0,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Elder Mottled Boar",
+							["total"] = 85.00762,
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
+							["ownerName"] = "Greenwise",
+							["nome"] = "Boar <Greenwise>",
 							["spells"] = {
 								["_ActorTable"] = {
 									["!Melee"] = {
@@ -335,17 +2263,1611 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 20,
+										["n_max"] = 24,
 										["targets"] = {
-											["Greenwise"] = 13,
+											["Savannah Huntress"] = 70,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 70,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 70,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["Bite"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Savannah Huntress"] = 15,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 15,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 15,
+										["c_max"] = 0,
+										["id"] = "Bite",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["end_time"] = 1571771436,
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1571771434,
+							["damage_taken"] = 36.00762,
+							["start_time"] = 1571771428,
+							["delay"] = 0,
+							["friendlyfire"] = {
+							},
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.008313,
+							["damage_from"] = {
+								["Boar <Greenwise>"] = true,
+								["Greenwise"] = true,
+							},
+							["targets"] = {
+								["Boar <Greenwise>"] = 36,
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 36.008313,
+							["serial"] = "Creature-0-4468-1-414-3415-0000AE1409",
+							["dps_started"] = false,
+							["total"] = 36.008313,
+							["monster"] = true,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Savannah Huntress",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Boar"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									["!Melee"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 13,
+										["g_amt"] = 0,
+										["n_max"] = 9,
+										["targets"] = {
+											["Boar <Greenwise>"] = 36,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 23,
+										["n_min"] = 7,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 36,
+										["c_max"] = 13,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 13,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["tipo"] = 1,
+							["end_time"] = 1571771436,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1571771434,
+							["damage_taken"] = 224.008313,
+							["start_time"] = 1571771428,
+							["delay"] = 0,
+							["classe"] = "UNKNOW",
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 815,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 815,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 815,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Serpent Sting"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 6,
+										["id"] = "Serpent Sting",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["pets"] = {
+								"Boar <Greenwise>", -- [1]
+							},
+							["classe"] = "HUNTER",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Aspect of the Hawk"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 8,
+										["id"] = "Aspect of the Hawk",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 6,
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								["Auto Shot"] = 4,
+								["Arcane Shot"] = 1,
+							},
+							["nome"] = "Greenwise",
+							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
+							["last_event"] = 1571771436,
+							["serial"] = "Player-4465-012659A9",
+							["buff_uptime"] = 8,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Greenwise",
+							["nome"] = "Boar <Greenwise>",
+							["pets"] = {
+							},
+							["last_event"] = 0,
+							["classe"] = "PET",
+							["spell_cast"] = {
+								["Growl"] = 2,
+								["Bite"] = 1,
+							},
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
+							["tipo"] = 4,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 815,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Greenwise"] = true,
+				},
+				["CombatStartedAt"] = 347341.866,
+				["tempo_start"] = 1571771428,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 1105,
+				["playing_solo"] = true,
+				["totals"] = {
+					260, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "21:10:36",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Savannah Huntress",
+				["TotalElapsedCombatTime"] = 7.71400000003632,
+				["CombatEndedAt"] = 347349.58,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "21:10:28",
+				["end_time"] = 347349.58,
+				["combat_id"] = 815,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["frags"] = {
+					["Savannah Huntress"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["totals_grupo"] = {
+					139, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Savannah Huntress",
+				["start_time"] = 347341.866,
+				["TimeData"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Greenwise"] = 224.004633,
+						}, -- [1]
+					},
+				},
+			}, -- [5]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 814,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.002385,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Savannah Huntress"] = 269,
+							},
+							["pets"] = {
+								"Boar <Greenwise>", -- [1]
+							},
+							["total"] = 269.002385,
+							["last_event"] = 1571771409,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 157.002385,
+							["delay"] = 0,
+							["dps_started"] = false,
+							["end_time"] = 1571771410,
+							["damage_taken"] = 0.002385,
+							["on_hold"] = false,
+							["nome"] = "Greenwise",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Autoshot"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 55,
+										["g_amt"] = 0,
+										["n_max"] = 31,
+										["targets"] = {
+											["Savannah Huntress"] = 141,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 86,
+										["n_min"] = 27,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 141,
+										["c_max"] = 55,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 55,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Serpent Sting"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Savannah Huntress"] = 16,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 16,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 16,
+										["c_max"] = 0,
+										["id"] = "Serpent Sting",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["custom"] = 0,
+							["last_dps"] = 34.7234264877895,
+							["colocacao"] = 1,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1571771402,
+							["serial"] = "Player-4465-012659A9",
+							["classe"] = "HUNTER",
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.004272,
+							["damage_from"] = {
+								["Savannah Huntress"] = true,
+							},
+							["targets"] = {
+								["Savannah Huntress"] = 112,
+							},
+							["pets"] = {
+							},
+							["damage_taken"] = 27.004272,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 112.004272,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["total"] = 112.004272,
+							["delay"] = 0,
+							["ownerName"] = "Greenwise",
+							["nome"] = "Boar <Greenwise>",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 49,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Savannah Huntress"] = 97,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 48,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 97,
+										["c_max"] = 49,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 49,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Bite"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Savannah Huntress"] = 15,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 15,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 15,
+										["c_max"] = 0,
+										["id"] = "Bite",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["end_time"] = 1571771410,
+							["last_event"] = 1571771408,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["start_time"] = 1571771402,
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
+							["classe"] = "PET",
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.001947,
+							["damage_from"] = {
+								["Boar <Greenwise>"] = true,
+								["Greenwise"] = true,
+							},
+							["targets"] = {
+								["Boar <Greenwise>"] = 27,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["friendlyfire"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 27.001947,
+							["delay"] = 0,
+							["fight_component"] = true,
+							["total"] = 27.001947,
+							["monster"] = true,
+							["damage_taken"] = 269.001947,
+							["nome"] = "Savannah Huntress",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Boar"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["r_amt"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["spellschool"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["b_dmg"] = 0,
+										["m_amt"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_amt"] = 0,
+										["MISS"] = 1,
+									}, -- [1]
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 10,
+										["targets"] = {
+											["Boar <Greenwise>"] = 27,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 27,
+										["n_min"] = 8,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 27,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["last_event"] = 1571771408,
+							["last_dps"] = 0,
+							["end_time"] = 1571771410,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["start_time"] = 1571771402,
+							["serial"] = "Creature-0-4468-1-414-3415-00002E1409",
+							["dps_started"] = false,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 814,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 814,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 814,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Serpent Sting"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = "Serpent Sting",
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["pets"] = {
+								"Boar <Greenwise>", -- [1]
+							},
+							["classe"] = "HUNTER",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Aspect of the Hawk"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Aspect of the Hawk",
+										["uptime"] = 8,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 6,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								["Auto Shot"] = 4,
+							},
+							["nome"] = "Greenwise",
+							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
+							["buff_uptime"] = 8,
+							["serial"] = "Player-4465-012659A9",
+							["last_event"] = 1571771410,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Greenwise",
+							["nome"] = "Boar <Greenwise>",
+							["pets"] = {
+							},
+							["spell_cast"] = {
+								["Growl"] = 2,
+								["Bite"] = 1,
+							},
+							["last_event"] = 0,
+							["tipo"] = 4,
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
+							["classe"] = "PET",
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 814,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Greenwise"] = true,
+				},
+				["CombatStartedAt"] = 347315.858,
+				["tempo_start"] = 1571771402,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					296, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "21:10:10",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Savannah Huntress",
+				["TotalElapsedCombatTime"] = 7.74699999997392,
+				["CombatEndedAt"] = 347323.605,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "21:10:02",
+				["end_time"] = 347323.605,
+				["combat_id"] = 814,
+				["totals_grupo"] = {
+					157, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["spells_cast_timeline"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Greenwise"] = 269.002385,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["combat_counter"] = 1103,
+				["CombatSkillCache"] = {
+				},
+				["TimeData"] = {
+				},
+				["start_time"] = 347315.858,
+				["contra"] = "Savannah Huntress",
+				["frags"] = {
+					["Savannah Huntress"] = 1,
+				},
+			}, -- [6]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 813,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.002517,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Savannah Huntress"] = 225,
+							},
+							["pets"] = {
+								"Boar <Greenwise>", -- [1]
+							},
+							["classe"] = "HUNTER",
+							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+								[128] = 225,
+							},
+							["total_without_pet"] = 138.002517,
+							["serial"] = "Player-4465-012659A9",
+							["dps_started"] = false,
+							["total"] = 225.002517,
+							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Greenwise",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Autoshot"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 60,
+										["g_amt"] = 0,
+										["n_max"] = 32,
+										["targets"] = {
+											["Savannah Huntress"] = 122,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 62,
+										["n_min"] = 30,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 122,
+										["c_max"] = 60,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 60,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["Serpent Sting"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Savannah Huntress"] = 16,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 16,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 16,
+										["c_max"] = 0,
+										["id"] = "Serpent Sting",
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["colocacao"] = 1,
+							["last_dps"] = 36.8917063453786,
+							["custom"] = 0,
+							["last_event"] = 1571771379,
+							["damage_taken"] = 0.002517,
+							["start_time"] = 1571771375,
+							["delay"] = 0,
+							["end_time"] = 1571771381,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.007343,
+							["damage_from"] = {
+								["Savannah Huntress"] = true,
+							},
+							["targets"] = {
+								["Savannah Huntress"] = 87,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+								[128] = 87,
+							},
+							["total_without_pet"] = 87.007343,
+							["classe"] = "PET",
+							["dps_started"] = false,
+							["total"] = 87.007343,
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
+							["ownerName"] = "Greenwise",
+							["nome"] = "Boar <Greenwise>",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 33,
+										["g_amt"] = 0,
+										["n_max"] = 22,
+										["targets"] = {
+											["Savannah Huntress"] = 72,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 39,
+										["n_min"] = 17,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 72,
+										["c_max"] = 33,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 33,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["Bite"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Savannah Huntress"] = 15,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 15,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 15,
+										["c_max"] = 0,
+										["id"] = "Bite",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["end_time"] = 1571771381,
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1571771379,
+							["damage_taken"] = 25.007343,
+							["start_time"] = 1571771375,
+							["delay"] = 0,
+							["friendlyfire"] = {
+							},
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.006861,
+							["damage_from"] = {
+								["Boar <Greenwise>"] = true,
+								["Greenwise"] = true,
+							},
+							["targets"] = {
+								["Boar <Greenwise>"] = 25,
+							},
+							["pets"] = {
+							},
+							["dps_started"] = false,
+							["damage_taken"] = 225.006861,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 25.006861,
+							["serial"] = "Creature-0-4468-1-414-3415-00002E145D",
+							["fight_component"] = true,
+							["total"] = 25.006861,
+							["monster"] = true,
+							["on_hold"] = false,
+							["nome"] = "Savannah Huntress",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 9,
+										["targets"] = {
+											["Boar <Greenwise>"] = 25,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 25,
+										["n_min"] = 7,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 25,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 7,
+										["n_amt"] = 3,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["tipo"] = 1,
+							["end_time"] = 1571771381,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1571771378,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1571771375,
+							["delay"] = 0,
+							["friendlyfire_total"] = 0,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 813,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 813,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 813,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Serpent Sting"] = {
+										["activedamt"] = -1,
+										["id"] = "Serpent Sting",
+										["targets"] = {
+										},
+										["actived_at"] = 1571771379,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 6,
+							["classe"] = "HUNTER",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Aspect of the Hawk"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 6,
+										["id"] = "Aspect of the Hawk",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 0,
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								["Auto Shot"] = 2,
+							},
+							["nome"] = "Greenwise",
+							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
+							["last_event"] = 1571771381,
+							["serial"] = "Player-4465-012659A9",
+							["pets"] = {
+								"Boar <Greenwise>", -- [1]
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Greenwise",
+							["nome"] = "Boar <Greenwise>",
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["classe"] = "PET",
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
+							["spell_cast"] = {
+								["Bite"] = 1,
+							},
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 813,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Greenwise"] = true,
+				},
+				["tempo_start"] = 1571771375,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					250, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					138, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "21:09:41",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Savannah Huntress",
+				["TotalElapsedCombatTime"] = 347294.466,
+				["CombatEndedAt"] = 347294.466,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Greenwise"] = 225.002517,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 347294.466,
+				["combat_id"] = 813,
+				["combat_counter"] = 1101,
+				["frags"] = {
+					["Savannah Huntress"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["TimeData"] = {
+				},
+				["start_time"] = 347288.367,
+				["contra"] = "Savannah Huntress",
+				["data_inicio"] = "21:09:35",
+			}, -- [7]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 812,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.007117,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Savannah Highmane"] = 259,
+							},
+							["pets"] = {
+								"Boar <Greenwise>", -- [1]
+							},
+							["end_time"] = 1571771352,
+							["last_event"] = 1571771350,
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 148.007117,
+							["delay"] = 0,
+							["dps_started"] = false,
+							["total"] = 259.007117,
+							["friendlyfire"] = {
+							},
+							["damage_taken"] = 0.007117,
+							["nome"] = "Greenwise",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Serpent Sting"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Savannah Highmane"] = 16,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 16,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 16,
+										["c_max"] = 0,
+										["id"] = "Serpent Sting",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
+									},
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 29,
+										["targets"] = {
+											["Savannah Highmane"] = 111,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 111,
+										["n_min"] = 26,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 111,
+										["c_max"] = 0,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Arcane Shot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 21,
+										["targets"] = {
+											["Savannah Highmane"] = 21,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 21,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 21,
+										["c_max"] = 0,
+										["id"] = "Arcane Shot",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 64,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["custom"] = 0,
+							["last_dps"] = 31.9880347041765,
+							["colocacao"] = 1,
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["start_time"] = 1571771344,
+							["serial"] = "Player-4465-012659A9",
+							["friendlyfire_total"] = 0,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.005901,
+							["damage_from"] = {
+								["Savannah Highmane"] = true,
+							},
+							["targets"] = {
+								["Savannah Highmane"] = 111,
+							},
+							["pets"] = {
+							},
+							["damage_taken"] = 46.005901,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 111.005901,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["total"] = 111.005901,
+							["delay"] = 0,
+							["ownerName"] = "Greenwise",
+							["nome"] = "Boar <Greenwise>",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 47,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Savannah Highmane"] = 95,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 48,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 95,
+										["c_max"] = 47,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 47,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Bite"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Savannah Highmane"] = 16,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 16,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 16,
+										["c_max"] = 0,
+										["id"] = "Bite",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["end_time"] = 1571771352,
+							["last_event"] = 1571771350,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["start_time"] = 1571771344,
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
+							["classe"] = "PET",
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.003672,
+							["damage_from"] = {
+								["Boar <Greenwise>"] = true,
+								["Greenwise"] = true,
+							},
+							["targets"] = {
+								["Boar <Greenwise>"] = 46,
+							},
+							["pets"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 46.003672,
+							["delay"] = 0,
+							["dps_started"] = false,
+							["total"] = 46.003672,
+							["monster"] = true,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Savannah Highmane",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 10,
+										["targets"] = {
 											["Boar <Greenwise>"] = 46,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 59,
+										["n_dmg"] = 46,
 										["n_min"] = 8,
 										["g_dmg"] = 0,
 										["counter"] = 5,
-										["total"] = 59,
+										["total"] = 46,
 										["c_max"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
@@ -363,137 +3885,36 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["damage_taken"] = 181.006443,
-							["end_time"] = 1571339232,
+							["last_event"] = 1571771350,
 							["last_dps"] = 0,
+							["end_time"] = 1571771352,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1571339222,
-							["serial"] = "Creature-0-4470-1-147-3100-000028AE60",
+							["damage_taken"] = 259.003672,
+							["start_time"] = 1571771344,
+							["serial"] = "Creature-0-4468-1-414-3243-00002D2709",
 							["fight_component"] = true,
 						}, -- [3]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.003261,
-							["damage_from"] = {
-								["Boar <Greenwise>"] = true,
-								["Greenwise"] = true,
-							},
-							["targets"] = {
-								["Boar <Greenwise>"] = 32,
-							},
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["friendlyfire"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-								[128] = 8,
-							},
-							["total_without_pet"] = 32.003261,
-							["delay"] = 1571339220,
-							["fight_component"] = true,
-							["total"] = 32.003261,
-							["monster"] = true,
-							["damage_taken"] = 194.003261,
-							["nome"] = "Venomtail Scorpid",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Boar"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["MISS"] = 1,
-									}, -- [1]
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Boar <Greenwise>"] = 32,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 32,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 32,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 7,
-										["n_amt"] = 4,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1571339220,
-							["last_dps"] = 0,
-							["end_time"] = 1571339232,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1571339223,
-							["serial"] = "Creature-0-4470-1-147-3127-000028B1C1",
-							["dps_started"] = false,
-						}, -- [4]
 					},
 				}, -- [1]
 				{
 					["tipo"] = 3,
-					["combatId"] = 799,
+					["combatId"] = 812,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
 					["tipo"] = 7,
-					["combatId"] = 799,
+					["combatId"] = 812,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
 					["tipo"] = 9,
-					["combatId"] = 799,
+					["combatId"] = 812,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1300,
-							["debuff_uptime"] = 13,
+							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
 									["Serpent Sting"] = {
@@ -502,1127 +3923,7 @@ _detalhes_database = {
 										["activedamt"] = 0,
 										["refreshamt"] = 0,
 										["id"] = "Serpent Sting",
-										["uptime"] = 13,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 6,
-								["Serpent Sting"] = 2,
-								["Arcane Shot"] = 2,
-							},
-							["nome"] = "Greenwise",
-							["last_event"] = 1571339231,
-							["pets"] = {
-								"Boar <Greenwise>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["serial"] = "Player-4465-012659A9",
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 69905,
-							["ownerName"] = "Greenwise",
-							["nome"] = "Boar <Greenwise>",
-							["pets"] = {
-							},
-							["spell_cast"] = {
-								["Growl"] = 4,
-								["Charge"] = 1,
-								["Bite"] = 2,
-							},
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Pet-0-4469-1-134-3100-04001B7554",
-							["last_event"] = 0,
-						}, -- [2]
-						{
-							["flag_original"] = 68136,
-							["nome"] = "Elder Mottled Boar",
-							["classe"] = "UNKNOW",
-							["spell_cast"] = {
-								["Boar Charge"] = 1,
-							},
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-4470-1-147-3100-000028AE60",
-							["fight_component"] = true,
-						}, -- [3]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 799,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Greenwise"] = true,
-				},
-				["tempo_start"] = 1571339210,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					465.149113000004, -- [1]
-					0, -- [2]
-					{
-						-0.0160470000000004, -- [1]
-						[0] = -0.00891700000000029,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = -0.00642799999999966,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = -0.00808100000000001,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-					["Greenwise"] = {
-						{
-							true, -- [1]
-							"Falling", -- [2]
-							25, -- [3]
-							1571341146.637, -- [4]
-							480, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [1]
-						{
-							true, -- [1]
-							"Fire", -- [2]
-							15, -- [3]
-							1571476771.281, -- [4]
-							480, -- [5]
-							"Environment (Fire)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [2]
-						{
-							true, -- [1]
-							"Falling", -- [2]
-							25, -- [3]
-							1571477636.861, -- [4]
-							480, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 4,
-					},
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:07:12",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Elder Mottled Boar",
-				["TotalElapsedCombatTime"] = 764786.975,
-				["CombatEndedAt"] = 764786.975,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "21:06:50",
-				["end_time"] = 764786.975,
-				["combat_id"] = 799,
-				["totals_grupo"] = {
-					261, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["frags"] = {
-					["Elder Mottled Boar"] = 1,
-					["Venomtail Scorpid"] = 1,
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Greenwise"] = 375.008166,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["combat_counter"] = 1044,
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Venomtail Scorpid",
-				["start_time"] = 764765.091,
-				["TimeData"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-			}, -- [1]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 798,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.002342,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Elder Mottled Boar"] = 193,
-							},
-							["pets"] = {
-								"Boar <Greenwise>", -- [1]
-							},
-							["end_time"] = 1571339174,
-							["tipo"] = 1,
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-								[128] = 193,
-							},
-							["total_without_pet"] = 163.002342,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 193.002342,
-							["damage_taken"] = 0.002342,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Greenwise",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Elder Mottled Boar"] = 21,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 21,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 21,
-										["c_max"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 64,
-									},
-									["Raptor Strike"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 80,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Elder Mottled Boar"] = 80,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 80,
-										["c_max"] = 80,
-										["id"] = "Raptor Strike",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 80,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 28,
-										["targets"] = {
-											["Elder Mottled Boar"] = 54,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 54,
-										["n_min"] = 26,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 54,
-										["c_max"] = 0,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 8,
-										["targets"] = {
-											["Elder Mottled Boar"] = 8,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 8,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 8,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 43.0136710489224,
-							["colocacao"] = 1,
-							["last_event"] = 1571339174,
-							["on_hold"] = false,
-							["start_time"] = 1571339170,
-							["serial"] = "Player-4465-012659A9",
-							["friendlyfire_total"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.001274,
-							["damage_from"] = {
-								["Elder Mottled Boar"] = true,
-								["Venomtail Scorpid"] = true,
-							},
-							["targets"] = {
-								["Elder Mottled Boar"] = 30,
-							},
-							["pets"] = {
-							},
-							["damage_taken"] = 29.001274,
-							["classe"] = "PET",
-							["raid_targets"] = {
-								[128] = 30,
-							},
-							["total_without_pet"] = 30.001274,
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["total"] = 30.001274,
-							["delay"] = 0,
-							["ownerName"] = "Greenwise",
-							["nome"] = "Boar <Greenwise>",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 11,
-										["targets"] = {
-											["Elder Mottled Boar"] = 20,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 20,
-										["n_min"] = 9,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 20,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Bite"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 10,
-										["targets"] = {
-											["Elder Mottled Boar"] = 10,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 10,
-										["n_min"] = 10,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 10,
-										["c_max"] = 0,
-										["id"] = "Bite",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire"] = {
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1571339172,
-							["on_hold"] = false,
-							["start_time"] = 1571339170,
-							["serial"] = "Pet-0-4469-1-134-3100-04001B7554",
-							["end_time"] = 1571339174,
-						}, -- [2]
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.0053,
-							["damage_from"] = {
-								["Greenwise"] = true,
-								["Boar <Greenwise>"] = true,
-							},
-							["targets"] = {
-								["Boar <Greenwise>"] = 26,
-							},
-							["pets"] = {
-							},
-							["last_event"] = 1571339173,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 26.0053,
-							["end_time"] = 1571339174,
-							["dps_started"] = false,
-							["total"] = 26.0053,
-							["delay"] = 0,
-							["classe"] = "UNKNOW",
-							["nome"] = "Elder Mottled Boar",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 19,
-										["targets"] = {
-											["Boar <Greenwise>"] = 26,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 26,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 26,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["damage_taken"] = 193.0053,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1571339171,
-							["serial"] = "Creature-0-4470-1-147-3100-0000A89D90",
-							["fight_component"] = true,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 798,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 798,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 798,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 68136,
-							["nome"] = "Elder Mottled Boar",
-							["classe"] = "UNKNOW",
-							["spell_cast"] = {
-								["Boar Charge"] = 1,
-							},
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-4470-1-147-3100-0000A89D90",
-							["fight_component"] = true,
-						}, -- [1]
-						{
-							["flag_original"] = 1300,
-							["debuff_uptime"] = 0,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Serpent Sting"] = {
-										["activedamt"] = -1,
-										["id"] = "Serpent Sting",
-										["targets"] = {
-										},
-										["actived_at"] = 1571339174,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 1,
-								["Raptor Strike"] = 1,
-								["Arcane Shot"] = 1,
-							},
-							["nome"] = "Greenwise",
-							["last_event"] = 1571339174,
-							["pets"] = {
-								"Boar <Greenwise>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["serial"] = "Player-4465-012659A9",
-							["tipo"] = 4,
-						}, -- [2]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Greenwise",
-							["nome"] = "Boar <Greenwise>",
-							["pets"] = {
-							},
-							["spell_cast"] = {
-								["Bite"] = 1,
-								["Growl"] = 1,
-							},
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Pet-0-4469-1-134-3100-04001B7554",
-							["last_event"] = 0,
-						}, -- [3]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 798,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Greenwise"] = true,
-				},
-				["CombatStartedAt"] = 764764.69,
-				["tempo_start"] = 1571339170,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					218.996158, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["totals_grupo"] = {
-					163, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:06:14",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Elder Mottled Boar",
-				["TotalElapsedCombatTime"] = 764729.545,
-				["CombatEndedAt"] = 764729.545,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Greenwise"] = 193.002342,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 764729.545,
-				["combat_id"] = 798,
-				["frags"] = {
-					["Elder Mottled Boar"] = 1,
-				},
-				["data_inicio"] = "21:06:10",
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["combat_counter"] = 1043,
-				["start_time"] = 764725.058,
-				["TimeData"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-			}, -- [2]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 797,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.007316,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Elder Mottled Boar"] = 183,
-							},
-							["pets"] = {
-								"Boar <Greenwise>", -- [1]
-							},
-							["total"] = 183.007316,
-							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-								[128] = 183,
-							},
-							["total_without_pet"] = 139.007316,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1571339151,
-							["on_hold"] = false,
-							["damage_taken"] = 0.007316,
-							["nome"] = "Greenwise",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Elder Mottled Boar"] = 21,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 21,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 21,
-										["c_max"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 64,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 56,
-										["g_amt"] = 0,
-										["n_max"] = 28,
-										["targets"] = {
-											["Elder Mottled Boar"] = 110,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 54,
-										["n_min"] = 26,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 110,
-										["c_max"] = 56,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 56,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 8,
-										["targets"] = {
-											["Elder Mottled Boar"] = 8,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 8,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 8,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 31.893920529734,
-							["colocacao"] = 1,
-							["last_event"] = 1571339150,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1571339145,
-							["serial"] = "Player-4465-012659A9",
-							["classe"] = "HUNTER",
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.003216,
-							["damage_from"] = {
-								["Elder Mottled Boar"] = true,
-								["Venomtail Scorpid"] = true,
-							},
-							["targets"] = {
-								["Elder Mottled Boar"] = 44,
-							},
-							["pets"] = {
-							},
-							["damage_taken"] = 39.003216,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-								[128] = 44,
-							},
-							["total_without_pet"] = 44.003216,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["total"] = 44.003216,
-							["delay"] = 0,
-							["ownerName"] = "Greenwise",
-							["nome"] = "Boar <Greenwise>",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 14,
-										["targets"] = {
-											["Elder Mottled Boar"] = 34,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 34,
-										["n_min"] = 10,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 34,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Bite"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 10,
-										["targets"] = {
-											["Elder Mottled Boar"] = 10,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 10,
-										["n_min"] = 10,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 10,
-										["c_max"] = 0,
-										["id"] = "Bite",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["end_time"] = 1571339151,
-							["last_event"] = 1571339149,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1571339145,
-							["serial"] = "Pet-0-4469-1-134-3100-04001B7554",
-							["classe"] = "PET",
-						}, -- [2]
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.004812,
-							["damage_from"] = {
-								["Boar <Greenwise>"] = true,
-								["Greenwise"] = true,
-							},
-							["targets"] = {
-								["Boar <Greenwise>"] = 24,
-							},
-							["pets"] = {
-							},
-							["last_event"] = 1571339149,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 24.004812,
-							["classe"] = "UNKNOW",
-							["dps_started"] = false,
-							["total"] = 24.004812,
-							["delay"] = 0,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Elder Mottled Boar",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Boar <Greenwise>"] = 24,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 24,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 24,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["damage_taken"] = 183.004812,
-							["end_time"] = 1571339151,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1571339145,
-							["serial"] = "Creature-0-4470-1-147-3100-0000289D37",
-							["fight_component"] = true,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 797,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 797,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 797,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["debuff_uptime"] = 4,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Serpent Sting"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = "Serpent Sting",
-										["uptime"] = 4,
+										["uptime"] = 6,
 										["targets"] = {
 										},
 										["appliedamt"] = 1,
@@ -1630,21 +3931,52 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["debuff_uptime_targets"] = {
+							["buff_uptime"] = 15,
+							["classe"] = "HUNTER",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Quick Shots"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Quick Shots",
+										["uptime"] = 7,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									["Aspect of the Hawk"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Aspect of the Hawk",
+										["uptime"] = 8,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 6,
+							["buff_uptime_targets"] = {
 							},
 							["grupo"] = true,
 							["spell_cast"] = {
-								["Auto Shot"] = 3,
+								["Auto Shot"] = 5,
 								["Arcane Shot"] = 1,
 							},
 							["nome"] = "Greenwise",
-							["last_event"] = 1571339150,
+							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
 							["pets"] = {
 								"Boar <Greenwise>", -- [1]
 							},
-							["classe"] = "HUNTER",
 							["serial"] = "Player-4465-012659A9",
-							["tipo"] = 4,
+							["last_event"] = 1571771352,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -1652,38 +3984,36 @@ _detalhes_database = {
 							["nome"] = "Boar <Greenwise>",
 							["pets"] = {
 							},
+							["classe"] = "PET",
+							["tipo"] = 4,
 							["spell_cast"] = {
-								["Growl"] = 1,
+								["Growl"] = 2,
 								["Bite"] = 1,
 							},
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Pet-0-4469-1-134-3100-04001B7554",
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
 							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
 					["tipo"] = 2,
-					["combatId"] = 797,
+					["combatId"] = 812,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
 					["Greenwise"] = true,
 				},
-				["CombatStartedAt"] = 764724.274,
-				["tempo_start"] = 1571339145,
+				["CombatStartedAt"] = 347287.534,
+				["tempo_start"] = 1571771344,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 1099,
 				["playing_solo"] = true,
 				["totals"] = {
-					206.99669, -- [1]
+					305, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -1706,7 +4036,7 @@ _detalhes_database = {
 					["frags_total"] = 0,
 				},
 				["totals_grupo"] = {
-					139, -- [1]
+					148, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -1729,13 +4059,12 @@ _detalhes_database = {
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
 				["hasSaved"] = true,
-				["data_fim"] = "21:05:51",
-				["pvp"] = true,
+				["data_fim"] = "21:09:13",
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Elder Mottled Boar",
-				["TotalElapsedCombatTime"] = 5.73800000001211,
-				["CombatEndedAt"] = 764706.126,
+				["enemy"] = "Savannah Highmane",
+				["TotalElapsedCombatTime"] = 8.09699999995064,
+				["CombatEndedAt"] = 347266.491,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
@@ -1747,7 +4076,7 @@ _detalhes_database = {
 					}, -- [1]
 					["damage"] = {
 						{
-							["Greenwise"] = 183.007316,
+							["Greenwise"] = 259.007117,
 						}, -- [1]
 					},
 					["heal_section"] = {
@@ -1759,1380 +4088,53 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["end_time"] = 764706.126,
-				["combat_id"] = 797,
+				["end_time"] = 347266.491,
+				["combat_id"] = 812,
+				["player_last_events"] = {
+				},
 				["frags"] = {
-					["Elder Mottled Boar"] = 1,
+					["Savannah Highmane"] = 1,
 				},
-				["data_inicio"] = "21:05:45",
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["combat_counter"] = 1042,
-				["start_time"] = 764700.388,
-				["TimeData"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-			}, -- [3]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 796,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.003999,
-							["damage_from"] = {
-								["Elder Mottled Boar"] = true,
-							},
-							["targets"] = {
-								["Elder Mottled Boar"] = 379,
-								["Venomtail Scorpid"] = 202,
-							},
-							["pets"] = {
-								"Boar <Greenwise>", -- [1]
-							},
-							["end_time"] = 1571339134,
-							["tipo"] = 1,
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-								[128] = 521,
-							},
-							["total_without_pet"] = 473.003999,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 581.003999,
-							["damage_taken"] = 29.003999,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Greenwise",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Elder Mottled Boar"] = 42,
-											["Venomtail Scorpid"] = 21,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 63,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 63,
-										["c_max"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 64,
-									},
-									["Raptor Strike"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 44,
-										["targets"] = {
-											["Elder Mottled Boar"] = 44,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 44,
-										["n_min"] = 44,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 44,
-										["c_max"] = 0,
-										["id"] = "Raptor Strike",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 30,
-										["targets"] = {
-											["Elder Mottled Boar"] = 190,
-											["Venomtail Scorpid"] = 104,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 294,
-										["n_min"] = 25,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 294,
-										["c_max"] = 0,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 11,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 8,
-										["targets"] = {
-											["Elder Mottled Boar"] = 32,
-											["Venomtail Scorpid"] = 40,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 72,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 72,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 9,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 23.5033980178259,
-							["colocacao"] = 1,
-							["last_event"] = 1571339133,
-							["on_hold"] = false,
-							["start_time"] = 1571339109,
-							["serial"] = "Player-4465-012659A9",
-							["friendlyfire_total"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.004431,
-							["damage_from"] = {
-								["Boar <Greenwise>"] = true,
-								["Greenwise"] = true,
-							},
-							["targets"] = {
-								["Boar <Greenwise>"] = 128,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["total"] = 128.004431,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 128.004431,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1571339145,
-							["fight_component"] = true,
-							["damage_taken"] = 202.004431,
-							["nome"] = "Venomtail Scorpid",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Boar"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["a_amt"] = 0,
-									}, -- [1]
-									["!Melee"] = {
-										["c_amt"] = 2,
-										["b_amt"] = 2,
-										["c_dmg"] = 29,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Boar <Greenwise>"] = 89,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 60,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 89,
-										["c_max"] = 15,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 14,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 16,
-										["n_amt"] = 7,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Venom Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 30,
-										["targets"] = {
-											["Boar <Greenwise>"] = 39,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 39,
-										["n_min"] = 3,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 39,
-										["c_max"] = 0,
-										["id"] = "Venom Sting",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1571339145,
-							["on_hold"] = false,
-							["start_time"] = 1571339115,
-							["serial"] = "Creature-0-4470-1-147-3127-000028A7EF",
-							["classe"] = "UNKNOW",
-						}, -- [2]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.004471,
-							["damage_from"] = {
-								["Elder Mottled Boar"] = true,
-								["Venomtail Scorpid"] = true,
-							},
-							["targets"] = {
-								["Elder Mottled Boar"] = 71,
-								["Venomtail Scorpid"] = 37,
-							},
-							["pets"] = {
-							},
-							["damage_taken"] = 196.004471,
-							["classe"] = "PET",
-							["raid_targets"] = {
-								[128] = 99,
-							},
-							["total_without_pet"] = 108.004471,
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["total"] = 108.004471,
-							["delay"] = 0,
-							["ownerName"] = "Greenwise",
-							["nome"] = "Boar <Greenwise>",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 10,
-										["targets"] = {
-											["Elder Mottled Boar"] = 52,
-											["Venomtail Scorpid"] = 37,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 89,
-										["n_min"] = 6,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 89,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 6,
-										["n_amt"] = 10,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Bite"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 10,
-										["targets"] = {
-											["Elder Mottled Boar"] = 19,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 19,
-										["n_min"] = 9,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 19,
-										["c_max"] = 0,
-										["id"] = "Bite",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire"] = {
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1571339131,
-							["on_hold"] = false,
-							["start_time"] = 1571339113,
-							["serial"] = "Pet-0-4469-1-134-3100-04001B7554",
-							["end_time"] = 1571339134,
-						}, -- [3]
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.002723,
-							["damage_from"] = {
-								["Greenwise"] = true,
-								["Boar <Greenwise>"] = true,
-							},
-							["targets"] = {
-								["Greenwise"] = 29,
-								["Boar <Greenwise>"] = 68,
-							},
-							["pets"] = {
-							},
-							["last_event"] = 1571339128,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 97.002723,
-							["end_time"] = 1571339134,
-							["dps_started"] = false,
-							["total"] = 97.002723,
-							["delay"] = 0,
-							["classe"] = "UNKNOW",
-							["nome"] = "Elder Mottled Boar",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Boar"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["MISS"] = 1,
-									}, -- [1]
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 29,
-										["targets"] = {
-											["Greenwise"] = 29,
-											["Boar <Greenwise>"] = 68,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 97,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 97,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 8,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["damage_taken"] = 379.002723,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1571339114,
-							["serial"] = "Creature-0-4470-1-147-3100-0000289CD9",
-							["fight_component"] = true,
-						}, -- [4]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 796,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 796,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 796,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["debuff_uptime"] = 14,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Serpent Sting"] = {
-										["activedamt"] = -1,
-										["id"] = "Serpent Sting",
-										["targets"] = {
-										},
-										["actived_at"] = 1571339133,
-										["uptime"] = 14,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 2,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 11,
-								["Raptor Strike"] = 1,
-								["Arcane Shot"] = 3,
-								["Serpent Sting"] = 2,
-							},
-							["nome"] = "Greenwise",
-							["last_event"] = 1571339133,
-							["pets"] = {
-								"Boar <Greenwise>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["serial"] = "Player-4465-012659A9",
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 68136,
-							["nome"] = "Elder Mottled Boar",
-							["classe"] = "UNKNOW",
-							["spell_cast"] = {
-								["Boar Charge"] = 2,
-							},
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["serial"] = "Creature-0-4470-1-147-3100-0000289CD9",
-							["fight_component"] = true,
-						}, -- [2]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Greenwise",
-							["nome"] = "Boar <Greenwise>",
-							["pets"] = {
-							},
-							["spell_cast"] = {
-								["Bite"] = 2,
-								["Growl"] = 4,
-							},
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Pet-0-4469-1-134-3100-04001B7554",
-							["last_event"] = 0,
-						}, -- [3]
-						{
-							["flag_original"] = 2632,
-							["last_event"] = 0,
-							["nome"] = "Venomtail Scorpid",
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["spell_cast"] = {
-								["Venom Sting"] = 1,
-							},
-							["tipo"] = 4,
-							["monster"] = true,
-							["serial"] = "Creature-0-4470-1-147-3127-000028A7EF",
-							["fight_component"] = true,
-						}, -- [4]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 796,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Greenwise"] = true,
-				},
-				["tempo_start"] = 1571339109,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 1041,
-				["playing_solo"] = true,
-				["totals"] = {
-					806, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["totals_grupo"] = {
-					473, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:05:34",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Elder Mottled Boar",
-				["TotalElapsedCombatTime"] = 764689.096,
-				["CombatEndedAt"] = 764689.096,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Greenwise"] = 581.003999,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 764689.096,
-				["combat_id"] = 796,
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "21:05:09",
-				["CombatSkillCache"] = {
-				},
+				["data_inicio"] = "21:09:05",
 				["cleu_events"] = {
 					["n"] = 1,
 				},
-				["start_time"] = 764664.376,
+				["CombatSkillCache"] = {
+				},
 				["TimeData"] = {
 				},
-				["frags"] = {
-					["Elder Mottled Boar"] = 2,
-					["Venomtail Scorpid"] = 1,
+				["start_time"] = 347258.394,
+				["contra"] = "Savannah Highmane",
+				["spells_cast_timeline"] = {
 				},
-			}, -- [4]
+			}, -- [8]
 			{
 				{
 					["tipo"] = 2,
-					["combatId"] = 795,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.005248,
-							["damage_from"] = {
-								["Boar <Greenwise>"] = true,
-								["Greenwise"] = true,
-							},
-							["targets"] = {
-								["Boar <Greenwise>"] = 47,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["total"] = 47.005248,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 47.005248,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1571339094,
-							["fight_component"] = true,
-							["damage_taken"] = 176.005248,
-							["nome"] = "Dreadmaw Crocolisk",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Boar"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["DODGE"] = 1,
-									}, -- [1]
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Boar <Greenwise>"] = 47,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 47,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 47,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1571339091,
-							["on_hold"] = false,
-							["start_time"] = 1571339076,
-							["serial"] = "Creature-0-4470-1-147-3110-000028B225",
-							["classe"] = "UNKNOW",
-						}, -- [1]
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.004268,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Elder Mottled Boar"] = 165,
-								["Dreadmaw Crocolisk"] = 176,
-							},
-							["pets"] = {
-								"Boar <Greenwise>", -- [1]
-							},
-							["end_time"] = 1571339094,
-							["tipo"] = 1,
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-								[128] = 314,
-							},
-							["total_without_pet"] = 225.004268,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 341.004268,
-							["damage_taken"] = 0.004268,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Greenwise",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Elder Mottled Boar"] = 21,
-											["Dreadmaw Crocolisk"] = 21,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 42,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 42,
-										["c_max"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 64,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 29,
-										["targets"] = {
-											["Elder Mottled Boar"] = 82,
-											["Dreadmaw Crocolisk"] = 77,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 159,
-										["n_min"] = 24,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 159,
-										["c_max"] = 0,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 8,
-										["targets"] = {
-											["Elder Mottled Boar"] = 8,
-											["Dreadmaw Crocolisk"] = 16,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 24,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 24,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 21.0327680256729,
-							["colocacao"] = 1,
-							["last_event"] = 1571339092,
-							["on_hold"] = false,
-							["start_time"] = 1571339078,
-							["serial"] = "Player-4465-012659A9",
-							["friendlyfire_total"] = 0,
-						}, -- [2]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.002222,
-							["damage_from"] = {
-								["Dreadmaw Crocolisk"] = true,
-								["Elder Mottled Boar"] = true,
-							},
-							["targets"] = {
-								["Elder Mottled Boar"] = 54,
-								["Dreadmaw Crocolisk"] = 62,
-							},
-							["pets"] = {
-							},
-							["damage_taken"] = 67.002222,
-							["classe"] = "PET",
-							["raid_targets"] = {
-								[128] = 116,
-							},
-							["total_without_pet"] = 116.002222,
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["total"] = 116.002222,
-							["delay"] = 0,
-							["ownerName"] = "Greenwise",
-							["nome"] = "Boar <Greenwise>",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 21,
-										["g_amt"] = 0,
-										["n_max"] = 14,
-										["targets"] = {
-											["Elder Mottled Boar"] = 45,
-											["Dreadmaw Crocolisk"] = 52,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 76,
-										["n_min"] = 9,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 97,
-										["c_max"] = 21,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 21,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 7,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Bite"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 10,
-										["targets"] = {
-											["Elder Mottled Boar"] = 9,
-											["Dreadmaw Crocolisk"] = 10,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 19,
-										["n_min"] = 9,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 19,
-										["c_max"] = 0,
-										["id"] = "Bite",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire"] = {
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1571339092,
-							["on_hold"] = false,
-							["start_time"] = 1571339078,
-							["serial"] = "Pet-0-4469-1-134-3100-04001B7554",
-							["end_time"] = 1571339094,
-						}, -- [3]
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.006617,
-							["damage_from"] = {
-								["Boar <Greenwise>"] = true,
-								["Greenwise"] = true,
-							},
-							["targets"] = {
-								["Boar <Greenwise>"] = 20,
-							},
-							["pets"] = {
-							},
-							["last_event"] = 1571339108,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 20.006617,
-							["end_time"] = 1571339094,
-							["dps_started"] = false,
-							["total"] = 20.006617,
-							["delay"] = 1571339084,
-							["classe"] = "UNKNOW",
-							["nome"] = "Elder Mottled Boar",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Boar"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["r_amt"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["spellschool"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 0,
-										["MISS"] = 1,
-										["DODGE"] = 1,
-									}, -- [1]
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 7,
-										["targets"] = {
-											["Boar <Greenwise>"] = 20,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 20,
-										["n_min"] = 6,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 20,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["damage_taken"] = 165.006617,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1571339087,
-							["serial"] = "Creature-0-4470-1-147-3100-000028A06F",
-							["fight_component"] = true,
-						}, -- [4]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 795,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 795,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 795,
+					["combatId"] = 811,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
-							["debuff_uptime"] = 12,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Serpent Sting"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = "Serpent Sting",
-										["uptime"] = 12,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 6,
-								["Serpent Sting"] = 2,
-								["Arcane Shot"] = 2,
-							},
-							["nome"] = "Greenwise",
-							["last_event"] = 1571339092,
-							["pets"] = {
-								"Boar <Greenwise>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["serial"] = "Player-4465-012659A9",
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Greenwise",
-							["nome"] = "Boar <Greenwise>",
-							["pets"] = {
-							},
-							["spell_cast"] = {
-								["Growl"] = 3,
-								["Charge"] = 1,
-								["Bite"] = 2,
-							},
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Pet-0-4469-1-134-3100-04001B7554",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 795,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Greenwise"] = true,
-				},
-				["CombatStartedAt"] = 764663.559,
-				["tempo_start"] = 1571339076,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					408, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:04:54",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Elder Mottled Boar",
-				["TotalElapsedCombatTime"] = 764648.98,
-				["CombatEndedAt"] = 764648.98,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "21:04:36",
-				["end_time"] = 764648.98,
-				["combat_id"] = 795,
-				["totals_grupo"] = {
-					225, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["spells_cast_timeline"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Greenwise"] = 341.004268,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["combat_counter"] = 1040,
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 764631.133,
-				["contra"] = "Dreadmaw Crocolisk",
-				["frags"] = {
-					["Elder Mottled Boar"] = 1,
-					["Dreadmaw Crocolisk"] = 1,
-				},
-			}, -- [5]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 794,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.001796,
+							["totalabsorbed"] = 0.007148,
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Dreadmaw Crocolisk"] = 205,
+								["Savannah Huntress"] = 249,
 							},
 							["pets"] = {
 								"Boar <Greenwise>", -- [1]
 							},
-							["total"] = 205.001796,
-							["tipo"] = 1,
 							["friendlyfire_total"] = 0,
+							["tipo"] = 1,
+							["classe"] = "HUNTER",
 							["raid_targets"] = {
-								[128] = 205,
 							},
-							["total_without_pet"] = 140.001796,
-							["delay"] = 0,
+							["total_without_pet"] = 182.007148,
+							["serial"] = "Player-4465-012659A9",
 							["dps_started"] = false,
-							["end_time"] = 1571339056,
+							["end_time"] = 1571771321,
+							["damage_taken"] = 0.007148,
 							["on_hold"] = false,
-							["damage_taken"] = 0.001796,
 							["nome"] = "Greenwise",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -3143,7 +4145,7 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 21,
 										["targets"] = {
-											["Dreadmaw Crocolisk"] = 21,
+											["Savannah Huntress"] = 21,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 21,
@@ -3154,32 +4156,564 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Arcane Shot",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
+										["spellschool"] = 64,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									[2] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Savannah Huntress"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = 2,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
 										["a_dmg"] = 0,
-										["spellschool"] = 64,
+										["r_amt"] = 0,
 									},
 									["!Autoshot"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 28,
+										["n_max"] = 29,
 										["targets"] = {
-											["Dreadmaw Crocolisk"] = 103,
+											["Savannah Huntress"] = 113,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 103,
-										["n_min"] = 24,
+										["n_dmg"] = 113,
+										["n_min"] = 27,
 										["g_dmg"] = 0,
 										["counter"] = 4,
-										["total"] = 103,
+										["total"] = 113,
+										["c_max"] = 0,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["Serpent Sting"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Savannah Huntress"] = 48,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 48,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 48,
+										["c_max"] = 0,
+										["id"] = "Serpent Sting",
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["colocacao"] = 1,
+							["last_dps"] = 22.075101772995,
+							["custom"] = 0,
+							["last_event"] = 1571771320,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1571771310,
+							["delay"] = 0,
+							["total"] = 249.007148,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.00655,
+							["damage_from"] = {
+								["Savannah Huntress"] = true,
+							},
+							["targets"] = {
+								["Savannah Huntress"] = 67,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 67.00655,
+							["classe"] = "PET",
+							["dps_started"] = false,
+							["total"] = 67.00655,
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
+							["ownerName"] = "Greenwise",
+							["nome"] = "Boar <Greenwise>",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Savannah Huntress"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									[0] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Savannah Huntress"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["DODGE"] = 1,
+										["id"] = 0,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 23,
+										["targets"] = {
+											["Savannah Huntress"] = 67,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 67,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 67,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["end_time"] = 1571771321,
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1571771318,
+							["damage_taken"] = 64.00655,
+							["start_time"] = 1571771310,
+							["delay"] = 0,
+							["friendlyfire"] = {
+							},
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.00264,
+							["damage_from"] = {
+								["Boar <Greenwise>"] = true,
+								["Greenwise"] = true,
+							},
+							["targets"] = {
+								["Boar <Greenwise>"] = 64,
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 64.00264,
+							["serial"] = "Creature-0-4468-1-414-3415-00002F379D",
+							["dps_started"] = false,
+							["total"] = 64.00264,
+							["monster"] = true,
+							["damage_taken"] = 249.00264,
+							["nome"] = "Savannah Huntress",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 1,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 10,
+										["targets"] = {
+											["Boar <Greenwise>"] = 64,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 64,
+										["n_min"] = 8,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 64,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 8,
+										["n_amt"] = 7,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["tipo"] = 1,
+							["end_time"] = 1571771321,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1571771319,
+							["on_hold"] = false,
+							["start_time"] = 1571771310,
+							["delay"] = 0,
+							["classe"] = "UNKNOW",
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 811,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 811,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 811,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Serpent Sting"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 9,
+										["id"] = "Serpent Sting",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["pets"] = {
+								"Boar <Greenwise>", -- [1]
+							},
+							["classe"] = "HUNTER",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Aspect of the Hawk"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 11,
+										["id"] = "Aspect of the Hawk",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 9,
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								["Auto Shot"] = 6,
+								["Arcane Shot"] = 1,
+								["Serpent Sting"] = 1,
+							},
+							["nome"] = "Greenwise",
+							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
+							["last_event"] = 1571771321,
+							["serial"] = "Player-4465-012659A9",
+							["buff_uptime"] = 11,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Greenwise",
+							["nome"] = "Boar <Greenwise>",
+							["pets"] = {
+							},
+							["spell_cast"] = {
+								["Bite"] = 1,
+								["Growl"] = 1,
+							},
+							["classe"] = "PET",
+							["last_event"] = 0,
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
+							["tipo"] = 4,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 811,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Greenwise"] = true,
+				},
+				["CombatStartedAt"] = 347223.956,
+				["tempo_start"] = 1571771310,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 1097,
+				["playing_solo"] = true,
+				["totals"] = {
+					313, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "21:08:41",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Savannah Huntress",
+				["TotalElapsedCombatTime"] = 10.8960000000079,
+				["CombatEndedAt"] = 347234.852,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "21:08:30",
+				["end_time"] = 347234.852,
+				["combat_id"] = 811,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["frags"] = {
+					["Savannah Huntress"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["totals_grupo"] = {
+					182, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Savannah Huntress",
+				["start_time"] = 347223.572,
+				["TimeData"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Greenwise"] = 249.007148,
+						}, -- [1]
+					},
+				},
+			}, -- [9]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 810,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.001567,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Savannah Huntress"] = 232,
+							},
+							["pets"] = {
+								"Boar <Greenwise>", -- [1]
+							},
+							["total"] = 232.001567,
+							["last_event"] = 1571771286,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 180.001567,
+							["delay"] = 0,
+							["dps_started"] = false,
+							["end_time"] = 1571771287,
+							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Greenwise",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 32,
+										["targets"] = {
+											["Savannah Huntress"] = 148,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 148,
+										["n_min"] = 27,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 148,
 										["c_max"] = 0,
 										["id"] = "!Autoshot",
 										["r_dmg"] = 0,
@@ -3190,7 +4724,7 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 4,
+										["n_amt"] = 5,
 										["a_dmg"] = 0,
 										["spellschool"] = 1,
 									},
@@ -3199,16 +4733,16 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 8,
+										["n_max"] = 16,
 										["targets"] = {
-											["Dreadmaw Crocolisk"] = 16,
+											["Savannah Huntress"] = 32,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 16,
-										["n_min"] = 8,
+										["n_dmg"] = 32,
+										["n_min"] = 16,
 										["g_dmg"] = 0,
 										["counter"] = 2,
-										["total"] = 16,
+										["total"] = 32,
 										["c_max"] = 0,
 										["id"] = "Serpent Sting",
 										["r_dmg"] = 0,
@@ -3228,138 +4762,69 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["custom"] = 0,
-							["last_dps"] = 26.6028803529524,
+							["last_dps"] = 25.9800187010282,
 							["colocacao"] = 1,
-							["last_event"] = 1571339055,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1571339048,
+							["tipo"] = 1,
+							["damage_taken"] = 0.001567,
+							["start_time"] = 1571771278,
 							["serial"] = "Player-4465-012659A9",
 							["classe"] = "HUNTER",
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.002587,
+							["totalabsorbed"] = 0.006916,
 							["damage_from"] = {
-								["Dreadmaw Crocolisk"] = true,
+								["Savannah Huntress"] = true,
 							},
 							["targets"] = {
-								["Dreadmaw Crocolisk"] = 65,
+								["Savannah Huntress"] = 52,
 							},
 							["pets"] = {
 							},
-							["damage_taken"] = 34.002587,
+							["damage_taken"] = 36.006916,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
-								[128] = 65,
 							},
-							["total_without_pet"] = 65.002587,
+							["total_without_pet"] = 52.006916,
 							["friendlyfire"] = {
 							},
 							["dps_started"] = false,
-							["total"] = 65.002587,
+							["total"] = 52.006916,
 							["delay"] = 0,
 							["ownerName"] = "Greenwise",
 							["nome"] = "Boar <Greenwise>",
 							["spells"] = {
 								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 21,
-										["g_amt"] = 0,
-										["n_max"] = 14,
-										["targets"] = {
-											["Dreadmaw Crocolisk"] = 56,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 35,
-										["n_min"] = 10,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 56,
-										["c_max"] = 21,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 21,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Bite"] = {
+									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 9,
+										["n_max"] = 0,
 										["targets"] = {
-											["Dreadmaw Crocolisk"] = 9,
+											["Savannah Huntress"] = 0,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 9,
-										["n_min"] = 9,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 9,
+										["counter"] = 2,
+										["total"] = 0,
 										["c_max"] = 0,
-										["id"] = "Bite",
-										["r_dmg"] = 0,
 										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
 										["c_min"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 2,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
+										["n_amt"] = 0,
 										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["end_time"] = 1571339056,
-							["last_event"] = 1571339055,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1571339049,
-							["serial"] = "Pet-0-4469-1-134-3100-04001B7554",
-							["classe"] = "PET",
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.00475,
-							["damage_from"] = {
-								["Greenwise"] = true,
-								["Boar <Greenwise>"] = true,
-							},
-							["targets"] = {
-								["Boar <Greenwise>"] = 34,
-							},
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 34.00475,
-							["delay"] = 0,
-							["monster"] = true,
-							["total"] = 34.00475,
-							["end_time"] = 1571339076,
-							["damage_taken"] = 205.00475,
-							["nome"] = "Dreadmaw Crocolisk",
-							["spells"] = {
-								["_ActorTable"] = {
+										["a_amt"] = 0,
+									}, -- [1]
 									[0] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -3367,7 +4832,7 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["Boar"] = 0,
+											["Savannah Huntress"] = 0,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 0,
@@ -3391,22 +4856,922 @@ _detalhes_database = {
 										["MISS"] = 1,
 									},
 									["!Melee"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 29,
+										["g_amt"] = 0,
+										["n_max"] = 23,
+										["targets"] = {
+											["Savannah Huntress"] = 52,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 23,
+										["n_min"] = 23,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 52,
+										["c_max"] = 29,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 29,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["end_time"] = 1571771287,
+							["last_event"] = 1571771284,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["start_time"] = 1571771278,
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
+							["classe"] = "PET",
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.005,
+							["damage_from"] = {
+								["Boar <Greenwise>"] = true,
+								["Greenwise"] = true,
+							},
+							["targets"] = {
+								["Boar <Greenwise>"] = 36,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["damage_taken"] = 232.005,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 36.005,
+							["delay"] = 0,
+							["fight_component"] = true,
+							["total"] = 36.005,
+							["monster"] = true,
+							["on_hold"] = false,
+							["nome"] = "Savannah Huntress",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 9,
+										["n_max"] = 0,
 										["targets"] = {
-											["Boar <Greenwise>"] = 34,
+											["Boar"] = 0,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 34,
-										["n_min"] = 8,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 0,
+										["c_max"] = 0,
+										["r_amt"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["DODGE"] = 2,
+									}, -- [1]
+									["!Melee"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 15,
+										["g_amt"] = 0,
+										["n_max"] = 7,
+										["targets"] = {
+											["Boar <Greenwise>"] = 36,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 21,
+										["n_min"] = 7,
 										["g_dmg"] = 0,
 										["counter"] = 4,
-										["total"] = 34,
+										["total"] = 36,
+										["c_max"] = 15,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 15,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["last_event"] = 1571771284,
+							["last_dps"] = 0,
+							["end_time"] = 1571771287,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1571771279,
+							["serial"] = "Creature-0-4468-1-414-3415-00002E1423",
+							["dps_started"] = false,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 810,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 810,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 810,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Serpent Sting"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = "Serpent Sting",
+										["uptime"] = 8,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["pets"] = {
+								"Boar <Greenwise>", -- [1]
+							},
+							["classe"] = "HUNTER",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Aspect of the Hawk"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Aspect of the Hawk",
+										["uptime"] = 9,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 8,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								["Auto Shot"] = 5,
+							},
+							["nome"] = "Greenwise",
+							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
+							["buff_uptime"] = 9,
+							["serial"] = "Player-4465-012659A9",
+							["last_event"] = 1571771287,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Greenwise",
+							["nome"] = "Boar <Greenwise>",
+							["pets"] = {
+							},
+							["last_event"] = 0,
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
+							["spell_cast"] = {
+								["Growl"] = 2,
+								["Bite"] = 1,
+							},
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 810,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Greenwise"] = true,
+				},
+				["CombatStartedAt"] = 347191.983,
+				["tempo_start"] = 1571771278,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					268, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "21:08:08",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Savannah Huntress",
+				["TotalElapsedCombatTime"] = 8.92999999999302,
+				["CombatEndedAt"] = 347200.913,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "21:07:59",
+				["end_time"] = 347200.913,
+				["combat_id"] = 810,
+				["totals_grupo"] = {
+					180, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["spells_cast_timeline"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Greenwise"] = 232.001567,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["combat_counter"] = 1095,
+				["CombatSkillCache"] = {
+				},
+				["TimeData"] = {
+				},
+				["start_time"] = 347191.983,
+				["contra"] = "Savannah Huntress",
+				["frags"] = {
+					["Savannah Huntress"] = 1,
+				},
+			}, -- [10]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 809,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.002873,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Greater Plainstrider"] = 253,
+							},
+							["pets"] = {
+								"Boar <Greenwise>", -- [1]
+							},
+							["classe"] = "HUNTER",
+							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 169.002873,
+							["serial"] = "Player-4465-012659A9",
+							["dps_started"] = false,
+							["total"] = 253.002873,
+							["friendlyfire"] = {
+							},
+							["damage_taken"] = 0.002873,
+							["nome"] = "Greenwise",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Autoshot"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 55,
+										["g_amt"] = 0,
+										["n_max"] = 28,
+										["targets"] = {
+											["Greater Plainstrider"] = 137,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 82,
+										["n_min"] = 27,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 137,
+										["c_max"] = 55,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 55,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["Serpent Sting"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Greater Plainstrider"] = 32,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 32,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 32,
+										["c_max"] = 0,
+										["id"] = "Serpent Sting",
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["colocacao"] = 1,
+							["last_dps"] = 32.8660526109267,
+							["custom"] = 0,
+							["last_event"] = 1571771204,
+							["on_hold"] = false,
+							["start_time"] = 1571771197,
+							["delay"] = 0,
+							["end_time"] = 1571771205,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.002363,
+							["damage_from"] = {
+								["Greater Plainstrider"] = true,
+							},
+							["targets"] = {
+								["Greater Plainstrider"] = 84,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 84.002363,
+							["classe"] = "PET",
+							["dps_started"] = false,
+							["total"] = 84.002363,
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
+							["ownerName"] = "Greenwise",
+							["nome"] = "Boar <Greenwise>",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 23,
+										["targets"] = {
+											["Greater Plainstrider"] = 69,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 69,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 69,
 										["c_max"] = 0,
 										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["Bite"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Greater Plainstrider"] = 15,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 15,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 15,
+										["c_max"] = 0,
+										["id"] = "Bite",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["end_time"] = 1571771205,
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1571771203,
+							["damage_taken"] = 36.002363,
+							["start_time"] = 1571771197,
+							["delay"] = 0,
+							["friendlyfire"] = {
+							},
+						}, -- [2]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.00741,
+							["damage_from"] = {
+								["Boar <Greenwise>"] = true,
+								["Greenwise"] = true,
+							},
+							["targets"] = {
+								["Boar <Greenwise>"] = 36,
+							},
+							["pets"] = {
+							},
+							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 36.00741,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["total"] = 36.00741,
+							["serial"] = "Creature-0-4468-1-414-3244-00002F3725",
+							["on_hold"] = false,
+							["nome"] = "Greater Plainstrider",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Boar"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["c_min"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 13,
+										["targets"] = {
+											["Boar <Greenwise>"] = 36,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 36,
+										["n_min"] = 11,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 36,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1571771205,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1571771203,
+							["damage_taken"] = 253.00741,
+							["start_time"] = 1571771197,
+							["delay"] = 0,
+							["classe"] = "UNKNOW",
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 809,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 809,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 809,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Serpent Sting"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 6,
+										["id"] = "Serpent Sting",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 8,
+							["classe"] = "HUNTER",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Aspect of the Hawk"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 8,
+										["id"] = "Aspect of the Hawk",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 6,
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								["Auto Shot"] = 4,
+								["Serpent Sting"] = 1,
+							},
+							["nome"] = "Greenwise",
+							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
+							["last_event"] = 1571771205,
+							["serial"] = "Player-4465-012659A9",
+							["pets"] = {
+								"Boar <Greenwise>", -- [1]
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Greenwise",
+							["nome"] = "Boar <Greenwise>",
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["spell_cast"] = {
+								["Bite"] = 1,
+								["Growl"] = 1,
+							},
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
+							["classe"] = "PET",
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 809,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Greenwise"] = true,
+				},
+				["CombatStartedAt"] = 347111.26,
+				["tempo_start"] = 1571771197,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 1093,
+				["playing_solo"] = true,
+				["totals"] = {
+					289, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					169, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "21:06:45",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Greater Plainstrider",
+				["TotalElapsedCombatTime"] = 7.29800000000978,
+				["CombatEndedAt"] = 347118.558,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Greenwise"] = 253.002873,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 347118.558,
+				["combat_id"] = 809,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Greater Plainstrider"] = 1,
+				},
+				["data_inicio"] = "21:06:37",
+				["CombatSkillCache"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["start_time"] = 347110.86,
+				["TimeData"] = {
+				},
+				["player_last_events"] = {
+				},
+			}, -- [11]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 808,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.00412,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Greater Plainstrider"] = 257,
+							},
+							["pets"] = {
+								"Boar <Greenwise>", -- [1]
+							},
+							["end_time"] = 1571771147,
+							["last_event"] = 1571771146,
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+								[128] = 257,
+							},
+							["total_without_pet"] = 169.00412,
+							["delay"] = 0,
+							["dps_started"] = false,
+							["total"] = 257.00412,
+							["damage_taken"] = 0.00412,
+							["on_hold"] = false,
+							["nome"] = "Greenwise",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Serpent Sting"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Greater Plainstrider"] = 32,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 32,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 32,
+										["c_max"] = 0,
+										["id"] = "Serpent Sting",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
+									},
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 30,
+										["targets"] = {
+											["Greater Plainstrider"] = 116,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 116,
+										["n_min"] = 27,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 116,
+										["c_max"] = 0,
+										["id"] = "!Autoshot",
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["a_amt"] = 0,
@@ -3419,68 +5784,265 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["spellschool"] = 1,
 									},
-									["Muscle Tear"] = {
+									["Arcane Shot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 21,
+										["targets"] = {
+											["Greater Plainstrider"] = 21,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 21,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 21,
+										["c_max"] = 0,
+										["id"] = "Arcane Shot",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 64,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["custom"] = 0,
+							["last_dps"] = 26.710051964321,
+							["colocacao"] = 1,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1571771138,
+							["serial"] = "Player-4465-012659A9",
+							["friendlyfire_total"] = 0,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.002195,
+							["damage_from"] = {
+								["Greater Plainstrider"] = true,
+							},
+							["targets"] = {
+								["Greater Plainstrider"] = 88,
+							},
+							["pets"] = {
+							},
+							["damage_taken"] = 36.002195,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+								[128] = 88,
+							},
+							["total_without_pet"] = 88.002195,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["total"] = 88.002195,
+							["delay"] = 0,
+							["ownerName"] = "Greenwise",
+							["nome"] = "Boar <Greenwise>",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 28,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Greater Plainstrider"] = 88,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 60,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 88,
+										["c_max"] = 28,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 28,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									[0] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
+											["Greater Plainstrider"] = 0,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 0,
+										["counter"] = 1,
 										["total"] = 0,
 										["c_max"] = 0,
-										["id"] = "Muscle Tear",
-										["r_dmg"] = 0,
 										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
+										["id"] = 0,
+										["r_dmg"] = 0,
 										["a_dmg"] = 0,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["MISS"] = 1,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["tipo"] = 1,
+							["end_time"] = 1571771147,
+							["last_event"] = 1571771145,
 							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["start_time"] = 1571771138,
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
+							["classe"] = "PET",
+						}, -- [2]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.002879,
+							["damage_from"] = {
+								["Greenwise"] = true,
+								["Boar <Greenwise>"] = true,
+							},
+							["targets"] = {
+								["Boar <Greenwise>"] = 36,
+							},
+							["pets"] = {
+							},
+							["last_event"] = 1571771145,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 36.002879,
+							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["total"] = 36.002879,
+							["delay"] = 0,
 							["friendlyfire"] = {
 							},
+							["nome"] = "Greater Plainstrider",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Boar"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["r_amt"] = 0,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["a_amt"] = 0,
+									}, -- [1]
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 13,
+										["targets"] = {
+											["Boar <Greenwise>"] = 36,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 36,
+										["n_min"] = 11,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 36,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["damage_taken"] = 257.002879,
+							["end_time"] = 1571771147,
+							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1571339074,
+							["tipo"] = 1,
 							["on_hold"] = false,
-							["start_time"] = 1571339048,
-							["serial"] = "Creature-0-4470-1-147-3110-000028B732",
-							["fight_component"] = true,
+							["start_time"] = 1571771139,
+							["serial"] = "Creature-0-4468-1-414-3244-0000AF37D7",
+							["dps_started"] = false,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
 					["tipo"] = 3,
-					["combatId"] = 794,
+					["combatId"] = 808,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
 					["tipo"] = 7,
-					["combatId"] = 794,
+					["combatId"] = 808,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
 					["tipo"] = 9,
-					["combatId"] = 794,
+					["combatId"] = 808,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1300,
-							["debuff_uptime"] = 0,
+							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
 									["Serpent Sting"] = {
@@ -3488,7 +6050,7 @@ _detalhes_database = {
 										["id"] = "Serpent Sting",
 										["targets"] = {
 										},
-										["actived_at"] = 1571339055,
+										["actived_at"] = 1571771146,
 										["uptime"] = 0,
 										["counter"] = 0,
 										["refreshamt"] = 0,
@@ -3498,21 +6060,41 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["debuff_uptime_targets"] = {
+							["buff_uptime"] = 9,
+							["classe"] = "HUNTER",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Aspect of the Hawk"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Aspect of the Hawk",
+										["uptime"] = 9,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 0,
+							["buff_uptime_targets"] = {
 							},
 							["grupo"] = true,
 							["spell_cast"] = {
-								["Auto Shot"] = 4,
+								["Auto Shot"] = 3,
 								["Arcane Shot"] = 1,
 							},
 							["nome"] = "Greenwise",
-							["last_event"] = 1571339055,
+							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
 							["pets"] = {
 								"Boar <Greenwise>", -- [1]
 							},
-							["classe"] = "HUNTER",
 							["serial"] = "Player-4465-012659A9",
-							["tipo"] = 4,
+							["last_event"] = 1571771147,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -3526,47 +6108,29 @@ _detalhes_database = {
 							},
 							["tipo"] = 4,
 							["classe"] = "PET",
-							["serial"] = "Pet-0-4469-1-134-3100-04001B7554",
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
 							["last_event"] = 0,
 						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["last_event"] = 0,
-							["nome"] = "Dreadmaw Crocolisk",
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["spell_cast"] = {
-								["Muscle Tear"] = 1,
-							},
-							["tipo"] = 4,
-							["monster"] = true,
-							["serial"] = "Creature-0-4470-1-147-3110-000028B732",
-							["fight_component"] = true,
-						}, -- [3]
 					},
 				}, -- [4]
 				{
 					["tipo"] = 2,
-					["combatId"] = 794,
+					["combatId"] = 808,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
 					["Greenwise"] = true,
 				},
-				["CombatStartedAt"] = 764629.515,
-				["tempo_start"] = 1571339048,
+				["tempo_start"] = 1571771138,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 1091,
 				["playing_solo"] = true,
 				["totals"] = {
-					239, -- [1]
+					293, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -3588,26 +6152,8 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:04:16",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Dreadmaw Crocolisk",
-				["TotalElapsedCombatTime"] = 764610.85,
-				["CombatEndedAt"] = 764610.85,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "21:04:08",
-				["end_time"] = 764610.85,
-				["combat_id"] = 794,
 				["totals_grupo"] = {
-					140, -- [1]
+					169, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -3627,7 +6173,19 @@ _detalhes_database = {
 						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
-				["spells_cast_timeline"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "21:05:48",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Greater Plainstrider",
+				["TotalElapsedCombatTime"] = 347061.103,
+				["CombatEndedAt"] = 347061.103,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -3636,7 +6194,7 @@ _detalhes_database = {
 					}, -- [1]
 					["damage"] = {
 						{
-							["Greenwise"] = 205.001796,
+							["Greenwise"] = 257.00412,
 						}, -- [1]
 					},
 					["heal_section"] = {
@@ -3648,201 +6206,476 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["combat_counter"] = 1039,
+				["end_time"] = 347061.103,
+				["combat_id"] = 808,
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["data_inicio"] = "21:05:38",
 				["CombatSkillCache"] = {
 				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["start_time"] = 347051.481,
 				["TimeData"] = {
 				},
-				["start_time"] = 764603.144,
-				["contra"] = "Dreadmaw Crocolisk",
 				["frags"] = {
-					["Dreadmaw Crocolisk"] = 1,
+					["Greater Plainstrider"] = 1,
 				},
-			}, -- [6]
+			}, -- [12]
 			{
 				{
 					["tipo"] = 2,
-					["combatId"] = 793,
+					["combatId"] = 807,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.008934,
+							["totalabsorbed"] = 0.007916,
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Hecklefang Hyena"] = 335,
+								["Sickly Gazelle"] = 31,
 							},
 							["pets"] = {
 								"Boar <Greenwise>", -- [1]
 							},
-							["total"] = 335.008934,
+							["end_time"] = 1571771130,
 							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
+							["classe"] = "HUNTER",
 							["raid_targets"] = {
-								[128] = 335,
+								[128] = 31,
 							},
-							["total_without_pet"] = 255.008934,
+							["total_without_pet"] = 0.007916,
 							["delay"] = 0,
 							["dps_started"] = false,
-							["end_time"] = 1571338973,
+							["total"] = 31.007916,
 							["on_hold"] = false,
-							["damage_taken"] = 0.008934,
+							["damage_taken"] = 0.007916,
 							["nome"] = "Greenwise",
 							["spells"] = {
 								["_ActorTable"] = {
-									["Serpent Sting"] = {
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["custom"] = 0,
+							["last_dps"] = 310.07916,
+							["colocacao"] = 1,
+							["last_event"] = 1571771128,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1571771128,
+							["serial"] = "Player-4465-012659A9",
+							["friendlyfire_total"] = 0,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.008518,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Sickly Gazelle"] = 31,
+							},
+							["pets"] = {
+							},
+							["damage_taken"] = 0.008518,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+								[128] = 31,
+							},
+							["total_without_pet"] = 31.008518,
+							["friendlyfire"] = {
+							},
+							["dps_started"] = false,
+							["total"] = 31.008518,
+							["delay"] = 0,
+							["ownerName"] = "Greenwise",
+							["nome"] = "Boar <Greenwise>",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 8,
+										["n_max"] = 31,
 										["targets"] = {
-											["Hecklefang Hyena"] = 40,
+											["Sickly Gazelle"] = 31,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 40,
-										["n_min"] = 8,
+										["n_dmg"] = 31,
+										["n_min"] = 31,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 40,
+										["counter"] = 1,
+										["total"] = 31,
 										["c_max"] = 0,
-										["id"] = "Serpent Sting",
+										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["a_amt"] = 0,
 										["m_crit"] = 0,
 										["c_min"] = 0,
 										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["end_time"] = 1571771130,
+							["last_event"] = 1571771128,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["start_time"] = 1571771128,
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
+							["classe"] = "PET",
+						}, -- [2]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.001927,
+							["damage_from"] = {
+								["Boar <Greenwise>"] = true,
+							},
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["last_event"] = 0,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.001927,
+							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["total"] = 0.001927,
+							["delay"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Sickly Gazelle",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["damage_taken"] = 31.001927,
+							["end_time"] = 1571771130,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["start_time"] = 1571771130,
+							["serial"] = "Creature-0-4468-1-414-12296-00002F1A08",
+							["dps_started"] = false,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 807,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 807,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 807,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["nome"] = "Greenwise",
+							["grupo"] = true,
+							["pets"] = {
+								"Boar <Greenwise>", -- [1]
+							},
+							["classe"] = "HUNTER",
+							["last_event"] = 1571771130,
+							["tipo"] = 4,
+							["buff_uptime"] = 2,
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Aspect of the Hawk"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Aspect of the Hawk",
+										["uptime"] = 2,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["serial"] = "Player-4465-012659A9",
+							["buff_uptime_targets"] = {
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Greenwise",
+							["nome"] = "Boar <Greenwise>",
+							["pets"] = {
+							},
+							["spell_cast"] = {
+								["Growl"] = 1,
+							},
+							["tipo"] = 4,
+							["classe"] = "PET",
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
+							["last_event"] = 0,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 807,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Greenwise"] = true,
+				},
+				["CombatStartedAt"] = 347050.531,
+				["tempo_start"] = 1571771128,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					31, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["totals_grupo"] = {
+					0, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "21:05:30",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Sickly Gazelle",
+				["TotalElapsedCombatTime"] = 1.63199999998324,
+				["CombatEndedAt"] = 347043.683,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Greenwise"] = 31.007916,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["end_time"] = 347043.683,
+				["combat_id"] = 807,
+				["frags"] = {
+					["Sickly Gazelle"] = 1,
+				},
+				["data_inicio"] = "21:05:29",
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["combat_counter"] = 1090,
+				["start_time"] = 347042.051,
+				["TimeData"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+			}, -- [13]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 806,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.007131,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Greater Plainstrider"] = 259,
+							},
+							["pets"] = {
+								"Boar <Greenwise>", -- [1]
+							},
+							["friendlyfire_total"] = 0,
+							["tipo"] = 1,
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+								[128] = 259,
+							},
+							["total_without_pet"] = 173.007131,
+							["serial"] = "Player-4465-012659A9",
+							["dps_started"] = false,
+							["end_time"] = 1571771052,
+							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Greenwise",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 29,
+										["targets"] = {
+											["Greater Plainstrider"] = 141,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 141,
+										["n_min"] = 27,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 141,
+										["c_max"] = 0,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 5,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
-									[2] = {
+									["Serpent Sting"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 16,
 										["targets"] = {
-											["Hecklefang Hyena"] = 0,
+											["Greater Plainstrider"] = 32,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 2,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["MISS"] = 1,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 25,
-										["targets"] = {
-											["Hecklefang Hyena"] = 180,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 180,
-										["n_min"] = 17,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 180,
-										["c_max"] = 0,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 17,
-										["n_amt"] = 8,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Hecklefang Hyena"] = 35,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 35,
-										["n_min"] = 14,
+										["n_dmg"] = 32,
+										["n_min"] = 16,
 										["g_dmg"] = 0,
 										["counter"] = 2,
-										["total"] = 35,
+										["total"] = 32,
 										["c_max"] = 0,
-										["id"] = "Arcane Shot",
+										["id"] = "Serpent Sting",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 14,
-										["n_amt"] = 2,
+										["spellschool"] = 8,
 										["a_dmg"] = 0,
-										["spellschool"] = 64,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 16.70950840441,
 							["colocacao"] = 1,
-							["last_event"] = 1571338972,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1571338952,
-							["serial"] = "Player-4465-012659A9",
-							["classe"] = "HUNTER",
+							["last_dps"] = 26.6167023943307,
+							["custom"] = 0,
+							["last_event"] = 1571771050,
+							["damage_taken"] = 0.007131,
+							["start_time"] = 1571771042,
+							["delay"] = 0,
+							["total"] = 259.007131,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.004569,
+							["totalabsorbed"] = 0.005064,
 							["damage_from"] = {
-								["Hecklefang Hyena"] = true,
+								["Greater Plainstrider"] = true,
 							},
 							["targets"] = {
-								["Hecklefang Hyena"] = 80,
+								["Greater Plainstrider"] = 86,
 							},
 							["pets"] = {
 							},
-							["damage_taken"] = 240.004569,
+							["on_hold"] = false,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
-								[128] = 80,
+								[128] = 86,
 							},
-							["total_without_pet"] = 80.004569,
-							["friendlyfire"] = {
-							},
+							["total_without_pet"] = 86.005064,
+							["classe"] = "PET",
 							["dps_started"] = false,
-							["total"] = 80.004569,
-							["delay"] = 0,
+							["total"] = 86.005064,
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
 							["ownerName"] = "Greenwise",
 							["nome"] = "Boar <Greenwise>",
 							["spells"] = {
@@ -3854,871 +6687,240 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["Hecklefang Hyena"] = 0,
+											["Greater Plainstrider"] = 0,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["r_amt"] = 0,
+										["counter"] = 1,
 										["total"] = 0,
 										["c_max"] = 0,
-										["spellschool"] = 1,
+										["MISS"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
+										["spellschool"] = 1,
 										["b_dmg"] = 0,
-										["m_amt"] = 0,
 										["m_crit"] = 0,
-										["PARRY"] = 1,
+										["a_amt"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_dmg"] = 0,
+										["m_amt"] = 0,
 										["n_amt"] = 0,
-										["MISS"] = 2,
-										["a_amt"] = 0,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 									["Bite"] = {
-										["c_amt"] = 1,
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 18,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 8,
+										["n_max"] = 14,
 										["targets"] = {
-											["Hecklefang Hyena"] = 26,
+											["Greater Plainstrider"] = 14,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 8,
-										["n_min"] = 8,
+										["n_dmg"] = 14,
+										["n_min"] = 14,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 26,
-										["c_max"] = 18,
+										["counter"] = 1,
+										["total"] = 14,
+										["c_max"] = 0,
 										["id"] = "Bite",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 18,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 									["!Melee"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 10,
+										["n_max"] = 24,
 										["targets"] = {
-											["Hecklefang Hyena"] = 54,
+											["Greater Plainstrider"] = 72,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 54,
-										["n_min"] = 8,
+										["n_dmg"] = 72,
+										["n_min"] = 15,
 										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 54,
+										["counter"] = 4,
+										["total"] = 72,
 										["c_max"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["n_amt"] = 4,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["end_time"] = 1571338973,
-							["last_event"] = 1571338971,
+							["end_time"] = 1571771052,
+							["tipo"] = 1,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1571338952,
-							["serial"] = "Pet-0-4469-1-134-3100-04001B7554",
-							["classe"] = "PET",
+							["last_event"] = 1571771050,
+							["damage_taken"] = 46.005064,
+							["start_time"] = 1571771042,
+							["delay"] = 0,
+							["friendlyfire"] = {
+							},
 						}, -- [2]
 						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.001171,
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.005744,
 							["damage_from"] = {
 								["Boar <Greenwise>"] = true,
 								["Greenwise"] = true,
 							},
 							["targets"] = {
-								["Boar <Greenwise>"] = 240,
+								["Boar <Greenwise>"] = 46,
 							},
 							["pets"] = {
 							},
+							["tipo"] = 1,
 							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 240.001171,
-							["delay"] = 0,
-							["monster"] = true,
-							["total"] = 240.001171,
-							["end_time"] = 1571338973,
-							["damage_taken"] = 335.001171,
-							["nome"] = "Hecklefang Hyena",
+							["total_without_pet"] = 46.005744,
+							["dps_started"] = false,
+							["fight_component"] = true,
+							["total"] = 46.005744,
+							["serial"] = "Creature-0-4468-1-414-3244-00002F3793",
+							["damage_taken"] = 259.005744,
+							["nome"] = "Greater Plainstrider",
 							["spells"] = {
 								["_ActorTable"] = {
 									["!Melee"] = {
-										["c_amt"] = 3,
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 105,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 19,
+										["n_max"] = 13,
 										["targets"] = {
-											["Boar <Greenwise>"] = 240,
+											["Boar <Greenwise>"] = 46,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 135,
-										["n_min"] = 14,
+										["n_dmg"] = 46,
+										["n_min"] = 10,
 										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 240,
-										["c_max"] = 38,
+										["counter"] = 4,
+										["total"] = 46,
+										["c_max"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 33,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 8,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["n_amt"] = 4,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["tipo"] = 1,
+							["on_hold"] = false,
+							["end_time"] = 1571771052,
 							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1571771049,
 							["friendlyfire"] = {
 							},
-							["custom"] = 0,
-							["last_event"] = 1571338971,
-							["on_hold"] = false,
-							["start_time"] = 1571338952,
-							["serial"] = "Creature-0-4469-1-134-4127-000028B6C5",
-							["fight_component"] = true,
+							["start_time"] = 1571771042,
+							["delay"] = 0,
+							["classe"] = "UNKNOW",
 						}, -- [3]
 					},
 				}, -- [1]
 				{
 					["tipo"] = 3,
-					["combatId"] = 793,
+					["combatId"] = 806,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
 					["tipo"] = 7,
-					["combatId"] = 793,
+					["combatId"] = 806,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
 					["tipo"] = 9,
-					["combatId"] = 793,
+					["combatId"] = 806,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1300,
-							["debuff_uptime"] = 15,
+							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
 									["Serpent Sting"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
+										["activedamt"] = -1,
 										["id"] = "Serpent Sting",
-										["uptime"] = 15,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["actived_at"] = 1571771050,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 								},
 								["tipo"] = 9,
 							},
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 9,
-								["Serpent Sting"] = 1,
-								["Arcane Shot"] = 2,
-							},
-							["nome"] = "Greenwise",
-							["last_event"] = 1571338968,
 							["pets"] = {
 								"Boar <Greenwise>", -- [1]
 							},
 							["classe"] = "HUNTER",
-							["serial"] = "Player-4465-012659A9",
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Greenwise",
-							["nome"] = "Boar <Greenwise>",
-							["pets"] = {
-							},
-							["spell_cast"] = {
-								["Bite"] = 2,
-								["Growl"] = 4,
-							},
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Pet-0-4469-1-134-3100-04001B7554",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 793,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Greenwise"] = true,
-				},
-				["CombatStartedAt"] = 764601.542,
-				["tempo_start"] = 1571338952,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					575, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:02:53",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Hecklefang Hyena",
-				["TotalElapsedCombatTime"] = 20.6829999999609,
-				["CombatEndedAt"] = 764528.233,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "21:02:32",
-				["end_time"] = 764528.233,
-				["combat_id"] = 793,
-				["totals_grupo"] = {
-					255, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["spells_cast_timeline"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Greenwise"] = 335.008934,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["combat_counter"] = 1038,
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 764506.85,
-				["contra"] = "Hecklefang Hyena",
-				["frags"] = {
-					["Hecklefang Hyena"] = 1,
-				},
-			}, -- [7]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 792,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.00861,
-							["damage_from"] = {
-								["Venture Co. Overseer"] = true,
-							},
-							["targets"] = {
-								["Venture Co. Overseer"] = 552,
-							},
-							["pets"] = {
-								"Boar <Greenwise>", -- [1]
-							},
-							["end_time"] = 1571338888,
-							["tipo"] = 1,
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-								[128] = 476,
-							},
-							["total_without_pet"] = 491.00861,
-							["delay"] = 1571338876,
-							["dps_started"] = false,
-							["total"] = 552.00861,
-							["damage_taken"] = 76.00861,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Greenwise",
-							["spells"] = {
+							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
-									["Raptor Strike"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 38,
+									["Aspect of the Hawk"] = {
+										["appliedamt"] = 1,
 										["targets"] = {
-											["Venture Co. Overseer"] = 38,
 										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 38,
-										["n_min"] = 38,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 38,
-										["c_max"] = 0,
-										["id"] = "Raptor Strike",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 30,
-										["targets"] = {
-											["Venture Co. Overseer"] = 59,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 59,
-										["n_min"] = 29,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 59,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Venture Co. Overseer"] = 63,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 63,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 63,
-										["c_max"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 64,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 1,
-										["c_dmg"] = 46,
-										["g_amt"] = 0,
-										["n_max"] = 25,
-										["targets"] = {
-											["Venture Co. Overseer"] = 247,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 201,
-										["n_min"] = 13,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 247,
-										["c_max"] = 46,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 46,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 13,
-										["n_amt"] = 9,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Wing Clip"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 4,
-										["targets"] = {
-											["Venture Co. Overseer"] = 4,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 4,
-										["n_min"] = 4,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 4,
-										["c_max"] = 0,
-										["id"] = "Wing Clip",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 8,
-										["targets"] = {
-											["Venture Co. Overseer"] = 80,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 80,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 80,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 10,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 13.1118434679407,
-							["colocacao"] = 1,
-							["last_event"] = 1571338876,
-							["on_hold"] = false,
-							["start_time"] = 1571338857,
-							["serial"] = "Player-4465-012659A9",
-							["friendlyfire_total"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.004696,
-							["damage_from"] = {
-								["Boar <Greenwise>"] = true,
-								["Greenwise"] = true,
-							},
-							["targets"] = {
-								["Boar <Greenwise>"] = 444,
-								["Greenwise"] = 76,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["total"] = 520.004696,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 520.004696,
-							["delay"] = 1571338878,
-							["dps_started"] = false,
-							["end_time"] = 1571338888,
-							["fight_component"] = true,
-							["damage_taken"] = 552.004696,
-							["nome"] = "Venture Co. Overseer",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Boar"] = 0,
-											["Greenwise"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["r_amt"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["spellschool"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_amt"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 3,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 0,
-										["MISS"] = 2,
-										["a_amt"] = 0,
-									}, -- [1]
-									["!Melee"] = {
-										["c_amt"] = 4,
-										["b_amt"] = 0,
-										["c_dmg"] = 161,
-										["g_amt"] = 0,
-										["n_max"] = 26,
-										["targets"] = {
-											["Boar <Greenwise>"] = 444,
-											["Greenwise"] = 76,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 359,
-										["n_min"] = 17,
-										["g_dmg"] = 0,
-										["counter"] = 21,
-										["total"] = 520,
-										["c_max"] = 44,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 36,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 17,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1571338878,
-							["on_hold"] = false,
-							["start_time"] = 1571338855,
-							["serial"] = "Creature-0-4469-1-134-3286-000028BA27",
-							["classe"] = "UNKNOW",
-						}, -- [2]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.00553,
-							["damage_from"] = {
-								["Venture Co. Overseer"] = true,
-							},
-							["targets"] = {
-								["Venture Co. Overseer"] = 61,
-							},
-							["pets"] = {
-							},
-							["damage_taken"] = 444.00553,
-							["classe"] = "PET",
-							["raid_targets"] = {
-								[128] = 61,
-							},
-							["total_without_pet"] = 61.00553,
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["total"] = 61.00553,
-							["delay"] = 1571338864,
-							["ownerName"] = "Greenwise",
-							["nome"] = "Boar <Greenwise>",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Venture Co. Overseer"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["r_amt"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["a_dmg"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["BLOCK"] = 3,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["MISS"] = 2,
-									}, -- [1]
-									["Bite"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 8,
-										["targets"] = {
-											["Venture Co. Overseer"] = 16,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 16,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 16,
-										["c_max"] = 0,
-										["id"] = "Bite",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 3,
-										["n_max"] = 9,
-										["targets"] = {
-											["Venture Co. Overseer"] = 45,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 18,
-										["n_min"] = 9,
-										["g_dmg"] = 27,
-										["counter"] = 5,
-										["total"] = 45,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire"] = {
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1571338864,
-							["on_hold"] = false,
-							["start_time"] = 1571338869,
-							["serial"] = "Pet-0-4469-1-134-3100-03001B7554",
-							["end_time"] = 1571338888,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 792,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 792,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 792,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["debuff_uptime"] = 37,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Wing Clip"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = "Wing Clip",
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Serpent Sting"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
+										["id"] = "Aspect of the Hawk",
 										["refreshamt"] = 0,
-										["id"] = "Serpent Sting",
-										["uptime"] = 27,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 								},
 								["tipo"] = 9,
 							},
+							["debuff_uptime"] = 0,
 							["debuff_uptime_targets"] = {
 							},
 							["grupo"] = true,
 							["spell_cast"] = {
-								["Raptor Strike"] = 1,
-								["Auto Shot"] = 10,
-								["Serpent Sting"] = 2,
-								["Wing Clip"] = 1,
-								["Arcane Shot"] = 3,
+								["Auto Shot"] = 4,
 							},
 							["nome"] = "Greenwise",
-							["last_event"] = 1571338886,
-							["pets"] = {
-								"Boar <Greenwise>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["serial"] = "Player-4465-012659A9",
 							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
+							["last_event"] = 1571771052,
+							["serial"] = "Player-4465-012659A9",
+							["buff_uptime"] = 10,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -4726,28 +6928,27 @@ _detalhes_database = {
 							["nome"] = "Boar <Greenwise>",
 							["pets"] = {
 							},
-							["spell_cast"] = {
-								["Bite"] = 2,
-								["Growl"] = 3,
-							},
-							["tipo"] = 4,
 							["classe"] = "PET",
-							["serial"] = "Pet-0-4469-1-134-3100-03001B7554",
+							["tipo"] = 4,
 							["last_event"] = 0,
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
+							["spell_cast"] = {
+								["Growl"] = 2,
+								["Bite"] = 1,
+							},
 						}, -- [2]
 					},
 				}, -- [4]
 				{
 					["tipo"] = 2,
-					["combatId"] = 792,
+					["combatId"] = 806,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
 					["Greenwise"] = true,
 				},
-				["CombatStartedAt"] = 764401.432,
-				["tempo_start"] = 1571338846,
+				["tempo_start"] = 1571771042,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -4757,78 +6958,50 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					1072, -- [1]
+					305, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
 				["player_last_events"] = {
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
 				["hasSaved"] = true,
-				["data_fim"] = "21:01:28",
+				["data_fim"] = "21:04:13",
+				["pvp"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Venture Co. Overseer",
-				["TotalElapsedCombatTime"] = 41.7330000000075,
-				["CombatEndedAt"] = 764443.165,
+				["enemy"] = "Greater Plainstrider",
+				["TotalElapsedCombatTime"] = 346965.927,
+				["CombatEndedAt"] = 346965.927,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
-				},
-				["data_inicio"] = "21:00:46",
-				["end_time"] = 764443.165,
-				["combat_id"] = 792,
-				["totals_grupo"] = {
-					491, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["spells_cast_timeline"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Greenwise"] = 552.00861,
-						}, -- [1]
+					["damage_section"] = {
 					},
 					["heal_section"] = {
 					},
@@ -4836,104 +7009,102 @@ _detalhes_database = {
 						{
 						}, -- [1]
 					},
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Greenwise"] = 259.007131,
+						}, -- [1]
 					},
 				},
-				["combat_counter"] = 1037,
+				["end_time"] = 346965.927,
+				["combat_id"] = 806,
+				["spells_cast_timeline"] = {
+				},
+				["data_inicio"] = "21:04:03",
+				["frags"] = {
+					["Greater Plainstrider"] = 1,
+				},
 				["CombatSkillCache"] = {
 				},
+				["combat_counter"] = 1088,
+				["start_time"] = 346956.196,
 				["TimeData"] = {
 				},
-				["start_time"] = 764401.065,
-				["contra"] = "Venture Co. Overseer",
-				["frags"] = {
-					["Venture Co. Overseer"] = 1,
+				["totals_grupo"] = {
+					173, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
-			}, -- [8]
+			}, -- [14]
 			{
 				{
 					["tipo"] = 2,
-					["combatId"] = 791,
+					["combatId"] = 805,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.001016,
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.001046,
 							["damage_from"] = {
-								["Greenwise"] = true,
-								["Boar <Greenwise>"] = true,
 							},
 							["targets"] = {
-								["Boar <Greenwise>"] = 110,
+								["Fleeting Plainstrider"] = 248,
 							},
 							["pets"] = {
+								"Boar <Greenwise>", -- [1]
 							},
-							["monster"] = true,
-							["total"] = 110.001016,
+							["total"] = 248.001046,
+							["last_event"] = 1571771007,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
+								[128] = 248,
 							},
-							["total_without_pet"] = 110.001016,
+							["total_without_pet"] = 148.001046,
 							["delay"] = 0,
 							["dps_started"] = false,
-							["end_time"] = 1571338825,
-							["fight_component"] = true,
-							["damage_taken"] = 364.001016,
-							["nome"] = "Venture Co. Enforcer",
+							["end_time"] = 1571771009,
+							["friendlyfire"] = {
+							},
+							["damage_taken"] = 0.001046,
+							["nome"] = "Greenwise",
 							["spells"] = {
 								["_ActorTable"] = {
-									{
+									["!Autoshot"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 31,
 										["targets"] = {
-											["Boar"] = 0,
+											["Fleeting Plainstrider"] = 116,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 116,
+										["n_min"] = 26,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["r_amt"] = 0,
-										["total"] = 0,
+										["counter"] = 4,
+										["total"] = 116,
 										["c_max"] = 0,
-										["spellschool"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_amt"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 2,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["MISS"] = 1,
-									}, -- [1]
-									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 36,
-										["g_amt"] = 0,
-										["n_max"] = 19,
-										["targets"] = {
-											["Boar <Greenwise>"] = 110,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 74,
-										["n_min"] = 17,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 110,
-										["c_max"] = 36,
-										["id"] = "!Melee",
+										["id"] = "!Autoshot",
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 36,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
@@ -4941,150 +7112,21 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["spellschool"] = 1,
 									},
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1571338819,
-							["on_hold"] = false,
-							["start_time"] = 1571338806,
-							["serial"] = "Creature-0-4469-1-134-3283-000028BA12",
-							["classe"] = "UNKNOW",
-						}, -- [1]
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.007071,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Venture Co. Enforcer"] = 364,
-							},
-							["pets"] = {
-								"Boar <Greenwise>", -- [1]
-							},
-							["end_time"] = 1571338825,
-							["tipo"] = 1,
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-								[128] = 364,
-							},
-							["total_without_pet"] = 272.007071,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 364.007071,
-							["damage_taken"] = 0.007071,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Greenwise",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 42,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 42,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 42,
-										["c_max"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 64,
-									},
-									[2] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 2,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["MISS"] = 1,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 26,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 190,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 190,
-										["n_min"] = 22,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 190,
-										["c_max"] = 0,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 8,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
 									["Serpent Sting"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 8,
+										["n_max"] = 16,
 										["targets"] = {
-											["Venture Co. Enforcer"] = 40,
+											["Fleeting Plainstrider"] = 32,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 40,
-										["n_min"] = 8,
+										["n_dmg"] = 32,
+										["n_min"] = 16,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 40,
+										["counter"] = 2,
+										["total"] = 32,
 										["c_max"] = 0,
 										["id"] = "Serpent Sting",
 										["r_dmg"] = 0,
@@ -5095,7 +7137,7 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 5,
+										["n_amt"] = 2,
 										["a_dmg"] = 0,
 										["spellschool"] = 8,
 									},
@@ -5104,944 +7146,57 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["custom"] = 0,
-							["last_dps"] = 19.9292127566231,
+							["last_dps"] = 24.4673486582512,
 							["colocacao"] = 1,
-							["last_event"] = 1571338824,
-							["on_hold"] = false,
-							["start_time"] = 1571338806,
-							["serial"] = "Player-4465-012659A9",
-							["friendlyfire_total"] = 0,
-						}, -- [2]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.008326,
-							["damage_from"] = {
-								["Venture Co. Enforcer"] = true,
-							},
-							["targets"] = {
-								["Venture Co. Enforcer"] = 92,
-							},
-							["pets"] = {
-							},
-							["damage_taken"] = 110.008326,
-							["classe"] = "PET",
-							["raid_targets"] = {
-								[128] = 92,
-							},
-							["total_without_pet"] = 92.008326,
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["total"] = 92.008326,
-							["delay"] = 0,
-							["ownerName"] = "Greenwise",
-							["nome"] = "Boar <Greenwise>",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 2,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["a_amt"] = 0,
-									}, -- [1]
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 1,
-										["n_max"] = 11,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 72,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 64,
-										["n_min"] = 8,
-										["g_dmg"] = 8,
-										["counter"] = 8,
-										["total"] = 72,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 7,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Bite"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 12,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 20,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 20,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 20,
-										["c_max"] = 0,
-										["id"] = "Bite",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire"] = {
-							},
 							["tipo"] = 1,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1571338824,
 							["on_hold"] = false,
-							["start_time"] = 1571338807,
-							["serial"] = "Pet-0-4469-1-134-3100-03001B7554",
-							["end_time"] = 1571338825,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 791,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 791,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 791,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["debuff_uptime"] = 0,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Serpent Sting"] = {
-										["activedamt"] = -1,
-										["id"] = "Serpent Sting",
-										["targets"] = {
-										},
-										["actived_at"] = 1571338821,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 8,
-								["Arcane Shot"] = 2,
-							},
-							["nome"] = "Greenwise",
-							["last_event"] = 1571338821,
-							["pets"] = {
-								"Boar <Greenwise>", -- [1]
-							},
+							["start_time"] = 1571770999,
+							["serial"] = "Player-4465-012659A9",
 							["classe"] = "HUNTER",
-							["serial"] = "Player-4465-012659A9",
-							["tipo"] = 4,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
-							["ownerName"] = "Greenwise",
-							["nome"] = "Boar <Greenwise>",
-							["pets"] = {
-							},
-							["spell_cast"] = {
-								["Bite"] = 2,
-								["Growl"] = 3,
-							},
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Pet-0-4469-1-134-3100-03001B7554",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 791,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Greenwise"] = true,
-				},
-				["tempo_start"] = 1571338806,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					474, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:00:25",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Venture Co. Enforcer",
-				["TotalElapsedCombatTime"] = 764380.398,
-				["CombatEndedAt"] = 764380.398,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "21:00:06",
-				["end_time"] = 764380.398,
-				["combat_id"] = 791,
-				["totals_grupo"] = {
-					272, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["frags"] = {
-					["Venture Co. Enforcer"] = 1,
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Greenwise"] = 364.007071,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["combat_counter"] = 1036,
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Venture Co. Enforcer",
-				["start_time"] = 764361.466,
-				["TimeData"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-			}, -- [9]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 790,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.008871,
+							["totalabsorbed"] = 0.004038,
 							["damage_from"] = {
+								["Fleeting Plainstrider"] = true,
 							},
 							["targets"] = {
-								["Venture Co. Enforcer"] = 388,
+								["Fleeting Plainstrider"] = 100,
 							},
 							["pets"] = {
-								"Boar <Greenwise>", -- [1]
 							},
-							["end_time"] = 1571338791,
-							["tipo"] = 1,
-							["classe"] = "HUNTER",
+							["damage_taken"] = 63.004038,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
-								[128] = 388,
+								[128] = 100,
 							},
-							["total_without_pet"] = 264.008871,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 388.008871,
-							["damage_taken"] = 0.008871,
+							["total_without_pet"] = 100.004038,
 							["friendlyfire"] = {
 							},
-							["nome"] = "Greenwise",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 42,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 42,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 42,
-										["c_max"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 64,
-									},
-									[2] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 2,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["MISS"] = 1,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 42,
-										["g_amt"] = 0,
-										["n_max"] = 25,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 182,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 140,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 182,
-										["c_max"] = 42,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 42,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 8,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 40,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 40,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 40,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 20.9000199837724,
-							["colocacao"] = 1,
-							["last_event"] = 1571338791,
-							["on_hold"] = false,
-							["start_time"] = 1571338772,
-							["serial"] = "Player-4465-012659A9",
-							["friendlyfire_total"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.007253,
-							["damage_from"] = {
-								["Venture Co. Enforcer"] = true,
-							},
-							["targets"] = {
-								["Venture Co. Enforcer"] = 124,
-							},
-							["pets"] = {
-							},
-							["damage_taken"] = 160.007253,
-							["classe"] = "PET",
-							["raid_targets"] = {
-								[128] = 124,
-							},
-							["total_without_pet"] = 124.007253,
-							["friendlyfire_total"] = 0,
 							["dps_started"] = false,
-							["total"] = 124.007253,
+							["total"] = 100.004038,
 							["delay"] = 0,
 							["ownerName"] = "Greenwise",
 							["nome"] = "Boar <Greenwise>",
 							["spells"] = {
 								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["DODGE"] = 1,
-									}, -- [1]
-									["Bite"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 10,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 20,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 20,
-										["n_min"] = 10,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 20,
-										["c_max"] = 0,
-										["id"] = "Bite",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
 									["!Melee"] = {
 										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 5,
-										["n_max"] = 13,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 104,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 49,
-										["n_min"] = 3,
-										["g_dmg"] = 55,
-										["counter"] = 10,
-										["total"] = 104,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 3,
-										["n_amt"] = 5,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire"] = {
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1571338806,
-							["on_hold"] = false,
-							["start_time"] = 1571338772,
-							["serial"] = "Pet-0-4469-1-134-3100-03001B7554",
-							["end_time"] = 1571338791,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.006092,
-							["damage_from"] = {
-								["Boar <Greenwise>"] = true,
-								["Greenwise"] = true,
-							},
-							["targets"] = {
-								["Boar <Greenwise>"] = 160,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["total"] = 160.006092,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 160.006092,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1571338791,
-							["fight_component"] = true,
-							["damage_taken"] = 388.006092,
-							["nome"] = "Venture Co. Enforcer",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Boar"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["a_amt"] = 0,
-									}, -- [1]
-									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 44,
 										["g_amt"] = 0,
 										["n_max"] = 22,
 										["targets"] = {
-											["Boar <Greenwise>"] = 160,
+											["Fleeting Plainstrider"] = 85,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 116,
-										["n_min"] = 17,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 160,
-										["c_max"] = 44,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 44,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1571338787,
-							["on_hold"] = false,
-							["start_time"] = 1571338773,
-							["serial"] = "Creature-0-4469-1-134-3283-000028B6BF",
-							["classe"] = "UNKNOW",
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 790,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 790,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 790,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["debuff_uptime"] = 15,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Serpent Sting"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = "Serpent Sting",
-										["uptime"] = 15,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 9,
-								["Serpent Sting"] = 1,
-								["Arcane Shot"] = 3,
-							},
-							["nome"] = "Greenwise",
-							["last_event"] = 1571338791,
-							["pets"] = {
-								"Boar <Greenwise>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["serial"] = "Player-4465-012659A9",
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Greenwise",
-							["nome"] = "Boar <Greenwise>",
-							["pets"] = {
-							},
-							["spell_cast"] = {
-								["Growl"] = 4,
-								["Bite"] = 2,
-							},
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Pet-0-4469-1-134-3100-03001B7554",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 790,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Greenwise"] = true,
-				},
-				["CombatStartedAt"] = 764360.582,
-				["tempo_start"] = 1571338772,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					548, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "20:59:51",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Venture Co. Enforcer",
-				["TotalElapsedCombatTime"] = 18.2140000000363,
-				["CombatEndedAt"] = 764346.337,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:59:32",
-				["end_time"] = 764346.337,
-				["combat_id"] = 790,
-				["totals_grupo"] = {
-					264, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["spells_cast_timeline"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Greenwise"] = 388.008871,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["combat_counter"] = 1035,
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 764327.505,
-				["contra"] = "Venture Co. Enforcer",
-				["frags"] = {
-					["Venture Co. Enforcer"] = 1,
-				},
-			}, -- [10]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 789,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.006372,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Venture Co. Enforcer"] = 388,
-							},
-							["pets"] = {
-								"Boar <Greenwise>", -- [1]
-							},
-							["total"] = 388.006372,
-							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-								[128] = 388,
-							},
-							["total_without_pet"] = 317.006372,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1571338742,
-							["on_hold"] = false,
-							["damage_taken"] = 0.006372,
-							["nome"] = "Greenwise",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 8,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 40,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 40,
-										["n_min"] = 8,
+										["n_dmg"] = 85,
+										["n_min"] = 15,
 										["g_dmg"] = 0,
 										["counter"] = 5,
-										["total"] = 40,
+										["total"] = 85,
 										["c_max"] = 0,
-										["id"] = "Serpent Sting",
+										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["a_amt"] = 0,
@@ -6052,994 +7207,97 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["n_amt"] = 5,
 										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-									[2] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 2,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["MISS"] = 1,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 25,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 193,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 193,
-										["n_min"] = 22,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 193,
-										["c_max"] = 0,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 8,
-										["a_dmg"] = 0,
 										["spellschool"] = 1,
 									},
-									["Arcane Shot"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 42,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 84,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 42,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 84,
-										["c_max"] = 42,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 42,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 64,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 21.821403295703,
-							["colocacao"] = 1,
-							["last_event"] = 1571338741,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1571338724,
-							["serial"] = "Player-4465-012659A9",
-							["classe"] = "HUNTER",
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.004364,
-							["damage_from"] = {
-								["Boar <Greenwise>"] = true,
-								["Greenwise"] = true,
-								["Buksi"] = true,
-							},
-							["targets"] = {
-								["Boar <Greenwise>"] = 232,
-							},
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 232.004364,
-							["delay"] = 0,
-							["monster"] = true,
-							["total"] = 232.004364,
-							["end_time"] = 1571338742,
-							["damage_taken"] = 415.004364,
-							["nome"] = "Venture Co. Enforcer",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 46,
-										["g_amt"] = 0,
-										["n_max"] = 43,
-										["targets"] = {
-											["Boar <Greenwise>"] = 232,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 186,
-										["n_min"] = 19,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 232,
-										["c_max"] = 46,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 46,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 7,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Battle Shout"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Battle Shout",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1571338739,
-							["on_hold"] = false,
-							["start_time"] = 1571338724,
-							["serial"] = "Creature-0-4469-1-134-3283-000028B9CE",
-							["fight_component"] = true,
-						}, -- [2]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.006745,
-							["damage_from"] = {
-								["Venture Co. Enforcer"] = true,
-							},
-							["targets"] = {
-								["Venture Co. Enforcer"] = 71,
-							},
-							["pets"] = {
-							},
-							["damage_taken"] = 232.006745,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-								[128] = 71,
-							},
-							["total_without_pet"] = 71.006745,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["total"] = 71.006745,
-							["delay"] = 0,
-							["ownerName"] = "Greenwise",
-							["nome"] = "Boar <Greenwise>",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["r_amt"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["spellschool"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_amt"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 2,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["DODGE"] = 1,
-									}, -- [1]
 									["Bite"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 11,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 22,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 22,
-										["n_min"] = 11,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 22,
-										["c_max"] = 0,
-										["id"] = "Bite",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 3,
-										["n_max"] = 16,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 49,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 30,
-										["n_min"] = 2,
-										["g_dmg"] = 19,
-										["counter"] = 6,
-										["total"] = 49,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 2,
-										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["end_time"] = 1571338742,
-							["last_event"] = 1571338740,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1571338724,
-							["serial"] = "Pet-0-4469-1-134-3100-03001B7554",
-							["classe"] = "PET",
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 789,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 789,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 789,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["debuff_uptime"] = 0,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Serpent Sting"] = {
-										["activedamt"] = -1,
-										["id"] = "Serpent Sting",
-										["targets"] = {
-										},
-										["actived_at"] = 1571338738,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 9,
-								["Arcane Shot"] = 3,
-							},
-							["nome"] = "Greenwise",
-							["last_event"] = 1571338738,
-							["pets"] = {
-								"Boar <Greenwise>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["serial"] = "Player-4465-012659A9",
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Greenwise",
-							["nome"] = "Boar <Greenwise>",
-							["pets"] = {
-							},
-							["spell_cast"] = {
-								["Growl"] = 3,
-								["Bite"] = 2,
-							},
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Pet-0-4469-1-134-3100-03001B7554",
-							["last_event"] = 0,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["last_event"] = 0,
-							["nome"] = "Venture Co. Enforcer",
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["spell_cast"] = {
-								["Battle Shout"] = 1,
-							},
-							["tipo"] = 4,
-							["monster"] = true,
-							["serial"] = "Creature-0-4469-1-134-3283-000028B9CE",
-							["fight_component"] = true,
-						}, -- [3]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 789,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Greenwise"] = true,
-				},
-				["tempo_start"] = 1571338724,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					619.993847, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "20:59:02",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Venture Co. Enforcer",
-				["TotalElapsedCombatTime"] = 764296.948,
-				["CombatEndedAt"] = 764296.948,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:58:44",
-				["end_time"] = 764296.948,
-				["combat_id"] = 789,
-				["totals_grupo"] = {
-					317, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["frags"] = {
-					["Venture Co. Enforcer"] = 1,
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Greenwise"] = 388.006372,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["combat_counter"] = 1034,
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Venture Co. Enforcer",
-				["start_time"] = 764279.167,
-				["TimeData"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-			}, -- [11]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 788,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.001327,
-							["damage_from"] = {
-								["Venture Co. Overseer"] = true,
-							},
-							["targets"] = {
-								["Venture Co. Overseer"] = 386,
-							},
-							["pets"] = {
-								"Boar <Greenwise>", -- [1]
-							},
-							["total"] = 386.001327,
-							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-								[128] = 386,
-							},
-							["total_without_pet"] = 311.001327,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1571338702,
-							["on_hold"] = false,
-							["damage_taken"] = 55.001327,
-							["nome"] = "Greenwise",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Venture Co. Overseer"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["DODGE"] = 1,
-									}, -- [1]
-									["Raptor Strike"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 36,
-										["targets"] = {
-											["Venture Co. Overseer"] = 36,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 36,
-										["n_min"] = 36,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 36,
-										["c_max"] = 0,
-										["id"] = "Raptor Strike",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 28,
-										["targets"] = {
-											["Venture Co. Overseer"] = 28,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 28,
-										["n_min"] = 28,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 28,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Venture Co. Overseer"] = 42,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 42,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 42,
-										["c_max"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 64,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 26,
-										["targets"] = {
-											["Venture Co. Overseer"] = 165,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 165,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 165,
-										["c_max"] = 0,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 7,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 8,
-										["targets"] = {
-											["Venture Co. Overseer"] = 40,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 40,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 40,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 19.3649388952242,
-							["colocacao"] = 1,
-							["last_event"] = 1571338700,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1571338681,
-							["serial"] = "Player-4465-012659A9",
-							["classe"] = "HUNTER",
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.004595,
-							["damage_from"] = {
-								["Venture Co. Overseer"] = true,
-							},
-							["targets"] = {
-								["Venture Co. Overseer"] = 75,
-							},
-							["pets"] = {
-							},
-							["damage_taken"] = 110.004595,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-								[128] = 75,
-							},
-							["total_without_pet"] = 75.004595,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["total"] = 75.004595,
-							["delay"] = 0,
-							["ownerName"] = "Greenwise",
-							["nome"] = "Boar <Greenwise>",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Venture Co. Overseer"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["r_amt"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["spellschool"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_amt"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["MISS"] = 1,
-									}, -- [1]
-									["Bite"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 11,
-										["targets"] = {
-											["Venture Co. Overseer"] = 11,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 11,
-										["n_min"] = 11,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 11,
-										["c_max"] = 0,
-										["id"] = "Bite",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 2,
-										["c_dmg"] = 0,
-										["g_amt"] = 2,
 										["n_max"] = 15,
 										["targets"] = {
-											["Venture Co. Overseer"] = 64,
+											["Fleeting Plainstrider"] = 15,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 51,
-										["n_min"] = 1,
-										["g_dmg"] = 13,
-										["counter"] = 8,
-										["total"] = 64,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 3,
-										["n_amt"] = 6,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									[0] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Venture Co. Overseer"] = 0,
-											["Venture Co. Enforcer"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 15,
+										["n_min"] = 15,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["r_amt"] = 0,
-										["total"] = 0,
+										["counter"] = 1,
+										["total"] = 15,
 										["c_max"] = 0,
-										["b_dmg"] = 0,
-										["id"] = 0,
+										["id"] = "Bite",
 										["r_dmg"] = 0,
-										["n_amt"] = 0,
-										["m_amt"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 2,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["end_time"] = 1571338702,
-							["last_event"] = 1571338723,
+							["end_time"] = 1571771009,
+							["last_event"] = 1571771007,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
 							["on_hold"] = false,
-							["start_time"] = 1571338681,
-							["serial"] = "Pet-0-4469-1-134-3100-03001B7554",
+							["start_time"] = 1571770999,
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
 							["classe"] = "PET",
 						}, -- [2]
 						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.002268,
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.003565,
 							["damage_from"] = {
 								["Boar <Greenwise>"] = true,
 								["Greenwise"] = true,
 							},
 							["targets"] = {
-								["Boar <Greenwise>"] = 110,
-								["Greenwise"] = 55,
+								["Boar <Greenwise>"] = 63,
 							},
 							["pets"] = {
 							},
+							["last_event"] = 1571771007,
 							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 165.002268,
+							["total_without_pet"] = 63.003565,
+							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["total"] = 63.003565,
 							["delay"] = 0,
-							["monster"] = true,
-							["total"] = 165.002268,
-							["end_time"] = 1571338702,
-							["damage_taken"] = 386.002268,
-							["nome"] = "Venture Co. Overseer",
+							["on_hold"] = false,
+							["nome"] = "Fleeting Plainstrider",
 							["spells"] = {
 								["_ActorTable"] = {
-									{
+									["!Melee"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 13,
 										["targets"] = {
-											["Greenwise"] = 0,
+											["Boar <Greenwise>"] = 63,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 63,
+										["n_min"] = 12,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
+										["counter"] = 5,
+										["total"] = 63,
 										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["a_amt"] = 0,
-									}, -- [1]
-									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 38,
-										["g_amt"] = 0,
-										["n_max"] = 32,
-										["targets"] = {
-											["Boar <Greenwise>"] = 110,
-											["Greenwise"] = 55,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 127,
-										["n_min"] = 20,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 165,
-										["c_max"] = 38,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 38,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
@@ -7050,38 +7308,37 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
 							["friendlyfire"] = {
 							},
+							["end_time"] = 1571771009,
+							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1571338701,
-							["on_hold"] = false,
-							["start_time"] = 1571338683,
-							["serial"] = "Creature-0-4469-1-134-3286-000028B946",
+							["tipo"] = 1,
+							["damage_taken"] = 248.003565,
+							["start_time"] = 1571770999,
+							["serial"] = "Creature-0-4468-1-414-3246-00002F4DD4",
 							["fight_component"] = true,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
 					["tipo"] = 3,
-					["combatId"] = 788,
+					["combatId"] = 805,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
 					["tipo"] = 7,
-					["combatId"] = 788,
+					["combatId"] = 805,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
 					["tipo"] = 9,
-					["combatId"] = 788,
+					["combatId"] = 805,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
-							["debuff_uptime"] = 19,
+							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
 									["Serpent Sting"] = {
@@ -7090,18 +7347,7 @@ _detalhes_database = {
 										["activedamt"] = 0,
 										["refreshamt"] = 0,
 										["id"] = "Serpent Sting",
-										["uptime"] = 15,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Concussive Shot"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = "Concussive Shot",
-										["uptime"] = 4,
+										["uptime"] = 6,
 										["targets"] = {
 										},
 										["appliedamt"] = 1,
@@ -7109,24 +7355,41 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Raptor Strike"] = 1,
-								["Auto Shot"] = 7,
-								["Concussive Shot"] = 1,
-								["Serpent Sting"] = 1,
-								["Arcane Shot"] = 2,
-							},
-							["nome"] = "Greenwise",
-							["last_event"] = 1571338696,
 							["pets"] = {
 								"Boar <Greenwise>", -- [1]
 							},
 							["classe"] = "HUNTER",
-							["serial"] = "Player-4465-012659A9",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Aspect of the Hawk"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Aspect of the Hawk",
+										["uptime"] = 10,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 6,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								["Auto Shot"] = 4,
+								["Serpent Sting"] = 1,
+							},
+							["nome"] = "Greenwise",
 							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
+							["buff_uptime"] = 10,
+							["serial"] = "Player-4465-012659A9",
+							["last_event"] = 1571771009,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -7134,28 +7397,28 @@ _detalhes_database = {
 							["nome"] = "Boar <Greenwise>",
 							["pets"] = {
 							},
-							["spell_cast"] = {
-								["Bite"] = 2,
-								["Growl"] = 3,
-							},
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Pet-0-4469-1-134-3100-03001B7554",
 							["last_event"] = 0,
+							["classe"] = "PET",
+							["spell_cast"] = {
+								["Bite"] = 1,
+								["Growl"] = 1,
+							},
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
+							["tipo"] = 4,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
 					["tipo"] = 2,
-					["combatId"] = 788,
+					["combatId"] = 805,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
 					["Greenwise"] = true,
 				},
-				["CombatStartedAt"] = 764277.449,
-				["tempo_start"] = 1571338681,
+				["CombatStartedAt"] = 346955.796,
+				["tempo_start"] = 1571770999,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
@@ -7165,47 +7428,6 @@ _detalhes_database = {
 				},
 				["playing_solo"] = true,
 				["totals"] = {
-					551, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "20:58:22",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Venture Co. Overseer",
-				["TotalElapsedCombatTime"] = 20.6670000000158,
-				["CombatEndedAt"] = 764256.782,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:58:01",
-				["end_time"] = 764256.782,
-				["combat_id"] = 788,
-				["totals_grupo"] = {
 					311, -- [1]
 					0, -- [2]
 					{
@@ -7225,6 +7447,30 @@ _detalhes_database = {
 						["dispell"] = 0,
 						["cooldowns_defensive"] = 0,
 					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "21:03:29",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Fleeting Plainstrider",
+				["TotalElapsedCombatTime"] = 9.78599999996368,
+				["CombatEndedAt"] = 346922.647,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "21:03:19",
+				["end_time"] = 346922.647,
+				["combat_id"] = 805,
+				["frags"] = {
+					["Fleeting Plainstrider"] = 1,
 				},
 				["spells_cast_timeline"] = {
 				},
@@ -7235,7 +7481,7 @@ _detalhes_database = {
 					}, -- [1]
 					["damage"] = {
 						{
-							["Greenwise"] = 386.001327,
+							["Greenwise"] = 248.001046,
 						}, -- [1]
 					},
 					["heal_section"] = {
@@ -7247,203 +7493,757 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["combat_counter"] = 1033,
 				["CombatSkillCache"] = {
 				},
+				["combat_counter"] = 1086,
+				["start_time"] = 346912.511,
 				["TimeData"] = {
 				},
-				["start_time"] = 764235.715,
-				["contra"] = "Venture Co. Overseer",
-				["frags"] = {
-					["Venture Co. Overseer"] = 1,
+				["totals_grupo"] = {
+					148, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
 				},
-			}, -- [12]
+			}, -- [15]
 			{
 				{
 					["tipo"] = 2,
-					["combatId"] = 787,
+					["combatId"] = 804,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.007069,
+							["totalabsorbed"] = 0.004406,
 							["damage_from"] = {
 							},
 							["targets"] = {
-								["Venture Co. Enforcer"] = 374,
+								["Greater Plainstrider"] = 224,
 							},
 							["pets"] = {
 								"Boar <Greenwise>", -- [1]
 							},
-							["end_time"] = 1571338666,
-							["tipo"] = 1,
 							["classe"] = "HUNTER",
+							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
-								[128] = 374,
+								[128] = 224,
 							},
-							["total_without_pet"] = 313.007069,
-							["delay"] = 0,
+							["total_without_pet"] = 176.004406,
+							["serial"] = "Player-4465-012659A9",
 							["dps_started"] = false,
-							["total"] = 374.007069,
-							["damage_taken"] = 0.007069,
-							["friendlyfire"] = {
-							},
+							["total"] = 224.004406,
+							["damage_taken"] = 0.004406,
+							["on_hold"] = false,
 							["nome"] = "Greenwise",
 							["spells"] = {
 								["_ActorTable"] = {
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 63,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 63,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 63,
-										["c_max"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 64,
-									},
-									[2] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 2,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["MISS"] = 1,
-									},
 									["!Autoshot"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 26,
+										["n_max"] = 32,
 										["targets"] = {
-											["Venture Co. Enforcer"] = 210,
+											["Greater Plainstrider"] = 144,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 210,
-										["n_min"] = 22,
+										["n_dmg"] = 144,
+										["n_min"] = 27,
 										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 210,
+										["counter"] = 5,
+										["total"] = 144,
 										["c_max"] = 0,
 										["id"] = "!Autoshot",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 9,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["n_amt"] = 5,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 									["Serpent Sting"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 8,
+										["n_max"] = 16,
 										["targets"] = {
-											["Venture Co. Enforcer"] = 40,
+											["Greater Plainstrider"] = 32,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 40,
-										["n_min"] = 8,
+										["n_dmg"] = 32,
+										["n_min"] = 16,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 40,
+										["counter"] = 2,
+										["total"] = 32,
 										["c_max"] = 0,
 										["id"] = "Serpent Sting",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 23.4781587571582,
 							["colocacao"] = 1,
-							["last_event"] = 1571338664,
-							["on_hold"] = false,
-							["start_time"] = 1571338649,
-							["serial"] = "Player-4465-012659A9",
-							["friendlyfire_total"] = 0,
+							["last_dps"] = 27.0275586389946,
+							["custom"] = 0,
+							["last_event"] = 1571770873,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1571770866,
+							["delay"] = 0,
+							["end_time"] = 1571770874,
 						}, -- [1]
 						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.004751,
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.001738,
+							["damage_from"] = {
+								["Greater Plainstrider"] = true,
+							},
+							["targets"] = {
+								["Greater Plainstrider"] = 48,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+								[128] = 48,
+							},
+							["total_without_pet"] = 48.001738,
+							["classe"] = "PET",
+							["dps_started"] = false,
+							["total"] = 48.001738,
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
+							["ownerName"] = "Greenwise",
+							["nome"] = "Boar <Greenwise>",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Greater Plainstrider"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["c_min"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["total"] = 0,
+									}, -- [1]
+									["Bite"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Greater Plainstrider"] = 16,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 16,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 16,
+										["c_max"] = 0,
+										["id"] = "Bite",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Greater Plainstrider"] = 32,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 32,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 32,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["end_time"] = 1571770874,
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1571770872,
+							["damage_taken"] = 33.001738,
+							["start_time"] = 1571770866,
+							["delay"] = 0,
+							["friendlyfire"] = {
+							},
+						}, -- [2]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.004186,
 							["damage_from"] = {
 								["Greenwise"] = true,
 								["Boar <Greenwise>"] = true,
 							},
 							["targets"] = {
-								["Boar <Greenwise>"] = 86,
+								["Boar <Greenwise>"] = 33,
 							},
 							["pets"] = {
 							},
+							["tipo"] = 1,
 							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 86.004751,
+							["total_without_pet"] = 33.004186,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["total"] = 33.004186,
+							["serial"] = "Creature-0-4468-1-414-3244-00002F4DBF",
+							["friendlyfire"] = {
+							},
+							["nome"] = "Greater Plainstrider",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 12,
+										["targets"] = {
+											["Boar <Greenwise>"] = 33,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 33,
+										["n_min"] = 10,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 33,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["damage_taken"] = 224.004186,
+							["end_time"] = 1571770874,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1571770871,
+							["on_hold"] = false,
+							["start_time"] = 1571770867,
 							["delay"] = 0,
-							["monster"] = true,
-							["total"] = 86.004751,
-							["end_time"] = 1571338666,
-							["damage_taken"] = 374.004751,
-							["nome"] = "Venture Co. Enforcer",
+							["classe"] = "UNKNOW",
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 804,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 804,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 804,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Serpent Sting"] = {
+										["activedamt"] = -1,
+										["id"] = "Serpent Sting",
+										["targets"] = {
+										},
+										["actived_at"] = 1571770873,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 8,
+							["classe"] = "HUNTER",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Aspect of the Hawk"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 8,
+										["id"] = "Aspect of the Hawk",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 0,
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								["Auto Shot"] = 4,
+							},
+							["nome"] = "Greenwise",
+							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
+							["last_event"] = 1571770874,
+							["serial"] = "Player-4465-012659A9",
+							["pets"] = {
+								"Boar <Greenwise>", -- [1]
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Greenwise",
+							["nome"] = "Boar <Greenwise>",
+							["pets"] = {
+							},
+							["spell_cast"] = {
+								["Bite"] = 1,
+								["Growl"] = 1,
+							},
+							["last_event"] = 0,
+							["tipo"] = 4,
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
+							["classe"] = "PET",
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 804,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Greenwise"] = true,
+				},
+				["tempo_start"] = 1571770866,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					257, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "21:01:14",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Greater Plainstrider",
+				["TotalElapsedCombatTime"] = 346787.41,
+				["CombatEndedAt"] = 346787.41,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "21:01:06",
+				["end_time"] = 346787.41,
+				["combat_id"] = 804,
+				["frags"] = {
+					["Greater Plainstrider"] = 1,
+				},
+				["totals_grupo"] = {
+					176, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Greenwise"] = 224.004406,
+						}, -- [1]
+					},
+				},
+				["CombatSkillCache"] = {
+				},
+				["combat_counter"] = 1084,
+				["start_time"] = 346779.122,
+				["TimeData"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+			}, -- [16]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 803,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.003839,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Greater Plainstrider"] = 223,
+							},
+							["pets"] = {
+								"Boar <Greenwise>", -- [1]
+							},
+							["friendlyfire_total"] = 0,
+							["tipo"] = 1,
+							["classe"] = "HUNTER",
+							["raid_targets"] = {
+								[128] = 223,
+							},
+							["total_without_pet"] = 150.003839,
+							["serial"] = "Player-4465-012659A9",
+							["dps_started"] = false,
+							["end_time"] = 1571770733,
+							["friendlyfire"] = {
+							},
+							["damage_taken"] = 0.003839,
+							["nome"] = "Greenwise",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 31,
+										["targets"] = {
+											["Greater Plainstrider"] = 118,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 118,
+										["n_min"] = 28,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 118,
+										["c_max"] = 0,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["Serpent Sting"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Greater Plainstrider"] = 32,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 32,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 32,
+										["c_max"] = 0,
+										["id"] = "Serpent Sting",
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["colocacao"] = 1,
+							["last_dps"] = 27.4872228521715,
+							["custom"] = 0,
+							["last_event"] = 1571770732,
+							["on_hold"] = false,
+							["start_time"] = 1571770725,
+							["delay"] = 0,
+							["total"] = 223.003839,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["totalabsorbed"] = 0.005989,
+							["damage_from"] = {
+								["Greater Plainstrider"] = true,
+							},
+							["targets"] = {
+								["Greater Plainstrider"] = 73,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+								[128] = 73,
+							},
+							["total_without_pet"] = 73.005989,
+							["classe"] = "PET",
+							["dps_started"] = false,
+							["total"] = 73.005989,
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
+							["ownerName"] = "Greenwise",
+							["nome"] = "Boar <Greenwise>",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Bite"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 30,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Greater Plainstrider"] = 30,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 30,
+										["c_max"] = 30,
+										["id"] = "Bite",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 30,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Greater Plainstrider"] = 43,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 43,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 43,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["end_time"] = 1571770733,
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1571770731,
+							["damage_taken"] = 21.005989,
+							["start_time"] = 1571770725,
+							["delay"] = 0,
+							["friendlyfire"] = {
+							},
+						}, -- [2]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.002309,
+							["damage_from"] = {
+								["Boar <Greenwise>"] = true,
+								["Greenwise"] = true,
+							},
+							["targets"] = {
+								["Boar <Greenwise>"] = 21,
+							},
+							["pets"] = {
+							},
+							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 21.002309,
+							["dps_started"] = false,
+							["fight_component"] = true,
+							["total"] = 21.002309,
+							["serial"] = "Creature-0-4468-1-414-3244-0000AF33D3",
+							["on_hold"] = false,
+							["nome"] = "Greater Plainstrider",
 							["spells"] = {
 								["_ActorTable"] = {
 									{
@@ -7460,47 +8260,510 @@ _detalhes_database = {
 										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 2,
+										["DODGE"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = 1,
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
+									}, -- [1]
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 11,
+										["targets"] = {
+											["Boar <Greenwise>"] = 21,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 21,
+										["n_min"] = 10,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 21,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1571770733,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1571770865,
+							["damage_taken"] = 223.002309,
+							["start_time"] = 1571770729,
+							["delay"] = 0,
+							["classe"] = "UNKNOW",
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 803,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 803,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 803,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Serpent Sting"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 6,
+										["id"] = "Serpent Sting",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["pets"] = {
+								"Boar <Greenwise>", -- [1]
+							},
+							["classe"] = "HUNTER",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Aspect of the Hawk"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 8,
+										["id"] = "Aspect of the Hawk",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 6,
+							["debuff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								["Auto Shot"] = 4,
+								["Arcane Shot"] = 1,
+							},
+							["nome"] = "Greenwise",
+							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
+							["last_event"] = 1571770733,
+							["serial"] = "Player-4465-012659A9",
+							["buff_uptime"] = 8,
+						}, -- [1]
+						{
+							["flag_original"] = 4369,
+							["ownerName"] = "Greenwise",
+							["nome"] = "Boar <Greenwise>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["spell_cast"] = {
+								["Growl"] = 1,
+							},
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
+							["last_event"] = 0,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 803,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Greenwise"] = true,
+				},
+				["CombatStartedAt"] = 346778.139,
+				["tempo_start"] = 1571770725,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					244, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					150, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "20:58:53",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Greater Plainstrider",
+				["TotalElapsedCombatTime"] = 346646.867,
+				["CombatEndedAt"] = 346646.867,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Greenwise"] = 223.003839,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 346646.867,
+				["combat_id"] = 803,
+				["frags"] = {
+					["Greater Plainstrider"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["combat_counter"] = 1081,
+				["start_time"] = 346638.754,
+				["TimeData"] = {
+				},
+				["data_inicio"] = "20:58:45",
+			}, -- [17]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 802,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.006829,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Zhevra Charger"] = 401,
+							},
+							["pets"] = {
+								"Boar <Greenwise>", -- [1]
+							},
+							["total"] = 401.006829,
+							["last_event"] = 1571770437,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+								[128] = 401,
+							},
+							["total_without_pet"] = 282.006829,
+							["delay"] = 0,
+							["dps_started"] = false,
+							["end_time"] = 1571770437,
+							["damage_taken"] = 0.006829,
+							["on_hold"] = false,
+							["nome"] = "Greenwise",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Serpent Sting"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Zhevra Charger"] = 80,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 80,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 80,
+										["c_max"] = 0,
+										["id"] = "Serpent Sting",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
+									},
+									[2] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Zhevra Charger"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 0,
+										["c_max"] = 0,
+										["r_amt"] = 0,
+										["id"] = 2,
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["MISS"] = 2,
+									},
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 29,
+										["targets"] = {
+											["Zhevra Charger"] = 160,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 160,
+										["n_min"] = 24,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 160,
+										["c_max"] = 0,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 6,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Arcane Shot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 21,
+										["targets"] = {
+											["Zhevra Charger"] = 42,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 42,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 42,
+										["c_max"] = 0,
+										["id"] = "Arcane Shot",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_dmg"] = 0,
+										["spellschool"] = 64,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["custom"] = 0,
+							["last_dps"] = 25.6054421173258,
+							["colocacao"] = 1,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1571770422,
+							["serial"] = "Player-4465-012659A9",
+							["classe"] = "HUNTER",
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.00428,
+							["damage_from"] = {
+								["Greenwise"] = true,
+								["Boar <Greenwise>"] = true,
+							},
+							["targets"] = {
+								["Boar <Greenwise>"] = 144,
+							},
+							["pets"] = {
+							},
+							["last_event"] = 1571770436,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 144.00428,
+							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["total"] = 144.00428,
+							["delay"] = 0,
+							["friendlyfire"] = {
+							},
+							["nome"] = "Zhevra Charger",
+							["spells"] = {
+								["_ActorTable"] = {
+									{
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Boar"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
 										["total"] = 0,
 										["c_max"] = 0,
 										["r_amt"] = 0,
 										["id"] = 1,
 										["r_dmg"] = 0,
 										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 2,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
 										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
 										["n_amt"] = 0,
 										["spellschool"] = 1,
-										["a_amt"] = 0,
+										["DODGE"] = 1,
 									}, -- [1]
 									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 43,
 										["g_amt"] = 0,
-										["n_max"] = 21,
+										["n_max"] = 22,
 										["targets"] = {
-											["Boar <Greenwise>"] = 86,
+											["Boar <Greenwise>"] = 144,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 86,
-										["n_min"] = 15,
+										["n_dmg"] = 101,
+										["n_min"] = 17,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 86,
-										["c_max"] = 0,
+										["counter"] = 6,
+										["total"] = 144,
+										["c_max"] = 43,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
+										["c_min"] = 43,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 15,
+										["b_dmg"] = 0,
 										["n_amt"] = 5,
 										["a_dmg"] = 0,
 										["spellschool"] = 1,
@@ -7508,38 +8771,37 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["tipo"] = 1,
+							["damage_taken"] = 401.00428,
+							["end_time"] = 1571770437,
 							["last_dps"] = 0,
-							["friendlyfire"] = {
-							},
 							["custom"] = 0,
-							["last_event"] = 1571338662,
+							["tipo"] = 1,
 							["on_hold"] = false,
-							["start_time"] = 1571338651,
-							["serial"] = "Creature-0-4469-1-134-3283-000028B8DE",
+							["start_time"] = 1571770424,
+							["serial"] = "Creature-0-4468-1-414-3426-00002F3905",
 							["fight_component"] = true,
 						}, -- [2]
 						{
 							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.003745,
+							["totalabsorbed"] = 0.001632,
 							["damage_from"] = {
-								["Venture Co. Enforcer"] = true,
+								["Zhevra Charger"] = true,
 							},
 							["targets"] = {
-								["Venture Co. Enforcer"] = 61,
+								["Zhevra Charger"] = 119,
 							},
 							["pets"] = {
 							},
-							["damage_taken"] = 86.003745,
+							["damage_taken"] = 144.001632,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
-								[128] = 61,
+								[128] = 119,
 							},
-							["total_without_pet"] = 61.003745,
+							["total_without_pet"] = 119.001632,
 							["friendlyfire"] = {
 							},
 							["dps_started"] = false,
-							["total"] = 61.003745,
+							["total"] = 119.001632,
 							["delay"] = 0,
 							["ownerName"] = "Greenwise",
 							["nome"] = "Boar <Greenwise>",
@@ -7552,46 +8814,44 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["Venture Co. Enforcer"] = 0,
+											["Greater Plainstrider"] = 0,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 0,
-										["MISS"] = 1,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 3,
+										["counter"] = 1,
 										["total"] = 0,
-										["r_amt"] = 0,
 										["c_max"] = 0,
-										["b_dmg"] = 0,
+										["MISS"] = 1,
 										["id"] = 1,
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
 										["spellschool"] = 1,
-										["n_amt"] = 0,
-										["DODGE"] = 1,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
 										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
 									}, -- [1]
 									["Bite"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 12,
+										["n_max"] = 14,
 										["targets"] = {
-											["Venture Co. Enforcer"] = 12,
+											["Zhevra Charger"] = 27,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 12,
-										["n_min"] = 12,
+										["n_dmg"] = 27,
+										["n_min"] = 13,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 12,
+										["counter"] = 2,
+										["total"] = 27,
 										["c_max"] = 0,
 										["id"] = "Bite",
 										["r_dmg"] = 0,
@@ -7602,25 +8862,25 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 1,
+										["n_amt"] = 2,
 										["a_dmg"] = 0,
 										["spellschool"] = 1,
 									},
 									["!Melee"] = {
 										["c_amt"] = 0,
-										["b_amt"] = 2,
+										["b_amt"] = 1,
 										["c_dmg"] = 0,
-										["g_amt"] = 1,
-										["n_max"] = 10,
+										["g_amt"] = 3,
+										["n_max"] = 15,
 										["targets"] = {
-											["Venture Co. Enforcer"] = 49,
+											["Zhevra Charger"] = 92,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 36,
-										["n_min"] = 3,
-										["g_dmg"] = 13,
-										["counter"] = 6,
-										["total"] = 49,
+										["n_dmg"] = 55,
+										["n_min"] = 12,
+										["g_dmg"] = 37,
+										["counter"] = 7,
+										["total"] = 92,
 										["c_max"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
@@ -7630,8 +8890,8 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 8,
-										["n_amt"] = 5,
+										["b_dmg"] = 12,
+										["n_amt"] = 4,
 										["a_dmg"] = 0,
 										["spellschool"] = 1,
 									},
@@ -7642,7 +8902,7 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["Venture Co. Enforcer"] = 0,
+											["Greater Plainstrider"] = 0,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 0,
@@ -7651,54 +8911,53 @@ _detalhes_database = {
 										["counter"] = 1,
 										["total"] = 0,
 										["c_max"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
 										["id"] = 0,
 										["r_dmg"] = 0,
 										["a_dmg"] = 0,
-										["b_dmg"] = 0,
+										["RESIST"] = 1,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
+										["m_amt"] = 0,
 										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["DODGE"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["end_time"] = 1571338666,
-							["last_event"] = 1571338664,
+							["end_time"] = 1571770437,
+							["last_event"] = 1571770725,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
 							["on_hold"] = false,
-							["start_time"] = 1571338650,
-							["serial"] = "Pet-0-4469-1-134-3100-03001B7554",
+							["start_time"] = 1571770424,
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
 							["classe"] = "PET",
 						}, -- [3]
 					},
 				}, -- [1]
 				{
 					["tipo"] = 3,
-					["combatId"] = 787,
+					["combatId"] = 802,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
 					["tipo"] = 7,
-					["combatId"] = 787,
+					["combatId"] = 802,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
 					["tipo"] = 9,
-					["combatId"] = 787,
+					["combatId"] = 802,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1300,
-							["debuff_uptime"] = 0,
+							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
 									["Serpent Sting"] = {
@@ -7706,7 +8965,7 @@ _detalhes_database = {
 										["id"] = "Serpent Sting",
 										["targets"] = {
 										},
-										["actived_at"] = 1571338663,
+										["actived_at"] = 1571770436,
 										["uptime"] = 0,
 										["counter"] = 0,
 										["refreshamt"] = 0,
@@ -7716,21 +8975,41 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 9,
-								["Arcane Shot"] = 3,
-							},
-							["nome"] = "Greenwise",
-							["last_event"] = 1571338663,
 							["pets"] = {
 								"Boar <Greenwise>", -- [1]
 							},
 							["classe"] = "HUNTER",
-							["serial"] = "Player-4465-012659A9",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Aspect of the Hawk"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Aspect of the Hawk",
+										["uptime"] = 15,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 0,
+							["buff_uptime_targets"] = {
+							},
+							["grupo"] = true,
+							["spell_cast"] = {
+								["Auto Shot"] = 7,
+								["Arcane Shot"] = 2,
+							},
+							["nome"] = "Greenwise",
 							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
+							["buff_uptime"] = 15,
+							["serial"] = "Player-4465-012659A9",
+							["last_event"] = 1571770437,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -7743,33 +9022,32 @@ _detalhes_database = {
 								["Charge"] = 1,
 								["Bite"] = 2,
 							},
-							["tipo"] = 4,
 							["classe"] = "PET",
-							["serial"] = "Pet-0-4469-1-134-3100-03001B7554",
 							["last_event"] = 0,
+							["serial"] = "Pet-0-4468-1-414-3100-13001B7554",
+							["tipo"] = 4,
 						}, -- [2]
 					},
 				}, -- [4]
 				{
 					["tipo"] = 2,
-					["combatId"] = 787,
+					["combatId"] = 802,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
 					["Greenwise"] = true,
 				},
-				["tempo_start"] = 1571338649,
+				["CombatStartedAt"] = 346638.337,
+				["tempo_start"] = 1571770422,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 1079,
 				["playing_solo"] = true,
 				["totals"] = {
-					459.994862, -- [1]
+					544.994362, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -7791,26 +9069,8 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "20:57:46",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Venture Co. Enforcer",
-				["TotalElapsedCombatTime"] = 764220.736,
-				["CombatEndedAt"] = 764220.736,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:57:29",
-				["end_time"] = 764220.736,
-				["combat_id"] = 787,
 				["totals_grupo"] = {
-					313, -- [1]
+					282, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -7830,8 +9090,19 @@ _detalhes_database = {
 						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
-				["frags"] = {
-					["Venture Co. Enforcer"] = 1,
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "20:53:57",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Zhevra Charger",
+				["TotalElapsedCombatTime"] = 346350.867,
+				["CombatEndedAt"] = 346350.867,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -7840,7 +9111,7 @@ _detalhes_database = {
 					}, -- [1]
 					["damage"] = {
 						{
-							["Greenwise"] = 374.007069,
+							["Greenwise"] = 401.006829,
 						}, -- [1]
 					},
 					["heal_section"] = {
@@ -7852,2826 +9123,23 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["combat_counter"] = 1032,
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Venture Co. Enforcer",
-				["start_time"] = 764203.739,
-				["TimeData"] = {
-				},
+				["end_time"] = 346350.867,
+				["combat_id"] = 802,
 				["spells_cast_timeline"] = {
 				},
-			}, -- [13]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 786,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.007808,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Venture Co. Enforcer"] = 394,
-							},
-							["pets"] = {
-								"Boar <Greenwise>", -- [1]
-							},
-							["total"] = 394.007808,
-							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-								[128] = 394,
-							},
-							["total_without_pet"] = 308.007808,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1571338631,
-							["on_hold"] = false,
-							["damage_taken"] = 0.007808,
-							["nome"] = "Greenwise",
-							["spells"] = {
-								["_ActorTable"] = {
-									[0] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 0,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 64,
-										["MISS"] = 1,
-									},
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 8,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 40,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 40,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 40,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 41,
-										["g_amt"] = 0,
-										["n_max"] = 26,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 226,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 185,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 226,
-										["c_max"] = 41,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 41,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 8,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Arcane Shot"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 42,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 42,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 42,
-										["c_max"] = 42,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 42,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 64,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 24.9435178526636,
-							["colocacao"] = 1,
-							["last_event"] = 1571338630,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1571338615,
-							["serial"] = "Player-4465-012659A9",
-							["classe"] = "HUNTER",
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.00614,
-							["damage_from"] = {
-								["Tyraz"] = true,
-								["Boar <Greenwise>"] = true,
-								["Pasorcos"] = true,
-								["Buksi"] = true,
-								["Greenwise"] = true,
-								["Fibonax"] = true,
-							},
-							["targets"] = {
-								["Boar <Greenwise>"] = 153,
-								["Tyraz"] = 23,
-								["Pasorcos"] = 146,
-								["Fibonax"] = 340,
-							},
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 662.00614,
-							["delay"] = 0,
-							["monster"] = true,
-							["total"] = 662.00614,
-							["end_time"] = 1571338649,
-							["damage_taken"] = 1031.00614,
-							["nome"] = "Venture Co. Enforcer",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Battle Shout"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Battle Shout",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 2,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
-									},
-									["!Melee"] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 75,
-										["g_amt"] = 0,
-										["n_max"] = 29,
-										["targets"] = {
-											["Boar <Greenwise>"] = 153,
-											["Tyraz"] = 23,
-											["Pasorcos"] = 146,
-											["Fibonax"] = 340,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 587,
-										["n_min"] = 17,
-										["g_dmg"] = 0,
-										["counter"] = 30,
-										["total"] = 662,
-										["c_max"] = 38,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 37,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 28,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Disarm"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Disarm",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 2,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1571338644,
-							["on_hold"] = false,
-							["start_time"] = 1571338615,
-							["serial"] = "Creature-0-4469-1-134-3283-000028B8EE",
-							["fight_component"] = true,
-						}, -- [2]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.005146,
-							["damage_from"] = {
-								["Venture Co. Enforcer"] = true,
-							},
-							["targets"] = {
-								["Venture Co. Enforcer"] = 86,
-							},
-							["pets"] = {
-							},
-							["damage_taken"] = 153.005146,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-								[128] = 86,
-							},
-							["total_without_pet"] = 86.005146,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["total"] = 86.005146,
-							["delay"] = 0,
-							["ownerName"] = "Greenwise",
-							["nome"] = "Boar <Greenwise>",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Bite"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 12,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 22,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 22,
-										["n_min"] = 10,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 22,
-										["c_max"] = 0,
-										["id"] = "Bite",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 6,
-										["n_max"] = 16,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 64,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 26,
-										["n_min"] = 10,
-										["g_dmg"] = 38,
-										["counter"] = 8,
-										["total"] = 64,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									[0] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 0,
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["RESIST"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["end_time"] = 1571338631,
-							["last_event"] = 1571338629,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1571338615,
-							["serial"] = "Pet-0-4469-1-134-3100-03001B7554",
-							["classe"] = "PET",
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 786,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 786,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 786,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["debuff_uptime"] = 0,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Serpent Sting"] = {
-										["activedamt"] = -1,
-										["id"] = "Serpent Sting",
-										["targets"] = {
-										},
-										["actived_at"] = 1571338629,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 8,
-								["Arcane Shot"] = 3,
-							},
-							["nome"] = "Greenwise",
-							["last_event"] = 1571338629,
-							["pets"] = {
-								"Boar <Greenwise>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["serial"] = "Player-4465-012659A9",
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Greenwise",
-							["nome"] = "Boar <Greenwise>",
-							["pets"] = {
-							},
-							["spell_cast"] = {
-								["Bite"] = 2,
-								["Growl"] = 2,
-							},
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Pet-0-4469-1-134-3100-03001B7554",
-							["last_event"] = 0,
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["last_event"] = 0,
-							["nome"] = "Venture Co. Enforcer",
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["spell_cast"] = {
-								["Battle Shout"] = 2,
-								["Disarm"] = 2,
-							},
-							["tipo"] = 4,
-							["monster"] = true,
-							["serial"] = "Creature-0-4469-1-134-3283-000028B363",
-							["fight_component"] = true,
-						}, -- [3]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 786,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Greenwise"] = true,
+				["player_last_events"] = {
 				},
-				["CombatStartedAt"] = 764202.922,
-				["tempo_start"] = 1571338615,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
+				["data_inicio"] = "20:53:42",
+				["CombatSkillCache"] = {
 				},
 				["cleu_events"] = {
 					["n"] = 1,
 				},
-				["playing_solo"] = true,
-				["totals"] = {
-					1055.96192, -- [1]
-					0, -- [2]
-					{
-						-0.00616399999999828, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "20:57:11",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Venture Co. Enforcer",
-				["TotalElapsedCombatTime"] = 764185.925,
-				["CombatEndedAt"] = 764185.925,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:56:55",
-				["end_time"] = 764185.925,
-				["combat_id"] = 786,
-				["totals_grupo"] = {
-					308, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["spells_cast_timeline"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Greenwise"] = 394.007808,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["combat_counter"] = 1031,
-				["CombatSkillCache"] = {
-				},
+				["start_time"] = 346335.206,
 				["TimeData"] = {
 				},
-				["start_time"] = 764170.129,
-				["contra"] = "Venture Co. Enforcer",
 				["frags"] = {
-					["Venture Co. Overseer"] = 1,
-					["Venture Co. Enforcer"] = 2,
-				},
-			}, -- [14]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 785,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.004507,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Venture Co. Enforcer"] = 214,
-							},
-							["pets"] = {
-								"Boar <Greenwise>", -- [1]
-							},
-							["total"] = 214.004507,
-							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-								[128] = 214,
-							},
-							["total_without_pet"] = 176.004507,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1571338603,
-							["on_hold"] = false,
-							["damage_taken"] = 0.004507,
-							["nome"] = "Greenwise",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 21,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 21,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 21,
-										["c_max"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 64,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 49,
-										["g_amt"] = 0,
-										["n_max"] = 24,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 139,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 90,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 139,
-										["c_max"] = 49,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 49,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 8,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 16,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 16,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 16,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 25.2542491148038,
-							["colocacao"] = 1,
-							["last_event"] = 1571338601,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1571338594,
-							["serial"] = "Player-4465-012659A9",
-							["classe"] = "HUNTER",
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.005826,
-							["damage_from"] = {
-								["Boar <Greenwise>"] = true,
-								["Greenwise"] = true,
-								["Fibonax"] = true,
-							},
-							["targets"] = {
-								["Boar <Greenwise>"] = 18,
-								["Fibonax"] = 165,
-							},
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 183.005826,
-							["delay"] = 0,
-							["monster"] = true,
-							["total"] = 183.005826,
-							["end_time"] = 1571338615,
-							["damage_taken"] = 366.005826,
-							["nome"] = "Venture Co. Enforcer",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 43,
-										["g_amt"] = 0,
-										["n_max"] = 26,
-										["targets"] = {
-											["Boar <Greenwise>"] = 18,
-											["Fibonax"] = 165,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 140,
-										["n_min"] = 17,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 183,
-										["c_max"] = 43,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 43,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 7,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Battle Shout"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Battle Shout",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1571338613,
-							["on_hold"] = false,
-							["start_time"] = 1571338595,
-							["serial"] = "Creature-0-4469-1-134-3283-000028B94C",
-							["fight_component"] = true,
-						}, -- [2]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.003998,
-							["damage_from"] = {
-								["Venture Co. Enforcer"] = true,
-							},
-							["targets"] = {
-								["Venture Co. Enforcer"] = 38,
-							},
-							["pets"] = {
-							},
-							["damage_taken"] = 18.003998,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-								[128] = 38,
-							},
-							["total_without_pet"] = 38.003998,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["total"] = 38.003998,
-							["delay"] = 0,
-							["ownerName"] = "Greenwise",
-							["nome"] = "Boar <Greenwise>",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["a_amt"] = 0,
-									}, -- [1]
-									["Bite"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 11,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 11,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 11,
-										["n_min"] = 11,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 11,
-										["c_max"] = 0,
-										["id"] = "Bite",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 1,
-										["n_max"] = 11,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 27,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 20,
-										["n_min"] = 9,
-										["g_dmg"] = 7,
-										["counter"] = 3,
-										["total"] = 27,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["end_time"] = 1571338603,
-							["last_event"] = 1571338601,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1571338595,
-							["serial"] = "Pet-0-4469-1-134-3100-03001B7554",
-							["classe"] = "PET",
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 785,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 785,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 785,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["debuff_uptime"] = 0,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Serpent Sting"] = {
-										["activedamt"] = -1,
-										["id"] = "Serpent Sting",
-										["targets"] = {
-										},
-										["actived_at"] = 1571338602,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 4,
-								["Arcane Shot"] = 1,
-							},
-							["nome"] = "Greenwise",
-							["last_event"] = 1571338602,
-							["pets"] = {
-								"Boar <Greenwise>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["serial"] = "Player-4465-012659A9",
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Greenwise",
-							["nome"] = "Boar <Greenwise>",
-							["pets"] = {
-							},
-							["spell_cast"] = {
-								["Growl"] = 2,
-								["Bite"] = 1,
-							},
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Pet-0-4469-1-134-3100-03001B7554",
-							["last_event"] = 0,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["last_event"] = 0,
-							["nome"] = "Venture Co. Enforcer",
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["spell_cast"] = {
-								["Battle Shout"] = 1,
-							},
-							["tipo"] = 4,
-							["monster"] = true,
-							["serial"] = "Creature-0-4469-1-134-3283-000028B94C",
-							["fight_component"] = true,
-						}, -- [3]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 785,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Greenwise"] = true,
-				},
-				["CombatStartedAt"] = 764168.111,
-				["tempo_start"] = 1571338594,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					396.984552, -- [1]
-					0, -- [2]
-					{
-						-0.00737600000000072, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "20:56:43",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Venture Co. Enforcer",
-				["TotalElapsedCombatTime"] = 764158.003,
-				["CombatEndedAt"] = 764158.003,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:56:34",
-				["end_time"] = 764158.003,
-				["combat_id"] = 785,
-				["totals_grupo"] = {
-					176, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["spells_cast_timeline"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Greenwise"] = 214.004507,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["combat_counter"] = 1030,
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 764149.529,
-				["contra"] = "Venture Co. Enforcer",
-				["frags"] = {
-					["Venture Co. Enforcer"] = 1,
-				},
-			}, -- [15]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 784,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.008723,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Venture Co. Enforcer"] = 356,
-							},
-							["pets"] = {
-								"Boar <Greenwise>", -- [1]
-							},
-							["total"] = 356.008723,
-							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-								[128] = 356,
-							},
-							["total_without_pet"] = 269.008723,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1571338587,
-							["on_hold"] = false,
-							["damage_taken"] = 0.008723,
-							["nome"] = "Greenwise",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 63,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 63,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 63,
-										["c_max"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 64,
-									},
-									[2] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 2,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["MISS"] = 1,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 26,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 166,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 166,
-										["n_min"] = 20,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 166,
-										["c_max"] = 0,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 7,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 8,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 40,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 40,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 40,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 24.3092333902047,
-							["colocacao"] = 1,
-							["last_event"] = 1571338585,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1571338570,
-							["serial"] = "Player-4465-012659A9",
-							["classe"] = "HUNTER",
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.00121,
-							["damage_from"] = {
-								["Tyraz"] = true,
-								["Buksi"] = true,
-								["Boar <Greenwise>"] = true,
-								["Greenwise"] = true,
-								["Fibonax"] = true,
-							},
-							["targets"] = {
-								["Boar <Greenwise>"] = 161,
-								["Tyraz"] = 28,
-							},
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 189.00121,
-							["delay"] = 0,
-							["monster"] = true,
-							["total"] = 189.00121,
-							["end_time"] = 1571338587,
-							["damage_taken"] = 628.00121,
-							["nome"] = "Venture Co. Enforcer",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 2,
-										["b_amt"] = 1,
-										["c_dmg"] = 68,
-										["g_amt"] = 0,
-										["n_max"] = 28,
-										["targets"] = {
-											["Boar <Greenwise>"] = 161,
-											["Tyraz"] = 28,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 121,
-										["n_min"] = 16,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 189,
-										["c_max"] = 34,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 34,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 20,
-										["n_amt"] = 6,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1571338582,
-							["on_hold"] = false,
-							["start_time"] = 1571338570,
-							["serial"] = "Creature-0-4469-1-134-3283-000028B8FD",
-							["fight_component"] = true,
-						}, -- [2]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.002028,
-							["damage_from"] = {
-								["Venture Co. Enforcer"] = true,
-							},
-							["targets"] = {
-								["Venture Co. Enforcer"] = 87,
-							},
-							["pets"] = {
-							},
-							["damage_taken"] = 161.002028,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-								[128] = 87,
-							},
-							["total_without_pet"] = 87.002028,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["total"] = 87.002028,
-							["delay"] = 0,
-							["ownerName"] = "Greenwise",
-							["nome"] = "Boar <Greenwise>",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["r_amt"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["spellschool"] = 1,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_amt"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["MISS"] = 1,
-									}, -- [1]
-									["Bite"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 11,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 21,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 21,
-										["n_min"] = 10,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 21,
-										["c_max"] = 0,
-										["id"] = "Bite",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 1,
-										["n_max"] = 16,
-										["targets"] = {
-											["Venture Co. Enforcer"] = 66,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 58,
-										["n_min"] = 10,
-										["g_dmg"] = 8,
-										["counter"] = 6,
-										["total"] = 66,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["end_time"] = 1571338587,
-							["last_event"] = 1571338585,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1571338571,
-							["serial"] = "Pet-0-4469-1-134-3100-03001B7554",
-							["classe"] = "PET",
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 784,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 784,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 784,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["debuff_uptime"] = 0,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Serpent Sting"] = {
-										["activedamt"] = -1,
-										["id"] = "Serpent Sting",
-										["targets"] = {
-										},
-										["actived_at"] = 1571338584,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 7,
-								["Arcane Shot"] = 3,
-							},
-							["nome"] = "Greenwise",
-							["last_event"] = 1571338584,
-							["pets"] = {
-								"Boar <Greenwise>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["serial"] = "Player-4465-012659A9",
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Greenwise",
-							["nome"] = "Boar <Greenwise>",
-							["pets"] = {
-							},
-							["spell_cast"] = {
-								["Growl"] = 3,
-								["Bite"] = 2,
-							},
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Pet-0-4469-1-134-3100-03001B7554",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 784,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Greenwise"] = true,
-				},
-				["CombatStartedAt"] = 764148.712,
-				["tempo_start"] = 1571338570,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					544.972241, -- [1]
-					0, -- [2]
-					{
-						-0.00814100000000018, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "20:56:27",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Venture Co. Enforcer",
-				["TotalElapsedCombatTime"] = 764141.79,
-				["CombatEndedAt"] = 764141.79,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:56:10",
-				["end_time"] = 764141.79,
-				["combat_id"] = 784,
-				["totals_grupo"] = {
-					269, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["spells_cast_timeline"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Greenwise"] = 356.008723,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["combat_counter"] = 1029,
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 764125.176,
-				["contra"] = "Venture Co. Enforcer",
-				["frags"] = {
-					["Venture Co. Overseer"] = 1,
-					["Venture Co. Enforcer"] = 2,
-				},
-			}, -- [16]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 783,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.008054,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Ornery Plainstrider"] = 404,
-							},
-							["pets"] = {
-								"Boar <Greenwise>", -- [1]
-							},
-							["end_time"] = 1571338514,
-							["tipo"] = 1,
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-								[128] = 404,
-							},
-							["total_without_pet"] = 331.008054,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 404.008054,
-							["damage_taken"] = 0.008054,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Greenwise",
-							["spells"] = {
-								["_ActorTable"] = {
-									[0] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Ornery Plainstrider"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 0,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 8,
-										["MISS"] = 1,
-									},
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Ornery Plainstrider"] = 42,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 42,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 42,
-										["c_max"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 64,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 44,
-										["g_amt"] = 0,
-										["n_max"] = 26,
-										["targets"] = {
-											["Ornery Plainstrider"] = 257,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 213,
-										["n_min"] = 22,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 257,
-										["c_max"] = 44,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 44,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 9,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 8,
-										["targets"] = {
-											["Ornery Plainstrider"] = 32,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 32,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 32,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 21.7220309694896,
-							["colocacao"] = 1,
-							["last_event"] = 1571338513,
-							["on_hold"] = false,
-							["start_time"] = 1571338497,
-							["serial"] = "Player-4465-012659A9",
-							["friendlyfire_total"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.002679,
-							["damage_from"] = {
-								["Greenwise"] = true,
-								["Boar <Greenwise>"] = true,
-							},
-							["targets"] = {
-								["Boar <Greenwise>"] = 161,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["total"] = 161.002679,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 161.002679,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1571338514,
-							["fight_component"] = true,
-							["damage_taken"] = 404.002679,
-							["nome"] = "Ornery Plainstrider",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Boar"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["DODGE"] = 1,
-									}, -- [1]
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 1,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Boar <Greenwise>"] = 161,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 161,
-										["n_min"] = 11,
-										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 161,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 11,
-										["n_amt"] = 12,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1571338510,
-							["on_hold"] = false,
-							["start_time"] = 1571338495,
-							["serial"] = "Creature-0-4469-1-134-3245-000028A0A9",
-							["classe"] = "UNKNOW",
-						}, -- [2]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.007268,
-							["damage_from"] = {
-								["Ornery Plainstrider"] = true,
-							},
-							["targets"] = {
-								["Ornery Plainstrider"] = 73,
-							},
-							["pets"] = {
-							},
-							["damage_taken"] = 161.007268,
-							["classe"] = "PET",
-							["raid_targets"] = {
-								[128] = 73,
-							},
-							["total_without_pet"] = 73.007268,
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["total"] = 73.007268,
-							["delay"] = 0,
-							["ownerName"] = "Greenwise",
-							["nome"] = "Boar <Greenwise>",
-							["spells"] = {
-								["_ActorTable"] = {
-									{
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Ornery Plainstrider"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 1,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 3,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["a_amt"] = 0,
-									}, -- [1]
-									[0] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Ornery Plainstrider"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = 0,
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["MISS"] = 1,
-									},
-									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 21,
-										["g_amt"] = 3,
-										["n_max"] = 10,
-										["targets"] = {
-											["Ornery Plainstrider"] = 61,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 19,
-										["n_min"] = 9,
-										["g_dmg"] = 21,
-										["counter"] = 6,
-										["total"] = 61,
-										["c_max"] = 21,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 21,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Bite"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 12,
-										["targets"] = {
-											["Ornery Plainstrider"] = 12,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 12,
-										["n_min"] = 12,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 12,
-										["c_max"] = 0,
-										["id"] = "Bite",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire"] = {
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1571338511,
-							["on_hold"] = false,
-							["start_time"] = 1571338497,
-							["serial"] = "Pet-0-4469-1-134-3100-03001B7554",
-							["end_time"] = 1571338514,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 783,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 783,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 783,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["debuff_uptime"] = 14,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Serpent Sting"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = "Serpent Sting",
-										["uptime"] = 14,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 10,
-								["Serpent Sting"] = 2,
-								["Arcane Shot"] = 2,
-							},
-							["nome"] = "Greenwise",
-							["last_event"] = 1571338513,
-							["pets"] = {
-								"Boar <Greenwise>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["serial"] = "Player-4465-012659A9",
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Greenwise",
-							["nome"] = "Boar <Greenwise>",
-							["pets"] = {
-							},
-							["spell_cast"] = {
-								["Bite"] = 2,
-								["Growl"] = 2,
-							},
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Pet-0-4469-1-134-3100-03001B7554",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 783,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Greenwise"] = true,
-				},
-				["CombatStartedAt"] = 764123.892,
-				["tempo_start"] = 1571338495,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					564.968373, -- [1]
-					0, -- [2]
-					{
-						-0.00321500000000086, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "20:55:14",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Ornery Plainstrider",
-				["TotalElapsedCombatTime"] = 18.2149999999674,
-				["CombatEndedAt"] = 764068.848,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:54:55",
-				["end_time"] = 764068.848,
-				["combat_id"] = 783,
-				["totals_grupo"] = {
-					331, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["spells_cast_timeline"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Greenwise"] = 404.008054,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["combat_counter"] = 1028,
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 764050.249,
-				["contra"] = "Ornery Plainstrider",
-				["frags"] = {
-					["Ornery Plainstrider"] = 1,
-				},
-			}, -- [17]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 782,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.00778,
-							["damage_from"] = {
-								["Boar <Greenwise>"] = true,
-								["Greenwise"] = true,
-							},
-							["targets"] = {
-								["Boar <Greenwise>"] = 144,
-							},
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 144.00778,
-							["delay"] = 0,
-							["monster"] = true,
-							["total"] = 144.00778,
-							["end_time"] = 1571338480,
-							["damage_taken"] = 360.00778,
-							["nome"] = "Ornery Plainstrider",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 2,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 14,
-										["targets"] = {
-											["Boar <Greenwise>"] = 144,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 144,
-										["n_min"] = 9,
-										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 144,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 20,
-										["n_amt"] = 12,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1571338477,
-							["on_hold"] = false,
-							["start_time"] = 1571338462,
-							["serial"] = "Creature-0-4469-1-134-3245-000028B519",
-							["fight_component"] = true,
-						}, -- [1]
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.005348,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Ornery Plainstrider"] = 360,
-							},
-							["pets"] = {
-								"Boar <Greenwise>", -- [1]
-							},
-							["total"] = 360.005348,
-							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-								[128] = 360,
-							},
-							["total_without_pet"] = 239.005348,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1571338480,
-							["on_hold"] = false,
-							["damage_taken"] = 0.005348,
-							["nome"] = "Greenwise",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Ornery Plainstrider"] = 42,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 42,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 42,
-										["c_max"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 64,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 26,
-										["targets"] = {
-											["Ornery Plainstrider"] = 165,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 165,
-										["n_min"] = 22,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 165,
-										["c_max"] = 0,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 7,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 8,
-										["targets"] = {
-											["Ornery Plainstrider"] = 32,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 32,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 32,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 21.8237965566844,
-							["colocacao"] = 1,
-							["last_event"] = 1571338478,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1571338462,
-							["serial"] = "Player-4465-012659A9",
-							["classe"] = "HUNTER",
-						}, -- [2]
-						{
-							["flag_original"] = 4369,
-							["totalabsorbed"] = 0.002368,
-							["damage_from"] = {
-								["Ornery Plainstrider"] = true,
-							},
-							["targets"] = {
-								["Ornery Plainstrider"] = 121,
-							},
-							["pets"] = {
-							},
-							["damage_taken"] = 144.002368,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-								[128] = 121,
-							},
-							["total_without_pet"] = 121.002368,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["total"] = 121.002368,
-							["delay"] = 0,
-							["ownerName"] = "Greenwise",
-							["nome"] = "Boar <Greenwise>",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 23,
-										["g_amt"] = 5,
-										["n_max"] = 11,
-										["targets"] = {
-											["Ornery Plainstrider"] = 99,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 32,
-										["n_min"] = 10,
-										["g_dmg"] = 44,
-										["counter"] = 9,
-										["total"] = 99,
-										["c_max"] = 23,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 23,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Bite"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 11,
-										["targets"] = {
-											["Ornery Plainstrider"] = 22,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 22,
-										["n_min"] = 11,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 22,
-										["c_max"] = 0,
-										["id"] = "Bite",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["end_time"] = 1571338480,
-							["last_event"] = 1571338478,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1571338462,
-							["serial"] = "Pet-0-4469-1-134-3100-03001B7554",
-							["classe"] = "PET",
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 782,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 782,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 782,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["debuff_uptime"] = 14,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Serpent Sting"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = "Serpent Sting",
-										["uptime"] = 14,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 7,
-								["Serpent Sting"] = 1,
-								["Arcane Shot"] = 2,
-							},
-							["nome"] = "Greenwise",
-							["last_event"] = 1571338479,
-							["pets"] = {
-								"Boar <Greenwise>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["serial"] = "Player-4465-012659A9",
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 4369,
-							["ownerName"] = "Greenwise",
-							["nome"] = "Boar <Greenwise>",
-							["pets"] = {
-							},
-							["spell_cast"] = {
-								["Bite"] = 2,
-								["Growl"] = 3,
-							},
-							["tipo"] = 4,
-							["classe"] = "PET",
-							["serial"] = "Pet-0-4469-1-134-3100-03001B7554",
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 782,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Greenwise"] = true,
-				},
-				["data_inicio"] = "20:54:22",
-				["tempo_start"] = 1571338462,
-				["cleu_timeline"] = {
-				},
-				["alternate_power"] = {
-				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Ornery Plainstrider",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					504, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["TotalElapsedCombatTime"] = 764034.837,
-				["combat_counter"] = 1027,
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Greenwise"] = 360.005348,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 764034.837,
-				["totals_grupo"] = {
-					239, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["instance_type"] = "none",
-				["TimeData"] = {
-				},
-				["CombatEndedAt"] = 764034.837,
-				["hasSaved"] = true,
-				["spells_cast_timeline"] = {
-				},
-				["data_fim"] = "20:54:40",
-				["combat_id"] = 782,
-				["CombatSkillCache"] = {
-				},
-				["player_last_events"] = {
-				},
-				["start_time"] = 764017.39,
-				["contra"] = "Ornery Plainstrider",
-				["frags"] = {
-					["Ornery Plainstrider"] = 1,
+					["Zhevra Charger"] = 1,
 				},
 			}, -- [18]
 		},
@@ -10725,6 +9193,12 @@ _detalhes_database = {
 			["animate"] = false,
 		},
 	},
+	["announce_prepots"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+		["reverse"] = false,
+	},
+	["last_day"] = "22",
 	["cached_talents"] = {
 		["Player-4465-012659A9"] = {
 			{
@@ -11143,20 +9617,14 @@ _detalhes_database = {
 			}, -- [46]
 		},
 	},
-	["announce_prepots"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-		["reverse"] = false,
-	},
-	["last_day"] = "19",
 	["benchmark_db"] = {
 		["frame"] = {
 		},
 	},
 	["character_data"] = {
-		["logons"] = 268,
+		["logons"] = 288,
 	},
-	["combat_id"] = 799,
+	["combat_id"] = 819,
 	["savedStyles"] = {
 		{
 			["show_statusbar"] = false,
@@ -11201,16 +9669,16 @@ _detalhes_database = {
 			},
 			["switch_healer"] = false,
 			["bars_sort_direction"] = 1,
-			["switch_healer_in_combat"] = false,
-			["skin"] = "Minimalistic",
 			["menu_icons_size"] = 1,
+			["backdrop_texture"] = "None",
+			["switch_healer_in_combat"] = false,
 			["menu2_icons_size"] = 1.20000004768372,
 			["tooltip"] = {
 				["n_abilities"] = 3,
 				["n_enemies"] = 3,
 			},
 			["stretch_button_side"] = 2,
-			["backdrop_texture"] = "None",
+			["skin"] = "Minimalistic",
 			["switch_all_roles_in_combat"] = {
 				2, -- [1]
 				1, -- [2]
@@ -11252,6 +9720,10 @@ _detalhes_database = {
 					1, -- [3]
 					1, -- [4]
 				},
+				["textL_custom_text"] = "{data3}{data2}",
+				["texture_background"] = "Blizzard",
+				["alpha"] = 0,
+				["textL_class_colors"] = false,
 				["backdrop"] = {
 					["enabled"] = false,
 					["size"] = 12,
@@ -11263,13 +9735,9 @@ _detalhes_database = {
 					},
 					["texture"] = "Details BarBorder 2",
 				},
-				["textL_class_colors"] = false,
-				["textL_custom_text"] = "{data3}{data2}",
-				["textR_class_colors"] = false,
-				["alpha"] = 0,
 				["no_icon"] = false,
 				["font_size"] = 11,
-				["texture_background"] = "Blizzard",
+				["textR_class_colors"] = false,
 				["font_face"] = "Arial Narrow",
 				["texture_class_colors"] = true,
 				["height"] = 20,
@@ -11303,21 +9771,11 @@ _detalhes_database = {
 				["ignorebars"] = false,
 				["onleave"] = 1,
 			},
+			["show_sidebars"] = false,
+			["switch_damager"] = false,
 			["auto_hide_menu"] = {
 				["left"] = true,
 				["right"] = true,
-			},
-			["menu2_anchor_down"] = {
-				32, -- [1]
-				0, -- [2]
-			},
-			["statusbar_info"] = {
-				["alpha"] = 0,
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
 			},
 			["strata"] = "LOW",
 			["row_show_animation"] = {
@@ -11370,14 +9828,24 @@ _detalhes_database = {
 				true, -- [3]
 				true, -- [4]
 			},
-			["desaturated_menu"] = false,
-			["show_sidebars"] = false,
+			["menu2_anchor_down"] = {
+				32, -- [1]
+				0, -- [2]
+			},
+			["statusbar_info"] = {
+				["alpha"] = 0,
+				["overlay"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+			},
 			["window_scale"] = 1,
 			["menu_anchor_down"] = {
 				-22, -- [1]
 				0, -- [2]
 			},
-			["grab_on_top"] = false,
+			["switch_damager_in_combat"] = false,
 			["instancebutton_config"] = {
 				["textcolor"] = {
 					0.8, -- [1]
@@ -11398,8 +9866,8 @@ _detalhes_database = {
 				["textfont"] = "Friz Quadrata TT",
 				["textshadow"] = false,
 			},
-			["switch_damager_in_combat"] = false,
 			["hide_icon"] = true,
+			["grab_on_top"] = false,
 			["menu2_anchor"] = {
 				32, -- [1]
 				3, -- [2]
@@ -11410,7 +9878,7 @@ _detalhes_database = {
 			["bg_g"] = 0,
 			["bars_grow_direction"] = 1,
 			["hide_in_combat"] = false,
-			["switch_damager"] = false,
+			["desaturated_menu"] = false,
 			["switch_all_roles_after_wipe"] = false,
 			["hide_in_combat_type"] = 1,
 			["wallpaper"] = {
@@ -11585,6 +10053,7 @@ _detalhes_database = {
 					["damage_from"] = {
 					},
 					["targets"] = {
+						["Savannah Highmane"] = 0,
 						["Deviate Creeper"] = 0,
 						["Bristleback Thornweaver"] = 0,
 						["Bloodtalon Scythemaw"] = 0,
@@ -11595,6 +10064,7 @@ _detalhes_database = {
 						["Razormane Geomancer"] = 0,
 						["Greenwise"] = 0,
 						["Voidwalker Minion <Burning Blade Apprentice>"] = 0,
+						["Sickly Gazelle"] = 0,
 						["Witchwing Harpy"] = 0,
 						["Witchwing Roguefeather"] = 0,
 						["Razormane Defender"] = 0,
@@ -11756,17 +10226,18 @@ _detalhes_database = {
 									["Zhevra Runner"] = 0,
 									["Sunscale Scytheclaw"] = 0,
 									["Kolkar Marauder"] = 0,
+									["Venomtail Scorpid"] = 0,
 									["Barak Kodobane"] = 0,
-									["Fleeting Plainstrider"] = 0,
 									["Sunscale Screecher"] = 0,
-									["Zhevra Charger"] = 0,
-									["Venture Co. Enforcer"] = 0,
+									["Fleeting Plainstrider"] = 0,
 									["Voidwalker Minion"] = 0,
+									["Venture Co. Enforcer"] = 0,
 									["Kolkar Stormer"] = 0,
+									["Zhevra Charger"] = 0,
 									["Oasis Snapjaw"] = 0,
 									["Witchwing Slayer"] = 0,
 									["Lightning Hide"] = 0,
-									["Venomtail Scorpid"] = 0,
+									["Greater Plainstrider"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -11860,14 +10331,15 @@ _detalhes_database = {
 								["n_max"] = 0,
 								["targets"] = {
 									["Surf Crawler"] = 0,
-									["Elder Mottled Boar"] = 0,
 									["Razormane Dustrunner"] = 0,
+									["Elder Mottled Boar"] = 0,
 									["Venture Co. Overseer"] = 0,
+									["Razormane Mystic"] = 0,
 									["Savannah Huntress"] = 0,
-									["Kolkar Stormer"] = 0,
-									["Sarkoth"] = 0,
 									["Oasis Snapjaw"] = 0,
+									["Sarkoth"] = 0,
 									["Burning Blade Fanatic"] = 0,
+									["Ornery Plainstrider"] = 0,
 									["Armored Scorpid"] = 0,
 									["Zhevra Runner"] = 0,
 									["Burning Blade Bruiser"] = 0,
@@ -11875,8 +10347,8 @@ _detalhes_database = {
 									["Witchwing Harpy"] = 0,
 									["Razormane Quilboar"] = 0,
 									["Witchwing Roguefeather"] = 0,
-									["Southsea Brigand"] = 0,
 									["Theramore Marine"] = 0,
+									["Southsea Brigand"] = 0,
 									["Bloodtalon Taillasher"] = 0,
 									["Sunscale Scytheclaw"] = 0,
 									["Mottled Boar"] = 0,
@@ -11884,7 +10356,7 @@ _detalhes_database = {
 									["Hecklefang Hyena"] = 0,
 									["Razormane Battleguard"] = 0,
 									["Witchwing Slayer"] = 0,
-									["Razormane Mystic"] = 0,
+									["Kolkar Stormer"] = 0,
 									["Vile Familiar"] = 0,
 								},
 								["m_dmg"] = 0,
@@ -11918,25 +10390,26 @@ _detalhes_database = {
 									["Bristleback Water Seeker"] = 0,
 									["Elder Mottled Boar"] = 0,
 									["Razormane Dustrunner"] = 0,
+									["Burning Blade Fanatic"] = 0,
 									["Savannah Huntress"] = 0,
 									["Kolkar Packhound"] = 0,
 									["Sarkoth"] = 0,
 									["Venture Co. Overseer"] = 0,
-									["Kolkar Stormer"] = 0,
 									["Oasis Snapjaw"] = 0,
+									["Kolkar Stormer"] = 0,
 									["Zhevra Runner"] = 0,
 									["Hecklefang Hyena"] = 0,
 									["Dire Mottled Boar"] = 0,
 									["Sunscale Scytheclaw"] = 0,
 									["Razormane Quilboar"] = 0,
-									["Witchwing Roguefeather"] = 0,
-									["Theramore Marine"] = 0,
+									["Corrupted Bloodtalon Scythemaw"] = 0,
 									["Southsea Brigand"] = 0,
+									["Theramore Marine"] = 0,
 									["Bloodtalon Taillasher"] = 0,
 									["Burning Blade Bruiser"] = 0,
 									["Armored Scorpid"] = 0,
-									["Burning Blade Fanatic"] = 0,
-									["Corrupted Bloodtalon Scythemaw"] = 0,
+									["Ornery Plainstrider"] = 0,
+									["Witchwing Roguefeather"] = 0,
 									["Razormane Battleguard"] = 0,
 									["Sunscale Screecher"] = 0,
 									["Lightning Hide"] = 0,
@@ -11968,6 +10441,7 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
+									["Savannah Highmane"] = 0,
 									["Deviate Creeper"] = 0,
 									["Bristleback Thornweaver"] = 0,
 									["Bloodtalon Scythemaw"] = 0,
@@ -12128,6 +10602,7 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
+									["Savannah Highmane"] = 0,
 									["Deviate Creeper"] = 0,
 									["Bristleback Thornweaver"] = 0,
 									["Bloodtalon Scythemaw"] = 0,
@@ -12233,6 +10708,7 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
+									["Savannah Highmane"] = 0,
 									["Deviate Creeper"] = 0,
 									["Bristleback Thornweaver"] = 0,
 									["Bloodtalon Scythemaw"] = 0,
@@ -12362,18 +10838,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.006508,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006508,
 					["serial"] = "Creature-0-4471-1-276-3101-00001CF36E",
-					["monster"] = true,
+					["fight_component"] = true,
 					["end_time"] = 1570891259,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.006508,
 					["nome"] = "Vile Familiar",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -12515,10 +10990,11 @@ _detalhes_database = {
 					["total"] = 0.006508,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1570891256,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 				}, -- [2]
 				{
 					["flag_original"] = 68168,
@@ -12530,18 +11006,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.008761,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008761,
 					["serial"] = "Creature-0-4471-1-276-3281-00001CF359",
-					["monster"] = true,
+					["fight_component"] = true,
 					["end_time"] = 1570891259,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.008761,
 					["nome"] = "Sarkoth",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -12637,10 +11112,11 @@ _detalhes_database = {
 					["total"] = 0.008761,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1570891256,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 				}, -- [3]
 				{
 					["flag_original"] = 68136,
@@ -12661,7 +11137,7 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["end_time"] = 1570891259,
 					["serial"] = "Creature-0-4471-1-276-3098-00001CF183",
-					["damage_taken"] = 0.003439,
+					["last_dps"] = 0,
 					["nome"] = "Mottled Boar",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -12696,13 +11172,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["damage_taken"] = 0.003439,
 					["total"] = 0.003439,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1570891256,
 					["delay"] = 0,
 					["friendlyfire_total"] = 0,
@@ -12725,20 +11201,20 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["end_time"] = 1570891259,
 					["serial"] = "Creature-0-4471-1-276-3124-00001CED12",
-					["damage_taken"] = 0.006074,
+					["last_dps"] = 0,
 					["nome"] = "Scorpid Worker",
 					["spells"] = {
 						["_ActorTable"] = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["damage_taken"] = 0.006074,
 					["total"] = 0.006074,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1570891256,
 					["delay"] = 0,
 					["friendlyfire_total"] = 0,
@@ -12753,18 +11229,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.006985,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006985,
 					["serial"] = "Creature-0-4470-1-409-3114-000021F53A",
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1570896472,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Razormane Battleguard",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -12859,10 +11335,10 @@ _detalhes_database = {
 					["total"] = 0.006985,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.006985,
+					["last_dps"] = 0,
 					["start_time"] = 1570896469,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [6]
 				{
 					["flag_original"] = 68168,
@@ -12874,18 +11350,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.0053,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.0053,
 					["serial"] = "Creature-0-4470-1-409-3113-000021F8FA",
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1570896472,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Razormane Dustrunner",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -13007,10 +11483,10 @@ _detalhes_database = {
 					["total"] = 0.0053,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.0053,
+					["last_dps"] = 0,
 					["start_time"] = 1570896469,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [7]
 				{
 					["flag_original"] = 2632,
@@ -13022,18 +11498,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.008089,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008089,
 					["serial"] = "Creature-0-4470-1-409-3112-000021F739",
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1570896472,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Razormane Scout",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -13073,10 +11549,10 @@ _detalhes_database = {
 					["total"] = 0.008089,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.008089,
+					["last_dps"] = 0,
 					["start_time"] = 1570896469,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [8]
 				{
 					["flag_original"] = 68168,
@@ -13088,18 +11564,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.008195,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008195,
 					["serial"] = "Creature-0-4470-1-409-3111-000021F6B7",
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1570896472,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Razormane Quilboar",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -13195,10 +11671,10 @@ _detalhes_database = {
 					["total"] = 0.008195,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.008195,
+					["last_dps"] = 0,
 					["start_time"] = 1570896469,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [9]
 				{
 					["flag_original"] = 68168,
@@ -13212,18 +11688,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.004348,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004348,
 					["serial"] = "Creature-0-4470-1-409-3125-000021F5B7",
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1570896472,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Clattering Scorpid",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -13323,10 +11799,10 @@ _detalhes_database = {
 					["total"] = 0.004348,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.004348,
+					["last_dps"] = 0,
 					["start_time"] = 1570896469,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [10]
 				{
 					["flag_original"] = 68168,
@@ -13338,18 +11814,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.003292,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003292,
 					["serial"] = "Creature-0-4470-1-409-3103-000021E57E",
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1570896472,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Makrura Clacker",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -13417,10 +11893,10 @@ _detalhes_database = {
 					["total"] = 0.003292,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.003292,
+					["last_dps"] = 0,
 					["start_time"] = 1570896469,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [11]
 				{
 					["flag_original"] = 68168,
@@ -13434,18 +11910,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.00715,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.00715,
 					["serial"] = "Creature-0-4470-1-409-3117-0000221F53",
-					["monster"] = true,
+					["fight_component"] = true,
 					["end_time"] = 1570907676,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.00715,
 					["nome"] = "Dustwind Savage",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -13515,10 +11990,11 @@ _detalhes_database = {
 					["total"] = 0.00715,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1570907673,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 				}, -- [12]
 				{
 					["flag_original"] = 68168,
@@ -13531,18 +12007,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.006161,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006161,
 					["serial"] = "Creature-0-4470-1-409-3116-0000222404",
-					["monster"] = true,
+					["fight_component"] = true,
 					["end_time"] = 1570907676,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.006161,
 					["nome"] = "Dustwind Pillager",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -13611,10 +12086,11 @@ _detalhes_database = {
 					["total"] = 0.006161,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1570907673,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 				}, -- [13]
 				{
 					["flag_original"] = 68136,
@@ -13636,7 +12112,7 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1570907676,
 					["serial"] = "Creature-0-4470-1-409-3099-0000221CCD",
-					["damage_taken"] = 0.001635,
+					["last_dps"] = 0,
 					["nome"] = "Dire Mottled Boar",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -13701,13 +12177,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["damage_taken"] = 0.001635,
 					["total"] = 0.001635,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1570907673,
 					["delay"] = 0,
 					["friendlyfire_total"] = 0,
@@ -13723,18 +12199,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.002391,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.002391,
 					["serial"] = "Creature-0-4470-1-409-3126-000021F819",
-					["monster"] = true,
+					["fight_component"] = true,
 					["end_time"] = 1570907676,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.002391,
 					["nome"] = "Armored Scorpid",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -13804,10 +12279,11 @@ _detalhes_database = {
 					["total"] = 0.002391,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1570907673,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 				}, -- [15]
 				{
 					["flag_original"] = 68136,
@@ -13828,7 +12304,7 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1570907676,
 					["serial"] = "Creature-0-4470-1-409-3107-000021EA2E",
-					["damage_taken"] = 0.001864,
+					["last_dps"] = 0,
 					["nome"] = "Surf Crawler",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -13891,13 +12367,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["damage_taken"] = 0.001864,
 					["total"] = 0.001864,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1570907673,
 					["delay"] = 0,
 					["friendlyfire_total"] = 0,
@@ -13913,18 +12389,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.008342,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008342,
 					["serial"] = "Creature-0-4470-1-409-3122-000021FBC5",
-					["monster"] = true,
+					["fight_component"] = true,
 					["end_time"] = 1570907676,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.008342,
 					["nome"] = "Bloodtalon Taillasher",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14021,10 +12496,11 @@ _detalhes_database = {
 					["total"] = 0.008342,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1570907673,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 				}, -- [17]
 				{
 					["flag_original"] = 68168,
@@ -14036,18 +12512,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.007749,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007749,
 					["serial"] = "Creature-0-4470-1-409-3141-0000214222",
-					["monster"] = true,
+					["fight_component"] = true,
 					["end_time"] = 1570907676,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.007749,
 					["nome"] = "Makrura Elder",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14143,10 +12618,11 @@ _detalhes_database = {
 					["total"] = 0.007749,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1570907673,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 				}, -- [18]
 				{
 					["flag_original"] = 68168,
@@ -14159,18 +12635,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.00728,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.00728,
 					["serial"] = "Creature-0-4470-1-409-3115-000022278A",
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1570908271,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Dustwind Harpy",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14239,10 +12715,10 @@ _detalhes_database = {
 					["total"] = 0.00728,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.00728,
+					["last_dps"] = 0,
 					["start_time"] = 1570908268,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [19]
 				{
 					["flag_original"] = 1298,
@@ -14408,18 +12884,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.002794,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.002794,
 					["serial"] = "Creature-0-4470-1-409-3118-0000221A29",
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1570908271,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Dustwind Storm Witch",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14546,10 +13022,10 @@ _detalhes_database = {
 					["total"] = 0.002794,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.002794,
+					["last_dps"] = 0,
 					["start_time"] = 1570908268,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [21]
 				{
 					["flag_original"] = 2632,
@@ -14561,18 +13037,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.008172,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008172,
 					["serial"] = "Creature-0-4470-1-409-3195-0000221EDB",
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1570908271,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Burning Blade Thug",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14612,10 +13088,10 @@ _detalhes_database = {
 					["total"] = 0.008172,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.008172,
+					["last_dps"] = 0,
 					["start_time"] = 1570908268,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [22]
 				{
 					["flag_original"] = 68168,
@@ -14629,17 +13105,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004951,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1570961947,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.004951,
+					["last_dps"] = 0,
 					["nome"] = "Venomtail Scorpid",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14737,11 +13214,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.004951,
 					["start_time"] = 1570961944,
 					["serial"] = "Creature-0-4468-1-190-3127-000022F8C2",
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [23]
 				{
 					["flag_original"] = 68168,
@@ -14755,17 +13231,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.00419,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1570961947,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.00419,
+					["last_dps"] = 0,
 					["nome"] = "Dreadmaw Crocolisk",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -14892,11 +13369,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.00419,
 					["start_time"] = 1570961944,
 					["serial"] = "Creature-0-4468-1-190-3110-000022F97E",
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [24]
 				{
 					["flag_original"] = 68168,
@@ -14909,17 +13385,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.002083,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1570961947,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.002083,
+					["last_dps"] = 0,
 					["nome"] = "Bloodtalon Scythemaw",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15015,11 +13492,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.002083,
 					["start_time"] = 1570961944,
 					["serial"] = "Creature-0-4468-1-190-3123-000022DE66",
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [25]
 				{
 					["flag_original"] = 68168,
@@ -15032,17 +13508,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.002247,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1570961947,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.002247,
+					["last_dps"] = 0,
 					["nome"] = "Thunder Lizard",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15167,11 +13644,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.002247,
 					["start_time"] = 1570961944,
 					["serial"] = "Creature-0-4468-1-190-3130-000022F884",
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [26]
 				{
 					["flag_original"] = 68168,
@@ -15184,17 +13660,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.00204,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1570961947,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.00204,
+					["last_dps"] = 0,
 					["nome"] = "Burning Blade Fanatic",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15320,11 +13797,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.00204,
 					["start_time"] = 1570961944,
 					["serial"] = "Creature-0-4468-1-190-3197-000022F48B",
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [27]
 				{
 					["flag_original"] = 2632,
@@ -15337,17 +13813,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.00129,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1570961947,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.00129,
+					["last_dps"] = 0,
 					["nome"] = "Fizzle Darkstorm",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15444,11 +13921,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.00129,
 					["start_time"] = 1570961944,
 					["serial"] = "Creature-0-4468-1-190-3203-000022F3D9",
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [28]
 				{
 					["flag_original"] = 68168,
@@ -15461,17 +13937,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.002197,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1570961947,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.002197,
+					["last_dps"] = 0,
 					["nome"] = "Lightning Hide",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15569,11 +14046,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.002197,
 					["start_time"] = 1570961944,
 					["serial"] = "Creature-0-4468-1-190-3131-000022E20B",
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [29]
 				{
 					["flag_original"] = 2632,
@@ -15586,18 +14062,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.004355,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004355,
 					["serial"] = "Creature-0-4468-1-190-3227-000022F223",
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1570966240,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Corrupted Bloodtalon Scythemaw",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15665,10 +14141,10 @@ _detalhes_database = {
 					["total"] = 0.004355,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.004355,
+					["last_dps"] = 0,
 					["start_time"] = 1570966237,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [30]
 				{
 					["flag_original"] = 68136,
@@ -15690,7 +14166,7 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1570966240,
 					["serial"] = "Creature-0-4468-1-190-3100-000023012D",
-					["on_hold"] = false,
+					["damage_taken"] = 0.002542,
 					["nome"] = "Elder Mottled Boar",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15754,13 +14230,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["total"] = 0.002542,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.002542,
+					["last_dps"] = 0,
 					["start_time"] = 1570966237,
 					["delay"] = 0,
 					["friendlyfire_total"] = 0,
@@ -15778,18 +14254,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.0054,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.0054,
 					["serial"] = "Creature-0-4468-1-190-3198-00002305AD",
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1570966240,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Burning Blade Apprentice",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15944,10 +14420,10 @@ _detalhes_database = {
 					["total"] = 0.0054,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.0054,
+					["last_dps"] = 0,
 					["start_time"] = 1570966237,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [32]
 				{
 					["flag_original"] = 70216,
@@ -15969,7 +14445,7 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1570966240,
 					["serial"] = "Creature-0-4468-1-190-8996-00002305B3",
-					["on_hold"] = false,
+					["damage_taken"] = 0.006974,
 					["nome"] = "Voidwalker Minion <Burning Blade Apprentice>",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16005,13 +14481,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["total"] = 0.006974,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.006974,
+					["last_dps"] = 0,
 					["start_time"] = 1570966237,
 					["delay"] = 0,
 					["friendlyfire_total"] = 0,
@@ -16038,7 +14514,7 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1570966240,
 					["serial"] = "Creature-0-4468-1-190-8996-00002305DD",
-					["on_hold"] = false,
+					["damage_taken"] = 0.003838,
 					["nome"] = "Voidwalker Minion",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16105,13 +14581,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["total"] = 0.003838,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.003838,
+					["last_dps"] = 0,
 					["start_time"] = 1570966237,
 					["delay"] = 0,
 					["friendlyfire_total"] = 0,
@@ -16127,18 +14603,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.007111,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007111,
 					["serial"] = "Creature-0-4468-1-190-5822-00002300B5",
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1570966240,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Felweaver Scornn",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16235,10 +14711,10 @@ _detalhes_database = {
 					["total"] = 0.007111,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.007111,
+					["last_dps"] = 0,
 					["start_time"] = 1570966237,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [35]
 				{
 					["flag_original"] = 70216,
@@ -16259,7 +14735,7 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1570966240,
 					["serial"] = "Creature-0-4468-1-190-8996-0000230439",
-					["on_hold"] = false,
+					["damage_taken"] = 0.004032,
 					["nome"] = "Voidwalker Minion <Felweaver Scornn>",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16294,13 +14770,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["total"] = 0.004032,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.004032,
+					["last_dps"] = 0,
 					["start_time"] = 1570966237,
 					["delay"] = 0,
 					["friendlyfire_total"] = 0,
@@ -16319,18 +14795,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.007538,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007538,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 					["end_time"] = 1570986457,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.007538,
 					["nome"] = "Hecklefang Hyena",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16404,10 +14879,11 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1570986454,
 					["serial"] = "Creature-0-4470-1-183-4127-0000234CEF",
-					["fight_component"] = true,
+					["dps_started"] = false,
 				}, -- [37]
 				{
 					["flag_original"] = 68168,
@@ -16422,18 +14898,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.004051,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004051,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 					["end_time"] = 1570986457,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.004051,
 					["nome"] = "Witchwing Harpy",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16531,10 +15006,11 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1570986454,
 					["serial"] = "Creature-0-4470-1-183-3276-00002358E5",
-					["fight_component"] = true,
+					["dps_started"] = false,
 				}, -- [38]
 				{
 					["flag_original"] = 2632,
@@ -16548,18 +15024,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.004945,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004945,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 					["end_time"] = 1570986457,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.004945,
 					["nome"] = "Witchwing Roguefeather",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16687,10 +15162,11 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1570986454,
 					["serial"] = "Creature-0-4470-1-183-3277-000023597D",
-					["fight_component"] = true,
+					["dps_started"] = false,
 				}, -- [39]
 				{
 					["flag_original"] = 68168,
@@ -16713,17 +15189,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001262,
 					["serial"] = "Creature-0-4470-1-183-3273-0000235C13",
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1570998455,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.001262,
+					["last_dps"] = 0,
 					["nome"] = "Kolkar Stormer",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16787,38 +15264,6 @@ _detalhes_database = {
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
 								["m_amt"] = 0,
-								["r_amt"] = 0,
-							},
-							["Lightning Cloud"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Frostßolt"] = 0,
-									["Boar <Greenwise>"] = 0,
-									["Yakuza"] = 0,
-									["Greenwise"] = 0,
-									["Loczek"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Lightning Cloud",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 							["!Melee"] = {
@@ -16890,6 +15335,38 @@ _detalhes_database = {
 								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
+							["Lightning Cloud"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Frostßolt"] = 0,
+									["Boar <Greenwise>"] = 0,
+									["Yakuza"] = 0,
+									["Greenwise"] = 0,
+									["Loczek"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Lightning Cloud",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
+							},
 						},
 						["tipo"] = 2,
 					},
@@ -16898,11 +15375,10 @@ _detalhes_database = {
 					["total"] = 0.001262,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.001262,
 					["start_time"] = 1570998452,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [40]
 				{
 					["flag_original"] = 2632,
@@ -16917,17 +15393,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007767,
 					["serial"] = "Creature-0-4470-1-183-3272-0000235C13",
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1570998455,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.007767,
+					["last_dps"] = 0,
 					["nome"] = "Kolkar Wrangler",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -17082,11 +15559,10 @@ _detalhes_database = {
 					["total"] = 0.007767,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.007767,
 					["start_time"] = 1570998452,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [41]
 				{
 					["flag_original"] = 2632,
@@ -17100,17 +15576,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004842,
 					["serial"] = "Creature-0-4470-1-183-3394-0000235B23",
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1570998455,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.004842,
+					["last_dps"] = 0,
 					["nome"] = "Barak Kodobane",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -17207,11 +15684,10 @@ _detalhes_database = {
 					["total"] = 0.004842,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.004842,
 					["start_time"] = 1570998452,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [42]
 				{
 					["flag_original"] = 68136,
@@ -17235,7 +15711,7 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1570999067,
 					["serial"] = "Creature-0-4470-1-183-3246-000023882C",
-					["damage_taken"] = 0.008534,
+					["last_dps"] = 0,
 					["nome"] = "Fleeting Plainstrider",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -17302,13 +15778,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["damage_taken"] = 0.008534,
 					["total"] = 0.008534,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1570999064,
 					["delay"] = 0,
 					["friendlyfire_total"] = 0,
@@ -17325,18 +15801,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.008249,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008249,
 					["serial"] = "Creature-0-4470-1-183-3255-00002389E8",
-					["monster"] = true,
+					["fight_component"] = true,
 					["end_time"] = 1570999067,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.008249,
 					["nome"] = "Sunscale Screecher",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -17406,10 +15881,11 @@ _detalhes_database = {
 					["total"] = 0.008249,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1570999064,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 				}, -- [44]
 				{
 					["flag_original"] = 68136,
@@ -17431,7 +15907,7 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1571053824,
 					["delay"] = 0,
-					["on_hold"] = false,
+					["damage_taken"] = 0.00568,
 					["nome"] = "Zhevra Runner",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -17496,13 +15972,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["total"] = 0.00568,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["last_event"] = 0,
-					["damage_taken"] = 0.00568,
+					["last_dps"] = 0,
 					["start_time"] = 1571053821,
 					["serial"] = "Creature-0-4470-1-183-3242-0000238BF7",
 					["dps_started"] = false,
@@ -17519,18 +15995,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.006573,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006573,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1571053824,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Razormane Defender",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -17714,10 +16190,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["damage_taken"] = 0.006573,
+					["last_dps"] = 0,
 					["start_time"] = 1571053821,
 					["serial"] = "Creature-0-4470-1-183-3266-00002390A2",
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [46]
 				{
 					["flag_original"] = 68168,
@@ -17730,18 +16206,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.007094,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007094,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1571053824,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Razormane Mystic",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -17865,10 +16341,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["damage_taken"] = 0.007094,
+					["last_dps"] = 0,
 					["start_time"] = 1571053821,
 					["serial"] = "Creature-0-4470-1-183-3271-0000239073",
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [47]
 				{
 					["flag_original"] = 68168,
@@ -17880,18 +16356,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.002411,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.002411,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1571053824,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Elder Mystic Razorsnout",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18067,10 +16543,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["damage_taken"] = 0.002411,
+					["last_dps"] = 0,
 					["start_time"] = 1571053821,
 					["serial"] = "Creature-0-4470-1-183-3270-0000238C45",
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [48]
 				{
 					["flag_original"] = 4680,
@@ -18092,7 +16568,7 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1571053824,
 					["delay"] = 0,
-					["on_hold"] = false,
+					["damage_taken"] = 0.006386,
 					["nome"] = "Razormane Wolf",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18156,13 +16632,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["total"] = 0.006386,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["last_event"] = 0,
-					["damage_taken"] = 0.006386,
+					["last_dps"] = 0,
 					["start_time"] = 1571053821,
 					["serial"] = "Creature-0-4470-1-183-3939-0000239167",
 					["dps_started"] = false,
@@ -18178,18 +16654,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.007176,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007176,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1571053824,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Razormane Hunter",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18257,10 +16733,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["damage_taken"] = 0.007176,
+					["last_dps"] = 0,
 					["start_time"] = 1571053821,
 					["serial"] = "Creature-0-4470-1-183-3265-0000238FC2",
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [50]
 				{
 					["flag_original"] = 2632,
@@ -18274,18 +16750,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.004188,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004188,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1571053824,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Razormane Geomancer",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18410,10 +16886,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["damage_taken"] = 0.004188,
+					["last_dps"] = 0,
 					["start_time"] = 1571053821,
 					["serial"] = "Creature-0-4470-1-183-3269-000023917D",
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [51]
 				{
 					["flag_original"] = 68168,
@@ -18421,25 +16897,25 @@ _detalhes_database = {
 					["damage_from"] = {
 					},
 					["targets"] = {
-						["Boar <Greenwise>"] = 0,
 						["Svestka"] = 0,
 						["Turtle <Greenwise>"] = 0,
+						["Boar <Greenwise>"] = 0,
+						["Greenwise"] = 0,
 						["Shano <Banecall>"] = 0,
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.005725,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005725,
 					["serial"] = "Creature-0-4469-1-416-3245-0000245225",
-					["monster"] = true,
+					["fight_component"] = true,
 					["end_time"] = 1571066498,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.005725,
 					["nome"] = "Ornery Plainstrider",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18482,9 +16958,10 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Boar <Greenwise>"] = 0,
 									["Svestka"] = 0,
 									["Turtle <Greenwise>"] = 0,
+									["Boar <Greenwise>"] = 0,
+									["Greenwise"] = 0,
 									["Shano <Banecall>"] = 0,
 								},
 								["m_dmg"] = 0,
@@ -18514,10 +16991,11 @@ _detalhes_database = {
 					["total"] = 0.005725,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1571066495,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 				}, -- [52]
 				{
 					["flag_original"] = 2632,
@@ -18534,18 +17012,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.007069,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007069,
 					["serial"] = "Creature-0-4469-1-416-3256-0000245DEB",
-					["monster"] = true,
+					["fight_component"] = true,
 					["end_time"] = 1571066498,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.007069,
 					["nome"] = "Sunscale Scytheclaw",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18558,10 +17035,10 @@ _detalhes_database = {
 								["targets"] = {
 									["Boar"] = 0,
 									["Rake"] = 0,
-									["Greenwise"] = 0,
-									["Jeffryy"] = 0,
 									["Shano"] = 0,
+									["Jeffryy"] = 0,
 									["Banecall"] = 0,
+									["Greenwise"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -18650,10 +17127,11 @@ _detalhes_database = {
 					["total"] = 0.007069,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1571066495,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 				}, -- [53]
 				{
 					["flag_original"] = 68168,
@@ -18685,17 +17163,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005836,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1571066879,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.005836,
+					["last_dps"] = 0,
 					["nome"] = "Witchwing Slayer",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18855,11 +17334,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.005836,
 					["start_time"] = 1571066876,
 					["serial"] = "Creature-0-4469-1-416-3278-0000249352",
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [54]
 				{
 					["flag_original"] = 2632,
@@ -18868,23 +17346,24 @@ _detalhes_database = {
 					},
 					["targets"] = {
 						["Boar <Greenwise>"] = 0,
-						["Xe"] = 0,
 						["Cat"] = 0,
 						["Greenwise"] = 0,
+						["Xe"] = 0,
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008093,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1571066879,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.008093,
+					["last_dps"] = 0,
 					["nome"] = "Witchwing Windcaller",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18925,9 +17404,9 @@ _detalhes_database = {
 								["n_max"] = 0,
 								["targets"] = {
 									["Boar <Greenwise>"] = 0,
-									["Xe"] = 0,
 									["Cat"] = 0,
 									["Greenwise"] = 0,
+									["Xe"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -18983,11 +17462,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.008093,
 					["start_time"] = 1571066876,
 					["serial"] = "Creature-0-4469-1-416-3280-00002492D5",
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [55]
 				{
 					["flag_original"] = 2632,
@@ -19003,17 +17481,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003752,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1571066879,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.003752,
+					["last_dps"] = 0,
 					["nome"] = "Witchwing Ambusher",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -19086,11 +17565,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.003752,
 					["start_time"] = 1571066876,
 					["serial"] = "Creature-0-4469-1-416-3279-0000248D16",
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [56]
 				{
 					["flag_original"] = 68136,
@@ -19118,7 +17596,7 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1571071985,
 					["delay"] = 0,
-					["damage_taken"] = 0.001234,
+					["last_dps"] = 0,
 					["nome"] = "Greater Plainstrider",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -19191,13 +17669,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["damage_taken"] = 0.001234,
 					["total"] = 0.001234,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1571071982,
 					["serial"] = "Creature-0-4469-1-416-3244-0000A49EF0",
 					["dps_started"] = false,
@@ -19213,18 +17691,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.004468,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004468,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 					["end_time"] = 1571071985,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.004468,
 					["nome"] = "Savannah Prowler",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -19293,10 +17770,11 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1571071982,
 					["serial"] = "Creature-0-4469-1-416-3425-0000249E15",
-					["fight_component"] = true,
+					["dps_started"] = false,
 				}, -- [58]
 				{
 					["flag_original"] = 68168,
@@ -19308,18 +17786,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.004786,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004786,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 					["end_time"] = 1571071985,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.004786,
 					["nome"] = "Serena Bloodfeather",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -19414,10 +17891,11 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1571071982,
 					["serial"] = "Creature-0-4469-1-416-3452-000024A517",
-					["fight_component"] = true,
+					["dps_started"] = false,
 				}, -- [59]
 				{
 					["flag_original"] = 68168,
@@ -19431,18 +17909,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.008026,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008026,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 					["end_time"] = 1571071985,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.008026,
 					["nome"] = "Savannah Huntress",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -19514,10 +17991,11 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1571071982,
 					["serial"] = "Creature-0-4469-1-416-3415-000024981C",
-					["fight_component"] = true,
+					["dps_started"] = false,
 				}, -- [60]
 				{
 					["flag_original"] = 68168,
@@ -19530,17 +18008,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007104,
 					["serial"] = "Creature-0-4469-1-416-3268-0000A4B3C5",
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1571075575,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.007104,
+					["last_dps"] = 0,
 					["nome"] = "Razormane Thornweaver",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -19692,11 +18171,10 @@ _detalhes_database = {
 					["total"] = 0.007104,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.007104,
 					["start_time"] = 1571075572,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [61]
 				{
 					["flag_original"] = 68168,
@@ -19709,17 +18187,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001853,
 					["serial"] = "Creature-0-4469-1-416-3475-000024B0AC",
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1571075575,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.001853,
+					["last_dps"] = 0,
 					["nome"] = "Echeyakee",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -19789,11 +18268,10 @@ _detalhes_database = {
 					["total"] = 0.001853,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.001853,
 					["start_time"] = 1571075572,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [62]
 				{
 					["flag_original"] = 68168,
@@ -19810,18 +18288,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.007885,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007885,
 					["serial"] = "Creature-0-4469-1-416-3381-000024DF94",
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1571086297,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Southsea Brigand",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -19954,10 +18432,10 @@ _detalhes_database = {
 					["total"] = 0.007885,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.007885,
+					["last_dps"] = 0,
 					["start_time"] = 1571086294,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [63]
 				{
 					["flag_original"] = 68168,
@@ -19969,18 +18447,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.006661,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006661,
 					["serial"] = "Creature-0-4469-1-416-6494-000024DEDD",
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1571086297,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Tazan",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -20048,10 +18526,10 @@ _detalhes_database = {
 					["total"] = 0.006661,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.006661,
+					["last_dps"] = 0,
 					["start_time"] = 1571086294,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [64]
 				{
 					["flag_original"] = 68168,
@@ -20067,18 +18545,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.006401,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006401,
 					["serial"] = "Creature-0-4469-1-416-3382-000024DEDD",
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1571086297,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Southsea Cannoneer",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -20210,10 +18688,10 @@ _detalhes_database = {
 					["total"] = 0.006401,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.006401,
+					["last_dps"] = 0,
 					["start_time"] = 1571086294,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [65]
 				{
 					["flag_original"] = 68168,
@@ -20229,17 +18707,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003436,
 					["serial"] = "Creature-0-4469-1-416-3385-0000A4DED3",
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1571086873,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.003436,
+					["last_dps"] = 0,
 					["nome"] = "Theramore Marine",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -20426,11 +18905,10 @@ _detalhes_database = {
 					["total"] = 0.003436,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.003436,
 					["start_time"] = 1571086870,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [66]
 				{
 					["flag_original"] = 68168,
@@ -20442,17 +18920,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008799,
 					["serial"] = "Creature-0-4469-1-416-3467-000024E0C3",
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1571086873,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.008799,
+					["last_dps"] = 0,
 					["nome"] = "Baron Longshore",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -20492,11 +18971,10 @@ _detalhes_database = {
 					["total"] = 0.008799,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.008799,
 					["start_time"] = 1571086870,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [67]
 				{
 					["flag_original"] = 68136,
@@ -20517,10 +18995,38 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["end_time"] = 1571166234,
 					["delay"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["nome"] = "Zhevra Charger",
 					["spells"] = {
 						["_ActorTable"] = {
+							{
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Boar"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 1,
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
+							}, -- [1]
 							["!Melee"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
@@ -20552,13 +19058,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.003145,
+					["last_dps"] = 0,
 					["total"] = 0.003145,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
+					["damage_taken"] = 0.003145,
 					["start_time"] = 1571166231,
 					["serial"] = "Creature-0-4469-1-416-3426-000024E2B2",
 					["fight_component"] = true,
@@ -20577,18 +19083,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.006348,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006348,
 					["serial"] = "Creature-0-4470-1-183-3275-0000261BCF",
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1571167214,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Kolkar Marauder",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -20692,10 +19198,10 @@ _detalhes_database = {
 					["total"] = 0.006348,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.006348,
+					["last_dps"] = 0,
 					["start_time"] = 1571167211,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [69]
 				{
 					["flag_original"] = 1298,
@@ -20937,18 +19443,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.0066,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.0066,
 					["serial"] = "Creature-0-4470-1-183-3397-0000261BC5",
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1571167214,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Kolkar Bloodcharger",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -21078,10 +19584,10 @@ _detalhes_database = {
 					["total"] = 0.0066,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.0066,
+					["last_dps"] = 0,
 					["start_time"] = 1571167211,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [71]
 				{
 					["flag_original"] = 1298,
@@ -21705,7 +20211,7 @@ _detalhes_database = {
 					["fight_component"] = true,
 					["end_time"] = 1571167214,
 					["serial"] = "",
-					["on_hold"] = false,
+					["damage_taken"] = 0.006024,
 					["nome"] = "Environment (Fire)",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -21740,13 +20246,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["total"] = 0.006024,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.006024,
+					["last_dps"] = 0,
 					["start_time"] = 1571167211,
 					["delay"] = 0,
 					["friendlyfire_total"] = 0,
@@ -21764,18 +20270,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.007023,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007023,
 					["serial"] = "Creature-0-4470-1-183-4316-0000261A3E",
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1571167214,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Kolkar Packhound",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -21848,10 +20354,10 @@ _detalhes_database = {
 					["total"] = 0.007023,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.007023,
+					["last_dps"] = 0,
 					["start_time"] = 1571167211,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [76]
 				{
 					["flag_original"] = 2632,
@@ -21865,18 +20371,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.00356,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.00356,
 					["serial"] = "Creature-0-4470-1-183-3274-0000261A3E",
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1571167214,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Kolkar Pack Runner",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -21974,10 +20480,10 @@ _detalhes_database = {
 					["total"] = 0.00356,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.00356,
+					["last_dps"] = 0,
 					["start_time"] = 1571167211,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [77]
 				{
 					["flag_original"] = 68168,
@@ -21989,18 +20495,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.001947,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001947,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 					["end_time"] = 1571167448,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.001947,
 					["nome"] = "Verog the Dervish",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -22068,10 +20573,11 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1571167445,
 					["serial"] = "Creature-0-4470-1-183-3395-0000261C82",
-					["fight_component"] = true,
+					["dps_started"] = false,
 				}, -- [78]
 				{
 					["flag_original"] = 2632,
@@ -22084,18 +20590,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.002601,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.002601,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 					["end_time"] = 1571167448,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.002601,
 					["nome"] = "Sunscale Lashtail",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -22163,10 +20668,11 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1571167445,
 					["serial"] = "Creature-0-4470-1-183-3254-0000261A5D",
-					["fight_component"] = true,
+					["dps_started"] = false,
 				}, -- [79]
 				{
 					["flag_original"] = 2632,
@@ -22182,17 +20688,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006588,
 					["serial"] = "Creature-0-4470-1-183-3263-000026163F",
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1571168505,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.006588,
+					["last_dps"] = 0,
 					["nome"] = "Bristleback Geomancer",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -22347,11 +20854,10 @@ _detalhes_database = {
 					["total"] = 0.006588,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.006588,
 					["start_time"] = 1571168502,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [80]
 				{
 					["flag_original"] = 68168,
@@ -22366,17 +20872,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008569,
 					["serial"] = "Creature-0-4470-1-183-3261-000026167E",
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1571168505,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.008569,
+					["last_dps"] = 0,
 					["nome"] = "Bristleback Thornweaver",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -22533,11 +21040,10 @@ _detalhes_database = {
 					["total"] = 0.008569,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.008569,
 					["start_time"] = 1571168502,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [81]
 				{
 					["flag_original"] = 68168,
@@ -22550,17 +21056,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.002628,
 					["serial"] = "Creature-0-4470-1-183-3247-00002618AC",
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1571168505,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.002628,
+					["last_dps"] = 0,
 					["nome"] = "Thunderhawk Hatchling",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -22686,11 +21193,10 @@ _detalhes_database = {
 					["total"] = 0.002628,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.002628,
 					["start_time"] = 1571168502,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [82]
 				{
 					["flag_original"] = 68168,
@@ -22707,17 +21213,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.00383,
 					["serial"] = "Creature-0-4470-1-183-3461-0001260DDF",
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1571168505,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.00383,
+					["last_dps"] = 0,
 					["nome"] = "Oasis Snapjaw",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -22820,11 +21327,10 @@ _detalhes_database = {
 					["total"] = 0.00383,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.00383,
 					["start_time"] = 1571168502,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [83]
 				{
 					["flag_original"] = 2632,
@@ -22838,18 +21344,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.005271,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005271,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1571170509,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Bristleback Water Seeker",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -22979,10 +21485,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["damage_taken"] = 0.005271,
+					["last_dps"] = 0,
 					["start_time"] = 1571170506,
 					["serial"] = "Creature-0-4470-1-183-3260-0000262725",
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [84]
 				{
 					["flag_original"] = 2632,
@@ -22997,18 +21503,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.001242,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001242,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1571170509,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Bristleback Hunter",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -23135,10 +21641,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["damage_taken"] = 0.001242,
+					["last_dps"] = 0,
 					["start_time"] = 1571170506,
 					["serial"] = "Creature-0-4470-1-183-3258-0000262689",
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [85]
 				{
 					["flag_original"] = 2632,
@@ -23151,18 +21657,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.00585,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.00585,
 					["serial"] = "Creature-0-4470-1-183-3267-000026295E",
-					["monster"] = true,
+					["fight_component"] = true,
 					["end_time"] = 1571170775,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.00585,
 					["nome"] = "Razormane Water Seeker",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -23259,10 +21764,11 @@ _detalhes_database = {
 					["total"] = 0.00585,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1571170772,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 				}, -- [86]
 				{
 					["flag_original"] = 68168,
@@ -23275,17 +21781,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.002707,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1571243246,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.002707,
+					["last_dps"] = 0,
 					["nome"] = "Burning Blade Acolyte",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -23438,11 +21945,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.002707,
 					["start_time"] = 1571243243,
 					["serial"] = "Creature-0-4468-1-414-3380-0002A66D78",
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [87]
 				{
 					["flag_original"] = 68168,
@@ -23455,17 +21961,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003572,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1571243246,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.003572,
+					["last_dps"] = 0,
 					["nome"] = "Burning Blade Bruiser",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -23534,11 +22041,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.003572,
 					["start_time"] = 1571243243,
 					["serial"] = "Creature-0-4468-1-414-3379-0000274452",
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [88]
 				{
 					["flag_original"] = 68168,
@@ -23553,17 +22059,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004376,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1571243246,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.004376,
+					["last_dps"] = 0,
 					["nome"] = "Venture Co. Peon",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -23636,11 +22143,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.004376,
 					["start_time"] = 1571243243,
 					["serial"] = "Creature-0-4468-1-414-3285-000027151F",
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [89]
 				{
 					["flag_original"] = 1298,
@@ -23929,17 +22435,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.00342,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1571243246,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.00342,
+					["last_dps"] = 0,
 					["nome"] = "Tinkerer Sniggles",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -23979,11 +22486,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.00342,
 					["start_time"] = 1571243243,
 					["serial"] = "Creature-0-4468-1-414-3471-00002742F4",
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [92]
 				{
 					["flag_original"] = -2147483648,
@@ -24004,7 +22510,7 @@ _detalhes_database = {
 					["dps_started"] = false,
 					["end_time"] = 1571254545,
 					["delay"] = 0,
-					["on_hold"] = false,
+					["damage_taken"] = 0.005208,
 					["nome"] = "Environment (Falling)",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -24039,13 +22545,13 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["total"] = 0.005208,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["last_event"] = 0,
-					["damage_taken"] = 0.005208,
+					["last_dps"] = 0,
 					["start_time"] = 1571254542,
 					["serial"] = "",
 					["fight_component"] = true,
@@ -24060,18 +22566,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.003822,
+					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003822,
 					["serial"] = "Creature-0-4468-1-414-3632-0000277469",
-					["monster"] = true,
+					["fight_component"] = true,
 					["end_time"] = 1571256422,
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.003822,
 					["nome"] = "Deviate Creeper",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -24139,10 +22644,11 @@ _detalhes_database = {
 					["total"] = 0.003822,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["start_time"] = 1571256419,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 				}, -- [94]
 				{
 					["flag_original"] = 68168,
@@ -24155,18 +22661,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.004564,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004564,
 					["serial"] = "Creature-0-4469-1-134-3286-000028BA27",
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1571339266,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Venture Co. Overseer",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -24236,10 +22742,10 @@ _detalhes_database = {
 					["total"] = 0.004564,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.004564,
+					["last_dps"] = 0,
 					["start_time"] = 1571339263,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [95]
 				{
 					["flag_original"] = 68168,
@@ -24254,18 +22760,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.005323,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005323,
 					["serial"] = "Creature-0-4469-1-134-3283-000028BA12",
-					["dps_started"] = false,
+					["monster"] = true,
 					["end_time"] = 1571339266,
 					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Venture Co. Enforcer",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -24390,11 +22896,113 @@ _detalhes_database = {
 					["total"] = 0.005323,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.005323,
+					["last_dps"] = 0,
 					["start_time"] = 1571339263,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [96]
+				{
+					["flag_original"] = 68136,
+					["totalabsorbed"] = 0.001406,
+					["damage_from"] = {
+					},
+					["targets"] = {
+					},
+					["pets"] = {
+					},
+					["last_event"] = 0,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.001406,
+					["fight_component"] = true,
+					["dps_started"] = false,
+					["end_time"] = 1571771176,
+					["serial"] = "Creature-0-4468-1-414-12296-00002F1A08",
+					["on_hold"] = false,
+					["nome"] = "Sickly Gazelle",
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 2,
+					},
+					["last_dps"] = 0,
+					["total"] = 0.001406,
+					["friendlyfire"] = {
+					},
+					["custom"] = 0,
+					["tipo"] = 1,
+					["damage_taken"] = 0.001406,
+					["start_time"] = 1571771173,
+					["delay"] = 0,
+					["friendlyfire_total"] = 0,
+				}, -- [97]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.006337,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Boar <Greenwise>"] = 0,
+					},
+					["pets"] = {
+					},
+					["dps_started"] = false,
+					["damage_taken"] = 0.006337,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.006337,
+					["serial"] = "Creature-0-4468-1-414-3243-00002D2709",
+					["monster"] = true,
+					["end_time"] = 1571771363,
+					["friendlyfire_total"] = 0,
+					["friendlyfire"] = {
+					},
+					["nome"] = "Savannah Highmane",
+					["spells"] = {
+						["_ActorTable"] = {
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Boar <Greenwise>"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["total"] = 0.006337,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1571771360,
+					["delay"] = 0,
+					["fight_component"] = true,
+				}, -- [98]
 			},
 		}, -- [1]
 		{
@@ -24416,15 +23024,15 @@ _detalhes_database = {
 					["iniciar_hps"] = false,
 					["healing_from"] = {
 					},
-					["classe"] = "HUNTER",
+					["healing_taken"] = 0.003539,
 					["totalover"] = 0.003539,
 					["total_without_pet"] = 0.003539,
 					["totalover_without_pet"] = 0.003539,
 					["start_time"] = 1570896469,
 					["fight_component"] = true,
 					["end_time"] = 1570896472,
+					["classe"] = "HUNTER",
 					["heal_enemy_amt"] = 0,
-					["healing_taken"] = 0.003539,
 					["nome"] = "Greenwise",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -24535,17 +23143,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["iniciar_hps"] = false,
+					["totalover_without_pet"] = 0.004433,
 					["healing_from"] = {
 					},
-					["healing_taken"] = 0.004433,
+					["heal_enemy_amt"] = 0,
 					["totalover"] = 0.004433,
 					["total_without_pet"] = 0.004433,
 					["start_time"] = 1570986454,
-					["totalover_without_pet"] = 0.004433,
+					["iniciar_hps"] = false,
 					["fight_component"] = true,
 					["total"] = 0.004433,
-					["heal_enemy_amt"] = 0,
+					["classe"] = "PET",
 					["delay"] = 0,
 					["nome"] = "Boar <Greenwise>",
 					["spells"] = {
@@ -24564,7 +23172,7 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["totaldenied"] = 0.004433,
 					["serial"] = "Pet-0-4470-1-183-3099-03001AB970",
-					["classe"] = "PET",
+					["healing_taken"] = 0.004433,
 				}, -- [2]
 				{
 					["flag_original"] = 1298,
@@ -25047,13 +23655,13 @@ _detalhes_database = {
 				{
 					["fight_component"] = true,
 					["nome"] = "Dire Mottled Boar",
-					["classe"] = "UNKNOW",
+					["last_event"] = 0,
 					["spell_cast"] = {
 						["Boar Charge"] = 0,
 					},
 					["flag_original"] = 68136,
-					["last_event"] = 0,
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
 					["serial"] = "Creature-0-4470-1-409-3099-0000221E3A",
 					["pets"] = {
 					},
@@ -25081,6 +23689,12 @@ _detalhes_database = {
 					["classe"] = "MAGE",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
+							["Frost Armor"] = {
+								["id"] = "Frost Armor",
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
 							["Arcane Intellect"] = {
 								["id"] = "Arcane Intellect",
 								["targets"] = {
@@ -25089,12 +23703,6 @@ _detalhes_database = {
 							},
 							["Drink"] = {
 								["id"] = "Drink",
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							["Frost Armor"] = {
-								["id"] = "Frost Armor",
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -25295,14 +23903,14 @@ _detalhes_database = {
 				{
 					["fight_component"] = true,
 					["nome"] = "Elder Mottled Boar",
-					["classe"] = "UNKNOW",
+					["last_event"] = 0,
 					["spell_cast"] = {
 						["Boar Charge"] = 0,
 					},
 					["pets"] = {
 					},
-					["last_event"] = 0,
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
 					["serial"] = "Creature-0-4468-1-190-3100-000022E434",
 					["flag_original"] = 68136,
 				}, -- [22]
@@ -25470,15 +24078,15 @@ _detalhes_database = {
 				{
 					["fight_component"] = true,
 					["nome"] = "Boar <Greenwise>",
-					["classe"] = "PET",
+					["last_event"] = 0,
 					["spell_cast"] = {
 						["Growl"] = 0,
 						["Charge"] = 0,
 						["Bite"] = 0,
 					},
 					["flag_original"] = 4369,
-					["last_event"] = 0,
 					["tipo"] = 4,
+					["classe"] = "PET",
 					["serial"] = "Pet-0-4469-1-416-3099-01001AB970",
 					["pets"] = {
 					},
@@ -25637,7 +24245,8 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["buff_uptime"] = 0,
+					["pets"] = {
+					},
 					["classe"] = "MAGE",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
@@ -25662,14 +24271,13 @@ _detalhes_database = {
 						["Arcane Explosion"] = 0,
 						["Fire Blast"] = 0,
 					},
-					["debuff_uptime_targets"] = {
-					},
+					["buff_uptime"] = 0,
 					["tipo"] = 4,
 					["nome"] = "Frozentusks",
-					["pets"] = {
-					},
-					["serial"] = "Player-4465-0142A44D",
 					["last_event"] = 0,
+					["serial"] = "Player-4465-0142A44D",
+					["debuff_uptime_targets"] = {
+					},
 				}, -- [42]
 				{
 					["flag_original"] = 1047,
@@ -25684,8 +24292,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["pets"] = {
-					},
+					["buff_uptime"] = 0,
 					["classe"] = "SHAMAN",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
@@ -25704,20 +24311,21 @@ _detalhes_database = {
 					["spec"] = 263,
 					["grupo"] = true,
 					["spell_cast"] = {
-						["Fire Nova Totem"] = 0,
-						["Healing Wave"] = 0,
-						["War Stomp"] = 0,
-						["Rockbiter Weapon"] = 0,
 						["Lightning Bolt"] = 0,
+						["Healing Wave"] = 0,
+						["Fire Nova Totem"] = 0,
+						["Rockbiter Weapon"] = 0,
+						["War Stomp"] = 0,
 						["Earth Shock"] = 0,
 					},
-					["last_event"] = 0,
+					["pets"] = {
+					},
 					["tipo"] = 4,
 					["nome"] = "Sidz",
-					["buff_uptime"] = 0,
-					["serial"] = "Player-4465-014140DD",
 					["debuff_uptime_targets"] = {
 					},
+					["serial"] = "Player-4465-014140DD",
+					["last_event"] = 0,
 				}, -- [43]
 				{
 					["flag_original"] = 1047,
@@ -25744,7 +24352,8 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["buff_uptime"] = 0,
+					["pets"] = {
+					},
 					["classe"] = "MAGE",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
@@ -25800,14 +24409,13 @@ _detalhes_database = {
 						["Arcane Explosion"] = 0,
 						["Fire Blast"] = 0,
 					},
-					["debuff_uptime_targets"] = {
-					},
+					["buff_uptime"] = 0,
 					["tipo"] = 4,
 					["nome"] = "Mërlín",
-					["pets"] = {
-					},
-					["serial"] = "Player-4465-013F574B",
 					["last_event"] = 0,
+					["serial"] = "Player-4465-013F574B",
+					["debuff_uptime_targets"] = {
+					},
 				}, -- [44]
 				{
 					["flag_original"] = 1298,
@@ -25834,8 +24442,8 @@ _detalhes_database = {
 					["grupo"] = true,
 					["pets"] = {
 					},
-					["classe"] = "WARRIOR",
 					["last_event"] = 0,
+					["tipo"] = 4,
 					["debuff_uptime_targets"] = {
 					},
 					["spell_cast"] = {
@@ -25845,7 +24453,7 @@ _detalhes_database = {
 						["Heroic Strike"] = 0,
 					},
 					["serial"] = "Player-4465-0142A207",
-					["tipo"] = 4,
+					["classe"] = "WARRIOR",
 				}, -- [45]
 				{
 					["monster"] = true,
@@ -26048,7 +24656,8 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["buff_uptime"] = 0,
+					["pets"] = {
+					},
 					["classe"] = "WARRIOR",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
@@ -26069,15 +24678,14 @@ _detalhes_database = {
 						["Battle Shout"] = 0,
 						["Rend"] = 0,
 					},
-					["pets"] = {
+					["debuff_uptime_targets"] = {
 					},
 					["last_event"] = 0,
 					["buff_uptime_targets"] = {
 					},
-					["debuff_uptime_targets"] = {
-					},
-					["serial"] = "Player-4465-0002FFD1",
 					["tipo"] = 4,
+					["serial"] = "Player-4465-0002FFD1",
+					["buff_uptime"] = 0,
 				}, -- [58]
 				{
 					["flag_original"] = 1298,
@@ -26086,14 +24694,14 @@ _detalhes_database = {
 					["grupo"] = true,
 					["pets"] = {
 					},
+					["last_event"] = 0,
+					["tipo"] = 4,
 					["spell_cast"] = {
 						["Sinister Strike"] = 0,
 						["Eviscerate"] = 0,
 					},
-					["classe"] = "ROGUE",
-					["tipo"] = 4,
 					["serial"] = "Player-4465-013476A3",
-					["last_event"] = 0,
+					["classe"] = "ROGUE",
 				}, -- [59]
 				{
 					["monster"] = true,
@@ -26210,7 +24818,7 @@ _detalhes_database = {
 			}, -- [4]
 		},
 	},
-	["combat_counter"] = 1075,
+	["combat_counter"] = 1115,
 	["announce_firsthit"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
@@ -26232,5 +24840,6 @@ _detalhes_database = {
 		["channel"] = "SELF",
 	},
 	["cached_specs"] = {
+		["Player-4465-012659A9"] = 0,
 	},
 }

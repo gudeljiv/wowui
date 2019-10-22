@@ -28,23 +28,23 @@ EavesDropDB = {
 		},
 		["Verminz - Golemagg"] = {
 			["LINEWIDTH"] = 100,
-			["x"] = 536.000144269463,
-			["FONT"] = "Arial Narrow",
-			["TEXTSIZE"] = 12,
 			["LOCKED"] = true,
+			["TOOLTIPSANCHOR"] = "Left",
+			["y"] = -3.73324210405553,
+			["x"] = 536.000144269463,
+			["TEXTSIZE"] = 12,
+			["FONT"] = "Arial Narrow",
 			["NUMLINES"] = 14,
 			["SCROLLBUTTON"] = true,
 			["HIDETAB"] = true,
-			["TOOLTIPSANCHOR"] = "Left",
-			["y"] = -3.73324210405553,
 		},
 		["Pitchwise - Golemagg"] = {
 		},
 		["Elohssa - Stonespine"] = {
 		},
-		["Korupcija - Stonespine"] = {
+		["Kosturko - Golemagg"] = {
 		},
-		["Greenwise - Golemagg"] = {
+		["Korupcija - Stonespine"] = {
 		},
 		["Paydo - Dreadmist"] = {
 			["LINEWIDTH"] = 130,
@@ -65,28 +65,28 @@ EavesDropDB = {
 				["a"] = 0.4,
 			},
 		},
-		["Kosturko - Golemagg"] = {
+		["Greenwise - Golemagg"] = {
 		},
 		["Pitchwise - Genesis"] = {
 		},
 		["Default"] = {
-			["LINEWIDTH"] = 130,
 			["BORDER"] = {
 				["a"] = 0,
 				["b"] = 0.607843137254902,
 				["g"] = 0.607843137254902,
 				["r"] = 0.607843137254902,
 			},
-			["y"] = 236.195578993564,
+			["LINEWIDTH"] = 130,
 			["x"] = 551.714104134467,
+			["TEXTSIZE"] = 13,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
-			["TEXTSIZE"] = 13,
 			["SCROLLBUTTON"] = true,
-			["HIDETAB"] = true,
 			["LINEHEIGHT"] = 16,
+			["HIDETAB"] = true,
 			["NUMLINES"] = 16,
+			["y"] = 236.195578993564,
 		},
 		["Judawise - Golemagg"] = {
 		},

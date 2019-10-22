@@ -1,3 +1,26 @@
+### 1.13.40
+
+- Many long buffs should show duration now even when not casted player
+- Not resetting timers on Hunter deaths
+
+### 1.13.37
+
+- bugfix for infinite auras
+
+### 1.13.36
+
+- Kidney, Cheap Shot, Scatter DR changes
+- Indefinite duration buffs like Stances and Paladin's Auras now should appear in enemy buffs
+- Mind Blast and Scorch damage no longer refresh Vulnerability if debuff was resisted
+
+### 1.13.35
+
+- Long CC PvP durations set to 20s.
+
+### 1.13.34
+
+- Improved Blizzard timer
+
 ### 1.13.33
 
 - Arcane Brilliance duration is 60m now

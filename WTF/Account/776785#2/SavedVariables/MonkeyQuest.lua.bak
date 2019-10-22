@@ -5,8 +5,8 @@ MonkeyQuestConfig = {
 			["Desolace - true"] = {
 				["m_bChecked"] = false,
 			},
-			["The Vile Reef - false"] = {
-				["m_bChecked"] = true,
+			["Thousand Needles - true"] = {
+				["m_bChecked"] = false,
 			},
 			["Wanted - Arnak Grimtotem - false"] = {
 				["m_bChecked"] = true,
@@ -14,16 +14,13 @@ MonkeyQuestConfig = {
 			["The Swarm Grows - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Wind Rider - false"] = {
+			["Headhunting - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Stranglethorn Vale - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Cyclonian - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Bloody Bone Necklaces - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Warrior - true"] = {
@@ -35,14 +32,8 @@ MonkeyQuestConfig = {
 			["Split Bone Necklace - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Hunt for Yenniku - false"] = {
-				["m_bChecked"] = true,
-			},
 			["The Barrens - true"] = {
 				["m_bChecked"] = false,
-			},
-			["Headhunting - false"] = {
-				["m_bChecked"] = true,
 			},
 			["Alien Egg - false"] = {
 				["m_bChecked"] = true,
@@ -50,13 +41,13 @@ MonkeyQuestConfig = {
 			["Brutal Armor - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Orgrimmar - true"] = {
-				["m_bChecked"] = false,
+			["Wind Rider - false"] = {
+				["m_bChecked"] = true,
 			},
 			["Pacify the Centaur - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Thousand Needles - true"] = {
+			["Orgrimmar - true"] = {
 				["m_bChecked"] = false,
 			},
 			["Regthar Deathgate - false"] = {
@@ -589,7 +580,7 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = true,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 715.233215332031,
+		["m_iFrameBottom"] = 512.733276367188,
 		["m_bHideTitleButtons"] = false,
 		["m_iFrameLeft"] = 1670.73352050781,
 		["m_bColourDoneOrFailed"] = true,
@@ -933,37 +924,22 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Greenwise"] = {
 		["m_aQuestList"] = {
-			["Wailing Caverns - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Hezrul Bloodmark - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Egg Hunt - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Ziz Fizziks - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Trouble at the Docks - false"] = {
-				["m_bChecked"] = true,
-			},
 			["Miner's Fortune - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Hidden Enemies - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Mura Runetotem - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Warsong Reports - false"] = {
+			["The Guns of Northwatch - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Smart Drinks - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Report to Kadrak - false"] = {
+			["Hezrul Bloodmark - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Jorn Skyseer - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Tribes at War - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Deepmoss Spider Eggs - false"] = {
@@ -972,25 +948,25 @@ MonkeyQuestConfig = {
 			["The Barrens - true"] = {
 				["m_bChecked"] = true,
 			},
-			["The Guns of Northwatch - false"] = {
+			["Wailing Caverns - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Nugget Slugs - false"] = {
+			["Egg Hunt - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Jorn Skyseer - false"] = {
+			["Ziz Fizziks - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Hamuul Runetotem - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Ragefire Chasm - true"] = {
+			["Trouble at the Docks - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Letter to Jin'Zil - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Tribes at War - false"] = {
+			["Mura Runetotem - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -1048,13 +1024,13 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Vermin"] = {
 		["m_aQuestList"] = {
-			["Zalazane - false"] = {
+			["Durotar - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Thwarting Kolkar Aggression - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Minshina's Skull - false"] = {
+			["Zalazane - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Practical Prey - false"] = {
@@ -1063,7 +1039,7 @@ MonkeyQuestConfig = {
 			["Report to Orgnil - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Durotar - true"] = {
+			["Minshina's Skull - false"] = {
 				["m_bChecked"] = true,
 			},
 			["A Peon's Burden - false"] = {

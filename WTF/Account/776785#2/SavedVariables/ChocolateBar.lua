@@ -26,7 +26,30 @@ ChocolateBarDB = {
 	["addonVersion"] = "@project-version@",
 	["profiles"] = {
 		["Default"] = {
-			["locked"] = false,
+			["barSettings"] = {
+				["ChocolateBar1"] = {
+					["barPoint"] = "TOPRIGHT",
+					["align"] = "custom",
+					["width"] = 147.000030517578,
+					["autohide"] = false,
+					["barOffy"] = -207.589706420898,
+					["hideBarInCombat"] = false,
+					["barOffx"] = -31.9219512939453,
+				},
+				["ChocolateBar2"] = {
+					["barOffy"] = -256.666748046875,
+					["barPoint"] = "TOPRIGHT",
+					["barName"] = "ChocolateBar2",
+					["align"] = "custom",
+					["barOffx"] = -88.3325424194336,
+					["index"] = 1,
+					["width"] = 147,
+				},
+			},
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -37,11 +60,10 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
-			["forceColor"] = false,
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
 			},
-			["moveFrames"] = false,
 			["objSettings"] = {
 				["Skada"] = {
 					["enabled"] = false,
@@ -219,36 +241,14 @@ ChocolateBarDB = {
 				},
 			},
 			["gap"] = 5,
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
-			},
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["fixedStrata"] = true,
+			["desaturated"] = false,
+			["moveFrames"] = false,
 			["fontName"] = "Friz Quadrata TT",
 			["textOffset"] = 2,
 			["height"] = 20,
-			["desaturated"] = false,
-			["barSettings"] = {
-				["ChocolateBar1"] = {
-					["barPoint"] = "TOPRIGHT",
-					["align"] = "custom",
-					["width"] = 147.000030517578,
-					["autohide"] = false,
-					["barOffy"] = -207.589706420898,
-					["hideBarInCombat"] = false,
-					["barOffx"] = -31.9219512939453,
-				},
-				["ChocolateBar2"] = {
-					["barOffy"] = -256.666748046875,
-					["barPoint"] = "TOPRIGHT",
-					["barName"] = "ChocolateBar2",
-					["align"] = "custom",
-					["barOffx"] = -88.3325424194336,
-					["index"] = 1,
-					["width"] = 147,
-				},
-			},
+			["forceColor"] = false,
+			["locked"] = false,
 			["textColor"] = {
 				["a"] = 1,
 				["r"] = 1,
@@ -260,7 +260,7 @@ ChocolateBarDB = {
 }
 CB_PlayedTime = {
 	["Greenwise-"] = {
-		["total"] = 75943,
+		["total"] = 78243,
 	},
 	["Whatevs-"] = {
 		["total"] = 213,
