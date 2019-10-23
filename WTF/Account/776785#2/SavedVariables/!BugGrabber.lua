@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 654,
 	["lastSanitation"] = 3,
+	["session"] = 655,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVerminz\\Experience.lua:7: bad argument #1 to 'select' (index out of range)",
@@ -133,8 +133,8 @@ BugGrabberDB = {
 		}, -- [16]
 		{
 			["message"] = "(null)",
-			["session"] = 650,
 			["time"] = "2019/10/23 13:37:53",
+			["session"] = 650,
 			["counter"] = 26,
 		}, -- [17]
 	},

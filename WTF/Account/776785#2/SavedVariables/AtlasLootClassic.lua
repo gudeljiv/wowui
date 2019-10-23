@@ -1,5 +1,8 @@
 
 AtlasLootClassicDB = {
+	["global"] = {
+		["__addonrevision"] = 1010009,
+	},
 	["profileKeys"] = {
 		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
 		["Pitchwise - Golemagg"] = "Pitchwise - Golemagg",
@@ -12,9 +15,6 @@ AtlasLootClassicDB = {
 		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
 		["Ozrencic - Golemagg"] = "Ozrencic - Golemagg",
 		["Whatevs - Stonespine"] = "Default",
-	},
-	["global"] = {
-		["__addonrevision"] = 1010009,
 	},
 	["profiles"] = {
 		["Dotwise - Golemagg"] = {
@@ -30,6 +30,10 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Verminz - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -39,16 +43,8 @@ AtlasLootClassicDB = {
 					0, -- [5]
 				},
 			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 		},
 		["Paydo - Dreadmist"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 			["GUI"] = {
 				["point"] = {
 					nil, -- [1]
@@ -65,12 +61,12 @@ AtlasLootClassicDB = {
 					0, -- [5]
 				},
 			},
-		},
-		["Korupcija - Stonespine"] = {
 			["minimap"] = {
 				["shown"] = false,
 				["hide"] = true,
 			},
+		},
+		["Korupcija - Stonespine"] = {
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -79,6 +75,10 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 		},
 		["Elohssa - Stonespine"] = {
@@ -96,10 +96,6 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Kosturko - Golemagg"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -108,13 +104,13 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 		},
 		["Greenwise - Golemagg"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -123,6 +119,10 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 		},
 		["Ozrencic - Golemagg"] = {
