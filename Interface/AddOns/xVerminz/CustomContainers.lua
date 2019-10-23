@@ -14,8 +14,7 @@ cc_combat:SetWidth(110)
 cc_combat:SetHeight(20)
 cc_combat:SetPoint("LEFT", cc, "LEFT", 0, 0)
 cc_combat:SetBackdrop({ 
-	-- bgFile = "Interface\\Tooltips\\UI-Tooltip-Background", 
-	bgFile = "Interface\\Buttons\\WHITE8x8", 
+	bgFile = config.background.white,
 	edgeFile = "", tile = false, tileSize = 0, edgeSize = 0, 
 	insets = { left = 0, right = 0, top = 0, bottom = 0 }
 });
@@ -89,7 +88,7 @@ cc1:SetWidth(154)
 cc1:SetHeight(30)
 cc1:SetPoint("LEFT", cc, "LEFT", 0, 0)
 cc1:SetBackdrop({ 
-	bgFile = "Interface\\Buttons\\WHITE8x8", 
+	bgFile = config.background.white,
 	edgeFile = "", tile = false, tileSize = 0, edgeSize = 0, 
 	insets = { left = 0, right = 0, top = 0, bottom = 0 }
 });
@@ -111,7 +110,7 @@ cc2:SetWidth(154)
 cc2:SetHeight(30)
 cc2:SetPoint("LEFT", cc, "LEFT", 0, 0)
 cc2:SetBackdrop({ 
-	bgFile = "Interface\\Buttons\\WHITE8x8", 
+	bgFile = config.background.white,
 	edgeFile = "", tile = false, tileSize = 0, edgeSize = 0, 
 	insets = { left = 0, right = 0, top = 0, bottom = 0 }
 });

@@ -24,7 +24,6 @@ frame:SetScript("OnEvent", function(self, event, ...)
 )
 
 
-local font = "Interface\\AddOns\\xVerminz\\media\\fontAtari.ttf"
 RAID_CLASS_COLORS["SHAMAN"] = {r = 050 / 255, g = 111 / 255, b = 255 / 255, colorStr = "ff326fff"}
 
 local f = CreateFrame("Frame")
@@ -179,10 +178,10 @@ f:SetScript("OnEvent", function()
 	MainMenuBarExpText:SetPoint("RIGHT", MainMenuExpBar, "RIGHT", -10, 2)
 
 	PetFrame:HookScript("OnUpdate", function(self)
-		PetFrameHealthBarText:SetFont(font, 10, 'THINOUTLINE')
+		PetFrameHealthBarText:SetFont(config.font.atari, 10, 'THINOUTLINE')
 		PetFrameHealthBarText:SetPoint("TOPRIGHT", PetFrameHealthBar, "TOPRIGHT", 0, 2)
 		PetFrameHealthBarText.SetPoint = function() end
-		PetFrameManaBarText:SetFont(font, 10, 'THINOUTLINE')
+		PetFrameManaBarText:SetFont(config.font.atari, 10, 'THINOUTLINE')
 		PetFrameManaBarText:SetPoint("TOPRIGHT", PetFrameManaBar, "TOPRIGHT", 0, 0)
 		PetFrameManaBarText.SetPoint = function() end
 
@@ -203,9 +202,6 @@ f:SetScript("OnEvent", function()
 
 end)
 f:RegisterEvent("PLAYER_ENTERING_WORLD")
-
-
-
 
 
 -- local tooltipOnEnter = function(self, event)

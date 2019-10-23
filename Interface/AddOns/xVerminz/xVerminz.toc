@@ -3,6 +3,7 @@
 ## Author: Verminz
 ## Version: 54000
 
+Config.lua
 AutoCarrot.lua
 AutoBuyAmmo.lua
 AutoDismount.lua

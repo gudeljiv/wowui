@@ -3,28 +3,24 @@
 -- ADD BORDER TO BUFFS AND DEBUFFS ON TARGET FRAME
 -------------------------------------------
 
-DebuffTypeColor = { };
-DebuffTypeColor["none"]		= { r = 0.80, g = 0, b = 0 };
-DebuffTypeColor["Magic"]	= { r = 0.20, g = 0.60, b = 1.00 };
-DebuffTypeColor["Curse"]	= { r = 0.60, g = 0.00, b = 1.00 };
-DebuffTypeColor["Disease"]	= { r = 0.60, g = 0.40, b = 0 };
-DebuffTypeColor["Poison"]	= { r = 0.00, g = 0.60, b = 0 };
-DebuffTypeColor[""]			= DebuffTypeColor["none"];
-
-borderBuff = "Interface\\AddOns\\xVerminz\\media\\textureOverlay"
-borderDebuff = "Interface\\AddOns\\xVerminz\\media\\textureDebuff"
-font = "Interface\\AddOns\\xVerminz\\media\\fontAtari.ttf"
+local ReplacedDebuffTypeColor = { };
+ReplacedDebuffTypeColor["none"]		= { r = 0.80, g = 0, b = 0 };
+ReplacedDebuffTypeColor["Magic"]	= { r = 0.20, g = 0.60, b = 1.00 };
+ReplacedDebuffTypeColor["Curse"]	= { r = 0.60, g = 0.00, b = 1.00 };
+ReplacedDebuffTypeColor["Disease"]	= { r = 0.60, g = 0.40, b = 0 };
+ReplacedDebuffTypeColor["Poison"]	= { r = 0.00, g = 0.60, b = 0 };
+ReplacedDebuffTypeColor[""]			= ReplacedDebuffTypeColor["none"];
 
 local function SkinTarget()
 	if TargetFrame:IsShown() then
-		numBuffs = 0
+		local numBuffs = 0
 		for i=1, MAX_TARGET_BUFFS do
 			if( select(3, UnitBuff("target", i)) ) then
 				numBuffs = numBuffs + 1
 			end
 		end
 
-		numDebuffs = 0
+		local numDebuffs = 0
 		for i=1, MAX_TARGET_DEBUFFS do
 			if( select(3, UnitDebuff("target", i)) ) then
 				numDebuffs = numDebuffs + 1
@@ -38,14 +34,14 @@ local function SkinTarget()
 			if (frameBorder~=nil) then frameBorder:Hide() end
 			
 			if (frameCount~=nil) then
-				frameCount:SetFont(font, 10, 'THINOUTLINE')
-				frameCount:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", 0, 2)
+				frameCount:SetFont(config.font.atari, config.buff.fontsize, config.buff.outline)
+				frameCount:SetPoint(unpack(config.buff.position))
 			end
 
 			if (frame~=nil) then
-				frame:CreateBeautyBorder(6)
-				frame:SetBeautyBorderTexture(borderBuff)
-				frame:SetScale(1.3);
+				frame:CreateBeautyBorder(config.buff.bordersize)
+				frame:SetBeautyBorderTexture(config.border.buff)
+				frame:SetScale(config.buff.scale);
 			end
 		end
 
@@ -53,24 +49,26 @@ local function SkinTarget()
 			local frame = _G["TargetFrameDebuff"..i]
 			local frameBorder = _G["TargetFrameDebuff"..i.."Border"];
 			local frameCount = _G["TargetFrameDebuff"..i.."Count"];
+			local color
+
 			if (frameBorder~=nil) then frameBorder:Hide() end
 
 			if (frameCount~=nil) then
-				frameCount:SetFont(font, 10, 'THINOUTLINE')
-				frameCount:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", 0, 2)
+				frameCount:SetFont(config.font.atari, config.debuff.fontsize, config.debuff.outline)
+				frameCount:SetPoint(unpack(config.debuff.position))
 			end
 
 			if ( select(4, UnitDebuff("target", i)) ) then
-				color = DebuffTypeColor[select(4, UnitDebuff("target", i))];
+				color = config.ReplacedDebuffTypeColor[select(4, UnitDebuff("target", i))];
 			else
-				color = DebuffTypeColor["none"];
+				color = config.ReplacedDebuffTypeColor["none"];
 			end
 
 			if (frame~=nil) then
-				frame:CreateBeautyBorder(6)
-				frame:SetBeautyBorderTexture(borderDebuff)
+				frame:CreateBeautyBorder(config.debuff.bordersize)
+				frame:SetBeautyBorderTexture(config.border.debuff)
 				frame:SetBeautyBorderColor(color.r, color.g, color.b)
-				frame:SetScale(1.3);
+				frame:SetScale(config.buff.scale);
 			end
 		end
 	end
@@ -78,14 +76,14 @@ end
 
 local function SkinPet()
 	if PetFrame:IsShown() then
-		numBuffs = 0
+		local numBuffs = 0
 		for i=1, MAX_TARGET_BUFFS do
 			if( select(3, UnitBuff("pet", i)) ) then
 				numBuffs = numBuffs + 1
 			end
 		end
 
-		numDebuffs = 0
+		local numDebuffs = 0
 		for i=1, MAX_TARGET_BUFFS do
 			if( select(3, UnitDebuff("pet", i)) ) then
 				numDebuffs = numDebuffs + 1
@@ -99,13 +97,13 @@ local function SkinPet()
 			if (frameBorder~=nil) then frameBorder:Hide() end
 			
 			if (frameCount~=nil) then
-				frameCount:SetFont(font, 10, 'THINOUTLINE')
-				frameCount:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", 0, 2)
+				frameCount:SetFont(config.font.atari, config.petbuff.fontsize, config.petbuff.outline)
+				frameCount:SetPoint(unpack(config.petbuff.position))
 			end
 
 			if (frame~=nil) then
-				frame:CreateBeautyBorder(4)
-				frame:SetBeautyBorderTexture(borderBuff)
+				frame:CreateBeautyBorder(config.petbuff.bordersize)
+				frame:SetBeautyBorderTexture(config.border.buff)
 			end
 		end
 
@@ -113,22 +111,24 @@ local function SkinPet()
 			local frame = _G["PetFrameDebuff"..i]
 			local frameBorder = _G["PetFrameDebuff"..i.."Border"];
 			local frameCount = _G["PetFrameBuff"..i.."Count"];
+			local color
+
 			if (frameBorder~=nil) then frameBorder:Hide() end
 			
 			if (frameCount~=nil) then
-				frameCount:SetFont(font, 10, 'THINOUTLINE')
-				frameCount:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", 0, 2)
+				frameCount:SetFont(config.font.atari, config.petdebuff.fontsize, config.petdebuff.outline)
+				frameCount:SetPoint(unpack(config.petdebuff.position))
 			end
 
 			if ( select(4, UnitDebuff("pet", i)) ) then
-				color = DebuffTypeColor[select(4, UnitDebuff("target", i))];
+				color = config.ReplacedDebuffTypeColor[select(4, UnitDebuff("target", i))];
 			else
-				color = DebuffTypeColor["none"];
+				color = config.ReplacedDebuffTypeColor["none"];
 			end
 
 			if (frame~=nil) then
-				frame:CreateBeautyBorder(4)
-				frame:SetBeautyBorderTexture(borderDebuff)
+				frame:CreateBeautyBorder(config.petdebuff.bordersize)
+				frame:SetBeautyBorderTexture(config.border.debuff)
 				frame:SetBeautyBorderColor(color.r, color.g, color.b)
 			end
 		end

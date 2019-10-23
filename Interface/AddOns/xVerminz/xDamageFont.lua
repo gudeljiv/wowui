@@ -1,9 +1,8 @@
 
 xDamageFont = CreateFrame("Frame", "xDamageFont");
-local damagefont_FONT_NUMBER = "Interface\\AddOns\\xVerminz\\media\\damagefont.ttf";
 
 function xDamageFont:ApplySystemFonts()
-	DAMAGE_TEXT_FONT = damagefont_FONT_NUMBER;
+	DAMAGE_TEXT_FONT = config.font.damage;
 end
 
 xDamageFont:SetScript("OnEvent", function() 

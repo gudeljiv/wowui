@@ -1,22 +1,21 @@
 
 OmniCC4Config = {
-	["groups"] = {
-		{
-			["id"] = "Ignore",
-			["rules"] = {
-				"LossOfControl", -- [1]
-				"TotemFrame", -- [2]
-			},
-			["enabled"] = true,
-		}, -- [1]
-	},
-	["engine"] = "AniUpdater",
 	["groupSettings"] = {
 		["base"] = {
 			["enabled"] = true,
 			["fontSize"] = 18,
-			["fontFace"] = "Fonts\\ARIALN.TTF",
+			["scaleText"] = true,
 			["effect"] = "pulse",
+			["minDuration"] = 2,
+			["minEffectDuration"] = 30,
+			["anchor"] = "CENTER",
+			["spiralOpacity"] = 1.00999997742474,
+			["yOff"] = 0,
+			["xOff"] = 0,
+			["tenthsDuration"] = 0,
+			["fontOutline"] = "OUTLINE",
+			["minSize"] = 0.5,
+			["mmSSDuration"] = 0,
 			["styles"] = {
 				["seconds"] = {
 					["a"] = 1,
@@ -57,17 +56,7 @@ OmniCC4Config = {
 					["scale"] = 1.20000004768372,
 				},
 			},
-			["mmSSDuration"] = 0,
-			["minSize"] = 0.5,
-			["spiralOpacity"] = 1.00999997742474,
-			["scaleText"] = true,
-			["xOff"] = 0,
-			["tenthsDuration"] = 0,
-			["fontOutline"] = "OUTLINE",
-			["anchor"] = "CENTER",
-			["minEffectDuration"] = 30,
-			["yOff"] = 0,
-			["minDuration"] = 2,
+			["fontFace"] = "Fonts\\ARIALN.TTF",
 		},
 		["Ignore"] = {
 			["enabled"] = false,
@@ -110,21 +99,32 @@ OmniCC4Config = {
 				["controlled"] = {
 				},
 			},
-			["minDuration"] = 3,
+			["fontSize"] = 18,
 			["effect"] = "pulse",
-			["yOff"] = 0,
-			["minEffectDuration"] = 30,
-			["anchor"] = "CENTER",
+			["fontFace"] = "Fonts\\FRIZQT__.TTF",
+			["mmSSDuration"] = 0,
+			["minSize"] = 0.5,
 			["spiralOpacity"] = 1,
 			["scaleText"] = true,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
-			["minSize"] = 0.5,
-			["mmSSDuration"] = 0,
-			["fontFace"] = "Fonts\\FRIZQT__.TTF",
-			["fontSize"] = 18,
+			["anchor"] = "CENTER",
+			["minEffectDuration"] = 30,
+			["yOff"] = 0,
+			["minDuration"] = 3,
 		},
 	},
 	["version"] = "8.1.1",
+	["engine"] = "AniUpdater",
+	["groups"] = {
+		{
+			["id"] = "Ignore",
+			["rules"] = {
+				"LossOfControl", -- [1]
+				"TotemFrame", -- [2]
+			},
+			["enabled"] = true,
+		}, -- [1]
+	},
 }

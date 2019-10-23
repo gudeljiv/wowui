@@ -1,5 +1,4 @@
 
-local font = "Interface\\AddOns\\xVerminz\\media\\fontAtari.ttf"
 -----------------------------------------------------------------------------------------------------------------------------
 -- Unit (Player) state
 -----------------------------------------------------------------------------------------------------------------------------
@@ -8,7 +7,7 @@ cus:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 2)
 cus:SetWidth(1) 
 cus:SetHeight(1)
 cus.text = cus:CreateFontString(nil,"ARTWORK") 
-cus.text:SetFont(font, 11, "NONE")
+cus.text:SetFont(config.font.atari, 11, "NONE")
 cus.text:SetPoint("LEFT", CustomContainer_Combat, "LEFT", 3, 2)
 
 PlayerFrame:HookScript("OnUpdate", function ()
@@ -31,7 +30,7 @@ if class == "HUNTER" or class == "WARRIOR" then
 	ac:SetWidth(1)
 	ac:SetHeight(1)
 	ac.text = ac:CreateFontString(nil,"ARTWORK")
-	ac.text:SetFont(font, 11, "NONE")
+	ac.text:SetFont(config.font.atari, 11, "NONE")
 	ac.text:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 2)
 
 	PlayerFrame:HookScript("OnUpdate", function ()

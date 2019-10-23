@@ -1,5 +1,4 @@
 --local font = "Interface\\AddOns\\xVerminz\\media\\fontAtari.ttf"
-local font = "Fonts\\ARIALN.ttf"
 local _, class, _ = UnitClass("player");
 local r,g,b
 
@@ -27,7 +26,7 @@ if class == "HUNTER" then
     PetExpFrame.text = PetExpFrame:CreateFontString(nil,"ARTWORK")
     PetExpFrame.text:SetJustifyH("LEFT")
     PetExpFrame.text:SetJustifyV("TOP")
-    PetExpFrame.text:SetFont(font, 12)
+    PetExpFrame.text:SetFont(config.font.arial, 12)
     PetExpFrame.text:SetShadowOffset(1, -1)
     PetExpFrame.text:SetTextColor(1, 1, 1, 1)
     PetExpFrame.text:SetPoint("LEFT", PetExpFrame, "LEFT", 0, 0)
@@ -43,7 +42,7 @@ PlayerExpFrame:SetPoint("BOTTOMLEFT", ChatFrame1, "BOTTOMRIGHT", 5, 10)
 PlayerExpFrame.text = PlayerExpFrame:CreateFontString(nil,"ARTWORK")
 PlayerExpFrame.text:SetJustifyH("LEFT")
 PlayerExpFrame.text:SetJustifyV("TOP")
-PlayerExpFrame.text:SetFont(font, 12)
+PlayerExpFrame.text:SetFont(config.font.arial, 12)
 PlayerExpFrame.text:SetShadowOffset(1, -1)
 PlayerExpFrame.text:SetTextColor(1, 1, 1, 1)
 PlayerExpFrame.text:SetPoint("LEFT", PlayerExpFrame, "LEFT", 0, 0)
