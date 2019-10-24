@@ -2142,18 +2142,18 @@ QuestieConfig = {
 				[6070] = true,
 				[890] = true,
 				[1492] = true,
-				[3087] = true,
+				[834] = true,
 				[827] = true,
 				[835] = true,
 				[6394] = true,
 				[851] = true,
-				[834] = true,
+				[3087] = true,
 				[867] = true,
 				[875] = true,
 				[6068] = true,
-				[788] = true,
-				[899] = true,
 				[6069] = true,
+				[899] = true,
+				[788] = true,
 				[6081] = true,
 				[3911] = true,
 				[6082] = true,
@@ -7170,9 +7170,9 @@ QuestieConfig = {
 					["SubType"] = "Abandon",
 				}, -- [403]
 			},
-			["TrackedQuests"] = {
-			},
 			["TrackerHiddenObjectives"] = {
+			},
+			["TrackedQuests"] = {
 			},
 			["TrackerHiddenQuests"] = {
 			},

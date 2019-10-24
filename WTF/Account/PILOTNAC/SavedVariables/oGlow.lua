@@ -25,8 +25,8 @@ oGlowDB = {
 		["merchant"] = true,
 		["bank"] = true,
 	},
-	["FilterSettings"] = {
-	},
 	["Colors"] = {
+	},
+	["FilterSettings"] = {
 	},
 }

@@ -4,7 +4,7 @@ VER 3 0000000000000008 " " "132089"
 END
 VER 3 0000000000000006 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
+/use [nocombat]item:4791
 /castsequence [combat]item:3385,item:3385,item:3385
 END
 VER 3 0000000000000005 "Food" "Inv_misc_questionmark"

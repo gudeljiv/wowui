@@ -530,13 +530,13 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Vermin"] = {
 		["m_aQuestList"] = {
-			["Zalazane - false"] = {
+			["Minshina's Skull - false"] = {
 				["m_bChecked"] = true,
 			},
 			["A Peon's Burden - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Minshina's Skull - false"] = {
+			["Durotar - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Practical Prey - false"] = {
@@ -545,7 +545,7 @@ MonkeyQuestConfig = {
 			["Report to Orgnil - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Durotar - true"] = {
+			["Zalazane - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Thwarting Kolkar Aggression - false"] = {

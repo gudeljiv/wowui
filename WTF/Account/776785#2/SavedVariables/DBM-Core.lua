@@ -105,7 +105,7 @@ DBM_AllSavedOptions = {
 		["SpecialWarningFontSize2"] = 36,
 		["HideTooltips"] = false,
 		["SWarnClassColor"] = true,
-		["DisableCinematics"] = false,
+		["DontShowSpecialWarningText"] = false,
 		["RangeFrameSound2"] = "none",
 		["ShowLHFrame"] = true,
 		["DontShowReminders"] = false,
@@ -194,18 +194,18 @@ DBM_AllSavedOptions = {
 		["RoleSpecAlert"] = true,
 		["WhisperStats"] = true,
 		["VoiceOverSpecW2"] = "DefaultOnly",
-		["RangeFrameLocked"] = false,
+		["ShowAdvSWSound"] = true,
 		["DontPlayPTCountdown"] = false,
 		["SpecialWarningFlashAlph5"] = 0.5,
 		["SpecialWarningDuration2"] = 1.5,
 		["HealthFrameWidth"] = 275,
-		["RangeFrameSound1"] = "none",
-		["WarningIconLeft"] = true,
 		["SpecialWarningFontColor"] = {
 			0, -- [1]
 			0, -- [2]
 			1, -- [3]
 		},
+		["WarningIconLeft"] = true,
+		["RangeFrameSound1"] = "none",
 		["HPFrameY"] = 9.28495722690528,
 		["WarningFontSize"] = 20,
 		["EventSoundVictory2"] = "None",
@@ -222,9 +222,9 @@ DBM_AllSavedOptions = {
 		["UseRetailShamanColor"] = false,
 		["SpecialWarningFlashRepeat4"] = false,
 		["DontShowNameplateIcons"] = false,
+		["CountdownVoice3"] = "Smooth",
 		["SpecialWarningFlashRepeat2"] = false,
 		["DontShowUserTimers"] = false,
-		["CountdownVoice3"] = "Smooth",
 		["SpecialWarningFlashRepeat5"] = true,
 		["DisableStatusWhisper"] = false,
 		["EventDungMusicMythicFilter"] = true,
@@ -233,7 +233,7 @@ DBM_AllSavedOptions = {
 		["DontPlayCountdowns"] = false,
 		["ShowBigBrotherOnCombatStart"] = false,
 		["SpecialWarningIcon"] = true,
-		["ShowAdvSWSound"] = true,
+		["RangeFrameLocked"] = false,
 		["SpecialWarningFlashAlph1"] = 0.3,
 		["ShowDefeatMessage"] = true,
 		["FilterTankSpec"] = true,
@@ -261,12 +261,12 @@ DBM_AllSavedOptions = {
 		["ShowPizzaMessage"] = true,
 		["AdvancedAutologBosses"] = false,
 		["SpecialWarningFlashRepeat1"] = false,
-		["DontShowSpecialWarningText"] = false,
 		["SpecialWarningFlashCol5"] = {
 			0.2, -- [1]
 			1, -- [2]
 			1, -- [3]
 		},
+		["DisableCinematics"] = false,
 		["Enabled"] = true,
 		["DontRestoreIcons"] = false,
 		["AFKHealthWarning"] = false,

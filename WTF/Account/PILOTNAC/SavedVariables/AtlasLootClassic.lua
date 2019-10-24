@@ -1,10 +1,10 @@
 
 AtlasLootClassicDB = {
-	["profileKeys"] = {
-		["Konac - Golemagg"] = "Konac - Golemagg",
-	},
 	["global"] = {
 		["__addonrevision"] = 1010009,
+	},
+	["profileKeys"] = {
+		["Konac - Golemagg"] = "Konac - Golemagg",
 	},
 	["profiles"] = {
 		["Konac - Golemagg"] = {

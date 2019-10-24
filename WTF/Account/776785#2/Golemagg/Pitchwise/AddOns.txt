@@ -198,7 +198,7 @@ Dominos: disabled
 Plater: disabled
 Dominos_Progress: disabled
 AbyssUIClassic: disabled
-Aptechka: disabled
+Aptechka: enabled
 QuestGuru: enabled
 QuestGuruSounds: disabled
 BaudMark: disabled

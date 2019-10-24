@@ -42,9 +42,9 @@ EavesDropDB = {
 		},
 		["Elohssa - Stonespine"] = {
 		},
-		["Kosturko - Golemagg"] = {
-		},
 		["Korupcija - Stonespine"] = {
+		},
+		["Greenwise - Golemagg"] = {
 		},
 		["Paydo - Dreadmist"] = {
 			["LINEWIDTH"] = 130,
@@ -65,7 +65,7 @@ EavesDropDB = {
 				["a"] = 0.4,
 			},
 		},
-		["Greenwise - Golemagg"] = {
+		["Kosturko - Golemagg"] = {
 		},
 		["Pitchwise - Genesis"] = {
 		},
@@ -79,14 +79,14 @@ EavesDropDB = {
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
+			["SCROLLBUTTON"] = true,
+			["TEXTSIZE"] = 13,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
-			["TEXTSIZE"] = 13,
-			["NUMLINES"] = 16,
 			["HIDETAB"] = true,
 			["LINEHEIGHT"] = 16,
-			["SCROLLBUTTON"] = true,
+			["NUMLINES"] = 16,
 		},
 		["Judawise - Golemagg"] = {
 		},

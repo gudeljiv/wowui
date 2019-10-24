@@ -2,13 +2,13 @@
 AUCTIONATOR_SAVEDVARS = {
 	["_50000"] = 500,
 	["_2000"] = 100,
-	["_500"] = 5,
-	["STARTING_DISCOUNT"] = 5,
+	["_5000000"] = 10000,
+	["_200000"] = 1000,
 	["_1000000"] = 2500,
 	["_10000"] = 200,
+	["_500"] = 5,
 	["LOG_DE_DATA_X"] = true,
-	["_200000"] = 1000,
-	["_5000000"] = 10000,
+	["STARTING_DISCOUNT"] = 5,
 }
 AUCTIONATOR_PRICING_HISTORY = {
 }
@@ -40,8 +40,8 @@ AUCTIONATOR_LAST_SCAN_TIME = nil
 AUCTIONATOR_TOONS = {
 	["Konac"] = {
 		["firstSeen"] = 1570363514,
-		["firstVersion"] = "8.1.0",
 		["guid"] = "Player-4465-00C4D96C",
+		["firstVersion"] = "8.1.0",
 	},
 }
 AUCTIONATOR_STACKING_PREFS = {

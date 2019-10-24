@@ -3,7 +3,7 @@ DugisGuideViewerZ: disabled
 BiSTracker: disabled
 Auctionator: enabled
 nMainbar: enabled
-Aptechka: disabled
+Aptechka: enabled
 !Colorz: enabled
 !Beautycase: enabled
 Align: enabled

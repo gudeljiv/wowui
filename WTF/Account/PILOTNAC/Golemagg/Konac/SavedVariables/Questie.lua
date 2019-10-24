@@ -1,2 +1,3 @@
 
-QuestieConfigCharacter = nil
+QuestieConfigCharacter = {
+}
