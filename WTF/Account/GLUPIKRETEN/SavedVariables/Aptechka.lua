@@ -1,6 +1,6 @@
 
 AptechkaDB_Global = {
-	["healthOrientation"] = "HORIZONTAL",
+	["showSolo"] = false,
 	["nameFontName"] = "Accidental Presidency",
 	["disableTooltip"] = true,
 	["healthTexture"] = "Glamour2",
@@ -23,7 +23,7 @@ AptechkaDB_Global = {
 			["point"] = "CENTER",
 		}, -- [1]
 	},
-	["showSolo"] = false,
+	["healthOrientation"] = "HORIZONTAL",
 	["cropNamesLen"] = 15,
 	["nameFontSize"] = 16,
 	["unitGrowth"] = "BOTTOM",

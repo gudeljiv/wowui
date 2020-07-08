@@ -1,7 +1,3 @@
-SLASH_BINDINGS1 = "/fix_bindings"
-SLASH_BINDINGS2 = "/fb"
-SlashCmdList["BINDINGS"] = FixBindings
-
 local function FixBindings()
 	SetBinding("A", "STRAFELEFT")
 	SetBinding("D", "STRAFERIGHT")
@@ -122,6 +118,10 @@ local function FixBindings()
 	SetBinding("ALT-MOUSEWHEELDOWN", "CLICK BT4Button112:LeftButton")
 end
 
-local f = CreateFrame("Frame")
-f:SetScript("OnEvent", FixBindings())
-f:RegisterEvent("PLAYER_LOGIN")
+-- local f = CreateFrame("Frame")
+-- f:SetScript("OnEvent", FixBindings())
+-- f:RegisterEvent("PLAYER_ENTERING_WORLD")
+
+SLASH_BINDINGS1 = "/fix_bindings"
+SLASH_BINDINGS2 = "/fb"
+SlashCmdList["BINDINGS"] = FixBindings
