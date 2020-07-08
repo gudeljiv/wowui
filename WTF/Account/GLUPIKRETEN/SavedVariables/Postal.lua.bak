@@ -37,6 +37,11 @@ Postal3ClassicDB = {
 		["Greenwise - Golemagg"] = {
 		},
 		["Vermin - Golemagg"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Kamenac|Golemagg|Horde", -- [1]
+				},
+			},
 		},
 	},
 }

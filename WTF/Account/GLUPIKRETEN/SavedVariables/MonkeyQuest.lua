@@ -296,13 +296,13 @@ MonkeyQuestConfig = {
 			["Deathknell - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Hallowed Scroll - false"] = {
+			["Rude Awakening - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Rattling the Rattlecages - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Rude Awakening - false"] = {
+			["Hallowed Scroll - false"] = {
 				["m_bChecked"] = true,
 			},
 			["The Mindless Ones - false"] = {
@@ -428,29 +428,6 @@ MonkeyQuestConfig = {
 			},
 		},
 	},
-	["Dreadmist|Paydo"] = {
-		["m_aQuestList"] = {
-			["Cutting Teeth - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Vile Familiars - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Sarkoth - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Lazy Peons - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Valley of Trials - true"] = {
-				["m_bChecked"] = true,
-			},
-		},
-	},
-	["Golemagg|Judawise"] = {
-		["m_aQuestList"] = {
-		},
-	},
 	["Dreadmist|Vermins"] = {
 		["m_iFont"] = 0,
 		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
@@ -468,19 +445,19 @@ MonkeyQuestConfig = {
 		["m_bShowZoneHighlight"] = true,
 		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
 		["m_aQuestList"] = {
-			["Break a Few Eggs - false"] = {
+			["Durotar - true"] = {
 				["m_bChecked"] = true,
 			},
 			["From The Wreckage.... - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Durotar - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Vanquish the Betrayers - false"] = {
+			["Break a Few Eggs - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Encroachment - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Vanquish the Betrayers - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -517,7 +494,30 @@ MonkeyQuestConfig = {
 		["m_bAlwaysHeaders"] = false,
 		["m_bGrowUp"] = false,
 	},
-	["Genesis|Spija"] = {
+	["Golemagg|Judawise"] = {
+		["m_aQuestList"] = {
+		},
+	},
+	["Dreadmist|Paydo"] = {
+		["m_aQuestList"] = {
+			["Cutting Teeth - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Vile Familiars - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Sarkoth - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Lazy Peons - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Valley of Trials - true"] = {
+				["m_bChecked"] = true,
+			},
+		},
+	},
+	["Genesis|Lonatz"] = {
 		["m_iFont"] = 0,
 		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
 		["m_strSpecialObjectiveColour"] = "|cFFFFFF00",
@@ -1055,7 +1055,7 @@ MonkeyQuestConfig = {
 		["m_aQuestList"] = {
 		},
 	},
-	["Genesis|Lonatz"] = {
+	["Genesis|Spija"] = {
 		["m_iFont"] = 0,
 		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
 		["m_strSpecialObjectiveColour"] = "|cFFFFFF00",
