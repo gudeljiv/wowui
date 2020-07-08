@@ -21,7 +21,7 @@
 -   [Demonly-FP](https://www.wowinterface.com/downloads/info25273-DemonlysFlightMasterMap.html)
 -   [Details](https://www.wowinterface.com/downloads/info25068-DetailsDamageMeterClassic.html)
 -   [EavesDrop](https://www.curseforge.com/wow/addons/eavesdropclassic/files) (modified in order to skin with BeautyCase)
--   [FollowMePls](https://github.com/techiew/FollowMePls) (Automatically follow group members who whisper you "!follow".)
+-   [FollowMePls](https://github.com/techiew/FollowMePls) (automatically follow group members who whisper you "!follow".)
 -   [gmMoney](https://www.wowinterface.com/downloads/info16245-gMoney.html)
 -   [InFlight](https://www.wowinterface.com/downloads/info25202-InFlightClassic.html) (modified in order to skin with BeautyCase)
 -   [Leatrix_Maps](https://www.curseforge.com/wow/addons/leatrix-maps-classic)
