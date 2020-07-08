@@ -1,4 +1,3 @@
-
 function RepositionLootFrames()
 	-- if not _G["LootRollMoverAnchor_Frame"] then return end
 	-- if not LRMDB then return end
@@ -8,7 +7,7 @@ function RepositionLootFrames()
 	-- frame:CreateBeautyBorder(8)
 	frame:SetScale(0.8)
 
-	for i=1, NUM_GROUP_LOOT_FRAMES do
+	for i = 1, NUM_GROUP_LOOT_FRAMES do
 		frame = _G["GroupLootFrame" .. i]
 		if i == 1 then
 			if frame and CanAccessObject(frame) then
@@ -20,7 +19,7 @@ function RepositionLootFrames()
 		elseif i > 1 then
 			if frame and CanAccessObject(frame) then
 				frame:ClearAllPoints()
-				frame:SetPoint("BOTTOM", "GroupLootFrame" .. (i-1), "TOP", 0, 5)
+				frame:SetPoint("BOTTOM", "GroupLootFrame" .. (i - 1), "TOP", 0, 5)
 				-- frame:CreateBeautyBorder(8)
 				frame:SetScale(0.8)
 			end

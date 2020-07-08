@@ -13,37 +13,44 @@ cc_combat = CreateFrame("Frame", "CustomContainer_Combat", cc)
 cc_combat:SetWidth(110)
 cc_combat:SetHeight(20)
 cc_combat:SetPoint("LEFT", cc, "LEFT", 0, 0)
-cc_combat:SetBackdrop({ 
-	bgFile = config.background.white,
-	edgeFile = "", tile = false, tileSize = 0, edgeSize = 0, 
-	insets = { left = 0, right = 0, top = 0, bottom = 0 }
-});
-cc_combat:SetBackdropColor(0,0,0,0.4);
-cc_combat:Show();
+cc_combat:SetBackdrop(
+	{
+		bgFile = config.background.white,
+		edgeFile = "",
+		tile = false,
+		tileSize = 0,
+		edgeSize = 0,
+		insets = {left = 0, right = 0, top = 0, bottom = 0}
+	}
+)
+cc_combat:SetBackdropColor(0, 0, 0, 0.4)
+cc_combat:Show()
 cc_combat:SetFrameStrata("BACKGROUND")
 cc_combat:CreateBeautyBorder(6)
 
 local f = CreateFrame("Frame")
 f:RegisterEvent("PLAYER_REGEN_DISABLED")
 f:RegisterEvent("PLAYER_REGEN_ENABLED")
-f:SetScript("OnEvent", function(self, event, ...)
-	if event == "PLAYER_REGEN_DISABLED" then
-		cc_combat:SetBackdropColor(color.r,color.g,color.b,0.8);
+f:SetScript(
+	"OnEvent",
+	function(self, event, ...)
+		if event == "PLAYER_REGEN_DISABLED" then
+			cc_combat:SetBackdropColor(color.r, color.g, color.b, 0.8)
+		end
+		if event == "PLAYER_REGEN_ENABLED" then
+			cc_combat:SetBackdropColor(0, 0, 0, 0.4)
+		end
 	end
-	if event == "PLAYER_REGEN_ENABLED" then
-		cc_combat:SetBackdropColor(0,0,0,0.4);
-	end
-end)
-
+)
 
 -- cc_inrange = CreateFrame("Frame", "CustomContainer_InRange", cc)
 -- cc_inrange:SetWidth(10)
 -- cc_inrange:SetHeight(10)
 -- cc_inrange:SetPoint("LEFT", CustomContainer_Combat, "LEFT", 5, 0)
--- cc_inrange:SetBackdrop({ 
--- 	-- bgFile = "Interface\\Tooltips\\UI-Tooltip-Background", 
--- 	bgFile = "Interface\\Buttons\\WHITE8x8", 
--- 	edgeFile = "", tile = false, tileSize = 0, edgeSize = 0, 
+-- cc_inrange:SetBackdrop({
+-- 	-- bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
+-- 	bgFile = "Interface\\Buttons\\WHITE8x8",
+-- 	edgeFile = "", tile = false, tileSize = 0, edgeSize = 0,
 -- 	insets = { left = 0, right = 0, top = 0, bottom = 0 }
 -- });
 -- cc_inrange:SetBackdropColor(0,0,0,0.4);
@@ -59,7 +66,7 @@ end)
 -- 	if(UnitCanAttack("player","target") and not UnitIsDeadOrGhost("target")) then
 -- 		local playerClass, englishClass = UnitClass("player")
 -- 		local spell = "";
-		
+
 -- 		if(englishClass == "WARLOCK") then spell = "Immolate" end
 -- 		if(englishClass == "WARRIOR") then spell = "Charge" end
 
@@ -87,13 +94,18 @@ cc1 = CreateFrame("Frame", "CustomContainer_1", cc)
 cc1:SetWidth(154)
 cc1:SetHeight(30)
 cc1:SetPoint("LEFT", cc, "LEFT", 0, 0)
-cc1:SetBackdrop({ 
-	bgFile = config.background.white,
-	edgeFile = "", tile = false, tileSize = 0, edgeSize = 0, 
-	insets = { left = 0, right = 0, top = 0, bottom = 0 }
-});
-cc1:SetBackdropColor(0,0,0,0.4);
-cc1:Show();
+cc1:SetBackdrop(
+	{
+		bgFile = config.background.white,
+		edgeFile = "",
+		tile = false,
+		tileSize = 0,
+		edgeSize = 0,
+		insets = {left = 0, right = 0, top = 0, bottom = 0}
+	}
+)
+cc1:SetBackdropColor(0, 0, 0, 0.4)
+cc1:Show()
 cc1:SetFrameStrata("BACKGROUND")
 cc1:CreateBeautyBorder(8)
 
@@ -109,12 +121,17 @@ cc2 = CreateFrame("Frame", "CustomContainer_2", cc)
 cc2:SetWidth(154)
 cc2:SetHeight(30)
 cc2:SetPoint("LEFT", cc, "LEFT", 0, 0)
-cc2:SetBackdrop({ 
-	bgFile = config.background.white,
-	edgeFile = "", tile = false, tileSize = 0, edgeSize = 0, 
-	insets = { left = 0, right = 0, top = 0, bottom = 0 }
-});
-cc2:SetBackdropColor(0,0,0,0.4);
-cc2:Show();
+cc2:SetBackdrop(
+	{
+		bgFile = config.background.white,
+		edgeFile = "",
+		tile = false,
+		tileSize = 0,
+		edgeSize = 0,
+		insets = {left = 0, right = 0, top = 0, bottom = 0}
+	}
+)
+cc2:SetBackdropColor(0, 0, 0, 0.4)
+cc2:Show()
 cc2:SetFrameStrata("BACKGROUND")
 cc2:CreateBeautyBorder(8)

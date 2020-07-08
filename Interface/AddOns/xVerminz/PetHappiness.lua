@@ -9,9 +9,8 @@ PetHappinessFrame.Icon:SetAllPoints(PetHappinessFrame)
 PetHappinessFrame:Hide()
 
 local function InitializePetHappiness()
-
-	local _, class, _ = UnitClass("player");
-	if(class ~= "HUNTER") then
+	local _, class, _ = UnitClass("player")
+	if (class ~= "HUNTER") then
 		return
 	end
 
@@ -21,7 +20,7 @@ local function InitializePetHappiness()
 	if happiness and not UnitIsDead("pet") and UnitExists("pet") then
 		local happy = ({"Unhappy", "Content", "Happy"})[happiness]
 		local loyalty = loyaltyRate > 0 and "gaining" or "losing"
-		if(happiness ~= 3) then
+		if (happiness ~= 3) then
 			PetHappinessFrame:Show()
 			PetHappinessFrame.Icon:SetTexture([[Interface\PetPaperDollFrame\UI-PetHappiness]])
 			if (happiness == 1) then
@@ -37,7 +36,6 @@ local function InitializePetHappiness()
 	else
 		PetHappinessFrame:Hide()
 	end
-
 end
 
 local f = CreateFrame("Frame")
@@ -53,4 +51,3 @@ f:SetScript("OnEvent", InitializePetHappiness)
 
 --PetFrame:HookScript("OnShow", InitializePetHappiness)
 --PetFrame:HookScript("OnUpdate", InitializePetHappiness)
-

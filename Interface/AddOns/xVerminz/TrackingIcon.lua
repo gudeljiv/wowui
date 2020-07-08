@@ -9,7 +9,7 @@ TrackingIconFrame.Icon:SetAllPoints(TrackingIconFrame)
 TrackingIconFrame:Hide()
 
 local function TrackingIconMinerals()
-	if(not GetTrackingTexture()) then
+	if (not GetTrackingTexture()) then
 		TrackingIconFrame:Show()
 		TrackingIconFrame.Icon:SetTexture("Interface\\Icons\\spell_nature_earthquake")
 	else
@@ -18,7 +18,7 @@ local function TrackingIconMinerals()
 end
 
 local function TrackingIconHerbs()
-	if(not GetTrackingTexture()) then
+	if (not GetTrackingTexture()) then
 		TrackingIconFrame:Show()
 		TrackingIconFrame.Icon:SetTexture("Interface\\Icons\\inv_misc_flower_02")
 	else
@@ -28,16 +28,16 @@ end
 
 local function InitializeTracking()
 	local tabName, tabTexture, tabOffset, numEntries = GetSpellTabInfo(1)
-	for i=tabOffset + 1, tabOffset + numEntries do
+	for i = tabOffset + 1, tabOffset + numEntries do
 		local spellName, spellSubName = GetSpellBookItemName(i, BOOKTYPE_SPELL)
-		if(spellName == "Find Minerals") then
-			TrackingIconFrame:RegisterUnitEvent("UNIT_AURA","player")
+		if (spellName == "Find Minerals") then
+			TrackingIconFrame:RegisterUnitEvent("UNIT_AURA", "player")
 			TrackingIconFrame:SetScript("OnEvent", TrackingIconMinerals)
 			TrackingIconMinerals()
 		end
 
-		if(spellName == "Find Herbs") then
-			TrackingIconFrame:RegisterUnitEvent("UNIT_AURA","player")
+		if (spellName == "Find Herbs") then
+			TrackingIconFrame:RegisterUnitEvent("UNIT_AURA", "player")
 			TrackingIconFrame:SetScript("OnEvent", TrackingIconHerbs)
 			TrackingIconHerbs()
 		end
@@ -47,4 +47,3 @@ end
 local f = CreateFrame("Frame")
 f:RegisterEvent("PLAYER_ENTERING_WORLD")
 f:SetScript("OnEvent", InitializeTracking)
-

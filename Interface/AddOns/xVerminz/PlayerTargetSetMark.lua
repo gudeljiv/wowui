@@ -1,13 +1,14 @@
 local type = 8
 
 local function clear_mark()
-	if(not UnitInParty("player")) then
-		for i=1,9 do SetRaidTarget("player",i) end
+	if (not UnitInParty("player")) then
+		for i = 1, 9 do
+			SetRaidTarget("player", i)
+		end
 	end
-
 end
 local function set_mark()
-    clear_mark()
+	clear_mark()
 
 	local faction = "nil"
 	if TargetFrame:IsShown() then
@@ -17,7 +18,7 @@ local function set_mark()
 			--if(UnitInParty("player") and UnitIsGroupLeader("player")) then
 			--	SetRaidTarget("target", type)
 			--else
-			if(not UnitInParty("player")) then
+			if (not UnitInParty("player")) then
 				SetRaidTarget("target", type)
 			end
 		end
