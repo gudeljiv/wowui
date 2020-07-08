@@ -135,7 +135,7 @@
 				<Anchors>
 					<Anchor point="TOPLEFT" relativeTo="MonkeyQuestTitleButton" relativePoint="BOTTOMLEFT">
 						<Offset>
-							<AbsDimension x="0" y="-2"/>
+							<AbsDimension x="0" y="-10"/>
 						</Offset>
 					</Anchor>
 				</Anchors>

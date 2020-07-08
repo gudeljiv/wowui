@@ -583,9 +583,7 @@ function MonkeyQuest_Refresh(MBDaily)
 							MonkeyQuestConfig[MonkeyQuest.m_global].m_bShowHidden == true or
 							MonkeyQuestConfig[MonkeyQuest.m_global].m_bAlwaysHeaders == true) then
 
-							strMonkeyQuestBody = strMonkeyQuestBody .. 
-								format(MonkeyQuestConfig[MonkeyQuest.m_global].m_strHeaderOpenColour .. "%s|r",
-									"- " .. strQuestLogTitleText) .. "\n";
+							strMonkeyQuestBody = strMonkeyQuestBody .. format(MonkeyQuestConfig[MonkeyQuest.m_global].m_strHeaderOpenColour .. "%s|r", "- " .. strQuestLogTitleText) .. "\n";
 								
 							_G["MonkeyQuestButton" .. iButtonId .. "Text"]:SetText(strMonkeyQuestBody);
 							_G["MonkeyQuestButton" .. iButtonId .. "Text"]:Show();

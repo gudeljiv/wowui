@@ -272,8 +272,8 @@ GnomishVendorShrinker: disabled
 TradeSkillMaster_AppHelper: enabled
 ZygorGuidesViewerClassic: disabled
 DugisGuideViewerZ: disabled
-!BugGrabber: disabled
-BugSack: disabled
+!BugGrabber: enabled
+BugSack: enabled
 ClassicAuraDurations: enabled
 ClassicCastbars: enabled
 ClassicCastbars_Options: enabled
@@ -284,3 +284,4 @@ TomTom: enabled
 WeaponSwingTimer: enabled
 nHealth: enabled
 Bagnon_VoidStorage: disabled
+FollowMePls: enabled

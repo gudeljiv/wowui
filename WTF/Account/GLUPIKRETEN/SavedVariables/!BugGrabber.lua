@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 660,
+	["session"] = 672,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -138,12 +138,59 @@ BugGrabberDB = {
 			["counter"] = 26,
 		}, -- [17]
 		{
+			["message"] = "...\\TradeSkillMaster\\Core\\Lib\\Inventory\\BagTracking.lua:389: Unexpected bag: -2",
+			["time"] = "2020/07/08 18:50:31",
+			["locals"] = "(*temporary) = \"Unexpected bag: -2\"\n",
+			["stack"] = "[C]: in function `error'\n...\\TradeSkillMaster\\Core\\Lib\\Inventory\\BagTracking.lua:389: in function `callback'\n...nterface\\AddOns\\TradeSkillMaster\\Core\\Util\\Event.lua:37: in function `ProcessEvent'\n...nterface\\AddOns\\TradeSkillMaster\\Core\\Util\\Event.lua:53: in function <...nterface\\AddOns\\TradeSkillMaster\\Core\\Util\\Event.lua:45>",
+			["session"] = 661,
+			["counter"] = 1,
+		}, -- [18]
+		{
+			["message"] = "...nterface\\AddOns\\TradeSkillMaster\\Core\\Util\\Event.lua:49: assertion failed!",
+			["time"] = "2020/07/08 18:50:31",
+			["locals"] = "(*temporary) = false\n",
+			["stack"] = "[C]: in function `assert'\n...nterface\\AddOns\\TradeSkillMaster\\Core\\Util\\Event.lua:49: in function <...nterface\\AddOns\\TradeSkillMaster\\Core\\Util\\Event.lua:45>",
+			["session"] = 661,
+			["counter"] = 20,
+		}, -- [19]
+		{
+			["message"] = "Interface\\AddOns\\TradeSkillMaster\\Core\\Util\\Util.lua:456: Could not acquire temp table",
+			["time"] = "2020/07/08 18:50:32",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"Could not acquire temp table\"\n",
+			["stack"] = "[C]: in function `assert'\nInterface\\AddOns\\TradeSkillMaster\\Core\\Util\\Util.lua:456: in function `AcquireTempTable'\n...nterface\\AddOns\\TradeSkillMaster\\Core\\Util\\Event.lua:48: in function <...nterface\\AddOns\\TradeSkillMaster\\Core\\Util\\Event.lua:45>",
+			["session"] = 661,
+			["counter"] = 218,
+		}, -- [20]
+		{
+			["message"] = "[string \"print(\">\", GetSubZone(), \"<\")\"]:1: attempt to call global 'GetSubZone' (a nil value)",
+			["time"] = "2020/07/08 18:55:35",
+			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = \">\"\n(*temporary) = nil\n(*temporary) = \"attempt to call global 'GetSubZone' (a nil value)\"\n",
+			["stack"] = "[string \"print(\">\", GetSubZone(), \"<\")\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 662,
+			["counter"] = 1,
+		}, -- [21]
+		{
+			["message"] = "...face\\AddOns\\Questie\\Modules\\Network\\QuestieComms.lua:388: attempt to compare number with string",
+			["time"] = "2020/07/08 19:51:26",
+			["stack"] = "...face\\AddOns\\Questie\\Modules\\Network\\QuestieComms.lua:388: in function <...face\\AddOns\\Questie\\Modules\\Network\\QuestieComms.lua:373>\n[C]: ?\n...hka\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:29: in function <...hka\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n...hka\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:64: in function `Fire'\n...face\\AddOns\\BugSack\\Libs\\AceComm-3.0\\AceComm-3.0-12.lua:264: in function <...face\\AddOns\\BugSack\\Libs\\AceComm-3.0\\AceComm-3.0.lua:246>",
+			["session"] = 672,
+			["counter"] = 1,
+		}, -- [22]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn '!Colorz' tried to call the protected function 'CompactRaidFrame2:ClearAllPoints()'.",
+			["time"] = "2020/07/08 19:52:13",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `ClearAllPoints'\nInterface\\FrameXML\\FlowContainer.lua:157: in function `FlowContainer_DoLayout'\nInterface\\FrameXML\\FlowContainer.lua:17: in function `FlowContainer_ResumeUpdates'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:185: in function `CompactRaidFrameContainer_LayoutFrames'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:130: in function `CompactRaidFrameContainer_TryUpdate'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:57: in function `CompactRaidFrameContainer_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
+			["session"] = 672,
+			["counter"] = 1,
+		}, -- [23]
+		{
 			["message"] = "...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: Usage: CreateFrame(\"frameType\" [, \"name\"] [, parent] [, \"template\"] [, id])",
 			["time"] = "2020/07/07 16:56:37",
 			["locals"] = "(*temporary) = \"Button\"\n(*temporary) = \"NivayaSlot1\"\n(*temporary) = \"ItemButtonTemplate\"\n(*temporary) = \"ContainerFrameItemButtonTemplate\"\n",
 			["stack"] = "[C]: in function `CreateFrame'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: in function `Create'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:56: in function `New'\nInterface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:762: in function <Interface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:757>",
-			["session"] = 660,
-			["counter"] = 1,
-		}, -- [18]
+			["session"] = 672,
+			["counter"] = 14,
+		}, -- [24]
 	},
 }

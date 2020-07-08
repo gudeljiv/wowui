@@ -4547,7 +4547,7 @@ QuestieConfig = {
 				[6386] = true,
 				[891] = true,
 				[5041] = true,
-				[804] = true,
+				[6384] = true,
 				[6641] = true,
 				[581] = true,
 				[541] = true,
@@ -4555,7 +4555,7 @@ QuestieConfig = {
 				[216] = true,
 				[892] = true,
 				[924] = true,
-				[1094] = true,
+				[549] = true,
 				[1060] = true,
 				[4542] = true,
 				[5726] = true,
@@ -4614,12 +4614,12 @@ QuestieConfig = {
 				[6381] = true,
 				[6382] = true,
 				[5730] = true,
-				[549] = true,
+				[1094] = true,
 				[6385] = true,
 				[868] = true,
 				[900] = true,
 				[1095] = true,
-				[6384] = true,
+				[804] = true,
 				[499] = true,
 				[5881] = true,
 				[805] = true,
@@ -4644,6 +4644,7 @@ QuestieConfig = {
 			},
 			["complete"] = {
 				[818] = true,
+				[834] = true,
 				[788] = true,
 				[804] = true,
 				[789] = true,
@@ -4659,11 +4660,11 @@ QuestieConfig = {
 				[4641] = true,
 				[4402] = true,
 				[784] = true,
-				[792] = true,
-				[3911] = true,
-				[794] = true,
-				[817] = true,
 				[2383] = true,
+				[3911] = true,
+				[792] = true,
+				[817] = true,
+				[794] = true,
 			},
 			["journey"] = {
 				{
@@ -5216,6 +5217,60 @@ QuestieConfig = {
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
 				}, -- [61]
+				{
+					["Timestamp"] = 1594213097,
+					["Party"] = {
+						{
+							["Class"] = "Hunter",
+							["Name"] = "Mohikanac",
+							["Level"] = 5,
+						}, -- [1]
+					},
+					["Event"] = "Level",
+					["NewLevel"] = 9,
+				}, -- [62]
+				{
+					["Party"] = {
+						{
+							["Class"] = "Hunter",
+							["Name"] = "Mohikanac",
+							["Level"] = 5,
+						}, -- [1]
+					},
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
+					["Level"] = 9,
+					["Quest"] = 806,
+					["Timestamp"] = 1594213234,
+				}, -- [63]
+				{
+					["Party"] = {
+						{
+							["Class"] = "Hunter",
+							["Name"] = "Mohikanac",
+							["Level"] = 5,
+						}, -- [1]
+					},
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+					["Level"] = 9,
+					["Quest"] = 834,
+					["Timestamp"] = 1594213321,
+				}, -- [64]
+				{
+					["Party"] = {
+						{
+							["Class"] = "Hunter",
+							["Name"] = "Mohikanac",
+							["Level"] = 5,
+						}, -- [1]
+					},
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+					["Level"] = 9,
+					["Quest"] = 835,
+					["Timestamp"] = 1594213324,
+				}, -- [65]
 			},
 			["TrackerHiddenObjectives"] = {
 			},

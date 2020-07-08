@@ -3032,25 +3032,14 @@ EavesDropStatsDB = {
 		["Vermin - Golemagg"] = {
 			{
 				["hit"] = {
-					["Heroic Strike"] = {
+					["Thunder Clap"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/08/20 02:54:34|r\n|Hunit:Player-4465-00E5831F:Vermin|hVermin's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffHeroic Strike|r|h hits |Hunit:Creature-0-4447-1-291-3115-000005B455:Dustwind Harpy|hDustwind Harpy|h for |cffffffff52|r |cffffffffPhysical|r.",
-							["amount"] = 52,
-						},
-						[2] = {
-							["time"] = "|cffffffff07/08/20 02:54:00|r\n|Hunit:Player-4465-00E5831F:Vermin|hVermin's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffHeroic Strike|r|h hits |Hunit:Creature-0-4447-1-291-3115-000005B4C3:Dustwind Harpy|hDustwind Harpy|h for |cffffffff97|r |cffffffffPhysical|r.(9 Overkill) (Critical)",
-							["amount"] = 106,
-						},
-						["icon"] = 132282,
-					},
-					["Rend"] = {
-						[-2] = {
-							["time"] = "|cffffffff07/07/20 05:03:03|r\n|Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-1-1-3125-0000046FA8:Clattering Scorpid|hClattering Scorpid|h suffers |cffffffff5|r |cffffffffPhysical|r damage from |Hunit:Player-4465-00E5831F:Vermin|hVermin's|h |Hspell:0:0:SPELL_PERIODIC_DAMAGE|h|cffffffffRend|r|h.",
-							["amount"] = 5,
+							["time"] = "|cffffffff07/08/20 04:42:13|r\n|Hunit:Player-4465-00E5831F:Vermin|hVermin's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffThunder Clap|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4447-1-291-3117-000085DA8E:Dustwind Savage|hDustwind Savage|h for |cffffffff9|r |cffffffffPhysical|r.",
+							["amount"] = 9,
 						},
 						[2] = {
 						},
-						["icon"] = 132155,
+						["icon"] = 136105,
 					},
 					["Hamstring"] = {
 						[-2] = {
@@ -3063,20 +3052,40 @@ EavesDropStatsDB = {
 					},
 					["Melee Attack"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/08/20 02:54:08|r\n|Hunit:Player-4465-00E5831F:Vermin|hVermin's|h melee swing hits |Hunit:Creature-0-4447-1-291-3115-000005B4F2:Dustwind Harpy|hDustwind Harpy|h for |cffffffff37|r |cffffffffPhysical|r.",
-							["amount"] = 37,
+							["time"] = "|cffffffff07/08/20 07:24:12|r\n|Hunit:Player-4465-00E5831F:Vermin|hVermin's|h melee swing hits |Hunit:Creature-0-4447-1-291-3111-000005F889:Razormane Quilboar|hRazormane Quilboar|h for |cffffffff46|r |cffffffffPhysical|r.",
+							["amount"] = 46,
 						},
 						[2] = {
-							["time"] = "|cffffffff07/08/20 02:59:44|r\n|Hunit:Player-4465-00E5831F:Vermin|hVermin's|h melee swing hits |Hunit:Creature-0-4447-1-291-3116-000005B574:Dustwind Pillager|hDustwind Pillager|h for |cffffffff48|r |cffffffffPhysical|r.(15 Overkill) (Critical)",
-							["amount"] = 63,
+							["time"] = "|cffffffff07/08/20 07:32:40|r\n|Hunit:Player-4465-00E5831F:Vermin|hVermin's|h melee swing hits |Hunit:Creature-0-4447-1-291-3129-00000601AD:Kul Tiras Marine|hKul Tiras Marine|h for |cffffffff10|r |cffffffffPhysical|r.(70 Overkill) (Critical)",
+							["amount"] = 80,
 						},
+					},
+					["Rend"] = {
+						[-2] = {
+							["time"] = "|cffffffff07/07/20 05:03:03|r\n|Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-1-1-3125-0000046FA8:Clattering Scorpid|hClattering Scorpid|h suffers |cffffffff5|r |cffffffffPhysical|r damage from |Hunit:Player-4465-00E5831F:Vermin|hVermin's|h |Hspell:0:0:SPELL_PERIODIC_DAMAGE|h|cffffffffRend|r|h.",
+							["amount"] = 5,
+						},
+						[2] = {
+						},
+						["icon"] = 132155,
+					},
+					["Heroic Strike"] = {
+						[-2] = {
+							["time"] = "|cffffffff07/08/20 07:57:40|r\n|Hunit:Player-4465-00E5831F:Vermin|hVermin's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffHeroic Strike|r|h hits |Hunit:Creature-0-4447-1-291-3117-0000060283:Dustwind Savage|hDustwind Savage|h for |cffffffff62|r |cffffffffPhysical|r.",
+							["amount"] = 62,
+						},
+						[2] = {
+							["time"] = "|cffffffff07/08/20 04:15:47|r\n|Hunit:Player-4465-00E5831F:Vermin|hVermin's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffHeroic Strike|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4447-1-291-3116-000005B593:Dustwind Pillager|hDustwind Pillager|h for |cffffffff16|r |cffffffffPhysical|r.(99 Overkill) (Critical)",
+							["amount"] = 115,
+						},
+						["icon"] = 132282,
 					},
 				},
 				["heal"] = {
 					["Healing Potion"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/07/20 08:58:42|r\n|Hunit:Player-4465-00E5831F:Vermin|hVermin's|h |Hspell:0:0:SPELL_HEAL|h|cffffffffHealing Potion|r|h heals |Hunit:Player-4465-00E5831F:Vermin|hVermin|h for |cffffffff72|r.",
-							["amount"] = 72,
+							["time"] = "|cffffffff07/08/20 07:53:31|r\n|Hunit:Player-4465-00E5831F:Vermin|hVermin's|h |Hspell:0:0:SPELL_HEAL|h|cffffffffHealing Potion|r|h heals |Hunit:Player-4465-00E5831F:Vermin|hVermin|h for |cffffffff90|r.",
+							["amount"] = 90,
 						},
 						[2] = {
 						},
@@ -3085,14 +3094,22 @@ EavesDropStatsDB = {
 			}, -- [1]
 			[-1] = {
 				["hit"] = {
+					["Shadow"] = {
+						[-2] = {
+							["time"] = "|cffffffff07/08/20 07:52:16|r\n|Hunit:Creature-0-4447-1-291-3198-0000060462:Burning Blade Apprentice|hBurning Blade Apprentice's|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Shadow Bolt|r|h hits |Hunit:Player-4465-00E5831F:Vermin|hVermin|h for |cffff131338|r |cffff1313Shadow|r.",
+							["amount"] = 38,
+						},
+						[2] = {
+						},
+					},
 					["Physical"] = {
 						[-2] = {
 							["time"] = "|cffffffff07/07/20 07:36:49|r\n|Hunit:Player-4465-00E5831F:Vermin|hVermin|h falls and loses |cffffffff117|r health.",
 							["amount"] = 117,
 						},
 						[2] = {
-							["time"] = "|cffffffff07/07/20 09:06:31|r\n|Hicon:128:source|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-1-1-3114-0000048E67:Razormane Battleguard|hRazormane Battleguard's|h melee swing hits |Hunit:Player-4465-00E5831F:Vermin|hVermin|h for |cffff131321|r |cffff1313Physical|r.(Critical)",
-							["amount"] = 21,
+							["time"] = "|cffffffff07/08/20 07:52:11|r\n|Hunit:Creature-0-4447-1-291-8996-0000060463:Voidwalker Minion|hVoidwalker Minion's|h melee swing hits |Hunit:Player-4465-00E5831F:Vermin|hVermin|h for |cffff131327|r |cffff1313Physical|r.(Critical)",
+							["amount"] = 27,
 						},
 					},
 					["Fire"] = {
@@ -3105,8 +3122,8 @@ EavesDropStatsDB = {
 					},
 					["Nature"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/07/20 08:33:30|r\n|Hicon:128:source|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-1-1-3111-0000047E2A:Razormane Quilboar|hRazormane Quilboar's|h |Hspell:0:0:DAMAGE_SHIELD|h|cffff1313Razor Mane|r|h reflects |cffff13133|r |cffff1313Nature|r damage to |Hunit:Player-4465-00E5831F:Vermin|hVermin|h.",
-							["amount"] = 3,
+							["time"] = "|cffffffff07/08/20 06:52:58|r\n|Hicon:128:source|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4447-1-291-3118-000005F984:Dustwind Storm Witch|hDustwind Storm Witch's|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Lightning Bolt|r|h hits |Hunit:Player-4465-00E5831F:Vermin|hVermin|h for |cffff131337|r |cffff1313Nature|r.",
+							["amount"] = 37,
 						},
 						[2] = {
 						},

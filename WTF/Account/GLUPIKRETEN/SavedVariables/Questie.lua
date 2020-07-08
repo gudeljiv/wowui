@@ -2840,15 +2840,16 @@ QuestieConfig = {
 				[6394] = true,
 				[825] = true,
 				[2161] = true,
+				[835] = true,
 				[5441] = true,
 				[4641] = true,
 				[4402] = true,
 				[784] = true,
-				[792] = true,
-				[3911] = true,
-				[794] = true,
-				[817] = true,
 				[2383] = true,
+				[3911] = true,
+				[792] = true,
+				[817] = true,
+				[794] = true,
 			},
 			["TrackedQuests"] = {
 			},
@@ -3459,6 +3460,65 @@ QuestieConfig = {
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
 				}, -- [65]
+				{
+					["Party"] = {
+						{
+							["Class"] = "Hunter",
+							["Name"] = "Mohikanac",
+							["Level"] = 7,
+						}, -- [1]
+					},
+					["Timestamp"] = 1594228477,
+					["Quest"] = 816,
+					["Level"] = 9,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+				}, -- [66]
+				{
+					["Party"] = {
+						{
+							["Class"] = "Hunter",
+							["Name"] = "Mohikanac",
+							["Level"] = 7,
+						}, -- [1]
+					},
+					["Timestamp"] = 1594229260,
+					["Quest"] = 806,
+					["Level"] = 9,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+				}, -- [67]
+				{
+					["Party"] = {
+						{
+							["Class"] = "Warlock",
+							["Name"] = "Synkkätuomio",
+							["Level"] = 11,
+						}, -- [1]
+						{
+							["Class"] = "Warlock",
+							["Name"] = "Synkkätuomio",
+							["Level"] = 11,
+						}, -- [2]
+					},
+					["Timestamp"] = 1594230733,
+					["Event"] = "Level",
+					["NewLevel"] = 10,
+				}, -- [68]
+				{
+					["Party"] = {
+						{
+							["Class"] = "Hunter",
+							["Name"] = "Mohikanac",
+							["Level"] = 8,
+						}, -- [1]
+					},
+					["Timestamp"] = 1594231553,
+					["Quest"] = 835,
+					["Level"] = 10,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+				}, -- [69]
 			},
 			["TrackerHiddenQuests"] = {
 			},
@@ -7475,12 +7535,12 @@ QuestieConfig = {
 				[805] = true,
 				[6283] = true,
 				[1068] = true,
-				[6384] = true,
+				[804] = true,
 				[827] = true,
 				[6641] = true,
 				[891] = true,
 				[6571] = true,
-				[1094] = true,
+				[549] = true,
 				[868] = true,
 				[6385] = true,
 				[541] = true,
@@ -7488,7 +7548,7 @@ QuestieConfig = {
 				[216] = true,
 				[892] = true,
 				[924] = true,
-				[549] = true,
+				[1094] = true,
 				[5730] = true,
 				[4542] = true,
 				[5726] = true,
@@ -7547,7 +7607,7 @@ QuestieConfig = {
 				[6381] = true,
 				[6382] = true,
 				[1060] = true,
-				[804] = true,
+				[6384] = true,
 				[581] = true,
 				[6386] = true,
 				[900] = true,

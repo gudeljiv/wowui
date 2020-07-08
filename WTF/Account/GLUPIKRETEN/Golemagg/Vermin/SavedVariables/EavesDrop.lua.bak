@@ -3042,14 +3042,32 @@ EavesDropStatsDB = {
 					},
 				},
 				["hit"] = {
-					["Melee Attack"] = {
+					["Thunder Clap"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/07/20 09:00:17|r\n|Hunit:Player-4465-00E5831F:Vermin|hVermin's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-1-1-3113-000084BC3C:Razormane Dustrunner|hRazormane Dustrunner|h for |cffffffff22|r |cffffffffPhysical|r.",
-							["amount"] = 22,
+							["time"] = "|cffffffff07/08/20 04:42:13|r\n|Hunit:Player-4465-00E5831F:Vermin|hVermin's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffThunder Clap|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4447-1-291-3117-000085DA8E:Dustwind Savage|hDustwind Savage|h for |cffffffff9|r |cffffffffPhysical|r.",
+							["amount"] = 9,
 						},
 						[2] = {
-							["time"] = "|cffffffff07/07/20 08:35:03|r\n|Hunit:Player-4465-00E5831F:Vermin|hVermin's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-1-1-3111-0000047E3A:Razormane Quilboar|hRazormane Quilboar|h for |cffffffff40|r |cffffffffPhysical|r.(Critical)",
-							["amount"] = 40,
+						},
+						["icon"] = 136105,
+					},
+					["Hamstring"] = {
+						[-2] = {
+							["time"] = "|cffffffff07/07/20 08:54:00|r\n|Hunit:Player-4465-00E5831F:Vermin|hVermin's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffHamstring|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-1-1-3125-0000045C29:Clattering Scorpid|hClattering Scorpid|h for |cffffffff5|r |cffffffffPhysical|r.",
+							["amount"] = 5,
+						},
+						[2] = {
+						},
+						["icon"] = 132316,
+					},
+					["Melee Attack"] = {
+						[-2] = {
+							["time"] = "|cffffffff07/08/20 04:42:16|r\n|Hunit:Player-4465-00E5831F:Vermin|hVermin's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4447-1-291-3117-000085DA8E:Dustwind Savage|hDustwind Savage|h for |cffffffff42|r |cffffffffPhysical|r.",
+							["amount"] = 42,
+						},
+						[2] = {
+							["time"] = "|cffffffff07/08/20 04:15:43|r\n|Hunit:Player-4465-00E5831F:Vermin|hVermin's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4447-1-291-3116-000005B593:Dustwind Pillager|hDustwind Pillager|h for |cffffffff75|r |cffffffffPhysical|r.(Critical)",
+							["amount"] = 75,
 						},
 					},
 					["Rend"] = {
@@ -3061,23 +3079,14 @@ EavesDropStatsDB = {
 						},
 						["icon"] = 132155,
 					},
-					["Hamstring"] = {
-						[-2] = {
-							["time"] = "|cffffffff07/07/20 08:54:00|r\n|Hunit:Player-4465-00E5831F:Vermin|hVermin's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffHamstring|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-1-1-3125-0000045C29:Clattering Scorpid|hClattering Scorpid|h for |cffffffff5|r |cffffffffPhysical|r.",
-							["amount"] = 5,
-						},
-						[2] = {
-						},
-						["icon"] = 132316,
-					},
 					["Heroic Strike"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/07/20 09:00:20|r\n|Hunit:Player-4465-00E5831F:Vermin|hVermin's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffHeroic Strike|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-1-1-3113-000084BC3C:Razormane Dustrunner|hRazormane Dustrunner|h for |cffffffff39|r |cffffffffPhysical|r.",
-							["amount"] = 39,
+							["time"] = "|cffffffff07/08/20 04:41:04|r\n|Hunit:Player-4465-00E5831F:Vermin|hVermin's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffHeroic Strike|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4447-1-291-3117-000005DA30:Dustwind Savage|hDustwind Savage|h for |cffffffff60|r |cffffffffPhysical|r.",
+							["amount"] = 60,
 						},
 						[2] = {
-							["time"] = "|cffffffff07/07/20 08:11:26|r\n|Hunit:Player-4465-00E5831F:Vermin|hVermin's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffHeroic Strike|r|h hits |Hunit:Creature-0-4468-1-1-3128-000004B040:Kul Tiras Sailor|hKul Tiras Sailor|h for |cffffffff6|r |cffffffffPhysical|r.(51 Overkill) (Critical)",
-							["amount"] = 57,
+							["time"] = "|cffffffff07/08/20 04:15:47|r\n|Hunit:Player-4465-00E5831F:Vermin|hVermin's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffHeroic Strike|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4447-1-291-3116-000005B593:Dustwind Pillager|hDustwind Pillager|h for |cffffffff16|r |cffffffffPhysical|r.(99 Overkill) (Critical)",
+							["amount"] = 115,
 						},
 						["icon"] = 132282,
 					},
@@ -3097,16 +3106,16 @@ EavesDropStatsDB = {
 					},
 					["Fire"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/07/20 07:39:20|r\n|Hunit:Player-4465-00E5831F:Vermin|hVermin|h suffers |cffffffff10|r fire damage.",
-							["amount"] = 10,
+							["time"] = "|cffffffff07/08/20 03:01:58|r\n|Hunit:Player-4465-00E5831F:Vermin|hVermin|h suffers |cffffffff15|r fire damage.",
+							["amount"] = 15,
 						},
 						[2] = {
 						},
 					},
 					["Nature"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/07/20 08:33:30|r\n|Hicon:128:source|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-1-1-3111-0000047E2A:Razormane Quilboar|hRazormane Quilboar's|h |Hspell:0:0:DAMAGE_SHIELD|h|cffff1313Razor Mane|r|h reflects |cffff13133|r |cffff1313Nature|r damage to |Hunit:Player-4465-00E5831F:Vermin|hVermin|h.",
-							["amount"] = 3,
+							["time"] = "|cffffffff07/08/20 06:52:58|r\n|Hicon:128:source|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4447-1-291-3118-000005F984:Dustwind Storm Witch|hDustwind Storm Witch's|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Lightning Bolt|r|h hits |Hunit:Player-4465-00E5831F:Vermin|hVermin|h for |cffff131337|r |cffff1313Nature|r.",
+							["amount"] = 37,
 						},
 						[2] = {
 						},
