@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 672,
+	["session"] = 694,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -185,12 +185,176 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [23]
 		{
+			["message"] = "...ace\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:24: attempt to index global 'PlayerHealthFrameHealthBarText' (a nil value)",
+			["time"] = "2020/07/09 16:39:37",
+			["locals"] = "playerHP = \"100\"\n(*temporary) = nil\n(*temporary) = \"player: \"\n(*temporary) = \"100\"\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = true\n(*temporary) = \"attempt to index global 'PlayerHealthFrameHealthBarText' (a nil value)\"\nPlayerHealthFrame = PlayerHealthFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n",
+			["stack"] = "...ace\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:24: in function <...ace\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:21>\n[C]: ?\n[C]: ?\n[C]: ?",
+			["session"] = 676,
+			["counter"] = 345,
+		}, -- [24]
+		{
+			["message"] = "...ace\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:23: attempt to index field 'text' (a nil value)",
+			["time"] = "2020/07/09 16:40:15",
+			["locals"] = "playerHP = \"100\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"100\"\n(*temporary) = \"player\"\n(*temporary) = 271\n(*temporary) = \"attempt to index field 'text' (a nil value)\"\nPlayerHealthFrame = PlayerHealthFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n",
+			["stack"] = "...ace\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:23: in function <...ace\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:21>\n[C]: ?\n[C]: ?\n[C]: ?",
+			["session"] = 677,
+			["counter"] = 205,
+		}, -- [25]
+		{
+			["message"] = "Interface\\AddOns\\Questie\\Modules\\QuestieStream.lua:3: attempt to index global 'QuestieLoader' (a nil value)",
+			["time"] = "2020/07/09 17:00:45",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'QuestieLoader' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\Questie\\Modules\\QuestieStream.lua:3: in main chunk",
+			["session"] = 685,
+			["counter"] = 1,
+		}, -- [26]
+		{
+			["message"] = "Interface\\AddOns\\Questie\\Database\\QuestieDB.lua:2: attempt to index global 'QuestieLoader' (a nil value)",
+			["time"] = "2020/07/09 17:00:45",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'QuestieLoader' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\Questie\\Database\\QuestieDB.lua:2: in main chunk",
+			["session"] = 685,
+			["counter"] = 1,
+		}, -- [27]
+		{
+			["message"] = "Interface\\AddOns\\Questie\\Database\\questDB.lua:7: attempt to index global 'QuestieLoader' (a nil value)",
+			["time"] = "2020/07/09 17:00:45",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'QuestieLoader' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\Questie\\Database\\questDB.lua:7: in main chunk",
+			["session"] = 685,
+			["counter"] = 1,
+		}, -- [28]
+		{
+			["message"] = "Interface\\AddOns\\Questie\\Database\\objectDB.lua:7: attempt to index global 'QuestieLoader' (a nil value)",
+			["time"] = "2020/07/09 17:00:45",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'QuestieLoader' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\Questie\\Database\\objectDB.lua:7: in main chunk",
+			["session"] = 685,
+			["counter"] = 1,
+		}, -- [29]
+		{
+			["message"] = "Interface\\AddOns\\Questie\\Database\\spawnDB.lua:7: attempt to index global 'QuestieLoader' (a nil value)",
+			["time"] = "2020/07/09 17:00:45",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'QuestieLoader' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\Questie\\Database\\spawnDB.lua:7: in main chunk",
+			["session"] = 685,
+			["counter"] = 1,
+		}, -- [30]
+		{
+			["message"] = "Interface\\AddOns\\Questie\\Database\\itemDB.lua:7: attempt to index global 'QuestieLoader' (a nil value)",
+			["time"] = "2020/07/09 17:00:45",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'QuestieLoader' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\Questie\\Database\\itemDB.lua:7: in main chunk",
+			["session"] = 685,
+			["counter"] = 1,
+		}, -- [31]
+		{
+			["message"] = "...\\Questie\\Database\\Corrections\\QuestieCorrections.lua:2: attempt to index global 'QuestieLoader' (a nil value)",
+			["time"] = "2020/07/09 17:00:45",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'QuestieLoader' (a nil value)\"\n",
+			["stack"] = "...\\Questie\\Database\\Corrections\\QuestieCorrections.lua:2: in main chunk",
+			["session"] = 685,
+			["counter"] = 1,
+		}, -- [32]
+		{
+			["message"] = "...uestie\\Database\\Corrections\\QuestieItemBlacklist.lua:2: attempt to index global 'QuestieLoader' (a nil value)",
+			["time"] = "2020/07/09 17:00:45",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'QuestieLoader' (a nil value)\"\n",
+			["stack"] = "...uestie\\Database\\Corrections\\QuestieItemBlacklist.lua:2: in main chunk",
+			["session"] = 685,
+			["counter"] = 1,
+		}, -- [33]
+		{
+			["message"] = "...ns\\Questie\\Database\\Corrections\\QuestieItemFixes.lua:2: attempt to index global 'QuestieLoader' (a nil value)",
+			["time"] = "2020/07/09 17:00:45",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'QuestieLoader' (a nil value)\"\n",
+			["stack"] = "...ns\\Questie\\Database\\Corrections\\QuestieItemFixes.lua:2: in main chunk",
+			["session"] = 685,
+			["counter"] = 1,
+		}, -- [34]
+		{
+			["message"] = "...Ons\\Questie\\Database\\Corrections\\QuestieNPCFixes.lua:2: attempt to index global 'QuestieLoader' (a nil value)",
+			["time"] = "2020/07/09 17:00:45",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'QuestieLoader' (a nil value)\"\n",
+			["stack"] = "...Ons\\Questie\\Database\\Corrections\\QuestieNPCFixes.lua:2: in main chunk",
+			["session"] = 685,
+			["counter"] = 1,
+		}, -- [35]
+		{
+			["message"] = "Couldn't open Interface\\AddOns\\Questie\\Libs\\LibSharedMedia-3.0-8020003\\lib.xml",
+			["session"] = 685,
+			["time"] = "2020/07/09 17:00:48",
+			["counter"] = 1,
+		}, -- [36]
+		{
+			["message"] = "Couldn't open Interface\\AddOns\\Questie\\Libs\\AceGUI-3.0-41-SharedMediaWidgets\\widget.xml",
+			["session"] = 685,
+			["time"] = "2020/07/09 17:00:48",
+			["counter"] = 1,
+		}, -- [37]
+		{
+			["message"] = "Couldn't open Interface\\AddOns\\Questie\\Libs\\ZoneHelper\\ZoneHelper.xml",
+			["session"] = 685,
+			["time"] = "2020/07/09 17:00:48",
+			["counter"] = 1,
+		}, -- [38]
+		{
+			["message"] = "Error loading Interface\\AddOns\\Questie\\Locale\\enUS\\lookupZones.lua",
+			["session"] = 685,
+			["time"] = "2020/07/09 17:00:48",
+			["counter"] = 1,
+		}, -- [39]
+		{
+			["message"] = "Error loading Interface\\AddOns\\Questie\\Locale\\enUS\\lookupQuestCategory.lua",
+			["session"] = 685,
+			["time"] = "2020/07/09 17:00:48",
+			["counter"] = 1,
+		}, -- [40]
+		{
+			["message"] = "Error loading Interface\\AddOns\\Questie\\Locale\\esES\\lookupZones.lua",
+			["session"] = 685,
+			["time"] = "2020/07/09 17:00:48",
+			["counter"] = 1,
+		}, -- [41]
+		{
+			["message"] = "Error loading Interface\\AddOns\\Questie\\Locale\\esES\\lookupQuestCategory.lua",
+			["session"] = 685,
+			["time"] = "2020/07/09 17:00:48",
+			["counter"] = 1,
+		}, -- [42]
+		{
+			["message"] = "Error loading Interface\\AddOns\\Questie\\Locale\\deDE\\lookupZones.lua",
+			["session"] = 685,
+			["time"] = "2020/07/09 17:00:48",
+			["counter"] = 1,
+		}, -- [43]
+		{
+			["message"] = "Error loading Interface\\AddOns\\Questie\\Locale\\deDE\\lookupQuestCategory.lua",
+			["session"] = 685,
+			["time"] = "2020/07/09 17:00:48",
+			["counter"] = 1,
+		}, -- [44]
+		{
+			["message"] = "Error loading Interface\\AddOns\\Questie\\Locale\\zhCN\\lookupZones.lua",
+			["session"] = 685,
+			["time"] = "2020/07/09 17:00:48",
+			["counter"] = 1,
+		}, -- [45]
+		{
+			["message"] = "[string \"Questie_Toggle:OnClick\"]:1: attempt to index field 'db' (a nil value)",
+			["time"] = "2020/07/09 17:01:02",
+			["locals"] = "self = Questie_Toggle {\n 0 = <userdata>\n Text = Questie_ToggleText {\n }\n Right = <unnamed> {\n }\n Middle = <unnamed> {\n }\n Left = <unnamed> {\n }\n}\nbutton = \"LeftButton\"\ndown = false\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'db' (a nil value)\"\n",
+			["stack"] = "[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 685,
+			["counter"] = 4,
+		}, -- [46]
+		{
 			["message"] = "...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: Usage: CreateFrame(\"frameType\" [, \"name\"] [, parent] [, \"template\"] [, id])",
 			["time"] = "2020/07/07 16:56:37",
 			["locals"] = "(*temporary) = \"Button\"\n(*temporary) = \"NivayaSlot1\"\n(*temporary) = \"ItemButtonTemplate\"\n(*temporary) = \"ContainerFrameItemButtonTemplate\"\n",
 			["stack"] = "[C]: in function `CreateFrame'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: in function `Create'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:56: in function `New'\nInterface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:762: in function <Interface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:757>",
-			["session"] = 672,
-			["counter"] = 14,
-		}, -- [24]
+			["session"] = 694,
+			["counter"] = 36,
+		}, -- [47]
 	},
 }

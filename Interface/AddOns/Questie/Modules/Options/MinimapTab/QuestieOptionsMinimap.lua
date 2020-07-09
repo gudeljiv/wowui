@@ -1,8 +1,24 @@
+-------------------------
+--Import modules.
+-------------------------
+---@type QuestieOptions
+local QuestieOptions = QuestieLoader:ImportModule("QuestieOptions");
+---@type QuestieOptionsDefaults
+local QuestieOptionsDefaults = QuestieLoader:ImportModule("QuestieOptionsDefaults");
+---@type QuestieOptionsUtils
+local QuestieOptionsUtils = QuestieLoader:ImportModule("QuestieOptionsUtils");
+---@type QuestieFramePool
+local QuestieFramePool = QuestieLoader:ImportModule("QuestieFramePool");
+---@type QuestieCoords
+local QuestieCoords = QuestieLoader:ImportModule("QuestieCoords");
+---@type QuestieMap
+local QuestieMap = QuestieLoader:ImportModule("QuestieMap");
+
 QuestieOptions.tabs.minimap = {...}
 local optionsDefaults = QuestieOptionsDefaults:Load()
 
 
-function QuestieOptions.tabs.minimap:Initalize()
+function QuestieOptions.tabs.minimap:Initialize()
     return {
         name = function() return QuestieLocale:GetUIString('MINIMAP_TAB'); end,
         type = "group",
@@ -11,7 +27,7 @@ function QuestieOptions.tabs.minimap:Initalize()
             minimap_options = {
                 type = "header",
                 order = 1,
-                name = function() return QuestieLocale:GetUIString('MINIMAP_HEADER'); end,
+                name = function() return QuestieLocale:GetUIString('MINIMAP_OPTIONS_HEADER'); end,
             },
             alwaysGlowMinimap = {
                 type = "toggle",
@@ -41,7 +57,7 @@ function QuestieOptions.tabs.minimap:Initalize()
             mapnote_options = {
                 type = "header",
                 order = 2,
-                name = function() return QuestieLocale:GetUIString('MINIMAP_NOTES'); end,
+                name = function() return QuestieLocale:GetUIString('MINIMAP_NOTES_HEADER'); end,
             },
             Spacer_B = QuestieOptionsUtils:Spacer(2.1),
             globalMiniMapScale = {
@@ -73,7 +89,7 @@ function QuestieOptions.tabs.minimap:Initalize()
                     QuestieOptions:SetGlobalOptionValue(info, value)
                 end,
             },
-            Spacer_D = QuestieOptionsUtils:Spacer(13),
+            Spacer_D = QuestieOptionsUtils:Spacer(2.31),
             fadeOverPlayer = {
                 type = "toggle",
                 order = 2.4,
@@ -119,7 +135,7 @@ function QuestieOptions.tabs.minimap:Initalize()
             fade_options = {
                 type = "header",
                 order = 3,
-                name = function() return QuestieLocale:GetUIString('MINMAP_COORDS'); end,
+                name = function() return QuestieLocale:GetUIString('MINMAP_COORDS_HEADER'); end,
             },
             Spacer_F = QuestieOptionsUtils:Spacer(3.1),
             minimapCoordinatesEnabled = {
@@ -133,7 +149,7 @@ function QuestieOptions.tabs.minimap:Initalize()
                     QuestieOptions:SetGlobalOptionValue(info, value)
 
                     if not value then
-                        QuestieCoords.ResetMinimapText();
+                        QuestieCoords:ResetMinimapText();
                     end
                 end,
             },

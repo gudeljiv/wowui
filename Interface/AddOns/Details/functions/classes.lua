@@ -3,7 +3,7 @@
 do 
 	local _detalhes = 	_G._detalhes
 	local setmetatable = setmetatable
-	-------- pet cache
+	-------- container que armazena o cache de pets
 		_detalhes.container_pets = {}
 		_detalhes.container_pets.__index = _detalhes.container_pets
 		setmetatable (_detalhes.container_pets, _detalhes)

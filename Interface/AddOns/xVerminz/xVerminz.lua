@@ -159,6 +159,16 @@ f:SetScript(
 		end
 
 		-------------------------------------------
+		-- druability frame
+		-------------------------------------------
+		DurabilityFrame:ClearAllPoints()
+		DurabilityFrame:SetPoint("TOPRIGHT", "EavesDropFrame", "BOTTOMRIGHT", -40, 0)
+		DurabilityFrame.ClearAllPoints = function()
+		end
+		DurabilityFrame.SetPoint = function()
+		end
+
+		-------------------------------------------
 		-- tracking icon
 		-------------------------------------------
 		MiniMapTrackingFrame:ClearAllPoints()

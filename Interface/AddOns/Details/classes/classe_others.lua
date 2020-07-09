@@ -595,7 +595,7 @@ function atributo_misc:DeadAtualizarBarra (morte, qual_barra, colocacao, instanc
 			esta_barra.icone_classe:SetTexCoord (_unpack (_detalhes.class_specs_coords [spec]))
 		else
 			esta_barra.icone_classe:SetTexture (instancia.row_info.icon_file)
-			esta_barra.icone_classe:SetTexCoord (_unpack (CLASS_ICON_TCOORDS [morte[4] or {}]))
+			esta_barra.icone_classe:SetTexCoord (_unpack (CLASS_ICON_TCOORDS [morte[4]]))
 		end
 	else
 		esta_barra.icone_classe:SetTexture (instancia.row_info.icon_file)
@@ -1353,7 +1353,6 @@ function _detalhes:CatchRaidDebuffUptime (in_or_out) -- "DEBUFF_UPTIME_IN"
 						if (realmName and realmName ~= "") then
 							playerName = playerName .. "-" .. realmName
 						end
-
 						_detalhes.parser:add_debuff_uptime (nil, GetTime(), playerGUID, playerName, 0x00000417, his_target, _UnitName ("playertarget"), 0x842, nil, spellid, name, in_or_out)
 					end
 				end
@@ -1413,9 +1412,7 @@ function _detalhes:CatchRaidBuffUptime (in_or_out)
 				for buffIndex = 1, 41 do
 					local name, _, _, _, _, _, unitCaster, _, _, spellid  = _UnitAura (RaidIndex, buffIndex, nil, "HELPFUL")
 					if (name and unitCaster == RaidIndex) then
-
 						_detalhes.parser:add_buff_uptime (nil, cacheGetTime, playerGUID, playerName, 0x00000514, playerGUID, playerName, 0x00000514, 0x0, spellid, name, in_or_out)
-
 						if (in_or_out == "BUFF_UPTIME_IN") then
 							if (_detalhes.PotionList [spellid]) then
 								pot_usage [playerName] = spellid
@@ -1427,6 +1424,8 @@ function _detalhes:CatchRaidBuffUptime (in_or_out)
 				end
 			end
 		end
+		
+--		/run print (GetNumSubgroupMembers());for i=1,GetNumSubgroupMembers()do print (UnitName("party"..i))end
 		
 		--> player sub group
 		for partyIndex = 1, _GetNumSubgroupMembers() do
@@ -1521,6 +1520,7 @@ function _detalhes:CatchRaidBuffUptime (in_or_out)
 								focus_augmentation [playerName] = true
 							end
 						end
+					
 						_detalhes.parser:add_buff_uptime (nil, GetTime(), playerGUID, playerName, 0x00000417, playerGUID, playerName, 0x00000417, 0x0, spellid, name, in_or_out)
 					end
 				end
@@ -1540,7 +1540,7 @@ function _detalhes:CatchRaidBuffUptime (in_or_out)
 							focus_augmentation [playerName] = true
 						end
 					end
-
+				
 					_detalhes.parser:add_buff_uptime (nil, GetTime(), playerGUID, playerName, 0x00000417, playerGUID, playerName, 0x00000417, 0x0, spellid, name, in_or_out)
 				end
 			end
@@ -1563,7 +1563,7 @@ function _detalhes:CatchRaidBuffUptime (in_or_out)
 			_detalhes:SendEvent ("COMBAT_PREPOTION_UPDATED", nil, pot_usage, focus_augmentation)
 		end
 		
-	else --player by him self
+	else
 	
 		local pot_usage = {}
 		local focus_augmentation = {}
@@ -1573,7 +1573,7 @@ function _detalhes:CatchRaidBuffUptime (in_or_out)
 			if (name and unitCaster == "player") then
 				local playerName = _UnitName ("player")
 				local playerGUID = _UnitGUID ("player")
-
+				
 				if (playerGUID) then
 					if (in_or_out == "BUFF_UPTIME_IN") then
 						if (_detalhes.PotionList [spellid]) then
@@ -1582,7 +1582,6 @@ function _detalhes:CatchRaidBuffUptime (in_or_out)
 							focus_augmentation [playerName] = true
 						end
 					end
-
 					_detalhes.parser:add_buff_uptime (nil, GetTime(), playerGUID, playerName, 0x00000417, playerGUID, playerName, 0x00000417, 0x0, spellid, name, in_or_out)
 				end
 			end

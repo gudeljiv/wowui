@@ -44,11 +44,10 @@
 	local CONST_CLOUD_EQUALIZE = "EQ"
 	
 	local CONST_CLOUD_SHAREDATA = "SD"
+	
 	local CONST_PVP_ENEMY = "PP"
+	
 	local CONST_ROGUE_SR = "SR" --soul rip from akaari's soul (LEGION ONLY)
-
-	local CONST_ASK_TALENTS = "AT"
-	local CONST_ANSWER_TALENTS = "AWT"
 	
 	_detalhes.network.ids = {
 		["HIGHFIVE_REQUEST"] = CONST_HIGHFIVE_REQUEST,
@@ -60,13 +59,16 @@
 		["CLOUD_DATARQ"] = CONST_CLOUD_DATARQ,
 		["CLOUD_DATARC"] = CONST_CLOUD_DATARC,
 		["CLOUD_EQUALIZE"] = CONST_CLOUD_EQUALIZE,
+		
 		["WIPE_CALL"] = CONST_WIPE_CALL,
+		
 		["GUILD_SYNC"] = CONST_GUILD_SYNC,
+		
 		["PVP_ENEMY"] = CONST_PVP_ENEMY,
+		
 		["MISSDATA_ROGUE_SOULRIP"] = CONST_ROGUE_SR, --soul rip from akaari's soul (LEGION ONLY)
+		
 		["CLOUD_SHAREDATA"] = CONST_CLOUD_SHAREDATA,
-		["ASK_TALENTS"] = CONST_ASK_TALENTS,
-		["ANSWER_TALENTS"] = CONST_ANSWER_TALENTS,
 	}
 	
 	local plugins_registred = {}
@@ -83,9 +85,11 @@
 		if (not IsInGroup() and not IsInRaid()) then
 			return
 		end
-
+		
 		if (DetailsFramework.IsClassicWow()) then
-			return Details:SendPlayerClassicInformation()
+			--average item level doesn't exists
+			--talent information is very different
+			return
 		end
 		
 		--> check the player level
@@ -145,9 +149,9 @@
 		
 		_detalhes.LastPlayerInfoSync = GetTime()
 	end
-
+	
 	function _detalhes.network.ItemLevel_Received (player, realm, core_version, serial, itemlevel, talents, spec)
-		_detalhes:ClassicSpecFromNetwork (player, realm, core_version, serial, itemlevel, talents, spec)
+		_detalhes:IlvlFromNetwork (player, realm, core_version, serial, itemlevel, talents, spec)
 	end
 
 --high five
@@ -161,23 +165,6 @@
 		end
 	end
 	
---classic talents
-	function _detalhes.network.ReceivedTalentsQuery (player, realm, core_version, playerSerial)
-		Details.ask_talents_cooldown = Details.ask_Talents_cooldown or 0
-		if (Details.ask_talents_cooldown > time()) then
-			return
-		end
-		Details.ask_talents_cooldown = time() + 5
-
-		local targetName = Ambiguate (player .. "-" .. realm, "none")
-		Details:SendPlayerClassicInformation (targetName)
-	end
-
-	function _detalhes.network.ReceivedTalentsInformation (player, realm, core_version, serial, itemlevel, talents, spec)
-		_detalhes:ClassicSpecFromNetwork (player, realm, core_version, serial, itemlevel, talents, spec)
-	end
-
---details version	
 	function _detalhes.network.Update_VersionReceived (player, realm, core_version, build_number)
 		if (_detalhes.debug) then
 			_detalhes:Msg ("(debug) received version alert ", build_number)
@@ -188,12 +175,7 @@
 		if (not _detalhes.build_counter or not _detalhes.lastUpdateWarning or not build_number) then
 			return
 		end
-		
-		--retail sending version, just ignore
-		if (build_number > 6000) then
-			return
-		end
-
+	
 		if (build_number > _detalhes.build_counter) then
 			if (time() > _detalhes.lastUpdateWarning + 72000) then
 				local lower_instance = _detalhes:GetLowerInstanceNumber()
@@ -514,10 +496,6 @@
 		[CONST_ROGUE_SR] = _detalhes.network.HandleMissData, --soul rip from akaari's soul (LEGION ONLY)
 		
 		[CONST_PVP_ENEMY] = _detalhes.network.ReceivedEnemyPlayer,
-
-		[CONST_ASK_TALENTS] = _detalhes.network.ReceivedTalentsQuery,
-		[CONST_ANSWER_TALENTS] = _detalhes.network.ReceivedTalentsInformation,
-		
 	}
 	
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

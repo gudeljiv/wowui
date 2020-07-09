@@ -5755,8 +5755,6 @@ function DF:PassLoadFilters (loadTable, encounterID)
 	end
 	
 	--spec
-	-- todo classic: specs - ignore for now
-	--[[
 	if (loadTable.spec.Enabled) then
 		local canCheckTalents = true
 		
@@ -5781,15 +5779,13 @@ function DF:PassLoadFilters (loadTable, encounterID)
 			if (specIndex) then
 				local specID = DetailsFramework.GetSpecializationInfo (specIndex)
 				if (not loadTable.spec [specID]) then
-					-- todo classic: specs - ignore for now
-					--return false
+					return false
 				end
 			else
 				return false
 			end
 		end
 	end
-	--]]
 	
 	--race
 	if (loadTable.race.Enabled) then
@@ -5800,8 +5796,6 @@ function DF:PassLoadFilters (loadTable, encounterID)
 	end
 	
 	--talents
-	-- todo classic: talents
-	--[[
 	if (loadTable.talent.Enabled) then
 		local talentsInUse = DF:GetCharacterTalents (false, true)
 		local hasTalent
@@ -5815,11 +5809,8 @@ function DF:PassLoadFilters (loadTable, encounterID)
 			return false
 		end
 	end
-	--]]
 	
 	--pvptalent
-	-- not in classic
-	--[[
 	if (loadTable.pvptalent.Enabled) then
 		local talentsInUse = DF:GetCharacterPvPTalents (false, true)
 		local hasTalent
@@ -5833,7 +5824,6 @@ function DF:PassLoadFilters (loadTable, encounterID)
 			return false
 		end
 	end
-	--]]
 	
 	--group
 	if (loadTable.group.Enabled) then
@@ -5844,8 +5834,6 @@ function DF:PassLoadFilters (loadTable, encounterID)
 	end
 	
 	--role
-	-- todo classic: role - just ignore now
-	--[[
 	if (loadTable.role.Enabled) then
 		local assignedRole = UnitGroupRolesAssigned ("player")
 		if (assignedRole == "NONE") then
@@ -5858,11 +5846,8 @@ function DF:PassLoadFilters (loadTable, encounterID)
 			return false
 		end
 	end
-	--]]
 	
 	--affix
-	-- not in classic
-	--[[
 	if (loadTable.affix.Enabled and false) then --dont need to run on classic
 		local isInMythicDungeon = C_ChallengeMode.IsChallengeModeActive()
 		if (not isInMythicDungeon) then
@@ -5882,7 +5867,6 @@ function DF:PassLoadFilters (loadTable, encounterID)
 			return false
 		end
 	end
-	--]]
 	
 	--encounter id
 	if (loadTable.encounter_ids.Enabled) then
@@ -6011,8 +5995,6 @@ function DF:OpenLoadConditionsPanel (optionsTable, callback, frameOptions)
 			tinsert (f.AllRadioGroups, classGroup)
 		
 		--create the radio group for character spec
-		-- not in classic...
-		--[[
 			local specs = {}
 			for _, specID in ipairs (DF:GetClassSpecIDs (select (2, UnitClass ("player")))) do
 				local specID, specName, specDescription, specIcon, specBackground, specRole, specClass = DetailsFramework.GetSpecializationInfoByID (specID)
@@ -6028,7 +6010,6 @@ function DF:OpenLoadConditionsPanel (optionsTable, callback, frameOptions)
 			specGroup:SetPoint ("topleft", f, "topleft", anchorPositions.spec [1], anchorPositions.spec [2])
 			specGroup.DBKey = "spec"
 			tinsert (f.AllRadioGroups, specGroup)
-			--]]
 			
 		--create radio group for character races
 			local raceList = {}
@@ -6047,7 +6028,6 @@ function DF:OpenLoadConditionsPanel (optionsTable, callback, frameOptions)
 			
 		--create radio group for talents
 			local talentList = {}
-			-- todo: classic talents
 			for _, talentTable in ipairs (DF:GetCharacterTalents()) do
 				tinsert (talentList, {
 					name = talentTable.Name, 
@@ -6146,8 +6126,6 @@ function DF:OpenLoadConditionsPanel (optionsTable, callback, frameOptions)
 			
 		--create radio group for pvp talents
 			local pvpTalentList = {}
-			-- not in classic:
-			--[[
 			for _, talentTable in ipairs (DF:GetCharacterPvPTalents()) do
 				tinsert (pvpTalentList, {
 					name = talentTable.Name, 
@@ -6157,7 +6135,6 @@ function DF:OpenLoadConditionsPanel (optionsTable, callback, frameOptions)
 					texture = talentTable.Texture,
 				})
 			end
-			--]]
 			local pvpTalentGroup = DF:CreateRadionGroup (f, pvpTalentList, name, {width = 200, height = 200, title = "Characer PvP Talents"}, {offset_x = 150, amount_per_line = 3})
 			pvpTalentGroup:SetPoint ("topleft", f, "topleft", anchorPositions.pvptalent [1], anchorPositions.pvptalent [2])
 			pvpTalentGroup.DBKey = "pvptalent"
@@ -6261,8 +6238,6 @@ function DF:OpenLoadConditionsPanel (optionsTable, callback, frameOptions)
 			tinsert (f.AllRadioGroups, groupTypesGroup)
 		
 		--create radio for character roles
-		-- not in classic
-		--[[
 			local roleTypes = {}
 			for _, roleTable in ipairs (DF:GetRoleTypes()) do
 				tinsert (roleTypes, {
@@ -6276,11 +6251,8 @@ function DF:OpenLoadConditionsPanel (optionsTable, callback, frameOptions)
 			roleTypesGroup:SetPoint ("topleft", f, "topleft", anchorPositions.role [1], anchorPositions.role [2])
 			roleTypesGroup.DBKey = "role"
 			tinsert (f.AllRadioGroups, roleTypesGroup)
-			--]]
 		
 		--create radio group for mythic+ affixes
-		-- not in classic:
-		--[[
 			local affixes = {}
 			for i = 2, 1000 do
 				local affixName, desc, texture = C_ChallengeMode.GetAffixInfo (i)
@@ -6298,7 +6270,6 @@ function DF:OpenLoadConditionsPanel (optionsTable, callback, frameOptions)
 			affixTypesGroup:SetPoint ("topleft", f, "topleft", anchorPositions.affix [1], anchorPositions.affix [2])
 			affixTypesGroup.DBKey = "affix"
 			tinsert (f.AllRadioGroups, affixTypesGroup)
-			--]]
 		
 		--text entries functions
 			local textEntryRefresh = function (self)
@@ -6847,12 +6818,8 @@ DF.HealthFrameFunctions = {
 
 			--> register events
 			if (unit) then
-				if RealMobHealth then
-					self.currentHealth, self.currentHealthMax = RealMobHealth.GetUnitHealth(unit)
-				else
-					self.currentHealth = UnitHealth (unit) or 0
-					self.currentHealthMax = UnitHealthMax (unit) or 0
-				end
+				self.currentHealth = UnitHealth (unit) or 0
+				self.currentHealthMax = UnitHealthMax (unit) or 0
 				
 				for _, eventTable in ipairs (self.HealthBarEvents) do
 					local event = eventTable [1]
@@ -6947,25 +6914,13 @@ DF.HealthFrameFunctions = {
 
 	--colocar mais coisas aqui, um member dizendo quanto de health e o health max da unit
 	UpdateMaxHealth = function (self)
-			local maxHealth, _ = 0
-			if RealMobHealth then
-				_,  maxHealth = RealMobHealth.GetUnitHealth(self.displayedUnit)
-			else
-				maxHealth, _ = UnitHealthMax (self.displayedUnit)
-			end
+			local maxHealth = UnitHealthMax (self.displayedUnit)
 			self:SetMinMaxValues (0, maxHealth)
 			self.currentHealthMax = maxHealth
 	end,
 
 	UpdateHealth = function (self)
-		local health = 0
-		if RealMobHealth then
-			health, maxHealth = RealMobHealth.GetUnitHealth(self.displayedUnit)
-			self:SetMinMaxValues (0, maxHealth)
-			self.currentHealthMax = maxHealth
-		else
-			health = UnitHealth (self.displayedUnit)
-		end
+		local health = UnitHealth (self.displayedUnit)
 		self.currentHealth = health
 		DFPixelUtil.SetStatusBarValue (self, health)
 	end,
@@ -7967,7 +7922,7 @@ DF.CastFrameFunctions = {
 		local name, text, texture, startTime, endTime, isTradeSkill, castID, notInterruptible, spellID = CastingInfo (unit)
 
 		if (not name) then
-			--print (unit, name, text, texture, "no name, bye", type (unit))
+			print (unit, name, text, texture, "no name, bye", type (unit))
 			return
 		end
 
@@ -7998,7 +7953,7 @@ DF.CastFrameFunctions = {
 			self:SetAlpha (1)
 			self.Icon:SetTexture (texture)
 			self.Icon:Show()
-			self.Text:SetText (name)
+			self.Text:SetText (text)
 			
 			if (self.Settings.ShowCastTime and self.Settings.CanLazyTick) then
 				self.percentText:Show()
@@ -8054,7 +8009,7 @@ DF.CastFrameFunctions = {
 			self:SetAlpha (1)
 			self.Icon:SetTexture (texture)
 			self.Icon:Show()
-			self.Text:SetText (name)
+			self.Text:SetText (text)
 			
 			if (self.Settings.ShowCastTime and self.Settings.CanLazyTick) then
 				self.percentText:Show()
@@ -8240,10 +8195,7 @@ local getCastBar = function (unitId)
 		return
 	end
 
-	local castBar = plateFrame.unitFrame and plateFrame.unitFrame.castBar
-	if (not castBar) then
-		return
-	end
+	local castBar = plateFrame.unitFrame.castBar
 
 	return castBar
 end
@@ -8255,10 +8207,8 @@ local triggerCastEvent = function (castBar, event, unitId, ...)
 end
 
 local funcCast = function (event, unitId, ...)
-	local castBar = getCastBar (unitId)
-	if (castBar) then
-		triggerCastEvent (castBar, event, unitId)
-	end
+	triggerCastEvent (getCastBar (unitId), event, unitId)
+
 end
 
 fCast.UNIT_SPELLCAST_START = function (self, event, unitId, ...)

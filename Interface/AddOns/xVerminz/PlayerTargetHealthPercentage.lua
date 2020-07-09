@@ -30,11 +30,6 @@ local function THealthHide()
 end
 local function THealthShow()
 	if TargetFrame:IsShown() then
-		-- else
-		-- 	THealthHide()
-		-- end
-		-- if(UnitCanAttack("player","target") and not UnitIsDeadOrGhost("target")) then
-		-- if(not UnitIsDeadOrGhost("target")) then
 		local targetHP = format("%.0f", (UnitHealth("target") / UnitHealthMax("target")) * 100)
 		TargetHealthFrame.text:SetText(targetHP)
 		TargetHealthFrame.text:SetVertexColor(1, 1, 1)

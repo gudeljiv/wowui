@@ -554,7 +554,7 @@
 			if (not is_custom_spell) then
 				for spellid, spell in pairs (character.spells._ActorTable) do
 					if (spellid ~= from_spell) then
-						local spellname = Details.GetSpellInfoC (spellid)
+						local spellname = select (1, GetSpellInfo (spellid))
 						if (spellname == from_spellname) then
 							for targetname, amount in pairs (spell.targets) do
 						
@@ -596,7 +596,7 @@
 
 		GameCooltip:SetOption ("StatusBarTexture", "Interface\\AddOns\\Details\\images\\bar_serenity")
 
-		local spellname, _, spellicon = Details.GetSpellInfoC (from_spell)  --select (1, _GetSpellInfo (from_spell))
+		local spellname, _, spellicon = select (1, _GetSpellInfo (from_spell))
 		GameCooltip:AddLine (spellname .. " " .. Loc ["STRING_CUSTOM_ATTRIBUTE_DAMAGE"], nil, nil, headerColor, nil, 10)
 		GameCooltip:AddIcon (spellicon, 1, 1, 14, 14, 0.078125, 0.921875, 0.078125, 0.921875)
 		GameCooltip:AddIcon ([[Interface\AddOns\Details\images\key_shift]], 1, 2, _detalhes.tooltip_key_size_width, _detalhes.tooltip_key_size_height, 0, 1, 0, 0.640625, _detalhes.tooltip_key_overlay2)
@@ -652,12 +652,11 @@
 		local total, top, amount = 0, 0, 0
 		--> hold the targets
 		local Targets = {}
-
+		
 		local from_spell = @SPELLID@
 		local from_spellname
-
 		if (from_spell) then
-			from_spellname = Details.GetSpellInfoC (from_spell)
+			from_spellname = select (1, GetSpellInfo (from_spell))
 		end
 
 		--> get a list of all damage actors
@@ -892,7 +891,7 @@
 		local tabela_anterior = esta_barra.minha_tabela
 		esta_barra.minha_tabela = tabela
 		
-		local spellname, _, spellicon = Details.GetSpellInfoC (tabela [1])
+		local spellname, _, spellicon = _GetSpellInfo (tabela [1])
 		
 		tabela.nome = spellname --> evita dar erro ao redimencionar a janela
 		tabela.minha_barra = qual_barra
@@ -1757,10 +1756,8 @@ function atributo_damage:RefreshWindow (instancia, tabela_do_combate, forcar, ex
 								local on_player = spell.targets [character.nome]
 					
 								if (on_player and on_player >= 1) then
-
-									--local spellname = _GetSpellInfo (spellid)
-									local spellname = Details.GetSpellInfoC (spellid)
-
+								
+									local spellname = _GetSpellInfo (spellid)
 									if (spellname) then
 										local has_index = bs_index_table [spellname]
 										local this_spell
@@ -2717,7 +2714,6 @@ local InBarIconPadding = 6
 	set_text_size (bar, instance)
 end
 
--- ~color ~barcolor
 --[[ exported]] function _detalhes:SetBarColors (bar, instance, r, g, b, a)
 
 	a = a or 1
@@ -2743,7 +2739,6 @@ end
 	
 end 
 
--- ~icon ~classicon ~specicon
 --[[ exported]] function _detalhes:SetClassIcon (texture, instance, classe)
 
 	if (self.spellicon) then
@@ -2786,20 +2781,13 @@ end
 		texture:SetTexCoord (0.25, 0.49609375, 0.75, 1)
 		texture:SetVertexColor (actor_class_color_r, actor_class_color_g, actor_class_color_b)
 	else
-
-		if (not Details.force_class_icons) then
-			if (instance and instance.row_info.use_spec_icons or Details.IsValidSpecId (self.spec)) then
-				if (self.spec and type (self.spec) == "number" and self.spec > 20) then
-					texture:SetTexture (instance.row_info.spec_file)
-					texture:SetTexCoord (_unpack (_detalhes.class_specs_coords [self.spec]))
-					texture:SetVertexColor (1, 1, 1)
-				else
-					texture:SetTexture (instance.row_info.icon_file or [[Interface\AddOns\Details\images\classes_small]])
-					texture:SetTexCoord (_unpack (_detalhes.class_coords [classe]))
-					texture:SetVertexColor (1, 1, 1)
-				end
+		if (instance and instance.row_info.use_spec_icons) then
+			if (self.spec) then
+				texture:SetTexture (instance.row_info.spec_file)
+				texture:SetTexCoord (_unpack (_detalhes.class_specs_coords [self.spec]))
+				texture:SetVertexColor (1, 1, 1)
 			else
-				texture:SetTexture (instance and instance.row_info.icon_file or [[Interface\AddOns\Details\images\classes_small]])
+				texture:SetTexture (instance.row_info.icon_file or [[Interface\AddOns\Details\images\classes_small]])
 				texture:SetTexCoord (_unpack (_detalhes.class_coords [classe]))
 				texture:SetVertexColor (1, 1, 1)
 			end
@@ -2972,7 +2960,7 @@ function atributo_damage:ToolTip_DamageDone (instancia, numero, barra, keydown)
 					local petName = SkillTable [4]
 					
 					local nome_magia, _, icone_magia = Details.GetSpellInfoC(spellID)
-
+					
 					if (petName) then
 						nome_magia = nome_magia .. " (|cFFCCBBBB" .. petName .. "|r)"
 					end
@@ -5160,9 +5148,9 @@ end
 				_detalhes.refresh:r_atributo_damage (actor, shadow)
 			end
 			
-			--a referï¿½ncia do .owner pode ter sido apagada?
-			--os 2 segmentos foram juntados porï¿½m a referï¿½ncia do owner de um pet criado ali em cima deve ser nula?
-			--teria que analisar se o novo objecto ï¿½ de um pet e colocar a referï¿½ncia do owner no pet novamente, ou pelo menos verificar se a referï¿½ncia ï¿½ valida
+			--a referência do .owner pode ter sido apagada?
+			--os 2 segmentos foram juntados porém a referência do owner de um pet criado ali em cima deve ser nula?
+			--teria que analisar se o novo objecto é de um pet e colocar a referência do owner no pet novamente, ou pelo menos verificar se a referência é valida
 			
 			--> tempo decorrido (captura de dados)
 				local end_time = actor.end_time
