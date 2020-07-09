@@ -30,12 +30,29 @@ do
 		WidgetType = "panel",
 		SetHook = DF.SetHook,
 		RunHooksForWidget = DF.RunHooksForWidget,
+
+		dversion = DF.dversion,
 	}
 
-	_G [DF.GlobalWidgetControlNames ["panel"]] = _G [DF.GlobalWidgetControlNames ["panel"]] or metaPrototype
+	--check if there's a metaPrototype already existing
+	if (_G[DF.GlobalWidgetControlNames["panel"]]) then
+		--get the already existing metaPrototype
+		local oldMetaPrototype = _G[DF.GlobalWidgetControlNames ["panel"]]
+		--check if is older
+		if ( (not oldMetaPrototype.dversion) or (oldMetaPrototype.dversion < DF.dversion) ) then
+			--the version is older them the currently loading one
+			--copy the new values into the old metatable
+			for funcName, _ in pairs(metaPrototype) do
+				oldMetaPrototype[funcName] = metaPrototype[funcName]
+			end
+		end
+	else
+		--first time loading the framework
+		_G[DF.GlobalWidgetControlNames ["panel"]] = metaPrototype
+	end
 end
 
-local PanelMetaFunctions = _G [DF.GlobalWidgetControlNames ["panel"]]
+local PanelMetaFunctions = _G[DF.GlobalWidgetControlNames ["panel"]]
 
 --> mixin for options functions
 DF.OptionsFunctions = {
@@ -832,6 +849,30 @@ local align_rows = function (self)
 						entry.onleave_func = row.onleave
 					end
 				end
+
+			elseif (type == "checkbox") then	
+				for i = 1, #self.scrollframe.lines do
+					local line = self.scrollframe.lines [i]
+					local checkbox = tremove (line.checkbox_available)
+					if (not checkbox) then
+						self:CreateCheckbox (line)
+						checkbox = tremove (line.checkbox_available)
+					end
+
+					tinsert (line.checkbox_inuse, checkbox)
+
+					checkbox:SetPoint ("left", line, "left", self._anchors [#self._anchors] + ((row.width - 20) / 2), 0)
+					if (sindex == rows_shown) then
+						checkbox:SetWidth (20)
+						--checkbox:SetWidth (row.width - 25)
+					else
+						checkbox:SetWidth (20)
+					end
+
+					checkbox.onenter_func = nil
+					checkbox.onleave_func = nil
+				end
+
 			elseif (type == "button") then
 				for i = 1, #self.scrollframe.lines do
 					local line = self.scrollframe.lines [i]
@@ -982,6 +1023,13 @@ local update_rows = function (self, updated_rows)
 		for i = 1, #row.button_available do
 			row.button_available[i]:Hide()
 		end
+
+		for i = #row.checkbox_inuse, 1, -1 do
+			tinsert (row.checkbox_available, tremove (row.checkbox_inuse, i))
+		end
+		for i = 1, #row.checkbox_available do
+			row.checkbox_available[i]:Hide()
+		end
 		
 		for i = #row.icon_inuse, 1, -1 do
 			tinsert (row.icon_available, tremove (row.icon_inuse, i))
@@ -1041,6 +1089,18 @@ local create_panel_entry = function (self, row)
 	editbox:SetTemplate (DF:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
 	
 	tinsert (row.entry_available, editbox)
+end
+
+local create_panel_checkbox = function (self, row)
+	--row.checkbox_available
+	row.checkbox_total = row.checkbox_total + 1
+
+	local switch = DF:NewSwitch (row, nil, "$parentCheckBox" .. row.checkbox_total, nil, 20, 20, nil, nil, false)
+	switch:SetAsCheckBox()
+
+	switch:SetTemplate(DF:GetTemplate ("switch", "OPTIONS_CHECKBOX_TEMPLATE"))
+
+	tinsert (row.checkbox_available, switch)
 end
 
 local create_panel_button = function (self, row)
@@ -1137,6 +1197,7 @@ function DF:NewFillPanel (parent, rows, name, member, w, h, total_lines, fill_ro
 	panel.CreateRowText = create_panel_text
 	panel.CreateRowEntry = create_panel_entry
 	panel.CreateRowButton = create_panel_button
+	panel.CreateCheckbox = create_panel_checkbox
 	panel.CreateRowIcon = create_panel_icon
 	panel.CreateRowTexture = create_panel_texture
 	panel.SetFillFunction = set_fill_function
@@ -1176,7 +1237,7 @@ function DF:NewFillPanel (parent, rows, name, member, w, h, total_lines, fill_ro
 				if (results and results [1]) then
 					row:Show()
 
-					local text, entry, button, icon, texture = 1, 1, 1, 1, 1
+					local text, entry, button, icon, texture, checkbox = 1, 1, 1, 1, 1, 1
 					
 					for index, t in ipairs (panel.rows) do
 						if (not t.hidden) then
@@ -1204,7 +1265,19 @@ function DF:NewFillPanel (parent, rows, name, member, w, h, total_lines, fill_ro
 								entrywidget:SetCursorPosition(0)
 								
 								entrywidget:Show()
-								
+							
+							elseif (t.type == "checkbox") then
+								local checkboxwidget = row.checkbox_inuse [button]
+								checkbox = checkbox + 1
+								checkboxwidget.index = real_index
+								checkboxwidget:SetValue(results [index])
+
+								local func = function()
+									t.func (real_index, index)
+									panel:Refresh()
+								end
+								checkboxwidget.OnSwitch = func
+
 							elseif (t.type == "button") then
 								local buttonwidget = row.button_inuse [button]
 								button = button + 1
@@ -1254,11 +1327,28 @@ function DF:NewFillPanel (parent, rows, name, member, w, h, total_lines, fill_ro
 								
 								iconwidget.line = index
 								iconwidget.index = real_index
-								
-								--print (index, results [index])
+
 								if (type (results [index]) == "string") then
 									local result = results [index]:gsub (".-%\\", "")
 									iconwidget._icon.texture = results [index]
+
+								elseif (type (results [index]) == "table") then
+									iconwidget._icon:SetTexture (results [index].texture)
+
+									local textCoord = results [index].texcoord
+									if (textCoord) then
+										iconwidget._icon:SetTexCoord (unpack(textCoord))
+									else
+										iconwidget._icon:SetTexCoord (0, 1, 0, 1)
+									end
+									
+									local color = results [index].color
+									if (color) then
+										local r, g, b, a = DF:ParseColors(color)
+										iconwidget._icon:SetVertexColor(r, g, b, a)
+									else
+										iconwidget._icon:SetVertexColor(1, 1, 1, 1)
+									end
 								else
 									iconwidget._icon:SetTexture (results [index])
 								end
@@ -1275,6 +1365,25 @@ function DF:NewFillPanel (parent, rows, name, member, w, h, total_lines, fill_ro
 								if (type (results [index]) == "string") then
 									local result = results [index]:gsub (".-%\\", "")
 									texturewidget.texture = results [index]
+								
+								elseif (type (results [index]) == "table") then
+									texturewidget:SetTexture (results [index].texture)
+
+									local textCoord = results [index].texcoord
+									if (textCoord) then
+										texturewidget:SetTexCoord (unpack(textCoord))
+									else
+										texturewidget:SetTexCoord (0, 1, 0, 1)
+									end
+									
+									local color = results [index].color
+									if (color) then
+										local r, g, b, a = DF:ParseColors(color)
+										texturewidget:SetVertexColor(r, g, b, a)
+									else
+										texturewidget:SetVertexColor(1, 1, 1, 1)
+									end
+
 								else
 									texturewidget:SetTexture (results [index])
 								end
@@ -1352,6 +1461,10 @@ function DF:NewFillPanel (parent, rows, name, member, w, h, total_lines, fill_ro
 			row.button_inuse = {}
 			row.button_total = 0
 			
+			row.checkbox_available = {}
+			row.checkbox_inuse = {}
+			row.checkbox_total = 0
+
 			row.icon_available = {}
 			row.icon_inuse = {}
 			row.icon_total = 0
@@ -1735,7 +1848,11 @@ function DF:IconPick (callback, close_when_select, param1, param2)
 					local GetSpellInfo = GetSpellInfo
 					for i = 1, #MACRO_ICON_FILENAMES do
 						local spellName = GetSpellInfo (MACRO_ICON_FILENAMES [i])
-						SPELLNAMES_CACHE [i] = spellName or "NULL"
+						if (spellName) then
+							SPELLNAMES_CACHE [i] = spellName
+						else
+							SPELLNAMES_CACHE [i] = MACRO_ICON_FILENAMES [i]
+						end
 					end
 				end
 				
@@ -4135,7 +4252,7 @@ DF.ScrollBoxFunctions.Refresh = function (self)
 	
 	local offset = 0
 	if (self.IsFauxScroll) then
-		FauxScrollFrame_Update (self, #self.data, self.LineAmount, self.LineHeight+1)
+		FauxScrollFrame_Update (self, #self.data, self.LineAmount, self.LineHeight)
 		offset = FauxScrollFrame_GetOffset (self)
 	end	
 	
@@ -5015,11 +5132,18 @@ DF.IconRowFunctions = {
 			cooldownFrame:SetFrameLevel (newIconFrame:GetFrameLevel()+1)
 			
 			newIconFrame.CountdownText = cooldownFrame:CreateFontString (nil, "overlay", "GameFontNormal")
-			newIconFrame.CountdownText:SetPoint ("center")
+			--newIconFrame.CountdownText:SetPoint ("center")
+			newIconFrame.CountdownText:SetPoint (self.options.text_anchor or "center", newIconFrame, self.options.text_rel_anchor or "center", self.options.text_x_offset or 0, self.options.text_y_offset or 0)
 			newIconFrame.CountdownText:Hide()
 			
+			newIconFrame.StackText = cooldownFrame:CreateFontString (nil, "overlay", "GameFontNormal")
+			--newIconFrame.StackText:SetPoint ("bottomright")
+			newIconFrame.StackText:SetPoint (self.options.stack_text_anchor or "center", newIconFrame, self.options.stack_text_rel_anchor or "bottomright", self.options.stack_text_x_offset or 0, self.options.stack_text_y_offset or 0)
+			newIconFrame.StackText:Hide()
+			
 			newIconFrame.Desc = newIconFrame:CreateFontString (nil, "overlay", "GameFontNormal")
-			newIconFrame.Desc:SetPoint ("bottom", newIconFrame, "top", 0, 2)
+			--newIconFrame.Desc:SetPoint ("bottom", newIconFrame, "top", 0, 2)
+			newIconFrame.Desc:SetPoint(self.options.desc_text_anchor or "bottom", newIconFrame, self.options.desc_text_rel_anchor or "top", self.options.desc_text_x_offset or 0, self.options.desc_text_y_offset or 2)
 			newIconFrame.Desc:Hide()
 			
 			newIconFrame.Cooldown = cooldownFrame
@@ -5057,7 +5181,7 @@ DF.IconRowFunctions = {
 		return iconFrame
 	end,
 	
-	SetIcon = function (self, spellId, borderColor, startTime, duration, forceTexture, descText)
+	SetIcon = function (self, spellId, borderColor, startTime, duration, forceTexture, descText, count, debuffType, caster, canStealOrPurge)
 	
 		local spellName, _, spellIcon
 	
@@ -5096,6 +5220,8 @@ DF.IconRowFunctions = {
 						formattedTime = floor (formattedTime)
 					end
 					
+					iconFrame.CountdownText:SetPoint (self.options.text_anchor or "center", iconFrame, self.options.text_rel_anchor or "center", self.options.text_x_offset or 0, self.options.text_y_offset or 0)
+					DF:SetFontSize (iconFrame.CountdownText, self.options.text_size)
 					iconFrame.CountdownText:SetText (formattedTime)
 					iconFrame.Cooldown:SetHideCountdownNumbers (true)
 				else
@@ -5110,10 +5236,22 @@ DF.IconRowFunctions = {
 				iconFrame.Desc:Show()
 				iconFrame.Desc:SetText (descText.text)
 				iconFrame.Desc:SetTextColor (DF:ParseColors (descText.text_color or self.options.desc_text_color))
+				iconFrame.Desc:SetPoint(self.options.desc_text_anchor or "bottom", iconFrame, self.options.desc_text_rel_anchor or "top", self.options.desc_text_x_offset or 0, self.options.desc_text_y_offset or 2)
 				DF:SetFontSize (iconFrame.Desc, descText.text_size or self.options.desc_text_size)
 			else
 				iconFrame.Desc:Hide()
 			end
+			
+			if (count and count > 1 and self.options.stack_text) then
+				iconFrame.StackText:Show()
+				iconFrame.StackText:SetText (count)
+				iconFrame.StackText:SetTextColor (DF:ParseColors (self.options.desc_text_color))
+				iconFrame.StackText:SetPoint (self.options.stack_text_anchor or "center", iconFrame, self.options.stack_text_rel_anchor or "bottomright", self.options.stack_text_x_offset or 0, self.options.stack_text_y_offset or 0)
+				DF:SetFontSize (iconFrame.StackText, self.options.stack_text_size)
+			else
+				iconFrame.StackText:Hide()
+			end
+			
 			
 			DFPixelUtil.SetSize (iconFrame, self.options.icon_width, self.options.icon_height)
 			iconFrame:Show()
@@ -5121,6 +5259,15 @@ DF.IconRowFunctions = {
 			--> update the size of the frame
 			self:SetWidth ((self.options.left_padding * 2) + (self.options.icon_padding * (self.NextIcon-2)) + (self.options.icon_width * (self.NextIcon - 1)))
 			self:SetHeight (self.options.icon_height + (self.options.top_padding * 2))
+
+			--> make information available
+			iconFrame.spellId = spellId
+			iconFrame.startTime = startTime
+			iconFrame.duration = duration
+			iconFrame.count = count
+			iconFrame.debuffType = debuffType
+			iconFrame.caster = caster
+			iconFrame.canStealOrPurge = canStealOrPurge
 
 			--> show the frame
 			self:Show()
@@ -5181,9 +5328,25 @@ local default_icon_row_options = {
 	texcoord = {.1, .9, .1, .9},
 	show_text = true,
 	text_color = {1, 1, 1, 1},
+	text_size = 12,
+	text_anchor = "center",
+	text_rel_anchor = "center",
+	text_x_offset = 0,
+	text_y_offset = 0,
 	desc_text = true,
 	desc_text_color = {1, 1, 1, 1},
 	desc_text_size = 7,
+	desc_text_anchor = "bottom",
+	desc_text_rel_anchor = "top",
+	desc_text_x_offset = 0,
+	desc_text_y_offset = 2,
+	stack_text = true,
+	stack_text_color = {1, 1, 1, 1},
+	stack_text_size = 10,
+	stack_text_anchor = "center",
+	stack_text_rel_anchor = "bottomright",
+	stack_text_x_offset = 0,
+	stack_text_y_offset = 0,
 	left_padding = 1, --distance between right and left
 	top_padding = 1, --distance between top and bottom 
 	icon_padding = 1, --distance between each icon
@@ -5755,6 +5918,8 @@ function DF:PassLoadFilters (loadTable, encounterID)
 	end
 	
 	--spec
+	-- todo classic: specs - ignore for now
+	--[[
 	if (loadTable.spec.Enabled) then
 		local canCheckTalents = true
 		
@@ -5779,13 +5944,15 @@ function DF:PassLoadFilters (loadTable, encounterID)
 			if (specIndex) then
 				local specID = DetailsFramework.GetSpecializationInfo (specIndex)
 				if (not loadTable.spec [specID]) then
-					return false
+					-- todo classic: specs - ignore for now
+					--return false
 				end
 			else
 				return false
 			end
 		end
 	end
+	--]]
 	
 	--race
 	if (loadTable.race.Enabled) then
@@ -5796,6 +5963,8 @@ function DF:PassLoadFilters (loadTable, encounterID)
 	end
 	
 	--talents
+	-- todo classic: talents
+	--[[
 	if (loadTable.talent.Enabled) then
 		local talentsInUse = DF:GetCharacterTalents (false, true)
 		local hasTalent
@@ -5809,8 +5978,11 @@ function DF:PassLoadFilters (loadTable, encounterID)
 			return false
 		end
 	end
+	--]]
 	
 	--pvptalent
+	-- not in classic
+	--[[
 	if (loadTable.pvptalent.Enabled) then
 		local talentsInUse = DF:GetCharacterPvPTalents (false, true)
 		local hasTalent
@@ -5824,6 +5996,7 @@ function DF:PassLoadFilters (loadTable, encounterID)
 			return false
 		end
 	end
+	--]]
 	
 	--group
 	if (loadTable.group.Enabled) then
@@ -5834,6 +6007,8 @@ function DF:PassLoadFilters (loadTable, encounterID)
 	end
 	
 	--role
+	-- todo classic: role - just ignore now
+	--[[
 	if (loadTable.role.Enabled) then
 		local assignedRole = UnitGroupRolesAssigned ("player")
 		if (assignedRole == "NONE") then
@@ -5846,8 +6021,11 @@ function DF:PassLoadFilters (loadTable, encounterID)
 			return false
 		end
 	end
+	--]]
 	
 	--affix
+	-- not in classic
+	--[[
 	if (loadTable.affix.Enabled and false) then --dont need to run on classic
 		local isInMythicDungeon = C_ChallengeMode.IsChallengeModeActive()
 		if (not isInMythicDungeon) then
@@ -5867,6 +6045,7 @@ function DF:PassLoadFilters (loadTable, encounterID)
 			return false
 		end
 	end
+	--]]
 	
 	--encounter id
 	if (loadTable.encounter_ids.Enabled) then
@@ -5995,6 +6174,8 @@ function DF:OpenLoadConditionsPanel (optionsTable, callback, frameOptions)
 			tinsert (f.AllRadioGroups, classGroup)
 		
 		--create the radio group for character spec
+		-- not in classic...
+		--[[
 			local specs = {}
 			for _, specID in ipairs (DF:GetClassSpecIDs (select (2, UnitClass ("player")))) do
 				local specID, specName, specDescription, specIcon, specBackground, specRole, specClass = DetailsFramework.GetSpecializationInfoByID (specID)
@@ -6010,6 +6191,7 @@ function DF:OpenLoadConditionsPanel (optionsTable, callback, frameOptions)
 			specGroup:SetPoint ("topleft", f, "topleft", anchorPositions.spec [1], anchorPositions.spec [2])
 			specGroup.DBKey = "spec"
 			tinsert (f.AllRadioGroups, specGroup)
+			--]]
 			
 		--create radio group for character races
 			local raceList = {}
@@ -6028,6 +6210,7 @@ function DF:OpenLoadConditionsPanel (optionsTable, callback, frameOptions)
 			
 		--create radio group for talents
 			local talentList = {}
+			-- todo: classic talents
 			for _, talentTable in ipairs (DF:GetCharacterTalents()) do
 				tinsert (talentList, {
 					name = talentTable.Name, 
@@ -6126,6 +6309,8 @@ function DF:OpenLoadConditionsPanel (optionsTable, callback, frameOptions)
 			
 		--create radio group for pvp talents
 			local pvpTalentList = {}
+			-- not in classic:
+			--[[
 			for _, talentTable in ipairs (DF:GetCharacterPvPTalents()) do
 				tinsert (pvpTalentList, {
 					name = talentTable.Name, 
@@ -6135,6 +6320,7 @@ function DF:OpenLoadConditionsPanel (optionsTable, callback, frameOptions)
 					texture = talentTable.Texture,
 				})
 			end
+			--]]
 			local pvpTalentGroup = DF:CreateRadionGroup (f, pvpTalentList, name, {width = 200, height = 200, title = "Characer PvP Talents"}, {offset_x = 150, amount_per_line = 3})
 			pvpTalentGroup:SetPoint ("topleft", f, "topleft", anchorPositions.pvptalent [1], anchorPositions.pvptalent [2])
 			pvpTalentGroup.DBKey = "pvptalent"
@@ -6238,6 +6424,8 @@ function DF:OpenLoadConditionsPanel (optionsTable, callback, frameOptions)
 			tinsert (f.AllRadioGroups, groupTypesGroup)
 		
 		--create radio for character roles
+		-- not in classic
+		--[[
 			local roleTypes = {}
 			for _, roleTable in ipairs (DF:GetRoleTypes()) do
 				tinsert (roleTypes, {
@@ -6251,8 +6439,11 @@ function DF:OpenLoadConditionsPanel (optionsTable, callback, frameOptions)
 			roleTypesGroup:SetPoint ("topleft", f, "topleft", anchorPositions.role [1], anchorPositions.role [2])
 			roleTypesGroup.DBKey = "role"
 			tinsert (f.AllRadioGroups, roleTypesGroup)
+			--]]
 		
 		--create radio group for mythic+ affixes
+		-- not in classic:
+		--[[
 			local affixes = {}
 			for i = 2, 1000 do
 				local affixName, desc, texture = C_ChallengeMode.GetAffixInfo (i)
@@ -6270,6 +6461,7 @@ function DF:OpenLoadConditionsPanel (optionsTable, callback, frameOptions)
 			affixTypesGroup:SetPoint ("topleft", f, "topleft", anchorPositions.affix [1], anchorPositions.affix [2])
 			affixTypesGroup.DBKey = "affix"
 			tinsert (f.AllRadioGroups, affixTypesGroup)
+			--]]
 		
 		--text entries functions
 			local textEntryRefresh = function (self)
@@ -6645,7 +6837,7 @@ end
 
 function DF:BuildStatusbarAuthorInfo (f)
 	
-	local authorName = DF:CreateLabel (f, "An addon by |cFFFFFFFFTercioo|r")
+	local authorName = DF:CreateLabel (f, "An addon by |cFFFFFFFFTerciob|r")
 	authorName.textcolor = "silver"
 	local discordLabel = DF:CreateLabel (f, "Discord: ")
 	discordLabel.textcolor = "silver"
@@ -6818,8 +7010,12 @@ DF.HealthFrameFunctions = {
 
 			--> register events
 			if (unit) then
-				self.currentHealth = UnitHealth (unit) or 0
-				self.currentHealthMax = UnitHealthMax (unit) or 0
+				if RealMobHealth then
+					self.currentHealth, self.currentHealthMax = RealMobHealth.GetUnitHealth(unit)
+				else
+					self.currentHealth = UnitHealth (unit) or 0
+					self.currentHealthMax = UnitHealthMax (unit) or 0
+				end
 				
 				for _, eventTable in ipairs (self.HealthBarEvents) do
 					local event = eventTable [1]
@@ -6914,13 +7110,25 @@ DF.HealthFrameFunctions = {
 
 	--colocar mais coisas aqui, um member dizendo quanto de health e o health max da unit
 	UpdateMaxHealth = function (self)
-			local maxHealth = UnitHealthMax (self.displayedUnit)
+			local maxHealth, _ = 0
+			if RealMobHealth then
+				_,  maxHealth = RealMobHealth.GetUnitHealth(self.displayedUnit)
+			else
+				maxHealth, _ = UnitHealthMax (self.displayedUnit)
+			end
 			self:SetMinMaxValues (0, maxHealth)
 			self.currentHealthMax = maxHealth
 	end,
 
 	UpdateHealth = function (self)
-		local health = UnitHealth (self.displayedUnit)
+		local health = 0
+		if RealMobHealth then
+			health, maxHealth = RealMobHealth.GetUnitHealth(self.displayedUnit)
+			self:SetMinMaxValues (0, maxHealth)
+			self.currentHealthMax = maxHealth
+		else
+			health = UnitHealth (self.displayedUnit)
+		end
 		self.currentHealth = health
 		DFPixelUtil.SetStatusBarValue (self, health)
 	end,
@@ -7539,7 +7747,7 @@ DF.CastFrameFunctions = {
 		--> check max value
 		if (not isFinished and not self.finished) then
 			if (self.casting) then
-				if (self.value >= self.maxValue or self.value < 0) then
+				if (self.value >= self.maxValue) then
 					isFinished = true
 				end
 				
@@ -7922,7 +8130,7 @@ DF.CastFrameFunctions = {
 		local name, text, texture, startTime, endTime, isTradeSkill, castID, notInterruptible, spellID = CastingInfo (unit)
 
 		if (not name) then
-			print (unit, name, text, texture, "no name, bye", type (unit))
+			--print (unit, name, text, texture, "no name, bye", type (unit))
 			return
 		end
 
@@ -7953,7 +8161,7 @@ DF.CastFrameFunctions = {
 			self:SetAlpha (1)
 			self.Icon:SetTexture (texture)
 			self.Icon:Show()
-			self.Text:SetText (text)
+			self.Text:SetText (name)
 			
 			if (self.Settings.ShowCastTime and self.Settings.CanLazyTick) then
 				self.percentText:Show()
@@ -8009,7 +8217,7 @@ DF.CastFrameFunctions = {
 			self:SetAlpha (1)
 			self.Icon:SetTexture (texture)
 			self.Icon:Show()
-			self.Text:SetText (text)
+			self.Text:SetText (name)
 			
 			if (self.Settings.ShowCastTime and self.Settings.CanLazyTick) then
 				self.percentText:Show()
@@ -8151,8 +8359,10 @@ DF.CastFrameFunctions = {
 		self.spellStartTime = startTime / 1000
 		self.spellEndTime = endTime / 1000
 		self.value = GetTime() - self.spellStartTime
+		if self.value < 0 then self.value = 0 end
 		self.maxValue = self.spellEndTime - self.spellStartTime
 		self:SetMinMaxValues (0, self.maxValue)
+		self:SetValue (self.value)
 	end,
 
 	UNIT_SPELLCAST_CHANNEL_UPDATE = function (self, unit, ...)
@@ -8195,7 +8405,10 @@ local getCastBar = function (unitId)
 		return
 	end
 
-	local castBar = plateFrame.unitFrame.castBar
+	local castBar = plateFrame.unitFrame and plateFrame.unitFrame.castBar
+	if (not castBar) then
+		return
+	end
 
 	return castBar
 end
@@ -8207,8 +8420,10 @@ local triggerCastEvent = function (castBar, event, unitId, ...)
 end
 
 local funcCast = function (event, unitId, ...)
-	triggerCastEvent (getCastBar (unitId), event, unitId)
-
+	local castBar = getCastBar (unitId)
+	if (castBar) then
+		triggerCastEvent (castBar, event, unitId)
+	end
 end
 
 fCast.UNIT_SPELLCAST_START = function (self, event, unitId, ...)
@@ -8374,10 +8589,10 @@ DF.BorderFunctions = {
 	end,
 	
 	SetBorderThickness = function (self, newThickness)
-		DFPixelUtil.SetWidth (f.leftBorder, newThickness, newThickness)
-		DFPixelUtil.SetWidth (f.rightBorder, newThickness, newThickness)
-		DFPixelUtil.SetHeight (f.topBorder, newThickness, newThickness)
-		DFPixelUtil.SetHeight (f.bottomBorder, newThickness, newThickness)
+		DFPixelUtil.SetWidth (self.leftBorder, newThickness, newThickness)
+		DFPixelUtil.SetWidth (self.rightBorder, newThickness, newThickness)
+		DFPixelUtil.SetHeight (self.topBorder, newThickness, newThickness)
+		DFPixelUtil.SetHeight (self.bottomBorder, newThickness, newThickness)
 	end,
 	
 	WidgetType = "border",
@@ -9218,7 +9433,7 @@ DF.TimeLineBlockFunctions = {
 				if (isAura) then
 					block.auraLength:Show()
 					block.auraLength:SetWidth (pixelPerSecond * isAura)
-					block:SetWidth (pixelPerSecond * isAura)
+					block:SetWidth (max (pixelPerSecond * isAura, 16))
 				else
 					block.auraLength:Hide()
 				end
@@ -9226,7 +9441,7 @@ DF.TimeLineBlockFunctions = {
 				block.background:SetVertexColor (0, 0, 0, 0)
 			else
 				block.background:SetVertexColor (unpack (color))
-				DFPixelUtil.SetSize (block, width, self:GetHeight())
+				DFPixelUtil.SetSize (block, max (width, 16), self:GetHeight())
 				block.auraLength:Hide()
 			end
 		end
@@ -9463,7 +9678,12 @@ function DF:CreateTimeLineFrame (parent, name, options, timelineOptions)
 		horizontalSlider:SetMinMaxValues (0, scrollWidth)
 		horizontalSlider:SetValue (0)
 		horizontalSlider:SetScript ("OnValueChanged", function (self)
-			frameCanvas:SetHorizontalScroll (self:GetValue())
+			local _, maxValue = horizontalSlider:GetMinMaxValues()
+			local stepValue = ceil (ceil(self:GetValue() * maxValue)/maxValue)
+			if (stepValue ~= horizontalSlider.currentValue) then
+				horizontalSlider.currentValue = stepValue
+				frameCanvas:SetHorizontalScroll (stepValue)
+			end
 		end)
 		
 		frameCanvas.horizontalSlider = horizontalSlider
@@ -9494,9 +9714,12 @@ function DF:CreateTimeLineFrame (parent, name, options, timelineOptions)
 		scaleSlider:SetValue (DF:GetRangeValue (frameCanvas.options.scale_min, frameCanvas.options.scale_max, 0.5))
 
 		scaleSlider:SetScript ("OnValueChanged", function (self)
-			local current = scaleSlider:GetValue()
-			frameCanvas.currentScale = current
-			frameCanvas:RefreshTimeLine()
+			local stepValue = ceil(self:GetValue() * 100)/100
+			if (stepValue ~= frameCanvas.currentScale) then
+				local current = stepValue
+				frameCanvas.currentScale = stepValue
+				frameCanvas:RefreshTimeLine()
+			end
 		end)
 
 	--create vertical slider
@@ -9676,6 +9899,38 @@ function DF:ShowErrorMessage (errorMessage, titleText)
 	DF.ErrorMessagePanel.FlashAnimation:Play()
 end
 
+--[[
+	DF:SetPointOffsets(frame, xOffset, yOffset)
 
+	Set an offset into the already existing offset of the frame
+	If passed xOffset:1 and yOffset:1 and the frame has 1 -1,  the new offset will be 2 -2
+	This function is great to create a 1 knob for distance
 
---functionn falsee truee breakk elsea endz 
+	@frame: a frame to have the offsets changed
+	@xOffset: the amount to apply into the x offset
+	@yOffset: the amount to apply into the y offset
+--]]
+function DF:SetPointOffsets(frame, xOffset, yOffset)
+	for i = 1, frame:GetNumPoints() do
+		local anchor1, anchorTo, anchor2, x, y = frame:GetPoint(i)
+		x = x or 0
+		y = y or 0
+
+		if (x >= 0) then
+			xOffset = x + xOffset
+
+		elseif (x < 0) then
+			xOffset = x - xOffset
+		end
+
+		if (y >= 0) then
+			yOffset = y + yOffset
+		
+		elseif (y < 0) then
+			yOffset = y - yOffset
+		end
+
+		frame:SetPoint(anchor1, anchorTo, anchor2, xOffset, yOffset)
+	end
+end
+

@@ -15,8 +15,8 @@ ChocolateBarDB = {
 		["Verminz - Genesis"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
 		["Elohssa - Stonespine"] = "Default",
-		["Vermin - Golemagg"] = "Default",
 		["Pitchwise - Genesis"] = "Default",
+		["Vermin - Golemagg"] = "Default",
 		["Kosturko - Golemagg"] = "Default",
 		["Pepecocorita - Genesis"] = "Default",
 		["Judawise - Golemagg"] = "Default",
@@ -48,6 +48,10 @@ ChocolateBarDB = {
 					["width"] = 147,
 				},
 			},
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
+			["moveFrames"] = false,
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -58,13 +62,18 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
-			["moveFrames"] = false,
-			["locked"] = false,
 			["fixedStrata"] = true,
 			["objSettings"] = {
 				["Skada"] = {
 					["enabled"] = false,
 					["barName"] = "ChocolateBar1",
+				},
+				["BugSack"] = {
+					["index"] = 1,
+					["align"] = "right",
+					["showIcon"] = false,
+					["barName"] = "ChocolateBar1",
+					["customLabel"] = "B",
 				},
 				["MoreChocolate"] = {
 					["enabled"] = false,
@@ -88,17 +97,18 @@ ChocolateBarDB = {
 					["showText"] = false,
 					["customLabel"] = "gmL",
 				},
-				["BugSack"] = {
-					["index"] = 1,
-					["align"] = "right",
-					["showIcon"] = false,
-					["barName"] = "ChocolateBar1",
-					["customLabel"] = "B",
-				},
-				["CB_ItemLevel"] = {
+				["Omen"] = {
 					["enabled"] = false,
-					["index"] = 5,
+					["showText"] = false,
 					["barName"] = "ChocolateBar1",
+					["align"] = "center",
+				},
+				["DBM"] = {
+					["showLabel"] = true,
+					["showText"] = false,
+					["barName"] = "ChocolateBar2",
+					["index"] = 1,
+					["showIcon"] = false,
 				},
 				["Leatrix_Plus"] = {
 					["widthBehavior"] = "free",
@@ -115,20 +125,23 @@ ChocolateBarDB = {
 					["index"] = 2,
 					["barName"] = "ChocolateBar1",
 				},
-				["Omen"] = {
-					["enabled"] = false,
-					["showText"] = false,
+				["gmMoney"] = {
+					["index"] = 1,
 					["barName"] = "ChocolateBar1",
-					["align"] = "center",
 				},
 				["AskMrRobot"] = {
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
 				},
-				["gmMoney"] = {
-					["index"] = 1,
+				["Questie"] = {
+					["index"] = 3,
+					["align"] = "right",
+					["showLabel"] = true,
+					["showText"] = false,
 					["barName"] = "ChocolateBar1",
+					["showIcon"] = false,
+					["customLabel"] = "Q",
 				},
 				["VuhDo"] = {
 					["showText"] = false,
@@ -155,19 +168,16 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar2",
 					["index"] = 1,
 				},
-				["Questie"] = {
-					["index"] = 3,
-					["align"] = "right",
-					["showLabel"] = true,
-					["showText"] = false,
-					["barName"] = "ChocolateBar1",
-					["showIcon"] = false,
-					["customLabel"] = "Q",
-				},
 				["MinimapIcon"] = {
 					["enabled"] = false,
 					["index"] = 1,
 					["barName"] = "ChocolateBar1",
+				},
+				["Looter"] = {
+					["index"] = 3,
+					["barName"] = "ChocolateBar1",
+					["align"] = "center",
+					["showText"] = false,
 				},
 				["BigWigs"] = {
 					["index"] = 2,
@@ -180,14 +190,13 @@ ChocolateBarDB = {
 					["index"] = 3,
 					["barName"] = "ChocolateBar1",
 				},
-				["Looter"] = {
-					["index"] = 3,
-					["barName"] = "ChocolateBar1",
-					["align"] = "center",
+				["TradeSkillMaster"] = {
+					["align"] = "right",
+					["showLabel"] = true,
 					["showText"] = false,
-				},
-				["Outfitter"] = {
 					["barName"] = "ChocolateBar1",
+					["showIcon"] = false,
+					["customLabel"] = "TSM",
 				},
 				["Prat"] = {
 					["enabled"] = false,
@@ -196,17 +205,17 @@ ChocolateBarDB = {
 					["align"] = "right",
 					["index"] = 3,
 				},
-				["TestNoText"] = {
-					["enabled"] = false,
-					["index"] = 4,
-					["barName"] = "ChocolateBar1",
-				},
 				["Details!"] = {
 					["widthBehavior"] = "free",
 					["align"] = "center",
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["index"] = 3,
+				},
+				["TestNoText"] = {
+					["enabled"] = false,
+					["index"] = 4,
+					["barName"] = "ChocolateBar1",
 				},
 				["AtlasLoot"] = {
 					["index"] = 2,
@@ -217,18 +226,17 @@ ChocolateBarDB = {
 					["showText"] = false,
 					["customLabel"] = "AL",
 				},
+				["Outfitter"] = {
+					["barName"] = "ChocolateBar1",
+				},
 				["picoFPS"] = {
 					["index"] = 1,
 					["barName"] = "ChocolateBar2",
 					["align"] = "right",
 				},
-				["TradeSkillMaster"] = {
-					["align"] = "right",
-					["showLabel"] = true,
-					["showText"] = false,
+				["DetailsStreamer"] = {
+					["enabled"] = false,
 					["barName"] = "ChocolateBar1",
-					["showIcon"] = false,
-					["customLabel"] = "TSM",
 				},
 				["Dugi"] = {
 					["barName"] = "ChocolateBar1",
@@ -238,28 +246,24 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
 				},
-				["DBM"] = {
-					["showLabel"] = true,
-					["showText"] = false,
-					["barName"] = "ChocolateBar2",
-					["index"] = 1,
-					["showIcon"] = false,
+				["CB_ItemLevel"] = {
+					["enabled"] = false,
+					["index"] = 5,
+					["barName"] = "ChocolateBar1",
 				},
 			},
-			["fontName"] = "Friz Quadrata TT",
 			["desaturated"] = false,
+			["gap"] = 5,
 			["forceColor"] = false,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
-			["gap"] = 5,
+			["fontName"] = "Friz Quadrata TT",
 			["textOffset"] = 2,
 			["height"] = 20,
 			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
+			["locked"] = false,
 			["textColor"] = {
 				["a"] = 1,
 				["r"] = 1,
@@ -276,8 +280,8 @@ CB_PlayedTime = {
 	["Whatevs-"] = {
 		["total"] = 213,
 	},
-	["Paydo-"] = {
-		["total"] = 18945,
+	["Mxyz-"] = {
+		["total"] = 280,
 	},
 	["Elohssa-"] = {
 		["total"] = 3552,
@@ -285,14 +289,14 @@ CB_PlayedTime = {
 	["Verminz-"] = {
 		["total"] = 311368,
 	},
-	["Mxyz-"] = {
-		["total"] = 280,
+	["Paydo-"] = {
+		["total"] = 18945,
 	},
 	["Dotwise-"] = {
 		["total"] = 3924,
 	},
 	["Vermin-"] = {
-		["total"] = 32431,
+		["total"] = 37381,
 	},
 	["Ozrencic-"] = {
 		["total"] = 853,

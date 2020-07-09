@@ -278,8 +278,8 @@ ClassicAuraDurations: enabled
 ClassicCastbars: enabled
 ClassicCastbars_Options: enabled
 Details_TinyThreat: enabled
-InFlight: enabled
-InFlight_Load: enabled
+InFlight: disabled
+InFlight_Load: disabled
 TomTom: enabled
 WeaponSwingTimer: enabled
 nHealth: enabled

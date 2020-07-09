@@ -158,28 +158,32 @@
 	--> try to get the actor class from name
 	local function get_actor_class (novo_objeto, nome, flag, serial)
 		--> get spec
-		if (_detalhes.track_specs) then
+		--if (_detalhes.track_specs) then
 			local have_cached = _detalhes.cached_specs [serial]
 			if (have_cached) then
-				novo_objeto.spec = have_cached
-				--> check is didn't changed the spec:
+				if (Details.IsValidSpecId (have_cached)) then
+					novo_objeto.spec = have_cached
+				end
+
+				--> check if didn't changed the spec:
 				if (_detalhes.streamer_config.quick_detection) then
 					--> validate the spec more times if on quick detection
-					_detalhes:ScheduleTimer ("ReGuessSpec", 2, {novo_objeto, self})
-					_detalhes:ScheduleTimer ("ReGuessSpec", 4, {novo_objeto, self})
-					_detalhes:ScheduleTimer ("ReGuessSpec", 6, {novo_objeto, self})
+					--_detalhes:ScheduleTimer ("ReGuessSpec", 2, {novo_objeto, self})
+					--_detalhes:ScheduleTimer ("ReGuessSpec", 4, {novo_objeto, self})
+					--_detalhes:ScheduleTimer ("ReGuessSpec", 6, {novo_objeto, self})
 				end
-				_detalhes:ScheduleTimer ("ReGuessSpec", 15, {novo_objeto, self})
+
+				--_detalhes:ScheduleTimer ("ReGuessSpec", 15, {novo_objeto, self})
 				--print (nome, "spec em cache:", have_cached)
 			else
 				if (_detalhes.streamer_config.quick_detection) then
 					--> shoot detection early if in quick detection
-					_detalhes:ScheduleTimer ("GuessSpec", 1, {novo_objeto, self, 1})
+					--_detalhes:ScheduleTimer ("GuessSpec", 1, {novo_objeto, self, 1})
 				else
-					_detalhes:ScheduleTimer ("GuessSpec", 3, {novo_objeto, self, 1})
+					--_detalhes:ScheduleTimer ("GuessSpec", 3, {novo_objeto, self, 1})
 				end
 			end
-		end
+		--end
 	
 		local _, engClass = _UnitClass (nome or "")
 
@@ -471,6 +475,11 @@
 	end
 	--]]
 	
+	--english alias
+	function container_combatentes:GetOrCreateActor (serial, nome, flag, criar)
+		return self:PegarCombatente (serial, nome, flag, criar)
+	end
+
 	function container_combatentes:PegarCombatente (serial, nome, flag, criar)
 
 		--[[statistics]]-- _detalhes.statistics.container_calls = _detalhes.statistics.container_calls + 1

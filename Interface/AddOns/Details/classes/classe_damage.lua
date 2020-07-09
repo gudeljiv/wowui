@@ -554,7 +554,7 @@
 			if (not is_custom_spell) then
 				for spellid, spell in pairs (character.spells._ActorTable) do
 					if (spellid ~= from_spell) then
-						local spellname = select (1, GetSpellInfo (spellid))
+						local spellname = Details.GetSpellInfoC (spellid)
 						if (spellname == from_spellname) then
 							for targetname, amount in pairs (spell.targets) do
 						
@@ -596,7 +596,7 @@
 
 		GameCooltip:SetOption ("StatusBarTexture", "Interface\\AddOns\\Details\\images\\bar_serenity")
 
-		local spellname, _, spellicon = select (1, _GetSpellInfo (from_spell))
+		local spellname, _, spellicon = Details.GetSpellInfoC (from_spell)  --select (1, _GetSpellInfo (from_spell))
 		GameCooltip:AddLine (spellname .. " " .. Loc ["STRING_CUSTOM_ATTRIBUTE_DAMAGE"], nil, nil, headerColor, nil, 10)
 		GameCooltip:AddIcon (spellicon, 1, 1, 14, 14, 0.078125, 0.921875, 0.078125, 0.921875)
 		GameCooltip:AddIcon ([[Interface\AddOns\Details\images\key_shift]], 1, 2, _detalhes.tooltip_key_size_width, _detalhes.tooltip_key_size_height, 0, 1, 0, 0.640625, _detalhes.tooltip_key_overlay2)
@@ -652,11 +652,12 @@
 		local total, top, amount = 0, 0, 0
 		--> hold the targets
 		local Targets = {}
-		
+
 		local from_spell = @SPELLID@
 		local from_spellname
+
 		if (from_spell) then
-			from_spellname = select (1, GetSpellInfo (from_spell))
+			from_spellname = Details.GetSpellInfoC (from_spell)
 		end
 
 		--> get a list of all damage actors
@@ -891,7 +892,7 @@
 		local tabela_anterior = esta_barra.minha_tabela
 		esta_barra.minha_tabela = tabela
 		
-		local spellname, _, spellicon = _GetSpellInfo (tabela [1])
+		local spellname, _, spellicon = Details.GetSpellInfoC (tabela [1])
 		
 		tabela.nome = spellname --> evita dar erro ao redimencionar a janela
 		tabela.minha_barra = qual_barra
@@ -1756,8 +1757,10 @@ function atributo_damage:RefreshWindow (instancia, tabela_do_combate, forcar, ex
 								local on_player = spell.targets [character.nome]
 					
 								if (on_player and on_player >= 1) then
-								
-									local spellname = _GetSpellInfo (spellid)
+
+									--local spellname = _GetSpellInfo (spellid)
+									local spellname = Details.GetSpellInfoC (spellid)
+
 									if (spellname) then
 										local has_index = bs_index_table [spellname]
 										local this_spell
@@ -1814,8 +1817,6 @@ function atributo_damage:RefreshWindow (instancia, tabela_do_combate, forcar, ex
 											end
 											this_spell [2] = this_spell [2] + on_player
 											total = total + on_player
-										else
-											error ("error - no spell id for DTBS friendly fire " .. spellid)
 										end
 									end
 								end
@@ -2034,6 +2035,12 @@ function atributo_damage:RefreshWindow (instancia, tabela_do_combate, forcar, ex
 					return _detalhes:EsconderBarrasNaoUsadas (instancia, showing), "", 0, 0
 				end
 			
+				for i = 1, #conteudo do
+					if (type(conteudo[i][keyName]) == "string") then
+						conteudo[i][keyName] = 0
+					end
+				end
+
 				_table_sort (conteudo, _detalhes.SortKeySimple)
 			
 				if (conteudo[1][keyName] < 1) then
@@ -2052,6 +2059,12 @@ function atributo_damage:RefreshWindow (instancia, tabela_do_combate, forcar, ex
 					atributo_damage:ContainerRefreshDps (conteudo, combat_time)
 				end
 
+				for i = 1, #conteudo do
+					if (type(conteudo[i][keyName]) == "string") then
+						conteudo[i][keyName] = 0
+					end
+				end
+				
 				_table_sort (conteudo, _detalhes.SortKeyGroup)
 			end
 			--
@@ -2714,6 +2727,7 @@ local InBarIconPadding = 6
 	set_text_size (bar, instance)
 end
 
+-- ~color ~barcolor
 --[[ exported]] function _detalhes:SetBarColors (bar, instance, r, g, b, a)
 
 	a = a or 1
@@ -2739,6 +2753,7 @@ end
 	
 end 
 
+-- ~icon ~classicon ~specicon
 --[[ exported]] function _detalhes:SetClassIcon (texture, instance, classe)
 
 	if (self.spellicon) then
@@ -2781,13 +2796,21 @@ end
 		texture:SetTexCoord (0.25, 0.49609375, 0.75, 1)
 		texture:SetVertexColor (actor_class_color_r, actor_class_color_g, actor_class_color_b)
 	else
-		if (instance and instance.row_info.use_spec_icons) then
-			if (self.spec) then
-				texture:SetTexture (instance.row_info.spec_file)
-				texture:SetTexCoord (_unpack (_detalhes.class_specs_coords [self.spec]))
-				texture:SetVertexColor (1, 1, 1)
+
+		if (not Details.force_class_icons) then
+			if (instance and instance.row_info.use_spec_icons or Details.IsValidSpecId (self.spec)) then
+				if (self.spec and type (self.spec) == "number" and self.spec > 20) then
+					texture:SetTexture (instance.row_info.spec_file)
+					texture:SetTexCoord (_unpack (_detalhes.class_specs_coords [self.spec]))
+					texture:SetVertexColor (1, 1, 1)
+				else
+					texture:SetTexture (instance.row_info.icon_file or [[Interface\AddOns\Details\images\classes_small]])
+					texture:SetTexCoord (_unpack (_detalhes.class_coords [classe]))
+					texture:SetVertexColor (1, 1, 1)
+				end
 			else
-				texture:SetTexture (instance.row_info.icon_file or [[Interface\AddOns\Details\images\classes_small]])
+				texture:SetTexture (instance and instance.row_info.icon_file or [[Interface\AddOns\Details\images\classes_small]])
+				classe = classe:upper()
 				texture:SetTexCoord (_unpack (_detalhes.class_coords [classe]))
 				texture:SetVertexColor (1, 1, 1)
 			end
@@ -2960,7 +2983,7 @@ function atributo_damage:ToolTip_DamageDone (instancia, numero, barra, keydown)
 					local petName = SkillTable [4]
 					
 					local nome_magia, _, icone_magia = Details.GetSpellInfoC(spellID)
-					
+
 					if (petName) then
 						nome_magia = nome_magia .. " (|cFFCCBBBB" .. petName .. "|r)"
 					end
@@ -4473,15 +4496,12 @@ function atributo_damage:MontaDetalhesDamageTaken (nome, barra)
 end
 
 ------ Detalhe Info Damage Done e Dps
---local defenses_table = {c = {117/255, 58/255, 0/255}, p = 0}
---local normal_table = {c = {255/255, 180/255, 0/255, 0.5}, p = 0}
---local multistrike_table = {c = {223/255, 249/255, 45/255, 0.5}, p = 0}
---local critical_table = {c = {249/255, 74/255, 45/255, 0.5}, p = 0}
 
 local defenses_table = {c = {1, 1, 1, 0.5}, p = 0}
 local normal_table = {c = {1, 1, 1, 0.5}, p = 0}
 local multistrike_table = {c = {1, 1, 1, 0.5}, p = 0}
 local critical_table = {c = {1, 1, 1, 0.5}, p = 0}
+local miss_table = {c = {1, 1, 1, 0.5}, p = 0}
 
 local data_table = {}
 local t1, t2, t3, t4 = {}, {}, {}, {}
@@ -4554,6 +4574,7 @@ function atributo_damage:MontaDetalhesDamageDone (spellid, barra, instancia)
 	end
 	
 	--> icone direito superior
+
 	local _, _, icone = Details.GetSpellInfoC (spellid)
 
 	_detalhes.janela_info.spell_icone:SetTexture (icone)
@@ -4693,6 +4714,7 @@ function atributo_damage:MontaDetalhesDamageDone (spellid, barra, instancia)
 		local outros_desvios = esta_magia.g_amt + esta_magia.b_amt
 		local parry = esta_magia ["PARRY"] or 0
 		local dodge = esta_magia ["DODGE"] or 0
+		
 		local erros = parry + dodge
 
 		if (outros_desvios > 0 or erros > 0) then
@@ -4712,6 +4734,26 @@ function atributo_damage:MontaDetalhesDamageDone (spellid, barra, instancia)
 			t3[8] = (outros_desvios+erros) .. " / " .. _cstr ("%.1f", porcentagem_defesas) .. "%"
 
 		end
+
+	--> miss
+		local miss = esta_magia ["MISS"] or 0
+		if (miss and miss > 0) then
+			local missPercent = miss / total_hits * 100
+
+			data [#data+1] = t4
+			miss_table.p = missPercent
+			
+			t4[1] = miss
+			t4[2] = miss_table
+			t4[3] = MISS or "Miss"
+			t4[4] = (MISS or "Miss") .. ": " .. miss .. " (" .. _math_floor (esta_magia.MISS / esta_magia.counter * 100) .. "%)"
+			t4[5] = ""
+			t4[6] = ""
+			t4[7] = ""
+			t4[8] = (miss) .. " / " .. _cstr ("%.1f", missPercent) .. "%"
+		end
+
+
 	
 	--> multistrike
 		--[=[
@@ -5148,9 +5190,9 @@ end
 				_detalhes.refresh:r_atributo_damage (actor, shadow)
 			end
 			
-			--a referência do .owner pode ter sido apagada?
-			--os 2 segmentos foram juntados porém a referência do owner de um pet criado ali em cima deve ser nula?
-			--teria que analisar se o novo objecto é de um pet e colocar a referência do owner no pet novamente, ou pelo menos verificar se a referência é valida
+			--a referï¿½ncia do .owner pode ter sido apagada?
+			--os 2 segmentos foram juntados porï¿½m a referï¿½ncia do owner de um pet criado ali em cima deve ser nula?
+			--teria que analisar se o novo objecto ï¿½ de um pet e colocar a referï¿½ncia do owner no pet novamente, ou pelo menos verificar se a referï¿½ncia ï¿½ valida
 			
 			--> tempo decorrido (captura de dados)
 				local end_time = actor.end_time

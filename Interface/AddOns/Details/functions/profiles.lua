@@ -916,6 +916,7 @@ local default_profile = {
 		disable_stretch_button = false,
 		disable_alldisplays_window = false,
 		damage_taken_everything = false,
+		force_class_icons = false,
 	
 	--> info window
 		player_details_window = {
@@ -1134,7 +1135,7 @@ local default_profile = {
 			border_color = {0, 0, 0, 1},
 			border_size = 14,
 			
-			tooltip_max_abilities = 8,
+			tooltip_max_abilities = 6,
 			tooltip_max_targets = 2,
 			tooltip_max_pets = 2,
 			
@@ -1271,6 +1272,7 @@ local default_global_data = {
 		realm_sync = true,
 		spell_school_cache = {},
 		global_plugin_database = {},
+		data_sync = false,
 		
 	--> death log
 		show_totalhitdamage_on_overkill = false,
@@ -1311,6 +1313,7 @@ local default_global_data = {
 		
 	--> ilvl
 		item_level_pool = {},
+		disable_talent_feature = false,
 		
 	--> latest report
 		latest_report_table = {},
@@ -1390,6 +1393,10 @@ local default_global_data = {
 	
 	--> dungeon information - can be accessed by plugins and third party mods
 		dungeon_data = {},
+
+	--> mobs data
+		mobs_data = {},
+		mobs_data_compiled = {},
 	
 	--> raid information - can be accessed by plugins and third party mods
 		raid_data = {},

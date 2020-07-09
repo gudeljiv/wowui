@@ -42,6 +42,8 @@
 	local modo_ALL = _detalhes.modos.all
 	local class_type_dano = _detalhes.atributos.dano
 	local OBJECT_TYPE_PETS = 0x00003000
+
+	local CONST_EQUALIZE_ERROR_THRESHOLD = 20
 	
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --> details api functions
@@ -62,6 +64,35 @@
 				end
 			end
 			
+			-- ~bossdetection ~classic
+			local libBossIds = LibStub:GetLibrary("LibBossIDs-1.0")
+			if (not libBossIds) then
+				Details:Msg ("failed to load LibBossIDs-1.0, did you restared Details! after updating?")
+				return Loc ["STRING_UNKNOW"]
+			end
+
+			for _, actor in _ipairs (_detalhes.tabela_vigente[class_type_dano]._ActorTable) do 
+				if (actor:IsEnemy()) then
+					local npcId = _detalhes:GetNpcIdFromGuid (actor.serial)
+					if (npcID) then
+						if (libBossIds and libBossIds.BossIDs[npcID]) then 
+							local boss_table = {
+								index = 1,
+								name = actor:GetName(),
+								encounter = actor:GetName(),
+								zone = ZoneName,
+								mapid = ZoneMapID,
+								diff = 16,
+								diff_string = "normal",
+								ej_instance_id = 0,
+								id = 0,
+							}
+							_detalhes.tabela_vigente.is_boss = boss_table
+						end
+					end
+				end
+			end
+
 			for _, actor in _ipairs (_detalhes.tabela_vigente[class_type_dano]._ActorTable) do 
 			
 				if (not actor.grupo and not actor.owner and not actor.nome:find ("[*]") and _bit_band (actor.flag_original, 0x00000060) ~= 0) then --> 0x20+0x40 neutral + enemy reaction
@@ -260,7 +291,7 @@
 		
 			local ZoneName, InstanceType, DifficultyID, _, _, _, _, ZoneMapID = _GetInstanceInfo()
 			local BossIds = _detalhes:GetBossIds (ZoneMapID)
-			
+
 			if (BossIds) then
 				local BossIndex = nil
 				local ActorsContainer = _detalhes.tabela_vigente [class_type_dano]._ActorTable
@@ -276,6 +307,30 @@
 									return boss_found (BossIndex, _detalhes:GetBossName (ZoneMapID, BossIndex), ZoneName, ZoneMapID, DifficultyID)
 								end
 							end
+						end
+					end
+				end
+			end
+
+			-- ~bossdetection ~classic
+			local libBossIds = LibStub("LibBossIDs-1.0")
+			for _, actor in _ipairs (_detalhes.tabela_vigente[class_type_dano]._ActorTable) do 
+				if (actor:IsEnemy()) then
+					local npcId = _detalhes:GetNpcIdFromGuid (actor.serial)
+					if (npcId) then
+						if (libBossIds and libBossIds.BossIDs[npcId]) then 
+							local boss_table = {
+								index = 1,
+								name = actor:GetName(),
+								encounter = actor:GetName(),
+								zone = ZoneName,
+								mapid = ZoneMapID,
+								diff = 16,
+								diff_string = "normal",
+								ej_instance_id = 0,
+								id = 0,
+							}
+							_detalhes.tabela_vigente.is_boss = boss_table
 						end
 					end
 				end
@@ -315,6 +370,10 @@
 				_detalhes:Msg ("(debug) |cFFFFFF00started a new combat|r|cFFFF7700", _detalhes.encounter_table and _detalhes.encounter_table.name or "")
 				--local from = debugstack (2, 1, 0)
 				--print (from)
+			end
+
+			if (_detalhes.last_combat_unequalized) then
+				table.wipe (_detalhes.last_combat_unequalized)
 			end
 
 			if (not _detalhes.tabela_historico.tabelas[1]) then 
@@ -409,7 +468,6 @@
 			--> hide / alpha / switch in combat
 			for index, instancia in ipairs (_detalhes.tabela_instancias) do 
 				if (instancia.ativa) then
-					--instancia:SetCombatAlpha (nil, nil, true) --passado para o regen disable
 					instancia:CheckSwitchOnCombatStart (true)
 				end
 			end
@@ -730,7 +788,9 @@
 					end
 					
 					--> schedule sync
-					_detalhes:EqualizeActorsSchedule (_detalhes.host_of)
+					--_detalhes:EqualizeActorsSchedule (_detalhes.host_of)
+
+					--> grab the equilize state from the registered boss
 					if (_detalhes:GetEncounterEqualize (_detalhes.tabela_vigente.is_boss.mapid, _detalhes.tabela_vigente.is_boss.index)) then
 						_detalhes:ScheduleTimer ("DelayedSyncAlert", 3)
 					end
@@ -756,6 +816,11 @@
 				--8.0.1 miss data isn't required at the moment, spells like akari's soul has been removed from the game
 				--_detalhes:CanSendMissData()
 				
+				if ((_detalhes.data_sync or true) and zoneType == "raid") then
+					_detalhes:SendRaidDataNonEqualizedSchedule()
+					_detalhes:EqualizeActorsSchedule (false)
+				end
+
 				if (_detalhes.tabela_vigente.is_boss) then
 					if (IsInRaid()) then
 						local cleuID = _detalhes.tabela_vigente.is_boss.id
@@ -881,7 +946,6 @@
 			--> hide / alpha in combat
 			for index, instancia in ipairs (_detalhes.tabela_instancias) do 
 				if (instancia.ativa) then
-					--instancia:SetCombatAlpha (nil, nil, true) --passado para o regen enabled
 					if (instancia.auto_switch_to_old) then
 						instancia:CheckSwitchOnCombatEnd()
 					end
@@ -1170,107 +1234,172 @@
 			end
 		end
 		
+		--> received data from another player
 		function _detalhes:MakeEqualizeOnActor (player, realm, receivedActor)
 		
-			if (true) then --> disabled for testing
+			--if (true) then --> disabled for testing
+				--return
+			--end
+
+			local ZoneName, InstanceType, DifficultyID, _, _, _, _, ZoneMapID = _GetInstanceInfo()
+			if (InstanceType ~= "raid") then
 				return
 			end
-		
-			local combat = _detalhes:GetCombat ("current")
-			local damage, heal, energy, misc = _detalhes:GetAllActors ("current", player)
+
+			if (not IsInRaid()) then
+				return
+			end
 			
-			if (not damage and not heal and not energy and not misc) then
-			
-				--> try adding server name
-				damage, heal, energy, misc = _detalhes:GetAllActors ("current", player.."-"..realm)
+			local result, errorText = pcall (function()
+
+				local combat = _detalhes:GetCombat ("current")
+				local damage, heal, energy, misc = _detalhes:GetAllActors ("current", player)
 				
 				if (not damage and not heal and not energy and not misc) then
-					--> not found any actor object, so we need to create
+				
+					--> try adding server name
+					damage, heal, energy, misc = _detalhes:GetAllActors ("current", player.."-"..realm)
 					
-					local actorName
-					
-					if (realm ~= GetRealmName()) then
-						actorName = player.."-"..realm
-					else
-						actorName = player
-					end
-					
-					local guid = _detalhes:FindGUIDFromName (player)
-					
-					-- 0x512 normal party
-					-- 0x514 normal raid
-					
-					if (guid) then
-						damage = combat [1]:PegarCombatente (guid, actorName, 0x514, true)
-						heal = combat [2]:PegarCombatente (guid, actorName, 0x514, true)
-						energy = combat [3]:PegarCombatente (guid, actorName, 0x514, true)
-						misc = combat [4]:PegarCombatente (guid, actorName, 0x514, true)
+					if (not damage and not heal and not energy and not misc) then
+						--> not found any actor object, so we need to create
 						
-						if (_detalhes.debug) then
-							_detalhes:Msg ("(debug) equalize received actor:", actorName, damage, heal)
+						local actorName
+						
+						if (realm ~= GetRealmName()) then
+							actorName = player.."-"..realm
+						else
+							actorName = player
 						end
-					else
-						if (_detalhes.debug) then
-							_detalhes:Msg ("(debug) equalize couldn't get guid for player ",player)
+						
+						local guid = _detalhes:FindGUIDFromName (player)
+						
+						-- 0x512 normal party
+						-- 0x514 normal raid
+						
+						if (guid) then
+							damage = combat [1]:PegarCombatente (guid, actorName, 0x514, true)
+							heal = combat [2]:PegarCombatente (guid, actorName, 0x514, true)
+							energy = combat [3]:PegarCombatente (guid, actorName, 0x514, true)
+							misc = combat [4]:PegarCombatente (guid, actorName, 0x514, true)
+							
+							if (_detalhes.debug) then
+								_detalhes:Msg ("(debug) equalize received actor:", actorName, damage, heal)
+							end
+						else
+							if (_detalhes.debug) then
+								_detalhes:Msg ("(debug) equalize couldn't get guid for player ",player)
+							end
 						end
 					end
 				end
-			end
-			
-			combat[1].need_refresh = true
-			combat[2].need_refresh = true
-			combat[3].need_refresh = true
-			combat[4].need_refresh = true
-			
-			if (damage) then
-				if (damage.total < receivedActor [1][1]) then
-					if (_detalhes.debug) then
-						_detalhes:Msg (player .. " damage before: " .. damage.total .. " damage received: " .. receivedActor [1][1])
+				
+				combat[1].need_refresh = true
+				combat[2].need_refresh = true
+				--combat[3].need_refresh = true
+				combat[4].need_refresh = true
+
+				if (not damage) then
+					return
+				end
+				
+				if (receivedActor [1] and receivedActor [1][1]) then
+
+					local damagesUnEquelized = _detalhes.last_combat_unequalized [player]
+					local playerDamage = floor (receivedActor [1][1] / CONST_EQUALIZE_ERROR_THRESHOLD)
+
+					if (not damagesUnEquelized or not damagesUnEquelized [playerDamage]) then
+						return
 					end
-					damage.total = receivedActor [1][1]
+
+					if (damagesUnEquelized [playerDamage] < 3) then
+						return
+					end
+
+					if (damage.total < receivedActor [1][1]) then
+						if (_detalhes.debug) then
+							_detalhes:Msg (player .. " damage before: " .. damage.total .. " damage received: " .. receivedActor [1][1])
+						end
+						damage.total = receivedActor [1][1]
+					end
+					if (damage.damage_taken < receivedActor [1][2]) then
+						damage.damage_taken = receivedActor [1][2]
+					end
+					if (damage.friendlyfire_total < receivedActor [1][3]) then
+						damage.friendlyfire_total = receivedActor [1][3]
+					end
+
+					local damageSpells = receivedActor [5]
+					if (damageSpells) then
+						local damageActor = damage
+						for spellName, dataTable in pairs (damageSpells) do
+							local spell = damageActor.spells._ActorTable [spellName]
+							if (not spell) then
+								spell = damageActor.spells:PegaHabilidade (spellName, true, "SPELL_DAMAGE")
+							end
+
+							spell.total = dataTable [1]
+							spell.counter = dataTable [2]
+							spell.c_amt = dataTable [3]
+							spell.spellschool = dataTable [4] or 1
+						end
+					end
 				end
-				if (damage.damage_taken < receivedActor [1][2]) then
-					damage.damage_taken = receivedActor [1][2]
+				
+				if (heal) then
+					if (heal.total < receivedActor [2][1]) then
+						heal.total = receivedActor [2][1]
+					end
+					if (heal.totalover < receivedActor [2][2]) then
+						heal.totalover = receivedActor [2][2]
+					end
+					if (heal.healing_taken < receivedActor [2][3]) then
+						heal.healing_taken = receivedActor [2][3]
+					end
+
+					local healingSpells = receivedActor [6]
+					if (healingSpells) then
+						local healingActor = heal
+						for spellName, dataTable in pairs (healingSpells) do
+							local spell = healingActor.spells._ActorTable [spellName]
+							if (not spell) then
+								spell = healingActor.spells:PegaHabilidade (spellName, true, "SPELL_HEAL")
+							end
+
+							spell.total = dataTable [1]
+							spell.counter = dataTable [2]
+							spell.c_amt = dataTable [3]
+						end
+					end
 				end
-				if (damage.friendlyfire_total < receivedActor [1][3]) then
-					damage.friendlyfire_total = receivedActor [1][3]
+				
+				if (energy and false) then --deprecated
+					if (energy.mana and (receivedActor [3][1] > 0 and energy.mana < receivedActor [3][1])) then
+						energy.mana = receivedActor [3][1]
+					end
+					if (energy.e_rage and (receivedActor [3][2] > 0 and energy.e_rage < receivedActor [3][2])) then
+						energy.e_rage = receivedActor [3][2]
+					end
+					if (energy.e_energy and (receivedActor [3][3] > 0 and energy.e_energy < receivedActor [3][3])) then
+						energy.e_energy = receivedActor [3][3]
+					end
+					if (energy.runepower and (receivedActor [3][4] > 0 and energy.runepower < receivedActor [3][4])) then
+						energy.runepower = receivedActor [3][4]
+					end
 				end
-			end
-			
-			if (heal) then
-				if (heal.total < receivedActor [2][1]) then
-					heal.total = receivedActor [2][1]
+				
+				if (misc) then
+					if (misc.interrupt and (receivedActor [4][1] > 0 and misc.interrupt < receivedActor [4][1])) then
+						misc.interrupt = receivedActor [4][1]
+					end
+					if (misc.dispell and (receivedActor [4][2] > 0 and misc.dispell < receivedActor [4][2])) then
+						misc.dispell = receivedActor [4][2]
+					end
 				end
-				if (heal.totalover < receivedActor [2][2]) then
-					heal.totalover = receivedActor [2][2]
-				end
-				if (heal.healing_taken < receivedActor [2][3]) then
-					heal.healing_taken = receivedActor [2][3]
-				end
-			end
-			
-			if (energy) then
-				if (energy.mana and (receivedActor [3][1] > 0 and energy.mana < receivedActor [3][1])) then
-					energy.mana = receivedActor [3][1]
-				end
-				if (energy.e_rage and (receivedActor [3][2] > 0 and energy.e_rage < receivedActor [3][2])) then
-					energy.e_rage = receivedActor [3][2]
-				end
-				if (energy.e_energy and (receivedActor [3][3] > 0 and energy.e_energy < receivedActor [3][3])) then
-					energy.e_energy = receivedActor [3][3]
-				end
-				if (energy.runepower and (receivedActor [3][4] > 0 and energy.runepower < receivedActor [3][4])) then
-					energy.runepower = receivedActor [3][4]
-				end
-			end
-			
-			if (misc) then
-				if (misc.interrupt and (receivedActor [4][1] > 0 and misc.interrupt < receivedActor [4][1])) then
-					misc.interrupt = receivedActor [4][1]
-				end
-				if (misc.dispell and (receivedActor [4][2] > 0 and misc.dispell < receivedActor [4][2])) then
-					misc.dispell = receivedActor [4][2]
-				end
+
+			end)
+
+			if (not result) then
+				Details:Msg ("Error 0x1424: " .. (errorText or "Unhandled exception."))
 			end
 		end
 		
@@ -1287,6 +1416,10 @@
 			end
 		end
 		
+		function _detalhes:SendRaidDataNonEqualizedSchedule()
+			_detalhes:ScheduleTimer ("SendNonEqualizedData", 0.5+math.random())
+		end
+
 		function _detalhes:EqualizeActorsSchedule (host_of)
 		
 			--> store pets sent through 'needpetowner'
@@ -1301,15 +1434,28 @@
 
 			--> do not equilize if there is any disabled capture
 			--if (_detalhes:CaptureIsAllEnabled()) then
-				_detalhes:ScheduleTimer ("EqualizeActors", 2+math.random()+math.random() , host_of)
+				_detalhes:ScheduleTimer ("EqualizeActors", 2.5+math.random()+math.random() , host_of)
 			--end
 		end
 		
 		function _detalhes:EqualizeActors (host_of)
 		
-			--> Disabling the sync. Since WoD combatlog are sent between player on phased zones during encounters.
 			if (not host_of or true) then --> full disabled for testing
+				--return
+			end
+
+			--classic: do not use a host
+			if (host_of) then
 				return
+			end
+
+			if (not IsInRaid() and not IsInGroup()) then
+				return
+			end
+
+			local ZoneName, InstanceType, DifficultyID, _, _, _, _, ZoneMapID = _GetInstanceInfo()
+			if (InstanceType ~= "raid") then
+				return;
 			end
 		
 			if (_detalhes.debug) then
@@ -1317,6 +1463,7 @@
 			end
 		
 			local damage, heal, energy, misc
+			local damageSpells, healingSpells = {}, {}
 		
 			if (host_of) then
 				damage, heal, energy, misc = _detalhes:GetAllActors ("current", host_of)
@@ -1325,12 +1472,18 @@
 			end
 			
 			if (damage) then
+				for spellName, spellTable in pairs (damage:GetActorSpells()) do
+					damageSpells [spellName] = {spellTable.total, spellTable.counter, spellTable.c_amt, spellTable.spellschool}
+				end
 				damage = {damage.total or 0, damage.damage_taken or 0, damage.friendlyfire_total or 0}
 			else
 				damage = {0, 0, 0}
 			end
 			
 			if (heal) then
+				for spellName, spellTable in pairs (heal:GetActorSpells()) do
+					healingSpells [spellName] = {spellTable.total, spellTable.counter, spellTable.c_amt}
+				end
 				heal = {heal.total or 0, heal.totalover or 0, heal.healing_taken or 0}
 			else
 				heal = {0, 0, 0}
@@ -1348,7 +1501,7 @@
 				misc = {0, 0}
 			end
 			
-			local data = {damage, heal, energy, misc}
+			local data = {damage, heal, energy, misc, damageSpells, healingSpells}
 
 			--> envia os dados do proprio host pra ele antes
 			if (host_of) then
@@ -1357,9 +1510,22 @@
 			else
 				_detalhes:SendRaidData (_detalhes.network.ids.CLOUD_EQUALIZE, data)
 			end
-			
 		end
-		
+
+		function _detalhes:SendNonEqualizedData()
+			local currentCombat = Details:GetCurrentCombat()
+			if (currentCombat) then
+				local actors = {}
+				for _, actorObject in currentCombat [DETAILS_ATTRIBUTE_DAMAGE]:ListActors() do
+					if (actorObject:IsPlayer()) then
+						actors [actorObject:GetName()] = floor (actorObject.total / CONST_EQUALIZE_ERROR_THRESHOLD)
+					end
+				end
+
+				_detalhes:SendRaidOrPartyData (_detalhes.network.ids.CLOUD_UNEQUALIZED, actors)
+			end
+		end
+
 		function _detalhes:FlagActorsOnPvPCombat()
 			for class_type, container in _ipairs (_detalhes.tabela_vigente) do 
 				for _, actor in _ipairs (container._ActorTable) do 
