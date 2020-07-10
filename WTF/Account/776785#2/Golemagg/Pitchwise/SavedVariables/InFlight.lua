@@ -1,2 +1,0 @@
-
-InFlightCharDB = nil
