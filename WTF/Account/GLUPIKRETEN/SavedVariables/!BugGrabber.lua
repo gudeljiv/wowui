@@ -1,0 +1,520 @@
+
+BugGrabberDB = {
+	["session"] = 706,
+	["lastSanitation"] = 3,
+	["errors"] = {
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\Experience.lua:7: bad argument #1 to 'select' (index out of range)",
+			["time"] = "2019/10/17 21:42:32",
+			["locals"] = "(*temporary) = -2\n",
+			["stack"] = "[C]: in function `select'\nInterface\\AddOns\\xVerminz\\Experience.lua:7: in function <Interface\\AddOns\\xVerminz\\Experience.lua:5>\nInterface\\AddOns\\xVerminz\\Experience.lua:59: in function <Interface\\AddOns\\xVerminz\\Experience.lua:53>\n[C]: ?",
+			["session"] = 608,
+			["counter"] = 1105,
+		}, -- [1]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\Experience.lua:82: unexpected symbol near ')'",
+			["time"] = "2019/10/19 18:02:53",
+			["locals"] = "",
+			["stack"] = "",
+			["session"] = 619,
+			["counter"] = 4,
+		}, -- [2]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\AutoRepair.lua:6: attempt to call global 'CanGuildBankRepair' (a nil value)",
+			["time"] = "2019/10/19 19:13:03",
+			["locals"] = "repairAllCost = 230\ncanRepair = true\n(*temporary) = nil\n(*temporary) = \"attempt to call global 'CanGuildBankRepair' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVerminz\\AutoRepair.lua:6: in function <Interface\\AddOns\\xVerminz\\AutoRepair.lua:1>",
+			["session"] = 622,
+			["counter"] = 1,
+		}, -- [3]
+		{
+			["message"] = "[string \"print(CanGuildBankRepair())\"]:1: attempt to call global 'CanGuildBankRepair' (a nil value)",
+			["time"] = "2019/10/19 19:13:33",
+			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = nil\n(*temporary) = \"attempt to call global 'CanGuildBankRepair' (a nil value)\"\n",
+			["stack"] = "[string \"print(CanGuildBankRepair())\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4609: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4270: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4306: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 622,
+			["counter"] = 1,
+		}, -- [4]
+		{
+			["message"] = "[string \"print(CanGuildBankRepaiasdr())\"]:1: attempt to call global 'CanGuildBankRepaiasdr' (a nil value)",
+			["time"] = "2019/10/19 19:14:55",
+			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = nil\n(*temporary) = \"attempt to call global 'CanGuildBankRepaiasdr' (a nil value)\"\n",
+			["stack"] = "[string \"print(CanGuildBankRepaiasdr())\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4609: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4270: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4306: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 622,
+			["counter"] = 1,
+		}, -- [5]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVerminz' tried to call the protected function 'TargetFrameToT:Show()'.",
+			["time"] = "2019/10/22 20:58:45",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Show'\nInterface\\FrameXML\\TargetFrame.lua:910: in function <Interface\\FrameXML\\TargetFrame.lua:905>\n[C]: in function `TargetofTarget_Update'\nInterface\\FrameXML\\TargetFrame.lua:420: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>",
+			["session"] = 643,
+			["counter"] = 10,
+		}, -- [6]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\SkinBuffs.lua:57: attempt to index global 'config' (a nil value)",
+			["time"] = "2019/10/23 13:38:11",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\xVerminz\\SkinBuffs.lua:57: in function <Interface\\AddOns\\xVerminz\\SkinBuffs.lua:14>\n[C]: ?\n[C]: in function `TargetFrame_UpdateAuras'\nInterface\\FrameXML\\TargetFrame.lua:197: in function <Interface\\FrameXML\\TargetFrame.lua:142>",
+			["session"] = 645,
+			["counter"] = 5,
+		}, -- [7]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\CustomContainers.lua:17: attempt to index global 'config' (a nil value)",
+			["time"] = "2019/10/23 13:37:53",
+			["locals"] = "_ = \"Hunter\"\nclass = \"HUNTER\"\ncolor = <table> {\n colorStr = \"ffaad372\"\n GetRGB = <function> defined @Interface\\SharedXML\\Util.lua:627\n OnLoad = <function> defined @Interface\\SharedXML\\Util.lua:616\n b = 0.450000\n GenerateHexColorMarkup = <function> defined @Interface\\SharedXML\\Util.lua:658\n WrapTextInColorCode = <function> defined @Interface\\SharedXML\\Util.lua:662\n GenerateHexColor = <function> defined @Interface\\SharedXML\\Util.lua:654\n GetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:635\n IsEqualTo = <function> defined @Interface\\SharedXML\\Util.lua:620\n g = 0.830000\n r = 0.670000\n SetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:643\n GetRGBAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:631\n SetRGB = <function> defined @Interface\\SharedXML\\Util.lua:650\n GetRGBAAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:639\n}\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = CustomContainer_Combat {\n 0 = <userdata>\n}\n(*temporary) = <table> {\n}\n(*temporary) = nil\n(*temporary) = \"LEFT\"\n(*temporary) = 0\n(*temporary) = 0\n(*temporary) = <userdata>\n(*temporary) = \"attempt to index global 'config' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVerminz\\CustomContainers.lua:17: in main chunk",
+			["session"] = 646,
+			["counter"] = 2,
+		}, -- [8]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\Experience.lua:29: attempt to index global 'config' (a nil value)",
+			["time"] = "2019/10/23 13:37:53",
+			["locals"] = "_ = \"Hunter\"\nclass = \"HUNTER\"\n_ = 3\nr = nil\ng = nil\nb = nil\nColorGradient = <function> defined @Interface\\AddOns\\xVerminz\\Experience.lua:5\nPetExpFrame = PetExpFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = <userdata>\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = <userdata>\n(*temporary) = \"attempt to index global 'config' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVerminz\\Experience.lua:29: in main chunk",
+			["session"] = 646,
+			["counter"] = 2,
+		}, -- [9]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\GarbageCollector.lua:10: attempt to index global 'config' (a nil value)",
+			["time"] = "2019/10/23 13:37:53",
+			["locals"] = "cgt = CustomContainer_CombatGarbageText {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = \"ARTWORK\"\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = <userdata>\n(*temporary) = \"attempt to index global 'config' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVerminz\\GarbageCollector.lua:10: in main chunk",
+			["session"] = 646,
+			["counter"] = 2,
+		}, -- [10]
+		{
+			["message"] = "...ace\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:7: attempt to index global 'config' (a nil value)",
+			["time"] = "2019/10/23 13:37:53",
+			["locals"] = "TargetHealthFrame = TargetHealthFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = \"ARTWORK\"\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = <userdata>\n(*temporary) = <userdata>\n(*temporary) = \"attempt to index global 'config' (a nil value)\"\n",
+			["stack"] = "...ace\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:7: in main chunk",
+			["session"] = 646,
+			["counter"] = 2,
+		}, -- [11]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\Unit.lua:10: attempt to index global 'config' (a nil value)",
+			["time"] = "2019/10/23 13:37:53",
+			["locals"] = "cus = CustomContainer_CombatUnitState {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = \"ARTWORK\"\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = <userdata>\n(*temporary) = <userdata>\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'config' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVerminz\\Unit.lua:10: in main chunk",
+			["session"] = 646,
+			["counter"] = 2,
+		}, -- [12]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\xDamageFont.lua:3: attempt to index global 'config' (a nil value)",
+			["time"] = "2019/10/23 13:37:53",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"Frame\"\n(*temporary) = \"xDamageFont\"\n(*temporary) = xDamageFont {\n 0 = <userdata>\n}\n(*temporary) = xDamageFont {\n 0 = <userdata>\n}\n(*temporary) = \"attempt to index global 'config' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVerminz\\xDamageFont.lua:3: in main chunk",
+			["session"] = 646,
+			["counter"] = 2,
+		}, -- [13]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\xVerminz-54000.lua:137: MonkeyQuestFrame:SetPoint(): Couldn't find region named 'CustomContainer_2'",
+			["time"] = "2019/10/23 13:37:56",
+			["locals"] = "(*temporary) = MonkeyQuestFrame {\n 0 = <userdata>\n}\n(*temporary) = \"TOPRIGHT\"\n(*temporary) = \"CustomContainer_2\"\n(*temporary) = \"TOPLEFT\"\n(*temporary) = -10\n(*temporary) = 0\n",
+			["stack"] = "[C]: in function `SetPoint'\nInterface\\AddOns\\xVerminz\\xVerminz-54000.lua:137: in function <Interface\\AddOns\\xVerminz\\xVerminz.lua:30>",
+			["session"] = 646,
+			["counter"] = 2,
+		}, -- [14]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\SkinBuffs.lua:37: attempt to index global 'config' (a nil value)",
+			["time"] = "2019/10/23 13:38:00",
+			["locals"] = "numBuffs = 2\nnumDebuffs = 0\n(for index) = 1\n(for limit) = 2\n(for step) = 1\ni = 1\nframe = TargetFrameBuff1 {\n 0 = <userdata>\n unit = \"target\"\n}\nframeBorder = nil\nframeCount = TargetFrameBuff1Count {\n 0 = <userdata>\n}\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = TargetFrameBuff1Count {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = 0\n(*temporary) = \"target\"\n(*temporary) = false\n(*temporary) = false\n(*temporary) = \"attempt to index global 'config' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVerminz\\SkinBuffs.lua:37: in function <Interface\\AddOns\\xVerminz\\SkinBuffs.lua:14>\n[C]: ?\n[C]: in function `TargetFrame_UpdateAuras'\nInterface\\FrameXML\\TargetFrame.lua:131: in function <Interface\\FrameXML\\TargetFrame.lua:99>\n[C]: in function `TargetFrame_Update'\nInterface\\FrameXML\\TargetFrame.lua:150: in function <Interface\\FrameXML\\TargetFrame.lua:142>\n[C]: in function `CameraOrSelectOrMoveStop'\n[string \"CAMERAORSELECTORMOVE\"]:4: in function <[string \"CAMERAORSELECTORMOVE\"]:1>",
+			["session"] = 646,
+			["counter"] = 3,
+		}, -- [15]
+		{
+			["message"] = "Interface\\AddOns\\xVerminz\\CustomContainers.lua:113: attempt to index global 'xVerminz' (a nil value)",
+			["time"] = "2019/10/23 13:39:05",
+			["locals"] = "_ = \"Hunter\"\nclass = \"HUNTER\"\ncolor = <table> {\n colorStr = \"ffaad372\"\n GetRGB = <function> defined @Interface\\SharedXML\\Util.lua:627\n OnLoad = <function> defined @Interface\\SharedXML\\Util.lua:616\n b = 0.450000\n GenerateHexColorMarkup = <function> defined @Interface\\SharedXML\\Util.lua:658\n WrapTextInColorCode = <function> defined @Interface\\SharedXML\\Util.lua:662\n GenerateHexColor = <function> defined @Interface\\SharedXML\\Util.lua:654\n GetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:635\n IsEqualTo = <function> defined @Interface\\SharedXML\\Util.lua:620\n g = 0.830000\n r = 0.670000\n SetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:643\n GetRGBAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:631\n SetRGB = <function> defined @Interface\\SharedXML\\Util.lua:650\n GetRGBAAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:639\n}\nf = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = CustomContainer_2 {\n 0 = <userdata>\n}\n(*temporary) = <table> {\n}\n(*temporary) = nil\n(*temporary) = \"LEFT\"\n(*temporary) = 0\n(*temporary) = 0\n(*temporary) = \"attempt to index global 'xVerminz' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVerminz\\CustomContainers.lua:113: in main chunk",
+			["session"] = 650,
+			["counter"] = 4,
+		}, -- [16]
+		{
+			["message"] = "(null)",
+			["session"] = 650,
+			["time"] = "2019/10/23 13:37:53",
+			["counter"] = 26,
+		}, -- [17]
+		{
+			["message"] = "...\\TradeSkillMaster\\Core\\Lib\\Inventory\\BagTracking.lua:389: Unexpected bag: -2",
+			["time"] = "2020/07/08 18:50:31",
+			["locals"] = "(*temporary) = \"Unexpected bag: -2\"\n",
+			["stack"] = "[C]: in function `error'\n...\\TradeSkillMaster\\Core\\Lib\\Inventory\\BagTracking.lua:389: in function `callback'\n...nterface\\AddOns\\TradeSkillMaster\\Core\\Util\\Event.lua:37: in function `ProcessEvent'\n...nterface\\AddOns\\TradeSkillMaster\\Core\\Util\\Event.lua:53: in function <...nterface\\AddOns\\TradeSkillMaster\\Core\\Util\\Event.lua:45>",
+			["session"] = 661,
+			["counter"] = 1,
+		}, -- [18]
+		{
+			["message"] = "...nterface\\AddOns\\TradeSkillMaster\\Core\\Util\\Event.lua:49: assertion failed!",
+			["time"] = "2020/07/08 18:50:31",
+			["locals"] = "(*temporary) = false\n",
+			["stack"] = "[C]: in function `assert'\n...nterface\\AddOns\\TradeSkillMaster\\Core\\Util\\Event.lua:49: in function <...nterface\\AddOns\\TradeSkillMaster\\Core\\Util\\Event.lua:45>",
+			["session"] = 661,
+			["counter"] = 20,
+		}, -- [19]
+		{
+			["message"] = "Interface\\AddOns\\TradeSkillMaster\\Core\\Util\\Util.lua:456: Could not acquire temp table",
+			["time"] = "2020/07/08 18:50:32",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"Could not acquire temp table\"\n",
+			["stack"] = "[C]: in function `assert'\nInterface\\AddOns\\TradeSkillMaster\\Core\\Util\\Util.lua:456: in function `AcquireTempTable'\n...nterface\\AddOns\\TradeSkillMaster\\Core\\Util\\Event.lua:48: in function <...nterface\\AddOns\\TradeSkillMaster\\Core\\Util\\Event.lua:45>",
+			["session"] = 661,
+			["counter"] = 218,
+		}, -- [20]
+		{
+			["message"] = "[string \"print(\">\", GetSubZone(), \"<\")\"]:1: attempt to call global 'GetSubZone' (a nil value)",
+			["time"] = "2020/07/08 18:55:35",
+			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = \">\"\n(*temporary) = nil\n(*temporary) = \"attempt to call global 'GetSubZone' (a nil value)\"\n",
+			["stack"] = "[string \"print(\">\", GetSubZone(), \"<\")\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 662,
+			["counter"] = 1,
+		}, -- [21]
+		{
+			["message"] = "...face\\AddOns\\Questie\\Modules\\Network\\QuestieComms.lua:388: attempt to compare number with string",
+			["time"] = "2020/07/08 19:51:26",
+			["stack"] = "...face\\AddOns\\Questie\\Modules\\Network\\QuestieComms.lua:388: in function <...face\\AddOns\\Questie\\Modules\\Network\\QuestieComms.lua:373>\n[C]: ?\n...hka\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:29: in function <...hka\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n...hka\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:64: in function `Fire'\n...face\\AddOns\\BugSack\\Libs\\AceComm-3.0\\AceComm-3.0-12.lua:264: in function <...face\\AddOns\\BugSack\\Libs\\AceComm-3.0\\AceComm-3.0.lua:246>",
+			["session"] = 672,
+			["counter"] = 1,
+		}, -- [22]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn '!Colorz' tried to call the protected function 'CompactRaidFrame2:ClearAllPoints()'.",
+			["time"] = "2020/07/08 19:52:13",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `ClearAllPoints'\nInterface\\FrameXML\\FlowContainer.lua:157: in function `FlowContainer_DoLayout'\nInterface\\FrameXML\\FlowContainer.lua:17: in function `FlowContainer_ResumeUpdates'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:185: in function `CompactRaidFrameContainer_LayoutFrames'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:130: in function `CompactRaidFrameContainer_TryUpdate'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:57: in function `CompactRaidFrameContainer_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
+			["session"] = 672,
+			["counter"] = 1,
+		}, -- [23]
+		{
+			["message"] = "...ace\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:24: attempt to index global 'PlayerHealthFrameHealthBarText' (a nil value)",
+			["time"] = "2020/07/09 16:39:37",
+			["locals"] = "playerHP = \"100\"\n(*temporary) = nil\n(*temporary) = \"player: \"\n(*temporary) = \"100\"\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = true\n(*temporary) = \"attempt to index global 'PlayerHealthFrameHealthBarText' (a nil value)\"\nPlayerHealthFrame = PlayerHealthFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n",
+			["stack"] = "...ace\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:24: in function <...ace\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:21>\n[C]: ?\n[C]: ?\n[C]: ?",
+			["session"] = 676,
+			["counter"] = 345,
+		}, -- [24]
+		{
+			["message"] = "...ace\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:23: attempt to index field 'text' (a nil value)",
+			["time"] = "2020/07/09 16:40:15",
+			["locals"] = "playerHP = \"100\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"100\"\n(*temporary) = \"player\"\n(*temporary) = 271\n(*temporary) = \"attempt to index field 'text' (a nil value)\"\nPlayerHealthFrame = PlayerHealthFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n",
+			["stack"] = "...ace\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:23: in function <...ace\\AddOns\\xVerminz\\PlayerTargetHealthPercentage.lua:21>\n[C]: ?\n[C]: ?\n[C]: ?",
+			["session"] = 677,
+			["counter"] = 205,
+		}, -- [25]
+		{
+			["message"] = "Interface\\AddOns\\Questie\\Modules\\QuestieStream.lua:3: attempt to index global 'QuestieLoader' (a nil value)",
+			["time"] = "2020/07/09 17:00:45",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'QuestieLoader' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\Questie\\Modules\\QuestieStream.lua:3: in main chunk",
+			["session"] = 685,
+			["counter"] = 1,
+		}, -- [26]
+		{
+			["message"] = "Interface\\AddOns\\Questie\\Database\\QuestieDB.lua:2: attempt to index global 'QuestieLoader' (a nil value)",
+			["time"] = "2020/07/09 17:00:45",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'QuestieLoader' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\Questie\\Database\\QuestieDB.lua:2: in main chunk",
+			["session"] = 685,
+			["counter"] = 1,
+		}, -- [27]
+		{
+			["message"] = "Interface\\AddOns\\Questie\\Database\\questDB.lua:7: attempt to index global 'QuestieLoader' (a nil value)",
+			["time"] = "2020/07/09 17:00:45",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'QuestieLoader' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\Questie\\Database\\questDB.lua:7: in main chunk",
+			["session"] = 685,
+			["counter"] = 1,
+		}, -- [28]
+		{
+			["message"] = "Interface\\AddOns\\Questie\\Database\\objectDB.lua:7: attempt to index global 'QuestieLoader' (a nil value)",
+			["time"] = "2020/07/09 17:00:45",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'QuestieLoader' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\Questie\\Database\\objectDB.lua:7: in main chunk",
+			["session"] = 685,
+			["counter"] = 1,
+		}, -- [29]
+		{
+			["message"] = "Interface\\AddOns\\Questie\\Database\\spawnDB.lua:7: attempt to index global 'QuestieLoader' (a nil value)",
+			["time"] = "2020/07/09 17:00:45",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'QuestieLoader' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\Questie\\Database\\spawnDB.lua:7: in main chunk",
+			["session"] = 685,
+			["counter"] = 1,
+		}, -- [30]
+		{
+			["message"] = "Interface\\AddOns\\Questie\\Database\\itemDB.lua:7: attempt to index global 'QuestieLoader' (a nil value)",
+			["time"] = "2020/07/09 17:00:45",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'QuestieLoader' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\Questie\\Database\\itemDB.lua:7: in main chunk",
+			["session"] = 685,
+			["counter"] = 1,
+		}, -- [31]
+		{
+			["message"] = "...\\Questie\\Database\\Corrections\\QuestieCorrections.lua:2: attempt to index global 'QuestieLoader' (a nil value)",
+			["time"] = "2020/07/09 17:00:45",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'QuestieLoader' (a nil value)\"\n",
+			["stack"] = "...\\Questie\\Database\\Corrections\\QuestieCorrections.lua:2: in main chunk",
+			["session"] = 685,
+			["counter"] = 1,
+		}, -- [32]
+		{
+			["message"] = "...uestie\\Database\\Corrections\\QuestieItemBlacklist.lua:2: attempt to index global 'QuestieLoader' (a nil value)",
+			["time"] = "2020/07/09 17:00:45",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'QuestieLoader' (a nil value)\"\n",
+			["stack"] = "...uestie\\Database\\Corrections\\QuestieItemBlacklist.lua:2: in main chunk",
+			["session"] = 685,
+			["counter"] = 1,
+		}, -- [33]
+		{
+			["message"] = "...ns\\Questie\\Database\\Corrections\\QuestieItemFixes.lua:2: attempt to index global 'QuestieLoader' (a nil value)",
+			["time"] = "2020/07/09 17:00:45",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'QuestieLoader' (a nil value)\"\n",
+			["stack"] = "...ns\\Questie\\Database\\Corrections\\QuestieItemFixes.lua:2: in main chunk",
+			["session"] = 685,
+			["counter"] = 1,
+		}, -- [34]
+		{
+			["message"] = "...Ons\\Questie\\Database\\Corrections\\QuestieNPCFixes.lua:2: attempt to index global 'QuestieLoader' (a nil value)",
+			["time"] = "2020/07/09 17:00:45",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'QuestieLoader' (a nil value)\"\n",
+			["stack"] = "...Ons\\Questie\\Database\\Corrections\\QuestieNPCFixes.lua:2: in main chunk",
+			["session"] = 685,
+			["counter"] = 1,
+		}, -- [35]
+		{
+			["message"] = "Couldn't open Interface\\AddOns\\Questie\\Libs\\LibSharedMedia-3.0-8020003\\lib.xml",
+			["session"] = 685,
+			["time"] = "2020/07/09 17:00:48",
+			["counter"] = 1,
+		}, -- [36]
+		{
+			["message"] = "Couldn't open Interface\\AddOns\\Questie\\Libs\\AceGUI-3.0-41-SharedMediaWidgets\\widget.xml",
+			["session"] = 685,
+			["time"] = "2020/07/09 17:00:48",
+			["counter"] = 1,
+		}, -- [37]
+		{
+			["message"] = "Couldn't open Interface\\AddOns\\Questie\\Libs\\ZoneHelper\\ZoneHelper.xml",
+			["session"] = 685,
+			["time"] = "2020/07/09 17:00:48",
+			["counter"] = 1,
+		}, -- [38]
+		{
+			["message"] = "Error loading Interface\\AddOns\\Questie\\Locale\\enUS\\lookupZones.lua",
+			["session"] = 685,
+			["time"] = "2020/07/09 17:00:48",
+			["counter"] = 1,
+		}, -- [39]
+		{
+			["message"] = "Error loading Interface\\AddOns\\Questie\\Locale\\enUS\\lookupQuestCategory.lua",
+			["session"] = 685,
+			["time"] = "2020/07/09 17:00:48",
+			["counter"] = 1,
+		}, -- [40]
+		{
+			["message"] = "Error loading Interface\\AddOns\\Questie\\Locale\\esES\\lookupZones.lua",
+			["session"] = 685,
+			["time"] = "2020/07/09 17:00:48",
+			["counter"] = 1,
+		}, -- [41]
+		{
+			["message"] = "Error loading Interface\\AddOns\\Questie\\Locale\\esES\\lookupQuestCategory.lua",
+			["session"] = 685,
+			["time"] = "2020/07/09 17:00:48",
+			["counter"] = 1,
+		}, -- [42]
+		{
+			["message"] = "Error loading Interface\\AddOns\\Questie\\Locale\\deDE\\lookupZones.lua",
+			["session"] = 685,
+			["time"] = "2020/07/09 17:00:48",
+			["counter"] = 1,
+		}, -- [43]
+		{
+			["message"] = "Error loading Interface\\AddOns\\Questie\\Locale\\deDE\\lookupQuestCategory.lua",
+			["session"] = 685,
+			["time"] = "2020/07/09 17:00:48",
+			["counter"] = 1,
+		}, -- [44]
+		{
+			["message"] = "Error loading Interface\\AddOns\\Questie\\Locale\\zhCN\\lookupZones.lua",
+			["session"] = 685,
+			["time"] = "2020/07/09 17:00:48",
+			["counter"] = 1,
+		}, -- [45]
+		{
+			["message"] = "[string \"Questie_Toggle:OnClick\"]:1: attempt to index field 'db' (a nil value)",
+			["time"] = "2020/07/09 17:01:02",
+			["locals"] = "self = Questie_Toggle {\n 0 = <userdata>\n Text = Questie_ToggleText {\n }\n Right = <unnamed> {\n }\n Middle = <unnamed> {\n }\n Left = <unnamed> {\n }\n}\nbutton = \"LeftButton\"\ndown = false\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'db' (a nil value)\"\n",
+			["stack"] = "[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 685,
+			["counter"] = 4,
+		}, -- [46]
+		{
+			["message"] = "...\\Details\\Libs\\DF\\Details-Framework-Classic\\panel.lua:8198: attempt to index field 'unitFrame' (a nil value)",
+			["time"] = "2020/07/09 18:54:14",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "...\\Details\\Libs\\DF\\Details-Framework-Classic\\panel.lua:8198: in function <...\\Details\\Libs\\DF\\Details-Framework-Classic\\panel.lua:8192>\n...\\Details\\Libs\\DF\\Details-Framework-Classic\\panel.lua:8210: in function <...\\Details\\Libs\\DF\\Details-Framework-Classic\\panel.lua:8209>\n[C]: ?\n...hka\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:29: in function <...hka\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n...hka\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:64: in function `Fire'\n...ils\\Libs\\LibClassicCasterino\\LibClassicCasterino-7.lua:519: in function <...ils\\Libs\\LibClassicCasterino\\LibClassicCasterino.lua:516>\n...ils\\Libs\\LibClassicCasterino\\LibClassicCasterino-7.lua:102: in function <...ils\\Libs\\LibClassicCasterino\\LibClassicCasterino.lua:77>\n...ils\\Libs\\LibClassicCasterino\\LibClassicCasterino-7.lua:152: in function <...ils\\Libs\\LibClassicCasterino\\LibClassicCasterino.lua:124>\n(tail call): ?",
+			["session"] = 695,
+			["counter"] = 23,
+		}, -- [47]
+		{
+			["message"] = "Interface\\AddOns\\Details\\boot.lua:339: attempt to index field 'gump' (a nil value)",
+			["time"] = "2020/07/09 19:01:56",
+			["locals"] = "_detalhes = <table> {\n arena_info = <table> {\n }\n build_counter = 7348\n BFACORE = 131\n TokenID = <table> {\n }\n EnableModule = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:332\n modules = <table> {\n }\n CancelTimer = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:147\n IterateEmbeds = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:442\n UnregisterComm = <function> defined @Interface\\AddOns\\Aptechka\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:153\n arena_table = <table> {\n }\n last_combat_time = 0\n resize_debug = <table> {\n }\n debug = false\n _tempo = 1594314116\n GetArenaInfo = <function> defined @Interface\\AddOns\\Details\\boot.lua:226\n refresh = <table> {\n }\n SetDefaultModulePrototype = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:409\n attribute_icons = \"Interface\\AddOns\\Details\\images\\atributos_icones\"\n defaultModuleState = true\n IsEnabled = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:451\n pets_ignored = <table> {\n }\n ScheduleTimer = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:94\n DisableModule = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:350\n APIVersion = 141\n GetNicknameBackground = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:698\n hooks = <table> {\n }\n default_backdropbordercolor = <table> {\n }\n SendCommMessage = <function> defined @Interface\\AddOns\\BugSack\\Libs\\AceComm-3.0\\AceComm-3.0.lua:87\n default_backdropcolor = <table> {\n }\n GetAttributeIcon = <function> defined @Interface\\AddOns\\Details\\boot.lua:327\n SetNickname = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:520\n UnregisterAllComm = <function> defined @Interface\\AddOns\\Aptechka\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:174\n SetEnabledState = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:424\n tooltip_target_icon = <table> {\n }\n enabledState = true\n tooltip_spell_icon = <table> {\n }\n icon_animations = <table> {\n }\n game_version = \"v8.3.0\"\n parser_functions = <table> {\n }\n unused_instances = <table> {\n }\n RunCodeTypes = <table> {\n }\n IterateModules = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:437\n BitfieldSwapDebuffsIDs = <table> {\n }\n cache_npc_ids = <table> {\n }\n instance_title_text_timer = <table> {\n }\n debug_chr = false\n SetNicknameBackground = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:613\n pets_players = <table> {\n }\n GetBattlegroundInfo = <function> defined @Interface\\AddOns\\Details\\boot.lua:247\n battleground_info = <table> {\n }\n trusted_characters = <table> {\n }\n Enable = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:294\n NewModule = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:235\n encounter_end_table = <table> {\n }\n InstancesToStoreData = <table> {\n }\n encounter_counter = <table> {\n }\n GetModule = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:210\n encounter_table = <table> {\n }\n encounter_dungeons = <table> {\n }\n SetDefaultModuleLibraries = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:367\n GetNicknameTable = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:711\n TimeLeft = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:172\n Deserialize = <function> defined @Interface\\AddOns\\BugSack\\Libs\\AceSerializer-3.0\\AceSerializer-3.0.lua:246\n pets_no_owner = <table> {\n }\n SetNicknameAvatar = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:567\n realversion = 141\n CancelAllTimers = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:160\n duel_candidates = <table> {\n }\n default_skin_to_use = \"Minimalistic\"\n initializing = true\n c",
+			["stack"] = "Interface\\AddOns\\Details\\boot.lua:339: in main chunk",
+			["session"] = 697,
+			["counter"] = 1,
+		}, -- [48]
+		{
+			["message"] = "Interface\\AddOns\\Details\\core\\util.lua:1027: attempt to index local 'gump' (a nil value)",
+			["time"] = "2020/07/09 19:01:56",
+			["locals"] = "_detalhes = <table> {\n GetOrderNumber = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:81\n TokenID = <table> {\n }\n modules = <table> {\n }\n CancelTimer = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:147\n UnregisterComm = <function> defined @Interface\\AddOns\\Aptechka\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:153\n arena_table = <table> {\n }\n resize_debug = <table> {\n }\n LowerizeKeys = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:92\n debug = false\n refresh = <table> {\n }\n SetDefaultModulePrototype = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:409\n IsEnabled = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:451\n ScheduleTimer = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:94\n FindGUIDFromName = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:932\n APIVersion = 141\n UpdateToKFunctions = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:454\n hooks = <table> {\n }\n SendCommMessage = <function> defined @Interface\\AddOns\\BugSack\\Libs\\AceComm-3.0\\AceComm-3.0.lua:87\n GetSourceFromNpcId = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:54\n SetNickname = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:520\n UnregisterAllComm = <function> defined @Interface\\AddOns\\Aptechka\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:174\n SetEnabledState = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:424\n parser_functions = <table> {\n }\n SetNumericalSystemOverride = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:424\n debug_chr = false\n cache_npc_ids = <table> {\n }\n string = <table> {\n }\n GetCurrentToKFunction = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:417\n NewModule = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:235\n InstancesToStoreData = <table> {\n }\n RunCodeTypes = <table> {\n }\n GetNicknameTable = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:711\n Deserialize = <function> defined @Interface\\AddOns\\BugSack\\Libs\\AceSerializer-3.0\\AceSerializer-3.0.lua:246\n pets_no_owner = <table> {\n }\n SetNicknameAvatar = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:567\n realversion = 141\n default_skin_to_use = \"Minimalistic\"\n initializing = true\n UseEastAsianNumericalSystem = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:103\n name = \"_detalhes\"\n GetNicknameAvatar = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:683\n GetNumericalSystem = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:434\n EncountersToStoreData = <table> {\n }\n SetFontColor = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:808\n GetFramework = <function> defined @Interface\\AddOns\\Details\\boot.lua:159\n NickTagSetCache = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:411\n skins = <table> {\n }\n __index = <table> {\n }\n ReportOptions = <table> {\n }\n Serialize = <function> defined @Interface\\AddOns\\BugSack\\Libs\\AceSerializer-3.0\\AceSerializer-3.0.lua:122\n cache_damage_group = <table> {\n }\n NoToK = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:381\n UseWestNumericalSystem = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:280\n RegisterComm = <function> defined @Interface\\AddOns\\BugSack\\Libs\\AceComm-3.0\\AceComm-3.0.lua:60\n ToK2 = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:294\n alpha_build_counter = 7348\n tableRemove = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:558\n tooltip_spell_icon = <table> {\n }\n arena_info = <table> {\n }\n battleground_info = <table> {\n }\n BFACORE = 131\n Scale = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:803\n EnableModule = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:332\n duel_candidates = <table> {\n }\n IterateEmbeds = <function> defined @Interface\\AddOns\\ChocolateBa",
+			["stack"] = "Interface\\AddOns\\Details\\core\\util.lua:1027: in main chunk",
+			["session"] = 697,
+			["counter"] = 1,
+		}, -- [49]
+		{
+			["message"] = "Interface\\AddOns\\Details\\functions\\spells-Spells.lua:39: attempt to index global 'DetailsFramework' (a nil value)",
+			["time"] = "2020/07/09 19:01:56",
+			["locals"] = "_detalhes = <table> {\n GetOrderNumber = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:81\n TokenID = <table> {\n }\n APITopics = <table> {\n }\n modules = <table> {\n }\n CancelTimer = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:147\n UnregisterComm = <function> defined @Interface\\AddOns\\Aptechka\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:153\n arena_table = <table> {\n }\n resize_debug = <table> {\n }\n LowerizeKeys = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:92\n debug = false\n InstallHook = <function> defined @Interface\\AddOns\\Details\\functions\\hooks.lua:26\n InstallEncounter = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:392\n refresh = <table> {\n }\n SetDefaultModulePrototype = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:409\n IsInInstance = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:12\n GetBossName = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:205\n IsEnabled = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:451\n ScheduleTimer = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:94\n FindGUIDFromName = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:932\n RestoreState_CurrentMythicDungeonRun = <function> defined @Interface\\AddOns\\Details\\functions\\profiles.lua:1486\n APIVersion = 141\n GetEncounterStartInfo = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:109\n UpdateToKFunctions = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:454\n SaveState_CurrentMythicDungeonRun = <function> defined @Interface\\AddOns\\Details\\functions\\profiles.lua:1457\n hooks = <table> {\n }\n GetRaidBackground = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:228\n SendCommMessage = <function> defined @Interface\\AddOns\\BugSack\\Libs\\AceComm-3.0\\AceComm-3.0.lua:87\n GetSourceFromNpcId = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:54\n SetNickname = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:520\n UnregisterAllComm = <function> defined @Interface\\AddOns\\Aptechka\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:174\n SetEnabledState = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:424\n default_global_data = <table> {\n }\n parser_functions = <table> {\n }\n SetNumericalSystemOverride = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:424\n debug_chr = false\n GetCurrentProfileName = <function> defined @Interface\\AddOns\\Details\\functions\\profiles.lua:12\n cache_npc_ids = <table> {\n }\n string = <table> {\n }\n GetCurrentToKFunction = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:417\n NewModule = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:235\n InstancesToStoreData = <table> {\n }\n RunCodeTypes = <table> {\n }\n GetNicknameTable = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:711\n Deserialize = <function> defined @Interface\\AddOns\\BugSack\\Libs\\AceSerializer-3.0\\AceSerializer-3.0.lua:246\n pets_no_owner = <table> {\n }\n SetNicknameAvatar = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:567\n realversion = 141\n InstanceIsRaid = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:192\n SaveProfileSpecial = <function> defined @Interface\\AddOns\\Details\\functions\\profiles.lua:1422\n default_skin_to_use = \"Minimalistic\"\n initializing = true\n GetEncounterEqualize = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:142\n UseEastAsianNumericalSystem = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:103\n name = \"_detalhes\"\n EraseProfile = <function> defined @Interface\\AddOns\\Details\\functions\\profiles.lua:71\n UnInstallHook = <function> defined @Interface\\AddOns\\Details\\functions\\hooks.lua:47\n GetNicknameAvatar = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:683\n GetNumericalSystem = <function> defined @Interface\\AddOns\\Details\\cor",
+			["stack"] = "Interface\\AddOns\\Details\\functions\\spells-Spells.lua:39: in main chunk",
+			["session"] = 697,
+			["counter"] = 1,
+		}, -- [50]
+		{
+			["message"] = "Interface\\AddOns\\Details\\functions\\link.lua:31: attempt to index global 'DetailsFramework' (a nil value)",
+			["time"] = "2020/07/09 19:01:56",
+			["locals"] = "_detalhes = <table> {\n ToK0Min = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:344\n APITopics = <table> {\n }\n modules = <table> {\n }\n CancelTimer = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:147\n GetEncounterIdFromBossIndex = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:104\n hex = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:687\n LowerizeKeys = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:92\n opened_windows = 0\n habilidade_e_energy = <table> {\n }\n InstallEncounter = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:392\n PotionList = <table> {\n }\n IsInInstance = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:12\n icon_animations = <table> {\n }\n ToK0 = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:309\n FindGUIDFromName = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:932\n alvo_da_habilidade = <table> {\n }\n RestoreState_CurrentMythicDungeonRun = <function> defined @Interface\\AddOns\\Details\\functions\\profiles.lua:1486\n GetNickname = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:670\n GetEncounterStartInfo = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:109\n GetEncounterEnd = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:125\n ImportProfile = <function> defined @Interface\\AddOns\\Details\\functions\\profiles.lua:1637\n SetNickname = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:520\n UnregisterAllComm = <function> defined @Interface\\AddOns\\Aptechka\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:174\n SetEnabledState = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:424\n default_global_data = <table> {\n }\n combate = <table> {\n }\n atributo_damage = <table> {\n }\n cache_npc_ids = <table> {\n }\n GetCurrentDungeonBossListFromEJ = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:339\n GetCLName = <function> defined @Interface\\AddOns\\Details\\functions\\classes.lua:126\n GetCurrentToKFunction = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:417\n GetInstanceTrashInfo = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:44\n GetFlag = <function> defined @Interface\\AddOns\\Details\\functions\\classes.lua:144\n InstancesToStoreData = <table> {\n }\n RunCodeTypes = <table> {\n }\n GetNicknameTable = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:711\n RegistredEvents = <table> {\n }\n GetEncounterActorsName = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:306\n HealthTick = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:874\n realversion = 141\n GetEncounterSpells = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:166\n default_skin_to_use = \"Minimalistic\"\n GetName = <function> defined @Interface\\AddOns\\Details\\functions\\classes.lua:106\n GetEncounterEqualize = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:142\n name = \"_detalhes\"\n GetBossDetails = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:156\n Disable = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:314\n atributo_energy = <table> {\n }\n GetRaidIcon = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:238\n encounter_counter = <table> {\n }\n ReportOptions = <table> {\n }\n GetGUID = <function> defined @Interface\\AddOns\\Details\\functions\\classes.lua:141\n atributo_custom = <table> {\n }\n NoToK = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:381\n UseWestNumericalSystem = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:280\n RegisterComm = <function> defined @Interface\\AddOns\\BugSack\\Libs\\AceComm-3.0\\AceComm-3.0.lua:60\n ToK2 = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:294\n unpacks = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:725\n tableRemove = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:558\n GetBossIcon = <function> defined @Interface\\AddOns\\Details\\functions\\boss.l",
+			["stack"] = "Interface\\AddOns\\Details\\functions\\link.lua:31: in main chunk",
+			["session"] = 697,
+			["counter"] = 1,
+		}, -- [51]
+		{
+			["message"] = "Interface\\AddOns\\Details\\functions\\spellcache.lua:64: attempt to index global 'DetailsFramework' (a nil value)",
+			["time"] = "2020/07/09 19:01:56",
+			["locals"] = "_detalhes = <table> {\n ToK0Min = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:344\n APITopics = <table> {\n }\n modules = <table> {\n }\n CancelTimer = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:147\n GetEncounterIdFromBossIndex = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:104\n hex = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:687\n LowerizeKeys = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:92\n opened_windows = 0\n habilidade_e_energy = <table> {\n }\n InstallEncounter = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:392\n PotionList = <table> {\n }\n IsInInstance = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:12\n ClearSpellCache = <function> defined @Interface\\AddOns\\Details\\functions\\spellcache.lua:22\n icon_animations = <table> {\n }\n ToK0 = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:309\n FindGUIDFromName = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:932\n alvo_da_habilidade = <table> {\n }\n RestoreState_CurrentMythicDungeonRun = <function> defined @Interface\\AddOns\\Details\\functions\\profiles.lua:1486\n GetNickname = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:670\n GetEncounterStartInfo = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:109\n GetEncounterEnd = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:125\n ImportProfile = <function> defined @Interface\\AddOns\\Details\\functions\\profiles.lua:1637\n SetNickname = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:520\n UnregisterAllComm = <function> defined @Interface\\AddOns\\Aptechka\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:174\n SetEnabledState = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:424\n default_global_data = <table> {\n }\n combate = <table> {\n }\n atributo_damage = <table> {\n }\n cache_npc_ids = <table> {\n }\n GetCurrentDungeonBossListFromEJ = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:339\n GetCLName = <function> defined @Interface\\AddOns\\Details\\functions\\classes.lua:126\n GetCurrentToKFunction = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:417\n GetInstanceTrashInfo = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:44\n GetFlag = <function> defined @Interface\\AddOns\\Details\\functions\\classes.lua:144\n InstancesToStoreData = <table> {\n }\n RunCodeTypes = <table> {\n }\n GetNicknameTable = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:711\n RegistredEvents = <table> {\n }\n GetEncounterActorsName = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:306\n HealthTick = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:874\n realversion = 141\n GetEncounterSpells = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:166\n default_skin_to_use = \"Minimalistic\"\n GetName = <function> defined @Interface\\AddOns\\Details\\functions\\classes.lua:106\n GetEncounterEqualize = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:142\n name = \"_detalhes\"\n GetBossDetails = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:156\n Disable = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:314\n atributo_energy = <table> {\n }\n GetRaidIcon = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:238\n encounter_counter = <table> {\n }\n ReportOptions = <table> {\n }\n GetGUID = <function> defined @Interface\\AddOns\\Details\\functions\\classes.lua:141\n atributo_custom = <table> {\n }\n NoToK = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:381\n UseWestNumericalSystem = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:280\n RegisterComm = <function> defined @Interface\\AddOns\\BugSack\\Libs\\AceComm-3.0\\AceComm-3.0.lua:60\n ToK2 = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:294\n unpacks = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:725\n tableRemove = <function> defined @Interface\\AddOns\\Details\\co",
+			["stack"] = "Interface\\AddOns\\Details\\functions\\spellcache.lua:64: in main chunk",
+			["session"] = 697,
+			["counter"] = 1,
+		}, -- [52]
+		{
+			["message"] = "Interface\\AddOns\\Details\\gumps\\janela_options.lua:78: attempt to index local 'g' (a nil value)",
+			["time"] = "2020/07/09 19:01:56",
+			["locals"] = "_detalhes = <table> {\n ToK0Min = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:344\n APITopics = <table> {\n }\n modules = <table> {\n }\n CancelTimer = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:147\n GetEncounterIdFromBossIndex = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:104\n hex = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:687\n LowerizeKeys = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:92\n opened_windows = 0\n habilidade_e_energy = <table> {\n }\n InstallEncounter = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:392\n PotionList = <table> {\n }\n IsInInstance = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:12\n ClearSpellCache = <function> defined @Interface\\AddOns\\Details\\functions\\spellcache.lua:22\n GuessSpec = <function> defined @Interface\\AddOns\\Details\\functions\\playerclass.lua:341\n icon_animations = <table> {\n }\n ToK0 = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:309\n FindGUIDFromName = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:932\n alvo_da_habilidade = <table> {\n }\n RestoreState_CurrentMythicDungeonRun = <function> defined @Interface\\AddOns\\Details\\functions\\profiles.lua:1486\n GetNickname = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:670\n GetEncounterStartInfo = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:109\n GetEncounterEnd = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:125\n ImportProfile = <function> defined @Interface\\AddOns\\Details\\functions\\profiles.lua:1637\n SetNickname = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:520\n UnregisterAllComm = <function> defined @Interface\\AddOns\\Aptechka\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:174\n SetEnabledState = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:424\n default_global_data = <table> {\n }\n RegistrarNaTimeMachine = <function> defined @Interface\\AddOns\\Details\\core\\timemachine.lua:122\n combate = <table> {\n }\n CopyPaste = <function> defined @Interface\\AddOns\\Details\\gumps\\janela_copy.lua:58\n atributo_damage = <table> {\n }\n cache_npc_ids = <table> {\n }\n GetCurrentDungeonBossListFromEJ = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:339\n GetCLName = <function> defined @Interface\\AddOns\\Details\\functions\\classes.lua:126\n GetCurrentToKFunction = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:417\n GetInstanceTrashInfo = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:44\n GetFlag = <function> defined @Interface\\AddOns\\Details\\functions\\classes.lua:144\n InstancesToStoreData = <table> {\n }\n GetRowAnimationList = <function> defined @Interface\\AddOns\\Details\\functions\\rowanimation.lua:47\n RunCodeTypes = <table> {\n }\n GetNicknameTable = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:711\n RegistredEvents = <table> {\n }\n GetEncounterActorsName = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:306\n HealthTick = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:874\n realversion = 141\n GetEncounterSpells = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:166\n default_skin_to_use = \"Minimalistic\"\n GetName = <function> defined @Interface\\AddOns\\Details\\functions\\classes.lua:106\n GetEncounterEqualize = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:142\n name = \"_detalhes\"\n GetBossDetails = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:156\n Disable = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:314\n atributo_energy = <table> {\n }\n GetRaidIcon = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:238\n encounter_counter = <table> {\n }\n ReportOptions = <table> {\n }\n GetGUID = <function> defined @Interface\\AddOns\\Details\\functions\\classes.lua:141\n atributo_custom = <table> {\n }\n NoToK = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:381\n UseWestNumericalSystem = <f",
+			["stack"] = "Interface\\AddOns\\Details\\gumps\\janela_options.lua:78: in main chunk",
+			["session"] = 697,
+			["counter"] = 1,
+		}, -- [53]
+		{
+			["message"] = "Interface\\AddOns\\Details\\gumps\\janela_info.lua:266: attempt to index local 'gump' (a nil value)",
+			["time"] = "2020/07/09 19:01:56",
+			["locals"] = "_detalhes = <table> {\n ToK0Min = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:344\n APITopics = <table> {\n }\n modules = <table> {\n }\n CancelTimer = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:147\n GetEncounterIdFromBossIndex = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:104\n hex = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:687\n LowerizeKeys = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:92\n opened_windows = 0\n habilidade_e_energy = <table> {\n }\n InstallEncounter = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:392\n PotionList = <table> {\n }\n IsInInstance = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:12\n ClearSpellCache = <function> defined @Interface\\AddOns\\Details\\functions\\spellcache.lua:22\n GuessSpec = <function> defined @Interface\\AddOns\\Details\\functions\\playerclass.lua:341\n icon_animations = <table> {\n }\n ToK0 = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:309\n FindGUIDFromName = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:932\n alvo_da_habilidade = <table> {\n }\n RestoreState_CurrentMythicDungeonRun = <function> defined @Interface\\AddOns\\Details\\functions\\profiles.lua:1486\n GetNickname = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:670\n GetEncounterStartInfo = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:109\n GetEncounterEnd = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:125\n ImportProfile = <function> defined @Interface\\AddOns\\Details\\functions\\profiles.lua:1637\n SetNickname = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:520\n UnregisterAllComm = <function> defined @Interface\\AddOns\\Aptechka\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:174\n SetEnabledState = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:424\n default_global_data = <table> {\n }\n RegistrarNaTimeMachine = <function> defined @Interface\\AddOns\\Details\\core\\timemachine.lua:122\n combate = <table> {\n }\n CopyPaste = <function> defined @Interface\\AddOns\\Details\\gumps\\janela_copy.lua:58\n atributo_damage = <table> {\n }\n cache_npc_ids = <table> {\n }\n GetCurrentDungeonBossListFromEJ = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:339\n GetCLName = <function> defined @Interface\\AddOns\\Details\\functions\\classes.lua:126\n GetCurrentToKFunction = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:417\n GetInstanceTrashInfo = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:44\n GetFlag = <function> defined @Interface\\AddOns\\Details\\functions\\classes.lua:144\n InstancesToStoreData = <table> {\n }\n GetRowAnimationList = <function> defined @Interface\\AddOns\\Details\\functions\\rowanimation.lua:47\n RunCodeTypes = <table> {\n }\n GetNicknameTable = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:711\n RegistredEvents = <table> {\n }\n GetEncounterActorsName = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:306\n HealthTick = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:874\n realversion = 141\n GetEncounterSpells = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:166\n default_skin_to_use = \"Minimalistic\"\n GetName = <function> defined @Interface\\AddOns\\Details\\functions\\classes.lua:106\n GetEncounterEqualize = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:142\n name = \"_detalhes\"\n GetBossDetails = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:156\n Disable = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:314\n atributo_energy = <table> {\n }\n GetRaidIcon = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:238\n encounter_counter = <table> {\n }\n ReportOptions = <table> {\n }\n GetGUID = <function> defined @Interface\\AddOns\\Details\\functions\\classes.lua:141\n atributo_custom = <table> {\n }\n NoToK = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:381\n UseWestNumericalSystem = <f",
+			["stack"] = "Interface\\AddOns\\Details\\gumps\\janela_info.lua:266: in main chunk",
+			["session"] = 697,
+			["counter"] = 1,
+		}, -- [54]
+		{
+			["message"] = "Interface\\AddOns\\Details\\gumps\\janela_report.lua:915: attempt to index local 'gump' (a nil value)",
+			["time"] = "2020/07/09 19:01:56",
+			["locals"] = "Loc = <table> {\n STRING_OPTIONS_COMBAT_ALPHA_6 = \"While Inside Instance\"\n STRING_OPTIONS_RT_TITLE = \"Tools for Raiders\"\n STRING_OPTIONS_PERFORMANCE_DUNGEON = \"Dungeon\"\n STRING_OPTIONS_RT_DEATHS_FIRST_DESC = \"Make it only annouce the first X deaths during the encounter.\"\n STRING_FORGE_HEADER_SCHOOL = \"School\"\n STRING_ATTRIBUTE_ENERGY_ALTERNATEPOWER = \"Alternate Power\"\n STRING_OPTIONS_MENU_FONT_SIZE = \"Menus Text Size\"\n STRING_WELCOME_31 = \"|cFFFFFF00Right clicking|r anywhere in the window shows the |cFFFFAA00Bookmark|r panel.\n\n|cFFFFFF00Right click again|r closes the panel or chooses another display if clicked on a icon.\n\n|cFFFFFF00Right click|r on title bar to open the 'All Displays' panel.\n\n|TInterface\\AddOns\\Details\\images\\key_ctrl:14:30:0:0:64:64:0:64:0:40|t + Right Click to close the window.\"\n STRING_EXAMPLE = \"Example\"\n STRING_OPTIONS_PVPFRAGS = \"Only Pvp Frags\"\n STRING_OPTIONS_DATABROKER_TEXT_ADD1 = \"Player Damage Done\"\n STRING_OPTIONS_WP_EDIT = \"Edit Image\"\n STRING_GUILDDAMAGERANK_WINDOWALERT = \"Boss Defeated! Show Ranking\"\n STRING_IMAGEEDIT_FLIPH = \"Flip Horizontal\"\n STRING_GUILDDAMAGERANK_DIFF = \"Difficulty\"\n STRING_OPTIONS_OVERALL_DUNGEONBOSS_DESC = \"Segments with dungeon bosses are added to overall data.\"\n STRING_OPTIONS_PANIMODE = \"Panic Mode\"\n STRING_CUSTOM_ATTRIBUTE_HEAL = \"Heal\"\n STRING_WINDOW1ATACH_DESC = \"To create a group of windows, drag window #2 near window #1.\"\n STRING_OPTIONS_SAVELOAD_EXPORT_DESC = \"Saves the skin in text format.\"\n STRING_OPTIONS_BARLEFTTEXTCUSTOM_DESC = \"When enabled, left text is formated following the rules in the box.\"\n STRING_MINITUTORIAL_BOOKMARK1 = \"Right click at any point over the window to open the bookmarks!\"\n STRING_OPTIONS_TEXT = \"Bar Text Settings\"\n STRING_CUSTOM_REMOVE = \"Remove\"\n STRING_TUTORIAL_OVERALL1 = \"Overall data only updates when the combat is done, if you want regular updates right click the title bar and select 'Dynamic Overall Data'.\n\"\n STRING_REPORTFRAME_COPY = \"Copy & Paste\"\n STRING_SLASH_WORLDBOSS_DESC = \"run a macro showing which boss you killed this week.\"\n STRING_OPTIONS_DATABROKER_TEXT_ADD6 = \"Player Effective HPS\"\n STRING_ENVIRONMENTAL_LAVA = \"Environment (Lava)\"\n STRING_OPTIONS_CHART_PLUGINWARNING = \"Install Chart Viewer Plugin for display custom charts.\"\n STRING_OPTIONS_COMBAT_ALPHA_8 = \"In Battleground\"\n STRING_CUSTOM_DESCRIPTION_DESC = \"Description about what this display does.\"\n STRING_CUSTOM_ATTRIBUTE_DAMAGE = \"Damage\"\n STRING_OPTIONS_ANIMATESCROLL_DESC = \"When enabled, scrollbar uses a animation when showing up or hiding.\"\n STRING_FORGE_HEADER_CREATEAURA = \"Create Aura\"\n STRING_OPTIONS_INSTANCE_STATUSBAR_ANCHOR = \"Statusbar:\"\n STRING_OPTIONS_BAR_ICONFILE6 = \"Default (transparent black white)\"\n STRING_FORGE_TUTORIAL_DESC = \"Browse spells and boss mods timers to create auras by clicking on '|cFFFFFF00Create Aura|r'.\"\n STRING_OPTIONS_PLUGINS_VERSION = \"Version\"\n STRING_OPTIONS_TEXT_SHOW_SEPARATOR_DESC = \"Choose which character is used to separate the per second amount from percent amount.\"\n STRING_INTERFACE_OPENOPTIONS = \"Open Options Panel\"\n STRING_OPTIONS_PROFILES_TITLE_DESC = \"These options allow you share the same settings between different characters.\"\n STRING_FORGE_FILTER_PLAYERNAME = \"Player Name\"\n STRING_OPTIONS_TEXT_DESC = \"These options control the appearance of the window row texts.\"\n STRING_OPTIONS_PROFILES_TITLE = \"Profiles\"\n STRING_OPTIONS_TEXTEDITOR_COMMA = \"Comma\"\n STRING_OPTIONS_RT_COOLDOWNS_SELECT = \"Ignored Cooldown List\"\n STRING_DAMAGE = \"Damage\"\n STRING_WELCOME_79 = \"Create 2nd Window\"\n STRING_OPTIONS_SEGMENTSSAVE_DESC = \"How many segments you want to save between game sessions.\n\nHigh values may increase the time your character takes to logoff.\"\n STRING_LEFT = \"left\"\n STRING_OPTIONS_WALLPAPER_FILE = \"File:\"\n STRING_OPTIONS_CHART_ADDAUTHOR = \"Author: \"\n STRING_GUILDDAMAGERANK_TUTORIAL_DESC = \"Details! store the damage and healing done for each boss encounter you run with your guild.\\n\\nBrowse the history by checking the box '|cFFFFFF00Show History|r', results for all fights will be displayed.\\n By selecting '|cFFFFFF00Show",
+			["stack"] = "Interface\\AddOns\\Details\\gumps\\janela_report.lua:915: in main chunk",
+			["session"] = 697,
+			["counter"] = 1,
+		}, -- [55]
+		{
+			["message"] = "Interface\\AddOns\\Details\\gumps\\janela_principal.lua:35: attempt to index field '_detalhes_props' (a nil value)",
+			["time"] = "2020/07/09 19:01:56",
+			["locals"] = "_detalhes = <table> {\n ToK0Min = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:344\n APITopics = <table> {\n }\n modules = <table> {\n }\n CancelTimer = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:147\n GetEncounterIdFromBossIndex = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:104\n hex = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:687\n LowerizeKeys = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:92\n opened_windows = 0\n habilidade_e_energy = <table> {\n }\n InstallEncounter = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:392\n PotionList = <table> {\n }\n IsInInstance = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:12\n ClearSpellCache = <function> defined @Interface\\AddOns\\Details\\functions\\spellcache.lua:22\n GuessSpec = <function> defined @Interface\\AddOns\\Details\\functions\\playerclass.lua:341\n GetReportIconAndColor = <function> defined @Interface\\AddOns\\Details\\gumps\\janela_report.lua:318\n icon_animations = <table> {\n }\n ToK0 = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:309\n FindGUIDFromName = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:932\n alvo_da_habilidade = <table> {\n }\n RestoreState_CurrentMythicDungeonRun = <function> defined @Interface\\AddOns\\Details\\functions\\profiles.lua:1486\n GetNickname = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:670\n GetEncounterStartInfo = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:109\n GetEncounterEnd = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:125\n ImportProfile = <function> defined @Interface\\AddOns\\Details\\functions\\profiles.lua:1637\n SetNickname = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:520\n UnregisterAllComm = <function> defined @Interface\\AddOns\\Aptechka\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:174\n SetEnabledState = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:424\n default_global_data = <table> {\n }\n RegistrarNaTimeMachine = <function> defined @Interface\\AddOns\\Details\\core\\timemachine.lua:122\n combate = <table> {\n }\n CopyPaste = <function> defined @Interface\\AddOns\\Details\\gumps\\janela_copy.lua:58\n atributo_damage = <table> {\n }\n cache_npc_ids = <table> {\n }\n GetCurrentDungeonBossListFromEJ = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:339\n GetCLName = <function> defined @Interface\\AddOns\\Details\\functions\\classes.lua:126\n GetCurrentToKFunction = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:417\n GetInstanceTrashInfo = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:44\n GetFlag = <function> defined @Interface\\AddOns\\Details\\functions\\classes.lua:144\n InstancesToStoreData = <table> {\n }\n GetRowAnimationList = <function> defined @Interface\\AddOns\\Details\\functions\\rowanimation.lua:47\n RunCodeTypes = <table> {\n }\n GetNicknameTable = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:711\n RegistredEvents = <table> {\n }\n GetEncounterActorsName = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:306\n HealthTick = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:874\n realversion = 141\n SendReportTextWindow = <function> defined @Interface\\AddOns\\Details\\gumps\\janela_report.lua:138\n GetEncounterSpells = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:166\n default_skin_to_use = \"Minimalistic\"\n GetName = <function> defined @Interface\\AddOns\\Details\\functions\\classes.lua:106\n GetEncounterEqualize = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:142\n name = \"_detalhes\"\n GetBossDetails = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:156\n Disable = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:314\n atributo_energy = <table> {\n }\n GetRaidIcon = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:238\n encounter_counter = <table> {\n }\n ReportOptions = <table> {\n }\n GetGUID = <functio",
+			["stack"] = "Interface\\AddOns\\Details\\gumps\\janela_principal.lua:35: in main chunk",
+			["session"] = 697,
+			["counter"] = 1,
+		}, -- [56]
+		{
+			["message"] = "Interface\\AddOns\\Details\\gumps\\janela_custom.lua:56: attempt to index local 'gump' (a nil value)",
+			["time"] = "2020/07/09 19:01:56",
+			["locals"] = "_detalhes = <table> {\n ToK0Min = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:344\n APITopics = <table> {\n }\n modules = <table> {\n }\n CancelTimer = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:147\n GetEncounterIdFromBossIndex = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:104\n hex = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:687\n LowerizeKeys = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:92\n opened_windows = 0\n habilidade_e_energy = <table> {\n }\n InstallEncounter = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:392\n PotionList = <table> {\n }\n IsInInstance = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:12\n ClearSpellCache = <function> defined @Interface\\AddOns\\Details\\functions\\spellcache.lua:22\n GuessSpec = <function> defined @Interface\\AddOns\\Details\\functions\\playerclass.lua:341\n GetReportIconAndColor = <function> defined @Interface\\AddOns\\Details\\gumps\\janela_report.lua:318\n icon_animations = <table> {\n }\n ToK0 = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:309\n FindGUIDFromName = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:932\n alvo_da_habilidade = <table> {\n }\n RestoreState_CurrentMythicDungeonRun = <function> defined @Interface\\AddOns\\Details\\functions\\profiles.lua:1486\n GetNickname = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:670\n GetEncounterStartInfo = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:109\n GetEncounterEnd = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:125\n ImportProfile = <function> defined @Interface\\AddOns\\Details\\functions\\profiles.lua:1637\n SetNickname = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:520\n UnregisterAllComm = <function> defined @Interface\\AddOns\\Aptechka\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:174\n SetEnabledState = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:424\n default_global_data = <table> {\n }\n RegistrarNaTimeMachine = <function> defined @Interface\\AddOns\\Details\\core\\timemachine.lua:122\n combate = <table> {\n }\n CopyPaste = <function> defined @Interface\\AddOns\\Details\\gumps\\janela_copy.lua:58\n atributo_damage = <table> {\n }\n cache_npc_ids = <table> {\n }\n GetCurrentDungeonBossListFromEJ = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:339\n GetCLName = <function> defined @Interface\\AddOns\\Details\\functions\\classes.lua:126\n GetCurrentToKFunction = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:417\n GetInstanceTrashInfo = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:44\n GetFlag = <function> defined @Interface\\AddOns\\Details\\functions\\classes.lua:144\n InstancesToStoreData = <table> {\n }\n GetRowAnimationList = <function> defined @Interface\\AddOns\\Details\\functions\\rowanimation.lua:47\n RunCodeTypes = <table> {\n }\n GetNicknameTable = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:711\n RegistredEvents = <table> {\n }\n GetEncounterActorsName = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:306\n HealthTick = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:874\n realversion = 141\n SendReportTextWindow = <function> defined @Interface\\AddOns\\Details\\gumps\\janela_report.lua:138\n GetEncounterSpells = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:166\n default_skin_to_use = \"Minimalistic\"\n GetName = <function> defined @Interface\\AddOns\\Details\\functions\\classes.lua:106\n GetEncounterEqualize = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:142\n name = \"_detalhes\"\n GetBossDetails = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:156\n Disable = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:314\n atributo_energy = <table> {\n }\n GetRaidIcon = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:238\n encounter_counter = <table> {\n }\n ReportOptions = <table> {\n }\n GetGUID = <functio",
+			["stack"] = "Interface\\AddOns\\Details\\gumps\\janela_custom.lua:56: in main chunk",
+			["session"] = 697,
+			["counter"] = 1,
+		}, -- [57]
+		{
+			["message"] = "Interface\\AddOns\\Details\\functions\\raidinfo.lua:554: attempt to index global 'DetailsFramework' (a nil value)",
+			["time"] = "2020/07/09 19:02:00",
+			["locals"] = "self = <table> {\n UpdateDamageAbilityGears = <function> defined @Interface\\AddOns\\Details\\classes\\classe_damage_habilidade.lua:201\n ToK0Min = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:344\n APITopics = <table> {\n }\n modules = <table> {\n }\n CancelTimer = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:147\n GetEncounterIdFromBossIndex = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:104\n UnitHealingPets = <function> defined @Interface\\AddOns\\Details\\functions\\api2.lua:2098\n hex = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:687\n LowerizeKeys = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:92\n opened_windows = 0\n habilidade_e_energy = <table> {\n }\n InstallEncounter = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:392\n PotionList = <table> {\n }\n UnitDamageTaken = <function> defined @Interface\\AddOns\\Details\\functions\\api2.lua:1069\n IsInInstance = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:12\n ClearSpellCache = <function> defined @Interface\\AddOns\\Details\\functions\\spellcache.lua:22\n GuessSpec = <function> defined @Interface\\AddOns\\Details\\functions\\playerclass.lua:341\n GetReportIconAndColor = <function> defined @Interface\\AddOns\\Details\\gumps\\janela_report.lua:318\n icon_animations = <table> {\n }\n ToK0 = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:309\n FindGUIDFromName = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:932\n alvo_da_habilidade = <table> {\n }\n RestoreState_CurrentMythicDungeonRun = <function> defined @Interface\\AddOns\\Details\\functions\\profiles.lua:1486\n GetNickname = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:670\n GetEncounterStartInfo = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:109\n GetEncounterEnd = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:125\n ImportProfile = <function> defined @Interface\\AddOns\\Details\\functions\\profiles.lua:1637\n IsInCity = <function> defined @Interface\\AddOns\\Details\\core\\network.lua:800\n SetNickname = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:520\n UnregisterAllComm = <function> defined @Interface\\AddOns\\Aptechka\\Libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:174\n SetEnabledState = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:424\n SegmentPhases = <function> defined @Interface\\AddOns\\Details\\functions\\api2.lua:425\n NewError = <function> defined @Interface\\AddOns\\Details\\classes\\classe_error.lua:20\n default_global_data = <table> {\n }\n UnitTexture = <function> defined @Interface\\AddOns\\Details\\functions\\api2.lua:553\n ResetSegmentData = <function> defined @Interface\\AddOns\\Details\\classes\\container_historico.lua:27\n RegistrarNaTimeMachine = <function> defined @Interface\\AddOns\\Details\\core\\timemachine.lua:122\n combate = <table> {\n }\n CopyPaste = <function> defined @Interface\\AddOns\\Details\\gumps\\janela_copy.lua:58\n atributo_damage = <table> {\n }\n cache_npc_ids = <table> {\n }\n GetCurrentDungeonBossListFromEJ = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:339\n GetCLName = <function> defined @Interface\\AddOns\\Details\\functions\\classes.lua:126\n GetCurrentToKFunction = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:417\n GetInstanceTrashInfo = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:44\n GetFlag = <function> defined @Interface\\AddOns\\Details\\functions\\classes.lua:144\n InstancesToStoreData = <table> {\n }\n GetRowAnimationList = <function> defined @Interface\\AddOns\\Details\\functions\\rowanimation.lua:47\n RunCodeTypes = <table> {\n }\n GetNicknameTable = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:711\n RegistredEvents = <table> {\n }\n GetEncounterActorsName = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:306\n HealthTick = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:874\n realversion = 141\n SendReportTextWindow = <function> defined @Interface\\AddOns\\Details\\gumps\\janela_repor",
+			["stack"] = "Interface\\AddOns\\Details\\functions\\raidinfo.lua:554: in function `?'\n...dOns\\ChocolateBar\\libs\\AceTimer-3.0\\AceTimer-3.0-17.lua:55: in function <...dOns\\ChocolateBar\\libs\\AceTimer-3.0\\AceTimer-3.0.lua:50>",
+			["session"] = 697,
+			["counter"] = 1,
+		}, -- [58]
+		{
+			["message"] = "Interface\\AddOns\\Details\\functions\\raidinfo.lua:160: attempt to index global 'DetailsFramework' (a nil value)",
+			["time"] = "2020/07/09 19:02:04",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'DetailsFramework' (a nil value)\"\nINSTANCE_EJID = 1179\nPORTRAIT_LIST = <table> {\n 1 = 3012047\n 2 = 3012062\n 3 = 3012062\n 4 = 3012055\n 5 = 3012054\n 6 = 3012057\n 7 = 3012064\n 8 = 3012056\n}\nINSTANCE_MAPID = 2164\nHDIMAGESPATH = \"Details\\images\\raid\"\nHDFILEPREFIX = \"EternalPalaceRaid\"\nLOADINGSCREEN_FILE = \"Expansion07\\Main\\LoadingScreen_Nazjatar_RAID\"\nLOADINGSCREEN_COORDS = <table> {\n 1 = 0\n 2 = 1\n 3 = 0.278320\n 4 = 0.854492\n}\nEJ_LOREBG = \"UI-EJ-LOREBG-EternalPalace\"\nENCOUNTER_ID_EJ = <table> {\n 1 = 2352\n 2 = 2347\n 3 = 2353\n 4 = 2354\n 5 = 2351\n 6 = 2359\n 7 = 2349\n 8 = 2361\n 2361 = 8\n 2351 = 5\n 2352 = 1\n 2353 = 3\n 2347 = 2\n 2359 = 6\n 2349 = 7\n 2354 = 4\n}\nENCOUNTER_ID_CL = <table> {\n 1 = 2298\n 2 = 2289\n 3 = 2305\n 4 = 2304\n 5 = 2303\n 6 = 2311\n 7 = 2293\n 8 = 2299\n 2311 = 6\n 2303 = 5\n 2289 = 2\n 2304 = 4\n 2298 = 1\n 2299 = 8\n 2293 = 7\n 2305 = 3\n}\n",
+			["stack"] = "Interface\\AddOns\\Details\\functions\\raidinfo.lua:160: in function <Interface\\AddOns\\Details\\functions\\raidinfo.lua:157>",
+			["session"] = 697,
+			["counter"] = 1,
+		}, -- [59]
+		{
+			["message"] = "Interface\\AddOns\\Details\\functions\\raidinfo.lua:66: attempt to index global 'DetailsFramework' (a nil value)",
+			["time"] = "2020/07/09 19:02:04",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'DetailsFramework' (a nil value)\"\nINSTANCE_EJID = 1180\nPORTRAIT_LIST = <table> {\n 1 = 3256385\n 2 = 3256380\n 3 = 3256384\n 4 = 3256386\n 5 = 3256378\n 6 = 3256383\n 7 = 3256377\n 8 = 3256379\n 9 = 3257677\n 10 = 3256382\n 11 = 3256376\n 12 = 3256381\n}\nINSTANCE_MAPID = 2217\nHDIMAGESPATH = \"Details\\images\\raid\"\nHDFILEPREFIX = \"NyalothaRaid\"\nLOADINGSCREEN_FILE = \"Expansion07\\Main\\LOADINGSCREEN_NzothRAID\"\nLOADINGSCREEN_COORDS = <table> {\n 1 = 0\n 2 = 1\n 3 = 0.278320\n 4 = 0.854492\n}\nEJ_LOREBG = \"UI-EJ-LOREBG-Nyalotha\"\nENCOUNTER_ID_EJ = <table> {\n 1 = 2368\n 2 = 2365\n 3 = 2369\n 4 = 2377\n 5 = 2372\n 6 = 2367\n 7 = 2373\n 8 = 2374\n 9 = 2370\n 10 = 2364\n 11 = 2366\n 12 = 2375\n 2364 = 10\n 2372 = 5\n 2365 = 2\n 2373 = 7\n 2366 = 11\n 2374 = 8\n 2367 = 6\n 2375 = 12\n 2368 = 1\n 2369 = 3\n 2377 = 4\n 2370 = 9\n}\nENCOUNTER_ID_CL = <table> {\n 1 = 2329\n 2 = 2327\n 3 = 2334\n 4 = 2328\n 5 = 2333\n 6 = 2335\n 7 = 2343\n 8 = 2345\n 9 = 2336\n 10 = 2331\n 11 = 2337\n 12 = 2344\n 2334 = 3\n 2327 = 2\n 2335 = 6\n 2328 = 4\n 2336 = 9\n 2329 = 1\n 2337 = 11\n 2345 = 8\n 2331 = 10\n 2344 = 12\n 2333 = 5\n 2343 = 7\n}\n",
+			["stack"] = "Interface\\AddOns\\Details\\functions\\raidinfo.lua:66: in function <Interface\\AddOns\\Details\\functions\\raidinfo.lua:63>",
+			["session"] = 697,
+			["counter"] = 1,
+		}, -- [60]
+		{
+			["message"] = "Interface\\AddOns\\Details\\functions\\raidinfo.lua:446: attempt to index global 'DetailsFramework' (a nil value)",
+			["time"] = "2020/07/09 19:02:04",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'DetailsFramework' (a nil value)\"\nINSTANCE_EJID = 1031\nPORTRAIT_LIST = <table> {\n 1 = 2176749\n 2 = 2176741\n 3 = 2176725\n 4 = 2176761\n 5 = 2176757\n 6 = 2176762\n 7 = 2176742\n 8 = 2176728\n}\nINSTANCE_MAPID = 1861\nHDIMAGESPATH = \"Details\\images\\raid\"\nHDFILEPREFIX = \"UldirRaid\"\nLOADINGSCREEN_FILE = \"Loadingscreen_NazmirRaid\"\nLOADINGSCREEN_COORDS = <table> {\n 1 = 0\n 2 = 1\n 3 = 0.278320\n 4 = 0.854492\n}\nEJ_LOREBG = \"UI-EJ-LOREBG-Uldir\"\nENCOUNTER_ID_EJ = <table> {\n 1 = 2168\n 2 = 2167\n 3 = 2146\n 4 = 2169\n 5 = 2166\n 6 = 2195\n 7 = 2194\n 8 = 2147\n 2168 = 1\n 2169 = 4\n 2147 = 8\n 2194 = 7\n 2195 = 6\n 2166 = 5\n 2167 = 2\n 2146 = 3\n}\nENCOUNTER_ID_CL = <table> {\n 1 = 2144\n 2 = 2141\n 3 = 2128\n 4 = 2136\n 5 = 2134\n 6 = 2145\n 7 = 2135\n 8 = 2122\n 2122 = 8\n 2141 = 2\n 2128 = 3\n 2136 = 4\n 2144 = 1\n 2145 = 6\n 2135 = 7\n 2134 = 5\n}\n",
+			["stack"] = "Interface\\AddOns\\Details\\functions\\raidinfo.lua:446: in function <Interface\\AddOns\\Details\\functions\\raidinfo.lua:443>",
+			["session"] = 697,
+			["counter"] = 1,
+		}, -- [61]
+		{
+			["message"] = "Interface\\AddOns\\Details\\functions\\raidinfo.lua:338: attempt to index global 'DetailsFramework' (a nil value)",
+			["time"] = "2020/07/09 19:02:04",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'DetailsFramework' (a nil value)\"\nINSTANCE_EJID = 1176\nPORTRAIT_LIST = <table> {\n 1 = 2497778\n 2 = 2497783\n 3 = 2529383\n 4 = 2497790\n 5 = 2497779\n 6 = 2497784\n 7 = 2497788\n 8 = 2497786\n 9 = 2497785\n}\nINSTANCE_MAPID = 2070\nHDIMAGESPATH = \"Details\\images\\raid\"\nHDFILEPREFIX = \"DazaralorRaid\"\nLOADINGSCREEN_FILE = \"LoadScreen_ZuldazarRaid_Wide\"\nLOADINGSCREEN_COORDS = <table> {\n 1 = 0\n 2 = 1\n 3 = 0.278320\n 4 = 0.854492\n}\nEJ_LOREBG = \"UI-EJ-LOREBG-BattleOfDazaralor\"\nENCOUNTER_ID_EJ = <table> {\n 1 = 2333\n 2 = 2325\n 3 = 2341\n 4 = 2342\n 5 = 2330\n 6 = 2335\n 7 = 2334\n 8 = 2337\n 9 = 2343\n 2341 = 3\n 2334 = 7\n 2342 = 4\n 2335 = 6\n 2343 = 9\n 2337 = 8\n 2330 = 5\n 2325 = 2\n 2333 = 1\n}\nENCOUNTER_ID_CL = <table> {\n 1 = 2265\n 2 = 2263\n 3 = 2266\n 4 = 2271\n 5 = 2268\n 6 = 2272\n 7 = 2276\n 8 = 2280\n 9 = 2281\n 2266 = 3\n 2268 = 5\n 2276 = 7\n 2263 = 2\n 2271 = 4\n 2272 = 6\n 2265 = 1\n 2281 = 9\n 2280 = 8\n}\n",
+			["stack"] = "Interface\\AddOns\\Details\\functions\\raidinfo.lua:338: in function <Interface\\AddOns\\Details\\functions\\raidinfo.lua:335>",
+			["session"] = 697,
+			["counter"] = 1,
+		}, -- [62]
+		{
+			["message"] = "Interface\\AddOns\\Details\\functions\\raidinfo.lua:237: attempt to index global 'DetailsFramework' (a nil value)",
+			["time"] = "2020/07/09 19:02:04",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'DetailsFramework' (a nil value)\"\nINSTANCE_EJID = 1177\nPORTRAIT_LIST = <table> {\n 1 = 2497795\n 2 = 2497794\n}\nINSTANCE_MAPID = 2096\nHDIMAGESPATH = \"Details\\images\\raid\"\nHDFILEPREFIX = \"CrucibleRaid\"\nLOADINGSCREEN_FILE = \"LoadingScreen_Seapriestraid_wide_BattleforAzeroth\"\nLOADINGSCREEN_COORDS = <table> {\n 1 = 0\n 2 = 1\n 3 = 0.278320\n 4 = 0.854492\n}\nEJ_LOREBG = \"UI-EJ-LOREBG-CrucibleOfStorms\"\nENCOUNTER_ID_EJ = <table> {\n 1 = 2328\n 2 = 2332\n 2328 = 1\n 2332 = 2\n}\nENCOUNTER_ID_CL = <table> {\n 1 = 2269\n 2 = 2273\n 2269 = 1\n 2273 = 2\n}\n",
+			["stack"] = "Interface\\AddOns\\Details\\functions\\raidinfo.lua:237: in function <Interface\\AddOns\\Details\\functions\\raidinfo.lua:234>",
+			["session"] = 697,
+			["counter"] = 1,
+		}, -- [63]
+		{
+			["message"] = "Interface\\AddOns\\InFlight\\InFlight-1.13.002.lua:283: hooksecurefunc(): ConfirmSummon is not a function",
+			["time"] = "2020/07/09 19:37:43",
+			["locals"] = "",
+			["stack"] = "[C]: in function `hooksecurefunc'\nInterface\\AddOns\\InFlight\\InFlight-1.13.002.lua:283: in function `LoadBulk'\nInterface\\AddOns\\InFlight_Load\\InFlight_Load-1.13.002.lua:27: in function `?'\nInterface\\AddOns\\InFlight_Load\\InFlight_Load-1.13.002.lua:3: in function <Interface\\AddOns\\InFlight_Load\\InFlight_Load.lua:3>\n[C]: in function `LoadAddOn'\nInterface\\AddOns\\InFlight_Load\\InFlight_Load-1.13.002.lua:9: in function <Interface\\AddOns\\InFlight_Load\\InFlight_Load.lua:7>\nInterface\\AddOns\\InFlight_Load\\InFlight_Load-1.13.002.lua:34: in function `?'\nInterface\\AddOns\\InFlight_Load\\InFlight_Load-1.13.002.lua:3: in function <Interface\\AddOns\\InFlight_Load\\InFlight_Load.lua:3>",
+			["session"] = 699,
+			["counter"] = 1,
+		}, -- [64]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn '!Colorz' tried to call the protected function 'CompactRaidFrame1:ClearAllPoints()'.",
+			["time"] = "2020/07/09 19:52:46",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `ClearAllPoints'\nInterface\\FrameXML\\FlowContainer.lua:157: in function `FlowContainer_DoLayout'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:69: in function `CompactRaidFrameContainer_OnSizeChanged'\n[string \"*:OnSizeChanged\"]:1: in function <[string \"*:OnSizeChanged\"]:1>\n[C]: in function `?'\nInterface\\FrameXML\\FlowContainer.lua:133: in function `FlowContainer_DoLayout'\nInterface\\FrameXML\\FlowContainer.lua:17: in function `FlowContainer_ResumeUpdates'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:185: in function `CompactRaidFrameContainer_LayoutFrames'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:130: in function `CompactRaidFrameContainer_TryUpdate'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:57: in function `CompactRaidFrameContainer_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
+			["session"] = 700,
+			["counter"] = 1,
+		}, -- [65]
+		{
+			["message"] = "Interface\\AddOns\\!Colorz\\!Colorz.lua:21: no loop to break near 'end'",
+			["time"] = "2020/07/10 09:06:03",
+			["locals"] = "",
+			["stack"] = "",
+			["session"] = 701,
+			["counter"] = 4,
+		}, -- [66]
+		{
+			["message"] = "...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: Usage: CreateFrame(\"frameType\" [, \"name\"] [, parent] [, \"template\"] [, id])",
+			["time"] = "2020/07/07 16:56:37",
+			["locals"] = "(*temporary) = \"Button\"\n(*temporary) = \"NivayaSlot1\"\n(*temporary) = \"ItemButtonTemplate\"\n(*temporary) = \"ContainerFrameItemButtonTemplate\"\n",
+			["stack"] = "[C]: in function `CreateFrame'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: in function `Create'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:56: in function `New'\nInterface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:762: in function <Interface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:757>",
+			["session"] = 706,
+			["counter"] = 47,
+		}, -- [67]
+	},
+}

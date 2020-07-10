@@ -1,0 +1,38 @@
+
+infVengeanceDB = {
+	["profileKeys"] = {
+		["Mulac - Dentarg"] = "Default",
+		["Tukac - Genesis"] = "Default",
+		["Leru - Grim Batol"] = "Default",
+		["Konza - Genesis"] = "Default",
+		["Govance - Dentarg"] = "Default",
+		["Mulatz - Genesis"] = "Default",
+		["Kostur - Dentarg"] = "Default",
+		["Battitude - Dentarg"] = "Default",
+		["Spija - Genesis"] = "Default",
+		["Pitchwise - Dentarg"] = "Default",
+		["Konza - Dentarg"] = "Default",
+		["Blooq - Genesis"] = "Default",
+		["Tuka - Dentarg"] = "Default",
+		["Pepecocorita - Genesis"] = "Default",
+		["Handrmandr - Genesis"] = "Default",
+		["Korupcija - Ragnaros"] = "Default",
+		["Handrmandr - Dentarg"] = "Default",
+		["Handrmandr - Outland"] = "Default",
+		["Handrmandr - Ragnaros"] = "Default",
+		["Pitchwise - Genesis"] = "Default",
+		["Verson - Dentarg"] = "Default",
+		["Vermins - Dentarg"] = "Default",
+		["Verminz - Genesis"] = "Default",
+		["Korupcija - Dentarg"] = "Default",
+		["Korupcija - Genesis"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["moveable"] = false,
+			["ypos"] = -187.428741455078,
+			["icon"] = false,
+			["xpos"] = 0.91448974609375,
+		},
+	},
+}

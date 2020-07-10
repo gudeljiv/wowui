@@ -1,0 +1,146 @@
+commit 72b481429b5b97b1edff3d402db95b9c65ae7d3b
+Author: shoestare <ryantimkerr@gmail.com>
+Date:   Mon Jul 29 21:33:06 2019 -0400
+
+    Update TOC
+
+commit 777ece5198a25df87a55e8f9016bdf64d17b4dd0
+Author: shoestare <ryantimkerr@gmail.com>
+Date:   Mon Jul 29 21:04:04 2019 -0400
+
+    Update packager
+
+commit 03509c174bc34202c7a3b0770e593e9ff09bdd20
+Author: shoestare <ryantimkerr@gmail.com>
+Date:   Mon Jul 29 17:44:54 2019 -0400
+
+    Update .gitignore
+
+commit 3a8b383ec20bd5accfd0d5afffc5458d344a10aa
+Author: shoestare <ryantimkerr@gmail.com>
+Date:   Mon Jul 29 17:44:32 2019 -0400
+
+    .release added
+
+commit 4be35793eeae04a25f4a47fbb5af4511d97ada13
+Author: shoestare <ryantimkerr@gmail.com>
+Date:   Mon Jul 29 17:38:32 2019 -0400
+
+    Create .pkgmeta
+
+commit 3ff044eb97de6f41ec3cf66d11393292198c2b3e
+Author: shoestare <ryantimkerr@gmail.com>
+Date:   Mon Jul 29 17:35:18 2019 -0400
+
+    Adds liveupdate
+
+commit 6358fc7900dd2d430fcbc064995fbc974a081789
+Author: shoestare <ryantimkerr@gmail.com>
+Date:   Mon Jul 29 17:11:54 2019 -0400
+
+    Optimizations for Classic
+
+commit c9a0d4478fa20bc3d0c06bf1505659b6ba331852
+Author: shoestare <ryantimkerr@gmail.com>
+Date:   Mon Jul 29 17:04:59 2019 -0400
+
+    Update README.md
+
+commit 573fd39ea0224a580d25210ad666801201e4e6a2
+Author: shoestare <ryantimkerr@gmail.com>
+Date:   Mon Jul 29 17:04:10 2019 -0400
+
+    Update README.md
+
+commit df1192a313a61084ffa21f159c7b045d5710462f
+Author: shoestare <ryantimkerr@gmail.com>
+Date:   Mon Jul 29 17:01:32 2019 -0400
+
+    Create README.md
+
+commit 990bdace8eeb827e0241cbdf66010085b6e67eea
+Author: shoestare <ryantimkerr@gmail.com>
+Date:   Mon Jul 29 15:05:06 2019 -0400
+
+    Remove unnecessary txts
+
+commit 1d78a6fc3de300f86d309a576a006a65c8afea78
+Author: domzae <tha_domzae@hotmail.com>
+Date:   Sun Sep 2 11:30:55 2018 +0200
+
+    chat paste fix
+    
+    Actually fixed it this time
+
+commit 343e0ce70f36cf90a33448b2007b7d4098ee38f3
+Author: domzae <tha_domzae@hotmail.com>
+Date:   Tue Jul 24 16:33:52 2018 +0200
+
+    issue #2 fix
+
+commit 343e0ce70f36cf90a33448b2007b7d4098ee38f3
+Author: domzae <tha_domzae@hotmail.com>
+Date:   Tue Jul 24 16:33:52 2018 +0200
+
+    issue #2 fix
+
+commit 4cb4572f4645c0dd7e20084d91767d063adbd9e9
+Author: domzae <40212333+domzae@users.noreply.github.com>
+Date:   Sun Jul 22 22:01:04 2018 +0200
+
+    Update readme.txt
+
+commit bee4be7b34cdc82855045ab20f7919d9102da699
+Author: domzae <tha_domzae@hotmail.com>
+Date:   Sun Jul 22 21:59:38 2018 +0200
+
+    bug fix
+    
+    fix for issue #1
+
+commit 6f8fc875fe28eed1229fd153b3284f9b109cb280
+Author: domzae <tha_domzae@hotmail.com>
+Date:   Sun Jul 22 17:24:35 2018 +0200
+
+    fixed to chat string
+
+commit 6f8fc875fe28eed1229fd153b3284f9b109cb280
+Author: domzae <tha_domzae@hotmail.com>
+Date:   Sun Jul 22 17:24:35 2018 +0200
+
+    fixed to chat string
+
+commit cd75db666e7a9b91e7c8a39150d3308df0b1e635
+Author: domzae <40212333+domzae@users.noreply.github.com>
+Date:   Fri Jul 20 19:13:58 2018 +0200
+
+    Update readme.txt
+
+commit 03e39674ec6c2a4adac4e55fdfed1d1498c53f89
+Author: domzae <tha_domzae@hotmail.com>
+Date:   Fri Jul 20 19:12:01 2018 +0200
+
+    8.0.1 workaround
+    
+    removed "x" from power string override
+
+commit e9b36dd7b4acdda5419318a949262bc72123a167
+Author: domzae <tha_domzae@hotmail.com>
+Date:   Fri Jul 20 19:02:18 2018 +0200
+
+    8.0.1 workaround
+    
+    power gains will not work
+
+commit 77eedb895f26d1383a1ebece7d17b2fe50d7c651
+Author: domzae <tha_domzae@hotmail.com>
+Date:   Fri Jul 20 17:32:03 2018 +0200
+
+    8.0.1 fix
+
+commit 025ff584bb1c801c44685bd6af9ec9ca5239f81f
+Author: domzae <tha_domzae@hotmail.com>
+Date:   Fri Jul 20 17:27:42 2018 +0200
+
+    Initial commit
+

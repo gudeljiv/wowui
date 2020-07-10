@@ -1,0 +1,99 @@
+
+GMMONEY = {
+	["Genesis"] = {
+		["Konza"] = {
+			["GOLD"] = 8950171,
+			["CLASS"] = "DEATHKNIGHT",
+		},
+		["Tukac"] = {
+			["GOLD"] = 181703202,
+			["CLASS"] = "HUNTER",
+		},
+		["Handrmandr"] = {
+			["GOLD"] = 22785632,
+			["CLASS"] = "MONK",
+		},
+		["Spija"] = {
+			["GOLD"] = 10000,
+			["CLASS"] = "PRIEST",
+		},
+		["Mulatz"] = {
+			["GOLD"] = 2822710336,
+			["CLASS"] = "DRUID",
+		},
+		["Verminz"] = {
+			["GOLD"] = 5494171438,
+			["CLASS"] = "WARRIOR",
+		},
+		["Pepecocorita"] = {
+			["GOLD"] = 100008560,
+			["CLASS"] = "PRIEST",
+		},
+		["Pitchwise"] = {
+			["GOLD"] = 10000,
+			["CLASS"] = "SHAMAN",
+		},
+		["Korupcija"] = {
+			["GOLD"] = 19010642,
+			["CLASS"] = "PALADIN",
+		},
+		["Blooq"] = {
+			["GOLD"] = 10031,
+			["CLASS"] = "WARLOCK",
+		},
+	},
+	["Dreadmist"] = {
+		["Paydo"] = {
+			["GOLD"] = 236,
+			["CLASS"] = "WARRIOR",
+		},
+	},
+	["Stonespine"] = {
+		["Elohssa"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "HUNTER",
+		},
+		["Korupcija"] = {
+			["GOLD"] = 1883,
+			["CLASS"] = "WARLOCK",
+		},
+		["Whatevs"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "WARRIOR",
+		},
+	},
+	["Golemagg"] = {
+		["Kosturko"] = {
+			["GOLD"] = 1,
+			["CLASS"] = "PRIEST",
+		},
+		["Pitchwise"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "SHAMAN",
+		},
+		["Judawise"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "PRIEST",
+		},
+		["Ozrencic"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "WARRIOR",
+		},
+		["Dotwise"] = {
+			["GOLD"] = 115,
+			["CLASS"] = "WARLOCK",
+		},
+		["Greenwise"] = {
+			["GOLD"] = 34547,
+			["CLASS"] = "HUNTER",
+		},
+		["Verminz"] = {
+			["GOLD"] = 116878,
+			["CLASS"] = "WARRIOR",
+		},
+	},
+}
+GMMONEYSET = {
+	["FULLDISP"] = true,
+	["TEXTMODE"] = true,
+}

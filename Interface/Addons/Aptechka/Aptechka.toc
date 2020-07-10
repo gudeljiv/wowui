@@ -1,0 +1,26 @@
+## Interface: 11302
+## Title: Aptechka
+## Notes: Raid Frames
+## Version: 1.13.20
+## Author: d87
+## SavedVariablesPerCharacter: AptechkaDB_Char
+## SavedVariables: AptechkaDB_Global, AptechkaConfigCustom
+## OptionalDeps: Clique
+
+## X-WoWI-ID: 25050
+
+Libs\LibStub\LibStub.lua
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
+Libs\LibSharedMedia-3.0\lib.xml
+Libs\LibSpellLocks\LibSpellLocks.lua
+Libs\LibAuraTypes\LibAuraTypes.lua
+Libs\LibClassicDurations\LibClassicDurations.xml
+Libs\LibClassicHealComm-1.0\lib.xml
+Libs\LibBanzai-2.0\lib.xml
+
+helpers.lua
+config.lua
+classic.config.lua
+loadables.lua
+Aptechka.lua
+frame.lua
