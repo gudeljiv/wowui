@@ -44,6 +44,7 @@
 -   [SharedMedia](https://www.curseforge.com/wow/addons/sharedmedia)
 -   [TellMeWhen](https://www.wowinterface.com/downloads/info25152-TellMeWhenClassic.html)
 -   [TomTom](https://www.wowinterface.com/downloads/info7032-TomTom.html)
+-   [TrainAll](https://www.wowinterface.com/downloads/info24942-TrainAllClassic.html)
 -   [UnitFramesImproved](https://www.wowisclassic.com/en/addons/unitframesimproved/)
 -   [WeaponSwingTimer](https://www.wowinterface.com/downloads/info25004-WeaponSwingTimer.html)
 -   xVermin (my set of scripts)
