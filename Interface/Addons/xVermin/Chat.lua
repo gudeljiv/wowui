@@ -246,6 +246,10 @@ local function SetChatChannels()
 	ChatFrame_AddChannel(ChatFrame5, "WorldDefense")
 end
 
+SLASH_SETCHANNELS1 = "/fc"
+SlashCmdList["SETCHANNELS"] = SetChatChannels
+
+
 -- Tab text colors for the tabs
 hooksecurefunc(
 	"FCFTab_UpdateColors",
@@ -256,7 +260,7 @@ hooksecurefunc(
 			self:GetFontString():SetTextColor(1, 1, 1)
 		end
 
-		SetChatChannels()
+		-- SetChatChannels()
 	end
 )
 

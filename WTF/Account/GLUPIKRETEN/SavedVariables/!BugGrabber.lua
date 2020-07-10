@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 709,
+	["session"] = 715,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVerminz\\Experience.lua:7: bad argument #1 to 'select' (index out of range)",
@@ -565,12 +565,20 @@ BugGrabberDB = {
 			["counter"] = 40,
 		}, -- [73]
 		{
+			["message"] = "...ace\\AddOns\\UnitFramesImproved\\UnitFramesImproved-1.7.1.lua:109: attempt to call global 'SetText' (a nil value)",
+			["time"] = "2020/07/10 19:06:20",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"\"\n(*temporary) = \"attempt to call global 'SetText' (a nil value)\"\n",
+			["stack"] = "...ace\\AddOns\\UnitFramesImproved\\UnitFramesImproved-1.7.1.lua:109: in function `EnableUnitFramesImproved'\n...ace\\AddOns\\UnitFramesImproved\\UnitFramesImproved-1.7.1.lua:37: in function `?'\n...ace\\AddOns\\UnitFramesImproved\\UnitFramesImproved-1.7.1.lua:431: in function <...ace\\AddOns\\UnitFramesImproved\\UnitFramesImproved.lua:431>",
+			["session"] = 714,
+			["counter"] = 1,
+		}, -- [74]
+		{
 			["message"] = "...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: Usage: CreateFrame(\"frameType\" [, \"name\"] [, parent] [, \"template\"] [, id])",
 			["time"] = "2020/07/07 16:56:37",
 			["locals"] = "(*temporary) = \"Button\"\n(*temporary) = \"NivayaSlot1\"\n(*temporary) = \"ItemButtonTemplate\"\n(*temporary) = \"ContainerFrameItemButtonTemplate\"\n",
 			["stack"] = "[C]: in function `CreateFrame'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: in function `Create'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:56: in function `New'\nInterface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:762: in function <Interface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:757>",
-			["session"] = 709,
-			["counter"] = 50,
-		}, -- [74]
+			["session"] = 715,
+			["counter"] = 56,
+		}, -- [75]
 	},
 }

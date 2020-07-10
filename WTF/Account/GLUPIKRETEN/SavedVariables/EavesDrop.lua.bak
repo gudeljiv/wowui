@@ -15,8 +15,8 @@ EavesDropDB = {
 		["Verminz - Genesis"] = "Default",
 		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
 		["Elohssa - Stonespine"] = "Default",
-		["Pitchwise - Genesis"] = "Pitchwise - Genesis",
 		["Vermin - Golemagg"] = "Default",
+		["Pitchwise - Genesis"] = "Pitchwise - Genesis",
 		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
 		["Pepecocorita - Genesis"] = "Default",
 		["Judawise - Golemagg"] = "Default",
@@ -63,12 +63,12 @@ EavesDropDB = {
 			["x"] = 551.714104134467,
 			["HIDETAB"] = true,
 			["TEXTSIZE"] = 13,
-			["SCROLLBUTTON"] = true,
-			["NUMLINES"] = 16,
-			["LINEHEIGHT"] = 16,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
+			["NUMLINES"] = 16,
+			["LINEHEIGHT"] = 16,
+			["SCROLLBUTTON"] = true,
 		},
 		["Greenwise - Golemagg"] = {
 		},
@@ -111,11 +111,11 @@ EavesDropDB = {
 			["NUMLINES"] = 16,
 			["y"] = 236.195578993564,
 		},
-		["Golemagg"] = {
+		["Judawise - Golemagg"] = {
 		},
 		["Kosturko - Golemagg"] = {
 		},
-		["Judawise - Golemagg"] = {
+		["Golemagg"] = {
 		},
 		["Ozrencic - Golemagg"] = {
 		},
