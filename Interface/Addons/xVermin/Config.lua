@@ -1,20 +1,20 @@
 local _, ns = ...
 
-ns.config = {}
-local config = ns.config
+-- ns.config = {}
+-- local config = ns.config
 
 config = {
 	font = {
 		arial = "Fonts\\ARIALN.ttf",
-		atari = "Interface\\AddOns\\xVerminz\\media\\fontAtari.ttf",
-		damage = "Interface\\AddOns\\xVerminz\\media\\damagefont.ttf"
+		atari = "Interface\\AddOns\\xVermin\\media\\fontAtari.ttf",
+		damage = "Interface\\AddOns\\xVermin\\media\\damagefont.ttf"
 	},
 	background = {
 		white = "Interface\\Buttons\\WHITE8x8"
 	},
 	border = {
-		buff = "Interface\\AddOns\\xVerminz\\media\\textureOverlay",
-		debuff = "Interface\\AddOns\\xVerminz\\media\\textureDebuff"
+		buff = "Interface\\AddOns\\xVermin\\media\\textureOverlay",
+		debuff = "Interface\\AddOns\\xVermin\\media\\textureDebuff"
 	},
 	buff = {
 		scale = 1.3,

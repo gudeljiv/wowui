@@ -1,8 +1,5 @@
 
 AtlasLootClassicDB = {
-	["global"] = {
-		["__addonrevision"] = 1010009,
-	},
 	["profileKeys"] = {
 		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
 		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
@@ -13,10 +10,13 @@ AtlasLootClassicDB = {
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Elohssa - Stonespine"] = "Elohssa - Stonespine",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
-		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
 		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
+		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
 		["Ozrencic - Golemagg"] = "Ozrencic - Golemagg",
 		["Whatevs - Stonespine"] = "Default",
+	},
+	["global"] = {
+		["__addonrevision"] = 1010009,
 	},
 	["profiles"] = {
 		["Dotwise - Golemagg"] = {
@@ -37,10 +37,6 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Verminz - Golemagg"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -50,8 +46,16 @@ AtlasLootClassicDB = {
 					0, -- [5]
 				},
 			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 		},
-		["Korupcija - Stonespine"] = {
+		["Vermin - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -61,12 +65,12 @@ AtlasLootClassicDB = {
 					0, -- [5]
 				},
 			},
+		},
+		["Paydo - Dreadmist"] = {
 			["minimap"] = {
 				["shown"] = false,
 				["hide"] = true,
 			},
-		},
-		["Paydo - Dreadmist"] = {
 			["GUI"] = {
 				["point"] = {
 					nil, -- [1]
@@ -83,12 +87,8 @@ AtlasLootClassicDB = {
 					0, -- [5]
 				},
 			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 		},
-		["Vermin - Golemagg"] = {
+		["Korupcija - Stonespine"] = {
 			["minimap"] = {
 				["shown"] = false,
 				["hide"] = true,
@@ -117,7 +117,11 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
-		["Greenwise - Golemagg"] = {
+		["Kosturko - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -126,13 +130,13 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
 			},
 		},
-		["Kosturko - Golemagg"] = {
+		["Greenwise - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -141,10 +145,6 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
 			},
 		},
 		["Ozrencic - Golemagg"] = {

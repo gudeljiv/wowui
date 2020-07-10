@@ -242,21 +242,21 @@ end
 local function ItemButton_UpdateQuest(self, item)
 	
 	self:CreateBeautyBorder(6)
-	self:SetBeautyBorderTexture("Interface\\AddOns\\xVerminz\\media\\textureNormal")
+	self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureNormal")
 	self:SetBeautyBorderColor(1, 1, 1)
 
 	if item.questID or item.isQuestItem then
 		-- self.Border:SetBackdropBorderColor(1, 1, 0, 1)
-		self:SetBeautyBorderTexture("Interface\\AddOns\\xVerminz\\media\\textureWhite.tga")
+		self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite.tga")
 		self:SetBeautyBorderColor(1, 0.964, 0, 1)
 	elseif item.rarity and item.rarity > 1 then
 		local r, g, b = GetItemQualityColor(item.rarity)
 		-- self.Border:SetBackdropBorderColor(r, g, b, 1)
-		self:SetBeautyBorderTexture("Interface\\AddOns\\xVerminz\\media\\textureWhite.tga")
+		self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite.tga")
 		self:SetBeautyBorderColor(r, g, b, 1)
 	else
 		-- self.Border:SetBackdropBorderColor(0, 0, 0, 1)
-		-- self:SetBeautyBorderTexture("Interface\\AddOns\\xVerminz\\media\\textureDebuff")
+		-- self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureDebuff")
 		-- self:SetBeautyBorderColor(0, 0, 0, 1)
 	end
 	if(self.OnUpdateQuest) then self:OnUpdateQuest(item) end

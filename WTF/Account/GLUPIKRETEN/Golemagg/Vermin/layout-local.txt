@@ -83,13 +83,6 @@ X: -171
 Y: 134
 W: 920
 H: 600
-Frame: MkQL_Main_Frame
-FrameLevel: 1
-Anchor: TOP
-X: 365
-Y: -149
-W: 587
-H: 542
 Frame: NivayacBniv_Bank
 FrameLevel: 2
 Anchor: CENTER
@@ -104,6 +97,13 @@ X: -184
 Y: -208
 W: 274
 H: 98
+Frame: MkQL_Main_Frame
+FrameLevel: 1
+Anchor: TOP
+X: 365
+Y: -149
+W: 587
+H: 542
 Frame: nTooltip_Anchor
 FrameLevel: 1
 Anchor: TOP

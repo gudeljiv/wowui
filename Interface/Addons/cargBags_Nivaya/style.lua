@@ -663,11 +663,11 @@ function MyContainer:OnCreate(name, settings)
 	background:CreateBeautyBorder(6)
 
 	-- if(name == "DPS Gear") then
-	-- 	background:SetBeautyBorderTexture("Interface\\AddOns\\xVerminz\\media\\textureDebuff")
+	-- 	background:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureDebuff")
 	-- 	background:SetBeautyBorderColor(0.2, 0.5, 0.4, 1)
 	-- end
 	-- if(name == "Tanking Gear") then
-	-- background:SetBeautyBorderTexture("Interface\\AddOns\\xVerminz\\media\\textureShadow")
+	-- background:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureShadow")
 	-- background:SetBeautyBorderColor(0.2, 0.5, 0.4, 1)
 	-- end
 

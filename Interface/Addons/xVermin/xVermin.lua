@@ -361,7 +361,7 @@ f:RegisterEvent("PLAYER_ENTERING_WORLD")
 -- 	self:SetScript('OnShow', nil)
 
 -- 	if not f.optionsPanel then
--- 		f.optionsPanel = f:CreateGUI("xVerminz")
+-- 		f.optionsPanel = f:CreateGUI("xVermin")
 -- 		InterfaceOptions_AddCategory(f.optionsPanel);
 -- 	end
 -- end)

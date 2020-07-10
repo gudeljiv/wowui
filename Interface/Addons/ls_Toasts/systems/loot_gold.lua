@@ -34,14 +34,14 @@ local function Toast_SetUp(event, quantity)
 		toast.Text.PostSetAnimatedValue = PostSetAnimatedValue
 
 		if C.db.profile.colors.border then
-			toast:SetBeautyBorderTexture("Interface\\AddOns\\xVerminz\\media\\textureWhite")
+			toast:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")
 			if( (quantity) >= 10000 ) then toast:SetBeautyBorderColor(gold_rgb) end
 			if( (quantity) < 10000 ) then toast:SetBeautyBorderColor(silver_rgb) end
 			if( (quantity) < 100) then toast:SetBeautyBorderColor(copper_rgb) end
 		end
 
 		if C.db.profile.colors.icon_border then
-			toast.IconParent:SetBeautyBorderTexture("Interface\\AddOns\\xVerminz\\media\\textureWhite")
+			toast.IconParent:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")
 			if( (quantity) >= 10000 ) then toast.IconParent:SetBeautyBorderColor(gold_rgb) end
 			if( (quantity) < 10000 ) then toast.IconParent:SetBeautyBorderColor(silver_rgb) end
 			if( (quantity) < 100) then toast.IconParent:SetBeautyBorderColor(copper_rgb) end
@@ -64,14 +64,14 @@ local function Toast_SetUp(event, quantity)
 		toast.Title:SetText(toast._data.count > 0 and L["YOU_RECEIVED"] or L["YOU_LOST_RED"])
 
 		if C.db.profile.colors.border then
-			toast:SetBeautyBorderTexture("Interface\\AddOns\\xVerminz\\media\\textureWhite")
+			toast:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")
 			if( (toast._data.count) >= 10000 ) then toast:SetBeautyBorderColor(gold_rgb) end
 			if( (toast._data.count) < 10000 ) then toast:SetBeautyBorderColor(silver_rgb) end
 			if( (toast._data.count) < 100) then toast:SetBeautyBorderColor(copper_rgb) end
 		end
 
 		if C.db.profile.colors.icon_border then
-			toast.IconParent:SetBeautyBorderTexture("Interface\\AddOns\\xVerminz\\media\\textureWhite")
+			toast.IconParent:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")
 			if( (toast._data.count) >= 10000 ) then toast.IconParent:SetBeautyBorderColor(gold_rgb) end
 			if( (toast._data.count) < 10000 ) then toast.IconParent:SetBeautyBorderColor(silver_rgb) end
 			if( (toast._data.count) < 100) then toast.IconParent:SetBeautyBorderColor(copper_rgb) end

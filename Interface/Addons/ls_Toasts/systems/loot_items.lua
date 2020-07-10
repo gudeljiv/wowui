@@ -128,13 +128,13 @@ local function Toast_SetUp(event, link, quantity)
 
 				if C.db.profile.colors.border then
 					-- toast.Border:SetVertexColor(color.r, color.g, color.b)
-					toast:SetBeautyBorderTexture("Interface\\AddOns\\xVerminz\\media\\textureWhite")
+					toast:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")
 					toast:SetBeautyBorderColor(color.r, color.g, color.b)
 				end
 
 				if C.db.profile.colors.icon_border then
 					-- toast.IconBorder:SetVertexColor(color.r, color.g, color.b)
-					toast.IconParent:SetBeautyBorderTexture("Interface\\AddOns\\xVerminz\\media\\textureWhite")
+					toast.IconParent:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")
 					toast.IconParent:SetBeautyBorderColor(color.r, color.g, color.b)
 				end
 			end

@@ -1,4 +1,4 @@
---local font = "Interface\\AddOns\\xVerminz\\media\\fontAtari.ttf"
+--local font = "Interface\\AddOns\\xVermin\\media\\fontAtari.ttf"
 local _, class, _ = UnitClass("player")
 local r, g, b
 
