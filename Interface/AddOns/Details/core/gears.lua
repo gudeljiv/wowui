@@ -183,6 +183,10 @@ end
 					window1.rowframe:SetParent (window1.baseframe)
 					window1.rowframe:ClearAllPoints()
 					window1.rowframe:SetAllPoints()
+
+					window1.windowSwitchButton:SetParent(window1.baseframe)
+					window1.windowSwitchButton:ClearAllPoints()
+					window1.windowSwitchButton:SetAllPoints()
 					
 					local y_up = window1.toolbar_side == 1 and -20 or 0
 					local y_down = (window1.show_statusbar and 14 or 0) + (window1.toolbar_side == 2 and 20 or 0)
@@ -218,6 +222,13 @@ end
 					window2.baseframe:SetParent (ChatFrame)
 					window1.rowframe:SetParent (window1.baseframe)
 					window2.rowframe:SetParent (window2.baseframe)
+
+					window1.windowSwitchButton:SetParent(window1.baseframe)
+					window1.windowSwitchButton:ClearAllPoints()
+					window1.windowSwitchButton:SetAllPoints()
+					window2.windowSwitchButton:SetParent(window2.baseframe)
+					window2.windowSwitchButton:ClearAllPoints()
+					window2.windowSwitchButton:SetAllPoints()
 
 					window1:LockInstance (true)
 					window2:LockInstance (true)
@@ -2002,6 +2013,7 @@ function ilvl_core:GetItemLevel (unitid, guid, is_forced, try_number)
 end
 
 local NotifyInspectHook = function (unitid)
+
 	local unit = unitid:gsub ("%d+", "")
 	
 	if ((IsInRaid() or IsInGroup()) and (_detalhes:GetZoneType() == "raid" or _detalhes:GetZoneType() == "party")) then
@@ -2020,7 +2032,7 @@ local NotifyInspectHook = function (unitid)
 		end
 	end
 end
-hooksecurefunc ("NotifyInspect", NotifyInspectHook)
+--hooksecurefunc ("NotifyInspect", NotifyInspectHook) --disabled on classic
 
 function ilvl_core:Reset()
 	ilvl_core.raid_id = 1
@@ -2744,6 +2756,38 @@ function Details:ShowTalentsPanel()
 				end
 			end
 		end
+
+		--create animation
+		local animHub = DetailsFramework:CreateAnimationHub (DetailsTalentFrame, function() 
+			DetailsTalentFrame:SetAlpha (0)
+
+			Details.PlayTalentLoadingAnimation()
+		end,
+		function()
+			DetailsTalentFrame:SetAlpha (1)
+			Details.StopTalentLoadingAnimation()
+
+			if (not InspectFrame:IsShown()) then
+				return DetailsTalentFrame:Hide()
+			end
+
+			if (not _detalhes.cached_talents [UnitGUID (InspectFrame.unit)]) then
+				return DetailsTalentFrame:Hide()
+			end
+		end)
+
+		DetailsFramework:CreateAnimation (animHub, "ALPHA", 1, .1, 0, .1)
+		DetailsFramework:CreateAnimation (animHub, "ALPHA", 2, 2, .1, .2)
+		DetailsFramework:CreateAnimation (animHub, "ALPHA", 3, .3, .2, 0)
+
+		local queryTalentsLabel = DetailsFramework:CreateLabel (DetailsTalentFrame, "Details!\nRetriving Talents", 10, "silver", "GameFontNormalSmall", "queryTalentLabel", "$parentQueryTalentLabel", "border")
+		queryTalentsLabel.align = "center"
+		queryTalentsLabel.alpha = .7
+		queryTalentsLabel:SetPoint ("center", DetailsTalentFrame, "center", 0, 26)
+
+		Details.CreateTalentLoadingAnimation()
+		DetailsTalentFrame.showAnimation = animHub
+		
 	end
 
 	--reset all talent tabs
@@ -2863,38 +2907,6 @@ function Details:ShowTalentsPanel()
 		if (targetName) then
 			_detalhes:SendCommMessage (CONST_DETAILS_PREFIX, _detalhes:Serialize (CONST_ASK_TALENTS, UnitName("player"), GetRealmName(), _detalhes.realversion, UnitGUID ("player")), "WHISPER", targetName)
 		
-			if (not DetailsTalentFrame.showAnimation) then
-				local animHub = DetailsFramework:CreateAnimationHub (DetailsTalentFrame, function() 
-					DetailsTalentFrame:SetAlpha (0)
-
-					Details.PlayTalentLoadingAnimation()
-				end,
-				function()
-					DetailsTalentFrame:SetAlpha (1)
-					Details.StopTalentLoadingAnimation()
-
-					if (not InspectFrame:IsShown()) then
-						return DetailsTalentFrame:Hide()
-					end
-
-					if (not _detalhes.cached_talents [UnitGUID (InspectFrame.unit)]) then
-						return DetailsTalentFrame:Hide()
-					end
-				end)
-
-				DetailsFramework:CreateAnimation (animHub, "ALPHA", 1, .1, 0, .1)
-				DetailsFramework:CreateAnimation (animHub, "ALPHA", 2, 2, .1, .2)
-				DetailsFramework:CreateAnimation (animHub, "ALPHA", 3, .3, .2, 0)
-
-				local queryTalentsLabel = DetailsFramework:CreateLabel (DetailsTalentFrame, "Details!\nRetriving Talents", 10, "silver", "GameFontNormalSmall", "queryTalentLabel", "$parentQueryTalentLabel", "border")
-				queryTalentsLabel.align = "center"
-				queryTalentsLabel.alpha = .7
-				queryTalentsLabel:SetPoint ("center", DetailsTalentFrame, "center", 0, 26)
-
-				Details.CreateTalentLoadingAnimation()
-				DetailsTalentFrame.showAnimation = animHub
-			end
-
 			DetailsTalentFrame:Show()
 			DetailsTalentFrame.showAnimation:Play()
 			
@@ -2949,7 +2961,9 @@ C_Timer.After (1, function()
 	hooksecurefunc ("InspectFrame_LoadUI", function()
 		hooksecurefunc ("InspectPaperDollFrame_UpdateButtons", function()
 			if (LatestInspectFrameUpdate < GetTime()) then
-				Details:ShowTalentsPanel()
+				if (not Details.disable_talent_feature) then
+					Details:ShowTalentsPanel()
+				end
 				LatestInspectFrameUpdate = GetTime() + 1.0
 			end
 		end)

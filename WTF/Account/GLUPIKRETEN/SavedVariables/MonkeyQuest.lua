@@ -46,9 +46,56 @@ MonkeyQuestConfig = {
 			},
 		},
 	},
-	["Stonespine|Elohssa"] = {
+	["Genesis|Handrmandr"] = {
+		["m_iFont"] = 0,
+		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
+		["m_strSpecialObjectiveColour"] = "|cFFFFFF00",
+		["m_iFrameAlpha"] = 1,
+		["m_bColourTitle"] = false,
+		["m_strAnchor"] = "ANCHOR_TOPLEFT",
+		["m_bAllowRightClick"] = true,
+		["m_strZoneHighlightColour"] = "|cff494961",
+		["m_strFinishObjectiveColour"] = "|cFF33DDFF",
+		["m_bShowHidden"] = false,
+		["m_bItemsOnLeft"] = true,
+		["m_bShowNoobTips"] = true,
+		["m_bHideCompletedObjectives"] = false,
+		["m_bShowZoneHighlight"] = true,
+		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
 		["m_aQuestList"] = {
 		},
+		["m_bDisplay"] = true,
+		["m_bMinimized"] = false,
+		["m_strInitialObjectiveColour"] = "|cFFD82619",
+		["m_iHighlightAlpha"] = 1,
+		["m_bShowQuestLevel"] = true,
+		["m_bShowDailyNumQuests"] = false,
+		["m_iFrameBottom"] = 848.399881525947,
+		["m_iFrameLeft"] = 1470.90018000205,
+		["m_bLocked"] = false,
+		["m_bNoBorder"] = false,
+		["m_bNoHeaders"] = false,
+		["m_iAlpha"] = 0.5,
+		["m_strOverviewColour"] = "|cFF7F7F7F",
+		["m_bColourSubObjectivesByProgress"] = true,
+		["m_iQuestPadding"] = 0,
+		["m_bShowNumQuests"] = false,
+		["m_iFontHeight"] = 12,
+		["m_strQuestTitleColour"] = "|cFFFFFFFF",
+		["m_bWorkComplete"] = true,
+		["m_strMidObjectiveColour"] = "|cFFFFFF00",
+		["m_iFrameWidth"] = 255,
+		["m_bHideTitleButtons"] = false,
+		["m_strHeaderOpenColour"] = "|cFFBFBFFF",
+		["m_iFrameTop"] = 887.399962154502,
+		["m_bObjectives"] = true,
+		["m_bHideHeader"] = false,
+		["m_bShowTooltipObjectives"] = true,
+		["m_bCrashBorder"] = false,
+		["m_bHideCompletedQuests"] = false,
+		["m_bHideTitle"] = false,
+		["m_bAlwaysHeaders"] = false,
+		["m_bGrowUp"] = false,
 	},
 	["Genesis|Blooq"] = {
 		["m_iFont"] = 0,
@@ -152,56 +199,18 @@ MonkeyQuestConfig = {
 		["m_iFrameLeft"] = 1425.90026473384,
 		["m_bGrowUp"] = false,
 	},
-	["Genesis|Handrmandr"] = {
-		["m_iFont"] = 0,
-		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
-		["m_strSpecialObjectiveColour"] = "|cFFFFFF00",
-		["m_iFrameAlpha"] = 1,
-		["m_bColourTitle"] = false,
-		["m_strAnchor"] = "ANCHOR_TOPLEFT",
-		["m_bAllowRightClick"] = true,
-		["m_strZoneHighlightColour"] = "|cff494961",
-		["m_strFinishObjectiveColour"] = "|cFF33DDFF",
-		["m_bShowHidden"] = false,
-		["m_bItemsOnLeft"] = true,
-		["m_bShowNoobTips"] = true,
-		["m_bHideCompletedObjectives"] = false,
-		["m_bShowZoneHighlight"] = true,
-		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
+	["Golemagg|Dotwise"] = {
 		["m_aQuestList"] = {
+			["The Damned - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Deathknell - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Rattling the Rattlecages - false"] = {
+				["m_bChecked"] = true,
+			},
 		},
-		["m_bDisplay"] = true,
-		["m_bMinimized"] = false,
-		["m_strInitialObjectiveColour"] = "|cFFD82619",
-		["m_iHighlightAlpha"] = 1,
-		["m_bShowQuestLevel"] = true,
-		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 848.399881525947,
-		["m_iFrameLeft"] = 1470.90018000205,
-		["m_bLocked"] = false,
-		["m_bNoBorder"] = false,
-		["m_bNoHeaders"] = false,
-		["m_iAlpha"] = 0.5,
-		["m_strOverviewColour"] = "|cFF7F7F7F",
-		["m_bColourSubObjectivesByProgress"] = true,
-		["m_iQuestPadding"] = 0,
-		["m_bShowNumQuests"] = false,
-		["m_iFontHeight"] = 12,
-		["m_strQuestTitleColour"] = "|cFFFFFFFF",
-		["m_bWorkComplete"] = true,
-		["m_strMidObjectiveColour"] = "|cFFFFFF00",
-		["m_iFrameWidth"] = 255,
-		["m_bHideTitleButtons"] = false,
-		["m_strHeaderOpenColour"] = "|cFFBFBFFF",
-		["m_iFrameTop"] = 887.399962154502,
-		["m_bObjectives"] = true,
-		["m_bHideHeader"] = false,
-		["m_bShowTooltipObjectives"] = true,
-		["m_bCrashBorder"] = false,
-		["m_bHideCompletedQuests"] = false,
-		["m_bHideTitle"] = false,
-		["m_bAlwaysHeaders"] = false,
-		["m_bGrowUp"] = false,
 	},
 	["Genesis|Mulatz"] = {
 		["m_iFont"] = 0,
@@ -415,17 +424,8 @@ MonkeyQuestConfig = {
 		["m_iFrameLeft"] = 1396.36175845578,
 		["m_bGrowUp"] = false,
 	},
-	["Golemagg|Dotwise"] = {
+	["Stonespine|Elohssa"] = {
 		["m_aQuestList"] = {
-			["The Damned - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Deathknell - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Rattling the Rattlecages - false"] = {
-				["m_bChecked"] = true,
-			},
 		},
 	},
 	["Dreadmist|Paydo"] = {
@@ -594,16 +594,16 @@ MonkeyQuestConfig = {
 		["m_bMinimized"] = false,
 		["m_strInitialObjectiveColour"] = "|cFFD82619",
 		["m_iHighlightAlpha"] = 0,
-		["m_bShowQuestLevel"] = true,
+		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 830.733215332031,
+		["m_iFrameBottom"] = 366.566436767578,
 		["m_bHideTitleButtons"] = false,
 		["m_iFrameLeft"] = 1670.73352050781,
 		["m_bColourDoneOrFailed"] = true,
 		["m_bLocked"] = true,
 		["m_bNoBorder"] = true,
 		["m_bNoHeaders"] = false,
-		["m_iQuestPadding"] = 14,
+		["m_iQuestPadding"] = 12,
 		["m_strOverviewColour"] = "|cff7f7f7f",
 		["m_bShowTooltipObjectives"] = true,
 		["m_bColourSubObjectivesByProgress"] = true,
@@ -1050,16 +1050,73 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Vermin"] = {
 		["m_aQuestList"] = {
-			["Dark Storms - false"] = {
+			["Return to the Crossroads. - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Ride to Orgrimmar - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Plainstrider Menace - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Forgotten Pools - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Thun'grim Firegaze - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Fungal Spores - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Centaur Bracers - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Slaying the Beast - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Supplies for the Crossroads - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Disrupt the Attacks - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Raptor Thieves - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Warrior - true"] = {
+				["m_bChecked"] = true,
+			},
+			["The Stagnant Oasis - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Zhevra - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Harpy Raiders - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Barrens - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Wharfmaster Dizzywig - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Doras the Wind Rider Master - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Kolkar Leaders - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Ragefire Chasm - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Durotar - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Lost But Not Forgotten - false"] = {
+			["The Disruption Ends - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Securing the Lines - false"] = {
+			["The Demon Seed - false"] = {
 				["m_bChecked"] = true,
 			},
 		},

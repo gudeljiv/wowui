@@ -23,7 +23,6 @@
 -   [EavesDrop](https://www.curseforge.com/wow/addons/eavesdropclassic/files) (modified in order to skin with BeautyCase)
 -   [FollowMePls](https://github.com/techiew/FollowMePls) (automatically follow group members who whisper you "!follow".)
 -   [gmMoney](https://www.wowinterface.com/downloads/info16245-gMoney.html)
--   [InFlight](https://www.wowinterface.com/downloads/info25202-InFlightClassic.html) (modified in order to skin with BeautyCase)
 -   [Leatrix_Maps](https://www.curseforge.com/wow/addons/leatrix-maps-classic)
 -   [Lorti UI Classic](https://github.com/Chordsy/Lorti-UI-Classic)
 -   [ls_Toasts](https://www.curseforge.com/wow/addons/ls-toasts/files) (11302.02 version)

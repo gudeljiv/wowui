@@ -28,7 +28,30 @@ ChocolateBarDB = {
 	["addonVersion"] = "@project-version@",
 	["profiles"] = {
 		["Default"] = {
-			["locked"] = false,
+			["barSettings"] = {
+				["ChocolateBar1"] = {
+					["barPoint"] = "TOPRIGHT",
+					["align"] = "custom",
+					["width"] = 147.000030517578,
+					["autohide"] = false,
+					["barOffy"] = -207.589706420898,
+					["hideBarInCombat"] = false,
+					["barOffx"] = -31.9219512939453,
+				},
+				["ChocolateBar2"] = {
+					["barOffy"] = -256.666748046875,
+					["barPoint"] = "TOPRIGHT",
+					["barName"] = "ChocolateBar2",
+					["align"] = "custom",
+					["barOffx"] = -88.3325424194336,
+					["index"] = 1,
+					["width"] = 147,
+				},
+			},
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
+			["moveFrames"] = false,
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -39,15 +62,18 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
-			["forceColor"] = false,
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["moveFrames"] = false,
+			["fixedStrata"] = true,
 			["objSettings"] = {
 				["Skada"] = {
 					["enabled"] = false,
 					["barName"] = "ChocolateBar1",
+				},
+				["BugSack"] = {
+					["index"] = 1,
+					["align"] = "right",
+					["showIcon"] = false,
+					["barName"] = "ChocolateBar1",
+					["customLabel"] = "B",
 				},
 				["MoreChocolate"] = {
 					["enabled"] = false,
@@ -71,10 +97,18 @@ ChocolateBarDB = {
 					["showText"] = false,
 					["customLabel"] = "gmL",
 				},
-				["CB_ItemLevel"] = {
+				["Omen"] = {
 					["enabled"] = false,
-					["index"] = 5,
+					["showText"] = false,
 					["barName"] = "ChocolateBar1",
+					["align"] = "center",
+				},
+				["DBM"] = {
+					["showLabel"] = true,
+					["showText"] = false,
+					["barName"] = "ChocolateBar2",
+					["index"] = 1,
+					["showIcon"] = false,
 				},
 				["Leatrix_Plus"] = {
 					["widthBehavior"] = "free",
@@ -91,23 +125,23 @@ ChocolateBarDB = {
 					["index"] = 2,
 					["barName"] = "ChocolateBar1",
 				},
-				["BugSack"] = {
+				["gmMoney"] = {
 					["index"] = 1,
-					["align"] = "right",
-					["showIcon"] = false,
 					["barName"] = "ChocolateBar1",
-					["customLabel"] = "B",
 				},
 				["AskMrRobot"] = {
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
 				},
-				["Omen"] = {
-					["enabled"] = false,
+				["Questie"] = {
+					["index"] = 3,
+					["align"] = "right",
+					["showLabel"] = true,
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
-					["align"] = "center",
+					["showIcon"] = false,
+					["customLabel"] = "Q",
 				},
 				["VuhDo"] = {
 					["showText"] = false,
@@ -139,9 +173,11 @@ ChocolateBarDB = {
 					["index"] = 1,
 					["barName"] = "ChocolateBar1",
 				},
-				["gmMoney"] = {
-					["index"] = 1,
+				["Looter"] = {
+					["index"] = 3,
 					["barName"] = "ChocolateBar1",
+					["align"] = "center",
+					["showText"] = false,
 				},
 				["BigWigs"] = {
 					["index"] = 2,
@@ -154,14 +190,13 @@ ChocolateBarDB = {
 					["index"] = 3,
 					["barName"] = "ChocolateBar1",
 				},
-				["Looter"] = {
-					["index"] = 3,
-					["barName"] = "ChocolateBar1",
-					["align"] = "center",
+				["TradeSkillMaster"] = {
+					["align"] = "right",
+					["showLabel"] = true,
 					["showText"] = false,
-				},
-				["Outfitter"] = {
 					["barName"] = "ChocolateBar1",
+					["showIcon"] = false,
+					["customLabel"] = "TSM",
 				},
 				["Prat"] = {
 					["enabled"] = false,
@@ -170,11 +205,6 @@ ChocolateBarDB = {
 					["align"] = "right",
 					["index"] = 3,
 				},
-				["TestNoText"] = {
-					["enabled"] = false,
-					["index"] = 4,
-					["barName"] = "ChocolateBar1",
-				},
 				["Details!"] = {
 					["widthBehavior"] = "free",
 					["align"] = "center",
@@ -182,8 +212,13 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar1",
 					["index"] = 3,
 				},
+				["TestNoText"] = {
+					["enabled"] = false,
+					["index"] = 4,
+					["barName"] = "ChocolateBar1",
+				},
 				["AtlasLoot"] = {
-					["index"] = 3,
+					["index"] = 2,
 					["align"] = "right",
 					["showLabel"] = true,
 					["showIcon"] = false,
@@ -191,18 +226,17 @@ ChocolateBarDB = {
 					["showText"] = false,
 					["customLabel"] = "AL",
 				},
+				["Outfitter"] = {
+					["barName"] = "ChocolateBar1",
+				},
 				["picoFPS"] = {
 					["index"] = 1,
 					["barName"] = "ChocolateBar2",
 					["align"] = "right",
 				},
-				["TradeSkillMaster"] = {
-					["align"] = "right",
-					["showLabel"] = true,
-					["showText"] = false,
+				["DetailsStreamer"] = {
+					["enabled"] = false,
 					["barName"] = "ChocolateBar1",
-					["showIcon"] = false,
-					["customLabel"] = "TSM",
 				},
 				["Dugi"] = {
 					["barName"] = "ChocolateBar1",
@@ -212,45 +246,24 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
 				},
-				["DBM"] = {
-					["showLabel"] = true,
-					["showText"] = false,
-					["barName"] = "ChocolateBar2",
-					["index"] = 1,
-					["showIcon"] = false,
+				["CB_ItemLevel"] = {
+					["enabled"] = false,
+					["index"] = 5,
+					["barName"] = "ChocolateBar1",
 				},
 			},
-			["fontName"] = "Friz Quadrata TT",
+			["desaturated"] = false,
+			["gap"] = 5,
+			["forceColor"] = false,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["fixedStrata"] = true,
-			["desaturated"] = false,
+			["fontName"] = "Friz Quadrata TT",
 			["textOffset"] = 2,
 			["height"] = 20,
-			["gap"] = 5,
-			["barSettings"] = {
-				["ChocolateBar1"] = {
-					["barPoint"] = "TOPRIGHT",
-					["align"] = "custom",
-					["width"] = 147.000030517578,
-					["autohide"] = false,
-					["barOffy"] = -207.589706420898,
-					["hideBarInCombat"] = false,
-					["barOffx"] = -31.9219512939453,
-				},
-				["ChocolateBar2"] = {
-					["barOffy"] = -256.666748046875,
-					["barPoint"] = "TOPRIGHT",
-					["barName"] = "ChocolateBar2",
-					["align"] = "custom",
-					["barOffx"] = -88.3325424194336,
-					["index"] = 1,
-					["width"] = 147,
-				},
-			},
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["locked"] = false,
 			["textColor"] = {
 				["a"] = 1,
 				["r"] = 1,
@@ -283,7 +296,7 @@ CB_PlayedTime = {
 		["total"] = 3924,
 	},
 	["Vermin-"] = {
-		["total"] = 29918,
+		["total"] = 37381,
 	},
 	["Ozrencic-"] = {
 		["total"] = 853,

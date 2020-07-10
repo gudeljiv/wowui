@@ -1,16 +1,17 @@
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:159
+/use [nocombat]item:0
 /castsequence [combat]
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:117
-/castsequence [combat]item:118,item:118,item:118
+/use [nocombat]item:2287
+/castsequence [combat]item:118,item:118,item:118,item:118
 END
 VER 3 0000000000000001 "FRAME" "132150"
 /fstack
 END
 VER 3 0000000000000002 "MOVE" "Ability_Ambush."
-/run FramerateLabel:SetPoint("TOPRIGHT", "pqr_combat", "BOTTOMLEFT", 0, -200);
+/run DurabilityFrame:ClearAllPoints()
+/run DurabilityFrame:SetPoint("TOP", "EavesDropFrame", "BOTTOM", -25, 0)
 END

@@ -33,8 +33,8 @@ Details_TinyThreat: enabled
 EavesDrop: enabled
 FollowMePls: enabled
 gmMoney: enabled
-InFlight: enabled
-InFlight_Load: enabled
+InFlight: disabled
+InFlight_Load: disabled
 Leatrix_Maps: enabled
 Lorti UI Classic: enabled
 ls_Toasts: enabled
