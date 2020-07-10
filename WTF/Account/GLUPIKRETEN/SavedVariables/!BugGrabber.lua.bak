@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 700,
 	["lastSanitation"] = 3,
-	["session"] = 699,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVerminz\\Experience.lua:7: bad argument #1 to 'select' (index out of range)",
@@ -133,8 +133,8 @@ BugGrabberDB = {
 		}, -- [16]
 		{
 			["message"] = "(null)",
-			["time"] = "2019/10/23 13:37:53",
 			["session"] = 650,
+			["time"] = "2019/10/23 13:37:53",
 			["counter"] = 26,
 		}, -- [17]
 		{
@@ -282,62 +282,62 @@ BugGrabberDB = {
 		}, -- [35]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Questie\\Libs\\LibSharedMedia-3.0-8020003\\lib.xml",
-			["time"] = "2020/07/09 17:00:48",
 			["session"] = 685,
+			["time"] = "2020/07/09 17:00:48",
 			["counter"] = 1,
 		}, -- [36]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Questie\\Libs\\AceGUI-3.0-41-SharedMediaWidgets\\widget.xml",
-			["time"] = "2020/07/09 17:00:48",
 			["session"] = 685,
+			["time"] = "2020/07/09 17:00:48",
 			["counter"] = 1,
 		}, -- [37]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Questie\\Libs\\ZoneHelper\\ZoneHelper.xml",
-			["time"] = "2020/07/09 17:00:48",
 			["session"] = 685,
+			["time"] = "2020/07/09 17:00:48",
 			["counter"] = 1,
 		}, -- [38]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Questie\\Locale\\enUS\\lookupZones.lua",
-			["time"] = "2020/07/09 17:00:48",
 			["session"] = 685,
+			["time"] = "2020/07/09 17:00:48",
 			["counter"] = 1,
 		}, -- [39]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Questie\\Locale\\enUS\\lookupQuestCategory.lua",
-			["time"] = "2020/07/09 17:00:48",
 			["session"] = 685,
+			["time"] = "2020/07/09 17:00:48",
 			["counter"] = 1,
 		}, -- [40]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Questie\\Locale\\esES\\lookupZones.lua",
-			["time"] = "2020/07/09 17:00:48",
 			["session"] = 685,
+			["time"] = "2020/07/09 17:00:48",
 			["counter"] = 1,
 		}, -- [41]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Questie\\Locale\\esES\\lookupQuestCategory.lua",
-			["time"] = "2020/07/09 17:00:48",
 			["session"] = 685,
+			["time"] = "2020/07/09 17:00:48",
 			["counter"] = 1,
 		}, -- [42]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Questie\\Locale\\deDE\\lookupZones.lua",
-			["time"] = "2020/07/09 17:00:48",
 			["session"] = 685,
+			["time"] = "2020/07/09 17:00:48",
 			["counter"] = 1,
 		}, -- [43]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Questie\\Locale\\deDE\\lookupQuestCategory.lua",
-			["time"] = "2020/07/09 17:00:48",
 			["session"] = 685,
+			["time"] = "2020/07/09 17:00:48",
 			["counter"] = 1,
 		}, -- [44]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Questie\\Locale\\zhCN\\lookupZones.lua",
-			["time"] = "2020/07/09 17:00:48",
 			["session"] = 685,
+			["time"] = "2020/07/09 17:00:48",
 			["counter"] = 1,
 		}, -- [45]
 		{
@@ -485,20 +485,28 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [63]
 		{
-			["message"] = "...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: Usage: CreateFrame(\"frameType\" [, \"name\"] [, parent] [, \"template\"] [, id])",
-			["time"] = "2020/07/07 16:56:37",
-			["locals"] = "(*temporary) = \"Button\"\n(*temporary) = \"NivayaSlot1\"\n(*temporary) = \"ItemButtonTemplate\"\n(*temporary) = \"ContainerFrameItemButtonTemplate\"\n",
-			["stack"] = "[C]: in function `CreateFrame'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: in function `Create'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:56: in function `New'\nInterface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:762: in function <Interface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:757>",
-			["session"] = 699,
-			["counter"] = 40,
-		}, -- [64]
-		{
 			["message"] = "Interface\\AddOns\\InFlight\\InFlight-1.13.002.lua:283: hooksecurefunc(): ConfirmSummon is not a function",
 			["time"] = "2020/07/09 19:37:43",
 			["locals"] = "",
 			["stack"] = "[C]: in function `hooksecurefunc'\nInterface\\AddOns\\InFlight\\InFlight-1.13.002.lua:283: in function `LoadBulk'\nInterface\\AddOns\\InFlight_Load\\InFlight_Load-1.13.002.lua:27: in function `?'\nInterface\\AddOns\\InFlight_Load\\InFlight_Load-1.13.002.lua:3: in function <Interface\\AddOns\\InFlight_Load\\InFlight_Load.lua:3>\n[C]: in function `LoadAddOn'\nInterface\\AddOns\\InFlight_Load\\InFlight_Load-1.13.002.lua:9: in function <Interface\\AddOns\\InFlight_Load\\InFlight_Load.lua:7>\nInterface\\AddOns\\InFlight_Load\\InFlight_Load-1.13.002.lua:34: in function `?'\nInterface\\AddOns\\InFlight_Load\\InFlight_Load-1.13.002.lua:3: in function <Interface\\AddOns\\InFlight_Load\\InFlight_Load.lua:3>",
 			["session"] = 699,
 			["counter"] = 1,
+		}, -- [64]
+		{
+			["message"] = "...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: Usage: CreateFrame(\"frameType\" [, \"name\"] [, parent] [, \"template\"] [, id])",
+			["time"] = "2020/07/07 16:56:37",
+			["locals"] = "(*temporary) = \"Button\"\n(*temporary) = \"NivayaSlot1\"\n(*temporary) = \"ItemButtonTemplate\"\n(*temporary) = \"ContainerFrameItemButtonTemplate\"\n",
+			["stack"] = "[C]: in function `CreateFrame'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: in function `Create'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:56: in function `New'\nInterface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:762: in function <Interface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:757>",
+			["session"] = 700,
+			["counter"] = 41,
 		}, -- [65]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn '!Colorz' tried to call the protected function 'CompactRaidFrame1:ClearAllPoints()'.",
+			["time"] = "2020/07/09 19:52:46",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `ClearAllPoints'\nInterface\\FrameXML\\FlowContainer.lua:157: in function `FlowContainer_DoLayout'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:69: in function `CompactRaidFrameContainer_OnSizeChanged'\n[string \"*:OnSizeChanged\"]:1: in function <[string \"*:OnSizeChanged\"]:1>\n[C]: in function `?'\nInterface\\FrameXML\\FlowContainer.lua:133: in function `FlowContainer_DoLayout'\nInterface\\FrameXML\\FlowContainer.lua:17: in function `FlowContainer_ResumeUpdates'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:185: in function `CompactRaidFrameContainer_LayoutFrames'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:130: in function `CompactRaidFrameContainer_TryUpdate'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:57: in function `CompactRaidFrameContainer_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
+			["session"] = 700,
+			["counter"] = 1,
+		}, -- [66]
 	},
 }
