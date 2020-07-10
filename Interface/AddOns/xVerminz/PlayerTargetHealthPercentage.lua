@@ -28,6 +28,7 @@ end
 local function THealthHide()
 	TargetHealthFrame.text:Hide()
 end
+
 local function THealthShow()
 	if TargetFrame:IsShown() then
 		-- else
