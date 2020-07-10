@@ -24,8 +24,16 @@ MonkeyBuddyConfig = {
 		["m_bDailies"] = false,
 		["m_bDismissed"] = true,
 	},
+<<<<<<< HEAD
 	["Spija"] = {
 		["m_bDailies"] = false,
+=======
+	["Vermins"] = {
+		["m_bDismissed"] = false,
+		["m_bDailies"] = false,
+	},
+	["Nacova"] = {
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 		["m_bDismissed"] = true,
 	},
 	["Pitchwise"] = {
@@ -34,6 +42,11 @@ MonkeyBuddyConfig = {
 	},
 	["Mulatz"] = {
 		["m_bDailies"] = false,
+<<<<<<< HEAD
+=======
+	},
+	["Verminz"] = {
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 		["m_bDismissed"] = true,
 	},
 	["Verminz"] = {
@@ -52,7 +65,12 @@ MonkeyBuddyConfig = {
 		["m_bDailies"] = false,
 		["m_bDismissed"] = true,
 	},
+<<<<<<< HEAD
 	["Malinac"] = {
+=======
+	["Spija"] = {
+		["m_bDismissed"] = true,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 		["m_bDailies"] = false,
 		["m_bDismissed"] = true,
 	},

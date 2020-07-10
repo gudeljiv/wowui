@@ -283,8 +283,13 @@ cBniv_CatInfo = {
 	[2934] = "Leather",
 	[6599] = "Tanking Gear",
 	[7912] = "Ores",
+<<<<<<< HEAD
 	[23424] = "Ores",
 	[34009] = "Transmog",
+=======
+	[72163] = "Leather",
+	[23424] = "Ores",
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 	[22448] = "Enchanting",
 	[72095] = "Bars",
 	[34057] = "Enchanting",
@@ -365,6 +370,11 @@ cBniv_CatInfo = {
 	[3358] = "Herbs",
 	[29905] = "Quest",
 	[32751] = "Junk",
+<<<<<<< HEAD
 	[72163] = "Leather",
 	[24166] = "Junk",
+=======
+	[34009] = "Transmog",
+	[6599] = "Tanking Gear",
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 }

@@ -801,6 +801,94 @@ EavesDropStatsDB = {
 				},
 			}, -- [1]
 			[-1] = {
+<<<<<<< HEAD
+=======
+				["hit"] = {
+					["Holy"] = {
+						[-2] = {
+							["time"] = "|cffffffff04/19/17 04:24:32|r\n|Hunit:0xF1510E0C004B9603:High Priestess Mar'li|hHigh Priestess Mar'li|h |Hspell:137344:SPELL_DAMAGE|h|cffff1313Wrath of the Loa|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0x000000000040D76A:Verminz|hYou|h |cffff131360800|r |cffff1313Holy|r. ",
+							["amount"] = 60800,
+						},
+						[2] = {
+						},
+						["icon"] = "Interface\\Icons\\Spell_Holy_SearingLight",
+					},
+					["Frost"] = {
+						[-2] = {
+							["time"] = "|cffffffff04/21/17 11:43:59|r\n|Hunit:0xF13118B300453FCB:Earthbreaker Haromm|hEarthbreaker Haromm|h |Hspell:144215:SPELL_DAMAGE|h|cffff1313Froststorm Strike|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0x000000000040D76A:Verminz|hYou|h |cffff1313164062|r |cffff1313Frost|r. ",
+							["amount"] = 164062,
+						},
+						[2] = {
+							["time"] = "|cffffffff04/18/17 06:42:07|r\n|Hspell:143800:SPELL_DAMAGE|h|cffff1313Icy Blood|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0x000000000040D76A:Verminz|hYou|h |cffff1313131844|r |cffff1313Frost|r. (Critical) ",
+							["amount"] = 131844,
+						},
+						["icon"] = "INTERFACE\\ICONS\\spell_shaman_unleashweapon_frost",
+					},
+					["Melee Attack"] = {
+						[-2] = {
+							["time"] = "|cffffffff04/19/17 02:33:50|r\n|Hunit:0xF13092BA00491CE5:Gas Cloud|hGas Cloud|h |Hspell:70701:SPELL_DAMAGE|h|cffff1313Expunged Gas|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0x000000000040D76A:Verminz|hYou|h |cffff1313135000|r |cffff1313Plague|r. ",
+							["amount"] = 135000,
+						},
+						[2] = {
+						},
+						["icon"] = "Interface\\Icons\\Spell_Holiday_ToW_SpiceCloud",
+					},
+					["Arcane"] = {
+						[-2] = {
+							["time"] = "|cffffffff04/25/17 07:34:33|r\n|Hunit:0xF130ED79006633D6:Celestial Protector|hCelestial Protector|h |Hspell:117914:SPELL_DAMAGE|h|cffff1313Total Annihilation|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0x000000000040D76A:Verminz|hYou|h |cffff131364403|r |cffff1313Arcane|r. (302675 Overkill) ",
+							["amount"] = 367078,
+						},
+						[2] = {
+							["time"] = "|cffffffff04/08/17 09:02:56|r\n|Hunit:0x000000000023A291:Bgsatan|hBgsatan|h |Hspell:44425:SPELL_DAMAGE|h|cff82f4ffArcane Barrage|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0x000000000040D76A:Verminz|hYou|h |cff82f4ff203220|r |cff82f4ffArcane|r. (Critical) ",
+							["amount"] = 203220,
+						},
+						["icon"] = "Interface\\Icons\\Ability_Mage_WorldInFlames",
+					},
+					["Physical"] = {
+						[-2] = {
+							["time"] = "|cffffffff03/21/17 10:11:52|r\n|Hunit:0xF1303E3C00707571:Gluth|hGluth|h |Hspell:28375:SPELL_DAMAGE|h|cffff1313Decimate|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0x000000000040D76A:Verminz|hYou|h |cffff1313248524|r |cffff1313Physical|r. (44388 Absorbed) (254602352 Overkill) ",
+							["amount"] = 254850876,
+						},
+						[2] = {
+							["time"] = "|cffffffff04/21/17 11:33:22|r\n|Hunit:0xF13118B300453FCB:Earthbreaker Haromm|hEarthbreaker Haromm|h |Haction:SWING_DAMAGE|h|cffff1313Melee|r|h |Haction:SWING_DAMAGE|hhit|h |Hunit:0x000000000040D76A:Verminz|hYou|h |cffff1313193705|r |cffff1313Physical|r. (416456 Overkill) (Critical) ",
+							["amount"] = 610161,
+						},
+					},
+					["Fire"] = {
+						[-2] = {
+							["time"] = "|cffffffff03/31/17 07:58:18|r\n|Hunit:0xF13112A400521AA4:Soul-Fed Construct|hSoul-Fed Construct|h |Hspell:139895:SPELL_DAMAGE|h|cffff1313Spiritfire Beam|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0x000000000040D76A:Verminz|hYou|h |cffff1313422987|r |cffff1313Fire|r. (344401 Overkill) ",
+							["amount"] = 767388,
+						},
+						[2] = {
+							["time"] = "|cffffffff04/02/17 09:57:19|r\n|Hunit:0xF1511CEF006EB8B1:Dragonmaw Proto-Drake|hDragonmaw Proto-Drake|h |Hspell:146779:SPELL_DAMAGE|h|cffff1313Flame Breath|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0x000000000040D76A:Verminz|hYou|h |cffff1313156882|r |cffff1313Fire|r. (Critical) ",
+							["amount"] = 156882,
+						},
+						["icon"] = "Interface\\Icons\\Spell_Fire_Fire",
+					},
+					["Shadow"] = {
+						[-2] = {
+							["time"] = "|cffffffff04/19/17 03:20:18|r\n|Hunit:0xF1308EF50049D126:The Lich King|hThe Lich King|h |Hspell:72350:SPELL_DAMAGE|h|cffff1313Fury of Frostmourne|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0x000000000040D76A:Verminz|hYou|h |cffff1313654205|r |cffff1313Shadow|r. (345795 Overkill) ",
+							["amount"] = 1000000,
+						},
+						[2] = {
+							["time"] = "|cffffffff02/19/17 05:49:46|r\n|Hunit:0xF1303E5200535D9C:Noth the Plaguebringer|hNoth the Plaguebringer|h |Hspell:29214:SPELL_DAMAGE|h|cffff1313Wrath of the Plaguebringer|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0x000000000040D76A:Verminz|hYou|h |cffff13135866|r |cffff1313Shadow|r. (Critical) ",
+							["amount"] = 5866,
+						},
+						["icon"] = "Interface\\Icons\\INV_Sword_122",
+					},
+					["Nature"] = {
+						[-2] = {
+							["time"] = "|cffffffff03/27/17 10:38:32|r\n|Hunit:0xF130F0AD00496F4E:Sap Puddle|hSap Puddle|h |Hspell:120002:SPELL_DAMAGE|h|cffff1313Detonate|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0x000000000040D76A:Verminz|hYou|h |cffff1313384852|r |cffff1313Nature|r. (110148 Overkill) ",
+							["amount"] = 495000,
+						},
+						[2] = {
+							["time"] = "|cffffffff04/21/17 12:24:19|r\n|Hspell:143707:SPELL_DAMAGE|h|cffff1313Shock Blast|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0x000000000040D76A:Verminz|hYou|h |cffff1313151026|r |cffff1313Nature|r. (Critical) ",
+							["amount"] = 151026,
+						},
+						["icon"] = "Interface\\Icons\\ability_thunderking_balllightning",
+					},
+				},
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 				["heal"] = {
 					["Daybreak"] = {
 						[-2] = {
@@ -1227,6 +1315,7 @@ EavesDropStatsDB = {
 						},
 						["icon"] = "Interface\\Icons\\spell_nature_timestop",
 					},
+<<<<<<< HEAD
 					["Renew"] = {
 						[-2] = {
 							["time"] = "|cffffffff04/16/17 05:46:03|r\n|Hunit:0x000000000013ECA4:Luunar|hLuunar|h |Hspell:139:SPELL_PERIODIC_HEAL|h|cff82f4ffRenew|r|h |Haction:SPELL_PERIODIC_HEAL|hhealed|h |Hunit:0x000000000040D76A:Verminz|hYou|h |cff82f4ff26523|r |cff82f4ffHoly|r. ",
@@ -1237,6 +1326,16 @@ EavesDropStatsDB = {
 							["amount"] = 58155,
 						},
 						["icon"] = "Interface\\Icons\\Spell_Holy_Renew",
+=======
+					["Revitalize"] = {
+						[-2] = {
+							["time"] = "|cffffffff02/27/17 05:59:49|r\n|Hunit:0xF130613B004F2467:Kalecgos|hKalecgos|h |Hspell:45027:SPELL_PERIODIC_HEAL|h|cff82f4ffRevitalize|r|h |Haction:SPELL_PERIODIC_HEAL|hhealed|h |Hunit:0x000000000040D76A:Verminz|hYou|h |cff82f4ff0|r |cff82f4ffArcane|r. (450 Overhealed) ",
+							["amount"] = 450,
+						},
+						[2] = {
+						},
+						["icon"] = "Interface\\Icons\\Spell_Arcane_ManaTap",
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 					},
 					["Prayer of Mending"] = {
 						[-2] = {
@@ -1441,6 +1540,7 @@ EavesDropStatsDB = {
 						},
 						["icon"] = "Interface\\Icons\\Spell_Holy_CircleOfRenewal",
 					},
+<<<<<<< HEAD
 					["Swiftmend"] = {
 						[-2] = {
 							["time"] = "|cffffffff04/21/17 12:05:09|r\n|Hunit:0x0000000000406E7B:Xenozn|hXenozn|h |Hspell:18562:SPELL_HEAL|h|cff82f4ffSwiftmend|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:0x000000000040D76A:Verminz|hYou|h |cff82f4ff122359|r |cff82f4ffNature|r. (33131 Overhealed) ",
@@ -1451,6 +1551,18 @@ EavesDropStatsDB = {
 							["amount"] = 298805,
 						},
 						["icon"] = "Interface\\Icons\\INV_Relics_IdolofRejuvenation",
+					},
+					["Seal of Insight"] = {
+=======
+					["Chain Heal"] = {
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
+						[-2] = {
+							["time"] = "|cffffffff03/31/17 10:36:16|r\n|Hunit:0x00000000002E00F4:Timori|hTimori|h |Hspell:20167:SPELL_HEAL|h|cff82f4ffSeal of Insight|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:0x000000000040D76A:Verminz|hYou|h |cff82f4ff20236|r |cff82f4ffHoly|r. ",
+							["amount"] = 20236,
+						},
+						[2] = {
+						},
+						["icon"] = "Interface\\Icons\\Spell_Holy_HealingAura",
 					},
 					["Seal of Insight"] = {
 						[-2] = {
@@ -1472,14 +1584,27 @@ EavesDropStatsDB = {
 						},
 						["icon"] = "Interface\\Icons\\Spell_Holy_FlashHeal",
 					},
+<<<<<<< HEAD
 					["Light of the Ancient Kings"] = {
 						[-2] = {
 							["time"] = "|cffffffff04/20/17 07:20:51|r\n|Hunit:0xF130B5A3004FF325:Guardian of Ancient Kings|hGuardian of Ancient Kings|h |Hspell:86678:SPELL_HEAL|h|cff82f4ffLight of the Ancient Kings|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:0x000000000040D76A:Verminz|hYou|h |cff82f4ff75595|r |cff82f4ffHoly|r. (120617 Overhealed) ",
 							["amount"] = 196212,
+=======
+					["Tranquility"] = {
+						[-2] = {
+							["time"] = "|cffffffff03/24/17 07:59:42|r\n|Hunit:0x000000000023112F:Lyf|hLyf|h |Hspell:44203:SPELL_HEAL|h|cff82f4ffTranquility|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:0x000000000040D76A:Verminz|hYou|h |cff82f4ff103531|r |cff82f4ffNature|r. ",
+							["amount"] = 103531,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 						},
 						[2] = {
+							["time"] = "|cffffffff04/16/17 08:42:42|r\n|Hunit:0x00000000003F7118:Helbjorn|hHelbjorn|h |Hspell:44203:SPELL_HEAL|h|cff82f4ffTranquility|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:0x000000000040D76A:Verminz|hYou|h |cff82f4ff90454|r |cff82f4ffNature|r. (586763 Overhealed) (Critical) ",
+							["amount"] = 677217,
 						},
+<<<<<<< HEAD
 						["icon"] = "Interface\\Icons\\Spell_Holy_HolyBolt",
+=======
+						["icon"] = "Interface\\Icons\\Spell_Nature_Tranquility",
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 					},
 					["Zen Sphere: Detonate"] = {
 						[-2] = {
@@ -1514,16 +1639,27 @@ EavesDropStatsDB = {
 						},
 						["icon"] = "Interface\\Icons\\Spell_Nature_HealingTouch",
 					},
+<<<<<<< HEAD
 					["Tranquility"] = {
 						[-2] = {
 							["time"] = "|cffffffff03/24/17 07:59:42|r\n|Hunit:0x000000000023112F:Lyf|hLyf|h |Hspell:44203:SPELL_HEAL|h|cff82f4ffTranquility|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:0x000000000040D76A:Verminz|hYou|h |cff82f4ff103531|r |cff82f4ffNature|r. ",
 							["amount"] = 103531,
+=======
+					["Cleave"] = {
+						[-2] = {
+							["time"] = "|cffffffff04/07/17 02:18:18|r\n|Hunit:0x000000000039A131:Invokee|hInvokee|h |Hspell:148234:SPELL_HEAL|h|cff82f4ffCleave|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:0x000000000040D76A:Verminz|hYou|h |cff82f4ff0|r |cff82f4ffHoly|r. (209506 Overhealed) ",
+							["amount"] = 209506,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 						},
 						[2] = {
 							["time"] = "|cffffffff04/16/17 08:42:42|r\n|Hunit:0x00000000003F7118:Helbjorn|hHelbjorn|h |Hspell:44203:SPELL_HEAL|h|cff82f4ffTranquility|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:0x000000000040D76A:Verminz|hYou|h |cff82f4ff90454|r |cff82f4ffNature|r. (586763 Overhealed) (Critical) ",
 							["amount"] = 677217,
 						},
+<<<<<<< HEAD
 						["icon"] = "Interface\\Icons\\Spell_Nature_Tranquility",
+=======
+						["icon"] = "Interface\\Icons\\Spell_Holy_LesserHeal",
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 					},
 					["Wild Mushroom: Bloom"] = {
 						[-2] = {
@@ -1534,6 +1670,7 @@ EavesDropStatsDB = {
 						},
 						["icon"] = "Interface\\Icons\\INV_Mushroom_07",
 					},
+<<<<<<< HEAD
 					["Spirit Link"] = {
 						[-2] = {
 							["time"] = "|cffffffff03/19/17 10:00:59|r\n|Hunit:0xF130CF0E005E1659:Spirit Link Totem|hSpirit Link Totem|h |Hspell:98021:SPELL_HEAL|h|cff82f4ffSpirit Link|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:0x000000000040D76A:Verminz|hYou|h |cff82f4ff200950|r |cff82f4ffNature|r. ",
@@ -1542,6 +1679,16 @@ EavesDropStatsDB = {
 						[2] = {
 						},
 						["icon"] = "Interface\\Icons\\Spell_Shaman_SpiritLink",
+=======
+					["Light of the Ancient Kings"] = {
+						[-2] = {
+							["time"] = "|cffffffff04/20/17 07:20:51|r\n|Hunit:0xF130B5A3004FF325:Guardian of Ancient Kings|hGuardian of Ancient Kings|h |Hspell:86678:SPELL_HEAL|h|cff82f4ffLight of the Ancient Kings|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:0x000000000040D76A:Verminz|hYou|h |cff82f4ff75595|r |cff82f4ffHoly|r. (120617 Overhealed) ",
+							["amount"] = 196212,
+						},
+						[2] = {
+						},
+						["icon"] = "Interface\\Icons\\Spell_Holy_HolyBolt",
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 					},
 					["Gift of the Serpent"] = {
 						[-2] = {
@@ -1676,6 +1823,7 @@ EavesDropStatsDB = {
 						},
 						["icon"] = "Interface\\Icons\\Spell_Nature_HealingTouch",
 					},
+<<<<<<< HEAD
 					["Cleave"] = {
 						[-2] = {
 							["time"] = "|cffffffff04/07/17 02:18:18|r\n|Hunit:0x000000000039A131:Invokee|hInvokee|h |Hspell:148234:SPELL_HEAL|h|cff82f4ffCleave|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:0x000000000040D76A:Verminz|hYou|h |cff82f4ff0|r |cff82f4ffHoly|r. (209506 Overhealed) ",
@@ -1684,6 +1832,16 @@ EavesDropStatsDB = {
 						[2] = {
 						},
 						["icon"] = "Interface\\Icons\\Spell_Holy_LesserHeal",
+=======
+					["Spirit Link"] = {
+						[-2] = {
+							["time"] = "|cffffffff03/19/17 10:00:59|r\n|Hunit:0xF130CF0E005E1659:Spirit Link Totem|hSpirit Link Totem|h |Hspell:98021:SPELL_HEAL|h|cff82f4ffSpirit Link|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:0x000000000040D76A:Verminz|hYou|h |cff82f4ff200950|r |cff82f4ffNature|r. ",
+							["amount"] = 200950,
+						},
+						[2] = {
+						},
+						["icon"] = "Interface\\Icons\\Spell_Shaman_SpiritLink",
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 					},
 					["Vampiric Embrace"] = {
 						[-2] = {
@@ -2376,14 +2534,14 @@ EavesDropStatsDB = {
 						},
 						["icon"] = "Interface\\Icons\\Spell_Shadow_SiphonMana",
 					},
-					["Retribution Aura"] = {
+					["Fire Shield"] = {
 						[-2] = {
-							["time"] = "|cffffffff01/25/09 12:44:02|r\n|Hunit:0x0000000000DC76DD:Yawn|hYawn's|h |Hspell:54043:DAMAGE_SHIELD|h|cffffffffRetribution Aura|r|h reflects |cffffffff212|r |cffffffffHoly|r damage to |Hunit:0xF13000407B0000C7:Shattered Hand Sentry|hShattered Hand Sentry|h.",
-							["amount"] = 212,
+							["time"] = "|cffffffff01/25/09 09:09:17|r\n|Hunit:0x0000000000DC76DD:Yawn|hYawn's|h |Hspell:27269:DAMAGE_SHIELD|h|cffffffffFire Shield|r|h reflects |cffffffff19|r |cffffffffFire|r damage to |Hunit:0xF130002EAC00034C:Vanndar Stormpike|hVanndar Stormpike|h.",
+							["amount"] = 19,
 						},
 						[2] = {
 						},
-						["icon"] = "Interface\\Icons\\Spell_Holy_AuraOfLight",
+						["icon"] = "Interface\\Icons\\Spell_Fire_FireArmor",
 					},
 					["Shadow Word: Death"] = {
 						[-2] = {
@@ -2467,16 +2625,27 @@ EavesDropStatsDB = {
 							["amount"] = 456,
 						},
 					},
+<<<<<<< HEAD
 					["Touch of Weakness"] = {
 						[-2] = {
 							["time"] = "|cffffffff08/18/08 06:45:48|r\n|Hunit:0x0000000000DC76DD:Yawn|hYawn's|h |cffffffffTouch of Weakness|r hits |Hunit:0xF1300014EB3DD54B:Firewing Defender|hFirewing Defender|h for |cffffffff167|r |cffffffffShadow|r.",
 							["amount"] = 167,
+=======
+					["Retribution Aura"] = {
+						[-2] = {
+							["time"] = "|cffffffff01/25/09 12:44:02|r\n|Hunit:0x0000000000DC76DD:Yawn|hYawn's|h |Hspell:54043:DAMAGE_SHIELD|h|cffffffffRetribution Aura|r|h reflects |cffffffff212|r |cffffffffHoly|r damage to |Hunit:0xF13000407B0000C7:Shattered Hand Sentry|hShattered Hand Sentry|h.",
+							["amount"] = 212,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 						},
 						[2] = {
 							["time"] = "|cffffffff08/18/08 06:53:08|r\n|Hunit:0x0000000000DC76DD:Yawn|hYawn's|h |cffffffffTouch of Weakness|r hits |Hunit:0xF1300005823E267E:Firewing Bloodwarder|hFirewing Bloodwarder|h for |cffffffff237|r |cffffffffShadow|r. (Critical)",
 							["amount"] = 237,
 						},
+<<<<<<< HEAD
 						["icon"] = "Interface\\Icons\\Spell_Shadow_DeadofNight",
+=======
+						["icon"] = "Interface\\Icons\\Spell_Holy_AuraOfLight",
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 					},
 				},
 				["heal"] = {
@@ -3317,16 +3486,16 @@ EavesDropStatsDB = {
 						},
 						["icon"] = "Interface\\Icons\\Spell_Holy_Penance",
 					},
-					["Smite"] = {
+					["Reflective Shield"] = {
 						[-2] = {
-							["time"] = "|cffffffff04/10/11 12:54:28|r\n|Hunit:0x0400000003B7473A:Kostur|hKostur's|h |Hspell:585:SPELL_DAMAGE|h|cffffffffSmite|r|h hits |Hunit:0xF130478500001B08:Ethereal Scavenger|hEthereal Scavenger|h for |cffffffff1591|r |cffffffffHoly|r.",
-							["amount"] = 1591,
+							["time"] = "|cffffffff04/02/11 11:49:21|r\n|Hunit:0x0400000003B7473A:Kostur|hKostur's|h |Hspell:33619:SPELL_DAMAGE|h|cffffffffReflective Shield|r|h hits |Hunit:0xF1300F88000073E6:Scarlet Commander Mograine|hScarlet Commander Mograine|h for |cffffffff125|r |cffffffffHoly|r.",
+							["amount"] = 125,
 						},
 						[2] = {
-							["time"] = "|cffffffff04/10/11 12:59:29|r\n|Hunit:0x0400000003B7473A:Kostur|hKostur's|h |Hspell:585:SPELL_DAMAGE|h|cffffffffSmite|r|h hits |Hunit:0xF1304B6B00001AED:Nexus Terror|hNexus Terror|h for |cffffffff2375|r |cffffffffHoly|r.(Critical)",
-							["amount"] = 2375,
+							["time"] = "|cffffffff04/02/11 11:43:05|r\n|Hunit:0x0400000003B7473A:Kostur|hKostur's|h |Hspell:33619:SPELL_DAMAGE|h|cffffffffReflective Shield|r|h hits |Hunit:0xF13010CE000073A4:Scarlet Champion|hScarlet Champion|h for |cffffffff96|r |cffffffffHoly|r.(Critical)",
+							["amount"] = 96,
 						},
-						["icon"] = "Interface\\Icons\\Spell_Holy_HolySmite",
+						["icon"] = "INTERFACE\\ICONS\\ability_priest_reflectiveshield",
 					},
 					["Holy Word: Chastise"] = {
 						[-2] = {
@@ -3346,6 +3515,7 @@ EavesDropStatsDB = {
 						},
 						["icon"] = "Interface\\Icons\\INV_ValentineCologneBottle",
 					},
+<<<<<<< HEAD
 					["Mana Burn"] = {
 						[-2] = {
 							["time"] = "|cffffffff04/09/11 07:07:23|r\n|Hunit:0x0400000003B7473A:Kostur|hKostur's|h |Hspell:8129:SPELL_DAMAGE|h|cffffffffMana Burn|r|h hits |Hunit:0xF13046150000A4AE:Mennu the Betrayer|hMennu the Betrayer|h for |cffffffff194|r |cffffffffShadow|r.",
@@ -3354,6 +3524,18 @@ EavesDropStatsDB = {
 						[2] = {
 						},
 						["icon"] = "Interface\\Icons\\Spell_Shadow_ManaBurn",
+=======
+					["Smite"] = {
+						[-2] = {
+							["time"] = "|cffffffff04/10/11 12:54:28|r\n|Hunit:0x0400000003B7473A:Kostur|hKostur's|h |Hspell:585:SPELL_DAMAGE|h|cffffffffSmite|r|h hits |Hunit:0xF130478500001B08:Ethereal Scavenger|hEthereal Scavenger|h for |cffffffff1591|r |cffffffffHoly|r.",
+							["amount"] = 1591,
+						},
+						[2] = {
+							["time"] = "|cffffffff04/10/11 12:59:29|r\n|Hunit:0x0400000003B7473A:Kostur|hKostur's|h |Hspell:585:SPELL_DAMAGE|h|cffffffffSmite|r|h hits |Hunit:0xF1304B6B00001AED:Nexus Terror|hNexus Terror|h for |cffffffff2375|r |cffffffffHoly|r.(Critical)",
+							["amount"] = 2375,
+						},
+						["icon"] = "Interface\\Icons\\Spell_Holy_HolySmite",
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 					},
 					["Holy Nova"] = {
 						[-2] = {
@@ -3390,7 +3572,20 @@ EavesDropStatsDB = {
 						},
 						["icon"] = "Interface\\Icons\\Spell_Holy_GreaterHeal",
 					},
+<<<<<<< HEAD
 					["Prayer of Healing"] = {
+=======
+					["Melee Attack"] = {
+						[-2] = {
+							["time"] = "|cffffffff03/26/11 09:58:55|r\n|Hunit:0xF150BC8A00027B6B:Defias Cannon|hDefias Cannon's|h |Hspell:95495:SPELL_DAMAGE|h|cffff1313Cannonball|r|h hits |Hunit:0x0400000003B7473A:Kostur|hKostur|h for |cffff131349|r |cffff1313Flamestrike|r.",
+							["amount"] = 49,
+						},
+						[2] = {
+						},
+						["icon"] = "Interface\\Icons\\ability_vehicle_siegeenginecannon",
+					},
+					["Arcane"] = {
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 						[-2] = {
 							["time"] = "|cffffffff04/09/11 10:06:49|r\n|Hunit:0x0400000003B7473A:Kostur|hKostur's|h |Hspell:596:SPELL_HEAL|h|cffffffffPrayer of Healing|r|h heals |Hunit:0x0400000003B75C43:Nacova|hNacova|h for |cffffffff0|r.(2729 Overhealed)",
 							["amount"] = 2729,
@@ -3401,6 +3596,7 @@ EavesDropStatsDB = {
 						},
 						["icon"] = "Interface\\Icons\\Spell_Holy_PrayerOfHealing02",
 					},
+<<<<<<< HEAD
 					["Flash Heal"] = {
 						[-2] = {
 							["time"] = "|cffffffff04/09/11 11:23:33|r\n|Hunit:0x0400000003B7473A:Kostur|hKostur's|h |Hspell:2061:SPELL_HEAL|h|cffffffffFlash Heal|r|h heals |Hunit:0x0400000003B75C43:Nacova|hNacova|h for |cffffffff3239|r.(2823 Overhealed)",
@@ -3413,6 +3609,9 @@ EavesDropStatsDB = {
 						["icon"] = "Interface\\Icons\\Spell_Holy_FlashHeal",
 					},
 					["Holy Nova"] = {
+=======
+					["Holy"] = {
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 						[-2] = {
 							["time"] = "|cffffffff04/10/11 12:45:47|r\n|Hunit:0x0400000003B7473A:Kostur|hKostur's|h |Hspell:23455:SPELL_HEAL|h|cffffffffHoly Nova|r|h heals |Hunit:0x0400000003B7473A:Kostur|hKostur|h for |cffffffff0|r.(1058 Overhealed)",
 							["amount"] = 1058,
@@ -4322,6 +4521,7 @@ EavesDropStatsDB = {
 						},
 						["icon"] = "Interface\\Icons\\Ability_Hunter_ExplosiveShot",
 					},
+<<<<<<< HEAD
 					["Lightning Prison"] = {
 						[-2] = {
 							["time"] = "|cffffffff01/30/13 12:08:08|r\n|Hicon:2:source|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_2.blp:0|t|h|Hunit:0x040000000320341E:Tuka|hYour|h |Hspell:117398:SPELL_DAMAGE|h|cffffffffLightning Prison|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0x0400000000500CFC:Garborg-Moonglade|hGarborg-Moonglade|h |cffffffff28000|r |cffffffffNature|r. ",
@@ -4332,6 +4532,9 @@ EavesDropStatsDB = {
 						["icon"] = "Interface\\Icons\\Spell_Shaman_StaticShock",
 					},
 					["Blood Mirror"] = {
+=======
+					["Serpent Sting"] = {
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 						[-2] = {
 							["time"] = "|cffffffff06/10/14 04:45:36|r\n|Hunit:0x040000000320341E:Tuka|hYour|h |Hspell:70445:SPELL_DAMAGE|h|cffffffffBlood Mirror|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0xF141644F6F0001B4:ZMIJA|hZMIJA|h |cffffffff6423|r |cffffffffPhysical|r. ",
 							["amount"] = 6423,
@@ -4340,7 +4543,20 @@ EavesDropStatsDB = {
 						},
 						["icon"] = "Interface\\Icons\\Spell_Shadow_ImprovedVampiricEmbrace",
 					},
+<<<<<<< HEAD
 					["Burning Blood"] = {
+=======
+					["Zanzil's Graveyard Gas"] = {
+						[-2] = {
+							["time"] = "|cffffffff05/17/11 09:24:27|r\n|Hunit:0x040000000320341E:Tuka|hTuka|h suffers |cffffffff29986|r |cffffffffNature|r damage from |Hunit:0x040000000320341E:Tuka|hTuka's|h |Hspell:96434:SPELL_PERIODIC_DAMAGE|h|cffffffffZanzil's Graveyard Gas|r|h.",
+							["amount"] = 29986,
+						},
+						[2] = {
+						},
+						["icon"] = "Interface\\Icons\\Spell_Nature_AbolishMagic",
+					},
+					["Blood Drain"] = {
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 						[-2] = {
 							["time"] = "|cffffffff04/30/11 01:42:08|r\n|Hunit:0x040000000320341E:Tuka|hTuka's|h |Hspell:96330:SPELL_DAMAGE|h|cffffffffBurning Blood|r|h hits |Hunit:0xF130CC9900011986:Florawing Needler|hFlorawing Needler|h for |cffffffff6171|r |cffffffffFire|r.",
 							["amount"] = 6171,
@@ -4369,6 +4585,7 @@ EavesDropStatsDB = {
 						},
 						["icon"] = "Interface\\Icons\\Ability_UpgradeMoonGlaive",
 					},
+<<<<<<< HEAD
 					["Arcane Resonance"] = {
 						[-2] = {
 							["time"] = "|cffffffff01/30/13 04:16:20|r\n|Hunit:0x040000000320341E:Tuka|hYour|h |Hspell:116434:SPELL_DAMAGE|h|cffffffffArcane Resonance|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0x0600000003EC8663:Ikxmoetxkake-Darkspear|hIkxmoetxkake-Darkspear|h |cffffffff34000|r |cffffffffArcane|r. ",
@@ -4377,6 +4594,16 @@ EavesDropStatsDB = {
 						[2] = {
 						},
 						["icon"] = "Interface\\Icons\\Spell_Frost_ChainsOfIce",
+=======
+					["Unstable Serum"] = {
+						[-2] = {
+							["time"] = "|cffffffff04/12/13 10:26:37|r\n|Hunit:0x040000000320341E:Tuka|hYour|h |Hspell:127767:SPELL_DAMAGE|h|cffffffffUnstable Serum|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0xF53110D1001720D1:Zandalari Warbringer|hZandalari Warbringer|h |cffffffff185464|r |cffffffffNature|r. ",
+							["amount"] = 185464,
+						},
+						[2] = {
+						},
+						["icon"] = "Interface\\Icons\\Trade_Engineering",
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 					},
 					["Venom Bomb"] = {
 						[-2] = {
@@ -4405,6 +4632,7 @@ EavesDropStatsDB = {
 						},
 						["icon"] = "Interface\\Icons\\Spell_Fire_Burnout",
 					},
+<<<<<<< HEAD
 					["Chilled to the Bone"] = {
 						[-2] = {
 							["time"] = "|cffffffff06/10/14 05:13:30|r\n|Hunit:0x040000000320341E:Tuka|hYour|h |Hspell:70106:SPELL_PERIODIC_DAMAGE|h|cffffffffChilled to the Bone|r|h |Haction:SPELL_PERIODIC_DAMAGE|hdamaged|h |Hunit:0x040000000320341E:Tuka|hYou|h |cffffffff4641|r |cffffffffFrost|r. ",
@@ -4413,6 +4641,16 @@ EavesDropStatsDB = {
 						[2] = {
 						},
 						["icon"] = "Interface\\Icons\\Spell_Frost_IceFloes",
+=======
+					["Shado-Pan Torch"] = {
+						[-2] = {
+							["time"] = "|cffffffff01/24/13 10:05:36|r\n|Hunit:0x040000000320341E:Tuka|hYour|h |Hspell:125476:SPELL_DAMAGE|h|cffffffffShado-Pan Torch|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0xF530F9E4001B3547:Krik'thik Hiveling|hKrik'thik Hiveling|h |cffffffff16582|r |cffffffffPhysical|r. ",
+							["amount"] = 16582,
+						},
+						[2] = {
+						},
+						["icon"] = "Interface\\Icons\\INV_Torch_Thrown",
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 					},
 					["Anima Font"] = {
 						[-2] = {
@@ -4490,24 +4728,43 @@ EavesDropStatsDB = {
 						},
 						["icon"] = "Interface\\Icons\\inv_misc_eye_03",
 					},
+<<<<<<< HEAD
 					["Scatter Shot"] = {
 						[-2] = {
 							["time"] = "|cffffffff10/21/13 05:34:11|r\n|Hunit:0x040000000320341E:Tuka|hYour|h |Hspell:19503:SPELL_DAMAGE|h|cffffffffScatter Shot|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0xF131175D000013B1:Kor'kron Arcweaver|hKor'kron Arcweaver|h |cffffffff19006|r |cffffffffPhysical|r. ",
 							["amount"] = 19006,
+=======
+					["Poison Bolt"] = {
+						[-2] = {
+							["time"] = "|cffffffff07/09/13 11:39:26|r\n|Hunit:0xF13051C4005439DD:Chimaera|hChimaera|h |Hspell:21971:SPELL_PERIODIC_DAMAGE|h|cffffffffPoison Bolt|r|h |Haction:SPELL_PERIODIC_DAMAGE|hdamaged|h |Hunit:0x040000000320341E:Tuka|hYou|h |cffffffff56|r |cffffffffNature|r. ",
+							["amount"] = 56,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 						},
 						[2] = {
 							["time"] = "|cffffffff06/21/14 01:04:52|r\n|Hunit:0x040000000320341E:Tuka|hYour|h |Hspell:19503:SPELL_DAMAGE|h|cffffffffScatter Shot|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0xF1311D04000000A4:Goro'dan|hGoro'dan|h |cffffffff44283|r |cffffffffPhysical|r. (Critical) ",
 							["amount"] = 44283,
 						},
+<<<<<<< HEAD
 						["icon"] = "Interface\\Icons\\Ability_GolemStormBolt",
 					},
 					["Violent Reaction"] = {
 						[-2] = {
 							["time"] = "|cffffffff01/19/13 04:48:28|r\n|Hunit:0x040000000320341E:Tuka|hYour|h |Hspell:128620:SPELL_DAMAGE|h|cffffffffViolent Reaction|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0xF130FFAF0018E6A2:Krik'thik Wingguard|hKrik'thik Wingguard|h |cffffffff393941|r |cffffffffNature|r. (2036044 Overkill) ",
 							["amount"] = 2429985,
+=======
+						["icon"] = "Interface\\Icons\\Spell_Nature_CorrosiveBreath",
+					},
+					["Kill Shot"] = {
+						[-2] = {
+							["time"] = "|cffffffff05/27/14 05:13:38|r\n|Hunit:0x040000000320341E:Tuka|hYour|h |Hspell:53351:SPELL_DAMAGE|h|cffffffffKill Shot|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0xF13094430001228A:Blood-Queen Lana'thel|hBlood-Queen Lana'thel|h |cffffffff346952|r |cffffffffPhysical|r. ",
+							["amount"] = 346952,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 						},
 						[2] = {
+							["time"] = "|cffffffff04/12/11 10:44:03|r\n|Hunit:0x040000000320341E:Tuka|hTuka's|h |Hspell:53351:SPELL_DAMAGE|h|cffffffffKill Shot|r|h hits |Hunit:0xF150AE160000A425:Ozumat|hOzumat|h for |cffffffff584142|r |cffffffffPhysical|r.(150635 Overkill) (Critical)",
+							["amount"] = 734777,
 						},
+<<<<<<< HEAD
 						["icon"] = "Interface\\Icons\\Spell_Fire_SelfDestruct",
 					},
 					["Matter Swap"] = {
@@ -4527,6 +4784,27 @@ EavesDropStatsDB = {
 						[2] = {
 						},
 						["icon"] = "Interface\\Icons\\Spell_Holy_AuraOfLight",
+=======
+						["icon"] = "Interface\\Icons\\Ability_Hunter_Assassinate2",
+					},
+					["Firewall"] = {
+						[-2] = {
+							["time"] = "|cffffffff01/31/13 12:26:11|r\n|Hunit:0x040000000320341E:Tuka|hYour|h |Hspell:132661:SPELL_PERIODIC_DAMAGE|h|cffffffffFirewall|r|h |Haction:SPELL_PERIODIC_DAMAGE|hdamaged|h |Hunit:0x040000000320341E:Tuka|hYou|h |cffffffff88375|r |cffffffffFire|r. ",
+							["amount"] = 88375,
+						},
+						[2] = {
+						},
+						["icon"] = "Interface\\Icons\\Spell_Fire_Immolation",
+					},
+					["Sonic Divebomb"] = {
+						[-2] = {
+							["time"] = "|cffffffff01/17/13 12:24:34|r\n|Hunit:0x040000000320341E:Tuka|hYour|h |Hspell:123065:SPELL_DAMAGE|h|cffffffffSonic Divebomb|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0xF130F463000682B9:Shek'zeer Bladesworn|hShek'zeer Bladesworn|h |cffffffff341034|r |cffffffffPhysical|r. ",
+							["amount"] = 341034,
+						},
+						[2] = {
+						},
+						["icon"] = "Interface\\Icons\\Ability_HeroicLeap",
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 					},
 					["Aimed Shot"] = {
 						[-2] = {
@@ -4550,6 +4828,7 @@ EavesDropStatsDB = {
 						},
 						["icon"] = "Interface\\Icons\\INV_Spear_07",
 					},
+<<<<<<< HEAD
 					["Molten Fists"] = {
 						[-2] = {
 							["time"] = "|cffffffff12/07/11 11:36:50|r\n|Hunit:0x040000000320341E:Tuka|hTuka's|h |Hspell:101867:SPELL_DAMAGE|h|cffffffffMolten Fists|r|h hits |Hunit:0xF130D49F0002E35C:Echo of Baine|hEcho of Baine|h for |cffffffff11011|r |cffffffffFire|r.",
@@ -4565,11 +4844,27 @@ EavesDropStatsDB = {
 						[-2] = {
 							["time"] = "|cffffffff05/27/14 05:13:28|r\n|Hunit:0x040000000320341E:Tuka|hYour|h |Hspell:131900:SPELL_DAMAGE|h|cffffffffA Murder of Crows|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0xF13094430001228A:Blood-Queen Lana'thel|hBlood-Queen Lana'thel|h |cffffffff93872|r |cffffffffPhysical|r. ",
 							["amount"] = 93872,
+=======
+					["Frostburn Formula"] = {
+						[-2] = {
+							["time"] = "|cffffffff04/27/11 08:04:16|r\n|Hunit:0x040000000320341E:Tuka|hTuka's|h |Hspell:96331:SPELL_DAMAGE|h|cffffffffFrostburn Formula|r|h hits |Hunit:0xF130CB6D00076693:Gurubashi Berserker|hGurubashi Berserker|h for |cffffffff1511055|r |cffffffffFrost|r.",
+							["amount"] = 1511055,
+						},
+						[2] = {
+						},
+						["icon"] = "Interface\\Icons\\Ability_Mage_DeepFreeze",
+					},
+					["Plague of Ages"] = {
+						[-2] = {
+							["time"] = "|cffffffff04/14/11 10:19:04|r\n|Hunit:0x040000000320341E:Tuka|hTuka's|h |Hspell:89995:SPELL_DAMAGE|h|cffffffffPlague of Ages|r|h hits |Hunit:0xF1306D710001F8CE:Bloodworm|hBloodworm|h for |cffffffff10916|r |cffffffffNature|r.",
+							["amount"] = 10916,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 						},
 						[2] = {
 							["time"] = "|cffffffff05/27/14 05:13:30|r\n|Hunit:0x040000000320341E:Tuka|hYour|h |Hspell:131900:SPELL_DAMAGE|h|cffffffffA Murder of Crows|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0xF13094430001228A:Blood-Queen Lana'thel|hBlood-Queen Lana'thel|h |cffffffff193376|r |cffffffffPhysical|r. (Critical) ",
 							["amount"] = 193376,
 						},
+<<<<<<< HEAD
 						["icon"] = "Interface\\Icons\\ability_hunter_murderofcrows",
 					},
 					["Mutated Plague"] = {
@@ -4580,6 +4875,18 @@ EavesDropStatsDB = {
 						[2] = {
 						},
 						["icon"] = "Interface\\Icons\\Ability_Rogue_DeviousPoisons",
+=======
+						["icon"] = "Interface\\Icons\\Spell_Shadow_FingerOfDeath",
+					},
+					["Twilight Shear"] = {
+						[-2] = {
+							["time"] = "|cffffffff12/08/11 08:06:44|r\n|Hunit:0x040000000320341E:Tuka|hTuka's|h |Hspell:103526:SPELL_DAMAGE|h|cffffffffTwilight Shear|r|h hits |Hunit:0x040000000320341E:Tuka|hTuka|h for |cffffffff16875|r |cffffffffShadow|r.",
+							["amount"] = 16875,
+						},
+						[2] = {
+						},
+						["icon"] = "Interface\\Icons\\Spell_Shadow_Shadowfury",
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 					},
 					["Melee Attack"] = {
 						[-2] = {
@@ -4591,6 +4898,7 @@ EavesDropStatsDB = {
 							["amount"] = 13315,
 						},
 					},
+<<<<<<< HEAD
 					["Flintlocke's Woodchucker"] = {
 						[-2] = {
 							["time"] = "|cffffffff03/15/12 10:33:16|r\n|Hunit:0x040000000320341E:Tuka|hTuka's|h |Hspell:99621:SPELL_DAMAGE|h|cffffffffFlintlocke's Woodchucker|r|h hits |Hunit:0xF150DE0E00001385:Arm Tentacle|hArm Tentacle|h for |cffffffff5884|r |cffffffffPhysical|r.",
@@ -4621,6 +4929,37 @@ EavesDropStatsDB = {
 							["amount"] = 243208,
 						},
 						["icon"] = "Interface\\Icons\\spell_fire_incinerate",
+=======
+					["Cobra Shot"] = {
+						[-2] = {
+							["time"] = "|cffffffff04/15/11 08:34:13|r\n|Hunit:0x040000000320341E:Tuka|hTuka's|h |Hspell:77767:SPELL_DAMAGE|h|cffffffffCobra Shot|r|h hits |Hunit:0xF150AE160002AD9B:Ozumat|hOzumat|h for |cffffffff188085|r |cffffffffNature|r.",
+							["amount"] = 188085,
+						},
+						[2] = {
+							["time"] = "|cffffffff04/12/11 10:44:01|r\n|Hunit:0x040000000320341E:Tuka|hTuka's|h |Hspell:77767:SPELL_DAMAGE|h|cffffffffCobra Shot|r|h hits |Hunit:0xF150AE160000A425:Ozumat|hOzumat|h for |cffffffff352146|r |cffffffffNature|r.(Critical)",
+							["amount"] = 352146,
+						},
+						["icon"] = "INTERFACE\\ICONS\\ability_hunter_cobrashot",
+					},
+					["Flame Coating"] = {
+						[-2] = {
+							["time"] = "|cffffffff05/13/14 07:13:56|r\n|Hunit:0x040000000320341E:Tuka|hYour|h |Hspell:144116:SPELL_DAMAGE|h|cffffffffFlame Coating|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0xF1511769000008F3:Thok the Bloodthirsty|hThok the Bloodthirsty|h |cffffffff70430|r |cffffffffFire|r. ",
+							["amount"] = 70430,
+						},
+						[2] = {
+						},
+						["icon"] = "Interface\\Icons\\inv_sword_1h_firelandsraid_d_04",
+					},
+					["Auto Shot"] = {
+						[-2] = {
+							["time"] = "|cffffffff05/27/14 05:13:32|r\n|Hunit:0x040000000320341E:Tuka|hYour|h |Haction:RANGE_DAMAGE|h|cffffffffAuto Shot|r|h |Haction:RANGE_DAMAGE|hhit|h |Hunit:0xF13094430001228A:Blood-Queen Lana'thel|hBlood-Queen Lana'thel|h |cffffffff115218|r |cffffffffPhysical|r. ",
+							["amount"] = 115218,
+						},
+						[2] = {
+							["time"] = "|cffffffff05/27/14 05:13:30|r\n|Hunit:0x040000000320341E:Tuka|hYour|h |Haction:RANGE_DAMAGE|h|cffffffffAuto Shot|r|h |Haction:RANGE_DAMAGE|hhit|h |Hunit:0xF13094430001228A:Blood-Queen Lana'thel|hBlood-Queen Lana'thel|h |cffffffff225650|r |cffffffffPhysical|r. (Critical) ",
+							["amount"] = 225650,
+						},
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 					},
 					["Throw Totem"] = {
 						[-2] = {
@@ -4631,6 +4970,7 @@ EavesDropStatsDB = {
 						},
 						["icon"] = "Interface\\Icons\\Spell_Frost_Stun",
 					},
+<<<<<<< HEAD
 					["Squash"] = {
 						[-2] = {
 							["time"] = "|cffffffff01/15/13 12:55:11|r\n|Hunit:0x040000000320341E:Tuka|hYour|h |Hspell:107913:SPELL_DAMAGE|h|cffffffffSquash|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0xF530DF95003E98A3:Bookworm|hBookworm|h |cffffffff108162|r |cffffffffPhysical|r. ",
@@ -4639,6 +4979,16 @@ EavesDropStatsDB = {
 						[2] = {
 						},
 						["icon"] = "Interface\\Icons\\inv_boots_08",
+=======
+					["Frozen Bite"] = {
+						[-2] = {
+							["time"] = "|cffffffff04/19/12 08:27:18|r\n|Hunit:0x040000000320341E:Tuka|hTuka|h suffers |cffffffff150|r |cffffffffFrost|r damage from |Hunit:0xF13083F0000DCA53:Spirit Beast|hSpirit Beast's|h |Hspell:61186:SPELL_PERIODIC_DAMAGE|h|cffffffffFrozen Bite|r|h.",
+							["amount"] = 150,
+						},
+						[2] = {
+						},
+						["icon"] = "Interface\\Icons\\Spell_Frost_ChillingBlast",
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 					},
 					["Poison Bolt"] = {
 						[-2] = {
@@ -4678,6 +5028,7 @@ EavesDropStatsDB = {
 						},
 						["icon"] = "Interface\\Icons\\Spell_Shadow_PainSpike",
 					},
+<<<<<<< HEAD
 					["Arcane Shot"] = {
 						[-2] = {
 							["time"] = "|cffffffff01/23/13 02:00:11|r\n|Hunit:0x040000000320341E:Tuka|hYour|h |Hspell:3044:SPELL_DAMAGE|h|cffffffffArcane Shot|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0xF150DE2D0007A8F6:Raigonn|hRaigonn|h |cffffffff138659|r |cffffffffArcane|r. ",
@@ -4688,6 +5039,16 @@ EavesDropStatsDB = {
 							["amount"] = 276984,
 						},
 						["icon"] = "Interface\\Icons\\Ability_ImpalingBolt",
+=======
+					["Squash"] = {
+						[-2] = {
+							["time"] = "|cffffffff01/15/13 12:55:11|r\n|Hunit:0x040000000320341E:Tuka|hYour|h |Hspell:107913:SPELL_DAMAGE|h|cffffffffSquash|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0xF530DF95003E98A3:Bookworm|hBookworm|h |cffffffff108162|r |cffffffffPhysical|r. ",
+							["amount"] = 108162,
+						},
+						[2] = {
+						},
+						["icon"] = "Interface\\Icons\\inv_boots_08",
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 					},
 					["Aura of Desire"] = {
 						[-2] = {
@@ -4716,6 +5077,7 @@ EavesDropStatsDB = {
 						},
 						["icon"] = "Interface\\Icons\\Spell_Fire_Burnout",
 					},
+<<<<<<< HEAD
 					["Elune's Wrath"] = {
 						[-2] = {
 							["time"] = "|cffffffff12/08/11 10:36:04|r\n|Hunit:0x040000000320341E:Tuka|hTuka's|h |Hspell:103919:SPELL_DAMAGE|h|cffffffffElune's Wrath|r|h hits |Hunit:0xF130D9D200074FB5:Dreadlord Debilitator|hDreadlord Debilitator|h for |cffffffff83505|r |cffffffffArcane|r.(64254 Overkill)",
@@ -4724,6 +5086,16 @@ EavesDropStatsDB = {
 						[2] = {
 						},
 						["icon"] = "Interface\\Icons\\Spell_Nature_StarFall",
+=======
+					["Volatile Pathogen"] = {
+						[-2] = {
+							["time"] = "|cffffffff04/11/13 10:56:11|r\n|Hicon:128:source|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:0x040000000320341E:Tuka|hYour|h |Hspell:136231:SPELL_DAMAGE|h|cffffffffVolatile Pathogen|r|h |Haction:SPELL_DAMAGE|hhit|h |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:0x040000000320341E:Tuka|hYou|h |cffffffff51854|r |cffffffffNature|r. ",
+							["amount"] = 51854,
+						},
+						[2] = {
+						},
+						["icon"] = "Interface\\Icons\\Spell_Shadow_LifeDrain",
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 					},
 					["Powershot"] = {
 						[-2] = {
@@ -5091,6 +5463,7 @@ EavesDropStatsDB = {
 						},
 						["icon"] = "Interface\\Icons\\Ability_Creature_Poison_02",
 					},
+<<<<<<< HEAD
 					["Plucked"] = {
 						[-2] = {
 							["time"] = "|cffffffff05/11/11 12:05:26|r\n|Hunit:0x040000000320341E:Tuka|hTuka|h suffers |cffffffff4127|r |cffffffffPhysical|r damage from |Hunit:0x040000000320341E:Tuka|hTuka's|h |Hspell:97318:SPELL_PERIODIC_DAMAGE|h|cffffffffPlucked|r|h.",
@@ -5099,6 +5472,18 @@ EavesDropStatsDB = {
 						[2] = {
 						},
 						["icon"] = "Interface\\Icons\\Ability_Hunter_EagleEye",
+=======
+					["Melee Attack"] = {
+						[-2] = {
+							["time"] = "|cffffffff10/20/13 08:42:19|r\n|Hunit:0xF1311FFD00000C09:Xiang-Lin|hXiang-Lin|h |Hspell:148583:SPELL_DAMAGE|h|cffff1313Jade Tempest|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0x040000000320341E:Tuka|hYou|h |cffff1313149012|r |cffff1313Firestorm|r. (11863 Absorbed) ",
+							["amount"] = 149012,
+						},
+						[2] = {
+							["time"] = "|cffffffff05/17/14 02:10:23|r\n|Hunit:0x038000000592C9B8:Grimoldi-Sylvanas|hGrimoldi-Sylvanas|h |Hspell:73510:SPELL_DAMAGE|h|cffff1313Mind Spike|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0x040000000320341E:Tuka|hYou|h |cffff1313106222|r |cffff1313Shadowfrost|r. (Critical) ",
+							["amount"] = 106222,
+						},
+						["icon"] = "INTERFACE\\ICONS\\spell_priest_mindspike",
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 					},
 					["Flame Touched"] = {
 						[-2] = {
@@ -5118,6 +5503,7 @@ EavesDropStatsDB = {
 						},
 						["icon"] = "Interface\\Icons\\Trade_Engineering",
 					},
+<<<<<<< HEAD
 					["Sniper Shot"] = {
 						[-2] = {
 							["time"] = "|cffffffff01/14/13 12:34:11|r\n|Hunit:0x040000000320341E:Tuka|hYour|h |Hspell:103621:SPELL_DAMAGE|h|cffffffffSniper Shot|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0xF530D99F0038F09F:Pearlfin Poolwatcher|hPearlfin Poolwatcher|h |cffffffff158079|r |cffffffffPhysical|r. (72440 Overkill) ",
@@ -5126,6 +5512,18 @@ EavesDropStatsDB = {
 						[2] = {
 						},
 						["icon"] = "Interface\\Icons\\INV_Weapon_Rifle_06",
+=======
+					["Arcane"] = {
+						[-2] = {
+							["time"] = "|cffffffff10/21/13 05:34:07|r\n|Hunit:0xF131175D0000138E:Kor'kron Arcweaver|hKor'kron Arcweaver|h |Hspell:143431:SPELL_DAMAGE|h|cffff1313Magistrike|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0x040000000320341E:Tuka|hYou|h |cffff1313394410|r |cffff1313Arcane|r. ",
+							["amount"] = 394410,
+						},
+						[2] = {
+							["time"] = "|cffffffff05/15/14 08:47:01|r\n|Hunit:0x040000000429DB2E:Fináflickor-Mazrigos|hFináflickor-Mazrigos|h |Hspell:44425:SPELL_DAMAGE|h|cffff1313Arcane Barrage|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:0x040000000320341E:Tuka|hYou|h |cffff1313174995|r |cffff1313Arcane|r. (Critical) ",
+							["amount"] = 174995,
+						},
+						["icon"] = "Interface\\Icons\\Ability_Mage_ArcaneBarrage",
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 					},
 					["Piercing Song"] = {
 						[-2] = {
@@ -6225,27 +6623,25 @@ EavesDropStatsDB = {
 						},
 						["icon"] = "Interface\\Icons\\Ability_Paladin_DivineStorm",
 					},
-					["Tranquility"] = {
+					["Light of the Ancient Kings"] = {
 						[-2] = {
-							["time"] = "|cffffffff05/30/14 03:33:12|r\n|Hunit:0x0600000005F76100:Murhaâja-BurningSteppes|hMurhaâja-BurningSteppes|h |Hspell:44203:SPELL_HEAL|h|cff82f4ffTranquility|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:0x040000000320341E:Tuka|hYou|h |cff82f4ff105107|r |cff82f4ffNature|r. ",
-							["amount"] = 105107,
+							["time"] = "|cffffffff01/18/13 04:10:25|r\n|Hunit:0xF130B5A30000A836:Guardian of Ancient Kings|hGuardian of Ancient Kings|h |Hspell:86678:SPELL_HEAL|h|cff82f4ffLight of the Ancient Kings|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:0x040000000320341E:Tuka|hYou|h |cff82f4ff0|r |cff82f4ffHoly|r. (162618 Overhealed) ",
+							["amount"] = 162618,
 						},
 						[2] = {
-							["time"] = "|cffffffff05/30/14 03:33:13|r\n|Hunit:0x0600000005F76100:Murhaâja-BurningSteppes|hMurhaâja-BurningSteppes|h |Hspell:44203:SPELL_HEAL|h|cff82f4ffTranquility|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:0x040000000320341E:Tuka|hYou|h |cff82f4ff131279|r |cff82f4ffNature|r. (78934 Overhealed) (Critical) ",
-							["amount"] = 210213,
 						},
-						["icon"] = "Interface\\Icons\\Spell_Nature_Tranquility",
+						["icon"] = "Interface\\Icons\\Spell_Holy_HolyBolt",
 					},
-					["Gift of the Serpent"] = {
+					["Blaze of Life"] = {
 						[-2] = {
-							["time"] = "|cffffffff09/24/13 04:50:25|r\n|Hunit:0x0400000004482B41:Sagiri-Drak'thul|hSagiri-Drak'thul|h |Hspell:124041:SPELL_HEAL|h|cff82f4ffGift of the Serpent|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:0x040000000320341E:Tuka|hYou|h |cff82f4ff75694|r |cff82f4ffNature|r. ",
-							["amount"] = 75694,
+							["time"] = "|cffffffff01/02/12 05:19:23|r\n|Hunit:0x06000000041E00EE:Cryzon-Kor'gall|hCryzon-Kor'gall's|h |Hspell:97136:SPELL_HEAL|h|cff82f4ffBlaze of Life|r|h heals |Hunit:0x040000000320341E:Tuka|hTuka|h for |cff82f4ff23282|r.",
+							["amount"] = 23282,
 						},
 						[2] = {
-							["time"] = "|cffffffff11/03/13 01:09:26|r\n|Hunit:0x0400000004472703:Lamonaca-Bronzebeard|hLamonaca-Bronzebeard|h |Hspell:124041:SPELL_HEAL|h|cff82f4ffGift of the Serpent|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:0x040000000320341E:Tuka|hYou|h |cff82f4ff43161|r |cff82f4ffNature|r. (81999 Overhealed) (Critical) ",
-							["amount"] = 125160,
+							["time"] = "|cffffffff01/02/12 05:14:42|r\n|Hunit:0x06000000041E00EE:Cryzon-Kor'gall|hCryzon-Kor'gall's|h |Hspell:97136:SPELL_HEAL|h|cff82f4ffBlaze of Life|r|h heals |Hunit:0x040000000320341E:Tuka|hTuka|h for |cff82f4ff47403|r.(Critical)",
+							["amount"] = 47403,
 						},
-						["icon"] = "Interface\\Icons\\ability_monk_healthsphere",
+						["icon"] = "INTERFACE\\ICONS\\inv_jewelcrafting_dragonseye04",
 					},
 					["Stay of Execution"] = {
 						[-2] = {
@@ -6383,6 +6779,7 @@ EavesDropStatsDB = {
 						},
 						["icon"] = "Interface\\Icons\\Spell_Holy_PrayerOfHealing02",
 					},
+<<<<<<< HEAD
 					["Penance"] = {
 						[-2] = {
 							["time"] = "|cffffffff05/18/14 02:17:50|r\n|Hunit:0x0100000004FC05CD:Malamorte-AzjolNerub|hMalamorte-AzjolNerub|h |Hspell:47750:SPELL_HEAL|h|cff82f4ffPenance|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:0x040000000320341E:Tuka|hYou|h |cff82f4ff0|r |cff82f4ffHoly|r. (77926 Overhealed) ",
@@ -6398,10 +6795,33 @@ EavesDropStatsDB = {
 						[-2] = {
 							["time"] = "|cffffffff01/22/13 01:13:36|r\n|Hunit:0x040000000089319D:Krwawica|hKrwawica|h |Hspell:53652:SPELL_HEAL|h|cff82f4ffBeacon of Light|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:0x040000000320341E:Tuka|hYou|h |cff82f4ff56542|r |cff82f4ffHoly|r. (15000 Absorbed) (9400 Overhealed) ",
 							["amount"] = 65942,
+=======
+					["Gift of the Serpent"] = {
+						[-2] = {
+							["time"] = "|cffffffff09/24/13 04:50:25|r\n|Hunit:0x0400000004482B41:Sagiri-Drak'thul|hSagiri-Drak'thul|h |Hspell:124041:SPELL_HEAL|h|cff82f4ffGift of the Serpent|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:0x040000000320341E:Tuka|hYou|h |cff82f4ff75694|r |cff82f4ffNature|r. ",
+							["amount"] = 75694,
 						},
 						[2] = {
+							["time"] = "|cffffffff11/03/13 01:09:26|r\n|Hunit:0x0400000004472703:Lamonaca-Bronzebeard|hLamonaca-Bronzebeard|h |Hspell:124041:SPELL_HEAL|h|cff82f4ffGift of the Serpent|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:0x040000000320341E:Tuka|hYou|h |cff82f4ff43161|r |cff82f4ffNature|r. (81999 Overhealed) (Critical) ",
+							["amount"] = 125160,
 						},
+						["icon"] = "Interface\\Icons\\ability_monk_healthsphere",
+					},
+					["Tranquility"] = {
+						[-2] = {
+							["time"] = "|cffffffff05/30/14 03:33:12|r\n|Hunit:0x0600000005F76100:Murhaâja-BurningSteppes|hMurhaâja-BurningSteppes|h |Hspell:44203:SPELL_HEAL|h|cff82f4ffTranquility|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:0x040000000320341E:Tuka|hYou|h |cff82f4ff105107|r |cff82f4ffNature|r. ",
+							["amount"] = 105107,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
+						},
+						[2] = {
+							["time"] = "|cffffffff05/30/14 03:33:13|r\n|Hunit:0x0600000005F76100:Murhaâja-BurningSteppes|hMurhaâja-BurningSteppes|h |Hspell:44203:SPELL_HEAL|h|cff82f4ffTranquility|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:0x040000000320341E:Tuka|hYou|h |cff82f4ff131279|r |cff82f4ffNature|r. (78934 Overhealed) (Critical) ",
+							["amount"] = 210213,
+						},
+<<<<<<< HEAD
 						["icon"] = "Interface\\Icons\\Ability_Paladin_BeaconofLight",
+=======
+						["icon"] = "Interface\\Icons\\Spell_Nature_Tranquility",
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 					},
 					["Eminence (Statue)"] = {
 						[-2] = {

@@ -1,5 +1,9 @@
 
 BugGrabberDB = {
+<<<<<<< HEAD
+=======
+	["session"] = 706,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 	["lastSanitation"] = 3,
 	["session"] = 701,
 	["errors"] = {
@@ -501,12 +505,29 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [65]
 		{
+<<<<<<< HEAD
 			["message"] = "...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: Usage: CreateFrame(\"frameType\" [, \"name\"] [, parent] [, \"template\"] [, id])",
 			["time"] = "2020/07/07 16:56:37",
 			["locals"] = "(*temporary) = \"Button\"\n(*temporary) = \"NivayaSlot1\"\n(*temporary) = \"ItemButtonTemplate\"\n(*temporary) = \"ContainerFrameItemButtonTemplate\"\n",
 			["stack"] = "[C]: in function `CreateFrame'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: in function `Create'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:56: in function `New'\nInterface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:762: in function <Interface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:757>",
 			["session"] = 701,
 			["counter"] = 42,
+=======
+			["message"] = "Interface\\AddOns\\!Colorz\\!Colorz.lua:21: no loop to break near 'end'",
+			["time"] = "2020/07/10 09:06:03",
+			["locals"] = "",
+			["stack"] = "",
+			["session"] = 701,
+			["counter"] = 4,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 		}, -- [66]
+		{
+			["message"] = "...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: Usage: CreateFrame(\"frameType\" [, \"name\"] [, parent] [, \"template\"] [, id])",
+			["time"] = "2020/07/07 16:56:37",
+			["locals"] = "(*temporary) = \"Button\"\n(*temporary) = \"NivayaSlot1\"\n(*temporary) = \"ItemButtonTemplate\"\n(*temporary) = \"ContainerFrameItemButtonTemplate\"\n",
+			["stack"] = "[C]: in function `CreateFrame'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: in function `Create'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:56: in function `New'\nInterface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:762: in function <Interface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:757>",
+			["session"] = 706,
+			["counter"] = 47,
+		}, -- [67]
 	},
 }

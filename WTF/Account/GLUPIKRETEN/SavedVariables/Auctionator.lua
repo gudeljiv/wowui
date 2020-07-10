@@ -168,6 +168,7 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 0,
 			["mr"] = 699,
 		},
+<<<<<<< HEAD
 		["Aboriginal Loincloth of the Owl"] = {
 			["H3212"] = 900,
 			["cc"] = 4,
@@ -181,6 +182,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "2589:0:0:0:0",
 			["sc"] = 0,
 			["mr"] = 20,
+=======
+		["Mageweave Cloth"] = {
+			["H3212"] = 1500,
+			["cc"] = 7,
+			["id"] = "4338:0:0:0:0",
+			["mr"] = 1500,
+			["sc"] = 0,
+		},
+		["Aboriginal Loincloth of the Owl"] = {
+			["H3212"] = 900,
+			["cc"] = 4,
+			["id"] = "14119:0:0:760:0",
+			["mr"] = 900,
+			["sc"] = 1,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 		},
 		["Bloodspattered Loincloth of the Bear"] = {
 			["H3212"] = 1800,
@@ -208,6 +224,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3212"] = 30000,
 			["cc"] = 7,
 			["id"] = "14048:0:0:0:0",
+<<<<<<< HEAD
+=======
+			["mr"] = 30000,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 			["sc"] = 0,
 			["mr"] = 30000,
 		},
@@ -239,6 +259,7 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 2,
 			["mr"] = 690,
 		},
+<<<<<<< HEAD
 		["Barbaric Cloth Cloak"] = {
 			["H3212"] = 200,
 			["cc"] = 4,
@@ -252,6 +273,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "4338:0:0:0:0",
 			["sc"] = 0,
 			["mr"] = 1500,
+=======
+		["Bloodspattered Loincloth of Power"] = {
+			["H3212"] = 899,
+			["cc"] = 4,
+			["id"] = "15493:0:0:1551:0",
+			["mr"] = 899,
+			["sc"] = 3,
+		},
+		["Linen Cloth"] = {
+			["H3212"] = 20,
+			["cc"] = 7,
+			["id"] = "2589:0:0:0:0",
+			["mr"] = 20,
+			["sc"] = 0,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 		},
 		["Bolt of Linen Cloth"] = {
 			["H3212"] = 55,
@@ -493,12 +529,18 @@ AUCTIONATOR_STACKING_PREFS = {
 		["stacksize"] = 10,
 		["numstacks"] = 0,
 	},
+<<<<<<< HEAD
 	["reef octopus"] = {
 		["stacksize"] = 10,
+=======
+	["exotic leather"] = {
+		["stacksize"] = 20,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 		["numstacks"] = 0,
 	},
 	["flask of the earth"] = {
 		["stacksize"] = 1,
+<<<<<<< HEAD
 		["numstacks"] = 0,
 	},
 	["magnificent hide"] = {
@@ -508,6 +550,16 @@ AUCTIONATOR_STACKING_PREFS = {
 	["*_herbs"] = {
 		["stacksize"] = 20,
 		["numstacks"] = -1,
+=======
+	},
+	["*_herbs"] = {
+		["numstacks"] = -1,
+		["stacksize"] = 20,
+	},
+	["reef octopus"] = {
+		["numstacks"] = 0,
+		["stacksize"] = 10,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 	},
 	["sha crystal"] = {
 		["stacksize"] = 1,
@@ -521,9 +573,15 @@ AUCTIONATOR_STACKING_PREFS = {
 		["stacksize"] = 10,
 		["numstacks"] = 0,
 	},
+<<<<<<< HEAD
 	["exotic leather"] = {
 		["numstacks"] = 0,
 		["stacksize"] = 20,
+=======
+	["magnificent hide"] = {
+		["stacksize"] = 1,
+		["numstacks"] = 0,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 	},
 	["volatile water"] = {
 		["numstacks"] = 0,

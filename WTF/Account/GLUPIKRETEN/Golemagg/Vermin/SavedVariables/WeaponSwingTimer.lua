@@ -23,7 +23,11 @@ character_player_settings = {
 	["main_b"] = 0.9,
 	["fill_empty"] = true,
 	["off_text_a"] = 1,
+<<<<<<< HEAD
 	["rel_point"] = "CENTER",
+=======
+	["main_g"] = 0.1,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 	["off_text_g"] = 1,
 	["off_b"] = 0.9,
 	["show_offhand"] = false,
@@ -58,7 +62,11 @@ character_target_settings = {
 	["main_b"] = 0.1,
 	["fill_empty"] = true,
 	["off_text_a"] = 1,
+<<<<<<< HEAD
 	["rel_point"] = "CENTER",
+=======
+	["main_g"] = 0.1,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 	["off_text_g"] = 1,
 	["off_b"] = 0.1,
 	["show_offhand"] = true,
@@ -76,16 +84,28 @@ character_hunter_settings = {
 	["rel_point"] = "CENTER",
 	["auto_cast_b"] = 0,
 	["show_border"] = true,
+<<<<<<< HEAD
 	["ooc_alpha"] = 0.25,
 	["clip_g"] = 0,
 	["show_text"] = true,
 	["backplane_alpha"] = 0.5,
 	["is_locked"] = true,
+=======
+	["clip_b"] = 0,
+	["clip_g"] = 0,
+	["show_text"] = true,
+	["in_combat_alpha"] = 1,
+	["show_multishot_clip_bar"] = false,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 	["cooldown_r"] = 0.95,
 	["auto_cast_a"] = 1,
 	["show_latency_bars"] = false,
 	["one_bar"] = false,
+<<<<<<< HEAD
 	["height"] = 12,
+=======
+	["clip_a"] = 0.7,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 	["auto_cast_g"] = 0,
 	["clip_r"] = 1,
 	["enabled"] = false,

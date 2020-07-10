@@ -309,7 +309,11 @@ MonkeyQuestConfig = {
 			["Deathknell - true"] = {
 				["m_bChecked"] = true,
 			},
+<<<<<<< HEAD
 			["Priest - true"] = {
+=======
+			["Rude Awakening - false"] = {
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 				["m_bChecked"] = true,
 			},
 			["Rattling the Rattlecages - false"] = {
@@ -377,6 +381,7 @@ MonkeyQuestConfig = {
 		["m_bAlwaysHeaders"] = false,
 		["m_bGrowUp"] = false,
 	},
+<<<<<<< HEAD
 	["Genesis|Handrmandr"] = {
 		["m_iFont"] = 0,
 		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
@@ -429,6 +434,13 @@ MonkeyQuestConfig = {
 		["m_bGrowUp"] = false,
 	},
 	["Genesis|Lonatz"] = {
+=======
+	["Stonespine|Elohssa"] = {
+		["m_aQuestList"] = {
+		},
+	},
+	["Dreadmist|Vermins"] = {
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 		["m_iFont"] = 0,
 		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
 		["m_strSpecialObjectiveColour"] = "|cFFFFFF00",
@@ -445,6 +457,7 @@ MonkeyQuestConfig = {
 		["m_bShowZoneHighlight"] = true,
 		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
 		["m_aQuestList"] = {
+<<<<<<< HEAD
 		},
 		["m_bDisplay"] = false,
 		["m_bMinimized"] = false,
@@ -486,6 +499,9 @@ MonkeyQuestConfig = {
 	["Golemagg|Vermin"] = {
 		["m_aQuestList"] = {
 			["Kolkar Leaders - false"] = {
+=======
+			["Durotar - true"] = {
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 				["m_bChecked"] = true,
 			},
 			["Thun'grim Firegaze - false"] = {
@@ -527,13 +543,20 @@ MonkeyQuestConfig = {
 			["Forged Steel - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Durotar - true"] = {
+			["Break a Few Eggs - false"] = {
 				["m_bChecked"] = true,
 			},
+<<<<<<< HEAD
 			["The Disruption Ends - false"] = {
 				["m_bChecked"] = true,
 			},
 			["The Demon Seed - false"] = {
+=======
+			["Encroachment - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Vanquish the Betrayers - false"] = {
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 				["m_bChecked"] = true,
 			},
 		},
@@ -608,7 +631,38 @@ MonkeyQuestConfig = {
 		["m_bAlwaysHeaders"] = false,
 		["m_bGrowUp"] = false,
 	},
+<<<<<<< HEAD
 	["Genesis|Pitchwise"] = {
+=======
+	["Golemagg|Judawise"] = {
+		["m_aQuestList"] = {
+		},
+	},
+	["Golemagg|Pitchwise"] = {
+		["m_aQuestList"] = {
+		},
+	},
+	["Dreadmist|Paydo"] = {
+		["m_aQuestList"] = {
+			["Cutting Teeth - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Vile Familiars - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Sarkoth - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Lazy Peons - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Valley of Trials - true"] = {
+				["m_bChecked"] = true,
+			},
+		},
+	},
+	["Genesis|Lonatz"] = {
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 		["m_iFont"] = 0,
 		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
 		["m_strSpecialObjectiveColour"] = "|cFFFFFF00",
@@ -659,6 +713,16 @@ MonkeyQuestConfig = {
 		["m_bAlwaysHeaders"] = false,
 		["m_bGrowUp"] = false,
 	},
+	["Golemagg|Mxzq"] = {
+		["m_aQuestList"] = {
+			["Your Place In The World - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Valley of Trials - true"] = {
+				["m_bChecked"] = true,
+			},
+		},
+	},
 	["Global"] = {
 		["m_bItemsEnabled"] = true,
 		["m_iFont"] = 0,
@@ -683,8 +747,13 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
+<<<<<<< HEAD
 		["m_iFrameBottom"] = 366.566436767578,
 		["m_bHideCompletedQuests"] = true,
+=======
+		["m_iFrameBottom"] = 364.066558837891,
+		["m_bHideTitleButtons"] = false,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 		["m_iFrameLeft"] = 1670.73352050781,
 		["m_bColourDoneOrFailed"] = true,
 		["m_bLocked"] = true,
@@ -712,7 +781,11 @@ MonkeyQuestConfig = {
 		["m_bHideTitleButtons"] = false,
 		["m_bGrowUp"] = false,
 	},
+<<<<<<< HEAD
 	["Genesis|Malinac"] = {
+=======
+	["Genesis|Pitchwise"] = {
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 		["m_iFont"] = 0,
 		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
 		["m_strSpecialObjectiveColour"] = "|cFFFFFF00",
@@ -736,8 +809,13 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 1,
 		["m_bShowQuestLevel"] = true,
 		["m_bShowDailyNumQuests"] = false,
+<<<<<<< HEAD
 		["m_iFrameBottom"] = 848.399881525947,
 		["m_iFrameLeft"] = 1425.90026473384,
+=======
+		["m_iFrameBottom"] = 968.233267779605,
+		["m_bAlwaysHeaders"] = false,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 		["m_bLocked"] = false,
 		["m_bNoBorder"] = true,
 		["m_bNoHeaders"] = false,
@@ -753,14 +831,18 @@ MonkeyQuestConfig = {
 		["m_iFrameWidth"] = 300,
 		["m_bHideTitleButtons"] = false,
 		["m_strHeaderOpenColour"] = "|cFFBFBFFF",
-		["m_iFrameTop"] = 887.399962154502,
+		["m_iFrameTop"] = 1007.39994628866,
 		["m_bObjectives"] = true,
 		["m_bHideHeader"] = false,
 		["m_bShowTooltipObjectives"] = true,
 		["m_bCrashBorder"] = false,
 		["m_bHideCompletedQuests"] = false,
 		["m_bHideTitle"] = false,
+<<<<<<< HEAD
 		["m_bAlwaysHeaders"] = false,
+=======
+		["m_iFrameLeft"] = 1639.23336755659,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 		["m_bGrowUp"] = false,
 	},
 	["Genesis|Nacova"] = {
@@ -992,14 +1074,41 @@ MonkeyQuestConfig = {
 				["m_bChecked"] = true,
 			},
 		},
+<<<<<<< HEAD
+=======
+	},
+	["Genesis|Malinac"] = {
+		["m_iFont"] = 0,
+		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
+		["m_strSpecialObjectiveColour"] = "|cFFFFFF00",
+		["m_iFrameAlpha"] = 1,
+		["m_bColourTitle"] = true,
+		["m_strAnchor"] = "ANCHOR_TOPLEFT",
+		["m_bAllowRightClick"] = true,
+		["m_strZoneHighlightColour"] = "|cff494961",
+		["m_strFinishObjectiveColour"] = "|cFF33DDFF",
+		["m_bShowHidden"] = true,
+		["m_bItemsOnLeft"] = true,
+		["m_bShowNoobTips"] = true,
+		["m_bHideCompletedObjectives"] = false,
+		["m_bShowZoneHighlight"] = true,
+		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
+		["m_aQuestList"] = {
+		},
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 		["m_bDisplay"] = false,
 		["m_bMinimized"] = false,
 		["m_strInitialObjectiveColour"] = "|cFFD82619",
 		["m_iHighlightAlpha"] = 1,
 		["m_bShowQuestLevel"] = true,
 		["m_bShowDailyNumQuests"] = false,
+<<<<<<< HEAD
 		["m_iFrameBottom"] = 823.399905256319,
 		["m_iFrameLeft"] = 1425.90026473384,
+=======
+		["m_iFrameBottom"] = 848.399881525947,
+		["m_bAlwaysHeaders"] = false,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 		["m_bLocked"] = false,
 		["m_bNoBorder"] = true,
 		["m_bNoHeaders"] = false,
@@ -1015,6 +1124,7 @@ MonkeyQuestConfig = {
 		["m_iFrameWidth"] = 300,
 		["m_bHideTitleButtons"] = false,
 		["m_strHeaderOpenColour"] = "|cFFBFBFFF",
+<<<<<<< HEAD
 		["m_iFrameTop"] = 862.399915856341,
 		["m_bObjectives"] = true,
 		["m_bHideHeader"] = false,
@@ -1023,16 +1133,40 @@ MonkeyQuestConfig = {
 		["m_bHideCompletedQuests"] = false,
 		["m_bHideTitle"] = true,
 		["m_bAlwaysHeaders"] = false,
+=======
+		["m_iFrameTop"] = 887.399962154502,
+		["m_bObjectives"] = true,
+		["m_bHideHeader"] = false,
+		["m_bShowNumQuests"] = true,
+		["m_iQuestPadding"] = 1,
+		["m_bColourSubObjectivesByProgress"] = true,
+		["m_bHideTitle"] = false,
+		["m_iFrameLeft"] = 1425.90026473384,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 		["m_bGrowUp"] = false,
 	},
 	["Golemagg|Greenwise"] = {
 		["m_aQuestList"] = {
+<<<<<<< HEAD
 			["Miner's Fortune - false"] = {
+=======
+			["Harpy Raiders - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Raptor Thieves - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Zhevra - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Stagnant Oasis - false"] = {
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 				["m_bChecked"] = true,
 			},
 			["Mura Runetotem - false"] = {
 				["m_bChecked"] = true,
 			},
+<<<<<<< HEAD
 			["Jorn Skyseer - false"] = {
 				["m_bChecked"] = true,
 			},
@@ -1052,11 +1186,21 @@ MonkeyQuestConfig = {
 				["m_bChecked"] = true,
 			},
 			["Wailing Caverns - true"] = {
+=======
+			["Warrior - true"] = {
+				["m_bChecked"] = true,
+			},
+			["The Disruption Ends - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Kolkar Leaders - false"] = {
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 				["m_bChecked"] = true,
 			},
 			["Ziz Fizziks - false"] = {
 				["m_bChecked"] = true,
 			},
+<<<<<<< HEAD
 			["Egg Hunt - false"] = {
 				["m_bChecked"] = true,
 			},
@@ -1067,16 +1211,32 @@ MonkeyQuestConfig = {
 				["m_bChecked"] = true,
 			},
 			["Letter to Jin'Zil - false"] = {
+=======
+			["Ragefire Chasm - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Wharfmaster Dizzywig - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Centaur Bracers - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Forged Steel - false"] = {
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 				["m_bChecked"] = true,
 			},
 			["Tribes at War - false"] = {
 				["m_bChecked"] = true,
 			},
+<<<<<<< HEAD
 		},
 	},
 	["Golemagg|Mxzq"] = {
 		["m_aQuestList"] = {
 			["Your Place In The World - false"] = {
+=======
+			["Supplies for the Crossroads - false"] = {
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 				["m_bChecked"] = true,
 			},
 			["Valley of Trials - true"] = {
@@ -1088,11 +1248,15 @@ MonkeyQuestConfig = {
 		["m_aQuestList"] = {
 		},
 	},
+<<<<<<< HEAD
 	["Golemagg|Judawise"] = {
 		["m_aQuestList"] = {
 		},
 	},
 	["Dreadmist|Vermins"] = {
+=======
+	["Genesis|Spija"] = {
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 		["m_iFont"] = 0,
 		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
 		["m_strSpecialObjectiveColour"] = "|cFFFFFF00",

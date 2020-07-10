@@ -113,7 +113,15 @@ Blizzard_CombatLog_Filters = {
 						["g"] = 0.7,
 						["r"] = 0.7,
 					},
+<<<<<<< HEAD
 					[32542] = {
+=======
+				},
+				["eventColoring"] = {
+				},
+				["defaults"] = {
+					["spell"] = {
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 						["a"] = 1,
 						["b"] = 1,
 						["g"] = 0.64,
@@ -126,6 +134,12 @@ Blizzard_CombatLog_Filters = {
 						["r"] = 0.75,
 					},
 				},
+<<<<<<< HEAD
+=======
+				["highlightedEvents"] = {
+					["PARTY_KILL"] = true,
+				},
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 			},
 			["settings"] = {
 				["abilityHighlighting"] = true,
@@ -153,10 +167,16 @@ Blizzard_CombatLog_Filters = {
 				["actionHighlighting"] = false,
 				["schoolNameActorColoring"] = false,
 				["schoolNameHighlighting"] = true,
+<<<<<<< HEAD
 				["unitBraces"] = true,
 				["noMeleeSwingColoring"] = false,
 				["unitIcons"] = true,
 				["hideDebuffs"] = false,
+=======
+				["hideBuffs"] = false,
+				["unitIcons"] = true,
+				["unitColoring"] = false,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 				["amountSchoolColoring"] = false,
 				["amountColoring"] = false,
 				["unitColoring"] = false,
@@ -356,7 +376,15 @@ Blizzard_CombatLog_Filters = {
 						["g"] = 0.7,
 						["r"] = 0.7,
 					},
+<<<<<<< HEAD
 					[32542] = {
+=======
+				},
+				["eventColoring"] = {
+				},
+				["defaults"] = {
+					["spell"] = {
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 						["a"] = 1,
 						["b"] = 1,
 						["g"] = 0.64,
@@ -369,6 +397,12 @@ Blizzard_CombatLog_Filters = {
 						["r"] = 0.75,
 					},
 				},
+<<<<<<< HEAD
+=======
+				["highlightedEvents"] = {
+					["PARTY_KILL"] = true,
+				},
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 			},
 			["settings"] = {
 				["abilityHighlighting"] = true,
@@ -396,10 +430,16 @@ Blizzard_CombatLog_Filters = {
 				["actionHighlighting"] = false,
 				["schoolNameActorColoring"] = false,
 				["schoolNameHighlighting"] = true,
+<<<<<<< HEAD
 				["unitBraces"] = true,
 				["noMeleeSwingColoring"] = false,
 				["unitIcons"] = true,
 				["hideDebuffs"] = false,
+=======
+				["hideBuffs"] = false,
+				["unitIcons"] = true,
+				["unitColoring"] = false,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 				["amountSchoolColoring"] = false,
 				["amountColoring"] = false,
 				["unitColoring"] = false,

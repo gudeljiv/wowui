@@ -57,7 +57,18 @@ Blizzard_CombatLog_Filters = {
 						["g"] = 1,
 						["b"] = 1,
 					},
+<<<<<<< HEAD
 					[64] = {
+=======
+				},
+				["highlightedEvents"] = {
+					["PARTY_KILL"] = true,
+				},
+				["eventColoring"] = {
+				},
+				["defaults"] = {
+					["damage"] = {
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 						["a"] = 1,
 						["r"] = 1,
 						["g"] = 0.5,
@@ -155,6 +166,7 @@ Blizzard_CombatLog_Filters = {
 				["actionHighlighting"] = false,
 				["braces"] = false,
 				["unitBraces"] = true,
+<<<<<<< HEAD
 				["schoolNameHighlighting"] = true,
 				["hideBuffs"] = false,
 				["unitIcons"] = true,
@@ -163,6 +175,15 @@ Blizzard_CombatLog_Filters = {
 				["amountColoring"] = false,
 				["hideDebuffs"] = false,
 				["noMeleeSwingColoring"] = false,
+=======
+				["noMeleeSwingColoring"] = false,
+				["hideBuffs"] = false,
+				["hideDebuffs"] = false,
+				["amountSchoolColoring"] = false,
+				["amountColoring"] = false,
+				["unitColoring"] = false,
+				["unitIcons"] = true,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 				["timestampFormat"] = "%H:%M:%S",
 				["schoolNameActorColoring"] = false,
 				["actionActorColoring"] = false,
@@ -300,7 +321,18 @@ Blizzard_CombatLog_Filters = {
 						["g"] = 1,
 						["b"] = 1,
 					},
+<<<<<<< HEAD
 					[64] = {
+=======
+				},
+				["highlightedEvents"] = {
+					["PARTY_KILL"] = true,
+				},
+				["eventColoring"] = {
+				},
+				["defaults"] = {
+					["damage"] = {
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 						["a"] = 1,
 						["r"] = 1,
 						["g"] = 0.5,
@@ -398,6 +430,7 @@ Blizzard_CombatLog_Filters = {
 				["actionHighlighting"] = false,
 				["braces"] = false,
 				["unitBraces"] = true,
+<<<<<<< HEAD
 				["schoolNameHighlighting"] = true,
 				["hideBuffs"] = false,
 				["unitIcons"] = true,
@@ -406,6 +439,15 @@ Blizzard_CombatLog_Filters = {
 				["amountColoring"] = false,
 				["hideDebuffs"] = false,
 				["noMeleeSwingColoring"] = false,
+=======
+				["noMeleeSwingColoring"] = false,
+				["hideBuffs"] = false,
+				["hideDebuffs"] = false,
+				["amountSchoolColoring"] = false,
+				["amountColoring"] = false,
+				["unitColoring"] = false,
+				["unitIcons"] = true,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 				["timestampFormat"] = "%H:%M:%S",
 				["schoolNameActorColoring"] = false,
 				["actionActorColoring"] = false,

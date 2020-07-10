@@ -264,11 +264,21 @@ NeatPlatesHubSettings = {
 		},
 		["OpacitySpotlightMouseover"] = false,
 		["ColorDangerGlowMode"] = 2,
+<<<<<<< HEAD
 		["ColorFriendlyPlayer"] = {
 			["a"] = 0.999997794628143,
 			["b"] = 0.999997794628143,
 			["g"] = 0,
 			["r"] = 0,
+=======
+		["WidgetRangeIndicator"] = false,
+		["AdvancedEnableUnitCache"] = true,
+		["TextColorElite"] = {
+			["a"] = 0.501959681510925,
+			["r"] = 0.901958823204041,
+			["g"] = 0.701959252357483,
+			["b"] = 0.301960110664368,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 		},
 		["AdvancedEnableUnitCache"] = true,
 		["ScaleIgnoreInactive"] = false,
@@ -369,8 +379,14 @@ NeatPlatesHubSettings = {
 			["g"] = 0,
 			["r"] = 0.999997794628143,
 		},
+<<<<<<< HEAD
 		["TextShowServerIndicator"] = true,
 		["UnitSpotlightScale"] = 1.4,
+=======
+		["HighlightFocusMode"] = 1,
+		["StatusTextCenter"] = 5,
+		["TextShowServerIndicator"] = true,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 		["TextColorHostilePlayer"] = {
 			["a"] = 0.999997794628143,
 			["b"] = 0.125489920377731,
@@ -379,10 +395,15 @@ NeatPlatesHubSettings = {
 		},
 		["WidgetAuraTrackPoison"] = true,
 		["StatusTextRightColor"] = true,
+<<<<<<< HEAD
 		["StatusTextCenter"] = 5,
 		["HighlightFocusMode"] = 1,
 		["StyleEnemyBarsOnPlayers"] = true,
 		["ColorSchoolArcane"] = {
+=======
+		["UnitSpotlightScale"] = 1.4,
+		["ColorHostilePlayer"] = {
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 			["a"] = 0.999997794628143,
 			["b"] = 0.999997794628143,
 			["g"] = 0.501959681510925,
@@ -437,6 +458,7 @@ NeatPlatesHubSettings = {
 			["r"] = 0.901958823204041,
 		},
 		["FriendlyAlphaSpotlightMode"] = "None",
+<<<<<<< HEAD
 		["TextColorElite"] = {
 			["a"] = 0.501959681510925,
 			["b"] = 0.301960110664368,
@@ -444,6 +466,15 @@ NeatPlatesHubSettings = {
 			["r"] = 0.901958823204041,
 		},
 		["WidgetRangeIndicator"] = false,
+=======
+		["ColorFriendlyPlayer"] = {
+			["a"] = 0.999997794628143,
+			["r"] = 0,
+			["g"] = 0,
+			["b"] = 0.999997794628143,
+		},
+		["ScaleIgnoreInactive"] = false,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 		["ColorPartyAggroGlow"] = true,
 		["ThreatGlowEnable"] = true,
 		["CustomFocusColor"] = false,

@@ -37,9 +37,15 @@ GMMONEY = {
 			["GOLD"] = 19010642,
 			["CLASS"] = "PALADIN",
 		},
+<<<<<<< HEAD
 		["Blooq"] = {
 			["GOLD"] = 10031,
 			["CLASS"] = "WARLOCK",
+=======
+		["Vermin"] = {
+			["GOLD"] = 90262,
+			["CLASS"] = "WARRIOR",
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 		},
 	},
 	["Dreadmist"] = {

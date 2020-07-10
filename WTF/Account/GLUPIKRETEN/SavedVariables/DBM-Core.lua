@@ -102,8 +102,13 @@ DBM_AllSavedOptions = {
 		},
 		["DontShowSpecialWarningText"] = false,
 		["DontShowPTText"] = false,
+<<<<<<< HEAD
 		["DisableCinematics"] = false,
 		["SpecialWarningFlashRepeat1"] = false,
+=======
+		["SWarnClassColor"] = true,
+		["HideTooltips"] = false,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 		["SpecialWarningFontSize2"] = 36,
 		["SpecialWarningFlashCol5"] = {
 			0.2, -- [1]
@@ -115,9 +120,19 @@ DBM_AllSavedOptions = {
 		["DontShowReminders"] = false,
 		["SpecialWarningSound5"] = "Interface\\AddOns\\DBM-Core\\sounds\\ClassicSupport\\LOA_NAXX_AGGRO02.ogg",
 		["SetCurrentMapOnPull"] = true,
+<<<<<<< HEAD
 		["FilterInterruptNoteName"] = false,
 		["AlwaysShowHealthFrame"] = false,
 		["DebugLevel"] = 1,
+=======
+		["SpecialWarningFlashAlph4"] = 0.4,
+		["AlwaysShowHealthFrame"] = false,
+		["SpecialWarningFlashCol4"] = {
+			1, -- [1]
+			0, -- [2]
+			1, -- [3]
+		},
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 		["ChallengeBest"] = "Realm",
 		["PTCountThreshold2"] = 5,
 		["FixCLEUOnCombatStart"] = false,
@@ -128,15 +143,26 @@ DBM_AllSavedOptions = {
 		["AutoAcceptGuildInvite"] = false,
 		["EnableWBSharing"] = false,
 		["ArrowPosX"] = 0,
+<<<<<<< HEAD
 		["HPFrameMaxEntries"] = 5,
+=======
+		["EventSoundVictory"] = "None",
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 		["AITimer"] = true,
 		["SpecialWarningFlashDura3"] = 1,
 		["MovieFilter"] = "Never",
 		["HPFramePoint"] = "RIGHT",
+<<<<<<< HEAD
 		["DontShowBossAnnounces"] = false,
 		["SpecialWarningSound4"] = "Interface\\AddOns\\DBM-Core\\sounds\\ClassicSupport\\HoodWolfTransformPlayer01.ogg",
 		["WarningX"] = 0,
 		["ShowGuildMessagesPlus"] = false,
+=======
+		["InfoFrameLines"] = 0,
+		["SpecialWarningSound4"] = "Interface\\AddOns\\DBM-Core\\sounds\\ClassicSupport\\HoodWolfTransformPlayer01.ogg",
+		["WarningX"] = 0,
+		["AutologBosses"] = false,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 		["DisableSFX"] = false,
 		["CountdownPullTimer"] = true,
 		["AprilFools"] = true,
@@ -182,16 +208,34 @@ DBM_AllSavedOptions = {
 		["WarningDuration2"] = 1.5,
 		["RangeFrameRadarPoint"] = "RIGHT",
 		["DontShowInfoFrame"] = false,
+<<<<<<< HEAD
 		["DontRestoreRange"] = false,
 		["ShowTranscriptorMessage"] = true,
 		["RangeFrameUpdates"] = "Average",
 		["AutoCorrectTimer"] = false,
 		["RoleSpecAlert"] = true,
 		["WarningY"] = 260,
+=======
+		["MovieFilter2"] = "OnlyFight",
+		["DontShowRangeFrame"] = false,
+		["RangeFrameRadarPoint"] = "RIGHT",
+		["SpecialWarningY"] = -195,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 		["CustomSounds"] = 0,
 		["RangeFrameLocked"] = false,
 		["SpecialWarningFlashRepeat3"] = true,
+<<<<<<< HEAD
 		["ShortTimerText"] = true,
+=======
+		["RangeFrameUpdates"] = "Average",
+		["AutoCorrectTimer"] = false,
+		["ShortTimerText"] = true,
+		["RaidWarningSound"] = 6674,
+		["DontRestoreRange"] = false,
+		["SpecialWarningDuration2"] = 1.5,
+		["ShowTranscriptorMessage"] = true,
+		["RoleSpecAlert"] = true,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 		["WhisperStats"] = true,
 		["VoiceOverSpecW2"] = "DefaultOnly",
 		["SpecialWarningFontColor"] = {
@@ -203,7 +247,11 @@ DBM_AllSavedOptions = {
 		["SpecialWarningFlashAlph5"] = 0.5,
 		["ShowKillMessage"] = true,
 		["HealthFrameWidth"] = 275,
+<<<<<<< HEAD
 		["RangeFrameSound1"] = "none",
+=======
+		["RangeFrameLocked"] = false,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 		["WarningIconLeft"] = true,
 		["ShowAdvSWSound"] = true,
 		["HPFrameY"] = 9.28495722690528,
@@ -220,12 +268,13 @@ DBM_AllSavedOptions = {
 		["DontSetIcons"] = false,
 		["BigBrotherAnnounceToRaid"] = false,
 		["UseRetailShamanColor"] = false,
-		["SpecialWarningFlashRepeat4"] = false,
+		["CountdownVoice"] = "Corsica",
 		["DontShowNameplateIcons"] = false,
 		["SpecialWarningFlashRepeat2"] = false,
 		["DontShowUserTimers"] = false,
 		["CountdownVoice3"] = "Smooth",
 		["SpecialWarningFlashRepeat5"] = true,
+<<<<<<< HEAD
 		["AutoRespond"] = true,
 		["HealthFrameGrowUp"] = false,
 		["SWarnNameInNote"] = true,
@@ -239,6 +288,21 @@ DBM_AllSavedOptions = {
 		["FilterTankSpec"] = true,
 		["DontShowRangeFrame"] = false,
 		["MovieFilter2"] = "OnlyFight",
+=======
+		["DisableStatusWhisper"] = false,
+		["EventDungMusicMythicFilter"] = true,
+		["SpecialWarningFlashRepeat4"] = false,
+		["HideBossEmoteFrame"] = false,
+		["DontPlayCountdowns"] = false,
+		["ShowBigBrotherOnCombatStart"] = false,
+		["SpecialWarningIcon"] = true,
+		["RangeFrameSound1"] = "none",
+		["SpecialWarningFlashAlph1"] = 0.3,
+		["ShowDefeatMessage"] = true,
+		["FilterTankSpec"] = true,
+		["WarningDuration2"] = 1.5,
+		["WarningY"] = 260,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 		["InfoFrameShowSelf"] = false,
 		["SpecialWarningFont"] = "Fonts\\FRIZQT__.TTF",
 		["FilterDispel"] = true,
@@ -249,8 +313,13 @@ DBM_AllSavedOptions = {
 		["RangeFrameRadarY"] = -235.833389282227,
 		["AutologBosses"] = false,
 		["WorldBossNearAlert"] = false,
+<<<<<<< HEAD
 		["InfoFrameLines"] = 0,
 		["EventSoundVictory"] = "None",
+=======
+		["HPFrameMaxEntries"] = 5,
+		["DontShowBossAnnounces"] = false,
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 		["SpecialWarningFlashRepeatAmount"] = 2,
 		["AutoAcceptFriendInvite"] = false,
 		["WarningIconChat"] = true,

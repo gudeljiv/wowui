@@ -1,5 +1,19 @@
 
 OmniCC4Config = {
+<<<<<<< HEAD
+=======
+	["engine"] = "AniUpdater",
+	["groups"] = {
+		{
+			["id"] = "Ignore",
+			["rules"] = {
+				"LossOfControl", -- [1]
+				"TotemFrame", -- [2]
+			},
+			["enabled"] = true,
+		}, -- [1]
+	},
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 	["version"] = "8.1.1",
 	["groupSettings"] = {
 		["base"] = {
@@ -116,6 +130,7 @@ OmniCC4Config = {
 			["scaleText"] = true,
 		},
 	},
+<<<<<<< HEAD
 	["groups"] = {
 		{
 			["id"] = "Ignore",
@@ -127,4 +142,6 @@ OmniCC4Config = {
 		}, -- [1]
 	},
 	["engine"] = "AniUpdater",
+=======
+>>>>>>> 6109de63c27b58790dec6c185c19907a53714c30
 }
