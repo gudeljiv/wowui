@@ -16,16 +16,12 @@ CUSTOM_FACTION_BAR_COLORS = {
 function GameTooltip_UnitColor(unit)
 	local r, g, b
 
-	if (InCombatLockdown()) then
-		break
-	end
-
 	if (UnitIsDead(unit) or UnitIsGhost(unit)) then
 		r = 0.5
 		g = 0.5
 		b = 0.5
 	elseif (UnitIsPlayer(unit)) then
-		if (UnitIsFriend(unit, "player")) then
+		if (UnitIsFriend(unit, "player") and not InCombatLockdown()) then
 			local _, class = UnitClass(unit)
 			r = RAID_CLASS_COLORS[class].r
 			g = RAID_CLASS_COLORS[class].g

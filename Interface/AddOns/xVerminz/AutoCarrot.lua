@@ -1,3 +1,5 @@
+local AutoCarrot_trinketId = nil
+
 local f = CreateFrame("Frame")
 f:SetScript(
 	"OnUpdate",
