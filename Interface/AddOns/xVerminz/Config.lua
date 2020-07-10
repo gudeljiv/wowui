@@ -1,4 +1,7 @@
-local _, xVerminz = ...
+local _, ns = ...
+
+ns.config = {}
+local config = ns.config
 
 config = {
 	font = {
