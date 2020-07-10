@@ -46,6 +46,6 @@
 -   [TomTom](https://www.wowinterface.com/downloads/info7032-TomTom.html)
 -   [UnitFramesImproved](https://www.wowisclassic.com/en/addons/unitframesimproved/)
 -   [WeaponSwingTimer](https://www.wowinterface.com/downloads/info25004-WeaponSwingTimer.html)
--   xVerminz (my set of scripts)
+-   xVermin (my set of scripts)
 
 ## Known issues
