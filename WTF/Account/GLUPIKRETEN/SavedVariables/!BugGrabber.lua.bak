@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 714,
 	["lastSanitation"] = 3,
+	["session"] = 715,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVerminz\\Experience.lua:7: bad argument #1 to 'select' (index out of range)",
@@ -276,62 +276,62 @@ BugGrabberDB = {
 		}, -- [34]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Questie\\Libs\\LibSharedMedia-3.0-8020003\\lib.xml",
-			["session"] = 685,
 			["time"] = "2020/07/09 17:00:48",
+			["session"] = 685,
 			["counter"] = 1,
 		}, -- [35]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Questie\\Libs\\AceGUI-3.0-41-SharedMediaWidgets\\widget.xml",
-			["session"] = 685,
 			["time"] = "2020/07/09 17:00:48",
+			["session"] = 685,
 			["counter"] = 1,
 		}, -- [36]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Questie\\Libs\\ZoneHelper\\ZoneHelper.xml",
-			["session"] = 685,
 			["time"] = "2020/07/09 17:00:48",
+			["session"] = 685,
 			["counter"] = 1,
 		}, -- [37]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Questie\\Locale\\enUS\\lookupZones.lua",
-			["session"] = 685,
 			["time"] = "2020/07/09 17:00:48",
+			["session"] = 685,
 			["counter"] = 1,
 		}, -- [38]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Questie\\Locale\\enUS\\lookupQuestCategory.lua",
-			["session"] = 685,
 			["time"] = "2020/07/09 17:00:48",
+			["session"] = 685,
 			["counter"] = 1,
 		}, -- [39]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Questie\\Locale\\esES\\lookupZones.lua",
-			["session"] = 685,
 			["time"] = "2020/07/09 17:00:48",
+			["session"] = 685,
 			["counter"] = 1,
 		}, -- [40]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Questie\\Locale\\esES\\lookupQuestCategory.lua",
-			["session"] = 685,
 			["time"] = "2020/07/09 17:00:48",
+			["session"] = 685,
 			["counter"] = 1,
 		}, -- [41]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Questie\\Locale\\deDE\\lookupZones.lua",
-			["session"] = 685,
 			["time"] = "2020/07/09 17:00:48",
+			["session"] = 685,
 			["counter"] = 1,
 		}, -- [42]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Questie\\Locale\\deDE\\lookupQuestCategory.lua",
-			["session"] = 685,
 			["time"] = "2020/07/09 17:00:48",
+			["session"] = 685,
 			["counter"] = 1,
 		}, -- [43]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Questie\\Locale\\zhCN\\lookupZones.lua",
-			["session"] = 685,
 			["time"] = "2020/07/09 17:00:48",
+			["session"] = 685,
 			["counter"] = 1,
 		}, -- [44]
 		{
@@ -560,8 +560,8 @@ BugGrabberDB = {
 		}, -- [72]
 		{
 			["message"] = "(null)",
-			["session"] = 708,
 			["time"] = "2019/10/23 13:37:53",
+			["session"] = 708,
 			["counter"] = 40,
 		}, -- [73]
 		{
@@ -577,8 +577,8 @@ BugGrabberDB = {
 			["time"] = "2020/07/07 16:56:37",
 			["locals"] = "(*temporary) = \"Button\"\n(*temporary) = \"NivayaSlot1\"\n(*temporary) = \"ItemButtonTemplate\"\n(*temporary) = \"ContainerFrameItemButtonTemplate\"\n",
 			["stack"] = "[C]: in function `CreateFrame'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: in function `Create'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:56: in function `New'\nInterface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:762: in function <Interface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:757>",
-			["session"] = 714,
-			["counter"] = 55,
+			["session"] = 715,
+			["counter"] = 56,
 		}, -- [75]
 	},
 }

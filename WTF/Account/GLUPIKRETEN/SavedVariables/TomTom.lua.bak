@@ -5,8 +5,8 @@ TomTomDB = {
 		["Mxyz - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Default",
 		["Verminz - Golemagg"] = "Default",
-		["Greenwise - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",
+		["Greenwise - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -52,8 +52,8 @@ TomTomWaypointsM = {
 		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
 		["Verminz - Golemagg"] = "Verminz - Golemagg",
-		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
 	},
 	["profiles"] = {
 		["Dotwise - Golemagg"] = {
@@ -64,9 +64,9 @@ TomTomWaypointsM = {
 		},
 		["Verminz - Golemagg"] = {
 		},
-		["Greenwise - Golemagg"] = {
-		},
 		["Vermin - Golemagg"] = {
+		},
+		["Greenwise - Golemagg"] = {
 		},
 	},
 }

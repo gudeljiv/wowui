@@ -2,13 +2,13 @@
 AUCTIONATOR_SAVEDVARS = {
 	["_50000"] = 500,
 	["_2000"] = 100,
+	["_200000"] = 1000,
+	["STARTING_DISCOUNT"] = 5,
+	["_1000000"] = 2500,
 	["_5000000"] = 10000,
 	["LOG_DE_DATA_X"] = true,
-	["_1000000"] = 2500,
-	["_10000"] = 200,
 	["_500"] = 5,
-	["STARTING_DISCOUNT"] = 5,
-	["_200000"] = 1000,
+	["_10000"] = 200,
 }
 AUCTIONATOR_PRICING_HISTORY = {
 }
@@ -83,217 +83,217 @@ AUCTIONATOR_SHOPPING_LISTS = {
 AUCTIONATOR_SHOPPING_LISTS_MIGRATED_V2 = true
 AUCTIONATOR_PRICE_DATABASE = {
 	["Dreadmist_Horde"] = {
-		["Bloodspattered Loincloth of the Whale"] = {
-			["H3212"] = 3000,
-			["cc"] = 4,
-			["id"] = "15493:0:0:1015:0",
-			["mr"] = 3000,
-			["sc"] = 3,
-		},
 		["Aboriginal Loincloth of the Whale"] = {
 			["H3212"] = 799,
 			["cc"] = 4,
 			["id"] = "14119:0:0:1015:0",
-			["mr"] = 799,
 			["sc"] = 1,
+			["mr"] = 799,
+		},
+		["Bloodspattered Loincloth of the Whale"] = {
+			["H3212"] = 3000,
+			["cc"] = 4,
+			["id"] = "15493:0:0:1015:0",
+			["sc"] = 3,
+			["mr"] = 3000,
 		},
 		["Bloodspattered Loincloth of the Boar"] = {
 			["H3212"] = 1000,
 			["cc"] = 4,
 			["id"] = "15493:0:0:1098:0",
-			["mr"] = 1000,
 			["sc"] = 3,
+			["mr"] = 1000,
+		},
+		["Sage's Cloth of Intellect"] = {
+			["H3212"] = 13085,
+			["cc"] = 4,
+			["id"] = "6609:0:0:178:0",
+			["sc"] = 1,
+			["mr"] = 13085,
+		},
+		["Silk Cloth"] = {
+			["H3212"] = 243,
+			["cc"] = 7,
+			["id"] = "4306:0:0:0:0",
+			["sc"] = 0,
+			["mr"] = 243,
 		},
 		["Wool Cloth"] = {
 			["H3212"] = 177,
 			["cc"] = 7,
 			["id"] = "2592:0:0:0:0",
+			["sc"] = 0,
 			["mr"] = 177,
-			["sc"] = 0,
 		},
-		["Barbaric Loincloth"] = {
-			["H3212"] = 400,
+		["Barbaric Cloth Vest"] = {
+			["H3212"] = 900,
 			["cc"] = 4,
-			["id"] = "3309:0:0:0:0",
-			["mr"] = 400,
+			["id"] = "3310:0:0:0:0",
 			["sc"] = 1,
-		},
-		["Bolt of Silk Cloth"] = {
-			["H3212"] = 2100,
-			["cc"] = 7,
-			["id"] = "4305:0:0:0:0",
-			["mr"] = 2100,
-			["sc"] = 0,
-		},
-		["Ivycloth Gloves of the Owl"] = {
-			["H3212"] = 4000,
-			["cc"] = 4,
-			["id"] = "9795:0:0:765:0",
-			["mr"] = 4000,
-			["sc"] = 1,
+			["mr"] = 900,
 		},
 		["Aboriginal Loincloth of Healing"] = {
 			["H3212"] = 795,
 			["cc"] = 4,
 			["id"] = "14119:0:0:2031:0",
-			["mr"] = 795,
 			["sc"] = 1,
+			["mr"] = 795,
 		},
-		["Bloodspattered Loincloth of the Eagle"] = {
-			["H3212"] = 1999,
+		["Ivycloth Gloves of the Eagle"] = {
+			["H3212"] = 16500,
 			["cc"] = 4,
-			["id"] = "15493:0:0:843:0",
-			["mr"] = 1999,
-			["sc"] = 3,
+			["id"] = "9795:0:0:850:0",
+			["sc"] = 1,
+			["mr"] = 16500,
 		},
 		["Ivycloth Boots of the Whale"] = {
 			["H3212"] = 7011,
 			["cc"] = 4,
 			["id"] = "9792:0:0:1019:0",
 			["L3212"] = 6999,
+			["sc"] = 1,
 			["mr"] = 6999,
-			["sc"] = 1,
 		},
-		["Ivycloth Gloves of the Eagle"] = {
-			["H3212"] = 16500,
+		["Bloodspattered Loincloth of the Eagle"] = {
+			["H3212"] = 1999,
 			["cc"] = 4,
-			["id"] = "9795:0:0:850:0",
-			["mr"] = 16500,
-			["sc"] = 1,
+			["id"] = "15493:0:0:843:0",
+			["sc"] = 3,
+			["mr"] = 1999,
 		},
 		["Bolt of Woolen Cloth"] = {
 			["H3212"] = 699,
 			["cc"] = 7,
 			["id"] = "2997:0:0:0:0",
+			["sc"] = 0,
 			["mr"] = 699,
-			["sc"] = 0,
 		},
-		["Mageweave Cloth"] = {
-			["H3212"] = 1500,
+		["Linen Cloth"] = {
+			["H3212"] = 20,
 			["cc"] = 7,
-			["id"] = "4338:0:0:0:0",
-			["mr"] = 1500,
+			["id"] = "2589:0:0:0:0",
 			["sc"] = 0,
+			["mr"] = 20,
 		},
 		["Aboriginal Loincloth of the Owl"] = {
 			["H3212"] = 900,
 			["cc"] = 4,
 			["id"] = "14119:0:0:760:0",
-			["mr"] = 900,
 			["sc"] = 1,
+			["mr"] = 900,
 		},
 		["Bloodspattered Loincloth of the Bear"] = {
 			["H3212"] = 1800,
 			["cc"] = 4,
 			["id"] = "15493:0:0:1185:0",
 			["L3212"] = 1000,
-			["mr"] = 1000,
 			["sc"] = 3,
+			["mr"] = 1000,
 		},
 		["Aboriginal Loincloth of Fiery Wrath"] = {
 			["H3212"] = 600,
 			["cc"] = 4,
 			["id"] = "14119:0:0:1878:0",
-			["mr"] = 600,
 			["sc"] = 1,
+			["mr"] = 600,
 		},
 		["Aboriginal Loincloth of Spirit"] = {
 			["H3212"] = 4595,
 			["cc"] = 4,
 			["id"] = "14119:0:0:95:0",
+			["sc"] = 1,
 			["mr"] = 4595,
-			["sc"] = 1,
 		},
-		["Bolt of Runecloth"] = {
-			["H3212"] = 30000,
+		["Mageweave Cloth"] = {
+			["H3212"] = 1500,
 			["cc"] = 7,
-			["id"] = "14048:0:0:0:0",
-			["mr"] = 30000,
+			["id"] = "4338:0:0:0:0",
 			["sc"] = 0,
-		},
-		["Barbaric Cloth Cloak"] = {
-			["H3212"] = 200,
-			["cc"] = 4,
-			["id"] = "4686:0:0:0:0",
-			["mr"] = 200,
-			["sc"] = 1,
-		},
-		["Barbaric Cloth Robe"] = {
-			["H3212"] = 981,
-			["cc"] = 4,
-			["id"] = "6531:0:0:0:0",
-			["mr"] = 981,
-			["sc"] = 1,
-		},
-		["Barbaric Cloth Gloves"] = {
-			["H3212"] = 593,
-			["cc"] = 4,
-			["id"] = "3308:0:0:0:0",
-			["mr"] = 593,
-			["sc"] = 1,
-		},
-		["Ceremonial Leather Loincloth"] = {
-			["H3212"] = 690,
-			["cc"] = 4,
-			["id"] = "3315:0:0:0:0",
-			["mr"] = 690,
-			["sc"] = 2,
+			["mr"] = 1500,
 		},
 		["Bloodspattered Loincloth of Power"] = {
 			["H3212"] = 899,
 			["cc"] = 4,
 			["id"] = "15493:0:0:1551:0",
-			["mr"] = 899,
 			["sc"] = 3,
+			["mr"] = 899,
 		},
-		["Linen Cloth"] = {
-			["H3212"] = 20,
+		["Barbaric Cloth Robe"] = {
+			["H3212"] = 981,
+			["cc"] = 4,
+			["id"] = "6531:0:0:0:0",
+			["sc"] = 1,
+			["mr"] = 981,
+		},
+		["Barbaric Cloth Gloves"] = {
+			["H3212"] = 593,
+			["cc"] = 4,
+			["id"] = "3308:0:0:0:0",
+			["sc"] = 1,
+			["mr"] = 593,
+		},
+		["Ceremonial Leather Loincloth"] = {
+			["H3212"] = 690,
+			["cc"] = 4,
+			["id"] = "3315:0:0:0:0",
+			["sc"] = 2,
+			["mr"] = 690,
+		},
+		["Barbaric Cloth Cloak"] = {
+			["H3212"] = 200,
+			["cc"] = 4,
+			["id"] = "4686:0:0:0:0",
+			["sc"] = 1,
+			["mr"] = 200,
+		},
+		["Bolt of Runecloth"] = {
+			["H3212"] = 30000,
 			["cc"] = 7,
-			["id"] = "2589:0:0:0:0",
-			["mr"] = 20,
+			["id"] = "14048:0:0:0:0",
 			["sc"] = 0,
+			["mr"] = 30000,
 		},
 		["Bolt of Linen Cloth"] = {
 			["H3212"] = 55,
 			["cc"] = 7,
 			["id"] = "2996:0:0:0:0",
-			["mr"] = 55,
 			["sc"] = 0,
+			["mr"] = 55,
 		},
 		["Barbaric Cloth Boots"] = {
 			["H3212"] = 899,
 			["cc"] = 4,
 			["id"] = "3307:0:0:0:0",
+			["sc"] = 1,
 			["mr"] = 899,
-			["sc"] = 1,
 		},
-		["Barbaric Cloth Vest"] = {
-			["H3212"] = 900,
+		["Ivycloth Gloves of the Owl"] = {
+			["H3212"] = 4000,
 			["cc"] = 4,
-			["id"] = "3310:0:0:0:0",
-			["mr"] = 900,
+			["id"] = "9795:0:0:765:0",
 			["sc"] = 1,
+			["mr"] = 4000,
 		},
-		["Silk Cloth"] = {
-			["H3212"] = 243,
+		["Bolt of Silk Cloth"] = {
+			["H3212"] = 2100,
 			["cc"] = 7,
-			["id"] = "4306:0:0:0:0",
-			["mr"] = 243,
+			["id"] = "4305:0:0:0:0",
 			["sc"] = 0,
+			["mr"] = 2100,
 		},
-		["Sage's Cloth of Intellect"] = {
-			["H3212"] = 13085,
+		["Barbaric Loincloth"] = {
+			["H3212"] = 400,
 			["cc"] = 4,
-			["id"] = "6609:0:0:178:0",
-			["mr"] = 13085,
+			["id"] = "3309:0:0:0:0",
 			["sc"] = 1,
+			["mr"] = 400,
 		},
 		["Bloodspattered Loincloth of the Tiger"] = {
 			["H3212"] = 2200,
 			["cc"] = 4,
 			["id"] = "15493:0:0:673:0",
-			["mr"] = 2200,
 			["sc"] = 3,
+			["mr"] = 2200,
 		},
 	},
 	["Golemagg_Horde"] = {
@@ -302,6 +302,7 @@ AUCTIONATOR_PRICE_DATABASE = {
 	},
 	["Stonespine_Horde"] = {
 	},
+	["__dbversion"] = 4,
 	["Genesis_Alliance"] = {
 		["Blessed Trillium Belt"] = {
 			["mr"] = 580000000,
@@ -367,34 +368,33 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 5,
 		},
 	},
-	["__dbversion"] = 4,
 }
 AUCTIONATOR_LAST_SCAN_TIME = 1568804292
 AUCTIONATOR_TOONS = {
 	["Ozrencic"] = {
 		["firstSeen"] = 1568647380,
-		["guid"] = "Player-4465-010E410D",
 		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4465-010E410D",
 	},
 	["Judawise"] = {
 		["firstSeen"] = 1569271224,
-		["guid"] = "Player-4465-01265A42",
 		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4465-01265A42",
 	},
 	["Elohssa"] = {
 		["firstSeen"] = 1569350072,
-		["firstVersion"] = "8.1.0",
 		["guid"] = "Player-4705-01DEED9F",
+		["firstVersion"] = "8.1.0",
 	},
 	["Vermins"] = {
 		["firstSeen"] = 1567092304,
-		["guid"] = "Player-4755-0179495D",
 		["firstVersion"] = "3.1.5",
+		["guid"] = "Player-4755-0179495D",
 	},
 	["Kosturko"] = {
 		["firstSeen"] = 1568649132,
-		["guid"] = "Player-4465-010B6DA9",
 		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4465-010B6DA9",
 	},
 	["Mulatz"] = {
 		["firstSeen"] = 1489842994,
@@ -402,23 +402,23 @@ AUCTIONATOR_TOONS = {
 	},
 	["Verminz"] = {
 		["firstSeen"] = 1489842912,
-		["guid"] = "Player-4465-010B6E50",
 		["firstVersion"] = "3.1.5",
+		["guid"] = "Player-4465-010B6E50",
 	},
 	["Pepecocorita"] = {
 		["firstSeen"] = 1490213073,
-		["firstVersion"] = "3.1.5",
 		["guid"] = "0x000000000041E45E",
+		["firstVersion"] = "3.1.5",
 	},
 	["Dotwise"] = {
 		["firstSeen"] = 1569271012,
-		["firstVersion"] = "8.1.0",
 		["guid"] = "Player-4465-01265908",
+		["firstVersion"] = "8.1.0",
 	},
 	["Greenwise"] = {
 		["firstSeen"] = 1569270467,
-		["firstVersion"] = "8.1.0",
 		["guid"] = "Player-4465-012659A9",
+		["firstVersion"] = "8.1.0",
 	},
 	["Blooq"] = {
 		["firstSeen"] = 1490547957,
@@ -434,100 +434,100 @@ AUCTIONATOR_TOONS = {
 	},
 	["Mxyz"] = {
 		["firstSeen"] = 1594141872,
-		["guid"] = "Player-4465-01C75D20",
 		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4465-01C75D20",
 	},
 	["Whatevs"] = {
 		["firstSeen"] = 1569353712,
+		["firstVersion"] = "8.1.0",
 		["guid"] = "Player-4705-01DF116D",
-		["firstVersion"] = "8.1.0",
-	},
-	["Korupcija"] = {
-		["firstSeen"] = 1492506222,
-		["guid"] = "Player-4705-01D8B1DB",
-		["firstVersion"] = "3.1.5",
-	},
-	["Pitchwise"] = {
-		["firstSeen"] = 1492678555,
-		["guid"] = "Player-4465-010B6E73",
-		["firstVersion"] = "3.1.5",
-	},
-	["Spija"] = {
-		["firstSeen"] = 1491077146,
-		["firstVersion"] = "3.1.5",
-	},
-	["Gheylord"] = {
-		["firstSeen"] = 1567278903,
-		["firstVersion"] = "8.1.0",
-		["guid"] = "Player-4755-018C0F1B",
 	},
 	["Konza"] = {
 		["firstSeen"] = 1490043156,
 		["firstVersion"] = "3.1.5",
 	},
+	["Gheylord"] = {
+		["firstSeen"] = 1567278903,
+		["guid"] = "Player-4755-018C0F1B",
+		["firstVersion"] = "8.1.0",
+	},
+	["Spija"] = {
+		["firstSeen"] = 1491077146,
+		["firstVersion"] = "3.1.5",
+	},
+	["Pitchwise"] = {
+		["firstSeen"] = 1492678555,
+		["firstVersion"] = "3.1.5",
+		["guid"] = "Player-4465-010B6E73",
+	},
+	["Korupcija"] = {
+		["firstSeen"] = 1492506222,
+		["firstVersion"] = "3.1.5",
+		["guid"] = "Player-4705-01D8B1DB",
+	},
 	["Paydo"] = {
 		["firstSeen"] = 1568042552,
-		["guid"] = "Player-4755-01B83D7E",
 		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4755-01B83D7E",
 	},
 	["Vermin"] = {
 		["firstSeen"] = 1567291895,
-		["firstVersion"] = "8.1.0",
 		["guid"] = "Player-4465-00E5831F",
+		["firstVersion"] = "8.1.0",
 	},
 }
 AUCTIONATOR_STACKING_PREFS = {
 	["essence of fire"] = {
-		["stacksize"] = 1,
 		["numstacks"] = 0,
+		["stacksize"] = 1,
 	},
 	["spirit of war"] = {
+		["numstacks"] = 0,
+		["stacksize"] = 1,
+	},
+	["netherweave cloth"] = {
+		["numstacks"] = -1,
+		["stacksize"] = 20,
+	},
+	["wool cloth"] = {
+		["stacksize"] = 10,
+		["numstacks"] = 0,
+	},
+	["magnificent hide"] = {
+		["numstacks"] = 0,
+		["stacksize"] = 1,
+	},
+	["flask of the earth"] = {
 		["stacksize"] = 1,
 		["numstacks"] = 0,
 	},
-	["netherweave cloth"] = {
+	["reef octopus"] = {
+		["stacksize"] = 10,
+		["numstacks"] = 0,
+	},
+	["exotic leather"] = {
+		["numstacks"] = 0,
+		["stacksize"] = 20,
+	},
+	["sha crystal"] = {
+		["stacksize"] = 1,
+		["numstacks"] = 0,
+	},
+	["haunting spirit"] = {
+		["stacksize"] = 1,
+		["numstacks"] = 0,
+	},
+	["volatile life"] = {
+		["stacksize"] = 10,
+		["numstacks"] = 0,
+	},
+	["*_herbs"] = {
 		["stacksize"] = 20,
 		["numstacks"] = -1,
 	},
 	["volatile water"] = {
+		["numstacks"] = 0,
 		["stacksize"] = 20,
-		["numstacks"] = 0,
-	},
-	["exotic leather"] = {
-		["stacksize"] = 20,
-		["numstacks"] = 0,
-	},
-	["flask of the earth"] = {
-		["numstacks"] = 0,
-		["stacksize"] = 1,
-	},
-	["*_herbs"] = {
-		["numstacks"] = -1,
-		["stacksize"] = 20,
-	},
-	["reef octopus"] = {
-		["numstacks"] = 0,
-		["stacksize"] = 10,
-	},
-	["sha crystal"] = {
-		["numstacks"] = 0,
-		["stacksize"] = 1,
-	},
-	["haunting spirit"] = {
-		["numstacks"] = 0,
-		["stacksize"] = 1,
-	},
-	["volatile life"] = {
-		["numstacks"] = 0,
-		["stacksize"] = 10,
-	},
-	["magnificent hide"] = {
-		["stacksize"] = 1,
-		["numstacks"] = 0,
-	},
-	["wool cloth"] = {
-		["numstacks"] = 0,
-		["stacksize"] = 10,
 	},
 }
 AUCTIONATOR_SCAN_MINLEVEL = 1
