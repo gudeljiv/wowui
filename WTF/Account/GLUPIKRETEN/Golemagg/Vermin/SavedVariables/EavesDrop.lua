@@ -3056,8 +3056,8 @@ EavesDropStatsDB = {
 							["amount"] = 46,
 						},
 						[2] = {
-							["time"] = "|cffffffff07/08/20 07:32:40|r\n|Hunit:Player-4465-00E5831F:Vermin|hVermin's|h melee swing hits |Hunit:Creature-0-4447-1-291-3129-00000601AD:Kul Tiras Marine|hKul Tiras Marine|h for |cffffffff10|r |cffffffffPhysical|r.(70 Overkill) (Critical)",
-							["amount"] = 80,
+							["time"] = "|cffffffff07/11/20 11:57:49|r\n|Hunit:Player-4465-00E5831F:Vermin|hVermin's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4447-1-306-3242-0000898855:Zhevra Runner|hZhevra Runner|h for |cffffffff81|r |cffffffffPhysical|r.(Critical)",
+							["amount"] = 81,
 						},
 					},
 					["Rend"] = {
@@ -3068,6 +3068,15 @@ EavesDropStatsDB = {
 						[2] = {
 						},
 						["icon"] = 132155,
+					},
+					["Overpower"] = {
+						[-2] = {
+							["time"] = "|cffffffff07/11/20 11:59:51|r\n|Hunit:Player-4465-00E5831F:Vermin|hVermin's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffOverpower|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4447-1-306-3242-00000967B6:Zhevra Runner|hZhevra Runner|h for |cffffffff5|r |cffffffffPhysical|r.(40 Overkill)",
+							["amount"] = 45,
+						},
+						[2] = {
+						},
+						["icon"] = 132223,
 					},
 					["Heroic Strike"] = {
 						[-2] = {
@@ -3118,8 +3127,8 @@ EavesDropStatsDB = {
 							["amount"] = 124,
 						},
 						[2] = {
-							["time"] = "|cffffffff07/10/20 06:31:29|r\n|Hicon:128:source|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4447-1-86-3255-0000087EBE:Sunscale Screecher|hSunscale Screecher's|h melee swing hits |Hunit:Player-4465-00E5831F:Vermin|hVermin|h for |cffff131338|r |cffff1313Physical|r.(Critical)",
-							["amount"] = 38,
+							["time"] = "|cffffffff07/11/20 12:02:02|r\n|Hicon:128:source|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4447-1-306-3242-0000098D57:Zhevra Runner|hZhevra Runner's|h melee swing hits |Hunit:Player-4465-00E5831F:Vermin|hVermin|h for |cffff131341|r |cffff1313Physical|r.(Critical)",
+							["amount"] = 41,
 						},
 					},
 					["Fire"] = {

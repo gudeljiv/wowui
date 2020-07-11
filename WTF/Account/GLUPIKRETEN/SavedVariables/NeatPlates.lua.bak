@@ -1287,7 +1287,8 @@ NeatPlatesSpellDB = {
 		["Arcane Missiles"] = {
 			["castTime"] = 389129,
 		},
-		["Righteous Fury"] = {
+		["Hibernate"] = {
+			["castTime"] = 1501,
 		},
 		["White Linen Shirt"] = {
 			["castTime"] = 4671,
@@ -1303,8 +1304,7 @@ NeatPlatesSpellDB = {
 		},
 		["Fel Stamina"] = {
 		},
-		["Light Leather Bracers"] = {
-			["castTime"] = 3469.00000011921,
+		["Righteous Fury"] = {
 		},
 		["Whirring Bronze Gizmo"] = {
 			["castTime"] = 3069,
@@ -1321,8 +1321,8 @@ NeatPlatesSpellDB = {
 		["Soothing Turtle Bisque"] = {
 			["castTime"] = 3003.00000011921,
 		},
-		["Linen Boots"] = {
-			["castTime"] = 4988,
+		["Light Leather Bracers"] = {
+			["castTime"] = 3469.00000011921,
 		},
 		["Cured Rugged Hide"] = {
 			["castTime"] = 4921,
@@ -1351,8 +1351,7 @@ NeatPlatesSpellDB = {
 		},
 		["Redoubt"] = {
 		},
-		["Hibernate"] = {
-			["castTime"] = 1501,
+		["Detect Greater Invisibility"] = {
 		},
 		["Pirate Costume"] = {
 		},
@@ -1797,7 +1796,7 @@ NeatPlatesSpellDB = {
 			["castTime"] = 4988,
 		},
 		["Hearthstone"] = {
-			["castTime"] = 9991,
+			["castTime"] = 10018,
 		},
 		["Ice Barrier"] = {
 		},
@@ -2206,7 +2205,8 @@ NeatPlatesSpellDB = {
 		},
 		["Sense Demons"] = {
 		},
-		["Detect Greater Invisibility"] = {
+		["Linen Boots"] = {
+			["castTime"] = 4988,
 		},
 		["Aquatic Form"] = {
 		},

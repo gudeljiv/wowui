@@ -596,7 +596,7 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 401.066528320313,
+		["m_iFrameBottom"] = 448.399841308594,
 		["m_bHideTitleButtons"] = false,
 		["m_iFrameLeft"] = 1670.73352050781,
 		["m_bColourDoneOrFailed"] = true,
@@ -1060,6 +1060,9 @@ MonkeyQuestConfig = {
 				["m_bChecked"] = true,
 			},
 			["The Stagnant Oasis - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Prowlers of the Barrens - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Slaying the Beast - false"] = {

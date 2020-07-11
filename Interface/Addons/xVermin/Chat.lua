@@ -232,7 +232,9 @@ chat:SetScript(
 )
 chat:RegisterEvent("PLAYER_LOGIN")
 
+
 local function SetChatChannels()
+	
 	ChatFrame_RemoveChannel(ChatFrame1, "LookingForGroup")
 	ChatFrame_RemoveChannel(ChatFrame1, "LocalDefense")
 	ChatFrame_RemoveChannel(ChatFrame1, "WorldDefense")
@@ -241,10 +243,21 @@ local function SetChatChannels()
 	ChatFrame_RemoveAllChannels(ChatFrame4)
 	ChatFrame_RemoveAllChannels(ChatFrame5)
 
+	JoinChannelByName("LookingForGroup")
+	JoinChannelByName("LocalDefense")
+	JoinChannelByName("WorldDefense")
+
 	ChatFrame_AddChannel(ChatFrame4, "LookingForGroup")
 	ChatFrame_AddChannel(ChatFrame5, "LocalDefense")
 	ChatFrame_AddChannel(ChatFrame5, "WorldDefense")
+
 end
+
+local f = CreateFrame("Frame")
+f:SetScript("OnEvent",SetChatChannels)
+f:RegisterEvent("PLAYER_ENTERING_WORLD")
+f:RegisterEvent("ZONE_CHANGED")
+f:RegisterEvent("CHAT_MSG_CHANNEL_NOTICE")
 
 SLASH_SETCHANNELS1 = "/fc"
 SlashCmdList["SETCHANNELS"] = SetChatChannels
@@ -259,8 +272,6 @@ hooksecurefunc(
 		else
 			self:GetFontString():SetTextColor(1, 1, 1)
 		end
-
-		-- SetChatChannels()
 	end
 )
 

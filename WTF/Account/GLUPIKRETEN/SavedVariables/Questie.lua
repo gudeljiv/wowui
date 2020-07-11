@@ -2886,6 +2886,8 @@ QuestieConfig = {
 				[835] = true,
 				[837] = true,
 				[6394] = true,
+				[1503] = true,
+				[845] = true,
 				[784] = true,
 				[6386] = true,
 				[788] = true,
@@ -3716,6 +3718,27 @@ QuestieConfig = {
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
 				}, -- [117]
+				{
+					["Timestamp"] = 1594460854,
+					["Quest"] = 1503,
+					["Level"] = 13,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+				}, -- [118]
+				{
+					["Timestamp"] = 1594461779,
+					["Quest"] = 845,
+					["Level"] = 13,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+				}, -- [119]
+				{
+					["Timestamp"] = 1594461780,
+					["Quest"] = 903,
+					["Level"] = 13,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+				}, -- [120]
 			},
 		},
 		["Verminz - Golemagg"] = {

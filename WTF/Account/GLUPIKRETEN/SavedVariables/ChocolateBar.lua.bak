@@ -252,14 +252,14 @@ ChocolateBarDB = {
 					["customLabel"] = "B",
 				},
 			},
-			["gap"] = 5,
 			["fontName"] = "Friz Quadrata TT",
+			["desaturated"] = false,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
 			["forceColor"] = false,
-			["desaturated"] = false,
+			["gap"] = 5,
 			["textOffset"] = 2,
 			["height"] = 20,
 			["fixedStrata"] = true,
@@ -296,7 +296,7 @@ CB_PlayedTime = {
 		["total"] = 390,
 	},
 	["Vermin-"] = {
-		["total"] = 46663,
+		["total"] = 49369,
 	},
 	["Ozrencic-"] = {
 		["total"] = 853,

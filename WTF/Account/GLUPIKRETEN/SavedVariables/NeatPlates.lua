@@ -1287,8 +1287,7 @@ NeatPlatesSpellDB = {
 		["Arcane Missiles"] = {
 			["castTime"] = 389129,
 		},
-		["Light Leather Bracers"] = {
-			["castTime"] = 3469.00000011921,
+		["Righteous Fury"] = {
 		},
 		["Intercept"] = {
 		},
@@ -1306,8 +1305,8 @@ NeatPlatesSpellDB = {
 		["Green Tinted Goggles"] = {
 			["castTime"] = 4976,
 		},
-		["Linen Boots"] = {
-			["castTime"] = 4988,
+		["Light Leather Bracers"] = {
+			["castTime"] = 3469.00000011921,
 		},
 		["Whirring Bronze Gizmo"] = {
 			["castTime"] = 3069,
@@ -1331,7 +1330,8 @@ NeatPlatesSpellDB = {
 		["Thick Leather Ammo Pouch"] = {
 			["castTime"] = 10008,
 		},
-		["Detect Greater Invisibility"] = {
+		["Linen Boots"] = {
+			["castTime"] = 4988,
 		},
 		["Soothing Turtle Bisque"] = {
 			["castTime"] = 3003.00000011921,
@@ -1352,7 +1352,8 @@ NeatPlatesSpellDB = {
 		},
 		["Yaaarrrr"] = {
 		},
-		["Righteous Fury"] = {
+		["Hibernate"] = {
+			["castTime"] = 1501,
 		},
 		["Pirate Costume"] = {
 		},
@@ -2040,7 +2041,7 @@ NeatPlatesSpellDB = {
 		["Impact"] = {
 		},
 		["Hearthstone"] = {
-			["castTime"] = 9991,
+			["castTime"] = 10018,
 		},
 		["Blue Linen Vest"] = {
 			["castTime"] = 9232,
@@ -2209,8 +2210,7 @@ NeatPlatesSpellDB = {
 		["Spidersilk Boots"] = {
 			["castTime"] = 28507,
 		},
-		["Hibernate"] = {
-			["castTime"] = 1501,
+		["Detect Greater Invisibility"] = {
 		},
 		["Transmute: Arcanite"] = {
 			["castTime"] = 25053,
