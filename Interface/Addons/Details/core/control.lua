@@ -468,6 +468,7 @@
 			--> hide / alpha / switch in combat
 			for index, instancia in ipairs (_detalhes.tabela_instancias) do 
 				if (instancia.ativa) then
+					--instancia:SetCombatAlpha (nil, nil, true) --passado para o regen disable
 					instancia:CheckSwitchOnCombatStart (true)
 				end
 			end
@@ -816,7 +817,7 @@
 				--8.0.1 miss data isn't required at the moment, spells like akari's soul has been removed from the game
 				--_detalhes:CanSendMissData()
 				
-				if ((_detalhes.data_sync or true) and zoneType == "raid") then
+				if (_detalhes.data_sync and zoneType == "raid") then
 					_detalhes:SendRaidDataNonEqualizedSchedule()
 					_detalhes:EqualizeActorsSchedule (false)
 				end
@@ -946,6 +947,7 @@
 			--> hide / alpha in combat
 			for index, instancia in ipairs (_detalhes.tabela_instancias) do 
 				if (instancia.ativa) then
+					--instancia:SetCombatAlpha (nil, nil, true) --passado para o regen enabled
 					if (instancia.auto_switch_to_old) then
 						instancia:CheckSwitchOnCombatEnd()
 					end

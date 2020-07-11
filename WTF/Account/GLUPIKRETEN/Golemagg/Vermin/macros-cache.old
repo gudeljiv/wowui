@@ -1,11 +1,11 @@
+VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Rend
+/startattack
+/cast rend
+END
 VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Charge
 /startattack
 /cast Rend
 /cast Charge
-END
-VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
-#showtooltip Rend
-/startattack
-/cast rend
 END

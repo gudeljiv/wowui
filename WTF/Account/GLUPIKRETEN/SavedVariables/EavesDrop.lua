@@ -13,15 +13,16 @@ EavesDropDB = {
 		["Spija - Genesis"] = "Spija - Genesis",
 		["Handrmandr - Genesis"] = "Default",
 		["Verminz - Genesis"] = "Default",
+		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
-		["Elohssa - Stonespine"] = "Default",
+		["Pitchwise - Golemagg"] = "Default",
+		["Greenwise - Golemagg"] = "Default",
 		["Pitchwise - Genesis"] = "Pitchwise - Genesis",
-		["Vermin - Golemagg"] = "Default",
 		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
 		["Pepecocorita - Genesis"] = "Default",
 		["Judawise - Golemagg"] = "Default",
-		["Greenwise - Golemagg"] = "Default",
-		["Pitchwise - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
+		["Elohssa - Stonespine"] = "Default",
 		["Ozrencic - Golemagg"] = "Ozrencic - Golemagg",
 		["Whatevs - Stonespine"] = "Default",
 	},
@@ -32,20 +33,20 @@ EavesDropDB = {
 			["LINEWIDTH"] = 130,
 			["BORDER"] = {
 				["a"] = 0,
-				["b"] = 0.607843137254902,
-				["g"] = 0.607843137254902,
 				["r"] = 0.607843137254902,
+				["g"] = 0.607843137254902,
+				["b"] = 0.607843137254902,
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
+			["SCROLLBUTTON"] = true,
+			["TEXTSIZE"] = 13,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
-			["TEXTSIZE"] = 13,
-			["NUMLINES"] = 16,
 			["HIDETAB"] = true,
 			["LINEHEIGHT"] = 16,
-			["SCROLLBUTTON"] = true,
+			["NUMLINES"] = 16,
 		},
 		["Pitchwise - Golemagg"] = {
 		},
@@ -55,44 +56,26 @@ EavesDropDB = {
 			["LINEWIDTH"] = 130,
 			["BORDER"] = {
 				["a"] = 0,
-				["b"] = 0.607843137254902,
-				["g"] = 0.607843137254902,
 				["r"] = 0.607843137254902,
+				["g"] = 0.607843137254902,
+				["b"] = 0.607843137254902,
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
-			["HIDETAB"] = true,
+			["FRAME"] = {
+				["a"] = 0.4,
+			},
 			["TEXTSIZE"] = 13,
 			["SCROLLBUTTON"] = true,
 			["NUMLINES"] = 16,
 			["LINEHEIGHT"] = 16,
-			["FRAME"] = {
-				["a"] = 0.4,
-			},
+			["HIDETAB"] = true,
 		},
 		["Greenwise - Golemagg"] = {
 		},
 		["Spija - Genesis"] = {
 		},
-		["Verminz - Golemagg"] = {
-			["LINEWIDTH"] = 100,
-			["LOCKED"] = true,
-			["TOOLTIPSANCHOR"] = "Left",
-			["y"] = -3.73324210405553,
-			["x"] = 536.000144269463,
-			["TEXTSIZE"] = 12,
-			["FONT"] = "Arial Narrow",
-			["NUMLINES"] = 14,
-			["SCROLLBUTTON"] = true,
-			["HIDETAB"] = true,
-		},
-		["Pitchwise - Genesis"] = {
-		},
-		["Vermin - Golemagg"] = {
-		},
-		["Korupcija - Stonespine"] = {
-		},
-		["Default"] = {
+		["Mxzq - Golemagg"] = {
 			["BORDER"] = {
 				["a"] = 0,
 				["b"] = 0.607843137254902,
@@ -111,11 +94,48 @@ EavesDropDB = {
 			["NUMLINES"] = 16,
 			["y"] = 236.195578993564,
 		},
-		["Golemagg"] = {
+		["Verminz - Golemagg"] = {
+			["LINEWIDTH"] = 100,
+			["LOCKED"] = true,
+			["TOOLTIPSANCHOR"] = "Left",
+			["y"] = -3.73324210405553,
+			["x"] = 536.000144269463,
+			["TEXTSIZE"] = 12,
+			["FONT"] = "Arial Narrow",
+			["HIDETAB"] = true,
+			["SCROLLBUTTON"] = true,
+			["NUMLINES"] = 14,
 		},
 		["Kosturko - Golemagg"] = {
 		},
+		["Vermin - Golemagg"] = {
+		},
 		["Judawise - Golemagg"] = {
+		},
+		["Default"] = {
+			["LINEWIDTH"] = 130,
+			["BORDER"] = {
+				["a"] = 0,
+				["r"] = 0.607843137254902,
+				["g"] = 0.607843137254902,
+				["b"] = 0.607843137254902,
+			},
+			["y"] = 236.195578993564,
+			["x"] = 551.714104134467,
+			["NUMLINES"] = 16,
+			["TEXTSIZE"] = 13,
+			["SCROLLBUTTON"] = true,
+			["HIDETAB"] = true,
+			["LINEHEIGHT"] = 16,
+			["FRAME"] = {
+				["a"] = 0.4,
+			},
+		},
+		["Golemagg"] = {
+		},
+		["Korupcija - Stonespine"] = {
+		},
+		["Pitchwise - Genesis"] = {
 		},
 		["Ozrencic - Golemagg"] = {
 		},

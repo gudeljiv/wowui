@@ -1,7 +1,12 @@
+ZygorGuidesViewerClassic: disabled
+DugisGuideViewerZ: disabled
+BiSTracker: disabled
+Auctionator: enabled
+nMainbar: enabled
+Aptechka: enabled
 !Colorz: enabled
 !Beautycase: enabled
 Align: enabled
-Aptechka: enabled
 AptechkaOptions: enabled
 AtlasLootClassic_Options: enabled
 AtlasLootClassic_Maps: enabled
@@ -11,12 +16,6 @@ AtlasLootClassic_DungeonsAndRaids: enabled
 AtlasLootClassic_Factions: enabled
 AtlasLootClassic_PvP: enabled
 AtlasLootClassic: enabled
-Auctionator: enabled
-BagBrother: disabled
-Bagnon: disabled
-Bagnon_Config: disabled
-Bagnon_GuildBank: disabled
-Bagnon_VoidStorage: disabled
 BlizzMove: enabled
 !BugGrabber: enabled
 BugSack: enabled
@@ -31,10 +30,9 @@ Demonly-FP: enabled
 Details: enabled
 Details_TinyThreat: enabled
 EavesDrop: enabled
-FollowMePls: enabled
 gmMoney: enabled
-InFlight: disabled
-InFlight_Load: disabled
+InFlight: enabled
+InFlight_Load: enabled
 Leatrix_Maps: enabled
 Lorti UI Classic: enabled
 ls_Toasts: enabled
@@ -53,7 +51,7 @@ OmniCC: enabled
 OmniCC_Config: enabled
 picoFPS: enabled
 Postal: enabled
-RealMobHealth: disabled
+RealMobHealth: enabled
 SharedMedia: enabled
 TellMeWhen: enabled
 TellMeWhen_Options: enabled
@@ -63,7 +61,6 @@ WeaponSwingTimer: enabled
 TradeSkillMaster: disabled
 nBuff: enabled
 nHealth: enabled
-nMainbar: enabled
 nMinimap: enabled
 nPower: enabled
 nTooltip: enabled
@@ -82,3 +79,9 @@ DBM-AQ20: enabled
 DBM-AQ40: enabled
 DBM-ZG: enabled
 Questie: enabled
+Bagnon_GuildBank: disabled
+Bagnon_Config: disabled
+Bagnon: disabled
+BagBrother: disabled
+Bagnon_VoidStorage: disabled
+ItemRackOptions: enabled

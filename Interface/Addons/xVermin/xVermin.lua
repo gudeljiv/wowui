@@ -392,3 +392,32 @@ faster:SetScript("OnEvent", FastLoot)
 --	print("Hello World! Hello " .. event)
 --end
 --f:SetScript("OnEvent", eventHandler)
+
+-------------------------------------------
+-- Making characterslots nicely bordered
+-------------------------------------------
+
+for i, v in pairs(
+	{
+		CharacterHeadSlot,
+		CharacterNeckSlot,
+		CharacterShoulderSlot,
+		CharacterBackSlot,
+		CharacterChestSlot,
+		CharacterWristSlot,
+		CharacterHandsSlot,
+		CharacterWaistSlot,
+		CharacterLegsSlot,
+		CharacterFeetSlot,
+		CharacterFinger0Slot,
+		CharacterFinger1Slot,
+		CharacterTrinket0Slot,
+		CharacterTrinket1Slot,
+		CharacterMainHandSlot,
+		CharacterSecondaryHandSlot,
+		CharacterRangedSlot,
+		CharacterAmmoSlot
+	}
+) do
+	v:CreateBeautyBorder(8)
+end
