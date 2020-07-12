@@ -78,7 +78,7 @@ local function SkinTarget()
 end
 
 local function SkinPet()
-	if PetFrame:IsShown() then
+	if PetFrame:IsShown() and not InCombatLockdown() then
 		local numBuffs = 0
 		for i = 1, 32 do
 			if (select(3, UnitBuff("pet", i))) then
@@ -167,6 +167,8 @@ end
 -- TargetFrame:HookScript("OnUpdate", SkinTarget)
 -- PetFrame:HookScript("OnUpdate", SkinPet)
 hooksecurefunc("TargetFrame_UpdateAuras", SkinTarget)
-hooksecurefunc("PetFrame_Update", SkinPet)
+-- hooksecurefunc("PET_BAR_UPDATE_COOLDOWN", SkinPet)
 
--- CompactRaidFrame1Buff1
+local f = CreateFrame("Frame")
+frame:SetScript("OnEvent", SkinPet)
+frame:RegisterEvent("UNIT_AURA")

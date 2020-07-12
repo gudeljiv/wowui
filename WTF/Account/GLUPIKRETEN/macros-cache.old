@@ -16,7 +16,7 @@ VER 3 0000000000000002 "MOVE" "Ability_Ambush."
 /run DurabilityFrame:SetPoint("TOP", "EavesDropFrame", "BOTTOM", -25, 0)
 END
 VER 3 0000000000000005 "PetFood" "Inv_misc_questionmark"
-#showtooltip item:2287
+#showtooltip item:5469
 /cast feed pet
-/use item:2287
+/use item:5469
 END
