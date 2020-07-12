@@ -45,7 +45,7 @@ config = {
 	petbuff = {
 		fontsize = 10,
 		outline = "THINOUTLINE",
-		bordersize = 4,
+		bordersize = 6,
 		position = {
 			"BOTTOMRIGHT",
 			frame,
@@ -57,7 +57,7 @@ config = {
 	petdebuff = {
 		fontsize = 10,
 		outline = "THINOUTLINE",
-		bordersize = 4,
+		bordersize = 6,
 		position = {
 			"BOTTOMRIGHT",
 			frame,

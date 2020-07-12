@@ -13,14 +13,14 @@ ReplacedDebuffTypeColor[""] = ReplacedDebuffTypeColor["none"]
 local function SkinTarget()
 	if TargetFrame:IsShown() then
 		local numBuffs = 0
-		for i = 1, MAX_TARGET_BUFFS do
+		for i = 1, 32 do
 			if (select(3, UnitBuff("target", i))) then
 				numBuffs = numBuffs + 1
 			end
 		end
 
 		local numDebuffs = 0
-		for i = 1, MAX_TARGET_DEBUFFS do
+		for i = 1, 32 do
 			if (select(3, UnitDebuff("target", i))) then
 				numDebuffs = numDebuffs + 1
 			end
@@ -80,14 +80,14 @@ end
 local function SkinPet()
 	if PetFrame:IsShown() then
 		local numBuffs = 0
-		for i = 1, MAX_TARGET_BUFFS do
+		for i = 1, 32 do
 			if (select(3, UnitBuff("pet", i))) then
 				numBuffs = numBuffs + 1
 			end
 		end
 
 		local numDebuffs = 0
-		for i = 1, MAX_TARGET_BUFFS do
+		for i = 1, 32 do
 			if (select(3, UnitDebuff("pet", i))) then
 				numDebuffs = numDebuffs + 1
 			end
@@ -167,6 +167,6 @@ end
 -- TargetFrame:HookScript("OnUpdate", SkinTarget)
 -- PetFrame:HookScript("OnUpdate", SkinPet)
 hooksecurefunc("TargetFrame_UpdateAuras", SkinTarget)
-hooksecurefunc("PlayerFrame_Update", SkinPet)
+hooksecurefunc("PetFrame_Update", SkinPet)
 
 -- CompactRaidFrame1Buff1

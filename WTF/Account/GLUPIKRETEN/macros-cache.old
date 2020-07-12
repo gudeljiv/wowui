@@ -5,8 +5,8 @@ VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:2070
-/castsequence [combat]item:118
+/use [nocombat]item:2287
+/castsequence [combat]
 END
 VER 3 0000000000000001 "FRAME" "132150"
 /fstack
@@ -14,4 +14,9 @@ END
 VER 3 0000000000000002 "MOVE" "Ability_Ambush."
 /run DurabilityFrame:ClearAllPoints()
 /run DurabilityFrame:SetPoint("TOP", "EavesDropFrame", "BOTTOM", -25, 0)
+END
+VER 3 0000000000000005 "PetFood" "Inv_misc_questionmark"
+#showtooltip item:2287
+/cast feed pet
+/use item:2287
 END

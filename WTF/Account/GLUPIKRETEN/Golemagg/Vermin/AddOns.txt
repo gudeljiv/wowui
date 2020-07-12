@@ -285,3 +285,4 @@ WeaponSwingTimer: enabled
 nHealth: enabled
 Bagnon_VoidStorage: disabled
 FollowMePls: enabled
+ItemRackOptions: enabled

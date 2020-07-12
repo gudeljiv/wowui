@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 766,
 	["lastSanitation"] = 3,
-	["session"] = 755,
 	["errors"] = {
 		{
 			["message"] = "[string \"ItemRackMenu3:CreateBeautyBorder(8)\"]:1: attempt to index global 'ItemRackMenu3' (a nil value)",
@@ -21,20 +21,20 @@ BugGrabberDB = {
 		}, -- [2]
 		{
 			["message"] = "(null)",
-			["session"] = 751,
 			["time"] = "2020/07/11 19:09:15",
+			["session"] = 751,
 			["counter"] = 5,
 		}, -- [3]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Details\\Libs\\LibThreatClassic2\\lib.xml",
-			["session"] = 751,
 			["time"] = "2020/07/11 19:09:15",
+			["session"] = 751,
 			["counter"] = 8,
 		}, -- [4]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Details_Streamer\\Details_Streamer.toc",
-			["time"] = "2020/07/11 19:09:55",
 			["session"] = 751,
+			["time"] = "2020/07/11 19:09:55",
 			["counter"] = 2,
 		}, -- [5]
 		{
@@ -53,12 +53,20 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [7]
 		{
+			["message"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:83: 'for' limit must be a number",
+			["time"] = "2020/07/12 20:44:49",
+			["locals"] = "numBuffs = 0\n(for index) = 1\n(for limit) = nil\n(for step) = 1\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"'for' limit must be a number\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:83: in function <Interface\\AddOns\\xVermin\\SkinBuffs.lua:80>\n[C]: in function `PetFrame_Update'\n[string \"*:OnShow\"]:2: in function <[string \"*:OnShow\"]:1>\n[C]: in function `Show'\nInterface\\FrameXML\\PetFrame.lua:47: in function <Interface\\FrameXML\\PetFrame.lua:41>\n[C]: in function `PetFrame_Update'\nInterface\\FrameXML\\PetFrame.lua:72: in function <Interface\\FrameXML\\PetFrame.lua:67>",
+			["session"] = 764,
+			["counter"] = 5,
+		}, -- [8]
+		{
 			["message"] = "...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: Usage: CreateFrame(\"frameType\" [, \"name\"] [, parent] [, \"template\"] [, id])",
 			["time"] = "2020/07/11 17:53:14",
 			["locals"] = "(*temporary) = \"Button\"\n(*temporary) = \"NivayaSlot1\"\n(*temporary) = \"ItemButtonTemplate\"\n(*temporary) = \"ContainerFrameItemButtonTemplate\"\n",
 			["stack"] = "[C]: in function `CreateFrame'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: in function `Create'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:56: in function `New'\nInterface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:762: in function <Interface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:757>",
-			["session"] = 755,
-			["counter"] = 15,
-		}, -- [8]
+			["session"] = 766,
+			["counter"] = 26,
+		}, -- [9]
 	},
 }
