@@ -596,7 +596,7 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 553.844177246094,
+		["m_iFrameBottom"] = 662.233093261719,
 		["m_bHideTitleButtons"] = false,
 		["m_iFrameLeft"] = 1670.73352050781,
 		["m_bColourDoneOrFailed"] = true,
@@ -648,10 +648,10 @@ MonkeyQuestConfig = {
 			["Kolkar Leaders - false"] = {
 				["m_bChecked"] = true,
 			},
-			["The Disruption Ends - false"] = {
+			["Supplies for the Crossroads - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Supplies for the Crossroads - false"] = {
+			["The Disruption Ends - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Wharfmaster Dizzywig - false"] = {
@@ -1074,13 +1074,40 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Vermin"] = {
 		["m_aQuestList"] = {
-			["Harpy Raiders - false"] = {
-				["m_bChecked"] = true,
-			},
 			["Stolen Silver - false"] = {
 				["m_bChecked"] = true,
 			},
+			["Hezrul Bloodmark - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Jorn Skyseer - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Kolkar Leaders - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Slaying the Beast - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Harpy Raiders - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Echeyakee - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Altered Beings - false"] = {
+				["m_bChecked"] = true,
+			},
 			["The Stagnant Oasis - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Verog the Dervish - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Angry Scytheclaws - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Harpy Lieutenants - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Prowlers of the Barrens - false"] = {
@@ -1092,14 +1119,14 @@ MonkeyQuestConfig = {
 			["Wharfmaster Dizzywig - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Kolkar Leaders - false"] = {
+			["Consumed by Hatred - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Lost in Battle - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Ragefire Chasm - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Slaying the Beast - false"] = {
-				["m_bChecked"] = true,
+				["m_bChecked"] = false,
 			},
 			["Durotar - true"] = {
 				["m_bChecked"] = true,

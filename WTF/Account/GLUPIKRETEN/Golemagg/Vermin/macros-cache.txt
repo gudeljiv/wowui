@@ -1,9 +1,3 @@
-VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
-#showtooltip Heroic Strike
-/startattack
-/cast Heroic Strike
-/cast Overpower
-END
 VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Rend
 /startattack
@@ -14,4 +8,10 @@ VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 /startattack
 /cast Rend
 /cast Charge
+END
+VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Heroic Strike
+/startattack
+/cast Heroic Strike
+/cast Overpower
 END

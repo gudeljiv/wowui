@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 804,
+	["session"] = 816,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -39,21 +39,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [5]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'AttemptToSaveBindings()'.",
-			["time"] = "2020/07/11 19:23:02",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `AttemptToSaveBindings'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:2045: in function `SetSetBindings'\nInterface\\AddOns\\ItemRackOptions\\ItemRackOptions.lua:1041: in function `ReconcileSetBindings'\nInterface\\AddOns\\ItemRackOptions\\ItemRackOptions.lua:411: in function <Interface\\AddOns\\ItemRackOptions\\ItemRackOptions.lua:395>\nInterface\\AddOns\\cargBags_Nivaya\\filters-Filters.lua:132: in function `SaveSet'\nInterface\\AddOns\\ItemRackOptions\\ItemRackOptions.lua:272: in function `ButtonOnClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
-			["session"] = 753,
-			["counter"] = 1,
-		}, -- [6]
-		{
 			["message"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:83: 'for' limit must be a number",
 			["time"] = "2020/07/12 20:44:49",
 			["locals"] = "numBuffs = 0\n(for index) = 1\n(for limit) = nil\n(for step) = 1\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"'for' limit must be a number\"\n",
 			["stack"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:83: in function <Interface\\AddOns\\xVermin\\SkinBuffs.lua:80>\n[C]: in function `PetFrame_Update'\n[string \"*:OnShow\"]:2: in function <[string \"*:OnShow\"]:1>\n[C]: in function `Show'\nInterface\\FrameXML\\PetFrame.lua:47: in function <Interface\\FrameXML\\PetFrame.lua:41>\n[C]: in function `PetFrame_Update'\nInterface\\FrameXML\\PetFrame.lua:72: in function <Interface\\FrameXML\\PetFrame.lua:67>",
 			["session"] = 764,
 			["counter"] = 5,
-		}, -- [7]
+		}, -- [6]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:175: hooksecurefunc(): PetFrame_UpdateAuras is not a function",
 			["time"] = "2020/07/12 22:41:19",
@@ -61,7 +53,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `hooksecurefunc'\nInterface\\AddOns\\xVermin\\SkinBuffs.lua:175: in main chunk",
 			["session"] = 772,
 			["counter"] = 1,
-		}, -- [8]
+		}, -- [7]
 		{
 			["message"] = "[string \"print(UnitAura(\"pet\"))\"]:1: Usage: UnitAura(\"unit\", [index][, \"filter\"])",
 			["time"] = "2020/07/12 22:47:32",
@@ -69,7 +61,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `UnitAura'\n[string \"print(UnitAura(\"pet\"))\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 772,
 			["counter"] = 1,
-		}, -- [9]
+		}, -- [8]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:175: hooksecurefunc(): UpdateUI is not a function",
 			["time"] = "2020/07/12 22:49:58",
@@ -77,7 +69,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `hooksecurefunc'\nInterface\\AddOns\\xVermin\\SkinBuffs.lua:175: in main chunk",
 			["session"] = 773,
 			["counter"] = 1,
-		}, -- [10]
+		}, -- [9]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:175: hooksecurefunc(): UNIT_HAPPINESS is not a function",
 			["time"] = "2020/07/12 22:52:06",
@@ -85,7 +77,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `hooksecurefunc'\nInterface\\AddOns\\xVermin\\SkinBuffs.lua:175: in main chunk",
 			["session"] = 774,
 			["counter"] = 1,
-		}, -- [11]
+		}, -- [10]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:175: hooksecurefunc(): UNIT_AURA is not a function",
 			["time"] = "2020/07/12 22:56:42",
@@ -93,7 +85,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `hooksecurefunc'\nInterface\\AddOns\\xVermin\\SkinBuffs.lua:175: in main chunk",
 			["session"] = 775,
 			["counter"] = 1,
-		}, -- [12]
+		}, -- [11]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:175: hooksecurefunc(): PET_BAR_UPDATE_COOLDOWN is not a function",
 			["time"] = "2020/07/12 23:00:31",
@@ -101,13 +93,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `hooksecurefunc'\nInterface\\AddOns\\xVermin\\SkinBuffs.lua:175: in main chunk",
 			["session"] = 777,
 			["counter"] = 1,
-		}, -- [13]
-		{
-			["message"] = "(null)",
-			["time"] = "2020/07/11 19:09:15",
-			["session"] = 777,
-			["counter"] = 23,
-		}, -- [14]
+		}, -- [12]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:107: Attempt to find 'this' in non-table object (used '.' instead of ':' ?)",
 			["time"] = "2020/07/12 22:57:07",
@@ -115,7 +101,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `GetName'\nInterface\\AddOns\\xVermin\\SkinBuffs.lua:107: in function `SkinPet'\nInterface\\AddOns\\xVermin\\SkinBuffs.lua:177: in main chunk",
 			["session"] = 779,
 			["counter"] = 2,
-		}, -- [15]
+		}, -- [13]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\BestFood.lua:77: attempt to index field 'PetFood' (a nil value)",
 			["time"] = "2020/07/13 16:55:52",
@@ -123,7 +109,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\BestFood.lua:77: in function `UpdateMacros'\nInterface\\AddOns\\xVermin\\BestFood.lua:49: in function <Interface\\AddOns\\xVermin\\BestFood.lua:44>",
 			["session"] = 786,
 			["counter"] = 2,
-		}, -- [16]
+		}, -- [14]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\BestFood.lua:207: attempt to index local 'food' (a nil value)",
 			["time"] = "2020/07/13 16:56:47",
@@ -131,7 +117,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\BestFood.lua:207: in function `IsUsablePetFood'\nInterface\\AddOns\\xVermin\\BestFood.lua:77: in function `UpdateMacros'\nInterface\\AddOns\\xVermin\\BestFood.lua:49: in function <Interface\\AddOns\\xVermin\\BestFood.lua:44>",
 			["session"] = 787,
 			["counter"] = 5,
-		}, -- [17]
+		}, -- [15]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\BestFood.lua:229: bad argument #1 to 'ipairs' (table expected, got nil)",
 			["time"] = "2020/07/13 17:03:39",
@@ -139,7 +125,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `ipairs'\nInterface\\AddOns\\xVermin\\BestFood.lua:229: in function `inArray'\nInterface\\AddOns\\xVermin\\BestFood.lua:217: in function `IsUsablePetFood'\nInterface\\AddOns\\xVermin\\BestFood.lua:77: in function `UpdateMacros'\nInterface\\AddOns\\xVermin\\BestFood.lua:49: in function <Interface\\AddOns\\xVermin\\BestFood.lua:44>",
 			["session"] = 792,
 			["counter"] = 1,
-		}, -- [18]
+		}, -- [16]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\BestFood.lua:217: bad argument #1 to 'ipairs' (table expected, got nil)",
 			["time"] = "2020/07/13 17:05:13",
@@ -147,7 +133,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `ipairs'\nInterface\\AddOns\\xVermin\\BestFood.lua:217: in function `inArray'\nInterface\\AddOns\\xVermin\\BestFood.lua:213: in function `IsUsablePetFood'\nInterface\\AddOns\\xVermin\\BestFood.lua:77: in function `UpdateMacros'\nInterface\\AddOns\\xVermin\\BestFood.lua:49: in function <Interface\\AddOns\\xVermin\\BestFood.lua:44>",
 			["session"] = 794,
 			["counter"] = 2,
-		}, -- [19]
+		}, -- [17]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\BestFood.lua:218: bad argument #1 to 'ipairs' (table expected, got nil)",
 			["time"] = "2020/07/13 17:06:39",
@@ -155,14 +141,68 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `ipairs'\nInterface\\AddOns\\xVermin\\BestFood.lua:218: in function `inArray'\nInterface\\AddOns\\xVermin\\BestFood.lua:214: in function `IsUsablePetFood'\nInterface\\AddOns\\xVermin\\BestFood.lua:77: in function `UpdateMacros'\nInterface\\AddOns\\xVermin\\BestFood.lua:49: in function <Interface\\AddOns\\xVermin\\BestFood.lua:44>",
 			["session"] = 795,
 			["counter"] = 1,
+		}, -- [18]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\BestFood.lua:632: attempt to index global 'F' (a nil value)",
+			["time"] = "2020/07/13 19:27:16",
+			["locals"] = "defaultFoodMacro = \"#showtooltip\n/use [nocombat]<food>\n/castsequence [combat]<hPotions>\n\"\ndefaultPetFoodMacro = \"#showtooltip <petfood>\n/cast feed pet\n/use <petfood>\n\"\ndefaultDrinkMacro = \"#showtooltip\n/use [nocombat]<drink>\n/castsequence [combat]<mPotions>\n\"\nCreateOrUpdateMacro = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:27\nFirstAidSkillPoints = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:236\n(*temporary) = <unnamed> {\n 0 = <userdata>\n IsUsableManaGem = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:232\n IsUsableBuffDrink = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:216\n IsUsableFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:177\n Bandage = <table> {\n }\n BetterFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:250\n AvailableInArray = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:198\n ManaGem = <table> {\n }\n BetterMPotion = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:312\n Potion = <table> {\n }\n BetterBuffDrink = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:304\n IsUsableBandage = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:246\n IsUsableMPotion = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:224\n BetterBandage = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:324\n IsUsableHealthstone = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:228\n IsUsableDrink = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:212\n BetterHealthstone = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:316\n Healthstone = <table> {\n }\n Food = <table> {\n }\n UpdateMacros = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:59\n BetterHPotion = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:308\n IsUsableHPotion = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:220\n IsUsablePetFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:182\n BetterPetFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:267\n dirty = false\n BetterManaGem = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:320\n Sorted = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:168\n IsUsableBuffFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:208\n BuildSequence = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:333\n BetterDrink = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:288\n BetterBuffFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:284\n}\n(*temporary) = \"PetFood\"\n(*temporary) = <table> {\n}\n(*temporary) = nil\n(*temporary) = <table> {\n}\n(*temporary) = 117\n(*temporary) = nil\n(*temporary) = \"BASIC\"\n(*temporary) = \"attempt to index global 'F' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\BestFood.lua:632: in main chunk",
+			["session"] = 805,
+			["counter"] = 1,
+		}, -- [19]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'AttemptToSaveBindings()'.",
+			["time"] = "2020/07/11 19:23:02",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `AttemptToSaveBindings'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:2045: in function `SetSetBindings'\nInterface\\AddOns\\ItemRackOptions\\ItemRackOptions.lua:1041: in function `ReconcileSetBindings'\nInterface\\AddOns\\ItemRackOptions\\ItemRackOptions.lua:411: in function <Interface\\AddOns\\ItemRackOptions\\ItemRackOptions.lua:395>\nInterface\\AddOns\\cargBags_Nivaya\\filters-Filters.lua:132: in function `SaveSet'\nInterface\\AddOns\\ItemRackOptions\\ItemRackOptions.lua:272: in function `ButtonOnClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 805,
+			["counter"] = 2,
 		}, -- [20]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\BestFood.lua:864: table index is nil",
+			["time"] = "2020/07/13 19:29:16",
+			["locals"] = "defaultFoodMacro = \"#showtooltip\n/use [nocombat]<food>\n/castsequence [combat]<hPotions>\n\"\ndefaultPetFoodMacro = \"#showtooltip <petfood>\n/cast feed pet\n/use <petfood>\n\"\ndefaultDrinkMacro = \"#showtooltip\n/use [nocombat]<drink>\n/castsequence [combat]<mPotions>\n\"\nCreateOrUpdateMacro = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:27\nFirstAidSkillPoints = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:236\n(*temporary) = <unnamed> {\n 0 = <userdata>\n IsUsableManaGem = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:232\n IsUsableBuffDrink = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:216\n IsUsableFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:177\n Bandage = <table> {\n }\n BetterFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:250\n AvailableInArray = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:198\n ManaGem = <table> {\n }\n BetterMPotion = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:312\n Potion = <table> {\n }\n BetterBuffDrink = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:304\n IsUsableBandage = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:246\n IsUsableMPotion = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:224\n BetterBandage = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:324\n IsUsableHealthstone = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:228\n IsUsableDrink = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:212\n BetterHealthstone = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:316\n Healthstone = <table> {\n }\n Food = <table> {\n }\n UpdateMacros = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:59\n BetterHPotion = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:308\n IsUsableHPotion = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:220\n IsUsablePetFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:182\n BetterPetFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:267\n dirty = false\n BetterManaGem = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:320\n Sorted = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:168\n IsUsableBuffFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:208\n BuildSequence = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:333\n BetterDrink = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:288\n BetterBuffFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:284\n}\n(*temporary) = \"PetFood\"\n(*temporary) = <table> {\n}\n(*temporary) = nil\n(*temporary) = <table> {\n 81917 = \"BASIC\"\n 40202 = \"BASIC\"\n 20424 = \"INEDIBLE\"\n 62658 = \"BONUS\"\n 3726 = \"BONUS\"\n 12037 = \"INEDIBLE\"\n 3727 = \"BONUS\"\n 74650 = \"BONUS\"\n 67271 = \"BASIC\"\n 83097 = \"BASIC\"\n 3729 = \"BONUS\"\n 3220 = \"BONUS\"\n 3731 = \"INEDIBLE\"\n 81918 = \"BASIC\"\n 62778 = \"INEDIBLE\"\n 34736 = \"INEDIBLE\"\n 27636 = \"BONUS\"\n 59232 = \"BASIC\"\n 60268 = \"BASIC\"\n 33254 = \"BASIC\"\n 27660 = \"BONUS\"\n 35565 = \"BONUS\"\n 58268 = \"BASIC\"\n 57519 = \"BONUS\"\n 19305 = \"BASIC\"\n 20074 = \"BONUS\"\n 22644 = \"INEDIBLE\"\n 85506 = \"INEDIBLE\"\n 33454 = \"BASIC\"\n 74653 = \"BONUS\"\n 58269 = \"BASIC\"\n 43001 = \"BONUS\"\n 57544 = \"BASIC\"\n 38427 = \"BASIC\"\n 62676 = \"BASIC\"\n 32685 = \"BASIC\"\n 74654 = \"BONUS\"\n 31673 = \"BONUS\"\n 5465 = \"INEDIBLE\"\n 5467 = \"INEDIBLE\"\n 75014 = \"INEDIBLE\"\n 5469 = \"INEDIBLE\"\n 5470 = \"INEDIBLE\"\n 5471 = \"INEDIBLE\"\n 5472 = \"BONUS\"\n 62780 = \"INEDIBLE\"\n 5474 = \"BONUS\"\n 74839 = \"INEDIBLE\"\n 34754 = \"BONUS\"\n 19995 = \"BASIC\"\n 5478 = \"BASIC\"\n 65730 = \"BASIC\"\n 5480 = \"BONUS\"\n 723 = \"INEDIBLE\"\n 74838 = \"INEDIBLE\"\n 11444 = \"BASIC\"\n 3770 = \"BASIC\"\n 12213 = \"BONUS\"\n 3771 = \"BASIC\"\n 81413 = \"BONUS\"\n 43010 = \"INEDIBLE\"\n 38428 = \"BASIC\"\n 12223 = \"INEDIBLE\"\n 42779 = \"BONUS\"\n 74837 = \"INEDIBLE\"\n 34125 = \"BONUS\"\n 9681 = \"BASIC\"\n 65731 = \"BASIC\"\n 19306 = \"BASIC\"\n 74834 = \"INEDIBLE\"\n 74833 = \"INEDIBLE\"\n 67229 = \"INEDIBLE\"\n 74642 = \"BONUS\"\n 2886 = \"INEDIBLE\"\n 62784 = \"INEDIBLE\"\n 1015 = \"INEDIBLE\"\n 4739 = \"INEDIBLE\"\n 2888 = \"BONUS\"\n 27669 = \"INEDIBLE\"\n 34747 = \"BASIC\"\n 34755 = \"BONUS\"\n 67230 = \"BASIC\"\n 62781 = \"INEDIBLE\"\n 62",
+			["stack"] = "Interface\\AddOns\\xVermin\\BestFood.lua:864: in main chunk",
+			["session"] = 806,
+			["counter"] = 1,
+		}, -- [21]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\BestFood.lua:78: attempt to index field 'PetFood' (a nil value)",
+			["time"] = "2020/07/13 19:27:21",
+			["locals"] = "self = <unnamed> {\n 0 = <userdata>\n IsUsableManaGem = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:232\n IsUsableBuffDrink = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:216\n IsUsableFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:177\n Bandage = <table> {\n }\n BetterFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:250\n AvailableInArray = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:198\n ManaGem = <table> {\n }\n BetterMPotion = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:312\n Potion = <table> {\n }\n BetterBuffDrink = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:304\n IsUsableBandage = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:246\n IsUsableMPotion = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:224\n BetterBandage = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:324\n IsUsableHealthstone = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:228\n IsUsableDrink = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:212\n BetterHealthstone = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:316\n Healthstone = <table> {\n }\n Food = <table> {\n }\n UpdateMacros = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:59\n BetterHPotion = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:308\n IsUsableHPotion = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:220\n IsUsablePetFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:182\n BetterPetFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:267\n dirty = false\n BetterManaGem = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:320\n Sorted = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:168\n IsUsableBuffFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:208\n BuildSequence = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:333\n BetterDrink = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:288\n BetterBuffFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:284\n}\nbest = <table> {\n drink = <table> {\n }\n food = <table> {\n }\n manaGem = <table> {\n }\n mPotion = <table> {\n }\n bandage = <table> {\n }\n healthstone = <table> {\n }\n hPotion = <table> {\n }\n buffFood = <table> {\n }\n petfood = <table> {\n }\n buffDrink = <table> {\n }\n}\n(for index) = 0\n(for limit) = 4\n(for step) = 1\nbag = 0\n(for index) = 1\n(for limit) = 16\n(for step) = 1\nslot = 1\nid = 2515\n(*temporary) = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:182\n(*temporary) = <unnamed> {\n 0 = <userdata>\n IsUsableManaGem = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:232\n IsUsableBuffDrink = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:216\n IsUsableFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:177\n Bandage = <table> {\n }\n BetterFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:250\n AvailableInArray = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:198\n ManaGem = <table> {\n }\n BetterMPotion = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:312\n Potion = <table> {\n }\n BetterBuffDrink = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:304\n IsUsableBandage = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:246\n IsUsableMPotion = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:224\n BetterBandage = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:324\n IsUsableHealthstone = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:228\n IsUsableDrink = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:212\n BetterHealthstone = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:316\n Healthstone = <table> {\n }\n Food = <table> {\n }\n UpdateMacros = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:59\n BetterHPotion = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:308\n IsUsableHPotion = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:220\n IsUsablePetFood = <function> defined @Interface\\AddOns\\xVermin\\BestFood.lua:182\n BetterPetFood = <fu",
+			["stack"] = "Interface\\AddOns\\xVermin\\BestFood.lua:78: in function `UpdateMacros'\nInterface\\AddOns\\xVermin\\BestFood.lua:50: in function <Interface\\AddOns\\xVermin\\BestFood.lua:45>",
+			["session"] = 806,
+			["counter"] = 7,
+		}, -- [22]
+		{
+			["message"] = "(null)",
+			["time"] = "2020/07/11 19:09:15",
+			["session"] = 806,
+			["counter"] = 29,
+		}, -- [23]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\BestFood.lua:273: attempt to compare nil with number",
+			["time"] = "2020/07/13 20:00:44",
+			["locals"] = "a = <table> {\n id = 5469\n type = \"Meat\"\n}\nb = <table> {\n id = 2287\n type = \"Meat\"\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to compare nil with number\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\BestFood.lua:273: in function <Interface\\AddOns\\xVermin\\BestFood.lua:265>\n[C]: in function `sort'\nInterface\\AddOns\\xVermin\\BestFood.lua:173: in function `Sorted'\nInterface\\AddOns\\xVermin\\BestFood.lua:108: in function `UpdateMacros'\nInterface\\AddOns\\xVermin\\BestFood.lua:50: in function <Interface\\AddOns\\xVermin\\BestFood.lua:45>",
+			["session"] = 814,
+			["counter"] = 2,
+		}, -- [24]
+		{
+			["message"] = "[string \"CharacterFeetSlot.oGlowBorder:CreateBeautyB...\"]:1: attempt to call method 'CreateBeautyBorder' (a nil value)",
+			["time"] = "2020/07/13 21:10:17",
+			["locals"] = "(*temporary) = nil\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = 8\n(*temporary) = \"attempt to call method 'CreateBeautyBorder' (a nil value)\"\n",
+			["stack"] = "[string \"CharacterFeetSlot.oGlowBorder:CreateBeautyB...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 816,
+			["counter"] = 1,
+		}, -- [25]
 		{
 			["message"] = "...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: Usage: CreateFrame(\"frameType\" [, \"name\"] [, parent] [, \"template\"] [, id])",
 			["time"] = "2020/07/11 17:53:14",
 			["locals"] = "(*temporary) = \"Button\"\n(*temporary) = \"NivayaSlot1\"\n(*temporary) = \"ItemButtonTemplate\"\n(*temporary) = \"ContainerFrameItemButtonTemplate\"\n",
 			["stack"] = "[C]: in function `CreateFrame'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: in function `Create'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:56: in function `New'\nInterface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:762: in function <Interface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:757>",
-			["session"] = 804,
-			["counter"] = 65,
-		}, -- [21]
+			["session"] = 816,
+			["counter"] = 78,
+		}, -- [26]
 	},
 }
