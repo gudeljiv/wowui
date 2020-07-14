@@ -15,7 +15,10 @@ config = {
 	border = {
 		buff = "Interface\\AddOns\\xVermin\\media\\textureOverlay",
 		debuff = "Interface\\AddOns\\xVermin\\media\\textureDebuff",
-		neutral = "Interface\\AddOns\\xVermin\\media\\textureWhite"
+		neutral = "Interface\\AddOns\\xVermin\\media\\textureWhite",
+		shadow = "Interface\\AddOns\\xVermin\\media\\textureShadow",
+		normal = "Interface\\AddOns\\xVermin\\media\\textureNormal",
+		normalgloss = "Interface\\AddOns\\xVermin\\media\\textureNormal (gloss)"
 	},
 	buff = {
 		scale = 1.3,

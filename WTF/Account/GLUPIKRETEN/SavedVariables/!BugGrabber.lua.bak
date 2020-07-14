@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 830,
 	["lastSanitation"] = 3,
+	["session"] = 855,
 	["errors"] = {
 		{
 			["message"] = "[string \"ItemRackMenu3:CreateBeautyBorder(8)\"]:1: attempt to index global 'ItemRackMenu3' (a nil value)",
@@ -21,14 +21,14 @@ BugGrabberDB = {
 		}, -- [2]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Details\\Libs\\LibThreatClassic2\\lib.xml",
-			["time"] = "2020/07/11 19:09:15",
 			["session"] = 751,
+			["time"] = "2020/07/11 19:09:15",
 			["counter"] = 8,
 		}, -- [3]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Details_Streamer\\Details_Streamer.toc",
-			["session"] = 751,
 			["time"] = "2020/07/11 19:09:55",
+			["session"] = 751,
 			["counter"] = 2,
 		}, -- [4]
 		{
@@ -255,18 +255,42 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [32]
 		{
+			["message"] = "(null)",
+			["session"] = 830,
+			["time"] = "2020/07/11 19:09:15",
+			["counter"] = 62,
+		}, -- [33]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:30: Usage: GetItemQualityColor(index)",
+			["time"] = "2020/07/14 18:10:05",
+			["locals"] = "(*temporary) = nil\n",
+			["stack"] = "[C]: in function `GetItemQualityColor'\nInterface\\AddOns\\xVermin\\CharacterFrame.lua:30: in function <Interface\\AddOns\\xVermin\\CharacterFrame.lua:1>",
+			["session"] = 834,
+			["counter"] = 2,
+		}, -- [34]
+		{
+			["message"] = "Interface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:1176: attempt to call global 'dump' (a nil value)",
+			["time"] = "2020/07/14 18:18:37",
+			["locals"] = "id = 6\nmenuInclude = nil\nshowButtonMenu = nil\nitemLink = nil\nitemID = 0\nitemName = \"(empty)\"\nequipSlot = nil\nitemTexture = \"Interface\\Icons\\INV_Misc_QuestionMark\"\ncol = 0\nrow = 1\nxpos = 48\nypos = -8\nmax_cols = 1\nbutton = ItemRackMenu1 {\n 0 = <userdata>\n HotKey = ItemRackMenu1HotKey {\n }\n NewActionTexture = <unnamed> {\n }\n Border = ItemRackMenu1Border {\n }\n Flash = ItemRackMenu1Flash {\n }\n icon = ItemRackMenu1Icon {\n }\n AutoCastable = <unnamed> {\n }\n SpellHighlightAnim = <unnamed> {\n }\n SpellHighlightTexture = <unnamed> {\n }\n NormalTexture = ItemRackMenu1NormalTexture {\n }\n FlyoutBorderShadow = ItemRackMenu1FlyoutBorderShadow {\n }\n FlyoutBorder = ItemRackMenu1FlyoutBorder {\n }\n Count = ItemRackMenu1Count {\n }\n AutoCastShine = ItemRackMenu1Shine {\n }\n FlyoutArrow = ItemRackMenu1FlyoutArrow {\n }\n cooldown = ItemRackMenu1Cooldown {\n }\n Name = ItemRackMenu1Name {\n }\n}\n(for index) = 1\n(for limit) = 1\n(for step) = 1\ni = 1\n(*temporary) = nil\n(*temporary) = ItemRackMenu1Icon {\n 0 = <userdata>\n}\n(*temporary) = \"attempt to call global 'dump' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:1176: in function `BuildMenu'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:1834: in function `DockMenuToCharacterSheet'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:1814: in function `PaperDollItemSlotButton_OnEnter'\n[string \"*:OnEnter\"]:1: in function <[string \"*:OnEnter\"]:1>",
+			["session"] = 837,
+			["counter"] = 2,
+		}, -- [35]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:40: attempt to call method 'SetBeautyBorderShadowTexture' (a nil value)",
+			["time"] = "2020/07/14 18:55:45",
+			["locals"] = "itemLink = nil\nr = nil\ng = nil\nb = nil\nitemLink = nil\n(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = CharacterHeadSlot {\n }\n 2 = CharacterNeckSlot {\n }\n 3 = CharacterShoulderSlot {\n }\n 4 = CharacterBackSlot {\n }\n 5 = CharacterChestSlot {\n }\n 6 = CharacterWristSlot {\n }\n 7 = CharacterHandsSlot {\n }\n 8 = CharacterWaistSlot {\n }\n 9 = CharacterLegsSlot {\n }\n 10 = CharacterFeetSlot {\n }\n 11 = CharacterFinger0Slot {\n }\n 12 = CharacterFinger1Slot {\n }\n 13 = CharacterTrinket0Slot {\n }\n 14 = CharacterTrinket1Slot {\n }\n 15 = CharacterMainHandSlot {\n }\n 16 = CharacterSecondaryHandSlot {\n }\n 17 = CharacterRangedSlot {\n }\n 18 = CharacterAmmoSlot {\n }\n}\n(for control) = 1\ni = 1\nv = CharacterHeadSlot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface\\FrameXML\\PaperDollFrame.lua:815\n beautyShadow = <table> {\n }\n backgroundTextureName = 136516\n IconOverlay = <unnamed> {\n }\n beautyBorder = <table> {\n }\n checkRelic = false\n Count = CharacterHeadSlotCount {\n }\n IconBorder = <unnamed> {\n }\n searchOverlay = CharacterHeadSlotSearchOverlay {\n }\n icon = CharacterHeadSlotIconTexture {\n }\n}\n(*temporary) = nil\n(*temporary) = CharacterHeadSlot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface\\FrameXML\\PaperDollFrame.lua:815\n beautyShadow = <table> {\n }\n backgroundTextureName = 136516\n IconOverlay = <unnamed> {\n }\n beautyBorder = <table> {\n }\n checkRelic = false\n Count = CharacterHeadSlotCount {\n }\n IconBorder = <unnamed> {\n }\n searchOverlay = CharacterHeadSlotSearchOverlay {\n }\n icon = CharacterHeadSlotIconTexture {\n }\n}\n(*temporary) = \"Interface\\AddOns\\xVermin\\media\\textureShadow\"\n(*temporary) = \"attempt to call method 'SetBeautyBorderShadowTexture' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:40: in function <Interface\\AddOns\\xVermin\\CharacterFrame.lua:1>",
+			["session"] = 847,
+			["counter"] = 3,
+		}, -- [36]
+		{
 			["message"] = "...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: Usage: CreateFrame(\"frameType\" [, \"name\"] [, parent] [, \"template\"] [, id])",
 			["time"] = "2020/07/11 17:53:14",
 			["locals"] = "(*temporary) = \"Button\"\n(*temporary) = \"NivayaSlot1\"\n(*temporary) = \"ItemButtonTemplate\"\n(*temporary) = \"ContainerFrameItemButtonTemplate\"\n",
 			["stack"] = "[C]: in function `CreateFrame'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: in function `Create'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:56: in function `New'\nInterface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:762: in function <Interface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:757>",
-			["session"] = 830,
-			["counter"] = 92,
-		}, -- [33]
-		{
-			["message"] = "(null)",
-			["time"] = "2020/07/11 19:09:15",
-			["session"] = 830,
-			["counter"] = 62,
-		}, -- [34]
+			["session"] = 855,
+			["counter"] = 117,
+		}, -- [37]
 	},
 }
