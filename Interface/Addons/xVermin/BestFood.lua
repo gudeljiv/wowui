@@ -140,28 +140,15 @@ function NeedsFoodBadly:UpdateMacros()
 	local _, class, _ = UnitClass("player")
 	if (UnitExists("pet") and class == "HUNTER") then
 		local petType = UnitCreatureFamily("pet")
-		if
-			(petType == "Bat" or petType == "Crab" or petType == "Gorilla" or petType == "Tallstrider" or petType == "Turtle" or
-				petType == "Wind Serpent")
-		 then
-			petfoodMacro =
-				defaultPetFoodMacro:gsub(
-				"<%a+>",
-				{
-					["<petfood>"] = "item:" .. tostring(best.food[1] and best.food[1].id or 0)
-				}
-			)
-			CreateOrUpdateMacro("PetFood", petfoodMacro)
-		else
-			petfoodMacro =
-				defaultPetFoodMacro:gsub(
-				"<%a+>",
-				{
-					["<petfood>"] = "item:" .. tostring(best.petfood[1] and best.petfood[1].id or 0)
-				}
-			)
-			CreateOrUpdateMacro("PetFood", petfoodMacro)
-		end
+
+		petfoodMacro =
+			defaultPetFoodMacro:gsub(
+			"<%a+>",
+			{
+				["<petfood>"] = "item:" .. tostring(best.petfood[1] and best.petfood[1].id or 0)
+			}
+		)
+		CreateOrUpdateMacro("PetFood", petfoodMacro)
 	end
 end
 
