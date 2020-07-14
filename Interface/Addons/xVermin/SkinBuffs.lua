@@ -41,7 +41,7 @@ local function SkinTarget()
 
 			if (frame ~= nil) then
 				frame:CreateBeautyBorder(config.buff.bordersize)
-				frame:SetBeautyBorderTexture(config.border.buff)
+				frame:SetBeautyBorderTexture(config.border.default)
 				frame:SetScale(config.buff.scale)
 			end
 		end
@@ -69,7 +69,7 @@ local function SkinTarget()
 
 			if (frame ~= nil) then
 				frame:CreateBeautyBorder(config.debuff.bordersize)
-				frame:SetBeautyBorderTexture(config.border.debuff)
+				frame:SetBeautyBorderTexture(config.border.colorize)
 				frame:SetBeautyBorderColor(color.r, color.g, color.b)
 				frame:SetScale(config.buff.scale)
 			end
@@ -78,7 +78,9 @@ local function SkinTarget()
 end
 
 local function SkinPet()
-	if PetFrame:IsShown() and not InCombatLockdown() then
+	print("a")
+	if PetFrame:IsShown() then
+		print("b")
 		local numBuffs = 0
 		for i = 1, 32 do
 			if (select(3, UnitBuff("pet", i))) then
@@ -108,7 +110,7 @@ local function SkinPet()
 
 			if (frame ~= nil) then
 				frame:CreateBeautyBorder(config.petbuff.bordersize)
-				frame:SetBeautyBorderTexture(config.border.buff)
+				frame:SetBeautyBorderTexture(config.border.default)
 			end
 		end
 
@@ -117,6 +119,8 @@ local function SkinPet()
 			local frameBorder = _G["PetFrameDebuff" .. i .. "Border"]
 			local frameCount = _G["PetFrameBuff" .. i .. "Count"]
 			local color
+
+			print("1")
 
 			if (frameBorder ~= nil) then
 				frameBorder:Hide()
@@ -134,8 +138,9 @@ local function SkinPet()
 			end
 
 			if (frame ~= nil) then
+				print(bordering)
 				frame:CreateBeautyBorder(config.petdebuff.bordersize)
-				frame:SetBeautyBorderTexture(config.border.debuff)
+				frame:SetBeautyBorderTexture(config.border.colorize)
 				frame:SetBeautyBorderColor(color.r, color.g, color.b)
 			end
 		end
@@ -166,9 +171,13 @@ end
 -- hooksecurefunc("FloatingChatFrame_UpdateBackgroundAnchors", UpdateBackgroundAnchors)
 -- TargetFrame:HookScript("OnUpdate", SkinTarget)
 -- PetFrame:HookScript("OnUpdate", SkinPet)
-hooksecurefunc("TargetFrame_UpdateAuras", SkinTarget)
+-- hooksecurefunc("TargetFrame_UpdateAuras", SkinTarget)
 -- hooksecurefunc("PET_BAR_UPDATE_COOLDOWN", SkinPet)
 
 local f = CreateFrame("Frame")
+frame:RegisterUnitEvent("UNIT_AURA", "pet")
 frame:SetScript("OnEvent", SkinPet)
-frame:RegisterEvent("UNIT_AURA")
+
+local f = CreateFrame("Frame")
+frame:RegisterUnitEvent("UNIT_AURA", "target")
+frame:SetScript("OnEvent", SkinTarget)

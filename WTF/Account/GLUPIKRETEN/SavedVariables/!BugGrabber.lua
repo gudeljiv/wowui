@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 856,
 	["lastSanitation"] = 3,
+	["session"] = 893,
 	["errors"] = {
 		{
 			["message"] = "[string \"ItemRackMenu3:CreateBeautyBorder(8)\"]:1: attempt to index global 'ItemRackMenu3' (a nil value)",
@@ -21,14 +21,14 @@ BugGrabberDB = {
 		}, -- [2]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Details\\Libs\\LibThreatClassic2\\lib.xml",
-			["time"] = "2020/07/11 19:09:15",
 			["session"] = 751,
+			["time"] = "2020/07/11 19:09:15",
 			["counter"] = 8,
 		}, -- [3]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Details_Streamer\\Details_Streamer.toc",
-			["session"] = 751,
 			["time"] = "2020/07/11 19:09:55",
+			["session"] = 751,
 			["counter"] = 2,
 		}, -- [4]
 		{
@@ -255,19 +255,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [32]
 		{
-			["message"] = "(null)",
-			["time"] = "2020/07/11 19:09:15",
-			["session"] = 830,
-			["counter"] = 62,
-		}, -- [33]
-		{
 			["message"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:30: Usage: GetItemQualityColor(index)",
 			["time"] = "2020/07/14 18:10:05",
 			["locals"] = "(*temporary) = nil\n",
 			["stack"] = "[C]: in function `GetItemQualityColor'\nInterface\\AddOns\\xVermin\\CharacterFrame.lua:30: in function <Interface\\AddOns\\xVermin\\CharacterFrame.lua:1>",
 			["session"] = 834,
 			["counter"] = 2,
-		}, -- [34]
+		}, -- [33]
 		{
 			["message"] = "Interface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:1176: attempt to call global 'dump' (a nil value)",
 			["time"] = "2020/07/14 18:18:37",
@@ -275,7 +269,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:1176: in function `BuildMenu'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:1834: in function `DockMenuToCharacterSheet'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:1814: in function `PaperDollItemSlotButton_OnEnter'\n[string \"*:OnEnter\"]:1: in function <[string \"*:OnEnter\"]:1>",
 			["session"] = 837,
 			["counter"] = 2,
-		}, -- [35]
+		}, -- [34]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:40: attempt to call method 'SetBeautyBorderShadowTexture' (a nil value)",
 			["time"] = "2020/07/14 18:55:45",
@@ -283,15 +277,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:40: in function <Interface\\AddOns\\xVermin\\CharacterFrame.lua:1>",
 			["session"] = 847,
 			["counter"] = 3,
-		}, -- [36]
-		{
-			["message"] = "...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: Usage: CreateFrame(\"frameType\" [, \"name\"] [, parent] [, \"template\"] [, id])",
-			["time"] = "2020/07/11 17:53:14",
-			["locals"] = "(*temporary) = \"Button\"\n(*temporary) = \"NivayaSlot1\"\n(*temporary) = \"ItemButtonTemplate\"\n(*temporary) = \"ContainerFrameItemButtonTemplate\"\n",
-			["stack"] = "[C]: in function `CreateFrame'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: in function `Create'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:56: in function `New'\nInterface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:762: in function <Interface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:757>",
-			["session"] = 856,
-			["counter"] = 118,
-		}, -- [37]
+		}, -- [35]
 		{
 			["message"] = "Interface\\AddOns\\BuffOwner\\BuffOwner-1.1.lua:19: attempt to call method 'GetRGB' (a nil value)",
 			["time"] = "2020/07/14 19:06:32",
@@ -299,6 +285,116 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\BuffOwner\\BuffOwner-1.1.lua:19: in function <Interface\\AddOns\\BuffOwner\\BuffOwner.lua:7>\n(tail call): ?\n[C]: in function `SetUnitBuff'\n[string \"*:OnEnter\"]:2: in function <[string \"*:OnEnter\"]:1>",
 			["session"] = 856,
 			["counter"] = 2,
+		}, -- [36]
+		{
+			["message"] = "Interface\\AddOns\\!Beautycase\\!Beautycase.lua:73: attempt to compare number with nil",
+			["time"] = "2020/07/14 20:26:25",
+			["locals"] = "self = Minimap {\n 0 = <userdata>\n timer = 0\n}\nuL1 = 1\nuL2 = 1\nuR1 = 1\nuR2 = 1\nbL1 = 1\nbL2 = 1\nbR1 = 1\nbR2 = 1\nspace = nil\n(*temporary) = nil\n(*temporary) = Minimap {\n 0 = <userdata>\n timer = 0\n}\n(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = \"|cffFF0000!Beautycase error:|r Invalid frame! This object has no !Beautycase border\"\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = true\n(*temporary) = \"attempt to compare number with nil\"\nformatName = \"|cffFF0000!Beautycase\"\nGetBeautyBorderInfo = <function> defined @Interface\\AddOns\\!Beautycase\\!Beautycase.lua:39\n",
+			["stack"] = "Interface\\AddOns\\!Beautycase\\!Beautycase.lua:73: in function `SetBeautyBorderPadding'\nInterface\\AddOns\\nMinimap\\core.lua:89: in main chunk",
+			["session"] = 858,
+			["counter"] = 1,
+		}, -- [37]
+		{
+			["message"] = "(null)",
+			["session"] = 858,
+			["time"] = "2020/07/11 19:09:15",
+			["counter"] = 65,
 		}, -- [38]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:32: attempt to concatenate field 'iq' (a nil value)",
+			["time"] = "2020/07/14 21:19:17",
+			["locals"] = "itemLink = nil\nr = 0.117647\ng = 1\nb = 0\nitemLink = \"|cff1eff00|Hitem:5346::::::::13:::11::::|h[Orcish Battle Bow]|h|r\"\n(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = CharacterHeadSlot {\n }\n 2 = CharacterNeckSlot {\n }\n 3 = CharacterShoulderSlot {\n }\n 4 = CharacterBackSlot {\n }\n 5 = CharacterChestSlot {\n }\n 6 = CharacterWristSlot {\n }\n 7 = CharacterHandsSlot {\n }\n 8 = CharacterWaistSlot {\n }\n 9 = CharacterLegsSlot {\n }\n 10 = CharacterFeetSlot {\n }\n 11 = CharacterFinger0Slot {\n }\n 12 = CharacterFinger1Slot {\n }\n 13 = CharacterTrinket0Slot {\n }\n 14 = CharacterTrinket1Slot {\n }\n 15 = CharacterMainHandSlot {\n }\n 16 = CharacterSecondaryHandSlot {\n }\n 17 = CharacterRangedSlot {\n }\n 18 = CharacterAmmoSlot {\n }\n}\n(for control) = 17\ni = 17\nv = CharacterRangedSlot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface\\FrameXML\\PaperDollFrame.lua:815\n beautyShadow = <table> {\n }\n backgroundTextureName = 136520\n IconOverlay = <unnamed> {\n }\n beautyBorder = <table> {\n }\n checkRelic = true\n Count = CharacterRangedSlotCount {\n }\n IconBorder = <unnamed> {\n }\n hasItem = 1\n searchOverlay = CharacterRangedSlotSearchOverlay {\n }\n icon = CharacterRangedSlotIconTexture {\n }\n count = 1\n}\n(*temporary) = <function> defined @Interface\\AddOns\\!Beautycase\\!Beautycase.lua:130\n(*temporary) = CharacterRangedSlot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface\\FrameXML\\PaperDollFrame.lua:815\n beautyShadow = <table> {\n }\n backgroundTextureName = 136520\n IconOverlay = <unnamed> {\n }\n beautyBorder = <table> {\n }\n checkRelic = true\n Count = CharacterRangedSlotCount {\n }\n IconBorder = <unnamed> {\n }\n hasItem = 1\n searchOverlay = CharacterRangedSlotSearchOverlay {\n }\n icon = CharacterRangedSlotIconTexture {\n }\n count = 1\n}\n(*temporary) = nil\n(*temporary) = 2\n(*temporary) = 0\n(*temporary) = \"ff1eff00\"\n(*temporary) = 0\n(*temporary) = \"Weapon\"\n(*temporary) = \"Bows\"\n(*temporary) = 1\n(*temporary) = \"INVTYPE_RANGED\"\n(*temporary) = 135496\n(*temporary) = 425\n(*temporary) = 2\n(*temporary) = 2\n(*temporary) = \"attempt to concatenate field 'iq' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:32: in function <Interface\\AddOns\\xVermin\\CharacterFrame.lua:1>",
+			["session"] = 871,
+			["counter"] = 2,
+		}, -- [39]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:34: attempt to concatenate field 'iq' (a table value)",
+			["time"] = "2020/07/14 21:32:14",
+			["locals"] = "itemLink = nil\nr = 0.117647\ng = 1\nb = 0\nitemLink = \"|cff1eff00|Hitem:5346::::::::13:::11::::|h[Orcish Battle Bow]|h|r\"\n(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = CharacterHeadSlot {\n }\n 2 = CharacterNeckSlot {\n }\n 3 = CharacterShoulderSlot {\n }\n 4 = CharacterBackSlot {\n }\n 5 = CharacterChestSlot {\n }\n 6 = CharacterWristSlot {\n }\n 7 = CharacterHandsSlot {\n }\n 8 = CharacterWaistSlot {\n }\n 9 = CharacterLegsSlot {\n }\n 10 = CharacterFeetSlot {\n }\n 11 = CharacterFinger0Slot {\n }\n 12 = CharacterFinger1Slot {\n }\n 13 = CharacterTrinket0Slot {\n }\n 14 = CharacterTrinket1Slot {\n }\n 15 = CharacterMainHandSlot {\n }\n 16 = CharacterSecondaryHandSlot {\n }\n 17 = CharacterRangedSlot {\n }\n 18 = CharacterAmmoSlot {\n }\n}\n(for control) = 17\ni = 17\nv = CharacterRangedSlot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface\\FrameXML\\PaperDollFrame.lua:815\n beautyShadow = <table> {\n }\n backgroundTextureName = 136520\n IconOverlay = <unnamed> {\n }\n beautyBorder = <table> {\n }\n checkRelic = true\n Count = CharacterRangedSlotCount {\n }\n IconBorder = <unnamed> {\n }\n searchOverlay = CharacterRangedSlotSearchOverlay {\n }\n icon = CharacterRangedSlotIconTexture {\n }\n}\n(*temporary) = <function> defined @Interface\\AddOns\\!Beautycase\\!Beautycase.lua:130\n(*temporary) = CharacterRangedSlot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface\\FrameXML\\PaperDollFrame.lua:815\n beautyShadow = <table> {\n }\n backgroundTextureName = 136520\n IconOverlay = <unnamed> {\n }\n beautyBorder = <table> {\n }\n checkRelic = true\n Count = CharacterRangedSlotCount {\n }\n IconBorder = <unnamed> {\n }\n searchOverlay = CharacterRangedSlotSearchOverlay {\n }\n icon = CharacterRangedSlotIconTexture {\n }\n}\n(*temporary) = <table> {\n 1 = \"Interface\\AddOns\\xVermin\\media\\ItemQuality0\"\n 2 = \"Interface\\AddOns\\xVermin\\media\\ItemQuality1\"\n 3 = \"Interface\\AddOns\\xVermin\\media\\ItemQuality2\"\n 4 = \"Interface\\AddOns\\xVermin\\media\\ItemQuality3\"\n 5 = \"Interface\\AddOns\\xVermin\\media\\ItemQuality4\"\n 6 = \"Interface\\AddOns\\xVermin\\media\\ItemQuality5\"\n 7 = \"Interface\\AddOns\\xVermin\\media\\ItemQuality6\"\n 8 = \"Interface\\AddOns\\xVermin\\media\\ItemQuality7\"\n}\n(*temporary) = 2\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = true\n(*temporary) = true\n(*temporary) = true\n(*temporary) = true\n(*temporary) = nil\n(*temporary) = 2\n(*temporary) = true\n(*temporary) = nil\n(*temporary) = true\n(*temporary) = nil\n(*temporary) = \"attempt to concatenate field 'iq' (a table value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:34: in function <Interface\\AddOns\\xVermin\\CharacterFrame.lua:1>",
+			["session"] = 872,
+			["counter"] = 1,
+		}, -- [40]
+		{
+			["message"] = "[string \"PetActionBarButton2:SetScale(2)\"]:1: attempt to index global 'PetActionBarButton2' (a nil value)",
+			["time"] = "2020/07/14 21:34:16",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'PetActionBarButton2' (a nil value)\"\n",
+			["stack"] = "[string \"PetActionBarButton2:SetScale(2)\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 873,
+			["counter"] = 1,
+		}, -- [41]
+		{
+			["message"] = "[string \"PetActionButton1:setScale(5)\"]:1: attempt to call method 'setScale' (a nil value)",
+			["time"] = "2020/07/14 21:41:38",
+			["locals"] = "(*temporary) = nil\n(*temporary) = PetActionButton1 {\n 0 = <userdata>\n HotKey = PetActionButton1HotKey {\n }\n NewActionTexture = <unnamed> {\n }\n Border = PetActionButton1Border {\n }\n Flash = PetActionButton1Flash {\n }\n tooltipName = \"Attack\"\n icon = PetActionButton1Icon {\n }\n AutoCastable = <unnamed> {\n }\n SpellHighlightAnim = <unnamed> {\n }\n SetPoint = <function> defined @Interface\\AddOns\\xVermin\\xVermin.lua:188\n ClearAllPoints = <function> defined @Interface\\AddOns\\xVermin\\xVermin.lua:186\n Shadow = <unnamed> {\n }\n flashing = false\n SpellHighlightTexture = <unnamed> {\n }\n NormalTexture = <table> {\n }\n isToken = 1\n FlyoutBorderShadow = PetActionButton1FlyoutBorderShadow {\n }\n FlyoutBorder = PetActionButton1FlyoutBorder {\n }\n Count = PetActionButton1Count {\n }\n AutoCastShine = PetActionButton1Shine {\n }\n FlyoutArrow = PetActionButton1FlyoutArrow {\n }\n cooldown = PetActionButton1Cooldown {\n }\n Name = PetActionButton1Name {\n }\n}\n(*temporary) = 5\n(*temporary) = \"attempt to call method 'setScale' (a nil value)\"\n",
+			["stack"] = "[string \"PetActionButton1:setScale(5)\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2783: in function <Interface\\FrameXML\\ChatFrame.lua:2776>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:338: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 875,
+			["counter"] = 1,
+		}, -- [42]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:26: attempt to concatenate global 'name' (a nil value)",
+			["time"] = "2020/07/14 21:48:53",
+			["locals"] = "itemLink = nil\nr = nil\ng = nil\nb = nil\nitemLink = nil\n(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = CharacterHeadSlot {\n }\n 2 = CharacterNeckSlot {\n }\n 3 = CharacterShoulderSlot {\n }\n 4 = CharacterBackSlot {\n }\n 5 = CharacterChestSlot {\n }\n 6 = CharacterWristSlot {\n }\n 7 = CharacterHandsSlot {\n }\n 8 = CharacterWaistSlot {\n }\n 9 = CharacterLegsSlot {\n }\n 10 = CharacterFeetSlot {\n }\n 11 = CharacterFinger0Slot {\n }\n 12 = CharacterFinger1Slot {\n }\n 13 = CharacterTrinket0Slot {\n }\n 14 = CharacterTrinket1Slot {\n }\n 15 = CharacterMainHandSlot {\n }\n 16 = CharacterSecondaryHandSlot {\n }\n 17 = CharacterRangedSlot {\n }\n 18 = CharacterAmmoSlot {\n }\n}\n(for control) = 1\ni = 1\nv = CharacterHeadSlot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface\\FrameXML\\PaperDollFrame.lua:815\n backgroundTextureName = 136516\n IconOverlay = <unnamed> {\n }\n checkRelic = false\n Count = CharacterHeadSlotCount {\n }\n IconBorder = <unnamed> {\n }\n searchOverlay = CharacterHeadSlotSearchOverlay {\n }\n icon = CharacterHeadSlotIconTexture {\n }\n}\n(*temporary) = <table> {\n UpdateOnBarHighlightMarksBySpell = <function> defined @Interface\\FrameXML\\ActionButton.lua:70\n ERR_OUT_OF_CHI = \"Not enough chi\"\n DH_HAVOC_CORE_ABILITY_2 = \"Strong melee attack that consumes Fury. If it critical strikes, some Fury is refunded.\"\n MerchantItem9ItemButtonStock = MerchantItem9ItemButtonStock {\n }\n GetTrainerServiceTypeFilter = <function> defined =[C]:-1\n UNIT_NAMES_COMBATLOG_TOOLTIP = \"Color unit names.\"\n SetTrainerServiceTypeFilter = <function> defined =[C]:-1\n LE_GAME_ERR_CHAT_RAID_RESTRICTED_TRIAL = 742\n SPELL_FAILED_CUSTOM_ERROR_71 = \"This partygoer wants to dance with you.\"\n LE_GAME_ERR_PET_SPELL_TARGETS_DEAD = 399\n ERROR_CLUB_TICKET_COUNT_AT_MAX_COMMUNITY = \"Can't create any more invite links for this group.\"\n RecruitAFriendFrame = RecruitAFriendFrame {\n }\n CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture = CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture {\n }\n ERR_TRADE_EQUIPPED_BAG = \"You can't trade equipped bags.\"\n PVP_RANK_6_1 = \"Corporal\"\n MultiBarLeftButton7 = MultiBarLeftButton7 {\n }\n InterfaceOptionsNamesPanelUnitNameplatesShowAll = InterfaceOptionsNamesPanelUnitNameplatesShowAll {\n }\n VideoOptionsFrameDefaults = VideoOptionsFrameDefaults {\n }\n MerchantItem2AltCurrencyFrameItem1Text = MerchantItem2AltCurrencyFrameItem1Text {\n }\n OPTION_TOOLTIP_ACTION_BUTTON_USE_KEY_DOWN = \"Action button keybinds will respond on key down, rather than on key up.\"\n BINDING_NAME_NAMEPLATES = \"Show Enemy Name Plates\"\n INSTANCE_UNAVAILABLE_OTHER_TEMPORARILY_DISABLED = \"%s cannot enter. This instance is temporarily disabled.\"\n MultiBarBottomRightButton8Shine5 = MultiBarBottomRightButton8Shine5 {\n }\n IsReferAFriendLinked = <function> defined =[C]:-1\n MAIL_LETTER_TOOLTIP = \"Click to make a permanent\ncopy of this letter.\"\n UnitFrameManaBar_UnregisterDefaultEvents = <function> defined @Interface\\FrameXML\\UnitFrame.lua:602\n ERR_NOAMMO_S = \"%s\"\n CHAT_CONFIG_OTHER_COMBAT = <table> {\n }\n FCFDockOverflowButton_OnClick = <function> defined @Interface\\FrameXML\\FloatingChatFrame.lua:2373\n BOOST2_WARRIOR_COLOSSUSSMASH = \"Use |cFFFFFFFFColossus Smash|r.\n\n|cFFFFFFFFColossus Smash|r increases your damage.\"\n BN_UNABLE_TO_RESOLVE_NAME = \"Unable to whisper '%s'. Blizzard services may be unavailable.\"\n LE_GAME_ERR_RECRUIT_A_FRIEND_FAILED = 952\n CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight = CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight {\n }\n LE_GAME_ERR_ONLY_ONE_QUIVER = 32\n SpellButton6Cooldown = SpellButton6Cooldown {\n }\n LOSS_OF_CONTROL_DISPLAY_FEAR = \"Feared\"\n Graphics_QualityText = Graphics_QualityText {\n }\n VOICEMACRO_4_Sc_1_FEMALE = \"Help me attack!\"\n StanceButton4FlyoutArrow = StanceButton4FlyoutArrow {\n }\n MultiBarRightButton7Shine9 = MultiBarRightButton7Shine9 {\n }\n BankFrameItem17SearchOverlay = BankFrameItem17SearchOverlay {\n }\n DMG_LCD = \"DMG\"\n VideoOptionsPanel_Cancel = <function> defined @Interface\\SharedXML\\VideoOptionsPanels.lua:315\n HubPanelProfileDefaultFrie",
+			["stack"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:26: in function <Interface\\AddOns\\xVermin\\CharacterFrame.lua:1>",
+			["session"] = 876,
+			["counter"] = 1,
+		}, -- [43]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:26: attempt to concatenate local 'v' (a table value)",
+			["time"] = "2020/07/14 21:49:25",
+			["locals"] = "itemLink = nil\nr = nil\ng = nil\nb = nil\nitemLink = nil\n(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = CharacterHeadSlot {\n }\n 2 = CharacterNeckSlot {\n }\n 3 = CharacterShoulderSlot {\n }\n 4 = CharacterBackSlot {\n }\n 5 = CharacterChestSlot {\n }\n 6 = CharacterWristSlot {\n }\n 7 = CharacterHandsSlot {\n }\n 8 = CharacterWaistSlot {\n }\n 9 = CharacterLegsSlot {\n }\n 10 = CharacterFeetSlot {\n }\n 11 = CharacterFinger0Slot {\n }\n 12 = CharacterFinger1Slot {\n }\n 13 = CharacterTrinket0Slot {\n }\n 14 = CharacterTrinket1Slot {\n }\n 15 = CharacterMainHandSlot {\n }\n 16 = CharacterSecondaryHandSlot {\n }\n 17 = CharacterRangedSlot {\n }\n 18 = CharacterAmmoSlot {\n }\n}\n(for control) = 1\ni = 1\nv = CharacterHeadSlot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface\\FrameXML\\PaperDollFrame.lua:815\n backgroundTextureName = 136516\n IconOverlay = <unnamed> {\n }\n checkRelic = false\n Count = CharacterHeadSlotCount {\n }\n IconBorder = <unnamed> {\n }\n searchOverlay = CharacterHeadSlotSearchOverlay {\n }\n icon = CharacterHeadSlotIconTexture {\n }\n}\n(*temporary) = <table> {\n UpdateOnBarHighlightMarksBySpell = <function> defined @Interface\\FrameXML\\ActionButton.lua:70\n ERR_OUT_OF_CHI = \"Not enough chi\"\n DH_HAVOC_CORE_ABILITY_2 = \"Strong melee attack that consumes Fury. If it critical strikes, some Fury is refunded.\"\n MerchantItem9ItemButtonStock = MerchantItem9ItemButtonStock {\n }\n GetTrainerServiceTypeFilter = <function> defined =[C]:-1\n UNIT_NAMES_COMBATLOG_TOOLTIP = \"Color unit names.\"\n SetTrainerServiceTypeFilter = <function> defined =[C]:-1\n LE_GAME_ERR_CHAT_RAID_RESTRICTED_TRIAL = 742\n SPELL_FAILED_CUSTOM_ERROR_71 = \"This partygoer wants to dance with you.\"\n LE_GAME_ERR_PET_SPELL_TARGETS_DEAD = 399\n ERROR_CLUB_TICKET_COUNT_AT_MAX_COMMUNITY = \"Can't create any more invite links for this group.\"\n RecruitAFriendFrame = RecruitAFriendFrame {\n }\n CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture = CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture {\n }\n ERR_TRADE_EQUIPPED_BAG = \"You can't trade equipped bags.\"\n PVP_RANK_6_1 = \"Corporal\"\n MultiBarLeftButton7 = MultiBarLeftButton7 {\n }\n InterfaceOptionsNamesPanelUnitNameplatesShowAll = InterfaceOptionsNamesPanelUnitNameplatesShowAll {\n }\n VideoOptionsFrameDefaults = VideoOptionsFrameDefaults {\n }\n MerchantItem2AltCurrencyFrameItem1Text = MerchantItem2AltCurrencyFrameItem1Text {\n }\n OPTION_TOOLTIP_ACTION_BUTTON_USE_KEY_DOWN = \"Action button keybinds will respond on key down, rather than on key up.\"\n BINDING_NAME_NAMEPLATES = \"Show Enemy Name Plates\"\n INSTANCE_UNAVAILABLE_OTHER_TEMPORARILY_DISABLED = \"%s cannot enter. This instance is temporarily disabled.\"\n MultiBarBottomRightButton8Shine5 = MultiBarBottomRightButton8Shine5 {\n }\n IsReferAFriendLinked = <function> defined =[C]:-1\n MAIL_LETTER_TOOLTIP = \"Click to make a permanent\ncopy of this letter.\"\n UnitFrameManaBar_UnregisterDefaultEvents = <function> defined @Interface\\FrameXML\\UnitFrame.lua:602\n ERR_NOAMMO_S = \"%s\"\n CHAT_CONFIG_OTHER_COMBAT = <table> {\n }\n FCFDockOverflowButton_OnClick = <function> defined @Interface\\FrameXML\\FloatingChatFrame.lua:2373\n BOOST2_WARRIOR_COLOSSUSSMASH = \"Use |cFFFFFFFFColossus Smash|r.\n\n|cFFFFFFFFColossus Smash|r increases your damage.\"\n BN_UNABLE_TO_RESOLVE_NAME = \"Unable to whisper '%s'. Blizzard services may be unavailable.\"\n LE_GAME_ERR_RECRUIT_A_FRIEND_FAILED = 952\n CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight = CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight {\n }\n LE_GAME_ERR_ONLY_ONE_QUIVER = 32\n SpellButton6Cooldown = SpellButton6Cooldown {\n }\n LOSS_OF_CONTROL_DISPLAY_FEAR = \"Feared\"\n Graphics_QualityText = Graphics_QualityText {\n }\n VOICEMACRO_4_Sc_1_FEMALE = \"Help me attack!\"\n StanceButton4FlyoutArrow = StanceButton4FlyoutArrow {\n }\n MultiBarRightButton7Shine9 = MultiBarRightButton7Shine9 {\n }\n BankFrameItem17SearchOverlay = BankFrameItem17SearchOverlay {\n }\n DMG_LCD = \"DMG\"\n VideoOptionsPanel_Cancel = <function> defined @Interface\\SharedXML\\VideoOptionsPanels.lua:315\n HubPanelProfileDefaultFrie",
+			["stack"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:26: in function <Interface\\AddOns\\xVermin\\CharacterFrame.lua:1>",
+			["session"] = 877,
+			["counter"] = 1,
+		}, -- [44]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:27: attempt to index local 'normal' (a nil value)",
+			["time"] = "2020/07/14 21:50:18",
+			["locals"] = "itemLink = nil\nr = nil\ng = nil\nb = nil\nitemLink = nil\n(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = CharacterHeadSlot {\n }\n 2 = CharacterNeckSlot {\n }\n 3 = CharacterShoulderSlot {\n }\n 4 = CharacterBackSlot {\n }\n 5 = CharacterChestSlot {\n }\n 6 = CharacterWristSlot {\n }\n 7 = CharacterHandsSlot {\n }\n 8 = CharacterWaistSlot {\n }\n 9 = CharacterLegsSlot {\n }\n 10 = CharacterFeetSlot {\n }\n 11 = CharacterFinger0Slot {\n }\n 12 = CharacterFinger1Slot {\n }\n 13 = CharacterTrinket0Slot {\n }\n 14 = CharacterTrinket1Slot {\n }\n 15 = CharacterMainHandSlot {\n }\n 16 = CharacterSecondaryHandSlot {\n }\n 17 = CharacterRangedSlot {\n }\n 18 = CharacterAmmoSlot {\n }\n}\n(for control) = 1\ni = 1\nv = CharacterHeadSlot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface\\FrameXML\\PaperDollFrame.lua:815\n backgroundTextureName = 136516\n IconOverlay = <unnamed> {\n }\n checkRelic = false\n Count = CharacterHeadSlotCount {\n }\n IconBorder = <unnamed> {\n }\n searchOverlay = CharacterHeadSlotSearchOverlay {\n }\n icon = CharacterHeadSlotIconTexture {\n }\n}\nnormal = nil\n(*temporary) = \"ItemSlot1NormalTexture\"\n(*temporary) = nil\n(*temporary) = \"NormalTexture\"\n(*temporary) = CharacterWaistSlot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface\\FrameXML\\PaperDollFrame.lua:815\n backgroundTextureName = 136529\n IconOverlay = <unnamed> {\n }\n checkRelic = false\n Count = CharacterWaistSlotCount {\n }\n IconBorder = <unnamed> {\n }\n searchOverlay = CharacterWaistSlotSearchOverlay {\n }\n icon = CharacterWaistSlotIconTexture {\n }\n}\n(*temporary) = CharacterLegsSlot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface\\FrameXML\\PaperDollFrame.lua:815\n backgroundTextureName = 136517\n IconOverlay = <unnamed> {\n }\n checkRelic = false\n Count = CharacterLegsSlotCount {\n }\n IconBorder = <unnamed> {\n }\n searchOverlay = CharacterLegsSlotSearchOverlay {\n }\n icon = CharacterLegsSlotIconTexture {\n }\n}\n(*temporary) = CharacterFeetSlot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface\\FrameXML\\PaperDollFrame.lua:815\n backgroundTextureName = 136513\n IconOverlay = <unnamed> {\n }\n checkRelic = false\n Count = CharacterFeetSlotCount {\n }\n IconBorder = <unnamed> {\n }\n searchOverlay = CharacterFeetSlotSearchOverlay {\n }\n icon = CharacterFeetSlotIconTexture {\n }\n}\n(*temporary) = CharacterFinger0Slot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface\\FrameXML\\PaperDollFrame.lua:815\n backgroundTextureName = 136514\n IconOverlay = <unnamed> {\n }\n checkRelic = false\n Count = CharacterFinger0SlotCount {\n }\n IconBorder = <unnamed> {\n }\n searchOverlay = CharacterFinger0SlotSearchOverlay {\n }\n icon = CharacterFinger0SlotIconTexture {\n }\n}\n(*temporary) = CharacterFinger1Slot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface\\FrameXML\\PaperDollFrame.lua:815\n backgroundTextureName = 136514\n IconOverlay = <unnamed> {\n }\n checkRelic = false\n Count = CharacterFinger1SlotCount {\n }\n IconBorder = <unnamed> {\n }\n searchOverlay = CharacterFinger1SlotSearchOverlay {\n }\n icon = CharacterFinger1SlotIconTexture {\n }\n}\n(*temporary) = CharacterTrinket0Slot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface\\FrameXML\\PaperDollFrame.lua:815\n backgroundTextureName = 136528\n IconOverlay = <unnamed> {\n }\n checkRelic = false\n Count = CharacterTrinket0SlotCount {\n }\n IconBorder = <unnamed> {\n }\n searchOverlay = CharacterTrinket0SlotSearchOverlay {\n }\n icon = CharacterTrinket0SlotIconTexture {\n }\n}\n(*temporary) = CharacterTrinket1Slot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface\\FrameXML\\PaperDollFrame.lua:815\n backgroundTextureName = 136528\n IconOverlay = <unnamed> {\n }\n checkRelic = false\n Count = CharacterTrinket1SlotCount {\n }\n IconBorder = <unnamed> {\n }\n searchOverlay = CharacterTrinket1SlotSearchOverlay {\n }\n icon = CharacterTrinket1SlotIconTexture {\n }\n}\n(*temporary) = CharacterMainHandSlot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface\\FrameXML\\PaperDollFrame.lua:815\n backgroundTextureName = 136518\n IconOverlay = <unnamed> {\n }\n checkRelic = false\n Count = CharacterMainHandSl",
+			["stack"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:27: in function <Interface\\AddOns\\xVermin\\CharacterFrame.lua:1>",
+			["session"] = 878,
+			["counter"] = 1,
+		}, -- [45]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:28: attempt to index local 'normal' (a nil value)",
+			["time"] = "2020/07/14 21:51:23",
+			["locals"] = "itemLink = nil\nr = nil\ng = nil\nb = nil\nitemLink = nil\n(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = CharacterHeadSlot {\n }\n 2 = CharacterNeckSlot {\n }\n 3 = CharacterShoulderSlot {\n }\n 4 = CharacterBackSlot {\n }\n 5 = CharacterChestSlot {\n }\n 6 = CharacterWristSlot {\n }\n 7 = CharacterHandsSlot {\n }\n 8 = CharacterWaistSlot {\n }\n 9 = CharacterLegsSlot {\n }\n 10 = CharacterFeetSlot {\n }\n 11 = CharacterFinger0Slot {\n }\n 12 = CharacterFinger1Slot {\n }\n 13 = CharacterTrinket0Slot {\n }\n 14 = CharacterTrinket1Slot {\n }\n 15 = CharacterMainHandSlot {\n }\n 16 = CharacterSecondaryHandSlot {\n }\n 17 = CharacterRangedSlot {\n }\n 18 = CharacterAmmoSlot {\n }\n}\n(for control) = 1\ni = 1\nv = CharacterHeadSlot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface\\FrameXML\\PaperDollFrame.lua:815\n backgroundTextureName = 136516\n IconOverlay = <unnamed> {\n }\n checkRelic = false\n Count = CharacterHeadSlotCount {\n }\n IconBorder = <unnamed> {\n }\n searchOverlay = CharacterHeadSlotSearchOverlay {\n }\n icon = CharacterHeadSlotIconTexture {\n }\n}\nnormal = nil\n(*temporary) = \"ItemSlot1NormalTexture\"\n(*temporary) = nil\n(*temporary) = \"NormalTexture\"\n(*temporary) = CharacterWaistSlot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface\\FrameXML\\PaperDollFrame.lua:815\n backgroundTextureName = 136529\n IconOverlay = <unnamed> {\n }\n checkRelic = false\n Count = CharacterWaistSlotCount {\n }\n IconBorder = <unnamed> {\n }\n searchOverlay = CharacterWaistSlotSearchOverlay {\n }\n icon = CharacterWaistSlotIconTexture {\n }\n}\n(*temporary) = CharacterLegsSlot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface\\FrameXML\\PaperDollFrame.lua:815\n backgroundTextureName = 136517\n IconOverlay = <unnamed> {\n }\n checkRelic = false\n Count = CharacterLegsSlotCount {\n }\n IconBorder = <unnamed> {\n }\n searchOverlay = CharacterLegsSlotSearchOverlay {\n }\n icon = CharacterLegsSlotIconTexture {\n }\n}\n(*temporary) = CharacterFeetSlot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface\\FrameXML\\PaperDollFrame.lua:815\n backgroundTextureName = 136513\n IconOverlay = <unnamed> {\n }\n checkRelic = false\n Count = CharacterFeetSlotCount {\n }\n IconBorder = <unnamed> {\n }\n searchOverlay = CharacterFeetSlotSearchOverlay {\n }\n icon = CharacterFeetSlotIconTexture {\n }\n}\n(*temporary) = CharacterFinger0Slot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface\\FrameXML\\PaperDollFrame.lua:815\n backgroundTextureName = 136514\n IconOverlay = <unnamed> {\n }\n checkRelic = false\n Count = CharacterFinger0SlotCount {\n }\n IconBorder = <unnamed> {\n }\n searchOverlay = CharacterFinger0SlotSearchOverlay {\n }\n icon = CharacterFinger0SlotIconTexture {\n }\n}\n(*temporary) = CharacterFinger1Slot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface\\FrameXML\\PaperDollFrame.lua:815\n backgroundTextureName = 136514\n IconOverlay = <unnamed> {\n }\n checkRelic = false\n Count = CharacterFinger1SlotCount {\n }\n IconBorder = <unnamed> {\n }\n searchOverlay = CharacterFinger1SlotSearchOverlay {\n }\n icon = CharacterFinger1SlotIconTexture {\n }\n}\n(*temporary) = CharacterTrinket0Slot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface\\FrameXML\\PaperDollFrame.lua:815\n backgroundTextureName = 136528\n IconOverlay = <unnamed> {\n }\n checkRelic = false\n Count = CharacterTrinket0SlotCount {\n }\n IconBorder = <unnamed> {\n }\n searchOverlay = CharacterTrinket0SlotSearchOverlay {\n }\n icon = CharacterTrinket0SlotIconTexture {\n }\n}\n(*temporary) = CharacterTrinket1Slot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface\\FrameXML\\PaperDollFrame.lua:815\n backgroundTextureName = 136528\n IconOverlay = <unnamed> {\n }\n checkRelic = false\n Count = CharacterTrinket1SlotCount {\n }\n IconBorder = <unnamed> {\n }\n searchOverlay = CharacterTrinket1SlotSearchOverlay {\n }\n icon = CharacterTrinket1SlotIconTexture {\n }\n}\n(*temporary) = CharacterMainHandSlot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface\\FrameXML\\PaperDollFrame.lua:815\n backgroundTextureName = 136518\n IconOverlay = <unnamed> {\n }\n checkRelic = false\n Count = CharacterMainHandSl",
+			["stack"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:28: in function <Interface\\AddOns\\xVermin\\CharacterFrame.lua:1>",
+			["session"] = 879,
+			["counter"] = 1,
+		}, -- [46]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:27: Attempt to find 'this' in non-table object (used '.' instead of ':' ?)",
+			["time"] = "2020/07/14 21:53:26",
+			["locals"] = "",
+			["stack"] = "[C]: in function `GetName'\nInterface\\AddOns\\xVermin\\CharacterFrame.lua:27: in function <Interface\\AddOns\\xVermin\\CharacterFrame.lua:1>",
+			["session"] = 880,
+			["counter"] = 1,
+		}, -- [47]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:47: CharacterHeadSlotNormalTexture:SetAllPoints(): trying to anchor to itself",
+			["time"] = "2020/07/14 21:56:07",
+			["locals"] = "(*temporary) = CharacterHeadSlotNormalTexture {\n 0 = <userdata>\n}\n(*temporary) = CharacterHeadSlotNormalTexture {\n 0 = <userdata>\n}\n",
+			["stack"] = "[C]: in function `SetAllPoints'\nInterface\\AddOns\\xVermin\\CharacterFrame.lua:47: in function <Interface\\AddOns\\xVermin\\CharacterFrame.lua:1>",
+			["session"] = 883,
+			["counter"] = 1,
+		}, -- [48]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:43: CharacterBackSlotNormalTexture:SetAllPoints(): trying to anchor to itself",
+			["time"] = "2020/07/14 21:57:48",
+			["locals"] = "(*temporary) = CharacterBackSlotNormalTexture {\n 0 = <userdata>\n}\n(*temporary) = CharacterBackSlotNormalTexture {\n 0 = <userdata>\n}\n",
+			["stack"] = "[C]: in function `SetAllPoints'\nInterface\\AddOns\\xVermin\\CharacterFrame.lua:43: in function <Interface\\AddOns\\xVermin\\CharacterFrame.lua:1>",
+			["session"] = 885,
+			["counter"] = 1,
+		}, -- [49]
+		{
+			["message"] = "...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: Usage: CreateFrame(\"frameType\" [, \"name\"] [, parent] [, \"template\"] [, id])",
+			["time"] = "2020/07/11 17:53:14",
+			["locals"] = "(*temporary) = \"Button\"\n(*temporary) = \"NivayaSlot1\"\n(*temporary) = \"ItemButtonTemplate\"\n(*temporary) = \"ContainerFrameItemButtonTemplate\"\n",
+			["stack"] = "[C]: in function `CreateFrame'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: in function `Create'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:56: in function `New'\nInterface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:762: in function <Interface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:757>",
+			["session"] = 893,
+			["counter"] = 155,
+		}, -- [50]
 	},
 }

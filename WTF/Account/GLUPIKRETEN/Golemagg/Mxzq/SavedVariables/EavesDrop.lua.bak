@@ -223,6 +223,17 @@ EavesDropStatsDB = {
 						},
 						["icon"] = 132223,
 					},
+					["Arcane Shot"] = {
+						[-2] = {
+							["time"] = "|cffffffff07/12/20 11:11:29|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffArcane Shot|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4447-1-306-3244-00000B6710:Greater Plainstrider|hGreater Plainstrider|h for |cffffffff21|r |cffffffffArcane|r.",
+							["amount"] = 21,
+						},
+						[2] = {
+							["time"] = "|cffffffff07/13/20 05:15:15|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffArcane Shot|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4447-1-306-3254-00000C727D:Sunscale Lashtail|hSunscale Lashtail|h for |cffffffff42|r |cffffffffArcane|r.(Critical)",
+							["amount"] = 42,
+						},
+						["icon"] = 132218,
+					},
 					["Melee Attack"] = {
 						[-2] = {
 							["time"] = "|cffffffff07/12/20 04:18:17|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4447-1-88-3117-00000B1B19:Dustwind Savage|hDustwind Savage|h for |cffffffff15|r |cffffffffPhysical|r.",
@@ -251,16 +262,14 @@ EavesDropStatsDB = {
 						[2] = {
 						},
 					},
-					["Arcane Shot"] = {
+					["Wing Clip"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/12/20 11:11:29|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffArcane Shot|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4447-1-306-3244-00000B6710:Greater Plainstrider|hGreater Plainstrider|h for |cffffffff21|r |cffffffffArcane|r.",
-							["amount"] = 21,
+							["time"] = "|cffffffff07/14/20 08:35:23|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWing Clip|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4447-1-306-3246-00000DEFE9:Fleeting Plainstrider|hFleeting Plainstrider|h for |cffffffff3|r |cffffffffPhysical|r.",
+							["amount"] = 3,
 						},
 						[2] = {
-							["time"] = "|cffffffff07/13/20 05:15:15|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffArcane Shot|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4447-1-306-3254-00000C727D:Sunscale Lashtail|hSunscale Lashtail|h for |cffffffff42|r |cffffffffArcane|r.(Critical)",
-							["amount"] = 42,
 						},
-						["icon"] = 132218,
+						["icon"] = 132309,
 					},
 					["Serpent Sting"] = {
 						[-2] = {
@@ -303,8 +312,8 @@ EavesDropStatsDB = {
 					},
 					["Nature"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/12/20 08:41:09|r\n|Hicon:128:source|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4447-1-86-3273-00000B1B7C:Kolkar Stormer|hKolkar Stormer's|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Lightning Bolt|r|h hits |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h for |cffff131359|r |cffff1313Nature|r.",
-							["amount"] = 59,
+							["time"] = "|cffffffff07/14/20 08:40:09|r\n|Hicon:128:source|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4447-1-306-3273-00000DC033:Kolkar Stormer|hKolkar Stormer's|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Lightning Bolt|r|h hits |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h for |cffff131313|r |cffff1313Nature|r.(48 Overkill)",
+							["amount"] = 61,
 						},
 						[2] = {
 						},

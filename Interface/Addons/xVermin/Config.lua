@@ -13,12 +13,18 @@ config = {
 		white = "Interface\\Buttons\\WHITE8x8"
 	},
 	border = {
-		buff = "Interface\\AddOns\\xVermin\\media\\textureOverlay",
-		debuff = "Interface\\AddOns\\xVermin\\media\\textureDebuff",
-		neutral = "Interface\\AddOns\\xVermin\\media\\textureWhite",
-		shadow = "Interface\\AddOns\\xVermin\\media\\textureShadow",
-		normal = "Interface\\AddOns\\xVermin\\media\\textureNormal",
-		normalgloss = "Interface\\AddOns\\xVermin\\media\\textureNormal (gloss)"
+		default = "Interface\\AddOns\\xVermin\\media\\textureNormal",
+		colorize = "Interface\\AddOns\\xVermin\\media\\textureWhite",
+		iq = {
+			"Interface\\AddOns\\xVermin\\media\\ItemQuality0",
+			"Interface\\AddOns\\xVermin\\media\\ItemQuality1",
+			"Interface\\AddOns\\xVermin\\media\\ItemQuality2",
+			"Interface\\AddOns\\xVermin\\media\\ItemQuality3",
+			"Interface\\AddOns\\xVermin\\media\\ItemQuality4",
+			"Interface\\AddOns\\xVermin\\media\\ItemQuality5",
+			"Interface\\AddOns\\xVermin\\media\\ItemQuality6",
+			"Interface\\AddOns\\xVermin\\media\\ItemQuality7"
+		}
 	},
 	buff = {
 		scale = 1.3,

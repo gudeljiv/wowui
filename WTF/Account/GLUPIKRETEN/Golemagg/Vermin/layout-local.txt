@@ -48,6 +48,13 @@ X: 91
 Y: -74
 W: 500
 H: 478
+Frame: TargetFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 250
+Y: -96
+W: 232
+H: 100
 Frame: QuestFrame
 FrameLevel: 1
 Anchor: TOPLEFT
@@ -111,13 +118,6 @@ X: -173
 Y: -238
 W: 274
 H: 98
-Frame: TargetFrame
-FrameLevel: 1
-Anchor: CENTER
-X: 250
-Y: -96
-W: 232
-H: 100
 Frame: GameMenuFrame
 FrameLevel: 1
 Anchor: CENTER

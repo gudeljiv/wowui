@@ -34,6 +34,6 @@ ItemRackUser = {
 	},
 	["EnableQueues"] = "ON",
 	["Alpha"] = 1,
-	["MenuScale"] = 1.20000004768372,
+	["MenuScale"] = 1.2,
 	["EnableEvents"] = "ON",
 }
