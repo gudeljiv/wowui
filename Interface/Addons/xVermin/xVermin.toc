@@ -24,6 +24,7 @@ PlayerTargetSetMark.lua
 SkinBuffs.lua
 TrackingIcon.lua
 Unit.lua
+CharacterFrame.lua
 xDamageFont.lua
 xVermin.lua
 
