@@ -191,10 +191,10 @@ function NeedsFoodBadly:IsUsablePetFood(food)
 		end
 	end
 
-	return not (not (food and self:AvailableInArray(food, diet)))
+	return not (not (food and self:FindPairInPetFoodArray(food, diet)))
 end
 
-function NeedsFoodBadly:AvailableInArray(food, diet)
+function NeedsFoodBadly:FindPairInPetFoodArray(food, diet)
 	for i, v in ipairs(diet) do
 		if v == food.type then
 			return true
