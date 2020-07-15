@@ -25,6 +25,7 @@ SkinBuffs.lua
 TrackingIcon.lua
 Unit.lua
 CharacterFrame.lua
+TalentFrame.lua
 xDamageFont.lua
 xVermin.lua
 

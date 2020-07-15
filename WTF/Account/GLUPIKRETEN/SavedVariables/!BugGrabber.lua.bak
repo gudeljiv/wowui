@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 892,
+	["session"] = 898,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -295,19 +295,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [37]
 		{
-			["message"] = "(null)",
-			["time"] = "2020/07/11 19:09:15",
-			["session"] = 858,
-			["counter"] = 65,
-		}, -- [38]
-		{
 			["message"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:32: attempt to concatenate field 'iq' (a nil value)",
 			["time"] = "2020/07/14 21:19:17",
 			["locals"] = "itemLink = nil\nr = 0.117647\ng = 1\nb = 0\nitemLink = \"|cff1eff00|Hitem:5346::::::::13:::11::::|h[Orcish Battle Bow]|h|r\"\n(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = CharacterHeadSlot {\n }\n 2 = CharacterNeckSlot {\n }\n 3 = CharacterShoulderSlot {\n }\n 4 = CharacterBackSlot {\n }\n 5 = CharacterChestSlot {\n }\n 6 = CharacterWristSlot {\n }\n 7 = CharacterHandsSlot {\n }\n 8 = CharacterWaistSlot {\n }\n 9 = CharacterLegsSlot {\n }\n 10 = CharacterFeetSlot {\n }\n 11 = CharacterFinger0Slot {\n }\n 12 = CharacterFinger1Slot {\n }\n 13 = CharacterTrinket0Slot {\n }\n 14 = CharacterTrinket1Slot {\n }\n 15 = CharacterMainHandSlot {\n }\n 16 = CharacterSecondaryHandSlot {\n }\n 17 = CharacterRangedSlot {\n }\n 18 = CharacterAmmoSlot {\n }\n}\n(for control) = 17\ni = 17\nv = CharacterRangedSlot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface\\FrameXML\\PaperDollFrame.lua:815\n beautyShadow = <table> {\n }\n backgroundTextureName = 136520\n IconOverlay = <unnamed> {\n }\n beautyBorder = <table> {\n }\n checkRelic = true\n Count = CharacterRangedSlotCount {\n }\n IconBorder = <unnamed> {\n }\n hasItem = 1\n searchOverlay = CharacterRangedSlotSearchOverlay {\n }\n icon = CharacterRangedSlotIconTexture {\n }\n count = 1\n}\n(*temporary) = <function> defined @Interface\\AddOns\\!Beautycase\\!Beautycase.lua:130\n(*temporary) = CharacterRangedSlot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface\\FrameXML\\PaperDollFrame.lua:815\n beautyShadow = <table> {\n }\n backgroundTextureName = 136520\n IconOverlay = <unnamed> {\n }\n beautyBorder = <table> {\n }\n checkRelic = true\n Count = CharacterRangedSlotCount {\n }\n IconBorder = <unnamed> {\n }\n hasItem = 1\n searchOverlay = CharacterRangedSlotSearchOverlay {\n }\n icon = CharacterRangedSlotIconTexture {\n }\n count = 1\n}\n(*temporary) = nil\n(*temporary) = 2\n(*temporary) = 0\n(*temporary) = \"ff1eff00\"\n(*temporary) = 0\n(*temporary) = \"Weapon\"\n(*temporary) = \"Bows\"\n(*temporary) = 1\n(*temporary) = \"INVTYPE_RANGED\"\n(*temporary) = 135496\n(*temporary) = 425\n(*temporary) = 2\n(*temporary) = 2\n(*temporary) = \"attempt to concatenate field 'iq' (a nil value)\"\n",
 			["stack"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:32: in function <Interface\\AddOns\\xVermin\\CharacterFrame.lua:1>",
 			["session"] = 871,
 			["counter"] = 2,
-		}, -- [39]
+		}, -- [38]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:34: attempt to concatenate field 'iq' (a table value)",
 			["time"] = "2020/07/14 21:32:14",
@@ -315,7 +309,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:34: in function <Interface\\AddOns\\xVermin\\CharacterFrame.lua:1>",
 			["session"] = 872,
 			["counter"] = 1,
-		}, -- [40]
+		}, -- [39]
 		{
 			["message"] = "[string \"PetActionBarButton2:SetScale(2)\"]:1: attempt to index global 'PetActionBarButton2' (a nil value)",
 			["time"] = "2020/07/14 21:34:16",
@@ -323,7 +317,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"PetActionBarButton2:SetScale(2)\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 873,
 			["counter"] = 1,
-		}, -- [41]
+		}, -- [40]
 		{
 			["message"] = "[string \"PetActionButton1:setScale(5)\"]:1: attempt to call method 'setScale' (a nil value)",
 			["time"] = "2020/07/14 21:41:38",
@@ -331,7 +325,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"PetActionButton1:setScale(5)\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2783: in function <Interface\\FrameXML\\ChatFrame.lua:2776>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:338: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 875,
 			["counter"] = 1,
-		}, -- [42]
+		}, -- [41]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:26: attempt to concatenate global 'name' (a nil value)",
 			["time"] = "2020/07/14 21:48:53",
@@ -339,7 +333,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:26: in function <Interface\\AddOns\\xVermin\\CharacterFrame.lua:1>",
 			["session"] = 876,
 			["counter"] = 1,
-		}, -- [43]
+		}, -- [42]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:26: attempt to concatenate local 'v' (a table value)",
 			["time"] = "2020/07/14 21:49:25",
@@ -347,7 +341,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:26: in function <Interface\\AddOns\\xVermin\\CharacterFrame.lua:1>",
 			["session"] = 877,
 			["counter"] = 1,
-		}, -- [44]
+		}, -- [43]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:27: attempt to index local 'normal' (a nil value)",
 			["time"] = "2020/07/14 21:50:18",
@@ -355,7 +349,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:27: in function <Interface\\AddOns\\xVermin\\CharacterFrame.lua:1>",
 			["session"] = 878,
 			["counter"] = 1,
-		}, -- [45]
+		}, -- [44]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:28: attempt to index local 'normal' (a nil value)",
 			["time"] = "2020/07/14 21:51:23",
@@ -363,7 +357,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:28: in function <Interface\\AddOns\\xVermin\\CharacterFrame.lua:1>",
 			["session"] = 879,
 			["counter"] = 1,
-		}, -- [46]
+		}, -- [45]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:27: Attempt to find 'this' in non-table object (used '.' instead of ':' ?)",
 			["time"] = "2020/07/14 21:53:26",
@@ -371,7 +365,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `GetName'\nInterface\\AddOns\\xVermin\\CharacterFrame.lua:27: in function <Interface\\AddOns\\xVermin\\CharacterFrame.lua:1>",
 			["session"] = 880,
 			["counter"] = 1,
-		}, -- [47]
+		}, -- [46]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:47: CharacterHeadSlotNormalTexture:SetAllPoints(): trying to anchor to itself",
 			["time"] = "2020/07/14 21:56:07",
@@ -379,7 +373,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `SetAllPoints'\nInterface\\AddOns\\xVermin\\CharacterFrame.lua:47: in function <Interface\\AddOns\\xVermin\\CharacterFrame.lua:1>",
 			["session"] = 883,
 			["counter"] = 1,
-		}, -- [48]
+		}, -- [47]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:43: CharacterBackSlotNormalTexture:SetAllPoints(): trying to anchor to itself",
 			["time"] = "2020/07/14 21:57:48",
@@ -387,14 +381,28 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `SetAllPoints'\nInterface\\AddOns\\xVermin\\CharacterFrame.lua:43: in function <Interface\\AddOns\\xVermin\\CharacterFrame.lua:1>",
 			["session"] = 885,
 			["counter"] = 1,
+		}, -- [48]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:176: CreateFrame: Unknown frame type 'pf'",
+			["time"] = "2020/07/15 12:53:06",
+			["locals"] = "(*temporary) = \"pf\"\n",
+			["stack"] = "[C]: in function `CreateFrame'\nInterface\\AddOns\\xVermin\\SkinBuffs.lua:176: in main chunk",
+			["session"] = 896,
+			["counter"] = 3,
 		}, -- [49]
+		{
+			["message"] = "(null)",
+			["time"] = "2020/07/11 19:09:15",
+			["session"] = 896,
+			["counter"] = 74,
+		}, -- [50]
 		{
 			["message"] = "...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: Usage: CreateFrame(\"frameType\" [, \"name\"] [, parent] [, \"template\"] [, id])",
 			["time"] = "2020/07/11 17:53:14",
 			["locals"] = "(*temporary) = \"Button\"\n(*temporary) = \"NivayaSlot1\"\n(*temporary) = \"ItemButtonTemplate\"\n(*temporary) = \"ContainerFrameItemButtonTemplate\"\n",
 			["stack"] = "[C]: in function `CreateFrame'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: in function `Create'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:56: in function `New'\nInterface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:762: in function <Interface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:757>",
-			["session"] = 892,
-			["counter"] = 154,
-		}, -- [50]
+			["session"] = 898,
+			["counter"] = 160,
+		}, -- [51]
 	},
 }

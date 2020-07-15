@@ -78,9 +78,7 @@ local function SkinTarget()
 end
 
 local function SkinPet()
-	print("a")
 	if PetFrame:IsShown() then
-		print("b")
 		local numBuffs = 0
 		for i = 1, 32 do
 			if (select(3, UnitBuff("pet", i))) then
@@ -120,8 +118,6 @@ local function SkinPet()
 			local frameCount = _G["PetFrameBuff" .. i .. "Count"]
 			local color
 
-			print("1")
-
 			if (frameBorder ~= nil) then
 				frameBorder:Hide()
 			end
@@ -138,7 +134,6 @@ local function SkinPet()
 			end
 
 			if (frame ~= nil) then
-				print(bordering)
 				frame:CreateBeautyBorder(config.petdebuff.bordersize)
 				frame:SetBeautyBorderTexture(config.border.colorize)
 				frame:SetBeautyBorderColor(color.r, color.g, color.b)
@@ -147,37 +142,11 @@ local function SkinPet()
 	end
 end
 
-local function SkinFocus()
-	-- if FocusFrame:IsShown() then
-	-- 	numDebuffs = 0
-	-- 	for i=1, MAX_FOCUS_DEBUFFS do
-	-- 		if( select(3, UnitDebuff("focus", i)) ) then
-	-- 			numDebuffs = numDebuffs + 1
-	-- 		end
-	-- 	end
-	-- 	for i=1, numDebuffs do
-	-- 		local frame = _G["FocusFrameDebuff"..i]
-	-- 		-- frame:Hide()
-	-- 		frame:SetScale(1.2);
-	-- 		frame:CreateBeautyBorder(4)
-	--   	end
-	-- end
-end
+local pf = CreateFrame("Frame")
+pf:RegisterUnitEvent("UNIT_AURA", "pet")
+pf:SetScript("OnEvent", SkinPet)
 
--- hooksecurefunc(TargetFrame, "Update", SkinTarget)
-
--- hooksecurefunc("TargetFrame_Update", SkinTarget)
--- hooksecurefunc("PetFrame_Update", SkinPet)
--- hooksecurefunc("FloatingChatFrame_UpdateBackgroundAnchors", UpdateBackgroundAnchors)
--- TargetFrame:HookScript("OnUpdate", SkinTarget)
--- PetFrame:HookScript("OnUpdate", SkinPet)
--- hooksecurefunc("TargetFrame_UpdateAuras", SkinTarget)
--- hooksecurefunc("PET_BAR_UPDATE_COOLDOWN", SkinPet)
-
-local f = CreateFrame("Frame")
-frame:RegisterUnitEvent("UNIT_AURA", "pet")
-frame:SetScript("OnEvent", SkinPet)
-
-local f = CreateFrame("Frame")
-frame:RegisterUnitEvent("UNIT_AURA", "target")
-frame:SetScript("OnEvent", SkinTarget)
+local tf = CreateFrame("Frame")
+tf:RegisterUnitEvent("UNIT_AURA", "target")
+tf:RegisterEvent("PLAYER_TARGET_CHANGED")
+tf:SetScript("OnEvent", SkinTarget)

@@ -12,8 +12,8 @@ VER 3 0000000000000001 "FRAME" "132150"
 /fstack
 END
 VER 3 0000000000000002 "MOVE" "Ability_Ambush."
-/run DurabilityFrame:ClearAllPoints()
-/run DurabilityFrame:SetPoint("TOP", "EavesDropFrame", "BOTTOM", -25, 0)
+/run PetActionButton1:SetScale(1)
+/run PetActionButton2:SetScale(1)
 END
 VER 3 0000000000000005 "PetFood" "Inv_misc_questionmark"
 #showtooltip item:2287

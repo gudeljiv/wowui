@@ -21,16 +21,16 @@ _detalhes_database = {
 							["pets"] = {
 								"Cat <Mxzq>", -- [1]
 							},
-							["total"] = 260.003742,
+							["end_time"] = 1594754074,
 							["last_event"] = 1594754072,
-							["friendlyfire_total"] = 0,
+							["classe"] = "HUNTER",
 							["raid_targets"] = {
 								[128] = 260,
 							},
 							["total_without_pet"] = 168.003742,
 							["delay"] = 0,
 							["dps_started"] = false,
-							["end_time"] = 1594754074,
+							["total"] = 260.003742,
 							["on_hold"] = false,
 							["friendlyfire"] = {
 							},
@@ -88,8 +88,8 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 5,
@@ -136,7 +136,7 @@ _detalhes_database = {
 							["damage_taken"] = 0.003742,
 							["start_time"] = 1594754062,
 							["serial"] = "Player-4465-01C7FC88",
-							["classe"] = "HUNTER",
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -150,14 +150,14 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["damage_taken"] = 260.002081,
 							["friendlyfire_total"] = 0,
+							["damage_taken"] = 260.002081,
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 122.002081,
 							["delay"] = 0,
-							["fight_component"] = true,
+							["dps_started"] = false,
 							["total"] = 122.002081,
 							["monster"] = true,
 							["on_hold"] = false,
@@ -184,8 +184,8 @@ _detalhes_database = {
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 2,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
@@ -215,8 +215,8 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
@@ -235,7 +235,7 @@ _detalhes_database = {
 							},
 							["start_time"] = 1594754063,
 							["serial"] = "Creature-0-4447-1-306-3273-00000DF1B3",
-							["dps_started"] = false,
+							["fight_component"] = true,
 						}, -- [2]
 						{
 							["flag_original"] = 4369,
@@ -341,7 +341,9 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["buff_uptime"] = 20,
+							["pets"] = {
+								"Cat <Mxzq>", -- [1]
+							},
 							["classe"] = "HUNTER",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
@@ -382,9 +384,7 @@ _detalhes_database = {
 							},
 							["tipo"] = 4,
 							["nome"] = "Mxzq",
-							["pets"] = {
-								"Cat <Mxzq>", -- [1]
-							},
+							["buff_uptime"] = 20,
 							["serial"] = "Player-4465-01C7FC88",
 							["last_event"] = 1594754074,
 						}, -- [1]
@@ -409,9 +409,9 @@ _detalhes_database = {
 							["nome"] = "Cat <Mxzq>",
 							["pets"] = {
 							},
+							["last_event"] = 0,
 							["classe"] = "PET",
 							["tipo"] = 4,
-							["last_event"] = 0,
 							["serial"] = "Pet-0-4447-1-306-3415-10003251E4",
 							["spell_cast"] = {
 								["Growl"] = 2,
@@ -433,9 +433,7 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 1650,
 				["playing_solo"] = true,
 				["totals"] = {
 					382, -- [1]
@@ -460,24 +458,6 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:14:34",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Kolkar Stormer",
-				["TotalElapsedCombatTime"] = 537480.512,
-				["CombatEndedAt"] = 537480.512,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "21:14:22",
-				["end_time"] = 537480.512,
-				["combat_id"] = 1256,
 				["totals_grupo"] = {
 					168, -- [1]
 					0, -- [2]
@@ -499,8 +479,18 @@ _detalhes_database = {
 						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
-				["frags"] = {
-					["Kolkar Stormer"] = 1,
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "21:14:34",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kolkar Stormer",
+				["TotalElapsedCombatTime"] = 537480.512,
+				["CombatEndedAt"] = 537480.512,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -521,14 +511,24 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["combat_counter"] = 1650,
+				["end_time"] = 537480.512,
+				["combat_id"] = 1256,
+				["player_last_events"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["data_inicio"] = "21:14:22",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["CombatSkillCache"] = {
 				},
 				["contra"] = "Kolkar Stormer",
 				["start_time"] = 537468.756,
 				["TimeData"] = {
 				},
-				["spells_cast_timeline"] = {
+				["frags"] = {
+					["Kolkar Stormer"] = 1,
 				},
 			}, -- [1]
 			{
@@ -548,16 +548,16 @@ _detalhes_database = {
 							["pets"] = {
 								"Cat <Mxzq>", -- [1]
 							},
-							["total"] = 254.003608,
+							["end_time"] = 1594754019,
 							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
+							["classe"] = "HUNTER",
 							["raid_targets"] = {
 								[128] = 254,
 							},
 							["total_without_pet"] = 164.003608,
 							["delay"] = 0,
 							["dps_started"] = false,
-							["end_time"] = 1594754019,
+							["total"] = 254.003608,
 							["damage_taken"] = 46.003608,
 							["friendlyfire"] = {
 							},
@@ -586,8 +586,8 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
@@ -663,7 +663,7 @@ _detalhes_database = {
 							["on_hold"] = false,
 							["start_time"] = 1594754006,
 							["serial"] = "Player-4465-01C7FC88",
-							["classe"] = "HUNTER",
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -746,16 +746,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["fight_component"] = true,
 							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 111.004921,
 							["delay"] = 0,
 							["dps_started"] = false,
-							["total"] = 111.004921,
 							["end_time"] = 1594754019,
+							["total"] = 111.004921,
 							["damage_taken"] = 254.004921,
 							["nome"] = "Kolkar Stormer",
 							["spells"] = {
@@ -780,8 +780,8 @@ _detalhes_database = {
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
@@ -868,9 +868,7 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["pets"] = {
-								"Cat <Mxzq>", -- [1]
-							},
+							["buff_uptime"] = 13,
 							["classe"] = "HUNTER",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
@@ -900,7 +898,9 @@ _detalhes_database = {
 							["tipo"] = 4,
 							["debuff_uptime_targets"] = {
 							},
-							["buff_uptime"] = 13,
+							["pets"] = {
+								"Cat <Mxzq>", -- [1]
+							},
 							["serial"] = "Player-4465-01C7FC88",
 							["last_event"] = 1594754019,
 						}, -- [1]
@@ -925,9 +925,9 @@ _detalhes_database = {
 							["nome"] = "Cat <Mxzq>",
 							["pets"] = {
 							},
+							["last_event"] = 0,
 							["classe"] = "PET",
 							["tipo"] = 4,
-							["last_event"] = 0,
 							["serial"] = "Pet-0-4447-1-306-3415-10003251E4",
 							["spell_cast"] = {
 								["Growl"] = 1,
@@ -950,9 +950,7 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 1649,
 				["playing_solo"] = true,
 				["totals"] = {
 					365, -- [1]
@@ -977,24 +975,6 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:13:39",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Kolkar Stormer",
-				["TotalElapsedCombatTime"] = 537426.174,
-				["CombatEndedAt"] = 537426.174,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "21:13:26",
-				["end_time"] = 537426.174,
-				["combat_id"] = 1255,
 				["totals_grupo"] = {
 					164, -- [1]
 					0, -- [2]
@@ -1016,7 +996,18 @@ _detalhes_database = {
 						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
-				["spells_cast_timeline"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "21:13:39",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kolkar Stormer",
+				["TotalElapsedCombatTime"] = 537426.174,
+				["CombatEndedAt"] = 537426.174,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -1037,15 +1028,24 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["combat_counter"] = 1649,
+				["end_time"] = 537426.174,
+				["combat_id"] = 1255,
+				["player_last_events"] = {
+				},
+				["frags"] = {
+					["Kolkar Stormer"] = 1,
+				},
+				["data_inicio"] = "21:13:26",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["CombatSkillCache"] = {
 				},
 				["TimeData"] = {
 				},
 				["start_time"] = 537413.213,
 				["contra"] = "Kolkar Stormer",
-				["frags"] = {
-					["Kolkar Stormer"] = 1,
+				["spells_cast_timeline"] = {
 				},
 			}, -- [2]
 			{
@@ -1064,16 +1064,16 @@ _detalhes_database = {
 							["pets"] = {
 								"Cat <Mxzq>", -- [1]
 							},
-							["total"] = 298.003606,
+							["end_time"] = 1594753990,
 							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
+							["classe"] = "HUNTER",
 							["raid_targets"] = {
 								[128] = 298,
 							},
 							["total_without_pet"] = 214.003606,
 							["delay"] = 0,
 							["dps_started"] = false,
-							["end_time"] = 1594753990,
+							["total"] = 298.003606,
 							["damage_taken"] = 0.003606,
 							["friendlyfire"] = {
 							},
@@ -1102,8 +1102,8 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 2,
@@ -1179,7 +1179,7 @@ _detalhes_database = {
 							["on_hold"] = false,
 							["start_time"] = 1594753978,
 							["serial"] = "Player-4465-01C7FC88",
-							["classe"] = "HUNTER",
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -1261,16 +1261,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["fight_component"] = true,
 							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 71.00855,
 							["delay"] = 0,
 							["dps_started"] = false,
-							["total"] = 71.00855,
 							["end_time"] = 1594753990,
+							["total"] = 71.00855,
 							["damage_taken"] = 298.00855,
 							["nome"] = "Kolkar Wrangler",
 							["spells"] = {
@@ -1298,8 +1298,8 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 5,
@@ -1356,9 +1356,7 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["pets"] = {
-								"Cat <Mxzq>", -- [1]
-							},
+							["buff_uptime"] = 12,
 							["classe"] = "HUNTER",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
@@ -1389,7 +1387,9 @@ _detalhes_database = {
 							["tipo"] = 4,
 							["debuff_uptime_targets"] = {
 							},
-							["buff_uptime"] = 12,
+							["pets"] = {
+								"Cat <Mxzq>", -- [1]
+							},
 							["serial"] = "Player-4465-01C7FC88",
 							["last_event"] = 1594753990,
 						}, -- [1]
@@ -1399,9 +1399,9 @@ _detalhes_database = {
 							["nome"] = "Cat <Mxzq>",
 							["pets"] = {
 							},
+							["last_event"] = 0,
 							["classe"] = "PET",
 							["tipo"] = 4,
-							["last_event"] = 0,
 							["serial"] = "Pet-0-4447-1-306-3415-10003251E4",
 							["spell_cast"] = {
 								["Growl"] = 2,
@@ -1424,9 +1424,7 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 1648,
 				["playing_solo"] = true,
 				["totals"] = {
 					369, -- [1]
@@ -1451,24 +1449,6 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:13:10",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Kolkar Wrangler",
-				["TotalElapsedCombatTime"] = 11.7660000000615,
-				["CombatEndedAt"] = 537397.011,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "21:12:58",
-				["end_time"] = 537397.011,
-				["combat_id"] = 1254,
 				["totals_grupo"] = {
 					214, -- [1]
 					0, -- [2]
@@ -1490,7 +1470,18 @@ _detalhes_database = {
 						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
-				["spells_cast_timeline"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "21:13:10",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kolkar Wrangler",
+				["TotalElapsedCombatTime"] = 11.7660000000615,
+				["CombatEndedAt"] = 537397.011,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -1511,15 +1502,24 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["combat_counter"] = 1648,
+				["end_time"] = 537397.011,
+				["combat_id"] = 1254,
+				["player_last_events"] = {
+				},
+				["frags"] = {
+					["Kolkar Wrangler"] = 1,
+				},
+				["data_inicio"] = "21:12:58",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["CombatSkillCache"] = {
 				},
 				["TimeData"] = {
 				},
 				["start_time"] = 537384.837,
 				["contra"] = "Kolkar Wrangler",
-				["frags"] = {
-					["Kolkar Wrangler"] = 1,
+				["spells_cast_timeline"] = {
 				},
 			}, -- [3]
 			{
@@ -1538,16 +1538,16 @@ _detalhes_database = {
 							["pets"] = {
 								"Cat <Mxzq>", -- [1]
 							},
-							["end_time"] = 1594753963,
+							["total"] = 260.001009,
 							["tipo"] = 1,
-							["classe"] = "HUNTER",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 								[128] = 260,
 							},
 							["total_without_pet"] = 166.001009,
 							["delay"] = 0,
 							["dps_started"] = false,
-							["total"] = 260.001009,
+							["end_time"] = 1594753963,
 							["friendlyfire"] = {
 							},
 							["on_hold"] = false,
@@ -1605,8 +1605,8 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 5,
@@ -1653,7 +1653,7 @@ _detalhes_database = {
 							["damage_taken"] = 0.001009,
 							["start_time"] = 1594753951,
 							["serial"] = "Player-4465-01C7FC88",
-							["friendlyfire_total"] = 0,
+							["classe"] = "HUNTER",
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -1674,7 +1674,7 @@ _detalhes_database = {
 							["total_without_pet"] = 94.001508,
 							["friendlyfire_total"] = 0,
 							["dps_started"] = false,
-							["total"] = 94.001508,
+							["end_time"] = 1594753963,
 							["delay"] = 0,
 							["ownerName"] = "Mxzq",
 							["nome"] = "Cat <Mxzq>",
@@ -1702,8 +1702,8 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["b_dmg"] = 6,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 21,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 4,
@@ -1722,7 +1722,7 @@ _detalhes_database = {
 							["on_hold"] = false,
 							["start_time"] = 1594753951,
 							["serial"] = "Pet-0-4447-1-306-3415-10003251E4",
-							["end_time"] = 1594753963,
+							["total"] = 94.001508,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
@@ -1737,14 +1737,14 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["fight_component"] = true,
-							["total"] = 41.003667,
-							["friendlyfire_total"] = 0,
+							["end_time"] = 1594753963,
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 41.003667,
 							["delay"] = 0,
 							["monster"] = true,
-							["end_time"] = 1594753963,
+							["total"] = 41.003667,
 							["dps_started"] = false,
 							["damage_taken"] = 260.003667,
 							["nome"] = "Kolkar Wrangler",
@@ -1765,17 +1765,17 @@ _detalhes_database = {
 										["n_min"] = 12,
 										["g_dmg"] = 0,
 										["counter"] = 6,
-										["r_amt"] = 0,
 										["total"] = 41,
+										["r_amt"] = 0,
 										["c_max"] = 0,
 										["spellschool"] = 1,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["b_dmg"] = 0,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
-										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["a_dmg"] = 0,
 										["n_amt"] = 3,
@@ -1794,7 +1794,7 @@ _detalhes_database = {
 							["on_hold"] = false,
 							["start_time"] = 1594753951,
 							["serial"] = "Creature-0-4447-1-306-3272-00000E0194",
-							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 						}, -- [3]
 					},
 				}, -- [1]
@@ -1832,9 +1832,7 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["pets"] = {
-								"Cat <Mxzq>", -- [1]
-							},
+							["buff_uptime"] = 12,
 							["classe"] = "HUNTER",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
@@ -1865,7 +1863,9 @@ _detalhes_database = {
 							["tipo"] = 4,
 							["debuff_uptime_targets"] = {
 							},
-							["buff_uptime"] = 12,
+							["pets"] = {
+								"Cat <Mxzq>", -- [1]
+							},
 							["serial"] = "Player-4465-01C7FC88",
 							["last_event"] = 1594753963,
 						}, -- [1]
@@ -1875,9 +1875,9 @@ _detalhes_database = {
 							["nome"] = "Cat <Mxzq>",
 							["pets"] = {
 							},
+							["last_event"] = 0,
 							["classe"] = "PET",
 							["tipo"] = 4,
-							["last_event"] = 0,
 							["serial"] = "Pet-0-4447-1-306-3415-10003251E4",
 							["spell_cast"] = {
 								["Growl"] = 3,
@@ -1900,9 +1900,7 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 1647,
 				["playing_solo"] = true,
 				["totals"] = {
 					301, -- [1]
@@ -1927,24 +1925,6 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:12:43",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Kolkar Wrangler",
-				["TotalElapsedCombatTime"] = 10.9330000000773,
-				["CombatEndedAt"] = 537369.418,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "21:12:31",
-				["end_time"] = 537369.418,
-				["combat_id"] = 1253,
 				["totals_grupo"] = {
 					166, -- [1]
 					0, -- [2]
@@ -1966,7 +1946,18 @@ _detalhes_database = {
 						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
-				["spells_cast_timeline"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "21:12:43",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kolkar Wrangler",
+				["TotalElapsedCombatTime"] = 10.9330000000773,
+				["CombatEndedAt"] = 537369.418,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -1987,15 +1978,24 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["combat_counter"] = 1647,
+				["end_time"] = 537369.418,
+				["combat_id"] = 1253,
+				["player_last_events"] = {
+				},
+				["frags"] = {
+					["Kolkar Wrangler"] = 1,
+				},
+				["data_inicio"] = "21:12:31",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["CombatSkillCache"] = {
 				},
 				["TimeData"] = {
 				},
 				["start_time"] = 537357.666,
 				["contra"] = "Kolkar Wrangler",
-				["frags"] = {
-					["Kolkar Wrangler"] = 1,
+				["spells_cast_timeline"] = {
 				},
 			}, -- [4]
 			{
@@ -2017,16 +2017,16 @@ _detalhes_database = {
 							["pets"] = {
 								"Cat <Mxzq>", -- [1]
 							},
-							["total"] = 558.001484,
+							["end_time"] = 1594753926,
 							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
+							["classe"] = "HUNTER",
 							["raid_targets"] = {
 								[128] = 558,
 							},
 							["total_without_pet"] = 386.001484,
 							["delay"] = 0,
 							["dps_started"] = false,
-							["end_time"] = 1594753926,
+							["total"] = 558.001484,
 							["damage_taken"] = 203.001484,
 							["friendlyfire"] = {
 							},
@@ -2086,8 +2086,8 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 11,
@@ -2135,7 +2135,7 @@ _detalhes_database = {
 							["on_hold"] = false,
 							["start_time"] = 1594753893,
 							["serial"] = "Player-4465-01C7FC88",
-							["classe"] = "HUNTER",
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -2150,16 +2150,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["fight_component"] = true,
 							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 173.005382,
 							["delay"] = 1594753907,
 							["dps_started"] = false,
-							["total"] = 173.005382,
 							["end_time"] = 1594753926,
+							["total"] = 173.005382,
 							["damage_taken"] = 278.005382,
 							["nome"] = "Kolkar Stormer",
 							["spells"] = {
@@ -2184,8 +2184,8 @@ _detalhes_database = {
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 3,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
@@ -2286,8 +2286,8 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 22,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 6,
@@ -2320,16 +2320,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["fight_component"] = true,
 							["classe"] = "UNKNOW",
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 134.008179,
 							["delay"] = 0,
 							["dps_started"] = false,
-							["total"] = 134.008179,
 							["end_time"] = 1594753926,
+							["total"] = 134.008179,
 							["damage_taken"] = 280.008179,
 							["nome"] = "Kolkar Wrangler",
 							["spells"] = {
@@ -2354,8 +2354,8 @@ _detalhes_database = {
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 3,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
@@ -2441,9 +2441,7 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["pets"] = {
-								"Cat <Mxzq>", -- [1]
-							},
+							["buff_uptime"] = 33,
 							["classe"] = "HUNTER",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
@@ -2486,7 +2484,9 @@ _detalhes_database = {
 							["tipo"] = 4,
 							["debuff_uptime_targets"] = {
 							},
-							["buff_uptime"] = 33,
+							["pets"] = {
+								"Cat <Mxzq>", -- [1]
+							},
 							["serial"] = "Player-4465-01C7FC88",
 							["last_event"] = 1594753926,
 						}, -- [1]
@@ -2511,9 +2511,9 @@ _detalhes_database = {
 							["nome"] = "Cat <Mxzq>",
 							["pets"] = {
 							},
+							["last_event"] = 0,
 							["classe"] = "PET",
 							["tipo"] = 4,
-							["last_event"] = 0,
 							["serial"] = "Pet-0-4447-1-306-3415-10003251E4",
 							["spell_cast"] = {
 								["Growl"] = 5,
@@ -2550,9 +2550,7 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 1646,
 				["playing_solo"] = true,
 				["totals"] = {
 					865, -- [1]
@@ -2577,24 +2575,6 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:12:06",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Kolkar Stormer",
-				["TotalElapsedCombatTime"] = 537332.95,
-				["CombatEndedAt"] = 537332.95,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "21:11:33",
-				["end_time"] = 537332.95,
-				["combat_id"] = 1252,
 				["totals_grupo"] = {
 					386, -- [1]
 					0, -- [2]
@@ -2616,9 +2596,18 @@ _detalhes_database = {
 						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
-				["frags"] = {
-					["Kolkar Stormer"] = 1,
-					["Kolkar Wrangler"] = 1,
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "21:12:06",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kolkar Stormer",
+				["TotalElapsedCombatTime"] = 537332.95,
+				["CombatEndedAt"] = 537332.95,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -2639,14 +2628,25 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["combat_counter"] = 1646,
+				["end_time"] = 537332.95,
+				["combat_id"] = 1252,
+				["player_last_events"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["data_inicio"] = "21:11:33",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["CombatSkillCache"] = {
 				},
 				["contra"] = "Kolkar Stormer",
 				["start_time"] = 537299.647,
 				["TimeData"] = {
 				},
-				["spells_cast_timeline"] = {
+				["frags"] = {
+					["Kolkar Stormer"] = 1,
+					["Kolkar Wrangler"] = 1,
 				},
 			}, -- [5]
 			{
@@ -2666,16 +2666,16 @@ _detalhes_database = {
 							["pets"] = {
 								"Cat <Mxzq>", -- [1]
 							},
-							["classe"] = "HUNTER",
-							["tipo"] = 1,
 							["friendlyfire_total"] = 0,
+							["tipo"] = 1,
+							["classe"] = "HUNTER",
 							["raid_targets"] = {
 								[128] = 280,
 							},
 							["total_without_pet"] = 195.006411,
 							["delay"] = 0,
 							["dps_started"] = false,
-							["total"] = 280.006411,
+							["end_time"] = 1594753547,
 							["friendlyfire"] = {
 							},
 							["on_hold"] = false,
@@ -2704,8 +2704,8 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
@@ -2781,7 +2781,7 @@ _detalhes_database = {
 							["damage_taken"] = 25.006411,
 							["start_time"] = 1594753532,
 							["serial"] = "Player-4465-01C7FC88",
-							["end_time"] = 1594753547,
+							["total"] = 280.006411,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -2797,14 +2797,14 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["monster"] = true,
-							["end_time"] = 1594753547,
-							["friendlyfire_total"] = 0,
+							["total"] = 99.005047,
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 99.005047,
 							["delay"] = 0,
 							["fight_component"] = true,
-							["total"] = 99.005047,
+							["end_time"] = 1594753547,
 							["dps_started"] = false,
 							["damage_taken"] = 280.005047,
 							["nome"] = "Kolkar Wrangler",
@@ -2830,8 +2830,8 @@ _detalhes_database = {
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
@@ -2861,8 +2861,8 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 5,
@@ -2881,7 +2881,7 @@ _detalhes_database = {
 							["on_hold"] = false,
 							["start_time"] = 1594753533,
 							["serial"] = "Creature-0-4447-1-306-3272-00000E01C2",
-							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 						}, -- [2]
 						{
 							["flag_original"] = 4369,
@@ -3008,14 +3008,14 @@ _detalhes_database = {
 							["debuff_uptime_targets"] = {
 							},
 							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 7,
-								["Arcane Shot"] = 2,
+							["pets"] = {
+								"Cat <Mxzq>", -- [1]
 							},
 							["nome"] = "Mxzq",
 							["classe"] = "HUNTER",
-							["pets"] = {
-								"Cat <Mxzq>", -- [1]
+							["spell_cast"] = {
+								["Auto Shot"] = 7,
+								["Arcane Shot"] = 2,
 							},
 							["tipo"] = 4,
 							["serial"] = "Player-4465-01C7FC88",
@@ -3027,13 +3027,13 @@ _detalhes_database = {
 							["nome"] = "Cat <Mxzq>",
 							["pets"] = {
 							},
+							["last_event"] = 0,
 							["classe"] = "PET",
-							["tipo"] = 4,
 							["spell_cast"] = {
 								["Growl"] = 2,
 							},
 							["serial"] = "Pet-0-4447-1-306-3415-10003251E4",
-							["last_event"] = 0,
+							["tipo"] = 4,
 						}, -- [3]
 					},
 				}, -- [4]
@@ -3052,9 +3052,7 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 1641,
 				["playing_solo"] = true,
 				["totals"] = {
 					379, -- [1]
@@ -3079,24 +3077,6 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:05:48",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Kolkar Wrangler",
-				["TotalElapsedCombatTime"] = 536954.518,
-				["CombatEndedAt"] = 536954.518,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "21:05:33",
-				["end_time"] = 536954.518,
-				["combat_id"] = 1251,
 				["totals_grupo"] = {
 					195, -- [1]
 					0, -- [2]
@@ -3118,8 +3098,18 @@ _detalhes_database = {
 						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
-				["frags"] = {
-					["Kolkar Wrangler"] = 1,
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "21:05:48",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kolkar Wrangler",
+				["TotalElapsedCombatTime"] = 536954.518,
+				["CombatEndedAt"] = 536954.518,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -3140,14 +3130,24 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["combat_counter"] = 1641,
+				["end_time"] = 536954.518,
+				["combat_id"] = 1251,
+				["player_last_events"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["data_inicio"] = "21:05:33",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["CombatSkillCache"] = {
 				},
 				["contra"] = "Kolkar Wrangler",
 				["start_time"] = 536939.93,
 				["TimeData"] = {
 				},
-				["spells_cast_timeline"] = {
+				["frags"] = {
+					["Kolkar Wrangler"] = 1,
 				},
 			}, -- [6]
 			{
@@ -3167,16 +3167,16 @@ _detalhes_database = {
 							["pets"] = {
 								"Cat <Mxzq>", -- [1]
 							},
-							["friendlyfire_total"] = 0,
-							["tipo"] = 1,
 							["classe"] = "HUNTER",
+							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 								[128] = 284,
 							},
 							["total_without_pet"] = 208.002233,
 							["serial"] = "Player-4465-01C7FC88",
 							["dps_started"] = false,
-							["end_time"] = 1594753146,
+							["total"] = 284.002233,
 							["friendlyfire"] = {
 							},
 							["damage_taken"] = 45.002233,
@@ -3281,7 +3281,7 @@ _detalhes_database = {
 							["on_hold"] = false,
 							["start_time"] = 1594753132,
 							["delay"] = 0,
-							["total"] = 284.002233,
+							["end_time"] = 1594753146,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -3296,14 +3296,14 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["fight_component"] = true,
+							["dps_started"] = false,
 							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 114.005352,
 							["serial"] = "Creature-0-4447-1-306-3272-00000DF199",
-							["dps_started"] = false,
+							["fight_component"] = true,
 							["total"] = 114.005352,
 							["monster"] = true,
 							["friendlyfire"] = {
@@ -3331,11 +3331,11 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["r_amt"] = 0,
 									},
 									["!Melee"] = {
@@ -3388,11 +3388,11 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 2,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["r_amt"] = 0,
 									},
 								},
@@ -3406,7 +3406,7 @@ _detalhes_database = {
 							["damage_taken"] = 284.005352,
 							["start_time"] = 1594753133,
 							["delay"] = 0,
-							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 						}, -- [2]
 						{
 							["flag_original"] = 4369,
@@ -3516,16 +3516,16 @@ _detalhes_database = {
 							},
 							["nome"] = "Mxzq",
 							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 7,
-								["Arcane Shot"] = 2,
+							["pets"] = {
+								"Cat <Mxzq>", -- [1]
 							},
 							["debuff_uptime_targets"] = {
 							},
 							["tipo"] = 4,
 							["last_event"] = 1594753145,
-							["pets"] = {
-								"Cat <Mxzq>", -- [1]
+							["spell_cast"] = {
+								["Auto Shot"] = 7,
+								["Arcane Shot"] = 2,
 							},
 							["serial"] = "Player-4465-01C7FC88",
 							["classe"] = "HUNTER",
@@ -3536,13 +3536,13 @@ _detalhes_database = {
 							["nome"] = "Cat <Mxzq>",
 							["pets"] = {
 							},
+							["classe"] = "PET",
 							["tipo"] = 4,
-							["last_event"] = 0,
 							["spell_cast"] = {
 								["Growl"] = 2,
 							},
 							["serial"] = "Pet-0-4447-1-306-3415-10003251E4",
-							["classe"] = "PET",
+							["last_event"] = 0,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
@@ -3577,7 +3577,9 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 1637,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					398, -- [1]
@@ -3602,32 +3604,6 @@ _detalhes_database = {
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "20:59:06",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Kolkar Wrangler",
-				["TotalElapsedCombatTime"] = 536553.183,
-				["CombatEndedAt"] = 536553.183,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:58:52",
-				["end_time"] = 536553.183,
-				["combat_id"] = 1250,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Kolkar Wrangler"] = 1,
-				},
 				["totals_grupo"] = {
 					208, -- [1]
 					0, -- [2]
@@ -3649,12 +3625,19 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["CombatSkillCache"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "20:59:06",
+				["cleu_timeline"] = {
 				},
-				["TimeData"] = {
+				["enemy"] = "Kolkar Wrangler",
+				["TotalElapsedCombatTime"] = 536553.183,
+				["CombatEndedAt"] = 536553.183,
+				["aura_timeline"] = {
 				},
-				["start_time"] = 536538.664,
-				["contra"] = "Kolkar Wrangler",
+				["__call"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -3674,6 +3657,23 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 536553.183,
+				["combat_id"] = 1250,
+				["combat_counter"] = 1637,
+				["frags"] = {
+					["Kolkar Wrangler"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["TimeData"] = {
+				},
+				["start_time"] = 536538.664,
+				["contra"] = "Kolkar Wrangler",
+				["data_inicio"] = "20:58:52",
 			}, -- [7]
 			{
 				{
@@ -3692,16 +3692,16 @@ _detalhes_database = {
 							["pets"] = {
 								"Cat <Mxzq>", -- [1]
 							},
-							["friendlyfire_total"] = 0,
-							["last_event"] = 1594753121,
 							["classe"] = "HUNTER",
+							["last_event"] = 1594753121,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 								[128] = 287,
 							},
 							["total_without_pet"] = 200.008853,
 							["serial"] = "Player-4465-01C7FC88",
 							["dps_started"] = false,
-							["end_time"] = 1594753123,
+							["total"] = 287.008853,
 							["friendlyfire"] = {
 							},
 							["on_hold"] = false,
@@ -3760,9 +3760,9 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
 										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["c_min"] = 0,
 										["n_amt"] = 7,
 										["a_dmg"] = 0,
 										["r_amt"] = 0,
@@ -3807,7 +3807,7 @@ _detalhes_database = {
 							["damage_taken"] = 60.008853,
 							["start_time"] = 1594753108,
 							["delay"] = 0,
-							["total"] = 287.008853,
+							["end_time"] = 1594753123,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -3823,14 +3823,14 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["monster"] = true,
-							["total"] = 240.005059,
-							["classe"] = "UNKNOW",
+							["end_time"] = 1594753132,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 240.005059,
 							["serial"] = "Creature-0-4447-1-306-3273-00000DC033",
 							["fight_component"] = true,
-							["end_time"] = 1594753132,
+							["total"] = 240.005059,
 							["dps_started"] = false,
 							["on_hold"] = false,
 							["nome"] = "Kolkar Stormer",
@@ -3857,11 +3857,11 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["r_amt"] = 0,
 									},
 									["!Melee"] = {
@@ -3914,11 +3914,11 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["r_amt"] = 0,
 									},
 								},
@@ -3933,7 +3933,7 @@ _detalhes_database = {
 							["damage_taken"] = 287.005059,
 							["start_time"] = 1594753112,
 							["delay"] = 0,
-							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 						{
 							["flag_original"] = 4369,
@@ -3985,9 +3985,9 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
 										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["c_min"] = 0,
 										["n_amt"] = 7,
 										["a_dmg"] = 0,
 										["r_amt"] = 0,
@@ -4046,16 +4046,16 @@ _detalhes_database = {
 							},
 							["nome"] = "Mxzq",
 							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 7,
-								["Arcane Shot"] = 2,
+							["pets"] = {
+								"Cat <Mxzq>", -- [1]
 							},
 							["debuff_uptime_targets"] = {
 							},
 							["tipo"] = 4,
 							["last_event"] = 1594753121,
-							["pets"] = {
-								"Cat <Mxzq>", -- [1]
+							["spell_cast"] = {
+								["Auto Shot"] = 7,
+								["Arcane Shot"] = 2,
 							},
 							["serial"] = "Player-4465-01C7FC88",
 							["classe"] = "HUNTER",
@@ -4082,13 +4082,13 @@ _detalhes_database = {
 							["nome"] = "Cat <Mxzq>",
 							["pets"] = {
 							},
+							["classe"] = "PET",
 							["tipo"] = 4,
-							["last_event"] = 0,
 							["spell_cast"] = {
 								["Growl"] = 2,
 							},
 							["serial"] = "Pet-0-4447-1-306-3415-10003251E4",
-							["classe"] = "PET",
+							["last_event"] = 0,
 						}, -- [3]
 					},
 				}, -- [4]
@@ -4107,7 +4107,9 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 1636,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					526.993113, -- [1]
@@ -4132,32 +4134,6 @@ _detalhes_database = {
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "20:58:43",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Kolkar Stormer",
-				["TotalElapsedCombatTime"] = 536529.77,
-				["CombatEndedAt"] = 536529.77,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:58:28",
-				["end_time"] = 536529.77,
-				["combat_id"] = 1249,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Kolkar Stormer"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
 				["totals_grupo"] = {
 					200, -- [1]
 					0, -- [2]
@@ -4179,11 +4155,18 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["CombatSkillCache"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "20:58:43",
+				["cleu_timeline"] = {
 				},
-				["contra"] = "Kolkar Stormer",
-				["start_time"] = 536514.887,
-				["TimeData"] = {
+				["enemy"] = "Kolkar Stormer",
+				["TotalElapsedCombatTime"] = 536529.77,
+				["CombatEndedAt"] = 536529.77,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -4204,6 +4187,23 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 536529.77,
+				["combat_id"] = 1249,
+				["combat_counter"] = 1636,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Kolkar Stormer"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Kolkar Stormer",
+				["start_time"] = 536514.887,
+				["TimeData"] = {
+				},
+				["data_inicio"] = "20:58:28",
 			}, -- [8]
 			{
 				{
@@ -4221,16 +4221,16 @@ _detalhes_database = {
 							["pets"] = {
 								"Cat <Mxzq>", -- [1]
 							},
-							["friendlyfire_total"] = 0,
-							["last_event"] = 1594753097,
 							["classe"] = "HUNTER",
+							["last_event"] = 1594753097,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 								[128] = 278,
 							},
 							["total_without_pet"] = 196.004962,
 							["serial"] = "Player-4465-01C7FC88",
 							["dps_started"] = false,
-							["end_time"] = 1594753099,
+							["total"] = 278.004962,
 							["friendlyfire"] = {
 							},
 							["on_hold"] = false,
@@ -4335,7 +4335,7 @@ _detalhes_database = {
 							["damage_taken"] = 0.004962,
 							["start_time"] = 1594753086,
 							["delay"] = 0,
-							["total"] = 278.004962,
+							["end_time"] = 1594753099,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -4350,14 +4350,14 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["monster"] = true,
-							["total"] = 127.001313,
-							["classe"] = "UNKNOW",
+							["end_time"] = 1594753099,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 127.001313,
 							["serial"] = "Creature-0-4447-1-306-3272-00000DFDA6",
 							["fight_component"] = true,
-							["end_time"] = 1594753099,
+							["total"] = 127.001313,
 							["dps_started"] = false,
 							["on_hold"] = false,
 							["nome"] = "Kolkar Wrangler",
@@ -4433,7 +4433,7 @@ _detalhes_database = {
 							["damage_taken"] = 278.001313,
 							["start_time"] = 1594753086,
 							["delay"] = 0,
-							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 						{
 							["flag_original"] = 4369,
@@ -4543,16 +4543,16 @@ _detalhes_database = {
 							},
 							["nome"] = "Mxzq",
 							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 6,
-								["Arcane Shot"] = 2,
+							["pets"] = {
+								"Cat <Mxzq>", -- [1]
 							},
 							["debuff_uptime_targets"] = {
 							},
 							["tipo"] = 4,
 							["last_event"] = 1594753097,
-							["pets"] = {
-								"Cat <Mxzq>", -- [1]
+							["spell_cast"] = {
+								["Auto Shot"] = 6,
+								["Arcane Shot"] = 2,
 							},
 							["serial"] = "Player-4465-01C7FC88",
 							["classe"] = "HUNTER",
@@ -4563,13 +4563,13 @@ _detalhes_database = {
 							["nome"] = "Cat <Mxzq>",
 							["pets"] = {
 							},
+							["classe"] = "PET",
 							["tipo"] = 4,
-							["last_event"] = 0,
 							["spell_cast"] = {
 								["Growl"] = 2,
 							},
 							["serial"] = "Pet-0-4447-1-306-3415-10003251E4",
-							["classe"] = "PET",
+							["last_event"] = 0,
 						}, -- [2]
 					},
 				}, -- [4]
@@ -4588,7 +4588,9 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 1635,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
 					405, -- [1]
@@ -4613,32 +4615,6 @@ _detalhes_database = {
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "20:58:19",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Kolkar Wrangler",
-				["TotalElapsedCombatTime"] = 536506.239,
-				["CombatEndedAt"] = 536506.239,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:58:06",
-				["end_time"] = 536506.239,
-				["combat_id"] = 1248,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["frags"] = {
-					["Kolkar Wrangler"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
 				["totals_grupo"] = {
 					196, -- [1]
 					0, -- [2]
@@ -4660,11 +4636,18 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["CombatSkillCache"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "20:58:19",
+				["cleu_timeline"] = {
 				},
-				["contra"] = "Kolkar Wrangler",
-				["start_time"] = 536492.981,
-				["TimeData"] = {
+				["enemy"] = "Kolkar Wrangler",
+				["TotalElapsedCombatTime"] = 536506.239,
+				["CombatEndedAt"] = 536506.239,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -4685,6 +4668,23 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+				["end_time"] = 536506.239,
+				["combat_id"] = 1248,
+				["combat_counter"] = 1635,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Kolkar Wrangler"] = 1,
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Kolkar Wrangler",
+				["start_time"] = 536492.981,
+				["TimeData"] = {
+				},
+				["data_inicio"] = "20:58:06",
 			}, -- [9]
 			{
 				{
@@ -4703,16 +4703,16 @@ _detalhes_database = {
 							["pets"] = {
 								"Cat <Mxzq>", -- [1]
 							},
-							["total"] = 269.008161,
+							["end_time"] = 1594752009,
 							["last_event"] = 1594752008,
-							["friendlyfire_total"] = 0,
+							["classe"] = "HUNTER",
 							["raid_targets"] = {
 								[128] = 269,
 							},
 							["total_without_pet"] = 202.008161,
 							["delay"] = 0,
 							["dps_started"] = false,
-							["end_time"] = 1594752009,
+							["total"] = 269.008161,
 							["damage_taken"] = 167.008161,
 							["on_hold"] = false,
 							["nome"] = "Mxzq",
@@ -4769,8 +4769,8 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 7,
@@ -4818,7 +4818,7 @@ _detalhes_database = {
 							},
 							["start_time"] = 1594751995,
 							["serial"] = "Player-4465-01C7FC88",
-							["classe"] = "HUNTER",
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -4833,15 +4833,15 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["friendlyfire"] = {
 							},
-							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 183.003476,
 							["delay"] = 0,
-							["fight_component"] = true,
+							["dps_started"] = false,
 							["total"] = 183.003476,
 							["monster"] = true,
 							["damage_taken"] = 269.003476,
@@ -4868,8 +4868,8 @@ _detalhes_database = {
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 3,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
@@ -4916,7 +4916,7 @@ _detalhes_database = {
 							["on_hold"] = false,
 							["start_time"] = 1594751999,
 							["serial"] = "Creature-0-4447-1-306-3273-00000DC033",
-							["dps_started"] = false,
+							["fight_component"] = true,
 						}, -- [2]
 						{
 							["flag_original"] = 4369,
@@ -5016,10 +5016,10 @@ _detalhes_database = {
 								["Auto Shot"] = 7,
 								["Arcane Shot"] = 2,
 							},
-							["last_event"] = 0,
 							["tipo"] = 4,
-							["serial"] = "Player-4465-01C7FC88",
 							["classe"] = "HUNTER",
+							["serial"] = "Player-4465-01C7FC88",
+							["last_event"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -5045,10 +5045,10 @@ _detalhes_database = {
 							["spell_cast"] = {
 								["Growl"] = 2,
 							},
-							["tipo"] = 4,
 							["classe"] = "PET",
-							["serial"] = "Pet-0-4447-1-306-3415-0F003251E4",
 							["last_event"] = 0,
+							["serial"] = "Pet-0-4447-1-306-3415-0F003251E4",
+							["tipo"] = 4,
 						}, -- [3]
 					},
 				}, -- [4]
@@ -5122,9 +5122,7 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 1633,
 				["playing_solo"] = true,
 				["totals"] = {
 					452, -- [1]
@@ -5149,24 +5147,6 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = false,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "20:40:09",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Kolkar Stormer",
-				["TotalElapsedCombatTime"] = 535416.211,
-				["CombatEndedAt"] = 535416.211,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:39:55",
-				["end_time"] = 535416.211,
-				["combat_id"] = 1247,
 				["totals_grupo"] = {
 					202, -- [1]
 					0, -- [2]
@@ -5188,7 +5168,18 @@ _detalhes_database = {
 						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
-				["frags"] = {
+				["frags_need_refresh"] = false,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "20:40:09",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kolkar Stormer",
+				["TotalElapsedCombatTime"] = 535416.211,
+				["CombatEndedAt"] = 535416.211,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -5209,14 +5200,23 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["combat_counter"] = 1633,
+				["end_time"] = 535416.211,
+				["combat_id"] = 1247,
+				["player_last_events"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["data_inicio"] = "20:39:55",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["CombatSkillCache"] = {
 				},
 				["contra"] = "Kolkar Stormer",
 				["start_time"] = 535402.212,
 				["TimeData"] = {
 				},
-				["spells_cast_timeline"] = {
+				["frags"] = {
 				},
 			}, -- [10]
 			{
@@ -5237,16 +5237,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
 							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 119.008189,
 							["delay"] = 0,
 							["monster"] = true,
-							["total"] = 119.008189,
 							["end_time"] = 1594751984,
+							["total"] = 119.008189,
 							["damage_taken"] = 279.008189,
 							["nome"] = "Kolkar Wrangler",
 							["spells"] = {
@@ -5335,16 +5335,16 @@ _detalhes_database = {
 							["pets"] = {
 								"Cat <Mxzq>", -- [1]
 							},
-							["total"] = 279.005226,
+							["end_time"] = 1594751984,
 							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
+							["classe"] = "HUNTER",
 							["raid_targets"] = {
 								[128] = 279,
 							},
 							["total_without_pet"] = 221.005226,
 							["delay"] = 0,
 							["dps_started"] = false,
-							["end_time"] = 1594751984,
+							["total"] = 279.005226,
 							["on_hold"] = false,
 							["damage_taken"] = 47.005226,
 							["nome"] = "Mxzq",
@@ -5449,7 +5449,7 @@ _detalhes_database = {
 							},
 							["start_time"] = 1594751971,
 							["serial"] = "Player-4465-01C7FC88",
-							["classe"] = "HUNTER",
+							["friendlyfire_total"] = 0,
 						}, -- [2]
 						{
 							["flag_original"] = 4369,
@@ -5560,14 +5560,14 @@ _detalhes_database = {
 							["debuff_uptime_targets"] = {
 							},
 							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 6,
-								["Arcane Shot"] = 2,
+							["pets"] = {
+								"Cat <Mxzq>", -- [1]
 							},
 							["nome"] = "Mxzq",
 							["last_event"] = 1594751984,
-							["pets"] = {
-								"Cat <Mxzq>", -- [1]
+							["spell_cast"] = {
+								["Auto Shot"] = 6,
+								["Arcane Shot"] = 2,
 							},
 							["classe"] = "HUNTER",
 							["serial"] = "Player-4465-01C7FC88",
@@ -5582,10 +5582,10 @@ _detalhes_database = {
 							["spell_cast"] = {
 								["Growl"] = 2,
 							},
-							["tipo"] = 4,
 							["classe"] = "PET",
-							["serial"] = "Pet-0-4447-1-306-3415-0F003251E4",
 							["last_event"] = 0,
+							["serial"] = "Pet-0-4447-1-306-3415-0F003251E4",
+							["tipo"] = 4,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
@@ -5619,9 +5619,7 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 1632,
 				["playing_solo"] = true,
 				["totals"] = {
 					398, -- [1]
@@ -5646,24 +5644,6 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "20:39:45",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Kolkar Wrangler",
-				["TotalElapsedCombatTime"] = 535391.492,
-				["CombatEndedAt"] = 535391.492,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:39:31",
-				["end_time"] = 535391.492,
-				["combat_id"] = 1246,
 				["totals_grupo"] = {
 					221, -- [1]
 					0, -- [2]
@@ -5685,7 +5665,18 @@ _detalhes_database = {
 						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
-				["spells_cast_timeline"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "20:39:45",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kolkar Wrangler",
+				["TotalElapsedCombatTime"] = 535391.492,
+				["CombatEndedAt"] = 535391.492,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -5706,15 +5697,24 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["combat_counter"] = 1632,
+				["end_time"] = 535391.492,
+				["combat_id"] = 1246,
+				["player_last_events"] = {
+				},
+				["frags"] = {
+					["Kolkar Wrangler"] = 1,
+				},
+				["data_inicio"] = "20:39:31",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["CombatSkillCache"] = {
 				},
 				["TimeData"] = {
 				},
 				["start_time"] = 535378.09,
 				["contra"] = "Kolkar Wrangler",
-				["frags"] = {
-					["Kolkar Wrangler"] = 1,
+				["spells_cast_timeline"] = {
 				},
 			}, -- [11]
 			{
@@ -5734,16 +5734,16 @@ _detalhes_database = {
 							["pets"] = {
 								"Cat <Mxzq>", -- [1]
 							},
-							["end_time"] = 1594751961,
+							["total"] = 515.007309,
 							["tipo"] = 1,
-							["classe"] = "HUNTER",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 								[128] = 515,
 							},
 							["total_without_pet"] = 369.007309,
 							["delay"] = 0,
 							["dps_started"] = false,
-							["total"] = 515.007309,
+							["end_time"] = 1594751961,
 							["damage_taken"] = 165.007309,
 							["friendlyfire"] = {
 							},
@@ -5772,8 +5772,8 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 7,
@@ -5831,8 +5831,8 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 3,
@@ -5850,7 +5850,7 @@ _detalhes_database = {
 							["on_hold"] = false,
 							["start_time"] = 1594751933,
 							["serial"] = "Player-4465-01C7FC88",
-							["friendlyfire_total"] = 0,
+							["classe"] = "HUNTER",
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -5866,14 +5866,14 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["monster"] = true,
-							["total"] = 261.001174,
-							["friendlyfire_total"] = 0,
+							["end_time"] = 1594751961,
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 261.001174,
 							["delay"] = 0,
 							["dps_started"] = false,
-							["end_time"] = 1594751961,
+							["total"] = 261.001174,
 							["fight_component"] = true,
 							["damage_taken"] = 515.001174,
 							["nome"] = "Kolkar Stormer",
@@ -5899,8 +5899,8 @@ _detalhes_database = {
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 4,
 										["b_dmg"] = 0,
 										["n_amt"] = 4,
@@ -5927,8 +5927,8 @@ _detalhes_database = {
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
@@ -5976,7 +5976,7 @@ _detalhes_database = {
 							["on_hold"] = false,
 							["start_time"] = 1594751936,
 							["serial"] = "Creature-0-4447-1-306-3273-00000DC024",
-							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 						}, -- [2]
 						{
 							["flag_original"] = 4369,
@@ -5997,7 +5997,7 @@ _detalhes_database = {
 							["total_without_pet"] = 146.00227,
 							["friendlyfire_total"] = 0,
 							["dps_started"] = false,
-							["total"] = 146.00227,
+							["end_time"] = 1594751961,
 							["delay"] = 0,
 							["ownerName"] = "Mxzq",
 							["nome"] = "Cat <Mxzq>",
@@ -6017,8 +6017,8 @@ _detalhes_database = {
 										["n_min"] = 8,
 										["g_dmg"] = 29,
 										["counter"] = 15,
-										["r_amt"] = 0,
 										["total"] = 146,
+										["r_amt"] = 0,
 										["c_max"] = 23,
 										["spellschool"] = 1,
 										["id"] = "!Melee",
@@ -6056,8 +6056,8 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["RESIST"] = 1,
@@ -6076,7 +6076,7 @@ _detalhes_database = {
 							["on_hold"] = false,
 							["start_time"] = 1594751934,
 							["serial"] = "Pet-0-4447-1-306-3415-0F003251E4",
-							["end_time"] = 1594751961,
+							["total"] = 146.00227,
 						}, -- [3]
 					},
 				}, -- [1]
@@ -6118,15 +6118,15 @@ _detalhes_database = {
 							["debuff_uptime_targets"] = {
 							},
 							["grupo"] = true,
+							["pets"] = {
+								"Cat <Mxzq>", -- [1]
+							},
+							["nome"] = "Mxzq",
+							["last_event"] = 1594751960,
 							["spell_cast"] = {
 								["Auto Shot"] = 13,
 								["Serpent Sting"] = 2,
 								["Arcane Shot"] = 4,
-							},
-							["nome"] = "Mxzq",
-							["last_event"] = 1594751960,
-							["pets"] = {
-								"Cat <Mxzq>", -- [1]
 							},
 							["classe"] = "HUNTER",
 							["serial"] = "Player-4465-01C7FC88",
@@ -6141,10 +6141,10 @@ _detalhes_database = {
 							["spell_cast"] = {
 								["Growl"] = 5,
 							},
-							["tipo"] = 4,
 							["classe"] = "PET",
-							["serial"] = "Pet-0-4447-1-306-3415-0F003251E4",
 							["last_event"] = 0,
+							["serial"] = "Pet-0-4447-1-306-3415-0F003251E4",
+							["tipo"] = 4,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
@@ -6179,9 +6179,7 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 1631,
 				["playing_solo"] = true,
 				["totals"] = {
 					776, -- [1]
@@ -6206,24 +6204,6 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "20:39:22",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Kolkar Stormer",
-				["TotalElapsedCombatTime"] = 535368.407,
-				["CombatEndedAt"] = 535368.407,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:38:53",
-				["end_time"] = 535368.407,
-				["combat_id"] = 1245,
 				["totals_grupo"] = {
 					369, -- [1]
 					0, -- [2]
@@ -6245,7 +6225,18 @@ _detalhes_database = {
 						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
-				["spells_cast_timeline"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "20:39:22",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kolkar Stormer",
+				["TotalElapsedCombatTime"] = 535368.407,
+				["CombatEndedAt"] = 535368.407,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -6266,15 +6257,24 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["combat_counter"] = 1631,
+				["end_time"] = 535368.407,
+				["combat_id"] = 1245,
+				["player_last_events"] = {
+				},
+				["frags"] = {
+					["Kolkar Stormer"] = 2,
+				},
+				["data_inicio"] = "20:38:53",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["CombatSkillCache"] = {
 				},
 				["TimeData"] = {
 				},
 				["start_time"] = 535340.267,
 				["contra"] = "Kolkar Stormer",
-				["frags"] = {
-					["Kolkar Stormer"] = 2,
+				["spells_cast_timeline"] = {
 				},
 			}, -- [12]
 			{
@@ -6294,16 +6294,16 @@ _detalhes_database = {
 							["pets"] = {
 								"Cat <Mxzq>", -- [1]
 							},
-							["total"] = 253.001166,
+							["end_time"] = 1594751891,
 							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
+							["classe"] = "HUNTER",
 							["raid_targets"] = {
 								[128] = 253,
 							},
 							["total_without_pet"] = 191.001166,
 							["delay"] = 0,
 							["dps_started"] = false,
-							["end_time"] = 1594751891,
+							["total"] = 253.001166,
 							["on_hold"] = false,
 							["damage_taken"] = 76.001166,
 							["nome"] = "Mxzq",
@@ -6408,7 +6408,7 @@ _detalhes_database = {
 							},
 							["start_time"] = 1594751879,
 							["serial"] = "Player-4465-01C7FC88",
-							["classe"] = "HUNTER",
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -6423,16 +6423,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
 							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 88.006308,
 							["delay"] = 0,
 							["monster"] = true,
-							["total"] = 88.006308,
 							["end_time"] = 1594751891,
+							["total"] = 88.006308,
 							["damage_taken"] = 253.006308,
 							["nome"] = "Kolkar Wrangler",
 							["spells"] = {
@@ -6457,8 +6457,8 @@ _detalhes_database = {
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 4,
 										["b_dmg"] = 0,
 										["n_amt"] = 4,
@@ -6632,14 +6632,14 @@ _detalhes_database = {
 							["debuff_uptime_targets"] = {
 							},
 							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 6,
-								["Arcane Shot"] = 2,
+							["pets"] = {
+								"Cat <Mxzq>", -- [1]
 							},
 							["nome"] = "Mxzq",
 							["last_event"] = 1594751890,
-							["pets"] = {
-								"Cat <Mxzq>", -- [1]
+							["spell_cast"] = {
+								["Auto Shot"] = 6,
+								["Arcane Shot"] = 2,
 							},
 							["classe"] = "HUNTER",
 							["serial"] = "Player-4465-01C7FC88",
@@ -6654,10 +6654,10 @@ _detalhes_database = {
 							["spell_cast"] = {
 								["Growl"] = 2,
 							},
-							["tipo"] = 4,
 							["classe"] = "PET",
-							["serial"] = "Pet-0-4447-1-306-3415-0F003251E4",
 							["last_event"] = 0,
+							["serial"] = "Pet-0-4447-1-306-3415-0F003251E4",
+							["tipo"] = 4,
 						}, -- [3]
 					},
 				}, -- [4]
@@ -6676,9 +6676,7 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 1630,
 				["playing_solo"] = true,
 				["totals"] = {
 					341, -- [1]
@@ -6703,24 +6701,6 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "20:38:11",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Kolkar Wrangler",
-				["TotalElapsedCombatTime"] = 535298.309,
-				["CombatEndedAt"] = 535298.309,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:37:59",
-				["end_time"] = 535298.309,
-				["combat_id"] = 1244,
 				["totals_grupo"] = {
 					191, -- [1]
 					0, -- [2]
@@ -6742,7 +6722,18 @@ _detalhes_database = {
 						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
-				["spells_cast_timeline"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "20:38:11",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kolkar Wrangler",
+				["TotalElapsedCombatTime"] = 535298.309,
+				["CombatEndedAt"] = 535298.309,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -6763,15 +6754,24 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["combat_counter"] = 1630,
+				["end_time"] = 535298.309,
+				["combat_id"] = 1244,
+				["player_last_events"] = {
+				},
+				["frags"] = {
+					["Kolkar Wrangler"] = 1,
+				},
+				["data_inicio"] = "20:37:59",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["CombatSkillCache"] = {
 				},
 				["TimeData"] = {
 				},
 				["start_time"] = 535285.648,
 				["contra"] = "Kolkar Wrangler",
-				["frags"] = {
-					["Kolkar Wrangler"] = 1,
+				["spells_cast_timeline"] = {
 				},
 			}, -- [13]
 			{
@@ -6791,16 +6791,16 @@ _detalhes_database = {
 							["pets"] = {
 								"Cat <Mxzq>", -- [1]
 							},
-							["total"] = 291.008951,
+							["end_time"] = 1594751865,
 							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
+							["classe"] = "HUNTER",
 							["raid_targets"] = {
 								[128] = 291,
 							},
 							["total_without_pet"] = 216.008951,
 							["delay"] = 0,
 							["dps_started"] = false,
-							["end_time"] = 1594751865,
+							["total"] = 291.008951,
 							["on_hold"] = false,
 							["damage_taken"] = 99.008951,
 							["nome"] = "Mxzq",
@@ -6828,8 +6828,8 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 1,
@@ -6906,7 +6906,7 @@ _detalhes_database = {
 							},
 							["start_time"] = 1594751849,
 							["serial"] = "Player-4465-01C7FC88",
-							["classe"] = "HUNTER",
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -6921,16 +6921,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
 							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 125.004738,
 							["delay"] = 0,
 							["monster"] = true,
-							["total"] = 125.004738,
 							["end_time"] = 1594751865,
+							["total"] = 125.004738,
 							["damage_taken"] = 291.004738,
 							["nome"] = "Kolkar Wrangler",
 							["spells"] = {
@@ -6957,8 +6957,8 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 4,
 										["a_amt"] = 0,
 										["n_amt"] = 4,
@@ -7013,8 +7013,8 @@ _detalhes_database = {
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
@@ -7145,14 +7145,14 @@ _detalhes_database = {
 							["debuff_uptime_targets"] = {
 							},
 							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 8,
-								["Arcane Shot"] = 2,
+							["pets"] = {
+								"Cat <Mxzq>", -- [1]
 							},
 							["nome"] = "Mxzq",
 							["last_event"] = 1594751863,
-							["pets"] = {
-								"Cat <Mxzq>", -- [1]
+							["spell_cast"] = {
+								["Auto Shot"] = 8,
+								["Arcane Shot"] = 2,
 							},
 							["classe"] = "HUNTER",
 							["serial"] = "Player-4465-01C7FC88",
@@ -7183,10 +7183,10 @@ _detalhes_database = {
 							["spell_cast"] = {
 								["Growl"] = 2,
 							},
-							["tipo"] = 4,
 							["classe"] = "PET",
-							["serial"] = "Pet-0-4447-1-306-3415-0F003251E4",
 							["last_event"] = 0,
+							["serial"] = "Pet-0-4447-1-306-3415-0F003251E4",
+							["tipo"] = 4,
 						}, -- [3]
 					},
 				}, -- [4]
@@ -7205,9 +7205,7 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 1629,
 				["playing_solo"] = true,
 				["totals"] = {
 					416, -- [1]
@@ -7232,24 +7230,6 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "20:37:45",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Kolkar Wrangler",
-				["TotalElapsedCombatTime"] = 535271.53,
-				["CombatEndedAt"] = 535271.53,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:37:29",
-				["end_time"] = 535271.53,
-				["combat_id"] = 1243,
 				["totals_grupo"] = {
 					216, -- [1]
 					0, -- [2]
@@ -7271,7 +7251,18 @@ _detalhes_database = {
 						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
-				["spells_cast_timeline"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "20:37:45",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kolkar Wrangler",
+				["TotalElapsedCombatTime"] = 535271.53,
+				["CombatEndedAt"] = 535271.53,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -7292,15 +7283,24 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["combat_counter"] = 1629,
+				["end_time"] = 535271.53,
+				["combat_id"] = 1243,
+				["player_last_events"] = {
+				},
+				["frags"] = {
+					["Kolkar Wrangler"] = 1,
+				},
+				["data_inicio"] = "20:37:29",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["CombatSkillCache"] = {
 				},
 				["TimeData"] = {
 				},
 				["start_time"] = 535255.743,
 				["contra"] = "Kolkar Wrangler",
-				["frags"] = {
-					["Kolkar Wrangler"] = 1,
+				["spells_cast_timeline"] = {
 				},
 			}, -- [14]
 			{
@@ -7320,16 +7320,16 @@ _detalhes_database = {
 							["pets"] = {
 								"Cat <Mxzq>", -- [1]
 							},
-							["total"] = 248.005793,
+							["end_time"] = 1594751848,
 							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
+							["classe"] = "HUNTER",
 							["raid_targets"] = {
 								[128] = 248,
 							},
 							["total_without_pet"] = 171.005793,
 							["delay"] = 0,
 							["dps_started"] = false,
-							["end_time"] = 1594751848,
+							["total"] = 248.005793,
 							["on_hold"] = false,
 							["damage_taken"] = 20.005793,
 							["nome"] = "Mxzq",
@@ -7434,7 +7434,7 @@ _detalhes_database = {
 							},
 							["start_time"] = 1594751836,
 							["serial"] = "Player-4465-01C7FC88",
-							["classe"] = "HUNTER",
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 4369,
@@ -7484,8 +7484,8 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 6,
@@ -7514,8 +7514,8 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["RESIST"] = 1,
@@ -7548,16 +7548,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
 							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 57.004785,
 							["delay"] = 0,
 							["monster"] = true,
-							["total"] = 57.004785,
 							["end_time"] = 1594751848,
+							["total"] = 57.004785,
 							["damage_taken"] = 248.004785,
 							["nome"] = "Kolkar Wrangler",
 							["spells"] = {
@@ -7582,8 +7582,8 @@ _detalhes_database = {
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
@@ -7605,8 +7605,8 @@ _detalhes_database = {
 										["n_min"] = 11,
 										["g_dmg"] = 0,
 										["counter"] = 5,
-										["r_amt"] = 0,
 										["total"] = 37,
+										["r_amt"] = 0,
 										["c_max"] = 0,
 										["spellschool"] = 1,
 										["id"] = "!Melee",
@@ -7677,14 +7677,14 @@ _detalhes_database = {
 							["debuff_uptime_targets"] = {
 							},
 							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 5,
-								["Arcane Shot"] = 2,
+							["pets"] = {
+								"Cat <Mxzq>", -- [1]
 							},
 							["nome"] = "Mxzq",
 							["last_event"] = 1594751847,
-							["pets"] = {
-								"Cat <Mxzq>", -- [1]
+							["spell_cast"] = {
+								["Auto Shot"] = 5,
+								["Arcane Shot"] = 2,
 							},
 							["classe"] = "HUNTER",
 							["serial"] = "Player-4465-01C7FC88",
@@ -7699,10 +7699,10 @@ _detalhes_database = {
 							["spell_cast"] = {
 								["Growl"] = 2,
 							},
-							["tipo"] = 4,
 							["classe"] = "PET",
-							["serial"] = "Pet-0-4447-1-306-3415-0F003251E4",
 							["last_event"] = 0,
+							["serial"] = "Pet-0-4447-1-306-3415-0F003251E4",
+							["tipo"] = 4,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
@@ -7736,9 +7736,7 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 1628,
 				["playing_solo"] = true,
 				["totals"] = {
 					305, -- [1]
@@ -7763,24 +7761,6 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "20:37:28",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Kolkar Wrangler",
-				["TotalElapsedCombatTime"] = 535254.53,
-				["CombatEndedAt"] = 535254.53,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:37:16",
-				["end_time"] = 535254.53,
-				["combat_id"] = 1242,
 				["totals_grupo"] = {
 					171, -- [1]
 					0, -- [2]
@@ -7802,7 +7782,18 @@ _detalhes_database = {
 						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
-				["spells_cast_timeline"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "20:37:28",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kolkar Wrangler",
+				["TotalElapsedCombatTime"] = 535254.53,
+				["CombatEndedAt"] = 535254.53,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -7823,15 +7814,24 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["combat_counter"] = 1628,
+				["end_time"] = 535254.53,
+				["combat_id"] = 1242,
+				["player_last_events"] = {
+				},
+				["frags"] = {
+					["Kolkar Wrangler"] = 1,
+				},
+				["data_inicio"] = "20:37:16",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["CombatSkillCache"] = {
 				},
 				["TimeData"] = {
 				},
 				["start_time"] = 535242.766,
 				["contra"] = "Kolkar Wrangler",
-				["frags"] = {
-					["Kolkar Wrangler"] = 1,
+				["spells_cast_timeline"] = {
 				},
 			}, -- [15]
 			{
@@ -7850,16 +7850,16 @@ _detalhes_database = {
 							["pets"] = {
 								"Cat <Mxzq>", -- [1]
 							},
-							["end_time"] = 1594751830,
+							["total"] = 263.001735,
 							["tipo"] = 1,
-							["classe"] = "HUNTER",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 								[128] = 263,
 							},
 							["total_without_pet"] = 186.001735,
 							["delay"] = 0,
 							["dps_started"] = false,
-							["total"] = 263.001735,
+							["end_time"] = 1594751830,
 							["damage_taken"] = 0.001735,
 							["friendlyfire"] = {
 							},
@@ -7964,7 +7964,7 @@ _detalhes_database = {
 							["on_hold"] = false,
 							["start_time"] = 1594751817,
 							["serial"] = "Player-4465-01C7FC88",
-							["friendlyfire_total"] = 0,
+							["classe"] = "HUNTER",
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -7978,16 +7978,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
 							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 172.008327,
 							["delay"] = 0,
 							["monster"] = true,
-							["total"] = 172.008327,
 							["end_time"] = 1594751836,
+							["total"] = 172.008327,
 							["damage_taken"] = 263.008327,
 							["nome"] = "Kolkar Stormer",
 							["spells"] = {
@@ -8012,8 +8012,8 @@ _detalhes_database = {
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
@@ -8035,8 +8035,8 @@ _detalhes_database = {
 										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 3,
-										["total"] = 0,
 										["r_amt"] = 0,
+										["total"] = 0,
 										["c_max"] = 0,
 										["b_dmg"] = 0,
 										["id"] = "!Melee",
@@ -8072,8 +8072,8 @@ _detalhes_database = {
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
@@ -8142,8 +8142,8 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["b_dmg"] = 5,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 5,
@@ -8204,14 +8204,14 @@ _detalhes_database = {
 							["debuff_uptime_targets"] = {
 							},
 							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 6,
-								["Arcane Shot"] = 2,
+							["pets"] = {
+								"Cat <Mxzq>", -- [1]
 							},
 							["nome"] = "Mxzq",
 							["last_event"] = 1594751828,
-							["pets"] = {
-								"Cat <Mxzq>", -- [1]
+							["spell_cast"] = {
+								["Auto Shot"] = 6,
+								["Arcane Shot"] = 2,
 							},
 							["classe"] = "HUNTER",
 							["serial"] = "Player-4465-01C7FC88",
@@ -8226,10 +8226,10 @@ _detalhes_database = {
 							["spell_cast"] = {
 								["Growl"] = 2,
 							},
-							["tipo"] = 4,
 							["classe"] = "PET",
-							["serial"] = "Pet-0-4447-1-306-3415-0F003251E4",
 							["last_event"] = 0,
+							["serial"] = "Pet-0-4447-1-306-3415-0F003251E4",
+							["tipo"] = 4,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
@@ -8264,9 +8264,7 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 1627,
 				["playing_solo"] = true,
 				["totals"] = {
 					435, -- [1]
@@ -8291,24 +8289,6 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "20:37:10",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Kolkar Stormer",
-				["TotalElapsedCombatTime"] = 535237.118,
-				["CombatEndedAt"] = 535237.118,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:36:57",
-				["end_time"] = 535237.118,
-				["combat_id"] = 1241,
 				["totals_grupo"] = {
 					186, -- [1]
 					0, -- [2]
@@ -8330,7 +8310,18 @@ _detalhes_database = {
 						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
-				["spells_cast_timeline"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "20:37:10",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kolkar Stormer",
+				["TotalElapsedCombatTime"] = 535237.118,
+				["CombatEndedAt"] = 535237.118,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -8351,15 +8342,24 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["combat_counter"] = 1627,
+				["end_time"] = 535237.118,
+				["combat_id"] = 1241,
+				["player_last_events"] = {
+				},
+				["frags"] = {
+					["Kolkar Stormer"] = 1,
+				},
+				["data_inicio"] = "20:36:57",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["CombatSkillCache"] = {
 				},
 				["TimeData"] = {
 				},
 				["start_time"] = 535223.617,
 				["contra"] = "Kolkar Stormer",
-				["frags"] = {
-					["Kolkar Stormer"] = 1,
+				["spells_cast_timeline"] = {
 				},
 			}, -- [16]
 			{
@@ -8379,16 +8379,16 @@ _detalhes_database = {
 							["pets"] = {
 								"Cat <Mxzq>", -- [1]
 							},
-							["end_time"] = 1594751800,
+							["total"] = 252.005055,
 							["tipo"] = 1,
-							["classe"] = "HUNTER",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 								[128] = 252,
 							},
 							["total_without_pet"] = 195.005055,
 							["delay"] = 0,
 							["dps_started"] = false,
-							["total"] = 252.005055,
+							["end_time"] = 1594751800,
 							["damage_taken"] = 83.005055,
 							["friendlyfire"] = {
 							},
@@ -8446,8 +8446,8 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 7,
@@ -8494,7 +8494,7 @@ _detalhes_database = {
 							["on_hold"] = false,
 							["start_time"] = 1594751783,
 							["serial"] = "Player-4465-01C7FC88",
-							["friendlyfire_total"] = 0,
+							["classe"] = "HUNTER",
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -8508,16 +8508,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
 							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 83.003875,
 							["delay"] = 0,
 							["monster"] = true,
-							["total"] = 83.003875,
 							["end_time"] = 1594751800,
+							["total"] = 83.003875,
 							["damage_taken"] = 252.003875,
 							["nome"] = "Kolkar Wrangler",
 							["spells"] = {
@@ -8570,8 +8570,8 @@ _detalhes_database = {
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
@@ -8639,8 +8639,8 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 5,
@@ -8716,15 +8716,15 @@ _detalhes_database = {
 							["debuff_uptime_targets"] = {
 							},
 							["grupo"] = true,
+							["pets"] = {
+								"Cat <Mxzq>", -- [1]
+							},
+							["nome"] = "Mxzq",
+							["last_event"] = 1594751799,
 							["spell_cast"] = {
 								["Auto Shot"] = 7,
 								["Serpent Sting"] = 1,
 								["Arcane Shot"] = 2,
-							},
-							["nome"] = "Mxzq",
-							["last_event"] = 1594751799,
-							["pets"] = {
-								"Cat <Mxzq>", -- [1]
 							},
 							["classe"] = "HUNTER",
 							["serial"] = "Player-4465-01C7FC88",
@@ -8739,10 +8739,10 @@ _detalhes_database = {
 							["spell_cast"] = {
 								["Growl"] = 2,
 							},
-							["tipo"] = 4,
 							["classe"] = "PET",
-							["serial"] = "Pet-0-4447-1-306-3415-0F003251E4",
 							["last_event"] = 0,
+							["serial"] = "Pet-0-4447-1-306-3415-0F003251E4",
+							["tipo"] = 4,
 						}, -- [3]
 					},
 				}, -- [4]
@@ -8761,9 +8761,7 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 1626,
 				["playing_solo"] = true,
 				["totals"] = {
 					335, -- [1]
@@ -8788,24 +8786,6 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "20:36:40",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Kolkar Wrangler",
-				["TotalElapsedCombatTime"] = 535207.143,
-				["CombatEndedAt"] = 535207.143,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:36:23",
-				["end_time"] = 535207.143,
-				["combat_id"] = 1240,
 				["totals_grupo"] = {
 					195, -- [1]
 					0, -- [2]
@@ -8827,7 +8807,18 @@ _detalhes_database = {
 						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
-				["spells_cast_timeline"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "20:36:40",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Kolkar Wrangler",
+				["TotalElapsedCombatTime"] = 535207.143,
+				["CombatEndedAt"] = 535207.143,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -8848,15 +8839,24 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["combat_counter"] = 1626,
+				["end_time"] = 535207.143,
+				["combat_id"] = 1240,
+				["player_last_events"] = {
+				},
+				["frags"] = {
+					["Kolkar Wrangler"] = 1,
+				},
+				["data_inicio"] = "20:36:23",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["CombatSkillCache"] = {
 				},
 				["TimeData"] = {
 				},
 				["start_time"] = 535189.533,
 				["contra"] = "Kolkar Wrangler",
-				["frags"] = {
-					["Kolkar Wrangler"] = 1,
+				["spells_cast_timeline"] = {
 				},
 			}, -- [17]
 			{
@@ -8876,16 +8876,16 @@ _detalhes_database = {
 							["pets"] = {
 								"Cat <Mxzq>", -- [1]
 							},
-							["total"] = 289.002665,
+							["end_time"] = 1594751765,
 							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
+							["classe"] = "HUNTER",
 							["raid_targets"] = {
 								[128] = 289,
 							},
 							["total_without_pet"] = 191.002665,
 							["delay"] = 0,
 							["dps_started"] = false,
-							["end_time"] = 1594751765,
+							["total"] = 289.002665,
 							["on_hold"] = false,
 							["damage_taken"] = 46.002665,
 							["nome"] = "Mxzq",
@@ -8990,7 +8990,7 @@ _detalhes_database = {
 							},
 							["start_time"] = 1594751751,
 							["serial"] = "Player-4465-01C7FC88",
-							["classe"] = "HUNTER",
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -9005,16 +9005,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["dps_started"] = false,
 							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 135.003522,
 							["delay"] = 0,
 							["monster"] = true,
-							["total"] = 135.003522,
 							["end_time"] = 1594751765,
+							["total"] = 135.003522,
 							["damage_taken"] = 289.003522,
 							["nome"] = "Kolkar Wrangler",
 							["spells"] = {
@@ -9200,14 +9200,14 @@ _detalhes_database = {
 							["debuff_uptime_targets"] = {
 							},
 							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 7,
-								["Arcane Shot"] = 1,
+							["pets"] = {
+								"Cat <Mxzq>", -- [1]
 							},
 							["nome"] = "Mxzq",
 							["last_event"] = 1594751763,
-							["pets"] = {
-								"Cat <Mxzq>", -- [1]
+							["spell_cast"] = {
+								["Auto Shot"] = 7,
+								["Arcane Shot"] = 1,
 							},
 							["classe"] = "HUNTER",
 							["serial"] = "Player-4465-01C7FC88",
@@ -9222,10 +9222,10 @@ _detalhes_database = {
 							["spell_cast"] = {
 								["Growl"] = 2,
 							},
-							["tipo"] = 4,
 							["classe"] = "PET",
-							["serial"] = "Pet-0-4447-1-306-3415-0F003251E4",
 							["last_event"] = 0,
+							["serial"] = "Pet-0-4447-1-306-3415-0F003251E4",
+							["tipo"] = 4,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
@@ -9299,9 +9299,6 @@ _detalhes_database = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "20:35:51",
-				["end_time"] = 535171.914,
-				["combat_id"] = 1239,
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -9321,7 +9318,11 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["spells_cast_timeline"] = {
+				["end_time"] = 535171.914,
+				["combat_id"] = 1239,
+				["data_inicio"] = "20:35:51",
+				["frags"] = {
+					["Kolkar Wrangler"] = 1,
 				},
 				["cleu_events"] = {
 					["n"] = 1,
@@ -9353,8 +9354,7 @@ _detalhes_database = {
 				},
 				["start_time"] = 535157.67,
 				["contra"] = "Kolkar Wrangler",
-				["frags"] = {
-					["Kolkar Wrangler"] = 1,
+				["spells_cast_timeline"] = {
 				},
 			}, -- [18]
 		},
@@ -9468,20 +9468,6 @@ _detalhes_database = {
 			},
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["font_size"] = 10,
-			["row_spacement"] = 21,
-			["main_frame_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0.2, -- [4]
-			},
-			["main_frame_strata"] = "LOW",
-			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["use_spark"] = true,
-			["y"] = -4.577636718750e-05,
-			["x"] = 0,
-			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -9493,6 +9479,20 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["size"] = 32,
 			},
+			["row_spacement"] = 21,
+			["main_frame_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.2, -- [4]
+			},
+			["main_frame_strata"] = "LOW",
+			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
+			["font_size"] = 10,
+			["use_spark"] = true,
+			["x"] = 0,
+			["font_face"] = "Friz Quadrata TT",
+			["y"] = -4.577636718750e-05,
 			["author"] = "Details! Team",
 			["point"] = "CENTER",
 			["row_height"] = 20,
@@ -9504,7 +9504,7 @@ _detalhes_database = {
 		["channel"] = "SELF",
 		["reverse"] = false,
 	},
-	["last_day"] = "14",
+	["last_day"] = "15",
 	["cached_talents"] = {
 		["Player-4465-01C7FC88"] = {
 			{
@@ -10240,7 +10240,7 @@ _detalhes_database = {
 		["enabled"] = true,
 		["channel"] = "SELF",
 	},
-	["combat_counter"] = 1673,
+	["combat_counter"] = 1679,
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
@@ -10279,9 +10279,9 @@ _detalhes_database = {
 						["Razormane Defender"] = 0,
 						["Sunscale Lashtail"] = 0,
 						["Zhevra Runner"] = 0,
-						["Barak Kodobane"] = 0,
-						["Razormane Scout"] = 0,
 						["Durotar Tiger"] = 0,
+						["Razormane Scout"] = 0,
+						["Barak Kodobane"] = 0,
 						["Razormane Quilboar"] = 0,
 						["Razormane Water Seeker"] = 0,
 						["Razormane Dustrunner"] = 0,
@@ -10327,7 +10327,7 @@ _detalhes_database = {
 									["Felstalker"] = 0,
 									["Razormane Dustrunner"] = 0,
 									["Greater Plainstrider"] = 0,
-									["Dustwind Harpy"] = 0,
+									["Durotar Tiger"] = 0,
 									["Razormane Quilboar"] = 0,
 									["Scorpid Worker"] = 0,
 									["Bloodtalon Taillasher"] = 0,
@@ -10339,7 +10339,7 @@ _detalhes_database = {
 									["Mottled Boar"] = 0,
 									["Razormane Battleguard"] = 0,
 									["Yarrog Baneshadow"] = 0,
-									["Durotar Tiger"] = 0,
+									["Dustwind Harpy"] = 0,
 									["Vile Familiar"] = 0,
 								},
 								["m_dmg"] = 0,
@@ -10354,11 +10354,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["r_amt"] = 0,
 							},
 							["!Melee"] = {
@@ -10379,9 +10379,9 @@ _detalhes_database = {
 									["Durotar Tiger"] = 0,
 									["Razormane Quilboar"] = 0,
 									["Razormane Dustrunner"] = 0,
-									["Razormane Wolf"] = 0,
-									["Mottled Boar"] = 0,
 									["Bloodtalon Taillasher"] = 0,
+									["Mottled Boar"] = 0,
+									["Razormane Wolf"] = 0,
 									["Razormane Water Seeker"] = 0,
 									["Voodoo Troll"] = 0,
 									["Fleeting Plainstrider"] = 0,
@@ -10403,11 +10403,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["r_amt"] = 0,
 							},
 							["Serpent Sting"] = {
@@ -10464,8 +10464,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -10493,11 +10493,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 							["Concussive Shot"] = {
@@ -10521,11 +10521,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 							["!Autoshot"] = {
@@ -10584,11 +10584,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["r_amt"] = 0,
 							},
 							["Arcane Shot"] = {
@@ -10619,8 +10619,8 @@ _detalhes_database = {
 									["Voodoo Troll"] = 0,
 									["Razormane Defender"] = 0,
 									["Clattering Scorpid"] = 0,
-									["Bloodtalon Taillasher"] = 0,
 									["Razormane Wolf"] = 0,
+									["Bloodtalon Taillasher"] = 0,
 									["Sunscale Lashtail"] = 0,
 									["Razormane Thornweaver"] = 0,
 									["Armored Scorpid"] = 0,
@@ -10640,8 +10640,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -10677,8 +10677,8 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003709,
-					["fight_component"] = true,
 					["dps_started"] = false,
+					["fight_component"] = true,
 					["end_time"] = 1594483976,
 					["serial"] = "Creature-0-4447-1-88-3098-000009DFEA",
 					["damage_taken"] = 0.003709,
@@ -10706,11 +10706,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -10771,8 +10771,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -10799,8 +10799,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -10837,7 +10837,7 @@ _detalhes_database = {
 					},
 					["total_without_pet"] = 0.004799,
 					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1594486475,
 					["delay"] = 0,
 					["damage_taken"] = 0.004799,
@@ -10864,8 +10864,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -10892,8 +10892,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -10912,7 +10912,7 @@ _detalhes_database = {
 					["last_dps"] = 0,
 					["start_time"] = 1594486472,
 					["serial"] = "Creature-0-4447-1-88-3124-000009B132",
-					["dps_started"] = false,
+					["fight_component"] = true,
 				}, -- [4]
 				{
 					["flag_original"] = 276,
@@ -10923,7 +10923,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.008441,
 					["tipo"] = 1,
 					["classe"] = "HUNTER",
 					["raid_targets"] = {
@@ -10937,7 +10937,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.008441,
+					["last_dps"] = 0,
 					["nome"] = "Huffer",
 					["spec"] = 253,
 					["grupo"] = true,
@@ -10945,11 +10945,11 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1594487347,
-					["serial"] = "0x0000-0000-0000",
 					["friendlyfire"] = {
 					},
+					["start_time"] = 1594487347,
+					["serial"] = "0x0000-0000-0000",
+					["on_hold"] = false,
 				}, -- [5]
 				{
 					["flag_original"] = 276,
@@ -10960,7 +10960,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.00711,
 					["tipo"] = 1,
 					["classe"] = "PALADIN",
 					["raid_targets"] = {
@@ -10974,7 +10974,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.00711,
+					["last_dps"] = 0,
 					["nome"] = "Bolvar Fordragon",
 					["spec"] = 66,
 					["grupo"] = true,
@@ -10982,11 +10982,11 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1594487347,
-					["serial"] = "0x0000-0000-0000",
 					["friendlyfire"] = {
 					},
+					["start_time"] = 1594487347,
+					["serial"] = "0x0000-0000-0000",
+					["on_hold"] = false,
 				}, -- [6]
 				{
 					["flag_original"] = 276,
@@ -10997,7 +10997,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.00427,
 					["tipo"] = 1,
 					["classe"] = "MAGE",
 					["raid_targets"] = {
@@ -11011,7 +11011,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.00427,
+					["last_dps"] = 0,
 					["nome"] = "Ragnaros",
 					["spec"] = 63,
 					["grupo"] = true,
@@ -11019,11 +11019,11 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1594487347,
-					["serial"] = "0x0000-0000-0000",
 					["friendlyfire"] = {
 					},
+					["start_time"] = 1594487347,
+					["serial"] = "0x0000-0000-0000",
+					["on_hold"] = false,
 				}, -- [7]
 				{
 					["flag_original"] = 276,
@@ -11034,7 +11034,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.008736,
 					["tipo"] = 1,
 					["classe"] = "MAGE",
 					["raid_targets"] = {
@@ -11048,7 +11048,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.008736,
+					["last_dps"] = 0,
 					["nome"] = "Archmage Trelane",
 					["spec"] = 64,
 					["grupo"] = true,
@@ -11056,11 +11056,11 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1594487347,
-					["serial"] = "0x0000-0000-0000",
 					["friendlyfire"] = {
 					},
+					["start_time"] = 1594487347,
+					["serial"] = "0x0000-0000-0000",
+					["on_hold"] = false,
 				}, -- [8]
 				{
 					["flag_original"] = 276,
@@ -11071,7 +11071,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.006108,
 					["tipo"] = 1,
 					["classe"] = "PALADIN",
 					["raid_targets"] = {
@@ -11085,7 +11085,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.006108,
+					["last_dps"] = 0,
 					["nome"] = "Arthas",
 					["spec"] = 66,
 					["grupo"] = true,
@@ -11093,11 +11093,11 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1594487347,
-					["serial"] = "0x0000-0000-0000",
 					["friendlyfire"] = {
 					},
+					["start_time"] = 1594487347,
+					["serial"] = "0x0000-0000-0000",
+					["on_hold"] = false,
 				}, -- [9]
 				{
 					["flag_original"] = 276,
@@ -11108,7 +11108,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.00804,
 					["tipo"] = 1,
 					["classe"] = "WARRIOR",
 					["raid_targets"] = {
@@ -11122,7 +11122,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.00804,
+					["last_dps"] = 0,
 					["nome"] = "Stormwind Guard",
 					["spec"] = 73,
 					["grupo"] = true,
@@ -11130,11 +11130,11 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1594487347,
-					["serial"] = "0x0000-0000-0000",
 					["friendlyfire"] = {
 					},
+					["start_time"] = 1594487347,
+					["serial"] = "0x0000-0000-0000",
+					["on_hold"] = false,
 				}, -- [10]
 				{
 					["flag_original"] = 276,
@@ -11145,7 +11145,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.003649,
 					["tipo"] = 1,
 					["classe"] = "DEATHKNIGHT",
 					["raid_targets"] = {
@@ -11159,7 +11159,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.003649,
+					["last_dps"] = 0,
 					["nome"] = "The Lich King",
 					["spec"] = 252,
 					["grupo"] = true,
@@ -11167,11 +11167,11 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1594487347,
-					["serial"] = "0x0000-0000-0000",
 					["friendlyfire"] = {
 					},
+					["start_time"] = 1594487347,
+					["serial"] = "0x0000-0000-0000",
+					["on_hold"] = false,
 				}, -- [11]
 				{
 					["flag_original"] = 276,
@@ -11182,7 +11182,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.007208,
 					["tipo"] = 1,
 					["classe"] = "WARRIOR",
 					["raid_targets"] = {
@@ -11196,7 +11196,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.007208,
+					["last_dps"] = 0,
 					["nome"] = "General Rajaxx",
 					["spec"] = 72,
 					["grupo"] = true,
@@ -11204,11 +11204,11 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1594487347,
-					["serial"] = "0x0000-0000-0000",
 					["friendlyfire"] = {
 					},
+					["start_time"] = 1594487347,
+					["serial"] = "0x0000-0000-0000",
+					["on_hold"] = false,
 				}, -- [12]
 				{
 					["flag_original"] = 276,
@@ -11219,7 +11219,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.002986,
 					["tipo"] = 1,
 					["classe"] = "SHAMAN",
 					["raid_targets"] = {
@@ -11233,7 +11233,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.002986,
+					["last_dps"] = 0,
 					["nome"] = "Your Internet Girlfriend",
 					["spec"] = 264,
 					["grupo"] = true,
@@ -11241,11 +11241,11 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1594487347,
-					["serial"] = "0x0000-0000-0000",
 					["friendlyfire"] = {
 					},
+					["start_time"] = 1594487347,
+					["serial"] = "0x0000-0000-0000",
+					["on_hold"] = false,
 				}, -- [13]
 				{
 					["flag_original"] = 276,
@@ -11256,7 +11256,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.004039,
 					["tipo"] = 1,
 					["classe"] = "DEATHKNIGHT",
 					["raid_targets"] = {
@@ -11270,7 +11270,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.004039,
+					["last_dps"] = 0,
 					["nome"] = "Helvis Phresley",
 					["spec"] = 252,
 					["grupo"] = true,
@@ -11278,11 +11278,11 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1594487347,
-					["serial"] = "0x0000-0000-0000",
 					["friendlyfire"] = {
 					},
+					["start_time"] = 1594487347,
+					["serial"] = "0x0000-0000-0000",
+					["on_hold"] = false,
 				}, -- [14]
 				{
 					["flag_original"] = 276,
@@ -11293,7 +11293,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.007338,
 					["tipo"] = 1,
 					["classe"] = "HUNTER",
 					["raid_targets"] = {
@@ -11307,7 +11307,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.007338,
+					["last_dps"] = 0,
 					["nome"] = "Fritz Fizzlesprocket",
 					["spec"] = 254,
 					["grupo"] = true,
@@ -11315,11 +11315,11 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1594487347,
-					["serial"] = "0x0000-0000-0000",
 					["friendlyfire"] = {
 					},
+					["start_time"] = 1594487347,
+					["serial"] = "0x0000-0000-0000",
+					["on_hold"] = false,
 				}, -- [15]
 				{
 					["flag_original"] = 276,
@@ -11330,7 +11330,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.007481,
 					["tipo"] = 1,
 					["classe"] = "WARLOCK",
 					["raid_targets"] = {
@@ -11344,7 +11344,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.007481,
+					["last_dps"] = 0,
 					["nome"] = "Ner'zhul",
 					["spec"] = 265,
 					["grupo"] = true,
@@ -11352,11 +11352,11 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1594487347,
-					["serial"] = "0x0000-0000-0000",
 					["friendlyfire"] = {
 					},
+					["start_time"] = 1594487347,
+					["serial"] = "0x0000-0000-0000",
+					["on_hold"] = false,
 				}, -- [16]
 				{
 					["flag_original"] = 276,
@@ -11367,7 +11367,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.008222,
 					["tipo"] = 1,
 					["classe"] = "ROGUE",
 					["raid_targets"] = {
@@ -11381,7 +11381,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.008222,
+					["last_dps"] = 0,
 					["nome"] = "A PvP Player",
 					["spec"] = 260,
 					["grupo"] = true,
@@ -11389,11 +11389,11 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1594487347,
-					["serial"] = "0x0000-0000-0000",
 					["friendlyfire"] = {
 					},
+					["start_time"] = 1594487347,
+					["serial"] = "0x0000-0000-0000",
+					["on_hold"] = false,
 				}, -- [17]
 				{
 					["flag_original"] = 276,
@@ -11404,7 +11404,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.008845,
 					["tipo"] = 1,
 					["classe"] = "DEATHKNIGHT",
 					["raid_targets"] = {
@@ -11418,7 +11418,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.008845,
+					["last_dps"] = 0,
 					["nome"] = "Baron Rivendare",
 					["spec"] = 252,
 					["grupo"] = true,
@@ -11426,11 +11426,11 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1594487347,
-					["serial"] = "0x0000-0000-0000",
 					["friendlyfire"] = {
 					},
+					["start_time"] = 1594487347,
+					["serial"] = "0x0000-0000-0000",
+					["on_hold"] = false,
 				}, -- [18]
 				{
 					["flag_original"] = 276,
@@ -11441,7 +11441,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.0055,
 					["tipo"] = 1,
 					["classe"] = "WARRIOR",
 					["raid_targets"] = {
@@ -11455,7 +11455,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.0055,
+					["last_dps"] = 0,
 					["nome"] = "Footman Malakai",
 					["spec"] = 72,
 					["grupo"] = true,
@@ -11463,11 +11463,11 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1594487347,
-					["serial"] = "0x0000-0000-0000",
 					["friendlyfire"] = {
 					},
+					["start_time"] = 1594487347,
+					["serial"] = "0x0000-0000-0000",
+					["on_hold"] = false,
 				}, -- [19]
 				{
 					["flag_original"] = 276,
@@ -11478,7 +11478,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.005172,
 					["tipo"] = 1,
 					["classe"] = "WARRIOR",
 					["raid_targets"] = {
@@ -11492,7 +11492,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.005172,
+					["last_dps"] = 0,
 					["nome"] = "Cairne Bloodhoof",
 					["spec"] = 72,
 					["grupo"] = true,
@@ -11500,11 +11500,11 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1594487347,
-					["serial"] = "0x0000-0000-0000",
 					["friendlyfire"] = {
 					},
+					["start_time"] = 1594487347,
+					["serial"] = "0x0000-0000-0000",
+					["on_hold"] = false,
 				}, -- [20]
 				{
 					["flag_original"] = 276,
@@ -11515,7 +11515,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.008365,
 					["tipo"] = 1,
 					["classe"] = "MONK",
 					["raid_targets"] = {
@@ -11529,7 +11529,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.008365,
+					["last_dps"] = 0,
 					["nome"] = "Your Raid Leader",
 					["spec"] = 268,
 					["grupo"] = true,
@@ -11537,11 +11537,11 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1594487347,
-					["serial"] = "0x0000-0000-0000",
 					["friendlyfire"] = {
 					},
+					["start_time"] = 1594487347,
+					["serial"] = "0x0000-0000-0000",
+					["on_hold"] = false,
 				}, -- [21]
 				{
 					["flag_original"] = 276,
@@ -11552,7 +11552,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.007475,
 					["tipo"] = 1,
 					["classe"] = "DEATHKNIGHT",
 					["raid_targets"] = {
@@ -11566,7 +11566,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.007475,
+					["last_dps"] = 0,
 					["nome"] = "Lady Blaumeux",
 					["spec"] = 252,
 					["grupo"] = true,
@@ -11574,11 +11574,11 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1594487347,
-					["serial"] = "0x0000-0000-0000",
 					["friendlyfire"] = {
 					},
+					["start_time"] = 1594487347,
+					["serial"] = "0x0000-0000-0000",
+					["on_hold"] = false,
 				}, -- [22]
 				{
 					["flag_original"] = 276,
@@ -11589,7 +11589,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.004266,
 					["tipo"] = 1,
 					["classe"] = "PRIEST",
 					["raid_targets"] = {
@@ -11603,7 +11603,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.004266,
+					["last_dps"] = 0,
 					["nome"] = "Tyrande Whisperwind",
 					["spec"] = 257,
 					["grupo"] = true,
@@ -11611,11 +11611,11 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1594487347,
-					["serial"] = "0x0000-0000-0000",
 					["friendlyfire"] = {
 					},
+					["start_time"] = 1594487347,
+					["serial"] = "0x0000-0000-0000",
+					["on_hold"] = false,
 				}, -- [23]
 				{
 					["flag_original"] = 276,
@@ -11626,7 +11626,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.006296,
 					["tipo"] = 1,
 					["classe"] = "WARRIOR",
 					["raid_targets"] = {
@@ -11640,7 +11640,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.006296,
+					["last_dps"] = 0,
 					["nome"] = "Durotan",
 					["spec"] = 71,
 					["grupo"] = true,
@@ -11648,11 +11648,11 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1594487347,
-					["serial"] = "0x0000-0000-0000",
 					["friendlyfire"] = {
 					},
+					["start_time"] = 1594487347,
+					["serial"] = "0x0000-0000-0000",
+					["on_hold"] = false,
 				}, -- [24]
 				{
 					["flag_original"] = 276,
@@ -11663,7 +11663,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.002937,
 					["tipo"] = 1,
 					["classe"] = "PALADIN",
 					["raid_targets"] = {
@@ -11677,7 +11677,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.002937,
+					["last_dps"] = 0,
 					["nome"] = "King Djoffrey",
 					["spec"] = 65,
 					["grupo"] = true,
@@ -11685,11 +11685,11 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1594487347,
-					["serial"] = "0x0000-0000-0000",
 					["friendlyfire"] = {
 					},
+					["start_time"] = 1594487347,
+					["serial"] = "0x0000-0000-0000",
+					["on_hold"] = false,
 				}, -- [25]
 				{
 					["flag_original"] = 276,
@@ -11700,7 +11700,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.0066,
 					["tipo"] = 1,
 					["classe"] = "MAGE",
 					["raid_targets"] = {
@@ -11714,7 +11714,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.0066,
+					["last_dps"] = 0,
 					["nome"] = "Roland",
 					["spec"] = 64,
 					["grupo"] = true,
@@ -11722,11 +11722,11 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1594487347,
-					["serial"] = "0x0000-0000-0000",
 					["friendlyfire"] = {
 					},
+					["start_time"] = 1594487347,
+					["serial"] = "0x0000-0000-0000",
+					["on_hold"] = false,
 				}, -- [26]
 				{
 					["flag_original"] = 276,
@@ -11737,7 +11737,7 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
+					["damage_taken"] = 0.008688,
 					["tipo"] = 1,
 					["classe"] = "PALADIN",
 					["raid_targets"] = {
@@ -11751,7 +11751,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.008688,
+					["last_dps"] = 0,
 					["nome"] = "Saria Nightwatcher",
 					["spec"] = 70,
 					["grupo"] = true,
@@ -11759,11 +11759,11 @@ _detalhes_database = {
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1594487347,
-					["serial"] = "0x0000-0000-0000",
 					["friendlyfire"] = {
 					},
+					["start_time"] = 1594487347,
+					["serial"] = "0x0000-0000-0000",
+					["on_hold"] = false,
 				}, -- [27]
 				{
 					["flag_original"] = 68168,
@@ -11810,8 +11810,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -11838,8 +11838,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -11904,8 +11904,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -11970,8 +11970,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -11998,8 +11998,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -12026,8 +12026,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -12091,8 +12091,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -12119,8 +12119,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -12185,8 +12185,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -12213,8 +12213,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -12240,8 +12240,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -12305,8 +12305,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -12333,8 +12333,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -12360,8 +12360,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -12426,8 +12426,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -12491,8 +12491,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -12519,8 +12519,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -12587,11 +12587,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -12658,11 +12658,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 							["Poison"] = {
@@ -12688,11 +12688,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -12723,8 +12723,8 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006167,
-					["dps_started"] = false,
 					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1594562175,
 					["serial"] = "Creature-0-4447-1-88-3099-00000A0358",
 					["on_hold"] = false,
@@ -12752,11 +12752,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -12819,11 +12819,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 							["Improved Blocking"] = {
@@ -12846,11 +12846,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -12911,11 +12911,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 							["!Melee"] = {
@@ -12939,11 +12939,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 							["Faerie Fire"] = {
@@ -12966,11 +12966,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -13032,11 +13032,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -13098,11 +13098,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 							["Razor Mane"] = {
@@ -13126,11 +13126,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -13166,7 +13166,7 @@ _detalhes_database = {
 					},
 					["total_without_pet"] = 0.001829,
 					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1594565971,
 					["delay"] = 0,
 					["damage_taken"] = 0.001829,
@@ -13198,8 +13198,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -13218,7 +13218,7 @@ _detalhes_database = {
 					["last_dps"] = 0,
 					["start_time"] = 1594565968,
 					["serial"] = "Creature-0-4447-1-86-3244-00000B0795",
-					["dps_started"] = false,
+					["fight_component"] = true,
 				}, -- [43]
 				{
 					["flag_original"] = 68136,
@@ -13238,7 +13238,7 @@ _detalhes_database = {
 					},
 					["total_without_pet"] = 0.00781,
 					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1594565971,
 					["delay"] = 0,
 					["damage_taken"] = 0.00781,
@@ -13269,8 +13269,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -13289,7 +13289,7 @@ _detalhes_database = {
 					["last_dps"] = 0,
 					["start_time"] = 1594565968,
 					["serial"] = "Creature-0-4447-1-86-3246-00000A97ED",
-					["dps_started"] = false,
+					["fight_component"] = true,
 				}, -- [44]
 				{
 					["flag_original"] = 2632,
@@ -13341,8 +13341,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -13378,7 +13378,7 @@ _detalhes_database = {
 					},
 					["total_without_pet"] = 0.006061,
 					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1594565971,
 					["delay"] = 0,
 					["damage_taken"] = 0.006061,
@@ -13405,8 +13405,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -13425,7 +13425,7 @@ _detalhes_database = {
 					["last_dps"] = 0,
 					["start_time"] = 1594565968,
 					["serial"] = "Creature-0-4447-1-88-3107-0000077F70",
-					["dps_started"] = false,
+					["fight_component"] = true,
 				}, -- [46]
 				{
 					["flag_original"] = 68168,
@@ -13475,8 +13475,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -13502,8 +13502,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -13568,8 +13568,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -13634,8 +13634,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -13703,11 +13703,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["r_amt"] = 0,
 							},
 							["Creeping Mold"] = {
@@ -13732,11 +13732,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -13800,11 +13800,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["r_amt"] = 0,
 							},
 							["!Melee"] = {
@@ -13829,11 +13829,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -13866,8 +13866,8 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008955,
-					["fight_component"] = true,
 					["dps_started"] = false,
+					["fight_component"] = true,
 					["end_time"] = 1594569904,
 					["serial"] = "Creature-0-4447-1-86-3939-00000B1B9E",
 					["last_dps"] = 0,
@@ -13897,11 +13897,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -13962,11 +13962,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["r_amt"] = 0,
 							},
 							["!Melee"] = {
@@ -13991,11 +13991,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["r_amt"] = 0,
 							},
 							["Thorns"] = {
@@ -14020,11 +14020,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -14089,11 +14089,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["r_amt"] = 0,
 							},
 							["Lash"] = {
@@ -14116,11 +14116,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -14185,11 +14185,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 							["!Melee"] = {
@@ -14215,11 +14215,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 							["Lightning Bolt"] = {
@@ -14244,11 +14244,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -14313,11 +14313,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 							["!Melee"] = {
@@ -14342,11 +14342,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 							["Net"] = {
@@ -14370,11 +14370,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -14406,8 +14406,8 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007172,
-					["dps_started"] = false,
 					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1594579227,
 					["serial"] = "Creature-0-4447-1-86-3242-00000AF097",
 					["damage_taken"] = 0.007172,
@@ -14437,11 +14437,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -14505,11 +14505,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -14573,11 +14573,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 							["!Melee"] = {
@@ -14601,11 +14601,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -14667,11 +14667,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 							["!Melee"] = {
@@ -14696,11 +14696,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 							["Heroic Strike"] = {
@@ -14724,11 +14724,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -14792,11 +14792,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["r_amt"] = 0,
 							},
 							["Shoot"] = {
@@ -14820,11 +14820,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -14887,11 +14887,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -14956,11 +14956,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -15001,26 +15001,26 @@ _detalhes_database = {
 					["iniciar_hps"] = false,
 					["totaldenied"] = 0.00755,
 					["heal_enemy_amt"] = 0,
-					["total"] = 0.00755,
-					["classe"] = "MAGE",
 					["end_time"] = 1594487350,
-					["nome"] = "Malygos",
 					["spec"] = 62,
+					["classe"] = "MAGE",
+					["nome"] = "Malygos",
+					["targets_absorbs"] = {
+					},
 					["grupo"] = true,
-					["last_event"] = 0,
+					["total"] = 0.00755,
 					["heal_enemy"] = {
 					},
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
+					["last_event"] = 0,
 					["custom"] = 0,
 					["tipo"] = 2,
 					["on_hold"] = false,
 					["start_time"] = 1594487347,
 					["serial"] = "0x0000-0000-0000",
-					["targets_absorbs"] = {
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
 					},
 				}, -- [1]
 				{
@@ -15043,26 +15043,26 @@ _detalhes_database = {
 					["iniciar_hps"] = false,
 					["totaldenied"] = 0.007207,
 					["heal_enemy_amt"] = 0,
-					["total"] = 0.007207,
-					["classe"] = "HUNTER",
 					["end_time"] = 1594487350,
-					["nome"] = "Fritz Fizzlesprocket",
 					["spec"] = 253,
+					["classe"] = "HUNTER",
+					["nome"] = "Fritz Fizzlesprocket",
+					["targets_absorbs"] = {
+					},
 					["grupo"] = true,
-					["last_event"] = 0,
+					["total"] = 0.007207,
 					["heal_enemy"] = {
 					},
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
+					["last_event"] = 0,
 					["custom"] = 0,
 					["tipo"] = 2,
 					["on_hold"] = false,
 					["start_time"] = 1594487347,
 					["serial"] = "0x0000-0000-0000",
-					["targets_absorbs"] = {
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
 					},
 				}, -- [2]
 				{
@@ -15085,26 +15085,26 @@ _detalhes_database = {
 					["iniciar_hps"] = false,
 					["totaldenied"] = 0.006421,
 					["heal_enemy_amt"] = 0,
-					["total"] = 0.006421,
-					["classe"] = "SHAMAN",
 					["end_time"] = 1594487350,
-					["nome"] = "Your Math Teacher",
 					["spec"] = 263,
+					["classe"] = "SHAMAN",
+					["nome"] = "Your Math Teacher",
+					["targets_absorbs"] = {
+					},
 					["grupo"] = true,
-					["last_event"] = 0,
+					["total"] = 0.006421,
 					["heal_enemy"] = {
 					},
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
+					["last_event"] = 0,
 					["custom"] = 0,
 					["tipo"] = 2,
 					["on_hold"] = false,
 					["start_time"] = 1594487347,
 					["serial"] = "0x0000-0000-0000",
-					["targets_absorbs"] = {
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
 					},
 				}, -- [3]
 				{
@@ -15127,26 +15127,26 @@ _detalhes_database = {
 					["iniciar_hps"] = false,
 					["totaldenied"] = 0.006466,
 					["heal_enemy_amt"] = 0,
-					["total"] = 0.006466,
-					["classe"] = "PRIEST",
 					["end_time"] = 1594487350,
-					["nome"] = "Velen",
 					["spec"] = 258,
+					["classe"] = "PRIEST",
+					["nome"] = "Velen",
+					["targets_absorbs"] = {
+					},
 					["grupo"] = true,
-					["last_event"] = 0,
+					["total"] = 0.006466,
 					["heal_enemy"] = {
 					},
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
+					["last_event"] = 0,
 					["custom"] = 0,
 					["tipo"] = 2,
 					["on_hold"] = false,
 					["start_time"] = 1594487347,
 					["serial"] = "0x0000-0000-0000",
-					["targets_absorbs"] = {
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
 					},
 				}, -- [4]
 				{
@@ -15169,26 +15169,26 @@ _detalhes_database = {
 					["iniciar_hps"] = false,
 					["totaldenied"] = 0.006028,
 					["heal_enemy_amt"] = 0,
-					["total"] = 0.006028,
-					["classe"] = "ROGUE",
 					["end_time"] = 1594487350,
-					["nome"] = "Lisa Gallywix",
 					["spec"] = 261,
+					["classe"] = "ROGUE",
+					["nome"] = "Lisa Gallywix",
+					["targets_absorbs"] = {
+					},
 					["grupo"] = true,
-					["last_event"] = 0,
+					["total"] = 0.006028,
 					["heal_enemy"] = {
 					},
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
+					["last_event"] = 0,
 					["custom"] = 0,
 					["tipo"] = 2,
 					["on_hold"] = false,
 					["start_time"] = 1594487347,
 					["serial"] = "0x0000-0000-0000",
-					["targets_absorbs"] = {
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
 					},
 				}, -- [5]
 				{
@@ -15211,26 +15211,26 @@ _detalhes_database = {
 					["iniciar_hps"] = false,
 					["totaldenied"] = 0.008457,
 					["heal_enemy_amt"] = 0,
-					["total"] = 0.008457,
-					["classe"] = "MAGE",
 					["end_time"] = 1594487350,
-					["nome"] = "Nozdormu",
 					["spec"] = 62,
+					["classe"] = "MAGE",
+					["nome"] = "Nozdormu",
+					["targets_absorbs"] = {
+					},
 					["grupo"] = true,
-					["last_event"] = 0,
+					["total"] = 0.008457,
 					["heal_enemy"] = {
 					},
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
+					["last_event"] = 0,
 					["custom"] = 0,
 					["tipo"] = 2,
 					["on_hold"] = false,
 					["start_time"] = 1594487347,
 					["serial"] = "0x0000-0000-0000",
-					["targets_absorbs"] = {
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
 					},
 				}, -- [6]
 				{
@@ -15253,26 +15253,26 @@ _detalhes_database = {
 					["iniciar_hps"] = false,
 					["totaldenied"] = 0.004991,
 					["heal_enemy_amt"] = 0,
-					["total"] = 0.004991,
-					["classe"] = "MAGE",
 					["end_time"] = 1594487350,
-					["nome"] = "Antonidas",
 					["spec"] = 64,
+					["classe"] = "MAGE",
+					["nome"] = "Antonidas",
+					["targets_absorbs"] = {
+					},
 					["grupo"] = true,
-					["last_event"] = 0,
+					["total"] = 0.004991,
 					["heal_enemy"] = {
 					},
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
+					["last_event"] = 0,
 					["custom"] = 0,
 					["tipo"] = 2,
 					["on_hold"] = false,
 					["start_time"] = 1594487347,
 					["serial"] = "0x0000-0000-0000",
-					["targets_absorbs"] = {
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
 					},
 				}, -- [7]
 				{
@@ -15295,26 +15295,26 @@ _detalhes_database = {
 					["iniciar_hps"] = false,
 					["totaldenied"] = 0.00419,
 					["heal_enemy_amt"] = 0,
-					["total"] = 0.00419,
-					["classe"] = "MONK",
 					["end_time"] = 1594487350,
-					["nome"] = "Low Dps Guy",
 					["spec"] = 268,
+					["classe"] = "MONK",
+					["nome"] = "Low Dps Guy",
+					["targets_absorbs"] = {
+					},
 					["grupo"] = true,
-					["last_event"] = 0,
+					["total"] = 0.00419,
 					["heal_enemy"] = {
 					},
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
+					["last_event"] = 0,
 					["custom"] = 0,
 					["tipo"] = 2,
 					["on_hold"] = false,
 					["start_time"] = 1594487347,
 					["serial"] = "0x0000-0000-0000",
-					["targets_absorbs"] = {
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
 					},
 				}, -- [8]
 				{
@@ -15337,26 +15337,26 @@ _detalhes_database = {
 					["iniciar_hps"] = false,
 					["totaldenied"] = 0.007693,
 					["heal_enemy_amt"] = 0,
-					["total"] = 0.007693,
-					["classe"] = "PALADIN",
 					["end_time"] = 1594487350,
-					["nome"] = "Arthas",
 					["spec"] = 70,
+					["classe"] = "PALADIN",
+					["nome"] = "Arthas",
+					["targets_absorbs"] = {
+					},
 					["grupo"] = true,
-					["last_event"] = 0,
+					["total"] = 0.007693,
 					["heal_enemy"] = {
 					},
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
+					["last_event"] = 0,
 					["custom"] = 0,
 					["tipo"] = 2,
 					["on_hold"] = false,
 					["start_time"] = 1594487347,
 					["serial"] = "0x0000-0000-0000",
-					["targets_absorbs"] = {
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
 					},
 				}, -- [9]
 				{
@@ -15379,26 +15379,26 @@ _detalhes_database = {
 					["iniciar_hps"] = false,
 					["totaldenied"] = 0.001999,
 					["heal_enemy_amt"] = 0,
-					["total"] = 0.001999,
-					["classe"] = "PRIEST",
 					["end_time"] = 1594487350,
-					["nome"] = "Priestess MacDonnell",
 					["spec"] = 258,
+					["classe"] = "PRIEST",
+					["nome"] = "Priestess MacDonnell",
+					["targets_absorbs"] = {
+					},
 					["grupo"] = true,
-					["last_event"] = 0,
+					["total"] = 0.001999,
 					["heal_enemy"] = {
 					},
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
+					["last_event"] = 0,
 					["custom"] = 0,
 					["tipo"] = 2,
 					["on_hold"] = false,
 					["start_time"] = 1594487347,
 					["serial"] = "0x0000-0000-0000",
-					["targets_absorbs"] = {
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
 					},
 				}, -- [10]
 				{
@@ -15421,26 +15421,26 @@ _detalhes_database = {
 					["iniciar_hps"] = false,
 					["totaldenied"] = 0.007242,
 					["heal_enemy_amt"] = 0,
-					["total"] = 0.007242,
-					["classe"] = "WARRIOR",
 					["end_time"] = 1594487350,
-					["nome"] = "Mr. President",
 					["spec"] = 73,
+					["classe"] = "WARRIOR",
+					["nome"] = "Mr. President",
+					["targets_absorbs"] = {
+					},
 					["grupo"] = true,
-					["last_event"] = 0,
+					["total"] = 0.007242,
 					["heal_enemy"] = {
 					},
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
+					["last_event"] = 0,
 					["custom"] = 0,
 					["tipo"] = 2,
 					["on_hold"] = false,
 					["start_time"] = 1594487347,
 					["serial"] = "0x0000-0000-0000",
-					["targets_absorbs"] = {
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
 					},
 				}, -- [11]
 				{
@@ -15463,26 +15463,26 @@ _detalhes_database = {
 					["iniciar_hps"] = false,
 					["totaldenied"] = 0.006633,
 					["heal_enemy_amt"] = 0,
-					["total"] = 0.006633,
-					["classe"] = "WARRIOR",
 					["end_time"] = 1594487350,
-					["nome"] = "General Rajaxx",
 					["spec"] = 72,
+					["classe"] = "WARRIOR",
+					["nome"] = "General Rajaxx",
+					["targets_absorbs"] = {
+					},
 					["grupo"] = true,
-					["last_event"] = 0,
+					["total"] = 0.006633,
 					["heal_enemy"] = {
 					},
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
+					["last_event"] = 0,
 					["custom"] = 0,
 					["tipo"] = 2,
 					["on_hold"] = false,
 					["start_time"] = 1594487347,
 					["serial"] = "0x0000-0000-0000",
-					["targets_absorbs"] = {
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
 					},
 				}, -- [12]
 				{
@@ -15505,26 +15505,26 @@ _detalhes_database = {
 					["iniciar_hps"] = false,
 					["totaldenied"] = 0.004171,
 					["heal_enemy_amt"] = 0,
-					["total"] = 0.004171,
-					["classe"] = "WARLOCK",
 					["end_time"] = 1594487350,
-					["nome"] = "C'Thun",
 					["spec"] = 266,
+					["classe"] = "WARLOCK",
+					["nome"] = "C'Thun",
+					["targets_absorbs"] = {
+					},
 					["grupo"] = true,
-					["last_event"] = 0,
+					["total"] = 0.004171,
 					["heal_enemy"] = {
 					},
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
+					["last_event"] = 0,
 					["custom"] = 0,
 					["tipo"] = 2,
 					["on_hold"] = false,
 					["start_time"] = 1594487347,
 					["serial"] = "0x0000-0000-0000",
-					["targets_absorbs"] = {
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
 					},
 				}, -- [13]
 				{
@@ -15547,26 +15547,26 @@ _detalhes_database = {
 					["iniciar_hps"] = false,
 					["totaldenied"] = 0.003245,
 					["heal_enemy_amt"] = 0,
-					["total"] = 0.003245,
-					["classe"] = "MONK",
 					["end_time"] = 1594487350,
-					["nome"] = "Your Raid Leader",
 					["spec"] = 270,
+					["classe"] = "MONK",
+					["nome"] = "Your Raid Leader",
+					["targets_absorbs"] = {
+					},
 					["grupo"] = true,
-					["last_event"] = 0,
+					["total"] = 0.003245,
 					["heal_enemy"] = {
 					},
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
+					["last_event"] = 0,
 					["custom"] = 0,
 					["tipo"] = 2,
 					["on_hold"] = false,
 					["start_time"] = 1594487347,
 					["serial"] = "0x0000-0000-0000",
-					["targets_absorbs"] = {
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
 					},
 				}, -- [14]
 				{
@@ -15589,26 +15589,26 @@ _detalhes_database = {
 					["iniciar_hps"] = false,
 					["totaldenied"] = 0.008156,
 					["heal_enemy_amt"] = 0,
-					["total"] = 0.008156,
-					["classe"] = "DRUID",
 					["end_time"] = 1594487350,
-					["nome"] = "Eonar",
 					["spec"] = 104,
+					["classe"] = "DRUID",
+					["nome"] = "Eonar",
+					["targets_absorbs"] = {
+					},
 					["grupo"] = true,
-					["last_event"] = 0,
+					["total"] = 0.008156,
 					["heal_enemy"] = {
 					},
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
+					["last_event"] = 0,
 					["custom"] = 0,
 					["tipo"] = 2,
 					["on_hold"] = false,
 					["start_time"] = 1594487347,
 					["serial"] = "0x0000-0000-0000",
-					["targets_absorbs"] = {
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
 					},
 				}, -- [15]
 				{
@@ -15631,26 +15631,26 @@ _detalhes_database = {
 					["iniciar_hps"] = false,
 					["totaldenied"] = 0.00874,
 					["heal_enemy_amt"] = 0,
-					["total"] = 0.00874,
-					["classe"] = "PALADIN",
 					["end_time"] = 1594487350,
-					["nome"] = "Bolvar Fordragon",
 					["spec"] = 70,
+					["classe"] = "PALADIN",
+					["nome"] = "Bolvar Fordragon",
+					["targets_absorbs"] = {
+					},
 					["grupo"] = true,
-					["last_event"] = 0,
+					["total"] = 0.00874,
 					["heal_enemy"] = {
 					},
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
+					["last_event"] = 0,
 					["custom"] = 0,
 					["tipo"] = 2,
 					["on_hold"] = false,
 					["start_time"] = 1594487347,
 					["serial"] = "0x0000-0000-0000",
-					["targets_absorbs"] = {
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
 					},
 				}, -- [16]
 				{
@@ -15673,26 +15673,26 @@ _detalhes_database = {
 					["iniciar_hps"] = false,
 					["totaldenied"] = 0.005022,
 					["heal_enemy_amt"] = 0,
-					["total"] = 0.005022,
-					["classe"] = "DEATHKNIGHT",
 					["end_time"] = 1594487350,
-					["nome"] = "Drek'Thar",
 					["spec"] = 251,
+					["classe"] = "DEATHKNIGHT",
+					["nome"] = "Drek'Thar",
+					["targets_absorbs"] = {
+					},
 					["grupo"] = true,
-					["last_event"] = 0,
+					["total"] = 0.005022,
 					["heal_enemy"] = {
 					},
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
+					["last_event"] = 0,
 					["custom"] = 0,
 					["tipo"] = 2,
 					["on_hold"] = false,
 					["start_time"] = 1594487347,
 					["serial"] = "0x0000-0000-0000",
-					["targets_absorbs"] = {
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
 					},
 				}, -- [17]
 				{
@@ -15715,26 +15715,26 @@ _detalhes_database = {
 					["iniciar_hps"] = false,
 					["totaldenied"] = 0.005306,
 					["heal_enemy_amt"] = 0,
-					["total"] = 0.005306,
-					["classe"] = "ROGUE",
 					["end_time"] = 1594487350,
-					["nome"] = "Borivar",
 					["spec"] = 260,
+					["classe"] = "ROGUE",
+					["nome"] = "Borivar",
+					["targets_absorbs"] = {
+					},
 					["grupo"] = true,
-					["last_event"] = 0,
+					["total"] = 0.005306,
 					["heal_enemy"] = {
 					},
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
+					["last_event"] = 0,
 					["custom"] = 0,
 					["tipo"] = 2,
 					["on_hold"] = false,
 					["start_time"] = 1594487347,
 					["serial"] = "0x0000-0000-0000",
-					["targets_absorbs"] = {
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
 					},
 				}, -- [18]
 				{
@@ -15757,26 +15757,26 @@ _detalhes_database = {
 					["iniciar_hps"] = false,
 					["totaldenied"] = 0.004396,
 					["heal_enemy_amt"] = 0,
-					["total"] = 0.004396,
-					["classe"] = "WARRIOR",
 					["end_time"] = 1594487350,
-					["nome"] = "Footman Malakai",
 					["spec"] = 72,
+					["classe"] = "WARRIOR",
+					["nome"] = "Footman Malakai",
+					["targets_absorbs"] = {
+					},
 					["grupo"] = true,
-					["last_event"] = 0,
+					["total"] = 0.004396,
 					["heal_enemy"] = {
 					},
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
+					["last_event"] = 0,
 					["custom"] = 0,
 					["tipo"] = 2,
 					["on_hold"] = false,
 					["start_time"] = 1594487347,
 					["serial"] = "0x0000-0000-0000",
-					["targets_absorbs"] = {
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
 					},
 				}, -- [19]
 				{
@@ -15799,26 +15799,26 @@ _detalhes_database = {
 					["iniciar_hps"] = false,
 					["totaldenied"] = 0.002919,
 					["heal_enemy_amt"] = 0,
-					["total"] = 0.002919,
-					["classe"] = "PALADIN",
 					["end_time"] = 1594487350,
-					["nome"] = "Saria Nightwatcher",
 					["spec"] = 65,
+					["classe"] = "PALADIN",
+					["nome"] = "Saria Nightwatcher",
+					["targets_absorbs"] = {
+					},
 					["grupo"] = true,
-					["last_event"] = 0,
+					["total"] = 0.002919,
 					["heal_enemy"] = {
 					},
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
+					["last_event"] = 0,
 					["custom"] = 0,
 					["tipo"] = 2,
 					["on_hold"] = false,
 					["start_time"] = 1594487347,
 					["serial"] = "0x0000-0000-0000",
-					["targets_absorbs"] = {
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
 					},
 				}, -- [20]
 				{
@@ -15841,26 +15841,26 @@ _detalhes_database = {
 					["iniciar_hps"] = false,
 					["totaldenied"] = 0.005997,
 					["heal_enemy_amt"] = 0,
-					["total"] = 0.005997,
-					["classe"] = "SHAMAN",
 					["end_time"] = 1594487350,
-					["nome"] = "Your Internet Girlfriend",
 					["spec"] = 262,
+					["classe"] = "SHAMAN",
+					["nome"] = "Your Internet Girlfriend",
+					["targets_absorbs"] = {
+					},
 					["grupo"] = true,
-					["last_event"] = 0,
+					["total"] = 0.005997,
 					["heal_enemy"] = {
 					},
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
+					["last_event"] = 0,
 					["custom"] = 0,
 					["tipo"] = 2,
 					["on_hold"] = false,
 					["start_time"] = 1594487347,
 					["serial"] = "0x0000-0000-0000",
-					["targets_absorbs"] = {
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
 					},
 				}, -- [21]
 				{
@@ -15883,26 +15883,26 @@ _detalhes_database = {
 					["iniciar_hps"] = false,
 					["totaldenied"] = 0.008176,
 					["heal_enemy_amt"] = 0,
-					["total"] = 0.008176,
-					["classe"] = "PRIEST",
 					["end_time"] = 1594487350,
-					["nome"] = "Elune",
 					["spec"] = 256,
+					["classe"] = "PRIEST",
+					["nome"] = "Elune",
+					["targets_absorbs"] = {
+					},
 					["grupo"] = true,
-					["last_event"] = 0,
+					["total"] = 0.008176,
 					["heal_enemy"] = {
 					},
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
+					["last_event"] = 0,
 					["custom"] = 0,
 					["tipo"] = 2,
 					["on_hold"] = false,
 					["start_time"] = 1594487347,
 					["serial"] = "0x0000-0000-0000",
-					["targets_absorbs"] = {
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
 					},
 				}, -- [22]
 				{
@@ -15918,32 +15918,20 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["iniciar_hps"] = false,
+					["totalover_without_pet"] = 0.007893,
 					["targets_overheal"] = {
 						["Cat <Mxzq>"] = 0,
 					},
 					["classe"] = "HUNTER",
 					["totalover"] = 0.007893,
 					["total_without_pet"] = 0.007893,
-					["totalover_without_pet"] = 0.007893,
+					["iniciar_hps"] = false,
 					["totaldenied"] = 0.007893,
 					["fight_component"] = true,
-					["total"] = 0.007893,
+					["end_time"] = 1594554916,
 					["heal_enemy_amt"] = 0,
 					["healing_taken"] = 0.007893,
 					["nome"] = "Mxzq",
-					["targets_absorbs"] = {
-					},
-					["grupo"] = true,
-					["end_time"] = 1594554916,
-					["heal_enemy"] = {
-					},
-					["tipo"] = 2,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1594554913,
-					["serial"] = "Player-4465-01C7FC88",
 					["spells"] = {
 						["_ActorTable"] = {
 							["Healing Potion"] = {
@@ -15965,12 +15953,12 @@ _detalhes_database = {
 								},
 								["c_curado"] = 0,
 								["m_crit"] = 0,
-								["totaldenied"] = 0,
-								["m_amt"] = 0,
 								["m_healed"] = 0,
+								["c_min"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["absorbed"] = 0,
 							},
 							["Mend Pet"] = {
@@ -15993,16 +15981,28 @@ _detalhes_database = {
 								},
 								["c_curado"] = 0,
 								["m_crit"] = 0,
-								["totaldenied"] = 0,
-								["m_amt"] = 0,
 								["m_healed"] = 0,
+								["c_min"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["absorbed"] = 0,
 							},
 						},
 						["tipo"] = 3,
+					},
+					["grupo"] = true,
+					["total"] = 0.007893,
+					["heal_enemy"] = {
+					},
+					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 2,
+					["on_hold"] = false,
+					["start_time"] = 1594554913,
+					["serial"] = "Player-4465-01C7FC88",
+					["targets_absorbs"] = {
 					},
 				}, -- [23]
 				{
@@ -16018,14 +16018,14 @@ _detalhes_database = {
 					["iniciar_hps"] = false,
 					["healing_from"] = {
 					},
-					["healing_taken"] = 0.005255,
+					["heal_enemy_amt"] = 0,
 					["totalover"] = 0.005255,
 					["total_without_pet"] = 0.005255,
 					["start_time"] = 1594588308,
 					["totalover_without_pet"] = 0.005255,
 					["fight_component"] = true,
 					["total"] = 0.005255,
-					["heal_enemy_amt"] = 0,
+					["classe"] = "PET",
 					["delay"] = 0,
 					["nome"] = "Cat <Mxzq>",
 					["spells"] = {
@@ -16033,18 +16033,18 @@ _detalhes_database = {
 						},
 						["tipo"] = 3,
 					},
-					["classe"] = "PET",
 					["end_time"] = 1594588311,
+					["last_event"] = 0,
 					["heal_enemy"] = {
 					},
-					["last_event"] = 0,
+					["targets_absorbs"] = {
+					},
 					["custom"] = 0,
 					["tipo"] = 2,
 					["on_hold"] = false,
 					["totaldenied"] = 0.005255,
 					["serial"] = "Pet-0-4447-1-306-3415-01003251E4",
-					["targets_absorbs"] = {
-					},
+					["healing_taken"] = 0.005255,
 				}, -- [24]
 			},
 		}, -- [2]
@@ -16060,20 +16060,20 @@ _detalhes_database = {
 					["flag_original"] = 1297,
 					["debuff_uptime_spells"] = {
 						["_ActorTable"] = {
-							["Tame Armored Scorpid"] = {
-								["id"] = "Tame Armored Scorpid",
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							["Concussive Shot"] = {
-								["id"] = "Concussive Shot",
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
 							["Tame Surf Crawler"] = {
 								["id"] = "Tame Surf Crawler",
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							["Tame Beast"] = {
+								["id"] = "Tame Beast",
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							["Tame Armored Scorpid"] = {
+								["id"] = "Tame Armored Scorpid",
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -16090,8 +16090,8 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							["Tame Beast"] = {
-								["id"] = "Tame Beast",
+							["Concussive Shot"] = {
+								["id"] = "Concussive Shot",
 								["targets"] = {
 								},
 								["counter"] = 0,
@@ -16111,7 +16111,8 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["buff_uptime"] = 0,
+					["pets"] = {
+					},
 					["classe"] = "HUNTER",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
@@ -16169,8 +16170,7 @@ _detalhes_database = {
 					["tipo"] = 4,
 					["buff_uptime_targets"] = {
 					},
-					["pets"] = {
-					},
+					["buff_uptime"] = 0,
 					["serial"] = "Player-4465-01C7FC88",
 					["last_event"] = 0,
 				}, -- [1]
@@ -16711,7 +16711,7 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -459.987350463867,
+					["y"] = -459.987335205078,
 					["x"] = 420.47412109375,
 					["w"] = 179.999893188477,
 					["h"] = 178.307525634766,
@@ -16726,7 +16726,7 @@ _detalhes_database = {
 		}, -- [3]
 	},
 	["character_data"] = {
-		["logons"] = 405,
+		["logons"] = 411,
 	},
 	["announce_cooldowns"] = {
 		["enabled"] = false,

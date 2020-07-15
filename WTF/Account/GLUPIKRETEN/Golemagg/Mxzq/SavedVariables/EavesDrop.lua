@@ -217,12 +217,12 @@ EavesDropStatsDB = {
 					},
 					["Auto Shot"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/12/20 05:16:39|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4447-1-86-3939-00000B1B80:Razormane Wolf|hRazormane Wolf|h for |cffffffff24|r |cffffffffPhysical|r.",
-							["amount"] = 24,
+							["time"] = "|cffffffff07/15/20 01:00:18|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-145-3246-00000EDA17:Fleeting Plainstrider|hFleeting Plainstrider|h for |cffffffff25|r |cffffffffPhysical|r.",
+							["amount"] = 25,
 						},
 						[2] = {
-							["time"] = "|cffffffff07/12/20 11:14:24|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4447-1-306-3254-00000B64D3:Sunscale Lashtail|hSunscale Lashtail|h for |cffffffff46|r |cffffffffPhysical|r.(Critical)",
-							["amount"] = 46,
+							["time"] = "|cffffffff07/15/20 12:59:56|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-145-3255-00000ED9FD:Sunscale Screecher|hSunscale Screecher|h for |cffffffff47|r |cffffffffPhysical|r.(Critical)",
+							["amount"] = 47,
 						},
 					},
 					["Drain Life"] = {

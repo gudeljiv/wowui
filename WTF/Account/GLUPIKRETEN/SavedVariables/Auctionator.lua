@@ -168,19 +168,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 0,
 			["mr"] = 699,
 		},
-		["Aboriginal Loincloth of the Owl"] = {
-			["H3212"] = 900,
-			["cc"] = 4,
-			["id"] = "14119:0:0:760:0",
-			["sc"] = 1,
-			["mr"] = 900,
-		},
 		["Linen Cloth"] = {
 			["H3212"] = 20,
 			["cc"] = 7,
 			["id"] = "2589:0:0:0:0",
 			["sc"] = 0,
 			["mr"] = 20,
+		},
+		["Aboriginal Loincloth of the Owl"] = {
+			["H3212"] = 900,
+			["cc"] = 4,
+			["id"] = "14119:0:0:760:0",
+			["sc"] = 1,
+			["mr"] = 900,
 		},
 		["Bloodspattered Loincloth of the Bear"] = {
 			["H3212"] = 1800,
@@ -204,12 +204,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 1,
 			["mr"] = 4595,
 		},
-		["Bolt of Runecloth"] = {
-			["H3212"] = 30000,
+		["Mageweave Cloth"] = {
+			["H3212"] = 1500,
 			["cc"] = 7,
-			["id"] = "14048:0:0:0:0",
+			["id"] = "4338:0:0:0:0",
 			["sc"] = 0,
-			["mr"] = 30000,
+			["mr"] = 1500,
 		},
 		["Bloodspattered Loincloth of Power"] = {
 			["H3212"] = 899,
@@ -246,12 +246,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 1,
 			["mr"] = 200,
 		},
-		["Mageweave Cloth"] = {
-			["H3212"] = 1500,
+		["Bolt of Runecloth"] = {
+			["H3212"] = 30000,
 			["cc"] = 7,
-			["id"] = "4338:0:0:0:0",
+			["id"] = "14048:0:0:0:0",
 			["sc"] = 0,
-			["mr"] = 1500,
+			["mr"] = 30000,
 		},
 		["Bolt of Linen Cloth"] = {
 			["H3212"] = 55,
@@ -703,11 +703,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "10003:0:0:0:0",
 			["cc"] = 4,
 		},
-		["Aboriginal Gloves of the Owl"] = {
-			["mr"] = 3500,
-			["sc"] = 1,
-			["H3529"] = 3500,
-			["id"] = "14117:0:0:758:0",
+		["Heraldic Gloves"] = {
+			["mr"] = 72750,
+			["sc"] = 2,
+			["H3529"] = 72750,
+			["id"] = "8121:0:0:0:0",
 			["cc"] = 4,
 		},
 		["Fletcher's Gloves"] = {
@@ -731,11 +731,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "5966:0:0:0:0",
 			["cc"] = 4,
 		},
-		["Heraldic Gloves"] = {
-			["mr"] = 72750,
-			["sc"] = 2,
-			["H3529"] = 72750,
-			["id"] = "8121:0:0:0:0",
+		["Aboriginal Gloves of the Owl"] = {
+			["mr"] = 3500,
+			["sc"] = 1,
+			["H3529"] = 3500,
+			["id"] = "14117:0:0:758:0",
 			["cc"] = 4,
 		},
 		["Shadowskin Gloves"] = {
@@ -1030,21 +1030,21 @@ AUCTIONATOR_STACKING_PREFS = {
 		["stacksize"] = 10,
 		["numstacks"] = 0,
 	},
-	["reef octopus"] = {
-		["stacksize"] = 10,
+	["magnificent hide"] = {
 		["numstacks"] = 0,
+		["stacksize"] = 1,
 	},
 	["flask of the earth"] = {
 		["stacksize"] = 1,
 		["numstacks"] = 0,
 	},
-	["magnificent hide"] = {
+	["reef octopus"] = {
+		["stacksize"] = 10,
 		["numstacks"] = 0,
-		["stacksize"] = 1,
 	},
-	["*_herbs"] = {
+	["exotic leather"] = {
+		["numstacks"] = 0,
 		["stacksize"] = 20,
-		["numstacks"] = -1,
 	},
 	["sha crystal"] = {
 		["stacksize"] = 1,
@@ -1058,9 +1058,9 @@ AUCTIONATOR_STACKING_PREFS = {
 		["stacksize"] = 10,
 		["numstacks"] = 0,
 	},
-	["exotic leather"] = {
-		["numstacks"] = 0,
+	["*_herbs"] = {
 		["stacksize"] = 20,
+		["numstacks"] = -1,
 	},
 	["volatile water"] = {
 		["numstacks"] = 0,

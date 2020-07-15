@@ -284,7 +284,7 @@ cBniv_CatInfo = {
 	[24166] = "Junk",
 	[7912] = "Ores",
 	[72163] = "Leather",
-	[34009] = "Transmog",
+	[23424] = "Ores",
 	[22448] = "Enchanting",
 	[29905] = "Quest",
 	[34057] = "Enchanting",
@@ -365,6 +365,6 @@ cBniv_CatInfo = {
 	[765] = "Herbs",
 	[72095] = "Bars",
 	[32751] = "Junk",
-	[23424] = "Ores",
+	[34009] = "Transmog",
 	[6599] = "Tanking Gear",
 }
