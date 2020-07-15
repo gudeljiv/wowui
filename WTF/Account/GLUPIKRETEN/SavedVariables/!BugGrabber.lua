@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 899,
+	["session"] = 909,
 	["errors"] = {
 		{
 			["message"] = "[string \"ItemRackMenu3:CreateBeautyBorder(8)\"]:1: attempt to index global 'ItemRackMenu3' (a nil value)",
@@ -391,27 +391,13 @@ BugGrabberDB = {
 			["counter"] = 3,
 		}, -- [49]
 		{
-			["message"] = "(null)",
-			["session"] = 896,
-			["time"] = "2020/07/11 19:09:15",
-			["counter"] = 74,
-		}, -- [50]
-		{
-			["message"] = "...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: Usage: CreateFrame(\"frameType\" [, \"name\"] [, parent] [, \"template\"] [, id])",
-			["time"] = "2020/07/11 17:53:14",
-			["locals"] = "(*temporary) = \"Button\"\n(*temporary) = \"NivayaSlot1\"\n(*temporary) = \"ItemButtonTemplate\"\n(*temporary) = \"ContainerFrameItemButtonTemplate\"\n",
-			["stack"] = "[C]: in function `CreateFrame'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: in function `Create'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:56: in function `New'\nInterface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:762: in function <Interface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:757>",
-			["session"] = 899,
-			["counter"] = 161,
-		}, -- [51]
-		{
 			["message"] = "[string \"TalentFrame1:CreateBeautyBorder(8)\"]:1: attempt to index global 'TalentFrame1' (a nil value)",
 			["time"] = "2020/07/15 13:04:22",
 			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'TalentFrame1' (a nil value)\"\n",
 			["stack"] = "[string \"TalentFrame1:CreateBeautyBorder(8)\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2783: in function <Interface\\FrameXML\\ChatFrame.lua:2776>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:338: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 899,
 			["counter"] = 1,
-		}, -- [52]
+		}, -- [50]
 		{
 			["message"] = "[string \"TalentFrameTalent1RankBorder:CreateBeautyBo...\"]:1: attempt to call method 'CreateBeautyBorder' (a nil value)",
 			["time"] = "2020/07/15 13:07:09",
@@ -419,7 +405,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"TalentFrameTalent1RankBorder:CreateBeautyBo...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2783: in function <Interface\\FrameXML\\ChatFrame.lua:2776>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:338: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 899,
 			["counter"] = 1,
-		}, -- [53]
+		}, -- [51]
 		{
 			["message"] = "[string \"TalentFrameTalentRank1Border:Hide()\"]:1: attempt to index global 'TalentFrameTalentRank1Border' (a nil value)",
 			["time"] = "2020/07/15 13:07:46",
@@ -427,7 +413,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"TalentFrameTalentRank1Border:Hide()\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2783: in function <Interface\\FrameXML\\ChatFrame.lua:2776>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:338: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 899,
 			["counter"] = 1,
-		}, -- [54]
+		}, -- [52]
 		{
 			["message"] = "[string \"TalentFrameTalent1Rank:CreateBeautyBorder(4...\"]:1: attempt to call method 'CreateBeautyBorder' (a nil value)",
 			["time"] = "2020/07/15 13:07:25",
@@ -435,14 +421,84 @@ BugGrabberDB = {
 			["stack"] = "[string \"TalentFrameTalent1Rank:CreateBeautyBorder(4...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2783: in function <Interface\\FrameXML\\ChatFrame.lua:2776>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:338: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 899,
 			["counter"] = 4,
-		}, -- [55]
+		}, -- [53]
 		{
 			["message"] = "[string \"TalentFrameTalent1Slot:CreateBeautyBorder(4...\"]:1: attempt to call method 'CreateBeautyBorder' (a nil value)",
 			["time"] = "2020/07/15 13:08:57",
 			["locals"] = "(*temporary) = nil\n(*temporary) = TalentFrameTalent1Slot {\n 0 = <userdata>\n}\n(*temporary) = 4\n(*temporary) = \"attempt to call method 'CreateBeautyBorder' (a nil value)\"\n",
 			["stack"] = "[string \"TalentFrameTalent1Slot:CreateBeautyBorder(4...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2783: in function <Interface\\FrameXML\\ChatFrame.lua:2776>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:338: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
-			["session"] = 899,
-			["counter"] = 1,
+			["session"] = 900,
+			["counter"] = 3,
+		}, -- [54]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\TalentFrame.lua:2: attempt to concatenate global 'TalentFrameTalent' (a nil value)",
+			["time"] = "2020/07/15 16:43:00",
+			["locals"] = "(for index) = 1\n(for limit) = 46\n(for step) = 1\ni = 1\n(*temporary) = <table> {\n UpdateOnBarHighlightMarksBySpell = <function> defined @Interface\\FrameXML\\ActionButton.lua:70\n ERR_OUT_OF_CHI = \"Not enough chi\"\n DH_HAVOC_CORE_ABILITY_2 = \"Strong melee attack that consumes Fury. If it critical strikes, some Fury is refunded.\"\n MerchantItem9ItemButtonStock = MerchantItem9ItemButtonStock {\n }\n GetTrainerServiceTypeFilter = <function> defined =[C]:-1\n UNIT_NAMES_COMBATLOG_TOOLTIP = \"Color unit names.\"\n SetTrainerServiceTypeFilter = <function> defined =[C]:-1\n LE_GAME_ERR_CHAT_RAID_RESTRICTED_TRIAL = 742\n SPELL_FAILED_CUSTOM_ERROR_71 = \"This partygoer wants to dance with you.\"\n LE_GAME_ERR_PET_SPELL_TARGETS_DEAD = 399\n ERROR_CLUB_TICKET_COUNT_AT_MAX_COMMUNITY = \"Can't create any more invite links for this group.\"\n RecruitAFriendFrame = RecruitAFriendFrame {\n }\n CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture = CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture {\n }\n ERR_TRADE_EQUIPPED_BAG = \"You can't trade equipped bags.\"\n PVP_RANK_6_1 = \"Corporal\"\n MultiBarLeftButton7 = MultiBarLeftButton7 {\n }\n InterfaceOptionsNamesPanelUnitNameplatesShowAll = InterfaceOptionsNamesPanelUnitNameplatesShowAll {\n }\n VideoOptionsFrameDefaults = VideoOptionsFrameDefaults {\n }\n MerchantItem2AltCurrencyFrameItem1Text = MerchantItem2AltCurrencyFrameItem1Text {\n }\n OPTION_TOOLTIP_ACTION_BUTTON_USE_KEY_DOWN = \"Action button keybinds will respond on key down, rather than on key up.\"\n BINDING_NAME_NAMEPLATES = \"Show Enemy Name Plates\"\n INSTANCE_UNAVAILABLE_OTHER_TEMPORARILY_DISABLED = \"%s cannot enter. This instance is temporarily disabled.\"\n MultiBarBottomRightButton8Shine5 = MultiBarBottomRightButton8Shine5 {\n }\n IsReferAFriendLinked = <function> defined =[C]:-1\n MAIL_LETTER_TOOLTIP = \"Click to make a permanent\ncopy of this letter.\"\n UnitFrameManaBar_UnregisterDefaultEvents = <function> defined @Interface\\FrameXML\\UnitFrame.lua:602\n DUNGEON_FLOOR_UPPERBLACKROCKSPIRE3 = \"Hall of Blackhand\"\n CHAT_CONFIG_OTHER_COMBAT = <table> {\n }\n FCFDockOverflowButton_OnClick = <function> defined @Interface\\FrameXML\\FloatingChatFrame.lua:2373\n BOOST2_WARRIOR_COLOSSUSSMASH = \"Use |cFFFFFFFFColossus Smash|r.\n\n|cFFFFFFFFColossus Smash|r increases your damage.\"\n BN_UNABLE_TO_RESOLVE_NAME = \"Unable to whisper '%s'. Blizzard services may be unavailable.\"\n LE_GAME_ERR_RECRUIT_A_FRIEND_FAILED = 952\n CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight = CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight {\n }\n LE_GAME_ERR_ONLY_ONE_QUIVER = 32\n SpellButton6Cooldown = SpellButton6Cooldown {\n }\n LOSS_OF_CONTROL_DISPLAY_FEAR = \"Feared\"\n Graphics_QualityText = Graphics_QualityText {\n }\n ROGUE_COMBAT_CORE_ABILITY_4 = \"Melee ability with an increased range that consumes Combo Points.\"\n StanceButton4FlyoutArrow = StanceButton4FlyoutArrow {\n }\n MultiBarRightButton7Shine9 = MultiBarRightButton7Shine9 {\n }\n BankFrameItem17SearchOverlay = BankFrameItem17SearchOverlay {\n }\n DMG_LCD = \"DMG\"\n RaidGraphics_EnvironmentalDetailSlider = RaidGraphics_EnvironmentalDetailSlider {\n }\n HubPanelProfileDefaultFriendlyNameColorMode = HubPanelProfileDefaultFriendlyNameColorMode {\n }\n Is64BitClient = <function> defined =[C]:-1\n SecureCmdItemParse = <function> defined @Interface\\FrameXML\\ChatFrame.lua:1111\n SLASH_STOPATTACK1 = \"/stopattack\"\n SortQuestWatches = <function> defined =[C]:-1\n ContainerFrame4Item16Cooldown = ContainerFrame4Item16Cooldown {\n }\n MINIMAP_TRACKING_TRAINER_CLASS = \"Class Trainer\"\n SLASH_DISMOUNT2 = \"/dismount\"\n DUNGEON_FLOOR_DRAGONBLIGHTCHROMIESCENARIO2 = \"Andorhal\"\n PlayerFrame_UpdateReadyCheck = <function> defined @Interface\\FrameXML\\PlayerFrame.lua:345\n EMOTE69_CMD1 = \"/nosepick\"\n WowTokenRedemptionFrameBg = WowTokenRedemptionFrameBg {\n }\n SHIELD_BLOCK_TEMPLATE = \"%d Block\"\n AutoFollowStatus = AutoFollowStatus {\n }\n GuildControlPopupFrame = GuildControlPopupFrame {\n }\n ARENA_CASUAL = \"Skirmish\"\n SendStationeryBackgroundRight = SendStationeryBackgroundRight {\n }\n MultiBarLeftButton11Name = MultiBarLeftB",
+			["stack"] = "Interface\\AddOns\\xVermin\\TalentFrame.lua:2: in main chunk",
+			["session"] = 901,
+			["counter"] = 2,
+		}, -- [55]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\TalentFrame.lua:2: attempt to index field '?' (a nil value)",
+			["time"] = "2020/07/15 16:51:34",
+			["locals"] = "(for index) = 1\n(for limit) = 46\n(for step) = 1\ni = 1\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"1\"\n(*temporary) = nil\n(*temporary) = \"attempt to index field '?' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\TalentFrame.lua:2: in main chunk",
+			["session"] = 903,
+			["counter"] = 2,
 		}, -- [56]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\TalentFrame.lua:3: attempt to index field '?' (a nil value)",
+			["time"] = "2020/07/15 16:53:01",
+			["locals"] = "(for index) = 1\n(for limit) = 46\n(for step) = 1\ni = 1\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"1\"\n(*temporary) = true\n(*temporary) = \"attempt to index field '?' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\TalentFrame.lua:3: in main chunk",
+			["session"] = 904,
+			["counter"] = 1,
+		}, -- [57]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\TalentFrame.lua:4: attempt to call method 'CreateBeautyBorder' (a nil value)",
+			["time"] = "2020/07/15 16:54:02",
+			["locals"] = "(for index) = 1\n(for limit) = 46\n(for step) = 1\ni = 1\nframe = \"TalentFrameTalent1\"\nframeSlot = \"TalentFrameTalent1Slot\"\n(*temporary) = nil\n(*temporary) = \"TalentFrameTalent1\"\n(*temporary) = 8\n(*temporary) = \"attempt to call method 'CreateBeautyBorder' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\TalentFrame.lua:4: in main chunk",
+			["session"] = 905,
+			["counter"] = 1,
+		}, -- [58]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\TalentFrame.lua:4: attempt to index local 'frame' (a nil value)",
+			["time"] = "2020/07/15 16:57:11",
+			["locals"] = "(for index) = 1\n(for limit) = 46\n(for step) = 1\ni = 1\nframe = nil\nframeSlot = nil\n(*temporary) = \"TalentFrameTalent1Slot\"\n(*temporary) = nil\n(*temporary) = \"Slot\"\n(*temporary) = \"attempt to index local 'frame' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\TalentFrame.lua:4: in main chunk",
+			["session"] = 906,
+			["counter"] = 1,
+		}, -- [59]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\TalentFrame.lua:9: attempt to call method 'CreateBeautyBorder' (a nil value)",
+			["time"] = "2020/07/15 16:59:28",
+			["locals"] = "(for index) = 1\n(for limit) = 46\n(for step) = 1\ni = 1\nframe = TalentFrameTalent1 {\n 0 = <userdata>\n beautyBorder = <table> {\n }\n Count = TalentFrameTalent1Count {\n }\n IconBorder = <unnamed> {\n }\n beautyShadow = <table> {\n }\n searchOverlay = TalentFrameTalent1SearchOverlay {\n }\n icon = TalentFrameTalent1IconTexture {\n }\n IconOverlay = <unnamed> {\n }\n}\nframeSlot = TalentFrameTalent1Slot {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = TalentFrameTalent1Slot {\n 0 = <userdata>\n}\n(*temporary) = 8\n(*temporary) = \"attempt to call method 'CreateBeautyBorder' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\TalentFrame.lua:9: in function <Interface\\AddOns\\xVermin\\TalentFrame.lua:1>",
+			["session"] = 908,
+			["counter"] = 2,
+		}, -- [60]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\TalentFrame.lua:15: Attempt to register unknown event \"PLAYER_TALENT_UPDATE\"",
+			["time"] = "2020/07/15 17:03:45",
+			["locals"] = "(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = \"PLAYER_TALENT_UPDATE\"\n",
+			["stack"] = "[C]: in function `RegisterEvent'\nInterface\\AddOns\\xVermin\\TalentFrame.lua:15: in main chunk",
+			["session"] = 909,
+			["counter"] = 1,
+		}, -- [61]
+		{
+			["message"] = "...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: Usage: CreateFrame(\"frameType\" [, \"name\"] [, parent] [, \"template\"] [, id])",
+			["time"] = "2020/07/11 17:53:14",
+			["locals"] = "(*temporary) = \"Button\"\n(*temporary) = \"NivayaSlot1\"\n(*temporary) = \"ItemButtonTemplate\"\n(*temporary) = \"ContainerFrameItemButtonTemplate\"\n",
+			["stack"] = "[C]: in function `CreateFrame'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: in function `Create'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:56: in function `New'\nInterface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:762: in function <Interface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:757>",
+			["session"] = 909,
+			["counter"] = 171,
+		}, -- [62]
+		{
+			["message"] = "(null)",
+			["session"] = 909,
+			["time"] = "2020/07/11 19:09:15",
+			["counter"] = 98,
+		}, -- [63]
 	},
 }

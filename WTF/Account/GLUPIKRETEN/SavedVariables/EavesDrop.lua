@@ -17,11 +17,11 @@ EavesDropDB = {
 		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
 		["Pitchwise - Golemagg"] = "Default",
 		["Greenwise - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default",
+		["Pitchwise - Genesis"] = "Pitchwise - Genesis",
 		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
 		["Pepecocorita - Genesis"] = "Default",
 		["Judawise - Golemagg"] = "Default",
-		["Pitchwise - Genesis"] = "Pitchwise - Genesis",
+		["Vermin - Golemagg"] = "Default",
 		["Elohssa - Stonespine"] = "Default",
 		["Ozrencic - Golemagg"] = "Ozrencic - Golemagg",
 		["Whatevs - Stonespine"] = "Default",
@@ -39,14 +39,14 @@ EavesDropDB = {
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
+			["SCROLLBUTTON"] = true,
+			["TEXTSIZE"] = 13,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
-			["TEXTSIZE"] = 13,
-			["NUMLINES"] = 16,
 			["HIDETAB"] = true,
 			["LINEHEIGHT"] = 16,
-			["SCROLLBUTTON"] = true,
+			["NUMLINES"] = 16,
 		},
 		["Pitchwise - Golemagg"] = {
 		},
@@ -62,11 +62,11 @@ EavesDropDB = {
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
-			["SCROLLBUTTON"] = true,
-			["TEXTSIZE"] = 13,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
+			["TEXTSIZE"] = 13,
+			["SCROLLBUTTON"] = true,
 			["NUMLINES"] = 16,
 			["LINEHEIGHT"] = 16,
 			["HIDETAB"] = true,
@@ -108,9 +108,9 @@ EavesDropDB = {
 		},
 		["Kosturko - Golemagg"] = {
 		},
-		["Pitchwise - Genesis"] = {
+		["Vermin - Golemagg"] = {
 		},
-		["Golemagg"] = {
+		["Judawise - Golemagg"] = {
 		},
 		["Default"] = {
 			["LINEWIDTH"] = 130,
@@ -122,20 +122,20 @@ EavesDropDB = {
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
-			["NUMLINES"] = 16,
+			["SCROLLBUTTON"] = true,
 			["TEXTSIZE"] = 13,
+			["NUMLINES"] = 16,
+			["HIDETAB"] = true,
+			["LINEHEIGHT"] = 16,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
-			["HIDETAB"] = true,
-			["LINEHEIGHT"] = 16,
-			["SCROLLBUTTON"] = true,
 		},
-		["Judawise - Golemagg"] = {
+		["Golemagg"] = {
 		},
 		["Korupcija - Stonespine"] = {
 		},
-		["Vermin - Golemagg"] = {
+		["Pitchwise - Genesis"] = {
 		},
 		["Ozrencic - Golemagg"] = {
 		},
