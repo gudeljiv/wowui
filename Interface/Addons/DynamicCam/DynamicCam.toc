@@ -1,0 +1,16 @@
+## Interface: 11305
+## Version: classic-1.1.5
+## Title: DynamicCam
+## Author: mpstark, dernPerkins, LudiusMaximus
+## SavedVariables: DynamicCamDB
+## Notes: A more dynamic camera.
+## OptionalDeps: Ace3, LibCamera, LibEasing, LibCompress
+## X-Curse-Project-ID: 101120
+## X-WoWI-ID: 25578
+
+embeds.xml
+
+Core.lua
+Sharing.lua
+Presets.lua
+Options.lua
