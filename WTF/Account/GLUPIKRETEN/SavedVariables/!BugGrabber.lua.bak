@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 908,
 	["lastSanitation"] = 3,
+	["session"] = 909,
 	["errors"] = {
 		{
 			["message"] = "[string \"ItemRackMenu3:CreateBeautyBorder(8)\"]:1: attempt to index global 'ItemRackMenu3' (a nil value)",
@@ -21,14 +21,14 @@ BugGrabberDB = {
 		}, -- [2]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Details\\Libs\\LibThreatClassic2\\lib.xml",
-			["time"] = "2020/07/11 19:09:15",
 			["session"] = 751,
+			["time"] = "2020/07/11 19:09:15",
 			["counter"] = 8,
 		}, -- [3]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Details_Streamer\\Details_Streamer.toc",
-			["session"] = 751,
 			["time"] = "2020/07/11 19:09:55",
+			["session"] = 751,
 			["counter"] = 2,
 		}, -- [4]
 		{
@@ -471,26 +471,34 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [59]
 		{
-			["message"] = "(null)",
-			["time"] = "2020/07/11 19:09:15",
-			["session"] = 906,
-			["counter"] = 95,
-		}, -- [60]
-		{
-			["message"] = "...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: Usage: CreateFrame(\"frameType\" [, \"name\"] [, parent] [, \"template\"] [, id])",
-			["time"] = "2020/07/11 17:53:14",
-			["locals"] = "(*temporary) = \"Button\"\n(*temporary) = \"NivayaSlot1\"\n(*temporary) = \"ItemButtonTemplate\"\n(*temporary) = \"ContainerFrameItemButtonTemplate\"\n",
-			["stack"] = "[C]: in function `CreateFrame'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: in function `Create'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:56: in function `New'\nInterface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:762: in function <Interface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:757>",
-			["session"] = 908,
-			["counter"] = 170,
-		}, -- [61]
-		{
 			["message"] = "Interface\\AddOns\\xVermin\\TalentFrame.lua:9: attempt to call method 'CreateBeautyBorder' (a nil value)",
 			["time"] = "2020/07/15 16:59:28",
 			["locals"] = "(for index) = 1\n(for limit) = 46\n(for step) = 1\ni = 1\nframe = TalentFrameTalent1 {\n 0 = <userdata>\n beautyBorder = <table> {\n }\n Count = TalentFrameTalent1Count {\n }\n IconBorder = <unnamed> {\n }\n beautyShadow = <table> {\n }\n searchOverlay = TalentFrameTalent1SearchOverlay {\n }\n icon = TalentFrameTalent1IconTexture {\n }\n IconOverlay = <unnamed> {\n }\n}\nframeSlot = TalentFrameTalent1Slot {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = TalentFrameTalent1Slot {\n 0 = <userdata>\n}\n(*temporary) = 8\n(*temporary) = \"attempt to call method 'CreateBeautyBorder' (a nil value)\"\n",
 			["stack"] = "Interface\\AddOns\\xVermin\\TalentFrame.lua:9: in function <Interface\\AddOns\\xVermin\\TalentFrame.lua:1>",
 			["session"] = 908,
 			["counter"] = 2,
+		}, -- [60]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\TalentFrame.lua:15: Attempt to register unknown event \"PLAYER_TALENT_UPDATE\"",
+			["time"] = "2020/07/15 17:03:45",
+			["locals"] = "(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = \"PLAYER_TALENT_UPDATE\"\n",
+			["stack"] = "[C]: in function `RegisterEvent'\nInterface\\AddOns\\xVermin\\TalentFrame.lua:15: in main chunk",
+			["session"] = 909,
+			["counter"] = 1,
+		}, -- [61]
+		{
+			["message"] = "...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: Usage: CreateFrame(\"frameType\" [, \"name\"] [, parent] [, \"template\"] [, id])",
+			["time"] = "2020/07/11 17:53:14",
+			["locals"] = "(*temporary) = \"Button\"\n(*temporary) = \"NivayaSlot1\"\n(*temporary) = \"ItemButtonTemplate\"\n(*temporary) = \"ContainerFrameItemButtonTemplate\"\n",
+			["stack"] = "[C]: in function `CreateFrame'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: in function `Create'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:56: in function `New'\nInterface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:762: in function <Interface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:757>",
+			["session"] = 909,
+			["counter"] = 171,
 		}, -- [62]
+		{
+			["message"] = "(null)",
+			["session"] = 909,
+			["time"] = "2020/07/11 19:09:15",
+			["counter"] = 98,
+		}, -- [63]
 	},
 }
