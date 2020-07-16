@@ -12,11 +12,7 @@ VER 3 0000000000000001 "FRAME" "132150"
 /fstack
 END
 VER 3 0000000000000002 "MOVE" "Ability_Ambush."
-/run TalentFrameTalent1:CreateBeautyBorder(8)
-/run TalentFrameTalent5:CreateBeautyBorder(8)
-/run TalentFrameTalent7:CreateBeautyBorder(8)
-/run TalentFrameTalent1RankBorder:Show()
-/run TalentFrameTalent1Slot:CreateBeautyBorder(4)
+/run print(string.match("1231232a:::22:::::21", "%d+"))
 END
 VER 3 0000000000000005 "PetFood" "Inv_misc_questionmark"
 #showtooltip item:2287

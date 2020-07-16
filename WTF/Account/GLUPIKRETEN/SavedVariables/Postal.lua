@@ -16,7 +16,7 @@ Postal3ClassicDB = {
 				"Greenwise|Golemagg|Horde|18|HUNTER", -- [2]
 				"Judawise|Golemagg|Horde|1|PRIEST", -- [3]
 				"Mxyz|Golemagg|Horde|1|PRIEST", -- [4]
-				"Mxzq|Golemagg|Horde|13|HUNTER", -- [5]
+				"Mxzq|Golemagg|Horde|14|HUNTER", -- [5]
 				"Verminz|Golemagg|Horde|30|WARRIOR", -- [6]
 				"Vermin|Golemagg|Horde|15|WARRIOR", -- [7]
 			},

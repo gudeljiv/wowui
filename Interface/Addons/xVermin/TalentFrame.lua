@@ -2,18 +2,36 @@ local function SkinTalents()
 	for i = 1, 46 do
 		local frame = _G["TalentFrameTalent" .. i]
 		local frameSlot = _G["TalentFrameTalent" .. i .. "Slot"]
+		local frameSlot = _G["TalentFrameTalent" .. i .. "Slot"]
 		if (frame ~= nil) then
 			frame:CreateBeautyBorder(8)
-		end
-		if (frameSlot ~= nil) then
 			frameSlot:Hide()
 		end
 	end
 end
 
--- local pf = CreateFrame("Frame")
--- pf:RegisterEvent("PLAYER_TALENT_UPDATE")
--- pf:RegisterEvent("INSPECT_TALENT_READY")
--- pf:RegisterEvent("PET_TALENT_UPDATE")
--- pf:RegisterEvent("PET_TALENT_UPDATE")
--- pf:SetScript("OnEvent", SkinTalents)
+local playerTalentFrameHooked = false
+local addonLoadedFrame = CreateFrame("Frame")
+addonLoadedFrame:RegisterEvent("ADDON_LOADED")
+addonLoadedFrame:SetScript(
+	"OnEvent",
+	function(self, event, arg1, ...)
+		if not playerTalentFrameHooked and arg1 == "Blizzard_TalentUI" then
+			hooksecurefunc(
+				TalentFrame,
+				"Show",
+				function()
+					SkinTalents()
+				end
+			)
+			-- hooksecurefunc(
+			-- 	TalentFrame,
+			-- 	"Hide",
+			-- 	function()
+			-- 		print("Hiding PlayerTalentFrame")
+			-- 	end
+			-- )
+			playerTalentFrameHooked = true
+		end
+	end
+)

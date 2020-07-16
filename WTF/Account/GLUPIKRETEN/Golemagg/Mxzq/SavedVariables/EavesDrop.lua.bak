@@ -221,8 +221,8 @@ EavesDropStatsDB = {
 							["amount"] = 25,
 						},
 						[2] = {
-							["time"] = "|cffffffff07/15/20 12:59:56|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-145-3255-00000ED9FD:Sunscale Screecher|hSunscale Screecher|h for |cffffffff47|r |cffffffffPhysical|r.(Critical)",
-							["amount"] = 47,
+							["time"] = "|cffffffff07/16/20 11:55:21|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-66-3415-00000F5EBA:Savannah Huntress|hSavannah Huntress|h for |cffffffff49|r |cffffffffPhysical|r.(Critical)",
+							["amount"] = 49,
 						},
 					},
 					["Drain Life"] = {
@@ -235,8 +235,8 @@ EavesDropStatsDB = {
 					},
 					["Wing Clip"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/14/20 08:35:23|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWing Clip|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4447-1-306-3246-00000DEFE9:Fleeting Plainstrider|hFleeting Plainstrider|h for |cffffffff3|r |cffffffffPhysical|r.",
-							["amount"] = 3,
+							["time"] = "|cffffffff07/16/20 11:51:37|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWing Clip|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-66-3246-00000F738C:Fleeting Plainstrider|hFleeting Plainstrider|h for |cffffffff4|r |cffffffffPhysical|r.",
+							["amount"] = 4,
 						},
 						[2] = {
 						},

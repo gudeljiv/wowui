@@ -574,7 +574,7 @@ NeatPlatesSpellDB = {
 			["castTime"] = 3169,
 		},
 		["Conjure Mana Ruby"] = {
-			["castTime"] = 3074,
+			["castTime"] = 2970,
 		},
 		["Elixir of Water Breathing"] = {
 			["castTime"] = 3036,
@@ -1219,7 +1219,7 @@ NeatPlatesSpellDB = {
 			["castTime"] = 143,
 		},
 		["Conjure Food"] = {
-			["castTime"] = 2919,
+			["castTime"] = 3007,
 		},
 		["Revenge"] = {
 		},
@@ -1495,7 +1495,7 @@ NeatPlatesSpellDB = {
 		["Claw"] = {
 		},
 		["Revive Pet"] = {
-			["castTime"] = 10001,
+			["castTime"] = 9946,
 		},
 		["Flametongue Attack"] = {
 		},
@@ -1522,7 +1522,7 @@ NeatPlatesSpellDB = {
 			["castTime"] = 1168,
 		},
 		["Conjure Mana Citrine"] = {
-			["castTime"] = 3082.9999999404,
+			["castTime"] = 3025,
 		},
 		["Dazed"] = {
 		},
@@ -2226,7 +2226,7 @@ NeatPlatesSpellDB = {
 			["castTime"] = 4387,
 		},
 		["Conjure Water"] = {
-			["castTime"] = 3015,
+			["castTime"] = 3018,
 		},
 		["Demoralizing Roar"] = {
 		},
@@ -3494,11 +3494,11 @@ NeatPlatesSpellDB = {
 			},
 		},
 		["Shock"] = {
-			["4025"] = {
-			},
 			["2762"] = {
 			},
 			["1062"] = {
+			},
+			["4025"] = {
 			},
 		},
 		["Bear Form"] = {
@@ -3680,9 +3680,9 @@ NeatPlatesSpellDB = {
 			},
 		},
 		["Frost Nova"] = {
-			["12759"] = {
-			},
 			["3436"] = {
+			},
+			["3917"] = {
 			},
 			["3260"] = {
 			},
@@ -3693,7 +3693,7 @@ NeatPlatesSpellDB = {
 			},
 			["2377"] = {
 			},
-			["3917"] = {
+			["12759"] = {
 			},
 		},
 		["Mavickk"] = {
@@ -3919,16 +3919,16 @@ NeatPlatesSpellDB = {
 			},
 			["697"] = {
 			},
-			["660"] = {
-				["castTime"] = 18198,
-			},
 			["694"] = {
+			},
+			["1061"] = {
 			},
 			["698"] = {
 			},
 			["588"] = {
 			},
-			["1061"] = {
+			["660"] = {
+				["castTime"] = 18198,
 			},
 			["597"] = {
 			},
@@ -4205,10 +4205,10 @@ NeatPlatesSpellDB = {
 			["7506"] = {
 			},
 		},
-		["Nimble Reflexes"] = {
-			["1535"] = {
+		["Doxxcz"] = {
+			["2266"] = {
 			},
-			["3378"] = {
+			["2360"] = {
 			},
 		},
 		["Sap Might"] = {
@@ -4219,10 +4219,8 @@ NeatPlatesSpellDB = {
 			["5676"] = {
 			},
 		},
-		["Doxxcz"] = {
-			["2266"] = {
-			},
-			["2360"] = {
+		["Fengus' Ferocity"] = {
+			["14321"] = {
 			},
 		},
 		["Summon Treant Ally"] = {
@@ -5266,8 +5264,10 @@ NeatPlatesSpellDB = {
 			["2249"] = {
 			},
 		},
-		["Fengus' Ferocity"] = {
-			["14321"] = {
+		["Nimble Reflexes"] = {
+			["1535"] = {
+			},
+			["3378"] = {
 			},
 		},
 		["Enveloping Winds"] = {
@@ -5582,11 +5582,11 @@ NeatPlatesSpellDB = {
 		["Charge"] = {
 			["3099"] = {
 			},
-			["3100"] = {
-			},
 			["4511"] = {
 			},
 			["3225"] = {
+			},
+			["3100"] = {
 			},
 		},
 		["Blood Pact"] = {
@@ -5688,11 +5688,11 @@ NeatPlatesSpellDB = {
 			},
 		},
 		["Master Demonologist"] = {
+			["1863"] = {
+			},
 			["417"] = {
 			},
 			["1860"] = {
-			},
-			["1863"] = {
 			},
 			["416"] = {
 			},
@@ -5746,15 +5746,15 @@ NeatPlatesSpellDB = {
 			},
 			["2959"] = {
 			},
-			["3823"] = {
+			["681"] = {
 			},
 			["2960"] = {
 			},
-			["681"] = {
+			["9696"] = {
 			},
 			["3810"] = {
 			},
-			["9696"] = {
+			["3823"] = {
 			},
 			["2354"] = {
 			},
@@ -5776,11 +5776,11 @@ NeatPlatesSpellDB = {
 		["Boar Charge"] = {
 			["3099"] = {
 			},
-			["3100"] = {
-			},
 			["4511"] = {
 			},
 			["3225"] = {
+			},
+			["3100"] = {
 			},
 		},
 		["Suffering"] = {
@@ -5901,11 +5901,11 @@ NeatPlatesSpellDB = {
 			},
 		},
 		["Soul Link"] = {
-			["1863"] = {
-			},
 			["417"] = {
 			},
 			["1860"] = {
+			},
+			["1863"] = {
 			},
 		},
 		["Dash"] = {

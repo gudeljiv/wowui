@@ -142,6 +142,19 @@ local function SkinPet()
 	end
 end
 
+-- local function AuraCheck(self, event, ...)
+-- 	local unit = ...
+-- 	if unit == "target" then
+-- 		SkinTarget()
+-- 	elseif unit == "pet" then
+-- 		SkinPet()
+-- 	end
+-- end
+
+-- local f = CreateFrame("Frame")
+-- f:RegisterUnitEvent("UNIT_AURA", "target", "pet")
+-- f:SetScript("OnEvent", AuraCheck)
+
 local pf = CreateFrame("Frame")
 pf:RegisterUnitEvent("UNIT_AURA", "pet")
 pf:SetScript("OnEvent", SkinPet)

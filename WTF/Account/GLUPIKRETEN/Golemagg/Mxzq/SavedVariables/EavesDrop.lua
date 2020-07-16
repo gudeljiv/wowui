@@ -236,8 +236,8 @@ EavesDropStatsDB = {
 					},
 					["Melee Attack"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/12/20 04:18:17|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4447-1-88-3117-00000B1B19:Dustwind Savage|hDustwind Savage|h for |cffffffff15|r |cffffffffPhysical|r.",
-							["amount"] = 15,
+							["time"] = "|cffffffff07/16/20 09:14:24|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-145-3244-00001083C2:Greater Plainstrider|hGreater Plainstrider|h for |cffffffff17|r |cffffffffPhysical|r.",
+							["amount"] = 17,
 						},
 						[2] = {
 							["time"] = "|cffffffff07/12/20 04:08:22|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4447-1-88-3117-00000B1898:Dustwind Savage|hDustwind Savage|h for |cffffffff25|r |cffffffffPhysical|r.(Critical)",
@@ -246,8 +246,8 @@ EavesDropStatsDB = {
 					},
 					["Auto Shot"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/15/20 01:00:18|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-145-3246-00000EDA17:Fleeting Plainstrider|hFleeting Plainstrider|h for |cffffffff25|r |cffffffffPhysical|r.",
-							["amount"] = 25,
+							["time"] = "|cffffffff07/16/20 09:14:00|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-145-3415-000010777C:Savannah Huntress|hSavannah Huntress|h for |cffffffff26|r |cffffffffPhysical|r.",
+							["amount"] = 26,
 						},
 						[2] = {
 							["time"] = "|cffffffff07/16/20 11:55:21|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-66-3415-00000F5EBA:Savannah Huntress|hSavannah Huntress|h for |cffffffff49|r |cffffffffPhysical|r.(Critical)",

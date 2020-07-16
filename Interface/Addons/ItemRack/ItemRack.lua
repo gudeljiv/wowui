@@ -1173,19 +1173,23 @@ function ItemRack.BuildMenu(id, menuInclude)
 				end
 			end
 
-			-- dump(_G["ItemRackMenu" .. i .. "Icon"])
-			-- for i, v in ipairs(_G["ItemRackMenu" .. i .. "Icon"]) do
-			-- 	print(i, v)
-			-- end
-
-			-- _, _, itemRarity = GetItemInfo(itemLink)
-			-- if (itemRarity and itemRarity > 1) then
-			-- 	r, g, b = GetItemQualityColor(itemRarity)
-			-- 	v:SetBeautyBorderTexture(config.border.neutral)
-			-- 	v:SetBeautyBorderColor(r, g, b)
-			-- end
-
 			button:CreateBeautyBorder(8)
+			if (ItemRack.Menu[i] ~= 0) then
+				-- local iid = ItemRack.Menu[i]:gsub("^[^\d]*(\d+)", "$1")
+				local iid = string.match(ItemRack.Menu[i], "%d+")
+				_, _, itemRarity = GetItemInfo(iid)
+				if (itemRarity and itemRarity > 1) then
+					r, g, b = GetItemQualityColor(itemRarity)
+					button:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")
+					button:SetBeautyBorderColor(r, g, b)
+				else
+					button:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureNormal")
+					button:SetBeautyBorderColor(1, 1, 1)
+				end
+			else
+				button:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureNormal")
+				button:SetBeautyBorderColor(1, 1, 1)
+			end
 		end
 		if showButtonMenu then
 			table.remove(ItemRack.Menu)

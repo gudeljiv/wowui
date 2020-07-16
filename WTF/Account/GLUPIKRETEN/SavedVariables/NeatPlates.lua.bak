@@ -1032,7 +1032,7 @@ NeatPlatesSpellDB = {
 		["Tame Beast"] = {
 		},
 		["Cultivate Packet of Seeds"] = {
-			["castTime"] = 9975,
+			["castTime"] = 10018.0000002384,
 		},
 		["Runed Copper Bracers"] = {
 			["castTime"] = 4737,
@@ -1310,7 +1310,7 @@ NeatPlatesSpellDB = {
 		["Disengage"] = {
 		},
 		["Skinning"] = {
-			["castTime"] = 3020,
+			["castTime"] = 1799,
 		},
 		["Join Map Fragments"] = {
 			["castTime"] = 2002,
@@ -1495,7 +1495,7 @@ NeatPlatesSpellDB = {
 		["Claw"] = {
 		},
 		["Revive Pet"] = {
-			["castTime"] = 10005,
+			["castTime"] = 10001,
 		},
 		["Flametongue Attack"] = {
 		},
@@ -2244,7 +2244,7 @@ NeatPlatesSpellDB = {
 		["Sap"] = {
 		},
 		["Hearthstone"] = {
-			["castTime"] = 569,
+			["castTime"] = 9983,
 		},
 		["Cured Heavy Hide"] = {
 			["castTime"] = 4937,
@@ -2801,6 +2801,8 @@ NeatPlatesSpellDB = {
 			},
 		},
 		["Rallying Cry of the Dragonslayer"] = {
+			["14721"] = {
+			},
 			["14392"] = {
 			},
 			["14720"] = {
@@ -3492,11 +3494,11 @@ NeatPlatesSpellDB = {
 			},
 		},
 		["Shock"] = {
-			["2762"] = {
-			},
 			["1062"] = {
 			},
 			["4025"] = {
+			},
+			["2762"] = {
 			},
 		},
 		["Bear Form"] = {
@@ -3651,9 +3653,9 @@ NeatPlatesSpellDB = {
 			},
 		},
 		["Frost Nova"] = {
-			["3436"] = {
-			},
 			["3917"] = {
+			},
+			["12759"] = {
 			},
 			["2761"] = {
 			},
@@ -3664,7 +3666,7 @@ NeatPlatesSpellDB = {
 			},
 			["3260"] = {
 			},
-			["12759"] = {
+			["3436"] = {
 			},
 		},
 		["Steevo"] = {
@@ -3981,7 +3983,7 @@ NeatPlatesSpellDB = {
 				["castTime"] = 3019,
 			},
 			["3273"] = {
-				["castTime"] = 3028.00000005961,
+				["castTime"] = 3051,
 			},
 			["9523"] = {
 				["castTime"] = 3035,
@@ -4163,10 +4165,8 @@ NeatPlatesSpellDB = {
 			["4022"] = {
 			},
 		},
-		["Doxxcz"] = {
-			["2266"] = {
-			},
-			["2360"] = {
+		["Fengus' Ferocity"] = {
+			["14321"] = {
 			},
 		},
 		["Sap Might"] = {
@@ -4177,8 +4177,10 @@ NeatPlatesSpellDB = {
 			["5676"] = {
 			},
 		},
-		["Fengus' Ferocity"] = {
-			["14321"] = {
+		["Nimble Reflexes"] = {
+			["3378"] = {
+			},
+			["1535"] = {
 			},
 		},
 		["Summon Treant Ally"] = {
@@ -4253,7 +4255,7 @@ NeatPlatesSpellDB = {
 				["castTime"] = 3085,
 			},
 			["3273"] = {
-				["castTime"] = 2992,
+				["castTime"] = 3117,
 			},
 			["9523"] = {
 				["castTime"] = 3036,
@@ -5222,10 +5224,10 @@ NeatPlatesSpellDB = {
 			["2304"] = {
 			},
 		},
-		["Nimble Reflexes"] = {
-			["3378"] = {
+		["Doxxcz"] = {
+			["2266"] = {
 			},
-			["1535"] = {
+			["2360"] = {
 			},
 		},
 		["Infallible Mind"] = {
@@ -5332,16 +5334,16 @@ NeatPlatesSpellDB = {
 			},
 			["697"] = {
 			},
-			["694"] = {
-			},
 			["1061"] = {
+			},
+			["660"] = {
+				["castTime"] = 18198,
 			},
 			["588"] = {
 			},
 			["698"] = {
 			},
-			["660"] = {
-				["castTime"] = 18198,
+			["694"] = {
 			},
 			["597"] = {
 			},
@@ -5580,11 +5582,11 @@ NeatPlatesSpellDB = {
 		["Charge"] = {
 			["3099"] = {
 			},
-			["4511"] = {
-			},
 			["3225"] = {
 			},
 			["3100"] = {
+			},
+			["4511"] = {
 			},
 		},
 		["Blood Pact"] = {
@@ -5686,11 +5688,11 @@ NeatPlatesSpellDB = {
 			},
 		},
 		["Master Demonologist"] = {
+			["1860"] = {
+			},
 			["1863"] = {
 			},
 			["417"] = {
-			},
-			["1860"] = {
 			},
 			["416"] = {
 			},
@@ -5744,15 +5746,15 @@ NeatPlatesSpellDB = {
 			},
 			["11921"] = {
 			},
-			["681"] = {
+			["9696"] = {
 			},
 			["2959"] = {
 			},
-			["9696"] = {
+			["3823"] = {
 			},
 			["3810"] = {
 			},
-			["3823"] = {
+			["681"] = {
 			},
 			["2354"] = {
 			},
@@ -5774,11 +5776,11 @@ NeatPlatesSpellDB = {
 		["Boar Charge"] = {
 			["3099"] = {
 			},
-			["4511"] = {
-			},
 			["3225"] = {
 			},
 			["3100"] = {
+			},
+			["4511"] = {
 			},
 		},
 		["Suffering"] = {
@@ -5901,11 +5903,11 @@ NeatPlatesSpellDB = {
 			},
 		},
 		["Soul Link"] = {
-			["417"] = {
-			},
 			["1860"] = {
 			},
 			["1863"] = {
+			},
+			["417"] = {
 			},
 		},
 		["Dash"] = {
