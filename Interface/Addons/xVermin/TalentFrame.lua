@@ -11,9 +11,9 @@ local function SkinTalents()
 	end
 end
 
-local pf = CreateFrame("Frame")
-pf:RegisterEvent("PLAYER_TALENT_UPDATE")
-pf:RegisterEvent("INSPECT_TALENT_READY")
-pf:RegisterEvent("PET_TALENT_UPDATE")
-pf:RegisterEvent("PET_TALENT_UPDATE")
-pf:SetScript("OnEvent", SkinTalents)
+-- local pf = CreateFrame("Frame")
+-- pf:RegisterEvent("PLAYER_TALENT_UPDATE")
+-- pf:RegisterEvent("INSPECT_TALENT_READY")
+-- pf:RegisterEvent("PET_TALENT_UPDATE")
+-- pf:RegisterEvent("PET_TALENT_UPDATE")
+-- pf:SetScript("OnEvent", SkinTalents)
