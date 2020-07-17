@@ -16,8 +16,6 @@ oGlowDB = {
 		["gbank"] = true,
 		["bank"] = true,
 	},
-	["Colors"] = {
-	},
 	["EnabledFilters"] = {
 		["Quality border"] = {
 			["merchant"] = true,
@@ -31,5 +29,7 @@ oGlowDB = {
 			["tradeskill"] = true,
 			["bank"] = true,
 		},
+	},
+	["Colors"] = {
 	},
 }

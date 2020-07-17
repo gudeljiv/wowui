@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 954,
 	["lastSanitation"] = 3,
+	["session"] = 961,
 	["errors"] = {
 		{
 			["message"] = "[string \"ItemRackMenu3:CreateBeautyBorder(8)\"]:1: attempt to index global 'ItemRackMenu3' (a nil value)",
@@ -21,14 +21,14 @@ BugGrabberDB = {
 		}, -- [2]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Details\\Libs\\LibThreatClassic2\\lib.xml",
-			["time"] = "2020/07/11 19:09:15",
 			["session"] = 751,
+			["time"] = "2020/07/11 19:09:15",
 			["counter"] = 8,
 		}, -- [3]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Details_Streamer\\Details_Streamer.toc",
-			["session"] = 751,
 			["time"] = "2020/07/11 19:09:55",
+			["session"] = 751,
 			["counter"] = 2,
 		}, -- [4]
 		{
@@ -560,8 +560,8 @@ BugGrabberDB = {
 		}, -- [70]
 		{
 			["message"] = "(null)",
-			["time"] = "2020/07/11 19:09:15",
 			["session"] = 928,
+			["time"] = "2020/07/11 19:09:15",
 			["counter"] = 128,
 		}, -- [71]
 		{
@@ -632,8 +632,15 @@ BugGrabberDB = {
 			["time"] = "2020/07/11 17:53:14",
 			["locals"] = "(*temporary) = \"Button\"\n(*temporary) = \"NivayaSlot1\"\n(*temporary) = \"ItemButtonTemplate\"\n(*temporary) = \"ContainerFrameItemButtonTemplate\"\n",
 			["stack"] = "[C]: in function `CreateFrame'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: in function `Create'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:56: in function `New'\nInterface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:762: in function <Interface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:757>",
-			["session"] = 954,
-			["counter"] = 217,
+			["session"] = 961,
+			["counter"] = 224,
 		}, -- [80]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'UNKNOWN()'.",
+			["time"] = "2020/07/17 12:51:25",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: ?\n[C]: in function `SendChatMessage'\nInterface\\AddOns\\xVermin\\FrameIDOutput.lua:15: in function <Interface\\AddOns\\xVermin\\FrameIDOutput.lua:7>",
+			["session"] = 961,
+			["counter"] = 1,
+		}, -- [81]
 	},
 }

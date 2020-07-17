@@ -1,5 +1,5 @@
 local function SkinTalents()
-	for i = 1, 46 do
+	for i = 1, 20 do
 		local frame = _G["TalentFrameTalent" .. i]
 		local frameSlot = _G["TalentFrameTalent" .. i .. "Slot"]
 		local frameSlot = _G["TalentFrameTalent" .. i .. "Slot"]

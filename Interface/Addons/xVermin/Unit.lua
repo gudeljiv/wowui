@@ -47,10 +47,3 @@ if class == "HUNTER" or class == "WARRIOR" then
 		end
 	)
 end
-
--------------------------------------------
--- Set font in Character font for ammo count
--------------------------------------------
---CharacterAmmoSlotCount:SetFont("Fonts\\ARIALN.ttf", 10, 'THINOUTLINE')
---CharacterAmmoSlotCount:ClearAllPoints()
---CharacterAmmoSlotCount:SetPoint("TOP", CharacterAmmoSlot, "BOTTOM", 10, -2)

@@ -168,6 +168,20 @@ chat:SetScript(
 		ChatFrame5Tab:Show()
 		ChatFrame5Background:SetAlpha(0.6)
 
+		local frame = FCF_OpenNewWindow("DEV")
+		FCF_SetChatWindowFontSize(nil, frame, 12)
+		ChatFrame_RemoveAllMessageGroups(frame)
+		ChatFrame6:ClearAllPoints()
+		ChatFrame6:SetClampRectInsets(0, -1, 0, 0)
+		ChatFrame6:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", 3, 7)
+		ChatFrame6:SetHeight(220)
+		ChatFrame6:SetWidth(550)
+		ChatFrame6:Show()
+		ChatFrame6Tab:Show()
+		ChatFrame6Background:SetAlpha(0.6)
+
+		local channel_type, channel_name = JoinChannelByName("xVerminPrivateDEV", "perika10", ChatFrame6:GetID(), 1)
+
 		-- ChatFrame1.ClearAllPoints = function() end
 		ChatFrame1.SetPoint = function()
 		end
@@ -203,13 +217,21 @@ chat:SetScript(
 		ChatFrame5Background.SetAlpha = function()
 		end
 
+		-- ChatFrame6.ClearAllPoints = function() end
+		ChatFrame6.SetPoint = function()
+		end
+		-- ChatFrame6.SetClampRectInsets = function() end
+		ChatFrame6Background.SetAlpha = function()
+		end
+
 		for i, v in pairs(
 			{
 				ChatFrame1,
 				ChatFrame2,
 				ChatFrame3,
 				ChatFrame4,
-				ChatFrame5
+				ChatFrame5,
+				ChatFrame6
 			}
 		) do
 			v:HookScript(
@@ -232,9 +254,7 @@ chat:SetScript(
 )
 chat:RegisterEvent("PLAYER_LOGIN")
 
-
 local function SetChatChannels()
-	
 	ChatFrame_RemoveChannel(ChatFrame1, "LookingForGroup")
 	ChatFrame_RemoveChannel(ChatFrame1, "LocalDefense")
 	ChatFrame_RemoveChannel(ChatFrame1, "WorldDefense")
@@ -242,6 +262,7 @@ local function SetChatChannels()
 	ChatFrame_RemoveAllChannels(ChatFrame3)
 	ChatFrame_RemoveAllChannels(ChatFrame4)
 	ChatFrame_RemoveAllChannels(ChatFrame5)
+	ChatFrame_RemoveAllChannels(ChatFrame6)
 
 	JoinChannelByName("LookingForGroup")
 	JoinChannelByName("LocalDefense")
@@ -250,18 +271,17 @@ local function SetChatChannels()
 	ChatFrame_AddChannel(ChatFrame4, "LookingForGroup")
 	ChatFrame_AddChannel(ChatFrame5, "LocalDefense")
 	ChatFrame_AddChannel(ChatFrame5, "WorldDefense")
-
+	ChatFrame_AddChannel(ChatFrame6, "xVerminPrivateDEV")
 end
 
 local f = CreateFrame("Frame")
-f:SetScript("OnEvent",SetChatChannels)
+f:SetScript("OnEvent", SetChatChannels)
 f:RegisterEvent("PLAYER_ENTERING_WORLD")
 f:RegisterEvent("ZONE_CHANGED")
 f:RegisterEvent("CHAT_MSG_CHANNEL_NOTICE")
 
 SLASH_SETCHANNELS1 = "/fc"
 SlashCmdList["SETCHANNELS"] = SetChatChannels
-
 
 -- Tab text colors for the tabs
 hooksecurefunc(

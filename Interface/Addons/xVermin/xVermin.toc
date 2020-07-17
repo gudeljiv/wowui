@@ -27,5 +27,7 @@ Unit.lua
 CharacterFrame.lua
 TalentFrame.lua
 xDamageFont.lua
+# FrameIDOutput.lua
+
 xVermin.lua
 
