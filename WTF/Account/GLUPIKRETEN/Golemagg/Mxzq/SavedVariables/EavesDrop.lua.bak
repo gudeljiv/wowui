@@ -187,8 +187,8 @@ EavesDropStatsDB = {
 				["heal"] = {
 					["Healing Potion"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/12/20 02:11:37|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_HEAL|h|cffffffffHealing Potion|r|h heals |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h for |cffffffff89|r.",
-							["amount"] = 89,
+							["time"] = "|cffffffff07/17/20 07:16:58|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_HEAL|h|cffffffffHealing Potion|r|h heals |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h for |cffffffff155|r.",
+							["amount"] = 155,
 						},
 						[2] = {
 						},
@@ -250,8 +250,8 @@ EavesDropStatsDB = {
 							["amount"] = 26,
 						},
 						[2] = {
-							["time"] = "|cffffffff07/16/20 11:55:21|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-66-3415-00000F5EBA:Savannah Huntress|hSavannah Huntress|h for |cffffffff49|r |cffffffffPhysical|r.(Critical)",
-							["amount"] = 49,
+							["time"] = "|cffffffff07/17/20 06:52:26|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-66-3276-000011D677:Witchwing Harpy|hWitchwing Harpy|h for |cffffffff13|r |cffffffffPhysical|r.(39 Overkill) (Critical)",
+							["amount"] = 52,
 						},
 					},
 					["Drain Life"] = {
@@ -298,8 +298,8 @@ EavesDropStatsDB = {
 							["amount"] = 91,
 						},
 						[2] = {
-							["time"] = "|cffffffff07/12/20 08:37:30|r\n|Hicon:128:source|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4447-1-86-3242-00000AF097:Zhevra Runner|hZhevra Runner's|h melee swing hits |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h for |cffff131347|r |cffff1313Physical|r.(Critical)",
-							["amount"] = 47,
+							["time"] = "|cffffffff07/17/20 07:10:42|r\n|Hicon:128:source|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-66-3278-000011B323:Witchwing Slayer|hWitchwing Slayer's|h melee swing hits |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h for |cffff131357|r |cffff1313Physical|r.(Critical)",
+							["amount"] = 57,
 						},
 					},
 					["Fire"] = {
