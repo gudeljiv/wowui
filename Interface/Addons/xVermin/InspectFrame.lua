@@ -1,0 +1,83 @@
+local function BorderItemInspectSlots(counter)
+	if counter > 2 then
+		return
+	end
+
+	local itemLink, r, g, b, itemLink
+
+	for i, v in pairs(
+		{
+			InspectHeadSlot,
+			InspectNeckSlot,
+			InspectShoulderSlot,
+			InspectShirtSlot,
+			InspectChestSlot,
+			InspectWaistSlot,
+			InspectLegsSlot,
+			InspectFeetSlot,
+			InspectWristSlot,
+			InspectHandsSlot,
+			InspectFinger0Slot,
+			InspectFinger1Slot,
+			InspectTrinket0Slot,
+			InspectTrinket1Slot,
+			InspectBackSlot,
+			InspectMainHandSlot,
+			InspectSecondaryHandSlot,
+			InspectRangedSlot,
+			InspectTabardSlot
+		}
+	) do
+		v:CreateBeautyBorder(8)
+
+		itemLink = GetInventoryItemLink("target", i)
+		-- print(i, itemLink)
+		if (itemLink) then
+			_, _, itemRarity = GetItemInfo(itemLink)
+			if (itemRarity and itemRarity > 1) then
+				r, g, b = GetItemQualityColor(itemRarity)
+				v:SetBeautyBorderTexture(config.border.colorize)
+				v:SetBeautyBorderColor(r, g, b, 1)
+			else
+				v:SetBeautyBorderTexture(config.border.default)
+				v:SetBeautyBorderColor(1, 1, 1, 1)
+			end
+		else
+			v:SetBeautyBorderTexture(config.border.default)
+			v:SetBeautyBorderColor(1, 1, 1, 1)
+		end
+	end
+end
+
+local InspectFrameHooked = false
+local addonLoadedFrame = CreateFrame("Frame")
+addonLoadedFrame:RegisterEvent("ADDON_LOADED")
+addonLoadedFrame:SetScript(
+	"OnEvent",
+	function(self, event, arg1, ...)
+		if not InspectFrameHooked and arg1 == "Blizzard_InspectUI" then
+			hooksecurefunc(
+				InspectFrame,
+				"Show",
+				function()
+					local counter = 0
+					C_Timer.NewTicker(
+						0.1,
+						function()
+							counter = counter + 1
+							BorderItemInspectSlots(counter)
+						end
+					)
+				end
+			)
+			-- hooksecurefunc(
+			-- 	InspectFrame,
+			-- 	"Hide",
+			-- 	function()
+			-- 		print("close")
+			-- 	end
+			-- )
+			InspectFrameHooked = true
+		end
+	end
+)

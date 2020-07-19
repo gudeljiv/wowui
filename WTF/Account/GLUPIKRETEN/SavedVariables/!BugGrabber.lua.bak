@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 968,
 	["lastSanitation"] = 3,
+	["session"] = 987,
 	["errors"] = {
 		{
 			["message"] = "[string \"ItemRackMenu3:CreateBeautyBorder(8)\"]:1: attempt to index global 'ItemRackMenu3' (a nil value)",
@@ -21,14 +21,14 @@ BugGrabberDB = {
 		}, -- [2]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Details\\Libs\\LibThreatClassic2\\lib.xml",
-			["time"] = "2020/07/11 19:09:15",
 			["session"] = 751,
+			["time"] = "2020/07/11 19:09:15",
 			["counter"] = 8,
 		}, -- [3]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Details_Streamer\\Details_Streamer.toc",
-			["session"] = 751,
 			["time"] = "2020/07/11 19:09:55",
+			["session"] = 751,
 			["counter"] = 2,
 		}, -- [4]
 		{
@@ -545,8 +545,8 @@ BugGrabberDB = {
 		}, -- [68]
 		{
 			["message"] = "(null)",
-			["time"] = "2020/07/11 19:09:15",
 			["session"] = 928,
+			["time"] = "2020/07/11 19:09:15",
 			["counter"] = 128,
 		}, -- [69]
 		{
@@ -635,12 +635,52 @@ BugGrabberDB = {
 			["counter"] = 2,
 		}, -- [80]
 		{
+			["message"] = "[string \"print(GetInventorySlotInfo(\"InspectHeadSlot...\"]:1: Invalid inventory slot in GetInventorySlotInfo",
+			["time"] = "2020/07/19 19:04:23",
+			["locals"] = "(*temporary) = \"InspectHeadSlot\"\n",
+			["stack"] = "[C]: in function `GetInventorySlotInfo'\n[string \"print(GetInventorySlotInfo(\"InspectHeadSlot...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 970,
+			["counter"] = 1,
+		}, -- [81]
+		{
+			["message"] = "[string \"print(GetInventorySlotInfo(\"target\", \"HeadS...\"]:1: Invalid inventory slot in GetInventorySlotInfo",
+			["time"] = "2020/07/19 19:19:45",
+			["locals"] = "(*temporary) = \"target\"\n(*temporary) = \"HeadSlot\"\n",
+			["stack"] = "[C]: in function `GetInventorySlotInfo'\n[string \"print(GetInventorySlotInfo(\"target\", \"HeadS...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 974,
+			["counter"] = 1,
+		}, -- [82]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:108: hooksecurefunc(): Update is not a function",
+			["time"] = "2020/07/19 19:26:09",
+			["locals"] = "",
+			["stack"] = "[C]: in function `hooksecurefunc'\nInterface\\AddOns\\xVermin\\CharacterFrame.lua:108: in function <Interface\\AddOns\\xVermin\\CharacterFrame.lua:106>\n[C]: in function `LoadAddOn'\nInterface\\FrameXML\\UIParent.lua:353: in function `UIParentLoadAddOn'\nInterface\\FrameXML\\UIParent.lua:388: in function <Interface\\FrameXML\\UIParent.lua:387>\n[C]: in function `InspectFrame_LoadUI'\nInterface\\FrameXML\\UIParent.lua:635: in function `InspectUnit'\nInterface\\FrameXML\\UnitPopup.lua:1691: in function `func'\nInterface\\FrameXML\\UIDropDownMenu.lua:958: in function `UIDropDownMenuButton_OnClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 977,
+			["counter"] = 1,
+		}, -- [83]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:49: attempt to compare number with table",
+			["time"] = "2020/07/19 19:30:26",
+			["locals"] = "counter = Flight Master {\n 0 = <userdata>\n tooltipText = \"Flight Master\"\n Icon = <unnamed> {\n }\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to compare number with table\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\CharacterFrame.lua:49: in function <Interface\\AddOns\\xVermin\\CharacterFrame.lua:48>",
+			["session"] = 981,
+			["counter"] = 3,
+		}, -- [84]
+		{
+			["message"] = "...ace\\AddOns\\Blizzard_InspectUI\\Blizzard_InspectUI.lua:5: Usage: CanInspect(unit [, showError])",
+			["time"] = "2020/07/19 19:42:16",
+			["locals"] = "(*temporary) = nil\n(*temporary) = true\n",
+			["stack"] = "[C]: in function `CanInspect'\n...ace\\AddOns\\Blizzard_InspectUI\\Blizzard_InspectUI.lua:5: in function <...ace\\AddOns\\Blizzard_InspectUI\\Blizzard_InspectUI.lua:3>\n[C]: in function `InspectFrame_Show'\nInterface\\FrameXML\\UIParent.lua:637: in function `InspectUnit'\n[string \"InspectUnit()\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 983,
+			["counter"] = 1,
+		}, -- [85]
+		{
 			["message"] = "...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: Usage: CreateFrame(\"frameType\" [, \"name\"] [, parent] [, \"template\"] [, id])",
 			["time"] = "2020/07/11 17:53:14",
 			["locals"] = "(*temporary) = \"Button\"\n(*temporary) = \"NivayaSlot1\"\n(*temporary) = \"ItemButtonTemplate\"\n(*temporary) = \"ContainerFrameItemButtonTemplate\"\n",
 			["stack"] = "[C]: in function `CreateFrame'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: in function `Create'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:56: in function `New'\nInterface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:762: in function <Interface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:757>",
-			["session"] = 968,
-			["counter"] = 231,
-		}, -- [81]
+			["session"] = 987,
+			["counter"] = 250,
+		}, -- [86]
 	},
 }

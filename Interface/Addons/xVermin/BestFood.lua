@@ -148,7 +148,7 @@ function NeedsFoodBadly:UpdateMacros()
 				["<petfood>"] = "item:" .. tostring(best.petfood[1] and best.petfood[1].id or 0)
 			}
 		)
-		CreateOrUpdateMacro("PetFood", petfoodMacro)
+		CreateOrUpdateMacro("PF", petfoodMacro)
 	end
 end
 

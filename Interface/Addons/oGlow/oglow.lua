@@ -1,12 +1,16 @@
 local _, ns = ...
 local oGlow = ns.oGlow
 
-local _VERSION = GetAddOnMetadata('oGlow', 'version')
+local _VERSION = GetAddOnMetadata("oGlow", "version")
 
 local argcheck = oGlow.argcheck
 
-local print = function(...) print("|cff33ff99oGlow:|r ", ...) end
-local error = function(...) print("|cffff0000Error:|r "..string.format(...)) end
+local print = function(...)
+	print("|cff33ff99oGlow:|r ", ...)
+end
+local error = function(...)
+	print("|cffff0000Error:|r " .. string.format(...))
+end
 
 local pipesTable = ns.pipesTable
 local filtersTable = ns.filtersTable
@@ -27,7 +31,7 @@ local upgradePath = {
 
 local upgradeDB = function(db)
 	local version = db.version
-	if(upgradePath[version]) then
+	if (upgradePath[version]) then
 		repeat
 			upgradePath[version](db)
 			version = version + 1
@@ -36,15 +40,14 @@ local upgradeDB = function(db)
 end
 
 local ADDON_LOADED = function(self, event, addon)
-	if(addon == 'oGlow') then
-		if(not oGlowDB) then
+	if (addon == "oGlow") then
+		if (not oGlowDB) then
 			oGlowDB = {
 				version = 1,
 				EnabledPipes = {},
 				EnabledFilters = {},
-
 				FilterSettings = {},
-				Colors = {},
+				Colors = {}
 			}
 
 			for pipe in next, pipesTable do
@@ -65,7 +68,7 @@ local ADDON_LOADED = function(self, event, addon)
 				self:EnablePipe(pipe)
 
 				for filter, enabledPipes in next, oGlowDB.EnabledFilters do
-					if(enabledPipes[pipe]) then
+					if (enabledPipes[pipe]) then
 						self:RegisterFilterOnPipe(pipe, filter)
 						break
 					end
@@ -78,30 +81,35 @@ local ADDON_LOADED = function(self, event, addon)
 end
 
 --[[ General API ]]
-
 function oGlow:CallFilters(pipe, frame, ...)
-	argcheck(pipe, 2, 'string')
+	argcheck(pipe, 2, "string")
 
-	if(not pipesTable[pipe]) then return nil, 'Pipe does not exist.' end
+	if (not pipesTable[pipe]) then
+		return nil, "Pipe does not exist."
+	end
 
 	local ref = activeFilters[pipe]
-	if(ref) then
+	if (ref) then
 		for display, filters in next, ref do
 			-- TODO: Move this check out of the loop.
-			if(not displaysTable[display]) then return nil, 'Display does not exist.' end
+			if (not displaysTable[display]) then
+				return nil, "Display does not exist."
+			end
 
-			for i=1,#filters do
+			for i = 1, #filters do
 				local func = filters[i][2]
 
 				-- drop out of the loop if we actually do something nifty on a frame.
-				if(displaysTable[display](frame, func(...))) then break end
+				if (displaysTable[display](frame, func(...))) then
+					break
+				end
 			end
 		end
 	end
 end
 
 function oGlow:RegisterOptionCallback(func)
-	argcheck(func, 2, 'function')
+	argcheck(func, 2, "function")
 
 	table.insert(optionCallbacks, func)
 end
@@ -112,7 +120,7 @@ function oGlow:CallOptionCallbacks()
 	end
 end
 
-oGlow:RegisterEvent('ADDON_LOADED', ADDON_LOADED)
+oGlow:RegisterEvent("ADDON_LOADED", ADDON_LOADED)
 
 oGlow.argcheck = argcheck
 

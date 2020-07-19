@@ -1,31 +1,21 @@
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:1205
-/castsequence [combat]<mPotions>
+/castsequence [combat]item:2455,item:2455
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:3770
-/castsequence [combat]<hPotions>
+/castsequence [combat]
 END
 VER 3 0000000000000001 "FRAME" "132150"
 /fstack
 END
-VER 3 0000000000000006 "HPotions" "Inv_misc_questionmark"
-#showtooltip
-/use [nocombat]<food>
-/castsequence [combat]item:858
-END
 VER 3 0000000000000002 "MOVE" "Ability_Ambush."
 /run print(string.match("1231232a:::22:::::21", "%d+"))
 END
-VER 3 0000000000000007 "MPotions" "Inv_misc_questionmark"
-#showtooltip
-/use [nocombat]<food>
-/castsequence [combat]<hPotions>
-END
 VER 3 0000000000000005 "PetFood" "Inv_misc_questionmark"
-#showtooltip item:3770
+#showtooltip item:0
 /cast feed pet
-/use item:3770
+/use item:0
 END
