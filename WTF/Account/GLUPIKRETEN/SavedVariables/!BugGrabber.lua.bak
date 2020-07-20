@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 994,
 	["lastSanitation"] = 3,
-	["session"] = 989,
 	["errors"] = {
 		{
 			["message"] = "[string \"ItemRackMenu3:CreateBeautyBorder(8)\"]:1: attempt to index global 'ItemRackMenu3' (a nil value)",
@@ -21,14 +21,14 @@ BugGrabberDB = {
 		}, -- [2]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Details\\Libs\\LibThreatClassic2\\lib.xml",
-			["session"] = 751,
 			["time"] = "2020/07/11 19:09:15",
+			["session"] = 751,
 			["counter"] = 8,
 		}, -- [3]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Details_Streamer\\Details_Streamer.toc",
-			["time"] = "2020/07/11 19:09:55",
 			["session"] = 751,
+			["time"] = "2020/07/11 19:09:55",
 			["counter"] = 2,
 		}, -- [4]
 		{
@@ -545,8 +545,8 @@ BugGrabberDB = {
 		}, -- [68]
 		{
 			["message"] = "(null)",
-			["session"] = 928,
 			["time"] = "2020/07/11 19:09:15",
+			["session"] = 928,
 			["counter"] = 128,
 		}, -- [69]
 		{
@@ -679,8 +679,40 @@ BugGrabberDB = {
 			["time"] = "2020/07/11 17:53:14",
 			["locals"] = "(*temporary) = \"Button\"\n(*temporary) = \"NivayaSlot1\"\n(*temporary) = \"ItemButtonTemplate\"\n(*temporary) = \"ContainerFrameItemButtonTemplate\"\n",
 			["stack"] = "[C]: in function `CreateFrame'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:81: in function `Create'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:56: in function `New'\nInterface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:762: in function <Interface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:757>",
-			["session"] = 989,
-			["counter"] = 252,
+			["session"] = 990,
+			["counter"] = 253,
 		}, -- [86]
+		{
+			["message"] = "...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:87: Usage: CreateFrame(\"frameType\" [, \"name\"] [, parent] [, \"template\"] [, id])",
+			["time"] = "2020/07/20 12:05:38",
+			["locals"] = "(*temporary) = \"Button\"\n(*temporary) = \"NivayaSlot1\"\n(*temporary) = \"ItemButtonTemplate\"\n(*temporary) = \"ContainerFrameItemButtonTemplate\"\n",
+			["stack"] = "[C]: in function `CreateFrame'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:87: in function `Create'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:62: in function `New'\nInterface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:762: in function <Interface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:757>",
+			["session"] = 991,
+			["counter"] = 1,
+		}, -- [87]
+		{
+			["message"] = "...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:90: Usage: CreateFrame(\"frameType\" [, \"name\"] [, parent] [, \"template\"] [, id])",
+			["time"] = "2020/07/20 12:06:30",
+			["locals"] = "(*temporary) = \"Button\"\n(*temporary) = \"NivayaSlot1\"\n(*temporary) = \"ItemButtonTemplate\"\n(*temporary) = \"ContainerFrameItemButtonTemplate\"\n",
+			["stack"] = "[C]: in function `CreateFrame'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:90: in function `Create'\n...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:64: in function `New'\nInterface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:762: in function <Interface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:757>",
+			["session"] = 992,
+			["counter"] = 1,
+		}, -- [88]
+		{
+			["message"] = "...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:66: attempt to index local 'button' (a nil value)",
+			["time"] = "2020/07/20 12:08:09",
+			["locals"] = "self = <table> {\n glowTex = \"Interface\\Buttons\\UI-ActionButton-Border\"\n glowAlpha = 0.800000\n recycled = <table> {\n }\n OnAdd = <function> defined @Interface\\AddOns\\cargBags_Nivaya\\style.lua:1000\n Update = <function> defined @Interface\\AddOns\\cargBags_Nivaya\\cargBags\\mixins-add\\default.scaffold.lua:155\n Scaffold = <function> defined @Interface\\AddOns\\cargBags_Nivaya\\cargBags\\mixins-add\\default.scaffold.lua:117\n glowBlend = \"ADD\"\n _parent = <table> {\n }\n glowCoords = <table> {\n }\n UpdateQuest = <function> defined @Interface\\AddOns\\cargBags_Nivaya\\cargBags\\mixins-add\\default.scaffold.lua:242\n UpdateCooldown = <function> defined @Interface\\AddOns\\cargBags_Nivaya\\cargBags\\mixins-add\\default.scaffold.lua:215\n implementation = Nivaya {\n }\n __index = <table> {\n }\n UpdateLock = <function> defined @Interface\\AddOns\\cargBags_Nivaya\\cargBags\\mixins-add\\default.scaffold.lua:231\n}\nbagID = -2\nslotID = 1\ntpl = \"ContainerFrameItemButtonTemplate\"\nparent = \"ItemButtonTemplate\"\nbutton = nil\n(*temporary) = <table> {\n glowTex = \"Interface\\Buttons\\UI-ActionButton-Border\"\n glowAlpha = 0.800000\n recycled = <table> {\n }\n OnAdd = <function> defined @Interface\\AddOns\\cargBags_Nivaya\\style.lua:1000\n Update = <function> defined @Interface\\AddOns\\cargBags_Nivaya\\cargBags\\mixins-add\\default.scaffold.lua:155\n Scaffold = <function> defined @Interface\\AddOns\\cargBags_Nivaya\\cargBags\\mixins-add\\default.scaffold.lua:117\n glowBlend = \"ADD\"\n _parent = <table> {\n }\n glowCoords = <table> {\n }\n UpdateQuest = <function> defined @Interface\\AddOns\\cargBags_Nivaya\\cargBags\\mixins-add\\default.scaffold.lua:242\n UpdateCooldown = <function> defined @Interface\\AddOns\\cargBags_Nivaya\\cargBags\\mixins-add\\default.scaffold.lua:215\n implementation = Nivaya {\n }\n __index = <table> {\n }\n UpdateLock = <function> defined @Interface\\AddOns\\cargBags_Nivaya\\cargBags\\mixins-add\\default.scaffold.lua:231\n}\n(*temporary) = \"ContainerFrameItemButtonTemplate\"\n(*temporary) = \"ItemButtonTemplate\"\n(*temporary) = \"attempt to index local 'button' (a nil value)\"\nmt_gen_key = <table> {\n __index = <function> defined @Interface\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:48\n}\n",
+			["stack"] = "...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:66: in function `New'\nInterface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:762: in function <Interface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:757>",
+			["session"] = 993,
+			["counter"] = 1,
+		}, -- [89]
+		{
+			["message"] = "...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:67: attempt to index local 'button' (a nil value)",
+			["time"] = "2020/07/20 12:09:10",
+			["locals"] = "self = <table> {\n glowTex = \"Interface\\Buttons\\UI-ActionButton-Border\"\n glowAlpha = 0.800000\n recycled = <table> {\n }\n OnAdd = <function> defined @Interface\\AddOns\\cargBags_Nivaya\\style.lua:1000\n Update = <function> defined @Interface\\AddOns\\cargBags_Nivaya\\cargBags\\mixins-add\\default.scaffold.lua:155\n Scaffold = <function> defined @Interface\\AddOns\\cargBags_Nivaya\\cargBags\\mixins-add\\default.scaffold.lua:117\n glowBlend = \"ADD\"\n _parent = <table> {\n }\n glowCoords = <table> {\n }\n UpdateQuest = <function> defined @Interface\\AddOns\\cargBags_Nivaya\\cargBags\\mixins-add\\default.scaffold.lua:242\n UpdateCooldown = <function> defined @Interface\\AddOns\\cargBags_Nivaya\\cargBags\\mixins-add\\default.scaffold.lua:215\n implementation = Nivaya {\n }\n __index = <table> {\n }\n UpdateLock = <function> defined @Interface\\AddOns\\cargBags_Nivaya\\cargBags\\mixins-add\\default.scaffold.lua:231\n}\nbagID = -2\nslotID = 1\ntpl = \"ContainerFrameItemButtonTemplate\"\nparent = \"ItemButtonTemplate\"\nbutton = nil\n(*temporary) = <table> {\n glowTex = \"Interface\\Buttons\\UI-ActionButton-Border\"\n glowAlpha = 0.800000\n recycled = <table> {\n }\n OnAdd = <function> defined @Interface\\AddOns\\cargBags_Nivaya\\style.lua:1000\n Update = <function> defined @Interface\\AddOns\\cargBags_Nivaya\\cargBags\\mixins-add\\default.scaffold.lua:155\n Scaffold = <function> defined @Interface\\AddOns\\cargBags_Nivaya\\cargBags\\mixins-add\\default.scaffold.lua:117\n glowBlend = \"ADD\"\n _parent = <table> {\n }\n glowCoords = <table> {\n }\n UpdateQuest = <function> defined @Interface\\AddOns\\cargBags_Nivaya\\cargBags\\mixins-add\\default.scaffold.lua:242\n UpdateCooldown = <function> defined @Interface\\AddOns\\cargBags_Nivaya\\cargBags\\mixins-add\\default.scaffold.lua:215\n implementation = Nivaya {\n }\n __index = <table> {\n }\n UpdateLock = <function> defined @Interface\\AddOns\\cargBags_Nivaya\\cargBags\\mixins-add\\default.scaffold.lua:231\n}\n(*temporary) = \"ContainerFrameItemButtonTemplate\"\n(*temporary) = \"ItemButtonTemplate\"\n(*temporary) = \"attempt to index local 'button' (a nil value)\"\nmt_gen_key = <table> {\n __index = <function> defined @Interface\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:48\n}\n",
+			["stack"] = "...\\AddOns\\cargBags_Nivaya\\cargBags\\base\\itembutton.lua:67: in function `New'\nInterface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:762: in function <Interface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:757>",
+			["session"] = 994,
+			["counter"] = 1,
+		}, -- [90]
 	},
 }
