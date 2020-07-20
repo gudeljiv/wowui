@@ -4,6 +4,17 @@
 ## Version: 54000
 
 Config.lua
+
+Frames/CustomContainers.lua
+Frames/DefaultFramesCustomScale.lua
+Frames/DefaultFramesDarker.lua
+Frames/GroopLootFrame.lua
+Frames/CharacterFrame.lua
+Frames/InspectFrame.lua
+Frames/SpellBookFrame.lua
+Frames/TalentFrame.lua
+# Frames/FrameIDOutput.lua
+
 AutoCarrot.lua
 AutoBuyAmmo.lua
 AutoDismount.lua
@@ -11,24 +22,17 @@ AutoRepair.lua
 BestFood.lua
 Bindings.lua
 Chat.lua
-CustomContainers.lua
-DefaultFramesCustomScale.lua
-DefaultFramesDarker.lua
 ErrorsFilter.lua
 Experience.lua
 GarbageCollector.lua
-GroopLootFrame.lua
 PetHappiness.lua
 PlayerTargetHealthPercentage.lua
 PlayerTargetSetMark.lua
 SkinBuffs.lua
 TrackingIcon.lua
 Unit.lua
-CharacterFrame.lua
-InspectFrame.lua
-TalentFrame.lua
+
 xDamageFont.lua
-# FrameIDOutput.lua
 
 xVermin.lua
 
