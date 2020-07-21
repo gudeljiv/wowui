@@ -204,7 +204,6 @@ f:SetScript(
 			end
 			MinimapLayerFrame.SetPoint = function()
 			end
-			MinimapLayerFrame.tooltip:Hide()
 		end
 
 		-------------------------------------------

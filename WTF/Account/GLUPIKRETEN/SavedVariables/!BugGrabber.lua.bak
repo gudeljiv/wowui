@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 1055,
+	["session"] = 1071,
 	["errors"] = {
 		{
 			["message"] = "[string \"ItemRackMenu3:CreateBeautyBorder(8)\"]:1: attempt to index global 'ItemRackMenu3' (a nil value)",
@@ -781,21 +781,13 @@ BugGrabberDB = {
 			["counter"] = 4,
 		}, -- [98]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'AttemptToSaveBindings()'.",
-			["time"] = "2020/07/11 19:23:02",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `AttemptToSaveBindings'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:2045: in function `SetSetBindings'\nInterface\\AddOns\\ItemRackOptions\\ItemRackOptions.lua:1041: in function `ReconcileSetBindings'\nInterface\\AddOns\\ItemRackOptions\\ItemRackOptions.lua:411: in function <Interface\\AddOns\\ItemRackOptions\\ItemRackOptions.lua:395>\nInterface\\AddOns\\cargBags_Nivaya\\filters-Filters.lua:132: in function `SaveSet'\nInterface\\AddOns\\ItemRackOptions\\ItemRackOptions.lua:272: in function `ButtonOnClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
-			["session"] = 1033,
-			["counter"] = 6,
-		}, -- [99]
-		{
 			["message"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:15: attempt to index global 'TargetFrameHealthBarText' (a nil value)",
 			["time"] = "2020/07/21 11:23:08",
 			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = true\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'TargetFrameHealthBarText' (a nil value)\"\n",
 			["stack"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:15: in function <Interface\\AddOns\\xVermin\\SkinBuffs.lua:13>\n[C]: ?\n[C]: in function `TargetFrame_UpdateAuras'\nInterface\\FrameXML\\TargetFrame.lua:131: in function <Interface\\FrameXML\\TargetFrame.lua:99>\n[C]: in function `TargetFrame_Update'\nInterface\\FrameXML\\TargetFrame.lua:150: in function <Interface\\FrameXML\\TargetFrame.lua:142>\n[C]: in function `CameraOrSelectOrMoveStop'\n[string \"CAMERAORSELECTORMOVE\"]:4: in function <[string \"CAMERAORSELECTORMOVE\"]:1>",
 			["session"] = 1038,
 			["counter"] = 1,
-		}, -- [100]
+		}, -- [99]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\xVermin-54000.lua:256: attempt to index global 'MionimapLayerFrame' (a nil value)",
 			["time"] = "2020/07/21 16:39:15",
@@ -803,12 +795,60 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\xVermin-54000.lua:256: in main chunk",
 			["session"] = 1048,
 			["counter"] = 1,
-		}, -- [101]
+		}, -- [100]
 		{
 			["message"] = "(null)",
 			["session"] = 1048,
 			["time"] = "2020/07/11 19:09:15",
 			["counter"] = 131,
+		}, -- [101]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\JunkRemover.lua:113: Usage: GetContainerNumSlots(index)",
+			["time"] = "2020/07/21 20:57:26",
+			["locals"] = "(*temporary) = nil\n",
+			["stack"] = "[C]: in function `GetContainerNumSlots'\nInterface\\AddOns\\xVermin\\JunkRemover.lua:113: in function <Interface\\AddOns\\xVermin\\JunkRemover.lua:112>",
+			["session"] = 1065,
+			["counter"] = 20,
 		}, -- [102]
+		{
+			["message"] = "...e\\AddOns\\cargBags_Nivaya\\cargBags\\base\\container.lua:68: attempt to index local 'button' (a nil value)",
+			["time"] = "2020/07/21 21:20:08",
+			["locals"] = "self = NivayacBniv_Keyring {\n 0 = <userdata>\n Columns = 8\n buttons = <table> {\n }\n bags = <table> {\n }\n AnchorDir = \"Bottom\"\n ContainerHeight = 0\n Settings = <table> {\n }\n AnchorTo = NivayacBniv_Bag {\n }\n Caption = <unnamed> {\n }\n UpdateDimensions = <function> defined @Interface\\AddOns\\cargBags_Nivaya\\style.lua:427\n name = \"cBniv_Keyring\"\n filters = <table> {\n }\n}\nbutton = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'button' (a nil value)\"\n",
+			["stack"] = "...e\\AddOns\\cargBags_Nivaya\\cargBags\\base\\container.lua:68: in function `AddButton'\n...Ons\\cargBags_Nivaya\\cargBags\\base\\implementation.lua:425: in function `UpdateSlot'\n...Ons\\cargBags_Nivaya\\cargBags\\base\\implementation.lua:453: in function `UpdateBag'\n...Ons\\cargBags_Nivaya\\cargBags\\base\\implementation.lua:475: in function `func'\n...Ons\\cargBags_Nivaya\\cargBags\\base\\implementation.lua:229: in function `?'\n...erface\\AddOns\\cargBags_Nivaya\\cargBags\\base\\core.lua:182: in function <...erface\\AddOns\\cargBags_Nivaya\\cargBags\\base\\core.lua:181>",
+			["session"] = 1068,
+			["counter"] = 9,
+		}, -- [103]
+		{
+			["message"] = "...Ons\\cargBags_Nivaya\\cargBags\\base\\implementation.lua:428: attempt to index local 'button' (a nil value)",
+			["time"] = "2020/07/21 21:23:32",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "...Ons\\cargBags_Nivaya\\cargBags\\base\\implementation.lua:428: in function `UpdateSlot'\n...Ons\\cargBags_Nivaya\\cargBags\\base\\implementation.lua:453: in function `UpdateBag'\nInterface\\AddOns\\cargBags_Nivaya\\filters-Filters.lua:9: in function `UpdateBags'\nInterface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:773: in function <Interface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:757>",
+			["session"] = 1069,
+			["counter"] = 2,
+		}, -- [104]
+		{
+			["message"] = "...e\\AddOns\\cargBags_Nivaya\\cargBags\\base\\container.lua:72: attempt to index local 'button' (a nil value)",
+			["time"] = "2020/07/21 21:24:01",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "...e\\AddOns\\cargBags_Nivaya\\cargBags\\base\\container.lua:72: in function `AddButton'\n...Ons\\cargBags_Nivaya\\cargBags\\base\\implementation.lua:425: in function `UpdateSlot'\n...Ons\\cargBags_Nivaya\\cargBags\\base\\implementation.lua:453: in function `UpdateBag'\nInterface\\AddOns\\cargBags_Nivaya\\filters-Filters.lua:9: in function `UpdateBags'\nInterface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:773: in function <Interface\\AddOns\\cargBags_Nivaya\\cargBags_Nivaya.lua:757>",
+			["session"] = 1070,
+			["counter"] = 2,
+		}, -- [105]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
+			["time"] = "2020/07/21 21:24:17",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetShown'\nInterface\\FrameXML\\MultiActionBars.lua:36: in function <Interface\\FrameXML\\MultiActionBars.lua:34>\nInterface\\FrameXML\\MultiActionBars.lua:52: in function `MultiActionBar_Update'\nInterface\\FrameXML\\InterfaceOptionsPanels.lua:1175: in function `setFunc'\nInterface\\FrameXML\\InterfaceOptionsPanels.lua:87: in function <Interface\\FrameXML\\InterfaceOptionsPanels.lua:83>\n[C]: in function `pcall'\nInterface\\FrameXML\\InterfaceOptionsFrame.lua:217: in function <Interface\\FrameXML\\InterfaceOptionsFrame.lua:216>\n[C]: in function `securecall'\nInterface\\FrameXML\\InterfaceOptionsFrame.lua:252: in function <Interface\\FrameXML\\InterfaceOptionsFrame.lua:248>\n[C]: in function `Click'\nInterface\\FrameXML\\UIParent.lua:3353: in function `ToggleGameMenu'\n[string \"TOGGLEGAMEMENU\"]:1: in function <[string \"TOGGLEGAMEMENU\"]:1>",
+			["session"] = 1070,
+			["counter"] = 1,
+		}, -- [106]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'AttemptToSaveBindings()'.",
+			["time"] = "2020/07/11 19:23:02",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `AttemptToSaveBindings'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:2045: in function `SetSetBindings'\nInterface\\AddOns\\ItemRackOptions\\ItemRackOptions.lua:1041: in function `ReconcileSetBindings'\nInterface\\AddOns\\ItemRackOptions\\ItemRackOptions.lua:411: in function <Interface\\AddOns\\ItemRackOptions\\ItemRackOptions.lua:395>\nInterface\\AddOns\\cargBags_Nivaya\\filters-Filters.lua:132: in function `SaveSet'\nInterface\\AddOns\\ItemRackOptions\\ItemRackOptions.lua:272: in function `ButtonOnClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 1071,
+			["counter"] = 9,
+		}, -- [107]
 	},
 }

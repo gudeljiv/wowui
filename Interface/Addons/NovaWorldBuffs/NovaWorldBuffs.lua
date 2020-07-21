@@ -7823,7 +7823,7 @@ MinimapLayerFrame.tooltip:CreateBeautyBorder(8)
 MinimapLayerFrame:SetScript(
 	"OnEnter",
 	function(self)
-		MinimapLayerFrame.tooltip:Show()
+		MinimapLayerFrame.tooltip:Hide()
 	end
 )
 MinimapLayerFrame:SetScript(

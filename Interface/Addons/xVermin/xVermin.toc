@@ -25,6 +25,7 @@ Chat.lua
 ErrorsFilter.lua
 Experience.lua
 GarbageCollector.lua
+JunkRemover.lua
 PetHappiness.lua
 PlayerTargetHealthPercentage.lua
 PlayerTargetSetMark.lua

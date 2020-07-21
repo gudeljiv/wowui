@@ -19,7 +19,7 @@ AtlasLootClassic: enabled
 BlizzMove: enabled
 !BugGrabber: enabled
 BugSack: enabled
-cargBags_Nivaya: enabled
+cargBags_Nivaya: disabled
 ChocolateBar: enabled
 ClassicAuraDurations: enabled
 ClassicAutoDismount: enabled
@@ -85,3 +85,5 @@ Bagnon: disabled
 BagBrother: disabled
 Bagnon_VoidStorage: disabled
 ItemRackOptions: enabled
+AdiBags: enabled
+AutoDelete: disabled

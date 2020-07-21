@@ -2,22 +2,113 @@
 AUCTIONATOR_SAVEDVARS = {
 	["_50000"] = 500,
 	["_2000"] = 100,
+	["_200000"] = 1000,
+	["STARTING_DISCOUNT"] = 5,
+	["_1000000"] = 2500,
 	["_5000000"] = 10000,
 	["LOG_DE_DATA_X"] = true,
-	["_1000000"] = 2500,
-	["_10000"] = 200,
 	["_500"] = 5,
-	["STARTING_DISCOUNT"] = 5,
-	["_200000"] = 1000,
+	["_10000"] = 200,
 }
 AUCTIONATOR_PRICING_HISTORY = {
+	["Pattern: Azure Shoulders"] = {
+		["is"] = "7085:0:0:0:0",
+		["6297004"] = "25400:1",
+	},
+	["Silk Cloth"] = {
+		["is"] = "4306:0:0:0:0",
+		["6297004"] = "348:13",
+		["6296837"] = "174:2",
+	},
+	["Dreamslayer"] = {
+		["is"] = "7752:0:0:0:0",
+		["6297005"] = "99000:1",
+	},
+	["Wool Cloth"] = {
+		["is"] = "2592:0:0:0:0",
+		["6296836"] = "2200:10",
+		["6297004"] = "910:13",
+		["6295371"] = "1035:2",
+	},
+	["Greater Mystic Essence"] = {
+		["is"] = "11135:0:0:0:0",
+		["6297009"] = "1390:7",
+	},
 	["Light Feather"] = {
 		["is"] = "17056:0:0:0:0",
 		["6295371"] = "3500:1",
 	},
-	["Wool Cloth"] = {
-		["is"] = "2592:0:0:0:0",
-		["6295371"] = "1035:2",
+	["Silver Ore"] = {
+		["is"] = "2775:0:0:0:0",
+		["6297004"] = "4100:3",
+	},
+	["Linen Cloth"] = {
+		["is"] = "2589:0:0:0:0",
+		["6296836"] = "23:14",
+	},
+	["Small Radiant Shard"] = {
+		["is"] = "11177:0:0:0:0",
+		["6297008"] = "34800:1",
+	},
+	["Briarthorn"] = {
+		["is"] = "2450:0:0:0:0",
+		["6297004"] = "285:5",
+	},
+	["Gargoyle's Bite"] = {
+		["is"] = "12989:0:0:0:0",
+		["6296837"] = "149500:1",
+	},
+	["Mageweave Cloth"] = {
+		["is"] = "4338:0:0:0:0",
+		["6297004"] = "390:16",
+	},
+	["Soul Dust"] = {
+		["is"] = "11083:0:0:0:0",
+		["6297009"] = "930:6",
+	},
+	["Vision Dust"] = {
+		["is"] = "11137:0:0:0:0",
+		["6297009"] = "285:1",
+	},
+	["Greater Magic Essence"] = {
+		["is"] = "10939:0:0:0:0",
+		["6297009"] = "980:5",
+	},
+	["Greater Astral Essence"] = {
+		["is"] = "11082:0:0:0:0",
+		["6297009"] = "4600:4",
+	},
+	["Lesser Nether Essence"] = {
+		["is"] = "11174:0:0:0:0",
+		["6297009"] = "9100:2",
+	},
+	["Lesser Mystic Essence"] = {
+		["is"] = "11134:0:0:0:0",
+		["6297009"] = "840:4",
+	},
+	["Strange Dust"] = {
+		["is"] = "10940:0:0:0:0",
+		["6297009"] = "259:12",
+	},
+	["Large Glowing Shard"] = {
+		["is"] = "11139:0:0:0:0",
+		["6297009"] = "1200:1",
+	},
+	["Pattern: Boots of the Enchanter"] = {
+		["is"] = "4352:0:0:0:0",
+		["6297004"] = "32200:1",
+	},
+	["Small Glowing Shard"] = {
+		["is"] = "11138:0:0:0:0",
+		["6297009"] = "258:1",
+	},
+	["Plans: Green Iron Shoulders"] = {
+		["is"] = "3870:0:0:0:0",
+		["6297005"] = "30000:1",
+	},
+	["Small Lustrous Pearl"] = {
+		["is"] = "5498:0:0:0:0",
+		["6296837"] = "321:3",
 	},
 }
 AUCTIONATOR_SHOPPING_LISTS = {
@@ -112,6 +203,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 1000,
 			["sc"] = 3,
 		},
+		["Bolt of Silk Cloth"] = {
+			["H3212"] = 2100,
+			["cc"] = 7,
+			["id"] = "4305:0:0:0:0",
+			["mr"] = 2100,
+			["sc"] = 0,
+		},
 		["Wool Cloth"] = {
 			["H3212"] = 177,
 			["cc"] = 7,
@@ -125,13 +223,6 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "3309:0:0:0:0",
 			["mr"] = 400,
 			["sc"] = 1,
-		},
-		["Bolt of Silk Cloth"] = {
-			["H3212"] = 2100,
-			["cc"] = 7,
-			["id"] = "4305:0:0:0:0",
-			["mr"] = 2100,
-			["sc"] = 0,
 		},
 		["Ivycloth Gloves of the Owl"] = {
 			["H3212"] = 4000,
@@ -417,6 +508,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 2,
 			["H3529"] = 200000,
 		},
+		["Greater Healing Potion"] = {
+			["mr"] = 297,
+			["cc"] = 0,
+			["id"] = "1710:0:0:0:0",
+			["sc"] = 0,
+			["H3536"] = 297,
+		},
 		["Pattern: Frostweave Gloves"] = {
 			["mr"] = 36600,
 			["cc"] = 9,
@@ -458,6 +556,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "4307:0:0:0:0",
 			["sc"] = 1,
 			["H3529"] = 1722,
+		},
+		["Small Lustrous Pearl"] = {
+			["mr"] = 322,
+			["cc"] = 7,
+			["id"] = "5498:0:0:0:0",
+			["sc"] = 0,
+			["H3536"] = 322,
 		},
 		["Pattern: Fine Leather Pants"] = {
 			["mr"] = 18931,
@@ -530,11 +635,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3529"] = 46298,
 		},
 		["Linen Cloth"] = {
-			["mr"] = 44,
-			["cc"] = 7,
-			["id"] = "2589:0:0:0:0",
+			["mr"] = 23,
 			["sc"] = 0,
-			["H3529"] = 44,
+			["L3536"] = 23,
+			["id"] = "2589:0:0:0:0",
+			["cc"] = 7,
+			["H3536"] = 24,
 		},
 		["Pattern: Comfortable Leather Hat"] = {
 			["mr"] = 150000,
@@ -593,11 +699,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3536"] = 6200,
 		},
 		["Lesser Nether Essence"] = {
-			["mr"] = 7948,
+			["mr"] = 9220,
 			["cc"] = 7,
 			["id"] = "11174:0:0:0:0",
 			["sc"] = 0,
-			["H3536"] = 7948,
+			["H3536"] = 9220,
 		},
 		["Ruined Leather Scraps"] = {
 			["mr"] = 148,
@@ -838,6 +944,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 2,
 			["H3529"] = 499613,
 		},
+		["Pattern: Boots of the Enchanter"] = {
+			["mr"] = 32390,
+			["cc"] = 9,
+			["id"] = "4352:0:0:0:0",
+			["sc"] = 2,
+			["H3536"] = 32390,
+		},
 		["Pattern: Turtle Scale Gloves"] = {
 			["mr"] = 19999,
 			["cc"] = 9,
@@ -852,12 +965,47 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 0,
 			["H3536"] = 39800,
 		},
+		["Frostsaber Leather"] = {
+			["mr"] = 1844,
+			["cc"] = 7,
+			["id"] = "15422:0:0:0:0",
+			["sc"] = 0,
+			["H3536"] = 1844,
+		},
 		["Primal Tiger Leather"] = {
 			["mr"] = 24000,
 			["cc"] = 7,
 			["id"] = "19768:0:0:0:0",
 			["sc"] = 0,
 			["H3536"] = 24000,
+		},
+		["Soul Dust"] = {
+			["mr"] = 935,
+			["cc"] = 7,
+			["id"] = "11083:0:0:0:0",
+			["sc"] = 0,
+			["H3536"] = 935,
+		},
+		["Vision Dust"] = {
+			["mr"] = 286,
+			["cc"] = 7,
+			["id"] = "11137:0:0:0:0",
+			["sc"] = 0,
+			["H3536"] = 286,
+		},
+		["Small Glowing Shard"] = {
+			["mr"] = 259,
+			["cc"] = 7,
+			["id"] = "11138:0:0:0:0",
+			["sc"] = 0,
+			["H3536"] = 259,
+		},
+		["Large Glowing Shard"] = {
+			["mr"] = 1203,
+			["cc"] = 7,
+			["id"] = "11139:0:0:0:0",
+			["sc"] = 0,
+			["H3536"] = 1203,
 		},
 		["Formula: Enchant Gloves - Greater Strength"] = {
 			["mr"] = 1397499,
@@ -866,12 +1014,26 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 8,
 			["H3529"] = 1397499,
 		},
+		["Small Radiant Shard"] = {
+			["mr"] = 24999,
+			["cc"] = 7,
+			["id"] = "11177:0:0:0:0",
+			["sc"] = 0,
+			["H3536"] = 24999,
+		},
 		["Greater Mystic Essence"] = {
-			["mr"] = 1090,
+			["mr"] = 1395,
 			["cc"] = 7,
 			["id"] = "11135:0:0:0:0",
 			["sc"] = 0,
-			["H3536"] = 1090,
+			["H3536"] = 1395,
+		},
+		["Battle Chain Gloves"] = {
+			["mr"] = 200,
+			["cc"] = 4,
+			["id"] = "3281:0:0:0:0",
+			["sc"] = 3,
+			["H3529"] = 200,
 		},
 		["Pattern: Red Mageweave Gloves"] = {
 			["mr"] = 58459,
@@ -894,6 +1056,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 0,
 			["H3536"] = 114499,
 		},
+		["Pattern: Azure Shoulders"] = {
+			["mr"] = 25500,
+			["cc"] = 9,
+			["id"] = "7085:0:0:0:0",
+			["sc"] = 2,
+			["H3536"] = 25500,
+		},
 		["Pattern: Hillman's Leather Vest"] = {
 			["mr"] = 5699,
 			["cc"] = 9,
@@ -908,12 +1077,33 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 2,
 			["H3536"] = 20000,
 		},
+		["Pattern: Gloves of Spell Mastery"] = {
+			["mr"] = 7888888,
+			["cc"] = 9,
+			["id"] = "14511:0:0:0:0",
+			["sc"] = 2,
+			["H3529"] = 7888888,
+		},
 		["Formula: Enchant Gloves - Greater Agility"] = {
 			["mr"] = 12800,
 			["cc"] = 9,
 			["id"] = "16219:0:0:0:0",
 			["sc"] = 8,
 			["H3529"] = 12800,
+		},
+		["Briarthorn"] = {
+			["mr"] = 286,
+			["cc"] = 7,
+			["id"] = "2450:0:0:0:0",
+			["sc"] = 0,
+			["H3536"] = 286,
+		},
+		["Mageweave Cloth"] = {
+			["mr"] = 391,
+			["cc"] = 7,
+			["id"] = "4338:0:0:0:0",
+			["sc"] = 0,
+			["H3536"] = 391,
 		},
 		["Nightsky Gloves"] = {
 			["mr"] = 9900,
@@ -943,19 +1133,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 1,
 			["H3529"] = 10599,
 		},
-		["Greater Magic Essence"] = {
-			["mr"] = 1504,
+		["Greater Astral Essence"] = {
+			["mr"] = 4658,
 			["cc"] = 7,
-			["id"] = "10939:0:0:0:0",
+			["L3536"] = 4658,
+			["id"] = "11082:0:0:0:0",
 			["sc"] = 0,
-			["H3536"] = 1504,
-		},
-		["Wool Cloth"] = {
-			["mr"] = 1042,
-			["cc"] = 7,
-			["id"] = "2592:0:0:0:0",
-			["sc"] = 0,
-			["H3535"] = 1042,
+			["H3536"] = 6899,
 		},
 		["Pattern: Runic Leather Armor"] = {
 			["mr"] = 120000,
@@ -963,6 +1147,14 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "15776:0:0:0:0",
 			["sc"] = 1,
 			["H3536"] = 120000,
+		},
+		["Greater Magic Essence"] = {
+			["mr"] = 985,
+			["cc"] = 7,
+			["L3536"] = 985,
+			["id"] = "10939:0:0:0:0",
+			["sc"] = 0,
+			["H3536"] = 1504,
 		},
 		["Sentinel Gloves of the Eagle"] = {
 			["mr"] = 11904,
@@ -985,13 +1177,6 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 2,
 			["H3536"] = 14099,
 		},
-		["Essence of Water"] = {
-			["mr"] = 58500,
-			["cc"] = 5,
-			["id"] = "7080:0:0:0:0",
-			["sc"] = 0,
-			["H3536"] = 58500,
-		},
 		["Enchanted Leather"] = {
 			["mr"] = 33499,
 			["cc"] = 7,
@@ -999,12 +1184,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 0,
 			["H3536"] = 33499,
 		},
-		["Pattern: Wicked Leather Pants"] = {
-			["mr"] = 20000,
-			["cc"] = 9,
-			["id"] = "15757:0:0:0:0",
-			["sc"] = 1,
-			["H3536"] = 20000,
+		["Abyssal Leather Belt of Sorcery"] = {
+			["mr"] = 86841,
+			["cc"] = 4,
+			["id"] = "20667:0:0:2152:0",
+			["sc"] = 2,
+			["H3536"] = 86841,
+		},
+		["Essence of Water"] = {
+			["mr"] = 58500,
+			["cc"] = 5,
+			["id"] = "7080:0:0:0:0",
+			["sc"] = 0,
+			["H3536"] = 58500,
 		},
 		["Primal Bat Leather"] = {
 			["mr"] = 8800,
@@ -1012,20 +1204,6 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "19767:0:0:0:0",
 			["sc"] = 0,
 			["H3536"] = 8800,
-		},
-		["Azure Silk Gloves"] = {
-			["mr"] = 24998,
-			["cc"] = 4,
-			["id"] = "4319:0:0:0:0",
-			["sc"] = 1,
-			["H3529"] = 24998,
-		},
-		["Pattern: Runic Leather Pants"] = {
-			["mr"] = 14600,
-			["cc"] = 9,
-			["id"] = "15765:0:0:0:0",
-			["sc"] = 1,
-			["H3536"] = 14600,
 		},
 		["Light Leather"] = {
 			["mr"] = 55,
@@ -1041,12 +1219,40 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 1,
 			["H3529"] = 3500,
 		},
+		["Azure Silk Gloves"] = {
+			["mr"] = 24998,
+			["cc"] = 4,
+			["id"] = "4319:0:0:0:0",
+			["sc"] = 1,
+			["H3529"] = 24998,
+		},
+		["Pattern: Runic Leather Pants"] = {
+			["mr"] = 14600,
+			["cc"] = 9,
+			["id"] = "15765:0:0:0:0",
+			["sc"] = 1,
+			["H3536"] = 14600,
+		},
+		["Imposing Gloves of the Bear"] = {
+			["mr"] = 86238,
+			["cc"] = 4,
+			["id"] = "15166:0:0:1201:0",
+			["sc"] = 2,
+			["H3529"] = 86238,
+		},
 		["Green Leather Armor"] = {
 			["mr"] = 194495,
 			["cc"] = 4,
 			["id"] = "4255:0:0:0:0",
 			["sc"] = 2,
 			["H3536"] = 194495,
+		},
+		["Herbalist's Gloves"] = {
+			["mr"] = 67500,
+			["cc"] = 4,
+			["id"] = "7349:0:0:0:0",
+			["sc"] = 2,
+			["H3529"] = 67500,
 		},
 		["Red Mageweave Bag"] = {
 			["mr"] = 12000,
@@ -1076,27 +1282,6 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 0,
 			["H3536"] = 1388,
 		},
-		["Imposing Gloves of the Bear"] = {
-			["mr"] = 86238,
-			["cc"] = 4,
-			["id"] = "15166:0:0:1201:0",
-			["sc"] = 2,
-			["H3529"] = 86238,
-		},
-		["Patched Leather Shoulderpads"] = {
-			["mr"] = 50000,
-			["cc"] = 4,
-			["id"] = "1793:0:0:0:0",
-			["sc"] = 2,
-			["H3536"] = 50000,
-		},
-		["Pattern: Ghostweave Gloves"] = {
-			["mr"] = 26000,
-			["cc"] = 9,
-			["id"] = "14477:0:0:0:0",
-			["sc"] = 2,
-			["H3529"] = 26000,
-		},
 		["Scouting Gloves of Defense"] = {
 			["mr"] = 113390,
 			["cc"] = 4,
@@ -1111,12 +1296,33 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 1,
 			["H3529"] = 129999,
 		},
-		["Barbaric Cloth Gloves"] = {
-			["mr"] = 3574,
-			["cc"] = 4,
-			["id"] = "3308:0:0:0:0",
+		["Pattern: Ghostweave Gloves"] = {
+			["mr"] = 26000,
+			["cc"] = 9,
+			["id"] = "14477:0:0:0:0",
+			["sc"] = 2,
+			["H3529"] = 26000,
+		},
+		["Pattern: Gem-studded Leather Belt"] = {
+			["mr"] = 234143,
+			["cc"] = 9,
+			["id"] = "14635:0:0:0:0",
 			["sc"] = 1,
-			["H3529"] = 3574,
+			["H3536"] = 234143,
+		},
+		["Ornate Mithril Gloves"] = {
+			["mr"] = 245000,
+			["cc"] = 4,
+			["id"] = "7927:0:0:0:0",
+			["sc"] = 4,
+			["H3529"] = 245000,
+		},
+		["Wicked Leather Gauntlets"] = {
+			["mr"] = 20000,
+			["cc"] = 4,
+			["id"] = "15083:0:0:0:0",
+			["sc"] = 2,
+			["H3536"] = 20000,
 		},
 		["Pattern: Runic Leather Bracers"] = {
 			["mr"] = 19900,
@@ -1132,12 +1338,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 4,
 			["H3529"] = 9100,
 		},
-		["Ancestral Gloves"] = {
-			["mr"] = 200,
+		["Barbaric Cloth Gloves"] = {
+			["mr"] = 3574,
 			["cc"] = 4,
-			["id"] = "3290:0:0:0:0",
+			["id"] = "3308:0:0:0:0",
 			["sc"] = 1,
-			["H3529"] = 200,
+			["H3529"] = 3574,
 		},
 		["Pattern: Dark Leather Gloves"] = {
 			["mr"] = 5000,
@@ -1146,26 +1352,26 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 9,
 			["H3536"] = 5000,
 		},
-		["Green Leather Bag"] = {
-			["mr"] = 5100,
-			["cc"] = 1,
-			["id"] = "5573:0:0:0:0",
-			["sc"] = 0,
-			["H3536"] = 5100,
-		},
-		["Wicked Leather Gauntlets"] = {
-			["mr"] = 20000,
-			["cc"] = 4,
-			["id"] = "15083:0:0:0:0",
-			["sc"] = 2,
-			["H3536"] = 20000,
-		},
 		["Light Feather"] = {
 			["mr"] = 2700,
 			["cc"] = 15,
 			["id"] = "17056:0:0:0:0",
 			["sc"] = 0,
 			["H3535"] = 2700,
+		},
+		["Gem-studded Leather Belt"] = {
+			["mr"] = 107038,
+			["cc"] = 4,
+			["id"] = "4262:0:0:0:0",
+			["sc"] = 2,
+			["H3536"] = 107038,
+		},
+		["Strange Dust"] = {
+			["mr"] = 260,
+			["cc"] = 7,
+			["id"] = "10940:0:0:0:0",
+			["sc"] = 0,
+			["H3536"] = 260,
 		},
 		["Cabalist Gloves of the Monkey"] = {
 			["mr"] = 73416,
@@ -1195,12 +1401,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 0,
 			["H3536"] = 26398,
 		},
-		["Gem-studded Leather Belt"] = {
-			["mr"] = 107038,
+		["Sage's Gloves of the Eagle"] = {
+			["mr"] = 27562,
 			["cc"] = 4,
-			["id"] = "4262:0:0:0:0",
-			["sc"] = 2,
-			["H3536"] = 107038,
+			["id"] = "6615:0:0:851:0",
+			["sc"] = 1,
+			["H3529"] = 27562,
 		},
 		["Duskwoven Gloves of Healing"] = {
 			["mr"] = 99999,
@@ -1216,12 +1422,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 8,
 			["H3529"] = 1111110,
 		},
-		["Frostsaber Leather"] = {
-			["mr"] = 1844,
-			["cc"] = 7,
-			["id"] = "15422:0:0:0:0",
-			["sc"] = 0,
-			["H3536"] = 1844,
+		["Pillager's Gloves of the Boar"] = {
+			["mr"] = 30000,
+			["cc"] = 4,
+			["id"] = "15560:0:0:1111:0",
+			["sc"] = 3,
+			["H3529"] = 30000,
 		},
 		["Pattern: Tough Scorpid Gloves"] = {
 			["mr"] = 8399,
@@ -1230,19 +1436,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 1,
 			["H3529"] = 8399,
 		},
-		["Battle Chain Gloves"] = {
-			["mr"] = 200,
-			["cc"] = 4,
-			["id"] = "3281:0:0:0:0",
-			["sc"] = 3,
-			["H3529"] = 200,
-		},
 		["Formula: Enchant Gloves - Skinning"] = {
 			["mr"] = 54174,
 			["cc"] = 9,
 			["id"] = "11166:0:0:0:0",
 			["sc"] = 8,
 			["H3529"] = 54174,
+		},
+		["Dreamslayer"] = {
+			["mr"] = 99604,
+			["cc"] = 2,
+			["id"] = "7752:0:0:0:0",
+			["sc"] = 4,
+			["H3536"] = 99604,
 		},
 		["Red Leather Bag"] = {
 			["mr"] = 9998,
@@ -1259,26 +1465,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 1,
 			["H3536"] = 9300,
 		},
-		["Pillager's Gloves of the Boar"] = {
-			["mr"] = 30000,
-			["cc"] = 4,
-			["id"] = "15560:0:0:1111:0",
-			["sc"] = 3,
-			["H3529"] = 30000,
-		},
-		["Sage's Gloves of the Eagle"] = {
-			["mr"] = 27562,
-			["cc"] = 4,
-			["id"] = "6615:0:0:851:0",
-			["sc"] = 1,
-			["H3529"] = 27562,
-		},
-		["Lesser Mystic Essence"] = {
-			["mr"] = 870,
-			["cc"] = 7,
-			["id"] = "11134:0:0:0:0",
+		["Green Leather Bag"] = {
+			["mr"] = 5100,
+			["cc"] = 1,
+			["id"] = "5573:0:0:0:0",
 			["sc"] = 0,
-			["H3536"] = 870,
+			["H3536"] = 5100,
 		},
 		["Gloves of Holy Might"] = {
 			["mr"] = 230000,
@@ -1287,6 +1479,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 2,
 			["H3529"] = 230000,
 		},
+		["Lesser Mystic Essence"] = {
+			["mr"] = 846,
+			["cc"] = 7,
+			["L3536"] = 846,
+			["id"] = "11134:0:0:0:0",
+			["sc"] = 0,
+			["H3536"] = 870,
+		},
+		["Ancestral Gloves"] = {
+			["mr"] = 200,
+			["cc"] = 4,
+			["id"] = "3290:0:0:0:0",
+			["sc"] = 1,
+			["H3529"] = 200,
+		},
 		["Core Felcloth Bag"] = {
 			["mr"] = 2509998,
 			["cc"] = 1,
@@ -1294,33 +1501,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 1,
 			["H3534"] = 2509998,
 		},
-		["Ornate Mithril Gloves"] = {
-			["mr"] = 245000,
+		["Silver Ore"] = {
+			["mr"] = 4200,
+			["cc"] = 7,
+			["id"] = "2775:0:0:0:0",
+			["sc"] = 0,
+			["H3536"] = 4200,
+		},
+		["Patched Leather Shoulderpads"] = {
+			["mr"] = 50000,
 			["cc"] = 4,
-			["id"] = "7927:0:0:0:0",
-			["sc"] = 4,
-			["H3529"] = 245000,
-		},
-		["Pattern: Gem-studded Leather Belt"] = {
-			["mr"] = 234143,
-			["cc"] = 9,
-			["id"] = "14635:0:0:0:0",
-			["sc"] = 1,
-			["H3536"] = 234143,
-		},
-		["Pattern: Gloves of Spell Mastery"] = {
-			["mr"] = 7888888,
-			["cc"] = 9,
-			["id"] = "14511:0:0:0:0",
+			["id"] = "1793:0:0:0:0",
 			["sc"] = 2,
-			["H3529"] = 7888888,
-		},
-		["Gypsy Gloves"] = {
-			["mr"] = 200,
-			["cc"] = 4,
-			["id"] = "9755:0:0:0:0",
-			["sc"] = 2,
-			["H3529"] = 200,
+			["H3536"] = 50000,
 		},
 		["Core Leather"] = {
 			["mr"] = 17998,
@@ -1329,19 +1522,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 0,
 			["H3536"] = 17998,
 		},
-		["Heraldic Gloves"] = {
-			["mr"] = 72750,
+		["Gypsy Gloves"] = {
+			["mr"] = 200,
 			["cc"] = 4,
-			["id"] = "8121:0:0:0:0",
+			["id"] = "9755:0:0:0:0",
 			["sc"] = 2,
-			["H3529"] = 72750,
-		},
-		["Herbalist's Gloves"] = {
-			["mr"] = 67500,
-			["cc"] = 4,
-			["id"] = "7349:0:0:0:0",
-			["sc"] = 2,
-			["H3529"] = 67500,
+			["H3529"] = 200,
 		},
 		["Pattern: Fine Leather Gloves"] = {
 			["mr"] = 3120,
@@ -1350,12 +1536,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 1,
 			["H3536"] = 3120,
 		},
-		["Shadoweave Gloves"] = {
-			["mr"] = 129999,
+		["Heraldic Gloves"] = {
+			["mr"] = 72750,
 			["cc"] = 4,
-			["id"] = "10023:0:0:0:0",
+			["id"] = "8121:0:0:0:0",
+			["sc"] = 2,
+			["H3529"] = 72750,
+		},
+		["Pattern: Wicked Leather Pants"] = {
+			["mr"] = 20000,
+			["cc"] = 9,
+			["id"] = "15757:0:0:0:0",
 			["sc"] = 1,
-			["H3529"] = 129999,
+			["H3536"] = 20000,
 		},
 		["Pattern: Runic Leather Belt"] = {
 			["mr"] = 10530,
@@ -1364,12 +1557,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 1,
 			["H3536"] = 10530,
 		},
-		["Abyssal Leather Belt of Sorcery"] = {
-			["mr"] = 86841,
+		["Shadoweave Gloves"] = {
+			["mr"] = 129999,
 			["cc"] = 4,
-			["id"] = "20667:0:0:2152:0",
-			["sc"] = 2,
-			["H3536"] = 86841,
+			["id"] = "10023:0:0:0:0",
+			["sc"] = 1,
+			["H3529"] = 129999,
 		},
 		["Pattern: Earthen Leather Shoulders"] = {
 			["mr"] = 4799,
@@ -1384,6 +1577,22 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "9806:0:0:848:0",
 			["sc"] = 2,
 			["H3529"] = 9000,
+		},
+		["Lesser Eternal Essence"] = {
+			["mr"] = 20193,
+			["cc"] = 7,
+			["id"] = "16202:0:0:0:0",
+			["sc"] = 0,
+			["H3536"] = 20193,
+		},
+		["Wool Cloth"] = {
+			["mr"] = 916,
+			["sc"] = 0,
+			["L3536"] = 916,
+			["H3535"] = 1042,
+			["cc"] = 7,
+			["id"] = "2592:0:0:0:0",
+			["H3536"] = 1899,
 		},
 		["Lesser Magic Essence"] = {
 			["mr"] = 600,
@@ -1406,26 +1615,27 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 2,
 			["H3534"] = 799,
 		},
-		["Greater Astral Essence"] = {
-			["mr"] = 6899,
-			["cc"] = 7,
-			["id"] = "11082:0:0:0:0",
-			["sc"] = 0,
-			["H3536"] = 6899,
-		},
-		["Lesser Eternal Essence"] = {
-			["mr"] = 20193,
-			["cc"] = 7,
-			["id"] = "16202:0:0:0:0",
-			["sc"] = 0,
-			["H3536"] = 20193,
-		},
 		["Essence of Undeath"] = {
 			["mr"] = 19399,
 			["cc"] = 5,
 			["id"] = "12808:0:0:0:0",
 			["sc"] = 0,
 			["H3536"] = 19399,
+		},
+		["Silk Cloth"] = {
+			["mr"] = 348,
+			["cc"] = 7,
+			["L3536"] = 348,
+			["id"] = "4306:0:0:0:0",
+			["sc"] = 0,
+			["H3536"] = 349,
+		},
+		["Gargoyle's Bite"] = {
+			["mr"] = 80000,
+			["cc"] = 2,
+			["id"] = "12989:0:0:0:0",
+			["sc"] = 6,
+			["H3536"] = 80000,
 		},
 	},
 	["Genesis_Horde"] = {
@@ -1616,6 +1826,10 @@ AUCTIONATOR_STACKING_PREFS = {
 		["stacksize"] = 1,
 		["numstacks"] = 0,
 	},
+	["large glowing shard"] = {
+		["stacksize"] = 1,
+		["numstacks"] = 0,
+	},
 	["spirit of war"] = {
 		["stacksize"] = 1,
 		["numstacks"] = 0,
@@ -1623,6 +1837,10 @@ AUCTIONATOR_STACKING_PREFS = {
 	["netherweave cloth"] = {
 		["stacksize"] = 20,
 		["numstacks"] = -1,
+	},
+	["small radiant shard"] = {
+		["stacksize"] = 1,
+		["numstacks"] = 0,
 	},
 	["volatile water"] = {
 		["stacksize"] = 20,
@@ -1666,7 +1884,7 @@ AUCTIONATOR_STACKING_PREFS = {
 	},
 	["wool cloth"] = {
 		["numstacks"] = 0,
-		["stacksize"] = 10,
+		["stacksize"] = 20,
 	},
 }
 AUCTIONATOR_SCAN_MINLEVEL = 1

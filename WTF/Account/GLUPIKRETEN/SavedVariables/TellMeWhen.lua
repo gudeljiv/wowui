@@ -4440,8 +4440,14 @@ TellMeWhenDB = {
 				}, -- [3]
 				{
 					["GUID"] = "TMW:group:1Ov1GPZDfFXX",
+					["Point"] = {
+						["y"] = -53.132709187559,
+						["relativeTo"] = "TMW:group:1Qogrdv2HV3Z",
+						["point"] = "BOTTOM",
+						["relativePoint"] = "TOP",
+						["x"] = 0.0370833462401805,
+					},
 					["Name"] = "Main Rotation (Meta)",
-					["Columns"] = 1,
 					["Icons"] = {
 						{
 							["GUID"] = "TMW:icon:1R6WKU2symQa",
@@ -4556,13 +4562,7 @@ TellMeWhenDB = {
 						[72] = false,
 						[73] = false,
 					},
-					["Point"] = {
-						["y"] = -53.132709187559,
-						["relativeTo"] = "TMW:group:1Qogrdv2HV3Z",
-						["point"] = "BOTTOM",
-						["relativePoint"] = "TOP",
-						["x"] = 0.0370833462401805,
-					},
+					["Columns"] = 1,
 				}, -- [4]
 				{
 					["GUID"] = "TMW:group:1QvCPR5qcfPC",
@@ -5094,7 +5094,7 @@ TellMeWhenDB = {
 									},
 								},
 							},
-							["BarDisplay_Reverse"] = true,
+							["BarDisplay_Invert"] = true,
 							["Conditions"] = {
 								{
 									["BitFlags"] = {
@@ -5104,8 +5104,8 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
+							["BarDisplay_Reverse"] = true,
 							["CustomTex"] = "12294",
-							["BarDisplay_Invert"] = true,
 						}, -- [7]
 						{
 							["Enabled"] = true,
@@ -5555,31 +5555,6 @@ TellMeWhenDB = {
 						{
 							["Enabled"] = true,
 							["Type"] = "conditionicon",
-							["ShowTimerText"] = true,
-							["ConditionDurEnabled"] = true,
-							["FakeHidden"] = true,
-							["OnlyIfCounting"] = true,
-							["ConditionDur"] = 5,
-							["SettingsPerView"] = {
-								["icon"] = {
-									["TextLayout"] = "bar1",
-									["Texts"] = {
-										"", -- [1]
-										"", -- [2]
-									},
-								},
-							},
-							["GUID"] = "TMW:icon:1T1lwuRfZ3C7",
-							["Conditions"] = {
-								{
-									["Type"] = "COUNTER",
-									["Level"] = 1,
-									["Name"] = "menu_open_c",
-									["AndOr"] = "OR",
-								}, -- [1]
-								["n"] = 1,
-							},
-							["CustomTex"] = "Attack",
 							["Events"] = {
 								{
 									["Type"] = "Counter",
@@ -5613,6 +5588,31 @@ TellMeWhenDB = {
 								}, -- [3]
 								["n"] = 3,
 							},
+							["ConditionDurEnabled"] = true,
+							["FakeHidden"] = true,
+							["OnlyIfCounting"] = true,
+							["ShowTimerText"] = true,
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "bar1",
+									["Texts"] = {
+										"", -- [1]
+										"", -- [2]
+									},
+								},
+							},
+							["GUID"] = "TMW:icon:1T1lwuRfZ3C7",
+							["Conditions"] = {
+								{
+									["AndOr"] = "OR",
+									["Type"] = "COUNTER",
+									["Name"] = "menu_open_c",
+									["Level"] = 1,
+								}, -- [1]
+								["n"] = 1,
+							},
+							["CustomTex"] = "Attack",
+							["ConditionDur"] = 5,
 						}, -- [2]
 					},
 					["LayoutDirection"] = 4,
@@ -6077,8 +6077,6 @@ TellMeWhenDB = {
 			["TextureName"] = "Blizzard Raid Bar",
 		},
 		["Warrior"] = {
-			["Version"] = 86907,
-			["NumGroups"] = 6,
 			["Groups"] = {
 				{
 					["Point"] = {
@@ -6435,6 +6433,8 @@ TellMeWhenDB = {
 					},
 				}, -- [6]
 			},
+			["NumGroups"] = 6,
+			["Version"] = 86907,
 			["Locked"] = true,
 		},
 		["Vermins - Stonespine"] = {
@@ -6447,6 +6447,7 @@ TellMeWhenDB = {
 		},
 		["Vermins - Dreadmist"] = {
 			["Locked"] = true,
+			["Version"] = 86907,
 			["NumGroups"] = 2,
 			["Groups"] = {
 				{
@@ -6490,6 +6491,7 @@ TellMeWhenDB = {
 							["Type"] = "buff",
 							["Sort"] = -1,
 							["Name"] = "Battle Shout",
+							["DurationMin"] = 15,
 							["DurationMinEnabled"] = true,
 							["Conditions"] = {
 								{
@@ -6499,7 +6501,6 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
-							["DurationMin"] = 15,
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -6610,7 +6611,6 @@ TellMeWhenDB = {
 					["Columns"] = 20,
 				}, -- [2]
 			},
-			["Version"] = 86907,
 		},
 		["Vermin - Golemagg"] = {
 			["Version"] = 86907,

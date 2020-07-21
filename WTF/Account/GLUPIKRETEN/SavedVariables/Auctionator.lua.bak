@@ -2,21 +2,38 @@
 AUCTIONATOR_SAVEDVARS = {
 	["_50000"] = 500,
 	["_2000"] = 100,
+	["_5000000"] = 10000,
+	["LOG_DE_DATA_X"] = true,
+	["_1000000"] = 2500,
 	["_10000"] = 200,
 	["_500"] = 5,
-	["_1000000"] = 2500,
-	["_200000"] = 1000,
 	["STARTING_DISCOUNT"] = 5,
-	["LOG_DE_DATA_X"] = true,
-	["_5000000"] = 10000,
+	["_200000"] = 1000,
 }
 AUCTIONATOR_PRICING_HISTORY = {
 	["Light Feather"] = {
 		["is"] = "17056:0:0:0:0",
 		["6295371"] = "3500:1",
 	},
+	["Silk Cloth"] = {
+		["is"] = "4306:0:0:0:0",
+		["6296837"] = "174:2",
+	},
+	["Small Lustrous Pearl"] = {
+		["is"] = "5498:0:0:0:0",
+		["6296837"] = "321:3",
+	},
+	["Gargoyle's Bite"] = {
+		["is"] = "12989:0:0:0:0",
+		["6296837"] = "149500:1",
+	},
+	["Linen Cloth"] = {
+		["is"] = "2589:0:0:0:0",
+		["6296836"] = "23:14",
+	},
 	["Wool Cloth"] = {
 		["is"] = "2592:0:0:0:0",
+		["6296836"] = "2200:10",
 		["6295371"] = "1035:2",
 	},
 }
@@ -126,12 +143,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 0,
 			["mr"] = 243,
 		},
-		["Bolt of Silk Cloth"] = {
-			["H3212"] = 2100,
-			["cc"] = 7,
-			["id"] = "4305:0:0:0:0",
-			["sc"] = 0,
-			["mr"] = 2100,
+		["Barbaric Loincloth"] = {
+			["H3212"] = 400,
+			["cc"] = 4,
+			["id"] = "3309:0:0:0:0",
+			["sc"] = 1,
+			["mr"] = 400,
 		},
 		["Barbaric Cloth Vest"] = {
 			["H3212"] = 900,
@@ -282,19 +299,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 1,
 			["mr"] = 4000,
 		},
-		["Barbaric Loincloth"] = {
-			["H3212"] = 400,
-			["cc"] = 4,
-			["id"] = "3309:0:0:0:0",
-			["sc"] = 1,
-			["mr"] = 400,
-		},
 		["Wool Cloth"] = {
 			["H3212"] = 177,
 			["cc"] = 7,
 			["id"] = "2592:0:0:0:0",
 			["sc"] = 0,
 			["mr"] = 177,
+		},
+		["Bolt of Silk Cloth"] = {
+			["H3212"] = 2100,
+			["cc"] = 7,
+			["id"] = "4305:0:0:0:0",
+			["sc"] = 0,
+			["mr"] = 2100,
 		},
 		["Bloodspattered Loincloth of the Tiger"] = {
 			["H3212"] = 2200,
@@ -459,6 +476,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "4307:0:0:0:0",
 			["cc"] = 4,
 		},
+		["Small Lustrous Pearl"] = {
+			["mr"] = 322,
+			["cc"] = 7,
+			["id"] = "5498:0:0:0:0",
+			["sc"] = 0,
+			["H3536"] = 322,
+		},
 		["Pattern: Fine Leather Pants"] = {
 			["mr"] = 18931,
 			["cc"] = 9,
@@ -530,11 +554,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 9,
 		},
 		["Linen Cloth"] = {
-			["mr"] = 44,
+			["mr"] = 23,
 			["sc"] = 0,
-			["H3529"] = 44,
+			["L3536"] = 23,
 			["id"] = "2589:0:0:0:0",
 			["cc"] = 7,
+			["H3536"] = 24,
 		},
 		["Pattern: Comfortable Leather Hat"] = {
 			["mr"] = 150000,
@@ -915,6 +940,20 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "16219:0:0:0:0",
 			["cc"] = 9,
 		},
+		["Gargoyle's Bite"] = {
+			["mr"] = 80000,
+			["cc"] = 2,
+			["id"] = "12989:0:0:0:0",
+			["sc"] = 6,
+			["H3536"] = 80000,
+		},
+		["Silk Cloth"] = {
+			["mr"] = 175,
+			["cc"] = 7,
+			["id"] = "4306:0:0:0:0",
+			["sc"] = 0,
+			["H3536"] = 175,
+		},
 		["Essence of Undeath"] = {
 			["mr"] = 19399,
 			["cc"] = 5,
@@ -922,12 +961,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 0,
 			["H3536"] = 19399,
 		},
-		["Lesser Eternal Essence"] = {
-			["mr"] = 20193,
-			["cc"] = 7,
-			["id"] = "16202:0:0:0:0",
-			["sc"] = 0,
-			["H3536"] = 20193,
+		["Pattern: Green Woolen Bag"] = {
+			["mr"] = 799,
+			["sc"] = 2,
+			["H3534"] = 799,
+			["id"] = "4292:0:0:0:0",
+			["cc"] = 9,
 		},
 		["Greater Astral Essence"] = {
 			["mr"] = 6899,
@@ -936,12 +975,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 0,
 			["H3536"] = 6899,
 		},
-		["Pattern: Green Woolen Bag"] = {
-			["mr"] = 799,
-			["sc"] = 2,
-			["H3534"] = 799,
-			["id"] = "4292:0:0:0:0",
-			["cc"] = 9,
+		["Lesser Magic Essence"] = {
+			["mr"] = 600,
+			["cc"] = 7,
+			["id"] = "10938:0:0:0:0",
+			["sc"] = 0,
+			["H3536"] = 600,
 		},
 		["Greater Magic Essence"] = {
 			["mr"] = 1504,
@@ -951,18 +990,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3536"] = 1504,
 		},
 		["Wool Cloth"] = {
-			["mr"] = 1042,
+			["mr"] = 1899,
 			["sc"] = 0,
 			["H3535"] = 1042,
+			["cc"] = 7,
 			["id"] = "2592:0:0:0:0",
-			["cc"] = 7,
+			["H3536"] = 1899,
 		},
-		["Lesser Magic Essence"] = {
-			["mr"] = 600,
+		["Lesser Eternal Essence"] = {
+			["mr"] = 20193,
 			["cc"] = 7,
-			["id"] = "10938:0:0:0:0",
+			["id"] = "16202:0:0:0:0",
 			["sc"] = 0,
-			["H3536"] = 600,
+			["H3536"] = 20193,
 		},
 		["Superior Gloves of the Eagle"] = {
 			["mr"] = 9000,
@@ -1006,12 +1046,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 1,
 			["H3536"] = 20000,
 		},
-		["Pattern: Fine Leather Gloves"] = {
-			["mr"] = 3120,
-			["cc"] = 9,
-			["id"] = "2408:0:0:0:0",
-			["sc"] = 1,
-			["H3536"] = 3120,
+		["Heraldic Gloves"] = {
+			["mr"] = 72750,
+			["sc"] = 2,
+			["H3529"] = 72750,
+			["id"] = "8121:0:0:0:0",
+			["cc"] = 4,
 		},
 		["Azure Silk Gloves"] = {
 			["mr"] = 24998,
@@ -1027,19 +1067,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 1,
 			["H3536"] = 14600,
 		},
-		["Green Leather Armor"] = {
-			["mr"] = 194495,
-			["cc"] = 4,
-			["id"] = "4255:0:0:0:0",
-			["sc"] = 2,
-			["H3536"] = 194495,
-		},
-		["Heraldic Gloves"] = {
-			["mr"] = 72750,
-			["sc"] = 2,
-			["H3529"] = 72750,
-			["id"] = "8121:0:0:0:0",
-			["cc"] = 4,
+		["Pattern: Fine Leather Gloves"] = {
+			["mr"] = 3120,
+			["cc"] = 9,
+			["id"] = "2408:0:0:0:0",
+			["sc"] = 1,
+			["H3536"] = 3120,
 		},
 		["Herbalist's Gloves"] = {
 			["mr"] = 67500,
@@ -1047,6 +1080,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3529"] = 67500,
 			["id"] = "7349:0:0:0:0",
 			["cc"] = 4,
+		},
+		["Green Leather Armor"] = {
+			["mr"] = 194495,
+			["cc"] = 4,
+			["id"] = "4255:0:0:0:0",
+			["sc"] = 2,
+			["H3536"] = 194495,
 		},
 		["Red Mageweave Bag"] = {
 			["mr"] = 12000,
@@ -1104,18 +1144,18 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "14511:0:0:0:0",
 			["cc"] = 9,
 		},
-		["Pattern: Gem-studded Leather Belt"] = {
-			["mr"] = 234143,
-			["cc"] = 9,
-			["id"] = "14635:0:0:0:0",
-			["sc"] = 1,
-			["H3536"] = 234143,
-		},
 		["Ornate Mithril Gloves"] = {
 			["mr"] = 245000,
 			["sc"] = 4,
 			["H3529"] = 245000,
 			["id"] = "7927:0:0:0:0",
+			["cc"] = 4,
+		},
+		["Barbaric Cloth Gloves"] = {
+			["mr"] = 3574,
+			["sc"] = 1,
+			["H3529"] = 3574,
+			["id"] = "3308:0:0:0:0",
 			["cc"] = 4,
 		},
 		["Pattern: Runic Leather Bracers"] = {
@@ -1146,12 +1186,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 9,
 			["H3536"] = 5000,
 		},
-		["Green Leather Bag"] = {
-			["mr"] = 5100,
-			["cc"] = 1,
-			["id"] = "5573:0:0:0:0",
+		["Lesser Mystic Essence"] = {
+			["mr"] = 870,
+			["cc"] = 7,
+			["id"] = "11134:0:0:0:0",
 			["sc"] = 0,
-			["H3536"] = 5100,
+			["H3536"] = 870,
 		},
 		["Gloves of Holy Might"] = {
 			["mr"] = 230000,
@@ -1160,12 +1200,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "867:0:0:0:0",
 			["cc"] = 4,
 		},
-		["Lesser Mystic Essence"] = {
-			["mr"] = 870,
-			["cc"] = 7,
-			["id"] = "11134:0:0:0:0",
+		["Green Leather Bag"] = {
+			["mr"] = 5100,
+			["cc"] = 1,
+			["id"] = "5573:0:0:0:0",
 			["sc"] = 0,
-			["H3536"] = 870,
+			["H3536"] = 5100,
 		},
 		["Cabalist Gloves of the Monkey"] = {
 			["mr"] = 73416,
@@ -1294,12 +1334,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "21342:0:0:0:0",
 			["cc"] = 1,
 		},
-		["Barbaric Cloth Gloves"] = {
-			["mr"] = 3574,
+		["Pattern: Gem-studded Leather Belt"] = {
+			["mr"] = 234143,
+			["cc"] = 9,
+			["id"] = "14635:0:0:0:0",
 			["sc"] = 1,
-			["H3529"] = 3574,
-			["id"] = "3308:0:0:0:0",
-			["cc"] = 4,
+			["H3536"] = 234143,
 		},
 		["Magister's Gloves"] = {
 			["mr"] = 129999,
@@ -1625,7 +1665,7 @@ AUCTIONATOR_STACKING_PREFS = {
 		["stacksize"] = 20,
 	},
 	["wool cloth"] = {
-		["stacksize"] = 10,
+		["stacksize"] = 20,
 		["numstacks"] = 0,
 	},
 	["magnificent hide"] = {

@@ -64,7 +64,7 @@ rInfostrings: disabled
 rLib: disabled
 DBM-Party-Cataclysm: enabled
 DBM-ThroneFourWinds: enabled
-AdiBags: disabled
+AdiBags: enabled
 WeakAuras: disabled
 WeakAurasModelPaths: enabled
 WeakAurasOptions: enabled
@@ -150,7 +150,7 @@ Bagnon_GuildBank: disabled
 EasyLoot: enabled
 Stubby: disabled
 TradeSkillMaster_Mailing: disabled
-cargBags_Nivaya: enabled
+cargBags_Nivaya: disabled
 TradeSkillMaster_Accounting: disabled
 autoloot: enabled
 Reforgenator: disabled
@@ -285,3 +285,4 @@ WeaponSwingTimer: enabled
 nHealth: enabled
 Bagnon_VoidStorage: disabled
 FollowMePls: enabled
+AutoDelete: disabled
