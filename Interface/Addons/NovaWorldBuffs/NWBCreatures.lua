@@ -501,7 +501,6 @@ NWB.stormwindCreatures = {
 	[1309] = "Wynne Larson",
 	[1435] = "Zardeth of the Black Claw",
 	[1733] = "Zggi"
-	
 }
 
 NWB.companionCreatures = {

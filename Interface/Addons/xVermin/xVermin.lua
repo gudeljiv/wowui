@@ -198,13 +198,6 @@ f:SetScript(
 		-- nova world buffs layer minimap frame positioning
 		-------------------------------------------
 		if (IsAddOnLoaded("NovaWorldBuffs")) then
-			-- local OriginalSetPointNWB = getmetatable(NWBAnchor).__index.SetPoint
-			-- local function MoveNWB(self)
-			-- 	self:ClearAllPoints()
-			-- 	OriginalSetPointNWB(self, "CENTER", 0, -237)
-			-- end
-			-- hooksecurefunc(NWBAnchor, "SetPoint", MoveNWB)
-			-- MoveOmen(NWBAnchor)
 			MinimapLayerFrame:ClearAllPoints()
 			MinimapLayerFrame:SetPoint("LEFT", CustomContainer_2, "LEFT", 5, 0)
 			MinimapLayerFrame.ClearAllPoints = function()
