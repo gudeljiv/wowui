@@ -11,7 +11,7 @@ END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:4593
-/castsequence [combat]item:858,item:858,item:858,item:858,item:858,item:858,item:858,item:858,item:858,item:858,item:858
+/castsequence [combat]item:858,item:858,item:858,item:858,item:858,item:858
 END
 VER 3 0000000000000006 "PF" "Inv_misc_questionmark"
 #showtooltip item:3770

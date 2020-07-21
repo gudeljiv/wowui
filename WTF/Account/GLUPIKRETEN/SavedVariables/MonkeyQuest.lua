@@ -309,19 +309,7 @@ MonkeyQuestConfig = {
 			["Deathknell - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Rude Awakening - false"] = {
-				["m_bChecked"] = true,
-			},
 			["Rattling the Rattlecages - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Hallowed Scroll - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Mindless Ones - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Priest - true"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -642,13 +630,13 @@ MonkeyQuestConfig = {
 		["m_bShowZoneHighlight"] = true,
 		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
 		["m_bAlwaysHeaders"] = false,
-		["m_bDisplay"] = true,
+		["m_bDisplay"] = false,
 		["m_bMinimized"] = false,
 		["m_strInitialObjectiveColour"] = "|cFFD82619",
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 675.066528320313,
+		["m_iFrameBottom"] = 929.39990234375,
 		["m_bHideTitleButtons"] = false,
 		["m_iFrameLeft"] = 1670.73352050781,
 		["m_bColourDoneOrFailed"] = true,
@@ -1107,7 +1095,7 @@ MonkeyQuestConfig = {
 			["Raptor Horns - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Counterattack! - false"] = {
+			["Mahren Skyseer - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Slaying the Beast - false"] = {
@@ -1116,7 +1104,7 @@ MonkeyQuestConfig = {
 			["Enraged Thunder Lizards - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Mahren Skyseer - false"] = {
+			["Revenge of Gann - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Miner's Fortune - false"] = {
@@ -1140,7 +1128,7 @@ MonkeyQuestConfig = {
 			["Samophlange - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Revenge of Gann - false"] = {
+			["Counterattack! - false"] = {
 				["m_bChecked"] = true,
 			},
 			["The Barrens - true"] = {

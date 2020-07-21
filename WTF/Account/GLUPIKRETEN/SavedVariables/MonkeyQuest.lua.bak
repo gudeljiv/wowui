@@ -356,19 +356,7 @@ MonkeyQuestConfig = {
 			["Deathknell - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Priest - true"] = {
-				["m_bChecked"] = true,
-			},
 			["Rattling the Rattlecages - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Hallowed Scroll - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Mindless Ones - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Rude Awakening - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -500,16 +488,25 @@ MonkeyQuestConfig = {
 			["Raptor Horns - false"] = {
 				["m_bChecked"] = true,
 			},
+			["Cry of the Thunderhawk - false"] = {
+				["m_bChecked"] = true,
+			},
 			["Slaying the Beast - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Enraged Thunder Lizards - false"] = {
 				["m_bChecked"] = true,
 			},
+			["Revenge of Gann - false"] = {
+				["m_bChecked"] = true,
+			},
 			["Miner's Fortune - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Stolen Booty - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Ragefire Chasm - true"] = {
 				["m_bChecked"] = true,
 			},
 			["The Admiral's Orders - false"] = {
@@ -524,28 +521,31 @@ MonkeyQuestConfig = {
 			["Samophlange - false"] = {
 				["m_bChecked"] = true,
 			},
+			["Ziz Fizziks - false"] = {
+				["m_bChecked"] = true,
+			},
 			["The Barrens - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Trouble at the Docks - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Consumed by Hatred - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Betrayal from Within - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Ziz Fizziks - false"] = {
+			["Consumed by Hatred - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Ragefire Chasm - true"] = {
-				["m_bChecked"] = false,
+			["Trouble at the Docks - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Counterattack! - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Durotar - true"] = {
+				["m_bChecked"] = true,
 			},
 			["Letter to Jin'Zil - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Durotar - true"] = {
+			["Mahren Skyseer - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -689,13 +689,13 @@ MonkeyQuestConfig = {
 		["m_bShowZoneHighlight"] = true,
 		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
 		["m_bAlwaysHeaders"] = false,
-		["m_bDisplay"] = true,
+		["m_bDisplay"] = false,
 		["m_bMinimized"] = false,
 		["m_strInitialObjectiveColour"] = "|cFFD82619",
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 391.066345214844,
+		["m_iFrameBottom"] = 929.39990234375,
 		["m_bHideCompletedQuests"] = true,
 		["m_iFrameLeft"] = 1670.73352050781,
 		["m_bColourDoneOrFailed"] = true,

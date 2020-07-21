@@ -260,8 +260,8 @@ EavesDropStatsDB = {
 				["heal"] = {
 					["Lesser Heal"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/07/20 07:12:58|r\n|Hunit:Player-4465-01C75D20:Mxyz|hMxyz's|h |Hspell:0:0:SPELL_HEAL|h|cffffffffLesser Heal|r|h heals |Hunit:Player-4465-01C75D20:Mxyz|hMxyz|h for |cffffffff0|r.(55 Overhealed)",
-							["amount"] = 55,
+							["time"] = "|cffffffff07/21/20 11:31:39|r\n|Hunit:Player-4465-01C75D20:Mxyz|hMxyz's|h |Hspell:0:0:SPELL_HEAL|h|cffffffffLesser Heal|r|h heals |Hunit:Player-4465-01C75D20:Mxyz|hMxyz|h for |cffffffff31|r.(25 Overhealed)",
+							["amount"] = 56,
 						},
 						[2] = {
 						},
@@ -273,8 +273,8 @@ EavesDropStatsDB = {
 				["hit"] = {
 					["Physical"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/07/20 07:26:50|r\n|Hicon:128:source|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-0-25-1890-000003DBD0:Rattlecage Skeleton|hRattlecage Skeleton's|h melee swing hits |Hunit:Player-4465-01C75D20:Mxyz|hMxyz|h for |cffff13134|r |cffff1313Physical|r.",
-							["amount"] = 4,
+							["time"] = "|cffffffff07/21/20 11:05:03|r\n|Hunit:Player-4465-01C75D20:Mxyz|hMxyz|h falls and loses |cffffffff52|r health.",
+							["amount"] = 52,
 						},
 						[2] = {
 						},

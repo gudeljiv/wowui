@@ -28,7 +28,18 @@ AtlasLootClassicDB = {
 		},
 		["Mxyz - Golemagg"] = {
 			["minimap"] = {
+				["shown"] = false,
 				["minimapPos"] = 35.6918309653034,
+				["hide"] = true,
+			},
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"ScarletMonasteryGraveyard", -- [2]
+					3, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
 			},
 		},
 		["Pitchwise - Golemagg"] = {

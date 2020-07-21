@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 1034,
+	["session"] = 1046,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -794,5 +794,13 @@ BugGrabberDB = {
 			["session"] = 1033,
 			["counter"] = 6,
 		}, -- [100]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:15: attempt to index global 'TargetFrameHealthBarText' (a nil value)",
+			["time"] = "2020/07/21 11:23:08",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = true\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'TargetFrameHealthBarText' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:15: in function <Interface\\AddOns\\xVermin\\SkinBuffs.lua:13>\n[C]: ?\n[C]: in function `TargetFrame_UpdateAuras'\nInterface\\FrameXML\\TargetFrame.lua:131: in function <Interface\\FrameXML\\TargetFrame.lua:99>\n[C]: in function `TargetFrame_Update'\nInterface\\FrameXML\\TargetFrame.lua:150: in function <Interface\\FrameXML\\TargetFrame.lua:142>\n[C]: in function `CameraOrSelectOrMoveStop'\n[string \"CAMERAORSELECTORMOVE\"]:4: in function <[string \"CAMERAORSELECTORMOVE\"]:1>",
+			["session"] = 1038,
+			["counter"] = 1,
+		}, -- [101]
 	},
 }

@@ -237,15 +237,50 @@ EavesDropStatsDB = {
 				["heal"] = {
 					["Lesser Heal"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/07/20 07:12:58|r\n|Hunit:Player-4465-01C75D20:Mxyz|hMxyz's|h |Hspell:0:0:SPELL_HEAL|h|cffffffffLesser Heal|r|h heals |Hunit:Player-4465-01C75D20:Mxyz|hMxyz|h for |cffffffff0|r.(55 Overhealed)",
-							["amount"] = 55,
+							["time"] = "|cffffffff07/21/20 11:31:39|r\n|Hunit:Player-4465-01C75D20:Mxyz|hMxyz's|h |Hspell:0:0:SPELL_HEAL|h|cffffffffLesser Heal|r|h heals |Hunit:Player-4465-01C75D20:Mxyz|hMxyz|h for |cffffffff31|r.(25 Overhealed)",
+							["amount"] = 56,
 						},
 						[2] = {
 						},
 						["icon"] = 135929,
 					},
 				},
+				["hit"] = {
+					["Smite"] = {
+						[-2] = {
+							["time"] = "|cffffffff07/07/20 07:20:51|r\n|Hunit:Player-4465-01C75D20:Mxyz|hMxyz's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffSmite|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-0-25-1501-000004AEA7:Mindless Zombie|hMindless Zombie|h for |cffffffff15|r |cffffffffHoly|r.(3 Overkill)",
+							["amount"] = 18,
+						},
+						[2] = {
+							["time"] = "|cffffffff07/07/20 07:30:58|r\n|Hunit:Player-4465-01C75D20:Mxyz|hMxyz's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffSmite|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-0-25-1890-000004B118:Rattlecage Skeleton|hRattlecage Skeleton|h for |cffffffff27|r |cffffffffHoly|r.(Critical)",
+							["amount"] = 27,
+						},
+						["icon"] = 135924,
+					},
+					["Melee Attack"] = {
+						[-2] = {
+							["time"] = "|cffffffff07/07/20 07:18:22|r\n|Hunit:Player-4465-01C75D20:Mxyz|hMxyz's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-0-25-1502-000004A89F:Wretched Zombie|hWretched Zombie|h for |cffffffff4|r |cffffffffPhysical|r.",
+							["amount"] = 4,
+						},
+						[2] = {
+							["time"] = "|cffffffff07/07/20 07:18:47|r\n|Hunit:Player-4465-01C75D20:Mxyz|hMxyz's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4468-0-25-1501-000004997A:Mindless Zombie|hMindless Zombie|h for |cffffffff2|r |cffffffffPhysical|r.(5 Overkill) (Critical)",
+							["amount"] = 7,
+						},
+					},
+				},
 			}, -- [1]
+			[-1] = {
+				["hit"] = {
+					["Physical"] = {
+						[-2] = {
+							["time"] = "|cffffffff07/21/20 11:05:03|r\n|Hunit:Player-4465-01C75D20:Mxyz|hMxyz|h falls and loses |cffffffff52|r health.",
+							["amount"] = 52,
+						},
+						[2] = {
+						},
+					},
+				},
+			},
 		},
 		["Verminz - Genesis"] = {
 			{

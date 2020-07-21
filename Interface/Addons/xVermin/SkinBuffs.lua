@@ -12,6 +12,7 @@ ReplacedDebuffTypeColor[""] = ReplacedDebuffTypeColor["none"]
 
 local function SkinTarget()
 	if TargetFrame:IsShown() then
+		TargetFrameHealthBarText:Show()
 		-- print(select(3, UnitBuff("target", 1)))
 		local numBuffs = 0
 		for i = 1, 32 do

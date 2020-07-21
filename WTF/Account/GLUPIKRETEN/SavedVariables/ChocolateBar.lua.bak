@@ -29,17 +29,6 @@ ChocolateBarDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["locked"] = false,
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["r"] = 0,
-					["g"] = 0,
-					["b"] = 0,
-				},
-				["textureName"] = "None",
-			},
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -62,6 +51,17 @@ ChocolateBarDB = {
 			},
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
+			},
+			["locked"] = false,
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["r"] = 0,
+					["g"] = 0,
+					["b"] = 0,
+				},
+				["textureName"] = "None",
 			},
 			["moveFrames"] = false,
 			["objSettings"] = {
@@ -253,14 +253,14 @@ ChocolateBarDB = {
 					["align"] = "right",
 				},
 			},
+			["fontName"] = "Friz Quadrata TT",
 			["desaturated"] = false,
-			["gap"] = 5,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
 			["forceColor"] = false,
-			["fontName"] = "Friz Quadrata TT",
+			["gap"] = 5,
 			["textOffset"] = 2,
 			["height"] = 20,
 			["fixedStrata"] = true,
@@ -297,10 +297,10 @@ CB_PlayedTime = {
 		["total"] = 18945,
 	},
 	["Mxyz-"] = {
-		["total"] = 280,
+		["total"] = 3762,
 	},
 	["Vermin-"] = {
-		["total"] = 70266,
+		["total"] = 72996,
 	},
 	["Kosturko-"] = {
 		["total"] = 1457,

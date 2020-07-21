@@ -30,15 +30,18 @@ local function THealthHide()
 end
 
 local function THealthShow()
-	if TargetFrame:IsShown() then
-		local targetHP = format("%.0f", (UnitHealth("target") / UnitHealthMax("target")) * 100)
-		TargetHealthFrame.text:SetText(targetHP)
-		TargetHealthFrame.text:SetVertexColor(1, 1, 1)
-		TargetHealthFrame.text:Show()
-	else
-		THealthHide()
-	end
+	local targetHP = format("%.0f", (UnitHealth("target") / UnitHealthMax("target")) * 100)
+	TargetHealthFrame.text:SetText(targetHP)
+	TargetHealthFrame.text:SetVertexColor(1, 1, 1)
+	TargetHealthFrame.text:Show()
 end
 
-UIParent:HookScript("OnUpdate", THealthShow)
+TargetFrame:HookScript("OnUpdate", THealthShow)
 PlayerFrame:HookScript("OnUpdate", PHealthShow)
+
+TargetFrame:HookScript(
+	"OnHide",
+	function(self)
+		THealthHide()
+	end
+)

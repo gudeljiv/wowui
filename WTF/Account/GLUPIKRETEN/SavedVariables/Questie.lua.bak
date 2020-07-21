@@ -218,18 +218,28 @@ QuestieConfig = {
 			},
 		},
 		["Mxyz - Golemagg"] = {
+			["collapsedZones"] = {
+			},
+			["migrationVersion"] = 1,
+			["complete"] = {
+				[3097] = true,
+				[363] = true,
+				[364] = true,
+			},
 			["TrackerHiddenQuests"] = {
 			},
-			["TrackerHiddenObjectives"] = {
-			},
-			["AutoUntrackedQuests"] = {
+			["collapsedQuests"] = {
 			},
 			["TrackedQuests"] = {
 			},
+			["trackerSetpoint"] = "AUTO",
+			["TrackerHiddenObjectives"] = {
+			},
+			["TrackerWidth"] = 0,
+			["AutoUntrackedQuests"] = {
+			},
 			["journey"] = {
 				{
-					["Party"] = {
-					},
 					["Level"] = 1,
 					["Quest"] = 363,
 					["Timestamp"] = 1594142104,
@@ -237,8 +247,6 @@ QuestieConfig = {
 					["Event"] = "Quest",
 				}, -- [1]
 				{
-					["Party"] = {
-					},
 					["Level"] = 1,
 					["Quest"] = 363,
 					["Timestamp"] = 1594142270,
@@ -246,8 +254,6 @@ QuestieConfig = {
 					["Event"] = "Quest",
 				}, -- [2]
 				{
-					["Party"] = {
-					},
 					["Level"] = 1,
 					["Quest"] = 364,
 					["Timestamp"] = 1594142273,
@@ -255,15 +261,11 @@ QuestieConfig = {
 					["Event"] = "Quest",
 				}, -- [3]
 				{
-					["Party"] = {
-					},
 					["Timestamp"] = 1594142422,
 					["Event"] = "Level",
 					["NewLevel"] = 2,
 				}, -- [4]
 				{
-					["Party"] = {
-					},
 					["Level"] = 2,
 					["Quest"] = 364,
 					["Timestamp"] = 1594142633,
@@ -271,8 +273,6 @@ QuestieConfig = {
 					["Event"] = "Quest",
 				}, -- [5]
 				{
-					["Party"] = {
-					},
 					["Level"] = 2,
 					["Quest"] = 3097,
 					["Timestamp"] = 1594142640,
@@ -280,8 +280,6 @@ QuestieConfig = {
 					["Event"] = "Quest",
 				}, -- [6]
 				{
-					["Party"] = {
-					},
 					["Level"] = 2,
 					["Quest"] = 3901,
 					["Timestamp"] = 1594142643,
@@ -289,8 +287,6 @@ QuestieConfig = {
 					["Event"] = "Quest",
 				}, -- [7]
 				{
-					["Party"] = {
-					},
 					["Level"] = 2,
 					["Quest"] = 376,
 					["Timestamp"] = 1594142646,
@@ -298,8 +294,6 @@ QuestieConfig = {
 					["Event"] = "Quest",
 				}, -- [8]
 				{
-					["Party"] = {
-					},
 					["Level"] = 2,
 					["Quest"] = 3097,
 					["Timestamp"] = 1594142652,
@@ -307,17 +301,24 @@ QuestieConfig = {
 					["Event"] = "Quest",
 				}, -- [9]
 				{
-					["Party"] = {
-					},
 					["Timestamp"] = 1594143012,
 					["Event"] = "Level",
 					["NewLevel"] = 3,
 				}, -- [10]
-			},
-			["complete"] = {
-				[3097] = true,
-				[363] = true,
-				[364] = true,
+				{
+					["Level"] = 3,
+					["Quest"] = 376,
+					["Timestamp"] = 1595321645,
+					["SubType"] = "Abandon",
+					["Event"] = "Quest",
+				}, -- [11]
+				{
+					["Level"] = 3,
+					["Quest"] = 3901,
+					["Timestamp"] = 1595321648,
+					["SubType"] = "Abandon",
+					["Event"] = "Quest",
+				}, -- [12]
 			},
 		},
 		["Vermins - Dreadmist"] = {
@@ -4584,7 +4585,7 @@ QuestieConfig = {
 				[868] = true,
 				[891] = true,
 				[6571] = true,
-				[1094] = true,
+				[549] = true,
 				[6386] = true,
 				[581] = true,
 				[541] = true,
@@ -4592,7 +4593,7 @@ QuestieConfig = {
 				[216] = true,
 				[892] = true,
 				[924] = true,
-				[6384] = true,
+				[804] = true,
 				[1060] = true,
 				[4542] = true,
 				[5726] = true,
@@ -4651,12 +4652,12 @@ QuestieConfig = {
 				[6381] = true,
 				[6382] = true,
 				[5730] = true,
-				[804] = true,
+				[6384] = true,
 				[6385] = true,
 				[6641] = true,
 				[900] = true,
 				[1095] = true,
-				[549] = true,
+				[1094] = true,
 				[499] = true,
 				[5881] = true,
 				[550] = true,
@@ -4677,8 +4678,8 @@ QuestieConfig = {
 			},
 		},
 		["Vermin - Golemagg"] = {
-			["collapsedZones"] = {
-			},
+			["showRepeatableQuests"] = false,
+			["TrackerWidth"] = 0,
 			["AutoUntrackedQuests"] = {
 			},
 			["migrationVersion"] = 1,
@@ -4688,8 +4689,10 @@ QuestieConfig = {
 				[845] = true,
 				[869] = true,
 				[877] = true,
+				[893] = true,
 				[790] = true,
 				[806] = true,
+				[846] = true,
 				[4641] = true,
 				[870] = true,
 				[878] = true,
@@ -4697,6 +4700,7 @@ QuestieConfig = {
 				[823] = true,
 				[855] = true,
 				[871] = true,
+				[879] = true,
 				[6365] = true,
 				[895] = true,
 				[903] = true,
@@ -4710,9 +4714,11 @@ QuestieConfig = {
 				[809] = true,
 				[817] = true,
 				[825] = true,
+				[849] = true,
 				[881] = true,
 				[4921] = true,
 				[905] = true,
+				[913] = true,
 				[794] = true,
 				[6384] = true,
 				[818] = true,
@@ -4729,32 +4735,43 @@ QuestieConfig = {
 				[851] = true,
 				[867] = true,
 				[875] = true,
+				[1492] = true,
 				[891] = true,
+				[882] = true,
+				[907] = true,
 				[788] = true,
+				[3261] = true,
 				[804] = true,
 				[6385] = true,
 				[1505] = true,
 				[828] = true,
-				[887] = true,
+				[3911] = true,
 				[844] = true,
-				[5052] = true,
+				[852] = true,
 				[834] = true,
-				[5441] = true,
+				[850] = true,
 				[876] = true,
 				[884] = true,
 				[892] = true,
 				[848] = true,
-				[850] = true,
+				[5441] = true,
 				[789] = true,
-				[3911] = true,
+				[887] = true,
 				[805] = true,
-				[3261] = true,
-				[882] = true,
-				[1492] = true,
+				[843] = true,
+				[5052] = true,
+				[4021] = true,
 			},
 			["TrackerHiddenQuests"] = {
 			},
+			["trackerSetpoint"] = "AUTO",
 			["collapsedQuests"] = {
+			},
+			["TrackedQuests"] = {
+			},
+			["collapsedZones"] = {
+			},
+			["TrackerHiddenObjectives"] = {
 			},
 			["journey"] = {
 				{
@@ -5997,13 +6014,165 @@ QuestieConfig = {
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
 				}, -- [182]
-			},
-			["trackerSetpoint"] = "AUTO",
-			["showRepeatableQuests"] = false,
-			["TrackerHiddenObjectives"] = {
-			},
-			["TrackerWidth"] = 0,
-			["TrackedQuests"] = {
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+					["Level"] = 18,
+					["Quest"] = 843,
+					["Timestamp"] = 1595274370,
+				}, -- [183]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+					["Level"] = 18,
+					["Quest"] = 846,
+					["Timestamp"] = 1595274372,
+				}, -- [184]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
+					["Level"] = 18,
+					["Quest"] = 5761,
+					["Timestamp"] = 1595275462,
+				}, -- [185]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
+					["Level"] = 18,
+					["Quest"] = 830,
+					["Timestamp"] = 1595275467,
+				}, -- [186]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
+					["Level"] = 18,
+					["Quest"] = 959,
+					["Timestamp"] = 1595275479,
+				}, -- [187]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
+					["Level"] = 18,
+					["Quest"] = 1060,
+					["Timestamp"] = 1595275488,
+				}, -- [188]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
+					["Level"] = 18,
+					["Quest"] = 1483,
+					["Timestamp"] = 1595275831,
+				}, -- [189]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
+					["Level"] = 18,
+					["Quest"] = 894,
+					["Timestamp"] = 1595275843,
+				}, -- [190]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
+					["Level"] = 18,
+					["Quest"] = 896,
+					["Timestamp"] = 1595275850,
+				}, -- [191]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+					["Level"] = 18,
+					["Quest"] = 846,
+					["Timestamp"] = 1595276436,
+				}, -- [192]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+					["Level"] = 18,
+					["Quest"] = 849,
+					["Timestamp"] = 1595276438,
+				}, -- [193]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+					["Level"] = 18,
+					["Quest"] = 849,
+					["Timestamp"] = 1595276755,
+				}, -- [194]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+					["Level"] = 18,
+					["Quest"] = 879,
+					["Timestamp"] = 1595276943,
+				}, -- [195]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+					["Level"] = 18,
+					["Quest"] = 906,
+					["Timestamp"] = 1595276949,
+				}, -- [196]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+					["Level"] = 18,
+					["Quest"] = 907,
+					["Timestamp"] = 1595276964,
+				}, -- [197]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+					["Level"] = 18,
+					["Quest"] = 913,
+					["Timestamp"] = 1595276968,
+				}, -- [198]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+					["Level"] = 18,
+					["Quest"] = 893,
+					["Timestamp"] = 1595276997,
+				}, -- [199]
+				{
+					["Timestamp"] = 1595277170,
+					["Event"] = "Level",
+					["NewLevel"] = 19,
+				}, -- [200]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+					["Level"] = 19,
+					["Quest"] = 913,
+					["Timestamp"] = 1595277171,
+				}, -- [201]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+					["Level"] = 19,
+					["Quest"] = 874,
+					["Timestamp"] = 1595277174,
+				}, -- [202]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+					["Level"] = 19,
+					["Quest"] = 852,
+					["Timestamp"] = 1595277973,
+				}, -- [203]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+					["Level"] = 19,
+					["Quest"] = 4021,
+					["Timestamp"] = 1595277983,
+				}, -- [204]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+					["Level"] = 19,
+					["Quest"] = 4021,
+					["Timestamp"] = 1595278486,
+				}, -- [205]
 			},
 		},
 		["Korupcija - Stonespine"] = {
@@ -8324,23 +8493,23 @@ QuestieConfig = {
 				[6386] = true,
 				[6385] = true,
 				[818] = true,
-				[808] = true,
+				[4402] = true,
 				[4641] = true,
-				[880] = true,
+				[817] = true,
 				[805] = true,
 				[870] = true,
 				[872] = true,
-				[4402] = true,
+				[880] = true,
 				[876] = true,
 				[815] = true,
-				[817] = true,
-				[3087] = true,
-				[871] = true,
+				[1492] = true,
+				[808] = true,
+				[6083] = true,
 				[823] = true,
 				[825] = true,
 				[890] = true,
 				[892] = true,
-				[903] = true,
+				[3087] = true,
 				[867] = true,
 				[835] = true,
 				[837] = true,
@@ -8360,13 +8529,13 @@ QuestieConfig = {
 				[5041] = true,
 				[804] = true,
 				[869] = true,
-				[6083] = true,
+				[871] = true,
 				[6062] = true,
 				[875] = true,
 				[877] = true,
-				[3911] = true,
+				[903] = true,
 				[881] = true,
-				[1492] = true,
+				[3911] = true,
 				[6384] = true,
 				[899] = true,
 			},
