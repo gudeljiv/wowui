@@ -2,23 +2,25 @@
 Details_TinyThreatDB = {
 	["characters"] = {
 		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
+		["Mxzq - Golemagg"] = "Mxyz - Golemagg",
 	},
 	["profiles"] = {
 		["Mxyz - Golemagg"] = {
 			["enabled"] = true,
 			["animate"] = false,
-			["author"] = "Details! Team",
+			["useclasscolors"] = false,
 			["playercolor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
+				1, -- [4]
 			},
 			["openedfromcommand"] = false,
 			["updatespeed"] = 0.2,
 			["dividebyhundred"] = true,
 			["showamount"] = false,
 			["useplayercolor"] = false,
-			["useclasscolors"] = false,
+			["author"] = "Details! Team",
 			["alwaysshowme"] = true,
 		},
 	},

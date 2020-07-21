@@ -2,13 +2,13 @@
 AUCTIONATOR_SAVEDVARS = {
 	["_50000"] = 500,
 	["_2000"] = 100,
+	["_5000000"] = 10000,
+	["LOG_DE_DATA_X"] = true,
+	["_1000000"] = 2500,
 	["_10000"] = 200,
 	["_500"] = 5,
-	["_1000000"] = 2500,
-	["_200000"] = 1000,
 	["STARTING_DISCOUNT"] = 5,
-	["LOG_DE_DATA_X"] = true,
-	["_5000000"] = 10000,
+	["_200000"] = 1000,
 }
 AUCTIONATOR_PRICING_HISTORY = {
 	["Light Feather"] = {
@@ -112,6 +112,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 1000,
 			["sc"] = 3,
 		},
+		["Wool Cloth"] = {
+			["H3212"] = 177,
+			["cc"] = 7,
+			["id"] = "2592:0:0:0:0",
+			["mr"] = 177,
+			["sc"] = 0,
+		},
 		["Barbaric Loincloth"] = {
 			["H3212"] = 400,
 			["cc"] = 4,
@@ -124,13 +131,6 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 7,
 			["id"] = "4305:0:0:0:0",
 			["mr"] = 2100,
-			["sc"] = 0,
-		},
-		["Wool Cloth"] = {
-			["H3212"] = 177,
-			["cc"] = 7,
-			["id"] = "2592:0:0:0:0",
-			["mr"] = 177,
 			["sc"] = 0,
 		},
 		["Ivycloth Gloves of the Owl"] = {
@@ -176,19 +176,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 699,
 			["sc"] = 0,
 		},
-		["Mageweave Cloth"] = {
-			["H3212"] = 1500,
+		["Bolt of Runecloth"] = {
+			["H3212"] = 30000,
 			["cc"] = 7,
-			["id"] = "4338:0:0:0:0",
-			["mr"] = 1500,
+			["id"] = "14048:0:0:0:0",
+			["mr"] = 30000,
 			["sc"] = 0,
 		},
-		["Aboriginal Loincloth of the Owl"] = {
-			["H3212"] = 900,
-			["cc"] = 4,
-			["id"] = "14119:0:0:760:0",
-			["mr"] = 900,
-			["sc"] = 1,
+		["Linen Cloth"] = {
+			["H3212"] = 20,
+			["cc"] = 7,
+			["id"] = "2589:0:0:0:0",
+			["mr"] = 20,
+			["sc"] = 0,
 		},
 		["Bloodspattered Loincloth of the Bear"] = {
 			["H3212"] = 1800,
@@ -212,11 +212,11 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 4595,
 			["sc"] = 1,
 		},
-		["Bolt of Runecloth"] = {
-			["H3212"] = 30000,
+		["Mageweave Cloth"] = {
+			["H3212"] = 1500,
 			["cc"] = 7,
-			["id"] = "14048:0:0:0:0",
-			["mr"] = 30000,
+			["id"] = "4338:0:0:0:0",
+			["mr"] = 1500,
 			["sc"] = 0,
 		},
 		["Barbaric Cloth Cloak"] = {
@@ -254,12 +254,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 899,
 			["sc"] = 3,
 		},
-		["Linen Cloth"] = {
-			["H3212"] = 20,
-			["cc"] = 7,
-			["id"] = "2589:0:0:0:0",
-			["mr"] = 20,
-			["sc"] = 0,
+		["Aboriginal Loincloth of the Owl"] = {
+			["H3212"] = 900,
+			["cc"] = 4,
+			["id"] = "14119:0:0:760:0",
+			["mr"] = 900,
+			["sc"] = 1,
 		},
 		["Bolt of Linen Cloth"] = {
 			["H3212"] = 55,
@@ -1041,12 +1041,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 1,
 			["H3529"] = 3500,
 		},
-		["Herbalist's Gloves"] = {
-			["mr"] = 67500,
+		["Green Leather Armor"] = {
+			["mr"] = 194495,
 			["cc"] = 4,
-			["id"] = "7349:0:0:0:0",
+			["id"] = "4255:0:0:0:0",
 			["sc"] = 2,
-			["H3529"] = 67500,
+			["H3536"] = 194495,
 		},
 		["Red Mageweave Bag"] = {
 			["mr"] = 12000,
@@ -1111,12 +1111,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 1,
 			["H3529"] = 129999,
 		},
-		["Ancestral Gloves"] = {
-			["mr"] = 200,
+		["Barbaric Cloth Gloves"] = {
+			["mr"] = 3574,
 			["cc"] = 4,
-			["id"] = "3290:0:0:0:0",
+			["id"] = "3308:0:0:0:0",
 			["sc"] = 1,
-			["H3529"] = 200,
+			["H3529"] = 3574,
 		},
 		["Pattern: Runic Leather Bracers"] = {
 			["mr"] = 19900,
@@ -1132,12 +1132,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 4,
 			["H3529"] = 9100,
 		},
-		["Barbaric Cloth Gloves"] = {
-			["mr"] = 3574,
+		["Ancestral Gloves"] = {
+			["mr"] = 200,
 			["cc"] = 4,
-			["id"] = "3308:0:0:0:0",
+			["id"] = "3290:0:0:0:0",
 			["sc"] = 1,
-			["H3529"] = 3574,
+			["H3529"] = 200,
 		},
 		["Pattern: Dark Leather Gloves"] = {
 			["mr"] = 5000,
@@ -1153,19 +1153,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 0,
 			["H3536"] = 5100,
 		},
-		["Light Feather"] = {
-			["mr"] = 2700,
-			["cc"] = 15,
-			["id"] = "17056:0:0:0:0",
-			["sc"] = 0,
-			["H3535"] = 2700,
-		},
 		["Wicked Leather Gauntlets"] = {
 			["mr"] = 20000,
 			["cc"] = 4,
 			["id"] = "15083:0:0:0:0",
 			["sc"] = 2,
 			["H3536"] = 20000,
+		},
+		["Light Feather"] = {
+			["mr"] = 2700,
+			["cc"] = 15,
+			["id"] = "17056:0:0:0:0",
+			["sc"] = 0,
+			["H3535"] = 2700,
 		},
 		["Cabalist Gloves of the Monkey"] = {
 			["mr"] = 73416,
@@ -1336,12 +1336,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 2,
 			["H3529"] = 72750,
 		},
-		["Green Leather Armor"] = {
-			["mr"] = 194495,
+		["Herbalist's Gloves"] = {
+			["mr"] = 67500,
 			["cc"] = 4,
-			["id"] = "4255:0:0:0:0",
+			["id"] = "7349:0:0:0:0",
 			["sc"] = 2,
-			["H3536"] = 194495,
+			["H3529"] = 67500,
 		},
 		["Pattern: Fine Leather Gloves"] = {
 			["mr"] = 3120,
@@ -1628,13 +1628,13 @@ AUCTIONATOR_STACKING_PREFS = {
 		["stacksize"] = 20,
 		["numstacks"] = 0,
 	},
-	["exotic leather"] = {
-		["stacksize"] = 20,
-		["numstacks"] = 0,
-	},
 	["*_herbs"] = {
 		["numstacks"] = -1,
 		["stacksize"] = 20,
+	},
+	["exotic leather"] = {
+		["stacksize"] = 20,
+		["numstacks"] = 0,
 	},
 	["flask of the earth"] = {
 		["numstacks"] = 0,
@@ -1644,9 +1644,9 @@ AUCTIONATOR_STACKING_PREFS = {
 		["numstacks"] = 0,
 		["stacksize"] = 1,
 	},
-	["reef octopus"] = {
+	["magnificent hide"] = {
+		["stacksize"] = 1,
 		["numstacks"] = 0,
-		["stacksize"] = 10,
 	},
 	["sha crystal"] = {
 		["numstacks"] = 0,
@@ -1660,9 +1660,9 @@ AUCTIONATOR_STACKING_PREFS = {
 		["numstacks"] = 0,
 		["stacksize"] = 10,
 	},
-	["magnificent hide"] = {
-		["stacksize"] = 1,
+	["reef octopus"] = {
 		["numstacks"] = 0,
+		["stacksize"] = 10,
 	},
 	["wool cloth"] = {
 		["numstacks"] = 0,

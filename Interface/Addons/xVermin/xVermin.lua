@@ -64,7 +64,7 @@ f:SetScript(
 		end
 
 		-------------------------------------------
-		-- Reposit toast frame.
+		-- Reposition toast frame.
 		-------------------------------------------
 		BNToastFrame:ClearAllPoints()
 		BNToastFrame:SetPoint("BOTTOMLEFT", ChatFrame1, "TOPLEFT", 0, 35)
@@ -88,7 +88,7 @@ f:SetScript(
 		end
 
 		-------------------------------------------
-		-- Reposit loot frame.
+		-- Reposition loot frame.
 		-------------------------------------------
 		LootFrame:HookScript(
 			"OnShow",
@@ -99,7 +99,7 @@ f:SetScript(
 		)
 
 		-------------------------------------------
-		-- Reposit quest timer frame.
+		-- Reposition quest timer frame.
 		-------------------------------------------
 		QuestTimerFrame:HookScript(
 			"OnShow",
@@ -118,7 +118,7 @@ f:SetScript(
 		)
 
 		-------------------------------------------
-		-- position of choco bars
+		-- Position of choco bars
 		-------------------------------------------
 		ChocolateBar1:ClearAllPoints()
 		ChocolateBar1:SetPoint("LEFT", CustomContainer_1, "LEFT", 5, 0)
@@ -193,6 +193,30 @@ f:SetScript(
 		end
 
 		MainMenuBarExpText:SetPoint("RIGHT", MainMenuExpBar, "RIGHT", -10, 2)
+
+		-------------------------------------------
+		-- nova world buffs layer minimap frame positioning
+		-------------------------------------------
+		if (IsAddOnLoaded("NovaWorldBuffs")) then
+			-- local OriginalSetPointNWB = getmetatable(NWBAnchor).__index.SetPoint
+			-- local function MoveNWB(self)
+			-- 	self:ClearAllPoints()
+			-- 	OriginalSetPointNWB(self, "CENTER", 0, -237)
+			-- end
+			-- hooksecurefunc(NWBAnchor, "SetPoint", MoveNWB)
+			-- MoveOmen(NWBAnchor)
+			MinimapLayerFrame:ClearAllPoints()
+			MinimapLayerFrame:SetPoint("LEFT", CustomContainer_2, "LEFT", 5, 0)
+			MinimapLayerFrame.ClearAllPoints = function()
+			end
+			MinimapLayerFrame.SetPoint = function()
+			end
+			MinimapLayerFrame.tooltip:Hide()
+		end
+
+		-------------------------------------------
+		--- pet, player and target frame positioning
+		-------------------------------------------
 
 		PetFrame:HookScript(
 			"OnUpdate",
