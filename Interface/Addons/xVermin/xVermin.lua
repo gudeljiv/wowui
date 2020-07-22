@@ -195,18 +195,6 @@ f:SetScript(
 		MainMenuBarExpText:SetPoint("RIGHT", MainMenuExpBar, "RIGHT", -10, 2)
 
 		-------------------------------------------
-		-- nova world buffs layer minimap frame positioning
-		-------------------------------------------
-		if (IsAddOnLoaded("NovaWorldBuffs")) then
-			MinimapLayerFrame:ClearAllPoints()
-			MinimapLayerFrame:SetPoint("LEFT", CustomContainer_2, "LEFT", 5, 0)
-			MinimapLayerFrame.ClearAllPoints = function()
-			end
-			MinimapLayerFrame.SetPoint = function()
-			end
-		end
-
-		-------------------------------------------
 		--- pet, player and target frame positioning
 		-------------------------------------------
 

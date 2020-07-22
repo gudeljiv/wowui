@@ -2,6 +2,13 @@
 AdiBagsDB = {
 	["namespaces"] = {
 		["ItemLevel"] = {
+			["profiles"] = {
+				["Default"] = {
+					["colorScheme"] = "none",
+					["ignoreJunk"] = false,
+					["equippableOnly"] = false,
+				},
+			},
 		},
 		["FilterOverride"] = {
 			["profiles"] = {
@@ -37,17 +44,28 @@ AdiBagsDB = {
 		},
 		["Equipment"] = {
 		},
-		["AdiBags_TooltipInfo"] = {
+		["MoneyFrame"] = {
 		},
 		["DataSource"] = {
 		},
 		["Junk"] = {
 		},
-		["MoneyFrame"] = {
+		["AdiBags_TooltipInfo"] = {
+		},
+	},
+	["char"] = {
+		["Vermin - Golemagg"] = {
+			["collapsedSections"] = {
+				["Bag #1#Bag #1"] = true,
+				["Bag #2#Bag #2"] = true,
+				["Bag #4#Bag #4"] = true,
+				["Bag #3#Bag #3"] = true,
+			},
 		},
 	},
 	["profileKeys"] = {
 		["Vermin - Golemagg"] = "Default",
+		["Mxzq - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -55,7 +73,9 @@ AdiBagsDB = {
 				["stackable"] = true,
 				["incomplete"] = true,
 			},
-			["scale"] = 0.9,
+			["columnWidth"] = {
+				["Backpack"] = 12,
+			},
 			["maxHeight"] = 0.7,
 			["skin"] = {
 				["BackpackColor"] = {
@@ -78,23 +98,21 @@ AdiBagsDB = {
 					["xOffset"] = -177.833374023438,
 					["yOffset"] = 386.666717529297,
 				},
-				["Backpack"] = {
-					["xOffset"] = -219.500465738325,
-					["yOffset"] = 356.33341341195,
-				},
 				["Bank"] = {
-					["xOffset"] = 697.833032050847,
-					["yOffset"] = -410.66689713089,
+					["xOffset"] = 820.527901847418,
+					["yOffset"] = -458.539436145904,
+				},
+				["Backpack"] = {
+					["xOffset"] = -225.883741936414,
+					["yOffset"] = 376.900752954993,
 				},
 			},
+			["sortingOrder"] = "byQualityAndLevel",
 			["sectionFont"] = {
 				["name"] = "Arial Narrow",
 			},
 			["positionMode"] = "manual",
-			["columnWidth"] = {
-				["Backpack"] = 12,
-			},
-			["sortingOrder"] = "byQualityAndLevel",
+			["scale"] = 0.9,
 		},
 	},
 }

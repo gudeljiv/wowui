@@ -18,7 +18,6 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 --]]
-
 local addonName, addon = ...
 local L = addon.L
 
@@ -39,9 +38,13 @@ local hookedBags = addon.hookedBags
 -- Bag prototype
 --------------------------------------------------------------------------------
 
-local bagProto = setmetatable({
-	isBag = true,
-}, { __index = addon.moduleProto })
+local bagProto =
+	setmetatable(
+	{
+		isBag = true
+	},
+	{__index = addon.moduleProto}
+)
 addon.bagProto = bagProto
 
 function bagProto:OnEnable()
@@ -57,7 +60,7 @@ function bagProto:OnEnable()
 	if self.PostEnable then
 		self:PostEnable()
 	end
-	self:Debug('Enabled')
+	self:Debug("Enabled")
 	if open then
 		self:Open()
 	end
@@ -75,28 +78,30 @@ function bagProto:OnDisable()
 	if self.PostDisable then
 		self:PostDisable()
 	end
-	self:Debug('Disabled')
+	self:Debug("Disabled")
 end
 
 function bagProto:Open()
-	if not self:CanOpen() then return end
+	if not self:CanOpen() then
+		return
+	end
 	local frame = self:GetFrame()
 	if not frame:IsShown() then
-		self:Debug('Open')
+		self:Debug("Open")
 		if self.PreOpen then
 			self:PreOpen()
 		end
 		frame:Show()
-		addon:SendMessage('AdiBags_BagOpened', self.bagName, self)
+		addon:SendMessage("AdiBags_BagOpened", self.bagName, self)
 		return true
 	end
 end
 
 function bagProto:Close()
 	if self.frame and self.frame:IsShown() then
-		self:Debug('Close')
+		self:Debug("Close")
 		self.frame:Hide()
-		addon:SendMessage('AdiBags_BagClosed', self.bagName, self)
+		addon:SendMessage("AdiBags_BagClosed", self.bagName, self)
 		if self.PostClose then
 			self:PostClose()
 		end
@@ -121,14 +126,19 @@ function bagProto:Toggle()
 end
 
 function bagProto:HasFrame()
-	return not not self.frame
+	return not (not self.frame)
 end
 
 function bagProto:GetFrame()
 	if not self.frame then
 		self.frame = self:CreateFrame()
-		self.frame.CloseButton:SetScript('OnClick', function() self:Close() end)
-		addon:SendMessage('AdiBags_BagFrameCreated', self)
+		self.frame.CloseButton:SetScript(
+			"OnClick",
+			function()
+				self:Close()
+			end
+		)
+		addon:SendMessage("AdiBags_BagFrameCreated", self)
 	end
 	return self.frame
 end
@@ -148,8 +158,8 @@ local function CompareBags(a, b)
 end
 
 function addon:NewBag(name, order, isBank, ...)
-	self:Debug('NewBag', name, order, isBank, ...)
-	local bag = addon:NewModule(name, bagProto, 'ABEvent-1.0', ...)
+	self:Debug("NewBag", name, order, isBank, ...)
+	local bag = addon:NewModule(name, bagProto, "ABEvent-1.0", ...)
 	bag.bagName = name
 	bag.bagIds = addon.BAG_IDS[isBank and "BANK" or "BAGS"]
 	bag.isBank = isBank
@@ -195,10 +205,10 @@ end
 
 do
 	-- L["Backpack"]
-	local backpack = addon:NewBag("Backpack", 10, false, 'AceHook-3.0')
+	local backpack = addon:NewBag("Backpack", 10, false, "AceHook-3.0")
 
 	function backpack:PostEnable()
-		self:RegisterMessage('AdiBags_InteractingWindowChanged')
+		self:RegisterMessage("AdiBags_InteractingWindowChanged")
 	end
 
 	function backpack:AdiBags_InteractingWindowChanged(event, window)
@@ -220,15 +230,16 @@ end
 --------------------------------------------------------------------------------
 
 do
-	local bank = addon:NewBag("Bank", 20, true, 'AceHook-3.0')
+	local bank = addon:NewBag("Bank", 20, true, "AceHook-3.0")
 
 	local UIHider = CreateFrame("Frame")
 	UIHider:Hide()
 
-	local function NOOP() end
+	local function NOOP()
+	end
 
 	function bank:PostEnable()
-		self:RegisterMessage('AdiBags_InteractingWindowChanged')
+		self:RegisterMessage("AdiBags_InteractingWindowChanged")
 
 		self:RawHookScript(BankFrame, "OnEvent", NOOP, true)
 		self:RawHookScript(BankFrame, "OnShow", NOOP, true)
@@ -252,9 +263,9 @@ do
 	end
 
 	function bank:AdiBags_InteractingWindowChanged(event, new, old)
-		if new == 'BANKFRAME' and not self:IsOpen() then
+		if new == "BANKFRAME" and not self:IsOpen() then
 			self:Open()
-		elseif old == 'BANKFRAME' and self:IsOpen() then
+		elseif old == "BANKFRAME" and self:IsOpen() then
 			self:Close()
 		end
 	end
@@ -275,7 +286,6 @@ do
 	function bank:BankFrameGetRight()
 		return 0
 	end
-
 end
 
 --------------------------------------------------------------------------------
@@ -289,7 +299,9 @@ function addon:HookBagFrameCreation(target, callback)
 	if not hook then
 		local target, callback, seen = target, callback, {}
 		hook = function(event, bag)
-			if seen[bag] then return end
+			if seen[bag] then
+				return
+			end
 			seen[bag] = true
 			local res, msg
 			if type(callback) == "string" then

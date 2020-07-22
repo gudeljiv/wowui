@@ -18,7 +18,6 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 --]]
-
 -- Various utility functions
 
 local addonName, addon = ...
@@ -132,15 +131,15 @@ function addon.SetupTooltip(widget, content, anchor, xOffset, yOffset)
 	widget.tootlipAnchorXOffset = xOffset or 0
 	widget.tootlipAnchorYOffset = yOffset or 0
 	widget.UpdateTooltip = WidgetTooltip_Update
-	if widget:GetScript('OnEnter') then
-		widget:HookScript('OnEnter', WidgetTooltip_OnEnter)
+	if widget:GetScript("OnEnter") then
+		widget:HookScript("OnEnter", WidgetTooltip_OnEnter)
 	else
-		widget:SetScript('OnEnter', WidgetTooltip_OnEnter)
+		widget:SetScript("OnEnter", WidgetTooltip_OnEnter)
 	end
-	if widget:GetScript('OnLeave') then
-		widget:HookScript('OnLeave', WidgetTooltip_OnLeave)
+	if widget:GetScript("OnLeave") then
+		widget:HookScript("OnLeave", WidgetTooltip_OnLeave)
 	else
-		widget:SetScript('OnLeave', WidgetTooltip_OnLeave)
+		widget:SetScript("OnLeave", WidgetTooltip_OnLeave)
 	end
 end
 
@@ -149,7 +148,11 @@ end
 --------------------------------------------------------------------------------
 
 function addon.IsValidItemLink(link)
-	if type(link) == "string" and (strmatch(link, "battlepet:") or strmatch(link, "keystone:") or (strmatch(link, 'item:[-:%d]+') and not strmatch(link, 'item:%d+:0:0:0:0:0:0:0:0:0'))) then
+	if
+		type(link) == "string" and
+			(strmatch(link, "battlepet:") or strmatch(link, "keystone:") or
+				(strmatch(link, "item:[-:%d]+") and not strmatch(link, "item:%d+:0:0:0:0:0:0:0:0:0")))
+	 then
 		return true
 	end
 end
@@ -159,31 +162,42 @@ end
 --------------------------------------------------------------------------------
 
 local function __GetDistinctItemID(link)
-	if not link or not addon.IsValidItemLink(link) then return end
+	if not link or not addon.IsValidItemLink(link) then
+		return
+	end
 	if strmatch(link, "battlepet:") or strmatch(link, "keystone:") then
 		return link
 	else
-		local itemString, id, enchant, gem1, gem2, gem3, gem4, suffix, reforge = strmatch(link, '(item:(%-?%d+):(%-?%d+):(%-?%d+):(%-?%d+):(%-?%d+):(%-?%d+):(%-?%d+):%-?%d+:%-?%d+:(%-?%d+))')
-		if not id then return end
+		local itemString, id, enchant, gem1, gem2, gem3, gem4, suffix, reforge =
+			strmatch(link, "(item:(%-?%d+):(%-?%d+):(%-?%d+):(%-?%d+):(%-?%d+):(%-?%d+):(%-?%d+):%-?%d+:%-?%d+:(%-?%d+))")
+		if not id then
+			return
+		end
 		id = tonumber(id)
 		local equipSlot = select(9, GetItemInfo(id))
 		if equipSlot and equipSlot ~= "" and equipSlot ~= "INVTYPE_BAG" then
 			-- Rebuild an item link without noise
-			id = strjoin(':', 'item', id, enchant, gem1, gem2, gem3, gem4, suffix, "0", "0", reforge)
+			id = strjoin(":", "item", id, enchant, gem1, gem2, gem3, gem4, suffix, "0", "0", reforge)
 		end
 		return id
 	end
 end
 
-local distinctIDs = setmetatable({}, {__index = function(t, link)
-	local result = __GetDistinctItemID(link)
-	if result then
-		t[link] = result
-		return result
-	else
-		return link
-	end
-end})
+local distinctIDs =
+	setmetatable(
+	{},
+	{
+		__index = function(t, link)
+			local result = __GetDistinctItemID(link)
+			if result then
+				t[link] = result
+				return result
+			else
+				return link
+			end
+		end
+	}
+)
 
 function addon.GetDistinctItemID(link)
 	return link and distinctIDs[link]
@@ -194,13 +208,15 @@ end
 --------------------------------------------------------------------------------
 
 function addon.IsSameLinkButLevel(a, b)
-	if not a or not b then return false end
+	if not a or not b then
+		return false
+	end
 
 	-- take color coding, etc
 	-- take itemID, enchantID, 4 gem IDs, suffixID, uniqueID (8 parts)
 	-- skip linkLevel part
 	-- take the rest of the link
-	local linkRegExp = '(.*)(item:%-?%d+:%-?%d+:%-?%d+:%-?%d+:%-?%d+:%-?%d+:%-?%d+:%-?%d+):%-?%d+:(.*)'
+	local linkRegExp = "(.*)(item:%-?%d+:%-?%d+:%-?%d+:%-?%d+:%-?%d+:%-?%d+:%-?%d+:%-?%d+):%-?%d+:(.*)"
 
 	local partsA = {strmatch(a, linkRegExp)}
 	local partsB = {strmatch(b, linkRegExp)}
@@ -221,7 +237,8 @@ end
 local JUNK = GetItemSubClassInfo(LE_ITEM_CLASS_MISCELLANEOUS, 0)
 function addon:IsJunk(itemId)
 	local _, _, quality, _, _, class, subclass = GetItemInfo(itemId)
-	return quality == ITEM_QUALITY_POOR or (quality and quality < ITEM_QUALITY_UNCOMMON and (class == JUNK or subclass == JUNK))
+	return quality == ITEM_QUALITY_POOR or
+		(quality and quality < ITEM_QUALITY_UNCOMMON and (class == JUNK or subclass == JUNK))
 end
 
 --------------------------------------------------------------------------------
@@ -230,14 +247,14 @@ end
 
 local function BuildSectionKey(name, category)
 	if name ~= nil then
-		return strjoin('#', tostring(category or name), tostring(name))
+		return strjoin("#", tostring(category or name), tostring(name))
 	end
 end
 addon.BuildSectionKey = BuildSectionKey
 
 local function SplitSectionKey(key)
 	if key ~= nil then
-		local category, name = strsplit('#', tostring(key))
+		local category, name = strsplit("#", tostring(key))
 		return name or category, category
 	end
 end
@@ -266,7 +283,10 @@ end
 --------------------------------------------------------------------------------
 
 function addon.GetItemFamily(item)
-	if (type(item) == "string" and (strmatch(item, "battlepet:") or strmatch(item, "keystone:"))) or select(9, GetItemInfo(item)) == "INVTYPE_BAG" then
+	if
+		(type(item) == "string" and (strmatch(item, "battlepet:") or strmatch(item, "keystone:"))) or
+			select(9, GetItemInfo(item)) == "INVTYPE_BAG"
+	 then
 		return 0
 	else
 		return GetItemFamily(item)

@@ -1,6 +1,6 @@
 # xVerminz World of Warcraft UI
 
-## Addons included
+<!-- ## Addons included
 
 -   [!Beautycase](https://www.wowinterface.com/downloads/info19675-Beautycase.html)
 -   [!BugGrabber](https://www.wowinterface.com/downloads/info23141-BugGrabber.html)
@@ -51,4 +51,4 @@
 -   [WeaponSwingTimer](https://www.wowinterface.com/downloads/info25004-WeaponSwingTimer.html)
 -   xVermin (my set of scripts)
 
-## Known issues
+## Known issues -->

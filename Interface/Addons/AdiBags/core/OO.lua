@@ -18,7 +18,6 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 --]]
-
 local addonName, addon = ...
 local safecall = addon.safecall
 
@@ -51,7 +50,7 @@ end
 
 local function Class_Create(class, ...)
 	class.serial = class.serial + 1
-	local self = CreateFrame(class.frameType, addonName..class.name..class.serial, defaultParent, class.frameTemplate)
+	local self = CreateFrame(class.frameType, addonName .. class.name .. class.serial, defaultParent, class.frameTemplate)
 	self.GetItemContextMatchResult = nil -- We're not using the ContainerFrameItemButtonMixin
 	self:SetParent(nil) -- Get rid of the parent once the OnLoad handler has been called
 	setmetatable(self, class.metatable)
@@ -74,13 +73,13 @@ local function NewClass(name, parent, ...)
 			__index = prototype,
 			__tostring = Meta_ToString
 		},
-		Create = Class_Create,
+		Create = Class_Create
 	}
 
 	if parent.mixins then
-		setmetatable(mixins, { __index = parent.mixins })
+		setmetatable(mixins, {__index = parent.mixins})
 	end
-	for i = 1, select('#', ...) do
+	for i = 1, select("#", ...) do
 		local name = select(i, ...)
 		if not mixins[name] then
 			local mixin = LibStub(name)
@@ -92,11 +91,11 @@ local function NewClass(name, parent, ...)
 	prototype.class = class
 	prototype.Debug = addon.Debug
 	if parent.prototype then
-		setmetatable(class, { __index = parent })
-		setmetatable(prototype, { __index = parent.prototype })
+		setmetatable(class, {__index = parent})
+		setmetatable(prototype, {__index = parent.prototype})
 		return class, prototype, parent.prototype
 	else
-		setmetatable(prototype, { __index = parent })
+		setmetatable(prototype, {__index = parent})
 		return class, prototype, parent
 	end
 end
@@ -137,7 +136,7 @@ end
 local pools = {}
 
 local poolProto = {}
-local poolMeta = { __index = poolProto }
+local poolMeta = {__index = poolProto}
 
 function poolProto:Acquire(...)
 	local object = next(self.heap)
@@ -187,7 +186,7 @@ local function PoolIterator(data, current)
 end
 
 function poolProto:IterateAllObjects()
-	return PoolIterator, { pool = self, attribute = "heap" }
+	return PoolIterator, {pool = self, attribute = "heap"}
 end
 
 function poolProto:IterateHeap()
@@ -203,16 +202,22 @@ local function Instance_Release(self)
 end
 
 function addon:CreatePool(class, acquireMethod)
-	local pool = setmetatable({
-		heap = {},
-		actives = {},
-		class = class,
-	}, poolMeta)
+	local pool =
+		setmetatable(
+		{
+			heap = {},
+			actives = {},
+			class = class
+		},
+		poolMeta
+	)
 	class.pool = pool
 	class.prototype.Release = Instance_Release
 	pools[class.name] = pool
 	if acquireMethod then
-		self[acquireMethod] = function(self, ...) return pool:Acquire(...) end
+		self[acquireMethod] = function(self, ...)
+			return pool:Acquire(...)
+		end
 	end
 	return pool
 end

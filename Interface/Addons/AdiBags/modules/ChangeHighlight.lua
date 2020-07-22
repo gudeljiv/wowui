@@ -18,7 +18,6 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 --]]
-
 local addonName, addon = ...
 local L = addon.L
 
@@ -31,9 +30,9 @@ local tostring = _G.tostring
 local wipe = _G.wipe
 --GLOBALS>
 
-local mod = addon:NewModule('ChangeHighlight', 'ABEvent-1.0')
-mod.uiName = L['Highlight changes']
-mod.uiDesc = L['Highlight what changes in bags with a little sparkle.']
+local mod = addon:NewModule("ChangeHighlight", "ABEvent-1.0")
+mod.uiName = L["Highlight changes"]
+mod.uiDesc = L["Highlight what changes in bags with a little sparkle."]
 
 local states = {}
 local glows = {}
@@ -44,8 +43,8 @@ local glowClass, glowProto = addon:NewClass("ChangeHighlightGlow", "Frame")
 local glowPool = addon:CreatePool(glowClass)
 
 function mod:OnEnable()
-	self:RegisterMessage('AdiBags_UpdateButton', 'UpdateButton')
-	self:RegisterMessage('AdiBags_PreContentUpdate', 'PreContentUpdate')
+	self:RegisterMessage("AdiBags_UpdateButton", "UpdateButton")
+	self:RegisterMessage("AdiBags_PreContentUpdate", "PreContentUpdate")
 end
 
 function mod:OnDisable()
@@ -75,10 +74,12 @@ end
 
 function mod:UpdateButton(event, button)
 	if not knownButtons[button] then
-		button:HookScript('OnHide', Button_OnHide)
+		button:HookScript("OnHide", Button_OnHide)
 		knownButtons[button] = true
 	end
-	local state = format('%s:%d:%s',
+	local state =
+		format(
+		"%s:%d:%s",
 		tostring(button.IconTexture:GetTexture() or "nil"),
 		tonumber(button.Count:GetText()) or 1,
 		tostring(button.Stock:GetText() or "-")
@@ -108,8 +109,8 @@ end
 function glowProto:OnCreate()
 	self:Hide()
 
-	self:SetScript('OnShow', self.OnShow)
-	self:SetScript('OnHide', self.OnHide)
+	self:SetScript("OnShow", self.OnShow)
+	self:SetScript("OnHide", self.OnHide)
 	self:SetSize(addon.ITEM_SIZE, addon.ITEM_SIZE)
 
 	local tex = self:CreateTexture("OVERLAY")
@@ -119,9 +120,12 @@ function glowProto:OnCreate()
 	self.Texture = tex
 
 	local group = self:CreateAnimationGroup()
-	group:SetScript('OnFinished', function()
-		mod:HideGlow(self.button)
-	end)
+	group:SetScript(
+		"OnFinished",
+		function()
+			mod:HideGlow(self.button)
+		end
+	)
 	self.Group = group
 
 	local rotation = group:CreateAnimation("Rotation")
@@ -148,7 +152,7 @@ function glowProto:OnAcquire(button)
 	glows[button] = self
 	self:SetParent(button)
 	self:SetPoint("CENTER")
-	self:SetFrameLevel(button:GetFrameLevel()+15)
+	self:SetFrameLevel(button:GetFrameLevel() + 15)
 	self:Show()
 end
 

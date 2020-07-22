@@ -18,7 +18,6 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 --]]
-
 local addonName, addon = ...
 local L = addon.L
 
@@ -31,7 +30,7 @@ local setmetatable = _G.setmetatable
 local type = _G.type
 --GLOBALS>
 
-local LSM = LibStub('LibSharedMedia-3.0')
+local LSM = LibStub("LibSharedMedia-3.0")
 local FONT = LSM.MediaType.FONT
 local ALL_FONTS = LSM:HashTable(FONT)
 
@@ -39,16 +38,20 @@ local ALL_FONTS = LSM:HashTable(FONT)
 -- Helpers
 --------------------------------------------------------------------------------
 
-local ALL_NAMES = setmetatable({}, {
-	__index = function(self, file)
-		for n, f in pairs(ALL_FONTS) do
-			self[f] = n
-			if f == file then
-				return n
+local ALL_NAMES =
+	setmetatable(
+	{},
+	{
+		__index = function(self, file)
+			for n, f in pairs(ALL_FONTS) do
+				self[f] = n
+				if f == file then
+					return n
+				end
 			end
 		end
-	end
-})
+	}
+)
 
 local function GetFontSettings(font)
 	local file, size = font:GetFont()
@@ -59,8 +62,8 @@ end
 -- Font prototype
 --------------------------------------------------------------------------------
 
-local proto = CreateFont(addonName.."BaseFont")
-local meta = { __index = proto }
+local proto = CreateFont(addonName .. "BaseFont")
+local meta = {__index = proto}
 
 function proto:SetSetting(info, value, ...)
 	local name, db = info[#info], self:GetDB()
@@ -124,14 +127,14 @@ function addon:CreateFont(name, template, dbGetter)
 	font:SetFontObject(template)
 	font.template = template
 	font.GetDB = dbGetter
-	LSM.RegisterCallback(font, 'LibSharedMedia_Registered', 'ApplySettings')
-	LSM.RegisterCallback(font, 'LibSharedMedia_SetGlobal', 'ApplySettings')
+	LSM.RegisterCallback(font, "LibSharedMedia_Registered", "ApplySettings")
+	LSM.RegisterCallback(font, "LibSharedMedia_SetGlobal", "ApplySettings")
 	return font
 end
 
 function addon:GetFontDefaults(font)
 	local name, size, r, g, b = GetFontSettings(font)
-	return { name = name, size = size, r = r, g = g, b = b }
+	return {name = name, size = size, r = r, g = g, b = b}
 end
 
 --------------------------------------------------------------------------------
@@ -142,43 +145,43 @@ function addon:CreateFontOptions(font, title, order)
 	local _, mediumSize = font.template:GetFont()
 	mediumSize = floor(mediumSize)
 	return {
-		name = title or L['Text'],
-		type = 'group',
+		name = title or L["Text"],
+		type = "group",
 		order = order or 0,
 		inline = true,
 		handler = font,
-		set = 'SetSetting',
-		get = 'GetSetting',
+		set = "SetSetting",
+		get = "GetSetting",
 		disabled = false,
 		args = {
 			name = {
-				name = L['Font'],
-				type = 'select',
+				name = L["Font"],
+				type = "select",
 				order = 10,
-				dialogControl = 'LSM30_Font',
-				values = ALL_FONTS,
+				dialogControl = "LSM30_Font",
+				values = ALL_FONTS
 			},
 			size = {
-				name = L['Size'],
-				type = 'range',
+				name = L["Size"],
+				type = "range",
 				order = 20,
 				min = mediumSize - 8,
 				max = mediumSize + 8,
-				step = 4,
+				step = 4
 			},
 			color = {
-				name = L['Color'],
-				type = 'color',
+				name = L["Color"],
+				type = "color",
 				order = 30,
-				hasAlpha = false,
+				hasAlpha = false
 			},
 			reset = {
-				name = L['Reset'],
-				type = 'execute',
+				name = L["Reset"],
+				type = "execute",
 				order = 40,
-				disabled  = 'IsDefault',
-				func = 'ResetSettings',
-			},
-		},
+				disabled = "IsDefault",
+				func = "ResetSettings"
+			}
+		}
 	}
 end

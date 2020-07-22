@@ -1,6 +1,14 @@
-MinimapLayerFrame:HookScript(
-	"OnUpdate",
-	function(self)
-		self:CreateBeautyBorder(8)
-	end
-)
+-- MinimapLayerFrame:HookScript(
+-- 	"OnUpdate",
+-- 	function(self)
+-- 		-- self:CreateBeautyBorder(8)
+-- 	end
+-- )
+-- if (IsAddOnLoaded("NovaWorldBuffs")) then
+-- 	MinimapLayerFrame:ClearAllPoints()
+-- 	MinimapLayerFrame:SetPoint("LEFT", CustomContainer_2, "LEFT", 5, 0)
+-- 	MinimapLayerFrame.ClearAllPoints = function()
+-- 	end
+-- 	MinimapLayerFrame.SetPoint = function()
+-- 	end
+-- end

@@ -18,7 +18,6 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 --]]
-
 local addonName, addon = ...
 local L = addon.L
 
@@ -99,12 +98,18 @@ function sectionProto:OnCreate()
 	header:EnableMouse(true)
 	header:SetText("DUMMY")
 	header:GetFontString():SetAllPoints()
-	addon.SetupTooltip(header, function(header, tooltip) return self:ShowHeaderTooltip(header, tooltip) end, "ANCHOR_NONE")
+	addon.SetupTooltip(
+		header,
+		function(header, tooltip)
+			return self:ShowHeaderTooltip(header, tooltip)
+		end,
+		"ANCHOR_NONE"
+	)
 	self.Header = header
-	self:SendMessage('AdiBags_SectionCreated', self)
+	self:SendMessage("AdiBags_SectionCreated", self)
 
-	self:SetScript('OnShow', self.OnShow)
-	self:SetScript('OnHide', self.OnHide)
+	self:SetScript("OnShow", self.OnShow)
+	self:SetScript("OnHide", self.OnHide)
 end
 
 function sectionProto:OnShow()
@@ -131,8 +136,9 @@ function sectionProto:OnAcquire(container, name, category)
 	self:SetSizeInSlots(0, 0)
 	self.count = 0
 	self.container = container
-	self:RegisterMessage('AdiBags_OrderChanged', 'FullLayout')
-	self.Header:SetText(self.name)
+	self:RegisterMessage("AdiBags_OrderChanged", "FullLayout")
+	-- self.Header:SetText(self.name)
+	self.Header:SetText("")
 	self:UpdateHeaderScripts()
 end
 
@@ -158,7 +164,7 @@ function sectionProto:IsCollapsed()
 end
 
 function sectionProto:SetCollapsed(collapsed)
-	collapsed = not not collapsed
+	collapsed = not (not collapsed)
 	if addon.db.char.collapsedSections[self.key] ~= collapsed then
 		addon.db.char.collapsedSections[self.key] = collapsed
 		if collapsed then
@@ -166,7 +172,7 @@ function sectionProto:SetCollapsed(collapsed)
 		else
 			self:Show()
 		end
-		self:SendMessage('AdiBags_LayoutChanged')
+		self:SendMessage("AdiBags_LayoutChanged")
 	end
 end
 
@@ -174,43 +180,53 @@ end
 -- Section hooks
 --------------------------------------------------------------------------------
 
-local scriptDispatcher = LibStub('CallbackHandler-1.0'):New(addon, 'RegisterSectionHeaderScript', 'UnregisterSectionHeaderScript', 'UnregisterAllSectionHeaderScripts')
+local scriptDispatcher =
+	LibStub("CallbackHandler-1.0"):New(
+	addon,
+	"RegisterSectionHeaderScript",
+	"UnregisterSectionHeaderScript",
+	"UnregisterAllSectionHeaderScripts"
+)
 
-local DispatchOnClick = function(...) return scriptDispatcher:Fire('OnClick', ...) end
-local DispatchOnReceiveDrag = function(...) return scriptDispatcher:Fire('DispatchOnReceiveDrag', ...) end
+local DispatchOnClick = function(...)
+	return scriptDispatcher:Fire("OnClick", ...)
+end
+local DispatchOnReceiveDrag = function(...)
+	return scriptDispatcher:Fire("DispatchOnReceiveDrag", ...)
+end
 
 function sectionProto:ShowHeaderTooltip(header, tooltip)
 	local self = header.section
 	tooltip:SetPoint("BOTTOMRIGHT", self.container, "TOPRIGHT", 0, 4)
 	if self.category ~= self.name then
-		tooltip:AddDoubleLine(self.name, "("..self.category..")", 1, 1, 1)
+		tooltip:AddDoubleLine(self.name, "(" .. self.category .. ")", 1, 1, 1)
 	else
 		tooltip:AddLine(self.name, 1, 1, 1)
 	end
-	scriptDispatcher:Fire('OnTooltipUpdate', header, tooltip)
+	scriptDispatcher:Fire("OnTooltipUpdate", header, tooltip)
 end
 
 local usedScripts = {}
 
 function sectionProto:UpdateHeaderScripts()
 	local header = self.Header
-	if usedScripts.OnClick and not header:GetScript('OnClick') then
-		header:SetScript('OnClick', DispatchOnClick)
+	if usedScripts.OnClick and not header:GetScript("OnClick") then
+		header:SetScript("OnClick", DispatchOnClick)
 		header:RegisterForClicks("AnyUp")
-	elseif not usedScripts.OnClick and header:GetScript('OnClick') then
-		header:SetScript('OnClick', nil)
+	elseif not usedScripts.OnClick and header:GetScript("OnClick") then
+		header:SetScript("OnClick", nil)
 		header:RegisterForClicks()
 	end
-	if usedScripts.OnReceiveDrag and not header:GetScript('OnReceiveDrag') then
-		header:SetScript('OnReceiveDrag', DispatchOnReceiveDrag)
-	elseif not usedScripts.OnReceiveDrag and header:GetScript('OnReceiveDrag') then
-		header:SetScript('OnReceiveDrag', nil)
+	if usedScripts.OnReceiveDrag and not header:GetScript("OnReceiveDrag") then
+		header:SetScript("OnReceiveDrag", DispatchOnReceiveDrag)
+	elseif not usedScripts.OnReceiveDrag and header:GetScript("OnReceiveDrag") then
+		header:SetScript("OnReceiveDrag", nil)
 	end
 end
 
 function scriptDispatcher:OnUsed(_, name)
 	if name == "OnClick" or name == "OnReceiveDrag" or name == "OnTooltipUpdate" then
-		addon:Debug('Used SectionHeaderScript', name)
+		addon:Debug("Used SectionHeaderScript", name)
 		usedScripts[name] = true
 		for section in sectionPool:IterateActiveObjects() do
 			section:UpdateHeaderScripts()
@@ -220,7 +236,7 @@ end
 
 function scriptDispatcher:OnUnused(_, name)
 	if name == "OnClick" or name == "OnReceiveDrag" or name == "OnTooltipUpdate" then
-		addon:Debug('Used SectionHeaderScript', name)
+		addon:Debug("Used SectionHeaderScript", name)
 		usedScripts[name] = nil
 		for section in sectionPool:IterateActiveObjects() do
 			section:UpdateHeaderScripts()
@@ -313,24 +329,25 @@ function sectionProto:PutButtonAt(button, index)
 		self.slots[button] = index
 		self.freeSlots[index] = nil
 	end
-	if self.width == 0 then return end
-	local row, col = floor((index-1) / self.width), (index-1) % self.width
-	button:SetPoint("TOPLEFT", self, "TOPLEFT", col * SLOT_OFFSET, - HEADER_SIZE - row * SLOT_OFFSET)
+	if self.width == 0 then
+		return
+	end
+	local row, col = floor((index - 1) / self.width), (index - 1) % self.width
+	button:SetPoint("TOPLEFT", self, "TOPLEFT", col * SLOT_OFFSET, -HEADER_SIZE - row * SLOT_OFFSET)
 end
 
 function sectionProto:SetSizeInSlots(width, height)
-	if self.width == width and self.height == height then return end
+	if self.width == width and self.height == height then
+		return
+	end
 	self.width, self.height, self.total = width, height, width * height
 
 	if width == 0 or height == 0 then
 		self:SetSize(0.5, 0.5)
 	else
-		self:SetSize(
-			SLOT_OFFSET * width - ITEM_SPACING,
-			HEADER_SIZE + SLOT_OFFSET * height - ITEM_SPACING
-		)
+		self:SetSize(SLOT_OFFSET * width - ITEM_SPACING, HEADER_SIZE + SLOT_OFFSET * height - ITEM_SPACING)
 	end
-	self:Debug('SetSizeInSlots', width, height, '=>', self:GetSize())
+	self:Debug("SetSizeInSlots", width, height, "=>", self:GetSize())
 	return true
 end
 
@@ -364,7 +381,7 @@ function sectionProto:FullLayout()
 	end
 	tsort(buttonOrder, CompareButtons)
 
-	self:Debug('FullLayout', #buttonOrder, 'buttons')
+	self:Debug("FullLayout", #buttonOrder, "buttons")
 
 	local slots, freeSlots = self.slots, self.freeSlots
 	wipe(freeSlots)
@@ -410,11 +427,10 @@ local EQUIP_LOCS = {
 	INVTYPE_RANGEDRIGHT = 18,
 	INVTYPE_RELIC = 18,
 	INVTYPE_TABARD = 19,
-	INVTYPE_BAG = 20,
+	INVTYPE_BAG = 20
 }
 
 local sortingFuncs = {
-
 	default = function(linkA, linkB, nameA, nameB)
 		local _, _, qualityA, levelA, _, classA, subclassA, _, equipSlotA = GetItemInfo(linkA)
 		local _, _, qualityB, levelB, _, classB, subclassB, _, equipSlotB = GetItemInfo(linkB)
@@ -434,11 +450,9 @@ local sortingFuncs = {
 			return nameA < nameB
 		end
 	end,
-
 	byName = function(linkA, linkB, nameA, nameB)
 		return nameA < nameB
 	end,
-
 	byQualityAndLevel = function(linkA, linkB, nameA, nameB)
 		local _, _, qualityA, levelA = GetItemInfo(linkA)
 		local _, _, qualityB, levelB = GetItemInfo(linkB)
@@ -449,33 +463,36 @@ local sortingFuncs = {
 		else
 			return nameA < nameB
 		end
-	end,
-
+	end
 }
 
 local currentSortingFunc = sortingFuncs.default
 
-local itemCompareCache = setmetatable({}, {
-	__index = function(t, key)
-		local linkA, linkB = strsplit(';', key, 2)
-		local nameA, nameB = GetItemInfo(linkA), GetItemInfo(linkB)
-		if nameA and nameB then
-			local result = currentSortingFunc(linkA, linkB, nameA, nameB)
-			t[key] = result
-			return result
-		else
-			return linkA < linkB
+local itemCompareCache =
+	setmetatable(
+	{},
+	{
+		__index = function(t, key)
+			local linkA, linkB = strsplit(";", key, 2)
+			local nameA, nameB = GetItemInfo(linkA), GetItemInfo(linkB)
+			if nameA and nameB then
+				local result = currentSortingFunc(linkA, linkB, nameA, nameB)
+				t[key] = result
+				return result
+			else
+				return linkA < linkB
+			end
 		end
-	end
-})
+	}
+)
 
 function addon:SetSortingOrder(order)
 	local func = sortingFuncs[order]
 	if func and func ~= currentSortingFunc then
-		self:Debug('SetSortingOrder', order, func)
+		self:Debug("SetSortingOrder", order, func)
 		currentSortingFunc = func
 		wipe(itemCompareCache)
-		self:SendMessage('AdiBags_OrderChanged')
+		self:SendMessage("AdiBags_OrderChanged")
 	end
 end
 

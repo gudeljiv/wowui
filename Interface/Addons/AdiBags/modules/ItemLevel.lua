@@ -18,7 +18,6 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 --]]
-
 local addonName, addon = ...
 local L = addon.L
 
@@ -36,12 +35,14 @@ local select = _G.select
 local unpack = _G.unpack
 --GLOBALS>
 
-local mod = addon:NewModule('ItemLevel', 'ABEvent-1.0')
-mod.uiName = L['Item level']
-mod.uiDesc = L['Display the level of equippable item in the top left corner of the button.']
+local mod = addon:NewModule("ItemLevel", "ABEvent-1.0")
+mod.uiName = L["Item level"]
+mod.uiDesc = L["Display the level of equippable item in the top left corner of the button."]
 
 local colorSchemes = {
-	none = function() return 1, 1 ,1 end
+	none = function()
+		return 1, 1, 1
+	end
 }
 
 local texts = {}
@@ -49,47 +50,61 @@ local texts = {}
 local SyLevel = _G.SyLevel
 local SyLevelBypass
 if SyLevel then
-	function SyLevelBypass() return mod:IsEnabled() and mod.db.profile.useSyLevel end
+	function SyLevelBypass()
+		return mod:IsEnabled() and mod.db.profile.useSyLevel
+	end
 else
-	function SyLevelBypass() return false end
+	function SyLevelBypass()
+		return false
+	end
 end
 
 function mod:OnInitialize()
-	self.db = addon.db:RegisterNamespace(self.moduleName, {
-		profile = {
-			useSyLevel = false,
-			equippableOnly = true,
-			colorScheme = 'level',
-			minLevel = 1,
-			ignoreJunk = true
-		},
-	})
+	self.db =
+		addon.db:RegisterNamespace(
+		self.moduleName,
+		{
+			profile = {
+				useSyLevel = false,
+				equippableOnly = true,
+				colorScheme = "level",
+				minLevel = 1,
+				ignoreJunk = true
+			}
+		}
+	)
 	if self.db.profile.colored == true then
-		self.db.profile.colorScheme = 'original'
+		self.db.profile.colorScheme = "original"
 		self.db.profile.colored = nil
 	elseif self.db.profile.colored == false then
-		self.db.profile.colorScheme = 'none'
+		self.db.profile.colorScheme = "none"
 		self.db.profile.colored = nil
 	end
 	if SyLevel then
 		SyLevel:RegisterPipe(
-			'Adibags',
-			function() self.db.profile.useSyLevel = true end,
-			function() self.db.profile.useSyLevel = false end,
-			function() self:SendMessage('AdiBags_UpdateAllButtons') end,
-			'AdiBags'
+			"Adibags",
+			function()
+				self.db.profile.useSyLevel = true
+			end,
+			function()
+				self.db.profile.useSyLevel = false
+			end,
+			function()
+				self:SendMessage("AdiBags_UpdateAllButtons")
+			end,
+			"AdiBags"
 		)
-		SyLevel:RegisterFilterOnPipe('Adibags', 'Item level text')
-		SyLevelDB.EnabledFilters['Item level text']['Adibags'] = true
+		SyLevel:RegisterFilterOnPipe("Adibags", "Item level text")
+		SyLevelDB.EnabledFilters["Item level text"]["Adibags"] = true
 	end
 end
 
 function mod:OnEnable()
-	self:RegisterMessage('AdiBags_UpdateButton', 'UpdateButton')
-	if SyLevel and self.db.profile.useSyLevel and not SyLevel:IsPipeEnabled('Adibags') then
-		SyLevel:EnablePipe('Adibags')
+	self:RegisterMessage("AdiBags_UpdateButton", "UpdateButton")
+	if SyLevel and self.db.profile.useSyLevel and not SyLevel:IsPipeEnabled("Adibags") then
+		SyLevel:EnablePipe("Adibags")
 	end
-	self:SendMessage('AdiBags_UpdateAllButtons')
+	self:SendMessage("AdiBags_UpdateAllButtons")
 end
 
 function mod:OnDisable()
@@ -115,19 +130,19 @@ function mod:UpdateButton(event, button)
 		local _, _, quality, _, reqLevel, _, _, _, loc = GetItemInfo(link)
 		local item = Item:CreateFromBagAndSlot(button.bag, button.slot)
 		local level = item and item:GetCurrentItemLevel() or 0
-		if level >= settings.minLevel
-			and (quality ~= LE_ITEM_QUALITY_POOR or not settings.ignoreJunk)
-			and (loc ~= "" or not settings.equippableOnly)
-		then
+		if
+			level >= settings.minLevel and (quality ~= LE_ITEM_QUALITY_POOR or not settings.ignoreJunk) and
+				(loc ~= "" or not settings.equippableOnly)
+		 then
 			if SyLevel then
 				if settings.useSyLevel then
 					if text then
 						text:Hide()
 					end
-					SyLevel:CallFilters('Adibags', button, link)
+					SyLevel:CallFilters("Adibags", button, link)
 					return
 				else
-					SyLevel:CallFilters('Adibags', button, nil)
+					SyLevel:CallFilters("Adibags", button, nil)
 				end
 			end
 			if not text then
@@ -135,59 +150,61 @@ function mod:UpdateButton(event, button)
 			end
 			text:SetText(level)
 			text:SetTextColor(colorSchemes[settings.colorScheme](level, quality, reqLevel, (loc ~= "")))
-			return text:Show()
+			-- return text:Show()
+			return text:Hide()
 		end
 	end
 	if SyLevel then
-		SyLevel:CallFilters('Adibags', button, nil)
+		SyLevel:CallFilters("Adibags", button, nil)
 	end
 	if text then
 		text:Hide()
 	end
 end
 
-
 function mod:GetOptions()
 	return {
-		useSyLevel = SyLevel and {
-			name = L['Use SyLevel'],
-			desc = L['Let SyLevel handle the the display.'],
-			type = 'toggle',
-			order = 5,
-		} or nil,
+		useSyLevel = SyLevel and
+			{
+				name = L["Use SyLevel"],
+				desc = L["Let SyLevel handle the the display."],
+				type = "toggle",
+				order = 5
+			} or
+			nil,
 		equippableOnly = {
-			name = L['Only equippable items'],
-			desc = L['Do not show level of items that cannot be equipped.'],
-			type = 'toggle',
-			order = 10,
+			name = L["Only equippable items"],
+			desc = L["Do not show level of items that cannot be equipped."],
+			type = "toggle",
+			order = 10
 		},
 		colorScheme = {
-			name = L['Color scheme'],
-			desc = L['Which color scheme should be used to display the item level ?'],
-			type = 'select',
+			name = L["Color scheme"],
+			desc = L["Which color scheme should be used to display the item level ?"],
+			type = "select",
 			hidden = SyLevelBypass,
 			values = {
-				none     = L['None'],
-				original = L['Same as InventoryItemLevels'],
-				level    = L['Related to player level'],
+				none = L["None"],
+				original = L["Same as InventoryItemLevels"],
+				level = L["Related to player level"]
 			},
-			order = 20,
+			order = 20
 		},
 		minLevel = {
-			name = L['Mininum level'],
-			desc = L['Do not show levels under this threshold.'],
-			type = 'range',
+			name = L["Mininum level"],
+			desc = L["Do not show levels under this threshold."],
+			type = "range",
 			min = 1,
 			max = 1000,
 			step = 1,
 			bigStep = 10,
-			order = 30,
+			order = 30
 		},
 		ignoreJunk = {
-			name = L['Ignore low quality items'],
-			desc = L['Do not show level of poor quality items.'],
-			type = 'toggle',
-			order = 40,
+			name = L["Ignore low quality items"],
+			desc = L["Do not show level of poor quality items."],
+			type = "toggle",
+			order = 40
 		}
 	}, addon:GetOptionHandler(self)
 end
@@ -196,16 +213,16 @@ end
 do
 	local colors = {
 		-- { upper bound, r, g, b }
-		{ 150, 0.55, 0.55, 0.55 }, -- gray
-		{ 250, 1.00, 0.00, 0.00 }, -- red
-		{ 300, 1.00, 0.70, 0.00 }, -- orange
-		{ 350, 1.00, 1.00, 0.00 }, -- yellow
-		{ 372, 0.00, 1.00, 0.00 }, -- green
-		{ 385, 0.00, 1.00, 1.00 }, -- cyan
-		{ 397, 0.00, 0.80, 1.00 }, -- blue
-		{ 403, 1.00, 0.50, 1.00 }, -- purple,
-		{ 410, 1.00, 0.75, 1.00 }, -- pink
-		{ 999, 1.00, 1.00, 1.00 }, -- white
+		{150, 0.55, 0.55, 0.55}, -- gray
+		{250, 1.00, 0.00, 0.00}, -- red
+		{300, 1.00, 0.70, 0.00}, -- orange
+		{350, 1.00, 1.00, 0.00}, -- yellow
+		{372, 0.00, 1.00, 0.00}, -- green
+		{385, 0.00, 1.00, 1.00}, -- cyan
+		{397, 0.00, 0.80, 1.00}, -- blue
+		{403, 1.00, 0.50, 1.00}, -- purple,
+		{410, 1.00, 0.75, 1.00}, -- pink
+		{999, 1.00, 1.00, 1.00} -- white
 	}
 
 	colorSchemes.original = function(level)
@@ -268,31 +285,31 @@ do
 
 		colorGradient = function(a, b, ...)
 			local perc
-			if(b == 0) then
+			if (b == 0) then
 				perc = 0
 			else
 				perc = a / b
 			end
 
 			if perc >= 1 then
-				local r, g, b = select(select('#', ...) - 2, ...)
+				local r, g, b = select(select("#", ...) - 2, ...)
 				return r, g, b
 			elseif perc <= 0 then
 				local r, g, b = ...
 				return r, g, b
 			end
 
-			local num = select('#', ...) / 3
-			local segment, relperc = modf(perc*(num-1))
-			local r1, g1, b1, r2, g2, b2 = select((segment*3)+1, ...)
+			local num = select("#", ...) / 3
+			local segment, relperc = modf(perc * (num - 1))
+			local r1, g1, b1, r2, g2, b2 = select((segment * 3) + 1, ...)
 
 			local h1, c1, y1 = RGBToHCY(r1, g1, b1)
 			local h2, c2, y2 = RGBToHCY(r2, g2, b2)
-			local c = c1 + (c2-c1) * relperc
-			local	y = y1 + (y2-y1) * relperc
+			local c = c1 + (c2 - c1) * relperc
+			local y = y1 + (y2 - y1) * relperc
 			if h1 and h2 then
 				local dh = h2 - h1
-				if dh < -0.5  then
+				if dh < -0.5 then
 					dh = dh + 1
 				elseif dh > 0.5 then
 					dh = dh - 1
@@ -301,19 +318,18 @@ do
 			else
 				return HCYtoRGB(h1 or h2, c, y)
 			end
-
 		end
 	end
 
 	local maxLevelRanges = {
-		[ 60] = {  58,  65 }, -- Classic
-		[ 70] = {  80,  94 }, -- The Burning Crusade
-		[ 80] = { 100, 102 }, -- Wrath of the Lich King
-		[ 85] = { 108, 114 }, -- Cataclysm
-		[ 90] = { 116, 130 }, -- Mists of Pandaria
-		[100] = { 136, 143 }, -- Warlords of Draenor
-		[110] = { 164, 250 }, -- Legion
-		[120] = { 370, 445 }, -- Battle for Azeroth
+		[60] = {58, 65}, -- Classic
+		[70] = {80, 94}, -- The Burning Crusade
+		[80] = {100, 102}, -- Wrath of the Lich King
+		[85] = {108, 114}, -- Cataclysm
+		[90] = {116, 130}, -- Mists of Pandaria
+		[100] = {136, 143}, -- Warlords of Draenor
+		[110] = {164, 250}, -- Legion
+		[120] = {370, 445} -- Battle for Azeroth
 	}
 
 	local maxLevelColors = {}
@@ -326,8 +342,10 @@ do
 	end
 
 	colorSchemes.level = function(level, quality, reqLevel, equipabble)
-		if not equipabble then return 1,1,1 end
-		local playerLevel = UnitLevel('player')
+		if not equipabble then
+			return 1, 1, 1
+		end
+		local playerLevel = UnitLevel("player")
 		if playerLevel == _G.MAX_PLAYER_LEVEL then
 			-- Use the item level range for that level
 			local minLevel, maxLevel = unpack(maxLevelRanges[playerLevel])

@@ -18,7 +18,6 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 --]]
-
 local addonName, addon = ...
 local L = addon.L
 
@@ -34,7 +33,9 @@ local UIParent = _G.UIParent
 
 local anchorClass, anchorProto, anchorParentProto = addon:NewClass("Anchor", "Button", "ABEvent-1.0")
 
-function addon:CreateAnchorWidget(...) return anchorClass:Create(...) end
+function addon:CreateAnchorWidget(...)
+	return anchorClass:Create(...)
+end
 
 local function Corner_OnUpdate(self)
 	local x, y = self.anchor:GetCenter()
@@ -56,18 +57,18 @@ function anchorProto:OnCreate(parent, name, label, target)
 	self.label = label
 	self.target = target
 	self:EnableMouse(true)
-	self:SetScript('OnMouseDown', self.StartMoving)
-	self:SetScript('OnMouseUp', self.StopMoving)
-	self:SetScript('OnHide', self.StopMoving)
+	self:SetScript("OnMouseDown", self.StartMoving)
+	self:SetScript("OnMouseUp", self.StopMoving)
+	self:SetScript("OnHide", self.StopMoving)
 
 	local corner = CreateFrame("Frame", nil, self)
 	corner:SetFrameStrata("TOOLTIP")
-	corner:SetBackdrop({ bgFile = [[Interface\Buttons\WHITE8X8]], tile = true, tileSize = 8 })
+	corner:SetBackdrop({bgFile = [[Interface\Buttons\WHITE8X8]], tile = true, tileSize = 8})
 	corner:SetBackdropColor(1, 1, 0.5, 0.8)
 	corner:SetBackdropBorderColor(0, 0, 0, 0)
 	corner:SetSize(16, 16)
 	corner:Hide()
-	corner:SetScript('OnUpdate', Corner_OnUpdate)
+	corner:SetScript("OnUpdate", Corner_OnUpdate)
 	corner.anchor = self
 	self.corner = corner
 end
@@ -81,15 +82,15 @@ function anchorProto:GetPosition()
 	x, y = x * scale, y * scale
 
 	local vPos, hPos
-	if x > w/2 then
-		hPos, x = "RIGHT", target:GetRight()*scale - w
+	if x > w / 2 then
+		hPos, x = "RIGHT", target:GetRight() * scale - w
 	else
-		hPos, x = "LEFT", target:GetLeft()*scale
+		hPos, x = "LEFT", target:GetLeft() * scale
 	end
-	if y > h/2 then
-		vPos, y = "TOP", target:GetTop()*scale - h
+	if y > h / 2 then
+		vPos, y = "TOP", target:GetTop() * scale - h
 	else
-		vPos, y = "BOTTOM", target:GetBottom()*scale
+		vPos, y = "BOTTOM", target:GetBottom() * scale
 	end
 
 	return vPos .. hPos, x, y
@@ -111,7 +112,9 @@ function anchorProto:SaveSettings()
 end
 
 function anchorProto:StartMoving(button)
-	if self.moving or button ~= "LeftButton" then return end
+	if self.moving or button ~= "LeftButton" then
+		return
+	end
 	self.moving = true
 	local target = self.target
 	if not target:IsMovable() then
@@ -132,7 +135,9 @@ function anchorProto:StartMoving(button)
 end
 
 function anchorProto:StopMoving()
-	if not self.moving then return end
+	if not self.moving then
+		return
+	end
 	self.moving = nil
 	local target = self.target
 	if self.toggleMovable then
@@ -161,25 +166,25 @@ function bagAnchorProto:OnCreate(parent, name, label)
 	bagAnchorParentProto.OnCreate(self, parent, name, label, parent)
 
 	self:RegisterForClicks("RightButtonUp")
-	self:SetScript('OnShow', self.UpdateOperatingMode)
-	self:SetScript('OnClick', self.OnClick)
+	self:SetScript("OnShow", self.UpdateOperatingMode)
+	self:SetScript("OnClick", self.OnClick)
 	addon.SetupTooltip(self, self.OnTooltipUpdate, "ANCHOR_TOPRIGHT", 0, 8)
 
-	self:RegisterMessage('AdiBags_ConfigChanged')
+	self:RegisterMessage("AdiBags_ConfigChanged")
 
 	self:Show()
 end
 
 function bagAnchorProto:UpdateOperatingMode()
 	if addon.db.profile.positionMode == "manual" then
-		self:SetScript('OnMouseDown', self.StartMoving)
-		self:SetScript('OnMouseUp', self.StopMoving)
-		self:SetScript('OnHide', self.StopMoving)
+		self:SetScript("OnMouseDown", self.StartMoving)
+		self:SetScript("OnMouseUp", self.StopMoving)
+		self:SetScript("OnHide", self.StopMoving)
 	else
 		self:StopMoving()
-		self:SetScript('OnMouseDown', nil)
-		self:SetScript('OnMouseUp', nil)
-		self:SetScript('OnHide', nil)
+		self:SetScript("OnMouseDown", nil)
+		self:SetScript("OnMouseUp", nil)
+		self:SetScript("OnHide", nil)
 	end
 end
 
@@ -197,7 +202,7 @@ function bagAnchorProto:OnClick(mouseButton)
 			else
 				addon.db.profile.positionMode = "anchored"
 			end
-			addon:SendMessage('AdiBags_ConfigChanged', 'positionMode')
+			addon:SendMessage("AdiBags_ConfigChanged", "positionMode")
 		elseif addon.db.profile.positionMode == "anchored" then
 			addon:ToggleAnchor()
 		end
@@ -207,12 +212,14 @@ end
 function bagAnchorProto:OnTooltipUpdate(tooltip)
 	tooltip:AddLine(self.label, 1, 1, 1)
 	if addon.db.profile.positionMode == "manual" then
-		tooltip:AddLine(L['Drag to move this bag.'])
-		tooltip:AddLine(L['Alt-right-click to switch to anchored placement.'])
+		tooltip:AddLine(L["Drag to move this bag."])
+		tooltip:AddLine(L["Alt-right-click to switch to anchored placement."])
 	else
-		tooltip:AddLine(L['Right-click to (un)lock the bag anchor.'])
-		tooltip:AddLine(L['Alt-right-click to switch to manual placement.'])
+		tooltip:AddLine(L["Right-click to (un)lock the bag anchor."])
+		tooltip:AddLine(L["Alt-right-click to switch to manual placement."])
 	end
 end
 
-function addon:CreateBagAnchorWidget(...) return bagAnchorClass:Create(...) end
+function addon:CreateBagAnchorWidget(...)
+	return bagAnchorClass:Create(...)
+end

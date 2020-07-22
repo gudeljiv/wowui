@@ -7783,17 +7783,29 @@ local MinimapLayerFrame = CreateFrame("Frame", "MinimapLayerFrame", Minimap)
 -- 	}
 -- )
 -- MinimapLayerFrame:SetBackdropColor(0, 0, 0, 0.4)
-MinimapLayerFrame:SetPoint("BOTTOM", 2, 4)
+MinimapLayerFrame:SetPoint("TOPRIGHT", -4, -4)
 MinimapLayerFrame:SetFrameStrata("HIGH")
 MinimapLayerFrame:SetFrameLevel(9)
 MinimapLayerFrame:SetMovable(true)
 MinimapLayerFrame.fs = MinimapLayerFrame:CreateFontString("MinimapLayerFrameFS", "ARTWORK")
 MinimapLayerFrame.fs:SetPoint("CENTER", 0, 0)
 MinimapLayerFrame.fs:SetFont("Fonts\\ARIALN.ttf", 10) --No region font here, "Layer" in english always.
-MinimapLayerFrame.fs:SetText("No Layer")
-MinimapLayerFrame:SetWidth(46)
-MinimapLayerFrame:SetHeight(17)
--- MinimapLayerFrame:CreateBeautyBorder(8)
+-- MinimapLayerFrame.fs:SetText("No Layer")
+MinimapLayerFrame.fs:SetText("NL")
+MinimapLayerFrame:SetWidth(20)
+MinimapLayerFrame:SetHeight(20)
+MinimapLayerFrame:SetBackdrop(
+	{
+		bgFile = "Interface\\Buttons\\WHITE8x8",
+		edgeFile = "",
+		tile = false,
+		tileSize = 0,
+		edgeSize = 0,
+		insets = {left = 0, right = 0, top = 0, bottom = 0}
+	}
+)
+MinimapLayerFrame:SetBackdropColor(0, 0, 0, 0.4)
+MinimapLayerFrame:CreateBeautyBorder(4)
 MinimapLayerFrame:Hide()
 
 -- MinimapLayerFrame.tooltip = CreateFrame("Frame", "NWBVersionDragTooltip", MinimapLayerFrame, "TooltipBorderedFrameTemplate")
@@ -7897,13 +7909,15 @@ function NWB:recalcMinimapLayerFrame(zoneID)
 	end
 	if (foundLayer or (NWB.faction == "Horde" and zone == 1454) or (NWB.faction == "Alliance" and zone == 1453)) then
 		if (NWB.currentLayer > 0) then
-			MinimapLayerFrame.fs:SetText(NWB.mmColor .. "Layer " .. NWB.lastKnownLayer)
-			MinimapLayerFrame.fs:SetFont("Fonts\\ARIALN.ttf", 12)
+			-- MinimapLayerFrame.fs:SetText(NWB.mmColor .. "Layer " .. NWB.lastKnownLayer)
+			MinimapLayerFrame.fs:SetText(NWB.mmColor .. "L" .. NWB.lastKnownLayer)
+			MinimapLayerFrame.fs:SetFont("Fonts\\ARIALN.ttf", 10)
 		elseif (layerNum > 0) then
-			MinimapLayerFrame.fs:SetText(NWB.mmColor .. "Layer " .. layerNum)
-			MinimapLayerFrame.fs:SetFont("Fonts\\ARIALN.ttf", 12)
+			-- MinimapLayerFrame.fs:SetText(NWB.mmColor .. "Layer " .. layerNum)
+			MinimapLayerFrame.fs:SetText(NWB.mmColor .. "L" .. layerNum)
+			MinimapLayerFrame.fs:SetFont("Fonts\\ARIALN.ttf", 10)
 		else
-			MinimapLayerFrame.fs:SetText(NWB.mmColor .. "No Layer")
+			MinimapLayerFrame.fs:SetText(NWB.mmColor .. "NL")
 			MinimapLayerFrame.fs:SetFont("Fonts\\ARIALN.ttf", 10)
 		end
 		--MinimapLayerFrame:SetWidth(MinimapLayerFrame.fs:GetStringWidth() + 12);
@@ -7922,8 +7936,9 @@ function NWB:recalcMinimapLayerFrame(zoneID)
 				if (v.layerMap and next(v.layerMap)) then
 					for zone, map in pairs(v.layerMap) do
 						if (zone == zoneID) then
-							MinimapLayerFrame.fs:SetText("Layer " .. backupCount)
-							MinimapLayerFrame.fs:SetFont("Fonts\\ARIALN.ttf", 12)
+							-- MinimapLayerFrame.fs:SetText("Layer " .. backupCount)
+							MinimapLayerFrame.fs:SetText("L" .. backupCount)
+							MinimapLayerFrame.fs:SetFont("Fonts\\ARIALN.ttf", 10)
 							foundBackup = true
 						end
 					end
