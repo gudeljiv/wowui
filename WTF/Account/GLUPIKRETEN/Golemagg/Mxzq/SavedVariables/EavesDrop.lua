@@ -246,12 +246,12 @@ EavesDropStatsDB = {
 					},
 					["Auto Shot"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/20/20 07:34:55|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-66-3263-000015D5AD:Bristleback Geomancer|hBristleback Geomancer|h for |cffffffff33|r |cffffffffPhysical|r.",
-							["amount"] = 33,
+							["time"] = "|cffffffff07/22/20 07:35:33|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-180-3263-000018547F:Bristleback Geomancer|hBristleback Geomancer|h for |cffffffff34|r |cffffffffPhysical|r.",
+							["amount"] = 34,
 						},
 						[2] = {
-							["time"] = "|cffffffff07/19/20 10:51:18|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-64-3035-000014A0AD:Flatland Cougar|hFlatland Cougar|h for |cffffffff54|r |cffffffffPhysical|r.(3 Overkill) (Critical)",
-							["amount"] = 57,
+							["time"] = "|cffffffff07/22/20 07:38:45|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-180-3263-00001867A2:Bristleback Geomancer|hBristleback Geomancer|h for |cffffffff66|r |cffffffffPhysical|r.(Critical)",
+							["amount"] = 66,
 						},
 					},
 					["Drain Life"] = {
@@ -290,6 +290,14 @@ EavesDropStatsDB = {
 						[-2] = {
 							["time"] = "|cffffffff07/19/20 04:25:00|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h suffers |cffff131310|r |cffff1313Shadow|r damage from |Hunit:Creature-0-4448-1-145-3397-000014555D:Kolkar Bloodcharger|hKolkar Bloodcharger's|h |Hspell:0:0:SPELL_PERIODIC_DAMAGE|h|cffff1313Corruption|r|h.",
 							["amount"] = 10,
+						},
+						[2] = {
+						},
+					},
+					["Frost"] = {
+						[-2] = {
+							["time"] = "|cffffffff07/22/20 07:44:49|r\n|Hicon:128:source|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-180-3260-0000186735:Bristleback Water Seeker|hBristleback Water Seeker's|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Frost Nova|r|h hits |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h for |cffff131325|r |cffff1313Frost|r.",
+							["amount"] = 25,
 						},
 						[2] = {
 						},

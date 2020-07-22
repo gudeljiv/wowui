@@ -13,7 +13,7 @@ local function targetFrame(self, forceNormalTexture)
 	end
 
 	-- self.threatIndicator:SetTexture("Interface\\TargetingFrame\\UI-TargetingFrame-Flash");
-	self.name:SetPoint("CENTER", self, -50, 19)
+	self.name:SetPoint("CENTER", self, -50, 20)
 	self.healthbar:SetSize(119, 28)
 	self.healthbar:SetPoint("TOPLEFT", 5, -24)
 	self.healthbar.LeftText:SetPoint("LEFT", self.healthbar, "LEFT", 5, 0)

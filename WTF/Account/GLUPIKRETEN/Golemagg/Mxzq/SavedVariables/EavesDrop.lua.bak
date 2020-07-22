@@ -207,8 +207,8 @@ EavesDropStatsDB = {
 					},
 					["Melee Attack"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/19/20 08:12:10|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-141-3125-00001454C1:Clattering Scorpid|hClattering Scorpid|h for |cffffffff22|r |cffffffffPhysical|r.",
-							["amount"] = 22,
+							["time"] = "|cffffffff07/22/20 05:35:35|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-172-3300-0000183CA4:Adder|hAdder|h for |cffffffff1|r |cffffffffPhysical|r.(22 Overkill)",
+							["amount"] = 23,
 						},
 						[2] = {
 							["time"] = "|cffffffff07/19/20 08:02:51|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-141-3110-00001489AC:Dreadmaw Crocolisk|hDreadmaw Crocolisk|h for |cffffffff35|r |cffffffffPhysical|r.(Critical)",
@@ -217,12 +217,12 @@ EavesDropStatsDB = {
 					},
 					["Auto Shot"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/20/20 07:34:55|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-66-3263-000015D5AD:Bristleback Geomancer|hBristleback Geomancer|h for |cffffffff33|r |cffffffffPhysical|r.",
-							["amount"] = 33,
+							["time"] = "|cffffffff07/22/20 07:35:33|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-180-3263-000018547F:Bristleback Geomancer|hBristleback Geomancer|h for |cffffffff34|r |cffffffffPhysical|r.",
+							["amount"] = 34,
 						},
 						[2] = {
-							["time"] = "|cffffffff07/19/20 10:51:18|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-64-3035-000014A0AD:Flatland Cougar|hFlatland Cougar|h for |cffffffff54|r |cffffffffPhysical|r.(3 Overkill) (Critical)",
-							["amount"] = 57,
+							["time"] = "|cffffffff07/22/20 07:38:45|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-180-3263-00001867A2:Bristleback Geomancer|hBristleback Geomancer|h for |cffffffff66|r |cffffffffPhysical|r.(Critical)",
+							["amount"] = 66,
 						},
 					},
 					["Drain Life"] = {
@@ -239,6 +239,8 @@ EavesDropStatsDB = {
 							["amount"] = 4,
 						},
 						[2] = {
+							["time"] = "|cffffffff07/22/20 05:37:51|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWing Clip|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-172-3100-0000182F7E:Elder Mottled Boar|hElder Mottled Boar|h for |cffffffff8|r |cffffffffPhysical|r.(Critical)",
+							["amount"] = 8,
 						},
 						["icon"] = 132309,
 					},
@@ -292,18 +294,10 @@ EavesDropStatsDB = {
 						[2] = {
 						},
 					},
-					["Holy"] = {
+					["Frost"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/19/20 06:52:55|r\n|Hunit:Creature-0-4448-1-145-3386-000094716C:Theramore Preserver|hTheramore Preserver's|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Holy Smite|r|h hits |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h for |cffff131345|r |cffff1313Holy|r.",
-							["amount"] = 45,
-						},
-						[2] = {
-						},
-					},
-					["Fire"] = {
-						[-2] = {
-							["time"] = "|cffffffff07/20/20 07:24:40|r\n|Hunit:Creature-0-4448-1-66-3263-000015D331:Bristleback Geomancer|hBristleback Geomancer's|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Fireball|r|h hits |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h for |cffff1313100|r |cffff1313Fire|r.",
-							["amount"] = 100,
+							["time"] = "|cffffffff07/22/20 07:44:49|r\n|Hicon:128:source|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-180-3260-0000186735:Bristleback Water Seeker|hBristleback Water Seeker's|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Frost Nova|r|h hits |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h for |cffff131325|r |cffff1313Frost|r.",
+							["amount"] = 25,
 						},
 						[2] = {
 						},
@@ -316,6 +310,22 @@ EavesDropStatsDB = {
 						[2] = {
 							["time"] = "|cffffffff07/19/20 04:28:55|r\n|Hunit:Creature-0-4448-1-145-3274-0000142BBA:Kolkar Pack Runner|hKolkar Pack Runner's|h melee swing hits |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h for |cffff131360|r |cffff1313Physical|r.(Critical)",
 							["amount"] = 60,
+						},
+					},
+					["Fire"] = {
+						[-2] = {
+							["time"] = "|cffffffff07/20/20 07:24:40|r\n|Hunit:Creature-0-4448-1-66-3263-000015D331:Bristleback Geomancer|hBristleback Geomancer's|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Fireball|r|h hits |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h for |cffff1313100|r |cffff1313Fire|r.",
+							["amount"] = 100,
+						},
+						[2] = {
+						},
+					},
+					["Holy"] = {
+						[-2] = {
+							["time"] = "|cffffffff07/19/20 06:52:55|r\n|Hunit:Creature-0-4448-1-145-3386-000094716C:Theramore Preserver|hTheramore Preserver's|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Holy Smite|r|h hits |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h for |cffff131345|r |cffff1313Holy|r.",
+							["amount"] = 45,
+						},
+						[2] = {
 						},
 					},
 					["Nature"] = {

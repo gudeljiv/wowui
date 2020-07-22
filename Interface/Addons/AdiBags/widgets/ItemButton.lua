@@ -403,6 +403,11 @@ function buttonProto:UpdateBorder(isolatedEvent)
 		self.IconQuestTexture:Hide()
 		self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureNormal")
 		self:SetBeautyBorderColor(1, 1, 1, 1)
+
+		if (itemType == "Quest") then
+			self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")
+			self:SetBeautyBorderColor(1, 0.964, 0, 1)
+		end
 	else
 		local border = self.IconQuestTexture
 		if texture == true then
@@ -417,15 +422,10 @@ function buttonProto:UpdateBorder(isolatedEvent)
 		-- border:Show()
 		border:Hide()
 
-		self:CreateBeautyBorder(8)
 		self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")
 		self:SetBeautyBorderColor(r, g, b, 1)
 	end
-	if (itemType == "Quest") then
-		self:CreateBeautyBorder(8)
-		self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")
-		self:SetBeautyBorderColor(1, 0.964, 0, 1)
-	end
+
 	if self.JunkIcon then
 		local quality = self.hasItem and select(3, GetItemInfo(self.itemLink or self.itemId))
 		self.JunkIcon:SetShown(quality == LE_ITEM_QUALITY_POOR and addon:GetInteractingWindow() == "MERCHANT")

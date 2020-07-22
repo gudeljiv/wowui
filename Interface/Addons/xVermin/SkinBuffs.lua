@@ -14,6 +14,7 @@ local function SkinTarget()
 	if TargetFrame:IsShown() then
 		TargetFrameHealthBarText:ClearAllPoints()
 		TargetFrameHealthBarText:SetPoint("CENTER", TargetFrame, "CENTER", -50, 7)
+		TargetFrameManaBarText:SetScale(0.8)
 
 		-- print(select(3, UnitBuff("target", 1)))
 		local numBuffs = 0

@@ -233,6 +233,7 @@ f:SetScript(
 				point(PlayerFrame, "CENTER", UIParent, "CENTER", -250, -96)
 			end
 		)
+		PlayerFrameManaBarText:SetScale(0.8)
 	end
 )
 f:RegisterEvent("PLAYER_ENTERING_WORLD")
@@ -256,3 +257,16 @@ end
 local faster = CreateFrame("Frame")
 faster:RegisterEvent("LOOT_READY")
 faster:SetScript("OnEvent", FastLoot)
+
+LootFrame:HookScript(
+	"OnShow",
+	function()
+		local numLootItems = GetNumLootItems()
+		for i = GetNumLootItems(), 1, -1 do
+			local frame = _G["LootButton" .. i]
+			if (frame ~= nil) then
+				frame:CreateBeautyBorder(6)
+			end
+		end
+	end
+)

@@ -4,16 +4,16 @@ VER 3 0000000000000007 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:1205
-/castsequence [combat]item:2455,item:2455
+/use [nocombat]item:0
+/castsequence [combat]item:3827
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:3770
-/castsequence [combat]
+/use [nocombat]item:4593
+/castsequence [combat]item:1710,item:1710,item:1710,item:1710,item:1710,item:1710,item:1710,item:1710,item:1710,item:1710,item:1710,item:1710,item:1710,item:1710
 END
 VER 3 0000000000000006 "PF" "Inv_misc_questionmark"
-#showtooltip item:769
+#showtooltip item:3770
 /cast feed pet
-/use item:769
+/use item:3770
 END
