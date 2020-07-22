@@ -13,7 +13,6 @@ Frames/CharacterFrame.lua
 Frames/InspectFrame.lua
 Frames/SpellBookFrame.lua
 Frames/TalentFrame.lua
-Frames/MinimapLayerFrame.lua
 # Frames/FrameIDOutput.lua
 
 AutoCarrot.lua
