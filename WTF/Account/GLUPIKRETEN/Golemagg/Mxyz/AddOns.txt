@@ -147,7 +147,7 @@ Auc-Stat-Simple: disabled
 Auc-Stat-StdDev: disabled
 Auc-Util-FixAH: disabled
 Bagnon_GuildBank: disabled
-EasyLoot: enabled
+EasyLoot: disabled
 Stubby: disabled
 TradeSkillMaster_Mailing: disabled
 cargBags_Nivaya: disabled
@@ -229,7 +229,7 @@ Ace3: disabled
 TitanClassic: disabled
 Leatrix_Plus: enabled
 SimpleMap: disabled
-UnitFramesImproved: enabled
+UnitFramesImproved: disabled
 Outfitter: disabled
 DejaClassicStats: disabled
 VuhDo: disabled

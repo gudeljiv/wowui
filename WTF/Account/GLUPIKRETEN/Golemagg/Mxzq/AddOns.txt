@@ -56,7 +56,7 @@ SharedMedia: enabled
 TellMeWhen: enabled
 TellMeWhen_Options: enabled
 TomTom: enabled
-UnitFramesImproved: enabled
+UnitFramesImproved: disabled
 WeaponSwingTimer: enabled
 TradeSkillMaster: disabled
 nBuff: enabled
@@ -86,4 +86,4 @@ BagBrother: disabled
 Bagnon_VoidStorage: disabled
 ItemRackOptions: enabled
 AdiBags: enabled
-AutoDelete: disabled
+EasyLoot: disabled

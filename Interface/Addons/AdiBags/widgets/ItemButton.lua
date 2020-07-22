@@ -386,6 +386,18 @@ function buttonProto:UpdateBorder(isolatedEvent)
 	if self.hasItem then
 		texture, r, g, b, a, x1, x2, y1, y2, blendMode =
 			GetBorder(self.bag, self.slot, self.itemLink or self.itemId, addon.db.profile)
+
+		itemName,
+			itemLink,
+			itemRarity,
+			itemLevel,
+			itemMinLevel,
+			itemType,
+			itemSubType,
+			itemStackCount,
+			itemEquipLoc,
+			itemTexture,
+			itemSellPrice = GetItemInfo(self.itemLink)
 	end
 	if not texture then
 		self.IconQuestTexture:Hide()
@@ -408,6 +420,11 @@ function buttonProto:UpdateBorder(isolatedEvent)
 		self:CreateBeautyBorder(8)
 		self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")
 		self:SetBeautyBorderColor(r, g, b, 1)
+	end
+	if (itemType == "Quest") then
+		self:CreateBeautyBorder(8)
+		self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")
+		self:SetBeautyBorderColor(1, 0.964, 0, 1)
 	end
 	if self.JunkIcon then
 		local quality = self.hasItem and select(3, GetItemInfo(self.itemLink or self.itemId))

@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 1142,
 	["lastSanitation"] = 3,
-	["session"] = 1115,
 	["errors"] = {
 		{
 			["message"] = "[string \"ItemRackMenu3:CreateBeautyBorder(8)\"]:1: attempt to index global 'ItemRackMenu3' (a nil value)",
@@ -21,14 +21,14 @@ BugGrabberDB = {
 		}, -- [2]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Details\\Libs\\LibThreatClassic2\\lib.xml",
-			["session"] = 751,
 			["time"] = "2020/07/11 19:09:15",
+			["session"] = 751,
 			["counter"] = 8,
 		}, -- [3]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Details_Streamer\\Details_Streamer.toc",
-			["time"] = "2020/07/11 19:09:55",
 			["session"] = 751,
+			["time"] = "2020/07/11 19:09:55",
 			["counter"] = 2,
 		}, -- [4]
 		{
@@ -923,9 +923,103 @@ BugGrabberDB = {
 		}, -- [116]
 		{
 			["message"] = "(null)",
-			["session"] = 1111,
 			["time"] = "2020/07/11 19:09:15",
+			["session"] = 1111,
 			["counter"] = 140,
 		}, -- [117]
+		{
+			["message"] = "Interface\\AddOns\\EasyLoot\\EasyLoot-3.3.1.lua:131: Attempt to register unknown event \"CONFIRM_DISENCHANT_ROLL\"",
+			["time"] = "2020/07/22 16:41:32",
+			["locals"] = "(*temporary) = EasyLootFrame {\n 0 = <userdata>\n}\n(*temporary) = \"CONFIRM_DISENCHANT_ROLL\"\n",
+			["stack"] = "[C]: in function `RegisterEvent'\nInterface\\AddOns\\EasyLoot\\EasyLoot-3.3.1.lua:131: in function `EasyLoot_OnLoad'\n[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
+			["session"] = 1117,
+			["counter"] = 2,
+		}, -- [118]
+		{
+			["message"] = "EasyLootFilterItem: Set bytes attribute on EditBox element instead of child FontString",
+			["time"] = "2020/07/22 16:41:35",
+			["session"] = 1117,
+			["counter"] = 4,
+		}, -- [119]
+		{
+			["message"] = "EasyLootItemLevel: Set bytes attribute on EditBox element instead of child FontString",
+			["time"] = "2020/07/22 16:41:35",
+			["session"] = 1117,
+			["counter"] = 4,
+		}, -- [120]
+		{
+			["message"] = "EasyLootDestroyValue: Set bytes attribute on EditBox element instead of child FontString",
+			["time"] = "2020/07/22 16:41:35",
+			["session"] = 1117,
+			["counter"] = 4,
+		}, -- [121]
+		{
+			["message"] = "Frame EasyLootFilter: Unknown script element OnEscapePressed",
+			["time"] = "2020/07/22 16:41:35",
+			["session"] = 1117,
+			["counter"] = 4,
+		}, -- [122]
+		{
+			["message"] = "EasyLootSearchText: Set bytes attribute on EditBox element instead of child FontString",
+			["time"] = "2020/07/22 16:41:35",
+			["session"] = 1117,
+			["counter"] = 3,
+		}, -- [123]
+		{
+			["message"] = "[string \"TargetFrame.name:SetPoint(\"LEFT\", self, 0, 20\")\"]:1: unfinished string near '<eof>'",
+			["time"] = "2020/07/22 17:09:47",
+			["locals"] = "(*temporary) = \"TargetFrame.name:SetPoint(\"LEFT\", self, 0, 20\")\"\n",
+			["stack"] = "[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2783: in function <Interface\\FrameXML\\ChatFrame.lua:2776>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:338: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 1129,
+			["counter"] = 10,
+		}, -- [124]
+		{
+			["message"] = "[string \"TargetFrame.LeftText:ClearAllPoints()\"]:1: attempt to index field 'LeftText' (a nil value)",
+			["time"] = "2020/07/22 17:12:18",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'LeftText' (a nil value)\"\n",
+			["stack"] = "[string \"TargetFrame.LeftText:ClearAllPoints()\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2783: in function <Interface\\FrameXML\\ChatFrame.lua:2776>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:338: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 1129,
+			["counter"] = 7,
+		}, -- [125]
+		{
+			["message"] = "[string \"TargetFrame.LeftText:SetPoint(\"LEFT\", Targe...\"]:1: attempt to index field 'LeftText' (a nil value)",
+			["time"] = "2020/07/22 17:12:01",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'LeftText' (a nil value)\"\n",
+			["stack"] = "[string \"TargetFrame.LeftText:SetPoint(\"LEFT\", Targe...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2783: in function <Interface\\FrameXML\\ChatFrame.lua:2776>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:338: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 1129,
+			["counter"] = 9,
+		}, -- [126]
+		{
+			["message"] = "[string \"TradingSkillIcon:CreateBeautyBorder(8)\"]:1: attempt to index global 'TradingSkillIcon' (a nil value)",
+			["time"] = "2020/07/22 17:57:51",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'TradingSkillIcon' (a nil value)\"\n",
+			["stack"] = "[string \"TradingSkillIcon:CreateBeautyBorder(8)\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 1142,
+			["counter"] = 1,
+		}, -- [127]
+		{
+			["message"] = "[string \"TradeSkillIcon:CreateBeautyBorder(8)\"]:1: attempt to index global 'TradeSkillIcon' (a nil value)",
+			["time"] = "2020/07/22 17:58:01",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'TradeSkillIcon' (a nil value)\"\n",
+			["stack"] = "[string \"TradeSkillIcon:CreateBeautyBorder(8)\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 1142,
+			["counter"] = 1,
+		}, -- [128]
+		{
+			["message"] = "[string \"TradeSkillReagent1Icon:CreateBeautyBorder(8...\"]:1: attempt to index global 'TradeSkillReagent1Icon' (a nil value)",
+			["time"] = "2020/07/22 17:59:41",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'TradeSkillReagent1Icon' (a nil value)\"\n",
+			["stack"] = "[string \"TradeSkillReagent1Icon:CreateBeautyBorder(8...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 1142,
+			["counter"] = 1,
+		}, -- [129]
+		{
+			["message"] = "[string \"TradeSkillReagent1IconTexture:CreateBeautyB...\"]:1: attempt to call method 'CreateBeautyBorder' (a nil value)",
+			["time"] = "2020/07/22 17:59:47",
+			["locals"] = "(*temporary) = nil\n(*temporary) = TradeSkillReagent1IconTexture {\n 0 = <userdata>\n}\n(*temporary) = 8\n(*temporary) = \"attempt to call method 'CreateBeautyBorder' (a nil value)\"\n",
+			["stack"] = "[string \"TradeSkillReagent1IconTexture:CreateBeautyB...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 1142,
+			["counter"] = 1,
+		}, -- [130]
 	},
 }

@@ -236,8 +236,8 @@ EavesDropStatsDB = {
 					},
 					["Melee Attack"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/19/20 08:12:10|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-141-3125-00001454C1:Clattering Scorpid|hClattering Scorpid|h for |cffffffff22|r |cffffffffPhysical|r.",
-							["amount"] = 22,
+							["time"] = "|cffffffff07/22/20 05:35:35|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-172-3300-0000183CA4:Adder|hAdder|h for |cffffffff1|r |cffffffffPhysical|r.(22 Overkill)",
+							["amount"] = 23,
 						},
 						[2] = {
 							["time"] = "|cffffffff07/19/20 08:02:51|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-141-3110-00001489AC:Dreadmaw Crocolisk|hDreadmaw Crocolisk|h for |cffffffff35|r |cffffffffPhysical|r.(Critical)",
@@ -268,6 +268,8 @@ EavesDropStatsDB = {
 							["amount"] = 4,
 						},
 						[2] = {
+							["time"] = "|cffffffff07/22/20 05:37:51|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWing Clip|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-172-3100-0000182F7E:Elder Mottled Boar|hElder Mottled Boar|h for |cffffffff8|r |cffffffffPhysical|r.(Critical)",
+							["amount"] = 8,
 						},
 						["icon"] = 132309,
 					},

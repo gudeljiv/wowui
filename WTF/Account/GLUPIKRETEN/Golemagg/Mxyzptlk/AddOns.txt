@@ -1,3 +1,4 @@
 cargBags_Nivaya: disabled
 AdiBags: enabled
-AutoDelete: disabled
+UnitFramesImproved: disabled
+EasyLoot: disabled
