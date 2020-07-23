@@ -10,22 +10,23 @@ ReplacedDebuffTypeColor["Disease"] = {r = 0.60, g = 0.40, b = 0}
 ReplacedDebuffTypeColor["Poison"] = {r = 0.00, g = 0.60, b = 0}
 ReplacedDebuffTypeColor[""] = ReplacedDebuffTypeColor["none"]
 
+local frame, frameBorder, frameCount, color, B_spellId, D_spellId, B_unitCaster, D_unitCaster
+
 local function SkinTarget()
 	if TargetFrame:IsShown() then
 		TargetFrameHealthBarText:ClearAllPoints()
 		TargetFrameHealthBarText:SetPoint("CENTER", TargetFrame, "CENTER", -50, 7)
 		TargetFrameManaBarText:SetScale(0.8)
 
-		-- print(select(3, UnitBuff("target", 1)))
-		local numBuffs = 0
 		for i = 1, 32 do
-			-- if (select(3, UnitBuff("target", i))) then
-			_, spellId, _, _, _, _, unitCaster = UnitBuff("target", i)
-			if (spellId) then
-				local frame = _G["TargetFrameBuff" .. i]
-				local frameBorder = _G["TargetFrameBuff" .. i .. "Border"]
-				local frameCount = _G["TargetFrameBuff" .. i .. "Count"]
-				-- print(frame:GetName(), i)
+			_, B_spellId, _, _, _, _, B_unitCaster = UnitBuff("target", i)
+			_, D_spellId, _, _, _, _, D_unitCaster = UnitDebuff("target", i)
+
+			if (B_spellId) then
+				frame = _G["TargetFrameBuff" .. i]
+				frameBorder = _G["TargetFrameBuff" .. i .. "Border"]
+				frameCount = _G["TargetFrameBuff" .. i .. "Count"]
+
 				if (frameBorder ~= nil) then
 					frameBorder:Hide()
 				end
@@ -41,18 +42,11 @@ local function SkinTarget()
 					frame:SetScale(config.buff.scale)
 				end
 			end
-		end
 
-		local numDebuffs = 0
-		for i = 1, 32 do
-			-- if (select(3, UnitDebuff("target", i))) then
-			_, spellId, _, _, _, _, unitCaster = UnitDebuff("target", i)
-			if (spellId) then
-				-- print(spellId, unitCaster, UnitDebuff("target", i))
-				local frame = _G["TargetFrameDebuff" .. i]
-				local frameBorder = _G["TargetFrameDebuff" .. i .. "Border"]
-				local frameCount = _G["TargetFrameDebuff" .. i .. "Count"]
-				local color
+			if (d_spellId) then
+				frame = _G["TargetFrameDebuff" .. i]
+				frameBorder = _G["TargetFrameDebuff" .. i .. "Border"]
+				frameCount = _G["TargetFrameDebuff" .. i .. "Count"]
 
 				if (frameBorder ~= nil) then
 					frameBorder:Hide()
@@ -82,14 +76,15 @@ end
 
 local function SkinPet()
 	if PetFrame:IsShown() then
-		local numBuffs = 0
 		for i = 1, 32 do
-			-- if (select(3, UnitBuff("pet", i))) then
-			_, spellId = UnitBuff("pet", i)
-			if (spellId) then
-				local frame = _G["PetFrameBuff" .. i]
-				local frameBorder = _G["PetFrameBuff" .. i .. "Border"]
-				local frameCount = _G["PetFrameBuff" .. i .. "Count"]
+			_, B_spellId = UnitBuff("pet", i)
+			_, D_spellId = UnitDebuff("pet", i)
+
+			if (B_spellId) then
+				frame = _G["PetFrameBuff" .. i]
+				frameBorder = _G["PetFrameBuff" .. i .. "Border"]
+				frameCount = _G["PetFrameBuff" .. i .. "Count"]
+
 				if (frameBorder ~= nil) then
 					frameBorder:Hide()
 				end
@@ -104,17 +99,11 @@ local function SkinPet()
 					frame:SetBeautyBorderTexture(config.border.default)
 				end
 			end
-		end
 
-		local numDebuffs = 0
-		for i = 1, 32 do
-			-- if (select(3, UnitDebuff("pet", i))) then
-			_, spellId = UnitDebuff("pet", i)
-			if (spellId) then
-				local frame = _G["PetFrameDebuff" .. i]
-				local frameBorder = _G["PetFrameDebuff" .. i .. "Border"]
-				local frameCount = _G["PetFrameBuff" .. i .. "Count"]
-				local color
+			if (D_spellId) then
+				frame = _G["PetFrameDebuff" .. i]
+				frameBorder = _G["PetFrameDebuff" .. i .. "Border"]
+				frameCount = _G["PetFrameBuff" .. i .. "Count"]
 
 				if (frameBorder ~= nil) then
 					frameBorder:Hide()

@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 1154,
 	["lastSanitation"] = 3,
-	["session"] = 1153,
 	["errors"] = {
 		{
 			["message"] = "[string \"ItemRackMenu3:CreateBeautyBorder(8)\"]:1: attempt to index global 'ItemRackMenu3' (a nil value)",
@@ -21,14 +21,14 @@ BugGrabberDB = {
 		}, -- [2]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Details\\Libs\\LibThreatClassic2\\lib.xml",
-			["session"] = 751,
 			["time"] = "2020/07/11 19:09:15",
+			["session"] = 751,
 			["counter"] = 8,
 		}, -- [3]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Details_Streamer\\Details_Streamer.toc",
-			["time"] = "2020/07/11 19:09:55",
 			["session"] = 751,
+			["time"] = "2020/07/11 19:09:55",
 			["counter"] = 2,
 		}, -- [4]
 		{
@@ -923,8 +923,8 @@ BugGrabberDB = {
 		}, -- [116]
 		{
 			["message"] = "(null)",
-			["session"] = 1111,
 			["time"] = "2020/07/11 19:09:15",
+			["session"] = 1111,
 			["counter"] = 140,
 		}, -- [117]
 		{
@@ -937,32 +937,32 @@ BugGrabberDB = {
 		}, -- [118]
 		{
 			["message"] = "EasyLootFilterItem: Set bytes attribute on EditBox element instead of child FontString",
-			["session"] = 1117,
 			["time"] = "2020/07/22 16:41:35",
+			["session"] = 1117,
 			["counter"] = 4,
 		}, -- [119]
 		{
 			["message"] = "EasyLootItemLevel: Set bytes attribute on EditBox element instead of child FontString",
-			["session"] = 1117,
 			["time"] = "2020/07/22 16:41:35",
+			["session"] = 1117,
 			["counter"] = 4,
 		}, -- [120]
 		{
 			["message"] = "EasyLootDestroyValue: Set bytes attribute on EditBox element instead of child FontString",
-			["session"] = 1117,
 			["time"] = "2020/07/22 16:41:35",
+			["session"] = 1117,
 			["counter"] = 4,
 		}, -- [121]
 		{
 			["message"] = "Frame EasyLootFilter: Unknown script element OnEscapePressed",
-			["session"] = 1117,
 			["time"] = "2020/07/22 16:41:35",
+			["session"] = 1117,
 			["counter"] = 4,
 		}, -- [122]
 		{
 			["message"] = "EasyLootSearchText: Set bytes attribute on EditBox element instead of child FontString",
-			["session"] = 1117,
 			["time"] = "2020/07/22 16:41:35",
+			["session"] = 1117,
 			["counter"] = 3,
 		}, -- [123]
 		{
