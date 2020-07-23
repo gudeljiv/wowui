@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 1154,
 	["lastSanitation"] = 3,
+	["session"] = 1197,
 	["errors"] = {
 		{
 			["message"] = "[string \"ItemRackMenu3:CreateBeautyBorder(8)\"]:1: attempt to index global 'ItemRackMenu3' (a nil value)",
@@ -21,14 +21,14 @@ BugGrabberDB = {
 		}, -- [2]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Details\\Libs\\LibThreatClassic2\\lib.xml",
-			["time"] = "2020/07/11 19:09:15",
 			["session"] = 751,
+			["time"] = "2020/07/11 19:09:15",
 			["counter"] = 8,
 		}, -- [3]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Details_Streamer\\Details_Streamer.toc",
-			["session"] = 751,
 			["time"] = "2020/07/11 19:09:55",
+			["session"] = 751,
 			["counter"] = 2,
 		}, -- [4]
 		{
@@ -890,21 +890,13 @@ BugGrabberDB = {
 			["counter"] = 6,
 		}, -- [112]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'AttemptToSaveBindings()'.",
-			["time"] = "2020/07/11 19:23:02",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `AttemptToSaveBindings'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:2045: in function `SetSetBindings'\nInterface\\AddOns\\ItemRackOptions\\ItemRackOptions.lua:1041: in function `ReconcileSetBindings'\nInterface\\AddOns\\ItemRackOptions\\ItemRackOptions.lua:411: in function <Interface\\AddOns\\ItemRackOptions\\ItemRackOptions.lua:395>\nInterface\\AddOns\\cargBags_Nivaya\\filters-Filters.lua:132: in function `SaveSet'\nInterface\\AddOns\\ItemRackOptions\\ItemRackOptions.lua:272: in function `ButtonOnClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
-			["session"] = 1107,
-			["counter"] = 10,
-		}, -- [113]
-		{
 			["message"] = "Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs-1.71.lua:7332: attempt to call method 'recalcMinimapLayerFrame' (a nil value)",
 			["time"] = "2020/07/22 11:52:18",
 			["locals"] = "self = <table> {\n setSoundsOnyDrop = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:2131\n removeOldLayers = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:6446\n setMiddle0 = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:1526\n setGuildNpcDialogue = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:1643\n modules = <table> {\n }\n getShowWorldMapMarkers = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:1263\n sendBuffDropped = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NWBData.lua:315\n openConfig = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:2852\n dragonLib = <table> {\n }\n getGuildNpcDialogue = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:1652\n versionCheck = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NWBData.lua:1181\n getMiddle0 = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:1530\n detectedPlayers = <table> {\n }\n monsterYell = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:906\n openLayerFrame = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:6305\n fixMapMarkers = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:5563\n getShowDmfLogon = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:1842\n setMiddle10 = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:1499\n getGuildDataStatus = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NWBData.lua:251\n getExpiredTimersDuration = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:1833\n setShowDmfLogon = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:1838\n getMySongflowerOnly = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:1737\n openBuffListFrame = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:5821\n recalcBuffListFrame = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:5865\n getMiddle10 = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:1503\n db = <table> {\n }\n getFlashMinimized = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:1360\n UnregisterAllComm = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:174\n SetEnabledState = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:424\n setFlashMinimized = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:1356\n setCurrentLayerText = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:7091\n timerCleanup = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:2091\n untrackBuff = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:1938\n createEnabledLayerButton = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:6670\n setGuild10 = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:1571\n setShowTuberWorldmapMarkers = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:1780\n setMmColor = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:1306\n createDragonMarkers = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:4366\n getShowAllAlts = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:1351\n print = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:374\n setChat5 = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:1445\n getChat5 = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:1449\n setLayered = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:2073\n getClosestDragon = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:3651\n getTimeStampZone = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:1253\n openLayerMapFrame = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:7500\n dragonLibPins = <table> {\n }\n getShowTuberWorldmapMarkers = <function> defined @Interface\\AddOns\\NovaWorldBuffs\\Options.lua:1785\n g",
 			["stack"] = "Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs-1.71.lua:7332: in function `mapCurrentLayer'\nInterface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs-1.71.lua:7054: in function <Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:7047>",
 			["session"] = 1110,
 			["counter"] = 13,
-		}, -- [114]
+		}, -- [113]
 		{
 			["message"] = "Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs-1.71.lua:7807: attempt to index field '?' (a nil value)",
 			["time"] = "2020/07/22 11:52:07",
@@ -912,7 +904,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs-1.71.lua:7807: in main chunk",
 			["session"] = 1111,
 			["counter"] = 2,
-		}, -- [115]
+		}, -- [114]
 		{
 			["message"] = "Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs-1.71.lua:7064: attempt to call method 'recalcMinimapLayerFrame' (a nil value)",
 			["time"] = "2020/07/22 11:52:11",
@@ -920,13 +912,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs-1.71.lua:7064: in function <Interface\\AddOns\\NovaWorldBuffs\\NovaWorldBuffs.lua:7047>",
 			["session"] = 1111,
 			["counter"] = 2,
-		}, -- [116]
-		{
-			["message"] = "(null)",
-			["time"] = "2020/07/11 19:09:15",
-			["session"] = 1111,
-			["counter"] = 140,
-		}, -- [117]
+		}, -- [115]
 		{
 			["message"] = "Interface\\AddOns\\EasyLoot\\EasyLoot-3.3.1.lua:131: Attempt to register unknown event \"CONFIRM_DISENCHANT_ROLL\"",
 			["time"] = "2020/07/22 16:41:32",
@@ -934,37 +920,37 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `RegisterEvent'\nInterface\\AddOns\\EasyLoot\\EasyLoot-3.3.1.lua:131: in function `EasyLoot_OnLoad'\n[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
 			["session"] = 1117,
 			["counter"] = 2,
-		}, -- [118]
+		}, -- [116]
 		{
 			["message"] = "EasyLootFilterItem: Set bytes attribute on EditBox element instead of child FontString",
-			["time"] = "2020/07/22 16:41:35",
 			["session"] = 1117,
+			["time"] = "2020/07/22 16:41:35",
+			["counter"] = 4,
+		}, -- [117]
+		{
+			["message"] = "EasyLootItemLevel: Set bytes attribute on EditBox element instead of child FontString",
+			["session"] = 1117,
+			["time"] = "2020/07/22 16:41:35",
+			["counter"] = 4,
+		}, -- [118]
+		{
+			["message"] = "EasyLootDestroyValue: Set bytes attribute on EditBox element instead of child FontString",
+			["session"] = 1117,
+			["time"] = "2020/07/22 16:41:35",
 			["counter"] = 4,
 		}, -- [119]
 		{
-			["message"] = "EasyLootItemLevel: Set bytes attribute on EditBox element instead of child FontString",
-			["time"] = "2020/07/22 16:41:35",
+			["message"] = "Frame EasyLootFilter: Unknown script element OnEscapePressed",
 			["session"] = 1117,
+			["time"] = "2020/07/22 16:41:35",
 			["counter"] = 4,
 		}, -- [120]
 		{
-			["message"] = "EasyLootDestroyValue: Set bytes attribute on EditBox element instead of child FontString",
-			["time"] = "2020/07/22 16:41:35",
-			["session"] = 1117,
-			["counter"] = 4,
-		}, -- [121]
-		{
-			["message"] = "Frame EasyLootFilter: Unknown script element OnEscapePressed",
-			["time"] = "2020/07/22 16:41:35",
-			["session"] = 1117,
-			["counter"] = 4,
-		}, -- [122]
-		{
 			["message"] = "EasyLootSearchText: Set bytes attribute on EditBox element instead of child FontString",
-			["time"] = "2020/07/22 16:41:35",
 			["session"] = 1117,
+			["time"] = "2020/07/22 16:41:35",
 			["counter"] = 3,
-		}, -- [123]
+		}, -- [121]
 		{
 			["message"] = "[string \"TargetFrame.name:SetPoint(\"LEFT\", self, 0, 20\")\"]:1: unfinished string near '<eof>'",
 			["time"] = "2020/07/22 17:09:47",
@@ -972,7 +958,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2783: in function <Interface\\FrameXML\\ChatFrame.lua:2776>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:338: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 1129,
 			["counter"] = 10,
-		}, -- [124]
+		}, -- [122]
 		{
 			["message"] = "[string \"TargetFrame.LeftText:ClearAllPoints()\"]:1: attempt to index field 'LeftText' (a nil value)",
 			["time"] = "2020/07/22 17:12:18",
@@ -980,7 +966,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"TargetFrame.LeftText:ClearAllPoints()\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2783: in function <Interface\\FrameXML\\ChatFrame.lua:2776>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:338: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 1129,
 			["counter"] = 7,
-		}, -- [125]
+		}, -- [123]
 		{
 			["message"] = "[string \"TargetFrame.LeftText:SetPoint(\"LEFT\", Targe...\"]:1: attempt to index field 'LeftText' (a nil value)",
 			["time"] = "2020/07/22 17:12:01",
@@ -988,7 +974,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"TargetFrame.LeftText:SetPoint(\"LEFT\", Targe...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2783: in function <Interface\\FrameXML\\ChatFrame.lua:2776>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:338: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 1129,
 			["counter"] = 9,
-		}, -- [126]
+		}, -- [124]
 		{
 			["message"] = "[string \"TradingSkillIcon:CreateBeautyBorder(8)\"]:1: attempt to index global 'TradingSkillIcon' (a nil value)",
 			["time"] = "2020/07/22 17:57:51",
@@ -996,7 +982,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"TradingSkillIcon:CreateBeautyBorder(8)\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 1142,
 			["counter"] = 1,
-		}, -- [127]
+		}, -- [125]
 		{
 			["message"] = "[string \"TradeSkillIcon:CreateBeautyBorder(8)\"]:1: attempt to index global 'TradeSkillIcon' (a nil value)",
 			["time"] = "2020/07/22 17:58:01",
@@ -1004,7 +990,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"TradeSkillIcon:CreateBeautyBorder(8)\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 1142,
 			["counter"] = 1,
-		}, -- [128]
+		}, -- [126]
 		{
 			["message"] = "[string \"TradeSkillReagent1Icon:CreateBeautyBorder(8...\"]:1: attempt to index global 'TradeSkillReagent1Icon' (a nil value)",
 			["time"] = "2020/07/22 17:59:41",
@@ -1012,7 +998,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"TradeSkillReagent1Icon:CreateBeautyBorder(8...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 1142,
 			["counter"] = 1,
-		}, -- [129]
+		}, -- [127]
 		{
 			["message"] = "[string \"TradeSkillReagent1IconTexture:CreateBeautyB...\"]:1: attempt to call method 'CreateBeautyBorder' (a nil value)",
 			["time"] = "2020/07/22 17:59:47",
@@ -1020,6 +1006,120 @@ BugGrabberDB = {
 			["stack"] = "[string \"TradeSkillReagent1IconTexture:CreateBeautyB...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 1142,
 			["counter"] = 1,
+		}, -- [128]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\RestackBags.lua:106: Attempt to register unknown event \"GUILDBANKFRAME_OPENED\"",
+			["time"] = "2020/07/23 19:41:16",
+			["locals"] = "(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = \"GUILDBANKFRAME_OPENED\"\n",
+			["stack"] = "[C]: in function `RegisterEvent'\nInterface\\AddOns\\xVermin\\RestackBags.lua:106: in main chunk",
+			["session"] = 1156,
+			["counter"] = 1,
+		}, -- [129]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\RestackBags.lua:9: attempt to call global 'kRestack' (a nil value)",
+			["time"] = "2020/07/23 19:41:37",
+			["locals"] = "s = \"\"\n(*temporary) = nil\n(*temporary) = \"\"\n(*temporary) = \"attempt to call global 'kRestack' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\RestackBags.lua:9: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 1156,
+			["counter"] = 1,
 		}, -- [130]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\RestackBags.lua:245: attempt to index upvalue 'AS' (a nil value)",
+			["time"] = "2020/07/23 19:43:11",
+			["locals"] = "loc = nil\nsilent = nil\ntab = nil\n(*temporary) = nil\n(*temporary) = \"\"\n(*temporary) = \"auto (%a+)\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index upvalue 'AS' (a nil value)\"\nrestacker = nil\nkR = \"|cff44ccffk|cffffffaaRestack|cffffffff\"\nAS = nil\ngreen = \"|cff55ff55\"\nred = \"|cffff5555\"\nwhite = \"|cffffffff\"\ntabswap = nil\ncontainer = <table> {\n bags = <table> {\n }\n guild = <table> {\n }\n bank = <table> {\n }\n}\ncoYield = <function> defined @Interface\\AddOns\\xVermin\\RestackBags.lua:199\nf = <unnamed> {\n 0 = <userdata>\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\RestackBags.lua:245: in function `kRestack'\nInterface\\AddOns\\xVermin\\RestackBags.lua:9: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 1157,
+			["counter"] = 1,
+		}, -- [131]
+		{
+			["message"] = "Error loading Interface\\AddOns\\xVermin\\RestackBags.lua",
+			["session"] = 1158,
+			["time"] = "2020/07/23 19:45:36",
+			["counter"] = 3,
+		}, -- [132]
+		{
+			["message"] = "Interface\\AddOns\\kRestack\\kRestack-40000.1.lua:164: hooksecurefunc(): AdiBagsContainer1 is not a function",
+			["time"] = "2020/07/23 19:58:09",
+			["locals"] = "",
+			["stack"] = "[C]: in function `hooksecurefunc'\nInterface\\AddOns\\kRestack\\kRestack-40000.1.lua:164: in main chunk",
+			["session"] = 1164,
+			["counter"] = 1,
+		}, -- [133]
+		{
+			["message"] = "Interface\\AddOns\\kRestack\\kRestack-40000.1.lua:9: attempt to call global 'kRestack' (a table value)",
+			["time"] = "2020/07/23 20:01:22",
+			["locals"] = "s = \"\"\n(*temporary) = kRestack {\n 0 = <userdata>\n Text = kRestackText {\n }\n Icon = kRestackIcon {\n }\n Button = kRestackButton {\n }\n Right = kRestackRight {\n }\n Middle = kRestackMiddle {\n }\n Left = kRestackLeft {\n }\n}\n(*temporary) = \"\"\n(*temporary) = \"attempt to call global 'kRestack' (a table value)\"\n",
+			["stack"] = "Interface\\AddOns\\kRestack\\kRestack-40000.1.lua:9: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 1164,
+			["counter"] = 1,
+		}, -- [134]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\xVermin-54000.lua:274: attempt to index global 'AdiBagsContainer1' (a nil value)",
+			["time"] = "2020/07/23 20:02:58",
+			["locals"] = "frame = CVarSet {\n 0 = <userdata>\n}\nf = <unnamed> {\n 0 = <userdata>\n}\ntDelay = 0\nFastLoot = <function> defined @Interface\\AddOns\\xVermin\\xVermin.lua:245\nfaster = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = true\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'AdiBagsContainer1' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\xVermin-54000.lua:274: in main chunk",
+			["session"] = 1167,
+			["counter"] = 2,
+		}, -- [135]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'AttemptToSaveBindings()'.",
+			["time"] = "2020/07/11 19:23:02",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `AttemptToSaveBindings'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:2045: in function `SetSetBindings'\nInterface\\AddOns\\ItemRackOptions\\ItemRackOptions.lua:1041: in function `ReconcileSetBindings'\nInterface\\AddOns\\ItemRackOptions\\ItemRackOptions.lua:411: in function <Interface\\AddOns\\ItemRackOptions\\ItemRackOptions.lua:395>\nInterface\\AddOns\\cargBags_Nivaya\\filters-Filters.lua:132: in function `SaveSet'\nInterface\\AddOns\\ItemRackOptions\\ItemRackOptions.lua:272: in function `ButtonOnClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 1169,
+			["counter"] = 11,
+		}, -- [136]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:137: attempt to call method 'HookSkript' (a nil value)",
+			["time"] = "2020/07/23 20:24:37",
+			["locals"] = "ReplacedDebuffTypeColor = <table> {\n  = <table> {\n }\n Disease = <table> {\n }\n Poison = <table> {\n }\n Curse = <table> {\n }\n Magic = <table> {\n }\n none = <table> {\n }\n}\nframe = nil\nframeBorder = nil\nframeCount = nil\ncolor = nil\nB_spellId = nil\nD_spellId = nil\nB_unitCaster = nil\nD_unitCaster = nil\nSkinTarget = <function> defined @Interface\\AddOns\\xVermin\\SkinBuffs.lua:15\nSkinPet = <function> defined @Interface\\AddOns\\xVermin\\SkinBuffs.lua:81\n(*temporary) = nil\n(*temporary) = TargetFrame {\n 0 = <userdata>\n debuffs = TargetFrameDebuffs {\n }\n portrait = TargetFramePortrait {\n }\n totFrame = TargetFrameToT {\n }\n raidTargetIcon = TargetFrameTextureFrameRaidTargetIcon {\n }\n highLevelTexture = TargetFrameTextureFrameHighLevelTexture {\n }\n petBattleIcon = TargetFrameTextureFramePetBattleIcon {\n }\n prestigePortrait = TargetFrameTextureFramePrestigePortrait {\n }\n showAuraCount = true\n showLeader = true\n healthbar = TargetFrameHealthBar {\n }\n pvpIcon = TargetFrameTextureFramePVPIcon {\n }\n questIcon = TargetFrameTextureFrameQuestIcon {\n }\n deadText = TargetFrameTextureFrameDeadText {\n }\n noTextPrefix = true\n buffs = TargetFrameBuffs {\n }\n nameBackground = TargetFrameNameBackground {\n }\n showLevel = true\n levelText = TargetFrameTextureFrameLevelText {\n }\n leaderIcon = TargetFrameTextureFrameLeaderIcon {\n }\n statusSign = -1\n unit = \"target\"\n showPVP = true\n borderTexture = TargetFrameTextureFrameTexture {\n }\n showPortrait = true\n TOT_AURA_ROW_WIDTH = 101\n statusCounter = 0\n unconsciousText = TargetFrameTextureFrameUnconsciousText {\n }\n manabar = TargetFrameManaBar {\n }\n auraRows = 0\n unitHPPercent = 1\n spellbar = TargetFrameSpellBar {\n }\n prestigeBadge = TargetFrameTextureFramePrestigeBadge {\n }\n menu = <function> defined @Interface\\FrameXML\\TargetFrame.lua:92\n showClassification = true\n textureFrame = TargetFrameTextureFrame {\n }\n name = TargetFrameTextureFrameName {\n }\n Background = TargetFrameBackground {\n }\n}\n(*temporary) = \"OnUpdate\"\n(*temporary) = <function> defined @Interface\\AddOns\\xVermin\\SkinBuffs.lua:15\n(*temporary) = \"attempt to call method 'HookSkript' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:137: in main chunk",
+			["session"] = 1176,
+			["counter"] = 1,
+		}, -- [137]
+		{
+			["message"] = "(null)",
+			["session"] = 1176,
+			["time"] = "2020/07/11 19:09:15",
+			["counter"] = 155,
+		}, -- [138]
+		{
+			["message"] = "[string \"print(UnitBuff(\"target\"))\"]:1: Usage: UnitBuff(\"unit\", [index][, \"filter\"])",
+			["time"] = "2020/07/23 20:28:52",
+			["locals"] = "(*temporary) = \"target\"\n",
+			["stack"] = "[C]: in function `UnitBuff'\n[string \"print(UnitBuff(\"target\"))\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 1178,
+			["counter"] = 1,
+		}, -- [139]
+		{
+			["message"] = "Error loading Interface\\AddOns\\xVermin\\AutoSellJunk.lua",
+			["session"] = 1182,
+			["time"] = "2020/07/23 20:54:32",
+			["counter"] = 3,
+		}, -- [140]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\AutoSellJunk.lua:9: attempt to perform arithmetic on global 'itemStackCount' (a nil value)",
+			["time"] = "2020/07/23 20:59:34",
+			["locals"] = "(for index) = 0\n(for limit) = 4\n(for step) = 1\nbag = 0\n(for index) = 8\n(for limit) = 16\n(for step) = 1\nslot = 8\nname = \"|cff9d9d9d|Hitem:5119::::::::18:::::::|h[Fine Loose Hair]|h|r\"\n(*temporary) = <function> defined @Interface\\AddOns\\xVermin\\Chat.lua:40\n(*temporary) = ChatFrame1 {\n GatherSelectedText = <function> defined =[C]:-1\n RefreshIfNecessary = <function> defined =[C]:-1\n OnPostShow = <function> defined =[C]:-1\n CalculateLineAlphaValueFromTimestamp = <function> defined =[C]:-1\n ScrollUp = <function> defined =[C]:-1\n tellTimer = 186010.688000\n fadeDurationSecs = 3\n GetFading = <function> defined =[C]:-1\n IsTextCopyable = <function> defined =[C]:-1\n shouldFadeAfterInactivity = true\n SetIndentedWordWrap = <function> defined =[C]:-1\n init = 0\n GetJustifyV = <function> defined =[C]:-1\n ScrollToBottom = <function> defined =[C]:-1\n GetMaxLines = <function> defined =[C]:-1\n GetIndentedWordWrap = <function> defined =[C]:-1\n buttonSide = \"left\"\n GetFont = <function> defined =[C]:-1\n checkedGMOTD = true\n SetMaxLines = <function> defined =[C]:-1\n CalculateSelectingCharacterIndicesForVisibleLine = <function> defined =[C]:-1\n OnPostUpdate = <function> defined =[C]:-1\n RefreshDisplay = <function> defined =[C]:-1\n SetFontObject = <function> defined =[C]:-1\n textIsCopyable = false\n SetOnScrollChangedCallback = <function> defined =[C]:-1\n CalculateNumVisibleLines = <function> defined =[C]:-1\n overrideFadeTimestamp = 186010.688000\n MarkDisplayDirty = <function> defined =[C]:-1\n GetMessageInfo = <function> defined =[C]:-1\n GetOnScrollChangedCallback = <function> defined =[C]:-1\n AtTop = <function> defined =[C]:-1\n GetFontObject = <function> defined =[C]:-1\n fontStringPool = <table> {\n }\n CanEffectivelyFade = <function> defined =[C]:-1\n OnPreSizeChanged = <function> defined =[C]:-1\n GetScrollOffset = <function> defined =[C]:-1\n GetSpacing = <function> defined =[C]:-1\n OnPreLoad = <function> defined =[C]:-1\n SetSpacing = <function> defined =[C]:-1\n name = \"General\"\n CalculateLineSpacing = <function> defined =[C]:-1\n AddMessage = <function> defined @Interface\\AddOns\\xVermin\\Chat.lua:40\n InitializeFontableFrame = <function> defined =[C]:-1\n GetShadowColor = <function> defined =[C]:-1\n isUninteractable = false\n SetOnTextCopiedCallback = <function> defined =[C]:-1\n mouseOutTime = 15.883001\n RemoveMessagesByPredicate = <function> defined =[C]:-1\n TransformMessages = <function> defined =[C]:-1\n SetShadowColor = <function> defined =[C]:-1\n buttonFrame = ChatFrame1ButtonFrame {\n }\n HasFontObject = <function> defined =[C]:-1\n isDocked = 1\n GetOnTextCopiedCallback = <function> defined =[C]:-1\n SetFading = <function> defined =[C]:-1\n OnPostHide = <function> defined =[C]:-1\n alternativeDefaultLanguage = \"Orcish\"\n isInitialized = 1\n GetNumVisibleLines = <function> defined =[C]:-1\n GetInsertMode = <function> defined =[C]:-1\n SetTimeVisible = <function> defined =[C]:-1\n hasOwnFontObject = true\n Clear = <function> defined =[C]:-1\n oldAlpha = 0\n channelList = <table> {\n }\n GetTimeVisible = <function> defined =[C]:-1\n MarkLayoutDirty = <function> defined =[C]:-1\n SetTextCopyable = <function> defined =[C]:-1\n BackFillMessage = <function> defined =[C]:-1\n UnpackageEntry = <function> defined =[C]:-1\n FontStringContainer = <unnamed> {\n }\n SetShadowOffset = <function> defined =[C]:-1\n messageTypeList = <table> {\n }\n flashTimer = 0\n timeVisibleSecs = 120\n PackageEntry = <function> defined =[C]:-1\n chatframe = ChatFrame1 {\n }\n MakeFontObjectCustom = <function> defined =[C]:-1\n SetPoint = <function> defined @Interface\\AddOns\\xVermin\\Chat.lua:186\n fontObject = table: 00000204210F8670 {\n }\n SetInsertMode = <function> defined =[C]:-1\n mouseInTime = 0\n UpdateSelectingText = <function> defined =[C]:-1\n zoneChannelList = <table> {\n }\n SetScrollOffset = <function> defined =[C]:-1\n onDisplayRefreshedCallback = <function> defined =[C]:-1\n insertMode = 2\n ResetSelectingText = <function> defined =[C]:-1\n GetTextColor = <function> defined =[C]:-1\n CallOnDisplayRefreshed = <function> defined =[C]:-1\n 0 = <userdata>\n IsSelectingText = <function> defined =[C]:-1\n OnFontObjec",
+			["stack"] = "Interface\\AddOns\\xVermin\\AutoSellJunk.lua:9: in function <Interface\\AddOns\\xVermin\\AutoSellJunk.lua:1>",
+			["session"] = 1185,
+			["counter"] = 1,
+		}, -- [141]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\AutoSellJunk.lua:9: attempt to concatenate global 'itemStackCount' (a nil value)",
+			["time"] = "2020/07/23 21:00:13",
+			["locals"] = "(for index) = 0\n(for limit) = 4\n(for step) = 1\nbag = 0\n(for index) = 8\n(for limit) = 16\n(for step) = 1\nslot = 8\nname = \"|cff9d9d9d|Hitem:5119::::::::18:::::::|h[Fine Loose Hair]|h|r\"\n(*temporary) = <function> defined @Interface\\AddOns\\xVermin\\Chat.lua:40\n(*temporary) = ChatFrame1 {\n GatherSelectedText = <function> defined =[C]:-1\n RefreshIfNecessary = <function> defined =[C]:-1\n OnPostShow = <function> defined =[C]:-1\n CalculateLineAlphaValueFromTimestamp = <function> defined =[C]:-1\n ScrollUp = <function> defined =[C]:-1\n tellTimer = 186050.527000\n fadeDurationSecs = 3\n GetFading = <function> defined =[C]:-1\n IsTextCopyable = <function> defined =[C]:-1\n shouldFadeAfterInactivity = true\n SetIndentedWordWrap = <function> defined =[C]:-1\n init = 0\n GetJustifyV = <function> defined =[C]:-1\n ScrollToBottom = <function> defined =[C]:-1\n GetMaxLines = <function> defined =[C]:-1\n GetIndentedWordWrap = <function> defined =[C]:-1\n buttonSide = \"left\"\n GetFont = <function> defined =[C]:-1\n checkedGMOTD = true\n SetMaxLines = <function> defined =[C]:-1\n CalculateSelectingCharacterIndicesForVisibleLine = <function> defined =[C]:-1\n OnPostUpdate = <function> defined =[C]:-1\n RefreshDisplay = <function> defined =[C]:-1\n SetFontObject = <function> defined =[C]:-1\n textIsCopyable = false\n SetOnScrollChangedCallback = <function> defined =[C]:-1\n CalculateNumVisibleLines = <function> defined =[C]:-1\n overrideFadeTimestamp = 186050.527000\n MarkDisplayDirty = <function> defined =[C]:-1\n GetMessageInfo = <function> defined =[C]:-1\n GetOnScrollChangedCallback = <function> defined =[C]:-1\n AtTop = <function> defined =[C]:-1\n GetFontObject = <function> defined =[C]:-1\n fontStringPool = <table> {\n }\n CanEffectivelyFade = <function> defined =[C]:-1\n OnPreSizeChanged = <function> defined =[C]:-1\n GetScrollOffset = <function> defined =[C]:-1\n GetSpacing = <function> defined =[C]:-1\n OnPreLoad = <function> defined =[C]:-1\n SetSpacing = <function> defined =[C]:-1\n name = \"General\"\n CalculateLineSpacing = <function> defined =[C]:-1\n AddMessage = <function> defined @Interface\\AddOns\\xVermin\\Chat.lua:40\n InitializeFontableFrame = <function> defined =[C]:-1\n GetShadowColor = <function> defined =[C]:-1\n isUninteractable = false\n SetOnTextCopiedCallback = <function> defined =[C]:-1\n mouseOutTime = 14.583001\n RemoveMessagesByPredicate = <function> defined =[C]:-1\n TransformMessages = <function> defined =[C]:-1\n SetShadowColor = <function> defined =[C]:-1\n buttonFrame = ChatFrame1ButtonFrame {\n }\n HasFontObject = <function> defined =[C]:-1\n isDocked = 1\n GetOnTextCopiedCallback = <function> defined =[C]:-1\n SetFading = <function> defined =[C]:-1\n OnPostHide = <function> defined =[C]:-1\n alternativeDefaultLanguage = \"Orcish\"\n isInitialized = 1\n GetNumVisibleLines = <function> defined =[C]:-1\n GetInsertMode = <function> defined =[C]:-1\n SetTimeVisible = <function> defined =[C]:-1\n hasOwnFontObject = true\n Clear = <function> defined =[C]:-1\n oldAlpha = 0\n channelList = <table> {\n }\n GetTimeVisible = <function> defined =[C]:-1\n MarkLayoutDirty = <function> defined =[C]:-1\n SetTextCopyable = <function> defined =[C]:-1\n BackFillMessage = <function> defined =[C]:-1\n UnpackageEntry = <function> defined =[C]:-1\n FontStringContainer = <unnamed> {\n }\n SetShadowOffset = <function> defined =[C]:-1\n messageTypeList = <table> {\n }\n flashTimer = 0\n timeVisibleSecs = 120\n PackageEntry = <function> defined =[C]:-1\n chatframe = ChatFrame1 {\n }\n MakeFontObjectCustom = <function> defined =[C]:-1\n SetPoint = <function> defined @Interface\\AddOns\\xVermin\\Chat.lua:186\n fontObject = table: 00000204275C1D00 {\n }\n SetInsertMode = <function> defined =[C]:-1\n mouseInTime = 0\n UpdateSelectingText = <function> defined =[C]:-1\n zoneChannelList = <table> {\n }\n SetScrollOffset = <function> defined =[C]:-1\n onDisplayRefreshedCallback = <function> defined =[C]:-1\n insertMode = 2\n ResetSelectingText = <function> defined =[C]:-1\n GetTextColor = <function> defined =[C]:-1\n CallOnDisplayRefreshed = <function> defined =[C]:-1\n 0 = <userdata>\n IsSelectingText = <function> defined =[C]:-1\n OnFontObjec",
+			["stack"] = "Interface\\AddOns\\xVermin\\AutoSellJunk.lua:9: in function <Interface\\AddOns\\xVermin\\AutoSellJunk.lua:1>",
+			["session"] = 1186,
+			["counter"] = 1,
+		}, -- [142]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\AutoSellJunk.lua:5: Usage: GetItemInfo(itemID|\"name\"|\"itemlink\")",
+			["time"] = "2020/07/23 21:01:03",
+			["locals"] = "(*temporary) = nil\n",
+			["stack"] = "[C]: in function `GetItemInfo'\nInterface\\AddOns\\xVermin\\AutoSellJunk.lua:5: in function <Interface\\AddOns\\xVermin\\AutoSellJunk.lua:1>",
+			["session"] = 1187,
+			["counter"] = 1,
+		}, -- [143]
 	},
 }

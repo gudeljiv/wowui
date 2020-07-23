@@ -19,6 +19,7 @@ AutoCarrot.lua
 AutoBuyAmmo.lua
 AutoDismount.lua
 AutoRepair.lua
+AutoSellJunk.lua
 BestFood.lua
 Bindings.lua
 Chat.lua

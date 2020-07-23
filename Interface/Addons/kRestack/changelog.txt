@@ -1,0 +1,62 @@
+40000.1 -- 2010-10-13
+- 4.0 toc update.
+- "arg1" bug fix.
+
+1.1.1 -- 2009-12-08
+- 3.3 toc update.
+
+1.1 -- 2009-08-14
+- Fixed a bug with multiple "special" bags conflicting with each other.
+- Version bump.
+
+1.0.9 -- 2009-08-04
+- TOC updated to 3.2
+
+1.0.8 -- 2009-07-08
+- Some memory optimizations.
+- Extended bag hooking to cover all of the bag open/close events.
+
+1.0.7 -- 2009-06-16
+- Code optimizations.
+- In addition to restacking the player's bags, left-clicking the LDB plugin will now restack bank or guild vault when viewing them. 
+
+1.0.6 -- 2009-06-11
+- Item looping now resets properly after finding and moving a matching partial stack. The entire process should now be much more stable and orderly.
+- Special bags with partial stacks and no free bag slots should now be correctly filled with partial stacks from other bags.
+- Set the LDB plugin to load when an addon with LDB embedded is loaded.
+- Changed LDB data object type to "launcher".
+
+1.0.5a -- 2009-06-06
+- LDB conditionals in place.
+- File structure and toc changes. Removed LDB libs that should be loaded anyway if there's a display. 
+
+1.0.5 -- 2009-06-06
+- Fixed a bug in class/profession item sorting. A check wasn't in place to see if the item of the same type was a container, the result was bags in the inventory being equipped over the one already there.
+
+1.0.4 -- 2009-06-02
+- Throttled "OnUpdate" yield script.
+- Minor backpack hook change.
+- SavedVariables now account wide; settings still per-character.
+
+1.0.3 -- 2009-05-23
+- Removed auto-stacking from the TRADE_SHOW event.
+
+1.0.2a -- 2009-05-22
+- Added missing label text for LDB plugin.
+
+1.0.2 -- 2009-05-22
+- Added support for Data Broker. Left-click stacks bags, right-click opens menu.
+
+1.0.1 -- 2009-05-19
+- Fixed the handling of initializing saved variables when updating from 0.9
+- Fixed a bug that disabled guild tab switching when guild bank auto-stacking is turned off.
+
+1.0 -- 2009-05-18
+- Added support for restacking guild vault tabs.
+- Hooked bag auto-stack to LOOT_OPEN and TRADE_SHOW, and guild bank auto-stack to GUILDBANKFRAME_OPENED and SetCurrentGuildBankTab(i).
+- Extended auto-stack toggle to enable or disable bags, bank, or guild bank individually.
+- Will now move items that can go into special class/profession bags into those bags if possible (soul shards, herbs, arrows, etc).
+- Cleaned up and commented code.
+
+0.9 -- 2009-05-13
+- Added option to auto-stack when opening bags or bank, off by default. Toggle with '/restack auto'

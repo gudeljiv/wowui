@@ -19,57 +19,57 @@ local function SkinTarget()
 		TargetFrameManaBarText:SetScale(0.8)
 
 		for i = 1, 32 do
-			_, B_spellId, _, _, _, _, B_unitCaster = UnitBuff("target", i)
-			_, D_spellId, _, _, _, _, D_unitCaster = UnitDebuff("target", i)
+			-- _, B_spellId, _, _, _, _, B_unitCaster = UnitBuff("target", i)
+			-- _, D_spellId, _, _, _, _, D_unitCaster = UnitDebuff("target", i)
 
-			if (B_spellId) then
-				frame = _G["TargetFrameBuff" .. i]
-				frameBorder = _G["TargetFrameBuff" .. i .. "Border"]
-				frameCount = _G["TargetFrameBuff" .. i .. "Count"]
+			-- if (B_spellId) then
+			frame = _G["TargetFrameBuff" .. i]
+			frameBorder = _G["TargetFrameBuff" .. i .. "Border"]
+			frameCount = _G["TargetFrameBuff" .. i .. "Count"]
 
-				if (frameBorder ~= nil) then
-					frameBorder:Hide()
-				end
-
-				if (frameCount ~= nil) then
-					frameCount:SetFont(config.font.atari, config.buff.fontsize, config.buff.outline)
-					frameCount:SetPoint(unpack(config.buff.position))
-				end
-
-				if (frame ~= nil) then
-					frame:CreateBeautyBorder(config.buff.bordersize)
-					frame:SetBeautyBorderTexture(config.border.default)
-					frame:SetScale(config.buff.scale)
-				end
+			if (frameBorder ~= nil) then
+				frameBorder:Hide()
 			end
 
-			if (d_spellId) then
-				frame = _G["TargetFrameDebuff" .. i]
-				frameBorder = _G["TargetFrameDebuff" .. i .. "Border"]
-				frameCount = _G["TargetFrameDebuff" .. i .. "Count"]
-
-				if (frameBorder ~= nil) then
-					frameBorder:Hide()
-				end
-
-				if (frameCount ~= nil) then
-					frameCount:SetFont(config.font.atari, config.debuff.fontsize, config.debuff.outline)
-					frameCount:SetPoint(unpack(config.debuff.position))
-				end
-
-				if (select(4, UnitDebuff("target", i))) then
-					color = config.ReplacedDebuffTypeColor[select(4, UnitDebuff("target", i))]
-				else
-					color = config.ReplacedDebuffTypeColor["none"]
-				end
-
-				if (frame ~= nil) then
-					frame:CreateBeautyBorder(config.debuff.bordersize)
-					frame:SetBeautyBorderTexture(config.border.colorize)
-					frame:SetBeautyBorderColor(color.r, color.g, color.b)
-					frame:SetScale(config.buff.scale)
-				end
+			if (frameCount ~= nil) then
+				frameCount:SetFont(config.font.atari, config.buff.fontsize, config.buff.outline)
+				frameCount:SetPoint(unpack(config.buff.position))
 			end
+
+			if (frame ~= nil) then
+				frame:CreateBeautyBorder(config.buff.bordersize)
+				frame:SetBeautyBorderTexture(config.border.default)
+				frame:SetScale(config.buff.scale)
+			end
+			-- end
+
+			-- if (D_spellId) then
+			frame = _G["TargetFrameDebuff" .. i]
+			frameBorder = _G["TargetFrameDebuff" .. i .. "Border"]
+			frameCount = _G["TargetFrameDebuff" .. i .. "Count"]
+
+			if (frameBorder ~= nil) then
+				frameBorder:Hide()
+			end
+
+			if (frameCount ~= nil) then
+				frameCount:SetFont(config.font.atari, config.debuff.fontsize, config.debuff.outline)
+				frameCount:SetPoint(unpack(config.debuff.position))
+			end
+
+			if (select(4, UnitDebuff("target", i))) then
+				color = config.ReplacedDebuffTypeColor[select(4, UnitDebuff("target", i))]
+			else
+				color = config.ReplacedDebuffTypeColor["none"]
+			end
+
+			if (frame ~= nil) then
+				frame:CreateBeautyBorder(config.debuff.bordersize)
+				frame:SetBeautyBorderTexture(config.border.colorize)
+				frame:SetBeautyBorderColor(color.r, color.g, color.b)
+				frame:SetScale(config.buff.scale)
+			end
+			-- end
 		end
 	end
 end
@@ -77,55 +77,55 @@ end
 local function SkinPet()
 	if PetFrame:IsShown() then
 		for i = 1, 32 do
-			_, B_spellId = UnitBuff("pet", i)
-			_, D_spellId = UnitDebuff("pet", i)
+			-- _, B_spellId = UnitBuff("pet", i)
+			-- _, D_spellId = UnitDebuff("pet", i)
 
-			if (B_spellId) then
-				frame = _G["PetFrameBuff" .. i]
-				frameBorder = _G["PetFrameBuff" .. i .. "Border"]
-				frameCount = _G["PetFrameBuff" .. i .. "Count"]
+			-- if (B_spellId) then
+			frame = _G["PetFrameBuff" .. i]
+			frameBorder = _G["PetFrameBuff" .. i .. "Border"]
+			frameCount = _G["PetFrameBuff" .. i .. "Count"]
 
-				if (frameBorder ~= nil) then
-					frameBorder:Hide()
-				end
-
-				if (frameCount ~= nil) then
-					frameCount:SetFont(config.font.atari, config.petbuff.fontsize, config.petbuff.outline)
-					frameCount:SetPoint(unpack(config.petbuff.position))
-				end
-
-				if (frame ~= nil) then
-					frame:CreateBeautyBorder(config.petbuff.bordersize)
-					frame:SetBeautyBorderTexture(config.border.default)
-				end
+			if (frameBorder ~= nil) then
+				frameBorder:Hide()
 			end
 
-			if (D_spellId) then
-				frame = _G["PetFrameDebuff" .. i]
-				frameBorder = _G["PetFrameDebuff" .. i .. "Border"]
-				frameCount = _G["PetFrameBuff" .. i .. "Count"]
-
-				if (frameBorder ~= nil) then
-					frameBorder:Hide()
-				end
-
-				if (frameCount ~= nil) then
-					frameCount:SetFont(config.font.atari, config.petdebuff.fontsize, config.petdebuff.outline)
-					frameCount:SetPoint(unpack(config.petdebuff.position))
-				end
-
-				if (select(4, UnitDebuff("pet", i))) then
-					color = config.ReplacedDebuffTypeColor[select(4, UnitDebuff("target", i))]
-				else
-					color = config.ReplacedDebuffTypeColor["none"]
-				end
-
-				if (frame ~= nil) then
-					frame:CreateBeautyBorder(config.petdebuff.bordersize)
-					frame:SetBeautyBorderTexture(config.border.colorize)
-					frame:SetBeautyBorderColor(color.r, color.g, color.b)
-				end
+			if (frameCount ~= nil) then
+				frameCount:SetFont(config.font.atari, config.petbuff.fontsize, config.petbuff.outline)
+				frameCount:SetPoint(unpack(config.petbuff.position))
 			end
+
+			if (frame ~= nil) then
+				frame:CreateBeautyBorder(config.petbuff.bordersize)
+				frame:SetBeautyBorderTexture(config.border.default)
+			end
+			-- end
+
+			-- if (D_spellId) then
+			frame = _G["PetFrameDebuff" .. i]
+			frameBorder = _G["PetFrameDebuff" .. i .. "Border"]
+			frameCount = _G["PetFrameBuff" .. i .. "Count"]
+
+			if (frameBorder ~= nil) then
+				frameBorder:Hide()
+			end
+
+			if (frameCount ~= nil) then
+				frameCount:SetFont(config.font.atari, config.petdebuff.fontsize, config.petdebuff.outline)
+				frameCount:SetPoint(unpack(config.petdebuff.position))
+			end
+
+			if (select(4, UnitDebuff("pet", i))) then
+				color = config.ReplacedDebuffTypeColor[select(4, UnitDebuff("target", i))]
+			else
+				color = config.ReplacedDebuffTypeColor["none"]
+			end
+
+			if (frame ~= nil) then
+				frame:CreateBeautyBorder(config.petdebuff.bordersize)
+				frame:SetBeautyBorderTexture(config.border.colorize)
+				frame:SetBeautyBorderColor(color.r, color.g, color.b)
+			end
+			-- end
 		end
 	end
 end
