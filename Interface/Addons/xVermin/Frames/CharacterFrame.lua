@@ -46,6 +46,6 @@ local function BorderItemSlots()
 end
 
 local f = CreateFrame("Frame")
-frame:SetScript("OnEvent", BorderItemSlots)
-frame:RegisterEvent("UNIT_INVENTORY_CHANGED")
-frame:RegisterEvent("PLAYER_ENTERING_WORLD")
+f:SetScript("OnEvent", BorderItemSlots)
+f:RegisterEvent("UNIT_INVENTORY_CHANGED")
+f:RegisterEvent("PLAYER_ENTERING_WORLD")

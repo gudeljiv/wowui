@@ -247,7 +247,7 @@ AtlasLootClassic: enabled
 BiSTracker: disabled
 BlizzMove: enabled
 ClassicAutoDismount: enabled
-Demonly-FP: enabled
+Demonly-FP: disabled
 Leatrix_Maps: enabled
 ls_Toasts: enabled
 NeatPlatesHub: enabled

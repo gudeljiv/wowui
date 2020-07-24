@@ -13,7 +13,7 @@ AptechkaDB_Global = {
 	["useDebuffOrdering"] = false,
 	["debuffSize"] = 16,
 	["showAFK"] = true,
-	["nameFontSize"] = 16,
+	["unitGrowth"] = "BOTTOM",
 	["groupGrowth"] = "BOTTOM",
 	["width"] = 100,
 	["GridSkin"] = {
@@ -25,8 +25,8 @@ AptechkaDB_Global = {
 	},
 	["healthOrientation"] = "HORIZONTAL",
 	["cropNamesLen"] = 15,
-	["unitGrowth"] = "BOTTOM",
 	["fgColorMultiplier"] = 0,
+	["nameFontSize"] = 16,
 }
 AptechkaConfigCustom = {
 	["HUNTER"] = {

@@ -12,34 +12,40 @@ ReplacedDebuffTypeColor[""] = ReplacedDebuffTypeColor["none"]
 
 local frame, frameBorder, frameCount, color, B_spellId, D_spellId, B_unitCaster, D_unitCaster
 
-local function SkinTarget()
-	if TargetFrame:IsShown() then
+local function SkinTarget(init)
+	if TargetFrame:IsShown() and init then
 		TargetFrameHealthBarText:ClearAllPoints()
 		TargetFrameHealthBarText:SetPoint("CENTER", TargetFrame, "CENTER", -50, 7)
 		TargetFrameManaBarText:SetScale(0.8)
 
 		for i = 1, 32 do
-			-- _, B_spellId, _, _, _, _, B_unitCaster = UnitBuff("target", i)
-			-- _, D_spellId, _, _, _, _, D_unitCaster = UnitDebuff("target", i)
+			_, B_spellId, _, _, _, _, B_unitCaster = UnitBuff("target", i)
+			_, D_spellId, _, _, _, _, D_unitCaster = UnitDebuff("target", i)
 
 			-- if (B_spellId) then
 			frame = _G["TargetFrameBuff" .. i]
 			frameBorder = _G["TargetFrameBuff" .. i .. "Border"]
 			frameCount = _G["TargetFrameBuff" .. i .. "Count"]
 
-			if (frameBorder ~= nil) then
-				frameBorder:Hide()
-			end
+			if UnitIsPlayer("target") then
+				if (frameBorder ~= nil) then
+					frameBorder:Hide()
+				end
 
-			if (frameCount ~= nil) then
-				frameCount:SetFont(config.font.atari, config.buff.fontsize, config.buff.outline)
-				frameCount:SetPoint(unpack(config.buff.position))
-			end
+				if (frameCount ~= nil) then
+					frameCount:SetFont(config.font.atari, config.buff.fontsize, config.buff.outline)
+					frameCount:SetPoint(unpack(config.buff.position))
+				end
 
-			if (frame ~= nil) then
-				frame:CreateBeautyBorder(config.buff.bordersize)
-				frame:SetBeautyBorderTexture(config.border.default)
-				frame:SetScale(config.buff.scale)
+				if (frame ~= nil) then
+					frame:CreateBeautyBorder(config.buff.bordersize)
+					frame:SetBeautyBorderTexture(config.border.default)
+					frame:SetScale(config.buff.scale)
+				end
+			else
+				if (frame ~= nil) then
+					frame:Hide()
+				end
 			end
 			-- end
 
@@ -47,27 +53,32 @@ local function SkinTarget()
 			frame = _G["TargetFrameDebuff" .. i]
 			frameBorder = _G["TargetFrameDebuff" .. i .. "Border"]
 			frameCount = _G["TargetFrameDebuff" .. i .. "Count"]
+			if D_unitCaster == "player" then
+				if (frameBorder ~= nil) then
+					frameBorder:Hide()
+				end
 
-			if (frameBorder ~= nil) then
-				frameBorder:Hide()
-			end
+				if (frameCount ~= nil) then
+					frameCount:SetFont(config.font.atari, config.debuff.fontsize, config.debuff.outline)
+					frameCount:SetPoint(unpack(config.debuff.position))
+				end
 
-			if (frameCount ~= nil) then
-				frameCount:SetFont(config.font.atari, config.debuff.fontsize, config.debuff.outline)
-				frameCount:SetPoint(unpack(config.debuff.position))
-			end
+				if (select(4, UnitDebuff("target", i))) then
+					color = config.ReplacedDebuffTypeColor[select(4, UnitDebuff("target", i))]
+				else
+					color = config.ReplacedDebuffTypeColor["none"]
+				end
 
-			if (select(4, UnitDebuff("target", i))) then
-				color = config.ReplacedDebuffTypeColor[select(4, UnitDebuff("target", i))]
+				if (frame ~= nil) then
+					frame:CreateBeautyBorder(config.debuff.bordersize)
+					frame:SetBeautyBorderTexture(config.border.colorize)
+					frame:SetBeautyBorderColor(color.r, color.g, color.b)
+					frame:SetScale(config.buff.scale)
+				end
 			else
-				color = config.ReplacedDebuffTypeColor["none"]
-			end
-
-			if (frame ~= nil) then
-				frame:CreateBeautyBorder(config.debuff.bordersize)
-				frame:SetBeautyBorderTexture(config.border.colorize)
-				frame:SetBeautyBorderColor(color.r, color.g, color.b)
-				frame:SetScale(config.buff.scale)
+				if (frame ~= nil) then
+					frame:Hide()
+				end
 			end
 			-- end
 		end
@@ -130,7 +141,9 @@ local function SkinPet()
 	end
 end
 
-hooksecurefunc("TargetFrame_UpdateAuras", SkinTarget)
+-- hooksecurefunc("TargetFrame_UpdateAuras", SkinTarget)
+TargetFrame:HookScript("OnUpdate", SkinTarget)
+SkinTarget(true)
 
 local pf = CreateFrame("Frame")
 pf:RegisterUnitEvent("UNIT_AURA", "pet")

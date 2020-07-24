@@ -337,45 +337,6 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Mxyzptlk"] = {
 		["m_aQuestList"] = {
-			["The Red Messenger - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Deathknell - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Piercing the Veil - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Tainted Scroll - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Rattling the Rattlecages - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Marla's Last Wish - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Mindless Ones - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Warlock - true"] = {
-				["m_bChecked"] = true,
-			},
-			["The Damned - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Night Web's Hollow - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Rude Awakening - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Scarlet Crusade - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Scavenging Deathknell - false"] = {
-				["m_bChecked"] = true,
-			},
 		},
 	},
 	["Dreadmist|Gheylord"] = {
@@ -528,7 +489,7 @@ MonkeyQuestConfig = {
 			["Betrayal from Within - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Ishamuhale - false"] = {
+			["Enraged Thunder Lizards - false"] = {
 				["m_bChecked"] = true,
 			},
 			["The Guns of Northwatch - false"] = {
@@ -681,7 +642,7 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 892.066589355469,
+		["m_iFrameBottom"] = 633.622131347656,
 		["m_bHideCompletedQuests"] = true,
 		["m_iFrameLeft"] = 1670.73352050781,
 		["m_bColourDoneOrFailed"] = true,

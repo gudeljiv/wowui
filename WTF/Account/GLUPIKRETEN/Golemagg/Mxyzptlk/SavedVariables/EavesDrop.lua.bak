@@ -187,12 +187,12 @@ EavesDropStatsDB = {
 					},
 					["Melee Attack"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/24/20 11:57:14|r\n|Hunit:Player-4465-01CE7466:Mxyzptlk|hMxyzptlk's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-0-158-1501-00001A5A6B:Mindless Zombie|hMindless Zombie|h for |cffffffff3|r |cffffffffPhysical|r.",
-							["amount"] = 3,
+							["time"] = "|cffffffff07/24/20 12:38:27|r\n|Hunit:Player-4465-01CE7466:Mxyzptlk|hMxyzptlk's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-0-158-1506-00001AB02C:Scarlet Convert|hScarlet Convert|h for |cffffffff5|r |cffffffffPhysical|r.",
+							["amount"] = 5,
 						},
 						[2] = {
-							["time"] = "|cffffffff07/24/20 12:00:23|r\n|Hunit:Player-4465-01CE7466:Mxyzptlk|hMxyzptlk's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-0-158-1501-00001A3599:Mindless Zombie|hMindless Zombie|h for |cffffffff2|r |cffffffffPhysical|r.(3 Overkill) (Critical)",
-							["amount"] = 5,
+							["time"] = "|cffffffff07/24/20 12:43:16|r\n|Hunit:Player-4465-01CE7466:Mxyzptlk|hMxyzptlk's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-0-158-1935-00001AB279:Tirisfal Farmhand|hTirisfal Farmhand|h for |cffffffff2|r |cffffffffPhysical|r.(5 Overkill) (Critical)",
+							["amount"] = 7,
 						},
 					},
 					["Immolate"] = {
@@ -223,8 +223,8 @@ EavesDropStatsDB = {
 				["hit"] = {
 					["Physical"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/24/20 12:10:08|r\n|Hicon:128:source|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-0-158-1513-00001A001E:Mangy Duskbat|hMangy Duskbat's|h melee swing hits |Hunit:Player-4465-01CE7466:Mxyzptlk|hMxyzptlk|h for |cffff13135|r |cffff1313Physical|r.",
-							["amount"] = 5,
+							["time"] = "|cffffffff07/24/20 12:45:15|r\n|Hicon:128:source|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-0-158-1934-00001AB310:Tirisfal Farmer|hTirisfal Farmer's|h melee swing hits |Hunit:Player-4465-01CE7466:Mxyzptlk|hMxyzptlk|h for |cffff131315|r |cffff1313Physical|r.",
+							["amount"] = 15,
 						},
 						[2] = {
 						},
