@@ -60,9 +60,9 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
-			["moveFrames"] = false,
+			["forceColor"] = false,
 			["locked"] = false,
-			["fixedStrata"] = true,
+			["moveFrames"] = false,
 			["objSettings"] = {
 				["PitBull4"] = {
 					["enabled"] = false,
@@ -274,17 +274,17 @@ ChocolateBarDB = {
 					["customLabel"] = "R",
 				},
 			},
-			["desaturated"] = false,
 			["gap"] = 3,
-			["forceColor"] = false,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["fixedStrata"] = true,
 			["fontName"] = "Friz Quadrata TT",
 			["textOffset"] = 2,
 			["height"] = 20,
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["desaturated"] = false,
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
 			},
@@ -299,7 +299,7 @@ ChocolateBarDB = {
 }
 CB_PlayedTime = {
 	["Mxzq-"] = {
-		["total"] = 96978,
+		["total"] = 101692,
 	},
 	["Greenwise-"] = {
 		["total"] = 79871,
@@ -311,7 +311,7 @@ CB_PlayedTime = {
 		["total"] = 213,
 	},
 	["Mxyzptlk-"] = {
-		["total"] = 5388,
+		["total"] = 7704,
 	},
 	["Elohssa-"] = {
 		["total"] = 3552,
@@ -323,10 +323,10 @@ CB_PlayedTime = {
 		["total"] = 18945,
 	},
 	["Mxyz-"] = {
-		["total"] = 3771,
+		["total"] = 5871,
 	},
 	["Vermin-"] = {
-		["total"] = 110936,
+		["total"] = 118940,
 	},
 	["Ozrencic-"] = {
 		["total"] = 853,

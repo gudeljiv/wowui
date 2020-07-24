@@ -14,9 +14,9 @@ Postal3ClassicDB = {
 		["BlackBook"] = {
 			["alts"] = {
 				"Mxyzptlk|Golemagg|Horde|6|WARLOCK", -- [1]
-				"Mxyz|Golemagg|Horde|3|PRIEST", -- [2]
-				"Mxzq|Golemagg|Horde|19|HUNTER", -- [3]
-				"Vermin|Golemagg|Horde|22|WARRIOR", -- [4]
+				"Mxyz|Golemagg|Horde|5|PRIEST", -- [2]
+				"Mxzq|Golemagg|Horde|20|HUNTER", -- [3]
+				"Vermin|Golemagg|Horde|23|WARRIOR", -- [4]
 			},
 		},
 	},
@@ -48,8 +48,8 @@ Postal3ClassicDB = {
 		["Vermin - Golemagg"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Mxyzptlk|Golemagg|Horde", -- [1]
-					"Mxyz|Golemagg|Horde", -- [2]
+					"Mxyz|Golemagg|Horde", -- [1]
+					"Mxyzptlk|Golemagg|Horde", -- [2]
 					"Kamenac|Golemagg|Horde", -- [3]
 				},
 			},

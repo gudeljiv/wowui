@@ -354,15 +354,6 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Mxyz"] = {
 		["m_aQuestList"] = {
-			["The Damned - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Deathknell - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Rattling the Rattlecages - false"] = {
-				["m_bChecked"] = true,
-			},
 		},
 	},
 	["Genesis|Pepecocorita"] = {
@@ -629,7 +620,7 @@ MonkeyQuestConfig = {
 			["The Barrens - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Weapons of Choice - false"] = {
+			["The Guns of Northwatch - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Stolen Silver - false"] = {
@@ -641,7 +632,7 @@ MonkeyQuestConfig = {
 			["Enraged Thunder Lizards - false"] = {
 				["m_bChecked"] = true,
 			},
-			["The Guns of Northwatch - false"] = {
+			["Weapons of Choice - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -1032,7 +1023,7 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 578.066467285156,
+		["m_iFrameBottom"] = 929.39990234375,
 		["m_bHideTitleButtons"] = false,
 		["m_iFrameLeft"] = 1670.73352050781,
 		["m_bColourDoneOrFailed"] = true,

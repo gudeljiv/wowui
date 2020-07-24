@@ -243,6 +243,14 @@ f:SetScript(
 )
 f:RegisterEvent("PLAYER_ENTERING_WORLD")
 
+local function TargetFrameTextAdjustment()
+	TargetFrameHealthBarText:ClearAllPoints()
+	TargetFrameHealthBarText:SetPoint("CENTER", TargetFrame, "CENTER", -50, 7)
+	TargetFrameManaBarText:SetScale(0.8)
+end
+
+hooksecurefunc("TargetFrame_CheckClassification", TargetFrameTextAdjustment)
+
 -------------------------------------------
 -- Fast loot function
 -------------------------------------------

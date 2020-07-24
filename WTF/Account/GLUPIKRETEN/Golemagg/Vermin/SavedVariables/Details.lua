@@ -7,167 +7,735 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 156,
 					["tipo"] = 2,
+					["combatId"] = 77,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.006632,
-							["on_hold"] = false,
+							["flag_original"] = 66834,
+							["totalabsorbed"] = 743.001307,
 							["damage_from"] = {
-								["Hecklefang Stalker"] = true,
+								["High Inquisitor Fairbanks"] = true,
 							},
 							["targets"] = {
+								["High Inquisitor Fairbanks"] = 9010,
 							},
 							["pets"] = {
 							},
-							["end_time"] = 1595599342,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["classe"] = "WARRIOR",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 9010.001307,
 							["friendlyfire"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.006632,
-							["spec"] = 71,
+							["serial"] = "Player-4465-010DF944",
 							["dps_started"] = false,
-							["total"] = 0.006632,
-							["classe"] = "WARRIOR",
-							["serial"] = "Player-4465-00E5831F",
-							["nome"] = "Vermin",
+							["end_time"] = 1595624007,
+							["damage_taken"] = 269.001307,
+							["total"] = 9010.001307,
+							["boss_fight_component"] = true,
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 252.006632,
-							["start_time"] = 1595599342,
-							["delay"] = 0,
-							["last_event"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.005951,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Vermin"] = 252,
-							},
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 252.005951,
-							["monster"] = true,
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["total"] = 252.005951,
-							["end_time"] = 1595599342,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Hecklefang Stalker",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 1,
+									["Thunder Clap"] = {
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 56,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 44,
+										["n_max"] = 79,
 										["targets"] = {
-											["Vermin"] = 252,
+											["High Inquisitor Fairbanks"] = 79,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 196,
-										["n_min"] = 28,
+										["n_dmg"] = 79,
+										["n_min"] = 79,
 										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 252,
-										["c_max"] = 56,
-										["id"] = "!Melee",
+										["counter"] = 1,
+										["total"] = 79,
+										["c_max"] = 0,
+										["id"] = "Thunder Clap",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
 										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 6,
+										["b_amt"] = 0,
+										["c_dmg"] = 2444,
+										["g_amt"] = 0,
+										["n_max"] = 389,
+										["targets"] = {
+											["High Inquisitor Fairbanks"] = 5840,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 3396,
+										["n_min"] = 85,
+										["g_dmg"] = 0,
+										["counter"] = 27,
+										["total"] = 5840,
+										["c_max"] = 764,
+										["MISS"] = 2,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 181,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 19,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									["Cleave"] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 2028,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["High Inquisitor Fairbanks"] = 2028,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 2028,
+										["c_max"] = 1062,
+										["id"] = "Cleave",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 966,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["Execute"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 799,
+										["targets"] = {
+											["High Inquisitor Fairbanks"] = 799,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 799,
+										["n_min"] = 799,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 799,
+										["c_max"] = 0,
+										["id"] = "Execute",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 799,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 1,
+										["r_amt"] = 0,
+									},
+									["Pummel"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 50,
+										["targets"] = {
+											["High Inquisitor Fairbanks"] = 50,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 50,
+										["n_min"] = 50,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 50,
+										["c_max"] = 0,
+										["id"] = "Pummel",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["Deep Wound"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 55,
+										["targets"] = {
+											["High Inquisitor Fairbanks"] = 159,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 159,
+										["n_min"] = 49,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 159,
+										["c_max"] = 0,
+										["id"] = "Deep Wound",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["Shadow Bolt"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 55,
+										["targets"] = {
+											["High Inquisitor Fairbanks"] = 55,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 55,
+										["n_min"] = 55,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 55,
+										["c_max"] = 0,
+										["id"] = "Shadow Bolt",
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["tipo"] = 1,
+							["colocacao"] = 1,
+							["nome"] = "Kamenac",
+							["custom"] = 0,
+							["last_event"] = 1595624006,
+							["last_dps"] = 375.322890402494,
+							["start_time"] = 1595623983,
+							["delay"] = 0,
+							["spec"] = 72,
+						}, -- [1]
+						{
+							["flag_original"] = -2147483648,
+							["totalabsorbed"] = 0.007463,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Ansiedad"] = 206,
+								["Fatbunny"] = 287,
+							},
+							["pets"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 493.007463,
+							["damage_taken"] = 0.007463,
+							["dps_started"] = true,
+							["total"] = 493.007463,
+							["timeMachine"] = 1,
+							["delay"] = 1595624340,
+							["nome"] = "Environment (Falling)",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Falling"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 287,
+										["targets"] = {
+											["Ansiedad"] = 206,
+											["Fatbunny"] = 287,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 493,
+										["n_min"] = 82,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 493,
+										["c_max"] = 0,
+										["id"] = "Falling",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["r_amt"] = 0,
-										["c_min"] = 56,
+										["n_amt"] = 3,
+										["a_dmg"] = 0,
+										["spellschool"] = 3,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["on_hold"] = false,
-							["serial"] = "Creature-0-4448-1-180-4128-00001AE8F5",
 							["friendlyfire"] = {
 							},
+							["last_event"] = 1595624340,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1595599336,
-							["damage_taken"] = 0.005951,
-							["start_time"] = 1595599326,
-							["delay"] = 0,
 							["tipo"] = 1,
+							["on_hold"] = true,
+							["start_time"] = 1595624340,
+							["serial"] = "",
+							["classe"] = "UNKNOW",
 						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.004029,
+							["damage_from"] = {
+								["Kamenac"] = true,
+							},
+							["targets"] = {
+								["Kamenac"] = 269,
+							},
+							["pets"] = {
+							},
+							["dps_started"] = false,
+							["nome"] = "High Inquisitor Fairbanks",
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 269.004029,
+							["serial"] = "Creature-0-4469-189-9303-4542-00001B42E7",
+							["monster"] = true,
+							["total"] = 269.004029,
+							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
+							["boss_fight_component"] = true,
+							["spells"] = {
+								["_ActorTable"] = {
+									["Curse of Blood"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Kamenac"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = "Curse of Blood",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["RESIST"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["m_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["Heal"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = "Heal",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["m_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 97,
+										["targets"] = {
+											["Kamenac"] = 269,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 269,
+										["g_dmg"] = 0,
+										["n_min"] = 80,
+										["MISS"] = 1,
+										["counter"] = 6,
+										["DODGE"] = 1,
+										["r_amt"] = 0,
+										["c_max"] = 0,
+										["b_dmg"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["m_amt"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_dmg"] = 0,
+										["n_amt"] = 3,
+										["total"] = 269,
+										["a_amt"] = 0,
+									},
+									["Power Word: Shield"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = "Power Word: Shield",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["m_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["tipo"] = 1,
+							["end_time"] = 1595624007,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1595624004,
+							["damage_taken"] = 9010.004029,
+							["start_time"] = 1595623985,
+							["delay"] = 0,
+							["classe"] = "UNKNOW",
+						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 156,
 					["tipo"] = 3,
+					["combatId"] = 77,
 					["_ActorTable"] = {
+						{
+							["flag_original"] = 66834,
+							["targets_overheal"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "WARRIOR",
+							["totalover"] = 0.004054,
+							["total_without_pet"] = 176.004054,
+							["total"] = 176.004054,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-010DF944",
+							["totalabsorb"] = 0.004054,
+							["last_hps"] = 7.33166933266868,
+							["targets"] = {
+								["Kamenac"] = 176,
+							},
+							["totalover_without_pet"] = 0.004054,
+							["healing_taken"] = 176.004054,
+							["end_time"] = 1595624007,
+							["healing_from"] = {
+								["Kamenac"] = true,
+							},
+							["boss_fight_component"] = true,
+							["nome"] = "Kamenac",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Holy Strength"] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 96,
+										["targets"] = {
+											["Kamenac"] = 176,
+										},
+										["n_min"] = 80,
+										["counter"] = 2,
+										["overheal"] = 0,
+										["total"] = 176,
+										["c_max"] = 0,
+										["id"] = "Holy Strength",
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 176,
+										["n_amt"] = 2,
+										["m_healed"] = 0,
+										["totaldenied"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1595623999,
+							["custom"] = 0,
+							["last_event"] = 1595623999,
+							["spec"] = 72,
+							["totaldenied"] = 0.004054,
+							["delay"] = 1595623988,
+							["tipo"] = 2,
+						}, -- [1]
+						{
+							["flag_original"] = 2632,
+							["totalabsorb"] = 0.004752,
+							["last_hps"] = 0,
+							["targets_overheal"] = {
+							},
+							["targets"] = {
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.004752,
+							["healing_from"] = {
+							},
+							["healing_taken"] = 0.004752,
+							["totalover"] = 0.004752,
+							["total_without_pet"] = 0.004752,
+							["iniciar_hps"] = false,
+							["start_time"] = 1595624007,
+							["monster"] = true,
+							["end_time"] = 1595624007,
+							["classe"] = "UNKNOW",
+							["heal_enemy_amt"] = 2127,
+							["nome"] = "High Inquisitor Fairbanks",
+							["targets_absorbs"] = {
+							},
+							["total"] = 0.004752,
+							["boss_fight_component"] = true,
+							["heal_enemy"] = {
+								["Power Word: Shield"] = 781,
+								["Heal"] = 1346,
+							},
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 3,
+							},
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["totaldenied"] = 0.004752,
+							["serial"] = "Creature-0-4469-189-9303-4542-00001B42E7",
+							["last_event"] = 1595624004,
+						}, -- [2]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 156,
 					["tipo"] = 7,
+					["combatId"] = 77,
 					["_ActorTable"] = {
+						{
+							["received"] = 24.008003,
+							["resource"] = 0.008003,
+							["targets"] = {
+								["Kamenac"] = 24,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 1,
+							["classe"] = "WARRIOR",
+							["passiveover"] = 0.008003,
+							["total"] = 24.008003,
+							["nome"] = "Kamenac",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Bloodrage"] = {
+										["total"] = 10,
+										["id"] = "Bloodrage",
+										["totalover"] = 0,
+										["targets"] = {
+											["Kamenac"] = 10,
+										},
+										["counter"] = 10,
+									},
+									["Unbridled Wrath"] = {
+										["total"] = 14,
+										["id"] = "Unbridled Wrath",
+										["totalover"] = 0,
+										["targets"] = {
+											["Kamenac"] = 14,
+										},
+										["counter"] = 14,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["boss_fight_component"] = true,
+							["flag_original"] = 66834,
+							["alternatepower"] = 0.008003,
+							["tipo"] = 3,
+							["spec"] = 72,
+							["last_event"] = 1595624006,
+							["serial"] = "Player-4465-010DF944",
+							["totalover"] = 0.008003,
+						}, -- [1]
+						{
+							["received"] = 40.00897,
+							["resource"] = 0.00897,
+							["targets"] = {
+								["Vermin"] = 40,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 1,
+							["classe"] = "WARRIOR",
+							["passiveover"] = 0.00897,
+							["total"] = 40.00897,
+							["nome"] = "Vermin",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Bloodrage"] = {
+										["total"] = 40,
+										["id"] = "Bloodrage",
+										["totalover"] = 0,
+										["targets"] = {
+											["Vermin"] = 40,
+										},
+										["counter"] = 22,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["flag_original"] = 66833,
+							["alternatepower"] = 0.00897,
+							["last_event"] = 1595624337,
+							["spec"] = 71,
+							["tipo"] = 3,
+							["serial"] = "Player-4465-00E5831F",
+							["totalover"] = 0.00897,
+						}, -- [2]
 					},
 				}, -- [3]
 				{
-					["combatId"] = 156,
 					["tipo"] = 9,
+					["combatId"] = 77,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 71,
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Defensive Stance"] = 1,
-							},
-							["buff_uptime"] = 0,
-							["nome"] = "Vermin",
-							["pets"] = {
-							},
-							["last_event"] = 1595599335,
-							["classe"] = "WARRIOR",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
-									["Defensive Stance"] = {
-										["activedamt"] = 1,
-										["id"] = "Defensive Stance",
+									["Sunder Armor"] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["actived_at"] = 1595599335,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
+										["activedamt"] = 0,
+										["uptime"] = 19,
+										["id"] = "Sunder Armor",
+										["refreshamt"] = 4,
+										["actived"] = false,
 										["counter"] = 0,
 									},
-									["Battle Stance"] = {
-										["activedamt"] = 0,
-										["id"] = "Battle Stance",
+									["Thunder Clap"] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
+										["uptime"] = 23,
+										["id"] = "Thunder Clap",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Deep Wound"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 22,
+										["id"] = "Deep Wound",
+										["refreshamt"] = 7,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Charge Stun"] = {
+										["activedamt"] = -1,
+										["id"] = "Charge Stun",
+										["targets"] = {
+										},
+										["actived_at"] = 1595623984,
 										["uptime"] = 0,
 										["appliedamt"] = 0,
 										["refreshamt"] = 0,
@@ -175,838 +743,86 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["serial"] = "Player-4465-00E5831F",
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 156,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Vermin"] = true,
-				},
-				["tempo_start"] = 1595599326,
-				["cleu_timeline"] = {
-				},
-				["alternate_power"] = {
-				},
-				["TotalElapsedCombatTime"] = 2373501.647,
-				["enemy"] = "Hecklefang Stalker",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					251.988411, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					0, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["last_events_tables"] = {
-				},
-				["frags_need_refresh"] = false,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Vermin"] = 0.006632,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 2373501.647,
-				["instance_type"] = "none",
-				["combat_id"] = 156,
-				["combat_counter"] = 4931,
-				["player_last_events"] = {
-				},
-				["CombatEndedAt"] = 2373501.647,
-				["spells_cast_timeline"] = {
-				},
-				["data_fim"] = "16:02:22",
-				["data_inicio"] = "16:02:06",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-				},
-				["start_time"] = 2373485.976,
-				["TimeData"] = {
-				},
-				["contra"] = "Hecklefang Stalker",
-			}, -- [1]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 155,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.007545,
-							["damage_from"] = {
-								["Thunderhead"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["total"] = 0.007545,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.007545,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1595599219,
+							["buff_uptime"] = 77,
 							["classe"] = "WARRIOR",
-							["damage_taken"] = 155.007545,
-							["nome"] = "Vermin",
-							["spec"] = 71,
-							["grupo"] = true,
-							["spells"] = {
+							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1595599219,
-							["serial"] = "Player-4465-00E5831F",
-							["friendlyfire"] = {
-							},
-						}, -- [1]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.003399,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Vermin"] = 155,
-							},
-							["pets"] = {
-							},
-							["tipo"] = 1,
-							["dps_started"] = false,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 155.003399,
-							["delay"] = 1595599201,
-							["monster"] = true,
-							["total"] = 155.003399,
-							["end_time"] = 1595599219,
-							["damage_taken"] = 0.003399,
-							["nome"] = "Thunderhead",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Lizard Bolt"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 32,
-										["targets"] = {
-											["Vermin"] = 155,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 155,
-										["n_min"] = 30,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 155,
-										["c_max"] = 0,
-										["id"] = "Lizard Bolt",
-										["r_dmg"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 4,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire_total"] = 0,
-							["last_dps"] = 0,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1595599201,
-							["on_hold"] = false,
-							["start_time"] = 1595599218,
-							["serial"] = "Creature-0-4448-1-180-3239-00001A7629",
-							["fight_component"] = true,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 155,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 155,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 155,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 68168,
-							["last_event"] = 0,
-							["nome"] = "Thunderhead",
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["spell_cast"] = {
-								["Lizard Bolt"] = 4,
-							},
-							["tipo"] = 4,
-							["monster"] = true,
-							["serial"] = "Creature-0-4448-1-180-3239-000019D005",
-							["fight_component"] = true,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 155,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Vermin"] = true,
-				},
-				["CombatStartedAt"] = 2373482.66,
-				["tempo_start"] = 2373355.706,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 4929,
-				["playing_solo"] = true,
-				["totals"] = {
-					155, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["totals_grupo"] = {
-					0, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = false,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "16:00:19",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Thunderhead",
-				["TotalElapsedCombatTime"] = 2373379.187,
-				["CombatEndedAt"] = 2373379.187,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Vermin"] = 0.007545,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 2373379.187,
-				["combat_id"] = 155,
-				["player_last_events"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["data_inicio"] = "16:00:06",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Thunderhead",
-				["start_time"] = 2373365.975,
-				["TimeData"] = {
-				},
-				["frags"] = {
-				},
-			}, -- [2]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 154,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.002455,
-							["damage_from"] = {
-								["Thunderhead"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.002455,
-							["serial"] = "Player-4465-00E5831F",
-							["dps_started"] = false,
-							["total"] = 0.002455,
-							["spec"] = 71,
-							["on_hold"] = false,
-							["nome"] = "Vermin",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["end_time"] = 1595599195,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["damage_taken"] = 65.002455,
-							["start_time"] = 1595599195,
-							["delay"] = 0,
-							["classe"] = "WARRIOR",
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008234,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Vermin"] = 65,
-							},
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 65.008234,
-							["serial"] = "Creature-0-4448-1-180-3239-000019D005",
-							["monster"] = true,
-							["total"] = 65.008234,
-							["damage_taken"] = 0.008234,
-							["on_hold"] = false,
-							["nome"] = "Thunderhead",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Lizard Bolt"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 34,
-										["targets"] = {
-											["Vermin"] = 65,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 65,
-										["n_min"] = 31,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 65,
-										["c_max"] = 0,
-										["id"] = "Lizard Bolt",
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["end_time"] = 1595599195,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1595599193,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1595599189,
-							["delay"] = 0,
-							["classe"] = "UNKNOW",
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 154,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 154,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 154,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 2632,
-							["tipo"] = 4,
-							["nome"] = "Thunderhead",
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["spell_cast"] = {
-								["Lizard Bolt"] = 1,
-							},
-							["last_event"] = 0,
-							["monster"] = true,
-							["serial"] = "Creature-0-4448-1-180-3239-00001A7629",
-							["classe"] = "UNKNOW",
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 154,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Vermin"] = true,
-				},
-				["CombatStartedAt"] = 2373355.706,
-				["tempo_start"] = 1595599189,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 4927,
-				["playing_solo"] = true,
-				["totals"] = {
-					65, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = false,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "15:59:56",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Thunderhead",
-				["TotalElapsedCombatTime"] = 2373355.706,
-				["CombatEndedAt"] = 2373355.706,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "15:59:50",
-				["end_time"] = 2373355.706,
-				["combat_id"] = 154,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-				},
-				["totals_grupo"] = {
-					0, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 2373349.321,
-				["contra"] = "Thunderhead",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Vermin"] = 0.002455,
-						}, -- [1]
-					},
-				},
-			}, -- [3]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 153,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.006174,
-							["damage_from"] = {
-								["Ravenous Darkhound"] = true,
-								["Environment (Falling)"] = true,
-							},
-							["targets"] = {
-								["Ravenous Darkhound"] = 287,
-							},
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["last_event"] = 1595597404,
-							["classe"] = "WARRIOR",
-							["raid_targets"] = {
-								[128] = 287,
-							},
-							["total_without_pet"] = 287.006174,
-							["serial"] = "Player-4465-00E5831F",
-							["dps_started"] = false,
-							["total"] = 287.006174,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["nome"] = "Vermin",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 142,
-										["g_amt"] = 0,
-										["n_max"] = 73,
-										["targets"] = {
-											["Ravenous Darkhound"] = 282,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 140,
-										["n_min"] = 67,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 282,
-										["c_max"] = 142,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 142,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["Hamstring"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 5,
-										["targets"] = {
-											["Ravenous Darkhound"] = 5,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 5,
-										["n_min"] = 5,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 5,
-										["c_max"] = 0,
-										["id"] = "Hamstring",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["colocacao"] = 1,
-							["last_dps"] = 25.2891156931703,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 332.006174,
-							["start_time"] = 1595597398,
-							["delay"] = 0,
-							["end_time"] = 1595597406,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.004344,
-							["damage_from"] = {
-								["Vermin"] = true,
-							},
-							["targets"] = {
-								["Vermin"] = 45,
-							},
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["friendlyfire_total"] = 0,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 45.004344,
-							["serial"] = "Creature-0-4448-0-158-1549-000019D21C",
-							["monster"] = true,
-							["end_time"] = 1595597406,
-							["dps_started"] = false,
-							["on_hold"] = false,
-							["nome"] = "Ravenous Darkhound",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 11,
-										["targets"] = {
-											["Vermin"] = 45,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 45,
-										["n_min"] = 8,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 45,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1595597403,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 287.004344,
-							["start_time"] = 1595597395,
-							["delay"] = 0,
-							["total"] = 45.004344,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 153,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 153,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 153,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["debuff_uptime"] = 4,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Hamstring"] = {
+									["Battle Shout"] = {
 										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
+										["uptime"] = 24,
+										["id"] = "Battle Shout",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Berserker Rage"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = "Berserker Rage",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Holy Strength"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 19,
+										["id"] = "Holy Strength",
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Bloodrage"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = "Bloodrage",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Berserker Stance"] = {
+										["activedamt"] = 1,
+										["id"] = "Berserker Stance",
+										["targets"] = {
+										},
+										["actived_at"] = 1595623983,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+									["Flurry"] = {
+										["appliedamt"] = 6,
+										["targets"] = {
+										},
+										["activedamt"] = 6,
+										["uptime"] = 14,
+										["id"] = "Flurry",
+										["refreshamt"] = 3,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Battle Stance"] = {
+										["appliedamt"] = 0,
+										["targets"] = {
+										},
 										["activedamt"] = 0,
-										["uptime"] = 4,
-										["id"] = "Hamstring",
+										["uptime"] = 0,
+										["id"] = "Battle Stance",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -1014,44 +830,70 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["nome"] = "Vermin",
+							["debuff_uptime"] = 64,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 72,
 							["grupo"] = true,
 							["spell_cast"] = {
-								["Hamstring"] = 1,
+								["Berserker Rage"] = 1,
+								["Cleave"] = 2,
+								["Pummel"] = 1,
+								["Berserker Stance"] = 1,
+								["Sunder Armor"] = 6,
+								["Thunder Clap"] = 1,
 							},
-							["debuff_uptime_targets"] = {
-							},
-							["last_event"] = 1595597404,
-							["classe"] = "WARRIOR",
+							["boss_fight_component"] = true,
+							["last_event"] = 1595624007,
+							["tipo"] = 4,
+							["nome"] = "Kamenac",
 							["pets"] = {
 							},
-							["serial"] = "Player-4465-00E5831F",
-							["tipo"] = 4,
+							["serial"] = "Player-4465-010DF944",
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
+						{
+							["flag_original"] = 2632,
+							["tipo"] = 4,
+							["nome"] = "High Inquisitor Fairbanks",
+							["pets"] = {
+							},
+							["boss_fight_component"] = true,
+							["spell_cast"] = {
+								["Curse of Blood"] = 1,
+								["Heal"] = 1,
+								["Power Word: Shield"] = 1,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-4469-189-9303-4542-00001B42E7",
+							["classe"] = "UNKNOW",
+						}, -- [2]
 					},
 				}, -- [4]
 				{
 					["tipo"] = 2,
-					["combatId"] = 153,
+					["combatId"] = 77,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
+					["Kamenac"] = true,
 					["Vermin"] = true,
 				},
-				["CombatStartedAt"] = 2373347.73,
-				["tempo_start"] = 1595597395,
+				["CombatStartedAt"] = 279582.991,
+				["overall_added"] = true,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 4926,
-				["playing_solo"] = true,
+				["combat_counter"] = 5039,
 				["totals"] = {
-					331.996123, -- [1]
-					0, -- [2]
+					9771.988145, -- [1]
+					176, -- [2]
 					{
-						0, -- [1]
+						64, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
 						[3] = 0,
@@ -1071,133 +913,53 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 				},
 				["player_last_events"] = {
-					["Vermin"] = {
-						{
-							true, -- [1]
-							"Falling", -- [2]
-							64, -- [3]
-							1595597504.109, -- [4]
-							724, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [1]
-						{
-							true, -- [1]
-							"Falling", -- [2]
-							49, -- [3]
-							1595598062.137, -- [4]
-							724, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [2]
-						{
-							true, -- [1]
-							"Falling", -- [2]
-							174, -- [3]
-							1595598774.287, -- [4]
-							724, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 4,
-					},
 				},
 				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
+				["instance_type"] = "party",
 				["hasSaved"] = true,
-				["data_fim"] = "15:30:07",
+				["data_fim"] = "22:53:28",
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Ravenous Darkhound",
-				["TotalElapsedCombatTime"] = 2371566.585,
-				["CombatEndedAt"] = 2371566.585,
+				["enemy"] = "High Inquisitor Fairbanks",
+				["TotalElapsedCombatTime"] = 10.0410000000265,
+				["CombatEndedAt"] = 279593.032,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "15:29:55",
-				["end_time"] = 2371566.585,
-				["combat_id"] = 153,
+				["data_inicio"] = "22:53:04",
+				["end_time"] = 279262.189,
+				["combat_id"] = 77,
+				["frags"] = {
+					["High Inquisitor Fairbanks"] = 1,
+				},
+				["tempo_start"] = 1595623983,
+				["TimeData"] = {
+				},
 				["spells_cast_timeline"] = {
 				},
-				["frags"] = {
-					["Ravenous Darkhound"] = 1,
+				["is_boss"] = {
+					["diff_string"] = "normal",
+					["index"] = 1,
+					["zone"] = "Scarlet Monastery",
+					["encounter"] = "High Inquisitor Fairbanks",
+					["mapid"] = 189,
+					["try_number"] = 3,
+					["name"] = "High Inquisitor Fairbanks",
+					["id"] = 0,
+					["ej_instance_id"] = 0,
+					["diff"] = 16,
 				},
 				["cleu_events"] = {
 					["n"] = 1,
 				},
+				["CombatSkillCache"] = {
+				},
 				["totals_grupo"] = {
-					287, -- [1]
-					0, -- [2]
+					9010, -- [1]
+					176, -- [2]
 					{
-						0, -- [1]
+						64, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
 						[3] = 0,
@@ -1214,12 +976,8 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Ravenous Darkhound",
-				["start_time"] = 2371555.236,
-				["TimeData"] = {
-				},
+				["start_time"] = 279238.183,
+				["contra"] = "High Inquisitor Fairbanks",
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -1231,93 +989,336 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
+							["Kamenac"] = 176.004054,
 						}, -- [1]
 					},
 					["damage"] = {
 						{
-							["Vermin"] = 287.006174,
+							["Kamenac"] = 9010.001307,
 						}, -- [1]
 					},
 				},
-			}, -- [4]
+			}, -- [1]
 			{
 				{
 					["tipo"] = 2,
-					["combatId"] = 152,
+					["combatId"] = 76,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.008125,
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.00852,
 							["damage_from"] = {
-								["Ravenous Darkhound"] = true,
+								["Kamenac"] = true,
 							},
 							["targets"] = {
-								["Ravenous Darkhound"] = 196,
+								["Kamenac"] = 215,
 							},
-							["serial"] = "Player-4465-00E5831F",
 							["pets"] = {
 							},
-							["colocacao"] = 1,
-							["classe"] = "WARRIOR",
+							["dps_started"] = false,
+							["nome"] = "High Inquisitor Whitemane",
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
-								[128] = 196,
 							},
-							["total_without_pet"] = 196.008125,
-							["spec"] = 71,
-							["dps_started"] = false,
-							["end_time"] = 1595527239,
+							["total_without_pet"] = 215.00852,
+							["serial"] = "Creature-0-4469-189-9303-3977-00001B42E7",
+							["monster"] = true,
+							["total"] = 215.00852,
+							["end_time"] = 1595623940,
 							["on_hold"] = false,
-							["last_event"] = 1595527238,
-							["nome"] = "Vermin",
+							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
+									["Scarlet Resurrection"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = "Scarlet Resurrection",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["m_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["Deep Sleep"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = "Deep Sleep",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["m_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["Holy Smite"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Kamenac"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = "Holy Smite",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["RESIST"] = 5,
+										["c_min"] = 0,
+										["successful_casted"] = 5,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["m_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["Power Word: Shield"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = "Power Word: Shield",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["m_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["Retribution Aura"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Kamenac"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 0,
+										["c_max"] = 0,
+										["spellschool"] = 2,
+										["id"] = "Retribution Aura",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["RESIST"] = 2,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
 									["!Melee"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 63,
+										["n_max"] = 80,
 										["targets"] = {
-											["Ravenous Darkhound"] = 126,
+											["Kamenac"] = 215,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 126,
-										["n_min"] = 63,
+										["n_dmg"] = 215,
+										["n_min"] = 57,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 126,
+										["counter"] = 4,
+										["total"] = 215,
 										["c_max"] = 0,
+										["a_amt"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
 										["m_amt"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 2,
+										["n_amt"] = 3,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["last_event"] = 1595623922,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 8793.00852,
+							["start_time"] = 1595623925,
+							["delay"] = 1595623922,
+							["classe"] = "UNKNOW",
+						}, -- [1]
+						{
+							["flag_original"] = 1298,
+							["totalabsorbed"] = 0.006978,
+							["damage_from"] = {
+								["High Inquisitor Whitemane"] = true,
+								["Scarlet Commander Mograine"] = true,
+							},
+							["targets"] = {
+								["High Inquisitor Whitemane"] = 8793,
+								["Scarlet Commander Mograine"] = 6343,
+							},
+							["pets"] = {
+							},
+							["end_time"] = 1595623940,
+							["nome"] = "Kamenac",
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 15136.006978,
+							["spec"] = 72,
+							["serial"] = "Player-4465-010DF944",
+							["dps_started"] = false,
+							["total"] = 15136.006978,
+							["classe"] = "WARRIOR",
+							["damage_taken"] = 952.006978,
+							["boss_fight_component"] = true,
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 12,
+										["b_amt"] = 0,
+										["c_dmg"] = 4632,
+										["g_amt"] = 0,
+										["n_max"] = 387,
+										["targets"] = {
+											["High Inquisitor Whitemane"] = 5274,
+											["Scarlet Commander Mograine"] = 4766,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 5408,
+										["n_min"] = 94,
+										["g_dmg"] = 0,
+										["counter"] = 47,
+										["total"] = 10040,
+										["c_max"] = 782,
+										["MISS"] = 6,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
 										["a_amt"] = 0,
+										["c_min"] = 217,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 29,
+										["a_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									["Cleave"] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 1893,
+										["g_amt"] = 0,
+										["n_max"] = 465,
+										["targets"] = {
+											["High Inquisitor Whitemane"] = 1555,
+											["Scarlet Commander Mograine"] = 1149,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 811,
+										["n_min"] = 346,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 2704,
+										["c_max"] = 1090,
+										["id"] = "Cleave",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 803,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 803,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 1,
+										["r_amt"] = 0,
+									},
+									["Execute"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 70,
+										["n_max"] = 756,
 										["targets"] = {
-											["Ravenous Darkhound"] = 70,
+											["High Inquisitor Whitemane"] = 756,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 70,
-										["n_min"] = 70,
+										["n_dmg"] = 756,
+										["n_min"] = 756,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 70,
+										["total"] = 756,
 										["c_max"] = 0,
-										["id"] = "Cleave",
+										["id"] = "Execute",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
@@ -1330,148 +1331,806 @@ _detalhes_database = {
 										["a_amt"] = 0,
 										["r_amt"] = 0,
 									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["friendlyfire"] = {
-							},
-							["total"] = 196.008125,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 28.56844847688,
-							["start_time"] = 1595527232,
-							["delay"] = 0,
-							["damage_taken"] = 17.008125,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.007292,
-							["damage_from"] = {
-								["Vermin"] = true,
-							},
-							["targets"] = {
-								["Vermin"] = 17,
-							},
-							["pets"] = {
-							},
-							["dps_started"] = false,
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 17.007292,
-							["serial"] = "Creature-0-4448-0-158-1549-000019B6AB",
-							["monster"] = true,
-							["end_time"] = 1595597395,
-							["total"] = 17.007292,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Ravenous Darkhound",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
+									["Deep Wound"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 9,
+										["n_max"] = 55,
 										["targets"] = {
-											["Vermin"] = 17,
+											["High Inquisitor Whitemane"] = 275,
+											["Scarlet Commander Mograine"] = 428,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 17,
-										["n_min"] = 8,
+										["n_dmg"] = 703,
+										["n_min"] = 49,
 										["g_dmg"] = 0,
-										["counter"] = 4,
-										["MISS"] = 1,
-										["total"] = 17,
+										["counter"] = 13,
+										["total"] = 703,
 										["c_max"] = 0,
-										["a_amt"] = 0,
-										["id"] = "!Melee",
+										["id"] = "Deep Wound",
 										["r_dmg"] = 0,
-										["b_dmg"] = 0,
+										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["PARRY"] = 1,
+										["m_amt"] = 0,
 										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["m_amt"] = 0,
-										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["n_amt"] = 13,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["Heroic Strike"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 478,
+										["targets"] = {
+											["High Inquisitor Whitemane"] = 933,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 933,
+										["n_min"] = 455,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 933,
+										["c_max"] = 0,
+										["id"] = "Heroic Strike",
+										["r_dmg"] = 0,
 										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
+							["grupo"] = true,
 							["tipo"] = 1,
-							["damage_taken"] = 196.007292,
-							["classe"] = "UNKNOW",
+							["colocacao"] = 1,
+							["on_hold"] = false,
 							["custom"] = 0,
-							["last_event"] = 1595597388,
-							["last_dps"] = 0,
-							["start_time"] = 1595527234,
-							["delay"] = 0,
-							["fight_component"] = true,
+							["last_event"] = 1595623938,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1595623903,
+							["delay"] = 1595623890,
+							["last_dps"] = 402.810490153279,
 						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.00675,
+							["damage_from"] = {
+								["Kamenac"] = true,
+							},
+							["targets"] = {
+								["Kamenac"] = 737,
+							},
+							["pets"] = {
+							},
+							["dps_started"] = false,
+							["nome"] = "Scarlet Commander Mograine",
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 737.00675,
+							["serial"] = "Creature-0-4469-189-9303-3976-00001B42E7",
+							["monster"] = true,
+							["total"] = 737.00675,
+							["end_time"] = 1595623940,
+							["on_hold"] = false,
+							["boss_fight_component"] = true,
+							["spells"] = {
+								["_ActorTable"] = {
+									["Retribution Aura"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Kamenac"] = 17,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 17,
+										["n_min"] = 17,
+										["g_dmg"] = 0,
+										["counter"] = 19,
+										["total"] = 17,
+										["c_max"] = 0,
+										["id"] = "Retribution Aura",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["RESIST"] = 18,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["m_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["Crusader Strike"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 54,
+										["targets"] = {
+											["Kamenac"] = 54,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 54,
+										["n_min"] = 54,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 54,
+										["c_max"] = 0,
+										["id"] = "Crusader Strike",
+										["r_dmg"] = 0,
+										["MISS"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 2,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 141,
+										["g_amt"] = 0,
+										["n_max"] = 96,
+										["targets"] = {
+											["Kamenac"] = 666,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 525,
+										["n_min"] = 64,
+										["g_dmg"] = 0,
+										["counter"] = 13,
+										["MISS"] = 3,
+										["total"] = 666,
+										["c_max"] = 141,
+										["DODGE"] = 2,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 141,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 7,
+										["spellschool"] = 1,
+										["r_amt"] = 0,
+									},
+									["Lay on Hands"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = "Lay on Hands",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["m_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["last_event"] = 1595623938,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 6343.00675,
+							["start_time"] = 1595623910,
+							["delay"] = 0,
+							["classe"] = "UNKNOW",
+						}, -- [3]
 					},
 				}, -- [1]
 				{
 					["tipo"] = 3,
-					["combatId"] = 152,
+					["combatId"] = 76,
 					["_ActorTable"] = {
+						{
+							["flag_original"] = 1298,
+							["targets_overheal"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "WARRIOR",
+							["totalover"] = 0.008887,
+							["total_without_pet"] = 520.008887,
+							["total"] = 520.008887,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-010DF944",
+							["totalabsorb"] = 0.008887,
+							["last_hps"] = 13.8388569033422,
+							["targets"] = {
+								["Kamenac"] = 520,
+							},
+							["totalover_without_pet"] = 0.008887,
+							["healing_taken"] = 520.008887,
+							["end_time"] = 1595623940,
+							["healing_from"] = {
+								["Kamenac"] = true,
+							},
+							["boss_fight_component"] = true,
+							["nome"] = "Kamenac",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Holy Strength"] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 117,
+										["targets"] = {
+											["Kamenac"] = 520,
+										},
+										["n_min"] = 83,
+										["counter"] = 5,
+										["overheal"] = 0,
+										["total"] = 520,
+										["c_max"] = 0,
+										["id"] = "Holy Strength",
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 520,
+										["n_amt"] = 5,
+										["m_healed"] = 0,
+										["totaldenied"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1595623927,
+							["custom"] = 0,
+							["last_event"] = 1595623938,
+							["spec"] = 72,
+							["totaldenied"] = 0.008887,
+							["delay"] = 1595623909,
+							["tipo"] = 2,
+						}, -- [1]
+						{
+							["flag_original"] = 2632,
+							["totalabsorb"] = 0.003148,
+							["last_hps"] = 0,
+							["targets_overheal"] = {
+							},
+							["targets"] = {
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.003148,
+							["healing_from"] = {
+							},
+							["healing_taken"] = 0.003148,
+							["totalover"] = 0.003148,
+							["total_without_pet"] = 0.003148,
+							["iniciar_hps"] = false,
+							["start_time"] = 1595623940,
+							["monster"] = true,
+							["end_time"] = 1595623940,
+							["classe"] = "UNKNOW",
+							["heal_enemy_amt"] = 5714,
+							["nome"] = "High Inquisitor Whitemane",
+							["targets_absorbs"] = {
+							},
+							["total"] = 0.003148,
+							["boss_fight_component"] = true,
+							["heal_enemy"] = {
+								["Scarlet Resurrection"] = 5284,
+								["Power Word: Shield"] = 430,
+							},
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 3,
+							},
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["totaldenied"] = 0.003148,
+							["serial"] = "Creature-0-4469-189-9303-3977-00001B42E7",
+							["last_event"] = 1595623915,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["totalabsorb"] = 0.003317,
+							["last_hps"] = 0,
+							["targets_overheal"] = {
+							},
+							["targets"] = {
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.003317,
+							["healing_from"] = {
+							},
+							["healing_taken"] = 0.003317,
+							["totalover"] = 0.003317,
+							["total_without_pet"] = 0.003317,
+							["iniciar_hps"] = false,
+							["start_time"] = 1595623940,
+							["monster"] = true,
+							["end_time"] = 1595623940,
+							["classe"] = "UNKNOW",
+							["heal_enemy_amt"] = 3235,
+							["nome"] = "Scarlet Commander Mograine",
+							["targets_absorbs"] = {
+							},
+							["total"] = 0.003317,
+							["boss_fight_component"] = true,
+							["heal_enemy"] = {
+								["Lay on Hands"] = 3235,
+							},
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 3,
+							},
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["totaldenied"] = 0.003317,
+							["serial"] = "Creature-0-4469-189-9303-3976-00001B42E7",
+							["last_event"] = 1595623907,
+						}, -- [3]
 					},
 				}, -- [2]
 				{
 					["tipo"] = 7,
-					["combatId"] = 152,
+					["combatId"] = 76,
 					["_ActorTable"] = {
+						{
+							["received"] = 70.008516,
+							["resource"] = 0.008516,
+							["targets"] = {
+								["Kamenac"] = 70,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 1,
+							["classe"] = "WARRIOR",
+							["passiveover"] = 0.008516,
+							["total"] = 70.008516,
+							["nome"] = "Kamenac",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Bloodrage"] = {
+										["total"] = 30,
+										["id"] = "Bloodrage",
+										["totalover"] = 0,
+										["targets"] = {
+											["Kamenac"] = 30,
+										},
+										["counter"] = 12,
+									},
+									["Charge"] = {
+										["total"] = 21,
+										["id"] = "Charge",
+										["totalover"] = 0,
+										["targets"] = {
+											["Kamenac"] = 21,
+										},
+										["counter"] = 1,
+									},
+									["Unbridled Wrath"] = {
+										["total"] = 19,
+										["id"] = "Unbridled Wrath",
+										["totalover"] = 0,
+										["targets"] = {
+											["Kamenac"] = 19,
+										},
+										["counter"] = 19,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["boss_fight_component"] = true,
+							["flag_original"] = 1298,
+							["alternatepower"] = 0.008516,
+							["tipo"] = 3,
+							["spec"] = 72,
+							["last_event"] = 1595623983,
+							["serial"] = "Player-4465-010DF944",
+							["totalover"] = 0.008516,
+						}, -- [1]
+						{
+							["received"] = 377.007546,
+							["resource"] = 0.007546,
+							["targets"] = {
+								["Scarlet Commander Mograine"] = 243,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "UNKNOW",
+							["passiveover"] = 0.007546,
+							["monster"] = true,
+							["total"] = 243.007546,
+							["nome"] = "High Inquisitor Whitemane",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Scarlet Resurrection"] = {
+										["total"] = 243,
+										["id"] = "Scarlet Resurrection",
+										["totalover"] = 9757,
+										["targets"] = {
+											["Scarlet Commander Mograine"] = 243,
+										},
+										["counter"] = 1,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["boss_fight_component"] = true,
+							["flag_original"] = 2632,
+							["last_event"] = 1595623902,
+							["alternatepower"] = 0.007546,
+							["tipo"] = 3,
+							["serial"] = "Creature-0-4469-189-9303-3977-00001B42E7",
+							["totalover"] = 9757.007546,
+						}, -- [2]
+						{
+							["received"] = 243.006143,
+							["resource"] = 0.006143,
+							["targets"] = {
+								["High Inquisitor Whitemane"] = 377,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "UNKNOW",
+							["passiveover"] = 0.006143,
+							["monster"] = true,
+							["total"] = 377.006143,
+							["nome"] = "Scarlet Commander Mograine",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Lay on Hands"] = {
+										["total"] = 377,
+										["id"] = "Lay on Hands",
+										["totalover"] = 173,
+										["targets"] = {
+											["High Inquisitor Whitemane"] = 377,
+										},
+										["counter"] = 1,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["boss_fight_component"] = true,
+							["flag_original"] = 2632,
+							["last_event"] = 1595623907,
+							["alternatepower"] = 0.006143,
+							["tipo"] = 3,
+							["serial"] = "Creature-0-4469-189-9303-3976-00001B42E7",
+							["totalover"] = 173.006143,
+						}, -- [3]
 					},
 				}, -- [3]
 				{
 					["tipo"] = 9,
-					["combatId"] = 152,
+					["combatId"] = 76,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 1297,
-							["nome"] = "Vermin",
-							["spec"] = 71,
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Demoralizing Shout"] = {
+										["appliedamt"] = 2,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 49,
+										["id"] = "Demoralizing Shout",
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Sunder Armor"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = -2,
+										["uptime"] = 51,
+										["id"] = "Sunder Armor",
+										["refreshamt"] = 7,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Deep Wound"] = {
+										["appliedamt"] = 4,
+										["targets"] = {
+										},
+										["activedamt"] = -1,
+										["uptime"] = 46,
+										["id"] = "Deep Wound",
+										["refreshamt"] = 8,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 162,
+							["classe"] = "WARRIOR",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Battle Shout"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 51,
+										["id"] = "Battle Shout",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Berserker Rage"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = "Berserker Rage",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Holy Strength"] = {
+										["appliedamt"] = 3,
+										["targets"] = {
+										},
+										["activedamt"] = 3,
+										["uptime"] = 48,
+										["id"] = "Holy Strength",
+										["refreshamt"] = 3,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Bloodrage"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = "Bloodrage",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Enrage"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 6,
+										["id"] = "Enrage",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Flurry"] = {
+										["appliedamt"] = 8,
+										["targets"] = {
+										},
+										["activedamt"] = 8,
+										["uptime"] = 37,
+										["id"] = "Flurry",
+										["refreshamt"] = 6,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 146,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 72,
 							["grupo"] = true,
+							["spell_cast"] = {
+								["Berserker Rage"] = 1,
+								["Cleave"] = 2,
+								["Bloodrage"] = 1,
+								["Sunder Armor"] = 21,
+								["Demoralizing Shout"] = 2,
+								["Heroic Strike"] = 2,
+							},
+							["boss_fight_component"] = true,
+							["last_event"] = 1595623940,
+							["tipo"] = 4,
+							["nome"] = "Kamenac",
 							["pets"] = {
 							},
-							["last_event"] = 0,
-							["classe"] = "WARRIOR",
-							["spell_cast"] = {
-								["Cleave"] = 1,
+							["serial"] = "Player-4465-010DF944",
+							["debuff_uptime_targets"] = {
 							},
-							["serial"] = "Player-4465-00E5831F",
-							["tipo"] = 4,
 						}, -- [1]
+						{
+							["flag_original"] = 2632,
+							["tipo"] = 4,
+							["nome"] = "High Inquisitor Whitemane",
+							["pets"] = {
+							},
+							["boss_fight_component"] = true,
+							["spell_cast"] = {
+								["Holy Smite"] = 5,
+								["Deep Sleep"] = 1,
+								["Power Word: Shield"] = 1,
+								["Scarlet Resurrection"] = 1,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-4469-189-9303-3977-00001B42E7",
+							["classe"] = "UNKNOW",
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 9,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["boss_debuff"] = true,
+							["monster"] = true,
+							["debuff_uptime"] = 34,
+							["spellschool"] = 32,
+							["debuff_uptime_targets"] = {
+								["Kamenac"] = {
+									["uptime"] = 17,
+									["appliedamt"] = 0,
+									["activedamt"] = 0,
+									["actived"] = false,
+									["refreshamt"] = 0,
+								},
+								["Vermin"] = {
+									["uptime"] = 17,
+									["appliedamt"] = 0,
+									["activedamt"] = 0,
+									["actived"] = false,
+									["refreshamt"] = 0,
+								},
+							},
+							["boss_fight_component"] = true,
+							["nome"] = "Deep Sleep",
+							["tipo"] = 4,
+							["damage_twin"] = "High Inquisitor Whitemane",
+							["damage_spellid"] = "Deep Sleep",
+							["serial"] = "Creature-0-4469-189-9303-3977-00001B42E7",
+							["last_event"] = 1595623907,
+						}, -- [3]
+						{
+							["flag_original"] = 2632,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 9,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["boss_debuff"] = true,
+							["monster"] = true,
+							["debuff_uptime"] = 27,
+							["spellschool"] = 1,
+							["debuff_uptime_targets"] = {
+								["Kamenac"] = {
+									["uptime"] = 27,
+									["actived_at"] = 1595623931,
+									["appliedamt"] = 0,
+									["activedamt"] = 0,
+									["actived"] = true,
+									["refreshamt"] = 0,
+								},
+							},
+							["boss_fight_component"] = true,
+							["nome"] = "Crusader Strike",
+							["tipo"] = 4,
+							["damage_twin"] = "Scarlet Commander Mograine",
+							["damage_spellid"] = 0,
+							["serial"] = "Creature-0-4469-189-9303-3976-00001B42E7",
+							["last_event"] = 1595623931,
+						}, -- [4]
+						{
+							["flag_original"] = 2632,
+							["tipo"] = 4,
+							["nome"] = "Scarlet Commander Mograine",
+							["pets"] = {
+							},
+							["boss_fight_component"] = true,
+							["spell_cast"] = {
+								["Crusader Strike"] = 2,
+								["Retribution Aura"] = 1,
+								["Lay on Hands"] = 1,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-4469-189-9303-3976-00001B42E7",
+							["classe"] = "UNKNOW",
+						}, -- [5]
 					},
 				}, -- [4]
 				{
 					["tipo"] = 2,
-					["combatId"] = 152,
+					["combatId"] = 76,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
+					["Kamenac"] = true,
 					["Vermin"] = true,
 				},
-				["CombatStartedAt"] = 2371554.852,
-				["tempo_start"] = 1595527232,
+				["CombatStartedAt"] = 279165.616,
+				["tempo_start"] = 279138.018,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 4921,
-				["playing_solo"] = true,
+				["combat_counter"] = 5038,
 				["totals"] = {
-					213, -- [1]
-					0, -- [2]
+					16088, -- [1]
+					520, -- [2]
 					{
-						0, -- [1]
-						[0] = 0,
+						70, -- [1]
+						[0] = 620,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -1489,114 +2148,11 @@ _detalhes_database = {
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-					["Vermin"] = {
-						{
-							true, -- [1]
-							"!Melee", -- [2]
-							9, -- [3]
-							1595597395.589, -- [4]
-							664, -- [5]
-							"Ravenous Darkhound", -- [6]
-							nil, -- [7]
-							1, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [1]
-						{
-						}, -- [2]
-						{
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 2,
-					},
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "20:00:39",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Ravenous Darkhound",
-				["TotalElapsedCombatTime"] = 182493.53,
-				["CombatEndedAt"] = 182493.53,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:00:33",
-				["end_time"] = 182493.53,
-				["combat_id"] = 152,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Ravenous Darkhound"] = 1,
-				},
 				["totals_grupo"] = {
-					196, -- [1]
-					0, -- [2]
+					15136, -- [1]
+					520, -- [2]
 					{
-						0, -- [1]
+						70, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
 						[3] = 0,
@@ -1613,12 +2169,52 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["CombatSkillCache"] = {
+				["frags_need_refresh"] = true,
+				["instance_type"] = "party",
+				["hasSaved"] = true,
+				["data_fim"] = "22:52:21",
+				["cleu_timeline"] = {
 				},
+				["enemy"] = "Scarlet Commander Mograine",
+				["TotalElapsedCombatTime"] = 29.1380000000354,
+				["CombatEndedAt"] = 279194.754,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "22:51:41",
+				["end_time"] = 279195.628,
+				["combat_id"] = 76,
+				["frags"] = {
+					["High Inquisitor Whitemane"] = 1,
+					["Scarlet Commander Mograine"] = 1,
+				},
+				["overall_added"] = true,
 				["TimeData"] = {
 				},
-				["start_time"] = 182486.669,
-				["contra"] = "Ravenous Darkhound",
+				["spells_cast_timeline"] = {
+				},
+				["is_boss"] = {
+					["diff_string"] = "normal",
+					["index"] = 1,
+					["zone"] = "Scarlet Monastery",
+					["encounter"] = "Scarlet Commander Mograine",
+					["mapid"] = 189,
+					["try_number"] = 3,
+					["name"] = "Scarlet Commander Mograine",
+					["id"] = 0,
+					["ej_instance_id"] = 0,
+					["diff"] = 16,
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 279155.628,
+				["contra"] = "High Inquisitor Whitemane",
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -1630,40 +2226,769 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
+							["Kamenac"] = 520.008887,
 						}, -- [1]
 					},
 					["damage"] = {
 						{
-							["Vermin"] = 196.008125,
+							["Kamenac"] = 15136.006978,
 						}, -- [1]
 					},
 				},
-			}, -- [5]
+			}, -- [2]
 			{
 				{
 					["tipo"] = 2,
-					["combatId"] = 151,
+					["combatId"] = 75,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.00793,
+							["totalabsorbed"] = 0.004283,
 							["damage_from"] = {
-								["Kamenac"] = true,
-								["High Inquisitor Whitemane"] = true,
 								["Scarlet Commander Mograine"] = true,
 							},
 							["targets"] = {
-								["High Inquisitor Whitemane"] = 8903,
-								["Scarlet Commander Mograine"] = 12582,
+								["Scarlet Commander Mograine"] = 6459,
 							},
 							["pets"] = {
 							},
-							["end_time"] = 1595450640,
-							["boss_fight_component"] = true,
-							["friendlyfire_total"] = 2,
+							["end_time"] = 1595623889,
+							["nome"] = "Kamenac",
+							["classe"] = "WARRIOR",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 21485.00793,
+							["total_without_pet"] = 6459.004283,
+							["spec"] = 72,
+							["delay"] = 0,
+							["dps_started"] = false,
+							["total"] = 6459.004283,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["boss_fight_component"] = true,
+							["spells"] = {
+								["_ActorTable"] = {
+									["Deep Wound"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 49,
+										["targets"] = {
+											["Scarlet Commander Mograine"] = 196,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 196,
+										["n_min"] = 49,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 196,
+										["c_max"] = 0,
+										["id"] = "Deep Wound",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["!Melee"] = {
+										["c_amt"] = 7,
+										["b_amt"] = 0,
+										["c_dmg"] = 2359,
+										["g_amt"] = 0,
+										["n_max"] = 326,
+										["targets"] = {
+											["Scarlet Commander Mograine"] = 4197,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1838,
+										["n_min"] = 78,
+										["g_dmg"] = 0,
+										["counter"] = 21,
+										["total"] = 4197,
+										["c_max"] = 668,
+										["r_amt"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 203,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 12,
+										["spellschool"] = 1,
+										["MISS"] = 2,
+									},
+									["Heroic Strike"] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 2066,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Scarlet Commander Mograine"] = 2066,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 2066,
+										["c_max"] = 1076,
+										["id"] = "Heroic Strike",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 990,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["last_event"] = 1595623890,
+							["custom"] = 0,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["tipo"] = 1,
+							["last_dps"] = 247.777513838468,
+							["start_time"] = 1595623857,
+							["serial"] = "Player-4465-010DF944",
+							["damage_taken"] = 827.004283,
+						}, -- [1]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.00684,
+							["damage_from"] = {
+								["Kamenac"] = true,
+							},
+							["targets"] = {
+								["Kamenac"] = 827,
+							},
+							["pets"] = {
+							},
+							["total"] = 827.00684,
+							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 827.00684,
+							["delay"] = 0,
+							["dps_started"] = false,
+							["end_time"] = 1595623882,
+							["friendlyfire_total"] = 0,
+							["damage_taken"] = 6459.00684,
+							["nome"] = "Scarlet Commander Mograine",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Retribution Aura"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Kamenac"] = 17,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 17,
+										["n_min"] = 17,
+										["g_dmg"] = 0,
+										["counter"] = 20,
+										["total"] = 17,
+										["c_max"] = 0,
+										["r_amt"] = 0,
+										["id"] = "Retribution Aura",
+										["r_dmg"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["RESIST"] = 19,
+										["a_dmg"] = 0,
+										["spellschool"] = 2,
+									},
+									["Crusader Strike"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 54,
+										["targets"] = {
+											["Kamenac"] = 108,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 108,
+										["n_min"] = 54,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 108,
+										["c_max"] = 0,
+										["id"] = "Crusader Strike",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 2,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									["Hammer of Justice"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = "Hammer of Justice",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 106,
+										["targets"] = {
+											["Kamenac"] = 702,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 702,
+										["n_min"] = 93,
+										["g_dmg"] = 0,
+										["counter"] = 10,
+										["r_amt"] = 0,
+										["total"] = 702,
+										["c_max"] = 0,
+										["spellschool"] = 1,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["b_dmg"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["a_dmg"] = 0,
+										["n_amt"] = 7,
+										["DODGE"] = 2,
+										["MISS"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["friendlyfire"] = {
+							},
+							["custom"] = 0,
+							["last_event"] = 1595623879,
+							["on_hold"] = false,
+							["start_time"] = 1595623860,
+							["serial"] = "Creature-0-4469-189-9303-3976-00001B42E7",
+							["monster"] = true,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 75,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1298,
+							["healing_from"] = {
+								["Kamenac"] = true,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 0.004444,
+							["total_without_pet"] = 75.004444,
+							["total"] = 75.004444,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-010DF944",
+							["totalabsorb"] = 0.004444,
+							["last_hps"] = 2.89928272129932,
+							["targets"] = {
+								["Kamenac"] = 75,
+							},
+							["totalover_without_pet"] = 0.004444,
+							["healing_taken"] = 75.004444,
+							["end_time"] = 1595623882,
+							["targets_overheal"] = {
+							},
+							["tipo"] = 2,
+							["nome"] = "Kamenac",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Holy Strength"] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 75,
+										["targets"] = {
+											["Kamenac"] = 75,
+										},
+										["n_min"] = 75,
+										["counter"] = 1,
+										["overheal"] = 0,
+										["total"] = 75,
+										["c_max"] = 0,
+										["id"] = "Holy Strength",
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 1,
+										["n_curado"] = 75,
+										["c_min"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["classe"] = "WARRIOR",
+							["totaldenied"] = 0.004444,
+							["custom"] = 0,
+							["last_event"] = 1595623879,
+							["spec"] = 72,
+							["start_time"] = 1595623879,
+							["delay"] = 0,
+							["boss_fight_component"] = true,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 75,
+					["_ActorTable"] = {
+						{
+							["received"] = 9.006074,
+							["resource"] = 0.006074,
+							["targets"] = {
+								["Kamenac"] = 9,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 1,
+							["classe"] = "WARRIOR",
+							["passiveover"] = 0.006074,
+							["total"] = 9.006074,
+							["nome"] = "Kamenac",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Unbridled Wrath"] = {
+										["total"] = 9,
+										["id"] = "Unbridled Wrath",
+										["totalover"] = 0,
+										["targets"] = {
+											["Kamenac"] = 9,
+										},
+										["counter"] = 9,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["totalover"] = 0.006074,
+							["flag_original"] = 1298,
+							["last_event"] = 1595623878,
+							["tipo"] = 3,
+							["spec"] = 72,
+							["alternatepower"] = 0.006074,
+							["serial"] = "Player-4465-010DF944",
+							["boss_fight_component"] = true,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 75,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Sunder Armor"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 4,
+										["id"] = "Sunder Armor",
+										["uptime"] = 25,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									["Deep Wound"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 7,
+										["id"] = "Deep Wound",
+										["uptime"] = 20,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									["Recently Bandaged"] = {
+										["activedamt"] = -1,
+										["id"] = "Recently Bandaged",
+										["targets"] = {
+										},
+										["actived_at"] = 1595623864,
+										["uptime"] = 0,
+										["counter"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["appliedamt"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 42,
+							["classe"] = "WARRIOR",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Flurry"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 2,
+										["refreshamt"] = 6,
+										["id"] = "Flurry",
+										["uptime"] = 14,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+									["Battle Shout"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Battle Shout",
+										["uptime"] = 25,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									["Holy Strength"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Holy Strength",
+										["uptime"] = 3,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 45,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 72,
+							["grupo"] = true,
+							["spell_cast"] = {
+								["Sunder Armor"] = 7,
+								["Heroic Strike"] = 2,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 1595623882,
+							["pets"] = {
+							},
+							["nome"] = "Kamenac",
+							["serial"] = "Player-4465-010DF944",
+							["boss_fight_component"] = true,
+						}, -- [1]
+						{
+							["flag_original"] = 2632,
+							["last_event"] = 0,
+							["nome"] = "Scarlet Commander Mograine",
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["spell_cast"] = {
+								["Hammer of Justice"] = 1,
+								["Crusader Strike"] = 2,
+							},
+							["tipo"] = 4,
+							["monster"] = true,
+							["serial"] = "Creature-0-4469-189-9303-3976-00001B42E7",
+							["boss_fight_component"] = true,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 9,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["boss_debuff"] = true,
+							["monster"] = true,
+							["debuff_uptime"] = 5,
+							["spellschool"] = 2,
+							["boss_fight_component"] = true,
+							["debuff_uptime_targets"] = {
+								["Kamenac"] = {
+									["uptime"] = 5,
+									["refreshamt"] = 0,
+									["activedamt"] = 0,
+									["actived"] = false,
+									["appliedamt"] = 0,
+								},
+							},
+							["last_event"] = 1595623869,
+							["tipo"] = 4,
+							["damage_twin"] = "Scarlet Commander Mograine",
+							["serial"] = "Creature-0-4469-189-9303-3976-00001B42E7",
+							["damage_spellid"] = "Hammer of Justice",
+							["nome"] = "Hammer of Justice",
+						}, -- [3]
+						{
+							["flag_original"] = 2632,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 9,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["boss_debuff"] = true,
+							["monster"] = true,
+							["debuff_uptime"] = 8,
+							["spellschool"] = 1,
+							["boss_fight_component"] = true,
+							["debuff_uptime_targets"] = {
+								["Kamenac"] = {
+									["uptime"] = 8,
+									["refreshamt"] = 0,
+									["appliedamt"] = 0,
+									["activedamt"] = 1,
+									["actived"] = true,
+									["actived_at"] = 1595623874,
+								},
+							},
+							["last_event"] = 1595623874,
+							["tipo"] = 4,
+							["damage_twin"] = "Scarlet Commander Mograine",
+							["serial"] = "Creature-0-4469-189-9303-3976-00001B42E7",
+							["damage_spellid"] = "Crusader Strike",
+							["nome"] = "Crusader Strike",
+						}, -- [4]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 75,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Kamenac"] = true,
+					["Vermin"] = true,
+				},
+				["overall_added"] = true,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["tempo_start"] = 1595623857,
+				["enemy"] = "Scarlet Commander Mograine",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["last_events_tables"] = {
+				},
+				["totals"] = {
+					7286, -- [1]
+					75, -- [2]
+					{
+						9, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["totals_grupo"] = {
+					6459, -- [1]
+					75, -- [2]
+					{
+						9, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["combat_counter"] = 5036,
+				["frags_need_refresh"] = false,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Kamenac"] = 6410.004283,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Kamenac"] = 75.004444,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["end_time"] = 279138.018,
+				["spells_cast_timeline"] = {
+				},
+				["instance_type"] = "party",
+				["player_last_events"] = {
+				},
+				["TimeData"] = {
+				},
+				["hasSaved"] = true,
+				["frags"] = {
+				},
+				["data_fim"] = "22:51:23",
+				["data_inicio"] = "22:50:58",
+				["CombatSkillCache"] = {
+				},
+				["combat_id"] = 75,
+				["start_time"] = 279112.148,
+				["contra"] = "Scarlet Commander Mograine",
+				["is_boss"] = {
+					["diff_string"] = "normal",
+					["index"] = 1,
+					["zone"] = "Scarlet Monastery",
+					["encounter"] = "Scarlet Commander Mograine",
+					["mapid"] = 189,
+					["try_number"] = 2,
+					["name"] = "Scarlet Commander Mograine",
+					["diff"] = 16,
+					["ej_instance_id"] = 0,
+					["id"] = 0,
+				},
+			}, -- [3]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 64,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1298,
+							["totalabsorbed"] = 0.003469,
+							["damage_from"] = {
+								["Scarlet Wizard"] = true,
+								["Scarlet Centurion"] = true,
+							},
+							["targets"] = {
+								["Scarlet Centurion"] = 1549,
+								["Rabbit"] = 721,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["custom"] = 0,
+							["classe"] = "WARRIOR",
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 2270.003469,
+							["damage_taken"] = 445.003469,
+							["dps_started"] = false,
+							["end_time"] = 1595622726,
+							["friendlyfire"] = {
+							},
+							["tipo"] = 1,
+							["nome"] = "Kamenac",
 							["spells"] = {
 								["_ActorTable"] = {
 									["Intercept Stun"] = {
@@ -1673,7 +2998,7 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["High Inquisitor Whitemane"] = 0,
+											["Scarlet Commander Mograine"] = 0,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 0,
@@ -1688,13 +3013,1590 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
 										["n_amt"] = 0,
 										["spellschool"] = 1,
 										["IMMUNE"] = 1,
+									},
+									["Whirlwind"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 721,
+										["g_amt"] = 0,
+										["n_max"] = 246,
+										["targets"] = {
+											["Scarlet Centurion"] = 482,
+											["Rabbit"] = 721,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 482,
+										["n_min"] = 236,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 1203,
+										["c_max"] = 721,
+										["id"] = "Whirlwind",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 721,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["!Melee"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 132,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Scarlet Centurion"] = 132,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 132,
+										["c_max"] = 132,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 132,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Cleave"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 614,
+										["g_amt"] = 0,
+										["n_max"] = 321,
+										["targets"] = {
+											["Scarlet Centurion"] = 935,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 321,
+										["n_min"] = 321,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 935,
+										["c_max"] = 614,
+										["id"] = "Cleave",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 614,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["spec"] = 72,
+							["last_dps"] = 318.328911653615,
+							["colocacao"] = 1,
+							["last_event"] = 1595623856,
+							["on_hold"] = false,
+							["start_time"] = 1595622724,
+							["serial"] = "Player-4465-010DF944",
+							["total"] = 2270.003469,
+						}, -- [1]
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.002141,
+							["damage_from"] = {
+								["Scarlet Centurion"] = true,
+							},
+							["targets"] = {
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["custom"] = 0,
+							["classe"] = "WARRIOR",
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.002141,
+							["last_dps"] = 0.000300238395737178,
+							["dps_started"] = false,
+							["end_time"] = 1595622726,
+							["on_hold"] = false,
+							["tipo"] = 1,
+							["nome"] = "Vermin",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["spec"] = 71,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 2,
+							["last_event"] = 0,
+							["damage_taken"] = 859.002141,
+							["start_time"] = 1595622726,
+							["serial"] = "Player-4465-00E5831F",
+							["total"] = 0.002141,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.00328,
+							["damage_from"] = {
+								["Kamenac"] = true,
+							},
+							["targets"] = {
+								["Kamenac"] = 274,
+								["Vermin"] = 859,
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["total"] = 1133.00328,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1133.00328,
+							["delay"] = 0,
+							["monster"] = true,
+							["end_time"] = 1595622726,
+							["dps_started"] = false,
+							["damage_taken"] = 1549.00328,
+							["nome"] = "Scarlet Centurion",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 337,
+										["g_amt"] = 0,
+										["n_max"] = 273,
+										["targets"] = {
+											["Kamenac"] = 274,
+											["Vermin"] = 859,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 796,
+										["n_min"] = 87,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 1133,
+										["c_max"] = 337,
+										["r_amt"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 337,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 5,
+										["spellschool"] = 1,
+										["DODGE"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["friendlyfire"] = {
+							},
+							["custom"] = 0,
+							["last_event"] = 1595622726,
+							["on_hold"] = false,
+							["start_time"] = 1595622721,
+							["serial"] = "Creature-0-4469-189-9303-4301-00031B42E7",
+							["classe"] = "UNKNOW",
+						}, -- [3]
+						{
+							["flag_original"] = 2600,
+							["totalabsorbed"] = 0.005954,
+							["damage_from"] = {
+								["Kamenac"] = true,
+							},
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["last_event"] = 0,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.005954,
+							["end_time"] = 1595622726,
+							["dps_started"] = false,
+							["total"] = 0.005954,
+							["delay"] = 0,
+							["classe"] = "UNKNOW",
+							["nome"] = "Rabbit",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["damage_taken"] = 721.005954,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["start_time"] = 1595622726,
+							["serial"] = "Creature-0-4469-189-9303-721-00011B42E7",
+							["fight_component"] = true,
+						}, -- [4]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 64,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 64,
+					["_ActorTable"] = {
+						{
+							["received"] = 127.004619,
+							["resource"] = 0.004619,
+							["targets"] = {
+								["Kamenac"] = 127,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 1,
+							["classe"] = "WARRIOR",
+							["passiveover"] = 0.004619,
+							["total"] = 127.004619,
+							["nome"] = "Kamenac",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Unbridled Wrath"] = {
+										["total"] = 2,
+										["id"] = "Unbridled Wrath",
+										["totalover"] = 0,
+										["targets"] = {
+											["Kamenac"] = 2,
+										},
+										["counter"] = 2,
+									},
+									["Charge"] = {
+										["total"] = 105,
+										["id"] = "Charge",
+										["totalover"] = 0,
+										["targets"] = {
+											["Kamenac"] = 105,
+										},
+										["counter"] = 5,
+									},
+									["Bloodrage"] = {
+										["total"] = 20,
+										["id"] = "Bloodrage",
+										["totalover"] = 0,
+										["targets"] = {
+											["Kamenac"] = 20,
+										},
+										["counter"] = 2,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["totalover"] = 0.004619,
+							["alternatepower"] = 0.004619,
+							["last_event"] = 1595623813,
+							["tipo"] = 3,
+							["spec"] = 72,
+							["serial"] = "Player-4465-010DF944",
+							["flag_original"] = 1298,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 64,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Deep Wound"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Deep Wound",
+										["uptime"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 9,
+							["classe"] = "WARRIOR",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Elixir of the Mongoose"] = {
+										["activedamt"] = 1,
+										["id"] = "Elixir of the Mongoose",
+										["targets"] = {
+										},
+										["actived_at"] = 1595622721,
+										["uptime"] = 0,
+										["counter"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["appliedamt"] = 1,
+									},
+									["Elixir of the Giants"] = {
+										["activedamt"] = 1,
+										["id"] = "Elixir of the Giants",
+										["targets"] = {
+										},
+										["actived_at"] = 1595622721,
+										["uptime"] = 0,
+										["counter"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["appliedamt"] = 1,
+									},
+									["Holy Strength"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Holy Strength",
+										["uptime"] = 1,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									["Flurry"] = {
+										["activedamt"] = 2,
+										["id"] = "Flurry",
+										["targets"] = {
+										},
+										["actived_at"] = 1595622726,
+										["uptime"] = 5,
+										["counter"] = 0,
+										["refreshamt"] = 1,
+										["actived"] = true,
+										["appliedamt"] = 2,
+									},
+									["Battle Shout"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Battle Shout",
+										["uptime"] = 3,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 0,
+							["nome"] = "Kamenac",
+							["spec"] = 72,
+							["grupo"] = true,
+							["spell_cast"] = {
+								["Whirlwind"] = 1,
+								["Cleave"] = 1,
+							},
+							["pets"] = {
+							},
+							["last_event"] = 1595622726,
+							["buff_uptime_targets"] = {
+							},
+							["tipo"] = 4,
+							["serial"] = "Player-4465-010DF944",
+							["debuff_uptime_targets"] = {
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 1297,
+							["nome"] = "Vermin",
+							["spec"] = 71,
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["buff_uptime"] = 0,
+							["tipo"] = 4,
+							["last_event"] = 1595622726,
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Battle Stance"] = {
+										["activedamt"] = 1,
+										["id"] = "Battle Stance",
+										["targets"] = {
+										},
+										["actived_at"] = 1595622726,
+										["uptime"] = 0,
+										["counter"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["serial"] = "Player-4465-00E5831F",
+							["classe"] = "WARRIOR",
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 64,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Kamenac"] = true,
+					["Vermin"] = true,
+				},
+				["tempo_start"] = 1595622721,
+				["last_events_tables"] = {
+					{
+						{
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								337, -- [3]
+								1595622722.183, -- [4]
+								753, -- [5]
+								"Scarlet Centurion", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [1]
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								273, -- [3]
+								1595622723.799, -- [4]
+								416, -- [5]
+								"Scarlet Centurion", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [2]
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								249, -- [3]
+								1595622724.188, -- [4]
+								416, -- [5]
+								"Scarlet Centurion", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								106, -- [10]
+							}, -- [3]
+							{
+								3, -- [1]
+								0, -- [2]
+								0, -- [3]
+								0, -- [4]
+								0, -- [5]
+								"Vermin", -- [6]
+							}, -- [4]
+						}, -- [1]
+						1595622724.628, -- [2]
+						"Vermin", -- [3]
+						"WARRIOR", -- [4]
+						753, -- [5]
+						"0m 2s", -- [6]
+						["dead"] = true,
+						["dead_at"] = 2.44500000000699,
+					}, -- [1]
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 5017,
+				["totals"] = {
+					3402.991646, -- [1]
+					0, -- [2]
+					{
+						127, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 1,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["totals_grupo"] = {
+					2270, -- [1]
+					0, -- [2]
+					{
+						127, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 1,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "22:32:18",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Scarlet Centurion",
+				["TotalElapsedCombatTime"] = 277979.005,
+				["CombatEndedAt"] = 277979.005,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "22:32:02",
+				["end_time"] = 277983.691,
+				["combat_id"] = 64,
+				["resincked"] = true,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Rabbit"] = 1,
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["contra"] = "Scarlet Centurion",
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+					["Kamenac"] = {
+						{
+							true, -- [1]
+							"!Melee", -- [2]
+							47, -- [3]
+							1595623767.691, -- [4]
+							2473, -- [5]
+							"Scarlet Wizard", -- [6]
+							nil, -- [7]
+							1, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [1]
+						{
+							true, -- [1]
+							"!Melee", -- [2]
+							40, -- [3]
+							1595623768.218, -- [4]
+							2473, -- [5]
+							"Scarlet Wizard", -- [6]
+							nil, -- [7]
+							1, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [2]
+						{
+							true, -- [1]
+							"!Melee", -- [2]
+							43, -- [3]
+							1595623769.894, -- [4]
+							2386, -- [5]
+							"Scarlet Wizard", -- [6]
+							nil, -- [7]
+							1, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [3]
+						{
+							true, -- [1]
+							"!Melee", -- [2]
+							41, -- [3]
+							1595623770.416, -- [4]
+							2386, -- [5]
+							"Scarlet Wizard", -- [6]
+							nil, -- [7]
+							1, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 5,
+					},
+				},
+				["start_time"] = 277976.56,
+				["TimeData"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Kamenac"] = 6341.025607,
+							["Vermin"] = 0.002141,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+			}, -- [4]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 52,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1298,
+							["totalabsorbed"] = 0.008202,
+							["damage_from"] = {
+								["High Inquisitor Fairbanks"] = true,
+							},
+							["targets"] = {
+								["High Inquisitor Fairbanks"] = 8325,
+							},
+							["pets"] = {
+							},
+							["total"] = 8325.008202,
+							["on_hold"] = false,
+							["classe"] = "WARRIOR",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 8325.008202,
+							["damage_taken"] = 346.008202,
+							["delay"] = 0,
+							["dps_started"] = false,
+							["end_time"] = 1595622028,
+							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
+							["boss_fight_component"] = true,
+							["spells"] = {
+								["_ActorTable"] = {
+									["Thunder Clap"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 80,
+										["targets"] = {
+											["High Inquisitor Fairbanks"] = 80,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 80,
+										["n_min"] = 80,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 80,
+										["c_max"] = 0,
+										["id"] = "Thunder Clap",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["!Melee"] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 521,
+										["g_amt"] = 0,
+										["n_max"] = 438,
+										["targets"] = {
+											["High Inquisitor Fairbanks"] = 4373,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 3852,
+										["n_min"] = 78,
+										["g_dmg"] = 0,
+										["counter"] = 21,
+										["total"] = 4373,
+										["c_max"] = 272,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 249,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 19,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Shadow Bolt"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 56,
+										["targets"] = {
+											["High Inquisitor Fairbanks"] = 56,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 56,
+										["n_min"] = 56,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 56,
+										["c_max"] = 0,
+										["id"] = "Shadow Bolt",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 32,
+									},
+									["Execute"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 2868,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["High Inquisitor Fairbanks"] = 2868,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 2868,
+										["c_max"] = 2868,
+										["id"] = "Execute",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 2868,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Whirlwind"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 367,
+										["targets"] = {
+											["High Inquisitor Fairbanks"] = 367,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 367,
+										["n_min"] = 367,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 367,
+										["c_max"] = 0,
+										["id"] = "Whirlwind",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Deep Wound"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 62,
+										["targets"] = {
+											["High Inquisitor Fairbanks"] = 62,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 62,
+										["n_min"] = 62,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 62,
+										["c_max"] = 0,
+										["id"] = "Deep Wound",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Heroic Strike"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 519,
+										["targets"] = {
+											["High Inquisitor Fairbanks"] = 519,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 519,
+										["n_min"] = 519,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 519,
+										["c_max"] = 0,
+										["id"] = "Heroic Strike",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["last_event"] = 1595622026,
+							["custom"] = 0,
+							["nome"] = "Kamenac",
+							["colocacao"] = 1,
+							["tipo"] = 1,
+							["last_dps"] = 396.410085329472,
+							["start_time"] = 1595622007,
+							["serial"] = "Player-4465-010DF944",
+							["spec"] = 72,
+						}, -- [1]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.008172,
+							["damage_from"] = {
+								["Kamenac"] = true,
+							},
+							["targets"] = {
+								["Kamenac"] = 346,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["nome"] = "High Inquisitor Fairbanks",
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 346.008172,
+							["delay"] = 0,
+							["dps_started"] = false,
+							["total"] = 346.008172,
+							["end_time"] = 1595622028,
+							["damage_taken"] = 8325.008172,
+							["boss_fight_component"] = true,
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 97,
+										["targets"] = {
+											["Kamenac"] = 346,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 346,
+										["MISS"] = 1,
+										["n_min"] = 79,
+										["a_amt"] = 0,
+										["counter"] = 7,
+										["total"] = 346,
+										["r_amt"] = 0,
+										["c_max"] = 0,
+										["b_dmg"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["spellschool"] = 1,
+										["n_amt"] = 4,
+										["DODGE"] = 1,
+										["g_dmg"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["friendlyfire"] = {
+							},
+							["custom"] = 0,
+							["last_event"] = 1595622022,
+							["on_hold"] = false,
+							["start_time"] = 1595622009,
+							["serial"] = "Creature-0-4469-189-8246-4542-00001B3C47",
+							["monster"] = true,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 52,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1298,
+							["healing_from"] = {
+								["Kamenac"] = true,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 0.006046,
+							["total_without_pet"] = 230.006046,
+							["total"] = 230.006046,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-010DF944",
+							["totalabsorb"] = 0.006046,
+							["last_hps"] = 26.2294498801723,
+							["targets"] = {
+								["Kamenac"] = 230,
+							},
+							["totalover_without_pet"] = 0.006046,
+							["healing_taken"] = 230.006046,
+							["end_time"] = 1595622028,
+							["targets_overheal"] = {
+							},
+							["tipo"] = 2,
+							["nome"] = "Kamenac",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Holy Strength"] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 119,
+										["targets"] = {
+											["Kamenac"] = 230,
+										},
+										["n_min"] = 111,
+										["counter"] = 2,
+										["overheal"] = 0,
+										["total"] = 230,
+										["c_max"] = 0,
+										["id"] = "Holy Strength",
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["totaldenied"] = 0,
+										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 2,
+										["n_curado"] = 230,
+										["c_min"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["classe"] = "WARRIOR",
+							["totaldenied"] = 0.006046,
+							["custom"] = 0,
+							["last_event"] = 1595622015,
+							["spec"] = 72,
+							["start_time"] = 1595622020,
+							["delay"] = 1595622015,
+							["boss_fight_component"] = true,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 52,
+					["_ActorTable"] = {
+						{
+							["received"] = 64.001333,
+							["resource"] = 0.001333,
+							["targets"] = {
+								["Kamenac"] = 64,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 1,
+							["classe"] = "WARRIOR",
+							["passiveover"] = 0.001333,
+							["total"] = 64.001333,
+							["nome"] = "Kamenac",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Unbridled Wrath"] = {
+										["total"] = 13,
+										["id"] = "Unbridled Wrath",
+										["totalover"] = 0,
+										["targets"] = {
+											["Kamenac"] = 13,
+										},
+										["counter"] = 13,
+									},
+									["Charge"] = {
+										["total"] = 21,
+										["id"] = "Charge",
+										["totalover"] = 0,
+										["targets"] = {
+											["Kamenac"] = 21,
+										},
+										["counter"] = 1,
+									},
+									["Bloodrage"] = {
+										["total"] = 30,
+										["id"] = "Bloodrage",
+										["totalover"] = 0,
+										["targets"] = {
+											["Kamenac"] = 30,
+										},
+										["counter"] = 21,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["totalover"] = 0.001333,
+							["flag_original"] = 1298,
+							["last_event"] = 1595622121,
+							["tipo"] = 3,
+							["spec"] = 72,
+							["alternatepower"] = 0.001333,
+							["serial"] = "Player-4465-010DF944",
+							["boss_fight_component"] = true,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 52,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Thunder Clap"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = "Thunder Clap",
+										["uptime"] = 19,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									["Charge Stun"] = {
+										["activedamt"] = -1,
+										["id"] = "Charge Stun",
+										["targets"] = {
+										},
+										["actived_at"] = 1595622007,
+										["uptime"] = 0,
+										["counter"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["appliedamt"] = 0,
+									},
+									["Deep Wound"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 1,
+										["id"] = "Deep Wound",
+										["uptime"] = 8,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									["Sunder Armor"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 4,
+										["id"] = "Sunder Armor",
+										["uptime"] = 17,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 97,
+							["classe"] = "WARRIOR",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Battle Shout"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 1,
+										["id"] = "Battle Shout",
+										["uptime"] = 21,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									["Holy Strength"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 2,
+										["refreshamt"] = 0,
+										["id"] = "Holy Strength",
+										["uptime"] = 8,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+									["Bloodrage"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Bloodrage",
+										["uptime"] = 9,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									["Elixir of the Mongoose"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Elixir of the Mongoose",
+										["uptime"] = 21,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									["Berserker Rage"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Berserker Rage",
+										["uptime"] = 10,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									["Flurry"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 3,
+										["refreshamt"] = 0,
+										["id"] = "Flurry",
+										["uptime"] = 7,
+										["targets"] = {
+										},
+										["appliedamt"] = 3,
+									},
+									["Berserker Stance"] = {
+										["activedamt"] = 1,
+										["id"] = "Berserker Stance",
+										["targets"] = {
+										},
+										["actived_at"] = 1595622007,
+										["uptime"] = 0,
+										["counter"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["appliedamt"] = 1,
+									},
+									["Battle Stance"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = "Battle Stance",
+										["uptime"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 0,
+									},
+									["Elixir of the Giants"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Elixir of the Giants",
+										["uptime"] = 21,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 44,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 72,
+							["grupo"] = true,
+							["spell_cast"] = {
+								["Battle Shout"] = 1,
+								["Thunder Clap"] = 1,
+								["Berserker Rage"] = 1,
+								["Berserker Stance"] = 1,
+								["Whirlwind"] = 1,
+								["Sunder Armor"] = 5,
+								["Heroic Strike"] = 1,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 1595622028,
+							["pets"] = {
+							},
+							["nome"] = "Kamenac",
+							["serial"] = "Player-4465-010DF944",
+							["boss_fight_component"] = true,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 52,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Kamenac"] = true,
+					["Vermin"] = true,
+				},
+				["overall_added"] = true,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["tempo_start"] = 1595622007,
+				["enemy"] = "High Inquisitor Fairbanks",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["last_events_tables"] = {
+				},
+				["totals"] = {
+					8670.98425, -- [1]
+					230, -- [2]
+					{
+						64, -- [1]
+						[0] = -0.00796200000013414,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["totals_grupo"] = {
+					8325, -- [1]
+					230, -- [2]
+					{
+						64, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["combat_counter"] = 5005,
+				["frags_need_refresh"] = true,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Kamenac"] = 8325.008202,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Kamenac"] = 230.006046,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["end_time"] = 277282.98,
+				["spells_cast_timeline"] = {
+				},
+				["instance_type"] = "party",
+				["player_last_events"] = {
+				},
+				["TimeData"] = {
+				},
+				["hasSaved"] = true,
+				["frags"] = {
+					["High Inquisitor Fairbanks"] = 1,
+				},
+				["data_fim"] = "22:20:28",
+				["data_inicio"] = "22:20:07",
+				["CombatSkillCache"] = {
+				},
+				["combat_id"] = 52,
+				["start_time"] = 277261.979,
+				["contra"] = "High Inquisitor Fairbanks",
+				["is_boss"] = {
+					["diff_string"] = "normal",
+					["index"] = 1,
+					["zone"] = "Scarlet Monastery",
+					["encounter"] = "High Inquisitor Fairbanks",
+					["mapid"] = 189,
+					["try_number"] = 2,
+					["name"] = "High Inquisitor Fairbanks",
+					["diff"] = 16,
+					["ej_instance_id"] = 0,
+					["id"] = 0,
+				},
+			}, -- [5]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 51,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 66834,
+							["totalabsorbed"] = 0.006794,
+							["damage_from"] = {
+								["Kamenac"] = true,
+								["High Inquisitor Whitemane"] = true,
+								["Scarlet Commander Mograine"] = true,
+							},
+							["targets"] = {
+								["High Inquisitor Whitemane"] = 6059,
+								["Scarlet Commander Mograine"] = 12682,
+							},
+							["pets"] = {
+							},
+							["total"] = 18741.006794,
+							["on_hold"] = false,
+							["classe"] = "WARRIOR",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 18741.006794,
+							["damage_taken"] = 1345.006794,
+							["delay"] = 0,
+							["dps_started"] = false,
+							["end_time"] = 1595621984,
+							["friendlyfire_total"] = 2,
+							["friendlyfire"] = {
+								["Kamenac"] = {
+									["total"] = 2,
+									["spells"] = {
+										["Hand of Justice"] = 2,
+									},
+								},
+							},
+							["boss_fight_component"] = true,
+							["spells"] = {
+								["_ActorTable"] = {
+									["Whirlwind"] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 1294,
+										["g_amt"] = 0,
+										["n_max"] = 397,
+										["targets"] = {
+											["High Inquisitor Whitemane"] = 684,
+											["Scarlet Commander Mograine"] = 1007,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 397,
+										["n_min"] = 397,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 1691,
+										["c_max"] = 684,
+										["id"] = "Whirlwind",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 610,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									["Thunder Clap"] = {
 										["c_amt"] = 0,
@@ -1726,23 +4628,23 @@ _detalhes_database = {
 										["spellschool"] = 1,
 									},
 									["!Melee"] = {
-										["c_amt"] = 24,
+										["c_amt"] = 18,
 										["b_amt"] = 0,
-										["c_dmg"] = 8197,
+										["c_dmg"] = 4581,
 										["g_amt"] = 0,
-										["n_max"] = 423,
+										["n_max"] = 465,
 										["targets"] = {
-											["High Inquisitor Whitemane"] = 4961,
-											["Scarlet Commander Mograine"] = 8568,
+											["High Inquisitor Whitemane"] = 1687,
+											["Scarlet Commander Mograine"] = 8309,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 5332,
-										["n_min"] = 81,
+										["n_dmg"] = 5415,
+										["n_min"] = 78,
 										["g_dmg"] = 0,
-										["counter"] = 68,
-										["total"] = 13529,
+										["counter"] = 58,
 										["r_amt"] = 0,
-										["c_max"] = 894,
+										["total"] = 9996,
+										["c_max"] = 615,
 										["spellschool"] = 1,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
@@ -1753,98 +4655,98 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["a_dmg"] = 0,
-										["n_amt"] = 31,
-										["MISS"] = 1,
-										["IMMUNE"] = 12,
+										["n_amt"] = 27,
+										["MISS"] = 2,
+										["IMMUNE"] = 11,
 									},
 									["Cleave"] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 770,
-										["g_amt"] = 0,
-										["n_max"] = 584,
-										["targets"] = {
-											["High Inquisitor Whitemane"] = 1985,
-											["Scarlet Commander Mograine"] = 1107,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 2322,
-										["n_min"] = 337,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 3092,
-										["c_max"] = 770,
-										["id"] = "Cleave",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 770,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Execute"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 1031,
-										["targets"] = {
-											["High Inquisitor Whitemane"] = 779,
-											["Scarlet Commander Mograine"] = 1031,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1810,
-										["n_min"] = 779,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 1810,
-										["c_max"] = 0,
-										["id"] = "Execute",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Whirlwind"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 799,
+										["c_dmg"] = 938,
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["High Inquisitor Whitemane"] = 799,
+											["High Inquisitor Whitemane"] = 938,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 799,
-										["c_max"] = 799,
-										["id"] = "Whirlwind",
+										["total"] = 938,
+										["c_max"] = 938,
+										["id"] = "Cleave",
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 799,
+										["c_min"] = 938,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
 										["a_dmg"] = 0,
 										["spellschool"] = 1,
+									},
+									["Execute"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 1436,
+										["g_amt"] = 0,
+										["n_max"] = 823,
+										["targets"] = {
+											["High Inquisitor Whitemane"] = 1436,
+											["Scarlet Commander Mograine"] = 823,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 823,
+										["n_min"] = 823,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 2259,
+										["c_max"] = 1436,
+										["id"] = "Execute",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 1436,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Sunder Armor"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Scarlet Commander Mograine"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["r_amt"] = 0,
+										["id"] = "Sunder Armor",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["IMMUNE"] = 1,
 									},
 									["Deep Wound"] = {
 										["c_amt"] = 0,
@@ -1853,179 +4755,97 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 82,
 										["targets"] = {
-											["High Inquisitor Whitemane"] = 379,
-											["Scarlet Commander Mograine"] = 342,
+											["High Inquisitor Whitemane"] = 219,
+											["Scarlet Commander Mograine"] = 400,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 721,
-										["n_min"] = 50,
+										["n_dmg"] = 619,
+										["n_min"] = 72,
 										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 721,
+										["counter"] = 9,
+										["total"] = 619,
 										["c_max"] = 0,
+										["r_amt"] = 0,
 										["id"] = "Deep Wound",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 10,
 										["a_dmg"] = 0,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 8,
 										["spellschool"] = 1,
+										["IMMUNE"] = 1,
 									},
 									["Heroic Strike"] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 910,
+										["c_dmg"] = 933,
 										["g_amt"] = 0,
-										["n_max"] = 547,
+										["n_max"] = 578,
 										["targets"] = {
-											["Scarlet Commander Mograine"] = 1457,
+											["High Inquisitor Whitemane"] = 1095,
+											["Scarlet Commander Mograine"] = 2066,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 547,
-										["n_min"] = 547,
+										["n_dmg"] = 2228,
+										["n_min"] = 541,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 1457,
-										["c_max"] = 910,
+										["counter"] = 7,
+										["total"] = 3161,
+										["c_max"] = 933,
+										["r_amt"] = 0,
 										["id"] = "Heroic Strike",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 910,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
 										["a_dmg"] = 0,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 933,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
 										["spellschool"] = 1,
+										["IMMUNE"] = 2,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 21485.00793,
-							["classe"] = "WARRIOR",
-							["on_hold"] = false,
-							["nome"] = "Kamenac",
-							["spec"] = 72,
 							["grupo"] = true,
-							["tipo"] = 1,
+							["last_event"] = 1595621982,
 							["custom"] = 0,
-							["last_dps"] = 275.427632874364,
+							["nome"] = "Kamenac",
 							["colocacao"] = 1,
-							["last_event"] = 1595450639,
-							["friendlyfire"] = {
-								["Kamenac"] = {
-									["total"] = 2,
-									["spells"] = {
-										["Hand of Justice"] = 2,
-									},
-								},
-							},
-							["start_time"] = 1595450562,
+							["tipo"] = 1,
+							["last_dps"] = 263.779512357806,
+							["start_time"] = 1595621911,
 							["serial"] = "Player-4465-010DF944",
-							["damage_taken"] = 1856.00793,
+							["spec"] = 72,
 						}, -- [1]
 						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.001197,
-							["damage_from"] = {
-								["High Inquisitor Whitemane"] = true,
-								["Environment (Falling)"] = true,
-							},
-							["targets"] = {
-								["High Inquisitor Whitemane"] = 11,
-							},
-							["pets"] = {
-							},
-							["end_time"] = 1595450640,
-							["boss_fight_component"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 11.001197,
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 1,
-										["n_max"] = 0,
-										["targets"] = {
-											["High Inquisitor Whitemane"] = 11,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 11,
-										["counter"] = 1,
-										["total"] = 11,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["delay"] = 1595450614,
-							["dps_started"] = false,
-							["total"] = 11.001197,
-							["classe"] = "WARRIOR",
-							["on_hold"] = false,
-							["nome"] = "Vermin",
-							["spec"] = 71,
-							["grupo"] = true,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_dps"] = 0.141030138707264,
-							["colocacao"] = 2,
-							["last_event"] = 1595450614,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1595450639,
-							["serial"] = "Player-4465-00E5831F",
-							["damage_taken"] = 92.001197,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008054,
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.003274,
 							["damage_from"] = {
 								["Kamenac"] = true,
 							},
 							["targets"] = {
-								["Kamenac"] = 1508,
+								["Kamenac"] = 1092,
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["boss_fight_component"] = true,
 							["classe"] = "UNKNOW",
+							["boss_fight_component"] = true,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 1508.008054,
-							["delay"] = 1595450579,
-							["monster"] = true,
-							["total"] = 1508.008054,
-							["damage_taken"] = 12582.008054,
-							["on_hold"] = false,
+							["total_without_pet"] = 1092.003274,
+							["delay"] = 1595621929,
+							["dps_started"] = false,
+							["total"] = 1092.003274,
+							["end_time"] = 1595621984,
+							["damage_taken"] = 12682.003274,
 							["nome"] = "Scarlet Commander Mograine",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -2048,8 +4868,8 @@ _detalhes_database = {
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
@@ -2061,18 +4881,18 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 105,
+										["n_max"] = 112,
 										["targets"] = {
-											["Kamenac"] = 1225,
+											["Kamenac"] = 916,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 1225,
-										["DODGE"] = 4,
-										["n_min"] = 68,
-										["a_amt"] = 0,
-										["counter"] = 19,
+										["n_dmg"] = 916,
+										["DODGE"] = 3,
+										["n_min"] = 93,
+										["g_dmg"] = 0,
+										["counter"] = 16,
+										["total"] = 916,
 										["r_amt"] = 0,
-										["total"] = 1225,
 										["c_max"] = 0,
 										["b_dmg"] = 0,
 										["id"] = "!Melee",
@@ -2080,13 +4900,71 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["c_min"] = 0,
 										["m_crit"] = 0,
-										["PARRY"] = 1,
+										["PARRY"] = 3,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["spellschool"] = 1,
-										["n_amt"] = 13,
+										["n_amt"] = 9,
+										["a_amt"] = 0,
 										["MISS"] = 1,
+									},
+									["Crusader Strike"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 53,
+										["targets"] = {
+											["Kamenac"] = 159,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 159,
+										["n_min"] = 53,
 										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 159,
+										["c_max"] = 0,
+										["id"] = "Crusader Strike",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 3,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									["Retribution Aura"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Kamenac"] = 17,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 17,
+										["n_min"] = 17,
+										["g_dmg"] = 0,
+										["counter"] = 36,
+										["total"] = 17,
+										["c_max"] = 0,
+										["r_amt"] = 0,
+										["id"] = "Retribution Aura",
+										["r_dmg"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["a_amt"] = 0,
+										["RESIST"] = 35,
+										["a_dmg"] = 0,
+										["spellschool"] = 2,
 									},
 									["Hammer of Justice"] = {
 										["c_amt"] = 0,
@@ -2101,174 +4979,118 @@ _detalhes_database = {
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 2,
+										["counter"] = 1,
 										["total"] = 0,
 										["c_max"] = 0,
 										["id"] = "Hammer of Justice",
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
+										["m_amt"] = 0,
 										["m_crit"] = 0,
 										["n_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 2,
-										["b_dmg"] = 0,
-										["RESIST"] = 2,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
-									},
-									["Crusader Strike"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 60,
-										["targets"] = {
-											["Kamenac"] = 168,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 168,
-										["n_min"] = 54,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 168,
-										["c_max"] = 0,
-										["id"] = "Crusader Strike",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
 										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 3,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
-									},
-									["Retribution Aura"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 17,
-										["targets"] = {
-											["Kamenac"] = 115,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 115,
-										["n_min"] = 16,
-										["g_dmg"] = 0,
-										["counter"] = 40,
-										["total"] = 115,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = "Retribution Aura",
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 7,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["RESIST"] = 33,
-										["a_dmg"] = 0,
-										["spellschool"] = 2,
-									},
-									["Lay on Hands"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Lay on Hands",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
-										["n_amt"] = 0,
+										["RESIST"] = 1,
 										["a_amt"] = 0,
 										["a_dmg"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["last_event"] = 1595450639,
-							["last_dps"] = 0,
-							["end_time"] = 1595450640,
-							["custom"] = 0,
 							["tipo"] = 1,
+							["last_dps"] = 0,
 							["friendlyfire"] = {
 							},
-							["start_time"] = 1595450595,
-							["serial"] = "Creature-0-4468-189-27113-3976-0000189ECF",
-							["dps_started"] = false,
-						}, -- [3]
+							["custom"] = 0,
+							["last_event"] = 1595621982,
+							["on_hold"] = false,
+							["start_time"] = 1595621942,
+							["serial"] = "Creature-0-4469-189-8246-3976-00001B3C47",
+							["monster"] = true,
+						}, -- [2]
 						{
 							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.005592,
+							["totalabsorbed"] = 0.001504,
 							["damage_from"] = {
 								["Kamenac"] = true,
-								["Vermin"] = true,
 							},
 							["targets"] = {
-								["Kamenac"] = 346,
-								["Vermin"] = 14,
+								["Kamenac"] = 251,
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["boss_fight_component"] = true,
 							["classe"] = "UNKNOW",
+							["boss_fight_component"] = true,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 360.005592,
-							["delay"] = 1595450615,
-							["monster"] = true,
-							["total"] = 360.005592,
-							["damage_taken"] = 8914.005592,
-							["on_hold"] = false,
+							["total_without_pet"] = 251.001504,
+							["delay"] = 1595621942,
+							["dps_started"] = false,
+							["total"] = 251.001504,
+							["end_time"] = 1595621984,
+							["damage_taken"] = 6059.001504,
 							["nome"] = "High Inquisitor Whitemane",
 							["spells"] = {
 								["_ActorTable"] = {
-									["Scarlet Resurrection"] = {
+									["Holy Smite"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 171,
 										["targets"] = {
+											["Kamenac"] = 171,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 171,
+										["n_min"] = 171,
 										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
+										["counter"] = 1,
+										["total"] = 171,
 										["c_max"] = 0,
-										["id"] = "Scarlet Resurrection",
+										["id"] = "Holy Smite",
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
-										["n_amt"] = 0,
+										["n_amt"] = 1,
 										["a_amt"] = 0,
 										["a_dmg"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 80,
+										["targets"] = {
+											["Kamenac"] = 80,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 80,
+										["n_min"] = 80,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 80,
+										["c_max"] = 0,
+										["r_amt"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["spellschool"] = 1,
+										["a_amt"] = 0,
 									},
 									["Deep Sleep"] = {
 										["c_amt"] = 0,
@@ -2289,122 +5111,60 @@ _detalhes_database = {
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
 										["a_amt"] = 0,
 										["a_dmg"] = 0,
 									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 85,
-										["targets"] = {
-											["Kamenac"] = 330,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 330,
-										["n_min"] = 78,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 330,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Retribution Aura"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 16,
-										["targets"] = {
-											["Kamenac"] = 16,
-											["Vermin"] = 14,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 30,
-										["n_min"] = 14,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 30,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = "Retribution Aura",
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["RESIST"] = 4,
-										["a_dmg"] = 0,
-										["spellschool"] = 2,
-									},
-									["Holy Smite"] = {
+									["Scarlet Resurrection"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["Kamenac"] = 0,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 3,
+										["counter"] = 0,
 										["total"] = 0,
 										["c_max"] = 0,
-										["id"] = "Holy Smite",
+										["id"] = "Scarlet Resurrection",
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 										["m_crit"] = 0,
-										["n_amt"] = 0,
 										["m_amt"] = 0,
-										["successful_casted"] = 3,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
 										["b_dmg"] = 0,
-										["RESIST"] = 3,
+										["n_amt"] = 0,
 										["a_amt"] = 0,
 										["a_dmg"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["last_event"] = 1595450615,
-							["last_dps"] = 0,
-							["end_time"] = 1595450640,
-							["custom"] = 0,
 							["tipo"] = 1,
+							["last_dps"] = 0,
 							["friendlyfire"] = {
 							},
-							["start_time"] = 1595450626,
-							["serial"] = "Creature-0-4468-189-27113-3977-0000189ECF",
-							["dps_started"] = false,
-						}, -- [4]
+							["custom"] = 0,
+							["last_event"] = 1595621942,
+							["on_hold"] = false,
+							["start_time"] = 1595621977,
+							["serial"] = "Creature-0-4469-189-8246-3977-00001B3C47",
+							["monster"] = true,
+						}, -- [3]
 					},
 				}, -- [1]
 				{
 					["tipo"] = 3,
-					["combatId"] = 151,
+					["combatId"] = 51,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1298,
@@ -2415,9 +5175,9 @@ _detalhes_database = {
 							},
 							["iniciar_hps"] = false,
 							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.005628,
-							["total_without_pet"] = 197.005628,
-							["total"] = 197.005628,
+							["totalover"] = 0.001003,
+							["total_without_pet"] = 211.001003,
+							["total"] = 211.001003,
 							["targets_absorbs"] = {
 							},
 							["heal_enemy"] = {
@@ -2425,17 +5185,17 @@ _detalhes_database = {
 							["colocacao"] = 1,
 							["on_hold"] = false,
 							["serial"] = "Player-4465-010DF944",
-							["totalabsorb"] = 0.005628,
-							["last_hps"] = 2.52551890880161,
+							["totalabsorb"] = 0.001003,
+							["last_hps"] = 5.45109545829723,
 							["targets"] = {
-								["Kamenac"] = 197,
+								["Kamenac"] = 211,
 							},
-							["totalover_without_pet"] = 0.005628,
-							["healing_taken"] = 197.005628,
-							["end_time"] = 1595450640,
+							["totalover_without_pet"] = 0.001003,
+							["healing_taken"] = 211.001003,
+							["end_time"] = 1595621984,
 							["targets_overheal"] = {
 							},
-							["last_event"] = 1595450620,
+							["tipo"] = 2,
 							["nome"] = "Kamenac",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -2444,26 +5204,26 @@ _detalhes_database = {
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
 										},
-										["n_max"] = 104,
+										["n_max"] = 113,
 										["targets"] = {
-											["Kamenac"] = 197,
+											["Kamenac"] = 211,
 										},
-										["n_min"] = 93,
+										["n_min"] = 98,
 										["counter"] = 2,
 										["overheal"] = 0,
-										["total"] = 197,
+										["total"] = 211,
 										["c_max"] = 0,
 										["id"] = "Holy Strength",
 										["targets_absorbs"] = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["m_healed"] = 0,
-										["c_min"] = 0,
 										["totaldenied"] = 0,
-										["n_amt"] = 2,
-										["n_curado"] = 197,
 										["m_amt"] = 0,
+										["m_healed"] = 0,
+										["n_amt"] = 2,
+										["n_curado"] = 211,
+										["c_min"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -2471,270 +5231,243 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["classe"] = "WARRIOR",
-							["totaldenied"] = 0.005628,
+							["totaldenied"] = 0.001003,
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1595621924,
 							["spec"] = 72,
-							["start_time"] = 1595450639,
-							["delay"] = 1595450620,
+							["start_time"] = 1595621979,
+							["delay"] = 1595621924,
 							["boss_fight_component"] = true,
 						}, -- [1]
 						{
 							["flag_original"] = 2632,
-							["totalabsorb"] = 0.006015,
+							["totalabsorb"] = 0.003594,
 							["last_hps"] = 0,
 							["healing_from"] = {
 							},
 							["targets"] = {
 							},
-							["serial"] = "Creature-0-4468-189-27113-3976-0000189ECF",
+							["serial"] = "Creature-0-4469-189-8246-3977-00001B3C47",
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
 							["targets_overheal"] = {
 							},
-							["healing_taken"] = 0.006015,
-							["totalover"] = 0.006015,
-							["total_without_pet"] = 0.006015,
-							["totalover_without_pet"] = 0.006015,
-							["totaldenied"] = 0.006015,
+							["healing_taken"] = 0.003594,
+							["totalover"] = 0.003594,
+							["total_without_pet"] = 0.003594,
+							["totalover_without_pet"] = 0.003594,
+							["totaldenied"] = 0.003594,
 							["monster"] = true,
-							["total"] = 0.006015,
-							["heal_enemy_amt"] = 3613,
+							["total"] = 0.003594,
+							["classe"] = "UNKNOW",
+							["boss_fight_component"] = true,
+							["nome"] = "High Inquisitor Whitemane",
 							["spells"] = {
 								["_ActorTable"] = {
 								},
 								["tipo"] = 3,
 							},
-							["boss_fight_component"] = true,
-							["targets_absorbs"] = {
-							},
-							["end_time"] = 1595450640,
-							["classe"] = "UNKNOW",
-							["heal_enemy"] = {
-								["Lay on Hands"] = 3613,
-							},
-							["tipo"] = 2,
-							["custom"] = 0,
-							["last_event"] = 1595450604,
-							["on_hold"] = false,
-							["start_time"] = 1595450640,
-							["delay"] = 0,
-							["nome"] = "Scarlet Commander Mograine",
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorb"] = 0.004287,
-							["last_hps"] = 0,
-							["healing_from"] = {
-							},
-							["targets"] = {
-							},
-							["serial"] = "Creature-0-4468-189-27113-3977-0000189ECF",
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["targets_overheal"] = {
-							},
-							["healing_taken"] = 0.004287,
-							["totalover"] = 0.004287,
-							["total_without_pet"] = 0.004287,
-							["totalover_without_pet"] = 0.004287,
-							["totaldenied"] = 0.004287,
-							["monster"] = true,
-							["total"] = 0.004287,
+							["end_time"] = 1595621984,
 							["heal_enemy_amt"] = 5284,
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["boss_fight_component"] = true,
-							["targets_absorbs"] = {
-							},
-							["end_time"] = 1595450640,
-							["classe"] = "UNKNOW",
 							["heal_enemy"] = {
 								["Scarlet Resurrection"] = 5284,
 							},
-							["tipo"] = 2,
+							["last_event"] = 1595621950,
 							["custom"] = 0,
-							["last_event"] = 1595450599,
+							["tipo"] = 2,
 							["on_hold"] = false,
-							["start_time"] = 1595450640,
+							["start_time"] = 1595621984,
 							["delay"] = 0,
-							["nome"] = "High Inquisitor Whitemane",
+							["targets_absorbs"] = {
+							},
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["totalabsorb"] = 0.005304,
+							["last_hps"] = 0,
+							["healing_from"] = {
+							},
+							["targets"] = {
+							},
+							["serial"] = "Creature-0-4469-189-8246-3976-00001B3C47",
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["targets_overheal"] = {
+							},
+							["healing_taken"] = 0.005304,
+							["totalover"] = 0.005304,
+							["total_without_pet"] = 0.005304,
+							["totalover_without_pet"] = 0.005304,
+							["totaldenied"] = 0.005304,
+							["monster"] = true,
+							["total"] = 0.005304,
+							["classe"] = "UNKNOW",
+							["boss_fight_component"] = true,
+							["nome"] = "Scarlet Commander Mograine",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 3,
+							},
+							["end_time"] = 1595621984,
+							["heal_enemy_amt"] = 0,
+							["heal_enemy"] = {
+							},
+							["last_event"] = 0,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["start_time"] = 1595621984,
+							["delay"] = 0,
+							["targets_absorbs"] = {
+							},
 						}, -- [3]
 					},
 				}, -- [2]
 				{
 					["tipo"] = 7,
-					["combatId"] = 151,
+					["combatId"] = 51,
 					["_ActorTable"] = {
 						{
-							["received"] = 40.006067,
-							["resource"] = 0.006067,
+							["received"] = 76.002188,
+							["resource"] = 0.002188,
 							["targets"] = {
-								["Kamenac"] = 40,
+								["Kamenac"] = 76,
 							},
 							["pets"] = {
 							},
 							["powertype"] = 1,
 							["classe"] = "WARRIOR",
-							["passiveover"] = 0.006067,
-							["total"] = 40.006067,
+							["passiveover"] = 0.002188,
+							["total"] = 76.002188,
 							["nome"] = "Kamenac",
 							["spells"] = {
 								["_ActorTable"] = {
 									["Bloodrage"] = {
-										["total"] = 10,
-										["id"] = "Bloodrage",
-										["totalover"] = 0,
-										["targets"] = {
-											["Kamenac"] = 10,
-										},
-										["counter"] = 10,
-									},
-									["Unbridled Wrath"] = {
 										["total"] = 30,
-										["id"] = "Unbridled Wrath",
+										["id"] = "Bloodrage",
 										["totalover"] = 0,
 										["targets"] = {
 											["Kamenac"] = 30,
 										},
-										["counter"] = 30,
+										["counter"] = 12,
+									},
+									["Charge"] = {
+										["total"] = 21,
+										["id"] = "Charge",
+										["totalover"] = 0,
+										["targets"] = {
+											["Kamenac"] = 21,
+										},
+										["counter"] = 1,
+									},
+									["Unbridled Wrath"] = {
+										["total"] = 25,
+										["id"] = "Unbridled Wrath",
+										["totalover"] = 0,
+										["targets"] = {
+											["Kamenac"] = 25,
+										},
+										["counter"] = 25,
 									},
 								},
 								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["totalover"] = 0.006067,
-							["flag_original"] = 1298,
+							["totalover"] = 0.002188,
+							["flag_original"] = 66834,
+							["last_event"] = 1595622006,
 							["tipo"] = 3,
-							["last_event"] = 1595450639,
 							["spec"] = 72,
-							["alternatepower"] = 0.006067,
+							["alternatepower"] = 0.002188,
 							["serial"] = "Player-4465-010DF944",
 							["boss_fight_component"] = true,
 						}, -- [1]
 						{
-							["received"] = 49.00825,
-							["resource"] = 0.00825,
+							["received"] = 0.003855,
+							["resource"] = 0.003855,
 							["targets"] = {
-								["Scarlet Commander Mograine"] = 159,
+								["Scarlet Commander Mograine"] = 75,
 							},
 							["pets"] = {
 							},
 							["powertype"] = 0,
 							["classe"] = "UNKNOW",
-							["passiveover"] = 0.00825,
+							["passiveover"] = 0.003855,
 							["monster"] = true,
-							["total"] = 159.00825,
+							["total"] = 75.003855,
 							["nome"] = "High Inquisitor Whitemane",
 							["spells"] = {
 								["_ActorTable"] = {
 									["Scarlet Resurrection"] = {
-										["total"] = 159,
+										["total"] = 75,
 										["id"] = "Scarlet Resurrection",
-										["totalover"] = 9841,
+										["totalover"] = 9925,
 										["targets"] = {
-											["Scarlet Commander Mograine"] = 159,
+											["Scarlet Commander Mograine"] = 75,
 										},
 										["counter"] = 1,
 									},
 								},
 								["tipo"] = 7,
 							},
-							["totalover"] = 9841.00825,
+							["totalover"] = 9925.003855,
 							["flag_original"] = 2632,
-							["last_event"] = 1595450599,
+							["last_event"] = 1595621950,
 							["tipo"] = 3,
-							["alternatepower"] = 0.00825,
-							["serial"] = "Creature-0-4468-189-27113-3977-0000189ECF",
+							["alternatepower"] = 0.003855,
+							["serial"] = "Creature-0-4469-189-8246-3977-00001B3C47",
 							["boss_fight_component"] = true,
 						}, -- [2]
 						{
-							["received"] = 159.001639,
-							["resource"] = 0.001639,
+							["received"] = 75.005016,
+							["resource"] = 0.005016,
 							["targets"] = {
-								["High Inquisitor Whitemane"] = 49,
 							},
 							["pets"] = {
 							},
 							["powertype"] = 0,
 							["classe"] = "UNKNOW",
-							["passiveover"] = 0.001639,
+							["passiveover"] = 0.005016,
 							["monster"] = true,
-							["total"] = 49.001639,
+							["total"] = 0.005016,
 							["nome"] = "Scarlet Commander Mograine",
 							["spells"] = {
 								["_ActorTable"] = {
-									["Lay on Hands"] = {
-										["total"] = 49,
-										["id"] = "Lay on Hands",
-										["totalover"] = 501,
-										["targets"] = {
-											["High Inquisitor Whitemane"] = 49,
-										},
-										["counter"] = 1,
-									},
 								},
 								["tipo"] = 7,
 							},
-							["totalover"] = 501.001639,
+							["totalover"] = 0.005016,
 							["flag_original"] = 2632,
-							["last_event"] = 1595450604,
+							["last_event"] = 0,
 							["tipo"] = 3,
-							["alternatepower"] = 0.001639,
-							["serial"] = "Creature-0-4468-189-27113-3976-0000189ECF",
+							["alternatepower"] = 0.005016,
+							["serial"] = "Creature-0-4469-189-8246-3976-00001B3C47",
 							["boss_fight_component"] = true,
 						}, -- [3]
-						{
-							["received"] = 15.002998,
-							["resource"] = 0.002998,
-							["targets"] = {
-								["Vermin"] = 15,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 1,
-							["classe"] = "WARRIOR",
-							["passiveover"] = 0.002998,
-							["total"] = 15.002998,
-							["nome"] = "Vermin",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Charge"] = {
-										["total"] = 15,
-										["id"] = "Charge",
-										["totalover"] = 0,
-										["targets"] = {
-											["Vermin"] = 15,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["flag_original"] = 1297,
-							["alternatepower"] = 0.002998,
-							["last_event"] = 1595527231,
-							["spec"] = 71,
-							["tipo"] = 3,
-							["serial"] = "Player-4465-00E5831F",
-							["totalover"] = 0.002998,
-						}, -- [4]
 					},
 				}, -- [3]
 				{
 					["tipo"] = 9,
-					["combatId"] = 151,
+					["combatId"] = 51,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
+									["Death Wish"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = "Death Wish",
+										["uptime"] = 30,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
 									["Thunder Clap"] = {
 										["counter"] = 0,
 										["actived"] = false,
@@ -2746,49 +5479,27 @@ _detalhes_database = {
 										},
 										["appliedamt"] = 1,
 									},
-									["Demoralizing Shout"] = {
+									["Deep Wound"] = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = "Demoralizing Shout",
-										["uptime"] = 30,
+										["refreshamt"] = 13,
+										["id"] = "Deep Wound",
+										["uptime"] = 45,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["appliedamt"] = 4,
 									},
 									["Sunder Armor"] = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 0,
-										["refreshamt"] = 12,
+										["refreshamt"] = 6,
 										["id"] = "Sunder Armor",
-										["uptime"] = 56,
+										["uptime"] = 41,
 										["targets"] = {
 										},
-										["appliedamt"] = 3,
-									},
-									["Deep Wound"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 22,
-										["id"] = "Deep Wound",
-										["uptime"] = 58,
-										["targets"] = {
-										},
-										["appliedamt"] = 5,
-									},
-									["Death Wish"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = "Death Wish",
-										["uptime"] = 30,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
+										["appliedamt"] = 4,
 									},
 								},
 								["tipo"] = 9,
@@ -2803,7 +5514,7 @@ _detalhes_database = {
 										["activedamt"] = 1,
 										["refreshamt"] = 1,
 										["id"] = "Battle Shout",
-										["uptime"] = 78,
+										["uptime"] = 73,
 										["targets"] = {
 										},
 										["appliedamt"] = 1,
@@ -2811,13 +5522,13 @@ _detalhes_database = {
 									["Holy Strength"] = {
 										["counter"] = 0,
 										["actived"] = false,
-										["activedamt"] = 2,
-										["refreshamt"] = 0,
+										["activedamt"] = 1,
+										["refreshamt"] = 1,
 										["id"] = "Holy Strength",
-										["uptime"] = 30,
+										["uptime"] = 19,
 										["targets"] = {
 										},
-										["appliedamt"] = 2,
+										["appliedamt"] = 1,
 									},
 									["Bloodrage"] = {
 										["counter"] = 0,
@@ -2825,7 +5536,7 @@ _detalhes_database = {
 										["activedamt"] = 1,
 										["refreshamt"] = 0,
 										["id"] = "Bloodrage",
-										["uptime"] = 9,
+										["uptime"] = 10,
 										["targets"] = {
 										},
 										["appliedamt"] = 1,
@@ -2836,18 +5547,29 @@ _detalhes_database = {
 										["activedamt"] = 1,
 										["refreshamt"] = 0,
 										["id"] = "Elixir of the Mongoose",
-										["uptime"] = 78,
+										["uptime"] = 73,
 										["targets"] = {
 										},
 										["appliedamt"] = 1,
 									},
-									["Elixir of the Giants"] = {
+									["Berserker Rage"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 2,
+										["refreshamt"] = 0,
+										["id"] = "Berserker Rage",
+										["uptime"] = 20,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+									["Berserking"] = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 1,
 										["refreshamt"] = 0,
-										["id"] = "Elixir of the Giants",
-										["uptime"] = 78,
+										["id"] = "Berserking",
+										["uptime"] = 10,
 										["targets"] = {
 										},
 										["appliedamt"] = 1,
@@ -2855,20 +5577,20 @@ _detalhes_database = {
 									["Flurry"] = {
 										["counter"] = 0,
 										["actived"] = false,
-										["activedamt"] = 6,
-										["refreshamt"] = 21,
+										["activedamt"] = 7,
+										["refreshamt"] = 16,
 										["id"] = "Flurry",
-										["uptime"] = 49,
+										["uptime"] = 54,
 										["targets"] = {
 										},
-										["appliedamt"] = 6,
+										["appliedamt"] = 7,
 									},
 									["Berserker Stance"] = {
 										["activedamt"] = 1,
 										["id"] = "Berserker Stance",
 										["targets"] = {
 										},
-										["actived_at"] = 1595450562,
+										["actived_at"] = 1595621911,
 										["uptime"] = 0,
 										["counter"] = 0,
 										["refreshamt"] = 0,
@@ -2886,13 +5608,13 @@ _detalhes_database = {
 										},
 										["appliedamt"] = 0,
 									},
-									["Berserker Rage"] = {
+									["Elixir of the Giants"] = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 1,
 										["refreshamt"] = 0,
-										["id"] = "Berserker Rage",
-										["uptime"] = 10,
+										["id"] = "Elixir of the Giants",
+										["uptime"] = 73,
 										["targets"] = {
 										},
 										["appliedamt"] = 1,
@@ -2900,28 +5622,27 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["debuff_uptime"] = 204,
+							["debuff_uptime"] = 146,
 							["buff_uptime_targets"] = {
 							},
 							["spec"] = 72,
 							["grupo"] = true,
 							["spell_cast"] = {
 								["Battle Shout"] = 1,
-								["Cleave"] = 4,
-								["Demoralizing Shout"] = 1,
-								["Whirlwind"] = 1,
-								["Intercept"] = 1,
-								["Thunder Clap"] = 1,
-								["Berserker Rage"] = 1,
+								["Cleave"] = 1,
+								["Bloodrage"] = 1,
+								["Whirlwind"] = 3,
+								["Berserker Rage"] = 2,
+								["Berserking"] = 1,
 								["Death Wish"] = 1,
+								["Sunder Armor"] = 11,
 								["Berserker Stance"] = 1,
-								["Sunder Armor"] = 18,
-								["Heroic Strike"] = 2,
+								["Heroic Strike"] = 7,
 							},
 							["debuff_uptime_targets"] = {
 							},
 							["tipo"] = 4,
-							["last_event"] = 1595450640,
+							["last_event"] = 1595621984,
 							["pets"] = {
 							},
 							["nome"] = "Kamenac",
@@ -2929,7 +5650,7 @@ _detalhes_database = {
 							["boss_fight_component"] = true,
 						}, -- [1]
 						{
-							["flag_original"] = 68168,
+							["flag_original"] = 2632,
 							["last_event"] = 0,
 							["nome"] = "Scarlet Commander Mograine",
 							["pets"] = {
@@ -2937,48 +5658,15 @@ _detalhes_database = {
 							["classe"] = "UNKNOW",
 							["spell_cast"] = {
 								["Divine Shield"] = 1,
-								["Hammer of Justice"] = 2,
 								["Crusader Strike"] = 3,
+								["Hammer of Justice"] = 1,
 								["Retribution Aura"] = 1,
-								["Lay on Hands"] = 1,
 							},
 							["tipo"] = 4,
 							["monster"] = true,
-							["serial"] = "Creature-0-4468-189-27113-3976-0000189ECF",
+							["serial"] = "Creature-0-4469-189-8246-3976-00001B3C47",
 							["boss_fight_component"] = true,
 						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["boss_debuff"] = true,
-							["monster"] = true,
-							["debuff_uptime"] = 48,
-							["spellschool"] = 1,
-							["boss_fight_component"] = true,
-							["debuff_uptime_targets"] = {
-								["Kamenac"] = {
-									["uptime"] = 48,
-									["refreshamt"] = 0,
-									["appliedamt"] = 0,
-									["activedamt"] = 1,
-									["actived"] = true,
-									["actived_at"] = 1595450631,
-								},
-							},
-							["last_event"] = 1595450631,
-							["tipo"] = 4,
-							["damage_twin"] = "Scarlet Commander Mograine",
-							["serial"] = "Creature-0-4468-189-27113-3976-0000189ECF",
-							["damage_spellid"] = "Crusader Strike",
-							["nome"] = "Crusader Strike",
-						}, -- [3]
 						{
 							["flag_original"] = 2632,
 							["last_event"] = 0,
@@ -2987,15 +5675,15 @@ _detalhes_database = {
 							},
 							["classe"] = "UNKNOW",
 							["spell_cast"] = {
-								["Holy Smite"] = 3,
+								["Holy Smite"] = 1,
 								["Deep Sleep"] = 1,
 								["Scarlet Resurrection"] = 1,
 							},
 							["tipo"] = 4,
 							["monster"] = true,
-							["serial"] = "Creature-0-4468-189-27113-3977-0000189ECF",
+							["serial"] = "Creature-0-4469-189-8246-3977-00001B3C47",
 							["boss_fight_component"] = true,
-						}, -- [4]
+						}, -- [3]
 						{
 							["flag_original"] = 2632,
 							["debuff_uptime_spells"] = {
@@ -3027,18 +5715,50 @@ _detalhes_database = {
 									["appliedamt"] = 0,
 								},
 							},
-							["last_event"] = 1595450602,
+							["last_event"] = 1595621953,
 							["tipo"] = 4,
 							["damage_twin"] = "High Inquisitor Whitemane",
-							["serial"] = "Creature-0-4468-189-27113-3977-0000189ECF",
+							["serial"] = "Creature-0-4469-189-8246-3977-00001B3C47",
 							["damage_spellid"] = "Deep Sleep",
 							["nome"] = "Deep Sleep",
+						}, -- [4]
+						{
+							["flag_original"] = 2632,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 9,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["boss_debuff"] = true,
+							["monster"] = true,
+							["debuff_uptime"] = 16,
+							["spellschool"] = 1,
+							["boss_fight_component"] = true,
+							["debuff_uptime_targets"] = {
+								["Kamenac"] = {
+									["uptime"] = 16,
+									["refreshamt"] = 0,
+									["appliedamt"] = 0,
+									["activedamt"] = 1,
+									["actived"] = true,
+									["actived_at"] = 1595621975,
+								},
+							},
+							["last_event"] = 1595621975,
+							["tipo"] = 4,
+							["damage_twin"] = "Scarlet Commander Mograine",
+							["serial"] = "Creature-0-4469-189-8246-3976-00001B3C47",
+							["damage_spellid"] = "Crusader Strike",
+							["nome"] = "Crusader Strike",
 						}, -- [5]
 					},
 				}, -- [4]
 				{
 					["tipo"] = 2,
-					["combatId"] = 151,
+					["combatId"] = 51,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -3046,7 +5766,7 @@ _detalhes_database = {
 					["Kamenac"] = true,
 					["Vermin"] = true,
 				},
-				["CombatStartedAt"] = 182485.532,
+				["CombatStartedAt"] = 277170.907,
 				["overall_added"] = true,
 				["last_events_tables"] = {
 				},
@@ -3056,11 +5776,11 @@ _detalhes_database = {
 					["n"] = 1,
 				},
 				["totals"] = {
-					23363.95746, -- [1]
-					197, -- [2]
+					20084, -- [1]
+					211, -- [2]
 					{
-						55, -- [1]
-						[0] = 207.995033,
+						76, -- [1]
+						[0] = 75,
 						["alternatepower"] = 0,
 						[6] = 0,
 						[3] = 0,
@@ -3079,107 +5799,23 @@ _detalhes_database = {
 					["frags_total"] = 0,
 				},
 				["player_last_events"] = {
-					["Vermin"] = {
-						{
-							true, -- [1]
-							"Falling", -- [2]
-							61, -- [3]
-							1595450769.568, -- [4]
-							724, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [1]
-						{
-							true, -- [1]
-							"Falling", -- [2]
-							17, -- [3]
-							1595502266.663, -- [4]
-							724, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [2]
-						{
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 3,
-					},
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "party",
 				["hasSaved"] = true,
-				["data_fim"] = "22:44:00",
+				["data_fim"] = "22:19:45",
 				["cleu_timeline"] = {
 				},
 				["enemy"] = "High Inquisitor Whitemane",
-				["TotalElapsedCombatTime"] = 72.8870000000025,
-				["CombatEndedAt"] = 105889.159,
+				["TotalElapsedCombatTime"] = 68.4290000000037,
+				["CombatEndedAt"] = 277239.336,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "22:18:32",
+				["end_time"] = 277239.377,
+				["combat_id"] = 51,
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -3187,36 +5823,34 @@ _detalhes_database = {
 					}, -- [1]
 					{
 						3, -- [1]
-						30.5109999999986, -- [2]
+						31.6990000000224, -- [2]
 					}, -- [2]
 					["damage"] = {
 						{
-							["Kamenac"] = 9798.00793,
+							["Kamenac"] = 10730.006794,
 						}, -- [1]
 						[3] = {
-							["Kamenac"] = 11687,
-							["Vermin"] = 11.001197,
+							["Kamenac"] = 8011,
 						},
 					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
-							["Kamenac"] = 104.005628,
+							["Kamenac"] = 211.001003,
 						}, -- [1]
 						[3] = {
-							["Kamenac"] = 93,
+							["Kamenac"] = 0,
 						},
 					},
 					["damage_section"] = {
 					},
 				},
-				["end_time"] = 105889.224,
-				["combat_id"] = 151,
-				["data_inicio"] = "22:42:42",
-				["tempo_start"] = 1595450562,
+				["tempo_start"] = 1595621911,
 				["contra"] = "Scarlet Commander Mograine",
-				["spells_cast_timeline"] = {
+				["frags"] = {
+					["High Inquisitor Whitemane"] = 1,
+					["Scarlet Commander Mograine"] = 1,
 				},
 				["is_boss"] = {
 					["diff_string"] = "normal",
@@ -3224,20 +5858,20 @@ _detalhes_database = {
 					["zone"] = "Scarlet Monastery",
 					["encounter"] = "High Inquisitor Whitemane",
 					["mapid"] = 189,
-					["try_number"] = 3,
+					["try_number"] = 2,
 					["name"] = "High Inquisitor Whitemane",
 					["diff"] = 16,
 					["ej_instance_id"] = 0,
 					["id"] = 0,
 				},
-				["combat_counter"] = 4909,
+				["combat_counter"] = 5004,
 				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
-					21498, -- [1]
-					197, -- [2]
+					18743, -- [1]
+					211, -- [2]
 					{
-						55, -- [1]
+						76, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
 						[6] = 0,
@@ -3254,48 +5888,1488 @@ _detalhes_database = {
 						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
-				["start_time"] = 105811.218,
+				["start_time"] = 277166.377,
 				["TimeData"] = {
 				},
-				["frags"] = {
-					["High Inquisitor Whitemane"] = 1,
-					["Scarlet Commander Mograine"] = 1,
+				["spells_cast_timeline"] = {
 				},
 			}, -- [6]
 			{
 				{
 					["tipo"] = 2,
-					["combatId"] = 113,
+					["combatId"] = 42,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.002772,
+							["totalabsorbed"] = 320.00798,
 							["damage_from"] = {
-								["High Inquisitor Fairbanks"] = true,
+								["Kamenac"] = true,
 								["Scarlet Centurion"] = true,
+								["Scarlet Chaplain"] = true,
+								["Scarlet Champion"] = true,
 							},
 							["targets"] = {
-								["High Inquisitor Fairbanks"] = 7302,
-								["Scarlet Centurion"] = 543,
-								["Scarlet Myrmidon"] = 72,
+								["Scarlet Chaplain"] = 5145,
+								["Scarlet Centurion"] = 13570,
+								["Scarlet Champion"] = 5290,
+								["Scarlet Abbot"] = 50,
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["spec"] = 72,
-							["classe"] = "WARRIOR",
+							["last_dps"] = 498.225607189739,
+							["spells"] = {
+								["_ActorTable"] = {
+									["Intercept Stun"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 48,
+										["targets"] = {
+											["Scarlet Chaplain"] = 48,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 48,
+										["n_min"] = 48,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 48,
+										["c_max"] = 0,
+										["id"] = "Intercept Stun",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["Thunder Clap"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 92,
+										["targets"] = {
+											["Scarlet Chaplain"] = 89,
+											["Scarlet Centurion"] = 92,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 181,
+										["n_min"] = 89,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 181,
+										["c_max"] = 0,
+										["id"] = "Thunder Clap",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 16,
+										["b_amt"] = 0,
+										["c_dmg"] = 5168,
+										["g_amt"] = 0,
+										["n_max"] = 310,
+										["targets"] = {
+											["Scarlet Chaplain"] = 1376,
+											["Scarlet Centurion"] = 5826,
+											["Scarlet Champion"] = 1669,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 3703,
+										["n_min"] = 79,
+										["g_dmg"] = 0,
+										["counter"] = 44,
+										["total"] = 8871,
+										["c_max"] = 672,
+										["MISS"] = 1,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["c_min"] = 144,
+										["n_amt"] = 27,
+										["a_dmg"] = 564,
+										["r_amt"] = 0,
+									},
+									["Cleave"] = {
+										["c_amt"] = 8,
+										["b_amt"] = 0,
+										["c_dmg"] = 6708,
+										["g_amt"] = 0,
+										["n_max"] = 418,
+										["targets"] = {
+											["Scarlet Chaplain"] = 2258,
+											["Scarlet Champion"] = 2814,
+											["Scarlet Centurion"] = 6071,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 4435,
+										["n_min"] = 326,
+										["g_dmg"] = 0,
+										["counter"] = 20,
+										["total"] = 11143,
+										["c_max"] = 922,
+										["id"] = "Cleave",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 739,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 12,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["Hamstring"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 74,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Scarlet Centurion"] = 74,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 74,
+										["c_max"] = 74,
+										["id"] = "Hamstring",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 74,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["Whirlwind"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 536,
+										["g_amt"] = 0,
+										["n_max"] = 267,
+										["targets"] = {
+											["Scarlet Chaplain"] = 709,
+											["Scarlet Champion"] = 515,
+											["Scarlet Centurion"] = 1060,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1748,
+										["n_min"] = 216,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 2284,
+										["c_max"] = 536,
+										["id"] = "Whirlwind",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 536,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 536,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 7,
+										["a_amt"] = 1,
+										["r_amt"] = 0,
+									},
+									["Deep Wound"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 73,
+										["targets"] = {
+											["Scarlet Chaplain"] = 665,
+											["Scarlet Champion"] = 292,
+											["Scarlet Centurion"] = 281,
+											["Scarlet Abbot"] = 50,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1288,
+										["n_min"] = 50,
+										["g_dmg"] = 0,
+										["counter"] = 21,
+										["total"] = 1288,
+										["c_max"] = 0,
+										["id"] = "Deep Wound",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 21,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["Shadow Bolt"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 84,
+										["targets"] = {
+											["Scarlet Centurion"] = 166,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 166,
+										["n_min"] = 82,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 166,
+										["c_max"] = 0,
+										["id"] = "Shadow Bolt",
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire_total"] = 3,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 7917.002772,
+							["total_without_pet"] = 24055.00798,
+							["damage_taken"] = 2516.00798,
+							["serial"] = "Player-4465-010DF944",
+							["fight_component"] = true,
+							["end_time"] = 1595621644,
+							["classe"] = "WARRIOR",
+							["on_hold"] = false,
 							["nome"] = "Kamenac",
+							["spec"] = 72,
+							["grupo"] = true,
+							["dps_started"] = false,
+							["total"] = 24055.00798,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1595621644,
+							["friendlyfire"] = {
+								["Kamenac"] = {
+									["spells"] = {
+										["Hand of Justice"] = 3,
+									},
+									["total"] = 3,
+								},
+							},
+							["start_time"] = 1595621281,
+							["delay"] = 0,
+							["colocacao"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.008759,
+							["damage_from"] = {
+								["Scarlet Chaplain"] = true,
+								["Scarlet Centurion"] = true,
+							},
+							["targets"] = {
+							},
+							["serial"] = "Player-4465-00E5831F",
+							["pets"] = {
+							},
+							["colocacao"] = 2,
+							["end_time"] = 1595621327,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.008759,
+							["damage_taken"] = 927.008759,
+							["dps_started"] = false,
+							["total"] = 0.008759,
+							["last_dps"] = 0.000181793653099836,
+							["last_event"] = 0,
+							["nome"] = "Vermin",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["spec"] = 71,
+							["on_hold"] = false,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1595621327,
+							["delay"] = 0,
+							["classe"] = "WARRIOR",
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.006684,
+							["damage_from"] = {
+								["Kamenac"] = true,
+							},
+							["targets"] = {
+								["Kamenac"] = 995,
+								["Vermin"] = 683,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1678.006684,
+							["serial"] = "Creature-0-4469-189-8246-4301-00009B3C47",
+							["monster"] = true,
+							["end_time"] = 1595621327,
+							["total"] = 1678.006684,
+							["on_hold"] = false,
+							["nome"] = "Scarlet Centurion",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 248,
+										["targets"] = {
+											["Kamenac"] = 995,
+											["Vermin"] = 683,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1678,
+										["a_amt"] = 0,
+										["n_min"] = 57,
+										["g_dmg"] = 0,
+										["counter"] = 21,
+										["MISS"] = 1,
+										["total"] = 1678,
+										["c_max"] = 0,
+										["b_dmg"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["m_amt"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 2,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_dmg"] = 0,
+										["n_amt"] = 16,
+										["r_amt"] = 0,
+										["DODGE"] = 2,
+									},
+									["Battle Shout"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = "Battle Shout",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 3,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["last_event"] = 1595621323,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 13570.006684,
+							["start_time"] = 1595621296,
+							["delay"] = 1595621302,
+							["fight_component"] = true,
+						}, -- [3]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.008549,
+							["damage_from"] = {
+								["Kamenac"] = true,
+							},
+							["targets"] = {
+								["Kamenac"] = 917,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 917.008549,
+							["serial"] = "Creature-0-4469-189-8246-4302-00011B3C48",
+							["monster"] = true,
+							["end_time"] = 1595621327,
+							["total"] = 917.008549,
+							["on_hold"] = false,
+							["nome"] = "Scarlet Champion",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 71,
+										["targets"] = {
+											["Kamenac"] = 579,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 579,
+										["n_min"] = 40,
+										["g_dmg"] = 0,
+										["counter"] = 15,
+										["DODGE"] = 2,
+										["r_amt"] = 0,
+										["c_max"] = 0,
+										["a_amt"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 2,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["c_min"] = 0,
+										["n_amt"] = 11,
+										["spellschool"] = 1,
+										["total"] = 579,
+									},
+									["Holy Strike"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 338,
+										["targets"] = {
+											["Kamenac"] = 338,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 338,
+										["n_min"] = 338,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 338,
+										["c_max"] = 0,
+										["id"] = "Holy Strike",
+										["r_dmg"] = 0,
+										["DODGE"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 2,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["last_event"] = 1595621326,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 5290.008549,
+							["start_time"] = 1595621286,
+							["delay"] = 0,
+							["fight_component"] = true,
+						}, -- [4]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.001046,
+							["damage_from"] = {
+								["Kamenac"] = true,
+							},
+							["targets"] = {
+								["Kamenac"] = 601,
+								["Vermin"] = 244,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 845.001046,
+							["serial"] = "Creature-0-4469-189-8246-4299-00029B3C48",
+							["monster"] = true,
+							["end_time"] = 1595621327,
+							["total"] = 845.001046,
+							["on_hold"] = false,
+							["nome"] = "Scarlet Chaplain",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Renew"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = "Renew",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 2,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+									},
+									["Power Word: Shield"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = "Power Word: Shield",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 2,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 125,
+										["targets"] = {
+											["Kamenac"] = 601,
+											["Vermin"] = 244,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 845,
+										["a_amt"] = 0,
+										["n_min"] = 28,
+										["g_dmg"] = 0,
+										["counter"] = 25,
+										["DODGE"] = 6,
+										["total"] = 845,
+										["c_max"] = 0,
+										["b_dmg"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["m_amt"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_dmg"] = 0,
+										["n_amt"] = 17,
+										["r_amt"] = 0,
+										["MISS"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["last_event"] = 1595621325,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 5145.001046,
+							["start_time"] = 1595621289,
+							["delay"] = 0,
+							["fight_component"] = true,
+						}, -- [5]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 42,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1298,
+							["targets_overheal"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["heal_enemy_amt"] = 0,
+							["totalover"] = 0.001947,
+							["total_without_pet"] = 1398.001947,
+							["total"] = 1398.001947,
+							["spec"] = 72,
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-010DF944",
+							["totalabsorb"] = 0.001947,
+							["last_hps"] = 29.0156274672695,
+							["targets"] = {
+								["Kamenac"] = 1398,
+							},
+							["totalover_without_pet"] = 0.001947,
+							["healing_taken"] = 1398.001947,
+							["fight_component"] = true,
+							["end_time"] = 1595621327,
+							["last_event"] = 1595621312,
+							["nome"] = "Kamenac",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Healing Potion"] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 1216,
+										["targets"] = {
+											["Kamenac"] = 1216,
+										},
+										["n_min"] = 1216,
+										["counter"] = 1,
+										["overheal"] = 0,
+										["total"] = 1216,
+										["c_max"] = 0,
+										["id"] = "Healing Potion",
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 1216,
+										["n_amt"] = 1,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+									["Holy Strength"] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 91,
+										["targets"] = {
+											["Kamenac"] = 182,
+										},
+										["n_min"] = 91,
+										["counter"] = 2,
+										["overheal"] = 0,
+										["total"] = 182,
+										["c_max"] = 0,
+										["id"] = "Holy Strength",
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 182,
+										["n_amt"] = 2,
+										["totaldenied"] = 0,
+										["m_healed"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["healing_from"] = {
+								["Kamenac"] = true,
+							},
+							["classe"] = "WARRIOR",
+							["custom"] = 0,
+							["tipo"] = 2,
+							["start_time"] = 1595621320,
+							["totaldenied"] = 0.001947,
+							["delay"] = 1595621312,
+							["targets_absorbs"] = {
+							},
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 42,
+					["_ActorTable"] = {
+						{
+							["received"] = 68.005255,
+							["resource"] = 0.005255,
+							["targets"] = {
+								["Kamenac"] = 68,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 1,
+							["classe"] = "WARRIOR",
+							["passiveover"] = 0.005255,
+							["fight_component"] = true,
+							["total"] = 68.005255,
+							["nome"] = "Kamenac",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Bloodrage"] = {
+										["total"] = 20,
+										["id"] = "Bloodrage",
+										["totalover"] = 0,
+										["targets"] = {
+											["Kamenac"] = 20,
+										},
+										["counter"] = 11,
+									},
+									["Charge"] = {
+										["total"] = 21,
+										["id"] = "Charge",
+										["totalover"] = 0,
+										["targets"] = {
+											["Kamenac"] = 21,
+										},
+										["counter"] = 1,
+									},
+									["Unbridled Wrath"] = {
+										["total"] = 27,
+										["id"] = "Unbridled Wrath",
+										["totalover"] = 0,
+										["targets"] = {
+											["Kamenac"] = 27,
+										},
+										["counter"] = 27,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["flag_original"] = 1298,
+							["alternatepower"] = 0.005255,
+							["last_event"] = 1595621619,
+							["spec"] = 72,
+							["tipo"] = 3,
+							["serial"] = "Player-4465-010DF944",
+							["totalover"] = 0.005255,
+						}, -- [1]
+						{
+							["received"] = 20.005626,
+							["resource"] = 0.005626,
+							["targets"] = {
+								["Vermin"] = 20,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 1,
+							["classe"] = "WARRIOR",
+							["passiveover"] = 0.005626,
+							["total"] = 20.005626,
+							["nome"] = "Vermin",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Bloodrage"] = {
+										["total"] = 20,
+										["id"] = "Bloodrage",
+										["totalover"] = 0,
+										["targets"] = {
+											["Vermin"] = 20,
+										},
+										["counter"] = 11,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["flag_original"] = 1297,
+							["alternatepower"] = 0.005626,
+							["last_event"] = 1595621544,
+							["spec"] = 71,
+							["tipo"] = 3,
+							["serial"] = "Player-4465-00E5831F",
+							["totalover"] = 0.005626,
+						}, -- [2]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 42,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Intercept Stun"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 3,
+										["id"] = "Intercept Stun",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Charge Stun"] = {
+										["activedamt"] = -1,
+										["id"] = "Charge Stun",
+										["targets"] = {
+										},
+										["actived_at"] = 1595621282,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Hamstring"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 5,
+										["id"] = "Hamstring",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Death Wish"] = {
+										["activedamt"] = -1,
+										["id"] = "Death Wish",
+										["targets"] = {
+										},
+										["actived_at"] = 1595621292,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Demoralizing Shout"] = {
+										["appliedamt"] = 4,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 30,
+										["id"] = "Demoralizing Shout",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Sunder Armor"] = {
+										["appliedamt"] = 2,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 9,
+										["id"] = "Sunder Armor",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Deep Wound"] = {
+										["appliedamt"] = 8,
+										["targets"] = {
+										},
+										["activedamt"] = 2,
+										["uptime"] = 41,
+										["id"] = "Deep Wound",
+										["refreshamt"] = 17,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Thunder Clap"] = {
+										["appliedamt"] = 2,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 30,
+										["id"] = "Thunder Clap",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 68,
+							["classe"] = "WARRIOR",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Battle Shout"] = {
+										["activedamt"] = 1,
+										["id"] = "Battle Shout",
+										["targets"] = {
+										},
+										["actived_at"] = 1595621281,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+									["Holy Strength"] = {
+										["appliedamt"] = 2,
+										["targets"] = {
+										},
+										["activedamt"] = 2,
+										["uptime"] = 9,
+										["id"] = "Holy Strength",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Bloodrage"] = {
+										["activedamt"] = 1,
+										["id"] = "Bloodrage",
+										["targets"] = {
+										},
+										["actived_at"] = 1595621321,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+									["Elixir of the Mongoose"] = {
+										["activedamt"] = 1,
+										["id"] = "Elixir of the Mongoose",
+										["targets"] = {
+										},
+										["actived_at"] = 1595621281,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+									["Berserker Rage"] = {
+										["activedamt"] = 2,
+										["id"] = "Berserker Rage",
+										["targets"] = {
+										},
+										["actived_at"] = 1595621323,
+										["uptime"] = 10,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+									["Berserking"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = "Berserking",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Flurry"] = {
+										["appliedamt"] = 8,
+										["targets"] = {
+										},
+										["activedamt"] = 8,
+										["uptime"] = 39,
+										["id"] = "Flurry",
+										["refreshamt"] = 19,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Berserker Stance"] = {
+										["activedamt"] = 1,
+										["id"] = "Berserker Stance",
+										["targets"] = {
+										},
+										["actived_at"] = 1595621282,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+									["Elixir of the Giants"] = {
+										["activedamt"] = 1,
+										["id"] = "Elixir of the Giants",
+										["targets"] = {
+										},
+										["actived_at"] = 1595621281,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+									["Battle Stance"] = {
+										["appliedamt"] = 0,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 0,
+										["id"] = "Battle Stance",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["fight_component"] = true,
+							["debuff_uptime"] = 118,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 72,
+							["grupo"] = true,
+							["spell_cast"] = {
+								["Hamstring"] = 2,
+								["Cleave"] = 11,
+								["Demoralizing Shout"] = 1,
+								["Whirlwind"] = 2,
+								["Intercept"] = 1,
+								["Berserker Rage"] = 2,
+								["Bloodrage"] = 1,
+								["Berserking"] = 1,
+								["Healing Potion"] = 1,
+								["Berserker Stance"] = 1,
+								["Sunder Armor"] = 4,
+								["Thunder Clap"] = 1,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1595621327,
+							["nome"] = "Kamenac",
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-010DF944",
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 2632,
+							["tipo"] = 4,
+							["nome"] = "Scarlet Centurion",
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["spell_cast"] = {
+								["Battle Shout"] = 3,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-4469-189-8246-4301-00009B3C47",
+							["classe"] = "UNKNOW",
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["tipo"] = 4,
+							["nome"] = "Scarlet Chaplain",
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["spell_cast"] = {
+								["Power Word: Shield"] = 2,
+								["Renew"] = 2,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-4469-189-8246-4299-00029B3C48",
+							["classe"] = "UNKNOW",
+						}, -- [3]
+						{
+							["flag_original"] = 2632,
+							["tipo"] = 4,
+							["nome"] = "Scarlet Champion",
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["spell_cast"] = {
+								["Holy Strike"] = 2,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-4469-189-8246-4302-00011B3C48",
+							["classe"] = "UNKNOW",
+						}, -- [4]
+						{
+							["flag_original"] = 1297,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 71,
+							["grupo"] = true,
+							["tipo"] = 4,
+							["buff_uptime"] = 0,
+							["nome"] = "Vermin",
+							["spell_cast"] = {
+								["Defensive Stance"] = 1,
+							},
+							["classe"] = "WARRIOR",
+							["pets"] = {
+							},
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Defensive Stance"] = {
+										["activedamt"] = 2,
+										["id"] = "Defensive Stance",
+										["targets"] = {
+										},
+										["actived_at"] = 1595621327,
+										["uptime"] = 0,
+										["appliedamt"] = 2,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+									["Battle Stance"] = {
+										["appliedamt"] = 0,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 0,
+										["id"] = "Battle Stance",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["serial"] = "Player-4465-00E5831F",
+							["last_event"] = 1595621327,
+						}, -- [5]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 42,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Kamenac"] = true,
+					["Flexlikekev"] = true,
+					["Vermin"] = true,
+				},
+				["CombatStartedAt"] = 276789.109,
+				["tempo_start"] = 1595621281,
+				["last_events_tables"] = {
+					{
+						{
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								125, -- [3]
+								1595621308.496, -- [4]
+								724, -- [5]
+								"Scarlet Chaplain", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [1]
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								228, -- [3]
+								1595621313.391, -- [4]
+								599, -- [5]
+								"Scarlet Centurion", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [2]
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								119, -- [3]
+								1595621314.032, -- [4]
+								371, -- [5]
+								"Scarlet Chaplain", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [3]
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								207, -- [3]
+								1595621315.384, -- [4]
+								252, -- [5]
+								"Scarlet Centurion", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [4]
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								248, -- [3]
+								1595621317.384, -- [4]
+								45, -- [5]
+								"Scarlet Centurion", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								203, -- [10]
+							}, -- [5]
+							{
+								3, -- [1]
+								0, -- [2]
+								0, -- [3]
+								0, -- [4]
+								0, -- [5]
+								"Vermin", -- [6]
+							}, -- [6]
+						}, -- [1]
+						1595621317.84, -- [2]
+						"Vermin", -- [3]
+						"WARRIOR", -- [4]
+						724, -- [5]
+						"0m 35s", -- [6]
+						["dead_at"] = 35.7779999999912,
+						["dead"] = true,
+					}, -- [1]
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["totals"] = {
+					27494.995295, -- [1]
+					1397.979123, -- [2]
+					{
+						88, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 1,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					24058, -- [1]
+					1398, -- [2]
+					{
+						88, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 1,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "22:08:59",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Scarlet Chaplain",
+				["TotalElapsedCombatTime"] = 10.1270000000368,
+				["CombatEndedAt"] = 276799.236,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Kamenac"] = 1398.001947,
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Kamenac"] = 24005.00798,
+							["Vermin"] = 0.008759,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 276584.62,
+				["combat_id"] = 42,
+				["combat_counter"] = 4990,
+				["frags"] = {
+					["Scarlet Champion"] = 1,
+					["Scarlet Centurion"] = 2,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["TimeData"] = {
+				},
+				["start_time"] = 276536.439,
+				["contra"] = "Scarlet Chaplain",
+				["data_inicio"] = "22:08:02",
+			}, -- [7]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 28,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1298,
+							["totalabsorbed"] = 601.00586,
+							["damage_from"] = {
+								["High Inquisitor Fairbanks"] = true,
+							},
+							["targets"] = {
+								["High Inquisitor Fairbanks"] = 6926,
+								["Scarlet Sorcerer"] = 56,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["nome"] = "Kamenac",
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 6982.00586,
+							["spec"] = 72,
 							["serial"] = "Player-4465-010DF944",
 							["dps_started"] = false,
-							["total"] = 7917.002772,
-							["on_hold"] = false,
-							["end_time"] = 1595449617,
+							["total"] = 6982.00586,
+							["classe"] = "WARRIOR",
+							["last_dps"] = 367.454652913212,
 							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
+									["Heroic Strike"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 511,
+										["targets"] = {
+											["High Inquisitor Fairbanks"] = 993,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 993,
+										["n_min"] = 482,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 993,
+										["c_max"] = 0,
+										["id"] = "Heroic Strike",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
 									["Thunder Clap"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -3326,62 +7400,61 @@ _detalhes_database = {
 										["r_amt"] = 0,
 									},
 									["!Melee"] = {
-										["c_amt"] = 7,
+										["c_amt"] = 5,
 										["b_amt"] = 0,
-										["c_dmg"] = 2773,
+										["c_dmg"] = 2132,
 										["g_amt"] = 0,
-										["n_max"] = 395,
+										["n_max"] = 355,
 										["targets"] = {
-											["High Inquisitor Fairbanks"] = 4532,
-											["Scarlet Centurion"] = 543,
+											["High Inquisitor Fairbanks"] = 4681,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 2302,
-										["n_min"] = 83,
+										["n_dmg"] = 2549,
+										["n_min"] = 80,
 										["g_dmg"] = 0,
 										["counter"] = 21,
-										["total"] = 5075,
-										["c_max"] = 692,
-										["MISS"] = 2,
+										["total"] = 4681,
+										["c_max"] = 821,
+										["MISS"] = 1,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
+										["c_min"] = 233,
 										["successful_casted"] = 0,
-										["c_min"] = 223,
-										["n_amt"] = 12,
+										["m_amt"] = 0,
+										["n_amt"] = 15,
 										["a_dmg"] = 0,
 										["r_amt"] = 0,
 									},
 									["Pummel"] = {
-										["c_amt"] = 0,
+										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 100,
 										["g_amt"] = 0,
-										["n_max"] = 47,
+										["n_max"] = 0,
 										["targets"] = {
-											["High Inquisitor Fairbanks"] = 47,
+											["High Inquisitor Fairbanks"] = 100,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 47,
-										["n_min"] = 47,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 47,
-										["c_max"] = 0,
+										["total"] = 100,
+										["c_max"] = 100,
 										["id"] = "Pummel",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["m_amt"] = 0,
-										["c_min"] = 0,
+										["c_min"] = 100,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 1,
+										["n_amt"] = 0,
 										["a_amt"] = 0,
 										["r_amt"] = 0,
 									},
@@ -3390,18 +7463,47 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 733,
+										["n_max"] = 621,
 										["targets"] = {
-											["High Inquisitor Fairbanks"] = 733,
+											["High Inquisitor Fairbanks"] = 621,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 733,
-										["n_min"] = 733,
+										["n_dmg"] = 621,
+										["n_min"] = 621,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 733,
+										["total"] = 621,
 										["c_max"] = 0,
 										["id"] = "Execute",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 621,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 1,
+										["r_amt"] = 0,
+									},
+									["Whirlwind"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 337,
+										["targets"] = {
+											["High Inquisitor Fairbanks"] = 337,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 337,
+										["n_min"] = 337,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 337,
+										["c_max"] = 0,
+										["id"] = "Whirlwind",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
@@ -3414,51 +7516,22 @@ _detalhes_database = {
 										["a_amt"] = 0,
 										["r_amt"] = 0,
 									},
-									["Whirlwind"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 737,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["High Inquisitor Fairbanks"] = 737,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 737,
-										["c_max"] = 737,
-										["id"] = "Whirlwind",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 737,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
 									["Deep Wound"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 72,
+										["n_max"] = 57,
 										["targets"] = {
-											["High Inquisitor Fairbanks"] = 102,
-											["Scarlet Myrmidon"] = 72,
+											["High Inquisitor Fairbanks"] = 57,
+											["Scarlet Sorcerer"] = 56,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 174,
-										["n_min"] = 51,
+										["n_dmg"] = 113,
+										["n_min"] = 56,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 174,
+										["counter"] = 2,
+										["total"] = 113,
 										["c_max"] = 0,
 										["id"] = "Deep Wound",
 										["r_dmg"] = 0,
@@ -3469,237 +7542,108 @@ _detalhes_database = {
 										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 3,
+										["n_amt"] = 2,
 										["a_amt"] = 0,
 										["r_amt"] = 0,
 									},
-									["Heroic Strike"] = {
-										["c_amt"] = 1,
+									["Shadow Bolt"] = {
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 1071,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 57,
 										["targets"] = {
-											["High Inquisitor Fairbanks"] = 1071,
+											["High Inquisitor Fairbanks"] = 57,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 57,
+										["n_min"] = 57,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 1071,
-										["c_max"] = 1071,
-										["id"] = "Heroic Strike",
+										["total"] = 57,
+										["c_max"] = 0,
+										["id"] = "Shadow Bolt",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 1071,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["m_amt"] = 0,
-										["c_min"] = 1071,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 1,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
+							["end_time"] = 1595620949,
 							["tipo"] = 1,
 							["colocacao"] = 1,
+							["custom"] = 0,
+							["last_event"] = 1595620949,
 							["friendlyfire"] = {
 							},
-							["custom"] = 0,
-							["last_event"] = 1595449617,
-							["damage_taken"] = 402.002772,
-							["start_time"] = 1595448895,
+							["start_time"] = 1595620305,
 							["delay"] = 0,
-							["last_dps"] = 461.470751294118,
+							["damage_taken"] = 344.00586,
 						}, -- [1]
 						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.001173,
-							["damage_from"] = {
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["end_time"] = 1595448912,
-							["boss_fight_component"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.001173,
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["High Inquisitor Fairbanks"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["a_amt"] = 0,
-										["n_min"] = 0,
-										["MISS"] = 2,
-										["counter"] = 4,
-										["DODGE"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["b_dmg"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["m_amt"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["g_dmg"] = 0,
-									},
-									["Rend"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["High Inquisitor Fairbanks"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["DODGE"] = 1,
-										["id"] = "Rend",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["c_min"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["serial"] = "Player-4465-00E5831F",
-							["dps_started"] = false,
-							["total"] = 0.001173,
-							["classe"] = "WARRIOR",
-							["last_dps"] = 7.220683287160880e-05,
-							["nome"] = "Vermin",
-							["spec"] = 71,
-							["grupo"] = true,
-							["tipo"] = 1,
-							["colocacao"] = 2,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1595448909,
-							["on_hold"] = false,
-							["start_time"] = 1595448912,
-							["delay"] = 0,
-							["damage_taken"] = 0.001173,
-						}, -- [2]
-						{
 							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.008958,
+							["totalabsorbed"] = 0.0012,
 							["damage_from"] = {
 								["Kamenac"] = true,
 							},
 							["targets"] = {
-								["Kamenac"] = 319,
+								["Kamenac"] = 344,
 							},
 							["pets"] = {
 							},
-							["monster"] = true,
+							["dps_started"] = false,
 							["nome"] = "High Inquisitor Fairbanks",
-							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 319.008958,
-							["serial"] = "Creature-0-4445-189-8393-4542-000018990F",
-							["dps_started"] = false,
-							["total"] = 319.008958,
-							["end_time"] = 1595448912,
+							["total_without_pet"] = 344.0012,
+							["serial"] = "Creature-0-4468-189-3060-4542-00001B34F3",
+							["monster"] = true,
+							["total"] = 344.0012,
+							["end_time"] = 1595620324,
 							["on_hold"] = false,
 							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
-									["Sleep"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Kamenac"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Sleep",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["RESIST"] = 1,
-										["m_amt"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-									},
 									["!Melee"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 83,
+										["n_max"] = 91,
 										["targets"] = {
-											["Kamenac"] = 319,
+											["Kamenac"] = 344,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 319,
+										["n_dmg"] = 344,
 										["n_min"] = 77,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 319,
-										["c_max"] = 0,
+										["counter"] = 6,
 										["MISS"] = 1,
+										["total"] = 344,
+										["c_max"] = 0,
+										["DODGE"] = 1,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
 										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["c_min"] = 0,
-										["n_amt"] = 4,
 										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["spellschool"] = 1,
 										["r_amt"] = 0,
 									},
 									["Power Word: Shield"] = {
@@ -3722,32 +7666,32 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["c_min"] = 0,
+										["m_amt"] = 0,
 										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["last_event"] = 1595448910,
+							["last_event"] = 1595620316,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 7302.008958,
-							["start_time"] = 1595448897,
+							["damage_taken"] = 6926.0012,
+							["start_time"] = 1595620307,
 							["delay"] = 0,
-							["friendlyfire_total"] = 0,
-						}, -- [3]
+							["classe"] = "UNKNOW",
+						}, -- [2]
 					},
 				}, -- [1]
 				{
 					["tipo"] = 3,
-					["combatId"] = 113,
+					["combatId"] = 28,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1298,
@@ -3757,9 +7701,9 @@ _detalhes_database = {
 							},
 							["iniciar_hps"] = false,
 							["classe"] = "WARRIOR",
-							["totalover"] = 0.008653,
-							["total_without_pet"] = 116.008653,
-							["total"] = 116.008653,
+							["totalover"] = 0.006695,
+							["total_without_pet"] = 97.006695,
+							["total"] = 97.006695,
 							["targets_absorbs"] = {
 							},
 							["heal_enemy"] = {
@@ -3767,14 +7711,14 @@ _detalhes_database = {
 							["colocacao"] = 1,
 							["on_hold"] = false,
 							["serial"] = "Player-4465-010DF944",
-							["totalabsorb"] = 0.008653,
-							["last_hps"] = 6.82403841176471,
+							["totalabsorb"] = 0.006695,
+							["last_hps"] = 5.10534682385425,
 							["targets"] = {
-								["Kamenac"] = 116,
+								["Kamenac"] = 97,
 							},
-							["totalover_without_pet"] = 0.008653,
-							["healing_taken"] = 116.008653,
-							["end_time"] = 1595448912,
+							["totalover_without_pet"] = 0.006695,
+							["healing_taken"] = 97.006695,
+							["end_time"] = 1595620324,
 							["healing_from"] = {
 								["Kamenac"] = true,
 							},
@@ -3787,26 +7731,26 @@ _detalhes_database = {
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
 										},
-										["n_max"] = 116,
+										["n_max"] = 97,
 										["targets"] = {
-											["Kamenac"] = 116,
+											["Kamenac"] = 97,
 										},
-										["n_min"] = 116,
+										["n_min"] = 97,
 										["counter"] = 1,
 										["overheal"] = 0,
-										["total"] = 116,
+										["total"] = 97,
 										["c_max"] = 0,
 										["id"] = "Holy Strength",
 										["targets_absorbs"] = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
-										["n_curado"] = 116,
+										["c_min"] = 0,
+										["n_curado"] = 97,
 										["n_amt"] = 1,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
@@ -3814,17 +7758,17 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["heal_enemy_amt"] = 0,
-							["start_time"] = 1595448911,
+							["start_time"] = 1595620323,
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1595620307,
 							["spec"] = 72,
-							["totaldenied"] = 0.008653,
-							["delay"] = 1595448897,
-							["last_event"] = 1595448897,
+							["totaldenied"] = 0.006695,
+							["delay"] = 1595620307,
+							["tipo"] = 2,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["totalabsorb"] = 0.005912,
+							["totalabsorb"] = 0.003061,
 							["last_hps"] = 0,
 							["targets_overheal"] = {
 							},
@@ -3833,22 +7777,22 @@ _detalhes_database = {
 							["delay"] = 0,
 							["pets"] = {
 							},
-							["totalover_without_pet"] = 0.005912,
+							["iniciar_hps"] = false,
 							["healing_from"] = {
 							},
 							["heal_enemy_amt"] = 781,
-							["totalover"] = 0.005912,
-							["total_without_pet"] = 0.005912,
-							["iniciar_hps"] = false,
-							["start_time"] = 1595448912,
+							["totalover"] = 0.003061,
+							["total_without_pet"] = 0.003061,
+							["totalover_without_pet"] = 0.003061,
+							["start_time"] = 1595620324,
 							["monster"] = true,
-							["end_time"] = 1595448912,
+							["total"] = 0.003061,
 							["classe"] = "UNKNOW",
-							["healing_taken"] = 0.005912,
+							["healing_taken"] = 0.003061,
 							["nome"] = "High Inquisitor Fairbanks",
 							["targets_absorbs"] = {
 							},
-							["total"] = 0.005912,
+							["end_time"] = 1595620324,
 							["spells"] = {
 								["_ActorTable"] = {
 								},
@@ -3859,50 +7803,50 @@ _detalhes_database = {
 							},
 							["boss_fight_component"] = true,
 							["custom"] = 0,
-							["last_event"] = 1595448910,
+							["last_event"] = 1595620322,
 							["on_hold"] = false,
-							["totaldenied"] = 0.005912,
-							["serial"] = "Creature-0-4445-189-8393-4542-000018990F",
+							["totaldenied"] = 0.003061,
+							["serial"] = "Creature-0-4468-189-3060-4542-00001B34F3",
 							["tipo"] = 2,
 						}, -- [2]
 					},
 				}, -- [2]
 				{
 					["tipo"] = 7,
-					["combatId"] = 113,
+					["combatId"] = 28,
 					["_ActorTable"] = {
 						{
-							["received"] = 6.004365,
-							["resource"] = 0.004365,
+							["received"] = 26.004153,
+							["resource"] = 0.004153,
 							["targets"] = {
-								["Kamenac"] = 6,
+								["Kamenac"] = 26,
 							},
 							["pets"] = {
 							},
 							["powertype"] = 1,
 							["classe"] = "WARRIOR",
-							["passiveover"] = 0.004365,
-							["total"] = 6.004365,
+							["passiveover"] = 0.004153,
+							["total"] = 26.004153,
 							["nome"] = "Kamenac",
 							["spells"] = {
 								["_ActorTable"] = {
-									["Unbridled Wrath"] = {
-										["total"] = 5,
-										["id"] = "Unbridled Wrath",
-										["totalover"] = 0,
-										["targets"] = {
-											["Kamenac"] = 5,
-										},
-										["counter"] = 5,
-									},
 									["Bloodrage"] = {
-										["total"] = 1,
+										["total"] = 20,
 										["id"] = "Bloodrage",
 										["totalover"] = 0,
 										["targets"] = {
-											["Kamenac"] = 1,
+											["Kamenac"] = 20,
 										},
-										["counter"] = 1,
+										["counter"] = 11,
+									},
+									["Unbridled Wrath"] = {
+										["total"] = 6,
+										["id"] = "Unbridled Wrath",
+										["totalover"] = 0,
+										["targets"] = {
+											["Kamenac"] = 6,
+										},
+										["counter"] = 6,
 									},
 								},
 								["tipo"] = 7,
@@ -3910,18 +7854,18 @@ _detalhes_database = {
 							["grupo"] = true,
 							["boss_fight_component"] = true,
 							["flag_original"] = 1298,
-							["alternatepower"] = 0.004365,
-							["last_event"] = 1595449045,
-							["spec"] = 72,
+							["alternatepower"] = 0.004153,
 							["tipo"] = 3,
+							["spec"] = 72,
+							["last_event"] = 1595620949,
 							["serial"] = "Player-4465-010DF944",
-							["totalover"] = 0.004365,
+							["totalover"] = 0.004153,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
 					["tipo"] = 9,
-					["combatId"] = 113,
+					["combatId"] = 28,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
@@ -3938,26 +7882,14 @@ _detalhes_database = {
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									["Charge Stun"] = {
-										["activedamt"] = -1,
-										["id"] = "Charge Stun",
-										["targets"] = {
-										},
-										["actived_at"] = 1595448896,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
 									["Deep Wound"] = {
 										["appliedamt"] = 1,
 										["targets"] = {
 										},
 										["activedamt"] = 0,
-										["uptime"] = 14,
+										["uptime"] = 11,
 										["id"] = "Deep Wound",
-										["refreshamt"] = 7,
+										["refreshamt"] = 6,
 										["actived"] = false,
 										["counter"] = 0,
 									},
@@ -3966,7 +7898,7 @@ _detalhes_database = {
 										["targets"] = {
 										},
 										["activedamt"] = 0,
-										["uptime"] = 14,
+										["uptime"] = 12,
 										["id"] = "Sunder Armor",
 										["refreshamt"] = 4,
 										["actived"] = false,
@@ -3975,14 +7907,14 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["buff_uptime"] = 85,
+							["buff_uptime"] = 90,
 							["classe"] = "WARRIOR",
 							["interrupt_spells"] = {
 								["_ActorTable"] = {
 									["Pummel"] = {
 										["id"] = "Pummel",
 										["interrompeu_oque"] = {
-											["Curse of Blood"] = 1,
+											["Heal"] = 1,
 										},
 										["targets"] = {
 											["High Inquisitor Fairbanks"] = 1,
@@ -3994,13 +7926,13 @@ _detalhes_database = {
 							},
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
-									["Battle Shout"] = {
+									["Elixir of the Mongoose"] = {
 										["appliedamt"] = 1,
 										["targets"] = {
 										},
 										["activedamt"] = 1,
-										["uptime"] = 17,
-										["id"] = "Battle Shout",
+										["uptime"] = 19,
+										["id"] = "Elixir of the Mongoose",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -4010,19 +7942,19 @@ _detalhes_database = {
 										["targets"] = {
 										},
 										["activedamt"] = 1,
-										["uptime"] = 17,
+										["uptime"] = 19,
 										["id"] = "Elixir of the Giants",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									["Berserker Rage"] = {
+									["Bloodrage"] = {
 										["appliedamt"] = 1,
 										["targets"] = {
 										},
 										["activedamt"] = 1,
-										["uptime"] = 10,
-										["id"] = "Berserker Rage",
+										["uptime"] = 7,
+										["id"] = "Bloodrage",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -4039,13 +7971,13 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									["Flurry"] = {
-										["appliedamt"] = 2,
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
-										["activedamt"] = 2,
-										["uptime"] = 9,
+										["activedamt"] = 3,
+										["uptime"] = 11,
 										["id"] = "Flurry",
-										["refreshamt"] = 6,
+										["refreshamt"] = 4,
 										["actived"] = false,
 										["counter"] = 0,
 									},
@@ -4065,20 +7997,20 @@ _detalhes_database = {
 										["id"] = "Berserker Stance",
 										["targets"] = {
 										},
-										["actived_at"] = 1595448896,
+										["actived_at"] = 1595620307,
 										["uptime"] = 0,
 										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = true,
 										["counter"] = 0,
 									},
-									["Elixir of the Mongoose"] = {
+									["Battle Shout"] = {
 										["appliedamt"] = 1,
 										["targets"] = {
 										},
 										["activedamt"] = 1,
-										["uptime"] = 17,
-										["id"] = "Elixir of the Mongoose",
+										["uptime"] = 19,
+										["id"] = "Battle Shout",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -4087,84 +8019,35 @@ _detalhes_database = {
 								["tipo"] = 9,
 							},
 							["interrompeu_oque"] = {
-								["Curse of Blood"] = 1,
+								["Heal"] = 1,
 							},
-							["debuff_uptime"] = 43,
+							["debuff_uptime"] = 38,
 							["spec"] = 72,
 							["pets"] = {
 							},
-							["boss_fight_component"] = true,
+							["buff_uptime_targets"] = {
+							},
 							["interrupt_targets"] = {
 								["High Inquisitor Fairbanks"] = 1,
 							},
 							["grupo"] = true,
 							["spell_cast"] = {
 								["Thunder Clap"] = 1,
-								["Berserker Rage"] = 1,
 								["Pummel"] = 1,
+								["Sunder Armor"] = 5,
 								["Berserker Stance"] = 1,
 								["Whirlwind"] = 1,
-								["Sunder Armor"] = 6,
-								["Heroic Strike"] = 1,
+								["Heroic Strike"] = 2,
 							},
-							["interrupt"] = 1.002963,
+							["interrupt"] = 1.004649,
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1595448912,
 							["tipo"] = 4,
+							["last_event"] = 1595620324,
 							["nome"] = "Kamenac",
 							["serial"] = "Player-4465-010DF944",
-							["buff_uptime_targets"] = {
-							},
+							["boss_fight_component"] = true,
 						}, -- [1]
-						{
-							["flag_original"] = 2632,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["boss_debuff"] = true,
-							["monster"] = true,
-							["debuff_uptime"] = 0,
-							["spellschool"] = 1,
-							["debuff_uptime_targets"] = {
-								["Kamenac"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1595448906,
-									["appliedamt"] = 0,
-									["activedamt"] = -1,
-									["actived"] = false,
-									["refreshamt"] = 0,
-								},
-							},
-							["boss_fight_component"] = true,
-							["nome"] = "Crusader Strike",
-							["tipo"] = 4,
-							["damage_twin"] = "Scarlet Commander Mograine",
-							["damage_spellid"] = 0,
-							["serial"] = "Creature-0-4445-189-8393-3976-000018990F",
-							["last_event"] = 1595448906,
-						}, -- [2]
-						{
-							["flag_original"] = 1297,
-							["tipo"] = 4,
-							["nome"] = "Vermin",
-							["spec"] = 71,
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Rend"] = 1,
-							},
-							["boss_fight_component"] = true,
-							["last_event"] = 0,
-							["classe"] = "WARRIOR",
-							["serial"] = "Player-4465-00E5831F",
-							["pets"] = {
-							},
-						}, -- [3]
 						{
 							["flag_original"] = 68168,
 							["tipo"] = 4,
@@ -4173,51 +8056,18 @@ _detalhes_database = {
 							},
 							["boss_fight_component"] = true,
 							["spell_cast"] = {
-								["Sleep"] = 1,
 								["Power Word: Shield"] = 1,
 							},
 							["last_event"] = 0,
 							["monster"] = true,
-							["serial"] = "Creature-0-4445-189-8393-4542-000018990F",
+							["serial"] = "Creature-0-4468-189-3060-4542-00001B34F3",
 							["classe"] = "UNKNOW",
-						}, -- [4]
-						{
-							["flag_original"] = 68168,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["boss_debuff"] = true,
-							["monster"] = true,
-							["debuff_uptime"] = 0,
-							["spellschool"] = 32,
-							["debuff_uptime_targets"] = {
-								["Vermin"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1595448910,
-									["appliedamt"] = 0,
-									["activedamt"] = 1,
-									["actived"] = true,
-									["refreshamt"] = 0,
-								},
-							},
-							["boss_fight_component"] = true,
-							["nome"] = "Sleep",
-							["tipo"] = 4,
-							["damage_twin"] = "High Inquisitor Fairbanks",
-							["damage_spellid"] = "Sleep",
-							["serial"] = "Creature-0-4445-189-8393-4542-000018990F",
-							["last_event"] = 1595448910,
-						}, -- [5]
+						}, -- [2]
 					},
 				}, -- [4]
 				{
 					["tipo"] = 2,
-					["combatId"] = 113,
+					["combatId"] = 28,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -4225,18 +8075,21 @@ _detalhes_database = {
 					["Kamenac"] = true,
 					["Vermin"] = true,
 				},
-				["CombatStartedAt"] = 104148.796,
-				["tempo_start"] = 1595448895,
+				["tempo_start"] = 1595620305,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 4868,
+				["overall_added"] = true,
+				["enemy"] = "High Inquisitor Fairbanks",
+				["combat_counter"] = 4974,
+				["cleu_timeline"] = {
+				},
 				["totals"] = {
-					8235.992701, -- [1]
-					116, -- [2]
+					7325.992691, -- [1]
+					97, -- [2]
 					{
-						6, -- [1]
+						26, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
 						[3] = 0,
@@ -4255,36 +8108,10 @@ _detalhes_database = {
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["totals_grupo"] = {
-					7917, -- [1]
-					116, -- [2]
-					{
-						6, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 1,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
+				["player_last_events"] = {
 				},
+				["data_inicio"] = "21:51:45",
 				["frags_need_refresh"] = true,
-				["instance_type"] = "party",
-				["hasSaved"] = true,
-				["data_fim"] = "22:15:13",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "High Inquisitor Fairbanks",
-				["TotalElapsedCombatTime"] = 12.9370000000054,
-				["CombatEndedAt"] = 104161.733,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
@@ -4300,26 +8127,20 @@ _detalhes_database = {
 					},
 					["heal"] = {
 						{
-							["Kamenac"] = 116.008653,
+							["Kamenac"] = 97.006695,
 						}, -- [1]
 					},
 					["damage"] = {
 						{
-							["Kamenac"] = 7302.002772,
-							["Vermin"] = 0.001173,
+							["Kamenac"] = 6926.00586,
 						}, -- [1]
 					},
 				},
-				["end_time"] = 104161.923,
-				["combat_id"] = 113,
-				["spells_cast_timeline"] = {
+				["end_time"] = 275578.703,
+				["cleu_events"] = {
+					["n"] = 1,
 				},
-				["overall_added"] = true,
-				["TimeData"] = {
-				},
-				["frags"] = {
-					["High Inquisitor Fairbanks"] = 1,
-				},
+				["combat_id"] = 28,
 				["is_boss"] = {
 					["diff_string"] = "normal",
 					["index"] = 1,
@@ -4332,1496 +8153,11 @@ _detalhes_database = {
 					["ej_instance_id"] = 0,
 					["diff"] = 16,
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["player_last_events"] = {
-					["Kamenac"] = {
-						{
-							true, -- [1]
-							"!Melee", -- [2]
-							83, -- [3]
-							1595449182.628, -- [4]
-							3869, -- [5]
-							"Scarlet Centurion", -- [6]
-							nil, -- [7]
-							1, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [1]
-						{
-						}, -- [2]
-						{
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 2,
-					},
-				},
-				["start_time"] = 104144.923,
-				["contra"] = "High Inquisitor Fairbanks",
-				["data_inicio"] = "22:14:56",
-			}, -- [7]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 112,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.004245,
-							["damage_from"] = {
-								["Kamenac"] = true,
-								["High Inquisitor Whitemane"] = true,
-								["Scarlet Commander Mograine"] = true,
-							},
-							["targets"] = {
-								["High Inquisitor Whitemane"] = 10076,
-								["Scarlet Commander Mograine"] = 12868,
-							},
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-								["Kamenac"] = {
-									["spells"] = {
-										["Hand of Justice"] = 1,
-									},
-									["total"] = 1,
-								},
-							},
-							["nome"] = "Kamenac",
-							["friendlyfire_total"] = 1,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 22944.004245,
-							["spec"] = 72,
-							["serial"] = "Player-4465-010DF944",
-							["dps_started"] = false,
-							["end_time"] = 1595448879,
-							["classe"] = "WARRIOR",
-							["on_hold"] = false,
-							["boss_fight_component"] = true,
-							["spells"] = {
-								["_ActorTable"] = {
-									["Cleave"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 1006,
-										["g_amt"] = 0,
-										["n_max"] = 445,
-										["targets"] = {
-											["High Inquisitor Whitemane"] = 1451,
-											["Scarlet Commander Mograine"] = 311,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 756,
-										["n_min"] = 311,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 1762,
-										["c_max"] = 1006,
-										["id"] = "Cleave",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 1006,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 1006,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_amt"] = 1,
-										["r_amt"] = 0,
-									},
-									["Execute"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 970,
-										["targets"] = {
-											["Scarlet Commander Mograine"] = 1738,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1738,
-										["n_min"] = 768,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 1738,
-										["c_max"] = 0,
-										["id"] = "Execute",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["Whirlwind"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 745,
-										["g_amt"] = 0,
-										["n_max"] = 369,
-										["targets"] = {
-											["High Inquisitor Whitemane"] = 1076,
-											["Scarlet Commander Mograine"] = 600,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 931,
-										["n_min"] = 231,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 1676,
-										["c_max"] = 745,
-										["IMMUNE"] = 1,
-										["id"] = "Whirlwind",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["c_min"] = 745,
-										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									["Deep Wound"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 57,
-										["targets"] = {
-											["High Inquisitor Whitemane"] = 258,
-											["Scarlet Commander Mograine"] = 340,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 598,
-										["n_min"] = 50,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 598,
-										["c_max"] = 0,
-										["id"] = "Deep Wound",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 11,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["Thunder Clap"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 78,
-										["targets"] = {
-											["Scarlet Commander Mograine"] = 78,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 78,
-										["n_min"] = 78,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 78,
-										["c_max"] = 0,
-										["id"] = "Thunder Clap",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["!Melee"] = {
-										["c_amt"] = 26,
-										["b_amt"] = 0,
-										["c_dmg"] = 9957,
-										["g_amt"] = 0,
-										["n_max"] = 355,
-										["targets"] = {
-											["High Inquisitor Whitemane"] = 6712,
-											["Scarlet Commander Mograine"] = 8821,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 5576,
-										["n_min"] = 78,
-										["g_dmg"] = 0,
-										["counter"] = 69,
-										["IMMUNE"] = 5,
-										["r_amt"] = 0,
-										["c_max"] = 694,
-										["MISS"] = 2,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 175,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 36,
-										["spellschool"] = 1,
-										["total"] = 15533,
-									},
-									["Pummel"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 80,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["High Inquisitor Whitemane"] = 80,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 80,
-										["c_max"] = 80,
-										["id"] = "Pummel",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 80,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["Sunder Armor"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Commander Mograine"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["IMMUNE"] = 1,
-										["id"] = "Sunder Armor",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["c_min"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									["Heroic Strike"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 524,
-										["targets"] = {
-											["High Inquisitor Whitemane"] = 499,
-											["Scarlet Commander Mograine"] = 980,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1479,
-										["n_min"] = 456,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 1479,
-										["c_max"] = 0,
-										["id"] = "Heroic Strike",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["total"] = 22944.004245,
-							["tipo"] = 1,
-							["colocacao"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1595448877,
-							["damage_taken"] = 1576.004245,
-							["start_time"] = 1595448796,
-							["delay"] = 0,
-							["last_dps"] = 284.59444610515,
-						}, -- [1]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.006936,
-							["damage_from"] = {
-								["Kamenac"] = true,
-							},
-							["targets"] = {
-								["Kamenac"] = 1442,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["nome"] = "Scarlet Commander Mograine",
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1442.006936,
-							["serial"] = "Creature-0-4445-189-8393-3976-000018990F",
-							["dps_started"] = false,
-							["total"] = 1442.006936,
-							["end_time"] = 1595448879,
-							["on_hold"] = false,
-							["boss_fight_component"] = true,
-							["spells"] = {
-								["_ActorTable"] = {
-									["Divine Shield"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Divine Shield",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 105,
-										["targets"] = {
-											["Kamenac"] = 1339,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1339,
-										["MISS"] = 2,
-										["n_min"] = 64,
-										["a_amt"] = 0,
-										["counter"] = 20,
-										["DODGE"] = 1,
-										["total"] = 1339,
-										["c_max"] = 0,
-										["b_dmg"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["m_amt"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 2,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 15,
-										["r_amt"] = 0,
-										["g_dmg"] = 0,
-									},
-									["Hammer of Justice"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Kamenac"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Hammer of Justice",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["RESIST"] = 1,
-										["m_amt"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-									},
-									["Crusader Strike"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 53,
-										["targets"] = {
-											["Kamenac"] = 53,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 53,
-										["n_min"] = 53,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 53,
-										["c_max"] = 0,
-										["id"] = "Crusader Strike",
-										["r_dmg"] = 0,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["m_amt"] = 0,
-										["successful_casted"] = 2,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-									},
-									["Retribution Aura"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 17,
-										["targets"] = {
-											["Kamenac"] = 50,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 50,
-										["n_min"] = 16,
-										["g_dmg"] = 0,
-										["counter"] = 41,
-										["total"] = 50,
-										["c_max"] = 0,
-										["spellschool"] = 2,
-										["id"] = "Retribution Aura",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 38,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 1,
-										["c_min"] = 0,
-										["n_amt"] = 3,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									["Lay on Hands"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Lay on Hands",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1595448877,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 12868.006936,
-							["start_time"] = 1595448828,
-							["delay"] = 1595448810,
-							["friendlyfire_total"] = 0,
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.006026,
-							["damage_from"] = {
-								["Kamenac"] = true,
-							},
-							["targets"] = {
-								["Kamenac"] = 133,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["boss_fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 133.006026,
-							["serial"] = "Creature-0-4445-189-8393-3977-000018990F",
-							["dps_started"] = false,
-							["total"] = 133.006026,
-							["end_time"] = 1595448879,
-							["on_hold"] = false,
-							["nome"] = "High Inquisitor Whitemane",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Scarlet Resurrection"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Scarlet Resurrection",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-									},
-									["Deep Sleep"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Deep Sleep",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-									},
-									["Holy Smite"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Kamenac"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Holy Smite",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["RESIST"] = 6,
-										["m_amt"] = 0,
-										["successful_casted"] = 6,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-									},
-									["Power Word: Shield"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Power Word: Shield",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-									},
-									["Retribution Aura"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Kamenac"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 0,
-										["c_max"] = 0,
-										["spellschool"] = 2,
-										["id"] = "Retribution Aura",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 10,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["c_min"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 77,
-										["targets"] = {
-											["Kamenac"] = 133,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 133,
-										["n_min"] = 56,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 133,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1595448849,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 10076.006026,
-							["start_time"] = 1595448858,
-							["delay"] = 1595448849,
-							["friendlyfire_total"] = 0,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 112,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1298,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "WARRIOR",
-							["totalover"] = 0.007212,
-							["total_without_pet"] = 276.007212,
-							["total"] = 276.007212,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-010DF944",
-							["totalabsorb"] = 0.007212,
-							["last_hps"] = 3.43775719605928,
-							["targets"] = {
-								["Kamenac"] = 276,
-							},
-							["totalover_without_pet"] = 0.007212,
-							["healing_taken"] = 276.007212,
-							["end_time"] = 1595448879,
-							["healing_from"] = {
-								["Kamenac"] = true,
-							},
-							["boss_fight_component"] = true,
-							["nome"] = "Kamenac",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Holy Strength"] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 117,
-										["targets"] = {
-											["Kamenac"] = 276,
-										},
-										["n_min"] = 76,
-										["counter"] = 3,
-										["overheal"] = 0,
-										["total"] = 276,
-										["c_max"] = 0,
-										["id"] = "Holy Strength",
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 276,
-										["n_amt"] = 3,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1595448876,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["spec"] = 72,
-							["totaldenied"] = 0.007212,
-							["delay"] = 1595448843,
-							["last_event"] = 1595448876,
-						}, -- [1]
-						{
-							["flag_original"] = 2632,
-							["totalabsorb"] = 0.006112,
-							["last_hps"] = 0,
-							["targets_overheal"] = {
-							},
-							["targets"] = {
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["totalover_without_pet"] = 0.006112,
-							["healing_from"] = {
-							},
-							["classe"] = "UNKNOW",
-							["totalover"] = 0.006112,
-							["total_without_pet"] = 0.006112,
-							["iniciar_hps"] = false,
-							["start_time"] = 1595448879,
-							["monster"] = true,
-							["end_time"] = 1595448879,
-							["healing_taken"] = 0.006112,
-							["heal_enemy_amt"] = 5714,
-							["boss_fight_component"] = true,
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["total"] = 0.006112,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-								["Scarlet Resurrection"] = 5284,
-								["Power Word: Shield"] = 430,
-							},
-							["nome"] = "High Inquisitor Whitemane",
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["totaldenied"] = 0.006112,
-							["serial"] = "Creature-0-4445-189-8393-3977-000018990F",
-							["last_event"] = 1595448843,
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorb"] = 0.003001,
-							["last_hps"] = 0,
-							["targets_overheal"] = {
-							},
-							["targets"] = {
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["totalover_without_pet"] = 0.003001,
-							["healing_from"] = {
-							},
-							["classe"] = "UNKNOW",
-							["totalover"] = 0.003001,
-							["total_without_pet"] = 0.003001,
-							["iniciar_hps"] = false,
-							["start_time"] = 1595448879,
-							["monster"] = true,
-							["end_time"] = 1595448879,
-							["healing_taken"] = 0.003001,
-							["heal_enemy_amt"] = 4189,
-							["boss_fight_component"] = true,
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["total"] = 0.003001,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-								["Lay on Hands"] = 4189,
-							},
-							["nome"] = "Scarlet Commander Mograine",
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["totaldenied"] = 0.003001,
-							["serial"] = "Creature-0-4445-189-8393-3976-000018990F",
-							["last_event"] = 1595448837,
-						}, -- [3]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 112,
-					["_ActorTable"] = {
-						{
-							["received"] = 70.002382,
-							["resource"] = 0.002382,
-							["targets"] = {
-								["Kamenac"] = 70,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 1,
-							["classe"] = "WARRIOR",
-							["passiveover"] = 0.002382,
-							["total"] = 70.002382,
-							["nome"] = "Kamenac",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Bloodrage"] = {
-										["total"] = 29,
-										["id"] = "Bloodrage",
-										["totalover"] = 0,
-										["targets"] = {
-											["Kamenac"] = 29,
-										},
-										["counter"] = 20,
-									},
-									["Charge"] = {
-										["total"] = 21,
-										["id"] = "Charge",
-										["totalover"] = 0,
-										["targets"] = {
-											["Kamenac"] = 21,
-										},
-										["counter"] = 1,
-									},
-									["Unbridled Wrath"] = {
-										["total"] = 20,
-										["id"] = "Unbridled Wrath",
-										["totalover"] = 0,
-										["targets"] = {
-											["Kamenac"] = 20,
-										},
-										["counter"] = 20,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["boss_fight_component"] = true,
-							["flag_original"] = 1298,
-							["alternatepower"] = 0.002382,
-							["last_event"] = 1595448895,
-							["spec"] = 72,
-							["tipo"] = 3,
-							["serial"] = "Player-4465-010DF944",
-							["totalover"] = 0.002382,
-						}, -- [1]
-						{
-							["received"] = 550.006305,
-							["resource"] = 0.006305,
-							["targets"] = {
-								["Scarlet Commander Mograine"] = 0,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "UNKNOW",
-							["passiveover"] = 0.006305,
-							["monster"] = true,
-							["total"] = 0.006305,
-							["nome"] = "High Inquisitor Whitemane",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Scarlet Resurrection"] = {
-										["total"] = 0,
-										["id"] = "Scarlet Resurrection",
-										["totalover"] = 10000,
-										["targets"] = {
-											["Scarlet Commander Mograine"] = 0,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["boss_fight_component"] = true,
-							["flag_original"] = 2632,
-							["last_event"] = 1595448833,
-							["alternatepower"] = 0.006305,
-							["tipo"] = 3,
-							["serial"] = "Creature-0-4445-189-8393-3977-000018990F",
-							["totalover"] = 10000.006305,
-						}, -- [2]
-						{
-							["received"] = 0.005214,
-							["resource"] = 0.005214,
-							["targets"] = {
-								["High Inquisitor Whitemane"] = 550,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "UNKNOW",
-							["passiveover"] = 0.005214,
-							["monster"] = true,
-							["total"] = 550.005214,
-							["nome"] = "Scarlet Commander Mograine",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Lay on Hands"] = {
-										["total"] = 550,
-										["id"] = "Lay on Hands",
-										["totalover"] = 0,
-										["targets"] = {
-											["High Inquisitor Whitemane"] = 550,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["boss_fight_component"] = true,
-							["flag_original"] = 2632,
-							["last_event"] = 1595448837,
-							["alternatepower"] = 0.005214,
-							["tipo"] = 3,
-							["serial"] = "Creature-0-4445-189-8393-3976-000018990F",
-							["totalover"] = 0.005214,
-						}, -- [3]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 112,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Thunder Clap"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 30,
-										["id"] = "Thunder Clap",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Recently Bandaged"] = {
-										["activedamt"] = -1,
-										["id"] = "Recently Bandaged",
-										["targets"] = {
-										},
-										["actived_at"] = 1595448847,
-										["uptime"] = 0,
-										["appliedamt"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Demoralizing Shout"] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 39,
-										["id"] = "Demoralizing Shout",
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Sunder Armor"] = {
-										["appliedamt"] = 4,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 63,
-										["id"] = "Sunder Armor",
-										["refreshamt"] = 14,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Deep Wound"] = {
-										["appliedamt"] = 4,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 64,
-										["id"] = "Deep Wound",
-										["refreshamt"] = 22,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 375,
-							["classe"] = "WARRIOR",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Battle Shout"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 83,
-										["id"] = "Battle Shout",
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Holy Strength"] = {
-										["appliedamt"] = 3,
-										["targets"] = {
-										},
-										["activedamt"] = 3,
-										["uptime"] = 33,
-										["id"] = "Holy Strength",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Bloodrage"] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 2,
-										["uptime"] = 19,
-										["id"] = "Bloodrage",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Elixir of the Mongoose"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 83,
-										["id"] = "Elixir of the Mongoose",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Berserker Rage"] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 2,
-										["uptime"] = 20,
-										["id"] = "Berserker Rage",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Flurry"] = {
-										["appliedamt"] = 7,
-										["targets"] = {
-										},
-										["activedamt"] = 7,
-										["uptime"] = 54,
-										["id"] = "Flurry",
-										["refreshamt"] = 23,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Battle Stance"] = {
-										["appliedamt"] = 0,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 0,
-										["id"] = "Battle Stance",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Elixir of the Giants"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 83,
-										["id"] = "Elixir of the Giants",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Berserker Stance"] = {
-										["activedamt"] = 1,
-										["id"] = "Berserker Stance",
-										["targets"] = {
-										},
-										["actived_at"] = 1595448796,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 196,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 72,
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Battle Shout"] = 1,
-								["Cleave"] = 2,
-								["Demoralizing Shout"] = 2,
-								["Whirlwind"] = 4,
-								["Berserker Rage"] = 2,
-								["Pummel"] = 1,
-								["Bloodrage"] = 1,
-								["Berserker Stance"] = 1,
-								["Sunder Armor"] = 21,
-								["Heroic Strike"] = 3,
-							},
-							["boss_fight_component"] = true,
-							["last_event"] = 1595448879,
-							["tipo"] = 4,
-							["nome"] = "Kamenac",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-010DF944",
-							["debuff_uptime_targets"] = {
-							},
-						}, -- [1]
-						{
-							["flag_original"] = 2632,
-							["tipo"] = 4,
-							["nome"] = "High Inquisitor Whitemane",
-							["pets"] = {
-							},
-							["boss_fight_component"] = true,
-							["spell_cast"] = {
-								["Holy Smite"] = 6,
-								["Power Word: Shield"] = 1,
-								["Deep Sleep"] = 1,
-								["Scarlet Resurrection"] = 1,
-							},
-							["last_event"] = 0,
-							["monster"] = true,
-							["serial"] = "Creature-0-4445-189-8393-3977-000018990F",
-							["classe"] = "UNKNOW",
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["boss_debuff"] = true,
-							["monster"] = true,
-							["debuff_uptime"] = 20,
-							["spellschool"] = 32,
-							["debuff_uptime_targets"] = {
-								["Kamenac"] = {
-									["uptime"] = 10,
-									["appliedamt"] = 0,
-									["activedamt"] = 0,
-									["actived"] = false,
-									["refreshamt"] = 0,
-								},
-								["Vermin"] = {
-									["uptime"] = 10,
-									["appliedamt"] = 0,
-									["activedamt"] = 0,
-									["actived"] = false,
-									["refreshamt"] = 0,
-								},
-							},
-							["boss_fight_component"] = true,
-							["nome"] = "Deep Sleep",
-							["tipo"] = 4,
-							["damage_twin"] = "High Inquisitor Whitemane",
-							["damage_spellid"] = "Deep Sleep",
-							["serial"] = "Creature-0-4445-189-8393-3977-000018990F",
-							["last_event"] = 1595448838,
-						}, -- [3]
-						{
-							["flag_original"] = 2632,
-							["tipo"] = 4,
-							["nome"] = "Scarlet Commander Mograine",
-							["pets"] = {
-							},
-							["boss_fight_component"] = true,
-							["spell_cast"] = {
-								["Divine Shield"] = 1,
-								["Hammer of Justice"] = 1,
-								["Crusader Strike"] = 2,
-								["Retribution Aura"] = 1,
-								["Lay on Hands"] = 1,
-							},
-							["last_event"] = 0,
-							["monster"] = true,
-							["serial"] = "Creature-0-4445-189-8393-3976-000018990F",
-							["classe"] = "UNKNOW",
-						}, -- [4]
-						{
-							["flag_original"] = 2632,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["boss_debuff"] = true,
-							["monster"] = true,
-							["debuff_uptime"] = 0,
-							["spellschool"] = 1,
-							["debuff_uptime_targets"] = {
-								["Kamenac"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1595448876,
-									["appliedamt"] = 0,
-									["activedamt"] = 1,
-									["actived"] = true,
-									["refreshamt"] = 0,
-								},
-							},
-							["boss_fight_component"] = true,
-							["nome"] = "Crusader Strike",
-							["tipo"] = 4,
-							["damage_twin"] = "Scarlet Commander Mograine",
-							["damage_spellid"] = "Crusader Strike",
-							["serial"] = "Creature-0-4445-189-8393-3976-000018990F",
-							["last_event"] = 1595448876,
-						}, -- [5]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 112,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Kamenac"] = true,
-					["Vermin"] = true,
-				},
-				["CombatStartedAt"] = 104048.483,
-				["tempo_start"] = 1595448796,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 4867,
-				["totals"] = {
-					24519, -- [1]
-					276, -- [2]
-					{
-						70, -- [1]
-						[0] = 550,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
 				["totals_grupo"] = {
-					22945, -- [1]
-					276, -- [2]
+					6982, -- [1]
+					97, -- [2]
 					{
-						70, -- [1]
+						26, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
 						[3] = 0,
@@ -5832,333 +8168,144 @@ _detalhes_database = {
 						["ress"] = 0,
 						["cooldowns_defensive"] = 0,
 						["dispell"] = 0,
-						["interrupt"] = 0,
+						["interrupt"] = 1,
 						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "party",
 				["hasSaved"] = true,
-				["data_fim"] = "22:14:40",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "High Inquisitor Whitemane",
-				["TotalElapsedCombatTime"] = 79.2959999999876,
-				["CombatEndedAt"] = 104127.779,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					{
-						3, -- [1]
-						31.6549999999988, -- [2]
-					}, -- [2]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Kamenac"] = 117.007212,
-						}, -- [1]
-						[3] = {
-							["Kamenac"] = 159,
-						},
-					},
-					["damage"] = {
-						{
-							["Kamenac"] = 10805.004245,
-						}, -- [1]
-						[3] = {
-							["Kamenac"] = 12139,
-						},
-					},
-				},
-				["end_time"] = 104128.567,
-				["combat_id"] = 112,
-				["spells_cast_timeline"] = {
-				},
-				["overall_added"] = true,
-				["TimeData"] = {
-				},
 				["frags"] = {
-					["High Inquisitor Whitemane"] = 1,
-					["Scarlet Commander Mograine"] = 1,
+					["High Inquisitor Fairbanks"] = 1,
 				},
-				["is_boss"] = {
-					["diff_string"] = "normal",
-					["index"] = 1,
-					["zone"] = "Scarlet Monastery",
-					["encounter"] = "High Inquisitor Whitemane",
-					["mapid"] = 189,
-					["try_number"] = 2,
-					["name"] = "High Inquisitor Whitemane",
-					["id"] = 0,
-					["ej_instance_id"] = 0,
-					["diff"] = 16,
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["data_fim"] = "21:52:04",
+				["contra"] = "High Inquisitor Fairbanks",
 				["CombatSkillCache"] = {
 				},
-				["player_last_events"] = {
+				["instance_type"] = "party",
+				["start_time"] = 275559.702,
+				["TimeData"] = {
 				},
-				["start_time"] = 104045.564,
-				["contra"] = "Scarlet Commander Mograine",
-				["data_inicio"] = "22:13:17",
+				["spells_cast_timeline"] = {
+				},
 			}, -- [8]
 			{
 				{
 					["tipo"] = 2,
-					["combatId"] = 78,
+					["combatId"] = 27,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 66834,
-							["totalabsorbed"] = 104.008913,
+							["flag_original"] = 1298,
+							["totalabsorbed"] = 152.008149,
 							["damage_from"] = {
+								["Kamenac"] = true,
 								["High Inquisitor Whitemane"] = true,
 								["Scarlet Commander Mograine"] = true,
 							},
 							["targets"] = {
-								["High Inquisitor Whitemane"] = 12031,
-								["Scarlet Commander Mograine"] = 11781,
+								["High Inquisitor Whitemane"] = 11664,
+								["Scarlet Commander Mograine"] = 12631,
 							},
 							["pets"] = {
 							},
-							["end_time"] = 1595447448,
-							["friendlyfire"] = {
-							},
-							["classe"] = "WARRIOR",
+							["total"] = 24295.008149,
+							["nome"] = "Kamenac",
+							["friendlyfire_total"] = 2,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 23812.008913,
-							["last_dps"] = 267.544649704522,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 23812.008913,
-							["friendlyfire_total"] = 0,
-							["damage_taken"] = 2116.008913,
-							["boss_fight_component"] = true,
+							["total_without_pet"] = 24295.008149,
 							["spells"] = {
 								["_ActorTable"] = {
-									["Cleave"] = {
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 2375,
-										["g_amt"] = 0,
-										["n_max"] = 591,
-										["targets"] = {
-											["High Inquisitor Whitemane"] = 2312,
-											["Scarlet Commander Mograine"] = 2703,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 2640,
-										["n_min"] = 328,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 5015,
-										["c_max"] = 946,
-										["id"] = "Cleave",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 1,
-										["m_crit"] = 0,
-										["c_min"] = 687,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["a_dmg"] = 431,
-										["spellschool"] = 1,
-									},
-									["Execute"] = {
+									["Shadow Bolt"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 748,
+										["n_max"] = 66,
 										["targets"] = {
-											["Scarlet Commander Mograine"] = 748,
+											["High Inquisitor Whitemane"] = 66,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 748,
-										["n_min"] = 748,
+										["n_dmg"] = 66,
+										["n_min"] = 66,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 748,
+										["total"] = 66,
 										["c_max"] = 0,
-										["id"] = "Execute",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Whirlwind"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 669,
-										["g_amt"] = 0,
-										["n_max"] = 365,
-										["targets"] = {
-											["High Inquisitor Whitemane"] = 1356,
-											["Scarlet Commander Mograine"] = 212,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 899,
-										["n_min"] = 212,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 1568,
-										["c_max"] = 669,
-										["id"] = "Whirlwind",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 669,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Deep Wound"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 79,
-										["targets"] = {
-											["High Inquisitor Whitemane"] = 418,
-											["Scarlet Commander Mograine"] = 652,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1070,
-										["n_min"] = 43,
-										["g_dmg"] = 0,
-										["counter"] = 20,
-										["total"] = 1070,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = "Deep Wound",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 19,
-										["spellschool"] = 1,
-										["IMMUNE"] = 1,
-									},
-									["Shadow Bolt"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 108,
-										["g_amt"] = 0,
-										["n_max"] = 64,
-										["targets"] = {
-											["High Inquisitor Whitemane"] = 64,
-											["Scarlet Commander Mograine"] = 108,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 64,
-										["n_min"] = 64,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 172,
-										["c_max"] = 108,
 										["id"] = "Shadow Bolt",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 108,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 32,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
-									["Thunder Clap"] = {
-										["c_amt"] = 0,
+									["Cleave"] = {
+										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 1022,
 										["g_amt"] = 0,
-										["n_max"] = 77,
+										["n_max"] = 442,
 										["targets"] = {
-											["Scarlet Commander Mograine"] = 77,
+											["High Inquisitor Whitemane"] = 1866,
+											["Scarlet Commander Mograine"] = 662,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 77,
-										["n_min"] = 77,
+										["n_dmg"] = 1506,
+										["n_min"] = 309,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 77,
-										["c_max"] = 0,
-										["id"] = "Thunder Clap",
+										["counter"] = 5,
+										["total"] = 2528,
+										["c_max"] = 1022,
+										["id"] = "Cleave",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 1022,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["n_amt"] = 4,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 									["!Melee"] = {
-										["c_amt"] = 21,
+										["c_amt"] = 31,
 										["b_amt"] = 0,
-										["c_dmg"] = 7016,
+										["c_dmg"] = 9379,
 										["g_amt"] = 0,
-										["n_max"] = 394,
+										["n_max"] = 382,
 										["targets"] = {
-											["High Inquisitor Whitemane"] = 7831,
-											["Scarlet Commander Mograine"] = 6380,
+											["High Inquisitor Whitemane"] = 8101,
+											["Scarlet Commander Mograine"] = 7580,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 7195,
-										["n_min"] = 63,
+										["n_dmg"] = 6302,
+										["n_min"] = 78,
 										["g_dmg"] = 0,
-										["counter"] = 81,
-										["total"] = 14211,
-										["r_amt"] = 0,
-										["c_max"] = 806,
-										["spellschool"] = 1,
+										["counter"] = 78,
+										["MISS"] = 1,
+										["total"] = 15681,
+										["c_max"] = 676,
+										["IMMUNE"] = 11,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["b_dmg"] = 0,
-										["a_amt"] = 0,
+										["a_dmg"] = 304,
 										["m_crit"] = 0,
-										["c_min"] = 140,
 										["m_amt"] = 0,
+										["c_min"] = 159,
 										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 44,
-										["MISS"] = 3,
-										["IMMUNE"] = 13,
+										["a_amt"] = 1,
+										["n_amt"] = 35,
+										["spellschool"] = 1,
+										["r_amt"] = 0,
 									},
 									["Pummel"] = {
 										["c_amt"] = 0,
@@ -6167,196 +8314,199 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 50,
 										["targets"] = {
-											["High Inquisitor Whitemane"] = 50,
+											["High Inquisitor Whitemane"] = 93,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 50,
-										["n_min"] = 50,
+										["n_dmg"] = 93,
+										["n_min"] = 43,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 50,
+										["counter"] = 2,
+										["total"] = 93,
 										["c_max"] = 0,
 										["id"] = "Pummel",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
+										["m_amt"] = 0,
 										["c_min"] = 0,
-										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Heroic Strike"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 901,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Commander Mograine"] = 901,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 901,
-										["c_max"] = 901,
-										["id"] = "Heroic Strike",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
+										["n_amt"] = 2,
 										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 901,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["last_event"] = 1595447447,
-							["custom"] = 0,
-							["nome"] = "Kamenac",
-							["colocacao"] = 1,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1595447359,
-							["serial"] = "Player-4465-010DF944",
-							["spec"] = 72,
-						}, -- [1]
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.002004,
-							["damage_from"] = {
-								["High Inquisitor Whitemane"] = true,
-							},
-							["targets"] = {
-								["High Inquisitor Whitemane"] = 37,
-							},
-							["pets"] = {
-							},
-							["end_time"] = 1595447448,
-							["friendlyfire"] = {
-							},
-							["classe"] = "WARRIOR",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 37.002004,
-							["last_dps"] = 0.415743511381799,
-							["delay"] = 1595447425,
-							["dps_started"] = false,
-							["total"] = 37.002004,
-							["friendlyfire_total"] = 0,
-							["damage_taken"] = 55.002004,
-							["boss_fight_component"] = true,
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 5,
-										["n_max"] = 0,
-										["targets"] = {
-											["High Inquisitor Whitemane"] = 37,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 37,
-										["counter"] = 9,
-										["total"] = 37,
 										["r_amt"] = 0,
-										["c_max"] = 0,
-										["spellschool"] = 1,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 3,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["MISS"] = 1,
 									},
-									["Demoralizing Shout"] = {
+									["Sunder Armor"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["High Inquisitor Whitemane"] = 0,
 											["Scarlet Commander Mograine"] = 0,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 3,
+										["counter"] = 1,
 										["total"] = 0,
 										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = "Demoralizing Shout",
+										["IMMUNE"] = 1,
+										["id"] = "Sunder Armor",
 										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["RESIST"] = 3,
-										["a_dmg"] = 0,
 										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									["Whirlwind"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 529,
+										["g_amt"] = 0,
+										["n_max"] = 273,
+										["targets"] = {
+											["High Inquisitor Whitemane"] = 273,
+											["Scarlet Commander Mograine"] = 529,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 273,
+										["n_min"] = 273,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 802,
+										["c_max"] = 529,
+										["id"] = "Whirlwind",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 529,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["Deep Wound"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 57,
+										["targets"] = {
+											["High Inquisitor Whitemane"] = 250,
+											["Scarlet Commander Mograine"] = 279,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 529,
+										["n_min"] = 50,
+										["g_dmg"] = 0,
+										["counter"] = 12,
+										["total"] = 529,
+										["c_max"] = 0,
+										["IMMUNE"] = 2,
+										["id"] = "Deep Wound",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 10,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									["Heroic Strike"] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 2983,
+										["g_amt"] = 0,
+										["n_max"] = 504,
+										["targets"] = {
+											["High Inquisitor Whitemane"] = 1015,
+											["Scarlet Commander Mograine"] = 3581,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1613,
+										["n_min"] = 354,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 4596,
+										["c_max"] = 1082,
+										["id"] = "Heroic Strike",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 886,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["last_event"] = 1595447425,
-							["custom"] = 0,
-							["nome"] = "Vermin",
-							["colocacao"] = 2,
-							["tipo"] = 1,
+							["serial"] = "Player-4465-010DF944",
+							["dps_started"] = false,
+							["end_time"] = 1595620262,
+							["classe"] = "WARRIOR",
 							["on_hold"] = false,
-							["start_time"] = 1595447428,
-							["serial"] = "Player-4465-00E5831F",
-							["spec"] = 71,
-						}, -- [2]
+							["boss_fight_component"] = true,
+							["spec"] = 72,
+							["grupo"] = true,
+							["tipo"] = 1,
+							["colocacao"] = 1,
+							["damage_taken"] = 1418.008149,
+							["custom"] = 0,
+							["last_event"] = 1595620260,
+							["last_dps"] = 289.098946285526,
+							["start_time"] = 1595620177,
+							["delay"] = 0,
+							["friendlyfire"] = {
+								["Kamenac"] = {
+									["spells"] = {
+										["Hand of Justice"] = 2,
+									},
+									["total"] = 2,
+								},
+							},
+						}, -- [1]
 						{
 							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.007446,
+							["totalabsorbed"] = 0.001945,
 							["damage_from"] = {
 								["Kamenac"] = true,
 							},
 							["targets"] = {
-								["Kamenac"] = 1750,
+								["Kamenac"] = 1236,
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
 							["boss_fight_component"] = true,
-							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 1750.007446,
-							["delay"] = 1595447380,
+							["total_without_pet"] = 1236.001945,
+							["serial"] = "Creature-0-4468-189-3060-3976-00001B3A63",
 							["monster"] = true,
-							["total"] = 1750.007446,
-							["end_time"] = 1595447448,
-							["damage_taken"] = 11781.007446,
+							["total"] = 1236.001945,
+							["end_time"] = 1595620262,
+							["on_hold"] = false,
 							["nome"] = "Scarlet Commander Mograine",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -6377,47 +8527,47 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Divine Shield",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
-										["m_amt"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
+										["m_amt"] = 0,
+										["r_amt"] = 0,
 									},
 									["!Melee"] = {
-										["c_amt"] = 1,
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 190,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 106,
+										["n_max"] = 105,
 										["targets"] = {
-											["Kamenac"] = 1630,
+											["Kamenac"] = 1182,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 1440,
-										["MISS"] = 4,
-										["n_min"] = 85,
-										["g_dmg"] = 0,
-										["counter"] = 23,
+										["n_dmg"] = 1182,
+										["DODGE"] = 2,
+										["n_min"] = 92,
+										["MISS"] = 3,
+										["counter"] = 22,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["total"] = 1630,
-										["c_max"] = 190,
+										["c_max"] = 0,
 										["b_dmg"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 190,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
 										["spellschool"] = 1,
-										["n_amt"] = 15,
-										["a_amt"] = 0,
-										["DODGE"] = 2,
+										["m_amt"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 5,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_dmg"] = 0,
+										["n_amt"] = 12,
+										["total"] = 1182,
+										["g_dmg"] = 0,
 									},
 									["Hammer of Justice"] = {
 										["c_amt"] = 0,
@@ -6432,21 +8582,21 @@ _detalhes_database = {
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 1,
+										["counter"] = 2,
 										["total"] = 0,
 										["c_max"] = 0,
 										["id"] = "Hammer of Justice",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
+										["RESIST"] = 2,
+										["c_min"] = 0,
+										["successful_casted"] = 2,
+										["b_dmg"] = 0,
 										["n_amt"] = 0,
 										["m_amt"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["RESIST"] = 1,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["Crusader Strike"] = {
 										["c_amt"] = 0,
@@ -6461,52 +8611,51 @@ _detalhes_database = {
 										["n_dmg"] = 54,
 										["n_min"] = 54,
 										["g_dmg"] = 0,
-										["counter"] = 5,
+										["counter"] = 3,
 										["total"] = 54,
 										["c_max"] = 0,
-										["r_amt"] = 0,
 										["id"] = "Crusader Strike",
 										["r_dmg"] = 0,
+										["DODGE"] = 2,
 										["a_dmg"] = 0,
-										["c_min"] = 0,
 										["m_crit"] = 0,
-										["PARRY"] = 3,
 										["m_amt"] = 0,
-										["successful_casted"] = 5,
+										["c_min"] = 0,
+										["successful_casted"] = 3,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
 										["a_amt"] = 0,
-										["DODGE"] = 1,
+										["r_amt"] = 0,
 									},
 									["Retribution Aura"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 17,
+										["n_max"] = 0,
 										["targets"] = {
-											["Kamenac"] = 66,
+											["Kamenac"] = 0,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 66,
-										["n_min"] = 16,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 35,
-										["total"] = 66,
+										["counter"] = 36,
+										["total"] = 0,
 										["c_max"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 2,
 										["id"] = "Retribution Aura",
 										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 1,
-										["a_amt"] = 0,
-										["RESIST"] = 31,
 										["a_dmg"] = 0,
-										["spellschool"] = 2,
+										["RESIST"] = 36,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["Lay on Hands"] = {
 										["c_amt"] = 0,
@@ -6525,54 +8674,52 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Lay on Hands",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
-										["m_amt"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
+										["m_amt"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
+							["last_event"] = 1595620260,
 							["friendlyfire"] = {
 							},
+							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1595447448,
-							["on_hold"] = false,
-							["start_time"] = 1595447391,
-							["serial"] = "Creature-0-4468-189-24138-3976-00001897BD",
-							["dps_started"] = false,
-						}, -- [3]
+							["tipo"] = 1,
+							["damage_taken"] = 12631.001945,
+							["start_time"] = 1595620208,
+							["delay"] = 1595620192,
+							["classe"] = "UNKNOW",
+						}, -- [2]
 						{
 							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.002452,
+							["totalabsorbed"] = 0.005524,
 							["damage_from"] = {
 								["Kamenac"] = true,
-								["Vermin"] = true,
 							},
 							["targets"] = {
-								["Kamenac"] = 366,
-								["Vermin"] = 55,
+								["Kamenac"] = 180,
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
 							["boss_fight_component"] = true,
-							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 421.002452,
-							["delay"] = 1595447428,
+							["total_without_pet"] = 180.005524,
+							["serial"] = "Creature-0-4468-189-3060-3977-00001B34F3",
 							["monster"] = true,
-							["total"] = 421.002452,
-							["end_time"] = 1595447448,
-							["damage_taken"] = 12068.002452,
+							["total"] = 180.005524,
+							["end_time"] = 1595620262,
+							["on_hold"] = false,
 							["nome"] = "High Inquisitor Whitemane",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -6593,15 +8740,15 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Scarlet Resurrection",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
-										["m_amt"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
+										["m_amt"] = 0,
+										["r_amt"] = 0,
 									},
 									["Heal"] = {
 										["c_amt"] = 0,
@@ -6620,15 +8767,15 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Heal",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
-										["m_amt"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
+										["m_amt"] = 0,
+										["r_amt"] = 0,
 									},
 									["Deep Sleep"] = {
 										["c_amt"] = 0,
@@ -6647,46 +8794,44 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Deep Sleep",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
-										["m_amt"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
+										["m_amt"] = 0,
+										["r_amt"] = 0,
 									},
-									["!Melee"] = {
+									["Holy Smite"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 76,
+										["n_max"] = 0,
 										["targets"] = {
-											["Kamenac"] = 332,
+											["Kamenac"] = 0,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 332,
-										["n_min"] = 53,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 332,
-										["r_amt"] = 0,
+										["counter"] = 5,
+										["total"] = 0,
 										["c_max"] = 0,
-										["spellschool"] = 1,
-										["id"] = "!Melee",
+										["id"] = "Holy Smite",
 										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
 										["a_dmg"] = 0,
-										["n_amt"] = 5,
 										["a_amt"] = 0,
-										["MISS"] = 1,
+										["m_crit"] = 0,
+										["RESIST"] = 5,
+										["c_min"] = 0,
+										["successful_casted"] = 5,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["m_amt"] = 0,
+										["r_amt"] = 0,
 									},
 									["Power Word: Shield"] = {
 										["c_amt"] = 0,
@@ -6705,48 +8850,17 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Power Word: Shield",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
-										["m_amt"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
+										["m_amt"] = 0,
+										["r_amt"] = 0,
 									},
 									["Retribution Aura"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 17,
-										["targets"] = {
-											["Kamenac"] = 34,
-											["Vermin"] = 55,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 89,
-										["n_min"] = 13,
-										["g_dmg"] = 0,
-										["counter"] = 20,
-										["total"] = 89,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = "Retribution Aura",
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["RESIST"] = 14,
-										["a_dmg"] = 0,
-										["spellschool"] = 2,
-									},
-									["Holy Smite"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
@@ -6759,54 +8873,84 @@ _detalhes_database = {
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 4,
+										["counter"] = 12,
 										["total"] = 0,
 										["c_max"] = 0,
-										["id"] = "Holy Smite",
+										["spellschool"] = 2,
+										["id"] = "Retribution Aura",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-										["m_crit"] = 0,
-										["n_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 4,
-										["b_dmg"] = 0,
-										["RESIST"] = 4,
-										["a_amt"] = 0,
 										["a_dmg"] = 0,
+										["RESIST"] = 12,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 80,
+										["targets"] = {
+											["Kamenac"] = 180,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 180,
+										["n_min"] = 49,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 180,
+										["c_max"] = 0,
+										["DODGE"] = 1,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 3,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
+							["last_event"] = 1595620237,
 							["friendlyfire"] = {
 							},
+							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1595447428,
-							["on_hold"] = false,
-							["start_time"] = 1595447420,
-							["serial"] = "Creature-0-4468-189-24138-3977-0000188A0B",
-							["dps_started"] = false,
-						}, -- [4]
+							["tipo"] = 1,
+							["damage_taken"] = 11664.005524,
+							["start_time"] = 1595620236,
+							["delay"] = 1595620237,
+							["classe"] = "UNKNOW",
+						}, -- [3]
 					},
 				}, -- [1]
 				{
 					["tipo"] = 3,
-					["combatId"] = 78,
+					["combatId"] = 27,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1298,
-							["healing_from"] = {
-								["Kamenac"] = true,
+							["targets_overheal"] = {
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.003344,
-							["total_without_pet"] = 88.003344,
-							["total"] = 88.003344,
+							["classe"] = "WARRIOR",
+							["totalover"] = 0.008399,
+							["total_without_pet"] = 181.008399,
+							["total"] = 181.008399,
 							["targets_absorbs"] = {
 							},
 							["heal_enemy"] = {
@@ -6814,17 +8958,18 @@ _detalhes_database = {
 							["colocacao"] = 1,
 							["on_hold"] = false,
 							["serial"] = "Player-4465-010DF944",
-							["totalabsorb"] = 0.003344,
-							["last_hps"] = 0.988779398215847,
+							["totalabsorb"] = 0.008399,
+							["last_hps"] = 2.89229341834118,
 							["targets"] = {
-								["Kamenac"] = 88,
+								["Kamenac"] = 181,
 							},
-							["totalover_without_pet"] = 0.003344,
-							["healing_taken"] = 88.003344,
-							["end_time"] = 1595447448,
-							["targets_overheal"] = {
+							["totalover_without_pet"] = 0.008399,
+							["healing_taken"] = 181.008399,
+							["end_time"] = 1595620262,
+							["healing_from"] = {
+								["Kamenac"] = true,
 							},
-							["last_event"] = 1595447389,
+							["boss_fight_component"] = true,
 							["nome"] = "Kamenac",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -6833,505 +8978,461 @@ _detalhes_database = {
 										["totalabsorb"] = 0,
 										["targets_overheal"] = {
 										},
-										["n_max"] = 88,
+										["n_max"] = 98,
 										["targets"] = {
-											["Kamenac"] = 88,
+											["Kamenac"] = 181,
 										},
-										["n_min"] = 88,
-										["counter"] = 1,
+										["n_min"] = 83,
+										["counter"] = 2,
 										["overheal"] = 0,
-										["total"] = 88,
+										["total"] = 181,
 										["c_max"] = 0,
 										["id"] = "Holy Strength",
 										["targets_absorbs"] = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["m_healed"] = 0,
-										["c_min"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 1,
-										["n_curado"] = 88,
 										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 181,
+										["n_amt"] = 2,
+										["m_healed"] = 0,
+										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["classe"] = "WARRIOR",
-							["totaldenied"] = 0.003344,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1595620261,
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1595620239,
 							["spec"] = 72,
-							["start_time"] = 1595447447,
-							["delay"] = 1595447389,
-							["boss_fight_component"] = true,
+							["totaldenied"] = 0.008399,
+							["delay"] = 1595620239,
+							["tipo"] = 2,
 						}, -- [1]
 						{
-							["flag_original"] = 68168,
-							["totalabsorb"] = 0.003875,
+							["flag_original"] = 2632,
+							["totalabsorb"] = 0.001814,
 							["last_hps"] = 0,
-							["healing_from"] = {
+							["targets_overheal"] = {
 							},
 							["targets"] = {
 							},
-							["serial"] = "Creature-0-4468-189-24138-3977-0000188A0B",
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["iniciar_hps"] = false,
-							["targets_overheal"] = {
+							["totalover_without_pet"] = 0.001814,
+							["healing_from"] = {
 							},
-							["classe"] = "UNKNOW",
-							["totalover"] = 0.003875,
-							["total_without_pet"] = 0.003875,
-							["totalover_without_pet"] = 0.003875,
-							["totaldenied"] = 0.003875,
+							["healing_taken"] = 0.001814,
+							["totalover"] = 0.001814,
+							["total_without_pet"] = 0.001814,
+							["iniciar_hps"] = false,
+							["start_time"] = 1595620262,
 							["monster"] = true,
-							["total"] = 0.003875,
-							["heal_enemy_amt"] = 7061,
-							["boss_fight_component"] = true,
+							["end_time"] = 1595620262,
+							["classe"] = "UNKNOW",
+							["heal_enemy_amt"] = 7072,
 							["nome"] = "High Inquisitor Whitemane",
 							["targets_absorbs"] = {
 							},
-							["end_time"] = 1595447448,
-							["healing_taken"] = 0.003875,
+							["total"] = 0.001814,
+							["boss_fight_component"] = true,
 							["heal_enemy"] = {
 								["Scarlet Resurrection"] = 5284,
-								["Heal"] = 1347,
+								["Heal"] = 1358,
 								["Power Word: Shield"] = 430,
 							},
-							["last_event"] = 1595447420,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["start_time"] = 1595447448,
-							["delay"] = 0,
 							["spells"] = {
 								["_ActorTable"] = {
 								},
 								["tipo"] = 3,
 							},
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["totaldenied"] = 0.001814,
+							["serial"] = "Creature-0-4468-189-3060-3977-00001B34F3",
+							["last_event"] = 1595620233,
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
-							["totalabsorb"] = 0.002854,
+							["totalabsorb"] = 0.005396,
 							["last_hps"] = 0,
-							["healing_from"] = {
+							["targets_overheal"] = {
 							},
 							["targets"] = {
 							},
-							["serial"] = "Creature-0-4468-189-24138-3976-00001897BD",
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["iniciar_hps"] = false,
-							["targets_overheal"] = {
+							["totalover_without_pet"] = 0.005396,
+							["healing_from"] = {
 							},
-							["classe"] = "UNKNOW",
-							["totalover"] = 0.002854,
-							["total_without_pet"] = 0.002854,
-							["totalover_without_pet"] = 0.002854,
-							["totaldenied"] = 0.002854,
+							["healing_taken"] = 0.005396,
+							["totalover"] = 0.005396,
+							["total_without_pet"] = 0.005396,
+							["iniciar_hps"] = false,
+							["start_time"] = 1595620262,
 							["monster"] = true,
-							["total"] = 0.002854,
-							["heal_enemy_amt"] = 4928,
-							["boss_fight_component"] = true,
+							["end_time"] = 1595620262,
+							["classe"] = "UNKNOW",
+							["heal_enemy_amt"] = 4472,
 							["nome"] = "Scarlet Commander Mograine",
 							["targets_absorbs"] = {
 							},
-							["end_time"] = 1595447448,
-							["healing_taken"] = 0.002854,
+							["total"] = 0.005396,
+							["boss_fight_component"] = true,
 							["heal_enemy"] = {
-								["Lay on Hands"] = 4928,
+								["Lay on Hands"] = 4472,
 							},
-							["last_event"] = 1595447407,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["start_time"] = 1595447448,
-							["delay"] = 0,
 							["spells"] = {
 								["_ActorTable"] = {
 								},
 								["tipo"] = 3,
 							},
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["totaldenied"] = 0.005396,
+							["serial"] = "Creature-0-4468-189-3060-3976-00001B3A63",
+							["last_event"] = 1595620217,
 						}, -- [3]
 					},
 				}, -- [2]
 				{
 					["tipo"] = 7,
-					["combatId"] = 78,
+					["combatId"] = 27,
 					["_ActorTable"] = {
 						{
-							["received"] = 106.007263,
-							["resource"] = 0.007263,
+							["received"] = 67.008027,
+							["resource"] = 0.008027,
 							["targets"] = {
-								["Kamenac"] = 106,
+								["Kamenac"] = 67,
 							},
 							["pets"] = {
 							},
 							["powertype"] = 1,
 							["classe"] = "WARRIOR",
-							["passiveover"] = 0.007263,
-							["total"] = 106.007263,
+							["passiveover"] = 0.008027,
+							["total"] = 67.008027,
 							["nome"] = "Kamenac",
 							["spells"] = {
 								["_ActorTable"] = {
 									["Unbridled Wrath"] = {
-										["total"] = 26,
+										["total"] = 34,
 										["id"] = "Unbridled Wrath",
-										["totalover"] = 2,
-										["targets"] = {
-											["Kamenac"] = 26,
-										},
-										["counter"] = 28,
-									},
-									["Charge"] = {
-										["total"] = 21,
-										["id"] = "Charge",
 										["totalover"] = 0,
 										["targets"] = {
-											["Kamenac"] = 21,
+											["Kamenac"] = 34,
 										},
-										["counter"] = 1,
+										["counter"] = 34,
 									},
 									["Bloodrage"] = {
-										["total"] = 59,
+										["total"] = 33,
 										["id"] = "Bloodrage",
 										["totalover"] = 0,
 										["targets"] = {
-											["Kamenac"] = 59,
+											["Kamenac"] = 33,
 										},
-										["counter"] = 32,
+										["counter"] = 15,
 									},
 								},
 								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["totalover"] = 2.007263,
-							["flag_original"] = 66834,
-							["tipo"] = 3,
-							["last_event"] = 1595448616,
-							["spec"] = 72,
-							["alternatepower"] = 0.007263,
-							["serial"] = "Player-4465-010DF944",
 							["boss_fight_component"] = true,
+							["flag_original"] = 1298,
+							["alternatepower"] = 0.008027,
+							["tipo"] = 3,
+							["spec"] = 72,
+							["last_event"] = 1595620305,
+							["serial"] = "Player-4465-010DF944",
+							["totalover"] = 0.008027,
 						}, -- [1]
 						{
-							["received"] = 50.005042,
-							["resource"] = 0.005042,
+							["received"] = 378.006585,
+							["resource"] = 0.006585,
 							["targets"] = {
-								["Scarlet Commander Mograine"] = 84,
+								["Scarlet Commander Mograine"] = 75,
 							},
 							["pets"] = {
 							},
 							["powertype"] = 0,
 							["classe"] = "UNKNOW",
-							["passiveover"] = 0.005042,
+							["passiveover"] = 0.006585,
 							["monster"] = true,
-							["total"] = 84.005042,
+							["total"] = 75.006585,
 							["nome"] = "High Inquisitor Whitemane",
 							["spells"] = {
 								["_ActorTable"] = {
 									["Scarlet Resurrection"] = {
-										["total"] = 84,
+										["total"] = 75,
 										["id"] = "Scarlet Resurrection",
-										["totalover"] = 9916,
+										["totalover"] = 9925,
 										["targets"] = {
-											["Scarlet Commander Mograine"] = 84,
+											["Scarlet Commander Mograine"] = 75,
 										},
 										["counter"] = 1,
 									},
 								},
 								["tipo"] = 7,
 							},
-							["totalover"] = 9916.005042,
-							["flag_original"] = 68168,
-							["last_event"] = 1595447403,
-							["tipo"] = 3,
-							["alternatepower"] = 0.005042,
-							["serial"] = "Creature-0-4468-189-24138-3977-0000188A0B",
 							["boss_fight_component"] = true,
+							["flag_original"] = 2632,
+							["last_event"] = 1595620213,
+							["alternatepower"] = 0.006585,
+							["tipo"] = 3,
+							["serial"] = "Creature-0-4468-189-3060-3977-00001B34F3",
+							["totalover"] = 9925.006585,
 						}, -- [2]
 						{
-							["received"] = 84.001887,
-							["resource"] = 0.001887,
+							["received"] = 75.006147,
+							["resource"] = 0.006147,
 							["targets"] = {
-								["High Inquisitor Whitemane"] = 50,
+								["High Inquisitor Whitemane"] = 378,
 							},
 							["pets"] = {
 							},
 							["powertype"] = 0,
 							["classe"] = "UNKNOW",
-							["passiveover"] = 0.001887,
+							["passiveover"] = 0.006147,
 							["monster"] = true,
-							["total"] = 50.001887,
+							["total"] = 378.006147,
 							["nome"] = "Scarlet Commander Mograine",
 							["spells"] = {
 								["_ActorTable"] = {
 									["Lay on Hands"] = {
-										["total"] = 50,
+										["total"] = 378,
 										["id"] = "Lay on Hands",
-										["totalover"] = 500,
+										["totalover"] = 172,
 										["targets"] = {
-											["High Inquisitor Whitemane"] = 50,
+											["High Inquisitor Whitemane"] = 378,
 										},
 										["counter"] = 1,
 									},
 								},
 								["tipo"] = 7,
 							},
-							["totalover"] = 500.001887,
-							["flag_original"] = 2632,
-							["last_event"] = 1595447407,
-							["tipo"] = 3,
-							["alternatepower"] = 0.001887,
-							["serial"] = "Creature-0-4468-189-24138-3976-00001897BD",
 							["boss_fight_component"] = true,
+							["flag_original"] = 2632,
+							["last_event"] = 1595620217,
+							["alternatepower"] = 0.006147,
+							["tipo"] = 3,
+							["serial"] = "Creature-0-4468-189-3060-3976-00001B3A63",
+							["totalover"] = 172.006147,
 						}, -- [3]
 					},
 				}, -- [3]
 				{
 					["tipo"] = 9,
-					["combatId"] = 78,
+					["combatId"] = 27,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
 									["Demoralizing Shout"] = {
-										["counter"] = 0,
-										["actived"] = false,
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
 										["activedamt"] = 0,
-										["refreshamt"] = 0,
+										["uptime"] = 18,
 										["id"] = "Demoralizing Shout",
-										["uptime"] = 30,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Thunder Clap"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
 										["refreshamt"] = 0,
-										["id"] = "Thunder Clap",
-										["uptime"] = 30,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Deep Wound"] = {
-										["counter"] = 0,
 										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 21,
-										["id"] = "Deep Wound",
-										["uptime"] = 63,
-										["targets"] = {
-										},
-										["appliedamt"] = 4,
+										["counter"] = 0,
 									},
 									["Sunder Armor"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 8,
-										["id"] = "Sunder Armor",
-										["uptime"] = 68,
+										["appliedamt"] = 4,
 										["targets"] = {
 										},
-										["appliedamt"] = 3,
+										["activedamt"] = 0,
+										["uptime"] = 65,
+										["id"] = "Sunder Armor",
+										["refreshamt"] = 11,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Deep Wound"] = {
+										["appliedamt"] = 4,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 66,
+										["id"] = "Deep Wound",
+										["refreshamt"] = 26,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Recently Bandaged"] = {
+										["activedamt"] = -1,
+										["id"] = "Recently Bandaged",
+										["targets"] = {
+										},
+										["actived_at"] = 1595620199,
+										["uptime"] = 0,
+										["appliedamt"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 								},
 								["tipo"] = 9,
 							},
-							["buff_uptime"] = 350,
+							["buff_uptime"] = 381,
 							["classe"] = "WARRIOR",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
-									["Battle Shout"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Battle Shout",
-										["uptime"] = 70,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Holy Strength"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Holy Strength",
-										["uptime"] = 15,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Bloodrage"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 2,
-										["refreshamt"] = 0,
-										["id"] = "Bloodrage",
-										["uptime"] = 19,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
 									["Elixir of the Mongoose"] = {
-										["counter"] = 0,
-										["actived"] = false,
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
 										["activedamt"] = 1,
-										["refreshamt"] = 0,
+										["uptime"] = 85,
 										["id"] = "Elixir of the Mongoose",
-										["uptime"] = 89,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Berserker Rage"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 2,
 										["refreshamt"] = 0,
-										["id"] = "Berserker Rage",
-										["uptime"] = 20,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-									["Battle Stance"] = {
-										["counter"] = 0,
 										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = "Battle Stance",
-										["uptime"] = 0,
-										["targets"] = {
-										},
-										["appliedamt"] = 0,
-									},
-									["Flurry"] = {
 										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 6,
-										["refreshamt"] = 20,
-										["id"] = "Flurry",
-										["uptime"] = 43,
-										["targets"] = {
-										},
-										["appliedamt"] = 6,
-									},
-									["Berserker Stance"] = {
-										["activedamt"] = 1,
-										["id"] = "Berserker Stance",
-										["targets"] = {
-										},
-										["actived_at"] = 1595447359,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
 									},
 									["Elixir of the Giants"] = {
-										["counter"] = 0,
-										["actived"] = false,
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
 										["activedamt"] = 1,
-										["refreshamt"] = 0,
+										["uptime"] = 85,
 										["id"] = "Elixir of the Giants",
-										["uptime"] = 89,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Enrage"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
 										["refreshamt"] = 0,
-										["id"] = "Enrage",
-										["uptime"] = 5,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Holy Strength"] = {
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 3,
+										["uptime"] = 30,
+										["id"] = "Holy Strength",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Flurry"] = {
+										["appliedamt"] = 7,
+										["targets"] = {
+										},
+										["activedamt"] = 7,
+										["uptime"] = 66,
+										["id"] = "Flurry",
+										["refreshamt"] = 28,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Bloodrage"] = {
 										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = "Bloodrage",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Berserker Rage"] = {
+										["appliedamt"] = 2,
+										["targets"] = {
+										},
+										["activedamt"] = 2,
+										["uptime"] = 20,
+										["id"] = "Berserker Rage",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Battle Shout"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 85,
+										["id"] = "Battle Shout",
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 								},
 								["tipo"] = 9,
 							},
-							["debuff_uptime"] = 191,
+							["debuff_uptime"] = 149,
 							["buff_uptime_targets"] = {
 							},
 							["spec"] = 72,
 							["grupo"] = true,
 							["spell_cast"] = {
 								["Battle Shout"] = 1,
-								["Cleave"] = 5,
-								["Demoralizing Shout"] = 1,
-								["Whirlwind"] = 3,
-								["Berserker Rage"] = 2,
+								["Cleave"] = 3,
 								["Bloodrage"] = 1,
-								["Pummel"] = 1,
-								["Sunder Armor"] = 18,
-								["Berserker Stance"] = 1,
-								["Thunder Clap"] = 1,
-								["Heroic Strike"] = 1,
+								["Whirlwind"] = 2,
+								["Berserker Rage"] = 2,
+								["Pummel"] = 2,
+								["Sunder Armor"] = 24,
+								["Demoralizing Shout"] = 1,
+								["Heroic Strike"] = 7,
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["boss_fight_component"] = true,
+							["last_event"] = 1595620262,
 							["tipo"] = 4,
-							["last_event"] = 1595447448,
+							["nome"] = "Kamenac",
 							["pets"] = {
 							},
-							["nome"] = "Kamenac",
 							["serial"] = "Player-4465-010DF944",
-							["boss_fight_component"] = true,
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 2632,
-							["last_event"] = 0,
+							["tipo"] = 4,
 							["nome"] = "Scarlet Commander Mograine",
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["boss_fight_component"] = true,
 							["spell_cast"] = {
 								["Divine Shield"] = 1,
-								["Hammer of Justice"] = 1,
-								["Crusader Strike"] = 5,
+								["Hammer of Justice"] = 2,
+								["Crusader Strike"] = 3,
 								["Retribution Aura"] = 1,
 								["Lay on Hands"] = 1,
 							},
-							["tipo"] = 4,
+							["last_event"] = 0,
 							["monster"] = true,
-							["serial"] = "Creature-0-4468-189-24138-3976-00001897BD",
-							["boss_fight_component"] = true,
+							["serial"] = "Creature-0-4468-189-3060-3976-00001B3A63",
+							["classe"] = "UNKNOW",
 						}, -- [2]
 						{
-							["flag_original"] = 68168,
-							["last_event"] = 0,
+							["flag_original"] = 2632,
+							["tipo"] = 4,
 							["nome"] = "High Inquisitor Whitemane",
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
+							["boss_fight_component"] = true,
 							["spell_cast"] = {
 								["Scarlet Resurrection"] = 1,
 								["Heal"] = 1,
 								["Deep Sleep"] = 1,
+								["Holy Smite"] = 5,
 								["Power Word: Shield"] = 1,
-								["Holy Smite"] = 4,
 							},
-							["tipo"] = 4,
+							["last_event"] = 0,
 							["monster"] = true,
-							["serial"] = "Creature-0-4468-189-24138-3977-0000188A0B",
-							["boss_fight_component"] = true,
+							["serial"] = "Creature-0-4468-189-3060-3977-00001B34F3",
+							["classe"] = "UNKNOW",
 						}, -- [3]
 						{
-							["flag_original"] = 68168,
+							["flag_original"] = 2632,
 							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
 								},
@@ -7344,67 +9445,32 @@ _detalhes_database = {
 							["monster"] = true,
 							["debuff_uptime"] = 20,
 							["spellschool"] = 32,
-							["boss_fight_component"] = true,
 							["debuff_uptime_targets"] = {
 								["Kamenac"] = {
 									["uptime"] = 10,
-									["refreshamt"] = 0,
+									["appliedamt"] = 0,
 									["activedamt"] = 0,
 									["actived"] = false,
-									["appliedamt"] = 0,
+									["refreshamt"] = 0,
 								},
 								["Vermin"] = {
 									["uptime"] = 10,
-									["refreshamt"] = 0,
+									["appliedamt"] = 0,
 									["activedamt"] = 0,
 									["actived"] = false,
-									["appliedamt"] = 0,
+									["refreshamt"] = 0,
 								},
 							},
-							["last_event"] = 1595447406,
+							["boss_fight_component"] = true,
+							["nome"] = "Deep Sleep",
 							["tipo"] = 4,
 							["damage_twin"] = "High Inquisitor Whitemane",
-							["serial"] = "Creature-0-4468-189-24138-3977-0000188A0B",
 							["damage_spellid"] = "Deep Sleep",
-							["nome"] = "Deep Sleep",
+							["serial"] = "Creature-0-4468-189-3060-3977-00001B34F3",
+							["last_event"] = 1595620216,
 						}, -- [4]
 						{
-							["flag_original"] = 1297,
-							["debuff_uptime"] = 12,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Demoralizing Shout"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = "Demoralizing Shout",
-										["uptime"] = 12,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["nome"] = "Vermin",
-							["spec"] = 71,
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Demoralizing Shout"] = 2,
-							},
-							["last_event"] = 1595447433,
-							["boss_fight_component"] = true,
-							["tipo"] = 4,
-							["pets"] = {
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["serial"] = "Player-4465-00E5831F",
-							["classe"] = "WARRIOR",
-						}, -- [5]
-						{
-							["flag_original"] = 68168,
+							["flag_original"] = 2632,
 							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
 								},
@@ -7417,29 +9483,29 @@ _detalhes_database = {
 							["monster"] = true,
 							["debuff_uptime"] = 0,
 							["spellschool"] = 1,
-							["boss_fight_component"] = true,
 							["debuff_uptime_targets"] = {
 								["Kamenac"] = {
 									["uptime"] = 0,
-									["refreshamt"] = 0,
+									["actived_at"] = 1595620233,
 									["appliedamt"] = 0,
 									["activedamt"] = 1,
 									["actived"] = true,
-									["actived_at"] = 1595447443,
+									["refreshamt"] = 0,
 								},
 							},
-							["last_event"] = 1595447443,
+							["boss_fight_component"] = true,
+							["nome"] = "Crusader Strike",
 							["tipo"] = 4,
 							["damage_twin"] = "Scarlet Commander Mograine",
-							["serial"] = "Creature-0-4468-189-24138-3976-00001897BD",
 							["damage_spellid"] = "Crusader Strike",
-							["nome"] = "Crusader Strike",
-						}, -- [6]
+							["serial"] = "Creature-0-4468-189-3060-3976-00001B3A63",
+							["last_event"] = 1595620233,
+						}, -- [5]
 					},
 				}, -- [4]
 				{
 					["tipo"] = 2,
-					["combatId"] = 78,
+					["combatId"] = 27,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -7447,90 +9513,80 @@ _detalhes_database = {
 					["Kamenac"] = true,
 					["Vermin"] = true,
 				},
-				["CombatStartedAt"] = 102821.71,
-				["overall_added"] = true,
+				["CombatStartedAt"] = 275434.794,
+				["tempo_start"] = 1595620177,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 4973,
 				["totals"] = {
-					26019.955457, -- [1]
-					88, -- [2]
+					25711, -- [1]
+					181, -- [2]
 					{
-						106, -- [1]
-						[0] = 134,
+						67, -- [1]
+						[0] = 453,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
+				["totals_grupo"] = {
+					24297, -- [1]
+					181, -- [2]
+					{
+						67, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "party",
 				["hasSaved"] = true,
-				["data_fim"] = "21:50:48",
+				["data_fim"] = "21:51:02",
 				["cleu_timeline"] = {
 				},
 				["enemy"] = "High Inquisitor Whitemane",
-				["TotalElapsedCombatTime"] = 85.7489999999962,
-				["CombatEndedAt"] = 102696.944,
+				["TotalElapsedCombatTime"] = 81.4280000000144,
+				["CombatEndedAt"] = 275516.222,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
 				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					{
-						3, -- [1]
-						36.8209999999963, -- [2]
-					}, -- [2]
-					["damage"] = {
-						{
-							["Kamenac"] = 9060.008913,
-							["Vermin"] = 0.002004,
-						}, -- [1]
-						[3] = {
-							["Kamenac"] = 14752,
-							["Vermin"] = 37,
-						},
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Kamenac"] = 88.003344,
-						}, -- [1]
-						[3] = {
-							["Kamenac"] = 0,
-						},
-					},
-					["damage_section"] = {
-					},
+				["data_inicio"] = "21:49:37",
+				["end_time"] = 275516.607,
+				["combat_id"] = 27,
+				["frags"] = {
+					["High Inquisitor Whitemane"] = 1,
+					["Scarlet Commander Mograine"] = 1,
 				},
-				["end_time"] = 102696.983,
-				["combat_id"] = 78,
-				["data_inicio"] = "21:49:19",
-				["tempo_start"] = 1595447359,
-				["contra"] = "Scarlet Commander Mograine",
+				["overall_added"] = true,
+				["TimeData"] = {
+				},
 				["spells_cast_timeline"] = {
 				},
 				["is_boss"] = {
@@ -7541,104 +9597,685 @@ _detalhes_database = {
 					["mapid"] = 189,
 					["try_number"] = 1,
 					["name"] = "High Inquisitor Whitemane",
-					["diff"] = 16,
-					["ej_instance_id"] = 0,
 					["id"] = 0,
+					["ej_instance_id"] = 0,
+					["diff"] = 16,
 				},
-				["combat_counter"] = 4828,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["CombatSkillCache"] = {
 				},
-				["totals_grupo"] = {
-					23849, -- [1]
-					88, -- [2]
-					{
-						106, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
+				["player_last_events"] = {
 				},
-				["start_time"] = 102607.981,
-				["TimeData"] = {
-				},
-				["frags"] = {
-					["High Inquisitor Whitemane"] = 1,
-					["Scarlet Commander Mograine"] = 1,
+				["start_time"] = 275431.602,
+				["contra"] = "Scarlet Commander Mograine",
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					{
+						3, -- [1]
+						29.1290000000154, -- [2]
+					}, -- [2]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Kamenac"] = 83.008399,
+						}, -- [1]
+						[3] = {
+							["Kamenac"] = 98,
+						},
+					},
+					["damage"] = {
+						{
+							["Kamenac"] = 10056.008149,
+						}, -- [1]
+						[3] = {
+							["Kamenac"] = 14239,
+						},
+					},
 				},
 			}, -- [9]
 			{
 				{
 					["tipo"] = 2,
-					["combatId"] = 77,
+					["combatId"] = 20,
 					["_ActorTable"] = {
 						{
+							["flag_original"] = 66834,
+							["totalabsorbed"] = 264.007871,
+							["damage_from"] = {
+								["Kamenac"] = true,
+								["Scarlet Champion"] = true,
+								["Scarlet Commander Mograine"] = true,
+								["Scarlet Chaplain"] = true,
+								["Scarlet Wizard"] = true,
+								["Scarlet Monk"] = true,
+								["Scarlet Centurion"] = true,
+								["Scarlet Abbot"] = true,
+							},
+							["targets"] = {
+								["Scarlet Chaplain"] = 189,
+								["Scarlet Champion"] = 8078,
+								["Scarlet Commander Mograine"] = 1771,
+								["Scarlet Centurion"] = 4862,
+								["Scarlet Wizard"] = 3960,
+								["Scarlet Monk"] = 7160,
+								["Scarlet Abbot"] = 3583,
+							},
+							["pets"] = {
+							},
+							["total"] = 29603.007871,
+							["nome"] = "Kamenac",
+							["friendlyfire_total"] = 2,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 29603.007871,
+							["spells"] = {
+								["_ActorTable"] = {
+									["Intercept Stun"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 51,
+										["targets"] = {
+											["Scarlet Champion"] = 51,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 51,
+										["n_min"] = 51,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 51,
+										["c_max"] = 0,
+										["id"] = "Intercept Stun",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["Thunder Clap"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 96,
+										["targets"] = {
+											["Scarlet Abbot"] = 71,
+											["Scarlet Monk"] = 96,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 167,
+										["n_min"] = 71,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 167,
+										["c_max"] = 0,
+										["id"] = "Thunder Clap",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 25,
+										["b_amt"] = 0,
+										["c_dmg"] = 7810,
+										["g_amt"] = 0,
+										["n_max"] = 383,
+										["targets"] = {
+											["Scarlet Chaplain"] = 189,
+											["Scarlet Champion"] = 4343,
+											["Scarlet Commander Mograine"] = 1424,
+											["Scarlet Centurion"] = 2489,
+											["Scarlet Monk"] = 1928,
+											["Scarlet Wizard"] = 2113,
+											["Scarlet Abbot"] = 1374,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 6050,
+										["n_min"] = 77,
+										["g_dmg"] = 0,
+										["counter"] = 65,
+										["total"] = 13860,
+										["c_max"] = 735,
+										["MISS"] = 2,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 1,
+										["c_min"] = 149,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 38,
+										["a_dmg"] = 187,
+										["r_amt"] = 0,
+									},
+									["Cleave"] = {
+										["c_amt"] = 6,
+										["b_amt"] = 0,
+										["c_dmg"] = 5275,
+										["g_amt"] = 0,
+										["n_max"] = 467,
+										["targets"] = {
+											["Scarlet Champion"] = 2366,
+											["Scarlet Commander Mograine"] = 347,
+											["Scarlet Centurion"] = 1388,
+											["Scarlet Monk"] = 3332,
+											["Scarlet Wizard"] = 1745,
+											["Scarlet Abbot"] = 1300,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 5203,
+										["n_min"] = 294,
+										["g_dmg"] = 0,
+										["counter"] = 20,
+										["total"] = 10478,
+										["c_max"] = 1059,
+										["id"] = "Cleave",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 726,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 14,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["Whirlwind"] = {
+										["c_amt"] = 4,
+										["b_amt"] = 0,
+										["c_dmg"] = 2213,
+										["g_amt"] = 0,
+										["n_max"] = 308,
+										["targets"] = {
+											["Scarlet Centurion"] = 515,
+											["Scarlet Monk"] = 1303,
+											["Scarlet Champion"] = 1063,
+											["Scarlet Abbot"] = 470,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1138,
+										["n_min"] = 243,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 3351,
+										["c_max"] = 691,
+										["id"] = "Whirlwind",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 470,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["Deep Wound"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 56,
+										["targets"] = {
+											["Scarlet Champion"] = 255,
+											["Scarlet Centurion"] = 400,
+											["Scarlet Monk"] = 416,
+											["Scarlet Wizard"] = 102,
+											["Scarlet Abbot"] = 368,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1541,
+										["n_min"] = 50,
+										["g_dmg"] = 0,
+										["counter"] = 30,
+										["total"] = 1541,
+										["c_max"] = 0,
+										["id"] = "Deep Wound",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 30,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["Shadow Bolt"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 85,
+										["targets"] = {
+											["Scarlet Centurion"] = 70,
+											["Scarlet Monk"] = 85,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 155,
+										["n_min"] = 70,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 155,
+										["c_max"] = 0,
+										["id"] = "Shadow Bolt",
+										["r_dmg"] = 0,
+										["spellschool"] = 32,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["serial"] = "Player-4465-010DF944",
+							["dps_started"] = false,
+							["end_time"] = 1595619966,
+							["classe"] = "WARRIOR",
+							["on_hold"] = false,
+							["boss_fight_component"] = true,
+							["spec"] = 72,
+							["grupo"] = true,
+							["tipo"] = 1,
+							["colocacao"] = 1,
+							["damage_taken"] = 5171.007871,
+							["custom"] = 0,
+							["last_event"] = 1595619965,
+							["last_dps"] = 292.540075608083,
+							["start_time"] = 1595619862,
+							["delay"] = 1595619884,
+							["friendlyfire"] = {
+								["Kamenac"] = {
+									["spells"] = {
+										["Hand of Justice"] = 2,
+									},
+									["total"] = 2,
+								},
+							},
+						}, -- [1]
+						{
 							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.008535,
+							["totalabsorbed"] = 0.004355,
 							["damage_from"] = {
 								["Kamenac"] = true,
 							},
 							["targets"] = {
-								["Kamenac"] = 427,
+								["Kamenac"] = 1864,
 							},
 							["pets"] = {
 							},
+							["dps_started"] = false,
+							["boss_fight_component"] = true,
 							["friendlyfire_total"] = 0,
-							["nome"] = "High Inquisitor Fairbanks",
-							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 427.008535,
-							["delay"] = 0,
+							["total_without_pet"] = 1864.004355,
+							["serial"] = "Creature-0-4468-189-3060-4302-00001B34F3",
 							["monster"] = true,
-							["total"] = 427.008535,
-							["end_time"] = 1595447227,
-							["damage_taken"] = 6216.008535,
-							["boss_fight_component"] = true,
+							["total"] = 1864.004355,
+							["end_time"] = 1595619929,
+							["on_hold"] = false,
+							["nome"] = "Scarlet Champion",
 							["spells"] = {
 								["_ActorTable"] = {
+									["Holy Strike"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 393,
+										["targets"] = {
+											["Kamenac"] = 735,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 735,
+										["n_min"] = 342,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 735,
+										["c_max"] = 0,
+										["id"] = "Holy Strike",
+										["r_dmg"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 3,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["m_amt"] = 0,
+										["r_amt"] = 0,
+									},
 									["!Melee"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 94,
+										["n_max"] = 69,
 										["targets"] = {
-											["Kamenac"] = 427,
+											["Kamenac"] = 1113,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 427,
-										["n_min"] = 81,
+										["n_dmg"] = 1113,
 										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 427,
+										["n_min"] = 40,
+										["MISS"] = 3,
+										["counter"] = 29,
+										["DODGE"] = 5,
 										["r_amt"] = 0,
 										["c_max"] = 0,
+										["b_dmg"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
 										["spellschool"] = 1,
+										["m_amt"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_dmg"] = 0,
+										["n_amt"] = 20,
+										["total"] = 1113,
+										["a_amt"] = 0,
+									},
+									["Retribution Aura"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Kamenac"] = 16,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 16,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 9,
+										["total"] = 16,
+										["c_max"] = 0,
+										["spellschool"] = 2,
+										["id"] = "Retribution Aura",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["RESIST"] = 8,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 1,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["last_event"] = 1595619882,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 8078.004355,
+							["start_time"] = 1595619866,
+							["delay"] = 1595619882,
+							["classe"] = "UNKNOW",
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.005149,
+							["damage_from"] = {
+								["Kamenac"] = true,
+								["Scarlet Monk"] = true,
+							},
+							["targets"] = {
+								["Kamenac"] = 1549,
+								["Scarlet Monk"] = 4,
+							},
+							["pets"] = {
+							},
+							["dps_started"] = false,
+							["boss_fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 1553.005149,
+							["serial"] = "Creature-0-4468-189-3060-4540-00099B34F3",
+							["monster"] = true,
+							["total"] = 1553.005149,
+							["end_time"] = 1595619929,
+							["on_hold"] = false,
+							["nome"] = "Scarlet Monk",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Kick"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 8,
+										["targets"] = {
+											["Kamenac"] = 8,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 8,
+										["n_min"] = 8,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["MISS"] = 1,
+										["total"] = 8,
+										["c_max"] = 0,
+										["DODGE"] = 1,
+										["id"] = "Kick",
+										["r_dmg"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 4,
+										["m_amt"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 67,
+										["targets"] = {
+											["Kamenac"] = 1541,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1541,
+										["g_dmg"] = 0,
+										["n_min"] = 37,
+										["MISS"] = 7,
+										["counter"] = 48,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+										["c_max"] = 0,
+										["b_dmg"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["m_amt"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 6,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_dmg"] = 0,
+										["n_amt"] = 28,
+										["total"] = 1541,
+										["DODGE"] = 7,
+									},
+									["Thrash"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 2,
+										["targets"] = {
+											["Scarlet Monk"] = 4,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 4,
+										["n_min"] = 2,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 4,
+										["c_max"] = 0,
+										["id"] = "Thrash",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 2,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["m_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["last_event"] = 1595619882,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 7164.005149,
+							["start_time"] = 1595619875,
+							["delay"] = 1595619882,
+							["classe"] = "UNKNOW",
+						}, -- [3]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.006912,
+							["damage_from"] = {
+								["Kamenac"] = true,
+							},
+							["targets"] = {
+								["Kamenac"] = 792,
+							},
+							["pets"] = {
+							},
+							["dps_started"] = false,
+							["boss_fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 792.006912,
+							["serial"] = "Creature-0-4468-189-3060-4301-00039B34F3",
+							["monster"] = true,
+							["total"] = 792.006912,
+							["end_time"] = 1595619929,
+							["on_hold"] = false,
+							["nome"] = "Scarlet Centurion",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Battle Shout"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = "Battle Shout",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 4,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["m_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 91,
+										["targets"] = {
+											["Kamenac"] = 792,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 792,
+										["n_min"] = 48,
+										["g_dmg"] = 0,
+										["counter"] = 16,
+										["a_amt"] = 0,
+										["total"] = 792,
+										["c_max"] = 0,
+										["DODGE"] = 3,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["b_dmg"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 2,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 5,
-										["a_amt"] = 0,
-										["DODGE"] = 2,
+										["m_amt"] = 0,
+										["n_amt"] = 11,
+										["spellschool"] = 1,
+										["r_amt"] = 0,
 									},
-									["Curse of Blood"] = {
+									["Retribution Aura"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
@@ -7654,67 +10291,67 @@ _detalhes_database = {
 										["counter"] = 1,
 										["total"] = 0,
 										["c_max"] = 0,
-										["id"] = "Curse of Blood",
+										["spellschool"] = 2,
+										["id"] = "Retribution Aura",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-										["m_crit"] = 0,
-										["n_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["RESIST"] = 1,
-										["a_amt"] = 0,
 										["a_dmg"] = 0,
+										["RESIST"] = 1,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
+							["last_event"] = 1595619882,
 							["friendlyfire"] = {
 							},
+							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1595447225,
-							["on_hold"] = false,
-							["start_time"] = 1595447202,
-							["serial"] = "Creature-0-4468-189-24138-4542-0000188A0B",
-							["dps_started"] = false,
-						}, -- [1]
+							["tipo"] = 1,
+							["damage_taken"] = 4862.006912,
+							["start_time"] = 1595619899,
+							["delay"] = 1595619882,
+							["classe"] = "UNKNOW",
+						}, -- [4]
 						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 751.001904,
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.004506,
 							["damage_from"] = {
-								["High Inquisitor Fairbanks"] = true,
+								["Kamenac"] = true,
 							},
 							["targets"] = {
-								["High Inquisitor Fairbanks"] = 6216,
+								["Kamenac"] = 448,
 							},
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["spec"] = 72,
-							["classe"] = "WARRIOR",
+							["dps_started"] = false,
+							["boss_fight_component"] = true,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 6216.001904,
-							["last_dps"] = 227.201356189946,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1595447227,
-							["friendlyfire_total"] = 0,
-							["damage_taken"] = 427.001904,
-							["boss_fight_component"] = true,
+							["total_without_pet"] = 448.004506,
+							["serial"] = "Creature-0-4468-189-3060-3976-00001B34F3",
+							["monster"] = true,
+							["total"] = 448.004506,
+							["end_time"] = 1595619929,
+							["on_hold"] = false,
+							["nome"] = "Scarlet Commander Mograine",
 							["spells"] = {
 								["_ActorTable"] = {
-									["Charge Stun"] = {
+									["Hammer of Justice"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["Scarlet Commander Mograine"] = 0,
+											["Kamenac"] = 0,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 0,
@@ -7723,956 +10360,273 @@ _detalhes_database = {
 										["counter"] = 1,
 										["total"] = 0,
 										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = "Charge Stun",
+										["id"] = "Hammer of Justice",
 										["r_dmg"] = 0,
 										["a_dmg"] = 0,
-										["b_dmg"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
+										["RESIST"] = 1,
 										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 0,
-										["spellschool"] = 1,
-										["IMMUNE"] = 1,
-									},
-									["!Melee"] = {
-										["c_amt"] = 6,
-										["b_amt"] = 0,
-										["c_dmg"] = 1607,
-										["g_amt"] = 0,
-										["n_max"] = 627,
-										["targets"] = {
-											["High Inquisitor Fairbanks"] = 5434,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 3827,
-										["n_min"] = 84,
-										["g_dmg"] = 0,
-										["counter"] = 28,
-										["total"] = 5434,
-										["c_max"] = 503,
-										["r_amt"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["a_dmg"] = 124,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 201,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 1,
-										["n_amt"] = 19,
-										["spellschool"] = 1,
-										["MISS"] = 3,
-									},
-									["Cleave"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 421,
-										["targets"] = {
-											["High Inquisitor Fairbanks"] = 421,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 421,
-										["n_min"] = 421,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 421,
-										["c_max"] = 0,
-										["id"] = "Cleave",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Pummel"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 50,
-										["targets"] = {
-											["High Inquisitor Fairbanks"] = 50,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 50,
-										["n_min"] = 50,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 50,
-										["c_max"] = 0,
-										["id"] = "Pummel",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Deep Wound"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 51,
-										["targets"] = {
-											["High Inquisitor Fairbanks"] = 201,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 201,
-										["n_min"] = 50,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 201,
-										["c_max"] = 0,
-										["id"] = "Deep Wound",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Shadow Bolt"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 110,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["High Inquisitor Fairbanks"] = 110,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 110,
-										["c_max"] = 110,
-										["id"] = "Shadow Bolt",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 110,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
+										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 32,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["total"] = 6216.001904,
-							["last_event"] = 1595447358,
-							["custom"] = 0,
-							["colocacao"] = 1,
-							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1595447203,
-							["serial"] = "Player-4465-010DF944",
-							["nome"] = "Kamenac",
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.007026,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Vermin"] = 741,
-							},
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["nome"] = "Scarlet Commander Mograine",
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 741.007026,
-							["delay"] = 1595447210,
-							["monster"] = true,
-							["total"] = 741.007026,
-							["end_time"] = 1595447227,
-							["damage_taken"] = 0.007026,
-							["boss_fight_component"] = true,
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 308,
-										["g_amt"] = 0,
-										["n_max"] = 220,
-										["targets"] = {
-											["Vermin"] = 741,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 433,
-										["n_min"] = 213,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 741,
-										["c_max"] = 308,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 308,
 										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
+										["r_amt"] = 0,
 									},
 									["Crusader Strike"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
+										["n_max"] = 54,
+										["targets"] = {
+											["Kamenac"] = 54,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 54,
+										["n_min"] = 54,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 54,
+										["c_max"] = 0,
+										["id"] = "Crusader Strike",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["m_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["Retribution Aura"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
 										["n_max"] = 0,
 										["targets"] = {
-											["Vermin"] = 0,
+											["Kamenac"] = 0,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 0,
 										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 1,
+										["counter"] = 6,
 										["total"] = 0,
 										["c_max"] = 0,
-										["id"] = "Crusader Strike",
+										["spellschool"] = 2,
+										["id"] = "Retribution Aura",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["m_amt"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
 										["a_dmg"] = 0,
+										["RESIST"] = 6,
+										["m_crit"] = 0,
 										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1595447210,
-							["on_hold"] = false,
-							["start_time"] = 1595447222,
-							["serial"] = "Creature-0-4468-189-24138-3976-0000188A0B",
-							["dps_started"] = false,
-						}, -- [3]
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.007362,
-							["damage_from"] = {
-								["Scarlet Commander Mograine"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["classe"] = "WARRIOR",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.007362,
-							["boss_fight_component"] = true,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1595447227,
-							["damage_taken"] = 741.007362,
-							["total"] = 0.007362,
-							["nome"] = "Vermin",
-							["spec"] = 71,
-							["grupo"] = true,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_dps"] = 0.000269088782484772,
-							["colocacao"] = 2,
-							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1595447227,
-							["serial"] = "Player-4465-00E5831F",
-							["on_hold"] = false,
-						}, -- [4]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 77,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 77,
-					["_ActorTable"] = {
-						{
-							["received"] = 38.004447,
-							["resource"] = 0.004447,
-							["targets"] = {
-								["Kamenac"] = 38,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 1,
-							["classe"] = "WARRIOR",
-							["passiveover"] = 0.004447,
-							["total"] = 38.004447,
-							["nome"] = "Kamenac",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Unbridled Wrath"] = {
-										["total"] = 7,
-										["id"] = "Unbridled Wrath",
-										["totalover"] = 0,
-										["targets"] = {
-											["Kamenac"] = 7,
-										},
-										["counter"] = 7,
-									},
-									["Charge"] = {
-										["total"] = 21,
-										["id"] = "Charge",
-										["totalover"] = 0,
-										["targets"] = {
-											["Kamenac"] = 21,
-										},
-										["counter"] = 1,
-									},
-									["Bloodrage"] = {
-										["total"] = 10,
-										["id"] = "Bloodrage",
-										["totalover"] = 0,
-										["targets"] = {
-											["Kamenac"] = 10,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["totalover"] = 0.004447,
-							["flag_original"] = 1298,
-							["tipo"] = 3,
-							["last_event"] = 1595447359,
-							["spec"] = 72,
-							["alternatepower"] = 0.004447,
-							["serial"] = "Player-4465-010DF944",
-							["boss_fight_component"] = true,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 77,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Sunder Armor"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 3,
-										["id"] = "Sunder Armor",
-										["uptime"] = 21,
-										["targets"] = {
-										},
-										["appliedamt"] = 0,
-									},
-									["Deep Wound"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 5,
-										["id"] = "Deep Wound",
-										["uptime"] = 23,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Recently Bandaged"] = {
-										["activedamt"] = -1,
-										["id"] = "Recently Bandaged",
-										["targets"] = {
-										},
-										["actived_at"] = 1595447227,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["appliedamt"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 23,
-							["classe"] = "WARRIOR",
-							["interrupt_spells"] = {
-								["_ActorTable"] = {
-									["Pummel"] = {
-										["id"] = "Pummel",
-										["counter"] = 1,
-										["targets"] = {
-											["High Inquisitor Fairbanks"] = 1,
-										},
-										["interrompeu_oque"] = {
-											["Heal"] = 1,
-										},
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Battle Shout"] = {
-										["activedamt"] = 1,
-										["id"] = "Battle Shout",
-										["targets"] = {
-										},
-										["actived_at"] = 1595447202,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-									["Elixir of the Giants"] = {
-										["activedamt"] = 1,
-										["id"] = "Elixir of the Giants",
-										["targets"] = {
-										},
-										["actived_at"] = 1595447202,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-									["Flurry"] = {
-										["activedamt"] = 5,
-										["id"] = "Flurry",
-										["targets"] = {
-										},
-										["actived_at"] = 1595447227,
-										["uptime"] = 13,
-										["counter"] = 0,
-										["refreshamt"] = 2,
-										["actived"] = true,
-										["appliedamt"] = 5,
-									},
-									["Elixir of the Mongoose"] = {
-										["activedamt"] = 1,
-										["id"] = "Elixir of the Mongoose",
-										["targets"] = {
-										},
-										["actived_at"] = 1595447202,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-									["Berserker Rage"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Berserker Rage",
-										["uptime"] = 10,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["interrompeu_oque"] = {
-								["Heal"] = 1,
-							},
-							["debuff_uptime"] = 44,
-							["interrupt_targets"] = {
-								["High Inquisitor Fairbanks"] = 1,
-							},
-							["buff_uptime_targets"] = {
-							},
-							["boss_fight_component"] = true,
-							["spec"] = 72,
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Cleave"] = 1,
-								["Berserker Rage"] = 1,
-								["Sunder Armor"] = 9,
-								["Pummel"] = 1,
-							},
-							["nome"] = "Kamenac",
-							["tipo"] = 4,
-							["last_event"] = 1595447227,
-							["debuff_uptime_targets"] = {
-							},
-							["interrupt"] = 1.007072,
-							["serial"] = "Player-4465-010DF944",
-							["pets"] = {
-							},
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["last_event"] = 0,
-							["nome"] = "Scarlet Commander Mograine",
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["spell_cast"] = {
-								["Crusader Strike"] = 1,
-							},
-							["tipo"] = 4,
-							["monster"] = true,
-							["serial"] = "Creature-0-4468-189-24138-3976-0000188A0B",
-							["boss_fight_component"] = true,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["boss_debuff"] = true,
-							["monster"] = true,
-							["debuff_uptime"] = 3,
-							["spellschool"] = 1,
-							["boss_fight_component"] = true,
-							["debuff_uptime_targets"] = {
-								["Vermin"] = {
-									["uptime"] = 3,
-									["refreshamt"] = 0,
-									["activedamt"] = 0,
-									["actived"] = false,
-									["appliedamt"] = 0,
-								},
-							},
-							["last_event"] = 1595447211,
-							["tipo"] = 4,
-							["damage_twin"] = "Scarlet Commander Mograine",
-							["serial"] = "Creature-0-4468-189-24138-3976-0000188A0B",
-							["damage_spellid"] = "Dazed",
-							["nome"] = "Dazed",
-						}, -- [3]
-						{
-							["flag_original"] = 2632,
-							["last_event"] = 0,
-							["nome"] = "High Inquisitor Fairbanks",
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["spell_cast"] = {
-								["Curse of Blood"] = 1,
-							},
-							["tipo"] = 4,
-							["monster"] = true,
-							["serial"] = "Creature-0-4468-189-24138-4542-0000188A0B",
-							["boss_fight_component"] = true,
-						}, -- [4]
-						{
-							["flag_original"] = 1297,
-							["boss_fight_component"] = true,
-							["spec"] = 71,
-							["grupo"] = true,
-							["nome"] = "Vermin",
-							["pets"] = {
-							},
-							["buff_uptime_targets"] = {
-							},
-							["buff_uptime"] = 0,
-							["classe"] = "WARRIOR",
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Defensive Stance"] = {
-										["activedamt"] = 1,
-										["id"] = "Defensive Stance",
-										["targets"] = {
-										},
-										["actived_at"] = 1595447227,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-00E5831F",
-							["last_event"] = 1595447227,
-						}, -- [5]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 77,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Kamenac"] = true,
-					["Vermin"] = true,
-				},
-				["tempo_start"] = 1595447202,
-				["last_events_tables"] = {
-					{
-						{
-							{
-								true, -- [1]
-								"!Melee", -- [2]
-								213, -- [3]
-								1595447206.972, -- [4]
-								696, -- [5]
-								"Scarlet Commander Mograine", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [1]
-							{
-								true, -- [1]
-								"!Melee", -- [2]
-								308, -- [3]
-								1595447209.178, -- [4]
-								483, -- [5]
-								"Scarlet Commander Mograine", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [2]
-							{
-								4, -- [1]
-								"Dazed", -- [2]
-								1, -- [3]
-								1595447209.396, -- [4]
-								483, -- [5]
-								"Scarlet Commander Mograine", -- [6]
-								false, -- [7]
-								false, -- [8]
-								false, -- [9]
-								false, -- [10]
-							}, -- [3]
-							{
-								true, -- [1]
-								"!Melee", -- [2]
-								220, -- [3]
-								1595447211.377, -- [4]
-								175, -- [5]
-								"Scarlet Commander Mograine", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								45, -- [10]
-							}, -- [4]
-							{
-								3, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-								0, -- [5]
-								"Vermin", -- [6]
-							}, -- [5]
-						}, -- [1]
-						1595447211.834, -- [2]
-						"Vermin", -- [3]
-						"WARRIOR", -- [4]
-						696, -- [5]
-						"0m 8s", -- [6]
-						["dead"] = true,
-						["dead_at"] = 8.53300000001036,
-					}, -- [1]
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 4827,
-				["totals"] = {
-					7384, -- [1]
-					0, -- [2]
-					{
-						38, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 1,
-						["cc_break"] = 0,
-						["interrupt"] = 1,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = false,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:47:17",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Scarlet Commander Mograine",
-				["TotalElapsedCombatTime"] = 102460.241,
-				["CombatEndedAt"] = 102460.241,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Kamenac"] = 6216.001904,
-							["Vermin"] = 0.007362,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 102479.067,
-				["combat_id"] = 77,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["data_inicio"] = "21:46:43",
-				["spells_cast_timeline"] = {
-				},
-				["is_boss"] = {
-					["diff_string"] = "normal",
-					["index"] = 1,
-					["zone"] = "Eastern Kingdoms",
-					["encounter"] = "Scarlet Commander Mograine",
-					["mapid"] = 0,
-					["try_number"] = 1,
-					["name"] = "Scarlet Commander Mograine",
-					["diff"] = 16,
-					["ej_instance_id"] = 0,
-					["id"] = 0,
-				},
-				["contra"] = "High Inquisitor Fairbanks",
-				["CombatSkillCache"] = {
-				},
-				["totals_grupo"] = {
-					6216, -- [1]
-					0, -- [2]
-					{
-						38, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 1,
-						["cc_break"] = 0,
-						["interrupt"] = 1,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["start_time"] = 102451.708,
-				["TimeData"] = {
-				},
-				["frags"] = {
-				},
-			}, -- [10]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 46,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.003707,
-							["damage_from"] = {
-								["Scarlet Disciple"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["last_event"] = 0,
-							["classe"] = "WARRIOR",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.003707,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 0.003707,
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["damage_taken"] = 399.003707,
-							["nome"] = "Vermin",
-							["spec"] = 71,
-							["grupo"] = true,
-							["end_time"] = 1595444920,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1595444920,
-							["serial"] = "Player-4465-00E5831F",
-							["friendlyfire"] = {
-							},
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 201.008986,
-							["damage_from"] = {
-								["Proudheathen"] = true,
-							},
-							["targets"] = {
-								["Vermin"] = 399,
-								["Proudheathen"] = 201,
-							},
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 600.008986,
-							["delay"] = 0,
-							["fight_component"] = true,
-							["end_time"] = 1595444920,
-							["total"] = 600.008986,
-							["damage_taken"] = 5261.008986,
-							["nome"] = "Scarlet Disciple",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Holy Smite"] = {
+									["!Melee"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 86,
+										["n_max"] = 103,
 										["targets"] = {
-											["Vermin"] = 133,
-											["Proudheathen"] = 86,
+											["Kamenac"] = 394,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 219,
-										["n_min"] = 64,
+										["n_dmg"] = 394,
+										["n_min"] = 96,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 219,
+										["counter"] = 5,
+										["total"] = 394,
 										["c_max"] = 0,
-										["id"] = "Holy Smite",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 2,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 2,
-									},
-									["!Melee"] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 153,
-										["g_amt"] = 0,
-										["n_max"] = 59,
-										["targets"] = {
-											["Vermin"] = 266,
-											["Proudheathen"] = 115,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 228,
-										["n_min"] = 38,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 381,
-										["c_max"] = 78,
+										["DODGE"] = 1,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 75,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["a_dmg"] = 0,
 										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 4,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
 									},
+								},
+								["tipo"] = 2,
+							},
+							["last_event"] = 1595619882,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 1771.004506,
+							["start_time"] = 1595619917,
+							["delay"] = 1595619882,
+							["classe"] = "UNKNOW",
+						}, -- [5]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.006367,
+							["damage_from"] = {
+								["Kamenac"] = true,
+							},
+							["targets"] = {
+								["Kamenac"] = 250,
+							},
+							["pets"] = {
+							},
+							["dps_started"] = false,
+							["boss_fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 250.006367,
+							["serial"] = "Creature-0-4468-189-3060-4300-00011B34F3",
+							["monster"] = true,
+							["total"] = 250.006367,
+							["end_time"] = 1595619929,
+							["on_hold"] = false,
+							["nome"] = "Scarlet Wizard",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Fire Shield III"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = "Fire Shield III",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 3,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["m_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 47,
+										["targets"] = {
+											["Kamenac"] = 250,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 250,
+										["n_min"] = 35,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["a_amt"] = 0,
+										["total"] = 250,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 6,
+										["spellschool"] = 1,
+										["r_amt"] = 0,
+									},
+									["Fire Shield Effect III"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Kamenac"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 0,
+										["c_max"] = 0,
+										["spellschool"] = 4,
+										["id"] = "Fire Shield Effect III",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["RESIST"] = 3,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["last_event"] = 1595619882,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 3960.006367,
+							["start_time"] = 1595619916,
+							["delay"] = 1595619882,
+							["classe"] = "UNKNOW",
+						}, -- [6]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.007504,
+							["damage_from"] = {
+								["Kamenac"] = true,
+							},
+							["targets"] = {
+								["Kamenac"] = 181,
+							},
+							["pets"] = {
+							},
+							["dps_started"] = false,
+							["boss_fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 181.007504,
+							["serial"] = "Creature-0-4468-189-3060-4303-00001B34F3",
+							["monster"] = true,
+							["total"] = 181.007504,
+							["end_time"] = 1595619929,
+							["on_hold"] = false,
+							["nome"] = "Scarlet Abbot",
+							["spells"] = {
+								["_ActorTable"] = {
 									["Renew"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -8690,122 +10644,894 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Renew",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
-										["m_amt"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["m_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 63,
+										["targets"] = {
+											["Kamenac"] = 181,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 181,
+										["DODGE"] = 2,
+										["n_min"] = 56,
+										["MISS"] = 3,
+										["counter"] = 9,
 										["a_amt"] = 0,
+										["r_amt"] = 0,
+										["c_max"] = 0,
+										["b_dmg"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["m_amt"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
 										["a_dmg"] = 0,
+										["n_amt"] = 3,
+										["total"] = 181,
+										["g_dmg"] = 0,
+									},
+									["Enrage"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = "Enrage",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["m_amt"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
+							["last_event"] = 1595619841,
 							["friendlyfire"] = {
 							},
+							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1595444917,
-							["on_hold"] = false,
-							["start_time"] = 1595444905,
-							["serial"] = "Creature-0-4448-0-158-4285-0000188E3A",
+							["tipo"] = 1,
+							["damage_taken"] = 3583.007504,
+							["start_time"] = 1595619922,
+							["delay"] = 1595619841,
+							["classe"] = "UNKNOW",
+						}, -- [7]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.002766,
+							["damage_from"] = {
+								["Kamenac"] = true,
+							},
+							["targets"] = {
+								["Kamenac"] = 85,
+							},
+							["pets"] = {
+							},
 							["dps_started"] = false,
-						}, -- [2]
+							["boss_fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 85.002766,
+							["serial"] = "Creature-0-4468-189-3060-4299-00039B34F3",
+							["monster"] = true,
+							["total"] = 85.002766,
+							["end_time"] = 1595619929,
+							["on_hold"] = false,
+							["nome"] = "Scarlet Chaplain",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Renew"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = "Renew",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["m_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["Power Word: Shield"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = "Power Word: Shield",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["m_amt"] = 0,
+										["r_amt"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 44,
+										["targets"] = {
+											["Kamenac"] = 85,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 85,
+										["n_min"] = 41,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 85,
+										["c_max"] = 0,
+										["a_amt"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["m_amt"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["last_event"] = 1595619882,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 189.002766,
+							["start_time"] = 1595619926,
+							["delay"] = 1595619882,
+							["classe"] = "UNKNOW",
+						}, -- [8]
 					},
 				}, -- [1]
 				{
 					["tipo"] = 3,
-					["combatId"] = 46,
+					["combatId"] = 20,
 					["_ActorTable"] = {
+						{
+							["flag_original"] = 66834,
+							["targets_overheal"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "WARRIOR",
+							["totalover"] = 0.004212,
+							["total_without_pet"] = 1742.004212,
+							["total"] = 1742.004212,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-010DF944",
+							["totalabsorb"] = 0.004212,
+							["last_hps"] = 28.0764640502935,
+							["targets"] = {
+								["Kamenac"] = 1742,
+							},
+							["totalover_without_pet"] = 0.004212,
+							["healing_taken"] = 1742.004212,
+							["end_time"] = 1595619929,
+							["healing_from"] = {
+								["Kamenac"] = true,
+							},
+							["boss_fight_component"] = true,
+							["nome"] = "Kamenac",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Healing Potion"] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 1531,
+										["targets"] = {
+											["Kamenac"] = 1531,
+										},
+										["n_min"] = 1531,
+										["counter"] = 1,
+										["overheal"] = 0,
+										["total"] = 1531,
+										["c_max"] = 0,
+										["id"] = "Healing Potion",
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 1531,
+										["n_amt"] = 1,
+										["m_healed"] = 0,
+										["totaldenied"] = 0,
+										["absorbed"] = 0,
+									},
+									["Holy Strength"] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 122,
+										["targets"] = {
+											["Kamenac"] = 211,
+										},
+										["n_min"] = 89,
+										["counter"] = 2,
+										["overheal"] = 0,
+										["total"] = 211,
+										["c_max"] = 0,
+										["id"] = "Holy Strength",
+										["targets_absorbs"] = {
+										},
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["n_curado"] = 211,
+										["n_amt"] = 2,
+										["m_healed"] = 0,
+										["totaldenied"] = 0,
+										["absorbed"] = 0,
+									},
+								},
+								["tipo"] = 3,
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1595619921,
+							["custom"] = 0,
+							["last_event"] = 1595619868,
+							["spec"] = 72,
+							["totaldenied"] = 0.004212,
+							["delay"] = 1595619868,
+							["tipo"] = 2,
+						}, -- [1]
+						{
+							["flag_original"] = 2632,
+							["totalabsorb"] = 0.001608,
+							["last_hps"] = 0,
+							["targets_overheal"] = {
+							},
+							["targets"] = {
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.001608,
+							["healing_from"] = {
+							},
+							["healing_taken"] = 0.001608,
+							["totalover"] = 0.001608,
+							["total_without_pet"] = 0.001608,
+							["iniciar_hps"] = false,
+							["start_time"] = 1595619929,
+							["monster"] = true,
+							["end_time"] = 1595619929,
+							["classe"] = "UNKNOW",
+							["heal_enemy_amt"] = 577,
+							["nome"] = "Scarlet Chaplain",
+							["targets_absorbs"] = {
+							},
+							["total"] = 0.001608,
+							["boss_fight_component"] = true,
+							["heal_enemy"] = {
+								["Power Word: Shield"] = 381,
+								["Renew"] = 196,
+							},
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 3,
+							},
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["totaldenied"] = 0.001608,
+							["serial"] = "Creature-0-4468-189-3060-4299-00039B34F3",
+							["last_event"] = 1595619880,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["totalabsorb"] = 0.007307,
+							["last_hps"] = 0,
+							["targets_overheal"] = {
+							},
+							["targets"] = {
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.007307,
+							["healing_from"] = {
+							},
+							["healing_taken"] = 0.007307,
+							["totalover"] = 0.007307,
+							["total_without_pet"] = 0.007307,
+							["iniciar_hps"] = false,
+							["start_time"] = 1595619929,
+							["monster"] = true,
+							["end_time"] = 1595619929,
+							["classe"] = "UNKNOW",
+							["heal_enemy_amt"] = 0,
+							["nome"] = "Scarlet Commander Mograine",
+							["targets_absorbs"] = {
+							},
+							["total"] = 0.007307,
+							["boss_fight_component"] = true,
+							["heal_enemy"] = {
+							},
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 3,
+							},
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["totaldenied"] = 0.007307,
+							["serial"] = "Creature-0-4468-189-3060-3976-00001B34F3",
+							["last_event"] = 0,
+						}, -- [3]
+						{
+							["flag_original"] = 2632,
+							["totalabsorb"] = 0.006662,
+							["last_hps"] = 0,
+							["targets_overheal"] = {
+							},
+							["targets"] = {
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["totalover_without_pet"] = 0.006662,
+							["healing_from"] = {
+							},
+							["healing_taken"] = 0.006662,
+							["totalover"] = 0.006662,
+							["total_without_pet"] = 0.006662,
+							["iniciar_hps"] = false,
+							["start_time"] = 1595619929,
+							["monster"] = true,
+							["end_time"] = 1595619929,
+							["classe"] = "UNKNOW",
+							["heal_enemy_amt"] = 0,
+							["nome"] = "Scarlet Monk",
+							["targets_absorbs"] = {
+							},
+							["total"] = 0.006662,
+							["boss_fight_component"] = true,
+							["heal_enemy"] = {
+							},
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 3,
+							},
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["totaldenied"] = 0.006662,
+							["serial"] = "Creature-0-4468-189-3060-4540-00011B34F4",
+							["last_event"] = 0,
+						}, -- [4]
 					},
 				}, -- [2]
 				{
 					["tipo"] = 7,
-					["combatId"] = 46,
+					["combatId"] = 20,
 					["_ActorTable"] = {
+						{
+							["received"] = 41.007513,
+							["resource"] = 0.007513,
+							["targets"] = {
+								["Kamenac"] = 41,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 1,
+							["classe"] = "WARRIOR",
+							["passiveover"] = 0.007513,
+							["total"] = 41.007513,
+							["nome"] = "Kamenac",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Bloodrage"] = {
+										["total"] = 9,
+										["id"] = "Bloodrage",
+										["totalover"] = 0,
+										["targets"] = {
+											["Kamenac"] = 9,
+										},
+										["counter"] = 9,
+									},
+									["Unbridled Wrath"] = {
+										["total"] = 32,
+										["id"] = "Unbridled Wrath",
+										["totalover"] = 0,
+										["targets"] = {
+											["Kamenac"] = 32,
+										},
+										["counter"] = 32,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["boss_fight_component"] = true,
+							["flag_original"] = 66834,
+							["alternatepower"] = 0.007513,
+							["tipo"] = 3,
+							["spec"] = 72,
+							["last_event"] = 1595619881,
+							["serial"] = "Player-4465-010DF944",
+							["totalover"] = 0.007513,
+						}, -- [1]
 					},
 				}, -- [3]
 				{
 					["tipo"] = 9,
-					["combatId"] = 46,
+					["combatId"] = 20,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
-							["nome"] = "Kamenac",
-							["spec"] = 72,
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["buff_uptime_targets"] = {
-							},
-							["buff_uptime"] = 45,
-							["last_event"] = 1595444920,
-							["classe"] = "WARRIOR",
-							["buff_uptime_spells"] = {
+							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
-									["Elixir of the Mongoose"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Elixir of the Mongoose",
-										["uptime"] = 15,
+									["Intercept Stun"] = {
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 0,
+										["uptime"] = 2,
+										["id"] = "Intercept Stun",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
-									["Elixir of the Giants"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Elixir of the Giants",
-										["uptime"] = 15,
+									["Thunder Clap"] = {
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 0,
+										["uptime"] = 26,
+										["id"] = "Thunder Clap",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
 									},
-									["Battle Shout"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Battle Shout",
-										["uptime"] = 15,
+									["Demoralizing Shout"] = {
+										["appliedamt"] = 4,
 										["targets"] = {
 										},
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["uptime"] = 75,
+										["id"] = "Demoralizing Shout",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Sunder Armor"] = {
+										["appliedamt"] = 10,
+										["targets"] = {
+										},
+										["activedamt"] = 2,
+										["uptime"] = 100,
+										["id"] = "Sunder Armor",
+										["refreshamt"] = 6,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Deep Wound"] = {
+										["appliedamt"] = 11,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 100,
+										["id"] = "Deep Wound",
+										["refreshamt"] = 19,
+										["actived"] = false,
+										["counter"] = 0,
 									},
 								},
 								["tipo"] = 9,
 							},
-							["serial"] = "Player-4465-010DF944",
+							["buff_uptime"] = 120,
+							["classe"] = "WARRIOR",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Battle Shout"] = {
+										["activedamt"] = 1,
+										["id"] = "Battle Shout",
+										["targets"] = {
+										},
+										["actived_at"] = 1595619841,
+										["uptime"] = 23,
+										["appliedamt"] = 1,
+										["refreshamt"] = 1,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+									["Holy Strength"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 22,
+										["id"] = "Holy Strength",
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Bloodrage"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 9,
+										["id"] = "Bloodrage",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Elixir of the Mongoose"] = {
+										["activedamt"] = 1,
+										["id"] = "Elixir of the Mongoose",
+										["targets"] = {
+										},
+										["actived_at"] = 1595619818,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+									["Berserker Rage"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = "Berserker Rage",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Berserking"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 10,
+										["id"] = "Berserking",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Flurry"] = {
+										["activedamt"] = 7,
+										["id"] = "Flurry",
+										["targets"] = {
+										},
+										["actived_at"] = 1595619882,
+										["uptime"] = 46,
+										["appliedamt"] = 7,
+										["refreshamt"] = 26,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+									["Berserker Stance"] = {
+										["activedamt"] = 1,
+										["id"] = "Berserker Stance",
+										["targets"] = {
+										},
+										["actived_at"] = 1595619818,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+									["Elixir of the Giants"] = {
+										["activedamt"] = 1,
+										["id"] = "Elixir of the Giants",
+										["targets"] = {
+										},
+										["actived_at"] = 1595619818,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+									["Battle Stance"] = {
+										["appliedamt"] = 0,
+										["targets"] = {
+										},
+										["activedamt"] = 0,
+										["uptime"] = 0,
+										["id"] = "Battle Stance",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 303,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 72,
+							["grupo"] = true,
+							["spell_cast"] = {
+								["Battle Shout"] = 1,
+								["Cleave"] = 10,
+								["Demoralizing Shout"] = 1,
+								["Whirlwind"] = 2,
+								["Intercept"] = 1,
+								["Berserker Rage"] = 1,
+								["Berserking"] = 1,
+								["Sunder Armor"] = 18,
+								["Healing Potion"] = 1,
+								["Berserker Stance"] = 1,
+							},
+							["boss_fight_component"] = true,
+							["last_event"] = 1595619912,
 							["tipo"] = 4,
+							["nome"] = "Kamenac",
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-010DF944",
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
-							["flag_original"] = 68168,
+							["flag_original"] = 2632,
+							["tipo"] = 4,
+							["nome"] = "Scarlet Monk",
+							["pets"] = {
+							},
+							["boss_fight_component"] = true,
+							["spell_cast"] = {
+								["Kick"] = 4,
+								["Thrash"] = 2,
+							},
 							["last_event"] = 0,
-							["nome"] = "Scarlet Disciple",
+							["monster"] = true,
+							["serial"] = "Creature-0-4468-189-3060-4540-00099B34F3",
+							["classe"] = "UNKNOW",
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["tipo"] = 4,
+							["nome"] = "Scarlet Champion",
+							["pets"] = {
+							},
+							["boss_fight_component"] = true,
+							["spell_cast"] = {
+								["Holy Strike"] = 3,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-4468-189-3060-4302-00001B34F3",
+							["classe"] = "UNKNOW",
+						}, -- [3]
+						{
+							["flag_original"] = 2632,
+							["tipo"] = 4,
+							["nome"] = "Scarlet Wizard",
+							["pets"] = {
+							},
+							["boss_fight_component"] = true,
+							["spell_cast"] = {
+								["Fire Shield III"] = 3,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-4468-189-3060-4300-00011B34F3",
+							["classe"] = "UNKNOW",
+						}, -- [4]
+						{
+							["flag_original"] = 2632,
+							["tipo"] = 4,
+							["nome"] = "Scarlet Abbot",
+							["pets"] = {
+							},
+							["boss_fight_component"] = true,
+							["spell_cast"] = {
+								["Renew"] = 1,
+								["Enrage"] = 1,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-4468-189-3060-4303-00001B34F3",
+							["classe"] = "UNKNOW",
+						}, -- [5]
+						{
+							["flag_original"] = 2632,
+							["tipo"] = 4,
+							["nome"] = "Scarlet Centurion",
+							["pets"] = {
+							},
+							["boss_fight_component"] = true,
+							["spell_cast"] = {
+								["Battle Shout"] = 4,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-4468-189-3060-4301-00039B34F3",
+							["classe"] = "UNKNOW",
+						}, -- [6]
+						{
+							["flag_original"] = 2632,
+							["tipo"] = 4,
+							["nome"] = "Scarlet Chaplain",
+							["pets"] = {
+							},
+							["boss_fight_component"] = true,
+							["spell_cast"] = {
+								["Renew"] = 1,
+								["Power Word: Shield"] = 1,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-4468-189-3060-4299-00039B34F3",
+							["classe"] = "UNKNOW",
+						}, -- [7]
+						{
+							["flag_original"] = 2632,
+							["tipo"] = 4,
+							["nome"] = "Scarlet Commander Mograine",
+							["pets"] = {
+							},
+							["boss_fight_component"] = true,
+							["spell_cast"] = {
+								["Hammer of Justice"] = 1,
+								["Crusader Strike"] = 1,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-4468-189-3060-3976-00001B34F3",
+							["classe"] = "UNKNOW",
+						}, -- [8]
+						{
+							["flag_original"] = 2632,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 9,
+							},
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
-							["spell_cast"] = {
-								["Holy Smite"] = 2,
-								["Renew"] = 1,
-							},
-							["tipo"] = 4,
+							["boss_debuff"] = true,
 							["monster"] = true,
-							["serial"] = "Creature-0-4448-0-158-4285-0000188E3A",
-							["fight_component"] = true,
-						}, -- [2]
+							["debuff_uptime"] = 0,
+							["spellschool"] = 1,
+							["debuff_uptime_targets"] = {
+								["Kamenac"] = {
+									["uptime"] = 0,
+									["actived_at"] = 1595619881,
+									["appliedamt"] = 0,
+									["activedamt"] = 1,
+									["actived"] = true,
+									["refreshamt"] = 0,
+								},
+							},
+							["boss_fight_component"] = true,
+							["nome"] = "Crusader Strike",
+							["tipo"] = 4,
+							["damage_twin"] = "Scarlet Commander Mograine",
+							["damage_spellid"] = "Crusader Strike",
+							["serial"] = "Creature-0-4468-189-3060-3976-00001B34F3",
+							["last_event"] = 1595619881,
+						}, -- [9]
+						{
+							["flag_original"] = 1297,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 71,
+							["grupo"] = true,
+							["boss_fight_component"] = true,
+							["buff_uptime"] = 0,
+							["nome"] = "Vermin",
+							["pets"] = {
+							},
+							["last_event"] = 1595619916,
+							["classe"] = "WARRIOR",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Battle Stance"] = {
+										["activedamt"] = 1,
+										["id"] = "Battle Stance",
+										["targets"] = {
+										},
+										["actived_at"] = 1595619916,
+										["uptime"] = 0,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["serial"] = "Player-4465-00E5831F",
+							["tipo"] = 4,
+						}, -- [10]
 					},
 				}, -- [4]
 				{
 					["tipo"] = 2,
-					["combatId"] = 46,
+					["combatId"] = 20,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -8813,155 +11539,169 @@ _detalhes_database = {
 					["Kamenac"] = true,
 					["Vermin"] = true,
 				},
-				["CombatStartedAt"] = 100169.975,
-				["tempo_start"] = 1595444905,
+				["CombatStartedAt"] = 275213.439,
+				["tempo_start"] = 1595619818,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 4795,
+				["combat_counter"] = 4966,
 				["totals"] = {
-					599.995097, -- [1]
-					-0.00533400000000484, -- [2]
+					34776, -- [1]
+					1742, -- [2]
 					{
-						0, -- [1]
+						41, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[6] = 0,
 						[3] = 0,
+						[6] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
 					}, -- [4]
-					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
 				},
 				["player_last_events"] = {
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
 				["hasSaved"] = true,
-				["data_fim"] = "21:08:41",
+				["data_fim"] = "21:45:29",
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Scarlet Disciple",
-				["TotalElapsedCombatTime"] = 1.62200000000303,
-				["CombatEndedAt"] = 100171.597,
+				["enemy"] = "Scarlet Commander Mograine",
+				["TotalElapsedCombatTime"] = 60.6180000000168,
+				["CombatEndedAt"] = 275173.28,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
+				},
+				["data_inicio"] = "21:43:39",
+				["end_time"] = 275174.326,
+				["combat_id"] = 20,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Scarlet Champion"] = 2,
+					["Scarlet Centurion"] = 1,
+					["Scarlet Monk"] = 1,
+					["Scarlet Wizard"] = 1,
+					["Scarlet Abbot"] = 1,
+				},
+				["is_boss"] = {
+					["diff_string"] = "normal",
+					["index"] = 1,
+					["zone"] = "Eastern Kingdoms",
+					["encounter"] = "Scarlet Commander Mograine",
+					["mapid"] = 0,
+					["try_number"] = 1,
+					["name"] = "Scarlet Commander Mograine",
+					["id"] = 0,
+					["ej_instance_id"] = 0,
+					["diff"] = 16,
+				},
+				["contra"] = "Scarlet Abbot",
+				["CombatSkillCache"] = {
+				},
+				["totals_grupo"] = {
+					29605, -- [1]
+					1742, -- [2]
+					{
+						41, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["start_time"] = 275073.133,
+				["TimeData"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage"] = {
-						{
-							["Vermin"] = 0.003707,
-						}, -- [1]
+					["damage_section"] = {
 					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
+							["Kamenac"] = 1742.004212,
 						}, -- [1]
 					},
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Kamenac"] = 29414.007871,
+						}, -- [1]
 					},
 				},
-				["end_time"] = 100169.656,
-				["combat_id"] = 46,
-				["totals_grupo"] = {
-					0, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["frags"] = {
-					["Scarlet Disciple"] = 1,
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 100154.647,
-				["contra"] = "Scarlet Disciple",
-				["data_inicio"] = "21:08:26",
-			}, -- [11]
+			}, -- [10]
 			{
 				{
 					["tipo"] = 2,
-					["combatId"] = 45,
+					["combatId"] = 6,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.001451,
+							["flag_original"] = 1298,
+							["totalabsorbed"] = 0.002074,
 							["damage_from"] = {
+								["Kamenac"] = true,
+								["Scarlet Sorcerer"] = true,
+								["Scarlet Defender"] = true,
+								["Scarlet Myrmidon"] = true,
 							},
 							["targets"] = {
-								["Vermin"] = 416,
+								["Scarlet Sorcerer"] = 4623,
+								["Scarlet Defender"] = 359,
+								["Scarlet Myrmidon"] = 4411,
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 416.001451,
-							["delay"] = 0,
-							["fight_component"] = true,
-							["end_time"] = 1595444799,
-							["total"] = 416.001451,
-							["damage_taken"] = 0.001451,
-							["nome"] = "Scarlet Defender",
+							["last_dps"] = 252.588325866332,
 							["spells"] = {
 								["_ActorTable"] = {
-									["!Melee"] = {
+									["Thunder Clap"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 108,
+										["n_max"] = 103,
 										["targets"] = {
-											["Vermin"] = 416,
+											["Scarlet Sorcerer"] = 103,
+											["Scarlet Defender"] = 65,
+											["Scarlet Myrmidon"] = 78,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 416,
-										["n_min"] = 97,
+										["n_dmg"] = 246,
+										["n_min"] = 65,
 										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 416,
+										["counter"] = 3,
+										["total"] = 246,
 										["c_max"] = 0,
-										["id"] = "!Melee",
+										["id"] = "Thunder Clap",
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["a_amt"] = 0,
@@ -8970,292 +11710,293 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 4,
+										["n_amt"] = 3,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["!Melee"] = {
+										["c_amt"] = 8,
+										["b_amt"] = 0,
+										["c_dmg"] = 2796,
+										["g_amt"] = 0,
+										["n_max"] = 359,
+										["targets"] = {
+											["Scarlet Sorcerer"] = 4471,
+											["Scarlet Myrmidon"] = 3094,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 4769,
+										["n_min"] = 84,
+										["g_dmg"] = 0,
+										["counter"] = 33,
+										["total"] = 7565,
+										["c_max"] = 668,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 152,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 25,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Cleave"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 798,
+										["g_amt"] = 0,
+										["n_max"] = 294,
+										["targets"] = {
+											["Scarlet Defender"] = 294,
+											["Scarlet Myrmidon"] = 798,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 294,
+										["n_min"] = 294,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 1092,
+										["c_max"] = 798,
+										["id"] = "Cleave",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 798,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Sunder Armor"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Scarlet Myrmidon"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["r_amt"] = 0,
+										["id"] = "Sunder Armor",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["EVADE"] = 1,
+									},
+									["Deep Wound"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 49,
+										["targets"] = {
+											["Scarlet Sorcerer"] = 49,
+											["Scarlet Myrmidon"] = 441,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 490,
+										["n_min"] = 49,
+										["g_dmg"] = 0,
+										["counter"] = 10,
+										["total"] = 490,
+										["c_max"] = 0,
+										["id"] = "Deep Wound",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 10,
 										["a_dmg"] = 0,
 										["spellschool"] = 1,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["friendlyfire"] = {
+							["classe"] = "WARRIOR",
+							["raid_targets"] = {
 							},
-							["custom"] = 0,
-							["last_event"] = 1595444790,
-							["on_hold"] = false,
-							["start_time"] = 1595444788,
-							["serial"] = "Creature-0-4468-189-24138-4298-0000188A0C",
+							["total_without_pet"] = 9393.002074,
+							["friendlyfire"] = {
+								["Kamenac"] = {
+									["total"] = 3,
+									["spells"] = {
+										["Hand of Justice"] = 3,
+									},
+								},
+							},
+							["delay"] = 1595618751,
 							["dps_started"] = false,
+							["end_time"] = 1595618763,
+							["friendlyfire_total"] = 3,
+							["damage_taken"] = 718.002074,
+							["nome"] = "Kamenac",
+							["spec"] = 72,
+							["grupo"] = true,
+							["fight_component"] = true,
+							["total"] = 9393.002074,
+							["last_event"] = 1595618751,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["start_time"] = 1595618728,
+							["serial"] = "Player-4465-010DF944",
+							["colocacao"] = 1,
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.002542,
+							["totalabsorbed"] = 0.003529,
 							["damage_from"] = {
-								["Scarlet Defender"] = true,
+								["Scarlet Myrmidon"] = true,
 							},
 							["targets"] = {
 							},
+							["delay"] = 0,
 							["pets"] = {
 							},
-							["classe"] = "WARRIOR",
-							["tipo"] = 1,
+							["custom"] = 0,
 							["friendlyfire_total"] = 0,
+							["classe"] = "WARRIOR",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 0.002542,
-							["delay"] = 0,
+							["total_without_pet"] = 0.003529,
+							["damage_taken"] = 819.003529,
 							["dps_started"] = false,
-							["end_time"] = 1595444799,
-							["spec"] = 71,
-							["damage_taken"] = 416.002542,
+							["total"] = 0.003529,
+							["on_hold"] = false,
+							["last_event"] = 1595618740,
 							["nome"] = "Vermin",
+							["spec"] = 71,
+							["grupo"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Scarlet Myrmidon"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["r_amt"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["spellschool"] = 1,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["b_dmg"] = 0,
+										["m_amt"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_dmg"] = 0,
+										["n_amt"] = 0,
+										["MISS"] = 1,
+										["a_amt"] = 0,
+									},
 								},
 								["tipo"] = 2,
 							},
-							["grupo"] = true,
+							["last_dps"] = 9.48987549411550e-05,
+							["colocacao"] = 2,
+							["tipo"] = 1,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["on_hold"] = false,
-							["start_time"] = 1595444799,
+							["start_time"] = 1595618763,
 							["serial"] = "Player-4465-00E5831F",
-							["total"] = 0.002542,
+							["end_time"] = 1595618763,
 						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 45,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 45,
-					["_ActorTable"] = {
-						{
-							["received"] = 8.006606,
-							["resource"] = 0.006606,
-							["targets"] = {
-								["Kamenac"] = 8,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 1,
-							["classe"] = "WARRIOR",
-							["passiveover"] = 0.006606,
-							["total"] = 8.006606,
-							["nome"] = "Kamenac",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Bloodrage"] = {
-										["total"] = 8,
-										["id"] = "Bloodrage",
-										["totalover"] = 0,
-										["targets"] = {
-											["Kamenac"] = 8,
-										},
-										["counter"] = 8,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["totalover"] = 0.006606,
-							["alternatepower"] = 0.006606,
-							["last_event"] = 1595444905,
-							["tipo"] = 3,
-							["spec"] = 72,
-							["serial"] = "Player-4465-010DF944",
-							["flag_original"] = 1298,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 45,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["nome"] = "Vermin",
-							["spec"] = 71,
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["buff_uptime_targets"] = {
-							},
-							["buff_uptime"] = 0,
-							["last_event"] = 1595444790,
-							["classe"] = "WARRIOR",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Defensive Stance"] = {
-										["activedamt"] = 1,
-										["id"] = "Defensive Stance",
-										["targets"] = {
-										},
-										["actived_at"] = 1595444790,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-00E5831F",
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 45,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Kamenac"] = true,
-					["Vermin"] = true,
-				},
-				["CombatStartedAt"] = 100152.217,
-				["tempo_start"] = 1595444788,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 4794,
-				["totals"] = {
-					416, -- [1]
-					0, -- [2]
-					{
-						8, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = false,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:06:39",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Scarlet Defender",
-				["TotalElapsedCombatTime"] = 6.06100000000151,
-				["CombatEndedAt"] = 100048.009,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Vermin"] = 0.002542,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 100048.009,
-				["combat_id"] = 45,
-				["totals_grupo"] = {
-					0, -- [1]
-					0, -- [2]
-					{
-						8, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["frags"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 100036.962,
-				["contra"] = "Scarlet Defender",
-				["data_inicio"] = "21:06:28",
-			}, -- [12]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 44,
-					["_ActorTable"] = {
 						{
 							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.007798,
+							["totalabsorbed"] = 0.001961,
 							["damage_from"] = {
 								["Kamenac"] = true,
 							},
 							["targets"] = {
-								["Kamenac"] = 1406,
+								["Kamenac"] = 366,
+								["Vermin"] = 819,
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["nome"] = "Herod",
 							["classe"] = "UNKNOW",
+							["friendlyfire"] = {
+							},
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 1406.007798,
-							["delay"] = 1595444687,
+							["total_without_pet"] = 1185.001961,
+							["delay"] = 1595618749,
+							["fight_component"] = true,
+							["total"] = 1185.001961,
 							["monster"] = true,
-							["total"] = 1406.007798,
-							["end_time"] = 1595444720,
-							["damage_taken"] = 12215.007798,
-							["boss_fight_component"] = true,
+							["damage_taken"] = 4411.001961,
+							["nome"] = "Scarlet Myrmidon",
 							["spells"] = {
 								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 142,
+										["targets"] = {
+											["Kamenac"] = 366,
+											["Vermin"] = 819,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1185,
+										["a_amt"] = 0,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 35,
+										["total"] = 1185,
+										["r_amt"] = 0,
+										["c_max"] = 0,
+										["b_dmg"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 3,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["spellschool"] = 1,
+										["n_amt"] = 21,
+										["DODGE"] = 4,
+										["MISS"] = 7,
+									},
 									["Enrage"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -9275,39 +12016,79 @@ _detalhes_database = {
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
 										["a_amt"] = 0,
 										["a_dmg"] = 0,
 									},
-									["Whirlwind"] = {
+								},
+								["tipo"] = 2,
+							},
+							["last_event"] = 1595618749,
+							["last_dps"] = 0,
+							["end_time"] = 1595618763,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["start_time"] = 1595618736,
+							["serial"] = "Creature-0-4468-189-3060-4295-00041B34F4",
+							["dps_started"] = false,
+						}, -- [3]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.001048,
+							["damage_from"] = {
+								["Kamenac"] = true,
+							},
+							["targets"] = {
+								["Kamenac"] = 193,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["friendlyfire"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 193.001048,
+							["delay"] = 1595618750,
+							["fight_component"] = true,
+							["total"] = 193.001048,
+							["monster"] = true,
+							["damage_taken"] = 4623.001048,
+							["nome"] = "Scarlet Sorcerer",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Frostbolt"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 266,
+										["n_max"] = 114,
 										["targets"] = {
-											["Kamenac"] = 266,
+											["Kamenac"] = 114,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 266,
-										["n_min"] = 266,
+										["n_dmg"] = 114,
+										["n_min"] = 114,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 266,
+										["counter"] = 6,
+										["total"] = 114,
 										["c_max"] = 0,
-										["id"] = "Whirlwind",
+										["id"] = "Frostbolt",
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
+										["m_crit"] = 0,
 										["n_amt"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 6,
+										["b_dmg"] = 0,
+										["RESIST"] = 5,
 										["a_amt"] = 0,
 										["a_dmg"] = 0,
 									},
@@ -9316,16 +12097,16 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 152,
+										["n_max"] = 19,
 										["targets"] = {
-											["Kamenac"] = 1140,
+											["Kamenac"] = 79,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 1140,
-										["n_min"] = 130,
+										["n_dmg"] = 79,
+										["n_min"] = 13,
 										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 1140,
+										["counter"] = 6,
+										["total"] = 79,
 										["c_max"] = 0,
 										["r_amt"] = 0,
 										["id"] = "!Melee",
@@ -9333,15 +12114,15 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["a_amt"] = 0,
-										["n_amt"] = 8,
+										["n_amt"] = 5,
 										["spellschool"] = 1,
-										["MISS"] = 2,
+										["MISS"] = 1,
 									},
-									["Cleave"] = {
+									["Slow"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
@@ -9357,415 +12138,59 @@ _detalhes_database = {
 										["counter"] = 1,
 										["total"] = 0,
 										["c_max"] = 0,
-										["id"] = "Cleave",
+										["id"] = "Slow",
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["m_crit"] = 0,
+										["n_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["DODGE"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1595444687,
-							["on_hold"] = false,
-							["start_time"] = 1595444697,
-							["serial"] = "Creature-0-4468-189-24138-3975-0000188A0B",
-							["dps_started"] = false,
-						}, -- [1]
-						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.003251,
-							["damage_from"] = {
-								["Kamenac"] = true,
-								["Herod"] = true,
-								["Scarlet Myrmidon"] = true,
-								["Scarlet Trainee"] = true,
-							},
-							["targets"] = {
-								["Herod"] = 12215,
-								["Scarlet Myrmidon"] = 17498,
-								["Scarlet Trainee"] = 2254,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["spec"] = 72,
-							["classe"] = "WARRIOR",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 31967.003251,
-							["last_dps"] = 531.72879207899,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1595444720,
-							["friendlyfire_total"] = 1,
-							["damage_taken"] = 3424.003251,
-							["boss_fight_component"] = true,
-							["spells"] = {
-								["_ActorTable"] = {
-									["Cleave"] = {
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 2544,
-										["g_amt"] = 0,
-										["n_max"] = 448,
-										["targets"] = {
-											["Scarlet Myrmidon"] = 8561,
-											["Herod"] = 867,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 6884,
-										["n_min"] = 318,
-										["g_dmg"] = 0,
-										["counter"] = 21,
-										["total"] = 9428,
-										["c_max"] = 894,
-										["id"] = "Cleave",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 786,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 18,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Execute"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 1687,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Herod"] = 1687,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 1687,
-										["c_max"] = 1687,
-										["id"] = "Execute",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 1687,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Whirlwind"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 568,
-										["g_amt"] = 0,
-										["n_max"] = 374,
-										["targets"] = {
-											["Herod"] = 374,
-											["Scarlet Myrmidon"] = 1318,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1124,
-										["n_min"] = 226,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 1692,
-										["c_max"] = 568,
-										["id"] = "Whirlwind",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 568,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Deep Wound"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 63,
-										["targets"] = {
-											["Herod"] = 304,
-											["Scarlet Myrmidon"] = 320,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 624,
-										["n_min"] = 50,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 624,
-										["c_max"] = 0,
-										["id"] = "Deep Wound",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 11,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Shadow Bolt"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 85,
-										["targets"] = {
-											["Herod"] = 85,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 85,
-										["n_min"] = 85,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 85,
-										["c_max"] = 0,
-										["id"] = "Shadow Bolt",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 32,
-									},
-									["Thunder Clap"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 92,
-										["targets"] = {
-											["Scarlet Trainee"] = 368,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 368,
-										["n_min"] = 92,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 368,
-										["c_max"] = 0,
-										["id"] = "Thunder Clap",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["!Melee"] = {
-										["c_amt"] = 20,
-										["b_amt"] = 0,
-										["c_dmg"] = 6503,
-										["g_amt"] = 0,
-										["n_max"] = 387,
-										["targets"] = {
-											["Herod"] = 5116,
-											["Scarlet Myrmidon"] = 5974,
-											["Scarlet Trainee"] = 1111,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 5698,
-										["n_min"] = 78,
-										["g_dmg"] = 0,
-										["counter"] = 52,
-										["total"] = 12201,
-										["c_max"] = 732,
-										["r_amt"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 166,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 31,
-										["spellschool"] = 1,
-										["MISS"] = 1,
-									},
-									["Fire Shield"] = {
-										["c_amt"] = 3,
-										["b_amt"] = 0,
-										["c_dmg"] = 225,
-										["g_amt"] = 0,
-										["n_max"] = 50,
-										["targets"] = {
-											["Herod"] = 125,
-											["Scarlet Myrmidon"] = 1325,
-											["Scarlet Trainee"] = 775,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 2000,
-										["n_min"] = 50,
-										["g_dmg"] = 0,
-										["counter"] = 44,
-										["total"] = 2225,
-										["c_max"] = 75,
-										["r_amt"] = 0,
-										["id"] = "Fire Shield",
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 40,
-										["m_crit"] = 0,
-										["c_min"] = 75,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
 										["RESIST"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 4,
-									},
-									["Heroic Strike"] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 2512,
-										["g_amt"] = 0,
-										["n_max"] = 586,
-										["targets"] = {
-											["Herod"] = 3657,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1145,
-										["n_min"] = 559,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 3657,
-										["c_max"] = 1269,
-										["id"] = "Heroic Strike",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
 										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 1243,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
 										["a_dmg"] = 0,
-										["spellschool"] = 1,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["total"] = 31967.003251,
-							["last_event"] = 1595444711,
+							["last_event"] = 1595618750,
+							["last_dps"] = 0,
+							["end_time"] = 1595618763,
 							["custom"] = 0,
-							["colocacao"] = 1,
 							["tipo"] = 1,
-							["friendlyfire"] = {
-								["Kamenac"] = {
-									["total"] = 1,
-									["spells"] = {
-										["Hand of Justice"] = 1,
-									},
-								},
-							},
-							["start_time"] = 1595444654,
-							["serial"] = "Player-4465-010DF944",
-							["nome"] = "Kamenac",
-						}, -- [2]
+							["on_hold"] = false,
+							["start_time"] = 1595618734,
+							["serial"] = "Creature-0-4468-189-3060-4294-00031B34F3",
+							["dps_started"] = false,
+						}, -- [4]
 						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008398,
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.008105,
 							["damage_from"] = {
 								["Kamenac"] = true,
 							},
 							["targets"] = {
-								["Kamenac"] = 1824,
-								["Vermin"] = 391,
+								["Kamenac"] = 156,
 							},
 							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["friendlyfire"] = {
 							},
 							["friendlyfire_total"] = 0,
-							["nome"] = "Scarlet Myrmidon",
-							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 2215.008398,
-							["delay"] = 1595444703,
+							["total_without_pet"] = 156.008105,
+							["delay"] = 1595618750,
+							["fight_component"] = true,
+							["total"] = 156.008105,
 							["monster"] = true,
-							["total"] = 2215.008398,
-							["end_time"] = 1595444720,
-							["damage_taken"] = 17498.008398,
-							["boss_fight_component"] = true,
+							["damage_taken"] = 359.008105,
+							["nome"] = "Scarlet Defender",
 							["spells"] = {
 								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 137,
-										["targets"] = {
-											["Kamenac"] = 1824,
-											["Vermin"] = 391,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 2215,
-										["MISS"] = 34,
-										["n_min"] = 14,
-										["g_dmg"] = 0,
-										["counter"] = 124,
-										["r_amt"] = 0,
-										["total"] = 2215,
-										["c_max"] = 0,
-										["b_dmg"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 19,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["spellschool"] = 1,
-										["n_amt"] = 65,
-										["a_amt"] = 0,
-										["DODGE"] = 6,
-									},
-									["Enrage"] = {
+									["Defensive Stance"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
@@ -9780,13 +12205,72 @@ _detalhes_database = {
 										["counter"] = 0,
 										["total"] = 0,
 										["c_max"] = 0,
-										["id"] = "Enrage",
+										["id"] = "Defensive Stance",
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
-										["successful_casted"] = 3,
+										["c_min"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 35,
+										["targets"] = {
+											["Kamenac"] = 156,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 156,
+										["DODGE"] = 2,
+										["n_min"] = 27,
+										["g_dmg"] = 0,
+										["counter"] = 11,
+										["total"] = 156,
+										["r_amt"] = 0,
+										["c_max"] = 0,
+										["b_dmg"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 2,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["spellschool"] = 1,
+										["n_amt"] = 5,
+										["MISS"] = 2,
+										["a_amt"] = 0,
+									},
+									["Improved Blocking"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = "Improved Blocking",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 2,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
 										["a_amt"] = 0,
@@ -9795,310 +12279,153 @@ _detalhes_database = {
 								},
 								["tipo"] = 2,
 							},
-							["tipo"] = 1,
+							["last_event"] = 1595618750,
 							["last_dps"] = 0,
-							["friendlyfire"] = {
-							},
+							["end_time"] = 1595618763,
 							["custom"] = 0,
-							["last_event"] = 1595444703,
-							["on_hold"] = false,
-							["start_time"] = 1595444686,
-							["serial"] = "Creature-0-4468-189-24138-4295-0001988DAE",
-							["dps_started"] = false,
-						}, -- [3]
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.007828,
-							["damage_from"] = {
-								["Scarlet Myrmidon"] = true,
-								["Scarlet Trainee"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["classe"] = "WARRIOR",
-							["spec"] = 71,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.007828,
-							["nome"] = "Vermin",
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 0.007828,
-							["damage_taken"] = 730.007828,
-							["end_time"] = 1595444720,
-							["boss_fight_component"] = true,
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["last_event"] = 0,
-							["custom"] = 0,
-							["last_dps"] = 0.000130208419967052,
-							["colocacao"] = 2,
 							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1595444720,
-							["serial"] = "Player-4465-00E5831F",
 							["on_hold"] = false,
-						}, -- [4]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.002016,
-							["damage_from"] = {
-								["Kamenac"] = true,
-							},
-							["targets"] = {
-								["Kamenac"] = 193,
-								["Vermin"] = 339,
-							},
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["nome"] = "Scarlet Trainee",
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 532.002016,
-							["delay"] = 0,
-							["monster"] = true,
-							["total"] = 532.002016,
-							["end_time"] = 1595444720,
-							["damage_taken"] = 2254.002016,
-							["boss_fight_component"] = true,
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 52,
-										["g_amt"] = 0,
-										["n_max"] = 44,
-										["targets"] = {
-											["Kamenac"] = 193,
-											["Vermin"] = 339,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 480,
-										["n_min"] = 12,
-										["g_dmg"] = 0,
-										["counter"] = 25,
-										["total"] = 532,
-										["r_amt"] = 0,
-										["c_max"] = 52,
-										["spellschool"] = 1,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["c_min"] = 52,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["a_dmg"] = 0,
-										["n_amt"] = 21,
-										["MISS"] = 2,
-										["a_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1595444711,
-							["on_hold"] = false,
-							["start_time"] = 1595444706,
-							["serial"] = "Creature-0-4468-189-24138-6575-0000188DD3",
+							["start_time"] = 1595618738,
+							["serial"] = "Creature-0-4468-189-3060-4298-00009B34F3",
 							["dps_started"] = false,
 						}, -- [5]
 					},
 				}, -- [1]
 				{
 					["tipo"] = 3,
-					["combatId"] = 44,
+					["combatId"] = 6,
 					["_ActorTable"] = {
-						{
-							["flag_original"] = 1298,
-							["healing_from"] = {
-								["Kamenac"] = true,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 42.005881,
-							["total_without_pet"] = 449.005881,
-							["total"] = 449.005881,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-010DF944",
-							["totalabsorb"] = 0.005881,
-							["last_hps"] = 10.0534208275466,
-							["targets"] = {
-								["Kamenac"] = 491,
-							},
-							["totalover_without_pet"] = 0.005881,
-							["healing_taken"] = 449.005881,
-							["end_time"] = 1595444720,
-							["targets_overheal"] = {
-								["Kamenac"] = 42,
-							},
-							["last_event"] = 1595444699,
-							["nome"] = "Kamenac",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Holy Strength"] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-											["Kamenac"] = 42,
-										},
-										["n_max"] = 117,
-										["targets"] = {
-											["Kamenac"] = 449,
-										},
-										["n_min"] = 57,
-										["counter"] = 5,
-										["overheal"] = 42,
-										["total"] = 449,
-										["c_max"] = 0,
-										["id"] = "Holy Strength",
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["m_healed"] = 0,
-										["c_min"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 5,
-										["n_curado"] = 449,
-										["m_amt"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["classe"] = "WARRIOR",
-							["totaldenied"] = 0.005881,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["spec"] = 72,
-							["start_time"] = 1595444718,
-							["delay"] = 1595444699,
-							["boss_fight_component"] = true,
-						}, -- [1]
 					},
 				}, -- [2]
 				{
 					["tipo"] = 7,
-					["combatId"] = 44,
+					["combatId"] = 6,
 					["_ActorTable"] = {
 						{
-							["received"] = 54.003084,
-							["resource"] = 0.003084,
+							["received"] = 45.001671,
+							["resource"] = 0.001671,
 							["targets"] = {
-								["Kamenac"] = 54,
+								["Kamenac"] = 45,
 							},
 							["pets"] = {
 							},
 							["powertype"] = 1,
 							["classe"] = "WARRIOR",
-							["passiveover"] = 0.003084,
-							["total"] = 54.003084,
+							["passiveover"] = 0.001671,
+							["fight_component"] = true,
+							["total"] = 45.001671,
 							["nome"] = "Kamenac",
 							["spells"] = {
 								["_ActorTable"] = {
 									["Unbridled Wrath"] = {
-										["total"] = 34,
+										["total"] = 10,
 										["id"] = "Unbridled Wrath",
 										["totalover"] = 0,
 										["targets"] = {
-											["Kamenac"] = 34,
+											["Kamenac"] = 10,
 										},
-										["counter"] = 34,
+										["counter"] = 10,
+									},
+									["Charge"] = {
+										["total"] = 21,
+										["id"] = "Charge",
+										["totalover"] = 0,
+										["targets"] = {
+											["Kamenac"] = 21,
+										},
+										["counter"] = 1,
 									},
 									["Bloodrage"] = {
-										["total"] = 20,
+										["total"] = 14,
 										["id"] = "Bloodrage",
 										["totalover"] = 0,
 										["targets"] = {
-											["Kamenac"] = 20,
+											["Kamenac"] = 14,
 										},
-										["counter"] = 11,
+										["counter"] = 14,
 									},
 								},
 								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["totalover"] = 0.003084,
-							["flag_original"] = 1298,
+							["totalover"] = 0.001671,
+							["alternatepower"] = 0.001671,
+							["last_event"] = 1595618882,
 							["tipo"] = 3,
-							["last_event"] = 1595444707,
 							["spec"] = 72,
-							["alternatepower"] = 0.003084,
 							["serial"] = "Player-4465-010DF944",
-							["boss_fight_component"] = true,
+							["flag_original"] = 1298,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
 					["tipo"] = 9,
-					["combatId"] = 44,
+					["combatId"] = 6,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
+									["Charge Stun"] = {
+										["activedamt"] = -1,
+										["id"] = "Charge Stun",
+										["targets"] = {
+										},
+										["actived_at"] = 1595618717,
+										["uptime"] = 0,
+										["counter"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["appliedamt"] = 0,
+									},
 									["Demoralizing Shout"] = {
 										["counter"] = 0,
 										["actived"] = false,
-										["activedamt"] = 0,
+										["activedamt"] = 2,
 										["refreshamt"] = 0,
 										["id"] = "Demoralizing Shout",
-										["uptime"] = 30,
+										["uptime"] = 41,
 										["targets"] = {
 										},
-										["appliedamt"] = 5,
+										["appliedamt"] = 4,
 									},
 									["Sunder Armor"] = {
 										["counter"] = 0,
 										["actived"] = false,
-										["activedamt"] = -1,
+										["activedamt"] = 1,
 										["refreshamt"] = 6,
 										["id"] = "Sunder Armor",
-										["uptime"] = 58,
+										["uptime"] = 35,
 										["targets"] = {
 										},
-										["appliedamt"] = 4,
+										["appliedamt"] = 3,
 									},
 									["Deep Wound"] = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 0,
-										["refreshamt"] = 17,
+										["refreshamt"] = 5,
 										["id"] = "Deep Wound",
-										["uptime"] = 45,
+										["uptime"] = 31,
 										["targets"] = {
 										},
-										["appliedamt"] = 7,
+										["appliedamt"] = 3,
+									},
+									["Thunder Clap"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Thunder Clap",
+										["uptime"] = 30,
+										["targets"] = {
+										},
+										["appliedamt"] = 3,
 									},
 								},
 								["tipo"] = 9,
 							},
-							["buff_uptime"] = 115,
+							["buff_uptime"] = 63,
 							["classe"] = "WARRIOR",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
@@ -10107,23 +12434,36 @@ _detalhes_database = {
 										["id"] = "Battle Shout",
 										["targets"] = {
 										},
-										["actived_at"] = 1595444654,
+										["actived_at"] = 1595618751,
+										["uptime"] = 34,
+										["counter"] = 0,
+										["refreshamt"] = 1,
+										["actived"] = true,
+										["appliedamt"] = 1,
+									},
+									["Elixir of the Giants"] = {
+										["activedamt"] = 1,
+										["id"] = "Elixir of the Giants",
+										["targets"] = {
+										},
+										["actived_at"] = 1595618717,
 										["uptime"] = 0,
 										["counter"] = 0,
 										["refreshamt"] = 0,
 										["actived"] = true,
 										["appliedamt"] = 1,
 									},
-									["Holy Strength"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 4,
-										["refreshamt"] = 1,
-										["id"] = "Holy Strength",
-										["uptime"] = 17,
+									["Elixir of the Mongoose"] = {
+										["activedamt"] = 1,
+										["id"] = "Elixir of the Mongoose",
 										["targets"] = {
 										},
-										["appliedamt"] = 4,
+										["actived_at"] = 1595618717,
+										["uptime"] = 0,
+										["counter"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["appliedamt"] = 1,
 									},
 									["Bloodrage"] = {
 										["counter"] = 0,
@@ -10131,86 +12471,39 @@ _detalhes_database = {
 										["activedamt"] = 1,
 										["refreshamt"] = 0,
 										["id"] = "Bloodrage",
-										["uptime"] = 10,
+										["uptime"] = 9,
 										["targets"] = {
 										},
 										["appliedamt"] = 1,
 									},
-									["Fire Shield"] = {
-										["activedamt"] = 2,
-										["id"] = "Fire Shield",
-										["targets"] = {
-										},
-										["actived_at"] = 1595444704,
-										["uptime"] = 27,
-										["counter"] = 0,
-										["refreshamt"] = 1,
-										["actived"] = true,
-										["appliedamt"] = 2,
-									},
-									["Elixir of the Mongoose"] = {
-										["activedamt"] = 1,
-										["id"] = "Elixir of the Mongoose",
-										["targets"] = {
-										},
-										["actived_at"] = 1595444654,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-									["Berserker Rage"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 2,
-										["refreshamt"] = 0,
-										["id"] = "Berserker Rage",
-										["uptime"] = 20,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-									["Flurry"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 6,
-										["refreshamt"] = 21,
-										["id"] = "Flurry",
-										["uptime"] = 41,
-										["targets"] = {
-										},
-										["appliedamt"] = 6,
-									},
-									["Berserker Stance"] = {
+									["Battle Stance"] = {
 										["counter"] = 0,
 										["actived"] = false,
 										["activedamt"] = 0,
 										["refreshamt"] = 0,
-										["id"] = "Berserker Stance",
+										["id"] = "Battle Stance",
 										["uptime"] = 0,
 										["targets"] = {
 										},
 										["appliedamt"] = 0,
 									},
-									["Elixir of the Giants"] = {
-										["activedamt"] = 1,
-										["id"] = "Elixir of the Giants",
-										["targets"] = {
-										},
-										["actived_at"] = 1595444654,
-										["uptime"] = 0,
+									["Flurry"] = {
 										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-									["Battle Stance"] = {
-										["activedamt"] = 1,
-										["id"] = "Battle Stance",
+										["actived"] = false,
+										["activedamt"] = 4,
+										["refreshamt"] = 5,
+										["id"] = "Flurry",
+										["uptime"] = 20,
 										["targets"] = {
 										},
-										["actived_at"] = 1595444706,
+										["appliedamt"] = 4,
+									},
+									["Berserker Stance"] = {
+										["activedamt"] = 1,
+										["id"] = "Berserker Stance",
+										["targets"] = {
+										},
+										["actived_at"] = 1595618733,
 										["uptime"] = 0,
 										["counter"] = 0,
 										["refreshamt"] = 0,
@@ -10220,50 +12513,107 @@ _detalhes_database = {
 								},
 								["tipo"] = 9,
 							},
-							["debuff_uptime"] = 133,
+							["fight_component"] = true,
+							["debuff_uptime"] = 137,
 							["buff_uptime_targets"] = {
 							},
 							["spec"] = 72,
 							["grupo"] = true,
 							["spell_cast"] = {
-								["Cleave"] = 11,
-								["Demoralizing Shout"] = 1,
-								["Whirlwind"] = 2,
-								["Fire Shield"] = 3,
-								["Berserker Rage"] = 2,
+								["Battle Shout"] = 1,
 								["Thunder Clap"] = 1,
-								["Bloodrage"] = 1,
-								["Battle Stance"] = 1,
-								["Sunder Armor"] = 12,
-								["Heroic Strike"] = 4,
+								["Cleave"] = 2,
+								["Demoralizing Shout"] = 1,
+								["Berserker Stance"] = 1,
+								["Sunder Armor"] = 10,
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["last_event"] = 1595618751,
 							["tipo"] = 4,
-							["last_event"] = 1595444707,
+							["nome"] = "Kamenac",
 							["pets"] = {
 							},
-							["nome"] = "Kamenac",
 							["serial"] = "Player-4465-010DF944",
-							["boss_fight_component"] = true,
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 2632,
 							["last_event"] = 0,
-							["nome"] = "Herod",
+							["nome"] = "Scarlet Sorcerer",
 							["pets"] = {
 							},
 							["classe"] = "UNKNOW",
 							["spell_cast"] = {
-								["Enrage"] = 1,
-								["Whirlwind"] = 1,
-								["Cleave"] = 1,
+								["Frostbolt"] = 6,
+								["Slow"] = 1,
 							},
 							["tipo"] = 4,
 							["monster"] = true,
-							["serial"] = "Creature-0-4468-189-24138-3975-0000188A0B",
-							["boss_fight_component"] = true,
+							["serial"] = "Creature-0-4468-189-3060-4294-00001B34F3",
+							["fight_component"] = true,
 						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["last_event"] = 0,
+							["nome"] = "Scarlet Defender",
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["spell_cast"] = {
+								["Defensive Stance"] = 1,
+								["Improved Blocking"] = 2,
+							},
+							["tipo"] = 4,
+							["monster"] = true,
+							["serial"] = "Creature-0-4468-189-3060-4298-00009B34F3",
+							["fight_component"] = true,
+						}, -- [3]
+						{
+							["flag_original"] = 1297,
+							["nome"] = "Vermin",
+							["spec"] = 71,
+							["grupo"] = true,
+							["tipo"] = 4,
+							["buff_uptime"] = 0,
+							["buff_uptime_targets"] = {
+							},
+							["spell_cast"] = {
+								["Defensive Stance"] = 1,
+							},
+							["classe"] = "WARRIOR",
+							["pets"] = {
+							},
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Battle Stance"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = "Battle Stance",
+										["uptime"] = 0,
+										["targets"] = {
+										},
+										["appliedamt"] = 0,
+									},
+									["Defensive Stance"] = {
+										["activedamt"] = 2,
+										["id"] = "Defensive Stance",
+										["targets"] = {
+										},
+										["actived_at"] = 1595618751,
+										["uptime"] = 0,
+										["counter"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = true,
+										["appliedamt"] = 2,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["serial"] = "Player-4465-00E5831F",
+							["last_event"] = 1595618751,
+						}, -- [4]
 						{
 							["flag_original"] = 2632,
 							["last_event"] = 0,
@@ -10272,51 +12622,18 @@ _detalhes_database = {
 							},
 							["classe"] = "UNKNOW",
 							["spell_cast"] = {
-								["Enrage"] = 3,
+								["Enrage"] = 1,
 							},
 							["tipo"] = 4,
 							["monster"] = true,
-							["serial"] = "Creature-0-4468-189-24138-4295-0001188DAE",
-							["boss_fight_component"] = true,
-						}, -- [3]
-						{
-							["flag_original"] = 1297,
-							["boss_fight_component"] = true,
-							["spec"] = 71,
-							["grupo"] = true,
-							["nome"] = "Vermin",
-							["pets"] = {
-							},
-							["buff_uptime_targets"] = {
-							},
-							["buff_uptime"] = 0,
-							["classe"] = "WARRIOR",
-							["tipo"] = 4,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Defensive Stance"] = {
-										["activedamt"] = 1,
-										["id"] = "Defensive Stance",
-										["targets"] = {
-										},
-										["actived_at"] = 1595444711,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-00E5831F",
-							["last_event"] = 1595444711,
-						}, -- [4]
+							["serial"] = "Creature-0-4468-189-3060-4295-00041B34F4",
+							["fight_component"] = true,
+						}, -- [5]
 					},
 				}, -- [4]
 				{
 					["tipo"] = 2,
-					["combatId"] = 44,
+					["combatId"] = 6,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -10324,18 +12641,28 @@ _detalhes_database = {
 					["Kamenac"] = true,
 					["Vermin"] = true,
 				},
-				["CombatStartedAt"] = 100036.962,
-				["tempo_start"] = 1595444654,
+				["CombatStartedAt"] = 273984.251,
+				["tempo_start"] = 1595618717,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["TimeData"] = {
+				},
+				["enemy"] = "Scarlet Myrmidon",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["last_events_tables"] = {
 					{
 						{
 							{
 								true, -- [1]
 								"!Melee", -- [2]
-								40, -- [3]
-								1595444706.44, -- [4]
-								305, -- [5]
-								"Scarlet Trainee", -- [6]
+								142, -- [3]
+								1595618735.081, -- [4]
+								724, -- [5]
+								"Scarlet Myrmidon", -- [6]
 								nil, -- [7]
 								1, -- [8]
 								false, -- [9]
@@ -10344,10 +12671,10 @@ _detalhes_database = {
 							{
 								true, -- [1]
 								"!Melee", -- [2]
-								44, -- [3]
-								1595444706.46, -- [4]
-								305, -- [5]
-								"Scarlet Trainee", -- [6]
+								67, -- [3]
+								1595618735.423, -- [4]
+								724, -- [5]
+								"Scarlet Myrmidon", -- [6]
 								nil, -- [7]
 								1, -- [8]
 								false, -- [9]
@@ -10356,10 +12683,10 @@ _detalhes_database = {
 							{
 								true, -- [1]
 								"!Melee", -- [2]
-								40, -- [3]
-								1595444706.975, -- [4]
-								305, -- [5]
-								"Scarlet Trainee", -- [6]
+								53, -- [3]
+								1595618737.139, -- [4]
+								515, -- [5]
+								"Scarlet Myrmidon", -- [6]
 								nil, -- [7]
 								1, -- [8]
 								false, -- [9]
@@ -10368,10 +12695,10 @@ _detalhes_database = {
 							{
 								true, -- [1]
 								"!Melee", -- [2]
-								43, -- [3]
-								1595444706.975, -- [4]
-								305, -- [5]
-								"Scarlet Trainee", -- [6]
+								63, -- [3]
+								1595618738.838, -- [4]
+								462, -- [5]
+								"Scarlet Myrmidon", -- [6]
 								nil, -- [7]
 								1, -- [8]
 								false, -- [9]
@@ -10380,10 +12707,10 @@ _detalhes_database = {
 							{
 								true, -- [1]
 								"!Melee", -- [2]
-								38, -- [3]
-								1595444707.625, -- [4]
-								221, -- [5]
-								"Scarlet Trainee", -- [6]
+								136, -- [3]
+								1595618738.994, -- [4]
+								462, -- [5]
+								"Scarlet Myrmidon", -- [6]
 								nil, -- [7]
 								1, -- [8]
 								false, -- [9]
@@ -10392,10 +12719,10 @@ _detalhes_database = {
 							{
 								true, -- [1]
 								"!Melee", -- [2]
-								43, -- [3]
-								1595444707.625, -- [4]
-								221, -- [5]
-								"Scarlet Trainee", -- [6]
+								126, -- [3]
+								1595618740.519, -- [4]
+								263, -- [5]
+								"Scarlet Myrmidon", -- [6]
 								nil, -- [7]
 								1, -- [8]
 								false, -- [9]
@@ -10404,10 +12731,10 @@ _detalhes_database = {
 							{
 								true, -- [1]
 								"!Melee", -- [2]
-								52, -- [3]
-								1595444707.625, -- [4]
-								221, -- [5]
-								"Scarlet Trainee", -- [6]
+								54, -- [3]
+								1595618740.53, -- [4]
+								263, -- [5]
+								"Scarlet Myrmidon", -- [6]
 								nil, -- [7]
 								1, -- [8]
 								false, -- [9]
@@ -10416,15 +12743,27 @@ _detalhes_database = {
 							{
 								true, -- [1]
 								"!Melee", -- [2]
-								39, -- [3]
-								1595444707.625, -- [4]
-								221, -- [5]
-								"Scarlet Trainee", -- [6]
+								125, -- [3]
+								1595618742.226, -- [4]
+								83, -- [5]
+								"Scarlet Myrmidon", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								42, -- [10]
+							}, -- [8]
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								53, -- [3]
+								1595618742.25, -- [4]
+								83, -- [5]
+								"Scarlet Myrmidon", -- [6]
 								nil, -- [7]
 								1, -- [8]
 								false, -- [9]
 								-1, -- [10]
-							}, -- [8]
+							}, -- [9]
 							{
 								3, -- [1]
 								0, -- [2]
@@ -10432,27 +12771,22 @@ _detalhes_database = {
 								0, -- [4]
 								0, -- [5]
 								"Vermin", -- [6]
-							}, -- [9]
+							}, -- [10]
 						}, -- [1]
-						1595444707.966, -- [2]
+						1595618742.69, -- [2]
 						"Vermin", -- [3]
 						"WARRIOR", -- [4]
-						696, -- [5]
-						"0m 53s", -- [6]
+						724, -- [5]
+						"0m 25s", -- [6]
 						["dead"] = true,
-						["dead_at"] = 53.5100000000093,
+						["dead_at"] = 25.3099999999977,
 					}, -- [1]
 				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
 				["totals"] = {
-					36120, -- [1]
-					449, -- [2]
+					10927, -- [1]
+					0, -- [2]
 					{
-						54, -- [1]
+						45, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
 						[6] = 0,
@@ -10471,1311 +12805,51 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
 				},
-				["totals_grupo"] = {
-					31968, -- [1]
-					449, -- [2]
-					{
-						54, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 1,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
+				["TotalElapsedCombatTime"] = 12.5929999999935,
+				["combat_counter"] = 4951,
 				["frags_need_refresh"] = true,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Kamenac"] = 9393.002074,
+							["Vermin"] = 0.003529,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["end_time"] = 274008.721,
+				["player_last_events"] = {
+				},
 				["instance_type"] = "none",
+				["CombatEndedAt"] = 273996.844,
+				["data_inicio"] = "21:25:17",
 				["hasSaved"] = true,
-				["data_fim"] = "21:05:20",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Herod",
-				["TotalElapsedCombatTime"] = 51.4900000000052,
-				["CombatEndedAt"] = 99956.373,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Kamenac"] = 31967.003251,
-							["Vermin"] = 0.007828,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Kamenac"] = 449.005881,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 99962.982,
-				["combat_id"] = 44,
-				["combat_counter"] = 4793,
-				["data_inicio"] = "21:04:14",
-				["frags"] = {
-					["Herod"] = 1,
-					["Scarlet Myrmidon"] = 4,
-					["Scarlet Trainee"] = 6,
-				},
-				["is_boss"] = {
-					["diff_string"] = "normal",
-					["index"] = 1,
-					["zone"] = "Eastern Kingdoms",
-					["encounter"] = "Herod",
-					["mapid"] = 0,
-					["try_number"] = 2,
-					["name"] = "Herod",
-					["diff"] = 16,
-					["ej_instance_id"] = 0,
-					["id"] = 0,
-				},
-				["TimeData"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["player_last_events"] = {
-				},
-				["start_time"] = 99902.863,
-				["contra"] = "Herod",
 				["spells_cast_timeline"] = {
 				},
-			}, -- [13]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 21,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.001502,
-							["damage_from"] = {
-								["Kamenac"] = true,
-								["Herod"] = true,
-								["Scarlet Myrmidon"] = true,
-							},
-							["targets"] = {
-								["Herod"] = 13470,
-								["Scarlet Myrmidon"] = 17622,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["spells"] = {
-								["_ActorTable"] = {
-									["Hamstring"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 91,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Myrmidon"] = 91,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 91,
-										["c_max"] = 91,
-										["id"] = "Hamstring",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 91,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Cleave"] = {
-										["c_amt"] = 6,
-										["b_amt"] = 0,
-										["c_dmg"] = 6231,
-										["g_amt"] = 0,
-										["n_max"] = 534,
-										["targets"] = {
-											["Scarlet Myrmidon"] = 7956,
-											["Herod"] = 2768,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 4493,
-										["n_min"] = 354,
-										["g_dmg"] = 0,
-										["counter"] = 16,
-										["total"] = 10724,
-										["c_max"] = 1158,
-										["id"] = "Cleave",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 855,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 10,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Execute"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 2161,
-										["g_amt"] = 0,
-										["n_max"] = 926,
-										["targets"] = {
-											["Scarlet Myrmidon"] = 926,
-											["Herod"] = 2161,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 926,
-										["n_min"] = 926,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 3087,
-										["c_max"] = 2161,
-										["id"] = "Execute",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 2161,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Whirlwind"] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 1558,
-										["g_amt"] = 0,
-										["n_max"] = 362,
-										["targets"] = {
-											["Scarlet Myrmidon"] = 2813,
-											["Herod"] = 362,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1617,
-										["n_min"] = 298,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 3175,
-										["c_max"] = 784,
-										["id"] = "Whirlwind",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 774,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Deep Wound"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 86,
-										["targets"] = {
-											["Herod"] = 595,
-											["Scarlet Myrmidon"] = 425,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1020,
-										["n_min"] = 54,
-										["g_dmg"] = 0,
-										["counter"] = 14,
-										["total"] = 1020,
-										["c_max"] = 0,
-										["id"] = "Deep Wound",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 14,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Shadow Bolt"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 75,
-										["targets"] = {
-											["Herod"] = 75,
-											["Scarlet Myrmidon"] = 65,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 140,
-										["n_min"] = 65,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 140,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = "Shadow Bolt",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 2,
-										["spellschool"] = 32,
-										["IMMUNE"] = 1,
-									},
-									["Thunder Clap"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 76,
-										["targets"] = {
-											["Herod"] = 76,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 76,
-										["n_min"] = 76,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 76,
-										["c_max"] = 0,
-										["id"] = "Thunder Clap",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["!Melee"] = {
-										["c_amt"] = 18,
-										["b_amt"] = 0,
-										["c_dmg"] = 5728,
-										["g_amt"] = 0,
-										["n_max"] = 432,
-										["targets"] = {
-											["Herod"] = 6427,
-											["Scarlet Myrmidon"] = 4446,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 5145,
-										["n_min"] = 74,
-										["g_dmg"] = 0,
-										["counter"] = 48,
-										["total"] = 10873,
-										["c_max"] = 780,
-										["r_amt"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 172,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 28,
-										["spellschool"] = 1,
-										["MISS"] = 2,
-									},
-									["Fire Shield"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 50,
-										["targets"] = {
-											["Scarlet Myrmidon"] = 900,
-											["Herod"] = 100,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1000,
-										["n_min"] = 50,
-										["g_dmg"] = 0,
-										["counter"] = 20,
-										["total"] = 1000,
-										["c_max"] = 0,
-										["id"] = "Fire Shield",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 20,
-										["a_dmg"] = 0,
-										["spellschool"] = 4,
-									},
-									["Heroic Strike"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 475,
-										["targets"] = {
-											["Herod"] = 906,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 906,
-										["n_min"] = 431,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 906,
-										["c_max"] = 0,
-										["id"] = "Heroic Strike",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["classe"] = "WARRIOR",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 31092.001502,
-							["last_dps"] = 603.294749442018,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 31092.001502,
-							["friendlyfire_total"] = 1,
-							["damage_taken"] = 3554.001502,
-							["boss_fight_component"] = true,
-							["spec"] = 72,
-							["grupo"] = true,
-							["end_time"] = 1595443569,
-							["last_event"] = 1595443566,
-							["custom"] = 0,
-							["colocacao"] = 1,
-							["tipo"] = 1,
-							["friendlyfire"] = {
-								["Kamenac"] = {
-									["total"] = 1,
-									["spells"] = {
-										["Hand of Justice"] = 1,
-									},
-								},
-							},
-							["start_time"] = 1595443515,
-							["serial"] = "Player-4465-010DF944",
-							["nome"] = "Kamenac",
-						}, -- [1]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.00249,
-							["damage_from"] = {
-								["Kamenac"] = true,
-							},
-							["targets"] = {
-								["Kamenac"] = 1659,
-							},
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["boss_fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1659.00249,
-							["delay"] = 1595443547,
-							["monster"] = true,
-							["total"] = 1659.00249,
-							["end_time"] = 1595443569,
-							["damage_taken"] = 13470.00249,
-							["nome"] = "Herod",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Enrage"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Enrage",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 334,
-										["targets"] = {
-											["Kamenac"] = 1462,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1462,
-										["g_dmg"] = 0,
-										["n_min"] = 106,
-										["a_amt"] = 0,
-										["counter"] = 12,
-										["r_amt"] = 0,
-										["total"] = 1462,
-										["c_max"] = 0,
-										["b_dmg"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["spellschool"] = 1,
-										["n_amt"] = 8,
-										["DODGE"] = 2,
-										["MISS"] = 1,
-									},
-									["Cleave"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Kamenac"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Cleave",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["DODGE"] = 1,
-									},
-									["Whirlwind"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 197,
-										["targets"] = {
-											["Kamenac"] = 197,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 197,
-										["n_min"] = 197,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 197,
-										["c_max"] = 0,
-										["id"] = "Whirlwind",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 3,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
-									},
-									["Rushing Charge"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Rushing Charge",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1595443566,
-							["on_hold"] = false,
-							["start_time"] = 1595443533,
-							["serial"] = "Creature-0-4468-189-23554-3975-00001885A9",
-							["dps_started"] = false,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.003261,
-							["damage_from"] = {
-								["Kamenac"] = true,
-							},
-							["targets"] = {
-								["Kamenac"] = 1894,
-								["Vermin"] = 409,
-							},
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["nome"] = "Scarlet Myrmidon",
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 2303.003261,
-							["delay"] = 1595443559,
-							["monster"] = true,
-							["total"] = 2303.003261,
-							["end_time"] = 1595443569,
-							["damage_taken"] = 17622.003261,
-							["boss_fight_component"] = true,
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 177,
-										["g_amt"] = 0,
-										["n_max"] = 123,
-										["targets"] = {
-											["Kamenac"] = 1894,
-											["Vermin"] = 409,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 2126,
-										["g_dmg"] = 0,
-										["n_min"] = 19,
-										["MISS"] = 26,
-										["counter"] = 87,
-										["r_amt"] = 0,
-										["total"] = 2303,
-										["c_max"] = 177,
-										["b_dmg"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["c_min"] = 177,
-										["m_crit"] = 0,
-										["PARRY"] = 6,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["spellschool"] = 1,
-										["n_amt"] = 41,
-										["DODGE"] = 13,
-										["a_amt"] = 0,
-									},
-									["Enrage"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Enrage",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 3,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1595443559,
-							["on_hold"] = false,
-							["start_time"] = 1595443540,
-							["serial"] = "Creature-0-4468-189-23554-4295-000198893A",
-							["dps_started"] = false,
-						}, -- [3]
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.004233,
-							["damage_from"] = {
-								["Scarlet Myrmidon"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["classe"] = "WARRIOR",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.004233,
-							["boss_fight_component"] = true,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1595443569,
-							["damage_taken"] = 409.004233,
-							["total"] = 0.004233,
-							["nome"] = "Vermin",
-							["spec"] = 71,
-							["grupo"] = true,
-							["tipo"] = 1,
-							["custom"] = 0,
-							["last_dps"] = 8.213516502705010e-05,
-							["colocacao"] = 2,
-							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1595443569,
-							["serial"] = "Player-4465-00E5831F",
-							["on_hold"] = false,
-						}, -- [4]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 21,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1298,
-							["healing_from"] = {
-								["Kamenac"] = true,
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.006978,
-							["total_without_pet"] = 273.006978,
-							["total"] = 273.006978,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-010DF944",
-							["totalabsorb"] = 0.006978,
-							["last_hps"] = 6.35505896319709,
-							["targets"] = {
-								["Kamenac"] = 273,
-							},
-							["totalover_without_pet"] = 0.006978,
-							["healing_taken"] = 273.006978,
-							["end_time"] = 1595443569,
-							["targets_overheal"] = {
-							},
-							["last_event"] = 1595443558,
-							["nome"] = "Kamenac",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Holy Strength"] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 117,
-										["targets"] = {
-											["Kamenac"] = 273,
-										},
-										["n_min"] = 75,
-										["counter"] = 3,
-										["overheal"] = 0,
-										["total"] = 273,
-										["c_max"] = 0,
-										["id"] = "Holy Strength",
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["m_healed"] = 0,
-										["c_min"] = 0,
-										["totaldenied"] = 0,
-										["n_amt"] = 3,
-										["n_curado"] = 273,
-										["m_amt"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["classe"] = "WARRIOR",
-							["totaldenied"] = 0.006978,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["spec"] = 72,
-							["start_time"] = 1595443561,
-							["delay"] = 1595443558,
-							["boss_fight_component"] = true,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 21,
-					["_ActorTable"] = {
-						{
-							["received"] = 103.5049,
-							["resource"] = 0.0049,
-							["targets"] = {
-								["Kamenac"] = 103.5,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 1,
-							["classe"] = "WARRIOR",
-							["passiveover"] = 0.0049,
-							["total"] = 103.5049,
-							["nome"] = "Kamenac",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Unbridled Wrath"] = {
-										["total"] = 30,
-										["id"] = "Unbridled Wrath",
-										["totalover"] = 0,
-										["targets"] = {
-											["Kamenac"] = 30,
-										},
-										["counter"] = 30,
-									},
-									["Mighty Rage"] = {
-										["total"] = 60.5,
-										["id"] = "Mighty Rage",
-										["totalover"] = 0,
-										["targets"] = {
-											["Kamenac"] = 60.5,
-										},
-										["counter"] = 1,
-									},
-									["Bloodrage"] = {
-										["total"] = 13,
-										["id"] = "Bloodrage",
-										["totalover"] = 0,
-										["targets"] = {
-											["Kamenac"] = 13,
-										},
-										["counter"] = 4,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["totalover"] = 0.0049,
-							["flag_original"] = 1298,
-							["tipo"] = 3,
-							["last_event"] = 1595443583,
-							["spec"] = 72,
-							["alternatepower"] = 0.0049,
-							["serial"] = "Player-4465-010DF944",
-							["boss_fight_component"] = true,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 21,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Thunder Clap"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = "Thunder Clap",
-										["uptime"] = 30,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Hamstring"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = "Hamstring",
-										["uptime"] = 2,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Recently Bandaged"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Recently Bandaged",
-										["uptime"] = 0,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Demoralizing Shout"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = "Demoralizing Shout",
-										["uptime"] = 36,
-										["targets"] = {
-										},
-										["appliedamt"] = 3,
-									},
-									["Sunder Armor"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 6,
-										["id"] = "Sunder Armor",
-										["uptime"] = 47,
-										["targets"] = {
-										},
-										["appliedamt"] = 3,
-									},
-									["Deep Wound"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 15,
-										["id"] = "Deep Wound",
-										["uptime"] = 41,
-										["targets"] = {
-										},
-										["appliedamt"] = 8,
-									},
-									["Death Wish"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = "Death Wish",
-										["uptime"] = 30,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 284,
-							["classe"] = "WARRIOR",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Battle Shout"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 1,
-										["id"] = "Battle Shout",
-										["uptime"] = 54,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Mighty Rage"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Mighty Rage",
-										["uptime"] = 20,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Holy Strength"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 2,
-										["refreshamt"] = 1,
-										["id"] = "Holy Strength",
-										["uptime"] = 33,
-										["targets"] = {
-										},
-										["appliedamt"] = 2,
-									},
-									["Fire Shield"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Fire Shield",
-										["uptime"] = 15,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Elixir of the Mongoose"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Elixir of the Mongoose",
-										["uptime"] = 54,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Elixir of the Giants"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Elixir of the Giants",
-										["uptime"] = 54,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Berserker Stance"] = {
-										["activedamt"] = 1,
-										["id"] = "Berserker Stance",
-										["targets"] = {
-										},
-										["actived_at"] = 1595443515,
-										["uptime"] = 0,
-										["counter"] = 0,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["appliedamt"] = 1,
-									},
-									["Berserking"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Berserking",
-										["uptime"] = 10,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Flurry"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 6,
-										["refreshamt"] = 22,
-										["id"] = "Flurry",
-										["uptime"] = 34,
-										["targets"] = {
-										},
-										["appliedamt"] = 6,
-									},
-									["Battle Stance"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = "Battle Stance",
-										["uptime"] = 0,
-										["targets"] = {
-										},
-										["appliedamt"] = 0,
-									},
-									["Berserker Rage"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Berserker Rage",
-										["uptime"] = 10,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["First Aid"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "First Aid",
-										["uptime"] = 0,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 186,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 72,
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Battle Shout"] = 1,
-								["Mighty Rage"] = 1,
-								["Cleave"] = 8,
-								["Demoralizing Shout"] = 2,
-								["Whirlwind"] = 2,
-								["Fire Shield"] = 1,
-								["First Aid"] = 1,
-								["Thunder Clap"] = 1,
-								["Berserker Rage"] = 1,
-								["Sunder Armor"] = 11,
-								["Berserking"] = 1,
-								["Death Wish"] = 1,
-								["Berserker Stance"] = 1,
-								["Hamstring"] = 1,
-								["Heroic Strike"] = 2,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["tipo"] = 4,
-							["last_event"] = 1595443569,
-							["pets"] = {
-							},
-							["nome"] = "Kamenac",
-							["serial"] = "Player-4465-010DF944",
-							["boss_fight_component"] = true,
-						}, -- [1]
-						{
-							["flag_original"] = 2632,
-							["last_event"] = 0,
-							["nome"] = "Herod",
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["spell_cast"] = {
-								["Enrage"] = 1,
-								["Whirlwind"] = 3,
-								["Rushing Charge"] = 1,
-								["Cleave"] = 1,
-							},
-							["tipo"] = 4,
-							["monster"] = true,
-							["serial"] = "Creature-0-4468-189-23554-3975-00001885A9",
-							["boss_fight_component"] = true,
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["last_event"] = 0,
-							["nome"] = "Scarlet Myrmidon",
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["spell_cast"] = {
-								["Enrage"] = 3,
-							},
-							["tipo"] = 4,
-							["monster"] = true,
-							["serial"] = "Creature-0-4468-189-23554-4295-000098893A",
-							["boss_fight_component"] = true,
-						}, -- [3]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 21,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Kamenac"] = true,
-					["Vermin"] = true,
-				},
-				["CombatStartedAt"] = 98830.013,
-				["overall_added"] = true,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 4770,
-				["totals"] = {
-					35054, -- [1]
-					273, -- [2]
-					{
-						103.5, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "party",
-				["hasSaved"] = true,
-				["data_fim"] = "20:46:09",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Herod",
-				["TotalElapsedCombatTime"] = 51.8289999999979,
-				["CombatEndedAt"] = 98817.041,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Kamenac"] = 31092.001502,
-							["Vermin"] = 0.004233,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Kamenac"] = 273.006978,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 98817.659,
-				["combat_id"] = 21,
-				["data_inicio"] = "20:45:15",
-				["tempo_start"] = 1595443515,
-				["contra"] = "Herod",
-				["spells_cast_timeline"] = {
-				},
-				["is_boss"] = {
-					["diff_string"] = "normal",
-					["index"] = 1,
-					["zone"] = "Scarlet Monastery",
-					["encounter"] = "Herod",
-					["mapid"] = 189,
-					["try_number"] = 1,
-					["name"] = "Herod",
-					["diff"] = 16,
-					["ej_instance_id"] = 0,
-					["id"] = 0,
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["data_fim"] = "21:26:03",
+				["combat_id"] = 6,
 				["CombatSkillCache"] = {
 				},
 				["totals_grupo"] = {
-					31093, -- [1]
-					273, -- [2]
+					9396, -- [1]
+					0, -- [2]
 					{
-						103.5, -- [1]
+						45, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
 						[6] = 0,
@@ -11784,7 +12858,7 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["dead"] = 0,
+						["dead"] = 1,
 						["cc_break"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
@@ -11792,14 +12866,13 @@ _detalhes_database = {
 						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
-				["start_time"] = 98763.658,
-				["TimeData"] = {
-				},
+				["start_time"] = 273971.534,
+				["contra"] = "Scarlet Myrmidon",
 				["frags"] = {
-					["Scarlet Myrmidon"] = 4,
-					["Herod"] = 1,
+					["Scarlet Sorcerer"] = 1,
+					["Scarlet Myrmidon"] = 1,
 				},
-			}, -- [14]
+			}, -- [11]
 		},
 	},
 	["last_version"] = "v1.13.5.211",
@@ -11899,7 +12972,7 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -459.987335205078,
+					["y"] = -459.987350463867,
 					["x"] = 420.47412109375,
 					["w"] = 179.999893188477,
 					["h"] = 178.307525634766,
@@ -11914,6 +12987,7 @@ _detalhes_database = {
 		}, -- [3]
 	},
 	["nick_tag_cache"] = {
+		["nextreset"] = 1596912566,
 		["Covert"] = {
 			"Covert", -- [1]
 			"Interface\\EncounterJournal\\UI-EJ-BOSS-Default", -- [2]
@@ -11936,6 +13010,29 @@ _detalhes_database = {
 				1, -- [3]
 			}, -- [6]
 			5, -- [7]
+		},
+		["Perion"] = {
+			"Perion", -- [1]
+			"Interface\\EncounterJournal\\UI-EJ-BOSS-Default", -- [2]
+			{
+				0, -- [1]
+				1, -- [2]
+				0, -- [3]
+				1, -- [4]
+			}, -- [3]
+			"Interface\\PetBattles\\Weather-ArcaneStorm", -- [4]
+			{
+				0.129609375, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0, -- [4]
+			}, -- [5]
+			{
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			}, -- [6]
+			10, -- [7]
 		},
 		["Augernwf"] = {
 			"Augernwf", -- [1]
@@ -11960,31 +13057,8 @@ _detalhes_database = {
 			}, -- [6]
 			8, -- [7]
 		},
-		["Nym"] = {
-			"Nym", -- [1]
-			"", -- [2]
-			{
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
-			}, -- [3]
-			"", -- [4]
-			{
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
-			}, -- [5]
-			{
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			}, -- [6]
-			1, -- [7]
-		},
-		["Aquaftw"] = {
-			"Aquaftw", -- [1]
+		["Zensius"] = {
+			"Zensius", -- [1]
 			"Interface\\EncounterJournal\\UI-EJ-BOSS-Default", -- [2]
 			{
 				0, -- [1]
@@ -12004,8 +13078,9 @@ _detalhes_database = {
 				1, -- [2]
 				1, -- [3]
 			}, -- [6]
-			3, -- [7]
+			5, -- [7]
 		},
+		["last_version"] = 11,
 		["Texnikos"] = {
 			"Texnikos", -- [1]
 			"Interface\\EncounterJournal\\UI-EJ-BOSS-High Botanist Freywinn", -- [2]
@@ -12052,146 +13127,6 @@ _detalhes_database = {
 			}, -- [6]
 			3, -- [7]
 		},
-		["nextreset"] = 1595610146,
-		["Zensius"] = {
-			"Zensius", -- [1]
-			"Interface\\EncounterJournal\\UI-EJ-BOSS-Default", -- [2]
-			{
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
-			}, -- [3]
-			"Interface\\PetBattles\\Weather-ArcaneStorm", -- [4]
-			{
-				0.129609375, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0, -- [4]
-			}, -- [5]
-			{
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			}, -- [6]
-			5, -- [7]
-		},
-		["Koftis"] = {
-			"Koftis", -- [1]
-			"Interface\\EncounterJournal\\UI-EJ-BOSS-Garrosh Hellscream", -- [2]
-			{
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
-			}, -- [3]
-			"Interface\\PetBattles\\Weather-BurntEarth", -- [4]
-			{
-				0.087890625, -- [1]
-				0.916015625, -- [2]
-				1, -- [3]
-				0, -- [4]
-			}, -- [5]
-			{
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			}, -- [6]
-			5, -- [7]
-		},
-		["Galadrian"] = {
-			"Galadrian", -- [1]
-			"Interface\\EncounterJournal\\UI-EJ-BOSS-Darkmaster Gandling", -- [2]
-			{
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
-			}, -- [3]
-			"Interface\\PetBattles\\Weather-BurntEarth", -- [4]
-			{
-				0.087890625, -- [1]
-				0.916015625, -- [2]
-				1, -- [3]
-				0, -- [4]
-			}, -- [5]
-			{
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			}, -- [6]
-			8, -- [7]
-		},
-		["Perion"] = {
-			"Perion", -- [1]
-			"Interface\\EncounterJournal\\UI-EJ-BOSS-Default", -- [2]
-			{
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
-			}, -- [3]
-			"Interface\\PetBattles\\Weather-ArcaneStorm", -- [4]
-			{
-				0.129609375, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0, -- [4]
-			}, -- [5]
-			{
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			}, -- [6]
-			10, -- [7]
-		},
-		["Abuser"] = {
-			"Abuser", -- [1]
-			"Interface\\EncounterJournal\\UI-EJ-BOSS-Maiden of Grief", -- [2]
-			{
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
-			}, -- [3]
-			"Interface\\PetBattles\\Weather-StaticField", -- [4]
-			{
-				0.1171875, -- [1]
-				0.953125, -- [2]
-				1, -- [3]
-				0, -- [4]
-			}, -- [5]
-			{
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			}, -- [6]
-			5, -- [7]
-		},
-		["Huck"] = {
-			"Huck", -- [1]
-			"Interface\\EncounterJournal\\UI-EJ-BOSS-Default", -- [2]
-			{
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
-			}, -- [3]
-			"Interface\\PetBattles\\Weather-ArcaneStorm", -- [4]
-			{
-				0.129609375, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0, -- [4]
-			}, -- [5]
-			{
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			}, -- [6]
-			3, -- [7]
-		},
-		["last_version"] = 12,
 	},
 	["last_instance_id"] = 189,
 	["announce_interrupts"] = {
@@ -12201,7 +13136,7 @@ _detalhes_database = {
 		["next"] = "",
 		["custom"] = "",
 	},
-	["last_instance_time"] = 1595449627,
+	["last_instance_time"] = 1595623902,
 	["active_profile"] = "Default",
 	["last_day"] = "24",
 	["benchmark_db"] = {
@@ -12243,8 +13178,8 @@ _detalhes_database = {
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = true,
 			["opened"] = 0,
-			["author"] = "Details! Team",
 			["show_icon"] = 5,
+			["author"] = "Details! Team",
 			["hide_on_combat"] = false,
 			["max_emote_segments"] = 3,
 		},
@@ -12301,10 +13236,10 @@ _detalhes_database = {
 			["row_texture"] = "Details Serenity",
 			["arrow_anchor_y"] = 0,
 			["main_frame_locked"] = false,
-			["author"] = "Details! Team",
+			["main_frame_strata"] = "LOW",
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["use_spark"] = true,
+			["font_size"] = 10,
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -12312,14 +13247,12 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["row_color"] = {
-				0.1, -- [1]
-				0.1, -- [2]
-				0.1, -- [3]
-				0.4, -- [4]
-			},
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
+			["use_spark"] = true,
 			["y"] = -4.577636718750e-05,
+			["x"] = 0,
+			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -12331,27 +13264,499 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["size"] = 32,
 			},
-			["x"] = 0,
-			["font_face"] = "Friz Quadrata TT",
-			["font_size"] = 10,
-			["main_frame_strata"] = "LOW",
+			["row_color"] = {
+				0.1, -- [1]
+				0.1, -- [2]
+				0.1, -- [3]
+				0.4, -- [4]
+			},
 			["point"] = "CENTER",
 			["row_height"] = 20,
 			["scale"] = 1,
 		},
-	},
-	["combat_counter"] = 4931,
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
 	},
 	["announce_prepots"] = {
 		["enabled"] = true,
 		["reverse"] = false,
 		["channel"] = "SELF",
 	},
+	["combat_counter"] = 5045,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
 	["last_realversion"] = 142,
 	["cached_talents"] = {
+		["Player-4465-010DF944"] = {
+			{
+				132282, -- [1]
+				3, -- [2]
+				1, -- [3]
+				1, -- [4]
+				1, -- [5]
+				71, -- [6]
+				3, -- [7]
+			}, -- [1]
+			{
+				132269, -- [1]
+				0, -- [2]
+				1, -- [3]
+				2, -- [4]
+				1, -- [5]
+				71, -- [6]
+				5, -- [7]
+			}, -- [2]
+			{
+				132155, -- [1]
+				3, -- [2]
+				1, -- [3]
+				3, -- [4]
+				1, -- [5]
+				71, -- [6]
+				3, -- [7]
+			}, -- [3]
+			{
+				132337, -- [1]
+				2, -- [2]
+				2, -- [3]
+				1, -- [4]
+				1, -- [5]
+				71, -- [6]
+				2, -- [7]
+			}, -- [4]
+			{
+				136031, -- [1]
+				4, -- [2]
+				2, -- [3]
+				2, -- [4]
+				1, -- [5]
+				71, -- [6]
+				5, -- [7]
+			}, -- [5]
+			{
+				132326, -- [1]
+				0, -- [2]
+				2, -- [3]
+				4, -- [4]
+				1, -- [5]
+				71, -- [6]
+				3, -- [7]
+			}, -- [6]
+			{
+				135275, -- [1]
+				0, -- [2]
+				3, -- [3]
+				1, -- [4]
+				1, -- [5]
+				71, -- [6]
+				2, -- [7]
+			}, -- [7]
+			{
+				135881, -- [1]
+				0, -- [2]
+				3, -- [3]
+				2, -- [4]
+				1, -- [5]
+				71, -- [6]
+				1, -- [7]
+			}, -- [8]
+			{
+				132090, -- [1]
+				3, -- [2]
+				3, -- [3]
+				3, -- [4]
+				1, -- [5]
+				71, -- [6]
+				3, -- [7]
+			}, -- [9]
+			{
+				132400, -- [1]
+				0, -- [2]
+				4, -- [3]
+				2, -- [4]
+				1, -- [5]
+				71, -- [6]
+				5, -- [7]
+			}, -- [10]
+			{
+				132312, -- [1]
+				2, -- [2]
+				4, -- [3]
+				3, -- [4]
+				1, -- [5]
+				71, -- [6]
+				2, -- [7]
+			}, -- [11]
+			{
+				132397, -- [1]
+				0, -- [2]
+				5, -- [3]
+				1, -- [4]
+				1, -- [5]
+				71, -- [6]
+				5, -- [7]
+			}, -- [12]
+			{
+				132306, -- [1]
+				0, -- [2]
+				5, -- [3]
+				2, -- [4]
+				1, -- [5]
+				71, -- [6]
+				1, -- [7]
+			}, -- [13]
+			{
+				133476, -- [1]
+				0, -- [2]
+				5, -- [3]
+				3, -- [4]
+				1, -- [5]
+				71, -- [6]
+				5, -- [7]
+			}, -- [14]
+			{
+				135328, -- [1]
+				0, -- [2]
+				5, -- [3]
+				4, -- [4]
+				1, -- [5]
+				71, -- [6]
+				5, -- [7]
+			}, -- [15]
+			{
+				135562, -- [1]
+				0, -- [2]
+				6, -- [3]
+				1, -- [4]
+				1, -- [5]
+				71, -- [6]
+				5, -- [7]
+			}, -- [16]
+			{
+				132316, -- [1]
+				0, -- [2]
+				6, -- [3]
+				3, -- [4]
+				1, -- [5]
+				71, -- [6]
+				3, -- [7]
+			}, -- [17]
+			{
+				132355, -- [1]
+				0, -- [2]
+				7, -- [3]
+				2, -- [4]
+				1, -- [5]
+				71, -- [6]
+				1, -- [7]
+			}, -- [18]
+			{
+				136075, -- [1]
+				0, -- [2]
+				1, -- [3]
+				2, -- [4]
+				2, -- [5]
+				72, -- [6]
+				5, -- [7]
+			}, -- [19]
+			{
+				132292, -- [1]
+				5, -- [2]
+				1, -- [3]
+				3, -- [4]
+				2, -- [5]
+				72, -- [6]
+				5, -- [7]
+			}, -- [20]
+			{
+				132366, -- [1]
+				0, -- [2]
+				2, -- [3]
+				2, -- [4]
+				2, -- [5]
+				72, -- [6]
+				5, -- [7]
+			}, -- [21]
+			{
+				136097, -- [1]
+				5, -- [2]
+				2, -- [3]
+				3, -- [4]
+				2, -- [5]
+				72, -- [6]
+				5, -- [7]
+			}, -- [22]
+			{
+				132338, -- [1]
+				3, -- [2]
+				3, -- [3]
+				1, -- [4]
+				2, -- [5]
+				72, -- [6]
+				3, -- [7]
+			}, -- [23]
+			{
+				136147, -- [1]
+				0, -- [2]
+				3, -- [3]
+				2, -- [4]
+				2, -- [5]
+				72, -- [6]
+				1, -- [7]
+			}, -- [24]
+			{
+				136218, -- [1]
+				0, -- [2]
+				3, -- [3]
+				3, -- [4]
+				2, -- [5]
+				72, -- [6]
+				3, -- [7]
+			}, -- [25]
+			{
+				132333, -- [1]
+				5, -- [2]
+				3, -- [3]
+				4, -- [4]
+				2, -- [5]
+				72, -- [6]
+				5, -- [7]
+			}, -- [26]
+			{
+				132147, -- [1]
+				5, -- [2]
+				4, -- [3]
+				1, -- [4]
+				2, -- [5]
+				72, -- [6]
+				5, -- [7]
+			}, -- [27]
+			{
+				135358, -- [1]
+				0, -- [2]
+				4, -- [3]
+				2, -- [4]
+				2, -- [5]
+				72, -- [6]
+				2, -- [7]
+			}, -- [28]
+			{
+				136224, -- [1]
+				5, -- [2]
+				4, -- [3]
+				3, -- [4]
+				2, -- [5]
+				72, -- [6]
+				5, -- [7]
+			}, -- [29]
+			{
+				132340, -- [1]
+				0, -- [2]
+				5, -- [3]
+				1, -- [4]
+				2, -- [5]
+				72, -- [6]
+				5, -- [7]
+			}, -- [30]
+			{
+				136146, -- [1]
+				1, -- [2]
+				5, -- [3]
+				2, -- [4]
+				2, -- [5]
+				72, -- [6]
+				1, -- [7]
+			}, -- [31]
+			{
+				132307, -- [1]
+				0, -- [2]
+				5, -- [3]
+				4, -- [4]
+				2, -- [5]
+				72, -- [6]
+				2, -- [7]
+			}, -- [32]
+			{
+				136009, -- [1]
+				0, -- [2]
+				6, -- [3]
+				1, -- [4]
+				2, -- [5]
+				72, -- [6]
+				2, -- [7]
+			}, -- [33]
+			{
+				132152, -- [1]
+				5, -- [2]
+				6, -- [3]
+				3, -- [4]
+				2, -- [5]
+				72, -- [6]
+				5, -- [7]
+			}, -- [34]
+			{
+				136012, -- [1]
+				0, -- [2]
+				7, -- [3]
+				2, -- [4]
+				2, -- [5]
+				72, -- [6]
+				1, -- [7]
+			}, -- [35]
+			{
+				134952, -- [1]
+				0, -- [2]
+				1, -- [3]
+				2, -- [4]
+				3, -- [5]
+				73, -- [6]
+				5, -- [7]
+			}, -- [36]
+			{
+				136056, -- [1]
+				0, -- [2]
+				1, -- [3]
+				3, -- [4]
+				3, -- [5]
+				73, -- [6]
+				5, -- [7]
+			}, -- [37]
+			{
+				132277, -- [1]
+				0, -- [2]
+				2, -- [3]
+				1, -- [4]
+				3, -- [5]
+				73, -- [6]
+				2, -- [7]
+			}, -- [38]
+			{
+				135892, -- [1]
+				0, -- [2]
+				2, -- [3]
+				3, -- [4]
+				3, -- [5]
+				73, -- [6]
+				5, -- [7]
+			}, -- [39]
+			{
+				135995, -- [1]
+				0, -- [2]
+				2, -- [3]
+				4, -- [4]
+				3, -- [5]
+				73, -- [6]
+				5, -- [7]
+			}, -- [40]
+			{
+				135871, -- [1]
+				0, -- [2]
+				3, -- [3]
+				1, -- [4]
+				3, -- [5]
+				73, -- [6]
+				1, -- [7]
+			}, -- [41]
+			{
+				132110, -- [1]
+				0, -- [2]
+				3, -- [3]
+				2, -- [4]
+				3, -- [5]
+				73, -- [6]
+				3, -- [7]
+			}, -- [42]
+			{
+				132353, -- [1]
+				0, -- [2]
+				3, -- [3]
+				3, -- [4]
+				3, -- [5]
+				73, -- [6]
+				3, -- [7]
+			}, -- [43]
+			{
+				132347, -- [1]
+				0, -- [2]
+				3, -- [3]
+				4, -- [4]
+				3, -- [5]
+				73, -- [6]
+				5, -- [7]
+			}, -- [44]
+			{
+				132363, -- [1]
+				0, -- [2]
+				4, -- [3]
+				1, -- [4]
+				3, -- [5]
+				73, -- [6]
+				3, -- [7]
+			}, -- [45]
+			{
+				132343, -- [1]
+				0, -- [2]
+				4, -- [3]
+				2, -- [4]
+				3, -- [5]
+				73, -- [6]
+				3, -- [7]
+			}, -- [46]
+			{
+				136080, -- [1]
+				0, -- [2]
+				4, -- [3]
+				3, -- [4]
+				3, -- [5]
+				73, -- [6]
+				2, -- [7]
+			}, -- [47]
+			{
+				132362, -- [1]
+				0, -- [2]
+				5, -- [3]
+				1, -- [4]
+				3, -- [5]
+				73, -- [6]
+				2, -- [7]
+			}, -- [48]
+			{
+				132325, -- [1]
+				0, -- [2]
+				5, -- [3]
+				2, -- [4]
+				3, -- [5]
+				73, -- [6]
+				1, -- [7]
+			}, -- [49]
+			{
+				132357, -- [1]
+				0, -- [2]
+				5, -- [3]
+				3, -- [4]
+				3, -- [5]
+				73, -- [6]
+				2, -- [7]
+			}, -- [50]
+			{
+				135321, -- [1]
+				0, -- [2]
+				6, -- [3]
+				3, -- [4]
+				3, -- [5]
+				73, -- [6]
+				5, -- [7]
+			}, -- [51]
+			{
+				134951, -- [1]
+				0, -- [2]
+				7, -- [3]
+				2, -- [4]
+				3, -- [5]
+				73, -- [6]
+				1, -- [7]
+			}, -- [52]
+		},
 		["Player-4465-00E5831F"] = {
 			{
 				132282, -- [1]
@@ -12822,11 +14227,472 @@ _detalhes_database = {
 				1, -- [7]
 			}, -- [52]
 		},
+		["Player-4465-00F5D72A"] = {
+			{
+				132292, -- [1]
+				0, -- [2]
+				1, -- [3]
+				1, -- [4]
+				1, -- [5]
+				259, -- [6]
+				3, -- [7]
+			}, -- [1]
+			{
+				132151, -- [1]
+				0, -- [2]
+				1, -- [3]
+				2, -- [4]
+				1, -- [5]
+				259, -- [6]
+				2, -- [7]
+			}, -- [2]
+			{
+				132277, -- [1]
+				5, -- [2]
+				1, -- [3]
+				3, -- [4]
+				1, -- [5]
+				259, -- [6]
+				5, -- [7]
+			}, -- [3]
+			{
+				132122, -- [1]
+				0, -- [2]
+				2, -- [3]
+				1, -- [4]
+				1, -- [5]
+				259, -- [6]
+				3, -- [7]
+			}, -- [4]
+			{
+				136147, -- [1]
+				0, -- [2]
+				2, -- [3]
+				2, -- [4]
+				1, -- [5]
+				259, -- [6]
+				2, -- [7]
+			}, -- [5]
+			{
+				132306, -- [1]
+				0, -- [2]
+				2, -- [3]
+				4, -- [4]
+				1, -- [5]
+				259, -- [6]
+				3, -- [7]
+			}, -- [6]
+			{
+				132340, -- [1]
+				0, -- [2]
+				3, -- [3]
+				1, -- [4]
+				1, -- [5]
+				259, -- [6]
+				1, -- [7]
+			}, -- [7]
+			{
+				132354, -- [1]
+				0, -- [2]
+				3, -- [3]
+				2, -- [4]
+				1, -- [5]
+				259, -- [6]
+				2, -- [7]
+			}, -- [8]
+			{
+				132109, -- [1]
+				0, -- [2]
+				3, -- [3]
+				3, -- [4]
+				1, -- [5]
+				259, -- [6]
+				5, -- [7]
+			}, -- [9]
+			{
+				132293, -- [1]
+				0, -- [2]
+				4, -- [3]
+				2, -- [4]
+				1, -- [5]
+				259, -- [6]
+				5, -- [7]
+			}, -- [10]
+			{
+				132273, -- [1]
+				0, -- [2]
+				4, -- [3]
+				3, -- [4]
+				1, -- [5]
+				259, -- [6]
+				5, -- [7]
+			}, -- [11]
+			{
+				135988, -- [1]
+				0, -- [2]
+				5, -- [3]
+				2, -- [4]
+				1, -- [5]
+				259, -- [6]
+				1, -- [7]
+			}, -- [12]
+			{
+				132298, -- [1]
+				0, -- [2]
+				5, -- [3]
+				3, -- [4]
+				1, -- [5]
+				259, -- [6]
+				3, -- [7]
+			}, -- [13]
+			{
+				136130, -- [1]
+				0, -- [2]
+				6, -- [3]
+				2, -- [4]
+				1, -- [5]
+				259, -- [6]
+				5, -- [7]
+			}, -- [14]
+			{
+				136023, -- [1]
+				0, -- [2]
+				7, -- [3]
+				2, -- [4]
+				1, -- [5]
+				259, -- [6]
+				1, -- [7]
+			}, -- [15]
+			{
+				132155, -- [1]
+				3, -- [2]
+				1, -- [3]
+				1, -- [4]
+				2, -- [5]
+				260, -- [6]
+				3, -- [7]
+			}, -- [16]
+			{
+				136189, -- [1]
+				2, -- [2]
+				1, -- [3]
+				2, -- [4]
+				2, -- [5]
+				260, -- [6]
+				2, -- [7]
+			}, -- [17]
+			{
+				136047, -- [1]
+				1, -- [2]
+				1, -- [3]
+				3, -- [4]
+				2, -- [5]
+				260, -- [6]
+				5, -- [7]
+			}, -- [18]
+			{
+				132090, -- [1]
+				0, -- [2]
+				2, -- [3]
+				1, -- [4]
+				2, -- [5]
+				260, -- [6]
+				3, -- [7]
+			}, -- [19]
+			{
+				132269, -- [1]
+				0, -- [2]
+				2, -- [3]
+				2, -- [4]
+				2, -- [5]
+				260, -- [6]
+				5, -- [7]
+			}, -- [20]
+			{
+				132222, -- [1]
+				5, -- [2]
+				2, -- [3]
+				3, -- [4]
+				2, -- [5]
+				260, -- [6]
+				5, -- [7]
+			}, -- [21]
+			{
+				136205, -- [1]
+				2, -- [2]
+				3, -- [3]
+				1, -- [4]
+				2, -- [5]
+				260, -- [6]
+				2, -- [7]
+			}, -- [22]
+			{
+				132336, -- [1]
+				0, -- [2]
+				3, -- [3]
+				2, -- [4]
+				2, -- [5]
+				260, -- [6]
+				1, -- [7]
+			}, -- [23]
+			{
+				132307, -- [1]
+				2, -- [2]
+				3, -- [3]
+				4, -- [4]
+				2, -- [5]
+				260, -- [6]
+				2, -- [7]
+			}, -- [24]
+			{
+				132219, -- [1]
+				0, -- [2]
+				4, -- [3]
+				1, -- [4]
+				2, -- [5]
+				260, -- [6]
+				2, -- [7]
+			}, -- [25]
+			{
+				135641, -- [1]
+				0, -- [2]
+				4, -- [3]
+				2, -- [4]
+				2, -- [5]
+				260, -- [6]
+				5, -- [7]
+			}, -- [26]
+			{
+				132147, -- [1]
+				5, -- [2]
+				4, -- [3]
+				3, -- [4]
+				2, -- [5]
+				260, -- [6]
+				5, -- [7]
+			}, -- [27]
+			{
+				133476, -- [1]
+				0, -- [2]
+				5, -- [3]
+				1, -- [4]
+				2, -- [5]
+				260, -- [6]
+				5, -- [7]
+			}, -- [28]
+			{
+				132350, -- [1]
+				0, -- [2]
+				5, -- [3]
+				2, -- [4]
+				2, -- [5]
+				260, -- [6]
+				1, -- [7]
+			}, -- [29]
+			{
+				135328, -- [1]
+				0, -- [2]
+				5, -- [3]
+				3, -- [4]
+				2, -- [5]
+				260, -- [6]
+				5, -- [7]
+			}, -- [30]
+			{
+				132938, -- [1]
+				0, -- [2]
+				5, -- [3]
+				4, -- [4]
+				2, -- [5]
+				260, -- [6]
+				5, -- [7]
+			}, -- [31]
+			{
+				135882, -- [1]
+				0, -- [2]
+				6, -- [3]
+				2, -- [4]
+				2, -- [5]
+				260, -- [6]
+				2, -- [7]
+			}, -- [32]
+			{
+				132275, -- [1]
+				0, -- [2]
+				6, -- [3]
+				3, -- [4]
+				2, -- [5]
+				260, -- [6]
+				3, -- [7]
+			}, -- [33]
+			{
+				136206, -- [1]
+				0, -- [2]
+				7, -- [3]
+				2, -- [4]
+				2, -- [5]
+				260, -- [6]
+				1, -- [7]
+			}, -- [34]
+			{
+				136129, -- [1]
+				0, -- [2]
+				1, -- [3]
+				2, -- [4]
+				3, -- [5]
+				261, -- [6]
+				5, -- [7]
+			}, -- [35]
+			{
+				132366, -- [1]
+				0, -- [2]
+				1, -- [3]
+				3, -- [4]
+				3, -- [5]
+				261, -- [6]
+				5, -- [7]
+			}, -- [36]
+			{
+				132294, -- [1]
+				0, -- [2]
+				2, -- [3]
+				1, -- [4]
+				3, -- [5]
+				261, -- [6]
+				2, -- [7]
+			}, -- [37]
+			{
+				135994, -- [1]
+				0, -- [2]
+				2, -- [3]
+				2, -- [4]
+				3, -- [5]
+				261, -- [6]
+				2, -- [7]
+			}, -- [38]
+			{
+				132320, -- [1]
+				0, -- [2]
+				2, -- [3]
+				3, -- [4]
+				3, -- [5]
+				261, -- [6]
+				5, -- [7]
+			}, -- [39]
+			{
+				136159, -- [1]
+				0, -- [2]
+				3, -- [3]
+				1, -- [4]
+				3, -- [5]
+				261, -- [6]
+				3, -- [7]
+			}, -- [40]
+			{
+				136136, -- [1]
+				0, -- [2]
+				3, -- [3]
+				2, -- [4]
+				3, -- [5]
+				261, -- [6]
+				1, -- [7]
+			}, -- [41]
+			{
+				132282, -- [1]
+				0, -- [2]
+				3, -- [3]
+				3, -- [4]
+				3, -- [5]
+				261, -- [6]
+				3, -- [7]
+			}, -- [42]
+			{
+				136056, -- [1]
+				0, -- [2]
+				4, -- [3]
+				1, -- [4]
+				3, -- [5]
+				261, -- [6]
+				3, -- [7]
+			}, -- [43]
+			{
+				132310, -- [1]
+				0, -- [2]
+				4, -- [3]
+				2, -- [4]
+				3, -- [5]
+				261, -- [6]
+				3, -- [7]
+			}, -- [44]
+			{
+				135315, -- [1]
+				0, -- [2]
+				4, -- [3]
+				3, -- [4]
+				3, -- [5]
+				261, -- [6]
+				3, -- [7]
+			}, -- [45]
+			{
+				132089, -- [1]
+				0, -- [2]
+				5, -- [3]
+				1, -- [4]
+				3, -- [5]
+				261, -- [6]
+				2, -- [7]
+			}, -- [46]
+			{
+				136121, -- [1]
+				0, -- [2]
+				5, -- [3]
+				2, -- [4]
+				3, -- [5]
+				261, -- [6]
+				1, -- [7]
+			}, -- [47]
+			{
+				136220, -- [1]
+				0, -- [2]
+				5, -- [3]
+				3, -- [4]
+				3, -- [5]
+				261, -- [6]
+				2, -- [7]
+			}, -- [48]
+			{
+				136168, -- [1]
+				0, -- [2]
+				5, -- [3]
+				4, -- [4]
+				3, -- [5]
+				261, -- [6]
+				1, -- [7]
+			}, -- [49]
+			{
+				135540, -- [1]
+				0, -- [2]
+				6, -- [3]
+				3, -- [4]
+				3, -- [5]
+				261, -- [6]
+				5, -- [7]
+			}, -- [50]
+			{
+				136183, -- [1]
+				0, -- [2]
+				7, -- [3]
+				2, -- [4]
+				3, -- [5]
+				261, -- [6]
+				1, -- [7]
+			}, -- [51]
+		},
 	},
-	["combat_id"] = 156,
+	["combat_id"] = 77,
 	["savedStyles"] = {
 		{
-			["show_statusbar"] = false,
+			["hide_in_combat_type"] = 1,
 			["desaturated_menu2"] = false,
 			["color"] = {
 				1, -- [1]
@@ -12845,15 +14711,15 @@ _detalhes_database = {
 				true, -- [3]
 			},
 			["bg_r"] = 0,
-			["skin"] = "Minimalistic",
+			["hide_out_of_combat"] = false,
 			["name"] = "final",
 			["following"] = {
-				["enabled"] = false,
 				["bar_color"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
 				},
+				["enabled"] = false,
 				["text_color"] = {
 					1, -- [1]
 					1, -- [2]
@@ -12868,12 +14734,9 @@ _detalhes_database = {
 			},
 			["switch_healer"] = false,
 			["bars_sort_direction"] = 1,
+			["menu_icons_size"] = 1,
 			["backdrop_texture"] = "None",
-			["switch_healer_in_combat"] = false,
-			["instance_button_anchor"] = {
-				-27, -- [1]
-				1, -- [2]
-			},
+			["switch_tank_in_combat"] = false,
 			["menu2_icons_size"] = 1.20000004768372,
 			["tooltip"] = {
 				["n_abilities"] = 3,
@@ -12889,74 +14752,33 @@ _detalhes_database = {
 					1, -- [3]
 				},
 			},
-			["menu_icons_size"] = 1,
+			["switch_healer_in_combat"] = false,
 			["switch_all_roles_in_combat"] = {
 				2, -- [1]
 				1, -- [2]
 				8, -- [3]
 			},
-			["switch_tank_in_combat"] = false,
-			["bg_alpha"] = 0.0199999995529652,
-			["row_info"] = {
-				["textR_outline"] = false,
-				["textL_outline"] = false,
-				["icon_file"] = "Interface\\AddOns\\Details\\images\\classes_small_alpha",
-				["percent_type"] = 1,
-				["start_after_icon"] = false,
-				["texture_background_file"] = "Interface\\TargetingFrame\\UI-StatusBar",
-				["textR_enable_custom_text"] = true,
-				["textR_custom_text"] = "{data1} ({data2}) ",
-				["fixed_texture_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					1, -- [4]
+			["instance_button_anchor"] = {
+				-27, -- [1]
+				1, -- [2]
+			},
+			["version"] = 3,
+			["attribute_text"] = {
+				["enabled"] = false,
+				["shadow"] = false,
+				["side"] = 1,
+				["text_size"] = 11,
+				["anchor"] = {
+					-17, -- [1]
+					10, -- [2]
 				},
-				["textL_show_number"] = false,
-				["space"] = {
-					["right"] = 0,
-					["left"] = 0,
-					["between"] = 0,
-				},
-				["texture"] = "BantoBar",
-				["texture_background_class_color"] = true,
-				["fixed_texture_background_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					0.680000007152557, -- [4]
-				},
-				["font_face_file"] = "Fonts\\ARIALN.TTF",
-				["fixed_text_color"] = {
+				["text_color"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
 					1, -- [4]
 				},
-				["alpha"] = 0,
-				["textR_class_colors"] = false,
-				["backdrop"] = {
-					["enabled"] = false,
-					["texture"] = "Details BarBorder 2",
-					["color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["size"] = 12,
-				},
-				["texture_background"] = "Blizzard",
-				["textL_custom_text"] = "{data3}{data2}",
-				["no_icon"] = false,
-				["font_size"] = 11,
-				["textL_class_colors"] = false,
-				["font_face"] = "Arial Narrow",
-				["texture_class_colors"] = true,
-				["height"] = 20,
-				["texture_file"] = "Interface\\AddOns\\Details\\images\\BantoBar",
-				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
-				["textL_enable_custom_text"] = true,
+				["text_face"] = "Arial Narrow",
 			},
 			["closebutton_config"] = {
 				["pushed_texture"] = "Interface\\Buttons\\UI-Panel-MinimizeButton-Down",
@@ -12979,30 +14801,26 @@ _detalhes_database = {
 				["iconstoo"] = true,
 				["onenter"] = 1,
 			},
-			["plugins_grow_direction"] = 1,
-			["desaturated_menu"] = false,
-			["show_sidebars"] = false,
-			["strata"] = "LOW",
-			["menu_anchor_down"] = {
-				-22, -- [1]
+			["switch_all_roles_after_wipe"] = false,
+			["menu2_anchor_down"] = {
+				32, -- [1]
 				0, -- [2]
 			},
+			["statusbar_info"] = {
+				["alpha"] = 0,
+				["overlay"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+			},
+			["strata"] = "LOW",
+			["window_scale"] = 1,
 			["resetbutton_config"] = {
 				["highlight_vertexcolor"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
-					1, -- [4]
-				},
-				["anchor"] = {
-					2, -- [1]
-					0, -- [2]
-				},
-				["highlight_texture"] = "Interface\\Addons\\Details\\Images\\reset_button2",
-				["normal_texcoord"] = {
-					0, -- [1]
-					1, -- [2]
-					0, -- [3]
 					1, -- [4]
 				},
 				["normal_vertexcolor"] = {
@@ -13011,13 +14829,24 @@ _detalhes_database = {
 					1, -- [3]
 					1, -- [4]
 				},
+				["highlight_texture"] = "Interface\\Addons\\Details\\Images\\reset_button2",
+				["normal_texcoord"] = {
+					0, -- [1]
+					1, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
+				["anchor"] = {
+					2, -- [1]
+					0, -- [2]
+				},
+				["normal_texture"] = "Interface\\Addons\\Details\\Images\\reset_button2",
 				["highlight_texcoord"] = {
 					0, -- [1]
 					1, -- [2]
 					0, -- [3]
 					1, -- [4]
 				},
-				["normal_texture"] = "Interface\\Addons\\Details\\Images\\reset_button2",
 				["size"] = {
 					13, -- [1]
 					13, -- [2]
@@ -13025,28 +14854,25 @@ _detalhes_database = {
 			},
 			["switch_tank"] = false,
 			["hide_in_combat_alpha"] = 0,
-			["switch_all_roles_after_wipe"] = false,
+			["plugins_grow_direction"] = 1,
 			["menu_icons"] = {
 				true, -- [1]
 				true, -- [2]
 				true, -- [3]
 				true, -- [4]
 			},
-			["switch_damager"] = false,
-			["auto_hide_menu"] = {
-				["left"] = true,
-				["right"] = true,
-			},
+			["desaturated_menu"] = false,
+			["show_sidebars"] = false,
+			["bars_grow_direction"] = 1,
 			["row_show_animation"] = {
 				["anim"] = "Fade",
 				["options"] = {
 				},
 			},
-			["bars_grow_direction"] = 1,
-			["hide_icon"] = true,
-			["toolbar_side"] = 2,
 			["grab_on_top"] = false,
+			["toolbar_side"] = 2,
 			["switch_damager_in_combat"] = false,
+			["hide_icon"] = true,
 			["micro_displays_side"] = 2,
 			["menu2_anchor"] = {
 				32, -- [1]
@@ -13074,59 +14900,99 @@ _detalhes_database = {
 				},
 			},
 			["bg_g"] = 0,
-			["window_scale"] = 1,
+			["menu_anchor_down"] = {
+				-22, -- [1]
+				0, -- [2]
+			},
 			["hide_in_combat"] = false,
-			["statusbar_info"] = {
-				["alpha"] = 0,
+			["auto_hide_menu"] = {
+				["left"] = true,
+				["right"] = true,
+			},
+			["switch_damager"] = false,
+			["show_statusbar"] = false,
+			["wallpaper"] = {
 				["overlay"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
+					1, -- [4]
 				},
-			},
-			["menu2_anchor_down"] = {
-				32, -- [1]
-				0, -- [2]
-			},
-			["hide_in_combat_type"] = 1,
-			["wallpaper"] = {
-				["enabled"] = false,
 				["texcoord"] = {
 					0, -- [1]
 					1, -- [2]
 					0, -- [3]
 					1, -- [4]
 				},
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
+				["enabled"] = false,
 				["anchor"] = "all",
 				["height"] = 0,
 				["alpha"] = 0.5,
 				["width"] = 0,
 			},
 			["stretch_button_side"] = 2,
-			["hide_out_of_combat"] = false,
-			["version"] = 3,
-			["attribute_text"] = {
-				["enabled"] = false,
-				["shadow"] = false,
-				["side"] = 1,
-				["text_size"] = 11,
-				["anchor"] = {
-					-17, -- [1]
-					10, -- [2]
+			["skin"] = "Minimalistic",
+			["bg_alpha"] = 0.0199999995529652,
+			["row_info"] = {
+				["textR_outline"] = false,
+				["textL_outline"] = false,
+				["icon_file"] = "Interface\\AddOns\\Details\\images\\classes_small_alpha",
+				["fixed_texture_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					1, -- [4]
 				},
-				["text_color"] = {
+				["texture"] = "BantoBar",
+				["texture_background_file"] = "Interface\\TargetingFrame\\UI-StatusBar",
+				["textR_enable_custom_text"] = true,
+				["textR_custom_text"] = "{data1} ({data2}) ",
+				["percent_type"] = 1,
+				["textL_show_number"] = false,
+				["space"] = {
+					["right"] = 0,
+					["left"] = 0,
+					["between"] = 0,
+				},
+				["start_after_icon"] = false,
+				["texture_background_class_color"] = true,
+				["fixed_texture_background_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					0.680000007152557, -- [4]
+				},
+				["font_face_file"] = "Fonts\\ARIALN.TTF",
+				["fixed_text_color"] = {
 					1, -- [1]
 					1, -- [2]
 					1, -- [3]
 					1, -- [4]
 				},
-				["text_face"] = "Arial Narrow",
+				["backdrop"] = {
+					["enabled"] = false,
+					["texture"] = "Details BarBorder 2",
+					["color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["size"] = 12,
+				},
+				["textL_class_colors"] = false,
+				["textL_custom_text"] = "{data3}{data2}",
+				["textR_class_colors"] = false,
+				["alpha"] = 0,
+				["no_icon"] = false,
+				["font_size"] = 11,
+				["texture_background"] = "Blizzard",
+				["font_face"] = "Arial Narrow",
+				["texture_class_colors"] = true,
+				["height"] = 20,
+				["texture_file"] = "Interface\\AddOns\\Details\\images\\BantoBar",
+				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
+				["textL_enable_custom_text"] = true,
 			},
 			["bg_b"] = 0,
 		}, -- [1]
@@ -13154,487 +15020,348 @@ _detalhes_database = {
 			["tipo"] = 2,
 			["_ActorTable"] = {
 				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.087285,
-					["damage_from"] = {
-						["Kamenac"] = true,
-					},
-					["targets"] = {
-						["Kamenac"] = 11672,
-					},
-					["pets"] = {
-					},
-					["end_time"] = 1595442643,
-					["on_hold"] = false,
-					["friendlyfire_total"] = 0,
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 11672.087285,
-					["delay"] = 0,
-					["fight_component"] = true,
-					["total"] = 11672.087285,
-					["monster"] = true,
-					["damage_taken"] = 145248.087285,
-					["nome"] = "Scarlet Soldier",
-					["spells"] = {
-						["_ActorTable"] = {
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 64,
-								["targets"] = {
-									["Kamenac"] = 11672,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 11672,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 411,
-								["total"] = 11672,
-								["r_amt"] = 0,
-								["c_max"] = 0,
-								["DODGE"] = 64,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["PARRY"] = 43,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["a_dmg"] = 0,
-								["n_amt"] = 261,
-								["MISS"] = 43,
-								["a_amt"] = 0,
-							},
-							["Improved Blocking"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Improved Blocking",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 62,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["tipo"] = 1,
-					["classe"] = "UNKNOW",
-					["friendlyfire"] = {
-					},
-					["custom"] = 0,
-					["last_event"] = 0,
-					["last_dps"] = 0,
-					["start_time"] = 1595442225,
-					["serial"] = "Creature-0-4468-189-23554-4286-00021885AB",
-					["dps_started"] = false,
-				}, -- [1]
-				{
 					["flag_original"] = 1298,
-					["totalabsorbed"] = 1936.72524,
+					["totalabsorbed"] = 2974.325583,
 					["damage_from"] = {
+						["Scarlet Chaplain"] = true,
+						["Scarlet Champion"] = true,
 						["Scarlet Sorcerer"] = true,
 						["Scarlet Myrmidon"] = true,
-						["Scarlet Soldier"] = true,
-						["Scarlet Protector"] = true,
-						["Fire Elemental"] = true,
-						["High Inquisitor Fairbanks"] = true,
-						["Scarlet Guardsman"] = true,
-						["Scarlet Commander Mograine"] = true,
-						["Scarlet Chaplain"] = true,
-						["Scarlet Centurion"] = true,
-						["Scarlet Champion"] = true,
-						["Scarlet Wizard"] = true,
 						["Scarlet Defender"] = true,
-						["Fire Elemental <Scarlet Conjuror>"] = true,
-						["Kamenac"] = true,
-						["Scarlet Evoker"] = true,
-						["High Inquisitor Whitemane"] = true,
-						["Scarlet Conjuror"] = true,
-						["Herod"] = true,
-						["Scarlet Monk"] = true,
 						["Scarlet Abbot"] = true,
-						["Scarlet Trainee"] = true,
+						["Kamenac"] = true,
+						["High Inquisitor Whitemane"] = true,
+						["Scarlet Monk"] = true,
+						["High Inquisitor Fairbanks"] = true,
+						["Scarlet Wizard"] = true,
+						["Scarlet Centurion"] = true,
+						["Scarlet Commander Mograine"] = true,
 					},
 					["targets"] = {
-						["Scarlet Sorcerer"] = 102704,
-						["Scarlet Myrmidon"] = 282422,
-						["Scarlet Soldier"] = 145248,
-						["Scarlet Protector"] = 100184,
-						["Fire Elemental"] = 3409,
-						["High Inquisitor Fairbanks"] = 7302,
-						["Scarlet Guardsman"] = 40363,
-						["Scarlet Commander Mograine"] = 37231,
-						["Scarlet Chaplain"] = 52350,
-						["Scarlet Centurion"] = 234980,
-						["Scarlet Champion"] = 89598,
-						["Scarlet Wizard"] = 114126,
-						["Scarlet Defender"] = 272037,
-						["Fire Elemental <Scarlet Conjuror>"] = 3024,
-						["Herod"] = 13470,
-						["Scarlet Evoker"] = 21713,
-						["High Inquisitor Whitemane"] = 31010,
-						["Scarlet Conjuror"] = 12039,
-						["Rabbit"] = 859,
-						["Scarlet Monk"] = 90744,
-						["Scarlet Abbot"] = 62626,
-						["Scarlet Trainee"] = 6470,
+						["Scarlet Chaplain"] = 37629,
+						["Scarlet Champion"] = 82354,
+						["Scarlet Sorcerer"] = 88266,
+						["Scarlet Myrmidon"] = 115037,
+						["Scarlet Defender"] = 131879,
+						["Scarlet Abbot"] = 54541,
+						["Rabbit"] = 779,
+						["High Inquisitor Whitemane"] = 26516,
+						["Scarlet Centurion"] = 210447,
+						["High Inquisitor Fairbanks"] = 24261,
+						["Scarlet Wizard"] = 86882,
+						["Scarlet Monk"] = 83064,
+						["Scarlet Commander Mograine"] = 38066,
 					},
-					["delay"] = 0,
 					["pets"] = {
 					},
-					["nome"] = "Kamenac",
-					["end_time"] = 1595442643,
+					["friendlyfire_total"] = 55,
+					["on_hold"] = false,
 					["classe"] = "WARRIOR",
 					["raid_targets"] = {
 					},
-					["total_without_pet"] = 1723909.72524,
-					["friendlyfire"] = {
-						["Kamenac"] = {
-							["total"] = 107,
-							["spells"] = {
-								["Hand of Justice"] = 0,
-							},
-						},
-					},
+					["total_without_pet"] = 979721.325583,
+					["spec"] = 72,
+					["delay"] = 0,
+					["dps_started"] = false,
+					["total"] = 979721.325583,
+					["last_dps"] = 0,
 					["fight_component"] = true,
-					["total"] = 1723909.72524,
-					["damage_taken"] = 151976.72524,
-					["tipo"] = 1,
-					["boss_fight_component"] = true,
+					["nome"] = "Kamenac",
 					["spells"] = {
 						["_ActorTable"] = {
-							["Hamstring"] = {
-								["c_amt"] = 46,
+							["Fire Shield"] = {
+								["c_amt"] = 2,
 								["b_amt"] = 0,
-								["c_dmg"] = 3801,
+								["c_dmg"] = 150,
 								["g_amt"] = 0,
-								["n_max"] = 74,
+								["n_max"] = 50,
 								["targets"] = {
-									["Scarlet Chaplain"] = 68,
-									["Scarlet Centurion"] = 1540,
-									["Scarlet Sorcerer"] = 263,
-									["Scarlet Myrmidon"] = 745,
-									["Scarlet Defender"] = 1214,
-									["Scarlet Abbot"] = 393,
-									["Scarlet Soldier"] = 177,
-									["Scarlet Protector"] = 267,
-									["Scarlet Champion"] = 537,
-									["Scarlet Monk"] = 279,
-									["Scarlet Wizard"] = 634,
-									["Scarlet Guardsman"] = 70,
+									["Scarlet Centurion"] = 1300,
+									["Scarlet Sorcerer"] = 100,
+									["Scarlet Myrmidon"] = 200,
+									["Scarlet Wizard"] = 250,
+									["Scarlet Defender"] = 135,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 2386,
+								["n_dmg"] = 1835,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 122,
-								["total"] = 6187,
-								["c_max"] = 101,
+								["counter"] = 40,
+								["total"] = 1985,
+								["c_max"] = 75,
+								["id"] = "Fire Shield",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["a_amt"] = 0,
+								["m_crit"] = 0,
+								["RESIST"] = 1,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 37,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
+							},
+							["Hamstring"] = {
+								["c_amt"] = 11,
+								["b_amt"] = 0,
+								["c_dmg"] = 922,
+								["g_amt"] = 0,
+								["n_max"] = 54,
+								["targets"] = {
+									["Scarlet Chaplain"] = 32,
+									["Scarlet Centurion"] = 425,
+									["Scarlet Sorcerer"] = 85,
+									["Scarlet Champion"] = 121,
+									["Scarlet Monk"] = 280,
+									["Scarlet Wizard"] = 41,
+									["Scarlet Defender"] = 257,
+									["Scarlet Abbot"] = 120,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 439,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 25,
+								["total"] = 1361,
+								["c_max"] = 103,
 								["id"] = "Hamstring",
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["c_min"] = 0,
 								["m_crit"] = 0,
+								["BLOCK"] = 2,
 								["m_amt"] = 0,
-								["BLOCK"] = 10,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
-								["n_amt"] = 66,
+								["n_amt"] = 12,
 								["a_amt"] = 0,
 								["a_dmg"] = 0,
 							},
 							["Cleave"] = {
-								["c_amt"] = 349,
-								["b_amt"] = 55,
-								["c_dmg"] = 288324,
+								["c_amt"] = 198,
+								["b_amt"] = 18,
+								["c_dmg"] = 172678,
 								["g_amt"] = 0,
-								["n_max"] = 596,
+								["n_max"] = 568,
 								["targets"] = {
-									["Scarlet Sorcerer"] = 27749,
-									["Scarlet Myrmidon"] = 86197,
-									["Scarlet Soldier"] = 51156,
-									["Scarlet Protector"] = 32969,
-									["Fire Elemental"] = 379,
-									["High Inquisitor Fairbanks"] = 0,
-									["Scarlet Guardsman"] = 11800,
-									["Scarlet Commander Mograine"] = 4121,
-									["Scarlet Chaplain"] = 14566,
-									["Scarlet Champion"] = 34552,
-									["Scarlet Defender"] = 74705,
-									["Fire Elemental <Scarlet Conjuror>"] = 753,
-									["Scarlet Monk"] = 42555,
-									["Scarlet Evoker"] = 5718,
-									["High Inquisitor Whitemane"] = 5748,
-									["Scarlet Conjuror"] = 3554,
-									["Herod"] = 2768,
-									["Scarlet Wizard"] = 35693,
-									["Scarlet Centurion"] = 71717,
-									["Scarlet Abbot"] = 17903,
+									["Scarlet Chaplain"] = 12442,
+									["Scarlet Centurion"] = 66299,
+									["Scarlet Sorcerer"] = 27389,
+									["Scarlet Myrmidon"] = 42307,
+									["Scarlet Defender"] = 32129,
+									["Scarlet Abbot"] = 22976,
+									["High Inquisitor Whitemane"] = 4359,
+									["Scarlet Monk"] = 35033,
+									["High Inquisitor Fairbanks"] = 2028,
+									["Scarlet Wizard"] = 30173,
+									["Scarlet Champion"] = 29980,
+									["Scarlet Commander Mograine"] = 1811,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 236279,
+								["n_dmg"] = 134248,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 986,
-								["total"] = 524603,
-								["c_max"] = 1305,
+								["counter"] = 550,
+								["total"] = 306926,
+								["c_max"] = 1345,
 								["id"] = "Cleave",
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["b_dmg"] = 17287,
-								["n_amt"] = 637,
-								["a_amt"] = 10,
-								["a_dmg"] = 7629,
+								["b_dmg"] = 5750,
+								["n_amt"] = 352,
+								["a_amt"] = 2,
+								["a_dmg"] = 1778,
 							},
 							["Execute"] = {
-								["c_amt"] = 7,
-								["b_amt"] = 3,
-								["c_dmg"] = 12039,
+								["c_amt"] = 3,
+								["b_amt"] = 0,
+								["c_dmg"] = 6274,
 								["g_amt"] = 0,
-								["n_max"] = 1518,
+								["n_max"] = 1183,
 								["targets"] = {
-									["Scarlet Centurion"] = 1798,
-									["Scarlet Sorcerer"] = 1518,
-									["Scarlet Myrmidon"] = 7142,
-									["Scarlet Defender"] = 4271,
-									["Scarlet Soldier"] = 4604,
-									["High Inquisitor Whitemane"] = 779,
-									["Scarlet Trainee"] = 1649,
-									["High Inquisitor Fairbanks"] = 733,
-									["Herod"] = 2161,
-									["Scarlet Champion"] = 922,
-									["Scarlet Commander Mograine"] = 3517,
+									["Scarlet Centurion"] = 1183,
+									["High Inquisitor Whitemane"] = 2192,
+									["High Inquisitor Fairbanks"] = 4288,
+									["Scarlet Wizard"] = 2706,
+									["Scarlet Commander Mograine"] = 823,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 17055,
+								["n_dmg"] = 4918,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 27,
-								["total"] = 29094,
-								["c_max"] = 2759,
+								["counter"] = 9,
+								["total"] = 11192,
+								["c_max"] = 2868,
 								["id"] = "Execute",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 1420,
 								["m_crit"] = 0,
+								["a_amt"] = 2,
 								["c_min"] = 0,
-								["m_amt"] = 0,
 								["successful_casted"] = 0,
-								["b_dmg"] = 2217,
-								["n_amt"] = 20,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 6,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 							["Whirlwind"] = {
-								["c_amt"] = 144,
-								["b_amt"] = 32,
-								["c_dmg"] = 82253,
+								["c_amt"] = 102,
+								["b_amt"] = 15,
+								["c_dmg"] = 57959,
 								["g_amt"] = 0,
-								["n_max"] = 401,
+								["n_max"] = 435,
 								["targets"] = {
-									["Scarlet Sorcerer"] = 8569,
-									["Scarlet Myrmidon"] = 23977,
-									["Scarlet Soldier"] = 16691,
-									["Scarlet Protector"] = 8528,
-									["Fire Elemental"] = 1280,
-									["High Inquisitor Fairbanks"] = 737,
-									["Scarlet Guardsman"] = 3236,
-									["Scarlet Commander Mograine"] = 812,
-									["Scarlet Chaplain"] = 3765,
-									["Scarlet Champion"] = 7491,
-									["Scarlet Centurion"] = 22948,
-									["Scarlet Defender"] = 24271,
-									["Fire Elemental <Scarlet Conjuror>"] = 218,
-									["Scarlet Wizard"] = 10886,
-									["Rabbit"] = 654,
-									["High Inquisitor Whitemane"] = 3231,
-									["Scarlet Conjuror"] = 1428,
-									["Scarlet Monk"] = 11399,
-									["Herod"] = 362,
-									["Scarlet Evoker"] = 2512,
-									["Scarlet Abbot"] = 7272,
+									["Scarlet Chaplain"] = 4179,
+									["Scarlet Champion"] = 11285,
+									["Scarlet Sorcerer"] = 8373,
+									["Scarlet Myrmidon"] = 12808,
+									["Scarlet Defender"] = 12812,
+									["Scarlet Abbot"] = 7828,
+									["Rabbit"] = 676,
+									["High Inquisitor Whitemane"] = 957,
+									["Scarlet Wizard"] = 7569,
+									["High Inquisitor Fairbanks"] = 704,
+									["Scarlet Monk"] = 12809,
+									["Scarlet Centurion"] = 28142,
+									["Scarlet Commander Mograine"] = 1536,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 78014,
+								["n_dmg"] = 51719,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 455,
-								["total"] = 160267,
-								["c_max"] = 840,
+								["counter"] = 301,
+								["total"] = 109678,
+								["c_max"] = 871,
 								["id"] = "Whirlwind",
 								["r_dmg"] = 0,
-								["IMMUNE"] = 1,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["b_dmg"] = 6818,
-								["n_amt"] = 310,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["b_dmg"] = 2831,
+								["n_amt"] = 199,
+								["a_amt"] = 2,
+								["a_dmg"] = 774,
 							},
 							["Deep Wound"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 113,
+								["n_max"] = 97,
 								["targets"] = {
-									["Scarlet Sorcerer"] = 5413,
-									["Scarlet Myrmidon"] = 6650,
-									["Scarlet Soldier"] = 7436,
-									["Scarlet Protector"] = 3362,
-									["Fire Elemental"] = 0,
-									["High Inquisitor Fairbanks"] = 102,
-									["Scarlet Guardsman"] = 821,
-									["Scarlet Commander Mograine"] = 1334,
-									["Scarlet Chaplain"] = 1595,
-									["Scarlet Champion"] = 2809,
-									["Scarlet Defender"] = 10871,
-									["Scarlet Abbot"] = 3031,
-									["Scarlet Evoker"] = 215,
-									["High Inquisitor Whitemane"] = 1055,
-									["Scarlet Conjuror"] = 484,
-									["Scarlet Wizard"] = 3075,
-									["Herod"] = 595,
-									["Scarlet Monk"] = 2131,
-									["Scarlet Centurion"] = 6777,
+									["Scarlet Chaplain"] = 1478,
+									["Scarlet Centurion"] = 10055,
+									["Scarlet Sorcerer"] = 3987,
+									["Scarlet Myrmidon"] = 4157,
+									["Scarlet Defender"] = 5761,
+									["Scarlet Abbot"] = 3252,
+									["High Inquisitor Whitemane"] = 744,
+									["Scarlet Monk"] = 2561,
+									["High Inquisitor Fairbanks"] = 278,
+									["Scarlet Wizard"] = 2932,
+									["Scarlet Champion"] = 4624,
+									["Scarlet Commander Mograine"] = 1254,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 57756,
+								["n_dmg"] = 41083,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 1077,
-								["total"] = 57756,
+								["counter"] = 751,
+								["total"] = 41083,
 								["c_max"] = 0,
 								["id"] = "Deep Wound",
 								["r_dmg"] = 0,
+								["IMMUNE"] = 3,
 								["r_amt"] = 0,
-								["a_amt"] = 1,
 								["m_crit"] = 0,
 								["c_min"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
-								["n_amt"] = 1072,
-								["a_dmg"] = 50,
-								["IMMUNE"] = 5,
+								["n_amt"] = 748,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 							["Shadow Bolt"] = {
-								["c_amt"] = 3,
+								["c_amt"] = 1,
 								["b_amt"] = 0,
-								["c_dmg"] = 293,
+								["c_dmg"] = 120,
 								["g_amt"] = 0,
 								["n_max"] = 85,
 								["targets"] = {
-									["Scarlet Sorcerer"] = 496,
-									["Scarlet Myrmidon"] = 1438,
-									["Scarlet Soldier"] = 549,
-									["Scarlet Protector"] = 436,
-									["High Inquisitor Fairbanks"] = 0,
-									["Scarlet Guardsman"] = 233,
-									["Scarlet Commander Mograine"] = 108,
-									["Scarlet Chaplain"] = 209,
-									["Scarlet Champion"] = 323,
-									["Scarlet Defender"] = 1185,
-									["Scarlet Abbot"] = 635,
-									["Scarlet Evoker"] = 63,
-									["High Inquisitor Whitemane"] = 64,
-									["Scarlet Conjuror"] = 162,
-									["Scarlet Monk"] = 112,
-									["Herod"] = 75,
-									["Scarlet Centurion"] = 1228,
-									["Scarlet Wizard"] = 293,
+									["Scarlet Chaplain"] = 308,
+									["Scarlet Champion"] = 505,
+									["Scarlet Sorcerer"] = 397,
+									["Scarlet Myrmidon"] = 601,
+									["Scarlet Defender"] = 839,
+									["Scarlet Abbot"] = 64,
+									["High Inquisitor Whitemane"] = 66,
+									["High Inquisitor Fairbanks"] = 168,
+									["Scarlet Monk"] = 78,
+									["Scarlet Centurion"] = 1054,
+									["Scarlet Wizard"] = 391,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 7316,
+								["n_dmg"] = 4351,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 114,
-								["total"] = 7609,
-								["c_max"] = 108,
-								["r_amt"] = 0,
+								["counter"] = 66,
+								["total"] = 4471,
+								["c_max"] = 120,
 								["id"] = "Shadow Bolt",
 								["r_dmg"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 109,
-								["m_crit"] = 0,
-								["c_min"] = 0,
+								["r_amt"] = 0,
 								["m_amt"] = 0,
+								["m_crit"] = 0,
+								["n_amt"] = 64,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["a_amt"] = 0,
+								["b_dmg"] = 0,
 								["RESIST"] = 1,
+								["a_amt"] = 0,
 								["a_dmg"] = 0,
-								["IMMUNE"] = 1,
 							},
 							["Intercept Stun"] = {
-								["c_amt"] = 1,
+								["c_amt"] = 0,
 								["b_amt"] = 0,
-								["c_dmg"] = 70,
+								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 78,
+								["n_max"] = 65,
 								["targets"] = {
-									["Scarlet Chaplain"] = 122,
-									["Scarlet Centurion"] = 246,
-									["Scarlet Sorcerer"] = 503,
-									["Scarlet Myrmidon"] = 496,
-									["Scarlet Champion"] = 266,
-									["Scarlet Defender"] = 608,
-									["Scarlet Abbot"] = 45,
-									["Scarlet Soldier"] = 208,
-									["Scarlet Evoker"] = 170,
-									["High Inquisitor Whitemane"] = 0,
-									["Scarlet Guardsman"] = 51,
-									["Scarlet Wizard"] = 276,
-									["Scarlet Monk"] = 78,
-									["Scarlet Protector"] = 146,
-									["Fire Elemental <Scarlet Conjuror>"] = 51,
+									["Scarlet Chaplain"] = 47,
+									["Scarlet Centurion"] = 396,
+									["Scarlet Sorcerer"] = 559,
+									["Scarlet Myrmidon"] = 249,
+									["Scarlet Champion"] = 106,
+									["Scarlet Wizard"] = 176,
+									["Scarlet Defender"] = 271,
+									["Scarlet Commander Mograine"] = 0,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 3196,
+								["n_dmg"] = 1804,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 64,
-								["total"] = 3266,
-								["c_max"] = 70,
+								["counter"] = 35,
+								["total"] = 1804,
+								["c_max"] = 0,
 								["id"] = "Intercept Stun",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["a_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
-								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
-								["n_amt"] = 62,
-								["a_dmg"] = 0,
-								["IMMUNE"] = 1,
+								["n_amt"] = 35,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 							["Thunder Clap"] = {
 								["c_amt"] = 0,
@@ -13643,159 +15370,139 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 103,
 								["targets"] = {
-									["Scarlet Sorcerer"] = 355,
-									["Scarlet Myrmidon"] = 1270,
-									["Scarlet Soldier"] = 466,
-									["Scarlet Protector"] = 861,
-									["Fire Elemental"] = 81,
-									["High Inquisitor Fairbanks"] = 80,
-									["Scarlet Guardsman"] = 257,
-									["Scarlet Commander Mograine"] = 232,
-									["Scarlet Chaplain"] = 74,
-									["Scarlet Centurion"] = 1161,
-									["Scarlet Defender"] = 699,
-									["Scarlet Abbot"] = 141,
-									["Scarlet Champion"] = 400,
-									["Scarlet Evoker"] = 89,
-									["Herod"] = 76,
-									["Scarlet Conjuror"] = 90,
-									["Scarlet Wizard"] = 700,
-									["Scarlet Monk"] = 577,
-									["Rabbit"] = 205,
-									["Scarlet Trainee"] = 460,
+									["Scarlet Chaplain"] = 149,
+									["Scarlet Centurion"] = 796,
+									["Scarlet Sorcerer"] = 444,
+									["Scarlet Myrmidon"] = 318,
+									["Scarlet Defender"] = 498,
+									["Scarlet Abbot"] = 212,
+									["Rabbit"] = 103,
+									["Scarlet Wizard"] = 525,
+									["High Inquisitor Fairbanks"] = 239,
+									["Scarlet Monk"] = 576,
+									["Scarlet Champion"] = 564,
+									["Scarlet Commander Mograine"] = 77,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 8274,
+								["n_dmg"] = 4501,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 102,
-								["total"] = 8274,
+								["counter"] = 55,
+								["total"] = 4501,
 								["c_max"] = 0,
 								["id"] = "Thunder Clap",
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
-								["n_amt"] = 102,
+								["n_amt"] = 55,
 								["a_amt"] = 0,
 								["a_dmg"] = 0,
 							},
 							["!Melee"] = {
-								["c_amt"] = 1479,
-								["b_amt"] = 273,
-								["c_dmg"] = 456946,
+								["c_amt"] = 722,
+								["b_amt"] = 105,
+								["c_dmg"] = 231958,
 								["g_amt"] = 0,
-								["n_max"] = 506,
+								["n_max"] = 467,
 								["targets"] = {
-									["Scarlet Sorcerer"] = 56100,
-									["Scarlet Myrmidon"] = 147128,
-									["Scarlet Soldier"] = 62563,
-									["Scarlet Protector"] = 51320,
-									["Fire Elemental"] = 1669,
-									["High Inquisitor Fairbanks"] = 4532,
-									["Scarlet Guardsman"] = 23487,
-									["Scarlet Commander Mograine"] = 23769,
-									["Scarlet Chaplain"] = 29430,
-									["Scarlet Champion"] = 41805,
-									["Scarlet Abbot"] = 32704,
-									["Scarlet Defender"] = 150229,
-									["Fire Elemental <Scarlet Conjuror>"] = 2002,
-									["Scarlet Wizard"] = 60287,
-									["Scarlet Evoker"] = 12696,
-									["High Inquisitor Whitemane"] = 19504,
-									["Scarlet Conjuror"] = 6274,
-									["Herod"] = 6427,
-									["Scarlet Monk"] = 31967,
-									["Scarlet Centurion"] = 117772,
-									["Scarlet Trainee"] = 2286,
+									["Scarlet Chaplain"] = 18109,
+									["Scarlet Centurion"] = 95110,
+									["Scarlet Sorcerer"] = 46477,
+									["Scarlet Myrmidon"] = 51252,
+									["Scarlet Defender"] = 76900,
+									["Scarlet Abbot"] = 19135,
+									["High Inquisitor Whitemane"] = 15062,
+									["Scarlet Monk"] = 31677,
+									["High Inquisitor Fairbanks"] = 14894,
+									["Scarlet Wizard"] = 39593,
+									["Scarlet Champion"] = 33671,
+									["Scarlet Commander Mograine"] = 24852,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 427005,
+								["n_dmg"] = 234774,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 4413,
-								["total"] = 883951,
-								["c_max"] = 1009,
-								["r_amt"] = 0,
+								["counter"] = 2297,
+								["total"] = 466732,
+								["c_max"] = 1014,
+								["IMMUNE"] = 22,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 3461,
-								["b_dmg"] = 33805,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
+								["r_amt"] = 0,
 								["a_amt"] = 6,
-								["n_amt"] = 2739,
-								["MISS"] = 165,
-								["IMMUNE"] = 30,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 11390,
+								["n_amt"] = 1463,
+								["a_dmg"] = 1939,
+								["MISS"] = 90,
 							},
 							["Pummel"] = {
-								["c_amt"] = 17,
+								["c_amt"] = 5,
 								["b_amt"] = 0,
-								["c_dmg"] = 1344,
+								["c_dmg"] = 421,
 								["g_amt"] = 0,
 								["n_max"] = 50,
 								["targets"] = {
-									["Scarlet Sorcerer"] = 449,
-									["Scarlet Myrmidon"] = 76,
-									["Scarlet Defender"] = 0,
-									["Scarlet Abbot"] = 302,
-									["Scarlet Protector"] = 670,
-									["Scarlet Conjuror"] = 47,
-									["High Inquisitor Fairbanks"] = 47,
-									["Scarlet Wizard"] = 46,
-									["High Inquisitor Whitemane"] = 130,
+									["Scarlet Champion"] = 77,
+									["High Inquisitor Whitemane"] = 93,
+									["High Inquisitor Fairbanks"] = 150,
+									["Scarlet Monk"] = 50,
+									["Scarlet Abbot"] = 244,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 423,
+								["n_dmg"] = 193,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 28,
-								["total"] = 1767,
+								["counter"] = 9,
+								["total"] = 614,
 								["c_max"] = 100,
 								["id"] = "Pummel",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
-								["BLOCK"] = 1,
+								["a_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
-								["n_amt"] = 10,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["n_amt"] = 4,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
-							["Charge Stun"] = {
+							["Demoralizing Shout"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Scarlet Commander Mograine"] = 0,
+									["Scarlet Wizard"] = 0,
+									["Scarlet Centurion"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 0,
+								["counter"] = 2,
 								["total"] = 0,
 								["c_max"] = 0,
-								["id"] = "Charge Stun",
+								["id"] = "Demoralizing Shout",
 								["r_dmg"] = 0,
 								["a_dmg"] = 0,
-								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["m_amt"] = 0,
+								["m_crit"] = 0,
+								["RESIST"] = 2,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["r_amt"] = 0,
 							},
 							["Sunder Armor"] = {
@@ -13806,17 +15513,18 @@ _detalhes_database = {
 								["n_max"] = 0,
 								["targets"] = {
 									["Scarlet Commander Mograine"] = 0,
+									["Scarlet Myrmidon"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 1,
+								["counter"] = 2,
 								["total"] = 0,
 								["c_max"] = 0,
 								["id"] = "Sunder Armor",
 								["r_dmg"] = 0,
-								["IMMUNE"] = 1,
+								["IMMUNE"] = 2,
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["m_amt"] = 0,
@@ -13827,1040 +15535,220 @@ _detalhes_database = {
 								["a_amt"] = 0,
 								["r_amt"] = 0,
 							},
-							["Fire Shield"] = {
-								["c_amt"] = 4,
+							["!Autoshot"] = {
+								["c_amt"] = 0,
 								["b_amt"] = 0,
-								["c_dmg"] = 292,
+								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 50,
+								["n_max"] = 159,
 								["targets"] = {
-									["Scarlet Centurion"] = 650,
-									["Scarlet Sorcerer"] = 300,
-									["Scarlet Myrmidon"] = 2575,
-									["Scarlet Defender"] = 1417,
-									["Scarlet Abbot"] = 200,
-									["Scarlet Soldier"] = 450,
-									["Scarlet Evoker"] = 250,
-									["Scarlet Protector"] = 1625,
-									["Fire Elemental"] = 0,
-									["Scarlet Wizard"] = 250,
-									["Herod"] = 100,
-									["Scarlet Monk"] = 100,
-									["Scarlet Trainee"] = 2075,
+									["Scarlet Myrmidon"] = 159,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 9700,
+								["n_dmg"] = 159,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 206,
-								["total"] = 9992,
-								["c_max"] = 75,
-								["r_amt"] = 0,
-								["id"] = "Fire Shield",
+								["counter"] = 1,
+								["total"] = 159,
+								["c_max"] = 0,
+								["id"] = "!Autoshot",
 								["r_dmg"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 197,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["RESIST"] = 1,
 								["a_dmg"] = 0,
-								["IMMUNE"] = 4,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 1,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 							["Heroic Strike"] = {
-								["c_amt"] = 8,
+								["c_amt"] = 18,
 								["b_amt"] = 1,
-								["c_dmg"] = 7582,
+								["c_dmg"] = 17642,
 								["g_amt"] = 0,
-								["n_max"] = 565,
+								["n_max"] = 578,
 								["targets"] = {
-									["Scarlet Chaplain"] = 2521,
-									["Scarlet Centurion"] = 9143,
-									["Scarlet Sorcerer"] = 989,
-									["Scarlet Myrmidon"] = 4728,
-									["Scarlet Defender"] = 2567,
-									["Scarlet Champion"] = 493,
-									["Scarlet Guardsman"] = 408,
-									["Scarlet Soldier"] = 948,
-									["High Inquisitor Whitemane"] = 499,
-									["Scarlet Wizard"] = 1986,
-									["High Inquisitor Fairbanks"] = 1071,
-									["Herod"] = 906,
-									["Scarlet Monk"] = 1546,
-									["Scarlet Commander Mograine"] = 3338,
+									["Scarlet Chaplain"] = 885,
+									["Scarlet Centurion"] = 5687,
+									["Scarlet Sorcerer"] = 455,
+									["Scarlet Myrmidon"] = 2986,
+									["Scarlet Defender"] = 2277,
+									["Scarlet Abbot"] = 710,
+									["High Inquisitor Whitemane"] = 3043,
+									["High Inquisitor Fairbanks"] = 1512,
+									["Scarlet Wizard"] = 2526,
+									["Scarlet Champion"] = 1421,
+									["Scarlet Commander Mograine"] = 7713,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 23561,
+								["n_dmg"] = 11573,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 58,
-								["total"] = 31143,
-								["c_max"] = 1086,
+								["counter"] = 45,
+								["total"] = 29215,
+								["c_max"] = 1088,
 								["id"] = "Heroic Strike",
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
+								["a_amt"] = 0,
 								["m_crit"] = 0,
 								["c_min"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
-								["b_dmg"] = 364,
-								["n_amt"] = 50,
-								["a_amt"] = 1,
-								["a_dmg"] = 1071,
+								["b_dmg"] = 456,
+								["n_amt"] = 25,
+								["a_dmg"] = 0,
+								["IMMUNE"] = 2,
 							},
 						},
 						["tipo"] = 2,
 					},
 					["grupo"] = true,
-					["dps_started"] = false,
+					["end_time"] = 1595618602,
+					["last_event"] = 0,
+					["boss_fight_component"] = true,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["damage_taken"] = 95868.325583,
+					["start_time"] = 1595616145,
+					["serial"] = "Player-4465-010DF944",
+					["friendlyfire"] = {
+						["Kamenac"] = {
+							["total"] = 55,
+							["spells"] = {
+								["Hand of Justice"] = 0,
+							},
+						},
+					},
+				}, -- [1]
+				{
+					["flag_original"] = 2632,
+					["totalabsorbed"] = 0.121343,
+					["damage_from"] = {
+						["Kamenac"] = true,
+						["Vermin"] = true,
+					},
+					["targets"] = {
+						["Kamenac"] = 11890,
+						["Vermin"] = 0,
+					},
+					["pets"] = {
+					},
+					["friendlyfire_total"] = 0,
 					["on_hold"] = false,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 11890.121343,
+					["delay"] = 0,
+					["monster"] = true,
+					["end_time"] = 1595618602,
+					["dps_started"] = false,
+					["last_dps"] = 0,
+					["nome"] = "Scarlet Myrmidon",
+					["spells"] = {
+						["_ActorTable"] = {
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 95,
+								["targets"] = {
+									["Kamenac"] = 11890,
+									["Vermin"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 11890,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 678,
+								["r_amt"] = 0,
+								["total"] = 11890,
+								["c_max"] = 0,
+								["MISS"] = 202,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["b_dmg"] = 0,
+								["m_amt"] = 0,
+								["m_crit"] = 0,
+								["PARRY"] = 58,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_dmg"] = 0,
+								["n_amt"] = 301,
+								["DODGE"] = 117,
+								["a_amt"] = 0,
+							},
+							["Enrage"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Enrage",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 23,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["tipo"] = 1,
+					["friendlyfire"] = {
+					},
+					["total"] = 11890.121343,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
-					["start_time"] = 1595438075,
-					["serial"] = "Player-4465-010DF944",
-					["friendlyfire_total"] = 107,
+					["damage_taken"] = 115069.121343,
+					["start_time"] = 1595618098,
+					["serial"] = "Creature-0-4468-189-3060-4295-00049B34F4",
+					["fight_component"] = true,
 				}, -- [2]
 				{
 					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.042692,
+					["totalabsorbed"] = 0.095075,
 					["damage_from"] = {
 						["Kamenac"] = true,
 					},
 					["targets"] = {
-						["Kamenac"] = 571,
-						["Vermin"] = 27,
+						["Kamenac"] = 10461,
 					},
 					["pets"] = {
 					},
-					["total"] = 598.042692,
-					["on_hold"] = false,
+					["total"] = 10461.095075,
+					["friendlyfire"] = {
+					},
+					["friendlyfire_total"] = 0,
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 10461.095075,
+					["delay"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1595618602,
 					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 598.042692,
-					["delay"] = 0,
-					["fight_component"] = true,
-					["end_time"] = 1595442780,
-					["friendlyfire_total"] = 0,
 					["last_dps"] = 0,
-					["nome"] = "Scarlet Evoker",
-					["spells"] = {
-						["_ActorTable"] = {
-							["Fireball"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 167,
-								["targets"] = {
-									["Kamenac"] = 334,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 334,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 37,
-								["total"] = 334,
-								["c_max"] = 0,
-								["id"] = "Fireball",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["n_amt"] = 2,
-								["m_amt"] = 0,
-								["successful_casted"] = 37,
-								["b_dmg"] = 0,
-								["RESIST"] = 35,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 23,
-								["targets"] = {
-									["Kamenac"] = 171,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 171,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 17,
-								["total"] = 171,
-								["c_max"] = 0,
-								["r_amt"] = 0,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["b_dmg"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 9,
-								["DODGE"] = 3,
-								["MISS"] = 5,
-							},
-							["Flamestrike"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Kamenac"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 3,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Flamestrike",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 3,
-								["b_dmg"] = 0,
-								["RESIST"] = 3,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-							["Fire Shield Effect III"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 33,
-								["targets"] = {
-									["Kamenac"] = 66,
-									["Vermin"] = 27,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 93,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 12,
-								["total"] = 93,
-								["c_max"] = 0,
-								["id"] = "Fire Shield Effect III",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["n_amt"] = 3,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["RESIST"] = 9,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-							["Fire Shield III"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Fire Shield III",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 9,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["tipo"] = 1,
-					["monster"] = true,
-					["friendlyfire"] = {
-					},
-					["custom"] = 0,
-					["last_event"] = 0,
-					["damage_taken"] = 21713.042692,
-					["start_time"] = 1595442707,
-					["serial"] = "Creature-0-4468-189-23554-4289-00001885AB",
-					["dps_started"] = false,
-				}, -- [3]
-				{
-					["flag_original"] = 4680,
-					["totalabsorbed"] = 0.012131,
-					["damage_from"] = {
-						["Kamenac"] = true,
-					},
-					["targets"] = {
-						["Kamenac"] = 1278,
-						["Vermin"] = 516,
-					},
-					["pets"] = {
-					},
-					["tipo"] = 1,
-					["classe"] = "PET",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 1794.012131,
-					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
-					["end_time"] = 1595442780,
-					["delay"] = 0,
-					["friendlyfire"] = {
-					},
-					["nome"] = "Fire Elemental",
-					["spells"] = {
-						["_ActorTable"] = {
-							["!Melee"] = {
-								["c_amt"] = 1,
-								["b_amt"] = 0,
-								["c_dmg"] = 109,
-								["g_amt"] = 0,
-								["n_max"] = 83,
-								["targets"] = {
-									["Kamenac"] = 1278,
-									["Vermin"] = 516,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 1685,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 40,
-								["total"] = 1794,
-								["r_amt"] = 0,
-								["c_max"] = 109,
-								["MISS"] = 3,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["PARRY"] = 4,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["a_dmg"] = 0,
-								["n_amt"] = 28,
-								["a_amt"] = 0,
-								["DODGE"] = 4,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["on_hold"] = false,
-					["total"] = 1794.012131,
-					["dps_started"] = false,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["damage_taken"] = 3409.012131,
-					["start_time"] = 1595442692,
-					["serial"] = "Creature-0-4468-189-23554-575-00001885AC",
-					["last_dps"] = 0,
-				}, -- [4]
-				{
-					["flag_original"] = 1297,
-					["totalabsorbed"] = 0.078491,
-					["damage_from"] = {
-						["Scarlet Chaplain"] = true,
-						["Scarlet Centurion"] = true,
-						["Scarlet Sorcerer"] = true,
-						["Scarlet Myrmidon"] = true,
-						["Scarlet Defender"] = true,
-						["Scarlet Evoker"] = true,
-						["High Inquisitor Whitemane"] = true,
-						["Fire Elemental"] = true,
-						["Scarlet Wizard"] = true,
-						["Scarlet Conjuror"] = true,
-						["Scarlet Trainee"] = true,
-					},
-					["targets"] = {
-						["Scarlet Chaplain"] = 27,
-						["Scarlet Centurion"] = 5,
-						["High Inquisitor Whitemane"] = 48,
-						["Scarlet Myrmidon"] = 4,
-						["Scarlet Monk"] = 16,
-						["Scarlet Guardsman"] = 9,
-						["Scarlet Defender"] = 34,
-						["Ravenous Darkhound"] = 0,
-					},
-					["delay"] = 0,
-					["pets"] = {
-					},
-					["last_dps"] = 0,
-					["on_hold"] = false,
-					["classe"] = "WARRIOR",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 143.078491,
-					["end_time"] = 1595442780,
-					["dps_started"] = false,
-					["total"] = 143.078491,
-					["damage_taken"] = 4290.078491,
-					["tipo"] = 1,
-					["boss_fight_component"] = true,
-					["spells"] = {
-						["_ActorTable"] = {
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 23,
-								["n_max"] = 0,
-								["targets"] = {
-									["Scarlet Chaplain"] = 27,
-									["Scarlet Centurion"] = 5,
-									["Scarlet Myrmidon"] = 4,
-									["Scarlet Defender"] = 34,
-									["High Inquisitor Whitemane"] = 48,
-									["Scarlet Guardsman"] = 9,
-									["High Inquisitor Fairbanks"] = 0,
-									["Scarlet Wizard"] = 0,
-									["Scarlet Monk"] = 16,
-									["Ravenous Darkhound"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 143,
-								["counter"] = 40,
-								["total"] = 143,
-								["r_amt"] = 0,
-								["c_max"] = 0,
-								["DODGE"] = 4,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["PARRY"] = 7,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["a_dmg"] = 0,
-								["n_amt"] = 0,
-								["MISS"] = 6,
-								["a_amt"] = 0,
-							},
-							["Cleave"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Ravenous Darkhound"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Cleave",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-							["Demoralizing Shout"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Scarlet Chaplain"] = 0,
-									["Scarlet Soldier"] = 0,
-									["High Inquisitor Whitemane"] = 0,
-									["Fire Elemental"] = 0,
-									["Scarlet Conjuror"] = 0,
-									["Scarlet Commander Mograine"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 7,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Demoralizing Shout",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["RESIST"] = 7,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-							["Rend"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["High Inquisitor Fairbanks"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 1,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Rend",
-								["r_dmg"] = 0,
-								["DODGE"] = 1,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["m_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["r_amt"] = 0,
-							},
-							["Hamstring"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Ravenous Darkhound"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Hamstring",
-								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["r_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["grupo"] = true,
-					["spec"] = 71,
-					["nome"] = "Vermin",
-					["custom"] = 0,
-					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
-					["start_time"] = 1595442676,
-					["serial"] = "Player-4465-00E5831F",
-					["friendlyfire_total"] = 0,
-				}, -- [5]
-				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.025798,
-					["damage_from"] = {
-						["Kamenac"] = true,
-					},
-					["targets"] = {
-						["Kamenac"] = 1068,
-						["Vermin"] = 480,
-					},
-					["pets"] = {
-						"Fire Elemental <Scarlet Conjuror>", -- [1]
-					},
-					["on_hold"] = false,
-					["last_dps"] = 0,
-					["friendlyfire_total"] = 0,
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 882.025798,
-					["delay"] = 0,
-					["dps_started"] = false,
-					["total"] = 1548.025798,
-					["classe"] = "UNKNOW",
-					["friendlyfire"] = {
-					},
-					["nome"] = "Scarlet Conjuror",
-					["spells"] = {
-						["_ActorTable"] = {
-							["Fireball"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 160,
-								["targets"] = {
-									["Kamenac"] = 160,
-									["Vermin"] = 480,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 640,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 35,
-								["total"] = 640,
-								["c_max"] = 0,
-								["id"] = "Fireball",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["n_amt"] = 5,
-								["m_amt"] = 0,
-								["successful_casted"] = 35,
-								["b_dmg"] = 0,
-								["RESIST"] = 30,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 23,
-								["targets"] = {
-									["Kamenac"] = 242,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 242,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 20,
-								["total"] = 242,
-								["r_amt"] = 0,
-								["c_max"] = 0,
-								["a_amt"] = 0,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["PARRY"] = 1,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["a_dmg"] = 0,
-								["n_amt"] = 12,
-								["DODGE"] = 3,
-								["MISS"] = 4,
-							},
-							["Summon Fire Elemental"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Summon Fire Elemental",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 2,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["tipo"] = 1,
-					["monster"] = true,
-					["end_time"] = 1595442780,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["damage_taken"] = 12039.025798,
-					["start_time"] = 1595442606,
-					["serial"] = "Creature-0-4468-189-23554-4297-00001885AA",
-					["fight_component"] = true,
-				}, -- [6]
-				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.035902,
-					["damage_from"] = {
-						["Kamenac"] = true,
-						["Vermin"] = true,
-					},
-					["targets"] = {
-						["Kamenac"] = 3529,
-					},
-					["pets"] = {
-					},
-					["on_hold"] = false,
-					["last_dps"] = 0,
-					["friendlyfire_total"] = 0,
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 3529.035902,
-					["delay"] = 0,
-					["dps_started"] = false,
-					["total"] = 3529.035902,
-					["classe"] = "UNKNOW",
-					["friendlyfire"] = {
-					},
-					["nome"] = "Scarlet Guardsman",
-					["spells"] = {
-						["_ActorTable"] = {
-							["Disarm"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Kamenac"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 1,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Disarm",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["a_amt"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 6,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["DODGE"] = 1,
-							},
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 106,
-								["targets"] = {
-									["Kamenac"] = 3529,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 3529,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 61,
-								["total"] = 3529,
-								["r_amt"] = 0,
-								["c_max"] = 0,
-								["DODGE"] = 10,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["PARRY"] = 5,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["a_dmg"] = 0,
-								["n_amt"] = 42,
-								["a_amt"] = 0,
-								["MISS"] = 4,
-							},
-							["Defensive Stance"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Defensive Stance",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 9,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["tipo"] = 1,
-					["monster"] = true,
-					["end_time"] = 1595442829,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["damage_taken"] = 40372.035902,
-					["start_time"] = 1595442688,
-					["serial"] = "Creature-0-4468-189-23554-4290-00011885AA",
-					["fight_component"] = true,
-				}, -- [7]
-				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.071593,
-					["damage_from"] = {
-						["Kamenac"] = true,
-					},
-					["targets"] = {
-						["Kamenac"] = 5905,
-					},
-					["pets"] = {
-					},
-					["total"] = 5905.071593,
-					["on_hold"] = false,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 5905.071593,
-					["delay"] = 0,
-					["dps_started"] = false,
-					["end_time"] = 1595442859,
-					["fight_component"] = true,
-					["last_dps"] = 0,
-					["nome"] = "Scarlet Protector",
-					["spells"] = {
-						["_ActorTable"] = {
-							["Devotion Aura"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Devotion Aura",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 17,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 52,
-								["targets"] = {
-									["Kamenac"] = 5905,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 5905,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 195,
-								["total"] = 5905,
-								["r_amt"] = 0,
-								["c_max"] = 0,
-								["DODGE"] = 21,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["PARRY"] = 16,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["a_dmg"] = 0,
-								["n_amt"] = 143,
-								["MISS"] = 15,
-								["a_amt"] = 0,
-							},
-							["Holy Light"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Holy Light",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 29,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["tipo"] = 1,
-					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
-					["custom"] = 0,
-					["last_event"] = 0,
-					["damage_taken"] = 100184.071593,
-					["start_time"] = 1595442483,
-					["serial"] = "Creature-0-4468-189-23554-4292-00001885AA",
-					["monster"] = true,
-				}, -- [8]
-				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.221114,
-					["damage_from"] = {
-						["Kamenac"] = true,
-						["Vermin"] = true,
-					},
-					["targets"] = {
-						["Kamenac"] = 19057,
-						["Vermin"] = 117,
-					},
-					["pets"] = {
-					},
-					["end_time"] = 1595443060,
-					["damage_taken"] = 272071.221114,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 19174.221114,
-					["delay"] = 0,
-					["monster"] = true,
-					["total"] = 19174.221114,
-					["fight_component"] = true,
-					["on_hold"] = false,
 					["nome"] = "Scarlet Defender",
 					["spells"] = {
 						["_ActorTable"] = {
-							["Defensive Stance"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Defensive Stance",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 52,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-							["!Melee"] = {
-								["c_amt"] = 3,
-								["b_amt"] = 0,
-								["c_dmg"] = 271,
-								["g_amt"] = 0,
-								["n_max"] = 117,
-								["targets"] = {
-									["Kamenac"] = 19057,
-									["Vermin"] = 117,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 18903,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 647,
-								["total"] = 19174,
-								["r_amt"] = 0,
-								["c_max"] = 100,
-								["DODGE"] = 83,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["PARRY"] = 52,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["a_dmg"] = 0,
-								["n_amt"] = 439,
-								["MISS"] = 70,
-								["a_amt"] = 0,
-							},
 							["Improved Blocking"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
@@ -14880,9 +15768,67 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
 								["m_amt"] = 0,
-								["successful_casted"] = 81,
+								["c_min"] = 0,
+								["successful_casted"] = 53,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 62,
+								["targets"] = {
+									["Kamenac"] = 10461,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 10461,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 394,
+								["r_amt"] = 0,
+								["total"] = 10461,
+								["c_max"] = 0,
+								["DODGE"] = 53,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["b_dmg"] = 0,
+								["m_amt"] = 0,
+								["m_crit"] = 0,
+								["PARRY"] = 41,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_dmg"] = 0,
+								["n_amt"] = 250,
+								["MISS"] = 50,
+								["a_amt"] = 0,
+							},
+							["Defensive Stance"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Defensive Stance",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 30,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
 								["a_amt"] = 0,
@@ -14892,460 +15838,138 @@ _detalhes_database = {
 						["tipo"] = 2,
 					},
 					["tipo"] = 1,
+					["damage_taken"] = 131879.095075,
+					["fight_component"] = true,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1595618014,
+					["serial"] = "Creature-0-4468-189-3060-4298-00001B34F3",
+					["monster"] = true,
+				}, -- [3]
+				{
+					["flag_original"] = 1297,
+					["totalabsorbed"] = 0.040754,
+					["damage_from"] = {
+						["Scarlet Centurion"] = true,
+						["Scarlet Wizard"] = true,
+					},
+					["targets"] = {
+						["Scarlet Sorcerer"] = 11,
+						["Scarlet Myrmidon"] = 32,
+					},
+					["pets"] = {
+					},
+					["classe"] = "WARRIOR",
+					["tipo"] = 1,
+					["friendlyfire_total"] = 0,
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 43.040754,
+					["delay"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1595618602,
+					["damage_taken"] = 1815.040754,
 					["friendlyfire"] = {
 					},
-					["friendlyfire_total"] = 0,
+					["nome"] = "Vermin",
+					["spells"] = {
+						["_ActorTable"] = {
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 6,
+								["n_max"] = 0,
+								["targets"] = {
+									["Scarlet Defender"] = 0,
+									["Scarlet Sorcerer"] = 11,
+									["Scarlet Myrmidon"] = 32,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 43,
+								["counter"] = 10,
+								["total"] = 43,
+								["c_max"] = 0,
+								["r_amt"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["MISS"] = 2,
+								["c_min"] = 0,
+								["m_crit"] = 0,
+								["PARRY"] = 2,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Charge Stun"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Scarlet Defender"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 1,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Charge Stun",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["a_amt"] = 0,
+								["m_crit"] = 0,
+								["RESIST"] = 1,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["grupo"] = true,
+					["spec"] = 71,
+					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
 					["last_dps"] = 0,
-					["start_time"] = 1595442059,
-					["serial"] = "Creature-0-4468-189-23554-4298-00039885AA",
-					["dps_started"] = false,
-				}, -- [9]
+					["start_time"] = 1595618568,
+					["serial"] = "Player-4465-00E5831F",
+					["total"] = 43.040754,
+				}, -- [4]
 				{
 					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.266032,
+					["totalabsorbed"] = 0.0945,
 					["damage_from"] = {
 						["Kamenac"] = true,
 						["Vermin"] = true,
 					},
 					["targets"] = {
-						["Kamenac"] = 31562,
-						["Vermin"] = 713,
+						["Kamenac"] = 2939,
 					},
-					["delay"] = 0,
 					["pets"] = {
 					},
-					["damage_taken"] = 282426.266032,
-					["friendlyfire_total"] = 0,
+					["dps_started"] = false,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
-					["total_without_pet"] = 32275.266032,
-					["monster"] = true,
-					["dps_started"] = false,
-					["total"] = 32275.266032,
-					["last_dps"] = 0,
-					["tipo"] = 1,
-					["boss_fight_component"] = true,
-					["spells"] = {
-						["_ActorTable"] = {
-							["!Melee"] = {
-								["c_amt"] = 5,
-								["b_amt"] = 0,
-								["c_dmg"] = 581,
-								["g_amt"] = 0,
-								["n_max"] = 132,
-								["targets"] = {
-									["Kamenac"] = 31562,
-									["Vermin"] = 713,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 31694,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 1558,
-								["total"] = 32275,
-								["r_amt"] = 0,
-								["c_max"] = 195,
-								["DODGE"] = 228,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["PARRY"] = 133,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["a_dmg"] = 0,
-								["n_amt"] = 739,
-								["MISS"] = 453,
-								["a_amt"] = 0,
-							},
-							["Enrage"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Enrage",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 62,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["nome"] = "Scarlet Myrmidon",
-					["friendlyfire"] = {
-					},
-					["end_time"] = 1595443060,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1595441998,
-					["serial"] = "Creature-0-4468-189-23554-4295-00019885AA",
-					["fight_component"] = true,
-				}, -- [10]
-				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.004448,
-					["damage_from"] = {
-						["Kamenac"] = true,
-					},
-					["targets"] = {
-						["Kamenac"] = 1659,
-					},
-					["pets"] = {
-					},
-					["monster"] = true,
-					["nome"] = "Herod",
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 1659.004448,
-					["delay"] = 0,
-					["dps_started"] = false,
-					["end_time"] = 1595443569,
-					["friendlyfire"] = {
-					},
-					["on_hold"] = false,
-					["boss_fight_component"] = true,
-					["spells"] = {
-						["_ActorTable"] = {
-							["Enrage"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Enrage",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 1,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 334,
-								["targets"] = {
-									["Kamenac"] = 1462,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 1462,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 12,
-								["total"] = 1462,
-								["r_amt"] = 0,
-								["c_max"] = 0,
-								["MISS"] = 1,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["PARRY"] = 1,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["a_dmg"] = 0,
-								["n_amt"] = 8,
-								["DODGE"] = 2,
-								["a_amt"] = 0,
-							},
-							["Cleave"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Kamenac"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 1,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Cleave",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["a_amt"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 1,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_dmg"] = 0,
-								["DODGE"] = 1,
-							},
-							["Whirlwind"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 197,
-								["targets"] = {
-									["Kamenac"] = 197,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 197,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 1,
-								["total"] = 197,
-								["c_max"] = 0,
-								["id"] = "Whirlwind",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 3,
-								["b_dmg"] = 0,
-								["n_amt"] = 1,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-							["Rushing Charge"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Rushing Charge",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 1,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["tipo"] = 1,
-					["friendlyfire_total"] = 0,
-					["total"] = 1659.004448,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["damage_taken"] = 13470.004448,
-					["start_time"] = 1595443530,
-					["serial"] = "Creature-0-4468-189-23554-3975-00001885A9",
-					["last_dps"] = 0,
-				}, -- [11]
-				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.012747,
-					["damage_from"] = {
-						["Kamenac"] = true,
-					},
-					["targets"] = {
-						["Kamenac"] = 527,
-						["Vermin"] = 227,
-					},
-					["pets"] = {
-					},
-					["fight_component"] = true,
-					["on_hold"] = false,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 754.012747,
-					["delay"] = 0,
-					["dps_started"] = false,
-					["end_time"] = 1595443607,
-					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
-					["nome"] = "Scarlet Trainee",
-					["spells"] = {
-						["_ActorTable"] = {
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 42,
-								["targets"] = {
-									["Kamenac"] = 527,
-									["Vermin"] = 227,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 754,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 56,
-								["total"] = 754,
-								["r_amt"] = 0,
-								["c_max"] = 0,
-								["MISS"] = 9,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["PARRY"] = 1,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["a_dmg"] = 0,
-								["n_amt"] = 45,
-								["DODGE"] = 1,
-								["a_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
-					["total"] = 754.012747,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["damage_taken"] = 6470.012747,
-					["start_time"] = 1595443590,
-					["serial"] = "Creature-0-4468-189-23554-6575-000518896F",
-					["monster"] = true,
-				}, -- [12]
-				{
-					["flag_original"] = 4680,
-					["totalabsorbed"] = 0.0134,
-					["damage_from"] = {
-						["Kamenac"] = true,
-					},
-					["targets"] = {
-						["Kamenac"] = 666,
-					},
-					["pets"] = {
-					},
-					["end_time"] = 1595443831,
-					["tipo"] = 1,
-					["friendlyfire_total"] = 0,
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 666.0134,
-					["delay"] = 0,
-					["fight_component"] = true,
-					["total"] = 666.0134,
-					["on_hold"] = false,
-					["ownerName"] = "Scarlet Conjuror",
-					["nome"] = "Fire Elemental <Scarlet Conjuror>",
-					["spells"] = {
-						["_ActorTable"] = {
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 70,
-								["targets"] = {
-									["Kamenac"] = 666,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 666,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 14,
-								["total"] = 666,
-								["c_max"] = 0,
-								["r_amt"] = 0,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["b_dmg"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["a_amt"] = 0,
-								["n_amt"] = 11,
-								["DODGE"] = 1,
-								["MISS"] = 2,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["damage_taken"] = 3024.0134,
-					["friendlyfire"] = {
-					},
-					["dps_started"] = false,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["last_dps"] = 0,
-					["start_time"] = 1595443797,
-					["serial"] = "Creature-0-4468-189-24138-575-0000188A13",
-					["classe"] = "PET",
-				}, -- [13]
-				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.100065,
-					["damage_from"] = {
-						["Kamenac"] = true,
-					},
-					["targets"] = {
-						["Kamenac"] = 3643,
-						["Vermin"] = 189,
-					},
-					["pets"] = {
-					},
-					["dps_started"] = false,
-					["damage_taken"] = 102704.100065,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 3832.100065,
+					["total_without_pet"] = 2939.0945,
 					["delay"] = 0,
 					["monster"] = true,
-					["total"] = 3832.100065,
+					["total"] = 2939.0945,
 					["friendlyfire_total"] = 0,
 					["on_hold"] = false,
 					["nome"] = "Scarlet Sorcerer",
@@ -15358,59 +15982,58 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 130,
 								["targets"] = {
-									["Kamenac"] = 2053,
-									["Vermin"] = 189,
+									["Kamenac"] = 1471,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 2242,
+								["n_dmg"] = 1471,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 160,
-								["total"] = 2242,
+								["counter"] = 180,
+								["total"] = 1471,
 								["c_max"] = 0,
 								["id"] = "Frostbolt",
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["n_amt"] = 21,
 								["m_amt"] = 0,
-								["successful_casted"] = 157,
+								["m_crit"] = 0,
+								["n_amt"] = 13,
+								["c_min"] = 0,
+								["successful_casted"] = 180,
 								["b_dmg"] = 0,
-								["RESIST"] = 139,
+								["RESIST"] = 167,
 								["a_amt"] = 0,
 								["a_dmg"] = 0,
 							},
 							["!Melee"] = {
-								["c_amt"] = 0,
+								["c_amt"] = 2,
 								["b_amt"] = 0,
-								["c_dmg"] = 0,
+								["c_dmg"] = 94,
 								["g_amt"] = 0,
-								["n_max"] = 30,
+								["n_max"] = 29,
 								["targets"] = {
-									["Kamenac"] = 1590,
+									["Kamenac"] = 1468,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 1590,
+								["n_dmg"] = 1374,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 106,
-								["total"] = 1590,
+								["counter"] = 87,
 								["r_amt"] = 0,
-								["c_max"] = 0,
-								["DODGE"] = 17,
+								["total"] = 1468,
+								["c_max"] = 49,
+								["DODGE"] = 13,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
 								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["PARRY"] = 10,
 								["m_amt"] = 0,
+								["m_crit"] = 0,
+								["PARRY"] = 4,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["a_dmg"] = 0,
-								["n_amt"] = 72,
-								["MISS"] = 7,
+								["n_amt"] = 62,
 								["a_amt"] = 0,
+								["MISS"] = 6,
 							},
 							["Slow"] = {
 								["c_amt"] = 0,
@@ -15425,19 +16048,19 @@ _detalhes_database = {
 								["n_dmg"] = 0,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 22,
+								["counter"] = 26,
 								["total"] = 0,
 								["c_max"] = 0,
 								["id"] = "Slow",
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["m_crit"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 28,
 								["b_dmg"] = 0,
-								["RESIST"] = 22,
+								["RESIST"] = 26,
 								["a_amt"] = 0,
 								["a_dmg"] = 0,
 							},
@@ -15447,73 +16070,40 @@ _detalhes_database = {
 					["tipo"] = 1,
 					["friendlyfire"] = {
 					},
-					["end_time"] = 1595446066,
+					["end_time"] = 1595618628,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
-					["start_time"] = 1595445442,
-					["serial"] = "Creature-0-4468-189-24138-4294-0000188A0C",
+					["damage_taken"] = 88277.0945,
+					["start_time"] = 1595618149,
+					["serial"] = "Creature-0-4468-189-3060-4294-00019B34F3",
 					["fight_component"] = true,
-				}, -- [14]
+				}, -- [5]
 				{
 					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.186609,
+					["totalabsorbed"] = 0.192092,
 					["damage_from"] = {
 						["Kamenac"] = true,
-						["Vermin"] = true,
 					},
 					["targets"] = {
-						["Kamenac"] = 32177,
-						["Vermin"] = 989,
+						["Kamenac"] = 30852,
+						["Vermin"] = 1568,
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
+					["damage_taken"] = 210447.192092,
+					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
-					["total_without_pet"] = 33166.186609,
+					["total_without_pet"] = 32420.192092,
 					["delay"] = 0,
+					["fight_component"] = true,
+					["end_time"] = 1595618643,
 					["monster"] = true,
-					["end_time"] = 1595446066,
-					["classe"] = "UNKNOW",
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["nome"] = "Scarlet Centurion",
 					["spells"] = {
 						["_ActorTable"] = {
-							["!Melee"] = {
-								["c_amt"] = 3,
-								["b_amt"] = 0,
-								["c_dmg"] = 711,
-								["g_amt"] = 0,
-								["n_max"] = 252,
-								["targets"] = {
-									["Kamenac"] = 32177,
-									["Vermin"] = 989,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 32455,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 543,
-								["total"] = 33166,
-								["r_amt"] = 0,
-								["c_max"] = 283,
-								["DODGE"] = 79,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["PARRY"] = 37,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["a_dmg"] = 0,
-								["n_amt"] = 366,
-								["MISS"] = 58,
-								["a_amt"] = 0,
-							},
 							["Battle Shout"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
@@ -15531,11 +16121,71 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Battle Shout",
 								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 64,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
+							},
+							["!Melee"] = {
+								["c_amt"] = 3,
+								["b_amt"] = 0,
+								["c_dmg"] = 475,
+								["g_amt"] = 0,
+								["n_max"] = 253,
+								["targets"] = {
+									["Kamenac"] = 30852,
+									["Vermin"] = 1568,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 31945,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 586,
+								["MISS"] = 47,
+								["total"] = 32420,
+								["c_max"] = 172,
+								["r_amt"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_amt"] = 0,
+								["m_crit"] = 0,
+								["PARRY"] = 73,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 382,
+								["DODGE"] = 81,
+								["a_amt"] = 0,
+							},
+							["Retribution Aura"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Kamenac"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Retribution Aura",
+								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
 								["c_min"] = 0,
 								["m_amt"] = 0,
-								["successful_casted"] = 65,
+								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
 								["a_amt"] = 0,
@@ -15545,39 +16195,78 @@ _detalhes_database = {
 						["tipo"] = 2,
 					},
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
-					["total"] = 33166.186609,
+					["dps_started"] = false,
+					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["damage_taken"] = 234985.186609,
-					["start_time"] = 1595445117,
-					["serial"] = "Creature-0-4468-189-24138-4301-0001988A0B",
-					["fight_component"] = true,
-				}, -- [15]
+					["friendlyfire"] = {
+					},
+					["start_time"] = 1595617828,
+					["serial"] = "Creature-0-4468-189-3060-4301-00029B34F3",
+					["total"] = 32420.192092,
+				}, -- [6]
 				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.120846,
+					["flag_original"] = 2600,
+					["totalabsorbed"] = 0.017148,
 					["damage_from"] = {
 						["Kamenac"] = true,
 					},
 					["targets"] = {
-						["Kamenac"] = 6092,
-						["Vermin"] = 845,
+					},
+					["pets"] = {
+					},
+					["tipo"] = 1,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.017148,
+					["friendlyfire_total"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1595618701,
+					["delay"] = 0,
+					["damage_taken"] = 779.017148,
+					["nome"] = "Rabbit",
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 2,
+					},
+					["on_hold"] = false,
+					["total"] = 0.017148,
+					["friendlyfire"] = {
+					},
+					["custom"] = 0,
+					["last_event"] = 0,
+					["last_dps"] = 0,
+					["start_time"] = 1595618698,
+					["serial"] = "Creature-0-4468-189-3060-721-00019B34F3",
+					["fight_component"] = true,
+				}, -- [7]
+				{
+					["flag_original"] = 2632,
+					["totalabsorbed"] = 0.147567,
+					["damage_from"] = {
+						["Kamenac"] = true,
+					},
+					["targets"] = {
+						["Kamenac"] = 6377,
+						["Flexlikekev"] = 469,
+						["Vermin"] = 247,
 					},
 					["pets"] = {
 					},
 					["monster"] = true,
-					["damage_taken"] = 114126.120846,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
-					["total_without_pet"] = 6937.120846,
-					["delay"] = 0,
+					["total_without_pet"] = 7093.147567,
+					["serial"] = "Creature-0-4468-189-3060-4300-00031B34F3",
 					["fight_component"] = true,
-					["end_time"] = 1595446149,
+					["total"] = 7093.147567,
 					["friendlyfire_total"] = 0,
-					["on_hold"] = false,
+					["damage_taken"] = 86882.147567,
 					["nome"] = "Scarlet Wizard",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -15598,77 +16287,78 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Fire Shield III",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 26,
+								["successful_casted"] = 27,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 							["Arcane Explosion"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 136,
+								["n_max"] = 149,
 								["targets"] = {
 									["Kamenac"] = 0,
-									["Vermin"] = 393,
+									["Flexlikekev"] = 438,
+									["Vermin"] = 130,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 393,
+								["n_dmg"] = 568,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 6,
-								["total"] = 393,
+								["counter"] = 8,
+								["total"] = 568,
 								["c_max"] = 0,
 								["id"] = "Arcane Explosion",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["n_amt"] = 3,
-								["m_amt"] = 0,
-								["successful_casted"] = 3,
-								["b_dmg"] = 0,
-								["RESIST"] = 3,
-								["a_amt"] = 0,
 								["a_dmg"] = 0,
+								["a_amt"] = 0,
+								["m_crit"] = 0,
+								["RESIST"] = 4,
+								["c_min"] = 0,
+								["successful_casted"] = 4,
+								["b_dmg"] = 0,
+								["n_amt"] = 4,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 							["!Melee"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 110,
+								["n_max"] = 117,
 								["targets"] = {
-									["Kamenac"] = 5821,
-									["Vermin"] = 396,
+									["Kamenac"] = 6038,
+									["Vermin"] = 117,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 6217,
+								["n_dmg"] = 6155,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 199,
-								["total"] = 6217,
-								["r_amt"] = 0,
+								["counter"] = 198,
+								["a_amt"] = 0,
+								["total"] = 6155,
 								["c_max"] = 0,
-								["MISS"] = 18,
+								["DODGE"] = 26,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
 								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["PARRY"] = 20,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
 								["a_dmg"] = 0,
-								["n_amt"] = 143,
-								["DODGE"] = 18,
-								["a_amt"] = 0,
+								["m_crit"] = 0,
+								["PARRY"] = 10,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["m_amt"] = 0,
+								["n_amt"] = 136,
+								["MISS"] = 26,
+								["r_amt"] = 0,
 							},
 							["Fire Shield Effect III"] = {
 								["c_amt"] = 0,
@@ -15677,218 +16367,68 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 34,
 								["targets"] = {
-									["Kamenac"] = 271,
-									["Vermin"] = 56,
+									["Kamenac"] = 339,
+									["Flexlikekev"] = 31,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 327,
+								["n_dmg"] = 370,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 96,
-								["total"] = 327,
+								["counter"] = 115,
+								["total"] = 370,
 								["c_max"] = 0,
 								["id"] = "Fire Shield Effect III",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
+								["a_dmg"] = 0,
+								["a_amt"] = 0,
 								["m_crit"] = 0,
-								["n_amt"] = 10,
-								["m_amt"] = 0,
+								["RESIST"] = 104,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
-								["RESIST"] = 86,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["n_amt"] = 11,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
-					["total"] = 6937.120846,
-					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
-					["start_time"] = 1595445738,
-					["serial"] = "Creature-0-4468-189-24138-4300-0001988A0D",
-					["dps_started"] = false,
-				}, -- [16]
-				{
-					["flag_original"] = 2600,
-					["totalabsorbed"] = 0.014065,
-					["damage_from"] = {
-						["Kamenac"] = true,
-					},
-					["targets"] = {
-					},
-					["pets"] = {
-					},
-					["tipo"] = 1,
-					["friendlyfire_total"] = 0,
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.014065,
+					["end_time"] = 1595618959,
 					["on_hold"] = false,
-					["fight_component"] = true,
-					["total"] = 0.014065,
-					["delay"] = 0,
-					["last_dps"] = 0,
-					["nome"] = "Rabbit",
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 2,
-					},
-					["friendlyfire"] = {
-					},
-					["end_time"] = 1595446463,
-					["classe"] = "UNKNOW",
 					["custom"] = 0,
-					["last_event"] = 0,
-					["damage_taken"] = 859.014065,
-					["start_time"] = 1595446460,
-					["serial"] = "Creature-0-4468-189-24138-721-0000988A0C",
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1595618539,
+					["delay"] = 0,
 					["dps_started"] = false,
-				}, -- [17]
+				}, -- [8]
 				{
 					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.099306,
+					["totalabsorbed"] = 0.075816,
 					["damage_from"] = {
 						["Kamenac"] = true,
 					},
 					["targets"] = {
-						["Kamenac"] = 5743,
+						["Kamenac"] = 2239,
+						["Vermin"] = 0,
 					},
 					["pets"] = {
 					},
 					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
+					["on_hold"] = false,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
-					["total_without_pet"] = 5743.099306,
-					["delay"] = 0,
+					["total_without_pet"] = 2239.075816,
+					["serial"] = "Creature-0-4468-189-3060-4299-00039B34F3",
 					["dps_started"] = false,
-					["total"] = 5743.099306,
-					["fight_component"] = true,
+					["end_time"] = 1595619246,
+					["total"] = 2239.075816,
 					["last_dps"] = 0,
-					["nome"] = "Scarlet Abbot",
+					["nome"] = "Scarlet Chaplain",
 					["spells"] = {
 						["_ActorTable"] = {
-							["Enrage"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Enrage",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 15,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-							["Heal"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Heal",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 7,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-							["!Melee"] = {
-								["c_amt"] = 1,
-								["b_amt"] = 0,
-								["c_dmg"] = 132,
-								["g_amt"] = 0,
-								["n_max"] = 98,
-								["targets"] = {
-									["Kamenac"] = 5743,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 5611,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 159,
-								["total"] = 5743,
-								["r_amt"] = 0,
-								["c_max"] = 132,
-								["MISS"] = 17,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["PARRY"] = 14,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["a_dmg"] = 0,
-								["n_amt"] = 93,
-								["DODGE"] = 34,
-								["a_amt"] = 0,
-							},
-							["Renew"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Renew",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 9,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
 							["Inner Fire"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
@@ -15906,288 +16446,16 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Inner Fire",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 12,
+								["successful_casted"] = 6,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["tipo"] = 1,
-					["damage_taken"] = 62626.099306,
-					["end_time"] = 1595446572,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1595446245,
-					["serial"] = "Creature-0-4468-189-24138-4303-0001188A0D",
-					["monster"] = true,
-				}, -- [18]
-				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.096763,
-					["damage_from"] = {
-						["Kamenac"] = true,
-					},
-					["targets"] = {
-						["Kamenac"] = 9759,
-					},
-					["pets"] = {
-					},
-					["end_time"] = 1595446845,
-					["damage_taken"] = 89598.096763,
-					["friendlyfire_total"] = 0,
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 9759.096763,
-					["delay"] = 0,
-					["fight_component"] = true,
-					["total"] = 9759.096763,
-					["classe"] = "UNKNOW",
-					["last_dps"] = 0,
-					["nome"] = "Scarlet Champion",
-					["spells"] = {
-						["_ActorTable"] = {
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 73,
-								["targets"] = {
-									["Kamenac"] = 6852,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 6852,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 175,
-								["total"] = 6852,
-								["r_amt"] = 0,
-								["c_max"] = 0,
-								["DODGE"] = 25,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["PARRY"] = 11,
 								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["a_dmg"] = 0,
-								["n_amt"] = 120,
-								["a_amt"] = 0,
-								["MISS"] = 19,
-							},
-							["Holy Strike"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 413,
-								["targets"] = {
-									["Kamenac"] = 2907,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 2907,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 10,
-								["total"] = 2907,
-								["c_max"] = 0,
 								["r_amt"] = 0,
-								["id"] = "Holy Strike",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["PARRY"] = 1,
-								["m_amt"] = 0,
-								["successful_casted"] = 10,
-								["b_dmg"] = 0,
-								["n_amt"] = 8,
-								["a_amt"] = 0,
-								["DODGE"] = 1,
 							},
-						},
-						["tipo"] = 2,
-					},
-					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
-					["dps_started"] = false,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1595446512,
-					["serial"] = "Creature-0-4468-189-24138-4302-0000988A0B",
-					["monster"] = true,
-				}, -- [19]
-				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.071489,
-					["damage_from"] = {
-						["Kamenac"] = true,
-						["Scarlet Monk"] = true,
-						["Vermin"] = true,
-					},
-					["targets"] = {
-						["Kamenac"] = 8669,
-						["Scarlet Monk"] = 36,
-					},
-					["pets"] = {
-					},
-					["total"] = 8705.071489,
-					["last_dps"] = 0,
-					["friendlyfire_total"] = 0,
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 8705.071489,
-					["delay"] = 0,
-					["monster"] = true,
-					["end_time"] = 1595446845,
-					["classe"] = "UNKNOW",
-					["damage_taken"] = 90796.071489,
-					["nome"] = "Scarlet Monk",
-					["spells"] = {
-						["_ActorTable"] = {
-							["Kick"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 10,
-								["targets"] = {
-									["Kamenac"] = 162,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 162,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 38,
-								["total"] = 162,
-								["r_amt"] = 0,
-								["c_max"] = 0,
-								["a_amt"] = 0,
-								["id"] = "Kick",
-								["r_dmg"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["PARRY"] = 7,
-								["m_amt"] = 0,
-								["successful_casted"] = 38,
-								["a_dmg"] = 0,
-								["n_amt"] = 19,
-								["MISS"] = 7,
-								["DODGE"] = 5,
-							},
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 70,
-								["targets"] = {
-									["Kamenac"] = 8507,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 8507,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 267,
-								["total"] = 8507,
-								["r_amt"] = 0,
-								["c_max"] = 0,
-								["MISS"] = 22,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["PARRY"] = 25,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["a_dmg"] = 0,
-								["n_amt"] = 174,
-								["DODGE"] = 46,
-								["a_amt"] = 0,
-							},
-							["Thrash"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 2,
-								["targets"] = {
-									["Scarlet Monk"] = 36,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 36,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 18,
-								["total"] = 36,
-								["c_max"] = 0,
-								["id"] = "Thrash",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 18,
-								["b_dmg"] = 0,
-								["n_amt"] = 18,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["tipo"] = 1,
-					["on_hold"] = false,
-					["dps_started"] = false,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
-					["start_time"] = 1595446465,
-					["serial"] = "Creature-0-4468-189-24138-4540-0004188A0D",
-					["fight_component"] = true,
-				}, -- [20]
-				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.092362,
-					["damage_from"] = {
-						["Kamenac"] = true,
-						["Vermin"] = true,
-					},
-					["targets"] = {
-						["Kamenac"] = 3094,
-						["Vermin"] = 118,
-					},
-					["pets"] = {
-					},
-					["monster"] = true,
-					["damage_taken"] = 52377.092362,
-					["friendlyfire_total"] = 0,
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 3212.092362,
-					["delay"] = 0,
-					["fight_component"] = true,
-					["total"] = 3212.092362,
-					["classe"] = "UNKNOW",
-					["last_dps"] = 0,
-					["nome"] = "Scarlet Chaplain",
-					["spells"] = {
-						["_ActorTable"] = {
 							["Renew"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
@@ -16205,47 +16473,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Renew",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
-								["m_amt"] = 0,
 								["successful_casted"] = 7,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 118,
-								["targets"] = {
-									["Kamenac"] = 3094,
-									["Vermin"] = 118,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 3212,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 111,
-								["total"] = 3212,
-								["r_amt"] = 0,
-								["c_max"] = 0,
-								["MISS"] = 11,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["PARRY"] = 7,
 								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["a_dmg"] = 0,
-								["n_amt"] = 81,
-								["DODGE"] = 12,
-								["a_amt"] = 0,
+								["r_amt"] = 0,
 							},
 							["Power Word: Shield"] = {
 								["c_amt"] = 0,
@@ -16264,16 +16500,88 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Power Word: Shield",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 15,
+								["successful_casted"] = 8,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 51,
+								["targets"] = {
+									["Kamenac"] = 2239,
+									["Vermin"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 2239,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 84,
+								["a_amt"] = 0,
+								["total"] = 2239,
+								["c_max"] = 0,
+								["MISS"] = 11,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["b_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["PARRY"] = 7,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["m_amt"] = 0,
+								["n_amt"] = 57,
+								["DODGE"] = 9,
+								["r_amt"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["last_event"] = 0,
+					["friendlyfire"] = {
+					},
+					["monster"] = true,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["damage_taken"] = 37629.075816,
+					["start_time"] = 1595619071,
+					["delay"] = 0,
+					["fight_component"] = true,
+				}, -- [9]
+				{
+					["flag_original"] = 2632,
+					["totalabsorbed"] = 0.050855,
+					["damage_from"] = {
+						["Kamenac"] = true,
+					},
+					["targets"] = {
+						["Kamenac"] = 6031,
+					},
+					["pets"] = {
+					},
+					["friendlyfire_total"] = 0,
+					["friendlyfire"] = {
+					},
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 6031.050855,
+					["serial"] = "Creature-0-4468-189-3060-4303-00009B34F3",
+					["dps_started"] = false,
+					["end_time"] = 1595619292,
+					["fight_component"] = true,
+					["on_hold"] = false,
+					["nome"] = "Scarlet Abbot",
+					["spells"] = {
+						["_ActorTable"] = {
 							["Inner Fire"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
@@ -16291,11 +16599,251 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Inner Fire",
 								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 2,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
+							},
+							["Heal"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Heal",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 8,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
+							},
+							["!Melee"] = {
+								["c_amt"] = 2,
+								["b_amt"] = 0,
+								["c_dmg"] = 290,
+								["g_amt"] = 0,
+								["n_max"] = 117,
+								["targets"] = {
+									["Kamenac"] = 6031,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 5741,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 148,
+								["MISS"] = 15,
+								["total"] = 6031,
+								["c_max"] = 201,
+								["DODGE"] = 21,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["b_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["PARRY"] = 14,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["m_amt"] = 0,
+								["n_amt"] = 96,
+								["a_amt"] = 0,
+								["r_amt"] = 0,
+							},
+							["Enrage"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Enrage",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 14,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
+							},
+							["Renew"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Renew",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 11,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["last_event"] = 0,
+					["last_dps"] = 0,
+					["total"] = 6031.050855,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["damage_taken"] = 54541.050855,
+					["start_time"] = 1595618992,
+					["delay"] = 0,
+					["monster"] = true,
+				}, -- [10]
+				{
+					["flag_original"] = 2632,
+					["totalabsorbed"] = 0.087507,
+					["damage_from"] = {
+						["Kamenac"] = true,
+					},
+					["targets"] = {
+						["Kamenac"] = 12758,
+					},
+					["pets"] = {
+					},
+					["dps_started"] = false,
+					["damage_taken"] = 82354.087507,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 12758.087507,
+					["serial"] = "Creature-0-4468-189-3060-4302-00019B34F3",
+					["fight_component"] = true,
+					["end_time"] = 1595619502,
+					["friendlyfire_total"] = 0,
+					["on_hold"] = false,
+					["nome"] = "Scarlet Champion",
+					["spells"] = {
+						["_ActorTable"] = {
+							["Holy Strike"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 411,
+								["targets"] = {
+									["Kamenac"] = 4998,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 4998,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 19,
+								["a_amt"] = 0,
+								["total"] = 4998,
+								["c_max"] = 0,
+								["DODGE"] = 1,
+								["id"] = "Holy Strike",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["b_dmg"] = 0,
+								["m_crit"] = 0,
+								["PARRY"] = 2,
+								["m_amt"] = 0,
+								["successful_casted"] = 19,
+								["c_min"] = 0,
+								["n_amt"] = 14,
+								["r_amt"] = 0,
+								["MISS"] = 2,
+							},
+							["!Melee"] = {
+								["c_amt"] = 1,
+								["b_amt"] = 0,
+								["c_dmg"] = 102,
+								["g_amt"] = 0,
+								["n_max"] = 71,
+								["targets"] = {
+									["Kamenac"] = 7760,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 7658,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 214,
+								["a_amt"] = 0,
+								["total"] = 7760,
+								["c_max"] = 102,
+								["DODGE"] = 28,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["b_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["PARRY"] = 20,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["m_amt"] = 0,
+								["n_amt"] = 149,
+								["MISS"] = 16,
+								["r_amt"] = 0,
+							},
+							["Retribution Aura"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Kamenac"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Retribution Aura",
+								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
 								["c_min"] = 0,
 								["m_amt"] = 0,
-								["successful_casted"] = 4,
+								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
 								["a_amt"] = 0,
@@ -16304,41 +16852,171 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
+					["last_event"] = 0,
+					["last_dps"] = 0,
+					["total"] = 12758.087507,
+					["custom"] = 0,
 					["tipo"] = 1,
 					["friendlyfire"] = {
 					},
-					["end_time"] = 1595446959,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1595446695,
-					["serial"] = "Creature-0-4468-189-24138-4299-0001188A0C",
-					["dps_started"] = false,
-				}, -- [21]
+					["start_time"] = 1595619094,
+					["delay"] = 0,
+					["monster"] = true,
+				}, -- [11]
 				{
 					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.031325,
+					["totalabsorbed"] = 0.074272,
 					["damage_from"] = {
 						["Kamenac"] = true,
+						["Scarlet Monk"] = true,
 					},
 					["targets"] = {
-						["Kamenac"] = 4700,
-						["Vermin"] = 0,
+						["Kamenac"] = 6769,
+						["Scarlet Monk"] = 18,
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
+					["friendlyfire_total"] = 0,
 					["friendlyfire"] = {
 					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
-					["total_without_pet"] = 4700.031325,
-					["delay"] = 0,
+					["total_without_pet"] = 6787.074272,
+					["serial"] = "Creature-0-4468-189-3060-4540-00061B34F3",
 					["dps_started"] = false,
-					["total"] = 4700.031325,
-					["friendlyfire_total"] = 0,
+					["end_time"] = 1595619502,
+					["fight_component"] = true,
+					["on_hold"] = false,
+					["nome"] = "Scarlet Monk",
+					["spells"] = {
+						["_ActorTable"] = {
+							["Kick"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 12,
+								["targets"] = {
+									["Kamenac"] = 147,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 147,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 28,
+								["MISS"] = 3,
+								["r_amt"] = 0,
+								["c_max"] = 0,
+								["DODGE"] = 5,
+								["id"] = "Kick",
+								["r_dmg"] = 0,
+								["b_dmg"] = 0,
+								["a_amt"] = 0,
+								["m_crit"] = 0,
+								["PARRY"] = 4,
+								["c_min"] = 0,
+								["successful_casted"] = 28,
+								["m_amt"] = 0,
+								["n_amt"] = 16,
+								["a_dmg"] = 0,
+								["total"] = 147,
+							},
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 77,
+								["targets"] = {
+									["Kamenac"] = 6622,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 6622,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 199,
+								["a_amt"] = 0,
+								["total"] = 6622,
+								["c_max"] = 0,
+								["DODGE"] = 32,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["b_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["PARRY"] = 23,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["m_amt"] = 0,
+								["n_amt"] = 122,
+								["MISS"] = 22,
+								["r_amt"] = 0,
+							},
+							["Thrash"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 2,
+								["targets"] = {
+									["Scarlet Monk"] = 18,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 18,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 9,
+								["total"] = 18,
+								["c_max"] = 0,
+								["id"] = "Thrash",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 9,
+								["b_dmg"] = 0,
+								["n_amt"] = 9,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["last_event"] = 0,
 					["last_dps"] = 0,
+					["total"] = 6787.074272,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["damage_taken"] = 83082.074272,
+					["start_time"] = 1595619302,
+					["delay"] = 0,
+					["monster"] = true,
+				}, -- [12]
+				{
+					["flag_original"] = 2632,
+					["totalabsorbed"] = 0.026911,
+					["damage_from"] = {
+						["Kamenac"] = true,
+					},
+					["targets"] = {
+						["Kamenac"] = 3892,
+					},
+					["pets"] = {
+					},
+					["total"] = 3892.026911,
+					["friendlyfire"] = {
+					},
+					["friendlyfire_total"] = 0,
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 3892.026911,
+					["serial"] = "Creature-0-4468-189-3060-3976-00001B3A63",
+					["dps_started"] = false,
+					["end_time"] = 1595620262,
+					["classe"] = "UNKNOW",
+					["on_hold"] = false,
 					["nome"] = "Scarlet Commander Mograine",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16359,15 +17037,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Divine Shield",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 3,
+								["successful_casted"] = 2,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 							["Hammer of Justice"] = {
 								["c_amt"] = 0,
@@ -16382,84 +17060,82 @@ _detalhes_database = {
 								["n_dmg"] = 0,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 4,
+								["counter"] = 3,
 								["total"] = 0,
 								["c_max"] = 0,
 								["id"] = "Hammer of Justice",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
+								["a_dmg"] = 0,
+								["a_amt"] = 0,
 								["m_crit"] = 0,
-								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["RESIST"] = 3,
+								["c_min"] = 0,
 								["successful_casted"] = 4,
 								["b_dmg"] = 0,
-								["RESIST"] = 4,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["n_amt"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 							["!Melee"] = {
 								["c_amt"] = 1,
 								["b_amt"] = 0,
-								["c_dmg"] = 190,
+								["c_dmg"] = 141,
 								["g_amt"] = 0,
-								["n_max"] = 106,
+								["n_max"] = 112,
 								["targets"] = {
-									["Kamenac"] = 4194,
-									["Vermin"] = 0,
+									["Kamenac"] = 3466,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 4004,
+								["n_dmg"] = 3325,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 62,
-								["total"] = 4194,
-								["r_amt"] = 0,
-								["c_max"] = 190,
-								["DODGE"] = 7,
+								["counter"] = 61,
+								["a_amt"] = 0,
+								["total"] = 3466,
+								["c_max"] = 141,
+								["MISS"] = 8,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
 								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["PARRY"] = 4,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
 								["a_dmg"] = 0,
-								["n_amt"] = 43,
-								["MISS"] = 7,
-								["a_amt"] = 0,
+								["m_crit"] = 0,
+								["PARRY"] = 8,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["m_amt"] = 0,
+								["n_amt"] = 35,
+								["DODGE"] = 9,
+								["r_amt"] = 0,
 							},
 							["Crusader Strike"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 60,
+								["n_max"] = 54,
 								["targets"] = {
-									["Kamenac"] = 275,
-									["Vermin"] = 0,
+									["Kamenac"] = 375,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 275,
+								["n_dmg"] = 375,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
 								["counter"] = 10,
-								["total"] = 275,
+								["total"] = 375,
 								["c_max"] = 0,
-								["r_amt"] = 0,
+								["MISS"] = 1,
 								["id"] = "Crusader Strike",
 								["r_dmg"] = 0,
+								["DODGE"] = 2,
 								["a_dmg"] = 0,
-								["c_min"] = 0,
 								["m_crit"] = 0,
-								["PARRY"] = 4,
+								["c_min"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 10,
 								["b_dmg"] = 0,
-								["n_amt"] = 5,
-								["DODGE"] = 1,
+								["n_amt"] = 7,
 								["a_amt"] = 0,
+								["r_amt"] = 0,
 							},
 							["Retribution Aura"] = {
 								["c_amt"] = 0,
@@ -16468,27 +17144,27 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 17,
 								["targets"] = {
-									["Kamenac"] = 231,
+									["Kamenac"] = 51,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 231,
+								["n_dmg"] = 51,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 116,
-								["total"] = 231,
+								["counter"] = 111,
+								["total"] = 51,
 								["c_max"] = 0,
 								["id"] = "Retribution Aura",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
+								["a_dmg"] = 0,
+								["a_amt"] = 0,
 								["m_crit"] = 0,
-								["n_amt"] = 14,
-								["m_amt"] = 0,
+								["RESIST"] = 108,
+								["c_min"] = 0,
 								["successful_casted"] = 3,
 								["b_dmg"] = 0,
-								["RESIST"] = 102,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["n_amt"] = 3,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 							["Lay on Hands"] = {
 								["c_amt"] = 0,
@@ -16507,54 +17183,52 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Lay on Hands",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 3,
+								["successful_casted"] = 2,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["tipo"] = 1,
-					["boss_fight_component"] = true,
-					["on_hold"] = false,
-					["custom"] = 0,
 					["last_event"] = 0,
-					["damage_taken"] = 37231.031325,
-					["start_time"] = 1595447292,
-					["serial"] = "Creature-0-4468-189-24138-3976-00001897BD",
-					["end_time"] = 1595447448,
-				}, -- [22]
+					["boss_fight_component"] = true,
+					["damage_taken"] = 38066.026911,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1595620111,
+					["delay"] = 0,
+					["monster"] = true,
+				}, -- [13]
 				{
 					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.015921,
+					["totalabsorbed"] = 0.016826,
 					["damage_from"] = {
 						["Kamenac"] = true,
-						["Vermin"] = true,
 					},
 					["targets"] = {
-						["Kamenac"] = 845,
-						["Vermin"] = 69,
+						["Kamenac"] = 646,
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["friendlyfire"] = {
-					},
+					["total"] = 646.016826,
+					["boss_fight_component"] = true,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
-					["total_without_pet"] = 914.015921,
-					["delay"] = 0,
+					["total_without_pet"] = 646.016826,
+					["serial"] = "Creature-0-4468-189-3060-3977-00001B34F3",
 					["dps_started"] = false,
-					["total"] = 914.015921,
-					["friendlyfire_total"] = 0,
-					["last_dps"] = 0,
+					["end_time"] = 1595620262,
+					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["nome"] = "High Inquisitor Whitemane",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -16563,29 +17237,29 @@ _detalhes_database = {
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["n_max"] = 171,
 								["targets"] = {
-									["Kamenac"] = 0,
+									["Kamenac"] = 171,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 0,
+								["n_dmg"] = 171,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 13,
-								["total"] = 0,
+								["counter"] = 11,
+								["total"] = 171,
 								["c_max"] = 0,
 								["id"] = "Holy Smite",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 13,
-								["b_dmg"] = 0,
-								["RESIST"] = 13,
-								["a_amt"] = 0,
 								["a_dmg"] = 0,
+								["a_amt"] = 0,
+								["m_crit"] = 0,
+								["RESIST"] = 10,
+								["c_min"] = 0,
+								["successful_casted"] = 11,
+								["b_dmg"] = 0,
+								["n_amt"] = 1,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 							["Heal"] = {
 								["c_amt"] = 0,
@@ -16604,15 +17278,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Heal",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
-								["m_amt"] = 0,
 								["successful_casted"] = 1,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 							["Deep Sleep"] = {
 								["c_amt"] = 0,
@@ -16631,42 +17305,45 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Deep Sleep",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
-								["m_amt"] = 0,
 								["successful_casted"] = 3,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
-							["Scarlet Resurrection"] = {
+							["!Melee"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["n_max"] = 80,
 								["targets"] = {
+									["Kamenac"] = 475,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 0,
+								["n_dmg"] = 475,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
+								["counter"] = 10,
+								["total"] = 475,
 								["c_max"] = 0,
-								["id"] = "Scarlet Resurrection",
+								["DODGE"] = 1,
+								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 3,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
 								["a_dmg"] = 0,
+								["m_amt"] = 0,
+								["m_crit"] = 0,
+								["PARRY"] = 2,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 7,
+								["a_amt"] = 0,
+								["r_amt"] = 0,
 							},
 							["Power Word: Shield"] = {
 								["c_amt"] = 0,
@@ -16685,110 +17362,106 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Power Word: Shield",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
-								["m_amt"] = 0,
 								["successful_casted"] = 2,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 							["Retribution Aura"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 17,
+								["n_max"] = 0,
 								["targets"] = {
-									["Kamenac"] = 50,
-									["Vermin"] = 69,
+									["Kamenac"] = 0,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 119,
+								["n_dmg"] = 0,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 36,
-								["total"] = 119,
+								["counter"] = 14,
+								["total"] = 0,
 								["c_max"] = 0,
 								["id"] = "Retribution Aura",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["c_min"] = 0,
+								["a_dmg"] = 0,
+								["a_amt"] = 0,
 								["m_crit"] = 0,
-								["n_amt"] = 8,
-								["m_amt"] = 0,
+								["RESIST"] = 14,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
-								["RESIST"] = 28,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["n_amt"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
-							["!Melee"] = {
+							["Scarlet Resurrection"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 85,
+								["n_max"] = 0,
 								["targets"] = {
-									["Kamenac"] = 795,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 795,
+								["n_dmg"] = 0,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 13,
-								["total"] = 795,
+								["counter"] = 0,
+								["total"] = 0,
 								["c_max"] = 0,
-								["r_amt"] = 0,
-								["id"] = "!Melee",
+								["id"] = "Scarlet Resurrection",
 								["r_dmg"] = 0,
 								["a_dmg"] = 0,
-								["c_min"] = 0,
 								["m_crit"] = 0,
-								["PARRY"] = 1,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 11,
-								["MISS"] = 1,
 								["a_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 3,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["tipo"] = 1,
-					["boss_fight_component"] = true,
-					["on_hold"] = false,
-					["custom"] = 0,
 					["last_event"] = 0,
-					["damage_taken"] = 31058.015921,
-					["start_time"] = 1595447382,
-					["serial"] = "Creature-0-4468-189-24138-3977-0000188A0B",
-					["end_time"] = 1595447448,
-				}, -- [23]
+					["friendlyfire_total"] = 0,
+					["damage_taken"] = 26516.016826,
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1595620211,
+					["delay"] = 0,
+					["monster"] = true,
+				}, -- [14]
 				{
 					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.017911,
+					["totalabsorbed"] = 0.02113,
 					["damage_from"] = {
 						["Kamenac"] = true,
 					},
 					["targets"] = {
-						["Kamenac"] = 319,
+						["Kamenac"] = 959,
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
+					["total"] = 959.02113,
 					["boss_fight_component"] = true,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
-					["total_without_pet"] = 319.017911,
-					["serial"] = "Creature-0-4468-189-24138-4542-0000188A0B",
+					["total_without_pet"] = 959.02113,
+					["serial"] = "Creature-0-4468-189-3060-4542-00001B34F3",
 					["dps_started"] = false,
-					["total"] = 319.017911,
-					["last_dps"] = 0,
+					["end_time"] = 1595620324,
+					["on_hold"] = false,
 					["friendlyfire"] = {
 					},
 					["nome"] = "High Inquisitor Fairbanks",
@@ -16807,19 +17480,47 @@ _detalhes_database = {
 								["n_dmg"] = 0,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 0,
+								["counter"] = 1,
 								["total"] = 0,
 								["c_max"] = 0,
 								["id"] = "Curse of Blood",
 								["r_dmg"] = 0,
 								["a_dmg"] = 0,
-								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
+								["m_crit"] = 0,
+								["RESIST"] = 1,
+								["c_min"] = 0,
+								["successful_casted"] = 1,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
+							},
+							["Heal"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Heal",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
+								["successful_casted"] = 1,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["m_amt"] = 0,
 								["r_amt"] = 0,
 							},
 							["Power Word: Shield"] = {
@@ -16842,11 +17543,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 1,
+								["c_min"] = 0,
+								["successful_casted"] = 2,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["r_amt"] = 0,
 							},
 							["!Melee"] = {
@@ -16854,364 +17555,117 @@ _detalhes_database = {
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 83,
+								["n_max"] = 97,
 								["targets"] = {
-									["Kamenac"] = 319,
+									["Kamenac"] = 959,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 319,
+								["n_dmg"] = 959,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 5,
-								["total"] = 319,
+								["counter"] = 19,
+								["DODGE"] = 3,
+								["r_amt"] = 0,
 								["c_max"] = 0,
+								["MISS"] = 3,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["MISS"] = 1,
-								["a_dmg"] = 0,
+								["b_dmg"] = 0,
+								["a_amt"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
+								["PARRY"] = 2,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 4,
-								["a_amt"] = 0,
-								["r_amt"] = 0,
-							},
-							["Sleep"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Kamenac"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 1,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Sleep",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["a_amt"] = 0,
-								["m_crit"] = 0,
-								["RESIST"] = 1,
 								["m_amt"] = 0,
-								["successful_casted"] = 1,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["n_amt"] = 11,
+								["a_dmg"] = 0,
+								["total"] = 959,
 							},
 						},
 						["tipo"] = 2,
 					},
 					["last_event"] = 0,
-					["on_hold"] = false,
-					["end_time"] = 1595448616,
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 7302.017911,
-					["start_time"] = 1595448598,
-					["delay"] = 0,
 					["friendlyfire_total"] = 0,
-				}, -- [24]
-				{
-					["flag_original"] = 68168,
-					["totalabsorbed"] = 0.003121,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Proudheathen"] = 0,
-						["Vermin"] = 0,
-					},
-					["pets"] = {
-					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.003121,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.003121,
-					["serial"] = "Creature-0-4448-0-158-4285-0000188E3A",
-					["monster"] = true,
-					["end_time"] = 1595448616,
-					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
-					["nome"] = "Scarlet Disciple",
-					["spells"] = {
-						["_ActorTable"] = {
-							["Holy Smite"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Proudheathen"] = 0,
-									["Vermin"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Holy Smite",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Proudheathen"] = 0,
-									["Vermin"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["Renew"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Renew",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.003121,
+					["damage_taken"] = 24261.02113,
 					["custom"] = 0,
 					["tipo"] = 1,
 					["last_dps"] = 0,
-					["start_time"] = 1595448613,
+					["start_time"] = 1595620263,
 					["delay"] = 0,
-					["fight_component"] = true,
-				}, -- [25]
+					["monster"] = true,
+				}, -- [15]
 				{
-					["flag_original"] = 68168,
-					["totalabsorbed"] = 0.002437,
+					["flag_original"] = 1298,
+					["totalabsorbed"] = 0.007595,
 					["damage_from"] = {
+						["Scarlet Wizard"] = true,
 					},
 					["targets"] = {
-						["Vermin"] = 0,
 					},
 					["pets"] = {
 					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.002437,
-					["classe"] = "UNKNOW",
+					["friendlyfire_total"] = 0,
+					["last_event"] = 0,
+					["classe"] = "ROGUE",
 					["raid_targets"] = {
 					},
-					["total_without_pet"] = 0.002437,
-					["delay"] = 0,
-					["monster"] = true,
-					["end_time"] = 1595527298,
-					["friendlyfire_total"] = 0,
+					["total_without_pet"] = 0.007595,
+					["serial"] = "Player-4465-00F5D72A",
+					["dps_started"] = false,
+					["end_time"] = 1595620650,
+					["spec"] = 260,
 					["friendlyfire"] = {
 					},
-					["nome"] = "Ravenous Darkhound",
+					["nome"] = "Flexlikekev",
 					["spells"] = {
 						["_ActorTable"] = {
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Vermin"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
 						},
 						["tipo"] = 2,
 					},
-					["tipo"] = 1,
-					["total"] = 0.002437,
+					["grupo"] = true,
+					["total"] = 0.007595,
 					["on_hold"] = false,
 					["custom"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["last_dps"] = 0,
-					["start_time"] = 1595527295,
-					["serial"] = "Creature-0-4448-0-158-1549-000019B6AB",
-					["fight_component"] = true,
-				}, -- [26]
-				{
-					["flag_original"] = 68168,
-					["totalabsorbed"] = 0.003847,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Vermin"] = 0,
-					},
-					["pets"] = {
-					},
-					["last_dps"] = 0,
-					["monster"] = true,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.003847,
+					["start_time"] = 1595620647,
 					["delay"] = 0,
-					["fight_component"] = true,
-					["end_time"] = 1595599201,
-					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.003847,
-					["nome"] = "Thunderhead",
-					["spells"] = {
-						["_ActorTable"] = {
-							["Lizard Bolt"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Vermin"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Lizard Bolt",
-								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
-								["r_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["tipo"] = 1,
-					["total"] = 0.003847,
-					["on_hold"] = false,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
-					["start_time"] = 1595599198,
-					["serial"] = "Creature-0-4448-1-180-3239-000019D005",
-					["dps_started"] = false,
-				}, -- [27]
+					["damage_taken"] = 469.007595,
+				}, -- [16]
 			},
 		}, -- [1]
 		{
 			["tipo"] = 3,
 			["_ActorTable"] = {
 				{
-					["flag_original"] = 66834,
+					["flag_original"] = 1298,
 					["healing_from"] = {
 						["Kamenac"] = true,
 					},
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["classe"] = "WARRIOR",
-					["totalover"] = 173.534442,
-					["total_without_pet"] = 31339.534442,
-					["total"] = 31339.534442,
-					["targets_absorbs"] = {
-					},
+					["heal_enemy_amt"] = 0,
+					["totalover"] = 0.238419,
+					["total_without_pet"] = 24126.238419,
+					["total"] = 24126.238419,
+					["spec"] = 72,
 					["heal_enemy"] = {
 					},
 					["on_hold"] = false,
 					["serial"] = "Player-4465-010DF944",
-					["totalabsorb"] = 0.534442,
+					["totalabsorb"] = 0.238419,
 					["last_hps"] = 0,
 					["targets"] = {
 						["Kamenac"] = 0,
 					},
-					["totalover_without_pet"] = 0.534442,
-					["healing_taken"] = 31339.534442,
+					["totalover_without_pet"] = 0.238419,
+					["healing_taken"] = 24126.238419,
 					["fight_component"] = true,
-					["end_time"] = 1595442643,
+					["end_time"] = 1595618602,
 					["targets_overheal"] = {
-						["Kamenac"] = 0,
 					},
-					["last_event"] = 0,
+					["boss_fight_component"] = true,
 					["nome"] = "Kamenac",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -17220,26 +17674,26 @@ _detalhes_database = {
 								["totalabsorb"] = 0,
 								["targets_overheal"] = {
 								},
-								["n_max"] = 1669,
+								["n_max"] = 1546,
 								["targets"] = {
-									["Kamenac"] = 6157,
+									["Kamenac"] = 9979,
 								},
 								["n_min"] = 0,
-								["counter"] = 4,
+								["counter"] = 7,
 								["overheal"] = 0,
-								["total"] = 6157,
+								["total"] = 9979,
 								["c_max"] = 0,
 								["id"] = "Healing Potion",
 								["targets_absorbs"] = {
 								},
 								["c_curado"] = 0,
 								["m_crit"] = 0,
-								["m_healed"] = 0,
-								["c_min"] = 0,
-								["totaldenied"] = 0,
-								["n_amt"] = 4,
-								["n_curado"] = 6157,
 								["m_amt"] = 0,
+								["c_min"] = 0,
+								["n_curado"] = 9979,
+								["n_amt"] = 7,
+								["m_healed"] = 0,
+								["totaldenied"] = 0,
 								["absorbed"] = 0,
 							},
 							["First Aid"] = {
@@ -17249,67 +17703,284 @@ _detalhes_database = {
 								},
 								["n_max"] = 250,
 								["targets"] = {
-									["Kamenac"] = 750,
+									["Kamenac"] = 1250,
 								},
 								["n_min"] = 0,
-								["counter"] = 3,
+								["counter"] = 5,
 								["overheal"] = 0,
-								["total"] = 750,
+								["total"] = 1250,
 								["c_max"] = 0,
 								["id"] = "First Aid",
 								["targets_absorbs"] = {
 								},
 								["c_curado"] = 0,
 								["m_crit"] = 0,
-								["m_healed"] = 0,
-								["c_min"] = 0,
 								["totaldenied"] = 0,
-								["n_amt"] = 3,
-								["n_curado"] = 750,
 								["m_amt"] = 0,
+								["m_healed"] = 0,
+								["n_amt"] = 5,
+								["n_curado"] = 1250,
+								["c_min"] = 0,
 								["absorbed"] = 0,
 							},
 							["Holy Strength"] = {
 								["c_amt"] = 0,
 								["totalabsorb"] = 0,
 								["targets_overheal"] = {
-									["Kamenac"] = 173,
 								},
 								["n_max"] = 125,
 								["targets"] = {
-									["Kamenac"] = 24432,
+									["Kamenac"] = 12897,
 								},
 								["n_min"] = 0,
-								["counter"] = 248,
-								["overheal"] = 173,
-								["total"] = 24432,
+								["counter"] = 128,
+								["overheal"] = 0,
+								["total"] = 12897,
 								["c_max"] = 0,
 								["id"] = "Holy Strength",
 								["targets_absorbs"] = {
 								},
 								["c_curado"] = 0,
 								["m_crit"] = 0,
-								["m_healed"] = 0,
-								["c_min"] = 0,
 								["totaldenied"] = 0,
-								["n_amt"] = 248,
-								["n_curado"] = 24432,
 								["m_amt"] = 0,
+								["m_healed"] = 0,
+								["n_amt"] = 128,
+								["n_curado"] = 12897,
+								["c_min"] = 0,
 								["absorbed"] = 0,
 							},
 						},
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["heal_enemy_amt"] = 0,
-					["totaldenied"] = 0.534442,
+					["last_event"] = 0,
+					["totaldenied"] = 0.238419,
 					["custom"] = 0,
 					["tipo"] = 2,
-					["spec"] = 72,
-					["start_time"] = 1595441992,
+					["classe"] = "WARRIOR",
+					["start_time"] = 1595618264,
 					["delay"] = 0,
-					["boss_fight_component"] = true,
+					["targets_absorbs"] = {
+					},
 				}, -- [1]
+				{
+					["flag_original"] = 2632,
+					["totalabsorb"] = 0.01039,
+					["last_hps"] = 0,
+					["healing_from"] = {
+					},
+					["targets"] = {
+					},
+					["serial"] = "Creature-0-4468-189-3060-3977-00001B34F3",
+					["pets"] = {
+					},
+					["iniciar_hps"] = false,
+					["targets_overheal"] = {
+					},
+					["classe"] = "UNKNOW",
+					["totalover"] = 0.01039,
+					["total_without_pet"] = 0.01039,
+					["totalover_without_pet"] = 0.01039,
+					["start_time"] = 1595620259,
+					["monster"] = true,
+					["total"] = 0.01039,
+					["heal_enemy_amt"] = 18070,
+					["targets_absorbs"] = {
+					},
+					["boss_fight_component"] = true,
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
+					},
+					["end_time"] = 1595620262,
+					["healing_taken"] = 0.01039,
+					["heal_enemy"] = {
+						["Scarlet Resurrection"] = 15852,
+						["Heal"] = 1358,
+						["Power Word: Shield"] = 860,
+					},
+					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 2,
+					["on_hold"] = false,
+					["totaldenied"] = 0.01039,
+					["delay"] = 0,
+					["nome"] = "High Inquisitor Whitemane",
+				}, -- [2]
+				{
+					["flag_original"] = 2632,
+					["totalabsorb"] = 0.018319,
+					["last_hps"] = 0,
+					["healing_from"] = {
+					},
+					["targets"] = {
+					},
+					["serial"] = "Creature-0-4468-189-3060-3976-00001B3A63",
+					["pets"] = {
+					},
+					["iniciar_hps"] = false,
+					["targets_overheal"] = {
+					},
+					["classe"] = "UNKNOW",
+					["totalover"] = 0.018319,
+					["total_without_pet"] = 0.018319,
+					["totalover_without_pet"] = 0.018319,
+					["start_time"] = 1595620259,
+					["monster"] = true,
+					["total"] = 0.018319,
+					["heal_enemy_amt"] = 7707,
+					["targets_absorbs"] = {
+					},
+					["boss_fight_component"] = true,
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
+					},
+					["end_time"] = 1595620262,
+					["healing_taken"] = 0.018319,
+					["heal_enemy"] = {
+						["Lay on Hands"] = 7707,
+					},
+					["last_event"] = 0,
+					["custom"] = 0,
+					["tipo"] = 2,
+					["on_hold"] = false,
+					["totaldenied"] = 0.018319,
+					["delay"] = 0,
+					["nome"] = "Scarlet Commander Mograine",
+				}, -- [3]
+				{
+					["flag_original"] = 68168,
+					["totalabsorb"] = 0.016335,
+					["last_hps"] = 0,
+					["healing_from"] = {
+					},
+					["targets"] = {
+					},
+					["delay"] = 0,
+					["pets"] = {
+					},
+					["iniciar_hps"] = false,
+					["targets_overheal"] = {
+					},
+					["heal_enemy_amt"] = 2908,
+					["totalover"] = 0.016335,
+					["total_without_pet"] = 0.016335,
+					["totalover_without_pet"] = 0.016335,
+					["start_time"] = 1595620321,
+					["monster"] = true,
+					["total"] = 0.016335,
+					["healing_taken"] = 0.016335,
+					["classe"] = "UNKNOW",
+					["boss_fight_component"] = true,
+					["targets_absorbs"] = {
+					},
+					["end_time"] = 1595620324,
+					["nome"] = "High Inquisitor Fairbanks",
+					["heal_enemy"] = {
+						["Power Word: Shield"] = 1562,
+						["Heal"] = 1346,
+					},
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
+					},
+					["custom"] = 0,
+					["tipo"] = 2,
+					["on_hold"] = false,
+					["totaldenied"] = 0.016335,
+					["serial"] = "Creature-0-4468-189-3060-4542-00001B34F3",
+					["last_event"] = 0,
+				}, -- [4]
+				{
+					["flag_original"] = 2632,
+					["totalabsorb"] = 0.020812,
+					["last_hps"] = 0,
+					["healing_from"] = {
+					},
+					["targets"] = {
+					},
+					["serial"] = "Creature-0-4468-189-3060-4299-00039B34F3",
+					["pets"] = {
+					},
+					["totalover_without_pet"] = 0.020812,
+					["targets_overheal"] = {
+					},
+					["classe"] = "UNKNOW",
+					["totalover"] = 0.020812,
+					["total_without_pet"] = 0.020812,
+					["iniciar_hps"] = false,
+					["totaldenied"] = 0.020812,
+					["monster"] = true,
+					["end_time"] = 1595620949,
+					["healing_taken"] = 0.020812,
+					["boss_fight_component"] = true,
+					["nome"] = "Scarlet Chaplain",
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
+					},
+					["total"] = 0.020812,
+					["heal_enemy_amt"] = 762,
+					["heal_enemy"] = {
+						["Power Word: Shield"] = 762,
+					},
+					["tipo"] = 2,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1595620946,
+					["delay"] = 0,
+					["targets_absorbs"] = {
+					},
+				}, -- [5]
+				{
+					["flag_original"] = 2632,
+					["totalabsorb"] = 0.005829,
+					["last_hps"] = 0,
+					["healing_from"] = {
+					},
+					["targets"] = {
+					},
+					["serial"] = "Creature-0-4468-189-3060-4540-00011B34F4",
+					["pets"] = {
+					},
+					["totalover_without_pet"] = 0.005829,
+					["targets_overheal"] = {
+					},
+					["classe"] = "UNKNOW",
+					["totalover"] = 0.005829,
+					["total_without_pet"] = 0.005829,
+					["iniciar_hps"] = false,
+					["totaldenied"] = 0.005829,
+					["monster"] = true,
+					["end_time"] = 1595620949,
+					["healing_taken"] = 0.005829,
+					["boss_fight_component"] = true,
+					["nome"] = "Scarlet Monk",
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
+					},
+					["total"] = 0.005829,
+					["heal_enemy_amt"] = 0,
+					["heal_enemy"] = {
+					},
+					["tipo"] = 2,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1595620946,
+					["delay"] = 0,
+					["targets_absorbs"] = {
+					},
+				}, -- [6]
 				{
 					["flag_original"] = 1297,
 					["healing_from"] = {
@@ -17319,26 +17990,26 @@ _detalhes_database = {
 					},
 					["iniciar_hps"] = false,
 					["classe"] = "WARRIOR",
-					["totalover"] = 46.008401,
-					["total_without_pet"] = 575.008401,
-					["total"] = 575.008401,
+					["totalover"] = 52.013468,
+					["total_without_pet"] = 408.013468,
+					["total"] = 408.013468,
 					["targets_absorbs"] = {
 					},
 					["heal_enemy"] = {
 					},
 					["on_hold"] = false,
 					["serial"] = "Player-4465-00E5831F",
-					["totalabsorb"] = 0.008401,
+					["totalabsorb"] = 0.013468,
 					["last_hps"] = 0,
 					["targets"] = {
-						["Vermin"] = 621,
+						["Vermin"] = 460,
 					},
-					["totalover_without_pet"] = 0.008401,
-					["healing_taken"] = 575.008401,
+					["totalover_without_pet"] = 0.013468,
+					["healing_taken"] = 408.013468,
 					["fight_component"] = true,
-					["end_time"] = 1595442780,
+					["end_time"] = 1595623074,
 					["targets_overheal"] = {
-						["Vermin"] = 46,
+						["Vermin"] = 52,
 					},
 					["nome"] = "Vermin",
 					["spells"] = {
@@ -17347,55 +18018,28 @@ _detalhes_database = {
 								["c_amt"] = 0,
 								["totalabsorb"] = 0,
 								["targets_overheal"] = {
-									["Vermin"] = 46,
+									["Vermin"] = 52,
 								},
-								["n_max"] = 480,
+								["n_max"] = 408,
 								["targets"] = {
-									["Vermin"] = 480,
+									["Vermin"] = 408,
 								},
 								["n_min"] = 0,
 								["counter"] = 1,
-								["overheal"] = 46,
-								["total"] = 480,
+								["overheal"] = 52,
+								["total"] = 408,
 								["c_max"] = 0,
 								["id"] = "Healing Potion",
 								["targets_absorbs"] = {
 								},
 								["c_curado"] = 0,
 								["m_crit"] = 0,
-								["m_healed"] = 0,
-								["c_min"] = 0,
 								["totaldenied"] = 0,
+								["m_amt"] = 0,
+								["m_healed"] = 0,
 								["n_amt"] = 1,
-								["n_curado"] = 480,
-								["m_amt"] = 0,
-								["absorbed"] = 0,
-							},
-							["First Aid"] = {
-								["c_amt"] = 0,
-								["totalabsorb"] = 0,
-								["targets_overheal"] = {
-								},
-								["n_max"] = 19,
-								["targets"] = {
-									["Vermin"] = 95,
-								},
-								["n_min"] = 0,
-								["counter"] = 5,
-								["overheal"] = 0,
-								["total"] = 95,
-								["c_max"] = 0,
-								["id"] = "First Aid",
-								["targets_absorbs"] = {
-								},
-								["c_curado"] = 0,
-								["m_crit"] = 0,
-								["m_healed"] = 0,
+								["n_curado"] = 408,
 								["c_min"] = 0,
-								["totaldenied"] = 0,
-								["n_amt"] = 5,
-								["n_curado"] = 95,
-								["m_amt"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -17406,150 +18050,19 @@ _detalhes_database = {
 					["heal_enemy_amt"] = 0,
 					["custom"] = 0,
 					["tipo"] = 2,
-					["totaldenied"] = 0.008401,
-					["start_time"] = 1595442773,
+					["totaldenied"] = 0.013468,
+					["start_time"] = 1595623070,
 					["delay"] = 0,
 					["spec"] = 71,
-				}, -- [2]
-				{
-					["flag_original"] = 68168,
-					["totalabsorb"] = 0.019292,
-					["last_hps"] = 0,
-					["targets_overheal"] = {
-					},
-					["targets"] = {
-					},
-					["serial"] = "Creature-0-4468-189-24138-3977-0000188A0B",
-					["pets"] = {
-					},
-					["totalover_without_pet"] = 0.019292,
-					["healing_from"] = {
-					},
-					["healing_taken"] = 0.019292,
-					["totalover"] = 0.019292,
-					["total_without_pet"] = 0.019292,
-					["iniciar_hps"] = false,
-					["totaldenied"] = 0.019292,
-					["monster"] = true,
-					["end_time"] = 1595447448,
-					["classe"] = "UNKNOW",
-					["targets_absorbs"] = {
-					},
-					["nome"] = "High Inquisitor Whitemane",
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
-					["total"] = 0.019292,
-					["heal_enemy_amt"] = 18059,
-					["heal_enemy"] = {
-						["Scarlet Resurrection"] = 15852,
-						["Heal"] = 1347,
-						["Power Word: Shield"] = 860,
-					},
-					["tipo"] = 2,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1595447445,
-					["delay"] = 0,
-					["boss_fight_component"] = true,
-				}, -- [3]
-				{
-					["flag_original"] = 2632,
-					["totalabsorb"] = 0.013322,
-					["last_hps"] = 0,
-					["targets_overheal"] = {
-					},
-					["targets"] = {
-					},
-					["serial"] = "Creature-0-4468-189-24138-3976-00001897BD",
-					["pets"] = {
-					},
-					["totalover_without_pet"] = 0.013322,
-					["healing_from"] = {
-					},
-					["healing_taken"] = 0.013322,
-					["totalover"] = 0.013322,
-					["total_without_pet"] = 0.013322,
-					["iniciar_hps"] = false,
-					["totaldenied"] = 0.013322,
-					["monster"] = true,
-					["end_time"] = 1595447448,
-					["classe"] = "UNKNOW",
-					["targets_absorbs"] = {
-					},
-					["nome"] = "Scarlet Commander Mograine",
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
-					["total"] = 0.013322,
-					["heal_enemy_amt"] = 12730,
-					["heal_enemy"] = {
-						["Lay on Hands"] = 12730,
-					},
-					["tipo"] = 2,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["start_time"] = 1595447445,
-					["delay"] = 0,
-					["boss_fight_component"] = true,
-				}, -- [4]
-				{
-					["flag_original"] = 68168,
-					["totalabsorb"] = 0.00738,
-					["last_hps"] = 0,
-					["healing_from"] = {
-					},
-					["targets"] = {
-					},
-					["serial"] = "Creature-0-4445-189-8393-4542-000018990F",
-					["pets"] = {
-					},
-					["iniciar_hps"] = false,
-					["targets_overheal"] = {
-					},
-					["heal_enemy_amt"] = 781,
-					["totalover"] = 0.00738,
-					["total_without_pet"] = 0.00738,
-					["totalover_without_pet"] = 0.00738,
-					["start_time"] = 1595448910,
-					["monster"] = true,
-					["total"] = 0.00738,
-					["healing_taken"] = 0.00738,
-					["classe"] = "UNKNOW",
-					["nome"] = "High Inquisitor Fairbanks",
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
-					["end_time"] = 1595448913,
-					["boss_fight_component"] = true,
-					["heal_enemy"] = {
-						["Power Word: Shield"] = 781,
-					},
-					["targets_absorbs"] = {
-					},
-					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["totaldenied"] = 0.00738,
-					["delay"] = 0,
-					["tipo"] = 2,
-				}, -- [5]
+				}, -- [7]
 			},
 		}, -- [2]
 		{
 			["tipo"] = 7,
 			["_ActorTable"] = {
 				{
-					["received"] = 3075.166868,
-					["resource"] = 1.457247,
+					["flag_original"] = 1298,
+					["resource"] = 0.993281,
 					["targets"] = {
 						["Kamenac"] = 0,
 					},
@@ -17557,20 +18070,23 @@ _detalhes_database = {
 					},
 					["powertype"] = 1,
 					["classe"] = "WARRIOR",
-					["passiveover"] = 0.00253,
+					["totalover"] = 0.001967,
 					["fight_component"] = true,
-					["total"] = 3075.166868,
+					["alternatepower"] = 0.291806,
 					["nome"] = "Kamenac",
+					["spec"] = 72,
+					["grupo"] = true,
+					["passiveover"] = 0.001967,
 					["spells"] = {
 						["_ActorTable"] = {
 							["Bloodrage"] = {
-								["total"] = 925,
+								["total"] = 527,
 								["id"] = "Bloodrage",
 								["totalover"] = 0,
 								["targets"] = {
 									["Kamenac"] = 0,
 								},
-								["counter"] = 682,
+								["counter"] = 383,
 							},
 							["Charge"] = {
 								["total"] = 0,
@@ -17581,39 +18097,73 @@ _detalhes_database = {
 								},
 								["counter"] = 0,
 							},
-							["Mighty Rage"] = {
-								["total"] = 60.5,
-								["id"] = "Mighty Rage",
-								["totalover"] = 0,
-								["targets"] = {
-									["Kamenac"] = 0,
-								},
-								["counter"] = 1,
-							},
 							["Unbridled Wrath"] = {
-								["total"] = 2089,
+								["total"] = 1109,
 								["id"] = "Unbridled Wrath",
 								["totalover"] = 0,
 								["targets"] = {
 									["Kamenac"] = 0,
 								},
-								["counter"] = 2103,
+								["counter"] = 1112,
+							},
+						},
+						["tipo"] = 7,
+					},
+					["last_event"] = 0,
+					["tipo"] = 3,
+					["boss_fight_component"] = true,
+					["total"] = 1636.291806,
+					["serial"] = "Player-4465-010DF944",
+					["received"] = 1636.291806,
+				}, -- [1]
+				{
+					["received"] = 15.008429,
+					["resource"] = 0.141013,
+					["targets"] = {
+						["Vermin"] = 0,
+					},
+					["pets"] = {
+					},
+					["powertype"] = 1,
+					["classe"] = "WARRIOR",
+					["passiveover"] = 0.003324,
+					["total"] = 15.008429,
+					["nome"] = "Vermin",
+					["spells"] = {
+						["_ActorTable"] = {
+							["Bloodrage"] = {
+								["total"] = 0,
+								["id"] = "Bloodrage",
+								["totalover"] = 0,
+								["targets"] = {
+									["Vermin"] = 0,
+								},
+								["counter"] = 0,
+							},
+							["Charge"] = {
+								["total"] = 15,
+								["id"] = "Charge",
+								["totalover"] = 0,
+								["targets"] = {
+									["Vermin"] = 15,
+								},
+								["counter"] = 1,
 							},
 						},
 						["tipo"] = 7,
 					},
 					["grupo"] = true,
-					["totalover"] = 0.00253,
-					["last_event"] = 0,
+					["totalover"] = 0.003324,
+					["spec"] = 71,
 					["tipo"] = 3,
-					["boss_fight_component"] = true,
-					["alternatepower"] = 0.666868,
-					["serial"] = "Player-4465-010DF944",
-					["flag_original"] = 1298,
-				}, -- [1]
+					["alternatepower"] = 0.008429,
+					["last_event"] = 0,
+					["serial"] = "Player-4465-00E5831F",
+					["flag_original"] = 1297,
+				}, -- [2]
 				{
-					["received"] = 649.027408,
-					["resource"] = 0.39964,
+					["received"] = 755.01972,
+					["resource"] = 0.225931,
 					["targets"] = {
 						["Scarlet Commander Mograine"] = 0,
 					},
@@ -17621,14 +18171,14 @@ _detalhes_database = {
 					},
 					["powertype"] = 0,
 					["classe"] = "UNKNOW",
-					["passiveover"] = 0.007811,
+					["passiveover"] = 0.001734,
 					["monster"] = true,
-					["total"] = 243.027408,
+					["total"] = 393.01972,
 					["boss_fight_component"] = true,
 					["spells"] = {
 						["_ActorTable"] = {
 							["Scarlet Resurrection"] = {
-								["total"] = 243,
+								["total"] = 393,
 								["id"] = "Scarlet Resurrection",
 								["totalover"] = 0,
 								["targets"] = {
@@ -17639,17 +18189,17 @@ _detalhes_database = {
 						},
 						["tipo"] = 7,
 					},
-					["totalover"] = 0.007811,
-					["alternatepower"] = 0.027408,
-					["tipo"] = 3,
-					["last_event"] = 0,
-					["flag_original"] = 68168,
-					["serial"] = "Creature-0-4468-189-24138-3977-0000188A0B",
 					["nome"] = "High Inquisitor Whitemane",
-				}, -- [2]
+					["alternatepower"] = 0.01972,
+					["tipo"] = 3,
+					["flag_original"] = 2632,
+					["last_event"] = 0,
+					["serial"] = "Creature-0-4468-189-3060-3977-00001B34F3",
+					["totalover"] = 0.001734,
+				}, -- [3]
 				{
-					["received"] = 243.017525,
-					["resource"] = 0.189295,
+					["received"] = 393.018887,
+					["resource"] = 0.221567,
 					["targets"] = {
 						["High Inquisitor Whitemane"] = 0,
 					},
@@ -17657,67 +18207,31 @@ _detalhes_database = {
 					},
 					["powertype"] = 0,
 					["classe"] = "UNKNOW",
-					["passiveover"] = 0.008785,
+					["passiveover"] = 0.001581,
 					["monster"] = true,
-					["total"] = 649.017525,
+					["total"] = 755.018887,
 					["boss_fight_component"] = true,
 					["spells"] = {
 						["_ActorTable"] = {
 							["Lay on Hands"] = {
-								["total"] = 649,
+								["total"] = 755,
 								["id"] = "Lay on Hands",
 								["totalover"] = 0,
 								["targets"] = {
 									["High Inquisitor Whitemane"] = 0,
 								},
-								["counter"] = 3,
+								["counter"] = 2,
 							},
 						},
 						["tipo"] = 7,
 					},
-					["totalover"] = 0.008785,
-					["alternatepower"] = 0.017525,
-					["tipo"] = 3,
-					["last_event"] = 0,
-					["flag_original"] = 2632,
-					["serial"] = "Creature-0-4468-189-24138-3976-00001897BD",
 					["nome"] = "Scarlet Commander Mograine",
-				}, -- [3]
-				{
-					["received"] = 0.008023,
-					["resource"] = 0.026011,
-					["targets"] = {
-						["Vermin"] = 0,
-					},
-					["pets"] = {
-					},
-					["powertype"] = 1,
-					["classe"] = "WARRIOR",
-					["passiveover"] = 0.008023,
-					["total"] = 0.008023,
-					["nome"] = "Vermin",
-					["spells"] = {
-						["_ActorTable"] = {
-							["Charge"] = {
-								["total"] = 0,
-								["id"] = "Charge",
-								["totalover"] = 0,
-								["targets"] = {
-									["Vermin"] = 0,
-								},
-								["counter"] = 0,
-							},
-						},
-						["tipo"] = 7,
-					},
-					["grupo"] = true,
-					["flag_original"] = 1297,
-					["spec"] = 71,
+					["alternatepower"] = 0.018887,
 					["tipo"] = 3,
+					["flag_original"] = 2632,
 					["last_event"] = 0,
-					["alternatepower"] = 0.008023,
-					["serial"] = "Player-4465-00E5831F",
-					["totalover"] = 0.008023,
+					["serial"] = "Creature-0-4468-189-3060-3976-00001B3A63",
+					["totalover"] = 0.001581,
 				}, -- [4]
 			},
 		}, -- [3]
@@ -17728,99 +18242,108 @@ _detalhes_database = {
 					["flag_original"] = 1047,
 					["debuff_uptime_spells"] = {
 						["_ActorTable"] = {
+							["Intimidating Shout"] = {
+								["counter"] = 0,
+								["activedamt"] = 0,
+								["appliedamt"] = 3,
+								["id"] = "Intimidating Shout",
+								["uptime"] = 8,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
 							["Hamstring"] = {
 								["counter"] = 0,
-								["activedamt"] = -1,
-								["appliedamt"] = 102,
+								["activedamt"] = 1,
+								["appliedamt"] = 22,
 								["id"] = "Hamstring",
-								["uptime"] = 605,
+								["uptime"] = 108,
 								["targets"] = {
 								},
-								["refreshamt"] = 9,
+								["refreshamt"] = 1,
 							},
 							["Demoralizing Shout"] = {
-								["counter"] = 0,
-								["refreshamt"] = 12,
-								["activedamt"] = -2,
-								["uptime"] = 1058,
+								["actived_at"] = 7978107682,
+								["refreshamt"] = 16,
+								["activedamt"] = -8,
+								["appliedamt"] = 99,
 								["id"] = "Demoralizing Shout",
-								["appliedamt"] = 137,
+								["uptime"] = 712,
 								["targets"] = {
 								},
-								["actived_at"] = 3190895814,
+								["counter"] = 0,
 							},
 							["Deep Wound"] = {
 								["counter"] = 0,
-								["appliedamt"] = 501,
-								["activedamt"] = -5,
-								["actived_at"] = 1595442636,
+								["activedamt"] = -7,
+								["appliedamt"] = 297,
 								["id"] = "Deep Wound",
-								["uptime"] = 3387,
+								["uptime"] = 1962,
 								["targets"] = {
 								},
-								["refreshamt"] = 1239,
+								["refreshamt"] = 594,
 							},
 							["Intercept Stun"] = {
 								["counter"] = 0,
-								["appliedamt"] = 34,
-								["activedamt"] = -30,
-								["actived_at"] = 44672491569,
+								["appliedamt"] = 32,
+								["activedamt"] = -3,
+								["actived_at"] = 6382480994,
 								["id"] = "Intercept Stun",
-								["uptime"] = 162,
+								["uptime"] = 83,
 								["targets"] = {
 								},
 								["refreshamt"] = 0,
-							},
-							["Thunder Clap"] = {
-								["counter"] = 0,
-								["refreshamt"] = 0,
-								["activedamt"] = -2,
-								["uptime"] = 1347,
-								["id"] = "Thunder Clap",
-								["appliedamt"] = 97,
-								["targets"] = {
-								},
-								["actived_at"] = 6381794571,
-							},
-							["Recently Bandaged"] = {
-								["counter"] = 0,
-								["appliedamt"] = 5,
-								["activedamt"] = -22,
-								["actived_at"] = 43077069478,
-								["id"] = "Recently Bandaged",
-								["uptime"] = 1,
-								["targets"] = {
-								},
-								["refreshamt"] = 0,
-							},
-							["Death Wish"] = {
-								["counter"] = 0,
-								["refreshamt"] = 0,
-								["activedamt"] = 1,
-								["uptime"] = 249,
-								["id"] = "Death Wish",
-								["appliedamt"] = 11,
-								["targets"] = {
-								},
-								["actived_at"] = 9572679697,
-							},
-							["Sunder Armor"] = {
-								["counter"] = 0,
-								["activedamt"] = -22,
-								["appliedamt"] = 368,
-								["id"] = "Sunder Armor",
-								["uptime"] = 3147,
-								["targets"] = {
-								},
-								["refreshamt"] = 526,
 							},
 							["Charge Stun"] = {
 								["counter"] = 0,
 								["appliedamt"] = 0,
-								["activedamt"] = -54,
-								["actived_at"] = 86154143712,
+								["activedamt"] = -32,
+								["actived_at"] = 51059870969,
 								["id"] = "Charge Stun",
 								["uptime"] = 0,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+							["Recently Bandaged"] = {
+								["refreshamt"] = 0,
+								["appliedamt"] = 3,
+								["activedamt"] = -7,
+								["uptime"] = 22,
+								["id"] = "Recently Bandaged",
+								["actived_at"] = 14360593941,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							["Death Wish"] = {
+								["refreshamt"] = 0,
+								["counter"] = 0,
+								["activedamt"] = 3,
+								["uptime"] = 190,
+								["id"] = "Death Wish",
+								["appliedamt"] = 8,
+								["targets"] = {
+								},
+								["actived_at"] = 1595621724,
+							},
+							["Sunder Armor"] = {
+								["counter"] = 0,
+								["activedamt"] = -3,
+								["appliedamt"] = 213,
+								["id"] = "Sunder Armor",
+								["uptime"] = 1757,
+								["targets"] = {
+								},
+								["refreshamt"] = 254,
+							},
+							["Thunder Clap"] = {
+								["actived_at"] = 4786861834,
+								["counter"] = 0,
+								["activedamt"] = -3,
+								["appliedamt"] = 54,
+								["id"] = "Thunder Clap",
+								["uptime"] = 919,
 								["targets"] = {
 								},
 								["refreshamt"] = 0,
@@ -17835,627 +18358,463 @@ _detalhes_database = {
 						["_ActorTable"] = {
 							["Pummel"] = {
 								["id"] = "Pummel",
-								["counter"] = 22,
-								["targets"] = {
-									["Scarlet Sorcerer"] = 6,
-									["Scarlet Conjuror"] = 1,
-									["High Inquisitor Fairbanks"] = 1,
-									["Scarlet Protector"] = 10,
-									["Scarlet Abbot"] = 4,
-								},
 								["interrompeu_oque"] = {
-									["Renew"] = 1,
-									["Holy Light"] = 10,
-									["Curse of Blood"] = 1,
-									["Frostbolt"] = 6,
-									["Fireball"] = 1,
-									["Heal"] = 3,
+									["Heal"] = 2,
 								},
+								["targets"] = {
+									["High Inquisitor Fairbanks"] = 1,
+									["Scarlet Abbot"] = 1,
+								},
+								["counter"] = 2,
 							},
 						},
 						["tipo"] = 9,
 					},
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
-							["Recklessness"] = {
+							["Battle Shout"] = {
+								["actived_at"] = 4786860490,
 								["counter"] = 0,
-								["activedamt"] = 3,
-								["appliedamt"] = 3,
-								["id"] = "Recklessness",
-								["uptime"] = 37,
+								["activedamt"] = 65,
+								["appliedamt"] = 65,
+								["id"] = "Battle Shout",
+								["uptime"] = 2351,
 								["targets"] = {
 								},
-								["refreshamt"] = 0,
-							},
-							["Mighty Rage"] = {
-								["counter"] = 0,
-								["activedamt"] = 1,
-								["appliedamt"] = 1,
-								["id"] = "Mighty Rage",
-								["uptime"] = 20,
-								["targets"] = {
-								},
-								["refreshamt"] = 0,
+								["refreshamt"] = 23,
 							},
 							["Holy Strength"] = {
+								["actived_at"] = 1595618953,
 								["counter"] = 0,
-								["refreshamt"] = 86,
-								["activedamt"] = 197,
-								["uptime"] = 2084,
+								["activedamt"] = 102,
+								["appliedamt"] = 102,
 								["id"] = "Holy Strength",
-								["appliedamt"] = 197,
+								["uptime"] = 1097,
 								["targets"] = {
 								},
-								["actived_at"] = 3190900291,
+								["refreshamt"] = 42,
 							},
 							["Bloodrage"] = {
 								["counter"] = 0,
-								["activedamt"] = 69,
-								["appliedamt"] = 69,
+								["activedamt"] = 38,
+								["appliedamt"] = 38,
 								["id"] = "Bloodrage",
-								["uptime"] = 619,
+								["uptime"] = 358,
 								["targets"] = {
 								},
 								["refreshamt"] = 0,
 							},
-							["Battle Shout"] = {
-								["counter"] = 0,
-								["refreshamt"] = 50,
-								["activedamt"] = 137,
-								["uptime"] = 4412,
-								["id"] = "Battle Shout",
-								["appliedamt"] = 137,
+							["Fire Shield"] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 3,
+								["appliedamt"] = 3,
+								["id"] = "Fire Shield",
+								["uptime"] = 33,
 								["targets"] = {
 								},
-								["actived_at"] = 3190900267,
-							},
-							["Fire Shield"] = {
 								["counter"] = 0,
+							},
+							["First Aid"] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 3,
+								["appliedamt"] = 3,
+								["id"] = "First Aid",
+								["uptime"] = 6,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							["Enrage"] = {
+								["refreshamt"] = 0,
 								["activedamt"] = 10,
 								["appliedamt"] = 10,
-								["id"] = "Fire Shield",
-								["uptime"] = 143,
+								["id"] = "Enrage",
+								["uptime"] = 58,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							["Elixir of the Mongoose"] = {
+								["actived_at"] = 4786860437,
+								["counter"] = 0,
+								["activedamt"] = 54,
+								["appliedamt"] = 54,
+								["id"] = "Elixir of the Mongoose",
+								["uptime"] = 1999,
 								["targets"] = {
 								},
 								["refreshamt"] = 0,
 							},
 							["Berserker Rage"] = {
+								["actived_at"] = 1595619282,
 								["counter"] = 0,
-								["refreshamt"] = 0,
-								["activedamt"] = 106,
-								["uptime"] = 1025,
+								["activedamt"] = 57,
+								["appliedamt"] = 57,
 								["id"] = "Berserker Rage",
-								["appliedamt"] = 106,
-								["targets"] = {
-								},
-								["actived_at"] = 1595450410,
-							},
-							["Elixir of the Mongoose"] = {
-								["counter"] = 0,
-								["refreshamt"] = 1,
-								["activedamt"] = 138,
-								["uptime"] = 4545,
-								["id"] = "Elixir of the Mongoose",
-								["appliedamt"] = 138,
-								["targets"] = {
-								},
-								["actived_at"] = 3190900267,
-							},
-							["Elixir of the Giants"] = {
-								["counter"] = 0,
-								["refreshamt"] = 1,
-								["activedamt"] = 138,
-								["uptime"] = 4541,
-								["id"] = "Elixir of the Giants",
-								["appliedamt"] = 138,
-								["targets"] = {
-								},
-								["actived_at"] = 3190900267,
-							},
-							["Battle Stance"] = {
-								["counter"] = 0,
-								["refreshamt"] = 0,
-								["activedamt"] = 3,
-								["uptime"] = 4,
-								["id"] = "Battle Stance",
-								["appliedamt"] = 3,
-								["targets"] = {
-								},
-								["actived_at"] = 3190886822,
-							},
-							["Berserking"] = {
-								["counter"] = 0,
-								["activedamt"] = 21,
-								["appliedamt"] = 21,
-								["id"] = "Berserking",
-								["uptime"] = 210,
+								["uptime"] = 529,
 								["targets"] = {
 								},
 								["refreshamt"] = 0,
-							},
-							["Flurry"] = {
-								["counter"] = 0,
-								["refreshamt"] = 1516,
-								["activedamt"] = 611,
-								["uptime"] = 3155,
-								["id"] = "Flurry",
-								["appliedamt"] = 611,
-								["targets"] = {
-								},
-								["actived_at"] = 3190900302,
 							},
 							["Berserker Stance"] = {
 								["counter"] = 0,
-								["appliedamt"] = 51,
-								["activedamt"] = 51,
-								["actived_at"] = 78176919999,
+								["appliedamt"] = 32,
+								["activedamt"] = 32,
+								["actived_at"] = 51059868495,
 								["id"] = "Berserker Stance",
-								["uptime"] = 28,
-								["targets"] = {
-								},
-								["refreshamt"] = 0,
-							},
-							["First Aid"] = {
-								["counter"] = 0,
-								["activedamt"] = 9,
-								["appliedamt"] = 9,
-								["id"] = "First Aid",
-								["uptime"] = 6,
-								["targets"] = {
-								},
-								["refreshamt"] = 0,
-							},
-							["Enrage"] = {
-								["counter"] = 0,
-								["activedamt"] = 9,
-								["appliedamt"] = 9,
-								["id"] = "Enrage",
-								["uptime"] = 72,
-								["targets"] = {
-								},
-								["refreshamt"] = 2,
-							},
-						},
-						["tipo"] = 9,
-					},
-					["interrompeu_oque"] = {
-						["Renew"] = 1,
-						["Holy Light"] = 10,
-						["Curse of Blood"] = 1,
-						["Frostbolt"] = 6,
-						["Fireball"] = 1,
-						["Heal"] = 3,
-					},
-					["fight_component"] = true,
-					["debuff_uptime"] = 9956,
-					["buff_uptime"] = 20901,
-					["nome"] = "Kamenac",
-					["interrupt_targets"] = {
-						["Scarlet Sorcerer"] = 6,
-						["Scarlet Conjuror"] = 1,
-						["High Inquisitor Fairbanks"] = 1,
-						["Scarlet Protector"] = 10,
-						["Scarlet Abbot"] = 4,
-					},
-					["grupo"] = true,
-					["spell_cast"] = {
-						["Battle Shout"] = 55,
-						["Charge"] = 1,
-						["Cleave"] = 512,
-						["Bloodrage"] = 27,
-						["Whirlwind"] = 165,
-						["Elixir of the Giants"] = 2,
-						["Death Wish"] = 11,
-						["Berserker Stance"] = 50,
-						["Sharpen Blade V"] = 1,
-						["Heroic Strike"] = 59,
-						["Recklessness"] = 3,
-						["Hamstring"] = 123,
-						["Berserker Rage"] = 103,
-						["Healing Potion"] = 4,
-						["Battle Stance"] = 3,
-						["First Aid"] = 7,
-						["Intercept"] = 35,
-						["Elixir of the Mongoose"] = 2,
-						["Thunder Clap"] = 30,
-						["Pummel"] = 28,
-						["Berserking"] = 21,
-						["Demoralizing Shout"] = 50,
-						["Sunder Armor"] = 970,
-						["Fire Shield"] = 9,
-						["Mighty Rage"] = 1,
-					},
-					["debuff_uptime_targets"] = {
-					},
-					["tipo"] = 4,
-					["last_event"] = 0,
-					["buff_uptime_targets"] = {
-					},
-					["interrupt"] = 22.104863,
-					["serial"] = "Player-4465-010DF944",
-					["boss_fight_component"] = true,
-				}, -- [1]
-				{
-					["flag_original"] = 2632,
-					["tipo"] = 4,
-					["nome"] = "Scarlet Soldier",
-					["pets"] = {
-					},
-					["last_event"] = 0,
-					["spell_cast"] = {
-						["Improved Blocking"] = 62,
-					},
-					["classe"] = "UNKNOW",
-					["monster"] = true,
-					["serial"] = "Creature-0-4468-189-23554-4286-00021885AB",
-					["fight_component"] = true,
-				}, -- [2]
-				{
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["nome"] = "Scarlet Evoker",
-					["spell_cast"] = {
-						["Fire Shield III"] = 9,
-						["Flamestrike"] = 3,
-						["Fireball"] = 37,
-					},
-					["tipo"] = 4,
-					["pets"] = {
-					},
-					["last_event"] = 0,
-					["flag_original"] = 2632,
-					["serial"] = "Creature-0-4468-189-23554-4289-00001885AB",
-					["monster"] = true,
-				}, -- [3]
-				{
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["nome"] = "Scarlet Conjuror",
-					["spell_cast"] = {
-						["Fireball"] = 35,
-						["Summon Fire Elemental"] = 2,
-					},
-					["last_event"] = 0,
-					["monster"] = true,
-					["tipo"] = 4,
-					["pets"] = {
-					},
-					["serial"] = "Creature-0-4468-189-23554-4297-00001885AA",
-					["flag_original"] = 2632,
-				}, -- [4]
-				{
-					["flag_original"] = 1297,
-					["debuff_uptime_spells"] = {
-						["_ActorTable"] = {
-							["Demoralizing Shout"] = {
-								["counter"] = 0,
-								["activedamt"] = 0,
-								["appliedamt"] = 1,
-								["id"] = "Demoralizing Shout",
-								["uptime"] = 12,
-								["targets"] = {
-								},
-								["refreshamt"] = 0,
-							},
-							["Hamstring"] = {
-								["id"] = "Hamstring",
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							["Recently Bandaged"] = {
-								["counter"] = 0,
-								["refreshamt"] = 0,
-								["activedamt"] = -1,
-								["uptime"] = 5,
-								["id"] = "Recently Bandaged",
-								["appliedamt"] = 1,
-								["targets"] = {
-								},
-								["actived_at"] = 3190893280,
-							},
-						},
-						["tipo"] = 9,
-					},
-					["buff_uptime"] = 7,
-					["classe"] = "WARRIOR",
-					["buff_uptime_spells"] = {
-						["_ActorTable"] = {
-							["Battle Stance"] = {
-								["counter"] = 0,
-								["activedamt"] = 1,
-								["appliedamt"] = 1,
-								["id"] = "Battle Stance",
-								["uptime"] = 2,
-								["targets"] = {
-								},
-								["refreshamt"] = 0,
-							},
-							["First Aid"] = {
-								["counter"] = 0,
-								["activedamt"] = 1,
-								["appliedamt"] = 1,
-								["id"] = "First Aid",
-								["uptime"] = 5,
-								["targets"] = {
-								},
-								["refreshamt"] = 0,
-							},
-							["Defensive Stance"] = {
-								["counter"] = 0,
-								["appliedamt"] = 3,
-								["activedamt"] = 3,
-								["actived_at"] = 4786337957,
-								["id"] = "Defensive Stance",
 								["uptime"] = 0,
 								["targets"] = {
 								},
 								["refreshamt"] = 0,
 							},
+							["Berserking"] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 13,
+								["appliedamt"] = 13,
+								["id"] = "Berserking",
+								["uptime"] = 124,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							["Flurry"] = {
+								["counter"] = 0,
+								["refreshamt"] = 755,
+								["activedamt"] = 324,
+								["uptime"] = 1724,
+								["id"] = "Flurry",
+								["appliedamt"] = 324,
+								["targets"] = {
+								},
+								["actived_at"] = 1595622285,
+							},
+							["Battle Stance"] = {
+								["counter"] = 0,
+								["activedamt"] = 0,
+								["appliedamt"] = 0,
+								["id"] = "Battle Stance",
+								["uptime"] = 0,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+							["Elixir of the Giants"] = {
+								["actived_at"] = 4786860437,
+								["counter"] = 0,
+								["activedamt"] = 53,
+								["appliedamt"] = 53,
+								["id"] = "Elixir of the Giants",
+								["uptime"] = 1990,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+							["Recklessness"] = {
+								["counter"] = 0,
+								["activedamt"] = 2,
+								["appliedamt"] = 2,
+								["id"] = "Recklessness",
+								["uptime"] = 20,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
 						},
 						["tipo"] = 9,
 					},
-					["fight_component"] = true,
-					["debuff_uptime"] = 17,
-					["boss_fight_component"] = true,
-					["spec"] = 71,
-					["grupo"] = true,
-					["spell_cast"] = {
-						["Demoralizing Shout"] = 4,
-						["Rend"] = 1,
-						["Hamstring"] = 0,
-						["Cleave"] = 0,
-						["Healing Potion"] = 1,
-						["Battle Stance"] = 1,
-						["First Aid"] = 1,
-						["Defensive Stance"] = 2,
+					["interrompeu_oque"] = {
+						["Heal"] = 2,
 					},
+					["fight_component"] = true,
+					["debuff_uptime"] = 5761,
+					["interrupt_targets"] = {
+						["High Inquisitor Fairbanks"] = 1,
+						["Scarlet Abbot"] = 1,
+					},
+					["boss_fight_component"] = true,
 					["debuff_uptime_targets"] = {
 					},
+					["spec"] = 72,
+					["grupo"] = true,
+					["spell_cast"] = {
+						["Battle Shout"] = 27,
+						["Intimidating Shout"] = 1,
+						["Cleave"] = 284,
+						["Bloodrage"] = 16,
+						["Whirlwind"] = 101,
+						["Berserker Rage"] = 55,
+						["Death Wish"] = 8,
+						["Berserker Stance"] = 32,
+						["Heroic Strike"] = 46,
+						["Recklessness"] = 1,
+						["Hamstring"] = 24,
+						["Demoralizing Shout"] = 32,
+						["Fire Shield"] = 2,
+						["Intercept"] = 32,
+						["Elixir of the Mongoose"] = 2,
+						["First Aid"] = 3,
+						["Berserking"] = 12,
+						["Pummel"] = 9,
+						["Thunder Clap"] = 17,
+						["Sunder Armor"] = 524,
+						["Healing Potion"] = 7,
+						["Elixir of the Giants"] = 1,
+					},
+					["interrupt"] = 2.008653,
+					["buff_uptime"] = 10289,
 					["last_event"] = 0,
 					["tipo"] = 4,
-					["pets"] = {
-					},
+					["nome"] = "Kamenac",
+					["serial"] = "Player-4465-010DF944",
 					["buff_uptime_targets"] = {
 					},
-					["serial"] = "Player-4465-00E5831F",
-					["nome"] = "Vermin",
-				}, -- [5]
+				}, -- [1]
 				{
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["nome"] = "Scarlet Guardsman",
+					["flag_original"] = 2632,
+					["last_event"] = 0,
+					["nome"] = "Scarlet Defender",
 					["spell_cast"] = {
-						["Disarm"] = 6,
-						["Defensive Stance"] = 9,
+						["Improved Blocking"] = 53,
+						["Defensive Stance"] = 30,
 					},
 					["tipo"] = 4,
 					["pets"] = {
 					},
+					["classe"] = "UNKNOW",
+					["fight_component"] = true,
+					["serial"] = "Creature-0-4468-189-3060-4298-00001B34F3",
+					["monster"] = true,
+				}, -- [2]
+				{
+					["monster"] = true,
 					["last_event"] = 0,
+					["nome"] = "Scarlet Myrmidon",
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["flag_original"] = 68168,
+					["tipo"] = 4,
+					["spell_cast"] = {
+						["Enrage"] = 23,
+					},
+					["serial"] = "Creature-0-4468-189-3060-4295-00049B34F4",
+					["fight_component"] = true,
+				}, -- [3]
+				{
 					["flag_original"] = 2632,
-					["serial"] = "Creature-0-4468-189-23554-4290-00011885AA",
+					["classe"] = "UNKNOW",
+					["nome"] = "Scarlet Sorcerer",
+					["spell_cast"] = {
+						["Slow"] = 28,
+						["Frostbolt"] = 180,
+					},
+					["pets"] = {
+					},
+					["monster"] = true,
+					["tipo"] = 4,
+					["last_event"] = 0,
+					["serial"] = "Creature-0-4468-189-3060-4294-00029B34F3",
+					["fight_component"] = true,
+				}, -- [4]
+				{
+					["flag_original"] = 1297,
+					["fight_component"] = true,
+					["nome"] = "Vermin",
+					["spec"] = 71,
+					["grupo"] = true,
+					["buff_uptime_targets"] = {
+					},
+					["spell_cast"] = {
+						["Mageweave Bandage"] = 18,
+						["Charge"] = 1,
+						["Heavy Silk Bandage"] = 27,
+						["Healing Potion"] = 1,
+						["Battle Stance"] = 1,
+						["Silk Bandage"] = 25,
+						["Defensive Stance"] = 1,
+					},
+					["pets"] = {
+					},
+					["buff_uptime"] = 12,
+					["tipo"] = 4,
+					["classe"] = "WARRIOR",
+					["buff_uptime_spells"] = {
+						["_ActorTable"] = {
+							["Battle Shout"] = {
+								["counter"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = "Battle Shout",
+								["uptime"] = 12,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+							["Battle Stance"] = {
+								["refreshamt"] = 0,
+								["appliedamt"] = 1,
+								["activedamt"] = 1,
+								["uptime"] = 0,
+								["id"] = "Battle Stance",
+								["actived_at"] = 1595619001,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							["Defensive Stance"] = {
+								["refreshamt"] = 0,
+								["counter"] = 0,
+								["activedamt"] = 1,
+								["uptime"] = 0,
+								["id"] = "Defensive Stance",
+								["appliedamt"] = 1,
+								["targets"] = {
+								},
+								["actived_at"] = 1595623028,
+							},
+						},
+						["tipo"] = 9,
+					},
+					["serial"] = "Player-4465-00E5831F",
+					["last_event"] = 0,
+				}, -- [5]
+				{
+					["flag_original"] = 2632,
+					["tipo"] = 4,
+					["nome"] = "Scarlet Wizard",
+					["pets"] = {
+					},
+					["spell_cast"] = {
+						["Fire Shield III"] = 27,
+						["Arcane Explosion"] = 4,
+					},
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["last_event"] = 0,
+					["serial"] = "Creature-0-4468-189-3060-4300-00031B34F3",
 					["monster"] = true,
 				}, -- [6]
 				{
-					["flag_original"] = 2632,
-					["tipo"] = 4,
-					["nome"] = "Scarlet Protector",
+					["fight_component"] = true,
+					["last_event"] = 0,
+					["nome"] = "Scarlet Centurion",
+					["spell_cast"] = {
+						["Battle Shout"] = 64,
+					},
 					["pets"] = {
 					},
-					["last_event"] = 0,
-					["spell_cast"] = {
-						["Holy Light"] = 29,
-						["Devotion Aura"] = 17,
-					},
-					["classe"] = "UNKNOW",
 					["monster"] = true,
-					["serial"] = "Creature-0-4468-189-23554-4292-00019885AA",
-					["fight_component"] = true,
+					["tipo"] = 4,
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4468-189-3060-4301-00011B34F4",
+					["flag_original"] = 2632,
 				}, -- [7]
 				{
 					["fight_component"] = true,
 					["last_event"] = 0,
-					["nome"] = "Scarlet Defender",
+					["nome"] = "Scarlet Chaplain",
 					["pets"] = {
-					},
-					["tipo"] = 4,
-					["spell_cast"] = {
-						["Defensive Stance"] = 52,
-						["Improved Blocking"] = 81,
 					},
 					["classe"] = "UNKNOW",
 					["flag_original"] = 2632,
-					["serial"] = "Creature-0-4468-189-23554-4298-00039885AA",
+					["tipo"] = 4,
+					["spell_cast"] = {
+						["Inner Fire"] = 6,
+						["Power Word: Shield"] = 8,
+						["Renew"] = 7,
+					},
+					["serial"] = "Creature-0-4468-189-3060-4299-00039B34F3",
 					["monster"] = true,
 				}, -- [8]
 				{
-					["fight_component"] = true,
-					["pets"] = {
-					},
-					["boss_fight_component"] = true,
-					["nome"] = "Scarlet Myrmidon",
-					["spell_cast"] = {
-						["Enrage"] = 62,
-					},
 					["flag_original"] = 2632,
 					["last_event"] = 0,
-					["classe"] = "UNKNOW",
+					["nome"] = "Scarlet Abbot",
+					["spell_cast"] = {
+						["Renew"] = 11,
+						["Heal"] = 8,
+						["Enrage"] = 14,
+						["Inner Fire"] = 2,
+					},
 					["tipo"] = 4,
-					["serial"] = "Creature-0-4468-189-23554-4295-00019885AA",
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["pets"] = {
+					},
+					["serial"] = "Creature-0-4468-189-3060-4303-00009B34F3",
 					["monster"] = true,
 				}, -- [9]
 				{
 					["monster"] = true,
 					["last_event"] = 0,
-					["nome"] = "Herod",
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
-					["flag_original"] = 2632,
-					["tipo"] = 4,
-					["boss_fight_component"] = true,
-					["serial"] = "Creature-0-4468-189-23554-3975-00001885A9",
-					["spell_cast"] = {
-						["Enrage"] = 1,
-						["Whirlwind"] = 3,
-						["Rushing Charge"] = 1,
-						["Cleave"] = 1,
-					},
-				}, -- [10]
-				{
-					["monster"] = true,
-					["last_event"] = 0,
-					["nome"] = "Scarlet Sorcerer",
-					["spell_cast"] = {
-						["Slow"] = 28,
-						["Frostbolt"] = 157,
-					},
-					["tipo"] = 4,
-					["flag_original"] = 2632,
-					["classe"] = "UNKNOW",
-					["pets"] = {
-					},
-					["serial"] = "Creature-0-4468-189-24138-4294-0000188A0C",
-					["fight_component"] = true,
-				}, -- [11]
-				{
-					["flag_original"] = 2632,
-					["classe"] = "UNKNOW",
-					["nome"] = "Scarlet Centurion",
-					["spell_cast"] = {
-						["Battle Shout"] = 65,
-					},
-					["pets"] = {
-					},
-					["fight_component"] = true,
-					["last_event"] = 0,
-					["tipo"] = 4,
-					["serial"] = "Creature-0-4468-189-24138-4301-0001988A0B",
-					["monster"] = true,
-				}, -- [12]
-				{
-					["flag_original"] = 2632,
-					["last_event"] = 0,
-					["nome"] = "Scarlet Wizard",
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
-					["spell_cast"] = {
-						["Fire Shield III"] = 26,
-						["Arcane Explosion"] = 3,
-					},
-					["tipo"] = 4,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-4468-189-24138-4300-0001988A0D",
-					["monster"] = true,
-				}, -- [13]
-				{
-					["monster"] = true,
-					["last_event"] = 0,
-					["nome"] = "Scarlet Abbot",
-					["pets"] = {
-					},
-					["tipo"] = 4,
-					["fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["flag_original"] = 2632,
-					["serial"] = "Creature-0-4468-189-24138-4303-0001188A0D",
-					["spell_cast"] = {
-						["Enrage"] = 15,
-						["Heal"] = 7,
-						["Inner Fire"] = 12,
-						["Renew"] = 9,
-					},
-				}, -- [14]
-				{
-					["flag_original"] = 2632,
-					["tipo"] = 4,
 					["nome"] = "Scarlet Monk",
 					["pets"] = {
 					},
-					["last_event"] = 0,
 					["spell_cast"] = {
-						["Kick"] = 38,
-						["Thrash"] = 18,
+						["Kick"] = 28,
+						["Thrash"] = 9,
 					},
-					["classe"] = "UNKNOW",
-					["monster"] = true,
-					["serial"] = "Creature-0-4468-189-24138-4540-0004188A0D",
 					["fight_component"] = true,
-				}, -- [15]
+					["classe"] = "UNKNOW",
+					["tipo"] = 4,
+					["serial"] = "Creature-0-4468-189-3060-4540-00061B34F3",
+					["flag_original"] = 2632,
+				}, -- [10]
 				{
 					["fight_component"] = true,
-					["classe"] = "UNKNOW",
+					["tipo"] = 4,
 					["nome"] = "Scarlet Champion",
 					["spell_cast"] = {
-						["Holy Strike"] = 10,
-					},
-					["tipo"] = 4,
-					["pets"] = {
+						["Holy Strike"] = 19,
 					},
 					["last_event"] = 0,
-					["flag_original"] = 2632,
-					["serial"] = "Creature-0-4468-189-24138-4302-0000188A0B",
 					["monster"] = true,
-				}, -- [16]
-				{
-					["fight_component"] = true,
-					["last_event"] = 0,
-					["nome"] = "Scarlet Chaplain",
-					["spell_cast"] = {
-						["Renew"] = 7,
-						["Power Word: Shield"] = 15,
-						["Inner Fire"] = 4,
-					},
-					["tipo"] = 4,
-					["pets"] = {
-					},
 					["classe"] = "UNKNOW",
+					["pets"] = {
+					},
+					["serial"] = "Creature-0-4468-189-3060-4302-00019B34F3",
 					["flag_original"] = 2632,
-					["serial"] = "Creature-0-4468-189-24138-4299-0001188A0C",
-					["monster"] = true,
-				}, -- [17]
+				}, -- [11]
 				{
 					["monster"] = true,
-					["last_event"] = 0,
+					["tipo"] = 4,
 					["nome"] = "Scarlet Commander Mograine",
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["flag_original"] = 2632,
-					["tipo"] = 4,
-					["boss_fight_component"] = true,
-					["serial"] = "Creature-0-4468-189-24138-3976-00001897BD",
 					["spell_cast"] = {
-						["Divine Shield"] = 3,
+						["Divine Shield"] = 2,
 						["Hammer of Justice"] = 4,
 						["Crusader Strike"] = 10,
 						["Retribution Aura"] = 3,
-						["Lay on Hands"] = 3,
+						["Lay on Hands"] = 2,
 					},
-				}, -- [18]
+					["flag_original"] = 2632,
+					["last_event"] = 0,
+					["boss_fight_component"] = true,
+					["serial"] = "Creature-0-4468-189-3060-3976-00001B3A63",
+					["classe"] = "UNKNOW",
+				}, -- [12]
 				{
 					["monster"] = true,
-					["last_event"] = 0,
+					["tipo"] = 4,
 					["nome"] = "High Inquisitor Whitemane",
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["flag_original"] = 68168,
-					["tipo"] = 4,
-					["boss_fight_component"] = true,
-					["serial"] = "Creature-0-4468-189-24138-3977-0000188A0B",
 					["spell_cast"] = {
-						["Holy Smite"] = 13,
+						["Holy Smite"] = 11,
 						["Heal"] = 1,
 						["Deep Sleep"] = 3,
-						["Scarlet Resurrection"] = 3,
 						["Power Word: Shield"] = 2,
+						["Scarlet Resurrection"] = 3,
 					},
-				}, -- [19]
+					["flag_original"] = 2632,
+					["last_event"] = 0,
+					["boss_fight_component"] = true,
+					["serial"] = "Creature-0-4468-189-3060-3977-00001B34F3",
+					["classe"] = "UNKNOW",
+				}, -- [13]
 				{
-					["flag_original"] = 68168,
+					["flag_original"] = 2632,
 					["debuff_uptime_spells"] = {
 						["_ActorTable"] = {
 						},
@@ -18466,34 +18825,34 @@ _detalhes_database = {
 					["classe"] = "UNKNOW",
 					["boss_debuff"] = true,
 					["monster"] = true,
-					["debuff_uptime"] = 60,
+					["debuff_uptime"] = 74,
 					["spellschool"] = 32,
-					["nome"] = "Deep Sleep",
 					["debuff_uptime_targets"] = {
 						["Kamenac"] = {
-							["uptime"] = 30,
-							["refreshamt"] = 0,
+							["uptime"] = 37,
+							["appliedamt"] = 0,
 							["activedamt"] = 0,
 							["actived"] = false,
-							["appliedamt"] = 0,
+							["refreshamt"] = 0,
 						},
 						["Vermin"] = {
-							["uptime"] = 30,
-							["refreshamt"] = 0,
+							["uptime"] = 37,
+							["appliedamt"] = 0,
 							["activedamt"] = 0,
 							["actived"] = false,
-							["appliedamt"] = 0,
+							["refreshamt"] = 0,
 						},
 					},
-					["last_event"] = 0,
+					["nome"] = "Deep Sleep",
+					["boss_fight_component"] = true,
 					["tipo"] = 4,
 					["damage_twin"] = "High Inquisitor Whitemane",
-					["serial"] = "Creature-0-4468-189-24138-3977-0000188A0B",
 					["damage_spellid"] = "Deep Sleep",
-					["boss_fight_component"] = true,
-				}, -- [20]
+					["serial"] = "Creature-0-4468-189-3060-3977-00001B34F3",
+					["last_event"] = 0,
+				}, -- [14]
 				{
-					["flag_original"] = 68168,
+					["flag_original"] = 2632,
 					["debuff_uptime_spells"] = {
 						["_ActorTable"] = {
 						},
@@ -18504,49 +18863,25 @@ _detalhes_database = {
 					["classe"] = "UNKNOW",
 					["boss_debuff"] = true,
 					["monster"] = true,
-					["debuff_uptime"] = 48,
+					["debuff_uptime"] = 51,
 					["spellschool"] = 1,
-					["nome"] = "Crusader Strike",
 					["debuff_uptime_targets"] = {
 						["Kamenac"] = {
-							["uptime"] = 48,
-							["refreshamt"] = 0,
-							["activedamt"] = 2,
-							["actived"] = false,
+							["uptime"] = 51,
 							["appliedamt"] = 0,
+							["activedamt"] = 3,
+							["actived"] = false,
+							["refreshamt"] = 0,
 						},
 					},
-					["last_event"] = 0,
+					["nome"] = "Crusader Strike",
+					["boss_fight_component"] = true,
 					["tipo"] = 4,
 					["damage_twin"] = "Scarlet Commander Mograine",
-					["serial"] = "Creature-0-4468-189-24138-3976-00001897BD",
 					["damage_spellid"] = "Crusader Strike",
-					["boss_fight_component"] = true,
-				}, -- [21]
-				{
-					["flag_original"] = 68168,
-					["debuff_uptime_spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 9,
-					},
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
-					["boss_debuff"] = true,
-					["monster"] = true,
-					["debuff_uptime"] = 0,
-					["spellschool"] = 1,
-					["debuff_uptime_targets"] = {
-					},
-					["nome"] = "Dazed",
-					["boss_fight_component"] = true,
-					["tipo"] = 4,
-					["damage_twin"] = "Scarlet Commander Mograine",
-					["damage_spellid"] = "Dazed",
-					["serial"] = "Creature-0-4468-189-24138-3976-0000188A0B",
+					["serial"] = "Creature-0-4468-189-3060-3976-00001B3A63",
 					["last_event"] = 0,
-				}, -- [22]
+				}, -- [15]
 				{
 					["monster"] = true,
 					["tipo"] = 4,
@@ -18554,34 +18889,18 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["spell_cast"] = {
-						["Sleep"] = 1,
-						["Power Word: Shield"] = 1,
-						["Curse of Blood"] = 0,
+						["Curse of Blood"] = 1,
+						["Heal"] = 1,
+						["Power Word: Shield"] = 2,
 					},
-					["flag_original"] = 2632,
+					["flag_original"] = 68168,
 					["last_event"] = 0,
 					["boss_fight_component"] = true,
-					["serial"] = "Creature-0-4468-189-24138-4542-0000188A0B",
+					["serial"] = "Creature-0-4468-189-3060-4542-00001B34F3",
 					["classe"] = "UNKNOW",
-				}, -- [23]
+				}, -- [16]
 				{
-					["monster"] = true,
-					["tipo"] = 4,
-					["nome"] = "Scarlet Disciple",
-					["pets"] = {
-					},
-					["spell_cast"] = {
-						["Holy Smite"] = 0,
-						["Renew"] = 0,
-					},
-					["flag_original"] = 68168,
-					["last_event"] = 0,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-4448-0-158-4285-0000188E3A",
-					["classe"] = "UNKNOW",
-				}, -- [24]
-				{
-					["flag_original"] = 68168,
+					["flag_original"] = 2632,
 					["debuff_uptime_spells"] = {
 						["_ActorTable"] = {
 						},
@@ -18592,40 +18911,25 @@ _detalhes_database = {
 					["classe"] = "UNKNOW",
 					["boss_debuff"] = true,
 					["monster"] = true,
-					["debuff_uptime"] = 0,
-					["spellschool"] = 32,
+					["debuff_uptime"] = 5,
+					["spellschool"] = 2,
+					["nome"] = "Hammer of Justice",
 					["debuff_uptime_targets"] = {
-						["Vermin"] = {
-							["uptime"] = 0,
-							["appliedamt"] = 0,
-							["activedamt"] = 1,
-							["actived"] = false,
+						["Kamenac"] = {
+							["uptime"] = 5,
 							["refreshamt"] = 0,
+							["activedamt"] = 0,
+							["actived"] = false,
+							["appliedamt"] = 0,
 						},
 					},
-					["nome"] = "Sleep",
+					["last_event"] = 0,
+					["tipo"] = 4,
+					["damage_twin"] = "Scarlet Commander Mograine",
+					["serial"] = "Creature-0-4469-189-9303-3976-00001B42E7",
+					["damage_spellid"] = "Hammer of Justice",
 					["boss_fight_component"] = true,
-					["tipo"] = 4,
-					["damage_twin"] = "High Inquisitor Fairbanks",
-					["damage_spellid"] = "Sleep",
-					["serial"] = "Creature-0-4445-189-8393-4542-000018990F",
-					["last_event"] = 0,
-				}, -- [25]
-				{
-					["monster"] = true,
-					["last_event"] = 0,
-					["nome"] = "Thunderhead",
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
-					["flag_original"] = 2632,
-					["tipo"] = 4,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-4448-1-180-3239-00001A7629",
-					["spell_cast"] = {
-						["Lizard Bolt"] = 0,
-					},
-				}, -- [26]
+				}, -- [17]
 			},
 		}, -- [4]
 		{
@@ -18635,200 +18939,200 @@ _detalhes_database = {
 		}, -- [5]
 		["raid_roster"] = {
 		},
-		["tempo_start"] = 1595442610,
+		["tempo_start"] = 1595618565,
 		["last_events_tables"] = {
 		},
 		["alternate_power"] = {
 		},
 		["segments_added"] = {
 			{
-				["elapsed"] = 78.005999999994,
+				["elapsed"] = 24.005999999994,
 				["type"] = 6,
-				["name"] = "High Inquisitor Whitemane",
-				["clock"] = "22:42:42",
+				["name"] = "High Inquisitor Fairbanks",
+				["clock"] = "22:53:04",
 			}, -- [1]
 			{
-				["elapsed"] = 42.0040000000008,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "22:41:41",
+				["elapsed"] = 40,
+				["type"] = 6,
+				["name"] = "Scarlet Commander Mograine",
+				["clock"] = "22:51:41",
 			}, -- [2]
 			{
-				["elapsed"] = 26.9990000000107,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "22:41:02",
+				["elapsed"] = 25.8699999999953,
+				["type"] = 6,
+				["name"] = "Scarlet Commander Mograine",
+				["clock"] = "22:50:58",
 			}, -- [3]
 			{
-				["elapsed"] = 26.0019999999931,
+				["elapsed"] = 40.4090000000433,
 				["type"] = 5,
 				["name"] = "Trash Cleanup",
-				["clock"] = "22:40:22",
+				["clock"] = "22:47:22",
 			}, -- [4]
 			{
-				["elapsed"] = 12.0040000000008,
+				["elapsed"] = 43.0070000000414,
 				["type"] = 5,
 				["name"] = "Trash Cleanup",
-				["clock"] = "22:39:59",
+				["clock"] = "22:46:08",
 			}, -- [5]
 			{
-				["elapsed"] = 60.0019999999931,
+				["elapsed"] = 61.0100000000093,
 				["type"] = 5,
 				["name"] = "Trash Cleanup",
-				["clock"] = "22:38:26",
+				["clock"] = "22:44:35",
 			}, -- [6]
 			{
-				["elapsed"] = 53.0099999999948,
+				["elapsed"] = 52.005999999994,
 				["type"] = 5,
 				["name"] = "Trash Cleanup",
-				["clock"] = "22:37:13",
+				["clock"] = "22:43:13",
 			}, -- [7]
 			{
-				["elapsed"] = 47.0090000000055,
+				["elapsed"] = 45.0009999999893,
 				["type"] = 5,
 				["name"] = "Trash Cleanup",
-				["clock"] = "22:35:59",
+				["clock"] = "22:42:08",
 			}, -- [8]
 			{
-				["elapsed"] = 37.0090000000055,
+				["elapsed"] = 33.0070000000414,
 				["type"] = 5,
 				["name"] = "Trash Cleanup",
-				["clock"] = "22:35:07",
+				["clock"] = "22:40:38",
 			}, -- [9]
 			{
-				["elapsed"] = 37.0039999999863,
+				["elapsed"] = 13.9990000000107,
 				["type"] = 5,
 				["name"] = "Trash Cleanup",
-				["clock"] = "22:34:21",
+				["clock"] = "22:40:10",
 			}, -- [10]
 			{
-				["elapsed"] = 40.0050000000047,
+				["elapsed"] = 75.0030000000261,
 				["type"] = 5,
 				["name"] = "Trash Cleanup",
-				["clock"] = "22:33:18",
+				["clock"] = "22:36:39",
 			}, -- [11]
 			{
-				["elapsed"] = 52,
+				["elapsed"] = 62.0099999999511,
 				["type"] = 5,
 				["name"] = "Trash Cleanup",
-				["clock"] = "22:31:40",
+				["clock"] = "22:30:48",
 			}, -- [12]
 			{
-				["elapsed"] = 26.0109999999986,
+				["elapsed"] = 45.0100000000093,
 				["type"] = 5,
 				["name"] = "Trash Cleanup",
-				["clock"] = "22:31:08",
+				["clock"] = "22:28:33",
 			}, -- [13]
 			{
-				["elapsed"] = 11,
+				["elapsed"] = 72.0030000000261,
 				["type"] = 5,
 				["name"] = "Trash Cleanup",
-				["clock"] = "22:30:44",
+				["clock"] = "22:27:13",
 			}, -- [14]
 			{
-				["elapsed"] = 21.0109999999986,
+				["elapsed"] = 19.0080000000307,
 				["type"] = 5,
 				["name"] = "Trash Cleanup",
-				["clock"] = "22:30:19",
+				["clock"] = "22:26:39",
 			}, -- [15]
 			{
-				["elapsed"] = 26.0010000000038,
+				["elapsed"] = 39.00900000002,
 				["type"] = 5,
 				["name"] = "Trash Cleanup",
-				["clock"] = "22:29:46",
+				["clock"] = "22:25:23",
 			}, -- [16]
 			{
-				["elapsed"] = 25.0009999999893,
+				["elapsed"] = 14.0040000000154,
 				["type"] = 5,
 				["name"] = "Trash Cleanup",
-				["clock"] = "22:29:10",
+				["clock"] = "22:24:36",
 			}, -- [17]
 			{
-				["elapsed"] = 19.0009999999893,
+				["elapsed"] = 13.0010000000475,
 				["type"] = 5,
 				["name"] = "Trash Cleanup",
-				["clock"] = "22:28:49",
+				["clock"] = "22:24:13",
 			}, -- [18]
 			{
-				["elapsed"] = 18.0020000000077,
+				["elapsed"] = 50,
 				["type"] = 5,
 				["name"] = "Trash Cleanup",
-				["clock"] = "22:28:28",
+				["clock"] = "22:23:10",
 			}, -- [19]
 			{
-				["elapsed"] = 13.002999999997,
+				["elapsed"] = 38.0039999999572,
 				["type"] = 5,
 				["name"] = "Trash Cleanup",
-				["clock"] = "22:28:09",
+				["clock"] = "22:22:25",
 			}, -- [20]
 			{
-				["elapsed"] = 13,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "22:27:45",
+				["elapsed"] = 21.0009999999893,
+				["type"] = 6,
+				["name"] = "High Inquisitor Fairbanks",
+				["clock"] = "22:20:07",
 			}, -- [21]
 			{
-				["elapsed"] = 16.0069999999978,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "22:27:22",
+				["elapsed"] = 73,
+				["type"] = 6,
+				["name"] = "High Inquisitor Whitemane",
+				["clock"] = "22:18:32",
 			}, -- [22]
 			{
-				["elapsed"] = 12.0040000000008,
+				["elapsed"] = 44.0070000000415,
 				["type"] = 5,
 				["name"] = "Trash Cleanup",
-				["clock"] = "22:27:06",
+				["clock"] = "22:17:17",
 			}, -- [23]
 			{
-				["elapsed"] = 12.8619999999937,
+				["elapsed"] = 42.0040000000154,
 				["type"] = 5,
 				["name"] = "Trash Cleanup",
-				["clock"] = "22:26:40",
+				["clock"] = "22:16:13",
 			}, -- [24]
 			{
-				["elapsed"] = 12.0060000000085,
+				["elapsed"] = 36.0079999999725,
 				["type"] = 5,
 				["name"] = "Trash Cleanup",
-				["clock"] = "22:26:14",
+				["clock"] = "22:15:35",
 			}, -- [25]
 			{
-				["elapsed"] = 46.0109999999986,
+				["elapsed"] = 12.0029999999679,
 				["type"] = 5,
 				["name"] = "Trash Cleanup",
-				["clock"] = "22:25:12",
+				["clock"] = "22:15:19",
 			}, -- [26]
 			{
-				["elapsed"] = 38.0050000000047,
+				["elapsed"] = 33.0069999999832,
 				["type"] = 5,
 				["name"] = "Trash Cleanup",
-				["clock"] = "22:24:19",
+				["clock"] = "22:14:45",
 			}, -- [27]
 			{
-				["elapsed"] = 14.0080000000016,
+				["elapsed"] = 15.0079999999725,
 				["type"] = 5,
 				["name"] = "Trash Cleanup",
-				["clock"] = "22:24:00",
+				["clock"] = "22:14:15",
 			}, -- [28]
 			{
-				["elapsed"] = 38.0009999999893,
+				["elapsed"] = 18.0040000000154,
 				["type"] = 5,
 				["name"] = "Trash Cleanup",
-				["clock"] = "22:22:47",
+				["clock"] = "22:11:04",
 			}, -- [29]
 			{
-				["elapsed"] = 13.0080000000016,
+				["elapsed"] = 27.0079999999725,
 				["type"] = 5,
 				["name"] = "Trash Cleanup",
-				["clock"] = "22:22:32",
+				["clock"] = "22:07:33",
 			}, -- [30]
 		},
-		["combat_counter"] = 4749,
+		["combat_counter"] = 4945,
 		["totals"] = {
-			1880915.276954, -- [1]
-			31914.581942, -- [2]
+			1077880.297566, -- [1]
+			24534.355182, -- [2]
 			{
-				3075.164338, -- [1]
-				[0] = 892.020584,
+				1651.294944, -- [1]
+				[0] = 1148.035292,
 				["alternatepower"] = 0,
 				[6] = 0,
 				[3] = 0,
@@ -18838,7 +19142,7 @@ _detalhes_database = {
 				["ress"] = 0,
 				["dead"] = 0,
 				["cc_break"] = 0,
-				["interrupt"] = 22.104863,
+				["interrupt"] = 2.008653,
 				["debuff_uptime"] = 0,
 				["dispell"] = 0,
 				["cooldowns_defensive"] = 0,
@@ -18853,15 +19157,15 @@ _detalhes_database = {
 		},
 		["__call"] = {
 		},
-		["data_inicio"] = "20:30:10",
-		["end_time"] = 105889.224,
+		["data_inicio"] = "21:22:52",
+		["end_time"] = 279262.189,
 		["cleu_timeline"] = {
 		},
 		["totals_grupo"] = {
-			1724052.7972, -- [1]
-			31914.531249, -- [2]
+			979764.362604, -- [1]
+			24534.244002, -- [2]
 			{
-				3075.164338, -- [1]
+				1651.294944, -- [1]
 				[0] = 0,
 				["alternatepower"] = 0,
 				[6] = 0,
@@ -18872,7 +19176,7 @@ _detalhes_database = {
 				["ress"] = 0,
 				["dead"] = 0,
 				["cc_break"] = 0,
-				["interrupt"] = 22.104863,
+				["interrupt"] = 2.008653,
 				["debuff_uptime"] = 0,
 				["dispell"] = 0,
 				["cooldowns_defensive"] = 0,
@@ -18896,13 +19200,13 @@ _detalhes_database = {
 		["hasSaved"] = true,
 		["spells_cast_timeline"] = {
 		},
-		["data_fim"] = "22:44:00",
+		["data_fim"] = "22:53:28",
 		["overall_enemy_name"] = "-- x -- x --",
 		["CombatSkillCache"] = {
 		},
 		["frags"] = {
 		},
-		["start_time"] = 101320.18,
+		["start_time"] = 276770.6,
 		["TimeData"] = {
 		},
 		["cleu_events"] = {
@@ -18912,7 +19216,7 @@ _detalhes_database = {
 	["on_death_menu"] = true,
 	["force_font_outline"] = "",
 	["character_data"] = {
-		["logons"] = 1529,
+		["logons"] = 1551,
 	},
 	["announce_cooldowns"] = {
 		["enabled"] = false,
@@ -18930,6 +19234,5 @@ _detalhes_database = {
 		["channel"] = "SELF",
 	},
 	["cached_specs"] = {
-		["Player-4465-00E5831F"] = 71,
 	},
 }

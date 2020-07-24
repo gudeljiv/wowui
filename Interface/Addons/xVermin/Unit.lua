@@ -28,7 +28,8 @@ cus.text:SetTextColor(0.058, 0.901, 0.466, 1)
 -- Unit (Player) ammo count
 -----------------------------------------------------------------------------------------------------------------------------
 local _, class, _ = UnitClass("player")
-if class == "HUNTER" or class == "WARRIOR" then
+-- or class == "WARRIOR"
+if class == "HUNTER" then
 	local ac = CreateFrame("Frame", "CustomContainer_AmmoCount", CustomContainer_Combat)
 	ac:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 2)
 	ac:SetWidth(1)

@@ -1,15 +1,15 @@
 VER 3 0000000000000007 " " "INV_MISC_QUESTIONMARK"
-/run local _, D_spellId, _, _, _, _, D_unitCaster = UnitDebuff("target", 1); print(D_unitCaster)
+/run print("UnitBuff", UnitBuff("target",1), "UnitDebuff", UnitDebuff("target",1))
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:1205
-/castsequence [combat]item:2455
+/use [nocombat]item:0
+/castsequence [combat]
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:3770
-/castsequence [combat]
+/use [nocombat]item:4593
+/castsequence [combat]item:1710,item:1710,item:1710,item:1710,item:1710,item:1710,item:1710,item:1710,item:1710,item:1710,item:1710,item:1710,item:1710,item:1710
 END
 VER 3 0000000000000006 "PF" "Inv_misc_questionmark"
 #showtooltip item:3770

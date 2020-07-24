@@ -345,13 +345,22 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Mxyz"] = {
 		["m_aQuestList"] = {
-			["The Damned - false"] = {
+			["Cutting Teeth - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Deathknell - true"] = {
+			["Vile Familiars - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Rattling the Rattlecages - false"] = {
+			["Galgar's Cactus Apple Surprise - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Sarkoth - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Lazy Peons - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Valley of Trials - true"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -642,7 +651,7 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 633.622131347656,
+		["m_iFrameBottom"] = 929.39990234375,
 		["m_bHideCompletedQuests"] = true,
 		["m_iFrameLeft"] = 1670.73352050781,
 		["m_bColourDoneOrFailed"] = true,

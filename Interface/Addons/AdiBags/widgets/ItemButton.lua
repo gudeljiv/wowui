@@ -401,7 +401,7 @@ function buttonProto:UpdateBorder(isolatedEvent)
 		self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureNormal")
 		self:SetBeautyBorderColor(1, 1, 1, 1)
 
-		if (itemRarity > 2) then
+		if (itemRarity > 1) then
 			self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")
 			self:SetBeautyBorderColor(r, g, b, 1)
 		end

@@ -65,6 +65,7 @@ AdiBagsDB = {
 	["profileKeys"] = {
 		["Mxzq - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
+		["Mxyz - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",
 	},
 	["profiles"] = {
@@ -98,11 +99,11 @@ AdiBagsDB = {
 				},
 				["Backpack"] = {
 					["xOffset"] = -225.883741936414,
-					["yOffset"] = 376.900752954993,
+					["yOffset"] = 376.900862818271,
 				},
 				["Bank"] = {
-					["xOffset"] = 812.044753878785,
-					["yOffset"] = -410.081161062422,
+					["xOffset"] = 796.211313136119,
+					["yOffset"] = -430.914589465603,
 				},
 			},
 			["rightClickConfig"] = false,
@@ -112,7 +113,7 @@ AdiBagsDB = {
 			},
 			["positionMode"] = "manual",
 			["columnWidth"] = {
-				["Backpack"] = 12,
+				["Backpack"] = 14,
 				["Bank"] = 18,
 			},
 		},
