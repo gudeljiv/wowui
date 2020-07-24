@@ -1,11 +1,16 @@
 
 AutoStack = {
-	["Vermin - Golemagg"] = {
+	["Mxzq - Golemagg"] = {
 		["bags"] = true,
 		["guild"] = false,
 		["bank"] = true,
 	},
-	["Mxzq - Golemagg"] = {
+	["Mxyzptlk - Golemagg"] = {
+		["bags"] = true,
+		["guild"] = false,
+		["bank"] = true,
+	},
+	["Vermin - Golemagg"] = {
 		["bags"] = true,
 		["guild"] = false,
 		["bank"] = true,

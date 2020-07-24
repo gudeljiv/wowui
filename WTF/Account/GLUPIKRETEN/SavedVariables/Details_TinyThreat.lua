@@ -2,6 +2,7 @@
 Details_TinyThreatDB = {
 	["characters"] = {
 		["Mxzq - Golemagg"] = "Mxyz - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Mxyz - Golemagg",
 		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
 		["Vermin - Golemagg"] = "Mxyz - Golemagg",
 	},

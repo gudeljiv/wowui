@@ -80,7 +80,6 @@ function buttonProto:OnCreate()
 	self:SetScript("OnHide", self.OnHide)
 	self:SetWidth(ITEM_SIZE)
 	self:SetHeight(ITEM_SIZE)
-	-- self:CreateBeautyBorder(6)
 	if self.NewItemTexture then
 		self.NewItemTexture:Hide()
 	end
@@ -398,6 +397,9 @@ function buttonProto:UpdateBorder(isolatedEvent)
 			itemEquipLoc,
 			itemTexture,
 			itemSellPrice = GetItemInfo(self.itemLink)
+
+		self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureNormal")
+		self:SetBeautyBorderColor(1, 1, 1, 1)
 
 		if (itemRarity > 2) then
 			self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")

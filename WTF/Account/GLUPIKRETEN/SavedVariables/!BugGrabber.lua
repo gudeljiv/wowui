@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 1202,
 	["lastSanitation"] = 3,
-	["session"] = 1197,
 	["errors"] = {
 		{
 			["message"] = "[string \"ItemRackMenu3:CreateBeautyBorder(8)\"]:1: attempt to index global 'ItemRackMenu3' (a nil value)",
@@ -21,14 +21,14 @@ BugGrabberDB = {
 		}, -- [2]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Details\\Libs\\LibThreatClassic2\\lib.xml",
-			["session"] = 751,
 			["time"] = "2020/07/11 19:09:15",
+			["session"] = 751,
 			["counter"] = 8,
 		}, -- [3]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Details_Streamer\\Details_Streamer.toc",
-			["time"] = "2020/07/11 19:09:55",
 			["session"] = 751,
+			["time"] = "2020/07/11 19:09:55",
 			["counter"] = 2,
 		}, -- [4]
 		{
@@ -923,32 +923,32 @@ BugGrabberDB = {
 		}, -- [116]
 		{
 			["message"] = "EasyLootFilterItem: Set bytes attribute on EditBox element instead of child FontString",
-			["session"] = 1117,
 			["time"] = "2020/07/22 16:41:35",
+			["session"] = 1117,
 			["counter"] = 4,
 		}, -- [117]
 		{
 			["message"] = "EasyLootItemLevel: Set bytes attribute on EditBox element instead of child FontString",
-			["session"] = 1117,
 			["time"] = "2020/07/22 16:41:35",
+			["session"] = 1117,
 			["counter"] = 4,
 		}, -- [118]
 		{
 			["message"] = "EasyLootDestroyValue: Set bytes attribute on EditBox element instead of child FontString",
-			["session"] = 1117,
 			["time"] = "2020/07/22 16:41:35",
+			["session"] = 1117,
 			["counter"] = 4,
 		}, -- [119]
 		{
 			["message"] = "Frame EasyLootFilter: Unknown script element OnEscapePressed",
-			["session"] = 1117,
 			["time"] = "2020/07/22 16:41:35",
+			["session"] = 1117,
 			["counter"] = 4,
 		}, -- [120]
 		{
 			["message"] = "EasyLootSearchText: Set bytes attribute on EditBox element instead of child FontString",
-			["session"] = 1117,
 			["time"] = "2020/07/22 16:41:35",
+			["session"] = 1117,
 			["counter"] = 3,
 		}, -- [121]
 		{
@@ -1033,8 +1033,8 @@ BugGrabberDB = {
 		}, -- [131]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\RestackBags.lua",
-			["session"] = 1158,
 			["time"] = "2020/07/23 19:45:36",
+			["session"] = 1158,
 			["counter"] = 3,
 		}, -- [132]
 		{
@@ -1079,8 +1079,8 @@ BugGrabberDB = {
 		}, -- [137]
 		{
 			["message"] = "(null)",
-			["session"] = 1176,
 			["time"] = "2020/07/11 19:09:15",
+			["session"] = 1176,
 			["counter"] = 155,
 		}, -- [138]
 		{
@@ -1093,8 +1093,8 @@ BugGrabberDB = {
 		}, -- [139]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\AutoSellJunk.lua",
-			["session"] = 1182,
 			["time"] = "2020/07/23 20:54:32",
+			["session"] = 1182,
 			["counter"] = 3,
 		}, -- [140]
 		{
@@ -1121,5 +1121,21 @@ BugGrabberDB = {
 			["session"] = 1187,
 			["counter"] = 1,
 		}, -- [143]
+		{
+			["message"] = "...acterStatsClassic\\CharacterStatsClassicCallbacks.lua:331: Usage: GameTooltip:SetText(\"text\" [, color, wrap])",
+			["time"] = "2020/07/24 11:58:23",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[C]: in function `SetText'\n...acterStatsClassic\\CharacterStatsClassicCallbacks.lua:331: in function <...acterStatsClassic\\CharacterStatsClassicCallbacks.lua:306>",
+			["session"] = 1201,
+			["counter"] = 1,
+		}, -- [144]
+		{
+			["message"] = "[string \"print(GetItemInfo(|cffffffff|Hitem:2092::::::::5:::::::|h[Worn ...\"]:1: unexpected symbol near '|'",
+			["time"] = "2020/07/24 12:35:47",
+			["locals"] = "(*temporary) = \"print(GetItemInfo(|cffffffff|Hitem:2092::::::::5:::::::|h[Worn Dagger]|h|r))\"\n",
+			["stack"] = "[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 1201,
+			["counter"] = 1,
+		}, -- [145]
 	},
 }

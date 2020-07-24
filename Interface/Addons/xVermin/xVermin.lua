@@ -234,6 +234,11 @@ f:SetScript(
 			end
 		)
 		PlayerFrameManaBarText:SetScale(0.8)
+
+		PlayerFrame:ClearAllPoints()
+		PlayerFrame:SetPoint("CENTER", UIParent, "CENTER", -250, -96)
+		TargetFrame:ClearAllPoints()
+		TargetFrame:SetPoint("CENTER", UIParent, "CENTER", 250, -96)
 	end
 )
 f:RegisterEvent("PLAYER_ENTERING_WORLD")
