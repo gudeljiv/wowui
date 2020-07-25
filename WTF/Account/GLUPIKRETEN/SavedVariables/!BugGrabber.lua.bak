@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 1301,
+	["session"] = 1303,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -105,5 +105,13 @@ BugGrabberDB = {
 			["session"] = 1301,
 			["counter"] = 48,
 		}, -- [13]
+		{
+			["message"] = "[string \"CastSpellByName(“Aspect of the Hawk”)\"]:1: unexpected symbol near '�'",
+			["time"] = "2020/07/25 22:29:30",
+			["locals"] = "(*temporary) = \"CastSpellByName(“Aspect of the Hawk”)\"\n",
+			["stack"] = "[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 1303,
+			["counter"] = 2,
+		}, -- [14]
 	},
 }

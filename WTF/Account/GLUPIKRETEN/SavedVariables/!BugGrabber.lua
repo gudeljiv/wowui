@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 1302,
+	["session"] = 1304,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -105,5 +105,21 @@ BugGrabberDB = {
 			["session"] = 1301,
 			["counter"] = 48,
 		}, -- [13]
+		{
+			["message"] = "[string \"CastSpellByName(“Aspect of the Hawk”)\"]:1: unexpected symbol near '�'",
+			["time"] = "2020/07/25 22:29:30",
+			["locals"] = "(*temporary) = \"CastSpellByName(“Aspect of the Hawk”)\"\n",
+			["stack"] = "[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 1303,
+			["counter"] = 2,
+		}, -- [14]
+		{
+			["message"] = "[string \"ChangeActionBarPage(7);\"]:1: ChangeActionBarPage() needs a page in the range 1 to 6",
+			["time"] = "2020/07/25 22:39:15",
+			["locals"] = "(*temporary) = 7\n",
+			["stack"] = "[C]: in function `ChangeActionBarPage'\n[string \"ChangeActionBarPage(7);\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 1304,
+			["counter"] = 1,
+		}, -- [15]
 	},
 }
