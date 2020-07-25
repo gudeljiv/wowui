@@ -1,32 +1,35 @@
 
 AptechkaDB_Global = {
-	["showSolo"] = false,
-	["nameFontName"] = "Accidental Presidency",
-	["disableTooltip"] = true,
-	["healthTexture"] = "Glamour2",
-	["bgColorMultiplier"] = 1,
-	["stackFontSize"] = 8,
-	["height"] = 45,
-	["powerTexture"] = "Smooth v2",
-	["charspec"] = {
+	["profileKeys"] = {
+		["Mxzq - Golemagg"] = "Default",
 	},
-	["useDebuffOrdering"] = false,
-	["debuffSize"] = 16,
-	["showAFK"] = true,
-	["fgColorMultiplier"] = 0,
-	["groupGrowth"] = "BOTTOM",
-	["width"] = 100,
-	["GridSkin"] = {
-		{
-			["y"] = 156.769134521484,
+	["DB_VERSION"] = 2,
+	["global"] = {
+		["useDebuffOrdering"] = false,
+		["showAFK"] = true,
+		["disableTooltip"] = true,
+	},
+	["profiles"] = {
+		["Default"] = {
+			["healthOrientation"] = "HORIZONTAL",
+			["nameFontName"] = "Accidental Presidency",
+			["healthTexture"] = "Glamour2",
+			["bgColorMultiplier"] = 1,
+			["nameFontSize"] = 16,
 			["x"] = -527.615539550781,
-			["point"] = "CENTER",
-		}, -- [1]
+			["height"] = 45,
+			["powerTexture"] = "Smooth v2",
+			["fgColorMultiplier"] = 0,
+			["cropNamesLen"] = 15,
+			["y"] = 156.769134521484,
+			["petGroup"] = true,
+			["groupGrowth"] = "BOTTOM",
+			["width"] = 100,
+			["debuffSize"] = 14,
+			["stackFontSize"] = 10,
+			["unitGrowth"] = "BOTTOM",
+		},
 	},
-	["healthOrientation"] = "HORIZONTAL",
-	["cropNamesLen"] = 15,
-	["nameFontSize"] = 16,
-	["unitGrowth"] = "BOTTOM",
 }
 AptechkaConfigCustom = {
 	["HUNTER"] = {

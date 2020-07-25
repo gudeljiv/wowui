@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 1278,
+	["session"] = 1302,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -57,5 +57,53 @@ BugGrabberDB = {
 			["session"] = 1275,
 			["counter"] = 3,
 		}, -- [7]
+		{
+			["message"] = "Interface\\AddOns\\AdiBags\\modules\\NewItemTracking.lua:101: attempt to index field 'button' (a nil value)",
+			["time"] = "2020/07/25 15:03:02",
+			["locals"] = "widget = <unnamed> {\n 0 = <userdata>\n}\nbutton = \"BAG_UPDATE\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'button' (a nil value)\"\nmod = <table> {\n SetDefaultModuleLibraries = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:367\n Enable = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:294\n UnregisterAllEvents = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:174\n EnableModule = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:332\n modules = <table> {\n }\n GetModule = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:210\n IterateEmbeds = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:442\n defaultModuleLibraries = <table> {\n }\n SetDefaultModulePrototype = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:409\n GetOptions = <function> defined @Interface\\AddOns\\AdiBags\\modules\\NewItemTracking.lua:184\n name = \"AdiBags_NewItem\"\n Filter = <function> defined @Interface\\AddOns\\AdiBags\\modules\\NewItemTracking.lua:173\n IsEnabled = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:451\n orderedModules = <table> {\n }\n DisableModule = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:350\n OnBagFrameCreated = <function> defined @Interface\\AddOns\\AdiBags\\modules\\NewItemTracking.lua:111\n baseName = \"AdiBags\"\n priority = 80\n UpdateModuleButton = <function> defined @Interface\\AddOns\\AdiBags\\modules\\NewItemTracking.lua:143\n RegisterMessage = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:90\n UnregisterMessage = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:153\n IsNew = <function> defined @Interface\\AddOns\\AdiBags\\modules\\NewItemTracking.lua:151\n filterName = \"NewItem\"\n uiName = \"Track new items\"\n BAG_NEW_ITEMS_UPDATED = <function> defined @Interface\\AddOns\\AdiBags\\modules\\NewItemTracking.lua:166\n uiDesc = \"Track new items in each bag, displaying a glowing aura over them and putting them in a special section. \"New\" status can be reset by clicking on the small \"N\" button at top left of bags.\"\n IsModule = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:217\n db = <table> {\n }\n SetDefaultModuleState = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:387\n OnDisable = <function> defined @Interface\\AddOns\\AdiBags\\modules\\NewItemTracking.lua:84\n OnEnable = <function> defined @Interface\\AddOns\\AdiBags\\modules\\NewItemTracking.lua:74\n SetEnabledState = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:424\n OnInitialize = <function> defined @Interface\\AddOns\\AdiBags\\modules\\NewItemTracking.lua:51\n enabledState = false\n UpdateButton = <function> defined @Interface\\AddOns\\AdiBags\\modules\\NewItemTracking.lua:133\n RegisterEvent = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:90\n UnregisterAllMessages = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:174\n ShowLegacyGlow = <function> defined @Interface\\AddOns\\AdiBags\\modules\\NewItemTracking.lua:294\n ShowBlizzardGlow = <function> defined @Interface\\AddOns\\AdiBags\\modules\\NewItemTracking.lua:231\n NewModule = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:235\n IterateModules = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:437\n SendMessage = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:59\n defaultModuleState = true\n GetName = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:279\n moduleName = \"NewItem\"\n UnregisterEvent = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:153\n Disable = <function> ",
+			["stack"] = "Interface\\AddOns\\AdiBags\\modules\\NewItemTracking.lua:101: in function <Interface\\AddOns\\AdiBags\\modules\\NewItemTracking.lua:94>",
+			["session"] = 1284,
+			["counter"] = 6,
+		}, -- [8]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'kRestack' tried to call the protected function 'resume()'.",
+			["time"] = "2020/07/25 15:37:10",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `resume'\nInterface\\AddOns\\kRestack\\kRestack-40000.1.lua:381: in function `kRestack'\nInterface\\AddOns\\kRestack\\kRestack-40000.1.lua:149: in function <Interface\\AddOns\\kRestack\\kRestack.lua:112>",
+			["session"] = 1286,
+			["counter"] = 1,
+		}, -- [9]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:46: attempt to index upvalue 'frame' (a nil value)",
+			["time"] = "2020/07/25 16:27:41",
+			["locals"] = "(for index) = 1\n(for limit) = 32\n(for step) = 1\ni = 1\n(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"Count\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index upvalue 'frame' (a nil value)\"\nhasPet = true\nisHunterPet = true\npetName = \"Cat\"\ntargetName = \"Bristleback Hunter\"\nB_spellId = nil\nB_unitCaster = nil\nD_spellId = nil\nD_unitCaster = nil\nframe = nil\nframeBorder = nil\nframeCount = nil\ncolor = <table> {\n b = 0\n g = 0\n r = 0.800000\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:46: in function <Interface\\AddOns\\xVermin\\SkinBuffs.lua:26>\n[C]: ?\n[C]: in function `TargetFrame_UpdateAuras'\nInterface\\FrameXML\\TargetFrame.lua:131: in function `TargetFrame_Update'\nInterface\\FrameXML\\TargetFrame.lua:150: in function <Interface\\FrameXML\\TargetFrame.lua:142>\n[C]: in function `CameraOrSelectOrMoveStop'\n[string \"CAMERAORSELECTORMOVE\"]:4: in function <[string \"CAMERAORSELECTORMOVE\"]:1>",
+			["session"] = 1297,
+			["counter"] = 2,
+		}, -- [10]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:45: attempt to index upvalue 'frame' (a nil value)",
+			["time"] = "2020/07/25 16:31:47",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:45: in function <Interface\\AddOns\\xVermin\\SkinBuffs.lua:26>\n[C]: ?\n[C]: in function `TargetFrame_UpdateAuras'\nInterface\\FrameXML\\TargetFrame.lua:197: in function <Interface\\FrameXML\\TargetFrame.lua:142>",
+			["session"] = 1299,
+			["counter"] = 4,
+		}, -- [11]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:47: attempt to index upvalue 'frameBorder' (a nil value)",
+			["time"] = "2020/07/25 16:33:35",
+			["locals"] = "(for index) = 1\n(for limit) = 32\n(for step) = 1\ni = 1\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = true\n(*temporary) = \"Count\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index upvalue 'frameBorder' (a nil value)\"\nhasPet = true\nisHunterPet = true\npetName = \"Cat\"\ntargetName = \"Mxzq\"\nB_spellId = 136076\nB_unitCaster = \"player\"\nD_spellId = nil\nD_unitCaster = nil\nframe = TargetFrameBuff1 {\n 0 = <userdata>\n unit = \"target\"\n}\nframeBorder = nil\nframeCount = TargetFrameBuff1Count {\n 0 = <userdata>\n}\ncolor = <table> {\n b = 0\n g = 0\n r = 0.800000\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:47: in function <Interface\\AddOns\\xVermin\\SkinBuffs.lua:26>\n[C]: ?\n[C]: in function `TargetFrame_UpdateAuras'\nInterface\\FrameXML\\TargetFrame.lua:131: in function `TargetFrame_Update'\nInterface\\FrameXML\\TargetFrame.lua:150: in function <Interface\\FrameXML\\TargetFrame.lua:142>\n[C]: ?\n[C]: in function `TargetUnit'\nInterface\\FrameXML\\SecureTemplates.lua:480: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\nInterface\\FrameXML\\SecureTemplates.lua:656: in function <Interface\\FrameXML\\SecureTemplates.lua:648>",
+			["session"] = 1300,
+			["counter"] = 67,
+		}, -- [12]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:61: attempt to index upvalue 'frame' (a nil value)",
+			["time"] = "2020/07/25 16:34:57",
+			["locals"] = "(for index) = 1\n(for limit) = 32\n(for step) = 1\ni = 1\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = false\n(*temporary) = \"Count\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index upvalue 'frame' (a nil value)\"\nhasPet = true\nisHunterPet = true\npetName = \"Cat\"\ntargetName = \"Bristleback Geomancer\"\nB_spellId = nil\nB_unitCaster = nil\nD_spellId = nil\nD_unitCaster = nil\nframe = nil\nframeBorder = nil\nframeCount = nil\ncolor = <table> {\n b = 0\n g = 0\n r = 0.800000\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:61: in function <Interface\\AddOns\\xVermin\\SkinBuffs.lua:26>\n[C]: ?\n[C]: in function `TargetFrame_UpdateAuras'\nInterface\\FrameXML\\TargetFrame.lua:131: in function `TargetFrame_Update'\nInterface\\FrameXML\\TargetFrame.lua:150: in function <Interface\\FrameXML\\TargetFrame.lua:142>\n[C]: in function `CameraOrSelectOrMoveStop'\n[string \"CAMERAORSELECTORMOVE\"]:4: in function <[string \"CAMERAORSELECTORMOVE\"]:1>",
+			["session"] = 1301,
+			["counter"] = 48,
+		}, -- [13]
 	},
 }

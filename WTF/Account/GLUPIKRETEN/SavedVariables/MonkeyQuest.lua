@@ -608,31 +608,22 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Mxzq"] = {
 		["m_aQuestList"] = {
-			["Stolen Booty - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Hezrul Bloodmark - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Egg Hunt - false"] = {
-				["m_bChecked"] = true,
-			},
 			["The Barrens - true"] = {
-				["m_bChecked"] = true,
-			},
-			["The Guns of Northwatch - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Stolen Silver - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Betrayal from Within - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Enraged Thunder Lizards - false"] = {
+			["Hezrul Bloodmark - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Gann's Reclamation - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Weapons of Choice - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Cry of the Thunderhawk - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -1023,7 +1014,7 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 929.39990234375,
+		["m_iFrameBottom"] = 684.066589355469,
 		["m_bHideTitleButtons"] = false,
 		["m_iFrameLeft"] = 1670.73352050781,
 		["m_bColourDoneOrFailed"] = true,

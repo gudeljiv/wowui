@@ -87,3 +87,4 @@ Bagnon_VoidStorage: disabled
 ItemRackOptions: enabled
 AdiBags: enabled
 EasyLoot: disabled
+kRestack: disabled

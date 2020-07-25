@@ -162,7 +162,7 @@ end
 local tf = CreateFrame("Frame")
 tf:RegisterEvent("PLAYER_TARGET_CHANGED")
 tf:SetScript("OnEvent", SkinTarget)
--- TargetFrame:HookScript("OnUpdate", SkinTarget)
+TargetFrame:HookScript("OnUpdate", SkinTarget)
 hooksecurefunc("TargetFrame_UpdateAuras", SkinTarget)
 
 local pf = CreateFrame("Frame")

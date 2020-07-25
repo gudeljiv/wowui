@@ -276,11 +276,11 @@ ChocolateBarDB = {
 					["customLabel"] = "B",
 				},
 			},
-			["fontName"] = "Friz Quadrata TT",
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["gap"] = 3,
-			["moveFrames"] = false,
 			["desaturated"] = false,
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["fontName"] = "Friz Quadrata TT",
+			["moveFrames"] = false,
+			["gap"] = 3,
 			["textOffset"] = 2,
 			["height"] = 20,
 			["moduleOptions"] = {
@@ -323,10 +323,10 @@ CB_PlayedTime = {
 		["total"] = 18945,
 	},
 	["Mxyz-"] = {
-		["total"] = 5775,
+		["total"] = 6088,
 	},
 	["Vermin-"] = {
-		["total"] = 118940,
+		["total"] = 122263,
 	},
 	["Kosturko-"] = {
 		["total"] = 1457,
@@ -341,6 +341,6 @@ CB_PlayedTime = {
 		["total"] = 3924,
 	},
 	["Mxzq-"] = {
-		["total"] = 101692,
+		["total"] = 106077,
 	},
 }

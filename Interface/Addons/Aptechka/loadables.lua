@@ -4,7 +4,19 @@ local _, helpers = ...
 -- to find out current zone map id type: /dump C_Map.GetBestMapForUnit("player")
 -- OR
 -- Open dungeon in Encounter Journal and type: /dump EJ_GetInstanceInfo(), 7th return value will be the mapID
+-- Getting Spell IDs from Encounter Journal:
+-- Mouseover the spell and use this macro /dump GetMouseFocus():GetParent().spellID
 AptechkaDefaultConfig.MapIDs = {
+    [147] = "Ulduar",
+
+    -- Classic semi-random map ids, there's no maps in classic anyway
+    [232] = "Molten Core",
+    [233] = "Zul'Gurub",
+    [247] = "Ruins of Ahn'Qiraj",
+    [319] = "Ahn'Qiraj",
+    [287] = "Blackwing Lair",
+    [400] = "Naxxramas",
+
     [934] = "Atal'Dazar",
     [936] = "Freehold",
     [974] = "Tol Dagor",
@@ -17,12 +29,35 @@ AptechkaDefaultConfig.MapIDs = {
     [1162] = "Siege of Boralus",
     [1148] = "Uldir",
 
+    [1469] = "Horrific Visions", -- Orgrimmar
+    [1470] = "Horrific Visions", -- Stormwind
+
+    [1490] = "Operation: Mechagon",
+
+    [1580] = "Ny'alotha", -- Wrathion room
+    [1581] = "Ny'alotha",
+
     [704] = "Halls of Valor",
     [706] = "Maw of Souls",
     [731] = "Neltharion's Lair",
     [733] = "Darkheart Thicket",
     [751] = "Black Rook Hold",
+
+    -- This table is also used for debuff highlight sorting by content relevance
+    [99990] = "Mythic+ 8.3",
 }
+
+AptechkaDefaultConfig.defaultDebuffHighlights = {
+    ["Molten Core"] = {
+        [19716] = { 19716, 2, "Gehennas' Curse" },
+        [20475] = { 20475, 4, "Living Bomb" },
+    },
+    ["Blackwing Lair"] = {
+        [22687] = { 22687, 3, "Nefarian, Veil of Shadow" },
+    },
+}
+
+
 
 local A = helpers.AddLoadableAura
 
@@ -37,6 +72,20 @@ local BossDebuff = { type = "HARMFUL", assignto = "bossdebuff", color = color1, 
 AptechkaDefaultConfig.BossDebuffPrototype = BossDebuff
 
 AptechkaDefaultConfig.LoadableDebuffs = {
+--[[
+    ["Ny'alotha"] = function()
+        A{ id = 314992, prototype = BossDebuff } -- Maut, Drain Essence
+
+        A{ id = 307645, prototype = BossDebuff } -- Vexiona, Heart of Darkness fear
+        A{ id = 310224, prototype = BossDebuff } -- Vexiona, Annihilation
+
+        A{ id = 310361, prototype = BossDebuff } -- Drest'agath, Unleashed Insanity stun
+
+        A{ id = 312486, prototype = BossDebuff } -- Il'gynoth, Recurring Nightmare
+
+        A{ id = 313400, prototype = BossDebuff } -- N'Zoth, the Corruptor, Corrupted Mind
+        A{ id = 313793, prototype = BossDebuff } -- N'Zoth, the Corruptor, Flames of Insanity disorient
+    end,
 
     ["Freehold"] = function()
         A{ id = 258323, prototype = BossDebuff } -- Infected Wound
@@ -74,7 +123,7 @@ AptechkaDefaultConfig.LoadableDebuffs = {
     ["Siege of Boralus"] = function()
         A{ id = 272571, prototype = BossDebuff } -- Choking Waters
     end,
-
+]]
 
 
     -- ["Emerald Nightmare"] = function()

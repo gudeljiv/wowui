@@ -287,3 +287,4 @@ Bagnon_VoidStorage: disabled
 FollowMePls: enabled
 ItemRackOptions: enabled
 AutoDelete: disabled
+kRestack: disabled

@@ -62,13 +62,30 @@ A{ id = {
     430, 431, 432, 1133, 1135, 1137, 22734 -- Classic water
 }, assignto = "text2", color = {0.7, 0.7, 1}, text = "DRINKING", global = true, priority = 30 }
 
+A{ id = 5384, assignto = "text2", color = {0, 0.7, 1}, text = "FD", global = true, priority = 75 } -- Feign Death
+
+local manaClasses = {
+    HUNTER = true,
+    MAGE = true,
+    DRUID = true,
+    PRIEST = true,
+    SHAMAN = true,
+    WARLOCK = true,
+    PALADIN = true
+}
 if playerClass == "PRIEST" then
     -- Power Word: Fortitude and Prayer of Fortitude
     A{ id = { 1243, 1244, 1245, 2791, 10937, 10938, 21562, 21564 }, type = "HELPFUL", assignto = "raidbuff", color = { 1, 1, 1}, priority = 100, isMissing = true, isKnownCheck = function() return IsPlayerSpell(1243) end }
     -- Prayer of Shadow Protection
     -- A{ id = { 976, 10957, 10958, 27683 }, type = "HELPFUL", assignto = "raidbuff", color = { 151/255, 86/255, 168/255 }, priority = 80, isMissing = true, isKnownCheck = function() return IsPlayerSpell(976) end }
+
     -- Prayer of Spirit, Divine Spirit
-    A{ id = { 14752, 14818, 14819, 27841, 27681 }, type = "HELPFUL", assignto = "raidbuff", color = {52/255, 172/255, 114/255}, priority = 90, isMissing = true, isKnownCheck = function() return IsPlayerSpell(14752) end }
+    A{ id = { 14752, 14818, 14819, 27841, 27681 }, type = "HELPFUL", assignto = "raidbuff", color = {52/255, 172/255, 114/255}, priority = 90, isMissing = true,
+        isKnownCheck = function(unit)
+            local isKnown = IsPlayerSpell(14752)
+            local isSpiritClass = manaClasses[select(2,UnitClass(unit))]
+            return isKnown and isSpiritClass
+        end }
 
     A{ id = 6346, type = "HELPFUL", assignto = "bar4", priority = 30, color = { 1, 0.7, 0} , showDuration = true } -- Fear Ward
 
@@ -96,7 +113,9 @@ if playerClass == "PRIEST" then
         RangeCheckBySpell(2050),
     }
 
-    DispelTypes("Magic", "Disease")
+    config.DispelBitmasks = {
+        DispelTypes("Magic", "Disease")
+    }
 
 end
 
@@ -120,7 +139,9 @@ if playerClass == "DRUID" then
         RangeCheckBySpell(5185),
     }
 
-    DispelTypes("Curse", "Poison")
+    config.DispelBitmasks = {
+        DispelTypes("Curse", "Poison")
+    }
 end
 
 
@@ -143,7 +164,9 @@ if playerClass == "PALADIN" then
         RangeCheckBySpell(635),
     }
 
-    DispelTypes("Magic", "Disease", "Poison")
+    config.DispelBitmasks = {
+        DispelTypes("Magic", "Disease", "Poison")
+    }
 
 end
 
@@ -172,7 +195,7 @@ if playerClass == "SHAMAN" then
     A{ id = 25909, type = "HELPFUL", assignto = "totemCluster3", isMine = true, color = {149/255, 121/255, 214/255} }  -- Tranquil Air Totem
     A{ id = { 8836, 10626, 25360 }, type = "HELPFUL", assignto = "totemCluster3", isMine = true, color = { 65/255, 110/255, 1 } }  -- Grace of Air Totem
     A{ id = { 10596, 10598, 10599 }, type = "HELPFUL", assignto = "totemCluster3", isMine = true, color = {52/255, 172/255, 114/255} }  -- Nature Resistance Totem
-    
+
     -- Ancestral Healing
     A{ id = { 16177, 16236, 16237 }, type = "HELPFUL", assignto = "bars", showDuration = true, color = { 1, 0.85, 0} }
 
@@ -187,20 +210,36 @@ if playerClass == "SHAMAN" then
         RangeCheckBySpell(331),
     }
 
-    DispelTypes("Poison", "Disease")
+    config.DispelBitmasks = {
+        DispelTypes("Poison", "Disease")
+    }
 
 end
 
 if playerClass == "MAGE" then
 
     -- Arcane Intellect and Brilliance
-    A{ id = { 1459, 1460, 1461, 10156, 10157, 23028 }, type = "HELPFUL", assignto = "raidbuff", color = { .4 , .4, 1 }, priority = 50, isMissing = true, isKnownCheck = function() return IsPlayerSpell(1459) end }
+    A{ id = { 1459, 1460, 1461, 10156, 10157, 23028 }, type = "HELPFUL", assignto = "raidbuff", color = { .4 , .4, 1 }, priority = 50, isMissing = true,
+        isKnownCheck = function(unit)
+            local isKnown = IsPlayerSpell(1459)
+            local isSpiritClass = manaClasses[select(2,UnitClass(unit))]
+            return isKnown and isSpiritClass
+        end }
     -- Dampen Magic
     A{ id = { 604, 8450, 8451, 10173, 10174 }, type = "HELPFUL", assignto = "spell3", color = {52/255, 172/255, 114/255}, priority = 80 }
     -- Amplify Magic
     A{ id = { 1008, 8455, 10169, 10170 }, type = "HELPFUL", assignto = "spell3", color = {1,0.7,0.5}, priority = 80 }
 
-    DispelTypes("Curse")
+
+    if IsPlayerSpell(1459) then
+        config.UnitInRangeFunctions = {
+            RangeCheckBySpell(1459), -- Arcane Intellect, 30yd range
+        }
+    end
+
+    config.DispelBitmasks = {
+        DispelTypes("Curse")
+    }
 end
 
 if playerClass == "WARRIOR" then
@@ -217,6 +256,8 @@ helpers.auraBlacklist = {
     [25771] = true, -- Forbearance
     [6788] = true, -- Weakened Soul
     [11196] = true, -- Recently Bandaged
+
+    [26680] = true, -- Adored (Love is in the Air)
 
     -- Trash
     [22959] = true, -- Fire Vulnerability

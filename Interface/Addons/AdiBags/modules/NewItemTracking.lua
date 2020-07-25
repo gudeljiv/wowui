@@ -103,6 +103,16 @@ local function ResetButton_OnClick(widget, button)
 	mod:SendMessage("AdiBags_UpdateAllButtons", true)
 end
 
+-- local function ResetNewItems()
+-- 	C_NewItems.ClearAll()
+-- 	wipe(newItems)
+-- end
+
+-- local f = CreateFrame("Frame")
+-- f:SetScript("OnEvent", ResetNewItems)
+-- f:RegisterEvent("BAG_UPDATE")
+-- f:RegisterEvent("BAG_NEW_ITEMS_UPDATED")
+
 function mod:OnBagFrameCreated(bag)
 	if bag.isBank then
 		return

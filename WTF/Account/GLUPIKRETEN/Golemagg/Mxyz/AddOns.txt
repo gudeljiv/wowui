@@ -286,3 +286,4 @@ nHealth: enabled
 Bagnon_VoidStorage: disabled
 FollowMePls: enabled
 AutoDelete: disabled
+kRestack: disabled

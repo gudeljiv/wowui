@@ -1,4 +1,7 @@
 local _, helpers = ...
+
+helpers.frame = CreateFrame("Frame","Aptechka",UIParent)
+
 AptechkaDefaultConfig = {}
 local config = AptechkaDefaultConfig
 AptechkaUserConfig = AptechkaDefaultConfig
@@ -28,25 +31,47 @@ helpers.PercentColor = function(percent)
     end
 end
 
-config.BITMASK_DISPELLABLE = 0
+helpers.GetGradientColor2 = function(c1, c2, v)
+    if v > 1 then v = 1 end
+    local r = c2[1] + v*(c1[1]-c2[1])
+    local g = c2[2] + v*(c1[2]-c2[2])
+    local b = c2[3] + v*(c1[3]-c2[3])
+    return r,g,b
+end
+local GetGradientColor2 = helpers.GetGradientColor2
+
+helpers.GetGradientColor3 = function(c1, c2, c3, v)
+    if v >= 1 then
+        return unpack(c1)
+    elseif v >= 0.5 then
+        return GetGradientColor2(c1,c2, (v-0.5)*2)
+    elseif v > 0 then
+        return GetGradientColor2(c2,c3, v*2)
+    else
+        return unpack(c3)
+    end
+end
+
 helpers.BITMASK_DISEASE = 0xF000
 helpers.BITMASK_POISON = 0x0F00
 helpers.BITMASK_CURSE = 0x00F0
 helpers.BITMASK_MAGIC = 0x000F
 function helpers.DispelTypes(...)
     local numArgs = select("#", ...)
+    local BITMASK_DISPELLABLE = 0
     for i=1, numArgs do
         local debuffType = select(i, ...)
         if debuffType == "Magic" then
-            config.BITMASK_DISPELLABLE = bit.bor( config.BITMASK_DISPELLABLE, helpers.BITMASK_MAGIC)
+            BITMASK_DISPELLABLE = bit.bor( BITMASK_DISPELLABLE, helpers.BITMASK_MAGIC)
         elseif debuffType == "Poison" then
-            config.BITMASK_DISPELLABLE = bit.bor( config.BITMASK_DISPELLABLE, helpers.BITMASK_POISON)
+            BITMASK_DISPELLABLE = bit.bor( BITMASK_DISPELLABLE, helpers.BITMASK_POISON)
         elseif debuffType == "Disease" then
-            config.BITMASK_DISPELLABLE = bit.bor( config.BITMASK_DISPELLABLE, helpers.BITMASK_DISEASE)
+            BITMASK_DISPELLABLE = bit.bor( BITMASK_DISPELLABLE, helpers.BITMASK_DISEASE)
         elseif debuffType == "Curse" then
-            config.BITMASK_DISPELLABLE = bit.bor( config.BITMASK_DISPELLABLE, helpers.BITMASK_CURSE)
+            BITMASK_DISPELLABLE = bit.bor( BITMASK_DISPELLABLE, helpers.BITMASK_CURSE)
         end
     end
+    return BITMASK_DISPELLABLE
 end
 
 local protomt = { __index = function(t,k) return t.prototype[k] end }
@@ -71,7 +96,7 @@ helpers.AddAura = function (data, todefault)
     end
 
     if data.id and not data.name then data.name = GetSpellInfo(data.id) end
-    if data.name == nil then print (data.id.." spell id missing") return end
+    if data.name == nil then print (string.format("[Aptechka] %d spell id missing", data.id)) return end
     -- if data.isMine then data.type = data.type.."|PLAYER" end
 
     if data.prototype then -- metatables break because of config merging for gui
@@ -127,6 +152,18 @@ helpers.AddDebuff = function (index, data)
 end
 
 
+function helpers.MakeTables(rootTable, ...)
+    local n = select("#", ...)
+    local t = rootTable
+    for i=1, n do
+        local key = select(i, ...)
+        if not t[key] then
+            t[key] = {}
+        end
+        t = t[key]
+    end
+end
+
 helpers.ClickMacro = function(macro)
     if AptechkaUserConfig then config = AptechkaUserConfig else config = AptechkaDefaultConfig end
     if not config.enableClickCasting then return end
@@ -170,7 +207,16 @@ end
 --~ end
 
 
-
+local xor = bit.bxor
+local byte = string.byte
+function helpers.GetAuraHash(spellId, duration, expirationTime, count, caster)
+    local hash = xor(spellId, expirationTime*1000)
+    hash = xor(hash, duration)
+    hash = xor(hash, (count+1)*100000+count)
+    local casterInt = caster and (byte(caster, -2)^2 + byte(caster, -1)) or 14894
+    hash = xor(hash, casterInt)
+    return hash
+end
 
 
 
@@ -193,13 +239,24 @@ function helpers.utf8sub(str, start, numChars)
 end
 
 function helpers.DisableBlizzParty(self)
+    local hiddenParent = helpers.hiddenParent or CreateFrame('Frame', nil, UIParent)
+    helpers.hiddenParent = hiddenParent
+    hiddenParent:SetAllPoints()
+    hiddenParent:Hide()
     for i=1,4 do
         local party = "PartyMemberFrame"..i
         local frame = _G[party]
 
         frame:UnregisterAllEvents()
-        frame.Show = function()end
         frame:Hide()
+        frame:SetParent(hiddenParent)
+        -- hooksecurefunc("ShowPartyFrame", HidePartyFrame)
+        -- hooksecurefunc("PartyMemberFrame_UpdateMember", function(self)
+            -- if not InCombatLockdown() then
+                -- self:Hide()
+            -- end
+        -- end)
+
         _G[party..'HealthBar']:UnregisterAllEvents()
         _G[party..'ManaBar']:UnregisterAllEvents()
     end
@@ -253,4 +310,28 @@ function helpers.ForEachAura(unit, filter, maxCount, func)
     until continuationToken == nil;
 
     return index
+end
+
+
+do
+    local pow = math.pow
+    local band = bit.band
+    local bor = bit.bor
+    function helpers.CheckBit(num, index)
+        local n = pow(2,index-1)
+        return band(num, n) > 0
+    end
+
+    function helpers.SetBit(num, index)
+        local n = pow(2,index-1)
+        return bor(num, n)
+    end
+
+    function helpers.UnsetBit(num, index)
+        local n = pow(2,index-1)
+        if n >= num then
+            return num - n
+        end
+        return num
+    end
 end

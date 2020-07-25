@@ -8,6 +8,14 @@
 
     <Script file="..\Locales\ruRU.lua"/>
     <Script file="..\Locales\zhCN.lua"/>
+    <Script file="..\Locales\deDE.lua"/>
 
-    <Script file="AptechkaOptions.lua"/>
+    <Script file="GlobalSettings.lua"/>
+    <Script file="ProfileSettings.lua"/>
+    <Script file="ProfileSelection.lua"/>
+    <Script file="ElementConfig.lua"/>
+    <Script file="DebuffHighlight.lua"/>
+    <Include file="SpellListItemTemplate.xml"/>
+    <Script file="WidgetSpellList.lua"/>
+    <Script file="LoadHooks.lua"/>
 </Ui>

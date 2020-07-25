@@ -60,7 +60,8 @@ config.enableTraceHeals = true
 config.enableVehicleSwap = false
 config.enableAbsorbBar = false
 
-config.TargetStatus = { name = "Target", assignto = "border", color = {1,0.7,0.7}, priority = 65 }
+config.TargetStatus = { name = "Target", assignto = "border", color = {0.7,0.2,0.5}, priority = 65 }
+config.MouseoverStatus = { name = "Mouseover", assignto = "border", color = {1,0.5,0.8}, priority = 66 }
 config.AggroStatus = { name = "Aggro", assignto = "raidbuff",  color = { 0.7, 0, 0},priority = 55 }
 config.ReadyCheck = { name = "Readycheck", priority = 90, assignto = "spell3", stackcolor = {
                                                                             ['ready'] = { 0, 1, 0},
@@ -82,9 +83,21 @@ config.UnitNameStatus = { name = "UnitName", assignto = "text1", nametext = true
 config.HealthBarColor = { name = "HealthBar", assignto = "health", color = {1, .3, .3}, classcolor = true, priority = 20 }
 config.PowerBarColor = { name = "PowerBar", assignto = "power", color = {.5,.5,1}, priority = 20 }
 config.OutOfRangeStatus = { name = "OOR", assignto = "self", color = {0.5,0.5,0.5}, alpha = 0.5, text = "OOR", priority = 50 }
-config.InVehicleStatus = { name = "InVehicle", assignto = "border", color = {0.3,1,0.3}, priority = 21 }
+config.InVehicleStatus = { name = "InVehicle", assignto = "vehicle", color = {0.3,1,0.3}, priority = 21 }
 config.LOSStatus = { name = "OutOfSight", assignto = "healfeedback", scale = 1.6, color = {1,0.1,0.1}, resetAnimation = true, priority = 95, fade = 0.3 }
-config.DispelStatus = { name = "Dispel", assignto = "bossdebuff", scale = 0.85, priority = 6 }
+config.DispelStatus = { name = "Dispel", assignto = "bossdebuff", scale = 0.8, priority = 6 }
+
+-- config.MindControl = { name = "MIND_CONTROL", assignto = { "mindcontrol" }, color = {1,0,0}, priority = 52 }
+config.MindControlStatus = { name = "MIND_CONTROL", assignto = { "border", "mindcontrol", "innerglow", "unhealable" }, color = {0.5,0,1}, priority = 52 }
+-- config.UnhealableStatus = { name = "UNHEALABLE", assignto = { "unhealable" }, color = {0.5,0,1}, priority = 50 }
+
+config.BossDebuffs = {
+    { name = "BossDebuffLevel1", assignto = "bossdebuff", color = {1,0,0}, priority = 95, pulse = true, },
+    { name = "BossDebuffLevel2", assignto = "bossdebuff", color = {1,0,1}, priority = 95, pulse = true, },
+    { name = "BossDebuffLevel3", assignto = { "innerglow", "border", "flash" }, color = {1,0,0}, priority = 90 },
+    { name = "BossDebuffLevel4", assignto = "pixelGlow", color = {1,1,1}, priority = 95 },
+    -- { name = "BossDebuffLevel3", assignto = "autocastGlow", color = {1,1,0.3}, priority = 90 },
+}
 
 local IsSpellInRange = IsSpellInRange
 helpers.RangeCheckBySpell = function (spellID)

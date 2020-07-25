@@ -1,7 +1,0 @@
-## Interface: 40000
-## Title: |cff44ccffk|rRestack
-## Version: 40000.1
-## Author: Katae of Anvilmar
-## Notes: For all of your item stacking needs.
-## SavedVariables: AutoStack
-kRestack.lua
