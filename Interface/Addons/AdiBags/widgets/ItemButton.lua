@@ -325,6 +325,13 @@ function buttonProto:UpdateCount()
 	self.count = count
 	if count > 1 then
 		self.Count:SetText(count)
+		self.Count:SetFont("Fonts\\ARIALN.ttf", 12, "THINOUTLINE")
+		if (count > 999) then
+			fnumber = math.floor((count / 1000 * 10)) / 10
+			self.Count:SetText(fnumber .. "k")
+		end
+		self.Count:ClearAllPoints()
+		self.Count:SetPoint("BOTTOMRIGHT", -2, 2)
 		self.Count:Show()
 	else
 		self.Count:Hide()

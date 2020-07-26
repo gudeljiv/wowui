@@ -490,7 +490,7 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 689.899963378906,
+		["m_iFrameBottom"] = 869.844421386719,
 		["m_bHideCompletedQuests"] = true,
 		["m_iFrameLeft"] = 1670.73352050781,
 		["m_bColourDoneOrFailed"] = true,
@@ -692,19 +692,7 @@ MonkeyQuestConfig = {
 			["The Barrens - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Betrayal from Within - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Hezrul Bloodmark - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Gann's Reclamation - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Weapons of Choice - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Cry of the Thunderhawk - false"] = {
+			["Revenge of Gann - false"] = {
 				["m_bChecked"] = true,
 			},
 		},

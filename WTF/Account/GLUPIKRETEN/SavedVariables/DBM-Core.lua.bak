@@ -35,8 +35,8 @@ DBM_AllSavedOptions = {
 		["SpecialWarningX"] = 0,
 		["WorldBossAlert"] = false,
 		["RaidWarningPosition"] = {
-			["Y"] = -61.5713960679553,
-			["X"] = 4.57154641534637,
+			["Y"] = 280,
+			["X"] = 0,
 			["Point"] = "TOP",
 		},
 		["DontShowPT2"] = false,
@@ -57,7 +57,7 @@ DBM_AllSavedOptions = {
 			0.3, -- [2]
 			0, -- [3]
 		},
-		["WarningFontStyle"] = "OUTLINE",
+		["WarningFontStyle"] = "THINOUTLINE",
 		["EventSoundEngage2"] = "Interface\\AddOns\\Prat-3.0\\Sounds\\IM.ogg",
 		["InfoFrameY"] = -240.833068847656,
 		["ShowSpecialWarnings"] = true,
@@ -100,16 +100,16 @@ DBM_AllSavedOptions = {
 			1, -- [2]
 			0, -- [3]
 		},
-		["DisableCinematics"] = false,
+		["DontShowSpecialWarningText"] = false,
 		["DontShowPTText"] = false,
+		["DisableCinematics"] = false,
+		["SpecialWarningFlashRepeat1"] = false,
+		["SWarnClassColor"] = true,
 		["SpecialWarningFlashCol5"] = {
 			0.2, -- [1]
 			1, -- [2]
 			1, -- [3]
 		},
-		["SpecialWarningFlashRepeat1"] = false,
-		["SWarnClassColor"] = true,
-		["DontShowSpecialWarningText"] = false,
 		["AdvancedAutologBosses"] = false,
 		["ShowLHFrame"] = true,
 		["DontShowReminders"] = false,
@@ -169,15 +169,15 @@ DBM_AllSavedOptions = {
 				["b"] = 0.101960784313725,
 			}, -- [4]
 		},
-		["SpecialWarningFontStyle"] = "OUTLINE",
+		["SpecialWarningFontStyle"] = "THINOUTLINE",
 		["SWarningAlphabetical"] = true,
 		["UseMasterVolume"] = true,
 		["BlockNoteShare"] = false,
-		["WarningFont"] = "Fonts\\FRIZQT__.TTF",
+		["WarningFont"] = "Interface\\AddOns\\DBM-Karma-Skin\\media\\Enigma__2.ttf",
 		["AlwaysShowSpeedKillTimer2"] = false,
 		["WarningFontShadow"] = true,
 		["ModelSoundValue"] = "Short",
-		["SpecialWarningY"] = -195,
+		["SpecialWarningY"] = -200,
 		["WarningY"] = 260,
 		["WarningDuration2"] = 1.5,
 		["RangeFrameRadarPoint"] = "RIGHT",
@@ -222,9 +222,9 @@ DBM_AllSavedOptions = {
 		["UseRetailShamanColor"] = false,
 		["CountdownVoice"] = "Corsica",
 		["DontShowNameplateIcons"] = false,
+		["SpecialWarningFlashRepeat2"] = false,
 		["DontShowUserTimers"] = false,
 		["CountdownVoice3"] = "Smooth",
-		["SpecialWarningFlashRepeat2"] = false,
 		["SpecialWarningFlashRepeat5"] = true,
 		["AutoRespond"] = true,
 		["HealthFrameGrowUp"] = false,
@@ -240,7 +240,7 @@ DBM_AllSavedOptions = {
 		["DontShowRangeFrame"] = false,
 		["AutoCorrectTimer"] = false,
 		["InfoFrameShowSelf"] = false,
-		["SpecialWarningFont"] = "Fonts\\FRIZQT__.TTF",
+		["SpecialWarningFont"] = "Interface\\AddOns\\DBM-Karma-Skin\\media\\Enigma__2.ttf",
 		["FilterDispel"] = true,
 		["ShowQueuePop"] = true,
 		["DontShowBossTimers"] = false,

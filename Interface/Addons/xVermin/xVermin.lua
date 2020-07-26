@@ -149,13 +149,6 @@ f:SetScript(
 		end
 
 		-------------------------------------------
-		-- tracking icon
-		-------------------------------------------
-		MiniMapTrackingFrame:ClearAllPoints()
-		MiniMapTrackingFrame:SetPoint("TOPRIGHT", Minimap, "TOPRIGHT", -10, -5)
-		MiniMapTrackingFrame:SetScale(0.7)
-
-		-------------------------------------------
 		-- adjust position of PetActionButtons
 		-------------------------------------------
 		PetActionButton1:Show()

@@ -8,6 +8,8 @@ AptechkaDB_Global = {
 	["DB_VERSION"] = 2,
 	["profileKeys"] = {
 		["Mxzq - Golemagg"] = "Default",
+		["Mxyz - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
