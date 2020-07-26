@@ -187,8 +187,8 @@ EavesDropStatsDB = {
 				["heal"] = {
 					["Healing Potion"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/19/20 04:29:08|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_HEAL|h|cffffffffHealing Potion|r|h heals |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h for |cffffffff161|r.",
-							["amount"] = 161,
+							["time"] = "|cffffffff07/26/20 07:35:07|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_HEAL|h|cffffffffHealing Potion|r|h heals |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h for |cffffffff351|r.",
+							["amount"] = 351,
 						},
 						[2] = {
 						},
@@ -260,6 +260,14 @@ EavesDropStatsDB = {
 						},
 						["icon"] = 132204,
 					},
+					["Immolation Trap Effect"] = {
+						[-2] = {
+							["time"] = "|cffffffff07/26/20 08:05:03|r\n|Hunit:Creature-0-4448-1-29-3374-00001DC255:Bael'dun Excavator|hBael'dun Excavator|h suffers |cffffffff19|r |cffffffffFire|r damage from |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_PERIODIC_DAMAGE|h|cffffffffImmolation Trap Effect|r|h.",
+							["amount"] = 19,
+						},
+						[2] = {
+						},
+					},
 					["Arcane Shot"] = {
 						[-2] = {
 							["time"] = "|cffffffff07/25/20 03:28:43|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffArcane Shot|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-29-3239-00001C2837:Thunderhead|hThunderhead|h for |cffffffff33|r |cffffffffArcane|r.",
@@ -282,15 +290,6 @@ EavesDropStatsDB = {
 						},
 						["icon"] = 132215,
 					},
-					["Multi-Shot"] = {
-						[-2] = {
-							["time"] = "|cffffffff07/25/20 03:35:20|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMulti-Shot|r|h hits |Hunit:Creature-0-4448-1-29-4196-00001C3515:Silithid Swarm|hSilithid Swarm|h for |cffffffff1|r |cffffffffPhysical|r.(52 Overkill)",
-							["amount"] = 53,
-						},
-						[2] = {
-						},
-						["icon"] = 132330,
-					},
 					["Wing Clip"] = {
 						[-2] = {
 							["time"] = "|cffffffff07/16/20 11:51:37|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWing Clip|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-66-3246-00000F738C:Fleeting Plainstrider|hFleeting Plainstrider|h for |cffffffff4|r |cffffffffPhysical|r.",
@@ -301,6 +300,15 @@ EavesDropStatsDB = {
 							["amount"] = 8,
 						},
 						["icon"] = 132309,
+					},
+					["Multi-Shot"] = {
+						[-2] = {
+							["time"] = "|cffffffff07/25/20 03:35:20|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMulti-Shot|r|h hits |Hunit:Creature-0-4448-1-29-4196-00001C3515:Silithid Swarm|hSilithid Swarm|h for |cffffffff1|r |cffffffffPhysical|r.(52 Overkill)",
+							["amount"] = 53,
+						},
+						[2] = {
+						},
+						["icon"] = 132330,
 					},
 				},
 			}, -- [1]

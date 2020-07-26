@@ -15,15 +15,15 @@ EavesDropDB = {
 		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 		["Verminz - Genesis"] = "Default",
 		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
-		["Elohssa - Stonespine"] = "Default",
-		["Vermin - Golemagg"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
-		["Pitchwise - Genesis"] = "Pitchwise - Genesis",
-		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
-		["Pepecocorita - Genesis"] = "Default",
-		["Judawise - Golemagg"] = "Default",
-		["Greenwise - Golemagg"] = "Default",
 		["Pitchwise - Golemagg"] = "Default",
+		["Greenwise - Golemagg"] = "Default",
+		["Pitchwise - Genesis"] = "Pitchwise - Genesis",
+		["Mxyzptlk - Golemagg"] = "Default",
+		["Pepecocorita - Genesis"] = "Default",
+		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
+		["Judawise - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
+		["Elohssa - Stonespine"] = "Default",
 		["Ozrencic - Golemagg"] = "Ozrencic - Golemagg",
 		["Whatevs - Stonespine"] = "Default",
 	},
@@ -31,23 +31,23 @@ EavesDropDB = {
 		["Dotwise - Golemagg"] = {
 		},
 		["Mxyz - Golemagg"] = {
-			["LINEWIDTH"] = 130,
 			["BORDER"] = {
 				["a"] = 0,
-				["b"] = 0.607843137254902,
-				["g"] = 0.607843137254902,
 				["r"] = 0.607843137254902,
+				["g"] = 0.607843137254902,
+				["b"] = 0.607843137254902,
 			},
-			["y"] = 236.195578993564,
+			["LINEWIDTH"] = 130,
 			["x"] = 551.714104134467,
-			["NUMLINES"] = 16,
 			["TEXTSIZE"] = 13,
+			["NUMLINES"] = 16,
+			["SCROLLBUTTON"] = true,
+			["LINEHEIGHT"] = 16,
+			["HIDETAB"] = true,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
-			["HIDETAB"] = true,
-			["LINEHEIGHT"] = 16,
-			["SCROLLBUTTON"] = true,
+			["y"] = 236.195578993564,
 		},
 		["Pitchwise - Golemagg"] = {
 		},
@@ -57,43 +57,43 @@ EavesDropDB = {
 			["LINEWIDTH"] = 130,
 			["BORDER"] = {
 				["a"] = 0,
-				["b"] = 0.607843137254902,
-				["g"] = 0.607843137254902,
 				["r"] = 0.607843137254902,
+				["g"] = 0.607843137254902,
+				["b"] = 0.607843137254902,
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
-			["HIDETAB"] = true,
-			["TEXTSIZE"] = 13,
 			["SCROLLBUTTON"] = true,
-			["NUMLINES"] = 16,
-			["LINEHEIGHT"] = 16,
+			["TEXTSIZE"] = 13,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
+			["NUMLINES"] = 16,
+			["LINEHEIGHT"] = 16,
+			["HIDETAB"] = true,
 		},
 		["Greenwise - Golemagg"] = {
 		},
 		["Spija - Genesis"] = {
 		},
 		["Mxzq - Golemagg"] = {
+			["LINEWIDTH"] = 130,
 			["BORDER"] = {
 				["a"] = 0,
-				["r"] = 0.607843137254902,
-				["g"] = 0.607843137254902,
 				["b"] = 0.607843137254902,
+				["g"] = 0.607843137254902,
+				["r"] = 0.607843137254902,
 			},
-			["LINEWIDTH"] = 130,
+			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
+			["NUMLINES"] = 16,
 			["TEXTSIZE"] = 13,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
-			["SCROLLBUTTON"] = true,
-			["LINEHEIGHT"] = 16,
 			["HIDETAB"] = true,
-			["NUMLINES"] = 16,
-			["y"] = 236.195578993564,
+			["LINEHEIGHT"] = 16,
+			["SCROLLBUTTON"] = true,
 		},
 		["Verminz - Golemagg"] = {
 			["LINEWIDTH"] = 100,
@@ -103,25 +103,25 @@ EavesDropDB = {
 			["x"] = 536.000144269463,
 			["TEXTSIZE"] = 12,
 			["FONT"] = "Arial Narrow",
-			["NUMLINES"] = 14,
-			["SCROLLBUTTON"] = true,
 			["HIDETAB"] = true,
+			["SCROLLBUTTON"] = true,
+			["NUMLINES"] = 14,
 		},
-		["Pitchwise - Genesis"] = {
+		["Kosturko - Golemagg"] = {
+		},
+		["Korupcija - Stonespine"] = {
 		},
 		["Vermin - Golemagg"] = {
 		},
-		["Mxyzptlk - Golemagg"] = {
-		},
-		["Judawise - Golemagg"] = {
+		["Golemagg"] = {
 		},
 		["Default"] = {
 			["LINEWIDTH"] = 130,
 			["BORDER"] = {
 				["a"] = 0,
-				["b"] = 0.607843137254902,
-				["g"] = 0.607843137254902,
 				["r"] = 0.607843137254902,
+				["g"] = 0.607843137254902,
+				["b"] = 0.607843137254902,
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
@@ -134,11 +134,11 @@ EavesDropDB = {
 				["a"] = 0.4,
 			},
 		},
-		["Golemagg"] = {
+		["Judawise - Golemagg"] = {
 		},
-		["Korupcija - Stonespine"] = {
+		["Pitchwise - Genesis"] = {
 		},
-		["Kosturko - Golemagg"] = {
+		["Mxyzptlk - Golemagg"] = {
 		},
 		["Ozrencic - Golemagg"] = {
 		},

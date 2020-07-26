@@ -46,7 +46,7 @@ local L =
 )
 addon.L = L
 
-L["QUIVER_TAG"] = "Qu"
+L["QUIVER_TAG"] = "Q"
 L["AMMO_TAG"] = "Am"
 L["SOUL_BAG_TAG"] = "So"
 L["LEATHERWORKING_BAG_TAG"] = "Le"
@@ -1338,7 +1338,7 @@ elseif locale == "zhTW" then
 	L["Quality highlight"] = "品質高亮"
 	L["Quest indicator"] = "任務指示物"
 	L["Quest Items"] = "任務物品"
-	L["QUIVER_TAG"] = "Qu"
+	L["QUIVER_TAG"] = "Q"
 	L["Related to player level"] = "與玩家等級相關" -- Needs review
 	L["Remove"] = "移除"
 	L["Reset"] = "重設" -- Needs review
@@ -2088,7 +2088,7 @@ elseif locale == "ptBR" then
 	L["Quality highlight"] = "Destaca qualidade"
 	L["Quest indicator"] = "Indicador de missões"
 	L["Quest Items"] = "Itens de missões"
-	L["QUIVER_TAG"] = "Qu"
+	L["QUIVER_TAG"] = "Q"
 	L["Related to player level"] = "Relativos ao nível do jogador"
 	L["Remove"] = "Remover"
 	L["Reset"] = "Reiniciar"

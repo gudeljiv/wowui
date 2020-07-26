@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 1392,
 	["lastSanitation"] = 3,
+	["session"] = 1395,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -36,21 +36,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [4]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'AttemptToSaveBindings()'.",
-			["time"] = "2020/07/24 16:00:07",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `AttemptToSaveBindings'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:2062: in function `SetSetBindings'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:544: in function `InitCore'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:281: in function `func'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:982: in function `OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>",
-			["session"] = 1271,
-			["counter"] = 5,
-		}, -- [5]
-		{
 			["message"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:96: attempt to index upvalue 'frame' (a nil value)",
 			["time"] = "2020/07/24 22:58:02",
 			["locals"] = "(for index) = 1\n(for limit) = 32\n(for step) = 1\ni = 1\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"1\"\n(*temporary) = \"Count\"\n(*temporary) = 8\n(*temporary) = 1\n(*temporary) = 8\n(*temporary) = \"attempt to index upvalue 'frame' (a nil value)\"\nhasPet = false\nisHunterPet = false\npetName = nil\ntargetName = nil\nB_spellId = 135932\nB_unitCaster = \"target\"\nD_spellId = nil\nD_unitCaster = nil\nframe = nil\nframeBorder = nil\nframeCount = nil\ncolor = nil\n",
 			["stack"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:96: in function <Interface\\AddOns\\xVermin\\SkinBuffs.lua:26>\n[C]: ?\n[C]: in function `TargetFrame_UpdateAuras'\n[string \"*:OnShow\"]:1: in function <[string \"*:OnShow\"]:1>\n[C]: in function `Show'\nInterface\\FrameXML\\TargetFrame.lua:910: in function <Interface\\FrameXML\\TargetFrame.lua:905>\n[C]: ?\n[C]: in function `TargetofTarget_Update'\nInterface\\FrameXML\\TargetFrame.lua:109: in function `TargetFrame_Update'\nInterface\\FrameXML\\TargetFrame.lua:150: in function <Interface\\FrameXML\\TargetFrame.lua:142>\n[C]: in function `CameraOrSelectOrMoveStop'\n[string \"CAMERAORSELECTORMOVE\"]:4: in function <[string \"CAMERAORSELECTORMOVE\"]:1>",
 			["session"] = 1275,
 			["counter"] = 3,
-		}, -- [6]
+		}, -- [5]
 		{
 			["message"] = "Interface\\AddOns\\AdiBags\\modules\\NewItemTracking.lua:101: attempt to index field 'button' (a nil value)",
 			["time"] = "2020/07/25 15:03:02",
@@ -58,7 +50,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\AdiBags\\modules\\NewItemTracking.lua:101: in function <Interface\\AddOns\\AdiBags\\modules\\NewItemTracking.lua:94>",
 			["session"] = 1284,
 			["counter"] = 6,
-		}, -- [7]
+		}, -- [6]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'kRestack' tried to call the protected function 'resume()'.",
 			["time"] = "2020/07/25 15:37:10",
@@ -66,7 +58,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `resume'\nInterface\\AddOns\\kRestack\\kRestack-40000.1.lua:381: in function `kRestack'\nInterface\\AddOns\\kRestack\\kRestack-40000.1.lua:149: in function <Interface\\AddOns\\kRestack\\kRestack.lua:112>",
 			["session"] = 1286,
 			["counter"] = 1,
-		}, -- [8]
+		}, -- [7]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:46: attempt to index upvalue 'frame' (a nil value)",
 			["time"] = "2020/07/25 16:27:41",
@@ -74,7 +66,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:46: in function <Interface\\AddOns\\xVermin\\SkinBuffs.lua:26>\n[C]: ?\n[C]: in function `TargetFrame_UpdateAuras'\nInterface\\FrameXML\\TargetFrame.lua:131: in function `TargetFrame_Update'\nInterface\\FrameXML\\TargetFrame.lua:150: in function <Interface\\FrameXML\\TargetFrame.lua:142>\n[C]: in function `CameraOrSelectOrMoveStop'\n[string \"CAMERAORSELECTORMOVE\"]:4: in function <[string \"CAMERAORSELECTORMOVE\"]:1>",
 			["session"] = 1297,
 			["counter"] = 2,
-		}, -- [9]
+		}, -- [8]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:45: attempt to index upvalue 'frame' (a nil value)",
 			["time"] = "2020/07/25 16:31:47",
@@ -82,7 +74,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:45: in function <Interface\\AddOns\\xVermin\\SkinBuffs.lua:26>\n[C]: ?\n[C]: in function `TargetFrame_UpdateAuras'\nInterface\\FrameXML\\TargetFrame.lua:197: in function <Interface\\FrameXML\\TargetFrame.lua:142>",
 			["session"] = 1299,
 			["counter"] = 4,
-		}, -- [10]
+		}, -- [9]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:47: attempt to index upvalue 'frameBorder' (a nil value)",
 			["time"] = "2020/07/25 16:33:35",
@@ -90,7 +82,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:47: in function <Interface\\AddOns\\xVermin\\SkinBuffs.lua:26>\n[C]: ?\n[C]: in function `TargetFrame_UpdateAuras'\nInterface\\FrameXML\\TargetFrame.lua:131: in function `TargetFrame_Update'\nInterface\\FrameXML\\TargetFrame.lua:150: in function <Interface\\FrameXML\\TargetFrame.lua:142>\n[C]: ?\n[C]: in function `TargetUnit'\nInterface\\FrameXML\\SecureTemplates.lua:480: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\nInterface\\FrameXML\\SecureTemplates.lua:656: in function <Interface\\FrameXML\\SecureTemplates.lua:648>",
 			["session"] = 1300,
 			["counter"] = 67,
-		}, -- [11]
+		}, -- [10]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:61: attempt to index upvalue 'frame' (a nil value)",
 			["time"] = "2020/07/25 16:34:57",
@@ -98,7 +90,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:61: in function <Interface\\AddOns\\xVermin\\SkinBuffs.lua:26>\n[C]: ?\n[C]: in function `TargetFrame_UpdateAuras'\nInterface\\FrameXML\\TargetFrame.lua:131: in function `TargetFrame_Update'\nInterface\\FrameXML\\TargetFrame.lua:150: in function <Interface\\FrameXML\\TargetFrame.lua:142>\n[C]: in function `CameraOrSelectOrMoveStop'\n[string \"CAMERAORSELECTORMOVE\"]:4: in function <[string \"CAMERAORSELECTORMOVE\"]:1>",
 			["session"] = 1301,
 			["counter"] = 48,
-		}, -- [12]
+		}, -- [11]
 		{
 			["message"] = "[string \"CastSpellByName(“Aspect of the Hawk”)\"]:1: unexpected symbol near '�'",
 			["time"] = "2020/07/25 22:29:30",
@@ -106,7 +98,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 1303,
 			["counter"] = 2,
-		}, -- [13]
+		}, -- [12]
 		{
 			["message"] = "[string \"ChangeActionBarPage(7);\"]:1: ChangeActionBarPage() needs a page in the range 1 to 6",
 			["time"] = "2020/07/25 22:39:15",
@@ -114,7 +106,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `ChangeActionBarPage'\n[string \"ChangeActionBarPage(7);\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 1304,
 			["counter"] = 1,
-		}, -- [14]
+		}, -- [13]
 		{
 			["message"] = "[string \"MiniMapTrackingIcon:CreateBeautyBorder(6)\"]:1: attempt to call method 'CreateBeautyBorder' (a nil value)",
 			["time"] = "2020/07/26 10:41:20",
@@ -122,7 +114,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"MiniMapTrackingIcon:CreateBeautyBorder(6)\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2783: in function <Interface\\FrameXML\\ChatFrame.lua:2776>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:338: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 1312,
 			["counter"] = 1,
-		}, -- [15]
+		}, -- [14]
 		{
 			["message"] = "[string \"MiniMapBackDrop:Hide()\"]:1: attempt to index global 'MiniMapBackDrop' (a nil value)",
 			["time"] = "2020/07/26 10:45:07",
@@ -130,7 +122,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"MiniMapBackDrop:Hide()\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 1312,
 			["counter"] = 1,
-		}, -- [16]
+		}, -- [15]
 		{
 			["message"] = "[string \"local name, texture, active, category = Get...\"]:1: attempt to call global 'GetTrackingInfo' (a nil value)",
 			["time"] = "2020/07/26 10:54:30",
@@ -138,7 +130,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"local name, texture, active, category = Get...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2783: in function <Interface\\FrameXML\\ChatFrame.lua:2776>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:338: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 1318,
 			["counter"] = 1,
-		}, -- [17]
+		}, -- [16]
 		{
 			["message"] = "[string \"print(GetNumTrackingTypes())\"]:1: attempt to call global 'GetNumTrackingTypes' (a nil value)",
 			["time"] = "2020/07/26 10:55:10",
@@ -146,7 +138,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"print(GetNumTrackingTypes())\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2783: in function <Interface\\FrameXML\\ChatFrame.lua:2776>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:338: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 1318,
 			["counter"] = 1,
-		}, -- [18]
+		}, -- [17]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\TrackingIcon.lua:60: attempt to call global 'GetNumTrackingTypes' (a nil value)",
 			["time"] = "2020/07/26 10:55:59",
@@ -154,7 +146,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\TrackingIcon.lua:60: in main chunk",
 			["session"] = 1319,
 			["counter"] = 1,
-		}, -- [19]
+		}, -- [18]
 		{
 			["message"] = "[string \"SetTracking(1,true)\"]:1: attempt to call global 'SetTracking' (a nil value)",
 			["time"] = "2020/07/26 10:58:34",
@@ -162,7 +154,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"SetTracking(1,true)\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 1319,
 			["counter"] = 1,
-		}, -- [20]
+		}, -- [19]
 		{
 			["message"] = "[string \"SetTracking(nil)\"]:1: attempt to call global 'SetTracking' (a nil value)",
 			["time"] = "2020/07/26 10:58:43",
@@ -170,7 +162,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"SetTracking(nil)\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 1319,
 			["counter"] = 1,
-		}, -- [21]
+		}, -- [20]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\TrackingIcon.lua:115: attempt to index global 'self' (a nil value)",
 			["time"] = "2020/07/26 11:47:48",
@@ -178,13 +170,13 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\TrackingIcon.lua:115: in function <Interface\\AddOns\\xVermin\\TrackingIcon.lua:114>\n[C]: in function `Show'\n[string \"*:OnEvent\"]:5: in function <[string \"*:OnEvent\"]:1>",
 			["session"] = 1334,
 			["counter"] = 1,
-		}, -- [22]
+		}, -- [21]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["time"] = "2020/07/26 13:26:58",
 			["session"] = 1336,
+			["time"] = "2020/07/26 13:26:58",
 			["counter"] = 2,
-		}, -- [23]
+		}, -- [22]
 		{
 			["message"] = "Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:333: AdiBagsItemButton114Count:SetPoint(): Unknown region point",
 			["time"] = "2020/07/26 13:32:39",
@@ -192,7 +184,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `SetPoint'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:333: in function `UpdateCount'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:312: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:610: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:561: in function <Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:554>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\Section.lua:117: in function <Interface\\AddOns\\AdiBags\\widgets\\Section.lua:115>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:898: in function `PrepareSections'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:1004: in function `FullUpdate'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:499: in function <Interface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:486>\n[C]: ?\nInterface\\AddOns\\AdiBags\\core\\Utility.lua:88: in function <Interface\\AddOns\\AdiBags\\core\\Utility.lua:80>\nInterface\\AddOns\\AdiBags\\widgets\\LayeredRegion.lua:118: in function <Interface\\AddOns\\AdiBags\\widgets\\LayeredRegion.lua:107>",
 			["session"] = 1340,
 			["counter"] = 1,
-		}, -- [24]
+		}, -- [23]
 		{
 			["message"] = "Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:333: AdiBagsItemButton18Count:SetPoint(): Unknown region point",
 			["time"] = "2020/07/26 13:32:39",
@@ -200,7 +192,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `SetPoint'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:333: in function `UpdateCount'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:312: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:610: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:561: in function <Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:554>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\Section.lua:117: in function <Interface\\AddOns\\AdiBags\\widgets\\Section.lua:115>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:898: in function `PrepareSections'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:1004: in function `FullUpdate'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:499: in function <Interface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:486>\n[C]: ?\nInterface\\AddOns\\AdiBags\\core\\Utility.lua:88: in function <Interface\\AddOns\\AdiBags\\core\\Utility.lua:80>\nInterface\\AddOns\\AdiBags\\widgets\\LayeredRegion.lua:118: in function <Interface\\AddOns\\AdiBags\\widgets\\LayeredRegion.lua:107>",
 			["session"] = 1340,
 			["counter"] = 1,
-		}, -- [25]
+		}, -- [24]
 		{
 			["message"] = "Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:333: AdiBagsItemButton69Count:SetPoint(): Unknown region point",
 			["time"] = "2020/07/26 13:32:39",
@@ -208,7 +200,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `SetPoint'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:333: in function `UpdateCount'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:312: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:610: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:561: in function <Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:554>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\Section.lua:117: in function <Interface\\AddOns\\AdiBags\\widgets\\Section.lua:115>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:898: in function `PrepareSections'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:1004: in function `FullUpdate'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:499: in function <Interface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:486>\n[C]: ?\nInterface\\AddOns\\AdiBags\\core\\Utility.lua:88: in function <Interface\\AddOns\\AdiBags\\core\\Utility.lua:80>\nInterface\\AddOns\\AdiBags\\widgets\\LayeredRegion.lua:118: in function <Interface\\AddOns\\AdiBags\\widgets\\LayeredRegion.lua:107>",
 			["session"] = 1340,
 			["counter"] = 1,
-		}, -- [26]
+		}, -- [25]
 		{
 			["message"] = "Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:333: AdiBagsItemButton55Count:SetPoint(): Unknown region point",
 			["time"] = "2020/07/26 13:32:39",
@@ -216,7 +208,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `SetPoint'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:333: in function `UpdateCount'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:312: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:610: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:561: in function <Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:554>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\Section.lua:117: in function <Interface\\AddOns\\AdiBags\\widgets\\Section.lua:115>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:898: in function `PrepareSections'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:1004: in function `FullUpdate'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:499: in function <Interface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:486>\n[C]: ?\nInterface\\AddOns\\AdiBags\\core\\Utility.lua:88: in function <Interface\\AddOns\\AdiBags\\core\\Utility.lua:80>\nInterface\\AddOns\\AdiBags\\widgets\\LayeredRegion.lua:118: in function <Interface\\AddOns\\AdiBags\\widgets\\LayeredRegion.lua:107>",
 			["session"] = 1340,
 			["counter"] = 1,
-		}, -- [27]
+		}, -- [26]
 		{
 			["message"] = "Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:333: AdiBagsItemButton101Count:SetPoint(): Unknown region point",
 			["time"] = "2020/07/26 13:32:39",
@@ -224,7 +216,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `SetPoint'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:333: in function `UpdateCount'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:312: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:610: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:561: in function <Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:554>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\Section.lua:117: in function <Interface\\AddOns\\AdiBags\\widgets\\Section.lua:115>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:898: in function `PrepareSections'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:1004: in function `FullUpdate'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:499: in function <Interface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:486>\n[C]: ?\nInterface\\AddOns\\AdiBags\\core\\Utility.lua:88: in function <Interface\\AddOns\\AdiBags\\core\\Utility.lua:80>\nInterface\\AddOns\\AdiBags\\widgets\\LayeredRegion.lua:118: in function <Interface\\AddOns\\AdiBags\\widgets\\LayeredRegion.lua:107>",
 			["session"] = 1340,
 			["counter"] = 1,
-		}, -- [28]
+		}, -- [27]
 		{
 			["message"] = "Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:333: AdiBagsItemButton6Count:SetPoint(): Unknown region point",
 			["time"] = "2020/07/26 13:32:39",
@@ -232,7 +224,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `SetPoint'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:333: in function `UpdateCount'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:312: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:610: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:561: in function <Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:554>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\Section.lua:117: in function <Interface\\AddOns\\AdiBags\\widgets\\Section.lua:115>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:898: in function `PrepareSections'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:1004: in function `FullUpdate'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:499: in function <Interface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:486>\n[C]: ?\nInterface\\AddOns\\AdiBags\\core\\Utility.lua:88: in function <Interface\\AddOns\\AdiBags\\core\\Utility.lua:80>\nInterface\\AddOns\\AdiBags\\widgets\\LayeredRegion.lua:118: in function <Interface\\AddOns\\AdiBags\\widgets\\LayeredRegion.lua:107>",
 			["session"] = 1340,
 			["counter"] = 1,
-		}, -- [29]
+		}, -- [28]
 		{
 			["message"] = "Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:333: AdiBagsItemButton131Count:SetPoint(): Unknown region point",
 			["time"] = "2020/07/26 13:32:39",
@@ -240,7 +232,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `SetPoint'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:333: in function `UpdateCount'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:312: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:610: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:561: in function <Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:554>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\Section.lua:117: in function <Interface\\AddOns\\AdiBags\\widgets\\Section.lua:115>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:898: in function `PrepareSections'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:1004: in function `FullUpdate'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:499: in function <Interface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:486>\n[C]: ?\nInterface\\AddOns\\AdiBags\\core\\Utility.lua:88: in function <Interface\\AddOns\\AdiBags\\core\\Utility.lua:80>\nInterface\\AddOns\\AdiBags\\widgets\\LayeredRegion.lua:118: in function <Interface\\AddOns\\AdiBags\\widgets\\LayeredRegion.lua:107>",
 			["session"] = 1340,
 			["counter"] = 1,
-		}, -- [30]
+		}, -- [29]
 		{
 			["message"] = "Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:333: AdiBagsItemButton88Count:SetPoint(): Unknown region point",
 			["time"] = "2020/07/26 13:32:39",
@@ -248,7 +240,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `SetPoint'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:333: in function `UpdateCount'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:312: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:610: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:561: in function <Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:554>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\Section.lua:117: in function <Interface\\AddOns\\AdiBags\\widgets\\Section.lua:115>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:898: in function `PrepareSections'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:1004: in function `FullUpdate'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:499: in function <Interface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:486>\n[C]: ?\nInterface\\AddOns\\AdiBags\\core\\Utility.lua:88: in function <Interface\\AddOns\\AdiBags\\core\\Utility.lua:80>\nInterface\\AddOns\\AdiBags\\widgets\\LayeredRegion.lua:118: in function <Interface\\AddOns\\AdiBags\\widgets\\LayeredRegion.lua:107>",
 			["session"] = 1340,
 			["counter"] = 1,
-		}, -- [31]
+		}, -- [30]
 		{
 			["message"] = "Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:333: AdiBagsItemButton150Count:SetPoint(): Unknown region point",
 			["time"] = "2020/07/26 13:32:39",
@@ -256,7 +248,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `SetPoint'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:333: in function `UpdateCount'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:312: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:610: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:561: in function <Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:554>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\Section.lua:117: in function <Interface\\AddOns\\AdiBags\\widgets\\Section.lua:115>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:898: in function `PrepareSections'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:1004: in function `FullUpdate'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:499: in function <Interface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:486>\n[C]: ?\nInterface\\AddOns\\AdiBags\\core\\Utility.lua:88: in function <Interface\\AddOns\\AdiBags\\core\\Utility.lua:80>\nInterface\\AddOns\\AdiBags\\widgets\\LayeredRegion.lua:118: in function <Interface\\AddOns\\AdiBags\\widgets\\LayeredRegion.lua:107>",
 			["session"] = 1340,
 			["counter"] = 1,
-		}, -- [32]
+		}, -- [31]
 		{
 			["message"] = "Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:333: AdiBagsItemButton107Count:SetPoint(): Unknown region point",
 			["time"] = "2020/07/26 13:32:39",
@@ -264,7 +256,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `SetPoint'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:333: in function `UpdateCount'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:312: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:610: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:561: in function <Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:554>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\Section.lua:117: in function <Interface\\AddOns\\AdiBags\\widgets\\Section.lua:115>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:898: in function `PrepareSections'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:1004: in function `FullUpdate'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:499: in function <Interface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:486>\n[C]: ?\nInterface\\AddOns\\AdiBags\\core\\Utility.lua:88: in function <Interface\\AddOns\\AdiBags\\core\\Utility.lua:80>\nInterface\\AddOns\\AdiBags\\widgets\\LayeredRegion.lua:118: in function <Interface\\AddOns\\AdiBags\\widgets\\LayeredRegion.lua:107>",
 			["session"] = 1340,
 			["counter"] = 1,
-		}, -- [33]
+		}, -- [32]
 		{
 			["message"] = "Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:331: attempt to perform arithmetic on global 'ount' (a nil value)",
 			["time"] = "2020/07/26 13:36:16",
@@ -272,7 +264,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:331: in function `UpdateCount'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:312: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:613: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:564: in function <Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:557>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\Section.lua:117: in function <Interface\\AddOns\\AdiBags\\widgets\\Section.lua:115>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:898: in function `PrepareSections'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:1004: in function `FullUpdate'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:499: in function <Interface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:486>\n[C]: ?\nInterface\\AddOns\\AdiBags\\core\\Utility.lua:88: in function <Interface\\AddOns\\AdiBags\\core\\Utility.lua:80>\nInterface\\AddOns\\AdiBags\\widgets\\LayeredRegion.lua:118: in function <Interface\\AddOns\\AdiBags\\widgets\\LayeredRegion.lua:107>",
 			["session"] = 1344,
 			["counter"] = 1,
-		}, -- [34]
+		}, -- [33]
 		{
 			["message"] = "Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:331: attempt to call global 'format_num' (a nil value)",
 			["time"] = "2020/07/26 13:36:35",
@@ -280,7 +272,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:331: in function `UpdateCount'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:312: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:613: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:564: in function <Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:557>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\Section.lua:117: in function <Interface\\AddOns\\AdiBags\\widgets\\Section.lua:115>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:898: in function `PrepareSections'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:1004: in function `FullUpdate'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:499: in function <Interface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:486>\n[C]: ?\nInterface\\AddOns\\AdiBags\\core\\Utility.lua:88: in function <Interface\\AddOns\\AdiBags\\core\\Utility.lua:80>\nInterface\\AddOns\\AdiBags\\widgets\\LayeredRegion.lua:118: in function <Interface\\AddOns\\AdiBags\\widgets\\LayeredRegion.lua:107>",
 			["session"] = 1345,
 			["counter"] = 1,
-		}, -- [35]
+		}, -- [34]
 		{
 			["message"] = "Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:332: attempt to perform arithmetic on local 'placeValue' (a string value)",
 			["time"] = "2020/07/26 13:42:17",
@@ -288,7 +280,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:332: in function `UpdateCount'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:312: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:614: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:565: in function <Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:558>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\Section.lua:117: in function <Interface\\AddOns\\AdiBags\\widgets\\Section.lua:115>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:898: in function `PrepareSections'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:1004: in function `FullUpdate'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:499: in function <Interface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:486>\n[C]: ?\nInterface\\AddOns\\AdiBags\\core\\Utility.lua:88: in function <Interface\\AddOns\\AdiBags\\core\\Utility.lua:80>\nInterface\\AddOns\\AdiBags\\widgets\\LayeredRegion.lua:118: in function <Interface\\AddOns\\AdiBags\\widgets\\LayeredRegion.lua:107>",
 			["session"] = 1349,
 			["counter"] = 1,
-		}, -- [36]
+		}, -- [35]
 		{
 			["message"] = "Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:336: attempt to call global 'sprintf' (a nil value)",
 			["time"] = "2020/07/26 13:50:04",
@@ -296,14 +288,14 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:336: in function `UpdateCount'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:312: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:619: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:570: in function <Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:563>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\Section.lua:117: in function <Interface\\AddOns\\AdiBags\\widgets\\Section.lua:115>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:898: in function `PrepareSections'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:1004: in function `FullUpdate'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:499: in function <Interface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:486>\n[C]: ?\nInterface\\AddOns\\AdiBags\\core\\Utility.lua:88: in function <Interface\\AddOns\\AdiBags\\core\\Utility.lua:80>\nInterface\\AddOns\\AdiBags\\widgets\\LayeredRegion.lua:118: in function <Interface\\AddOns\\AdiBags\\widgets\\LayeredRegion.lua:107>",
 			["session"] = 1353,
 			["counter"] = 1,
-		}, -- [37]
+		}, -- [36]
 		{
 			["message"] = "Interface\\AddOns\\NovaWorldBuffs\\NWBData.lua:900: attempt to index local 'vv' (a number value)",
 			["time"] = "2020/07/26 13:50:06",
 			["stack"] = "Interface\\AddOns\\NovaWorldBuffs\\NWBData.lua:900: in function `receivedData'\nInterface\\AddOns\\NovaWorldBuffs\\NWBData.lua:165: in function `?'\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:119: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:119>\n[C]: ?\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:29: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:64: in function `Fire'\n...face\\AddOns\\Details\\Libs\\AceComm-3.0\\AceComm-3.0-12.lua:218: in function `OnReceiveMultipartLast'\n...face\\AddOns\\Details\\Libs\\AceComm-3.0\\AceComm-3.0-12.lua:256: in function <...face\\AddOns\\Details\\Libs\\AceComm-3.0\\AceComm-3.0.lua:246>",
 			["session"] = 1353,
 			["counter"] = 1,
-		}, -- [38]
+		}, -- [37]
 		{
 			["message"] = "Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:334: attempt to perform arithmetic on global 'num' (a nil value)",
 			["time"] = "2020/07/26 14:09:12",
@@ -311,7 +303,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:334: in function `UpdateCount'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:312: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:616: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:567: in function <Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:560>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\Section.lua:117: in function <Interface\\AddOns\\AdiBags\\widgets\\Section.lua:115>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:898: in function `PrepareSections'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:1004: in function `FullUpdate'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:499: in function <Interface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:486>\n[C]: ?\nInterface\\AddOns\\AdiBags\\core\\Utility.lua:88: in function <Interface\\AddOns\\AdiBags\\core\\Utility.lua:80>\nInterface\\AddOns\\AdiBags\\widgets\\LayeredRegion.lua:118: in function <Interface\\AddOns\\AdiBags\\widgets\\LayeredRegion.lua:107>",
 			["session"] = 1357,
 			["counter"] = 1,
-		}, -- [39]
+		}, -- [38]
 		{
 			["message"] = "Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:330: attempt to perform arithmetic on global 'mult' (a nil value)",
 			["time"] = "2020/07/26 14:12:59",
@@ -319,7 +311,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:330: in function `UpdateCount'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:312: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:611: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:562: in function <Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:555>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\Section.lua:117: in function <Interface\\AddOns\\AdiBags\\widgets\\Section.lua:115>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:898: in function `PrepareSections'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:1004: in function `FullUpdate'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:499: in function <Interface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:486>\n[C]: ?\nInterface\\AddOns\\AdiBags\\core\\Utility.lua:88: in function <Interface\\AddOns\\AdiBags\\core\\Utility.lua:80>\nInterface\\AddOns\\AdiBags\\widgets\\LayeredRegion.lua:118: in function <Interface\\AddOns\\AdiBags\\widgets\\LayeredRegion.lua:107>",
 			["session"] = 1360,
 			["counter"] = 1,
-		}, -- [40]
+		}, -- [39]
 		{
 			["message"] = "Interface\\AddOns\\DBM-StatusBarTimers\\DBT.lua:829: attempt to call method 'CreateBeautyBorder' (a nil value)",
 			["time"] = "2020/07/26 15:03:52",
@@ -327,7 +319,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\DBM-StatusBarTimers\\DBT.lua:829: in function `CreateBar'\nInterface\\AddOns\\DBM-Core\\DBM-Core-1.13.13b.lua:9804: in function `Start'\nInterface\\AddOns\\DBM-Core\\DBM-Core-1.13.13b.lua:6688: in function `DemoMode'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:1389: in function <Interface\\AddOns\\DBM-GUI\\DBM-GUI.lua:1389>",
 			["session"] = 1368,
 			["counter"] = 1,
-		}, -- [41]
+		}, -- [40]
 		{
 			["message"] = "[string \"DBT_Bar_1BarIcon1:CreateBeautyBorder(6)\"]:1: attempt to call method 'CreateBeautyBorder' (a nil value)",
 			["time"] = "2020/07/26 15:06:46",
@@ -335,7 +327,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"DBT_Bar_1BarIcon1:CreateBeautyBorder(6)\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2783: in function <Interface\\FrameXML\\ChatFrame.lua:2776>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:338: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 1369,
 			["counter"] = 4,
-		}, -- [42]
+		}, -- [41]
 		{
 			["message"] = "Interface\\AddOns\\DBM-StatusBarTimers\\DBT.lua:899: attempt to call method 'CreateBeautyBorder' (a nil value)",
 			["time"] = "2020/07/26 15:05:18",
@@ -343,7 +335,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\DBM-StatusBarTimers\\DBT.lua:899: in function `CreateBar'\nInterface\\AddOns\\DBM-StatusBarTimers\\DBT.lua:919: in function `CreateDummyBar'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:1685: in function `?'\nInterface\\AddOns\\DBM-Core\\DBM-Core-1.13.13b.lua:2580: in function `LoadGUI'\nInterface\\AddOns\\DBM-Core\\DBM-Core-1.13.13b.lua:2609: in function `OnClick'\nInterface\\AddOns\\ChocolateBar\\Chocolate.lua:289: in function <Interface\\AddOns\\ChocolateBar\\Chocolate.lua:286>",
 			["session"] = 1369,
 			["counter"] = 10,
-		}, -- [43]
+		}, -- [42]
 		{
 			["message"] = "Interface\\AddOns\\DBM-StatusBarTimers\\DBT.lua:1432: attempt to call method 'CreateBeautyBorder' (a nil value)",
 			["time"] = "2020/07/26 15:13:51",
@@ -351,7 +343,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\DBM-StatusBarTimers\\DBT.lua:1432: in function `ApplyStyle'\nInterface\\AddOns\\DBM-StatusBarTimers\\DBT.lua:897: in function `CreateBar'\nInterface\\AddOns\\DBM-StatusBarTimers\\DBT.lua:918: in function `CreateDummyBar'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:1685: in function `?'\nInterface\\AddOns\\DBM-Core\\DBM-Core-1.13.13b.lua:2580: in function `LoadGUI'\nInterface\\AddOns\\DBM-Core\\DBM-Core-1.13.13b.lua:2609: in function `OnClick'\nInterface\\AddOns\\ChocolateBar\\Chocolate.lua:289: in function <Interface\\AddOns\\ChocolateBar\\Chocolate.lua:286>",
 			["session"] = 1372,
 			["counter"] = 1,
-		}, -- [44]
+		}, -- [43]
 		{
 			["message"] = "Interface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2288: Invalid option: TDecimal",
 			["time"] = "2020/07/26 15:36:12",
@@ -359,7 +351,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `error'\nInterface\\AddOns\\DBM-StatusBarTimers\\DBT.lua:662: in function `SetOption'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2288: in function <Interface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2283>\n[C]: ?\n[C]: in function `SetValue'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2278: in function <Interface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2274>\n[C]: in function `Show'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:1302: in function `DisplayFrame'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:1230: in function `OnButtonClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 1376,
 			["counter"] = 3,
-		}, -- [45]
+		}, -- [44]
 		{
 			["message"] = "Interface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2082: Invalid option: StartColorUIR",
 			["time"] = "2020/07/26 15:36:12",
@@ -367,7 +359,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `error'\nInterface\\AddOns\\DBM-StatusBarTimers\\DBT.lua:662: in function `SetOption'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2082: in function <Interface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2081>\n[C]: in function `SetColorRGB'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2061: in function <Interface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2061>\n[C]: in function `Show'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:1302: in function `DisplayFrame'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:1230: in function `OnButtonClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 1377,
 			["counter"] = 6,
-		}, -- [46]
+		}, -- [45]
 		{
 			["message"] = "Interface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2088: Invalid option: EndColorUIR",
 			["time"] = "2020/07/26 15:36:12",
@@ -375,7 +367,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `error'\nInterface\\AddOns\\DBM-StatusBarTimers\\DBT.lua:662: in function `SetOption'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2088: in function <Interface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2087>\n[C]: in function `SetColorRGB'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2071: in function <Interface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2071>\n[C]: in function `Show'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:1302: in function `DisplayFrame'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:1230: in function `OnButtonClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 1377,
 			["counter"] = 6,
-		}, -- [47]
+		}, -- [46]
 		{
 			["message"] = "Interface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2288: Invalid option: EnlargeBarTime",
 			["time"] = "2020/07/26 15:36:12",
@@ -383,7 +375,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `error'\nInterface\\AddOns\\DBM-StatusBarTimers\\DBT.lua:662: in function `SetOption'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2288: in function <Interface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2283>\n[C]: ?\n[C]: in function `SetValue'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2278: in function <Interface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2274>\n[C]: in function `Show'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:1302: in function `DisplayFrame'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:1230: in function `OnButtonClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 1377,
 			["counter"] = 4,
-		}, -- [48]
+		}, -- [47]
 		{
 			["message"] = "Interface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2288: Invalid option: Alpha",
 			["time"] = "2020/07/26 15:36:12",
@@ -391,7 +383,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `error'\nInterface\\AddOns\\DBM-StatusBarTimers\\DBT.lua:662: in function `SetOption'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2288: in function <Interface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2283>\n[C]: ?\n[C]: in function `SetValue'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2278: in function <Interface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2274>\n[C]: in function `Show'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:1302: in function `DisplayFrame'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:1230: in function `OnButtonClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 1377,
 			["counter"] = 4,
-		}, -- [49]
+		}, -- [48]
 		{
 			["message"] = "Interface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2288: Invalid option: HugeAlpha",
 			["time"] = "2020/07/26 15:36:12",
@@ -399,7 +391,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `error'\nInterface\\AddOns\\DBM-StatusBarTimers\\DBT.lua:662: in function `SetOption'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2288: in function <Interface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2283>\n[C]: ?\n[C]: in function `SetValue'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2278: in function <Interface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2274>\n[C]: in function `Show'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:1302: in function `DisplayFrame'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:1230: in function `OnButtonClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 1377,
 			["counter"] = 4,
-		}, -- [50]
+		}, -- [49]
 		{
 			["message"] = "Interface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2083: Invalid option: StartColorUIG",
 			["time"] = "2020/07/26 15:48:54",
@@ -407,7 +399,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `error'\nInterface\\AddOns\\DBM-StatusBarTimers\\DBT.lua:686: in function `SetOption'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2083: in function <Interface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2081>\n[C]: in function `SetColorRGB'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2061: in function <Interface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2061>\n[C]: in function `Show'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:1302: in function `DisplayFrame'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:1230: in function `OnButtonClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 1378,
 			["counter"] = 1,
-		}, -- [51]
+		}, -- [50]
 		{
 			["message"] = "Interface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2089: Invalid option: EndColorUIG",
 			["time"] = "2020/07/26 15:48:54",
@@ -415,7 +407,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `error'\nInterface\\AddOns\\DBM-StatusBarTimers\\DBT.lua:686: in function `SetOption'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2089: in function <Interface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2087>\n[C]: in function `SetColorRGB'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2071: in function <Interface\\AddOns\\DBM-GUI\\DBM-GUI.lua:2071>\n[C]: in function `Show'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:1302: in function `DisplayFrame'\nInterface\\AddOns\\DBM-GUI\\DBM-GUI.lua:1230: in function `OnButtonClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 1378,
 			["counter"] = 1,
-		}, -- [52]
+		}, -- [51]
 		{
 			["message"] = "Interface\\AddOns\\DBM-StatusBarTimers\\DBT.lua:1522: The option Font requires a string value. (tried to assign a nil value)",
 			["time"] = "2020/07/26 15:50:16",
@@ -423,12 +415,20 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `error'\nInterface\\AddOns\\DBM-StatusBarTimers\\DBT.lua:725: in function `SetOption'\nInterface\\AddOns\\DBM-StatusBarTimers\\DBT.lua:1522: in function `SetSkin'\nInterface\\AddOns\\DBM-Karma-Skin\\DBM-Karma-Skin.lua:7: in main chunk",
 			["session"] = 1379,
 			["counter"] = 1,
-		}, -- [53]
+		}, -- [52]
 		{
 			["message"] = "(null)",
-			["session"] = 1379,
 			["time"] = "2020/07/24 16:00:06",
+			["session"] = 1379,
 			["counter"] = 12,
+		}, -- [53]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'AttemptToSaveBindings()'.",
+			["time"] = "2020/07/24 16:00:07",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `AttemptToSaveBindings'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:2062: in function `SetSetBindings'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:544: in function `InitCore'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:281: in function `func'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:982: in function `OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>",
+			["session"] = 1393,
+			["counter"] = 6,
 		}, -- [54]
 	},
 }

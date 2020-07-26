@@ -10,12 +10,12 @@ END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:3770
-/castsequence [combat]item:929,item:929,item:929,item:858,item:858
+/castsequence [combat]item:929,item:929,item:929
 END
 VER 3 0000000000000006 "PF" "Inv_misc_questionmark"
-#showtooltip item:0
+#showtooltip item:3770
 /cast feed pet
-/use item:0
+/use item:3770
 END
 VER 3 0000000000000009 "TEST" "INV_MISC_QUESTIONMARK"
 /
