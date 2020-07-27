@@ -19,7 +19,7 @@ C_Timer.NewTicker(
 		counter = counter + 1
 		cgt.text:SetText(counter)
 		cgt.text:SetTextColor(0.058, 0.901, 0.466, 1)
-		cgt:Show()
+		-- cgt:Show()
 		-- UIFrameFadeOut(cgt, 3, 1, 0)
 	end
 )

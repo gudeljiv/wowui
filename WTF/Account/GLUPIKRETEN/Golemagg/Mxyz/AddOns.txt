@@ -287,3 +287,6 @@ Bagnon_VoidStorage: disabled
 FollowMePls: enabled
 AutoDelete: disabled
 kRestack: disabled
+Talented: disabled
+Talented_Data: disabled
+Talented_Data_Export: disabled

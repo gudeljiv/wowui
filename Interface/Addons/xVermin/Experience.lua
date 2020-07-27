@@ -85,3 +85,31 @@ MainMenuExpBar:HookScript(
 		end
 	end
 )
+
+local cmtk = CreateFrame("Frame", "CustomContainer_CombatMobsToKill", CustomContainer_Combat)
+cmtk:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 2)
+cmtk:SetWidth(10)
+cmtk:SetHeight(10)
+cmtk.text = cmtk:CreateFontString(nil, "ARTWORK")
+cmtk.text:SetFont(config.font.atari, 11, "NONE")
+cmtk.text:SetPoint("RIGHT", CustomContainer_Combat, "RIGHT", -3, 2)
+cmtk:Hide()
+
+local cxp = UnitXP("player")
+local f = CreateFrame("Frame")
+f:RegisterEvent("PLAYER_XP_UPDATE")
+f:SetScript(
+	"OnEvent",
+	function(self, event, ...)
+		local nxp = UnitXP("player")
+		local mxp = UnitXPMax("player")
+		local gained = nxp - cxp
+		if (gained > 0) then
+			local hmmm = math.ceil((mxp - nxp) / gained)
+			cmtk.text:SetText(hmmm)
+			cmtk.text:SetTextColor(0.058, 0.901, 0.466, 1)
+			cmtk:Show()
+		end
+		cxp = nxp
+	end
+)

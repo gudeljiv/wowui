@@ -34,12 +34,12 @@ f:RegisterEvent("PLAYER_REGEN_ENABLED")
 f:SetScript(
 	"OnEvent",
 	function(self, event, ...)
-		if event == "PLAYER_REGEN_DISABLED" then
-			cc_combat:SetBackdropColor(color.r, color.g, color.b, 0.8)
-		end
-		if event == "PLAYER_REGEN_ENABLED" then
-			cc_combat:SetBackdropColor(0, 0, 0, 0.4)
-		end
+		-- if event == "PLAYER_REGEN_DISABLED" then
+		-- 	cc_combat:SetBackdropColor(color.r, color.g, color.b, 0.8)
+		-- end
+		-- if event == "PLAYER_REGEN_ENABLED" then
+		-- 	cc_combat:SetBackdropColor(0, 0, 0, 0.4)
+		-- end
 	end
 )
 
