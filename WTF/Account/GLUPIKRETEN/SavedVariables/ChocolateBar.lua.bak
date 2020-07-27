@@ -19,17 +19,28 @@ ChocolateBarDB = {
 		["Pitchwise - Golemagg"] = "Default",
 		["Greenwise - Golemagg"] = "Default",
 		["Pitchwise - Genesis"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
 		["Pepecocorita - Genesis"] = "Default",
 		["Kosturko - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
 		["Elohssa - Stonespine"] = "Default",
 		["Ozrencic - Golemagg"] = "Default",
 		["Whatevs - Stonespine"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
+			["locked"] = false,
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["r"] = 0,
+					["g"] = 0,
+					["b"] = 0,
+				},
+				["textureName"] = "None",
+			},
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -50,21 +61,10 @@ ChocolateBarDB = {
 					["barOffx"] = -88.3325424194336,
 				},
 			},
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["r"] = 0,
-					["g"] = 0,
-					["b"] = 0,
-				},
-				["textureName"] = "None",
-			},
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
 			},
-			["locked"] = false,
-			["fixedStrata"] = true,
+			["moveFrames"] = false,
 			["objSettings"] = {
 				["PitBull4"] = {
 					["enabled"] = false,
@@ -285,17 +285,17 @@ ChocolateBarDB = {
 				},
 			},
 			["gap"] = 3,
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["desaturated"] = false,
-			["moveFrames"] = false,
 			["fontName"] = "Friz Quadrata TT",
-			["textOffset"] = 2,
-			["height"] = 20,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
 			["forceColor"] = false,
+			["desaturated"] = false,
+			["textOffset"] = 2,
+			["height"] = 20,
+			["fixedStrata"] = true,
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["textColor"] = {
 				["a"] = 1,
 				["b"] = 1,
@@ -306,11 +306,11 @@ ChocolateBarDB = {
 	},
 }
 CB_PlayedTime = {
-	["Korupcija-"] = {
-		["total"] = 21359,
-	},
 	["Greenwise-"] = {
 		["total"] = 79871,
+	},
+	["Korupcija-"] = {
+		["total"] = 21359,
 	},
 	["Pitchwise-"] = {
 		["total"] = 390,
@@ -324,14 +324,14 @@ CB_PlayedTime = {
 	["Elohssa-"] = {
 		["total"] = 3552,
 	},
-	["Mxzq-"] = {
-		["total"] = 137615,
+	["Verminz-"] = {
+		["total"] = 311368,
 	},
 	["Paydo-"] = {
 		["total"] = 18945,
 	},
 	["Mxyz-"] = {
-		["total"] = 7598,
+		["total"] = 7698,
 	},
 	["Vermin-"] = {
 		["total"] = 122562,
@@ -348,7 +348,7 @@ CB_PlayedTime = {
 	["Dotwise-"] = {
 		["total"] = 3924,
 	},
-	["Verminz-"] = {
-		["total"] = 311368,
+	["Mxzq-"] = {
+		["total"] = 139688,
 	},
 }
