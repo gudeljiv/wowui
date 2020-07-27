@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 1417,
+	["session"] = 1425,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -417,19 +417,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [52]
 		{
-			["message"] = "(null)",
-			["time"] = "2020/07/24 16:00:06",
-			["session"] = 1379,
-			["counter"] = 12,
-		}, -- [53]
-		{
 			["message"] = "Interface\\AddOns\\Talented\\ui\\arrows.lua:7: attempt to index local 'parent' (a nil value)",
 			["time"] = "2020/07/27 14:16:37",
 			["locals"] = "parent = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'parent' (a nil value)\"\nNORMAL_FONT_COLOR = <table> {\n GetRGB = <function> defined @Interface\\SharedXML\\Util.lua:633\n OnLoad = <function> defined @Interface\\SharedXML\\Util.lua:622\n b = 0\n GenerateHexColorMarkup = <function> defined @Interface\\SharedXML\\Util.lua:664\n WrapTextInColorCode = <function> defined @Interface\\SharedXML\\Util.lua:668\n GenerateHexColor = <function> defined @Interface\\SharedXML\\Util.lua:660\n GetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:641\n IsEqualTo = <function> defined @Interface\\SharedXML\\Util.lua:626\n g = 0.820000\n r = 1\n SetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:649\n GetRGBAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:637\n SetRGB = <function> defined @Interface\\SharedXML\\Util.lua:656\n GetRGBAAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:645\n}\narrows = <table> {\n used = <table> {\n }\n available = <table> {\n }\n}\n",
 			["stack"] = "Interface\\AddOns\\Talented\\ui\\arrows.lua:7: in function <Interface\\AddOns\\Talented\\ui\\arrows.lua:6>\nInterface\\AddOns\\Talented\\ui\\arrows.lua:22: in function `MakeArrow'\nInterface\\AddOns\\Talented\\ui\\lines.lua:48: in function <Interface\\AddOns\\Talented\\ui\\lines.lua:30>\nInterface\\AddOns\\Talented\\ui\\lines.lua:166: in function `DrawLine'\nInterface\\AddOns\\Talented\\view-View.lua:127: in function `SetClass'\nInterface\\AddOns\\Talented\\view-View.lua:157: in function `SetTemplate'\nInterface\\AddOns\\Talented\\core.lua:269: in function `SetTemplate'\nInterface\\AddOns\\Talented\\core.lua:357: in function `Update'\nInterface\\AddOns\\Talented\\core.lua:346: in function <Interface\\AddOns\\Talented\\core.lua:343>\n(tail call): ?\n[string \"TOGGLETALENTS\"]:1: in function <[string \"TOGGLETALENTS\"]:1>",
 			["session"] = 1399,
 			["counter"] = 1,
-		}, -- [54]
+		}, -- [53]
 		{
 			["message"] = "Interface\\AddOns\\Talented\\ui\\buttons.lua:70: attempt to index field 'slot' (a nil value)",
 			["time"] = "2020/07/27 14:24:06",
@@ -437,7 +431,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\Talented\\ui\\buttons.lua:70: in function <Interface\\AddOns\\Talented\\ui\\buttons.lua:41>\nInterface\\AddOns\\Talented\\ui\\buttons.lua:90: in function `MakeButton'\nInterface\\AddOns\\Talented\\view-View.lua:111: in function `SetClass'\nInterface\\AddOns\\Talented\\view-View.lua:157: in function `SetTemplate'\nInterface\\AddOns\\Talented\\core.lua:269: in function `SetTemplate'\nInterface\\AddOns\\Talented\\core.lua:357: in function `Update'\nInterface\\AddOns\\Talented\\core.lua:346: in function <Interface\\AddOns\\Talented\\core.lua:343>\n(tail call): ?\n[string \"TOGGLETALENTS\"]:1: in function <[string \"TOGGLETALENTS\"]:1>",
 			["session"] = 1405,
 			["counter"] = 1,
-		}, -- [55]
+		}, -- [54]
 		{
 			["message"] = "Interface\\AddOns\\Talented\\view-View.lua:211: attempt to index field 'slot' (a nil value)",
 			["time"] = "2020/07/27 14:24:51",
@@ -445,7 +439,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\Talented\\view-View.lua:211: in function `Update'\nInterface\\AddOns\\Talented\\view-View.lua:138: in function `SetClass'\nInterface\\AddOns\\Talented\\view-View.lua:157: in function `SetTemplate'\nInterface\\AddOns\\Talented\\core.lua:269: in function `SetTemplate'\nInterface\\AddOns\\Talented\\core.lua:357: in function `Update'\nInterface\\AddOns\\Talented\\core.lua:346: in function <Interface\\AddOns\\Talented\\core.lua:343>\n(tail call): ?\n[string \"TOGGLETALENTS\"]:1: in function <[string \"TOGGLETALENTS\"]:1>",
 			["session"] = 1406,
 			["counter"] = 1,
-		}, -- [56]
+		}, -- [55]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'AttemptToSaveBindings()'.",
 			["time"] = "2020/07/24 16:00:07",
@@ -453,7 +447,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `AttemptToSaveBindings'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:2062: in function `SetSetBindings'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:544: in function `InitCore'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:281: in function `func'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:982: in function `OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>",
 			["session"] = 1415,
 			["counter"] = 8,
-		}, -- [57]
+		}, -- [56]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'whoaThickFrames_Classic' tried to call the protected function 'CompactRaidFrame3:ClearAllPoints()'.",
 			["time"] = "2020/07/27 15:37:48",
@@ -461,6 +455,154 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `ClearAllPoints'\nInterface\\FrameXML\\FlowContainer.lua:157: in function `FlowContainer_DoLayout'\nInterface\\FrameXML\\FlowContainer.lua:17: in function `FlowContainer_ResumeUpdates'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:185: in function `CompactRaidFrameContainer_LayoutFrames'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:130: in function `CompactRaidFrameContainer_TryUpdate'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:57: in function `CompactRaidFrameContainer_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
 			["session"] = 1416,
 			["counter"] = 1,
+		}, -- [57]
+		{
+			["message"] = "Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.8.0 - by Slarti on EU-Blackhand.lua:1117: attempt to call global 'TEXT' (a nil value)",
+			["time"] = "2020/07/27 20:36:04",
+			["locals"] = "info = <table> {\n}\n(*temporary) = nil\n(*temporary) = \"All Slots\"\n(*temporary) = \"attempt to call global 'TEXT' (a nil value)\"\natsw_currentinvslotfilter = <table> {\n}\n",
+			["stack"] = "Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.8.0 - by Slarti on EU-Blackhand.lua:1117: in function `ATSWFilterFrame_LoadInvSlots'\nInterface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.8.0 - by Slarti on EU-Blackhand.lua:1112: in function `initFunction'\nInterface\\FrameXML\\UIDropDownMenu.lua:79: in function `UIDropDownMenu_Initialize'\nInterface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.8.0 - by Slarti on EU-Blackhand.lua:1099: in function `ATSWInvSlotDropDown_OnLoad'\n[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
+			["session"] = 1422,
+			["counter"] = 1,
 		}, -- [58]
+		{
+			["message"] = "Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.8.0 - by Slarti on EU-Blackhand.lua:1072: attempt to call global 'TEXT' (a nil value)",
+			["time"] = "2020/07/27 20:36:04",
+			["locals"] = "info = <table> {\n}\n(*temporary) = nil\n(*temporary) = \"All Subclasses\"\n(*temporary) = \"attempt to call global 'TEXT' (a nil value)\"\natsw_currentsubclassfilter = <table> {\n}\n",
+			["stack"] = "Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.8.0 - by Slarti on EU-Blackhand.lua:1072: in function `ATSWFilterFrame_LoadSubClasses'\nInterface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.8.0 - by Slarti on EU-Blackhand.lua:1067: in function `initFunction'\nInterface\\FrameXML\\UIDropDownMenu.lua:79: in function `UIDropDownMenu_Initialize'\nInterface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.8.0 - by Slarti on EU-Blackhand.lua:1054: in function `ATSWSubClassDropDown_OnLoad'\n[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
+			["session"] = 1422,
+			["counter"] = 1,
+		}, -- [59]
+		{
+			["message"] = "Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.8.0 - by Slarti on EU-Blackhand.lua:371: attempt to call global 'IsTradeSkillLinked' (a nil value)",
+			["time"] = "2020/07/27 20:36:26",
+			["locals"] = "self = ATSWFrame {\n 0 = <userdata>\n}\nevent = \"TRADE_SKILL_SHOW\"\nversion = \"1.13.5\"\nbuild = \"35186\"\ndate = \"Jul 14 2020\"\nlocale = \"enUS\"\n(*temporary) = nil\n(*temporary) = \"attempt to call global 'IsTradeSkillLinked' (a nil value)\"\natsw_bankopened = false\natsw_processing = false\natsw_processingtimeout = 0\natsw_retries = 0\natsw_retrydelay = 0\natsw_scans = 0\natsw_updating = false\natsw_incombat = false\n",
+			["stack"] = "Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.8.0 - by Slarti on EU-Blackhand.lua:371: in function `ATSWFrame_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:338: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 1422,
+			["counter"] = 1,
+		}, -- [60]
+		{
+			["message"] = "[string \"ATSWRankFrame:OnLoad\"]:1: attempt to index global 'this' (a nil value)",
+			["time"] = "2020/07/27 20:37:33",
+			["locals"] = "self = ATSWRankFrame {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'this' (a nil value)\"\n",
+			["stack"] = "[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
+			["session"] = 1423,
+			["counter"] = 1,
+		}, -- [61]
+		{
+			["message"] = "[string \"ATSWSkill1:OnLoad\"]:1: attempt to index global 'this' (a nil value)",
+			["time"] = "2020/07/27 20:37:33",
+			["locals"] = "self = ATSWSkill1 {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'this' (a nil value)\"\n",
+			["stack"] = "[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
+			["session"] = 1423,
+			["counter"] = 1,
+		}, -- [62]
+		{
+			["message"] = "[string \"ATSWSkill2:OnLoad\"]:1: attempt to index global 'this' (a nil value)",
+			["time"] = "2020/07/27 20:37:33",
+			["locals"] = "self = ATSWSkill2 {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'this' (a nil value)\"\n",
+			["stack"] = "[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
+			["session"] = 1423,
+			["counter"] = 1,
+		}, -- [63]
+		{
+			["message"] = "[string \"ATSWSkill3:OnLoad\"]:1: attempt to index global 'this' (a nil value)",
+			["time"] = "2020/07/27 20:37:33",
+			["locals"] = "self = ATSWSkill3 {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'this' (a nil value)\"\n",
+			["stack"] = "[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
+			["session"] = 1423,
+			["counter"] = 1,
+		}, -- [64]
+		{
+			["message"] = "[string \"ATSWSkill4:OnLoad\"]:1: attempt to index global 'this' (a nil value)",
+			["time"] = "2020/07/27 20:37:33",
+			["locals"] = "self = ATSWSkill4 {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'this' (a nil value)\"\n",
+			["stack"] = "[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
+			["session"] = 1423,
+			["counter"] = 1,
+		}, -- [65]
+		{
+			["message"] = "[string \"ATSWSkill5:OnLoad\"]:1: attempt to index global 'this' (a nil value)",
+			["time"] = "2020/07/27 20:37:33",
+			["locals"] = "self = ATSWSkill5 {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'this' (a nil value)\"\n",
+			["stack"] = "[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
+			["session"] = 1423,
+			["counter"] = 1,
+		}, -- [66]
+		{
+			["message"] = "[string \"ATSWSkill6:OnLoad\"]:1: attempt to index global 'this' (a nil value)",
+			["time"] = "2020/07/27 20:37:33",
+			["locals"] = "self = ATSWSkill6 {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'this' (a nil value)\"\n",
+			["stack"] = "[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
+			["session"] = 1423,
+			["counter"] = 1,
+		}, -- [67]
+		{
+			["message"] = "[string \"ATSWSkill7:OnLoad\"]:1: attempt to index global 'this' (a nil value)",
+			["time"] = "2020/07/27 20:37:33",
+			["locals"] = "self = ATSWSkill7 {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'this' (a nil value)\"\n",
+			["stack"] = "[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
+			["session"] = 1423,
+			["counter"] = 1,
+		}, -- [68]
+		{
+			["message"] = "[string \"ATSWSkill8:OnLoad\"]:1: attempt to index global 'this' (a nil value)",
+			["time"] = "2020/07/27 20:37:33",
+			["locals"] = "self = ATSWSkill8 {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'this' (a nil value)\"\n",
+			["stack"] = "[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
+			["session"] = 1423,
+			["counter"] = 1,
+		}, -- [69]
+		{
+			["message"] = "[string \"ATSWSkill9:OnLoad\"]:1: attempt to index global 'this' (a nil value)",
+			["time"] = "2020/07/27 20:37:33",
+			["locals"] = "self = ATSWSkill9 {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'this' (a nil value)\"\n",
+			["stack"] = "[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
+			["session"] = 1423,
+			["counter"] = 1,
+		}, -- [70]
+		{
+			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
+			["time"] = "2020/07/27 20:37:46",
+			["session"] = 1423,
+			["counter"] = 4,
+		}, -- [71]
+		{
+			["message"] = "...dOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons-2.1.0.lua:548: attempt to index field '?' (a nil value)",
+			["time"] = "2020/07/27 21:40:22",
+			["locals"] = "srti = <table> {\n defaults = <table> {\n }\n PrintHelp = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:86\n AreModifiersDown = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:508\n Print = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:74\n SetRaidTarget = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:522\n Show = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:427\n UpdateSaved = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:357\n ShowFromBinding = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:412\n frame = SRTIRadialMenu {\n }\n version = \"2.1.0\"\n IsNameplateUnderMouse = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:468\n}\niconStrings = <table> {\n square = 6\n silver = 5\n triangle = 4\n skull = 8\n purple = 3\n remove = 0\n moon = 5\n star = 1\n orange = 2\n red = 7\n clear = 0\n diamond = 3\n blue = 6\n x = 7\n white = 8\n green = 4\n cross = 7\n yellow = 1\n circle = 2\n none = 0\n}\niconNames = <table> {\n 1 = \"remove icon\"\n 2 = \"yellow star\"\n 3 = \"orange circle\"\n 4 = \"purple diamond\"\n 5 = \"green triangle\"\n 6 = \"silver moon\"\n 7 = \"blue square\"\n 8 = \"red cross\"\n 9 = \"white skull\"\n}\nthirdParty = <table> {\n 1 = \"PugLax\"\n}\nclickFrameScripts = <table> {\n}\nclickFrames = <table> {\n 1 = \"WorldFrame\"\n 2 = \"TargetFrame\"\n 3 = \"FocusFrame\"\n 4 = \"Boss1TargetFrame\"\n 5 = \"Boss2TargetFrame\"\n 6 = \"Boss3TargetFrame\"\n 7 = \"Boss4TargetFrame\"\n 8 = \"Boss5TargetFrame\"\n}\nthirdPartyFrameScripts = <table> {\n}\nprint = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:82\nthirdPartyUF = <table> {\n Perl_Config = <table> {\n }\n Stuf = <table> {\n }\n PitBull4 = <table> {\n }\n XPerl = <table> {\n }\n ShadowedUnitFrames = <table> {\n }\n}\norigSetRaidTarget = <function> defined =[C]:-1\n(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = \"WorldFrame\"\n 2 = \"TargetFrame\"\n 3 = \"FocusFrame\"\n 4 = \"Boss1TargetFrame\"\n 5 = \"Boss2TargetFrame\"\n 6 = \"Boss3TargetFrame\"\n 7 = \"Boss4TargetFrame\"\n 8 = \"Boss5TargetFrame\"\n}\n(for control) = 3\n_ = 3\nframeName = \"FocusFrame\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"OnMouseUp\"\n(*temporary) = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:552\n(*temporary) = \"attempt to index field '?' (a nil value)\"\n",
+			["stack"] = "...dOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons-2.1.0.lua:548: in main chunk",
+			["session"] = 1425,
+			["counter"] = 1,
+		}, -- [72]
+		{
+			["message"] = "...dOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons-2.1.0.lua:370: attempt to call field 'Options' (a nil value)",
+			["time"] = "2020/07/27 21:40:22",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"attempt to call field 'Options' (a nil value)\"\nsrti = <table> {\n defaults = <table> {\n }\n PrintHelp = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:86\n AreModifiersDown = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:508\n Print = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:74\n SetRaidTarget = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:522\n Show = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:427\n UpdateSaved = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:357\n ShowFromBinding = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:412\n frame = SRTIRadialMenu {\n }\n version = \"2.1.0\"\n IsNameplateUnderMouse = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:468\n}\n",
+			["stack"] = "...dOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons-2.1.0.lua:370: in function `UpdateSaved'\n...dOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons-2.1.0.lua:386: in function <...dOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:382>",
+			["session"] = 1425,
+			["counter"] = 1,
+		}, -- [73]
+		{
+			["message"] = "(null)",
+			["time"] = "2020/07/24 16:00:06",
+			["session"] = 1425,
+			["counter"] = 15,
+		}, -- [74]
+		{
+			["message"] = "...dOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons-2.1.0.lua:395: attempt to call field 'RegisterExternalUFPrebuilt' (a nil value)",
+			["time"] = "2020/07/27 21:40:30",
+			["locals"] = "self = SRTIRadialMenu {\n origShow = <function> defined =[C]:-1\n Show = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:137\n 0 = <userdata>\n}\nevent = \"PLAYER_LOGIN\"\naddon = nil\n(*temporary) = nil\n(*temporary) = \"attempt to call field 'RegisterExternalUFPrebuilt' (a nil value)\"\nsrti = <table> {\n defaults = <table> {\n }\n PrintHelp = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:86\n AreModifiersDown = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:508\n Print = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:74\n SetRaidTarget = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:522\n Show = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:427\n UpdateSaved = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:357\n ShowFromBinding = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:412\n frame = SRTIRadialMenu {\n }\n version = \"2.1.0\"\n IsNameplateUnderMouse = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:468\n}\nthirdPartyUF = <table> {\n Perl_Config = <table> {\n }\n Stuf = <table> {\n }\n PitBull4 = <table> {\n }\n XPerl = <table> {\n }\n ShadowedUnitFrames = <table> {\n }\n}\n",
+			["stack"] = "...dOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons-2.1.0.lua:395: in function <...dOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:382>",
+			["session"] = 1425,
+			["counter"] = 2,
+		}, -- [75]
+		{
+			["message"] = "...dOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons-2.1.0.lua:552: attempt to call field 'OnMouseUp' (a nil value)",
+			["time"] = "2020/07/27 21:40:37",
+			["locals"] = "self = WorldFrame {\n 0 = <userdata>\n}\narg1 = \"LeftButton\"\n(*temporary) = nil\n(*temporary) = WorldFrame {\n 0 = <userdata>\n}\n(*temporary) = \"LeftButton\"\n(*temporary) = \"attempt to call field 'OnMouseUp' (a nil value)\"\nsrti = <table> {\n defaults = <table> {\n }\n PrintHelp = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:86\n AreModifiersDown = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:508\n Print = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:74\n SetRaidTarget = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:522\n Show = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:427\n UpdateSaved = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:357\n ShowFromBinding = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:412\n frame = SRTIRadialMenu {\n }\n version = \"2.1.0\"\n IsNameplateUnderMouse = <function> defined @Interface\\AddOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:468\n}\n",
+			["stack"] = "...dOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons-2.1.0.lua:552: in function <...dOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:552>",
+			["session"] = 1425,
+			["counter"] = 5,
+		}, -- [76]
 	},
 }

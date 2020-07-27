@@ -15,7 +15,7 @@ Postal3ClassicDB = {
 			["alts"] = {
 				"Mxyzptlk|Golemagg|Horde|6|WARLOCK", -- [1]
 				"Mxyz|Golemagg|Horde|5|PRIEST", -- [2]
-				"Mxzq|Golemagg|Horde|23|HUNTER", -- [3]
+				"Mxzq|Golemagg|Horde|24|HUNTER", -- [3]
 				"Vermin|Golemagg|Horde|24|WARRIOR", -- [4]
 			},
 		},

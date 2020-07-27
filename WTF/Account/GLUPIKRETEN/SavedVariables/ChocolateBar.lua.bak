@@ -64,7 +64,10 @@ ChocolateBarDB = {
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
 			},
-			["moveFrames"] = false,
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+			},
 			["objSettings"] = {
 				["PitBull4"] = {
 					["enabled"] = false,
@@ -284,18 +287,15 @@ ChocolateBarDB = {
 					["customLabel"] = "B",
 				},
 			},
-			["gap"] = 3,
-			["fontName"] = "Friz Quadrata TT",
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
-			},
-			["forceColor"] = false,
 			["desaturated"] = false,
-			["textOffset"] = 2,
-			["height"] = 20,
+			["forceColor"] = false,
 			["fixedStrata"] = true,
 			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["gap"] = 3,
+			["textOffset"] = 2,
+			["height"] = 20,
+			["fontName"] = "Friz Quadrata TT",
+			["moveFrames"] = false,
 			["textColor"] = {
 				["a"] = 1,
 				["b"] = 1,
@@ -331,10 +331,10 @@ CB_PlayedTime = {
 		["total"] = 18945,
 	},
 	["Mxyz-"] = {
-		["total"] = 7698,
+		["total"] = 8245,
 	},
 	["Vermin-"] = {
-		["total"] = 122562,
+		["total"] = 122701,
 	},
 	["Kosturko-"] = {
 		["total"] = 1457,
@@ -349,6 +349,6 @@ CB_PlayedTime = {
 		["total"] = 3924,
 	},
 	["Mxzq-"] = {
-		["total"] = 139688,
+		["total"] = 147534,
 	},
 }

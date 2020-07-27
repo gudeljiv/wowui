@@ -100,16 +100,16 @@ DBM_AllSavedOptions = {
 			1, -- [2]
 			0, -- [3]
 		},
-		["DisableCinematics"] = false,
-		["DontShowPTText"] = false,
 		["SpecialWarningFlashCol5"] = {
 			0.2, -- [1]
 			1, -- [2]
 			1, -- [3]
 		},
+		["DontShowPTText"] = false,
+		["DontShowSpecialWarningText"] = false,
 		["SpecialWarningFlashRepeat1"] = false,
 		["SpecialWarningFontSize2"] = 36,
-		["DontShowSpecialWarningText"] = false,
+		["DisableCinematics"] = false,
 		["AdvancedAutologBosses"] = false,
 		["ShowLHFrame"] = true,
 		["DontShowReminders"] = false,
@@ -222,9 +222,9 @@ DBM_AllSavedOptions = {
 		["UseRetailShamanColor"] = false,
 		["SpecialWarningFlashRepeat4"] = false,
 		["DontShowNameplateIcons"] = false,
-		["DontShowUserTimers"] = false,
 		["CountdownVoice3"] = "Smooth",
 		["SpecialWarningFlashRepeat2"] = false,
+		["DontShowUserTimers"] = false,
 		["SpecialWarningFlashRepeat5"] = true,
 		["AutoRespond"] = true,
 		["HealthFrameGrowUp"] = false,

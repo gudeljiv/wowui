@@ -93,7 +93,7 @@ oUF_Freebgrid_Config: disabled
 Postal: enabled
 RangeDisplay: disabled
 RangeDisplay_Options: enabled
-SimpleRaidTargetIcons: enabled
+SimpleRaidTargetIcons: disabled
 SquidMod: enabled
 Kui_Nameplates_Auras: disabled
 mortSoulReaper: enabled

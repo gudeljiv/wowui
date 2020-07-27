@@ -15,12 +15,12 @@ local function set_mark()
 		faction, _ = UnitFactionGroup("target")
 
 		if faction ~= "Alliance" then
-			-- if (UnitInParty("player") and UnitIsGroupLeader("player")) then
-			-- 	SetRaidTarget("target", type)
-			-- end
-			if (not UnitInParty("player")) then
-				SetRaidTarget("target", type)
-			end
+		-- if (UnitInParty("player") and UnitIsGroupLeader("player")) then
+		-- 	SetRaidTarget("target", type)
+		-- end
+		-- if (not UnitInParty("player")) then
+		-- 	SetRaidTarget("target", type)
+		-- end
 		end
 	end
 end

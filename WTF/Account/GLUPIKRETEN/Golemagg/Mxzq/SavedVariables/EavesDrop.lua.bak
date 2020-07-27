@@ -235,8 +235,8 @@ EavesDropStatsDB = {
 					},
 					["Auto Shot"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/26/20 12:20:16|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-29-3436-00001D5889:Kuz|hKuz|h for |cffffffff39|r |cffffffffPhysical|r.",
-							["amount"] = 39,
+							["time"] = "|cffffffff07/27/20 07:50:21|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-13-3195-00001F045E:Burning Blade Thug|hBurning Blade Thug|h for |cffffffff62|r |cffffffffPhysical|r.",
+							["amount"] = 62,
 						},
 						[2] = {
 							["time"] = "|cffffffff07/26/20 12:32:27|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-29-3458-00001D5989:Razormane Seer|hRazormane Seer|h for |cffffffff75|r |cffffffffPhysical|r.(Critical)",
@@ -281,14 +281,23 @@ EavesDropStatsDB = {
 					},
 					["Mongoose Bite"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/25/20 10:25:59|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMongoose Bite|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-29-3261-00001C46B1:Bristleback Thornweaver|hBristleback Thornweaver|h for |cffffffff18|r |cffffffffPhysical|r.",
-							["amount"] = 18,
+							["time"] = "|cffffffff07/27/20 03:41:31|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMongoose Bite|r|h hits |Hunit:Creature-0-4448-1-29-3458-00009ED80F:Razormane Seer|hRazormane Seer|h for |cffffffff19|r |cffffffffPhysical|r.",
+							["amount"] = 19,
 						},
 						[2] = {
 							["time"] = "|cffffffff07/26/20 12:12:53|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMongoose Bite|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-29-3466-00001D4B7D:Zhevra Courser|hZhevra Courser|h for |cffffffff36|r |cffffffffPhysical|r.(Critical)",
 							["amount"] = 36,
 						},
 						["icon"] = 132215,
+					},
+					["Multi-Shot"] = {
+						[-2] = {
+							["time"] = "|cffffffff07/27/20 07:44:26|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMulti-Shot|r|h hits |Hunit:Creature-0-4448-1-13-3198-00001EF7C9:Burning Blade Apprentice|hBurning Blade Apprentice|h for |cffffffff70|r |cffffffffPhysical|r.",
+							["amount"] = 70,
+						},
+						[2] = {
+						},
+						["icon"] = 132330,
 					},
 					["Wing Clip"] = {
 						[-2] = {
@@ -300,15 +309,6 @@ EavesDropStatsDB = {
 							["amount"] = 8,
 						},
 						["icon"] = 132309,
-					},
-					["Multi-Shot"] = {
-						[-2] = {
-							["time"] = "|cffffffff07/25/20 03:35:20|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMulti-Shot|r|h hits |Hunit:Creature-0-4448-1-29-4196-00001C3515:Silithid Swarm|hSilithid Swarm|h for |cffffffff1|r |cffffffffPhysical|r.(52 Overkill)",
-							["amount"] = 53,
-						},
-						[2] = {
-						},
-						["icon"] = 132330,
 					},
 				},
 			}, -- [1]
@@ -366,6 +366,14 @@ EavesDropStatsDB = {
 					},
 				},
 				["heal"] = {
+					["Lesser Healing Wave"] = {
+						[-2] = {
+						},
+						[2] = {
+							["time"] = "|cffffffff07/27/20 03:45:56|r\n|Hunit:Player-4465-00EB7EF7:Mirakin|hMirakin's|h |Hspell:0:0:SPELL_HEAL|h|cff82f4ffLesser Healing Wave|r|h heals |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h for |cff82f4ff121|r.(155 Overhealed) (Critical)",
+							["amount"] = 276,
+						},
+					},
 					["Rejuvenation"] = {
 						[-2] = {
 							["time"] = "|cffffffff07/23/20 08:36:46|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h gains |cff82f4ff29|r Health from |Hunit:Player-4465-01CC40E5:Santerclaws|hSanterclaws's|h |Hspell:0:0:SPELL_PERIODIC_HEAL|h|cff82f4ffRejuvenation|r|h.",

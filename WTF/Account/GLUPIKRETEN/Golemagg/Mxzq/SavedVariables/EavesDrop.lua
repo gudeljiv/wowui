@@ -208,12 +208,12 @@ EavesDropStatsDB = {
 					},
 					["Auto Shot"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/26/20 12:20:16|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-29-3436-00001D5889:Kuz|hKuz|h for |cffffffff39|r |cffffffffPhysical|r.",
-							["amount"] = 39,
+							["time"] = "|cffffffff07/27/20 10:39:23|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hunit:Creature-0-4448-1-29-3263-00001F23DF:Bristleback Geomancer|hBristleback Geomancer|h for |cffffffff65|r |cffffffffPhysical|r.",
+							["amount"] = 65,
 						},
 						[2] = {
-							["time"] = "|cffffffff07/26/20 12:32:27|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-29-3458-00001D5989:Razormane Seer|hRazormane Seer|h for |cffffffff75|r |cffffffffPhysical|r.(Critical)",
-							["amount"] = 75,
+							["time"] = "|cffffffff07/27/20 10:38:33|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hunit:Creature-0-4448-1-29-3263-00001F249A:Bristleback Geomancer|hBristleback Geomancer|h for |cffffffff122|r |cffffffffPhysical|r.(Critical)",
+							["amount"] = 122,
 						},
 					},
 					["Drain Life"] = {
@@ -241,14 +241,16 @@ EavesDropStatsDB = {
 						[2] = {
 						},
 					},
-					["Multi-Shot"] = {
+					["Wing Clip"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/25/20 03:35:20|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMulti-Shot|r|h hits |Hunit:Creature-0-4448-1-29-4196-00001C3515:Silithid Swarm|hSilithid Swarm|h for |cffffffff1|r |cffffffffPhysical|r.(52 Overkill)",
-							["amount"] = 53,
+							["time"] = "|cffffffff07/16/20 11:51:37|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWing Clip|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-66-3246-00000F738C:Fleeting Plainstrider|hFleeting Plainstrider|h for |cffffffff4|r |cffffffffPhysical|r.",
+							["amount"] = 4,
 						},
 						[2] = {
+							["time"] = "|cffffffff07/22/20 05:37:51|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWing Clip|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-172-3100-0000182F7E:Elder Mottled Boar|hElder Mottled Boar|h for |cffffffff8|r |cffffffffPhysical|r.(Critical)",
+							["amount"] = 8,
 						},
-						["icon"] = 132330,
+						["icon"] = 132309,
 					},
 					["Mongoose Bite"] = {
 						[-2] = {
@@ -261,16 +263,14 @@ EavesDropStatsDB = {
 						},
 						["icon"] = 132215,
 					},
-					["Wing Clip"] = {
+					["Multi-Shot"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/16/20 11:51:37|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWing Clip|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-66-3246-00000F738C:Fleeting Plainstrider|hFleeting Plainstrider|h for |cffffffff4|r |cffffffffPhysical|r.",
-							["amount"] = 4,
+							["time"] = "|cffffffff07/27/20 07:44:26|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMulti-Shot|r|h hits |Hunit:Creature-0-4448-1-13-3198-00001EF7C9:Burning Blade Apprentice|hBurning Blade Apprentice|h for |cffffffff70|r |cffffffffPhysical|r.",
+							["amount"] = 70,
 						},
 						[2] = {
-							["time"] = "|cffffffff07/22/20 05:37:51|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWing Clip|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-172-3100-0000182F7E:Elder Mottled Boar|hElder Mottled Boar|h for |cffffffff8|r |cffffffffPhysical|r.(Critical)",
-							["amount"] = 8,
 						},
-						["icon"] = 132309,
+						["icon"] = 132330,
 					},
 					["Arcane Shot"] = {
 						[-2] = {
