@@ -6,31 +6,10 @@ SkilletDB = {
 		},
 	},
 	["global"] = {
-		["recipeDB"] = {
-			["Smelt Tin"] = "2575 3576 2771:1 Forge",
-			["Smelt Copper"] = "2575 2840 2770:1 Forge",
-			["Smelt Silver"] = "2575 2842 2775:1 Forge",
-			["Smelt Bronze"] = "2575 2841:2 2840:1:3576:1 Forge",
-		},
-		["dataVersion"] = 5,
-		["itemRecipeSource"] = {
-			[2842] = {
-				["Smelt Silver"] = true,
-			},
-			[3576] = {
-				["Smelt Tin"] = true,
-			},
-			[2840] = {
-				["Smelt Copper"] = true,
-			},
-			[2841] = {
-				["Smelt Bronze"] = true,
-			},
-		},
 		["customVersion"] = 1,
 		["MissingVendorItems"] = {
-			[17035] = "Stranglethorn Seed",
 			[17034] = "Maple Seed",
+			[17035] = "Stranglethorn Seed",
 			[52188] = "Jeweler's Setting",
 			[30817] = "Simple Flour",
 			[38682] = "Enchanting Vellum",
@@ -38,19 +17,51 @@ SkilletDB = {
 			[4539] = "Goldenbark Apple",
 			[3857] = "Coal",
 		},
+		["itemRecipeSource"] = {
+			[2840] = {
+				["Smelt Copper"] = true,
+			},
+			[3576] = {
+				["Smelt Tin"] = true,
+			},
+			[2842] = {
+				["Smelt Silver"] = true,
+			},
+			[2841] = {
+				["Smelt Bronze"] = true,
+			},
+			[3575] = {
+				["Smelt Iron"] = true,
+			},
+		},
 		["locale"] = "enUS",
+		["recipeDB"] = {
+			["Smelt Tin"] = "2575 3576 2771:1 Forge",
+			["Smelt Bronze"] = "2575 2841:2 2840:1:3576:1 Forge",
+			["Smelt Iron"] = "2575 3575 2772:1 Forge",
+			["Smelt Silver"] = "2575 2842 2775:1 Forge",
+			["Smelt Copper"] = "2575 2840 2770:1 Forge",
+		},
+		["recipeVersion"] = 3,
+		["dataVersion"] = 5,
+		["wowVersion"] = 11305,
+		["queueVersion"] = 1,
+		["wowBuild"] = "35186",
 		["itemRecipeUsedIn"] = {
 			[2840] = {
 				["Smelt Bronze"] = true,
 			},
-			[2771] = {
-				["Smelt Tin"] = true,
+			[3576] = {
+				["Smelt Bronze"] = true,
+			},
+			[2772] = {
+				["Smelt Iron"] = true,
 			},
 			[2775] = {
 				["Smelt Silver"] = true,
 			},
-			[3576] = {
-				["Smelt Bronze"] = true,
+			[2771] = {
+				["Smelt Tin"] = true,
 			},
 			[2770] = {
 				["Smelt Copper"] = true,
@@ -63,23 +74,24 @@ SkilletDB = {
 				["Mxzq"] = {
 					[2575] = {
 						"header Trade Goods", -- [1]
-						"mSmelt Silver", -- [2]
-						"eSmelt Bronze", -- [3]
+						"tSmelt Iron", -- [2]
+						"tSmelt Bronze", -- [3]
 						"tSmelt Tin", -- [4]
 						"tSmelt Copper", -- [5]
+						"tSmelt Silver", -- [6]
 					},
 				},
 			},
 			["bagData"] = {
 				["Mxzq"] = {
-					[1205] = 28,
+					[1205] = 27,
 					[6948] = 1,
-					[3770] = 20,
+					[3770] = 16,
 					[2901] = 1,
-					[2515] = 1971,
-					[785] = 1,
-					[2447] = 3,
-					[929] = 5,
+					[2515] = 1443,
+					[785] = 3,
+					[20558] = 3,
+					[929] = 4,
 				},
 			},
 			["invSlot"] = {
@@ -88,19 +100,22 @@ SkilletDB = {
 						[2840] = "",
 						[2841] = "",
 						["name"] = {
-							[""] = 4,
+							[""] = 5,
 						},
+						[2842] = "",
 						["selected"] = "None",
 						[3576] = "",
-						[2842] = "",
+						[3575] = "",
 					},
 				},
 			},
 			["auctionData"] = {
 				["Mxzq"] = {
-					[2452] = 3,
-					[3576] = 14,
-					[2841] = 194,
+					[3575] = 162,
+					[2841] = 20,
+					[2842] = 3,
+					[2836] = 52,
+					[3369] = 3,
 				},
 			},
 			["bankData"] = {
@@ -143,14 +158,14 @@ SkilletDB = {
 					[2575] = {
 						["name"] = "Mining",
 						["isCraft"] = false,
-						["maxRank"] = 150,
-						["rank"] = 111,
+						["maxRank"] = 225,
+						["rank"] = 140,
 					},
 					[2656] = {
 						["name"] = "Smelting (Mining)",
 						["isCraft"] = false,
-						["maxRank"] = 150,
-						["rank"] = 111,
+						["maxRank"] = 225,
+						["rank"] = 140,
 					},
 				},
 			},
@@ -158,9 +173,9 @@ SkilletDB = {
 				["Mxzq"] = {
 					{
 						["bag"] = 0,
-						["name"] = "Peacebloom",
+						["name"] = "Mageroyal",
 						["slot"] = 1,
-						["id"] = 2447,
+						["id"] = 785,
 						["count"] = 3,
 					}, -- [1]
 					{
@@ -172,17 +187,17 @@ SkilletDB = {
 					}, -- [2]
 					{
 						["bag"] = 0,
-						["name"] = "Mageroyal",
+						["name"] = "Warsong Gulch Mark of Honor",
 						["slot"] = 3,
-						["id"] = 785,
-						["count"] = 1,
+						["id"] = 20558,
+						["count"] = 3,
 					}, -- [3]
 					{
 						["bag"] = 0,
 						["name"] = "Melon Juice",
 						["slot"] = 4,
 						["id"] = 1205,
-						["count"] = 10,
+						["count"] = 9,
 					}, -- [4]
 					{
 						["bag"] = 0,
@@ -196,14 +211,14 @@ SkilletDB = {
 						["name"] = "Healing Potion",
 						["slot"] = 10,
 						["id"] = 929,
-						["count"] = 5,
+						["count"] = 3,
 					}, -- [6]
 					{
 						["bag"] = 0,
 						["name"] = "Mutton Chop",
 						["slot"] = 12,
 						["id"] = 3770,
-						["count"] = 20,
+						["count"] = 16,
 					}, -- [7]
 					{
 						["bag"] = 0,
@@ -215,73 +230,66 @@ SkilletDB = {
 					{
 						["bag"] = 1,
 						["name"] = "Sharp Arrow",
-						["slot"] = 1,
-						["id"] = 2515,
-						["count"] = 171,
-					}, -- [9]
-					{
-						["bag"] = 1,
-						["name"] = "Sharp Arrow",
-						["slot"] = 2,
-						["id"] = 2515,
-						["count"] = 200,
-					}, -- [10]
-					{
-						["bag"] = 1,
-						["name"] = "Sharp Arrow",
 						["slot"] = 3,
 						["id"] = 2515,
-						["count"] = 200,
-					}, -- [11]
+						["count"] = 43,
+					}, -- [9]
 					{
 						["bag"] = 1,
 						["name"] = "Sharp Arrow",
 						["slot"] = 4,
 						["id"] = 2515,
 						["count"] = 200,
-					}, -- [12]
+					}, -- [10]
 					{
 						["bag"] = 1,
 						["name"] = "Sharp Arrow",
 						["slot"] = 5,
 						["id"] = 2515,
 						["count"] = 200,
-					}, -- [13]
+					}, -- [11]
 					{
 						["bag"] = 1,
 						["name"] = "Sharp Arrow",
 						["slot"] = 6,
 						["id"] = 2515,
 						["count"] = 200,
-					}, -- [14]
+					}, -- [12]
 					{
 						["bag"] = 1,
 						["name"] = "Sharp Arrow",
 						["slot"] = 7,
 						["id"] = 2515,
 						["count"] = 200,
-					}, -- [15]
+					}, -- [13]
 					{
 						["bag"] = 1,
 						["name"] = "Sharp Arrow",
 						["slot"] = 8,
 						["id"] = 2515,
 						["count"] = 200,
-					}, -- [16]
+					}, -- [14]
 					{
 						["bag"] = 1,
 						["name"] = "Sharp Arrow",
 						["slot"] = 9,
 						["id"] = 2515,
 						["count"] = 200,
-					}, -- [17]
+					}, -- [15]
 					{
 						["bag"] = 1,
 						["name"] = "Sharp Arrow",
 						["slot"] = 10,
 						["id"] = 2515,
 						["count"] = 200,
-					}, -- [18]
+					}, -- [16]
+					{
+						["bag"] = 3,
+						["name"] = "Healing Potion",
+						["slot"] = 2,
+						["id"] = 929,
+						["count"] = 1,
+					}, -- [17]
 				},
 			},
 			["queueData"] = {
@@ -294,11 +302,12 @@ SkilletDB = {
 						[2840] = "Trade Goods",
 						[2841] = "Trade Goods",
 						["name"] = {
-							["Trade Goods"] = 4,
+							["Trade Goods"] = 5,
 						},
+						[2842] = "Trade Goods",
 						["selected"] = "None",
 						[3576] = "Trade Goods",
-						[2842] = "Trade Goods",
+						[3575] = "Trade Goods",
 					},
 				},
 			},
@@ -309,7 +318,7 @@ SkilletDB = {
 	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
-			["shoppingListLocation_point"] = "CENTER",
+			["ignoreListLocation_x"] = 136.170593261719,
 			["plugins"] = {
 				["beancounter"] = {
 					["enabled"] = true,
@@ -342,20 +351,24 @@ SkilletDB = {
 					["enabled"] = true,
 				},
 			},
-			["tradeSkillLocation_x"] = 38.3332672119141,
-			["tradeSkillLocation_point"] = "LEFT",
-			["tradeSkillLocation_scale"] = 1,
+			["tradeSkillLocation_x"] = 181.063690185547,
+			["tradeSkillLocation_point"] = "TOP",
 			["WarnLog"] = true,
+			["shoppingListLocation_y"] = 157.881286621094,
+			["tradeSkillLocation_scale"] = 1,
 			["FixBugs"] = true,
 			["standaloneQueueLocation_x"] = -280.833190917969,
-			["tradeSkillLocation_y"] = 138.333679199219,
-			["transparency"] = 0.95,
+			["tradeSkillLocation_y"] = -82.304443359375,
+			["shoppingListLocation_point"] = "CENTER",
+			["ignoreListLocation_scale"] = 1,
+			["ignoreListLocation_y"] = 93.6171569824219,
 			["standaloneQueueLocation_point"] = "BOTTOM",
-			["shoppingListLocation_x"] = -30.4169006347656,
+			["ignoreListLocation_point"] = "CENTER",
+			["shoppingListLocation_x"] = 158.235656738281,
 			["shoppingListLocation_scale"] = 1,
 			["standaloneQueueLocation_y"] = 247.500411987305,
 			["enhanced_recipe_display"] = true,
-			["shoppingListLocation_y"] = -13.7499084472656,
+			["transparency"] = 0.95,
 			["standaloneQueueLocation_scale"] = 1,
 		},
 	},

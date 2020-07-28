@@ -34,12 +34,16 @@ f:RegisterEvent("PLAYER_REGEN_ENABLED")
 f:SetScript(
 	"OnEvent",
 	function(self, event, ...)
-		-- if event == "PLAYER_REGEN_DISABLED" then
-		-- 	cc_combat:SetBackdropColor(color.r, color.g, color.b, 0.8)
-		-- end
-		-- if event == "PLAYER_REGEN_ENABLED" then
-		-- 	cc_combat:SetBackdropColor(0, 0, 0, 0.4)
-		-- end
+		if event == "PLAYER_REGEN_DISABLED" then
+			-- cc_combat:SetBackdropColor(color.r, color.g, color.b, 0.8)
+			cc_combat:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")
+			cc_combat:SetBeautyBorderColor(color.r, color.g, color.b, 1)
+		end
+		if event == "PLAYER_REGEN_ENABLED" then
+			cc_combat:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureNormal")
+			cc_combat:SetBeautyBorderColor(1, 1, 1, 1)
+		-- cc_combat:SetBackdropColor(0, 0, 0, 0.4)
+		end
 	end
 )
 

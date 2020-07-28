@@ -220,25 +220,30 @@ QuestieConfig = {
 			},
 		},
 		["Mxyz - Golemagg"] = {
-			["collapsedZones"] = {
-			},
-			["AutoUntrackedQuests"] = {
-			},
+			["TrackerWidth"] = 0,
 			["migrationVersion"] = 1,
 			["complete"] = {
 				[5441] = true,
-				[364] = true,
+				[804] = true,
 				[4402] = true,
 				[363] = true,
-				[804] = true,
+				[790] = true,
 				[3097] = true,
 				[788] = true,
-				[790] = true,
+				[364] = true,
 			},
 			["TrackerHiddenQuests"] = {
 			},
-			["trackerSetpoint"] = "AUTO",
 			["collapsedQuests"] = {
+			},
+			["TrackedQuests"] = {
+			},
+			["trackerSetpoint"] = "AUTO",
+			["TrackerHiddenObjectives"] = {
+			},
+			["collapsedZones"] = {
+			},
+			["AutoUntrackedQuests"] = {
 			},
 			["journey"] = {
 				{
@@ -415,11 +420,6 @@ QuestieConfig = {
 					["Quest"] = 792,
 					["Level"] = 5,
 				}, -- [26]
-			},
-			["TrackerWidth"] = 0,
-			["TrackerHiddenObjectives"] = {
-			},
-			["TrackedQuests"] = {
 			},
 		},
 		["Vermins - Dreadmist"] = {
@@ -926,7 +926,8 @@ QuestieConfig = {
 			},
 		},
 		["Mxzq - Golemagg"] = {
-			["collapsedZones"] = {
+			["TrackerWidth"] = 0,
+			["AutoUntrackedQuests"] = {
 			},
 			["migrationVersion"] = 1,
 			["complete"] = {
@@ -979,26 +980,26 @@ QuestieConfig = {
 				[882] = true,
 				[890] = true,
 				[906] = true,
-				[6394] = true,
-				[6386] = true,
-				[6385] = true,
+				[913] = true,
+				[1492] = true,
+				[2161] = true,
 				[3911] = true,
 				[835] = true,
-				[843] = true,
+				[6394] = true,
 				[851] = true,
 				[6365] = true,
 				[867] = true,
 				[875] = true,
-				[6062] = true,
+				[3087] = true,
 				[891] = true,
 				[899] = true,
 				[907] = true,
 				[788] = true,
-				[6082] = true,
 				[804] = true,
-				[6081] = true,
+				[6082] = true,
+				[3261] = true,
 				[6083] = true,
-				[5441] = true,
+				[4402] = true,
 				[5052] = true,
 				[844] = true,
 				[852] = true,
@@ -1007,18 +1008,25 @@ QuestieConfig = {
 				[876] = true,
 				[884] = true,
 				[892] = true,
-				[4402] = true,
-				[3261] = true,
+				[5441] = true,
+				[6081] = true,
 				[789] = true,
-				[3087] = true,
+				[6062] = true,
 				[805] = true,
-				[2161] = true,
-				[1492] = true,
-				[913] = true,
+				[843] = true,
+				[6385] = true,
+				[6386] = true,
 			},
 			["TrackerHiddenQuests"] = {
 			},
+			["trackerSetpoint"] = "AUTO",
 			["collapsedQuests"] = {
+			},
+			["TrackedQuests"] = {
+			},
+			["collapsedZones"] = {
+			},
+			["TrackerHiddenObjectives"] = {
 			},
 			["journey"] = {
 				{
@@ -2405,14 +2413,6 @@ QuestieConfig = {
 					["Event"] = "Level",
 					["NewLevel"] = 24,
 				}, -- [204]
-			},
-			["trackerSetpoint"] = "AUTO",
-			["TrackerHiddenObjectives"] = {
-			},
-			["TrackerWidth"] = 0,
-			["AutoUntrackedQuests"] = {
-			},
-			["TrackedQuests"] = {
 			},
 		},
 		["Greenwise - Golemagg"] = {
@@ -10298,12 +10298,12 @@ QuestieConfig = {
 				[1096] = true,
 				[6283] = true,
 				[1068] = true,
-				[549] = true,
+				[1094] = true,
 				[827] = true,
 				[868] = true,
 				[891] = true,
 				[5041] = true,
-				[6384] = true,
+				[804] = true,
 				[6386] = true,
 				[6385] = true,
 				[541] = true,
@@ -10311,7 +10311,7 @@ QuestieConfig = {
 				[216] = true,
 				[892] = true,
 				[924] = true,
-				[804] = true,
+				[6384] = true,
 				[5730] = true,
 				[4542] = true,
 				[5726] = true,
@@ -10370,7 +10370,7 @@ QuestieConfig = {
 				[6381] = true,
 				[6382] = true,
 				[1060] = true,
-				[1094] = true,
+				[549] = true,
 				[581] = true,
 				[6641] = true,
 				[900] = true,

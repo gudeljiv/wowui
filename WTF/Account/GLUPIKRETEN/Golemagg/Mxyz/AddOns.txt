@@ -290,3 +290,4 @@ kRestack: disabled
 Talented: disabled
 Talented_Data: disabled
 Talented_Data_Export: disabled
+PerfectRaid: disabled

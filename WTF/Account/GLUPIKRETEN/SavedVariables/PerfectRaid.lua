@@ -1,65 +1,71 @@
 
 PerfectRaidDB = {
-	["global"] = {
-		["sv_version"] = 1,
-	},
 	["profileKeys"] = {
 		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 	},
+	["global"] = {
+		["sv_version"] = 1,
+	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
+			["locked"] = true,
+			["showincomingheals"] = false,
 			["positions"] = {
 				["PRHeader1"] = {
+					["PosY"] = 645.921118375038,
+					["PosX"] = 0,
 				},
 			},
+			["showrolehealer"] = false,
+			["showroledamager"] = false,
 			["buffs"] = {
 				{
 					["buffname"] = "Power Infusion",
-					["color"] = "00FF33",
-					["conds"] = "All",
 					["disptext"] = "PwI",
+					["conds"] = "All",
+					["color"] = "00FF33",
 				}, -- [1]
 				{
 					["buffname"] = "Fear Ward",
-					["color"] = "9900FF",
-					["conds"] = "All",
 					["disptext"] = "FW",
+					["conds"] = "All",
+					["color"] = "9900FF",
 				}, -- [2]
 				{
 					["buffname"] = "Innervate",
-					["color"] = "00FF33",
-					["conds"] = "Mana",
 					["disptext"] = "Inn",
+					["conds"] = "Mana",
+					["color"] = "00FF33",
 				}, -- [3]
 				{
 					["buffname"] = "Wild Growth",
-					["color"] = "01796F",
-					["conds"] = "All",
 					["disptext"] = "Wg",
+					["conds"] = "All",
+					["color"] = "01796F",
 				}, -- [4]
 				{
 					["buffname"] = "Soulstone Resurrection",
-					["color"] = "CA21FF",
-					["conds"] = "All",
 					["disptext"] = "Ss",
+					["conds"] = "All",
+					["color"] = "CA21FF",
 				}, -- [5]
 				{
 					["buffname"] = "Mortal Strike",
-					["color"] = "FF1111",
-					["conds"] = "All",
 					["disptext"] = "Ms",
+					["conds"] = "All",
+					["color"] = "FF1111",
 				}, -- [6]
 				{
 					["buffname"] = "Food",
-					["color"] = "d79a6d",
-					["conds"] = "All",
 					["disptext"] = "Foo",
+					["conds"] = "All",
+					["color"] = "d79a6d",
 				}, -- [7]
 				{
 					["buffname"] = "Drink",
-					["color"] = "00a1de",
-					["conds"] = "All",
 					["disptext"] = "Dr",
+					["conds"] = "All",
+					["color"] = "00a1de",
 				}, -- [8]
 			},
 			["headers"] = {

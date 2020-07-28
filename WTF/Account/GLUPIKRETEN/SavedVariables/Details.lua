@@ -23,52 +23,52 @@ _detalhes_global = {
 		[4077] = "Gaxim Rustfizzle",
 		[2540] = "Dalaran Serpent",
 		[1537] = "Scarlet Zealot",
-		[2562] = "Boulderfist Ogre",
+		[2563] = "Plains Creeper",
 		[2553] = "Witherbark Shadowcaster",
 		[2560] = "Highland Thrasher",
 		[1535] = "Scarlet Warrior",
-		[2563] = "Plains Creeper",
+		[694] = "Bloodscalp Axe Thrower",
 		[1536] = "Scarlet Missionary",
 		[5847] = "Heggin Stonewhisker",
 		[2559] = "Cringo",
 		[4093] = "Galak Wrangler",
 		[4094] = "Galak Scout",
-		[4095] = "Galak Mauler",
+		[2562] = "Boulderfist Ogre",
 		[4096] = "Galak Windchaser",
 		[2564] = "Boulderfist Enforcer",
 		[2565] = "Giant Plains Creeper",
-		[671] = "Bloodscalp Headhunter",
+		[4316] = "Kolkar Packhound",
 		[2673] = "Target Dummy <Grimort>",
-		[4036] = "Rogue Flame Spirit",
-		[3638] = "Devouring Ectoplasm",
+		[6020] = "Slimeshell Makrura",
+		[4308] = "Unfettered Spirit",
 		[4110] = "Unknown",
 		[1543] = "Vile Fin Puddlejumper",
 		[4114] = "Gravelsnout Forager",
 		[1544] = "Vile Fin Minor Oracle",
-		[4294] = "Scarlet Sorcerer",
-		[5763] = "Nightmare Ectoplasm",
+		[4304] = "Scarlet Tracking Hound",
+		[3119] = "Kolkar Drudge",
 		[4032] = "Young Chimaera",
 		[4124] = "Needles Cougar",
 		[2578] = "Young Mesa Buzzard",
 		[4128] = "Hecklefang Stalker",
-		[3670] = "Lord Pythas",
+		[6240] = "Affray Challenger",
 		[1548] = "Cursed Darkhound",
 		[2582] = "Dabyrie Laborer",
 		[1549] = "Ravenous Darkhound",
-		[3669] = "Lord Cobrahn",
-		[4248] = "Pesterhide Hyena",
+		[2274] = "Enraged Stanley",
+		[3670] = "Lord Pythas",
 		[4028] = "Charred Ancient",
 		[521] = "Cronos",
-		[2249] = "Ferocious Yeti",
+		[4248] = "Pesterhide Hyena",
 		[5681] = "Female Human Captive",
 		[3101] = "Vile Familiar",
 		[5685] = "Captive Ghoul",
 		[5687] = "Unknown",
 		[3104] = "Makrura Shellhide",
-		[2503] = "Hillsbrad Foreman",
-		[2630] = "Earthbind Totem <Elder Mystic Razorsnout>",
-		[2244] = "Syndicate Shadow Mage",
-		[1889] = "Dalaran Wizard",
+		[3243] = "Savannah Highmane",
+		[3654] = "Mutanus the Devourer",
+		[4036] = "Rogue Flame Spirit",
+		[2249] = "Ferocious Yeti",
 		[1502] = "Wretched Zombie",
 		[3110] = "Dreadmaw Crocolisk",
 		[3111] = "Razormane Quilboar",
@@ -86,37 +86,37 @@ _detalhes_global = {
 		[3634] = "Deviate Stalker",
 		[4196] = "Silithid Swarm",
 		[3636] = "Deviate Ravager",
-		[3126] = "Armored Scorpid",
-		[3127] = "Venomtail Scorpid",
+		[3637] = "Deviate Guardian",
+		[3638] = "Devouring Ectoplasm",
 		[3128] = "Kul Tiras Sailor",
 		[3640] = "Evolving Ectoplasm",
 		[3641] = "Deviate Lurker",
 		[3131] = "Lightning Hide",
-		[5837] = "Stonearm",
-		[1061] = "Gan'zulah",
-		[3260] = "Bristleback Water Seeker",
-		[1888] = "Dalaran Watcher",
+		[3141] = "Makrura Elder",
+		[2630] = "Earthbind Totem <Elder Mystic Razorsnout>",
+		[3267] = "Razormane Water Seeker",
+		[689] = "Crystal Spine Basilisk",
 		[6493] = "Illusionary Phantasm <Haunting Phantasm>",
 		[5755] = "Deviate Viper",
-		[3267] = "Razormane Water Seeker",
-		[3129] = "Kul Tiras Marine",
+		[1888] = "Dalaran Watcher",
 		[5761] = "Deviate Shambler",
-		[3141] = "Makrura Elder",
+		[1061] = "Gan'zulah",
+		[5763] = "Nightmare Ectoplasm",
 		[1062] = "Nezzliok the Dire",
-		[3654] = "Mutanus the Devourer",
+		[660] = "Bloodscalp Witch Doctor",
 		[3655] = "Mad Magglish",
 		[3503] = "Silithid Protector <Mxzq>",
 		[2635] = "Elder Saltwater Crocolisk",
 		[5775] = "Verdan the Everliving",
 		[4013] = "Pridewing Skyhunter",
-		[3125] = "Clattering Scorpid",
+		[3669] = "Lord Cobrahn",
 		[5781] = "Silithid Creeper Egg <Silithid Creeper>",
 		[3103] = "Makrura Clacker",
-		[3269] = "Razormane Geomancer",
-		[3251] = "Silithid Grub <Silithid Creeper>",
-		[3123] = "Bloodtalon Scythemaw",
-		[3121] = "Durotar Tiger",
-		[2449] = "Citizen Wilkes",
+		[3254] = "Sunscale Lashtail",
+		[3126] = "Armored Scorpid",
+		[3125] = "Clattering Scorpid",
+		[2244] = "Syndicate Shadow Mage",
+		[3746] = "Foulweald Den Watcher",
 		[4005] = "Deepmoss Creeper",
 		[5797] = "Aean Swiftriver",
 		[5799] = "Hannah Bladeleaf",
@@ -125,7 +125,7 @@ _detalhes_global = {
 		[3673] = "Lord Serpentis",
 		[4003] = "Windshear Geomancer",
 		[5809] = "Watch Commander Zalaphil",
-		[682] = "Stranglethorn Tiger",
+		[681] = "Unknown",
 		[4280] = "Scarlet Preserver",
 		[4282] = "Scarlet Magician",
 		[4284] = "Scarlet Augur",
@@ -138,23 +138,23 @@ _detalhes_global = {
 		[4298] = "Scarlet Defender",
 		[4300] = "Scarlet Wizard",
 		[4302] = "Scarlet Champion",
-		[4304] = "Scarlet Tracking Hound",
+		[5837] = "Stonearm",
 		[4306] = "Scarlet Torturer",
 		[5841] = "Rocklance",
-		[2250] = "Mountain Yeti",
-		[8996] = "Voidwalker Minion",
+		[3251] = "Silithid Grub <Silithid Creeper>",
+		[11918] = "Gogger Stonepounder",
 		[3183] = "Yarrog Baneshadow",
-		[4316] = "Kolkar Packhound",
+		[5849] = "Digger Flameforge",
 		[232] = "Farmer Ray",
 		[2675] = "Explosive Sheep <Engineer Whirleygig>",
-		[2676] = "Unknown <Engineer Whirleygig>",
-		[3115] = "Dustwind Harpy",
+		[671] = "Bloodscalp Headhunter",
+		[3271] = "Razormane Mystic",
 		[5859] = "Hagg Taurenbane",
-		[3273] = "Kolkar Stormer",
-		[1547] = "Decrepit Darkhound",
+		[1889] = "Dalaran Wizard",
+		[3247] = "Thunderhawk Hatchling",
 		[3192] = "Lieutenant Benedict",
 		[10696] = "Refuge Pointe Defender",
-		[3254] = "Sunscale Lashtail",
+		[1547] = "Decrepit Darkhound",
 		[3195] = "Burning Blade Thug",
 		[3196] = "Burning Blade Neophyte",
 		[3197] = "Burning Blade Fanatic",
@@ -169,12 +169,12 @@ _detalhes_global = {
 		[3717] = "Wrathtail Sorceress",
 		[3207] = "Hexed Troll",
 		[10756] = "Scalding Elemental",
-		[686] = "Lashtail Raptor",
-		[689] = "Crystal Spine Basilisk",
-		[11918] = "Gogger Stonepounder",
-		[2241] = "Syndicate Thief",
+		[2762] = "Thundering Exile",
+		[3767] = "Bleakheart Trickster",
+		[3279] = "Witchwing Ambusher",
+		[3771] = "Bleakheart Hellcaller",
 		[3102] = "Felstalker",
-		[3119] = "Kolkar Drudge",
+		[3123] = "Bloodtalon Scythemaw",
 		[1554] = "Vampiric Duskbat",
 		[9523] = "Kolkar Stormseer",
 		[6426] = "Anguished Dead",
@@ -183,32 +183,32 @@ _detalhes_global = {
 		[5921] = "Strength of Earth Totem II <Foulweald Shaman>",
 		[2261] = "Syndicate Watchman",
 		[12856] = "Ashenvale Outrunner",
-		[3272] = "Kolkar Wrangler",
+		[3269] = "Razormane Geomancer",
 		[6427] = "Haunting Phantasm",
 		[3225] = "Corrupted Mottled Boar",
 		[3226] = "Corrupted Scorpid",
 		[3227] = "Corrupted Bloodtalon Scythemaw",
 		[3228] = "Corrupted Surf Crawler",
-		[2450] = "Miner Hackett",
-		[2960] = "Prairie Wolf Alpha",
+		[3472] = "Washte Pawne",
+		[2449] = "Citizen Wilkes",
 		[3231] = "Corrupted Dreadmaw Crocolisk",
-		[3743] = "Foulweald Warrior",
+		[3232] = "Bristleback Interloper",
 		[2959] = "Prairie Stalker",
 		[3745] = "Foulweald Pathfinder",
 		[683] = "Young Panther",
-		[3472] = "Washte Pawne",
-		[3748] = "Foulweald Shaman",
-		[3238] = "Stormhide",
 		[3239] = "Thunderhead",
+		[3748] = "Foulweald Shaman",
+		[3749] = "Foulweald Ursa",
+		[3750] = "Foulweald Totemic",
 		[3240] = "Stormsnout",
 		[3241] = "Savannah Patriarch",
-		[3279] = "Witchwing Ambusher",
+		[3272] = "Kolkar Wrangler",
 		[685] = "Stranglethorn Raptor",
-		[2269] = "Hillsbrad Miner",
+		[2450] = "Miner Hackett",
 		[3245] = "Ornery Plainstrider",
-		[660] = "Bloodscalp Witch Doctor",
-		[3247] = "Thunderhawk Hatchling",
-		[3282] = "Venture Co. Mercenary",
+		[697] = "Bloodscalp Shaman",
+		[686] = "Lashtail Raptor",
+		[2260] = "Syndicate Rogue",
 		[3249] = "Greater Thunderhawk",
 		[3250] = "Silithid Creeper",
 		[6494] = "Tazan",
@@ -220,11 +220,11 @@ _detalhes_global = {
 		[3257] = "Ishamuhale",
 		[3258] = "Bristleback Hunter",
 		[3770] = "Bleakheart Shadowstalker",
-		[3771] = "Bleakheart Hellcaller",
+		[3260] = "Bristleback Water Seeker",
 		[3261] = "Bristleback Thornweaver",
 		[2240] = "Syndicate Footpad",
 		[3263] = "Bristleback Geomancer",
-		[6240] = "Affray Challenger",
+		[3127] = "Venomtail Scorpid",
 		[3265] = "Razormane Hunter",
 		[3266] = "Razormane Defender",
 		[10992] = "Enraged Panther",
@@ -232,17 +232,17 @@ _detalhes_global = {
 		[2247] = "Syndicate Enforcer",
 		[2248] = "Cave Yeti",
 		[2760] = "Burning Exile",
-		[2761] = "Cresting Exile",
-		[2762] = "Thundering Exile",
+		[2250] = "Mountain Yeti",
+		[3273] = "Kolkar Stormer",
 		[3274] = "Kolkar Pack Runner",
 		[3275] = "Kolkar Marauder",
 		[3276] = "Witchwing Harpy",
 		[3277] = "Witchwing Roguefeather",
 		[3278] = "Witchwing Slayer",
-		[694] = "Bloodscalp Axe Thrower",
+		[8996] = "Voidwalker Minion",
 		[3280] = "Witchwing Windcaller",
 		[3281] = "Sarkoth",
-		[2260] = "Syndicate Rogue",
+		[3282] = "Venture Co. Mercenary",
 		[3283] = "Venture Co. Enforcer",
 		[3284] = "Venture Co. Drudger",
 		[3285] = "Venture Co. Peon",
@@ -251,7 +251,7 @@ _detalhes_global = {
 		[2266] = "Hillsbrad Farmer",
 		[2267] = "Hillsbrad Peasant",
 		[2268] = "Hillsbrad Footman",
-		[697] = "Bloodscalp Shaman",
+		[2269] = "Hillsbrad Miner",
 		[2270] = "Hillsbrad Sentry",
 		[2271] = "Dalaran Shield Guard",
 		[3809] = "Impi",
@@ -428,43 +428,43 @@ _detalhes_global = {
 		[3976] = "Scarlet Commander Mograine",
 		[3977] = "High Inquisitor Whitemane",
 		[3467] = "Baron Longshore",
-		[681] = "Unknown",
+		[3471] = "Tinkerer Sniggles",
 		[2958] = "Prairie Wolf",
 		[2448] = "Clerk Horrace Whitesteed",
-		[3471] = "Tinkerer Sniggles",
+		[2960] = "Prairie Wolf Alpha",
 		[3983] = "Interrogator Vishas",
 		[2451] = "Farmer Kalaba",
-		[3767] = "Bleakheart Trickster",
+		[682] = "Stranglethorn Tiger",
 		[3475] = "Echeyakee",
 		[871] = "Saltscale Warrior",
 		[3988] = "Venture Co. Operator",
 		[3989] = "Venture Co. Logger",
 		[1997] = "Pink",
 		[3991] = "Venture Co. Deforester",
-		[3232] = "Bristleback Interloper",
+		[3743] = "Foulweald Warrior",
 		[2971] = "Taloned Swoop",
-		[3746] = "Foulweald Den Watcher",
+		[3238] = "Stormhide",
 		[873] = "Saltscale Oracle",
-		[3749] = "Foulweald Ursa",
-		[3750] = "Foulweald Totemic",
+		[2761] = "Cresting Exile",
+		[3115] = "Dustwind Harpy",
 		[3998] = "Windshear Vermin",
 		[3999] = "Windshear Digger",
-		[3243] = "Savannah Highmane",
+		[3270] = "Elder Mystic Razorsnout",
 		[4001] = "Windshear Tunnel Rat",
-		[3271] = "Razormane Mystic",
+		[3121] = "Durotar Tiger",
 		[875] = "Saltscale Tide Lord",
 		[12918] = "Chief Murgut",
 		[12922] = "Imp Minion",
-		[3270] = "Elder Mystic Razorsnout",
+		[2241] = "Syndicate Thief",
 		[4007] = "Deepmoss Venomspitter",
 		[11912] = "Grimtotem Brute",
 		[4009] = "Raging Cliff Stormer",
 		[11920] = "Goggeroc",
-		[4308] = "Unfettered Spirit",
+		[3129] = "Kul Tiras Marine",
 		[4012] = "Pridewing Wyvern",
 		[1753] = "Maggot Eye",
 		[6487] = "Arcanist Doan",
-		[3637] = "Deviate Guardian",
+		[4294] = "Scarlet Sorcerer",
 		[4016] = "Fey Dragon",
 		[4017] = "Wily Fey Dragon",
 		[8886] = "Deviate Python",
@@ -482,14 +482,14 @@ _detalhes_global = {
 		[1506] = "Scarlet Convert",
 		[4031] = "Fledgling Chimaera",
 		[1507] = "Scarlet Initiate",
-		[2274] = "Enraged Stanley",
+		[4095] = "Galak Mauler",
 		[4034] = "Enraged Stone Spirit",
 		[4035] = "Furious Stone Spirit",
-		[6020] = "Slimeshell Makrura",
+		[2503] = "Hillsbrad Foreman",
 		[4037] = "Burning Ravager",
 		[4038] = "Burning Destroyer",
 		[1766] = "Mottled Worg",
-		[5849] = "Digger Flameforge",
+		[2676] = "Unknown <Engineer Whirleygig>",
 		[4041] = "Scorched Basilisk",
 		[4042] = "Singed Basilisk",
 		[3204] = "Gazz'uz",
@@ -539,6 +539,7 @@ _detalhes_global = {
 		["Crusader Strike"] = "Scarlet Commander Mograine",
 		["Wing Clip"] = 3,
 		[17941] = 9,
+		["Detect Lesser Invisibility"] = 9,
 		["Summon Imp"] = 9,
 		["Deep Sleep"] = "High Inquisitor Whitemane",
 		[324] = 7,
@@ -563,10 +564,11 @@ _detalhes_global = {
 		["Shadowguard"] = 5,
 		[5232] = 11,
 		["Detonation"] = "Arcanist Doan",
-		["Improved Concussive Shot"] = 3,
+		["Recklessness"] = 1,
 		["Hamstring"] = 1,
 		["Lesser Heal"] = 5,
 		["Deep Wound"] = 1,
+		["Distract"] = 4,
 		["Night Dragon's Breath"] = 5,
 		[7300] = 8,
 		["Berserking"] = 3,
@@ -583,13 +585,13 @@ _detalhes_global = {
 		[17] = 5,
 		["Mind Flay"] = 5,
 		["Fire Nova Totem"] = 7,
-		["Conjure Food"] = 8,
+		["Drain Mana"] = 9,
 		["Blink"] = 8,
 		["Revenge"] = 1,
 		["Power Word: Fortitude"] = 5,
 		["Concussive Shot"] = 3,
 		["Disarm"] = "Scarlet Guardsman",
-		[15271] = 5,
+		["Rockbiter Weapon"] = 7,
 		["Flame Spike"] = "Bloodmage Thalnos",
 		["Argent Dawn Commission"] = 5,
 		["Thunder Clap"] = 1,
@@ -672,23 +674,24 @@ _detalhes_global = {
 		["Attack"] = 1,
 		["Magic Absorption"] = 8,
 		["Flamestrike"] = 8,
-		["Prayer of Spirit"] = 5,
 		["Bear Form"] = 11,
-		["Ice Barrier"] = 8,
+		["Prayer of Spirit"] = 5,
 		["Skinning"] = 3,
+		["Ice Barrier"] = 8,
+		["!Melee"] = 9,
 		["Chest Pains"] = 1,
 		["Clearcasting"] = 8,
 		["Demoralizing Shout"] = 1,
-		["!Melee"] = 9,
 		["Aspect of the Hawk"] = 3,
 		["Flip Out"] = 5,
-		[588] = 5,
 		["Intellect"] = 3,
+		[588] = 5,
 		["Charge"] = 1,
+		[6673] = 1,
 		["Aspect of the Monkey"] = 3,
 		["Terrify"] = "Deviate Dreadfang",
-		[6673] = 1,
 		["Mend Pet"] = 3,
+		["Thunderclap"] = "Lord Pythas",
 		["Grounding Totem"] = 7,
 		["Fire Nova"] = "Bloodmage Thalnos",
 		["Intimidating Shout"] = 1,
@@ -696,89 +699,89 @@ _detalhes_global = {
 		["Cleave"] = 1,
 		["Auto Shot"] = 3,
 		["Frostbolt"] = 8,
-		["Thunderclap"] = "Lord Pythas",
 		["Thundercrack"] = "Mutanus the Devourer",
-		["Eviscerate"] = 4,
 		["Weakened Soul"] = 5,
+		["Eviscerate"] = 4,
+		[5242] = 1,
 		[10957] = 5,
 		[976] = 5,
 		["Maul"] = 11,
-		[5242] = 1,
+		["Lesser Agility"] = 3,
 		["!Autoshot"] = 1,
 		[2367] = 7,
-		["Lesser Agility"] = 3,
 		["Summon Fire Elemental"] = "Scarlet Conjuror",
-		["Divine Spirit"] = 5,
+		[15271] = 5,
+		["Blood Fury"] = 1,
 		["Conjure Mana Agate"] = 8,
-		["Gouge"] = 4,
+		["Divine Spirit"] = 5,
 		[2374] = 1,
 		["Moonfire"] = 11,
 		["Shadow Bolt"] = 9,
 		["Power Word: Shield"] = 5,
 		[7301] = 8,
 		["Remove Lesser Curse"] = 8,
-		["Blood Fury"] = 1,
 		["Spirit"] = 9,
+		["Corruption"] = 9,
 		["Strength of Earth Totem"] = 7,
 		[12051] = 8,
-		["Wide Slash"] = "Deviate Lasher",
-		["Corruption"] = 9,
+		["Arcane Explosion"] = 8,
+		["Renew"] = 5,
 		["Evasion"] = 4,
 		[1706] = 5,
 		["Veil of Shadow"] = "Anguished Dead",
-		["Arcane Explosion"] = 8,
-		["Blood Pact"] = 9,
+		["Searing Pain"] = 9,
 		["Execute"] = 1,
 		[1006] = 5,
+		["Flame Shock"] = 7,
 		["Polymorph"] = 8,
-		["Lightning Bolt"] = 7,
 		["Lay on Hands"] = "Scarlet Commander Mograine",
 		["Fire Shield III"] = "Scarlet Wizard",
+		["Holy Smite"] = "High Inquisitor Whitemane",
 		["Flurry"] = 7,
 		["Strength"] = 1,
 		["Multi-Shot"] = 3,
 		["Venom Shot"] = 3,
 		[602] = 5,
 		["Focused Casting"] = 5,
-		["Frost Ward"] = 8,
 		[10898] = 5,
+		["Frost Ward"] = 8,
 		["Immolation Trap"] = 3,
 		[1460] = 8,
 		["Strength of Earth"] = 7,
 		["Shield Specialization"] = 1,
 		["Curse of Blood"] = "High Inquisitor Fairbanks",
-		["Holy Smite"] = "High Inquisitor Whitemane",
-		[13163] = 3,
+		["Psychic Scream"] = 5,
+		["Scorch"] = 8,
 		["Pummel"] = 1,
 		["Claw"] = 11,
 		[20230] = 1,
 		[431] = 7,
-		["Scorch"] = 8,
 		["Thorns Aura"] = "Lady Anacondra",
+		["Chilled"] = 8,
 		["Will of the Forsaken"] = 5,
 		["Backstab"] = 4,
 		["Regrowth"] = 11,
 		[19264] = 5,
-		["Chilled"] = 8,
-		[432] = 8,
 		["Earth Shock"] = 7,
+		[432] = 8,
 		["Demon Skin"] = 9,
 		["Growl"] = "Wolf <Snakehunt>",
 		[430] = 5,
-		["Holy Strike"] = "Scarlet Champion",
+		["Ambush"] = "Helgê-Shazzrah",
 		["Spirit Tap"] = 5,
+		["Holy Strike"] = "Scarlet Champion",
 		["Shoot"] = 5,
 		["Flametongue Attack"] = 7,
 		["Revive Pet"] = 3,
 		["Grounding Totem Effect"] = 7,
-		["Shield Block"] = 1,
 		["Death Wish"] = 1,
+		["Shield Block"] = 1,
 		[6192] = 1,
 		["Cat Form"] = 11,
 		["Serpent Form"] = "Druid of the Fang",
 		[434] = 7,
-		["Serpentine Cleansing"] = "Disciple of Naralex",
 		["Intercept Stun"] = 1,
+		["Serpentine Cleansing"] = "Disciple of Naralex",
 		["Dismiss Pet"] = 3,
 		["Wrath"] = 11,
 		["Thrash"] = "Deviate Ravager",
@@ -812,30 +815,30 @@ _detalhes_global = {
 		["Devouring Plague"] = 5,
 		[905] = 7,
 		["Sinister Strike"] = 4,
-		["Searing Pain"] = 9,
+		["Lightning Bolt"] = 7,
 		["Smite"] = 5,
-		["Defensive Stance"] = 1,
-		["Fire"] = "Environment (Fire)",
 		["Mana Shield"] = 8,
-		["Psychic Scream"] = 5,
-		["Healing Touch"] = "Druid of the Fang",
+		["Fire"] = "Environment (Fire)",
+		["Gouge"] = 4,
 		["Slow"] = "Scarlet Sorcerer",
+		["Healing Touch"] = "Druid of the Fang",
+		["Blood Pact"] = 9,
 		[1243] = 5,
 		["Mana Burn"] = 5,
 		[1244] = 5,
 		["Rend"] = 1,
 		["Localized Toxin"] = "Deviate Viper",
-		["Flame Shock"] = 7,
+		[13163] = 3,
 		["Mind Blast"] = 5,
-		["Renew"] = 5,
+		["Healing Stream"] = 7,
 		["Shoot Gun"] = 1,
-		["Recklessness"] = 1,
+		["Improved Concussive Shot"] = 3,
 		["Hunter's Mark"] = 3,
 		["Heal"] = 5,
-		["Healing Stream"] = 7,
+		["Wide Slash"] = "Deviate Lasher",
 		[696] = 9,
-		["Drain Mana"] = 9,
-		["Rockbiter Weapon"] = 7,
+		["Conjure Food"] = 8,
+		["Defensive Stance"] = 1,
 		["Frostbrand Attack"] = 7,
 		["Ice Armor"] = 8,
 		[14318] = 3,
@@ -3227,14 +3230,7 @@ _detalhes_global = {
 					32, -- [1]
 					2, -- [2]
 				},
-				["statusbar_info"] = {
-					["alpha"] = 1,
-					["overlay"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-					},
-				},
+				["show_sidebars"] = false,
 				["strata"] = "LOW",
 				["window_scale"] = 1,
 				["resetbutton_config"] = {
@@ -3283,7 +3279,10 @@ _detalhes_global = {
 					true, -- [4]
 				},
 				["switch_damager"] = false,
-				["micro_displays_side"] = 2,
+				["auto_hide_menu"] = {
+					["left"] = false,
+					["right"] = false,
+				},
 				["bars_grow_direction"] = 1,
 				["menu_anchor_down"] = {
 					-55, -- [1]
@@ -3326,12 +3325,16 @@ _detalhes_global = {
 					},
 				},
 				["hide_in_combat"] = false,
-				["auto_hide_menu"] = {
-					["left"] = false,
-					["right"] = false,
-				},
+				["micro_displays_side"] = 2,
 				["desaturated_menu"] = false,
-				["show_sidebars"] = false,
+				["statusbar_info"] = {
+					["alpha"] = 1,
+					["overlay"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+					},
+				},
 				["wallpaper"] = {
 					["overlay"] = {
 						1, -- [1]
@@ -3767,7 +3770,7 @@ _detalhes_global = {
 			["animation_speed"] = 33,
 			["standard_skin"] = {
 				["hide_in_combat_type"] = 1,
-				["backdrop_texture"] = "Details Ground",
+				["desaturated_menu2"] = false,
 				["color"] = {
 					0.3, -- [1]
 					0.3, -- [2]
@@ -3826,7 +3829,7 @@ _detalhes_global = {
 						1, -- [3]
 					},
 				},
-				["switch_healer_in_combat"] = false,
+				["backdrop_texture"] = "Details Ground",
 				["switch_all_roles_in_combat"] = false,
 				["instance_button_anchor"] = {
 					-27, -- [1]
@@ -4045,7 +4048,7 @@ _detalhes_global = {
 				},
 				["stretch_button_side"] = 1,
 				["skin"] = "Minimalistic",
-				["desaturated_menu2"] = false,
+				["switch_healer_in_combat"] = false,
 				["attribute_text"] = {
 					["enabled"] = true,
 					["shadow"] = false,
@@ -4098,7 +4101,7 @@ _detalhes_global = {
 							["h"] = 200,
 						},
 					},
-					["hide_in_combat_type"] = 1,
+					["show_statusbar"] = false,
 					["clickthrough_window"] = true,
 					["menu_anchor"] = {
 						16, -- [1]
@@ -4114,7 +4117,7 @@ _detalhes_global = {
 						1, -- [4]
 					},
 					["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-					["skin_custom"] = "",
+					["bars_sort_direction"] = 1,
 					["tooltip"] = {
 						["n_abilities"] = 3,
 						["n_enemies"] = 3,
@@ -4125,36 +4128,9 @@ _detalhes_global = {
 						1, -- [3]
 					},
 					["clickthrough_toolbaricons"] = false,
-					["attribute_text"] = {
-						["show_timer"] = {
-							true, -- [1]
-							true, -- [2]
-							true, -- [3]
-						},
-						["shadow"] = false,
-						["side"] = 1,
-						["text_color"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["custom_text"] = "{name}",
-						["text_face"] = "Arial Narrow",
-						["anchor"] = {
-							-18, -- [1]
-							3, -- [2]
-						},
-						["enabled"] = true,
-						["enable_custom_text"] = false,
-						["text_size"] = 11,
-					},
+					["clickthrough_rows"] = true,
 					["ignore_mass_showhide"] = false,
-					["switch_all_roles_after_wipe"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-					},
+					["plugins_grow_direction"] = 1,
 					["menu_icons"] = {
 						false, -- [1]
 						false, -- [2]
@@ -4165,21 +4141,18 @@ _detalhes_global = {
 						["space"] = -4,
 						["shadow"] = false,
 					},
-					["switch_damager"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-					},
-					["auto_hide_menu"] = {
-						["left"] = true,
-						["right"] = true,
-					},
+					["desaturated_menu"] = false,
+					["micro_displays_side"] = 2,
 					["window_scale"] = 1,
 					["hide_icon"] = true,
 					["toolbar_side"] = 1,
 					["bg_g"] = 0.133333333333333,
 					["bg_b"] = 0.133333333333333,
-					["backdrop_texture"] = "Details Ground",
+					["switch_healer_in_combat"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+					},
 					["color"] = {
 						0.0705882352941177, -- [1]
 						0.0705882352941177, -- [2]
@@ -4334,11 +4307,12 @@ _detalhes_global = {
 						},
 						["left"] = "DETAILS_STATUSBAR_PLUGIN_PSEGMENT",
 					},
-					["instance_button_anchor"] = {
-						-27, -- [1]
+					["switch_tank_in_combat"] = {
+						1, -- [1]
 						1, -- [2]
+						1, -- [3]
 					},
-					["version"] = 3,
+					["bg_alpha"] = 0,
 					["__snapV"] = false,
 					["__locked"] = true,
 					["menu_alpha"] = {
@@ -4349,10 +4323,9 @@ _detalhes_global = {
 						["onleave"] = 1,
 					},
 					["__snapH"] = true,
-					["switch_healer_in_combat"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
+					["menu_anchor_down"] = {
+						16, -- [1]
+						-3, -- [2]
 					},
 					["__was_opened"] = true,
 					["strata"] = "LOW",
@@ -4360,10 +4333,13 @@ _detalhes_global = {
 					["__snap"] = {
 						[3] = 2,
 					},
-					["show_statusbar"] = false,
+					["hide_in_combat_type"] = 1,
 					["hide_in_combat_alpha"] = 0,
 					["menu_icons_size"] = 0.850000023841858,
-					["plugins_grow_direction"] = 1,
+					["instance_button_anchor"] = {
+						-27, -- [1]
+						1, -- [2]
+					},
 					["libwindow"] = {
 						["y"] = -19.9998779296875,
 						["x"] = 1.60243165493011,
@@ -4378,42 +4354,53 @@ _detalhes_global = {
 							0.0705882352941177, -- [3]
 						},
 					},
-					["bars_grow_direction"] = 1,
-					["menu_anchor_down"] = {
-						16, -- [1]
-						-3, -- [2]
-					},
-					["switch_damager_in_combat"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-					},
+					["grab_on_top"] = false,
 					["row_show_animation"] = {
 						["anim"] = "Fade",
 						["options"] = {
 						},
 					},
-					["total_bar"] = {
-						["enabled"] = false,
-						["only_in_group"] = true,
-						["icon"] = "Interface\\ICONS\\INV_Sigil_Thorim",
-						["color"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-						},
-					},
-					["grab_on_top"] = false,
-					["bars_sort_direction"] = 1,
-					["bg_alpha"] = 0,
-					["auto_current"] = true,
-					["switch_tank_in_combat"] = {
+					["bars_grow_direction"] = 1,
+					["stretch_button_side"] = 2,
+					["show_sidebars"] = false,
+					["switch_damager_in_combat"] = {
 						1, -- [1]
 						1, -- [2]
 						1, -- [3]
 					},
-					["micro_displays_locked"] = true,
-					["clickthrough_rows"] = true,
+					["skin_custom"] = "",
+					["backdrop_texture"] = "Details Ground",
+					["auto_current"] = true,
+					["version"] = 3,
+					["attribute_text"] = {
+						["show_timer"] = {
+							true, -- [1]
+							true, -- [2]
+							true, -- [3]
+						},
+						["shadow"] = false,
+						["side"] = 1,
+						["text_color"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							1, -- [4]
+						},
+						["custom_text"] = "{name}",
+						["text_face"] = "Arial Narrow",
+						["anchor"] = {
+							-18, -- [1]
+							3, -- [2]
+						},
+						["enabled"] = true,
+						["enable_custom_text"] = false,
+						["text_size"] = 11,
+					},
+					["switch_damager"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+					},
 					["hide_in_combat"] = false,
 					["posicao"] = {
 						["normal"] = {
@@ -4427,6 +4414,46 @@ _detalhes_global = {
 							["x"] = 1,
 							["w"] = 300,
 							["h"] = 200,
+						},
+					},
+					["switch_all_roles_after_wipe"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+					},
+					["switch_tank"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+					},
+					["wallpaper"] = {
+						["enabled"] = false,
+						["texture"] = "Interface\\AddOns\\Details\\images\\background",
+						["texcoord"] = {
+							0, -- [1]
+							1, -- [2]
+							0, -- [3]
+							0.7, -- [4]
+						},
+						["overlay"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							1, -- [4]
+						},
+						["anchor"] = "all",
+						["height"] = 114.042518615723,
+						["alpha"] = 0.5,
+						["width"] = 283.000183105469,
+					},
+					["total_bar"] = {
+						["enabled"] = false,
+						["only_in_group"] = true,
+						["icon"] = "Interface\\ICONS\\INV_Sigil_Thorim",
+						["color"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
 						},
 					},
 					["row_info"] = {
@@ -4529,35 +4556,11 @@ _detalhes_global = {
 						["textR_separator"] = "NONE",
 						["use_spec_icons"] = false,
 					},
-					["desaturated_menu"] = false,
-					["wallpaper"] = {
-						["enabled"] = false,
-						["texture"] = "Interface\\AddOns\\Details\\images\\background",
-						["texcoord"] = {
-							0, -- [1]
-							1, -- [2]
-							0, -- [3]
-							0.7, -- [4]
-						},
-						["overlay"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							1, -- [4]
-						},
-						["anchor"] = "all",
-						["height"] = 114.042518615723,
-						["alpha"] = 0.5,
-						["width"] = 283.000183105469,
+					["auto_hide_menu"] = {
+						["left"] = true,
+						["right"] = true,
 					},
-					["stretch_button_side"] = 2,
-					["switch_tank"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-					},
-					["show_sidebars"] = false,
-					["micro_displays_side"] = 2,
+					["micro_displays_locked"] = true,
 					["bars_inverted"] = false,
 				}, -- [1]
 				{
@@ -5039,7 +5042,7 @@ _detalhes_global = {
 				{
 					["__pos"] = {
 						["normal"] = {
-							["y"] = -459.987350463867,
+							["y"] = -459.987335205078,
 							["x"] = 420.47412109375,
 							["w"] = 179.999893188477,
 							["h"] = 178.307525634766,
@@ -5074,106 +5077,7 @@ _detalhes_global = {
 					},
 					["switch_all_roles_in_combat"] = false,
 					["clickthrough_toolbaricons"] = false,
-					["row_info"] = {
-						["textR_outline"] = false,
-						["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
-						["textL_outline"] = false,
-						["textR_outline_small"] = true,
-						["textR_show_data"] = {
-							true, -- [1]
-							true, -- [2]
-							true, -- [3]
-						},
-						["textL_enable_custom_text"] = false,
-						["fixed_text_color"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-						},
-						["space"] = {
-							["right"] = 0,
-							["left"] = 0,
-							["between"] = 1,
-						},
-						["texture_background_class_color"] = false,
-						["start_after_icon"] = true,
-						["font_face_file"] = "Interface\\AddOns\\Aptechka\\ClearFont.ttf",
-						["backdrop"] = {
-							["enabled"] = false,
-							["texture"] = "Details BarBorder 2",
-							["color"] = {
-								1, -- [1]
-								1, -- [2]
-								1, -- [3]
-								1, -- [4]
-							},
-							["size"] = 12,
-						},
-						["models"] = {
-							["upper_model"] = "Spells\\AcidBreath_SuperGreen.M2",
-							["lower_model"] = "World\\EXPANSION02\\DOODADS\\Coldarra\\COLDARRALOCUS.m2",
-							["upper_alpha"] = 0.5,
-							["lower_enabled"] = false,
-							["lower_alpha"] = 0.1,
-							["upper_enabled"] = false,
-						},
-						["textL_translit_text"] = false,
-						["texture_custom_file"] = "Interface\\",
-						["texture_file"] = "Interface\\Addons\\SharedMedia\\statusbar\\Glamour2",
-						["height"] = 18,
-						["use_spec_icons"] = false,
-						["icon_file"] = "",
-						["icon_grayscale"] = false,
-						["font_size"] = 11,
-						["texture_background_file"] = "Interface\\RaidFrame\\Raid-Bar-Hp-Fill",
-						["texture_custom"] = "",
-						["textL_custom_text"] = "{data1}. {data3}{data2}",
-						["fixed_texture_color"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							1, -- [4]
-						},
-						["textL_show_number"] = false,
-						["percent_type"] = 1,
-						["textL_outline_small"] = true,
-						["textR_custom_text"] = "{data1}, {data2}",
-						["texture"] = "Glamour2",
-						["textR_enable_custom_text"] = true,
-						["textL_outline_small_color"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							1, -- [4]
-						},
-						["textR_class_colors"] = true,
-						["alpha"] = 1,
-						["texture_background"] = "Blizzard Raid Bar",
-						["textL_class_colors"] = true,
-						["textR_outline_small_color"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							1, -- [4]
-						},
-						["no_icon"] = true,
-						["icon_offset"] = {
-							0, -- [1]
-							0, -- [2]
-						},
-						["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
-						["font_face"] = "ClearFont",
-						["texture_class_colors"] = true,
-						["fixed_texture_background_color"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							0.109787285327911, -- [4]
-						},
-						["fast_ps_update"] = false,
-						["textR_separator"] = ",",
-						["textR_bracket"] = "(",
-					},
+					["clickthrough_rows"] = true,
 					["ignore_mass_showhide"] = false,
 					["plugins_grow_direction"] = 1,
 					["menu_icons"] = {
@@ -5187,10 +5091,7 @@ _detalhes_global = {
 						["shadow"] = false,
 					},
 					["desaturated_menu"] = false,
-					["auto_hide_menu"] = {
-						["left"] = true,
-						["right"] = false,
-					},
+					["micro_displays_side"] = 2,
 					["window_scale"] = 1,
 					["hide_icon"] = true,
 					["toolbar_side"] = 1,
@@ -5346,7 +5247,10 @@ _detalhes_global = {
 						},
 						["left"] = "DETAILS_STATUSBAR_PLUGIN_PSEGMENT",
 					},
-					["switch_tank_in_combat"] = false,
+					["instance_button_anchor"] = {
+						-27, -- [1]
+						1, -- [2]
+					},
 					["bg_alpha"] = 0,
 					["__snapV"] = false,
 					["__locked"] = true,
@@ -5372,7 +5276,7 @@ _detalhes_global = {
 					["menu_icons_size"] = 0.850000023841858,
 					["bars_inverted"] = false,
 					["libwindow"] = {
-						["y"] = 50.8588790893555,
+						["y"] = 50.8589019775391,
 						["x"] = 420.474182128906,
 						["point"] = "BOTTOM",
 						["scale"] = 1,
@@ -5393,15 +5297,11 @@ _detalhes_global = {
 					},
 					["bars_grow_direction"] = 1,
 					["stretch_button_side"] = 1,
-					["clickthrough_rows"] = true,
+					["show_sidebars"] = false,
 					["switch_damager_in_combat"] = false,
 					["skin_custom"] = "",
 					["backdrop_texture"] = "Details Ground",
 					["auto_current"] = true,
-					["instance_button_anchor"] = {
-						-27, -- [1]
-						1, -- [2]
-					},
 					["version"] = 3,
 					["attribute_text"] = {
 						["enabled"] = false,
@@ -5427,10 +5327,11 @@ _detalhes_global = {
 						},
 						["enable_custom_text"] = false,
 					},
+					["switch_damager"] = false,
 					["hide_in_combat"] = false,
 					["posicao"] = {
 						["normal"] = {
-							["y"] = -459.987350463867,
+							["y"] = -459.987335205078,
 							["x"] = 420.47412109375,
 							["w"] = 179.999893188477,
 							["h"] = 178.307525634766,
@@ -5442,8 +5343,8 @@ _detalhes_global = {
 							["h"] = 200,
 						},
 					},
-					["switch_damager"] = false,
 					["switch_all_roles_after_wipe"] = false,
+					["switch_tank"] = false,
 					["wallpaper"] = {
 						["enabled"] = false,
 						["texcoord"] = {
@@ -5473,9 +5374,111 @@ _detalhes_global = {
 							1, -- [3]
 						},
 					},
-					["switch_tank"] = false,
-					["show_sidebars"] = false,
-					["micro_displays_side"] = 2,
+					["row_info"] = {
+						["textR_outline"] = false,
+						["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
+						["textL_outline"] = false,
+						["textR_outline_small"] = true,
+						["textR_show_data"] = {
+							true, -- [1]
+							true, -- [2]
+							true, -- [3]
+						},
+						["textL_enable_custom_text"] = false,
+						["fixed_text_color"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+						},
+						["space"] = {
+							["right"] = 0,
+							["left"] = 0,
+							["between"] = 1,
+						},
+						["texture_background_class_color"] = false,
+						["start_after_icon"] = true,
+						["font_face_file"] = "Interface\\AddOns\\Aptechka\\ClearFont.ttf",
+						["backdrop"] = {
+							["enabled"] = false,
+							["texture"] = "Details BarBorder 2",
+							["color"] = {
+								1, -- [1]
+								1, -- [2]
+								1, -- [3]
+								1, -- [4]
+							},
+							["size"] = 12,
+						},
+						["models"] = {
+							["upper_model"] = "Spells\\AcidBreath_SuperGreen.M2",
+							["lower_model"] = "World\\EXPANSION02\\DOODADS\\Coldarra\\COLDARRALOCUS.m2",
+							["upper_alpha"] = 0.5,
+							["lower_enabled"] = false,
+							["lower_alpha"] = 0.1,
+							["upper_enabled"] = false,
+						},
+						["textL_translit_text"] = false,
+						["texture_custom_file"] = "Interface\\",
+						["texture_file"] = "Interface\\Addons\\SharedMedia\\statusbar\\Glamour2",
+						["height"] = 18,
+						["use_spec_icons"] = false,
+						["icon_file"] = "",
+						["icon_grayscale"] = false,
+						["font_size"] = 11,
+						["texture_background_file"] = "Interface\\RaidFrame\\Raid-Bar-Hp-Fill",
+						["texture_custom"] = "",
+						["textL_custom_text"] = "{data1}. {data3}{data2}",
+						["fixed_texture_color"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							1, -- [4]
+						},
+						["textL_show_number"] = false,
+						["percent_type"] = 1,
+						["textL_outline_small"] = true,
+						["textR_custom_text"] = "{data1}, {data2}",
+						["texture"] = "Glamour2",
+						["textR_enable_custom_text"] = true,
+						["textL_outline_small_color"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							1, -- [4]
+						},
+						["textR_class_colors"] = true,
+						["alpha"] = 1,
+						["texture_background"] = "Blizzard Raid Bar",
+						["textL_class_colors"] = true,
+						["textR_outline_small_color"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							1, -- [4]
+						},
+						["no_icon"] = true,
+						["icon_offset"] = {
+							0, -- [1]
+							0, -- [2]
+						},
+						["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
+						["font_face"] = "ClearFont",
+						["texture_class_colors"] = true,
+						["fixed_texture_background_color"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							0.109787285327911, -- [4]
+						},
+						["fast_ps_update"] = false,
+						["textR_separator"] = ",",
+						["textR_bracket"] = "(",
+					},
+					["auto_hide_menu"] = {
+						["left"] = true,
+						["right"] = false,
+					},
+					["switch_tank_in_combat"] = false,
 					["micro_displays_locked"] = true,
 				}, -- [3]
 			},
@@ -6731,7 +6734,14 @@ _detalhes_global = {
 				},
 				["switch_all_roles_after_wipe"] = false,
 				["desaturated_menu"] = false,
-				["micro_displays_side"] = 2,
+				["statusbar_info"] = {
+					["alpha"] = 1,
+					["overlay"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+					},
+				},
 				["strata"] = "LOW",
 				["window_scale"] = 1,
 				["resetbutton_config"] = {
@@ -6783,7 +6793,10 @@ _detalhes_global = {
 					32, -- [1]
 					2, -- [2]
 				},
-				["show_sidebars"] = false,
+				["auto_hide_menu"] = {
+					["left"] = false,
+					["right"] = false,
+				},
 				["bars_grow_direction"] = 1,
 				["menu_anchor_down"] = {
 					-55, -- [1]
@@ -6826,19 +6839,9 @@ _detalhes_global = {
 					},
 				},
 				["hide_in_combat"] = false,
-				["auto_hide_menu"] = {
-					["left"] = false,
-					["right"] = false,
-				},
+				["show_sidebars"] = false,
 				["switch_damager"] = false,
-				["statusbar_info"] = {
-					["alpha"] = 1,
-					["overlay"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-					},
-				},
+				["micro_displays_side"] = 2,
 				["wallpaper"] = {
 					["overlay"] = {
 						1, -- [1]
@@ -8280,9 +8283,9 @@ _detalhes_global = {
 	},
 	["tutorial"] = {
 		["unlock_button"] = 4,
-		["main_help_button"] = 2640,
+		["main_help_button"] = 2652,
 		["ATTRIBUTE_SELECT_TUTORIAL1"] = true,
-		["logons"] = 2640,
+		["logons"] = 2652,
 		["STREAMER_FEATURES_POPUP1"] = true,
 		["ctrl_click_close_tutorial"] = false,
 		["STREAMER_PLUGIN_FIRSTRUN"] = true,
@@ -8618,14 +8621,19 @@ _detalhes_global = {
 	["details_auras"] = {
 	},
 	["item_level_pool"] = {
-		["Player-4465-01C7FC88"] = {
-			["time"] = 1595857140,
-			["name"] = "Mxzq",
+		["Player-4755-028775A2"] = {
+			["name"] = "Bøoøm",
+			["time"] = 1595924010,
 			["ilvl"] = 0,
 		},
 		["Player-4465-00EB7EF7"] = {
 			["time"] = 1595857428,
 			["name"] = "Mirakin",
+			["ilvl"] = 0,
+		},
+		["Player-4465-01C7FC88"] = {
+			["name"] = "Mxzq",
+			["time"] = 1595924076,
 			["ilvl"] = 0,
 		},
 	},

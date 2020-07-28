@@ -6,8 +6,8 @@ cus:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 2)
 cus:SetWidth(1)
 cus:SetHeight(1)
 cus.text = cus:CreateFontString(nil, "ARTWORK")
-cus.text:SetFont(config.font.atari, 11, "NONE")
-cus.text:SetPoint("LEFT", CustomContainer_Combat, "LEFT", 3, 2)
+cus.text:SetFont(config.font.arial, 10, "NONE")
+cus.text:SetPoint("LEFT", CustomContainer_Combat, "LEFT", 3, 0)
 
 PlayerFrame:HookScript(
 	"OnUpdate",
@@ -35,8 +35,8 @@ if class == "HUNTER" then
 	ac:SetWidth(1)
 	ac:SetHeight(1)
 	ac.text = ac:CreateFontString(nil, "ARTWORK")
-	ac.text:SetFont(config.font.atari, 11, "NONE")
-	ac.text:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 2)
+	ac.text:SetFont(config.font.arial, 10, "NONE")
+	ac.text:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 0)
 
 	PlayerFrame:HookScript(
 		"OnUpdate",

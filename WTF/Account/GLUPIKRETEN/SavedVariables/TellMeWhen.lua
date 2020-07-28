@@ -970,20 +970,25 @@ TellMeWhenDB = {
 			},
 		},
 		["Priest"] = {
-			["Locked"] = true,
 			["Groups"] = {
 				{
-					["Enabled"] = false,
+					["GUID"] = "TMW:group:1TQuFk14Ix42",
 					["Point"] = {
 						["y"] = -88,
 						["x"] = 4.069010416666670e-05,
 					},
 					["Scale"] = 1.5,
+					["TextureName"] = "Details Flat",
+					["Locked"] = true,
+					["OnlyInCombat"] = true,
+					["Enabled"] = false,
+					["Columns"] = 1,
 					["Icons"] = {
 						{
-							["Enabled"] = true,
-							["Type"] = "meta",
 							["BuffOrDebuff"] = "HARMFUL",
+							["Unit"] = "target",
+							["OnlyMine"] = true,
+							["Type"] = "meta",
 							["Icons"] = {
 								"TMW:icon:1TZvNvflXM0_", -- [1]
 								"TMW:icon:1TWZdpV26rm5", -- [2]
@@ -992,8 +997,6 @@ TellMeWhenDB = {
 								"TMW:icon:1TQv_LtTwAae", -- [5]
 								"TMW:icon:1TQv_Lti1RyX", -- [6]
 							},
-							["Unit"] = "target",
-							["OnlyMine"] = true,
 							["Name"] = "Rend",
 							["SettingsPerView"] = {
 								["icon"] = {
@@ -1010,22 +1013,23 @@ TellMeWhenDB = {
 									["Alpha"] = 1,
 								}, -- [2]
 							},
+							["Enabled"] = true,
 						}, -- [1]
 						{
-							["Enabled"] = true,
-							["Type"] = "buff",
 							["Sort"] = -1,
+							["DurationMin"] = 15,
+							["Type"] = "buff",
 							["Name"] = "Battle Shout",
+							["DurationMinEnabled"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "RAGE_ABS",
-									["Level"] = 10,
 									["Operator"] = ">=",
+									["Level"] = 10,
 								}, -- [1]
 								["n"] = 1,
 							},
-							["DurationMin"] = 15,
-							["DurationMinEnabled"] = true,
+							["Enabled"] = true,
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -1039,50 +1043,46 @@ TellMeWhenDB = {
 							},
 						}, -- [2]
 					},
-					["TextureName"] = "Details Flat",
-					["LayoutDirection"] = 2,
-					["GUID"] = "TMW:group:1TQuFk14Ix42",
-					["Name"] = "Warrior Rotation",
-					["SettingsPerView"] = {
-						["icon"] = {
-							["BorderColor"] = "00000000",
-							["BorderInset"] = false,
-						},
-					},
-					["Locked"] = true,
 					["SortPriorities"] = {
 						{
 							["Order"] = -1,
 						}, -- [1]
 					},
-					["Columns"] = 1,
-					["OnlyInCombat"] = true,
+					["LayoutDirection"] = 2,
+					["Name"] = "Warrior Rotation",
+					["SettingsPerView"] = {
+						["icon"] = {
+							["BorderInset"] = false,
+							["BorderColor"] = "00000000",
+						},
+					},
 				}, -- [1]
 				{
-					["GUID"] = "TMW:group:1TQvxnAfbGyU",
-					["Name"] = "Warrior Spells",
 					["Point"] = {
 						["y"] = -5,
 						["point"] = "TOP",
 						["relativePoint"] = "TOP",
 					},
+					["Scale"] = 1,
+					["Locked"] = true,
+					["GUID"] = "TMW:group:1TQvxnAfbGyU",
+					["Columns"] = 20,
 					["Icons"] = {
 						{
-							["GUID"] = "TMW:icon:1TQv_LtTwAae",
-							["Type"] = "buff",
 							["BuffOrDebuff"] = "HARMFUL",
 							["Unit"] = "target",
 							["OnlyMine"] = true,
+							["Type"] = "buff",
 							["Name"] = "Rend",
 							["Conditions"] = {
 								{
 									["Type"] = "RAGE_ABS",
-									["Level"] = 10,
 									["Operator"] = ">=",
+									["Level"] = 10,
 								}, -- [1]
 								["n"] = 1,
 							},
-							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1TQv_LtTwAae",
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -1091,26 +1091,26 @@ TellMeWhenDB = {
 									["Alpha"] = 1,
 								}, -- [2]
 							},
+							["Enabled"] = true,
 						}, -- [1]
 						{
-							["GUID"] = "TMW:icon:1TQv_Ltf40Wl",
 							["Type"] = "buff",
 							["Name"] = "Battle Shout",
 							["Conditions"] = {
 								{
 									["Type"] = "RAGE_ABS",
-									["Level"] = 10,
 									["Operator"] = ">=",
+									["Level"] = 10,
 								}, -- [1]
 								{
-									["Level"] = 15,
 									["Type"] = "BUFFDUR",
-									["Name"] = "Battle Shout",
 									["Operator"] = "<=",
+									["Name"] = "Battle Shout",
+									["Level"] = 15,
 								}, -- [2]
 								["n"] = 2,
 							},
-							["Enabled"] = true,
+							["GUID"] = "TMW:icon:1TQv_Ltf40Wl",
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -1119,26 +1119,29 @@ TellMeWhenDB = {
 									["Alpha"] = 1,
 								}, -- [2]
 							},
+							["Enabled"] = true,
 						}, -- [2]
 						{
-							["GUID"] = "TMW:icon:1TQv_Lti1RyX",
 							["Type"] = "reactive",
 							["Name"] = "Heroic Strike",
+							["GUID"] = "TMW:icon:1TQv_Lti1RyX",
+							["Enabled"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "RAGE_ABS",
-									["Level"] = 20,
 									["Operator"] = ">=",
+									["Level"] = 20,
 								}, -- [1]
 								["n"] = 1,
 							},
-							["Enabled"] = true,
 						}, -- [3]
 						{
-							["GUID"] = "TMW:icon:1TU=hLnlwyeY",
 							["Type"] = "cooldown",
+							["Name"] = "Overpower",
 							["ShowTimerText"] = true,
+							["GUID"] = "TMW:icon:1TU=hLnlwyeY",
 							["RangeCheck"] = true,
+							["Enabled"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "REACTIVE",
@@ -1147,13 +1150,25 @@ TellMeWhenDB = {
 								}, -- [1]
 								["n"] = 1,
 							},
-							["Enabled"] = true,
-							["Name"] = "Overpower",
 						}, -- [4]
 						{
-							["GUID"] = "TMW:icon:1TWZdpV26rm5",
+							["BuffOrDebuff"] = "HARMFUL",
+							["Unit"] = "target",
 							["Type"] = "buff",
 							["Name"] = "Demoralizing Shout",
+							["Conditions"] = {
+								{
+									["Type"] = "STANCE",
+									["Name"] = "Defensive Stance",
+								}, -- [1]
+								{
+									["Type"] = "RAGE_ABS",
+									["Operator"] = ">=",
+									["Level"] = 10,
+								}, -- [2]
+								["n"] = 2,
+							},
+							["GUID"] = "TMW:icon:1TWZdpV26rm5",
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -1162,226 +1177,214 @@ TellMeWhenDB = {
 									["Alpha"] = 1,
 								}, -- [2]
 							},
-							["BuffOrDebuff"] = "HARMFUL",
-							["Conditions"] = {
-								{
-									["Name"] = "Defensive Stance",
-									["Type"] = "STANCE",
-								}, -- [1]
-								{
-									["Type"] = "RAGE_ABS",
-									["Level"] = 10,
-									["Operator"] = ">=",
-								}, -- [2]
-								["n"] = 2,
-							},
 							["Enabled"] = true,
-							["Unit"] = "target",
 						}, -- [5]
 						{
-							["GUID"] = "TMW:icon:1TYYu4EDbfSz",
+							["BuffOrDebuff"] = "HARMFUL",
+							["Unit"] = "target",
 							["Type"] = "buff",
 							["ShowTimerText"] = true,
-							["BuffOrDebuff"] = "HARMFUL",
-							["Enabled"] = true,
 							["Name"] = "Sunder Armor",
-							["Unit"] = "target",
+							["GUID"] = "TMW:icon:1TYYu4EDbfSz",
+							["Enabled"] = true,
 						}, -- [6]
 						{
-							["GUID"] = "TMW:icon:1TZvNvflXM0_",
 							["Type"] = "reactive",
 							["Name"] = "Execute",
+							["GUID"] = "TMW:icon:1TZvNvflXM0_",
+							["Enabled"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "RAGE_ABS",
-									["Level"] = 15,
 									["Operator"] = ">=",
+									["Level"] = 15,
 								}, -- [1]
 								["n"] = 1,
 							},
-							["Enabled"] = true,
 						}, -- [7]
 						[20] = {
 							["BuffOrDebuff"] = "HARMFUL",
 							["GUID"] = "TMW:icon:1TWYMfcUzmi6",
 						},
 					},
-					["Locked"] = true,
-					["Columns"] = 20,
+					["Name"] = "Warrior Spells",
 					["Alpha"] = 0,
-					["Scale"] = 1,
 				}, -- [2]
 				{
-					["Enabled"] = false,
-					["GUID"] = "TMW:group:1TWYPj24VzCn",
 					["Point"] = {
 						["y"] = -20,
 						["x"] = -230,
 					},
-					["Name"] = "Other",
 					["Scale"] = 1.5,
+					["TextureName"] = "Details Flat",
+					["Enabled"] = false,
 					["Columns"] = 1,
 					["Icons"] = {
 						{
-							["Enabled"] = true,
 							["Type"] = "meta",
 							["Icons"] = {
 								"TMW:icon:1TZvNvgAkfmq", -- [1]
 								"TMW:icon:1TWYSTcSCl0z", -- [2]
 							},
+							["Enabled"] = true,
 						}, -- [1]
 					},
-					["TextureName"] = "Details Flat",
+					["Name"] = "Other",
+					["GUID"] = "TMW:group:1TWYPj24VzCn",
 				}, -- [3]
 				{
-					["GUID"] = "TMW:group:1TWYSTcQ410f",
-					["Columns"] = 20,
-					["Scale"] = 1,
-					["Alpha"] = 0,
-					["TextureName"] = "Details Flat",
-					["Name"] = "General Buffs/Debbufs",
-					["Locked"] = true,
-					["Icons"] = {
-						{
-							["GUID"] = "TMW:icon:1TWYSTcSCl0z",
-							["Type"] = "buff",
-							["ShowTimerText"] = true,
-							["BuffOrDebuff"] = "HARMFUL",
-							["Enabled"] = true,
-							["Name"] = "Blood Fury",
-						}, -- [1]
-						{
-							["GUID"] = "TMW:icon:1TZvNvgAkfmq",
-							["Type"] = "buff",
-							["ShowTimerText"] = true,
-							["SettingsPerView"] = {
-								["icon"] = {
-									["TextLayout"] = "TMW:textlayout:1TZve345g=GK",
-								},
-							},
-							["Enabled"] = true,
-							["Name"] = "Enrage",
-						}, -- [2]
-					},
 					["Point"] = {
 						["y"] = -40,
 						["point"] = "TOP",
 						["relativePoint"] = "TOP",
 					},
+					["Scale"] = 1,
+					["TextureName"] = "Details Flat",
+					["Locked"] = true,
+					["GUID"] = "TMW:group:1TWYSTcQ410f",
+					["Columns"] = 20,
+					["Icons"] = {
+						{
+							["BuffOrDebuff"] = "HARMFUL",
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["Name"] = "Blood Fury",
+							["GUID"] = "TMW:icon:1TWYSTcSCl0z",
+							["Enabled"] = true,
+						}, -- [1]
+						{
+							["Type"] = "buff",
+							["ShowTimerText"] = true,
+							["Name"] = "Enrage",
+							["SettingsPerView"] = {
+								["icon"] = {
+									["TextLayout"] = "TMW:textlayout:1TZve345g=GK",
+								},
+							},
+							["GUID"] = "TMW:icon:1TZvNvgAkfmq",
+							["Enabled"] = true,
+						}, -- [2]
+					},
+					["Name"] = "General Buffs/Debbufs",
+					["Alpha"] = 0,
 				}, -- [4]
 				{
-					["GUID"] = "TMW:group:1TeVAjjUoOOh",
-					["Name"] = "Hunter Spells",
 					["Point"] = {
 						["y"] = -75,
 						["point"] = "TOP",
 						["relativePoint"] = "TOP",
 					},
+					["Scale"] = 1,
+					["Locked"] = true,
+					["GUID"] = "TMW:group:1TeVAjjUoOOh",
+					["Columns"] = 20,
 					["Icons"] = {
 						{
-							["GUID"] = "TMW:icon:1TeVAjjXQ0WB",
+							["BuffOrDebuff"] = "HARMFUL",
+							["Unit"] = "target",
 							["Type"] = "buff",
 							["ShowTimerText"] = true,
-							["Enabled"] = true,
-							["BuffOrDebuff"] = "HARMFUL",
-							["OnlyMine"] = true,
 							["Name"] = "Serpent Sting",
-							["Unit"] = "target",
+							["OnlyMine"] = true,
+							["GUID"] = "TMW:icon:1TeVAjjXQ0WB",
+							["Enabled"] = true,
 						}, -- [1]
 						{
-							["GUID"] = "TMW:icon:1TeVAjjavXC6",
+							["BuffOrDebuff"] = "HARMFUL",
+							["Unit"] = "target",
 							["Type"] = "buff",
 							["ShowTimerText"] = true,
-							["BuffOrDebuff"] = "HARMFUL",
-							["Enabled"] = true,
 							["Name"] = "Hunter's Mark",
-							["Unit"] = "target",
+							["GUID"] = "TMW:icon:1TeVAjjavXC6",
+							["Enabled"] = true,
 						}, -- [2]
 					},
-					["Locked"] = true,
-					["Columns"] = 20,
+					["Name"] = "Hunter Spells",
 					["Alpha"] = 0,
-					["Scale"] = 1,
 				}, -- [5]
 				{
-					["Enabled"] = false,
-					["GUID"] = "TMW:group:1TeVDtajUwqa",
 					["Point"] = {
 						["y"] = -88,
 						["x"] = 4.069010416666670e-05,
 					},
 					["Scale"] = 1.5,
 					["Locked"] = true,
+					["Enabled"] = false,
 					["Columns"] = 3,
 					["Icons"] = {
 						{
-							["Enabled"] = true,
 							["Type"] = "meta",
 							["Icons"] = {
 								"TMW:icon:1TeVAjjavXC6", -- [1]
 							},
+							["Enabled"] = true,
 						}, -- [1]
 						{
-							["Enabled"] = true,
 							["Type"] = "meta",
 							["Icons"] = {
 								"TMW:icon:1TeVAjjXQ0WB", -- [1]
 							},
+							["Enabled"] = true,
 						}, -- [2]
 					},
 					["Name"] = "Hunter Rotation",
+					["GUID"] = "TMW:group:1TeVDtajUwqa",
 				}, -- [6]
 				{
-					["Enabled"] = false,
+					["GUID"] = "TMW:group:1V6krZ0tqss=",
 					["Point"] = {
 						["y"] = -88,
 					},
 					["Scale"] = 1.5,
+					["Locked"] = true,
+					["OnlyInCombat"] = true,
+					["Enabled"] = false,
+					["Columns"] = 1,
 					["Icons"] = {
 						{
-							["Enabled"] = true,
 							["Type"] = "meta",
 							["Icons"] = {
 								"TMW:icon:1V6ky7UjmQN=", -- [1]
 								"TMW:icon:1V6ky7UreCKN", -- [2]
 								"TMW:icon:1V6ky7Uy=NmE", -- [3]
 							},
+							["Enabled"] = true,
 						}, -- [1]
 						{
-							["Enabled"] = true,
 							["Type"] = "meta",
 							["Icons"] = {
 								"TMW:icon:1V6ky7UreCKN", -- [1]
 							},
+							["Enabled"] = true,
 						}, -- [2]
 						{
-							["Enabled"] = true,
 							["Type"] = "meta",
 							["Icons"] = {
 								"TMW:icon:1V6ky7Uy=NmE", -- [1]
 							},
+							["Enabled"] = true,
 						}, -- [3]
 					},
 					["LayoutDirection"] = 2,
 					["Name"] = "Warlock Rotation",
-					["Locked"] = true,
-					["GUID"] = "TMW:group:1V6krZ0tqss=",
-					["Columns"] = 1,
-					["OnlyInCombat"] = true,
 				}, -- [7]
 				{
-					["GUID"] = "TMW:group:1V6ky7Uf4nZ5",
-					["Name"] = "Warlock Spells",
 					["Point"] = {
 						["y"] = -110,
 						["point"] = "TOP",
 						["relativePoint"] = "TOP",
 					},
+					["Scale"] = 1,
+					["Locked"] = true,
+					["GUID"] = "TMW:group:1V6ky7Uf4nZ5",
+					["Columns"] = 20,
 					["Icons"] = {
 						{
-							["GUID"] = "TMW:icon:1V6ky7UjmQN=",
+							["BuffOrDebuff"] = "HARMFUL",
+							["Unit"] = "target",
 							["Type"] = "buff",
 							["Name"] = "Immolate",
+							["GUID"] = "TMW:icon:1V6ky7UjmQN=",
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -1390,15 +1393,15 @@ TellMeWhenDB = {
 									["Alpha"] = 1,
 								}, -- [2]
 							},
-							["BuffOrDebuff"] = "HARMFUL",
 							["OnlyMine"] = true,
 							["Enabled"] = true,
-							["Unit"] = "target",
 						}, -- [1]
 						{
-							["GUID"] = "TMW:icon:1V6ky7UreCKN",
+							["BuffOrDebuff"] = "HARMFUL",
+							["Unit"] = "target",
 							["Type"] = "buff",
 							["Name"] = "Corruption",
+							["GUID"] = "TMW:icon:1V6ky7UreCKN",
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -1407,15 +1410,15 @@ TellMeWhenDB = {
 									["Alpha"] = 1,
 								}, -- [2]
 							},
-							["BuffOrDebuff"] = "HARMFUL",
 							["OnlyMine"] = true,
 							["Enabled"] = true,
-							["Unit"] = "target",
 						}, -- [2]
 						{
-							["GUID"] = "TMW:icon:1V6ky7Uy=NmE",
+							["BuffOrDebuff"] = "HARMFUL",
+							["Unit"] = "target",
 							["Type"] = "buff",
 							["Name"] = "Curse of Agony",
+							["GUID"] = "TMW:icon:1V6ky7Uy=NmE",
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -1424,79 +1427,69 @@ TellMeWhenDB = {
 									["Alpha"] = 1,
 								}, -- [2]
 							},
-							["BuffOrDebuff"] = "HARMFUL",
 							["OnlyMine"] = true,
 							["Enabled"] = true,
-							["Unit"] = "target",
 						}, -- [3]
 					},
-					["Locked"] = true,
-					["Columns"] = 20,
+					["Name"] = "Warlock Spells",
 					["Alpha"] = 0,
-					["Scale"] = 1,
 				}, -- [8]
 			},
-			["Version"] = 86907,
 			["NumGroups"] = 8,
+			["Version"] = 86907,
+			["Locked"] = true,
 		},
 		["Hunter"] = {
+			["Locked"] = true,
 			["Version"] = 86907,
-			["NumGroups"] = 3,
 			["Groups"] = {
 				{
+					["Enabled"] = false,
+					["GUID"] = "TMW:group:1TWYPj24VzCn",
 					["Point"] = {
 						["y"] = -20,
 						["x"] = -230,
 					},
+					["Name"] = "Other",
 					["Scale"] = 1.5,
-					["TextureName"] = "Details Flat",
-					["Enabled"] = false,
 					["Columns"] = 1,
 					["Icons"] = {
 						{
+							["Enabled"] = true,
 							["Type"] = "meta",
 							["Icons"] = {
 								"TMW:icon:1TZvNvgAkfmq", -- [1]
 								"TMW:icon:1TWYSTcSCl0z", -- [2]
 							},
-							["Enabled"] = true,
 						}, -- [1]
 					},
-					["Name"] = "Other",
-					["GUID"] = "TMW:group:1TWYPj24VzCn",
+					["TextureName"] = "Details Flat",
 				}, -- [1]
 				{
-					["Point"] = {
-						["y"] = -5,
-						["point"] = "TOP",
-						["relativePoint"] = "TOP",
-					},
-					["Scale"] = 1,
-					["Locked"] = true,
 					["GUID"] = "TMW:group:1TeVAjjUoOOh",
-					["Columns"] = 20,
 					["Icons"] = {
 						{
+							["GUID"] = "TMW:icon:1TeVAjjXQ0WB",
+							["Type"] = "buff",
 							["BuffOrDebuff"] = "HARMFUL",
 							["Unit"] = "target",
 							["OnlyMine"] = true,
-							["Type"] = "buff",
 							["Name"] = "Serpent Sting",
 							["Conditions"] = {
 								{
 									["Type"] = "MANA_ABS",
-									["Operator"] = ">",
 									["Level"] = 100,
+									["Operator"] = ">",
 								}, -- [1]
 								{
-									["Type"] = "LIBRANGECHECK",
-									["Unit"] = "target",
-									["Operator"] = "<=",
 									["Level"] = 35,
+									["Type"] = "LIBRANGECHECK",
+									["Operator"] = "<=",
+									["Unit"] = "target",
 								}, -- [2]
 								["n"] = 2,
 							},
-							["GUID"] = "TMW:icon:1TeVAjjXQ0WB",
+							["Enabled"] = true,
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -1505,16 +1498,11 @@ TellMeWhenDB = {
 									["Alpha"] = 1,
 								}, -- [2]
 							},
-							["Enabled"] = true,
 						}, -- [1]
 						{
-							["BuffOrDebuff"] = "HARMFUL",
-							["Unit"] = "target",
+							["Enabled"] = true,
 							["Type"] = "buff",
 							["ShowTimerText"] = true,
-							["Enabled"] = true,
-							["Name"] = "Hunter's Mark",
-							["GUID"] = "TMW:icon:1TeVAjjavXC6",
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -1523,26 +1511,30 @@ TellMeWhenDB = {
 									["Alpha"] = 0.15,
 								}, -- [2]
 							},
+							["BuffOrDebuff"] = "HARMFUL",
+							["GUID"] = "TMW:icon:1TeVAjjavXC6",
+							["Name"] = "Hunter's Mark",
+							["Unit"] = "target",
 						}, -- [2]
 						{
+							["GUID"] = "TMW:icon:1V6lsULwY3_Y",
 							["Type"] = "cooldown",
 							["Name"] = "Arcane Shot",
+							["RangeCheck"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "MANA_ABS",
-									["Operator"] = ">",
 									["Level"] = 100,
+									["Operator"] = ">",
 								}, -- [1]
 								["n"] = 1,
 							},
-							["GUID"] = "TMW:icon:1V6lsULwY3_Y",
-							["RangeCheck"] = true,
 							["Enabled"] = true,
 						}, -- [3]
 						{
+							["Enabled"] = true,
 							["Type"] = "buff",
 							["Name"] = "Aspect of the Hawk",
-							["Enabled"] = true,
 							["GUID"] = "TMW:icon:1V6noP8ARoel",
 							["States"] = {
 								{
@@ -1554,41 +1546,49 @@ TellMeWhenDB = {
 							},
 						}, -- [4]
 					},
+					["Point"] = {
+						["y"] = -5,
+						["point"] = "TOP",
+						["relativePoint"] = "TOP",
+					},
 					["Name"] = "Hunter Spells",
+					["Scale"] = 1,
+					["Columns"] = 20,
 					["Alpha"] = 0,
+					["Locked"] = true,
 				}, -- [2]
 				{
+					["GUID"] = "TMW:group:1TeVDtajUwqa",
+					["Name"] = "Hunter Rotation",
 					["Point"] = {
 						["y"] = -88,
 						["x"] = 4.069010416666670e-05,
 					},
-					["Scale"] = 1.5,
 					["Locked"] = true,
-					["OnlyInCombat"] = true,
+					["Scale"] = 1.5,
 					["Columns"] = 3,
 					["Icons"] = {
 						{
+							["Enabled"] = true,
 							["Type"] = "meta",
 							["Icons"] = {
 								"TMW:icon:1V6noP8ARoel", -- [1]
 								"TMW:icon:1TeVAjjavXC6", -- [2]
 							},
-							["Enabled"] = true,
 						}, -- [1]
 						{
+							["Enabled"] = true,
 							["Type"] = "meta",
 							["Icons"] = {
 								"TMW:icon:1TeVAjjXQ0WB", -- [1]
 								"TMW:icon:1V6lsULwY3_Y", -- [2]
 							},
-							["Enabled"] = true,
 						}, -- [2]
 					},
-					["Name"] = "Hunter Rotation",
-					["GUID"] = "TMW:group:1TeVDtajUwqa",
+					["OnlyInCombat"] = true,
 				}, -- [3]
 			},
-			["Locked"] = true,
+			["NumGroups"] = 3,
 		},
 		["Mxyz - Golemagg"] = {
 			["Version"] = 86907,

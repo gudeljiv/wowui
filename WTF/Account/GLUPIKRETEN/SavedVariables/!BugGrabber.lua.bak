@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 1425,
+	["session"] = 1437,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -604,5 +604,42 @@ BugGrabberDB = {
 			["session"] = 1425,
 			["counter"] = 5,
 		}, -- [76]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Experience.lua:124: attempt to perform arithmetic on global 'petPercent' (a nil value)",
+			["time"] = "2020/07/28 08:43:12",
+			["locals"] = "(*temporary) = <function> defined @Interface\\AddOns\\xVermin\\Experience.lua:32\n(*temporary) = nil\n(*temporary) = \"pet (23):\n6712 / 7350 (91%)\"\n(*temporary) = <userdata>\n(*temporary) = \"):\n\"\n(*temporary) = \"6712\"\n(*temporary) = \" / \"\n(*temporary) = \"7350\"\n(*temporary) = \" (\"\n(*temporary) = \"91\"\n(*temporary) = \"%)\"\n(*temporary) = \"attempt to perform arithmetic on global 'petPercent' (a nil value)\"\nnxp = 6371\ngained = 6371\ncxp = 0\nhmmm = -1\nmxp = 0\ncmtk = CustomContainer_CombatMobsToKill {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\npercent = Infinite\n_ = 1\nrested = 2\noutput = \"player (24): [rested x2] \n0 / 0 (nan%)\"\nPlayerExpFrame = PlayerExpFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nr = 0\ng = 1\nb = 0\nColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Experience.lua:32\nclass = \"HUNTER\"\npcxp = 6712\npmxp = 7350\nppercent = 91\nPetExpFrame = PetExpFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Experience.lua:124: in function <Interface\\AddOns\\xVermin\\Experience.lua:87>",
+			["session"] = 1427,
+			["counter"] = 1,
+		}, -- [77]
+		{
+			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'Details' tried to call the protected function 'AcceptBattlefieldPort()'.",
+			["time"] = "2020/07/28 10:12:16",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `AcceptBattlefieldPort'\nInterface\\FrameXML\\StaticPopup.lua:689: in function `OnAccept'\nInterface\\FrameXML\\StaticPopup.lua:5002: in function `StaticPopup_OnClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 1435,
+			["counter"] = 1,
+		}, -- [78]
+		{
+			["message"] = "Interface\\AddOns\\PerfectRaid\\Dongle.lua:363: Attempt to register unknown event \"UNIT_HEAL_PREDICTION\"",
+			["time"] = "2020/07/28 10:14:02",
+			["stack"] = "Interface\\AddOns\\PerfectRaid\\Dongle.lua:456: in function `TriggerMessage'\nInterface\\AddOns\\PerfectRaid\\PerfectRaid_Config.lua:151: in function `SaveOptions'\nInterface\\AddOns\\PerfectRaid\\PerfectRaid_Config.lua:123: in function <Interface\\AddOns\\PerfectRaid\\PerfectRaid_Config.lua:123>",
+			["session"] = 1435,
+			["counter"] = 1,
+		}, -- [79]
+		{
+			["message"] = "Interface\\AddOns\\PerfectRaid\\Dongle.lua:378: Attempt to unregister unknown event \"UNIT_HEAL_PREDICTION\"",
+			["time"] = "2020/07/28 10:14:10",
+			["stack"] = "Interface\\AddOns\\PerfectRaid\\Dongle.lua:456: in function `TriggerMessage'\nInterface\\AddOns\\PerfectRaid\\PerfectRaid_Config.lua:151: in function `SaveOptions'\nInterface\\AddOns\\PerfectRaid\\PerfectRaid_Config.lua:123: in function <Interface\\AddOns\\PerfectRaid\\PerfectRaid_Config.lua:123>",
+			["session"] = 1435,
+			["counter"] = 1,
+		}, -- [80]
+		{
+			["message"] = "...ns\\TellMeWhen\\Components\\Core\\Common\\PlayerNames.lua:96: attempt to concatenate field '?' (a nil value)",
+			["time"] = "2020/07/28 10:14:11",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "...ns\\TellMeWhen\\Components\\Core\\Common\\PlayerNames.lua:96: in function `?'\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:119: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:119>\n[C]: ?\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:29: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:64: in function `Fire'\n...ce\\AddOns\\Details\\Libs\\AceEvent-3.0\\AceEvent-3.0-4.lua:120: in function <...ce\\AddOns\\Details\\Libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
+			["session"] = 1435,
+			["counter"] = 4,
+		}, -- [81]
 	},
 }
