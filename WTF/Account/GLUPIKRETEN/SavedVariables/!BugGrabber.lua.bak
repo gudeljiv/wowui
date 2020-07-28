@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 1440,
 	["lastSanitation"] = 3,
-	["session"] = 1437,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -173,8 +173,8 @@ BugGrabberDB = {
 		}, -- [21]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["session"] = 1336,
 			["time"] = "2020/07/26 13:26:58",
+			["session"] = 1336,
 			["counter"] = 2,
 		}, -- [22]
 		{
@@ -562,8 +562,8 @@ BugGrabberDB = {
 		}, -- [70]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["time"] = "2020/07/27 20:37:46",
 			["session"] = 1423,
+			["time"] = "2020/07/27 20:37:46",
 			["counter"] = 4,
 		}, -- [71]
 		{
@@ -584,8 +584,8 @@ BugGrabberDB = {
 		}, -- [73]
 		{
 			["message"] = "(null)",
-			["time"] = "2020/07/24 16:00:06",
 			["session"] = 1425,
+			["time"] = "2020/07/24 16:00:06",
 			["counter"] = 15,
 		}, -- [74]
 		{

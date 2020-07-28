@@ -212,8 +212,8 @@ EavesDropStatsDB = {
 							["amount"] = 18,
 						},
 						[2] = {
-							["time"] = "|cffffffff07/24/20 11:59:27|r\n|Hunit:Player-4465-01CE7466:Mxyzptlk|hMxyzptlk's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffShadow Bolt|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-0-158-1501-00001A356A:Mindless Zombie|hMindless Zombie|h for |cffffffff25|r |cffffffffShadow|r.(Critical)",
-							["amount"] = 25,
+							["time"] = "|cffffffff07/28/20 01:04:05|r\n|Hunit:Player-4465-01CE7466:Mxyzptlk|hMxyzptlk's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffShadow Bolt|r|h hits |Hunit:Creature-0-4448-1-13-3100-00001FDCE3:Elder Mottled Boar|hElder Mottled Boar|h for |cffffffff26|r |cffffffffShadow|r.(Critical)",
+							["amount"] = 26,
 						},
 						["icon"] = 136197,
 					},

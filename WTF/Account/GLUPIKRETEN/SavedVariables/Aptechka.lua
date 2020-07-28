@@ -1,16 +1,17 @@
 
 AptechkaDB_Global = {
-	["profileKeys"] = {
-		["Mxzq - Golemagg"] = "Default",
-		["Mxyz - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default",
-	},
-	["DB_VERSION"] = 2,
 	["global"] = {
 		["useDebuffOrdering"] = false,
 		["showAFK"] = true,
 		["disableTooltip"] = true,
 		["borderWidth"] = 1,
+	},
+	["DB_VERSION"] = 2,
+	["profileKeys"] = {
+		["Mxzq - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
+		["Mxyz - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -26,15 +27,15 @@ AptechkaDB_Global = {
 			["powerTexture"] = "Smooth v2",
 			["stackFontName"] = "Arial Narrow",
 			["point"] = "LEFT",
-			["cropNamesLen"] = 15,
+			["debuffSize"] = 10,
 			["height"] = 18,
 			["groupGap"] = 6,
 			["petGroup"] = true,
 			["groupGrowth"] = "BOTTOM",
 			["width"] = 100,
-			["debuffSize"] = 7.7,
-			["nameFontSize"] = 10,
+			["cropNamesLen"] = 16,
 			["y"] = 231.946655273438,
+			["nameFontSize"] = 10,
 		},
 	},
 }
@@ -46,6 +47,11 @@ AptechkaConfigCustom = {
 	["WARLOCK"] = {
 	},
 	["SHAMAN"] = {
+	},
+	["WIDGET"] = {
+		["MouseoverStatus"] = {
+			["assignto"] = "autocastGlow",
+		},
 	},
 	["PRIEST"] = {
 	},
