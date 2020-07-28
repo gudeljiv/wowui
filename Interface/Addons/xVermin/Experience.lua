@@ -1,30 +1,6 @@
 --local font = "Interface\\AddOns\\xVermin\\media\\fontAtari.ttf"
 local _, class, _ = UnitClass("player")
-local r,
-	g,
-	b,
-	nxp,
-	hmmm,
-	gained,
-	num,
-	segment,
-	relperc,
-	r1,
-	r2,
-	g1,
-	g2,
-	b1,
-	b2,
-	f,
-	PetExpFrame,
-	PlayerExpFrame,
-	percent,
-	rested,
-	output,
-	pcxp,
-	pmxp,
-	ppercent,
-	cmtk
+local r, g, b, nxp, hmmm, gained, num, segment, relperc, r1, r2, g1, g2, b1, b2, f, PetExpFrame, PlayerExpFrame, percent, rested, output, pcxp, pmxp, ppercent, cmtk
 local cxp = UnitXP("player")
 local mxp = UnitXPMax("player")
 
@@ -83,18 +59,42 @@ cmtk.text:SetFont(config.font.arial, 10, "NONE")
 cmtk.text:SetPoint("RIGHT", CustomContainer_Combat, "RIGHT", -3, 0)
 cmtk:Hide()
 
-local function UpdateExperience()
+cmxg = CreateFrame("Frame", "CustomContainer_CombatXPgained", CustomContainer_Combat)
+cmxg:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 2)
+cmxg:SetWidth(10)
+cmxg:SetHeight(10)
+cmxg.text = cmxg:CreateFontString(nil, "ARTWORK")
+cmxg.text:SetFont(config.font.arial, 10, "NONE")
+cmxg.text:SetPoint("LEFT", CustomContainer_Combat, "RIGHT", 3, 0)
+cmxg:Hide()
+
+local function UpdateExperience(self, event, isInitialLogin, isReloadingUi)
+	if event == "PLAYER_ENTERING_WORLD" and (isInitialLogin or isReloadingUi) then
+		cxp = UnitXP("player")
+		mxp = UnitXPMax("player")
+	end
+
 	nxp = UnitXP("player")
 
 	------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	--- MOBS TO KILL -------------------------------------------------------------------------------------------------------------------------------------------------
 	------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	gained = nxp - cxp
+
 	if (gained > 0) then
 		hmmm = math.ceil((mxp - nxp) / gained)
 		cmtk.text:SetText(hmmm)
 		cmtk.text:SetTextColor(0.058, 0.901, 0.466, 1)
 		cmtk:Show()
+		cmxg.text:SetText("+" .. gained .. " (XP)")
+		cmxg.text:SetTextColor(0.058, 0.901, 0.466, 1)
+		UIFrameFadeIn(cmxg, 1, 0, 1)
+		C_Timer.After(
+			3,
+			function()
+				UIFrameFadeOut(cmxg, 1, 1, 0)
+			end
+		)
 	end
 
 	------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -119,7 +119,8 @@ local function UpdateExperience()
 		if UnitExists("pet") then
 			pcxp, pmxp = GetPetExperience()
 			ppercent = floor((pcxp / pmxp) * 100)
-			PetExpFrame.text:SetText("pet (" .. UnitLevel("pet") .. "):\n" .. pcxp .. " / " .. pmxp .. " (" .. ppercent .. "%)")
+			output = "pet (" .. UnitLevel("pet") .. "):\n" .. pcxp .. " / " .. pmxp .. " (" .. ppercent .. "%)"
+			PetExpFrame.text:SetText(output)
 			r, g, b = ColorGradient(ppercent / 100, 1, 0, 0, 1, 1, 0, 0, 1, 0)
 			PetExpFrame.text:SetTextColor(r, g, b, 1)
 			PetExpFrame:Show()
@@ -132,6 +133,7 @@ local function UpdateExperience()
 end
 
 local f = CreateFrame("Frame")
+f:RegisterEvent("PLAYER_ENTERING_WORLD")
 f:RegisterEvent("PLAYER_XP_UPDATE")
 f:RegisterEvent("UNIT_PET")
 f:SetScript("OnEvent", UpdateExperience)

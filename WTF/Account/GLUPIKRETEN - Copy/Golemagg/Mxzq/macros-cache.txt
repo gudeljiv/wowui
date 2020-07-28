@@ -1,0 +1,21 @@
+VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/petattack
+/startattack
+/cast multi-shot
+/cast !auto shot
+END
+VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/petattack
+/startattack
+/cast arcane shot
+/cast !auto shot
+END
+VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/petattack
+/startattack
+/cast serpent sting
+/cast !auto shot
+END

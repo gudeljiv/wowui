@@ -2,13 +2,13 @@
 AUCTIONATOR_SAVEDVARS = {
 	["_50000"] = 500,
 	["_2000"] = 100,
+	["_10000"] = 200,
+	["_500"] = 5,
+	["_1000000"] = 2500,
 	["_200000"] = 1000,
 	["STARTING_DISCOUNT"] = 5,
-	["_1000000"] = 2500,
-	["_5000000"] = 10000,
 	["LOG_DE_DATA_X"] = true,
-	["_500"] = 5,
-	["_10000"] = 200,
+	["_5000000"] = 10000,
 }
 AUCTIONATOR_PRICING_HISTORY = {
 	["Greater Astral Essence"] = {
@@ -28,17 +28,17 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["6301384"] = "1020:6",
 		["6297004"] = "910:13",
 		["is"] = "2592:0:0:0:0",
-		["6302304"] = "895:2",
-		["6296836"] = "2200:10",
+		["6306340"] = "2700:5",
+		["6303743"] = "499:5",
 		["6303742"] = "499:10",
-		["6295371"] = "1035:2",
+		["6305374"] = "995:10",
 		["6297839"] = "2000:10",
 		["6298232"] = "4560:4",
 		["6303740"] = "499:10",
 		["6305375"] = "995:6",
-		["6305374"] = "995:10",
-		["6303743"] = "499:5",
-		["6306340"] = "2700:5",
+		["6295371"] = "1035:2",
+		["6296836"] = "2200:10",
+		["6302304"] = "895:2",
 	},
 	["Moss Agate"] = {
 		["is"] = "1206:0:0:0:0",
@@ -54,9 +54,13 @@ AUCTIONATOR_PRICING_HISTORY = {
 	},
 	["Vision Dust"] = {
 		["is"] = "11137:0:0:0:0",
-		["6302304"] = "388:5",
-		["6298490"] = "405:17",
 		["6297009"] = "285:1",
+		["6298490"] = "405:17",
+		["6302304"] = "388:5",
+	},
+	["Superior Boots of the Owl"] = {
+		["is"] = "9802:0:0:764:0",
+		["6305372"] = "8771:1",
 	},
 	["Plans: Green Iron Shoulders"] = {
 		["is"] = "3870:0:0:0:0",
@@ -67,15 +71,17 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["is"] = "3576:0:0:0:0",
 		["6305595"] = "1230:14",
 	},
-	["Small Lustrous Pearl"] = {
-		["is"] = "5498:0:0:0:0",
-		["6301219"] = "231:3",
-		["6298490"] = "300:3",
-		["6296837"] = "321:3",
-	},
 	["Kingsblood"] = {
 		["is"] = "3356:0:0:0:0",
 		["6306320"] = "1690:2",
+	},
+	["Greater Magic Essence"] = {
+		["is"] = "10939:0:0:0:0",
+		["6297009"] = "980:5",
+	},
+	["Silver Bar"] = {
+		["is"] = "2842:0:0:0:0",
+		["6306340"] = "815:3",
 	},
 	["Defender Boots of the Bear"] = {
 		["is"] = "6573:0:0:1186:0",
@@ -103,15 +109,19 @@ AUCTIONATOR_PRICING_HISTORY = {
 	["Small Glowing Shard"] = {
 		["is"] = "11138:0:0:0:0",
 		["6298489"] = "247:1",
+		["6307059"] = "348:1",
 		["6297009"] = "258:1",
 	},
-	["Greater Magic Essence"] = {
-		["is"] = "10939:0:0:0:0",
-		["6297009"] = "980:5",
+	["Large Glowing Shard"] = {
+		["6298489"] = "4585:1",
+		["6297009"] = "1200:1",
+		["is"] = "11139:0:0:0:0",
+		["6301219"] = "995:1",
+		["6302303"] = "965:1",
 	},
-	["Lesser Nether Essence"] = {
-		["is"] = "11174:0:0:0:0",
-		["6297009"] = "9100:2",
+	["Scroll of Strength II"] = {
+		["is"] = "2289:0:0:0:0",
+		["6298490"] = "1440:1",
 	},
 	["Copper Bar"] = {
 		["is"] = "2840:0:0:0:0",
@@ -121,14 +131,14 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["is"] = "3369:0:0:0:0",
 		["6306322"] = "9100:3",
 	},
-	["Citrine"] = {
-		["6302303"] = "900:1",
-		["6304102"] = "845:1",
-		["is"] = "3864:0:0:0:0",
+	["Light Feather"] = {
+		["is"] = "17056:0:0:0:0",
+		["6297839"] = "2800:10",
+		["6295371"] = "3500:1",
 	},
-	["Coarse Stone"] = {
-		["is"] = "2836:0:0:0:0",
-		["6306340"] = "3100:2",
+	["Lesser Nether Essence"] = {
+		["is"] = "11174:0:0:0:0",
+		["6297009"] = "9100:2",
 	},
 	["Bolt of Woolen Cloth"] = {
 		["is"] = "2997:0:0:0:0",
@@ -139,8 +149,8 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["6302800"] = "68500:1",
 		["6305373"] = "37000:1",
 		["is"] = "7752:0:0:0:0",
-		["6301220"] = "89000:1",
 		["6297005"] = "99000:1",
+		["6301220"] = "89000:1",
 	},
 	["Swiftthistle"] = {
 		["is"] = "2452:0:0:0:0",
@@ -149,35 +159,36 @@ AUCTIONATOR_PRICING_HISTORY = {
 	},
 	["Fighter Broadsword of the Bear"] = {
 		["is"] = "15212:0:0:1182:0",
-		["6303742"] = "40000:1",
 		["6305373"] = "9800:1",
+		["6303742"] = "40000:1",
 	},
-	["Small Radiant Shard"] = {
-		["is"] = "11177:0:0:0:0",
-		["6298489"] = "30800:1",
-		["6297008"] = "34800:1",
-		["6302303"] = "19800:1",
+	["Bronze Bar"] = {
+		["is"] = "2841:0:0:0:0",
+		["6306339"] = "1995:10",
+		["6305595"] = "1970:14",
 	},
 	["Greater Mystic Essence"] = {
 		["6298489"] = "1335:7",
 		["6304102"] = "1515:7",
 		["is"] = "11135:0:0:0:0",
 		["6306388"] = "1185:1",
+		["6305374"] = "1280:1",
 		["6302800"] = "1795:6",
 		["6297009"] = "1390:7",
 		["6302303"] = "1795:7",
 		["6301219"] = "2000:2",
 		["6298490"] = "1335:7",
-		["6305374"] = "1280:1",
+		["6307059"] = "975:4",
 	},
 	["Lesser Mystic Essence"] = {
 		["is"] = "11134:0:0:0:0",
 		["6298490"] = "800:7",
 		["6297009"] = "840:4",
 	},
-	["Soul Dust"] = {
-		["is"] = "11083:0:0:0:0",
-		["6297009"] = "930:6",
+	["Pattern: Azure Shoulders"] = {
+		["is"] = "7085:0:0:0:0",
+		["6297004"] = "25400:1",
+		["6298490"] = "24000:1",
 	},
 	["Malachite"] = {
 		["is"] = "774:0:0:0:0",
@@ -187,20 +198,23 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["is"] = "2775:0:0:0:0",
 		["6297004"] = "4100:3",
 	},
-	["Briarthorn"] = {
-		["is"] = "2450:0:0:0:0",
-		["6297004"] = "285:5",
+	["Medicine Staff of the Whale"] = {
+		["is"] = "4575:0:0:1018:0",
+		["6305374"] = "9800:1",
 	},
-	["Mana Potion"] = {
-		["is"] = "3827:0:0:0:0",
-		["6298490"] = "1200:1",
-		["6298183"] = "745:4",
-		["6301220"] = "750:1",
+	["Silk Cloth"] = {
+		["6303742"] = "184:4",
+		["6297004"] = "348:13",
+		["6305374"] = "189:10",
+		["6298491"] = "200:16",
+		["6296837"] = "174:2",
+		["is"] = "4306:0:0:0:0",
+		["6302304"] = "174:19",
 	},
-	["Mageweave Cloth"] = {
-		["is"] = "4338:0:0:0:0",
-		["6297004"] = "390:16",
-		["6302304"] = "675:8",
+	["Greenweave Sandals of the Owl"] = {
+		["is"] = "9767:0:0:761:0",
+		["6305373"] = "9800:1",
+		["6303742"] = "30000:1",
 	},
 	["Brimstone Belt"] = {
 		["is"] = "4785:0:0:0:0",
@@ -211,61 +225,58 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["6302800"] = "50000:1",
 		["6305373"] = "40000:1",
 		["is"] = "12989:0:0:0:0",
-		["6301220"] = "49800:1",
-		["6298490"] = "59500:1",
 		["6296837"] = "149500:1",
+		["6298490"] = "59500:1",
+		["6301220"] = "49800:1",
+	},
+	["Lesser Astral Essence"] = {
+		["is"] = "10998:0:0:0:0",
+		["6307059"] = "2400:1",
 	},
 	["Iron Bar"] = {
 		["is"] = "3575:0:0:0:0",
 		["6306355"] = "4800:2",
+		["6307052"] = "4900:10",
+		["6307053"] = "4900:3",
 	},
-	["Greenweave Sandals of the Owl"] = {
-		["is"] = "9767:0:0:761:0",
-		["6303742"] = "30000:1",
-		["6305373"] = "9800:1",
+	["Mageweave Cloth"] = {
+		["is"] = "4338:0:0:0:0",
+		["6297004"] = "390:16",
+		["6302304"] = "675:8",
 	},
-	["Silk Cloth"] = {
-		["6302304"] = "174:19",
-		["6297004"] = "348:13",
-		["6298491"] = "200:16",
-		["is"] = "4306:0:0:0:0",
-		["6296837"] = "174:2",
-		["6305374"] = "189:10",
-		["6303742"] = "184:4",
+	["Mana Potion"] = {
+		["is"] = "3827:0:0:0:0",
+		["6298183"] = "745:4",
+		["6298490"] = "1200:1",
+		["6301220"] = "750:1",
 	},
-	["Medicine Staff of the Whale"] = {
-		["is"] = "4575:0:0:1018:0",
-		["6305374"] = "9800:1",
+	["Briarthorn"] = {
+		["is"] = "2450:0:0:0:0",
+		["6297004"] = "285:5",
 	},
-	["Pattern: Azure Shoulders"] = {
-		["is"] = "7085:0:0:0:0",
-		["6297004"] = "25400:1",
-		["6298490"] = "24000:1",
+	["Soul Dust"] = {
+		["is"] = "11083:0:0:0:0",
+		["6307059"] = "347:2",
+		["6297009"] = "930:6",
 	},
-	["Bronze Bar"] = {
-		["is"] = "2841:0:0:0:0",
-		["6305595"] = "1970:14",
-		["6306339"] = "1995:10",
+	["Small Radiant Shard"] = {
+		["is"] = "11177:0:0:0:0",
+		["6298489"] = "30800:1",
+		["6297008"] = "34800:1",
+		["6302303"] = "19800:1",
 	},
-	["Light Feather"] = {
-		["is"] = "17056:0:0:0:0",
-		["6297839"] = "2800:10",
-		["6295371"] = "3500:1",
+	["Coarse Stone"] = {
+		["is"] = "2836:0:0:0:0",
+		["6306340"] = "3100:2",
 	},
-	["Scroll of Strength II"] = {
-		["is"] = "2289:0:0:0:0",
-		["6298490"] = "1440:1",
+	["Small Glimmering Shard"] = {
+		["is"] = "10978:0:0:0:0",
+		["6307059"] = "218:1",
 	},
-	["Large Glowing Shard"] = {
-		["6298489"] = "4585:1",
-		["6297009"] = "1200:1",
-		["is"] = "11139:0:0:0:0",
-		["6301219"] = "995:1",
-		["6302303"] = "965:1",
-	},
-	["Silver Bar"] = {
-		["is"] = "2842:0:0:0:0",
-		["6306340"] = "815:3",
+	["Citrine"] = {
+		["6302303"] = "900:1",
+		["6304102"] = "845:1",
+		["is"] = "3864:0:0:0:0",
 	},
 	["Peacebloom"] = {
 		["is"] = "2447:0:0:0:0",
@@ -276,64 +287,66 @@ AUCTIONATOR_PRICING_HISTORY = {
 		["6305374"] = "115:1",
 		["6303743"] = "178:1",
 	},
-	["Superior Boots of the Owl"] = {
-		["is"] = "9802:0:0:764:0",
-		["6305372"] = "8771:1",
+	["Small Lustrous Pearl"] = {
+		["is"] = "5498:0:0:0:0",
+		["6301219"] = "231:3",
+		["6298490"] = "300:3",
+		["6296837"] = "321:3",
 	},
 }
 AUCTIONATOR_SHOPPING_LISTS = {
 	{
 		["items"] = {
-			"Swifthistle", -- [1]
-			"of fire", -- [2]
-			"Mithril bar", -- [3]
-			"ore", -- [4]
-			"Bronze bar", -- [5]
-			"Iron Bar", -- [6]
-			"Iron ore", -- [7]
-			"Wool Cloth", -- [8]
-			"Tin ore", -- [9]
-			"Tin Bar", -- [10]
-			"Copper Ore", -- [11]
-			"Copper bar", -- [12]
-			"Tin", -- [13]
-			"Silver bar", -- [14]
-			"Silver ore", -- [15]
-			"Silverleaf", -- [16]
-			"Runecloth", -- [17]
-			"Bag", -- [18]
-			"Mageweave bag", -- [19]
-			"Runecloth bag", -- [20]
-			"{ Herbs }", -- [21]
-			"Dreamfoil", -- [22]
-			"Mana potion", -- [23]
-			"Greater Mana", -- [24]
-			"Arcan", -- [25]
-			"Arcane Crystal", -- [26]
-			"flask", -- [27]
-			"orb", -- [28]
-			"Silk Cloth", -- [29]
-			"{ Cloth }", -- [30]
-			"Bar", -- [31]
-			"Mageweave", -- [32]
-			"Linen cloth", -- [33]
-			"Essence", -- [34]
-			"Abyss Crystal", -- [35]
-			"Leather", -- [36]
-			"Gloves", -- [37]
-			"Liferoot", -- [38]
-			"Troll", -- [39]
-			"Shredder operating", -- [40]
-			"Blunder", -- [41]
-			"Greater Magic Essence", -- [42]
-			"Arcanite Ore", -- [43]
-			"Arcanite Bar", -- [44]
-			"Tigerseye", -- [45]
-			"cloth", -- [46]
-			"Runcloth", -- [47]
-			"Sun's Radiance", -- [48]
-			"Avenger's", -- [49]
-			"Trillium Bar", -- [50]
+			"Ingot", -- [1]
+			"Edgemaster", -- [2]
+			"{ Iron }", -- [3]
+			"\"Iron ore\"", -- [4]
+			"Swifthistle", -- [5]
+			"of fire", -- [6]
+			"Mithril bar", -- [7]
+			"ore", -- [8]
+			"Bronze bar", -- [9]
+			"Iron Bar", -- [10]
+			"Iron ore", -- [11]
+			"Wool Cloth", -- [12]
+			"Tin ore", -- [13]
+			"Tin Bar", -- [14]
+			"Copper Ore", -- [15]
+			"Copper bar", -- [16]
+			"Tin", -- [17]
+			"Silver bar", -- [18]
+			"Silver ore", -- [19]
+			"Silverleaf", -- [20]
+			"Runecloth", -- [21]
+			"Bag", -- [22]
+			"Mageweave bag", -- [23]
+			"Runecloth bag", -- [24]
+			"{ Herbs }", -- [25]
+			"Dreamfoil", -- [26]
+			"Mana potion", -- [27]
+			"Greater Mana", -- [28]
+			"Arcan", -- [29]
+			"Arcane Crystal", -- [30]
+			"flask", -- [31]
+			"orb", -- [32]
+			"Silk Cloth", -- [33]
+			"{ Cloth }", -- [34]
+			"Bar", -- [35]
+			"Mageweave", -- [36]
+			"Linen cloth", -- [37]
+			"Essence", -- [38]
+			"Abyss Crystal", -- [39]
+			"Leather", -- [40]
+			"Gloves", -- [41]
+			"Liferoot", -- [42]
+			"Troll", -- [43]
+			"Shredder operating", -- [44]
+			"Blunder", -- [45]
+			"Greater Magic Essence", -- [46]
+			"Arcanite Ore", -- [47]
+			"Arcanite Bar", -- [48]
+			"Tigerseye", -- [49]
+			"cloth", -- [50]
 		},
 		["isRecents"] = 1,
 		["name"] = "Recent Searches",
@@ -383,231 +396,244 @@ AUCTIONATOR_SHOPPING_LISTS = {
 		["name"] = "Herbs",
 		["isSorted"] = true,
 	}, -- [3]
+	{
+		["items"] = {
+			"\"Iron bar\"", -- [1]
+			"\"Iron ore\"", -- [2]
+		},
+		["name"] = "Iron",
+		["isSorted"] = true,
+	}, -- [4]
 }
 AUCTIONATOR_SHOPPING_LISTS_MIGRATED_V2 = true
 AUCTIONATOR_PRICE_DATABASE = {
 	["Dreadmist_Horde"] = {
-		["Aboriginal Loincloth of the Whale"] = {
-			["H3212"] = 799,
-			["cc"] = 4,
-			["id"] = "14119:0:0:1015:0",
-			["sc"] = 1,
-			["mr"] = 799,
-		},
 		["Bloodspattered Loincloth of the Whale"] = {
 			["H3212"] = 3000,
 			["cc"] = 4,
 			["id"] = "15493:0:0:1015:0",
-			["sc"] = 3,
 			["mr"] = 3000,
+			["sc"] = 3,
+		},
+		["Aboriginal Loincloth of the Whale"] = {
+			["H3212"] = 799,
+			["cc"] = 4,
+			["id"] = "14119:0:0:1015:0",
+			["mr"] = 799,
+			["sc"] = 1,
 		},
 		["Bloodspattered Loincloth of the Boar"] = {
 			["H3212"] = 1000,
 			["cc"] = 4,
 			["id"] = "15493:0:0:1098:0",
-			["sc"] = 3,
 			["mr"] = 1000,
+			["sc"] = 3,
 		},
-		["Sage's Cloth of Intellect"] = {
-			["H3212"] = 13085,
+		["Barbaric Loincloth"] = {
+			["H3212"] = 400,
 			["cc"] = 4,
-			["id"] = "6609:0:0:178:0",
+			["id"] = "3309:0:0:0:0",
+			["mr"] = 400,
 			["sc"] = 1,
-			["mr"] = 13085,
 		},
-		["Silk Cloth"] = {
-			["H3212"] = 243,
+		["Bolt of Silk Cloth"] = {
+			["H3212"] = 2100,
 			["cc"] = 7,
-			["id"] = "4306:0:0:0:0",
+			["id"] = "4305:0:0:0:0",
+			["mr"] = 2100,
 			["sc"] = 0,
-			["mr"] = 243,
 		},
 		["Wool Cloth"] = {
 			["H3212"] = 177,
 			["cc"] = 7,
 			["id"] = "2592:0:0:0:0",
-			["sc"] = 0,
 			["mr"] = 177,
+			["sc"] = 0,
 		},
-		["Barbaric Cloth Vest"] = {
-			["H3212"] = 900,
+		["Ivycloth Gloves of the Owl"] = {
+			["H3212"] = 4000,
 			["cc"] = 4,
-			["id"] = "3310:0:0:0:0",
+			["id"] = "9795:0:0:765:0",
+			["mr"] = 4000,
 			["sc"] = 1,
-			["mr"] = 900,
 		},
 		["Aboriginal Loincloth of Healing"] = {
 			["H3212"] = 795,
 			["cc"] = 4,
 			["id"] = "14119:0:0:2031:0",
-			["sc"] = 1,
 			["mr"] = 795,
-		},
-		["Ivycloth Gloves of the Eagle"] = {
-			["H3212"] = 16500,
-			["cc"] = 4,
-			["id"] = "9795:0:0:850:0",
 			["sc"] = 1,
-			["mr"] = 16500,
+		},
+		["Bloodspattered Loincloth of the Eagle"] = {
+			["H3212"] = 1999,
+			["cc"] = 4,
+			["id"] = "15493:0:0:843:0",
+			["mr"] = 1999,
+			["sc"] = 3,
 		},
 		["Ivycloth Boots of the Whale"] = {
 			["H3212"] = 7011,
 			["cc"] = 4,
 			["id"] = "9792:0:0:1019:0",
 			["L3212"] = 6999,
-			["sc"] = 1,
 			["mr"] = 6999,
+			["sc"] = 1,
 		},
-		["Bloodspattered Loincloth of the Eagle"] = {
-			["H3212"] = 1999,
+		["Ivycloth Gloves of the Eagle"] = {
+			["H3212"] = 16500,
 			["cc"] = 4,
-			["id"] = "15493:0:0:843:0",
-			["sc"] = 3,
-			["mr"] = 1999,
+			["id"] = "9795:0:0:850:0",
+			["mr"] = 16500,
+			["sc"] = 1,
 		},
 		["Bolt of Woolen Cloth"] = {
 			["H3212"] = 699,
 			["cc"] = 7,
 			["id"] = "2997:0:0:0:0",
-			["sc"] = 0,
 			["mr"] = 699,
+			["sc"] = 0,
+		},
+		["Mageweave Cloth"] = {
+			["H3212"] = 1500,
+			["cc"] = 7,
+			["id"] = "4338:0:0:0:0",
+			["mr"] = 1500,
+			["sc"] = 0,
 		},
 		["Aboriginal Loincloth of the Owl"] = {
 			["H3212"] = 900,
 			["cc"] = 4,
 			["id"] = "14119:0:0:760:0",
-			["sc"] = 1,
 			["mr"] = 900,
-		},
-		["Linen Cloth"] = {
-			["H3212"] = 20,
-			["cc"] = 7,
-			["id"] = "2589:0:0:0:0",
-			["sc"] = 0,
-			["mr"] = 20,
+			["sc"] = 1,
 		},
 		["Bloodspattered Loincloth of the Bear"] = {
 			["H3212"] = 1800,
 			["cc"] = 4,
 			["id"] = "15493:0:0:1185:0",
 			["L3212"] = 1000,
-			["sc"] = 3,
 			["mr"] = 1000,
+			["sc"] = 3,
 		},
 		["Aboriginal Loincloth of Fiery Wrath"] = {
 			["H3212"] = 600,
 			["cc"] = 4,
 			["id"] = "14119:0:0:1878:0",
-			["sc"] = 1,
 			["mr"] = 600,
+			["sc"] = 1,
 		},
 		["Aboriginal Loincloth of Spirit"] = {
 			["H3212"] = 4595,
 			["cc"] = 4,
 			["id"] = "14119:0:0:95:0",
-			["sc"] = 1,
 			["mr"] = 4595,
+			["sc"] = 1,
 		},
 		["Bolt of Runecloth"] = {
 			["H3212"] = 30000,
 			["cc"] = 7,
 			["id"] = "14048:0:0:0:0",
-			["sc"] = 0,
 			["mr"] = 30000,
-		},
-		["Bloodspattered Loincloth of Power"] = {
-			["H3212"] = 899,
-			["cc"] = 4,
-			["id"] = "15493:0:0:1551:0",
-			["sc"] = 3,
-			["mr"] = 899,
-		},
-		["Barbaric Cloth Robe"] = {
-			["H3212"] = 981,
-			["cc"] = 4,
-			["id"] = "6531:0:0:0:0",
-			["sc"] = 1,
-			["mr"] = 981,
-		},
-		["Barbaric Cloth Gloves"] = {
-			["H3212"] = 593,
-			["cc"] = 4,
-			["id"] = "3308:0:0:0:0",
-			["sc"] = 1,
-			["mr"] = 593,
-		},
-		["Ceremonial Leather Loincloth"] = {
-			["H3212"] = 690,
-			["cc"] = 4,
-			["id"] = "3315:0:0:0:0",
-			["sc"] = 2,
-			["mr"] = 690,
+			["sc"] = 0,
 		},
 		["Barbaric Cloth Cloak"] = {
 			["H3212"] = 200,
 			["cc"] = 4,
 			["id"] = "4686:0:0:0:0",
-			["sc"] = 1,
 			["mr"] = 200,
+			["sc"] = 1,
 		},
-		["Mageweave Cloth"] = {
-			["H3212"] = 1500,
+		["Barbaric Cloth Robe"] = {
+			["H3212"] = 981,
+			["cc"] = 4,
+			["id"] = "6531:0:0:0:0",
+			["mr"] = 981,
+			["sc"] = 1,
+		},
+		["Barbaric Cloth Gloves"] = {
+			["H3212"] = 593,
+			["cc"] = 4,
+			["id"] = "3308:0:0:0:0",
+			["mr"] = 593,
+			["sc"] = 1,
+		},
+		["Ceremonial Leather Loincloth"] = {
+			["H3212"] = 690,
+			["cc"] = 4,
+			["id"] = "3315:0:0:0:0",
+			["mr"] = 690,
+			["sc"] = 2,
+		},
+		["Bloodspattered Loincloth of Power"] = {
+			["H3212"] = 899,
+			["cc"] = 4,
+			["id"] = "15493:0:0:1551:0",
+			["mr"] = 899,
+			["sc"] = 3,
+		},
+		["Linen Cloth"] = {
+			["H3212"] = 20,
 			["cc"] = 7,
-			["id"] = "4338:0:0:0:0",
+			["id"] = "2589:0:0:0:0",
+			["mr"] = 20,
 			["sc"] = 0,
-			["mr"] = 1500,
 		},
 		["Bolt of Linen Cloth"] = {
 			["H3212"] = 55,
 			["cc"] = 7,
 			["id"] = "2996:0:0:0:0",
-			["sc"] = 0,
 			["mr"] = 55,
+			["sc"] = 0,
 		},
 		["Barbaric Cloth Boots"] = {
 			["H3212"] = 899,
 			["cc"] = 4,
 			["id"] = "3307:0:0:0:0",
-			["sc"] = 1,
 			["mr"] = 899,
-		},
-		["Ivycloth Gloves of the Owl"] = {
-			["H3212"] = 4000,
-			["cc"] = 4,
-			["id"] = "9795:0:0:765:0",
 			["sc"] = 1,
-			["mr"] = 4000,
 		},
-		["Bolt of Silk Cloth"] = {
-			["H3212"] = 2100,
+		["Barbaric Cloth Vest"] = {
+			["H3212"] = 900,
+			["cc"] = 4,
+			["id"] = "3310:0:0:0:0",
+			["mr"] = 900,
+			["sc"] = 1,
+		},
+		["Silk Cloth"] = {
+			["H3212"] = 243,
 			["cc"] = 7,
-			["id"] = "4305:0:0:0:0",
+			["id"] = "4306:0:0:0:0",
+			["mr"] = 243,
 			["sc"] = 0,
-			["mr"] = 2100,
 		},
-		["Barbaric Loincloth"] = {
-			["H3212"] = 400,
+		["Sage's Cloth of Intellect"] = {
+			["H3212"] = 13085,
 			["cc"] = 4,
-			["id"] = "3309:0:0:0:0",
+			["id"] = "6609:0:0:178:0",
+			["mr"] = 13085,
 			["sc"] = 1,
-			["mr"] = 400,
 		},
 		["Bloodspattered Loincloth of the Tiger"] = {
 			["H3212"] = 2200,
 			["cc"] = 4,
 			["id"] = "15493:0:0:673:0",
-			["sc"] = 3,
 			["mr"] = 2200,
+			["sc"] = 3,
 		},
 	},
 	["Golemagg_Horde"] = {
 		["Pattern: Azure Shoulders"] = {
 			["H3539"] = 23166,
-			["sc"] = 2,
-			["H3540"] = 22800,
 			["cc"] = 9,
-			["mr"] = 22800,
+			["mr"] = 10000,
 			["id"] = "7085:0:0:0:0",
+			["H3540"] = 22800,
+			["H3543"] = 10000,
+			["sc"] = 2,
+		},
+		["Battleforge Wristguards of the Bear"] = {
+			["H3543"] = 12000,
+			["mr"] = 12000,
 		},
 		["Lunar Wand of Fiery Wrath"] = {
 			["H3537"] = 209998,
@@ -617,75 +643,46 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 130000,
 			["mr"] = 130000,
 		},
-		["Scaled Leather Boots of the Eagle"] = {
-			["H3537"] = 15535,
-			["mr"] = 15535,
-		},
-		["Oak Mallet of the Tiger"] = {
-			["H3537"] = 6624,
-			["mr"] = 6624,
-		},
 		["Twilight Cultist Medallion of Station"] = {
 			["H3540"] = 144500,
 			["H3539"] = 159500,
-			["mr"] = 144500,
+			["H3543"] = 139000,
+			["mr"] = 139000,
 		},
-		["Lordly Armguards"] = {
-			["H3537"] = 48600,
-			["mr"] = 48600,
+		["Myrmidon's Defender"] = {
+			["H3537"] = 55400,
+			["mr"] = 55400,
 		},
-		["Arcane Elixir"] = {
-			["mr"] = 10397,
-			["cc"] = 0,
-			["H3540"] = 10397,
-			["H3539"] = 10998,
-			["id"] = "9155:0:0:0:0",
-			["sc"] = 0,
-		},
-		["Regal Sash of the Whale"] = {
-			["mr"] = 37500,
-			["H3539"] = 37500,
-		},
-		["Frostweave Tunic"] = {
-			["mr"] = 149998,
-			["H3539"] = 149998,
-		},
-		["Mithril Shield Spike"] = {
-			["H3537"] = 54472,
-			["mr"] = 54472,
-		},
-		["The Ziggler"] = {
-			["mr"] = 129999,
-			["H3539"] = 129999,
+		["Twin-bladed Axe of Power"] = {
+			["H3543"] = 8749,
+			["mr"] = 8749,
 		},
 		["Murphstar of the Bear"] = {
-			["mr"] = 30000,
+			["mr"] = 49999,
+			["H3543"] = 49999,
 			["H3539"] = 30000,
 		},
 		["Buccaneer's Orb of Frozen Wrath"] = {
-			["mr"] = 19999,
+			["mr"] = 3997,
 			["cc"] = 4,
 			["id"] = "15912:0:0:1954:0",
 			["sc"] = 0,
+			["H3543"] = 3997,
 			["H3542"] = 19999,
-		},
-		["Defender Boots of the Gorilla"] = {
-			["mr"] = 11256,
-			["H3539"] = 11256,
-		},
-		["Ornate Mithril Breastplate"] = {
-			["H3537"] = 86302,
-			["mr"] = 86302,
 		},
 		["Abyssal Plate Legplates of Striking"] = {
 			["H3540"] = 789000,
 			["H3539"] = 449000,
-			["mr"] = 789000,
+			["H3543"] = 499895,
+			["mr"] = 499895,
 		},
-		["Dense Sharpening Stone"] = {
-			["H3540"] = 1800,
-			["H3539"] = 1895,
-			["mr"] = 1800,
+		["Chieftain's Headdress of the Monkey"] = {
+			["H3539"] = 100000,
+			["mr"] = 100000,
+		},
+		["Ranger Helm of the Bear"] = {
+			["H3543"] = 29999,
+			["mr"] = 29999,
 		},
 		["Banded Cloak of the Bear"] = {
 			["H3537"] = 9800,
@@ -693,227 +690,144 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Abyssal Plate Gauntlets of Striking"] = {
 			["H3540"] = 39000,
-			["mr"] = 39000,
+			["mr"] = 70000,
+			["H3543"] = 70000,
 		},
-		["Glowstar Rod of Healing"] = {
-			["mr"] = 214837,
-			["H3539"] = 214837,
+		["Lesser Mana Potion"] = {
+			["H3539"] = 2299,
+			["mr"] = 699,
+			["cc"] = 0,
+			["H3540"] = 2143,
+			["id"] = "3385:0:0:0:0",
+			["sc"] = 0,
+			["H3543"] = 699,
+			["H3542"] = 960,
 		},
 		["Eye of Flame"] = {
 			["H3540"] = 389999,
-			["mr"] = 389999,
+			["mr"] = 250000,
+			["H3543"] = 250000,
 			["H3539"] = 399000,
 		},
 		["Chillwind E'ko"] = {
 			["H3540"] = 22400,
 			["H3539"] = 16500,
-			["mr"] = 22400,
+			["H3543"] = 20000,
+			["mr"] = 20000,
 		},
 		["Stormgale Fists"] = {
 			["H3537"] = 50000,
 			["mr"] = 50000,
 		},
-		["Blush Ember Ring"] = {
-			["mr"] = 97975,
-			["H3539"] = 97975,
-		},
-		["Spectral Necklace of Agility"] = {
-			["H3537"] = 85000,
-			["mr"] = 85000,
-		},
 		["Sequoia Hammer of Arcane Wrath"] = {
 			["H3537"] = 20150,
 			["mr"] = 20150,
 		},
-		["Eight of Portals"] = {
-			["mr"] = 60000,
-			["H3539"] = 60000,
-		},
 		["Formula: Enchant 2H Weapon - Superior Impact"] = {
-			["mr"] = 666666,
 			["H3539"] = 666666,
+			["mr"] = 666666,
 		},
-		["Bloodspattered Shield of Agility"] = {
-			["H3537"] = 3200,
-			["mr"] = 3200,
-		},
-		["Opal Ring of Fire Resistance"] = {
-			["mr"] = 890000,
-			["cc"] = 4,
-			["H3539"] = 894999,
-			["id"] = "11980:0:0:1419:0",
-			["sc"] = 0,
-			["H3543"] = 890000,
-			["H3540"] = 898000,
-		},
-		["Notched Shortsword of Stamina"] = {
-			["H3537"] = 3021,
-			["mr"] = 3021,
+		["Elegant Gloves of the Owl"] = {
+			["H3540"] = 25276,
+			["mr"] = 25276,
 		},
 		["Raw Sagefish"] = {
 			["H3540"] = 1499,
-			["mr"] = 1499,
+			["mr"] = 2100,
+			["H3543"] = 2100,
 		},
 		["Mystic's Bracelets"] = {
 			["H3537"] = 5500,
 			["mr"] = 5500,
 		},
-		["Selenium Loop of the Owl"] = {
-			["H3540"] = 158461,
-			["mr"] = 158461,
-			["H3539"] = 133333,
-		},
-		["Firebloom"] = {
-			["mr"] = 7800,
-			["cc"] = 7,
-			["H3540"] = 7800,
-			["H3539"] = 9899,
-			["id"] = "4625:0:0:0:0",
-			["sc"] = 0,
+		["Elegant Cloak of the Owl"] = {
+			["H3540"] = 150000,
+			["mr"] = 79900,
+			["H3543"] = 79900,
 		},
 		["Ironpatch Blade"] = {
 			["H3540"] = 169998,
-			["mr"] = 169998,
+			["mr"] = 280000,
+			["H3543"] = 280000,
 			["H3539"] = 200000,
-		},
-		["Native Pants of the Eagle"] = {
-			["mr"] = 5501,
-			["H3539"] = 5501,
 		},
 		["Pattern: Felcloth Robe"] = {
 			["H3540"] = 39500,
 			["H3539"] = 9999,
-			["mr"] = 39500,
+			["H3543"] = 59000,
+			["mr"] = 59000,
 		},
 		["Underworld Band"] = {
 			["H3540"] = 1200000,
-			["mr"] = 1200000,
+			["mr"] = 1000000,
+			["H3543"] = 1000000,
 			["H3539"] = 1199998,
 		},
-		["Solid Blasting Powder"] = {
-			["H3539"] = 7300,
-			["sc"] = 1,
-			["cc"] = 7,
-			["H3540"] = 7223,
-			["id"] = "10505:0:0:0:0",
-			["mr"] = 9400,
-			["H3542"] = 9400,
+		["Recipe: Elixir of Giants"] = {
+			["H3540"] = 39499,
+			["H3539"] = 45530,
+			["H3543"] = 9950,
+			["mr"] = 9950,
 		},
-		["Bottom Half of Advanced Armorsmithing: Volume II"] = {
-			["H3539"] = 17999,
-			["mr"] = 17999,
-		},
-		["Scouting Gloves of the Wolf"] = {
-			["H3540"] = 50000,
-			["mr"] = 50000,
-		},
-		["Tuxedo Jacket"] = {
-			["H3540"] = 56379,
-			["mr"] = 56379,
-		},
-		["Standard Scope"] = {
-			["H3540"] = 14674,
-			["mr"] = 14674,
-		},
-		["Colossal Great Axe of the Bear"] = {
-			["H3540"] = 74500,
-			["mr"] = 74500,
+		["Ritual Bands of the Whale"] = {
+			["H3537"] = 9900,
+			["mr"] = 9900,
 		},
 		["Felcloth Hood"] = {
 			["H3540"] = 222289,
 			["H3539"] = 47383,
-			["mr"] = 222289,
+			["H3543"] = 99000,
+			["mr"] = 99000,
 		},
-		["Black Mageweave Gloves"] = {
-			["mr"] = 7508,
-			["sc"] = 1,
-			["id"] = "10003:0:0:0:0",
-			["cc"] = 4,
-			["H3540"] = 7508,
-			["H3539"] = 8000,
+		["Plated Armorfish"] = {
+			["H3537"] = 4999,
+			["mr"] = 4999,
 		},
-		["Elemental Air"] = {
-			["H3540"] = 1480,
-			["H3539"] = 4498,
-			["mr"] = 1480,
+		["Pattern: Orange Martial Shirt"] = {
+			["H3537"] = 63477,
+			["mr"] = 63477,
 		},
-		["Soldier's Armor of the Gorilla"] = {
-			["H3537"] = 5000,
-			["mr"] = 5000,
+		["Swashbuckler's Leggings of the Monkey"] = {
+			["H3543"] = 733282,
+			["mr"] = 733282,
 		},
-		["Weak Troll's Blood Potion"] = {
-			["H3540"] = 1095,
-			["mr"] = 1095,
-			["H3539"] = 1097,
+		["Blackforge Girdle"] = {
+			["H3537"] = 53736,
+			["mr"] = 53736,
 		},
-		["Abyssal Mail Sabatons of Restoration"] = {
-			["H3537"] = 190000,
-			["mr"] = 190000,
+		["Lightforge Gauntlets"] = {
+			["mr"] = 83962,
+			["H3539"] = 83962,
 		},
-		["Mageweave Bandage"] = {
-			["H3537"] = 975,
-			["mr"] = 975,
-		},
-		["Dwarven Magestaff of Healing"] = {
-			["H3537"] = 19932,
-			["mr"] = 19932,
-		},
-		["Battering Hammer of the Whale"] = {
-			["H3540"] = 10000,
-			["mr"] = 10000,
-		},
-		["Pattern: Truefaith Gloves"] = {
-			["mr"] = 29500,
-			["sc"] = 2,
-			["H3529"] = 29500,
-			["id"] = "7091:0:0:0:0",
-			["cc"] = 9,
-		},
-		["Defender Boots of the Bear"] = {
-			["mr"] = 20000,
-			["cc"] = 4,
-			["id"] = "6573:0:0:1186:0",
-			["sc"] = 3,
-			["H3542"] = 20000,
-		},
-		["Stockade Pauldrons"] = {
-			["H3540"] = 300000,
-			["H3539"] = 100000,
-			["mr"] = 300000,
-		},
-		["Native Pants of the Whale"] = {
-			["H3539"] = 4000,
-			["mr"] = 4000,
+		["Elder's Padded Armor of the Whale"] = {
+			["H3539"] = 26098,
+			["mr"] = 26098,
 		},
 		["Bronze Bar"] = {
 			["L3542"] = 1970,
-			["H3540"] = 1490,
-			["H3542"] = 1976,
-			["mr"] = 1995,
-			["sc"] = 0,
 			["id"] = "2841:0:0:0:0",
-			["L3543"] = 1995,
+			["H3542"] = 1976,
+			["mr"] = 1850,
+			["sc"] = 0,
+			["L3543"] = 1850,
+			["cc"] = 7,
 			["H3539"] = 990,
 			["H3543"] = 1999,
-			["cc"] = 7,
+			["H3540"] = 1490,
 		},
-		["Recipe: Discolored Healing Potion"] = {
-			["H3540"] = 750,
-			["mr"] = 750,
-			["H3539"] = 5500,
+		["Buccaneer's Boots of the Owl"] = {
+			["H3537"] = 4900,
+			["mr"] = 4900,
 		},
 		["Naga Scale"] = {
 			["H3540"] = 439,
 			["H3539"] = 1089,
-			["mr"] = 439,
+			["H3543"] = 570,
+			["mr"] = 570,
 		},
-		["Wanderer's Belt of the Eagle"] = {
+		["Stonecutter Claymore of Agility"] = {
+			["H3543"] = 40000,
 			["mr"] = 40000,
-			["H3539"] = 40000,
-		},
-		["Wrangler's Gloves of Defense"] = {
-			["H3540"] = 4000,
-			["mr"] = 4000,
 		},
 		["Scouting Trousers of Spirit"] = {
 			["mr"] = 42654,
@@ -925,21 +839,18 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Deadly Kris of the Monkey"] = {
 			["H3540"] = 25561,
-			["mr"] = 25561,
+			["mr"] = 40000,
+			["H3543"] = 40000,
 			["H3539"] = 25820,
 		},
 		["Firebane Cloak"] = {
 			["H3540"] = 99550,
-			["mr"] = 99550,
+			["mr"] = 44968,
+			["H3543"] = 44968,
 		},
-		["Mystic's Cape"] = {
-			["H3537"] = 1300,
-			["mr"] = 1300,
-		},
-		["Greater Fire Protection Potion"] = {
-			["H3540"] = 74697,
-			["H3539"] = 62494,
-			["mr"] = 74697,
+		["Runed Copper Pants"] = {
+			["H3537"] = 1111,
+			["mr"] = 1111,
 		},
 		["Sorcerer Mantle of Frozen Wrath"] = {
 			["H3537"] = 30000,
@@ -953,153 +864,92 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 2800,
 			["mr"] = 2800,
 		},
-		["Silverleaf"] = {
-			["cc"] = 7,
-			["H3539"] = 30,
-			["sc"] = 0,
-			["L3542"] = 15,
-			["H3540"] = 12,
-			["id"] = "765:0:0:0:0",
-			["mr"] = 15,
-			["H3542"] = 24,
+		["Stonebark Gauntlets"] = {
+			["H3539"] = 6280000,
+			["cc"] = 4,
+			["sc"] = 2,
+			["H3540"] = 5300000,
+			["id"] = "18344:0:0:0:0",
+			["H3543"] = 4750000,
+			["mr"] = 4750000,
 		},
-		["Lesser Bloodstone Ore"] = {
-			["mr"] = 916,
-			["cc"] = 12,
-			["id"] = "4278:0:0:0:0",
-			["H3543"] = 916,
-			["sc"] = 0,
-		},
-		["Barbaric Battle Axe of the Eagle"] = {
-			["mr"] = 16464,
-			["cc"] = 2,
-			["id"] = "3195:0:0:845:0",
-			["H3539"] = 6900,
-			["sc"] = 1,
-			["H3540"] = 16464,
-		},
-		["Solstice Robe"] = {
-			["H3537"] = 11050,
-			["mr"] = 11050,
-		},
-		["Small Green Pouch"] = {
-			["H3540"] = 1685,
-			["mr"] = 1685,
-		},
-		["Sorcerer Mantle of the Eagle"] = {
-			["H3540"] = 15692,
-			["mr"] = 15692,
+		["Imperial Cloak"] = {
+			["H3537"] = 24236,
+			["mr"] = 24236,
 		},
 		["Elegant Gloves of Spirit"] = {
-			["mr"] = 85000,
 			["H3539"] = 85000,
+			["mr"] = 85000,
 		},
-		["Blue Leather Bag"] = {
-			["mr"] = 2450,
-			["sc"] = 0,
-			["id"] = "856:0:0:0:0",
-			["cc"] = 1,
-			["H3537"] = 4900,
-			["L3537"] = 2450,
+		["Mithril Head Trout"] = {
+			["H3543"] = 152,
+			["mr"] = 152,
 		},
-		["Knightly Longsword of Strength"] = {
-			["H3540"] = 19999,
-			["mr"] = 19999,
+		["High Councillor's Cloak of Intellect"] = {
+			["H3540"] = 40000,
+			["mr"] = 40000,
 		},
-		["Pattern: Spider Belt"] = {
-			["H3540"] = 30380,
-			["H3539"] = 79999,
-			["mr"] = 30380,
+		["Barbed Club of Shadow Wrath"] = {
+			["H3543"] = 14000,
+			["mr"] = 14000,
 		},
-		["Jouster's Crest"] = {
-			["H3537"] = 15000,
-			["mr"] = 15000,
-		},
-		["Imperial Plate Helm"] = {
-			["H3537"] = 70000,
-			["mr"] = 70000,
-		},
-		["Big Iron Fishing Pole"] = {
-			["mr"] = 73124,
-			["H3537"] = 319800,
-			["L3537"] = 73124,
+		["Recipe: Shadow Protection Potion"] = {
+			["H3540"] = 23198,
+			["mr"] = 23198,
 		},
 		["Lesser Healing Potion"] = {
-			["mr"] = 297,
-			["cc"] = 0,
-			["id"] = "858:0:0:0:0",
-			["H3540"] = 493,
 			["H3539"] = 525,
+			["mr"] = 86,
+			["cc"] = 0,
+			["H3540"] = 493,
+			["id"] = "858:0:0:0:0",
 			["sc"] = 0,
+			["H3543"] = 86,
 			["H3542"] = 297,
 		},
-		["Pattern: Living Breastplate"] = {
-			["mr"] = 58500,
-			["H3539"] = 58500,
-		},
-		["Hyperion Vambraces of Fire Resistance"] = {
-			["H3537"] = 56385,
-			["mr"] = 56385,
+		["Mail Combat Armor"] = {
+			["mr"] = 18999,
+			["H3543"] = 18999,
+			["H3539"] = 19999,
 		},
 		["Spiked Chain Slippers of the Boar"] = {
 			["H3537"] = 6600,
 			["mr"] = 6600,
 		},
-		["Mighty Boots of the Monkey"] = {
-			["H3540"] = 135577,
-			["mr"] = 135577,
-		},
-		["Recipe: Great Rage Potion"] = {
-			["mr"] = 49800,
-			["H3537"] = 49980,
-			["L3537"] = 49800,
-		},
 		["Ritual Belt of the Wolf"] = {
 			["H3537"] = 10000,
 			["mr"] = 10000,
-		},
-		["Twin-bladed Axe of Strength"] = {
-			["H3537"] = 50023,
-			["mr"] = 50023,
 		},
 		["Plans: Iridescent Hammer"] = {
 			["H3537"] = 9799,
 			["mr"] = 9799,
 		},
-		["Three of Warlords"] = {
-			["H3540"] = 40000,
-			["mr"] = 40000,
+		["Goldenbark Apple"] = {
+			["H3537"] = 2980,
+			["mr"] = 2980,
 		},
-		["Robe of Winter Night"] = {
-			["H3540"] = 1199890,
-			["mr"] = 1199890,
-			["H3539"] = 999987,
-		},
-		["Plans: Corruption"] = {
-			["mr"] = 99999,
-			["H3537"] = 100000,
-			["L3537"] = 99999,
+		["Ace of Portals"] = {
+			["H3540"] = 350025,
+			["mr"] = 240000,
+			["H3543"] = 240000,
+			["H3539"] = 400000,
 		},
 		["Councillor's Robes of Frozen Wrath"] = {
 			["H3540"] = 90000,
 			["mr"] = 90000,
 		},
 		["Buccaneer's Vest of Shadow Wrath"] = {
-			["mr"] = 29500,
 			["H3539"] = 29500,
+			["mr"] = 29500,
 		},
-		["Mithril Ore"] = {
-			["mr"] = 1800,
-			["cc"] = 7,
-			["H3539"] = 1200,
-			["id"] = "3858:0:0:0:0",
-			["sc"] = 0,
-			["H3543"] = 1800,
-			["H3540"] = 2100,
+		["Conjurer's Robe of the Owl"] = {
+			["H3537"] = 31000,
+			["mr"] = 31000,
 		},
 		["Raw Nightfin Snapper"] = {
 			["H3540"] = 12200,
-			["mr"] = 12200,
+			["mr"] = 11795,
+			["H3543"] = 11795,
 			["H3539"] = 12600,
 		},
 		["Pattern: Mooncloth Leggings"] = {
@@ -1107,65 +957,51 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 499997,
 			["H3539"] = 499999,
 		},
-		["Eidolon Talisman"] = {
-			["H3540"] = 2492000,
-			["H3539"] = 3001392,
-			["mr"] = 2492000,
+		["Schematic: Small Seaforium Charge"] = {
+			["H3539"] = 3500,
+			["H3543"] = 2183,
+			["mr"] = 2183,
 		},
-		["Dark Rune"] = {
-			["H3540"] = 155900,
-			["H3539"] = 178000,
-			["mr"] = 155900,
+		["Pattern: Hillman's Belt"] = {
+			["H3537"] = 9181,
+			["mr"] = 9181,
 		},
-		["Vital Boots of the Whale"] = {
-			["H3537"] = 20000,
-			["mr"] = 20000,
+		["Strong Troll's Blood Potion"] = {
+			["H3540"] = 5259,
+			["mr"] = 1969,
+			["H3543"] = 1969,
+			["H3539"] = 4000,
 		},
 		["Rich Purple Silk Shirt"] = {
-			["H3539"] = 38360,
 			["mr"] = 38360,
+			["H3539"] = 38360,
 		},
 		["Vulture Gizzard"] = {
 			["H3540"] = 6852,
 			["H3539"] = 8414,
-			["mr"] = 6852,
+			["H3543"] = 6400,
+			["mr"] = 6400,
 		},
-		["Potent Bands of the Monkey"] = {
-			["H3537"] = 20000,
-			["mr"] = 20000,
+		["War Torn Girdle"] = {
+			["H3537"] = 200,
+			["mr"] = 200,
 		},
 		["Helm of Narv"] = {
 			["H3539"] = 559288,
-			["mr"] = 559288,
+			["H3543"] = 667000,
+			["mr"] = 667000,
 		},
-		["Pattern: Hillman's Leather Vest"] = {
-			["mr"] = 4900,
-			["cc"] = 9,
-			["id"] = "4293:0:0:0:0",
-			["H3540"] = 4900,
-			["sc"] = 1,
-		},
-		["Field Repair Bot 74A"] = {
-			["H3540"] = 379000,
-			["H3539"] = 307999,
-			["mr"] = 379000,
-		},
-		["Sardonyx Knuckle of Nature Resistance"] = {
-			["mr"] = 2202468,
-			["H3539"] = 2202468,
-		},
-		["Ruthless Shiv"] = {
-			["H3540"] = 80000,
-			["mr"] = 80000,
+		["Leaden Mace of the Monkey"] = {
+			["H3539"] = 7777,
+			["mr"] = 7777,
 		},
 		["Gossamer Boots of Arcane Wrath"] = {
-			["mr"] = 30000,
 			["H3539"] = 30000,
+			["mr"] = 30000,
 		},
-		["Deckhand's Shirt"] = {
-			["H3540"] = 10199,
-			["H3539"] = 10499,
-			["mr"] = 10199,
+		["Keeper's Woolies"] = {
+			["H3537"] = 35000,
+			["mr"] = 35000,
 		},
 		["Ceremonial Leather Gloves"] = {
 			["mr"] = 14800,
@@ -1176,80 +1012,8366 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3540"] = 44400,
 			["mr"] = 44400,
 		},
-		["Plans: Thorium Helm"] = {
-			["H3540"] = 30900,
-			["mr"] = 30900,
-			["H3539"] = 31000,
-		},
-		["Discolored Worg Heart"] = {
-			["H3539"] = 638,
-			["cc"] = 7,
-			["mr"] = 644,
-			["id"] = "3164:0:0:0:0",
-			["sc"] = 0,
-			["H3543"] = 644,
-			["H3540"] = 630,
+		["Soldier's Leggings of the Monkey"] = {
+			["H3540"] = 12373,
+			["mr"] = 12373,
 		},
 		["Lupine Handwraps of the Owl"] = {
 			["H3537"] = 1600,
 			["mr"] = 1600,
 		},
-		["Recipe: Smoked Sagefish"] = {
-			["mr"] = 13495,
-			["H3539"] = 13495,
-		},
 		["Pattern: Black Dragonscale Shoulders"] = {
 			["H3540"] = 59900,
-			["mr"] = 59900,
+			["mr"] = 14500,
+			["H3543"] = 14500,
 			["H3539"] = 21255,
 		},
-		["Avenger's Armor"] = {
-			["H3537"] = 245000,
-			["mr"] = 245000,
+		["Chieftain's Headdress of the Boar"] = {
+			["H3539"] = 101604,
+			["mr"] = 101604,
 		},
 		["Swashbuckler's Eyepatch of the Monkey"] = {
 			["H3540"] = 79900,
 			["mr"] = 79900,
 		},
-		["Azure Silk Gloves"] = {
-			["mr"] = 24998,
-			["cc"] = 4,
-			["id"] = "4319:0:0:0:0",
-			["H3537"] = 24998,
-			["sc"] = 1,
-		},
-		["Renegade Pauldrons of Stamina"] = {
-			["H3540"] = 49212,
-			["mr"] = 49212,
+		["Dimensional Blade of Stamina"] = {
+			["H3537"] = 496512,
+			["mr"] = 496512,
 		},
 		["Infiltrator Cloak of the Whale"] = {
 			["H3537"] = 11871,
 			["mr"] = 11871,
 		},
-		["Crocolisk Meat"] = {
-			["H3540"] = 336,
-			["H3539"] = 314,
-			["mr"] = 336,
+		["Simple Linen Pants"] = {
+			["H3537"] = 3501,
+			["mr"] = 3501,
 		},
-		["Scouting Trousers of the Eagle"] = {
-			["mr"] = 7600,
-			["H3539"] = 7600,
+		["Ceremonial Buckler"] = {
+			["H3540"] = 4000,
+			["mr"] = 4000,
 		},
-		["Red Linen Shirt"] = {
-			["H3540"] = 14000,
+		["Bonecaster's Crown of the Owl"] = {
+			["H3537"] = 99999,
+			["mr"] = 99999,
+		},
+		["Sorcerer Cloak of the Eagle"] = {
+			["H3539"] = 10000,
+			["mr"] = 10000,
+		},
+		["Ember Wand of Healing"] = {
+			["H3543"] = 59900,
+			["mr"] = 59900,
+		},
+		["Sparkleshell Belt of the Bear"] = {
+			["H3537"] = 15000,
+			["mr"] = 15000,
+		},
+		["Wicked Leather Headband"] = {
+			["H3539"] = 48749,
+			["mr"] = 48749,
+		},
+		["Mercurial Cloak of Agility"] = {
+			["H3537"] = 149900,
+			["mr"] = 149900,
+		},
+		["Plans: Hardened Iron Shortsword"] = {
+			["H3540"] = 69949,
+			["mr"] = 68999,
+			["H3543"] = 68999,
+			["H3539"] = 69000,
+		},
+		["Scroll of Spirit II"] = {
+			["H3540"] = 1390,
+			["H3539"] = 1464,
+			["mr"] = 1390,
+		},
+		["Firemane Leggings"] = {
+			["H3539"] = 85000,
+			["mr"] = 85000,
+		},
+		["Simple Branch of the Whale"] = {
+			["H3537"] = 6520,
+			["mr"] = 6520,
+		},
+		["Skinning Knife"] = {
+			["H3539"] = 9395,
+			["mr"] = 9395,
+		},
+		["Glyphed Epaulets"] = {
+			["H3540"] = 19900,
+			["mr"] = 19900,
+			["H3539"] = 9900,
+		},
+		["Lunar Belt of the Owl"] = {
+			["H3537"] = 47850,
+			["mr"] = 47850,
+		},
+		["Bloodspattered Loincloth of the Bear"] = {
+			["H3540"] = 6031,
+			["mr"] = 5900,
+			["H3543"] = 5900,
+			["H3539"] = 6031,
+		},
+		["Starsight Tunic"] = {
+			["H3540"] = 19200,
+			["mr"] = 19999,
+			["H3543"] = 19999,
+			["H3539"] = 40199,
+		},
+		["Formula: Enchant Weapon - Icy Chill"] = {
+			["H3540"] = 145742,
+			["mr"] = 229997,
+			["H3543"] = 229997,
+		},
+		["Brackwater Shield"] = {
+			["H3543"] = 1445,
+			["mr"] = 1445,
+		},
+		["Flash Pellet"] = {
+			["H3537"] = 334,
+			["mr"] = 334,
+		},
+		["Knight's Pauldrons of the Bear"] = {
+			["H3539"] = 36878,
+			["H3543"] = 21496,
+			["mr"] = 21496,
+		},
+		["Mystic's Sphere"] = {
+			["H3543"] = 15000,
+			["mr"] = 15000,
+		},
+		["Bright Pants"] = {
+			["H3537"] = 6805,
+			["mr"] = 6805,
+		},
+		["Decapitating Sword of the Bear"] = {
+			["H3540"] = 20000,
+			["mr"] = 20000,
+		},
+		["Engraved Wall of Stamina"] = {
+			["H3540"] = 108000,
+			["mr"] = 108000,
+		},
+		["Gift of Arthas"] = {
+			["H3540"] = 12599,
+			["H3539"] = 12600,
+			["H3543"] = 9900,
+			["mr"] = 9900,
+		},
+		["Swim Speed Potion"] = {
+			["H3540"] = 39998,
+			["mr"] = 39998,
+		},
+		["Decapitating Sword of Strength"] = {
+			["mr"] = 40000,
+			["cc"] = 2,
+			["id"] = "3740:0:0:24:0",
+			["sc"] = 7,
+			["H3542"] = 40000,
+		},
+		["Native Pants of Fiery Wrath"] = {
+			["H3539"] = 5581,
+			["mr"] = 5581,
+		},
+		["Aurora Mantle"] = {
+			["H3539"] = 7000,
+			["mr"] = 7000,
+		},
+		["Devout Bracers"] = {
+			["H3539"] = 180000,
+			["mr"] = 180000,
+		},
+		["Burnished Girdle"] = {
+			["H3540"] = 4899,
+			["mr"] = 2500,
+			["H3543"] = 2500,
+			["H3539"] = 6500,
+		},
+		["Felcloth"] = {
+			["H3540"] = 12868,
+			["H3539"] = 11877,
+			["H3543"] = 13929,
+			["mr"] = 13929,
+		},
+		["Elixir of Giant Growth"] = {
+			["H3540"] = 11999,
+			["mr"] = 11999,
+		},
+		["Prospector's Woolies"] = {
+			["H3543"] = 28844,
+			["mr"] = 28844,
+		},
+		["Grimesilt Outhouse Key"] = {
+			["H3539"] = 23043,
+			["mr"] = 23043,
+		},
+		["Recipe: Sagefish Delight"] = {
+			["H3543"] = 29800,
+			["mr"] = 29800,
+		},
+		["Pattern: Mooncloth Bag"] = {
+			["cc"] = 9,
+			["mr"] = 12460,
+			["sc"] = 2,
+			["id"] = "14499:0:0:0:0",
+			["H3540"] = 115000,
+			["H3539"] = 9800,
+			["H3543"] = 12460,
+			["H3542"] = 13600,
+		},
+		["Bloodsoul Shoulders"] = {
+			["H3539"] = 1699997,
+			["mr"] = 1699997,
+		},
+		["Battlesmasher of the Monkey"] = {
+			["H3540"] = 9537,
+			["mr"] = 9537,
+		},
+		["High Chief's Pauldrons of the Monkey"] = {
+			["H3543"] = 30000,
+			["mr"] = 30000,
+		},
+		["Looming Gavel"] = {
+			["H3537"] = 70000,
+			["mr"] = 70000,
+		},
+		["Zephyr Cloak"] = {
+			["H3537"] = 2500000,
+			["mr"] = 2500000,
+		},
+		["Blesswind Hammer of Power"] = {
+			["H3539"] = 77777,
+			["mr"] = 77777,
+		},
+		["Buccaneer's Cape of Arcane Wrath"] = {
+			["mr"] = 12956,
+			["sc"] = 1,
+			["H3540"] = 12956,
+			["id"] = "14167:0:0:1801:0",
+			["cc"] = 4,
+		},
+		["Burnished Pauldrons"] = {
+			["H3537"] = 2500,
+			["mr"] = 2500,
+		},
+		["Battlesmasher of Arcane Wrath"] = {
+			["mr"] = 10000,
+			["sc"] = 4,
+			["H3540"] = 10000,
+			["id"] = "15224:0:0:1802:0",
+			["cc"] = 2,
+		},
+		["Formula: Enchant Bracer - Minor Spirit"] = {
+			["mr"] = 1995,
+			["H3539"] = 1995,
+		},
+		["The Green Tower"] = {
+			["H3540"] = 219998,
+			["mr"] = 171999,
+			["H3543"] = 171999,
+			["H3539"] = 349999,
+		},
+		["Mooncloth"] = {
+			["H3540"] = 152124,
+			["H3539"] = 142000,
+			["H3543"] = 140500,
+			["mr"] = 140500,
+		},
+		["Glyphed Cloak"] = {
+			["H3540"] = 18400,
+			["mr"] = 20346,
+			["H3543"] = 20346,
+			["H3539"] = 5200,
+		},
+		["Dwarven Hatchet of Stamina"] = {
+			["mr"] = 6900,
+			["H3539"] = 6900,
+		},
+		["Defender Tunic of the Boar"] = {
+			["H3537"] = 13872,
+			["mr"] = 13872,
+		},
+		["Hook Dagger of Healing"] = {
+			["H3539"] = 2400,
+			["mr"] = 2400,
+		},
+		["Heroic Bracers of Power"] = {
+			["H3537"] = 77640,
+			["mr"] = 77640,
+		},
+		["Tender Wolf Steak"] = {
+			["H3540"] = 3500,
+			["mr"] = 5300,
+			["H3543"] = 5300,
+			["H3539"] = 4400,
+		},
+		["Powerful Mojo"] = {
+			["H3540"] = 2600,
+			["mr"] = 3100,
+			["H3543"] = 3100,
+			["H3539"] = 4599,
+		},
+		["Twilight Cowl of Shadow Wrath"] = {
+			["mr"] = 50000,
+			["H3543"] = 50000,
+			["H3539"] = 20117,
+		},
+		["Pattern: Barbaric Leggings"] = {
+			["mr"] = 49599,
+			["sc"] = 1,
+			["H3540"] = 49799,
+			["id"] = "5973:0:0:0:0",
+			["H3543"] = 49599,
+			["cc"] = 9,
+		},
+		["Bonelink Gauntlets of the Falcon"] = {
+			["H3537"] = 32500,
+			["mr"] = 32500,
+		},
+		["Sentinel Buckler of Agility"] = {
+			["H3537"] = 10000,
+			["mr"] = 10000,
+		},
+		["Outrunner's Chestguard of the Bear"] = {
+			["H3540"] = 79999,
+			["mr"] = 79999,
+		},
+		["Crest of Beckoning: Water"] = {
+			["mr"] = 314000,
+			["H3543"] = 314000,
+			["H3539"] = 317999,
+		},
+		["Abjurer's Hood of the Eagle"] = {
+			["H3537"] = 43167,
+			["mr"] = 43167,
+		},
+		["Impenetrable Bindings of Healing"] = {
+			["H3537"] = 160238,
+			["mr"] = 160238,
+		},
+		["Rugged Armor Kit"] = {
+			["H3540"] = 15023,
+			["mr"] = 15023,
+		},
+		["Harnessing Shadows"] = {
+			["H3540"] = 2658,
+			["H3539"] = 2727,
+			["H3543"] = 2200,
+			["mr"] = 2200,
+		},
+		["Twilight Boots of the Owl"] = {
+			["mr"] = 11147,
+			["H3543"] = 11147,
+			["H3539"] = 4299,
+		},
+		["Stock Shortsword"] = {
+			["H3537"] = 1503,
+			["mr"] = 1503,
+		},
+		["Spider Web Robe"] = {
+			["H3540"] = 174500,
+			["mr"] = 174499,
+			["H3543"] = 174499,
+		},
+		["Serpent Slicer"] = {
+			["mr"] = 175500,
+			["H3539"] = 175500,
+		},
+		["Bandit Bracers of the Whale"] = {
+			["H3537"] = 2200,
+			["mr"] = 2200,
+		},
+		["Imbued Plate Pauldrons"] = {
+			["H3537"] = 40853,
+			["mr"] = 40853,
+		},
+		["Buccaneer's Pants of the Owl"] = {
+			["H3540"] = 35269,
+			["mr"] = 35269,
+			["H3539"] = 28592,
+		},
+		["Bard's Trousers of the Eagle"] = {
+			["H3537"] = 12836,
+			["mr"] = 12836,
+		},
+		["Recipe: Elixir of Fortitude"] = {
+			["H3540"] = 9898,
+			["mr"] = 5498,
+			["H3543"] = 5498,
+			["H3539"] = 12596,
+		},
+		["Pattern: Felcloth Hood"] = {
+			["H3540"] = 19599,
+			["H3539"] = 48300,
+			["H3543"] = 12479,
+			["mr"] = 12479,
+		},
+		["Deadly Kris of the Bear"] = {
+			["H3543"] = 24750,
+			["mr"] = 24750,
+		},
+		["Lodestone Hoop of Regeneration"] = {
+			["H3537"] = 30054,
+			["mr"] = 30054,
+		},
+		["White Woolen Dress"] = {
+			["H3543"] = 124500,
+			["mr"] = 124500,
+		},
+		["Shredder Operating Manual - Page 1"] = {
+			["mr"] = 1890,
+			["cc"] = 15,
+			["id"] = "16645:0:0:0:0",
+			["sc"] = 0,
+			["H3543"] = 1890,
+			["H3542"] = 4899,
+		},
+		["Redbeard Crest"] = {
+			["H3540"] = 59500,
+			["mr"] = 59500,
+		},
+		["Imposing Bandana of Healing"] = {
+			["H3537"] = 50000,
+			["mr"] = 50000,
+		},
+		["Brown Leather Satchel"] = {
+			["H3543"] = 1000,
+			["mr"] = 1000,
+		},
+		["Pattern: Runic Leather Gauntlets"] = {
+			["mr"] = 5899,
+			["cc"] = 9,
+			["id"] = "15731:0:0:0:0",
+			["H3539"] = 5899,
+			["sc"] = 1,
+		},
+		["Imperial Leather Boots"] = {
+			["H3537"] = 30000,
+			["mr"] = 30000,
+		},
+		["Dreamless Sleep Potion"] = {
+			["H3540"] = 10399,
+			["H3539"] = 10600,
+			["H3543"] = 9668,
+			["mr"] = 9668,
+		},
+		["Red Wolf Meat"] = {
+			["H3540"] = 994,
+			["H3539"] = 180,
+			["H3543"] = 82,
+			["mr"] = 82,
+		},
+		["Abyssal Cloth Pants of Restoration"] = {
+			["mr"] = 899999,
+			["H3543"] = 899999,
+			["H3539"] = 350000,
+		},
+		["Seven of Warlords"] = {
+			["H3540"] = 79000,
+			["H3539"] = 79500,
+			["H3543"] = 146498,
+			["mr"] = 146498,
+		},
+		["Shadow Panther Hide Gloves"] = {
+			["mr"] = 664999,
+			["cc"] = 4,
+			["id"] = "20259:0:0:0:0",
+			["H3537"] = 664999,
+			["sc"] = 2,
+		},
+		["Meaty Bat Wing"] = {
+			["H3539"] = 1000,
+			["mr"] = 1000,
+		},
+		["Sharpshooter Harquebus of the Tiger"] = {
+			["H3537"] = 169718,
+			["mr"] = 169718,
+		},
+		["Imperial Red Tunic"] = {
+			["H3537"] = 47203,
+			["mr"] = 47203,
+		},
+		["Watcher's Mantle of the Wolf"] = {
+			["H3537"] = 10000,
+			["mr"] = 10000,
+		},
+		["Harbinger Boots"] = {
+			["H3539"] = 90000,
+			["H3543"] = 39999,
+			["mr"] = 39999,
+		},
+		["Gallant Flamberge of the Tiger"] = {
+			["H3540"] = 88190,
+			["mr"] = 88190,
+			["H3539"] = 176118,
+		},
+		["Zulian Hacker of the Eagle"] = {
+			["H3540"] = 6969669,
+			["mr"] = 6969669,
+		},
+		["Snowman Kit"] = {
+			["H3540"] = 40400,
+			["mr"] = 40400,
+		},
+		["Brawler's Harness"] = {
+			["H3540"] = 559954,
+			["mr"] = 559954,
+		},
+		["Hulking Cloak"] = {
+			["H3537"] = 6637,
+			["mr"] = 6637,
+		},
+		["The Shadowfoot Stabber"] = {
+			["H3540"] = 119900,
+			["mr"] = 119499,
+			["H3543"] = 119499,
+			["H3539"] = 223999,
+		},
+		["Raider's Gauntlets of Power"] = {
+			["H3539"] = 19987,
+			["mr"] = 19987,
+		},
+		["Flash Bomb"] = {
+			["H3540"] = 16799,
+			["mr"] = 8800,
+			["H3543"] = 8800,
+			["H3539"] = 17500,
+		},
+		["Vilebranch Coin"] = {
+			["H3540"] = 3298,
+			["mr"] = 2500,
+			["H3543"] = 2500,
+			["H3539"] = 2900,
+		},
+		["Birchwood Maul of the Bear"] = {
+			["H3540"] = 2000,
+			["mr"] = 9800,
+			["H3543"] = 9800,
+			["H3539"] = 5000,
+		},
+		["Regal Cloak of Shadow Wrath"] = {
+			["H3539"] = 30739,
+			["mr"] = 30739,
+		},
+		["Sage's Robe of Arcane Wrath"] = {
+			["H3543"] = 38997,
+			["mr"] = 38997,
+		},
+		["Scroll of Protection III"] = {
+			["H3540"] = 1999,
+			["H3539"] = 2199,
+			["H3543"] = 8100,
+			["mr"] = 8100,
+		},
+		["Elixir of Detect Demon"] = {
+			["H3540"] = 1519,
+			["mr"] = 1519,
+			["H3539"] = 1519,
+		},
+		["Robes of Arcana"] = {
+			["H3539"] = 72500,
+			["sc"] = 1,
+			["H3540"] = 69999,
+			["id"] = "5770:0:0:0:0",
+			["cc"] = 4,
+			["H3543"] = 49998,
+			["mr"] = 49998,
+		},
+		["Hibernal Pants"] = {
+			["H3537"] = 45000,
+			["mr"] = 45000,
+		},
+		["Warlord's Axe of the Monkey"] = {
+			["H3537"] = 157952,
+			["mr"] = 157952,
+		},
+		["Royal Cape of Arcane Wrath"] = {
+			["mr"] = 17082,
+			["sc"] = 1,
+			["H3540"] = 17082,
+			["id"] = "9908:0:0:1808:0",
+			["cc"] = 4,
+		},
+		["Defender Boots of the Eagle"] = {
+			["H3540"] = 4000,
+			["mr"] = 4000,
+		},
+		["Formula: Enchant Gloves - Advanced Herbalism"] = {
+			["mr"] = 289999,
+			["cc"] = 9,
+			["id"] = "11205:0:0:0:0",
+			["L3537"] = 289999,
+			["H3537"] = 290000,
+			["sc"] = 8,
+		},
+		["Battering Hammer of the Eagle"] = {
+			["H3540"] = 12729,
+			["mr"] = 50000,
+			["H3543"] = 50000,
+		},
+		["Ribsplitter of the Monkey"] = {
+			["mr"] = 575999,
+			["H3543"] = 575999,
+			["H3539"] = 474810,
+		},
+		["Healing Potion"] = {
+			["H3540"] = 774,
+			["mr"] = 577,
+			["H3543"] = 577,
+			["H3539"] = 964,
+		},
+		["Schematic: World Enlarger"] = {
+			["H3539"] = 46600,
+			["H3543"] = 9999,
+			["mr"] = 9999,
+		},
+		["Forest Tracker Epaulets"] = {
+			["H3539"] = 574000,
+			["cc"] = 4,
+			["H3540"] = 560550,
+			["id"] = "2278:0:0:0:0",
+			["sc"] = 2,
+			["H3543"] = 405000,
+			["mr"] = 405000,
+		},
+		["Mystical Belt of the Eagle"] = {
+			["H3537"] = 41000,
+			["mr"] = 41000,
+		},
+		["Harpy Needler of the Falcon"] = {
+			["H3537"] = 84926,
+			["mr"] = 84926,
+		},
+		["Schematic: Red Firework"] = {
+			["H3540"] = 68995,
+			["H3539"] = 59495,
+			["mr"] = 68995,
+		},
+		["Hillborne Axe of the Monkey"] = {
+			["H3537"] = 25000,
+			["mr"] = 25000,
+		},
+		["Mystic's Belt"] = {
+			["H3539"] = 2500,
+			["mr"] = 2500,
+		},
+		["Aboriginal Footwraps of the Eagle"] = {
+			["mr"] = 5525,
+			["H3543"] = 5525,
+			["H3539"] = 5525,
+		},
+		["Living Breastplate"] = {
+			["H3537"] = 1045500,
+			["mr"] = 1045500,
+		},
+		["Pattern: Chimeric Leggings"] = {
+			["H3540"] = 12800,
+			["H3539"] = 14400,
+			["mr"] = 12800,
+		},
+		["Gloom Reaper of the Bear"] = {
+			["H3540"] = 39999,
+			["mr"] = 39999,
+		},
+		["Flask of the Titans"] = {
+			["H3539"] = 1891915,
+			["sc"] = 0,
+			["H3540"] = 1924200,
+			["id"] = "13510:0:0:0:0",
+			["cc"] = 0,
+			["H3543"] = 2010000,
+			["mr"] = 2010000,
+		},
+		["Councillor's Robes of the Eagle"] = {
+			["H3537"] = 90000,
+			["mr"] = 90000,
+		},
+		["Saltstone Legplates of the Bear"] = {
+			["H3537"] = 50000,
+			["mr"] = 50000,
+		},
+		["A Thoroughly Read Copy of \"Nat Pagle's Extreme' Anglin.\""] = {
+			["H3540"] = 42589,
+			["mr"] = 42589,
+		},
+		["Silver Contact"] = {
+			["H3540"] = 399,
+			["H3539"] = 449,
+			["H3543"] = 124,
+			["mr"] = 124,
+		},
+		["Runic Stave"] = {
+			["H3540"] = 2514,
+			["H3539"] = 2500,
+			["H3543"] = 4999,
+			["mr"] = 4999,
+		},
+		["Nightshade Leggings of the Monkey"] = {
+			["H3537"] = 60000,
+			["mr"] = 60000,
+		},
+		["Simple Dress"] = {
+			["H3543"] = 34236,
+			["mr"] = 34236,
+		},
+		["Soulkeeper"] = {
+			["H3540"] = 132497,
+			["H3539"] = 150000,
+			["H3543"] = 156997,
+			["mr"] = 156997,
+		},
+		["Ritual Sandals of the Owl"] = {
+			["H3537"] = 9900,
+			["mr"] = 9900,
+		},
+		["Chieftain's Gloves of the Eagle"] = {
+			["H3543"] = 63060,
+			["mr"] = 63060,
+		},
+		["Shiver Blade"] = {
+			["mr"] = 4449,
+			["H3543"] = 4449,
+			["H3539"] = 30000,
+		},
+		["Ballast Maul of the Boar"] = {
+			["H3539"] = 72535,
+			["mr"] = 72535,
+		},
+		["Sentinel Trousers of the Bear"] = {
+			["mr"] = 73992,
+			["cc"] = 4,
+			["id"] = "7440:0:0:1204:0",
+			["sc"] = 2,
+			["H3542"] = 73992,
+		},
+		["Twilight Pants of the Eagle"] = {
+			["H3539"] = 19600,
+			["mr"] = 19600,
+		},
+		["Barbaric Battle Axe of the Bear"] = {
+			["mr"] = 4100,
+			["H3543"] = 4100,
+			["H3539"] = 5000,
+		},
+		["Alterac Swiss"] = {
+			["H3540"] = 1935,
+			["H3539"] = 1500,
+			["mr"] = 1935,
+		},
+		["Skull Splitting Crossbow"] = {
+			["mr"] = 65645,
+			["cc"] = 2,
+			["H3539"] = 122500,
+			["id"] = "13039:0:0:0:0",
+			["sc"] = 18,
+			["H3543"] = 65645,
+			["H3542"] = 210000,
+		},
+		["Field Plate Gauntlets of the Gorilla"] = {
+			["H3539"] = 10000,
+			["mr"] = 10000,
+		},
+		["Master's Boots of Frozen Wrath"] = {
+			["H3537"] = 228373,
+			["mr"] = 228373,
+		},
+		["Ritual Bands of Shadow Wrath"] = {
+			["H3537"] = 22464,
+			["mr"] = 22464,
+		},
+		["Greenweave Cloak of the Eagle"] = {
+			["H3539"] = 7206,
+			["mr"] = 7206,
+		},
+		["Abyssal Leather Belt of Striking"] = {
+			["mr"] = 89900,
+			["cc"] = 4,
+			["id"] = "20667:0:0:2154:0",
+			["sc"] = 2,
+			["H3536"] = 89900,
+		},
+		["Elegant Boots of Frozen Wrath"] = {
+			["H3540"] = 99000,
+			["mr"] = 147000,
+			["H3543"] = 147000,
+		},
+		["Recipe: Redridge Goulash"] = {
+			["H3537"] = 99900,
+			["mr"] = 99900,
+		},
+		["Brackwater Vest"] = {
+			["H3540"] = 3900,
+			["mr"] = 4500,
+			["H3543"] = 4500,
+		},
+		["Lupine Buckler of Healing"] = {
+			["H3540"] = 2000,
+			["mr"] = 2000,
+		},
+		["Hook Dagger of Agility"] = {
+			["H3539"] = 30000,
+			["mr"] = 30000,
+		},
+		["Grunt's Pauldrons of the Tiger"] = {
+			["H3537"] = 20000,
+			["mr"] = 20000,
+		},
+		["Jagged Star of the Bear"] = {
+			["H3540"] = 28511,
+			["mr"] = 28511,
+			["H3539"] = 28512,
+		},
+		["Light Armor Kit"] = {
+			["H3540"] = 499,
+			["mr"] = 735,
+			["H3543"] = 735,
+			["H3539"] = 500,
+		},
+		["Marsh Chain of the Wolf"] = {
+			["H3540"] = 19800,
+			["mr"] = 59999,
+			["H3543"] = 59999,
+		},
+		["Sorcerer Sash of the Eagle"] = {
+			["H3540"] = 20000,
+			["mr"] = 20000,
+		},
+		["War Paint Anklewraps"] = {
+			["mr"] = 5573,
+			["H3543"] = 5573,
+			["H3539"] = 5400,
+		},
+		["Glowstar Rod of Frozen Wrath"] = {
+			["H3539"] = 152524,
+			["mr"] = 152524,
+		},
+		["Elixir of Firepower"] = {
+			["H3539"] = 19110,
+			["cc"] = 0,
+			["id"] = "6373:0:0:0:0",
+			["sc"] = 0,
+			["H3543"] = 29999,
+			["mr"] = 29999,
+		},
+		["Resplendent Boots of Arcane Wrath"] = {
+			["H3537"] = 220000,
+			["mr"] = 220000,
+		},
+		["Leaded Vial"] = {
+			["H3537"] = 15712,
+			["mr"] = 15712,
+		},
+		["Mystical Mantle of the Whale"] = {
+			["H3540"] = 115000,
+			["mr"] = 115000,
+		},
+		["Scaled Leather Belt of the Monkey"] = {
+			["H3540"] = 14100,
+			["mr"] = 24200,
+			["H3543"] = 24200,
+		},
+		["Sardonyx Knuckle of Fire Resistance"] = {
+			["mr"] = 50925,
+			["cc"] = 4,
+			["L3543"] = 50925,
+			["H3540"] = 400000,
+			["id"] = "11976:0:0:1415:0",
+			["H3543"] = 83334,
+			["sc"] = 0,
+		},
+		["Nightshade Spaulders of Nature Resistance"] = {
+			["H3540"] = 2990000,
+			["mr"] = 4484285,
+			["H3543"] = 4484285,
+		},
+		["Scarlet Kris"] = {
+			["H3540"] = 349999,
+			["H3539"] = 412156,
+			["H3543"] = 335999,
+			["mr"] = 335999,
+		},
+		["Brimstone Belt"] = {
+			["H3541"] = 90000,
+			["cc"] = 4,
+			["mr"] = 11500,
+			["H3540"] = 30000,
+			["id"] = "4785:0:0:0:0",
+			["sc"] = 1,
+			["H3542"] = 11500,
+		},
+		["Nocturnal Tunic of the Monkey"] = {
+			["H3543"] = 20229,
+			["mr"] = 20229,
+		},
+		["Ravager's Handwraps"] = {
+			["H3543"] = 20930,
+			["mr"] = 20930,
+		},
+		["Blood Shard"] = {
+			["H3540"] = 28,
+			["H3539"] = 33,
+			["mr"] = 28,
+		},
+		["Birchwood Maul of the Monkey"] = {
+			["H3537"] = 3549,
+			["mr"] = 3549,
+		},
+		["Monk's Staff of the Eagle"] = {
+			["H3540"] = 37755,
+			["mr"] = 89999,
+			["H3543"] = 89999,
+		},
+		["Heavy Linen Gloves"] = {
+			["mr"] = 1788,
+			["cc"] = 4,
+			["id"] = "4307:0:0:0:0",
+			["H3539"] = 1788,
+			["sc"] = 1,
+		},
+		["Book: Gift of the Wild"] = {
+			["H3540"] = 104500,
+			["mr"] = 104500,
+			["H3539"] = 11200,
+		},
+		["Greater Astral Essence"] = {
+			["mr"] = 4074,
+			["cc"] = 7,
+			["id"] = "11082:0:0:0:0",
+			["sc"] = 0,
+			["H3543"] = 4074,
+			["H3539"] = 8800,
+		},
+		["Killmaim"] = {
+			["H3540"] = 354068,
+			["mr"] = 149999,
+			["H3543"] = 149999,
+		},
+		["Celestial Kilt of Fiery Wrath"] = {
+			["H3543"] = 121914,
+			["mr"] = 121914,
+		},
+		["Large Bear Bone"] = {
+			["H3537"] = 30000,
+			["mr"] = 30000,
+		},
+		["Bloodspattered Loincloth of the Boar"] = {
+			["H3540"] = 4500,
+			["mr"] = 4500,
+		},
+		["Wolf Rider's Shoulder Pads of the Monkey"] = {
+			["H3543"] = 25000,
+			["mr"] = 25000,
+		},
+		["Lupine Cord of the Bear"] = {
+			["H3539"] = 13442,
+			["mr"] = 13442,
+		},
+		["Notched Shortsword of Power"] = {
+			["H3537"] = 3516,
+			["mr"] = 3516,
+		},
+		["Bloodspattered Gloves of the Whale"] = {
+			["H3543"] = 6000,
+			["mr"] = 6000,
+		},
+		["Dervish Belt of the Eagle"] = {
+			["H3537"] = 12550,
+			["mr"] = 12550,
+		},
+		["Training Sword of the Boar"] = {
+			["H3540"] = 2100,
+			["mr"] = 4100,
+			["H3543"] = 4100,
+			["H3539"] = 4975,
+		},
+		["Pattern: Red Mageweave Vest"] = {
+			["cc"] = 9,
+			["mr"] = 12090,
+			["sc"] = 2,
+			["H3540"] = 17199,
+			["id"] = "10300:0:0:0:0",
+			["L3539"] = 17450,
+			["H3543"] = 12090,
+			["H3539"] = 17452,
+		},
+		["Training Sword of the Monkey"] = {
+			["H3537"] = 4000,
+			["mr"] = 4000,
+		},
+		["Pattern: Gloves of the Greatfather"] = {
+			["H3539"] = 199985,
+			["cc"] = 9,
+			["id"] = "17722:0:0:0:0",
+			["mr"] = 394000,
+			["H3540"] = 394000,
+			["sc"] = 1,
+		},
+		["Globe of Water"] = {
+			["H3540"] = 4300,
+			["mr"] = 9600,
+			["H3543"] = 9600,
+			["H3539"] = 5561,
+		},
+		["Councillor's Pants of Healing"] = {
+			["H3537"] = 500000,
+			["mr"] = 500000,
+		},
+		["Double-stitched Woolen Shoulders"] = {
+			["H3537"] = 6000,
+			["mr"] = 6000,
+		},
+		["Glimmering Mail Bracers"] = {
+			["H3543"] = 5999,
+			["mr"] = 5999,
+		},
+		["Sturdy Quarterstaff of the Bear"] = {
+			["H3539"] = 1999,
+			["mr"] = 1999,
+		},
+		["Conjurer's Vest of the Owl"] = {
+			["H3537"] = 28010,
+			["mr"] = 28010,
+		},
+		["Cow King's Hide"] = {
+			["H3540"] = 191999,
+			["H3539"] = 299900,
+			["mr"] = 191999,
+		},
+		["Doomforged Straightedge"] = {
+			["H3537"] = 669999,
+			["mr"] = 669999,
+		},
+		["Edged Bastard Sword of the Whale"] = {
+			["H3540"] = 16524,
+			["mr"] = 16524,
+			["H3543"] = 16524,
+		},
+		["Bard's Tunic of Stamina"] = {
+			["H3543"] = 32801,
+			["mr"] = 32801,
+		},
+		["Formula: Enchant Shield - Stamina"] = {
+			["H3540"] = 23399,
+			["mr"] = 2993300,
+			["H3543"] = 2993300,
+		},
+		["Keeper's Wreath"] = {
+			["H3539"] = 22000,
+			["mr"] = 22000,
+		},
+		["Hero's Gauntlets"] = {
+			["H3539"] = 50000,
+			["mr"] = 50000,
+		},
+		["Plans: Thorium Boots"] = {
+			["H3540"] = 11600,
+			["H3539"] = 9900,
+			["H3543"] = 9900,
+			["mr"] = 9900,
+		},
+		["Stoneshield Cloak"] = {
+			["H3537"] = 1250000,
+			["mr"] = 1250000,
+		},
+		["Girdle of Uther"] = {
+			["H3540"] = 64347,
+			["H3539"] = 64349,
+			["H3543"] = 59500,
+			["mr"] = 59500,
+		},
+		["Grizzly Jerkin of the Owl"] = {
+			["H3537"] = 3500,
+			["mr"] = 3500,
+		},
+		["Quickdraw Quiver"] = {
+			["H3543"] = 31400,
+			["mr"] = 31400,
+		},
+		["Scouting Spaulders"] = {
+			["mr"] = 10000,
+			["cc"] = 4,
+			["id"] = "6588:0:0:0:0",
+			["sc"] = 2,
+			["H3542"] = 10000,
+		},
+		["Crafted Light Shot"] = {
+			["H3537"] = 5,
+			["mr"] = 5,
+		},
+		["Abyssal Cloth Sash of Sorcery"] = {
+			["H3540"] = 89500,
+			["mr"] = 200000,
+			["H3543"] = 200000,
+			["H3539"] = 89500,
+		},
+		["Adventurer's Bandana of the Eagle"] = {
+			["H3537"] = 68200,
+			["mr"] = 68200,
+		},
+		["Ornate Circlet of the Falcon"] = {
+			["H3537"] = 47734,
+			["mr"] = 47734,
+		},
+		["Tin Ore"] = {
+			["id"] = "2771:0:0:0:0",
+			["H3542"] = 298,
+			["mr"] = 441,
+			["sc"] = 0,
+			["L3543"] = 441,
+			["cc"] = 7,
+			["H3539"] = 366,
+			["H3543"] = 1215,
+			["H3540"] = 445,
+		},
+		["Magic Resistance Potion"] = {
+			["H3540"] = 9751,
+			["mr"] = 9751,
+			["H3539"] = 11497,
+		},
+		["The Arcanist's Cookbook"] = {
+			["H3539"] = 7720,
+			["sc"] = 0,
+			["H3540"] = 6700,
+			["cc"] = 15,
+			["id"] = "18358:0:0:0:0",
+			["mr"] = 6700,
+		},
+		["Hi-Explosive Bomb"] = {
+			["H3540"] = 1840,
+			["H3539"] = 1829,
+			["H3543"] = 1350,
+			["mr"] = 1350,
+		},
+		["Nightsky Armor"] = {
+			["H3539"] = 9987,
+			["H3543"] = 9900,
+			["mr"] = 9900,
+		},
+		["Troll's Bane Leggings"] = {
+			["mr"] = 540000,
+			["H3543"] = 540000,
+			["H3539"] = 485000,
+		},
+		["Hide of the Wild"] = {
+			["H3540"] = 2944999,
+			["H3539"] = 3170000,
+			["H3543"] = 2867500,
+			["mr"] = 2867500,
+		},
+		["Archer's Cap of the Wolf"] = {
+			["H3543"] = 41682,
+			["mr"] = 41682,
+		},
+		["Ghostweave Belt"] = {
+			["H3537"] = 775714,
+			["mr"] = 775714,
+		},
+		["Abyssal Signet"] = {
+			["H3540"] = 200000,
+			["H3539"] = 239999,
+			["H3543"] = 143500,
+			["mr"] = 143500,
+		},
+		["Jet Chain of the Bear"] = {
+			["H3540"] = 44199,
+			["H3539"] = 44384,
+			["mr"] = 44199,
+		},
+		["Resplendent Cloak of Healing"] = {
+			["H3543"] = 80131,
+			["mr"] = 80131,
+		},
+		["Knightly Longsword of the Tiger"] = {
+			["H3540"] = 14997,
+			["mr"] = 85500,
+			["H3543"] = 85500,
+		},
+		["Dense Grinding Stone"] = {
+			["mr"] = 6700,
+			["H3537"] = 6789,
+			["L3537"] = 6700,
+		},
+		["Councillor's Pants of the Owl"] = {
+			["H3537"] = 70000,
+			["mr"] = 70000,
+		},
+		["Ivycloth Tunic of Shadow Wrath"] = {
+			["H3537"] = 3000,
+			["mr"] = 3000,
+		},
+		["Monk's Staff of Frozen Wrath"] = {
+			["H3543"] = 488900,
+			["mr"] = 488900,
+		},
+		["Ritual Cape of the Eagle"] = {
+			["H3543"] = 4300,
+			["mr"] = 4300,
+		},
+		["Practice Sword"] = {
+			["H3537"] = 50000,
+			["mr"] = 50000,
+		},
+		["High Councillor's Boots of Frozen Wrath"] = {
+			["mr"] = 125500,
+			["H3543"] = 125500,
+			["H3539"] = 129999,
+		},
+		["Lunar Handwraps of the Whale"] = {
+			["H3537"] = 57049,
+			["mr"] = 57049,
+		},
+		["Innervating Band"] = {
+			["H3540"] = 999916,
+			["mr"] = 999044,
+			["H3543"] = 999044,
+		},
+		["War Torn Tunic of the Boar"] = {
+			["H3540"] = 1099,
+			["mr"] = 1099,
+		},
+		["Pattern: Red Linen Vest"] = {
+			["H3540"] = 2900,
+			["mr"] = 8000,
+			["H3543"] = 8000,
+		},
+		["Forester's Axe of the Whale"] = {
+			["mr"] = 4000,
+			["cc"] = 2,
+			["id"] = "790:0:0:1010:0",
+			["H3543"] = 4000,
+			["sc"] = 0,
+		},
+		["Acrobatic Staff of Shadow Wrath"] = {
+			["H3540"] = 97056,
+			["mr"] = 24264,
+			["H3543"] = 24264,
+		},
+		["Thaumaturgist Staff of Shadow Wrath"] = {
+			["H3537"] = 300000,
+			["mr"] = 300000,
+		},
+		["Defender Spaulders"] = {
+			["H3537"] = 10255,
+			["mr"] = 10255,
+		},
+		["Recipe: Crocolisk Steak"] = {
+			["H3537"] = 99900,
+			["mr"] = 99900,
+		},
+		["Marauder's Boots of the Bear"] = {
+			["H3537"] = 11999,
+			["mr"] = 11999,
+		},
+		["Aegis of Stormwind"] = {
+			["H3540"] = 73999,
+			["mr"] = 73999,
+			["H3539"] = 73499,
+		},
+		["Razor Axe of the Monkey"] = {
+			["H3537"] = 101092,
+			["mr"] = 101092,
+		},
+		["Ranger Cord of the Eagle"] = {
+			["H3539"] = 29246,
+			["mr"] = 29246,
+		},
+		["Blesswind Hammer of Arcane Wrath"] = {
+			["mr"] = 45742,
+			["cc"] = 2,
+			["H3540"] = 45742,
+			["id"] = "15229:0:0:1808:0",
+			["sc"] = 4,
+		},
+		["Pattern: Shadow Hood"] = {
+			["H3543"] = 11400,
+			["mr"] = 11400,
+		},
+		["Scroll of Protection"] = {
+			["H3540"] = 990,
+			["mr"] = 850,
+			["H3543"] = 850,
+			["H3539"] = 985,
+		},
+		["Bloodwoven Mitts of the Eagle"] = {
+			["H3539"] = 53222,
+			["mr"] = 53222,
+		},
+		["Knight's Bracers of the Bear"] = {
+			["H3539"] = 13539,
+			["H3543"] = 8908,
+			["mr"] = 8908,
+		},
+		["Gold Ore"] = {
+			["H3539"] = 2165,
+			["cc"] = 7,
+			["H3540"] = 2761,
+			["id"] = "2776:0:0:0:0",
+			["sc"] = 0,
+			["H3543"] = 3250,
+			["mr"] = 3250,
+		},
+		["Aboriginal Gloves of the Owl"] = {
+			["mr"] = 3500,
+			["cc"] = 4,
+			["id"] = "14117:0:0:758:0",
+			["sc"] = 1,
+			["H3529"] = 3500,
+		},
+		["Mature Blue Dragon Sinew"] = {
+			["H3537"] = 5999999,
+			["mr"] = 5999999,
+		},
+		["Core of Earth"] = {
+			["cc"] = 5,
+			["H3539"] = 599,
+			["L3543"] = 1195,
+			["id"] = "7075:0:0:0:0",
+			["H3540"] = 854,
+			["sc"] = 0,
+			["H3543"] = 1290,
+			["mr"] = 1195,
+		},
+		["Hyperion Greaves of Nature Resistance"] = {
+			["H3539"] = 1200000,
+			["mr"] = 1200000,
+		},
+		["Pattern: Big Voodoo Cloak"] = {
+			["H3540"] = 20800,
+			["H3539"] = 21799,
+			["H3543"] = 15799,
+			["mr"] = 15799,
+		},
+		["Sentinel Gloves of the Wolf"] = {
+			["H3543"] = 5000,
+			["mr"] = 5000,
+		},
+		["Green Hakkari Bijou"] = {
+			["H3540"] = 29199,
+			["H3539"] = 24525,
+			["H3543"] = 24400,
+			["mr"] = 24400,
+		},
+		["Outrunner's Cuffs of Strength"] = {
+			["H3543"] = 5500,
+			["mr"] = 5500,
+		},
+		["Righteous Bracers of the Monkey"] = {
+			["H3537"] = 25000,
+			["mr"] = 25000,
+		},
+		["Crystal Basilisk Spine"] = {
+			["mr"] = 8849,
+			["H3543"] = 8849,
+			["H3539"] = 8970,
+		},
+		["Ritual Cape of Healing"] = {
+			["H3540"] = 30000,
+			["mr"] = 3939,
+			["H3543"] = 3939,
+			["H3539"] = 30000,
+		},
+		["Sanguine Mantle"] = {
+			["mr"] = 11514,
+			["H3543"] = 11514,
+			["H3539"] = 30000,
+		},
+		["Sequoia Branch of Strength"] = {
+			["H3540"] = 46464,
+			["mr"] = 46464,
+		},
+		["Sash of Mercy"] = {
+			["H3540"] = 1097500,
+			["mr"] = 1030000,
+			["H3543"] = 1030000,
+			["H3539"] = 1182500,
+		},
+		["Raw Mithril Head Trout"] = {
+			["mr"] = 485,
+			["H3539"] = 485,
+		},
+		["Conjurer's Shoes of the Eagle"] = {
+			["H3540"] = 59907,
+			["mr"] = 59907,
+		},
+		["Tusker Sword of the Monkey"] = {
+			["H3537"] = 49999,
+			["mr"] = 49999,
+		},
+		["Six of Beasts"] = {
+			["H3540"] = 69998,
+			["mr"] = 39996,
+			["H3543"] = 39996,
+			["H3539"] = 73000,
+		},
+		["Sheepshear Mantle"] = {
+			["H3537"] = 120000,
+			["mr"] = 120000,
+		},
+		["Mightfish Steak"] = {
+			["mr"] = 3499,
+			["H3537"] = 3500,
+			["L3537"] = 3499,
+		},
+		["Elegant Belt of Fiery Wrath"] = {
+			["H3540"] = 79172,
+			["mr"] = 1098754,
+			["H3543"] = 1098754,
+		},
+		["Forester's Axe of the Bear"] = {
+			["mr"] = 15000,
+			["cc"] = 2,
+			["id"] = "790:0:0:1181:0",
+			["H3543"] = 15000,
+			["sc"] = 0,
+		},
+		["Rigid Cape of the Monkey"] = {
+			["H3539"] = 20000,
+			["mr"] = 20000,
+		},
+		["High Councillor's Sash of the Owl"] = {
+			["H3540"] = 72028,
+			["mr"] = 20000,
+			["H3543"] = 20000,
+		},
+		["Imperial Plate Shoulders"] = {
+			["H3537"] = 69999,
+			["mr"] = 69999,
+		},
+		["Lupine Handwraps of the Monkey"] = {
+			["H3537"] = 5580,
+			["mr"] = 5580,
+		},
+		["High Councillor's Circlet of Fiery Wrath"] = {
+			["H3543"] = 446116,
+			["mr"] = 446116,
+		},
+		["Glimmering Mail Gauntlets"] = {
+			["H3540"] = 13600,
+			["mr"] = 13600,
+		},
+		["Hacking Cleaver of Agility"] = {
+			["H3537"] = 35000,
+			["mr"] = 35000,
+		},
+		["Shell Launcher Shotgun"] = {
+			["mr"] = 69500,
+			["H3543"] = 69500,
+			["H3539"] = 96499,
+		},
+		["Dragon Finger of Stamina"] = {
+			["H3537"] = 200000,
+			["mr"] = 200000,
+		},
+		["Disgusting Oozeling"] = {
+			["H3539"] = 878000,
+			["mr"] = 1695000,
+			["cc"] = 15,
+			["H3540"] = 866999,
+			["id"] = "20769:0:0:0:0",
+			["sc"] = 0,
+			["H3543"] = 1695000,
+			["H3542"] = 508000,
+		},
+		["Sungrass"] = {
+			["L3540"] = 1200,
+			["mr"] = 1004,
+			["cc"] = 7,
+			["sc"] = 0,
+			["H3540"] = 1205,
+			["id"] = "8838:0:0:0:0",
+			["H3543"] = 1004,
+			["H3539"] = 1362,
+		},
+		["Nightshade Spaulders of Nature's Wrath"] = {
+			["H3543"] = 125000,
+			["mr"] = 125000,
+		},
+		["Sniper Rifle of the Monkey"] = {
+			["H3540"] = 132312,
+			["mr"] = 132312,
+		},
+		["Greenstone Circle of the Boar"] = {
+			["H3537"] = 30000,
+			["mr"] = 30000,
+		},
+		["Fortified Spaulders of the Whale"] = {
+			["H3537"] = 3500,
+			["mr"] = 3500,
+		},
+		["Meadow Ring of the Falcon"] = {
+			["H3540"] = 276999,
+			["mr"] = 276999,
+		},
+		["Rigid Cape of Stamina"] = {
+			["H3540"] = 3000,
+			["mr"] = 3000,
+		},
+		["Elemental Attuned Blade"] = {
+			["H3537"] = 17470000,
+			["mr"] = 17470000,
+		},
+		["Barbaric Harness"] = {
+			["mr"] = 9999,
+			["sc"] = 2,
+			["H3540"] = 9999,
+			["id"] = "5739:0:0:0:0",
+			["cc"] = 4,
+		},
+		["Abjurer's Tunic of Frozen Wrath"] = {
+			["H3537"] = 199984,
+			["mr"] = 199984,
+		},
+		["Gleaming Claymore of the Wolf"] = {
+			["H3540"] = 6161,
+			["mr"] = 6161,
+			["H3539"] = 6900,
+		},
+		["Master's Gloves of Fiery Wrath"] = {
+			["H3537"] = 350000,
+			["mr"] = 350000,
+		},
+		["Burning Charm"] = {
+			["H3540"] = 1939,
+			["H3539"] = 2700,
+			["H3543"] = 282,
+			["mr"] = 282,
+		},
+		["Hurricane"] = {
+			["H3543"] = 359999,
+			["mr"] = 359999,
+		},
+		["Gloves of Old"] = {
+			["mr"] = 69900,
+			["H3539"] = 69900,
+		},
+		["Chimeric Leggings"] = {
+			["H3540"] = 499000,
+			["mr"] = 430000,
+			["H3543"] = 430000,
+		},
+		["Pattern: Wicked Leather Pants"] = {
+			["H3539"] = 14999,
+			["cc"] = 9,
+			["id"] = "15757:0:0:0:0",
+			["H3540"] = 10000,
+			["mr"] = 10000,
+			["sc"] = 1,
+		},
+		["Arena Bands"] = {
+			["H3540"] = 409999,
+			["mr"] = 408999,
+			["H3543"] = 408999,
+		},
+		["Aquamarine Ring of Fire Resistance"] = {
+			["H3543"] = 140000,
+			["mr"] = 140000,
+		},
+		["Refined Deeprock Salt"] = {
+			["H3540"] = 134000,
+			["mr"] = 150000,
+			["H3543"] = 150000,
+			["H3539"] = 139500,
+		},
+		["Blackfang"] = {
+			["H3537"] = 106989,
+			["mr"] = 106989,
+		},
+		["Eight of Elementals"] = {
+			["H3540"] = 296000,
+			["H3539"] = 299999,
+			["H3543"] = 279499,
+			["mr"] = 279499,
+		},
+		["Engraved Helm of Nature's Wrath"] = {
+			["H3543"] = 130000,
+			["mr"] = 130000,
+		},
+		["Thistlefur Branch of Arcane Wrath"] = {
+			["H3537"] = 15000,
+			["mr"] = 15000,
+		},
+		["Elegant Gloves of the Eagle"] = {
+			["mr"] = 120000,
+			["cc"] = 4,
+			["id"] = "10214:0:0:874:0",
+			["sc"] = 1,
+			["H3529"] = 120000,
+		},
+		["Dragon Finger of Healing"] = {
+			["H3540"] = 462901,
+			["mr"] = 292000,
+			["H3543"] = 292000,
+		},
+		["Edged Bastard Sword of Stamina"] = {
+			["H3540"] = 5900,
+			["mr"] = 5900,
+		},
+		["Aurora Cloak"] = {
+			["H3540"] = 15589,
+			["mr"] = 30431,
+			["H3543"] = 30431,
+		},
+		["Ceremonial Leather Harness"] = {
+			["mr"] = 4900,
+			["cc"] = 4,
+			["id"] = "3313:0:0:0:0",
+			["sc"] = 2,
+			["H3536"] = 4900,
+		},
+		["Elegant Circlet of Healing"] = {
+			["H3540"] = 250000,
+			["mr"] = 310000,
+			["H3543"] = 310000,
+		},
+		["Yellow Power Crystal"] = {
+			["H3543"] = 3699,
+			["mr"] = 3699,
+		},
+		["Deadly Scope"] = {
+			["H3539"] = 34899,
+			["mr"] = 34899,
+		},
+		["Pattern: Living Leggings"] = {
+			["H3540"] = 9899,
+			["mr"] = 7194,
+			["H3543"] = 7194,
+		},
+		["Buccaneer's Robes of the Owl"] = {
+			["H3537"] = 25500,
+			["mr"] = 25500,
+		},
+		["Greater Shadow Protection Potion"] = {
+			["H3540"] = 81950,
+			["H3539"] = 94000,
+			["H3543"] = 105098,
+			["mr"] = 105098,
+		},
+		["Greenstone Talisman of the Boar"] = {
+			["H3539"] = 371392,
+			["mr"] = 371392,
+		},
+		["Wicked Leather Bracers"] = {
+			["H3539"] = 24999,
+			["mr"] = 24999,
+		},
+		["Huntsman's Leggings of the Bear"] = {
+			["H3540"] = 38482,
+			["mr"] = 38482,
+		},
+		["Wildvine"] = {
+			["H3539"] = 1538,
+			["sc"] = 0,
+			["H3540"] = 1495,
+			["id"] = "8153:0:0:0:0",
+			["cc"] = 7,
+			["H3543"] = 1614,
+			["mr"] = 1614,
+		},
+		["Green Hills of Stranglethorn - Page 24"] = {
+			["H3540"] = 1955,
+			["H3539"] = 1586,
+			["H3543"] = 2061,
+			["mr"] = 2061,
+		},
+		["Powerful Seaforium Charge"] = {
+			["H3540"] = 41999,
+			["mr"] = 41999,
+		},
+		["Bandit Cloak of Stamina"] = {
+			["H3539"] = 6000,
+			["mr"] = 6000,
+		},
+		["White Bandit Mask"] = {
+			["H3540"] = 21999,
+			["mr"] = 21999,
+		},
+		["Chieftain's Shoulders of the Whale"] = {
+			["H3537"] = 35517,
+			["mr"] = 35517,
+		},
+		["Black Mageweave Shoulders"] = {
+			["mr"] = 24375,
+			["sc"] = 1,
+			["H3540"] = 24375,
+			["id"] = "10027:0:0:0:0",
+			["cc"] = 4,
+		},
+		["Zulian Mudskunk"] = {
+			["H3537"] = 50000,
+			["mr"] = 50000,
+		},
+		["Rugged Hide"] = {
+			["H3540"] = 10600,
+			["mr"] = 12799,
+			["H3543"] = 12799,
+			["H3539"] = 8780,
+		},
+		["Shredder Operating Manual - Page 9"] = {
+			["mr"] = 5000,
+			["sc"] = 0,
+			["id"] = "16653:0:0:0:0",
+			["cc"] = 15,
+			["H3542"] = 5000,
+		},
+		["Red Swashbuckler's Shirt"] = {
+			["mr"] = 34070,
+			["H3543"] = 34070,
+			["H3539"] = 99500,
+		},
+		["Bloodwoven Pads of the Wolf"] = {
+			["H3537"] = 12500,
+			["mr"] = 12500,
+		},
+		["Twilight Cowl of Intellect"] = {
+			["H3539"] = 8600,
+			["mr"] = 8600,
+		},
+		["Elixir of the Sages"] = {
+			["mr"] = 9998,
+			["H3543"] = 9998,
+			["H3539"] = 39999,
+		},
+		["Red Dragonscale"] = {
+			["H3540"] = 21087,
+			["H3539"] = 23500,
+			["H3543"] = 12200,
+			["mr"] = 12200,
+		},
+		["Two of Portals"] = {
+			["H3540"] = 20800,
+			["H3539"] = 24499,
+			["H3543"] = 18100,
+			["mr"] = 18100,
+		},
+		["Junglevine Wine"] = {
+			["H3537"] = 30695,
+			["mr"] = 30695,
+		},
+		["Councillor's Scepter of the Owl"] = {
+			["H3539"] = 149672,
+			["H3543"] = 149672,
+			["mr"] = 149672,
+		},
+		["Recipe: Holy Protection Potion"] = {
+			["H3540"] = 88500,
+			["mr"] = 56000,
+			["H3543"] = 56000,
+			["H3539"] = 88999,
+		},
+		["Polished Jazeraint Armor"] = {
+			["H3539"] = 70000,
+			["H3543"] = 74999,
+			["mr"] = 74999,
+		},
+		["War Paint Chestpiece"] = {
+			["H3543"] = 12000,
+			["mr"] = 12000,
+		},
+		["Bard's Gloves of the Monkey"] = {
+			["H3537"] = 5530,
+			["mr"] = 5530,
+		},
+		["Bloodspiller"] = {
+			["mr"] = 90000,
+			["H3543"] = 90000,
+			["H3539"] = 80000,
+		},
+		["Raincaller Cord of Healing"] = {
+			["H3537"] = 13750,
+			["mr"] = 13750,
+		},
+		["Templar Chestplate of Power"] = {
+			["H3540"] = 155000,
+			["mr"] = 106700,
+			["H3543"] = 106700,
+		},
+		["Banded Girdle of the Bear"] = {
+			["H3540"] = 90000,
+			["mr"] = 90000,
+		},
+		["Ivycloth Robe of the Eagle"] = {
+			["H3543"] = 40000,
+			["mr"] = 40000,
+		},
+		["Plans: Arcanite Reaper"] = {
+			["mr"] = 400000,
+			["sc"] = 4,
+			["H3540"] = 400000,
+			["id"] = "12838:0:0:0:0",
+			["cc"] = 9,
+		},
+		["Ivory Wand of the Eagle"] = {
+			["H3543"] = 120000,
+			["mr"] = 120000,
+		},
+		["Goblin Nutcracker of the Tiger"] = {
+			["H3540"] = 27200,
+			["mr"] = 36000,
+			["H3543"] = 36000,
+		},
+		["Abyssal Plate Legplates of Restoration"] = {
+			["H3539"] = 399999,
+			["H3543"] = 518887,
+			["mr"] = 518887,
+		},
+		["Nightfin Soup"] = {
+			["H3540"] = 11000,
+			["H3539"] = 10997,
+			["mr"] = 11000,
+		},
+		["Dwarven Hatchet of Agility"] = {
+			["H3543"] = 4800,
+			["mr"] = 4800,
+		},
+		["Coral Band of the Gorilla"] = {
+			["H3543"] = 55152,
+			["mr"] = 55152,
+		},
+		["Peridot Circle of Frost Resistance"] = {
+			["H3540"] = 1757500,
+			["mr"] = 2500000,
+			["H3543"] = 2500000,
+		},
+		["Spiked Club of the Monkey"] = {
+			["H3540"] = 7320,
+			["mr"] = 3000,
+			["H3543"] = 3000,
+			["H3539"] = 1848,
+		},
+		["Bloodforged Bindings of the Bear"] = {
+			["H3537"] = 42180,
+			["mr"] = 42180,
+		},
+		["Plated Fist of Hakoo"] = {
+			["H3540"] = 60000,
+			["mr"] = 60000,
+		},
+		["Sorcerer Hat of Intellect"] = {
+			["H3540"] = 20000,
+			["mr"] = 20000,
+		},
+		["Wildheart Belt"] = {
+			["H3539"] = 110000,
+			["mr"] = 110000,
+		},
+		["Ironweb Spider Silk"] = {
+			["H3540"] = 5800,
+			["H3539"] = 4499,
+			["H3543"] = 9500,
+			["mr"] = 9500,
+		},
+		["Conjurer's Mantle of the Whale"] = {
+			["H3543"] = 11051,
+			["mr"] = 11051,
+		},
+		["Ritual Belt of the Eagle"] = {
+			["H3537"] = 5500,
+			["mr"] = 5500,
+		},
+		["Gleaming Claymore of the Tiger"] = {
+			["H3539"] = 6900,
+			["mr"] = 6900,
+		},
+		["Blackmouth Oil"] = {
+			["H3540"] = 11666,
+			["mr"] = 13799,
+			["H3543"] = 13799,
+			["H3539"] = 18025,
+		},
+		["Arcane Armor"] = {
+			["mr"] = 119900,
+			["sc"] = 1,
+			["H3540"] = 119900,
+			["id"] = "8283:0:0:0:0",
+			["cc"] = 4,
+		},
+		["Gossamer Boots of the Eagle"] = {
+			["H3540"] = 158537,
+			["mr"] = 158537,
+		},
+		["Feral Buckler of Blocking"] = {
+			["H3537"] = 4900,
+			["mr"] = 4900,
+		},
+		["Rough Stone"] = {
+			["H3539"] = 29,
+			["mr"] = 73,
+			["cc"] = 7,
+			["H3540"] = 19,
+			["id"] = "2835:0:0:0:0",
+			["sc"] = 0,
+			["H3543"] = 73,
+			["H3542"] = 28,
+		},
+		["Rough Boomstick"] = {
+			["H3537"] = 1500,
+			["mr"] = 1500,
+		},
+		["Scroll of Intellect IV"] = {
+			["H3540"] = 3997,
+			["H3539"] = 1900,
+			["H3543"] = 1304,
+			["mr"] = 1304,
+		},
+		["Nightslayer Belt"] = {
+			["mr"] = 4749999,
+			["H3537"] = 4750000,
+			["L3537"] = 4749999,
+		},
+		["Scorpashi Shoulder Pads"] = {
+			["H3540"] = 45143,
+			["mr"] = 45143,
+		},
+		["Belt of the Ordained"] = {
+			["H3537"] = 450000,
+			["mr"] = 450000,
+		},
+		["Bent Staff"] = {
+			["H3537"] = 47688,
+			["mr"] = 47688,
+		},
+		["Duskwoven Sandals of Frozen Wrath"] = {
+			["H3537"] = 55557,
+			["mr"] = 55557,
+		},
+		["Cat Carrier (Bombay)"] = {
+			["H3537"] = 200000,
+			["mr"] = 200000,
+		},
+		["Grunt's Cape of Defense"] = {
+			["H3540"] = 2000,
+			["mr"] = 2000,
+		},
+		["Plans: Golden Iron Destroyer"] = {
+			["H3540"] = 7313,
+			["H3539"] = 9199,
+			["mr"] = 7313,
+		},
+		["Smashing Star of the Tiger"] = {
+			["H3537"] = 62187,
+			["mr"] = 62187,
+		},
+		["Recipe: Swiftness Potion"] = {
+			["H3540"] = 99500,
+			["mr"] = 175000,
+			["H3543"] = 175000,
+			["H3539"] = 87261,
+		},
+		["Twilight Pants of the Owl"] = {
+			["mr"] = 16000,
+			["H3543"] = 16000,
+			["H3539"] = 19600,
+		},
+		["Magician Staff of Stamina"] = {
+			["H3537"] = 29479,
+			["mr"] = 29479,
+		},
+		["Pattern: Raptor Hide Harness"] = {
+			["mr"] = 33000,
+			["H3543"] = 33000,
+			["H3539"] = 32173,
+		},
+		["Brain Hacker"] = {
+			["H3539"] = 199499,
+			["H3543"] = 684000,
+			["mr"] = 684000,
+		},
+		["Scroll of Spirit III"] = {
+			["H3540"] = 1094,
+			["H3539"] = 1152,
+			["H3543"] = 1068,
+			["mr"] = 1068,
+		},
+		["Frost Protection Potion"] = {
+			["H3539"] = 26809,
+			["H3543"] = 29999,
+			["mr"] = 29999,
+		},
+		["Obsidian Greaves"] = {
+			["mr"] = 90000,
+			["H3537"] = 139500,
+			["L3537"] = 90000,
+		},
+		["Crusader's Gauntlets of Nature Resistance"] = {
+			["H3537"] = 1500000,
+			["mr"] = 1500000,
+		},
+		["Scouting Trousers of the Bear"] = {
+			["H3537"] = 54763,
+			["mr"] = 54763,
+		},
+		["Vorpal Dagger of Strength"] = {
+			["H3539"] = 57133,
+			["mr"] = 57133,
+		},
+		["Crisp Spider Meat"] = {
+			["H3540"] = 122,
+			["H3539"] = 128,
+			["H3543"] = 79,
+			["mr"] = 79,
+		},
+		["Lightforge Bracers"] = {
+			["H3543"] = 98500,
+			["mr"] = 98500,
+		},
+		["Black Husk Shield"] = {
+			["H3543"] = 500000,
+			["mr"] = 500000,
+		},
+		["Burnished Gloves"] = {
+			["H3543"] = 3999,
+			["mr"] = 3999,
+		},
+		["Shadow Protection Potion"] = {
+			["H3540"] = 20399,
+			["H3539"] = 22396,
+			["H3543"] = 14599,
+			["mr"] = 14599,
+		},
+		["Green Hills of Stranglethorn - Page 8"] = {
+			["H3540"] = 895,
+			["H3539"] = 2800,
+			["H3543"] = 1009,
+			["mr"] = 1009,
+		},
+		["Venomshroud Orb"] = {
+			["mr"] = 54499,
+			["cc"] = 4,
+			["H3540"] = 59500,
+			["sc"] = 0,
+			["id"] = "15966:0:0:0:0",
+			["H3542"] = 54499,
+		},
+		["Bloodwoven Pants of the Eagle"] = {
+			["H3537"] = 52851,
+			["mr"] = 52851,
+		},
+		["Gossamer Cape of the Whale"] = {
+			["H3537"] = 12891,
+			["mr"] = 12891,
+		},
+		["Solid Weightstone"] = {
+			["H3537"] = 60000,
+			["mr"] = 60000,
+		},
+		["Gloves of Holy Might"] = {
+			["mr"] = 290000,
+			["cc"] = 4,
+			["id"] = "867:0:0:0:0",
+			["H3540"] = 290000,
+			["sc"] = 2,
+		},
+		["Shadoweave Pants"] = {
+			["H3540"] = 119999,
+			["mr"] = 149894,
+			["H3543"] = 149894,
+			["H3539"] = 119996,
+		},
+		["Scroll of Protection IV"] = {
+			["H3539"] = 1975,
+			["H3543"] = 19599,
+			["mr"] = 19599,
+		},
+		["Swiftwind"] = {
+			["H3543"] = 100000,
+			["mr"] = 100000,
+		},
+		["Master's Robe of Shadow Wrath"] = {
+			["H3537"] = 272132,
+			["mr"] = 272132,
+		},
+		["Simple Robe of Shadow Wrath"] = {
+			["H3537"] = 12000,
+			["mr"] = 12000,
+		},
+		["Bloodspattered Surcoat of the Bear"] = {
+			["H3537"] = 5969,
+			["mr"] = 5969,
+		},
+		["Gloves of Spell Mastery"] = {
+			["H3537"] = 8999999,
+			["mr"] = 8999999,
+		},
+		["Sequoia Branch of the Whale"] = {
+			["H3540"] = 40500,
+			["mr"] = 40500,
+		},
+		["Ritual Cape of Intellect"] = {
+			["H3543"] = 1000,
+			["mr"] = 1000,
+		},
+		["Mighty Boots of Shadow Resistance"] = {
+			["H3537"] = 280000,
+			["mr"] = 280000,
+		},
+		["Pattern: Wicked Leather Headband"] = {
+			["mr"] = 30000,
+			["cc"] = 9,
+			["id"] = "15744:0:0:0:0",
+			["H3539"] = 30000,
+			["sc"] = 1,
+		},
+		["Resplendent Belt of the Wolf"] = {
+			["H3539"] = 40000,
+			["mr"] = 40000,
+		},
+		["Defender Gauntlets of the Bear"] = {
+			["H3543"] = 8800,
+			["mr"] = 8800,
+		},
+		["Feet of the Lynx"] = {
+			["H3540"] = 580000,
+			["mr"] = 310000,
+			["H3543"] = 310000,
+			["H3539"] = 798750,
+		},
+		["Mindthrust Bracers"] = {
+			["mr"] = 159999,
+			["H3543"] = 159999,
+			["H3539"] = 189000,
+		},
+		["Thick Scale Bracelets of the Bear"] = {
+			["H3537"] = 16176,
+			["mr"] = 16176,
+		},
+		["Spinel Ring of Shadow Resistance"] = {
+			["H3537"] = 395247,
+			["mr"] = 395247,
+		},
+		["Soldier's Leggings of the Eagle"] = {
+			["H3537"] = 7750,
+			["mr"] = 7750,
+		},
+		["Adventurer's Cape of the Monkey"] = {
+			["H3540"] = 150000,
+			["mr"] = 150000,
+			["H3543"] = 150000,
+			["H3539"] = 150000,
+		},
+		["Aquadynamic Fish Attractor"] = {
+			["H3540"] = 4176,
+			["H3539"] = 5500,
+			["H3543"] = 4900,
+			["mr"] = 4900,
+		},
+		["Wild Thornroot"] = {
+			["mr"] = 7000,
+			["H3543"] = 7000,
+			["H3539"] = 7000,
+		},
+		["Elegant Mantle of Shadow Wrath"] = {
+			["H3540"] = 170500,
+			["mr"] = 80000,
+			["H3543"] = 80000,
+			["H3539"] = 199999,
+		},
+		["Torch of Austen"] = {
+			["H3543"] = 109500,
+			["mr"] = 109500,
+		},
+		["Large Blue Sack"] = {
+			["H3540"] = 9999,
+			["H3539"] = 13595,
+			["mr"] = 9999,
+		},
+		["Lesser Invisibility Potion"] = {
+			["H3540"] = 25599,
+			["H3539"] = 28000,
+			["H3543"] = 20991,
+			["mr"] = 20991,
+		},
+		["Catseye Elixir"] = {
+			["H3539"] = 17800,
+			["mr"] = 17800,
+		},
+		["Scroll of Stamina"] = {
+			["H3540"] = 1975,
+			["mr"] = 1964,
+			["H3543"] = 1964,
+			["H3539"] = 1985,
+		},
+		["Schematic: Arcanite Dragonling"] = {
+			["mr"] = 1399999,
+			["cc"] = 9,
+			["H3540"] = 1220000,
+			["id"] = "16054:0:0:0:0",
+			["H3543"] = 1399999,
+			["sc"] = 3,
+		},
+		["Warlord's Axe of the Wolf"] = {
+			["H3540"] = 58888,
+			["mr"] = 58888,
+		},
+		["Heartseeking Crossbow"] = {
+			["H3540"] = 70000,
+			["mr"] = 70000,
+		},
+		["Grilled Squid"] = {
+			["H3540"] = 13790,
+			["H3539"] = 14270,
+			["H3543"] = 14800,
+			["mr"] = 14800,
+		},
+		["Green Dragonscale"] = {
+			["H3540"] = 2900,
+			["H3539"] = 4687,
+			["H3543"] = 1788,
+			["mr"] = 1788,
+		},
+		["Gaea's Cloak of the Owl"] = {
+			["H3537"] = 27900,
+			["mr"] = 27900,
+		},
+		["Splitting Hatchet of the Boar"] = {
+			["mr"] = 15000,
+			["cc"] = 2,
+			["H3539"] = 30876,
+			["id"] = "15231:0:0:1101:0",
+			["sc"] = 0,
+			["H3543"] = 15000,
+			["H3542"] = 20000,
+		},
+		["Commander's Boots of the Bear"] = {
+			["H3540"] = 35400,
+			["mr"] = 35400,
+		},
+		["Pattern: Mooncloth Robe"] = {
+			["H3543"] = 87500,
+			["mr"] = 87500,
+		},
+		["Blue Power Crystal"] = {
+			["mr"] = 1538,
+			["H3543"] = 1538,
+			["H3539"] = 1249,
+		},
+		["Warden's Woolies"] = {
+			["H3537"] = 22089,
+			["mr"] = 22089,
+		},
+		["Scouting Trousers of the Monkey"] = {
+			["H3543"] = 12200,
+			["mr"] = 12200,
+		},
+		["Schematic: Ultra-Flash Shadow Reflector"] = {
+			["H3540"] = 594750,
+			["mr"] = 399000,
+			["H3543"] = 399000,
+		},
+		["High Councillor's Pants of Healing"] = {
+			["H3543"] = 222191,
+			["mr"] = 222191,
+		},
+		["Dreadmist Belt"] = {
+			["H3543"] = 84999,
+			["mr"] = 84999,
+		},
+		["Sentinel Girdle of Defense"] = {
+			["H3537"] = 71105,
+			["mr"] = 71105,
+		},
+		["Elixir of Brute Force"] = {
+			["H3537"] = 69900,
+			["mr"] = 69900,
+		},
+		["Goblin Jumper Cables XL"] = {
+			["mr"] = 513522,
+			["H3539"] = 513522,
+		},
+		["Swamp Pendant of the Wolf"] = {
+			["H3539"] = 40000,
+			["mr"] = 40000,
+		},
+		["Recipe: Mighty Troll's Blood Potion"] = {
+			["H3540"] = 28000,
+			["mr"] = 7997,
+			["H3543"] = 7997,
+			["H3539"] = 29400,
+		},
+		["Warden Staff"] = {
+			["H3540"] = 2660404,
+			["mr"] = 2790000,
+			["H3543"] = 2790000,
+			["H3539"] = 2317500,
+		},
+		["Scale of Onyxia"] = {
+			["H3540"] = 33333,
+			["H3539"] = 28798,
+			["H3543"] = 20982,
+			["mr"] = 20982,
+		},
+		["Duskbringer"] = {
+			["H3543"] = 192000,
+			["mr"] = 192000,
+		},
+		["Mighty Armsplints of Stamina"] = {
+			["H3537"] = 146040,
+			["mr"] = 146040,
+		},
+		["Wizard's Hand of Healing"] = {
+			["H3539"] = 199998,
+			["mr"] = 199998,
+		},
+		["Eaglehorn Long Bow"] = {
+			["mr"] = 795999,
+			["H3543"] = 795999,
+			["H3539"] = 299999,
+		},
+		["Scaled Leather Leggings of Agility"] = {
+			["H3539"] = 50000,
+			["mr"] = 50000,
+		},
+		["Plans: Dark Iron Sunderer"] = {
+			["H3539"] = 16200,
+			["mr"] = 16200,
+		},
+		["Manslayer"] = {
+			["H3537"] = 1442224,
+			["mr"] = 1442224,
+		},
+		["Mail Combat Headguard"] = {
+			["H3539"] = 39576,
+			["mr"] = 39576,
+		},
+		["Changuk Smasher"] = {
+			["H3537"] = 230000,
+			["mr"] = 230000,
+		},
+		["Militant Shortsword of the Tiger"] = {
+			["H3537"] = 10407,
+			["mr"] = 10407,
+		},
+		["Gleaming Claymore of the Boar"] = {
+			["mr"] = 3300,
+			["cc"] = 2,
+			["id"] = "15248:0:0:1103:0",
+			["L3543"] = 3300,
+			["H3543"] = 4500,
+			["sc"] = 8,
+		},
+		["Eye of Adaegus"] = {
+			["H3540"] = 59800,
+			["mr"] = 59800,
+			["H3539"] = 198999,
+		},
+		["Libram of Rapidity"] = {
+			["H3540"] = 9900,
+			["mr"] = 19999,
+			["H3543"] = 19999,
+			["H3539"] = 14798,
+		},
+		["Adventurer's Cape of Healing"] = {
+			["H3540"] = 290000,
+			["mr"] = 250000,
+			["H3543"] = 250000,
+			["H3539"] = 350000,
+		},
+		["Glyphed Boots"] = {
+			["H3539"] = 10692,
+			["mr"] = 10692,
+		},
+		["Elixir of Detect Lesser Invisibility"] = {
+			["H3537"] = 3582,
+			["mr"] = 3582,
+		},
+		["Glowing Black Orb"] = {
+			["mr"] = 80000,
+			["cc"] = 4,
+			["id"] = "20694:0:0:0:0",
+			["sc"] = 0,
+			["H3542"] = 80000,
+		},
+		["Chimeric Gloves"] = {
+			["H3540"] = 499900,
+			["mr"] = 499900,
+		},
+		["Forester's Axe of the Boar"] = {
+			["H3537"] = 5600,
+			["mr"] = 5600,
+		},
+		["Wild Steelbloom"] = {
+			["H3539"] = 6900,
+			["sc"] = 0,
+			["H3540"] = 7695,
+			["id"] = "3355:0:0:0:0",
+			["cc"] = 7,
+			["H3543"] = 7599,
+			["mr"] = 7599,
+		},
+		["Councillor's Tunic of Spirit"] = {
+			["H3540"] = 51100,
+			["mr"] = 51100,
+		},
+		["Infiltrator Gloves of the Gorilla"] = {
+			["H3537"] = 30000,
+			["mr"] = 30000,
+		},
+		["Outrunner's Gloves of the Eagle"] = {
+			["mr"] = 6750,
+			["cc"] = 4,
+			["id"] = "15502:0:0:844:0",
+			["H3537"] = 6750,
+			["sc"] = 3,
+		},
+		["Dreamweave Vest"] = {
+			["H3543"] = 81086,
+			["mr"] = 81086,
+		},
+		["Pattern: Comfortable Leather Hat"] = {
+			["mr"] = 120000,
+			["cc"] = 9,
+			["id"] = "8384:0:0:0:0",
+			["H3543"] = 120000,
+			["sc"] = 1,
+		},
+		["Ornate Mithril Pants"] = {
+			["mr"] = 119495,
+			["H3543"] = 119495,
+			["H3539"] = 89998,
+		},
+		["Deadly Kris of Strength"] = {
+			["H3543"] = 40000,
+			["mr"] = 40000,
+		},
+		["Scaled Leather Belt of the Bear"] = {
+			["H3537"] = 6500,
+			["mr"] = 6500,
+		},
+		["Pagan Bands of Healing"] = {
+			["H3539"] = 2200,
+			["mr"] = 2200,
+		},
+		["Sturdy Quarterstaff of Healing"] = {
+			["H3543"] = 48675,
+			["mr"] = 48675,
+		},
+		["Mighty Rage Potion"] = {
+			["H3540"] = 31800,
+			["H3539"] = 34800,
+			["H3543"] = 43780,
+			["mr"] = 43780,
+		},
+		["Deepdive Helmet"] = {
+			["H3540"] = 222999,
+			["H3539"] = 228998,
+			["H3543"] = 229895,
+			["mr"] = 229895,
+		},
+		["Pattern: White Wedding Dress"] = {
+			["H3543"] = 84000,
+			["mr"] = 84000,
+		},
+		["Burnished Leggings"] = {
+			["H3537"] = 4900,
+			["mr"] = 4900,
+		},
+		["Battleforge Wristguards of Power"] = {
+			["H3543"] = 9900,
+			["mr"] = 9900,
+		},
+		["Formula: Enchant Cloak - Minor Agility"] = {
+			["H3540"] = 5263,
+			["H3539"] = 5500,
+			["mr"] = 5263,
+		},
+		["Swampwalker Boots"] = {
+			["H3540"] = 384999,
+			["mr"] = 415000,
+			["H3543"] = 415000,
+		},
+		["Black Dragonscale Boots"] = {
+			["mr"] = 3424164,
+			["H3537"] = 3424167,
+			["L3537"] = 3424164,
+		},
+		["Aurora Armor"] = {
+			["H3540"] = 17400,
+			["mr"] = 17400,
+		},
+		["Barbaric Battle Axe of Strength"] = {
+			["H3539"] = 50000,
+			["cc"] = 2,
+			["sc"] = 1,
+			["H3540"] = 20000,
+			["id"] = "3195:0:0:115:0",
+			["H3543"] = 10778,
+			["mr"] = 10778,
+		},
+		["Red Mageweave Gloves"] = {
+			["H3539"] = 99898,
+			["cc"] = 4,
+			["sc"] = 1,
+			["H3540"] = 112165,
+			["id"] = "10018:0:0:0:0",
+			["H3543"] = 99897,
+			["mr"] = 99897,
+		},
+		["Captain's Leggings of the Owl"] = {
+			["H3537"] = 33000,
+			["mr"] = 33000,
+		},
+		["Midnight Mace"] = {
+			["H3539"] = 278999,
+			["mr"] = 278999,
+		},
+		["Champion's Armor of Nature's Wrath"] = {
+			["H3539"] = 220000,
+			["mr"] = 220000,
+		},
+		["Grunt Axe of Strength"] = {
+			["H3540"] = 8004,
+			["mr"] = 10950,
+			["H3543"] = 10950,
+		},
+		["Royal Gown of Intellect"] = {
+			["H3543"] = 60000,
+			["mr"] = 60000,
+		},
+		["Murloc Skin Bag"] = {
+			["mr"] = 10000,
+			["sc"] = 0,
+			["H3540"] = 10000,
+			["id"] = "1470:0:0:0:0",
+			["cc"] = 1,
+		},
+		["Black Velvet Robes"] = {
+			["H3540"] = 349949,
+			["mr"] = 299945,
+			["H3543"] = 299945,
+		},
+		["Knight's Girdle of the Tiger"] = {
+			["H3537"] = 32184,
+			["mr"] = 32184,
+		},
+		["Duskwoven Branch of Fiery Wrath"] = {
+			["H3537"] = 3000000,
+			["mr"] = 3000000,
+		},
+		["High Councillor's Gloves of Healing"] = {
+			["H3537"] = 850000,
+			["mr"] = 850000,
+		},
+		["Silver Rod"] = {
+			["H3540"] = 9995,
+			["mr"] = 8800,
+			["H3543"] = 8800,
+		},
+		["Purple Hakkari Bijou"] = {
+			["H3540"] = 29199,
+			["H3539"] = 24526,
+			["H3543"] = 24400,
+			["mr"] = 24400,
+		},
+		["Worn Dagger"] = {
+			["H3537"] = 23404,
+			["mr"] = 23404,
+		},
+		["Sentry's Sash of the Bear"] = {
+			["H3543"] = 13500,
+			["mr"] = 13500,
+		},
+		["Seer's Pants"] = {
+			["mr"] = 5499,
+			["H3543"] = 5499,
+			["H3539"] = 8000,
+		},
+		["Formula: Enchant Gloves - Greater Strength"] = {
+			["mr"] = 949000,
+			["cc"] = 9,
+			["id"] = "16244:0:0:0:0",
+			["L3537"] = 949000,
+			["H3537"] = 1005000,
+			["sc"] = 8,
+		},
+		["Pattern: Devilsaur Gauntlets"] = {
+			["H3537"] = 144950,
+			["mr"] = 144950,
+		},
+		["The 1 Ring"] = {
+			["H3543"] = 1249906,
+			["mr"] = 1249906,
+		},
+		["Formula: Enchant Gloves - Greater Agility"] = {
+			["mr"] = 41508,
+			["cc"] = 9,
+			["id"] = "16219:0:0:0:0",
+			["H3539"] = 10998,
+			["H3543"] = 41508,
+			["sc"] = 8,
+		},
+		["High Councillor's Pants of the Eagle"] = {
+			["H3543"] = 80000,
+			["mr"] = 80000,
+		},
+		["High Councillor's Bracers of the Whale"] = {
+			["H3540"] = 65400,
+			["mr"] = 65400,
+		},
+		["Exquisite Flamberge of the Bear"] = {
+			["H3540"] = 51295,
+			["mr"] = 51295,
+			["H3539"] = 57167,
+		},
+		["Valorous Girdle"] = {
+			["H3539"] = 32000,
+			["mr"] = 32000,
+		},
+		["Weighted Cloak"] = {
+			["H3537"] = 37790,
+			["mr"] = 37790,
+		},
+		["Pattern: Guardian Cloak"] = {
+			["H3543"] = 16800,
+			["mr"] = 16800,
+		},
+		["Scroll of Agility"] = {
+			["H3540"] = 1930,
+			["mr"] = 1925,
+			["H3543"] = 1925,
+			["H3539"] = 1940,
+		},
+		["Hakkari Coin"] = {
+			["H3540"] = 2999,
+			["H3539"] = 2898,
+			["H3543"] = 3500,
+			["mr"] = 3500,
+		},
+		["Pattern: White Leather Jerkin"] = {
+			["H3543"] = 125730,
+			["mr"] = 125730,
+		},
+		["Superior Belt of the Owl"] = {
+			["H3539"] = 8500,
+			["mr"] = 8500,
+		},
+		["Khoo's Point"] = {
+			["H3540"] = 48749,
+			["H3539"] = 48750,
+			["H3543"] = 52497,
+			["mr"] = 52497,
+		},
+		["Explosive Sheep"] = {
+			["H3540"] = 9499,
+			["mr"] = 8775,
+			["H3543"] = 8775,
+		},
+		["Battering Hammer of the Gorilla"] = {
+			["H3537"] = 8499,
+			["mr"] = 8499,
+		},
+		["Blue Hakkari Bijou"] = {
+			["H3540"] = 29000,
+			["H3539"] = 24600,
+			["H3543"] = 24506,
+			["mr"] = 24506,
+		},
+		["Five of Warlords"] = {
+			["H3540"] = 189897,
+			["H3539"] = 189996,
+			["H3543"] = 99900,
+			["mr"] = 99900,
+		},
+		["Mistscape Boots"] = {
+			["H3540"] = 6000,
+			["mr"] = 24576,
+			["H3543"] = 24576,
+			["H3539"] = 6700,
+		},
+		["Murphstar of Nature's Wrath"] = {
+			["H3543"] = 118704,
+			["mr"] = 118704,
+		},
+		["Yorgen Bracers"] = {
+			["H3543"] = 250000,
+			["mr"] = 250000,
+		},
+		["Pattern: Reinforced Woolen Shoulders"] = {
+			["H3537"] = 13333,
+			["mr"] = 13333,
+		},
+		["Parrot Cage (Cockatiel)"] = {
+			["H3540"] = 99215,
+			["mr"] = 99215,
+		},
+		["Formula: Enchant Chest - Minor Mana"] = {
+			["H3540"] = 1498,
+			["H3539"] = 1835,
+			["H3543"] = 1420,
+			["mr"] = 1420,
+		},
+		["Red Leather Bag"] = {
+			["H3539"] = 5998,
+			["cc"] = 1,
+			["sc"] = 0,
+			["H3540"] = 2925,
+			["mr"] = 10000,
+			["id"] = "2657:0:0:0:0",
+			["H3542"] = 10000,
+		},
+		["Outrunner's Cloak of the Bear"] = {
+			["H3537"] = 5000,
+			["mr"] = 5000,
+		},
+		["Thick Furry Mane"] = {
+			["H3543"] = 11900,
+			["mr"] = 11900,
+		},
+		["Knight's Headguard of Stamina"] = {
+			["H3537"] = 8900,
+			["mr"] = 8900,
+		},
+		["Ornate Spyglass"] = {
+			["H3537"] = 20000,
+			["mr"] = 20000,
+		},
+		["Dreadmist Bracers"] = {
+			["H3539"] = 40000,
+			["H3543"] = 150000,
+			["mr"] = 150000,
+		},
+		["Recipe: Savory Deviate Delight"] = {
+			["H3540"] = 90000,
+			["mr"] = 155000,
+			["H3543"] = 155000,
+			["H3539"] = 189999,
+		},
+		["Wanderer's Leggings of Power"] = {
+			["H3540"] = 152200,
+			["mr"] = 152200,
+		},
+		["Ritual Cape of Shadow Wrath"] = {
+			["mr"] = 5551,
+			["H3543"] = 5551,
+			["H3539"] = 11372,
+		},
+		["Master's Bracers of Frozen Wrath"] = {
+			["H3540"] = 467281,
+			["mr"] = 467278,
+			["H3543"] = 467278,
+		},
+		["Sentinel Boots of Spirit"] = {
+			["mr"] = 40524,
+			["cc"] = 4,
+			["id"] = "7444:0:0:182:0",
+			["sc"] = 2,
+			["H3542"] = 40524,
+		},
+		["Pattern: Runecloth Headband"] = {
+			["mr"] = 29899,
+			["cc"] = 9,
+			["id"] = "14498:0:0:0:0",
+			["H3540"] = 49793,
+			["sc"] = 2,
+			["H3542"] = 29899,
+		},
+		["Pattern: Wicked Leather Armor"] = {
+			["mr"] = 159998,
+			["cc"] = 9,
+			["id"] = "15773:0:0:0:0",
+			["H3539"] = 37900,
+			["H3543"] = 159998,
+			["sc"] = 1,
+		},
+		["Heraldic Cloak"] = {
+			["mr"] = 9498,
+			["H3543"] = 9498,
+			["H3539"] = 19800,
+		},
+		["Renegade Chestguard of Power"] = {
+			["H3540"] = 100000,
+			["mr"] = 100000,
+			["H3539"] = 100000,
+		},
+		["Onyxia Scale Cloak"] = {
+			["H3540"] = 467999,
+			["H3539"] = 490000,
+			["H3543"] = 411000,
+			["mr"] = 411000,
+		},
+		["Giant Club of the Bear"] = {
+			["H3537"] = 105060,
+			["mr"] = 105060,
+		},
+		["Training Sword of Strength"] = {
+			["H3537"] = 5000,
+			["mr"] = 5000,
+		},
+		["Schematic: Snowmaster 9000"] = {
+			["H3537"] = 1250000,
+			["mr"] = 1250000,
+		},
+		["Hero's Pauldrons"] = {
+			["H3540"] = 30000,
+			["mr"] = 30000,
+		},
+		["Barbaric Linen Vest"] = {
+			["mr"] = 3328,
+			["sc"] = 1,
+			["H3540"] = 3328,
+			["id"] = "2578:0:0:0:0",
+			["cc"] = 4,
+		},
+		["Doombringer"] = {
+			["H3540"] = 90500,
+			["H3539"] = 94339,
+			["H3543"] = 76500,
+			["mr"] = 76500,
+		},
+		["Schematic: Hyper-Radiant Flame Reflector"] = {
+			["H3537"] = 3000000,
+			["mr"] = 3000000,
+		},
+		["Orange Martial Shirt"] = {
+			["H3543"] = 95499,
+			["mr"] = 95499,
+		},
+		["Battleforge Girdle of the Bear"] = {
+			["H3537"] = 4999,
+			["mr"] = 4999,
+		},
+		["War Knife of Healing"] = {
+			["H3543"] = 4800,
+			["mr"] = 4800,
+		},
+		["Formula: Enchant Bracer - Lesser Spirit"] = {
+			["H3540"] = 407398,
+			["mr"] = 407398,
+		},
+		["Opal Ring of Shadow Resistance"] = {
+			["H3540"] = 5990000,
+			["mr"] = 2609999,
+			["H3543"] = 2609999,
+			["H3539"] = 5990000,
+		},
+		["Aurora Cowl"] = {
+			["mr"] = 15800,
+			["H3543"] = 15800,
+			["H3539"] = 12090,
+		},
+		["Duskwoven Amice of the Owl"] = {
+			["H3537"] = 59976,
+			["mr"] = 59976,
+		},
+		["Conjurer's Bracers of the Owl"] = {
+			["H3539"] = 20000,
+			["mr"] = 20000,
+		},
+		["Greater Frost Protection Potion"] = {
+			["H3540"] = 41000,
+			["mr"] = 41000,
+		},
+		["Potent Bands of Agility"] = {
+			["H3537"] = 19999,
+			["mr"] = 19999,
+		},
+		["Nat Pagle's Guide to Extreme Anglin'"] = {
+			["H3540"] = 548000,
+			["mr"] = 249999,
+			["H3543"] = 249999,
+		},
+		["Banded Gauntlets of the Whale"] = {
+			["H3543"] = 3900,
+			["mr"] = 3900,
+		},
+		["Huntsman's Belt of the Owl"] = {
+			["H3537"] = 44075,
+			["mr"] = 44075,
+		},
+		["Blackforge Bracers"] = {
+			["H3540"] = 17000,
+			["mr"] = 17000,
+		},
+		["Sandstalker Gauntlets"] = {
+			["H3540"] = 2897499,
+			["mr"] = 2897499,
+		},
+		["Heavy Lamellar Boots of the Bear"] = {
+			["H3537"] = 55500,
+			["mr"] = 55500,
+		},
+		["Pattern: Tough Scorpid Boots"] = {
+			["mr"] = 7000,
+			["H3543"] = 7000,
+			["H3539"] = 17800,
+		},
+		["Pattern: Felcloth Pants"] = {
+			["mr"] = 199899,
+			["H3543"] = 199899,
+			["H3539"] = 175998,
+		},
+		["Jazeraint Cloak of the Bear"] = {
+			["mr"] = 40000,
+			["H3543"] = 40000,
+			["H3539"] = 21260,
+		},
+		["Linen Bag"] = {
+			["mr"] = 1045,
+			["cc"] = 1,
+			["H3540"] = 1801,
+			["sc"] = 0,
+			["id"] = "4238:0:0:0:0",
+			["H3542"] = 1045,
+		},
+		["Greenweave Vest of the Eagle"] = {
+			["H3537"] = 22827,
+			["mr"] = 22827,
+		},
+		["Barbaric Bracers"] = {
+			["mr"] = 129449,
+			["sc"] = 2,
+			["H3540"] = 129449,
+			["id"] = "18948:0:0:0:0",
+			["cc"] = 4,
+		},
+		["Lesser Stoneshield Potion"] = {
+			["H3540"] = 1975,
+			["mr"] = 2225,
+			["H3543"] = 2225,
+			["H3539"] = 2250,
+		},
+		["Rigid Buckler of Agility"] = {
+			["H3537"] = 9900,
+			["mr"] = 9900,
+		},
+		["Nightshade Boots of Nature's Wrath"] = {
+			["H3540"] = 220000,
+			["mr"] = 220000,
+		},
+		["Goblin Nutcracker of Arcane Wrath"] = {
+			["mr"] = 26492,
+			["sc"] = 4,
+			["H3540"] = 26492,
+			["id"] = "8194:0:0:1805:0",
+			["cc"] = 2,
+		},
+		["High Councillor's Sash of Nature Resistance"] = {
+			["H3540"] = 1750000,
+			["mr"] = 1750000,
+		},
+		["Field Plate Gauntlets of the Bear"] = {
+			["H3537"] = 23491,
+			["mr"] = 23491,
+		},
+		["Elegant Mantle of Arcane Wrath"] = {
+			["H3537"] = 149999,
+			["mr"] = 149999,
+		},
+		["Coarse Dynamite"] = {
+			["H3537"] = 2078,
+			["mr"] = 2078,
+		},
+		["Defender Gauntlets of the Whale"] = {
+			["H3543"] = 31011,
+			["mr"] = 31011,
+		},
+		["Arcanite Skeleton Key"] = {
+			["H3537"] = 1100000,
+			["mr"] = 1100000,
+		},
+		["Ring of the Underwood"] = {
+			["H3540"] = 227654,
+			["mr"] = 227654,
+		},
+		["Lambent Scale Gloves"] = {
+			["H3540"] = 12999,
+			["mr"] = 12999,
+		},
+		["Scouting Tunic of Spirit"] = {
+			["H3540"] = 14580,
+			["mr"] = 14580,
+		},
+		["Darkmist Pants of Healing"] = {
+			["H3539"] = 64956,
+			["mr"] = 64956,
+		},
+		["Templar Shield of Blocking"] = {
+			["H3537"] = 50000,
+			["mr"] = 50000,
+		},
+		["Gaea's Belt of Healing"] = {
+			["H3537"] = 120000,
+			["mr"] = 120000,
+		},
+		["Bloodrazor"] = {
+			["H3543"] = 1117500,
+			["mr"] = 1117500,
+		},
+		["Silver Hakkari Bijou"] = {
+			["H3540"] = 29298,
+			["H3539"] = 24959,
+			["H3543"] = 23999,
+			["mr"] = 23999,
+		},
+		["Bloodwoven Cloak of Fiery Wrath"] = {
+			["H3540"] = 9300,
+			["mr"] = 9300,
+		},
+		["Bonecaster's Sarong of Healing"] = {
+			["H3537"] = 150000,
+			["mr"] = 150000,
+		},
+		["The Shaft of Tsol"] = {
+			["H3537"] = 35160,
+			["mr"] = 35160,
+		},
+		["Tigerseye"] = {
+			["id"] = "818:0:0:0:0",
+			["H3542"] = 116,
+			["H3541"] = 179,
+			["sc"] = 0,
+			["H3540"] = 184,
+			["cc"] = 7,
+			["mr"] = 150,
+			["H3543"] = 150,
+			["H3539"] = 373,
+		},
+		["Pagan Bands of the Whale"] = {
+			["H3537"] = 1500,
+			["mr"] = 1500,
+		},
+		["Sentinel Bracers of Intellect"] = {
+			["H3537"] = 13611,
+			["mr"] = 13611,
+		},
+		["Skeletal Shoulders"] = {
+			["H3540"] = 69999,
+			["mr"] = 140000,
+			["H3543"] = 140000,
+			["H3539"] = 82499,
+		},
+		["Mystical Cape of Shadow Resistance"] = {
+			["H3537"] = 499999,
+			["mr"] = 499999,
+		},
+		["Gaea's Cloak of Spirit"] = {
+			["H3537"] = 54500,
+			["mr"] = 54500,
+		},
+		["Fiery Core"] = {
+			["cc"] = 5,
+			["H3539"] = 50000,
+			["L3543"] = 30398,
+			["id"] = "17010:0:0:0:0",
+			["H3540"] = 32564,
+			["sc"] = 0,
+			["H3543"] = 30614,
+			["mr"] = 30398,
+		},
+		["Sentinel Cloak of Defense"] = {
+			["mr"] = 6000,
+			["cc"] = 4,
+			["H3539"] = 4600,
+			["id"] = "7446:0:0:1608:0",
+			["sc"] = 1,
+			["H3543"] = 6000,
+			["H3542"] = 6000,
+		},
+		["Black Dragonscale Leggings"] = {
+			["mr"] = 1150000,
+			["H3543"] = 1150000,
+			["H3539"] = 1349999,
+		},
+		["Beaststalker's Bindings"] = {
+			["H3540"] = 61500,
+			["H3539"] = 63000,
+			["H3543"] = 60000,
+			["mr"] = 60000,
+		},
+		["Bard's Buckler of the Monkey"] = {
+			["H3537"] = 4900,
+			["mr"] = 4900,
+		},
+		["Heavy Wool Bandage"] = {
+			["H3540"] = 500,
+			["mr"] = 500,
+			["H3539"] = 682,
+		},
+		["Small Glowing Shard"] = {
+			["H3539"] = 386,
+			["cc"] = 7,
+			["mr"] = 349,
+			["id"] = "11138:0:0:0:0",
+			["H3540"] = 366,
+			["H3543"] = 349,
+			["sc"] = 0,
+		},
+		["High Councillor's Bracers of Intellect"] = {
+			["H3540"] = 98500,
+			["mr"] = 98000,
+			["H3543"] = 98000,
+			["H3539"] = 98500,
+		},
+		["Short Bastard Sword of Stamina"] = {
+			["H3540"] = 4499,
+			["mr"] = 3100,
+			["H3543"] = 3100,
+		},
+		["Soul Dust"] = {
+			["H3539"] = 995,
+			["cc"] = 7,
+			["mr"] = 348,
+			["id"] = "11083:0:0:0:0",
+			["H3540"] = 957,
+			["H3543"] = 348,
+			["sc"] = 0,
+		},
+		["Hyperion Vambraces of the Tiger"] = {
+			["H3543"] = 50000,
+			["mr"] = 50000,
+		},
+		["Regal Cloak of the Whale"] = {
+			["H3537"] = 26678,
+			["mr"] = 26678,
+		},
+		["Obsidian Band of the Bear"] = {
+			["H3540"] = 113022,
+			["mr"] = 70000,
+			["H3543"] = 70000,
+		},
+		["Iron Bar"] = {
+			["cc"] = 7,
+			["mr"] = 3700,
+			["L3543"] = 2895,
+			["H3539"] = 2100,
+			["H3540"] = 2240,
+			["id"] = "3575:0:0:0:0",
+			["H3543"] = 4899,
+			["sc"] = 0,
+		},
+		["Cabalist Helm of the Monkey"] = {
+			["H3537"] = 50500,
+			["mr"] = 50500,
+		},
+		["Silk Bandage"] = {
+			["H3540"] = 595,
+			["mr"] = 750,
+			["H3543"] = 750,
+		},
+		["Viking Sword of Stamina"] = {
+			["H3540"] = 8900,
+			["mr"] = 8900,
+			["H3539"] = 20000,
+		},
+		["Potent Bands of Power"] = {
+			["H3537"] = 80634,
+			["mr"] = 80634,
+		},
+		["Moonberry Juice"] = {
+			["H3537"] = 147,
+			["mr"] = 147,
+		},
+		["Recipe: Greater Stoneshield Potion"] = {
+			["H3540"] = 39499,
+			["mr"] = 39499,
+			["H3539"] = 14800,
+		},
+		["Duskwoven Gloves of the Eagle"] = {
+			["H3537"] = 21480,
+			["mr"] = 21480,
+		},
+		["Small Flame Sac"] = {
+			["H3540"] = 9800,
+			["mr"] = 11400,
+			["H3543"] = 11400,
+			["H3539"] = 15989,
+		},
+		["Schematic: Powerful Seaforium Charge"] = {
+			["H3540"] = 29800,
+			["mr"] = 66000,
+			["H3543"] = 66000,
+			["H3539"] = 67000,
+		},
+		["Carnelian Loop of Fire Resistance"] = {
+			["H3539"] = 215459,
+			["cc"] = 4,
+			["H3540"] = 50000,
+			["id"] = "11972:0:0:1411:0",
+			["sc"] = 0,
+			["H3543"] = 139500,
+			["mr"] = 139500,
+		},
+		["Glyphed Helm"] = {
+			["H3543"] = 6998,
+			["mr"] = 6998,
+		},
+		["Chief Brigadier Boots"] = {
+			["H3543"] = 7999,
+			["mr"] = 7999,
+		},
+		["Crystal Sword of the Tiger"] = {
+			["H3537"] = 99881,
+			["mr"] = 99881,
+		},
+		["Plans: Radiant Gloves"] = {
+			["mr"] = 9700,
+			["cc"] = 9,
+			["id"] = "12695:0:0:0:0",
+			["H3539"] = 19600,
+			["H3543"] = 9700,
+			["sc"] = 4,
+		},
+		["Earthborn Kilt"] = {
+			["H3540"] = 45000,
+			["mr"] = 89500,
+			["H3543"] = 89500,
+		},
+		["Strange Dust"] = {
+			["H3540"] = 599,
+			["H3542"] = 412,
+			["H3541"] = 438,
+			["sc"] = 0,
+			["id"] = "10940:0:0:0:0",
+			["cc"] = 7,
+			["H3539"] = 614,
+			["H3543"] = 1100,
+			["mr"] = 1100,
+		},
+		["Twilight Cuffs of Shadow Wrath"] = {
+			["H3543"] = 30000,
+			["mr"] = 30000,
+		},
+		["Viking Sword of the Bear"] = {
+			["H3540"] = 53232,
+			["mr"] = 53232,
+		},
+		["Wild Berries"] = {
+			["H3540"] = 2875,
+			["mr"] = 2875,
+			["H3539"] = 2875,
+		},
+		["Recipe: Invisibility Potion"] = {
+			["H3540"] = 15800,
+			["H3539"] = 19000,
+			["mr"] = 15800,
+		},
+		["Heraldic Leggings"] = {
+			["H3537"] = 23617,
+			["mr"] = 23617,
+		},
+		["Lifestone"] = {
+			["H3539"] = 150000,
+			["mr"] = 150000,
+		},
+		["Scroll of Strength"] = {
+			["H3540"] = 1475,
+			["H3539"] = 1525,
+			["H3543"] = 1475,
+			["mr"] = 1475,
+		},
+		["Formidable Cape of Agility"] = {
+			["H3537"] = 30000,
+			["mr"] = 30000,
+		},
+		["Sentinel Breastplate of the Whale"] = {
+			["H3539"] = 16275,
+			["mr"] = 16275,
+		},
+		["Shellfish"] = {
+			["H3540"] = 22749,
+			["mr"] = 9998,
+			["H3543"] = 9998,
+		},
+		["Liferoot"] = {
+			["H3539"] = 765,
+			["cc"] = 7,
+			["sc"] = 0,
+			["H3540"] = 1645,
+			["id"] = "3357:0:0:0:0",
+			["H3543"] = 1903,
+			["mr"] = 1903,
+		},
+		["Field Plate Girdle of the Tiger"] = {
+			["H3539"] = 30000,
+			["mr"] = 30000,
+		},
+		["Deeprock Salt"] = {
+			["H3540"] = 368,
+			["H3539"] = 483,
+			["H3543"] = 176,
+			["mr"] = 176,
+		},
+		["Recipe: Elixir of Superior Defense"] = {
+			["H3539"] = 50675,
+			["H3543"] = 47600,
+			["mr"] = 47600,
+		},
+		["Large Glowing Shard"] = {
+			["cc"] = 7,
+			["H3539"] = 999,
+			["sc"] = 0,
+			["H3540"] = 1334,
+			["id"] = "11139:0:0:0:0",
+			["L3539"] = 990,
+			["H3543"] = 1463,
+			["mr"] = 1463,
+		},
+		["Giant Club of Strength"] = {
+			["H3540"] = 40000,
+			["mr"] = 105060,
+			["H3543"] = 105060,
+		},
+		["Pattern: Black Swashbuckler's Shirt"] = {
+			["H3539"] = 29999,
+			["mr"] = 29999,
+		},
+		["Fen Ring of the Tiger"] = {
+			["H3539"] = 37407,
+			["mr"] = 37407,
+		},
+		["Fen Ring of the Wolf"] = {
+			["H3540"] = 34272,
+			["H3539"] = 35735,
+			["mr"] = 34272,
+		},
+		["Ebonhold Gauntlets"] = {
+			["H3543"] = 28041,
+			["mr"] = 28041,
+		},
+		["Schematic: Ice Deflector"] = {
+			["H3537"] = 69172,
+			["mr"] = 69172,
+		},
+		["Raw Summer Bass"] = {
+			["H3539"] = 453,
+			["H3543"] = 1500,
+			["mr"] = 1500,
+		},
+		["Wolfrunner Shoes"] = {
+			["mr"] = 479999,
+			["H3543"] = 479999,
+			["H3539"] = 350000,
+		},
+		["Runed Stygian Belt"] = {
+			["H3539"] = 2729939,
+			["H3543"] = 2608499,
+			["mr"] = 2608499,
+		},
+		["Pillager's Girdle of the Bear"] = {
+			["H3537"] = 6000,
+			["mr"] = 6000,
+		},
+		["Seer's Gloves"] = {
+			["H3537"] = 4900,
+			["mr"] = 4900,
+		},
+		["Wanderer's Leggings of Healing"] = {
+			["H3537"] = 250000,
+			["mr"] = 250000,
+		},
+		["Plans: Thorium Leggings"] = {
+			["H3540"] = 19899,
+			["mr"] = 14798,
+			["H3543"] = 14798,
+			["H3539"] = 29800,
+		},
+		["Twilight Cowl of Healing"] = {
+			["H3543"] = 30000,
+			["mr"] = 30000,
+		},
+		["Recipe: Filet of Redgill"] = {
+			["mr"] = 82500,
+			["H3543"] = 82500,
+			["H3539"] = 38898,
+		},
+		["Recipe: Goretusk Liver Pie"] = {
+			["mr"] = 99500,
+			["cc"] = 9,
+			["id"] = "2697:0:0:0:0",
+			["H3543"] = 99500,
+			["sc"] = 5,
+		},
+		["Serpentine Loop of Fire Resistance"] = {
+			["H3539"] = 129500,
+			["sc"] = 0,
+			["cc"] = 4,
+			["H3540"] = 129000,
+			["mr"] = 97500,
+			["id"] = "11977:0:0:1416:0",
+			["H3542"] = 97500,
+		},
+		["Firefin Snapper"] = {
+			["H3540"] = 3500,
+			["H3539"] = 3600,
+			["H3543"] = 3802,
+			["mr"] = 3802,
+		},
+		["Twilight Belt of the Eagle"] = {
+			["H3537"] = 25000,
+			["mr"] = 25000,
+		},
+		["Wanderer's Belt of Nature Resistance"] = {
+			["H3539"] = 1200000,
+			["mr"] = 1200000,
+		},
+		["Recipe: Minor Magic Resistance Potion"] = {
+			["H3539"] = 291247,
+			["H3543"] = 199498,
+			["mr"] = 199498,
+		},
+		["\"Mage-Eye\" Blunderbuss"] = {
+			["H3537"] = 7000,
+			["mr"] = 7000,
+		},
+		["Sickly Looking Fish"] = {
+			["H3537"] = 1714,
+			["mr"] = 1714,
+		},
+		["Emerald Girdle of Power"] = {
+			["H3537"] = 48351,
+			["mr"] = 48351,
+		},
+		["Ornate Bracers of the Monkey"] = {
+			["H3543"] = 20000,
+			["mr"] = 20000,
+		},
+		["Durable Cape of Stamina"] = {
+			["H3537"] = 12010,
+			["mr"] = 12010,
+		},
+		["Hematite Link of Arcane Resistance"] = {
+			["mr"] = 124973,
+			["H3543"] = 124973,
+			["H3539"] = 91017,
+		},
+		["Evil Bat Eye"] = {
+			["H3540"] = 2131,
+			["H3539"] = 2133,
+			["H3543"] = 4800,
+			["mr"] = 4800,
+		},
+		["Knightly Longsword of the Bear"] = {
+			["mr"] = 21600,
+			["H3543"] = 21600,
+			["H3539"] = 45060,
+		},
+		["Encrypted Twilight Text"] = {
+			["H3540"] = 14527,
+			["mr"] = 13333,
+			["H3543"] = 13333,
+			["H3539"] = 13650,
+		},
+		["Winter Squid"] = {
+			["H3540"] = 11499,
+			["H3539"] = 13799,
+			["H3543"] = 10000,
+			["mr"] = 10000,
+		},
+		["Raw Bristle Whisker Catfish"] = {
+			["H3540"] = 3199,
+			["mr"] = 1295,
+			["H3543"] = 1295,
+			["H3539"] = 523,
+		},
+		["Cutthroat's Mitts of the Eagle"] = {
+			["H3543"] = 16845,
+			["mr"] = 16845,
+		},
+		["Silksand Boots"] = {
+			["H3537"] = 10749,
+			["mr"] = 10749,
+		},
+		["Cured Heavy Hide"] = {
+			["mr"] = 7450,
+			["H3539"] = 7450,
+		},
+		["Faded Photograph"] = {
+			["H3543"] = 10691,
+			["mr"] = 10691,
+		},
+		["Formula: Enchant Boots - Greater Stamina"] = {
+			["H3540"] = 7892,
+			["H3539"] = 8200,
+			["mr"] = 7892,
+		},
+		["Jadefire Sabatons of Shadow Resistance"] = {
+			["H3539"] = 670000,
+			["mr"] = 670000,
+		},
+		["Vital Orb of the Wolf"] = {
+			["H3537"] = 10000,
+			["mr"] = 10000,
+		},
+		["Flask of Mojo"] = {
+			["H3539"] = 1549,
+			["cc"] = 7,
+			["sc"] = 0,
+			["H3540"] = 5000,
+			["id"] = "8151:0:0:0:0",
+			["H3543"] = 990,
+			["mr"] = 990,
+		},
+		["Bloodwoven Bracers of the Owl"] = {
+			["H3543"] = 75266,
+			["mr"] = 75266,
+		},
+		["Benedict's Key"] = {
+			["H3537"] = 21161,
+			["mr"] = 21161,
+		},
+		["Lesser Astral Essence"] = {
+			["mr"] = 2400,
+			["cc"] = 7,
+			["id"] = "10998:0:0:0:0",
+			["H3539"] = 2400,
+			["sc"] = 0,
+		},
+		["Ghost Mushroom"] = {
+			["H3539"] = 16499,
+			["sc"] = 0,
+			["H3540"] = 16199,
+			["id"] = "8845:0:0:0:0",
+			["cc"] = 7,
+			["H3543"] = 16599,
+			["mr"] = 16599,
+		},
+		["Windrunner Legguards"] = {
+			["H3539"] = 61748,
+			["mr"] = 61748,
+		},
+		["Regal Sash of the Owl"] = {
+			["H3537"] = 40000,
+			["mr"] = 40000,
+		},
+		["Raw Slitherskin Mackerel"] = {
+			["H3543"] = 150,
+			["mr"] = 150,
+		},
+		["Pattern: Wicked Leather Belt"] = {
+			["H3539"] = 39800,
+			["sc"] = 1,
+			["id"] = "15768:0:0:0:0",
+			["mr"] = 39800,
+			["cc"] = 9,
+		},
+		["Raincaller Vest of Spirit"] = {
+			["H3537"] = 10000,
+			["mr"] = 10000,
+		},
+		["Bone Dust"] = {
+			["H3539"] = 879,
+			["mr"] = 879,
+		},
+		["Devout Gloves"] = {
+			["H3539"] = 39800,
+			["cc"] = 4,
+			["id"] = "16692:0:0:0:0",
+			["H3540"] = 65100,
+			["mr"] = 89998,
+			["H3543"] = 89998,
+			["sc"] = 1,
+		},
+		["Plans: Runed Mithril Hammer"] = {
+			["H3539"] = 19354,
+			["mr"] = 19354,
+		},
+		["Phalanx Leggings of the Whale"] = {
+			["H3540"] = 47292,
+			["mr"] = 47292,
+		},
+		["Pagan Britches of Healing"] = {
+			["H3540"] = 150000,
+			["mr"] = 150000,
+		},
+		["Commander's Vambraces of Frost Resistance"] = {
+			["H3539"] = 2500000,
+			["mr"] = 2500000,
+		},
+		["Sharpshooter Harquebus of Agility"] = {
+			["H3540"] = 142814,
+			["mr"] = 142814,
+			["H3539"] = 142815,
+		},
+		["Pillager's Gloves of the Boar"] = {
+			["mr"] = 30000,
+			["cc"] = 4,
+			["id"] = "15560:0:0:1111:0",
+			["sc"] = 3,
+			["H3529"] = 30000,
+		},
+		["Amethyst Band of Frost Resistance"] = {
+			["H3537"] = 341296,
+			["mr"] = 341296,
+		},
+		["Top Half of Advanced Armorsmithing: Volume I"] = {
+			["H3543"] = 9800,
+			["mr"] = 9800,
+		},
+		["Aquamarine Ring of Frost Resistance"] = {
+			["H3540"] = 789942,
+			["mr"] = 789942,
+		},
+		["Stout Battlehammer of the Tiger"] = {
+			["H3540"] = 5991,
+			["mr"] = 9850,
+			["H3543"] = 9850,
+		},
+		["Major Mana Potion"] = {
+			["H3539"] = 47599,
+			["sc"] = 0,
+			["H3540"] = 44600,
+			["id"] = "13444:0:0:0:0",
+			["cc"] = 0,
+			["H3543"] = 55399,
+			["mr"] = 55399,
+		},
+		["Shimmering Trousers of Fiery Wrath"] = {
+			["H3539"] = 49500,
+			["mr"] = 49500,
+		},
+		["Bloodvine"] = {
+			["H3540"] = 146250,
+			["mr"] = 150000,
+			["H3543"] = 150000,
+			["H3539"] = 160083,
+		},
+		["Elegant Bracers of the Eagle"] = {
+			["H3537"] = 275000,
+			["mr"] = 275000,
+		},
+		["Stonegrip Gauntlets"] = {
+			["H3540"] = 1500000,
+			["mr"] = 109999,
+			["H3543"] = 109999,
+		},
+		["Nimar's Tribal Headdress"] = {
+			["H3539"] = 27493,
+			["mr"] = 27493,
+		},
+		["Wolffear Harness"] = {
+			["H3537"] = 558808,
+			["mr"] = 558808,
+		},
+		["Conjurer's Sphere of the Owl"] = {
+			["H3537"] = 26269,
+			["mr"] = 26269,
+		},
+		["Handful of Copper Bolts"] = {
+			["H3540"] = 995,
+			["H3539"] = 1020,
+			["H3543"] = 849,
+			["mr"] = 849,
+		},
+		["Pillager's Pauldrons of the Monkey"] = {
+			["H3537"] = 26879,
+			["mr"] = 26879,
+		},
+		["Deadly Kris of Arcane Wrath"] = {
+			["H3543"] = 94452,
+			["mr"] = 94452,
+		},
+		["Green Hills of Stranglethorn - Page 6"] = {
+			["H3540"] = 2798,
+			["H3539"] = 1900,
+			["H3543"] = 4000,
+			["mr"] = 4000,
+		},
+		["Obsidian Band of Regeneration"] = {
+			["H3543"] = 100000,
+			["mr"] = 100000,
+		},
+		["Acrobatic Staff of Fiery Wrath"] = {
+			["H3540"] = 80000,
+			["mr"] = 80000,
+			["H3539"] = 200000,
+		},
+		["Native Vest of Shadow Wrath"] = {
+			["H3537"] = 10000,
+			["mr"] = 10000,
+		},
+		["Black Mageweave Headband"] = {
+			["cc"] = 4,
+			["mr"] = 17600,
+			["sc"] = 1,
+			["H3540"] = 13500,
+			["id"] = "10024:0:0:0:0",
+			["L3539"] = 23373,
+			["H3543"] = 17600,
+			["H3539"] = 23610,
+		},
+		["Bloodvine Leggings"] = {
+			["H3540"] = 2247000,
+			["H3539"] = 2249999,
+			["H3543"] = 2227500,
+			["mr"] = 2227500,
+		},
+		["Grinning Axe of the Tiger"] = {
+			["H3537"] = 50000,
+			["mr"] = 50000,
+		},
+		["Warmonger's Circlet of Arcane Wrath"] = {
+			["mr"] = 127329,
+			["sc"] = 3,
+			["H3540"] = 127329,
+			["id"] = "9963:0:0:1818:0",
+			["cc"] = 4,
+		},
+		["Elixir of Wisdom"] = {
+			["H3540"] = 1062,
+			["mr"] = 377,
+			["H3543"] = 377,
+			["H3539"] = 1090,
+		},
+		["Bright Cloak"] = {
+			["H3540"] = 9000,
+			["mr"] = 9000,
+		},
+		["Pattern: Red Woolen Bag"] = {
+			["H3539"] = 2299,
+			["mr"] = 2700,
+			["cc"] = 9,
+			["H3540"] = 2000,
+			["id"] = "5772:0:0:0:0",
+			["sc"] = 2,
+			["H3543"] = 2700,
+			["H3542"] = 22500,
+		},
+		["Widow Blade of the Tiger"] = {
+			["H3539"] = 62000,
+			["mr"] = 62000,
+		},
+		["Small Red Pouch"] = {
+			["H3537"] = 3200,
+			["mr"] = 3200,
+		},
+		["Birchwood Maul of the Boar"] = {
+			["H3540"] = 1099,
+			["mr"] = 1099,
+		},
+		["Recipe: Nightfin Soup"] = {
+			["H3540"] = 79998,
+			["mr"] = 79998,
+		},
+		["Eight of Warlords"] = {
+			["H3540"] = 25000,
+			["mr"] = 24800,
+			["H3543"] = 24800,
+			["H3539"] = 179500,
+		},
+		["Razor Blade of the Bear"] = {
+			["H3539"] = 60000,
+			["mr"] = 60000,
+		},
+		["Embersilk Leggings of the Owl"] = {
+			["H3537"] = 20000,
+			["mr"] = 20000,
+		},
+		["Glimmering Flamberge of the Whale"] = {
+			["H3543"] = 57910,
+			["mr"] = 57910,
+		},
+		["Double-barreled Shotgun"] = {
+			["mr"] = 65000,
+			["cc"] = 2,
+			["H3540"] = 65000,
+			["id"] = "2098:0:0:0:0",
+			["sc"] = 3,
+		},
+		["Hook Dagger of Power"] = {
+			["H3539"] = 20000,
+			["mr"] = 20000,
+		},
+		["Green Holiday Shirt"] = {
+			["mr"] = 129498,
+			["H3543"] = 129498,
+			["H3539"] = 199995,
+		},
+		["Lady Maye's Pendant"] = {
+			["H3539"] = 6000100,
+			["mr"] = 6000100,
+		},
+		["Abyssal Mail Legguards of Restoration"] = {
+			["H3540"] = 485000,
+			["mr"] = 226900,
+			["H3543"] = 226900,
+		},
+		["Fortified Belt of the Monkey"] = {
+			["H3537"] = 25645,
+			["mr"] = 25645,
+		},
+		["Native Branch of Spirit"] = {
+			["H3537"] = 4900,
+			["mr"] = 4900,
+		},
+		["Greenweave Sandals of Frozen Wrath"] = {
+			["H3537"] = 29900,
+			["mr"] = 29900,
+		},
+		["Durable Belt of the Owl"] = {
+			["H3537"] = 16547,
+			["mr"] = 16547,
+		},
+		["Seven of Elementals"] = {
+			["H3540"] = 128500,
+			["H3539"] = 145275,
+			["H3543"] = 92999,
+			["mr"] = 92999,
+		},
+		["Hibernal Boots"] = {
+			["H3537"] = 22500,
+			["mr"] = 22500,
+		},
+		["Amy's Blanket"] = {
+			["H3537"] = 36122,
+			["mr"] = 36122,
+		},
+		["Captain's Cloak of the Bear"] = {
+			["H3543"] = 36180,
+			["mr"] = 36180,
+		},
+		["Plans: Frost Tiger Blade"] = {
+			["H3539"] = 8199,
+			["H3543"] = 8899,
+			["mr"] = 8899,
+		},
+		["Felstone Reaver of Strength"] = {
+			["H3537"] = 210000,
+			["mr"] = 210000,
+		},
+		["Black Vitriol"] = {
+			["H3540"] = 1600,
+			["H3539"] = 1799,
+			["H3543"] = 9217,
+			["mr"] = 9217,
+		},
+		["Poison-tipped Bone Spear"] = {
+			["H3540"] = 75499,
+			["mr"] = 78900,
+			["H3543"] = 78900,
+		},
+		["Savage Axe of the Whale"] = {
+			["H3540"] = 31000,
+			["mr"] = 31000,
+		},
+		["Recipe: Elixir of the Sages"] = {
+			["H3537"] = 499000,
+			["mr"] = 499000,
+		},
+		["Imposing Belt of Healing"] = {
+			["H3537"] = 59900,
+			["mr"] = 59900,
+		},
+		["Spiritchaser Staff of Fiery Wrath"] = {
+			["H3540"] = 49900,
+			["mr"] = 49900,
+		},
+		["Frostsaber Leather"] = {
+			["mr"] = 1608,
+			["cc"] = 7,
+			["id"] = "15422:0:0:0:0",
+			["H3539"] = 909,
+			["H3543"] = 1608,
+			["sc"] = 0,
+		},
+		["Formula: Enchant Boots - Greater Agility"] = {
+			["H3540"] = 17599,
+			["mr"] = 9799,
+			["H3543"] = 9799,
+			["H3539"] = 18200,
+		},
+		["Maiden's Circle"] = {
+			["H3539"] = 800000,
+			["mr"] = 800000,
+		},
+		["Heavy Blasting Powder"] = {
+			["sc"] = 1,
+			["H3539"] = 2700,
+			["cc"] = 7,
+			["id"] = "4377:0:0:0:0",
+			["H3540"] = 2100,
+			["mr"] = 2600,
+			["H3543"] = 2600,
+			["H3542"] = 4200,
+		},
+		["Dragon Finger of the Owl"] = {
+			["H3540"] = 129999,
+			["mr"] = 129999,
+			["H3539"] = 169999,
+		},
+		["Curved Dagger of Nature's Wrath"] = {
+			["H3537"] = 5000,
+			["mr"] = 5000,
+		},
+		["Kang the Decapitator"] = {
+			["H3539"] = 1240000,
+			["mr"] = 1240000,
+		},
+		["Shredder Operating Manual - Page 2"] = {
+			["mr"] = 13800,
+			["cc"] = 15,
+			["sc"] = 0,
+			["H3540"] = 9998,
+			["id"] = "16646:0:0:0:0",
+			["H3543"] = 13800,
+			["H3542"] = 7716,
+		},
+		["Elder's Sash of the Eagle"] = {
+			["H3539"] = 8800,
+			["mr"] = 8800,
+		},
+		["Mystical Mantle of the Wolf"] = {
+			["H3543"] = 69432,
+			["mr"] = 69432,
+		},
+		["Sentinel Cloak of Intellect"] = {
+			["H3537"] = 9575,
+			["mr"] = 9575,
+		},
+		["Buccaneer's Cape of Healing"] = {
+			["H3537"] = 5610,
+			["mr"] = 5610,
+		},
+		["Recipe: Roast Raptor"] = {
+			["H3539"] = 49898,
+			["mr"] = 49898,
+		},
+		["Pattern: Fine Leather Pants"] = {
+			["H3539"] = 7900,
+			["cc"] = 9,
+			["sc"] = 1,
+			["id"] = "5972:0:0:0:0",
+			["mr"] = 1989,
+			["H3543"] = 1989,
+			["H3540"] = 6799,
+		},
+		["Ankh"] = {
+			["H3537"] = 5441,
+			["mr"] = 5441,
+		},
+		["Two of Warlords"] = {
+			["H3543"] = 79500,
+			["mr"] = 79500,
+		},
+		["Praetorian Gloves of the Monkey"] = {
+			["mr"] = 149500,
+			["cc"] = 4,
+			["id"] = "15184:0:0:615:0",
+			["sc"] = 2,
+			["H3529"] = 149500,
+		},
+		["Dwarven Hatchet of Power"] = {
+			["H3537"] = 4000,
+			["mr"] = 4000,
+		},
+		["Monstrous War Axe of the Bear"] = {
+			["H3537"] = 50000,
+			["mr"] = 50000,
+		},
+		["Mighty Girdle of the Monkey"] = {
+			["H3543"] = 60000,
+			["mr"] = 60000,
+		},
+		["BKP \"Sparrow\" Smallbore"] = {
+			["mr"] = 9554,
+			["cc"] = 2,
+			["L3543"] = 9554,
+			["H3540"] = 12090,
+			["id"] = "3042:0:0:0:0",
+			["H3543"] = 9799,
+			["sc"] = 3,
+		},
+		["Bristlebark Bindings"] = {
+			["mr"] = 50000,
+			["sc"] = 2,
+			["H3540"] = 50000,
+			["id"] = "14569:0:0:0:0",
+			["cc"] = 4,
+		},
+		["Deadly Kris of the Tiger"] = {
+			["H3539"] = 46229,
+			["mr"] = 46229,
+		},
+		["Pattern: Runecloth Boots"] = {
+			["mr"] = 164500,
+			["cc"] = 9,
+			["H3539"] = 149498,
+			["id"] = "14488:0:0:0:0",
+			["sc"] = 2,
+			["H3543"] = 164500,
+			["H3542"] = 149959,
+		},
+		["Pattern: Admiral's Hat"] = {
+			["H3543"] = 19400,
+			["mr"] = 19400,
+		},
+		["Topaz Ring of Fire Resistance"] = {
+			["H3543"] = 49594,
+			["mr"] = 49594,
+		},
+		["Heavy Armor Kit"] = {
+			["H3537"] = 8374,
+			["mr"] = 8374,
+		},
+		["Helm of Fire"] = {
+			["H3539"] = 199000,
+			["cc"] = 4,
+			["H3540"] = 199000,
+			["id"] = "8348:0:0:0:0",
+			["sc"] = 2,
+			["H3543"] = 199000,
+			["mr"] = 199000,
+		},
+		["Bright Baubles"] = {
+			["mr"] = 5049,
+			["H3543"] = 5049,
+			["H3539"] = 4664,
+		},
+		["Schematic: Thorium Shells"] = {
+			["H3540"] = 49800,
+			["H3539"] = 39999,
+			["H3543"] = 47400,
+			["mr"] = 47400,
+		},
+		["Recipe: Barbecued Buzzard Wing"] = {
+			["H3539"] = 2332,
+			["sc"] = 5,
+			["H3540"] = 2274,
+			["cc"] = 9,
+			["id"] = "4609:0:0:0:0",
+			["mr"] = 2274,
+		},
+		["Gaea's Scepter of Intellect"] = {
+			["H3543"] = 25161,
+			["mr"] = 25161,
+		},
+		["Greenweave Robe of the Owl"] = {
+			["H3537"] = 20757,
+			["mr"] = 20757,
+		},
+		["Tiny Crimson Whelpling"] = {
+			["H3539"] = 650000,
+			["cc"] = 15,
+			["id"] = "8499:0:0:0:0",
+			["sc"] = 0,
+			["mr"] = 1258153,
+			["H3542"] = 1258153,
+		},
+		["Duskwoven Robe of Stamina"] = {
+			["H3537"] = 49577,
+			["mr"] = 49577,
+		},
+		["Merc Sword of Strength"] = {
+			["H3543"] = 14999,
+			["mr"] = 14999,
+		},
+		["Restorative Potion"] = {
+			["H3540"] = 51500,
+			["H3539"] = 56500,
+			["H3543"] = 59500,
+			["mr"] = 59500,
+		},
+		["Celestial Cape of Fiery Wrath"] = {
+			["H3537"] = 50000,
+			["mr"] = 50000,
+		},
+		["Pattern: Ironfeather Shoulders"] = {
+			["mr"] = 210000,
+			["H3543"] = 210000,
+			["H3539"] = 209999,
+		},
+		["Bonebrace Hauberk"] = {
+			["H3537"] = 400000,
+			["mr"] = 400000,
+		},
+		["Recipe: Frost Oil"] = {
+			["H3540"] = 24199,
+			["H3539"] = 29200,
+			["H3543"] = 24375,
+			["mr"] = 24375,
+		},
+		["Relic Coffer Key"] = {
+			["H3540"] = 1980,
+			["mr"] = 2243,
+			["H3543"] = 2243,
+			["H3539"] = 2399,
+		},
+		["Bloodwoven Cloak of Stamina"] = {
+			["H3540"] = 20000,
+			["mr"] = 20000,
+		},
+		["Feral Gloves of the Gorilla"] = {
+			["H3537"] = 2700,
+			["mr"] = 2700,
+		},
+		["Mana Potion"] = {
+			["H3539"] = 755,
+			["cc"] = 0,
+			["sc"] = 0,
+			["id"] = "3827:0:0:0:0",
+			["L3539"] = 651,
+			["H3543"] = 1080,
+			["mr"] = 1080,
+		},
+		["Happy Fun Rock"] = {
+			["H3540"] = 9699,
+			["mr"] = 10950,
+			["H3543"] = 10950,
+			["H3539"] = 9900,
+		},
+		["Enchanted Water"] = {
+			["H3540"] = 200,
+			["H3539"] = 233,
+			["H3543"] = 1482,
+			["mr"] = 1482,
+		},
+		["Handstitched Linen Britches"] = {
+			["H3543"] = 9999,
+			["mr"] = 9999,
+		},
+		["Recipe: Nature Protection Potion"] = {
+			["H3540"] = 47497,
+			["mr"] = 20000,
+			["H3543"] = 20000,
+			["H3539"] = 49600,
+		},
+		["Regal Boots of Arcane Wrath"] = {
+			["mr"] = 30000,
+			["sc"] = 1,
+			["H3540"] = 30000,
+			["id"] = "7472:0:0:1811:0",
+			["cc"] = 4,
+		},
+		["Gnomish Shrink Ray"] = {
+			["H3540"] = 97496,
+			["mr"] = 97496,
+			["H3539"] = 119997,
+		},
+		["Lightning Eel"] = {
+			["H3540"] = 1847,
+			["H3539"] = 1000,
+			["H3543"] = 1604,
+			["mr"] = 1604,
+		},
+		["Recipe: Hot Lion Chops"] = {
+			["H3540"] = 4600,
+			["H3539"] = 5394,
+			["H3543"] = 1820,
+			["mr"] = 1820,
+		},
+		["Stonecloth Gloves"] = {
+			["mr"] = 7500,
+			["cc"] = 4,
+			["id"] = "14411:0:0:0:0",
+			["sc"] = 1,
+			["H3529"] = 7500,
+		},
+		["Outrunner's Cord of the Bear"] = {
+			["H3543"] = 4200,
+			["mr"] = 4200,
+		},
+		["Hillborne Axe of the Eagle"] = {
+			["H3537"] = 10000,
+			["mr"] = 10000,
+		},
+		["War Paint Bindings"] = {
+			["H3539"] = 4000,
+			["mr"] = 4000,
+		},
+		["Councillor's Boots of the Falcon"] = {
+			["H3537"] = 87628,
+			["mr"] = 87628,
+		},
+		["Expert Cookbook"] = {
+			["H3540"] = 48735,
+			["H3539"] = 46990,
+			["mr"] = 48735,
+		},
+		["Spiritchaser Staff of the Owl"] = {
+			["H3540"] = 39900,
+			["mr"] = 39900,
+		},
+		["Amber Hoop of Shadow Resistance"] = {
+			["H3537"] = 45000,
+			["mr"] = 45000,
+		},
+		["Lofty Legguards of Strength"] = {
+			["H3537"] = 45000,
+			["mr"] = 45000,
+		},
+		["Small Brilliant Shard"] = {
+			["H3540"] = 18999,
+			["H3539"] = 8800,
+			["H3543"] = 19800,
+			["mr"] = 19800,
+		},
+		["Blue Linen Robe"] = {
+			["H3537"] = 6883,
+			["mr"] = 6883,
+		},
+		["Lodestone Necklace of the Gorilla"] = {
+			["H3537"] = 15000,
+			["mr"] = 15000,
+		},
+		["Crusader's Belt of the Falcon"] = {
+			["H3537"] = 42500,
+			["mr"] = 42500,
+		},
+		["Twilight Mantle of Shadow Wrath"] = {
+			["H3540"] = 20046,
+			["mr"] = 20046,
+		},
+		["Alcor's Sunrazor"] = {
+			["H3537"] = 15007544,
+			["mr"] = 15007544,
+		},
+		["Iridium Circle of the Eagle"] = {
+			["H3540"] = 50000,
+			["mr"] = 50000,
+		},
+		["Aboriginal Sash of Healing"] = {
+			["H3539"] = 7904,
+			["mr"] = 7904,
+		},
+		["Schematic: Delicate Arcanite Converter"] = {
+			["mr"] = 130000,
+			["cc"] = 9,
+			["H3540"] = 133168,
+			["id"] = "16050:0:0:0:0",
+			["H3543"] = 130000,
+			["sc"] = 3,
+		},
+		["Recipe: Undermine Clam Chowder"] = {
+			["H3540"] = 81033,
+			["mr"] = 49699,
+			["H3543"] = 49699,
+			["H3539"] = 96478,
+		},
+		["Plans: Radiant Breastplate"] = {
+			["H3539"] = 6788,
+			["mr"] = 6788,
+		},
+		["Feral Gloves of the Monkey"] = {
+			["H3537"] = 2200,
+			["mr"] = 2200,
+		},
+		["Beaded Orb of the Owl"] = {
+			["mr"] = 2000,
+			["cc"] = 4,
+			["id"] = "15969:0:0:754:0",
+			["sc"] = 0,
+			["H3542"] = 2000,
+		},
+		["Monk's Staff of the Monkey"] = {
+			["H3543"] = 39999,
+			["mr"] = 39999,
+		},
+		["Duskwoven Bracers of Shadow Wrath"] = {
+			["H3537"] = 99440,
+			["mr"] = 99440,
+		},
+		["Councillor's Cuffs of Healing"] = {
+			["H3537"] = 250000,
+			["mr"] = 250000,
+		},
+		["Sniper Rifle of Stamina"] = {
+			["H3537"] = 40000,
+			["mr"] = 40000,
+		},
+		["Formula: Enchant Weapon - Demonslaying"] = {
+			["H3540"] = 6400,
+			["mr"] = 19800,
+			["H3543"] = 19800,
+			["H3539"] = 19500,
+		},
+		["Wanderer's Shoulders of Agility"] = {
+			["H3543"] = 162492,
+			["mr"] = 162492,
+		},
+		["Nightscape Shoulders"] = {
+			["H3543"] = 39998,
+			["mr"] = 39998,
+		},
+		["Cross Dagger of Healing"] = {
+			["H3537"] = 45960,
+			["mr"] = 45960,
+		},
+		["Hacking Cleaver of Strength"] = {
+			["H3537"] = 12200,
+			["mr"] = 12200,
+		},
+		["Gloom Reaper of the Boar"] = {
+			["H3540"] = 33743,
+			["mr"] = 17000,
+			["H3543"] = 17000,
+			["H3539"] = 107568,
+		},
+		["Desert Choker of Agility"] = {
+			["H3540"] = 50000,
+			["mr"] = 50000,
+		},
+		["Rumsey Rum Dark"] = {
+			["mr"] = 4752,
+			["H3543"] = 4752,
+			["H3539"] = 3999,
+		},
+		["Jadefire Gloves of the Bear"] = {
+			["H3537"] = 20000,
+			["mr"] = 20000,
+		},
+		["Councillor's Tunic of Frozen Wrath"] = {
+			["H3543"] = 140000,
+			["mr"] = 140000,
+		},
+		["Shadowblade"] = {
+			["H3540"] = 149500,
+			["H3539"] = 169999,
+			["mr"] = 149500,
+		},
+		["Searing Needle"] = {
+			["H3543"] = 59500,
+			["mr"] = 59500,
+		},
+		["War Torn Pants of the Gorilla"] = {
+			["H3543"] = 3239,
+			["mr"] = 3239,
+		},
+		["Boiled Clams"] = {
+			["H3537"] = 325,
+			["mr"] = 325,
+		},
+		["Gossamer Shoulderpads of the Eagle"] = {
+			["H3537"] = 200000,
+			["mr"] = 200000,
+		},
+		["Hefty Battlehammer of the Eagle"] = {
+			["H3539"] = 7900,
+			["mr"] = 7900,
+		},
+		["Gloom Reaper of Strength"] = {
+			["H3537"] = 21291,
+			["mr"] = 21291,
+		},
+		["Wizard's Hand of the Whale"] = {
+			["H3539"] = 196000,
+			["mr"] = 196000,
+		},
+		["Elder's Robe of Frozen Wrath"] = {
+			["H3543"] = 20000,
+			["mr"] = 20000,
+		},
+		["High Chief's Gauntlets of the Whale"] = {
+			["H3539"] = 20000,
+			["mr"] = 20000,
+		},
+		["Axe of the Deep Woods"] = {
+			["H3540"] = 1880000,
+			["mr"] = 1492500,
+			["H3543"] = 1492500,
+			["H3539"] = 1980000,
+		},
+		["Thaumaturgist Staff of the Monkey"] = {
+			["H3537"] = 66665,
+			["mr"] = 66665,
+		},
+		["Mithril Casing"] = {
+			["H3539"] = 6700,
+			["H3543"] = 2398,
+			["mr"] = 2398,
+		},
+		["Abyssal Plate Greaves of Striking"] = {
+			["H3540"] = 44125,
+			["mr"] = 80375,
+			["H3543"] = 80375,
+		},
+		["Phalanx Bracers of the Bear"] = {
+			["H3537"] = 55000,
+			["mr"] = 55000,
+		},
+		["Lupine Buckler of Fiery Wrath"] = {
+			["H3537"] = 2200,
+			["mr"] = 2200,
+		},
+		["Glimmering Flamberge of the Bear"] = {
+			["H3537"] = 39999,
+			["mr"] = 39999,
+		},
+		["Schematic: Shadow Goggles"] = {
+			["H3540"] = 19593,
+			["H3539"] = 22397,
+			["H3543"] = 14795,
+			["mr"] = 14795,
+		},
+		["Felcloth Gloves"] = {
+			["H3540"] = 1057400,
+			["H3539"] = 1149989,
+			["H3543"] = 1027500,
+			["mr"] = 1027500,
+		},
+		["Short Bastard Sword of the Tiger"] = {
+			["H3539"] = 4999,
+			["mr"] = 4999,
+		},
+		["Feral Cloak of Healing"] = {
+			["H3540"] = 11000,
+			["mr"] = 11000,
+		},
+		["Bracers of Valor"] = {
+			["H3540"] = 43874,
+			["mr"] = 44799,
+			["H3543"] = 44799,
+			["H3539"] = 40000,
+		},
+		["Formula: Enchant Cloak - Superior Defense"] = {
+			["H3537"] = 180753,
+			["mr"] = 180753,
+		},
+		["Overlord's Legplates of Strength"] = {
+			["mr"] = 47500,
+			["H3537"] = 100000,
+			["L3537"] = 47500,
+		},
+		["Burnished Boots"] = {
+			["H3537"] = 5600,
+			["mr"] = 5600,
+		},
+		["Malachite"] = {
+			["id"] = "774:0:0:0:0",
+			["H3542"] = 42,
+			["H3539"] = 419,
+			["cc"] = 7,
+			["sc"] = 0,
+			["L3543"] = 20,
+			["mr"] = 20,
+			["H3543"] = 31,
+			["H3540"] = 86,
+		},
+		["Darkmoon Special Reserve"] = {
+			["H3540"] = 980,
+			["mr"] = 980,
+			["H3539"] = 984,
+		},
+		["Gelatinous Goo"] = {
+			["H3537"] = 9099,
+			["mr"] = 9099,
+		},
+		["Tranquil Mechanical Yeti"] = {
+			["H3537"] = 500000,
+			["mr"] = 500000,
+		},
+		["Recipe: Flask of Chromatic Resistance"] = {
+			["mr"] = 990000,
+			["sc"] = 6,
+			["H3540"] = 990000,
+			["id"] = "13522:0:0:0:0",
+			["cc"] = 9,
+		},
+		["Eight of Beasts"] = {
+			["H3540"] = 40000,
+			["H3539"] = 22497,
+			["H3543"] = 60000,
+			["mr"] = 60000,
+		},
+		["Bright Yellow Shirt"] = {
+			["H3540"] = 49998,
+			["mr"] = 49500,
+			["H3543"] = 49500,
+		},
+		["Embossed Plate Helmet of the Bear"] = {
+			["H3537"] = 29999,
+			["mr"] = 29999,
+		},
+		["Ritual Shroud of Intellect"] = {
+			["H3537"] = 20000,
+			["mr"] = 20000,
+		},
+		["Charger's Pants of the Bear"] = {
+			["H3537"] = 4400,
+			["mr"] = 4400,
+		},
+		["Regal Cuffs of Spirit"] = {
+			["H3543"] = 6499,
+			["mr"] = 6499,
+		},
+		["Thorbia's Gauntlets"] = {
+			["H3539"] = 126550,
+			["mr"] = 69500,
+			["cc"] = 4,
+			["H3540"] = 80000,
+			["id"] = "12994:0:0:0:0",
+			["sc"] = 3,
+			["H3543"] = 69500,
+			["H3542"] = 90000,
+		},
+		["Elixir of Greater Intellect"] = {
+			["H3540"] = 11500,
+			["mr"] = 11500,
+		},
+		["Robust Girdle of Intellect"] = {
+			["H3537"] = 5555,
+			["mr"] = 5555,
+		},
+		["Pattern: Dusky Boots"] = {
+			["H3537"] = 230000,
+			["mr"] = 230000,
+		},
+		["Inferno Gloves"] = {
+			["H3537"] = 924200,
+			["mr"] = 924200,
+		},
+		["Delicate Arcanite Converter"] = {
+			["H3539"] = 1008389,
+			["sc"] = 1,
+			["H3540"] = 1189999,
+			["cc"] = 7,
+			["id"] = "16006:0:0:0:0",
+			["mr"] = 1189999,
+		},
+		["Bloodspattered Sash of the Boar"] = {
+			["H3543"] = 5699,
+			["mr"] = 5699,
+		},
+		["Recipe: Elixir of Dream Vision"] = {
+			["mr"] = 597998,
+			["H3543"] = 597998,
+			["H3539"] = 768059,
+		},
+		["Foror's Compendium of Dragon Slaying"] = {
+			["H3540"] = 359997,
+			["H3539"] = 449999,
+			["H3543"] = 554000,
+			["mr"] = 554000,
+		},
+		["Thunder Lizard Tail"] = {
+			["H3540"] = 100,
+			["mr"] = 298,
+			["H3543"] = 298,
+		},
+		["Swashbuckler's Shoulderpads of the Owl"] = {
+			["H3537"] = 91292,
+			["mr"] = 91292,
+		},
+		["Gnomish Net-o-Matic Projector"] = {
+			["H3540"] = 99998,
+			["mr"] = 99998,
+			["H3539"] = 279987,
+		},
+		["Archer's Shoulderpads of Defense"] = {
+			["H3537"] = 14922,
+			["mr"] = 14922,
+		},
+		["Glorious Bindings of Power"] = {
+			["H3537"] = 50000,
+			["mr"] = 50000,
+		},
+		["Wildheart Gloves"] = {
+			["mr"] = 139500,
+			["sc"] = 2,
+			["id"] = "16717:0:0:0:0",
+			["H3543"] = 139500,
+			["cc"] = 4,
+		},
+		["Scouting Gloves of the Owl"] = {
+			["mr"] = 26568,
+			["cc"] = 4,
+			["id"] = "6586:0:0:763:0",
+			["H3537"] = 26568,
+			["sc"] = 2,
+		},
+		["Ranger Leggings of the Whale"] = {
+			["H3537"] = 200000,
+			["mr"] = 200000,
+		},
+		["Buccaneer's Orb of the Eagle"] = {
+			["mr"] = 10000,
+			["sc"] = 0,
+			["H3540"] = 10000,
+			["id"] = "15912:0:0:844:0",
+			["cc"] = 4,
+		},
+		["Gaea's Cuffs of Frozen Wrath"] = {
+			["H3537"] = 50000,
+			["mr"] = 50000,
+		},
+		["Ritual Bands of Intellect"] = {
+			["H3537"] = 2500,
+			["mr"] = 2500,
+		},
+		["Aboriginal Rod of Spirit"] = {
+			["H3537"] = 3192,
+			["mr"] = 3192,
+		},
+		["Nightsky Orb"] = {
+			["mr"] = 14299,
+			["cc"] = 4,
+			["id"] = "15929:0:0:0:0",
+			["sc"] = 0,
+			["H3542"] = 14299,
+		},
+		["Scaled Leather Leggings of the Bear"] = {
+			["H3540"] = 32201,
+			["mr"] = 32201,
+		},
+		["Steel Weapon Chain"] = {
+			["H3540"] = 179997,
+			["H3539"] = 180998,
+			["H3543"] = 202000,
+			["mr"] = 202000,
+		},
+		["Ancestral Robe"] = {
+			["H3539"] = 5568,
+			["mr"] = 5568,
+		},
+		["Aboriginal Sash of the Wolf"] = {
+			["H3537"] = 3300,
+			["mr"] = 3300,
+		},
+		["Journeyman's Backpack"] = {
+			["H3540"] = 22500,
+			["H3539"] = 25100,
+			["H3543"] = 31200,
+			["mr"] = 31200,
+		},
+		["Band of Purification"] = {
+			["H3540"] = 50505,
+			["mr"] = 50505,
+			["H3539"] = 99500,
+		},
+		["Formula: Enchant 2H Weapon - Major Intellect"] = {
+			["mr"] = 196999,
+			["H3539"] = 196999,
+		},
+		["Schematic: Portable Bronze Mortar"] = {
+			["H3540"] = 8000,
+			["H3539"] = 11000,
+			["mr"] = 8000,
+		},
+		["Recipe: Longjaw Mud Snapper"] = {
+			["H3537"] = 7500,
+			["mr"] = 7500,
+		},
+		["Notched Shortsword of Strength"] = {
+			["H3543"] = 6007,
+			["mr"] = 6007,
+		},
+		["Recipe: Purification Potion"] = {
+			["H3540"] = 398000,
+			["mr"] = 77998,
+			["H3543"] = 77998,
+			["H3539"] = 24599,
+		},
+		["Nightshade Boots of Agility"] = {
+			["H3540"] = 29999,
+			["mr"] = 29999,
+			["H3539"] = 33299,
+		},
+		["Rageclaw Leggings of the Monkey"] = {
+			["H3537"] = 30000,
+			["mr"] = 30000,
+		},
+		["Zealot Blade"] = {
+			["H3540"] = 449999,
+			["mr"] = 250000,
+			["H3543"] = 250000,
+			["H3539"] = 268999,
+		},
+		["Copper Rod"] = {
+			["H3540"] = 7149,
+			["mr"] = 7149,
+			["H3539"] = 7154,
+		},
+		["Gauntlets of Valor"] = {
+			["H3540"] = 135000,
+			["mr"] = 159998,
+			["H3543"] = 159998,
+		},
+		["Elegant Circlet of the Eagle"] = {
+			["H3537"] = 145500,
+			["mr"] = 145500,
+		},
+		["Tigerbane"] = {
+			["H3540"] = 10799,
+			["H3539"] = 12500,
+			["H3543"] = 12500,
+			["mr"] = 12500,
+		},
+		["Headsplitter"] = {
+			["H3540"] = 60000,
+			["mr"] = 60000,
+		},
+		["Pattern: Frostsaber Tunic"] = {
+			["H3539"] = 19999,
+			["mr"] = 19999,
+		},
+		["Abyssal Leather Boots of Striking"] = {
+			["mr"] = 60000,
+			["H3543"] = 60000,
+			["H3539"] = 178800,
+		},
+		["Recipe: Greater Shadow Protection Potion"] = {
+			["H3540"] = 1289999,
+			["mr"] = 788999,
+			["H3543"] = 788999,
+		},
+		["Righteous Orb"] = {
+			["sc"] = 0,
+			["H3539"] = 647000,
+			["cc"] = 7,
+			["id"] = "12811:0:0:0:0",
+			["H3540"] = 678888,
+			["mr"] = 620000,
+			["H3543"] = 620000,
+			["H3542"] = 719000,
+		},
+		["Forest Pendant of Agility"] = {
+			["H3537"] = 41175,
+			["mr"] = 41175,
+		},
+		["Jazeraint Boots of the Wolf"] = {
+			["H3537"] = 45771,
+			["mr"] = 45771,
+		},
+		["Sunscale Gauntlets"] = {
+			["H3537"] = 20000,
+			["mr"] = 20000,
+		},
+		["Dragonscale Band"] = {
+			["H3540"] = 54000,
+			["mr"] = 54000,
+		},
+		["Recipe: Heavy Kodo Stew"] = {
+			["H3543"] = 57000,
+			["mr"] = 57000,
+		},
+		["Recipe: Heavy Crocolisk Stew"] = {
+			["mr"] = 51999,
+			["H3543"] = 51999,
+			["H3539"] = 52650,
+		},
+		["Outrunner's Cord of Strength"] = {
+			["H3540"] = 10000,
+			["mr"] = 10393,
+			["H3543"] = 10393,
+			["H3539"] = 5924,
+		},
+		["Gutrender"] = {
+			["H3543"] = 108999,
+			["mr"] = 108999,
+		},
+		["Swamp Ring of the Monkey"] = {
+			["mr"] = 54998,
+			["H3543"] = 54998,
+			["H3539"] = 84178,
+		},
+		["Recipe: Elixir of Frost Power"] = {
+			["H3543"] = 4897500,
+			["mr"] = 4897500,
+		},
+		["Aquamarine Ring of Shadow Resistance"] = {
+			["H3540"] = 140000,
+			["mr"] = 199000,
+			["H3543"] = 199000,
+			["H3539"] = 60000,
+		},
+		["Sage's Cloth of Intellect"] = {
+			["H3537"] = 36400,
+			["mr"] = 36400,
+		},
+		["Abyssal Crest"] = {
+			["H3540"] = 32299,
+			["H3539"] = 31332,
+			["H3543"] = 37000,
+			["mr"] = 37000,
+		},
+		["Twilight Robe of the Whale"] = {
+			["H3543"] = 50328,
+			["mr"] = 50328,
+		},
+		["Master's Bracers of Healing"] = {
+			["H3537"] = 289999,
+			["mr"] = 289999,
+		},
+		["Copper Modulator"] = {
+			["H3543"] = 1990,
+			["mr"] = 1990,
+		},
+		["Pattern: Red Linen Robe"] = {
+			["H3540"] = 300,
+			["H3539"] = 995,
+			["H3543"] = 475,
+			["mr"] = 475,
+		},
+		["Spider Sausage"] = {
+			["mr"] = 5000,
+			["H3543"] = 5000,
+			["H3539"] = 4300,
+		},
+		["Thistlefur Sandals of Stamina"] = {
+			["H3537"] = 14381,
+			["mr"] = 14381,
+		},
+		["Spiked Club of the Boar"] = {
+			["H3540"] = 7000,
+			["mr"] = 7000,
+			["H3543"] = 7000,
+			["H3539"] = 2500,
+		},
+		["Plans: Copper Chain Vest"] = {
+			["H3540"] = 379,
+			["H3539"] = 671,
+			["H3543"] = 416,
+			["mr"] = 416,
+		},
+		["Dark Iron Boots of the Boar"] = {
+			["H3539"] = 1650000,
+			["mr"] = 1650000,
+		},
+		["Plans: Frostguard"] = {
+			["mr"] = 56499,
+			["H3543"] = 56499,
+			["H3539"] = 59580,
+		},
+		["Tiger Meat"] = {
+			["H3540"] = 849,
+			["mr"] = 144,
+			["H3543"] = 144,
+			["H3539"] = 212,
+		},
+		["Ice Thistle E'ko"] = {
+			["H3540"] = 900,
+			["H3539"] = 928,
+			["H3543"] = 1000,
+			["mr"] = 1000,
+		},
+		["Watchman Pauldrons"] = {
+			["H3539"] = 89098,
+			["H3543"] = 70000,
+			["mr"] = 70000,
+		},
+		["Viking Sword of the Tiger"] = {
+			["H3540"] = 31884,
+			["mr"] = 31884,
+		},
+		["Chieftain's Leggings of the Eagle"] = {
+			["H3537"] = 51627,
+			["mr"] = 51627,
+		},
+		["Abyssal Cloth Pants of Sorcery"] = {
+			["H3539"] = 397500,
+			["H3543"] = 688999,
+			["mr"] = 688999,
+		},
+		["Elder's Hat of Healing"] = {
+			["H3543"] = 40365,
+			["mr"] = 40365,
+		},
+		["Two of Beasts"] = {
+			["H3539"] = 16185,
+			["mr"] = 16185,
+		},
+		["Recipe: Magic Resistance Potion"] = {
+			["H3540"] = 34800,
+			["H3539"] = 35000,
+			["H3543"] = 56500,
+			["mr"] = 56500,
+		},
+		["Dark Iron Boots of the Whale"] = {
+			["H3539"] = 1450000,
+			["mr"] = 1450000,
+		},
+		["Harvest Cloak"] = {
+			["H3537"] = 1300,
+			["mr"] = 1300,
+		},
+		["Arachnidian Gloves of the Whale"] = {
+			["mr"] = 30000,
+			["cc"] = 4,
+			["id"] = "14294:0:0:1036:0",
+			["sc"] = 1,
+			["H3529"] = 30000,
+		},
+		["Mighty Cloak of the Monkey"] = {
+			["H3543"] = 50000,
+			["mr"] = 50000,
+		},
+		["Nocturnal Sash of the Whale"] = {
+			["H3537"] = 9737,
+			["mr"] = 9737,
+		},
+		["Knightly Longsword of Power"] = {
+			["H3537"] = 19969,
+			["mr"] = 19969,
+		},
+		["Forest Leather Gloves"] = {
+			["mr"] = 200000,
+			["cc"] = 4,
+			["id"] = "3058:0:0:0:0",
+			["sc"] = 2,
+			["H3529"] = 200000,
+		},
+		["Pattern: Crimson Silk Cloak"] = {
+			["H3537"] = 246820,
+			["mr"] = 246820,
+		},
+		["Needle Threader"] = {
+			["mr"] = 50000,
+			["H3537"] = 60303,
+			["L3537"] = 50000,
+		},
+		["Resplendent Boots of Frozen Wrath"] = {
+			["H3543"] = 316109,
+			["mr"] = 316109,
+		},
+		["Plans: Volcanic Hammer"] = {
+			["H3543"] = 16200,
+			["mr"] = 16200,
+		},
+		["Shredder Operating Manual - Page 7"] = {
+			["H3543"] = 3600,
+			["mr"] = 3600,
+		},
+		["Petrified Band"] = {
+			["H3543"] = 1100595,
+			["mr"] = 1100595,
+		},
+		["Sentinel Gloves of the Eagle"] = {
+			["mr"] = 26916,
+			["cc"] = 4,
+			["id"] = "7443:0:0:858:0",
+			["sc"] = 2,
+			["H3543"] = 26916,
+			["H3542"] = 12253,
+		},
+		["Recipe: Elixir of Minor Agility"] = {
+			["H3539"] = 2499,
+			["H3543"] = 29444,
+			["mr"] = 29444,
+		},
+		["Moss Agate"] = {
+			["H3539"] = 10799,
+			["H3541"] = 3900,
+			["cc"] = 7,
+			["id"] = "1206:0:0:0:0",
+			["H3540"] = 5000,
+			["sc"] = 0,
+			["H3543"] = 9000,
+			["mr"] = 9000,
+		},
+		["Giant Club of the Tiger"] = {
+			["H3540"] = 105060,
+			["mr"] = 105060,
+		},
+		["Cured Ham Steak"] = {
+			["mr"] = 313,
+			["H3543"] = 313,
+			["H3539"] = 263,
+		},
+		["Sunblaze Coif"] = {
+			["mr"] = 32000,
+			["H3543"] = 32000,
+			["H3539"] = 195000,
+		},
+		["Councillor's Scepter of Fiery Wrath"] = {
+			["mr"] = 127813,
+			["H3543"] = 127813,
+			["H3539"] = 273665,
+		},
+		["Invisibility Potion"] = {
+			["H3540"] = 25999,
+			["mr"] = 27500,
+			["H3543"] = 27500,
+			["H3539"] = 30800,
+		},
+		["Twilight Cultist Robe"] = {
+			["H3540"] = 7600,
+			["H3539"] = 9000,
+			["H3543"] = 6798,
+			["mr"] = 6798,
+		},
+		["Commander's Gauntlets of the Tiger"] = {
+			["H3537"] = 45000,
+			["mr"] = 45000,
+		},
+		["Huntsman's Cape of Nature's Wrath"] = {
+			["H3543"] = 5500,
+			["mr"] = 5500,
+		},
+		["Mail Combat Belt"] = {
+			["H3537"] = 4999,
+			["mr"] = 4999,
+		},
+		["Revenant Chestplate of Nature Resistance"] = {
+			["H3537"] = 2000000,
+			["mr"] = 2000000,
+		},
+		["Dense Dynamite"] = {
+			["mr"] = 12500,
+			["H3539"] = 12500,
+		},
+		["Green Hills of Stranglethorn - Page 1"] = {
+			["H3540"] = 879,
+			["mr"] = 6645,
+			["H3543"] = 6645,
+			["H3539"] = 1292,
+		},
+		["Pattern: Crimson Silk Shoulders"] = {
+			["H3540"] = 13397,
+			["mr"] = 13730,
+			["H3543"] = 13730,
+		},
+		["Conjurer's Sphere of the Whale"] = {
+			["H3537"] = 26000,
+			["mr"] = 26000,
+		},
+		["Pattern: Green Dragonscale Leggings"] = {
+			["H3539"] = 32000,
+			["mr"] = 32000,
+		},
+		["Venomshroud Silk Robes"] = {
+			["H3540"] = 49700,
+			["mr"] = 44680,
+			["H3543"] = 44680,
+			["H3539"] = 68000,
+		},
+		["Brightcloth Cloak"] = {
+			["H3539"] = 119999,
+			["H3543"] = 120000,
+			["mr"] = 120000,
+		},
+		["Elite Shoulders"] = {
+			["H3537"] = 63880,
+			["mr"] = 63880,
+		},
+		["Barbaric Shoulders"] = {
+			["mr"] = 5499,
+			["cc"] = 4,
+			["H3540"] = 9999,
+			["id"] = "5964:0:0:0:0",
+			["H3543"] = 5499,
+			["sc"] = 2,
+		},
+		["Emerald Sabatons of the Bear"] = {
+			["H3537"] = 59167,
+			["mr"] = 59167,
+		},
+		["Nightslayer Bracelets"] = {
+			["H3540"] = 1062750,
+			["H3539"] = 1502499,
+			["H3543"] = 1089998,
+			["mr"] = 1089998,
+		},
+		["Lord's Pauldrons of Nature's Wrath"] = {
+			["H3537"] = 100000,
+			["mr"] = 100000,
+		},
+		["Chief Brigadier Cloak"] = {
+			["H3540"] = 13400,
+			["mr"] = 23056,
+			["H3543"] = 23056,
+		},
+		["Wool Bandage"] = {
+			["H3539"] = 1205,
+			["H3543"] = 1845,
+			["mr"] = 1845,
+		},
+		["Sentinel Trousers of Power"] = {
+			["mr"] = 36279,
+			["cc"] = 4,
+			["id"] = "7440:0:0:1561:0",
+			["sc"] = 2,
+			["H3539"] = 14999,
+			["H3542"] = 36279,
+		},
+		["Dimensional Blade of the Bear"] = {
+			["H3543"] = 80000,
+			["mr"] = 80000,
+		},
+		["Wild Leather Helmet of the Monkey"] = {
+			["H3540"] = 33333,
+			["mr"] = 33333,
+			["H3539"] = 44444,
+		},
+		["Green Whelp Scale"] = {
+			["mr"] = 3117,
+			["H3543"] = 3117,
+			["H3539"] = 13486,
+		},
+		["Scaled Leather Headband of the Eagle"] = {
+			["mr"] = 11000,
+			["cc"] = 4,
+			["id"] = "10406:0:0:859:0",
+			["sc"] = 2,
+			["H3536"] = 11000,
+		},
+		["Star Belt"] = {
+			["H3540"] = 114999,
+			["mr"] = 59998,
+			["H3543"] = 59998,
+		},
+		["Sturdy Quarterstaff of Fiery Wrath"] = {
+			["H3539"] = 9000,
+			["mr"] = 9000,
+		},
+		["Darkweave Breeches"] = {
+			["mr"] = 415000,
+			["H3543"] = 415000,
+			["H3539"] = 313750,
+		},
+		["Grunt Axe of Power"] = {
+			["H3540"] = 3954,
+			["mr"] = 33500,
+			["H3543"] = 33500,
+		},
+		["Lower Map Fragment"] = {
+			["H3540"] = 5400,
+			["H3539"] = 5498,
+			["H3543"] = 7899,
+			["mr"] = 7899,
+		},
+		["Boahn's Fang"] = {
+			["H3539"] = 80000,
+			["mr"] = 80000,
+		},
+		["Abyssal Leather Gloves of Sorcery"] = {
+			["H3540"] = 50000,
+			["mr"] = 50000,
+		},
+		["Night Reaver"] = {
+			["H3540"] = 199999,
+			["mr"] = 150000,
+			["H3543"] = 150000,
+			["H3539"] = 279999,
+		},
+		["Nightshade Cloak of the Owl"] = {
+			["H3543"] = 146535,
+			["mr"] = 146535,
+		},
+		["Sorcerer Robe of the Owl"] = {
+			["H3537"] = 29799,
+			["mr"] = 29799,
+		},
+		["Peridot Circle of Arcane Resistance"] = {
+			["H3539"] = 254000,
+			["sc"] = 0,
+			["H3540"] = 427999,
+			["id"] = "11979:0:0:1327:0",
+			["cc"] = 4,
+			["H3543"] = 190000,
+			["mr"] = 190000,
+		},
+		["Barbaric Cloth Boots"] = {
+			["H3539"] = 4388,
+			["cc"] = 4,
+			["sc"] = 1,
+			["H3540"] = 4300,
+			["id"] = "3307:0:0:0:0",
+			["H3543"] = 5519,
+			["mr"] = 5519,
+		},
+		["Plans: Solid Iron Maul"] = {
+			["H3543"] = 34700,
+			["mr"] = 34700,
+		},
+		["Cat Carrier (Siamese)"] = {
+			["H3537"] = 500000,
+			["mr"] = 500000,
+		},
+		["Ember Wand of Fiery Wrath"] = {
+			["H3537"] = 50000,
+			["mr"] = 50000,
+		},
+		["Green Whelp Armor"] = {
+			["H3537"] = 74629,
+			["mr"] = 74629,
+		},
+		["Masterwork Bracers of Nature Resistance"] = {
+			["H3543"] = 1500000,
+			["mr"] = 1500000,
+		},
+		["Hot Smoked Bass"] = {
+			["H3537"] = 1500,
+			["mr"] = 1500,
+		},
+		["War Torn Pants of the Eagle"] = {
+			["H3539"] = 3923,
+			["mr"] = 3923,
+		},
+		["Resplendent Bracelets of Frozen Wrath"] = {
+			["H3537"] = 229068,
+			["mr"] = 229068,
+		},
+		["Wirt's Third Leg"] = {
+			["H3537"] = 48750,
+			["mr"] = 48750,
+		},
+		["Pattern: Red Mageweave Shoulders"] = {
+			["H3539"] = 11200,
+			["cc"] = 9,
+			["sc"] = 2,
+			["id"] = "10315:0:0:0:0",
+			["H3540"] = 3395,
+			["H3543"] = 13231,
+			["mr"] = 13231,
+		},
+		["Pattern: Green Whelp Armor"] = {
+			["H3540"] = 10000,
+			["mr"] = 14999,
+			["H3543"] = 14999,
+			["H3539"] = 10200,
+		},
+		["Dried King Bolete"] = {
+			["H3540"] = 1900,
+			["mr"] = 1900,
+			["H3539"] = 2000,
+		},
+		["Elixir of Minor Defense"] = {
+			["H3540"] = 474,
+			["H3539"] = 320,
+			["H3543"] = 463,
+			["mr"] = 463,
+		},
+		["Unbalanced Axe"] = {
+			["H3537"] = 1458,
+			["mr"] = 1458,
+		},
+		["Pattern: Stormshroud Armor"] = {
+			["H3539"] = 30000,
+			["H3543"] = 109999,
+			["mr"] = 109999,
+		},
+		["Marauder's Leggings of the Tiger"] = {
+			["H3537"] = 35000,
+			["mr"] = 35000,
+		},
+		["Twin-bladed Axe of the Bear"] = {
+			["H3543"] = 8991,
+			["mr"] = 8991,
+		},
+		["Kaleidoscope Chain"] = {
+			["mr"] = 476000,
+			["H3543"] = 476000,
+			["H3539"] = 517724,
+		},
+		["Sardonyx Knuckle of Frost Resistance"] = {
+			["H3537"] = 1545341,
+			["mr"] = 1545341,
+		},
+		["Battering Hammer of the Monkey"] = {
+			["H3540"] = 20000,
+			["mr"] = 20000,
+		},
+		["Formula: Enchant Bracer - Minor Strength"] = {
+			["H3539"] = 53819,
+			["H3543"] = 25034,
+			["mr"] = 25034,
+		},
+		["Traveler's Jerkin"] = {
+			["H3537"] = 99999,
+			["mr"] = 99999,
+		},
+		["Dervish Spaulders of the Eagle"] = {
+			["H3537"] = 40000,
+			["mr"] = 40000,
+		},
+		["Serrated Petal"] = {
+			["H3537"] = 18000,
+			["mr"] = 18000,
+		},
+		["High Councillor's Bracers of Shadow Wrath"] = {
+			["H3543"] = 800000,
+			["mr"] = 800000,
+		},
+		["Twilight Belt of the Owl"] = {
+			["H3537"] = 10000,
+			["mr"] = 10000,
+		},
+		["Elegant Circlet of the Whale"] = {
+			["H3537"] = 292000,
+			["mr"] = 292000,
+		},
+		["Scarlet Boots"] = {
+			["H3543"] = 107249,
+			["mr"] = 107249,
+		},
+		["Knight's Girdle of Strength"] = {
+			["H3540"] = 10000,
+			["mr"] = 10000,
+		},
+		["Bandit Jerkin of the Monkey"] = {
+			["H3537"] = 7900,
+			["mr"] = 7900,
+		},
+		["Abyssal Leather Leggings of Sorcery"] = {
+			["H3539"] = 390000,
+			["cc"] = 4,
+			["mr"] = 250000,
+			["id"] = "20665:0:0:2155:0",
+			["H3540"] = 255999,
+			["H3543"] = 250000,
+			["sc"] = 2,
+		},
+		["Buccaneer's Orb of the Whale"] = {
+			["mr"] = 75988,
+			["cc"] = 4,
+			["id"] = "15912:0:0:1015:0",
+			["sc"] = 0,
+			["H3542"] = 75988,
+		},
+		["Large Brilliant Shard"] = {
+			["H3540"] = 47399,
+			["H3539"] = 38998,
+			["H3543"] = 40200,
+			["mr"] = 40200,
+		},
+		["Jazeraint Belt of the Whale"] = {
+			["H3540"] = 13135,
+			["mr"] = 13135,
+		},
+		["Elder's Robe of Arcane Wrath"] = {
+			["H3543"] = 19000,
+			["mr"] = 19000,
+		},
+		["Stonecutter Claymore of Strength"] = {
+			["mr"] = 49244,
+			["cc"] = 2,
+			["id"] = "3197:0:0:220:0",
+			["H3543"] = 49244,
+			["sc"] = 8,
+		},
+		["Commander's Girdle of the Bear"] = {
+			["H3540"] = 55800,
+			["mr"] = 55800,
+		},
+		["Bloodspattered Sabatons of the Monkey"] = {
+			["H3537"] = 5528,
+			["mr"] = 5528,
+		},
+		["Living Essence"] = {
+			["H3539"] = 11199,
+			["cc"] = 5,
+			["mr"] = 13198,
+			["id"] = "12803:0:0:0:0",
+			["H3540"] = 13195,
+			["H3543"] = 13198,
+			["sc"] = 0,
+		},
+		["Pridelord Halo"] = {
+			["H3537"] = 120000,
+			["mr"] = 120000,
+		},
+		["Superior Shoulders of the Owl"] = {
+			["H3537"] = 34647,
+			["mr"] = 34647,
+		},
+		["Sentinel Bracers of the Owl"] = {
+			["mr"] = 13957,
+			["cc"] = 4,
+			["id"] = "7447:0:0:764:0",
+			["sc"] = 2,
+			["H3542"] = 13957,
+		},
+		["Glowing Scorpid Blood"] = {
+			["H3540"] = 2141,
+			["H3539"] = 1998,
+			["H3543"] = 2000,
+			["mr"] = 2000,
+		},
+		["Knight's Gauntlets of the Monkey"] = {
+			["H3539"] = 16687,
+			["mr"] = 16687,
+		},
+		["Expert Fishing - The Bass and You"] = {
+			["H3540"] = 52535,
+			["mr"] = 41494,
+			["H3543"] = 41494,
+		},
+		["High Councillor's Sash of the Eagle"] = {
+			["H3537"] = 60000,
+			["mr"] = 60000,
+		},
+		["Hot Spices"] = {
+			["H3537"] = 3166,
+			["mr"] = 3166,
+		},
+		["Twilight Pants of Spirit"] = {
+			["H3543"] = 46788,
+			["mr"] = 46788,
+		},
+		["Preserved Holly"] = {
+			["H3540"] = 4900,
+			["mr"] = 7997,
+			["H3543"] = 7997,
+			["H3539"] = 19899,
+		},
+		["Combatant Claymore"] = {
+			["mr"] = 222200,
+			["cc"] = 2,
+			["id"] = "2877:0:0:0:0",
+			["H3543"] = 222200,
+			["sc"] = 8,
+		},
+		["Raw Redgill"] = {
+			["H3540"] = 1234,
+			["H3539"] = 1260,
+			["H3543"] = 759,
+			["mr"] = 759,
+		},
+		["Pattern: Big Voodoo Robe"] = {
+			["H3540"] = 5498,
+			["H3539"] = 5400,
+			["mr"] = 5498,
+		},
+		["Gauntlets of Ogre Strength"] = {
+			["H3537"] = 19999,
+			["mr"] = 19999,
+		},
+		["Bright Belt"] = {
+			["H3540"] = 9999,
+			["H3539"] = 42498,
+			["mr"] = 9999,
+		},
+		["Necklace of Harmony"] = {
+			["H3537"] = 50000,
+			["mr"] = 50000,
+		},
+		["Phalanx Breastplate of Strength"] = {
+			["H3537"] = 12049,
+			["mr"] = 12049,
+		},
+		["Wrangler's Belt of Defense"] = {
+			["H3537"] = 15934,
+			["mr"] = 15934,
+		},
+		["Umbral Wand of the Gorilla"] = {
+			["H3540"] = 20000,
+			["mr"] = 20000,
+		},
+		["Greenweave Bracers of the Owl"] = {
+			["H3537"] = 9900,
+			["mr"] = 9900,
+		},
+		["Wyrmslayer Spaulders"] = {
+			["H3540"] = 67499,
+			["mr"] = 68153,
+			["H3543"] = 68153,
+		},
+		["Commander's Gauntlets of the Bear"] = {
+			["H3540"] = 34700,
+			["mr"] = 30000,
+			["H3543"] = 30000,
+		},
+		["Imperial Leather Breastplate"] = {
+			["mr"] = 51702,
+			["sc"] = 2,
+			["id"] = "6430:0:0:0:0",
+			["H3537"] = 51702,
+			["cc"] = 4,
+		},
+		["Ridge Cleaver of the Bear"] = {
+			["H3540"] = 40000,
+			["mr"] = 40000,
+		},
+		["Bristlebark Britches"] = {
+			["H3539"] = 7000,
+			["mr"] = 7000,
+		},
+		["Granite Necklace of the Bear"] = {
+			["H3537"] = 80000,
+			["mr"] = 80000,
+		},
+		["Blacksmith Hammer"] = {
+			["mr"] = 8851,
+			["H3543"] = 8851,
+			["H3539"] = 8851,
+		},
+		["Sacrificial Kris of Power"] = {
+			["H3537"] = 55090,
+			["mr"] = 55090,
+		},
+		["Lady Alizabeth's Pendant"] = {
+			["mr"] = 140000,
+			["H3543"] = 140000,
+			["H3539"] = 203000,
+		},
+		["Diviner Long Staff of the Bear"] = {
+			["H3537"] = 150000,
+			["mr"] = 150000,
+		},
+		["Recipe: Jungle Stew"] = {
+			["H3543"] = 70000,
+			["mr"] = 70000,
+		},
+		["Recipe: Dragonbreath Chili"] = {
+			["H3540"] = 77016,
+			["mr"] = 51245,
+			["H3543"] = 51245,
+			["H3539"] = 77019,
+		},
+		["Hanzo Sword"] = {
+			["H3540"] = 228999,
+			["mr"] = 228999,
+		},
+		["Recipe: Rainbow Fin Albacore"] = {
+			["H3540"] = 8499,
+			["mr"] = 8499,
+		},
+		["Spider Belt"] = {
+			["mr"] = 49999,
+			["H3543"] = 49999,
+			["H3539"] = 118036,
+		},
+		["Smoothbore Gun"] = {
+			["mr"] = 10530,
+			["cc"] = 2,
+			["id"] = "15322:0:0:0:0",
+			["sc"] = 3,
+			["H3543"] = 10530,
+			["H3539"] = 15048,
+		},
+		["Sandworm Meat"] = {
+			["H3540"] = 19600,
+			["H3539"] = 20699,
+			["H3543"] = 20400,
+			["mr"] = 20400,
+		},
+		["Adventurer's Cape of Nature's Wrath"] = {
+			["H3543"] = 79999,
+			["mr"] = 79999,
+		},
+		["Jeweled Amulet of Cainwyn"] = {
+			["H3540"] = 880000,
+			["H3539"] = 990000,
+			["mr"] = 880000,
+		},
+		["Stonescale Eel"] = {
+			["H3540"] = 12800,
+			["mr"] = 16398,
+			["H3543"] = 16398,
+			["H3539"] = 11000,
+		},
+		["Flint and Tinder"] = {
+			["mr"] = 9233,
+			["cc"] = 5,
+			["id"] = "4471:0:0:0:0",
+			["sc"] = 0,
+			["H3539"] = 9483,
+			["H3542"] = 9233,
+		},
+		["Valorous Helm"] = {
+			["H3537"] = 69470,
+			["mr"] = 69470,
+		},
+		["Arcanite Rod"] = {
+			["mr"] = 2997500,
+			["cc"] = 7,
+			["H3540"] = 2994997,
+			["id"] = "16206:0:0:0:0",
+			["H3543"] = 2997500,
+			["sc"] = 0,
+		},
+		["Pattern: White Bandit Mask"] = {
+			["H3540"] = 29599,
+			["mr"] = 4000,
+			["H3543"] = 4000,
+		},
+		["Shadow Wand"] = {
+			["H3543"] = 2100,
+			["mr"] = 2100,
+		},
+		["Libram of Constitution"] = {
+			["H3540"] = 954998,
+			["mr"] = 929000,
+			["H3543"] = 929000,
+			["H3539"] = 1002500,
+		},
+		["Jet Chain of the Gorilla"] = {
+			["H3539"] = 85716,
+			["mr"] = 85716,
+		},
+		["Pattern: Stylish Blue Shirt"] = {
+			["H3539"] = 7000,
+			["mr"] = 7000,
+		},
+		["Truesilver Transformer"] = {
+			["H3539"] = 229997,
+			["H3543"] = 229998,
+			["mr"] = 229998,
+		},
+		["Swiftness Potion"] = {
+			["H3540"] = 9700,
+			["H3539"] = 14198,
+			["H3543"] = 7500,
+			["mr"] = 7500,
+		},
+		["Sanguine Sandals"] = {
+			["H3537"] = 47900,
+			["mr"] = 47900,
+		},
+		["Ace of Elementals"] = {
+			["H3540"] = 19200,
+			["H3539"] = 19199,
+			["mr"] = 19200,
+		},
+		["Woolen Bag"] = {
+			["mr"] = 1000,
+			["cc"] = 1,
+			["id"] = "4240:0:0:0:0",
+			["H3540"] = 4500,
+			["sc"] = 0,
+			["H3543"] = 1000,
+			["H3542"] = 4300,
+		},
+		["Amethyst Band of Fire Resistance"] = {
+			["mr"] = 55000,
+			["cc"] = 4,
+			["L3543"] = 20000,
+			["H3540"] = 110000,
+			["id"] = "11971:0:0:1410:0",
+			["H3543"] = 55000,
+			["sc"] = 0,
+		},
+		["Small Egg"] = {
+			["H3540"] = 1670,
+			["mr"] = 1670,
+			["H3539"] = 1655,
+		},
+		["White Swashbuckler's Shirt"] = {
+			["H3543"] = 183998,
+			["mr"] = 183998,
+		},
+		["Ebon Scimitar of the Tiger"] = {
+			["H3543"] = 25000,
+			["mr"] = 25000,
+		},
+		["Elegant Boots of the Eagle"] = {
+			["H3537"] = 147312,
+			["mr"] = 147312,
+		},
+		["Wild Leather Vest of the Owl"] = {
+			["H3539"] = 33333,
+			["mr"] = 33333,
+		},
+		["Elegant Circlet of Shadow Resistance"] = {
+			["H3539"] = 500000,
+			["mr"] = 500000,
+		},
+		["Tribal Vest"] = {
+			["H3540"] = 5570,
+			["mr"] = 7400,
+			["H3543"] = 7400,
+			["H3539"] = 5570,
+		},
+		["Superior Gloves of the Gorilla"] = {
+			["H3537"] = 25417,
+			["mr"] = 25417,
+		},
+		["Recipe: Greater Arcane Elixir"] = {
+			["H3539"] = 7530000,
+			["sc"] = 6,
+			["H3540"] = 7500000,
+			["cc"] = 9,
+			["id"] = "13493:0:0:0:0",
+			["mr"] = 7500000,
+		},
+		["Celestial Pauldrons of Frozen Wrath"] = {
+			["mr"] = 90000,
+			["H3537"] = 100000,
+			["L3537"] = 90000,
+		},
+		["Pattern: Cindercloth Cloak"] = {
+			["H3540"] = 696500,
+			["mr"] = 696500,
+		},
+		["Recipe: Goblin Rocket Fuel"] = {
+			["H3539"] = 99999,
+			["mr"] = 99999,
+		},
+		["Volcanic Leggings"] = {
+			["H3537"] = 332187,
+			["mr"] = 332187,
+		},
+		["Elder's Hat of Fiery Wrath"] = {
+			["H3543"] = 149900,
+			["mr"] = 149900,
+		},
+		["Twin-bladed Axe of the Eagle"] = {
+			["H3543"] = 3072,
+			["mr"] = 3072,
+		},
+		["Cenarion Bracers"] = {
+			["H3540"] = 297999,
+			["H3539"] = 339000,
+			["mr"] = 297999,
+		},
+		["Insignia Gloves"] = {
+			["H3537"] = 400000,
+			["mr"] = 400000,
+		},
+		["Nightsky Boots"] = {
+			["mr"] = 42200,
+			["H3543"] = 42200,
+			["H3539"] = 19600,
+		},
+		["Iridescent Scale Leggings"] = {
+			["H3543"] = 19998,
+			["mr"] = 19998,
+		},
+		["Pattern: Frostweave Tunic"] = {
+			["H3540"] = 38163,
+			["mr"] = 15800,
+			["H3543"] = 15800,
+		},
+		["Six of Warlords"] = {
+			["H3540"] = 239999,
+			["H3539"] = 93000,
+			["mr"] = 239999,
+		},
+		["Recipe: Cooked Crab Claw"] = {
+			["H3537"] = 99900,
+			["mr"] = 99900,
+		},
+		["Sage's Pants of the Owl"] = {
+			["H3539"] = 50000,
+			["mr"] = 50000,
+		},
+		["Pattern: Enchanter's Cowl"] = {
+			["H3539"] = 149999,
+			["H3543"] = 135928,
+			["mr"] = 135928,
+		},
+		["Recipe: Flask of Distilled Wisdom"] = {
+			["H3539"] = 1500000,
+			["cc"] = 9,
+			["sc"] = 6,
+			["H3540"] = 2990000,
+			["id"] = "13520:0:0:0:0",
+			["H3543"] = 1950000,
+			["mr"] = 1950000,
+		},
+		["Woodworking Gloves"] = {
+			["H3537"] = 4900,
+			["mr"] = 4900,
+		},
+		["Monstrous War Axe of the Tiger"] = {
+			["H3537"] = 49500,
+			["mr"] = 49500,
+		},
+		["Dark Whelpling"] = {
+			["H3540"] = 409000,
+			["mr"] = 999998,
+			["H3543"] = 999998,
+		},
+		["Gossamer Boots of Stamina"] = {
+			["mr"] = 172767,
+			["H3543"] = 172767,
+			["H3539"] = 172767,
+		},
+		["Sentinel Cloak of Agility"] = {
+			["H3539"] = 18031,
+			["mr"] = 18031,
+		},
+		["Pattern: Tough Scorpid Helm"] = {
+			["H3537"] = 2500,
+			["mr"] = 2500,
+		},
+		["Twilight Cowl of Frozen Wrath"] = {
+			["H3543"] = 18800,
+			["mr"] = 18800,
+		},
+		["High Councillor's Mantle of the Eagle"] = {
+			["H3539"] = 150000,
+			["mr"] = 150000,
+		},
+		["Smashing Star of Strength"] = {
+			["H3540"] = 50000,
+			["mr"] = 50000,
+		},
+		["Bonelink Bracers of the Owl"] = {
+			["H3537"] = 17704,
+			["mr"] = 17704,
+		},
+		["Dark Leather Pants"] = {
+			["H3539"] = 9999,
+			["mr"] = 9999,
+		},
+		["High Councillor's Sash of the Wolf"] = {
+			["H3540"] = 113908,
+			["mr"] = 62609,
+			["H3543"] = 62609,
+		},
+		["Scaled Leather Gloves of the Monkey"] = {
+			["H3543"] = 40000,
+			["mr"] = 40000,
+		},
+		["Headstriker Sword of Agility"] = {
+			["H3537"] = 88504,
+			["mr"] = 88504,
+		},
+		["Silver-thread Armor"] = {
+			["H3537"] = 6837,
+			["mr"] = 6837,
+		},
+		["Raider's Belt of the Eagle"] = {
+			["H3539"] = 10596,
+			["mr"] = 10596,
+		},
+		["Myrmidon's Signet"] = {
+			["H3540"] = 999998,
+			["H3539"] = 998999,
+			["mr"] = 999998,
+		},
+		["Rough Weightstone"] = {
+			["H3539"] = 174,
+			["mr"] = 174,
+		},
+		["Birchwood Maul of Stamina"] = {
+			["H3540"] = 11064,
+			["mr"] = 11064,
+		},
+		["Marble Necklace of Regeneration"] = {
+			["H3537"] = 50000,
+			["mr"] = 50000,
+		},
+		["Bow of Searing Arrows"] = {
+			["H3537"] = 580000,
+			["mr"] = 580000,
+		},
+		["Formula: Enchant Weapon - Lifestealing"] = {
+			["H3543"] = 3131260,
+			["mr"] = 3131260,
+		},
+		["Rigid Tunic of Agility"] = {
+			["H3537"] = 10000,
+			["mr"] = 10000,
+		},
+		["Marsh Ring of Agility"] = {
+			["H3543"] = 70000,
+			["mr"] = 70000,
+		},
+		["Grizzly Jerkin of the Monkey"] = {
+			["H3537"] = 5531,
+			["mr"] = 5531,
+		},
+		["Mountain Silversage"] = {
+			["H3539"] = 8900,
+			["sc"] = 0,
+			["H3540"] = 8241,
+			["id"] = "13465:0:0:0:0",
+			["cc"] = 7,
+			["H3543"] = 9164,
+			["mr"] = 9164,
+		},
+		["Master's Cloak of Shadow Wrath"] = {
+			["H3540"] = 100000,
+			["mr"] = 200000,
+			["H3543"] = 200000,
+		},
+		["Infiltrator Cloak of the Eagle"] = {
+			["H3537"] = 8800,
+			["mr"] = 8800,
+		},
+		["Recipe: Beer Basted Boar Ribs"] = {
+			["H3537"] = 99900,
+			["mr"] = 99900,
+		},
+		["Brown Linen Vest"] = {
+			["H3537"] = 575,
+			["mr"] = 575,
+		},
+		["Durable Cape of Fiery Wrath"] = {
+			["H3543"] = 13381,
+			["mr"] = 13381,
+		},
+		["Elixir of Dream Vision"] = {
+			["H3540"] = 9300,
+			["mr"] = 90000,
+			["H3543"] = 90000,
+			["H3539"] = 9300,
+		},
+		["Tracker's Boots of Agility"] = {
+			["H3537"] = 11155,
+			["mr"] = 11155,
+		},
+		["Trueshot Bow of the Tiger"] = {
+			["H3537"] = 40000,
+			["mr"] = 40000,
+		},
+		["Willow Branch of the Eagle"] = {
+			["H3543"] = 6999,
+			["mr"] = 6999,
+		},
+		["Raptor Flesh"] = {
+			["H3540"] = 218,
+			["H3539"] = 191,
+			["H3543"] = 289,
+			["mr"] = 289,
+		},
+		["Kovork's Rattle"] = {
+			["H3537"] = 15000,
+			["mr"] = 15000,
+		},
+		["Limited Invulnerability Potion"] = {
+			["H3540"] = 41995,
+			["H3539"] = 37596,
+			["H3543"] = 36999,
+			["mr"] = 36999,
+		},
+		["Purification Potion"] = {
+			["H3540"] = 28400,
+			["H3539"] = 28999,
+			["H3543"] = 23482,
+			["mr"] = 23482,
+		},
+		["Gaea's Amice of Shadow Wrath"] = {
+			["H3540"] = 49999,
+			["mr"] = 49999,
+		},
+		["Plans: Silvered Bronze Shoulders"] = {
+			["H3539"] = 7998,
+			["mr"] = 7998,
+		},
+		["Burning War Axe"] = {
+			["H3537"] = 306267,
+			["mr"] = 306267,
+		},
+		["Captain's Cloak of the Gorilla"] = {
+			["H3543"] = 36180,
+			["mr"] = 36180,
+		},
+		["Plans: Golden Scale Cuirass"] = {
+			["H3540"] = 8898,
+			["mr"] = 10995,
+			["H3543"] = 10995,
+		},
+		["Resplendent Guardian"] = {
+			["mr"] = 72399,
+			["H3539"] = 72399,
+		},
+		["Green Lens of Healing"] = {
+			["H3540"] = 149900,
+			["mr"] = 89500,
+			["H3543"] = 89500,
+		},
+		["Dragon Finger of Shadow Wrath"] = {
+			["H3540"] = 551256,
+			["mr"] = 151256,
+			["H3543"] = 151256,
+		},
+		["Horizon Choker"] = {
+			["mr"] = 380000,
+			["H3537"] = 424998,
+			["L3537"] = 380000,
+		},
+		["Gold Bar"] = {
+			["H3539"] = 924,
+			["cc"] = 7,
+			["sc"] = 0,
+			["H3540"] = 790,
+			["id"] = "3577:0:0:0:0",
+			["H3543"] = 1400,
+			["mr"] = 1400,
+		},
+		["Regal Cloak of Arcane Wrath"] = {
+			["H3537"] = 45195,
+			["mr"] = 45195,
+		},
+		["Sorcerer Pants of the Eagle"] = {
+			["H3537"] = 8000,
+			["mr"] = 8000,
+		},
+		["High Councillor's Gloves of the Eagle"] = {
+			["H3540"] = 39999,
+			["mr"] = 39999,
+		},
+		["Winged Helm"] = {
+			["H3537"] = 40000,
+			["mr"] = 40000,
+		},
+		["Bleach"] = {
+			["H3537"] = 5505,
+			["mr"] = 5505,
+		},
+		["Merc Sword of Power"] = {
+			["H3540"] = 4589,
+			["mr"] = 4589,
+		},
+		["Bronze Hakkari Bijou"] = {
+			["H3540"] = 29199,
+			["H3539"] = 25154,
+			["H3543"] = 24647,
+			["mr"] = 24647,
+		},
+		["Pilferer's Gloves"] = {
+			["H3537"] = 222520,
+			["mr"] = 222520,
+		},
+		["Pattern: Azure Silk Gloves"] = {
+			["mr"] = 133331,
+			["cc"] = 9,
+			["id"] = "7114:0:0:0:0",
+			["H3537"] = 133331,
+			["sc"] = 2,
+		},
+		["Azure Shoulders"] = {
+			["H3540"] = 32753,
+			["mr"] = 32753,
+		},
+		["Coarse Blasting Powder"] = {
+			["H3539"] = 1164,
+			["mr"] = 750,
+			["cc"] = 7,
+			["H3540"] = 1140,
+			["id"] = "4364:0:0:0:0",
+			["sc"] = 1,
+			["H3543"] = 750,
+			["H3542"] = 857,
+		},
+		["Dark Iron Boots of Stamina"] = {
+			["H3539"] = 2900000,
+			["mr"] = 2900000,
+		},
+		["Scroll: Create Signet of Beckoning"] = {
+			["H3540"] = 89000,
+			["H3539"] = 49800,
+			["H3543"] = 195499,
+			["mr"] = 195499,
+		},
+		["Myrmidon's Gauntlets"] = {
+			["H3543"] = 35000,
+			["mr"] = 35000,
+		},
+		["Spiked Chain Breastplate of the Monkey"] = {
+			["H3537"] = 6000,
+			["mr"] = 6000,
+		},
+		["Gryphon Mail Bracelets of the Eagle"] = {
+			["H3537"] = 120902,
+			["mr"] = 120902,
+		},
+		["Green Hills of Stranglethorn - Page 25"] = {
+			["H3540"] = 900,
+			["mr"] = 3999,
+			["H3543"] = 3999,
+			["H3539"] = 2098,
+		},
+		["Large Seaforium Charge"] = {
+			["H3540"] = 29800,
+			["mr"] = 54900,
+			["H3543"] = 54900,
+		},
+		["Axe of Rin'ji"] = {
+			["H3539"] = 199500,
+			["mr"] = 199500,
+		},
+		["Carnelian Loop of Frost Resistance"] = {
+			["H3543"] = 150381,
+			["mr"] = 150381,
+		},
+		["Rigid Gloves of Defense"] = {
+			["mr"] = 10000,
+			["H3537"] = 500000,
+			["L3537"] = 10000,
+		},
+		["Murphstar of the Tiger"] = {
+			["H3540"] = 56000,
+			["mr"] = 56000,
+		},
+		["Recipe: Smoked Bear Meat"] = {
+			["H3537"] = 31448,
+			["mr"] = 31448,
+		},
+		["Pads of the Venom Spider"] = {
+			["H3540"] = 100000,
+			["mr"] = 100000,
+		},
+		["Ceremonial Leather Loincloth"] = {
+			["H3537"] = 2200,
+			["mr"] = 2200,
+		},
+		["Tender Wolf Meat"] = {
+			["H3540"] = 1579,
+			["H3539"] = 1995,
+			["mr"] = 1579,
+		},
+		["Magister's Belt"] = {
+			["H3540"] = 236899,
+			["H3539"] = 255700,
+			["H3543"] = 99999,
+			["mr"] = 99999,
+		},
+		["Scaled Leather Belt of the Owl"] = {
+			["H3540"] = 20000,
+			["mr"] = 20000,
+		},
+		["Scouting Belt of the Monkey"] = {
+			["mr"] = 19972,
+			["cc"] = 4,
+			["id"] = "6581:0:0:590:0",
+			["sc"] = 2,
+			["H3542"] = 19972,
+		},
+		["Shiny Fish Scales"] = {
+			["H3540"] = 167,
+			["H3539"] = 84,
+			["H3543"] = 75,
+			["mr"] = 75,
+		},
+		["Truesilver Bar"] = {
+			["H3540"] = 1820,
+			["H3542"] = 1760,
+			["mr"] = 1675,
+			["L3543"] = 1675,
+			["cc"] = 7,
+			["sc"] = 0,
+			["H3539"] = 1874,
+			["H3543"] = 1745,
+			["id"] = "6037:0:0:0:0",
+		},
+		["Heroic Gauntlets of Strength"] = {
+			["H3537"] = 112500,
+			["mr"] = 112500,
+		},
+		["Top Half of Advanced Armorsmithing: Volume II"] = {
+			["H3540"] = 145763,
+			["mr"] = 2199,
+			["H3543"] = 2199,
+		},
+		["Sweet Nectar"] = {
+			["mr"] = 427,
+			["H3537"] = 439,
+			["L3537"] = 427,
+		},
+		["Frostreaver Crown"] = {
+			["H3537"] = 95075,
+			["mr"] = 95075,
+		},
+		["War Knife of Agility"] = {
+			["H3537"] = 9211,
+			["mr"] = 9211,
+		},
+		["Embossed Plate Girdle of the Whale"] = {
+			["H3537"] = 13954,
+			["mr"] = 13954,
+		},
+		["Plans: Darkrune Breastplate"] = {
+			["H3540"] = 178999,
+			["mr"] = 137000,
+			["H3543"] = 137000,
+		},
+		["Buzzard Wing"] = {
+			["H3540"] = 795,
+			["H3539"] = 424,
+			["H3543"] = 1989,
+			["mr"] = 1989,
+		},
+		["Gloomshroud Armor"] = {
+			["H3537"] = 32125,
+			["mr"] = 32125,
+		},
+		["Security DELTA Data Access Card"] = {
+			["H3540"] = 199500,
+			["H3539"] = 199500,
+			["H3543"] = 60693,
+			["mr"] = 60693,
+		},
+		["Gurubashi Mojo Madness"] = {
+			["H3540"] = 519000,
+			["H3539"] = 520000,
+			["H3543"] = 445000,
+			["mr"] = 445000,
+		},
+		["Windchaser Robes"] = {
+			["H3537"] = 16409,
+			["mr"] = 16409,
+		},
+		["Formula: Runed Arcanite Rod"] = {
+			["H3539"] = 139998,
+			["cc"] = 9,
+			["sc"] = 8,
+			["H3540"] = 48745,
+			["id"] = "16243:0:0:0:0",
+			["H3543"] = 139499,
+			["mr"] = 139499,
+		},
+		["Kingsblood"] = {
+			["sc"] = 0,
+			["mr"] = 1453,
+			["L3543"] = 1453,
+			["id"] = "3356:0:0:0:0",
+			["H3540"] = 1488,
+			["cc"] = 7,
+			["H3543"] = 1695,
+			["H3539"] = 1585,
+		},
+		["Jasper Link of Fire Resistance"] = {
+			["cc"] = 4,
+			["mr"] = 258999,
+			["L3543"] = 258999,
+			["id"] = "11978:0:0:1417:0",
+			["H3540"] = 217688,
+			["sc"] = 0,
+			["H3543"] = 517544,
+			["H3539"] = 259999,
+		},
+		["Glimmering Mail Girdle"] = {
+			["H3543"] = 19050,
+			["mr"] = 19050,
+		},
+		["Gurubashi Helm"] = {
+			["H3537"] = 944741,
+			["mr"] = 944741,
+		},
+		["Outrunner's Cord of the Tiger"] = {
+			["H3540"] = 10000,
+			["mr"] = 20000,
+			["H3543"] = 20000,
+			["H3539"] = 20000,
+		},
+		["Four of Warlords"] = {
+			["H3543"] = 180000,
+			["mr"] = 180000,
+		},
+		["Mail Combat Boots"] = {
+			["H3537"] = 10000,
+			["mr"] = 10000,
+		},
+		["Destiny"] = {
+			["H3540"] = 200000,
+			["mr"] = 200000,
+		},
+		["Bolt of Silk Cloth"] = {
+			["L3540"] = 1560,
+			["mr"] = 855,
+			["cc"] = 7,
+			["H3539"] = 905,
+			["H3540"] = 1642,
+			["id"] = "4305:0:0:0:0",
+			["H3543"] = 855,
+			["sc"] = 0,
+		},
+		["Elixir of Lesser Agility"] = {
+			["H3540"] = 40199,
+			["mr"] = 18799,
+			["H3543"] = 18799,
+			["H3539"] = 40400,
+		},
+		["Arcane Pads"] = {
+			["mr"] = 51999,
+			["sc"] = 1,
+			["H3540"] = 100000,
+			["id"] = "8288:0:0:0:0",
+			["H3543"] = 51999,
+			["cc"] = 4,
+		},
+		["Elegant Boots of Stamina"] = {
+			["H3537"] = 294624,
+			["mr"] = 294624,
+		},
+		["Gaea's Cloak of the Whale"] = {
+			["H3540"] = 20000,
+			["mr"] = 20000,
+			["H3539"] = 20000,
+		},
+		["Greater Maul of the Boar"] = {
+			["H3537"] = 258624,
+			["mr"] = 258624,
+		},
+		["Heavy Lamellar Shield of the Boar"] = {
+			["H3537"] = 58991,
+			["mr"] = 58991,
+		},
+		["Sentinel Buckler of the Bear"] = {
+			["mr"] = 16000,
+			["cc"] = 4,
+			["id"] = "7463:0:0:1193:0",
+			["sc"] = 6,
+			["H3542"] = 16000,
+		},
+		["Elixir of Giants"] = {
+			["H3540"] = 16200,
+			["H3539"] = 11200,
+			["H3543"] = 15199,
+			["mr"] = 15199,
+		},
+		["Starfaller"] = {
+			["mr"] = 299998,
+			["H3543"] = 299998,
+			["H3539"] = 199999,
+		},
+		["Cloak of Flames"] = {
+			["H3537"] = 16000000,
+			["mr"] = 16000000,
+		},
+		["Mystical Mantle of Frozen Wrath"] = {
+			["H3537"] = 110000,
+			["mr"] = 110000,
+		},
+		["Essence of Undeath"] = {
+			["H3539"] = 35800,
+			["cc"] = 5,
+			["sc"] = 0,
+			["id"] = "12808:0:0:0:0",
+			["mr"] = 9395,
+			["H3543"] = 9395,
+			["H3540"] = 10000,
+		},
+		["Recipe: Limited Invulnerability Potion"] = {
+			["H3540"] = 9900,
+			["H3539"] = 37500,
+			["mr"] = 9900,
+		},
+		["Bloodspattered Shield of Strength"] = {
+			["H3537"] = 2500,
+			["mr"] = 2500,
+		},
+		["Enduring Cap"] = {
+			["H3539"] = 62128,
+			["mr"] = 62128,
+		},
+		["Death's Head Vestment"] = {
+			["H3539"] = 797999,
+			["mr"] = 797999,
+		},
+		["Green Lens of Frozen Wrath"] = {
+			["H3539"] = 89900,
+			["mr"] = 89900,
+		},
+		["Ranger Wristguards of the Monkey"] = {
+			["H3537"] = 12000,
+			["mr"] = 12000,
+		},
+		["Dense Triangle Mace"] = {
+			["H3537"] = 350000,
+			["mr"] = 350000,
+		},
+		["Scouting Cloak of Intellect"] = {
+			["mr"] = 4400,
+			["cc"] = 4,
+			["id"] = "6585:0:0:94:0",
+			["sc"] = 1,
+			["H3542"] = 4400,
+		},
+		["Shining Silver Breastplate"] = {
+			["H3540"] = 110000,
+			["mr"] = 110000,
+			["H3543"] = 110000,
+		},
+		["Band of the Unicorn"] = {
+			["H3540"] = 142090,
+			["H3539"] = 198000,
+			["H3543"] = 125500,
+			["mr"] = 125500,
+		},
+		["Blade of the Basilisk"] = {
+			["H3540"] = 159999,
+			["mr"] = 159999,
+			["H3539"] = 195000,
+		},
+		["Runn Tum Tuber"] = {
+			["H3540"] = 2195,
+			["H3539"] = 1899,
+			["H3543"] = 2200,
+			["mr"] = 2200,
+		},
+		["Elemental Ember"] = {
+			["mr"] = 149995,
+			["H3539"] = 149995,
+		},
+		["Master's Hat of Fiery Wrath"] = {
+			["H3539"] = 300000,
+			["mr"] = 300000,
+		},
+		["Heavy Hide"] = {
+			["H3540"] = 2999,
+			["H3539"] = 3750,
+			["H3543"] = 4300,
+			["mr"] = 4300,
+		},
+		["Praetorian Gloves of the Bear"] = {
+			["mr"] = 58101,
+			["cc"] = 4,
+			["id"] = "15184:0:0:1209:0",
+			["H3539"] = 58101,
+			["sc"] = 2,
+		},
+		["Frost Shock and You"] = {
+			["H3543"] = 4699,
+			["mr"] = 4699,
+		},
+		["Serpentine Loop of Arcane Resistance"] = {
+			["mr"] = 329999,
+			["cc"] = 4,
+			["H3539"] = 500000,
+			["id"] = "11977:0:0:1324:0",
+			["sc"] = 0,
+			["H3543"] = 329999,
+			["H3542"] = 500000,
+		},
+		["Fishing Pole"] = {
+			["H3539"] = 5046,
+			["mr"] = 5046,
+		},
+		["Greater Healing Potion"] = {
+			["H3539"] = 200,
+			["cc"] = 0,
+			["mr"] = 327,
+			["id"] = "1710:0:0:0:0",
+			["H3540"] = 438,
+			["H3543"] = 327,
+			["sc"] = 0,
+		},
+		["Pattern: Tough Scorpid Bracers"] = {
+			["H3540"] = 2898,
+			["mr"] = 1155,
+			["H3543"] = 1155,
+		},
+		["High Councillor's Cloak of Healing"] = {
+			["H3543"] = 200000,
+			["mr"] = 200000,
+		},
+		["Lean Wolf Flank"] = {
+			["H3540"] = 503,
+			["mr"] = 503,
+			["H3539"] = 1397,
+		},
+		["Plans: Moonsteel Broadsword"] = {
+			["H3537"] = 56379,
+			["mr"] = 56379,
+		},
+		["Ranger Helm of the Monkey"] = {
+			["H3537"] = 20000,
+			["mr"] = 20000,
+		},
+		["Bloodwoven Mitts of Fiery Wrath"] = {
+			["H3537"] = 36611,
+			["mr"] = 36611,
+		},
+		["War Paint Legguards"] = {
+			["H3539"] = 3000,
+			["mr"] = 3000,
+		},
+		["Packet of Tharlendris Seeds"] = {
+			["mr"] = 980,
+			["H3537"] = 985,
+			["L3537"] = 980,
+		},
+		["Woolen Boots"] = {
+			["H3537"] = 10000,
+			["mr"] = 10000,
+		},
+		["Sharpshooter Harquebus of the Monkey"] = {
+			["H3537"] = 155834,
+			["mr"] = 155834,
+		},
+		["Willow Belt of Fiery Wrath"] = {
+			["H3537"] = 5000,
+			["mr"] = 5000,
+		},
+		["Green Hills of Stranglethorn - Page 16"] = {
+			["H3540"] = 801,
+			["H3539"] = 5501,
+			["H3543"] = 799,
+			["mr"] = 799,
+		},
+		["Enduring Pauldrons"] = {
+			["H3537"] = 16591,
+			["mr"] = 16591,
+		},
+		["Pattern: Mooncloth Shoulders"] = {
+			["H3543"] = 199499,
+			["mr"] = 199499,
+		},
+		["Mageroyal"] = {
+			["H3540"] = 41,
+			["H3542"] = 122,
+			["mr"] = 20,
+			["L3543"] = 20,
+			["cc"] = 7,
+			["sc"] = 0,
+			["H3539"] = 73,
+			["H3543"] = 97,
+			["id"] = "785:0:0:0:0",
+		},
+		["Flask of Oil"] = {
+			["mr"] = 499,
+			["cc"] = 7,
+			["H3540"] = 194,
+			["id"] = "814:0:0:0:0",
+			["H3543"] = 499,
+			["sc"] = 0,
+		},
+		["Acrobatic Staff of the Whale"] = {
+			["H3540"] = 12500,
+			["mr"] = 12500,
+		},
+		["Barbed Club of Healing"] = {
+			["mr"] = 3100,
+			["H3543"] = 3100,
+			["H3539"] = 8847,
+		},
+		["Formula: Enchant Boots - Lesser Spirit"] = {
+			["H3540"] = 5000,
+			["H3539"] = 5500,
+			["H3543"] = 5168,
+			["mr"] = 5168,
+		},
+		["Aquamarine Ring of Arcane Resistance"] = {
+			["mr"] = 54999,
+			["sc"] = 0,
+			["H3540"] = 136537,
+			["id"] = "11974:0:0:1321:0",
+			["H3543"] = 54999,
+			["cc"] = 4,
+		},
+		["Pattern: Heavy Scorpid Vest"] = {
+			["H3540"] = 20600,
+			["mr"] = 17400,
+			["H3543"] = 17400,
+		},
+		["Ta'Kierthan Songblade"] = {
+			["H3537"] = 1140347,
+			["mr"] = 1140347,
+		},
+		["Defender Cloak of the Bear"] = {
+			["H3540"] = 30000,
+			["mr"] = 30000,
+			["H3539"] = 30000,
+		},
+		["Huntsman's Bands of Stamina"] = {
+			["H3537"] = 17895,
+			["mr"] = 17895,
+		},
+		["Cord of Elements"] = {
+			["H3540"] = 50000,
+			["mr"] = 77997,
+			["H3543"] = 77997,
+		},
+		["Venomshroud Cape"] = {
+			["H3540"] = 27000,
+			["mr"] = 34800,
+			["H3543"] = 34800,
+		},
+		["Diamond Hammer"] = {
+			["H3540"] = 58700,
+			["mr"] = 114967,
+			["H3543"] = 114967,
+		},
+		["Black Swashbuckler's Shirt"] = {
+			["H3539"] = 77998,
+			["mr"] = 77998,
+		},
+		["Blue Ribboned Wrapping Paper"] = {
+			["H3537"] = 7656,
+			["mr"] = 7656,
+		},
+		["Recipe: Flask of the Titans"] = {
+			["mr"] = 6900000,
+			["cc"] = 9,
+			["H3540"] = 6900000,
+			["id"] = "13519:0:0:0:0",
+			["sc"] = 6,
+		},
+		["Sardonyx Knuckle of Shadow Resistance"] = {
+			["H3540"] = 278998,
+			["mr"] = 500000,
+			["H3543"] = 500000,
+		},
+		["Wildvine Potion"] = {
+			["H3537"] = 2400,
+			["mr"] = 2400,
+		},
+		["Captain's Waistguard of the Monkey"] = {
+			["H3537"] = 39976,
+			["mr"] = 39976,
+		},
+		["Belamoore's Research Journal"] = {
+			["mr"] = 5060,
+			["cc"] = 12,
+			["id"] = "3711:0:0:0:0",
+			["H3543"] = 5060,
+			["sc"] = 0,
+		},
+		["Abyssal Mail Legguards of Sorcery"] = {
+			["H3540"] = 250000,
+			["H3539"] = 247900,
+			["H3543"] = 310000,
+			["mr"] = 310000,
+		},
+		["Dark Iron Ale Mug"] = {
+			["H3540"] = 2396,
+			["mr"] = 2396,
+			["H3539"] = 2300,
+		},
+		["Raincaller Cap of Stamina"] = {
+			["H3537"] = 70000,
+			["mr"] = 70000,
+		},
+		["Grizzly Pants of Healing"] = {
+			["H3537"] = 10000,
+			["mr"] = 10000,
+		},
+		["Sharpshooter Harquebus of the Wolf"] = {
+			["H3537"] = 155833,
+			["mr"] = 155833,
+		},
+		["Knight's Gauntlets of Power"] = {
+			["H3537"] = 10258,
+			["mr"] = 10258,
+		},
+		["Azure Silk Cloak"] = {
+			["H3543"] = 19199,
+			["mr"] = 19199,
+		},
+		["Warmonger's Gauntlets of Arcane Wrath"] = {
+			["H3537"] = 27931,
+			["mr"] = 27931,
+		},
+		["Defender Boots of the Boar"] = {
+			["H3540"] = 30000,
+			["mr"] = 30000,
+			["H3539"] = 30000,
+		},
+		["Jazeraint Pauldrons of the Falcon"] = {
+			["H3537"] = 20000,
+			["mr"] = 20000,
+		},
+		["Pattern: Boots of the Enchanter"] = {
+			["H3539"] = 31797,
+			["cc"] = 9,
+			["mr"] = 30493,
+			["id"] = "4352:0:0:0:0",
+			["H3540"] = 31793,
+			["H3543"] = 30493,
+			["sc"] = 2,
+		},
+		["Un'Goro Soil"] = {
+			["H3540"] = 1657,
+			["H3539"] = 1599,
+			["mr"] = 1657,
+		},
+		["Mercenary Blade of the Monkey"] = {
+			["H3540"] = 19200,
+			["mr"] = 19200,
+			["H3539"] = 69000,
+		},
+		["Scroll of Spirit IV"] = {
+			["H3540"] = 900,
+			["H3539"] = 1069,
+			["H3543"] = 653,
+			["mr"] = 653,
+		},
+		["Grave Moss"] = {
+			["cc"] = 7,
+			["H3539"] = 9999,
+			["L3543"] = 9100,
+			["id"] = "3369:0:0:0:0",
+			["H3540"] = 11395,
+			["sc"] = 0,
+			["H3543"] = 12498,
+			["mr"] = 12498,
+		},
+		["Greater Dreamless Sleep Potion"] = {
+			["H3540"] = 14133,
+			["mr"] = 14133,
+			["H3539"] = 14133,
+		},
+		["Large Venom Sac"] = {
+			["H3540"] = 34998,
+			["H3539"] = 43461,
+			["H3543"] = 38400,
+			["mr"] = 38400,
+		},
+		["Pattern: Guardian Belt"] = {
+			["H3537"] = 29800,
+			["mr"] = 29800,
+		},
+		["Durable Shoulders of Intellect"] = {
+			["H3537"] = 2299,
+			["mr"] = 2299,
+		},
+		["Dokebi Bracers"] = {
+			["H3540"] = 49800,
+			["mr"] = 49800,
+		},
+		["Formula: Enchant Bracer - Greater Spirit"] = {
+			["H3540"] = 14597,
+			["H3539"] = 14995,
+			["H3543"] = 8500,
+			["mr"] = 8500,
+		},
+		["Truesilver Rod"] = {
+			["H3540"] = 29998,
+			["mr"] = 24950,
+			["H3543"] = 24950,
+		},
+		["Lunar Handwraps of Healing"] = {
+			["H3543"] = 35000,
+			["mr"] = 35000,
+		},
+		["Ace of Beasts"] = {
+			["H3540"] = 8799998,
+			["H3539"] = 8950000,
+			["H3543"] = 7829897,
+			["mr"] = 7829897,
+		},
+		["Grunt's Belt of the Bear"] = {
+			["H3540"] = 1800,
+			["mr"] = 1800,
+			["H3539"] = 2000,
+		},
+		["Elegant Bracers of Fiery Wrath"] = {
+			["H3540"] = 150000,
+			["mr"] = 150000,
+		},
+		["Long Redwood Bow"] = {
+			["H3537"] = 39999,
+			["mr"] = 39999,
+		},
+		["Defender Bracers of the Bear"] = {
+			["H3537"] = 9000,
+			["mr"] = 9000,
+		},
+		["Adventurer's Cape of Intellect"] = {
+			["H3537"] = 180000,
+			["mr"] = 180000,
+		},
+		["Scouting Belt of the Whale"] = {
+			["mr"] = 10511,
+			["cc"] = 4,
+			["id"] = "6581:0:0:1013:0",
+			["sc"] = 2,
+			["H3542"] = 10511,
+		},
+		["Marksman Bands"] = {
+			["H3540"] = 97000,
+			["mr"] = 84500,
+			["H3543"] = 84500,
+		},
+		["Razzashi Coin"] = {
+			["H3540"] = 3117,
+			["H3539"] = 3000,
+			["H3543"] = 2700,
+			["mr"] = 2700,
+		},
+		["Dervish Belt of the Falcon"] = {
+			["H3543"] = 20000,
+			["mr"] = 20000,
+		},
+		["Belt of Valor"] = {
+			["H3537"] = 250000,
+			["mr"] = 250000,
+		},
+		["Dire Wand"] = {
+			["mr"] = 33999,
+			["H3543"] = 33999,
+			["H3539"] = 17094,
+		},
+		["Shadowforge Bushmaster"] = {
+			["H3537"] = 1400000,
+			["mr"] = 1400000,
+		},
+		["Murphstar of Power"] = {
+			["H3540"] = 33675,
+			["H3539"] = 33676,
+			["mr"] = 33675,
+		},
+		["Raider's Shield of the Boar"] = {
+			["H3537"] = 1600,
+			["mr"] = 1600,
+		},
+		["Fortified Leggings of the Bear"] = {
+			["H3537"] = 16736,
+			["mr"] = 16736,
+		},
+		["Enchanted Thorium Bar"] = {
+			["mr"] = 27499,
+			["cc"] = 7,
+			["H3540"] = 35999,
+			["id"] = "12655:0:0:0:0",
+			["H3543"] = 27499,
+			["sc"] = 0,
+		},
+		["Mild Spices"] = {
+			["H3539"] = 1609,
+			["mr"] = 1609,
+		},
+		["Battlefield Destroyer of the Monkey"] = {
+			["H3540"] = 60000,
+			["mr"] = 39600,
+			["H3543"] = 39600,
+		},
+		["Green Lens of Arcane Wrath"] = {
+			["H3539"] = 89900,
+			["cc"] = 4,
+			["H3540"] = 68215,
+			["id"] = "10504:0:0:1822:0",
+			["sc"] = 1,
+			["mr"] = 68215,
+		},
+		["Elegant Circlet of Shadow Wrath"] = {
+			["H3540"] = 160000,
+			["mr"] = 199500,
+			["H3543"] = 199500,
+		},
+		["Petrolspill Leggings"] = {
+			["mr"] = 650000,
+			["H3543"] = 650000,
+			["H3539"] = 828750,
+		},
+		["Fire Wand"] = {
+			["mr"] = 1980,
+			["H3543"] = 1980,
+			["H3539"] = 3801,
+		},
+		["Thorium Ore"] = {
+			["H3539"] = 689,
+			["cc"] = 7,
+			["H3540"] = 476,
+			["id"] = "10620:0:0:0:0",
+			["sc"] = 0,
+			["H3543"] = 1700,
+			["mr"] = 1700,
+		},
+		["Pattern: Deviate Scale Gloves"] = {
+			["mr"] = 9995,
+			["cc"] = 9,
+			["id"] = "6475:0:0:0:0",
+			["L3537"] = 9995,
+			["H3537"] = 9996,
+			["sc"] = 1,
+		},
+		["High Councillor's Robe of Shadow Wrath"] = {
+			["H3537"] = 200000,
+			["mr"] = 200000,
+		},
+		["Plans: Radiant Circlet"] = {
+			["H3543"] = 174679,
+			["mr"] = 174679,
+		},
+		["Hyper-Radiant Flame Reflector"] = {
+			["H3540"] = 4203930,
+			["mr"] = 2249999,
+			["H3543"] = 2249999,
+			["H3539"] = 2254198,
+		},
+		["Training Sword of the Whale"] = {
+			["H3540"] = 6000,
+			["mr"] = 6000,
+		},
+		["Jasper Link of Shadow Resistance"] = {
+			["H3540"] = 446999,
+			["H3539"] = 449997,
+			["H3543"] = 499000,
+			["mr"] = 499000,
+		},
+		["Warbringer's Crown of the Bear"] = {
+			["H3543"] = 57672,
+			["mr"] = 57672,
+		},
+		["Master's Cloak of Frozen Wrath"] = {
+			["H3540"] = 300000,
+			["mr"] = 300000,
+			["H3539"] = 609577,
+		},
+		["Mystic's Woolies"] = {
+			["H3540"] = 5800,
+			["mr"] = 5800,
+			["H3539"] = 6300,
+		},
+		["Heart of Fire"] = {
+			["H3539"] = 7000,
+			["cc"] = 5,
+			["H3540"] = 7300,
+			["id"] = "7077:0:0:0:0",
+			["sc"] = 0,
+			["H3543"] = 10000,
+			["mr"] = 10000,
+		},
+		["Azure Silk Belt"] = {
+			["H3537"] = 171199,
+			["mr"] = 171199,
+		},
+		["Prospector's Boots"] = {
+			["H3537"] = 8000,
+			["mr"] = 8000,
+		},
+		["Band of the Hierophant"] = {
+			["H3540"] = 119499,
+			["mr"] = 119499,
+			["H3539"] = 129500,
+		},
+		["Sergeant's Warhammer of Power"] = {
+			["H3537"] = 14000,
 			["mr"] = 14000,
-			["H3539"] = 20198,
+		},
+		["Hulking Chestguard"] = {
+			["H3540"] = 24497,
+			["mr"] = 17000,
+			["H3543"] = 17000,
+			["H3539"] = 24998,
+		},
+		["Defender Girdle of the Bear"] = {
+			["mr"] = 35000,
+			["H3537"] = 60000,
+			["L3537"] = 35000,
+		},
+		["Elegant Cloak of Intellect"] = {
+			["H3540"] = 99999,
+			["mr"] = 99999,
+		},
+		["Icemail Jerkin"] = {
+			["H3540"] = 179499,
+			["H3539"] = 199497,
+			["H3543"] = 148739,
+			["mr"] = 148739,
+		},
+		["Willow Pants of the Eagle"] = {
+			["H3537"] = 4900,
+			["mr"] = 4900,
+		},
+		["Gloom Reaper of the Wolf"] = {
+			["H3537"] = 22200,
+			["mr"] = 22200,
+		},
+		["Formula: Enchant Shield - Frost Resistance"] = {
+			["H3540"] = 1497499,
+			["H3539"] = 905923,
+			["mr"] = 1497499,
+		},
+		["Abyssal Mail Sabatons of Sorcery"] = {
+			["H3540"] = 150000,
+			["mr"] = 78086,
+			["H3543"] = 78086,
+		},
+		["Sentinel Shoulders of the Owl"] = {
+			["H3539"] = 27146,
+			["mr"] = 27146,
+		},
+		["Aboriginal Sash of the Monkey"] = {
+			["H3540"] = 5000,
+			["H3539"] = 3000,
+			["mr"] = 5000,
+		},
+		["Manual: Mageweave Bandage"] = {
+			["id"] = "16113:0:0:0:0",
+			["L3540"] = 19600,
+			["H3539"] = 25400,
+			["sc"] = 7,
+			["cc"] = 9,
+			["mr"] = 9998,
+			["L3539"] = 24175,
+			["H3543"] = 9998,
+			["H3540"] = 19988,
+		},
+		["Abjurer's Boots of the Owl"] = {
+			["H3537"] = 41015,
+			["mr"] = 41015,
+		},
+		["Soldier's Gauntlets of the Tiger"] = {
+			["H3537"] = 9900,
+			["mr"] = 9900,
+		},
+		["Rough Blasting Powder"] = {
+			["sc"] = 1,
+			["H3539"] = 196,
+			["cc"] = 7,
+			["id"] = "4357:0:0:0:0",
+			["H3540"] = 175,
+			["mr"] = 32,
+			["H3543"] = 32,
+			["H3542"] = 29,
+		},
+		["Recipe: Transmute Life to Earth"] = {
+			["H3540"] = 647505,
+			["H3539"] = 647507,
+			["H3543"] = 650287,
+			["mr"] = 650287,
+		},
+		["Scroll of Strength IV"] = {
+			["H3540"] = 4500,
+			["mr"] = 3299,
+			["H3543"] = 3299,
+		},
+		["Ornate Girdle of the Eagle"] = {
+			["H3537"] = 174020,
+			["mr"] = 174020,
+		},
+		["Bottom Half of Advanced Armorsmithing: Volume III"] = {
+			["H3540"] = 59500,
+			["H3539"] = 68999,
+			["H3543"] = 49800,
+			["mr"] = 49800,
+		},
+		["Incendosaur Scale"] = {
+			["H3540"] = 799,
+			["H3539"] = 814,
+			["mr"] = 799,
+		},
+		["Sentinel Cap of the Whale"] = {
+			["mr"] = 42168,
+			["cc"] = 4,
+			["id"] = "7441:0:0:1036:0",
+			["sc"] = 2,
+			["H3543"] = 42168,
+			["H3542"] = 42168,
+		},
+		["Yellow Hakkari Bijou"] = {
+			["H3540"] = 39799,
+			["H3539"] = 25199,
+			["H3543"] = 24224,
+			["mr"] = 24224,
+		},
+		["Slayer's Cape"] = {
+			["H3543"] = 9999,
+			["mr"] = 9999,
+		},
+		["Battle Chain Pants"] = {
+			["H3540"] = 1200,
+			["mr"] = 5545,
+			["H3543"] = 5545,
+			["H3539"] = 3900,
+		},
+		["Plans: Green Iron Shoulders"] = {
+			["mr"] = 8775,
+			["cc"] = 9,
+			["id"] = "3870:0:0:0:0",
+			["H3540"] = 12500,
+			["H3543"] = 8775,
+			["sc"] = 4,
+		},
+		["Golem Shard Leggings"] = {
+			["H3543"] = 120000,
+			["mr"] = 120000,
+		},
+		["Captain's Breastplate of Agility"] = {
+			["H3537"] = 67500,
+			["mr"] = 67500,
+		},
+		["Celestial Cape of Frozen Wrath"] = {
+			["H3537"] = 80000,
+			["mr"] = 80000,
+		},
+		["Schematic: Thorium Widget"] = {
+			["H3540"] = 94475,
+			["H3539"] = 82945,
+			["H3543"] = 80000,
+			["mr"] = 80000,
+		},
+		["Sentry's Headdress of the Gorilla"] = {
+			["H3537"] = 50000,
+			["mr"] = 50000,
+		},
+		["Short Bastard Sword of the Bear"] = {
+			["mr"] = 40000,
+			["H3543"] = 40000,
+			["H3539"] = 6032,
+		},
+		["Emerald Helm of the Bear"] = {
+			["H3537"] = 52098,
+			["mr"] = 52098,
+		},
+		["Soldier's Armor of the Whale"] = {
+			["H3540"] = 9385,
+			["mr"] = 9385,
+		},
+		["Forest Pendant of the Monkey"] = {
+			["mr"] = 40000,
+			["cc"] = 4,
+			["id"] = "12040:0:0:598:0",
+			["L3543"] = 40000,
+			["H3543"] = 69280,
+			["sc"] = 0,
+		},
+		["Mugthol's Helm"] = {
+			["H3540"] = 42799,
+			["mr"] = 42799,
+		},
+		["Enchanted Leather"] = {
+			["H3539"] = 38199,
+			["cc"] = 7,
+			["mr"] = 31800,
+			["id"] = "12810:0:0:0:0",
+			["H3540"] = 35999,
+			["H3543"] = 31800,
+			["sc"] = 0,
+		},
+		["Aboriginal Footwraps of Frozen Wrath"] = {
+			["H3537"] = 7528,
+			["mr"] = 7528,
+		},
+		["Pattern: Volcanic Shoulders"] = {
+			["H3537"] = 49999,
+			["mr"] = 49999,
+		},
+		["The Queen's Jewel"] = {
+			["mr"] = 110000,
+			["H3539"] = 110000,
+		},
+		["Plans: Thorium Shield Spike"] = {
+			["H3540"] = 199997,
+			["H3539"] = 200000,
+			["H3543"] = 250000,
+			["mr"] = 250000,
+		},
+		["Field Plate Girdle of the Gorilla"] = {
+			["H3537"] = 30615,
+			["mr"] = 30615,
+		},
+		["Carnelian Loop of Nature Resistance"] = {
+			["H3540"] = 709999,
+			["mr"] = 490000,
+			["H3543"] = 490000,
+			["H3539"] = 797188,
+		},
+		["Jouster's Girdle"] = {
+			["H3543"] = 34708,
+			["mr"] = 34708,
+		},
+		["Plans: Green Iron Boots"] = {
+			["H3539"] = 20000,
+			["mr"] = 20000,
+		},
+		["Sage's Gloves of the Eagle"] = {
+			["mr"] = 27562,
+			["cc"] = 4,
+			["id"] = "6615:0:0:851:0",
+			["sc"] = 1,
+			["H3529"] = 27562,
+		},
+		["Severing Axe of the Tiger"] = {
+			["H3543"] = 3000,
+			["mr"] = 3000,
+		},
+		["Spiritchaser Staff of Intellect"] = {
+			["H3537"] = 57500,
+			["mr"] = 57500,
+		},
+		["War Torn Tunic of the Eagle"] = {
+			["H3539"] = 9500,
+			["mr"] = 9500,
+		},
+		["Scroll of Agility IV"] = {
+			["H3540"] = 25800,
+			["mr"] = 29198,
+			["H3543"] = 29198,
+			["H3539"] = 29400,
+		},
+		["Imposing Shoulders of the Bear"] = {
+			["H3537"] = 12425,
+			["mr"] = 12425,
+		},
+		["Mystic's Slippers"] = {
+			["mr"] = 4900,
+			["H3543"] = 4900,
+			["H3539"] = 5545,
+		},
+		["Traveler's Helm"] = {
+			["H3540"] = 48800,
+			["mr"] = 48360,
+			["H3543"] = 48360,
+		},
+		["Slayer's Skullcap"] = {
+			["H3537"] = 99999,
+			["mr"] = 99999,
+		},
+		["Four of Elementals"] = {
+			["H3540"] = 159999,
+			["mr"] = 78000,
+			["H3543"] = 78000,
+			["H3539"] = 29996,
+		},
+		["Dark Iron Ore"] = {
+			["L3543"] = 1079,
+			["H3539"] = 998,
+			["cc"] = 7,
+			["H3540"] = 969,
+			["id"] = "11370:0:0:0:0",
+			["sc"] = 0,
+			["H3543"] = 2200,
+			["mr"] = 2200,
+		},
+		["Sorcerer Slippers of Shadow Wrath"] = {
+			["H3537"] = 70000,
+			["mr"] = 70000,
+		},
+		["Plans: Iron Counterweight"] = {
+			["H3540"] = 9898,
+			["H3539"] = 3800,
+			["H3543"] = 7899,
+			["mr"] = 7899,
+		},
+		["Dense Blasting Powder"] = {
+			["mr"] = 5666,
+			["cc"] = 7,
+			["H3539"] = 2700,
+			["id"] = "15992:0:0:0:0",
+			["sc"] = 1,
+			["H3543"] = 5666,
+			["H3542"] = 5100,
+		},
+		["Stylish Blue Shirt"] = {
+			["mr"] = 163997,
+			["H3543"] = 163997,
+			["H3539"] = 199996,
+		},
+		["Darkmist Wizard Hat of Healing"] = {
+			["mr"] = 50000,
+			["H3537"] = 163736,
+			["L3537"] = 50000,
+		},
+		["Pattern: Tough Scorpid Leggings"] = {
+			["H3539"] = 4699,
+			["mr"] = 4699,
+		},
+		["Enormous Ogre Belt"] = {
+			["H3539"] = 69650,
+			["mr"] = 69650,
+		},
+		["Darkclaw Lobster"] = {
+			["mr"] = 915,
+			["H3543"] = 915,
+			["H3539"] = 484,
+		},
+		["Arachnidian Legguards of Healing"] = {
+			["H3540"] = 199999,
+			["mr"] = 199999,
+		},
+		["Digmaster 5000"] = {
+			["H3537"] = 2647269,
+			["mr"] = 2647269,
+		},
+		["Multicolored Band of Frost Resistance"] = {
+			["mr"] = 200000,
+			["cc"] = 4,
+			["id"] = "20692:0:0:1362:0",
+			["L3543"] = 200000,
+			["H3543"] = 299999,
+			["sc"] = 0,
+		},
+		["Viscous Hammer"] = {
+			["H3539"] = 150000,
+			["mr"] = 150000,
+		},
+		["Heraldic Bracers"] = {
+			["H3537"] = 19917,
+			["mr"] = 19917,
+		},
+		["Iron Ore"] = {
+			["H3539"] = 1795,
+			["mr"] = 7700,
+			["cc"] = 7,
+			["id"] = "2772:0:0:0:0",
+			["H3540"] = 1939,
+			["sc"] = 0,
+			["H3543"] = 7700,
+			["L3543"] = 1284,
+		},
+		["Buccaneer's Robes of Stamina"] = {
+			["H3540"] = 21885,
+			["mr"] = 21885,
+		},
+		["Recipe: Rage Potion"] = {
+			["H3540"] = 19888,
+			["mr"] = 19888,
+		},
+		["Wildkin E'ko"] = {
+			["H3540"] = 1494,
+			["mr"] = 4180,
+			["H3543"] = 4180,
+		},
+		["High Chief's Pauldrons of the Tiger"] = {
+			["H3539"] = 486136,
+			["mr"] = 486136,
+		},
+		["Tin Bar"] = {
+			["H3540"] = 530,
+			["H3542"] = 1234,
+			["mr"] = 653,
+			["L3543"] = 653,
+			["cc"] = 7,
+			["sc"] = 0,
+			["H3539"] = 898,
+			["H3543"] = 909,
+			["id"] = "3576:0:0:0:0",
+		},
+		["Rageclaw Belt of the Bear"] = {
+			["H3537"] = 19500,
+			["mr"] = 19500,
+		},
+		["Plans: Thorium Armor"] = {
+			["H3539"] = 28400,
+			["H3543"] = 9800,
+			["mr"] = 9800,
+		},
+		["Dark Iron Helm"] = {
+			["H3543"] = 1400000,
+			["mr"] = 1400000,
+		},
+		["Pattern: Phoenix Gloves"] = {
+			["mr"] = 16500,
+			["H3537"] = 19757,
+			["L3537"] = 16500,
+		},
+		["Headstriker Sword of the Boar"] = {
+			["H3537"] = 30274,
+			["mr"] = 30274,
+		},
+		["Long Tail Feather"] = {
+			["H3540"] = 408,
+			["H3539"] = 441,
+			["H3543"] = 375,
+			["mr"] = 375,
+		},
+		["Plans: Lionheart Helm"] = {
+			["H3537"] = 12499999,
+			["mr"] = 12499999,
+		},
+		["Ranger Wristguards of Stamina"] = {
+			["H3537"] = 10300,
+			["mr"] = 10300,
+		},
+		["Councillor's Gloves of the Eagle"] = {
+			["mr"] = 39400,
+			["H3543"] = 39400,
+			["H3539"] = 40000,
+		},
+		["Howling Blade"] = {
+			["H3537"] = 160000,
+			["mr"] = 160000,
+		},
+		["Big Bear Meat"] = {
+			["H3540"] = 377,
+			["mr"] = 377,
+		},
+		["Pattern: Runecloth Robe"] = {
+			["H3539"] = 145998,
+			["mr"] = 97500,
+			["cc"] = 9,
+			["H3540"] = 145500,
+			["id"] = "14469:0:0:0:0",
+			["sc"] = 2,
+			["H3543"] = 97500,
+			["H3542"] = 186500,
+		},
+		["War Paint Cloak"] = {
+			["H3540"] = 5400,
+			["mr"] = 2500,
+			["H3543"] = 2500,
+			["H3539"] = 5598,
+		},
+		["Hunting Tunic"] = {
+			["mr"] = 310000,
+			["cc"] = 4,
+			["id"] = "2973:0:0:0:0",
+			["sc"] = 2,
+			["H3542"] = 310000,
+		},
+		["Small Spider Leg"] = {
+			["H3540"] = 18,
+			["mr"] = 38,
+			["H3543"] = 38,
+			["H3539"] = 35,
+		},
+		["Greater Scythe of the Monkey"] = {
+			["H3539"] = 37883,
+			["mr"] = 37883,
+		},
+		["Plans: Whitesoul Helm"] = {
+			["mr"] = 29799,
+			["H3537"] = 29800,
+			["L3537"] = 29799,
+		},
+		["Recipe: Mithril Head Trout"] = {
+			["H3543"] = 43900,
+			["mr"] = 43900,
+		},
+		["Recipe: Westfall Stew"] = {
+			["H3537"] = 99900,
+			["mr"] = 99900,
+		},
+		["Mechanical Dragonling"] = {
+			["H3537"] = 401802,
+			["mr"] = 401802,
+		},
+		["Raider's Gauntlets of the Whale"] = {
+			["H3540"] = 11841,
+			["mr"] = 11841,
+		},
+		["Falcon's Hook"] = {
+			["H3543"] = 19999,
+			["mr"] = 19999,
+		},
+		["Brown Linen Robe"] = {
+			["H3539"] = 1244,
+			["mr"] = 1244,
+		},
+		["Torn Bear Pelt"] = {
+			["mr"] = 1610,
+			["H3537"] = 1660,
+			["L3537"] = 1610,
+		},
+		["Silver-thread Cloak"] = {
+			["H3537"] = 10000,
+			["mr"] = 10000,
+		},
+		["Bludstone Hammer"] = {
+			["H3540"] = 500000,
+			["mr"] = 500000,
+			["H3539"] = 296342,
+		},
+		["Recipe: Rockscale Cod"] = {
+			["H3540"] = 12000,
+			["mr"] = 30000,
+			["H3543"] = 30000,
+		},
+		["Pattern: Heavy Leather Ball"] = {
+			["H3540"] = 44700,
+			["mr"] = 43300,
+			["H3543"] = 43300,
+		},
+		["Skullance Shield"] = {
+			["H3537"] = 49999,
+			["mr"] = 49999,
+		},
+		["Arcanite Dragonling"] = {
+			["mr"] = 8999999,
+			["cc"] = 7,
+			["H3540"] = 8999999,
+			["id"] = "16022:0:0:0:0",
+			["sc"] = 3,
+		},
+		["Shredder Operating Manual - Page 12"] = {
+			["sc"] = 0,
+			["H3539"] = 1171,
+			["cc"] = 15,
+			["id"] = "16656:0:0:0:0",
+			["H3540"] = 7999,
+			["mr"] = 1799,
+			["H3543"] = 1799,
+			["H3542"] = 3698,
+		},
+		["Sentinel Trousers of Spirit"] = {
+			["mr"] = 60504,
+			["cc"] = 4,
+			["id"] = "7440:0:0:409:0",
+			["sc"] = 2,
+			["H3542"] = 60504,
+		},
+		["Shimmering Bracers of the Whale"] = {
+			["H3540"] = 2000,
+			["mr"] = 2000,
+		},
+		["Native Branch of Arcane Wrath"] = {
+			["H3537"] = 13044,
+			["mr"] = 13044,
+		},
+		["Greenstone Circle of the Bear"] = {
+			["H3543"] = 19900,
+			["mr"] = 19900,
+		},
+		["Mithril Spurs"] = {
+			["H3543"] = 79999,
+			["mr"] = 79999,
+		},
+		["Heavy Leather Ammo Pouch"] = {
+			["mr"] = 9000,
+			["cc"] = 11,
+			["id"] = "7372:0:0:0:0",
+			["sc"] = 3,
+			["H3536"] = 9000,
+		},
+		["Infantry Leggings of the Bear"] = {
+			["H3537"] = 4637,
+			["mr"] = 4637,
+		},
+		["Bandit Pants of Agility"] = {
+			["H3539"] = 39939,
+			["mr"] = 39939,
+		},
+		["Mystical Leggings of Healing"] = {
+			["H3537"] = 120000,
+			["mr"] = 120000,
+		},
+		["Huntsman's Cape of the Eagle"] = {
+			["H3543"] = 11400,
+			["mr"] = 11400,
+		},
+		["Lesser Eternal Essence"] = {
+			["H3539"] = 23399,
+			["cc"] = 7,
+			["mr"] = 17000,
+			["id"] = "16202:0:0:0:0",
+			["H3540"] = 19799,
+			["H3543"] = 17000,
+			["sc"] = 0,
+		},
+		["Thorium Bar"] = {
+			["H3539"] = 1145,
+			["sc"] = 0,
+			["H3540"] = 933,
+			["id"] = "12359:0:0:0:0",
+			["cc"] = 7,
+			["H3543"] = 1225,
+			["mr"] = 1225,
+		},
+		["Superior Boots of the Owl"] = {
+			["H3537"] = 8771,
+			["mr"] = 8771,
+		},
+		["Giant Clam Meat"] = {
+			["H3540"] = 755,
+			["mr"] = 456,
+			["H3543"] = 456,
+			["H3539"] = 760,
+		},
+		["Burnished Tunic"] = {
+			["H3537"] = 2499,
+			["mr"] = 2499,
+		},
+		["Brown Linen Shirt"] = {
+			["H3540"] = 16142,
+			["mr"] = 9799,
+			["H3543"] = 9799,
+		},
+		["Small Venom Sac"] = {
+			["H3540"] = 3600,
+			["mr"] = 9964,
+			["H3543"] = 9964,
+		},
+		["Knight's Bracers of the Whale"] = {
+			["H3537"] = 9999,
+			["mr"] = 9999,
+		},
+		["Edgemaster's Handguards"] = {
+			["mr"] = 83996524,
+			["cc"] = 4,
+			["id"] = "14551:0:0:0:0",
+			["H3543"] = 83996524,
+			["sc"] = 3,
+		},
+		["Banded Boots of Stamina"] = {
+			["H3543"] = 11205,
+			["mr"] = 11205,
+		},
+		["Small Radiant Shard"] = {
+			["L3540"] = 19199,
+			["mr"] = 17498,
+			["sc"] = 0,
+			["H3539"] = 19499,
+			["H3540"] = 19799,
+			["id"] = "11177:0:0:0:0",
+			["H3543"] = 17498,
+			["cc"] = 7,
+		},
+		["Wolf Rider's Leggings of the Monkey"] = {
+			["H3540"] = 20000,
+			["mr"] = 20000,
+		},
+		["Black Mageweave Boots"] = {
+			["H3539"] = 57998,
+			["sc"] = 1,
+			["cc"] = 4,
+			["id"] = "10026:0:0:0:0",
+			["L3539"] = 57993,
+			["H3540"] = 57499,
+			["mr"] = 57499,
+		},
+		["Beaststalker's Belt"] = {
+			["H3540"] = 175000,
+			["mr"] = 50000,
+			["H3543"] = 50000,
+			["H3539"] = 232323,
+		},
+		["Elegant Cloak of the Eagle"] = {
+			["H3540"] = 89000,
+			["mr"] = 89000,
+			["H3539"] = 89500,
+		},
+		["Royal Amice of the Eagle"] = {
+			["H3543"] = 40000,
+			["mr"] = 40000,
+		},
+		["Spiritchaser Staff of Healing"] = {
+			["H3537"] = 300000,
+			["mr"] = 300000,
+		},
+		["Blanchard's Stout"] = {
+			["H3543"] = 80000,
+			["mr"] = 80000,
+		},
+		["Azure Silk Vest"] = {
+			["mr"] = 9084,
+			["H3543"] = 9084,
+			["H3539"] = 21998,
+		},
+		["Knight's Cloak of the Bear"] = {
+			["H3537"] = 31542,
+			["mr"] = 31542,
+		},
+		["Snapvine Watermelon"] = {
+			["H3543"] = 4422,
+			["mr"] = 4422,
+		},
+		["Two of Elementals"] = {
+			["H3543"] = 43333,
+			["mr"] = 43333,
+		},
+		["Traveler's Gloves"] = {
+			["mr"] = 40000,
+			["cc"] = 4,
+			["id"] = "8298:0:0:0:0",
+			["sc"] = 2,
+			["H3529"] = 40000,
+		},
+		["Highborne Footpads"] = {
+			["H3537"] = 85400,
+			["mr"] = 85400,
+		},
+		["Bloodspattered Gloves of the Boar"] = {
+			["H3543"] = 3999,
+			["mr"] = 3999,
+		},
+		["Regal Boots of the Eagle"] = {
+			["H3540"] = 51342,
+			["mr"] = 51342,
+		},
+		["Gossamer Belt of the Eagle"] = {
+			["H3543"] = 50000,
+			["mr"] = 50000,
+		},
+		["Fletcher's Gloves"] = {
+			["mr"] = 23997,
+			["cc"] = 4,
+			["id"] = "7348:0:0:0:0",
+			["H3539"] = 24899,
+			["H3543"] = 23997,
+			["sc"] = 2,
+		},
+		["Warbear Harness"] = {
+			["H3540"] = 199000,
+			["mr"] = 199000,
+		},
+		["Onyx Choker of Spirit"] = {
+			["H3540"] = 64752,
+			["mr"] = 64752,
+		},
+		["Champion's Cape of Agility"] = {
+			["H3537"] = 19200,
+			["mr"] = 19200,
+		},
+		["Warmonger's Cloak of the Wolf"] = {
+			["H3543"] = 9000,
+			["mr"] = 9000,
+		},
+		["Defender Bracers of the Monkey"] = {
+			["H3537"] = 10000,
+			["mr"] = 10000,
+		},
+		["Pattern: Flarecore Wraps"] = {
+			["H3539"] = 989000,
+			["cc"] = 9,
+			["H3540"] = 1320000,
+			["id"] = "18265:0:0:0:0",
+			["sc"] = 2,
+			["H3543"] = 1147499,
+			["mr"] = 1147499,
+		},
+		["Garona: A Study on Stealth and Treachery"] = {
+			["H3540"] = 9800,
+			["mr"] = 4900,
+			["H3543"] = 4900,
+			["H3539"] = 19600,
+		},
+		["Grunt's Belt of the Boar"] = {
+			["H3539"] = 8967,
+			["mr"] = 8967,
+		},
+		["Rune Sword of the Bear"] = {
+			["H3540"] = 82201,
+			["mr"] = 82201,
+			["H3539"] = 39999,
+		},
+		["Stormbringer Belt"] = {
+			["H3540"] = 89500,
+			["mr"] = 89500,
+			["H3539"] = 41600,
+		},
+		["Recipe: Carrion Surprise"] = {
+			["H3543"] = 52499,
+			["mr"] = 52499,
+		},
+		["Greenstone Circle of Regeneration"] = {
+			["H3543"] = 50000,
+			["mr"] = 50000,
+		},
+		["Battlesmasher of Power"] = {
+			["H3537"] = 12340,
+			["mr"] = 12340,
+		},
+		["Short Bastard Sword of the Wolf"] = {
+			["H3537"] = 32525,
+			["mr"] = 32525,
+		},
+		["Prospector's Cloak"] = {
+			["H3539"] = 5539,
+			["mr"] = 5539,
+		},
+		["Barbaric Battle Axe of the Wolf"] = {
+			["H3543"] = 15000,
+			["mr"] = 15000,
+		},
+		["Schematic: Goblin Land Mine"] = {
+			["H3540"] = 24799,
+			["mr"] = 11600,
+			["H3543"] = 11600,
+			["H3539"] = 29999,
+		},
+		["Schematic: Catseye Ultra Goggles"] = {
+			["H3540"] = 69500,
+			["mr"] = 34125,
+			["H3543"] = 34125,
+			["H3539"] = 69900,
+		},
+		["Elegant Gloves of Fiery Wrath"] = {
+			["H3540"] = 179000,
+			["mr"] = 89500,
+			["H3543"] = 89500,
+			["H3539"] = 179499,
+		},
+		["Stardust Band"] = {
+			["H3537"] = 67777,
+			["mr"] = 67777,
+		},
+		["Goblin Nutcracker of Healing"] = {
+			["H3543"] = 60000,
+			["mr"] = 60000,
+		},
+		["Ironfeather Breastplate"] = {
+			["H3539"] = 699999,
+			["mr"] = 699999,
+		},
+		["Tender Crocolisk Meat"] = {
+			["H3540"] = 334,
+			["H3539"] = 355,
+			["H3543"] = 73,
+			["mr"] = 73,
+		},
+		["Silver-linked Footguards"] = {
+			["H3537"] = 145000,
+			["mr"] = 145000,
+		},
+		["Dreamscale"] = {
+			["H3537"] = 2000000,
+			["mr"] = 2000000,
+		},
+		["Defender Gauntlets of the Gorilla"] = {
+			["H3540"] = 20000,
+			["mr"] = 6000,
+			["H3543"] = 6000,
+		},
+		["Cat Carrier (White Kitten)"] = {
+			["H3540"] = 999998,
+			["mr"] = 999998,
+		},
+		["Drakewing Bands"] = {
+			["H3537"] = 30131,
+			["mr"] = 30131,
+		},
+		["Blue Dragonscale"] = {
+			["H3540"] = 1949,
+			["H3539"] = 2305,
+			["mr"] = 1949,
+		},
+		["Swashbuckler's Leggings of the Bear"] = {
+			["H3539"] = 142174,
+			["mr"] = 142174,
+		},
+		["Baked Salmon"] = {
+			["H3540"] = 10000,
+			["H3539"] = 10000,
+			["H3543"] = 6300,
+			["mr"] = 6300,
+		},
+		["Twilight Robe of the Owl"] = {
+			["H3537"] = 12500,
+			["mr"] = 12500,
+		},
+		["Watcher's Cap of the Owl"] = {
+			["H3537"] = 29999,
+			["mr"] = 29999,
+		},
+		["Unbridled Leggings"] = {
+			["H3543"] = 89999,
+			["mr"] = 89999,
+		},
+		["Twilight Gloves of the Falcon"] = {
+			["H3543"] = 34986,
+			["mr"] = 34986,
+		},
+		["Elixir of Greater Defense"] = {
+			["H3540"] = 12407,
+			["H3539"] = 12500,
+			["H3543"] = 9698,
+			["mr"] = 9698,
+		},
+		["Bloodspattered Sabatons of the Whale"] = {
+			["H3537"] = 8500,
+			["mr"] = 8500,
+		},
+		["Massive Mojo"] = {
+			["H3540"] = 2792,
+			["mr"] = 1995,
+			["H3543"] = 1995,
+			["H3539"] = 3899,
+		},
+		["Recipe: Gingerbread Cookie"] = {
+			["H3540"] = 189000,
+			["H3539"] = 280694,
+			["H3543"] = 200000,
+			["mr"] = 200000,
+		},
+		["The Greatest Race of Hunters"] = {
+			["H3540"] = 14800,
+			["mr"] = 9594,
+			["H3543"] = 9594,
+			["H3539"] = 16799,
+		},
+		["High Councillor's Cloak of the Whale"] = {
+			["H3540"] = 115126,
+			["mr"] = 115126,
+		},
+		["Deviate Scale Gloves"] = {
+			["H3537"] = 221333,
+			["mr"] = 221333,
+		},
+		["Crusader Bow of the Eagle"] = {
+			["H3537"] = 20000,
+			["mr"] = 20000,
+		},
+		["Greenstone Circle of Stamina"] = {
+			["H3537"] = 13500,
+			["mr"] = 13500,
+		},
+		["Heraldic Boots"] = {
+			["H3543"] = 25565,
+			["mr"] = 25565,
+		},
+		["Revenant Bracers of the Boar"] = {
+			["H3537"] = 100000,
+			["mr"] = 100000,
+		},
+		["Thick Scale Breastplate of the Bear"] = {
+			["H3537"] = 8800,
+			["mr"] = 8800,
+		},
+		["Red Hakkari Bijou"] = {
+			["H3540"] = 29398,
+			["H3539"] = 24526,
+			["H3543"] = 24400,
+			["mr"] = 24400,
+		},
+		["Jasper Link of Frost Resistance"] = {
+			["H3543"] = 999900,
+			["mr"] = 999900,
+		},
+		["Edged Bastard Sword of the Tiger"] = {
+			["mr"] = 5000,
+			["H3543"] = 5000,
+			["H3539"] = 5000,
+		},
+		["Shredder Operating Manual - Page 4"] = {
+			["sc"] = 0,
+			["H3539"] = 1379,
+			["cc"] = 15,
+			["id"] = "16648:0:0:0:0",
+			["H3540"] = 5000,
+			["mr"] = 3400,
+			["H3543"] = 3400,
+			["H3542"] = 4350,
+		},
+		["Recipe: Slitherskin Mackerel"] = {
+			["mr"] = 38199,
+			["H3537"] = 38200,
+			["L3537"] = 38199,
+		},
+		["Lesser Mystic Essence"] = {
+			["mr"] = 980,
+			["H3539"] = 786,
+			["cc"] = 7,
+			["H3540"] = 753,
+			["id"] = "11134:0:0:0:0",
+			["L3539"] = 779,
+			["H3543"] = 980,
+			["sc"] = 0,
+		},
+		["Sanguine Handwraps"] = {
+			["H3537"] = 4000,
+			["mr"] = 4000,
+		},
+		["Raider's Legguards of the Boar"] = {
+			["H3537"] = 3400,
+			["mr"] = 3400,
+		},
+		["Scroll of Stamina II"] = {
+			["H3539"] = 2449,
+			["mr"] = 2449,
+		},
+		["Plans: Gemmed Copper Gauntlets"] = {
+			["H3539"] = 4871,
+			["H3543"] = 3997,
+			["mr"] = 3997,
+		},
+		["Resplendent Sarong of Healing"] = {
+			["H3537"] = 150000,
+			["mr"] = 150000,
+		},
+		["Harpy Needler of the Whale"] = {
+			["H3543"] = 68528,
+			["mr"] = 68528,
+		},
+		["Merciless Gauntlets of the Bear"] = {
+			["H3540"] = 90000,
+			["mr"] = 60000,
+			["H3543"] = 60000,
+		},
+		["Swashbuckler's Cape of Agility"] = {
+			["H3543"] = 100000,
+			["mr"] = 100000,
+		},
+		["Pridelord Bands"] = {
+			["H3537"] = 100000,
+			["mr"] = 100000,
+		},
+		["Lupine Cord of the Monkey"] = {
+			["H3537"] = 5517,
+			["mr"] = 5517,
+		},
+		["Sorcerer Slippers of the Whale"] = {
+			["H3543"] = 82256,
+			["mr"] = 82256,
+		},
+		["Scroll: Create Scepter of Beckoning"] = {
+			["H3543"] = 700000,
+			["mr"] = 700000,
+		},
+		["Solstice Staff of the Monkey"] = {
+			["H3537"] = 137783,
+			["mr"] = 137783,
+		},
+		["Schematic: Deepdive Helmet"] = {
+			["H3539"] = 65499,
+			["H3543"] = 94500,
+			["mr"] = 94500,
+		},
+		["Mithril Shield Spike"] = {
+			["H3537"] = 54472,
+			["mr"] = 54472,
+		},
+		["The Ziggler"] = {
+			["mr"] = 109500,
+			["H3543"] = 109500,
+			["H3539"] = 129999,
+		},
+		["Defender Boots of the Gorilla"] = {
+			["H3539"] = 11256,
+			["mr"] = 11256,
+		},
+		["Ornate Mithril Breastplate"] = {
+			["H3537"] = 86302,
+			["mr"] = 86302,
+		},
+		["Swashbuckler's Leggings of Power"] = {
+			["H3543"] = 366641,
+			["mr"] = 366641,
+		},
+		["Gothic Plate Gauntlets of Strength"] = {
+			["H3537"] = 32392,
+			["mr"] = 32392,
+		},
+		["Battle Slayer of the Tiger"] = {
+			["H3539"] = 88800,
+			["mr"] = 88800,
+		},
+		["High Councillor's Pants of the Owl"] = {
+			["H3543"] = 300000,
+			["mr"] = 300000,
+		},
+		["Blush Ember Ring"] = {
+			["mr"] = 199000,
+			["H3543"] = 199000,
+			["H3539"] = 97975,
+		},
+		["Spectral Necklace of Agility"] = {
+			["H3537"] = 85000,
+			["mr"] = 85000,
+		},
+		["Eight of Portals"] = {
+			["mr"] = 47678,
+			["H3543"] = 47678,
+			["H3539"] = 60000,
+		},
+		["Bloodspattered Shield of Agility"] = {
+			["H3537"] = 3200,
+			["mr"] = 3200,
+		},
+		["Flask of Big Mojo"] = {
+			["H3539"] = 10642,
+			["cc"] = 7,
+			["sc"] = 0,
+			["H3540"] = 12000,
+			["id"] = "8152:0:0:0:0",
+			["H3543"] = 10000,
+			["mr"] = 10000,
+		},
+		["Pattern: Devilsaur Leggings"] = {
+			["H3540"] = 66000,
+			["mr"] = 49000,
+			["H3543"] = 49000,
+		},
+		["Shadowcat Hide"] = {
+			["H3540"] = 1299,
+			["H3539"] = 1290,
+			["H3543"] = 2350,
+			["mr"] = 2350,
+		},
+		["Selenium Loop of the Owl"] = {
+			["H3540"] = 158461,
+			["mr"] = 158461,
+			["H3539"] = 133333,
+		},
+		["Firebloom"] = {
+			["H3539"] = 9899,
+			["sc"] = 0,
+			["H3540"] = 7800,
+			["id"] = "4625:0:0:0:0",
+			["cc"] = 7,
+			["H3543"] = 7000,
+			["mr"] = 7000,
+		},
+		["Dalaran Wizard's Robe"] = {
+			["H3543"] = 57300,
+			["mr"] = 57300,
+		},
+		["Native Pants of the Eagle"] = {
+			["H3539"] = 5501,
+			["mr"] = 5501,
+		},
+		["Green Hills of Stranglethorn - Page 18"] = {
+			["H3540"] = 894,
+			["H3539"] = 3800,
+			["H3543"] = 800,
+			["mr"] = 800,
+		},
+		["Solid Blasting Powder"] = {
+			["sc"] = 1,
+			["H3539"] = 7300,
+			["cc"] = 7,
+			["id"] = "10505:0:0:0:0",
+			["H3540"] = 7223,
+			["mr"] = 9115,
+			["H3543"] = 9115,
+			["H3542"] = 9400,
+		},
+		["Bottom Half of Advanced Armorsmithing: Volume II"] = {
+			["H3539"] = 17999,
+			["H3543"] = 16600,
+			["mr"] = 16600,
+		},
+		["Bandit Gloves of Spirit"] = {
+			["H3543"] = 13422,
+			["mr"] = 13422,
+		},
+		["Scouting Gloves of the Wolf"] = {
+			["H3540"] = 50000,
+			["mr"] = 50000,
+		},
+		["Polished Zweihander of the Tiger"] = {
+			["H3540"] = 11989,
+			["mr"] = 25100,
+			["H3543"] = 25100,
+		},
+		["Standard Scope"] = {
+			["H3540"] = 14674,
+			["mr"] = 3335,
+			["H3543"] = 3335,
+		},
+		["Blackforge Breastplate"] = {
+			["H3537"] = 27285,
+			["mr"] = 27285,
+		},
+		["Black Mageweave Gloves"] = {
+			["H3539"] = 8000,
+			["cc"] = 4,
+			["id"] = "10003:0:0:0:0",
+			["mr"] = 7508,
+			["H3540"] = 7508,
+			["sc"] = 1,
+		},
+		["Recipe: Lesser Stoneshield Potion"] = {
+			["H3540"] = 28204,
+			["mr"] = 19999,
+			["H3543"] = 19999,
+			["H3539"] = 30175,
+		},
+		["Weak Troll's Blood Potion"] = {
+			["H3540"] = 1095,
+			["mr"] = 1990,
+			["H3543"] = 1990,
+			["H3539"] = 1097,
+		},
+		["Formula: Enchant Bracer - Lesser Deflection"] = {
+			["H3537"] = 59222,
+			["mr"] = 59222,
+		},
+		["Mageweave Bandage"] = {
+			["H3543"] = 4875,
+			["mr"] = 4875,
+		},
+		["Sanguine Star"] = {
+			["H3543"] = 20000,
+			["mr"] = 20000,
+		},
+		["Dwarven Magestaff of Healing"] = {
+			["H3537"] = 19932,
+			["mr"] = 19932,
+		},
+		["Battering Hammer of the Whale"] = {
+			["H3540"] = 10000,
+			["mr"] = 10000,
+		},
+		["Pattern: Truefaith Gloves"] = {
+			["mr"] = 29500,
+			["cc"] = 9,
+			["id"] = "7091:0:0:0:0",
+			["sc"] = 2,
+			["H3529"] = 29500,
+		},
+		["Defender Boots of the Bear"] = {
+			["mr"] = 20000,
+			["cc"] = 4,
+			["id"] = "6573:0:0:1186:0",
+			["sc"] = 3,
+			["H3542"] = 20000,
+		},
+		["Stockade Pauldrons"] = {
+			["H3540"] = 300000,
+			["H3539"] = 100000,
+			["H3543"] = 299999,
+			["mr"] = 299999,
+		},
+		["Native Pants of the Whale"] = {
+			["mr"] = 4000,
+			["H3539"] = 4000,
+		},
+		["Duskwoven Pants of Nature Resistance"] = {
+			["H3537"] = 1500000,
+			["mr"] = 1500000,
+		},
+		["Wanderer's Belt of the Eagle"] = {
+			["H3539"] = 40000,
+			["mr"] = 40000,
+		},
+		["Wrangler's Gloves of Defense"] = {
+			["H3540"] = 4000,
+			["mr"] = 4000,
+		},
+		["Coarse Gorilla Hair"] = {
+			["H3540"] = 1177,
+			["mr"] = 1177,
+		},
+		["Imperial Red Pants"] = {
+			["H3537"] = 27691,
+			["mr"] = 27691,
+		},
+		["Mystic's Cape"] = {
+			["H3537"] = 1300,
+			["mr"] = 1300,
+		},
+		["Greater Fire Protection Potion"] = {
+			["H3540"] = 74697,
+			["H3539"] = 62494,
+			["H3543"] = 74997,
+			["mr"] = 74997,
+		},
+		["Silverleaf"] = {
+			["L3542"] = 15,
+			["id"] = "765:0:0:0:0",
+			["H3542"] = 24,
+			["H3539"] = 30,
+			["sc"] = 0,
+			["mr"] = 13,
+			["cc"] = 7,
+			["H3543"] = 13,
+			["H3540"] = 12,
+		},
+		["Lesser Bloodstone Ore"] = {
+			["mr"] = 916,
+			["cc"] = 12,
+			["id"] = "4278:0:0:0:0",
+			["H3543"] = 916,
+			["sc"] = 0,
+		},
+		["Barbaric Battle Axe of the Eagle"] = {
+			["H3539"] = 6900,
+			["cc"] = 2,
+			["H3540"] = 16464,
+			["id"] = "3195:0:0:845:0",
+			["sc"] = 1,
+			["mr"] = 16464,
+		},
+		["Sentinel Girdle of the Bear"] = {
+			["mr"] = 42340,
+			["cc"] = 4,
+			["id"] = "7448:0:0:1196:0",
+			["sc"] = 2,
+			["H3542"] = 42340,
+		},
+		["Sleeveless T-Shirt"] = {
+			["H3540"] = 2666,
+			["mr"] = 2666,
+		},
+		["Sorcerer Mantle of the Eagle"] = {
+			["H3540"] = 15692,
+			["mr"] = 15692,
+		},
+		["Bloodwoven Cloak of the Whale"] = {
+			["H3540"] = 12132,
+			["mr"] = 12132,
+			["H3543"] = 12132,
+		},
+		["Knightly Longsword of Strength"] = {
+			["H3540"] = 19999,
+			["mr"] = 19999,
+		},
+		["Pattern: Spider Belt"] = {
+			["H3540"] = 30380,
+			["H3539"] = 79999,
+			["H3543"] = 3798,
+			["mr"] = 3798,
+		},
+		["Jouster's Crest"] = {
+			["H3537"] = 15000,
+			["mr"] = 15000,
+		},
+		["Eternal Cloak of Healing"] = {
+			["H3537"] = 205223,
+			["mr"] = 205223,
+		},
+		["Hyperion Vambraces of Fire Resistance"] = {
+			["H3537"] = 56385,
+			["mr"] = 56385,
+		},
+		["Mighty Boots of the Monkey"] = {
+			["H3540"] = 135577,
+			["mr"] = 152276,
+			["H3543"] = 152276,
+		},
+		["Recipe: Great Rage Potion"] = {
+			["H3543"] = 13900,
+			["mr"] = 13900,
+		},
+		["Twin-bladed Axe of Strength"] = {
+			["H3537"] = 50023,
+			["mr"] = 50023,
+		},
+		["Three of Warlords"] = {
+			["H3540"] = 40000,
+			["mr"] = 34008,
+			["H3543"] = 34008,
+		},
+		["Plans: Corruption"] = {
+			["mr"] = 99999,
+			["H3537"] = 100000,
+			["L3537"] = 99999,
+		},
+		["Opulent Crown of the Eagle"] = {
+			["H3543"] = 70957,
+			["mr"] = 70957,
+		},
+		["Dark Rune"] = {
+			["H3540"] = 155900,
+			["H3539"] = 178000,
+			["H3543"] = 149900,
+			["mr"] = 149900,
+		},
+		["Frost Oil"] = {
+			["H3540"] = 59499,
+			["H3539"] = 64000,
+			["H3543"] = 51499,
+			["mr"] = 51499,
+		},
+		["Fishing Tournament!"] = {
+			["mr"] = 129993,
+			["H3539"] = 129993,
+		},
+		["Potent Bands of the Monkey"] = {
+			["H3537"] = 20000,
+			["mr"] = 20000,
+		},
+		["Pattern: Hillman's Leather Vest"] = {
+			["mr"] = 4498,
+			["sc"] = 1,
+			["H3540"] = 4900,
+			["cc"] = 9,
+			["H3543"] = 4498,
+			["id"] = "4293:0:0:0:0",
+		},
+		["Infantry Tunic of the Boar"] = {
+			["H3537"] = 2200,
+			["mr"] = 2200,
+		},
+		["Sardonyx Knuckle of Nature Resistance"] = {
+			["mr"] = 2847495,
+			["H3543"] = 2847495,
+			["H3539"] = 2202468,
+		},
+		["Ruthless Shiv"] = {
+			["H3540"] = 80000,
+			["mr"] = 70000,
+			["H3543"] = 70000,
+		},
+		["Edged Bastard Sword of the Bear"] = {
+			["H3539"] = 6900,
+			["mr"] = 6900,
+		},
+		["Crusader's Gauntlets of the Eagle"] = {
+			["H3537"] = 20000,
+			["mr"] = 20000,
+		},
+		["Discolored Worg Heart"] = {
+			["cc"] = 7,
+			["H3539"] = 638,
+			["L3543"] = 642,
+			["id"] = "3164:0:0:0:0",
+			["H3540"] = 630,
+			["sc"] = 0,
+			["H3543"] = 644,
+			["mr"] = 642,
+		},
+		["Recipe: Smoked Sagefish"] = {
+			["mr"] = 23500,
+			["H3543"] = 23500,
+			["H3539"] = 13495,
+		},
+		["Avenger's Armor"] = {
+			["H3537"] = 245000,
+			["mr"] = 245000,
+		},
+		["Scaled Leather Belt of the Wolf"] = {
+			["H3543"] = 4400,
+			["mr"] = 4400,
+		},
+		["Azure Silk Gloves"] = {
+			["mr"] = 24999,
+			["sc"] = 1,
+			["id"] = "4319:0:0:0:0",
+			["H3543"] = 24999,
+			["cc"] = 4,
+		},
+		["Renegade Pauldrons of Stamina"] = {
+			["H3540"] = 49212,
+			["mr"] = 55656,
+			["H3543"] = 55656,
 		},
 		["Arcanist Belt"] = {
-			["mr"] = 990000,
-			["sc"] = 1,
-			["id"] = "16802:0:0:0:0",
+			["mr"] = 1197500,
 			["cc"] = 4,
 			["H3540"] = 990000,
+			["id"] = "16802:0:0:0:0",
+			["H3543"] = 1197500,
+			["sc"] = 1,
 		},
-		["Pattern: Murloc Scale Belt"] = {
-			["H3540"] = 1915,
-			["mr"] = 1915,
+		["Scroll of Spirit"] = {
+			["mr"] = 794,
+			["H3543"] = 794,
+			["H3539"] = 949,
 		},
 		["Nightshade Spaulders of the Monkey"] = {
 			["H3537"] = 57700,
@@ -1257,26 +9379,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Shadowgem"] = {
 			["H3540"] = 319,
-			["mr"] = 319,
+			["mr"] = 200,
+			["H3543"] = 200,
 			["H3539"] = 330,
 		},
-		["Sparkleshell Belt of the Bear"] = {
-			["H3537"] = 15000,
-			["mr"] = 15000,
+		["Sorcerer Hat of Healing"] = {
+			["H3540"] = 50000,
+			["mr"] = 29999,
+			["H3543"] = 29999,
+			["H3539"] = 124191,
 		},
-		["Wicked Leather Headband"] = {
-			["mr"] = 48749,
-			["H3539"] = 48749,
-		},
-		["Cindercloth Cloak"] = {
-			["H3540"] = 139997,
-			["mr"] = 139997,
-			["H3539"] = 159998,
-		},
-		["Plans: Hardened Iron Shortsword"] = {
-			["H3540"] = 69949,
-			["mr"] = 69949,
-			["H3539"] = 69000,
+		["Basilisk Bone"] = {
+			["H3537"] = 220000,
+			["mr"] = 220000,
 		},
 		["Grizzly Jerkin of Intellect"] = {
 			["H3537"] = 10170,
@@ -1286,26 +9401,29 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 214200,
 			["mr"] = 214200,
 		},
-		["Murloc Fin"] = {
-			["mr"] = 159,
-			["H3539"] = 159,
+		["Rough Arrow"] = {
+			["H3537"] = 439,
+			["mr"] = 439,
 		},
-		["Scroll of Spirit II"] = {
-			["H3540"] = 1390,
-			["H3539"] = 1464,
-			["mr"] = 1390,
+		["Hunting Bow"] = {
+			["mr"] = 7000,
+			["cc"] = 2,
+			["id"] = "8180:0:0:0:0",
+			["sc"] = 2,
+			["H3542"] = 7000,
 		},
 		["High Councillor's Cloak of the Eagle"] = {
 			["H3540"] = 250000,
 			["mr"] = 250000,
+			["H3543"] = 250000,
 		},
-		["Deadly Blunderbuss"] = {
-			["H3539"] = 33230,
-			["mr"] = 33230,
-		},
-		["Skinning Knife"] = {
-			["mr"] = 9395,
-			["H3539"] = 9395,
+		["Conjurer's Mantle of Arcane Wrath"] = {
+			["H3539"] = 33428,
+			["cc"] = 4,
+			["H3540"] = 9000,
+			["id"] = "9850:0:0:1809:0",
+			["sc"] = 1,
+			["mr"] = 9000,
 		},
 		["Buccaneer's Pants of Healing"] = {
 			["H3540"] = 180000,
@@ -1327,15 +9445,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Mageflame Cloak"] = {
 			["H3540"] = 70500,
 			["H3539"] = 73125,
-			["mr"] = 70500,
+			["H3543"] = 77024,
+			["mr"] = 77024,
 		},
 		["Heavy Quiver"] = {
-			["mr"] = 28705,
 			["H3539"] = 28705,
-		},
-		["Lunar Belt of the Owl"] = {
-			["H3537"] = 47850,
-			["mr"] = 47850,
+			["mr"] = 28705,
 		},
 		["Banded Bracers of the Bear"] = {
 			["H3537"] = 8999,
@@ -1348,11 +9463,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Witching Stave"] = {
 			["H3540"] = 139500,
 			["H3539"] = 298000,
-			["mr"] = 139500,
+			["H3543"] = 160000,
+			["mr"] = 160000,
 		},
 		["Fine Longbow"] = {
-			["H3537"] = 19090,
-			["mr"] = 19090,
+			["H3543"] = 19400,
+			["mr"] = 19400,
 		},
 		["Skeletal Club"] = {
 			["H3540"] = 136403,
@@ -1363,243 +9479,136 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 30000,
 			["H3539"] = 30000,
 		},
-		["Formula: Enchant Weapon - Icy Chill"] = {
-			["H3540"] = 145742,
-			["mr"] = 145742,
-		},
 		["Warmonger's Leggings of the Whale"] = {
 			["H3537"] = 35000,
 			["mr"] = 35000,
 		},
-		["Curved Dagger of Power"] = {
-			["mr"] = 2000,
-			["H3539"] = 2000,
-		},
-		["Brackwater Shield"] = {
-			["mr"] = 3900,
-			["H3537"] = 3999,
-			["L3537"] = 3900,
+		["Spider's Silk"] = {
+			["H3540"] = 6400,
+			["H3539"] = 6532,
+			["H3543"] = 6100,
+			["mr"] = 6100,
 		},
 		["Crest of Beckoning: Stone"] = {
 			["H3540"] = 45000,
 			["mr"] = 45000,
 		},
 		["Demonslayer"] = {
-			["mr"] = 79500,
 			["H3539"] = 79500,
-		},
-		["Flash Pellet"] = {
-			["H3537"] = 334,
-			["mr"] = 334,
-		},
-		["Knight's Pauldrons of the Bear"] = {
-			["H3539"] = 36878,
-			["mr"] = 36878,
+			["mr"] = 79500,
 		},
 		["Stonerender Gauntlets"] = {
 			["H3539"] = 299900,
-			["mr"] = 299900,
+			["H3543"] = 759999,
+			["mr"] = 759999,
 		},
 		["Twilight Boots of Arcane Wrath"] = {
-			["H3537"] = 118584,
-			["mr"] = 118584,
+			["H3543"] = 10000,
+			["mr"] = 10000,
 		},
-		["Light Leather"] = {
-			["H3539"] = 80,
-			["sc"] = 0,
-			["H3540"] = 142,
-			["cc"] = 7,
-			["mr"] = 142,
-			["id"] = "2318:0:0:0:0",
+		["Ranger Cord of the Whale"] = {
+			["H3539"] = 21881,
+			["mr"] = 21881,
 		},
-		["Decapitating Sword of the Bear"] = {
-			["H3540"] = 20000,
-			["mr"] = 20000,
-		},
-		["Bonecaster's Boots of Arcane Wrath"] = {
-			["mr"] = 142904,
+		["Sentinel Bracers of Healing"] = {
+			["mr"] = 26600,
 			["cc"] = 4,
-			["id"] = "14299:0:0:1815:0",
-			["H3539"] = 136289,
-			["sc"] = 1,
-			["H3540"] = 142904,
-		},
-		["Gift of Arthas"] = {
-			["H3540"] = 12599,
-			["H3539"] = 12600,
-			["mr"] = 12599,
-		},
-		["Oily Blackmouth"] = {
-			["H3540"] = 5100,
-			["H3539"] = 5900,
-			["mr"] = 5100,
-		},
-		["Decapitating Sword of Strength"] = {
-			["mr"] = 40000,
-			["cc"] = 2,
-			["id"] = "3740:0:0:24:0",
-			["sc"] = 7,
-			["H3542"] = 40000,
-		},
-		["Red Helper Box"] = {
-			["H3540"] = 66999,
-			["mr"] = 66999,
-		},
-		["Aurora Mantle"] = {
-			["mr"] = 7000,
-			["H3539"] = 7000,
-		},
-		["Devout Bracers"] = {
-			["mr"] = 180000,
-			["H3539"] = 180000,
-		},
-		["Burnished Girdle"] = {
-			["H3540"] = 4899,
-			["mr"] = 4899,
-			["H3539"] = 6500,
+			["id"] = "7447:0:0:2034:0",
+			["sc"] = 2,
+			["H3542"] = 26600,
 		},
 		["Azerothian Diamond"] = {
 			["H3540"] = 16599,
 			["H3539"] = 19599,
 			["mr"] = 16599,
 		},
-		["Elixir of Giant Growth"] = {
-			["H3540"] = 11999,
-			["mr"] = 11999,
+		["Heavy Sharpening Stone"] = {
+			["H3543"] = 1500,
+			["mr"] = 1500,
 		},
-		["Edged Bastard Sword of Strength"] = {
-			["H3540"] = 7168,
-			["mr"] = 7168,
+		["Raw Glossy Mightfish"] = {
+			["H3539"] = 232,
+			["mr"] = 232,
 		},
-		["Grimesilt Outhouse Key"] = {
-			["mr"] = 23043,
-			["H3539"] = 23043,
+		["Twilight Cultist Cowl"] = {
+			["H3540"] = 5600,
+			["H3539"] = 6900,
+			["H3543"] = 6698,
+			["mr"] = 6698,
+		},
+		["Phalanx Leggings of the Bear"] = {
+			["H3540"] = 20000,
+			["mr"] = 20000,
 		},
 		["Nobles Brand of the Bear"] = {
-			["mr"] = 25000,
 			["H3539"] = 25000,
+			["mr"] = 25000,
 		},
 		["Flask of Supreme Power"] = {
-			["mr"] = 1992500,
-			["cc"] = 0,
-			["H3540"] = 1992500,
 			["H3539"] = 2009340,
-			["id"] = "13512:0:0:0:0",
 			["sc"] = 0,
+			["H3540"] = 1992500,
+			["id"] = "13512:0:0:0:0",
+			["cc"] = 0,
+			["H3543"] = 2092499,
+			["mr"] = 2092499,
 		},
-		["Topaz Ring of Nature Resistance"] = {
-			["H3537"] = 1800000,
-			["mr"] = 1800000,
+		["Marsh Chain of the Monkey"] = {
+			["H3540"] = 24999,
+			["mr"] = 20000,
+			["H3543"] = 20000,
 		},
 		["Core Leather"] = {
-			["mr"] = 12599,
-			["sc"] = 0,
 			["cc"] = 7,
+			["H3539"] = 15099,
+			["sc"] = 0,
+			["mr"] = 10725,
 			["id"] = "17012:0:0:0:0",
 			["H3540"] = 19498,
 			["H3543"] = 12599,
-			["H3539"] = 15099,
+			["L3543"] = 10725,
 		},
-		["Bloodsoul Shoulders"] = {
-			["mr"] = 1699997,
-			["H3539"] = 1699997,
-		},
-		["Battlesmasher of the Monkey"] = {
-			["H3540"] = 9537,
-			["mr"] = 9537,
-		},
-		["Lunar Mantle of the Owl"] = {
-			["H3537"] = 96797,
-			["mr"] = 96797,
-		},
-		["Amethyst Band of Shadow Resistance"] = {
-			["H3540"] = 20707,
-			["mr"] = 20707,
-		},
-		["Black Dragonscale Shoulders"] = {
-			["H3537"] = 2200000,
-			["mr"] = 2200000,
+		["Thick Scale Crown of the Bear"] = {
+			["H3537"] = 20000,
+			["mr"] = 20000,
 		},
 		["Prospector's Buckler"] = {
 			["H3537"] = 4900,
 			["mr"] = 4900,
 		},
-		["Blesswind Hammer of Power"] = {
-			["mr"] = 77777,
-			["H3539"] = 77777,
-		},
 		["Recipe: Big Bear Steak"] = {
 			["H3540"] = 3997,
-			["mr"] = 3997,
+			["mr"] = 4200,
+			["H3543"] = 4200,
 			["H3539"] = 4100,
-		},
-		["Buccaneer's Cape of Arcane Wrath"] = {
-			["mr"] = 12956,
-			["cc"] = 4,
-			["id"] = "14167:0:0:1801:0",
-			["sc"] = 1,
-			["H3540"] = 12956,
-		},
-		["Pattern: Robe of the Void"] = {
-			["H3540"] = 69999,
-			["mr"] = 69999,
-		},
-		["Native Branch of the Eagle"] = {
-			["H3537"] = 5000,
-			["mr"] = 5000,
-		},
-		["Formula: Enchant Bracer - Minor Spirit"] = {
-			["H3539"] = 1995,
-			["mr"] = 1995,
-		},
-		["Merciless Gauntlets of the Monkey"] = {
-			["H3537"] = 120000,
-			["mr"] = 120000,
-		},
-		["Mooncloth"] = {
-			["H3540"] = 152124,
-			["H3539"] = 142000,
-			["mr"] = 152124,
 		},
 		["Merc Sword of Agility"] = {
 			["H3537"] = 50023,
 			["mr"] = 50023,
 		},
-		["Dwarven Hatchet of Stamina"] = {
-			["H3539"] = 6900,
-			["mr"] = 6900,
-		},
-		["Defender Tunic of the Boar"] = {
-			["H3537"] = 13872,
-			["mr"] = 13872,
-		},
-		["Hook Dagger of Healing"] = {
-			["mr"] = 2400,
-			["H3539"] = 2400,
-		},
 		["Imperfect Draenethyst Fragment"] = {
 			["H3540"] = 9041,
 			["H3539"] = 6199,
-			["mr"] = 9041,
+			["H3543"] = 5297,
+			["mr"] = 5297,
 		},
 		["Giantstalker's Bracers"] = {
 			["H3540"] = 1310000,
 			["H3539"] = 1490000,
-			["mr"] = 1310000,
+			["H3543"] = 1240000,
+			["mr"] = 1240000,
 		},
 		["Recipe: Elixir of Giant Growth"] = {
 			["H3540"] = 68799,
 			["H3539"] = 69999,
-			["mr"] = 68799,
+			["H3543"] = 20000,
+			["mr"] = 20000,
 		},
-		["Powerful Mojo"] = {
-			["H3540"] = 2600,
-			["mr"] = 2600,
-			["H3539"] = 4599,
-		},
-		["Twilight Cowl of Shadow Wrath"] = {
-			["mr"] = 20117,
-			["H3539"] = 20117,
+		["Recipe: Transmute Undeath to Water"] = {
+			["H3540"] = 5040000,
+			["H3539"] = 6990000,
+			["H3543"] = 8900000,
+			["mr"] = 8900000,
 		},
 		["Fiery War Axe"] = {
 			["mr"] = 200000,
@@ -1610,13 +9619,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 9999,
 			["mr"] = 9999,
 		},
-		["Sentinel Girdle of the Monkey"] = {
-			["H3537"] = 20000,
-			["mr"] = 20000,
-		},
-		["Bonelink Gauntlets of the Falcon"] = {
-			["H3537"] = 32500,
-			["mr"] = 32500,
+		["Birchwood Maul of Strength"] = {
+			["H3539"] = 11064,
+			["mr"] = 11064,
 		},
 		["Knight's Headguard of the Bear"] = {
 			["H3537"] = 19988,
@@ -1630,71 +9635,44 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 452230,
 			["mr"] = 452230,
 		},
-		["Abjurer's Hood of the Eagle"] = {
-			["H3537"] = 43167,
-			["mr"] = 43167,
-		},
-		["Impenetrable Bindings of Healing"] = {
-			["H3537"] = 160238,
-			["mr"] = 160238,
-		},
 		["Simple Black Dress"] = {
-			["mr"] = 263574,
+			["mr"] = 53500,
+			["H3543"] = 53500,
 			["H3539"] = 263574,
 		},
-		["Flarecore Mantle"] = {
-			["mr"] = 2320000,
-			["sc"] = 1,
-			["id"] = "16980:0:0:0:0",
-			["H3539"] = 2319999,
-			["H3543"] = 2320000,
-			["cc"] = 4,
-		},
-		["Pattern: Barbaric Belt"] = {
-			["mr"] = 300000,
-			["H3539"] = 300000,
+		["Rogue's Diary"] = {
+			["H3540"] = 1818085,
+			["mr"] = 1818085,
 		},
 		["Brigade Leggings of Spirit"] = {
 			["H3537"] = 17500,
 			["mr"] = 17500,
 		},
 		["Knight's Legguards of the Tiger"] = {
-			["mr"] = 22316,
 			["H3539"] = 22316,
-		},
-		["Gaea's Cloak of Shadow Wrath"] = {
-			["H3540"] = 50000,
-			["mr"] = 50000,
+			["mr"] = 22316,
 		},
 		["Recipe: Lobster Stew"] = {
 			["H3540"] = 39500,
-			["mr"] = 39500,
+			["mr"] = 42600,
+			["H3543"] = 42600,
 			["H3539"] = 89998,
 		},
-		["Bonecaster's Belt of the Whale"] = {
-			["H3540"] = 33419,
-			["mr"] = 33419,
-		},
-		["Serpent Slicer"] = {
-			["H3539"] = 175500,
-			["mr"] = 175500,
-		},
-		["Shadowcraft Belt"] = {
-			["H3540"] = 248000,
-			["H3539"] = 159999,
-			["mr"] = 248000,
+		["Chief Brigadier Shield"] = {
+			["H3537"] = 56000,
+			["mr"] = 56000,
 		},
 		["Soothing Spices"] = {
-			["mr"] = 3399,
 			["H3539"] = 3399,
+			["mr"] = 3399,
 		},
 		["Corehound Belt"] = {
 			["mr"] = 3994200,
-			["sc"] = 2,
-			["id"] = "19162:0:0:0:0",
 			["cc"] = 4,
-			["H3543"] = 3994200,
 			["H3540"] = 2097228,
+			["id"] = "19162:0:0:0:0",
+			["H3543"] = 3994200,
+			["sc"] = 2,
 		},
 		["Imposing Boots of the Eagle"] = {
 			["H3537"] = 90669,
@@ -1706,64 +9684,42 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Gordok Ogre Suit"] = {
 			["H3540"] = 269363,
-			["mr"] = 269363,
+			["mr"] = 265999,
+			["H3543"] = 265999,
 		},
 		["Star Ruby"] = {
 			["H3540"] = 9200,
 			["H3539"] = 4999,
-			["mr"] = 9200,
+			["H3543"] = 5700,
+			["mr"] = 5700,
 		},
 		["Scepter of Beckoning: Fire"] = {
 			["H3537"] = 190000,
 			["mr"] = 190000,
 		},
-		["Bard's Trousers of the Eagle"] = {
-			["H3537"] = 12836,
-			["mr"] = 12836,
-		},
-		["Councillor's Pants of Fiery Wrath"] = {
-			["H3537"] = 200000,
-			["mr"] = 200000,
-		},
-		["Pattern: Felcloth Hood"] = {
-			["H3540"] = 19599,
-			["H3539"] = 48300,
-			["mr"] = 19599,
+		["Durable Pants of the Whale"] = {
+			["mr"] = 14000,
+			["H3537"] = 14142,
+			["L3537"] = 14000,
 		},
 		["Ridge Cleaver of the Whale"] = {
 			["H3540"] = 33060,
 			["mr"] = 33060,
 		},
-		["Chieftain's Gloves of the Whale"] = {
-			["H3537"] = 25600,
-			["mr"] = 25600,
+		["Dreadmist Wraps"] = {
+			["H3540"] = 139998,
+			["mr"] = 69900,
+			["H3543"] = 69900,
+			["H3539"] = 180000,
 		},
-		["Lodestone Hoop of Regeneration"] = {
-			["H3537"] = 30054,
-			["mr"] = 30054,
-		},
-		["White Woolen Dress"] = {
-			["H3537"] = 124892,
-			["mr"] = 124892,
-		},
-		["Mighty Leggings of the Eagle"] = {
-			["H3537"] = 50000,
+		["Conjurer's Breeches of the Eagle"] = {
+			["H3540"] = 50000,
 			["mr"] = 50000,
+			["H3539"] = 50000,
 		},
-		["Searing Blade"] = {
-			["H3540"] = 99998,
-			["mr"] = 99998,
-		},
-		["Shredder Operating Manual - Page 1"] = {
-			["mr"] = 4899,
-			["cc"] = 15,
-			["id"] = "16645:0:0:0:0",
-			["sc"] = 0,
-			["H3542"] = 4899,
-		},
-		["Redbeard Crest"] = {
-			["H3540"] = 59500,
-			["mr"] = 59500,
+		["Pattern: Crimson Silk Robe"] = {
+			["H3543"] = 189999,
+			["mr"] = 189999,
 		},
 		["Wanderer's Cloak of the Monkey"] = {
 			["H3537"] = 50000,
@@ -1774,61 +9730,30 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 20499,
 			["H3539"] = 21448,
 		},
-		["Julie's Dagger"] = {
-			["H3540"] = 140000,
-			["H3539"] = 155000,
-			["mr"] = 140000,
-		},
-		["Pattern: Runic Leather Gauntlets"] = {
-			["H3539"] = 5899,
-			["sc"] = 1,
-			["id"] = "15731:0:0:0:0",
-			["cc"] = 9,
-			["mr"] = 5899,
-		},
-		["Imperial Leather Boots"] = {
-			["H3537"] = 30000,
-			["mr"] = 30000,
-		},
-		["Dreamless Sleep Potion"] = {
-			["H3540"] = 10399,
-			["H3539"] = 10600,
-			["mr"] = 10399,
-		},
-		["Red Wolf Meat"] = {
-			["H3540"] = 994,
-			["H3539"] = 180,
-			["mr"] = 994,
-		},
-		["Abyssal Cloth Pants of Restoration"] = {
-			["mr"] = 350000,
-			["H3539"] = 350000,
+		["Recipe: Murloc Fin Soup"] = {
+			["H3539"] = 99900,
+			["mr"] = 99900,
 		},
 		["Barbaric Loincloth"] = {
-			["mr"] = 1349,
-			["cc"] = 4,
-			["H3540"] = 1349,
 			["H3539"] = 2400,
-			["id"] = "3309:0:0:0:0",
 			["sc"] = 1,
+			["H3540"] = 1349,
+			["cc"] = 4,
+			["id"] = "3309:0:0:0:0",
+			["mr"] = 1349,
 		},
 		["Raider's Boots of the Eagle"] = {
 			["H3537"] = 4900,
 			["mr"] = 4900,
 		},
 		["Gold Power Core"] = {
-			["H3539"] = 3799,
-			["cc"] = 7,
 			["mr"] = 740,
+			["cc"] = 7,
+			["H3540"] = 3800,
 			["id"] = "10558:0:0:0:0",
 			["sc"] = 1,
 			["H3543"] = 740,
-			["H3540"] = 3800,
-		},
-		["Seven of Warlords"] = {
-			["H3540"] = 79000,
-			["H3539"] = 79500,
-			["mr"] = 79000,
+			["H3539"] = 3799,
 		},
 		["Sandals of the Insurgent"] = {
 			["mr"] = 28400,
@@ -1839,37 +9764,18 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 15050,
 			["mr"] = 15050,
 		},
-		["Nightsky Gloves"] = {
-			["mr"] = 9900,
-			["sc"] = 1,
-			["H3529"] = 9900,
-			["id"] = "4040:0:0:0:0",
-			["cc"] = 4,
-		},
 		["Traveler's Backpack"] = {
 			["H3540"] = 213000,
 			["H3539"] = 257000,
 			["mr"] = 213000,
 		},
-		["Commander's Vambraces of Nature Resistance"] = {
-			["mr"] = 2500000,
-			["H3539"] = 2500000,
-		},
 		["Pattern: Pink Mageweave Shirt"] = {
-			["mr"] = 80663,
-			["cc"] = 9,
-			["H3540"] = 80663,
 			["H3539"] = 62528,
-			["sc"] = 2,
+			["cc"] = 9,
 			["id"] = "10317:0:0:0:0",
-		},
-		["Watcher's Mantle of the Wolf"] = {
-			["H3537"] = 10000,
-			["mr"] = 10000,
-		},
-		["Harbinger Boots"] = {
-			["H3539"] = 90000,
-			["mr"] = 90000,
+			["H3540"] = 80663,
+			["sc"] = 2,
+			["mr"] = 80663,
 		},
 		["Crystalpine Stinger"] = {
 			["mr"] = 292498,
@@ -1878,31 +9784,16 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 18,
 			["H3542"] = 292498,
 		},
-		["Gallant Flamberge of the Tiger"] = {
-			["H3540"] = 88190,
-			["mr"] = 88190,
-			["H3539"] = 176118,
-		},
 		["Schematic: Sniper Scope"] = {
 			["H3540"] = 751000,
 			["mr"] = 751000,
 			["H3539"] = 1007500,
 		},
-		["Scorpion Sting"] = {
-			["mr"] = 80000,
-			["cc"] = 2,
-			["id"] = "1265:0:0:0:0",
-			["sc"] = 7,
-			["H3542"] = 80000,
-		},
-		["Snowman Kit"] = {
-			["H3540"] = 40400,
-			["mr"] = 40400,
-		},
 		["Sentry Cloak"] = {
 			["H3540"] = 155000,
 			["H3539"] = 155999,
-			["mr"] = 155000,
+			["H3543"] = 169500,
+			["mr"] = 169500,
 		},
 		["Resplendent Boots of Shadow Wrath"] = {
 			["H3537"] = 50000,
@@ -1910,7 +9801,8 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Spiked Club of the Eagle"] = {
 			["H3540"] = 1877,
-			["mr"] = 1877,
+			["mr"] = 7999,
+			["H3543"] = 7999,
 			["H3539"] = 1877,
 		},
 		["Ravager's Shield"] = {
@@ -1918,102 +9810,54 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 31000,
 			["L3537"] = 30999,
 		},
-		["Brawler's Harness"] = {
-			["H3540"] = 559954,
-			["mr"] = 559954,
-		},
 		["Punctured Voodoo Doll"] = {
 			["H3540"] = 18825,
 			["H3539"] = 28998,
-			["mr"] = 18825,
+			["H3543"] = 4300,
+			["mr"] = 4300,
 		},
-		["Hulking Cloak"] = {
-			["H3537"] = 6637,
-			["mr"] = 6637,
+		["Conjurer's Hood of Healing"] = {
+			["H3543"] = 36142,
+			["mr"] = 36142,
 		},
-		["Bindings of Elements"] = {
-			["H3539"] = 50000,
-			["mr"] = 50000,
-		},
-		["Twilight Cape of Healing"] = {
-			["H3537"] = 9900,
-			["mr"] = 9900,
-		},
-		["Pattern: Runic Leather Belt"] = {
-			["mr"] = 9199,
-			["cc"] = 9,
-			["id"] = "15745:0:0:0:0",
-			["H3540"] = 9199,
-			["sc"] = 1,
-		},
-		["Vilebranch Coin"] = {
-			["H3540"] = 3298,
-			["mr"] = 3298,
-			["H3539"] = 2900,
-		},
-		["Plans: Dazzling Mithril Rapier"] = {
-			["H3539"] = 7100,
-			["mr"] = 7100,
-		},
-		["Birchwood Maul of the Bear"] = {
-			["H3540"] = 2000,
-			["mr"] = 2000,
-			["H3539"] = 5000,
+		["Ravager's Woolies"] = {
+			["H3543"] = 25000,
+			["mr"] = 25000,
 		},
 		["Dragon Finger of the Whale"] = {
 			["H3540"] = 124999,
 			["mr"] = 124999,
 		},
-		["Regal Cloak of Shadow Wrath"] = {
-			["mr"] = 30739,
-			["H3539"] = 30739,
-		},
 		["Wanderer's Belt of the Boar"] = {
-			["mr"] = 30000,
 			["H3539"] = 30000,
+			["mr"] = 30000,
 		},
-		["Scroll of Protection III"] = {
-			["H3540"] = 1999,
-			["H3539"] = 2199,
-			["mr"] = 1999,
-		},
-		["Elixir of Detect Demon"] = {
-			["H3540"] = 1519,
-			["mr"] = 1519,
-			["H3539"] = 1519,
-		},
-		["Robes of Arcana"] = {
-			["mr"] = 69999,
-			["cc"] = 4,
-			["H3540"] = 69999,
-			["H3539"] = 72500,
-			["id"] = "5770:0:0:0:0",
-			["sc"] = 1,
+		["Renegade Pauldrons of the Whale"] = {
+			["H3540"] = 12000,
+			["mr"] = 12000,
+			["H3539"] = 50000,
 		},
 		["Kodo Meat"] = {
-			["mr"] = 239,
+			["mr"] = 397,
+			["H3543"] = 397,
 			["H3539"] = 239,
 		},
 		["Pattern: Dark Silk Shirt"] = {
 			["H3540"] = 71969,
-			["mr"] = 71969,
+			["mr"] = 57999,
+			["H3543"] = 57999,
 		},
-		["Sharp Claw"] = {
-			["H3540"] = 192,
-			["H3539"] = 248,
-			["mr"] = 192,
+		["Headhunter's Slippers of the Gorilla"] = {
+			["H3537"] = 37575,
+			["mr"] = 37575,
 		},
 		["Native Pants of Spirit"] = {
-			["mr"] = 7500,
 			["H3539"] = 7500,
+			["mr"] = 7500,
 		},
-		["Warlord's Axe of the Monkey"] = {
-			["H3537"] = 157952,
-			["mr"] = 157952,
-		},
-		["Razor Axe of Stamina"] = {
-			["H3537"] = 620880,
-			["mr"] = 620880,
+		["Mail Combat Leggings"] = {
+			["H3537"] = 12596,
+			["mr"] = 12596,
 		},
 		["Commander's Vambraces of Fire Resistance"] = {
 			["mr"] = 1250000,
@@ -2023,40 +9867,26 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 4,
 		},
 		["Wild Leather Helmet of the Eagle"] = {
-			["mr"] = 44444,
 			["H3539"] = 44444,
+			["mr"] = 44444,
 		},
 		["Prismatic Band of Shadow Resistance"] = {
-			["mr"] = 2500000,
 			["H3539"] = 2500000,
+			["mr"] = 2500000,
 		},
-		["Raw Black Truffle"] = {
-			["H3540"] = 600,
-			["mr"] = 600,
-			["H3539"] = 1050,
+		["Abyssal Cloth Slippers of Sorcery"] = {
+			["H3540"] = 80676,
+			["mr"] = 39999,
+			["H3543"] = 39999,
 		},
-		["Formula: Enchant Gloves - Advanced Herbalism"] = {
-			["mr"] = 289999,
-			["L3537"] = 289999,
-			["id"] = "11205:0:0:0:0",
-			["cc"] = 9,
-			["H3537"] = 290000,
-			["sc"] = 8,
+		["Holy Shroud"] = {
+			["H3540"] = 267000,
+			["mr"] = 192000,
+			["H3543"] = 192000,
 		},
-		["Pattern: Herbalist's Gloves"] = {
-			["H3539"] = 5000900,
-			["mr"] = 5000900,
-		},
-		["Ribsplitter of the Monkey"] = {
-			["mr"] = 474810,
-			["H3539"] = 474810,
-		},
-		["Pattern: Ghostweave Gloves"] = {
-			["mr"] = 26000,
-			["sc"] = 2,
-			["H3529"] = 26000,
-			["id"] = "14477:0:0:0:0",
-			["cc"] = 9,
+		["Truesilver Breastplate"] = {
+			["H3537"] = 249900,
+			["mr"] = 249900,
 		},
 		["Scaled Leather Boots of the Owl"] = {
 			["H3537"] = 10000,
@@ -2066,95 +9896,38 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 152464,
 			["mr"] = 152464,
 		},
-		["Wastewander Water Pouch"] = {
-			["H3540"] = 2998,
-			["mr"] = 2998,
-			["H3539"] = 9983,
+		["Phantom Blade"] = {
+			["H3537"] = 722360,
+			["mr"] = 722360,
 		},
 		["Raptor Hide Harness"] = {
-			["mr"] = 19000,
 			["H3539"] = 19000,
-		},
-		["Schematic: World Enlarger"] = {
-			["H3539"] = 46600,
-			["mr"] = 46600,
-		},
-		["Forest Tracker Epaulets"] = {
-			["mr"] = 405000,
-			["cc"] = 4,
-			["H3539"] = 574000,
-			["id"] = "2278:0:0:0:0",
-			["sc"] = 2,
-			["H3543"] = 405000,
-			["H3540"] = 560550,
-		},
-		["Mystical Belt of the Eagle"] = {
-			["H3537"] = 41000,
-			["mr"] = 41000,
-		},
-		["Harpy Needler of the Falcon"] = {
-			["H3537"] = 84926,
-			["mr"] = 84926,
-		},
-		["Schematic: Red Firework"] = {
-			["H3540"] = 68995,
-			["H3539"] = 59495,
-			["mr"] = 68995,
-		},
-		["Hillborne Axe of the Monkey"] = {
-			["H3537"] = 25000,
-			["mr"] = 25000,
-		},
-		["Mystic's Belt"] = {
-			["mr"] = 2500,
-			["H3539"] = 2500,
-		},
-		["Aboriginal Footwraps of the Eagle"] = {
-			["mr"] = 5525,
-			["H3539"] = 5525,
-		},
-		["Living Breastplate"] = {
-			["H3537"] = 1045500,
-			["mr"] = 1045500,
+			["mr"] = 19000,
 		},
 		["Goblin Rocket Helmet"] = {
 			["H3540"] = 519000,
 			["H3539"] = 574999,
-			["mr"] = 519000,
+			["H3543"] = 580000,
+			["mr"] = 580000,
 		},
-		["Gloom Reaper of the Bear"] = {
-			["H3540"] = 39999,
-			["mr"] = 39999,
+		["Mighty Troll's Blood Potion"] = {
+			["H3540"] = 3899,
+			["H3539"] = 3900,
+			["H3543"] = 3685,
+			["mr"] = 3685,
 		},
 		["Schematic: Gnomish Cloaking Device"] = {
 			["H3540"] = 29800,
 			["mr"] = 29800,
 		},
-		["Councillor's Robes of the Eagle"] = {
-			["H3537"] = 90000,
-			["mr"] = 90000,
-		},
-		["Councillor's Sash of the Eagle"] = {
-			["H3537"] = 47299,
-			["mr"] = 47299,
-		},
-		["A Thoroughly Read Copy of \"Nat Pagle's Extreme' Anglin.\""] = {
-			["H3540"] = 42589,
-			["mr"] = 42589,
+		["Night Watch Shortsword"] = {
+			["H3540"] = 119500,
+			["mr"] = 119500,
 		},
 		["Humbert's Helm"] = {
 			["H3540"] = 145000,
 			["mr"] = 145000,
 			["H3539"] = 148500,
-		},
-		["Runic Stave"] = {
-			["H3540"] = 2514,
-			["H3539"] = 2500,
-			["mr"] = 2514,
-		},
-		["Nightshade Leggings of the Monkey"] = {
-			["H3537"] = 60000,
-			["mr"] = 60000,
 		},
 		["Red Dye"] = {
 			["H3537"] = 864,
@@ -2164,25 +9937,14 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 60471,
 			["mr"] = 60471,
 		},
-		["Ritual Sandals of the Owl"] = {
-			["H3537"] = 9900,
-			["mr"] = 9900,
-		},
 		["Tyrant's Epaulets"] = {
-			["H3537"] = 38926,
-			["mr"] = 38926,
-		},
-		["Shiver Blade"] = {
-			["mr"] = 30000,
-			["H3539"] = 30000,
-		},
-		["Raw Sunscale Salmon"] = {
-			["H3539"] = 492,
-			["mr"] = 492,
+			["H3543"] = 35089,
+			["mr"] = 35089,
 		},
 		["Elegant Bracers of Frozen Wrath"] = {
 			["H3540"] = 248104,
-			["mr"] = 248104,
+			["mr"] = 225500,
+			["H3543"] = 225500,
 			["H3539"] = 260228,
 		},
 		["Righteous Armor of Stamina"] = {
@@ -2194,39 +9956,20 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 4100,
 			["L3537"] = 4099,
 		},
-		["Sentinel Trousers of the Bear"] = {
-			["mr"] = 73992,
-			["cc"] = 4,
-			["id"] = "7440:0:0:1204:0",
-			["sc"] = 2,
-			["H3542"] = 73992,
-		},
-		["Twilight Pants of the Eagle"] = {
-			["mr"] = 19600,
-			["H3539"] = 19600,
-		},
-		["Barbaric Battle Axe of the Bear"] = {
-			["mr"] = 5000,
-			["H3539"] = 5000,
-		},
-		["Alterac Swiss"] = {
-			["H3540"] = 1935,
-			["H3539"] = 1500,
-			["mr"] = 1935,
+		["Zircon Band of Nature Resistance"] = {
+			["H3543"] = 209849,
+			["mr"] = 209849,
 		},
 		["Plans: Mithril Shield Spike"] = {
 			["H3540"] = 7900,
 			["H3539"] = 19798,
-			["mr"] = 7900,
-		},
-		["Boots of Avoidance"] = {
-			["H3540"] = 439000,
-			["mr"] = 439000,
-			["H3539"] = 439998,
+			["H3543"] = 5500,
+			["mr"] = 5500,
 		},
 		["Whirring Bronze Gizmo"] = {
 			["H3540"] = 1300,
-			["mr"] = 1300,
+			["mr"] = 4200,
+			["H3543"] = 4200,
 		},
 		["Sturdy Quarterstaff of the Monkey"] = {
 			["H3537"] = 9053,
@@ -2236,122 +9979,61 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 4900,
 			["mr"] = 4900,
 		},
-		["Master's Boots of Frozen Wrath"] = {
-			["H3537"] = 228373,
-			["mr"] = 228373,
-		},
-		["Imposing Shoulders of Agility"] = {
-			["H3537"] = 66504,
-			["mr"] = 66504,
+		["Arcane Powder"] = {
+			["H3543"] = 19999,
+			["mr"] = 19999,
 		},
 		["Warmonger's Circlet of the Monkey"] = {
 			["H3540"] = 70773,
 			["mr"] = 70773,
 		},
-		["Greenweave Cloak of the Eagle"] = {
-			["mr"] = 7206,
-			["H3539"] = 7206,
+		["Conjurer's Shoes of the Whale"] = {
+			["H3540"] = 9999,
+			["mr"] = 9999,
 		},
-		["Abyssal Leather Belt of Striking"] = {
-			["mr"] = 89900,
-			["cc"] = 4,
-			["id"] = "20667:0:0:2154:0",
-			["sc"] = 2,
-			["H3536"] = 89900,
-		},
-		["Elegant Boots of Frozen Wrath"] = {
-			["H3540"] = 99000,
-			["mr"] = 99000,
-		},
-		["Archer's Longbow"] = {
-			["H3537"] = 8080,
-			["mr"] = 8080,
-		},
-		["Heavy Scorpid Scale"] = {
-			["H3539"] = 902,
-			["mr"] = 902,
-		},
-		["Brackwater Vest"] = {
-			["H3540"] = 3900,
-			["mr"] = 3900,
-		},
-		["Lupine Buckler of Healing"] = {
-			["H3540"] = 2000,
-			["mr"] = 2000,
+		["Warbringer's Spaulders of the Boar"] = {
+			["H3543"] = 20451,
+			["mr"] = 20451,
 		},
 		["Runed Golem Shackles"] = {
-			["mr"] = 79999,
 			["H3539"] = 79999,
+			["mr"] = 79999,
 		},
-		["Four of Beasts"] = {
-			["H3540"] = 49800,
-			["H3539"] = 72500,
-			["mr"] = 49800,
+		["Chromatic Sword"] = {
+			["H3539"] = 398999,
+			["mr"] = 398999,
 		},
-		["Jagged Star of the Bear"] = {
-			["H3540"] = 28511,
-			["mr"] = 28511,
-			["H3539"] = 28512,
+		["Medium Armor Kit"] = {
+			["H3540"] = 1985,
+			["mr"] = 1985,
 		},
-		["Light Armor Kit"] = {
-			["H3540"] = 499,
-			["mr"] = 499,
-			["H3539"] = 500,
+		["Fused Wiring"] = {
+			["H3540"] = 62000,
+			["H3539"] = 90000,
+			["H3543"] = 70999,
+			["mr"] = 70999,
 		},
-		["Schematic: Goblin Jumper Cables"] = {
-			["H3540"] = 41092,
-			["H3539"] = 9506,
-			["mr"] = 41092,
+		["Recipe: Crocolisk Gumbo"] = {
+			["H3537"] = 99900,
+			["mr"] = 99900,
 		},
-		["Sorcerer Sash of the Eagle"] = {
-			["H3540"] = 20000,
-			["mr"] = 20000,
+		["Brilliant Chromatic Scale"] = {
+			["H3540"] = 9800,
+			["H3539"] = 17000,
+			["H3543"] = 10500,
+			["mr"] = 10500,
 		},
-		["Dark Iron Bar"] = {
-			["sc"] = 0,
-			["mr"] = 24374,
-			["L3543"] = 24374,
-			["H3540"] = 29983,
-			["id"] = "11371:0:0:0:0",
-			["cc"] = 7,
-			["H3543"] = 24375,
-			["H3539"] = 27600,
+		["Fortified Belt of the Bear"] = {
+			["H3543"] = 9900,
+			["mr"] = 9900,
 		},
-		["Glowstar Rod of Frozen Wrath"] = {
-			["mr"] = 152524,
-			["H3539"] = 152524,
+		["Ancestral Woollies"] = {
+			["H3543"] = 3120,
+			["mr"] = 3120,
 		},
-		["Grizzly Buckler of the Owl"] = {
-			["H3537"] = 6600,
-			["mr"] = 6600,
-		},
-		["Pattern: Earthen Leather Shoulders"] = {
-			["H3539"] = 4200,
-			["sc"] = 1,
-			["H3540"] = 6499,
-			["cc"] = 9,
-			["mr"] = 6499,
-			["id"] = "7362:0:0:0:0",
-		},
-		["Raider's Belt of the Tiger"] = {
-			["mr"] = 20000,
-			["H3539"] = 20000,
-		},
-		["Elixir of Firepower"] = {
-			["mr"] = 29999,
-			["sc"] = 0,
-			["id"] = "6373:0:0:0:0",
-			["H3539"] = 19110,
-			["H3543"] = 29999,
-			["cc"] = 0,
-		},
-		["Resplendent Boots of Arcane Wrath"] = {
-			["H3537"] = 220000,
-			["mr"] = 220000,
-		},
-		["Leaded Vial"] = {
-			["H3537"] = 15712,
-			["mr"] = 15712,
+		["Festival Lane Postbox Key"] = {
+			["H3537"] = 59660,
+			["mr"] = 59660,
 		},
 		["Murloc Eye"] = {
 			["H3537"] = 1060,
@@ -2363,115 +10045,88 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Small Silk Pack"] = {
 			["H3540"] = 9000,
-			["mr"] = 9000,
+			["mr"] = 9497,
+			["H3543"] = 9497,
 			["H3539"] = 9398,
 		},
 		["Gnomish Rocket Boots"] = {
-			["mr"] = 399996,
 			["H3539"] = 399996,
+			["mr"] = 399996,
 		},
-		["Sardonyx Knuckle of Fire Resistance"] = {
-			["mr"] = 83334,
-			["sc"] = 0,
-			["id"] = "11976:0:0:1415:0",
-			["cc"] = 4,
-			["H3543"] = 83334,
-			["H3540"] = 400000,
-		},
-		["Nightshade Spaulders of Nature Resistance"] = {
-			["H3540"] = 2990000,
-			["mr"] = 2990000,
+		["Enchanted Mageweave Pouch"] = {
+			["mr"] = 34000,
+			["cc"] = 1,
+			["H3540"] = 34000,
+			["id"] = "22246:0:0:0:0",
+			["sc"] = 3,
 		},
 		["Reinforced Chain Shoulderpads"] = {
 			["H3537"] = 9975,
 			["mr"] = 9975,
 		},
-		["Schematic: Green Firework"] = {
-			["H3537"] = 22000,
-			["mr"] = 22000,
-		},
 		["Thorium Shield Spike"] = {
 			["H3540"] = 74887,
 			["H3539"] = 71998,
-			["mr"] = 74887,
+			["H3543"] = 202664,
+			["mr"] = 202664,
 		},
-		["Brimstone Belt"] = {
-			["H3541"] = 90000,
-			["cc"] = 4,
-			["mr"] = 11500,
-			["H3540"] = 30000,
-			["sc"] = 1,
-			["id"] = "4785:0:0:0:0",
-			["H3542"] = 11500,
+		["Bandit Gloves of the Gorilla"] = {
+			["H3543"] = 19881,
+			["mr"] = 19881,
 		},
-		["Blood Shard"] = {
-			["H3540"] = 28,
-			["H3539"] = 33,
-			["mr"] = 28,
+		["Bloodspattered Shield of the Monkey"] = {
+			["H3543"] = 9162,
+			["mr"] = 9162,
 		},
 		["Bonechewer"] = {
-			["mr"] = 87749,
-			["H3537"] = 87750,
-			["L3537"] = 87749,
+			["H3543"] = 111796,
+			["mr"] = 111796,
 		},
 		["Outrunner's Cuffs of the Bear"] = {
 			["mr"] = 5501,
+			["H3543"] = 5501,
 			["H3539"] = 5501,
 		},
 		["Battle Chain Gloves"] = {
 			["mr"] = 200,
+			["cc"] = 4,
+			["id"] = "3281:0:0:0:0",
 			["sc"] = 3,
 			["H3529"] = 200,
-			["id"] = "3281:0:0:0:0",
-			["cc"] = 4,
 		},
 		["Shimmering Cloak of Healing"] = {
 			["H3537"] = 6036,
 			["mr"] = 6036,
 		},
 		["Grand Cloak of the Monkey"] = {
-			["mr"] = 52025,
 			["H3539"] = 52025,
+			["mr"] = 52025,
 		},
-		["Monk's Staff of the Eagle"] = {
-			["H3540"] = 37755,
-			["mr"] = 37755,
-		},
-		["Heavy Linen Gloves"] = {
-			["H3539"] = 1788,
-			["sc"] = 1,
-			["id"] = "4307:0:0:0:0",
-			["cc"] = 4,
-			["mr"] = 1788,
-		},
-		["Book: Gift of the Wild"] = {
-			["H3540"] = 104500,
-			["mr"] = 104500,
-			["H3539"] = 11200,
-		},
-		["Greater Astral Essence"] = {
-			["H3539"] = 8800,
-			["sc"] = 0,
-			["id"] = "11082:0:0:0:0",
-			["mr"] = 8800,
+		["Black Lotus"] = {
+			["L3540"] = 1247000,
+			["mr"] = 1200000,
 			["cc"] = 7,
+			["H3539"] = 1297499,
+			["H3540"] = 1247100,
+			["id"] = "13468:0:0:0:0",
+			["H3543"] = 1200000,
+			["sc"] = 0,
 		},
-		["High Councillor's Bracers of the Owl"] = {
-			["H3537"] = 30000,
-			["mr"] = 30000,
+		["Sentinel Boots of the Monkey"] = {
+			["mr"] = 40524,
+			["cc"] = 4,
+			["id"] = "7444:0:0:604:0",
+			["sc"] = 2,
+			["H3542"] = 40524,
 		},
-		["Meadow Ring of the Wolf"] = {
-			["H3540"] = 153385,
-			["mr"] = 153385,
-			["H3539"] = 73784,
-		},
-		["Large Bear Bone"] = {
-			["H3537"] = 30000,
-			["mr"] = 30000,
+		["Fine Thread"] = {
+			["H3537"] = 526,
+			["mr"] = 526,
 		},
 		["Scorpid Scale"] = {
 			["H3540"] = 4353,
-			["mr"] = 4353,
+			["mr"] = 7400,
+			["H3543"] = 7400,
 		},
 		["Onyx Choker of the Gorilla"] = {
 			["H3540"] = 58094,
@@ -2480,23 +10135,16 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Green Hills of Stranglethorn - Page 27"] = {
 			["H3540"] = 700,
 			["H3539"] = 824,
-			["mr"] = 700,
+			["H3543"] = 800,
+			["mr"] = 800,
 		},
-		["Bronze Tube"] = {
-			["H3539"] = 1250,
-			["mr"] = 1250,
+		["Tracker's Belt of the Owl"] = {
+			["H3537"] = 26025,
+			["mr"] = 26025,
 		},
-		["Chimera Leather"] = {
-			["H3539"] = 33000,
-			["sc"] = 0,
-			["H3540"] = 32700,
-			["cc"] = 7,
-			["mr"] = 32700,
-			["id"] = "15423:0:0:0:0",
-		},
-		["Notched Shortsword of Power"] = {
-			["H3537"] = 3516,
-			["mr"] = 3516,
+		["Knight's Girdle of Healing"] = {
+			["H3543"] = 8046,
+			["mr"] = 8046,
 		},
 		["Gnomish Harm Prevention Belt"] = {
 			["H3537"] = 214200,
@@ -2507,17 +10155,22 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 4812,
 		},
 		["Massive Iron Axe"] = {
-			["mr"] = 139999,
+			["mr"] = 150000,
+			["H3543"] = 150000,
 			["H3539"] = 139999,
+		},
+		["Amethyst Band of Arcane Resistance"] = {
+			["H3543"] = 78603,
+			["mr"] = 78603,
 		},
 		["Plans: Silvered Bronze Breastplate"] = {
 			["H3540"] = 3196,
 			["mr"] = 3196,
 			["H3539"] = 3199,
 		},
-		["Soldier's Gauntlets of the Bear"] = {
-			["H3537"] = 10000,
-			["mr"] = 10000,
+		["Widowmaker"] = {
+			["H3543"] = 200000,
+			["mr"] = 200000,
 		},
 		["Aboriginal Shoulder Pads"] = {
 			["H3537"] = 9182,
@@ -2525,85 +10178,44 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Elegant Gloves of Healing"] = {
 			["H3540"] = 289498,
-			["mr"] = 289498,
+			["mr"] = 211100,
+			["H3543"] = 211100,
 			["H3539"] = 179498,
-		},
-		["Training Sword of the Boar"] = {
-			["H3540"] = 2100,
-			["mr"] = 2100,
-			["H3539"] = 4975,
 		},
 		["Skullsplitter Coin"] = {
 			["H3540"] = 2999,
 			["H3539"] = 2999,
-			["mr"] = 2999,
+			["H3543"] = 3000,
+			["mr"] = 3000,
 		},
 		["Warmonger"] = {
 			["H3537"] = 403958,
 			["mr"] = 403958,
 		},
-		["Training Sword of the Monkey"] = {
-			["H3537"] = 4000,
-			["mr"] = 4000,
-		},
-		["Pattern: Gloves of the Greatfather"] = {
-			["mr"] = 394000,
-			["sc"] = 1,
-			["id"] = "17722:0:0:0:0",
-			["cc"] = 9,
-			["H3540"] = 394000,
-			["H3539"] = 199985,
-		},
 		["Lupine Buckler of the Falcon"] = {
 			["H3540"] = 4676,
 			["mr"] = 4676,
 		},
-		["Globe of Water"] = {
-			["H3540"] = 4300,
-			["mr"] = 4300,
-			["H3539"] = 5561,
-		},
-		["Councillor's Pants of Healing"] = {
-			["H3537"] = 500000,
-			["mr"] = 500000,
-		},
-		["Double-stitched Woolen Shoulders"] = {
-			["H3537"] = 6000,
-			["mr"] = 6000,
+		["Boar Intestines"] = {
+			["mr"] = 120,
+			["cc"] = 7,
+			["H3539"] = 107,
+			["id"] = "3172:0:0:0:0",
+			["sc"] = 0,
+			["H3543"] = 120,
+			["H3542"] = 105,
 		},
 		["Bloodspattered Shield of the Tiger"] = {
 			["H3540"] = 10000,
 			["mr"] = 10000,
 		},
-		["Glimmering Mail Bracers"] = {
-			["H3537"] = 55000,
-			["mr"] = 55000,
-		},
-		["Heavy Stock"] = {
-			["H3537"] = 22325,
-			["mr"] = 22325,
-		},
-		["Conjurer's Vest of the Owl"] = {
-			["H3537"] = 28010,
-			["mr"] = 28010,
-		},
 		["Aboriginal Gloves of Fiery Wrath"] = {
 			["H3537"] = 19000,
 			["mr"] = 19000,
 		},
-		["Cow King's Hide"] = {
-			["H3540"] = 191999,
-			["H3539"] = 299900,
-			["mr"] = 191999,
-		},
-		["Doomforged Straightedge"] = {
-			["H3537"] = 669999,
-			["mr"] = 669999,
-		},
-		["Middle Map Fragment"] = {
-			["H3540"] = 3991,
-			["H3539"] = 3992,
-			["mr"] = 3991,
+		["Ancient Gauntlets of the Owl"] = {
+			["H3537"] = 11574,
+			["mr"] = 11574,
 		},
 		["Hillborne Axe of the Wolf"] = {
 			["H3537"] = 158160,
@@ -2612,6 +10224,7 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Jasper Link of Nature Resistance"] = {
 			["H3540"] = 3000000,
 			["H3539"] = 2406999,
+			["H3543"] = 3000000,
 			["mr"] = 3000000,
 		},
 		["Felheart Bracers"] = {
@@ -2619,50 +10232,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 680000,
 			["H3539"] = 398000,
 		},
-		["Keeper's Wreath"] = {
-			["mr"] = 22000,
-			["H3539"] = 22000,
+		["Recipe: Blood Sausage"] = {
+			["H3537"] = 99900,
+			["mr"] = 99900,
 		},
-		["Ornate Mithril Gloves"] = {
-			["mr"] = 244000,
-			["cc"] = 4,
-			["id"] = "7927:0:0:0:0",
-			["H3537"] = 244000,
-			["sc"] = 4,
-		},
-		["Plans: Thorium Boots"] = {
-			["H3540"] = 11600,
-			["H3539"] = 9900,
-			["mr"] = 11600,
-		},
-		["Stoneshield Cloak"] = {
-			["H3537"] = 1250000,
-			["mr"] = 1250000,
-		},
-		["Pattern: Core Felcloth Bag"] = {
-			["sc"] = 2,
-			["mr"] = 992499,
-			["cc"] = 9,
-			["H3540"] = 1500000,
-			["id"] = "21371:0:0:0:0",
-			["H3539"] = 1755000,
-			["H3543"] = 992499,
-			["H3542"] = 992499,
-		},
-		["Grizzly Jerkin of the Owl"] = {
-			["H3537"] = 3500,
-			["mr"] = 3500,
+		["Lord's Crest of Blocking"] = {
+			["H3537"] = 696969,
+			["mr"] = 696969,
 		},
 		["Massive Battle Axe of the Tiger"] = {
-			["mr"] = 50000,
 			["H3539"] = 50000,
-		},
-		["Templar Shield of Defense"] = {
-			["H3537"] = 74814,
-			["mr"] = 74814,
+			["mr"] = 50000,
 		},
 		["Pattern: Blue Dragonscale Breastplate"] = {
-			["mr"] = 45166,
+			["mr"] = 69518,
+			["H3543"] = 69518,
 			["H3539"] = 45166,
 		},
 		["Greater Scythe of the Tiger"] = {
@@ -2673,215 +10257,116 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3540"] = 239999,
 			["mr"] = 239999,
 		},
-		["Abyssal Cloth Sash of Sorcery"] = {
-			["H3540"] = 89500,
-			["mr"] = 89500,
-			["H3539"] = 89500,
-		},
-		["Adventurer's Bandana of the Eagle"] = {
-			["H3537"] = 68200,
-			["mr"] = 68200,
-		},
-		["Ornate Circlet of the Falcon"] = {
-			["H3537"] = 47734,
-			["mr"] = 47734,
-		},
-		["Rage Potion"] = {
-			["H3540"] = 4900,
-			["mr"] = 4900,
-			["H3539"] = 4300,
-		},
 		["Dervish Belt of the Monkey"] = {
 			["H3537"] = 19962,
 			["mr"] = 19962,
 		},
-		["Nightblade"] = {
-			["mr"] = 170000,
-			["H3539"] = 170000,
+		["Zulian Coin"] = {
+			["H3540"] = 3299,
+			["H3539"] = 2900,
+			["H3543"] = 3700,
+			["mr"] = 3700,
 		},
 		["Hydralick Armor"] = {
 			["H3540"] = 67763,
-			["mr"] = 67763,
+			["mr"] = 58500,
+			["H3543"] = 58500,
 		},
-		["Hi-Explosive Bomb"] = {
-			["H3540"] = 1840,
-			["H3539"] = 1829,
-			["mr"] = 1840,
+		["Feathered Breastplate"] = {
+			["H3539"] = 214399,
+			["mr"] = 214399,
 		},
 		["Silksand Tunic"] = {
-			["mr"] = 49459,
-			["H3537"] = 69999,
-			["L3537"] = 49459,
+			["H3543"] = 18897,
+			["mr"] = 18897,
 		},
-		["Devilsaur Leather"] = {
-			["mr"] = 49800,
-			["cc"] = 7,
-			["id"] = "15417:0:0:0:0",
-			["H3540"] = 49800,
-			["sc"] = 0,
-			["H3539"] = 39998,
+		["White Wedding Dress"] = {
+			["mr"] = 295999,
+			["H3543"] = 295999,
+			["H3539"] = 258827,
 		},
-		["Troll's Bane Leggings"] = {
-			["mr"] = 485000,
-			["H3539"] = 485000,
-		},
-		["Hide of the Wild"] = {
-			["H3540"] = 2944999,
-			["H3539"] = 3170000,
-			["mr"] = 2944999,
-		},
-		["Ghostweave Belt"] = {
-			["H3537"] = 775714,
-			["mr"] = 775714,
+		["Bandit Jerkin of the Eagle"] = {
+			["H3537"] = 12903,
+			["mr"] = 12903,
 		},
 		["Feral Cord of the Owl"] = {
 			["mr"] = 9307,
 			["H3537"] = 9900,
 			["L3537"] = 9307,
 		},
-		["Abyssal Signet"] = {
-			["H3540"] = 200000,
-			["H3539"] = 239999,
-			["mr"] = 200000,
-		},
-		["Jet Chain of the Bear"] = {
-			["H3540"] = 44199,
-			["H3539"] = 44384,
-			["mr"] = 44199,
+		["Elunarian Cuffs"] = {
+			["H3537"] = 320104,
+			["mr"] = 320104,
 		},
 		["Pathfinder Footpads of Stamina"] = {
 			["H3537"] = 14925,
 			["mr"] = 14925,
 		},
-		["Raider's Boots of the Whale"] = {
-			["H3540"] = 8000,
-			["mr"] = 8000,
+		["Recipe: Superior Mana Potion"] = {
+			["H3543"] = 21899,
+			["mr"] = 21899,
 		},
-		["Dense Grinding Stone"] = {
-			["mr"] = 6700,
-			["H3537"] = 6789,
-			["L3537"] = 6700,
-		},
-		["Wooden Stock"] = {
-			["mr"] = 1700,
-			["H3539"] = 1700,
-		},
-		["Ivycloth Tunic of Shadow Wrath"] = {
-			["H3537"] = 3000,
-			["mr"] = 3000,
+		["Gryphonwing Long Bow"] = {
+			["H3539"] = 198299,
+			["mr"] = 198299,
 		},
 		["Geomancer's Bracers of Shadow Wrath"] = {
 			["H3537"] = 20000,
 			["mr"] = 20000,
 		},
-		["Monk's Staff of Frozen Wrath"] = {
-			["H3537"] = 199926,
-			["mr"] = 199926,
+		["Spongy Morel"] = {
+			["mr"] = 497,
+			["cc"] = 0,
+			["H3540"] = 5700,
+			["id"] = "4606:0:0:0:0",
+			["H3543"] = 497,
+			["sc"] = 0,
 		},
-		["Duskwoven Bracers of Fiery Wrath"] = {
-			["mr"] = 74617,
-			["H3539"] = 74617,
+		["Pattern: Mooncloth Vest"] = {
+			["H3537"] = 219000,
+			["mr"] = 219000,
 		},
-		["Ritual Cape of the Eagle"] = {
-			["H3537"] = 5579,
-			["mr"] = 5579,
+		["Recipe: Elixir of Detect Lesser Invisibility"] = {
+			["H3539"] = 4997,
+			["H3543"] = 12997,
+			["mr"] = 12997,
 		},
-		["Practice Sword"] = {
-			["H3537"] = 50000,
-			["mr"] = 50000,
+		["Sandstalker Breastplate"] = {
+			["mr"] = 3300000,
+			["H3543"] = 3300000,
+			["H3539"] = 3900000,
 		},
-		["Thick Wolfhide"] = {
-			["H3540"] = 2900,
-			["mr"] = 2900,
+		["Plans: Helm of the Great Chief"] = {
+			["H3537"] = 850000,
+			["mr"] = 850000,
 		},
-		["Sorcerer Cloak of the Owl"] = {
-			["mr"] = 10064,
-			["H3537"] = 33164,
-			["L3537"] = 10064,
-		},
-		["Plans: Wildthorn Mail"] = {
-			["H3540"] = 7099,
-			["H3539"] = 7424,
-			["mr"] = 7099,
-		},
-		["Lunar Handwraps of the Whale"] = {
-			["H3537"] = 57049,
-			["mr"] = 57049,
-		},
-		["Arachnidian Branch of Arcane Wrath"] = {
-			["H3537"] = 225792,
-			["mr"] = 225792,
-		},
-		["War Torn Tunic of the Boar"] = {
-			["H3540"] = 1099,
-			["mr"] = 1099,
-		},
-		["Razor Axe of the Boar"] = {
-			["H3537"] = 600000,
-			["mr"] = 600000,
-		},
-		["Deathweed"] = {
-			["H3537"] = 163,
-			["mr"] = 163,
-		},
-		["Acrobatic Staff of Shadow Wrath"] = {
-			["H3540"] = 97056,
-			["mr"] = 97056,
-		},
-		["Thaumaturgist Staff of Shadow Wrath"] = {
-			["H3537"] = 300000,
-			["mr"] = 300000,
+		["Merc Sword of the Bear"] = {
+			["H3543"] = 2999,
+			["mr"] = 2999,
 		},
 		["Councillor's Circlet of Intellect"] = {
 			["H3537"] = 352898,
 			["mr"] = 352898,
 		},
-		["Defender Spaulders"] = {
-			["H3537"] = 10255,
-			["mr"] = 10255,
+		["Elementals Deck"] = {
+			["H3543"] = 1299998,
+			["mr"] = 1299998,
 		},
-		["Ancestral Gloves"] = {
-			["mr"] = 200,
-			["sc"] = 1,
-			["H3529"] = 200,
-			["id"] = "3290:0:0:0:0",
-			["cc"] = 4,
+		["Umbral Crystal"] = {
+			["H3543"] = 35000,
+			["mr"] = 35000,
 		},
-		["Masterwork Gauntlets of the Wolf"] = {
-			["H3537"] = 60000,
-			["mr"] = 60000,
+		["Pattern: Black Silk Pack"] = {
+			["H3540"] = 33357,
+			["mr"] = 33357,
 		},
-		["Silksand Circlet"] = {
-			["H3540"] = 39800,
-			["mr"] = 39800,
-			["H3539"] = 40542,
+		["Hacking Cleaver of the Wolf"] = {
+			["H3540"] = 15000,
+			["mr"] = 15000,
 		},
-		["Marauder's Boots of the Bear"] = {
-			["H3537"] = 11999,
-			["mr"] = 11999,
-		},
-		["Schematic: Voice Amplification Modulator"] = {
-			["H3540"] = 50000,
-			["H3539"] = 81999,
-			["mr"] = 50000,
-		},
-		["Wand of Eventide"] = {
-			["mr"] = 14498,
-			["H3537"] = 14499,
-			["L3537"] = 14498,
-		},
-		["Razor Axe of the Monkey"] = {
-			["H3537"] = 101092,
-			["mr"] = 101092,
-		},
-		["Ranger Cord of the Eagle"] = {
-			["mr"] = 29246,
-			["H3539"] = 29246,
-		},
-		["Goblin Rocket Boots"] = {
-			["H3540"] = 224000,
-			["H3539"] = 249998,
-			["mr"] = 224000,
+		["Ritual Cape of Frozen Wrath"] = {
+			["H3539"] = 10000,
+			["mr"] = 10000,
 		},
 		["Bloodwoven Bracers of Healing"] = {
 			["H3537"] = 26639,
@@ -2890,21 +10375,18 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Parachute Cloak"] = {
 			["H3540"] = 63499,
 			["H3539"] = 99998,
-			["mr"] = 63499,
+			["H3543"] = 68500,
+			["mr"] = 68500,
 		},
 		["Schematic: Discombobulator Ray"] = {
 			["mr"] = 3505000,
 			["H3537"] = 3508216,
 			["L3537"] = 3505000,
 		},
-		["Scroll of Protection"] = {
-			["H3540"] = 990,
-			["mr"] = 990,
-			["H3539"] = 985,
-		},
 		["Elixir of Fortitude"] = {
 			["H3540"] = 11599,
-			["mr"] = 11599,
+			["mr"] = 13800,
+			["H3543"] = 13800,
 			["H3539"] = 11800,
 		},
 		["Wicked Leather Gauntlets"] = {
@@ -2914,49 +10396,37 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 2,
 			["H3536"] = 20000,
 		},
-		["Knight's Bracers of the Bear"] = {
-			["H3539"] = 13539,
-			["mr"] = 13539,
+		["Sentinel Gloves of the Falcon"] = {
+			["H3543"] = 8000,
+			["mr"] = 8000,
 		},
 		["Icecap"] = {
-			["mr"] = 3100,
-			["cc"] = 7,
-			["H3540"] = 3100,
 			["H3539"] = 3100,
-			["id"] = "13467:0:0:0:0",
 			["sc"] = 0,
+			["H3540"] = 3100,
+			["id"] = "13467:0:0:0:0",
+			["cc"] = 7,
+			["H3543"] = 5195,
+			["mr"] = 5195,
 		},
-		["Plans: Polished Steel Boots"] = {
-			["H3540"] = 16153,
-			["H3539"] = 16154,
-			["mr"] = 16153,
+		["Black Pearl"] = {
+			["H3539"] = 1223,
+			["H3543"] = 1175,
+			["mr"] = 1175,
+		},
+		["Iridium Circle of Intellect"] = {
+			["H3543"] = 216169,
+			["mr"] = 216169,
 		},
 		["Abyssal Cloth Handwraps of Sorcery"] = {
 			["H3540"] = 79500,
 			["H3539"] = 138500,
-			["mr"] = 79500,
+			["H3543"] = 40000,
+			["mr"] = 40000,
 		},
-		["Mature Blue Dragon Sinew"] = {
-			["H3537"] = 5999999,
-			["mr"] = 5999999,
-		},
-		["Core of Earth"] = {
-			["H3539"] = 599,
-			["cc"] = 5,
-			["mr"] = 1290,
-			["id"] = "7075:0:0:0:0",
-			["sc"] = 0,
-			["H3543"] = 1290,
-			["H3540"] = 854,
-		},
-		["Hyperion Greaves of Nature Resistance"] = {
-			["mr"] = 1200000,
-			["H3539"] = 1200000,
-		},
-		["Pattern: Big Voodoo Cloak"] = {
-			["H3540"] = 20800,
-			["H3539"] = 21799,
-			["mr"] = 20800,
+		["Heavy Silk Bandage"] = {
+			["H3543"] = 1764,
+			["mr"] = 1764,
 		},
 		["Empty Vial"] = {
 			["H3540"] = 6112,
@@ -2967,44 +10437,28 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 500000,
 			["H3539"] = 475886,
 		},
-		["Green Hakkari Bijou"] = {
-			["H3540"] = 29199,
-			["H3539"] = 24525,
-			["mr"] = 29199,
+		["Taran Icebreaker"] = {
+			["mr"] = 555000,
+			["H3543"] = 555000,
+			["H3539"] = 509995,
 		},
 		["Dervish Belt of the Bear"] = {
-			["H3537"] = 10000,
-			["mr"] = 10000,
+			["H3543"] = 9900,
+			["mr"] = 9900,
 		},
 		["Abyssal Mail Legguards of Striking"] = {
 			["H3540"] = 240000,
 			["H3539"] = 258500,
-			["mr"] = 240000,
+			["H3543"] = 206999,
+			["mr"] = 206999,
 		},
-		["Righteous Bracers of the Monkey"] = {
-			["H3537"] = 25000,
-			["mr"] = 25000,
+		["Twin-bladed Axe of Stamina"] = {
+			["H3537"] = 12384,
+			["mr"] = 12384,
 		},
-		["Golden Sansam"] = {
-			["mr"] = 1199,
-			["cc"] = 7,
-			["H3540"] = 1199,
-			["H3539"] = 99,
-			["id"] = "13464:0:0:0:0",
-			["sc"] = 0,
-		},
-		["Crystal Basilisk Spine"] = {
-			["mr"] = 8970,
-			["H3539"] = 8970,
-		},
-		["Ritual Cape of Healing"] = {
-			["H3540"] = 30000,
-			["mr"] = 30000,
-			["H3539"] = 30000,
-		},
-		["Sanguine Mantle"] = {
-			["mr"] = 30000,
-			["H3539"] = 30000,
+		["Fen Ring of the Monkey"] = {
+			["H3543"] = 54938,
+			["mr"] = 54938,
 		},
 		["Masterwork Girdle of the Owl"] = {
 			["H3537"] = 50000,
@@ -3014,18 +10468,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 49204,
 			["mr"] = 49204,
 		},
-		["Sash of Mercy"] = {
-			["H3540"] = 1097500,
-			["mr"] = 1097500,
-			["H3539"] = 1182500,
-		},
-		["Raw Mithril Head Trout"] = {
-			["H3539"] = 485,
-			["mr"] = 485,
-		},
 		["Pattern: Felcloth Boots"] = {
 			["H3540"] = 18998,
-			["mr"] = 18998,
+			["mr"] = 11799,
+			["H3543"] = 11799,
 			["H3539"] = 19800,
 		},
 		["Ribsplitter of the Bear"] = {
@@ -3037,45 +10483,39 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 13849999,
 			["L3537"] = 13840000,
 		},
-		["Tusker Sword of the Monkey"] = {
-			["H3537"] = 49999,
-			["mr"] = 49999,
-		},
 		["Combat Shield"] = {
 			["H3537"] = 12870,
 			["mr"] = 12870,
 		},
-		["High Chief's Legguards of the Bear"] = {
-			["mr"] = 35000,
-			["H3537"] = 60000,
-			["L3537"] = 35000,
+		["Inscribed Leather Gloves"] = {
+			["H3537"] = 2200,
+			["mr"] = 2200,
 		},
-		["Six of Beasts"] = {
-			["H3540"] = 69998,
-			["mr"] = 69998,
-			["H3539"] = 73000,
+		["Chief Brigadier Coif"] = {
+			["H3543"] = 11214,
+			["mr"] = 11214,
 		},
-		["Bloodwoven Pads of Shadow Wrath"] = {
-			["H3537"] = 67272,
-			["mr"] = 67272,
-		},
-		["Sheepshear Mantle"] = {
-			["H3537"] = 120000,
-			["mr"] = 120000,
+		["Gauntlets of Elements"] = {
+			["H3540"] = 190000,
+			["mr"] = 99999,
+			["H3543"] = 99999,
 		},
 		["Bolt of Woolen Cloth"] = {
-			["H3540"] = 947,
-			["mr"] = 947,
+			["mr"] = 498,
+			["cc"] = 7,
 			["H3539"] = 1000,
+			["id"] = "2997:0:0:0:0",
+			["sc"] = 0,
+			["H3543"] = 498,
+			["H3540"] = 947,
 		},
-		["Mightfish Steak"] = {
-			["mr"] = 3499,
-			["H3537"] = 3500,
-			["L3537"] = 3499,
+		["Hawkeye Bow of Spirit"] = {
+			["H3537"] = 579000,
+			["mr"] = 579000,
 		},
 		["Thick Armor Kit"] = {
-			["mr"] = 1545,
 			["H3539"] = 1545,
+			["mr"] = 1545,
 		},
 		["Frigid Ring"] = {
 			["H3540"] = 499500,
@@ -3084,233 +10524,119 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Tanglewood Staff"] = {
 			["H3540"] = 89999,
-			["mr"] = 89999,
+			["mr"] = 84500,
+			["H3543"] = 84500,
 			["H3539"] = 126159,
 		},
 		["Formula: Enchant Shield - Lesser Block"] = {
-			["mr"] = 2997500,
 			["H3539"] = 2997500,
+			["mr"] = 2997500,
 		},
 		["Brackwater Boots"] = {
-			["H3537"] = 3072,
-			["mr"] = 3072,
-		},
-		["Recipe: Mighty Rage Potion"] = {
-			["H3540"] = 799999,
-			["mr"] = 799999,
+			["H3543"] = 4400,
+			["mr"] = 4400,
 		},
 		["Plans: Jade Serpentblade"] = {
 			["H3540"] = 19683,
-			["mr"] = 19683,
+			["mr"] = 24549,
+			["H3543"] = 24549,
 			["H3539"] = 11800,
 		},
 		["Six Demon Bag"] = {
-			["mr"] = 209994,
+			["mr"] = 345000,
 			["cc"] = 4,
 			["id"] = "7734:0:0:0:0",
 			["sc"] = 0,
+			["H3543"] = 345000,
 			["H3542"] = 209994,
-		},
-		["High Councillor's Sash of the Owl"] = {
-			["H3540"] = 72028,
-			["mr"] = 72028,
 		},
 		["Pattern: Tough Scorpid Breastplate"] = {
 			["H3540"] = 3900,
 			["mr"] = 3900,
+			["H3543"] = 3900,
 			["H3539"] = 4600,
 		},
-		["Lupine Handwraps of the Monkey"] = {
-			["H3537"] = 5580,
-			["mr"] = 5580,
-		},
-		["Blazing Wand"] = {
-			["H3540"] = 2500,
-			["mr"] = 2500,
-			["H3539"] = 2828,
+		["Arcane Cloak"] = {
+			["mr"] = 39373,
+			["cc"] = 4,
+			["H3540"] = 39373,
+			["id"] = "8286:0:0:0:0",
+			["sc"] = 1,
 		},
 		["Vanguard Headdress"] = {
 			["H3537"] = 90000,
 			["mr"] = 90000,
 		},
-		["Turtle Scale"] = {
-			["H3537"] = 1000,
-			["mr"] = 1000,
-		},
-		["Elven Chain Boots"] = {
-			["mr"] = 79499,
-			["H3537"] = 79500,
-			["L3537"] = 79499,
+		["Pattern: Living Shoulders"] = {
+			["H3540"] = 49900,
+			["mr"] = 30700,
+			["H3543"] = 30700,
 		},
 		["Arachnidian Gloves of the Owl"] = {
 			["H3537"] = 15669,
 			["mr"] = 15669,
 		},
-		["Serathil"] = {
-			["H3540"] = 449000,
-			["H3539"] = 489000,
-			["mr"] = 449000,
-		},
-		["Shell Launcher Shotgun"] = {
-			["mr"] = 96499,
-			["H3539"] = 96499,
-		},
-		["Dragon Finger of Stamina"] = {
-			["H3537"] = 200000,
-			["mr"] = 200000,
-		},
-		["Blood of the Mountain"] = {
-			["H3540"] = 541000,
-			["H3539"] = 477477,
-			["mr"] = 541000,
+		["Sorcerer Bracelets of Healing"] = {
+			["H3540"] = 31278,
+			["mr"] = 31278,
 		},
 		["Hillborne Axe of the Tiger"] = {
-			["mr"] = 47750,
+			["mr"] = 21049,
+			["H3543"] = 21049,
 			["H3539"] = 47750,
 		},
-		["Lei of Lilies"] = {
-			["H3540"] = 199999,
-			["H3539"] = 256250,
-			["mr"] = 199999,
+		["Archer's Jerkin of Stamina"] = {
+			["H3543"] = 59220,
+			["mr"] = 59220,
 		},
 		["Shimmering Cloak of Intellect"] = {
 			["H3537"] = 7178,
 			["mr"] = 7178,
 		},
-		["Sniper Rifle of the Monkey"] = {
-			["H3540"] = 132312,
-			["mr"] = 132312,
+		["Glowing Brightwood Staff"] = {
+			["H3540"] = 1748448,
+			["mr"] = 1795000,
+			["H3543"] = 1795000,
+			["H3539"] = 1850000,
 		},
-		["Forester's Axe of the Whale"] = {
-			["mr"] = 4000,
-			["cc"] = 2,
-			["id"] = "790:0:0:1010:0",
-			["H3543"] = 4000,
-			["sc"] = 0,
-		},
-		["Greenstone Circle of the Boar"] = {
-			["H3537"] = 30000,
-			["mr"] = 30000,
-		},
-		["Fortified Spaulders of the Whale"] = {
-			["H3537"] = 3500,
-			["mr"] = 3500,
-		},
-		["Scouting Spaulders"] = {
-			["mr"] = 10000,
-			["cc"] = 4,
-			["id"] = "6588:0:0:0:0",
-			["sc"] = 2,
-			["H3542"] = 10000,
-		},
-		["Meadow Ring of the Falcon"] = {
-			["H3540"] = 276999,
-			["mr"] = 276999,
-		},
-		["Sentinel Girdle of the Bear"] = {
-			["mr"] = 42340,
-			["cc"] = 4,
-			["id"] = "7448:0:0:1196:0",
-			["sc"] = 2,
-			["H3542"] = 42340,
+		["Sorcerer Sphere of Intellect"] = {
+			["H3543"] = 31000,
+			["mr"] = 31000,
 		},
 		["Royal Boots of Frozen Wrath"] = {
 			["H3537"] = 13743,
 			["mr"] = 13743,
 		},
-		["Stranglekelp"] = {
-			["mr"] = 1180,
-			["cc"] = 7,
-			["H3540"] = 1180,
-			["H3539"] = 1645,
-			["id"] = "3820:0:0:0:0",
-			["sc"] = 0,
-		},
-		["Battle Slayer of the Tiger"] = {
-			["mr"] = 88800,
-			["H3539"] = 88800,
-		},
-		["Barbaric Harness"] = {
-			["mr"] = 9999,
-			["cc"] = 4,
-			["id"] = "5739:0:0:0:0",
-			["sc"] = 2,
-			["H3540"] = 9999,
-		},
-		["Elementals Deck"] = {
-			["H3537"] = 1250000,
-			["mr"] = 1250000,
+		["Elegant Bracers of the Owl"] = {
+			["H3540"] = 80000,
+			["mr"] = 80000,
 		},
 		["Greater Arcane Protection Potion"] = {
-			["mr"] = 28995,
-			["cc"] = 0,
-			["id"] = "13461:0:0:0:0",
 			["H3539"] = 30000,
+			["cc"] = 0,
 			["sc"] = 0,
 			["H3540"] = 28995,
+			["id"] = "13461:0:0:0:0",
+			["H3543"] = 28595,
+			["mr"] = 28595,
 		},
-		["Gleaming Claymore of the Wolf"] = {
-			["H3540"] = 6161,
-			["mr"] = 6161,
-			["H3539"] = 6900,
-		},
-		["Sentinel Boots of the Monkey"] = {
-			["mr"] = 40524,
+		["Multicolored Band of Nature Resistance"] = {
+			["mr"] = 1000000,
 			["cc"] = 4,
-			["id"] = "7444:0:0:604:0",
-			["sc"] = 2,
-			["H3542"] = 40524,
+			["L3543"] = 1000000,
+			["H3540"] = 1899600,
+			["id"] = "20692:0:0:1500:0",
+			["H3543"] = 1199999,
+			["sc"] = 0,
 		},
 		["Emblazoned Chestpiece"] = {
 			["H3537"] = 29250,
 			["mr"] = 29250,
 		},
-		["Codex: Prayer of Fortitude"] = {
-			["H3540"] = 9900,
-			["mr"] = 9900,
-			["H3539"] = 9799,
-		},
-		["Burning Charm"] = {
-			["H3540"] = 1939,
-			["H3539"] = 2700,
-			["mr"] = 1939,
-		},
-		["Hurricane"] = {
-			["mr"] = 650000,
-			["H3537"] = 850000,
-			["L3537"] = 650000,
-		},
-		["Swim Speed Potion"] = {
-			["H3540"] = 39998,
-			["mr"] = 39998,
-		},
-		["Imperial Plate Shoulders"] = {
-			["H3537"] = 69999,
-			["mr"] = 69999,
-		},
-		["Gloves of Old"] = {
-			["H3539"] = 69900,
-			["mr"] = 69900,
-		},
-		["Royal Cape of Arcane Wrath"] = {
-			["mr"] = 17082,
-			["cc"] = 4,
-			["id"] = "9908:0:0:1808:0",
-			["sc"] = 1,
-			["H3540"] = 17082,
-		},
 		["Volatile Rum"] = {
 			["H3540"] = 13598,
-			["mr"] = 13598,
-		},
-		["Infiltrator Cloak of the Monkey"] = {
-			["H3537"] = 10000,
-			["mr"] = 10000,
-		},
-		["Libram of Focus"] = {
-			["H3540"] = 13500,
-			["H3539"] = 19000,
-			["mr"] = 13500,
+			["mr"] = 9498,
+			["H3543"] = 9498,
 		},
 		["Sutarn's Ring"] = {
 			["H3537"] = 225000,
@@ -3320,22 +10646,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 3980000,
 			["mr"] = 3980000,
 		},
-		["Resplendent Epaulets of Shadow Wrath"] = {
-			["H3537"] = 427517,
-			["mr"] = 427517,
-		},
-		["Pattern: Wicked Leather Pants"] = {
-			["H3539"] = 14999,
-			["sc"] = 1,
-			["H3540"] = 10000,
-			["cc"] = 9,
-			["mr"] = 10000,
-			["id"] = "15757:0:0:0:0",
-		},
-		["Wildheart Bracers"] = {
-			["H3540"] = 69999,
-			["H3539"] = 63499,
-			["mr"] = 69999,
+		["Raider Shortsword of Strength"] = {
+			["H3537"] = 2800,
+			["mr"] = 2800,
 		},
 		["Southshore Stout"] = {
 			["mr"] = 3474,
@@ -3344,43 +10657,18 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3543"] = 3474,
 			["sc"] = 0,
 		},
-		["Arena Bands"] = {
-			["H3540"] = 409999,
-			["mr"] = 409999,
-		},
 		["Warmonger's Cloak of the Monkey"] = {
 			["H3537"] = 47961,
 			["mr"] = 47961,
-		},
-		["Pattern: Chimeric Leggings"] = {
-			["H3540"] = 12800,
-			["H3539"] = 14400,
-			["mr"] = 12800,
 		},
 		["Monk's Staff of the Wolf"] = {
 			["H3537"] = 98886,
 			["mr"] = 98886,
 		},
-		["Pattern: Runecloth Gloves"] = {
-			["mr"] = 58900,
-			["cc"] = 9,
-			["id"] = "14481:0:0:0:0",
-			["sc"] = 2,
-			["H3539"] = 34500,
-			["H3542"] = 58900,
-		},
-		["Dervish Belt of the Eagle"] = {
-			["H3537"] = 12550,
-			["mr"] = 12550,
-		},
-		["Sorcerer Hat of Healing"] = {
-			["H3540"] = 50000,
-			["mr"] = 50000,
-			["H3539"] = 124191,
-		},
 		["Hourglass Sand"] = {
 			["H3540"] = 44800,
-			["mr"] = 44800,
+			["mr"] = 52238,
+			["H3543"] = 52238,
 			["H3539"] = 48999,
 		},
 		["Twilight Armor of Frozen Wrath"] = {
@@ -3395,252 +10683,79 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 75912,
 			["mr"] = 75912,
 		},
-		["Pattern: Hillman's Belt"] = {
-			["H3537"] = 9181,
-			["mr"] = 9181,
-		},
-		["Thistlefur Branch of Arcane Wrath"] = {
-			["H3537"] = 15000,
-			["mr"] = 15000,
+		["Nightshade Helmet of the Wolf"] = {
+			["H3537"] = 660000,
+			["mr"] = 660000,
 		},
 		["Rumsey Rum Light"] = {
 			["H3540"] = 229,
 			["H3539"] = 345,
-			["mr"] = 229,
+			["H3543"] = 315,
+			["mr"] = 315,
 		},
-		["Bandit Bracers of the Whale"] = {
-			["H3537"] = 2200,
-			["mr"] = 2200,
+		["Scaled Leather Leggings of the Owl"] = {
+			["H3539"] = 21825,
+			["mr"] = 21825,
 		},
-		["Brilliant Chromatic Scale"] = {
-			["H3540"] = 9800,
-			["H3539"] = 17000,
-			["mr"] = 9800,
-		},
-		["Rigid Cape of the Monkey"] = {
-			["mr"] = 20000,
-			["H3539"] = 20000,
-		},
-		["Elegant Gloves of the Eagle"] = {
-			["mr"] = 120000,
-			["sc"] = 1,
-			["H3529"] = 120000,
-			["id"] = "10214:0:0:874:0",
-			["cc"] = 4,
-		},
-		["Sentinel Trousers of the Monkey"] = {
-			["mr"] = 60504,
-			["cc"] = 4,
-			["id"] = "7440:0:0:611:0",
-			["sc"] = 2,
-			["H3539"] = 25686,
-			["H3542"] = 60504,
-		},
-		["Edged Bastard Sword of Stamina"] = {
-			["H3540"] = 5900,
-			["mr"] = 5900,
-		},
-		["Formula: Enchant 2H Weapon - Lesser Spirit"] = {
-			["H3537"] = 19999,
-			["mr"] = 19999,
-		},
-		["Aurora Cloak"] = {
-			["H3540"] = 15589,
-			["mr"] = 15589,
-		},
-		["Ceremonial Leather Harness"] = {
-			["mr"] = 4900,
-			["cc"] = 4,
-			["id"] = "3313:0:0:0:0",
-			["sc"] = 2,
-			["H3536"] = 4900,
-		},
-		["Leaden Mace of the Monkey"] = {
-			["mr"] = 7777,
-			["H3539"] = 7777,
-		},
-		["Orb of Mistmantle"] = {
-			["mr"] = 40000,
-			["cc"] = 4,
-			["id"] = "13031:0:0:0:0",
-			["sc"] = 0,
-			["H3540"] = 40000,
+		["Ebon Scimitar of Strength"] = {
+			["H3540"] = 35000,
+			["mr"] = 35000,
 		},
 		["Pattern: Ironfeather Breastplate"] = {
 			["H3540"] = 16665,
 			["mr"] = 16665,
 			["H3539"] = 97399,
 		},
-		["Feral Leggings of the Eagle"] = {
-			["H3537"] = 4695,
-			["mr"] = 4695,
+		["Orb of Mistmantle"] = {
+			["mr"] = 40000,
+			["sc"] = 0,
+			["H3540"] = 40000,
+			["id"] = "13031:0:0:0:0",
+			["cc"] = 4,
 		},
-		["Elegant Circlet of Healing"] = {
-			["H3540"] = 250000,
-			["mr"] = 250000,
+		["Shadowskin Gloves"] = {
+			["mr"] = 116472,
+			["cc"] = 4,
+			["H3539"] = 133082,
+			["id"] = "18238:0:0:0:0",
+			["H3540"] = 49998,
+			["H3543"] = 116472,
+			["sc"] = 2,
 		},
 		["Recipe: Transmute Water to Undeath"] = {
 			["H3540"] = 191586,
 			["H3539"] = 199500,
-			["mr"] = 191586,
+			["H3543"] = 178199,
+			["mr"] = 178199,
 		},
-		["Shadowskin Gloves"] = {
-			["mr"] = 49998,
-			["sc"] = 2,
-			["H3540"] = 49998,
-			["cc"] = 4,
-			["H3539"] = 133082,
-			["id"] = "18238:0:0:0:0",
+		["Umbral Wand of Fiery Wrath"] = {
+			["H3543"] = 70000,
+			["mr"] = 70000,
 		},
-		["Yellow Power Crystal"] = {
-			["mr"] = 5912,
-			["H3537"] = 6132,
-			["L3537"] = 5912,
+		["Swamp Pendant of Agility"] = {
+			["H3540"] = 53750,
+			["mr"] = 53750,
+			["H3539"] = 81133,
 		},
-		["Battlesmasher of Arcane Wrath"] = {
-			["mr"] = 10000,
-			["cc"] = 2,
-			["id"] = "15224:0:0:1802:0",
-			["sc"] = 4,
-			["H3540"] = 10000,
-		},
-		["Hacking Cleaver of the Wolf"] = {
-			["H3540"] = 15000,
-			["mr"] = 15000,
-		},
-		["Regal Robe of the Owl"] = {
-			["H3537"] = 59145,
-			["mr"] = 59145,
-		},
-		["Deadly Scope"] = {
-			["mr"] = 34899,
-			["H3539"] = 34899,
-		},
-		["Magister's Bindings"] = {
-			["mr"] = 175500,
-			["H3539"] = 175500,
-		},
-		["Starsight Tunic"] = {
-			["H3540"] = 19200,
-			["mr"] = 19200,
-			["H3539"] = 40199,
-		},
-		["Snickerfang Jowl"] = {
-			["H3540"] = 1799,
-			["H3539"] = 1946,
-			["mr"] = 1799,
-		},
-		["Shredder Operating Manual - Page 4"] = {
-			["H3539"] = 1379,
-			["sc"] = 0,
-			["cc"] = 15,
-			["H3540"] = 5000,
-			["id"] = "16648:0:0:0:0",
-			["mr"] = 4350,
-			["H3542"] = 4350,
-		},
-		["Elemental Sharpening Stone"] = {
-			["H3540"] = 122400,
-			["H3539"] = 121999,
-			["mr"] = 122400,
-		},
-		["Red Whelp Gloves"] = {
-			["mr"] = 499613,
-			["sc"] = 2,
-			["H3529"] = 499613,
-			["id"] = "7284:0:0:0:0",
-			["cc"] = 4,
-		},
-		["Knightly Longsword of the Tiger"] = {
-			["H3540"] = 14997,
-			["mr"] = 14997,
-		},
-		["Sequoia Branch of Strength"] = {
-			["H3540"] = 46464,
-			["mr"] = 46464,
-		},
-		["Edged Bastard Sword of the Tiger"] = {
-			["mr"] = 5000,
-			["H3539"] = 5000,
-		},
-		["Elder's Padded Armor of the Whale"] = {
-			["mr"] = 26098,
-			["H3539"] = 26098,
-		},
-		["Buccaneer's Robes of the Owl"] = {
-			["H3537"] = 25500,
-			["mr"] = 25500,
-		},
-		["Staff of Jordan"] = {
-			["H3540"] = 3005463,
-			["mr"] = 3005463,
-			["H3539"] = 2911550,
-		},
-		["Rigid Cape of Stamina"] = {
-			["H3540"] = 3000,
-			["mr"] = 3000,
-		},
-		["Greater Shadow Protection Potion"] = {
-			["H3540"] = 81950,
-			["H3539"] = 94000,
-			["mr"] = 81950,
+		["Chief Brigadier Girdle"] = {
+			["mr"] = 9000,
+			["H3543"] = 9000,
+			["H3539"] = 5052,
 		},
 		["High Councillor's Sash of Fiery Wrath"] = {
 			["H3540"] = 151803,
-			["mr"] = 151803,
+			["mr"] = 69998,
+			["H3543"] = 69998,
 			["H3539"] = 165000,
 		},
-		["Greenstone Talisman of the Boar"] = {
-			["mr"] = 371392,
-			["H3539"] = 371392,
+		["Pattern: Tough Scorpid Shoulders"] = {
+			["H3540"] = 16899,
+			["mr"] = 17200,
+			["H3543"] = 17200,
 		},
-		["Powerful Seaforium Charge"] = {
-			["H3540"] = 41999,
-			["mr"] = 41999,
-		},
-		["Thick Spider's Silk"] = {
-			["H3540"] = 733,
-			["H3539"] = 849,
-			["mr"] = 733,
-		},
-		["Jasper Link of Frost Resistance"] = {
-			["H3537"] = 1142499,
-			["mr"] = 1142499,
-		},
-		["Celestial Kilt of Fiery Wrath"] = {
-			["H3537"] = 70000,
-			["mr"] = 70000,
-		},
-		["Stringy Wolf Meat"] = {
-			["H3540"] = 699,
-			["mr"] = 699,
-			["H3539"] = 977,
-		},
-		["Red Hakkari Bijou"] = {
-			["H3540"] = 29398,
-			["H3539"] = 24526,
-			["mr"] = 29398,
-		},
-		["Wicked Leather Bracers"] = {
-			["mr"] = 24999,
-			["H3539"] = 24999,
-		},
-		["Thick Scale Breastplate of the Bear"] = {
-			["H3537"] = 8800,
-			["mr"] = 8800,
-		},
-		["Umbral Wand of Healing"] = {
-			["mr"] = 79500,
-			["H3539"] = 79500,
-		},
-		["Hefty Battlehammer of Power"] = {
-			["H3540"] = 50000,
-			["mr"] = 50000,
-		},
-		["Green Hills of Stranglethorn - Page 14"] = {
-			["H3540"] = 779,
-			["H3539"] = 2434,
-			["mr"] = 779,
+		["Quartz Ring of Fire Resistance"] = {
+			["H3543"] = 31275,
+			["mr"] = 31275,
 		},
 		["Pillager's Leggings of Strength"] = {
 			["H3537"] = 30000,
@@ -3649,68 +10764,20 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Scorching Wand"] = {
 			["H3540"] = 12000,
 			["H3539"] = 14000,
-			["mr"] = 12000,
+			["H3543"] = 17779,
+			["mr"] = 17779,
 		},
-		["White Bandit Mask"] = {
-			["H3540"] = 21999,
-			["mr"] = 21999,
-		},
-		["Recipe: Sagefish Delight"] = {
-			["H3537"] = 39276,
-			["mr"] = 39276,
-		},
-		["Chieftain's Shoulders of the Whale"] = {
-			["H3537"] = 35517,
-			["mr"] = 35517,
-		},
-		["Elixir of Superior Defense"] = {
-			["H3540"] = 34597,
-			["H3539"] = 34600,
-			["mr"] = 34597,
-		},
-		["Magus Long Staff of Healing"] = {
-			["mr"] = 350000,
-			["H3539"] = 350000,
-		},
-		["Rugged Hide"] = {
-			["H3540"] = 10600,
-			["mr"] = 10600,
-			["H3539"] = 8780,
-		},
-		["Elixir of the Sages"] = {
-			["mr"] = 39999,
-			["H3539"] = 39999,
+		["Ornate Pauldrons of the Wolf"] = {
+			["H3537"] = 70000,
+			["mr"] = 70000,
 		},
 		["Tyrant's Shield"] = {
 			["H3537"] = 86601,
 			["mr"] = 86601,
 		},
-		["Shredder Operating Manual - Page 9"] = {
-			["mr"] = 5000,
-			["sc"] = 0,
-			["id"] = "16653:0:0:0:0",
-			["cc"] = 15,
-			["H3542"] = 5000,
-		},
-		["Red Swashbuckler's Shirt"] = {
-			["mr"] = 99500,
-			["H3539"] = 99500,
-		},
-		["Bloodwoven Pads of the Wolf"] = {
-			["H3537"] = 12500,
-			["mr"] = 12500,
-		},
-		["Twilight Cowl of Intellect"] = {
-			["mr"] = 8600,
-			["H3539"] = 8600,
-		},
-		["Revenant Bracers of the Boar"] = {
-			["H3537"] = 100000,
-			["mr"] = 100000,
-		},
-		["Ravasaur Scale Boots"] = {
-			["H3537"] = 122467,
-			["mr"] = 122467,
+		["Sequoia Branch of the Boar"] = {
+			["H3540"] = 36142,
+			["mr"] = 36142,
 		},
 		["Recipe: Strider Stew"] = {
 			["H3537"] = 39000,
@@ -3719,133 +10786,62 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Jet Black Feather"] = {
 			["H3540"] = 345,
 			["H3539"] = 317,
-			["mr"] = 345,
+			["H3543"] = 650,
+			["mr"] = 650,
 		},
 		["Dokebi Boots"] = {
 			["H3537"] = 19524,
 			["mr"] = 19524,
 		},
-		["Recipe: Fire Protection Potion"] = {
-			["H3540"] = 39000,
-			["mr"] = 39000,
-		},
-		["Two of Portals"] = {
-			["H3540"] = 20800,
-			["H3539"] = 24499,
-			["mr"] = 20800,
+		["Northern Shortsword of Stamina"] = {
+			["H3540"] = 9700,
+			["mr"] = 4200,
+			["H3543"] = 4200,
+			["H3539"] = 6800,
 		},
 		["Masterwork Girdle of the Monkey"] = {
 			["H3537"] = 60000,
 			["mr"] = 60000,
 		},
-		["Swamp Pendant of Agility"] = {
-			["H3540"] = 53750,
-			["mr"] = 53750,
-			["H3539"] = 81133,
-		},
-		["Junglevine Wine"] = {
-			["H3537"] = 30695,
-			["mr"] = 30695,
-		},
-		["Councillor's Scepter of the Owl"] = {
-			["H3539"] = 149672,
-			["mr"] = 149672,
-		},
-		["Elegant Bracers of the Owl"] = {
-			["H3540"] = 80000,
-			["mr"] = 80000,
-		},
-		["Bloodspattered Loincloth of the Boar"] = {
-			["H3540"] = 4500,
-			["mr"] = 4500,
-		},
-		["Recipe: Holy Protection Potion"] = {
-			["H3540"] = 88500,
-			["mr"] = 88500,
-			["H3539"] = 88999,
-		},
-		["Bracers of Might"] = {
-			["H3540"] = 1665000,
-			["mr"] = 1665000,
-			["H3539"] = 637000,
-		},
 		["Emerald Gauntlets of Strength"] = {
 			["H3537"] = 30000,
 			["mr"] = 30000,
 		},
-		["Polished Jazeraint Armor"] = {
-			["H3539"] = 70000,
-			["mr"] = 70000,
+		["The Big One"] = {
+			["H3540"] = 46442,
+			["mr"] = 46442,
+			["H3539"] = 46443,
 		},
 		["Severing Axe of the Wolf"] = {
 			["H3537"] = 7000,
 			["mr"] = 7000,
 		},
 		["Aboriginal Sash of Fiery Wrath"] = {
-			["mr"] = 5015,
 			["H3539"] = 5015,
+			["mr"] = 5015,
 		},
-		["Hook Dagger of Agility"] = {
-			["mr"] = 30000,
-			["H3539"] = 30000,
-		},
-		["Bandit Cloak of Stamina"] = {
-			["mr"] = 6000,
-			["H3539"] = 6000,
-		},
-		["Edged Bastard Sword of the Whale"] = {
-			["H3540"] = 16524,
-			["mr"] = 16524,
-		},
-		["Bard's Gloves of the Monkey"] = {
-			["H3537"] = 5530,
-			["mr"] = 5530,
-		},
-		["Rune Thread"] = {
-			["H3537"] = 22500,
-			["mr"] = 22500,
+		["Speedsteel Rapier"] = {
+			["mr"] = 400000,
+			["H3543"] = 400000,
+			["H3539"] = 259545,
 		},
 		["Barbaric Cloth Gloves"] = {
-			["mr"] = 2500,
-			["sc"] = 1,
-			["H3540"] = 2500,
+			["mr"] = 5310,
 			["cc"] = 4,
 			["H3539"] = 4875,
 			["id"] = "3308:0:0:0:0",
-		},
-		["Arthas' Tears"] = {
-			["mr"] = 176,
-			["cc"] = 7,
-			["id"] = "8836:0:0:0:0",
-			["H3539"] = 255,
-			["sc"] = 0,
-			["H3540"] = 176,
-		},
-		["Arachnidian Branch of Healing"] = {
-			["H3540"] = 70000,
-			["mr"] = 70000,
-		},
-		["Superior Healing Potion"] = {
-			["H3540"] = 850,
-			["mr"] = 850,
-			["H3539"] = 785,
+			["H3540"] = 2500,
+			["H3543"] = 5310,
+			["sc"] = 1,
 		},
 		["Plans: Heartseeker"] = {
 			["H3540"] = 228913,
-			["mr"] = 228913,
-		},
-		["Conjurer's Breeches of the Eagle"] = {
-			["H3540"] = 50000,
-			["mr"] = 50000,
-			["H3539"] = 50000,
+			["mr"] = 47900,
+			["H3543"] = 47900,
 		},
 		["Trickster's Protector of the Owl"] = {
-			["H3537"] = 52466,
-			["mr"] = 52466,
-		},
-		["High Councillor's Cloak of the Whale"] = {
-			["H3540"] = 115126,
-			["mr"] = 115126,
+			["H3543"] = 53313,
+			["mr"] = 53313,
 		},
 		["Imposing Vest of Stamina"] = {
 			["H3537"] = 50000,
@@ -3855,77 +10851,23 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 23323,
 			["mr"] = 23323,
 		},
-		["Bloodwoven Cloak of the Whale"] = {
-			["H3540"] = 12132,
-			["mr"] = 12132,
+		["Quartz Ring of Nature Resistance"] = {
+			["H3543"] = 200000,
+			["mr"] = 200000,
 		},
-		["Pattern: Black Silk Pack"] = {
-			["H3540"] = 33357,
-			["mr"] = 33357,
-		},
-		["Banded Girdle of the Bear"] = {
-			["H3540"] = 90000,
-			["mr"] = 90000,
-		},
-		["Pattern: Frostweave Robe"] = {
-			["H3540"] = 29200,
-			["mr"] = 29200,
-			["H3539"] = 67000,
-		},
-		["Ivycloth Robe of the Eagle"] = {
-			["H3537"] = 13200,
-			["mr"] = 13200,
-		},
-		["Khadgar's Whisker"] = {
-			["mr"] = 2999,
-			["cc"] = 7,
-			["id"] = "3358:0:0:0:0",
-			["H3539"] = 2243,
-			["sc"] = 0,
-			["H3540"] = 2999,
-		},
-		["Recipe: Murloc Fin Soup"] = {
-			["mr"] = 99900,
-			["H3539"] = 99900,
+		["Thorium Headed Arrow"] = {
+			["H3540"] = 45,
+			["H3539"] = 39,
+			["H3543"] = 44,
+			["mr"] = 44,
 		},
 		["Ballast Maul of Strength"] = {
 			["H3537"] = 20000,
 			["mr"] = 20000,
 		},
-		["Spongy Morel"] = {
-			["mr"] = 497,
-			["sc"] = 0,
-			["id"] = "4606:0:0:0:0",
-			["cc"] = 0,
-			["H3543"] = 497,
-			["H3540"] = 5700,
-		},
-		["Ivory Wand of the Eagle"] = {
-			["H3537"] = 150000,
-			["mr"] = 150000,
-		},
-		["Defender Boots of the Eagle"] = {
-			["H3540"] = 4000,
-			["mr"] = 4000,
-		},
-		["Pattern: Bottomless Bag"] = {
-			["mr"] = 17990000,
-			["cc"] = 9,
-			["id"] = "14510:0:0:0:0",
-			["sc"] = 2,
-			["H3542"] = 17990000,
-		},
-		["Goblin Nutcracker of the Tiger"] = {
-			["H3540"] = 27200,
-			["mr"] = 27200,
-		},
-		["Sharpshooter Harquebus of the Eagle"] = {
-			["H3540"] = 124999,
-			["mr"] = 124999,
-		},
-		["Abyssal Plate Legplates of Restoration"] = {
-			["H3539"] = 399999,
-			["mr"] = 399999,
+		["Fortified Bracers of the Eagle"] = {
+			["H3543"] = 4400,
+			["mr"] = 4400,
 		},
 		["Raw Rainbow Fin Albacore"] = {
 			["mr"] = 499,
@@ -3934,262 +10876,129 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3543"] = 499,
 			["sc"] = 0,
 		},
-		["Mercenary Blade of Power"] = {
-			["H3540"] = 29727,
-			["mr"] = 29727,
-		},
-		["Nightfin Soup"] = {
-			["H3540"] = 11000,
-			["H3539"] = 10997,
-			["mr"] = 11000,
+		["Long Battle Bow"] = {
+			["H3537"] = 10084,
+			["mr"] = 10084,
 		},
 		["Ornate Mithril Shoulder"] = {
-			["H3537"] = 223000,
+			["H3543"] = 223000,
 			["mr"] = 223000,
 		},
-		["Dwarven Hatchet of Agility"] = {
-			["H3537"] = 3647,
-			["mr"] = 3647,
+		["Plans: Massive Iron Axe"] = {
+			["H3537"] = 23500,
+			["mr"] = 23500,
 		},
 		["Rumsey Rum Black Label"] = {
 			["H3540"] = 7783,
 			["H3539"] = 5740,
-			["mr"] = 7783,
+			["H3543"] = 5989,
+			["mr"] = 5989,
 		},
 		["Jet Loop of the Bear"] = {
 			["H3540"] = 42000,
 			["H3539"] = 65186,
 			["mr"] = 42000,
 		},
-		["Pattern: Barbaric Leggings"] = {
-			["mr"] = 49799,
-			["cc"] = 9,
-			["id"] = "5973:0:0:0:0",
-			["sc"] = 1,
-			["H3540"] = 49799,
+		["Sharpshooter Harquebus of the Eagle"] = {
+			["H3540"] = 124999,
+			["mr"] = 124999,
 		},
-		["Bloodspattered Sabatons of the Whale"] = {
-			["H3537"] = 8500,
-			["mr"] = 8500,
-		},
-		["Robe of the Magi"] = {
-			["mr"] = 150000,
-			["H3539"] = 150000,
-		},
-		["Peridot Circle of Frost Resistance"] = {
-			["H3540"] = 1757500,
-			["mr"] = 1757500,
-		},
-		["Lesser Magic Essence"] = {
-			["H3539"] = 496,
-			["sc"] = 0,
-			["H3540"] = 490,
-			["cc"] = 7,
-			["mr"] = 490,
-			["id"] = "10938:0:0:0:0",
-		},
-		["Sage's Gloves of Fiery Wrath"] = {
-			["H3540"] = 9900,
-			["mr"] = 9900,
-		},
-		["Necromancer Leggings"] = {
-			["mr"] = 195004,
-			["H3539"] = 195004,
+		["Razor's Edge"] = {
+			["H3543"] = 76966,
+			["mr"] = 76966,
 		},
 		["Scorpok Pincer"] = {
 			["H3540"] = 29500,
 			["H3539"] = 34799,
-			["mr"] = 29500,
+			["H3543"] = 31100,
+			["mr"] = 31100,
 		},
 		["The Eye of Shadow"] = {
 			["H3540"] = 2250000,
-			["mr"] = 2250000,
+			["mr"] = 2489999,
+			["H3543"] = 2489999,
 			["H3539"] = 2540000,
+		},
+		["Sage's Gloves of Fiery Wrath"] = {
+			["H3540"] = 9900,
+			["mr"] = 9900,
 		},
 		["Jagged Star of the Tiger"] = {
 			["H3540"] = 30000,
 			["mr"] = 30000,
 			["H3539"] = 30000,
 		},
-		["Pattern: Gloves of Spell Mastery"] = {
-			["mr"] = 7888888,
-			["sc"] = 2,
-			["H3529"] = 7888888,
-			["id"] = "14511:0:0:0:0",
-			["cc"] = 9,
-		},
-		["Shredder Operating Manual - Page 3"] = {
-			["mr"] = 7599,
-			["sc"] = 0,
-			["H3540"] = 5000,
-			["id"] = "16647:0:0:0:0",
-			["cc"] = 15,
-			["H3542"] = 7599,
-		},
-		["Wildheart Belt"] = {
-			["mr"] = 110000,
-			["H3539"] = 110000,
-		},
-		["Zephyr Cloak"] = {
-			["H3537"] = 2500000,
-			["mr"] = 2500000,
-		},
-		["Gothic Plate Gauntlets of Strength"] = {
-			["H3537"] = 32392,
-			["mr"] = 32392,
-		},
-		["Ironweb Spider Silk"] = {
-			["H3540"] = 5800,
-			["H3539"] = 4499,
-			["mr"] = 5800,
-		},
-		["Conjurer's Mantle of the Whale"] = {
-			["H3537"] = 11051,
-			["mr"] = 11051,
-		},
-		["Pink Mageweave Shirt"] = {
-			["mr"] = 199999,
-			["cc"] = 4,
-			["sc"] = 0,
-			["H3540"] = 199999,
-			["L3539"] = 199991,
-			["H3539"] = 199994,
-			["id"] = "10055:0:0:0:0",
-		},
-		["Sorcerer Sash of Healing"] = {
-			["H3537"] = 42807,
-			["mr"] = 42807,
-		},
-		["Unbridled Leggings"] = {
-			["H3537"] = 90000,
-			["mr"] = 90000,
-		},
 		["Red Mageweave Pants"] = {
 			["L3540"] = 68999,
-			["mr"] = 68999,
+			["mr"] = 49997,
 			["cc"] = 4,
 			["H3540"] = 69000,
-			["sc"] = 1,
 			["id"] = "10009:0:0:0:0",
-		},
-		["Pattern: Ghostweave Pants"] = {
-			["H3537"] = 6836357,
-			["mr"] = 6836357,
+			["H3543"] = 49997,
+			["sc"] = 1,
 		},
 		["Goldthorn"] = {
-			["mr"] = 1290,
-			["cc"] = 7,
-			["id"] = "3821:0:0:0:0",
 			["H3539"] = 1535,
+			["cc"] = 7,
 			["sc"] = 0,
 			["H3540"] = 1290,
+			["id"] = "3821:0:0:0:0",
+			["H3543"] = 1887,
+			["mr"] = 1887,
 		},
 		["Ranger Cord of the Owl"] = {
 			["H3540"] = 42421,
 			["mr"] = 42421,
 		},
-		["Twilight Robe of the Owl"] = {
-			["H3537"] = 12500,
-			["mr"] = 12500,
-		},
-		["Blackmouth Oil"] = {
-			["H3540"] = 11666,
-			["mr"] = 11666,
-			["H3539"] = 18025,
-		},
-		["Arcane Armor"] = {
-			["mr"] = 119900,
+		["Pink Mageweave Shirt"] = {
+			["mr"] = 149499,
+			["H3539"] = 199994,
 			["cc"] = 4,
-			["id"] = "8283:0:0:0:0",
-			["sc"] = 1,
-			["H3540"] = 119900,
+			["H3540"] = 199999,
+			["id"] = "10055:0:0:0:0",
+			["L3539"] = 199991,
+			["H3543"] = 149499,
+			["sc"] = 0,
 		},
-		["Gossamer Boots of the Eagle"] = {
-			["H3540"] = 158537,
-			["mr"] = 158537,
+		["Sorcerer Sash of Healing"] = {
+			["H3537"] = 42807,
+			["mr"] = 42807,
 		},
-		["Furious Falchion of the Monkey"] = {
-			["H3540"] = 44172,
-			["mr"] = 44172,
+		["Prairie Ring of the Wolf"] = {
+			["H3537"] = 45000,
+			["mr"] = 45000,
 		},
 		["Knight's Bracers of the Eagle"] = {
 			["mr"] = 9950,
+			["H3543"] = 9950,
 			["H3539"] = 9950,
 		},
 		["Soldier's Leggings of the Whale"] = {
-			["H3537"] = 7750,
+			["H3543"] = 7750,
 			["mr"] = 7750,
-		},
-		["Hunting Bow"] = {
-			["mr"] = 7000,
-			["cc"] = 2,
-			["id"] = "8180:0:0:0:0",
-			["sc"] = 2,
-			["H3542"] = 7000,
-		},
-		["Ornate Mithril Helm"] = {
-			["H3537"] = 70000,
-			["mr"] = 70000,
-		},
-		["Ebonclaw Reaver of the Monkey"] = {
-			["mr"] = 170352,
-			["H3539"] = 170352,
-		},
-		["Blue Dragonscale"] = {
-			["H3540"] = 1949,
-			["H3539"] = 2305,
-			["mr"] = 1949,
 		},
 		["Jazeraint Gauntlets of the Eagle"] = {
 			["H3540"] = 60000,
-			["mr"] = 60000,
-		},
-		["Toughened Leather Gloves"] = {
-			["mr"] = 148998,
-			["sc"] = 2,
-			["H3540"] = 148998,
-			["cc"] = 4,
-			["H3539"] = 206321,
-			["id"] = "4253:0:0:0:0",
+			["mr"] = 19410,
+			["H3543"] = 19410,
 		},
 		["Abyssal Cloth Handwraps of Restoration"] = {
 			["H3540"] = 73563,
 			["H3539"] = 145010,
-			["mr"] = 73563,
+			["H3543"] = 70526,
+			["mr"] = 70526,
 		},
 		["Plans: Thorium Bracers"] = {
-			["H3537"] = 9000,
-			["mr"] = 9000,
+			["H3543"] = 14800,
+			["mr"] = 14800,
 		},
-		["Drakewing Bands"] = {
-			["H3537"] = 30131,
-			["mr"] = 30131,
-		},
-		["Medium Armor Kit"] = {
-			["H3540"] = 1985,
-			["mr"] = 1985,
-		},
-		["Major Rejuvenation Potion"] = {
-			["mr"] = 149998,
-			["H3539"] = 149998,
-		},
-		["Aboriginal Sash of the Eagle"] = {
-			["H3537"] = 5525,
-			["mr"] = 5525,
-		},
-		["Nightslayer Belt"] = {
-			["mr"] = 4749999,
-			["H3537"] = 4750000,
-			["L3537"] = 4749999,
+		["Zulian Hacker of the Whale"] = {
+			["H3540"] = 5000000,
+			["mr"] = 5000000,
 		},
 		["Grunt's Handwraps of the Eagle"] = {
 			["H3537"] = 4900,
 			["mr"] = 4900,
-		},
-		["Scroll of Intellect IV"] = {
-			["H3540"] = 3997,
-			["H3539"] = 1900,
-			["mr"] = 3997,
 		},
 		["Huntsman's Boots of the Eagle"] = {
 			["H3540"] = 18940,
@@ -4199,148 +11008,58 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3540"] = 9500,
 			["mr"] = 9500,
 		},
-		["Scorpashi Shoulder Pads"] = {
-			["H3540"] = 45143,
-			["mr"] = 45143,
-		},
-		["Recipe: Lesser Stoneshield Potion"] = {
-			["H3540"] = 28204,
-			["mr"] = 28204,
-			["H3539"] = 30175,
+		["Stout Battlehammer of Stamina"] = {
+			["H3543"] = 10000,
+			["mr"] = 10000,
 		},
 		["Jagged Star of the Monkey"] = {
 			["H3540"] = 50000,
-			["mr"] = 50000,
+			["mr"] = 10000,
+			["H3543"] = 10000,
 		},
-		["Greater Mystic Essence"] = {
-			["H3540"] = 1798,
-			["id"] = "11135:0:0:0:0",
-			["H3542"] = 1285,
-			["L3540"] = 1795,
-			["mr"] = 1190,
-			["cc"] = 7,
-			["sc"] = 0,
-			["H3541"] = 1521,
-			["L3539"] = 1946,
-			["H3543"] = 1190,
-			["H3539"] = 2100,
-		},
-		["Gleaming Claymore of the Tiger"] = {
-			["mr"] = 6900,
-			["H3539"] = 6900,
-		},
-		["Pattern: Chimeric Vest"] = {
-			["H3540"] = 10800,
-			["H3539"] = 14600,
-			["mr"] = 10800,
-		},
-		["Gloom Reaper of the Whale"] = {
-			["H3540"] = 107568,
-			["mr"] = 107568,
+		["Skycaller"] = {
+			["H3543"] = 314999,
+			["mr"] = 314999,
 		},
 		["Recipe: Greater Nature Protection Potion"] = {
 			["H3540"] = 866000,
 			["H3539"] = 959454,
-			["mr"] = 866000,
-		},
-		["Aboriginal Footwraps of the Whale"] = {
-			["mr"] = 12041,
-			["H3539"] = 12041,
+			["H3543"] = 909000,
+			["mr"] = 909000,
 		},
 		["Herb Pouch"] = {
 			["H3537"] = 4500,
 			["mr"] = 4500,
 		},
-		["Tender Crocolisk Meat"] = {
-			["H3540"] = 334,
-			["H3539"] = 355,
-			["mr"] = 334,
-		},
-		["Ironfeather Breastplate"] = {
-			["mr"] = 699999,
-			["H3539"] = 699999,
-		},
-		["Recipe: Transmute Undeath to Water"] = {
-			["H3540"] = 5040000,
-			["H3539"] = 6990000,
-			["mr"] = 5040000,
-		},
 		["Phasing Boots of Nature Resistance"] = {
 			["H3540"] = 5499999,
 			["mr"] = 5499999,
 		},
-		["Tuxedo Pants"] = {
-			["H3540"] = 72555,
-			["mr"] = 72555,
-		},
-		["Chief Brigadier Shield"] = {
-			["H3537"] = 56000,
-			["mr"] = 56000,
+		["Recipe: Mightfish Steak"] = {
+			["H3543"] = 29900,
+			["mr"] = 29900,
 		},
 		["Wolfshead Helm"] = {
 			["H3540"] = 500000,
-			["mr"] = 500000,
-		},
-		["Abyssal Cloth Slippers of Sorcery"] = {
-			["H3540"] = 80676,
-			["mr"] = 80676,
-		},
-		["Glyphed Epaulets"] = {
-			["H3540"] = 19900,
-			["mr"] = 19900,
-			["H3539"] = 9900,
-		},
-		["Gryphonwing Long Bow"] = {
-			["mr"] = 198299,
-			["H3539"] = 198299,
-		},
-		["Ceremonial Buckler"] = {
-			["H3540"] = 4000,
-			["mr"] = 4000,
-		},
-		["Belt of the Ordained"] = {
-			["H3537"] = 450000,
-			["mr"] = 450000,
+			["mr"] = 285000,
+			["H3543"] = 285000,
 		},
 		["Runecloth Bandage"] = {
-			["mr"] = 4722,
+			["mr"] = 3900,
 			["cc"] = 0,
 			["id"] = "14529:0:0:0:0",
 			["sc"] = 0,
+			["H3543"] = 3900,
 			["H3542"] = 4722,
 		},
-		["High Chief's Shield of Defense"] = {
-			["H3537"] = 89899,
-			["mr"] = 89899,
+		["Celestial Belt of Fiery Wrath"] = {
+			["H3543"] = 520000,
+			["mr"] = 520000,
 		},
-		["Flask of Big Mojo"] = {
-			["mr"] = 12000,
-			["cc"] = 7,
-			["id"] = "8152:0:0:0:0",
-			["H3539"] = 10642,
-			["sc"] = 0,
-			["H3540"] = 12000,
-		},
-		["Bent Staff"] = {
-			["H3537"] = 47688,
-			["mr"] = 47688,
-		},
-		["Strong Troll's Blood Potion"] = {
-			["H3540"] = 5259,
-			["mr"] = 5259,
-			["H3539"] = 4000,
-		},
-		["Elegant Cloak of the Owl"] = {
-			["H3540"] = 150000,
-			["mr"] = 150000,
-		},
-		["Duskwoven Sandals of Frozen Wrath"] = {
-			["H3537"] = 55557,
-			["mr"] = 55557,
-		},
-		["Cat Carrier (Bombay)"] = {
-			["H3537"] = 200000,
-			["mr"] = 200000,
+		["Arachnidian Legguards of Fiery Wrath"] = {
+			["H3540"] = 40000,
+			["mr"] = 74048,
+			["H3543"] = 74048,
 		},
 		["Conjurer's Cloak of the Owl"] = {
 			["H3540"] = 15300,
@@ -4350,200 +11069,93 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 200,
 			["mr"] = 200,
 		},
-		["Plans: Golden Iron Destroyer"] = {
-			["H3540"] = 7313,
-			["H3539"] = 9199,
-			["mr"] = 7313,
-		},
 		["Wool Cloth"] = {
 			["id"] = "2592:0:0:0:0",
-			["cc"] = 7,
-			["H3539"] = 1026,
+			["H3540"] = 901,
+			["mr"] = 1190,
+			["L3541"] = 499,
 			["H3542"] = 995,
 			["L3540"] = 716,
-			["mr"] = 2849,
+			["H3539"] = 1026,
+			["cc"] = 7,
 			["sc"] = 0,
-			["L3539"] = 1020,
 			["H3541"] = 500,
-			["L3541"] = 499,
+			["L3539"] = 1020,
 			["H3543"] = 2849,
-			["H3540"] = 901,
+			["L3543"] = 1190,
 		},
-		["Recipe: Swiftness Potion"] = {
-			["H3540"] = 99500,
-			["mr"] = 99500,
-			["H3539"] = 87261,
-		},
-		["Scroll of Spirit III"] = {
-			["H3540"] = 1094,
-			["H3539"] = 1152,
-			["mr"] = 1094,
-		},
-		["Elegant Gloves of Fiery Wrath"] = {
-			["H3540"] = 179000,
-			["mr"] = 179000,
-			["H3539"] = 179499,
-		},
-		["Elegant Circlet of Fire Resistance"] = {
-			["H3537"] = 150000,
-			["mr"] = 150000,
-		},
-		["Gurubashi Coin"] = {
-			["H3540"] = 3607,
-			["H3539"] = 3500,
-			["mr"] = 3607,
+		["Scaled Leather Bracers of the Owl"] = {
+			["H3543"] = 14950,
+			["mr"] = 14950,
 		},
 		["Hunting Rifle"] = {
-			["mr"] = 17458,
+			["mr"] = 17023,
 			["cc"] = 2,
 			["id"] = "8181:0:0:0:0",
 			["sc"] = 3,
+			["H3543"] = 17023,
 			["H3542"] = 17458,
-		},
-		["Schematic: Catseye Ultra Goggles"] = {
-			["H3540"] = 69500,
-			["mr"] = 69500,
-			["H3539"] = 69900,
-		},
-		["Magician Staff of Stamina"] = {
-			["H3537"] = 29479,
-			["mr"] = 29479,
-		},
-		["Pattern: Raptor Hide Harness"] = {
-			["mr"] = 32173,
-			["H3539"] = 32173,
 		},
 		["Greater Eternal Essence"] = {
 			["H3539"] = 50998,
-			["sc"] = 0,
-			["H3540"] = 48199,
 			["cc"] = 7,
-			["mr"] = 48199,
+			["mr"] = 48800,
 			["id"] = "16203:0:0:0:0",
-		},
-		["Minor Mana Potion"] = {
-			["mr"] = 65,
-			["cc"] = 0,
-			["H3540"] = 65,
-			["H3539"] = 97,
-			["id"] = "2455:0:0:0:0",
+			["H3540"] = 48199,
+			["H3543"] = 48800,
 			["sc"] = 0,
 		},
-		["Venomshroud Mask"] = {
-			["H3537"] = 100000,
-			["mr"] = 100000,
+		["Formula: Enchant Chest - Lesser Mana"] = {
+			["H3537"] = 29000,
+			["mr"] = 29000,
 		},
-		["Deepfury Bracers"] = {
-			["H3539"] = 40000,
-			["mr"] = 40000,
-		},
-		["Frost Protection Potion"] = {
-			["H3539"] = 26809,
-			["mr"] = 26809,
-		},
-		["Superior Leggings of Spirit"] = {
-			["H3537"] = 20040,
-			["mr"] = 20040,
-		},
-		["Obsidian Greaves"] = {
-			["mr"] = 90000,
-			["H3537"] = 139500,
-			["L3537"] = 90000,
+		["Staff of Hale Magefire"] = {
+			["H3540"] = 269000,
+			["mr"] = 255717,
+			["H3543"] = 255717,
+			["H3539"] = 243359,
 		},
 		["Gleaming Claymore of the Bear"] = {
+			["cc"] = 2,
 			["mr"] = 7900,
-			["H3539"] = 9549,
 			["L3543"] = 7900,
-			["H3540"] = 9549,
 			["id"] = "15248:0:0:1188:0",
+			["H3540"] = 9549,
 			["sc"] = 8,
 			["H3543"] = 7999,
-			["cc"] = 2,
+			["H3539"] = 9549,
 		},
 		["Copper Ore"] = {
+			["H3539"] = 999,
 			["H3541"] = 505,
-			["mr"] = 950,
 			["sc"] = 0,
 			["cc"] = 7,
 			["id"] = "2770:0:0:0:0",
 			["H3540"] = 1394,
-			["H3543"] = 950,
-			["H3539"] = 999,
+			["H3543"] = 1000,
+			["mr"] = 1000,
 		},
-		["Twilight Pants of the Owl"] = {
-			["mr"] = 19600,
-			["H3539"] = 19600,
-		},
-		["Renegade Chestguard of the Bear"] = {
-			["H3540"] = 56462,
-			["mr"] = 56462,
-			["H3539"] = 30000,
-		},
-		["Sungrass"] = {
-			["L3540"] = 1200,
-			["mr"] = 1200,
-			["cc"] = 7,
-			["H3540"] = 1205,
-			["H3539"] = 1362,
-			["sc"] = 0,
-			["id"] = "8838:0:0:0:0",
-		},
-		["Zulian Coin"] = {
-			["H3540"] = 3299,
-			["H3539"] = 2900,
-			["mr"] = 3299,
-		},
-		["Vorpal Dagger of Strength"] = {
-			["mr"] = 57133,
-			["H3539"] = 57133,
-		},
-		["Raider Shortsword of Strength"] = {
-			["H3537"] = 2800,
-			["mr"] = 2800,
-		},
-		["Templar Chestplate of Power"] = {
-			["H3540"] = 155000,
-			["mr"] = 155000,
-		},
-		["Shadoweave Shoulders"] = {
-			["H3540"] = 119499,
-			["mr"] = 119499,
-			["H3539"] = 138497,
+		["Plans: Heavy Mithril Helm"] = {
+			["H3540"] = 6895,
+			["mr"] = 29000,
+			["H3543"] = 29000,
+			["H3539"] = 8000,
 		},
 		["Master's Bracers of Fiery Wrath"] = {
 			["H3540"] = 465999,
-			["mr"] = 465999,
+			["mr"] = 199499,
+			["H3543"] = 199499,
 			["H3539"] = 467280,
 		},
-		["Prospector's Cloak"] = {
-			["mr"] = 5539,
-			["H3539"] = 5539,
-		},
-		["Engraved Wall of Stamina"] = {
-			["H3540"] = 108000,
-			["mr"] = 108000,
-		},
-		["Crisp Spider Meat"] = {
-			["H3540"] = 122,
-			["H3539"] = 128,
-			["mr"] = 122,
-		},
 		["Woven Bracers"] = {
-			["mr"] = 1000,
 			["H3539"] = 1000,
-		},
-		["Short Bastard Sword of the Wolf"] = {
-			["H3537"] = 32525,
-			["mr"] = 32525,
+			["mr"] = 1000,
 		},
 		["Dragonbreath Chili"] = {
 			["H3540"] = 29249,
-			["mr"] = 29249,
+			["mr"] = 13000,
+			["H3543"] = 13000,
 			["H3539"] = 29999,
-		},
-		["Lightforge Bracers"] = {
-			["H3537"] = 82942,
-			["mr"] = 82942,
 		},
 		["Schematic: Goblin Jumper Cables XL"] = {
 			["H3537"] = 144000,
@@ -4551,15 +11163,8 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Libram of Voracity"] = {
 			["H3540"] = 3400000,
-			["mr"] = 3400000,
-		},
-		["Dawn's Edge"] = {
-			["H3537"] = 2571563,
-			["mr"] = 2571563,
-		},
-		["Ballast Maul of Stamina"] = {
-			["H3540"] = 120924,
-			["mr"] = 120924,
+			["mr"] = 2389898,
+			["H3543"] = 2389898,
 		},
 		["Nightshade Armguards of Nature's Wrath"] = {
 			["H3537"] = 150000,
@@ -4569,26 +11174,15 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 4900,
 			["mr"] = 4900,
 		},
-		["Shadow Protection Potion"] = {
-			["H3540"] = 20399,
-			["H3539"] = 22396,
-			["mr"] = 20399,
-		},
 		["Plans: Green Iron Gauntlets"] = {
 			["H3537"] = 79375,
 			["mr"] = 79375,
 		},
-		["Gargoyle's Bite"] = {
-			["H3539"] = 50000,
-			["cc"] = 2,
-			["id"] = "12989:0:0:0:0",
-			["mr"] = 70738,
-			["sc"] = 6,
-			["H3542"] = 70738,
-		},
-		["Carnelian Loop of Arcane Resistance"] = {
-			["H3537"] = 48907,
-			["mr"] = 48907,
+		["Large Radiant Shard"] = {
+			["H3540"] = 49500,
+			["mr"] = 88000,
+			["H3543"] = 88000,
+			["H3539"] = 62888,
 		},
 		["Pattern: Chimeric Boots"] = {
 			["H3537"] = 6300,
@@ -4597,58 +11191,25 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Greater Magic Wand"] = {
 			["H3540"] = 3999,
 			["H3539"] = 4875,
-			["mr"] = 3999,
+			["H3543"] = 2500,
+			["mr"] = 2500,
 		},
 		["Razor Blade of Power"] = {
-			["mr"] = 80000,
 			["H3539"] = 80000,
+			["mr"] = 80000,
 		},
-		["Shimmering Cloak of Fiery Wrath"] = {
-			["mr"] = 12354,
-			["H3539"] = 12354,
+		["Adventurer's Boots of Agility"] = {
+			["H3537"] = 99900,
+			["mr"] = 99900,
 		},
-		["Bloodforged Bindings of Stamina"] = {
-			["mr"] = 17090,
-			["H3537"] = 21090,
-			["L3537"] = 17090,
+		["Schematic: Thorium Grenade"] = {
+			["H3540"] = 88995,
+			["H3539"] = 50945,
+			["mr"] = 88995,
 		},
-		["Green Hills of Stranglethorn - Page 8"] = {
-			["H3540"] = 895,
-			["H3539"] = 2800,
-			["mr"] = 895,
-		},
-		["Gold Ore"] = {
-			["mr"] = 1810,
-			["cc"] = 7,
-			["H3539"] = 2165,
-			["id"] = "2776:0:0:0:0",
-			["sc"] = 0,
-			["H3543"] = 1810,
-			["H3540"] = 2761,
-		},
-		["Recipe: Carrion Surprise"] = {
-			["H3537"] = 19999,
-			["mr"] = 19999,
-		},
-		["Smoked Desert Dumplings"] = {
-			["H3540"] = 20600,
-			["H3539"] = 23000,
-			["mr"] = 20600,
-		},
-		["Pulsating Hydra Heart"] = {
-			["mr"] = 19998,
-			["cc"] = 4,
-			["id"] = "5183:0:0:0:0",
-			["sc"] = 0,
-			["H3539"] = 45000,
-			["H3542"] = 19998,
-		},
-		["Rose Colored Goggles"] = {
-			["mr"] = 30000,
-			["cc"] = 4,
-			["id"] = "10503:0:0:0:0",
-			["H3543"] = 30000,
-			["sc"] = 1,
+		["Sergeant's Warhammer of Stamina"] = {
+			["H3539"] = 6900,
+			["mr"] = 6900,
 		},
 		["Archer's Cap of the Bear"] = {
 			["H3537"] = 133560,
@@ -4659,334 +11220,130 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3539"] = 289899,
 			["mr"] = 175500,
 		},
-		["Dark Leather Belt"] = {
-			["mr"] = 11099,
-			["H3539"] = 11099,
-		},
 		["Curved Dagger of Frozen Wrath"] = {
-			["mr"] = 10098,
 			["H3539"] = 10098,
+			["mr"] = 10098,
 		},
-		["Merc Sword of the Wolf"] = {
-			["H3540"] = 5000,
-			["mr"] = 5000,
-			["H3539"] = 5000,
+		["Bonecaster's Belt of Intellect"] = {
+			["H3537"] = 149978,
+			["mr"] = 149978,
 		},
-		["Magister's Gloves"] = {
-			["H3539"] = 48750,
-			["sc"] = 1,
-			["id"] = "16684:0:0:0:0",
-			["cc"] = 4,
-			["mr"] = 48750,
-		},
-		["Gossamer Cape of the Whale"] = {
-			["H3537"] = 12891,
-			["mr"] = 12891,
-		},
-		["Grunt's Belt of the Boar"] = {
-			["mr"] = 8967,
-			["H3539"] = 8967,
-		},
-		["Solid Weightstone"] = {
-			["H3537"] = 60000,
-			["mr"] = 60000,
-		},
-		["Gloves of Holy Might"] = {
-			["mr"] = 290000,
-			["sc"] = 2,
-			["H3540"] = 290000,
-			["cc"] = 4,
-			["id"] = "867:0:0:0:0",
-		},
-		["Shadoweave Pants"] = {
-			["H3540"] = 119999,
-			["mr"] = 119999,
-			["H3539"] = 119996,
-		},
-		["Scroll of Protection IV"] = {
-			["H3539"] = 1975,
-			["mr"] = 1975,
-		},
-		["Spiked Club of the Monkey"] = {
-			["H3540"] = 7320,
-			["mr"] = 7320,
-			["H3539"] = 1848,
+		["Dark Leather Belt"] = {
+			["H3539"] = 11099,
+			["mr"] = 11099,
 		},
 		["Jet Loop of the Boar"] = {
 			["H3540"] = 66451,
 			["mr"] = 66451,
 		},
-		["Scroll of Spirit"] = {
-			["mr"] = 949,
-			["H3539"] = 949,
-		},
-		["Field Plate Gauntlets of the Gorilla"] = {
-			["mr"] = 10000,
-			["H3539"] = 10000,
-		},
 		["Heaven's Light"] = {
-			["mr"] = 79600,
 			["H3539"] = 79600,
-		},
-		["Green Hills of Stranglethorn - Page 20"] = {
-			["H3540"] = 898,
-			["H3539"] = 4999,
-			["mr"] = 898,
-		},
-		["Solstice Staff of the Monkey"] = {
-			["H3537"] = 137783,
-			["mr"] = 137783,
-		},
-		["Phalanx Leggings of the Bear"] = {
-			["H3540"] = 20000,
-			["mr"] = 20000,
-		},
-		["Pattern: Flarecore Wraps"] = {
-			["mr"] = 1147499,
-			["cc"] = 9,
-			["H3539"] = 989000,
-			["id"] = "18265:0:0:0:0",
-			["sc"] = 2,
-			["H3543"] = 1147499,
-			["H3540"] = 1320000,
-		},
-		["Grunt's Cape of Defense"] = {
-			["H3540"] = 2000,
-			["mr"] = 2000,
-		},
-		["Blackforge Girdle"] = {
-			["H3537"] = 53736,
-			["mr"] = 53736,
+			["mr"] = 79600,
 		},
 		["The Butcher"] = {
 			["H3540"] = 249999,
 			["H3539"] = 160000,
-			["mr"] = 249999,
-		},
-		["Simple Robe of Shadow Wrath"] = {
-			["H3537"] = 12000,
-			["mr"] = 12000,
+			["H3543"] = 199900,
+			["mr"] = 199900,
 		},
 		["Battleforge Girdle of the Gorilla"] = {
 			["H3537"] = 7200,
 			["mr"] = 7200,
 		},
-		["Gloves of Spell Mastery"] = {
-			["H3537"] = 8999999,
-			["mr"] = 8999999,
-		},
-		["Blackfang"] = {
-			["H3537"] = 106989,
-			["mr"] = 106989,
-		},
-		["Scalping Tomahawk of Agility"] = {
-			["H3537"] = 2500,
-			["mr"] = 2500,
-		},
-		["Sturdy Quarterstaff of the Bear"] = {
-			["mr"] = 1999,
-			["H3539"] = 1999,
+		["Imposing Boots of the Owl"] = {
+			["H3537"] = 199500,
+			["mr"] = 199500,
 		},
 		["Banded Girdle of the Whale"] = {
 			["H3540"] = 88050,
 			["mr"] = 88050,
 		},
-		["Dreadmist Wraps"] = {
-			["H3540"] = 139998,
-			["mr"] = 139998,
-			["H3539"] = 180000,
-		},
-		["Plans: Heavy Mithril Helm"] = {
-			["H3540"] = 6895,
-			["mr"] = 6895,
-			["H3539"] = 8000,
-		},
-		["Giantstalker's Belt"] = {
-			["H3540"] = 1099999,
-			["H3539"] = 1542938,
-			["mr"] = 1099999,
-		},
-		["Ranger Cord of the Whale"] = {
-			["mr"] = 21881,
-			["H3539"] = 21881,
-		},
-		["The Arcanist's Cookbook"] = {
-			["mr"] = 6700,
-			["cc"] = 15,
-			["H3540"] = 6700,
-			["H3539"] = 7720,
-			["id"] = "18358:0:0:0:0",
-			["sc"] = 0,
-		},
-		["Pattern: Volcanic Leggings"] = {
-			["H3539"] = 56999,
-			["mr"] = 56999,
+		["Razorlash Root"] = {
+			["mr"] = 19800,
+			["H3543"] = 19800,
+			["H3539"] = 7499,
 		},
 		["Gromsblood"] = {
-			["mr"] = 9299,
-			["cc"] = 7,
-			["H3540"] = 9299,
 			["H3539"] = 7999,
-			["id"] = "8846:0:0:0:0",
 			["sc"] = 0,
-		},
-		["Sequoia Branch of the Whale"] = {
-			["H3540"] = 40500,
-			["mr"] = 40500,
-		},
-		["Elemental Attuned Blade"] = {
-			["H3537"] = 17470000,
-			["mr"] = 17470000,
+			["H3540"] = 9299,
+			["id"] = "8846:0:0:0:0",
+			["cc"] = 7,
+			["H3543"] = 9500,
+			["mr"] = 9500,
 		},
 		["Stout Battlehammer of the Monkey"] = {
 			["H3540"] = 6725,
 			["mr"] = 6725,
 		},
-		["Meaty Bat Wing"] = {
-			["mr"] = 1000,
-			["H3539"] = 1000,
-		},
-		["Iron Buckle"] = {
-			["H3540"] = 4999,
-			["mr"] = 4999,
-			["H3539"] = 4000,
+		["34 Pound Redgill"] = {
+			["H3540"] = 35552,
+			["H3539"] = 35554,
+			["mr"] = 35552,
 		},
 		["Renegade Boots of the Bear"] = {
-			["H3539"] = 36900,
 			["mr"] = 36900,
-		},
-		["Resplendent Belt of the Wolf"] = {
-			["mr"] = 40000,
-			["H3539"] = 40000,
-		},
-		["Pattern: Wicked Leather Headband"] = {
-			["H3539"] = 30000,
-			["sc"] = 1,
-			["id"] = "15744:0:0:0:0",
-			["cc"] = 9,
-			["mr"] = 30000,
+			["H3539"] = 36900,
 		},
 		["Stonecutter Claymore of the Tiger"] = {
 			["mr"] = 30000,
-			["L3543"] = 30000,
 			["cc"] = 2,
+			["L3543"] = 30000,
 			["H3540"] = 40000,
 			["id"] = "3197:0:0:692:0",
 			["H3543"] = 111540,
 			["sc"] = 8,
 		},
-		["Tuxedo Shirt"] = {
-			["H3540"] = 74499,
-			["mr"] = 74499,
-		},
-		["Turtle Meat"] = {
-			["H3540"] = 339,
-			["mr"] = 339,
-			["H3539"] = 368,
+		["Frostmaul E'ko"] = {
+			["H3540"] = 45000,
+			["H3539"] = 47773,
+			["H3543"] = 46393,
+			["mr"] = 46393,
 		},
 		["Fortified Chain of the Bear"] = {
 			["H3537"] = 10000,
 			["mr"] = 10000,
 		},
 		["Recipe: Transmute Arcanite"] = {
-			["mr"] = 78500,
-			["sc"] = 6,
-			["id"] = "12958:0:0:0:0",
+			["mr"] = 78499,
 			["cc"] = 9,
 			["H3540"] = 78500,
+			["id"] = "12958:0:0:0:0",
+			["H3543"] = 78499,
+			["sc"] = 6,
 		},
-		["Feet of the Lynx"] = {
-			["H3540"] = 580000,
-			["mr"] = 580000,
-			["H3539"] = 798750,
-		},
-		["Adventurer's Bracers of the Monkey"] = {
-			["H3537"] = 198999,
-			["mr"] = 198999,
-		},
-		["Mindthrust Bracers"] = {
-			["mr"] = 189000,
-			["H3539"] = 189000,
-		},
-		["Stringy Vulture Meat"] = {
-			["mr"] = 999,
-			["H3537"] = 1500,
-			["L3537"] = 999,
+		["Tuxedo Shirt"] = {
+			["H3540"] = 74499,
+			["mr"] = 199000,
+			["H3543"] = 199000,
 		},
 		["Elegant Tunic of the Owl"] = {
-			["H3537"] = 409059,
-			["mr"] = 409059,
+			["H3543"] = 499994,
+			["mr"] = 499994,
 		},
 		["Pitchfork"] = {
 			["H3537"] = 140000,
 			["mr"] = 140000,
 		},
-		["Frostsaber E'ko"] = {
-			["H3540"] = 16895,
-			["H3539"] = 14900,
-			["mr"] = 16895,
-		},
-		["Sorcerer Cloak of the Eagle"] = {
-			["mr"] = 10000,
-			["H3539"] = 10000,
-		},
-		["Recipe: Elixir of Brute Force"] = {
-			["mr"] = 2500000,
-			["H3539"] = 2500000,
-		},
-		["Ballast Maul of the Whale"] = {
-			["mr"] = 47700,
-			["H3539"] = 47700,
-		},
 		["Turtle Scale Gloves"] = {
 			["H3537"] = 177472,
 			["mr"] = 177472,
 		},
-		["Splitting Hatchet of Agility"] = {
-			["H3537"] = 21277,
-			["mr"] = 21277,
+		["Ballast Maul of the Whale"] = {
+			["H3539"] = 47700,
+			["mr"] = 47700,
 		},
-		["Plated Fist of Hakoo"] = {
-			["H3540"] = 60000,
-			["mr"] = 60000,
+		["World Enlarger"] = {
+			["H3537"] = 385000,
+			["mr"] = 385000,
 		},
-		["Scaled Leather Shoulders of the Eagle"] = {
-			["mr"] = 10000,
-			["cc"] = 4,
-			["id"] = "9834:0:0:854:0",
-			["sc"] = 2,
-			["H3536"] = 10000,
-		},
-		["Truesilver Ore"] = {
-			["H3540"] = 870,
-			["H3542"] = 1000,
-			["mr"] = 935,
-			["L3543"] = 935,
-			["cc"] = 7,
-			["sc"] = 0,
-			["H3539"] = 790,
-			["H3543"] = 948,
-			["id"] = "7911:0:0:0:0",
+		["Grinning Axe of Stamina"] = {
+			["H3543"] = 55000,
+			["mr"] = 55000,
 		},
 		["Pattern: Green Whelp Bracers"] = {
 			["H3540"] = 29600,
 			["mr"] = 29600,
-		},
-		["Crest of Beckoning: Water"] = {
-			["mr"] = 317999,
-			["H3539"] = 317999,
-		},
-		["Commander's Armor of Fire Resistance"] = {
-			["mr"] = 500000,
-			["sc"] = 4,
-			["id"] = "10378:0:0:1425:0",
-			["cc"] = 4,
-			["H3543"] = 500000,
-			["H3540"] = 500000,
-		},
-		["Shadoweave Mask"] = {
-			["H3537"] = 142007,
-			["mr"] = 142007,
 		},
 		["Wisdom of the Timbermaw"] = {
 			["H3537"] = 700000,
@@ -4996,45 +11353,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3540"] = 55000,
 			["mr"] = 55000,
 		},
-		["Aquadynamic Fish Attractor"] = {
-			["H3540"] = 4176,
-			["H3539"] = 5500,
-			["mr"] = 4176,
-		},
 		["Five of Elementals"] = {
 			["H3540"] = 329999,
-			["mr"] = 329999,
+			["mr"] = 39800,
+			["H3543"] = 39800,
 		},
-		["High Councillor's Cloak of Frozen Wrath"] = {
-			["H3540"] = 200000,
-			["mr"] = 200000,
-			["H3539"] = 200000,
+		["Feral Cloak of Intellect"] = {
+			["H3543"] = 4999,
+			["mr"] = 4999,
 		},
-		["Large Blue Sack"] = {
-			["H3540"] = 9999,
-			["H3539"] = 13595,
-			["mr"] = 9999,
-		},
-		["Wild Thornroot"] = {
-			["mr"] = 7000,
-			["H3539"] = 7000,
-		},
-		["Sleeveless T-Shirt"] = {
-			["H3540"] = 2666,
-			["mr"] = 2666,
-		},
-		["Rugged Leather"] = {
-			["H3539"] = 4125,
-			["sc"] = 0,
-			["H3540"] = 1545,
-			["cc"] = 7,
-			["mr"] = 1545,
-			["id"] = "8170:0:0:0:0",
-		},
-		["Two of Elementals"] = {
-			["mr"] = 169223,
-			["H3537"] = 173562,
-			["L3537"] = 169223,
+		["Schematic: Truesilver Transformer"] = {
+			["mr"] = 459000,
+			["H3537"] = 459900,
+			["L3537"] = 459000,
 		},
 		["Recipe: Transmute Mithril to Truesilver"] = {
 			["mr"] = 20000,
@@ -5042,563 +11373,173 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["L3537"] = 20000,
 		},
 		["Arcane Leggings"] = {
-			["mr"] = 79999,
-			["sc"] = 1,
-			["id"] = "8289:0:0:0:0",
+			["mr"] = 48798,
 			["cc"] = 4,
 			["H3540"] = 79999,
+			["id"] = "8289:0:0:0:0",
+			["H3543"] = 48798,
+			["sc"] = 1,
 		},
-		["Exquisite Flamberge of the Tiger"] = {
-			["H3540"] = 51295,
-			["mr"] = 51295,
-			["H3539"] = 34900,
+		["Knight's Breastplate of the Boar"] = {
+			["mr"] = 70980,
+			["H3543"] = 70980,
+			["H3539"] = 77278,
 		},
-		["Lesser Invisibility Potion"] = {
-			["H3540"] = 25599,
-			["H3539"] = 28000,
-			["mr"] = 25599,
+		["Pattern: Runecloth Tunic"] = {
+			["sc"] = 2,
+			["H3539"] = 25924,
+			["cc"] = 9,
+			["id"] = "14470:0:0:0:0",
+			["H3540"] = 50000,
+			["mr"] = 10000,
+			["H3543"] = 10000,
+			["H3542"] = 11200,
 		},
 		["Swashbuckler's Shoulderpads of the Eagle"] = {
 			["H3540"] = 30100,
 			["mr"] = 30100,
 		},
-		["Pattern: Runic Leather Bracers"] = {
-			["mr"] = 9900,
-			["cc"] = 9,
-			["id"] = "15739:0:0:0:0",
-			["sc"] = 1,
-			["H3539"] = 9900,
-		},
-		["Scroll of Stamina"] = {
-			["H3540"] = 1975,
-			["mr"] = 1975,
-			["H3539"] = 1985,
-		},
-		["Schematic: Arcanite Dragonling"] = {
-			["mr"] = 1220000,
-			["sc"] = 3,
-			["id"] = "16054:0:0:0:0",
-			["cc"] = 9,
-			["H3540"] = 1220000,
-		},
-		["Pattern: Dark Leather Gloves"] = {
-			["mr"] = 7699,
-			["sc"] = 1,
-			["id"] = "7360:0:0:0:0",
-			["cc"] = 9,
-			["H3539"] = 7699,
-		},
-		["Knight's Breastplate of the Boar"] = {
-			["mr"] = 77278,
-			["H3539"] = 77278,
-		},
-		["Pattern: Runecloth Tunic"] = {
-			["H3539"] = 25924,
-			["sc"] = 2,
-			["cc"] = 9,
-			["H3540"] = 50000,
-			["id"] = "14470:0:0:0:0",
-			["mr"] = 11200,
-			["H3542"] = 11200,
-		},
-		["Grilled Squid"] = {
-			["H3540"] = 13790,
-			["H3539"] = 14270,
-			["mr"] = 13790,
-		},
-		["Sorcerer Bracelets of Healing"] = {
-			["H3540"] = 31278,
-			["mr"] = 31278,
-		},
 		["Dreadblade of Stamina"] = {
-			["mr"] = 49759,
 			["H3539"] = 49759,
-		},
-		["Commander's Boots of the Bear"] = {
-			["H3540"] = 35400,
-			["mr"] = 35400,
-		},
-		["Green Dragonscale"] = {
-			["H3540"] = 2900,
-			["H3539"] = 4687,
-			["mr"] = 2900,
-		},
-		["Gaea's Cloak of the Owl"] = {
-			["H3537"] = 27900,
-			["mr"] = 27900,
-		},
-		["Splitting Hatchet of the Boar"] = {
-			["mr"] = 20000,
-			["cc"] = 2,
-			["id"] = "15231:0:0:1101:0",
-			["sc"] = 0,
-			["H3539"] = 30876,
-			["H3542"] = 20000,
-		},
-		["Infantry Tunic of the Boar"] = {
-			["H3537"] = 2200,
-			["mr"] = 2200,
-		},
-		["Blanchard's Stout"] = {
-			["H3537"] = 299900,
-			["mr"] = 299900,
+			["mr"] = 49759,
 		},
 		["Furen's Boots"] = {
 			["H3537"] = 63375,
 			["mr"] = 63375,
 		},
-		["Codex: Prayer of Fortitude II"] = {
-			["H3540"] = 129900,
-			["mr"] = 129900,
-			["H3539"] = 18200,
-		},
 		["Blue Linen Shirt"] = {
 			["H3540"] = 1995,
 			["H3539"] = 11599,
-			["mr"] = 1995,
+			["H3543"] = 7997,
+			["mr"] = 7997,
 		},
 		["Flying Tiger Goggles"] = {
 			["H3539"] = 2500,
+			["H3543"] = 2500,
 			["mr"] = 2500,
 		},
-		["Golden Pearl"] = {
-			["H3540"] = 709900,
-			["H3539"] = 797500,
-			["mr"] = 709900,
-		},
-		["Gaea's Cloak of Frozen Wrath"] = {
-			["H3540"] = 24422,
-			["mr"] = 24422,
-		},
-		["Plans: Arcanite Reaper"] = {
-			["mr"] = 400000,
-			["cc"] = 9,
-			["id"] = "12838:0:0:0:0",
-			["sc"] = 4,
-			["H3540"] = 400000,
+		["Longjaw Mud Snapper"] = {
+			["H3537"] = 1000,
+			["mr"] = 1000,
 		},
 		["Iridium Circle of the Owl"] = {
 			["H3540"] = 49999,
 			["mr"] = 49999,
 		},
-		["Imperial Plate Leggings"] = {
-			["H3537"] = 99999,
-			["mr"] = 99999,
-		},
 		["Great Rage Potion"] = {
 			["H3540"] = 10000,
 			["H3539"] = 11187,
-			["mr"] = 10000,
+			["H3543"] = 12000,
+			["mr"] = 12000,
 		},
-		["Blue Power Crystal"] = {
-			["mr"] = 1249,
-			["H3539"] = 1249,
-		},
-		["Hematite Link of Shadow Resistance"] = {
-			["H3540"] = 300000,
-			["H3539"] = 87750,
-			["mr"] = 300000,
-		},
-		["Forest Leather Boots"] = {
-			["mr"] = 12549,
-			["H3537"] = 18150,
-			["L3537"] = 12549,
-		},
-		["Bloodspattered Gloves of the Bear"] = {
-			["H3537"] = 11360,
-			["mr"] = 11360,
-		},
-		["Unadorned Seal of Ascension"] = {
-			["mr"] = 1390,
-			["H3539"] = 1390,
-		},
-		["Runed Stygian Leggings"] = {
-			["H3540"] = 1952400,
-			["mr"] = 1952400,
-			["H3539"] = 2817000,
+		["Ritual Leggings of the Falcon"] = {
+			["H3543"] = 8912,
+			["mr"] = 8912,
 		},
 		["Embersilk Stave of Spirit"] = {
 			["H3537"] = 13309,
 			["mr"] = 13309,
 		},
-		["Pattern: Runecloth Bag"] = {
-			["mr"] = 64702,
-			["cc"] = 9,
-			["H3539"] = 36956,
-			["id"] = "14468:0:0:0:0",
-			["sc"] = 2,
-			["H3540"] = 93871,
-			["H3542"] = 64702,
-		},
-		["Sentinel Girdle of Defense"] = {
-			["H3537"] = 71105,
-			["mr"] = 71105,
-		},
-		["Elegant Cloak of the Eagle"] = {
-			["H3540"] = 89000,
-			["mr"] = 89000,
-			["H3539"] = 89500,
-		},
 		["Darksoul Shoulders"] = {
 			["H3539"] = 749999,
-			["mr"] = 749999,
+			["H3543"] = 1099999,
+			["mr"] = 1099999,
 		},
 		["White Spider Meat"] = {
 			["H3540"] = 1765,
 			["H3539"] = 400,
-			["mr"] = 1765,
+			["H3543"] = 640,
+			["mr"] = 640,
 		},
-		["Renegade Circlet of the Bear"] = {
-			["H3537"] = 27000,
-			["mr"] = 27000,
-		},
-		["Schematic: Ultra-Flash Shadow Reflector"] = {
-			["H3540"] = 594750,
-			["mr"] = 594750,
+		["Glyphed Buckler"] = {
+			["H3543"] = 12999,
+			["mr"] = 12999,
 		},
 		["Recipe: Wildvine Potion"] = {
-			["mr"] = 38415,
-			["sc"] = 6,
-			["id"] = "9294:0:0:0:0",
+			["mr"] = 9600,
 			["cc"] = 9,
 			["H3540"] = 38415,
-		},
-		["Shredder Operating Manual - Page 5"] = {
-			["mr"] = 3899,
-			["sc"] = 0,
-			["H3540"] = 7999,
-			["id"] = "16649:0:0:0:0",
-			["cc"] = 15,
-			["H3542"] = 3899,
-		},
-		["Dreadmist Belt"] = {
-			["H3537"] = 100000,
-			["mr"] = 100000,
+			["id"] = "9294:0:0:0:0",
+			["H3543"] = 9600,
+			["sc"] = 6,
 		},
 		["Outrunner's Gloves of Strength"] = {
 			["H3537"] = 6000,
 			["mr"] = 6000,
 		},
-		["Elegant Scepter of Shadow Wrath"] = {
-			["H3537"] = 336500,
-			["mr"] = 336500,
+		["Recipe: Soothing Turtle Bisque"] = {
+			["H3540"] = 39999,
+			["mr"] = 39997,
+			["H3543"] = 39997,
 		},
-		["Pattern: Red Linen Bag"] = {
-			["mr"] = 19700,
-			["cc"] = 9,
-			["id"] = "5771:0:0:0:0",
-			["sc"] = 2,
-			["H3542"] = 19700,
+		["Renegade Circlet of the Bear"] = {
+			["H3543"] = 10000,
+			["mr"] = 10000,
 		},
-		["Jet Chain of Spirit"] = {
-			["H3537"] = 54300,
-			["mr"] = 54300,
-		},
-		["Marsh Chain of the Monkey"] = {
-			["H3540"] = 24999,
-			["mr"] = 24999,
-		},
-		["Monk's Staff of the Owl"] = {
-			["H3537"] = 49920,
-			["mr"] = 49920,
-		},
-		["Small Radiant Shard"] = {
-			["L3540"] = 19199,
-			["mr"] = 19199,
+		["Shredder Operating Manual - Page 5"] = {
+			["mr"] = 3499,
 			["sc"] = 0,
-			["H3540"] = 19799,
-			["cc"] = 7,
-			["H3539"] = 19499,
-			["id"] = "11177:0:0:0:0",
+			["cc"] = 15,
+			["H3540"] = 7999,
+			["id"] = "16649:0:0:0:0",
+			["H3543"] = 3499,
+			["H3542"] = 3899,
 		},
-		["Swamp Pendant of the Wolf"] = {
-			["mr"] = 40000,
-			["H3539"] = 40000,
+		["Scarlet Wristguards"] = {
+			["H3540"] = 7721,
+			["mr"] = 5899,
+			["H3543"] = 5899,
+			["H3539"] = 7920,
 		},
-		["Banded Boots of Stamina"] = {
-			["H3537"] = 11404,
-			["mr"] = 11404,
-		},
-		["Recipe: Mighty Troll's Blood Potion"] = {
-			["H3540"] = 28000,
-			["mr"] = 28000,
-			["H3539"] = 29400,
-		},
-		["Zulian Mudskunk"] = {
-			["H3537"] = 50000,
-			["mr"] = 50000,
-		},
-		["Warden Staff"] = {
-			["H3540"] = 2660404,
-			["mr"] = 2660404,
-			["H3539"] = 2317500,
-		},
-		["Cat Carrier (Cornish Rex)"] = {
-			["mr"] = 200000,
-			["H3539"] = 200000,
-		},
-		["Duskbringer"] = {
-			["H3537"] = 70000,
-			["mr"] = 70000,
-		},
-		["Patched Leather Shoulderpads"] = {
-			["mr"] = 50000,
-			["cc"] = 4,
-			["id"] = "1793:0:0:0:0",
-			["sc"] = 2,
-			["H3536"] = 50000,
-		},
-		["Small Venom Sac"] = {
-			["H3540"] = 3600,
-			["mr"] = 3600,
-		},
-		["Eaglehorn Long Bow"] = {
-			["mr"] = 299999,
-			["H3539"] = 299999,
-		},
-		["Blasthorn Bow of Marksmanship"] = {
-			["mr"] = 90000,
-			["H3537"] = 136829,
-			["L3537"] = 90000,
-		},
-		["Black Dragonscale Breastplate"] = {
-			["mr"] = 3299997,
-			["H3539"] = 3299997,
-		},
-		["Wizard's Hand of Healing"] = {
-			["mr"] = 199998,
-			["H3539"] = 199998,
+		["Hellslayer Battle Axe"] = {
+			["H3537"] = 107627,
+			["mr"] = 107627,
 		},
 		["Solstice Staff of the Wolf"] = {
-			["mr"] = 179731,
 			["H3539"] = 179731,
-		},
-		["Scaled Leather Belt of the Monkey"] = {
-			["H3540"] = 14100,
-			["mr"] = 14100,
-		},
-		["Brown Linen Shirt"] = {
-			["H3540"] = 16142,
-			["mr"] = 16142,
-		},
-		["Scaled Leather Leggings of Agility"] = {
-			["mr"] = 50000,
-			["H3539"] = 50000,
-		},
-		["Libram of Tenacity"] = {
-			["H3540"] = 1300,
-			["mr"] = 1300,
-		},
-		["Duskwoven Pants of Nature Resistance"] = {
-			["H3537"] = 1500000,
-			["mr"] = 1500000,
-		},
-		["Plans: Dark Iron Sunderer"] = {
-			["mr"] = 16200,
-			["H3539"] = 16200,
+			["mr"] = 179731,
 		},
 		["Sorcerer Slippers of the Eagle"] = {
 			["H3537"] = 41888,
 			["mr"] = 41888,
 		},
-		["Crafted Light Shot"] = {
-			["H3537"] = 5,
-			["mr"] = 5,
-		},
-		["Mighty Boots of Shadow Resistance"] = {
-			["H3537"] = 280000,
-			["mr"] = 280000,
-		},
-		["Soldier's Leggings of the Monkey"] = {
-			["H3540"] = 12373,
-			["mr"] = 12373,
-		},
-		["Giant Clam Meat"] = {
-			["H3540"] = 755,
-			["mr"] = 755,
-			["H3539"] = 760,
-		},
-		["Engraved Helm of Nature's Wrath"] = {
-			["H3537"] = 202752,
-			["mr"] = 202752,
-		},
-		["Chieftain's Headdress of the Boar"] = {
-			["mr"] = 101604,
-			["H3539"] = 101604,
-		},
 		["Dreamwalker Armor"] = {
 			["H3540"] = 109500,
-			["mr"] = 109500,
-		},
-		["Manslayer"] = {
-			["H3537"] = 1442224,
-			["mr"] = 1442224,
-		},
-		["Mail Combat Headguard"] = {
-			["mr"] = 39576,
-			["H3539"] = 39576,
-		},
-		["Knight's Cloak of the Bear"] = {
-			["H3537"] = 31542,
-			["mr"] = 31542,
-		},
-		["Superior Boots of the Owl"] = {
-			["H3537"] = 8771,
-			["mr"] = 8771,
-		},
-		["Schematic: Truesilver Transformer"] = {
-			["mr"] = 459000,
-			["H3537"] = 459900,
-			["L3537"] = 459000,
+			["mr"] = 69000,
+			["H3543"] = 69000,
 		},
 		["Hillman's Shoulders"] = {
 			["H3540"] = 5900,
-			["mr"] = 5900,
+			["mr"] = 4900,
+			["H3543"] = 4900,
 			["H3539"] = 6799,
-		},
-		["Fine Thread"] = {
-			["H3537"] = 526,
-			["mr"] = 526,
-		},
-		["Changuk Smasher"] = {
-			["H3537"] = 230000,
-			["mr"] = 230000,
 		},
 		["Minor Rejuvenation Potion"] = {
 			["H3539"] = 268,
-			["mr"] = 268,
-		},
-		["Militant Shortsword of the Tiger"] = {
-			["H3537"] = 10407,
-			["mr"] = 10407,
+			["H3543"] = 267,
+			["mr"] = 267,
 		},
 		["Spiked Club of the Tiger"] = {
-			["H3539"] = 1999,
 			["mr"] = 1999,
-		},
-		["Thorium Bar"] = {
-			["mr"] = 933,
-			["cc"] = 7,
-			["H3540"] = 933,
-			["H3539"] = 1145,
-			["id"] = "12359:0:0:0:0",
-			["sc"] = 0,
-		},
-		["Archon Chestpiece"] = {
-			["mr"] = 60999,
-			["H3539"] = 60999,
-		},
-		["Mail Combat Armor"] = {
-			["mr"] = 19999,
-			["H3539"] = 19999,
+			["H3539"] = 1999,
 		},
 		["Tree Frog Box"] = {
 			["H3537"] = 98750,
 			["mr"] = 98750,
 		},
-		["Formula: Enchant Weapon - Crusader"] = {
-			["H3540"] = 4147500,
-			["mr"] = 4147500,
-			["H3539"] = 4195000,
-		},
-		["Lesser Eternal Essence"] = {
-			["H3539"] = 23399,
-			["sc"] = 0,
-			["H3540"] = 19799,
-			["cc"] = 7,
-			["mr"] = 19799,
-			["id"] = "16202:0:0:0:0",
-		},
-		["Venomshroud Orb"] = {
-			["mr"] = 54499,
-			["cc"] = 4,
-			["H3540"] = 59500,
-			["sc"] = 0,
-			["id"] = "15966:0:0:0:0",
-			["H3542"] = 54499,
-		},
-		["Eye of Adaegus"] = {
-			["H3540"] = 59800,
-			["mr"] = 59800,
-			["H3539"] = 198999,
+		["Greenstone Talisman of the Gorilla"] = {
+			["mr"] = 80264,
+			["H3543"] = 80264,
+			["H3539"] = 42233,
 		},
 		["Viking Sword of Power"] = {
 			["H3540"] = 30000,
 			["mr"] = 30000,
 		},
-		["Libram of Rapidity"] = {
-			["H3540"] = 9900,
-			["mr"] = 9900,
-			["H3539"] = 14798,
-		},
-		["Pattern: Enchanted Mageweave Pouch"] = {
-			["mr"] = 53998,
-			["sc"] = 2,
-			["id"] = "22307:0:0:0:0",
-			["H3539"] = 53998,
-			["cc"] = 9,
-		},
-		["Greenstone Talisman of the Gorilla"] = {
-			["mr"] = 42233,
-			["H3539"] = 42233,
-		},
-		["Adventurer's Cape of Healing"] = {
-			["H3540"] = 290000,
-			["mr"] = 290000,
-			["H3539"] = 350000,
-		},
-		["Taran Icebreaker"] = {
-			["mr"] = 509995,
-			["H3539"] = 509995,
-		},
-		["The Shadowfoot Stabber"] = {
-			["H3540"] = 119900,
-			["mr"] = 119900,
-			["H3539"] = 223999,
-		},
-		["Glyphed Boots"] = {
-			["mr"] = 10692,
-			["H3539"] = 10692,
-		},
-		["Heroic Bracers of Power"] = {
-			["H3537"] = 77640,
-			["mr"] = 77640,
-		},
-		["Elixir of Detect Lesser Invisibility"] = {
-			["H3537"] = 3582,
-			["mr"] = 3582,
-		},
-		["Glowing Black Orb"] = {
-			["mr"] = 80000,
-			["cc"] = 4,
-			["id"] = "20694:0:0:0:0",
-			["sc"] = 0,
-			["H3542"] = 80000,
-		},
-		["Recipe: Shadow Protection Potion"] = {
-			["H3540"] = 23198,
-			["mr"] = 23198,
-		},
 		["Huge Emerald"] = {
 			["H3540"] = 26600,
-			["mr"] = 26600,
-		},
-		["Mighty Armsplints of Stamina"] = {
-			["H3537"] = 146040,
-			["mr"] = 146040,
-		},
-		["Shadow Oil"] = {
-			["H3540"] = 78999,
-			["H3539"] = 81411,
-			["mr"] = 78999,
-		},
-		["Wild Steelbloom"] = {
-			["mr"] = 7695,
-			["cc"] = 7,
-			["H3540"] = 7695,
-			["H3539"] = 6900,
-			["id"] = "3355:0:0:0:0",
-			["sc"] = 0,
+			["mr"] = 26000,
+			["H3543"] = 26000,
 		},
 		["Pattern: Red Woolen Boots"] = {
 			["H3540"] = 1990,
@@ -5609,136 +11550,33 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3540"] = 3074,
 			["mr"] = 3074,
 		},
-		["Councillor's Tunic of Spirit"] = {
-			["H3540"] = 51100,
-			["mr"] = 51100,
+		["Shadowcraft Bracers"] = {
+			["H3540"] = 369998,
+			["H3539"] = 399000,
+			["H3543"] = 739999,
+			["mr"] = 739999,
 		},
-		["Glyphed Cloak"] = {
-			["H3540"] = 18400,
-			["mr"] = 18400,
-			["H3539"] = 5200,
-		},
-		["Free Action Potion"] = {
-			["H3540"] = 30370,
-			["H3539"] = 32793,
-			["mr"] = 30370,
-		},
-		["Runecloth"] = {
-			["H3539"] = 870,
-			["sc"] = 0,
-			["cc"] = 7,
-			["H3540"] = 887,
-			["id"] = "14047:0:0:0:0",
-			["mr"] = 990,
-			["H3542"] = 990,
-		},
-		["White Wedding Dress"] = {
-			["mr"] = 258827,
-			["H3539"] = 258827,
-		},
-		["Phalanx Cloak of the Bear"] = {
-			["H3537"] = 10255,
-			["mr"] = 10255,
-		},
-		["Infiltrator Gloves of the Gorilla"] = {
-			["H3537"] = 30000,
-			["mr"] = 30000,
-		},
-		["Outrunner's Gloves of the Eagle"] = {
-			["mr"] = 6750,
-			["cc"] = 4,
-			["id"] = "15502:0:0:844:0",
-			["H3537"] = 6750,
-			["sc"] = 3,
-		},
-		["Scaled Leather Boots of Stamina"] = {
-			["H3537"] = 40402,
-			["mr"] = 40402,
-		},
-		["Dreamweave Vest"] = {
-			["H3537"] = 104594,
-			["mr"] = 104594,
-		},
-		["Pattern: Comfortable Leather Hat"] = {
-			["mr"] = 340000,
-			["sc"] = 1,
-			["id"] = "8384:0:0:0:0",
-			["H3537"] = 340000,
-			["cc"] = 9,
-		},
-		["Spinel Ring of Shadow Resistance"] = {
-			["H3537"] = 395247,
-			["mr"] = 395247,
+		["Heavy Shortbow"] = {
+			["H3540"] = 2300,
+			["mr"] = 2340,
+			["H3543"] = 2340,
+			["H3539"] = 4826,
 		},
 		["Bandit Pants of the Owl"] = {
 			["H3537"] = 2200,
 			["mr"] = 2200,
 		},
-		["Imperial Red Tunic"] = {
-			["H3537"] = 47203,
-			["mr"] = 47203,
-		},
-		["Mudskunk Lure"] = {
-			["mr"] = 17499,
-			["H3539"] = 17499,
-		},
 		["Shimmering Bracers of Healing"] = {
-			["mr"] = 19500,
 			["H3539"] = 19500,
+			["mr"] = 19500,
 		},
 		["Pattern: Festival Suit"] = {
 			["H3540"] = 489995,
 			["mr"] = 489995,
 		},
-		["Ornate Mithril Pants"] = {
-			["mr"] = 89998,
-			["H3539"] = 89998,
-		},
-		["Scroll: Create Scepter of Beckoning"] = {
-			["H3537"] = 605599,
-			["mr"] = 605599,
-		},
-		["Scaled Leather Belt of the Bear"] = {
-			["H3537"] = 6500,
-			["mr"] = 6500,
-		},
-		["Recipe: Crocolisk Gumbo"] = {
-			["H3537"] = 99900,
-			["mr"] = 99900,
-		},
-		["Recipe: Elixir of Detect Lesser Invisibility"] = {
-			["H3539"] = 4997,
-			["mr"] = 4997,
-		},
-		["Elder's Padded Armor of Arcane Wrath"] = {
-			["mr"] = 18099,
-			["H3539"] = 18099,
-		},
-		["Grinning Axe of the Boar"] = {
-			["H3540"] = 69999,
-			["mr"] = 69999,
-			["H3539"] = 140000,
-		},
-		["Schematic: Small Seaforium Charge"] = {
-			["H3539"] = 3500,
-			["mr"] = 3500,
-		},
-		["Pagan Bands of Healing"] = {
-			["mr"] = 2200,
-			["H3539"] = 2200,
-		},
-		["Adventurer's Boots of Agility"] = {
-			["H3537"] = 99900,
-			["mr"] = 99900,
-		},
-		["Pattern: White Wedding Dress"] = {
-			["H3537"] = 124999,
-			["mr"] = 124999,
-		},
-		["Raptor Egg"] = {
-			["H3540"] = 79,
-			["H3539"] = 84,
-			["mr"] = 79,
+		["Mudskunk Lure"] = {
+			["H3539"] = 17499,
+			["mr"] = 17499,
 		},
 		["Master's Hat of Healing"] = {
 			["H3537"] = 400000,
@@ -5748,44 +11586,15 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 4900,
 			["mr"] = 4900,
 		},
-		["Mighty Rage Potion"] = {
-			["H3540"] = 31800,
-			["H3539"] = 34800,
-			["mr"] = 31800,
-		},
-		["Deepdive Helmet"] = {
-			["H3540"] = 222999,
-			["H3539"] = 228998,
-			["mr"] = 222999,
-		},
 		["Stag Meat"] = {
 			["H3540"] = 325,
 			["H3539"] = 340,
-			["mr"] = 325,
+			["H3543"] = 315,
+			["mr"] = 315,
 		},
-		["Polished Zweihander of the Tiger"] = {
-			["H3540"] = 11989,
-			["mr"] = 11989,
-		},
-		["Flask of the Titans"] = {
-			["mr"] = 1924200,
-			["cc"] = 0,
-			["H3540"] = 1924200,
-			["H3539"] = 1891915,
-			["id"] = "13510:0:0:0:0",
-			["sc"] = 0,
-		},
-		["Abjurer's Tunic of Frozen Wrath"] = {
-			["H3537"] = 199984,
-			["mr"] = 199984,
-		},
-		["Burnished Leggings"] = {
-			["H3537"] = 4900,
-			["mr"] = 4900,
-		},
-		["Crusader's Gauntlets of Nature Resistance"] = {
-			["H3537"] = 1500000,
-			["mr"] = 1500000,
+		["Deadly Kris of Fiery Wrath"] = {
+			["H3543"] = 20000,
+			["mr"] = 20000,
 		},
 		["Lupine Buckler of the Owl"] = {
 			["H3537"] = 4900,
@@ -5793,114 +11602,43 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Guardian Gloves"] = {
 			["mr"] = 3650,
+			["cc"] = 4,
+			["id"] = "5966:0:0:0:0",
 			["sc"] = 2,
 			["H3529"] = 3650,
-			["id"] = "5966:0:0:0:0",
-			["cc"] = 4,
 		},
-		["Formula: Enchant Cloak - Minor Agility"] = {
-			["H3540"] = 5263,
-			["H3539"] = 5500,
-			["mr"] = 5263,
-		},
-		["Pattern: Heavy Scorpid Belt"] = {
-			["H3540"] = 10900,
-			["H3539"] = 8400,
-			["mr"] = 10900,
-		},
-		["Huge Venom Sac"] = {
-			["H3540"] = 27063,
-			["H3539"] = 13927,
-			["mr"] = 27063,
-		},
-		["Goblin Jumper Cables XL"] = {
-			["H3539"] = 513522,
-			["mr"] = 513522,
+		["Monstrous War Axe of the Boar"] = {
+			["H3543"] = 46911,
+			["mr"] = 46911,
 		},
 		["Necrology Robes"] = {
-			["mr"] = 250000,
-			["H3537"] = 399999,
-			["L3537"] = 250000,
-		},
-		["Schematic: Lovingly Crafted Boomstick"] = {
-			["H3537"] = 802374,
-			["mr"] = 802374,
-		},
-		["Defender Gauntlets of the Bear"] = {
-			["H3537"] = 18000,
-			["mr"] = 18000,
+			["H3543"] = 487500,
+			["mr"] = 487500,
 		},
 		["Pattern: Icy Cloak"] = {
 			["H3537"] = 12000,
 			["mr"] = 12000,
 		},
-		["Torch of Austen"] = {
-			["mr"] = 194998,
-			["H3537"] = 199000,
-			["L3537"] = 194998,
-		},
-		["Jingling Bell"] = {
-			["H3540"] = 130622,
-			["H3539"] = 130625,
-			["mr"] = 130622,
-		},
-		["Black Dragonscale Boots"] = {
-			["mr"] = 3424164,
-			["H3537"] = 3424167,
-			["L3537"] = 3424164,
-		},
-		["Blinding Powder"] = {
-			["H3540"] = 3725,
-			["mr"] = 3725,
-		},
 		["Raw Spinefin Halibut"] = {
-			["mr"] = 749,
 			["H3539"] = 749,
-		},
-		["Schematic: Deepdive Helmet"] = {
-			["H3539"] = 65499,
-			["mr"] = 65499,
-		},
-		["Captain's Leggings of the Owl"] = {
-			["H3537"] = 33000,
-			["mr"] = 33000,
+			["mr"] = 749,
 		},
 		["Insignia Boots"] = {
-			["mr"] = 14500,
 			["H3539"] = 14500,
-		},
-		["Aurora Armor"] = {
-			["H3540"] = 17400,
-			["mr"] = 17400,
-		},
-		["Grunt Axe of Strength"] = {
-			["H3540"] = 8004,
-			["mr"] = 8004,
+			["mr"] = 14500,
 		},
 		["Apprentice's Shirt"] = {
 			["H3540"] = 84000,
-			["mr"] = 84000,
-		},
-		["Councillor's Robes of Intellect"] = {
-			["H3537"] = 90000,
-			["mr"] = 90000,
+			["mr"] = 82000,
+			["H3543"] = 82000,
 		},
 		["Greater Maul of the Gorilla"] = {
 			["H3537"] = 48536,
 			["mr"] = 48536,
 		},
-		["Red Mageweave Gloves"] = {
-			["mr"] = 112165,
-			["cc"] = 4,
-			["id"] = "10018:0:0:0:0",
-			["H3539"] = 99898,
-			["sc"] = 1,
-			["H3540"] = 112165,
-		},
-		["Peridot Circle of Shadow Resistance"] = {
-			["H3540"] = 1450000,
-			["H3539"] = 1497500,
-			["mr"] = 1450000,
+		["Quartz Ring of Frost Resistance"] = {
+			["H3543"] = 35100,
+			["mr"] = 35100,
 		},
 		["Multicolored Band of Fire Resistance"] = {
 			["mr"] = 928971,
@@ -5909,114 +11647,44 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3543"] = 928971,
 			["sc"] = 0,
 		},
-		["Schematic: Lifelike Mechanical Toad"] = {
-			["H3540"] = 499998,
-			["mr"] = 499998,
-			["H3539"] = 696968,
-		},
-		["Midnight Mace"] = {
-			["mr"] = 278999,
-			["H3539"] = 278999,
-		},
-		["Lunar Leggings of the Owl"] = {
-			["H3537"] = 45000,
-			["mr"] = 45000,
-		},
-		["Coarse Thread"] = {
-			["mr"] = 1452,
-			["H3539"] = 1452,
-		},
-		["Sandfury Coin"] = {
-			["H3540"] = 3314,
-			["H3539"] = 3399,
-			["mr"] = 3314,
+		["Arena Bracers"] = {
+			["H3537"] = 72739,
+			["mr"] = 72739,
 		},
 		["Master's Belt of the Eagle"] = {
 			["H3537"] = 83466,
 			["mr"] = 83466,
 		},
-		["Murloc Skin Bag"] = {
-			["mr"] = 10000,
-			["cc"] = 1,
-			["id"] = "1470:0:0:0:0",
-			["sc"] = 0,
-			["H3540"] = 10000,
-		},
-		["Girdle of Uther"] = {
-			["H3540"] = 64347,
-			["H3539"] = 64349,
-			["mr"] = 64347,
-		},
-		["Insignia Mantle"] = {
-			["H3537"] = 9900,
-			["mr"] = 9900,
-		},
-		["Sentry's Sash of the Bear"] = {
-			["H3537"] = 5500,
-			["mr"] = 5500,
-		},
-		["Nightshade Boots of Power"] = {
-			["mr"] = 33300,
-			["H3539"] = 33300,
-		},
-		["Opulent Mantle of Frozen Wrath"] = {
-			["H3537"] = 150000,
-			["mr"] = 150000,
+		["Schematic: Lifelike Mechanical Toad"] = {
+			["H3540"] = 499998,
+			["mr"] = 499992,
+			["H3543"] = 499992,
+			["H3539"] = 696968,
 		},
 		["Heavy Stone"] = {
 			["H3540"] = 1566,
 			["H3539"] = 1263,
-			["mr"] = 1566,
+			["H3543"] = 1195,
+			["mr"] = 1195,
 		},
-		["Seer's Pants"] = {
-			["mr"] = 8000,
-			["H3539"] = 8000,
-		},
-		["Knight's Girdle of the Tiger"] = {
-			["H3537"] = 32184,
-			["mr"] = 32184,
-		},
-		["Duskwoven Branch of Fiery Wrath"] = {
-			["H3537"] = 3000000,
-			["mr"] = 3000000,
-		},
-		["Perfect Deviate Scale"] = {
-			["H3539"] = 5940,
-			["mr"] = 5940,
-		},
-		["High Councillor's Gloves of Healing"] = {
-			["H3537"] = 850000,
-			["mr"] = 850000,
-		},
-		["Silver Rod"] = {
-			["H3540"] = 9995,
-			["mr"] = 9995,
+		["Peridot Circle of Shadow Resistance"] = {
+			["H3540"] = 1450000,
+			["H3539"] = 1497500,
+			["H3543"] = 1150000,
+			["mr"] = 1150000,
 		},
 		["Thorium Helm"] = {
 			["H3537"] = 199999,
 			["mr"] = 199999,
 		},
-		["Crystallized Note"] = {
-			["H3537"] = 21332,
-			["mr"] = 21332,
-		},
-		["Purple Hakkari Bijou"] = {
-			["H3540"] = 29199,
-			["H3539"] = 24526,
-			["mr"] = 29199,
-		},
-		["Gauntlets of Elements"] = {
-			["H3540"] = 190000,
-			["mr"] = 190000,
-		},
 		["Pattern: Robe of the Archmage"] = {
-			["H3537"] = 90000,
-			["mr"] = 90000,
+			["H3543"] = 189500,
+			["mr"] = 189500,
 		},
-		["Schematic: Gnomish Alarm-O-Bot"] = {
-			["mr"] = 6100,
-			["H3537"] = 6200,
-			["L3537"] = 6100,
+		["Steelclaw Reaver"] = {
+			["mr"] = 70000,
+			["H3543"] = 70000,
+			["H3539"] = 179499,
 		},
 		["Glowstar Rod of the Gorilla"] = {
 			["H3540"] = 250000,
@@ -6024,26 +11692,23 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3539"] = 300000,
 		},
 		["Sentinel Breastplate of the Owl"] = {
-			["mr"] = 40960,
+			["mr"] = 29646,
 			["cc"] = 4,
+			["H3539"] = 23765,
 			["id"] = "7439:0:0:784:0",
 			["sc"] = 2,
-			["H3539"] = 23765,
+			["H3543"] = 29646,
 			["H3542"] = 40960,
 		},
-		["Quartz Ring of Arcane Resistance"] = {
-			["mr"] = 31190,
-			["cc"] = 4,
-			["id"] = "11965:0:0:1311:0",
-			["sc"] = 0,
-			["H3540"] = 31190,
+		["Birchwood Maul of Spirit"] = {
+			["H3543"] = 5000,
+			["mr"] = 5000,
 		},
-		["Arcane Robe"] = {
-			["mr"] = 211020,
-			["cc"] = 4,
-			["id"] = "8290:0:0:0:0",
-			["sc"] = 1,
-			["H3540"] = 211020,
+		["Sandfury Coin"] = {
+			["H3540"] = 3314,
+			["H3539"] = 3399,
+			["H3543"] = 4100,
+			["mr"] = 4100,
 		},
 		["Severing Axe of the Eagle"] = {
 			["H3537"] = 3477,
@@ -6053,60 +11718,24 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 107200,
 			["mr"] = 107200,
 		},
-		["The Green Tower"] = {
-			["H3540"] = 219998,
-			["mr"] = 219998,
-			["H3539"] = 349999,
-		},
-		["Formula: Enchant Gloves - Greater Strength"] = {
-			["mr"] = 949000,
-			["L3537"] = 949000,
-			["id"] = "16244:0:0:0:0",
-			["cc"] = 9,
-			["H3537"] = 1005000,
-			["sc"] = 8,
-		},
-		["Formula: Enchant Gloves - Greater Agility"] = {
-			["H3539"] = 10998,
-			["sc"] = 8,
-			["id"] = "16219:0:0:0:0",
-			["cc"] = 9,
-			["mr"] = 10998,
-		},
-		["Pattern: Devilsaur Gauntlets"] = {
-			["H3537"] = 144950,
-			["mr"] = 144950,
-		},
 		["Adventurer's Cape of the Eagle"] = {
-			["mr"] = 250000,
 			["H3539"] = 250000,
-		},
-		["Exquisite Flamberge of the Bear"] = {
-			["H3540"] = 51295,
-			["mr"] = 51295,
-			["H3539"] = 57167,
-		},
-		["Superior Belt of the Owl"] = {
-			["mr"] = 8500,
-			["H3539"] = 8500,
+			["mr"] = 250000,
 		},
 		["Morning Glory Dew"] = {
 			["H3540"] = 1250,
-			["mr"] = 1250,
+			["mr"] = 295,
+			["H3543"] = 295,
 			["H3539"] = 1999,
 		},
 		["Twilight Pants of Healing"] = {
-			["mr"] = 100000,
+			["mr"] = 107090,
+			["H3543"] = 107090,
 			["H3539"] = 100000,
 		},
-		["Fire Oil"] = {
-			["H3540"] = 8268,
-			["mr"] = 8268,
-			["H3539"] = 7504,
-		},
-		["Curved Dagger of Healing"] = {
-			["H3537"] = 10099,
-			["mr"] = 10099,
+		["Conjurer's Bracers of the Whale"] = {
+			["H3543"] = 4287,
+			["mr"] = 4287,
 		},
 		["Oak Mallet of the Whale"] = {
 			["H3537"] = 24864,
@@ -6115,443 +11744,199 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Formula: Enchant Boots - Spirit"] = {
 			["H3540"] = 21200,
 			["H3539"] = 22200,
-			["mr"] = 21200,
-		},
-		["Recipe: Mithril Head Trout"] = {
-			["H3537"] = 9500,
-			["mr"] = 9500,
+			["H3543"] = 15599,
+			["mr"] = 15599,
 		},
 		["Master's Belt of Fiery Wrath"] = {
 			["H3537"] = 127868,
 			["mr"] = 127868,
 		},
-		["Recipe: Major Healing Potion"] = {
-			["H3540"] = 45423,
-			["H3539"] = 125999,
-			["mr"] = 45423,
-		},
-		["High Councillor's Bracers of the Whale"] = {
-			["H3540"] = 65400,
-			["mr"] = 65400,
-		},
 		["Plans: Inlaid Mithril Cylinder"] = {
 			["H3540"] = 29998,
 			["H3539"] = 14798,
-			["mr"] = 29998,
+			["H3543"] = 19500,
+			["mr"] = 19500,
 		},
-		["Lunar Handwraps of the Owl"] = {
-			["H3537"] = 57048,
-			["mr"] = 57048,
+		["Plaguebloom"] = {
+			["H3539"] = 14200,
+			["cc"] = 7,
+			["sc"] = 0,
+			["H3540"] = 14173,
+			["id"] = "13466:0:0:0:0",
+			["H3543"] = 13448,
+			["mr"] = 13448,
 		},
-		["Valorous Girdle"] = {
-			["mr"] = 32000,
-			["H3539"] = 32000,
-		},
-		["Weighted Cloak"] = {
-			["H3537"] = 37790,
-			["mr"] = 37790,
+		["Emblazoned Belt"] = {
+			["H3543"] = 6000,
+			["mr"] = 6000,
 		},
 		["Greater Magic Essence"] = {
-			["mr"] = 1122,
-			["sc"] = 0,
-			["H3540"] = 1122,
+			["mr"] = 7600,
 			["cc"] = 7,
 			["H3539"] = 1372,
 			["id"] = "10939:0:0:0:0",
+			["H3540"] = 1122,
+			["H3543"] = 7600,
+			["sc"] = 0,
 		},
 		["Black Malice"] = {
-			["mr"] = 59000,
-			["H3537"] = 59625,
-			["L3537"] = 59000,
-		},
-		["Pattern: Guardian Cloak"] = {
-			["mr"] = 7800,
-			["H3537"] = 18275,
-			["L3537"] = 7800,
+			["H3543"] = 130000,
+			["mr"] = 130000,
 		},
 		["Silithid Ripper"] = {
 			["H3537"] = 64635,
 			["mr"] = 64635,
 		},
-		["Scroll of Agility"] = {
-			["H3540"] = 1930,
-			["mr"] = 1930,
-			["H3539"] = 1940,
-		},
-		["Dense Weightstone"] = {
-			["H3540"] = 6815,
-			["mr"] = 6815,
-			["H3539"] = 6815,
+		["Dwarven Magestaff of the Eagle"] = {
+			["H3537"] = 27676,
+			["mr"] = 27676,
 		},
 		["Elixir of Minor Fortitude"] = {
 			["H3537"] = 1980,
 			["mr"] = 1980,
 		},
-		["Plans: Whitesoul Helm"] = {
-			["mr"] = 29799,
-			["H3537"] = 29800,
-			["L3537"] = 29799,
-		},
-		["Pattern: White Leather Jerkin"] = {
-			["H3537"] = 1511,
-			["mr"] = 1511,
+		["Jade"] = {
+			["mr"] = 7700,
+			["cc"] = 7,
+			["sc"] = 0,
+			["H3540"] = 5000,
+			["H3539"] = 10599,
+			["H3543"] = 7700,
+			["id"] = "1529:0:0:0:0",
 		},
 		["Marble Circle of the Bear"] = {
 			["H3540"] = 99999,
-			["mr"] = 99999,
-		},
-		["Wing of the Whelpling"] = {
-			["H3540"] = 99500,
-			["mr"] = 99500,
-			["H3539"] = 130123,
-		},
-		["Greater Scythe of the Monkey"] = {
-			["mr"] = 37883,
-			["H3539"] = 37883,
-		},
-		["Plans: Blue Glittering Axe"] = {
-			["mr"] = 22500,
-			["H3539"] = 22500,
-		},
-		["Small Spider Leg"] = {
-			["H3540"] = 18,
-			["mr"] = 18,
-			["H3539"] = 35,
+			["mr"] = 60000,
+			["H3543"] = 60000,
 		},
 		["Face Smasher"] = {
 			["H3540"] = 94500,
-			["mr"] = 94500,
+			["mr"] = 49900,
+			["H3543"] = 49900,
 			["H3539"] = 108000,
 		},
-		["Khoo's Point"] = {
-			["H3540"] = 48749,
-			["H3539"] = 48750,
-			["mr"] = 48749,
+		["Dark Hooded Cape"] = {
+			["H3543"] = 674000,
+			["mr"] = 674000,
 		},
 		["Thick Hide"] = {
 			["H3540"] = 599,
 			["H3539"] = 590,
-			["mr"] = 599,
+			["H3543"] = 655,
+			["mr"] = 655,
 		},
-		["Explosive Sheep"] = {
-			["H3540"] = 9499,
-			["mr"] = 9499,
+		["Plans: Blue Glittering Axe"] = {
+			["mr"] = 15900,
+			["H3543"] = 15900,
+			["H3539"] = 22500,
 		},
 		["Archer's Trousers of the Owl"] = {
 			["H3537"] = 9900,
 			["mr"] = 9900,
 		},
+		["Clam Meat"] = {
+			["H3540"] = 190,
+			["mr"] = 854,
+			["H3543"] = 854,
+			["H3539"] = 990,
+		},
 		["Elixir of Poison Resistance"] = {
 			["H3540"] = 62500,
 			["H3539"] = 66000,
-			["mr"] = 62500,
-		},
-		["Volcanic Shoulders"] = {
-			["mr"] = 551167,
-			["H3539"] = 551167,
+			["H3543"] = 60934,
+			["mr"] = 60934,
 		},
 		["Serpentskin Armor"] = {
 			["H3537"] = 153534,
 			["mr"] = 153534,
-		},
-		["Battering Hammer of the Gorilla"] = {
-			["H3537"] = 8499,
-			["mr"] = 8499,
-		},
-		["Clam Meat"] = {
-			["H3540"] = 190,
-			["mr"] = 190,
-			["H3539"] = 990,
-		},
-		["Yorgen Bracers"] = {
-			["H3537"] = 189171,
-			["mr"] = 189171,
-		},
-		["Bandit Bracers of the Monkey"] = {
-			["H3540"] = 300000,
-			["mr"] = 300000,
-		},
-		["Imposing Boots of the Monkey"] = {
-			["H3537"] = 30000,
-			["mr"] = 30000,
-		},
-		["Pattern: Reinforced Woolen Shoulders"] = {
-			["H3537"] = 13333,
-			["mr"] = 13333,
-		},
-		["Five of Warlords"] = {
-			["H3540"] = 189897,
-			["H3539"] = 189996,
-			["mr"] = 189897,
-		},
-		["Mistscape Boots"] = {
-			["H3540"] = 6000,
-			["mr"] = 6000,
-			["H3539"] = 6700,
 		},
 		["Primal Mitts"] = {
 			["H3537"] = 200,
 			["mr"] = 200,
 		},
 		["Viridian Band of the Owl"] = {
-			["mr"] = 29500,
 			["H3539"] = 29500,
+			["mr"] = 29500,
 		},
 		["Knight's Breastplate of the Bear"] = {
-			["mr"] = 30000,
+			["mr"] = 20000,
+			["H3543"] = 20000,
 			["H3539"] = 30000,
-		},
-		["Big Bear Meat"] = {
-			["H3540"] = 377,
-			["mr"] = 377,
-		},
-		["Six of Portals"] = {
-			["H3540"] = 89998,
-			["H3539"] = 98500,
-			["mr"] = 89998,
 		},
 		["Greater Nether Essence"] = {
 			["H3539"] = 44000,
-			["sc"] = 0,
-			["H3540"] = 28400,
 			["cc"] = 7,
-			["mr"] = 28400,
+			["mr"] = 21000,
 			["id"] = "11175:0:0:0:0",
+			["H3540"] = 28400,
+			["H3543"] = 21000,
+			["sc"] = 0,
 		},
 		["Elegant Mantle of Intellect"] = {
 			["H3540"] = 171124,
 			["mr"] = 171124,
 		},
-		["Birchwood Maul of the Monkey"] = {
-			["H3537"] = 3549,
-			["mr"] = 3549,
-		},
 		["Formula: Enchant Gloves - Riding Skill"] = {
-			["mr"] = 799999,
-			["sc"] = 8,
-			["H3540"] = 799999,
+			["mr"] = 990000,
 			["cc"] = 9,
 			["id"] = "11226:0:0:0:0",
-		},
-		["Training Sword of the Eagle"] = {
-			["H3540"] = 1100,
-			["mr"] = 1100,
-		},
-		["Formula: Enchant Chest - Minor Mana"] = {
-			["H3540"] = 1498,
-			["H3539"] = 1835,
-			["mr"] = 1498,
+			["H3540"] = 799999,
+			["H3543"] = 990000,
+			["sc"] = 8,
 		},
 		["Blackened Defias Boots"] = {
 			["H3537"] = 100000,
 			["mr"] = 100000,
 		},
 		["Pattern: Thick Murloc Armor"] = {
-			["H3537"] = 50000,
-			["mr"] = 50000,
-		},
-		["Red Leather Bag"] = {
-			["H3539"] = 5998,
-			["cc"] = 1,
-			["sc"] = 0,
-			["H3540"] = 2925,
-			["id"] = "2657:0:0:0:0",
-			["mr"] = 10000,
-			["H3542"] = 10000,
+			["H3543"] = 40000,
+			["mr"] = 40000,
 		},
 		["Abyssal Cloth Slippers of Restoration"] = {
 			["H3540"] = 155324,
 			["mr"] = 155324,
 			["H3539"] = 110000,
 		},
-		["Infiltrator Shoulders of Stamina"] = {
-			["H3537"] = 30000,
-			["mr"] = 30000,
+		["Bloodspattered Wristbands of Strength"] = {
+			["H3543"] = 2100,
+			["mr"] = 2100,
 		},
-		["Skycaller"] = {
-			["H3537"] = 110000,
-			["mr"] = 110000,
-		},
-		["Sequoia Branch of the Boar"] = {
-			["H3540"] = 36142,
-			["mr"] = 36142,
-		},
-		["Outrunner's Cloak of the Bear"] = {
-			["H3537"] = 5000,
-			["mr"] = 5000,
-		},
-		["Ranger Wristguards of Stamina"] = {
-			["H3537"] = 10300,
-			["mr"] = 10300,
-		},
-		["Silver Ore"] = {
-			["H3539"] = 4900,
-			["mr"] = 3400,
-			["cc"] = 7,
-			["H3540"] = 4300,
-			["id"] = "2775:0:0:0:0",
-			["sc"] = 0,
-			["H3543"] = 3400,
-			["H3542"] = 3899,
-		},
-		["Green Hills of Stranglethorn - Page 10"] = {
-			["H3540"] = 874,
-			["mr"] = 874,
-			["H3539"] = 1757,
-		},
-		["Rough Stone"] = {
-			["mr"] = 28,
-			["cc"] = 7,
-			["id"] = "2835:0:0:0:0",
-			["H3540"] = 19,
-			["H3539"] = 29,
-			["sc"] = 0,
-			["H3542"] = 28,
-		},
-		["Long Battle Bow"] = {
-			["H3537"] = 10084,
-			["mr"] = 10084,
-		},
-		["Knight's Headguard of Stamina"] = {
-			["H3537"] = 8900,
-			["mr"] = 8900,
-		},
-		["Formula: Enchant Bracer - Lesser Deflection"] = {
-			["H3537"] = 59222,
-			["mr"] = 59222,
-		},
-		["Ornate Spyglass"] = {
-			["H3537"] = 20000,
-			["mr"] = 20000,
+		["Lunar Wand of Shadow Wrath"] = {
+			["H3537"] = 700000,
+			["mr"] = 700000,
 		},
 		["Dragon Finger of Fiery Wrath"] = {
-			["mr"] = 200000,
 			["H3539"] = 200000,
-		},
-		["Raider's Legguards of the Boar"] = {
-			["H3537"] = 3400,
-			["mr"] = 3400,
-		},
-		["Dreadmist Bracers"] = {
-			["H3539"] = 40000,
-			["mr"] = 40000,
-		},
-		["Recipe: Savory Deviate Delight"] = {
-			["H3540"] = 90000,
-			["mr"] = 90000,
-			["H3539"] = 189999,
-		},
-		["Wanderer's Leggings of Power"] = {
-			["H3540"] = 152200,
-			["mr"] = 152200,
-		},
-		["Myrmidon's Defender"] = {
-			["H3537"] = 55400,
-			["mr"] = 55400,
-		},
-		["Orange Mageweave Shirt"] = {
-			["mr"] = 199999,
-			["cc"] = 4,
-			["H3539"] = 7800,
-			["id"] = "10056:0:0:0:0",
-			["L3539"] = 7700,
-			["H3540"] = 199999,
-			["sc"] = 0,
-		},
-		["Ritual Cape of Shadow Wrath"] = {
-			["mr"] = 11372,
-			["H3539"] = 11372,
+			["mr"] = 200000,
 		},
 		["Sorcerer Hat of Frozen Wrath"] = {
 			["H3540"] = 42052,
 			["mr"] = 42052,
 			["H3539"] = 66060,
 		},
-		["Sentinel Boots of Spirit"] = {
-			["mr"] = 40524,
-			["cc"] = 4,
-			["id"] = "7444:0:0:182:0",
-			["sc"] = 2,
-			["H3542"] = 40524,
-		},
-		["Master's Gloves of Fiery Wrath"] = {
-			["H3537"] = 350000,
-			["mr"] = 350000,
-		},
-		["Master's Bracers of Frozen Wrath"] = {
-			["H3540"] = 467281,
-			["mr"] = 467281,
-		},
-		["Staunch Hammer of Shadow Wrath"] = {
-			["H3540"] = 6999,
-			["mr"] = 6999,
-			["H3539"] = 9653,
-		},
 		["37 Pound Redgill"] = {
 			["H3537"] = 9198,
 			["mr"] = 9198,
 		},
-		["Pattern: Runecloth Headband"] = {
-			["mr"] = 29899,
-			["cc"] = 9,
-			["id"] = "14498:0:0:0:0",
-			["H3540"] = 49793,
-			["sc"] = 2,
-			["H3542"] = 29899,
-		},
-		["Warchief Kilt"] = {
-			["H3540"] = 103840,
-			["mr"] = 103840,
-		},
-		["Hook Dagger of Strength"] = {
-			["H3537"] = 16728,
-			["mr"] = 16728,
-		},
-		["Cured Rugged Hide"] = {
-			["H3540"] = 157948,
-			["H3539"] = 163899,
-			["mr"] = 157948,
-		},
-		["Stonecutter Claymore of the Wolf"] = {
-			["mr"] = 29805,
-			["cc"] = 2,
-			["id"] = "3197:0:0:521:0",
-			["H3543"] = 29805,
-			["sc"] = 8,
-		},
-		["Heraldic Cloak"] = {
-			["mr"] = 19800,
-			["H3539"] = 19800,
+		["Staunch Hammer of Shadow Wrath"] = {
+			["H3540"] = 6999,
+			["mr"] = 2800,
+			["H3543"] = 2800,
+			["H3539"] = 9653,
 		},
 		["Silithid Chitin"] = {
-			["mr"] = 33800,
-			["cc"] = 15,
-			["id"] = "20498:0:0:0:0",
-			["H3540"] = 24000,
 			["H3539"] = 22500,
+			["mr"] = 29000,
+			["cc"] = 15,
+			["H3540"] = 24000,
+			["id"] = "20498:0:0:0:0",
 			["sc"] = 0,
+			["H3543"] = 29000,
 			["H3542"] = 33800,
 		},
 		["Onyx Choker of Intellect"] = {
 			["H3540"] = 20000,
 			["mr"] = 20000,
-		},
-		["Superior Mana Potion"] = {
-			["mr"] = 17351,
-			["cc"] = 0,
-			["id"] = "13443:0:0:0:0",
-			["H3539"] = 14189,
-			["sc"] = 0,
-			["H3540"] = 17351,
-		},
-		["Headstriker Sword of the Boar"] = {
-			["H3537"] = 30274,
-			["mr"] = 30274,
-		},
-		["Onyxia Scale Cloak"] = {
-			["H3540"] = 467999,
-			["H3539"] = 490000,
-			["mr"] = 467999,
 		},
 		["Three of Portals"] = {
 			["H3540"] = 31741,
@@ -6562,36 +11947,20 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 20000,
 			["mr"] = 20000,
 		},
-		["Steel Bar"] = {
-			["mr"] = 6875,
-			["cc"] = 7,
-			["H3540"] = 6875,
-			["H3539"] = 3161,
-			["id"] = "3859:0:0:0:0",
-			["sc"] = 0,
+		["Sentry's Shoulderguards of the Eagle"] = {
+			["H3537"] = 6200,
+			["mr"] = 6200,
 		},
-		["Blue Linen Vest"] = {
-			["H3537"] = 5346,
-			["mr"] = 5346,
-		},
-		["Giant Club of the Bear"] = {
-			["H3537"] = 105060,
-			["mr"] = 105060,
-		},
-		["Training Sword of Strength"] = {
-			["H3537"] = 5000,
-			["mr"] = 5000,
+		["Aboriginal Loincloth of Spirit"] = {
+			["H3537"] = 8268,
+			["mr"] = 8268,
 		},
 		["Warden's Gloves"] = {
 			["mr"] = 10000,
+			["cc"] = 4,
+			["id"] = "14606:0:0:0:0",
 			["sc"] = 2,
 			["H3529"] = 10000,
-			["id"] = "14606:0:0:0:0",
-			["cc"] = 4,
-		},
-		["Bearded Boneaxe"] = {
-			["H3537"] = 89999,
-			["mr"] = 89999,
 		},
 		["King's Square Postbox Key"] = {
 			["H3540"] = 15281,
@@ -6601,195 +11970,102 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3540"] = 70000,
 			["mr"] = 70000,
 		},
-		["Dwarven Magestaff of the Eagle"] = {
-			["H3537"] = 27676,
-			["mr"] = 27676,
-		},
 		["Gleaming Claymore of Stamina"] = {
-			["mr"] = 8099,
-			["cc"] = 2,
 			["H3539"] = 20000,
+			["cc"] = 2,
+			["H3540"] = 20000,
 			["id"] = "15248:0:0:135:0",
 			["sc"] = 8,
 			["H3543"] = 8099,
-			["H3540"] = 20000,
+			["mr"] = 8099,
 		},
 		["Winterfall E'ko"] = {
 			["H3540"] = 9000,
 			["H3539"] = 7310,
-			["mr"] = 9000,
+			["H3543"] = 7750,
+			["mr"] = 7750,
 		},
-		["Gray Woolen Shirt"] = {
-			["H3540"] = 11639,
-			["mr"] = 11639,
+		["Green Silken Shoulders"] = {
+			["H3537"] = 40000,
+			["mr"] = 40000,
 		},
-		["Barbaric Linen Vest"] = {
-			["mr"] = 3328,
-			["cc"] = 4,
-			["id"] = "2578:0:0:0:0",
-			["sc"] = 1,
-			["H3540"] = 3328,
-		},
-		["Schematic: Hyper-Radiant Flame Reflector"] = {
-			["H3537"] = 3000000,
-			["mr"] = 3000000,
-		},
-		["Doombringer"] = {
-			["H3540"] = 90500,
-			["H3539"] = 94339,
-			["mr"] = 90500,
+		["Jadefire Epaulets of Stamina"] = {
+			["H3537"] = 348262,
+			["mr"] = 348262,
 		},
 		["Pattern: Brightcloth Cloak"] = {
 			["H3540"] = 25000,
 			["H3539"] = 10800,
-			["mr"] = 25000,
-		},
-		["Plans: Mithril Scale Bracers"] = {
-			["H3540"] = 12200,
-			["mr"] = 12200,
+			["H3543"] = 28398,
+			["mr"] = 28398,
 		},
 		["Fen Ring of the Falcon"] = {
 			["H3540"] = 62489,
 			["H3539"] = 30000,
 			["mr"] = 62489,
 		},
-		["Bandit Jerkin of the Eagle"] = {
-			["H3537"] = 12903,
-			["mr"] = 12903,
-		},
 		["Giant Egg"] = {
 			["H3540"] = 1980,
 			["mr"] = 1980,
 			["H3539"] = 3000,
 		},
-		["Boar Ribs"] = {
-			["H3540"] = 1956,
-			["H3539"] = 1957,
-			["mr"] = 1956,
-		},
-		["Orange Martial Shirt"] = {
-			["H3537"] = 78499,
-			["mr"] = 78499,
-		},
-		["Dark Iron Rifle"] = {
-			["H3537"] = 1100000,
-			["mr"] = 1100000,
+		["Blue Sapphire"] = {
+			["H3540"] = 26997,
+			["H3539"] = 34800,
+			["H3543"] = 34599,
+			["mr"] = 34599,
 		},
 		["Schematic: Spellpower Goggles Xtreme Plus"] = {
 			["mr"] = 9603,
 			["H3537"] = 10000,
 			["L3537"] = 9603,
 		},
-		["Massive Battle Axe of the Wolf"] = {
-			["H3540"] = 12000,
-			["mr"] = 12000,
-		},
-		["Blue Sapphire"] = {
-			["H3540"] = 26997,
-			["H3539"] = 34800,
-			["mr"] = 26997,
-		},
-		["Battleforge Girdle of the Bear"] = {
-			["H3537"] = 4999,
-			["mr"] = 4999,
-		},
-		["War Knife of Healing"] = {
-			["H3537"] = 15000,
-			["mr"] = 15000,
-		},
 		["Medium Hide"] = {
 			["H3540"] = 187,
 			["H3539"] = 197,
-			["mr"] = 187,
-		},
-		["Hyperion Girdle of the Bear"] = {
-			["H3537"] = 76500,
-			["mr"] = 76500,
-		},
-		["Formula: Enchant Bracer - Lesser Spirit"] = {
-			["H3540"] = 407398,
-			["mr"] = 407398,
+			["H3543"] = 338,
+			["mr"] = 338,
 		},
 		["Mighty Tunic of the Monkey"] = {
 			["H3537"] = 50000,
 			["mr"] = 50000,
 		},
-		["Coarse Grinding Stone"] = {
-			["H3540"] = 3394,
-			["mr"] = 3394,
-			["H3539"] = 3309,
+		["Massive Battle Axe of the Wolf"] = {
+			["H3540"] = 12000,
+			["mr"] = 12000,
 		},
-		["Merc Sword of the Monkey"] = {
-			["H3540"] = 11586,
-			["H3539"] = 11586,
-			["mr"] = 11586,
-		},
-		["Aurora Cowl"] = {
-			["mr"] = 12090,
-			["H3539"] = 12090,
+		["Hyperion Girdle of the Bear"] = {
+			["H3537"] = 76500,
+			["mr"] = 76500,
 		},
 		["Medallion of Faith"] = {
 			["H3540"] = 3294,
-			["mr"] = 3294,
+			["mr"] = 3515,
+			["H3543"] = 3515,
 			["H3539"] = 3296,
 		},
-		["Conjurer's Bracers of the Owl"] = {
-			["mr"] = 20000,
-			["H3539"] = 20000,
-		},
 		["Living Leggings"] = {
-			["H3539"] = 920069,
 			["mr"] = 920069,
+			["H3539"] = 920069,
 		},
-		["Belt of Might"] = {
-			["H3540"] = 627999,
-			["mr"] = 627999,
-			["H3539"] = 755998,
+		["Demon Band"] = {
+			["H3540"] = 33000,
+			["mr"] = 288000,
+			["H3543"] = 288000,
 		},
-		["Melon Juice"] = {
-			["H3537"] = 860,
-			["mr"] = 860,
-		},
-		["Duskwoven Amice of the Owl"] = {
-			["H3537"] = 59976,
-			["mr"] = 59976,
+		["Dark Iron Rifle"] = {
+			["H3537"] = 1100000,
+			["mr"] = 1100000,
 		},
 		["Elune Stone"] = {
 			["H3540"] = 9990,
 			["mr"] = 9990,
 		},
-		["Greater Frost Protection Potion"] = {
-			["H3540"] = 41000,
-			["mr"] = 41000,
-		},
-		["Potent Bands of Agility"] = {
-			["H3537"] = 19999,
-			["mr"] = 19999,
-		},
 		["Cenarion Belt"] = {
 			["H3540"] = 299000,
-			["mr"] = 299000,
+			["mr"] = 888000,
+			["H3543"] = 888000,
 			["H3539"] = 889000,
-		},
-		["Sandstalker Gauntlets"] = {
-			["H3540"] = 2897499,
-			["mr"] = 2897499,
-		},
-		["Linen Bag"] = {
-			["mr"] = 1045,
-			["cc"] = 1,
-			["H3540"] = 1801,
-			["sc"] = 0,
-			["id"] = "4238:0:0:0:0",
-			["H3542"] = 1045,
-		},
-		["Wildkin E'ko"] = {
-			["H3540"] = 1494,
-			["mr"] = 1494,
-		},
-		["Pattern: Felcloth Shoulders"] = {
-			["H3539"] = 178500,
-			["mr"] = 178500,
 		},
 		["Ivy Orb of Intellect"] = {
 			["mr"] = 32550,
@@ -6798,143 +12074,62 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 0,
 			["H3542"] = 32550,
 		},
-		["Huntsman's Belt of the Owl"] = {
-			["H3537"] = 44075,
-			["mr"] = 44075,
-		},
-		["High Councillor's Sash of Nature Resistance"] = {
-			["H3540"] = 1750000,
-			["mr"] = 1750000,
+		["Bandit Gloves of the Monkey"] = {
+			["H3543"] = 29933,
+			["mr"] = 29933,
 		},
 		["Scarlet Chestpiece"] = {
 			["H3540"] = 432800,
 			["H3539"] = 458899,
 			["mr"] = 432800,
 		},
-		["Blackforge Bracers"] = {
-			["H3540"] = 17000,
-			["mr"] = 17000,
-		},
 		["Imposing Gloves of the Monkey"] = {
 			["mr"] = 20300,
+			["cc"] = 4,
+			["id"] = "15166:0:0:607:0",
 			["sc"] = 2,
 			["H3529"] = 20300,
-			["id"] = "15166:0:0:607:0",
-			["cc"] = 4,
-		},
-		["Recipe: Rage Potion"] = {
-			["H3540"] = 19888,
-			["mr"] = 19888,
 		},
 		["Headhunter's Bands of the Owl"] = {
 			["H3540"] = 20000,
 			["mr"] = 20000,
 		},
-		["Green Leather Bag"] = {
-			["mr"] = 4847,
-			["cc"] = 1,
-			["id"] = "5573:0:0:0:0",
-			["H3539"] = 5000,
-			["sc"] = 0,
-			["H3542"] = 4847,
-		},
-		["Pattern: Tough Scorpid Boots"] = {
-			["mr"] = 17800,
-			["H3539"] = 17800,
+		["Shortsword of Vengeance"] = {
+			["H3537"] = 157589,
+			["mr"] = 157589,
 		},
 		["Brightcloth Pants"] = {
 			["H3537"] = 87030,
 			["mr"] = 87030,
 		},
-		["Barbaric Bracers"] = {
-			["mr"] = 129449,
-			["cc"] = 4,
-			["id"] = "18948:0:0:0:0",
-			["sc"] = 2,
-			["H3540"] = 129449,
-		},
-		["Field Plate Gauntlets of the Bear"] = {
-			["H3537"] = 23491,
-			["mr"] = 23491,
-		},
-		["Pattern: Felcloth Pants"] = {
-			["mr"] = 175998,
-			["H3539"] = 175998,
-		},
-		["Recipe: Elixir of the Mongoose"] = {
-			["H3540"] = 8500,
-			["mr"] = 8500,
-			["H3539"] = 8999,
-		},
 		["Viking Warhammer"] = {
-			["mr"] = 46200,
+			["mr"] = 71500,
+			["H3543"] = 71500,
 			["H3539"] = 46200,
 		},
-		["Champion's Armor of Nature's Wrath"] = {
-			["mr"] = 220000,
-			["H3539"] = 220000,
-		},
-		["Jazeraint Cloak of the Bear"] = {
-			["mr"] = 21260,
-			["H3539"] = 21260,
+		["Recipe: Baked Salmon"] = {
+			["H3543"] = 40000,
+			["mr"] = 40000,
 		},
 		["Shadow Silk"] = {
 			["H3540"] = 1071,
 			["H3539"] = 2498,
-			["mr"] = 1071,
-		},
-		["Greenweave Vest of the Eagle"] = {
-			["H3537"] = 22827,
-			["mr"] = 22827,
-		},
-		["Dream Dust"] = {
-			["H3540"] = 3099,
-			["mr"] = 3099,
-			["H3539"] = 5994,
-		},
-		["Lesser Stoneshield Potion"] = {
-			["H3540"] = 1975,
-			["mr"] = 1975,
-			["H3539"] = 2250,
-		},
-		["Rigid Buckler of Agility"] = {
-			["H3537"] = 9900,
-			["mr"] = 9900,
-		},
-		["Nightshade Boots of Nature's Wrath"] = {
-			["H3540"] = 220000,
-			["mr"] = 220000,
+			["H3543"] = 1072,
+			["mr"] = 1072,
 		},
 		["Fish Oil"] = {
-			["mr"] = 429,
-			["H3537"] = 440,
-			["L3537"] = 429,
+			["H3543"] = 398,
+			["mr"] = 398,
 		},
-		["Goblin Nutcracker of Arcane Wrath"] = {
-			["mr"] = 26492,
-			["cc"] = 2,
-			["id"] = "8194:0:0:1805:0",
-			["sc"] = 4,
-			["H3540"] = 26492,
+		["Pattern: Felcloth Shoulders"] = {
+			["H3539"] = 178500,
+			["H3543"] = 58500,
+			["mr"] = 58500,
 		},
-		["Monk's Staff of Spirit"] = {
-			["H3540"] = 60000,
-			["mr"] = 60000,
-		},
-		["Schematic: Dark Iron Bomb"] = {
-			["H3539"] = 80000,
+		["Recipe: Poached Sunscale Salmon"] = {
+			["H3539"] = 79998,
+			["H3543"] = 80000,
 			["mr"] = 80000,
-		},
-		["Viscous Hammer"] = {
-			["mr"] = 150000,
-			["H3539"] = 150000,
-		},
-		["Sentinel Bracers of the Monkey"] = {
-			["mr"] = 5999,
-			["cc"] = 4,
-			["id"] = "7447:0:0:596:0",
-			["sc"] = 2,
-			["H3542"] = 5999,
 		},
 		["Cadet Leggings of the Tiger"] = {
 			["H3537"] = 1200,
@@ -6942,387 +12137,143 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Peridot Circle of Nature Resistance"] = {
 			["H3540"] = 3495000,
-			["mr"] = 3495000,
+			["mr"] = 2967524,
+			["H3543"] = 2967524,
 			["H3539"] = 2997499,
 		},
-		["Nightshade Helmet of the Wolf"] = {
-			["H3537"] = 660000,
-			["mr"] = 660000,
-		},
 		["Primal Batskin Jerkin"] = {
-			["mr"] = 2799997,
 			["H3539"] = 2799997,
-		},
-		["Painbringer of the Monkey"] = {
-			["H3537"] = 163512,
-			["mr"] = 163512,
-		},
-		["Battleforge Shoulderguards of the Boar"] = {
-			["H3537"] = 25613,
-			["mr"] = 25613,
-		},
-		["Arcanite Skeleton Key"] = {
-			["H3537"] = 1100000,
-			["mr"] = 1100000,
-		},
-		["Schematic: Snowmaster 9000"] = {
-			["H3537"] = 1250000,
-			["mr"] = 1250000,
+			["mr"] = 2799997,
 		},
 		["Ruined Leather Scraps"] = {
 			["H3539"] = 269,
-			["sc"] = 0,
-			["H3540"] = 85,
 			["cc"] = 7,
-			["mr"] = 85,
+			["mr"] = 36,
 			["id"] = "2934:0:0:0:0",
-		},
-		["Rough Copper Bomb"] = {
-			["H3537"] = 1495,
-			["mr"] = 1495,
+			["H3540"] = 85,
+			["H3543"] = 36,
+			["sc"] = 0,
 		},
 		["Small Leather Ammo Pouch"] = {
 			["H3537"] = 2470,
 			["mr"] = 2470,
 		},
-		["Jazeraint Gauntlets of the Monkey"] = {
-			["mr"] = 14000,
-			["H3539"] = 14000,
-		},
-		["Recipe: Shadow Oil"] = {
-			["mr"] = 37799,
-			["H3539"] = 37799,
-		},
-		["Ring of the Underwood"] = {
-			["H3540"] = 227654,
-			["mr"] = 227654,
-		},
-		["Lambent Scale Gloves"] = {
-			["H3540"] = 12999,
-			["mr"] = 12999,
-		},
-		["Templar Shield of Blocking"] = {
-			["H3537"] = 50000,
-			["mr"] = 50000,
-		},
-		["Scouting Tunic of Spirit"] = {
-			["H3540"] = 14580,
-			["mr"] = 14580,
-		},
-		["Darkmist Pants of Healing"] = {
-			["mr"] = 64956,
-			["H3539"] = 64956,
-		},
-		["Lesser Magic Wand"] = {
-			["H3539"] = 12498,
-			["mr"] = 12498,
-		},
-		["Conjurer's Robe of the Owl"] = {
-			["H3537"] = 31000,
-			["mr"] = 31000,
-		},
-		["Mageweave Bag"] = {
-			["H3540"] = 16200,
-			["H3542"] = 25050,
-			["L3540"] = 16000,
-			["H3539"] = 17599,
-			["sc"] = 0,
-			["cc"] = 1,
-			["L3539"] = 17398,
-			["mr"] = 25050,
-			["id"] = "10050:0:0:0:0",
-		},
-		["Bloodrazor"] = {
-			["mr"] = 487500,
-			["H3537"] = 500000,
-			["L3537"] = 487500,
-		},
-		["Soldier's Leggings of the Eagle"] = {
-			["H3537"] = 7750,
-			["mr"] = 7750,
-		},
-		["Thornstone Sledgehammer"] = {
-			["H3540"] = 129998,
-			["mr"] = 129998,
-			["H3539"] = 150000,
-		},
-		["Silver Hakkari Bijou"] = {
-			["H3540"] = 29298,
-			["H3539"] = 24959,
-			["mr"] = 29298,
-		},
-		["Darkclaw Lobster"] = {
-			["mr"] = 484,
-			["H3539"] = 484,
-		},
-		["Enormous Ogre Belt"] = {
-			["mr"] = 69650,
-			["H3539"] = 69650,
-		},
-		["Sentinel Bracers of Intellect"] = {
-			["H3537"] = 13611,
-			["mr"] = 13611,
-		},
-		["Bloodwoven Cloak of Fiery Wrath"] = {
-			["H3540"] = 9300,
-			["mr"] = 9300,
-		},
-		["Bonecaster's Sarong of Healing"] = {
-			["H3537"] = 150000,
-			["mr"] = 150000,
-		},
-		["Black Dragonscale"] = {
-			["H3540"] = 5560,
-			["H3539"] = 7999,
-			["mr"] = 5560,
-		},
-		["The Shaft of Tsol"] = {
-			["H3537"] = 35160,
-			["mr"] = 35160,
-		},
-		["Tigerseye"] = {
-			["cc"] = 7,
-			["mr"] = 116,
-			["sc"] = 0,
-			["H3541"] = 179,
-			["H3540"] = 184,
-			["H3539"] = 373,
-			["id"] = "818:0:0:0:0",
-			["H3542"] = 116,
-		},
-		["Pattern: Red Mageweave Headband"] = {
-			["mr"] = 18838,
-			["cc"] = 9,
-			["sc"] = 2,
-			["H3540"] = 18838,
-			["L3539"] = 18600,
-			["H3539"] = 18850,
-			["id"] = "10320:0:0:0:0",
-		},
-		["Skeletal Shoulders"] = {
-			["H3540"] = 69999,
-			["mr"] = 69999,
-			["H3539"] = 82499,
-		},
-		["Pagan Bands of the Whale"] = {
-			["H3537"] = 1500,
-			["mr"] = 1500,
-		},
-		["Crawler Claw"] = {
-			["H3539"] = 421,
-			["mr"] = 421,
-		},
-		["Medicine Staff of the Owl"] = {
-			["H3537"] = 69850,
-			["mr"] = 69850,
-		},
-		["Volcanic Breastplate"] = {
-			["mr"] = 383406,
-			["H3539"] = 383406,
-		},
-		["Shimmering Stave of the Owl"] = {
-			["mr"] = 24399,
-			["H3539"] = 24399,
-		},
-		["Fel Steed Saddlebags"] = {
-			["mr"] = 20148,
-			["cc"] = 1,
-			["id"] = "932:0:0:0:0",
-			["sc"] = 0,
-			["H3540"] = 19999,
-			["H3542"] = 20148,
-		},
-		["Gaea's Cloak of Spirit"] = {
-			["H3537"] = 54500,
-			["mr"] = 54500,
-		},
-		["Enchanted Kodo Bracers"] = {
-			["H3537"] = 20000,
-			["mr"] = 20000,
-		},
-		["Green Silken Shoulders"] = {
-			["H3537"] = 40000,
-			["mr"] = 40000,
-		},
-		["Abyssal Leather Belt of Sorcery"] = {
-			["mr"] = 80000,
-			["cc"] = 4,
-			["id"] = "20667:0:0:2152:0",
-			["sc"] = 2,
-			["H3540"] = 80000,
-		},
-		["Pattern: Barbaric Bracers"] = {
-			["mr"] = 90000,
-			["cc"] = 9,
-			["id"] = "18949:0:0:0:0",
-			["sc"] = 1,
-			["H3540"] = 90000,
-		},
-		["Beaststalker's Gloves"] = {
-			["mr"] = 239999,
-			["sc"] = 3,
-			["H3540"] = 239999,
-			["cc"] = 4,
-			["H3539"] = 369999,
-			["id"] = "16676:0:0:0:0",
-		},
-		["Recipe: Succulent Pork Ribs"] = {
-			["mr"] = 99900,
-			["H3539"] = 99900,
-		},
-		["Darkmist Wizard Hat of Healing"] = {
-			["mr"] = 50000,
-			["H3537"] = 163736,
-			["L3537"] = 50000,
-		},
-		["Sentinel Cloak of Defense"] = {
-			["mr"] = 6000,
-			["cc"] = 4,
-			["id"] = "7446:0:0:1608:0",
-			["sc"] = 1,
-			["H3539"] = 4600,
-			["H3542"] = 6000,
-		},
-		["Celestial Slippers of the Owl"] = {
-			["mr"] = 20000,
-			["H3539"] = 20000,
-		},
-		["Archer's Cloak of the Falcon"] = {
+		["Ebony Boneclub"] = {
 			["H3537"] = 30000,
 			["mr"] = 30000,
 		},
-		["Formula: Enchant Bracer - Superior Stamina"] = {
-			["mr"] = 9598,
-			["H3539"] = 9598,
+		["Light Hide"] = {
+			["H3540"] = 48,
+			["H3539"] = 238,
+			["H3543"] = 387,
+			["mr"] = 387,
 		},
-		["Red Dragonscale"] = {
-			["H3540"] = 21087,
-			["H3539"] = 23500,
-			["mr"] = 21087,
+		["Jazeraint Gauntlets of the Monkey"] = {
+			["H3539"] = 14000,
+			["mr"] = 14000,
+		},
+		["Recipe: Tender Wolf Steak"] = {
+			["H3540"] = 30000,
+			["mr"] = 38900,
+			["H3543"] = 38900,
+			["H3539"] = 39500,
+		},
+		["Thornstone Sledgehammer"] = {
+			["H3540"] = 129998,
+			["mr"] = 112563,
+			["H3543"] = 112563,
+			["H3539"] = 150000,
+		},
+		["Chief Brigadier Armor"] = {
+			["H3537"] = 22394,
+			["mr"] = 22394,
+		},
+		["Infiltrator Boots of the Wolf"] = {
+			["H3543"] = 10000,
+			["mr"] = 10000,
+		},
+		["Pagan Belt of Intellect"] = {
+			["H3543"] = 10000,
+			["mr"] = 10000,
+		},
+		["Recipe: Seasoned Wolf Kabob"] = {
+			["H3539"] = 99900,
+			["mr"] = 99900,
+		},
+		["Crawler Claw"] = {
+			["H3539"] = 421,
+			["H3543"] = 400,
+			["mr"] = 400,
+		},
+		["Silver-lined Belt"] = {
+			["H3537"] = 280000,
+			["mr"] = 280000,
+		},
+		["Shimmering Stave of the Owl"] = {
+			["H3539"] = 24399,
+			["mr"] = 24399,
+		},
+		["Volcanic Breastplate"] = {
+			["H3539"] = 383406,
+			["mr"] = 383406,
+		},
+		["Azure Silk Pants"] = {
+			["H3540"] = 8600,
+			["H3539"] = 4898,
+			["H3543"] = 8043,
+			["mr"] = 8043,
+		},
+		["Recipe: Succulent Pork Ribs"] = {
+			["H3539"] = 99900,
+			["mr"] = 99900,
+		},
+		["Celestial Slippers of the Owl"] = {
+			["H3539"] = 20000,
+			["mr"] = 20000,
 		},
 		["Abyssal Leather Gloves of Striking"] = {
 			["H3540"] = 37400,
-			["mr"] = 37400,
+			["mr"] = 49800,
+			["H3543"] = 49800,
 			["H3539"] = 49400,
-		},
-		["Stylish Blue Shirt"] = {
-			["mr"] = 199996,
-			["H3539"] = 199996,
-		},
-		["Beaststalker's Bindings"] = {
-			["H3540"] = 61500,
-			["H3539"] = 63000,
-			["mr"] = 61500,
-		},
-		["Selenium Loop of Spirit"] = {
-			["H3540"] = 50000,
-			["mr"] = 50000,
 		},
 		["Dark Iron Boots of the Eagle"] = {
 			["H3537"] = 1450000,
 			["mr"] = 1450000,
 		},
-		["Mooncloth Bag"] = {
-			["mr"] = 230000,
-			["cc"] = 1,
-			["H3539"] = 197999,
-			["id"] = "14155:0:0:0:0",
-			["sc"] = 0,
-			["H3540"] = 223695,
-			["H3542"] = 230000,
+		["Headstriker Sword of the Whale"] = {
+			["H3540"] = 49800,
+			["mr"] = 49800,
+			["H3539"] = 70000,
 		},
-		["Staff of Hale Magefire"] = {
-			["H3540"] = 269000,
-			["mr"] = 269000,
-			["H3539"] = 243359,
-		},
-		["Heavy Wool Bandage"] = {
-			["H3540"] = 500,
-			["mr"] = 500,
-			["H3539"] = 682,
-		},
-		["Obsidian Band of the Bear"] = {
-			["H3540"] = 113022,
-			["mr"] = 113022,
+		["Selenium Loop of Spirit"] = {
+			["H3540"] = 50000,
+			["mr"] = 50000,
 		},
 		["Battle Slayer of the Bear"] = {
 			["H3537"] = 30000,
 			["mr"] = 30000,
 		},
-		["High Councillor's Bracers of Intellect"] = {
-			["H3540"] = 98500,
-			["mr"] = 98500,
-			["H3539"] = 98500,
-		},
-		["Plans: Iron Counterweight"] = {
-			["H3540"] = 9898,
-			["H3539"] = 3800,
-			["mr"] = 9898,
-		},
-		["Recipe: Crocolisk Steak"] = {
-			["H3537"] = 99900,
-			["mr"] = 99900,
-		},
 		["Embossed Plate Shield of Stamina"] = {
 			["H3537"] = 60000,
 			["mr"] = 60000,
 		},
-		["Short Bastard Sword of Stamina"] = {
-			["H3540"] = 4499,
-			["mr"] = 4499,
-		},
-		["Coarse Stone"] = {
-			["H3539"] = 1335,
-			["mr"] = 2199,
-			["L3543"] = 2199,
-			["H3540"] = 1494,
-			["id"] = "2836:0:0:0:0",
-			["sc"] = 0,
-			["H3543"] = 3200,
-			["cc"] = 7,
-		},
-		["Regal Cloak of the Whale"] = {
-			["H3537"] = 26678,
-			["mr"] = 26678,
-		},
-		["Dark Hooded Cape"] = {
-			["mr"] = 490000,
-			["H3537"] = 500000,
-			["L3537"] = 490000,
-		},
 		["Cobalt Crusher"] = {
 			["H3540"] = 89500,
-			["mr"] = 89500,
+			["mr"] = 69998,
+			["H3543"] = 69998,
 		},
-		["Renegade Pauldrons of the Bear"] = {
-			["H3540"] = 49212,
-			["mr"] = 49212,
+		["Watcher's Cape of the Whale"] = {
+			["H3543"] = 30000,
+			["mr"] = 30000,
 		},
-		["Viking Sword of Stamina"] = {
-			["H3540"] = 8900,
-			["mr"] = 8900,
-			["H3539"] = 20000,
-		},
-		["Battleforge Armor of the Whale"] = {
-			["mr"] = 24875,
-			["H3539"] = 24875,
-		},
-		["Aboriginal Sash of the Owl"] = {
-			["H3540"] = 10000,
-			["mr"] = 10000,
-		},
-		["Sorcerer Slippers of Shadow Wrath"] = {
-			["H3537"] = 70000,
-			["mr"] = 70000,
-		},
-		["Dwarven Hand Cannon"] = {
-			["H3540"] = 279900,
-			["H3539"] = 498000,
-			["mr"] = 279900,
+		["Dark Iron Boots of the Gorilla"] = {
+			["H3539"] = 1600000,
+			["mr"] = 1600000,
 		},
 		["Commander's Pauldrons of the Monkey"] = {
-			["mr"] = 1000000,
 			["H3539"] = 1000000,
+			["mr"] = 1000000,
 		},
 		["Humbert's Chestpiece"] = {
 			["H3540"] = 8500,
@@ -7332,31 +12283,14 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3540"] = 50000,
 			["mr"] = 50000,
 		},
-		["Dark Iron Ore"] = {
-			["mr"] = 1119,
-			["cc"] = 7,
-			["H3539"] = 998,
-			["id"] = "11370:0:0:0:0",
-			["sc"] = 0,
-			["H3543"] = 1119,
-			["H3540"] = 969,
-		},
 		["Mithril Tube"] = {
 			["H3539"] = 3000,
-			["mr"] = 3000,
+			["H3543"] = 9125,
+			["mr"] = 9125,
 		},
-		["Massacre Sword of the Boar"] = {
-			["H3537"] = 148854,
-			["mr"] = 148854,
-		},
-		["Traveler's Boots"] = {
-			["H3537"] = 39800,
-			["mr"] = 39800,
-		},
-		["Green Hills of Stranglethorn - Page 21"] = {
-			["H3540"] = 855,
-			["H3539"] = 4778,
-			["mr"] = 855,
+		["Green Iron Helm"] = {
+			["H3537"] = 19900,
+			["mr"] = 19900,
 		},
 		["Bloodspattered Sabatons of the Eagle"] = {
 			["H3537"] = 4089,
@@ -7366,406 +12300,174 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 150000,
 			["mr"] = 150000,
 		},
-		["Aboriginal Loincloth of the Eagle"] = {
-			["mr"] = 5522,
-			["H3539"] = 5522,
-		},
 		["Decoded Twilight Text"] = {
 			["H3540"] = 14999,
-			["mr"] = 14999,
+			["mr"] = 7999,
+			["H3543"] = 7999,
 			["H3539"] = 3500,
 		},
-		["Primal Batskin Gloves"] = {
-			["mr"] = 1699997,
-			["H3539"] = 1699997,
+		["Aboriginal Sash of the Owl"] = {
+			["H3540"] = 10000,
+			["mr"] = 10000,
 		},
-		["Eternal Sarong of Nature Resistance"] = {
-			["H3537"] = 4440000,
-			["mr"] = 4440000,
-		},
-		["Green Hills of Stranglethorn - Page 11"] = {
-			["H3540"] = 2799,
-			["mr"] = 2799,
-			["H3539"] = 4770,
+		["Stonecutter Claymore of Stamina"] = {
+			["H3539"] = 24499,
+			["mr"] = 24499,
 		},
 		["Slimy Murloc Scale"] = {
-			["mr"] = 850,
+			["mr"] = 846,
+			["H3543"] = 846,
 			["H3539"] = 850,
 		},
-		["Native Pants of Fiery Wrath"] = {
-			["mr"] = 5581,
-			["H3539"] = 5581,
-		},
-		["Catseye Elixir"] = {
-			["mr"] = 17800,
-			["H3539"] = 17800,
-		},
-		["Greater Scythe of the Eagle"] = {
-			["H3537"] = 34115,
-			["mr"] = 34115,
-		},
-		["Recipe: Invisibility Potion"] = {
-			["H3540"] = 15800,
-			["H3539"] = 19000,
-			["mr"] = 15800,
-		},
-		["Potent Bands of Power"] = {
-			["H3537"] = 80634,
-			["mr"] = 80634,
-		},
-		["Moonberry Juice"] = {
-			["H3537"] = 147,
-			["mr"] = 147,
-		},
-		["Felcloth Bag"] = {
-			["mr"] = 1064442,
-			["cc"] = 1,
-			["sc"] = 1,
-			["H3540"] = 999993,
-			["id"] = "21341:0:0:0:0",
-			["H3539"] = 999996,
-			["H3542"] = 1064442,
-		},
-		["Recipe: Greater Stoneshield Potion"] = {
-			["H3540"] = 39499,
-			["mr"] = 39499,
-			["H3539"] = 14800,
+		["Mighty Girdle of the Eagle"] = {
+			["H3537"] = 60000,
+			["mr"] = 60000,
 		},
 		["Abyssal Plate Girdle of Restoration"] = {
 			["mr"] = 145739,
 			["H3537"] = 147212,
 			["L3537"] = 145739,
 		},
-		["Duskwoven Gloves of the Eagle"] = {
-			["H3537"] = 21480,
-			["mr"] = 21480,
-		},
-		["Plans: Mithril Spurs"] = {
-			["H3540"] = 88888,
-			["H3539"] = 89100,
-			["mr"] = 88888,
-		},
 		["High Councillor's Circlet of the Eagle"] = {
 			["H3540"] = 371498,
 			["mr"] = 371498,
 		},
-		["Mystic's Slippers"] = {
-			["mr"] = 5545,
-			["H3539"] = 5545,
-		},
-		["Cresting Charm"] = {
-			["H3539"] = 1821,
-			["sc"] = 0,
-			["cc"] = 0,
-			["H3540"] = 674,
-			["id"] = "4481:0:0:0:0",
-			["mr"] = 1084,
-			["H3542"] = 1084,
-		},
-		["Small Flame Sac"] = {
-			["H3540"] = 9800,
-			["mr"] = 9800,
-			["H3539"] = 15989,
-		},
-		["Schematic: Powerful Seaforium Charge"] = {
-			["H3540"] = 29800,
-			["mr"] = 29800,
-			["H3539"] = 67000,
+		["Felcloth Bag"] = {
+			["mr"] = 1064442,
+			["cc"] = 1,
+			["sc"] = 1,
+			["H3540"] = 999993,
+			["H3539"] = 999996,
+			["id"] = "21341:0:0:0:0",
+			["H3542"] = 1064442,
 		},
 		["Bonecaster's Boots of Frozen Wrath"] = {
-			["mr"] = 320000,
 			["H3539"] = 320000,
-		},
-		["Carnelian Loop of Fire Resistance"] = {
-			["mr"] = 139500,
-			["cc"] = 4,
-			["H3539"] = 215459,
-			["id"] = "11972:0:0:1411:0",
-			["sc"] = 0,
-			["H3543"] = 139500,
-			["H3540"] = 50000,
-		},
-		["Imposing Shoulders of the Bear"] = {
-			["H3537"] = 12425,
-			["mr"] = 12425,
-		},
-		["Chief Brigadier Boots"] = {
-			["mr"] = 7500,
-			["H3537"] = 13600,
-			["L3537"] = 7500,
+			["mr"] = 320000,
 		},
 		["Elixir of Greater Agility"] = {
 			["H3540"] = 14800,
 			["H3539"] = 4850,
-			["mr"] = 14800,
+			["H3543"] = 3898,
+			["mr"] = 3898,
 		},
-		["Crystal Sword of the Tiger"] = {
-			["H3537"] = 99881,
-			["mr"] = 99881,
+		["Plans: Mithril Spurs"] = {
+			["H3540"] = 88888,
+			["H3539"] = 89100,
+			["H3543"] = 9998,
+			["mr"] = 9998,
 		},
 		["Undamaged Hippogryph Feather"] = {
 			["H3540"] = 504,
 			["H3539"] = 510,
-			["mr"] = 504,
+			["H3543"] = 1965,
+			["mr"] = 1965,
 		},
-		["Sentinel Trousers of the Whale"] = {
-			["mr"] = 36996,
-			["cc"] = 4,
-			["id"] = "7440:0:0:1034:0",
-			["sc"] = 2,
-			["H3539"] = 29052,
-			["H3542"] = 36996,
-		},
-		["Plans: Radiant Gloves"] = {
-			["H3539"] = 19600,
-			["sc"] = 4,
-			["id"] = "12695:0:0:0:0",
-			["cc"] = 9,
-			["mr"] = 19600,
+		["Cassandra's Grace"] = {
+			["H3543"] = 999999,
+			["mr"] = 999999,
 		},
 		["Umbral Wand of the Owl"] = {
 			["H3537"] = 40000,
 			["mr"] = 40000,
 		},
-		["Night Watch Shortsword"] = {
-			["H3540"] = 119500,
-			["mr"] = 119500,
+		["Windchaser Coronet"] = {
+			["H3539"] = 29800,
+			["mr"] = 29800,
 		},
-		["Earthborn Kilt"] = {
-			["H3540"] = 45000,
-			["mr"] = 45000,
+		["Heavy Leather"] = {
+			["H3539"] = 789,
+			["cc"] = 7,
+			["mr"] = 1215,
+			["id"] = "4234:0:0:0:0",
+			["H3540"] = 1402,
+			["H3543"] = 1215,
+			["sc"] = 0,
+		},
+		["Avalanchion's Stony Hide"] = {
+			["mr"] = 1099998,
+			["H3543"] = 1099998,
+			["H3539"] = 1100000,
 		},
 		["Upper Map Fragment"] = {
 			["H3537"] = 8900,
 			["mr"] = 8900,
 		},
-		["Strange Dust"] = {
-			["cc"] = 7,
-			["H3539"] = 614,
-			["sc"] = 0,
-			["H3541"] = 438,
-			["id"] = "10940:0:0:0:0",
-			["mr"] = 412,
-			["H3540"] = 599,
-			["H3542"] = 412,
+		["Jungle Remedy"] = {
+			["H3543"] = 19305,
+			["mr"] = 19305,
 		},
-		["Windchaser Coronet"] = {
-			["mr"] = 29800,
-			["H3539"] = 29800,
-		},
-		["Shredder Operating Manual - Page 11"] = {
-			["mr"] = 4300,
-			["cc"] = 15,
-			["id"] = "16655:0:0:0:0",
-			["H3540"] = 9899,
-			["H3539"] = 1030,
-			["sc"] = 0,
-			["H3542"] = 4300,
-		},
-		["Heavy Leather"] = {
-			["H3539"] = 789,
-			["sc"] = 0,
-			["H3540"] = 1402,
-			["cc"] = 7,
-			["mr"] = 1402,
-			["id"] = "4234:0:0:0:0",
-		},
-		["Spiritchaser Staff of Intellect"] = {
-			["H3537"] = 57500,
-			["mr"] = 57500,
-		},
-		["Heraldic Gloves"] = {
-			["mr"] = 72750,
-			["sc"] = 2,
-			["H3529"] = 72750,
-			["id"] = "8121:0:0:0:0",
-			["cc"] = 4,
-		},
-		["Green Helper Box"] = {
-			["H3539"] = 26195,
-			["mr"] = 26195,
-		},
-		["Viking Sword of the Bear"] = {
-			["H3540"] = 53232,
-			["mr"] = 53232,
-		},
-		["Wild Berries"] = {
-			["H3540"] = 2875,
-			["mr"] = 2875,
-			["H3539"] = 2875,
-		},
-		["Avalanchion's Stony Hide"] = {
-			["mr"] = 1100000,
-			["H3539"] = 1100000,
-		},
-		["Darkmist Girdle of the Whale"] = {
-			["H3537"] = 16656,
-			["mr"] = 16656,
-		},
-		["Formidable Cape of Agility"] = {
-			["H3537"] = 30000,
-			["mr"] = 30000,
-		},
-		["Shellfish"] = {
-			["H3540"] = 22749,
-			["mr"] = 22749,
-		},
-		["Liferoot"] = {
-			["mr"] = 1645,
-			["cc"] = 7,
-			["id"] = "3357:0:0:0:0",
-			["H3539"] = 765,
-			["sc"] = 0,
-			["H3540"] = 1645,
-		},
-		["Sage's Gloves of the Eagle"] = {
-			["mr"] = 27562,
-			["sc"] = 1,
-			["H3529"] = 27562,
-			["id"] = "6615:0:0:851:0",
-			["cc"] = 4,
-		},
-		["Heraldic Leggings"] = {
-			["H3537"] = 23617,
-			["mr"] = 23617,
-		},
-		["Lifestone"] = {
-			["mr"] = 150000,
-			["H3539"] = 150000,
-		},
-		["Tyrant's Armguards"] = {
-			["H3537"] = 10000,
-			["mr"] = 10000,
-		},
-		["Codex of Defense"] = {
-			["H3540"] = 1490,
-			["H3539"] = 1770,
-			["mr"] = 1490,
-		},
-		["Quicksilver Pendant of Shadow Resistance"] = {
-			["H3540"] = 1990000,
-			["mr"] = 1990000,
+		["Lean Wolf Steak"] = {
+			["H3540"] = 13000,
+			["mr"] = 12599,
+			["H3543"] = 12599,
 		},
 		["Jazeraint Cloak of Strength"] = {
-			["mr"] = 23325,
 			["H3539"] = 23325,
-		},
-		["Abyssal Mail Handguards of Striking"] = {
-			["H3540"] = 62134,
-			["mr"] = 62134,
-			["H3539"] = 80000,
+			["mr"] = 23325,
 		},
 		["Crawler Meat"] = {
 			["H3537"] = 3130,
 			["mr"] = 3130,
 		},
-		["Sentinel Breastplate of the Whale"] = {
-			["mr"] = 16275,
-			["H3539"] = 16275,
+		["Heraldic Gloves"] = {
+			["mr"] = 72750,
+			["cc"] = 4,
+			["id"] = "8121:0:0:0:0",
+			["sc"] = 2,
+			["H3529"] = 72750,
 		},
-		["Raider's Gauntlets of Strength"] = {
-			["H3537"] = 8410,
-			["mr"] = 8410,
-		},
-		["Jouster's Girdle"] = {
-			["H3537"] = 12000,
-			["mr"] = 12000,
-		},
-		["Sword of Decay"] = {
-			["H3540"] = 105924,
-			["mr"] = 105924,
-		},
-		["Field Plate Girdle of the Tiger"] = {
-			["mr"] = 30000,
-			["H3539"] = 30000,
-		},
-		["Lupine Cord of the Monkey"] = {
-			["H3537"] = 5517,
-			["mr"] = 5517,
-		},
-		["Deeprock Salt"] = {
-			["H3540"] = 368,
-			["H3539"] = 483,
-			["mr"] = 368,
-		},
-		["Pattern: Green Holiday Shirt"] = {
-			["H3537"] = 160000,
-			["mr"] = 160000,
+		["Deadly Kris of Shadow Wrath"] = {
+			["H3543"] = 94452,
+			["mr"] = 94452,
 		},
 		["Sandstalker Bracers"] = {
 			["H3540"] = 1399997,
 			["mr"] = 1399997,
 			["H3539"] = 1799998,
 		},
-		["Recipe: Elixir of Superior Defense"] = {
-			["H3539"] = 50675,
-			["mr"] = 50675,
+		["Abyssal Mail Handguards of Striking"] = {
+			["H3540"] = 62134,
+			["mr"] = 55500,
+			["H3543"] = 55500,
+			["H3539"] = 80000,
 		},
-		["Mercurial Bracers of the Falcon"] = {
-			["H3540"] = 49999,
-			["mr"] = 49999,
+		["Bandit Boots of the Monkey"] = {
+			["H3543"] = 18000,
+			["mr"] = 18000,
 		},
 		["Pattern: Green Woolen Bag"] = {
-			["mr"] = 6400,
+			["mr"] = 4300,
 			["cc"] = 9,
+			["H3540"] = 9750,
 			["id"] = "4292:0:0:0:0",
 			["sc"] = 2,
-			["H3540"] = 9750,
+			["H3543"] = 4300,
 			["H3542"] = 6400,
 		},
 		["Holy Bologna: What the Light Won't Tell You"] = {
 			["H3540"] = 49400,
 			["H3539"] = 1500,
-			["mr"] = 49400,
-		},
-		["Runed Copper Pants"] = {
-			["H3537"] = 1111,
-			["mr"] = 1111,
-		},
-		["Giant Club of Strength"] = {
-			["H3540"] = 40000,
-			["mr"] = 40000,
+			["H3543"] = 9800,
+			["mr"] = 9800,
 		},
 		["Pattern: Soul Pouch"] = {
 			["H3537"] = 190000,
 			["mr"] = 190000,
 		},
-		["Pattern: Black Swashbuckler's Shirt"] = {
-			["mr"] = 29999,
-			["H3539"] = 29999,
-		},
-		["Edged Bastard Sword of the Wolf"] = {
-			["mr"] = 6900,
-			["H3539"] = 6900,
-		},
-		["Fen Ring of the Tiger"] = {
-			["mr"] = 37407,
-			["H3539"] = 37407,
-		},
 		["Scorpashi Slippers"] = {
 			["H3537"] = 57574,
 			["mr"] = 57574,
 		},
-		["Fen Ring of the Wolf"] = {
-			["H3540"] = 34272,
-			["H3539"] = 35735,
-			["mr"] = 34272,
+		["Libram of Resilience"] = {
+			["H3540"] = 491998,
+			["H3539"] = 504998,
+			["H3543"] = 333200,
+			["mr"] = 333200,
 		},
-		["Ebonhold Gauntlets"] = {
-			["H3537"] = 25554,
-			["mr"] = 25554,
-		},
-		["Bloodspiller"] = {
-			["mr"] = 80000,
-			["H3539"] = 80000,
-		},
-		["Raw Summer Bass"] = {
-			["H3539"] = 453,
-			["mr"] = 453,
-		},
-		["Raptor Punch"] = {
-			["H3539"] = 895,
-			["mr"] = 895,
+		["Cabalist Helm of the Eagle"] = {
+			["H3537"] = 32214,
+			["mr"] = 32214,
 		},
 		["Jadefire Sabatons of the Monkey"] = {
 			["H3540"] = 100000,
@@ -7775,120 +12477,67 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Schematic: Mechanical Squirrel"] = {
 			["H3540"] = 6230,
 			["H3539"] = 7900,
-			["mr"] = 6230,
+			["H3543"] = 2400,
+			["mr"] = 2400,
 		},
-		["Schematic: Ice Deflector"] = {
-			["H3537"] = 69172,
-			["mr"] = 69172,
+		["Bloodspattered Loincloth of Strength"] = {
+			["mr"] = 5000,
+			["H3543"] = 5000,
+			["H3539"] = 5969,
 		},
 		["Ardent Custodian"] = {
 			["H3540"] = 487500,
-			["mr"] = 487500,
+			["mr"] = 99000,
+			["H3543"] = 99000,
 			["H3539"] = 498000,
 		},
-		["Exploding Shot"] = {
-			["H3537"] = 250,
-			["mr"] = 250,
-		},
-		["Golden Skeleton Key"] = {
-			["mr"] = 3000,
-			["H3537"] = 3818,
-			["L3537"] = 3000,
+		["Raptor Punch"] = {
+			["H3539"] = 895,
+			["H3543"] = 263,
+			["mr"] = 263,
 		},
 		["Stylish Red Shirt"] = {
-			["mr"] = 37368,
+			["mr"] = 16198,
+			["H3543"] = 16198,
 			["H3539"] = 37368,
 		},
 		["Large Glimmering Shard"] = {
 			["H3540"] = 1944,
-			["mr"] = 1944,
+			["mr"] = 417,
+			["H3543"] = 417,
 		},
-		["Spiked Chain Breastplate of the Bear"] = {
-			["H3537"] = 8700,
-			["mr"] = 8700,
+		["Edged Bastard Sword of the Wolf"] = {
+			["H3539"] = 6900,
+			["mr"] = 6900,
 		},
-		["Wolfrunner Shoes"] = {
-			["mr"] = 350000,
-			["H3539"] = 350000,
-		},
-		["Runed Stygian Belt"] = {
-			["H3539"] = 2729939,
-			["mr"] = 2729939,
-		},
-		["Nat Pagle's Guide to Extreme Anglin'"] = {
-			["H3540"] = 548000,
-			["mr"] = 548000,
-		},
-		["The Queen's Jewel"] = {
-			["H3539"] = 110000,
-			["mr"] = 110000,
-		},
-		["Pillager's Girdle of the Bear"] = {
-			["H3537"] = 6000,
-			["mr"] = 6000,
-		},
-		["Shimmering Cloak of Arcane Wrath"] = {
-			["H3537"] = 9000,
-			["mr"] = 9000,
-		},
-		["Plans: Thorium Leggings"] = {
-			["H3540"] = 19899,
-			["mr"] = 19899,
-			["H3539"] = 29800,
-		},
-		["Seer's Gloves"] = {
-			["H3537"] = 4900,
-			["mr"] = 4900,
+		["Darkmist Mantle of the Eagle"] = {
+			["H3537"] = 50000,
+			["mr"] = 50000,
 		},
 		["Recipe: Grilled Squid"] = {
-			["mr"] = 68999,
-			["H3537"] = 69000,
-			["L3537"] = 68999,
+			["H3543"] = 89500,
+			["mr"] = 89500,
 		},
 		["Five of Beasts"] = {
 			["H3540"] = 99799,
-			["mr"] = 99799,
+			["mr"] = 36799,
+			["H3543"] = 36799,
 			["H3539"] = 216211,
-		},
-		["Recipe: Blood Sausage"] = {
-			["H3537"] = 99900,
-			["mr"] = 99900,
-		},
-		["Warbear Leather"] = {
-			["H3539"] = 3496,
-			["sc"] = 0,
-			["H3540"] = 3399,
-			["cc"] = 7,
-			["mr"] = 3399,
-			["id"] = "15419:0:0:0:0",
 		},
 		["Elemental Earth"] = {
 			["H3540"] = 39000,
 			["H3539"] = 42000,
+			["H3543"] = 39000,
 			["mr"] = 39000,
 		},
 		["Sentinel Gloves of the Monkey"] = {
-			["mr"] = 15000,
+			["mr"] = 40000,
+			["H3543"] = 40000,
 			["H3539"] = 15000,
 		},
-		["Imposing Bandana of Healing"] = {
-			["H3537"] = 50000,
-			["mr"] = 50000,
-		},
-		["Dark Iron Bracers"] = {
-			["H3537"] = 776249,
-			["mr"] = 776249,
-		},
-		["Scouting Gloves of Defense"] = {
-			["mr"] = 115269,
-			["cc"] = 4,
-			["id"] = "6586:0:0:108:0",
-			["sc"] = 2,
-			["H3542"] = 115269,
-		},
-		["Edged Bastard Sword of the Bear"] = {
-			["mr"] = 6900,
-			["H3539"] = 6900,
+		["Circlet of the Order"] = {
+			["H3537"] = 10000,
+			["mr"] = 10000,
 		},
 		["Feral Buckler of Agility"] = {
 			["H3537"] = 4900,
@@ -7897,124 +12546,47 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Scroll of Intellect III"] = {
 			["H3540"] = 1440,
 			["H3539"] = 1450,
-			["mr"] = 1440,
+			["H3543"] = 2700,
+			["mr"] = 2700,
 		},
-		["Recipe: Goretusk Liver Pie"] = {
-			["mr"] = 99500,
-			["cc"] = 9,
-			["id"] = "2697:0:0:0:0",
-			["H3543"] = 99500,
-			["sc"] = 5,
-		},
-		["Breath of Wind"] = {
-			["H3540"] = 994,
-			["H3539"] = 3399,
-			["mr"] = 994,
-		},
-		["Serpentine Loop of Fire Resistance"] = {
-			["H3539"] = 129500,
-			["sc"] = 0,
-			["cc"] = 4,
-			["H3540"] = 129000,
-			["id"] = "11977:0:0:1416:0",
-			["mr"] = 97500,
-			["H3542"] = 97500,
+		["Dark Iron Bracers"] = {
+			["H3543"] = 900000,
+			["mr"] = 900000,
 		},
 		["Darkmist Wizard Hat of Shadow Wrath"] = {
-			["mr"] = 93735,
 			["H3539"] = 93735,
-		},
-		["Ballast Maul of the Bear"] = {
-			["H3540"] = 120924,
-			["mr"] = 120924,
-		},
-		["Twilight Belt of the Eagle"] = {
-			["H3537"] = 25000,
-			["mr"] = 25000,
+			["mr"] = 93735,
 		},
 		["Raw Brilliant Smallfish"] = {
-			["mr"] = 1329,
+			["mr"] = 1948,
+			["H3543"] = 1948,
 			["H3539"] = 1329,
 		},
-		["Darkmist Mantle of the Eagle"] = {
-			["H3537"] = 50000,
-			["mr"] = 50000,
-		},
-		["Native Branch of the Whale"] = {
-			["H3537"] = 20000,
-			["mr"] = 20000,
-		},
-		["Recipe: Minor Magic Resistance Potion"] = {
-			["H3539"] = 291247,
-			["mr"] = 291247,
-		},
-		["Aboriginal Loincloth of Spirit"] = {
-			["H3537"] = 8268,
-			["mr"] = 8268,
-		},
 		["Grinning Axe of the Monkey"] = {
-			["mr"] = 60000,
 			["H3539"] = 60000,
+			["mr"] = 60000,
 		},
 		["Dreamweave Circlet"] = {
-			["mr"] = 149000,
+			["mr"] = 149999,
+			["H3543"] = 149999,
 			["H3539"] = 149000,
 		},
-		["Worn Dagger"] = {
-			["H3537"] = 23404,
-			["mr"] = 23404,
+		["Regal Sash of Healing"] = {
+			["H3537"] = 28848,
+			["mr"] = 28848,
 		},
-		["Small Lustrous Pearl"] = {
-			["H3539"] = 232,
-			["cc"] = 7,
-			["H3540"] = 296,
-			["id"] = "5498:0:0:0:0",
-			["L3539"] = 230,
-			["mr"] = 296,
-			["sc"] = 0,
-		},
-		["Orange Hakkari Bijou"] = {
-			["H3540"] = 29299,
-			["H3539"] = 23999,
-			["mr"] = 29299,
-		},
-		["\"Mage-Eye\" Blunderbuss"] = {
-			["H3537"] = 7000,
-			["mr"] = 7000,
-		},
-		["Sickly Looking Fish"] = {
-			["H3537"] = 1714,
-			["mr"] = 1714,
-		},
-		["Black Duskwood Staff"] = {
-			["H3540"] = 82799,
-			["H3539"] = 103593,
-			["mr"] = 82799,
-		},
-		["Evil Bat Eye"] = {
-			["H3540"] = 2131,
-			["H3539"] = 2133,
-			["mr"] = 2131,
-		},
-		["Knightly Longsword of the Bear"] = {
-			["mr"] = 45060,
-			["H3539"] = 45060,
-		},
-		["Sandstalker Breastplate"] = {
-			["mr"] = 3900000,
-			["H3539"] = 3900000,
-		},
-		["Durable Cape of Stamina"] = {
-			["H3537"] = 12010,
-			["mr"] = 12010,
+		["Spinel Ring of Frost Resistance"] = {
+			["H3543"] = 25000,
+			["mr"] = 25000,
 		},
 		["Staunch Hammer of Strength"] = {
 			["H3540"] = 7900,
 			["mr"] = 7900,
 		},
-		["Hematite Link of Arcane Resistance"] = {
-			["mr"] = 91017,
-			["H3539"] = 91017,
+		["Schematic: Major Recombobulator"] = {
+			["H3540"] = 33600,
+			["H3539"] = 34941,
+			["mr"] = 33600,
 		},
 		["Moonglow"] = {
 			["H3540"] = 2610,
@@ -8022,95 +12594,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3539"] = 2610,
 		},
 		["Formula: Enchant Chest - Major Health"] = {
-			["mr"] = 26234,
+			["mr"] = 23600,
+			["H3543"] = 23600,
 			["H3539"] = 26234,
-		},
-		["Swashbuckler's Breastplate of the Monkey"] = {
-			["H3537"] = 30000,
-			["mr"] = 30000,
-		},
-		["Illusion Dust"] = {
-			["H3540"] = 757,
-			["H3539"] = 860,
-			["mr"] = 757,
 		},
 		["Conjurer's Mantle of the Owl"] = {
 			["H3537"] = 28728,
 			["mr"] = 28728,
 		},
-		["Encrypted Twilight Text"] = {
-			["H3540"] = 14527,
-			["mr"] = 14527,
-			["H3539"] = 13650,
-		},
-		["Iron Bar"] = {
-			["L3543"] = 2895,
-			["mr"] = 2895,
-			["sc"] = 0,
-			["H3539"] = 2100,
-			["H3540"] = 2240,
-			["id"] = "3575:0:0:0:0",
-			["H3543"] = 4899,
-			["cc"] = 7,
-		},
-		["Pattern: Wicked Leather Armor"] = {
-			["H3539"] = 37900,
-			["sc"] = 1,
-			["id"] = "15773:0:0:0:0",
-			["cc"] = 9,
-			["mr"] = 37900,
-		},
 		["Lava Belt"] = {
-			["mr"] = 2299997,
 			["H3539"] = 2299997,
+			["mr"] = 2299997,
 		},
-		["Arachnidian Cape of Arcane Wrath"] = {
-			["mr"] = 34861,
-			["cc"] = 4,
-			["id"] = "14292:0:0:1810:0",
-			["sc"] = 1,
-			["H3540"] = 34861,
-		},
-		["Lesser Mana Potion"] = {
-			["H3539"] = 2299,
-			["cc"] = 0,
-			["mr"] = 960,
-			["id"] = "3385:0:0:0:0",
-			["H3540"] = 2143,
-			["sc"] = 0,
-			["H3542"] = 960,
-		},
-		["Winter Squid"] = {
-			["H3540"] = 11499,
-			["H3539"] = 13799,
-			["mr"] = 11499,
-		},
-		["Raw Bristle Whisker Catfish"] = {
-			["H3540"] = 3199,
-			["mr"] = 3199,
-			["H3539"] = 523,
-		},
-		["Headhunter's Slippers of the Gorilla"] = {
-			["H3537"] = 37575,
-			["mr"] = 37575,
-		},
-		["Emerald Girdle of Power"] = {
-			["H3537"] = 48351,
-			["mr"] = 48351,
-		},
-		["Warden's Woolies"] = {
-			["H3537"] = 22089,
-			["mr"] = 22089,
-		},
-		["Swiftthistle"] = {
-			["cc"] = 7,
-			["H3539"] = 10559,
-			["sc"] = 0,
-			["H3540"] = 10000,
-			["id"] = "2452:0:0:0:0",
-			["mr"] = 10000,
-			["H3543"] = 10000,
-			["H3542"] = 9999,
+		["Resplendent Cloak of Fiery Wrath"] = {
+			["H3543"] = 53200,
+			["mr"] = 53200,
 		},
 		["Gleaming Claymore of the Whale"] = {
 			["mr"] = 3299,
@@ -8119,100 +12617,55 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3543"] = 3299,
 			["sc"] = 8,
 		},
-		["Ornate Mithril Boots"] = {
-			["H3537"] = 130000,
-			["mr"] = 130000,
-		},
-		["Cutthroat's Mitts of the Eagle"] = {
-			["H3537"] = 14939,
-			["mr"] = 14939,
-		},
-		["Pattern: Orange Martial Shirt"] = {
-			["H3537"] = 63477,
-			["mr"] = 63477,
-		},
-		["Silksand Boots"] = {
-			["H3537"] = 10749,
-			["mr"] = 10749,
-		},
-		["Battle Slayer of the Whale"] = {
-			["mr"] = 27144,
-			["H3539"] = 27144,
-		},
 		["Headhunter's Mitts of the Bear"] = {
 			["H3537"] = 23260,
 			["mr"] = 23260,
 		},
 		["Grizzly Pants of Agility"] = {
-			["mr"] = 40000,
 			["H3539"] = 40000,
+			["mr"] = 40000,
 		},
 		["Gloom Reaper of the Monkey"] = {
 			["H3540"] = 14999,
-			["mr"] = 14999,
+			["mr"] = 19999,
+			["H3543"] = 19999,
 		},
 		["Mining Pick"] = {
-			["mr"] = 19873,
 			["H3539"] = 19873,
+			["mr"] = 19873,
 		},
-		["Cured Heavy Hide"] = {
-			["H3539"] = 7450,
-			["mr"] = 7450,
+		["Twilight Boots of Frozen Wrath"] = {
+			["H3537"] = 36674,
+			["mr"] = 36674,
 		},
-		["Adventurer's Bandana of Nature's Wrath"] = {
-			["H3537"] = 250000,
-			["mr"] = 250000,
-		},
-		["Ivory Wand of the Boar"] = {
-			["H3537"] = 32000,
-			["mr"] = 32000,
-		},
-		["Faded Photograph"] = {
-			["H3537"] = 1124461,
-			["mr"] = 1124461,
-		},
-		["Swiftwind"] = {
-			["H3537"] = 150789,
-			["mr"] = 150789,
-		},
-		["Jadefire Sabatons of Shadow Resistance"] = {
-			["mr"] = 670000,
-			["H3539"] = 670000,
-		},
-		["Vital Orb of the Wolf"] = {
-			["H3537"] = 10000,
-			["mr"] = 10000,
+		["Battle Slayer of the Whale"] = {
+			["H3539"] = 27144,
+			["mr"] = 27144,
 		},
 		["Abyssal Plate Greaves of Restoration"] = {
 			["H3537"] = 125000,
 			["mr"] = 125000,
 		},
 		["Mongoose Boots"] = {
-			["mr"] = 1999999,
 			["H3539"] = 1999999,
-		},
-		["Schematic: Thorium Widget"] = {
-			["H3540"] = 94475,
-			["H3539"] = 82945,
-			["mr"] = 94475,
+			["mr"] = 1999999,
 		},
 		["Silken Thread"] = {
 			["H3540"] = 2100,
-			["mr"] = 2100,
+			["mr"] = 2300,
+			["H3543"] = 2300,
 			["H3539"] = 2099,
 		},
-		["Revenant Helmet of Stamina"] = {
-			["H3537"] = 54549,
-			["mr"] = 54549,
-		},
 		["Elegant Belt of Intellect"] = {
-			["mr"] = 63128,
+			["mr"] = 59010,
+			["H3543"] = 59010,
 			["H3539"] = 63128,
 		},
 		["Chunk of Boar Meat"] = {
 			["H3540"] = 664,
 			["H3539"] = 800,
-			["mr"] = 664,
+			["H3543"] = 1215,
+			["mr"] = 1215,
 		},
 		["42 Pound Redgill"] = {
 			["H3537"] = 30000,
@@ -8226,44 +12679,25 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 69999,
 			["mr"] = 69999,
 		},
-		["Shredder Operating Manual - Page 6"] = {
-			["mr"] = 2600,
-			["cc"] = 15,
-			["id"] = "16650:0:0:0:0",
-			["H3540"] = 868,
-			["H3539"] = 889,
-			["sc"] = 0,
-			["H3542"] = 2600,
-		},
-		["Imperial Cloak"] = {
-			["H3537"] = 24236,
-			["mr"] = 24236,
-		},
-		["Twilight Boots of Frozen Wrath"] = {
-			["H3537"] = 36674,
-			["mr"] = 36674,
+		["Jazeraint Bracers of the Gorilla"] = {
+			["H3537"] = 18107,
+			["mr"] = 18107,
 		},
 		["Thaumaturgist Staff of the Bear"] = {
 			["H3537"] = 66666,
 			["mr"] = 66666,
 		},
 		["Sulfuron Ingot"] = {
-			["H3540"] = 2877500,
-			["mr"] = 2877500,
-		},
-		["Benedict's Key"] = {
-			["H3537"] = 21161,
-			["mr"] = 21161,
-		},
-		["Lesser Astral Essence"] = {
-			["H3539"] = 2400,
-			["sc"] = 0,
-			["id"] = "10998:0:0:0:0",
+			["mr"] = 2922499,
 			["cc"] = 7,
-			["mr"] = 2400,
+			["H3540"] = 2877500,
+			["id"] = "17203:0:0:0:0",
+			["H3543"] = 2922499,
+			["sc"] = 0,
 		},
 		["Recipe: Hot Wolf Ribs"] = {
-			["mr"] = 49898,
+			["mr"] = 32700,
+			["H3543"] = 32700,
 			["H3539"] = 49898,
 		},
 		["Plaguebat Fur Gloves"] = {
@@ -8278,132 +12712,37 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 12500,
 			["L3537"] = 12400,
 		},
-		["Discombobulator Ray"] = {
-			["H3537"] = 148500,
-			["mr"] = 148500,
-		},
-		["Windrunner Legguards"] = {
-			["mr"] = 61748,
-			["H3539"] = 61748,
-		},
-		["Regal Sash of the Owl"] = {
-			["H3537"] = 40000,
-			["mr"] = 40000,
-		},
-		["Inscribed Leather Bracers"] = {
-			["mr"] = 14099,
-			["cc"] = 4,
-			["id"] = "3205:0:0:0:0",
-			["sc"] = 2,
-			["H3536"] = 14099,
-		},
 		["Libram of Rumination"] = {
 			["H3540"] = 2573,
-			["mr"] = 2573,
+			["mr"] = 4179,
+			["H3543"] = 4179,
 			["H3539"] = 2772,
 		},
-		["Pattern: Wicked Leather Belt"] = {
-			["mr"] = 39800,
-			["cc"] = 9,
-			["id"] = "15768:0:0:0:0",
-			["sc"] = 1,
-			["H3539"] = 39800,
-		},
-		["Sentry's Shoulderguards of the Eagle"] = {
-			["H3537"] = 6200,
-			["mr"] = 6200,
-		},
-		["Fiery Core"] = {
-			["H3539"] = 50000,
-			["cc"] = 5,
-			["mr"] = 30614,
-			["id"] = "17010:0:0:0:0",
-			["sc"] = 0,
-			["H3543"] = 30614,
-			["H3540"] = 32564,
-		},
-		["Ironfeather"] = {
-			["H3540"] = 150,
-			["H3539"] = 150,
-			["mr"] = 150,
-		},
-		["Phalanx Leggings of the Whale"] = {
-			["H3540"] = 47292,
-			["mr"] = 47292,
+		["Jazeraint Bracers of Power"] = {
+			["H3543"] = 19000,
+			["mr"] = 19000,
 		},
 		["Glimmering Mail Breastplate"] = {
-			["H3537"] = 15500,
-			["mr"] = 15500,
+			["H3543"] = 10774,
+			["mr"] = 10774,
+		},
+		["Sturdy Quarterstaff of the Eagle"] = {
+			["H3540"] = 3100,
+			["mr"] = 3100,
 		},
 		["Hefty Battlehammer of the Monkey"] = {
 			["H3540"] = 20000,
 			["mr"] = 20000,
 			["H3539"] = 10000,
 		},
-		["Raincaller Vest of Spirit"] = {
-			["H3537"] = 10000,
-			["mr"] = 10000,
-		},
-		["Bone Dust"] = {
-			["mr"] = 879,
-			["H3539"] = 879,
-		},
-		["Lavender Mageweave Shirt"] = {
-			["mr"] = 75025,
-			["cc"] = 4,
-			["id"] = "10054:0:0:0:0",
-			["H3539"] = 199898,
-			["sc"] = 0,
-			["H3540"] = 75025,
-		},
-		["Sturdy Quarterstaff of the Eagle"] = {
-			["H3540"] = 3100,
-			["mr"] = 3100,
-		},
-		["Plans: Runed Mithril Hammer"] = {
-			["mr"] = 19354,
-			["H3539"] = 19354,
-		},
 		["Biznicks 247x128 Accurascope"] = {
 			["H3537"] = 4809440,
 			["mr"] = 4809440,
-		},
-		["Book: Gift of the Wild II"] = {
-			["H3540"] = 15000,
-			["H3539"] = 18000,
-			["mr"] = 15000,
-		},
-		["Umbral Crystal"] = {
-			["H3537"] = 200000,
-			["mr"] = 200000,
-		},
-		["Plans: Storm Gauntlets"] = {
-			["mr"] = 57497,
-			["H3539"] = 57497,
-		},
-		["Feral Cloak of the Eagle"] = {
-			["H3537"] = 5581,
-			["mr"] = 5581,
-		},
-		["Pagan Britches of Healing"] = {
-			["H3540"] = 150000,
-			["mr"] = 150000,
-		},
-		["Commander's Vambraces of Frost Resistance"] = {
-			["mr"] = 2500000,
-			["H3539"] = 2500000,
 		},
 		["Gazlowe's Charm"] = {
 			["H3540"] = 83499,
 			["mr"] = 83499,
 			["H3539"] = 99500,
-		},
-		["Pillager's Gloves of the Boar"] = {
-			["mr"] = 30000,
-			["sc"] = 3,
-			["H3529"] = 30000,
-			["id"] = "15560:0:0:1111:0",
-			["cc"] = 4,
 		},
 		["Vibroblade"] = {
 			["H3537"] = 150000,
@@ -8417,511 +12756,203 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3540"] = 2500,
 			["mr"] = 2500,
 		},
-		["Cured Medium Hide"] = {
-			["H3540"] = 985,
-			["mr"] = 985,
-		},
-		["Yellow Hakkari Bijou"] = {
-			["H3540"] = 39799,
-			["H3539"] = 25199,
-			["mr"] = 39799,
-		},
-		["Shimmering Trousers of Fiery Wrath"] = {
-			["mr"] = 49500,
-			["H3539"] = 49500,
-		},
 		["Dreamfoil"] = {
-			["mr"] = 13778,
-			["cc"] = 7,
-			["H3540"] = 13778,
 			["H3539"] = 14199,
+			["sc"] = 0,
+			["H3540"] = 13778,
 			["id"] = "13463:0:0:0:0",
-			["sc"] = 0,
-		},
-		["Incendosaur Scale"] = {
-			["H3540"] = 799,
-			["H3539"] = 814,
-			["mr"] = 799,
-		},
-		["Top Half of Advanced Armorsmithing: Volume I"] = {
-			["H3537"] = 1499,
-			["mr"] = 1499,
-		},
-		["Gryphon Mail Gauntlets of the Falcon"] = {
-			["H3537"] = 30000,
-			["mr"] = 30000,
-		},
-		["Bloodvine"] = {
-			["H3540"] = 146250,
-			["mr"] = 146250,
-			["H3539"] = 160083,
-		},
-		["Stout Battlehammer of the Tiger"] = {
-			["H3540"] = 5991,
-			["mr"] = 5991,
-		},
-		["Major Mana Potion"] = {
-			["mr"] = 44600,
-			["cc"] = 0,
-			["H3540"] = 44600,
-			["H3539"] = 47599,
-			["id"] = "13444:0:0:0:0",
-			["sc"] = 0,
+			["cc"] = 7,
+			["H3543"] = 17500,
+			["mr"] = 17500,
 		},
 		["Pristine Black Diamond"] = {
-			["mr"] = 14197,
-			["cc"] = 15,
-			["id"] = "18335:0:0:0:0",
-			["H3540"] = 15400,
 			["H3539"] = 17300,
+			["mr"] = 12000,
+			["cc"] = 15,
+			["H3540"] = 15400,
+			["id"] = "18335:0:0:0:0",
 			["sc"] = 0,
+			["H3543"] = 12000,
 			["H3542"] = 14197,
 		},
 		["Formula: Enchant Cloak - Lesser Shadow Resistance"] = {
 			["H3540"] = 266000,
-			["mr"] = 266000,
-		},
-		["Elegant Bracers of the Eagle"] = {
-			["H3537"] = 275000,
-			["mr"] = 275000,
+			["mr"] = 509228,
+			["H3543"] = 509228,
 		},
 		["Blasted Boar Lung"] = {
 			["H3540"] = 8865,
 			["H3539"] = 16326,
-			["mr"] = 8865,
-		},
-		["Stonegrip Gauntlets"] = {
-			["H3540"] = 1500000,
-			["mr"] = 1500000,
-		},
-		["Nimar's Tribal Headdress"] = {
-			["mr"] = 27493,
-			["H3539"] = 27493,
+			["H3543"] = 31300,
+			["mr"] = 31300,
 		},
 		["Bloodspattered Loincloth of the Whale"] = {
 			["H3540"] = 2349,
 			["mr"] = 2349,
 			["H3539"] = 2649,
 		},
-		["Glimmering Flamberge of Strength"] = {
-			["H3540"] = 17862,
-			["mr"] = 17862,
-			["H3539"] = 17862,
-		},
-		["34 Pound Redgill"] = {
-			["H3540"] = 35552,
-			["H3539"] = 35554,
-			["mr"] = 35552,
-		},
 		["Elegant Cloak of Frozen Wrath"] = {
-			["mr"] = 110000,
+			["mr"] = 98500,
+			["H3543"] = 98500,
 			["H3539"] = 110000,
 		},
-		["Large Opal"] = {
-			["H3540"] = 8999,
-			["H3539"] = 7500,
-			["mr"] = 8999,
-		},
-		["Jazeraint Leggings of the Falcon"] = {
-			["H3537"] = 31000,
-			["mr"] = 31000,
-		},
 		["Shredder Operating Manual - Page 10"] = {
-			["mr"] = 4200,
+			["mr"] = 1895,
 			["cc"] = 15,
+			["H3539"] = 889,
 			["id"] = "16654:0:0:0:0",
 			["sc"] = 0,
-			["H3539"] = 889,
+			["H3543"] = 1895,
 			["H3542"] = 4200,
-		},
-		["Handful of Copper Bolts"] = {
-			["H3540"] = 995,
-			["H3539"] = 1020,
-			["mr"] = 995,
 		},
 		["Lionheart Helm"] = {
 			["H3540"] = 11449999,
 			["H3539"] = 12999999,
-			["mr"] = 11449999,
+			["H3543"] = 12999999,
+			["mr"] = 12999999,
 		},
-		["Twilight Boots of the Owl"] = {
-			["mr"] = 4299,
-			["H3539"] = 4299,
-		},
-		["Pattern: Runecloth Pants"] = {
-			["H3539"] = 26199,
-			["cc"] = 9,
-			["mr"] = 33987,
-			["id"] = "14491:0:0:0:0",
-			["H3540"] = 60000,
-			["sc"] = 2,
-			["H3542"] = 33987,
+		["Glimmering Mail Greaves"] = {
+			["H3543"] = 8799,
+			["mr"] = 8799,
 		},
 		["Barbed Club of Strength"] = {
-			["mr"] = 10000,
-			["cc"] = 2,
-			["id"] = "15222:0:0:24:0",
+			["mr"] = 6900,
 			["sc"] = 4,
 			["H3540"] = 10000,
+			["id"] = "15222:0:0:24:0",
+			["H3543"] = 6900,
+			["cc"] = 2,
 		},
 		["High Councillor's Sash of Intellect"] = {
 			["H3537"] = 64800,
 			["mr"] = 64800,
 		},
 		["Master's Cloak of the Eagle"] = {
-			["H3537"] = 120000,
-			["mr"] = 120000,
-		},
-		["Green Hills of Stranglethorn - Page 6"] = {
-			["H3540"] = 2798,
-			["H3539"] = 1900,
-			["mr"] = 2798,
-		},
-		["Bonecaster's Crown of the Owl"] = {
-			["H3537"] = 99999,
-			["mr"] = 99999,
+			["H3543"] = 326275,
+			["mr"] = 326275,
 		},
 		["Triumphant Cloak of the Monkey"] = {
 			["H3537"] = 146952,
 			["mr"] = 146952,
 		},
 		["Bloodspattered Sash of the Eagle"] = {
-			["H3537"] = 4900,
-			["mr"] = 4900,
-		},
-		["Recipe: Transmute Life to Earth"] = {
-			["H3540"] = 647505,
-			["H3539"] = 647507,
-			["mr"] = 647505,
-		},
-		["Elegant Mantle of Shadow Wrath"] = {
-			["H3540"] = 170500,
-			["mr"] = 170500,
-			["H3539"] = 199999,
+			["H3543"] = 2436,
+			["mr"] = 2436,
 		},
 		["Staff of the Blessed Seer"] = {
 			["H3540"] = 499998,
-			["mr"] = 499998,
-		},
-		["Native Vest of Shadow Wrath"] = {
-			["H3537"] = 10000,
-			["mr"] = 10000,
-		},
-		["Hunter's Muzzle Loader"] = {
-			["H3540"] = 2000,
-			["H3539"] = 2900,
-			["mr"] = 2000,
+			["mr"] = 599900,
+			["H3543"] = 599900,
 		},
 		["Brigade Cloak of Agility"] = {
 			["H3537"] = 20000,
 			["mr"] = 20000,
 		},
-		["Gizmotron Megachopper"] = {
-			["H3537"] = 249999,
-			["mr"] = 249999,
-		},
-		["Recipe: Giant Clam Scorcho"] = {
-			["H3539"] = 83997,
-			["mr"] = 83997,
-		},
 		["Tyrant's Helm"] = {
 			["H3537"] = 20666,
 			["mr"] = 20666,
 		},
-		["Green Iron Helm"] = {
-			["H3537"] = 19900,
-			["mr"] = 19900,
-		},
-		["Bloodvine Leggings"] = {
-			["H3540"] = 2247000,
-			["H3539"] = 2249999,
-			["mr"] = 2247000,
-		},
-		["Grinning Axe of the Tiger"] = {
-			["H3537"] = 50000,
-			["mr"] = 50000,
-		},
-		["Black Mageweave Headband"] = {
-			["mr"] = 13500,
-			["cc"] = 4,
-			["H3539"] = 23610,
-			["id"] = "10024:0:0:0:0",
-			["L3539"] = 23373,
-			["H3540"] = 13500,
-			["sc"] = 1,
-		},
-		["Warmonger's Circlet of Arcane Wrath"] = {
-			["mr"] = 127329,
-			["cc"] = 4,
-			["id"] = "9963:0:0:1818:0",
-			["sc"] = 3,
-			["H3540"] = 127329,
-		},
-		["Bright Cloak"] = {
-			["H3540"] = 9000,
-			["mr"] = 9000,
-		},
-		["Elixir of Wisdom"] = {
-			["H3540"] = 1062,
-			["mr"] = 1062,
-			["H3539"] = 1090,
+		["Lapidis Tankard of Tidesippe"] = {
+			["mr"] = 48674,
+			["H3539"] = 48674,
 		},
 		["Skullflame Shield"] = {
-			["mr"] = 1749999,
+			["mr"] = 1197499,
+			["H3543"] = 1197499,
 			["H3539"] = 1749999,
 		},
-		["Pattern: Red Woolen Bag"] = {
-			["H3539"] = 2299,
-			["cc"] = 9,
-			["mr"] = 22500,
-			["id"] = "5772:0:0:0:0",
-			["H3540"] = 2000,
-			["sc"] = 2,
-			["H3542"] = 22500,
-		},
-		["Plans: Hammer of the Titans"] = {
-			["H3540"] = 48748,
-			["mr"] = 48748,
-			["H3539"] = 94999,
+		["Shadoweave Robe"] = {
+			["H3540"] = 119999,
+			["mr"] = 129897,
+			["H3543"] = 129897,
+			["H3539"] = 119997,
 		},
 		["Sniper Rifle of the Whale"] = {
 			["H3540"] = 30000,
 			["mr"] = 30000,
 		},
-		["Schematic: Gyrofreeze Ice Reflector"] = {
-			["H3540"] = 29800,
-			["H3539"] = 110000,
-			["mr"] = 29800,
+		["Cold Basilisk Eye"] = {
+			["H3539"] = 96000,
+			["mr"] = 96000,
 		},
-		["Widow Blade of the Tiger"] = {
-			["mr"] = 62000,
-			["H3539"] = 62000,
+		["Pattern: Runic Leather Headband"] = {
+			["H3543"] = 9995,
+			["mr"] = 9995,
 		},
-		["Small Red Pouch"] = {
-			["H3537"] = 3200,
-			["mr"] = 3200,
-		},
-		["Birchwood Maul of the Boar"] = {
-			["H3540"] = 1099,
-			["mr"] = 1099,
-		},
-		["Swampwalker Boots"] = {
-			["H3540"] = 384999,
-			["mr"] = 384999,
-		},
-		["Manual: Mageweave Bandage"] = {
-			["L3540"] = 19600,
-			["mr"] = 19600,
-			["sc"] = 7,
-			["cc"] = 9,
-			["id"] = "16113:0:0:0:0",
-			["L3539"] = 24175,
-			["H3539"] = 25400,
-			["H3540"] = 19988,
-		},
-		["Aboriginal Sash of the Monkey"] = {
-			["H3540"] = 5000,
-			["H3539"] = 3000,
-			["mr"] = 5000,
-		},
-		["Recipe: Nightfin Soup"] = {
-			["H3540"] = 79998,
-			["mr"] = 79998,
-		},
-		["Eight of Warlords"] = {
-			["H3540"] = 25000,
-			["mr"] = 25000,
-			["H3539"] = 179500,
-		},
-		["Razor Blade of the Bear"] = {
-			["mr"] = 60000,
-			["H3539"] = 60000,
-		},
-		["Sentinel Shoulders of the Owl"] = {
-			["mr"] = 27146,
-			["H3539"] = 27146,
-		},
-		["Smashing Star of the Tiger"] = {
-			["H3537"] = 62187,
-			["mr"] = 62187,
+		["Mercenary Blade of the Bear"] = {
+			["H3540"] = 18096,
+			["H3539"] = 20000,
+			["H3543"] = 29999,
+			["mr"] = 29999,
 		},
 		["Minor Healing Potion"] = {
-			["H3537"] = 232,
-			["mr"] = 232,
+			["H3543"] = 126,
+			["mr"] = 126,
 		},
 		["Goblin Rocket Fuel"] = {
 			["H3539"] = 26664,
-			["mr"] = 26664,
-		},
-		["Embersilk Leggings of the Owl"] = {
-			["H3537"] = 20000,
-			["mr"] = 20000,
-		},
-		["Tainted Pierce"] = {
-			["H3540"] = 200000,
-			["mr"] = 200000,
-		},
-		["Mighty Girdle of the Eagle"] = {
-			["H3537"] = 60000,
-			["mr"] = 60000,
-		},
-		["Glimmering Flamberge of the Whale"] = {
-			["H3537"] = 57910,
-			["mr"] = 57910,
+			["H3543"] = 29999,
+			["mr"] = 29999,
 		},
 		["Hyperion Girdle of the Eagle"] = {
 			["H3540"] = 54374,
 			["mr"] = 54374,
 		},
-		["Lifelike Mechanical Toad"] = {
-			["H3537"] = 189900,
-			["mr"] = 189900,
-		},
-		["Double-barreled Shotgun"] = {
-			["mr"] = 65000,
-			["sc"] = 3,
-			["id"] = "2098:0:0:0:0",
-			["cc"] = 2,
-			["H3540"] = 65000,
-		},
-		["Welken Ring"] = {
-			["H3540"] = 57500,
-			["mr"] = 57500,
-		},
 		["Peridot Circle of Fire Resistance"] = {
-			["mr"] = 553999,
 			["cc"] = 4,
-			["H3539"] = 350000,
+			["mr"] = 199900,
+			["L3543"] = 199900,
 			["id"] = "11979:0:0:1419:0",
+			["H3540"] = 389998,
 			["sc"] = 0,
 			["H3543"] = 553999,
-			["H3540"] = 389998,
+			["H3539"] = 350000,
 		},
-		["Formula: Enchant Shield - Frost Resistance"] = {
-			["H3540"] = 1497499,
-			["H3539"] = 905923,
-			["mr"] = 1497499,
+		["Short Bastard Sword of Agility"] = {
+			["H3543"] = 5000,
+			["mr"] = 5000,
 		},
-		["Bard's Buckler of the Monkey"] = {
-			["H3537"] = 4900,
-			["mr"] = 4900,
-		},
-		["Gloom Reaper of the Wolf"] = {
-			["H3537"] = 22200,
-			["mr"] = 22200,
-		},
-		["Magus Long Staff of Nature's Wrath"] = {
-			["H3540"] = 299999,
-			["mr"] = 299999,
-		},
-		["Willow Pants of the Eagle"] = {
-			["H3537"] = 4900,
-			["mr"] = 4900,
-		},
-		["Regal Sash of Healing"] = {
-			["H3537"] = 28848,
-			["mr"] = 28848,
-		},
-		["Hook Dagger of Power"] = {
-			["mr"] = 20000,
-			["H3539"] = 20000,
+		["Outrunner's Cloak of Strength"] = {
+			["H3537"] = 4999,
+			["mr"] = 4999,
 		},
 		["Roasted Quail"] = {
 			["H3540"] = 645,
 			["mr"] = 645,
 		},
-		["Tin Ore"] = {
-			["H3540"] = 445,
-			["H3542"] = 298,
-			["mr"] = 899,
-			["L3543"] = 899,
-			["cc"] = 7,
-			["sc"] = 0,
-			["H3539"] = 366,
-			["H3543"] = 1215,
-			["id"] = "2771:0:0:0:0",
-		},
-		["Green Hills of Stranglethorn - Page 4"] = {
-			["H3540"] = 1460,
-			["mr"] = 1460,
-			["H3539"] = 1840,
-		},
-		["Lady Maye's Pendant"] = {
-			["mr"] = 6000100,
-			["H3539"] = 6000100,
+		["Reticulated Bone Gauntlets"] = {
+			["H3540"] = 40000,
+			["mr"] = 40000,
 		},
 		["Pattern: Runecloth Shoulders"] = {
 			["H3539"] = 21779,
 			["cc"] = 9,
 			["mr"] = 19305,
 			["id"] = "14504:0:0:0:0",
-			["H3540"] = 21777,
 			["sc"] = 2,
+			["H3540"] = 21777,
 			["H3542"] = 19305,
+		},
+		["Training Sword of the Wolf"] = {
+			["H3543"] = 4500,
+			["mr"] = 4500,
+		},
+		["Gypsy Gloves"] = {
+			["mr"] = 200,
+			["cc"] = 4,
+			["id"] = "9755:0:0:0:0",
+			["sc"] = 2,
+			["H3529"] = 200,
 		},
 		["Plans: Thorium Belt"] = {
 			["H3540"] = 8499,
 			["H3539"] = 9899,
-			["mr"] = 8499,
+			["H3543"] = 7999,
+			["mr"] = 7999,
 		},
-		["Gypsy Gloves"] = {
-			["mr"] = 200,
-			["sc"] = 2,
-			["H3529"] = 200,
-			["id"] = "9755:0:0:0:0",
-			["cc"] = 4,
-		},
-		["Hardened Stone Band"] = {
-			["H3537"] = 199750,
-			["mr"] = 199750,
-		},
-		["Training Sword of the Wolf"] = {
-			["H3537"] = 3800,
-			["mr"] = 3800,
-		},
-		["Abyssal Mail Legguards of Restoration"] = {
-			["H3540"] = 485000,
-			["mr"] = 485000,
-		},
-		["Fortified Belt of the Monkey"] = {
-			["H3537"] = 25645,
-			["mr"] = 25645,
-		},
-		["Hook Dagger of Frozen Wrath"] = {
-			["H3537"] = 43857,
-			["mr"] = 43857,
-		},
-		["Native Branch of Spirit"] = {
-			["H3537"] = 4900,
-			["mr"] = 4900,
-		},
-		["Mail Combat Leggings"] = {
-			["H3537"] = 12596,
-			["mr"] = 12596,
-		},
-		["Willow Vest of Frozen Wrath"] = {
-			["H3537"] = 11000,
-			["mr"] = 11000,
-		},
-		["Fortified Bracers of the Eagle"] = {
-			["H3537"] = 5500,
-			["mr"] = 5500,
-		},
-		["Razorlash Root"] = {
-			["mr"] = 7499,
-			["H3539"] = 7499,
-		},
-		["Slayer's Slippers"] = {
-			["H3537"] = 15624,
-			["mr"] = 15624,
-		},
-		["Greenweave Sandals of Frozen Wrath"] = {
-			["H3537"] = 29900,
-			["mr"] = 29900,
-		},
-		["Durable Belt of the Owl"] = {
-			["H3537"] = 16547,
-			["mr"] = 16547,
+		["Fortified Belt of Power"] = {
+			["H3543"] = 97500,
+			["mr"] = 97500,
 		},
 		["Formula: Enchant Weapon - Lesser Beastslayer"] = {
 			["H3537"] = 57525,
@@ -8934,68 +12965,18 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 2,
 			["H3542"] = 8000,
 		},
-		["Seven of Elementals"] = {
-			["H3540"] = 128500,
-			["H3539"] = 145275,
-			["mr"] = 128500,
-		},
-		["Hibernal Boots"] = {
-			["H3537"] = 22500,
-			["mr"] = 22500,
-		},
 		["Gracious Cape"] = {
-			["mr"] = 292956,
+			["mr"] = 285891,
+			["H3543"] = 285891,
 			["H3539"] = 292956,
-		},
-		["Nightsky Armor"] = {
-			["H3539"] = 9987,
-			["mr"] = 9987,
-		},
-		["Recipe: Greater Frost Protection Potion"] = {
-			["H3540"] = 219000,
-			["H3539"] = 257796,
-			["mr"] = 219000,
 		},
 		["Grizzly Pants of the Monkey"] = {
 			["H3537"] = 11313,
 			["mr"] = 11313,
 		},
-		["Amy's Blanket"] = {
-			["H3537"] = 36122,
-			["mr"] = 36122,
-		},
-		["Twilight Cuffs of Fiery Wrath"] = {
-			["H3537"] = 13194,
-			["mr"] = 13194,
-		},
-		["Plans: Frost Tiger Blade"] = {
-			["H3539"] = 8199,
-			["mr"] = 8199,
-		},
-		["Felstone Reaver of Strength"] = {
-			["H3537"] = 210000,
-			["mr"] = 210000,
-		},
-		["Savage Axe of the Whale"] = {
-			["H3540"] = 31000,
-			["mr"] = 31000,
-		},
-		["Heart of Fire"] = {
-			["mr"] = 6500,
-			["cc"] = 5,
-			["H3539"] = 7000,
-			["id"] = "7077:0:0:0:0",
-			["sc"] = 0,
-			["H3543"] = 6500,
-			["H3540"] = 7300,
-		},
-		["Knight's Girdle of the Bear"] = {
-			["H3540"] = 17500,
-			["mr"] = 17500,
-		},
 		["Sorcerer Drape of the Owl"] = {
-			["mr"] = 15000,
 			["H3539"] = 15000,
+			["mr"] = 15000,
 		},
 		["Gothic Plate Spaulders of the Gorilla"] = {
 			["H3537"] = 50000,
@@ -9003,88 +12984,38 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Knightly Longsword of the Monkey"] = {
 			["H3540"] = 116592,
-			["mr"] = 116592,
+			["mr"] = 29999,
+			["H3543"] = 29999,
 		},
-		["Spiritchaser Staff of Fiery Wrath"] = {
-			["H3540"] = 49900,
-			["mr"] = 49900,
-		},
-		["Pattern: Heavy Woolen Cloak"] = {
-			["H3540"] = 19200,
-			["mr"] = 19200,
-		},
-		["Master's Cloak of Frozen Wrath"] = {
-			["H3540"] = 300000,
-			["mr"] = 300000,
-			["H3539"] = 609577,
-		},
-		["Corehound Boots"] = {
-			["mr"] = 3294200,
-			["cc"] = 4,
-			["id"] = "16982:0:0:0:0",
-			["H3543"] = 3294200,
-			["sc"] = 2,
-		},
-		["Thundering Charm"] = {
-			["H3540"] = 8699,
-			["mr"] = 8699,
-			["H3539"] = 9300,
-		},
-		["Black Vitriol"] = {
-			["H3540"] = 1600,
-			["H3539"] = 1799,
-			["mr"] = 1600,
+		["Drakesfire Epaulets"] = {
+			["H3540"] = 119998,
+			["H3539"] = 130000,
+			["H3543"] = 69500,
+			["mr"] = 69500,
 		},
 		["Plans: Dark Iron Pulverizer"] = {
 			["H3540"] = 8000,
 			["H3539"] = 55999,
-			["mr"] = 8000,
+			["H3543"] = 6916,
+			["mr"] = 6916,
 		},
-		["Poison-tipped Bone Spear"] = {
-			["H3540"] = 75499,
-			["mr"] = 75499,
+		["Knight's Girdle of the Bear"] = {
+			["H3540"] = 17500,
+			["mr"] = 7000,
+			["H3543"] = 7000,
 		},
-		["Harpy Needler of the Eagle"] = {
-			["H3540"] = 162320,
-			["mr"] = 162320,
-		},
-		["Pattern: Guardian Leather Bracers"] = {
-			["mr"] = 3900,
-			["H3537"] = 4000,
-			["L3537"] = 3900,
-		},
-		["Basalt Ring of Stamina"] = {
-			["H3537"] = 30000,
-			["mr"] = 30000,
-		},
-		["Glowstar Rod of the Whale"] = {
-			["mr"] = 99999,
-			["H3539"] = 99999,
-		},
-		["High Councillor's Cloak of Fiery Wrath"] = {
-			["H3540"] = 79000,
-			["mr"] = 79000,
-			["H3539"] = 79500,
-		},
-		["Frostsaber Leather"] = {
-			["H3539"] = 909,
-			["sc"] = 0,
-			["id"] = "15422:0:0:0:0",
-			["cc"] = 7,
-			["mr"] = 909,
+		["Alabaster Plate Helmet"] = {
+			["H3537"] = 44529,
+			["mr"] = 44529,
 		},
 		["Hero's Leggings"] = {
 			["H3537"] = 159500,
 			["mr"] = 159500,
 		},
-		["Elder Wizard's Mantle"] = {
-			["H3540"] = 50000,
-			["mr"] = 50000,
-			["H3539"] = 69998,
-		},
-		["Warlord's Axe of the Wolf"] = {
-			["H3540"] = 58888,
-			["mr"] = 58888,
+		["Archaic Defender"] = {
+			["mr"] = 60000,
+			["H3543"] = 60000,
+			["H3539"] = 73125,
 		},
 		["Fortified Bracers of the Bear"] = {
 			["H3537"] = 28089,
@@ -9092,271 +13023,109 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Pagan Belt of the Owl"] = {
 			["H3540"] = 50000,
-			["mr"] = 50000,
+			["mr"] = 10000,
+			["H3543"] = 10000,
 		},
-		["Feral Bindings of the Monkey"] = {
-			["H3537"] = 9524,
-			["mr"] = 9524,
-		},
-		["Jasper Link of Shadow Resistance"] = {
-			["H3540"] = 446999,
-			["H3539"] = 449997,
-			["mr"] = 446999,
-		},
-		["Feathermoon Headdress"] = {
-			["H3540"] = 134000,
-			["mr"] = 134000,
-		},
-		["Dragon Finger of the Owl"] = {
-			["H3540"] = 129999,
-			["mr"] = 129999,
-			["H3539"] = 169999,
-		},
-		["Heavy Blasting Powder"] = {
-			["H3539"] = 2700,
-			["sc"] = 1,
-			["cc"] = 7,
-			["H3540"] = 2100,
-			["id"] = "4377:0:0:0:0",
-			["mr"] = 4200,
-			["H3542"] = 4200,
-		},
-		["Maiden's Circle"] = {
-			["mr"] = 800000,
-			["H3539"] = 800000,
-		},
-		["Boneslasher"] = {
-			["H3540"] = 140000,
-			["mr"] = 140000,
+		["Lodestone Hoop of the Boar"] = {
+			["H3537"] = 66456,
+			["mr"] = 66456,
 		},
 		["Flash Powder"] = {
-			["mr"] = 2355,
+			["mr"] = 905,
+			["H3543"] = 905,
 			["H3539"] = 2355,
 		},
-		["Quicksilver Pendant of Concentration"] = {
-			["H3540"] = 51100,
-			["mr"] = 51100,
-		},
-		["Forester's Axe of the Boar"] = {
-			["H3537"] = 5600,
-			["mr"] = 5600,
-		},
-		["Curved Dagger of Nature's Wrath"] = {
-			["H3537"] = 5000,
-			["mr"] = 5000,
-		},
-		["Oil of Immolation"] = {
-			["H3540"] = 13999,
-			["mr"] = 13999,
-		},
-		["Multicolored Band of Nature Resistance"] = {
-			["mr"] = 1199999,
-			["sc"] = 0,
-			["id"] = "20692:0:0:1500:0",
-			["cc"] = 4,
-			["H3543"] = 1199999,
-			["H3540"] = 1899600,
+		["Living Shoulders"] = {
+			["H3539"] = 298999,
+			["mr"] = 298999,
 		},
 		["Shadoweave Boots"] = {
-			["mr"] = 129997,
+			["mr"] = 129996,
+			["H3543"] = 129996,
 			["H3539"] = 129997,
-		},
-		["Ballast Maul of the Tiger"] = {
-			["H3537"] = 17800,
-			["mr"] = 17800,
-		},
-		["Hyper-Radiant Flame Reflector"] = {
-			["H3540"] = 4203930,
-			["mr"] = 4203930,
-			["H3539"] = 2254198,
-		},
-		["Zulian Hacker of the Whale"] = {
-			["H3540"] = 5000000,
-			["mr"] = 5000000,
-		},
-		["Kang the Decapitator"] = {
-			["mr"] = 1240000,
-			["H3539"] = 1240000,
-		},
-		["Dreadblade of Arcane Wrath"] = {
-			["H3537"] = 222276,
-			["mr"] = 222276,
 		},
 		["Monstrous War Axe of the Monkey"] = {
 			["H3540"] = 30000,
 			["mr"] = 30000,
 		},
-		["Small Glimmering Shard"] = {
-			["H3540"] = 252,
-			["H3539"] = 264,
-			["mr"] = 252,
-		},
 		["Banded Boots of the Boar"] = {
 			["mr"] = 28908,
+			["H3543"] = 28908,
 			["H3539"] = 28908,
-		},
-		["Training Sword of the Tiger"] = {
-			["H3540"] = 3799,
-			["mr"] = 3799,
 		},
 		["Pattern: Earthen Silk Belt"] = {
 			["H3540"] = 10997,
-			["mr"] = 10997,
+			["mr"] = 18797,
+			["H3543"] = 18797,
 		},
-		["Mystical Mantle of the Wolf"] = {
-			["H3537"] = 77093,
-			["mr"] = 77093,
-		},
-		["Sentinel Cloak of Intellect"] = {
-			["H3537"] = 9575,
-			["mr"] = 9575,
-		},
-		["Buccaneer's Cape of Healing"] = {
-			["H3537"] = 5610,
-			["mr"] = 5610,
-		},
-		["Recipe: Roast Raptor"] = {
-			["mr"] = 49898,
-			["H3539"] = 49898,
+		["Field Plate Boots of Stamina"] = {
+			["H3543"] = 18573,
+			["mr"] = 18573,
 		},
 		["Earthfury Bracers"] = {
 			["H3540"] = 794000,
-			["mr"] = 794000,
+			["mr"] = 899000,
+			["H3543"] = 899000,
 			["H3539"] = 827000,
 		},
+		["Training Sword of the Tiger"] = {
+			["H3540"] = 3799,
+			["mr"] = 3500,
+			["H3543"] = 3500,
+		},
 		["Twilight Mantle of the Owl"] = {
-			["mr"] = 9800,
 			["H3539"] = 9800,
+			["mr"] = 9800,
 		},
-		["Deep Fried Plantains"] = {
-			["H3540"] = 22941,
-			["mr"] = 22941,
-		},
-		["Belt of the Gladiator"] = {
-			["mr"] = 209900,
-			["H3539"] = 209900,
-		},
-		["Pattern: Fine Leather Pants"] = {
-			["mr"] = 6799,
-			["cc"] = 9,
-			["id"] = "5972:0:0:0:0",
-			["H3540"] = 6799,
-			["sc"] = 1,
-			["H3539"] = 7900,
+		["Pattern: Azure Silk Cloak"] = {
+			["H3537"] = 101099,
+			["mr"] = 101099,
 		},
 		["Primitive Mantle"] = {
 			["H3540"] = 135500,
-			["mr"] = 135500,
+			["mr"] = 59900,
+			["H3543"] = 59900,
 		},
-		["Slitherskin Mackerel"] = {
-			["H3537"] = 316,
-			["mr"] = 316,
-		},
-		["Shimmering Amice"] = {
-			["H3540"] = 7900,
-			["mr"] = 7900,
-		},
-		["Bloodforged Bindings of the Monkey"] = {
-			["H3537"] = 29300,
-			["mr"] = 29300,
-		},
-		["Bonecaster's Bindings of Shadow Wrath"] = {
-			["H3537"] = 40000,
-			["mr"] = 40000,
-		},
-		["Ankh"] = {
-			["H3537"] = 5441,
-			["mr"] = 5441,
-		},
-		["Wand of Arcane Potency"] = {
-			["mr"] = 1200000,
-			["cc"] = 2,
-			["id"] = "18338:0:0:0:0",
-			["sc"] = 19,
-			["H3540"] = 1200000,
+		["Elemental Mage Staff"] = {
+			["H3543"] = 1598220,
+			["mr"] = 1598220,
 		},
 		["Buccaneer's Cord of Fiery Wrath"] = {
 			["H3537"] = 6745,
 			["mr"] = 6745,
 		},
-		["Two of Warlords"] = {
-			["H3537"] = 44816,
-			["mr"] = 44816,
-		},
-		["Emerald Legplates of the Bear"] = {
-			["H3537"] = 100000,
-			["mr"] = 100000,
-		},
-		["Praetorian Gloves of the Monkey"] = {
-			["mr"] = 149500,
-			["sc"] = 2,
-			["H3529"] = 149500,
-			["id"] = "15184:0:0:615:0",
-			["cc"] = 4,
-		},
 		["Recipe: Spiced Chili Crab"] = {
-			["H3537"] = 59719,
-			["mr"] = 59719,
+			["H3543"] = 59000,
+			["mr"] = 59000,
+		},
+		["Shimmering Amice"] = {
+			["H3540"] = 7900,
+			["mr"] = 7900,
+		},
+		["Forest Cloak"] = {
+			["mr"] = 5000,
+			["cc"] = 4,
+			["H3540"] = 50000,
+			["id"] = "4710:0:0:0:0",
+			["H3543"] = 5000,
+			["sc"] = 1,
 		},
 		["Heavy Runecloth Bandage"] = {
 			["H3539"] = 4999,
+			["mr"] = 1945,
 			["cc"] = 0,
-			["mr"] = 3700,
-			["id"] = "14530:0:0:0:0",
 			["H3540"] = 4699,
+			["id"] = "14530:0:0:0:0",
 			["sc"] = 0,
+			["H3543"] = 1945,
 			["H3542"] = 3700,
 		},
-		["Dwarven Hatchet of Power"] = {
-			["H3537"] = 4000,
-			["mr"] = 4000,
-		},
-		["Monstrous War Axe of the Bear"] = {
-			["H3537"] = 50000,
-			["mr"] = 50000,
-		},
-		["Heavy Armor Kit"] = {
-			["H3537"] = 8374,
-			["mr"] = 8374,
-		},
-		["Gnomish Cloaking Device"] = {
-			["H3537"] = 374729,
-			["mr"] = 374729,
-		},
-		["Recipe: Barbecued Buzzard Wing"] = {
-			["mr"] = 2274,
-			["cc"] = 9,
-			["H3540"] = 2274,
-			["H3539"] = 2332,
-			["id"] = "4609:0:0:0:0",
-			["sc"] = 5,
-		},
-		["BKP \"Sparrow\" Smallbore"] = {
-			["mr"] = 9799,
-			["sc"] = 3,
-			["id"] = "3042:0:0:0:0",
+		["Wand of Arcane Potency"] = {
+			["mr"] = 1200000,
+			["sc"] = 19,
+			["H3540"] = 1200000,
+			["id"] = "18338:0:0:0:0",
 			["cc"] = 2,
-			["H3543"] = 9799,
-			["H3540"] = 12090,
-		},
-		["Pattern: Deviate Scale Gloves"] = {
-			["mr"] = 9995,
-			["L3537"] = 9995,
-			["id"] = "6475:0:0:0:0",
-			["cc"] = 9,
-			["H3537"] = 9996,
-			["sc"] = 1,
-		},
-		["Robes of Insight"] = {
-			["H3540"] = 562458,
-			["mr"] = 562458,
-		},
-		["Bristlebark Bindings"] = {
-			["mr"] = 50000,
-			["cc"] = 4,
-			["id"] = "14569:0:0:0:0",
-			["sc"] = 2,
-			["H3540"] = 50000,
 		},
 		["Gleaming Claymore of Agility"] = {
 			["H3540"] = 40000,
@@ -9366,96 +13135,46 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Strider Meat"] = {
 			["H3540"] = 540,
 			["H3539"] = 685,
-			["mr"] = 540,
+			["H3543"] = 284,
+			["mr"] = 284,
 		},
-		["Deadly Kris of the Tiger"] = {
-			["mr"] = 46229,
-			["H3539"] = 46229,
+		["Emerald Legplates of the Bear"] = {
+			["H3537"] = 100000,
+			["mr"] = 100000,
 		},
-		["Pattern: Runecloth Boots"] = {
-			["mr"] = 149959,
-			["cc"] = 9,
-			["id"] = "14488:0:0:0:0",
-			["sc"] = 2,
-			["H3539"] = 149498,
-			["H3542"] = 149959,
-		},
-		["Barbaric Battle Axe of the Tiger"] = {
-			["mr"] = 6000,
-			["cc"] = 2,
-			["id"] = "3195:0:0:675:0",
-			["sc"] = 1,
-			["H3540"] = 6000,
-		},
-		["Bloodwoven Cloak of the Owl"] = {
-			["H3540"] = 48528,
-			["mr"] = 48528,
+		["Pattern: Brightcloth Pants"] = {
+			["H3540"] = 25092,
+			["H3539"] = 11999,
+			["H3543"] = 19947,
+			["mr"] = 19947,
 		},
 		["Widow Blade of the Bear"] = {
 			["H3537"] = 200000,
 			["mr"] = 200000,
 		},
 		["Crystal Slugthrower"] = {
-			["mr"] = 599000,
 			["H3539"] = 599000,
+			["mr"] = 599000,
 		},
-		["Bright Baubles"] = {
-			["mr"] = 4664,
-			["H3539"] = 4664,
-		},
-		["Schematic: Thorium Shells"] = {
-			["H3540"] = 49800,
-			["H3539"] = 39999,
-			["mr"] = 49800,
+		["Gnomish Cloaking Device"] = {
+			["H3537"] = 374729,
+			["mr"] = 374729,
 		},
 		["Wizard's Belt"] = {
 			["H3537"] = 14047,
 			["mr"] = 14047,
 		},
-		["Recipe: Seasoned Wolf Kabob"] = {
-			["mr"] = 99900,
-			["H3539"] = 99900,
+		["High Councillor's Boots of Spirit"] = {
+			["H3543"] = 299998,
+			["mr"] = 299998,
 		},
-		["Thorium Ore"] = {
-			["mr"] = 491,
-			["cc"] = 7,
-			["H3539"] = 689,
-			["id"] = "10620:0:0:0:0",
-			["sc"] = 0,
-			["H3543"] = 491,
-			["H3540"] = 476,
+		["Hyperion Vambraces of the Whale"] = {
+			["H3543"] = 54864,
+			["mr"] = 54864,
 		},
-		["Fire Wand"] = {
-			["mr"] = 3801,
-			["H3539"] = 3801,
-		},
-		["Forest Leather Bracers"] = {
-			["H3537"] = 61197,
-			["mr"] = 61197,
-		},
-		["Greenweave Robe of the Owl"] = {
-			["H3537"] = 20757,
-			["mr"] = 20757,
-		},
-		["Tiny Crimson Whelpling"] = {
-			["H3539"] = 650000,
-			["cc"] = 15,
-			["id"] = "8499:0:0:0:0",
-			["sc"] = 0,
-			["mr"] = 1258153,
-			["H3542"] = 1258153,
-		},
-		["Simple Linen Boots"] = {
-			["H3537"] = 9487,
-			["mr"] = 9487,
-		},
-		["Ring of Defense"] = {
-			["H3537"] = 150000,
-			["mr"] = 150000,
-		},
-		["Celestial Cape of Fiery Wrath"] = {
-			["H3537"] = 50000,
-			["mr"] = 50000,
+		["Carving Knife of Nature's Wrath"] = {
+			["H3537"] = 10018,
+			["mr"] = 10018,
 		},
 		["Blazing Emblem"] = {
 			["mr"] = 301293,
@@ -9463,441 +13182,210 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["L3537"] = 301293,
 		},
 		["Dreamweave Gloves"] = {
-			["H3539"] = 99895,
-			["sc"] = 1,
-			["id"] = "10019:0:0:0:0",
+			["mr"] = 101823,
 			["cc"] = 4,
-			["mr"] = 99895,
+			["id"] = "10019:0:0:0:0",
+			["H3539"] = 99895,
+			["H3543"] = 101823,
+			["sc"] = 1,
 		},
 		["Nightsky Robe"] = {
 			["H3540"] = 22499,
-			["mr"] = 22499,
+			["mr"] = 18998,
+			["H3543"] = 18998,
 			["H3539"] = 24999,
-		},
-		["Bonebrace Hauberk"] = {
-			["H3537"] = 400000,
-			["mr"] = 400000,
 		},
 		["Nightcrawlers"] = {
 			["H3540"] = 298,
-			["mr"] = 298,
+			["mr"] = 295,
+			["H3543"] = 295,
 			["H3539"] = 354,
 		},
-		["Restorative Potion"] = {
-			["H3540"] = 51500,
-			["H3539"] = 56500,
-			["mr"] = 51500,
-		},
-		["Forest Pendant of the Falcon"] = {
-			["mr"] = 44889,
-			["cc"] = 4,
-			["id"] = "12040:0:0:250:0",
-			["H3543"] = 44889,
-			["sc"] = 0,
-		},
-		["Pattern: Ironfeather Shoulders"] = {
-			["mr"] = 209999,
-			["H3539"] = 209999,
-		},
-		["Gleaming Claymore of Strength"] = {
-			["H3537"] = 6500,
-			["mr"] = 6500,
-		},
-		["Basilisk Brain"] = {
-			["H3540"] = 9922,
-			["H3539"] = 9944,
-			["mr"] = 9922,
+		["Ring of Defense"] = {
+			["H3537"] = 150000,
+			["mr"] = 150000,
 		},
 		["Serpentine Loop of Nature Resistance"] = {
+			["mr"] = 2997500,
 			["H3539"] = 2006812,
 			["cc"] = 4,
-			["H3540"] = 2000013,
 			["id"] = "11977:0:0:1508:0",
-			["mr"] = 3256813,
+			["H3540"] = 2000013,
 			["sc"] = 0,
+			["H3543"] = 2997500,
 			["H3542"] = 3256813,
-		},
-		["Flintrock Shoulders"] = {
-			["H3540"] = 699470,
-			["H3539"] = 853050,
-			["mr"] = 699470,
 		},
 		["Plans: Edge of Winter"] = {
 			["H3540"] = 828000,
 			["H3539"] = 1391494,
-			["mr"] = 828000,
-		},
-		["Frostmaul E'ko"] = {
-			["H3540"] = 45000,
-			["H3539"] = 47773,
-			["mr"] = 45000,
-		},
-		["Cold Basilisk Eye"] = {
-			["mr"] = 96000,
-			["H3539"] = 96000,
-		},
-		["Mild Spices"] = {
-			["mr"] = 1609,
-			["H3539"] = 1609,
-		},
-		["Bloodwoven Cloak of Stamina"] = {
-			["H3540"] = 20000,
-			["mr"] = 20000,
+			["H3543"] = 741494,
+			["mr"] = 741494,
 		},
 		["Formula: Enchant Weapon - Fiery Weapon"] = {
 			["H3540"] = 579000,
 			["H3539"] = 1247500,
-			["mr"] = 579000,
+			["H3543"] = 66500,
+			["mr"] = 66500,
 		},
-		["Unstable Trigger"] = {
-			["H3540"] = 19500,
-			["H3539"] = 27400,
-			["mr"] = 19500,
+		["Aurora Sash"] = {
+			["H3540"] = 9800,
+			["mr"] = 9800,
 		},
-		["Feral Gloves of the Gorilla"] = {
-			["H3537"] = 2700,
-			["mr"] = 2700,
-		},
-		["Mark of Kern"] = {
-			["H3540"] = 242549,
-			["mr"] = 242549,
-		},
-		["Mana Potion"] = {
-			["H3539"] = 755,
-			["cc"] = 0,
-			["id"] = "3827:0:0:0:0",
-			["L3539"] = 651,
-			["mr"] = 651,
+		["Briarthorn"] = {
+			["H3540"] = 103,
+			["H3542"] = 232,
+			["H3539"] = 262,
+			["L3543"] = 174,
+			["cc"] = 7,
 			["sc"] = 0,
+			["mr"] = 174,
+			["H3543"] = 239,
+			["id"] = "2450:0:0:0:0",
 		},
 		["Serpentine Loop of Frost Resistance"] = {
 			["H3540"] = 593000,
 			["mr"] = 593000,
 			["H3539"] = 606000,
 		},
-		["Dark Silk Shirt"] = {
-			["H3539"] = 169898,
-			["mr"] = 169898,
+		["Magus Long Staff of Stamina"] = {
+			["H3543"] = 100000,
+			["mr"] = 100000,
 		},
-		["Fortified Leggings of the Bear"] = {
-			["H3537"] = 16736,
-			["mr"] = 16736,
-		},
-		["Pattern: Lavender Mageweave Shirt"] = {
-			["mr"] = 83589,
-			["cc"] = 9,
-			["H3540"] = 83589,
-			["H3539"] = 69999,
-			["sc"] = 2,
-			["id"] = "10314:0:0:0:0",
-		},
-		["Pattern: Red Mageweave Gloves"] = {
-			["mr"] = 5798,
-			["sc"] = 2,
-			["cc"] = 9,
-			["id"] = "10312:0:0:0:0",
-			["L3539"] = 9500,
-			["H3540"] = 5798,
-			["H3539"] = 10398,
-		},
-		["Lean Wolf Steak"] = {
-			["H3540"] = 13000,
-			["mr"] = 13000,
-		},
-		["Enchanted Water"] = {
-			["H3540"] = 200,
-			["H3539"] = 233,
-			["mr"] = 200,
-		},
-		["Whipwood Recurve Bow"] = {
-			["H3537"] = 12880,
-			["mr"] = 12880,
-		},
-		["Commander's Armor of Power"] = {
-			["H3537"] = 40000,
-			["mr"] = 40000,
+		["Heart of the Wild"] = {
+			["H3540"] = 396,
+			["H3539"] = 400,
+			["H3543"] = 449,
+			["mr"] = 449,
 		},
 		["Spiked Club of the Bear"] = {
-			["mr"] = 3341,
 			["H3539"] = 3341,
-		},
-		["Marble Circle of Stamina"] = {
-			["H3537"] = 84490,
-			["mr"] = 84490,
-		},
-		["Recipe: Nature Protection Potion"] = {
-			["H3540"] = 47497,
-			["mr"] = 47497,
-			["H3539"] = 49600,
-		},
-		["Regal Boots of Arcane Wrath"] = {
-			["mr"] = 30000,
-			["cc"] = 4,
-			["id"] = "7472:0:0:1811:0",
-			["sc"] = 1,
-			["H3540"] = 30000,
-		},
-		["Gnomish Shrink Ray"] = {
-			["H3540"] = 97496,
-			["mr"] = 97496,
-			["H3539"] = 119997,
+			["mr"] = 3341,
 		},
 		["Adventurer's Bracers of Agility"] = {
 			["H3537"] = 45200,
 			["mr"] = 45200,
 		},
-		["Lightning Eel"] = {
-			["H3540"] = 1847,
-			["H3539"] = 1000,
-			["mr"] = 1847,
-		},
-		["Stock Shortsword"] = {
-			["H3537"] = 1503,
-			["mr"] = 1503,
-		},
-		["Four of Elementals"] = {
-			["H3540"] = 159999,
-			["mr"] = 159999,
-			["H3539"] = 29996,
-		},
-		["Recipe: Hot Lion Chops"] = {
-			["H3540"] = 4600,
-			["H3539"] = 5394,
-			["mr"] = 4600,
-		},
-		["Shadowcat Hide"] = {
-			["H3540"] = 1299,
-			["H3539"] = 1290,
-			["mr"] = 1299,
-		},
 		["Grunt Axe of Agility"] = {
 			["H3540"] = 2951,
 			["mr"] = 2951,
 		},
-		["Stonecloth Gloves"] = {
-			["mr"] = 7500,
-			["sc"] = 1,
-			["H3529"] = 7500,
-			["id"] = "14411:0:0:0:0",
-			["cc"] = 4,
-		},
-		["Bronze Framework"] = {
-			["mr"] = 5203,
-			["H3539"] = 5203,
-		},
-		["Scarlet Belt"] = {
-			["H3540"] = 3997,
-			["H3539"] = 4257,
-			["mr"] = 3997,
-		},
-		["Large Green Sack"] = {
-			["H3540"] = 12000,
-			["mr"] = 12000,
+		["Seven of Portals"] = {
+			["H3540"] = 29997,
+			["H3539"] = 29999,
+			["H3543"] = 28800,
+			["mr"] = 28800,
 		},
 		["Lofty Gauntlets of the Tiger"] = {
 			["H3540"] = 200000,
 			["mr"] = 200000,
 			["H3539"] = 200000,
 		},
-		["Shimmering Robe of Intellect"] = {
-			["H3537"] = 3500,
-			["mr"] = 3500,
+		["Large Green Sack"] = {
+			["H3540"] = 12000,
+			["mr"] = 12000,
 		},
-		["War Paint Bindings"] = {
-			["mr"] = 4000,
-			["H3539"] = 4000,
+		["Glimmering Mail Legguards"] = {
+			["H3543"] = 27400,
+			["mr"] = 27400,
 		},
 		["Pattern: Turtle Scale Gloves"] = {
-			["mr"] = 11398,
-			["sc"] = 1,
-			["id"] = "8385:0:0:0:0",
-			["cc"] = 9,
-			["H3540"] = 11398,
 			["H3539"] = 10500,
-		},
-		["Pattern: Brightcloth Robe"] = {
-			["mr"] = 22233,
-			["H3539"] = 22233,
+			["cc"] = 9,
+			["id"] = "8385:0:0:0:0",
+			["H3540"] = 11398,
+			["mr"] = 9900,
+			["H3543"] = 9900,
+			["sc"] = 1,
 		},
 		["Anti-Venom"] = {
-			["mr"] = 7580,
 			["H3539"] = 7580,
-		},
-		["Councillor's Boots of the Falcon"] = {
-			["H3537"] = 87628,
-			["mr"] = 87628,
-		},
-		["Archaic Defender"] = {
-			["mr"] = 73125,
-			["H3539"] = 73125,
-		},
-		["Primal Tiger Leather"] = {
-			["H3539"] = 2300,
-			["sc"] = 0,
-			["H3540"] = 2000,
-			["cc"] = 7,
-			["mr"] = 2000,
-			["id"] = "19768:0:0:0:0",
-		},
-		["Lofty Legguards of Strength"] = {
-			["H3537"] = 45000,
-			["mr"] = 45000,
+			["mr"] = 7580,
 		},
 		["Uther's Strength"] = {
-			["mr"] = 72900,
-			["H3537"] = 73000,
-			["L3537"] = 72900,
+			["H3543"] = 300000,
+			["mr"] = 300000,
 		},
 		["Grime-Encrusted Object"] = {
 			["H3537"] = 1200,
 			["mr"] = 1200,
-		},
-		["Ogron's Sash"] = {
-			["H3540"] = 227747,
-			["mr"] = 227747,
-			["H3539"] = 294498,
 		},
 		["Crusaders' Square Postbox Key"] = {
 			["H3540"] = 11248,
 			["mr"] = 11248,
 			["H3539"] = 10961,
 		},
-		["Runn Tum Tuber Surprise"] = {
-			["H3540"] = 2349,
-			["H3539"] = 3098,
-			["mr"] = 2349,
-		},
 		["Spiked Chain Shield of the Bear"] = {
 			["H3537"] = 5000,
 			["mr"] = 5000,
 		},
-		["Pattern: Red Linen Vest"] = {
-			["H3540"] = 2900,
-			["mr"] = 2900,
-		},
 		["Green Lens of Concentration"] = {
-			["mr"] = 99999,
+			["mr"] = 87600,
+			["H3543"] = 87600,
 			["H3539"] = 99999,
 		},
-		["Amber Hoop of Shadow Resistance"] = {
-			["H3537"] = 45000,
-			["mr"] = 45000,
-		},
-		["Bloodspattered Loincloth of Healing"] = {
-			["H3540"] = 9000,
-			["mr"] = 9000,
+		["Runn Tum Tuber Surprise"] = {
+			["H3540"] = 2349,
+			["H3539"] = 3098,
+			["H3543"] = 3794,
+			["mr"] = 3794,
 		},
 		["Assault Band"] = {
 			["H3540"] = 193500,
 			["H3539"] = 198999,
-			["mr"] = 193500,
+			["H3543"] = 189900,
+			["mr"] = 189900,
 		},
 		["Jazeraint Gauntlets of Arcane Wrath"] = {
 			["mr"] = 20930,
-			["sc"] = 3,
-			["id"] = "9900:0:0:1811:0",
 			["cc"] = 4,
 			["H3540"] = 20930,
-		},
-		["Plans: Steel Weapon Chain"] = {
-			["H3537"] = 1300000,
-			["mr"] = 1300000,
-		},
-		["Blue Linen Robe"] = {
-			["H3537"] = 6883,
-			["mr"] = 6883,
+			["id"] = "9900:0:0:1811:0",
+			["H3543"] = 20930,
+			["sc"] = 3,
 		},
 		["Exquisite Flamberge of the Wolf"] = {
 			["H3540"] = 177048,
 			["mr"] = 177048,
+			["H3543"] = 177048,
 		},
-		["Golden Rod"] = {
-			["H3540"] = 34799,
-			["mr"] = 34799,
+		["Durable Rod of the Owl"] = {
+			["H3537"] = 19037,
+			["mr"] = 19037,
 		},
-		["Flarecore Gloves"] = {
-			["mr"] = 3750000,
-			["cc"] = 4,
-			["id"] = "16979:0:0:0:0",
-			["H3543"] = 3750000,
-			["sc"] = 1,
+		["Plans: Steel Weapon Chain"] = {
+			["H3543"] = 1599998,
+			["mr"] = 1599998,
 		},
 		["Inlaid Mithril Cylinder"] = {
 			["H3540"] = 34997,
-			["mr"] = 34997,
+			["mr"] = 48830,
+			["H3543"] = 48830,
 			["H3539"] = 34998,
 		},
 		["Earthfury Belt"] = {
 			["H3540"] = 994000,
-			["mr"] = 994000,
+			["mr"] = 756000,
+			["H3543"] = 756000,
 			["H3539"] = 1497500,
 		},
-		["Crusader's Belt of the Falcon"] = {
-			["H3537"] = 42500,
-			["mr"] = 42500,
-		},
-		["Elixir of Brute Force"] = {
-			["H3537"] = 69900,
-			["mr"] = 69900,
-		},
-		["Twilight Mantle of Shadow Wrath"] = {
-			["H3540"] = 20046,
-			["mr"] = 20046,
-		},
-		["Goldenbark Apple"] = {
-			["H3537"] = 2980,
-			["mr"] = 2980,
-		},
-		["Alcor's Sunrazor"] = {
-			["H3537"] = 15007544,
-			["mr"] = 15007544,
-		},
 		["Recipe: Gooey Spider Cake"] = {
-			["mr"] = 99900,
 			["H3539"] = 99900,
+			["mr"] = 99900,
 		},
-		["Iridium Circle of the Eagle"] = {
-			["H3540"] = 50000,
-			["mr"] = 50000,
-		},
-		["Ritual Belt of the Eagle"] = {
-			["H3537"] = 5500,
-			["mr"] = 5500,
-		},
-		["Aboriginal Sash of Healing"] = {
-			["mr"] = 7904,
-			["H3539"] = 7904,
+		["Elder's Robe of Stamina"] = {
+			["H3543"] = 30000,
+			["mr"] = 30000,
 		},
 		["Mercenary Blade of the Tiger"] = {
 			["H3539"] = 15000,
-			["mr"] = 15000,
+			["H3543"] = 17000,
+			["mr"] = 17000,
 		},
-		["Elemental Mage Staff"] = {
-			["H3537"] = 1400000,
-			["mr"] = 1400000,
-		},
-		["Pattern: Brightcloth Gloves"] = {
-			["mr"] = 21599,
-			["sc"] = 2,
-			["H3540"] = 21599,
-			["cc"] = 9,
-			["H3539"] = 21800,
-			["id"] = "14479:0:0:0:0",
-		},
-		["Schematic: Delicate Arcanite Converter"] = {
-			["mr"] = 133168,
-			["sc"] = 3,
-			["id"] = "16050:0:0:0:0",
-			["cc"] = 9,
-			["H3540"] = 133168,
-		},
-		["Lightforge Gauntlets"] = {
-			["H3539"] = 83962,
-			["mr"] = 83962,
-		},
-		["Demon Band"] = {
-			["H3540"] = 33000,
-			["mr"] = 33000,
+		["Living Action Potion"] = {
+			["H3540"] = 59989,
+			["H3539"] = 33995,
+			["H3543"] = 50499,
+			["mr"] = 50499,
 		},
 		["Green Leather Armor"] = {
 			["mr"] = 205178,
@@ -9906,89 +13394,29 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 205178,
 			["cc"] = 4,
 		},
-		["Recipe: Undermine Clam Chowder"] = {
-			["H3540"] = 81033,
-			["mr"] = 81033,
-			["H3539"] = 96478,
-		},
-		["Battering Hammer of the Boar"] = {
-			["H3540"] = 8500,
-			["mr"] = 8500,
-		},
-		["Feral Gloves of the Monkey"] = {
-			["H3537"] = 2200,
-			["mr"] = 2200,
-		},
-		["Beaded Orb of the Owl"] = {
-			["mr"] = 2000,
-			["cc"] = 4,
-			["id"] = "15969:0:0:754:0",
-			["sc"] = 0,
-			["H3542"] = 2000,
-		},
 		["Master's Cloak of Fiery Wrath"] = {
 			["H3540"] = 599000,
-			["mr"] = 599000,
+			["mr"] = 599999,
+			["H3543"] = 599999,
 			["H3539"] = 499999,
-		},
-		["Plans: Radiant Breastplate"] = {
-			["mr"] = 6788,
-			["H3539"] = 6788,
-		},
-		["Ravager's Armor"] = {
-			["H3537"] = 71954,
-			["mr"] = 71954,
 		},
 		["Solid Stone"] = {
 			["H3540"] = 2000,
 			["H3539"] = 1748,
-			["mr"] = 2000,
+			["H3543"] = 3200,
+			["mr"] = 3200,
 		},
-		["Duskwoven Bracers of Shadow Wrath"] = {
-			["H3537"] = 99440,
-			["mr"] = 99440,
-		},
-		["Tome of Arcane Brilliance"] = {
-			["mr"] = 19799,
-			["cc"] = 9,
-			["id"] = "18600:0:0:0:0",
-			["H3539"] = 19999,
-			["sc"] = 0,
-			["H3540"] = 19799,
+		["Ravager's Armor"] = {
+			["H3543"] = 42998,
+			["mr"] = 42998,
 		},
 		["Phasing Boots of Shadow Resistance"] = {
 			["H3537"] = 999999,
 			["mr"] = 999999,
 		},
-		["Councillor's Cuffs of Healing"] = {
-			["H3537"] = 250000,
-			["mr"] = 250000,
-		},
-		["Elixir of Frost Power"] = {
-			["H3540"] = 45794,
-			["H3539"] = 46190,
-			["mr"] = 45794,
-		},
-		["Spider's Silk"] = {
-			["H3540"] = 6400,
-			["H3539"] = 6532,
-			["mr"] = 6400,
-		},
-		["Runed Stygian Boots"] = {
-			["H3540"] = 2500000,
-			["mr"] = 2500000,
-			["H3539"] = 2649000,
-		},
-		["Hacking Cleaver of Strength"] = {
-			["H3537"] = 12200,
-			["mr"] = 12200,
-		},
-		["Arcane Cloak"] = {
-			["mr"] = 39373,
-			["sc"] = 1,
-			["id"] = "8286:0:0:0:0",
-			["cc"] = 4,
-			["H3540"] = 39373,
+		["Gryphon Cloak of Intellect"] = {
+			["H3543"] = 41574,
+			["mr"] = 41574,
 		},
 		["Tracker's Cloak of the Monkey"] = {
 			["H3537"] = 21279,
@@ -10004,118 +13432,63 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Crude Scope"] = {
 			["H3540"] = 2450,
-			["mr"] = 2450,
+			["mr"] = 2395,
+			["H3543"] = 2395,
 		},
 		["Shadowcraft Gloves"] = {
-			["mr"] = 1099999,
-			["L3537"] = 1099999,
+			["mr"] = 999999,
+			["sc"] = 2,
 			["id"] = "16712:0:0:0:0",
+			["H3543"] = 999999,
 			["cc"] = 4,
-			["H3537"] = 1100000,
-			["sc"] = 2,
-		},
-		["Herbalist's Gloves"] = {
-			["mr"] = 64999,
-			["sc"] = 2,
-			["id"] = "7349:0:0:0:0",
-			["cc"] = 4,
-			["H3540"] = 64999,
-			["H3539"] = 66787,
-		},
-		["Azure Silk Hood"] = {
-			["mr"] = 3000,
-			["H3537"] = 3250,
-			["L3537"] = 3000,
-		},
-		["Elegant Bracers of Fiery Wrath"] = {
-			["H3540"] = 150000,
-			["mr"] = 150000,
-		},
-		["Cross Dagger of Healing"] = {
-			["H3537"] = 45960,
-			["mr"] = 45960,
 		},
 		["Bonesnapper"] = {
 			["mr"] = 59999,
 			["H3537"] = 60000,
 			["L3537"] = 59999,
 		},
-		["Pattern: Dark Leather Tunic"] = {
-			["mr"] = 6500,
-			["cc"] = 9,
-			["id"] = "2409:0:0:0:0",
-			["H3540"] = 6500,
-			["sc"] = 1,
-		},
 		["Pattern: Tough Scorpid Gloves"] = {
 			["mr"] = 4899,
-			["sc"] = 1,
-			["H3540"] = 4899,
 			["cc"] = 9,
 			["id"] = "8398:0:0:0:0",
+			["H3540"] = 4899,
+			["sc"] = 1,
 		},
-		["Gloom Reaper of the Boar"] = {
-			["H3540"] = 33743,
-			["mr"] = 33743,
-			["H3539"] = 107568,
+		["Royal Blouse of the Owl"] = {
+			["H3537"] = 39212,
+			["mr"] = 39212,
 		},
 		["Sorcerer Slippers of the Owl"] = {
 			["H3537"] = 23800,
 			["mr"] = 23800,
 		},
-		["Banded Boots of the Bear"] = {
-			["mr"] = 14500,
-			["H3539"] = 14500,
-		},
-		["Spiked Chain Wristbands of the Bear"] = {
-			["H3540"] = 10000,
+		["Firestarter"] = {
+			["H3540"] = 68500,
 			["mr"] = 10000,
+			["H3543"] = 10000,
+			["H3539"] = 69900,
 		},
-		["Schematic: Thorium Grenade"] = {
-			["H3540"] = 88995,
-			["H3539"] = 50945,
-			["mr"] = 88995,
-		},
-		["Desert Choker of Agility"] = {
-			["H3540"] = 50000,
-			["mr"] = 50000,
-		},
-		["Short Bastard Sword of the Monkey"] = {
-			["H3537"] = 2100,
-			["mr"] = 2100,
+		["Pattern: Dark Leather Tunic"] = {
+			["mr"] = 4999,
+			["sc"] = 1,
+			["H3540"] = 6500,
+			["cc"] = 9,
+			["H3543"] = 4999,
+			["id"] = "2409:0:0:0:0",
 		},
 		["Ace of Warlords"] = {
 			["H3540"] = 27900,
 			["H3539"] = 33332,
-			["mr"] = 27900,
+			["H3543"] = 26999,
+			["mr"] = 26999,
 		},
 		["Master's Bracers of Shadow Wrath"] = {
 			["H3537"] = 249999,
 			["mr"] = 249999,
 		},
-		["Rumsey Rum Dark"] = {
-			["mr"] = 3999,
-			["H3539"] = 3999,
-		},
 		["Elder's Pants of Fiery Wrath"] = {
 			["H3537"] = 47169,
 			["mr"] = 47169,
-		},
-		["Jadefire Gloves of the Bear"] = {
-			["H3537"] = 20000,
-			["mr"] = 20000,
-		},
-		["Crusader's Gauntlets of the Eagle"] = {
-			["H3537"] = 20000,
-			["mr"] = 20000,
-		},
-		["Shadoweave Gloves"] = {
-			["mr"] = 119999,
-			["sc"] = 1,
-			["H3540"] = 119999,
-			["cc"] = 4,
-			["H3539"] = 128998,
-			["id"] = "10023:0:0:0:0",
 		},
 		["Pattern: Deviate Scale Cloak"] = {
 			["H3537"] = 9997,
@@ -10123,512 +13496,221 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Bolt of Runecloth"] = {
 			["H3539"] = 4190,
+			["mr"] = 3706,
 			["cc"] = 7,
-			["mr"] = 3400,
-			["id"] = "14048:0:0:0:0",
 			["H3540"] = 4200,
+			["id"] = "14048:0:0:0:0",
 			["sc"] = 0,
+			["H3543"] = 3706,
 			["H3542"] = 3400,
 		},
 		["Mystery Meat"] = {
 			["H3540"] = 230,
 			["H3539"] = 245,
-			["mr"] = 230,
+			["H3543"] = 1119,
+			["mr"] = 1119,
 		},
-		["Searing Needle"] = {
-			["H3537"] = 187497,
-			["mr"] = 187497,
+		["Shadoweave Gloves"] = {
+			["mr"] = 134995,
+			["cc"] = 4,
+			["H3539"] = 128998,
+			["id"] = "10023:0:0:0:0",
+			["H3540"] = 119999,
+			["H3543"] = 134995,
+			["sc"] = 1,
 		},
 		["Grunt Axe of Stamina"] = {
 			["H3540"] = 3500,
 			["mr"] = 3500,
 		},
 		["Scorpid Stinger"] = {
-			["mr"] = 73,
-			["cc"] = 7,
-			["id"] = "5466:0:0:0:0",
-			["H3540"] = 49,
 			["H3539"] = 1000,
+			["mr"] = 59,
+			["cc"] = 7,
+			["H3540"] = 49,
+			["id"] = "5466:0:0:0:0",
 			["sc"] = 0,
+			["H3543"] = 59,
 			["H3542"] = 73,
 		},
-		["Boiled Clams"] = {
-			["H3537"] = 325,
-			["mr"] = 325,
-		},
-		["Firestarter"] = {
-			["H3540"] = 68500,
-			["mr"] = 68500,
-			["H3539"] = 69900,
-		},
-		["Grunt's Belt of the Bear"] = {
-			["H3540"] = 1800,
-			["mr"] = 1800,
-			["H3539"] = 2000,
-		},
-		["Gossamer Shoulderpads of the Eagle"] = {
-			["H3537"] = 200000,
-			["mr"] = 200000,
-		},
-		["Large Knapsack"] = {
-			["H3540"] = 11198,
-			["H3539"] = 14899,
-			["mr"] = 11198,
-		},
 		["Formula: Enchant Weapon - Minor Beastslayer"] = {
-			["mr"] = 7070,
+			["mr"] = 13500,
+			["H3543"] = 13500,
 			["H3539"] = 7070,
-		},
-		["Ace of Beasts"] = {
-			["H3540"] = 8799998,
-			["H3539"] = 8950000,
-			["mr"] = 8799998,
-		},
-		["Gloom Reaper of Strength"] = {
-			["H3537"] = 21291,
-			["mr"] = 21291,
-		},
-		["Wizard's Hand of the Whale"] = {
-			["mr"] = 196000,
-			["H3539"] = 196000,
-		},
-		["Royal Blouse of the Owl"] = {
-			["H3537"] = 39212,
-			["mr"] = 39212,
-		},
-		["Lunar Handwraps of Healing"] = {
-			["H3537"] = 50000,
-			["mr"] = 50000,
 		},
 		["Lion Meat"] = {
 			["H3540"] = 1500,
 			["H3539"] = 1370,
-			["mr"] = 1500,
+			["H3543"] = 1440,
+			["mr"] = 1440,
 		},
-		["Formula: Enchant Shield - Lesser Protection"] = {
-			["H3540"] = 11000,
-			["mr"] = 11000,
-		},
-		["High Chief's Gauntlets of the Whale"] = {
-			["mr"] = 20000,
-			["H3539"] = 20000,
-		},
-		["Truesilver Rod"] = {
-			["H3540"] = 29998,
-			["mr"] = 29998,
-		},
-		["Formula: Enchant Weapon - Demonslaying"] = {
-			["H3540"] = 6400,
-			["mr"] = 6400,
-			["H3539"] = 19500,
-		},
-		["Warleader's Crown"] = {
-			["H3537"] = 100000,
-			["mr"] = 100000,
-		},
-		["Axe of the Deep Woods"] = {
-			["H3540"] = 1880000,
-			["mr"] = 1880000,
-			["H3539"] = 1980000,
+		["Gooey Spider Leg"] = {
+			["H3540"] = 120,
+			["H3539"] = 137,
+			["H3543"] = 89,
+			["mr"] = 89,
 		},
 		["Duskwoven Sandals of the Falcon"] = {
 			["H3537"] = 35033,
 			["mr"] = 35033,
 		},
 		["High Councillor's Pants of Fiery Wrath"] = {
-			["H3537"] = 230000,
-			["mr"] = 230000,
+			["H3543"] = 222190,
+			["mr"] = 222190,
 		},
-		["Thaumaturgist Staff of the Monkey"] = {
-			["H3537"] = 66665,
-			["mr"] = 66665,
+		["Twisted Chanter's Staff"] = {
+			["H3539"] = 499899,
+			["H3543"] = 349799,
+			["mr"] = 349799,
 		},
-		["Mithril Casing"] = {
-			["H3539"] = 6700,
-			["mr"] = 6700,
-		},
-		["Lupine Buckler of Fiery Wrath"] = {
-			["H3537"] = 2200,
-			["mr"] = 2200,
+		["Raider's Legguards of the Monkey"] = {
+			["H3537"] = 10687,
+			["mr"] = 10687,
 		},
 		["Blackforge Cowl"] = {
 			["H3540"] = 24999,
 			["mr"] = 24999,
 			["H3539"] = 39799,
 		},
-		["Twisted Chanter's Staff"] = {
-			["H3539"] = 499899,
-			["mr"] = 499899,
+		["Razor Axe of the Tiger"] = {
+			["H3539"] = 153113,
+			["mr"] = 153113,
 		},
-		["Raider's Legguards of the Monkey"] = {
-			["H3537"] = 10687,
-			["mr"] = 10687,
-		},
-		["Phalanx Bracers of the Bear"] = {
-			["H3537"] = 55000,
-			["mr"] = 55000,
-		},
-		["Mistscape Cloak"] = {
-			["H3540"] = 17999,
-			["mr"] = 17999,
-		},
-		["Mistscape Pants"] = {
-			["H3540"] = 20800,
-			["mr"] = 20800,
-		},
-		["Thick Scale Crown of the Bear"] = {
-			["H3537"] = 20000,
-			["mr"] = 20000,
-		},
-		["Glimmering Flamberge of the Bear"] = {
-			["H3537"] = 39999,
-			["mr"] = 39999,
-		},
-		["Stone Hammer of the Boar"] = {
-			["mr"] = 138000,
-			["H3539"] = 138000,
-		},
-		["Raider's Legguards of the Bear"] = {
-			["H3537"] = 4900,
-			["mr"] = 4900,
-		},
-		["Schematic: Shadow Goggles"] = {
-			["H3540"] = 19593,
-			["H3539"] = 22397,
-			["mr"] = 19593,
-		},
-		["Felcloth Gloves"] = {
-			["H3540"] = 1057400,
-			["H3539"] = 1149989,
-			["mr"] = 1057400,
-		},
-		["Short Bastard Sword of the Tiger"] = {
-			["mr"] = 4999,
-			["H3539"] = 4999,
-		},
-		["Feral Cloak of Healing"] = {
-			["H3540"] = 11000,
-			["mr"] = 11000,
+		["Ivory Wand of Fiery Wrath"] = {
+			["H3537"] = 51199,
+			["mr"] = 51199,
 		},
 		["Bloodforged Gauntlets of the Bear"] = {
 			["H3537"] = 60628,
 			["mr"] = 60628,
 		},
-		["Gaea's Cloak of Fiery Wrath"] = {
-			["H3537"] = 29800,
-			["mr"] = 29800,
-		},
-		["Bracers of Valor"] = {
-			["H3540"] = 43874,
-			["mr"] = 43874,
-			["H3539"] = 40000,
-		},
-		["Aegis of Stormwind"] = {
-			["H3540"] = 73999,
-			["mr"] = 73999,
-			["H3539"] = 73499,
-		},
-		["Raw Glossy Mightfish"] = {
-			["mr"] = 232,
-			["H3539"] = 232,
-		},
-		["Adventurer's Cape of the Monkey"] = {
-			["H3540"] = 150000,
-			["mr"] = 150000,
-			["H3539"] = 150000,
-		},
-		["Citrine"] = {
-			["L3540"] = 860,
-			["H3541"] = 850,
-			["sc"] = 0,
-			["cc"] = 7,
-			["H3540"] = 905,
-			["H3539"] = 964,
-			["mr"] = 850,
-			["id"] = "3864:0:0:0:0",
-		},
-		["Ring of Saviors"] = {
-			["H3540"] = 180175,
-			["mr"] = 180175,
-			["H3539"] = 185825,
-		},
-		["Malachite"] = {
-			["mr"] = 42,
-			["cc"] = 7,
-			["id"] = "774:0:0:0:0",
-			["H3540"] = 86,
-			["H3539"] = 419,
-			["sc"] = 0,
-			["H3542"] = 42,
-		},
-		["Chieftain's Breastplate of Nature's Wrath"] = {
-			["H3537"] = 175298,
-			["mr"] = 175298,
-		},
-		["Expert First Aid - Under Wraps"] = {
-			["H3540"] = 29600,
-			["H3539"] = 15200,
-			["mr"] = 29600,
+		["Girdle of Insight"] = {
+			["H3537"] = 620000,
+			["mr"] = 620000,
 		},
 		["Scroll of Protection II"] = {
 			["H3540"] = 1995,
 			["mr"] = 1995,
 			["H3539"] = 1999,
 		},
-		["Ritual Shroud of Intellect"] = {
-			["H3537"] = 20000,
-			["mr"] = 20000,
-		},
-		["Formula: Enchant Bracer - Superior Spirit"] = {
-			["H3540"] = 21599,
-			["H3539"] = 23998,
-			["mr"] = 21599,
-		},
-		["Bloodspattered Gloves of the Monkey"] = {
-			["H3540"] = 5000,
-			["mr"] = 5000,
-		},
 		["High Councillor's Cloak of the Owl"] = {
 			["H3537"] = 121718,
 			["mr"] = 121718,
 		},
-		["Darkmoon Special Reserve"] = {
-			["H3540"] = 980,
-			["mr"] = 980,
-			["H3539"] = 984,
+		["Chieftain's Breastplate of Nature's Wrath"] = {
+			["H3537"] = 175298,
+			["mr"] = 175298,
+		},
+		["Mageweave Cloth"] = {
+			["L3540"] = 417,
+			["mr"] = 550,
+			["sc"] = 0,
+			["cc"] = 7,
+			["H3540"] = 680,
+			["id"] = "4338:0:0:0:0",
+			["H3543"] = 550,
+			["H3539"] = 448,
+		},
+		["Elegant Gloves of Nature Resistance"] = {
+			["mr"] = 4697559,
+			["cc"] = 4,
+			["id"] = "10214:0:0:1510:0",
+			["H3539"] = 4697559,
+			["sc"] = 1,
 		},
 		["Highborne Crown"] = {
 			["H3540"] = 80000,
 			["mr"] = 80000,
 		},
-		["Gelatinous Goo"] = {
-			["H3537"] = 9099,
-			["mr"] = 9099,
-		},
-		["Recipe: Cooked Glossy Mightfish"] = {
-			["mr"] = 38999,
-			["H3539"] = 38999,
-		},
-		["Spaulders of the Unseen"] = {
-			["H3540"] = 387075,
-			["H3539"] = 400000,
-			["mr"] = 387075,
-		},
-		["Tranquil Mechanical Yeti"] = {
-			["H3537"] = 500000,
-			["mr"] = 500000,
-		},
-		["Recipe: Flask of Chromatic Resistance"] = {
-			["mr"] = 990000,
-			["cc"] = 9,
-			["id"] = "13522:0:0:0:0",
-			["sc"] = 6,
-			["H3540"] = 990000,
-		},
-		["Abyssal Plate Greaves of Striking"] = {
-			["H3540"] = 44125,
-			["mr"] = 44125,
-		},
-		["Eight of Beasts"] = {
-			["H3540"] = 40000,
-			["H3539"] = 22497,
-			["mr"] = 40000,
-		},
-		["Bright Yellow Shirt"] = {
-			["H3540"] = 49998,
-			["mr"] = 49998,
-		},
-		["Embossed Plate Helmet of the Bear"] = {
-			["H3537"] = 29999,
-			["mr"] = 29999,
-		},
-		["Elegant Gloves of Nature Resistance"] = {
-			["H3539"] = 4697559,
-			["sc"] = 1,
-			["id"] = "10214:0:0:1510:0",
-			["cc"] = 4,
-			["mr"] = 4697559,
-		},
-		["Elixir of Greater Intellect"] = {
-			["H3540"] = 11500,
-			["mr"] = 11500,
-		},
-		["Big Bronze Bomb"] = {
-			["H3540"] = 4014,
-			["mr"] = 4014,
-			["H3539"] = 3946,
-		},
-		["Charger's Pants of the Bear"] = {
-			["H3537"] = 4400,
-			["mr"] = 4400,
-		},
-		["Pattern: Guardian Belt"] = {
-			["H3537"] = 29800,
-			["mr"] = 29800,
-		},
-		["Delicate Arcanite Converter"] = {
-			["mr"] = 1189999,
-			["cc"] = 7,
-			["H3540"] = 1189999,
-			["H3539"] = 1008389,
-			["id"] = "16006:0:0:0:0",
-			["sc"] = 1,
+		["Savory Deviate Delight"] = {
+			["H3540"] = 7898,
+			["H3539"] = 8300,
+			["H3543"] = 8900,
+			["mr"] = 8900,
 		},
 		["Prairie Ring of the Monkey"] = {
 			["H3537"] = 78388,
 			["mr"] = 78388,
 		},
-		["Wise Man's Belt"] = {
-			["mr"] = 8000,
-			["H3539"] = 8000,
-		},
-		["Large Venom Sac"] = {
-			["H3540"] = 34998,
-			["H3539"] = 43461,
-			["mr"] = 34998,
-		},
-		["Thorbia's Gauntlets"] = {
-			["H3539"] = 126550,
-			["cc"] = 4,
-			["mr"] = 90000,
-			["id"] = "12994:0:0:0:0",
-			["H3540"] = 80000,
-			["sc"] = 3,
-			["H3542"] = 90000,
-		},
-		["Greater Dreamless Sleep Potion"] = {
-			["H3540"] = 14133,
-			["mr"] = 14133,
-			["H3539"] = 14133,
+		["Flarecore Wraps"] = {
+			["H3537"] = 5698942,
+			["mr"] = 5698942,
 		},
 		["Wanderer's Gloves of the Eagle"] = {
 			["mr"] = 104481,
+			["cc"] = 4,
+			["id"] = "10110:0:0:872:0",
 			["sc"] = 2,
 			["H3529"] = 104481,
-			["id"] = "10110:0:0:872:0",
-			["cc"] = 4,
-		},
-		["Mighty Armsplints of Agility"] = {
-			["H3537"] = 200000,
-			["mr"] = 200000,
 		},
 		["Master's Boots of Arcane Wrath"] = {
-			["mr"] = 208329,
-			["sc"] = 1,
-			["id"] = "10247:0:0:1819:0",
+			["mr"] = 328329,
 			["cc"] = 4,
 			["H3540"] = 208329,
+			["id"] = "10247:0:0:1819:0",
+			["H3543"] = 328329,
+			["sc"] = 1,
 		},
-		["Shadowfang"] = {
-			["H3540"] = 1399999,
-			["mr"] = 1399999,
-		},
-		["Pattern: Dusky Boots"] = {
-			["H3537"] = 230000,
-			["mr"] = 230000,
+		["Bloodspattered Gloves of the Monkey"] = {
+			["H3540"] = 5000,
+			["mr"] = 5000,
 		},
 		["Formula: Enchant Weapon - Unholy"] = {
 			["H3540"] = 1498571,
-			["mr"] = 1498571,
+			["mr"] = 1299998,
+			["H3543"] = 1299998,
 		},
-		["Scroll of Intellect"] = {
-			["H3540"] = 1250,
-			["H3539"] = 1618,
-			["mr"] = 1250,
+		["Pattern: Red Mageweave Pants"] = {
+			["mr"] = 27202,
+			["sc"] = 2,
+			["id"] = "10302:0:0:0:0",
+			["cc"] = 9,
+			["H3540"] = 27202,
+			["H3539"] = 27900,
 		},
 		["Pattern: Big Voodoo Pants"] = {
-			["mr"] = 5359,
+			["mr"] = 4499,
+			["H3543"] = 4499,
 			["H3539"] = 5359,
-		},
-		["Spiked Club of the Whale"] = {
-			["H3540"] = 4285,
-			["mr"] = 4285,
-			["H3539"] = 4285,
-		},
-		["Bloodspattered Sash of the Boar"] = {
-			["H3537"] = 4500,
-			["mr"] = 4500,
-		},
-		["Recipe: Elixir of Dream Vision"] = {
-			["mr"] = 768059,
-			["H3539"] = 768059,
-		},
-		["Scroll of Spirit IV"] = {
-			["H3540"] = 900,
-			["H3539"] = 1069,
-			["mr"] = 900,
 		},
 		["Libram of Protection"] = {
 			["H3540"] = 69500,
 			["H3539"] = 62200,
-			["mr"] = 69500,
+			["H3543"] = 2100,
+			["mr"] = 2100,
 		},
-		["Thunder Lizard Tail"] = {
-			["H3540"] = 100,
-			["mr"] = 100,
+		["Conjurer's Hood of Arcane Wrath"] = {
+			["H3543"] = 19000,
+			["mr"] = 19000,
 		},
-		["Plans: Dark Iron Plate"] = {
-			["mr"] = 144500,
-			["H3539"] = 144500,
-		},
-		["Mindbender Loop"] = {
-			["H3539"] = 17820,
-			["mr"] = 17820,
-		},
-		["Swashbuckler's Shoulderpads of the Owl"] = {
-			["H3537"] = 91292,
-			["mr"] = 91292,
-		},
-		["Gnomish Net-o-Matic Projector"] = {
-			["H3540"] = 99998,
-			["mr"] = 99998,
-			["H3539"] = 279987,
-		},
-		["Archer's Shoulderpads of Defense"] = {
-			["H3537"] = 14922,
-			["mr"] = 14922,
+		["Wise Man's Belt"] = {
+			["H3539"] = 8000,
+			["mr"] = 8000,
 		},
 		["Headstriker Sword of the Wolf"] = {
 			["H3540"] = 212220,
 			["mr"] = 212220,
 		},
-		["Goblin Sapper Charge"] = {
-			["H3540"] = 31000,
-			["mr"] = 31000,
-			["H3539"] = 29747,
-		},
-		["Pattern: Boots of the Enchanter"] = {
-			["H3539"] = 31797,
-			["sc"] = 2,
-			["H3540"] = 31793,
-			["cc"] = 9,
-			["mr"] = 31793,
-			["id"] = "4352:0:0:0:0",
-		},
 		["Pattern: Phoenix Pants"] = {
 			["H3540"] = 10099,
 			["H3539"] = 12000,
-			["mr"] = 10099,
+			["H3543"] = 9800,
+			["mr"] = 9800,
 		},
 		["Primal Bat Leather"] = {
 			["H3539"] = 6000,
-			["sc"] = 0,
-			["H3540"] = 7700,
 			["cc"] = 7,
-			["mr"] = 7700,
+			["mr"] = 3300,
 			["id"] = "19767:0:0:0:0",
-		},
-		["Coal"] = {
-			["H3539"] = 445,
-			["mr"] = 445,
-		},
-		["Witherbark Coin"] = {
-			["mr"] = 3495,
-			["cc"] = 12,
-			["H3540"] = 3495,
-			["H3539"] = 3099,
-			["id"] = "19703:0:0:0:0",
+			["H3540"] = 7700,
+			["H3543"] = 3300,
 			["sc"] = 0,
+		},
+		["Goblin Sapper Charge"] = {
+			["H3540"] = 31000,
+			["mr"] = 64998,
+			["H3543"] = 64998,
+			["H3539"] = 29747,
 		},
 		["Crusader's Cloak of Defense"] = {
 			["H3537"] = 99999,
@@ -10637,593 +13719,244 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Purple Lotus"] = {
 			["H3540"] = 2300,
 			["H3539"] = 1198,
-			["mr"] = 2300,
+			["H3543"] = 1884,
+			["mr"] = 1884,
 		},
-		["Buccaneer's Orb of the Eagle"] = {
-			["mr"] = 10000,
-			["cc"] = 4,
-			["id"] = "15912:0:0:844:0",
-			["sc"] = 0,
-			["H3540"] = 10000,
-		},
-		["Gaea's Cuffs of Frozen Wrath"] = {
-			["H3537"] = 50000,
-			["mr"] = 50000,
-		},
-		["Ranger Leggings of the Whale"] = {
-			["H3537"] = 200000,
-			["mr"] = 200000,
-		},
-		["Engraved Pauldrons of the Owl"] = {
-			["H3537"] = 90000,
-			["mr"] = 90000,
+		["Battlefield Destroyer of Strength"] = {
+			["H3543"] = 73614,
+			["mr"] = 73614,
 		},
 		["Deviate Fish"] = {
 			["H3540"] = 9266,
 			["H3539"] = 11150,
-			["mr"] = 9266,
+			["H3543"] = 7100,
+			["mr"] = 7100,
 		},
 		["Three of Beasts"] = {
 			["H3540"] = 38000,
 			["H3539"] = 39797,
-			["mr"] = 38000,
+			["H3543"] = 798999,
+			["mr"] = 798999,
 		},
 		["Dark Iron Shoulders"] = {
-			["mr"] = 989999,
 			["H3539"] = 989999,
+			["mr"] = 989999,
 		},
-		["Merc Sword of the Tiger"] = {
-			["H3540"] = 4471,
-			["mr"] = 4471,
-			["H3539"] = 6999,
+		["Coal"] = {
+			["H3539"] = 445,
+			["H3543"] = 383,
+			["mr"] = 383,
 		},
 		["Mystical Armor of Shadow Wrath"] = {
-			["mr"] = 284854,
 			["H3539"] = 284854,
-		},
-		["Scarlet Wristguards"] = {
-			["H3540"] = 7721,
-			["mr"] = 7721,
-			["H3539"] = 7920,
-		},
-		["Pattern: Red Mageweave Pants"] = {
-			["H3539"] = 27900,
-			["cc"] = 9,
-			["id"] = "10302:0:0:0:0",
-			["mr"] = 27202,
-			["H3540"] = 27202,
-			["sc"] = 2,
-		},
-		["Glorious Bindings of Power"] = {
-			["H3537"] = 50000,
-			["mr"] = 50000,
+			["mr"] = 284854,
 		},
 		["Swashbuckler's Shoulderpads of Nature Resistance"] = {
 			["H3537"] = 1500000,
 			["mr"] = 1500000,
 		},
-		["Ritual Bands of Intellect"] = {
-			["H3537"] = 2500,
-			["mr"] = 2500,
+		["Thin Kodo Leather"] = {
+			["H3540"] = 200,
+			["mr"] = 1575,
+			["H3543"] = 1575,
+			["H3539"] = 584,
 		},
-		["Aboriginal Rod of Spirit"] = {
-			["H3537"] = 3192,
-			["mr"] = 3192,
-		},
-		["Nightsky Orb"] = {
-			["mr"] = 14299,
-			["cc"] = 4,
-			["id"] = "15929:0:0:0:0",
+		["Essence of Fire"] = {
+			["cc"] = 5,
+			["H3539"] = 1410,
 			["sc"] = 0,
-			["H3542"] = 14299,
-		},
-		["Scaled Leather Leggings of the Bear"] = {
-			["H3540"] = 32201,
-			["mr"] = 32201,
-		},
-		["Defender Boots of the Boar"] = {
-			["H3540"] = 30000,
-			["mr"] = 30000,
-			["H3539"] = 30000,
-		},
-		["Steel Weapon Chain"] = {
-			["H3540"] = 179997,
-			["H3539"] = 180998,
-			["mr"] = 179997,
-		},
-		["Plans: Runed Copper Breastplate"] = {
-			["H3540"] = 5200,
-			["mr"] = 5200,
-		},
-		["Siege Bow of the Monkey"] = {
-			["H3540"] = 88347,
-			["mr"] = 88347,
+			["mr"] = 2400,
+			["id"] = "7078:0:0:0:0",
+			["H3540"] = 1980,
+			["H3543"] = 3899,
+			["L3543"] = 2400,
 		},
 		["Formula: Enchant Weapon - Lesser Elemental Slayer"] = {
-			["mr"] = 67999,
+			["mr"] = 19799,
+			["H3543"] = 19799,
 			["H3539"] = 67999,
-		},
-		["Snapvine Watermelon"] = {
-			["H3537"] = 3149,
-			["mr"] = 3149,
-		},
-		["Schematic: Moonsight Rifle"] = {
-			["mr"] = 30400,
-			["H3537"] = 30570,
-			["L3537"] = 30400,
 		},
 		["Raw Rockscale Cod"] = {
 			["H3540"] = 326,
 			["H3539"] = 437,
-			["mr"] = 326,
+			["H3543"] = 1231,
+			["mr"] = 1231,
 		},
 		["Commander's Armor of the Bear"] = {
 			["H3537"] = 200000,
 			["mr"] = 200000,
 		},
-		["Heartseeking Crossbow"] = {
-			["H3540"] = 70000,
-			["mr"] = 70000,
-		},
-		["Knight's Gauntlets of Power"] = {
-			["H3537"] = 10258,
-			["mr"] = 10258,
-		},
-		["Expert Cookbook"] = {
-			["H3540"] = 48735,
-			["H3539"] = 46990,
-			["mr"] = 48735,
-		},
-		["Aboriginal Sash of the Wolf"] = {
-			["H3537"] = 3300,
-			["mr"] = 3300,
-		},
-		["Journeyman's Backpack"] = {
-			["H3540"] = 22500,
-			["H3539"] = 25100,
-			["mr"] = 22500,
-		},
-		["Sniper Rifle of Stamina"] = {
-			["H3537"] = 40000,
-			["mr"] = 40000,
-		},
-		["Harnessing Shadows"] = {
-			["H3540"] = 2658,
-			["H3539"] = 2727,
-			["mr"] = 2658,
-		},
-		["Imposing Boots of the Owl"] = {
-			["H3537"] = 199500,
-			["mr"] = 199500,
-		},
-		["Sharpshooter Harquebus of the Wolf"] = {
-			["H3537"] = 155833,
-			["mr"] = 155833,
+		["Royal Gloves of the Eagle"] = {
+			["mr"] = 48999,
+			["cc"] = 4,
+			["id"] = "9910:0:0:863:0",
+			["sc"] = 1,
+			["H3529"] = 48999,
 		},
 		["Large Fang"] = {
 			["H3540"] = 3400,
 			["H3539"] = 3802,
-			["mr"] = 3400,
+			["H3543"] = 3899,
+			["mr"] = 3899,
 		},
-		["Bloodsoul Gauntlets"] = {
-			["mr"] = 1682494,
-			["H3539"] = 1682494,
-		},
-		["Formula: Enchant 2H Weapon - Major Intellect"] = {
-			["H3539"] = 196999,
-			["mr"] = 196999,
-		},
-		["Alabaster Shield"] = {
-			["H3537"] = 50072,
-			["mr"] = 50072,
+		["Mighty Armsplints of the Owl"] = {
+			["H3537"] = 147151,
+			["mr"] = 147151,
 		},
 		["Jadefire Sabatons of Agility"] = {
-			["mr"] = 260012,
 			["H3539"] = 260012,
+			["mr"] = 260012,
 		},
 		["Formula: Enchant Gloves - Fishing"] = {
 			["H3540"] = 60000,
 			["mr"] = 60000,
 			["H3539"] = 89999,
 		},
-		["Rough Boomstick"] = {
-			["H3537"] = 1500,
-			["mr"] = 1500,
-		},
-		["Schematic: Portable Bronze Mortar"] = {
-			["H3540"] = 8000,
-			["H3539"] = 11000,
-			["mr"] = 8000,
-		},
-		["Fused Wiring"] = {
-			["H3540"] = 62000,
-			["H3539"] = 90000,
-			["mr"] = 62000,
-		},
-		["Recipe: Longjaw Mud Snapper"] = {
-			["H3537"] = 7500,
-			["mr"] = 7500,
-		},
 		["Twilight Cowl of the Owl"] = {
-			["mr"] = 16346,
 			["H3539"] = 16346,
+			["mr"] = 16346,
 		},
-		["Thallium Choker of the Owl"] = {
-			["H3537"] = 37310,
-			["mr"] = 37310,
-		},
-		["Plans: Lionheart Helm"] = {
-			["H3537"] = 12499999,
-			["mr"] = 12499999,
-		},
-		["Recipe: Purification Potion"] = {
-			["H3540"] = 398000,
-			["mr"] = 398000,
-			["H3539"] = 24599,
-		},
-		["Raincaller Cap of Stamina"] = {
-			["H3537"] = 70000,
-			["mr"] = 70000,
-		},
-		["Nightshade Boots of Agility"] = {
-			["H3540"] = 29999,
-			["mr"] = 29999,
-			["H3539"] = 33299,
-		},
-		["Briarthorn"] = {
-			["sc"] = 0,
-			["mr"] = 239,
-			["cc"] = 7,
-			["H3540"] = 103,
-			["id"] = "2450:0:0:0:0",
-			["H3539"] = 262,
-			["H3543"] = 239,
-			["H3542"] = 232,
-		},
-		["Healing Potion"] = {
-			["H3540"] = 774,
-			["mr"] = 774,
-			["H3539"] = 964,
-		},
-		["Rageclaw Leggings of the Monkey"] = {
-			["H3537"] = 30000,
-			["mr"] = 30000,
-		},
-		["Zealot Blade"] = {
-			["H3540"] = 449999,
-			["mr"] = 449999,
-			["H3539"] = 268999,
-		},
-		["Carnelian Loop of Nature Resistance"] = {
-			["H3540"] = 709999,
-			["mr"] = 709999,
-			["H3539"] = 797188,
-		},
-		["Inferno Gloves"] = {
-			["H3537"] = 924200,
-			["mr"] = 924200,
-		},
-		["Felcloth"] = {
-			["H3540"] = 12868,
-			["H3539"] = 11877,
-			["mr"] = 12868,
-		},
-		["Bloodspattered Surcoat of the Bear"] = {
-			["H3537"] = 5969,
-			["mr"] = 5969,
-		},
-		["Mageweave Cloth"] = {
-			["L3540"] = 417,
-			["mr"] = 417,
-			["sc"] = 0,
-			["H3540"] = 680,
-			["H3539"] = 448,
-			["cc"] = 7,
-			["id"] = "4338:0:0:0:0",
+		["Cured Light Hide"] = {
+			["mr"] = 2700,
+			["H3539"] = 2700,
 		},
 		["Heavy Silithid Carapace"] = {
 			["H3540"] = 245555,
 			["H3539"] = 200000,
-			["mr"] = 245555,
-		},
-		["Brigade Girdle of the Whale"] = {
-			["mr"] = 20000,
-			["H3539"] = 20000,
+			["H3543"] = 206999,
+			["mr"] = 206999,
 		},
 		["Wolf Rider's Belt of the Monkey"] = {
 			["H3537"] = 37221,
 			["mr"] = 37221,
 		},
-		["Deviate Scale"] = {
-			["H3540"] = 545,
-			["H3539"] = 566,
-			["mr"] = 545,
-		},
 		["Discolored Healing Potion"] = {
 			["H3537"] = 645,
 			["mr"] = 645,
 		},
-		["Gauntlets of Valor"] = {
-			["H3540"] = 135000,
-			["mr"] = 135000,
-		},
-		["Copper Rod"] = {
-			["H3540"] = 7149,
-			["mr"] = 7149,
-			["H3539"] = 7154,
-		},
-		["Formula: Enchant Cloak - Greater Resistance"] = {
-			["H3540"] = 999747,
-			["mr"] = 999747,
+		["Brigade Girdle of the Whale"] = {
+			["H3539"] = 20000,
+			["mr"] = 20000,
 		},
 		["19 Pound Catfish"] = {
-			["mr"] = 30000,
-			["H3537"] = 32624,
-			["L3537"] = 30000,
+			["H3543"] = 4500,
+			["mr"] = 4500,
 		},
-		["War Paint Gloves"] = {
-			["H3540"] = 5400,
-			["mr"] = 5400,
-			["H3539"] = 5999,
-		},
-		["Recipe: Elixir of Poison Resistance"] = {
-			["H3539"] = 1231035,
-			["mr"] = 1231035,
-		},
-		["Wildvine Potion"] = {
-			["H3537"] = 2400,
-			["mr"] = 2400,
-		},
-		["Recipe: Redridge Goulash"] = {
-			["H3537"] = 99900,
-			["mr"] = 99900,
-		},
-		["Tattered Leather Hood"] = {
-			["mr"] = 980000,
-			["H3539"] = 980000,
-		},
-		["Pridelord Gloves"] = {
-			["H3537"] = 40000,
-			["mr"] = 40000,
-		},
-		["Recipe: Flask of the Titans"] = {
-			["mr"] = 6900000,
-			["sc"] = 6,
-			["id"] = "13519:0:0:0:0",
-			["cc"] = 9,
-			["H3540"] = 6900000,
-		},
-		["Tigerbane"] = {
-			["H3540"] = 10799,
-			["H3539"] = 12500,
-			["mr"] = 10799,
+		["Thick Murloc Scale"] = {
+			["H3540"] = 933,
+			["H3539"] = 949,
+			["H3543"] = 727,
+			["mr"] = 727,
 		},
 		["Master's Cloak of Nature Resistance"] = {
 			["H3540"] = 1500000,
 			["mr"] = 1500000,
 		},
-		["Amethyst Band of Nature Resistance"] = {
-			["H3539"] = 493300,
-			["mr"] = 493300,
+		["Green Power Crystal"] = {
+			["H3540"] = 208,
+			["H3539"] = 291,
+			["H3543"] = 297,
+			["mr"] = 297,
 		},
-		["Dervish Cape of the Monkey"] = {
-			["mr"] = 22500,
-			["H3539"] = 22500,
+		["Pridelord Gloves"] = {
+			["H3537"] = 40000,
+			["mr"] = 40000,
 		},
 		["Six of Elementals"] = {
-			["mr"] = 128500,
+			["mr"] = 95000,
+			["H3543"] = 95000,
 			["H3539"] = 128500,
 		},
 		["Inscribed Leather Pants"] = {
-			["mr"] = 4499,
-			["cc"] = 4,
-			["id"] = "2986:0:0:0:0",
-			["H3540"] = 4499,
-			["sc"] = 2,
 			["H3539"] = 17200,
+			["cc"] = 4,
+			["H3540"] = 4499,
+			["mr"] = 4499,
+			["sc"] = 2,
+			["id"] = "2986:0:0:0:0",
 		},
-		["Thick Scale Bracelets of the Bear"] = {
-			["H3537"] = 16176,
-			["mr"] = 16176,
-		},
-		["Pattern: Frostsaber Tunic"] = {
-			["mr"] = 19999,
-			["H3539"] = 19999,
-		},
-		["Imbued Plate Pauldrons"] = {
-			["H3537"] = 40853,
-			["mr"] = 40853,
-		},
-		["High Councillor's Boots of Frozen Wrath"] = {
-			["mr"] = 129999,
-			["H3539"] = 129999,
-		},
-		["Imperial Red Pants"] = {
-			["H3537"] = 27691,
-			["mr"] = 27691,
-		},
-		["War Paint Anklewraps"] = {
-			["mr"] = 5400,
-			["H3539"] = 5400,
+		["Huntsman's Cap of the Eagle"] = {
+			["H3543"] = 30000,
+			["mr"] = 30000,
 		},
 		["Heavy Linen Bandage"] = {
 			["H3540"] = 160,
-			["mr"] = 160,
+			["mr"] = 29,
+			["H3543"] = 29,
 			["H3539"] = 310,
-		},
-		["Hakkari Coin"] = {
-			["H3540"] = 2999,
-			["H3539"] = 2898,
-			["mr"] = 2999,
-		},
-		["Defender Gauntlets of the Boar"] = {
-			["H3540"] = 34391,
-			["mr"] = 34391,
-		},
-		["Plans: Darkrune Gauntlets"] = {
-			["H3540"] = 554000,
-			["mr"] = 554000,
-			["H3539"] = 554941,
-		},
-		["Abyssal Leather Boots of Striking"] = {
-			["mr"] = 178800,
-			["H3539"] = 178800,
-		},
-		["Belamoore's Research Journal"] = {
-			["mr"] = 5060,
-			["cc"] = 12,
-			["id"] = "3711:0:0:0:0",
-			["H3543"] = 5060,
-			["sc"] = 0,
-		},
-		["Alabaster Plate Helmet"] = {
-			["H3537"] = 44529,
-			["mr"] = 44529,
-		},
-		["Alabaster Breastplate"] = {
-			["H3537"] = 47884,
-			["mr"] = 47884,
-		},
-		["Firemane Leggings"] = {
-			["mr"] = 85000,
-			["H3539"] = 85000,
-		},
-		["Pristine Hide of the Beast"] = {
-			["H3539"] = 4982500,
-			["sc"] = 0,
-			["cc"] = 15,
-			["H3540"] = 4977499,
-			["id"] = "12731:0:0:0:0",
-			["mr"] = 4978750,
-			["H3542"] = 4978750,
 		},
 		["Essence of Water"] = {
 			["H3539"] = 69997,
-			["sc"] = 0,
-			["H3540"] = 54000,
 			["cc"] = 5,
-			["mr"] = 54000,
+			["mr"] = 64998,
 			["id"] = "7080:0:0:0:0",
+			["H3540"] = 54000,
+			["H3543"] = 64998,
+			["sc"] = 0,
 		},
 		["Ridge Cleaver of the Wolf"] = {
 			["H3540"] = 12000,
 			["mr"] = 12000,
 		},
 		["Native Robe of Intellect"] = {
-			["H3537"] = 23679,
+			["H3543"] = 23679,
 			["mr"] = 23679,
 		},
-		["Resplendent Bracelets of Shadow Wrath"] = {
-			["H3537"] = 50000,
-			["mr"] = 50000,
-		},
-		["Sorcerer Hat of the Owl"] = {
-			["mr"] = 26635,
-			["H3539"] = 26635,
-		},
-		["Aurora Boots"] = {
-			["H3539"] = 9899,
-			["mr"] = 9899,
-		},
-		["Champion's Armor of the Whale"] = {
-			["mr"] = 78667,
-			["H3539"] = 78667,
-		},
-		["Resplendent Belt of the Owl"] = {
-			["mr"] = 79397,
-			["H3539"] = 79397,
-		},
-		["Formula: Enchant 2H Weapon - Major Spirit"] = {
-			["H3540"] = 30044,
-			["mr"] = 30044,
-			["H3539"] = 68880,
+		["Pristine Hide of the Beast"] = {
+			["sc"] = 0,
+			["H3539"] = 4982500,
+			["cc"] = 15,
+			["id"] = "12731:0:0:0:0",
+			["H3540"] = 4977499,
+			["mr"] = 4977500,
+			["H3543"] = 4977500,
+			["H3542"] = 4978750,
 		},
 		["Recipe: Flask of Supreme Power"] = {
-			["mr"] = 2999999,
-			["H3537"] = 3450000,
-			["L3537"] = 2999999,
-		},
-		["Flask of Mojo"] = {
-			["mr"] = 5000,
-			["cc"] = 7,
-			["id"] = "8151:0:0:0:0",
-			["H3539"] = 1549,
-			["sc"] = 0,
-			["H3540"] = 5000,
+			["H3543"] = 2447500,
+			["mr"] = 2447500,
 		},
 		["Small Furry Paw"] = {
 			["H3540"] = 197,
 			["H3539"] = 1362,
-			["mr"] = 197,
+			["H3543"] = 337,
+			["mr"] = 337,
 		},
 		["Phalanx Boots of Stamina"] = {
 			["H3537"] = 10000,
 			["mr"] = 10000,
-		},
-		["Sunscale Gauntlets"] = {
-			["H3537"] = 20000,
-			["mr"] = 20000,
 		},
 		["Vendetta"] = {
 			["mr"] = 1240000,
 			["H3537"] = 1250000,
 			["L3537"] = 1240000,
 		},
-		["Rough Grinding Stone"] = {
-			["H3540"] = 110,
-			["mr"] = 110,
-			["H3539"] = 111,
-		},
-		["Wanderer's Leggings of Healing"] = {
-			["H3537"] = 250000,
-			["mr"] = 250000,
-		},
-		["Recipe: Heavy Crocolisk Stew"] = {
-			["mr"] = 52650,
-			["H3539"] = 52650,
-		},
-		["Gutrender"] = {
-			["H3537"] = 505346,
-			["mr"] = 505346,
-		},
 		["Dokebi Cape"] = {
 			["H3537"] = 6000,
 			["mr"] = 6000,
 		},
-		["Outrunner's Cord of Strength"] = {
-			["H3540"] = 10000,
-			["mr"] = 10000,
-			["H3539"] = 5924,
-		},
-		["Stone Hammer of Strength"] = {
-			["mr"] = 29035,
-			["H3537"] = 30000,
-			["L3537"] = 29035,
+		["Rough Grinding Stone"] = {
+			["H3540"] = 110,
+			["mr"] = 135,
+			["H3543"] = 135,
+			["H3539"] = 111,
 		},
 		["Beasts Deck"] = {
 			["H3537"] = 9500000,
 			["mr"] = 9500000,
-		},
-		["Swamp Ring of the Monkey"] = {
-			["mr"] = 84178,
-			["H3539"] = 84178,
-		},
-		["Aquamarine Ring of Shadow Resistance"] = {
-			["H3540"] = 140000,
-			["mr"] = 140000,
-			["H3539"] = 60000,
 		},
 		["Ravager's Cord"] = {
 			["H3537"] = 39424,
 			["mr"] = 39424,
 		},
 		["Serpentine Loop of Shadow Resistance"] = {
-			["mr"] = 378885,
-			["cc"] = 4,
-			["id"] = "11977:0:0:1462:0",
-			["H3540"] = 402078,
 			["H3539"] = 354399,
+			["mr"] = 370498,
+			["cc"] = 4,
+			["H3540"] = 402078,
+			["id"] = "11977:0:0:1462:0",
 			["sc"] = 0,
+			["H3543"] = 370498,
 			["H3542"] = 378885,
 		},
 		["Sentinel Bracers of the Eagle"] = {
@@ -11233,53 +13966,18 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 2,
 			["H3542"] = 13957,
 		},
-		["Dragonscale Band"] = {
-			["H3540"] = 54000,
-			["mr"] = 54000,
-		},
-		["Serpent's Shoulders"] = {
-			["H3537"] = 6896,
-			["mr"] = 6896,
-		},
-		["Plans: Golden Scale Leggings"] = {
-			["H3537"] = 10922,
-			["mr"] = 10922,
+		["Legguards of the Vault"] = {
+			["H3539"] = 759999,
+			["mr"] = 759999,
 		},
 		["Topaz Ring of Arcane Resistance"] = {
 			["mr"] = 49998,
 			["H3537"] = 49999,
 			["L3537"] = 49998,
 		},
-		["17 Pound Catfish"] = {
-			["H3540"] = 11800,
-			["mr"] = 11800,
-		},
-		["Bristlebark Cape"] = {
-			["mr"] = 50000,
-			["cc"] = 4,
-			["id"] = "14571:0:0:0:0",
-			["sc"] = 1,
-			["H3540"] = 50000,
-		},
-		["10 Pound Mud Snapper"] = {
-			["mr"] = 782,
-			["H3537"] = 10000,
-			["L3537"] = 782,
-		},
 		["Pattern: Murloc Scale Bracers"] = {
-			["H3537"] = 16900,
-			["mr"] = 16900,
-		},
-		["Dreamslayer"] = {
-			["id"] = "7752:0:0:0:0",
-			["H3542"] = 67500,
-			["L3540"] = 68500,
-			["H3539"] = 89603,
-			["cc"] = 2,
-			["sc"] = 4,
-			["L3539"] = 88500,
-			["mr"] = 67500,
-			["H3540"] = 68899,
+			["H3543"] = 52099,
+			["mr"] = 52099,
 		},
 		["Mail Combat Spaulders"] = {
 			["H3537"] = 6693,
@@ -11289,198 +13987,78 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 100000,
 			["mr"] = 100000,
 		},
-		["Highborne Pants"] = {
-			["H3539"] = 57000,
-			["mr"] = 57000,
-		},
-		["Thin Kodo Leather"] = {
-			["H3540"] = 200,
-			["mr"] = 200,
-			["H3539"] = 584,
-		},
-		["Twilight Robe of the Whale"] = {
-			["H3537"] = 12582,
-			["mr"] = 12582,
-		},
-		["Jade"] = {
-			["H3539"] = 10599,
-			["cc"] = 7,
-			["H3540"] = 5000,
-			["id"] = "1529:0:0:0:0",
-			["sc"] = 0,
-			["mr"] = 5000,
-		},
-		["Master's Bracers of Healing"] = {
-			["H3537"] = 289999,
-			["mr"] = 289999,
+		["10 Pound Mud Snapper"] = {
+			["mr"] = 782,
+			["H3537"] = 10000,
+			["L3537"] = 782,
 		},
 		["Jazeraint Leggings of the Monkey"] = {
 			["H3537"] = 30999,
 			["mr"] = 30999,
 		},
-		["Copper Modulator"] = {
-			["mr"] = 2700,
-			["H3537"] = 2795,
-			["L3537"] = 2700,
-		},
-		["Durable Rod of the Owl"] = {
-			["H3537"] = 19037,
-			["mr"] = 19037,
-		},
-		["Sage's Cloth of Intellect"] = {
-			["H3537"] = 36400,
-			["mr"] = 36400,
+		["Cat Carrier (Black Tabby)"] = {
+			["H3540"] = 97403,
+			["H3539"] = 499900,
+			["H3543"] = 59918,
+			["mr"] = 59918,
 		},
 		["Nightwind Belt"] = {
 			["H3537"] = 39000,
 			["mr"] = 39000,
 		},
-		["Pattern: Red Linen Robe"] = {
-			["H3540"] = 300,
-			["H3539"] = 995,
-			["mr"] = 300,
-		},
-		["Spider Sausage"] = {
-			["mr"] = 4300,
-			["H3539"] = 4300,
-		},
-		["Cat Carrier (Black Tabby)"] = {
-			["H3540"] = 97403,
-			["H3539"] = 499900,
-			["mr"] = 97403,
-		},
-		["Thistlefur Sandals of Stamina"] = {
-			["H3537"] = 14381,
-			["mr"] = 14381,
-		},
-		["Spiked Club of the Boar"] = {
-			["H3540"] = 7000,
-			["mr"] = 7000,
-			["H3539"] = 2500,
-		},
-		["Scarlet Kris"] = {
-			["H3540"] = 349999,
-			["H3539"] = 412156,
-			["mr"] = 349999,
-		},
-		["Ritual Bands of Shadow Wrath"] = {
-			["H3537"] = 22464,
-			["mr"] = 22464,
-		},
-		["Northern Shortsword of Stamina"] = {
-			["H3540"] = 9700,
-			["mr"] = 9700,
-			["H3539"] = 6800,
-		},
-		["Plans: Copper Chain Vest"] = {
-			["H3540"] = 379,
-			["H3539"] = 671,
-			["mr"] = 379,
+		["Greenstone Talisman of the Bear"] = {
+			["H3539"] = 30000,
+			["mr"] = 30000,
 		},
 		["Grizzly Pants of the Falcon"] = {
 			["H3540"] = 14000,
 			["mr"] = 14000,
 		},
 		["Ridge Cleaver of the Eagle"] = {
-			["mr"] = 17750,
 			["H3539"] = 17750,
+			["mr"] = 17750,
 		},
-		["Watcher's Cuffs of Frozen Wrath"] = {
-			["H3537"] = 15723,
-			["mr"] = 15723,
+		["Gossamer Pants of the Eagle"] = {
+			["H3543"] = 27000,
+			["mr"] = 27000,
 		},
-		["Mug O' Hurt"] = {
-			["H3540"] = 2500000,
-			["mr"] = 2500000,
-			["H3539"] = 74999,
-		},
-		["Swashbuckler's Leggings of Agility"] = {
-			["mr"] = 50000,
-			["H3539"] = 50000,
-		},
-		["Arachnidian Legguards of Fiery Wrath"] = {
-			["H3540"] = 40000,
-			["mr"] = 40000,
-		},
-		["Plans: Frostguard"] = {
-			["mr"] = 59580,
-			["H3539"] = 59580,
-		},
-		["Eternal Cloak of Fiery Wrath"] = {
-			["mr"] = 300000,
-			["H3539"] = 300000,
+		["Troll Tribal Necklace"] = {
+			["mr"] = 413,
+			["H3539"] = 413,
 		},
 		["Tellurium Necklace of the Whale"] = {
 			["H3537"] = 39800,
 			["mr"] = 39800,
 		},
-		["Aurora Sash"] = {
-			["H3540"] = 9800,
-			["mr"] = 9800,
-		},
 		["Elemental Water"] = {
 			["H3540"] = 13695,
 			["H3539"] = 15405,
-			["mr"] = 13695,
-		},
-		["Quillward Harness"] = {
-			["H3537"] = 2501232,
-			["mr"] = 2501232,
+			["H3543"] = 16200,
+			["mr"] = 16200,
 		},
 		["Recipe: Flask of Petrification"] = {
 			["H3537"] = 579886,
 			["mr"] = 579886,
 		},
-		["Gothic Plate Girdle of Power"] = {
-			["H3537"] = 30370,
-			["mr"] = 30370,
-		},
 		["Rockscale Cod"] = {
 			["H3537"] = 443,
 			["mr"] = 443,
 		},
-		["Recipe: Elixir of Fortitude"] = {
-			["H3540"] = 9898,
-			["mr"] = 9898,
-			["H3539"] = 12596,
-		},
-		["Ice Thistle E'ko"] = {
-			["H3540"] = 900,
-			["H3539"] = 928,
-			["mr"] = 900,
-		},
-		["Watchman Pauldrons"] = {
-			["H3539"] = 89098,
-			["mr"] = 89098,
-		},
-		["Viking Sword of the Tiger"] = {
-			["H3540"] = 31884,
-			["mr"] = 31884,
-		},
-		["Chieftain's Leggings of the Eagle"] = {
-			["H3537"] = 51627,
-			["mr"] = 51627,
-		},
-		["High Councillor's Bracers of Frozen Wrath"] = {
-			["H3540"] = 149500,
-			["mr"] = 149500,
-			["H3539"] = 150000,
+		["Darksoul Breastplate"] = {
+			["H3537"] = 1390000,
+			["mr"] = 1390000,
 		},
 		["Sentinel Cloak of the Whale"] = {
-			["mr"] = 4600,
 			["H3539"] = 4600,
+			["mr"] = 4600,
 		},
 		["Spidersilk Boots"] = {
 			["H3537"] = 130768,
 			["mr"] = 130768,
 		},
 		["Commander's Armor of Nature Resistance"] = {
-			["H3537"] = 3250000,
+			["H3543"] = 3250000,
 			["mr"] = 3250000,
-		},
-		["Abyssal Cloth Pants of Sorcery"] = {
-			["H3539"] = 397500,
-			["mr"] = 397500,
 		},
 		["Councillor's Robes of the Owl"] = {
 			["H3540"] = 87900,
@@ -11488,240 +14066,81 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Formula: Enchant Bracer - Greater Stamina"] = {
 			["H3540"] = 9699,
-			["mr"] = 9699,
+			["mr"] = 18700,
+			["H3543"] = 18700,
 			["H3539"] = 13197,
 		},
-		["Huntsman's Leggings of Healing"] = {
-			["H3537"] = 38394,
-			["mr"] = 38394,
-		},
-		["Manual: Heavy Silk Bandage"] = {
-			["H3540"] = 10400,
-			["H3539"] = 11200,
-			["mr"] = 10400,
-		},
-		["Large Red Sack"] = {
-			["H3540"] = 11800,
-			["mr"] = 11800,
-		},
-		["Elegant Gloves of the Owl"] = {
-			["H3540"] = 25276,
-			["mr"] = 25276,
-		},
-		["Green Hills of Stranglethorn - Page 16"] = {
-			["H3540"] = 801,
-			["H3539"] = 5501,
-			["mr"] = 801,
+		["Scorpashi Leggings"] = {
+			["H3537"] = 30289,
+			["mr"] = 30289,
 		},
 		["Heavy Woolen Gloves"] = {
 			["mr"] = 5500,
+			["cc"] = 4,
+			["id"] = "4310:0:0:0:0",
 			["sc"] = 1,
 			["H3529"] = 5500,
-			["id"] = "4310:0:0:0:0",
-			["cc"] = 4,
-		},
-		["Carving Knife of Nature's Wrath"] = {
-			["H3537"] = 10018,
-			["mr"] = 10018,
 		},
 		["Durable Hat of the Whale"] = {
 			["H3537"] = 30277,
 			["mr"] = 30277,
 		},
-		["Dragon Finger of Healing"] = {
-			["H3540"] = 462901,
-			["mr"] = 462901,
-		},
-		["Opal Ring of Shadow Resistance"] = {
-			["H3540"] = 5990000,
-			["mr"] = 5990000,
-			["H3539"] = 5990000,
-		},
-		["Dark Iron Boots of the Whale"] = {
-			["mr"] = 1450000,
-			["H3539"] = 1450000,
-		},
-		["Warbringer's Crown of the Eagle"] = {
-			["H3537"] = 12500,
-			["mr"] = 12500,
-		},
 		["Deathblow"] = {
-			["H3537"] = 349999,
-			["mr"] = 349999,
-		},
-		["Arachnidian Gloves of the Whale"] = {
-			["mr"] = 30000,
-			["sc"] = 1,
-			["H3529"] = 30000,
-			["id"] = "14294:0:0:1036:0",
-			["cc"] = 4,
+			["H3543"] = 374998,
+			["mr"] = 374998,
 		},
 		["Battlefield Destroyer of Power"] = {
 			["H3540"] = 42500,
 			["mr"] = 42500,
 		},
-		["Forest Pendant of Agility"] = {
-			["H3537"] = 41175,
-			["mr"] = 41175,
-		},
 		["Spiked Chain Wristbands of Strength"] = {
 			["H3540"] = 20000,
 			["mr"] = 20000,
 		},
-		["Hacking Cleaver of Agility"] = {
-			["H3537"] = 35000,
-			["mr"] = 35000,
+		["Rune Sword of the Tiger"] = {
+			["H3543"] = 61864,
+			["mr"] = 61864,
 		},
 		["Small Brown Pouch"] = {
 			["mr"] = 1444,
 			["H3537"] = 1505,
 			["L3537"] = 1444,
 		},
-		["Nocturnal Sash of the Whale"] = {
-			["H3537"] = 9737,
-			["mr"] = 9737,
-		},
-		["Knightly Longsword of Power"] = {
-			["H3537"] = 19969,
-			["mr"] = 19969,
-		},
-		["Chief Brigadier Girdle"] = {
-			["mr"] = 5052,
-			["H3539"] = 5052,
-		},
-		["Imposing Gloves of the Bear"] = {
-			["mr"] = 86238,
-			["sc"] = 2,
-			["H3529"] = 86238,
-			["id"] = "15166:0:0:1201:0",
-			["cc"] = 4,
-		},
-		["Pattern: Crimson Silk Cloak"] = {
-			["H3537"] = 246820,
-			["mr"] = 246820,
+		["Pattern: Fine Leather Gloves"] = {
+			["mr"] = 1049,
+			["sc"] = 1,
+			["H3540"] = 1049,
+			["cc"] = 9,
+			["id"] = "2408:0:0:0:0",
 		},
 		["Ritual Belt of the Owl"] = {
-			["mr"] = 20000,
 			["H3539"] = 20000,
-		},
-		["Primal Batskin Bracers"] = {
-			["mr"] = 1499997,
-			["H3539"] = 1499997,
-		},
-		["Infernal Stone"] = {
-			["H3537"] = 16695,
-			["mr"] = 16695,
-		},
-		["Lupine Cord of the Bear"] = {
-			["mr"] = 13442,
-			["H3539"] = 13442,
-		},
-		["Resplendent Boots of Frozen Wrath"] = {
-			["H3537"] = 99900,
-			["mr"] = 99900,
-		},
-		["War Paint Legguards"] = {
-			["mr"] = 3000,
-			["H3539"] = 3000,
-		},
-		["Defender Tunic of the Eagle"] = {
-			["H3537"] = 5944,
-			["mr"] = 5944,
+			["mr"] = 20000,
 		},
 		["Raw Spotted Yellowtail"] = {
-			["H3539"] = 419,
 			["mr"] = 419,
+			["H3539"] = 419,
 		},
-		["Truesilver Breastplate"] = {
-			["H3537"] = 249900,
-			["mr"] = 249900,
-		},
-		["Bloodwoven Mitts of Fiery Wrath"] = {
-			["H3537"] = 36611,
-			["mr"] = 36611,
-		},
-		["Recipe: Greater Shadow Protection Potion"] = {
-			["H3540"] = 1289999,
-			["mr"] = 1289999,
-		},
-		["Ranger Helm of the Monkey"] = {
+		["Acrobatic Staff of the Bear"] = {
 			["H3537"] = 20000,
 			["mr"] = 20000,
 		},
-		["Plans: Moonsteel Broadsword"] = {
-			["H3537"] = 56379,
-			["mr"] = 56379,
-		},
-		["Guild Tabard"] = {
-			["mr"] = 75248,
-			["sc"] = 0,
-			["id"] = "5976:0:0:0:0",
-			["cc"] = 4,
-			["H3540"] = 75248,
-		},
-		["Plans: Volcanic Hammer"] = {
-			["H3537"] = 28896,
-			["mr"] = 28896,
-		},
 		["Dusky Boots"] = {
-			["mr"] = 216899,
 			["H3539"] = 216899,
+			["mr"] = 216899,
 		},
-		["Flash Bomb"] = {
-			["H3540"] = 16799,
-			["mr"] = 16799,
-			["H3539"] = 17500,
-		},
-		["Recipe: Elixir of Minor Agility"] = {
-			["H3539"] = 2499,
-			["mr"] = 2499,
-		},
-		["Pattern: Tough Scorpid Bracers"] = {
-			["H3540"] = 2898,
-			["mr"] = 2898,
-		},
-		["Belt of Valor"] = {
-			["H3537"] = 250000,
-			["mr"] = 250000,
-		},
-		["Shredder Operating Manual - Page 7"] = {
-			["H3537"] = 2900,
-			["mr"] = 2900,
-		},
-		["Emerald Breastplate of the Whale"] = {
-			["H3537"] = 41000,
-			["mr"] = 41000,
-		},
-		["Petrified Band"] = {
-			["H3537"] = 1101922,
-			["mr"] = 1101922,
+		["Gryphon Cloak of Defense"] = {
+			["H3543"] = 25970,
+			["mr"] = 25970,
 		},
 		["Tangy Clam Meat"] = {
 			["mr"] = 835,
 			["H3537"] = 840,
 			["L3537"] = 835,
 		},
-		["Gem-studded Leather Belt"] = {
-			["mr"] = 94998,
-			["cc"] = 4,
-			["id"] = "4262:0:0:0:0",
-			["sc"] = 2,
-			["H3539"] = 94998,
-		},
-		["Sentinel Gloves of the Eagle"] = {
-			["mr"] = 12253,
-			["cc"] = 4,
-			["id"] = "7443:0:0:858:0",
-			["sc"] = 2,
-			["H3542"] = 12253,
-		},
-		["Fishing Pole"] = {
-			["mr"] = 5046,
-			["H3539"] = 5046,
-		},
-		["Gryphon Cloak of Defense"] = {
-			["H3537"] = 25970,
-			["mr"] = 25970,
+		["Khan's Legguards"] = {
+			["H3543"] = 67000,
+			["mr"] = 67000,
 		},
 		["Bloodsoul Breastplate"] = {
 			["H3537"] = 1699999,
@@ -11736,360 +14155,180 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 368952,
 			["mr"] = 368952,
 		},
-		["Moss Agate"] = {
-			["H3541"] = 3900,
-			["cc"] = 7,
-			["H3539"] = 10799,
-			["id"] = "1206:0:0:0:0",
-			["mr"] = 3900,
-			["sc"] = 0,
-			["H3540"] = 5000,
-		},
-		["Giant Club of the Tiger"] = {
-			["H3540"] = 105060,
-			["mr"] = 105060,
-		},
-		["Sergeant's Warhammer of Strength"] = {
-			["H3537"] = 2040,
-			["mr"] = 2040,
-		},
-		["Cured Ham Steak"] = {
-			["mr"] = 263,
-			["H3539"] = 263,
-		},
-		["Sunblaze Coif"] = {
-			["mr"] = 195000,
-			["H3539"] = 195000,
-		},
-		["Native Pants of Healing"] = {
-			["H3537"] = 8100,
-			["mr"] = 8100,
-		},
-		["Linen Cloth"] = {
-			["H3540"] = 86,
-			["H3542"] = 68,
-			["H3539"] = 77,
-			["sc"] = 0,
-			["id"] = "2589:0:0:0:0",
-			["cc"] = 7,
-			["L3541"] = 35,
-			["H3541"] = 36,
-			["mr"] = 68,
+		["The Silencer"] = {
+			["H3540"] = 117500,
+			["mr"] = 58899,
+			["H3543"] = 58899,
 		},
 		["Elunarian Cloak"] = {
 			["H3537"] = 39999,
 			["mr"] = 39999,
 		},
-		["Lord's Crown of the Eagle"] = {
-			["H3537"] = 31700,
-			["mr"] = 31700,
+		["Pattern: Gray Woolen Robe"] = {
+			["H3540"] = 5100,
+			["mr"] = 23799,
+			["H3543"] = 23799,
 		},
-		["Salt"] = {
-			["H3540"] = 1000,
-			["mr"] = 1000,
-			["H3539"] = 1000,
-		},
-		["Twilight Cultist Robe"] = {
-			["H3540"] = 7600,
-			["H3539"] = 9000,
-			["mr"] = 7600,
-		},
-		["Pattern: Heavy Scorpid Leggings"] = {
-			["H3540"] = 43040,
-			["mr"] = 43040,
-		},
-		["Invisibility Potion"] = {
-			["H3540"] = 25999,
-			["mr"] = 25999,
-			["H3539"] = 30800,
+		["Battleforge Wristguards of the Boar"] = {
+			["H3537"] = 15095,
+			["mr"] = 15095,
 		},
 		["The Emerald Dream"] = {
 			["H3539"] = 9200,
-			["mr"] = 9200,
+			["H3543"] = 42998,
+			["mr"] = 42998,
 		},
 		["Recipe: Monster Omelet"] = {
 			["H3537"] = 29999,
 			["mr"] = 29999,
 		},
-		["Glowing Brightwood Staff"] = {
-			["H3540"] = 1748448,
-			["mr"] = 1748448,
-			["H3539"] = 1850000,
-		},
-		["Acrobatic Staff of the Bear"] = {
-			["H3537"] = 20000,
-			["mr"] = 20000,
-		},
-		["Elegant Belt of the Eagle"] = {
-			["H3540"] = 870868,
-			["mr"] = 870868,
-			["H3539"] = 29800,
-		},
 		["Four of Portals"] = {
-			["mr"] = 80000,
+			["mr"] = 53500,
+			["H3543"] = 53500,
 			["H3539"] = 80000,
 		},
-		["Banded Armor of the Bear"] = {
-			["mr"] = 22400,
-			["H3539"] = 22400,
-		},
-		["Revenant Chestplate of Nature Resistance"] = {
-			["H3537"] = 2000000,
-			["mr"] = 2000000,
-		},
-		["Runn Tum Tuber"] = {
-			["H3540"] = 2195,
-			["H3539"] = 1899,
-			["mr"] = 2195,
-		},
-		["Dense Dynamite"] = {
-			["H3539"] = 12500,
-			["mr"] = 12500,
-		},
-		["Heavy Hide"] = {
-			["H3540"] = 2999,
-			["H3539"] = 3750,
-			["mr"] = 2999,
-		},
-		["Master's Hat of Fiery Wrath"] = {
-			["mr"] = 300000,
-			["H3539"] = 300000,
-		},
 		["Twilight Cape of Spirit"] = {
-			["mr"] = 13722,
+			["mr"] = 14591,
+			["H3543"] = 14591,
 			["H3539"] = 13722,
 		},
 		["Spider Ichor"] = {
 			["H3540"] = 20,
 			["H3539"] = 39,
-			["mr"] = 20,
-		},
-		["Regal Leggings of Fiery Wrath"] = {
-			["H3537"] = 20000,
-			["mr"] = 20000,
+			["H3543"] = 43,
+			["mr"] = 43,
 		},
 		["Skibi's Pendant"] = {
 			["H3540"] = 244998,
-			["mr"] = 244998,
+			["mr"] = 265000,
+			["H3543"] = 265000,
 			["H3539"] = 259000,
-		},
-		["Elemental Ember"] = {
-			["H3539"] = 149995,
-			["mr"] = 149995,
-		},
-		["Green Hills of Stranglethorn - Page 1"] = {
-			["H3540"] = 879,
-			["mr"] = 879,
-			["H3539"] = 1292,
-		},
-		["Ritual Stein of the Owl"] = {
-			["H3540"] = 20000,
-			["mr"] = 20000,
 		},
 		["Prospector Axe"] = {
 			["H3537"] = 79500,
 			["mr"] = 79500,
 		},
-		["Pattern: Crimson Silk Shoulders"] = {
-			["H3540"] = 13397,
-			["mr"] = 13397,
-		},
-		["Schematic: Masterwork Target Dummy"] = {
-			["H3540"] = 20000,
-			["H3539"] = 105993,
-			["mr"] = 20000,
-		},
-		["Long Elegant Feather"] = {
-			["H3540"] = 4499,
-			["H3539"] = 5344,
-			["mr"] = 4499,
-		},
-		["Pattern: Gray Woolen Robe"] = {
-			["H3540"] = 5100,
-			["mr"] = 5100,
+		["Mystic's Robe"] = {
+			["H3543"] = 22965,
+			["mr"] = 22965,
 		},
 		["Swashbuckler's Shoulderpads of the Monkey"] = {
 			["H3540"] = 37800,
 			["mr"] = 37800,
 		},
-		["Bloodspattered Sabatons of Stamina"] = {
-			["H3537"] = 4000,
-			["mr"] = 4000,
-		},
-		["Venomshroud Silk Robes"] = {
-			["H3540"] = 49700,
-			["mr"] = 49700,
-			["H3539"] = 68000,
-		},
-		["Pattern: Cindercloth Gloves"] = {
-			["H3537"] = 212135,
-			["mr"] = 212135,
-		},
-		["Brightcloth Cloak"] = {
-			["H3539"] = 119999,
-			["mr"] = 119999,
-		},
-		["Elite Shoulders"] = {
-			["H3537"] = 63880,
-			["mr"] = 63880,
+		["Guillotine Axe"] = {
+			["H3539"] = 127499,
+			["cc"] = 2,
+			["mr"] = 99999,
+			["id"] = "2807:0:0:0:0",
+			["sc"] = 0,
+			["H3543"] = 99999,
+			["H3542"] = 126999,
 		},
 		["Gorilla Fang"] = {
 			["H3540"] = 156,
 			["H3539"] = 177,
-			["mr"] = 156,
-		},
-		["Troll Tribal Necklace"] = {
-			["H3539"] = 413,
-			["mr"] = 413,
-		},
-		["Conjurer's Sphere of the Whale"] = {
-			["H3537"] = 26000,
-			["mr"] = 26000,
-		},
-		["Barbaric Shoulders"] = {
-			["mr"] = 9999,
-			["sc"] = 2,
-			["id"] = "5964:0:0:0:0",
-			["cc"] = 4,
-			["H3540"] = 9999,
-		},
-		["Pattern: Green Dragonscale Leggings"] = {
-			["mr"] = 32000,
-			["H3539"] = 32000,
-		},
-		["Ranger Wristguards of the Monkey"] = {
-			["H3537"] = 12000,
-			["mr"] = 12000,
-		},
-		["Emerald Sabatons of the Bear"] = {
-			["H3537"] = 59167,
-			["mr"] = 59167,
-		},
-		["Nightslayer Bracelets"] = {
-			["H3540"] = 1062750,
-			["H3539"] = 1502499,
-			["mr"] = 1062750,
-		},
-		["Lord's Pauldrons of Nature's Wrath"] = {
-			["H3537"] = 100000,
-			["mr"] = 100000,
-		},
-		["Soft Frenzy Flesh"] = {
-			["H3537"] = 5500,
-			["mr"] = 5500,
+			["H3543"] = 133,
+			["mr"] = 133,
 		},
 		["Explosive Shotgun"] = {
 			["H3540"] = 7500,
-			["mr"] = 7500,
+			["mr"] = 10798,
+			["H3543"] = 10798,
 		},
-		["Chief Brigadier Cloak"] = {
-			["H3540"] = 13400,
-			["mr"] = 13400,
+		["Linen Bandage"] = {
+			["H3540"] = 70,
+			["mr"] = 74,
+			["H3543"] = 74,
 		},
-		["Battleforge Armor of the Bear"] = {
-			["H3540"] = 9535,
-			["mr"] = 9535,
+		["Elegant Boots of Shadow Wrath"] = {
+			["H3543"] = 85500,
+			["mr"] = 85500,
 		},
-		["Darksoul Breastplate"] = {
-			["H3537"] = 1390000,
-			["mr"] = 1390000,
+		["Chief Brigadier Bracers"] = {
+			["H3539"] = 7499,
+			["H3543"] = 7424,
+			["mr"] = 7424,
 		},
 		["Archer's Gloves of the Monkey"] = {
 			["H3537"] = 10000,
 			["mr"] = 10000,
 		},
-		["Cured Light Hide"] = {
-			["H3539"] = 2700,
-			["mr"] = 2700,
+		["Thunderbrow Ring"] = {
+			["H3543"] = 169500,
+			["mr"] = 169500,
 		},
-		["Death's Head Vestment"] = {
-			["mr"] = 797999,
-			["H3539"] = 797999,
-		},
-		["Runecloth Gloves"] = {
-			["mr"] = 20000,
-			["sc"] = 1,
-			["H3540"] = 20000,
-			["cc"] = 4,
-			["id"] = "13863:0:0:0:0",
-		},
-		["Sentinel Trousers of Power"] = {
-			["mr"] = 36279,
-			["cc"] = 4,
-			["id"] = "7440:0:0:1561:0",
-			["sc"] = 2,
-			["H3539"] = 14999,
-			["H3542"] = 36279,
-		},
-		["Green Whelp Scale"] = {
-			["mr"] = 13486,
-			["H3539"] = 13486,
-		},
-		["Bloodspattered Shield of Strength"] = {
-			["H3537"] = 2500,
-			["mr"] = 2500,
+		["Basilisk Brain"] = {
+			["H3540"] = 9922,
+			["H3539"] = 9944,
+			["H3543"] = 12787,
+			["mr"] = 12787,
 		},
 		["Elixir of Greater Water Breathing"] = {
 			["H3540"] = 13498,
 			["H3539"] = 7278,
-			["mr"] = 13498,
+			["H3543"] = 10197,
+			["mr"] = 10197,
+		},
+		["Windweaver Staff"] = {
+			["mr"] = 130000,
+			["H3543"] = 130000,
+			["H3539"] = 140000,
 		},
 		["Raw Greater Sagefish"] = {
 			["H3540"] = 9285,
 			["mr"] = 9285,
 			["H3539"] = 9457,
 		},
-		["Schematic: Spellpower Goggles Xtreme"] = {
-			["H3540"] = 10000,
-			["mr"] = 10000,
+		["Hillman's Leather Vest"] = {
+			["H3539"] = 11111,
+			["mr"] = 11111,
 		},
-		["Scaled Leather Headband of the Eagle"] = {
-			["mr"] = 11000,
+		["Insignia Chestguard"] = {
+			["H3543"] = 47173,
+			["mr"] = 47173,
+		},
+		["Bloodspattered Wristbands of the Bear"] = {
+			["H3543"] = 4200,
+			["mr"] = 4200,
+		},
+		["Sentinel Cap of the Wolf"] = {
+			["mr"] = 42168,
 			["cc"] = 4,
-			["id"] = "10406:0:0:859:0",
+			["id"] = "7441:0:0:526:0",
 			["sc"] = 2,
-			["H3536"] = 11000,
+			["H3542"] = 42168,
 		},
-		["Fiery Chain Girdle"] = {
-			["H3539"] = 1599998,
-			["mr"] = 1599998,
+		["Renegade Pauldrons of the Bear"] = {
+			["H3540"] = 49212,
+			["mr"] = 8000,
+			["H3543"] = 8000,
 		},
-		["Ancestral Robe"] = {
-			["mr"] = 5568,
-			["H3539"] = 5568,
+		["Darkmist Wizard Hat of Intellect"] = {
+			["H3543"] = 34999,
+			["mr"] = 34999,
 		},
-		["Elegant Bracers of Stamina"] = {
-			["mr"] = 50000,
-			["H3539"] = 50000,
+		["Ballast Maul of the Bear"] = {
+			["H3540"] = 120924,
+			["mr"] = 120924,
 		},
-		["Grunt Axe of Power"] = {
-			["H3540"] = 3954,
-			["mr"] = 3954,
+		["Breath of Wind"] = {
+			["H3540"] = 994,
+			["H3539"] = 3399,
+			["H3543"] = 2500,
+			["mr"] = 2500,
 		},
-		["Ranger Leggings of the Eagle"] = {
-			["H3537"] = 200000,
-			["mr"] = 200000,
-		},
-		["Star Belt"] = {
-			["H3540"] = 114999,
-			["mr"] = 114999,
-		},
-		["Recipe: Limited Invulnerability Potion"] = {
-			["H3540"] = 9900,
-			["H3539"] = 37500,
-			["mr"] = 9900,
-		},
-		["Sturdy Quarterstaff of Fiery Wrath"] = {
-			["mr"] = 9000,
-			["H3539"] = 9000,
+		["Scaled Leather Boots of the Eagle"] = {
+			["H3537"] = 15535,
+			["mr"] = 15535,
 		},
 		["Mistscape Wizard Hat"] = {
 			["H3537"] = 8000,
 			["mr"] = 8000,
 		},
-		["Elixir of Demonslaying"] = {
-			["H3540"] = 39999,
-			["mr"] = 39999,
+		["Elegant Bracers of Stamina"] = {
+			["H3539"] = 50000,
+			["mr"] = 50000,
 		},
 		["Curve-bladed Ripper"] = {
 			["H3537"] = 48499,
@@ -12105,270 +14344,271 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Warden's Wraps"] = {
 			["H3540"] = 70000,
-			["mr"] = 70000,
+			["mr"] = 25000,
+			["H3543"] = 25000,
 		},
-		["Lower Map Fragment"] = {
-			["H3540"] = 5400,
-			["H3539"] = 5498,
-			["mr"] = 5400,
+		["Oak Mallet of the Tiger"] = {
+			["H3537"] = 6624,
+			["mr"] = 6624,
 		},
-		["Boahn's Fang"] = {
-			["mr"] = 80000,
-			["H3539"] = 80000,
+		["Lordly Armguards"] = {
+			["H3537"] = 48600,
+			["mr"] = 48600,
 		},
-		["Iridescent Pearl"] = {
-			["H3540"] = 990,
-			["H3539"] = 1000,
-			["mr"] = 990,
+		["Ranger Leggings of the Eagle"] = {
+			["H3537"] = 200000,
+			["mr"] = 200000,
 		},
-		["Sword of the Magistrate"] = {
-			["H3540"] = 45000,
-			["mr"] = 45000,
+		["Commander's Armor of Power"] = {
+			["H3537"] = 40000,
+			["mr"] = 40000,
 		},
-		["Pattern: Mooncloth Shoulders"] = {
-			["H3537"] = 300000,
-			["mr"] = 300000,
+		["Regal Sash of the Whale"] = {
+			["H3539"] = 37500,
+			["mr"] = 37500,
 		},
-		["Abyssal Leather Gloves of Sorcery"] = {
-			["H3540"] = 50000,
-			["mr"] = 50000,
+		["Swashbuckler's Eyepatch of the Owl"] = {
+			["H3537"] = 79880,
+			["mr"] = 79880,
 		},
-		["Night Reaver"] = {
-			["H3540"] = 199999,
-			["mr"] = 199999,
-			["H3539"] = 279999,
+		["Twilight Cuffs of the Owl"] = {
+			["H3543"] = 3600,
+			["mr"] = 3600,
 		},
 		["Scroll of Strength II"] = {
-			["mr"] = 1415,
-			["sc"] = 0,
-			["H3540"] = 1415,
+			["mr"] = 1935,
 			["cc"] = 0,
 			["H3539"] = 1420,
 			["id"] = "2289:0:0:0:0",
-		},
-		["Essence of Undeath"] = {
-			["mr"] = 10000,
-			["cc"] = 5,
-			["id"] = "12808:0:0:0:0",
-			["H3540"] = 10000,
+			["H3540"] = 1415,
+			["H3543"] = 1935,
 			["sc"] = 0,
-			["H3539"] = 35800,
 		},
-		["Mystical Mantle of Frozen Wrath"] = {
-			["H3537"] = 110000,
-			["mr"] = 110000,
+		["Regal Cloak of the Owl"] = {
+			["H3543"] = 27103,
+			["mr"] = 27103,
 		},
-		["Seven of Portals"] = {
-			["H3540"] = 29997,
-			["H3539"] = 29999,
-			["mr"] = 29997,
+		["Schematic: Moonsight Rifle"] = {
+			["mr"] = 30400,
+			["H3537"] = 30570,
+			["L3537"] = 30400,
 		},
-		["Wildheart Gloves"] = {
-			["mr"] = 39799,
-			["L3537"] = 39799,
-			["id"] = "16717:0:0:0:0",
-			["cc"] = 4,
-			["H3537"] = 40000,
-			["sc"] = 2,
+		["Watcher's Cuffs of Frozen Wrath"] = {
+			["H3537"] = 15723,
+			["mr"] = 15723,
 		},
-		["Cloak of Flames"] = {
-			["H3537"] = 16000000,
-			["mr"] = 16000000,
+		["Dense Sharpening Stone"] = {
+			["H3540"] = 1800,
+			["H3539"] = 1895,
+			["H3543"] = 3800,
+			["mr"] = 3800,
 		},
-		["Nightsky Cloak"] = {
-			["H3537"] = 15000,
-			["mr"] = 15000,
+		["Glowstar Rod of Healing"] = {
+			["H3539"] = 214837,
+			["mr"] = 214837,
 		},
-		["High Councillor's Pants of Healing"] = {
-			["H3537"] = 290000,
-			["mr"] = 290000,
+		["Elder's Pants of the Owl"] = {
+			["H3543"] = 49904,
+			["mr"] = 49904,
 		},
-		["Frost Oil"] = {
-			["H3540"] = 59499,
-			["H3539"] = 64000,
-			["mr"] = 59499,
+		["Nightsky Mantle"] = {
+			["H3543"] = 11799,
+			["mr"] = 11799,
 		},
-		["Nightshade Cloak of the Owl"] = {
-			["H3537"] = 139211,
-			["mr"] = 139211,
+		["Stonecutter Claymore of the Wolf"] = {
+			["mr"] = 29805,
+			["cc"] = 2,
+			["id"] = "3197:0:0:521:0",
+			["H3543"] = 29805,
+			["sc"] = 8,
+		},
+		["Champion's Greaves of Power"] = {
+			["H3537"] = 118880,
+			["mr"] = 118880,
 		},
 		["Twilight Armor of Stamina"] = {
 			["H3537"] = 10000,
 			["mr"] = 10000,
 		},
-		["Sorcerer Robe of the Owl"] = {
-			["H3537"] = 29799,
-			["mr"] = 29799,
+		["Champion's Cape of the Falcon"] = {
+			["H3543"] = 9999,
+			["mr"] = 9999,
 		},
-		["Blade of Hanna"] = {
-			["H3537"] = 5000000,
-			["mr"] = 5000000,
+		["Regal Cuffs of the Eagle"] = {
+			["H3543"] = 7999,
+			["mr"] = 7999,
 		},
-		["Plans: Darkrune Helm"] = {
-			["H3540"] = 68000,
-			["H3539"] = 59500,
-			["mr"] = 68000,
-		},
-		["Elixir of Giants"] = {
-			["H3540"] = 16200,
-			["H3539"] = 11200,
-			["mr"] = 16200,
-		},
-		["Drakesfire Epaulets"] = {
-			["H3540"] = 119998,
-			["H3539"] = 130000,
-			["mr"] = 119998,
-		},
-		["Peridot Circle of Arcane Resistance"] = {
-			["mr"] = 427999,
+		["Opal Ring of Fire Resistance"] = {
+			["H3539"] = 894999,
 			["cc"] = 4,
-			["H3540"] = 427999,
-			["H3539"] = 254000,
-			["id"] = "11979:0:0:1327:0",
+			["H3540"] = 898000,
+			["id"] = "11980:0:0:1419:0",
 			["sc"] = 0,
+			["H3543"] = 987997,
+			["mr"] = 987997,
 		},
-		["Duskwoven Pants of the Eagle"] = {
-			["H3537"] = 40000,
-			["mr"] = 40000,
+		["Elder's Robe of the Owl"] = {
+			["H3543"] = 46510,
+			["mr"] = 46510,
+		},
+		["Notched Shortsword of Stamina"] = {
+			["H3537"] = 3021,
+			["mr"] = 3021,
+		},
+		["Leaden Mace of Power"] = {
+			["H3543"] = 60000,
+			["mr"] = 60000,
+		},
+		["Barbecued Buzzard Wing"] = {
+			["H3543"] = 7487,
+			["mr"] = 7487,
 		},
 		["Poniard"] = {
 			["H3537"] = 548963,
 			["mr"] = 548963,
 		},
-		["Sentinel Gloves of Defense"] = {
-			["mr"] = 26916,
-			["cc"] = 4,
-			["id"] = "7443:0:0:1611:0",
-			["sc"] = 2,
-			["H3542"] = 26916,
-		},
-		["Heavy Lamellar Shield of the Boar"] = {
-			["H3537"] = 58991,
-			["mr"] = 58991,
-		},
-		["Barbaric Cloth Boots"] = {
-			["mr"] = 4300,
-			["cc"] = 4,
-			["id"] = "3307:0:0:0:0",
-			["H3539"] = 4388,
-			["sc"] = 1,
-			["H3540"] = 4300,
-		},
-		["Dragon Finger of the Eagle"] = {
-			["H3540"] = 228498,
-			["mr"] = 228498,
-		},
-		["Plans: Solid Iron Maul"] = {
-			["H3537"] = 30000,
-			["mr"] = 30000,
-		},
-		["Cat Carrier (Siamese)"] = {
-			["H3537"] = 500000,
-			["mr"] = 500000,
-		},
-		["Ember Wand of Fiery Wrath"] = {
-			["H3537"] = 50000,
-			["mr"] = 50000,
-		},
-		["Green Whelp Armor"] = {
-			["H3537"] = 74629,
-			["mr"] = 74629,
-		},
-		["Holy Shroud"] = {
-			["H3540"] = 267000,
-			["mr"] = 267000,
-		},
-		["Recipe: Tender Wolf Steak"] = {
-			["H3540"] = 30000,
-			["mr"] = 30000,
-			["H3539"] = 39500,
-		},
-		["Recipe: Elixir of the Sages"] = {
-			["H3537"] = 499000,
-			["mr"] = 499000,
-		},
-		["Glyphed Leggings"] = {
-			["H3540"] = 12497,
-			["mr"] = 12497,
-			["H3539"] = 19799,
-		},
-		["Beguiler Robes"] = {
-			["H3539"] = 170000,
-			["mr"] = 170000,
-		},
-		["Dimensional Blade of Stamina"] = {
-			["H3537"] = 496512,
-			["mr"] = 496512,
-		},
-		["Elegant Boots of Stamina"] = {
-			["H3537"] = 294624,
-			["mr"] = 294624,
-		},
-		["Red Mageweave Bag"] = {
-			["mr"] = 23900,
-			["sc"] = 0,
-			["H3540"] = 23900,
-			["cc"] = 1,
-			["id"] = "10051:0:0:0:0",
-		},
-		["Felheart Belt"] = {
-			["H3540"] = 486525,
-			["mr"] = 486525,
-			["H3539"] = 693000,
-		},
-		["Elder's Padded Armor of Intellect"] = {
-			["mr"] = 18099,
-			["H3539"] = 18099,
-		},
-		["Phalanx Boots of the Bear"] = {
+		["Duskwoven Pants of the Eagle"] = {
 			["H3537"] = 40000,
 			["mr"] = 40000,
 		},
-		["Hot Smoked Bass"] = {
-			["H3537"] = 1500,
-			["mr"] = 1500,
+		["Jazeraint Gauntlets of the Falcon"] = {
+			["H3543"] = 38340,
+			["mr"] = 38340,
 		},
-		["Resplendent Bracelets of Frozen Wrath"] = {
-			["H3537"] = 229068,
-			["mr"] = 229068,
+		["Soul Pouch"] = {
+			["H3540"] = 123799,
+			["mr"] = 123799,
 		},
-		["Lodestone Hoop of the Boar"] = {
-			["H3537"] = 66456,
-			["mr"] = 66456,
+		["Dwarven Hand Cannon"] = {
+			["H3540"] = 279900,
+			["H3539"] = 498000,
+			["H3543"] = 519499,
+			["mr"] = 519499,
+		},
+		["Oil Covered Fish"] = {
+			["H3540"] = 11000,
+			["mr"] = 11000,
+			["H3539"] = 11200,
+		},
+		["Ancient Legguards of the Falcon"] = {
+			["H3540"] = 50000,
+			["mr"] = 50000,
+		},
+		["Solstice Robe"] = {
+			["H3537"] = 11050,
+			["mr"] = 11050,
+		},
+		["Ice Cold Milk"] = {
+			["H3543"] = 115,
+			["mr"] = 115,
+		},
+		["Sanguine Belt"] = {
+			["H3543"] = 14600,
+			["mr"] = 14600,
+		},
+		["Soldier's Armor of the Gorilla"] = {
+			["H3537"] = 5000,
+			["mr"] = 5000,
+		},
+		["Blue Leather Bag"] = {
+			["mr"] = 2450,
+			["cc"] = 1,
+			["id"] = "856:0:0:0:0",
+			["sc"] = 0,
+			["H3537"] = 4900,
+			["L3537"] = 2450,
+		},
+		["Edged Bastard Sword of the Monkey"] = {
+			["H3540"] = 10000,
+			["mr"] = 4999,
+			["H3543"] = 4999,
+			["H3539"] = 10000,
+		},
+		["Beguiler Robes"] = {
+			["mr"] = 170000,
+			["H3539"] = 170000,
+		},
+		["High Councillor's Bracers of the Eagle"] = {
+			["H3543"] = 39999,
+			["mr"] = 39999,
+		},
+		["Raider's Gauntlets of Strength"] = {
+			["H3537"] = 8410,
+			["mr"] = 8410,
+		},
+		["Twilight Cuffs of Spirit"] = {
+			["H3543"] = 11535,
+			["mr"] = 11535,
+		},
+		["Felheart Belt"] = {
+			["H3540"] = 486525,
+			["mr"] = 464999,
+			["H3543"] = 464999,
+			["H3539"] = 693000,
+		},
+		["Red Mageweave Bag"] = {
+			["mr"] = 23900,
+			["cc"] = 1,
+			["id"] = "10051:0:0:0:0",
+			["H3540"] = 23900,
+			["sc"] = 0,
+		},
+		["Green Hills of Stranglethorn - Page 4"] = {
+			["H3540"] = 1460,
+			["mr"] = 2074,
+			["H3543"] = 2074,
+			["H3539"] = 1840,
+		},
+		["Recipe: Spotted Yellowtail"] = {
+			["H3543"] = 90000,
+			["mr"] = 90000,
+		},
+		["Recipe: Discolored Healing Potion"] = {
+			["H3540"] = 750,
+			["mr"] = 13999,
+			["H3543"] = 13999,
+			["H3539"] = 5500,
+		},
+		["Girdle of Prophecy"] = {
+			["H3540"] = 599000,
+			["mr"] = 599000,
+			["H3539"] = 719000,
 		},
 		["Monk's Staff of Nature's Wrath"] = {
 			["H3537"] = 199680,
 			["mr"] = 199680,
 		},
 		["Shadow Panther Hide Belt"] = {
-			["H3537"] = 709999,
-			["mr"] = 709999,
+			["H3543"] = 784999,
+			["mr"] = 784999,
 		},
 		["Pattern: Frostweave Pants"] = {
 			["H3540"] = 29250,
 			["H3539"] = 38805,
-			["mr"] = 29250,
+			["H3543"] = 50000,
+			["mr"] = 50000,
 		},
-		["Pattern: Red Mageweave Shoulders"] = {
-			["mr"] = 3395,
-			["cc"] = 9,
-			["H3540"] = 3395,
-			["H3539"] = 11200,
-			["sc"] = 2,
-			["id"] = "10315:0:0:0:0",
+		["Large Brown Sack"] = {
+			["H3540"] = 11000,
+			["mr"] = 11000,
+			["H3539"] = 15499,
 		},
 		["Zulian Hacker of Stamina"] = {
 			["H3540"] = 6000000,
-			["mr"] = 6000000,
+			["mr"] = 4990000,
+			["H3543"] = 4990000,
 			["H3539"] = 5000000,
 		},
-		["Wirt's Third Leg"] = {
-			["H3537"] = 48750,
-			["mr"] = 48750,
+		["Pattern: Runic Leather Armor"] = {
+			["mr"] = 120000,
+			["cc"] = 9,
+			["id"] = "15776:0:0:0:0",
+			["sc"] = 1,
+			["H3536"] = 120000,
 		},
-		["Simple Dress"] = {
-			["H3537"] = 11834,
-			["mr"] = 11834,
+		["Bronze Framework"] = {
+			["H3539"] = 5203,
+			["mr"] = 5203,
 		},
 		["Truesilver Skeleton Key"] = {
 			["H3540"] = 6800,
@@ -12377,77 +14617,83 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Obsidian Band of Stamina"] = {
 			["H3540"] = 253315,
-			["mr"] = 253315,
+			["mr"] = 49200,
+			["H3543"] = 49200,
 		},
 		["Knight's Legguards of Power"] = {
-			["mr"] = 41450,
 			["H3539"] = 41450,
+			["mr"] = 41450,
 		},
-		["Unbalanced Axe"] = {
-			["H3537"] = 1458,
-			["mr"] = 1458,
+		["Small Green Pouch"] = {
+			["H3540"] = 1685,
+			["mr"] = 900,
+			["H3543"] = 900,
 		},
 		["Harpy Needler of the Monkey"] = {
 			["H3537"] = 65675,
 			["mr"] = 65675,
 		},
-		["Dried King Bolete"] = {
-			["H3540"] = 1900,
-			["mr"] = 1900,
-			["H3539"] = 2000,
+		["Aboriginal Gloves of the Eagle"] = {
+			["H3537"] = 4480,
+			["mr"] = 4480,
 		},
-		["Twin-bladed Axe of the Bear"] = {
-			["H3537"] = 7903,
-			["mr"] = 7903,
+		["Bear Meat"] = {
+			["H3540"] = 498,
+			["H3539"] = 961,
+			["H3543"] = 418,
+			["mr"] = 418,
 		},
-		["Pattern: Black Dragonscale Breastplate"] = {
-			["H3540"] = 141468,
-			["mr"] = 141468,
+		["Battleforge Shoulderguards of the Boar"] = {
+			["H3537"] = 25613,
+			["mr"] = 25613,
 		},
-		["Mail Combat Boots"] = {
-			["H3537"] = 10000,
-			["mr"] = 10000,
+		["Imperial Plate Helm"] = {
+			["H3537"] = 70000,
+			["mr"] = 70000,
 		},
 		["Arcane Gloves"] = {
 			["mr"] = 59988,
-			["sc"] = 1,
-			["id"] = "8287:0:0:0:0",
 			["cc"] = 4,
 			["H3540"] = 59988,
+			["id"] = "8287:0:0:0:0",
+			["sc"] = 1,
+		},
+		["Deckhand's Shirt"] = {
+			["H3540"] = 10199,
+			["H3539"] = 10499,
+			["H3543"] = 8599,
+			["mr"] = 8599,
+		},
+		["Infiltrator Boots of the Gorilla"] = {
+			["H3543"] = 44154,
+			["mr"] = 44154,
+		},
+		["Heavy Mageweave Bandage"] = {
+			["H3539"] = 1659,
+			["cc"] = 0,
+			["H3540"] = 1645,
+			["id"] = "8545:0:0:0:0",
+			["sc"] = 0,
+			["mr"] = 1645,
 		},
 		["Carnelian Loop of Shadow Resistance"] = {
 			["H3540"] = 93487,
-			["mr"] = 93487,
+			["mr"] = 33199,
+			["H3543"] = 33199,
 			["H3539"] = 170500,
 		},
-		["Pattern: Stormshroud Armor"] = {
-			["H3539"] = 30000,
-			["mr"] = 30000,
-		},
-		["Heavy Mageweave Bandage"] = {
-			["mr"] = 1645,
-			["cc"] = 0,
-			["id"] = "8545:0:0:0:0",
-			["H3539"] = 1659,
-			["sc"] = 0,
-			["H3540"] = 1645,
-		},
-		["Abyssal Scepter"] = {
-			["H3540"] = 1149999,
-			["H3539"] = 1047500,
-			["mr"] = 1149999,
-		},
 		["Glyphed Mitts"] = {
-			["H3537"] = 14780,
-			["mr"] = 14780,
+			["H3543"] = 8798,
+			["mr"] = 8798,
 		},
-		["Grinning Axe of Stamina"] = {
-			["H3537"] = 29900,
-			["mr"] = 29900,
+		["Big Iron Fishing Pole"] = {
+			["mr"] = 73124,
+			["H3537"] = 319800,
+			["L3537"] = 73124,
 		},
-		["Sardonyx Knuckle of Frost Resistance"] = {
-			["H3537"] = 1545341,
-			["mr"] = 1545341,
+		["Massacre Sword of the Eagle"] = {
+			["H3537"] = 149903,
+			["mr"] = 149903,
 		},
 		["Greenweave Gloves of the Falcon"] = {
 			["H3537"] = 21613,
@@ -12456,68 +14702,72 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Lesser Moonstone"] = {
 			["H3540"] = 10199,
 			["H3539"] = 1044,
-			["mr"] = 10199,
+			["H3543"] = 1695,
+			["mr"] = 1695,
 		},
-		["Raider's Gauntlets of Power"] = {
-			["mr"] = 19987,
-			["H3539"] = 19987,
+		["Pattern: Living Breastplate"] = {
+			["H3539"] = 58500,
+			["mr"] = 58500,
 		},
-		["Devilsaur Leggings"] = {
-			["H3540"] = 1067500,
-			["mr"] = 1067500,
-			["H3539"] = 1194540,
+		["Conjurer's Mantle of Shadow Wrath"] = {
+			["H3543"] = 37727,
+			["mr"] = 37727,
 		},
-		["Formula: Enchant Bracer - Minor Strength"] = {
-			["H3539"] = 53819,
-			["mr"] = 53819,
-		},
-		["Traveler's Jerkin"] = {
-			["H3537"] = 99999,
-			["mr"] = 99999,
-		},
-		["Dervish Spaulders of the Eagle"] = {
-			["H3537"] = 40000,
-			["mr"] = 40000,
-		},
-		["Serrated Petal"] = {
-			["H3537"] = 18000,
-			["mr"] = 18000,
-		},
-		["Twilight Belt of the Owl"] = {
-			["H3537"] = 10000,
+		["Magician Staff of the Bear"] = {
+			["H3543"] = 10000,
 			["mr"] = 10000,
 		},
-		["High Councillor's Bracers of Shadow Wrath"] = {
-			["H3537"] = 144331,
-			["mr"] = 144331,
+		["Robe of Winter Night"] = {
+			["H3540"] = 1199890,
+			["mr"] = 1199890,
+			["H3539"] = 999987,
 		},
-		["Knight's Girdle of Strength"] = {
-			["H3540"] = 10000,
-			["mr"] = 10000,
+		["Twilight Cowl of the Eagle"] = {
+			["H3543"] = 32474,
+			["mr"] = 32474,
+		},
+		["Rigid Cape of the Eagle"] = {
+			["H3543"] = 16802,
+			["mr"] = 16802,
+		},
+		["Clay Ring of the Bear"] = {
+			["H3543"] = 158340,
+			["mr"] = 158340,
+		},
+		["Green Hills of Stranglethorn - Page 10"] = {
+			["H3540"] = 874,
+			["mr"] = 780,
+			["H3543"] = 780,
+			["H3539"] = 1757,
+		},
+		["Dimensional Blade of the Monkey"] = {
+			["H3543"] = 305910,
+			["mr"] = 305910,
 		},
 		["Banded Leggings of the Monkey"] = {
 			["H3537"] = 37956,
 			["mr"] = 37956,
 		},
 		["Garrett Family Crest"] = {
-			["H3537"] = 359388,
-			["mr"] = 359388,
+			["H3543"] = 485514,
+			["mr"] = 485514,
 		},
 		["Blindweed"] = {
-			["mr"] = 7699,
-			["cc"] = 7,
-			["id"] = "8839:0:0:0:0",
 			["H3539"] = 7750,
+			["cc"] = 7,
 			["sc"] = 0,
 			["H3540"] = 7699,
+			["id"] = "8839:0:0:0:0",
+			["H3543"] = 7612,
+			["mr"] = 7612,
 		},
-		["Elegant Circlet of the Whale"] = {
-			["H3537"] = 292000,
-			["mr"] = 292000,
+		["Marsh Ring of the Tiger"] = {
+			["H3543"] = 30000,
+			["mr"] = 30000,
 		},
-		["Scarlet Boots"] = {
-			["H3537"] = 158500,
-			["mr"] = 158500,
+		["Glimmering Mail Coif"] = {
+			["H3543"] = 6734,
+			["mr"] = 6734,
 		},
 		["Sword of Zeal"] = {
 			["H3540"] = 381100,
@@ -12526,152 +14776,154 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Black Diamond"] = {
 			["H3540"] = 1564,
-			["mr"] = 1564,
+			["mr"] = 749,
+			["H3543"] = 749,
 			["H3539"] = 2000,
 		},
 		["Serenity Belt"] = {
 			["H3540"] = 63500,
-			["mr"] = 63500,
+			["mr"] = 100000,
+			["H3543"] = 100000,
 		},
-		["Duskwoven Robe of Stamina"] = {
-			["H3537"] = 49577,
-			["mr"] = 49577,
+		["Simple Linen Boots"] = {
+			["H3537"] = 9487,
+			["mr"] = 9487,
 		},
-		["Bandit Jerkin of the Monkey"] = {
-			["H3537"] = 7900,
-			["mr"] = 7900,
+		["Parrot Cage (Senegal)"] = {
+			["H3537"] = 57484,
+			["mr"] = 57484,
 		},
-		["Helm of Fire"] = {
-			["mr"] = 199000,
-			["cc"] = 4,
-			["H3539"] = 199000,
-			["id"] = "8348:0:0:0:0",
-			["sc"] = 2,
-			["H3543"] = 199000,
-			["H3540"] = 199000,
+		["Mithril Ore"] = {
+			["H3539"] = 1200,
+			["cc"] = 7,
+			["H3540"] = 2100,
+			["id"] = "3858:0:0:0:0",
+			["sc"] = 0,
+			["H3543"] = 3599,
+			["mr"] = 3599,
 		},
 		["Opaque Wand"] = {
 			["H3540"] = 2600,
 			["H3539"] = 2647,
-			["mr"] = 2600,
+			["H3543"] = 6728,
+			["mr"] = 6728,
 		},
-		["Battleforge Wristguards of the Boar"] = {
-			["H3537"] = 15095,
-			["mr"] = 15095,
+		["Arena Wristguards"] = {
+			["H3537"] = 9990000,
+			["mr"] = 9990000,
 		},
-		["Elixir of Minor Defense"] = {
-			["H3540"] = 474,
-			["H3539"] = 320,
-			["mr"] = 474,
+		["Eidolon Talisman"] = {
+			["H3540"] = 2492000,
+			["H3539"] = 3001392,
+			["mr"] = 2492000,
+		},
+		["Bloodwoven Cord of Healing"] = {
+			["H3543"] = 40000,
+			["mr"] = 40000,
+		},
+		["Vital Boots of the Whale"] = {
+			["H3537"] = 20000,
+			["mr"] = 20000,
+		},
+		["Lightforge Belt"] = {
+			["mr"] = 45625,
+			["H3543"] = 45625,
+			["H3539"] = 119998,
+		},
+		["Schematic: Flawless Arcanite Rifle"] = {
+			["L3540"] = 599999,
+			["mr"] = 599999,
+			["cc"] = 9,
+			["H3540"] = 899999,
+			["id"] = "16056:0:0:0:0",
+			["sc"] = 3,
 		},
 		["Gold Hakkari Bijou"] = {
 			["H3540"] = 29297,
 			["H3539"] = 24911,
-			["mr"] = 29297,
+			["H3543"] = 24673,
+			["mr"] = 24673,
 		},
-		["Ritual Bands of Frozen Wrath"] = {
-			["H3537"] = 2600,
-			["mr"] = 2600,
+		["Masterwork Cape of the Owl"] = {
+			["H3543"] = 50000,
+			["mr"] = 50000,
 		},
-		["Lightforge Belt"] = {
-			["mr"] = 119998,
-			["H3539"] = 119998,
+		["Field Repair Bot 74A"] = {
+			["H3540"] = 379000,
+			["H3539"] = 307999,
+			["H3543"] = 358000,
+			["mr"] = 358000,
 		},
-		["Pattern: Big Voodoo Mask"] = {
-			["H3540"] = 24600,
-			["mr"] = 24600,
+		["Massive Battle Axe of the Boar"] = {
+			["H3543"] = 50000,
+			["mr"] = 50000,
 		},
-		["Recipe: Roasted Kodo Meat"] = {
-			["H3537"] = 41820,
-			["mr"] = 41820,
-		},
-		["Pattern: Wizardweave Turban"] = {
-			["H3537"] = 1300000,
-			["mr"] = 1300000,
-		},
-		["Buccaneer's Orb of the Whale"] = {
-			["mr"] = 75988,
-			["cc"] = 4,
-			["id"] = "15912:0:0:1015:0",
-			["sc"] = 0,
-			["H3542"] = 75988,
-		},
-		["Jasper Link of Fire Resistance"] = {
-			["mr"] = 266030,
-			["H3539"] = 259999,
-			["L3543"] = 266030,
-			["H3540"] = 217688,
-			["id"] = "11978:0:0:1417:0",
-			["sc"] = 0,
-			["H3543"] = 517544,
-			["cc"] = 4,
-		},
-		["Bonecaster's Boots of the Falcon"] = {
-			["H3540"] = 102970,
-			["mr"] = 102970,
-			["H3539"] = 80856,
+		["Councillor's Pants of the Monkey"] = {
+			["H3540"] = 129000,
+			["mr"] = 129000,
 		},
 		["War Torn Tunic of the Bear"] = {
 			["H3540"] = 8000,
 			["mr"] = 8000,
 			["H3539"] = 9931,
 		},
-		["Foror's Compendium of Dragon Slaying"] = {
-			["H3540"] = 359997,
-			["H3539"] = 449999,
-			["mr"] = 359997,
+		["Red Woolen Bag"] = {
+			["mr"] = 2450,
+			["H3537"] = 5363,
+			["L3537"] = 2450,
 		},
-		["Overlord's Legplates of Strength"] = {
-			["mr"] = 47500,
-			["H3537"] = 100000,
-			["L3537"] = 47500,
+		["Infantry Tunic of the Bear"] = {
+			["H3543"] = 5500,
+			["mr"] = 5500,
 		},
-		["Arcanite Dragonling"] = {
-			["mr"] = 8999999,
-			["sc"] = 3,
-			["id"] = "16022:0:0:0:0",
-			["cc"] = 7,
-			["H3540"] = 8999999,
+		["Blackskull Shield"] = {
+			["H3543"] = 199500,
+			["mr"] = 199500,
 		},
-		["Jazeraint Belt of the Whale"] = {
-			["H3540"] = 13135,
-			["mr"] = 13135,
+		["Bonecaster's Boots of Arcane Wrath"] = {
+			["H3539"] = 136289,
+			["cc"] = 4,
+			["H3540"] = 142904,
+			["id"] = "14299:0:0:1815:0",
+			["sc"] = 1,
+			["mr"] = 142904,
 		},
 		["Supreme Cape of the Eagle"] = {
 			["H3540"] = 426533,
 			["mr"] = 426533,
 		},
-		["Shadoweave Robe"] = {
-			["H3540"] = 119999,
-			["mr"] = 119999,
-			["H3539"] = 119997,
+		["Topaz Ring of Nature Resistance"] = {
+			["H3537"] = 1800000,
+			["mr"] = 1800000,
 		},
 		["Sardonyx Knuckle of Arcane Resistance"] = {
 			["mr"] = 85000,
-			["sc"] = 0,
-			["id"] = "11976:0:0:1323:0",
 			["cc"] = 4,
 			["H3540"] = 85000,
+			["id"] = "11976:0:0:1323:0",
+			["sc"] = 0,
+		},
+		["Crocolisk Meat"] = {
+			["H3540"] = 336,
+			["H3539"] = 314,
+			["H3543"] = 325,
+			["mr"] = 325,
 		},
 		["Medallion of Grand Marshal Morris"] = {
 			["H3540"] = 48400,
 			["H3539"] = 80000,
-			["mr"] = 48400,
-		},
-		["Stonecutter Claymore of Strength"] = {
-			["mr"] = 49244,
-			["cc"] = 2,
-			["id"] = "3197:0:0:220:0",
-			["H3543"] = 49244,
-			["sc"] = 8,
+			["H3543"] = 46200,
+			["mr"] = 46200,
 		},
 		["Shimmering Cloak of Spirit"] = {
 			["H3537"] = 4000,
 			["mr"] = 4000,
 		},
-		["Commander's Girdle of the Bear"] = {
-			["H3540"] = 55800,
-			["mr"] = 55800,
+		["Bonecaster's Boots of the Falcon"] = {
+			["H3540"] = 102970,
+			["mr"] = 94417,
+			["H3543"] = 94417,
+			["H3539"] = 80856,
 		},
 		["Severing Axe of the Monkey"] = {
 			["H3537"] = 7163,
@@ -12681,138 +14933,137 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 24411,
 			["mr"] = 24411,
 		},
-		["Living Shoulders"] = {
-			["mr"] = 298999,
-			["H3539"] = 298999,
+		["Red Linen Shirt"] = {
+			["H3540"] = 14000,
+			["mr"] = 8800,
+			["H3543"] = 8800,
+			["H3539"] = 20198,
 		},
-		["Rugged Armor Kit"] = {
-			["H3540"] = 15023,
-			["mr"] = 15023,
+		["Pattern: Big Voodoo Mask"] = {
+			["H3540"] = 24600,
+			["mr"] = 24600,
 		},
 		["Indurium Ore"] = {
-			["mr"] = 233,
-			["cc"] = 7,
 			["H3539"] = 217,
+			["cc"] = 7,
+			["H3540"] = 215,
 			["id"] = "5833:0:0:0:0",
 			["sc"] = 0,
 			["H3543"] = 233,
-			["H3540"] = 215,
+			["mr"] = 233,
 		},
-		["Lord's Breastplate of the Wolf"] = {
-			["H3537"] = 46165,
-			["mr"] = 46165,
+		["Abyssal Scepter"] = {
+			["H3540"] = 1149999,
+			["H3539"] = 1047500,
+			["H3543"] = 1190000,
+			["mr"] = 1190000,
 		},
-		["Pridelord Halo"] = {
-			["H3537"] = 120000,
-			["mr"] = 120000,
+		["Native Branch of the Eagle"] = {
+			["H3537"] = 5000,
+			["mr"] = 5000,
 		},
-		["Bloodspattered Sabatons of the Monkey"] = {
-			["H3537"] = 5528,
-			["mr"] = 5528,
+		["Nightsky Trousers"] = {
+			["H3543"] = 5900,
+			["mr"] = 5900,
 		},
 		["Mageblood Potion"] = {
 			["H3540"] = 52108,
 			["H3539"] = 50937,
-			["mr"] = 52108,
+			["H3543"] = 53937,
+			["mr"] = 53937,
 		},
-		["Living Essence"] = {
-			["H3539"] = 11199,
-			["sc"] = 0,
-			["H3540"] = 13195,
-			["cc"] = 5,
-			["mr"] = 13195,
-			["id"] = "12803:0:0:0:0",
+		["Cindercloth Cloak"] = {
+			["H3540"] = 139997,
+			["mr"] = 199998,
+			["H3543"] = 199998,
+			["H3539"] = 159998,
 		},
 		["Devout Belt"] = {
 			["H3540"] = 61100,
 			["H3539"] = 50000,
-			["mr"] = 61100,
+			["H3543"] = 89500,
+			["mr"] = 89500,
 		},
-		["Abyssal Leather Leggings of Restoration"] = {
-			["mr"] = 295247,
-			["sc"] = 2,
-			["id"] = "20665:0:0:2156:0",
-			["H3537"] = 295247,
-			["cc"] = 4,
+		["Murloc Fin"] = {
+			["H3539"] = 159,
+			["mr"] = 159,
 		},
 		["Scroll: Create Crest of Beckoning"] = {
 			["H3540"] = 38999,
-			["mr"] = 38999,
+			["mr"] = 82382,
+			["H3543"] = 82382,
 			["H3539"] = 30000,
 		},
-		["Worn Dragonscale"] = {
-			["H3540"] = 885,
-			["H3539"] = 1455,
-			["mr"] = 885,
+		["Girdle of Golem Strength"] = {
+			["H3540"] = 72500,
+			["mr"] = 199998,
+			["H3543"] = 199998,
 		},
-		["Rough Arrow"] = {
-			["H3537"] = 439,
-			["mr"] = 439,
+		["Marsh Chain of Agility"] = {
+			["H3543"] = 29000,
+			["mr"] = 29000,
 		},
-		["Regal Leggings of the Owl"] = {
-			["H3540"] = 154000,
-			["mr"] = 154000,
+		["Brackwater Leggings"] = {
+			["H3543"] = 4000,
+			["mr"] = 4000,
+		},
+		["Glyphed Leggings"] = {
+			["H3540"] = 12497,
+			["mr"] = 14000,
+			["H3543"] = 14000,
+			["H3539"] = 19799,
 		},
 		["Ranger Cloak of Stamina"] = {
-			["mr"] = 15500,
 			["H3539"] = 15500,
+			["mr"] = 15500,
 		},
-		["Gothic Plate Spaulders of the Bear"] = {
-			["H3540"] = 25000,
-			["mr"] = 25000,
+		["Ritual Cape of the Whale"] = {
+			["H3543"] = 3400,
+			["mr"] = 3400,
 		},
-		["Superior Shoulders of the Owl"] = {
-			["H3537"] = 34647,
-			["mr"] = 34647,
-		},
-		["Sentinel Bracers of the Owl"] = {
-			["mr"] = 13957,
-			["cc"] = 4,
-			["id"] = "7447:0:0:764:0",
-			["sc"] = 2,
-			["H3542"] = 13957,
+		["Cloudkeeper Legplates"] = {
+			["H3537"] = 7999999,
+			["mr"] = 7999999,
 		},
 		["Percussion Shotgun of Marksmanship"] = {
 			["H3537"] = 70000,
 			["mr"] = 70000,
 		},
-		["Glowing Scorpid Blood"] = {
-			["H3540"] = 2141,
-			["H3539"] = 1998,
-			["mr"] = 2141,
+		["Dawn's Edge"] = {
+			["H3537"] = 2571563,
+			["mr"] = 2571563,
 		},
 		["Plans: Radiant Leggings"] = {
 			["H3540"] = 28600,
-			["mr"] = 28600,
+			["mr"] = 28200,
+			["H3543"] = 28200,
 			["H3539"] = 39799,
 		},
-		["Knight's Gauntlets of the Monkey"] = {
-			["mr"] = 16687,
-			["H3539"] = 16687,
+		["Defender Tunic of the Eagle"] = {
+			["H3537"] = 5944,
+			["mr"] = 5944,
 		},
-		["Pattern: Green Whelp Armor"] = {
-			["H3540"] = 10000,
-			["mr"] = 10000,
-			["H3539"] = 10200,
+		["Resplendent Cloak of the Owl"] = {
+			["H3543"] = 20000,
+			["mr"] = 20000,
 		},
-		["Light Silithid Carapace"] = {
-			["H3540"] = 5000,
-			["H3539"] = 2800,
-			["mr"] = 5000,
+		["Curved Dagger of Power"] = {
+			["mr"] = 5950,
+			["H3543"] = 5950,
+			["H3539"] = 2000,
 		},
-		["Buzzard Wing"] = {
-			["H3540"] = 795,
-			["H3539"] = 424,
-			["mr"] = 795,
+		["Schematic: Gnomish Universal Remote"] = {
+			["H3543"] = 19900,
+			["mr"] = 19900,
 		},
 		["Jagged Star of Power"] = {
 			["H3540"] = 7599,
 			["mr"] = 7599,
 			["H3539"] = 8113,
 		},
-		["Expert Fishing - The Bass and You"] = {
-			["H3540"] = 52535,
-			["mr"] = 52535,
+		["Recipe: Transmute Iron to Gold"] = {
+			["H3543"] = 37700,
+			["mr"] = 37700,
 		},
 		["Purple Dye"] = {
 			["H3540"] = 17064,
@@ -12821,303 +15072,326 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Heavy Brown Bag"] = {
 			["mr"] = 10000,
-			["cc"] = 1,
-			["id"] = "4497:0:0:0:0",
 			["sc"] = 0,
 			["H3540"] = 10000,
+			["id"] = "4497:0:0:0:0",
+			["cc"] = 1,
 		},
-		["Hot Spices"] = {
-			["H3537"] = 3166,
-			["mr"] = 3166,
+		["Light Leather"] = {
+			["H3539"] = 80,
+			["cc"] = 7,
+			["mr"] = 48,
+			["id"] = "2318:0:0:0:0",
+			["H3540"] = 142,
+			["H3543"] = 48,
+			["sc"] = 0,
 		},
-		["Embossed Plate Girdle of the Whale"] = {
-			["H3537"] = 13954,
-			["mr"] = 13954,
+		["White Linen Robe"] = {
+			["H3543"] = 5600,
+			["mr"] = 5600,
 		},
-		["Councillor's Pants of the Monkey"] = {
-			["H3540"] = 129000,
-			["mr"] = 129000,
+		["Nightshade Leggings of Healing"] = {
+			["H3543"] = 207689,
+			["mr"] = 207689,
 		},
-		["Dig Rat"] = {
-			["H3540"] = 11600,
-			["mr"] = 11600,
+		["Oily Blackmouth"] = {
+			["H3540"] = 5100,
+			["H3539"] = 5900,
+			["H3543"] = 4680,
+			["mr"] = 4680,
 		},
-		["Preserved Holly"] = {
-			["H3540"] = 4900,
-			["mr"] = 4900,
-			["H3539"] = 19899,
+		["Red Helper Box"] = {
+			["H3540"] = 66999,
+			["mr"] = 66999,
 		},
-		["Sweet Nectar"] = {
-			["mr"] = 427,
-			["H3537"] = 439,
-			["L3537"] = 427,
+		["Pattern: Runed Stygian Belt"] = {
+			["H3543"] = 300000,
+			["mr"] = 300000,
 		},
 		["Scroll of Strength III"] = {
 			["H3540"] = 1184,
 			["H3539"] = 1239,
-			["mr"] = 1184,
+			["H3543"] = 997,
+			["mr"] = 997,
 		},
 		["Archer's Trousers of the Eagle"] = {
 			["H3537"] = 19638,
 			["mr"] = 19638,
 		},
-		["Combatant Claymore"] = {
-			["mr"] = 222200,
-			["cc"] = 2,
-			["id"] = "2877:0:0:0:0",
-			["H3543"] = 222200,
-			["sc"] = 8,
-		},
-		["Ivycloth Gloves of the Owl"] = {
-			["H3540"] = 6500,
-			["mr"] = 6500,
-		},
-		["Raincaller Cord of Healing"] = {
-			["H3537"] = 13750,
-			["mr"] = 13750,
-		},
-		["Gauntlets of Ogre Strength"] = {
-			["H3537"] = 19999,
-			["mr"] = 19999,
-		},
-		["Raw Redgill"] = {
-			["H3540"] = 1234,
-			["H3539"] = 1260,
-			["mr"] = 1234,
-		},
-		["Pattern: Big Voodoo Robe"] = {
-			["H3540"] = 5498,
-			["H3539"] = 5400,
-			["mr"] = 5498,
-		},
-		["Pattern: Murloc Scale Breastplate"] = {
-			["H3540"] = 8900,
-			["H3539"] = 5500,
-			["mr"] = 8900,
-		},
-		["Recipe: Free Action Potion"] = {
-			["H3540"] = 8400,
-			["mr"] = 8400,
-			["H3539"] = 8554,
-		},
-		["Red Ribboned Wrapping Paper"] = {
-			["H3537"] = 24356,
-			["mr"] = 24356,
-		},
-		["Mail Combat Belt"] = {
-			["H3537"] = 4999,
-			["mr"] = 4999,
-		},
-		["Gyrochronatom"] = {
-			["H3540"] = 2500,
-			["mr"] = 2500,
-			["H3539"] = 22998,
-		},
-		["Stylish Green Shirt"] = {
-			["H3540"] = 7899,
-			["H3539"] = 29496,
-			["mr"] = 7899,
-		},
-		["Innervating Band"] = {
-			["H3540"] = 999916,
-			["mr"] = 999916,
-		},
-		["Hefty Battlehammer of the Eagle"] = {
-			["mr"] = 7900,
-			["H3539"] = 7900,
-		},
 		["Serpentine Sash"] = {
 			["H3539"] = 93111,
 			["cc"] = 4,
+			["mr"] = 70000,
 			["id"] = "13118:0:0:0:0",
 			["sc"] = 2,
-			["mr"] = 81413,
+			["H3543"] = 70000,
 			["H3542"] = 81413,
 		},
-		["Tender Wolf Meat"] = {
-			["H3540"] = 1579,
-			["H3539"] = 1995,
-			["mr"] = 1579,
+		["Weak Flux"] = {
+			["H3539"] = 2866,
+			["mr"] = 2866,
+		},
+		["Pattern: Guardian Armor"] = {
+			["H3540"] = 73933,
+			["mr"] = 73933,
+			["H3539"] = 73934,
+		},
+		["Iridescent Pearl"] = {
+			["H3540"] = 990,
+			["H3539"] = 1000,
+			["H3543"] = 1625,
+			["mr"] = 1625,
+		},
+		["Elixir of Demonslaying"] = {
+			["H3540"] = 39999,
+			["mr"] = 39999,
+		},
+		["Pattern: Red Linen Bag"] = {
+			["mr"] = 19700,
+			["cc"] = 9,
+			["id"] = "5771:0:0:0:0",
+			["sc"] = 2,
+			["H3542"] = 19700,
+		},
+		["Lunar Mantle of the Owl"] = {
+			["H3537"] = 96797,
+			["mr"] = 96797,
+		},
+		["Recipe: Free Action Potion"] = {
+			["H3540"] = 8400,
+			["mr"] = 14600,
+			["H3543"] = 14600,
+			["H3539"] = 8554,
+		},
+		["Amethyst Band of Shadow Resistance"] = {
+			["H3540"] = 20707,
+			["mr"] = 20707,
+		},
+		["Black Dragonscale Shoulders"] = {
+			["H3543"] = 2199999,
+			["mr"] = 2199999,
+		},
+		["Pattern: Robe of the Void"] = {
+			["H3540"] = 69999,
+			["mr"] = 38805,
+			["H3543"] = 38805,
+		},
+		["Opulent Robes of Frozen Wrath"] = {
+			["H3537"] = 463066,
+			["mr"] = 463066,
+		},
+		["Massive Battle Axe of the Whale"] = {
+			["H3540"] = 15000,
+			["mr"] = 5000,
+			["H3543"] = 5000,
+		},
+		["Merciless Gauntlets of the Monkey"] = {
+			["H3537"] = 120000,
+			["mr"] = 120000,
+		},
+		["Julie's Dagger"] = {
+			["H3540"] = 140000,
+			["H3539"] = 155000,
+			["mr"] = 140000,
+		},
+		["Bloodvine Vest"] = {
+			["H3540"] = 2257500,
+			["H3539"] = 1889500,
+			["H3543"] = 1990000,
+			["mr"] = 1990000,
 		},
 		["Heavy Grinding Stone"] = {
 			["H3537"] = 4499,
 			["mr"] = 4499,
 		},
-		["Elixir of the Mongoose"] = {
-			["H3540"] = 53000,
-			["H3539"] = 47774,
-			["mr"] = 53000,
+		["Silver-thread Amice"] = {
+			["H3543"] = 21600,
+			["mr"] = 21600,
 		},
-		["Scalping Tomahawk of Strength"] = {
-			["H3540"] = 9900,
-			["mr"] = 9900,
+		["Bloodspattered Gloves of the Gorilla"] = {
+			["H3543"] = 1749,
+			["mr"] = 1749,
 		},
 		["Mighty Spaulders of Nature's Wrath"] = {
 			["H3537"] = 477656,
 			["mr"] = 477656,
 		},
-		["Necklace of Harmony"] = {
-			["H3537"] = 50000,
-			["mr"] = 50000,
+		["Pattern: Greater Adept's Robe"] = {
+			["H3540"] = 19896,
+			["mr"] = 96622,
+			["H3543"] = 96622,
 		},
-		["Bright Belt"] = {
-			["H3540"] = 9999,
-			["H3539"] = 42498,
-			["mr"] = 9999,
+		["Sentinel Girdle of the Monkey"] = {
+			["H3537"] = 20000,
+			["mr"] = 20000,
 		},
 		["Elder's Padded Armor of Stamina"] = {
-			["mr"] = 16098,
+			["mr"] = 21298,
+			["H3543"] = 21298,
 			["H3539"] = 16098,
 		},
-		["Recipe: Elixir of Giants"] = {
-			["H3540"] = 39499,
-			["H3539"] = 45530,
-			["mr"] = 39499,
+		["Commander's Vambraces of Nature Resistance"] = {
+			["H3539"] = 2500000,
+			["mr"] = 2500000,
 		},
 		["Monk's Staff of the Boar"] = {
 			["H3540"] = 18600,
 			["mr"] = 18600,
 		},
-		["Phalanx Breastplate of Strength"] = {
-			["H3537"] = 12049,
-			["mr"] = 12049,
+		["Schematic: Masterwork Target Dummy"] = {
+			["H3540"] = 20000,
+			["H3539"] = 105993,
+			["H3543"] = 89500,
+			["mr"] = 89500,
 		},
-		["Pads of the Venom Spider"] = {
-			["H3540"] = 100000,
-			["mr"] = 100000,
+		["Amber Hoop of Nature Resistance"] = {
+			["H3543"] = 190000,
+			["mr"] = 190000,
 		},
-		["Wrangler's Belt of Defense"] = {
-			["H3537"] = 15934,
-			["mr"] = 15934,
+		["Rigid Cape of the Owl"] = {
+			["H3543"] = 10000,
+			["mr"] = 10000,
 		},
-		["Poached Sunscale Salmon"] = {
-			["H3539"] = 1460,
-			["mr"] = 1460,
+		["Barbed Club of Power"] = {
+			["H3543"] = 4600,
+			["mr"] = 4600,
 		},
-		["Razor's Edge"] = {
-			["H3537"] = 155974,
-			["mr"] = 155974,
+		["Superior Boots of the Eagle"] = {
+			["H3543"] = 16300,
+			["mr"] = 16300,
 		},
-		["Venomshroud Leggings"] = {
-			["H3540"] = 129999,
-			["mr"] = 129999,
-			["H3539"] = 159999,
+		["Vorpal Dagger of the Monkey"] = {
+			["H3543"] = 40000,
+			["mr"] = 40000,
 		},
-		["Abyssal Leather Leggings of Striking"] = {
-			["H3539"] = 148400,
-			["sc"] = 2,
-			["H3540"] = 270000,
+		["Flarecore Mantle"] = {
+			["H3539"] = 2319999,
 			["cc"] = 4,
-			["mr"] = 270000,
-			["id"] = "20665:0:0:2157:0",
+			["id"] = "16980:0:0:0:0",
+			["sc"] = 1,
+			["H3543"] = 2320000,
+			["mr"] = 2320000,
 		},
 		["Bloodscalp Coin"] = {
 			["H3540"] = 3315,
 			["H3539"] = 3299,
-			["mr"] = 3315,
+			["H3543"] = 2400,
+			["mr"] = 2400,
 		},
-		["Umbral Wand of the Gorilla"] = {
-			["H3540"] = 20000,
-			["mr"] = 20000,
+		["Abyssal Leather Leggings of Striking"] = {
+			["H3539"] = 148400,
+			["cc"] = 4,
+			["mr"] = 258999,
+			["id"] = "20665:0:0:2157:0",
+			["H3540"] = 270000,
+			["H3543"] = 258999,
+			["sc"] = 2,
 		},
-		["Greenweave Bracers of the Owl"] = {
-			["H3537"] = 9900,
-			["mr"] = 9900,
+		["Gaea's Cloak of Shadow Wrath"] = {
+			["H3540"] = 50000,
+			["mr"] = 50000,
 		},
-		["Mystical Armor of the Eagle"] = {
-			["H3537"] = 250000,
-			["mr"] = 250000,
+		["Pagan Mitts of Spirit"] = {
+			["H3543"] = 50421,
+			["mr"] = 50421,
 		},
 		["Solid Grinding Stone"] = {
-			["mr"] = 5000,
-			["H3537"] = 5800,
-			["L3537"] = 5000,
+			["H3543"] = 5999,
+			["mr"] = 5999,
 		},
-		["Thorium Widget"] = {
-			["H3540"] = 6200,
-			["H3539"] = 6478,
-			["mr"] = 6200,
+		["Bonecaster's Belt of the Whale"] = {
+			["H3540"] = 33419,
+			["mr"] = 33419,
 		},
-		["Wyrmslayer Spaulders"] = {
-			["H3540"] = 67499,
-			["mr"] = 67499,
+		["Shadowcraft Belt"] = {
+			["H3540"] = 248000,
+			["H3539"] = 159999,
+			["H3543"] = 191078,
+			["mr"] = 191078,
 		},
-		["Soft Bushy Tail"] = {
-			["H3540"] = 6500,
-			["H3539"] = 10000,
-			["mr"] = 6500,
+		["Elixir of Detect Undead"] = {
+			["H3540"] = 897,
+			["H3539"] = 920,
+			["H3543"] = 692,
+			["mr"] = 692,
 		},
 		["Warbringer's Legguards of the Bear"] = {
 			["H3537"] = 29800,
 			["mr"] = 29800,
 		},
-		["Commander's Gauntlets of the Bear"] = {
-			["H3540"] = 34700,
-			["mr"] = 34700,
+		["Mystical Cape of the Owl"] = {
+			["H3537"] = 44000,
+			["mr"] = 44000,
 		},
 		["Emblazoned Shoulders"] = {
 			["H3537"] = 10914,
 			["mr"] = 10914,
+		},
+		["Tome of Arcane Brilliance"] = {
+			["H3539"] = 19999,
+			["cc"] = 9,
+			["H3540"] = 19799,
+			["id"] = "18600:0:0:0:0",
+			["sc"] = 0,
+			["mr"] = 19799,
+		},
+		["Jouster's Gauntlets"] = {
+			["H3543"] = 14400,
+			["mr"] = 14400,
+		},
+		["Councillor's Pants of Fiery Wrath"] = {
+			["H3537"] = 200000,
+			["mr"] = 200000,
+		},
+		["Master's Cloak of Intellect"] = {
+			["H3537"] = 100000,
+			["mr"] = 100000,
 		},
 		["Flurry Axe"] = {
 			["H3540"] = 3560000,
 			["H3539"] = 3669999,
 			["mr"] = 3560000,
 		},
-		["Blacksmith Hammer"] = {
-			["mr"] = 8851,
-			["H3539"] = 8851,
-		},
-		["Imperial Leather Breastplate"] = {
-			["mr"] = 51702,
-			["sc"] = 2,
-			["id"] = "6430:0:0:0:0",
-			["H3537"] = 51702,
-			["cc"] = 4,
-		},
-		["Master's Cloak of Intellect"] = {
-			["H3537"] = 100000,
-			["mr"] = 100000,
-		},
-		["Ridge Cleaver of the Bear"] = {
-			["H3540"] = 40000,
-			["mr"] = 40000,
-		},
 		["Elegant Mantle of the Whale"] = {
 			["H3540"] = 69999,
 			["mr"] = 69999,
 		},
-		["Bristlebark Britches"] = {
-			["mr"] = 7000,
-			["H3539"] = 7000,
+		["Venomshroud Mask"] = {
+			["H3537"] = 100000,
+			["mr"] = 100000,
 		},
 		["Beaded Britches of Healing"] = {
 			["H3537"] = 1200,
 			["mr"] = 1200,
 		},
-		["Ironweaver"] = {
-			["mr"] = 89999,
-			["H3539"] = 89999,
+		["Barbed Club of Nature's Wrath"] = {
+			["H3543"] = 3100,
+			["mr"] = 3100,
 		},
-		["Nightscape Shoulders"] = {
-			["H3537"] = 39999,
-			["mr"] = 39999,
+		["Chieftain's Gloves of the Whale"] = {
+			["H3537"] = 25600,
+			["mr"] = 25600,
 		},
-		["Sacrificial Kris of Power"] = {
-			["H3537"] = 55090,
-			["mr"] = 55090,
+		["Pattern: Frostsaber Leggings"] = {
+			["H3540"] = 6433,
+			["H3539"] = 8596,
+			["mr"] = 6433,
 		},
-		["Lady Alizabeth's Pendant"] = {
-			["mr"] = 203000,
-			["H3539"] = 203000,
+		["Gem-studded Leather Belt"] = {
+			["H3539"] = 94998,
+			["sc"] = 2,
+			["id"] = "4262:0:0:0:0",
+			["mr"] = 94998,
+			["cc"] = 4,
 		},
-		["Axe of Rin'ji"] = {
-			["mr"] = 199500,
-			["H3539"] = 199500,
+		["Searing Blade"] = {
+			["H3540"] = 99998,
+			["mr"] = 99999,
+			["H3543"] = 99999,
 		},
-		["Diviner Long Staff of the Bear"] = {
-			["H3537"] = 150000,
-			["mr"] = 150000,
+		["Regal Cuffs of Fiery Wrath"] = {
+			["H3543"] = 19000,
+			["mr"] = 19000,
 		},
 		["Swift Boots"] = {
 			["H3540"] = 219909,
@@ -13127,127 +15401,121 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 300000,
 			["mr"] = 300000,
 		},
-		["Venomshroud Cape"] = {
-			["H3540"] = 27000,
-			["mr"] = 27000,
+		["Tuxedo Pants"] = {
+			["H3540"] = 72555,
+			["mr"] = 75999,
+			["H3543"] = 75999,
 		},
-		["Bloodspattered Loincloth of the Bear"] = {
-			["H3540"] = 6031,
-			["mr"] = 6031,
-			["H3539"] = 6031,
+		["Beaded Orb of Fiery Wrath"] = {
+			["H3543"] = 4000,
+			["mr"] = 4000,
 		},
-		["Warbringer's Sabatons  of the Bear"] = {
-			["H3540"] = 11552,
-			["mr"] = 11552,
+		["Guild Tabard"] = {
+			["mr"] = 75248,
+			["cc"] = 4,
+			["H3540"] = 75248,
+			["id"] = "5976:0:0:0:0",
+			["sc"] = 0,
+		},
+		["Basalt Ring of the Gorilla"] = {
+			["H3543"] = 34721,
+			["mr"] = 34721,
+		},
+		["Marsh Ring of the Monkey"] = {
+			["H3543"] = 41500,
+			["mr"] = 41500,
 		},
 		["Three of Elementals"] = {
-			["mr"] = 32955,
+			["mr"] = 169998,
+			["H3543"] = 169998,
 			["H3539"] = 32955,
 		},
-		["Sentinel Cap of the Wolf"] = {
-			["mr"] = 42168,
-			["cc"] = 4,
-			["id"] = "7441:0:0:526:0",
-			["sc"] = 2,
-			["H3542"] = 42168,
-		},
-		["Recipe: Dragonbreath Chili"] = {
-			["H3540"] = 77016,
-			["mr"] = 77016,
-			["H3539"] = 77019,
-		},
-		["Simple Wood"] = {
-			["H3537"] = 905,
-			["mr"] = 905,
+		["Copper Tube"] = {
+			["H3543"] = 2500,
+			["mr"] = 2500,
 		},
 		["High Councillor's Boots of the Eagle"] = {
-			["H3537"] = 150000,
-			["mr"] = 150000,
+			["H3543"] = 149999,
+			["mr"] = 149999,
 		},
 		["Twilight Belt of the Whale"] = {
 			["H3537"] = 9950,
 			["mr"] = 9950,
 		},
-		["Recipe: Rainbow Fin Albacore"] = {
-			["H3540"] = 8499,
-			["mr"] = 8499,
+		["Councillor's Sash of the Eagle"] = {
+			["H3537"] = 47299,
+			["mr"] = 47299,
 		},
-		["Ornate Pauldrons of the Wolf"] = {
-			["H3537"] = 70000,
-			["mr"] = 70000,
-		},
-		["Iron Grenade"] = {
-			["H3540"] = 2898,
-			["mr"] = 2898,
-			["H3539"] = 2978,
-		},
-		["Spider Belt"] = {
-			["mr"] = 118036,
-			["H3539"] = 118036,
-		},
-		["Relic Coffer Key"] = {
-			["H3540"] = 1980,
-			["mr"] = 1980,
-			["H3539"] = 2399,
-		},
-		["Gryphon Mail Bracelets of the Eagle"] = {
-			["H3537"] = 120902,
-			["mr"] = 120902,
-		},
-		["Smoothbore Gun"] = {
-			["H3539"] = 15048,
-			["sc"] = 3,
-			["id"] = "15322:0:0:0:0",
-			["mr"] = 10530,
-			["H3543"] = 10530,
-			["cc"] = 2,
-		},
-		["Chief Brigadier Bracers"] = {
-			["H3539"] = 7499,
-			["mr"] = 7499,
-		},
-		["Sandworm Meat"] = {
-			["H3540"] = 19600,
-			["H3539"] = 20699,
-			["mr"] = 19600,
-		},
-		["Light Bow"] = {
-			["H3540"] = 3199,
-			["mr"] = 3199,
-		},
-		["Jeweled Amulet of Cainwyn"] = {
-			["H3540"] = 880000,
-			["H3539"] = 990000,
-			["mr"] = 880000,
-		},
-		["Stonescale Eel"] = {
-			["H3540"] = 12800,
-			["mr"] = 12800,
-			["H3539"] = 11000,
-		},
-		["Superior Gloves of the Eagle"] = {
-			["mr"] = 9000,
-			["sc"] = 2,
-			["H3529"] = 9000,
-			["id"] = "9806:0:0:848:0",
+		["Nightsky Gloves"] = {
+			["mr"] = 9900,
 			["cc"] = 4,
+			["id"] = "4040:0:0:0:0",
+			["sc"] = 1,
+			["H3529"] = 9900,
+		},
+		["Green Hills of Stranglethorn - Page 26"] = {
+			["H3540"] = 790,
+			["H3539"] = 2869,
+			["H3543"] = 2774,
+			["mr"] = 2774,
+		},
+		["Conjurer's Bracers of Healing"] = {
+			["H3537"] = 20000,
+			["mr"] = 20000,
+		},
+		["Royal Cape of Shadow Wrath"] = {
+			["H3543"] = 100000,
+			["mr"] = 100000,
+		},
+		["Scorpion Sting"] = {
+			["mr"] = 80000,
+			["cc"] = 2,
+			["id"] = "1265:0:0:0:0",
+			["sc"] = 7,
+			["H3542"] = 80000,
+		},
+		["War Torn Tunic of Stamina"] = {
+			["H3543"] = 2300,
+			["mr"] = 2300,
+		},
+		["Archer's Longbow"] = {
+			["H3537"] = 8080,
+			["mr"] = 8080,
+		},
+		["Bloodforged Gauntlets of Power"] = {
+			["H3537"] = 30000,
+			["mr"] = 30000,
+		},
+		["Twilight Cape of Healing"] = {
+			["H3537"] = 9900,
+			["mr"] = 9900,
+		},
+		["Bloodpike"] = {
+			["H3543"] = 61000,
+			["mr"] = 61000,
+		},
+		["Quillward Harness"] = {
+			["H3537"] = 2501232,
+			["mr"] = 2501232,
+		},
+		["High Councillor's Bracers of Fiery Wrath"] = {
+			["H3540"] = 249000,
+			["mr"] = 129998,
+			["H3543"] = 129998,
+			["H3539"] = 349997,
 		},
 		["Rugged Spaulders"] = {
 			["H3540"] = 13127,
-			["mr"] = 13127,
+			["mr"] = 12999,
+			["H3543"] = 12999,
 		},
-		["Flint and Tinder"] = {
-			["mr"] = 9233,
-			["cc"] = 5,
-			["id"] = "4471:0:0:0:0",
-			["sc"] = 0,
-			["H3539"] = 9483,
-			["H3542"] = 9233,
+		["Revenant Bracers of Stamina"] = {
+			["H3543"] = 40000,
+			["mr"] = 40000,
 		},
-		["Magic Resistance Potion"] = {
-			["H3540"] = 9751,
-			["mr"] = 9751,
-			["H3539"] = 11497,
+		["Plans: Dazzling Mithril Rapier"] = {
+			["mr"] = 7100,
+			["H3539"] = 7100,
 		},
 		["Mystical Mantle of the Eagle"] = {
 			["H3537"] = 50000,
@@ -13257,52 +15525,54 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3540"] = 7082,
 			["mr"] = 7082,
 		},
-		["Windweaver Staff"] = {
-			["mr"] = 140000,
-			["H3539"] = 140000,
+		["Swashbuckler's Leggings of Agility"] = {
+			["H3539"] = 50000,
+			["mr"] = 50000,
 		},
-		["Pattern: White Bandit Mask"] = {
-			["H3540"] = 29599,
-			["mr"] = 29599,
+		["Royal Trousers of the Eagle"] = {
+			["H3543"] = 19800,
+			["mr"] = 19800,
 		},
-		["Gloomshroud Armor"] = {
-			["H3537"] = 32125,
-			["mr"] = 32125,
+		["Mug O' Hurt"] = {
+			["H3540"] = 2500000,
+			["mr"] = 598999,
+			["H3543"] = 598999,
+			["H3539"] = 74999,
 		},
-		["Pattern: Stylish Blue Shirt"] = {
-			["mr"] = 7000,
-			["H3539"] = 7000,
+		["Nightshade Girdle of the Bear"] = {
+			["H3537"] = 40000,
+			["mr"] = 40000,
 		},
-		["Kolkar Booty Key"] = {
-			["mr"] = 14626,
-			["H3539"] = 14626,
+		["Frenzied Striker"] = {
+			["H3540"] = 149999,
+			["mr"] = 199899,
+			["H3543"] = 199899,
+			["H3539"] = 220000,
 		},
 		["Burnished Bracers"] = {
 			["H3537"] = 4900,
 			["mr"] = 4900,
 		},
-		["Swiftness Potion"] = {
-			["H3540"] = 9700,
-			["H3539"] = 14198,
-			["mr"] = 9700,
+		["Lunar Handwraps of the Owl"] = {
+			["H3537"] = 57048,
+			["mr"] = 57048,
 		},
-		["Libram of Constitution"] = {
-			["H3540"] = 954998,
-			["mr"] = 954998,
-			["H3539"] = 1002500,
+		["17 Pound Catfish"] = {
+			["H3540"] = 11800,
+			["mr"] = 1990,
+			["H3543"] = 1990,
 		},
 		["Ultrasafe Transporter: Gadgetzan"] = {
 			["H3537"] = 844200,
 			["mr"] = 844200,
 		},
-		["Greater Nature Protection Potion"] = {
-			["H3540"] = 52500,
-			["H3539"] = 58999,
-			["mr"] = 52500,
+		["Superior Leggings of the Owl"] = {
+			["H3543"] = 25000,
+			["mr"] = 25000,
 		},
-		["Truesilver Transformer"] = {
-			["H3539"] = 229997,
-			["mr"] = 229997,
+		["Razor Axe of Stamina"] = {
+			["H3537"] = 620880,
+			["mr"] = 620880,
 		},
 		["Engineer's Ink"] = {
 			["H3537"] = 7000,
@@ -13310,122 +15580,117 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Ancestral Tunic"] = {
 			["H3540"] = 5400,
-			["mr"] = 5400,
+			["mr"] = 5228,
+			["H3543"] = 5228,
 			["H3539"] = 5589,
 		},
-		["Greater Mana Potion"] = {
-			["mr"] = 1985,
-			["cc"] = 0,
-			["id"] = "6149:0:0:0:0",
-			["H3539"] = 1666,
-			["sc"] = 0,
-			["H3540"] = 1985,
+		["Regal Robe of the Owl"] = {
+			["H3543"] = 32416,
+			["mr"] = 32416,
 		},
-		["Silk Bandage"] = {
-			["H3540"] = 595,
-			["mr"] = 595,
+		["Resplendent Belt of the Owl"] = {
+			["H3539"] = 79397,
+			["mr"] = 79397,
 		},
 		["Dense Stone"] = {
 			["H3540"] = 710,
-			["mr"] = 710,
+			["mr"] = 1285,
+			["H3543"] = 1285,
 			["H3539"] = 725,
 		},
-		["Sanguine Sandals"] = {
-			["H3537"] = 47900,
-			["mr"] = 47900,
+		["Pattern: Herbalist's Gloves"] = {
+			["mr"] = 5000900,
+			["H3539"] = 5000900,
 		},
 		["Morrowgrain"] = {
 			["H3540"] = 6800,
 			["H3539"] = 6800,
 			["mr"] = 6800,
 		},
-		["Ace of Elementals"] = {
-			["H3540"] = 19200,
-			["H3539"] = 19199,
-			["mr"] = 19200,
+		["Greater Mana Potion"] = {
+			["H3539"] = 1666,
+			["cc"] = 0,
+			["sc"] = 0,
+			["H3540"] = 1985,
+			["id"] = "6149:0:0:0:0",
+			["H3543"] = 4500,
+			["mr"] = 4500,
 		},
 		["Spotted Yellowtail"] = {
-			["H3537"] = 1000,
-			["mr"] = 1000,
+			["H3543"] = 1260,
+			["mr"] = 1260,
 		},
 		["Elementium Ore"] = {
-			["mr"] = 637942,
-			["sc"] = 0,
-			["id"] = "18562:0:0:0:0",
+			["mr"] = 637941,
 			["cc"] = 7,
-			["H3543"] = 637942,
+			["L3543"] = 637941,
 			["H3540"] = 925000,
+			["id"] = "18562:0:0:0:0",
+			["H3543"] = 637942,
+			["sc"] = 0,
 		},
 		["Schematic: Mithril Mechanical Dragonling"] = {
 			["H3540"] = 79499,
-			["mr"] = 79499,
+			["mr"] = 159989,
+			["H3543"] = 159989,
 		},
-		["Woolen Bag"] = {
-			["mr"] = 4300,
-			["cc"] = 1,
-			["H3540"] = 4500,
-			["sc"] = 0,
-			["id"] = "4240:0:0:0:0",
-			["H3542"] = 4300,
+		["Gryphon Cloak of Agility"] = {
+			["H3543"] = 12999,
+			["mr"] = 12999,
 		},
 		["Twig of the World Tree"] = {
-			["H3537"] = 679055,
-			["mr"] = 679055,
+			["H3543"] = 199500,
+			["mr"] = 199500,
 		},
-		["Valorous Helm"] = {
-			["H3537"] = 69470,
-			["mr"] = 69470,
+		["Pattern: Ghostweave Gloves"] = {
+			["mr"] = 26000,
+			["cc"] = 9,
+			["id"] = "14477:0:0:0:0",
+			["sc"] = 2,
+			["H3529"] = 26000,
 		},
-		["Buccaneer's Orb of the Owl"] = {
-			["mr"] = 20000,
-			["cc"] = 4,
-			["id"] = "15912:0:0:760:0",
-			["sc"] = 0,
-			["H3542"] = 20000,
+		["Clamlette Surprise"] = {
+			["H3543"] = 5603,
+			["mr"] = 5603,
 		},
 		["Elegant Boots of Arcane Wrath"] = {
 			["H3537"] = 50000,
 			["mr"] = 50000,
+		},
+		["Wastewander Water Pouch"] = {
+			["H3540"] = 2998,
+			["mr"] = 2998,
+			["H3539"] = 9983,
 		},
 		["Acrobatic Staff of the Owl"] = {
 			["H3540"] = 36163,
 			["mr"] = 36163,
 			["H3539"] = 32800,
 		},
-		["Amethyst Band of Fire Resistance"] = {
-			["mr"] = 20000,
-			["L3543"] = 20000,
-			["cc"] = 4,
-			["H3540"] = 110000,
-			["id"] = "11971:0:0:1410:0",
-			["H3543"] = 54500,
-			["sc"] = 0,
-		},
-		["Recipe: Poached Sunscale Salmon"] = {
-			["H3539"] = 79998,
-			["mr"] = 79998,
+		["Sorcerer Hat of the Owl"] = {
+			["H3539"] = 26635,
+			["mr"] = 26635,
 		},
 		["Essence of Earth"] = {
 			["H3539"] = 33000,
-			["sc"] = 0,
-			["H3540"] = 16478,
 			["cc"] = 5,
-			["mr"] = 16478,
+			["mr"] = 13600,
 			["id"] = "7076:0:0:0:0",
+			["H3540"] = 16478,
+			["H3543"] = 13600,
+			["sc"] = 0,
 		},
-		["Forest Hoop of the Tiger"] = {
-			["H3537"] = 99999,
-			["mr"] = 99999,
+		["Forgotten Wraps"] = {
+			["H3537"] = 155181,
+			["mr"] = 155181,
 		},
-		["Renegade Pauldrons of the Whale"] = {
-			["H3540"] = 12000,
-			["mr"] = 12000,
-			["H3539"] = 50000,
+		["Alabaster Breastplate"] = {
+			["H3537"] = 47884,
+			["mr"] = 47884,
 		},
-		["Small Egg"] = {
-			["H3540"] = 1670,
-			["mr"] = 1670,
-			["H3539"] = 1655,
+		["Plans: Deadly Bronze Poniard"] = {
+			["H3543"] = 14400,
+			["mr"] = 14400,
 		},
 		["Colossal Great Axe of Agility"] = {
 			["H3537"] = 126886,
@@ -13433,123 +15698,134 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Iron Strut"] = {
 			["H3540"] = 29999,
-			["mr"] = 29999,
+			["mr"] = 28999,
+			["H3543"] = 28999,
 		},
-		["Mystical Cape of the Owl"] = {
-			["H3537"] = 44000,
-			["mr"] = 44000,
+		["Twilight Pants of Fiery Wrath"] = {
+			["H3543"] = 20186,
+			["mr"] = 20186,
 		},
-		["Elegant Boots of the Eagle"] = {
-			["H3537"] = 147312,
-			["mr"] = 147312,
+		["Recipe: Major Rejuvenation Potion"] = {
+			["H3537"] = 1710000,
+			["mr"] = 1710000,
 		},
-		["Eight of Elementals"] = {
-			["H3540"] = 296000,
-			["H3539"] = 299999,
-			["mr"] = 296000,
+		["Superior Gloves of the Eagle"] = {
+			["mr"] = 9000,
+			["cc"] = 4,
+			["id"] = "9806:0:0:848:0",
+			["sc"] = 2,
+			["H3529"] = 9000,
 		},
-		["Flarecore Wraps"] = {
-			["H3537"] = 5698942,
-			["mr"] = 5698942,
+		["Raw Sunscale Salmon"] = {
+			["mr"] = 492,
+			["H3539"] = 492,
 		},
-		["Wild Leather Vest of the Owl"] = {
-			["mr"] = 33333,
-			["H3539"] = 33333,
+		["Dervish Cape of the Monkey"] = {
+			["H3539"] = 22500,
+			["mr"] = 22500,
 		},
 		["Giantslayer Bracers"] = {
 			["H3537"] = 190000,
 			["mr"] = 190000,
 		},
-		["Elegant Circlet of Shadow Resistance"] = {
-			["mr"] = 500000,
-			["H3539"] = 500000,
+		["Boots of Avoidance"] = {
+			["H3540"] = 439000,
+			["mr"] = 199498,
+			["H3543"] = 199498,
+			["H3539"] = 439998,
 		},
 		["Quicksilver Pendant of the Owl"] = {
 			["H3540"] = 54400,
 			["mr"] = 54400,
 		},
-		["Tribal Vest"] = {
-			["H3540"] = 5570,
-			["mr"] = 5570,
-			["H3539"] = 5570,
+		["Major Healing Potion"] = {
+			["H3540"] = 10200,
+			["mr"] = 13000,
+			["H3543"] = 13000,
+			["H3539"] = 9999,
 		},
-		["Pattern: Fine Leather Gloves"] = {
-			["mr"] = 1049,
-			["cc"] = 9,
-			["id"] = "2408:0:0:0:0",
-			["H3540"] = 1049,
-			["sc"] = 1,
+		["Amethyst Band of Nature Resistance"] = {
+			["mr"] = 493300,
+			["H3539"] = 493300,
 		},
 		["Chieftain's Shoulders of Agility"] = {
-			["mr"] = 30000,
 			["H3539"] = 30000,
+			["mr"] = 30000,
 		},
 		["Wolf Rider's Headgear of Intellect"] = {
-			["mr"] = 60000,
 			["H3539"] = 60000,
+			["mr"] = 60000,
 		},
-		["Recipe: Greater Arcane Elixir"] = {
-			["mr"] = 7500000,
-			["cc"] = 9,
-			["H3540"] = 7500000,
-			["H3539"] = 7530000,
-			["id"] = "13493:0:0:0:0",
-			["sc"] = 6,
+		["Conjurer's Mantle of the Eagle"] = {
+			["H3543"] = 10000,
+			["mr"] = 10000,
 		},
-		["Celestial Pauldrons of Frozen Wrath"] = {
-			["mr"] = 90000,
-			["H3537"] = 100000,
-			["L3537"] = 90000,
+		["Ultra-Flash Shadow Reflector"] = {
+			["H3540"] = 1849999,
+			["mr"] = 1179998,
+			["H3543"] = 1179998,
+			["H3539"] = 1999997,
 		},
-		["Pattern: Cindercloth Cloak"] = {
-			["H3540"] = 696500,
-			["mr"] = 696500,
+		["Four of Beasts"] = {
+			["H3540"] = 49800,
+			["H3539"] = 72500,
+			["H3543"] = 42600,
+			["mr"] = 42600,
 		},
 		["Buccaneer's Pants of the Eagle"] = {
-			["mr"] = 8500,
 			["H3539"] = 8500,
+			["mr"] = 8500,
 		},
-		["Recipe: Goblin Rocket Fuel"] = {
-			["mr"] = 99999,
-			["H3539"] = 99999,
+		["Pattern: Runic Leather Pants"] = {
+			["H3539"] = 13992,
+			["cc"] = 9,
+			["mr"] = 11740,
+			["id"] = "15765:0:0:0:0",
+			["H3540"] = 12998,
+			["H3543"] = 11740,
+			["sc"] = 1,
 		},
 		["Shredder Operating Manual - Page 8"] = {
-			["H3539"] = 1106,
 			["sc"] = 0,
+			["H3539"] = 1106,
 			["cc"] = 15,
-			["H3540"] = 2525,
 			["id"] = "16652:0:0:0:0",
-			["mr"] = 2399,
+			["H3540"] = 2525,
+			["mr"] = 1870,
+			["H3543"] = 1870,
 			["H3542"] = 2399,
 		},
-		["Conjurer's Sphere of the Owl"] = {
-			["H3537"] = 26269,
-			["mr"] = 26269,
+		["Winterfall Firewater"] = {
+			["H3540"] = 61000,
+			["H3539"] = 60000,
+			["H3543"] = 62995,
+			["mr"] = 62995,
 		},
-		["Volcanic Leggings"] = {
-			["H3537"] = 332187,
-			["mr"] = 332187,
+		["Plans: Radiant Boots"] = {
+			["mr"] = 8000,
+			["H3543"] = 8000,
+			["H3539"] = 8458,
 		},
 		["Formula: Smoking Heart of the Mountain"] = {
 			["mr"] = 54499,
 			["H3537"] = 55000,
 			["L3537"] = 54499,
 		},
-		["Formula: Enchant Shield - Stamina"] = {
-			["H3540"] = 23399,
-			["mr"] = 23399,
+		["Bandit Gloves of the Owl"] = {
+			["H3543"] = 13421,
+			["mr"] = 13421,
 		},
-		["Wizard's Hand of Fiery Wrath"] = {
-			["mr"] = 249999,
-			["H3539"] = 249999,
+		["Grizzly Buckler of the Owl"] = {
+			["H3543"] = 5900,
+			["mr"] = 5900,
 		},
-		["Jazeraint Bracers of the Gorilla"] = {
-			["H3537"] = 18107,
-			["mr"] = 18107,
+		["Heavy Stock"] = {
+			["H3537"] = 22325,
+			["mr"] = 22325,
 		},
-		["Mystical Headwrap of Shadow Wrath"] = {
-			["H3537"] = 100000,
-			["mr"] = 100000,
+		["Sparkleshell Belt of the Boar"] = {
+			["H3543"] = 6900,
+			["mr"] = 6900,
 		},
 		["Severing Axe of the Whale"] = {
 			["H3537"] = 5000,
@@ -13564,34 +15840,38 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3540"] = 72520,
 			["mr"] = 72520,
 		},
-		["High Councillor's Sash of the Eagle"] = {
-			["H3537"] = 60000,
-			["mr"] = 60000,
+		["Northern Shortsword of Power"] = {
+			["H3543"] = 9400,
+			["mr"] = 9400,
 		},
-		["Pilferer's Gloves"] = {
-			["H3537"] = 222520,
-			["mr"] = 222520,
+		["Recipe: Hot Smoked Bass"] = {
+			["mr"] = 79999,
+			["H3543"] = 79999,
+			["H3539"] = 97000,
 		},
-		["Refined Deeprock Salt"] = {
-			["H3540"] = 134000,
-			["mr"] = 134000,
-			["H3539"] = 139500,
+		["Elder's Sash of Fiery Wrath"] = {
+			["H3539"] = 9999,
+			["mr"] = 9999,
 		},
-		["Burnished Boots"] = {
-			["H3537"] = 5600,
-			["mr"] = 5600,
+		["Battleforge Armor of the Bear"] = {
+			["H3540"] = 9535,
+			["mr"] = 10000,
+			["H3543"] = 10000,
 		},
-		["Sorcerer Cloak of the Whale"] = {
-			["H3537"] = 128000,
-			["mr"] = 128000,
+		["Oak Mallet of the Eagle"] = {
+			["H3543"] = 6000,
+			["mr"] = 6000,
 		},
-		["Bleach"] = {
-			["H3537"] = 5505,
-			["mr"] = 5505,
+		["Ridge Cleaver of Strength"] = {
+			["H3543"] = 12400,
+			["mr"] = 12400,
 		},
-		["Lunar Mantle of Arcane Wrath"] = {
-			["H3537"] = 50000,
-			["mr"] = 50000,
+		["Barbaric Cloth Robe"] = {
+			["mr"] = 3900,
+			["sc"] = 1,
+			["H3540"] = 3900,
+			["id"] = "6531:0:0:0:0",
+			["cc"] = 4,
 		},
 		["Soldier's Armor of Strength"] = {
 			["H3540"] = 3850,
@@ -13599,36 +15879,32 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3539"] = 3900,
 		},
 		["Superior Cloak of the Monkey"] = {
-			["mr"] = 35000,
 			["H3539"] = 35000,
+			["mr"] = 35000,
 		},
-		["Cenarion Bracers"] = {
-			["H3540"] = 297999,
-			["H3539"] = 339000,
-			["mr"] = 297999,
+		["Scalping Tomahawk of Strength"] = {
+			["H3540"] = 9900,
+			["mr"] = 9900,
 		},
-		["Iridescent Scale Leggings"] = {
-			["H3537"] = 46000,
-			["mr"] = 46000,
+		["Schematic: Green Firework"] = {
+			["H3543"] = 21900,
+			["mr"] = 21900,
 		},
-		["Pattern: Frostweave Tunic"] = {
-			["H3540"] = 38163,
-			["mr"] = 38163,
+		["Gryphon Cloak of the Monkey"] = {
+			["H3543"] = 59652,
+			["mr"] = 59652,
 		},
-		["Insignia Gloves"] = {
-			["H3537"] = 400000,
-			["mr"] = 400000,
+		["Lunar Mantle of Arcane Wrath"] = {
+			["H3537"] = 50000,
+			["mr"] = 50000,
 		},
-		["Nightsky Boots"] = {
-			["mr"] = 19600,
-			["H3539"] = 19600,
+		["Sage's Cloth of Stamina"] = {
+			["H3543"] = 10000,
+			["mr"] = 10000,
 		},
-		["Duskwoven Gloves of Healing"] = {
-			["mr"] = 99999,
-			["sc"] = 1,
-			["H3529"] = 99999,
-			["id"] = "10062:0:0:2042:0",
-			["cc"] = 4,
+		["High Councillor's Bracers of the Owl"] = {
+			["H3543"] = 30000,
+			["mr"] = 30000,
 		},
 		["Sunscale Helmet"] = {
 			["H3537"] = 61997,
@@ -13636,403 +15912,421 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Grunt's Cape of the Bear"] = {
 			["H3540"] = 5000,
-			["mr"] = 5000,
+			["mr"] = 3500,
+			["H3543"] = 3500,
 		},
 		["Silver Bar"] = {
-			["id"] = "2842:0:0:0:0",
+			["H3540"] = 734,
 			["H3542"] = 372,
-			["mr"] = 815,
+			["mr"] = 893,
+			["sc"] = 0,
 			["L3543"] = 815,
 			["cc"] = 7,
-			["sc"] = 0,
 			["H3539"] = 600,
-			["H3543"] = 820,
-			["H3540"] = 734,
+			["H3543"] = 893,
+			["id"] = "2842:0:0:0:0",
 		},
-		["Swashbuckler's Eyepatch of the Tiger"] = {
-			["mr"] = 120240,
-			["H3539"] = 120240,
+		["Pattern: Rich Purple Silk Shirt"] = {
+			["H3539"] = 474558,
+			["mr"] = 474558,
 		},
 		["Basilisk Hide Pants"] = {
 			["H3540"] = 170000,
-			["mr"] = 170000,
+			["mr"] = 136403,
+			["H3543"] = 136403,
 			["H3539"] = 190125,
 		},
-		["Warlord's Axe of Strength"] = {
-			["H3540"] = 256318,
-			["mr"] = 256318,
+		["Conjurer's Robe of Frozen Wrath"] = {
+			["H3543"] = 29139,
+			["mr"] = 29139,
 		},
-		["Compact Shotgun"] = {
-			["H3539"] = 9999,
-			["mr"] = 9999,
+		["Bronze Tube"] = {
+			["H3539"] = 1250,
+			["H3543"] = 500,
+			["mr"] = 500,
 		},
-		["Six of Warlords"] = {
-			["H3540"] = 239999,
-			["H3539"] = 93000,
-			["mr"] = 239999,
+		["Chimera Leather"] = {
+			["H3539"] = 33000,
+			["cc"] = 7,
+			["id"] = "15423:0:0:0:0",
+			["H3540"] = 32700,
+			["mr"] = 32700,
+			["sc"] = 0,
 		},
-		["Recipe: Cooked Crab Claw"] = {
-			["H3537"] = 99900,
-			["mr"] = 99900,
-		},
-		["Durable Pants of the Whale"] = {
-			["mr"] = 14000,
-			["H3537"] = 14142,
-			["L3537"] = 14000,
-		},
-		["Sage's Pants of the Owl"] = {
+		["Lodestone Hoop of the Gorilla"] = {
+			["H3537"] = 50000,
 			["mr"] = 50000,
-			["H3539"] = 50000,
+		},
+		["Buccaneer's Orb of the Falcon"] = {
+			["H3543"] = 4000,
+			["mr"] = 4000,
+		},
+		["Robust Cloak of the Owl"] = {
+			["H3543"] = 2932,
+			["mr"] = 2932,
 		},
 		["Core Felcloth Bag"] = {
-			["sc"] = 1,
-			["mr"] = 3499998,
-			["cc"] = 1,
 			["H3540"] = 5999999,
-			["id"] = "21342:0:0:0:0",
-			["H3539"] = 3994999,
-			["H3543"] = 3499998,
 			["H3542"] = 3975000,
+			["H3539"] = 3994999,
+			["L3543"] = 3492500,
+			["cc"] = 1,
+			["sc"] = 1,
+			["mr"] = 3492500,
+			["H3543"] = 3499998,
+			["id"] = "21342:0:0:0:0",
 		},
-		["Formula: Enchant Boots - Minor Agility"] = {
-			["H3540"] = 10961,
-			["mr"] = 10961,
+		["Thick Spider's Silk"] = {
+			["H3540"] = 733,
+			["H3539"] = 849,
+			["H3543"] = 782,
+			["mr"] = 782,
 		},
-		["Major Healing Potion"] = {
-			["H3540"] = 10200,
-			["mr"] = 10200,
-			["H3539"] = 9999,
+		["Battleforge Cloak of the Gorilla"] = {
+			["H3543"] = 9900,
+			["mr"] = 9900,
 		},
-		["Ultra-Flash Shadow Reflector"] = {
-			["H3540"] = 1849999,
-			["mr"] = 1849999,
-			["H3539"] = 1999997,
+		["Sorcerer Cloak of the Owl"] = {
+			["mr"] = 10064,
+			["H3537"] = 33164,
+			["L3537"] = 10064,
 		},
 		["Durable Shoulders of Frozen Wrath"] = {
 			["H3537"] = 59900,
 			["mr"] = 59900,
 		},
-		["Recipe: Flask of Distilled Wisdom"] = {
-			["mr"] = 2990000,
+		["Recipe: Philosopher's Stone"] = {
+			["H3540"] = 29899,
+			["mr"] = 37898,
+			["H3543"] = 37898,
+			["H3539"] = 39692,
+		},
+		["Schematic: Thorium Tube"] = {
+			["H3540"] = 55000,
+			["mr"] = 55000,
+		},
+		["Schematic: Mithril Heavy-bore Rifle"] = {
+			["mr"] = 19107,
 			["cc"] = 9,
-			["id"] = "13520:0:0:0:0",
-			["H3539"] = 1500000,
-			["sc"] = 6,
-			["H3540"] = 2990000,
+			["L3543"] = 19107,
+			["H3540"] = 20600,
+			["id"] = "10604:0:0:0:0",
+			["H3543"] = 19748,
+			["sc"] = 3,
 		},
-		["Dark Whelpling"] = {
-			["H3540"] = 409000,
-			["mr"] = 409000,
+		["Celestial Slippers of Frozen Wrath"] = {
+			["H3543"] = 99999,
+			["mr"] = 99999,
 		},
-		["Pattern: Enchanter's Cowl"] = {
-			["H3539"] = 149999,
-			["mr"] = 149999,
-		},
-		["Thorium Tube"] = {
-			["H3540"] = 9999,
-			["H3539"] = 12200,
-			["mr"] = 9999,
-		},
-		["Regal Cloak of Arcane Wrath"] = {
-			["H3537"] = 45195,
-			["mr"] = 45195,
+		["Arachnidian Branch of Arcane Wrath"] = {
+			["H3537"] = 225792,
+			["mr"] = 225792,
 		},
 		["Native Branch of Frozen Wrath"] = {
-			["mr"] = 5561,
 			["H3539"] = 5561,
+			["mr"] = 5561,
 		},
 		["Ruined Tome"] = {
 			["H3537"] = 7312,
 			["mr"] = 7312,
 		},
-		["Woodworking Gloves"] = {
-			["H3537"] = 4900,
-			["mr"] = 4900,
+		["Hematite Link of Nature Resistance"] = {
+			["H3540"] = 1150000,
+			["mr"] = 690000,
+			["H3543"] = 690000,
+			["H3539"] = 1100000,
 		},
-		["Supreme Cape of Agility"] = {
-			["H3540"] = 222252,
-			["mr"] = 222252,
+		["Soldier's Gauntlets of the Bear"] = {
+			["H3537"] = 10000,
+			["mr"] = 10000,
 		},
-		["Pattern: Runic Leather Armor"] = {
-			["mr"] = 120000,
-			["cc"] = 9,
-			["id"] = "15776:0:0:0:0",
-			["sc"] = 1,
-			["H3536"] = 120000,
+		["Necklace of Calisea"] = {
+			["H3543"] = 189998,
+			["mr"] = 189998,
 		},
-		["Gold Bar"] = {
-			["mr"] = 790,
-			["cc"] = 7,
-			["id"] = "3577:0:0:0:0",
-			["H3539"] = 924,
-			["sc"] = 0,
-			["H3540"] = 790,
+		["Elegant Mantle of the Owl"] = {
+			["H3543"] = 50920,
+			["mr"] = 50920,
 		},
-		["Gossamer Boots of Stamina"] = {
-			["mr"] = 172767,
-			["H3539"] = 172767,
+		["Captain's Bracers of Stamina"] = {
+			["H3537"] = 18967,
+			["mr"] = 18967,
 		},
-		["Magic Dust"] = {
-			["mr"] = 89550,
-			["H3539"] = 89550,
+		["Imposing Gloves of the Bear"] = {
+			["mr"] = 86238,
+			["cc"] = 4,
+			["id"] = "15166:0:0:1201:0",
+			["sc"] = 2,
+			["H3529"] = 86238,
 		},
-		["Sentinel Cloak of Agility"] = {
-			["mr"] = 18031,
-			["H3539"] = 18031,
+		["Light Bow"] = {
+			["H3540"] = 3199,
+			["mr"] = 3199,
 		},
-		["Guillotine Axe"] = {
-			["H3539"] = 127499,
-			["cc"] = 2,
-			["id"] = "2807:0:0:0:0",
-			["sc"] = 0,
-			["mr"] = 126999,
-			["H3542"] = 126999,
+		["Gloves of the Fang"] = {
+			["H3543"] = 9998,
+			["mr"] = 9998,
 		},
-		["Horizon Choker"] = {
-			["mr"] = 380000,
-			["H3537"] = 424998,
-			["L3537"] = 380000,
+		["Middle Map Fragment"] = {
+			["H3540"] = 3991,
+			["H3539"] = 3992,
+			["H3543"] = 2400,
+			["mr"] = 2400,
 		},
-		["Pattern: Tough Scorpid Helm"] = {
-			["H3537"] = 2500,
-			["mr"] = 2500,
+		["Stone Hammer of Spirit"] = {
+			["H3543"] = 138672,
+			["mr"] = 138672,
 		},
 		["Major Troll's Blood Potion"] = {
 			["H3540"] = 39695,
 			["H3539"] = 39779,
-			["mr"] = 39695,
+			["H3543"] = 55499,
+			["mr"] = 55499,
 		},
-		["Hematite Link of Nature Resistance"] = {
-			["H3540"] = 1150000,
-			["mr"] = 1150000,
-			["H3539"] = 1100000,
+		["Archer's Jerkin of the Eagle"] = {
+			["H3540"] = 15000,
+			["mr"] = 15000,
 		},
-		["Grim Reaper"] = {
-			["H3537"] = 100000,
-			["mr"] = 100000,
+		["Pattern: Core Felcloth Bag"] = {
+			["cc"] = 9,
+			["mr"] = 1700000,
+			["sc"] = 2,
+			["id"] = "21371:0:0:0:0",
+			["H3540"] = 1500000,
+			["H3539"] = 1755000,
+			["H3543"] = 1700000,
+			["H3542"] = 992499,
 		},
 		["Raider Shortsword of Stamina"] = {
 			["H3537"] = 8000,
 			["mr"] = 8000,
 		},
-		["Bonelink Bracers of the Owl"] = {
-			["H3537"] = 17704,
-			["mr"] = 17704,
+		["Crushridge Bindings"] = {
+			["H3537"] = 95000,
+			["mr"] = 95000,
 		},
-		["High Councillor's Mantle of the Eagle"] = {
-			["mr"] = 150000,
-			["H3539"] = 150000,
+		["Infiltrator Shoulders of Stamina"] = {
+			["H3537"] = 30000,
+			["mr"] = 30000,
 		},
-		["Smashing Star of Strength"] = {
-			["H3540"] = 50000,
-			["mr"] = 50000,
+		["Rage Potion"] = {
+			["H3540"] = 4900,
+			["mr"] = 4300,
+			["H3543"] = 4300,
+			["H3539"] = 4300,
 		},
-		["Wicked Leather Belt"] = {
-			["H3537"] = 49999,
-			["mr"] = 49999,
+		["Nightblade"] = {
+			["mr"] = 215474,
+			["H3543"] = 215474,
+			["H3539"] = 170000,
 		},
-		["Lesser Nether Essence"] = {
-			["mr"] = 12278,
-			["cc"] = 7,
-			["id"] = "11174:0:0:0:0",
-			["H3540"] = 12278,
-			["sc"] = 0,
-			["H3539"] = 21600,
+		["Huntsman's Leggings of Healing"] = {
+			["H3537"] = 38394,
+			["mr"] = 38394,
 		},
-		["Lupine Cord of Healing"] = {
-			["mr"] = 6800,
-			["H3539"] = 6800,
+		["Braincage"] = {
+			["H3537"] = 70000,
+			["mr"] = 70000,
 		},
-		["Small Black Pouch"] = {
-			["mr"] = 1779,
-			["H3537"] = 1800,
-			["L3537"] = 1779,
+		["Murphstar of the Monkey"] = {
+			["H3543"] = 18900,
+			["mr"] = 18900,
 		},
 		["Plans: Invulnerable Mail"] = {
-			["mr"] = 500000,
 			["H3539"] = 500000,
+			["mr"] = 500000,
 		},
 		["Arcane Boots"] = {
-			["mr"] = 41681,
-			["cc"] = 4,
-			["id"] = "8284:0:0:0:0",
 			["H3539"] = 41680,
-			["sc"] = 1,
+			["cc"] = 4,
 			["H3540"] = 41681,
+			["id"] = "8284:0:0:0:0",
+			["sc"] = 1,
+			["mr"] = 41681,
 		},
-		["Pattern: Rich Purple Silk Shirt"] = {
-			["mr"] = 474558,
-			["H3539"] = 474558,
+		["Raider's Boots of the Whale"] = {
+			["H3540"] = 8000,
+			["mr"] = 8000,
 		},
-		["High Councillor's Sash of the Wolf"] = {
-			["H3540"] = 113908,
-			["mr"] = 113908,
+		["Schematic: Spellpower Goggles Xtreme"] = {
+			["H3540"] = 10000,
+			["mr"] = 22499,
+			["H3543"] = 22499,
 		},
 		["Cured Thick Hide"] = {
-			["H3537"] = 10330,
-			["mr"] = 10330,
+			["H3543"] = 5600,
+			["mr"] = 5600,
 		},
-		["Headstriker Sword of the Whale"] = {
-			["H3540"] = 49800,
-			["mr"] = 49800,
-			["H3539"] = 70000,
+		["Ring of Saviors"] = {
+			["H3540"] = 180175,
+			["mr"] = 260035,
+			["H3543"] = 260035,
+			["H3539"] = 185825,
 		},
-		["Soul Pouch"] = {
-			["H3540"] = 123799,
-			["mr"] = 123799,
+		["Wooden Stock"] = {
+			["H3539"] = 1700,
+			["mr"] = 1700,
 		},
-		["Silver-thread Armor"] = {
-			["H3537"] = 6837,
-			["mr"] = 6837,
+		["Councillor's Boots of Arcane Wrath"] = {
+			["H3543"] = 123540,
+			["mr"] = 123540,
 		},
-		["Raider's Belt of the Eagle"] = {
-			["mr"] = 10596,
-			["H3539"] = 10596,
+		["Duskwoven Bracers of Fiery Wrath"] = {
+			["H3539"] = 74617,
+			["mr"] = 74617,
 		},
-		["Myrmidon's Signet"] = {
-			["H3540"] = 999998,
-			["H3539"] = 998999,
-			["mr"] = 999998,
+		["Staff of the Shade"] = {
+			["H3537"] = 429700,
+			["mr"] = 429700,
 		},
-		["Rough Weightstone"] = {
-			["mr"] = 174,
-			["H3539"] = 174,
+		["Twilight Boots of Shadow Wrath"] = {
+			["H3543"] = 7608,
+			["mr"] = 7608,
 		},
 		["Elixir of Minor Agility"] = {
 			["H3537"] = 10000,
 			["mr"] = 10000,
 		},
-		["Soft-soled Linen Boots"] = {
-			["H3540"] = 2500,
-			["mr"] = 2500,
+		["Stone Hammer of Strength"] = {
+			["mr"] = 29035,
+			["H3537"] = 30000,
+			["L3537"] = 29035,
 		},
-		["Dark Leather Pants"] = {
-			["mr"] = 9999,
-			["H3539"] = 9999,
+		["Ribsplitter of the Tiger"] = {
+			["H3543"] = 480000,
+			["mr"] = 480000,
 		},
-		["Soldier's Gauntlets of the Tiger"] = {
-			["H3537"] = 9900,
-			["mr"] = 9900,
+		["Warleader's Crown"] = {
+			["H3537"] = 100000,
+			["mr"] = 100000,
 		},
-		["Birchwood Maul of Stamina"] = {
-			["H3540"] = 11064,
-			["mr"] = 11064,
+		["Mistscape Pants"] = {
+			["H3540"] = 20800,
+			["mr"] = 20800,
 		},
-		["Marble Necklace of Regeneration"] = {
-			["H3537"] = 50000,
+		["Bandit Pants of the Whale"] = {
+			["H3539"] = 30772,
+			["mr"] = 30772,
+		},
+		["Arachnidian Branch of the Eagle"] = {
+			["H3540"] = 50000,
 			["mr"] = 50000,
 		},
-		["Monstrous War Axe of the Tiger"] = {
-			["H3537"] = 49500,
-			["mr"] = 49500,
+		["Aboriginal Gloves of the Falcon"] = {
+			["H3543"] = 1000,
+			["mr"] = 1000,
 		},
-		["Bow of Searing Arrows"] = {
-			["H3537"] = 580000,
-			["mr"] = 580000,
-		},
-		["Recipe: Beer Basted Boar Ribs"] = {
-			["H3537"] = 99900,
-			["mr"] = 99900,
+		["Plans: Wildthorn Mail"] = {
+			["H3540"] = 7099,
+			["H3539"] = 7424,
+			["H3543"] = 7400,
+			["mr"] = 7400,
 		},
 		["Aboriginal Footwraps of the Owl"] = {
-			["H3537"] = 4822,
-			["mr"] = 4822,
+			["H3543"] = 7900,
+			["mr"] = 7900,
 		},
-		["Magus Long Staff of the Monkey"] = {
-			["H3540"] = 156155,
-			["mr"] = 156155,
-			["H3539"] = 99899,
+		["Savannah Ring of the Wolf"] = {
+			["H3539"] = 40000,
+			["mr"] = 40000,
 		},
-		["Rigid Tunic of Agility"] = {
-			["H3537"] = 10000,
-			["mr"] = 10000,
+		["Renegade Cloak of the Eagle"] = {
+			["H3537"] = 18210,
+			["mr"] = 18210,
 		},
 		["Rune of Opening"] = {
-			["mr"] = 128,
+			["mr"] = 125,
+			["H3543"] = 125,
 			["H3539"] = 128,
 		},
-		["Plans: Golden Scale Cuirass"] = {
-			["H3540"] = 8898,
-			["mr"] = 8898,
+		["Phalanx Breastplate of the Bear"] = {
+			["H3543"] = 30000,
+			["mr"] = 30000,
 		},
 		["Spiked Club of Strength"] = {
 			["H3540"] = 3500,
 			["mr"] = 3500,
 			["H3539"] = 4999,
 		},
-		["Grizzly Jerkin of the Monkey"] = {
-			["H3537"] = 5531,
-			["mr"] = 5531,
+		["Recipe: Bristle Whisker Catfish"] = {
+			["H3543"] = 42599,
+			["mr"] = 42599,
 		},
 		["Twilight Cultist Mantle"] = {
 			["H3540"] = 5600,
 			["H3539"] = 5900,
-			["mr"] = 5600,
+			["H3543"] = 6098,
+			["mr"] = 6098,
 		},
-		["Jazeraint Cloak of the Gorilla"] = {
-			["H3537"] = 20000,
-			["mr"] = 20000,
-		},
-		["Arachnidian Branch of the Eagle"] = {
-			["H3540"] = 50000,
-			["mr"] = 50000,
-		},
-		["Mountain Silversage"] = {
-			["mr"] = 8241,
-			["cc"] = 7,
-			["H3540"] = 8241,
-			["H3539"] = 8900,
-			["id"] = "13465:0:0:0:0",
+		["Arcane Crystal"] = {
+			["H3539"] = 699000,
 			["sc"] = 0,
+			["H3540"] = 612500,
+			["id"] = "12363:0:0:0:0",
+			["cc"] = 7,
+			["H3543"] = 627899,
+			["mr"] = 627899,
 		},
-		["Bandit Pants of the Whale"] = {
-			["mr"] = 30772,
-			["H3539"] = 30772,
+		["Deathweed"] = {
+			["H3537"] = 163,
+			["mr"] = 163,
 		},
-		["Plans: Shadow Crescent Axe"] = {
-			["H3537"] = 7595,
-			["mr"] = 7595,
+		["Monster Omelet"] = {
+			["H3539"] = 2000,
+			["mr"] = 2000,
+		},
+		["Seer's Boots"] = {
+			["H3543"] = 10000,
+			["mr"] = 10000,
+		},
+		["Bloodwoven Pads of Shadow Wrath"] = {
+			["H3537"] = 67272,
+			["mr"] = 67272,
 		},
 		["Ichor of Undeath"] = {
 			["H3540"] = 795,
-			["mr"] = 795,
+			["mr"] = 930,
+			["H3543"] = 930,
 			["H3539"] = 750,
 		},
 		["Gyrofreeze Ice Reflector"] = {
 			["H3539"] = 849998,
-			["mr"] = 849998,
+			["H3543"] = 799998,
+			["mr"] = 799998,
 		},
 		["Scalping Tomahawk of Power"] = {
 			["H3537"] = 4000,
 			["mr"] = 4000,
 		},
-		["Braincage"] = {
-			["H3537"] = 70000,
-			["mr"] = 70000,
+		["Templar Legplates of the Bear"] = {
+			["H3543"] = 173499,
+			["mr"] = 173499,
 		},
-		["Brown Linen Vest"] = {
-			["H3537"] = 575,
-			["mr"] = 575,
+		["Soldier's Armor of the Monkey"] = {
+			["H3540"] = 30000,
+			["mr"] = 30000,
 		},
-		["Durable Cape of Fiery Wrath"] = {
-			["H3537"] = 12177,
-			["mr"] = 12177,
+		["Magus Long Staff of the Monkey"] = {
+			["H3540"] = 156155,
+			["mr"] = 126438,
+			["H3543"] = 126438,
+			["H3539"] = 99899,
 		},
-		["Elixir of Dream Vision"] = {
-			["H3540"] = 9300,
-			["mr"] = 9300,
-			["H3539"] = 9300,
+		["Sniper Scope"] = {
+			["H3540"] = 33999,
+			["mr"] = 33999,
+			["H3539"] = 49500,
 		},
 		["Keller's Girdle"] = {
-			["H3537"] = 107250,
-			["mr"] = 107250,
+			["H3543"] = 149999,
+			["mr"] = 149999,
 		},
 		["Pattern: Frostsaber Gloves"] = {
-			["mr"] = 11905,
-			["cc"] = 9,
-			["id"] = "15761:0:0:0:0",
-			["H3537"] = 11905,
+			["mr"] = 9500,
 			["sc"] = 1,
+			["id"] = "15761:0:0:0:0",
+			["H3543"] = 9500,
+			["cc"] = 9,
 		},
 		["Patched Cloak"] = {
 			["H3537"] = 279,
@@ -14042,140 +16336,152 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 108028,
 			["mr"] = 108028,
 		},
-		["Tracker's Boots of Agility"] = {
-			["H3537"] = 11155,
-			["mr"] = 11155,
+		["Masterwork Gauntlets of the Wolf"] = {
+			["H3537"] = 60000,
+			["mr"] = 60000,
 		},
 		["Bolt of Linen Cloth"] = {
-			["mr"] = 497,
-			["sc"] = 0,
-			["H3540"] = 497,
+			["mr"] = 98,
 			["cc"] = 7,
 			["id"] = "2996:0:0:0:0",
+			["H3540"] = 497,
+			["H3543"] = 98,
+			["sc"] = 0,
 		},
-		["Kovork's Rattle"] = {
-			["H3537"] = 15000,
-			["mr"] = 15000,
+		["Silksand Circlet"] = {
+			["H3540"] = 39800,
+			["mr"] = 10000,
+			["H3543"] = 10000,
+			["H3539"] = 40542,
 		},
 		["Small Seaforium Charge"] = {
 			["H3537"] = 4000,
 			["mr"] = 4000,
 		},
-		["Crushridge Bindings"] = {
-			["H3537"] = 95000,
-			["mr"] = 95000,
+		["Jazeraint Cloak of the Gorilla"] = {
+			["H3537"] = 20000,
+			["mr"] = 20000,
 		},
-		["Manual: Strong Anti-Venom"] = {
-			["H3537"] = 50000,
-			["mr"] = 50000,
+		["Schematic: Voice Amplification Modulator"] = {
+			["H3540"] = 50000,
+			["H3539"] = 81999,
+			["H3543"] = 397000,
+			["mr"] = 397000,
 		},
 		["Dark Iron Residue"] = {
 			["H3540"] = 192,
 			["H3539"] = 115,
-			["mr"] = 192,
+			["H3543"] = 112,
+			["mr"] = 112,
 		},
 		["Vambraces of Prophecy"] = {
 			["H3540"] = 994000,
 			["mr"] = 994000,
 			["H3539"] = 1942499,
 		},
-		["Formula: Enchant Weapon - Winter's Might"] = {
-			["mr"] = 447999,
-			["H3537"] = 450000,
-			["L3537"] = 447999,
+		["Small Bronze Bomb"] = {
+			["H3537"] = 12537,
+			["mr"] = 12537,
 		},
-		["Pattern: Frostsaber Leggings"] = {
-			["H3540"] = 6433,
-			["H3539"] = 8596,
-			["mr"] = 6433,
+		["Manual: Strong Anti-Venom"] = {
+			["H3537"] = 50000,
+			["mr"] = 50000,
 		},
-		["High Councillor's Circlet of the Whale"] = {
-			["H3540"] = 99999,
-			["mr"] = 99999,
+		["Spiked Chain Wristbands of the Bear"] = {
+			["H3540"] = 10000,
+			["mr"] = 10000,
+			["H3543"] = 10000,
 		},
 		["Dusky Belt"] = {
 			["H3537"] = 116969,
 			["mr"] = 116969,
 		},
+		["Wand of Eventide"] = {
+			["mr"] = 14498,
+			["H3537"] = 14499,
+			["L3537"] = 14498,
+		},
 		["Abjurer's Boots of Frozen Wrath"] = {
 			["H3537"] = 40000,
 			["mr"] = 40000,
 		},
-		["Limited Invulnerability Potion"] = {
-			["H3540"] = 41995,
-			["H3539"] = 37596,
-			["mr"] = 41995,
-		},
 		["The Needler"] = {
-			["H3539"] = 72500,
 			["mr"] = 72500,
+			["H3539"] = 72500,
 		},
 		["Bolt of Mageweave"] = {
-			["mr"] = 1495,
-			["cc"] = 7,
-			["sc"] = 0,
-			["H3540"] = 1495,
-			["L3539"] = 1359,
+			["mr"] = 1283,
 			["H3539"] = 1448,
+			["cc"] = 7,
+			["H3540"] = 1495,
 			["id"] = "4339:0:0:0:0",
+			["L3539"] = 1359,
+			["H3543"] = 1283,
+			["sc"] = 0,
 		},
-		["Master's Cloak of Shadow Wrath"] = {
-			["H3540"] = 100000,
-			["mr"] = 100000,
+		["Schematic: Bright-Eye Goggles"] = {
+			["H3540"] = 24400,
+			["mr"] = 11199,
+			["H3543"] = 11199,
+			["H3539"] = 25050,
 		},
-		["Purification Potion"] = {
-			["H3540"] = 28400,
-			["H3539"] = 28999,
-			["mr"] = 28400,
+		["Schematic: Dark Iron Rifle"] = {
+			["H3543"] = 199998,
+			["mr"] = 199998,
 		},
-		["Recipe: Egg Nog"] = {
-			["mr"] = 218999,
-			["H3539"] = 218999,
+		["Goblin Rocket Boots"] = {
+			["H3540"] = 224000,
+			["H3539"] = 249998,
+			["H3543"] = 216000,
+			["mr"] = 216000,
 		},
-		["Gaea's Amice of Shadow Wrath"] = {
-			["H3540"] = 49999,
-			["mr"] = 49999,
+		["Twilight Cuffs of Healing"] = {
+			["H3543"] = 19999,
+			["mr"] = 19999,
 		},
-		["Gloves of the Fang"] = {
-			["H3537"] = 20000,
-			["mr"] = 20000,
+		["Runed Stygian Boots"] = {
+			["H3540"] = 2500000,
+			["mr"] = 2488999,
+			["H3543"] = 2488999,
+			["H3539"] = 2649000,
 		},
-		["High Councillor's Gloves of the Eagle"] = {
-			["H3540"] = 39999,
-			["mr"] = 39999,
+		["Mail Combat Armguards"] = {
+			["H3543"] = 14625,
+			["mr"] = 14625,
 		},
 		["Swashbuckler's Shoulderpads of the Wolf"] = {
-			["mr"] = 20000,
 			["H3539"] = 20000,
+			["mr"] = 20000,
 		},
-		["Tracker's Gloves of the Monkey"] = {
-			["mr"] = 19900,
-			["sc"] = 2,
-			["H3529"] = 19900,
-			["id"] = "9920:0:0:606:0",
-			["cc"] = 4,
+		["Battering Hammer of the Boar"] = {
+			["H3540"] = 8500,
+			["mr"] = 50000,
+			["H3543"] = 50000,
 		},
 		["Lasher Root"] = {
 			["H3540"] = 16800,
 			["mr"] = 16800,
 			["H3539"] = 16800,
 		},
-		["Plans: Silvered Bronze Shoulders"] = {
-			["mr"] = 7998,
-			["H3539"] = 7998,
+		["Flarecore Gloves"] = {
+			["mr"] = 3750000,
+			["cc"] = 4,
+			["id"] = "16979:0:0:0:0",
+			["H3543"] = 3750000,
+			["sc"] = 1,
 		},
-		["Burning War Axe"] = {
-			["H3537"] = 306267,
-			["mr"] = 306267,
+		["Briar Tredders"] = {
+			["H3539"] = 187193,
+			["mr"] = 187193,
 		},
-		["Raptor Flesh"] = {
-			["H3540"] = 218,
-			["H3539"] = 191,
-			["mr"] = 218,
+		["Plans: Golden Scale Shoulders"] = {
+			["H3537"] = 285775,
+			["mr"] = 285775,
 		},
-		["Knight's Bracers of the Whale"] = {
-			["H3537"] = 9999,
-			["mr"] = 9999,
+		["Green Helper Box"] = {
+			["H3539"] = 26195,
+			["H3543"] = 26184,
+			["mr"] = 26184,
 		},
 		["Thallium Hoop of Intellect"] = {
 			["H3540"] = 54323,
@@ -14183,78 +16489,96 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Larval Acid"] = {
 			["H3540"] = 165000,
-			["mr"] = 165000,
+			["mr"] = 129993,
+			["H3543"] = 129993,
 			["H3539"] = 172000,
 		},
 		["Pattern: Truefaith Vestments"] = {
-			["mr"] = 33000,
+			["mr"] = 34593,
+			["H3543"] = 34593,
 			["H3539"] = 33000,
 		},
-		["Briar Tredders"] = {
-			["mr"] = 187193,
-			["H3539"] = 187193,
+		["Bloodspattered Loincloth of Healing"] = {
+			["H3540"] = 9000,
+			["mr"] = 9000,
 		},
-		["Infiltrator Cloak of the Eagle"] = {
-			["H3537"] = 8800,
-			["mr"] = 8800,
+		["Primal Tiger Leather"] = {
+			["H3539"] = 2300,
+			["cc"] = 7,
+			["mr"] = 1995,
+			["id"] = "19768:0:0:0:0",
+			["H3540"] = 2000,
+			["H3543"] = 1995,
+			["sc"] = 0,
 		},
-		["Trueshot Bow of the Tiger"] = {
-			["H3537"] = 40000,
-			["mr"] = 40000,
+		["Snowball"] = {
+			["H3540"] = 1105,
+			["mr"] = 980,
+			["H3543"] = 980,
+			["H3539"] = 2700,
 		},
 		["Admiral's Hat"] = {
-			["mr"] = 149899,
 			["H3539"] = 149899,
+			["mr"] = 149899,
 		},
-		["Gut Ripper"] = {
-			["mr"] = 389999,
-			["H3537"] = 459999,
-			["L3537"] = 389999,
+		["Mindbender Loop"] = {
+			["H3539"] = 17820,
+			["H3543"] = 13200,
+			["mr"] = 13200,
 		},
-		["Fishing Tournament!"] = {
-			["H3539"] = 129993,
-			["mr"] = 129993,
+		["Warmonger's Bracers of Agility"] = {
+			["H3537"] = 65000,
+			["mr"] = 65000,
 		},
-		["Headstriker Sword of Agility"] = {
-			["H3537"] = 88504,
-			["mr"] = 88504,
+		["Wildheart Bracers"] = {
+			["H3540"] = 69999,
+			["H3539"] = 63499,
+			["H3543"] = 45899,
+			["mr"] = 45899,
 		},
-		["Resplendent Guardian"] = {
-			["H3539"] = 72399,
-			["mr"] = 72399,
+		["Goblin Nutcracker of Strength"] = {
+			["H3540"] = 27500,
+			["mr"] = 30000,
+			["H3543"] = 30000,
 		},
-		["Staff of the Shade"] = {
-			["H3537"] = 429700,
-			["mr"] = 429700,
+		["Arachnidian Legguards of the Eagle"] = {
+			["H3543"] = 209151,
+			["mr"] = 209151,
 		},
-		["Phalanx Girdle of the Eagle"] = {
-			["H3537"] = 14850,
-			["mr"] = 14850,
+		["Ballast Maul of the Gorilla"] = {
+			["H3537"] = 25000,
+			["mr"] = 25000,
 		},
-		["Green Lens of Healing"] = {
-			["H3540"] = 149900,
-			["mr"] = 149900,
+		["Lesser Nether Essence"] = {
+			["H3539"] = 21600,
+			["cc"] = 7,
+			["sc"] = 0,
+			["id"] = "11174:0:0:0:0",
+			["mr"] = 9397,
+			["H3543"] = 9397,
+			["H3540"] = 12278,
 		},
 		["Rigid Leggings of Healing"] = {
 			["H3540"] = 100000,
 			["mr"] = 100000,
 		},
-		["Knight's Girdle of the Monkey"] = {
-			["H3540"] = 32184,
-			["mr"] = 32184,
+		["Chief Brigadier Pauldrons"] = {
+			["H3537"] = 13500,
+			["mr"] = 13500,
 		},
 		["Pattern: Festival Dress"] = {
 			["H3540"] = 494889,
 			["mr"] = 494889,
 			["H3539"] = 1316521,
 		},
-		["Dragon Finger of Shadow Wrath"] = {
-			["H3540"] = 551256,
-			["mr"] = 551256,
+		["Shimmering Robe of Intellect"] = {
+			["H3537"] = 3500,
+			["mr"] = 3500,
 		},
-		["Pagan Cape of the Whale"] = {
-			["H3537"] = 19800,
-			["mr"] = 19800,
+		["Recipe: Mighty Rage Potion"] = {
+			["H3540"] = 799999,
+			["mr"] = 340000,
+			["H3543"] = 340000,
 		},
 		["Feathered Headdress"] = {
 			["H3537"] = 22511,
@@ -14265,402 +16589,417 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 309900,
 			["L3537"] = 209000,
 		},
-		["Direwing Legguards"] = {
-			["mr"] = 194512,
-			["H3539"] = 194512,
+		["Gut Ripper"] = {
+			["mr"] = 389999,
+			["H3537"] = 459999,
+			["L3537"] = 389999,
 		},
-		["Schematic: Large Seaforium Charge"] = {
-			["H3540"] = 58000,
-			["mr"] = 58000,
-			["H3539"] = 61499,
+		["Pattern: Lavender Mageweave Shirt"] = {
+			["H3539"] = 69999,
+			["cc"] = 9,
+			["id"] = "10314:0:0:0:0",
+			["H3540"] = 83589,
+			["sc"] = 2,
+			["mr"] = 83589,
 		},
 		["Felcloth Pants"] = {
 			["H3540"] = 298999,
-			["mr"] = 298999,
+			["mr"] = 252999,
+			["H3543"] = 252999,
 			["H3539"] = 235499,
 		},
-		["Sorcerer Pants of the Eagle"] = {
-			["H3537"] = 8000,
-			["mr"] = 8000,
+		["Blazing Wand"] = {
+			["H3540"] = 2500,
+			["mr"] = 5685,
+			["H3543"] = 5685,
+			["H3539"] = 2828,
 		},
-		["Schematic: Thorium Rifle"] = {
-			["H3539"] = 35599,
-			["mr"] = 35599,
+		["Red Whelp Gloves"] = {
+			["mr"] = 499613,
+			["cc"] = 4,
+			["id"] = "7284:0:0:0:0",
+			["sc"] = 2,
+			["H3529"] = 499613,
 		},
-		["Recipe: Hot Smoked Bass"] = {
-			["mr"] = 97000,
-			["H3539"] = 97000,
+		["Jungle Ring of the Monkey"] = {
+			["H3543"] = 138913,
+			["mr"] = 138913,
 		},
-		["Schematic: Mithril Heavy-bore Rifle"] = {
-			["mr"] = 19748,
-			["sc"] = 3,
-			["id"] = "10604:0:0:0:0",
-			["cc"] = 9,
-			["H3543"] = 19748,
-			["H3540"] = 20600,
+		["Turtle Scale"] = {
+			["H3543"] = 7020,
+			["mr"] = 7020,
 		},
 		["Large White Rocket"] = {
 			["H3537"] = 20342,
 			["mr"] = 20342,
 		},
 		["Bloodspattered Gloves of the Eagle"] = {
-			["H3537"] = 11360,
-			["mr"] = 11360,
+			["H3543"] = 5567,
+			["mr"] = 5567,
 		},
-		["Lodestone Hoop of the Gorilla"] = {
-			["H3537"] = 50000,
-			["mr"] = 50000,
+		["Bristlebark Gloves"] = {
+			["H3543"] = 82750,
+			["mr"] = 82750,
 		},
 		["Tyrant's Belt"] = {
 			["H3537"] = 8900,
 			["mr"] = 8900,
 		},
-		["Troll-hide Bag"] = {
-			["mr"] = 35000,
-			["sc"] = 0,
-			["H3540"] = 30000,
-			["cc"] = 1,
-			["id"] = "1685:0:0:0:0",
-			["H3542"] = 35000,
+		["Elven Chain Boots"] = {
+			["H3543"] = 79600,
+			["mr"] = 79600,
 		},
-		["Bear Meat"] = {
-			["H3540"] = 498,
-			["H3539"] = 961,
-			["mr"] = 498,
+		["Serathil"] = {
+			["H3540"] = 449000,
+			["H3539"] = 489000,
+			["H3543"] = 314000,
+			["mr"] = 314000,
 		},
-		["Winged Helm"] = {
-			["H3537"] = 40000,
-			["mr"] = 40000,
+		["Blood of the Mountain"] = {
+			["H3540"] = 541000,
+			["H3539"] = 477477,
+			["H3543"] = 997898,
+			["mr"] = 997898,
 		},
-		["Plans: Golden Scale Shoulders"] = {
-			["H3537"] = 285775,
-			["mr"] = 285775,
+		["Compact Shotgun"] = {
+			["H3539"] = 9999,
+			["H3543"] = 1499,
+			["mr"] = 1499,
 		},
-		["Merc Sword of Power"] = {
-			["H3540"] = 4589,
-			["mr"] = 4589,
+		["Sorcerer Cloak of the Whale"] = {
+			["H3537"] = 128000,
+			["mr"] = 128000,
 		},
-		["Bronze Hakkari Bijou"] = {
-			["H3540"] = 29199,
-			["H3539"] = 25154,
-			["mr"] = 29199,
+		["Lei of Lilies"] = {
+			["H3540"] = 199999,
+			["H3539"] = 256250,
+			["mr"] = 199999,
 		},
 		["Schematic: EZ-Thro Dynamite"] = {
 			["H3540"] = 1664,
 			["H3539"] = 1675,
 			["mr"] = 1664,
 		},
-		["Elven Spirit Claws"] = {
-			["H3540"] = 120000,
-			["H3539"] = 194500,
-			["mr"] = 120000,
+		["Raider Shortsword of Power"] = {
+			["H3543"] = 3500,
+			["mr"] = 3500,
 		},
-		["Stonebark Gauntlets"] = {
-			["mr"] = 5300000,
-			["cc"] = 4,
-			["id"] = "18344:0:0:0:0",
-			["H3539"] = 6280000,
-			["sc"] = 2,
-			["H3540"] = 5300000,
+		["Cabalist Leggings of the Eagle"] = {
+			["H3537"] = 17500,
+			["mr"] = 17500,
 		},
 		["Ivory Wand of Healing"] = {
-			["H3537"] = 51200,
-			["mr"] = 51200,
+			["H3543"] = 239999,
+			["mr"] = 239999,
 		},
-		["Pattern: Azure Silk Gloves"] = {
-			["mr"] = 133331,
-			["cc"] = 9,
-			["id"] = "7114:0:0:0:0",
-			["H3537"] = 133331,
-			["sc"] = 2,
+		["Dark Keeper Key"] = {
+			["H3543"] = 159000,
+			["mr"] = 159000,
 		},
-		["Massacre Sword of the Eagle"] = {
-			["H3537"] = 149903,
-			["mr"] = 149903,
+		["Green Lens of Shadow Wrath"] = {
+			["H3543"] = 74500,
+			["mr"] = 74500,
 		},
-		["Frenzied Striker"] = {
-			["H3540"] = 149999,
-			["mr"] = 149999,
-			["H3539"] = 220000,
-		},
-		["Azure Shoulders"] = {
-			["H3540"] = 32753,
-			["mr"] = 32753,
-		},
-		["Pattern: Runic Leather Pants"] = {
-			["H3539"] = 13992,
-			["sc"] = 1,
-			["H3540"] = 12998,
-			["cc"] = 9,
-			["mr"] = 12998,
-			["id"] = "15765:0:0:0:0",
-		},
-		["Superior Gloves of the Gorilla"] = {
-			["H3537"] = 25417,
-			["mr"] = 25417,
-		},
-		["Pattern: Devilsaur Leggings"] = {
-			["H3540"] = 66000,
-			["mr"] = 66000,
-		},
-		["Recipe: Filet of Redgill"] = {
-			["mr"] = 38898,
-			["H3539"] = 38898,
-		},
-		["Sharpshooter Harquebus of the Tiger"] = {
-			["H3537"] = 169718,
-			["mr"] = 169718,
-		},
-		["Coarse Blasting Powder"] = {
-			["mr"] = 857,
+		["Stranglekelp"] = {
+			["H3539"] = 1645,
+			["sc"] = 0,
+			["H3540"] = 1180,
+			["id"] = "3820:0:0:0:0",
 			["cc"] = 7,
-			["id"] = "4364:0:0:0:0",
-			["H3540"] = 1140,
-			["H3539"] = 1164,
-			["sc"] = 1,
-			["H3542"] = 857,
+			["H3543"] = 3411,
+			["mr"] = 3411,
 		},
-		["Dark Iron Boots of Stamina"] = {
-			["mr"] = 2900000,
-			["H3539"] = 2900000,
+		["Schematic: Parachute Cloak"] = {
+			["H3539"] = 7299,
+			["H3543"] = 16000,
+			["mr"] = 16000,
+		},
+		["Codex: Prayer of Fortitude"] = {
+			["H3540"] = 9900,
+			["mr"] = 9900,
+			["H3539"] = 9799,
+		},
+		["Libram of Focus"] = {
+			["H3540"] = 13500,
+			["H3539"] = 19000,
+			["H3543"] = 99500,
+			["mr"] = 99500,
+		},
+		["Infiltrator Cloak of the Monkey"] = {
+			["H3537"] = 10000,
+			["mr"] = 10000,
+		},
+		["Resplendent Epaulets of Shadow Wrath"] = {
+			["H3537"] = 427517,
+			["mr"] = 427517,
+		},
+		["Deep Fried Plantains"] = {
+			["H3540"] = 22941,
+			["mr"] = 620,
+			["H3543"] = 620,
+		},
+		["Pattern: Runecloth Gloves"] = {
+			["mr"] = 49500,
+			["cc"] = 9,
+			["H3539"] = 34500,
+			["id"] = "14481:0:0:0:0",
+			["sc"] = 2,
+			["H3543"] = 49500,
+			["H3542"] = 58900,
+		},
+		["Sentinel Trousers of the Monkey"] = {
+			["mr"] = 15000,
+			["cc"] = 4,
+			["H3539"] = 25686,
+			["id"] = "7440:0:0:611:0",
+			["sc"] = 2,
+			["H3543"] = 15000,
+			["H3542"] = 60504,
 		},
 		["Tigerstrike Mantle"] = {
 			["H3540"] = 781048,
 			["H3539"] = 360000,
-			["mr"] = 781048,
+			["H3543"] = 358999,
+			["mr"] = 358999,
 		},
-		["War Torn Pants of the Eagle"] = {
-			["mr"] = 3923,
-			["H3539"] = 3923,
+		["Ballast Maul of the Tiger"] = {
+			["H3537"] = 17800,
+			["mr"] = 17800,
 		},
 		["Mystical Robe of Arcane Wrath"] = {
 			["mr"] = 99998,
-			["cc"] = 4,
-			["id"] = "10178:0:0:1823:0",
 			["sc"] = 1,
 			["H3540"] = 99998,
+			["id"] = "10178:0:0:1823:0",
+			["cc"] = 4,
 		},
-		["Scroll: Create Signet of Beckoning"] = {
-			["H3540"] = 89000,
-			["H3539"] = 49800,
-			["mr"] = 89000,
+		["Feral Leggings of the Eagle"] = {
+			["H3537"] = 4695,
+			["mr"] = 4695,
 		},
-		["Linked Chain Shoulderpads"] = {
-			["H3537"] = 2200,
-			["mr"] = 2200,
+		["Thorny Vine"] = {
+			["H3540"] = 16800,
+			["mr"] = 16800,
 		},
 		["Vision Dust"] = {
-			["mr"] = 895,
-			["sc"] = 0,
-			["id"] = "11137:0:0:0:0",
 			["H3539"] = 515,
-			["H3540"] = 895,
 			["cc"] = 7,
+			["id"] = "11137:0:0:0:0",
+			["H3540"] = 895,
+			["sc"] = 0,
+			["H3543"] = 373,
+			["mr"] = 373,
 		},
 		["Imposing Boots of Agility"] = {
 			["H3537"] = 57000,
 			["mr"] = 57000,
 		},
-		["Spiked Chain Breastplate of the Monkey"] = {
-			["H3537"] = 6000,
-			["mr"] = 6000,
-		},
-		["Jet Chain of the Gorilla"] = {
-			["mr"] = 85716,
-			["H3539"] = 85716,
-		},
-		["Shadow Wand"] = {
-			["mr"] = 927,
-			["H3537"] = 1095,
-			["L3537"] = 927,
-		},
-		["Arcanite Rod"] = {
-			["mr"] = 2994997,
-			["sc"] = 0,
-			["id"] = "16206:0:0:0:0",
+		["Small Glimmering Shard"] = {
+			["H3539"] = 264,
 			["cc"] = 7,
-			["H3540"] = 2994997,
+			["mr"] = 219,
+			["id"] = "10978:0:0:0:0",
+			["sc"] = 0,
+			["H3543"] = 219,
+			["H3540"] = 252,
 		},
-		["Hanzo Sword"] = {
-			["H3540"] = 228999,
-			["mr"] = 228999,
+		["Precisely Calibrated Boomstick"] = {
+			["mr"] = 456000,
+			["H3539"] = 456000,
 		},
-		["High Councillor's Bracers of Fiery Wrath"] = {
-			["H3540"] = 249000,
-			["mr"] = 249000,
-			["H3539"] = 349997,
+		["Pagan Cape of Spirit"] = {
+			["H3539"] = 20000,
+			["mr"] = 20000,
+		},
+		["Elemental Sharpening Stone"] = {
+			["H3540"] = 122400,
+			["H3539"] = 121999,
+			["H3543"] = 119499,
+			["mr"] = 119499,
+		},
+		["Delicious Cave Mold"] = {
+			["H3543"] = 6699,
+			["mr"] = 6699,
+		},
+		["Arthas' Tears"] = {
+			["H3539"] = 255,
+			["cc"] = 7,
+			["sc"] = 0,
+			["H3540"] = 176,
+			["id"] = "8836:0:0:0:0",
+			["H3543"] = 361,
+			["mr"] = 361,
 		},
 		["Gleaming Claymore of Power"] = {
-			["H3537"] = 6425,
-			["mr"] = 6425,
+			["H3543"] = 3440,
+			["mr"] = 3440,
 		},
 		["Greater Scythe of the Bear"] = {
+			["mr"] = 50000,
 			["H3539"] = 50000,
+		},
+		["The Judge's Gavel"] = {
+			["H3543"] = 270000,
+			["mr"] = 270000,
+		},
+		["Light Silithid Carapace"] = {
+			["H3540"] = 5000,
+			["H3539"] = 2800,
+			["H3543"] = 4796,
+			["mr"] = 4796,
+		},
+		["Simple Wood"] = {
+			["H3537"] = 905,
+			["mr"] = 905,
+		},
+		["Exquisite Flamberge of Agility"] = {
+			["H3540"] = 49900,
+			["mr"] = 49900,
+		},
+		["Ritual Sandals of Stamina"] = {
+			["H3543"] = 7474,
+			["mr"] = 7474,
+		},
+		["Corpse Harvester of Strength"] = {
+			["H3543"] = 87500,
+			["mr"] = 87500,
+		},
+		["Boneslasher"] = {
+			["H3540"] = 140000,
+			["mr"] = 79500,
+			["H3543"] = 79500,
+		},
+		["Colossal Great Axe of the Bear"] = {
+			["H3540"] = 74500,
+			["mr"] = 74500,
+		},
+		["Hefty Battlehammer of Power"] = {
+			["H3540"] = 50000,
 			["mr"] = 50000,
 		},
-		["Coarse Gorilla Hair"] = {
-			["H3540"] = 1177,
-			["mr"] = 1177,
-		},
-		["Tracker's Belt of the Owl"] = {
-			["H3537"] = 26025,
-			["mr"] = 26025,
-		},
-		["Green Hills of Stranglethorn - Page 25"] = {
-			["H3540"] = 900,
-			["mr"] = 900,
-			["H3539"] = 2098,
-		},
-		["Large Seaforium Charge"] = {
-			["H3540"] = 29800,
-			["mr"] = 29800,
-		},
-		["Heavy Silk Bandage"] = {
-			["H3537"] = 2681,
-			["mr"] = 2681,
-		},
-		["Burnished Pauldrons"] = {
-			["H3537"] = 2500,
-			["mr"] = 2500,
-		},
-		["Basilisk Bone"] = {
-			["H3537"] = 220000,
-			["mr"] = 220000,
-		},
-		["War Torn Girdle"] = {
-			["H3537"] = 200,
-			["mr"] = 200,
-		},
-		["Parrot Cage (Senegal)"] = {
-			["H3537"] = 57484,
-			["mr"] = 57484,
-		},
-		["Twilight Cultist Cowl"] = {
-			["H3540"] = 5600,
-			["H3539"] = 6900,
-			["mr"] = 5600,
+		["Meadow Ring of Eluding"] = {
+			["H3540"] = 279700,
+			["mr"] = 279700,
 		},
 		["Dark Phantom Cape"] = {
-			["H3539"] = 50000,
 			["mr"] = 50000,
+			["H3539"] = 50000,
 		},
-		["Granite Necklace of the Bear"] = {
-			["H3537"] = 80000,
-			["mr"] = 80000,
+		["Infiltrator Pants of the Monkey"] = {
+			["H3537"] = 30000,
+			["mr"] = 30000,
 		},
-		["Rigid Gloves of Defense"] = {
-			["mr"] = 10000,
-			["H3537"] = 500000,
-			["L3537"] = 10000,
+		["Dragon Finger of Intellect"] = {
+			["H3543"] = 202496,
+			["mr"] = 202496,
 		},
 		["Bloodspattered Gloves of Strength"] = {
 			["H3537"] = 9000,
 			["mr"] = 9000,
 		},
 		["Jungle Necklace of Eluding"] = {
-			["mr"] = 101717,
 			["H3539"] = 101717,
+			["mr"] = 101717,
 		},
 		["Earthroot"] = {
-			["mr"] = 17,
-			["cc"] = 7,
-			["H3540"] = 17,
 			["H3539"] = 31,
+			["sc"] = 0,
+			["H3540"] = 17,
 			["id"] = "2449:0:0:0:0",
-			["sc"] = 0,
+			["cc"] = 7,
+			["H3543"] = 15,
+			["mr"] = 15,
 		},
-		["Murphstar of the Tiger"] = {
-			["H3540"] = 56000,
-			["mr"] = 56000,
+		["Tyrant's Greaves"] = {
+			["H3540"] = 56412,
+			["mr"] = 56412,
 		},
-		["Two of Beasts"] = {
-			["mr"] = 16185,
-			["H3539"] = 16185,
+		["Regal Leggings of the Owl"] = {
+			["H3540"] = 154000,
+			["mr"] = 154000,
 		},
-		["Recipe: Smoked Bear Meat"] = {
-			["H3537"] = 31448,
-			["mr"] = 31448,
+		["Green Lens of Nature's Wrath"] = {
+			["H3543"] = 60000,
+			["mr"] = 60000,
 		},
-		["Essence of Air"] = {
-			["H3539"] = 119999,
-			["sc"] = 0,
-			["H3540"] = 108300,
-			["cc"] = 5,
-			["mr"] = 108300,
-			["id"] = "7082:0:0:0:0",
+		["Umbral Wand of Healing"] = {
+			["H3539"] = 79500,
+			["mr"] = 79500,
 		},
-		["Rigid Leggings of the Owl"] = {
-			["H3540"] = 14750,
-			["mr"] = 14750,
+		["Green Hills of Stranglethorn - Page 14"] = {
+			["H3540"] = 779,
+			["H3539"] = 2434,
+			["H3543"] = 7118,
+			["mr"] = 7118,
 		},
-		["Ceremonial Leather Loincloth"] = {
-			["H3537"] = 2200,
-			["mr"] = 2200,
+		["Warbringer's Spaulders of the Gorilla"] = {
+			["H3543"] = 26642,
+			["mr"] = 26642,
 		},
 		["Abyssal Mail Handguards of Sorcery"] = {
 			["H3540"] = 44920,
-			["mr"] = 44920,
+			["mr"] = 39999,
+			["H3543"] = 39999,
 		},
-		["Captain's Waistguard of the Monkey"] = {
-			["H3537"] = 39976,
-			["mr"] = 39976,
+		["Elder Wizard's Mantle"] = {
+			["H3540"] = 50000,
+			["mr"] = 50000,
+			["H3539"] = 69998,
 		},
-		["Recipe: Gift of Arthas"] = {
-			["H3540"] = 99999,
-			["mr"] = 99999,
+		["Shredder Operating Manual - Page 3"] = {
+			["mr"] = 2500,
+			["sc"] = 0,
+			["cc"] = 15,
+			["H3540"] = 5000,
+			["id"] = "16647:0:0:0:0",
+			["H3543"] = 2500,
+			["H3542"] = 7599,
 		},
-		["Magister's Belt"] = {
-			["H3540"] = 236899,
-			["H3539"] = 255700,
-			["mr"] = 236899,
+		["Magus Long Staff of the Eagle"] = {
+			["H3540"] = 199998,
+			["mr"] = 155489,
+			["H3543"] = 155489,
 		},
-		["Scaled Leather Belt of the Owl"] = {
+		["Elder's Pants of Spirit"] = {
 			["H3540"] = 20000,
 			["mr"] = 20000,
 		},
-		["Scouting Belt of the Monkey"] = {
-			["mr"] = 19972,
-			["cc"] = 4,
-			["id"] = "6581:0:0:590:0",
-			["sc"] = 2,
-			["H3542"] = 19972,
+		["Forest Hoop of the Tiger"] = {
+			["H3537"] = 99999,
+			["mr"] = 99999,
 		},
 		["Arcanite Bar"] = {
 			["L3540"] = 745000,
-			["mr"] = 745000,
+			["mr"] = 710324,
 			["cc"] = 7,
-			["H3540"] = 747999,
-			["sc"] = 0,
 			["H3539"] = 867889,
+			["H3540"] = 747999,
 			["id"] = "12360:0:0:0:0",
-		},
-		["Shiny Fish Scales"] = {
-			["H3540"] = 167,
-			["H3539"] = 84,
-			["mr"] = 167,
-		},
-		["Aquamarine"] = {
-			["H3540"] = 2395,
-			["H3539"] = 14997,
-			["mr"] = 2395,
-		},
-		["Truesilver Bar"] = {
-			["mr"] = 1745,
-			["H3539"] = 1874,
-			["cc"] = 7,
-			["H3540"] = 1820,
-			["id"] = "6037:0:0:0:0",
+			["H3543"] = 710324,
 			["sc"] = 0,
-			["H3543"] = 1745,
-			["H3542"] = 1760,
 		},
-		["Heroic Gauntlets of Strength"] = {
-			["H3537"] = 112500,
-			["mr"] = 112500,
+		["Iron Grenade"] = {
+			["H3540"] = 2898,
+			["mr"] = 2900,
+			["H3543"] = 2900,
+			["H3539"] = 2978,
 		},
-		["Top Half of Advanced Armorsmithing: Volume II"] = {
-			["H3540"] = 145763,
-			["mr"] = 145763,
+		["Recipe: Fire Protection Potion"] = {
+			["H3540"] = 39000,
+			["mr"] = 37200,
+			["H3543"] = 37200,
+		},
+		["Red Ribboned Wrapping Paper"] = {
+			["H3537"] = 24356,
+			["mr"] = 24356,
+		},
+		["Opulent Leggings of the Eagle"] = {
+			["H3537"] = 89999,
+			["mr"] = 89999,
+		},
+		["Resplendent Sarong of the Eagle"] = {
+			["H3537"] = 146646,
+			["mr"] = 146646,
 		},
 		["Splitting Hatchet of the Monkey"] = {
 			["mr"] = 25500,
@@ -14673,39 +17012,40 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 4400,
 			["mr"] = 4400,
 		},
-		["Frostreaver Crown"] = {
-			["H3537"] = 95075,
-			["mr"] = 95075,
+		["Bracers of Might"] = {
+			["H3540"] = 1665000,
+			["mr"] = 1497500,
+			["H3543"] = 1497500,
+			["H3539"] = 637000,
 		},
-		["War Knife of Agility"] = {
-			["H3537"] = 9211,
-			["mr"] = 9211,
+		["Rune Thread"] = {
+			["H3537"] = 22500,
+			["mr"] = 22500,
 		},
 		["Seven of Beasts"] = {
-			["mr"] = 200000,
 			["H3539"] = 200000,
+			["mr"] = 200000,
 		},
-		["Plans: Darkrune Breastplate"] = {
-			["H3540"] = 178999,
-			["mr"] = 178999,
+		["Harpy Needler of the Eagle"] = {
+			["H3540"] = 162320,
+			["mr"] = 162320,
 		},
 		["Pattern: Green Silk Pack"] = {
 			["H3540"] = 9600,
-			["mr"] = 9600,
+			["mr"] = 7699,
+			["H3543"] = 7699,
 		},
 		["Gloom Reaper of Power"] = {
 			["H3537"] = 21291,
 			["mr"] = 21291,
 		},
-		["Large Brilliant Shard"] = {
-			["H3540"] = 47399,
-			["H3539"] = 38998,
-			["mr"] = 47399,
+		["Arachnidian Branch of Healing"] = {
+			["H3540"] = 70000,
+			["mr"] = 70000,
 		},
-		["Red Woolen Bag"] = {
-			["mr"] = 2450,
-			["H3537"] = 5363,
-			["L3537"] = 2450,
+		["Councillor's Tunic of the Owl"] = {
+			["H3540"] = 70000,
+			["mr"] = 70000,
 		},
 		["Hyperion Pauldrons of the Tiger"] = {
 			["H3537"] = 270000,
@@ -14718,248 +17058,264 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 2,
 			["H3542"] = 8000,
 		},
-		["Recipe: Philosopher's Stone"] = {
-			["H3540"] = 29899,
-			["mr"] = 29899,
-			["H3539"] = 39692,
+		["Sequoia Branch of the Bear"] = {
+			["H3540"] = 30000,
+			["mr"] = 30000,
 		},
-		["Defender Bracers of the Bear"] = {
-			["H3537"] = 9000,
-			["mr"] = 9000,
+		["Mystical Leggings of Nature Resistance"] = {
+			["H3537"] = 5995515,
+			["mr"] = 5995515,
 		},
-		["Security DELTA Data Access Card"] = {
-			["H3540"] = 199500,
-			["H3539"] = 199500,
-			["mr"] = 199500,
+		["Phalanx Boots of the Bear"] = {
+			["H3537"] = 40000,
+			["mr"] = 40000,
 		},
 		["High Chief's Gauntlets of the Bear"] = {
-			["mr"] = 35352,
 			["H3539"] = 35352,
+			["mr"] = 35352,
 		},
 		["Mechanical Chicken"] = {
 			["H3540"] = 12335,
 			["H3539"] = 9896,
-			["mr"] = 12335,
+			["H3543"] = 52301,
+			["mr"] = 52301,
 		},
-		["Oil Covered Fish"] = {
-			["H3540"] = 11000,
-			["mr"] = 11000,
-			["H3539"] = 11200,
+		["Thundering Charm"] = {
+			["H3540"] = 8699,
+			["mr"] = 18842,
+			["H3543"] = 18842,
+			["H3539"] = 9300,
 		},
-		["Gurubashi Mojo Madness"] = {
-			["H3540"] = 519000,
-			["H3539"] = 520000,
-			["mr"] = 519000,
+		["Mercenary Blade of Power"] = {
+			["H3540"] = 29727,
+			["mr"] = 29727,
 		},
-		["Windchaser Robes"] = {
-			["H3537"] = 16409,
-			["mr"] = 16409,
-		},
-		["Schematic: Thorium Tube"] = {
-			["H3540"] = 55000,
-			["mr"] = 55000,
-		},
-		["Formula: Runed Arcanite Rod"] = {
-			["mr"] = 48745,
-			["cc"] = 9,
-			["id"] = "16243:0:0:0:0",
-			["H3539"] = 139998,
-			["sc"] = 8,
-			["H3540"] = 48745,
-		},
-		["Bright Boots"] = {
-			["H3540"] = 4500,
-			["mr"] = 4500,
-		},
-		["Kingsblood"] = {
-			["mr"] = 1695,
-			["sc"] = 0,
-			["H3539"] = 1585,
-			["id"] = "3356:0:0:0:0",
+		["Copper Bar"] = {
+			["H3540"] = 4195,
+			["H3542"] = 2967,
 			["cc"] = 7,
-			["H3543"] = 1695,
-			["H3540"] = 1488,
+			["mr"] = 1490,
+			["sc"] = 0,
+			["L3543"] = 1490,
+			["H3541"] = 945,
+			["H3539"] = 1434,
+			["H3543"] = 1999,
+			["id"] = "2840:0:0:0:0",
+		},
+		["Ogron's Sash"] = {
+			["H3540"] = 227747,
+			["mr"] = 150000,
+			["H3543"] = 150000,
+			["H3539"] = 294498,
+		},
+		["Lesser Magic Essence"] = {
+			["H3539"] = 496,
+			["cc"] = 7,
+			["mr"] = 520,
+			["id"] = "10938:0:0:0:0",
+			["H3540"] = 490,
+			["H3543"] = 520,
+			["sc"] = 0,
+		},
+		["Necromancer Leggings"] = {
+			["H3539"] = 195004,
+			["mr"] = 195004,
+		},
+		["Pattern: Bottomless Bag"] = {
+			["mr"] = 17990000,
+			["cc"] = 9,
+			["id"] = "14510:0:0:0:0",
+			["sc"] = 2,
+			["H3542"] = 17990000,
 		},
 		["High Councillor's Cloak of Shadow Wrath"] = {
 			["H3540"] = 250000,
 			["mr"] = 250000,
 		},
-		["Glimmering Mail Pauldrons"] = {
-			["H3537"] = 14800,
-			["mr"] = 14800,
+		["Minor Mana Potion"] = {
+			["H3539"] = 97,
+			["sc"] = 0,
+			["H3540"] = 65,
+			["id"] = "2455:0:0:0:0",
+			["cc"] = 0,
+			["H3543"] = 55,
+			["mr"] = 55,
 		},
-		["Abyssal Leather Leggings of Sorcery"] = {
-			["H3539"] = 390000,
-			["sc"] = 2,
-			["H3540"] = 255999,
-			["cc"] = 4,
-			["mr"] = 255999,
-			["id"] = "20665:0:0:2155:0",
+		["Deepfury Bracers"] = {
+			["H3539"] = 40000,
+			["H3543"] = 72149,
+			["mr"] = 72149,
 		},
-		["Schematic: Flawless Arcanite Rifle"] = {
-			["L3540"] = 599999,
-			["mr"] = 599999,
-			["cc"] = 9,
-			["H3540"] = 899999,
-			["sc"] = 3,
-			["id"] = "16056:0:0:0:0",
+		["Elven Spirit Claws"] = {
+			["H3540"] = 120000,
+			["H3539"] = 194500,
+			["H3543"] = 73500,
+			["mr"] = 73500,
 		},
-		["Glimmering Mail Coif"] = {
-			["H3537"] = 29800,
-			["mr"] = 29800,
+		["Vibrant Silk Cape"] = {
+			["H3543"] = 3500,
+			["mr"] = 3500,
 		},
-		["Kaleidoscope Chain"] = {
-			["mr"] = 517724,
-			["H3539"] = 517724,
+		["Vorpal Dagger of the Tiger"] = {
+			["H3539"] = 57133,
+			["mr"] = 57133,
 		},
-		["Gurubashi Helm"] = {
-			["H3537"] = 944741,
-			["mr"] = 944741,
+		["Ebonclaw Reaver of the Monkey"] = {
+			["H3539"] = 170352,
+			["mr"] = 170352,
 		},
-		["Champion's Greaves of Power"] = {
-			["H3537"] = 118880,
-			["mr"] = 118880,
+		["Pattern: Rugged Leather Pants"] = {
+			["H3543"] = 10400,
+			["mr"] = 10400,
 		},
 		["Lunar Coronet of Healing"] = {
 			["H3537"] = 87291,
 			["mr"] = 87291,
 		},
-		["Outrunner's Cord of the Tiger"] = {
-			["H3540"] = 10000,
-			["mr"] = 10000,
-			["H3539"] = 20000,
+		["Welken Ring"] = {
+			["H3540"] = 57500,
+			["mr"] = 57500,
 		},
-		["Four of Warlords"] = {
-			["mr"] = 28000,
-			["H3537"] = 28999,
-			["L3537"] = 28000,
+		["Devilsaur Leggings"] = {
+			["H3540"] = 1067500,
+			["mr"] = 1085000,
+			["H3543"] = 1085000,
+			["H3539"] = 1194540,
 		},
-		["Praetorian Gloves of the Bear"] = {
-			["H3539"] = 58101,
-			["sc"] = 2,
-			["id"] = "15184:0:0:1209:0",
-			["cc"] = 4,
-			["mr"] = 58101,
+		["Lifelike Mechanical Toad"] = {
+			["H3537"] = 189900,
+			["mr"] = 189900,
 		},
-		["Battering Hammer of the Monkey"] = {
-			["H3540"] = 20000,
-			["mr"] = 20000,
+		["Shadoweave Shoulders"] = {
+			["H3540"] = 119499,
+			["mr"] = 149499,
+			["H3543"] = 149499,
+			["H3539"] = 138497,
 		},
-		["Marauder's Leggings of the Tiger"] = {
-			["H3537"] = 35000,
-			["mr"] = 35000,
+		["Scroll of Intellect"] = {
+			["H3540"] = 1250,
+			["H3539"] = 1618,
+			["H3543"] = 1225,
+			["mr"] = 1225,
 		},
 		["Pagan Cape of Stamina"] = {
 			["H3537"] = 6000,
 			["mr"] = 6000,
 		},
-		["Nightsky Trousers"] = {
-			["H3537"] = 38004,
-			["mr"] = 38004,
+		["Major Rejuvenation Potion"] = {
+			["mr"] = 99896,
+			["H3543"] = 99896,
+			["H3539"] = 149998,
 		},
 		["Dragon Finger of the Falcon"] = {
 			["H3540"] = 119999,
 			["mr"] = 119999,
+			["H3543"] = 119999,
 		},
-		["Aboriginal Gloves of the Eagle"] = {
-			["H3537"] = 4480,
-			["mr"] = 4480,
+		["Chimeric Boots"] = {
+			["H3537"] = 600000,
+			["mr"] = 600000,
 		},
-		["Destiny"] = {
-			["H3540"] = 200000,
-			["mr"] = 200000,
+		["Renegade Pauldrons of the Monkey"] = {
+			["H3543"] = 19000,
+			["mr"] = 19000,
 		},
-		["Bolt of Silk Cloth"] = {
-			["L3540"] = 1560,
-			["mr"] = 1560,
-			["cc"] = 7,
-			["H3540"] = 1642,
-			["sc"] = 0,
-			["H3539"] = 905,
-			["id"] = "4305:0:0:0:0",
+		["Bloodforged Belt of the Whale"] = {
+			["H3539"] = 25106,
+			["mr"] = 25106,
 		},
-		["Elixir of Lesser Agility"] = {
-			["H3540"] = 40199,
-			["mr"] = 40199,
-			["H3539"] = 40400,
+		["Fiery Chain Girdle"] = {
+			["mr"] = 1599998,
+			["H3539"] = 1599998,
 		},
 		["Fiery Chain Shoulders"] = {
-			["mr"] = 2449999,
+			["mr"] = 2449998,
+			["H3543"] = 2449998,
 			["H3539"] = 2449999,
 		},
-		["Arcane Pads"] = {
-			["mr"] = 100000,
-			["cc"] = 4,
-			["id"] = "8288:0:0:0:0",
-			["sc"] = 1,
-			["H3540"] = 100000,
+		["Aboriginal Footwraps of the Whale"] = {
+			["H3539"] = 12041,
+			["mr"] = 12041,
 		},
 		["Engraved Girdle of the Falcon"] = {
-			["H3537"] = 52330,
-			["mr"] = 52330,
+			["H3543"] = 49947,
+			["mr"] = 49947,
 		},
-		["Formula: Enchant Boots - Greater Agility"] = {
-			["H3540"] = 17599,
-			["mr"] = 17599,
-			["H3539"] = 18200,
+		["Plans: Hammer of the Titans"] = {
+			["H3540"] = 48748,
+			["mr"] = 32999,
+			["H3543"] = 32999,
+			["H3539"] = 94999,
 		},
 		["Witchfury"] = {
 			["H3540"] = 54680,
-			["mr"] = 54680,
+			["mr"] = 56999,
+			["H3543"] = 56999,
 			["H3539"] = 54782,
 		},
-		["Plans: Radiant Boots"] = {
-			["mr"] = 8458,
-			["H3539"] = 8458,
+		["Assassin's Blade"] = {
+			["H3540"] = 899999,
+			["mr"] = 950000,
+			["H3543"] = 950000,
+			["H3539"] = 1005000,
 		},
-		["Scorpashi Leggings"] = {
-			["H3537"] = 30289,
-			["mr"] = 30289,
+		["Mithril Bar"] = {
+			["H3539"] = 1575,
+			["cc"] = 7,
+			["sc"] = 0,
+			["H3540"] = 3998,
+			["id"] = "3860:0:0:0:0",
+			["H3543"] = 4500,
+			["mr"] = 4500,
 		},
-		["Gaea's Cloak of the Whale"] = {
-			["H3540"] = 20000,
-			["mr"] = 20000,
-			["H3539"] = 20000,
+		["Pattern: Green Holiday Shirt"] = {
+			["H3537"] = 160000,
+			["mr"] = 160000,
 		},
-		["Greater Maul of the Boar"] = {
-			["H3537"] = 258624,
-			["mr"] = 258624,
+		["High Chief's Shield of Defense"] = {
+			["H3537"] = 89899,
+			["mr"] = 89899,
 		},
-		["The Black Knight"] = {
-			["H3537"] = 90578,
-			["mr"] = 90578,
+		["Bright Boots"] = {
+			["H3540"] = 4500,
+			["mr"] = 4500,
+		},
+		["Gaea's Amice of Frozen Wrath"] = {
+			["H3540"] = 19955,
+			["mr"] = 19955,
+		},
+		["Recipe: Curiously Tasty Omelet"] = {
+			["H3540"] = 14999,
+			["mr"] = 98000,
+			["H3543"] = 98000,
+			["H3539"] = 88998,
 		},
 		["Hand of Edward the Odd"] = {
 			["H3540"] = 2465099,
 			["mr"] = 2465099,
 		},
-		["Sentinel Buckler of the Bear"] = {
-			["mr"] = 16000,
+		["Large Opal"] = {
+			["H3540"] = 8999,
+			["H3539"] = 7500,
+			["H3543"] = 7200,
+			["mr"] = 7200,
+		},
+		["Elegant Circlet of Fire Resistance"] = {
+			["H3537"] = 150000,
+			["mr"] = 150000,
+		},
+		["Gurubashi Coin"] = {
+			["H3540"] = 3607,
+			["H3539"] = 3500,
+			["H3543"] = 2500,
+			["mr"] = 2500,
+		},
+		["Abyssal Leather Leggings of Restoration"] = {
+			["mr"] = 295247,
+			["sc"] = 2,
+			["id"] = "20665:0:0:2156:0",
+			["H3537"] = 295247,
 			["cc"] = 4,
-			["id"] = "7463:0:0:1193:0",
-			["sc"] = 6,
-			["H3542"] = 16000,
-		},
-		["Lambent Scale Shield"] = {
-			["mr"] = 7800,
-			["H3537"] = 13200,
-			["L3537"] = 7800,
-		},
-		["Master's Hat of the Wolf"] = {
-			["H3537"] = 60000,
-			["mr"] = 60000,
-		},
-		["Wrangler's Cloak of the Eagle"] = {
-			["H3537"] = 6000,
-			["mr"] = 6000,
-		},
-		["Starfaller"] = {
-			["mr"] = 199999,
-			["H3539"] = 199999,
-		},
-		["Swashbuckler's Eyepatch of the Owl"] = {
-			["H3537"] = 79880,
-			["mr"] = 79880,
 		},
 		["Valorous Greaves"] = {
 			["H3537"] = 20855,
@@ -14976,459 +17332,479 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 1,
 			["H3542"] = 40000,
 		},
-		["Weak Flux"] = {
-			["mr"] = 2866,
-			["H3539"] = 2866,
+		["Superior Leggings of Spirit"] = {
+			["H3537"] = 20040,
+			["mr"] = 20040,
 		},
 		["Sliverblade"] = {
 			["H3540"] = 449500,
 			["H3539"] = 299999,
-			["mr"] = 449500,
+			["H3543"] = 705000,
+			["mr"] = 705000,
 		},
-		["Pattern: Guardian Armor"] = {
-			["H3540"] = 73933,
-			["mr"] = 73933,
-			["H3539"] = 73934,
+		["Renegade Chestguard of the Bear"] = {
+			["H3540"] = 56462,
+			["mr"] = 56462,
+			["H3539"] = 30000,
 		},
 		["Wicked Chain Cloak of the Bear"] = {
 			["H3540"] = 26946,
 			["mr"] = 26946,
 		},
-		["Hillman's Leather Vest"] = {
-			["mr"] = 11111,
-			["H3539"] = 11111,
+		["Durable Belt of the Eagle"] = {
+			["H3537"] = 8800,
+			["mr"] = 8800,
 		},
 		["Tender Crab Meat"] = {
-			["mr"] = 2900,
+			["mr"] = 2485,
+			["H3543"] = 2485,
 			["H3539"] = 2900,
 		},
-		["Darkweave Breeches"] = {
-			["mr"] = 313750,
-			["H3539"] = 313750,
+		["Plans: Storm Gauntlets"] = {
+			["mr"] = 95000,
+			["H3543"] = 95000,
+			["H3539"] = 57497,
 		},
-		["Wild Leather Helmet of the Monkey"] = {
-			["H3540"] = 33333,
-			["mr"] = 33333,
-			["H3539"] = 44444,
-		},
-		["Linen Bandage"] = {
-			["H3540"] = 70,
-			["mr"] = 70,
-		},
-		["Essence of Fire"] = {
-			["mr"] = 3899,
-			["sc"] = 0,
-			["cc"] = 5,
-			["id"] = "7078:0:0:0:0",
-			["H3540"] = 1980,
-			["H3543"] = 3899,
-			["H3539"] = 1410,
-		},
-		["Lunar Handwraps of the Eagle"] = {
-			["H3537"] = 30000,
+		["Sorcerer Hat of the Eagle"] = {
+			["H3543"] = 30000,
 			["mr"] = 30000,
 		},
+		["Medium Leather"] = {
+			["H3539"] = 184,
+			["cc"] = 7,
+			["mr"] = 326,
+			["id"] = "2319:0:0:0:0",
+			["H3540"] = 188,
+			["H3543"] = 326,
+			["sc"] = 0,
+		},
+		["Carnelian Loop of Arcane Resistance"] = {
+			["H3537"] = 48907,
+			["mr"] = 48907,
+		},
+		["Ballast Maul of Stamina"] = {
+			["H3540"] = 120924,
+			["mr"] = 120924,
+		},
 		["Deadly Kris of Agility"] = {
-			["mr"] = 36000,
 			["H3539"] = 36000,
+			["mr"] = 36000,
 		},
 		["Splitting Hatchet of the Whale"] = {
-			["mr"] = 14605,
 			["H3539"] = 14605,
+			["mr"] = 14605,
 		},
-		["Recipe: Crispy Bat Wing"] = {
-			["mr"] = 36999,
-			["H3539"] = 36999,
+		["Shimmering Cloak of Fiery Wrath"] = {
+			["H3539"] = 12354,
+			["mr"] = 12354,
 		},
-		["Enduring Cap"] = {
-			["mr"] = 62128,
-			["H3539"] = 62128,
+		["Gargoyle's Bite"] = {
+			["H3539"] = 50000,
+			["cc"] = 2,
+			["id"] = "12989:0:0:0:0",
+			["mr"] = 70738,
+			["sc"] = 6,
+			["H3542"] = 70738,
 		},
-		["Opulent Robes of Frozen Wrath"] = {
-			["H3537"] = 463066,
-			["mr"] = 463066,
+		["Merc Sword of the Wolf"] = {
+			["H3540"] = 5000,
+			["mr"] = 5000,
+			["H3539"] = 5000,
 		},
-		["Five of Portals"] = {
-			["H3540"] = 89999,
-			["H3539"] = 99926,
-			["mr"] = 89999,
+		["Revenant Helmet of Stamina"] = {
+			["H3537"] = 54549,
+			["mr"] = 54549,
 		},
-		["Pillager's Pauldrons of the Monkey"] = {
-			["H3537"] = 26879,
-			["mr"] = 26879,
+		["Rose Colored Goggles"] = {
+			["mr"] = 30000,
+			["cc"] = 4,
+			["id"] = "10503:0:0:0:0",
+			["H3543"] = 30000,
+			["sc"] = 1,
 		},
-		["Wool Bandage"] = {
-			["H3539"] = 1205,
-			["mr"] = 1205,
+		["Krol Blade"] = {
+			["H3540"] = 2194999,
+			["mr"] = 2050000,
+			["H3543"] = 2050000,
+			["H3539"] = 2229996,
 		},
-		["Insignia Bracers"] = {
-			["H3537"] = 20000,
-			["mr"] = 20000,
+		["Warbringer's Sabatons  of the Bear"] = {
+			["H3540"] = 11552,
+			["mr"] = 11552,
 		},
-		["Green Lens of Frozen Wrath"] = {
-			["mr"] = 89900,
-			["H3539"] = 89900,
+		["Smoked Desert Dumplings"] = {
+			["H3540"] = 20600,
+			["H3539"] = 23000,
+			["H3543"] = 22230,
+			["mr"] = 22230,
 		},
-		["Bloodvine Vest"] = {
-			["H3540"] = 2257500,
-			["H3539"] = 1889500,
-			["mr"] = 2257500,
+		["Huntsman's Cap of the Monkey"] = {
+			["H3543"] = 27600,
+			["mr"] = 27600,
 		},
 		["Recipe: Greater Arcane Protection Potion"] = {
-			["mr"] = 220000,
-			["cc"] = 9,
-			["id"] = "13497:0:0:0:0",
 			["H3539"] = 300000,
+			["cc"] = 9,
 			["sc"] = 6,
 			["H3540"] = 220000,
+			["id"] = "13497:0:0:0:0",
+			["H3543"] = 179900,
+			["mr"] = 179900,
 		},
-		["Dense Triangle Mace"] = {
-			["H3537"] = 350000,
-			["mr"] = 350000,
-		},
-		["Scouting Cloak of Intellect"] = {
-			["mr"] = 4400,
-			["cc"] = 4,
-			["id"] = "6585:0:0:94:0",
+		["Arcanist Bindings"] = {
+			["mr"] = 1665000,
 			["sc"] = 1,
-			["H3542"] = 4400,
+			["H3540"] = 1665000,
+			["id"] = "16799:0:0:0:0",
+			["cc"] = 4,
+		},
+		["Renegade Leggings of the Bear"] = {
+			["H3543"] = 65099,
+			["mr"] = 65099,
 		},
 		["Short Bastard Sword of the Eagle"] = {
-			["H3537"] = 4500,
-			["mr"] = 4500,
+			["H3543"] = 3199,
+			["mr"] = 3199,
 		},
 		["Resilient Robe"] = {
 			["H3537"] = 7440,
 			["mr"] = 7440,
 		},
-		["Shining Silver Breastplate"] = {
-			["H3540"] = 110000,
-			["mr"] = 110000,
+		["Bloodspattered Sabatons of Stamina"] = {
+			["H3537"] = 4000,
+			["mr"] = 4000,
 		},
-		["Band of the Unicorn"] = {
-			["H3540"] = 142090,
-			["H3539"] = 198000,
-			["mr"] = 142090,
+		["Acrobatic Staff of Intellect"] = {
+			["H3543"] = 80000,
+			["mr"] = 80000,
 		},
-		["Lava Core"] = {
-			["H3539"] = 34200,
-			["cc"] = 5,
-			["mr"] = 28078,
-			["id"] = "17011:0:0:0:0",
-			["sc"] = 0,
-			["H3543"] = 28078,
-			["H3540"] = 32999,
+		["Spinel Ring of Nature Resistance"] = {
+			["H3537"] = 390000,
+			["mr"] = 390000,
 		},
-		["Blade of the Basilisk"] = {
-			["H3540"] = 159999,
-			["mr"] = 159999,
-			["H3539"] = 195000,
+		["High Councillor's Cloak of Frozen Wrath"] = {
+			["H3540"] = 200000,
+			["mr"] = 225419,
+			["H3543"] = 225419,
+			["H3539"] = 200000,
 		},
-		["Knight's Gauntlets of the Whale"] = {
-			["H3540"] = 17650,
-			["mr"] = 17650,
-			["H3539"] = 16230,
+		["Ritual Stein of the Owl"] = {
+			["H3540"] = 20000,
+			["mr"] = 20000,
 		},
-		["Superior Boots of the Eagle"] = {
-			["H3537"] = 16300,
-			["mr"] = 16300,
+		["Barbaric Battle Axe of the Whale"] = {
+			["H3537"] = 9966,
+			["mr"] = 9966,
 		},
-		["Blesswind Hammer of Arcane Wrath"] = {
-			["mr"] = 45742,
-			["sc"] = 4,
-			["id"] = "15229:0:0:1808:0",
-			["cc"] = 2,
-			["H3540"] = 45742,
+		["Champion's Cape of the Monkey"] = {
+			["H3540"] = 20000,
+			["mr"] = 20000,
 		},
 		["Recipe: Elixir of Demonslaying"] = {
-			["mr"] = 59499,
+			["mr"] = 21000,
+			["H3543"] = 21000,
 			["H3539"] = 59499,
 		},
-		["Wall of the Dead"] = {
-			["H3539"] = 308000,
-			["mr"] = 308000,
+		["Venomshroud Leggings"] = {
+			["H3540"] = 129999,
+			["mr"] = 129999,
+			["H3539"] = 159999,
 		},
 		["Merc Sword of the Eagle"] = {
 			["H3540"] = 9919,
 			["mr"] = 9919,
 			["H3539"] = 7250,
 		},
-		["Silver-lined Belt"] = {
-			["H3537"] = 280000,
-			["mr"] = 280000,
+		["Peacebloom"] = {
+			["sc"] = 0,
+			["H3539"] = 94,
+			["cc"] = 7,
+			["id"] = "2447:0:0:0:0",
+			["H3540"] = 524,
+			["mr"] = 400,
+			["H3543"] = 400,
+			["H3542"] = 184,
 		},
 		["Dimensional Ripper - Everlook"] = {
-			["mr"] = 749999,
+			["mr"] = 749997,
+			["H3543"] = 749997,
 			["H3539"] = 749999,
 		},
-		["Ancient Gauntlets of the Owl"] = {
-			["H3537"] = 11574,
-			["mr"] = 11574,
+		["Arctic Ring of the Tiger"] = {
+			["H3537"] = 42392,
+			["mr"] = 42392,
 		},
-		["Frost Shock and You"] = {
-			["mr"] = 1877,
-			["H3537"] = 1979,
-			["L3537"] = 1877,
+		["Scalping Tomahawk of Agility"] = {
+			["H3543"] = 5445,
+			["mr"] = 5445,
 		},
-		["Commander's Gauntlets of the Tiger"] = {
-			["H3537"] = 45000,
-			["mr"] = 45000,
+		["Masterwork Breastplate of Nature Resistance"] = {
+			["H3540"] = 7500000,
+			["mr"] = 7500000,
+			["H3539"] = 6200000,
 		},
 		["Glowstar Rod of Shadow Wrath"] = {
-			["mr"] = 149999,
 			["H3539"] = 149999,
+			["mr"] = 149999,
 		},
-		["Krol Blade"] = {
-			["H3540"] = 2194999,
-			["mr"] = 2194999,
-			["H3539"] = 2229996,
+		["Sorcerer Bracelets of the Owl"] = {
+			["H3543"] = 9722,
+			["mr"] = 9722,
 		},
-		["Councillor's Scepter of Fiery Wrath"] = {
-			["mr"] = 273665,
-			["H3539"] = 273665,
+		["Hawkeye's Epaulets"] = {
+			["H3537"] = 20000,
+			["mr"] = 20000,
 		},
-		["Serpentine Loop of Arcane Resistance"] = {
-			["mr"] = 500000,
-			["cc"] = 4,
-			["id"] = "11977:0:0:1324:0",
-			["sc"] = 0,
-			["H3539"] = 500000,
-			["H3542"] = 500000,
+		["Sergeant's Warhammer of Strength"] = {
+			["H3537"] = 2040,
+			["mr"] = 2040,
 		},
-		["The Silencer"] = {
-			["H3540"] = 117500,
-			["mr"] = 117500,
+		["Rigid Cape of Agility"] = {
+			["H3540"] = 17278,
+			["mr"] = 17278,
+			["H3543"] = 17278,
+			["H3539"] = 17278,
 		},
-		["Practice Lock"] = {
-			["mr"] = 11500,
-			["H3539"] = 11500,
+		["Iron Buckle"] = {
+			["H3540"] = 4999,
+			["mr"] = 5399,
+			["H3543"] = 5399,
+			["H3539"] = 4000,
 		},
-		["Spinel Ring of Nature Resistance"] = {
-			["H3537"] = 390000,
-			["mr"] = 390000,
+		["Splitting Hatchet of the Tiger"] = {
+			["H3543"] = 22200,
+			["mr"] = 22200,
 		},
-		["Greater Healing Potion"] = {
-			["H3539"] = 200,
-			["sc"] = 0,
-			["H3540"] = 438,
-			["cc"] = 0,
-			["mr"] = 438,
-			["id"] = "1710:0:0:0:0",
+		["Turtle Meat"] = {
+			["H3540"] = 339,
+			["mr"] = 590,
+			["H3543"] = 590,
+			["H3539"] = 368,
 		},
-		["Cabalist Helm of the Monkey"] = {
-			["H3537"] = 50500,
-			["mr"] = 50500,
+		["Stringy Vulture Meat"] = {
+			["H3543"] = 373,
+			["mr"] = 373,
 		},
 		["Wintersbite"] = {
-			["mr"] = 14381,
-			["cc"] = 7,
-			["id"] = "3819:0:0:0:0",
 			["H3539"] = 16598,
+			["cc"] = 7,
 			["sc"] = 0,
 			["H3540"] = 14381,
+			["id"] = "3819:0:0:0:0",
+			["H3543"] = 12499,
+			["mr"] = 12499,
 		},
-		["Warmonger's Gauntlets of Arcane Wrath"] = {
-			["H3537"] = 27931,
-			["mr"] = 27931,
+		["Executioner's Cleaver"] = {
+			["H3539"] = 500000,
+			["H3543"] = 399999,
+			["mr"] = 399999,
 		},
-		["Lean Wolf Flank"] = {
-			["H3540"] = 503,
-			["mr"] = 503,
-			["H3539"] = 1397,
+		["Frostsaber E'ko"] = {
+			["H3540"] = 16895,
+			["H3539"] = 14900,
+			["H3543"] = 17500,
+			["mr"] = 17500,
 		},
 		["Scouting Gloves of the Whale"] = {
 			["H3540"] = 50000,
 			["mr"] = 50000,
 		},
-		["Meadow Ring of the Monkey"] = {
-			["H3540"] = 144594,
-			["mr"] = 144594,
-			["H3539"] = 144594,
+		["Adventurer's Bracers of the Monkey"] = {
+			["H3537"] = 198999,
+			["mr"] = 198999,
 		},
-		["Outrunner's Cloak of Strength"] = {
-			["H3537"] = 4999,
-			["mr"] = 4999,
+		["Recipe: Elixir of Brute Force"] = {
+			["H3539"] = 2500000,
+			["mr"] = 2500000,
 		},
-		["Girdle of Golem Strength"] = {
-			["H3540"] = 72500,
-			["mr"] = 72500,
+		["Splitting Hatchet of Agility"] = {
+			["H3543"] = 22500,
+			["mr"] = 22500,
 		},
-		["Enchanted Mageweave Pouch"] = {
-			["mr"] = 34000,
-			["sc"] = 3,
-			["id"] = "22246:0:0:0:0",
-			["cc"] = 1,
-			["H3540"] = 34000,
+		["Scaled Leather Shoulders of the Eagle"] = {
+			["mr"] = 10000,
+			["cc"] = 4,
+			["id"] = "9834:0:0:854:0",
+			["sc"] = 2,
+			["H3536"] = 10000,
 		},
-		["Speedsteel Rapier"] = {
-			["mr"] = 259545,
-			["H3539"] = 259545,
+		["Jazeraint Helm of the Whale"] = {
+			["H3543"] = 9900,
+			["mr"] = 9900,
 		},
 		["Shimmering Gloves of the Owl"] = {
 			["mr"] = 23905,
+			["cc"] = 4,
+			["id"] = "6565:0:0:762:0",
 			["sc"] = 1,
 			["H3529"] = 23905,
-			["id"] = "6565:0:0:762:0",
+		},
+		["Pattern: Runecloth Bag"] = {
+			["sc"] = 2,
+			["mr"] = 59997,
+			["cc"] = 9,
+			["H3539"] = 36956,
+			["id"] = "14468:0:0:0:0",
+			["H3540"] = 93871,
+			["H3543"] = 59997,
+			["H3542"] = 64702,
+		},
+		["Infernal Stone"] = {
+			["H3537"] = 16695,
+			["mr"] = 16695,
+		},
+		["Commander's Armor of Fire Resistance"] = {
+			["mr"] = 500000,
 			["cc"] = 4,
+			["H3540"] = 500000,
+			["id"] = "10378:0:0:1425:0",
+			["H3543"] = 500000,
+			["sc"] = 4,
 		},
-		["Packet of Tharlendris Seeds"] = {
-			["mr"] = 980,
-			["H3537"] = 985,
-			["L3537"] = 980,
+		["Black Mageweave Leggings"] = {
+			["H3539"] = 15000,
+			["sc"] = 1,
+			["cc"] = 4,
+			["id"] = "9999:0:0:0:0",
+			["L3539"] = 14999,
+			["H3540"] = 14496,
+			["mr"] = 14496,
 		},
-		["Woolen Boots"] = {
+		["Orange Hakkari Bijou"] = {
+			["H3540"] = 29299,
+			["H3539"] = 23999,
+			["H3543"] = 23999,
+			["mr"] = 23999,
+		},
+		["Knight's Gauntlets of the Whale"] = {
+			["H3540"] = 17650,
+			["mr"] = 17650,
+			["H3539"] = 16230,
+		},
+		["Bindings of Elements"] = {
+			["H3539"] = 50000,
+			["H3543"] = 39800,
+			["mr"] = 39800,
+		},
+		["Pattern: Runic Leather Bracers"] = {
+			["H3539"] = 9900,
+			["sc"] = 1,
+			["id"] = "15739:0:0:0:0",
+			["mr"] = 9900,
+			["cc"] = 9,
+		},
+		["High Councillor's Mantle of Frozen Wrath"] = {
+			["H3540"] = 269000,
+			["mr"] = 269000,
+			["H3539"] = 217000,
+		},
+		["Scouting Gloves of Defense"] = {
+			["mr"] = 115269,
+			["cc"] = 4,
+			["id"] = "6586:0:0:108:0",
+			["sc"] = 2,
+			["H3542"] = 115269,
+		},
+		["Aboriginal Footwraps of Arcane Wrath"] = {
 			["H3537"] = 10000,
 			["mr"] = 10000,
 		},
-		["Sharpshooter Harquebus of the Monkey"] = {
-			["H3537"] = 155834,
-			["mr"] = 155834,
+		["Gossamer Cape of Intellect"] = {
+			["H3537"] = 25000,
+			["mr"] = 25000,
 		},
-		["Needle Threader"] = {
-			["mr"] = 50000,
-			["H3537"] = 60303,
-			["L3537"] = 50000,
+		["Imperial Plate Leggings"] = {
+			["H3537"] = 99999,
+			["mr"] = 99999,
 		},
-		["Forest Leather Gloves"] = {
-			["mr"] = 200000,
-			["sc"] = 2,
-			["H3529"] = 200000,
-			["id"] = "3058:0:0:0:0",
-			["cc"] = 4,
+		["Powerful Anti-Venom"] = {
+			["H3540"] = 38927,
+			["mr"] = 38927,
 		},
-		["Soldier's Armor of the Monkey"] = {
-			["H3540"] = 30000,
-			["mr"] = 30000,
+		["Soft-soled Linen Boots"] = {
+			["H3540"] = 2500,
+			["mr"] = 4100,
+			["H3543"] = 4100,
 		},
-		["Recipe: Magic Resistance Potion"] = {
-			["H3540"] = 34800,
-			["H3539"] = 35000,
-			["mr"] = 34800,
+		["Embossed Plate Gauntlets of Power"] = {
+			["H3543"] = 13855,
+			["mr"] = 13855,
 		},
-		["Willow Belt of Fiery Wrath"] = {
-			["H3537"] = 5000,
-			["mr"] = 5000,
+		["Runed Stygian Leggings"] = {
+			["H3540"] = 1952400,
+			["mr"] = 2818499,
+			["H3543"] = 2818499,
+			["H3539"] = 2817000,
 		},
-		["Harvest Cloak"] = {
-			["H3537"] = 1300,
-			["mr"] = 1300,
-		},
-		["Scouting Gloves of the Owl"] = {
-			["mr"] = 26568,
-			["cc"] = 4,
-			["id"] = "6586:0:0:763:0",
-			["H3537"] = 26568,
-			["sc"] = 2,
-		},
-		["Eternal Cloak of Healing"] = {
-			["H3537"] = 205223,
-			["mr"] = 205223,
-		},
-		["Green Hills of Stranglethorn - Page 26"] = {
-			["H3540"] = 790,
-			["H3539"] = 2869,
-			["mr"] = 790,
-		},
-		["Tiger Meat"] = {
-			["H3540"] = 849,
-			["mr"] = 849,
-			["H3539"] = 212,
-		},
-		["Enduring Pauldrons"] = {
-			["H3537"] = 16591,
-			["mr"] = 16591,
-		},
-		["Scarlet Gauntlets"] = {
-			["H3540"] = 7999,
-			["H3539"] = 9299,
-			["mr"] = 7999,
-		},
-		["Heart of the Wild"] = {
-			["H3540"] = 396,
-			["H3539"] = 400,
-			["mr"] = 396,
-		},
-		["Headsplitter"] = {
-			["H3540"] = 60000,
-			["mr"] = 60000,
-		},
-		["Green Holiday Shirt"] = {
-			["mr"] = 199995,
-			["H3539"] = 199995,
+		["Lord's Breastplate of the Wolf"] = {
+			["H3537"] = 46165,
+			["mr"] = 46165,
 		},
 		["Shadow Hood"] = {
-			["H3537"] = 290563,
-			["mr"] = 290563,
+			["H3543"] = 153704,
+			["mr"] = 153704,
 		},
-		["Mageroyal"] = {
-			["mr"] = 97,
-			["H3539"] = 73,
-			["cc"] = 7,
-			["H3540"] = 41,
-			["id"] = "785:0:0:0:0",
-			["sc"] = 0,
-			["H3543"] = 97,
-			["H3542"] = 122,
+		["Elegant Tunic of Shadow Wrath"] = {
+			["H3543"] = 249998,
+			["mr"] = 249998,
 		},
-		["Flask of Oil"] = {
-			["mr"] = 194,
-			["sc"] = 0,
-			["id"] = "814:0:0:0:0",
-			["cc"] = 7,
-			["H3540"] = 194,
+		["Wanderer's Armor of the Monkey"] = {
+			["H3540"] = 100000,
+			["mr"] = 100000,
 		},
-		["Legguards of the Vault"] = {
-			["mr"] = 759999,
-			["H3539"] = 759999,
+		["Jet Chain of Spirit"] = {
+			["H3537"] = 54300,
+			["mr"] = 54300,
 		},
-		["Dark Iron Boots of the Boar"] = {
-			["mr"] = 1650000,
-			["H3539"] = 1650000,
+		["Shimmering Cloak of Arcane Wrath"] = {
+			["H3537"] = 9000,
+			["mr"] = 9000,
 		},
-		["Greenstone Talisman of the Bear"] = {
-			["mr"] = 30000,
-			["H3539"] = 30000,
+		["Monk's Staff of the Owl"] = {
+			["H3537"] = 49920,
+			["mr"] = 49920,
 		},
-		["Nightshade Girdle of the Bear"] = {
-			["H3537"] = 40000,
-			["mr"] = 40000,
+		["Scaled Leather Tunic of the Whale"] = {
+			["H3537"] = 23176,
+			["mr"] = 23176,
 		},
-		["Acrobatic Staff of the Whale"] = {
-			["H3540"] = 12500,
-			["mr"] = 12500,
+		["Cat Carrier (Cornish Rex)"] = {
+			["H3539"] = 200000,
+			["mr"] = 200000,
 		},
 		["Painbringer of Strength"] = {
 			["H3537"] = 120000,
 			["mr"] = 120000,
 		},
-		["Barbed Club of Healing"] = {
-			["mr"] = 8847,
-			["H3539"] = 8847,
+		["Goblin Land Mine"] = {
+			["H3537"] = 10685,
+			["mr"] = 10685,
 		},
 		["High Councillor's Boots of the Owl"] = {
-			["mr"] = 177839,
+			["mr"] = 179310,
+			["H3543"] = 179310,
 			["H3539"] = 177839,
 		},
-		["Formula: Enchant Boots - Lesser Spirit"] = {
-			["H3540"] = 5000,
-			["H3539"] = 5500,
-			["mr"] = 5000,
+		["Blasthorn Bow of Marksmanship"] = {
+			["mr"] = 90000,
+			["H3537"] = 136829,
+			["L3537"] = 90000,
 		},
-		["Abyssal Crest"] = {
-			["H3540"] = 32299,
-			["H3539"] = 31332,
-			["mr"] = 32299,
+		["Black Dragonscale Breastplate"] = {
+			["mr"] = 2890000,
+			["H3543"] = 2890000,
+			["H3539"] = 3299997,
 		},
-		["Aquamarine Ring of Arcane Resistance"] = {
-			["mr"] = 136537,
+		["Bristlebark Cape"] = {
+			["mr"] = 50000,
+			["sc"] = 1,
+			["H3540"] = 50000,
+			["id"] = "14571:0:0:0:0",
 			["cc"] = 4,
-			["id"] = "11974:0:0:1321:0",
-			["sc"] = 0,
-			["H3540"] = 136537,
 		},
-		["Pattern: Heavy Scorpid Vest"] = {
-			["H3540"] = 20600,
-			["mr"] = 20600,
+		["Stone Hammer of the Bear"] = {
+			["H3540"] = 60000,
+			["mr"] = 60000,
 		},
 		["Abyssal Plate Gauntlets of Restoration"] = {
 			["H3540"] = 50000,
@@ -15436,119 +17812,132 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Magiskull Cuffs"] = {
 			["H3539"] = 109000,
-			["mr"] = 109000,
+			["H3543"] = 120500,
+			["mr"] = 120500,
 		},
-		["Recipe: Elixir of Frost Power"] = {
-			["H3537"] = 4500000,
-			["mr"] = 4500000,
+		["Defender Gauntlets of the Boar"] = {
+			["H3540"] = 34391,
+			["mr"] = 34391,
 		},
 		["Smashing Star of Arcane Wrath"] = {
 			["H3537"] = 62188,
 			["mr"] = 62188,
 		},
-		["Twisted Sabre"] = {
-			["H3537"] = 33333,
-			["mr"] = 33333,
+		["Libram of Tenacity"] = {
+			["H3540"] = 1300,
+			["mr"] = 1471,
+			["H3543"] = 1471,
 		},
-		["Ta'Kierthan Songblade"] = {
-			["H3537"] = 1140347,
-			["mr"] = 1140347,
+		["Runecloth Headband"] = {
+			["H3537"] = 68200,
+			["mr"] = 68200,
 		},
-		["Heavy Shortbow"] = {
-			["H3540"] = 2300,
-			["mr"] = 2300,
-			["H3539"] = 4826,
+		["Manual: Heavy Silk Bandage"] = {
+			["H3540"] = 10400,
+			["H3539"] = 11200,
+			["H3543"] = 29998,
+			["mr"] = 29998,
 		},
-		["Jazeraint Boots of the Wolf"] = {
-			["H3537"] = 45771,
-			["mr"] = 45771,
+		["Elegant Boots of Nature Resistance"] = {
+			["H3543"] = 3990000,
+			["mr"] = 3990000,
 		},
 		["Barbaric Leggings"] = {
-			["mr"] = 19000,
-			["cc"] = 4,
-			["id"] = "5963:0:0:0:0",
 			["H3539"] = 29000,
+			["cc"] = 4,
 			["sc"] = 2,
 			["H3540"] = 19000,
+			["id"] = "5963:0:0:0:0",
+			["H3543"] = 10000,
+			["mr"] = 10000,
 		},
-		["Defender Cloak of the Bear"] = {
-			["H3540"] = 30000,
-			["mr"] = 30000,
-			["H3539"] = 30000,
+		["Eternal Cloak of Fiery Wrath"] = {
+			["mr"] = 298999,
+			["H3543"] = 298999,
+			["H3539"] = 300000,
 		},
-		["Huntsman's Bands of Stamina"] = {
-			["H3537"] = 17895,
-			["mr"] = 17895,
-		},
-		["Cord of Elements"] = {
-			["H3540"] = 50000,
+		["Resplendent Bracelets of Shadow Wrath"] = {
+			["H3537"] = 50000,
 			["mr"] = 50000,
 		},
-		["Righteous Orb"] = {
-			["H3539"] = 647000,
-			["sc"] = 0,
-			["cc"] = 7,
-			["H3540"] = 678888,
-			["id"] = "12811:0:0:0:0",
-			["mr"] = 719000,
-			["H3542"] = 719000,
+		["Aurora Gloves"] = {
+			["H3543"] = 6499,
+			["mr"] = 6499,
 		},
-		["Staff of the Friar"] = {
-			["H3537"] = 399999,
+		["Magefist Gloves"] = {
+			["H3543"] = 399999,
 			["mr"] = 399999,
 		},
-		["Forgotten Wraps"] = {
-			["H3537"] = 155181,
-			["mr"] = 155181,
+		["Staff of the Friar"] = {
+			["H3543"] = 519729,
+			["mr"] = 519729,
+		},
+		["Crystal Sword of Stamina"] = {
+			["H3537"] = 99881,
+			["mr"] = 99881,
 		},
 		["Twin-bladed Axe of the Monkey"] = {
 			["H3537"] = 10900,
 			["mr"] = 10900,
 		},
-		["Recipe: Major Rejuvenation Potion"] = {
-			["H3537"] = 1710000,
-			["mr"] = 1710000,
+		["Pattern: Earthen Leather Shoulders"] = {
+			["H3539"] = 4200,
+			["cc"] = 9,
+			["mr"] = 8200,
+			["id"] = "7362:0:0:0:0",
+			["H3540"] = 6499,
+			["H3543"] = 8200,
+			["sc"] = 1,
 		},
-		["Durable Belt of Fiery Wrath"] = {
-			["H3540"] = 11100,
-			["mr"] = 11100,
+		["Wizard's Hand of Fiery Wrath"] = {
+			["H3539"] = 249999,
+			["mr"] = 249999,
 		},
-		["Hillborne Axe of the Eagle"] = {
-			["H3537"] = 10000,
-			["mr"] = 10000,
+		["Highborne Pants"] = {
+			["H3539"] = 57000,
+			["H3543"] = 78499,
+			["mr"] = 78499,
 		},
-		["Diamond Hammer"] = {
-			["H3540"] = 58700,
-			["mr"] = 58700,
+		["Battle Chain Tunic"] = {
+			["H3537"] = 3500,
+			["mr"] = 3500,
 		},
-		["Black Swashbuckler's Shirt"] = {
-			["mr"] = 77998,
-			["H3539"] = 77998,
+		["Quicksilver Pendant of Shadow Resistance"] = {
+			["H3540"] = 1990000,
+			["mr"] = 1990000,
 		},
-		["Gaea's Belt of Healing"] = {
-			["H3537"] = 120000,
-			["mr"] = 120000,
+		["Recipe: Elixir of Poison Resistance"] = {
+			["H3539"] = 1231035,
+			["H3543"] = 989998,
+			["mr"] = 989998,
 		},
-		["Elegant Circlet of the Eagle"] = {
-			["H3537"] = 145500,
-			["mr"] = 145500,
+		["Darkmist Girdle of the Whale"] = {
+			["H3537"] = 16656,
+			["mr"] = 16656,
 		},
-		["Blue Ribboned Wrapping Paper"] = {
-			["H3537"] = 7656,
-			["mr"] = 7656,
+		["Shadow Oil"] = {
+			["H3540"] = 78999,
+			["H3539"] = 81411,
+			["H3543"] = 78500,
+			["mr"] = 78500,
 		},
-		["Twin-bladed Axe of the Tiger"] = {
-			["H3537"] = 12288,
-			["mr"] = 12288,
+		["Magus Long Staff of Nature's Wrath"] = {
+			["H3540"] = 299999,
+			["mr"] = 299999,
 		},
-		["Green Power Crystal"] = {
-			["H3540"] = 208,
-			["H3539"] = 291,
-			["mr"] = 208,
+		["Runecloth"] = {
+			["sc"] = 0,
+			["H3539"] = 870,
+			["cc"] = 7,
+			["id"] = "14047:0:0:0:0",
+			["H3540"] = 887,
+			["mr"] = 1049,
+			["H3543"] = 1049,
+			["H3542"] = 990,
 		},
-		["Sardonyx Knuckle of Shadow Resistance"] = {
-			["H3540"] = 278998,
-			["mr"] = 278998,
+		["Phalanx Cloak of the Bear"] = {
+			["H3537"] = 10255,
+			["mr"] = 10255,
 		},
 		["Scouting Gloves of the Bear"] = {
 			["mr"] = 12077,
@@ -15557,19 +17946,17 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 2,
 			["H3542"] = 12077,
 		},
-		["Winterfall Firewater"] = {
-			["H3540"] = 61000,
-			["H3539"] = 60000,
-			["mr"] = 61000,
+		["Scaled Leather Boots of Stamina"] = {
+			["H3537"] = 40402,
+			["mr"] = 40402,
 		},
 		["Bloodspattered Sabatons of the Bear"] = {
 			["H3540"] = 5512,
 			["mr"] = 5512,
 		},
-		["Thick Murloc Scale"] = {
-			["H3540"] = 933,
-			["H3539"] = 949,
-			["mr"] = 933,
+		["Lunar Leggings of the Owl"] = {
+			["H3537"] = 45000,
+			["mr"] = 45000,
 		},
 		["Sentinel Shoulders of the Monkey"] = {
 			["mr"] = 43920,
@@ -15578,74 +17965,82 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 2,
 			["H3542"] = 43920,
 		},
-		["Abyssal Mail Legguards of Sorcery"] = {
-			["H3540"] = 250000,
-			["H3539"] = 247900,
-			["mr"] = 250000,
+		["Short Bastard Sword of the Whale"] = {
+			["H3540"] = 2000,
+			["mr"] = 5000,
+			["H3543"] = 5000,
+			["H3539"] = 2473,
 		},
-		["Black Pearl"] = {
-			["H3539"] = 1223,
-			["mr"] = 1223,
+		["Coarse Thread"] = {
+			["mr"] = 1452,
+			["H3543"] = 1452,
+			["H3539"] = 1452,
 		},
-		["Spinel Ring of Frost Resistance"] = {
-			["H3537"] = 676755,
-			["mr"] = 676755,
+		["Ornate Mithril Gloves"] = {
+			["mr"] = 244000,
+			["cc"] = 4,
+			["id"] = "7927:0:0:0:0",
+			["H3537"] = 244000,
+			["sc"] = 4,
 		},
-		["Dark Iron Ale Mug"] = {
-			["H3540"] = 2396,
-			["mr"] = 2396,
-			["H3539"] = 2300,
+		["Huge Venom Sac"] = {
+			["H3540"] = 27063,
+			["H3539"] = 13927,
+			["mr"] = 27063,
 		},
-		["Hawkeye Bow of Spirit"] = {
-			["H3537"] = 579000,
-			["mr"] = 579000,
+		["Scroll of Intellect II"] = {
+			["H3540"] = 1240,
+			["mr"] = 1183,
+			["H3543"] = 1183,
+			["H3539"] = 1233,
 		},
-		["Twilight Cultist Ring of Lordship"] = {
-			["H3540"] = 600000,
-			["mr"] = 600000,
-			["H3539"] = 699999,
+		["Insignia Mantle"] = {
+			["H3537"] = 9900,
+			["mr"] = 9900,
 		},
-		["Mighty Armsplints of the Owl"] = {
-			["H3537"] = 147151,
-			["mr"] = 147151,
-		},
-		["Bright Pants"] = {
-			["H3537"] = 6805,
-			["mr"] = 6805,
-		},
-		["High Bergg Helm"] = {
-			["mr"] = 75000,
-			["H3539"] = 75000,
-		},
-		["Snowball"] = {
-			["H3540"] = 1105,
-			["mr"] = 1105,
-			["H3539"] = 2700,
-		},
-		["Grizzly Pants of Healing"] = {
+		["Tyrant's Armguards"] = {
 			["H3537"] = 10000,
 			["mr"] = 10000,
 		},
-		["Royal Gloves of the Eagle"] = {
-			["mr"] = 48999,
-			["sc"] = 1,
-			["H3529"] = 48999,
-			["id"] = "9910:0:0:863:0",
-			["cc"] = 4,
+		["Blinding Powder"] = {
+			["H3540"] = 3725,
+			["mr"] = 2100,
+			["H3543"] = 2100,
 		},
-		["Mighty Troll's Blood Potion"] = {
-			["H3540"] = 3899,
-			["H3539"] = 3900,
-			["mr"] = 3899,
+		["High Bergg Helm"] = {
+			["H3539"] = 75000,
+			["mr"] = 75000,
+		},
+		["Willow Vest of Frozen Wrath"] = {
+			["H3537"] = 11000,
+			["mr"] = 11000,
+		},
+		["Schematic: Gnomish Alarm-O-Bot"] = {
+			["H3543"] = 9300,
+			["mr"] = 9300,
+		},
+		["Cresting Charm"] = {
+			["sc"] = 0,
+			["H3539"] = 1821,
+			["cc"] = 0,
+			["id"] = "4481:0:0:0:0",
+			["H3540"] = 674,
+			["mr"] = 835,
+			["H3543"] = 835,
+			["H3542"] = 1084,
+		},
+		["Greater Scythe of the Eagle"] = {
+			["H3537"] = 34115,
+			["mr"] = 34115,
 		},
 		["Gothic Plate Leggings of the Bear"] = {
 			["H3540"] = 30000,
 			["mr"] = 30000,
 		},
-		["Band of Purification"] = {
-			["H3540"] = 50505,
-			["mr"] = 50505,
-			["H3539"] = 99500,
+		["Green Hills of Stranglethorn - Page 21"] = {
+			["H3540"] = 855,
+			["H3539"] = 4778,
+			["mr"] = 855,
 		},
 		["Sentinel Girdle of the Owl"] = {
 			["mr"] = 10500,
@@ -15654,83 +18049,88 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 2,
 			["H3542"] = 10500,
 		},
-		["Blackforge Breastplate"] = {
-			["H3537"] = 27285,
-			["mr"] = 27285,
+		["Perfect Deviate Scale"] = {
+			["H3539"] = 5940,
+			["H3543"] = 6999,
+			["mr"] = 6999,
 		},
 		["Magician Staff of the Whale"] = {
 			["H3540"] = 50000,
 			["mr"] = 50000,
 		},
-		["Pridelord Bands"] = {
-			["H3537"] = 100000,
-			["mr"] = 100000,
+		["Recipe: Greater Frost Protection Potion"] = {
+			["H3540"] = 219000,
+			["H3539"] = 257796,
+			["H3543"] = 150000,
+			["mr"] = 150000,
 		},
-		["Cabalist Helm of the Eagle"] = {
-			["H3537"] = 32214,
-			["mr"] = 32214,
+		["Arcane Robe"] = {
+			["mr"] = 211020,
+			["sc"] = 1,
+			["H3540"] = 211020,
+			["id"] = "8290:0:0:0:0",
+			["cc"] = 4,
 		},
 		["Furious Falchion of the Tiger"] = {
 			["H3537"] = 50400,
 			["mr"] = 50400,
 		},
-		["Sentinel Buckler of Agility"] = {
-			["H3537"] = 10000,
-			["mr"] = 10000,
+		["Talon of Vultros"] = {
+			["H3537"] = 379914,
+			["mr"] = 379914,
 		},
-		["Councillor's Pants of the Owl"] = {
-			["H3537"] = 70000,
-			["mr"] = 70000,
+		["Aboriginal Loincloth of the Eagle"] = {
+			["H3539"] = 5522,
+			["mr"] = 5522,
 		},
 		["Lord Alexander's Battle Axe"] = {
 			["mr"] = 139500,
 			["H3537"] = 140000,
 			["L3537"] = 139500,
 		},
-		["Azure Silk Cloak"] = {
-			["H3537"] = 17531,
-			["mr"] = 17531,
+		["Wing of the Whelpling"] = {
+			["H3540"] = 99500,
+			["mr"] = 93499,
+			["H3543"] = 93499,
+			["H3539"] = 130123,
 		},
-		["Aquamarine Ring of Nature Resistance"] = {
-			["H3540"] = 1250000,
-			["mr"] = 1250000,
-			["H3539"] = 1503173,
+		["Plans: Runed Copper Breastplate"] = {
+			["H3540"] = 5200,
+			["mr"] = 3300,
+			["H3543"] = 3300,
 		},
-		["Engraved Wall of Defense"] = {
-			["H3540"] = 235714,
-			["mr"] = 235714,
+		["Lifeless Stone"] = {
+			["H3543"] = 1080,
+			["mr"] = 1080,
 		},
-		["Jazeraint Pauldrons of the Falcon"] = {
-			["H3537"] = 20000,
-			["mr"] = 20000,
+		["Razor Axe of the Boar"] = {
+			["H3537"] = 600000,
+			["mr"] = 600000,
 		},
 		["Greenweave Gloves of Spirit"] = {
 			["H3537"] = 2900,
 			["mr"] = 2900,
 		},
-		["Scaled Leather Bracers of the Owl"] = {
-			["H3537"] = 14950,
-			["mr"] = 14950,
+		["Crest of Beckoning: Fire"] = {
+			["H3537"] = 990000,
+			["mr"] = 990000,
 		},
-		["Conjurer's Cloak of Shadow Wrath"] = {
-			["H3537"] = 27875,
-			["mr"] = 27875,
+		["Merciless Crown of Intellect"] = {
+			["H3539"] = 80000,
+			["mr"] = 80000,
 		},
-		["White Leather Bag"] = {
-			["H3539"] = 4400,
-			["sc"] = 0,
-			["H3540"] = 5000,
-			["cc"] = 1,
-			["mr"] = 5000,
-			["id"] = "5574:0:0:0:0",
+		["Thorium Shells"] = {
+			["H3543"] = 47,
+			["mr"] = 47,
 		},
 		["Jasper Link of Arcane Resistance"] = {
-			["mr"] = 99911,
-			["cc"] = 4,
-			["H3540"] = 99911,
 			["H3539"] = 100000,
-			["id"] = "11978:0:0:1326:0",
 			["sc"] = 0,
+			["H3540"] = 99911,
+			["id"] = "11978:0:0:1326:0",
+			["cc"] = 4,
+			["H3543"] = 87740,
+			["mr"] = 87740,
 		},
 		["Chimeric Vest"] = {
 			["H3540"] = 653000,
@@ -15740,94 +18140,228 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Nature Protection Potion"] = {
 			["H3540"] = 7500,
 			["H3539"] = 9500,
-			["mr"] = 7500,
+			["H3543"] = 8879,
+			["mr"] = 8879,
 		},
-		["Un'Goro Soil"] = {
-			["H3540"] = 1657,
-			["H3539"] = 1599,
-			["mr"] = 1657,
+		["Huntsman's Cape of the Owl"] = {
+			["H3543"] = 26738,
+			["mr"] = 26738,
 		},
-		["Mercenary Blade of the Monkey"] = {
-			["H3540"] = 19200,
-			["mr"] = 19200,
-			["H3539"] = 69000,
+		["Plans: Dark Iron Plate"] = {
+			["H3539"] = 144500,
+			["mr"] = 144500,
 		},
-		["Lifeless Stone"] = {
-			["H3537"] = 5000,
-			["mr"] = 5000,
+		["Quicksilver Pendant of Concentration"] = {
+			["H3540"] = 51100,
+			["mr"] = 51100,
 		},
-		["Grave Moss"] = {
-			["H3539"] = 9999,
-			["mr"] = 9100,
-			["L3543"] = 9100,
-			["H3540"] = 11395,
-			["id"] = "3369:0:0:0:0",
-			["sc"] = 0,
-			["H3543"] = 9199,
-			["cc"] = 7,
+		["Bandit Bracers of the Monkey"] = {
+			["H3540"] = 300000,
+			["mr"] = 300000,
 		},
-		["Schematic: Arcane Bomb"] = {
-			["mr"] = 190000,
-			["cc"] = 9,
-			["H3540"] = 190000,
-			["H3539"] = 212500,
-			["id"] = "16055:0:0:0:0",
-			["sc"] = 3,
+		["War Torn Pants of the Bear"] = {
+			["H3540"] = 5000,
+			["mr"] = 2800,
+			["H3543"] = 2800,
+			["H3539"] = 5581,
 		},
-		["Merciless Crown of Intellect"] = {
-			["mr"] = 80000,
-			["H3539"] = 80000,
+		["Plans: Iron Shield Spike"] = {
+			["H3543"] = 8700,
+			["mr"] = 8700,
 		},
-		["Conjurer's Hood of Arcane Wrath"] = {
-			["H3537"] = 20076,
-			["mr"] = 20076,
+		["Ancestral Gloves"] = {
+			["mr"] = 200,
+			["cc"] = 4,
+			["id"] = "3290:0:0:0:0",
+			["sc"] = 1,
+			["H3529"] = 200,
 		},
-		["Robust Girdle of Intellect"] = {
-			["H3537"] = 5555,
-			["mr"] = 5555,
+		["Pattern: Frostweave Robe"] = {
+			["H3540"] = 29200,
+			["mr"] = 8999,
+			["H3543"] = 8999,
+			["H3539"] = 67000,
 		},
 		["Silksand Legwraps"] = {
 			["H3537"] = 63792,
 			["mr"] = 63792,
 		},
 		["Antipodean Rod"] = {
-			["mr"] = 69319,
-			["H3537"] = 69320,
-			["L3537"] = 69319,
+			["H3543"] = 27698,
+			["mr"] = 27698,
 		},
-		["Widowmaker"] = {
-			["H3537"] = 82605,
-			["mr"] = 82605,
+		["Imposing Boots of the Monkey"] = {
+			["H3537"] = 30000,
+			["mr"] = 30000,
 		},
 		["Battlecaller Gauntlets"] = {
 			["H3540"] = 54000,
-			["mr"] = 54000,
+			["mr"] = 39800,
+			["H3543"] = 39800,
 		},
-		["Savory Deviate Delight"] = {
-			["H3540"] = 7898,
-			["H3539"] = 8300,
-			["mr"] = 7898,
+		["Archer's Shoulderpads of the Eagle"] = {
+			["H3543"] = 29621,
+			["mr"] = 29621,
 		},
-		["War Torn Pants of the Bear"] = {
-			["H3540"] = 5000,
-			["mr"] = 5000,
-			["H3539"] = 5581,
+		["Conjurer's Hood of the Eagle"] = {
+			["H3543"] = 19000,
+			["mr"] = 19000,
 		},
-		["Durable Shoulders of Intellect"] = {
-			["H3537"] = 2299,
-			["mr"] = 2299,
+		["Formula: Enchant Bracer - Superior Spirit"] = {
+			["H3540"] = 21599,
+			["H3539"] = 23998,
+			["H3543"] = 10598,
+			["mr"] = 10598,
 		},
 		["Flask of Distilled Wisdom"] = {
-			["mr"] = 1994000,
-			["cc"] = 0,
-			["H3540"] = 1994000,
 			["H3539"] = 2010000,
-			["id"] = "13511:0:0:0:0",
 			["sc"] = 0,
+			["H3540"] = 1994000,
+			["id"] = "13511:0:0:0:0",
+			["cc"] = 0,
+			["H3543"] = 1970000,
+			["mr"] = 1970000,
 		},
-		["Girdle of Insight"] = {
-			["H3537"] = 620000,
-			["mr"] = 620000,
+		["High Chief's Legguards of the Bear"] = {
+			["mr"] = 35000,
+			["H3537"] = 60000,
+			["L3537"] = 35000,
+		},
+		["Raider's Legguards of the Bear"] = {
+			["H3537"] = 4900,
+			["mr"] = 4900,
+		},
+		["Stone Hammer of the Boar"] = {
+			["mr"] = 30000,
+			["H3543"] = 30000,
+			["H3539"] = 138000,
+		},
+		["Silver Ore"] = {
+			["mr"] = 4600,
+			["H3539"] = 4900,
+			["cc"] = 7,
+			["id"] = "2775:0:0:0:0",
+			["H3540"] = 4300,
+			["sc"] = 0,
+			["H3543"] = 4600,
+			["H3542"] = 3899,
+		},
+		["Dwarven Hatchet of Strength"] = {
+			["mr"] = 1795,
+			["H3537"] = 1799,
+			["L3537"] = 1795,
+		},
+		["Scouting Gloves of the Monkey"] = {
+			["mr"] = 259498,
+			["cc"] = 4,
+			["sc"] = 2,
+			["H3540"] = 375225,
+			["id"] = "6586:0:0:591:0",
+			["H3543"] = 259498,
+			["H3542"] = 259499,
+		},
+		["Steel Bar"] = {
+			["H3539"] = 3161,
+			["sc"] = 0,
+			["H3540"] = 6875,
+			["id"] = "3859:0:0:0:0",
+			["cc"] = 7,
+			["H3543"] = 9100,
+			["mr"] = 9100,
+		},
+		["Archer's Gloves of the Owl"] = {
+			["H3543"] = 27576,
+			["mr"] = 27576,
+		},
+		["Glorious Belt of the Bear"] = {
+			["H3539"] = 18000,
+			["mr"] = 18000,
+		},
+		["Cured Rugged Hide"] = {
+			["H3540"] = 157948,
+			["H3539"] = 163899,
+			["H3543"] = 165898,
+			["mr"] = 165898,
+		},
+		["Mistscape Cloak"] = {
+			["H3540"] = 17999,
+			["mr"] = 19800,
+			["H3543"] = 19800,
+		},
+		["Bonecaster's Bindings of Shadow Wrath"] = {
+			["H3537"] = 40000,
+			["mr"] = 40000,
+		},
+		["Devilsaur Gauntlets"] = {
+			["mr"] = 499000,
+			["H3543"] = 499000,
+			["H3539"] = 600000,
+		},
+		["Hyperion Gauntlets of Healing"] = {
+			["H3537"] = 50000,
+			["mr"] = 50000,
+		},
+		["Raptor Hide"] = {
+			["H3540"] = 334,
+			["H3539"] = 1939,
+			["H3543"] = 560,
+			["mr"] = 560,
+		},
+		["Short Bastard Sword of the Boar"] = {
+			["H3539"] = 9900,
+			["mr"] = 9900,
+		},
+		["Gray Woolen Shirt"] = {
+			["H3540"] = 11639,
+			["mr"] = 11600,
+			["H3543"] = 11600,
+		},
+		["Short Bastard Sword of the Monkey"] = {
+			["H3543"] = 9600,
+			["mr"] = 9600,
+		},
+		["Prairie Dog Whistle"] = {
+			["H3537"] = 50000,
+			["mr"] = 50000,
+		},
+		["Raider's Belt of the Gorilla"] = {
+			["H3539"] = 6000,
+			["mr"] = 6000,
+		},
+		["Pattern: Hands of Darkness"] = {
+			["H3537"] = 39249,
+			["mr"] = 39249,
+		},
+		["Fire Protection Potion"] = {
+			["H3540"] = 25199,
+			["mr"] = 26197,
+			["H3543"] = 26197,
+			["H3539"] = 27399,
+		},
+		["Bloodscalp Channeling Staff"] = {
+			["H3540"] = 15000,
+			["mr"] = 15000,
+			["H3539"] = 15000,
+		},
+		["Archer's Trousers of Spirit"] = {
+			["H3540"] = 51120,
+			["mr"] = 51120,
+			["H3543"] = 51120,
+		},
+		["Plans: Mithril Scale Bracers"] = {
+			["H3540"] = 12200,
+			["mr"] = 12200,
+		},
+		["Barbarian War Axe of the Bear"] = {
+			["mr"] = 19999,
+			["sc"] = 1,
+			["H3540"] = 19999,
+			["id"] = "3201:0:0:1197:0",
+			["cc"] = 2,
+		},
+		["Archer's Cloak of the Falcon"] = {
+			["H3537"] = 30000,
+			["mr"] = 30000,
 		},
 		["Sentinel Cap of the Owl"] = {
 			["mr"] = 43468,
@@ -15836,236 +18370,127 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 2,
 			["H3542"] = 43468,
 		},
-		["Inscribed Leather Gloves"] = {
-			["H3537"] = 2200,
-			["mr"] = 2200,
-		},
-		["Formula: Enchant Cloak - Superior Defense"] = {
-			["H3537"] = 180753,
-			["mr"] = 180753,
-		},
-		["Grizzly Buckler of the Whale"] = {
-			["H3537"] = 6000,
-			["mr"] = 6000,
-		},
-		["Gooey Spider Leg"] = {
-			["H3540"] = 120,
-			["H3539"] = 137,
-			["mr"] = 120,
-		},
-		["Ebony Boneclub"] = {
-			["H3537"] = 30000,
-			["mr"] = 30000,
-		},
-		["Nobles Brand of Strength"] = {
-			["mr"] = 39900,
-			["H3539"] = 39900,
-		},
-		["Glorious Belt of the Bear"] = {
-			["mr"] = 18000,
-			["H3539"] = 18000,
-		},
-		["Ivory Wand of Fiery Wrath"] = {
-			["H3537"] = 51199,
-			["mr"] = 51199,
-		},
-		["Dokebi Bracers"] = {
-			["H3540"] = 49800,
-			["mr"] = 49800,
-		},
-		["Razor Axe of the Tiger"] = {
-			["mr"] = 153113,
-			["H3539"] = 153113,
-		},
-		["Devilsaur Gauntlets"] = {
-			["mr"] = 600000,
-			["H3539"] = 600000,
-		},
-		["Formula: Enchant Bracer - Greater Spirit"] = {
-			["H3540"] = 14597,
-			["H3539"] = 14995,
-			["mr"] = 14597,
-		},
-		["Raptor Hide"] = {
-			["H3540"] = 334,
-			["H3539"] = 1939,
-			["mr"] = 334,
-		},
-		["Green Hills of Stranglethorn - Page 18"] = {
-			["H3540"] = 894,
-			["H3539"] = 3800,
-			["mr"] = 894,
-		},
-		["Savannah Ring of the Wolf"] = {
-			["mr"] = 40000,
-			["H3539"] = 40000,
-		},
-		["Councillor's Tunic of Frozen Wrath"] = {
-			["H3537"] = 100000,
-			["mr"] = 100000,
-		},
-		["Renegade Cloak of the Eagle"] = {
-			["H3537"] = 18210,
-			["mr"] = 18210,
-		},
-		["Raider's Belt of the Gorilla"] = {
-			["mr"] = 6000,
-			["H3539"] = 6000,
-		},
-		["Pattern: Hands of Darkness"] = {
-			["H3537"] = 39249,
-			["mr"] = 39249,
-		},
-		["Fire Protection Potion"] = {
-			["H3540"] = 25199,
-			["mr"] = 25199,
-			["H3539"] = 27399,
-		},
-		["Shadowblade"] = {
-			["H3540"] = 149500,
-			["H3539"] = 169999,
-			["mr"] = 149500,
-		},
-		["Archer's Trousers of Spirit"] = {
-			["H3540"] = 51120,
-			["mr"] = 51120,
-		},
-		["Jadefire Epaulets of Stamina"] = {
-			["H3537"] = 348262,
-			["mr"] = 348262,
-		},
-		["Barbarian War Axe of the Bear"] = {
-			["mr"] = 19999,
-			["cc"] = 2,
-			["id"] = "3201:0:0:1197:0",
-			["sc"] = 1,
-			["H3540"] = 19999,
-		},
-		["Schematic: Bright-Eye Goggles"] = {
-			["H3540"] = 24400,
-			["mr"] = 24400,
-			["H3539"] = 25050,
-		},
-		["Bloodscalp Channeling Staff"] = {
-			["H3540"] = 15000,
-			["mr"] = 15000,
-			["H3539"] = 15000,
-		},
-		["Sentinel Cap of the Bear"] = {
-			["mr"] = 43340,
-			["cc"] = 4,
-			["id"] = "7441:0:0:1206:0",
-			["sc"] = 2,
-			["H3542"] = 43340,
+		["Slitherskin Mackerel"] = {
+			["H3537"] = 316,
+			["mr"] = 316,
 		},
 		["Topaz Ring of Shadow Resistance"] = {
 			["H3537"] = 146250,
 			["mr"] = 146250,
 		},
-		["Long Redwood Bow"] = {
-			["H3537"] = 39999,
-			["mr"] = 39999,
+		["Umbral Wand of the Eagle"] = {
+			["H3543"] = 51207,
+			["mr"] = 51207,
 		},
-		["Scouting Trousers of the Bear"] = {
-			["H3537"] = 54763,
-			["mr"] = 54763,
+		["Boar Ribs"] = {
+			["H3540"] = 1956,
+			["H3539"] = 1957,
+			["H3543"] = 1948,
+			["mr"] = 1948,
 		},
-		["Serpentskin Cloak"] = {
-			["H3537"] = 27511,
-			["mr"] = 27511,
+		["Elixir of Frost Power"] = {
+			["H3540"] = 45794,
+			["H3539"] = 46190,
+			["H3543"] = 40199,
+			["mr"] = 40199,
 		},
-		["Adventurer's Cape of Intellect"] = {
-			["H3537"] = 180000,
-			["mr"] = 180000,
+		["Merc Sword of the Monkey"] = {
+			["H3540"] = 11586,
+			["H3539"] = 11586,
+			["H3543"] = 10086,
+			["mr"] = 10086,
 		},
-		["Scouting Belt of the Whale"] = {
-			["mr"] = 10511,
-			["cc"] = 4,
-			["id"] = "6581:0:0:1013:0",
-			["sc"] = 2,
-			["H3542"] = 10511,
+		["Belt of Might"] = {
+			["H3540"] = 627999,
+			["mr"] = 627999,
+			["H3539"] = 755998,
 		},
-		["Pattern: Mooncloth Bag"] = {
-			["mr"] = 13600,
-			["cc"] = 9,
-			["sc"] = 2,
-			["H3540"] = 115000,
-			["id"] = "14499:0:0:0:0",
-			["H3539"] = 9800,
-			["H3542"] = 13600,
+		["Coarse Grinding Stone"] = {
+			["H3540"] = 3394,
+			["mr"] = 2600,
+			["H3543"] = 2600,
+			["H3539"] = 3309,
 		},
-		["Mercurial Cloak of Agility"] = {
-			["H3537"] = 149900,
-			["mr"] = 149900,
+		["Percussion Shotgun of the Whale"] = {
+			["H3537"] = 54332,
+			["mr"] = 54332,
 		},
 		["Patterned Bronze Bracers"] = {
 			["H3540"] = 19999,
 			["H3539"] = 24599,
 			["mr"] = 19999,
 		},
-		["Living Action Potion"] = {
-			["H3540"] = 59989,
-			["H3539"] = 33995,
-			["mr"] = 59989,
+		["Unstable Trigger"] = {
+			["H3540"] = 19500,
+			["H3539"] = 27400,
+			["H3543"] = 14400,
+			["mr"] = 14400,
 		},
 		["Blade of the Titans"] = {
 			["H3540"] = 169500,
 			["H3539"] = 99500,
-			["mr"] = 169500,
+			["H3543"] = 125000,
+			["mr"] = 125000,
 		},
-		["Marksman Bands"] = {
-			["H3540"] = 97000,
-			["mr"] = 97000,
+		["Polished Zweihander of the Eagle"] = {
+			["H3540"] = 16000,
+			["mr"] = 16000,
 		},
 		["Willow Pants of the Whale"] = {
 			["H3540"] = 30000,
-			["mr"] = 30000,
+			["mr"] = 19999,
+			["H3543"] = 19999,
 			["H3539"] = 6000,
 		},
-		["Chief Brigadier Pauldrons"] = {
-			["H3537"] = 13500,
-			["mr"] = 13500,
+		["Monk's Staff of Spirit"] = {
+			["H3540"] = 60000,
+			["mr"] = 60000,
 		},
-		["Razzashi Coin"] = {
-			["H3540"] = 3117,
-			["H3539"] = 3000,
-			["mr"] = 3117,
+		["Nobles Brand of Strength"] = {
+			["H3539"] = 39900,
+			["mr"] = 39900,
 		},
-		["Pattern: Mooncloth Vest"] = {
-			["H3537"] = 219000,
-			["mr"] = 219000,
+		["Dark Iron Leggings"] = {
+			["H3539"] = 3299997,
+			["mr"] = 3299997,
 		},
 		["Bard's Bracers of Agility"] = {
 			["mr"] = 4081,
-			["cc"] = 4,
-			["id"] = "6556:0:0:14:0",
 			["sc"] = 2,
 			["H3540"] = 4081,
+			["id"] = "6556:0:0:14:0",
+			["cc"] = 4,
 		},
-		["Lodestone Necklace of the Gorilla"] = {
-			["H3537"] = 15000,
-			["mr"] = 15000,
+		["Dream Dust"] = {
+			["H3540"] = 3099,
+			["mr"] = 5399,
+			["H3543"] = 5399,
+			["H3539"] = 5994,
 		},
-		["Small Brilliant Shard"] = {
-			["H3540"] = 18999,
-			["H3539"] = 8800,
-			["mr"] = 18999,
+		["Schematic: Dark Iron Bomb"] = {
+			["mr"] = 80000,
+			["H3539"] = 80000,
 		},
-		["Spiritchaser Staff of the Owl"] = {
-			["H3540"] = 39900,
-			["mr"] = 39900,
+		["Forest Pendant of the Falcon"] = {
+			["mr"] = 44889,
+			["cc"] = 4,
+			["id"] = "12040:0:0:250:0",
+			["H3543"] = 44889,
+			["sc"] = 0,
 		},
 		["Farmer's Shovel"] = {
 			["H3540"] = 999000,
-			["mr"] = 999000,
+			["mr"] = 499000,
+			["H3543"] = 499000,
 		},
-		["Ridge Cleaver of the Tiger"] = {
-			["H3540"] = 8500,
-			["mr"] = 8500,
+		["Painbringer of the Monkey"] = {
+			["H3537"] = 163512,
+			["mr"] = 163512,
 		},
-		["Lord's Crest of Blocking"] = {
-			["H3537"] = 696969,
-			["mr"] = 696969,
+		["Pattern: Brightcloth Robe"] = {
+			["mr"] = 12400,
+			["H3543"] = 12400,
+			["H3539"] = 22233,
 		},
 		["Councillor's Scepter of Healing"] = {
 			["H3540"] = 157463,
@@ -16076,105 +18501,132 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3539"] = 208328,
 			["mr"] = 436212,
 		},
-		["Chromatic Sword"] = {
-			["mr"] = 398999,
-			["H3539"] = 398999,
+		["Master's Vest of Shadow Wrath"] = {
+			["H3543"] = 200000,
+			["mr"] = 200000,
 		},
-		["Black Velvet Robes"] = {
-			["H3540"] = 349949,
-			["mr"] = 349949,
+		["Dark Iron Boots of the Bear"] = {
+			["H3537"] = 3448964,
+			["mr"] = 3448964,
 		},
 		["Nightshade Leggings of Nature Resistance"] = {
 			["H3540"] = 3000000,
 			["mr"] = 3000000,
 		},
-		["Dire Wand"] = {
-			["mr"] = 17094,
-			["H3539"] = 17094,
+		["Recipe: Shadow Oil"] = {
+			["H3539"] = 37799,
+			["mr"] = 37799,
 		},
-		["Shadowforge Bushmaster"] = {
-			["H3537"] = 1400000,
-			["mr"] = 1400000,
+		["Marble Circle of Stamina"] = {
+			["H3537"] = 84490,
+			["mr"] = 84490,
 		},
-		["Handstitched Linen Britches"] = {
-			["H3537"] = 2800,
-			["mr"] = 2800,
+		["Rough Copper Bomb"] = {
+			["H3543"] = 694,
+			["mr"] = 694,
 		},
-		["Murphstar of Power"] = {
-			["H3540"] = 33675,
-			["H3539"] = 33676,
-			["mr"] = 33675,
+		["Whipwood Recurve Bow"] = {
+			["H3537"] = 12880,
+			["mr"] = 12880,
 		},
 		["War Torn Pants of the Tiger"] = {
 			["H3540"] = 9000,
 			["mr"] = 9000,
 		},
-		["Raider's Shield of the Boar"] = {
-			["H3537"] = 1600,
-			["mr"] = 1600,
+		["Sentinel Bracers of the Monkey"] = {
+			["mr"] = 5999,
+			["cc"] = 4,
+			["id"] = "7447:0:0:596:0",
+			["sc"] = 2,
+			["H3542"] = 5999,
 		},
-		["Warmonger's Bracers of Agility"] = {
-			["H3537"] = 65000,
-			["mr"] = 65000,
+		["Lesser Magic Wand"] = {
+			["mr"] = 12498,
+			["H3539"] = 12498,
 		},
-		["Happy Fun Rock"] = {
-			["H3540"] = 9699,
-			["mr"] = 9699,
-			["H3539"] = 9900,
-		},
-		["Enchanted Thorium Bar"] = {
-			["mr"] = 35999,
+		["Mageweave Bag"] = {
+			["H3540"] = 16200,
+			["H3542"] = 25050,
+			["L3540"] = 16000,
+			["mr"] = 9900,
 			["sc"] = 0,
-			["id"] = "12655:0:0:0:0",
-			["cc"] = 7,
-			["H3540"] = 35999,
+			["cc"] = 1,
+			["H3539"] = 17599,
+			["L3539"] = 17398,
+			["H3543"] = 9900,
+			["id"] = "10050:0:0:0:0",
+		},
+		["Mark of Kern"] = {
+			["H3540"] = 242549,
+			["mr"] = 242549,
 		},
 		["Souldarite"] = {
 			["H3540"] = 19305,
-			["mr"] = 19305,
+			["mr"] = 5900,
+			["H3543"] = 5900,
 			["H3539"] = 12800,
 		},
-		["Ace of Portals"] = {
-			["H3540"] = 350025,
-			["mr"] = 350025,
-			["H3539"] = 400000,
+		["Dalewind Trousers"] = {
+			["H3540"] = 55500,
+			["mr"] = 49999,
+			["H3543"] = 49999,
 		},
 		["Elixir of Lion's Strength"] = {
 			["H3539"] = 248,
-			["mr"] = 248,
+			["H3543"] = 264,
+			["mr"] = 264,
 		},
-		["Recipe: Frost Oil"] = {
-			["H3540"] = 24199,
-			["H3539"] = 29200,
-			["mr"] = 24199,
+		["Medicine Staff of the Owl"] = {
+			["H3537"] = 69850,
+			["mr"] = 69850,
 		},
-		["Battlefield Destroyer of the Monkey"] = {
-			["H3540"] = 60000,
-			["mr"] = 60000,
+		["Green Leather Bag"] = {
+			["mr"] = 3200,
+			["cc"] = 1,
+			["sc"] = 0,
+			["id"] = "5573:0:0:0:0",
+			["H3539"] = 5000,
+			["H3543"] = 3200,
+			["H3542"] = 4847,
 		},
-		["Green Lens of Arcane Wrath"] = {
-			["mr"] = 68215,
+		["Orb of Deception"] = {
+			["sc"] = 0,
+			["H3539"] = 925273,
 			["cc"] = 4,
-			["id"] = "10504:0:0:1822:0",
-			["H3539"] = 89900,
-			["sc"] = 1,
-			["H3540"] = 68215,
+			["mr"] = 489999,
+			["H3540"] = 899999,
+			["id"] = "1973:0:0:0:0",
+			["H3543"] = 489999,
+			["H3542"] = 669029,
 		},
-		["Elegant Circlet of Shadow Wrath"] = {
-			["H3540"] = 160000,
-			["mr"] = 160000,
+		["Enchanted Kodo Bracers"] = {
+			["H3537"] = 20000,
+			["mr"] = 20000,
 		},
-		["Feathered Breastplate"] = {
-			["mr"] = 214399,
-			["H3539"] = 214399,
+		["Fel Steed Saddlebags"] = {
+			["mr"] = 32605,
+			["cc"] = 1,
+			["H3540"] = 19999,
+			["id"] = "932:0:0:0:0",
+			["sc"] = 0,
+			["H3543"] = 32605,
+			["H3542"] = 20148,
 		},
-		["Petrolspill Leggings"] = {
-			["mr"] = 828750,
-			["H3539"] = 828750,
+		["Abyssal Leather Belt of Sorcery"] = {
+			["mr"] = 80000,
+			["sc"] = 2,
+			["H3540"] = 80000,
+			["id"] = "20667:0:0:2152:0",
+			["cc"] = 4,
 		},
-		["Commander's Gauntlets of the Monkey"] = {
-			["H3540"] = 31100,
-			["mr"] = 31100,
+		["Beaststalker's Gloves"] = {
+			["mr"] = 423000,
+			["cc"] = 4,
+			["H3539"] = 369999,
+			["id"] = "16676:0:0:0:0",
+			["H3540"] = 239999,
+			["H3543"] = 423000,
+			["sc"] = 3,
 		},
 		["Massive Battle Axe of the Eagle"] = {
 			["H3537"] = 15000,
@@ -16192,161 +18644,183 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 209,
 			["mr"] = 209,
 		},
-		["Feral Cloak of the Monkey"] = {
-			["mr"] = 5517,
-			["H3539"] = 5517,
+		["Herbalist's Gloves"] = {
+			["H3539"] = 66787,
+			["cc"] = 4,
+			["id"] = "7349:0:0:0:0",
+			["H3540"] = 64999,
+			["mr"] = 77500,
+			["H3543"] = 77500,
+			["sc"] = 2,
 		},
-		["Topaz Ring of Fire Resistance"] = {
-			["H3537"] = 100000,
-			["mr"] = 100000,
+		["Royal Sash of Fiery Wrath"] = {
+			["H3543"] = 150000,
+			["mr"] = 150000,
 		},
 		["Recipe: Brilliant Smallfish"] = {
 			["H3540"] = 7300,
-			["mr"] = 7300,
+			["mr"] = 19900,
+			["H3543"] = 19900,
 			["H3539"] = 7500,
 		},
-		["Forest Cloak"] = {
-			["mr"] = 5000,
-			["sc"] = 1,
-			["id"] = "4710:0:0:0:0",
-			["cc"] = 4,
-			["H3543"] = 5000,
-			["H3540"] = 50000,
+		["Primal Batskin Bracers"] = {
+			["mr"] = 1980000,
+			["H3543"] = 1980000,
+			["H3539"] = 1499997,
 		},
-		["Pattern: Brightcloth Pants"] = {
-			["H3540"] = 25092,
-			["H3539"] = 11999,
-			["mr"] = 25092,
+		["Formula: Enchant Bracer - Superior Stamina"] = {
+			["mr"] = 41599,
+			["H3543"] = 41599,
+			["H3539"] = 9598,
 		},
-		["Staunch Hammer of Stamina"] = {
-			["H3540"] = 4900,
-			["mr"] = 4900,
-			["H3539"] = 5000,
+		["Forest Leather Bracers"] = {
+			["H3537"] = 61197,
+			["mr"] = 61197,
 		},
-		["Templar Gauntlets of Nature Resistance"] = {
-			["H3537"] = 1503744,
-			["mr"] = 1503744,
+		["Iridium Circle of Concentration"] = {
+			["H3540"] = 249222,
+			["mr"] = 249222,
 		},
 		["Shadow Goggles"] = {
 			["H3537"] = 14745,
 			["mr"] = 14745,
 		},
-		["Chimeric Gloves"] = {
-			["H3540"] = 499900,
-			["mr"] = 499900,
+		["Schematic: Arcane Bomb"] = {
+			["H3539"] = 212500,
+			["sc"] = 3,
+			["H3540"] = 190000,
+			["id"] = "16055:0:0:0:0",
+			["cc"] = 9,
+			["H3543"] = 79997,
+			["mr"] = 79997,
 		},
-		["Pattern: Azure Silk Cloak"] = {
-			["H3537"] = 101099,
-			["mr"] = 101099,
+		["Mooncloth Bag"] = {
+			["sc"] = 0,
+			["mr"] = 232000,
+			["cc"] = 1,
+			["H3539"] = 197999,
+			["id"] = "14155:0:0:0:0",
+			["H3540"] = 223695,
+			["H3543"] = 232000,
+			["H3542"] = 230000,
 		},
-		["High Councillor's Robe of Shadow Wrath"] = {
-			["H3537"] = 200000,
-			["mr"] = 200000,
+		["Warchief Kilt"] = {
+			["H3540"] = 103840,
+			["mr"] = 77020,
+			["H3543"] = 77020,
 		},
-		["Elder's Sash of the Eagle"] = {
-			["mr"] = 8800,
-			["H3539"] = 8800,
+		["Bonecaster's Bindings of Healing"] = {
+			["H3537"] = 195074,
+			["mr"] = 195074,
 		},
 		["Recipe: Elixir of Shadow Power"] = {
 			["H3540"] = 49897,
-			["mr"] = 49897,
+			["mr"] = 44998,
+			["H3543"] = 44998,
 			["H3539"] = 49400,
 		},
 		["Thug Shirt"] = {
-			["H3537"] = 64000,
-			["mr"] = 64000,
+			["H3543"] = 80500,
+			["mr"] = 80500,
 		},
-		["Pagan Cape of Spirit"] = {
-			["mr"] = 20000,
-			["H3539"] = 20000,
+		["Coarse Stone"] = {
+			["cc"] = 7,
+			["H3539"] = 1335,
+			["L3543"] = 1804,
+			["id"] = "2836:0:0:0:0",
+			["H3540"] = 1494,
+			["sc"] = 0,
+			["H3543"] = 3200,
+			["mr"] = 1804,
 		},
 		["Tome of Polymorph: Turtle"] = {
 			["H3539"] = 852000,
-			["mr"] = 852000,
+			["H3543"] = 999000,
+			["mr"] = 999000,
 		},
-		["Shredder Operating Manual - Page 2"] = {
-			["mr"] = 7716,
-			["cc"] = 15,
-			["H3540"] = 9998,
-			["id"] = "16646:0:0:0:0",
-			["sc"] = 0,
-			["H3542"] = 7716,
+		["Battleforge Armor of the Whale"] = {
+			["H3539"] = 24875,
+			["mr"] = 24875,
 		},
 		["Native Branch of Shadow Wrath"] = {
-			["mr"] = 9961,
 			["H3539"] = 9961,
+			["mr"] = 9961,
 		},
-		["Formula: Enchant Gloves - Advanced Mining"] = {
-			["mr"] = 139000,
-			["sc"] = 8,
-			["H3540"] = 139000,
-			["cc"] = 9,
-			["H3539"] = 9700,
-			["id"] = "11203:0:0:0:0",
+		["Darksoul Leggings"] = {
+			["H3543"] = 500000,
+			["mr"] = 500000,
 		},
-		["Training Sword of the Whale"] = {
-			["H3540"] = 6000,
-			["mr"] = 6000,
+		["Training Sword of the Eagle"] = {
+			["H3540"] = 1100,
+			["mr"] = 1100,
 		},
-		["Tyrant's Greaves"] = {
-			["H3540"] = 56412,
-			["mr"] = 56412,
+		["Polished Zweihander of the Monkey"] = {
+			["H3540"] = 50000,
+			["mr"] = 50000,
 		},
 		["Master's Rod of the Whale"] = {
 			["H3537"] = 60000,
 			["mr"] = 60000,
 		},
-		["Burnished Gloves"] = {
-			["H3537"] = 4016,
-			["mr"] = 4016,
+		["Spaulders of the Unseen"] = {
+			["H3540"] = 387075,
+			["H3539"] = 400000,
+			["H3543"] = 194998,
+			["mr"] = 194998,
 		},
-		["Warbringer's Crown of the Bear"] = {
-			["H3537"] = 39309,
-			["mr"] = 39309,
+		["Feathermoon Headdress"] = {
+			["H3540"] = 134000,
+			["mr"] = 103000,
+			["H3543"] = 103000,
 		},
-		["Gossamer Boots of the Owl"] = {
-			["H3540"] = 72693,
-			["mr"] = 72693,
-			["H3539"] = 72693,
+		["High Councillor's Bracers of Arcane Wrath"] = {
+			["mr"] = 54704,
+			["sc"] = 1,
+			["H3540"] = 79999,
+			["id"] = "10136:0:0:1812:0",
+			["H3543"] = 54704,
+			["cc"] = 4,
 		},
-		["Imposing Belt of Healing"] = {
-			["H3537"] = 59900,
-			["mr"] = 59900,
+		["Elegant Tunic of Intellect"] = {
+			["H3543"] = 249997,
+			["mr"] = 249997,
 		},
-		["Mystic's Woolies"] = {
-			["H3540"] = 5800,
-			["mr"] = 5800,
-			["H3539"] = 6300,
+		["Traveler's Boots"] = {
+			["H3537"] = 39800,
+			["mr"] = 39800,
 		},
-		["Opulent Leggings of the Eagle"] = {
-			["H3537"] = 89999,
-			["mr"] = 89999,
+		["Green Hills of Stranglethorn - Page 11"] = {
+			["H3540"] = 2799,
+			["mr"] = 10722,
+			["H3543"] = 10722,
+			["H3539"] = 4770,
 		},
-		["Azure Silk Belt"] = {
-			["H3537"] = 171199,
-			["mr"] = 171199,
+		["Mithril Mechanical Dragonling"] = {
+			["H3540"] = 599999,
+			["mr"] = 599999,
 		},
 		["Sorcerer Cloak of Shadow Wrath"] = {
 			["H3537"] = 25000,
 			["mr"] = 25000,
 		},
-		["Prospector's Boots"] = {
-			["H3537"] = 8000,
-			["mr"] = 8000,
+		["Recipe: Ghost Dye"] = {
+			["H3537"] = 81754,
+			["mr"] = 81754,
 		},
-		["Band of the Hierophant"] = {
-			["H3540"] = 119499,
-			["mr"] = 119499,
-			["H3539"] = 129500,
+		["Eternal Sarong of Nature Resistance"] = {
+			["H3537"] = 4440000,
+			["mr"] = 4440000,
 		},
-		["Sergeant's Warhammer of Power"] = {
-			["H3537"] = 14000,
-			["mr"] = 14000,
+		["Aquamarine"] = {
+			["H3540"] = 2395,
+			["H3539"] = 14997,
+			["H3543"] = 3400,
+			["mr"] = 3400,
 		},
-		["Hulking Chestguard"] = {
-			["H3540"] = 24497,
-			["mr"] = 24497,
-			["H3539"] = 24998,
+		["Dense Weightstone"] = {
+			["H3540"] = 6815,
+			["mr"] = 6815,
+			["H3539"] = 6815,
 		},
 		["Vital Headband of Frozen Wrath"] = {
 			["H3537"] = 12000,
@@ -16371,190 +18845,212 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 15500,
 			["H3539"] = 30282,
 		},
-		["Defender Girdle of the Bear"] = {
-			["mr"] = 35000,
-			["H3537"] = 60000,
-			["L3537"] = 35000,
+		["Gossamer Boots of the Owl"] = {
+			["H3540"] = 72693,
+			["mr"] = 60135,
+			["H3543"] = 60135,
+			["H3539"] = 72693,
 		},
-		["Elegant Cloak of Intellect"] = {
-			["H3540"] = 99999,
-			["mr"] = 99999,
+		["Hook Dagger of Frozen Wrath"] = {
+			["H3537"] = 43857,
+			["mr"] = 43857,
 		},
 		["High Councillor's Boots of Shadow Wrath"] = {
-			["mr"] = 129998,
+			["mr"] = 80000,
+			["H3543"] = 80000,
 			["H3539"] = 129998,
 		},
-		["Reticulated Bone Gauntlets"] = {
-			["H3540"] = 40000,
-			["mr"] = 40000,
+		["Pattern: Guardian Leather Bracers"] = {
+			["mr"] = 3900,
+			["H3537"] = 4000,
+			["L3537"] = 3900,
 		},
-		["World Enlarger"] = {
-			["H3537"] = 385000,
-			["mr"] = 385000,
+		["Quartz Ring of Arcane Resistance"] = {
+			["mr"] = 31190,
+			["sc"] = 0,
+			["H3540"] = 31190,
+			["id"] = "11965:0:0:1311:0",
+			["cc"] = 4,
 		},
-		["Icemail Jerkin"] = {
-			["H3540"] = 179499,
-			["H3539"] = 199497,
-			["mr"] = 179499,
+		["Alabaster Shield"] = {
+			["H3537"] = 50072,
+			["mr"] = 50072,
 		},
 		["Green Linen Shirt"] = {
 			["H3540"] = 10599,
 			["H3539"] = 10997,
-			["mr"] = 10599,
+			["H3543"] = 11799,
+			["mr"] = 11799,
 		},
-		["Dalaran Wizard's Robe"] = {
-			["H3537"] = 3500,
-			["mr"] = 3500,
+		["Nightshade Boots of Power"] = {
+			["H3539"] = 33300,
+			["mr"] = 33300,
 		},
 		["Pattern: Green Silk Armor"] = {
 			["H3537"] = 7600,
 			["mr"] = 7600,
 		},
-		["Scaled Leather Leggings of the Owl"] = {
-			["mr"] = 21825,
-			["H3539"] = 21825,
+		["Councillor's Robes of Intellect"] = {
+			["H3537"] = 90000,
+			["mr"] = 90000,
 		},
-		["Vorpal Dagger of the Tiger"] = {
-			["mr"] = 57133,
-			["H3539"] = 57133,
+		["Light Feather"] = {
+			["H3539"] = 5645,
+			["sc"] = 0,
+			["cc"] = 15,
+			["H3540"] = 1889,
+			["mr"] = 1785,
+			["H3543"] = 1785,
+			["id"] = "17056:0:0:0:0",
 		},
-		["Royal Trousers of the Owl"] = {
-			["H3537"] = 60715,
-			["mr"] = 60715,
+		["Jingling Bell"] = {
+			["H3540"] = 130622,
+			["H3539"] = 130625,
+			["H3543"] = 121057,
+			["mr"] = 121057,
 		},
 		["Multicolored Band of Shadow Resistance"] = {
 			["H3540"] = 428036,
 			["mr"] = 428036,
 		},
-		["Pattern: Swift Boots"] = {
-			["H3540"] = 8500,
-			["H3539"] = 9801,
-			["mr"] = 8500,
+		["Greater Arcane Elixir"] = {
+			["H3539"] = 58495,
+			["sc"] = 0,
+			["H3540"] = 59500,
+			["cc"] = 0,
+			["id"] = "13454:0:0:0:0",
+			["mr"] = 59500,
 		},
 		["Guardian Stone"] = {
 			["H3540"] = 174499,
 			["H3539"] = 199399,
-			["mr"] = 174499,
+			["H3543"] = 499999,
+			["mr"] = 499999,
 		},
-		["Thistle Tea"] = {
-			["H3540"] = 16798,
-			["H3539"] = 17195,
-			["mr"] = 16798,
+		["Shredder Operating Manual - Page 11"] = {
+			["H3539"] = 1030,
+			["mr"] = 1238,
+			["cc"] = 15,
+			["H3540"] = 9899,
+			["id"] = "16655:0:0:0:0",
+			["sc"] = 0,
+			["H3543"] = 1238,
+			["H3542"] = 4300,
 		},
 		["Red Rose"] = {
-			["mr"] = 9945,
 			["H3539"] = 9945,
+			["mr"] = 9945,
 		},
 		["Wicked Claw"] = {
 			["H3540"] = 899,
 			["H3539"] = 1445,
-			["mr"] = 899,
+			["H3543"] = 775,
+			["mr"] = 775,
 		},
-		["Abyssal Mail Sabatons of Sorcery"] = {
-			["H3540"] = 150000,
-			["mr"] = 150000,
+		["Hyperion Greaves of the Bear"] = {
+			["H3539"] = 52500,
+			["mr"] = 52500,
 		},
-		["Chimeric Boots"] = {
-			["H3537"] = 600000,
-			["mr"] = 600000,
+		["Deviate Scale"] = {
+			["H3540"] = 545,
+			["H3539"] = 566,
+			["H3543"] = 300,
+			["mr"] = 300,
 		},
-		["Bloodforged Belt of the Whale"] = {
-			["mr"] = 25106,
-			["H3539"] = 25106,
+		["Elder's Padded Armor of Arcane Wrath"] = {
+			["H3539"] = 18099,
+			["mr"] = 18099,
 		},
 		["Raw Longjaw Mud Snapper"] = {
 			["H3540"] = 497,
 			["mr"] = 497,
 			["H3539"] = 70,
 		},
-		["Mercenary Blade of the Bear"] = {
-			["H3540"] = 18096,
-			["H3539"] = 20000,
-			["mr"] = 18096,
+		["Codex of Defense"] = {
+			["H3540"] = 1490,
+			["H3539"] = 1770,
+			["H3543"] = 1200,
+			["mr"] = 1200,
 		},
 		["Darkmist Wizard Hat of Fiery Wrath"] = {
 			["H3537"] = 163736,
 			["mr"] = 163736,
 		},
-		["Abjurer's Boots of the Owl"] = {
-			["H3537"] = 41015,
-			["mr"] = 41015,
+		["Sword of Decay"] = {
+			["H3540"] = 105924,
+			["mr"] = 259912,
+			["H3543"] = 259912,
 		},
 		["Freezing Band"] = {
 			["H3539"] = 6697000,
-			["mr"] = 6697000,
+			["H3543"] = 6249998,
+			["mr"] = 6249998,
 		},
-		["Festival Lane Postbox Key"] = {
-			["H3537"] = 59660,
-			["mr"] = 59660,
+		["Free Action Potion"] = {
+			["H3540"] = 30370,
+			["H3539"] = 32793,
+			["H3543"] = 29304,
+			["mr"] = 29304,
 		},
-		["Lapidis Tankard of Tidesippe"] = {
-			["H3539"] = 48674,
-			["mr"] = 48674,
+		["Mercurial Bracers of the Falcon"] = {
+			["H3540"] = 49999,
+			["mr"] = 49999,
 		},
-		["Stone Hammer of the Bear"] = {
-			["H3540"] = 60000,
-			["mr"] = 60000,
+		["Hunter's Muzzle Loader"] = {
+			["H3540"] = 2000,
+			["H3539"] = 2900,
+			["mr"] = 2000,
 		},
-		["Rough Blasting Powder"] = {
-			["H3539"] = 196,
-			["sc"] = 1,
-			["cc"] = 7,
-			["H3540"] = 175,
-			["id"] = "4357:0:0:0:0",
-			["mr"] = 29,
-			["H3542"] = 29,
+		["Elegant Cloak of Shadow Wrath"] = {
+			["H3540"] = 203000,
+			["mr"] = 203000,
+			["H3539"] = 303871,
 		},
-		["Acrobatic Staff of Fiery Wrath"] = {
-			["H3540"] = 80000,
-			["mr"] = 80000,
-			["H3539"] = 200000,
+		["Exploding Shot"] = {
+			["H3537"] = 250,
+			["mr"] = 250,
 		},
-		["Recipe: Curiously Tasty Omelet"] = {
-			["H3540"] = 14999,
-			["mr"] = 14999,
-			["H3539"] = 88998,
+		["Aboriginal Robe of the Eagle"] = {
+			["H3543"] = 79900,
+			["mr"] = 79900,
 		},
-		["Scroll of Strength IV"] = {
-			["H3540"] = 4500,
-			["mr"] = 4500,
+		["Golden Skeleton Key"] = {
+			["mr"] = 3000,
+			["H3537"] = 3818,
+			["L3537"] = 3000,
 		},
-		["Sharpshooter Harquebus of Agility"] = {
-			["H3540"] = 142814,
-			["mr"] = 142814,
-			["H3539"] = 142815,
+		["Durable Belt of Fiery Wrath"] = {
+			["H3540"] = 11100,
+			["mr"] = 11100,
 		},
-		["Aquamarine Ring of Frost Resistance"] = {
-			["H3540"] = 789942,
-			["mr"] = 789942,
+		["Spiked Chain Breastplate of the Bear"] = {
+			["H3537"] = 8700,
+			["mr"] = 8700,
 		},
-		["Ornate Girdle of the Eagle"] = {
-			["H3537"] = 174020,
-			["mr"] = 174020,
+		["Jazeraint Leggings of the Falcon"] = {
+			["H3537"] = 31000,
+			["mr"] = 31000,
 		},
-		["Wolffear Harness"] = {
-			["H3537"] = 558808,
-			["mr"] = 558808,
+		["Archon Chestpiece"] = {
+			["H3539"] = 60999,
+			["mr"] = 60999,
 		},
-		["Bottom Half of Advanced Armorsmithing: Volume III"] = {
-			["H3540"] = 59500,
-			["H3539"] = 68999,
-			["mr"] = 59500,
+		["Glimmering Flamberge of Strength"] = {
+			["H3540"] = 17862,
+			["mr"] = 17862,
+			["H3539"] = 17862,
 		},
 		["Sage's Robe of the Eagle"] = {
 			["H3540"] = 21200,
 			["mr"] = 21200,
 		},
-		["Wild Leather Helmet of Defense"] = {
-			["mr"] = 44444,
-			["H3539"] = 44444,
+		["Soft Frenzy Flesh"] = {
+			["H3543"] = 6000,
+			["mr"] = 6000,
 		},
-		["Sentinel Cap of the Whale"] = {
-			["mr"] = 42168,
-			["cc"] = 4,
-			["id"] = "7441:0:0:1036:0",
-			["sc"] = 2,
-			["H3542"] = 42168,
+		["Schematic: Deadly Scope"] = {
+			["H3543"] = 99900,
+			["mr"] = 99900,
 		},
 		["Recipe: Greater Fire Protection Potion"] = {
 			["H3537"] = 6699222,
@@ -16562,136 +19058,165 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Knight's Gauntlets of the Bear"] = {
 			["H3540"] = 30768,
-			["mr"] = 30768,
+			["mr"] = 19000,
+			["H3543"] = 19000,
 			["H3539"] = 16687,
 		},
-		["Amethyst Band of Frost Resistance"] = {
-			["H3537"] = 341296,
-			["mr"] = 341296,
+		["Warbear Leather"] = {
+			["H3539"] = 3496,
+			["cc"] = 7,
+			["id"] = "15419:0:0:0:0",
+			["H3540"] = 3399,
+			["mr"] = 3399,
+			["sc"] = 0,
 		},
 		["Pattern: Volcanic Breastplate"] = {
-			["mr"] = 31000,
 			["H3539"] = 31000,
+			["mr"] = 31000,
 		},
-		["Battle Chain Pants"] = {
-			["H3540"] = 1200,
-			["mr"] = 1200,
-			["H3539"] = 3900,
+		["Plans: Golden Scale Leggings"] = {
+			["H3543"] = 4463,
+			["mr"] = 4463,
 		},
-		["Plans: Green Iron Shoulders"] = {
-			["mr"] = 12500,
-			["sc"] = 4,
-			["H3540"] = 12500,
-			["cc"] = 9,
-			["id"] = "3870:0:0:0:0",
+		["Book: Gift of the Wild II"] = {
+			["H3540"] = 15000,
+			["H3539"] = 18000,
+			["H3543"] = 19500,
+			["mr"] = 19500,
 		},
-		["Golem Shard Leggings"] = {
-			["H3537"] = 270000,
-			["mr"] = 270000,
+		["Conjurer's Bracers of Arcane Wrath"] = {
+			["H3543"] = 4287,
+			["mr"] = 4287,
 		},
-		["Devout Gloves"] = {
-			["mr"] = 65100,
-			["sc"] = 1,
-			["id"] = "16692:0:0:0:0",
+		["Scroll of Stamina III"] = {
+			["H3540"] = 1995,
+			["H3539"] = 2000,
+			["mr"] = 1995,
+		},
+		["Native Branch of the Whale"] = {
+			["H3543"] = 20000,
+			["mr"] = 20000,
+		},
+		["Corehound Boots"] = {
+			["mr"] = 3294200,
 			["cc"] = 4,
-			["H3540"] = 65100,
-			["H3539"] = 39800,
-		},
-		["Chief Brigadier Armor"] = {
-			["H3537"] = 22394,
-			["mr"] = 22394,
-		},
-		["Circlet of the Order"] = {
-			["H3537"] = 10000,
-			["mr"] = 10000,
+			["id"] = "16982:0:0:0:0",
+			["H3543"] = 3294200,
+			["sc"] = 2,
 		},
 		["Revenant Leggings of Strength"] = {
 			["H3537"] = 38333,
 			["mr"] = 38333,
 		},
-		["Captain's Breastplate of Agility"] = {
-			["H3537"] = 67500,
-			["mr"] = 67500,
+		["Discombobulator Ray"] = {
+			["H3537"] = 148500,
+			["mr"] = 148500,
 		},
-		["Celestial Cape of Frozen Wrath"] = {
-			["H3537"] = 80000,
-			["mr"] = 80000,
+		["Black Duskwood Staff"] = {
+			["H3540"] = 82799,
+			["H3539"] = 103593,
+			["H3543"] = 158942,
+			["mr"] = 158942,
 		},
-		["Ghost Mushroom"] = {
-			["mr"] = 16199,
+		["Commander's Pauldrons of the Bear"] = {
+			["H3543"] = 77916,
+			["mr"] = 77916,
+		},
+		["Headstriker Sword of the Tiger"] = {
+			["H3540"] = 212219,
+			["mr"] = 212219,
+		},
+		["Elegant Scepter of Shadow Wrath"] = {
+			["H3543"] = 336500,
+			["mr"] = 336500,
+		},
+		["Small Lustrous Pearl"] = {
+			["H3539"] = 232,
+			["mr"] = 1499,
+			["sc"] = 0,
+			["id"] = "5498:0:0:0:0",
+			["H3540"] = 296,
+			["L3539"] = 230,
+			["H3543"] = 1499,
 			["cc"] = 7,
-			["H3540"] = 16199,
-			["H3539"] = 16499,
-			["id"] = "8845:0:0:0:0",
-			["sc"] = 0,
 		},
-		["Twin-bladed Axe of Stamina"] = {
-			["H3537"] = 12384,
-			["mr"] = 12384,
+		["Pattern: Brightcloth Gloves"] = {
+			["mr"] = 9500,
+			["cc"] = 9,
+			["H3539"] = 21800,
+			["id"] = "14479:0:0:0:0",
+			["H3540"] = 21599,
+			["H3543"] = 9500,
+			["sc"] = 2,
 		},
-		["Pattern: Crimson Silk Robe"] = {
-			["H3537"] = 321880,
-			["mr"] = 321880,
-		},
-		["Iridium Chain of the Owl"] = {
-			["H3540"] = 43199,
-			["mr"] = 43199,
-			["H3539"] = 43875,
-		},
-		["Frostweave Gloves"] = {
-			["mr"] = 215500,
-			["H3539"] = 215500,
-		},
-		["Sentry's Headdress of the Gorilla"] = {
-			["H3537"] = 50000,
-			["mr"] = 50000,
-		},
-		["Formula: Enchant Boots - Greater Stamina"] = {
-			["H3540"] = 7892,
-			["H3539"] = 8200,
-			["mr"] = 7892,
-		},
-		["Merc Sword of the Boar"] = {
-			["H3540"] = 4100,
-			["H3539"] = 12400,
-			["mr"] = 4100,
-		},
-		["Short Bastard Sword of the Bear"] = {
-			["mr"] = 6032,
-			["H3539"] = 6032,
-		},
-		["Soulkeeper"] = {
-			["H3540"] = 132497,
+		["High Councillor's Bracers of Frozen Wrath"] = {
+			["H3540"] = 149500,
+			["mr"] = 149500,
 			["H3539"] = 150000,
-			["mr"] = 132497,
 		},
-		["Rigid Cape of Agility"] = {
-			["H3540"] = 17278,
-			["mr"] = 17278,
-			["H3539"] = 17278,
+		["Hematite Link of Shadow Resistance"] = {
+			["H3540"] = 300000,
+			["H3539"] = 87750,
+			["H3543"] = 90446,
+			["mr"] = 90446,
 		},
-		["Hawkeye's Epaulets"] = {
-			["H3537"] = 20000,
-			["mr"] = 20000,
-		},
-		["Emerald Helm of the Bear"] = {
-			["H3537"] = 52098,
-			["mr"] = 52098,
-		},
-		["Soldier's Armor of the Whale"] = {
-			["H3540"] = 9385,
-			["mr"] = 9385,
-		},
-		["Forest Pendant of the Monkey"] = {
-			["mr"] = 69280,
+		["Pulsating Hydra Heart"] = {
+			["mr"] = 11400,
 			["cc"] = 4,
-			["id"] = "12040:0:0:598:0",
-			["H3543"] = 69280,
+			["H3539"] = 45000,
+			["id"] = "5183:0:0:0:0",
 			["sc"] = 0,
+			["H3543"] = 11400,
+			["H3542"] = 19998,
 		},
-		["Mugthol's Helm"] = {
-			["H3540"] = 42799,
-			["mr"] = 42799,
+		["Golden Pearl"] = {
+			["H3540"] = 709900,
+			["H3539"] = 797500,
+			["H3543"] = 687900,
+			["mr"] = 687900,
+		},
+		["Illusion Dust"] = {
+			["H3540"] = 757,
+			["H3539"] = 860,
+			["H3543"] = 348,
+			["mr"] = 348,
+		},
+		["Ornate Mithril Boots"] = {
+			["H3543"] = 150000,
+			["mr"] = 150000,
+		},
+		["Swiftthistle"] = {
+			["sc"] = 0,
+			["H3539"] = 10559,
+			["cc"] = 7,
+			["id"] = "2452:0:0:0:0",
+			["H3540"] = 10000,
+			["mr"] = 12297,
+			["H3543"] = 12297,
+			["H3542"] = 9999,
+		},
+		["Gaea's Cloak of Frozen Wrath"] = {
+			["H3540"] = 24422,
+			["mr"] = 24422,
+		},
+		["Pattern: Dark Leather Gloves"] = {
+			["H3539"] = 7699,
+			["cc"] = 9,
+			["id"] = "7360:0:0:0:0",
+			["mr"] = 7324,
+			["H3543"] = 7324,
+			["sc"] = 1,
+		},
+		["Arachnidian Cape of Arcane Wrath"] = {
+			["mr"] = 34861,
+			["sc"] = 1,
+			["H3540"] = 34861,
+			["id"] = "14292:0:0:1810:0",
+			["cc"] = 4,
+		},
+		["Hacking Cleaver of the Bear"] = {
+			["H3539"] = 25000,
+			["mr"] = 25000,
 		},
 		["Flarecore Leggings"] = {
 			["mr"] = 3894200,
@@ -16700,34 +19225,39 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3543"] = 3894200,
 			["sc"] = 1,
 		},
-		["Hacking Cleaver of the Bear"] = {
-			["mr"] = 25000,
-			["H3539"] = 25000,
+		["Rugged Leather"] = {
+			["H3539"] = 4125,
+			["cc"] = 7,
+			["mr"] = 1584,
+			["id"] = "8170:0:0:0:0",
+			["H3540"] = 1545,
+			["H3543"] = 1584,
+			["sc"] = 0,
 		},
 		["Dragonscale Gauntlets"] = {
 			["H3537"] = 160000,
 			["mr"] = 160000,
 		},
-		["Black Lotus"] = {
-			["L3540"] = 1247000,
-			["mr"] = 1247000,
-			["cc"] = 7,
-			["H3540"] = 1247100,
+		["Giantstalker's Belt"] = {
+			["H3540"] = 1099999,
+			["H3539"] = 1542938,
+			["H3543"] = 899999,
+			["mr"] = 899999,
+		},
+		["Swashbuckler's Breastplate of the Monkey"] = {
+			["H3537"] = 30000,
+			["mr"] = 30000,
+		},
+		["Truesilver Ore"] = {
+			["id"] = "7911:0:0:0:0",
+			["H3542"] = 1000,
+			["mr"] = 905,
 			["sc"] = 0,
-			["H3539"] = 1297499,
-			["id"] = "13468:0:0:0:0",
-		},
-		["Arcanist Bindings"] = {
-			["mr"] = 1665000,
-			["cc"] = 4,
-			["id"] = "16799:0:0:0:0",
-			["sc"] = 1,
-			["H3540"] = 1665000,
-		},
-		["Girdle of Prophecy"] = {
-			["H3540"] = 599000,
-			["mr"] = 599000,
-			["H3539"] = 719000,
+			["L3543"] = 905,
+			["cc"] = 7,
+			["H3539"] = 790,
+			["H3543"] = 948,
+			["H3540"] = 870,
 		},
 		["Sentinel Buckler of Stamina"] = {
 			["mr"] = 15000,
@@ -16736,97 +19266,97 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 6,
 			["H3542"] = 15000,
 		},
-		["Enchanted Leather"] = {
-			["H3539"] = 38199,
+		["Adventurer's Bandana of Nature's Wrath"] = {
+			["H3537"] = 250000,
+			["mr"] = 250000,
+		},
+		["Ivory Wand of the Boar"] = {
+			["H3537"] = 32000,
+			["mr"] = 32000,
+		},
+		["Curved Dagger of Arcane Wrath"] = {
+			["H3543"] = 2500,
+			["mr"] = 2500,
+		},
+		["Merc Sword of the Boar"] = {
+			["H3540"] = 4100,
+			["H3539"] = 12400,
+			["mr"] = 4100,
+		},
+		["Shredder Operating Manual - Page 6"] = {
+			["H3539"] = 889,
+			["mr"] = 1895,
+			["cc"] = 15,
+			["H3540"] = 868,
+			["id"] = "16650:0:0:0:0",
 			["sc"] = 0,
-			["H3540"] = 35999,
-			["cc"] = 7,
-			["mr"] = 35999,
-			["id"] = "12810:0:0:0:0",
+			["H3543"] = 1895,
+			["H3542"] = 2600,
 		},
-		["Schematic: Major Recombobulator"] = {
-			["H3540"] = 33600,
-			["H3539"] = 34941,
-			["mr"] = 33600,
+		["Iridium Chain of the Owl"] = {
+			["H3540"] = 43199,
+			["mr"] = 44569,
+			["H3543"] = 44569,
+			["H3539"] = 43875,
 		},
-		["Aboriginal Footwraps of Frozen Wrath"] = {
-			["H3537"] = 7528,
-			["mr"] = 7528,
+		["Frostweave Gloves"] = {
+			["mr"] = 215499,
+			["H3543"] = 215499,
+			["H3539"] = 215500,
 		},
-		["Runecloth Bag"] = {
-			["L3540"] = 29600,
-			["mr"] = 35300,
-			["sc"] = 0,
-			["id"] = "14046:0:0:0:0",
-			["H3540"] = 29999,
-			["cc"] = 1,
-			["H3539"] = 29600,
-			["H3542"] = 35300,
-		},
-		["Conjurer's Mantle of Arcane Wrath"] = {
-			["mr"] = 9000,
+		["Inscribed Leather Bracers"] = {
+			["mr"] = 14099,
 			["cc"] = 4,
-			["id"] = "9850:0:0:1809:0",
-			["H3539"] = 33428,
-			["sc"] = 1,
-			["H3540"] = 9000,
+			["id"] = "3205:0:0:0:0",
+			["sc"] = 2,
+			["H3536"] = 14099,
 		},
-		["Elixir of Detect Undead"] = {
-			["H3540"] = 897,
-			["H3539"] = 920,
-			["mr"] = 897,
+		["Lavender Mageweave Shirt"] = {
+			["H3539"] = 199898,
+			["cc"] = 4,
+			["sc"] = 0,
+			["H3540"] = 75025,
+			["id"] = "10054:0:0:0:0",
+			["H3543"] = 99499,
+			["mr"] = 99499,
 		},
-		["Pattern: Volcanic Shoulders"] = {
-			["H3537"] = 49999,
-			["mr"] = 49999,
-		},
-		["Scroll of Stamina III"] = {
-			["H3540"] = 1995,
-			["H3539"] = 2000,
-			["mr"] = 1995,
-		},
-		["Wanderer's Belt of Nature Resistance"] = {
-			["mr"] = 1200000,
-			["H3539"] = 1200000,
-		},
-		["Firefin Snapper"] = {
-			["H3540"] = 3500,
-			["H3539"] = 3600,
-			["mr"] = 3500,
+		["Cured Medium Hide"] = {
+			["H3540"] = 985,
+			["mr"] = 985,
 		},
 		["Wanderer's Armor of Power"] = {
 			["H3540"] = 49999,
 			["mr"] = 49999,
 		},
-		["Gossamer Cape of Intellect"] = {
-			["H3537"] = 25000,
-			["mr"] = 25000,
+		["Banded Armor of the Bear"] = {
+			["mr"] = 20000,
+			["H3543"] = 20000,
+			["H3539"] = 22400,
 		},
-		["High Councillor's Mantle of Frozen Wrath"] = {
-			["H3540"] = 269000,
-			["mr"] = 269000,
-			["H3539"] = 217000,
+		["Feral Cloak of the Eagle"] = {
+			["H3537"] = 5581,
+			["mr"] = 5581,
 		},
-		["Lunar Wand of Shadow Wrath"] = {
-			["H3537"] = 700000,
-			["mr"] = 700000,
+		["Regal Leggings of Fiery Wrath"] = {
+			["H3537"] = 20000,
+			["mr"] = 20000,
 		},
-		["Wanderer's Armor of the Monkey"] = {
-			["H3540"] = 100000,
-			["mr"] = 100000,
+		["Green Hills of Stranglethorn - Page 20"] = {
+			["H3540"] = 898,
+			["H3539"] = 4999,
+			["mr"] = 898,
 		},
-		["Schematic: Deadly Scope"] = {
-			["H3537"] = 320000,
-			["mr"] = 320000,
+		["Wild Leather Helmet of Defense"] = {
+			["H3539"] = 44444,
+			["mr"] = 44444,
 		},
-		["Bloodspattered Loincloth of Strength"] = {
-			["mr"] = 5969,
-			["H3539"] = 5969,
+		["Gryphon Mail Gauntlets of the Falcon"] = {
+			["H3537"] = 30000,
+			["mr"] = 30000,
 		},
-		["Plans: Thorium Shield Spike"] = {
-			["H3540"] = 199997,
-			["H3539"] = 200000,
-			["mr"] = 199997,
+		["Emerald Breastplate of the Boar"] = {
+			["H3543"] = 220000,
+			["mr"] = 220000,
 		},
 		["Spiked Chain Shoulder Pads of the Tiger"] = {
 			["H3540"] = 40000,
@@ -16836,44 +19366,51 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 77,
 			["mr"] = 77,
 		},
-		["Libram of Resilience"] = {
-			["H3540"] = 491998,
-			["H3539"] = 504998,
-			["mr"] = 491998,
+		["Gizmotron Megachopper"] = {
+			["H3537"] = 249999,
+			["mr"] = 249999,
 		},
-		["Field Plate Girdle of the Gorilla"] = {
-			["H3537"] = 30615,
-			["mr"] = 30615,
+		["Bloodforged Bindings of Stamina"] = {
+			["mr"] = 17090,
+			["H3537"] = 21090,
+			["L3537"] = 17090,
 		},
-		["Engraved Gauntlets of the Tiger"] = {
-			["H3537"] = 71026,
-			["mr"] = 71026,
+		["Twilight Cultist Ring of Lordship"] = {
+			["H3540"] = 600000,
+			["mr"] = 998000,
+			["H3543"] = 998000,
+			["H3539"] = 699999,
 		},
-		["Large Glowing Shard"] = {
-			["H3539"] = 999,
-			["cc"] = 7,
-			["mr"] = 1334,
-			["id"] = "11139:0:0:0:0",
-			["L3539"] = 990,
-			["H3540"] = 1334,
+		["Recipe: Giant Clam Scorcho"] = {
+			["H3539"] = 83997,
+			["H3543"] = 90000,
+			["mr"] = 90000,
+		},
+		["Runecloth Bag"] = {
+			["id"] = "14046:0:0:0:0",
+			["H3542"] = 35300,
+			["L3540"] = 29600,
+			["H3539"] = 29600,
+			["cc"] = 1,
 			["sc"] = 0,
-		},
-		["Assassin's Blade"] = {
-			["H3540"] = 899999,
-			["mr"] = 899999,
-			["H3539"] = 1005000,
+			["mr"] = 38800,
+			["H3543"] = 38800,
+			["H3540"] = 29999,
 		},
 		["Warstrike Belt"] = {
 			["H3537"] = 150000,
 			["mr"] = 150000,
 		},
-		["Plans: Green Iron Boots"] = {
-			["mr"] = 20000,
-			["H3539"] = 20000,
+		["Schematic: Gyrofreeze Ice Reflector"] = {
+			["H3540"] = 29800,
+			["H3539"] = 110000,
+			["H3543"] = 22000,
+			["mr"] = 22000,
 		},
-		["Hyperion Greaves of the Bear"] = {
-			["mr"] = 52500,
-			["H3539"] = 52500,
+		["Rigid Leggings of the Owl"] = {
+			["H3540"] = 14750,
+			["mr"] = 13750,
+			["H3543"] = 13750,
 		},
 		["Twilight Cowl of Stamina"] = {
 			["H3537"] = 30000,
@@ -16883,10 +19420,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 53458,
 			["mr"] = 53458,
 		},
-		["Scroll of Strength"] = {
-			["H3540"] = 1475,
-			["H3539"] = 1525,
-			["mr"] = 1475,
+		["Tainted Pierce"] = {
+			["H3540"] = 200000,
+			["mr"] = 200000,
 		},
 		["Sentinel Girdle of the Eagle"] = {
 			["mr"] = 21393,
@@ -16897,57 +19433,58 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3542"] = 21393,
 		},
 		["Bruiseweed"] = {
-			["mr"] = 287,
+			["cc"] = 7,
+			["mr"] = 166,
+			["L3543"] = 166,
 			["sc"] = 0,
-			["H3539"] = 78,
 			["H3540"] = 228,
 			["id"] = "2453:0:0:0:0",
 			["H3543"] = 287,
-			["cc"] = 7,
+			["H3539"] = 78,
 		},
 		["Thick Leather"] = {
 			["H3539"] = 1057,
-			["sc"] = 0,
-			["H3540"] = 1095,
 			["cc"] = 7,
-			["mr"] = 1095,
+			["mr"] = 749,
 			["id"] = "4304:0:0:0:0",
-		},
-		["Gleaming Claymore of the Boar"] = {
-			["mr"] = 4500,
-			["cc"] = 2,
-			["id"] = "15248:0:0:1103:0",
-			["H3543"] = 4500,
-			["sc"] = 8,
-		},
-		["Light Feather"] = {
-			["mr"] = 1889,
+			["H3540"] = 1095,
+			["H3543"] = 749,
 			["sc"] = 0,
-			["H3540"] = 1889,
-			["id"] = "17056:0:0:0:0",
-			["cc"] = 15,
-			["H3539"] = 5645,
 		},
-		["War Torn Tunic of the Eagle"] = {
-			["mr"] = 9500,
-			["H3539"] = 9500,
+		["Regal Cuffs of the Whale"] = {
+			["H3543"] = 6500,
+			["mr"] = 6500,
 		},
-		["Scroll of Agility IV"] = {
-			["H3540"] = 25800,
-			["mr"] = 25800,
-			["H3539"] = 29400,
+		["Pattern: Swift Boots"] = {
+			["H3540"] = 8500,
+			["H3539"] = 9801,
+			["H3543"] = 4896,
+			["mr"] = 4896,
 		},
-		["Vibrant Silk Cape"] = {
-			["H3537"] = 9541,
-			["mr"] = 9541,
+		["Royal Trousers of the Owl"] = {
+			["H3537"] = 60715,
+			["mr"] = 60715,
 		},
-		["Shortsword of Vengeance"] = {
-			["H3537"] = 157589,
-			["mr"] = 157589,
+		["Sentinel Trousers of the Whale"] = {
+			["mr"] = 36996,
+			["cc"] = 4,
+			["id"] = "7440:0:0:1034:0",
+			["sc"] = 2,
+			["H3539"] = 29052,
+			["H3542"] = 36996,
+		},
+		["Slayer's Slippers"] = {
+			["H3537"] = 15624,
+			["mr"] = 15624,
+		},
+		["Gothic Plate Spaulders of the Bear"] = {
+			["H3540"] = 25000,
+			["mr"] = 25000,
 		},
 		["Insignia Buckler"] = {
 			["H3540"] = 9899,
-			["mr"] = 9899,
+			["mr"] = 9652,
+			["H3543"] = 9652,
 			["H3539"] = 38400,
 		},
 		["Plans: Annihilator"] = {
@@ -16955,115 +19492,102 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3539"] = 922000,
 			["mr"] = 999000,
 		},
-		["Hero's Gauntlets"] = {
-			["mr"] = 50000,
-			["H3539"] = 50000,
+		["Hardened Stone Band"] = {
+			["H3537"] = 199750,
+			["mr"] = 199750,
 		},
-		["Disgusting Oozeling"] = {
-			["mr"] = 508000,
-			["cc"] = 15,
-			["id"] = "20769:0:0:0:0",
-			["H3540"] = 866999,
-			["H3539"] = 878000,
-			["sc"] = 0,
-			["H3542"] = 508000,
+		["The Black Knight"] = {
+			["H3537"] = 90578,
+			["mr"] = 90578,
 		},
-		["Stonecutter Claymore of Stamina"] = {
-			["mr"] = 24499,
-			["H3539"] = 24499,
+		["Pattern: Blue Overalls"] = {
+			["H3540"] = 8900,
+			["H3539"] = 9100,
+			["H3543"] = 29800,
+			["mr"] = 29800,
 		},
-		["Traveler's Helm"] = {
-			["H3540"] = 48800,
-			["mr"] = 48800,
+		["Twilight Cuffs of Fiery Wrath"] = {
+			["H3537"] = 13194,
+			["mr"] = 13194,
 		},
-		["Copper Bar"] = {
-			["H3540"] = 4195,
-			["H3542"] = 2967,
-			["id"] = "2840:0:0:0:0",
-			["H3541"] = 945,
-			["L3543"] = 1995,
-			["cc"] = 7,
-			["mr"] = 1995,
-			["H3539"] = 1434,
-			["H3543"] = 1999,
-			["sc"] = 0,
+		["Primal Batskin Gloves"] = {
+			["H3539"] = 1699997,
+			["mr"] = 1699997,
 		},
-		["Slayer's Skullcap"] = {
-			["H3537"] = 99999,
-			["mr"] = 99999,
+		["Ironweaver"] = {
+			["H3539"] = 89999,
+			["mr"] = 89999,
 		},
-		["Darksoul Leggings"] = {
-			["H3537"] = 1100000,
-			["mr"] = 1100000,
+		["Massacre Sword of the Boar"] = {
+			["H3537"] = 148854,
+			["mr"] = 148854,
 		},
 		["Stonescale Oil"] = {
 			["H3540"] = 14800,
-			["mr"] = 14800,
+			["mr"] = 26999,
+			["H3543"] = 26999,
 			["H3539"] = 17353,
 		},
-		["Mystical Leggings of Nature Resistance"] = {
-			["H3537"] = 5995515,
-			["mr"] = 5995515,
-		},
-		["Crest of Beckoning: Fire"] = {
-			["H3537"] = 990000,
-			["mr"] = 990000,
-		},
-		["Dark Iron Boots of the Gorilla"] = {
-			["mr"] = 1600000,
-			["H3539"] = 1600000,
-		},
 		["Razor Blade of Fiery Wrath"] = {
-			["H3537"] = 50554,
-			["mr"] = 50554,
+			["H3543"] = 30554,
+			["mr"] = 30554,
+		},
+		["Gloom Reaper of the Whale"] = {
+			["H3540"] = 107568,
+			["mr"] = 107568,
+		},
+		["Pattern: Chimeric Vest"] = {
+			["H3540"] = 10800,
+			["H3539"] = 14600,
+			["H3543"] = 38796,
+			["mr"] = 38796,
+		},
+		["Aboriginal Sash of the Eagle"] = {
+			["H3537"] = 5525,
+			["mr"] = 5525,
 		},
 		["Goblin Mortar"] = {
 			["H3537"] = 311065,
 			["mr"] = 311065,
 		},
-		["Coarse Dynamite"] = {
-			["H3537"] = 2078,
-			["mr"] = 2078,
+		["Archer's Trousers of the Bear"] = {
+			["H3539"] = 12500,
+			["mr"] = 12500,
 		},
-		["Soul Dust"] = {
-			["H3539"] = 995,
-			["sc"] = 0,
-			["H3540"] = 957,
-			["cc"] = 7,
-			["mr"] = 957,
-			["id"] = "11083:0:0:0:0",
+		["Greater Nature Protection Potion"] = {
+			["H3540"] = 52500,
+			["H3539"] = 58999,
+			["H3543"] = 59499,
+			["mr"] = 59499,
 		},
-		["Bonecaster's Bindings of Healing"] = {
-			["H3537"] = 195074,
-			["mr"] = 195074,
+		["Toughened Leather Gloves"] = {
+			["mr"] = 68998,
+			["cc"] = 4,
+			["H3539"] = 206321,
+			["id"] = "4253:0:0:0:0",
+			["H3540"] = 148998,
+			["H3543"] = 68998,
+			["sc"] = 2,
 		},
-		["Small Glowing Shard"] = {
-			["H3539"] = 386,
-			["sc"] = 0,
-			["H3540"] = 366,
-			["cc"] = 7,
-			["mr"] = 366,
-			["id"] = "11138:0:0:0:0",
+		["Mystical Gloves of the Owl"] = {
+			["H3543"] = 305387,
+			["mr"] = 305387,
 		},
-		["Dense Blasting Powder"] = {
-			["mr"] = 5100,
-			["cc"] = 7,
-			["id"] = "15992:0:0:0:0",
-			["sc"] = 1,
-			["H3539"] = 2700,
-			["H3542"] = 5100,
+		["Glowstar Rod of the Whale"] = {
+			["H3539"] = 99999,
+			["mr"] = 99999,
 		},
-		["Elder's Padded Armor of the Owl"] = {
-			["mr"] = 28800,
-			["H3539"] = 28800,
+		["Coral Band of the Boar"] = {
+			["H3543"] = 30000,
+			["mr"] = 30000,
 		},
-		["Iridium Circle of Concentration"] = {
-			["H3540"] = 249222,
-			["mr"] = 249222,
+		["Pattern: Heavy Woolen Cloak"] = {
+			["H3540"] = 19200,
+			["mr"] = 19200,
 		},
-		["Black Dragonscale Leggings"] = {
-			["mr"] = 1349999,
-			["H3539"] = 1349999,
+		["Furious Falchion of the Monkey"] = {
+			["H3540"] = 44172,
+			["mr"] = 44172,
 		},
 		["Chesterfall Musket"] = {
 			["H3537"] = 209999,
@@ -17077,115 +19601,128 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Zesty Clam Meat"] = {
 			["H3540"] = 286,
 			["H3539"] = 121,
-			["mr"] = 286,
+			["H3543"] = 249,
+			["mr"] = 249,
 		},
-		["Azure Silk Pants"] = {
-			["H3540"] = 8600,
-			["H3539"] = 4898,
-			["mr"] = 8600,
+		["High Councillor's Cloak of Fiery Wrath"] = {
+			["H3540"] = 79000,
+			["mr"] = 149500,
+			["H3543"] = 149500,
+			["H3539"] = 79500,
 		},
-		["Mystical Cape of Shadow Resistance"] = {
-			["H3537"] = 499999,
-			["mr"] = 499999,
+		["Basalt Ring of Stamina"] = {
+			["H3537"] = 30000,
+			["mr"] = 30000,
 		},
-		["Pattern: Tough Scorpid Leggings"] = {
-			["mr"] = 4699,
-			["H3539"] = 4699,
+		["Feral Bindings of the Monkey"] = {
+			["H3537"] = 9524,
+			["mr"] = 9524,
 		},
 		["Medicine Staff of Healing"] = {
 			["H3537"] = 32573,
 			["mr"] = 32573,
 		},
-		["Dragon Finger of Intellect"] = {
-			["H3537"] = 165000,
-			["mr"] = 165000,
+		["Pattern: Red Mageweave Headband"] = {
+			["mr"] = 9200,
+			["H3539"] = 18850,
+			["cc"] = 9,
+			["H3540"] = 18838,
+			["id"] = "10320:0:0:0:0",
+			["L3539"] = 18600,
+			["H3543"] = 9200,
+			["sc"] = 2,
 		},
-		["Infiltrator Pants of the Monkey"] = {
-			["H3537"] = 30000,
-			["mr"] = 30000,
+		["Black Dragonscale"] = {
+			["H3540"] = 5560,
+			["H3539"] = 7999,
+			["H3543"] = 5494,
+			["mr"] = 5494,
 		},
 		["Ranger Helm of the Owl"] = {
 			["H3537"] = 10000,
 			["mr"] = 10000,
 		},
-		["Large Brown Sack"] = {
-			["H3540"] = 11000,
-			["mr"] = 11000,
-			["H3539"] = 15499,
+		["Khadgar's Whisker"] = {
+			["H3539"] = 2243,
+			["cc"] = 7,
+			["sc"] = 0,
+			["H3540"] = 2999,
+			["id"] = "3358:0:0:0:0",
+			["H3543"] = 3998,
+			["mr"] = 3998,
 		},
-		["Dark Iron Leggings"] = {
-			["mr"] = 3299997,
-			["H3539"] = 3299997,
+		["Formula: Enchant Gloves - Advanced Mining"] = {
+			["mr"] = 139000,
+			["cc"] = 9,
+			["id"] = "11203:0:0:0:0",
+			["H3540"] = 139000,
+			["H3539"] = 9700,
+			["sc"] = 8,
 		},
 		["Pattern: Heavy Earthen Gloves"] = {
-			["H3537"] = 37406,
-			["mr"] = 37406,
+			["H3543"] = 16504,
+			["mr"] = 16504,
 		},
 		["Black Tuxedo Pants"] = {
 			["H3537"] = 20000000,
 			["mr"] = 20000000,
 		},
-		["Arachnidian Legguards of Healing"] = {
-			["H3540"] = 199999,
-			["mr"] = 199999,
+		["Oil of Immolation"] = {
+			["H3540"] = 13999,
+			["mr"] = 15998,
+			["H3543"] = 15998,
 		},
-		["Light Hide"] = {
-			["H3540"] = 48,
-			["H3539"] = 238,
-			["mr"] = 48,
+		["High Councillor's Cloak of Shadow Resistance"] = {
+			["H3543"] = 1950000,
+			["mr"] = 1950000,
 		},
 		["Adventurer's Cape of Agility"] = {
-			["mr"] = 90899,
 			["H3539"] = 90899,
+			["mr"] = 90899,
 		},
 		["Aboriginal Gloves of Healing"] = {
 			["H3537"] = 12300,
 			["mr"] = 12300,
 		},
-		["Dark Iron Boots of the Bear"] = {
-			["H3537"] = 3448964,
-			["mr"] = 3448964,
+		["Dreadblade of Arcane Wrath"] = {
+			["H3537"] = 222276,
+			["mr"] = 222276,
 		},
 		["Phalanx Girdle of the Bear"] = {
 			["H3537"] = 22020,
 			["mr"] = 22020,
 		},
-		["Digmaster 5000"] = {
-			["H3537"] = 2647269,
-			["mr"] = 2647269,
+		["Ivycloth Gloves of the Owl"] = {
+			["H3540"] = 6500,
+			["mr"] = 6500,
 		},
-		["Multicolored Band of Frost Resistance"] = {
-			["mr"] = 299999,
-			["cc"] = 4,
-			["id"] = "20692:0:0:1362:0",
-			["H3543"] = 299999,
-			["sc"] = 0,
+		["Barbaric Battle Axe of the Monkey"] = {
+			["H3543"] = 16464,
+			["mr"] = 16464,
 		},
 		["Archer's Shoulderpads of the Falcon"] = {
 			["H3537"] = 76968,
 			["mr"] = 76968,
 		},
-		["Elegant Mantle of Arcane Wrath"] = {
-			["H3537"] = 149999,
-			["mr"] = 149999,
+		["Bonecaster's Shroud of Frozen Wrath"] = {
+			["H3543"] = 151339,
+			["mr"] = 151339,
 		},
-		["Heraldic Bracers"] = {
-			["H3537"] = 19917,
-			["mr"] = 19917,
+		["Recipe: Elixir of the Mongoose"] = {
+			["H3540"] = 8500,
+			["mr"] = 29850,
+			["H3543"] = 29850,
+			["H3539"] = 8999,
 		},
-		["Iron Ore"] = {
-			["cc"] = 7,
-			["mr"] = 1284,
-			["L3543"] = 1284,
-			["H3540"] = 1939,
-			["id"] = "2772:0:0:0:0",
-			["sc"] = 0,
-			["H3543"] = 1790,
-			["H3539"] = 1795,
+		["Gyrochronatom"] = {
+			["H3540"] = 2500,
+			["mr"] = 4000,
+			["H3543"] = 4000,
+			["H3539"] = 22998,
 		},
-		["Buccaneer's Robes of Stamina"] = {
-			["H3540"] = 21885,
-			["mr"] = 21885,
+		["Ravasaur Scale Boots"] = {
+			["H3537"] = 122467,
+			["mr"] = 122467,
 		},
 		["Stonecutter Claymore of the Whale"] = {
 			["mr"] = 12000,
@@ -17194,316 +19731,329 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3543"] = 12000,
 			["sc"] = 8,
 		},
-		["Dalewind Trousers"] = {
-			["H3540"] = 55500,
-			["mr"] = 55500,
+		["Belt of the Gladiator"] = {
+			["H3539"] = 209900,
+			["mr"] = 209900,
 		},
-		["Polished Zweihander of the Eagle"] = {
-			["H3540"] = 16000,
-			["mr"] = 16000,
+		["Elixir of Superior Defense"] = {
+			["H3540"] = 34597,
+			["H3539"] = 34600,
+			["H3543"] = 49792,
+			["mr"] = 49792,
 		},
-		["Percussion Shotgun of the Whale"] = {
-			["H3537"] = 54332,
-			["mr"] = 54332,
+		["Magus Long Staff of Healing"] = {
+			["H3539"] = 350000,
+			["mr"] = 350000,
 		},
-		["Heavy Lamellar Boots of the Bear"] = {
-			["H3537"] = 55500,
-			["mr"] = 55500,
+		["Bloodforged Bindings of the Monkey"] = {
+			["H3537"] = 29300,
+			["mr"] = 29300,
 		},
-		["High Chief's Pauldrons of the Tiger"] = {
-			["mr"] = 486136,
-			["H3539"] = 486136,
+		["Staunch Hammer of Stamina"] = {
+			["H3540"] = 4900,
+			["mr"] = 4900,
+			["H3539"] = 5000,
 		},
-		["Howling Blade"] = {
-			["H3537"] = 160000,
-			["mr"] = 160000,
+		["Bloodwoven Cloak of the Owl"] = {
+			["H3540"] = 48528,
+			["mr"] = 48528,
 		},
 		["Heavy Lamellar Pauldrons of the Bear"] = {
 			["H3537"] = 31195,
 			["mr"] = 31195,
 		},
-		["Tin Bar"] = {
-			["mr"] = 909,
-			["H3539"] = 898,
-			["cc"] = 7,
-			["H3540"] = 530,
-			["id"] = "3576:0:0:0:0",
-			["sc"] = 0,
-			["H3543"] = 909,
-			["H3542"] = 1234,
+		["Thorium Widget"] = {
+			["H3540"] = 6200,
+			["H3539"] = 6478,
+			["mr"] = 6200,
 		},
-		["Barbaric Battle Axe of Strength"] = {
-			["mr"] = 20000,
-			["cc"] = 2,
-			["id"] = "3195:0:0:115:0",
-			["H3539"] = 50000,
+		["Cabalist Gloves of the Monkey"] = {
+			["mr"] = 73416,
+			["cc"] = 4,
+			["id"] = "7530:0:0:611:0",
+			["sc"] = 2,
+			["H3529"] = 73416,
+		},
+		["Barbaric Battle Axe of the Tiger"] = {
+			["mr"] = 6000,
 			["sc"] = 1,
-			["H3540"] = 20000,
+			["H3540"] = 6000,
+			["id"] = "3195:0:0:675:0",
+			["cc"] = 2,
 		},
-		["Rageclaw Belt of the Bear"] = {
-			["H3537"] = 19500,
-			["mr"] = 19500,
+		["Templar Gauntlets of Nature Resistance"] = {
+			["H3537"] = 1503744,
+			["mr"] = 1503744,
 		},
-		["Plans: Thorium Armor"] = {
-			["H3539"] = 28400,
-			["mr"] = 28400,
+		["Wicked Leather Belt"] = {
+			["H3537"] = 49999,
+			["mr"] = 49999,
 		},
-		["Ballast Maul of the Boar"] = {
-			["mr"] = 72535,
-			["H3539"] = 72535,
-		},
-		["Conjurer's Bracers of Healing"] = {
-			["H3537"] = 20000,
-			["mr"] = 20000,
+		["Robes of Insight"] = {
+			["H3540"] = 562458,
+			["mr"] = 499000,
+			["H3543"] = 499000,
 		},
 		["Wanderer's Leggings of Agility"] = {
 			["H3540"] = 50000,
 			["mr"] = 50000,
 		},
-		["Dark Iron Helm"] = {
-			["H3537"] = 1500000,
-			["mr"] = 1500000,
+		["Feral Cloak of the Monkey"] = {
+			["H3539"] = 5517,
+			["mr"] = 5517,
 		},
-		["Pattern: Phoenix Gloves"] = {
-			["mr"] = 16500,
-			["H3537"] = 19757,
-			["L3537"] = 16500,
+		["Bandit Boots of Nature's Wrath"] = {
+			["H3537"] = 12550,
+			["mr"] = 12550,
 		},
-		["Hero's Pauldrons"] = {
-			["H3540"] = 30000,
-			["mr"] = 30000,
+		["War Paint Shield"] = {
+			["H3539"] = 27999,
+			["mr"] = 27999,
 		},
-		["Prairie Dog Whistle"] = {
-			["H3537"] = 50000,
-			["mr"] = 50000,
+		["Magister's Bindings"] = {
+			["H3539"] = 175500,
+			["mr"] = 175500,
 		},
-		["Short Bastard Sword of the Boar"] = {
-			["mr"] = 9900,
-			["H3539"] = 9900,
+		["Gleaming Claymore of Strength"] = {
+			["H3537"] = 6500,
+			["mr"] = 6500,
 		},
-		["Hyperion Gauntlets of Healing"] = {
-			["H3537"] = 50000,
-			["mr"] = 50000,
+		["Merciless Gauntlets of the Wolf"] = {
+			["H3543"] = 212247,
+			["mr"] = 212247,
 		},
-		["Renegade Chestguard of Power"] = {
-			["H3540"] = 100000,
-			["mr"] = 100000,
-			["H3539"] = 100000,
+		["Flintrock Shoulders"] = {
+			["H3540"] = 699470,
+			["H3539"] = 853050,
+			["H3543"] = 350000,
+			["mr"] = 350000,
 		},
-		["Goblin Nutcracker of Strength"] = {
-			["H3540"] = 27500,
-			["mr"] = 27500,
+		["Hook Dagger of Strength"] = {
+			["H3537"] = 16728,
+			["mr"] = 16728,
 		},
 		["Pillager's Chestguard of the Boar"] = {
 			["H3537"] = 30245,
 			["mr"] = 30245,
 		},
 		["Frostweave Pants"] = {
-			["H3539"] = 214199,
 			["mr"] = 214199,
+			["H3539"] = 214199,
 		},
-		["Scouting Gloves of the Monkey"] = {
-			["mr"] = 259499,
-			["cc"] = 4,
-			["H3540"] = 375225,
-			["id"] = "6586:0:0:591:0",
+		["Pattern: Red Mageweave Gloves"] = {
+			["mr"] = 10000,
+			["H3539"] = 10398,
 			["sc"] = 2,
-			["H3542"] = 259499,
+			["H3540"] = 5798,
+			["id"] = "10312:0:0:0:0",
+			["L3539"] = 9500,
+			["H3543"] = 10000,
+			["cc"] = 9,
 		},
-		["Long Tail Feather"] = {
-			["H3540"] = 408,
-			["H3539"] = 441,
-			["mr"] = 408,
+		["Scarlet Belt"] = {
+			["H3540"] = 3997,
+			["H3539"] = 4257,
+			["H3543"] = 3700,
+			["mr"] = 3700,
 		},
-		["Dwarven Hatchet of Strength"] = {
-			["mr"] = 1795,
-			["H3537"] = 1799,
-			["L3537"] = 1795,
+		["Orange Mageweave Shirt"] = {
+			["cc"] = 4,
+			["mr"] = 7400,
+			["sc"] = 0,
+			["H3540"] = 199999,
+			["id"] = "10056:0:0:0:0",
+			["L3539"] = 7700,
+			["H3543"] = 7400,
+			["H3539"] = 7800,
 		},
 		["Greater Stoneshield Potion"] = {
 			["H3540"] = 67999,
 			["H3539"] = 69493,
-			["mr"] = 67999,
+			["H3543"] = 49591,
+			["mr"] = 49591,
 		},
-		["Tender Wolf Steak"] = {
-			["H3540"] = 3500,
-			["mr"] = 3500,
-			["H3539"] = 4400,
+		["Giant Club of the Monkey"] = {
+			["H3543"] = 59500,
+			["mr"] = 59500,
 		},
-		["Skull Splitting Crossbow"] = {
-			["mr"] = 210000,
-			["cc"] = 2,
-			["id"] = "13039:0:0:0:0",
-			["sc"] = 18,
-			["H3539"] = 122500,
-			["H3542"] = 210000,
+		["Ridge Cleaver of the Tiger"] = {
+			["H3540"] = 8500,
+			["mr"] = 8500,
 		},
-		["Ritual Bands of the Whale"] = {
-			["H3537"] = 9900,
-			["mr"] = 9900,
+		["Golden Rod"] = {
+			["H3540"] = 34799,
+			["mr"] = 17350,
+			["H3543"] = 17350,
 		},
 		["Huntsman's Boots of the Bear"] = {
-			["mr"] = 30000,
 			["H3539"] = 30000,
+			["mr"] = 30000,
 		},
 		["Formal White Shirt"] = {
-			["mr"] = 4900,
-			["H3537"] = 8500,
-			["L3537"] = 4900,
+			["H3543"] = 7400,
+			["mr"] = 7400,
 		},
 		["Phalanx Gauntlets of Strength"] = {
 			["H3537"] = 15300,
 			["mr"] = 15300,
 		},
-		["Parrot Cage (Cockatiel)"] = {
-			["H3540"] = 99215,
-			["mr"] = 99215,
+		["Formula: Enchant Boots - Minor Agility"] = {
+			["H3540"] = 10961,
+			["mr"] = 10961,
 		},
-		["Small Bronze Bomb"] = {
-			["H3537"] = 12537,
-			["mr"] = 12537,
+		["Azure Silk Hood"] = {
+			["mr"] = 3000,
+			["H3537"] = 3250,
+			["L3537"] = 3000,
 		},
-		["Steelclaw Reaver"] = {
-			["mr"] = 179499,
-			["H3539"] = 179499,
+		["Commander's Gauntlets of the Monkey"] = {
+			["H3540"] = 31100,
+			["mr"] = 31100,
 		},
-		["Hellslayer Battle Axe"] = {
-			["H3537"] = 107627,
-			["mr"] = 107627,
+		["Grizzly Jerkin of Spirit"] = {
+			["H3543"] = 2200,
+			["mr"] = 2200,
 		},
-		["Councillor's Gloves of the Eagle"] = {
-			["mr"] = 40000,
-			["H3539"] = 40000,
+		["Thorium Tube"] = {
+			["H3540"] = 9999,
+			["H3539"] = 12200,
+			["mr"] = 9999,
 		},
-		["Polished Zweihander of the Monkey"] = {
-			["H3540"] = 50000,
+		["Six of Portals"] = {
+			["H3540"] = 89998,
+			["H3539"] = 98500,
+			["H3543"] = 48261,
+			["mr"] = 48261,
+		},
+		["Twilight Cuffs of the Eagle"] = {
+			["H3543"] = 50000,
 			["mr"] = 50000,
 		},
-		["Slayer's Cuffs"] = {
-			["H3540"] = 9600,
-			["mr"] = 9600,
+		["Magic Dust"] = {
+			["mr"] = 96852,
+			["H3543"] = 96852,
+			["H3539"] = 89550,
 		},
-		["Pattern: Runecloth Robe"] = {
-			["H3539"] = 145998,
+		["Sentinel Cap of the Bear"] = {
+			["mr"] = 43340,
+			["cc"] = 4,
+			["id"] = "7441:0:0:1206:0",
+			["sc"] = 2,
+			["H3542"] = 43340,
+		},
+		["Banded Boots of the Bear"] = {
+			["mr"] = 16000,
+			["H3543"] = 16000,
+			["H3539"] = 14500,
+		},
+		["Pattern: Runecloth Pants"] = {
+			["H3539"] = 26199,
+			["mr"] = 19800,
 			["cc"] = 9,
-			["mr"] = 186500,
-			["id"] = "14469:0:0:0:0",
-			["H3540"] = 145500,
+			["H3540"] = 60000,
+			["id"] = "14491:0:0:0:0",
 			["sc"] = 2,
-			["H3542"] = 186500,
+			["H3543"] = 19800,
+			["H3542"] = 33987,
 		},
-		["War Paint Cloak"] = {
-			["H3540"] = 5400,
-			["mr"] = 5400,
-			["H3539"] = 5598,
+		["Grim Reaper"] = {
+			["H3537"] = 100000,
+			["mr"] = 100000,
 		},
-		["Hunting Tunic"] = {
-			["mr"] = 310000,
-			["cc"] = 4,
-			["id"] = "2973:0:0:0:0",
-			["sc"] = 2,
-			["H3542"] = 310000,
+		["Elder's Padded Armor of the Owl"] = {
+			["H3539"] = 28800,
+			["mr"] = 28800,
 		},
-		["Sniper Scope"] = {
-			["H3540"] = 33999,
-			["mr"] = 33999,
-			["H3539"] = 49500,
+		["Large Knapsack"] = {
+			["H3540"] = 11198,
+			["H3539"] = 14899,
+			["H3543"] = 20000,
+			["mr"] = 20000,
 		},
-		["Blue Hakkari Bijou"] = {
-			["H3540"] = 29000,
-			["H3539"] = 24600,
-			["mr"] = 29000,
+		["Thistle Tea"] = {
+			["H3540"] = 16798,
+			["H3539"] = 17195,
+			["H3543"] = 18773,
+			["mr"] = 18773,
 		},
-		["Mithril Mechanical Dragonling"] = {
-			["H3540"] = 599999,
-			["mr"] = 599999,
+		["Serpentskin Cloak"] = {
+			["H3537"] = 27511,
+			["mr"] = 27511,
 		},
-		["High Councillor's Bracers of Arcane Wrath"] = {
-			["mr"] = 79999,
-			["cc"] = 4,
-			["id"] = "10136:0:0:1812:0",
-			["sc"] = 1,
-			["H3540"] = 79999,
-		},
-		["Monster Omelet"] = {
-			["mr"] = 2000,
-			["H3539"] = 2000,
-		},
-		["Thorium Shells"] = {
-			["H3537"] = 52,
-			["mr"] = 52,
-		},
-		["Arcane Crystal"] = {
-			["mr"] = 612500,
-			["cc"] = 7,
-			["H3540"] = 612500,
-			["H3539"] = 699000,
-			["id"] = "12363:0:0:0:0",
-			["sc"] = 0,
+		["Recipe: Major Healing Potion"] = {
+			["H3540"] = 45423,
+			["H3539"] = 125999,
+			["mr"] = 45423,
 		},
 		["War Knife of Fiery Wrath"] = {
 			["H3540"] = 11748,
 			["mr"] = 11748,
 			["H3539"] = 11748,
 		},
-		["Recipe: Westfall Stew"] = {
-			["H3537"] = 99900,
-			["mr"] = 99900,
+		["Curved Dagger of Healing"] = {
+			["H3537"] = 10099,
+			["mr"] = 10099,
 		},
-		["Mechanical Dragonling"] = {
-			["H3537"] = 401802,
-			["mr"] = 401802,
+		["Fire Oil"] = {
+			["H3540"] = 8268,
+			["mr"] = 9145,
+			["H3543"] = 9145,
+			["H3539"] = 7504,
 		},
-		["Raider's Gauntlets of the Whale"] = {
-			["H3540"] = 11841,
-			["mr"] = 11841,
+		["Conjurer's Hood of Stamina"] = {
+			["H3543"] = 10000,
+			["mr"] = 10000,
 		},
-		["Plaguebloom"] = {
-			["mr"] = 14173,
-			["cc"] = 7,
-			["id"] = "13466:0:0:0:0",
-			["H3539"] = 14200,
+		["Golden Sansam"] = {
+			["H3539"] = 99,
 			["sc"] = 0,
-			["H3540"] = 14173,
+			["H3540"] = 1199,
+			["id"] = "13464:0:0:0:0",
+			["cc"] = 7,
+			["H3543"] = 170,
+			["mr"] = 170,
 		},
 		["Mighty Boots of Agility"] = {
 			["H3540"] = 350000,
-			["mr"] = 350000,
+			["mr"] = 150000,
+			["H3543"] = 150000,
 		},
 		["Scroll of Agility II"] = {
 			["H3540"] = 1928,
 			["H3539"] = 1999,
-			["mr"] = 1928,
+			["H3543"] = 3100,
+			["mr"] = 3100,
 		},
 		["Bloodspattered Sash of the Bear"] = {
 			["H3539"] = 5536,
-			["mr"] = 5536,
+			["H3543"] = 5168,
+			["mr"] = 5168,
 		},
-		["Brown Linen Robe"] = {
-			["mr"] = 1244,
-			["H3539"] = 1244,
+		["Crystallized Note"] = {
+			["H3543"] = 40600,
+			["mr"] = 40600,
 		},
-		["Torn Bear Pelt"] = {
-			["mr"] = 1610,
-			["H3537"] = 1660,
-			["L3537"] = 1610,
+		["Formula: Enchant Shield - Lesser Protection"] = {
+			["H3540"] = 11000,
+			["mr"] = 11000,
 		},
-		["Silver-thread Cloak"] = {
-			["H3537"] = 10000,
-			["mr"] = 10000,
+		["Opulent Mantle of Frozen Wrath"] = {
+			["H3537"] = 150000,
+			["mr"] = 150000,
 		},
 		["Dark Iron Boots of the Tiger"] = {
-			["mr"] = 2950000,
 			["H3539"] = 2950000,
+			["mr"] = 2950000,
 		},
-		["Talon of Vultros"] = {
-			["H3537"] = 379914,
-			["mr"] = 379914,
+		["Plans: Polished Steel Boots"] = {
+			["H3540"] = 16153,
+			["H3539"] = 16154,
+			["H3543"] = 5499,
+			["mr"] = 5499,
 		},
-		["Bludstone Hammer"] = {
-			["H3540"] = 500000,
-			["mr"] = 500000,
-			["H3539"] = 296342,
+		["Grizzly Buckler of the Whale"] = {
+			["H3543"] = 5263,
+			["mr"] = 5263,
 		},
 		["Pattern: Wicked Leather Bracers"] = {
 			["mr"] = 8998,
@@ -17512,21 +20062,25 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 8998,
 			["cc"] = 9,
 		},
-		["Birchwood Maul of Spirit"] = {
-			["H3537"] = 5000,
-			["mr"] = 5000,
+		["Dig Rat"] = {
+			["H3540"] = 11600,
+			["mr"] = 12799,
+			["H3543"] = 12799,
 		},
-		["Arena Bracers"] = {
-			["H3537"] = 72739,
-			["mr"] = 72739,
+		["Tracker's Gloves of the Monkey"] = {
+			["mr"] = 19900,
+			["cc"] = 4,
+			["id"] = "9920:0:0:606:0",
+			["sc"] = 2,
+			["H3529"] = 19900,
 		},
 		["Dazzling Longsword"] = {
-			["mr"] = 989999,
 			["H3539"] = 989999,
+			["mr"] = 989999,
 		},
-		["Recipe: Rockscale Cod"] = {
-			["H3540"] = 12000,
-			["mr"] = 12000,
+		["High Councillor's Circlet of the Whale"] = {
+			["H3540"] = 99999,
+			["mr"] = 99999,
 		},
 		["Formula: Enchant Gloves - Skinning"] = {
 			["mr"] = 24999,
@@ -17535,396 +20089,435 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 24999,
 			["sc"] = 8,
 		},
-		["Pattern: Heavy Leather Ball"] = {
-			["H3540"] = 44700,
-			["mr"] = 44700,
+		["Plans: Shadow Crescent Axe"] = {
+			["H3543"] = 7115,
+			["mr"] = 7115,
 		},
-		["Greater Arcane Elixir"] = {
-			["mr"] = 59500,
-			["cc"] = 0,
-			["H3540"] = 59500,
-			["H3539"] = 58495,
-			["id"] = "13454:0:0:0:0",
-			["sc"] = 0,
+		["Slayer's Cuffs"] = {
+			["H3540"] = 9600,
+			["mr"] = 9600,
 		},
-		["Scroll of Intellect II"] = {
-			["H3540"] = 1240,
-			["mr"] = 1240,
-			["H3539"] = 1233,
+		["Recipe: Cooked Glossy Mightfish"] = {
+			["mr"] = 80000,
+			["H3543"] = 80000,
+			["H3539"] = 38999,
 		},
 		["Glowstar Rod of Fiery Wrath"] = {
-			["mr"] = 99900,
 			["H3539"] = 99900,
+			["mr"] = 99900,
 		},
-		["Skullance Shield"] = {
-			["H3537"] = 49999,
-			["mr"] = 49999,
+		["Recipe: Egg Nog"] = {
+			["mr"] = 217999,
+			["H3543"] = 217999,
+			["H3539"] = 218999,
 		},
-		["Archer's Jerkin of the Eagle"] = {
-			["H3540"] = 15000,
-			["mr"] = 15000,
+		["Blue Linen Vest"] = {
+			["H3537"] = 5346,
+			["mr"] = 5346,
 		},
-		["Looming Gavel"] = {
-			["H3537"] = 70000,
-			["mr"] = 70000,
+		["Expert First Aid - Under Wraps"] = {
+			["H3540"] = 29600,
+			["H3539"] = 15200,
+			["H3543"] = 20999,
+			["mr"] = 20999,
 		},
-		["Hibernal Pants"] = {
-			["H3537"] = 45000,
-			["mr"] = 45000,
+		["Volcanic Shoulders"] = {
+			["H3539"] = 551167,
+			["mr"] = 551167,
 		},
 		["Elemental Fire"] = {
 			["H3540"] = 37999,
-			["mr"] = 37999,
+			["mr"] = 27800,
+			["H3543"] = 27800,
 			["H3539"] = 39600,
 		},
-		["Shredder Operating Manual - Page 12"] = {
-			["H3539"] = 1171,
-			["sc"] = 0,
-			["cc"] = 15,
-			["H3540"] = 7999,
-			["id"] = "16656:0:0:0:0",
-			["mr"] = 3698,
-			["H3542"] = 3698,
+		["Big Bronze Bomb"] = {
+			["H3540"] = 4014,
+			["mr"] = 4014,
+			["H3539"] = 3946,
 		},
 		["Grizzly Jerkin of the Eagle"] = {
-			["mr"] = 8170,
 			["H3539"] = 8170,
+			["mr"] = 8170,
 		},
-		["Captain's Bracers of Stamina"] = {
-			["H3537"] = 18967,
-			["mr"] = 18967,
+		["Raptor Egg"] = {
+			["H3540"] = 79,
+			["H3539"] = 84,
+			["H3543"] = 364,
+			["mr"] = 364,
 		},
-		["Sentinel Trousers of Spirit"] = {
-			["mr"] = 60504,
-			["cc"] = 4,
-			["id"] = "7440:0:0:409:0",
-			["sc"] = 2,
-			["H3542"] = 60504,
+		["Witherbark Coin"] = {
+			["H3539"] = 3099,
+			["sc"] = 0,
+			["H3540"] = 3495,
+			["id"] = "19703:0:0:0:0",
+			["cc"] = 12,
+			["H3543"] = 3399,
+			["mr"] = 3399,
 		},
-		["Battle Chain Tunic"] = {
-			["H3537"] = 3500,
-			["mr"] = 3500,
+		["Spiked Club of the Whale"] = {
+			["H3540"] = 4285,
+			["mr"] = 6750,
+			["H3543"] = 6750,
+			["H3539"] = 4285,
 		},
-		["Short Bastard Sword of the Whale"] = {
-			["H3540"] = 2000,
-			["mr"] = 2000,
-			["H3539"] = 2473,
+		["Renegade Cloak of the Bear"] = {
+			["H3543"] = 20000,
+			["mr"] = 20000,
 		},
-		["Shimmering Bracers of the Whale"] = {
-			["H3540"] = 2000,
-			["mr"] = 2000,
+		["Grinning Axe of the Boar"] = {
+			["H3540"] = 69999,
+			["mr"] = 69999,
+			["H3539"] = 140000,
 		},
-		["Native Branch of Arcane Wrath"] = {
-			["H3537"] = 13044,
-			["mr"] = 13044,
+		["Medicine Staff of the Whale"] = {
+			["H3543"] = 9800,
+			["mr"] = 9800,
 		},
-		["Feral Buckler of Blocking"] = {
-			["H3537"] = 4900,
-			["mr"] = 4900,
+		["Conjurer's Cloak of Shadow Wrath"] = {
+			["H3537"] = 27875,
+			["mr"] = 27875,
 		},
-		["Greenstone Circle of the Bear"] = {
-			["mr"] = 10000,
-			["H3537"] = 19900,
-			["L3537"] = 10000,
+		["Mighty Armsplints of Agility"] = {
+			["H3537"] = 200000,
+			["mr"] = 200000,
 		},
-		["Cloudkeeper Legplates"] = {
-			["H3537"] = 7999999,
-			["mr"] = 7999999,
+		["Councillor's Boots of Frozen Wrath"] = {
+			["H3543"] = 123540,
+			["mr"] = 123540,
 		},
-		["Bloodwoven Mitts of the Eagle"] = {
-			["mr"] = 53222,
-			["H3539"] = 53222,
+		["Thick Wolfhide"] = {
+			["H3540"] = 2900,
+			["mr"] = 2900,
 		},
-		["Glimmering Mail Gauntlets"] = {
-			["H3540"] = 13600,
-			["mr"] = 13600,
+		["Pattern: Black Dragonscale Breastplate"] = {
+			["H3540"] = 141468,
+			["mr"] = 141468,
 		},
-		["Mithril Spurs"] = {
-			["H3537"] = 17000,
-			["mr"] = 17000,
+		["Merc Sword of the Tiger"] = {
+			["H3540"] = 4471,
+			["mr"] = 4471,
+			["H3543"] = 4471,
+			["H3539"] = 6999,
 		},
-		["Heavy Leather Ammo Pouch"] = {
-			["mr"] = 9000,
-			["cc"] = 11,
-			["id"] = "7372:0:0:0:0",
-			["sc"] = 3,
-			["H3536"] = 9000,
+		["Formula: Enchant Weapon - Winter's Might"] = {
+			["H3543"] = 447997,
+			["mr"] = 447997,
 		},
-		["Infantry Leggings of the Bear"] = {
-			["H3537"] = 4637,
-			["mr"] = 4637,
+		["Shadowfang"] = {
+			["H3540"] = 1399999,
+			["mr"] = 1399999,
 		},
-		["Simple Linen Pants"] = {
-			["H3537"] = 3501,
-			["mr"] = 3501,
+		["Engraved Pauldrons of the Owl"] = {
+			["H3537"] = 90000,
+			["mr"] = 90000,
 		},
-		["Bandit Pants of Agility"] = {
-			["mr"] = 39939,
-			["H3539"] = 39939,
+		["White Leather Bag"] = {
+			["H3539"] = 4400,
+			["cc"] = 1,
+			["id"] = "5574:0:0:0:0",
+			["H3540"] = 5000,
+			["mr"] = 5000,
+			["sc"] = 0,
 		},
 		["Pattern: Frostweave Gloves"] = {
-			["mr"] = 35800,
-			["sc"] = 2,
-			["H3540"] = 35800,
+			["mr"] = 49799,
 			["cc"] = 9,
 			["H3539"] = 14400,
 			["id"] = "14474:0:0:0:0",
-		},
-		["Shadowcraft Bracers"] = {
-			["H3540"] = 369998,
-			["H3539"] = 399000,
-			["mr"] = 369998,
-		},
-		["Phantom Blade"] = {
-			["H3537"] = 722360,
-			["mr"] = 722360,
-		},
-		["Mystical Leggings of Healing"] = {
-			["H3537"] = 120000,
-			["mr"] = 120000,
-		},
-		["Elegant Cloak of Shadow Wrath"] = {
-			["H3540"] = 203000,
-			["mr"] = 203000,
-			["H3539"] = 303871,
-		},
-		["Plans: Massive Iron Axe"] = {
-			["H3537"] = 23500,
-			["mr"] = 23500,
-		},
-		["Barbaric Cloth Robe"] = {
-			["mr"] = 3900,
-			["cc"] = 4,
-			["id"] = "6531:0:0:0:0",
-			["sc"] = 1,
-			["H3540"] = 3900,
-		},
-		["Shadow Panther Hide Gloves"] = {
-			["mr"] = 664999,
-			["cc"] = 4,
-			["id"] = "20259:0:0:0:0",
-			["H3537"] = 664999,
+			["H3540"] = 35800,
+			["H3543"] = 49799,
 			["sc"] = 2,
 		},
-		["Chimeric Leggings"] = {
-			["H3540"] = 499000,
-			["mr"] = 499000,
+		["Engraved Wall of Defense"] = {
+			["H3540"] = 235714,
+			["mr"] = 235714,
+		},
+		["Aquamarine Ring of Nature Resistance"] = {
+			["H3540"] = 1250000,
+			["mr"] = 1290000,
+			["H3543"] = 1290000,
+			["H3539"] = 1503173,
+		},
+		["Glyphed Belt"] = {
+			["H3543"] = 18460,
+			["mr"] = 18460,
+		},
+		["Siege Bow of the Monkey"] = {
+			["H3540"] = 88347,
+			["mr"] = 88347,
+		},
+		["Devilsaur Leather"] = {
+			["H3539"] = 39998,
+			["cc"] = 7,
+			["sc"] = 0,
+			["id"] = "15417:0:0:0:0",
+			["mr"] = 39977,
+			["H3543"] = 39977,
+			["H3540"] = 49800,
+		},
+		["Pattern: Enchanted Mageweave Pouch"] = {
+			["H3539"] = 53998,
+			["cc"] = 9,
+			["id"] = "22307:0:0:0:0",
+			["sc"] = 2,
+			["mr"] = 53998,
+		},
+		["Bloodsoul Gauntlets"] = {
+			["mr"] = 1482499,
+			["H3543"] = 1482499,
+			["H3539"] = 1682494,
+		},
+		["Thallium Choker of the Owl"] = {
+			["H3537"] = 37310,
+			["mr"] = 37310,
 		},
 		["Deadwood Sledge"] = {
 			["H3537"] = 40000,
 			["mr"] = 40000,
 		},
-		["Elder's Sash of Fiery Wrath"] = {
-			["mr"] = 9999,
-			["H3539"] = 9999,
+		["Formula: Enchant Weapon - Crusader"] = {
+			["H3540"] = 4147500,
+			["mr"] = 2500000,
+			["H3543"] = 2500000,
+			["H3539"] = 4195000,
 		},
-		["Plans: Helm of the Great Chief"] = {
-			["H3537"] = 850000,
-			["mr"] = 850000,
+		["Pattern: Heavy Scorpid Belt"] = {
+			["H3540"] = 10900,
+			["H3539"] = 8400,
+			["H3543"] = 10600,
+			["mr"] = 10600,
 		},
-		["Crystal Sword of Stamina"] = {
-			["H3537"] = 99881,
-			["mr"] = 99881,
+		["War Paint Gloves"] = {
+			["H3540"] = 5400,
+			["mr"] = 5400,
+			["H3539"] = 5999,
 		},
 		["High Councillor's Gloves of Fiery Wrath"] = {
 			["H3540"] = 78170,
-			["mr"] = 78170,
+			["mr"] = 89999,
+			["H3543"] = 89999,
 		},
-		["Elegant Belt of Fiery Wrath"] = {
-			["H3540"] = 79172,
-			["mr"] = 79172,
+		["Formula: Enchant Cloak - Greater Resistance"] = {
+			["H3540"] = 999747,
+			["mr"] = 359649,
+			["H3543"] = 359649,
 		},
 		["Solstice Staff of Shadow Wrath"] = {
 			["H3540"] = 500000,
 			["mr"] = 500000,
 		},
 		["Defender Bracers of Stamina"] = {
-			["mr"] = 6666,
 			["H3539"] = 6666,
+			["mr"] = 6666,
 		},
-		["Simple Branch of the Whale"] = {
-			["H3537"] = 6520,
-			["mr"] = 6520,
+		["Tattered Leather Hood"] = {
+			["H3539"] = 980000,
+			["mr"] = 980000,
 		},
 		["Gallant Flamberge of the Whale"] = {
 			["H3540"] = 88191,
 			["mr"] = 88191,
 			["H3539"] = 88191,
 		},
-		["Elegant Tunic of Shadow Wrath"] = {
-			["H3537"] = 299998,
-			["mr"] = 299998,
+		["Native Branch of Healing"] = {
+			["H3543"] = 13196,
+			["mr"] = 13196,
 		},
 		["Silk Cloth"] = {
-			["H3540"] = 275,
+			["id"] = "4306:0:0:0:0",
 			["H3542"] = 190,
 			["L3540"] = 274,
-			["mr"] = 190,
-			["sc"] = 0,
 			["H3541"] = 185,
-			["H3539"] = 220,
 			["cc"] = 7,
-			["id"] = "4306:0:0:0:0",
+			["H3539"] = 220,
+			["sc"] = 0,
+			["mr"] = 183,
+			["H3543"] = 183,
+			["H3540"] = 275,
 		},
 		["Pattern: Deviate Scale Belt"] = {
 			["H3540"] = 2200,
 			["H3539"] = 2299,
-			["mr"] = 2200,
+			["H3543"] = 8092,
+			["mr"] = 8092,
 		},
-		["Bloodforged Bindings of the Bear"] = {
-			["H3537"] = 42180,
-			["mr"] = 42180,
+		["Twin-bladed Axe of the Tiger"] = {
+			["H3537"] = 12288,
+			["mr"] = 12288,
 		},
 		["Bottomless Bag"] = {
-			["mr"] = 2285555,
+			["sc"] = 0,
+			["mr"] = 2297500,
 			["cc"] = 1,
 			["H3539"] = 2489550,
 			["id"] = "14156:0:0:0:0",
-			["sc"] = 0,
 			["H3540"] = 2493732,
+			["H3543"] = 2297500,
 			["H3542"] = 2285555,
 		},
-		["Powerful Anti-Venom"] = {
-			["H3540"] = 38927,
-			["mr"] = 38927,
+		["Phalanx Girdle of the Eagle"] = {
+			["H3537"] = 14850,
+			["mr"] = 14850,
 		},
-		["Burnished Tunic"] = {
-			["H3537"] = 2499,
-			["mr"] = 2499,
+		["Nightsky Cowl"] = {
+			["H3543"] = 10000,
+			["mr"] = 10000,
 		},
 		["Pattern: Frostsaber Boots"] = {
 			["H3540"] = 51000,
-			["mr"] = 51000,
+			["mr"] = 65000,
+			["H3543"] = 65000,
 			["H3539"] = 51999,
 		},
-		["The Big One"] = {
-			["H3540"] = 46442,
-			["mr"] = 46442,
-			["H3539"] = 46443,
+		["Plans: Darkrune Gauntlets"] = {
+			["H3540"] = 554000,
+			["mr"] = 551000,
+			["H3543"] = 551000,
+			["H3539"] = 554941,
 		},
 		["Hematite Link of Fire Resistance"] = {
-			["mr"] = 49400,
-			["cc"] = 4,
 			["H3539"] = 50432,
+			["cc"] = 4,
+			["H3540"] = 50430,
 			["id"] = "11973:0:0:1411:0",
 			["sc"] = 0,
-			["H3543"] = 49400,
-			["H3540"] = 50430,
+			["H3543"] = 49599,
+			["mr"] = 49599,
 		},
 		["Green Lens of Fiery Wrath"] = {
 			["H3540"] = 99998,
-			["mr"] = 99998,
+			["mr"] = 59998,
+			["H3543"] = 59998,
 			["H3539"] = 89900,
 		},
-		["Goblin Land Mine"] = {
-			["H3537"] = 10685,
-			["mr"] = 10685,
-		},
-		["Scale of Onyxia"] = {
-			["H3540"] = 33333,
-			["H3539"] = 28798,
-			["mr"] = 33333,
-		},
-		["Scaled Leather Tunic of the Whale"] = {
-			["H3537"] = 23176,
-			["mr"] = 23176,
-		},
-		["Black Mageweave Leggings"] = {
-			["mr"] = 14496,
+		["Patched Leather Shoulderpads"] = {
+			["mr"] = 50000,
 			["cc"] = 4,
-			["H3539"] = 15000,
-			["id"] = "9999:0:0:0:0",
-			["L3539"] = 14999,
-			["H3540"] = 14496,
-			["sc"] = 1,
+			["id"] = "1793:0:0:0:0",
+			["sc"] = 2,
+			["H3536"] = 50000,
 		},
-		["Wolf Rider's Leggings of the Monkey"] = {
-			["H3540"] = 20000,
+		["Champion's Armor of the Whale"] = {
+			["H3539"] = 78667,
+			["mr"] = 78667,
+		},
+		["Aurora Boots"] = {
+			["mr"] = 9899,
+			["H3539"] = 9899,
+		},
+		["Meadow Ring of the Wolf"] = {
+			["H3540"] = 153385,
+			["mr"] = 153385,
+			["H3539"] = 73784,
+		},
+		["Troll-hide Bag"] = {
+			["mr"] = 35000,
+			["sc"] = 0,
+			["H3540"] = 30000,
+			["cc"] = 1,
+			["id"] = "1685:0:0:0:0",
+			["H3542"] = 35000,
+		},
+		["Scaled Leather Bracers of the Whale"] = {
+			["H3543"] = 20000,
 			["mr"] = 20000,
 		},
-		["Black Mageweave Boots"] = {
-			["mr"] = 57499,
-			["cc"] = 4,
-			["H3539"] = 57998,
-			["id"] = "10026:0:0:0:0",
-			["L3539"] = 57993,
-			["H3540"] = 57499,
-			["sc"] = 1,
-		},
 		["Vilerend Slicer"] = {
-			["mr"] = 248998,
 			["H3539"] = 248998,
+			["mr"] = 248998,
 		},
-		["Beaststalker's Belt"] = {
-			["H3540"] = 175000,
-			["mr"] = 175000,
-			["H3539"] = 232323,
+		["Formula: Enchant 2H Weapon - Major Spirit"] = {
+			["H3540"] = 30044,
+			["mr"] = 46600,
+			["H3543"] = 46600,
+			["H3539"] = 68880,
 		},
-		["Headstriker Sword of the Tiger"] = {
-			["H3540"] = 212219,
-			["mr"] = 212219,
+		["Twisted Sabre"] = {
+			["H3537"] = 33333,
+			["mr"] = 33333,
 		},
-		["Recipe: Soothing Turtle Bisque"] = {
-			["H3540"] = 39999,
-			["mr"] = 39999,
+		["Serpent's Shoulders"] = {
+			["H3537"] = 6896,
+			["mr"] = 6896,
 		},
 		["Vibrant Plume"] = {
 			["H3540"] = 974,
 			["H3539"] = 996,
-			["mr"] = 974,
+			["H3543"] = 820,
+			["mr"] = 820,
 		},
-		["Spiritchaser Staff of Healing"] = {
-			["H3537"] = 300000,
-			["mr"] = 300000,
+		["Dreamslayer"] = {
+			["H3540"] = 68899,
+			["H3542"] = 67500,
+			["L3540"] = 68500,
+			["mr"] = 36999,
+			["cc"] = 2,
+			["id"] = "7752:0:0:0:0",
+			["H3539"] = 89603,
+			["L3539"] = 88500,
+			["H3543"] = 36999,
+			["sc"] = 4,
 		},
-		["Marsh Chain of the Wolf"] = {
-			["H3540"] = 19800,
-			["mr"] = 19800,
+		["Raider's Belt of the Tiger"] = {
+			["H3539"] = 20000,
+			["mr"] = 20000,
 		},
-		["Massive Battle Axe of the Whale"] = {
-			["H3540"] = 15000,
-			["mr"] = 15000,
+		["Bloodspattered Gloves of the Bear"] = {
+			["H3543"] = 5000,
+			["mr"] = 5000,
 		},
-		["Azure Silk Vest"] = {
-			["mr"] = 21998,
-			["H3539"] = 21998,
+		["Forest Leather Boots"] = {
+			["mr"] = 12549,
+			["H3537"] = 18150,
+			["L3537"] = 12549,
 		},
-		["Pattern: Mooncloth Robe"] = {
-			["H3537"] = 100000,
-			["mr"] = 100000,
+		["Mystical Armor of the Eagle"] = {
+			["H3537"] = 250000,
+			["mr"] = 250000,
 		},
-		["Aboriginal Footwraps of Arcane Wrath"] = {
-			["H3537"] = 10000,
-			["mr"] = 10000,
+		["Codex: Prayer of Fortitude II"] = {
+			["H3540"] = 129900,
+			["mr"] = 19105,
+			["H3543"] = 19105,
+			["H3539"] = 18200,
 		},
-		["Bonecaster's Belt of Intellect"] = {
-			["H3537"] = 149978,
-			["mr"] = 149978,
+		["Dark Iron Bar"] = {
+			["H3539"] = 27600,
+			["mr"] = 23399,
+			["sc"] = 0,
+			["id"] = "11371:0:0:0:0",
+			["H3540"] = 29983,
+			["cc"] = 7,
+			["H3543"] = 24375,
+			["L3543"] = 23399,
 		},
-		["Longjaw Mud Snapper"] = {
-			["H3537"] = 1000,
-			["mr"] = 1000,
+		["Schematic: Goblin Jumper Cables"] = {
+			["H3540"] = 41092,
+			["H3539"] = 9506,
+			["H3543"] = 17200,
+			["mr"] = 17200,
 		},
 		["Glorious Headdress of the Bear"] = {
 			["H3537"] = 49999,
 			["mr"] = 49999,
 		},
-		["Pattern: Red Mageweave Vest"] = {
-			["mr"] = 17199,
-			["cc"] = 9,
-			["H3539"] = 17452,
-			["id"] = "10300:0:0:0:0",
-			["L3539"] = 17450,
-			["H3540"] = 17199,
-			["sc"] = 2,
+		["Heavy Scorpid Scale"] = {
+			["H3539"] = 902,
+			["H3543"] = 1450,
+			["mr"] = 1450,
 		},
-		["Conjurer's Hood of Healing"] = {
-			["H3537"] = 37068,
-			["mr"] = 37068,
+		["Scarlet Gauntlets"] = {
+			["H3540"] = 7999,
+			["H3539"] = 9299,
+			["H3543"] = 5899,
+			["mr"] = 5899,
 		},
-		["Bloodforged Gauntlets of Power"] = {
-			["H3537"] = 30000,
-			["mr"] = 30000,
+		["Exquisite Flamberge of the Tiger"] = {
+			["H3540"] = 51295,
+			["mr"] = 77980,
+			["H3543"] = 77980,
+			["H3539"] = 34900,
 		},
 		["Red Linen Robe"] = {
 			["H3537"] = 23019,
@@ -17935,177 +20528,200 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3539"] = 16524,
 			["mr"] = 2000,
 		},
-		["Buccaneer's Boots of the Owl"] = {
-			["H3537"] = 4900,
-			["mr"] = 4900,
+		["Imposing Shoulders of Agility"] = {
+			["H3537"] = 66504,
+			["mr"] = 66504,
 		},
-		["Traveler's Gloves"] = {
-			["mr"] = 40000,
-			["sc"] = 2,
-			["H3529"] = 40000,
-			["id"] = "8298:0:0:0:0",
-			["cc"] = 4,
+		["Large Red Sack"] = {
+			["H3540"] = 11800,
+			["mr"] = 11800,
 		},
-		["Highborne Footpads"] = {
-			["H3537"] = 85400,
-			["mr"] = 85400,
+		["Shadoweave Mask"] = {
+			["H3543"] = 164868,
+			["mr"] = 164868,
 		},
 		["Swashbuckler's Gloves of Healing"] = {
 			["mr"] = 150000,
+			["cc"] = 4,
+			["id"] = "10186:0:0:2043:0",
 			["sc"] = 2,
 			["H3529"] = 150000,
-			["id"] = "10186:0:0:2043:0",
-			["cc"] = 4,
 		},
-		["Regal Boots of the Eagle"] = {
-			["H3540"] = 51342,
-			["mr"] = 51342,
+		["Warbringer's Crown of the Eagle"] = {
+			["H3537"] = 12500,
+			["mr"] = 12500,
 		},
 		["Sergeant's Warhammer of Nature's Wrath"] = {
 			["H3537"] = 11196,
 			["mr"] = 11196,
 		},
-		["Birchwood Maul of Strength"] = {
-			["mr"] = 11064,
-			["H3539"] = 11064,
+		["Templar Shield of Defense"] = {
+			["H3537"] = 74814,
+			["mr"] = 74814,
 		},
-		["Gossamer Belt of the Eagle"] = {
-			["H3537"] = 20000,
-			["mr"] = 20000,
+		["Conjurer's Robe of Intellect"] = {
+			["H3543"] = 50000,
+			["mr"] = 50000,
 		},
-		["Green Hills of Stranglethorn - Page 24"] = {
-			["H3540"] = 1955,
-			["H3539"] = 1586,
-			["mr"] = 1955,
+		["Meadow Ring of the Monkey"] = {
+			["H3540"] = 144594,
+			["mr"] = 159700,
+			["H3543"] = 159700,
+			["H3539"] = 144594,
 		},
-		["Fletcher's Gloves"] = {
-			["H3539"] = 24899,
-			["sc"] = 2,
-			["id"] = "7348:0:0:0:0",
-			["cc"] = 4,
-			["mr"] = 24899,
+		["Murphstar of Arcane Wrath"] = {
+			["H3543"] = 118704,
+			["mr"] = 118704,
 		},
 		["Red Power Crystal"] = {
 			["H3540"] = 1100,
-			["mr"] = 1100,
+			["mr"] = 1414,
+			["H3543"] = 1414,
 			["H3539"] = 2188,
 		},
-		["Executioner's Cleaver"] = {
-			["H3539"] = 500000,
-			["mr"] = 500000,
+		["Emerald Breastplate of the Whale"] = {
+			["H3537"] = 41000,
+			["mr"] = 41000,
 		},
-		["Warbear Harness"] = {
-			["H3540"] = 199000,
-			["mr"] = 199000,
+		["Linked Chain Shoulderpads"] = {
+			["H3537"] = 2200,
+			["mr"] = 2200,
 		},
-		["Pattern: Greater Adept's Robe"] = {
-			["H3540"] = 19896,
-			["mr"] = 19896,
+		["Practice Lock"] = {
+			["mr"] = 10800,
+			["H3543"] = 10800,
+			["H3539"] = 11500,
 		},
-		["Onyx Choker of Spirit"] = {
-			["H3540"] = 64752,
-			["mr"] = 64752,
+		["Pattern: Volcanic Leggings"] = {
+			["mr"] = 56999,
+			["H3539"] = 56999,
 		},
-		["Champion's Cape of Agility"] = {
-			["H3537"] = 19200,
-			["mr"] = 19200,
+		["Raw Black Truffle"] = {
+			["H3540"] = 600,
+			["mr"] = 600,
+			["H3539"] = 1050,
 		},
-		["Zulian Hacker of the Eagle"] = {
-			["H3540"] = 6969669,
-			["mr"] = 6969669,
-		},
-		["Champion's Cape of the Monkey"] = {
-			["H3540"] = 20000,
-			["mr"] = 20000,
-		},
-		["Pattern: Living Shoulders"] = {
-			["H3540"] = 49900,
-			["mr"] = 49900,
-		},
-		["Masterwork Breastplate of Nature Resistance"] = {
-			["H3540"] = 7500000,
-			["mr"] = 7500000,
-			["H3539"] = 6200000,
-		},
-		["Defender Bracers of the Monkey"] = {
-			["H3537"] = 10000,
-			["mr"] = 10000,
-		},
-		["Arctic Ring of the Tiger"] = {
-			["H3537"] = 42392,
-			["mr"] = 42392,
-		},
-		["Black Mageweave Shoulders"] = {
-			["mr"] = 24375,
-			["cc"] = 4,
-			["id"] = "10027:0:0:0:0",
-			["sc"] = 1,
-			["H3540"] = 24375,
-		},
-		["Peacebloom"] = {
-			["H3539"] = 94,
-			["sc"] = 0,
+		["Linen Cloth"] = {
+			["id"] = "2589:0:0:0:0",
+			["H3542"] = 68,
 			["cc"] = 7,
-			["H3540"] = 524,
-			["id"] = "2447:0:0:0:0",
-			["mr"] = 184,
-			["H3542"] = 184,
+			["mr"] = 7,
+			["sc"] = 0,
+			["H3541"] = 36,
+			["H3539"] = 77,
+			["L3541"] = 35,
+			["H3543"] = 7,
+			["H3540"] = 86,
 		},
-		["Garona: A Study on Stealth and Treachery"] = {
-			["H3540"] = 9800,
-			["mr"] = 9800,
-			["H3539"] = 19600,
+		["Native Pants of Healing"] = {
+			["H3543"] = 8100,
+			["mr"] = 8100,
 		},
-		["Pattern: Living Leggings"] = {
-			["H3540"] = 9899,
-			["mr"] = 9899,
+		["Salt"] = {
+			["H3540"] = 1000,
+			["mr"] = 1000,
+			["H3539"] = 1000,
 		},
-		["Master's Robe of Shadow Wrath"] = {
-			["H3537"] = 272132,
-			["mr"] = 272132,
+		["Sharp Claw"] = {
+			["H3540"] = 192,
+			["H3539"] = 248,
+			["H3543"] = 150,
+			["mr"] = 150,
 		},
-		["Barbaric Battle Axe of the Whale"] = {
-			["H3537"] = 9966,
-			["mr"] = 9966,
+		["Lord's Crown of the Eagle"] = {
+			["H3537"] = 31700,
+			["mr"] = 31700,
+		},
+		["Pattern: Heavy Scorpid Leggings"] = {
+			["H3540"] = 43040,
+			["mr"] = 39200,
+			["H3543"] = 39200,
+		},
+		["Mystical Headwrap of Shadow Wrath"] = {
+			["H3537"] = 100000,
+			["mr"] = 100000,
+		},
+		["Schematic: EZ-Thro Dynamite II"] = {
+			["H3543"] = 68999,
+			["mr"] = 68999,
+		},
+		["Elegant Belt of the Eagle"] = {
+			["H3540"] = 870868,
+			["mr"] = 250000,
+			["H3543"] = 250000,
+			["H3539"] = 29800,
+		},
+		["Mass of McGowan"] = {
+			["H3543"] = 140000,
+			["mr"] = 140000,
+		},
+		["Wall of the Dead"] = {
+			["H3539"] = 308000,
+			["H3543"] = 289000,
+			["mr"] = 289000,
+		},
+		["Pattern: Runic Leather Belt"] = {
+			["mr"] = 8700,
+			["sc"] = 1,
+			["H3540"] = 9199,
+			["cc"] = 9,
+			["H3543"] = 8700,
+			["id"] = "15745:0:0:0:0",
 		},
 		["Sharpshooter Harquebus of the Falcon"] = {
 			["H3537"] = 180303,
 			["mr"] = 180303,
 		},
-		["Barbed Club of Power"] = {
-			["H3537"] = 14628,
-			["mr"] = 14628,
+		["Pattern: Barbaric Bracers"] = {
+			["mr"] = 90000,
+			["sc"] = 1,
+			["H3540"] = 90000,
+			["id"] = "18949:0:0:0:0",
+			["cc"] = 9,
 		},
-		["Rune Sword of the Bear"] = {
-			["H3540"] = 82201,
-			["mr"] = 82201,
-			["H3539"] = 39999,
+		["Magister's Gloves"] = {
+			["mr"] = 89929,
+			["cc"] = 4,
+			["id"] = "16684:0:0:0:0",
+			["H3539"] = 48750,
+			["H3543"] = 89929,
+			["sc"] = 1,
 		},
-		["Stormbringer Belt"] = {
-			["H3540"] = 89500,
-			["mr"] = 89500,
-			["H3539"] = 41600,
+		["Long Elegant Feather"] = {
+			["H3540"] = 4499,
+			["H3539"] = 5344,
+			["H3543"] = 4105,
+			["mr"] = 4105,
 		},
 		["Scroll of Agility III"] = {
 			["H3540"] = 1900,
 			["H3539"] = 2897,
-			["mr"] = 1900,
+			["H3543"] = 3383,
+			["mr"] = 3383,
 		},
 		["Emerald Breastplate of Nature Resistance"] = {
-			["mr"] = 1550000,
 			["H3539"] = 1550000,
+			["mr"] = 1550000,
 		},
-		["Sergeant's Warhammer of Stamina"] = {
-			["mr"] = 6900,
-			["H3539"] = 6900,
+		["Lava Core"] = {
+			["cc"] = 5,
+			["H3539"] = 34200,
+			["L3543"] = 24997,
+			["id"] = "17011:0:0:0:0",
+			["H3540"] = 32999,
+			["sc"] = 0,
+			["H3543"] = 28078,
+			["mr"] = 24997,
 		},
-		["Bloodwoven Pants of the Eagle"] = {
-			["H3537"] = 52851,
-			["mr"] = 52851,
+		["Bloodvine Boots"] = {
+			["H3540"] = 2397499,
+			["H3539"] = 1487499,
+			["H3543"] = 1497500,
+			["mr"] = 1497500,
 		},
-		["Battlesmasher of Power"] = {
-			["H3537"] = 12340,
-			["mr"] = 12340,
+		["Pattern: Cindercloth Gloves"] = {
+			["H3537"] = 212135,
+			["mr"] = 212135,
 		},
 		["Twilight Cape of Frozen Wrath"] = {
 			["H3537"] = 38988,
@@ -18114,62 +20730,66 @@ AUCTIONATOR_PRICE_DATABASE = {
 		["Elixir of Agility"] = {
 			["H3540"] = 1784,
 			["H3539"] = 1794,
-			["mr"] = 1784,
+			["H3543"] = 1551,
+			["mr"] = 1551,
 		},
-		["Medium Leather"] = {
-			["H3539"] = 184,
-			["sc"] = 0,
-			["H3540"] = 188,
-			["cc"] = 7,
-			["mr"] = 188,
-			["id"] = "2319:0:0:0:0",
+		["Runecloth Gloves"] = {
+			["mr"] = 20000,
+			["cc"] = 4,
+			["id"] = "13863:0:0:0:0",
+			["H3540"] = 20000,
+			["sc"] = 1,
 		},
-		["Large Radiant Shard"] = {
-			["H3540"] = 49500,
-			["mr"] = 49500,
-			["H3539"] = 62888,
+		["Insignia Bracers"] = {
+			["H3537"] = 20000,
+			["mr"] = 20000,
 		},
 		["Shardtooth E'ko"] = {
 			["H3540"] = 29798,
 			["H3539"] = 30500,
-			["mr"] = 29798,
+			["H3543"] = 33000,
+			["mr"] = 33000,
 		},
-		["Bloodvine Boots"] = {
-			["H3540"] = 2397499,
-			["H3539"] = 1487499,
-			["mr"] = 2397499,
+		["Mighty Leggings of the Eagle"] = {
+			["H3537"] = 50000,
+			["mr"] = 50000,
 		},
-		["Durable Belt of the Eagle"] = {
-			["H3537"] = 8800,
-			["mr"] = 8800,
+		["Five of Portals"] = {
+			["H3540"] = 89999,
+			["H3539"] = 99926,
+			["H3543"] = 43597,
+			["mr"] = 43597,
 		},
-		["Pattern: Tough Scorpid Shoulders"] = {
-			["H3540"] = 16899,
-			["mr"] = 16899,
+		["Recipe: Crispy Bat Wing"] = {
+			["mr"] = 40000,
+			["H3543"] = 40000,
+			["H3539"] = 36999,
 		},
-		["Barbaric Battle Axe of the Wolf"] = {
-			["H3537"] = 11800,
-			["mr"] = 11800,
+		["Lunar Handwraps of the Eagle"] = {
+			["H3543"] = 25000,
+			["mr"] = 25000,
 		},
-		["Schematic: Goblin Land Mine"] = {
-			["H3540"] = 24799,
-			["mr"] = 24799,
-			["H3539"] = 29999,
+		["Soft Bushy Tail"] = {
+			["H3540"] = 6500,
+			["H3539"] = 10000,
+			["H3543"] = 2300,
+			["mr"] = 2300,
 		},
 		["Fadeleaf"] = {
-			["mr"] = 8800,
-			["cc"] = 7,
-			["H3540"] = 8800,
 			["H3539"] = 7100,
-			["id"] = "3818:0:0:0:0",
 			["sc"] = 0,
+			["H3540"] = 8800,
+			["id"] = "3818:0:0:0:0",
+			["cc"] = 7,
+			["H3543"] = 9074,
+			["mr"] = 9074,
 		},
 		["Pattern: Gem-studded Leather Belt"] = {
-			["mr"] = 246880,
-			["sc"] = 1,
-			["id"] = "14635:0:0:0:0",
-			["H3537"] = 246880,
+			["mr"] = 224425,
 			["cc"] = 9,
+			["id"] = "14635:0:0:0:0",
+			["H3543"] = 224425,
+			["sc"] = 1,
 		},
 		["Righteous Spaulders of the Owl"] = {
 			["H3537"] = 112428,
@@ -18179,415 +20799,446 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 26584,
 			["mr"] = 26584,
 		},
-		["Brain Hacker"] = {
-			["H3539"] = 199499,
-			["mr"] = 199499,
+		["Nightsky Cloak"] = {
+			["H3537"] = 15000,
+			["mr"] = 15000,
 		},
-		["Formula: Enchant Chest - Lesser Mana"] = {
-			["H3537"] = 29000,
-			["mr"] = 29000,
+		["Blade of Hanna"] = {
+			["H3537"] = 5000000,
+			["mr"] = 5000000,
 		},
-		["Gaea's Amice of Frozen Wrath"] = {
-			["H3540"] = 19955,
-			["mr"] = 19955,
+		["Master's Hat of the Wolf"] = {
+			["H3537"] = 60000,
+			["mr"] = 60000,
 		},
 		["Dwarven Magestaff of the Monkey"] = {
-			["mr"] = 54777,
 			["H3539"] = 54777,
+			["mr"] = 54777,
 		},
-		["Spider Web Robe"] = {
-			["H3540"] = 174500,
-			["mr"] = 174500,
+		["Wrangler's Cloak of the Eagle"] = {
+			["H3537"] = 6000,
+			["mr"] = 6000,
 		},
-		["Stardust Band"] = {
-			["H3537"] = 67777,
-			["mr"] = 67777,
+		["Sentinel Gloves of Defense"] = {
+			["mr"] = 26916,
+			["cc"] = 4,
+			["id"] = "7443:0:0:1611:0",
+			["sc"] = 2,
+			["H3542"] = 26916,
 		},
-		["Pattern: Blue Overalls"] = {
-			["H3540"] = 8900,
-			["H3539"] = 9100,
-			["mr"] = 8900,
+		["Staunch Hammer of Power"] = {
+			["H3543"] = 3598,
+			["mr"] = 3598,
 		},
-		["Mithril Bar"] = {
-			["mr"] = 3898,
-			["sc"] = 0,
-			["H3539"] = 1575,
-			["H3540"] = 3998,
-			["id"] = "3860:0:0:0:0",
-			["H3543"] = 3898,
-			["cc"] = 7,
+		["Diamond-Tip Bludgeon of the Bear"] = {
+			["H3543"] = 48022,
+			["mr"] = 48022,
 		},
-		["Grunt's Pauldrons of the Tiger"] = {
-			["H3537"] = 20000,
-			["mr"] = 20000,
+		["Lambent Scale Shield"] = {
+			["mr"] = 7800,
+			["H3537"] = 13200,
+			["L3537"] = 7800,
 		},
 		["Elegant Cloak of Fiery Wrath"] = {
 			["H3540"] = 250000,
 			["mr"] = 250000,
 			["H3539"] = 250000,
 		},
-		["Elunarian Cuffs"] = {
-			["H3537"] = 320104,
-			["mr"] = 320104,
+		["Pattern: Barbaric Belt"] = {
+			["H3539"] = 300000,
+			["mr"] = 300000,
 		},
-		["Runecloth Headband"] = {
-			["H3537"] = 68200,
-			["mr"] = 68200,
+		["Dragon Finger of the Eagle"] = {
+			["H3540"] = 228498,
+			["mr"] = 228498,
 		},
 		["Murphstar of Strength"] = {
 			["H3537"] = 118704,
 			["mr"] = 118704,
 		},
-		["Silver-linked Footguards"] = {
-			["H3537"] = 145000,
-			["mr"] = 145000,
+		["Royal Gown of Frozen Wrath"] = {
+			["H3543"] = 150000,
+			["mr"] = 150000,
 		},
-		["Dreamscale"] = {
-			["H3537"] = 2000000,
-			["mr"] = 2000000,
+		["Pattern: Wizardweave Turban"] = {
+			["H3543"] = 1395000,
+			["mr"] = 1395000,
 		},
-		["Thorium Headed Arrow"] = {
-			["H3540"] = 45,
-			["H3539"] = 39,
-			["mr"] = 45,
+		["Elder's Padded Armor of Intellect"] = {
+			["H3539"] = 18099,
+			["mr"] = 18099,
 		},
-		["Defender Gauntlets of the Gorilla"] = {
-			["H3540"] = 20000,
-			["mr"] = 20000,
+		["Greater Mystic Essence"] = {
+			["id"] = "11135:0:0:0:0",
+			["sc"] = 0,
+			["cc"] = 7,
+			["H3542"] = 1285,
+			["L3540"] = 1795,
+			["H3539"] = 2100,
+			["L3543"] = 980,
+			["H3541"] = 1521,
+			["mr"] = 980,
+			["L3539"] = 1946,
+			["H3543"] = 1190,
+			["H3540"] = 1798,
 		},
-		["Mystical Mantle of the Whale"] = {
-			["H3540"] = 115000,
-			["mr"] = 115000,
+		["Mutton Chop"] = {
+			["H3543"] = 599,
+			["mr"] = 599,
 		},
 		["Hammer of the Northern Wind"] = {
 			["H3540"] = 1750000,
 			["H3539"] = 1835963,
-			["mr"] = 1750000,
+			["H3543"] = 1697498,
+			["mr"] = 1697498,
 		},
-		["Cat Carrier (White Kitten)"] = {
-			["H3540"] = 999998,
-			["mr"] = 999998,
+		["Master's Cloak of the Owl"] = {
+			["H3543"] = 60412,
+			["mr"] = 60412,
 		},
-		["Archer's Trousers of the Bear"] = {
-			["mr"] = 12500,
-			["H3539"] = 12500,
+		["Recipe: Roasted Kodo Meat"] = {
+			["H3543"] = 40000,
+			["mr"] = 40000,
 		},
 		["Outrunner's Cord of the Gorilla"] = {
 			["H3540"] = 20000,
 			["mr"] = 20000,
 		},
-		["Pattern: Rugged Leather Pants"] = {
-			["H3537"] = 375,
-			["mr"] = 375,
+		["Glimmering Mail Pauldrons"] = {
+			["H3537"] = 14800,
+			["mr"] = 14800,
 		},
 		["Scouting Cloak of the Wolf"] = {
 			["H3537"] = 9496,
 			["mr"] = 9496,
 		},
-		["Swashbuckler's Leggings of the Bear"] = {
-			["mr"] = 142174,
-			["H3539"] = 142174,
+		["Ornate Mithril Helm"] = {
+			["H3537"] = 70000,
+			["mr"] = 70000,
 		},
-		["Baked Salmon"] = {
-			["H3540"] = 10000,
-			["H3539"] = 10000,
-			["mr"] = 10000,
+		["Edged Bastard Sword of Strength"] = {
+			["H3540"] = 7168,
+			["mr"] = 7168,
 		},
 		["Nightshade Spaulders of Stamina"] = {
 			["H3540"] = 1120529,
 			["mr"] = 1120529,
 		},
-		["Watcher's Cap of the Owl"] = {
-			["H3537"] = 29999,
-			["mr"] = 29999,
+		["Pattern: Ghostweave Pants"] = {
+			["H3537"] = 6836357,
+			["mr"] = 6836357,
 		},
 		["Opal Ring of Nature Resistance"] = {
 			["H3540"] = 4599278,
 			["mr"] = 4599278,
 		},
-		["Prairie Ring of the Wolf"] = {
-			["H3537"] = 45000,
-			["mr"] = 45000,
+		["Pattern: Murloc Scale Breastplate"] = {
+			["H3540"] = 8900,
+			["H3539"] = 5500,
+			["H3543"] = 6690,
+			["mr"] = 6690,
 		},
-		["Saltstone Legplates of the Bear"] = {
-			["H3537"] = 50000,
-			["mr"] = 50000,
+		["Stylish Green Shirt"] = {
+			["H3540"] = 7899,
+			["H3539"] = 29496,
+			["H3543"] = 60498,
+			["mr"] = 60498,
 		},
-		["High Councillor's Cloak of Intellect"] = {
-			["H3540"] = 40000,
-			["mr"] = 40000,
-		},
-		["Conjurer's Shoes of the Eagle"] = {
-			["H3540"] = 59907,
-			["mr"] = 59907,
-		},
-		["Sorcerer Hat of Intellect"] = {
-			["H3540"] = 20000,
-			["mr"] = 20000,
-		},
-		["Elixir of Greater Defense"] = {
-			["H3540"] = 12407,
-			["H3539"] = 12500,
-			["mr"] = 12407,
-		},
-		["Arena Wristguards"] = {
-			["H3537"] = 9990000,
-			["mr"] = 9990000,
-		},
-		["Recipe: Ghost Dye"] = {
-			["H3537"] = 81754,
-			["mr"] = 81754,
-		},
-		["Bonecaster's Bindings of the Eagle"] = {
-			["mr"] = 25000,
-			["H3539"] = 25000,
-		},
-		["Massive Mojo"] = {
-			["H3540"] = 2792,
-			["mr"] = 2792,
-			["H3539"] = 3899,
-		},
-		["Meadow Ring of Eluding"] = {
-			["H3540"] = 279700,
-			["mr"] = 279700,
-		},
-		["Recipe: Gingerbread Cookie"] = {
-			["H3540"] = 189000,
-			["H3539"] = 280694,
-			["mr"] = 189000,
-		},
-		["Conjurer's Shoes of the Whale"] = {
-			["H3540"] = 9999,
-			["mr"] = 9999,
-		},
-		["Huntsman's Leggings of the Bear"] = {
-			["H3540"] = 38482,
-			["mr"] = 38482,
-		},
-		["The Greatest Race of Hunters"] = {
-			["H3540"] = 14800,
-			["mr"] = 14800,
-			["H3539"] = 16799,
-		},
-		["Killmaim"] = {
-			["H3540"] = 354068,
-			["mr"] = 354068,
-		},
-		["Bloodspattered Shield of Blocking"] = {
-			["mr"] = 8505,
-			["H3539"] = 8505,
-		},
-		["Sequoia Branch of the Bear"] = {
-			["H3540"] = 30000,
-			["mr"] = 30000,
-		},
-		["Councillor's Tunic of the Owl"] = {
-			["H3540"] = 70000,
-			["mr"] = 70000,
-		},
-		["Deviate Scale Gloves"] = {
-			["H3537"] = 221333,
-			["mr"] = 221333,
-		},
-		["Crusader Bow of the Eagle"] = {
-			["H3537"] = 20000,
-			["mr"] = 20000,
-		},
-		["Greenstone Circle of Stamina"] = {
-			["H3537"] = 13500,
-			["mr"] = 13500,
-		},
-		["Aboriginal Gloves of the Owl"] = {
-			["mr"] = 3500,
-			["sc"] = 1,
-			["H3529"] = 3500,
-			["id"] = "14117:0:0:758:0",
-			["cc"] = 4,
-		},
-		["Nightshade Armguards of the Monkey"] = {
-			["H3537"] = 149999,
-			["mr"] = 149999,
-		},
-		["Rogue's Diary"] = {
-			["H3540"] = 1818085,
-			["mr"] = 1818085,
-		},
-		["War Paint Waistband"] = {
-			["H3537"] = 4759,
-			["mr"] = 4759,
-		},
-		["Hulking Belt"] = {
-			["H3537"] = 4900,
-			["mr"] = 4900,
-		},
-		["Keeper's Woolies"] = {
-			["H3537"] = 35000,
-			["mr"] = 35000,
-		},
-		["Resplendent Sarong of the Eagle"] = {
-			["H3537"] = 146646,
-			["mr"] = 146646,
-		},
-		["Thorny Vine"] = {
-			["H3540"] = 16800,
-			["mr"] = 16800,
-		},
-		["Elder's Pants of Spirit"] = {
-			["H3540"] = 20000,
-			["mr"] = 20000,
-		},
-		["Ebon Scimitar of Strength"] = {
-			["H3540"] = 35000,
-			["mr"] = 35000,
-		},
-		["Magus Long Staff of the Eagle"] = {
-			["H3540"] = 199998,
-			["mr"] = 199998,
-		},
-		["Cabalist Leggings of the Eagle"] = {
-			["H3537"] = 17500,
-			["mr"] = 17500,
-		},
-		["Orb of Deception"] = {
-			["H3539"] = 925273,
-			["cc"] = 4,
-			["mr"] = 669029,
-			["H3540"] = 899999,
-			["sc"] = 0,
-			["id"] = "1973:0:0:0:0",
-			["H3542"] = 669029,
-		},
-		["Edged Bastard Sword of the Monkey"] = {
-			["H3540"] = 10000,
-			["mr"] = 10000,
-			["H3539"] = 10000,
-		},
-		["Mercurial Bracers of the Monkey"] = {
-			["mr"] = 50000,
-			["H3539"] = 50000,
-		},
-		["Cabalist Gloves of the Monkey"] = {
-			["mr"] = 73416,
-			["sc"] = 2,
-			["H3529"] = 73416,
-			["id"] = "7530:0:0:611:0",
-			["cc"] = 4,
-		},
-		["Wildvine"] = {
-			["mr"] = 1495,
-			["cc"] = 7,
-			["H3540"] = 1495,
-			["H3539"] = 1538,
-			["id"] = "8153:0:0:0:0",
-			["sc"] = 0,
-		},
-		["Jungle Ring of the Tiger"] = {
-			["H3537"] = 265637,
-			["mr"] = 265637,
-		},
-		["Ancient Legguards of the Falcon"] = {
-			["H3540"] = 50000,
-			["mr"] = 50000,
-		},
-		["Ritual Cape of Frozen Wrath"] = {
-			["mr"] = 10000,
-			["H3539"] = 10000,
-		},
-		["Coarse Sharpening Stone"] = {
-			["H3540"] = 2119,
-			["mr"] = 2119,
-		},
-		["Battering Hammer of the Eagle"] = {
-			["H3540"] = 12729,
-			["mr"] = 12729,
-		},
-		["Exquisite Flamberge of Agility"] = {
-			["H3540"] = 49900,
-			["mr"] = 49900,
-		},
-		["Bandit Boots of Nature's Wrath"] = {
-			["H3537"] = 12550,
-			["mr"] = 12550,
-		},
-		["Precisely Calibrated Boomstick"] = {
-			["H3539"] = 456000,
-			["mr"] = 456000,
-		},
-		["War Paint Shield"] = {
-			["mr"] = 27999,
-			["H3539"] = 27999,
-		},
-		["Duskwoven Cape of Frozen Wrath"] = {
-			["H3537"] = 68606,
-			["mr"] = 68606,
-		},
-		["Chieftain's Headdress of the Monkey"] = {
-			["mr"] = 100000,
-			["H3539"] = 100000,
-		},
-		["Boar Intestines"] = {
-			["mr"] = 105,
-			["cc"] = 7,
-			["id"] = "3172:0:0:0:0",
-			["sc"] = 0,
-			["H3539"] = 107,
-			["H3542"] = 105,
-		},
-		["Recipe: Slitherskin Mackerel"] = {
-			["mr"] = 38199,
-			["H3537"] = 38200,
-			["L3537"] = 38199,
-		},
-		["Lesser Mystic Essence"] = {
-			["mr"] = 753,
-			["cc"] = 7,
-			["sc"] = 0,
-			["id"] = "11134:0:0:0:0",
-			["L3539"] = 779,
-			["H3540"] = 753,
-			["H3539"] = 786,
-		},
-		["Sanguine Handwraps"] = {
-			["H3537"] = 4000,
-			["mr"] = 4000,
-		},
-		["Ballast Maul of the Gorilla"] = {
-			["H3537"] = 25000,
-			["mr"] = 25000,
-		},
-		["Merc Sword of the Whale"] = {
-			["H3540"] = 1599,
-			["mr"] = 1599,
-		},
-		["Silver Contact"] = {
-			["H3540"] = 399,
-			["H3539"] = 449,
-			["mr"] = 399,
-		},
-		["Buccaneer's Pants of the Owl"] = {
-			["H3540"] = 35269,
-			["mr"] = 35269,
-			["H3539"] = 28592,
-		},
-		["Outrunner's Chestguard of the Bear"] = {
-			["H3540"] = 79999,
-			["mr"] = 79999,
+		["Recipe: Gift of Arthas"] = {
+			["H3540"] = 99999,
+			["mr"] = 49998,
+			["H3543"] = 49998,
 		},
 		["Channeler's Staff"] = {
 			["H3537"] = 15095,
 			["mr"] = 15095,
 		},
-		["Scroll of Stamina II"] = {
-			["mr"] = 2449,
-			["H3539"] = 2449,
+		["Essence of Air"] = {
+			["H3539"] = 119999,
+			["cc"] = 5,
+			["mr"] = 120000,
+			["id"] = "7082:0:0:0:0",
+			["H3540"] = 108300,
+			["H3543"] = 120000,
+			["sc"] = 0,
 		},
-		["Plans: Gemmed Copper Gauntlets"] = {
-			["H3539"] = 4871,
-			["mr"] = 4871,
+		["Poached Sunscale Salmon"] = {
+			["mr"] = 1460,
+			["H3539"] = 1460,
 		},
-		["Resplendent Sarong of Healing"] = {
-			["H3537"] = 150000,
-			["mr"] = 150000,
+		["Robe of the Magi"] = {
+			["mr"] = 190000,
+			["H3543"] = 190000,
+			["H3539"] = 150000,
+		},
+		["Deadly Blunderbuss"] = {
+			["mr"] = 33230,
+			["H3539"] = 33230,
+		},
+		["Bonecaster's Bindings of the Eagle"] = {
+			["H3539"] = 25000,
+			["mr"] = 25000,
+		},
+		["Schematic: Lovingly Crafted Boomstick"] = {
+			["H3537"] = 802374,
+			["mr"] = 802374,
+		},
+		["Pattern: Murloc Scale Belt"] = {
+			["H3540"] = 1915,
+			["mr"] = 1883,
+			["H3543"] = 1883,
+		},
+		["Slayer's Shield"] = {
+			["H3543"] = 48241,
+			["mr"] = 48241,
+		},
+		["Cooked Glossy Mightfish"] = {
+			["H3543"] = 1150,
+			["mr"] = 1150,
+		},
+		["Kolkar Booty Key"] = {
+			["mr"] = 11127,
+			["H3543"] = 11127,
+			["H3539"] = 14626,
+		},
+		["Scouting Trousers of the Eagle"] = {
+			["H3539"] = 7600,
+			["mr"] = 7600,
+		},
+		["Gaea's Cloak of Fiery Wrath"] = {
+			["H3537"] = 29800,
+			["mr"] = 29800,
+		},
+		["Bloodspattered Shield of Blocking"] = {
+			["H3539"] = 8505,
+			["mr"] = 8505,
+		},
+		["Buccaneer's Orb of the Owl"] = {
+			["mr"] = 20000,
+			["cc"] = 4,
+			["id"] = "15912:0:0:760:0",
+			["sc"] = 0,
+			["H3542"] = 20000,
+		},
+		["Plans: Thorium Helm"] = {
+			["H3540"] = 30900,
+			["mr"] = 19399,
+			["H3543"] = 19399,
+			["H3539"] = 31000,
+		},
+		["Nightshade Cloak of Nature Resistance"] = {
+			["H3543"] = 3500000,
+			["mr"] = 3500000,
+		},
+		["Superior Healing Potion"] = {
+			["H3540"] = 850,
+			["mr"] = 969,
+			["H3543"] = 969,
+			["H3539"] = 785,
+		},
+		["Swashbuckler's Eyepatch of the Tiger"] = {
+			["H3539"] = 120240,
+			["mr"] = 120240,
+		},
+		["Duskwoven Gloves of Healing"] = {
+			["mr"] = 99999,
+			["cc"] = 4,
+			["id"] = "10062:0:0:2042:0",
+			["sc"] = 1,
+			["H3529"] = 99999,
+		},
+		["Nightshade Armguards of the Monkey"] = {
+			["H3543"] = 50000,
+			["mr"] = 50000,
+		},
+		["Warlord's Axe of Strength"] = {
+			["H3540"] = 256318,
+			["mr"] = 256318,
+		},
+		["War Paint Waistband"] = {
+			["H3543"] = 2939,
+			["mr"] = 2939,
+		},
+		["Hulking Belt"] = {
+			["H3543"] = 19800,
+			["mr"] = 19800,
+		},
+		["Schematic: Large Seaforium Charge"] = {
+			["H3540"] = 58000,
+			["mr"] = 43100,
+			["H3543"] = 43100,
+			["H3539"] = 61499,
+		},
+		["Schematic: Thorium Rifle"] = {
+			["H3539"] = 35599,
+			["H3543"] = 33600,
+			["mr"] = 33600,
+		},
+		["Supreme Cape of Agility"] = {
+			["H3540"] = 222252,
+			["mr"] = 222252,
+		},
+		["Melon Juice"] = {
+			["H3543"] = 600,
+			["mr"] = 600,
+		},
+		["Direwing Legguards"] = {
+			["mr"] = 79500,
+			["H3543"] = 79500,
+			["H3539"] = 194512,
+		},
+		["Pagan Cape of the Whale"] = {
+			["H3537"] = 19800,
+			["mr"] = 19800,
+		},
+		["Conjurer's Hood of the Owl"] = {
+			["H3543"] = 12500,
+			["mr"] = 12500,
+		},
+		["Knight's Girdle of the Monkey"] = {
+			["H3540"] = 32184,
+			["mr"] = 32184,
+		},
+		["Stringy Wolf Meat"] = {
+			["H3540"] = 699,
+			["mr"] = 1169,
+			["H3543"] = 1169,
+			["H3539"] = 977,
+		},
+		["Mercurial Bracers of the Monkey"] = {
+			["H3539"] = 50000,
+			["mr"] = 50000,
+		},
+		["Lupine Cord of Healing"] = {
+			["H3539"] = 6800,
+			["mr"] = 6800,
+		},
+		["Pattern: Stormshroud Pants"] = {
+			["H3543"] = 65999,
+			["mr"] = 65999,
+		},
+		["Jungle Ring of the Tiger"] = {
+			["H3537"] = 265637,
+			["mr"] = 265637,
+		},
+		["Staff of Jordan"] = {
+			["H3540"] = 3005463,
+			["mr"] = 3005463,
+			["H3539"] = 2911550,
+		},
+		["Small Black Pouch"] = {
+			["H3543"] = 499,
+			["mr"] = 499,
+		},
+		["Coarse Sharpening Stone"] = {
+			["H3540"] = 2119,
+			["mr"] = 2119,
+		},
+		["Abyssal Mail Sabatons of Restoration"] = {
+			["H3537"] = 190000,
+			["mr"] = 190000,
+		},
+		["Elemental Air"] = {
+			["H3540"] = 1480,
+			["H3539"] = 4498,
+			["H3543"] = 720,
+			["mr"] = 720,
+		},
+		["Tuxedo Jacket"] = {
+			["H3540"] = 56379,
+			["mr"] = 198499,
+			["H3543"] = 198499,
+		},
+		["Snickerfang Jowl"] = {
+			["H3540"] = 1799,
+			["H3539"] = 1946,
+			["H3543"] = 1494,
+			["mr"] = 1494,
+		},
+		["Elixir of the Mongoose"] = {
+			["H3540"] = 53000,
+			["H3539"] = 47774,
+			["H3543"] = 53000,
+			["mr"] = 53000,
+		},
+		["Duskwoven Cape of Frozen Wrath"] = {
+			["H3543"] = 89899,
+			["mr"] = 89899,
+		},
+		["Worn Dragonscale"] = {
+			["H3540"] = 885,
+			["H3539"] = 1455,
+			["H3543"] = 1245,
+			["mr"] = 1245,
+		},
+		["Ritual Bands of Frozen Wrath"] = {
+			["H3537"] = 2600,
+			["mr"] = 2600,
+		},
+		["Plans: Darkrune Helm"] = {
+			["H3540"] = 68000,
+			["H3539"] = 59500,
+			["mr"] = 68000,
+		},
+		["Sword of the Magistrate"] = {
+			["H3540"] = 45000,
+			["mr"] = 45000,
+		},
+		["Gothic Plate Girdle of Power"] = {
+			["H3537"] = 30370,
+			["mr"] = 30370,
+		},
+		["Formula: Enchant 2H Weapon - Lesser Spirit"] = {
+			["H3537"] = 19999,
+			["mr"] = 19999,
+		},
+		["Merc Sword of the Whale"] = {
+			["H3540"] = 1599,
+			["mr"] = 1599,
+		},
+		["Engraved Gauntlets of the Tiger"] = {
+			["H3537"] = 71026,
+			["mr"] = 71026,
+		},
+		["Frostweave Tunic"] = {
+			["mr"] = 184197,
+			["H3543"] = 184197,
+			["H3539"] = 149998,
+		},
+		["Citrine"] = {
+			["H3540"] = 905,
+			["L3540"] = 860,
+			["H3541"] = 850,
+			["sc"] = 0,
+			["id"] = "3864:0:0:0:0",
+			["mr"] = 1394,
+			["cc"] = 7,
+			["H3543"] = 1394,
+			["H3539"] = 964,
+		},
+		["Archer's Jerkin of the Owl"] = {
+			["H3543"] = 27373,
+			["mr"] = 27373,
+		},
+		["Dark Silk Shirt"] = {
+			["H3539"] = 169898,
+			["H3543"] = 169499,
+			["mr"] = 169499,
+		},
+		["Arcane Elixir"] = {
+			["H3539"] = 10998,
+			["sc"] = 0,
+			["H3540"] = 10397,
+			["id"] = "9155:0:0:0:0",
+			["cc"] = 0,
+			["H3543"] = 11596,
+			["mr"] = 11596,
+		},
+		["Ironfeather"] = {
+			["H3540"] = 150,
+			["H3539"] = 150,
+			["H3543"] = 159,
+			["mr"] = 159,
 		},
 		["Birchwood Maul of the Tiger"] = {
 			["H3540"] = 4700,
@@ -18597,65 +21248,68 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 21031,
 			["mr"] = 21031,
 		},
-		["Plated Armorfish"] = {
-			["H3537"] = 4999,
-			["mr"] = 4999,
+		["Pattern: Gloves of Spell Mastery"] = {
+			["mr"] = 7888888,
+			["cc"] = 9,
+			["id"] = "14511:0:0:0:0",
+			["sc"] = 2,
+			["H3529"] = 7888888,
 		},
 		["Orb of Power"] = {
 			["H3539"] = 22000,
 			["cc"] = 4,
 			["mr"] = 24932,
 			["H3540"] = 22000,
-			["sc"] = 0,
 			["id"] = "4838:0:0:0:0",
+			["sc"] = 0,
 			["H3542"] = 24932,
 		},
-		["Sentinel Bracers of Healing"] = {
-			["mr"] = 26600,
-			["cc"] = 4,
-			["id"] = "7447:0:0:2034:0",
-			["sc"] = 2,
-			["H3542"] = 26600,
+		["Staunch Hammer of Arcane Wrath"] = {
+			["H3543"] = 2300,
+			["mr"] = 2300,
 		},
-		["Schematic: Parachute Cloak"] = {
-			["H3539"] = 7299,
-			["mr"] = 7299,
+		["Bearded Boneaxe"] = {
+			["H3537"] = 89999,
+			["mr"] = 89999,
 		},
 		["Pattern: Fine Leather Boots"] = {
-			["mr"] = 4899,
-			["cc"] = 9,
-			["id"] = "2406:0:0:0:0",
-			["H3540"] = 4899,
-			["sc"] = 1,
 			["H3539"] = 8000,
+			["cc"] = 9,
+			["sc"] = 1,
+			["id"] = "2406:0:0:0:0",
+			["mr"] = 4613,
+			["H3543"] = 4613,
+			["H3540"] = 4899,
 		},
-		["Merciless Gauntlets of the Bear"] = {
-			["H3540"] = 90000,
-			["mr"] = 90000,
+		["Superior Mana Potion"] = {
+			["H3539"] = 14189,
+			["cc"] = 0,
+			["sc"] = 0,
+			["H3540"] = 17351,
+			["id"] = "13443:0:0:0:0",
+			["H3543"] = 37551,
+			["mr"] = 37551,
 		},
 		["Elixir of Shadow Power"] = {
 			["H3540"] = 58799,
 			["H3539"] = 64498,
-			["mr"] = 58799,
+			["H3543"] = 52999,
+			["mr"] = 52999,
 		},
-		["Forester's Axe of the Bear"] = {
-			["mr"] = 15000,
-			["cc"] = 2,
-			["id"] = "790:0:0:1181:0",
-			["H3543"] = 15000,
-			["sc"] = 0,
+		["Unadorned Seal of Ascension"] = {
+			["mr"] = 1650,
+			["H3543"] = 1650,
+			["H3539"] = 1390,
 		},
 		["Pattern: Mooncloth"] = {
-			["mr"] = 29600,
-			["H3537"] = 29711,
-			["L3537"] = 29600,
+			["H3543"] = 50000,
+			["mr"] = 50000,
 		},
 	},
 	["Genesis_Horde"] = {
 	},
 	["Stonespine_Horde"] = {
 	},
-	["__dbversion"] = 4,
 	["Genesis_Alliance"] = {
 		["Blessed Trillium Belt"] = {
 			["mr"] = 580000000,
@@ -18721,38 +21375,39 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 5,
 		},
 	},
+	["__dbversion"] = 4,
 }
-AUCTIONATOR_LAST_SCAN_TIME = 1595709901
+AUCTIONATOR_LAST_SCAN_TIME = 1595964802
 AUCTIONATOR_TOONS = {
 	["Ozrencic"] = {
 		["firstSeen"] = 1568647380,
-		["firstVersion"] = "8.1.0",
 		["guid"] = "Player-4465-010E410D",
+		["firstVersion"] = "8.1.0",
 	},
 	["Judawise"] = {
 		["firstSeen"] = 1569271224,
-		["firstVersion"] = "8.1.0",
 		["guid"] = "Player-4465-01265A42",
+		["firstVersion"] = "8.1.0",
 	},
 	["Elohssa"] = {
 		["firstSeen"] = 1569350072,
-		["guid"] = "Player-4705-01DEED9F",
 		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4705-01DEED9F",
 	},
 	["Mxyzptlk"] = {
 		["firstSeen"] = 1595583912,
-		["firstVersion"] = "8.1.0",
 		["guid"] = "Player-4465-01CE7466",
+		["firstVersion"] = "8.1.0",
 	},
 	["Vermins"] = {
 		["firstSeen"] = 1567092304,
-		["firstVersion"] = "3.1.5",
 		["guid"] = "Player-4755-0179495D",
+		["firstVersion"] = "3.1.5",
 	},
 	["Kosturko"] = {
 		["firstSeen"] = 1568649132,
-		["firstVersion"] = "8.1.0",
 		["guid"] = "Player-4465-010B6DA9",
+		["firstVersion"] = "8.1.0",
 	},
 	["Mulatz"] = {
 		["firstSeen"] = 1489842994,
@@ -18760,23 +21415,23 @@ AUCTIONATOR_TOONS = {
 	},
 	["Verminz"] = {
 		["firstSeen"] = 1489842912,
-		["firstVersion"] = "3.1.5",
 		["guid"] = "Player-4465-010B6E50",
+		["firstVersion"] = "3.1.5",
 	},
 	["Pepecocorita"] = {
 		["firstSeen"] = 1490213073,
-		["guid"] = "0x000000000041E45E",
 		["firstVersion"] = "3.1.5",
+		["guid"] = "0x000000000041E45E",
 	},
 	["Dotwise"] = {
 		["firstSeen"] = 1569271012,
-		["guid"] = "Player-4465-01265908",
 		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4465-01265908",
 	},
 	["Greenwise"] = {
 		["firstSeen"] = 1569270467,
-		["guid"] = "Player-4465-012659A9",
 		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4465-012659A9",
 	},
 	["Blooq"] = {
 		["firstSeen"] = 1490547957,
@@ -18784,8 +21439,8 @@ AUCTIONATOR_TOONS = {
 	},
 	["Mxzq"] = {
 		["firstSeen"] = 1594483673,
-		["firstVersion"] = "8.1.0",
 		["guid"] = "Player-4465-01C7FC88",
+		["firstVersion"] = "8.1.0",
 	},
 	["Tukac"] = {
 		["firstSeen"] = 1489953433,
@@ -18797,128 +21452,132 @@ AUCTIONATOR_TOONS = {
 	},
 	["Mxyz"] = {
 		["firstSeen"] = 1594141872,
-		["firstVersion"] = "8.1.0",
 		["guid"] = "Player-4465-01C75D20",
+		["firstVersion"] = "8.1.0",
 	},
 	["Whatevs"] = {
 		["firstSeen"] = 1569353712,
-		["firstVersion"] = "8.1.0",
 		["guid"] = "Player-4705-01DF116D",
+		["firstVersion"] = "8.1.0",
 	},
-	["Konza"] = {
-		["firstSeen"] = 1490043156,
+	["Korupcija"] = {
+		["firstSeen"] = 1492506222,
+		["guid"] = "Player-4705-01D8B1DB",
 		["firstVersion"] = "3.1.5",
 	},
-	["Gheylord"] = {
-		["firstSeen"] = 1567278903,
-		["guid"] = "Player-4755-018C0F1B",
-		["firstVersion"] = "8.1.0",
+	["Pitchwise"] = {
+		["firstSeen"] = 1492678555,
+		["guid"] = "Player-4465-010B6E73",
+		["firstVersion"] = "3.1.5",
 	},
 	["Spija"] = {
 		["firstSeen"] = 1491077146,
 		["firstVersion"] = "3.1.5",
 	},
-	["Pitchwise"] = {
-		["firstSeen"] = 1492678555,
-		["firstVersion"] = "3.1.5",
-		["guid"] = "Player-4465-010B6E73",
+	["Gheylord"] = {
+		["firstSeen"] = 1567278903,
+		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4755-018C0F1B",
 	},
-	["Korupcija"] = {
-		["firstSeen"] = 1492506222,
+	["Konza"] = {
+		["firstSeen"] = 1490043156,
 		["firstVersion"] = "3.1.5",
-		["guid"] = "Player-4705-01D8B1DB",
 	},
 	["Paydo"] = {
 		["firstSeen"] = 1568042552,
-		["firstVersion"] = "8.1.0",
 		["guid"] = "Player-4755-01B83D7E",
+		["firstVersion"] = "8.1.0",
 	},
 	["Vermin"] = {
 		["firstSeen"] = 1567291895,
-		["guid"] = "Player-4465-00E5831F",
 		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4465-00E5831F",
 	},
 }
 AUCTIONATOR_STACKING_PREFS = {
 	["essence of fire"] = {
-		["numstacks"] = 0,
 		["stacksize"] = 1,
+		["numstacks"] = 0,
 	},
 	["sha crystal"] = {
-		["stacksize"] = 1,
 		["numstacks"] = 0,
+		["stacksize"] = 1,
 	},
 	["copper bar"] = {
-		["numstacks"] = 0,
 		["stacksize"] = 5,
+		["numstacks"] = 0,
 	},
 	["magnificent hide"] = {
-		["numstacks"] = 0,
 		["stacksize"] = 1,
+		["numstacks"] = 0,
 	},
 	["light feather"] = {
-		["stacksize"] = 10,
 		["numstacks"] = 0,
+		["stacksize"] = 10,
 	},
 	["volatile life"] = {
-		["stacksize"] = 10,
 		["numstacks"] = 0,
+		["stacksize"] = 10,
 	},
 	["wool cloth"] = {
-		["stacksize"] = 10,
 		["numstacks"] = 0,
+		["stacksize"] = 10,
 	},
 	["spirit of war"] = {
-		["numstacks"] = 0,
 		["stacksize"] = 1,
-	},
-	["reef octopus"] = {
-		["stacksize"] = 10,
 		["numstacks"] = 0,
 	},
 	["large glowing shard"] = {
+		["stacksize"] = 1,
+		["numstacks"] = 0,
+	},
+	["coarse stone"] = {
+		["stacksize"] = 5,
+		["numstacks"] = 0,
+	},
+	["swiftthistle"] = {
+		["stacksize"] = 2,
+		["numstacks"] = 0,
+	},
+	["volatile water"] = {
+		["stacksize"] = 20,
+		["numstacks"] = 0,
+	},
+	["exotic leather"] = {
+		["stacksize"] = 20,
+		["numstacks"] = 0,
+	},
+	["flask of the earth"] = {
 		["numstacks"] = 0,
 		["stacksize"] = 1,
 	},
-	["netherweave cloth"] = {
+	["*_herbs"] = {
 		["numstacks"] = -1,
 		["stacksize"] = 20,
 	},
 	["small radiant shard"] = {
-		["numstacks"] = 0,
-		["stacksize"] = 1,
-	},
-	["flask of the earth"] = {
 		["stacksize"] = 1,
 		["numstacks"] = 0,
 	},
-	["exotic leather"] = {
+	["greater mystic essence"] = {
+		["stacksize"] = 14,
 		["numstacks"] = 0,
-		["stacksize"] = 20,
 	},
-	["*_herbs"] = {
+	["haunting spirit"] = {
+		["numstacks"] = 0,
+		["stacksize"] = 1,
+	},
+	["netherweave cloth"] = {
 		["stacksize"] = 20,
 		["numstacks"] = -1,
 	},
-	["greater mystic essence"] = {
-		["numstacks"] = 0,
-		["stacksize"] = 1,
-	},
-	["haunting spirit"] = {
-		["stacksize"] = 1,
+	["iron bar"] = {
+		["stacksize"] = 10,
 		["numstacks"] = 0,
 	},
-	["volatile water"] = {
+	["reef octopus"] = {
 		["numstacks"] = 0,
-		["stacksize"] = 20,
-	},
-	["swiftthistle"] = {
-		["numstacks"] = 0,
-		["stacksize"] = 2,
-	},
-	["coarse stone"] = {
-		["numstacks"] = 0,
-		["stacksize"] = 5,
+		["stacksize"] = 10,
 	},
 }
 AUCTIONATOR_SCAN_MINLEVEL = 1

@@ -1,2 +1,0 @@
-
-BagsShown = false

@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 1466,
 	["lastSanitation"] = 3,
-	["session"] = 1441,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -173,8 +173,8 @@ BugGrabberDB = {
 		}, -- [21]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["session"] = 1336,
 			["time"] = "2020/07/26 13:26:58",
+			["session"] = 1336,
 			["counter"] = 2,
 		}, -- [22]
 		{
@@ -441,21 +441,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [55]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'AttemptToSaveBindings()'.",
-			["time"] = "2020/07/24 16:00:07",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `AttemptToSaveBindings'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:2062: in function `SetSetBindings'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:544: in function `InitCore'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:281: in function `func'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:982: in function `OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>",
-			["session"] = 1415,
-			["counter"] = 8,
-		}, -- [56]
-		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'whoaThickFrames_Classic' tried to call the protected function 'CompactRaidFrame3:ClearAllPoints()'.",
 			["time"] = "2020/07/27 15:37:48",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `ClearAllPoints'\nInterface\\FrameXML\\FlowContainer.lua:157: in function `FlowContainer_DoLayout'\nInterface\\FrameXML\\FlowContainer.lua:17: in function `FlowContainer_ResumeUpdates'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:185: in function `CompactRaidFrameContainer_LayoutFrames'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:130: in function `CompactRaidFrameContainer_TryUpdate'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:57: in function `CompactRaidFrameContainer_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
 			["session"] = 1416,
 			["counter"] = 1,
-		}, -- [57]
+		}, -- [56]
 		{
 			["message"] = "Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.8.0 - by Slarti on EU-Blackhand.lua:1117: attempt to call global 'TEXT' (a nil value)",
 			["time"] = "2020/07/27 20:36:04",
@@ -463,7 +455,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.8.0 - by Slarti on EU-Blackhand.lua:1117: in function `ATSWFilterFrame_LoadInvSlots'\nInterface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.8.0 - by Slarti on EU-Blackhand.lua:1112: in function `initFunction'\nInterface\\FrameXML\\UIDropDownMenu.lua:79: in function `UIDropDownMenu_Initialize'\nInterface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.8.0 - by Slarti on EU-Blackhand.lua:1099: in function `ATSWInvSlotDropDown_OnLoad'\n[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
 			["session"] = 1422,
 			["counter"] = 1,
-		}, -- [58]
+		}, -- [57]
 		{
 			["message"] = "Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.8.0 - by Slarti on EU-Blackhand.lua:1072: attempt to call global 'TEXT' (a nil value)",
 			["time"] = "2020/07/27 20:36:04",
@@ -471,7 +463,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.8.0 - by Slarti on EU-Blackhand.lua:1072: in function `ATSWFilterFrame_LoadSubClasses'\nInterface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.8.0 - by Slarti on EU-Blackhand.lua:1067: in function `initFunction'\nInterface\\FrameXML\\UIDropDownMenu.lua:79: in function `UIDropDownMenu_Initialize'\nInterface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.8.0 - by Slarti on EU-Blackhand.lua:1054: in function `ATSWSubClassDropDown_OnLoad'\n[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
 			["session"] = 1422,
 			["counter"] = 1,
-		}, -- [59]
+		}, -- [58]
 		{
 			["message"] = "Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.8.0 - by Slarti on EU-Blackhand.lua:371: attempt to call global 'IsTradeSkillLinked' (a nil value)",
 			["time"] = "2020/07/27 20:36:26",
@@ -479,7 +471,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw-ATSW v0.8.0 - by Slarti on EU-Blackhand.lua:371: in function `ATSWFrame_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:338: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 1422,
 			["counter"] = 1,
-		}, -- [60]
+		}, -- [59]
 		{
 			["message"] = "[string \"ATSWRankFrame:OnLoad\"]:1: attempt to index global 'this' (a nil value)",
 			["time"] = "2020/07/27 20:37:33",
@@ -487,7 +479,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
 			["session"] = 1423,
 			["counter"] = 1,
-		}, -- [61]
+		}, -- [60]
 		{
 			["message"] = "[string \"ATSWSkill1:OnLoad\"]:1: attempt to index global 'this' (a nil value)",
 			["time"] = "2020/07/27 20:37:33",
@@ -495,7 +487,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
 			["session"] = 1423,
 			["counter"] = 1,
-		}, -- [62]
+		}, -- [61]
 		{
 			["message"] = "[string \"ATSWSkill2:OnLoad\"]:1: attempt to index global 'this' (a nil value)",
 			["time"] = "2020/07/27 20:37:33",
@@ -503,7 +495,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
 			["session"] = 1423,
 			["counter"] = 1,
-		}, -- [63]
+		}, -- [62]
 		{
 			["message"] = "[string \"ATSWSkill3:OnLoad\"]:1: attempt to index global 'this' (a nil value)",
 			["time"] = "2020/07/27 20:37:33",
@@ -511,7 +503,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
 			["session"] = 1423,
 			["counter"] = 1,
-		}, -- [64]
+		}, -- [63]
 		{
 			["message"] = "[string \"ATSWSkill4:OnLoad\"]:1: attempt to index global 'this' (a nil value)",
 			["time"] = "2020/07/27 20:37:33",
@@ -519,7 +511,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
 			["session"] = 1423,
 			["counter"] = 1,
-		}, -- [65]
+		}, -- [64]
 		{
 			["message"] = "[string \"ATSWSkill5:OnLoad\"]:1: attempt to index global 'this' (a nil value)",
 			["time"] = "2020/07/27 20:37:33",
@@ -527,7 +519,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
 			["session"] = 1423,
 			["counter"] = 1,
-		}, -- [66]
+		}, -- [65]
 		{
 			["message"] = "[string \"ATSWSkill6:OnLoad\"]:1: attempt to index global 'this' (a nil value)",
 			["time"] = "2020/07/27 20:37:33",
@@ -535,7 +527,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
 			["session"] = 1423,
 			["counter"] = 1,
-		}, -- [67]
+		}, -- [66]
 		{
 			["message"] = "[string \"ATSWSkill7:OnLoad\"]:1: attempt to index global 'this' (a nil value)",
 			["time"] = "2020/07/27 20:37:33",
@@ -543,7 +535,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
 			["session"] = 1423,
 			["counter"] = 1,
-		}, -- [68]
+		}, -- [67]
 		{
 			["message"] = "[string \"ATSWSkill8:OnLoad\"]:1: attempt to index global 'this' (a nil value)",
 			["time"] = "2020/07/27 20:37:33",
@@ -551,7 +543,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
 			["session"] = 1423,
 			["counter"] = 1,
-		}, -- [69]
+		}, -- [68]
 		{
 			["message"] = "[string \"ATSWSkill9:OnLoad\"]:1: attempt to index global 'this' (a nil value)",
 			["time"] = "2020/07/27 20:37:33",
@@ -559,13 +551,13 @@ BugGrabberDB = {
 			["stack"] = "[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
 			["session"] = 1423,
 			["counter"] = 1,
-		}, -- [70]
+		}, -- [69]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["time"] = "2020/07/27 20:37:46",
 			["session"] = 1423,
+			["time"] = "2020/07/27 20:37:46",
 			["counter"] = 4,
-		}, -- [71]
+		}, -- [70]
 		{
 			["message"] = "...dOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons-2.1.0.lua:548: attempt to index field '?' (a nil value)",
 			["time"] = "2020/07/27 21:40:22",
@@ -573,7 +565,7 @@ BugGrabberDB = {
 			["stack"] = "...dOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons-2.1.0.lua:548: in main chunk",
 			["session"] = 1425,
 			["counter"] = 1,
-		}, -- [72]
+		}, -- [71]
 		{
 			["message"] = "...dOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons-2.1.0.lua:370: attempt to call field 'Options' (a nil value)",
 			["time"] = "2020/07/27 21:40:22",
@@ -581,13 +573,7 @@ BugGrabberDB = {
 			["stack"] = "...dOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons-2.1.0.lua:370: in function `UpdateSaved'\n...dOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons-2.1.0.lua:386: in function <...dOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:382>",
 			["session"] = 1425,
 			["counter"] = 1,
-		}, -- [73]
-		{
-			["message"] = "(null)",
-			["time"] = "2020/07/24 16:00:06",
-			["session"] = 1425,
-			["counter"] = 15,
-		}, -- [74]
+		}, -- [72]
 		{
 			["message"] = "...dOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons-2.1.0.lua:395: attempt to call field 'RegisterExternalUFPrebuilt' (a nil value)",
 			["time"] = "2020/07/27 21:40:30",
@@ -595,7 +581,7 @@ BugGrabberDB = {
 			["stack"] = "...dOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons-2.1.0.lua:395: in function <...dOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:382>",
 			["session"] = 1425,
 			["counter"] = 2,
-		}, -- [75]
+		}, -- [73]
 		{
 			["message"] = "...dOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons-2.1.0.lua:552: attempt to call field 'OnMouseUp' (a nil value)",
 			["time"] = "2020/07/27 21:40:37",
@@ -603,7 +589,7 @@ BugGrabberDB = {
 			["stack"] = "...dOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons-2.1.0.lua:552: in function <...dOns\\SimpleRaidTargetIcons\\SimpleRaidTargetIcons.lua:552>",
 			["session"] = 1425,
 			["counter"] = 5,
-		}, -- [76]
+		}, -- [74]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Experience.lua:124: attempt to perform arithmetic on global 'petPercent' (a nil value)",
 			["time"] = "2020/07/28 08:43:12",
@@ -611,28 +597,28 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Experience.lua:124: in function <Interface\\AddOns\\xVermin\\Experience.lua:87>",
 			["session"] = 1427,
 			["counter"] = 1,
-		}, -- [77]
+		}, -- [75]
 		{
 			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'Details' tried to call the protected function 'AcceptBattlefieldPort()'.",
 			["time"] = "2020/07/28 10:12:16",
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `AcceptBattlefieldPort'\nInterface\\FrameXML\\StaticPopup.lua:689: in function `OnAccept'\nInterface\\FrameXML\\StaticPopup.lua:5002: in function `StaticPopup_OnClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 1435,
 			["counter"] = 1,
-		}, -- [78]
+		}, -- [76]
 		{
 			["message"] = "Interface\\AddOns\\PerfectRaid\\Dongle.lua:363: Attempt to register unknown event \"UNIT_HEAL_PREDICTION\"",
 			["time"] = "2020/07/28 10:14:02",
 			["stack"] = "Interface\\AddOns\\PerfectRaid\\Dongle.lua:456: in function `TriggerMessage'\nInterface\\AddOns\\PerfectRaid\\PerfectRaid_Config.lua:151: in function `SaveOptions'\nInterface\\AddOns\\PerfectRaid\\PerfectRaid_Config.lua:123: in function <Interface\\AddOns\\PerfectRaid\\PerfectRaid_Config.lua:123>",
 			["session"] = 1435,
 			["counter"] = 1,
-		}, -- [79]
+		}, -- [77]
 		{
 			["message"] = "Interface\\AddOns\\PerfectRaid\\Dongle.lua:378: Attempt to unregister unknown event \"UNIT_HEAL_PREDICTION\"",
 			["time"] = "2020/07/28 10:14:10",
 			["stack"] = "Interface\\AddOns\\PerfectRaid\\Dongle.lua:456: in function `TriggerMessage'\nInterface\\AddOns\\PerfectRaid\\PerfectRaid_Config.lua:151: in function `SaveOptions'\nInterface\\AddOns\\PerfectRaid\\PerfectRaid_Config.lua:123: in function <Interface\\AddOns\\PerfectRaid\\PerfectRaid_Config.lua:123>",
 			["session"] = 1435,
 			["counter"] = 1,
-		}, -- [80]
+		}, -- [78]
 		{
 			["message"] = "...ns\\TellMeWhen\\Components\\Core\\Common\\PlayerNames.lua:96: attempt to concatenate field '?' (a nil value)",
 			["time"] = "2020/07/28 10:14:11",
@@ -640,6 +626,44 @@ BugGrabberDB = {
 			["stack"] = "...ns\\TellMeWhen\\Components\\Core\\Common\\PlayerNames.lua:96: in function `?'\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:119: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:119>\n[C]: ?\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:29: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:64: in function `Fire'\n...ce\\AddOns\\Details\\Libs\\AceEvent-3.0\\AceEvent-3.0-4.lua:120: in function <...ce\\AddOns\\Details\\Libs\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
 			["session"] = 1435,
 			["counter"] = 4,
+		}, -- [79]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Experience.lua:30: attempt to concatenate local 'nxp' (a nil value)",
+			["time"] = "2020/07/28 16:43:37",
+			["locals"] = "_ = \"Hunter\"\nclass = \"HUNTER\"\n_ = 3\nr = nil\ng = nil\nb = nil\nnxp = nil\nhmmm = nil\ngained = nil\nnum = nil\nsegment = nil\nrelperc = nil\nr1 = nil\nr2 = nil\ng1 = nil\ng2 = nil\nb1 = nil\nb2 = nil\nf = nil\nPetExpFrame = nil\nPlayerExpFrame = nil\npercent = nil\nrested = nil\noutput = nil\npcxp = nil\npmxp = nil\nppercent = nil\ncmtk = nil\ncxp = 0\nmxp = 0\n(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = \"of -> cxp: 0\"\n(*temporary) = \"nxp: \"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to concatenate local 'nxp' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Experience.lua:30: in main chunk",
+			["session"] = 1446,
+			["counter"] = 2,
+		}, -- [80]
+		{
+			["message"] = "(null)",
+			["session"] = 1446,
+			["time"] = "2020/07/24 16:00:06",
+			["counter"] = 21,
 		}, -- [81]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Experience.lua:114: attempt to call field 'text' (a table value)",
+			["time"] = "2020/07/28 16:57:56",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\xVermin\\Experience.lua:114: in function <Interface\\AddOns\\xVermin\\Experience.lua:95>",
+			["session"] = 1451,
+			["counter"] = 1,
+		}, -- [82]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'CompactRaidFrame1:ClearAllPoints()'.",
+			["time"] = "2020/07/28 17:21:11",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `ClearAllPoints'\nInterface\\FrameXML\\FlowContainer.lua:157: in function `FlowContainer_DoLayout'\nInterface\\FrameXML\\FlowContainer.lua:17: in function `FlowContainer_ResumeUpdates'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:185: in function `CompactRaidFrameContainer_LayoutFrames'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:130: in function `CompactRaidFrameContainer_TryUpdate'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:57: in function `CompactRaidFrameContainer_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
+			["session"] = 1456,
+			["counter"] = 1,
+		}, -- [83]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'AttemptToSaveBindings()'.",
+			["time"] = "2020/07/24 16:00:07",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `AttemptToSaveBindings'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:2062: in function `SetSetBindings'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:544: in function `InitCore'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:281: in function `func'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:982: in function `OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>",
+			["session"] = 1462,
+			["counter"] = 9,
+		}, -- [84]
 	},
 }
