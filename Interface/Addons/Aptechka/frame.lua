@@ -94,11 +94,14 @@ end
 
 local formatMissingHealth = function(text, mh)
 	if mh < 1000 then
-		text:SetFormattedText("-%d", mh)
+		-- text:SetFormattedText("-%d", mh)
+		text:SetFormattedText("%d", mh)
 	elseif mh < 10000 then
-		text:SetFormattedText("-%.1fk", mh / 1e3)
+		-- text:SetFormattedText("-%.1fk", mh / 1e3)
+		text:SetFormattedText("%.1fk", mh / 1e3)
 	else
-		text:SetFormattedText("-%.0fk", mh / 1e3)
+		-- text:SetFormattedText("-%.0fk", mh / 1e3)
+		text:SetFormattedText("%.0fk", mh / 1e3)
 	end
 end
 
@@ -981,7 +984,8 @@ local SetJob_Text1 = function(self, job, state)
 end
 local SetJob_Text2 = function(self, job, state) -- text2 is always green
 	if job.healthtext then
-		formatMissingHealth(self, state.vHealthMax - state.vHealth)
+		-- formatMissingHealth(self, state.vHealthMax - state.vHealth)
+		formatMissingHealth(self, state.vHealth)
 	elseif job.inchealtext then
 		self:SetFormattedText("+%d", state.vIncomingHeal)
 	elseif job.nametext then

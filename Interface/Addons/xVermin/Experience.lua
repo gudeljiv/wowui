@@ -68,68 +68,91 @@ cmxg.text:SetFont(config.font.arial, 10, "NONE")
 cmxg.text:SetPoint("LEFT", CustomContainer_Combat, "RIGHT", 3, 0)
 cmxg:Hide()
 
+cpxf = CreateFrame("Frame", "CustomContainer_CombatXPcurrent", CustomContainer_Combat)
+cpxf:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 2)
+cpxf:SetWidth(10)
+cpxf:SetHeight(10)
+cpxf.text = cpxf:CreateFontString(nil, "ARTWORK")
+cpxf.text:SetFont(config.font.arial, 8, "NONE")
+cpxf.text:SetPoint("TOPRIGHT", CustomContainer_Combat, "BOTTOMRIGHT", 0, -3)
+
 local function UpdateExperience(self, event, isInitialLogin, isReloadingUi)
-	if event == "PLAYER_ENTERING_WORLD" and (isInitialLogin or isReloadingUi) then
-		cxp = UnitXP("player")
-		mxp = UnitXPMax("player")
-	end
-
-	nxp = UnitXP("player")
-
-	------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	--- MOBS TO KILL -------------------------------------------------------------------------------------------------------------------------------------------------
-	------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	gained = nxp - cxp
-
-	if (gained > 0) then
-		hmmm = math.ceil((mxp - nxp) / gained)
-		cmtk.text:SetText(hmmm)
-		cmtk.text:SetTextColor(0.058, 0.901, 0.466, 1)
-		cmtk:Show()
-		cmxg.text:SetText("+" .. gained .. " (XP)")
-		cmxg.text:SetTextColor(0.058, 0.901, 0.466, 1)
-		UIFrameFadeIn(cmxg, 1, 0, 1)
-		C_Timer.After(
-			3,
-			function()
-				UIFrameFadeOut(cmxg, 1, 1, 0)
-			end
-		)
-	end
-
-	------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	--- PLAYER EXPERIENCE --------------------------------------------------------------------------------------------------------------------------------------------
-	------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	percent = floor((cxp / mxp) * 100)
-	_, _, rested = GetRestState()
-
-	output = "player (" .. UnitLevel("player") .. "):"
-	if rested == 2 then
-		output = output .. " [rested x2] "
-	end
-	output = output .. "\n" .. cxp .. " / " .. mxp .. " (" .. percent .. "%)"
-	PlayerExpFrame.text:SetText(output)
-	r, g, b = ColorGradient(percent / 100, 1, 0, 0, 1, 1, 0, 0, 1, 0)
-	PlayerExpFrame.text:SetTextColor(r, g, b, 1)
-
-	------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	--- PET EXPERIENCE -----------------------------------------------------------------------------------------------------------------------------------------------
-	------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	if class == "HUNTER" then
-		if UnitExists("pet") then
-			pcxp, pmxp = GetPetExperience()
-			ppercent = floor((pcxp / pmxp) * 100)
-			output = "pet (" .. UnitLevel("pet") .. "):\n" .. pcxp .. " / " .. pmxp .. " (" .. ppercent .. "%)"
-			PetExpFrame.text:SetText(output)
-			r, g, b = ColorGradient(ppercent / 100, 1, 0, 0, 1, 1, 0, 0, 1, 0)
-			PetExpFrame.text:SetTextColor(r, g, b, 1)
-			PetExpFrame:Show()
-		else
-			PetExpFrame:Hide()
+	if UnitLevel("player") < MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] then
+		if event == "PLAYER_ENTERING_WORLD" and (isInitialLogin or isReloadingUi) then
+			cxp = UnitXP("player")
+			mxp = UnitXPMax("player")
 		end
-	end
 
-	cxp = nxp
+		nxp = UnitXP("player")
+
+		------------------------------------------------------------------------------------------------------------------------------------------------------------------
+		--- MOBS TO KILL -------------------------------------------------------------------------------------------------------------------------------------------------
+		------------------------------------------------------------------------------------------------------------------------------------------------------------------
+		gained = nxp - cxp
+		cpxf.text:SetText((mxp - nxp) .. " (XP)")
+		cpxf.text:SetTextColor(0.058, 0.901, 0.466, 1)
+
+		if (gained > 0) then
+			hmmm = math.ceil((mxp - nxp) / gained)
+			cmtk.text:SetText(hmmm)
+			cmtk.text:SetTextColor(0.058, 0.901, 0.466, 1)
+			cmtk:Show()
+			cmxg.text:SetText("+" .. gained .. " (XP)")
+			cmxg.text:SetTextColor(0.058, 0.901, 0.466, 1)
+			UIFrameFadeIn(cmxg, 1, 0, 1)
+			C_Timer.After(
+				3,
+				function()
+					UIFrameFadeOut(cmxg, 1, 1, 0)
+				end
+			)
+		end
+
+		------------------------------------------------------------------------------------------------------------------------------------------------------------------
+		--- PLAYER EXPERIENCE --------------------------------------------------------------------------------------------------------------------------------------------
+		------------------------------------------------------------------------------------------------------------------------------------------------------------------
+		percent = floor((nxp / mxp) * 100)
+		_, _, rested = GetRestState()
+
+		output = "player (" .. UnitLevel("player") .. "):"
+		if rested == 2 then
+			output = output .. " [rested x2] "
+		end
+		output = output .. "\n" .. nxp .. " / " .. mxp .. " (" .. percent .. "%)"
+		PlayerExpFrame.text:SetText(output)
+		r, g, b = ColorGradient(percent / 100, 1, 0, 0, 1, 1, 0, 0, 1, 0)
+		PlayerExpFrame.text:SetTextColor(r, g, b, 1)
+
+		------------------------------------------------------------------------------------------------------------------------------------------------------------------
+		--- PET EXPERIENCE -----------------------------------------------------------------------------------------------------------------------------------------------
+		------------------------------------------------------------------------------------------------------------------------------------------------------------------
+		if class == "HUNTER" then
+			if UnitExists("pet") then
+				C_Timer.After(
+					0.5,
+					function()
+						pcxp, pmxp = GetPetExperience()
+						ppercent = floor((pcxp / pmxp) * 100)
+						output = "pet (" .. UnitLevel("pet") .. "):\n" .. pcxp .. " / " .. pmxp .. " (" .. ppercent .. "%)"
+						PetExpFrame.text:SetText(output)
+						r, g, b = ColorGradient(ppercent / 100, 1, 0, 0, 1, 1, 0, 0, 1, 0)
+						PetExpFrame.text:SetTextColor(r, g, b, 1)
+						PetExpFrame:Show()
+					end
+				)
+			else
+				PetExpFrame:Hide()
+			end
+		end
+
+		cxp = nxp
+	else
+		PlayerExpFrame:Hide()
+		PetExpFrame:Hide()
+		cmtk:Hide()
+		cmxg:Hide()
+		cpxf:Hide()
+	end
 end
 
 local f = CreateFrame("Frame")

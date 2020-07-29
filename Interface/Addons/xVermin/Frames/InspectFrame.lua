@@ -1,8 +1,4 @@
 local function BorderItemInspectSlots(counter)
-	if counter > 2 then
-		return
-	end
-
 	local itemLink, r, g, b, itemLink
 
 	for i, v in pairs(
@@ -61,22 +57,14 @@ addonLoadedFrame:SetScript(
 				"Show",
 				function()
 					local counter = 0
-					C_Timer.NewTicker(
+					C_Timer.After(
 						0.1,
 						function()
-							counter = counter + 1
 							BorderItemInspectSlots(counter)
 						end
 					)
 				end
 			)
-			-- hooksecurefunc(
-			-- 	InspectFrame,
-			-- 	"Hide",
-			-- 	function()
-			-- 		print("close")
-			-- 	end
-			-- )
 			InspectFrameHooked = true
 		end
 	end

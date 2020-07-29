@@ -70,7 +70,7 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
-		["Vermin - Golemagg"] = {
+		["Korupcija - Stonespine"] = {
 			["minimap"] = {
 				["shown"] = false,
 				["hide"] = true,
@@ -78,14 +78,18 @@ AtlasLootClassicDB = {
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
-					"ScarletMonasteryCathedral", -- [2]
+					"Ragefire", -- [2]
 					nil, -- [3]
 					1, -- [4]
 					0, -- [5]
 				},
 			},
 		},
-		["Mxyzptlk - Golemagg"] = {
+		["Kosturko - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -118,11 +122,7 @@ AtlasLootClassicDB = {
 				},
 			},
 		},
-		["Kosturko - Golemagg"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
+		["Mxyzptlk - Golemagg"] = {
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -178,7 +178,7 @@ AtlasLootClassicDB = {
 		},
 		["Elohssa - Stonespine"] = {
 		},
-		["Korupcija - Stonespine"] = {
+		["Vermin - Golemagg"] = {
 			["minimap"] = {
 				["shown"] = false,
 				["hide"] = true,
@@ -186,7 +186,7 @@ AtlasLootClassicDB = {
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
-					"Ragefire", -- [2]
+					"ScarletMonasteryCathedral", -- [2]
 					nil, -- [3]
 					1, -- [4]
 					0, -- [5]

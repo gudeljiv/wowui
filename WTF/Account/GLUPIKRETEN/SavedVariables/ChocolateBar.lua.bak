@@ -19,11 +19,11 @@ ChocolateBarDB = {
 		["Pitchwise - Golemagg"] = "Default",
 		["Greenwise - Golemagg"] = "Default",
 		["Pitchwise - Genesis"] = "Default",
-		["Vermin - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
 		["Pepecocorita - Genesis"] = "Default",
 		["Kosturko - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
 		["Elohssa - Stonespine"] = "Default",
 		["Ozrencic - Golemagg"] = "Default",
 		["Whatevs - Stonespine"] = "Default",
@@ -31,6 +31,9 @@ ChocolateBarDB = {
 	["profiles"] = {
 		["Default"] = {
 			["locked"] = false,
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -60,9 +63,6 @@ ChocolateBarDB = {
 					["index"] = 1,
 					["barOffx"] = -88.3325424194336,
 				},
-			},
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
 			},
 			["moveFrames"] = false,
 			["objSettings"] = {
@@ -306,11 +306,11 @@ ChocolateBarDB = {
 	},
 }
 CB_PlayedTime = {
-	["Greenwise-"] = {
-		["total"] = 79871,
-	},
 	["Korupcija-"] = {
 		["total"] = 21359,
+	},
+	["Greenwise-"] = {
+		["total"] = 79871,
 	},
 	["Pitchwise-"] = {
 		["total"] = 390,
@@ -324,8 +324,8 @@ CB_PlayedTime = {
 	["Elohssa-"] = {
 		["total"] = 3552,
 	},
-	["Verminz-"] = {
-		["total"] = 311368,
+	["Mxzq-"] = {
+		["total"] = 170138,
 	},
 	["Paydo-"] = {
 		["total"] = 18945,
@@ -348,7 +348,7 @@ CB_PlayedTime = {
 	["Dotwise-"] = {
 		["total"] = 3924,
 	},
-	["Mxzq-"] = {
-		["total"] = 166766,
+	["Verminz-"] = {
+		["total"] = 311368,
 	},
 }

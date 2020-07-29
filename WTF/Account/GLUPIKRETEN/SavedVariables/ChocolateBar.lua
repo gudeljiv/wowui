@@ -16,8 +16,8 @@ ChocolateBarDB = {
 		["Verminz - Genesis"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
 		["Elohssa - Stonespine"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
 		["Pitchwise - Genesis"] = "Default",
 		["Kosturko - Golemagg"] = "Default",
 		["Pepecocorita - Genesis"] = "Default",
@@ -30,11 +30,6 @@ ChocolateBarDB = {
 	["addonVersion"] = "@project-version@",
 	["profiles"] = {
 		["Default"] = {
-			["locked"] = false,
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -54,6 +49,20 @@ ChocolateBarDB = {
 					["index"] = 1,
 					["width"] = 147,
 				},
+			},
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["b"] = 0,
+					["g"] = 0,
+					["r"] = 0,
+				},
+				["textureName"] = "None",
 			},
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
@@ -286,16 +295,7 @@ ChocolateBarDB = {
 			["textOffset"] = 2,
 			["height"] = 20,
 			["forceColor"] = false,
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["b"] = 0,
-					["g"] = 0,
-					["r"] = 0,
-				},
-				["textureName"] = "None",
-			},
+			["locked"] = false,
 			["textColor"] = {
 				["a"] = 1,
 				["r"] = 1,
@@ -306,11 +306,11 @@ ChocolateBarDB = {
 	},
 }
 CB_PlayedTime = {
-	["Mxzq-"] = {
-		["total"] = 167107,
+	["Verminz-"] = {
+		["total"] = 311368,
 	},
-	["Greenwise-"] = {
-		["total"] = 79871,
+	["Korupcija-"] = {
+		["total"] = 21359,
 	},
 	["Dotwise-"] = {
 		["total"] = 3924,
@@ -324,8 +324,8 @@ CB_PlayedTime = {
 	["Elohssa-"] = {
 		["total"] = 3552,
 	},
-	["Verminz-"] = {
-		["total"] = 311368,
+	["Mxzq-"] = {
+		["total"] = 170230,
 	},
 	["Paydo-"] = {
 		["total"] = 18945,
@@ -348,7 +348,7 @@ CB_PlayedTime = {
 	["Pitchwise-"] = {
 		["total"] = 390,
 	},
-	["Korupcija-"] = {
-		["total"] = 21359,
+	["Greenwise-"] = {
+		["total"] = 79871,
 	},
 }

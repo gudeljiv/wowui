@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 1465,
+	["session"] = 1483,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -665,5 +665,21 @@ BugGrabberDB = {
 			["session"] = 1462,
 			["counter"] = 9,
 		}, -- [84]
+		{
+			["message"] = "Interface\\AddOns\\Aptechka\\frame.lua:98: attempt to index local 'mh' (a number value)",
+			["time"] = "2020/07/29 12:16:19",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\Aptechka\\frame.lua:98: in function <Interface\\AddOns\\Aptechka\\frame.lua:95>\nInterface\\AddOns\\Aptechka\\frame.lua:988: in function `SetJob'\nInterface\\AddOns\\Aptechka\\Aptechka-1.13.54.lua:2469: in function <Interface\\AddOns\\Aptechka\\Aptechka.lua:2403>\nInterface\\AddOns\\Aptechka\\Aptechka-1.13.54.lua:2482: in function <Interface\\AddOns\\Aptechka\\Aptechka.lua:2479>\nInterface\\AddOns\\Aptechka\\Aptechka-1.13.54.lua:1136: in function `?'\nInterface\\AddOns\\Aptechka\\Aptechka-1.13.54.lua:8: in function <Interface\\AddOns\\Aptechka\\Aptechka.lua:7>",
+			["session"] = 1470,
+			["counter"] = 46,
+		}, -- [85]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Experience.lua:92: attempt to call method 'SetText' (a nil value)",
+			["time"] = "2020/07/29 12:27:08",
+			["locals"] = "self = <unnamed> {\n 0 = <userdata>\n}\nevent = \"UNIT_PET\"\nisInitialLogin = \"player\"\nisReloadingUi = nil\n(*temporary) = nil\n(*temporary) = CustomContainer_CombatXPcurrent {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n(*temporary) = \"982 (XP)\"\n(*temporary) = \"attempt to call method 'SetText' (a nil value)\"\ncxp = 982\nmxp = 34000\nnxp = 982\ngained = 0\nhmmm = nil\ncmtk = CustomContainer_CombatMobsToKill {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\npercent = nil\n_ = 3\nrested = nil\noutput = nil\nPlayerExpFrame = PlayerExpFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nr = nil\ng = nil\nb = nil\nColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Experience.lua:7\nclass = \"HUNTER\"\npcxp = nil\npmxp = nil\nppercent = nil\nPetExpFrame = PetExpFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Experience.lua:92: in function <Interface\\AddOns\\xVermin\\Experience.lua:79>",
+			["session"] = 1472,
+			["counter"] = 3,
+		}, -- [86]
 	},
 }
