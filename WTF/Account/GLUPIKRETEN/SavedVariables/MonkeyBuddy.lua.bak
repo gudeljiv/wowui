@@ -24,11 +24,11 @@ MonkeyBuddyConfig = {
 		["m_bDismissed"] = true,
 		["m_bDailies"] = false,
 	},
-	["Spija"] = {
-		["m_bDismissed"] = true,
+	["Vermins"] = {
+		["m_bDismissed"] = false,
 		["m_bDailies"] = false,
 	},
-	["Verminz"] = {
+	["Nacova"] = {
 		["m_bDismissed"] = true,
 		["m_bDailies"] = false,
 	},
@@ -36,7 +36,7 @@ MonkeyBuddyConfig = {
 		["m_bDismissed"] = true,
 		["m_bDailies"] = false,
 	},
-	["Nacova"] = {
+	["Verminz"] = {
 		["m_bDismissed"] = true,
 		["m_bDailies"] = false,
 	},
@@ -52,8 +52,8 @@ MonkeyBuddyConfig = {
 		["m_bDismissed"] = true,
 		["m_bDailies"] = false,
 	},
-	["Vermins"] = {
-		["m_bDismissed"] = false,
+	["Spija"] = {
+		["m_bDismissed"] = true,
 		["m_bDailies"] = false,
 	},
 	["Blooq"] = {

@@ -8,14 +8,14 @@ SkilletDB = {
 	["global"] = {
 		["customVersion"] = 1,
 		["MissingVendorItems"] = {
-			[52188] = "Jeweler's Setting",
-			[38682] = "Enchanting Vellum",
 			[3857] = "Coal",
-			[30817] = "Simple Flour",
 			[4539] = "Goldenbark Apple",
-			[4399] = "Wooden Stock",
-			[17035] = "Stranglethorn Seed",
+			[52188] = "Jeweler's Setting",
 			[17034] = "Maple Seed",
+			[17035] = "Stranglethorn Seed",
+			[4399] = "Wooden Stock",
+			[38682] = "Enchanting Vellum",
+			[30817] = "Simple Flour",
 		},
 		["itemRecipeSource"] = {
 			[2840] = {
@@ -70,9 +70,13 @@ SkilletDB = {
 	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
-			["shoppingListLocation_point"] = "CENTER",
+			["FixBugs"] = true,
+			["ignoreListLocation_point"] = "CENTER",
+			["shoppingListLocation_scale"] = 1,
+			["standaloneQueueLocation_x"] = -280.833190917969,
+			["ignoreListLocation_x"] = 136.170593261719,
 			["plugins"] = {
-				["ATL"] = {
+				["AUC"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
@@ -88,46 +92,45 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["AUC"] = {
-					["buyFactor"] = 4,
-					["markup"] = 1.05,
+				["beancounter"] = {
 					["enabled"] = true,
+					["days"] = 30,
 				},
 				["AHDB"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["beancounter"] = {
+				["ATL"] = {
+					["buyFactor"] = 4,
+					["markup"] = 1.05,
 					["enabled"] = true,
-					["days"] = 30,
 				},
 			},
-			["tradeSkillLocation_x"] = 181.063690185547,
-			["tradeSkillLocation_point"] = "TOP",
-			["tradeSkillLocation_y"] = -82.304443359375,
-			["transparency"] = 0.95,
-			["tradeSkillLocation_scale"] = 1,
-			["FixBugs"] = true,
-			["standaloneQueueLocation_x"] = -280.833190917969,
-			["WarnLog"] = true,
-			["ignoreListLocation_x"] = 136.170593261719,
 			["ignoreListLocation_scale"] = 1,
 			["ignoreListLocation_y"] = 93.6171569824219,
-			["standaloneQueueLocation_point"] = "BOTTOM",
-			["ignoreListLocation_point"] = "CENTER",
+			["tradeSkillLocation_x"] = 181.063690185547,
 			["shoppingListLocation_x"] = 158.235656738281,
-			["shoppingListLocation_scale"] = 1,
+			["tradeSkillLocation_point"] = "TOP",
 			["standaloneQueueLocation_y"] = 247.500411987305,
 			["enhanced_recipe_display"] = true,
+			["tradeSkillLocation_scale"] = 1,
+			["transparency"] = 0.95,
 			["shoppingListLocation_y"] = 157.881286621094,
 			["standaloneQueueLocation_scale"] = 1,
+			["standaloneQueueLocation_point"] = "BOTTOM",
+			["shoppingListLocation_point"] = "CENTER",
+			["tradeSkillLocation_y"] = -82.304443359375,
+			["WarnLog"] = true,
 		},
 		["Mxyz - Golemagg"] = {
+			["FixBugs"] = true,
+			["WarnLog"] = true,
 			["plugins"] = {
-				["beancounter"] = {
+				["ATL"] = {
+					["buyFactor"] = 4,
+					["markup"] = 1.05,
 					["enabled"] = true,
-					["days"] = 30,
 				},
 				["BBG"] = {
 					["enabled"] = true,
@@ -140,7 +143,7 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["ATL"] = {
+				["AUC"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
@@ -150,21 +153,17 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["AUC"] = {
-					["buyFactor"] = 4,
-					["markup"] = 1.05,
+				["beancounter"] = {
 					["enabled"] = true,
+					["days"] = 30,
 				},
 			},
-			["FixBugs"] = true,
-			["WarnLog"] = true,
 		},
 		["Mxyzptlk - Golemagg"] = {
 			["plugins"] = {
-				["AUC"] = {
-					["buyFactor"] = 4,
-					["markup"] = 1.05,
+				["beancounter"] = {
 					["enabled"] = true,
+					["days"] = 30,
 				},
 				["BBG"] = {
 					["enabled"] = true,
@@ -177,16 +176,17 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["beancounter"] = {
+				["ATL"] = {
+					["buyFactor"] = 4,
+					["markup"] = 1.05,
 					["enabled"] = true,
-					["days"] = 30,
 				},
 				["AHDB"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["ATL"] = {
+				["AUC"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
@@ -224,22 +224,20 @@ SkilletDB = {
 					[6948] = 1,
 				},
 				["Mxzq"] = {
-					[2836] = 8,
-					[2775] = 3,
+					[12467] = 1,
 					[6948] = 1,
 					[20558] = 3,
-					[1708] = 40,
-					[2771] = 16,
-					[11967] = 1,
-					[3355] = 4,
+					[1708] = 38,
+					[2771] = 22,
+					[2772] = 9,
 					[2840] = 35,
-					[14133] = 1,
-					[3771] = 59,
-					[2450] = 2,
-					[3356] = 11,
-					[3030] = 2642,
-					[2901] = 1,
 					[929] = 7,
+					[2901] = 1,
+					[3771] = 56,
+					[3030] = 1914,
+					[2775] = 6,
+					[3385] = 2,
+					[1205] = 1,
 				},
 				["Mxyzptlk"] = {
 				},
@@ -265,16 +263,24 @@ SkilletDB = {
 			},
 			["auctionData"] = {
 				["Mxyz"] = {
-					[10978] = 1,
+					[4306] = 3,
+					[3369] = 2,
 					[11138] = 1,
+					[3356] = 6,
+					[14125] = 1,
+					[1705] = 1,
+					[1529] = 1,
 					[10998] = 1,
 					[11135] = 21,
-					[11083] = 2,
+					[15517] = 1,
+					[2452] = 1,
+					[9767] = 1,
+					[2592] = 46,
+					[2836] = 6,
 				},
 				["Mxzq"] = {
-					[14571] = 1,
 					[3575] = 80,
-					[2836] = 35,
+					[14571] = 1,
 				},
 				["Mxyzptlk"] = {
 				},
@@ -315,21 +321,14 @@ SkilletDB = {
 				["Mxyzptlk"] = {
 				},
 			},
-			["subClass"] = {
+			["inventoryData"] = {
 				["Mxyz"] = {
 				},
 				["Mxzq"] = {
-					[2575] = {
-						[2840] = "Trade Goods",
-						[2841] = "Trade Goods",
-						["name"] = {
-							["Trade Goods"] = 5,
-						},
-						[3575] = "Trade Goods",
-						["selected"] = "None",
-						[3576] = "Trade Goods",
-						[2842] = "Trade Goods",
-					},
+					[2771] = 22,
+					[2772] = 9,
+					[2840] = 35,
+					[2775] = 6,
 				},
 				["Mxyzptlk"] = {
 				},
@@ -352,13 +351,21 @@ SkilletDB = {
 				["Mxyzptlk"] = {
 				},
 			},
-			["inventoryData"] = {
+			["subClass"] = {
 				["Mxyz"] = {
 				},
 				["Mxzq"] = {
-					[2840] = 35,
-					[2775] = 3,
-					[2771] = 16,
+					[2575] = {
+						[2840] = "Trade Goods",
+						[2841] = "Trade Goods",
+						["name"] = {
+							["Trade Goods"] = 5,
+						},
+						[3575] = "Trade Goods",
+						["selected"] = "None",
+						[3576] = "Trade Goods",
+						[2842] = "Trade Goods",
+					},
 				},
 				["Mxyzptlk"] = {
 				},
@@ -390,7 +397,7 @@ SkilletDB = {
 						["name"] = "Wild Hog Shank",
 						["slot"] = 1,
 						["id"] = 3771,
-						["count"] = 19,
+						["count"] = 16,
 					}, -- [1]
 					{
 						["bag"] = 0,
@@ -418,7 +425,7 @@ SkilletDB = {
 						["name"] = "Sweet Nectar",
 						["slot"] = 5,
 						["id"] = 1708,
-						["count"] = 20,
+						["count"] = 18,
 					}, -- [5]
 					{
 						["bag"] = 0,
@@ -443,10 +450,10 @@ SkilletDB = {
 					}, -- [8]
 					{
 						["bag"] = 0,
-						["name"] = "Razor Arrow",
+						["name"] = "Tin Ore",
 						["slot"] = 9,
-						["id"] = 3030,
-						["count"] = 200,
+						["id"] = 2771,
+						["count"] = 2,
 					}, -- [9]
 					{
 						["bag"] = 0,
@@ -471,165 +478,130 @@ SkilletDB = {
 					}, -- [12]
 					{
 						["bag"] = 0,
-						["name"] = "Razor Arrow",
-						["slot"] = 13,
-						["id"] = 3030,
-						["count"] = 200,
-					}, -- [13]
-					{
-						["bag"] = 0,
 						["name"] = "Mining Pick",
 						["slot"] = 14,
 						["id"] = 2901,
 						["count"] = 1,
-					}, -- [14]
+					}, -- [13]
 					{
 						["bag"] = 0,
-						["name"] = "Razor Arrow",
-						["slot"] = 15,
-						["id"] = 3030,
-						["count"] = 200,
-					}, -- [15]
-					{
-						["bag"] = 0,
-						["name"] = "Kingsblood",
-						["slot"] = 16,
-						["id"] = 3356,
-						["count"] = 11,
-					}, -- [16]
-					{
-						["bag"] = 0,
-						["name"] = "Razor Arrow",
+						["name"] = "Lesser Mana Potion",
 						["slot"] = 17,
-						["id"] = 3030,
-						["count"] = 200,
-					}, -- [17]
+						["id"] = 3385,
+						["count"] = 2,
+					}, -- [14]
 					{
 						["bag"] = 1,
 						["name"] = "Razor Arrow",
 						["slot"] = 1,
 						["id"] = 3030,
 						["count"] = 200,
-					}, -- [18]
+					}, -- [15]
 					{
 						["bag"] = 1,
 						["name"] = "Razor Arrow",
 						["slot"] = 2,
+						["id"] = 3030,
+						["count"] = 200,
+					}, -- [16]
+					{
+						["bag"] = 1,
+						["name"] = "Razor Arrow",
+						["slot"] = 3,
+						["id"] = 3030,
+						["count"] = 200,
+					}, -- [17]
+					{
+						["bag"] = 1,
+						["name"] = "Razor Arrow",
+						["slot"] = 4,
+						["id"] = 3030,
+						["count"] = 200,
+					}, -- [18]
+					{
+						["bag"] = 1,
+						["name"] = "Razor Arrow",
+						["slot"] = 5,
 						["id"] = 3030,
 						["count"] = 200,
 					}, -- [19]
 					{
 						["bag"] = 1,
 						["name"] = "Razor Arrow",
-						["slot"] = 3,
+						["slot"] = 6,
 						["id"] = 3030,
 						["count"] = 200,
 					}, -- [20]
 					{
 						["bag"] = 1,
 						["name"] = "Razor Arrow",
-						["slot"] = 4,
+						["slot"] = 7,
 						["id"] = 3030,
 						["count"] = 200,
 					}, -- [21]
 					{
 						["bag"] = 1,
 						["name"] = "Razor Arrow",
-						["slot"] = 5,
+						["slot"] = 8,
 						["id"] = 3030,
 						["count"] = 200,
 					}, -- [22]
 					{
 						["bag"] = 1,
 						["name"] = "Razor Arrow",
-						["slot"] = 6,
+						["slot"] = 9,
 						["id"] = 3030,
 						["count"] = 200,
 					}, -- [23]
 					{
 						["bag"] = 1,
 						["name"] = "Razor Arrow",
-						["slot"] = 7,
-						["id"] = 3030,
-						["count"] = 200,
-					}, -- [24]
-					{
-						["bag"] = 1,
-						["name"] = "Razor Arrow",
-						["slot"] = 8,
-						["id"] = 3030,
-						["count"] = 200,
-					}, -- [25]
-					{
-						["bag"] = 1,
-						["name"] = "Razor Arrow",
-						["slot"] = 9,
-						["id"] = 3030,
-						["count"] = 200,
-					}, -- [26]
-					{
-						["bag"] = 1,
-						["name"] = "Razor Arrow",
 						["slot"] = 10,
 						["id"] = 3030,
-						["count"] = 42,
-					}, -- [27]
-					{
-						["bag"] = 2,
-						["name"] = "Coarse Stone",
-						["slot"] = 3,
-						["id"] = 2836,
-						["count"] = 8,
-					}, -- [28]
+						["count"] = 114,
+					}, -- [24]
 					{
 						["bag"] = 2,
 						["name"] = "Tin Ore",
 						["slot"] = 4,
 						["id"] = 2771,
-						["count"] = 6,
-					}, -- [29]
+						["count"] = 10,
+					}, -- [25]
 					{
 						["bag"] = 2,
-						["name"] = "Briarthorn",
-						["slot"] = 5,
-						["id"] = 2450,
-						["count"] = 2,
-					}, -- [30]
+						["name"] = "Iron Ore",
+						["slot"] = 6,
+						["id"] = 2772,
+						["count"] = 9,
+					}, -- [26]
 					{
 						["bag"] = 2,
-						["name"] = "Zircon Band of Fire Resistance",
-						["slot"] = 7,
-						["id"] = 11967,
+						["name"] = "Alien Egg",
+						["slot"] = 8,
+						["id"] = 12467,
 						["count"] = 1,
-					}, -- [31]
-					{
-						["bag"] = 2,
-						["name"] = "Ritual Tunic of Shadow Wrath",
-						["slot"] = 9,
-						["id"] = 14133,
-						["count"] = 1,
-					}, -- [32]
-					{
-						["bag"] = 2,
-						["name"] = "Wild Steelbloom",
-						["slot"] = 11,
-						["id"] = 3355,
-						["count"] = 4,
-					}, -- [33]
+					}, -- [27]
 					{
 						["bag"] = 3,
 						["name"] = "Healing Potion",
 						["slot"] = 2,
 						["id"] = 929,
 						["count"] = 2,
-					}, -- [34]
+					}, -- [28]
+					{
+						["bag"] = 3,
+						["name"] = "Melon Juice",
+						["slot"] = 12,
+						["id"] = 1205,
+						["count"] = 1,
+					}, -- [29]
 					{
 						["bag"] = 4,
 						["name"] = "Silver Ore",
 						["slot"] = 3,
 						["id"] = 2775,
-						["count"] = 3,
-					}, -- [35]
+						["count"] = 6,
+					}, -- [30]
 				},
 				["Mxyzptlk"] = {
 				},

@@ -16,8 +16,8 @@ ChocolateBarDB = {
 		["Verminz - Genesis"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
 		["Elohssa - Stonespine"] = "Default",
-		["Vermin - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
 		["Pitchwise - Genesis"] = "Default",
 		["Kosturko - Golemagg"] = "Default",
 		["Pepecocorita - Genesis"] = "Default",
@@ -50,10 +50,6 @@ ChocolateBarDB = {
 					["width"] = 147,
 				},
 			},
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -64,10 +60,9 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
-			},
+			["moveFrames"] = false,
+			["locked"] = false,
+			["fixedStrata"] = true,
 			["objSettings"] = {
 				["PitBull4"] = {
 					["enabled"] = false,
@@ -288,14 +283,19 @@ ChocolateBarDB = {
 				},
 			},
 			["fontName"] = "Friz Quadrata TT",
-			["fixedStrata"] = true,
-			["gap"] = 3,
-			["moveFrames"] = false,
 			["desaturated"] = false,
+			["forceColor"] = false,
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+			},
+			["gap"] = 3,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["forceColor"] = false,
-			["locked"] = false,
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
 			["textColor"] = {
 				["a"] = 1,
 				["r"] = 1,
@@ -306,11 +306,11 @@ ChocolateBarDB = {
 	},
 }
 CB_PlayedTime = {
-	["Verminz-"] = {
-		["total"] = 311368,
+	["Mxzq-"] = {
+		["total"] = 174629,
 	},
-	["Korupcija-"] = {
-		["total"] = 21359,
+	["Greenwise-"] = {
+		["total"] = 79871,
 	},
 	["Dotwise-"] = {
 		["total"] = 3924,
@@ -324,14 +324,14 @@ CB_PlayedTime = {
 	["Elohssa-"] = {
 		["total"] = 3552,
 	},
-	["Mxzq-"] = {
-		["total"] = 170230,
+	["Verminz-"] = {
+		["total"] = 311368,
 	},
 	["Paydo-"] = {
 		["total"] = 18945,
 	},
 	["Mxyz-"] = {
-		["total"] = 8407,
+		["total"] = 8613,
 	},
 	["Vermin-"] = {
 		["total"] = 122701,
@@ -348,7 +348,7 @@ CB_PlayedTime = {
 	["Pitchwise-"] = {
 		["total"] = 390,
 	},
-	["Greenwise-"] = {
-		["total"] = 79871,
+	["Korupcija-"] = {
+		["total"] = 21359,
 	},
 }
