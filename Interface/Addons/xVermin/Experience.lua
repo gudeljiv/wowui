@@ -127,10 +127,10 @@ local function UpdateExperience(self, event, isInitialLogin, isReloadingUi)
 		--- PET EXPERIENCE -----------------------------------------------------------------------------------------------------------------------------------------------
 		------------------------------------------------------------------------------------------------------------------------------------------------------------------
 		if class == "HUNTER" then
-			if UnitExists("pet") then
-				C_Timer.After(
-					0.5,
-					function()
+			C_Timer.After(
+				0.5,
+				function()
+					if UnitExists("pet") then
 						pcxp, pmxp = GetPetExperience()
 						ppercent = floor((pcxp / pmxp) * 100)
 						output = "pet (" .. UnitLevel("pet") .. "):\n" .. pcxp .. " / " .. pmxp .. " (" .. ppercent .. "%)"
@@ -138,11 +138,11 @@ local function UpdateExperience(self, event, isInitialLogin, isReloadingUi)
 						r, g, b = ColorGradient(ppercent / 100, 1, 0, 0, 1, 1, 0, 0, 1, 0)
 						PetExpFrame.text:SetTextColor(r, g, b, 1)
 						PetExpFrame:Show()
+					else
+						PetExpFrame:Hide()
 					end
-				)
-			else
-				PetExpFrame:Hide()
-			end
+				end
+			)
 		end
 
 		cxp = nxp

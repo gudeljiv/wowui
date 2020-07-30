@@ -1,3 +1,14 @@
+VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Rend
+/startattack
+/cast rend
+END
+VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Cleave
+/startattack
+/cast Cleave
+/cast Overpower
+END
 VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Charge
 /startattack
@@ -8,17 +19,6 @@ VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Heroic Strike
 /startattack
 /cast Heroic Strike
-/cast Overpower
-END
-VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
-#showtooltip Rend
-/startattack
-/cast rend
-END
-VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
-#showtooltip Cleave
-/startattack
-/cast Cleave
 /cast Overpower
 END
 VER 3 0000000001000006 "DeleteJunk" "132108"

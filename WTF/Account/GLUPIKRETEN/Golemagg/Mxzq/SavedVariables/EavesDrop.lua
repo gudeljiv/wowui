@@ -214,14 +214,22 @@ EavesDropStatsDB = {
 				["hit"] = {
 					["Raptor Strike"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/25/20 10:32:20|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffRaptor Strike|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-29-3261-00001C96BF:Bristleback Thornweaver|hBristleback Thornweaver|h for |cffffffff45|r |cffffffffPhysical|r.",
-							["amount"] = 45,
+							["time"] = "|cffffffff07/30/20 10:30:59|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffRaptor Strike|r|h hits |Hunit:Creature-0-4445-1-176-12856-000022F565:Ashenvale Outrunner|hAshenvale Outrunner|h for |cffffffff59|r |cffffffffPhysical|r.",
+							["amount"] = 59,
 						},
 						[2] = {
 							["time"] = "|cffffffff07/24/20 06:54:20|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffRaptor Strike|r|h hits |Hunit:Creature-0-4448-1-180-3260-00001AC702:Bristleback Water Seeker|hBristleback Water Seeker|h for |cffffffff43|r |cffffffffPhysical|r.(Critical)",
 							["amount"] = 43,
 						},
 						["icon"] = 132223,
+					},
+					["Chest Pains"] = {
+						[-2] = {
+							["time"] = "|cffffffff07/30/20 10:38:36|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffChest Pains|r|h hits |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h for |cffffffff27|r |cffffffffShadow|r.",
+							["amount"] = 27,
+						},
+						[2] = {
+						},
 					},
 					["Melee Attack"] = {
 						[-2] = {
@@ -235,12 +243,12 @@ EavesDropStatsDB = {
 					},
 					["Auto Shot"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/27/20 10:39:23|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hunit:Creature-0-4448-1-29-3263-00001F23DF:Bristleback Geomancer|hBristleback Geomancer|h for |cffffffff65|r |cffffffffPhysical|r.",
-							["amount"] = 65,
+							["time"] = "|cffffffff07/30/20 10:38:48|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hunit:Creature-0-4445-1-176-12922-0000232E0E:Imp Minion|hImp Minion|h for |cffffffff62|r |cffffffffPhysical|r.(12 Overkill)",
+							["amount"] = 74,
 						},
 						[2] = {
-							["time"] = "|cffffffff07/29/20 08:45:01|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hunit:Creature-0-4445-1-155-4117-0000218D6E:Cloud Serpent|hCloud Serpent|h for |cffffffff129|r |cffffffffPhysical|r.(Critical)",
-							["amount"] = 129,
+							["time"] = "|cffffffff07/30/20 10:40:01|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hunit:Creature-0-4445-1-176-12922-0000232E12:Imp Minion|hImp Minion|h for |cffffffff56|r |cffffffffPhysical|r.(87 Overkill) (Critical)",
+							["amount"] = 143,
 						},
 					},
 					["Drain Life"] = {
@@ -340,8 +348,8 @@ EavesDropStatsDB = {
 					},
 					["Fire"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/27/20 02:28:42|r\n|Hicon:128:source|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-29-5834-00001EC277:Azzere the Skyblade|hAzzere the Skyblade's|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Fireball|r|h hits |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h for |cffff1313124|r |cffff1313Fire|r.",
-							["amount"] = 124,
+							["time"] = "|cffffffff07/30/20 08:43:30|r\n|Hunit:Creature-0-4445-1-155-10756-0000231469:Scalding Elemental|hScalding Elemental's|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Scald|r|h hits |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h for |cffff1313146|r |cffff1313Fire|r.",
+							["amount"] = 146,
 						},
 						[2] = {
 						},
@@ -358,8 +366,8 @@ EavesDropStatsDB = {
 					},
 					["Nature"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/29/20 08:45:01|r\n|Hunit:Creature-0-4445-1-155-4117-0000218D6E:Cloud Serpent|hCloud Serpent's|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Lightning Bolt|r|h hits |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h for |cffff1313162|r |cffff1313Nature|r.",
-							["amount"] = 162,
+							["time"] = "|cffffffff07/30/20 08:50:57|r\n|Hunit:Creature-0-4445-1-155-4119-0000231326:Elder Cloud Serpent|hElder Cloud Serpent's|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Lightning Bolt|r|h hits |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h for |cffff1313165|r |cffff1313Nature|r.",
+							["amount"] = 165,
 						},
 						[2] = {
 						},

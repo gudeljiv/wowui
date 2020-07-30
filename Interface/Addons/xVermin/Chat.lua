@@ -283,6 +283,13 @@ f:RegisterEvent("CHAT_MSG_CHANNEL_NOTICE")
 SLASH_SETCHANNELS1 = "/fc"
 SlashCmdList["SETCHANNELS"] = SetChatChannels
 
+C_Timer.After(
+	2,
+	function()
+		SetChatChannels()
+	end
+)
+
 -- Tab text colors for the tabs
 hooksecurefunc(
 	"FCFTab_UpdateColors",
@@ -305,21 +312,9 @@ hooksecurefunc(
 
 		if not tabGlow:IsShown() then
 			if frameName.isDocked then
-				securecall(
-					"UIFrameFadeOut",
-					chatTab,
-					CHAT_FRAME_FADE_OUT_TIME,
-					chatTab:GetAlpha(),
-					CHAT_FRAME_TAB_NORMAL_NOMOUSE_ALPHA
-				)
+				securecall("UIFrameFadeOut", chatTab, CHAT_FRAME_FADE_OUT_TIME, chatTab:GetAlpha(), CHAT_FRAME_TAB_NORMAL_NOMOUSE_ALPHA)
 			else
-				securecall(
-					"UIFrameFadeOut",
-					chatTab,
-					CHAT_FRAME_FADE_OUT_TIME,
-					chatTab:GetAlpha(),
-					CHAT_FRAME_TAB_NORMAL_NOMOUSE_ALPHA
-				)
+				securecall("UIFrameFadeOut", chatTab, CHAT_FRAME_FADE_OUT_TIME, chatTab:GetAlpha(), CHAT_FRAME_TAB_NORMAL_NOMOUSE_ALPHA)
 			end
 		end
 	end
