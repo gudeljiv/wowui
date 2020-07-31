@@ -2,24 +2,24 @@
 GMMONEY = {
 	["Golemagg"] = {
 		["Mxyz"] = {
-			["GOLD"] = 574145,
+			["GOLD"] = 676177,
 			["CLASS"] = "PRIEST",
+		},
+		["Mxzq"] = {
+			["GOLD"] = 1071241,
+			["CLASS"] = "HUNTER",
 		},
 		["Mxyzptlk"] = {
 			["GOLD"] = 49269,
 			["CLASS"] = "WARLOCK",
 		},
-		["Mxzq"] = {
-			["GOLD"] = 1072627,
-			["CLASS"] = "HUNTER",
-		},
 		["Vermin"] = {
-			["GOLD"] = 600762,
+			["GOLD"] = 600761,
 			["CLASS"] = "WARRIOR",
 		},
 	},
 }
 GMMONEYSET = {
-	["TEXTMODE"] = true,
 	["FULLDISP"] = true,
+	["TEXTMODE"] = true,
 }

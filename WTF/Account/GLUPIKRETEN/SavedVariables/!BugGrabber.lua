@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 1528,
 	["lastSanitation"] = 3,
-	["session"] = 1493,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -173,8 +173,8 @@ BugGrabberDB = {
 		}, -- [21]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["session"] = 1336,
 			["time"] = "2020/07/26 13:26:58",
+			["session"] = 1336,
 			["counter"] = 2,
 		}, -- [22]
 		{
@@ -554,8 +554,8 @@ BugGrabberDB = {
 		}, -- [69]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["time"] = "2020/07/27 20:37:46",
 			["session"] = 1423,
+			["time"] = "2020/07/27 20:37:46",
 			["counter"] = 4,
 		}, -- [70]
 		{
@@ -636,19 +636,13 @@ BugGrabberDB = {
 			["counter"] = 2,
 		}, -- [80]
 		{
-			["message"] = "(null)",
-			["time"] = "2020/07/24 16:00:06",
-			["session"] = 1446,
-			["counter"] = 21,
-		}, -- [81]
-		{
 			["message"] = "Interface\\AddOns\\xVermin\\Experience.lua:114: attempt to call field 'text' (a table value)",
 			["time"] = "2020/07/28 16:57:56",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "Interface\\AddOns\\xVermin\\Experience.lua:114: in function <Interface\\AddOns\\xVermin\\Experience.lua:95>",
 			["session"] = 1451,
 			["counter"] = 1,
-		}, -- [82]
+		}, -- [81]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'CompactRaidFrame1:ClearAllPoints()'.",
 			["time"] = "2020/07/28 17:21:11",
@@ -656,15 +650,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `ClearAllPoints'\nInterface\\FrameXML\\FlowContainer.lua:157: in function `FlowContainer_DoLayout'\nInterface\\FrameXML\\FlowContainer.lua:17: in function `FlowContainer_ResumeUpdates'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:185: in function `CompactRaidFrameContainer_LayoutFrames'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:130: in function `CompactRaidFrameContainer_TryUpdate'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:57: in function `CompactRaidFrameContainer_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
 			["session"] = 1456,
 			["counter"] = 1,
-		}, -- [83]
-		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'AttemptToSaveBindings()'.",
-			["time"] = "2020/07/24 16:00:07",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `AttemptToSaveBindings'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:2062: in function `SetSetBindings'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:544: in function `InitCore'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:281: in function `func'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:982: in function `OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>",
-			["session"] = 1462,
-			["counter"] = 9,
-		}, -- [84]
+		}, -- [82]
 		{
 			["message"] = "Interface\\AddOns\\Aptechka\\frame.lua:98: attempt to index local 'mh' (a number value)",
 			["time"] = "2020/07/29 12:16:19",
@@ -672,7 +658,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\Aptechka\\frame.lua:98: in function <Interface\\AddOns\\Aptechka\\frame.lua:95>\nInterface\\AddOns\\Aptechka\\frame.lua:988: in function `SetJob'\nInterface\\AddOns\\Aptechka\\Aptechka-1.13.54.lua:2469: in function <Interface\\AddOns\\Aptechka\\Aptechka.lua:2403>\nInterface\\AddOns\\Aptechka\\Aptechka-1.13.54.lua:2482: in function <Interface\\AddOns\\Aptechka\\Aptechka.lua:2479>\nInterface\\AddOns\\Aptechka\\Aptechka-1.13.54.lua:1136: in function `?'\nInterface\\AddOns\\Aptechka\\Aptechka-1.13.54.lua:8: in function <Interface\\AddOns\\Aptechka\\Aptechka.lua:7>",
 			["session"] = 1470,
 			["counter"] = 46,
-		}, -- [85]
+		}, -- [83]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Experience.lua:92: attempt to call method 'SetText' (a nil value)",
 			["time"] = "2020/07/29 12:27:08",
@@ -680,6 +666,76 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Experience.lua:92: in function <Interface\\AddOns\\xVermin\\Experience.lua:79>",
 			["session"] = 1472,
 			["counter"] = 3,
+		}, -- [84]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\SortBags.lua:606: attempt to index global 'AdiBagsContainer1' (a nil value)",
+			["time"] = "2020/07/31 11:22:35",
+			["locals"] = "_G = <table> {\n UpdateOnBarHighlightMarksBySpell = <function> defined @Interface\\FrameXML\\ActionButton.lua:70\n ERR_OUT_OF_CHI = \"Not enough chi\"\n DH_HAVOC_CORE_ABILITY_2 = \"Strong melee attack that consumes Fury. If it critical strikes, some Fury is refunded.\"\n MerchantItem9ItemButtonStock = MerchantItem9ItemButtonStock {\n }\n GetTrainerServiceTypeFilter = <function> defined =[C]:-1\n UNIT_NAMES_COMBATLOG_TOOLTIP = \"Color unit names.\"\n SetTrainerServiceTypeFilter = <function> defined =[C]:-1\n LE_GAME_ERR_CHAT_RAID_RESTRICTED_TRIAL = 742\n SPELL_FAILED_CUSTOM_ERROR_71 = \"This partygoer wants to dance with you.\"\n LE_GAME_ERR_PET_SPELL_TARGETS_DEAD = 399\n ERROR_CLUB_TICKET_COUNT_AT_MAX_COMMUNITY = \"Can't create any more invite links for this group.\"\n RecruitAFriendFrame = RecruitAFriendFrame {\n }\n CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture = CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture {\n }\n ERR_TRADE_EQUIPPED_BAG = \"You can't trade equipped bags.\"\n PVP_RANK_6_1 = \"Corporal\"\n MultiBarLeftButton7 = MultiBarLeftButton7 {\n }\n InterfaceOptionsNamesPanelUnitNameplatesShowAll = InterfaceOptionsNamesPanelUnitNameplatesShowAll {\n }\n VideoOptionsFrameDefaults = VideoOptionsFrameDefaults {\n }\n MerchantItem2AltCurrencyFrameItem1Text = MerchantItem2AltCurrencyFrameItem1Text {\n }\n DetailsWindowOptionsBarTextEditorEntryNumberLines = DetailsWindowOptionsBarTextEditorEntryNumberLines {\n }\n OPTION_TOOLTIP_ACTION_BUTTON_USE_KEY_DOWN = \"Action button keybinds will respond on key down, rather than on key up.\"\n BINDING_NAME_NAMEPLATES = \"Show Enemy Name Plates\"\n INSTANCE_UNAVAILABLE_OTHER_TEMPORARILY_DISABLED = \"%s cannot enter. This instance is temporarily disabled.\"\n MultiBarBottomRightButton8Shine5 = MultiBarBottomRightButton8Shine5 {\n }\n IsReferAFriendLinked = <function> defined =[C]:-1\n MAIL_LETTER_TOOLTIP = \"Click to make a permanent\ncopy of this letter.\"\n UnitFrameManaBar_UnregisterDefaultEvents = <function> defined @Interface\\FrameXML\\UnitFrame.lua:602\n ERR_NOAMMO_S = \"%s\"\n CHAT_CONFIG_OTHER_COMBAT = <table> {\n }\n FCFDockOverflowButton_OnClick = <function> defined @Interface\\FrameXML\\FloatingChatFrame.lua:2373\n BOOST2_WARRIOR_COLOSSUSSMASH = \"Use |cFFFFFFFFColossus Smash|r.\n\n|cFFFFFFFFColossus Smash|r increases your damage.\"\n BN_UNABLE_TO_RESOLVE_NAME = \"Unable to whisper '%s'. Blizzard services may be unavailable.\"\n LE_GAME_ERR_RECRUIT_A_FRIEND_FAILED = 952\n CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight = CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight {\n }\n LE_GAME_ERR_ONLY_ONE_QUIVER = 32\n SpellButton6Cooldown = SpellButton6Cooldown {\n }\n AdiBagsItemButton4IconQuestTexture = AdiBagsItemButton4IconQuestTexture {\n }\n LOSS_OF_CONTROL_DISPLAY_FEAR = \"Feared\"\n Graphics_QualityText = Graphics_QualityText {\n }\n VOICEMACRO_4_Sc_1_FEMALE = \"Help me attack!\"\n StanceButton4FlyoutArrow = StanceButton4FlyoutArrow {\n }\n MultiBarRightButton7Shine9 = MultiBarRightButton7Shine9 {\n }\n BankFrameItem17SearchOverlay = BankFrameItem17SearchOverlay {\n }\n DMG_LCD = \"DMG\"\n VideoOptionsPanel_Cancel = <function> defined @Interface\\SharedXML\\VideoOptionsPanels.lua:315\n HubPanelProfileDefaultFriendlyNameColorMode = HubPanelProfileDefaultFriendlyNameColorMode {\n }\n Is64BitClient = <function> defined =[C]:-1\n SecureCmdItemParse = <function> defined @Interface\\FrameXML\\ChatFrame.lua:1111\n SLASH_STOPATTACK1 = \"/stopattack\"\n SortQuestWatches = <function> defined =[C]:-1\n ContainerFrame4Item16Cooldown = ContainerFrame4Item16Cooldown {\n }\n MINIMAP_TRACKING_TRAINER_CLASS = \"Class Trainer\"\n SLASH_DISMOUNT2 = \"/dismount\"\n DUNGEON_FLOOR_DRAGONBLIGHTCHROMIESCENARIO2 = \"Andorhal\"\n PlayerFrame_UpdateReadyCheck = <function> defined @Interface\\FrameXML\\PlayerFrame.lua:345\n EMOTE69_CMD1 = \"/nosepick\"\n WowTokenRedemptionFrameBg = WowTokenRedemptionFrameBg {\n }\n SHIELD_BLOCK_TEMPLATE = \"%d Block\"\n AutoFollowStatus = AutoFollowStatus {\n }\n GuildControlPopupFrame = GuildControlPopupFrame {\n }\n ARENA_CASUAL = \"Skirmish\"\n SendStationeryBackgroundRight = SendStationeryBackgroundRight {\n }\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\SortBags.lua:606: in main chunk",
+			["session"] = 1496,
+			["counter"] = 1,
+		}, -- [85]
+		{
+			["message"] = "Interface\\AddOns\\AdiBags\\core\\Hooks.lua:77: Usage: GetContainerNumSlots(index)",
+			["time"] = "2020/07/31 11:24:35",
+			["locals"] = "(*temporary) = nil\n",
+			["stack"] = "[C]: ?\nInterface\\AddOns\\AdiBags\\core\\Hooks.lua:77: in function `GetContainerFrame'\nInterface\\AddOns\\AdiBags\\core\\Hooks.lua:164: in function <Interface\\AddOns\\AdiBags\\core\\Hooks.lua:159>\n(tail call): ?\n[string \"ToggleBag()\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 1496,
+			["counter"] = 1,
 		}, -- [86]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\SortBags.lua:606: attempt to index global 'ToggleBag' (a function value)",
+			["time"] = "2020/07/31 11:24:55",
+			["locals"] = "_G = <table> {\n UpdateOnBarHighlightMarksBySpell = <function> defined @Interface\\FrameXML\\ActionButton.lua:70\n ERR_OUT_OF_CHI = \"Not enough chi\"\n DH_HAVOC_CORE_ABILITY_2 = \"Strong melee attack that consumes Fury. If it critical strikes, some Fury is refunded.\"\n MerchantItem9ItemButtonStock = MerchantItem9ItemButtonStock {\n }\n GetTrainerServiceTypeFilter = <function> defined =[C]:-1\n UNIT_NAMES_COMBATLOG_TOOLTIP = \"Color unit names.\"\n SetTrainerServiceTypeFilter = <function> defined =[C]:-1\n LE_GAME_ERR_CHAT_RAID_RESTRICTED_TRIAL = 742\n SPELL_FAILED_CUSTOM_ERROR_71 = \"This partygoer wants to dance with you.\"\n LE_GAME_ERR_PET_SPELL_TARGETS_DEAD = 399\n ERROR_CLUB_TICKET_COUNT_AT_MAX_COMMUNITY = \"Can't create any more invite links for this group.\"\n RecruitAFriendFrame = RecruitAFriendFrame {\n }\n CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture = CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture {\n }\n ERR_TRADE_EQUIPPED_BAG = \"You can't trade equipped bags.\"\n PVP_RANK_6_1 = \"Corporal\"\n MultiBarLeftButton7 = MultiBarLeftButton7 {\n }\n InterfaceOptionsNamesPanelUnitNameplatesShowAll = InterfaceOptionsNamesPanelUnitNameplatesShowAll {\n }\n VideoOptionsFrameDefaults = VideoOptionsFrameDefaults {\n }\n MerchantItem2AltCurrencyFrameItem1Text = MerchantItem2AltCurrencyFrameItem1Text {\n }\n DetailsWindowOptionsBarTextEditorEntryNumberLines = DetailsWindowOptionsBarTextEditorEntryNumberLines {\n }\n OPTION_TOOLTIP_ACTION_BUTTON_USE_KEY_DOWN = \"Action button keybinds will respond on key down, rather than on key up.\"\n BINDING_NAME_NAMEPLATES = \"Show Enemy Name Plates\"\n INSTANCE_UNAVAILABLE_OTHER_TEMPORARILY_DISABLED = \"%s cannot enter. This instance is temporarily disabled.\"\n MultiBarBottomRightButton8Shine5 = MultiBarBottomRightButton8Shine5 {\n }\n IsReferAFriendLinked = <function> defined =[C]:-1\n MAIL_LETTER_TOOLTIP = \"Click to make a permanent\ncopy of this letter.\"\n UnitFrameManaBar_UnregisterDefaultEvents = <function> defined @Interface\\FrameXML\\UnitFrame.lua:602\n ERR_NOAMMO_S = \"%s\"\n CHAT_CONFIG_OTHER_COMBAT = <table> {\n }\n FCFDockOverflowButton_OnClick = <function> defined @Interface\\FrameXML\\FloatingChatFrame.lua:2373\n BOOST2_WARRIOR_COLOSSUSSMASH = \"Use |cFFFFFFFFColossus Smash|r.\n\n|cFFFFFFFFColossus Smash|r increases your damage.\"\n BN_UNABLE_TO_RESOLVE_NAME = \"Unable to whisper '%s'. Blizzard services may be unavailable.\"\n LE_GAME_ERR_RECRUIT_A_FRIEND_FAILED = 952\n CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight = CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight {\n }\n LE_GAME_ERR_ONLY_ONE_QUIVER = 32\n SpellButton6Cooldown = SpellButton6Cooldown {\n }\n AdiBagsItemButton4IconQuestTexture = AdiBagsItemButton4IconQuestTexture {\n }\n LOSS_OF_CONTROL_DISPLAY_FEAR = \"Feared\"\n Graphics_QualityText = Graphics_QualityText {\n }\n VOICEMACRO_4_Sc_1_FEMALE = \"Help me attack!\"\n StanceButton4FlyoutArrow = StanceButton4FlyoutArrow {\n }\n MultiBarRightButton7Shine9 = MultiBarRightButton7Shine9 {\n }\n BankFrameItem17SearchOverlay = BankFrameItem17SearchOverlay {\n }\n DMG_LCD = \"DMG\"\n VideoOptionsPanel_Cancel = <function> defined @Interface\\SharedXML\\VideoOptionsPanels.lua:315\n HubPanelProfileDefaultFriendlyNameColorMode = HubPanelProfileDefaultFriendlyNameColorMode {\n }\n Is64BitClient = <function> defined =[C]:-1\n SecureCmdItemParse = <function> defined @Interface\\FrameXML\\ChatFrame.lua:1111\n SLASH_STOPATTACK1 = \"/stopattack\"\n SortQuestWatches = <function> defined =[C]:-1\n ContainerFrame4Item16Cooldown = ContainerFrame4Item16Cooldown {\n }\n MINIMAP_TRACKING_TRAINER_CLASS = \"Class Trainer\"\n SLASH_DISMOUNT2 = \"/dismount\"\n DUNGEON_FLOOR_DRAGONBLIGHTCHROMIESCENARIO2 = \"Andorhal\"\n PlayerFrame_UpdateReadyCheck = <function> defined @Interface\\FrameXML\\PlayerFrame.lua:345\n EMOTE69_CMD1 = \"/nosepick\"\n WowTokenRedemptionFrameBg = WowTokenRedemptionFrameBg {\n }\n SHIELD_BLOCK_TEMPLATE = \"%d Block\"\n AutoFollowStatus = AutoFollowStatus {\n }\n GuildControlPopupFrame = GuildControlPopupFrame {\n }\n ARENA_CASUAL = \"Skirmish\"\n SendStationeryBackgroundRight = SendStationeryBackgroundRight {\n }\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\SortBags.lua:606: in main chunk",
+			["session"] = 1497,
+			["counter"] = 1,
+		}, -- [87]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\SortBags.lua:606: attempt to index global 'OpenAllBags' (a function value)",
+			["time"] = "2020/07/31 11:27:57",
+			["locals"] = "_G = <table> {\n UpdateOnBarHighlightMarksBySpell = <function> defined @Interface\\FrameXML\\ActionButton.lua:70\n ERR_OUT_OF_CHI = \"Not enough chi\"\n DH_HAVOC_CORE_ABILITY_2 = \"Strong melee attack that consumes Fury. If it critical strikes, some Fury is refunded.\"\n MerchantItem9ItemButtonStock = MerchantItem9ItemButtonStock {\n }\n GetTrainerServiceTypeFilter = <function> defined =[C]:-1\n UNIT_NAMES_COMBATLOG_TOOLTIP = \"Color unit names.\"\n SetTrainerServiceTypeFilter = <function> defined =[C]:-1\n LE_GAME_ERR_CHAT_RAID_RESTRICTED_TRIAL = 742\n SPELL_FAILED_CUSTOM_ERROR_71 = \"This partygoer wants to dance with you.\"\n LE_GAME_ERR_PET_SPELL_TARGETS_DEAD = 399\n ERROR_CLUB_TICKET_COUNT_AT_MAX_COMMUNITY = \"Can't create any more invite links for this group.\"\n RecruitAFriendFrame = RecruitAFriendFrame {\n }\n CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture = CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture {\n }\n ERR_TRADE_EQUIPPED_BAG = \"You can't trade equipped bags.\"\n PVP_RANK_6_1 = \"Corporal\"\n MultiBarLeftButton7 = MultiBarLeftButton7 {\n }\n InterfaceOptionsNamesPanelUnitNameplatesShowAll = InterfaceOptionsNamesPanelUnitNameplatesShowAll {\n }\n VideoOptionsFrameDefaults = VideoOptionsFrameDefaults {\n }\n MerchantItem2AltCurrencyFrameItem1Text = MerchantItem2AltCurrencyFrameItem1Text {\n }\n DetailsWindowOptionsBarTextEditorEntryNumberLines = DetailsWindowOptionsBarTextEditorEntryNumberLines {\n }\n OPTION_TOOLTIP_ACTION_BUTTON_USE_KEY_DOWN = \"Action button keybinds will respond on key down, rather than on key up.\"\n BINDING_NAME_NAMEPLATES = \"Show Enemy Name Plates\"\n INSTANCE_UNAVAILABLE_OTHER_TEMPORARILY_DISABLED = \"%s cannot enter. This instance is temporarily disabled.\"\n MultiBarBottomRightButton8Shine5 = MultiBarBottomRightButton8Shine5 {\n }\n IsReferAFriendLinked = <function> defined =[C]:-1\n MAIL_LETTER_TOOLTIP = \"Click to make a permanent\ncopy of this letter.\"\n UnitFrameManaBar_UnregisterDefaultEvents = <function> defined @Interface\\FrameXML\\UnitFrame.lua:602\n ERR_NOAMMO_S = \"%s\"\n CHAT_CONFIG_OTHER_COMBAT = <table> {\n }\n FCFDockOverflowButton_OnClick = <function> defined @Interface\\FrameXML\\FloatingChatFrame.lua:2373\n BOOST2_WARRIOR_COLOSSUSSMASH = \"Use |cFFFFFFFFColossus Smash|r.\n\n|cFFFFFFFFColossus Smash|r increases your damage.\"\n BN_UNABLE_TO_RESOLVE_NAME = \"Unable to whisper '%s'. Blizzard services may be unavailable.\"\n LE_GAME_ERR_RECRUIT_A_FRIEND_FAILED = 952\n CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight = CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight {\n }\n LE_GAME_ERR_ONLY_ONE_QUIVER = 32\n SpellButton6Cooldown = SpellButton6Cooldown {\n }\n AdiBagsItemButton4IconQuestTexture = AdiBagsItemButton4IconQuestTexture {\n }\n LOSS_OF_CONTROL_DISPLAY_FEAR = \"Feared\"\n Graphics_QualityText = Graphics_QualityText {\n }\n VOICEMACRO_4_Sc_1_FEMALE = \"Help me attack!\"\n StanceButton4FlyoutArrow = StanceButton4FlyoutArrow {\n }\n MultiBarRightButton7Shine9 = MultiBarRightButton7Shine9 {\n }\n BankFrameItem17SearchOverlay = BankFrameItem17SearchOverlay {\n }\n DMG_LCD = \"DMG\"\n VideoOptionsPanel_Cancel = <function> defined @Interface\\SharedXML\\VideoOptionsPanels.lua:315\n HubPanelProfileDefaultFriendlyNameColorMode = HubPanelProfileDefaultFriendlyNameColorMode {\n }\n Is64BitClient = <function> defined =[C]:-1\n SecureCmdItemParse = <function> defined @Interface\\FrameXML\\ChatFrame.lua:1111\n SLASH_STOPATTACK1 = \"/stopattack\"\n SortQuestWatches = <function> defined =[C]:-1\n ContainerFrame4Item16Cooldown = ContainerFrame4Item16Cooldown {\n }\n MINIMAP_TRACKING_TRAINER_CLASS = \"Class Trainer\"\n SLASH_DISMOUNT2 = \"/dismount\"\n DUNGEON_FLOOR_DRAGONBLIGHTCHROMIESCENARIO2 = \"Andorhal\"\n PlayerFrame_UpdateReadyCheck = <function> defined @Interface\\FrameXML\\PlayerFrame.lua:345\n EMOTE69_CMD1 = \"/nosepick\"\n WowTokenRedemptionFrameBg = WowTokenRedemptionFrameBg {\n }\n SHIELD_BLOCK_TEMPLATE = \"%d Block\"\n AutoFollowStatus = AutoFollowStatus {\n }\n GuildControlPopupFrame = GuildControlPopupFrame {\n }\n ARENA_CASUAL = \"Skirmish\"\n SendStationeryBackgroundRight = SendStationeryBackgroundRight {\n }\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\SortBags.lua:606: in main chunk",
+			["session"] = 1498,
+			["counter"] = 1,
+		}, -- [88]
+		{
+			["message"] = "(null)",
+			["session"] = 1498,
+			["time"] = "2020/07/24 16:00:06",
+			["counter"] = 30,
+		}, -- [89]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\SortBags.lua:617: attempt to concatenate local 'event' (a table value)",
+			["time"] = "2020/07/31 11:28:42",
+			["locals"] = "event = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = \"frame event: \"\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = \"attempt to concatenate local 'event' (a table value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\SortBags.lua:617: in function <Interface\\AddOns\\xVermin\\SortBags.lua:616>",
+			["session"] = 1499,
+			["counter"] = 13,
+		}, -- [90]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\SortBags.lua:583: attempt to perform arithmetic on local 'quality' (a nil value)",
+			["time"] = "2020/07/31 11:32:24",
+			["locals"] = "container = 0\nposition = 2\nlink = \"|cffffffff|Hitem:11138::::::::5:::::::|h[]|h|r\"\n_ = 13\n_ = 25\nitemID = 11138\nenchantID = \"\"\nsuffixID = \"\"\nuniqueID = \"\"\n_ = nil\n_ = nil\nquality = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\nstack = nil\nslot = nil\n_ = nil\nsellPrice = nil\nclassId = nil\nsubClassId = nil\ncharges = 1\nusable = nil\nsoulbound = nil\nquest = nil\nconjured = nil\nsortKey = <table> {\n 1 = 11\n}\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = <table> {\n 1 = 11\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to perform arithmetic on local 'quality' (a nil value)\"\nMOUNTS = <table> {\n 19030 = true\n 18778 = true\n 21324 = true\n 18786 = true\n 18788 = true\n 18790 = true\n 18794 = true\n 18796 = true\n 18798 = true\n 5655 = true\n 5656 = true\n 8586 = true\n 8588 = true\n 8591 = true\n 8592 = true\n 8595 = true\n 5665 = true\n 19872 = true\n 5668 = true\n 1132 = true\n 18241 = true\n 18243 = true\n 18245 = true\n 5864 = true\n 19902 = true\n 12302 = true\n 12303 = true\n 18767 = true\n 13322 = true\n 18773 = true\n 18902 = true\n 18777 = true\n 13327 = true\n 8629 = true\n 13329 = true\n 18785 = true\n 18787 = true\n 18789 = true\n 5873 = true\n 18793 = true\n 18795 = true\n 18797 = true\n 2414 = true\n 13086 = true\n 12326 = true\n 12330 = true\n 21176 = true\n 21323 = true\n 21321 = true\n 21218 = true\n 13335 = true\n 13328 = true\n 18791 = true\n 13334 = true\n 13333 = true\n 13332 = true\n 13331 = true\n 13317 = true\n 5872 = true\n 12351 = true\n 8631 = true\n 12353 = true\n 12354 = true\n 15292 = true\n 15277 = true\n 15293 = true\n 8632 = true\n 18247 = true\n 18242 = true\n 18244 = true\n 18246 = true\n 18248 = true\n 13326 = true\n 8563 = true\n 13321 = true\n 8628 = true\n 18766 = true\n 15290 = true\n 2411 = true\n 18772 = true\n 18774 = true\n 18776 = true\n}\nSPECIAL = <table> {\n 5462 = true\n 17117 = true\n 11511 = true\n 13289 = true\n 13347 = true\n 17696 = true\n}\nKEYS = <table> {\n 13544 = true\n 20402 = true\n 9240 = true\n 12324 = true\n 12384 = true\n 17191 = true\n 16309 = true\n}\nTOOLS = <table> {\n 6218 = true\n 15846 = true\n 7005 = true\n 19727 = true\n 6339 = true\n 6219 = true\n 5956 = true\n 11145 = true\n 11130 = true\n 16207 = true\n 6256 = true\n 6367 = true\n 12709 = true\n 9149 = true\n 6365 = true\n 10498 = true\n 2901 = true\n}\nENCHANTING_MATERIALS = <table> {\n 10940 = true\n 11134 = true\n 16203 = true\n 11135 = true\n 11174 = true\n 16204 = true\n 11082 = true\n 11137 = true\n 11083 = true\n 10998 = true\n 20725 = true\n 11138 = true\n 11084 = true\n 11139 = true\n 11178 = true\n 10938 = true\n 14344 = true\n 14343 = true\n 11177 = true\n 10939 = true\n 10978 = true\n 11175 = true\n 16202 = true\n 11176 = true\n}\nHERBS = <table> {\n 13467 = true\n 13465 = true\n 13466 = true\n 3369 = true\n 13468 = true\n 13464 = true\n 3355 = true\n 2447 = true\n 2449 = true\n 8153 = true\n 2453 = true\n 3819 = true\n 3356 = true\n 3358 = true\n 8836 = true\n 13463 = true\n 3821 = true\n 765 = true\n 8839 = true\n 8845 = true\n 8831 = true\n 4625 = true\n 8838 = true\n 8846 = true\n 2450 = true\n 2452 = true\n 3818 = true\n 3820 = true\n 3357 = true\n 785 = true\n}\nitemStacks = <table> {\n 6948::::1:1 = 1\n}\nitemSortKeys = <table> {\n 6948::::1:1 = <table> {\n }\n}\nCLASSES = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n}\nitemClasses = <table> {\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\SortBags.lua:583: in function `Item'\nInterface\\AddOns\\xVermin\\SortBags.lua:446: in function `Initialize'\nInterface\\AddOns\\xVermin\\SortBags.lua:237: in function `Start'\nInterface\\AddOns\\xVermin\\SortBags.lua:15: in function `SortBags'\nInterface\\AddOns\\xVermin\\SortBags.lua:617: in function <Interface\\AddOns\\xVermin\\SortBags.lua:616>",
+			["session"] = 1502,
+			["counter"] = 5,
+		}, -- [91]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:69: Usage: TargetFrameDebuff1Count:SetPoint(\"point\" [, region or nil] [, \"relativePoint\"] [, offsetX, offsetY])",
+			["time"] = "2020/07/31 14:58:11",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[C]: in function `SetPoint'\nInterface\\AddOns\\xVermin\\SkinBuffs.lua:69: in function <Interface\\AddOns\\xVermin\\SkinBuffs.lua:15>\n[C]: ?\n[C]: in function `TargetFrame_UpdateAuras'\nInterface\\FrameXML\\TargetFrame.lua:197: in function <Interface\\FrameXML\\TargetFrame.lua:142>",
+			["session"] = 1520,
+			["counter"] = 202,
+		}, -- [92]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'AttemptToSaveBindings()'.",
+			["time"] = "2020/07/24 16:00:07",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `AttemptToSaveBindings'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:2062: in function `SetSetBindings'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:544: in function `InitCore'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:281: in function `func'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:982: in function `OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>",
+			["session"] = 1527,
+			["counter"] = 10,
+		}, -- [93]
 	},
 }

@@ -93,3 +93,4 @@ Talented_Data: disabled
 Talented_Data_Export: disabled
 SimpleRaidTargetIcons: disabled
 PerfectRaid: disabled
+SortBags: disabled

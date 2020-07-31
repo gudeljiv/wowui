@@ -293,14 +293,7 @@ if BugGrabber then
 			local ref = errorObject and errorObject.stack and strmatch(errorObject.stack, pattern)
 			if ref and not strmatch(ref, "\\libs\\") then
 				if not addon.db.global.muteBugGrabber then
-					print(
-						format(
-							"|cffffff00" .. L["Error in %s: %s -- details: %s"],
-							addonName,
-							"|r" .. errorObject.message,
-							BugGrabber:GetChatLink(errorObject)
-						)
-					)
+					print(format("|cffffff00" .. L["Error in %s: %s -- details: %s"], addonName, "|r" .. errorObject.message, BugGrabber:GetChatLink(errorObject)))
 				end
 				addon:Debug("Error:", errorObject.message)
 			end
@@ -460,8 +453,7 @@ end
 do
 	local current
 	function addon:UpdateInteractingWindow(event, ...)
-		local new =
-			strmatch(event, "^([_%w]+)_OPEN") or strmatch(event, "^([_%w]+)_SHOW$") or strmatch(event, "^([_%w]+)_UPDATE$")
+		local new = strmatch(event, "^([_%w]+)_OPEN") or strmatch(event, "^([_%w]+)_SHOW$") or strmatch(event, "^([_%w]+)_UPDATE$")
 		self:Debug("UpdateInteractingWindow", event, current, "=>", new, "|", ...)
 		if new ~= current then
 			local old = current

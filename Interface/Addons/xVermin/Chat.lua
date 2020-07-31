@@ -275,20 +275,26 @@ local function SetChatChannels()
 end
 
 local f = CreateFrame("Frame")
-f:SetScript("OnEvent", SetChatChannels)
+f:SetScript(
+	"OnEvent",
+	function(self, event)
+		if event == "PLAYER_ENTERING_WORLD" then
+			C_Timer.After(
+				10,
+				function()
+					SetChatChannels()
+					print("Chats configured!")
+				end
+			)
+		end
+	end
+)
 f:RegisterEvent("PLAYER_ENTERING_WORLD")
-f:RegisterEvent("ZONE_CHANGED")
-f:RegisterEvent("CHAT_MSG_CHANNEL_NOTICE")
+-- f:RegisterEvent("ZONE_CHANGED")
+-- f:RegisterEvent("CHAT_MSG_CHANNEL_NOTICE")
 
 SLASH_SETCHANNELS1 = "/fc"
 SlashCmdList["SETCHANNELS"] = SetChatChannels
-
-C_Timer.After(
-	2,
-	function()
-		SetChatChannels()
-	end
-)
 
 -- Tab text colors for the tabs
 hooksecurefunc(

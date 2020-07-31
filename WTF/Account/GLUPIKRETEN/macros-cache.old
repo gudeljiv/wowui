@@ -4,19 +4,20 @@ VER 3 0000000000000008 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:1708
-/castsequence [combat]item:3385,item:3385
+/use [nocombat]item:1205
+/castsequence [combat]
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:3771
-/castsequence [combat]item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929
+/use [nocombat]item:4593
+/castsequence [combat]item:1710,item:1710,item:1710,item:1710,item:1710,item:1710,item:1710,item:1710,item:1710,item:1710,item:1710,item:1710,item:1710,item:1710
 END
 VER 3 0000000000000006 "PF" "Inv_misc_questionmark"
-#showtooltip item:0
+#showtooltip item:3771
 /cast feed pet
-/use item:0
+/use item:3771
 END
 VER 3 0000000000000009 "TEST" "INV_MISC_QUESTIONMARK"
-/run cpxf.text:SetPoint("TOPRIGHT", CustomContainer_Combat, "BOTTOMRIGHT", 0, -3)
+/run print(UnitDebuff("target", 1))
+/run print(UnitDebuff("target", 2))
 END

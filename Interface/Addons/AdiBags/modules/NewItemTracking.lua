@@ -41,10 +41,7 @@ local wipe = _G.wipe
 
 local mod = addon:RegisterFilter("NewItem", 80, "ABEvent-1.0")
 mod.uiName = L["Track new items"]
-mod.uiDesc =
-	L[
-	'Track new items in each bag, displaying a glowing aura over them and putting them in a special section. "New" status can be reset by clicking on the small "N" button at top left of bags.'
-]
+mod.uiDesc = L['Track new items in each bag, displaying a glowing aura over them and putting them in a special section. "New" status can be reset by clicking on the small "N" button at top left of bags.']
 
 local newItems = {}
 
@@ -103,15 +100,17 @@ local function ResetButton_OnClick(widget, button)
 	mod:SendMessage("AdiBags_UpdateAllButtons", true)
 end
 
--- local function ResetNewItems()
--- 	C_NewItems.ClearAll()
--- 	wipe(newItems)
--- end
+--------------------------------------------------------------------------------
+-- pokusavam automatski sortirati adi bags
+--------------------------------------------------------------------------------
+local _G, _M = getfenv(0), {}
+setfenv(1, setmetatable(_M, {__index = _G}))
 
--- local f = CreateFrame("Frame")
--- f:SetScript("OnEvent", ResetNewItems)
--- f:RegisterEvent("BAG_UPDATE")
--- f:RegisterEvent("BAG_NEW_ITEMS_UPDATED")
+function _G.ResetNewItemsAdiBags()
+	C_NewItems.ClearAll()
+	wipe(newItems)
+end
+--------------------------------------------------------------------------------
 
 function mod:OnBagFrameCreated(bag)
 	if bag.isBank then
@@ -158,10 +157,7 @@ function mod:IsNew(bag, slot, link)
 		return false
 	elseif newItems[link] then
 		return true
-	elseif
-		not addon.BAG_IDS.BANK[bag] and C_NewItems.IsNewItem(bag, slot) and not IsBattlePayItem(bag, slot) and
-			(not self.db.profile.ignoreJunk or select(4, GetContainerItemInfo(bag, slot)) ~= LE_ITEM_QUALITY_POOR)
-	 then
+	elseif not addon.BAG_IDS.BANK[bag] and C_NewItems.IsNewItem(bag, slot) and not IsBattlePayItem(bag, slot) and (not self.db.profile.ignoreJunk or select(4, GetContainerItemInfo(bag, slot)) ~= LE_ITEM_QUALITY_POOR) then
 		newItems[link] = true
 		return true
 	end

@@ -30,6 +30,7 @@ PetHappiness.lua
 PlayerTargetHealthPercentage.lua
 PlayerTargetSetMark.lua
 SkinBuffs.lua
+SortBags.lua
 TrackingIcon.lua
 Unit.lua
 
