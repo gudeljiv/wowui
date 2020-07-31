@@ -55,25 +55,11 @@ SlashCmdList["FMP"] = function(msg)
 		print(line)
 		print(pre .. header("FollowMePls Whisper Commands:"))
 		print(pre .. subj("!follow") .. sep .. desc("Makes the character follow you, simply '!f' works too."))
-		print(
-			pre ..
-				subj("!mount") .. sep .. desc("Makes the character summon a random mount, simply '!m' works too.") .. retailOnly
-		)
-		print(
-			pre ..
-				subj("!waterwalk") .. sep .. desc("Makes the character summon a random mount that can walk on water.") .. retailOnly
-		)
-		print(
-			pre .. subj("!yak") .. sep .. desc("Makes the character summon the 'Grand Expedition Yak' mount.") .. retailOnly
-		)
-		print(
-			pre ..
-				subj("!mammoth") .. sep .. desc("Makes the character summon the 'Traveler's Tundra Mammoth' mount.") .. retailOnly
-		)
-		print(
-			pre ..
-				subj("!bruto") .. sep .. desc("Makes the character summon the 'Mighty Caravan Brutosaur' mount.") .. retailOnly
-		)
+		print(pre .. subj("!mount") .. sep .. desc("Makes the character summon a random mount, simply '!m' works too.") .. retailOnly)
+		print(pre .. subj("!waterwalk") .. sep .. desc("Makes the character summon a random mount that can walk on water.") .. retailOnly)
+		print(pre .. subj("!yak") .. sep .. desc("Makes the character summon the 'Grand Expedition Yak' mount.") .. retailOnly)
+		print(pre .. subj("!mammoth") .. sep .. desc("Makes the character summon the 'Traveler's Tundra Mammoth' mount.") .. retailOnly)
+		print(pre .. subj("!bruto") .. sep .. desc("Makes the character summon the 'Mighty Caravan Brutosaur' mount.") .. retailOnly)
 		print(pre .. subj("!dismount") .. sep .. desc("Makes the character dismount.") .. retailOnly)
 		return
 	end
@@ -108,11 +94,7 @@ SlashCmdList["FMP"] = function(msg)
 	print(line)
 	print(pre .. header("FollowMePls Commands:"))
 	print(pre .. subj("/fmp 1/0") .. sep .. desc("1 = Enable the addon, 0 = Disable the addon."))
-	print(
-		pre ..
-			subj("/fmp group 1/0") ..
-				sep .. desc("1 = Only accept follow commands from party and raid members, 0 = Accept from anybody.")
-	)
+	print(pre .. subj("/fmp group 1/0") .. sep .. desc("1 = Only accept follow commands from party and raid members, 0 = Accept from anybody."))
 	print(pre .. subj("/fmp whispers") .. sep .. desc("See the list of possible whisper commands."))
 	print(pre .. subj("/fmp msg") .. sep .. desc("Disables the login message."))
 end
@@ -142,29 +124,10 @@ local function SummonMount(mountType)
 	local selectedMount = nil
 
 	for key, value in pairs(mounts) do
-		local creatureName,
-			spellID,
-			icon,
-			active,
-			isUsable,
-			sourceType,
-			isFavorite,
-			isFactionSpecific,
-			faction,
-			hideOnChar,
-			isCollected,
-			mountID = C_MountJournal.GetMountInfoByID(key)
+		local creatureName, spellID, icon, active, isUsable, sourceType, isFavorite, isFactionSpecific, faction, hideOnChar, isCollected, mountID = C_MountJournal.GetMountInfoByID(key)
 
 		if isCollected and isUsable then
-			local creatureDisplayInfoID,
-				description,
-				source,
-				isSelfMount,
-				mountTypeID,
-				uiModelSceneID,
-				animID,
-				spellVisualKitID,
-				disablePlayerMountPreview = C_MountJournal.GetMountInfoExtraByID(key)
+			local creatureDisplayInfoID, description, source, isSelfMount, mountTypeID, uiModelSceneID, animID, spellVisualKitID, disablePlayerMountPreview = C_MountJournal.GetMountInfoExtraByID(key)
 
 			if mountType == GROUND then
 				if mountTypeID == 230 then

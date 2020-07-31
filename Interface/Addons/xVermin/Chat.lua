@@ -246,9 +246,6 @@ chat:SetScript(
 		ChatFrameChannelButton:Hide()
 		ChatFrameMenuButton:Hide()
 
-		-- ChatFrame2:Hide()
-		-- ChatFrame2Tab:Hide()
-
 		ChatFrame1Tab:Click()
 	end
 )
@@ -283,7 +280,6 @@ f:SetScript(
 				10,
 				function()
 					SetChatChannels()
-					print("Chats configured!")
 				end
 			)
 		end

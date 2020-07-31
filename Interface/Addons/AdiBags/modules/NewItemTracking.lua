@@ -98,6 +98,8 @@ local function ResetButton_OnClick(widget, button)
 	mod.button:Disable()
 	mod:SendMessage("AdiBags_FiltersChanged", true)
 	mod:SendMessage("AdiBags_UpdateAllButtons", true)
+	-- SortBags()
+	-- SortBankBags()
 end
 
 --------------------------------------------------------------------------------

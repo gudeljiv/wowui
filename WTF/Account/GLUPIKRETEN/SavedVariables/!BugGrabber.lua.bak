@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 1558,
 	["lastSanitation"] = 3,
-	["session"] = 1527,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -173,8 +173,8 @@ BugGrabberDB = {
 		}, -- [21]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["session"] = 1336,
 			["time"] = "2020/07/26 13:26:58",
+			["session"] = 1336,
 			["counter"] = 2,
 		}, -- [22]
 		{
@@ -554,8 +554,8 @@ BugGrabberDB = {
 		}, -- [69]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["time"] = "2020/07/27 20:37:46",
 			["session"] = 1423,
+			["time"] = "2020/07/27 20:37:46",
 			["counter"] = 4,
 		}, -- [70]
 		{
@@ -700,19 +700,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [88]
 		{
-			["message"] = "(null)",
-			["time"] = "2020/07/24 16:00:06",
-			["session"] = 1498,
-			["counter"] = 30,
-		}, -- [89]
-		{
 			["message"] = "Interface\\AddOns\\xVermin\\SortBags.lua:617: attempt to concatenate local 'event' (a table value)",
 			["time"] = "2020/07/31 11:28:42",
 			["locals"] = "event = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = \"frame event: \"\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = \"attempt to concatenate local 'event' (a table value)\"\n",
 			["stack"] = "Interface\\AddOns\\xVermin\\SortBags.lua:617: in function <Interface\\AddOns\\xVermin\\SortBags.lua:616>",
 			["session"] = 1499,
 			["counter"] = 13,
-		}, -- [90]
+		}, -- [89]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\SortBags.lua:583: attempt to perform arithmetic on local 'quality' (a nil value)",
 			["time"] = "2020/07/31 11:32:24",
@@ -720,7 +714,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\SortBags.lua:583: in function `Item'\nInterface\\AddOns\\xVermin\\SortBags.lua:446: in function `Initialize'\nInterface\\AddOns\\xVermin\\SortBags.lua:237: in function `Start'\nInterface\\AddOns\\xVermin\\SortBags.lua:15: in function `SortBags'\nInterface\\AddOns\\xVermin\\SortBags.lua:617: in function <Interface\\AddOns\\xVermin\\SortBags.lua:616>",
 			["session"] = 1502,
 			["counter"] = 5,
-		}, -- [91]
+		}, -- [90]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:69: Usage: TargetFrameDebuff1Count:SetPoint(\"point\" [, region or nil] [, \"relativePoint\"] [, offsetX, offsetY])",
 			["time"] = "2020/07/31 14:58:11",
@@ -728,7 +722,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `SetPoint'\nInterface\\AddOns\\xVermin\\SkinBuffs.lua:69: in function <Interface\\AddOns\\xVermin\\SkinBuffs.lua:15>\n[C]: ?\n[C]: in function `TargetFrame_UpdateAuras'\nInterface\\FrameXML\\TargetFrame.lua:197: in function <Interface\\FrameXML\\TargetFrame.lua:142>",
 			["session"] = 1520,
 			["counter"] = 202,
-		}, -- [92]
+		}, -- [91]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'AttemptToSaveBindings()'.",
 			["time"] = "2020/07/24 16:00:07",
@@ -736,6 +730,60 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `AttemptToSaveBindings'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:2062: in function `SetSetBindings'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:544: in function `InitCore'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:281: in function `func'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:982: in function `OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>",
 			["session"] = 1527,
 			["counter"] = 10,
+		}, -- [92]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\SortBags.lua:568: attempt to compare number with nil",
+			["time"] = "2020/07/31 16:58:20",
+			["locals"] = "container = 1\nposition = 3\nlink = \"|cffffffff|Hitem:3030::::::::26:::::::|h[]|h|r\"\n_ = 13\n_ = 24\nitemID = 3030\nenchantID = \"\"\nsuffixID = \"\"\nuniqueID = \"\"\n_ = nil\n_ = nil\nquality = nil\n_ = nil\n_ = nil\n_ = nil\n_ = nil\nstack = nil\nslot = nil\n_ = nil\nsellPrice = nil\nclassId = nil\nsubClassId = nil\ncharges = 1\nusable = nil\nsoulbound = nil\nquest = nil\nconjured = nil\nsortKey = <table> {\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = 1\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to compare number with nil\"\nMOUNTS = <table> {\n 19030 = true\n 18778 = true\n 21324 = true\n 18786 = true\n 18788 = true\n 18790 = true\n 18794 = true\n 18796 = true\n 18798 = true\n 5655 = true\n 5656 = true\n 8586 = true\n 8588 = true\n 8591 = true\n 8592 = true\n 8595 = true\n 5665 = true\n 19872 = true\n 5668 = true\n 1132 = true\n 18241 = true\n 18243 = true\n 18245 = true\n 5864 = true\n 19902 = true\n 12302 = true\n 12303 = true\n 18767 = true\n 13322 = true\n 18773 = true\n 18902 = true\n 18777 = true\n 13327 = true\n 8629 = true\n 13329 = true\n 18785 = true\n 18787 = true\n 18789 = true\n 5873 = true\n 18793 = true\n 18795 = true\n 18797 = true\n 2414 = true\n 13086 = true\n 12326 = true\n 12330 = true\n 21176 = true\n 21323 = true\n 21321 = true\n 21218 = true\n 13335 = true\n 13328 = true\n 18791 = true\n 13334 = true\n 13333 = true\n 13332 = true\n 13331 = true\n 13317 = true\n 5872 = true\n 12351 = true\n 8631 = true\n 12353 = true\n 12354 = true\n 15292 = true\n 15277 = true\n 15293 = true\n 8632 = true\n 18247 = true\n 18242 = true\n 18244 = true\n 18246 = true\n 18248 = true\n 13326 = true\n 8563 = true\n 13321 = true\n 8628 = true\n 18766 = true\n 15290 = true\n 2411 = true\n 18772 = true\n 18774 = true\n 18776 = true\n}\nSPECIAL = <table> {\n 5462 = true\n 17117 = true\n 11511 = true\n 13289 = true\n 13347 = true\n 17696 = true\n}\nKEYS = <table> {\n 13544 = true\n 20402 = true\n 9240 = true\n 12324 = true\n 12384 = true\n 17191 = true\n 16309 = true\n}\nTOOLS = <table> {\n 6218 = true\n 15846 = true\n 7005 = true\n 19727 = true\n 6339 = true\n 6219 = true\n 5956 = true\n 11145 = true\n 11130 = true\n 16207 = true\n 6256 = true\n 6367 = true\n 12709 = true\n 9149 = true\n 6365 = true\n 10498 = true\n 2901 = true\n}\nENCHANTING_MATERIALS = <table> {\n 10940 = true\n 11134 = true\n 16203 = true\n 11135 = true\n 11174 = true\n 16204 = true\n 11082 = true\n 11137 = true\n 11083 = true\n 10998 = true\n 20725 = true\n 11138 = true\n 11084 = true\n 11139 = true\n 11178 = true\n 10938 = true\n 14344 = true\n 14343 = true\n 11177 = true\n 10939 = true\n 10978 = true\n 11175 = true\n 16202 = true\n 11176 = true\n}\nHERBS = <table> {\n 13467 = true\n 13465 = true\n 13466 = true\n 3369 = true\n 13468 = true\n 13464 = true\n 3355 = true\n 2447 = true\n 2449 = true\n 8153 = true\n 2453 = true\n 3819 = true\n 3356 = true\n 3358 = true\n 8836 = true\n 13463 = true\n 3821 = true\n 765 = true\n 8839 = true\n 8845 = true\n 8831 = true\n 4625 = true\n 8838 = true\n 8846 = true\n 2450 = true\n 2452 = true\n 3818 = true\n 3820 = true\n 3357 = true\n 785 = true\n}\nitemStacks = <table> {\n}\nitemSortKeys = <table> {\n}\nCLASSES = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n}\nitemClasses = <table> {\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\SortBags.lua:568: in function `Item'\nInterface\\AddOns\\xVermin\\SortBags.lua:446: in function `Initialize'\nInterface\\AddOns\\xVermin\\SortBags.lua:237: in function `Start'\nInterface\\AddOns\\xVermin\\SortBags.lua:15: in function `SortBags'\nInterface\\AddOns\\xVermin\\SortBags.lua:619: in function <Interface\\AddOns\\xVermin\\SortBags.lua:618>",
+			["session"] = 1529,
+			["counter"] = 7,
 		}, -- [93]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\SortBags.lua:459: attempt to perform arithmetic on field '?' (a nil value)",
+			["time"] = "2020/07/31 17:21:16",
+			["locals"] = "free = <table> {\n}\n(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 3030::::1:0 = 1282\n}\n(for control) = \"3030::::1:0\"\nitem = \"3030::::1:0\"\ncount = 1282\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = nil\n(*temporary) = 1\n(*temporary) = 0\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to perform arithmetic on field '?' (a nil value)\"\nmodel = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n 6 = <table> {\n }\n 7 = <table> {\n }\n 8 = <table> {\n }\n 9 = <table> {\n }\n 10 = <table> {\n }\n 11 = <table> {\n }\n 12 = <table> {\n }\n 13 = <table> {\n }\n 14 = <table> {\n }\n 15 = <table> {\n }\n 16 = <table> {\n }\n 17 = <table> {\n }\n 18 = <table> {\n }\n 19 = <table> {\n }\n 20 = <table> {\n }\n 21 = <table> {\n }\n 22 = <table> {\n }\n 23 = <table> {\n }\n 24 = <table> {\n }\n 25 = <table> {\n }\n 26 = <table> {\n }\n 27 = <table> {\n }\n 28 = <table> {\n }\n 29 = <table> {\n }\n 30 = <table> {\n }\n}\ncounts = <table> {\n 3030::::1:0 = 1282\n}\nitemStacks = <table> {\n}\nitemClasses = <table> {\n 3030::::1:0 = 1\n}\nitemSortKeys = <table> {\n 3030::::1:0 = <table> {\n }\n}\nCONTAINERS = <table> {\n 1 = 0\n 2 = 1\n 3 = 2\n 4 = 3\n 5 = 4\n}\ninsert = <function> defined @Interface\\AddOns\\xVermin\\SortBags.lua:416\nassign = <function> defined @Interface\\AddOns\\xVermin\\SortBags.lua:424\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\SortBags.lua:459: in function `Initialize'\nInterface\\AddOns\\xVermin\\SortBags.lua:237: in function `Start'\nInterface\\AddOns\\xVermin\\SortBags.lua:15: in function `SortBags'\nInterface\\AddOns\\xVermin\\SortBags.lua:619: in function <Interface\\AddOns\\xVermin\\SortBags.lua:618>",
+			["session"] = 1531,
+			["counter"] = 8,
+		}, -- [94]
+		{
+			["message"] = "[string \"print(numberOfFreeSlots, BagType = GetContainerNumFreeSlots(1))\"]:1: ')' expected near '='",
+			["time"] = "2020/07/31 18:05:49",
+			["locals"] = "(*temporary) = \"print(numberOfFreeSlots, BagType = GetContainerNumFreeSlots(1))\"\n",
+			["stack"] = "[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 1532,
+			["counter"] = 1,
+		}, -- [95]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\AutoSellJunk.lua:25: attempt to index global 'cpxf' (a nil value)",
+			["time"] = "2020/07/31 18:08:49",
+			["locals"] = "AutoSellJunk = <function> defined @Interface\\AddOns\\xVermin\\AutoSellJunk.lua:1\nf = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = CustomContainer_CombatFreeBagSpace {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = <userdata>\n(*temporary) = \"CENTER\"\n(*temporary) = 0\n(*temporary) = 2\n(*temporary) = \"attempt to index global 'cpxf' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\AutoSellJunk.lua:25: in main chunk",
+			["session"] = 1533,
+			["counter"] = 1,
+		}, -- [96]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\AutoSellJunk.lua:38: attempt to perform arithmetic on local 'fs' (a nil value)",
+			["time"] = "2020/07/31 18:12:26",
+			["locals"] = "AutoSellJunk = <function> defined @Interface\\AddOns\\xVermin\\AutoSellJunk.lua:1\nf = <unnamed> {\n 0 = <userdata>\n}\nnumberOfFreeSlots = 2\nBagType = 0\nfs = nil\n(for index) = 0\n(for limit) = 4\n(for step) = 1\nbag = 0\n(*temporary) = 2\n(*temporary) = 0\n(*temporary) = 2\n(*temporary) = 0\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to perform arithmetic on local 'fs' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\AutoSellJunk.lua:38: in main chunk",
+			["session"] = 1536,
+			["counter"] = 1,
+		}, -- [97]
+		{
+			["message"] = "(null)",
+			["session"] = 1536,
+			["time"] = "2020/07/24 16:00:06",
+			["counter"] = 36,
+		}, -- [98]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\AutoSellJunk.lua:39: attempt to perform arithmetic on upvalue 'fs' (a nil value)",
+			["time"] = "2020/07/31 18:19:21",
+			["locals"] = "(for index) = 0\n(for limit) = 4\n(for step) = 1\nbag = 0\n(*temporary) = nil\n(*temporary) = 2\n(*temporary) = 2\n(*temporary) = 0\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to perform arithmetic on upvalue 'fs' (a nil value)\"\nnumberOfFreeSlots = 2\nBagType = 0\nfs = nil\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\AutoSellJunk.lua:39: in function <Interface\\AddOns\\xVermin\\AutoSellJunk.lua:35>\nInterface\\AddOns\\xVermin\\AutoSellJunk.lua:50: in function <Interface\\AddOns\\xVermin\\AutoSellJunk.lua:49>",
+			["session"] = 1542,
+			["counter"] = 7,
+		}, -- [99]
 	},
 }

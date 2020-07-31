@@ -565,14 +565,14 @@ function Item(container, position)
 		elseif HERBS[itemID] then
 			-- higher quality
 			tinsert(sortKey, 12)
-		elseif quality > 1 then
+		elseif quality and quality > 1 then
 			-- common quality
 			tinsert(sortKey, 10)
-		elseif quality == 1 then
+		elseif quality and quality == 1 then
 			-- junk
 			tinsert(sortKey, 13)
 			tinsert(sortKey, -sellPrice)
-		elseif quality == 0 then
+		elseif quality and quality == 0 then
 			tinsert(sortKey, 14)
 			tinsert(sortKey, sellPrice)
 		end
@@ -616,14 +616,19 @@ local f = CreateFrame("frame")
 f:SetScript(
 	"OnEvent",
 	function(self, event)
-		SortBags()
-		if event == "BANKFRAME_OPENED" or event == "BANKFRAME_CLOSED" then
-			SortBankBags()
-		end
-		ResetNewItemsAdiBags()
+		C_Timer.After(
+			5,
+			function()
+				SortBags()
+				if event == "BANKFRAME_OPENED" or event == "BANKFRAME_CLOSED" then
+					SortBankBags()
+				end
+				ResetNewItemsAdiBags()
+			end
+		)
 	end
 )
-f:RegisterEvent("BAG_UPDATE")
-f:RegisterEvent("BAG_UPDATE_DELAYED")
-f:RegisterEvent("BANKFRAME_OPENED")
-f:RegisterEvent("BANKFRAME_CLOSED")
+-- f:RegisterEvent("BAG_UPDATE")
+-- f:RegisterEvent("BAG_UPDATE_DELAYED")
+-- f:RegisterEvent("BANKFRAME_OPENED")
+-- f:RegisterEvent("BANKFRAME_CLOSED")

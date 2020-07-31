@@ -214,12 +214,12 @@ EavesDropStatsDB = {
 				["hit"] = {
 					["Raptor Strike"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/30/20 10:30:59|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffRaptor Strike|r|h hits |Hunit:Creature-0-4445-1-176-12856-000022F565:Ashenvale Outrunner|hAshenvale Outrunner|h for |cffffffff59|r |cffffffffPhysical|r.",
-							["amount"] = 59,
+							["time"] = "|cffffffff07/31/20 09:38:56|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffRaptor Strike|r|h hits |Hunit:Creature-0-4445-1-165-3458-0001247241:Razormane Seer|hRazormane Seer|h for |cffffffff80|r |cffffffffPhysical|r.",
+							["amount"] = 80,
 						},
 						[2] = {
-							["time"] = "|cffffffff07/24/20 06:54:20|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffRaptor Strike|r|h hits |Hunit:Creature-0-4448-1-180-3260-00001AC702:Bristleback Water Seeker|hBristleback Water Seeker|h for |cffffffff43|r |cffffffffPhysical|r.(Critical)",
-							["amount"] = 43,
+							["time"] = "|cffffffff07/31/20 09:24:16|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffRaptor Strike|r|h hits |Hunit:Creature-0-4445-1-165-3458-0000246C64:Razormane Seer|hRazormane Seer|h for |cffffffff66|r |cffffffffPhysical|r.(87 Overkill) (Critical)",
+							["amount"] = 153,
 						},
 						["icon"] = 132223,
 					},
@@ -233,8 +233,8 @@ EavesDropStatsDB = {
 					},
 					["Melee Attack"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/26/20 12:07:08|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-29-3260-00001D3160:Bristleback Water Seeker|hBristleback Water Seeker|h for |cffffffff59|r |cffffffffPhysical|r.",
-							["amount"] = 59,
+							["time"] = "|cffffffff07/31/20 09:06:55|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h melee swing hits |Hunit:Creature-0-4445-1-165-3458-000024685F:Razormane Seer|hRazormane Seer|h for |cffffffff62|r |cffffffffPhysical|r.",
+							["amount"] = 62,
 						},
 						[2] = {
 							["time"] = "|cffffffff07/26/20 12:01:26|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-29-3397-00001D50A3:Kolkar Bloodcharger|hKolkar Bloodcharger|h for |cffffffff118|r |cffffffffPhysical|r.(Critical)",
@@ -289,23 +289,14 @@ EavesDropStatsDB = {
 					},
 					["Mongoose Bite"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/27/20 03:41:31|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMongoose Bite|r|h hits |Hunit:Creature-0-4448-1-29-3458-00009ED80F:Razormane Seer|hRazormane Seer|h for |cffffffff19|r |cffffffffPhysical|r.",
-							["amount"] = 19,
+							["time"] = "|cffffffff07/31/20 05:35:47|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMongoose Bite|r|h hits |Hunit:Creature-0-4445-1-165-3458-0000243986:Razormane Seer|hRazormane Seer|h for |cffffffff20|r |cffffffffPhysical|r.",
+							["amount"] = 20,
 						},
 						[2] = {
-							["time"] = "|cffffffff07/26/20 12:12:53|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMongoose Bite|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-29-3466-00001D4B7D:Zhevra Courser|hZhevra Courser|h for |cffffffff36|r |cffffffffPhysical|r.(Critical)",
-							["amount"] = 36,
+							["time"] = "|cffffffff07/31/20 05:49:06|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMongoose Bite|r|h hits |Hunit:Creature-0-4445-1-165-3458-00002437BB:Razormane Seer|hRazormane Seer|h for |cffffffff38|r |cffffffffPhysical|r.(Critical)",
+							["amount"] = 38,
 						},
 						["icon"] = 132215,
-					},
-					["Multi-Shot"] = {
-						[-2] = {
-							["time"] = "|cffffffff07/27/20 07:44:26|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMulti-Shot|r|h hits |Hunit:Creature-0-4448-1-13-3198-00001EF7C9:Burning Blade Apprentice|hBurning Blade Apprentice|h for |cffffffff70|r |cffffffffPhysical|r.",
-							["amount"] = 70,
-						},
-						[2] = {
-						},
-						["icon"] = 132330,
 					},
 					["Wing Clip"] = {
 						[-2] = {
@@ -317,6 +308,17 @@ EavesDropStatsDB = {
 							["amount"] = 8,
 						},
 						["icon"] = 132309,
+					},
+					["Multi-Shot"] = {
+						[-2] = {
+							["time"] = "|cffffffff07/31/20 09:34:23|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMulti-Shot|r|h hits |Hunit:Creature-0-4445-1-165-3458-0000246F72:Razormane Seer|hRazormane Seer|h for |cffffffff71|r |cffffffffPhysical|r.",
+							["amount"] = 71,
+						},
+						[2] = {
+							["time"] = "|cffffffff07/31/20 09:33:39|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMulti-Shot|r|h hits |Hunit:Creature-0-4445-1-165-3458-0000247158:Razormane Seer|hRazormane Seer|h for |cffffffff117|r |cffffffffPhysical|r.(Critical)",
+							["amount"] = 117,
+						},
+						["icon"] = 132330,
 					},
 				},
 			}, -- [1]
@@ -356,8 +358,8 @@ EavesDropStatsDB = {
 					},
 					["Physical"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/28/20 10:14:10|r\n|Hunit:Player-4475-028D2B72:Helgê-Shazzrah|hHelgê-Shazzrah's|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Ambush|r|h hits |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h for |cffff1313263|r |cffff1313Physical|r.",
-							["amount"] = 263,
+							["time"] = "|cffffffff07/31/20 04:58:59|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h falls and loses |cffffffff350|r health.",
+							["amount"] = 350,
 						},
 						[2] = {
 							["time"] = "|cffffffff07/27/20 02:57:49|r\n|Hicon:128:source|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-29-5859-00001EA56B:Hagg Taurenbane|hHagg Taurenbane's|h melee swing hits |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h for |cffff1313158|r |cffff1313Physical|r.(Critical)",

@@ -4,6 +4,12 @@ VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 /cast Cleave
 /cast Overpower
 END
+VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Heroic Strike
+/startattack
+/cast Overpower
+/castsequence reset=target/15 Sunder Armor, Heroic Strike
+END
 VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip Charge
 /startattack

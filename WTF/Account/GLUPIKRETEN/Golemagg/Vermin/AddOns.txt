@@ -20,7 +20,7 @@ oUF: disabled
 oUF_Neav: disabled
 oUF_NeavRaid: enabled
 oUF_Phanx: disabled
-Peddler: disabled
+Peddler: enabled
 Skada: disabled
 SkadaCC: disabled
 SkadaDamageTaken: disabled

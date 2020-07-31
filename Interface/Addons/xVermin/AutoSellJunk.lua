@@ -14,6 +14,6 @@ local function AutoSellJunk()
 	end
 end
 
-local f = CreateFrame("frame")
-f:SetScript("OnEvent", AutoSellJunk)
-f:RegisterEvent("MERCHANT_SHOW")
+-- local f = CreateFrame("frame")
+-- f:SetScript("OnEvent", AutoSellJunk)
+-- f:RegisterEvent("MERCHANT_SHOW")
