@@ -602,12 +602,9 @@ end
 local function handleEvent(self, event, addonName)
 	if event == "ADDON_LOADED" and addonName == "Peddler" then
 		peddler:UnregisterEvent("ADDON_LOADED")
-
 		setupDefaults()
-
 		countLimit = 400
 		peddler:SetScript("OnUpdate", onUpdate)
-
 		if IsAddOnLoaded("Baggins") then
 			Baggins:RegisterSignal("Baggins_BagOpened", handleBagginsOpened, Baggins)
 		end

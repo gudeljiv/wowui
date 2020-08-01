@@ -19,11 +19,11 @@ ChocolateBarDB = {
 		["Pitchwise - Golemagg"] = "Default",
 		["Greenwise - Golemagg"] = "Default",
 		["Pitchwise - Genesis"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
 		["Pepecocorita - Genesis"] = "Default",
 		["Kosturko - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
 		["Elohssa - Stonespine"] = "Default",
 		["Ozrencic - Golemagg"] = "Default",
 		["Whatevs - Stonespine"] = "Default",
@@ -50,6 +50,10 @@ ChocolateBarDB = {
 					["barOffx"] = -88.3325424194336,
 				},
 			},
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
+			["locked"] = false,
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -60,11 +64,7 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["locked"] = false,
-			["fixedStrata"] = true,
+			["moveFrames"] = false,
 			["objSettings"] = {
 				["PitBull4"] = {
 					["enabled"] = false,
@@ -147,6 +147,15 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar1",
 					["align"] = "center",
 					["showText"] = false,
+				},
+				["Track Everything"] = {
+					["index"] = 4,
+					["align"] = "right",
+					["showLabel"] = true,
+					["showText"] = false,
+					["barName"] = "ChocolateBar1",
+					["showIcon"] = false,
+					["customLabel"] = "TE",
 				},
 				["AutoVendor"] = {
 					["index"] = 4,
@@ -293,18 +302,18 @@ ChocolateBarDB = {
 					["customLabel"] = "B",
 				},
 			},
-			["gap"] = 0,
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["desaturated"] = false,
-			["moveFrames"] = false,
-			["fontName"] = "Friz Quadrata TT",
-			["textOffset"] = 2,
-			["height"] = 20,
+			["gap"] = 0,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
 			["forceColor"] = false,
+			["fontName"] = "Friz Quadrata TT",
+			["textOffset"] = 2,
+			["height"] = 20,
+			["fixedStrata"] = true,
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["textColor"] = {
 				["a"] = 1,
 				["b"] = 1,
@@ -315,11 +324,11 @@ ChocolateBarDB = {
 	},
 }
 CB_PlayedTime = {
-	["Korupcija-"] = {
-		["total"] = 21359,
-	},
 	["Greenwise-"] = {
 		["total"] = 79871,
+	},
+	["Korupcija-"] = {
+		["total"] = 21359,
 	},
 	["Pitchwise-"] = {
 		["total"] = 390,
@@ -333,14 +342,14 @@ CB_PlayedTime = {
 	["Elohssa-"] = {
 		["total"] = 3552,
 	},
-	["Mxzq-"] = {
-		["total"] = 188810,
+	["Verminz-"] = {
+		["total"] = 311368,
 	},
 	["Paydo-"] = {
 		["total"] = 18945,
 	},
 	["Mxyz-"] = {
-		["total"] = 10398,
+		["total"] = 10602,
 	},
 	["Vermin-"] = {
 		["total"] = 133125,
@@ -357,7 +366,7 @@ CB_PlayedTime = {
 	["Dotwise-"] = {
 		["total"] = 3924,
 	},
-	["Verminz-"] = {
-		["total"] = 311368,
+	["Mxzq-"] = {
+		["total"] = 192158,
 	},
 }

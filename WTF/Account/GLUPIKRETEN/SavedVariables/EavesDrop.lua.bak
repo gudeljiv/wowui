@@ -16,8 +16,8 @@ EavesDropDB = {
 		["Verminz - Genesis"] = "Default",
 		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
 		["Elohssa - Stonespine"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
 		["Pitchwise - Genesis"] = "Pitchwise - Genesis",
 		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
 		["Pepecocorita - Genesis"] = "Default",
@@ -40,9 +40,9 @@ EavesDropDB = {
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
-			["SCROLLBUTTON"] = true,
-			["TEXTSIZE"] = 13,
 			["NUMLINES"] = 16,
+			["TEXTSIZE"] = 13,
+			["SCROLLBUTTON"] = true,
 			["HIDETAB"] = true,
 			["LINEHEIGHT"] = 16,
 			["FRAME"] = {
@@ -65,12 +65,12 @@ EavesDropDB = {
 			["x"] = 551.714104134467,
 			["HIDETAB"] = true,
 			["TEXTSIZE"] = 13,
+			["SCROLLBUTTON"] = true,
+			["NUMLINES"] = 16,
+			["LINEHEIGHT"] = 16,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
-			["NUMLINES"] = 16,
-			["LINEHEIGHT"] = 16,
-			["SCROLLBUTTON"] = true,
 		},
 		["Greenwise - Golemagg"] = {
 		},
@@ -86,13 +86,13 @@ EavesDropDB = {
 			["LINEWIDTH"] = 130,
 			["x"] = 551.714104134467,
 			["TEXTSIZE"] = 13,
-			["NUMLINES"] = 16,
-			["SCROLLBUTTON"] = true,
-			["LINEHEIGHT"] = 16,
-			["HIDETAB"] = true,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
+			["SCROLLBUTTON"] = true,
+			["LINEHEIGHT"] = 16,
+			["HIDETAB"] = true,
+			["NUMLINES"] = 16,
 			["y"] = 236.195578993564,
 		},
 		["Verminz - Golemagg"] = {
@@ -107,11 +107,11 @@ EavesDropDB = {
 			["SCROLLBUTTON"] = true,
 			["HIDETAB"] = true,
 		},
-		["Mxyzptlk - Golemagg"] = {
-		},
 		["Pitchwise - Genesis"] = {
 		},
 		["Vermin - Golemagg"] = {
+		},
+		["Mxyzptlk - Golemagg"] = {
 		},
 		["Judawise - Golemagg"] = {
 		},
@@ -125,14 +125,14 @@ EavesDropDB = {
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
-			["SCROLLBUTTON"] = true,
-			["TEXTSIZE"] = 13,
 			["NUMLINES"] = 16,
-			["HIDETAB"] = true,
-			["LINEHEIGHT"] = 16,
+			["TEXTSIZE"] = 13,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
+			["HIDETAB"] = true,
+			["LINEHEIGHT"] = 16,
+			["SCROLLBUTTON"] = true,
 		},
 		["Golemagg"] = {
 		},

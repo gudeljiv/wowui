@@ -18,11 +18,11 @@ EavesDropDB = {
 		["Pitchwise - Golemagg"] = "Default",
 		["Greenwise - Golemagg"] = "Default",
 		["Pitchwise - Genesis"] = "Pitchwise - Genesis",
-		["Mxyzptlk - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
 		["Pepecocorita - Genesis"] = "Default",
 		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
 		["Judawise - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
 		["Elohssa - Stonespine"] = "Default",
 		["Ozrencic - Golemagg"] = "Ozrencic - Golemagg",
 		["Whatevs - Stonespine"] = "Default",
@@ -44,10 +44,10 @@ EavesDropDB = {
 				["a"] = 0.4,
 			},
 			["TEXTSIZE"] = 13,
-			["SCROLLBUTTON"] = true,
+			["NUMLINES"] = 16,
 			["HIDETAB"] = true,
 			["LINEHEIGHT"] = 16,
-			["NUMLINES"] = 16,
+			["SCROLLBUTTON"] = true,
 		},
 		["Pitchwise - Golemagg"] = {
 		},
@@ -63,11 +63,11 @@ EavesDropDB = {
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
-			["SCROLLBUTTON"] = true,
-			["TEXTSIZE"] = 13,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
+			["TEXTSIZE"] = 13,
+			["SCROLLBUTTON"] = true,
 			["NUMLINES"] = 16,
 			["LINEHEIGHT"] = 16,
 			["HIDETAB"] = true,
@@ -86,13 +86,13 @@ EavesDropDB = {
 			["LINEWIDTH"] = 130,
 			["x"] = 551.714104134467,
 			["TEXTSIZE"] = 13,
-			["FRAME"] = {
-				["a"] = 0.4,
-			},
+			["NUMLINES"] = 16,
 			["SCROLLBUTTON"] = true,
 			["LINEHEIGHT"] = 16,
 			["HIDETAB"] = true,
-			["NUMLINES"] = 16,
+			["FRAME"] = {
+				["a"] = 0.4,
+			},
 			["y"] = 236.195578993564,
 		},
 		["Verminz - Golemagg"] = {
@@ -111,7 +111,7 @@ EavesDropDB = {
 		},
 		["Korupcija - Stonespine"] = {
 		},
-		["Mxyzptlk - Golemagg"] = {
+		["Pitchwise - Genesis"] = {
 		},
 		["Golemagg"] = {
 		},
@@ -125,20 +125,20 @@ EavesDropDB = {
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
+			["SCROLLBUTTON"] = true,
+			["TEXTSIZE"] = 13,
+			["NUMLINES"] = 16,
+			["HIDETAB"] = true,
+			["LINEHEIGHT"] = 16,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
-			["TEXTSIZE"] = 13,
-			["SCROLLBUTTON"] = true,
-			["HIDETAB"] = true,
-			["LINEHEIGHT"] = 16,
-			["NUMLINES"] = 16,
 		},
 		["Judawise - Golemagg"] = {
 		},
-		["Vermin - Golemagg"] = {
+		["Mxyzptlk - Golemagg"] = {
 		},
-		["Pitchwise - Genesis"] = {
+		["Vermin - Golemagg"] = {
 		},
 		["Ozrencic - Golemagg"] = {
 		},

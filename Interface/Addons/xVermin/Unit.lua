@@ -19,10 +19,9 @@ PlayerFrame:HookScript(
 		if (UnitIsDND("player")) then
 			cus.text:SetText("DND")
 		end
+		cus.text:SetTextColor(0.058, 0.901, 0.466, 1)
 	end
 )
-
-cus.text:SetTextColor(0.058, 0.901, 0.466, 1)
 
 -----------------------------------------------------------------------------------------------------------------------------
 -- Unit (Player) ammo count
@@ -48,3 +47,28 @@ if class == "HUNTER" then
 		end
 	)
 end
+
+-----------------------------------------------------------------------------------------------------------------------------
+-- Unit (Player) speed
+-----------------------------------------------------------------------------------------------------------------------------
+local speed
+local us = CreateFrame("Frame", "CustomContainer_CombatUnitSpeed", CustomContainer_Combat)
+us:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 2)
+us:SetWidth(1)
+us:SetHeight(1)
+us.text = us:CreateFontString(nil, "ARTWORK")
+us.text:SetFont(config.font.arial, 10, "NONE")
+us.text:SetPoint("BOTTOMRIGHT", CustomContainer_Combat, "TOPRIGHT", -1, 2)
+
+PlayerFrame:HookScript(
+	"OnUpdate",
+	function()
+		speed = string.format("%d", (GetUnitSpeed("Player") / 7) * 100)
+		if speed and speed ~= "0" then
+			us.text:SetText(speed .. "%")
+		else
+			us.text:SetText("")
+		end
+		us.text:SetTextColor(0.058, 0.901, 0.466, 1)
+	end
+)

@@ -12,7 +12,7 @@ NWB.usRealms = {
 	["Herod"] = true,
 	--["Pagle"] = true,
 	--["Sulfuras"] = true,
-	["Whitemane"] = true
+	["Whitemane"] = true,
 }
 
 NWB.euRealms = {
@@ -25,7 +25,7 @@ NWB.euRealms = {
 	["Mograine"] = true,
 	["Sulfuron"] = true,
 	["Venoxis"] = true,
-	["Пламегор"] = true
+	["Пламегор"] = true,
 }
 
 NWB.krRealms = {
@@ -33,12 +33,12 @@ NWB.krRealms = {
 	["얼음피"] = true,
 	["힐스브래드"] = true,
 	["라그나로스"] = true,
-	["소금 평원"] = true
+	["소금 평원"] = true,
 }
 
 NWB.twRealms = {
 	["伊弗斯"] = true,
-	["瑪拉頓"] = true
+	["瑪拉頓"] = true,
 }
 
 NWB.cnRealms = {
@@ -131,5 +131,5 @@ NWB.cnRealms = {
 	["赫洛德"] = true,
 	["德姆塞卡尔"] = true,
 	["震地者"] = true,
-	["霜语"] = true
+	["霜语"] = true,
 }

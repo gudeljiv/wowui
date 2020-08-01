@@ -208,7 +208,7 @@ NWB.orgrimmarCreatures = {
 	[3409] = "Zendo'jian",
 	[3326] = "Zevrost",
 	[7010] = "Zilzibin Drumlore",
-	[4047] = "Zor Lonetree"
+	[4047] = "Zor Lonetree",
 }
 
 NWB.stormwindCreatures = {
@@ -367,7 +367,7 @@ NWB.stormwindCreatures = {
 	[2485] = "Larimaine Purdue",
 	[1300] = "Lawrence Schneider",
 	--[14991] = "League of Arathor Emissary",
-	[2795] = 'Lenny "Fingers" McCoy',
+	[2795] = "Lenny \"Fingers\" McCoy",
 	[16005] = "Lieutenant Jocryn Heldric",
 	[8666] = "Lil Timmy",
 	[5518] = "Lilliam Sparkspindle",
@@ -432,7 +432,7 @@ NWB.stormwindCreatures = {
 	--[12580] = "Reginald Windsor",
 	[1428] = "Rema Schneider",
 	[1432] = "Renato Gallina",
-	[6946] = 'Renzik "The Shiv"',
+	[6946] = "Renzik \"The Shiv\"",
 	--[6492] = "Rift Spawn",
 	[277] = "Roberto Pupellyverbos",
 	--[1371] = "Roman",
@@ -500,7 +500,7 @@ NWB.stormwindCreatures = {
 	[5479] = "Wu Shen",
 	[1309] = "Wynne Larson",
 	[1435] = "Zardeth of the Black Claw",
-	[1733] = "Zggi"
+	[1733] = "Zggi",
 }
 
 NWB.companionCreatures = {
@@ -566,6 +566,6 @@ NWB.companionCreatures = {
 	[47687] = "Winna's Kitten", --Felwood quest.
 	[15661] = "Baby Shark",
 	[9936] = "Corrupted Kitten",
-	[17254] = "White Tiger Cub" --Not ingame?
+	[17254] = "White Tiger Cub", --Not ingame?
 	--[999999999] = "Snapjaw", --Turtle Egg (Albino), never made it into game? No ID found.
 }

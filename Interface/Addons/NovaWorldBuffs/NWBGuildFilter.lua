@@ -42,7 +42,7 @@ local filterTypeLocales = {
 		["Ренд будет бафнут через 6 секунд."] = true,
 		["Ониксия будет бафнута через 14 секунд."] = true,
 		["Нефариан будет бафнут через 15 секунд."] = true,
-		["Зандалар будет бафнут через 30 секунд."] = true
+		["Зандалар будет бафнут через 30 секунд."] = true,
 	},
 	["filterDrops"] = {
 		--Buff has dropped msgs.
@@ -79,7 +79,7 @@ local filterTypeLocales = {
 		["Благословление вождя (Ренд) было бафнуто."] = true,
 		["Ободряющий клич Драконоборца (Ониксия) был бафнут."] = true,
 		["Ободряющий клич Драконоборца (Нефариан) был бафнут."] = true,
-		["Дух Зандалара (Хаккар) был бафнут."] = true
+		["Дух Зандалара (Хаккар) был бафнут."] = true,
 	},
 	["filterTimers"] = {
 		--Timer msgs.
@@ -102,7 +102,7 @@ local filterTypeLocales = {
 		["%s resets dans %s"] = true,
 		--RU
 		["%s может быть поставлен(а) сейчас"] = true,
-		["%s откатится через %s"] = true
+		["%s откатится через %s"] = true,
 	},
 	["filterSongflowers"] = {
 		--Songflower msgs.
@@ -118,7 +118,7 @@ local filterTypeLocales = {
 		--FR
 		["Songflower prise à %s, prochain spawn dans 25mins."] = true,
 		--RU
-		["Песнецвет взят в локации: %s. Следующий через 25 мин."] = true
+		["Песнецвет взят в локации: %s. Следующий через 25 мин."] = true,
 	},
 	["filterNpcKilled"] = {
 		--Npc killed.
@@ -155,7 +155,7 @@ local filterTypeLocales = {
 		["Властитель Рунтак был убит (NPC, который бафает Ониксию)."] = true,
 		["Майор Маттингли был убит (NPC, который бафает Ониксию)."] = true,
 		["Верховный воевода Саурфанг был убит (NPC, который бафает Нефариана)."] = true,
-		["Фельдмаршал Афрасиаби был убит (NPC, который бафает Нефариана)."] = true
+		["Фельдмаршал Афрасиаби был убит (NPC, который бафает Нефариана)."] = true,
 	},
 	["filterCommandResponse"] = {
 		--!wb command response.
@@ -171,40 +171,40 @@ local filterTypeLocales = {
 		--FR
 		--["Onyxia:(.+)Nefarian:"] = true,
 		--RU
-		["Ониксия:(.+)Нефариан:"] = true
-	}
-}
+		["Ониксия:(.+)Нефариан:"] = true,
+	},
+};
 
 function NWB.guildChatFilter(self, event, msg, author, ...)
 	if (NWB.loaded) then
 		for type, locales in pairs(filterTypeLocales) do
 			if (NWB.db.global[type]) then
 				for k, v in pairs(locales) do
-					local match = k
+					local match = k;
 					if (type ~= "filterCommandResponse") then
 						--Only add escapes for strings without (.+).
-						match = string.gsub(k, "%(", "%%(")
-						match = string.gsub(match, "%)", "%%)")
-						match = string.gsub(match, "%.", ".") --Test this.
-						match = string.gsub(match, "%%s", "(.+)")
+						match = string.gsub(k, "%(", "%%(");
+						match = string.gsub(match, "%)", "%%)");
+						match = string.gsub(match, "%.", "."); --Test this.
+						match = string.gsub(match, "%%s", "(.+)");
 					end
 					if (match and match ~= "" and string.match(msg, "%[WorldBuffs%]") and string.match(msg, match)) then
-						NWB:debug("filtering", k)
-						return true
+						NWB:debug("filtering", k);
+						return true;
 					end
 				end
 			end
 		end
 		if (NWB.db.global.filterCommand and (string.match(msg, "^!wb") or string.match(msg, "^!dmf"))) then
-			NWB:debug("filtering command")
-			return true
+			NWB:debug("filtering command");
+			return true;
 		end
 	end
-	return false, msg, author, ...
+	return false, msg, author, ...;
 end
 
-ChatFrame_AddMessageEventFilter("CHAT_MSG_GUILD", NWB.guildChatFilter)
+ChatFrame_AddMessageEventFilter("CHAT_MSG_GUILD", NWB.guildChatFilter);
 
 --This is to make sure the whole addon loaded correctly with no errors so the chat filters work correctly.
 --This is the last file to load.
-NWB.loaded = true
+NWB.loaded = true;

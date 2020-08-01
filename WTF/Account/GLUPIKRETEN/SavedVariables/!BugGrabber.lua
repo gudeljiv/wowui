@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 1559,
+	["session"] = 1573,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -785,5 +785,20 @@ BugGrabberDB = {
 			["session"] = 1542,
 			["counter"] = 7,
 		}, -- [99]
+		{
+			["message"] = "...terface\\AddOns\\TrackEverything\\Core\\Service\\Icon.lua:59: attempt to index field 'minimapButton' (a nil value)",
+			["time"] = "2020/08/01 09:15:46",
+			["stack"] = "...terface\\AddOns\\TrackEverything\\Core\\Service\\Icon.lua:59: in function <...terface\\AddOns\\TrackEverything\\Core\\Service\\Icon.lua:29>\n[C]: ?\n...ce\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0-12.lua:70: in function <...ce\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:65>\n...ce\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0-12.lua:498: in function `InitializeAddon'\n...ce\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0-12.lua:613: in function <...ce\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:605>",
+			["session"] = 1562,
+			["counter"] = 1,
+		}, -- [100]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Unit.lua:67: attempt to compare number with string",
+			["time"] = "2020/08/01 10:03:12",
+			["locals"] = "(*temporary) = \"0\"\n(*temporary) = \"%d\"\n(*temporary) = 0\n(*temporary) = \"0\"\n(*temporary) = 0\n(*temporary) = 9.099999\n(*temporary) = \"attempt to compare number with string\"\nspeed = \"0\"\nus = CustomContainer_CombatUnitSpeed {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Unit.lua:67: in function <Interface\\AddOns\\xVermin\\Unit.lua:65>\n[C]: ?",
+			["session"] = 1572,
+			["counter"] = 227,
+		}, -- [101]
 	},
 }
