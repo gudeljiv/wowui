@@ -492,16 +492,6 @@ local function markLUIBags()
 	end
 end
 
-local function markSortedItems()
-	for bagNumber = 0, 4 do
-		local bagsSlotCount = GetContainerNumSlots(bagNumber)
-		for slotNumber = 1, bagsSlotCount do
-			local itemButton = _G["SortedSlot_Bag" .. bagNumber .. "Item" .. slotNumber .. "FavoriteButton"]
-			checkItem(bagNumber, slotNumber, itemButton)
-		end
-	end
-end
-
 -- Also works for bBag.
 local function markNormalBags()
 	for containerNumber = 0, 4 do
@@ -557,8 +547,6 @@ local function markWares()
 		markElvUIBags()
 	elseif IsAddOnLoaded("LUI") and _G["LUIBags_Item0_1"] then
 		markLUIBags()
-	elseif IsAddOnLoaded("Sorted") then
-		markSortedItems()
 	else
 		usingDefaultBags = true
 		markNormalBags()
@@ -568,13 +556,18 @@ end
 Peddler.markWares = markWares
 
 local function onUpdate()
-	markCounter = markCounter + 1
-	if markCounter <= countLimit then
-		return
-	else
-		markCounter = 0
-		markWares()
-	end
+	C_Timer.After(
+		2,
+		function()
+			markCounter = markCounter + 1
+			if markCounter <= countLimit then
+				return
+			else
+				markCounter = 0
+				markWares()
+			end
+		end
+	)
 end
 
 local function handleBagginsOpened()
@@ -609,12 +602,9 @@ end
 local function handleEvent(self, event, addonName)
 	if event == "ADDON_LOADED" and addonName == "Peddler" then
 		peddler:UnregisterEvent("ADDON_LOADED")
-
 		setupDefaults()
-
 		countLimit = 400
 		peddler:SetScript("OnUpdate", onUpdate)
-
 		if IsAddOnLoaded("Baggins") then
 			Baggins:RegisterSignal("Baggins_BagOpened", handleBagginsOpened, Baggins)
 		end
