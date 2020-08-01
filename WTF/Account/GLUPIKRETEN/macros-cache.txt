@@ -4,6 +4,7 @@ VER 3 0000000000000008 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 000000000000000A " " "INV_MISC_QUESTIONMARK"
 /tar Humar The Pridelord
+/tar The Rake
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
@@ -21,5 +22,5 @@ VER 3 0000000000000006 "PF" "Inv_misc_questionmark"
 /use item:3771
 END
 VER 3 0000000000000009 "TEST" "INV_MISC_QUESTIONMARK"
-/run print(string.format("%d", (GetUnitSpeed("Player") / 7) * 100))
+/run for b=0,4 do for s=1,36 do n=GetContainerItemLink(b,s);if n and string.find(n,"Sharp Arrow") then PickupContainerItem(b,s);DeleteCursorItem();end;end;end;
 END

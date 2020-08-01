@@ -86,6 +86,7 @@ function bagProto:Open()
 		return
 	end
 	local frame = self:GetFrame()
+
 	if not frame:IsShown() then
 		self:Debug("Open")
 		if self.PreOpen then
@@ -205,7 +206,7 @@ end
 
 do
 	-- L["Backpack"]
-	local backpack = addon:NewBag("Backpack", 10, false, "AceHook-3.0")
+	backpack = addon:NewBag("Backpack", 10, false, "AceHook-3.0")
 
 	function backpack:PostEnable()
 		self:RegisterMessage("AdiBags_InteractingWindowChanged")

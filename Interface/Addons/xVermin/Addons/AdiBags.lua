@@ -1,0 +1,35 @@
+-- if (IsAddOnLoaded("AdiBags")) then
+-- 	local totalSlotCount = 0
+-- 	for bagNumber = 0, 4 do
+-- 		totalSlotCount = totalSlotCount + GetContainerNumSlots(bagNumber)
+-- 	end
+-- 	-- For some reason, AdiBags can have way more buttons than the actual amount of bag slots... not sure how or why.
+-- 	totalSlotCount = totalSlotCount + 160
+-- 	if totalSlotCount < 100 then
+-- 		totalSlotCount = 100
+-- 	end
+-- 	C_Timer.After(
+-- 		10,
+-- 		function()
+-- 			print(totalSlotCount)
+-- 			for slotNumber = 1, totalSlotCount do
+-- 				local itemButton = _G["AdiBagsItemButton" .. slotNumber]
+-- 				if itemButton then
+-- 					local _, bag, slot = strsplit("-", tostring(itemButton))
+-- 					bag = tonumber(bag)
+-- 					slot = tonumber(slot)
+-- 					if bag and slot then
+-- 						print(GetContainerItemInfo(bag, slot))
+-- 					end
+-- 				end
+-- 			end
+-- 		end
+-- 	)
+-- end
+-- -- local AdiBagsContainer = _G["AdiBagsContainer1"]
+-- -- AdiBagsContainer:HookScript(
+-- -- 	"OnShow",
+-- -- 	function()
+-- -- 		print("ab opened")
+-- -- 	end
+-- -- )

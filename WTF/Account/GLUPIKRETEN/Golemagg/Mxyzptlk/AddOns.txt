@@ -78,7 +78,7 @@ DBM-Onyxia: enabled
 DBM-AQ20: enabled
 DBM-AQ40: enabled
 DBM-ZG: enabled
-Questie: enabled
+Questie: disabled
 Bagnon_GuildBank: disabled
 Bagnon_Config: disabled
 Bagnon: disabled
