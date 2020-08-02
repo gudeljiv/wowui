@@ -1,0 +1,61 @@
+-- local function SkinMailBox()
+-- 	local items = GetInboxNumItems()
+-- 	if items > 0 then
+-- 		for i = 1, items do
+-- 			local frame = _G["MailItem" .. i .. "Button"]
+-- 			local frameSlot = _G["MailItem" .. i .. "ButtonSlot"]
+-- 			if (frame ~= nil) then
+-- 				frame:CreateBeautyBorder(8)
+-- 				MailItem1Button:CreateBeautyBorder(8)
+-- 				MailItem1ButtonSlot:Hide()
+-- 			end
+-- 		end
+-- 		for inbox_item_index = 1, inbox_items do
+-- 			inbox_text = GetInboxText(inbox_item_index)
+-- 			inbox_item = GetInboxItem(inbox_item_index, 1)
+-- 			if (inbox_text ~= nil) then
+-- 				DEFAULT_CHAT_FRAME:AddMessage("Inbox Text: " .. GetInboxText(inbox_item_index), 1, 1, 1)
+-- 			end
+-- 			if (inbox_item ~= nil) then
+-- 				DEFAULT_CHAT_FRAME:AddMessage("Inbox Item: " .. GetInboxItem(inbox_item_index, 1), 1, 1, 1)
+-- 			end
+-- 		end
+-- 	end
+-- end
+-- local MailBoxFrameHooked = false
+-- local addonLoadedFrame = CreateFrame("Frame")
+-- addonLoadedFrame:RegisterEvent("ADDON_LOADED")
+-- addonLoadedFrame:SetScript(
+-- 	"OnEvent",
+-- 	function(self, event, arg1, ...)
+-- 		if not playerTalentFrameHooked and arg1 == "Blizzard_TalentUI" then
+-- 			hooksecurefunc(
+-- 				TalentFrame,
+-- 				"Show",
+-- 				function()
+-- 					SkinMailBox()
+-- 				end
+-- 			)
+-- 			-- hooksecurefunc(
+-- 			-- 	TalentFrame,
+-- 			-- 	"Hide",
+-- 			-- 	function()
+-- 			-- 		print("Hiding PlayerTalentFrame")
+-- 			-- 	end
+-- 			-- )
+-- 			MailBoxFrameHooked = true
+-- 		end
+-- 	end
+-- )
+-- MailFrame:HookScript(
+-- 	"OnShow",
+-- 	function()
+-- 		SkinMailBox()
+-- 	end
+-- )
+-- MailFrame:HookScript(
+-- 	"OnHide",
+-- 	function()
+-- 		print("m closed")
+-- 	end
+-- )

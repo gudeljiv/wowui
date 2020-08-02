@@ -5,12 +5,13 @@
 
 Config.lua
 
+Frames/CharacterFrame.lua
 Frames/CustomContainers.lua
 Frames/DefaultFramesCustomScale.lua
 Frames/DefaultFramesDarker.lua
 Frames/GroopLootFrame.lua
-Frames/CharacterFrame.lua
 Frames/InspectFrame.lua
+Frames/MailBoxFrame.lua
 Frames/SpellBookFrame.lua
 Frames/TalentFrame.lua
 # Frames/FrameIDOutput.lua

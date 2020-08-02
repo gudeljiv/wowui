@@ -9,12 +9,6 @@ END
 VER 3 000000000000000B "Attack Speed" "INV_MISC_QUESTIONMARK"
 /run print(UnitAttackSpeed("target"))
 END
-VER 3 000000000000000D "CHAT" "INV_MISC_QUESTIONMARK"
-/run ChatFrame2:ClearAllPoints()
-/run ChatFrame2:SetClampRectInsets(0, 1, 0, 0)
-/run ChatFrame2:SetPoint("TOPLEFT", UIParent, "BOTTOMLEFT", 3, 7)
-/run ChatFrame2:SetHeight(120)
-END
 VER 3 000000000000000C "DELETE GREY" "INV_MISC_QUESTIONMARK"
 /run for b=0,4 do for s=1,GetContainerNumSlots(b) do l=GetContainerItemLink(b,s) if l then _,_,r=GetItemInfo(l) if (r==0) then PickupContainerItem(b,s) DeleteCursorItem() end end end end
 END
@@ -23,16 +17,20 @@ VER 3 0000000000000009 "DELETE ITEM" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:1708
-/castsequence [combat]item:3385,item:3385,item:3385,item:3385,item:3385,item:3385
+/use [nocombat]item:1205
+/castsequence [combat]
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:3771
-/castsequence [combat]item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929
+/use [nocombat]item:4538
+/castsequence [combat]item:1710,item:1710,item:1710,item:1710,item:1710,item:1710,item:1710,item:1710,item:1710,item:1710,item:1710
 END
 VER 3 0000000000000006 "PF" "Inv_misc_questionmark"
 #showtooltip item:3771
 /cast feed pet
 /use item:3771
+END
+VER 3 000000000000000D "TEST" "INV_MISC_QUESTIONMARK"
+/run MailItem1ButtonSlot:Hide()
+/run MailItem1Button:CreateBeautyBorder(4)
 END

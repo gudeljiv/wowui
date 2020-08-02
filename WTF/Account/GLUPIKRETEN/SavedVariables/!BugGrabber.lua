@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 1612,
+	["session"] = 1626,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -883,8 +883,31 @@ BugGrabberDB = {
 			["time"] = "2020/08/02 11:49:42",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetAttribute'\nInterface\\AddOns\\ItemRack\\ItemRackButtons.lua:35: in function `InitButtons'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:282: in function `func'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:970: in function `OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>",
-			["session"] = 1611,
-			["counter"] = 1,
+			["session"] = 1614,
+			["counter"] = 2,
 		}, -- [112]
+		{
+			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'Details' tried to call the protected function 'CopyToClipboard()'.",
+			["time"] = "2020/08/02 16:33:14",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `CopyToClipboard'\n...e\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua:548: in function `FrameStackTooltip_HandleFrameCommand'\n...e\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua:518: in function `command'\nInterface\\SharedXML\\KeyCommand.lua:46: in function `Update'\nInterface\\SharedXML\\KeyCommand.lua:110: in function `KeyCommand_Update'\n...e\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua:727: in function <...e\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools.lua:726>",
+			["session"] = 1618,
+			["counter"] = 1,
+		}, -- [113]
+		{
+			["message"] = "[string \"MailItem1Button.16a58d70fd0:Hide()\"]:1: malformed number near '.16a58d70fd0'",
+			["time"] = "2020/08/02 16:42:00",
+			["locals"] = "(*temporary) = \"MailItem1Button.16a58d70fd0:Hide()\"\n",
+			["stack"] = "[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 1619,
+			["counter"] = 1,
+		}, -- [114]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/MailBoxFrame.lua:58: attempt to call global 'SkinMailBox' (a nil value)",
+			["time"] = "2020/08/02 16:44:08",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"attempt to call global 'SkinMailBox' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Frames/MailBoxFrame.lua:58: in function <Interface\\AddOns\\xVermin\\Frames/MailBoxFrame.lua:57>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:2087: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1932: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1793: in function <Interface\\FrameXML\\UIParent.lua:1789>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2535: in function `ShowUIPanel'\nInterface\\FrameXML\\MailFrame.lua:52: in function <Interface\\FrameXML\\MailFrame.lua:50>\n[C]: in function `TurnOrActionStop'\n[string \"TURNORACTION\"]:4: in function <[string \"TURNORACTION\"]:1>",
+			["session"] = 1620,
+			["counter"] = 1,
+		}, -- [115]
 	},
 }
