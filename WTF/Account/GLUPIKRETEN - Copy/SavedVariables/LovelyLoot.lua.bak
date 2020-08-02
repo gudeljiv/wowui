@@ -1,0 +1,32 @@
+
+LovelyLootDB = {
+	["sbar"] = "Blizzard",
+	["lfUnlocked"] = true,
+	["border"] = "Blizzard Dialog",
+	["rollAnchor"] = {
+		["anch2"] = "RIGHT",
+		["ypos"] = 8.33328603215937,
+		["xpos"] = -281.166171486064,
+		["anch1"] = "RIGHT",
+	},
+	["bgColor"] = {
+		["a"] = 1,
+		["b"] = 1,
+		["g"] = 1,
+		["r"] = 1,
+	},
+	["borderColor"] = {
+		["a"] = 1,
+		["b"] = 1,
+		["g"] = 1,
+		["r"] = 1,
+	},
+	["borderWidth"] = 22,
+	["bg"] = "Blizzard Dialog Background",
+	["sbarColor"] = {
+		["b"] = 0,
+		["g"] = 1,
+		["r"] = 1,
+	},
+	["inset"] = 5,
+}
