@@ -610,21 +610,13 @@ ItemRack.iSPatternRegularToIR = "item:(.-)\124h" --example: "62384:0:4041:4041:0
 ItemRack.iSPatternBaseIDFromIR = "^(%-?%d+)" --this must *only* be used on ItemRack-style IDs, and will return the first field (the itemID), allowing us to do loose item matching
 ItemRack.iSPatternBaseIDFromRegular = "item:(%-?%d+)" --this must *only* be used regular itemLinks/itemStrings, and will return the first field (the itemID), allowing us to do loose item matching
 function ItemRack.GetIRString(inputString, baseid, regular)
-	return string.match(
-		inputString or "",
-		(baseid and (regular and ItemRack.iSPatternBaseIDFromRegular or ItemRack.iSPatternBaseIDFromIR) or
-			ItemRack.iSPatternRegularToIR)
-	) or 0
+	return string.match(inputString or "", (baseid and (regular and ItemRack.iSPatternBaseIDFromRegular or ItemRack.iSPatternBaseIDFromIR) or ItemRack.iSPatternRegularToIR)) or 0
 end
 
 -- itemrack itemstring updater.
 -- takes a saved ItemRack-style ID and returns an updated version with the latest player level and spec injected, which helps us update outdated IDs saved when the player was lower level or different spec
 function ItemRack.UpdateIRString(itemRackID)
-	return (string.gsub(
-		itemRackID or "",
-		"^(" .. strrep("%d+:", 8) .. ")%d+:%d+",
-		"%1" .. UnitLevel("player") .. ":" .. "0"
-	)) --note: parenthesis to discard 2nd return value (number of substitutions, which will always be 1)
+	return (string.gsub(itemRackID or "", "^(" .. strrep("%d+:", 8) .. ")%d+:%d+", "%1" .. UnitLevel("player") .. ":" .. "0")) --note: parenthesis to discard 2nd return value (number of substitutions, which will always be 1)
 end
 
 -- returns the provided ItemRack-style ID string with "item:" prepended, which turns it into a normal itemstring which we can then use for item lookups, itemlink generation and so on.
@@ -654,8 +646,7 @@ end
 function ItemRack.GetInfoByID(id)
 	local name, texture, equip, quality
 	if id and id ~= 0 then
-		name, _, quality, _, _, _, _, _, equip, texture =
-			GetItemInfo(ItemRack.IRStringToItemString(ItemRack.UpdateIRString(id))) --ensure the stored ID is brought up to date, then generate a regular ItemString from it and get the item info
+		name, _, quality, _, _, _, _, _, equip, texture = GetItemInfo(ItemRack.IRStringToItemString(ItemRack.UpdateIRString(id))) --ensure the stored ID is brought up to date, then generate a regular ItemString from it and get the item info
 	else
 		name, texture, quality = "(empty)", "Interface\\Icons\\INV_Misc_QuestionMark", 0 --default response on invalid ID
 	end
@@ -858,10 +849,7 @@ function ItemRack.PlayerCanWear(invslot, bag, slot)
 	for i = 2, ItemRackTooltip:NumLines() do
 		txt = _G["ItemRackTooltipTextLeft" .. i]:GetText()
 		-- if either left or right text is red and this isn't a Durability x/x line, this item can't be worn
-		if
-			(ItemRack.IsRed("Left" .. i) or ItemRack.IsRed("Right" .. i)) and not string.find(txt, ItemRack.DURABILITY_PATTERN) and
-				not string.match(txt, ItemRack.REQUIRES_PATTERN)
-		 then
+		if (ItemRack.IsRed("Left" .. i) or ItemRack.IsRed("Right" .. i)) and not string.find(txt, ItemRack.DURABILITY_PATTERN) and not string.match(txt, ItemRack.REQUIRES_PATTERN) then
 			return nil
 		end
 	end
@@ -1002,13 +990,7 @@ end
 function ItemRack.DockWindows(menuDock, relativeTo, mainDock, menuOrient, movable)
 	ItemRackMenuFrame:ClearAllPoints()
 	ItemRack.currentDock = mainDock .. menuDock
-	ItemRackMenuFrame:SetPoint(
-		menuDock,
-		relativeTo,
-		mainDock,
-		ItemRack.DockInfo[ItemRack.currentDock].xoff,
-		ItemRack.DockInfo[ItemRack.currentDock].yoff
-	)
+	ItemRackMenuFrame:SetPoint(menuDock, relativeTo, mainDock, ItemRack.DockInfo[ItemRack.currentDock].xoff, ItemRack.DockInfo[ItemRack.currentDock].yoff)
 	ItemRackMenuFrame:SetParent(relativeTo)
 	ItemRackMenuFrame:SetFrameStrata("HIGH")
 	ItemRack.mainDock = mainDock
@@ -1048,8 +1030,7 @@ function ItemRack.BuildMenu(id, menuInclude)
 		menuInclude = ItemRack.menuInclude
 	end
 
-	local showButtonMenu =
-		(ItemRackButtonMenu and ItemRack.menuMovable) and (IsAltKeyDown() or ItemRackUser.Locked == "OFF")
+	local showButtonMenu = (ItemRackButtonMenu and ItemRack.menuMovable) and (IsAltKeyDown() or ItemRackUser.Locked == "OFF")
 
 	for i in pairs(ItemRack.Menu) do
 		ItemRack.Menu[i] = nil
@@ -1074,10 +1055,7 @@ function ItemRack.BuildMenu(id, menuInclude)
 			for j = 1, GetContainerNumSlots(i) do
 				itemID = ItemRack.GetID(i, j)
 				itemName, itemTexture, equipSlot = ItemRack.GetInfoByID(itemID)
-				if
-					ItemRack.SlotInfo[id][equipSlot] and ItemRack.PlayerCanWear(id, i, j) and
-						(ItemRackSettings.HideTradables == "OFF" or ItemRack.IsSoulbound(i, j))
-				 then
+				if ItemRack.SlotInfo[id][equipSlot] and ItemRack.PlayerCanWear(id, i, j) and (ItemRackSettings.HideTradables == "OFF" or ItemRack.IsSoulbound(i, j)) then
 					if id ~= 0 or not ItemRack.AlreadyInMenu(itemID) then
 						ItemRack.AddToMenu(itemID)
 					end
@@ -1089,10 +1067,7 @@ function ItemRack.BuildMenu(id, menuInclude)
 				for j = 1, GetContainerNumSlots(i) do
 					itemID = ItemRack.GetID(i, j)
 					itemName, itemTexture, equipSlot = ItemRack.GetInfoByID(itemID)
-					if
-						ItemRack.SlotInfo[id][equipSlot] and ItemRack.PlayerCanWear(id, i, j) and
-							(ItemRackSettings.HideTradables == "OFF" or ItemRack.IsSoulbound(i, j))
-					 then
+					if ItemRack.SlotInfo[id][equipSlot] and ItemRack.PlayerCanWear(id, i, j) and (ItemRackSettings.HideTradables == "OFF" or ItemRack.IsSoulbound(i, j)) then
 						if id ~= 0 or not ItemRack.AlreadyInMenu(itemID) then
 							ItemRack.AddToMenu(itemID)
 						end
@@ -1118,11 +1093,7 @@ function ItemRack.BuildMenu(id, menuInclude)
 		ItemRackMenuFrame:Hide()
 	else
 		-- display outward from docking point
-		local col, row, xpos, ypos =
-			0,
-			0,
-			ItemRack.DockInfo[ItemRack.currentDock].xstart,
-			ItemRack.DockInfo[ItemRack.currentDock].ystart
+		local col, row, xpos, ypos = 0, 0, ItemRack.DockInfo[ItemRack.currentDock].xstart, ItemRack.DockInfo[ItemRack.currentDock].ystart
 		local max_cols = 1
 		local button
 
@@ -1166,9 +1137,7 @@ function ItemRack.BuildMenu(id, menuInclude)
 			icon = _G["ItemRackMenu" .. i .. "Icon"]
 			if icon then
 				icon:SetDesaturated(false)
-				if
-					IsAltKeyDown() and ItemRackSettings.AllowHidden == "ON" and IsAltKeyDown() and ItemRack.IsHidden(ItemRack.Menu[i])
-				 then
+				if IsAltKeyDown() and ItemRackSettings.AllowHidden == "ON" and IsAltKeyDown() and ItemRack.IsHidden(ItemRack.Menu[i]) then
 					icon:SetDesaturated(true)
 				end
 			end
@@ -1278,10 +1247,7 @@ end
 
 function ItemRack.MenuMouseover()
 	local frame = GetMouseFocus()
-	if
-		MouseIsOver(ItemRackMenuFrame) or IsShiftKeyDown() or
-			(frame and frame:GetName() and frame:IsVisible() and ItemRack.MenuMouseoverFrames[frame:GetName()])
-	 then
+	if MouseIsOver(ItemRackMenuFrame) or IsShiftKeyDown() or (frame and frame:GetName() and frame:IsVisible() and ItemRack.MenuMouseoverFrames[frame:GetName()]) then
 		return -- keep menu open if mouse over menu, shift is down or mouse is immediately over a mouseover frame
 	end
 	for i in pairs(ItemRack.MenuMouseoverFrames) do
@@ -1328,9 +1294,7 @@ function ItemRack.CreateMenuButton(idx, itemID)
 			_G["ItemRackMenu" .. idx .. "Icon"]:SetTexture(texture)
 		end
 	else
-		_G["ItemRackMenu" .. idx .. "Icon"]:SetTexture(
-			select(2, GetInventorySlotInfo(ItemRack.SlotInfo[ItemRack.menuOpen].name))
-		)
+		_G["ItemRackMenu" .. idx .. "Icon"]:SetTexture(select(2, GetInventorySlotInfo(ItemRack.SlotInfo[ItemRack.menuOpen].name)))
 	end
 	return _G["ItemRackMenu" .. idx]
 end
@@ -1398,11 +1362,7 @@ function ItemRack.MenuOnClick(self, button)
 				ItemRackOpt.Inv[ItemRack.menuOpen].selected = 1
 				ItemRackOpt.UpdateInv()
 			end
-			if
-				ItemRack.menuOpen >= 13 and ItemRack.menuOpen <= 14 and ItemRackSettings.TrinketMenuMode == "ON" and
-					ItemRackUser.Buttons[13] and
-					ItemRackUser.Buttons[14]
-			 then
+			if ItemRack.menuOpen >= 13 and ItemRack.menuOpen <= 14 and ItemRackSettings.TrinketMenuMode == "ON" and ItemRackUser.Buttons[13] and ItemRackUser.Buttons[14] then
 				ItemRack.menuOpen = button == "RightButton" and 14 or 13
 			end
 			ItemRack.EquipItemByID(item, ItemRack.menuOpen)
@@ -1431,10 +1391,7 @@ function ItemRack.EquipItemByID(id, slot)
 	if not id then
 		return
 	end
-	if
-		ItemRack.NowCasting or
-			(not ItemRack.SlotInfo[slot].swappable and (UnitAffectingCombat("player") or ItemRack.IsPlayerReallyDead()))
-	 then
+	if ItemRack.NowCasting or (not ItemRack.SlotInfo[slot].swappable and (UnitAffectingCombat("player") or ItemRack.IsPlayerReallyDead())) then
 		ItemRack.AddToCombatQueue(slot, id)
 	elseif not GetCursorInfo() and not SpellIsTargeting() then
 		if id ~= 0 then -- not an empty slot
@@ -1814,10 +1771,7 @@ end
 ItemRack.oldPaperDollItemSlotButton_OnEnter = PaperDollItemSlotButton_OnEnter
 function PaperDollItemSlotButton_OnEnter(self)
 	ItemRack.oldPaperDollItemSlotButton_OnEnter(self)
-	if
-		ItemRack.menuDockedTo ~= self:GetName() and (ItemRackSettings.MenuOnShift == "OFF" or IsShiftKeyDown()) and
-			ItemRackSettings.CharacterSheetMenus == "ON"
-	 then
+	if ItemRack.menuDockedTo ~= self:GetName() and (ItemRackSettings.MenuOnShift == "OFF" or IsShiftKeyDown()) and ItemRackSettings.CharacterSheetMenus == "ON" then
 		ItemRack.DockMenuToCharacterSheet(self)
 	end
 end
@@ -1901,11 +1855,7 @@ end
 
 function ItemRack.MinimapOnEnter(self)
 	if ItemRackSettings.MinimapTooltip == "ON" then
-		ItemRack.OnTooltip(
-			self,
-			"ItemRack",
-			"Left click: Select a set\nRight click: Open options\nAlt left click: Show hidden sets\nAlt right click: Toggle events\nShift click: Unequip this set"
-		)
+		ItemRack.OnTooltip(self, "ItemRack", "Left click: Select a set\nRight click: Open options\nAlt left click: Show hidden sets\nAlt right click: Toggle events\nShift click: Unequip this set")
 	end
 end
 
@@ -2059,7 +2009,9 @@ function ItemRack.SetSetBindings()
 			SetBindingClick(ItemRackUser.Sets[i].key, buttonName)
 		end
 	end
-	AttemptToSaveBindings(GetCurrentBindingSet())
+	if not UnitAffectingCombat("player") then
+		AttemptToSaveBindings(GetCurrentBindingSet())
+	end
 end
 
 function ItemRack.RunSetBinding(setname)

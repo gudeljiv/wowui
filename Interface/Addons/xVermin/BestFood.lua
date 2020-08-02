@@ -162,8 +162,7 @@ function NeedsFoodBadly:Sorted(t, f)
 end
 
 function NeedsFoodBadly:IsUsableFood(food)
-	return not (not (food and food.lvl <= UnitLevel("player") and food.hp and
-		not (food.hp5 or food.mp5 or food.str or food.agi or food.stam or food.int or food.spi)))
+	return not (not (food and food.lvl <= UnitLevel("player") and food.hp and not (food.hp5 or food.mp5 or food.str or food.agi or food.stam or food.int or food.spi)))
 end
 
 function NeedsFoodBadly:IsUsablePetFood(food)
@@ -258,9 +257,9 @@ function NeedsFoodBadly.BetterBuffFood(a, b)
 end
 
 function NeedsFoodBadly.BetterDrink(a, b)
-	if a.conj and not b.conj then
+	if (a and a.conj) and (b and not b.conj) then
 		return true
-	elseif b.conj and not a.conj then
+	elseif (b and b.conj) and (a and not a.conj) then
 		return false
 	end
 	a_mp, b_mp = a.mp, b.mp
@@ -444,7 +443,7 @@ NeedsFoodBadly.Food = {
 	[21215] = {id = 21215, name = "Graccu's Mince Meat Fruitcake", lvl = 40, conj = false, hp = 0.05, mp = 0.05},
 	[8076] = {id = 8076, name = "Conjured Sweet Roll", lvl = 45, conj = true, hp = 2148},
 	[9451] = {id = 9451, name = "Bubbling Water", lvl = 15, conj = false, mp = 835.2},
-	[422] = {id = 422, name = "Dwarven Mild", lvl = 15, conj = false, hp = 552},
+	[422] = {id = 422, name = "Dwarven Mild", lvl = 15, conj = false, mp = 835.2},
 	[2070] = {id = 2070, name = "Darnassian Bleu", lvl = 1, conj = false, hp = 61.2},
 	[4541] = {id = 4541, name = "Freshly Baked Bread", lvl = 5, conj = false, hp = 243.6},
 	[414] = {id = 414, name = "Dalaran Sharp", lvl = 5, conj = false, hp = 243.6},

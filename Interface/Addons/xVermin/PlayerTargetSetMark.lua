@@ -1,32 +1,43 @@
 local type = 8
+local mark = false
 
-local function clear_mark()
-	if (not UnitInParty("player")) then
+local function ClearMark()
+	if not UnitInParty("player") then
 		for i = 1, 9 do
 			SetRaidTarget("player", i)
 		end
 	end
 end
-local function set_mark()
-	clear_mark()
 
-	local faction = "nil"
-	if TargetFrame:IsShown() then
-		faction, _ = UnitFactionGroup("target")
+local function SetMark()
+	if mark then
+		ClearMark()
+		local faction = "nil"
+		if TargetFrame:IsShown() then
+			faction, _ = UnitFactionGroup("target")
 
-		if faction ~= "Alliance" then
-		-- if (UnitInParty("player") and UnitIsGroupLeader("player")) then
-		-- 	SetRaidTarget("target", type)
-		-- end
-		-- if (not UnitInParty("player")) then
-		-- 	SetRaidTarget("target", type)
-		-- end
+			if faction ~= "Alliance" then
+				-- if (UnitInParty("player") and UnitIsGroupLeader("player")) then
+				-- 	SetRaidTarget("target", type)
+				-- end
+				if (not UnitInParty("player")) then
+					SetRaidTarget("target", type)
+				end
+			end
 		end
 	end
 end
 
+local function ToggleMark()
+	mark = not mark
+	ClearMark()
+end
+
 local frame = CreateFrame("Frame")
 frame:RegisterEvent("PLAYER_TARGET_CHANGED")
-frame:SetScript("OnEvent", set_mark)
+frame:SetScript("OnEvent", SetMark)
 
-clear_mark()
+ClearMark()
+
+SLASH_SETMARK1 = "/mark"
+SlashCmdList["SETMARK"] = ToggleMark

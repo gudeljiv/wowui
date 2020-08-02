@@ -95,3 +95,4 @@ SimpleRaidTargetIcons: disabled
 PerfectRaid: disabled
 SortBags: disabled
 Peddler: enabled
+TrackEverything: disabled

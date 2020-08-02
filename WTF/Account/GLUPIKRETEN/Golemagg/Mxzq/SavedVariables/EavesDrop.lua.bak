@@ -243,8 +243,8 @@ EavesDropStatsDB = {
 					},
 					["Auto Shot"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/30/20 10:38:48|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hunit:Creature-0-4445-1-176-12922-0000232E0E:Imp Minion|hImp Minion|h for |cffffffff62|r |cffffffffPhysical|r.(12 Overkill)",
-							["amount"] = 74,
+							["time"] = "|cffffffff08/01/20 02:12:34|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hunit:Creature-0-4447-47-17000-4422-0000255C00:Agathelos the Raging|hAgathelos the Raging|h for |cffffffff82|r |cffffffffPhysical|r.",
+							["amount"] = 82,
 						},
 						[2] = {
 							["time"] = "|cffffffff07/30/20 10:40:01|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h ranged shot hit |Hunit:Creature-0-4445-1-176-12922-0000232E12:Imp Minion|hImp Minion|h for |cffffffff56|r |cffffffffPhysical|r.(87 Overkill) (Critical)",
@@ -261,8 +261,8 @@ EavesDropStatsDB = {
 					},
 					["Serpent Sting"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/25/20 03:28:44|r\n|Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-29-3239-00001C2837:Thunderhead|hThunderhead|h suffers |cffffffff16|r |cffffffffNature|r damage from |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_PERIODIC_DAMAGE|h|cffffffffSerpent Sting|r|h.",
-							["amount"] = 16,
+							["time"] = "|cffffffff08/01/20 04:58:32|r\n|Hunit:Creature-0-4445-1-165-3244-0000256539:Greater Plainstrider|hGreater Plainstrider|h suffers |cffffffff28|r |cffffffffNature|r damage from |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_PERIODIC_DAMAGE|h|cffffffffSerpent Sting|r|h.",
+							["amount"] = 28,
 						},
 						[2] = {
 						},
@@ -298,17 +298,6 @@ EavesDropStatsDB = {
 						},
 						["icon"] = 132215,
 					},
-					["Multi-Shot"] = {
-						[-2] = {
-							["time"] = "|cffffffff07/31/20 09:34:23|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMulti-Shot|r|h hits |Hunit:Creature-0-4445-1-165-3458-0000246F72:Razormane Seer|hRazormane Seer|h for |cffffffff71|r |cffffffffPhysical|r.",
-							["amount"] = 71,
-						},
-						[2] = {
-							["time"] = "|cffffffff08/01/20 09:28:29|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMulti-Shot|r|h hits |Hunit:Creature-0-4445-1-165-3458-00002486A9:Razormane Seer|hRazormane Seer|h for |cffffffff132|r |cffffffffPhysical|r.(Critical)",
-							["amount"] = 132,
-						},
-						["icon"] = 132330,
-					},
 					["Wing Clip"] = {
 						[-2] = {
 							["time"] = "|cffffffff07/16/20 11:51:37|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWing Clip|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-66-3246-00000F738C:Fleeting Plainstrider|hFleeting Plainstrider|h for |cffffffff4|r |cffffffffPhysical|r.",
@@ -320,14 +309,25 @@ EavesDropStatsDB = {
 						},
 						["icon"] = 132309,
 					},
+					["Multi-Shot"] = {
+						[-2] = {
+							["time"] = "|cffffffff08/01/20 02:02:48|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMulti-Shot|r|h hits |Hunit:Creature-0-4447-47-17000-4515-0000A55849:Death's Head Acolyte|hDeath's Head Acolyte|h for |cffffffff85|r |cffffffffPhysical|r.",
+							["amount"] = 85,
+						},
+						[2] = {
+							["time"] = "|cffffffff08/01/20 09:28:29|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMulti-Shot|r|h hits |Hunit:Creature-0-4445-1-165-3458-00002486A9:Razormane Seer|hRazormane Seer|h for |cffffffff132|r |cffffffffPhysical|r.(Critical)",
+							["amount"] = 132,
+						},
+						["icon"] = 132330,
+					},
 				},
 			}, -- [1]
 			[-1] = {
 				["hit"] = {
 					["Shadow"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/19/20 04:25:00|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h suffers |cffff131310|r |cffff1313Shadow|r damage from |Hunit:Creature-0-4448-1-145-3397-000014555D:Kolkar Bloodcharger|hKolkar Bloodcharger's|h |Hspell:0:0:SPELL_PERIODIC_DAMAGE|h|cffff1313Corruption|r|h.",
-							["amount"] = 10,
+							["time"] = "|cffffffff08/01/20 05:58:55|r\n|Hunit:Creature-0-4469-47-9236-4515-0001258F7D:Death's Head Acolyte|hDeath's Head Acolyte's|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Mana Burn|r|h hits |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h for |cffff1313282|r |cffff1313Shadow|r.",
+							["amount"] = 282,
 						},
 						[2] = {
 						},
@@ -362,8 +362,8 @@ EavesDropStatsDB = {
 							["amount"] = 350,
 						},
 						[2] = {
-							["time"] = "|cffffffff07/27/20 02:57:49|r\n|Hicon:128:source|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-29-5859-00001EA56B:Hagg Taurenbane|hHagg Taurenbane's|h melee swing hits |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h for |cffff1313158|r |cffff1313Physical|r.(Critical)",
-							["amount"] = 158,
+							["time"] = "|cffffffff08/02/20 11:18:32|r\n|Hunit:Creature-0-4445-1-165-5859-0000262730:Hagg Taurenbane|hHagg Taurenbane's|h melee swing hits |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h for |cffff1313183|r |cffff1313Physical|r.(Critical)",
+							["amount"] = 183,
 						},
 					},
 					["Nature"] = {
