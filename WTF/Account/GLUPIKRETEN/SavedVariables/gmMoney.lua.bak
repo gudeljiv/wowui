@@ -5,21 +5,21 @@ GMMONEY = {
 			["GOLD"] = 1122378,
 			["CLASS"] = "PRIEST",
 		},
-		["Mxzq"] = {
-			["GOLD"] = 517322,
-			["CLASS"] = "HUNTER",
-		},
 		["Mxyzptlk"] = {
 			["GOLD"] = 49269,
 			["CLASS"] = "WARLOCK",
 		},
+		["Mxzq"] = {
+			["GOLD"] = 517322,
+			["CLASS"] = "HUNTER",
+		},
 		["Vermin"] = {
-			["GOLD"] = 612609,
+			["GOLD"] = 476823,
 			["CLASS"] = "WARRIOR",
 		},
 	},
 }
 GMMONEYSET = {
-	["FULLDISP"] = true,
 	["TEXTMODE"] = true,
+	["FULLDISP"] = true,
 }
