@@ -1,14 +1,16 @@
 
 TomTomDB = {
 	["profileKeys"] = {
-		["Dotwise - Golemagg"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
-		["Mxyz - Golemagg"] = "Default",
-		["Judawise - Golemagg"] = "Default",
-		["Verminz - Golemagg"] = "Default",
 		["Mxzq - Golemagg"] = "Default",
-		["Greenwise - Golemagg"] = "Default",
+		["Mxym - Golemagg"] = "Default",
+		["Mxyz - Golemagg"] = "Default",
+		["Verminz - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",
+		["Judawise - Golemagg"] = "Default",
+		["Greenwise - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
+		["Dotwise - Golemagg"] = "Default",
+		["Mxys - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -50,31 +52,37 @@ TomTomDB = {
 TomTomWaypoints = nil
 TomTomWaypointsM = {
 	["profileKeys"] = {
-		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
-		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
-		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
-		["Judawise - Golemagg"] = "Judawise - Golemagg",
-		["Verminz - Golemagg"] = "Verminz - Golemagg",
 		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
-		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
+		["Mxym - Golemagg"] = "Mxym - Golemagg",
+		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
+		["Verminz - Golemagg"] = "Verminz - Golemagg",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Judawise - Golemagg"] = "Judawise - Golemagg",
+		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
+		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
+		["Mxys - Golemagg"] = "Mxys - Golemagg",
 	},
 	["profiles"] = {
-		["Dotwise - Golemagg"] = {
+		["Mxzq - Golemagg"] = {
 		},
-		["Mxyzptlk - Golemagg"] = {
+		["Mxym - Golemagg"] = {
 		},
 		["Mxyz - Golemagg"] = {
 		},
-		["Judawise - Golemagg"] = {
-		},
 		["Verminz - Golemagg"] = {
 		},
-		["Mxzq - Golemagg"] = {
+		["Vermin - Golemagg"] = {
+		},
+		["Judawise - Golemagg"] = {
 		},
 		["Greenwise - Golemagg"] = {
 		},
-		["Vermin - Golemagg"] = {
+		["Mxyzptlk - Golemagg"] = {
+		},
+		["Dotwise - Golemagg"] = {
+		},
+		["Mxys - Golemagg"] = {
 		},
 	},
 }

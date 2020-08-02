@@ -54,8 +54,7 @@ local ITEM_SIZE = addon.ITEM_SIZE
 -- Button initialization
 --------------------------------------------------------------------------------
 
-local buttonClass, buttonProto =
-	addon:NewClass("ItemButton", "Button", "ContainerFrameItemButtonTemplate", "ABEvent-1.0")
+local buttonClass, buttonProto = addon:NewClass("ItemButton", "Button", "ContainerFrameItemButtonTemplate", "ABEvent-1.0")
 
 local childrenNames = {
 	"Cooldown",
@@ -379,8 +378,7 @@ local function GetBorder(bag, slot, itemId, settings)
 	end
 	local color = quality ~= LE_ITEM_QUALITY_COMMON and BAG_ITEM_QUALITY_COLORS[quality]
 	if color then
-		return [[Interface\Buttons\UI-ActionButton-Border]], color.r, color.g, color.b, settings.qualityOpacity, 14 / 64, 49 /
-			64, 15 / 64, 50 / 64, "ADD"
+		return [[Interface\Buttons\UI-ActionButton-Border]], color.r, color.g, color.b, settings.qualityOpacity, 14 / 64, 49 / 64, 15 / 64, 50 / 64, "ADD"
 	end
 end
 
@@ -390,30 +388,18 @@ function buttonProto:UpdateBorder(isolatedEvent)
 	self:CreateBeautyBorder(8)
 
 	if self.hasItem then
-		texture, r, g, b, a, x1, x2, y1, y2, blendMode =
-			GetBorder(self.bag, self.slot, self.itemLink or self.itemId, addon.db.profile)
-
-		itemName,
-			itemLink,
-			itemRarity,
-			itemLevel,
-			itemMinLevel,
-			itemType,
-			itemSubType,
-			itemStackCount,
-			itemEquipLoc,
-			itemTexture,
-			itemSellPrice = GetItemInfo(self.itemLink)
+		texture, r, g, b, a, x1, x2, y1, y2, blendMode = GetBorder(self.bag, self.slot, self.itemLink or self.itemId, addon.db.profile)
+		itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, itemSellPrice = GetItemInfo(self.itemLink)
 
 		self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureNormal")
 		self:SetBeautyBorderColor(1, 1, 1, 1)
 
-		if (itemRarity > 1) then
+		if (itemRarity and itemRarity > 1) then
 			self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")
 			self:SetBeautyBorderColor(r, g, b, 1)
 		end
 
-		if (itemType == "Quest") then
+		if (itemType and itemType == "Quest") then
 			self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")
 			self:SetBeautyBorderColor(1, 0.964, 0, 1)
 		end

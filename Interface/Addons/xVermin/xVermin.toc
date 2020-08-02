@@ -23,7 +23,6 @@ AutoBuyAmmo.lua
 AutoDismount.lua
 AutoRepair.lua
 AutoSellJunk.lua
-Bags.lua
 BestFood.lua
 Bindings.lua
 Chat.lua

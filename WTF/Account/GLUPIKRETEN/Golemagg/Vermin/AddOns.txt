@@ -267,7 +267,7 @@ DBM-Onyxia: enabled
 DBM-AQ20: enabled
 DBM-AQ40: enabled
 DBM-ZG: enabled
-Questie: disabled
+Questie: enabled
 GnomishVendorShrinker: disabled
 TradeSkillMaster_AppHelper: enabled
 ZygorGuidesViewerClassic: disabled

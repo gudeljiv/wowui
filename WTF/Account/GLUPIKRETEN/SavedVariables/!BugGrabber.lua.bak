@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 1626,
 	["lastSanitation"] = 3,
+	["session"] = 1677,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -173,8 +173,8 @@ BugGrabberDB = {
 		}, -- [21]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["time"] = "2020/07/26 13:26:58",
 			["session"] = 1336,
+			["time"] = "2020/07/26 13:26:58",
 			["counter"] = 2,
 		}, -- [22]
 		{
@@ -554,8 +554,8 @@ BugGrabberDB = {
 		}, -- [69]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["session"] = 1423,
 			["time"] = "2020/07/27 20:37:46",
+			["session"] = 1423,
 			["counter"] = 4,
 		}, -- [70]
 		{
@@ -804,8 +804,8 @@ BugGrabberDB = {
 		}, -- [101]
 		{
 			["message"] = "(null)",
-			["session"] = 1585,
 			["time"] = "2020/07/24 16:00:06",
+			["session"] = 1585,
 			["counter"] = 42,
 		}, -- [102]
 		{
@@ -826,8 +826,8 @@ BugGrabberDB = {
 		}, -- [104]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["session"] = 1605,
 			["time"] = "2020/08/02 10:06:15",
+			["session"] = 1605,
 			["counter"] = 3,
 		}, -- [105]
 		{
@@ -909,5 +909,91 @@ BugGrabberDB = {
 			["session"] = 1620,
 			["counter"] = 1,
 		}, -- [115]
+		{
+			["message"] = "[string \"SaveBindings()\"]:1: attempt to call global 'SaveBindings' (a nil value)",
+			["time"] = "2020/08/02 19:31:44",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"attempt to call global 'SaveBindings' (a nil value)\"\n",
+			["stack"] = "[string \"SaveBindings()\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 1630,
+			["counter"] = 1,
+		}, -- [116]
+		{
+			["message"] = "[string \"SaveBindings(1)\"]:1: attempt to call global 'SaveBindings' (a nil value)",
+			["time"] = "2020/08/02 19:32:12",
+			["locals"] = "(*temporary) = nil\n(*temporary) = 1\n(*temporary) = \"attempt to call global 'SaveBindings' (a nil value)\"\n",
+			["stack"] = "[string \"SaveBindings(1)\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 1630,
+			["counter"] = 1,
+		}, -- [117]
+		{
+			["message"] = "[string \"Loadbindings(1)\"]:1: attempt to call global 'Loadbindings' (a nil value)",
+			["time"] = "2020/08/02 19:33:47",
+			["locals"] = "(*temporary) = nil\n(*temporary) = 1\n(*temporary) = \"attempt to call global 'Loadbindings' (a nil value)\"\n",
+			["stack"] = "[string \"Loadbindings(1)\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 1630,
+			["counter"] = 1,
+		}, -- [118]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Bindings.lua:112: attempt to call global 'SaveBindings' (a nil value)",
+			["time"] = "2020/08/02 19:55:55",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"attempt to call global 'SaveBindings' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Bindings.lua:112: in function <Interface\\AddOns\\xVermin\\Bindings.lua:1>\nInterface\\AddOns\\xVermin\\Bindings.lua:218: in function <Interface\\AddOns\\xVermin\\Bindings.lua:217>",
+			["session"] = 1648,
+			["counter"] = 1,
+		}, -- [119]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Unit.lua:76: attempt to index upvalue 'color' (a nil value)",
+			["time"] = "2020/08/02 20:11:24",
+			["locals"] = "(*temporary) = <function> defined =[C]:-1\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = <userdata>\n(*temporary) = 0\n(*temporary) = 7\n(*temporary) = \"attempt to index upvalue 'color' (a nil value)\"\nspeed = \"0\"\nus = CustomContainer_CombatUnitSpeed {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\ncolor = nil\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Unit.lua:76: in function <Interface\\AddOns\\xVermin\\Unit.lua:68>\n[C]: ?",
+			["session"] = 1652,
+			["counter"] = 7,
+		}, -- [120]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Unit.lua:25: attempt to index upvalue 'color' (a nil value)",
+			["time"] = "2020/08/02 20:11:24",
+			["locals"] = "(*temporary) = <function> defined =[C]:-1\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = <userdata>\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index upvalue 'color' (a nil value)\"\ncus = CustomContainer_CombatUnitState {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\ncolor = nil\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Unit.lua:25: in function <Interface\\AddOns\\xVermin\\Unit.lua:16>\n[C]: ?\n[C]: ?",
+			["session"] = 1652,
+			["counter"] = 567,
+		}, -- [121]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Unit.lua:77: attempt to index upvalue 'color' (a nil value)",
+			["time"] = "2020/08/02 20:12:29",
+			["locals"] = "(*temporary) = <function> defined =[C]:-1\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = <userdata>\n(*temporary) = 0\n(*temporary) = 7\n(*temporary) = \"attempt to index upvalue 'color' (a nil value)\"\nspeed = \"0\"\nus = CustomContainer_CombatUnitSpeed {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\ncolor = nil\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Unit.lua:77: in function <Interface\\AddOns\\xVermin\\Unit.lua:69>\n[C]: ?",
+			["session"] = 1653,
+			["counter"] = 7,
+		}, -- [122]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Unit.lua:26: attempt to index upvalue 'color' (a nil value)",
+			["time"] = "2020/08/02 20:12:29",
+			["locals"] = "(*temporary) = <function> defined =[C]:-1\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = <userdata>\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index upvalue 'color' (a nil value)\"\ncus = CustomContainer_CombatUnitState {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\ncolor = nil\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Unit.lua:26: in function <Interface\\AddOns\\xVermin\\Unit.lua:17>\n[C]: ?\n[C]: ?",
+			["session"] = 1653,
+			["counter"] = 257,
+		}, -- [123]
+		{
+			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
+			["session"] = 1654,
+			["time"] = "2020/08/02 20:13:03",
+			["counter"] = 3,
+		}, -- [124]
+		{
+			["message"] = "Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:411: attempt to compare number with nil",
+			["time"] = "2020/08/02 20:39:46",
+			["locals"] = "self = AdiBagsItemButton42 {\n NormalTexture = AdiBagsItemButton42NormalTexture {\n }\n bag = 0\n BattlepayItemTexture = <unnamed> {\n }\n beautyShadow = <table> {\n }\n IconOverlay = <unnamed> {\n }\n BagStaticTop = <unnamed> {\n }\n IconBorder = <unnamed> {\n }\n flashAnim = <unnamed> {\n }\n icon = AdiBagsItemButton42IconTexture {\n }\n container = AdiBagsContainer1 {\n }\n acquired = true\n UpdateTooltip = <function> defined @Interface\\FrameXML\\ContainerFrame.lua:1298\n ExtendedOverlay = <unnamed> {\n }\n beautyBorder = <table> {\n }\n UpgradeIcon = <unnamed> {\n }\n NewItemTexture = <unnamed> {\n }\n Cooldown = AdiBagsItemButton42Cooldown {\n }\n bagFamily = 0\n BagStaticBottom = <unnamed> {\n }\n flash = <unnamed> {\n }\n ExtendedSlot = <unnamed> {\n }\n IconQuestTexture = AdiBagsItemButton42IconQuestTexture {\n }\n hasItem = true\n IconTexture = AdiBagsItemButton42IconTexture {\n }\n JunkIcon = <unnamed> {\n }\n Stock = AdiBagsItemButton42Stock {\n }\n slot = 1\n count = 2\n section = AdiBagsSection1 {\n }\n texture = 132793\n timeSinceUpgradeCheck = 0\n itemLink = \"|cffffffff|Hitem:5350::::::::4:::::::|h[]|h|r\"\n Count = AdiBagsItemButton42Count {\n }\n itemId = 5350\n 0 = <userdata>\n searchOverlay = AdiBagsItemButton42SearchOverlay {\n }\n newitemglowAnim = <unnamed> {\n }\n ExtendedOverlay2 = <unnamed> {\n }\n}\nisolatedEvent = nil\ntexture = nil\nr = nil\ng = nil\nb = nil\na = nil\nx1 = nil\nx2 = nil\ny1 = nil\ny2 = nil\nblendMode = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = 1\n(*temporary) = 1\n(*temporary) = 1\n(*temporary) = AdiBagsItemButton42 {\n NormalTexture = AdiBagsItemButton42NormalTexture {\n }\n bag = 0\n BattlepayItemTexture = <unnamed> {\n }\n beautyShadow = <table> {\n }\n IconOverlay = <unnamed> {\n }\n BagStaticTop = <unnamed> {\n }\n IconBorder = <unnamed> {\n }\n flashAnim = <unnamed> {\n }\n icon = AdiBagsItemButton42IconTexture {\n }\n container = AdiBagsContainer1 {\n }\n acquired = true\n UpdateTooltip = <function> defined @Interface\\FrameXML\\ContainerFrame.lua:1298\n ExtendedOverlay = <unnamed> {\n }\n beautyBorder = <table> {\n }\n UpgradeIcon = <unnamed> {\n }\n NewItemTexture = <unnamed> {\n }\n Cooldown = AdiBagsItemButton42Cooldown {\n }\n bagFamily = 0\n BagStaticBottom = <unnamed> {\n }\n flash = <unnamed> {\n }\n ExtendedSlot = <unnamed> {\n }\n IconQuestTexture = AdiBagsItemButton42IconQuestTexture {\n }\n hasItem = true\n IconTexture = AdiBagsItemButton42IconTexture {\n }\n JunkIcon = <unnamed> {\n }\n Stock = AdiBagsItemButton42Stock {\n }\n slot = 1\n count = 2\n section = AdiBagsSection1 {\n }\n texture = 132793\n timeSinceUpgradeCheck = 0\n itemLink = \"|cffffffff|Hitem:5350::::::::4:::::::|h[]|h|r\"\n Count = AdiBagsItemButton42Count {\n }\n itemId = 5350\n 0 = <userdata>\n searchOverlay = AdiBagsItemButton42SearchOverlay {\n }\n newitemglowAnim = <unnamed> {\n }\n ExtendedOverlay2 = <unnamed> {\n }\n}\n(*temporary) = 1\n(*temporary) = 1\n(*temporary) = 1\n(*temporary) = 1\n(*temporary) = \"attempt to compare number with nil\"\nGetBorder = <function> defined @Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:371\naddon = <table> {\n AcquireItemButton = <function> defined @Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:154\n modules = <table> {\n }\n UpdateFilters = <function> defined @Interface\\AddOns\\AdiBags\\core\\Filters.lua:86\n SecureHook = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceHook-3.0\\AceHook-3.0.lua:336\n GetInteractingWindow = <function> defined @Interface\\AddOns\\AdiBags\\core\\Core.lua:469\n ConfigChanged = <function> defined @Interface\\AddOns\\AdiBags\\core\\Core.lua:389\n GetSlotId = <function> defined @Interface\\AddOns\\AdiBags\\core\\Utility.lua:56\n Filter = <function> defined @Interface\\AddOns\\AdiBags\\core\\Filters.lua:147\n IsEnabled = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:451\n Reconfigure = <function> defined @Interface\\AddOns\\AdiBags\\core\\Core.lua:205\n SetupTooltip = <function> defined @Interface\\AddOns\\AdiBags\\core\\Utility.lua:113\n RegisterMessage = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:90\n UnregisterMessage = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\C",
+			["stack"] = "Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:411: in function `UpdateBorder'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:313: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:290: in function `FullUpdate'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:255: in function <Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:243>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\Section.lua:266: in function `AddItemButton'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:712: in function `DispatchItem'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:756: in function `UpdateButtons'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:349: in function `?'\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:119: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:119>\n[C]: ?\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:29: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:64: in function `SendMessage'\nInterface\\AddOns\\AdiBags\\core\\Core.lua:376: in function `?'\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:119: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:119>\n[C]: ?\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:29: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:64: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:59>\n(tail call): ?",
+			["session"] = 1663,
+			["counter"] = 1,
+		}, -- [125]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Experience.lua:107: attempt to concatenate local 'event' (a nil value)",
+			["time"] = "2020/08/02 21:33:29",
+			["locals"] = "self = nil\nevent = nil\nisInitialLogin = nil\nisReloadingUi = nil\n(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = \"Event: \"\n(*temporary) = nil\n(*temporary) = true\n(*temporary) = true\n(*temporary) = true\n(*temporary) = true\n(*temporary) = true\n(*temporary) = nil\n(*temporary) = true\n(*temporary) = <function> defined @Interface\\AddOns\\xVermin\\Chat.lua:40\n(*temporary) = \"attempt to concatenate local 'event' (a nil value)\"\nNewXP = 4\ngained = 0\nCurrentXP = 4\nXPToLVL = 896\nMaxXP = 900\ncolor = <table> {\n colorStr = \"fff48cba\"\n GetRGB = <function> defined @Interface\\SharedXML\\Util.lua:633\n OnLoad = <function> defined @Interface\\SharedXML\\Util.lua:622\n b = 0.730000\n GenerateHexColorMarkup = <function> defined @Interface\\SharedXML\\Util.lua:664\n WrapTextInColorCode = <function> defined @Interface\\SharedXML\\Util.lua:668\n GenerateHexColor = <function> defined @Interface\\SharedXML\\Util.lua:660\n GetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:641\n IsEqualTo = <function> defined @Interface\\SharedXML\\Util.lua:626\n g = 0.550000\n r = 0.960000\n SetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:649\n GetRGBAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:637\n SetRGB = <function> defined @Interface\\SharedXML\\Util.lua:656\n GetRGBAAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:645\n}\nhmmm = nil\ncmtk = CustomContainer_CombatMobsToKill {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\npercent = nil\n_ = 7\nrested = nil\noutput = nil\nPlayerExpFrame = PlayerExpFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nr = nil\ng = nil\nb = nil\nColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Experience.lua:9\nclass = \"SHAMAN\"\npcxp = nil\npmxp = nil\nppercent = nil\nPetExpFrame = nil\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Experience.lua:107: in function <Interface\\AddOns\\xVermin\\Experience.lua:96>\nInterface\\AddOns\\xVermin\\Experience.lua:202: in function <Interface\\AddOns\\xVermin\\Experience.lua:192>",
+			["session"] = 1673,
+			["counter"] = 2,
+		}, -- [126]
 	},
 }

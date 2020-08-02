@@ -1,6 +1,5 @@
 
 ChocolateBarDB = {
-	["addonVersion"] = "@project-version@",
 	["profileKeys"] = {
 		["Dotwise - Golemagg"] = "Default",
 		["Blooq - Genesis"] = "Default",
@@ -13,37 +12,27 @@ ChocolateBarDB = {
 		["Mulatz - Genesis"] = "Default",
 		["Spija - Genesis"] = "Default",
 		["Handrmandr - Genesis"] = "Default",
+		["Kosturko - Golemagg"] = "Default",
+		["Mxys - Golemagg"] = "Default",
+		["Mxym - Golemagg"] = "Default",
 		["Mxzq - Golemagg"] = "Default",
 		["Verminz - Genesis"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
-		["Pitchwise - Golemagg"] = "Default",
-		["Greenwise - Golemagg"] = "Default",
-		["Pitchwise - Genesis"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
-		["Pepecocorita - Genesis"] = "Default",
-		["Kosturko - Golemagg"] = "Default",
-		["Judawise - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default",
 		["Elohssa - Stonespine"] = "Default",
+		["Pepecocorita - Genesis"] = "Default",
+		["Pitchwise - Genesis"] = "Default",
+		["Vermin - Golemagg"] = "Default",
+		["Klhjakhsgdjh - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
+		["Judawise - Golemagg"] = "Default",
+		["Greenwise - Golemagg"] = "Default",
+		["Pitchwise - Golemagg"] = "Default",
 		["Ozrencic - Golemagg"] = "Default",
 		["Whatevs - Stonespine"] = "Default",
 	},
+	["addonVersion"] = "@project-version@",
 	["profiles"] = {
 		["Default"] = {
-			["locked"] = false,
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["r"] = 0,
-					["g"] = 0,
-					["b"] = 0,
-				},
-				["textureName"] = "None",
-			},
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -59,12 +48,24 @@ ChocolateBarDB = {
 					["barPoint"] = "TOPRIGHT",
 					["barName"] = "ChocolateBar2",
 					["align"] = "custom",
-					["width"] = 147,
-					["index"] = 1,
 					["barOffx"] = -88.3325424194336,
+					["index"] = 1,
+					["width"] = 147,
 				},
 			},
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["b"] = 0,
+					["g"] = 0,
+					["r"] = 0,
+				},
+				["textureName"] = "None",
+			},
 			["moveFrames"] = false,
+			["locked"] = false,
+			["fixedStrata"] = true,
 			["objSettings"] = {
 				["PitBull4"] = {
 					["enabled"] = false,
@@ -77,17 +78,17 @@ ChocolateBarDB = {
 					["index"] = 2,
 					["align"] = "right",
 					["showLabel"] = true,
-					["showText"] = false,
-					["barName"] = "ChocolateBar1",
 					["showIcon"] = false,
+					["barName"] = "ChocolateBar1",
+					["showText"] = false,
 					["customLabel"] = "gmL",
 				},
 				["DBM"] = {
 					["index"] = 1,
 					["showLabel"] = true,
-					["showText"] = false,
-					["barName"] = "ChocolateBar2",
 					["showIcon"] = false,
+					["barName"] = "ChocolateBar2",
+					["showText"] = false,
 					["customLabel"] = "DBM",
 				},
 				["Outfitter"] = {
@@ -108,27 +109,27 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar1",
 				},
 				["Broker Currency"] = {
-					["index"] = 1,
+					["widthBehavior"] = "free",
 					["align"] = "center",
 					["showIcon"] = false,
 					["barName"] = "ChocolateBar2",
-					["widthBehavior"] = "free",
+					["index"] = 1,
 				},
 				["Questie"] = {
 					["index"] = 3,
 					["align"] = "right",
 					["showLabel"] = true,
-					["showIcon"] = false,
-					["barName"] = "ChocolateBar1",
 					["showText"] = false,
+					["barName"] = "ChocolateBar1",
+					["showIcon"] = false,
 					["customLabel"] = "Q",
 				},
 				["Atlas"] = {
 					["align"] = "right",
 					["showLabel"] = true,
-					["showText"] = false,
-					["barName"] = "ChocolateBar1",
 					["showIcon"] = false,
+					["barName"] = "ChocolateBar1",
+					["showText"] = false,
 					["customLabel"] = "A",
 				},
 				["BigWigs"] = {
@@ -153,18 +154,18 @@ ChocolateBarDB = {
 					["index"] = 4,
 					["align"] = "right",
 					["showLabel"] = true,
-					["showText"] = false,
-					["barName"] = "ChocolateBar1",
 					["showIcon"] = false,
+					["barName"] = "ChocolateBar1",
+					["showText"] = false,
 					["customLabel"] = "TE",
 				},
 				["AutoVendor"] = {
 					["index"] = 4,
 					["align"] = "right",
 					["showLabel"] = true,
-					["showText"] = false,
-					["barName"] = "ChocolateBar1",
 					["showIcon"] = false,
+					["barName"] = "ChocolateBar1",
+					["showText"] = false,
 					["customLabel"] = "AV",
 				},
 				["DetailsStreamer"] = {
@@ -190,13 +191,13 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar1",
 				},
 				["Leatrix_Plus"] = {
-					["index"] = 2,
+					["widthBehavior"] = "free",
 					["align"] = "right",
 					["showLabel"] = true,
-					["showIcon"] = false,
-					["barName"] = "ChocolateBar1",
 					["showText"] = false,
-					["widthBehavior"] = "free",
+					["barName"] = "ChocolateBar1",
+					["showIcon"] = false,
+					["index"] = 2,
 					["customLabel"] = "L",
 				},
 				["CB_Entertainer"] = {
@@ -208,17 +209,17 @@ ChocolateBarDB = {
 					["index"] = 2,
 					["align"] = "right",
 					["showLabel"] = true,
-					["showText"] = false,
-					["barName"] = "ChocolateBar1",
 					["showIcon"] = false,
+					["barName"] = "ChocolateBar1",
+					["showText"] = false,
 					["customLabel"] = "AL",
 				},
 				["TellMeWhen"] = {
 					["index"] = 2,
 					["showLabel"] = true,
-					["showText"] = false,
-					["barName"] = "ChocolateBar2",
 					["showIcon"] = false,
+					["barName"] = "ChocolateBar2",
+					["showText"] = false,
 					["customLabel"] = "TMW",
 				},
 				["PlayedTime"] = {
@@ -231,57 +232,35 @@ ChocolateBarDB = {
 					["index"] = 1,
 					["barName"] = "ChocolateBar1",
 				},
-				["kRestack"] = {
-					["index"] = 3,
+				["BugSack"] = {
+					["index"] = 1,
 					["align"] = "right",
-					["showLabel"] = true,
 					["showIcon"] = false,
 					["barName"] = "ChocolateBar1",
-					["showText"] = false,
-					["customLabel"] = "R",
+					["customLabel"] = "B",
 				},
 				["Details!"] = {
-					["index"] = 3,
+					["widthBehavior"] = "free",
 					["align"] = "center",
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
-					["widthBehavior"] = "free",
+					["index"] = 3,
 				},
-				["BagnonLauncher"] = {
-					["showText"] = false,
-					["barName"] = "ChocolateBar1",
-					["align"] = "right",
-				},
-				["Leatrix_Maps"] = {
+				["Omen"] = {
 					["enabled"] = false,
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
-					["align"] = "right",
+					["align"] = "center",
 				},
 				["TestNoText"] = {
 					["enabled"] = false,
 					["index"] = 4,
 					["barName"] = "ChocolateBar1",
 				},
-				["TradeSkillMaster"] = {
-					["align"] = "right",
-					["showLabel"] = true,
-					["showIcon"] = false,
+				["Leatrix_Maps"] = {
+					["enabled"] = false,
+					["showText"] = false,
 					["barName"] = "ChocolateBar1",
-					["showText"] = false,
-					["customLabel"] = "TSM",
-				},
-				["NWB"] = {
-					["index"] = 3,
-					["showLabel"] = true,
-					["showIcon"] = false,
-					["barName"] = "ChocolateBar2",
-					["showText"] = false,
-					["customLabel"] = "N",
-				},
-				["picoFPS"] = {
-					["index"] = 1,
-					["barName"] = "ChocolateBar2",
 					["align"] = "right",
 				},
 				["Prat"] = {
@@ -291,41 +270,65 @@ ChocolateBarDB = {
 					["align"] = "right",
 					["index"] = 3,
 				},
+				["NWB"] = {
+					["index"] = 3,
+					["showLabel"] = true,
+					["showText"] = false,
+					["barName"] = "ChocolateBar2",
+					["showIcon"] = false,
+					["customLabel"] = "N",
+				},
+				["picoFPS"] = {
+					["index"] = 1,
+					["barName"] = "ChocolateBar2",
+					["align"] = "right",
+				},
+				["TradeSkillMaster"] = {
+					["align"] = "right",
+					["showLabel"] = true,
+					["showText"] = false,
+					["barName"] = "ChocolateBar1",
+					["showIcon"] = false,
+					["customLabel"] = "TSM",
+				},
 				["gmMoney"] = {
 					["index"] = 1,
 					["barName"] = "ChocolateBar1",
 				},
-				["Omen"] = {
-					["enabled"] = false,
+				["BagnonLauncher"] = {
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
-					["align"] = "center",
-				},
-				["BugSack"] = {
-					["index"] = 1,
 					["align"] = "right",
-					["showIcon"] = false,
+				},
+				["kRestack"] = {
+					["index"] = 3,
+					["align"] = "right",
+					["showLabel"] = true,
+					["showText"] = false,
 					["barName"] = "ChocolateBar1",
-					["customLabel"] = "B",
+					["showIcon"] = false,
+					["customLabel"] = "R",
 				},
 			},
-			["desaturated"] = false,
 			["gap"] = 0,
+			["fontName"] = "Friz Quadrata TT",
+			["forceColor"] = false,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
-			["forceColor"] = false,
-			["fontName"] = "Friz Quadrata TT",
+			["desaturated"] = false,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["fixedStrata"] = true,
 			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
 			["textColor"] = {
 				["a"] = 1,
-				["b"] = 1,
-				["g"] = 1,
 				["r"] = 1,
+				["g"] = 1,
+				["b"] = 1,
 			},
 		},
 	},
@@ -334,11 +337,26 @@ CB_PlayedTime = {
 	["Korupcija-"] = {
 		["total"] = 21359,
 	},
-	["Greenwise-"] = {
-		["total"] = 79871,
+	["Elohssa-"] = {
+		["total"] = 3552,
 	},
-	["Pitchwise-"] = {
-		["total"] = 390,
+	["Mxys-"] = {
+		["total"] = 1077,
+	},
+	["Mxyz-"] = {
+		["total"] = 16103,
+	},
+	["Vermin-"] = {
+		["total"] = 139284,
+	},
+	["Judawise-"] = {
+		["total"] = 437,
+	},
+	["Mxym-"] = {
+		["total"] = 4765,
+	},
+	["Klhjakhsgdjh-"] = {
+		["total"] = 53,
 	},
 	["Whatevs-"] = {
 		["total"] = 213,
@@ -346,34 +364,28 @@ CB_PlayedTime = {
 	["Mxyzptlk-"] = {
 		["total"] = 8148,
 	},
-	["Elohssa-"] = {
-		["total"] = 3552,
-	},
-	["Mxzq-"] = {
-		["total"] = 212256,
+	["Verminz-"] = {
+		["total"] = 311368,
 	},
 	["Paydo-"] = {
 		["total"] = 18945,
 	},
-	["Mxyz-"] = {
-		["total"] = 13904,
-	},
-	["Vermin-"] = {
-		["total"] = 139284,
-	},
-	["Kosturko-"] = {
-		["total"] = 1457,
-	},
-	["Ozrencic-"] = {
-		["total"] = 853,
-	},
-	["Judawise-"] = {
-		["total"] = 437,
+	["Mxzq-"] = {
+		["total"] = 212456,
 	},
 	["Dotwise-"] = {
 		["total"] = 3924,
 	},
-	["Verminz-"] = {
-		["total"] = 311368,
+	["Greenwise-"] = {
+		["total"] = 79871,
+	},
+	["Ozrencic-"] = {
+		["total"] = 853,
+	},
+	["Pitchwise-"] = {
+		["total"] = 390,
+	},
+	["Kosturko-"] = {
+		["total"] = 1457,
 	},
 }

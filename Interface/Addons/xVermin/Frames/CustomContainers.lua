@@ -1,5 +1,12 @@
 local _, class = UnitClass("player")
 local color = RAID_CLASS_COLORS[class]
+if class == "SHAMAN" then
+	color = {
+		b = 0.86666476726532,
+		g = 0.4392147064209,
+		r = 0
+	}
+end
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 -- CUSTOM CONTAINER COMBAT

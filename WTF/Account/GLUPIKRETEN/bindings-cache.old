@@ -67,7 +67,7 @@ bind CTRL-A ATTACKTARGET
 bind CTRL-B MULTIACTIONBAR4BUTTON8
 bind CTRL-' CLICK TopAbyssUIClassic_ConfirmPopUps:LeftButton
 bind SHIFT-C CLICK BT4Button21:LeftButton
-bind I EXAMINER_TARGET
+bind I CLICK MyBindingInspectTargetButton:LeftButton
 bind CTRL-I TOGGLELFGPARENT
 bind Y NONE
 bind J NONE
@@ -114,7 +114,7 @@ bind CTRL-SHIFT-B NONE
 bind CTRL-+ TOGGLESOUND
 bind CTRL-L NONE
 bind SHIFT-' CLICK TopAbyssUIClassic_InspectTarget:LeftButton
-bind ALT-E CLICK BT4Button39:LeftButton
+bind ALT-E NONE
 bind ALT-MOUSEWHEELDOWN CLICK BT4Button112:LeftButton
 bind ALT-9 MULTIACTIONBAR2BUTTON3
 bind ALT-0 MULTIACTIONBAR2BUTTON4
