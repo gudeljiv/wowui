@@ -1,6 +1,0 @@
-
-GMLOOT = {
-	["REAGS"] = true,
-	["COINS"] = true,
-	["QUEST"] = true,
-}
