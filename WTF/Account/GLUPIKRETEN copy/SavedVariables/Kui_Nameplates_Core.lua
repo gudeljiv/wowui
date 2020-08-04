@@ -1,0 +1,2 @@
+
+KuiNameplatesCoreSaved = nil

@@ -1,0 +1,31 @@
+
+BagnonFrameSettings = {
+	["frames"] = {
+		["inventory"] = {
+			["scale"] = 0.9,
+			["hasSearchToggle"] = false,
+			["hasOptionsToggle"] = false,
+			["y"] = 425.5186830860781,
+			["x"] = 9.282558812628849e-005,
+			["hasDBOFrame"] = false,
+		},
+		["guildbank"] = {
+			["point"] = "BOTTOMLEFT",
+			["hasSearchToggle"] = false,
+			["hasOptionsToggle"] = false,
+			["y"] = 631.5000854498558,
+			["x"] = 697.1668214383874,
+			["hasDBOFrame"] = false,
+		},
+		["bank"] = {
+			["point"] = "BOTTOMRIGHT",
+			["scale"] = 0.9,
+			["hasSearchToggle"] = false,
+			["hasOptionsToggle"] = false,
+			["y"] = 589.4074047377723,
+			["x"] = -337.5927597778218,
+			["hasDBOFrame"] = false,
+		},
+	},
+	["version"] = "5.4.15",
+}
