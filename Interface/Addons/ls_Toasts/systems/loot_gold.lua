@@ -11,7 +11,6 @@ local tostring = _G.tostring
 --[[ luacheck: globals
 	GetMoney GetMoneyString
 ]]
-
 -- Mine
 local old
 
@@ -23,35 +22,52 @@ local gold = "Interface\\Icons\\INV_Misc_Coin_02"
 local silver = "Interface\\Icons\\INV_Misc_Coin_04"
 local copper = "Interface\\Icons\\INV_Misc_Coin_06"
 
-local gold_rgb = {0.9, 0.75, 0.26};
-local silver_rgb = {0.576, 0.568, 0.576};
-local copper_rgb = {0.678, 0.423, 0.298};
+local gold_rgb = {0.9, 0.75, 0.26}
+local silver_rgb = {0.576, 0.568, 0.576}
+local copper_rgb = {0.678, 0.423, 0.298}
 
 local function Toast_SetUp(event, quantity)
-
 	local toast, isNew, isQueued = E:GetToast(nil, "event", event)
 	if isNew then
 		toast.Text.PostSetAnimatedValue = PostSetAnimatedValue
 
 		if C.db.profile.colors.border then
-			toast:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")
-			if( (quantity) >= 10000 ) then toast:SetBeautyBorderColor(gold_rgb) end
-			if( (quantity) < 10000 ) then toast:SetBeautyBorderColor(silver_rgb) end
-			if( (quantity) < 100) then toast:SetBeautyBorderColor(copper_rgb) end
+			toast:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\Media\\textureWhite")
+			if ((quantity) >= 10000) then
+				toast:SetBeautyBorderColor(gold_rgb)
+			end
+			if ((quantity) < 10000) then
+				toast:SetBeautyBorderColor(silver_rgb)
+			end
+			if ((quantity) < 100) then
+				toast:SetBeautyBorderColor(copper_rgb)
+			end
 		end
 
 		if C.db.profile.colors.icon_border then
-			toast.IconParent:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")
-			if( (quantity) >= 10000 ) then toast.IconParent:SetBeautyBorderColor(gold_rgb) end
-			if( (quantity) < 10000 ) then toast.IconParent:SetBeautyBorderColor(silver_rgb) end
-			if( (quantity) < 100) then toast.IconParent:SetBeautyBorderColor(copper_rgb) end
+			toast.IconParent:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\Media\\textureWhite")
+			if ((quantity) >= 10000) then
+				toast.IconParent:SetBeautyBorderColor(gold_rgb)
+			end
+			if ((quantity) < 10000) then
+				toast.IconParent:SetBeautyBorderColor(silver_rgb)
+			end
+			if ((quantity) < 100) then
+				toast.IconParent:SetBeautyBorderColor(copper_rgb)
+			end
 		end
 
 		toast.Title:SetText(quantity > 0 and L["YOU_RECEIVED"] or L["YOU_LOST_RED"])
 		toast.Text:SetAnimatedValue(quantity, true)
-		if( (quantity) >= 10000 ) then toast.Icon:SetTexture(gold) end
-		if( (quantity) < 10000 ) then toast.Icon:SetTexture(silver) end
-		if( (quantity) < 100) then toast.Icon:SetTexture(copper) end
+		if ((quantity) >= 10000) then
+			toast.Icon:SetTexture(gold)
+		end
+		if ((quantity) < 10000) then
+			toast.Icon:SetTexture(silver)
+		end
+		if ((quantity) < 100) then
+			toast.Icon:SetTexture(copper)
+		end
 		toast.IconBorder:Show()
 
 		toast._data.count = quantity
@@ -64,22 +80,40 @@ local function Toast_SetUp(event, quantity)
 		toast.Title:SetText(toast._data.count > 0 and L["YOU_RECEIVED"] or L["YOU_LOST_RED"])
 
 		if C.db.profile.colors.border then
-			toast:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")
-			if( (toast._data.count) >= 10000 ) then toast:SetBeautyBorderColor(gold_rgb) end
-			if( (toast._data.count) < 10000 ) then toast:SetBeautyBorderColor(silver_rgb) end
-			if( (toast._data.count) < 100) then toast:SetBeautyBorderColor(copper_rgb) end
+			toast:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\Media\\textureWhite")
+			if ((toast._data.count) >= 10000) then
+				toast:SetBeautyBorderColor(gold_rgb)
+			end
+			if ((toast._data.count) < 10000) then
+				toast:SetBeautyBorderColor(silver_rgb)
+			end
+			if ((toast._data.count) < 100) then
+				toast:SetBeautyBorderColor(copper_rgb)
+			end
 		end
 
 		if C.db.profile.colors.icon_border then
-			toast.IconParent:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")
-			if( (toast._data.count) >= 10000 ) then toast.IconParent:SetBeautyBorderColor(gold_rgb) end
-			if( (toast._data.count) < 10000 ) then toast.IconParent:SetBeautyBorderColor(silver_rgb) end
-			if( (toast._data.count) < 100) then toast.IconParent:SetBeautyBorderColor(copper_rgb) end
+			toast.IconParent:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\Media\\textureWhite")
+			if ((toast._data.count) >= 10000) then
+				toast.IconParent:SetBeautyBorderColor(gold_rgb)
+			end
+			if ((toast._data.count) < 10000) then
+				toast.IconParent:SetBeautyBorderColor(silver_rgb)
+			end
+			if ((toast._data.count) < 100) then
+				toast.IconParent:SetBeautyBorderColor(copper_rgb)
+			end
 		end
 
-		if( (toast._data.count) >= 10000 ) then toast.Icon:SetTexture(gold) end
-		if( (toast._data.count) < 10000 ) then toast.Icon:SetTexture(silver) end
-		if( (toast._data.count) < 100) then toast.Icon:SetTexture(copper) end
+		if ((toast._data.count) >= 10000) then
+			toast.Icon:SetTexture(gold)
+		end
+		if ((toast._data.count) < 10000) then
+			toast.Icon:SetTexture(silver)
+		end
+		if ((toast._data.count) < 100) then
+			toast.Icon:SetTexture(copper)
+		end
 
 		if isQueued then
 			toast.Text:SetAnimatedValue(toast._data.count, true)
@@ -117,77 +151,81 @@ local function Test()
 	Toast_SetUp("LOOT_GOLD_TEST", m_random(-100000, 100000))
 end
 
-E:RegisterOptions("loot_gold", {
-	enabled = true,
-	anchor = 1,
-	dnd = false,
-	sfx = true,
-	threshold = 1,
-	track_loss = false,
-}, {
-	name = L["TYPE_LOOT_GOLD"],
-	get = function(info)
-		return C.db.profile.types.loot_gold[info[#info]]
-	end,
-	set = function(info, value)
-		C.db.profile.types.loot_gold[info[#info]] = value
-	end,
-	args = {
-		enabled = {
-			order = 1,
-			type = "toggle",
-			name = L["ENABLE"],
-			set = function(_, value)
-				C.db.profile.types.loot_gold.enabled = value
-
-				if value then
-					Enable()
-				else
-					Disable()
-				end
-			end
-		},
-		dnd = {
-			order = 2,
-			type = "toggle",
-			name = L["DND"],
-			desc = L["DND_TOOLTIP"],
-		},
-		sfx = {
-			order = 3,
-			type = "toggle",
-			name = L["SFX"],
-		},
-		track_loss = {
-			order = 4,
-			type = "toggle",
-			name = L["TRACK_LOSS"],
-			desc = L["TRACK_LOSS_DESC"],
-		},
-		threshold = {
-			order = 5,
-			type = "input",
-			name = L["COPPER_THRESHOLD"],
-			desc = L["COPPER_THRESHOLD_DESC"],
-			disabled = function()
-				return C.db.profile.types.loot_gold.track_loss
-			end,
-			get = function()
-				return tostring(C.db.profile.types.loot_gold.threshold)
-			end,
-			set = function(_, value)
-				value = tonumber(value)
-				C.db.profile.types.loot_gold.threshold = value >= 1 and value or 1
-			end,
-		},
-		test = {
-			type = "execute",
-			order = 99,
-			width = "full",
-			name = L["TEST"],
-			func = Test,
-		},
+E:RegisterOptions(
+	"loot_gold",
+	{
+		enabled = true,
+		anchor = 1,
+		dnd = false,
+		sfx = true,
+		threshold = 1,
+		track_loss = false
 	},
-})
+	{
+		name = L["TYPE_LOOT_GOLD"],
+		get = function(info)
+			return C.db.profile.types.loot_gold[info[#info]]
+		end,
+		set = function(info, value)
+			C.db.profile.types.loot_gold[info[#info]] = value
+		end,
+		args = {
+			enabled = {
+				order = 1,
+				type = "toggle",
+				name = L["ENABLE"],
+				set = function(_, value)
+					C.db.profile.types.loot_gold.enabled = value
+
+					if value then
+						Enable()
+					else
+						Disable()
+					end
+				end
+			},
+			dnd = {
+				order = 2,
+				type = "toggle",
+				name = L["DND"],
+				desc = L["DND_TOOLTIP"]
+			},
+			sfx = {
+				order = 3,
+				type = "toggle",
+				name = L["SFX"]
+			},
+			track_loss = {
+				order = 4,
+				type = "toggle",
+				name = L["TRACK_LOSS"],
+				desc = L["TRACK_LOSS_DESC"]
+			},
+			threshold = {
+				order = 5,
+				type = "input",
+				name = L["COPPER_THRESHOLD"],
+				desc = L["COPPER_THRESHOLD_DESC"],
+				disabled = function()
+					return C.db.profile.types.loot_gold.track_loss
+				end,
+				get = function()
+					return tostring(C.db.profile.types.loot_gold.threshold)
+				end,
+				set = function(_, value)
+					value = tonumber(value)
+					C.db.profile.types.loot_gold.threshold = value >= 1 and value or 1
+				end
+			},
+			test = {
+				type = "execute",
+				order = 99,
+				width = "full",
+				name = L["TEST"],
+				func = Test
+			}
+		}
+	}
+)
 
 E:RegisterSystem("loot_gold", Enable, Disable, Test)

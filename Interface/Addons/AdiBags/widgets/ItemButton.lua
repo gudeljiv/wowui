@@ -391,20 +391,20 @@ function buttonProto:UpdateBorder(isolatedEvent)
 		texture, r, g, b, a, x1, x2, y1, y2, blendMode = GetBorder(self.bag, self.slot, self.itemLink or self.itemId, addon.db.profile)
 		itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, itemSellPrice = GetItemInfo(self.itemLink)
 
-		self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureNormal")
+		self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\Media\\textureNormal")
 		self:SetBeautyBorderColor(1, 1, 1, 1)
 
 		if (itemRarity and itemRarity > 1) then
-			self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")
+			self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\Media\\textureWhite")
 			self:SetBeautyBorderColor(r, g, b, 1)
 		end
 
 		if (itemType and itemType == "Quest") then
-			self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")
+			self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\Media\\textureWhite")
 			self:SetBeautyBorderColor(1, 0.964, 0, 1)
 		end
 	else
-		self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureNormal")
+		self:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\Media\\textureNormal")
 		self:SetBeautyBorderColor(1, 1, 1, 1)
 	end
 

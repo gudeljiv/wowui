@@ -26,6 +26,7 @@ AutoSellJunk.lua
 BestFood.lua
 Bindings.lua
 Chat.lua
+DamageFont.lua
 ErrorsFilter.lua
 Experience.lua
 GarbageCollector.lua
@@ -38,5 +39,4 @@ SortBags.lua
 TrackingIcon.lua
 Unit.lua
 
-xDamageFont.lua
 xVermin.lua

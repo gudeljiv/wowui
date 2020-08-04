@@ -15,7 +15,6 @@ local C_Timer = _G.C_Timer
 	LOOT_ITEM_CREATED_SELF LOOT_ITEM_CREATED_SELF_MULTIPLE LOOT_ITEM_PUSHED_SELF LOOT_ITEM_PUSHED_SELF_MULTIPLE
 	LOOT_ITEM_SELF LOOT_ITEM_SELF_MULTIPLE
 ]]
-
 -- Mine
 local PLAYER_GUID = UnitGUID("player")
 local PLAYER_NAME = UnitName("player")
@@ -64,7 +63,6 @@ local function updatePatterns()
 		LOOT_ITEM_PUSHED_MULTIPLE_PATTERN = LOOT_ITEM_PUSHED_SELF_MULTIPLE:gsub("%%s", "(.+)"):gsub("%%d", "(%%d+)"):gsub("^", "^")
 		CACHED_LOOT_ITEM_PUSHED_MULTIPLE = LOOT_ITEM_PUSHED_SELF_MULTIPLE
 	end
-
 end
 
 local function delayedUpdatePatterns()
@@ -113,8 +111,7 @@ local function Toast_SetUp(event, link, quantity)
 		local name, _, quality, _, _, _, _, _, _, icon, _, classID, subClassID, bindType = GetItemInfo(originalLink)
 		local isQuestItem = bindType == 4 or (classID == 12 and subClassID == 0)
 
-		if name and ((quality and quality >= C.db.profile.types.loot_items.threshold and quality <= 5)
-			or (C.db.profile.types.loot_items.quest and isQuestItem)) then
+		if name and ((quality and quality >= C.db.profile.types.loot_items.threshold and quality <= 5) or (C.db.profile.types.loot_items.quest and isQuestItem)) then
 			local color = ITEM_QUALITY_COLORS[quality] or ITEM_QUALITY_COLORS[1]
 			local title = L["YOU_RECEIVED"]
 			local soundFile = "Interface\\AddOns\\ls_Toasts\\assets\\ui-common-loot-toast.OGG"
@@ -128,13 +125,13 @@ local function Toast_SetUp(event, link, quantity)
 
 				if C.db.profile.colors.border then
 					-- toast.Border:SetVertexColor(color.r, color.g, color.b)
-					toast:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")
+					toast:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\Media\\textureWhite")
 					toast:SetBeautyBorderColor(color.r, color.g, color.b)
 				end
 
 				if C.db.profile.colors.icon_border then
 					-- toast.IconBorder:SetVertexColor(color.r, color.g, color.b)
-					toast.IconParent:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")
+					toast.IconParent:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\Media\\textureWhite")
 					toast.IconParent:SetBeautyBorderColor(color.r, color.g, color.b)
 				end
 			end
@@ -274,79 +271,83 @@ local function Test()
 	end
 end
 
-E:RegisterOptions("loot_items", {
-	enabled = true,
-	anchor = 1,
-	dnd = false,
-	sfx = true,
-	ilvl = true,
-	quest = false,
-	threshold = 1,
-}, {
-	name = L["TYPE_LOOT_ITEMS"],
-	get = function(info)
-		return C.db.profile.types.loot_items[info[#info]]
-	end,
-	set = function(info, value)
-		C.db.profile.types.loot_items[info[#info]] = value
-	end,
-	args = {
-		enabled = {
-			order = 1,
-			type = "toggle",
-			name = L["ENABLE"],
-			set = function(_, value)
-				C.db.profile.types.loot_items.enabled = value
-
-				if value then
-					Enable()
-				else
-					Disable()
-				end
-			end
-		},
-		dnd = {
-			order = 2,
-			type = "toggle",
-			name = L["DND"],
-			desc = L["DND_TOOLTIP"],
-		},
-		sfx = {
-			order = 3,
-			type = "toggle",
-			name = L["SFX"],
-		},
-		ilvl = {
-			order = 4,
-			type = "toggle",
-			name = L["SHOW_ILVL"],
-			desc = L["SHOW_ILVL_DESC"],
-		},
-		threshold = {
-			order = 5,
-			type = "select",
-			name = L["LOOT_THRESHOLD"],
-			values = {
-				[1] = ITEM_QUALITY_COLORS[1].hex .. ITEM_QUALITY1_DESC .. "|r",
-				[2] = ITEM_QUALITY_COLORS[2].hex .. ITEM_QUALITY2_DESC .. "|r",
-				[3] = ITEM_QUALITY_COLORS[3].hex .. ITEM_QUALITY3_DESC .. "|r",
-				[4] = ITEM_QUALITY_COLORS[4].hex .. ITEM_QUALITY4_DESC .. "|r",
-			},
-		},
-		quest = {
-			order = 6,
-			type = "toggle",
-			name = L["SHOW_QUEST_ITEMS"],
-			desc = L["SHOW_QUEST_ITEMS_DESC"],
-		},
-		test = {
-			type = "execute",
-			order = 99,
-			width = "full",
-			name = L["TEST"],
-			func = Test,
-		},
+E:RegisterOptions(
+	"loot_items",
+	{
+		enabled = true,
+		anchor = 1,
+		dnd = false,
+		sfx = true,
+		ilvl = true,
+		quest = false,
+		threshold = 1
 	},
-})
+	{
+		name = L["TYPE_LOOT_ITEMS"],
+		get = function(info)
+			return C.db.profile.types.loot_items[info[#info]]
+		end,
+		set = function(info, value)
+			C.db.profile.types.loot_items[info[#info]] = value
+		end,
+		args = {
+			enabled = {
+				order = 1,
+				type = "toggle",
+				name = L["ENABLE"],
+				set = function(_, value)
+					C.db.profile.types.loot_items.enabled = value
+
+					if value then
+						Enable()
+					else
+						Disable()
+					end
+				end
+			},
+			dnd = {
+				order = 2,
+				type = "toggle",
+				name = L["DND"],
+				desc = L["DND_TOOLTIP"]
+			},
+			sfx = {
+				order = 3,
+				type = "toggle",
+				name = L["SFX"]
+			},
+			ilvl = {
+				order = 4,
+				type = "toggle",
+				name = L["SHOW_ILVL"],
+				desc = L["SHOW_ILVL_DESC"]
+			},
+			threshold = {
+				order = 5,
+				type = "select",
+				name = L["LOOT_THRESHOLD"],
+				values = {
+					[1] = ITEM_QUALITY_COLORS[1].hex .. ITEM_QUALITY1_DESC .. "|r",
+					[2] = ITEM_QUALITY_COLORS[2].hex .. ITEM_QUALITY2_DESC .. "|r",
+					[3] = ITEM_QUALITY_COLORS[3].hex .. ITEM_QUALITY3_DESC .. "|r",
+					[4] = ITEM_QUALITY_COLORS[4].hex .. ITEM_QUALITY4_DESC .. "|r"
+				}
+			},
+			quest = {
+				order = 6,
+				type = "toggle",
+				name = L["SHOW_QUEST_ITEMS"],
+				desc = L["SHOW_QUEST_ITEMS_DESC"]
+			},
+			test = {
+				type = "execute",
+				order = 99,
+				width = "full",
+				name = L["TEST"],
+				func = Test
+			}
+		}
+	}
+)
 
 E:RegisterSystem("loot_items", Enable, Disable, Test)

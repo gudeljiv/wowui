@@ -6,24 +6,24 @@ local _, ns = ...
 config = {
 	font = {
 		arial = "Fonts\\ARIALN.ttf",
-		atari = "Interface\\AddOns\\xVermin\\media\\fontAtari.ttf",
-		damage = "Interface\\AddOns\\xVermin\\media\\damagefont.ttf"
+		atari = "Interface\\AddOns\\xVermin\\Media\\Atari.ttf",
+		damage = "Interface\\AddOns\\xVermin\\Media\\Damage.ttf"
 	},
 	background = {
 		white = "Interface\\Buttons\\WHITE8x8"
 	},
 	border = {
-		default = "Interface\\AddOns\\xVermin\\media\\textureNormal",
-		colorize = "Interface\\AddOns\\xVermin\\media\\textureWhite",
+		default = "Interface\\AddOns\\xVermin\\Media\\textureNormal",
+		colorize = "Interface\\AddOns\\xVermin\\Media\\textureWhite",
 		iq = {
-			"Interface\\AddOns\\xVermin\\media\\ItemQuality0",
-			"Interface\\AddOns\\xVermin\\media\\ItemQuality1",
-			"Interface\\AddOns\\xVermin\\media\\ItemQuality2",
-			"Interface\\AddOns\\xVermin\\media\\ItemQuality3",
-			"Interface\\AddOns\\xVermin\\media\\ItemQuality4",
-			"Interface\\AddOns\\xVermin\\media\\ItemQuality5",
-			"Interface\\AddOns\\xVermin\\media\\ItemQuality6",
-			"Interface\\AddOns\\xVermin\\media\\ItemQuality7"
+			"Interface\\AddOns\\xVermin\\Media\\ItemQuality0",
+			"Interface\\AddOns\\xVermin\\Media\\ItemQuality1",
+			"Interface\\AddOns\\xVermin\\Media\\ItemQuality2",
+			"Interface\\AddOns\\xVermin\\Media\\ItemQuality3",
+			"Interface\\AddOns\\xVermin\\Media\\ItemQuality4",
+			"Interface\\AddOns\\xVermin\\Media\\ItemQuality5",
+			"Interface\\AddOns\\xVermin\\Media\\ItemQuality6",
+			"Interface\\AddOns\\xVermin\\Media\\ItemQuality7"
 		}
 	},
 	buff = {

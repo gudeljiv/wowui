@@ -1,4 +1,4 @@
---local font = "Interface\\AddOns\\xVermin\\media\\fontAtari.ttf"
+--local font = "Interface\\AddOns\\xVermin\\Media\\fontAtari.ttf"
 local _, class, _ = UnitClass("player")
 local r, g, b, NewXP, hmmm, gained, XPToLVL, num, segment, relperc, r1, r2, g1, g2, b1, b2, f, PetExpFrame, PlayerExpFrame, percent, rested, output, pcxp, pmxp, ppercent, cmtk
 local color = RAID_CLASS_COLORS[class]

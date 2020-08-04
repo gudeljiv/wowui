@@ -1149,14 +1149,14 @@ function ItemRack.BuildMenu(id, menuInclude)
 				_, _, itemRarity = GetItemInfo(iid)
 				if (itemRarity and itemRarity > 1) then
 					r, g, b = GetItemQualityColor(itemRarity)
-					button:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")
+					button:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\Media\\textureWhite")
 					button:SetBeautyBorderColor(r, g, b)
 				else
-					button:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureNormal")
+					button:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\Media\\textureNormal")
 					button:SetBeautyBorderColor(1, 1, 1)
 				end
 			else
-				button:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureNormal")
+				button:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\Media\\textureNormal")
 				button:SetBeautyBorderColor(1, 1, 1)
 			end
 		end
