@@ -1,8 +1,9 @@
-local _, ns = ...
+local _, Rotation = ...
 
-function ns.inRange(type)
+function Rotation.inRange(type)
 	local type = type or "bool"
 	local inRange = 0
+
 	for i = 1, 40 do
 		if UnitExists("nameplate" .. i) and IsSpellInRange("Cleave", "nameplate" .. i) == 1 then
 			inRange = inRange + 1

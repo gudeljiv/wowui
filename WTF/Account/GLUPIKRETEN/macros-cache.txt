@@ -1,20 +1,3 @@
-VER 3 0000000000000008 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/castsequence Find Herbs, Find Minerals
-END
-VER 3 000000000000000A " " "INV_MISC_QUESTIONMARK"
-/tar Humar The Pridelord
-/tar The Rake
-END
-VER 3 000000000000000B "Attack Speed" "INV_MISC_QUESTIONMARK"
-/run print(UnitAttackSpeed("target"))
-END
-VER 3 000000000000000C "DELETE GREY" "INV_MISC_QUESTIONMARK"
-/run for b=0,4 do for s=1,GetContainerNumSlots(b) do l=GetContainerItemLink(b,s) if l then _,_,r=GetItemInfo(l) if (r==0) then PickupContainerItem(b,s) DeleteCursorItem() end end end end
-END
-VER 3 0000000000000009 "DELETE ITEM" "INV_MISC_QUESTIONMARK"
-/run for b=0,4 do for s=1,36 do n=GetContainerItemLink(b,s);if n and string.find(n,"Sharp Arrow") then PickupContainerItem(b,s);DeleteCursorItem();end;end;end;
-END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:159
@@ -22,15 +5,12 @@ VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
+/use [nocombat]item:2070
 /castsequence [combat]
 END
-VER 3 0000000000000006 "PF" "Inv_misc_questionmark"
-#showtooltip item:3771
-/cast feed pet
-/use item:3771
+VER 3 0000000000000001 "FRAME" "132150"
+/fstack
 END
-VER 3 000000000000000D "TEST" "INV_MISC_QUESTIONMARK"
-/run MailItem1ButtonSlot:Hide()
-/run MailItem1Button:CreateBeautyBorder(4)
+VER 3 0000000000000002 "MOVE" "Ability_Ambush."
+/run FramerateLabel:SetPoint("TOPRIGHT", "pqr_combat", "BOTTOMLEFT", 0, -200);
 END

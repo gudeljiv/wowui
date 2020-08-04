@@ -4,10 +4,10 @@ Details_TinyThreatDB = {
 		["Vermin - Golemagg"] = "Mxyz - Golemagg",
 		["Mxym - Golemagg"] = "Mxyz - Golemagg",
 		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
-		["Klhjakhsgdjh - Golemagg"] = "Mxyz - Golemagg",
-		["Mxys - Golemagg"] = "Mxyz - Golemagg",
-		["Mxzq - Golemagg"] = "Mxyz - Golemagg",
 		["Mxyzptlk - Golemagg"] = "Mxyz - Golemagg",
+		["Mxzq - Golemagg"] = "Mxyz - Golemagg",
+		["Mxys - Golemagg"] = "Mxyz - Golemagg",
+		["Klhjakhsgdjh - Golemagg"] = "Mxyz - Golemagg",
 	},
 	["profiles"] = {
 		["Mxyz - Golemagg"] = {

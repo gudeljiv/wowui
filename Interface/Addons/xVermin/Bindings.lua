@@ -80,7 +80,6 @@ local function FixBindings()
 	SetBinding("SHIFT-E", "NONE", 1)
 	SetBinding("CTRL-H", "TOGGLECHARACTER4", 1)
 	SetBinding("CTRL-F", "FOLLOWTARGET", 1)
-
 	SetBinding("ALT-F1", "NONE", 1)
 	SetBinding("ALT-F2", "NONE", 1)
 	SetBinding("ALT-F3", "NONE", 1)
@@ -119,11 +118,12 @@ f:SetScript(
 	"OnEvent",
 	function()
 		C_Timer.After(
-			5,
+			0,
 			function()
 				FixBindings()
 			end
 		)
 	end
 )
-f:RegisterEvent("PLAYER_ENTERING_WORLD")
+-- f:RegisterEvent("PLAYER_ENTERING_WORLD")
+f:RegisterEvent("ADDON_LOADED")

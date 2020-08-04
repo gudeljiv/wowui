@@ -4,15 +4,16 @@ Details_TinyThreatDB = {
 		["Vermin - Golemagg"] = "Mxyz - Golemagg",
 		["Mxym - Golemagg"] = "Mxyz - Golemagg",
 		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
-		["Mxyzptlk - Golemagg"] = "Mxyz - Golemagg",
-		["Mxzq - Golemagg"] = "Mxyz - Golemagg",
+		["Klhjakhsgdjh - Golemagg"] = "Mxyz - Golemagg",
 		["Mxys - Golemagg"] = "Mxyz - Golemagg",
+		["Mxzq - Golemagg"] = "Mxyz - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Mxyz - Golemagg",
 	},
 	["profiles"] = {
 		["Mxyz - Golemagg"] = {
 			["enabled"] = true,
 			["animate"] = true,
-			["useclasscolors"] = false,
+			["author"] = "Details! Team",
 			["playercolor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -24,7 +25,7 @@ Details_TinyThreatDB = {
 			["dividebyhundred"] = true,
 			["showamount"] = false,
 			["useplayercolor"] = false,
-			["author"] = "Details! Team",
+			["useclasscolors"] = false,
 			["alwaysshowme"] = true,
 		},
 	},

@@ -1,28 +1,30 @@
 
 Postal3ClassicDB = {
-	["global"] = {
-		["BlackBook"] = {
-			["alts"] = {
-				"Mxym|Golemagg|Horde|5|MAGE", -- [1]
-				"Mxys|Golemagg|Horde|3|SHAMAN", -- [2]
-				"Mxyzptlk|Golemagg|Horde|6|WARLOCK", -- [3]
-				"Mxyz|Golemagg|Horde|5|PRIEST", -- [4]
-				"Mxzq|Golemagg|Horde|28|HUNTER", -- [5]
-				"Vermin|Golemagg|Horde|25|WARRIOR", -- [6]
-			},
-		},
-	},
 	["profileKeys"] = {
 		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 		["Mxym - Golemagg"] = "Mxym - Golemagg",
 		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
 		["Verminz - Golemagg"] = "Verminz - Golemagg",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
-		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
-		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
-		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
 		["Mxys - Golemagg"] = "Mxys - Golemagg",
+		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
+		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
+	},
+	["global"] = {
+		["BlackBook"] = {
+			["alts"] = {
+				"Klhjakhsgdjh|Golemagg|Horde|1|SHAMAN", -- [1]
+				"Mxym|Golemagg|Horde|5|MAGE", -- [2]
+				"Mxys|Golemagg|Horde|3|SHAMAN", -- [3]
+				"Mxyzptlk|Golemagg|Horde|6|WARLOCK", -- [4]
+				"Mxyz|Golemagg|Horde|5|PRIEST", -- [5]
+				"Mxzq|Golemagg|Horde|28|HUNTER", -- [6]
+				"Vermin|Golemagg|Horde|25|WARRIOR", -- [7]
+			},
+		},
 	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
@@ -59,15 +61,17 @@ Postal3ClassicDB = {
 				},
 			},
 		},
+		["Klhjakhsgdjh - Golemagg"] = {
+		},
 		["Judawise - Golemagg"] = {
 		},
-		["Greenwise - Golemagg"] = {
-		},
-		["Mxyzptlk - Golemagg"] = {
+		["Mxys - Golemagg"] = {
 		},
 		["Dotwise - Golemagg"] = {
 		},
-		["Mxys - Golemagg"] = {
+		["Mxyzptlk - Golemagg"] = {
+		},
+		["Greenwise - Golemagg"] = {
 		},
 	},
 }
