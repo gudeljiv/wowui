@@ -16,6 +16,9 @@ Frames/SpellBookFrame.lua
 Frames/TalentFrame.lua
 # Frames/FrameIDOutput.lua
 
+Rotation/_Core.lua
+Rotation/Warrior.lua
+
 Addons/AdiBags.lua
 
 AutoCarrot.lua
