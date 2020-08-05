@@ -117,12 +117,13 @@ local f = CreateFrame("Frame")
 f:SetScript(
 	"OnEvent",
 	function()
-		C_Timer.After(
-			0,
-			function()
-				FixBindings()
-			end
-		)
+		FixBindings()
+		-- C_Timer.After(
+		-- 	15,
+		-- 	function()
+		-- 		FixBindings()
+		-- 	end
+		-- )
 	end
 )
 -- f:RegisterEvent("PLAYER_ENTERING_WORLD")
