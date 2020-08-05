@@ -81,6 +81,8 @@ local chat = CreateFrame("Frame")
 chat:SetScript(
 	"OnEvent",
 	function()
+		local CalculatedWidth = GetScreenWidth() * UIParent:GetEffectiveScale() / 2.6
+
 		FCF_ResetChatWindows()
 		JoinChannelByName("WorldDefense")
 		JoinChannelByName("LookingForGroup")
@@ -91,7 +93,7 @@ chat:SetScript(
 		ChatFrame1:SetClampRectInsets(0, -1, 0, 0)
 		ChatFrame1:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", 3, 7)
 		ChatFrame1:SetHeight(220)
-		ChatFrame1:SetWidth(550)
+		ChatFrame1:SetWidth(CalculatedWidth)
 		ChatFrame1Background:SetAlpha(0.6)
 		FCF_SetChatWindowFontSize(nil, ChatFrame1, 12)
 
@@ -99,7 +101,7 @@ chat:SetScript(
 		ChatFrame2:SetClampRectInsets(0, -1, 0, 0)
 		ChatFrame2:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", 3, 7)
 		ChatFrame2:SetHeight(196)
-		ChatFrame2:SetWidth(550)
+		ChatFrame2:SetWidth(CalculatedWidth)
 		ChatFrame2Background:SetAlpha(0.6)
 		FCF_SetChatWindowFontSize(nil, ChatFrame2, 12)
 
@@ -139,7 +141,7 @@ chat:SetScript(
 		ChatFrame3:SetClampRectInsets(0, -1, 0, 0)
 		ChatFrame3:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", -3, 7)
 		ChatFrame3:SetHeight(220)
-		ChatFrame3:SetWidth(550)
+		ChatFrame3:SetWidth(CalculatedWidth)
 		ChatFrame3:Show()
 		ChatFrame3Tab:Show()
 		ChatFrame3Background:SetAlpha(0.6)
@@ -151,7 +153,7 @@ chat:SetScript(
 		ChatFrame4:SetClampRectInsets(0, -1, 0, 0)
 		ChatFrame4:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", 3, 7)
 		ChatFrame4:SetHeight(220)
-		ChatFrame4:SetWidth(550)
+		ChatFrame4:SetWidth(CalculatedWidth)
 		ChatFrame4:Show()
 		ChatFrame4Tab:Show()
 		ChatFrame4Background:SetAlpha(0.6)
@@ -163,7 +165,7 @@ chat:SetScript(
 		ChatFrame5:SetClampRectInsets(0, -1, 0, 0)
 		ChatFrame5:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", 3, 7)
 		ChatFrame5:SetHeight(220)
-		ChatFrame5:SetWidth(550)
+		ChatFrame5:SetWidth(CalculatedWidth)
 		ChatFrame5:Show()
 		ChatFrame5Tab:Show()
 		ChatFrame5Background:SetAlpha(0.6)
@@ -175,7 +177,7 @@ chat:SetScript(
 		ChatFrame6:SetClampRectInsets(0, -1, 0, 0)
 		ChatFrame6:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", 3, 7)
 		ChatFrame6:SetHeight(220)
-		ChatFrame6:SetWidth(550)
+		ChatFrame6:SetWidth(CalculatedWidth)
 		ChatFrame6:Show()
 		ChatFrame6Tab:Show()
 		ChatFrame6Background:SetAlpha(0.6)

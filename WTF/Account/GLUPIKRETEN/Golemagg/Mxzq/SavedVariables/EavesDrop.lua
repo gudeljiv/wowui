@@ -233,12 +233,12 @@ EavesDropStatsDB = {
 					},
 					["Melee Attack"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/31/20 09:06:55|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h melee swing hits |Hunit:Creature-0-4445-1-165-3458-000024685F:Razormane Seer|hRazormane Seer|h for |cffffffff62|r |cffffffffPhysical|r.",
-							["amount"] = 62,
+							["time"] = "|cffffffff08/05/20 05:26:05|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h melee swing hits |Hunit:Creature-0-4445-1-172-3100-00002AB207:Elder Mottled Boar|hElder Mottled Boar|h for |cffffffff14|r |cffffffffPhysical|r.(51 Overkill)",
+							["amount"] = 65,
 						},
 						[2] = {
-							["time"] = "|cffffffff07/26/20 12:01:26|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h melee swing hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-29-3397-00001D50A3:Kolkar Bloodcharger|hKolkar Bloodcharger|h for |cffffffff118|r |cffffffffPhysical|r.(Critical)",
-							["amount"] = 118,
+							["time"] = "|cffffffff08/05/20 05:26:33|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h melee swing hits |Hunit:Creature-0-4445-1-172-3127-00002ABEAE:Venomtail Scorpid|hVenomtail Scorpid|h for |cffffffff61|r |cffffffffPhysical|r.(64 Overkill) (Critical)",
+							["amount"] = 125,
 						},
 					},
 					["Auto Shot"] = {
@@ -298,17 +298,6 @@ EavesDropStatsDB = {
 						},
 						["icon"] = 132215,
 					},
-					["Wing Clip"] = {
-						[-2] = {
-							["time"] = "|cffffffff07/16/20 11:51:37|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWing Clip|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-66-3246-00000F738C:Fleeting Plainstrider|hFleeting Plainstrider|h for |cffffffff4|r |cffffffffPhysical|r.",
-							["amount"] = 4,
-						},
-						[2] = {
-							["time"] = "|cffffffff07/22/20 05:37:51|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWing Clip|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-172-3100-0000182F7E:Elder Mottled Boar|hElder Mottled Boar|h for |cffffffff8|r |cffffffffPhysical|r.(Critical)",
-							["amount"] = 8,
-						},
-						["icon"] = 132309,
-					},
 					["Multi-Shot"] = {
 						[-2] = {
 							["time"] = "|cffffffff08/01/20 02:02:48|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMulti-Shot|r|h hits |Hunit:Creature-0-4447-47-17000-4515-0000A55849:Death's Head Acolyte|hDeath's Head Acolyte|h for |cffffffff85|r |cffffffffPhysical|r.",
@@ -319,6 +308,17 @@ EavesDropStatsDB = {
 							["amount"] = 132,
 						},
 						["icon"] = 132330,
+					},
+					["Wing Clip"] = {
+						[-2] = {
+							["time"] = "|cffffffff07/16/20 11:51:37|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWing Clip|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-66-3246-00000F738C:Fleeting Plainstrider|hFleeting Plainstrider|h for |cffffffff4|r |cffffffffPhysical|r.",
+							["amount"] = 4,
+						},
+						[2] = {
+							["time"] = "|cffffffff07/22/20 05:37:51|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWing Clip|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-172-3100-0000182F7E:Elder Mottled Boar|hElder Mottled Boar|h for |cffffffff8|r |cffffffffPhysical|r.(Critical)",
+							["amount"] = 8,
+						},
+						["icon"] = 132309,
 					},
 				},
 			}, -- [1]
