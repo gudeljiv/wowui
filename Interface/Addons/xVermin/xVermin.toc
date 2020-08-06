@@ -27,6 +27,7 @@ AutoDismount.lua
 AutoRepair.lua
 AutoSellJunk.lua
 BestFood.lua
+BuffSource.lua
 Bindings.lua
 Chat.lua
 DamageFont.lua
