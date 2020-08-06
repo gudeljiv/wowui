@@ -44,6 +44,14 @@ f:SetScript(
 		end
 
 		-------------------------------------------
+		-- adjust position of Details TinyThreat
+		-------------------------------------------
+		if (IsAddOnLoaded("Details")) then
+			Details_TinyThreat:ClearAllPoints()
+			Details_TinyThreat:SetPoint("TOPRIGHT", "ChatFrame3", "TOPLEFT", -10, 2)
+		end
+
+		-------------------------------------------
 		-- adjust position of Recount
 		-------------------------------------------
 		if (IsAddOnLoaded("Recount")) then

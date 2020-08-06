@@ -18,7 +18,7 @@ Details_TinyThreatDB = {
 		["Mxyz - Golemagg"] = {
 			["enabled"] = true,
 			["animate"] = true,
-			["useclasscolors"] = false,
+			["author"] = "Details! Team",
 			["playercolor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -30,8 +30,8 @@ Details_TinyThreatDB = {
 			["dividebyhundred"] = true,
 			["showamount"] = false,
 			["useplayercolor"] = false,
+			["useclasscolors"] = false,
 			["alwaysshowme"] = true,
-			["author"] = "Details! Team",
 		},
 	},
 }
