@@ -41,6 +41,7 @@ PlayerTargetSetMark.lua
 SkinBuffs.lua
 SortBags.lua
 TrackingIcon.lua
+UIScale.lua
 Unit.lua
 
 xVermin.lua

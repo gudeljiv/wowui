@@ -9,10 +9,10 @@ Details_TinyThreatDB = {
 		["Mxys - Golemagg"] = "Mxyz - Golemagg",
 		["Klhjakhsgdjh - Golemagg"] = "Mxyz - Golemagg",
 		["Antun - Golemagg"] = "Mxyz - Golemagg",
-		["Jaroslav - Golemagg"] = "Mxyz - Golemagg",
-		["Dmitar - Golemagg"] = "Mxyz - Golemagg",
-		["Mxyzptlk - Golemagg"] = "Mxyz - Golemagg",
 		["Vermin - Golemagg"] = "Mxyz - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Mxyz - Golemagg",
+		["Dmitar - Golemagg"] = "Mxyz - Golemagg",
+		["Jaroslav - Golemagg"] = "Mxyz - Golemagg",
 	},
 	["profiles"] = {
 		["Mxyz - Golemagg"] = {
@@ -30,8 +30,8 @@ Details_TinyThreatDB = {
 			["dividebyhundred"] = true,
 			["showamount"] = false,
 			["useplayercolor"] = false,
-			["alwaysshowme"] = true,
 			["useclasscolors"] = false,
+			["alwaysshowme"] = true,
 		},
 	},
 }
