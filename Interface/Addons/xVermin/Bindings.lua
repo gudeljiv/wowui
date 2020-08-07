@@ -124,13 +124,6 @@ f:SetScript(
 	"OnEvent",
 	function()
 		FixBindings()
-		-- C_Timer.After(
-		-- 	15,
-		-- 	function()
-		-- 		FixBindings()
-		-- 	end
-		-- )
 	end
 )
--- f:RegisterEvent("PLAYER_ENTERING_WORLD")
 f:RegisterEvent("ADDON_LOADED")

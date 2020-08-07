@@ -58,6 +58,10 @@ ChocolateBarDB = {
 					["barOffx"] = -88.3325424194336,
 				},
 			},
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
+			["locked"] = false,
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -68,10 +72,6 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["locked"] = false,
 			["moveFrames"] = false,
 			["objSettings"] = {
 				["PitBull4"] = {
@@ -317,14 +317,14 @@ ChocolateBarDB = {
 					["customLabel"] = "B",
 				},
 			},
-			["fontName"] = "Friz Quadrata TT",
 			["desaturated"] = false,
+			["gap"] = 0,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
 			["forceColor"] = false,
-			["gap"] = 0,
+			["fontName"] = "Friz Quadrata TT",
 			["textOffset"] = 2,
 			["height"] = 20,
 			["fixedStrata"] = true,
@@ -352,7 +352,7 @@ CB_PlayedTime = {
 		["total"] = 1719,
 	},
 	["Mxyz-"] = {
-		["total"] = 17317,
+		["total"] = 17402,
 	},
 	["Antun-"] = {
 		["total"] = 52,
@@ -372,8 +372,8 @@ CB_PlayedTime = {
 	["Greenwise-"] = {
 		["total"] = 79871,
 	},
-	["Whatevs-"] = {
-		["total"] = 213,
+	["Dmitar-"] = {
+		["total"] = 55,
 	},
 	["Mxyzptlk-"] = {
 		["total"] = 8367,
@@ -400,12 +400,12 @@ CB_PlayedTime = {
 		["total"] = 2,
 	},
 	["Mxzq-"] = {
-		["total"] = 213447,
+		["total"] = 214027,
 	},
 	["Dotwise-"] = {
 		["total"] = 3924,
 	},
-	["Dmitar-"] = {
-		["total"] = 55,
+	["Whatevs-"] = {
+		["total"] = 213,
 	},
 }

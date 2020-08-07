@@ -8,14 +8,14 @@ SkilletDB = {
 	["global"] = {
 		["customVersion"] = 1,
 		["MissingVendorItems"] = {
-			[52188] = "Jeweler's Setting",
-			[38682] = "Enchanting Vellum",
 			[3857] = "Coal",
-			[30817] = "Simple Flour",
+			[38682] = "Enchanting Vellum",
+			[52188] = "Jeweler's Setting",
+			[17034] = "Maple Seed",
 			[4539] = "Goldenbark Apple",
 			[4399] = "Wooden Stock",
 			[17035] = "Stranglethorn Seed",
-			[17034] = "Maple Seed",
+			[30817] = "Simple Flour",
 		},
 		["itemRecipeSource"] = {
 			[6451] = {
@@ -24,41 +24,41 @@ SkilletDB = {
 			[6452] = {
 				["Anti-Venom"] = true,
 			},
-			[3860] = {
-				["Smelt Mithril"] = true,
+			[3575] = {
+				["Smelt Iron"] = true,
 			},
 			[8544] = {
 				["Mageweave Bandage"] = true,
 			},
-			[2840] = {
-				["Smelt Copper"] = true,
+			[3860] = {
+				["Smelt Mithril"] = true,
 			},
 			[3577] = {
 				["Smelt Gold"] = true,
 			},
-			[1251] = {
-				["Linen Bandage"] = true,
+			[3859] = {
+				["Smelt Steel"] = true,
+			},
+			[2840] = {
+				["Smelt Copper"] = true,
 			},
 			[3530] = {
 				["Wool Bandage"] = true,
 			},
-			[3575] = {
-				["Smelt Iron"] = true,
-			},
 			[2841] = {
 				["Smelt Bronze"] = true,
-			},
-			[3531] = {
-				["Heavy Wool Bandage"] = true,
 			},
 			[3576] = {
 				["Smelt Tin"] = true,
 			},
+			[3531] = {
+				["Heavy Wool Bandage"] = true,
+			},
 			[2842] = {
 				["Smelt Silver"] = true,
 			},
-			[3859] = {
-				["Smelt Steel"] = true,
+			[1251] = {
+				["Linen Bandage"] = true,
 			},
 			[6450] = {
 				["Silk Bandage"] = true,
@@ -148,7 +148,7 @@ SkilletDB = {
 			["ignoreListLocation_point"] = "CENTER",
 			["shoppingListLocation_scale"] = 1,
 			["standaloneQueueLocation_x"] = -280.833190917969,
-			["ignoreListLocation_x"] = 136.170593261719,
+			["shoppingListLocation_point"] = "CENTER",
 			["plugins"] = {
 				["ATL"] = {
 					["buyFactor"] = 4,
@@ -188,12 +188,12 @@ SkilletDB = {
 			["tradeSkillLocation_point"] = "TOPLEFT",
 			["standaloneQueueLocation_y"] = 247.500411987305,
 			["enhanced_recipe_display"] = true,
+			["tradeSkillLocation_scale"] = 1,
 			["shoppingListLocation_y"] = 157.881286621094,
 			["transparency"] = 0.95,
 			["standaloneQueueLocation_scale"] = 1,
-			["tradeSkillLocation_scale"] = 1,
 			["standaloneQueueLocation_point"] = "BOTTOM",
-			["shoppingListLocation_point"] = "CENTER",
+			["ignoreListLocation_x"] = 136.170593261719,
 			["tradeSkillLocation_y"] = -146.47119140625,
 			["WarnLog"] = true,
 		},
@@ -669,10 +669,10 @@ SkilletDB = {
 					[3385] = 6,
 					[1708] = 29,
 					[2772] = 53,
-					[929] = 17,
+					[3030] = 2000,
 					[2901] = 1,
 					[4872] = 1,
-					[3030] = 2000,
+					[929] = 17,
 					[769] = 1,
 					[771] = 1,
 					[3771] = 22,
@@ -760,8 +760,8 @@ SkilletDB = {
 				["Mxzq"] = {
 					[2575] = {
 						[3859] = "",
-						[3860] = "",
 						[2840] = "",
+						[3860] = "",
 						[3575] = "",
 						[3576] = "",
 						[2842] = "",
@@ -812,7 +812,6 @@ SkilletDB = {
 			},
 			["auctionData"] = {
 				["Mxzq"] = {
-					[3577] = 2,
 				},
 				["Mxys"] = {
 				},
@@ -832,10 +831,10 @@ SkilletDB = {
 					[1727] = 1,
 					[14742] = 1,
 					[15891] = 1,
-					[15515] = 1,
-					[15532] = 1,
 					[6386] = 1,
 					[14182] = 1,
+					[15515] = 1,
+					[15532] = 1,
 					[15517] = 1,
 					[14127] = 1,
 					[3198] = 1,
@@ -954,24 +953,11 @@ SkilletDB = {
 				["Vermin"] = {
 				},
 			},
-			["subClass"] = {
+			["inventoryData"] = {
 				["Mxzq"] = {
-					[2575] = {
-						[3859] = "Trade Goods",
-						[3860] = "Trade Goods",
-						[2840] = "Trade Goods",
-						[3575] = "Trade Goods",
-						[3576] = "Trade Goods",
-						[2842] = "Trade Goods",
-						[3577] = "Trade Goods",
-						["selected"] = "None",
-						["name"] = {
-							["Trade Goods"] = 8,
-						},
-						[2841] = "Trade Goods",
-					},
+					[2772] = 53,
 				},
-				["Mxyz"] = {
+				["Mxys"] = {
 				},
 				["Mxyzptlk"] = {
 				},
@@ -981,7 +967,7 @@ SkilletDB = {
 				},
 				["Antun"] = {
 				},
-				["Mxys"] = {
+				["Mxyz"] = {
 				},
 				["Augustin"] = {
 				},
@@ -992,21 +978,9 @@ SkilletDB = {
 				["Jaroslav"] = {
 				},
 				["Vermin"] = {
-					[3273] = {
-						[6451] = "Consumable",
-						[6452] = "Reagent",
-						[1251] = "Consumable",
-						[3530] = "Consumable",
-						[3531] = "Consumable",
-						[2581] = "Consumable",
-						[8544] = "Consumable",
-						["selected"] = "None",
-						[6450] = "Consumable",
-						["name"] = {
-							["Reagent"] = 1,
-							["Consumable"] = 7,
-						},
-					},
+					[4306] = 5,
+					[2589] = 7,
+					[2592] = 14,
 				},
 			},
 			["groupSN"] = {
@@ -1444,12 +1418,24 @@ SkilletDB = {
 				["Vermin"] = {
 				},
 			},
-			["inventoryData"] = {
+			["subClass"] = {
 				["Mxzq"] = {
-					[2772] = 53,
-					[3575] = "0 53",
+					[2575] = {
+						[3859] = "Trade Goods",
+						[2840] = "Trade Goods",
+						[3860] = "Trade Goods",
+						[3575] = "Trade Goods",
+						[3576] = "Trade Goods",
+						[2842] = "Trade Goods",
+						[3577] = "Trade Goods",
+						["selected"] = "None",
+						["name"] = {
+							["Trade Goods"] = 8,
+						},
+						[2841] = "Trade Goods",
+					},
 				},
-				["Mxys"] = {
+				["Mxyz"] = {
 				},
 				["Mxyzptlk"] = {
 				},
@@ -1459,7 +1445,7 @@ SkilletDB = {
 				},
 				["Antun"] = {
 				},
-				["Mxyz"] = {
+				["Mxys"] = {
 				},
 				["Augustin"] = {
 				},
@@ -1470,9 +1456,21 @@ SkilletDB = {
 				["Jaroslav"] = {
 				},
 				["Vermin"] = {
-					[4306] = 5,
-					[2589] = 7,
-					[2592] = 14,
+					[3273] = {
+						[6451] = "Consumable",
+						[6452] = "Reagent",
+						[1251] = "Consumable",
+						[3530] = "Consumable",
+						[3531] = "Consumable",
+						[2581] = "Consumable",
+						[8544] = "Consumable",
+						["selected"] = "None",
+						[6450] = "Consumable",
+						["name"] = {
+							["Reagent"] = 1,
+							["Consumable"] = 7,
+						},
+					},
 				},
 			},
 			["options"] = {

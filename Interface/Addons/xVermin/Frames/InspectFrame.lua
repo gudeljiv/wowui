@@ -32,14 +32,14 @@ local function BorderItemInspectSlots(counter)
 			_, _, itemRarity = GetItemInfo(itemLink)
 			if (itemRarity and itemRarity > 1) then
 				r, g, b = GetItemQualityColor(itemRarity)
-				v:SetBeautyBorderTexture(config.border.colorize)
+				v:SetBeautyBorderTexture(xVermin.config.border.colorize)
 				v:SetBeautyBorderColor(r, g, b, 1)
 			else
-				v:SetBeautyBorderTexture(config.border.default)
+				v:SetBeautyBorderTexture(xVermin.config.border.default)
 				v:SetBeautyBorderColor(1, 1, 1, 1)
 			end
 		else
-			v:SetBeautyBorderTexture(config.border.default)
+			v:SetBeautyBorderTexture(xVermin.config.border.default)
 			v:SetBeautyBorderColor(1, 1, 1, 1)
 		end
 	end

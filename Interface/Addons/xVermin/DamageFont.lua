@@ -1,7 +1,7 @@
 DamageFont = CreateFrame("Frame", "DamageFont")
 
 function DamageFont:ApplySystemFonts()
-	DAMAGE_TEXT_FONT = config.font.damage
+	DAMAGE_TEXT_FONT = xVermin.config.font.damage
 end
 
 DamageFont:SetScript(

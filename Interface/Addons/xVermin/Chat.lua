@@ -81,7 +81,8 @@ local chat = CreateFrame("Frame")
 chat:SetScript(
 	"OnEvent",
 	function()
-		local CalculatedWidth = GetScreenWidth() * UIParent:GetEffectiveScale() / 2.6
+		-- local chatWidth = GetScreenWidth() * UIParent:GetEffectiveScale() / 2.6
+		local chatWidth = GetScreenWidth() * UIParent:GetEffectiveScale() / (4.5 * xVermin.config.scale)
 
 		FCF_ResetChatWindows()
 		JoinChannelByName("WorldDefense")
@@ -93,7 +94,7 @@ chat:SetScript(
 		ChatFrame1:SetClampRectInsets(0, -1, 0, 0)
 		ChatFrame1:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", 3, 7)
 		ChatFrame1:SetHeight(220)
-		ChatFrame1:SetWidth(CalculatedWidth)
+		ChatFrame1:SetWidth(chatWidth)
 		ChatFrame1Background:SetAlpha(0.6)
 		FCF_SetChatWindowFontSize(nil, ChatFrame1, 12)
 
@@ -101,7 +102,7 @@ chat:SetScript(
 		ChatFrame2:SetClampRectInsets(0, -1, 0, 0)
 		ChatFrame2:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", 3, 7)
 		ChatFrame2:SetHeight(196)
-		ChatFrame2:SetWidth(CalculatedWidth)
+		ChatFrame2:SetWidth(chatWidth)
 		ChatFrame2Background:SetAlpha(0.6)
 		FCF_SetChatWindowFontSize(nil, ChatFrame2, 12)
 
@@ -141,7 +142,7 @@ chat:SetScript(
 		ChatFrame3:SetClampRectInsets(0, -1, 0, 0)
 		ChatFrame3:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", -3, 7)
 		ChatFrame3:SetHeight(220)
-		ChatFrame3:SetWidth(CalculatedWidth)
+		ChatFrame3:SetWidth(chatWidth)
 		ChatFrame3:Show()
 		ChatFrame3Tab:Show()
 		ChatFrame3Background:SetAlpha(0.6)
@@ -153,7 +154,7 @@ chat:SetScript(
 		ChatFrame4:SetClampRectInsets(0, -1, 0, 0)
 		ChatFrame4:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", 3, 7)
 		ChatFrame4:SetHeight(220)
-		ChatFrame4:SetWidth(CalculatedWidth)
+		ChatFrame4:SetWidth(chatWidth)
 		ChatFrame4:Show()
 		ChatFrame4Tab:Show()
 		ChatFrame4Background:SetAlpha(0.6)
@@ -165,22 +166,10 @@ chat:SetScript(
 		ChatFrame5:SetClampRectInsets(0, -1, 0, 0)
 		ChatFrame5:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", 3, 7)
 		ChatFrame5:SetHeight(220)
-		ChatFrame5:SetWidth(CalculatedWidth)
+		ChatFrame5:SetWidth(chatWidth)
 		ChatFrame5:Show()
 		ChatFrame5Tab:Show()
 		ChatFrame5Background:SetAlpha(0.6)
-
-		local frame = FCF_OpenNewWindow("DEV")
-		FCF_SetChatWindowFontSize(nil, frame, 12)
-		ChatFrame_RemoveAllMessageGroups(frame)
-		ChatFrame6:ClearAllPoints()
-		ChatFrame6:SetClampRectInsets(0, -1, 0, 0)
-		ChatFrame6:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", 3, 7)
-		ChatFrame6:SetHeight(220)
-		ChatFrame6:SetWidth(CalculatedWidth)
-		ChatFrame6:Show()
-		ChatFrame6Tab:Show()
-		ChatFrame6Background:SetAlpha(0.6)
 
 		local channel_type, channel_name = JoinChannelByName("xVerminPrivateDEV", "perika10", ChatFrame6:GetID(), 1)
 
@@ -217,13 +206,6 @@ chat:SetScript(
 		end
 		-- ChatFrame5.SetClampRectInsets = function() end
 		ChatFrame5Background.SetAlpha = function()
-		end
-
-		-- ChatFrame6.ClearAllPoints = function() end
-		ChatFrame6.SetPoint = function()
-		end
-		-- ChatFrame6.SetClampRectInsets = function() end
-		ChatFrame6Background.SetAlpha = function()
 		end
 
 		for i, v in pairs(
@@ -270,7 +252,6 @@ local function SetChatChannels()
 	ChatFrame_AddChannel(ChatFrame4, "LookingForGroup")
 	ChatFrame_AddChannel(ChatFrame5, "LocalDefense")
 	ChatFrame_AddChannel(ChatFrame5, "WorldDefense")
-	ChatFrame_AddChannel(ChatFrame6, "xVerminPrivateDEV")
 end
 
 local f = CreateFrame("Frame")

@@ -48,7 +48,7 @@ f:SetScript(
 		-------------------------------------------
 		if (IsAddOnLoaded("Details")) then
 			Details_TinyThreat:ClearAllPoints()
-			Details_TinyThreat:SetPoint("TOPRIGHT", "ChatFrame3", "TOPLEFT", -10, 2)
+			Details_TinyThreat:SetPoint("TOPRIGHT", "ChatFrame3", "TOPLEFT", -2, 2)
 		end
 
 		-------------------------------------------
@@ -202,11 +202,11 @@ f:SetScript(
 		PetFrame:HookScript(
 			"OnUpdate",
 			function(self)
-				PetFrameHealthBarText:SetFont(config.font.atari, 10, "THINOUTLINE")
+				PetFrameHealthBarText:SetFont(xVermin.config.font.atari, 10, "THINOUTLINE")
 				PetFrameHealthBarText:SetPoint("TOPRIGHT", PetFrameHealthBar, "TOPRIGHT", 0, 2)
 				PetFrameHealthBarText.SetPoint = function()
 				end
-				PetFrameManaBarText:SetFont(config.font.atari, 10, "THINOUTLINE")
+				PetFrameManaBarText:SetFont(xVermin.config.font.atari, 10, "THINOUTLINE")
 				PetFrameManaBarText:SetPoint("TOPRIGHT", PetFrameManaBar, "TOPRIGHT", 0, 0)
 				PetFrameManaBarText.SetPoint = function()
 				end

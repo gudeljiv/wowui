@@ -1,9 +1,6 @@
-local _, ns = ...
-
--- ns.config = {}
--- local config = ns.config
-
-config = {
+xVermin.config = {
+	-- scale = 768 / string.match(({GetScreenResolutions()})[GetCurrentResolution()], "%d+x(%d+)"),
+	scale = 0.6,
 	font = {
 		arial = "Fonts\\ARIALN.ttf",
 		atari = "Interface\\AddOns\\xVermin\\Media\\Atari.ttf",

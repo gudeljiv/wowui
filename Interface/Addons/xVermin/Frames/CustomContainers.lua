@@ -22,7 +22,7 @@ cc_combat:SetHeight(20)
 cc_combat:SetPoint("LEFT", cc, "LEFT", 0, 0)
 cc_combat:SetBackdrop(
 	{
-		bgFile = config.background.white,
+		bgFile = xVermin.config.background.white,
 		edgeFile = "",
 		tile = false,
 		tileSize = 0,
@@ -107,7 +107,7 @@ cc1:SetHeight(30)
 cc1:SetPoint("LEFT", cc, "LEFT", 0, 0)
 cc1:SetBackdrop(
 	{
-		bgFile = config.background.white,
+		bgFile = xVermin.config.background.white,
 		edgeFile = "",
 		tile = false,
 		tileSize = 0,
@@ -134,7 +134,7 @@ cc2:SetHeight(30)
 cc2:SetPoint("LEFT", cc, "LEFT", 0, 0)
 cc2:SetBackdrop(
 	{
-		bgFile = config.background.white,
+		bgFile = xVermin.config.background.white,
 		edgeFile = "",
 		tile = false,
 		tileSize = 0,

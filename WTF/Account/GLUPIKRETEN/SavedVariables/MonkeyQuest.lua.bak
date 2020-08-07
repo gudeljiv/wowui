@@ -786,10 +786,6 @@ MonkeyQuestConfig = {
 		["m_bAlwaysHeaders"] = false,
 		["m_bGrowUp"] = false,
 	},
-	["Golemagg|Mxzq"] = {
-		["m_aQuestList"] = {
-		},
-	},
 	["Global"] = {
 		["m_bItemsEnabled"] = true,
 		["m_iFont"] = 0,
@@ -814,9 +810,9 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 929.400146484375,
+		["m_iFrameBottom"] = 1009.39996337891,
 		["m_bHideCompletedQuests"] = true,
-		["m_iFrameLeft"] = 1457.40014648438,
+		["m_iFrameLeft"] = 1585.39990234375,
 		["m_bColourDoneOrFailed"] = true,
 		["m_bLocked"] = true,
 		["m_bNoBorder"] = true,
@@ -833,7 +829,7 @@ MonkeyQuestConfig = {
 		["m_iFrameWidth"] = 270,
 		["m_bCrashBorder"] = false,
 		["m_strHeaderOpenColour"] = "|cffbfbfff",
-		["m_iFrameTop"] = 967.400146484375,
+		["m_iFrameTop"] = 1047.40002441406,
 		["m_bObjectives"] = true,
 		["m_bHideHeader"] = false,
 		["m_bShowTooltipObjectives"] = true,
@@ -842,6 +838,10 @@ MonkeyQuestConfig = {
 		["m_bHideTitle"] = false,
 		["m_bHideTitleButtons"] = false,
 		["m_bGrowUp"] = false,
+	},
+	["Golemagg|Mxzq"] = {
+		["m_aQuestList"] = {
+		},
 	},
 	["Genesis|Malinac"] = {
 		["m_iFont"] = 0,
@@ -1044,19 +1044,19 @@ MonkeyQuestConfig = {
 		["m_bShowZoneHighlight"] = true,
 		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
 		["m_aQuestList"] = {
-			["Vanquish the Betrayers - false"] = {
+			["Encroachment - false"] = {
 				["m_bChecked"] = true,
 			},
 			["From The Wreckage.... - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Durotar - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Encroachment - false"] = {
-				["m_bChecked"] = true,
-			},
 			["Break a Few Eggs - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Vanquish the Betrayers - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Durotar - true"] = {
 				["m_bChecked"] = true,
 			},
 		},

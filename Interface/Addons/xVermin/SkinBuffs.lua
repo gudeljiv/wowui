@@ -37,14 +37,14 @@ local function SkinTarget()
 				end
 
 				if frameCount then
-					frameCount:SetFont(config.font.atari, config.buff.fontsize, config.buff.outline)
+					frameCount:SetFont(xVermin.config.font.atari, xVermin.config.buff.fontsize, xVermin.config.buff.outline)
 					frameCount:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", 0, 2)
 				end
 
 				if frame then
-					frame:CreateBeautyBorder(config.buff.bordersize)
-					frame:SetBeautyBorderTexture(config.border.default)
-					frame:SetScale(config.buff.scale)
+					frame:CreateBeautyBorder(xVermin.config.buff.bordersize)
+					frame:SetBeautyBorderTexture(xVermin.config.border.default)
+					frame:SetScale(xVermin.config.buff.scale)
 				end
 			else
 				if frame then
@@ -65,21 +65,21 @@ local function SkinTarget()
 				end
 
 				if frameCount then
-					frameCount:SetFont(config.font.atari, config.debuff.fontsize, config.debuff.outline)
+					frameCount:SetFont(xVermin.config.font.atari, xVermin.config.debuff.fontsize, xVermin.config.debuff.outline)
 					frameCount:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", 0, 2)
 				end
 
 				if select(4, UnitDebuff("target", i)) then
-					color = config.ReplacedDebuffTypeColor[select(4, UnitDebuff("target", i))]
+					color = xVermin.config.ReplacedDebuffTypeColor[select(4, UnitDebuff("target", i))]
 				else
-					color = config.ReplacedDebuffTypeColor["none"]
+					color = xVermin.config.ReplacedDebuffTypeColor["none"]
 				end
 
 				if frame then
-					frame:CreateBeautyBorder(config.debuff.bordersize)
-					frame:SetBeautyBorderTexture(config.border.colorize)
+					frame:CreateBeautyBorder(xVermin.config.debuff.bordersize)
+					frame:SetBeautyBorderTexture(xVermin.config.border.colorize)
 					frame:SetBeautyBorderColor(color.r, color.g, color.b)
-					frame:SetScale(config.buff.scale)
+					frame:SetScale(xVermin.config.buff.scale)
 				end
 			else
 				if frame then
@@ -108,13 +108,13 @@ local function SkinPet()
 			end
 
 			if frameCount then
-				frameCount:SetFont(config.font.atari, config.petbuff.fontsize, config.petbuff.outline)
+				frameCount:SetFont(xVermin.config.font.atari, xVermin.config.petbuff.fontsize, xVermin.config.petbuff.outline)
 				frameCount:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", 0, 2)
 			end
 
 			if frame then
-				frame:CreateBeautyBorder(config.petbuff.bordersize)
-				frame:SetBeautyBorderTexture(config.border.default)
+				frame:CreateBeautyBorder(xVermin.config.petbuff.bordersize)
+				frame:SetBeautyBorderTexture(xVermin.config.border.default)
 			end
 
 			------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -129,19 +129,19 @@ local function SkinPet()
 			end
 
 			if frameCount then
-				frameCount:SetFont(config.font.atari, config.petdebuff.fontsize, config.petdebuff.outline)
+				frameCount:SetFont(xVermin.config.font.atari, xVermin.config.petdebuff.fontsize, xVermin.config.petdebuff.outline)
 				frameCount:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", 0, 2)
 			end
 
 			if select(4, UnitDebuff("pet", i)) then
-				color = config.ReplacedDebuffTypeColor[select(4, UnitDebuff("target", i))]
+				color = xVermin.config.ReplacedDebuffTypeColor[select(4, UnitDebuff("target", i))]
 			else
-				color = config.ReplacedDebuffTypeColor["none"]
+				color = xVermin.config.ReplacedDebuffTypeColor["none"]
 			end
 
 			if frame then
-				frame:CreateBeautyBorder(config.petdebuff.bordersize)
-				frame:SetBeautyBorderTexture(config.border.colorize)
+				frame:CreateBeautyBorder(xVermin.config.petdebuff.bordersize)
+				frame:SetBeautyBorderTexture(xVermin.config.border.colorize)
 				frame:SetBeautyBorderColor(color.r, color.g, color.b)
 			end
 		end

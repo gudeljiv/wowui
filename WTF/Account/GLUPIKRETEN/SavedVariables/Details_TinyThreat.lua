@@ -1,3 +1,4 @@
+
 Details_TinyThreatDB = {
 	["characters"] = {
 		["Mxzq - Golemagg"] = "Default",
@@ -11,7 +12,7 @@ Details_TinyThreatDB = {
 		["Jaroslav - Golemagg"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default"
+		["Vermin - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -22,15 +23,15 @@ Details_TinyThreatDB = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
-				1 -- [4]
+				1, -- [4]
 			},
 			["openedfromcommand"] = false,
 			["updatespeed"] = 0.2,
 			["dividebyhundred"] = true,
 			["showamount"] = false,
 			["useplayercolor"] = false,
+			["useclasscolors"] = false,
 			["alwaysshowme"] = true,
-			["useclasscolors"] = false
-		}
-	}
+		},
+	},
 }
