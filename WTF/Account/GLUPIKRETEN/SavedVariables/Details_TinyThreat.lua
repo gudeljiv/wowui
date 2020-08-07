@@ -1,21 +1,20 @@
-
 Details_TinyThreatDB = {
 	["characters"] = {
-		["Mxzq - Golemagg"] = "Mxyz - Golemagg",
-		["Mxym - Golemagg"] = "Mxyz - Golemagg",
-		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
-		["Augustin - Golemagg"] = "Mxyz - Golemagg",
-		["Grgur - Golemagg"] = "Mxyz - Golemagg",
-		["Mxys - Golemagg"] = "Mxyz - Golemagg",
-		["Klhjakhsgdjh - Golemagg"] = "Mxyz - Golemagg",
-		["Antun - Golemagg"] = "Mxyz - Golemagg",
-		["Jaroslav - Golemagg"] = "Mxyz - Golemagg",
-		["Dmitar - Golemagg"] = "Mxyz - Golemagg",
-		["Mxyzptlk - Golemagg"] = "Mxyz - Golemagg",
-		["Vermin - Golemagg"] = "Mxyz - Golemagg",
+		["Mxzq - Golemagg"] = "Default",
+		["Mxym - Golemagg"] = "Default",
+		["Mxyz - Golemagg"] = "Default",
+		["Augustin - Golemagg"] = "Default",
+		["Grgur - Golemagg"] = "Default",
+		["Mxys - Golemagg"] = "Default",
+		["Klhjakhsgdjh - Golemagg"] = "Default",
+		["Antun - Golemagg"] = "Default",
+		["Jaroslav - Golemagg"] = "Default",
+		["Dmitar - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default"
 	},
 	["profiles"] = {
-		["Mxyz - Golemagg"] = {
+		["Default"] = {
 			["enabled"] = true,
 			["animate"] = true,
 			["author"] = "Details! Team",
@@ -23,7 +22,7 @@ Details_TinyThreatDB = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
-				1, -- [4]
+				1 -- [4]
 			},
 			["openedfromcommand"] = false,
 			["updatespeed"] = 0.2,
@@ -31,7 +30,7 @@ Details_TinyThreatDB = {
 			["showamount"] = false,
 			["useplayercolor"] = false,
 			["alwaysshowme"] = true,
-			["useclasscolors"] = false,
-		},
-	},
+			["useclasscolors"] = false
+		}
+	}
 }
