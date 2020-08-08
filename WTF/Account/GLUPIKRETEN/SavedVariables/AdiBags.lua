@@ -87,7 +87,7 @@ AdiBagsDB = {
 				["stackable"] = true,
 				["incomplete"] = true,
 			},
-			["scale"] = 0.9,
+			["scale"] = 1.1,
 			["maxHeight"] = 0.33,
 			["skin"] = {
 				["BackpackColor"] = {

@@ -8,14 +8,14 @@ SkilletDB = {
 	["global"] = {
 		["customVersion"] = 1,
 		["MissingVendorItems"] = {
-			[3857] = "Coal",
-			[38682] = "Enchanting Vellum",
 			[52188] = "Jeweler's Setting",
-			[17034] = "Maple Seed",
-			[4539] = "Goldenbark Apple",
-			[4399] = "Wooden Stock",
 			[17035] = "Stranglethorn Seed",
+			[3857] = "Coal",
 			[30817] = "Simple Flour",
+			[38682] = "Enchanting Vellum",
+			[4399] = "Wooden Stock",
+			[4539] = "Goldenbark Apple",
+			[17034] = "Maple Seed",
 		},
 		["itemRecipeSource"] = {
 			[6451] = {
@@ -24,41 +24,41 @@ SkilletDB = {
 			[6452] = {
 				["Anti-Venom"] = true,
 			},
-			[3575] = {
-				["Smelt Iron"] = true,
-			},
-			[8544] = {
-				["Mageweave Bandage"] = true,
-			},
 			[3860] = {
 				["Smelt Mithril"] = true,
 			},
 			[3577] = {
 				["Smelt Gold"] = true,
 			},
-			[3859] = {
-				["Smelt Steel"] = true,
-			},
 			[2840] = {
 				["Smelt Copper"] = true,
-			},
-			[3530] = {
-				["Wool Bandage"] = true,
-			},
-			[2841] = {
-				["Smelt Bronze"] = true,
-			},
-			[3576] = {
-				["Smelt Tin"] = true,
-			},
-			[3531] = {
-				["Heavy Wool Bandage"] = true,
 			},
 			[2842] = {
 				["Smelt Silver"] = true,
 			},
 			[1251] = {
 				["Linen Bandage"] = true,
+			},
+			[3530] = {
+				["Wool Bandage"] = true,
+			},
+			[3575] = {
+				["Smelt Iron"] = true,
+			},
+			[2841] = {
+				["Smelt Bronze"] = true,
+			},
+			[3531] = {
+				["Heavy Wool Bandage"] = true,
+			},
+			[3576] = {
+				["Smelt Tin"] = true,
+			},
+			[8544] = {
+				["Mageweave Bandage"] = true,
+			},
+			[3859] = {
+				["Smelt Steel"] = true,
 			},
 			[6450] = {
 				["Silk Bandage"] = true,
@@ -148,12 +148,11 @@ SkilletDB = {
 			["ignoreListLocation_point"] = "CENTER",
 			["shoppingListLocation_scale"] = 1,
 			["standaloneQueueLocation_x"] = -280.833190917969,
-			["shoppingListLocation_point"] = "CENTER",
+			["ignoreListLocation_x"] = 136.170593261719,
 			["plugins"] = {
-				["ATL"] = {
-					["buyFactor"] = 4,
-					["markup"] = 1.05,
+				["beancounter"] = {
 					["enabled"] = true,
+					["days"] = 30,
 				},
 				["BBG"] = {
 					["enabled"] = true,
@@ -166,7 +165,7 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["AUC"] = {
+				["ATL"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
@@ -176,9 +175,10 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["beancounter"] = {
+				["AUC"] = {
+					["buyFactor"] = 4,
+					["markup"] = 1.05,
 					["enabled"] = true,
-					["days"] = 30,
 				},
 			},
 			["ignoreListLocation_scale"] = 1,
@@ -188,18 +188,18 @@ SkilletDB = {
 			["tradeSkillLocation_point"] = "TOPLEFT",
 			["standaloneQueueLocation_y"] = 247.500411987305,
 			["enhanced_recipe_display"] = true,
-			["tradeSkillLocation_scale"] = 1,
-			["shoppingListLocation_y"] = 157.881286621094,
 			["transparency"] = 0.95,
+			["shoppingListLocation_y"] = 157.881286621094,
+			["tradeSkillLocation_scale"] = 1,
 			["standaloneQueueLocation_scale"] = 1,
 			["standaloneQueueLocation_point"] = "BOTTOM",
-			["ignoreListLocation_x"] = 136.170593261719,
+			["shoppingListLocation_point"] = "CENTER",
 			["tradeSkillLocation_y"] = -146.47119140625,
 			["WarnLog"] = true,
 		},
 		["Mxym - Golemagg"] = {
 			["plugins"] = {
-				["AUC"] = {
+				["ATL"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
@@ -215,31 +215,30 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["beancounter"] = {
+				["AUC"] = {
+					["buyFactor"] = 4,
+					["markup"] = 1.05,
 					["enabled"] = true,
-					["days"] = 30,
 				},
 				["AHDB"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["ATL"] = {
-					["buyFactor"] = 4,
-					["markup"] = 1.05,
+				["beancounter"] = {
 					["enabled"] = true,
+					["days"] = 30,
 				},
 			},
 			["FixBugs"] = true,
 			["WarnLog"] = true,
 		},
 		["Mxyz - Golemagg"] = {
-			["FixBugs"] = true,
-			["WarnLog"] = true,
 			["plugins"] = {
-				["beancounter"] = {
+				["AUC"] = {
+					["buyFactor"] = 4,
+					["markup"] = 1.05,
 					["enabled"] = true,
-					["days"] = 30,
 				},
 				["BBG"] = {
 					["enabled"] = true,
@@ -252,29 +251,31 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["ATL"] = {
-					["buyFactor"] = 4,
-					["markup"] = 1.05,
+				["beancounter"] = {
 					["enabled"] = true,
+					["days"] = 30,
 				},
 				["AHDB"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["AUC"] = {
+				["ATL"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
 			},
+			["FixBugs"] = true,
+			["WarnLog"] = true,
 		},
 		["Augustin - Golemagg"] = {
+			["FixBugs"] = true,
+			["WarnLog"] = true,
 			["plugins"] = {
-				["ATL"] = {
-					["buyFactor"] = 4,
-					["markup"] = 1.05,
+				["beancounter"] = {
 					["enabled"] = true,
+					["days"] = 30,
 				},
 				["BBG"] = {
 					["enabled"] = true,
@@ -289,7 +290,7 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["AUC"] = {
+				["ATL"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
@@ -297,19 +298,19 @@ SkilletDB = {
 				["MTSL"] = {
 					["enabled"] = false,
 				},
-				["beancounter"] = {
+				["AUC"] = {
+					["buyFactor"] = 4,
+					["markup"] = 1.05,
 					["enabled"] = true,
-					["days"] = 30,
 				},
 			},
-			["FixBugs"] = true,
-			["WarnLog"] = true,
 		},
 		["Grgur - Golemagg"] = {
 			["plugins"] = {
-				["beancounter"] = {
+				["AUC"] = {
+					["buyFactor"] = 4,
+					["markup"] = 1.05,
 					["enabled"] = true,
-					["days"] = 30,
 				},
 				["BBG"] = {
 					["enabled"] = true,
@@ -324,15 +325,14 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["ATL"] = {
-					["buyFactor"] = 4,
-					["markup"] = 1.05,
+				["beancounter"] = {
 					["enabled"] = true,
+					["days"] = 30,
 				},
 				["MTSL"] = {
 					["enabled"] = false,
 				},
-				["AUC"] = {
+				["ATL"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
@@ -343,10 +343,9 @@ SkilletDB = {
 		},
 		["Mxys - Golemagg"] = {
 			["plugins"] = {
-				["ATL"] = {
-					["buyFactor"] = 4,
-					["markup"] = 1.05,
+				["beancounter"] = {
 					["enabled"] = true,
+					["days"] = 30,
 				},
 				["BBG"] = {
 					["enabled"] = true,
@@ -359,7 +358,7 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["AUC"] = {
+				["ATL"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
@@ -369,9 +368,10 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["beancounter"] = {
+				["AUC"] = {
+					["buyFactor"] = 4,
+					["markup"] = 1.05,
 					["enabled"] = true,
-					["days"] = 30,
 				},
 			},
 			["FixBugs"] = true,
@@ -379,9 +379,10 @@ SkilletDB = {
 		},
 		["Klhjakhsgdjh - Golemagg"] = {
 			["plugins"] = {
-				["beancounter"] = {
+				["AUC"] = {
+					["buyFactor"] = 4,
+					["markup"] = 1.05,
 					["enabled"] = true,
-					["days"] = 30,
 				},
 				["BBG"] = {
 					["enabled"] = true,
@@ -394,17 +395,16 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["ATL"] = {
-					["buyFactor"] = 4,
-					["markup"] = 1.05,
+				["beancounter"] = {
 					["enabled"] = true,
+					["days"] = 30,
 				},
 				["AHDB"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["AUC"] = {
+				["ATL"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
@@ -415,9 +415,10 @@ SkilletDB = {
 		},
 		["Antun - Golemagg"] = {
 			["plugins"] = {
-				["beancounter"] = {
+				["AUC"] = {
+					["buyFactor"] = 4,
+					["markup"] = 1.05,
 					["enabled"] = true,
-					["days"] = 30,
 				},
 				["BBG"] = {
 					["enabled"] = true,
@@ -430,17 +431,16 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["ATL"] = {
-					["buyFactor"] = 4,
-					["markup"] = 1.05,
+				["beancounter"] = {
 					["enabled"] = true,
+					["days"] = 30,
 				},
 				["AHDB"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["AUC"] = {
+				["ATL"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
@@ -451,10 +451,9 @@ SkilletDB = {
 		},
 		["Jaroslav - Golemagg"] = {
 			["plugins"] = {
-				["ATL"] = {
-					["buyFactor"] = 4,
-					["markup"] = 1.05,
+				["beancounter"] = {
 					["enabled"] = true,
+					["days"] = 30,
 				},
 				["BBG"] = {
 					["enabled"] = true,
@@ -467,7 +466,7 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["AUC"] = {
+				["ATL"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
@@ -477,9 +476,10 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["beancounter"] = {
+				["AUC"] = {
+					["buyFactor"] = 4,
+					["markup"] = 1.05,
 					["enabled"] = true,
-					["days"] = 30,
 				},
 			},
 			["FixBugs"] = true,
@@ -487,7 +487,7 @@ SkilletDB = {
 		},
 		["Dmitar - Golemagg"] = {
 			["plugins"] = {
-				["AUC"] = {
+				["ATL"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
@@ -503,33 +503,32 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["beancounter"] = {
+				["AUC"] = {
+					["buyFactor"] = 4,
+					["markup"] = 1.05,
 					["enabled"] = true,
-					["days"] = 30,
 				},
 				["AHDB"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["ATL"] = {
-					["buyFactor"] = 4,
-					["markup"] = 1.05,
+				["beancounter"] = {
 					["enabled"] = true,
+					["days"] = 30,
 				},
 			},
 			["FixBugs"] = true,
 			["WarnLog"] = true,
 		},
 		["Vermin - Golemagg"] = {
+			["tradeSkillLocation_x"] = 282.499816894531,
 			["FixBugs"] = true,
-			["WarnLog"] = true,
 			["tradeSkillLocation_scale"] = 1,
 			["plugins"] = {
-				["ATL"] = {
-					["buyFactor"] = 4,
-					["markup"] = 1.05,
+				["beancounter"] = {
 					["enabled"] = true,
+					["days"] = 30,
 				},
 				["BBG"] = {
 					["enabled"] = true,
@@ -542,7 +541,7 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["AUC"] = {
+				["ATL"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
@@ -552,18 +551,19 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["beancounter"] = {
+				["AUC"] = {
+					["buyFactor"] = 4,
+					["markup"] = 1.05,
 					["enabled"] = true,
-					["days"] = 30,
 				},
 			},
 			["tradeSkillLocation_point"] = "LEFT",
 			["tradeSkillLocation_y"] = 74.9999694824219,
-			["tradeSkillLocation_x"] = 282.499816894531,
+			["WarnLog"] = true,
 		},
 		["Mxyzptlk - Golemagg"] = {
 			["plugins"] = {
-				["AUC"] = {
+				["ATL"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
@@ -579,19 +579,19 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["beancounter"] = {
+				["AUC"] = {
+					["buyFactor"] = 4,
+					["markup"] = 1.05,
 					["enabled"] = true,
-					["days"] = 30,
 				},
 				["AHDB"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["ATL"] = {
-					["buyFactor"] = 4,
-					["markup"] = 1.05,
+				["beancounter"] = {
 					["enabled"] = true,
+					["days"] = 30,
 				},
 			},
 			["FixBugs"] = true,
@@ -665,17 +665,13 @@ SkilletDB = {
 			},
 			["bagData"] = {
 				["Mxzq"] = {
-					[6948] = 1,
-					[3385] = 6,
-					[1708] = 29,
-					[2772] = 53,
-					[3030] = 2000,
-					[2901] = 1,
-					[4872] = 1,
-					[929] = 17,
-					[769] = 1,
-					[771] = 1,
 					[3771] = 22,
+					[3030] = 2000,
+					[929] = 17,
+					[1708] = 29,
+					[2901] = 1,
+					[3385] = 6,
+					[6948] = 1,
 				},
 				["Mxys"] = {
 					[159] = 2,
@@ -704,24 +700,10 @@ SkilletDB = {
 					[6948] = 1,
 				},
 				["Mxyz"] = {
-					[15514] = 1,
-					[3055] = 1,
-					[11138] = 1,
-					[1727] = 1,
-					[14742] = 1,
 					[6948] = 1,
-					[11967] = 1,
-					[3198] = 1,
-					[15515] = 1,
-					[15532] = 1,
-					[14127] = 1,
-					[15517] = 1,
-					[6386] = 1,
-					[14182] = 1,
 				},
 				["Augustin"] = {
-					[159] = 2,
-					[4604] = 4,
+					[5350] = 24,
 					[6948] = 1,
 				},
 				["Dmitar"] = {
@@ -760,17 +742,17 @@ SkilletDB = {
 				["Mxzq"] = {
 					[2575] = {
 						[3859] = "",
-						[2840] = "",
 						[3860] = "",
+						[2840] = "",
 						[3575] = "",
-						[3576] = "",
-						[2842] = "",
-						[3577] = "",
-						["selected"] = "None",
 						["name"] = {
 							[""] = 8,
 						},
+						[2842] = "",
+						[3577] = "",
+						["selected"] = "None",
 						[2841] = "",
+						[3576] = "",
 					},
 				},
 				["Mxyz"] = {
@@ -812,6 +794,7 @@ SkilletDB = {
 			},
 			["auctionData"] = {
 				["Mxzq"] = {
+					[3575] = 123,
 				},
 				["Mxys"] = {
 				},
@@ -824,21 +807,19 @@ SkilletDB = {
 				["Antun"] = {
 				},
 				["Mxyz"] = {
-					[14567] = 1,
 					[15514] = 1,
 					[3055] = 1,
 					[11138] = 1,
 					[1727] = 1,
 					[14742] = 1,
-					[15891] = 1,
-					[6386] = 1,
-					[14182] = 1,
-					[15515] = 1,
-					[15532] = 1,
-					[15517] = 1,
-					[14127] = 1,
 					[3198] = 1,
 					[11967] = 1,
+					[15515] = 1,
+					[14182] = 1,
+					[14127] = 1,
+					[6386] = 1,
+					[15517] = 1,
+					[15532] = 1,
 				},
 				["Augustin"] = {
 				},
@@ -953,11 +934,24 @@ SkilletDB = {
 				["Vermin"] = {
 				},
 			},
-			["inventoryData"] = {
+			["subClass"] = {
 				["Mxzq"] = {
-					[2772] = 53,
+					[2575] = {
+						[3859] = "Trade Goods",
+						[3860] = "Trade Goods",
+						[2840] = "Trade Goods",
+						[3575] = "Trade Goods",
+						["name"] = {
+							["Trade Goods"] = 8,
+						},
+						[2842] = "Trade Goods",
+						[3577] = "Trade Goods",
+						["selected"] = "None",
+						[2841] = "Trade Goods",
+						[3576] = "Trade Goods",
+					},
 				},
-				["Mxys"] = {
+				["Mxyz"] = {
 				},
 				["Mxyzptlk"] = {
 				},
@@ -967,7 +961,7 @@ SkilletDB = {
 				},
 				["Antun"] = {
 				},
-				["Mxyz"] = {
+				["Mxys"] = {
 				},
 				["Augustin"] = {
 				},
@@ -978,9 +972,21 @@ SkilletDB = {
 				["Jaroslav"] = {
 				},
 				["Vermin"] = {
-					[4306] = 5,
-					[2589] = 7,
-					[2592] = 14,
+					[3273] = {
+						[6451] = "Consumable",
+						[6452] = "Reagent",
+						[1251] = "Consumable",
+						[3530] = "Consumable",
+						[3531] = "Consumable",
+						[2581] = "Consumable",
+						[8544] = "Consumable",
+						["selected"] = "None",
+						[6450] = "Consumable",
+						["name"] = {
+							["Reagent"] = 1,
+							["Consumable"] = 7,
+						},
+					},
 				},
 			},
 			["groupSN"] = {
@@ -1418,24 +1424,11 @@ SkilletDB = {
 				["Vermin"] = {
 				},
 			},
-			["subClass"] = {
+			["inventoryData"] = {
 				["Mxzq"] = {
-					[2575] = {
-						[3859] = "Trade Goods",
-						[2840] = "Trade Goods",
-						[3860] = "Trade Goods",
-						[3575] = "Trade Goods",
-						[3576] = "Trade Goods",
-						[2842] = "Trade Goods",
-						[3577] = "Trade Goods",
-						["selected"] = "None",
-						["name"] = {
-							["Trade Goods"] = 8,
-						},
-						[2841] = "Trade Goods",
-					},
+					[3575] = 123,
 				},
-				["Mxyz"] = {
+				["Mxys"] = {
 				},
 				["Mxyzptlk"] = {
 				},
@@ -1445,7 +1438,7 @@ SkilletDB = {
 				},
 				["Antun"] = {
 				},
-				["Mxys"] = {
+				["Mxyz"] = {
 				},
 				["Augustin"] = {
 				},
@@ -1456,21 +1449,9 @@ SkilletDB = {
 				["Jaroslav"] = {
 				},
 				["Vermin"] = {
-					[3273] = {
-						[6451] = "Consumable",
-						[6452] = "Reagent",
-						[1251] = "Consumable",
-						[3530] = "Consumable",
-						[3531] = "Consumable",
-						[2581] = "Consumable",
-						[8544] = "Consumable",
-						["selected"] = "None",
-						[6450] = "Consumable",
-						["name"] = {
-							["Reagent"] = 1,
-							["Consumable"] = 7,
-						},
-					},
+					[4306] = 5,
+					[2589] = 7,
+					[2592] = 14,
 				},
 			},
 			["options"] = {
@@ -1496,221 +1477,158 @@ SkilletDB = {
 				["Mxzq"] = {
 					{
 						["bag"] = 0,
-						["name"] = "Iron Ore",
-						["slot"] = 1,
-						["id"] = 2772,
-						["count"] = 10,
-					}, -- [1]
-					{
-						["bag"] = 0,
-						["name"] = "Iron Ore",
-						["slot"] = 2,
-						["id"] = 2772,
-						["count"] = 10,
-					}, -- [2]
-					{
-						["bag"] = 0,
-						["name"] = "Iron Ore",
-						["slot"] = 3,
-						["id"] = 2772,
-						["count"] = 3,
-					}, -- [3]
-					{
-						["bag"] = 0,
-						["name"] = "Iron Ore",
-						["slot"] = 4,
-						["id"] = 2772,
-						["count"] = 10,
-					}, -- [4]
-					{
-						["bag"] = 0,
-						["name"] = "Iron Ore",
-						["slot"] = 5,
-						["id"] = 2772,
-						["count"] = 10,
-					}, -- [5]
-					{
-						["bag"] = 0,
-						["name"] = "Iron Ore",
-						["slot"] = 6,
-						["id"] = 2772,
-						["count"] = 10,
-					}, -- [6]
-					{
-						["bag"] = 0,
-						["name"] = "Chipped Boar Tusk",
-						["slot"] = 7,
-						["id"] = 771,
-						["count"] = 1,
-					}, -- [7]
-					{
-						["bag"] = 0,
-						["name"] = "Chunk of Boar Meat",
-						["slot"] = 8,
-						["id"] = 769,
-						["count"] = 1,
-					}, -- [8]
-					{
-						["bag"] = 0,
-						["name"] = "Dry Scorpid Eye",
-						["slot"] = 9,
-						["id"] = 4872,
-						["count"] = 1,
-					}, -- [9]
-					{
-						["bag"] = 0,
 						["name"] = "Healing Potion",
 						["slot"] = 17,
 						["id"] = 929,
 						["count"] = 2,
-					}, -- [10]
+					}, -- [1]
 					{
 						["bag"] = 1,
 						["name"] = "Razor Arrow",
 						["slot"] = 1,
 						["id"] = 3030,
 						["count"] = 200,
-					}, -- [11]
+					}, -- [2]
 					{
 						["bag"] = 1,
 						["name"] = "Razor Arrow",
 						["slot"] = 2,
 						["id"] = 3030,
 						["count"] = 200,
-					}, -- [12]
+					}, -- [3]
 					{
 						["bag"] = 1,
 						["name"] = "Razor Arrow",
 						["slot"] = 3,
 						["id"] = 3030,
 						["count"] = 200,
-					}, -- [13]
+					}, -- [4]
 					{
 						["bag"] = 1,
 						["name"] = "Razor Arrow",
 						["slot"] = 4,
 						["id"] = 3030,
 						["count"] = 200,
-					}, -- [14]
+					}, -- [5]
 					{
 						["bag"] = 1,
 						["name"] = "Razor Arrow",
 						["slot"] = 5,
 						["id"] = 3030,
 						["count"] = 200,
-					}, -- [15]
+					}, -- [6]
 					{
 						["bag"] = 1,
 						["name"] = "Razor Arrow",
 						["slot"] = 6,
 						["id"] = 3030,
 						["count"] = 200,
-					}, -- [16]
+					}, -- [7]
 					{
 						["bag"] = 1,
 						["name"] = "Razor Arrow",
 						["slot"] = 7,
 						["id"] = 3030,
 						["count"] = 200,
-					}, -- [17]
+					}, -- [8]
 					{
 						["bag"] = 1,
 						["name"] = "Razor Arrow",
 						["slot"] = 8,
 						["id"] = 3030,
 						["count"] = 200,
-					}, -- [18]
+					}, -- [9]
 					{
 						["bag"] = 1,
 						["name"] = "Razor Arrow",
 						["slot"] = 9,
 						["id"] = 3030,
 						["count"] = 200,
-					}, -- [19]
+					}, -- [10]
 					{
 						["bag"] = 1,
 						["name"] = "Razor Arrow",
 						["slot"] = 10,
 						["id"] = 3030,
 						["count"] = 200,
-					}, -- [20]
+					}, -- [11]
 					{
 						["bag"] = 4,
 						["name"] = "Wild Hog Shank",
 						["slot"] = 1,
 						["id"] = 3771,
 						["count"] = 2,
-					}, -- [21]
+					}, -- [12]
 					{
 						["bag"] = 4,
 						["name"] = "Wild Hog Shank",
 						["slot"] = 2,
 						["id"] = 3771,
 						["count"] = 20,
-					}, -- [22]
+					}, -- [13]
 					{
 						["bag"] = 4,
 						["name"] = "Lesser Mana Potion",
 						["slot"] = 3,
 						["id"] = 3385,
 						["count"] = 5,
-					}, -- [23]
+					}, -- [14]
 					{
 						["bag"] = 4,
 						["name"] = "Sweet Nectar",
 						["slot"] = 4,
 						["id"] = 1708,
 						["count"] = 9,
-					}, -- [24]
+					}, -- [15]
 					{
 						["bag"] = 4,
 						["name"] = "Sweet Nectar",
 						["slot"] = 5,
 						["id"] = 1708,
 						["count"] = 20,
-					}, -- [25]
+					}, -- [16]
 					{
 						["bag"] = 4,
 						["name"] = "Healing Potion",
 						["slot"] = 6,
 						["id"] = 929,
 						["count"] = 5,
-					}, -- [26]
+					}, -- [17]
 					{
 						["bag"] = 4,
 						["name"] = "Healing Potion",
 						["slot"] = 7,
 						["id"] = 929,
 						["count"] = 5,
-					}, -- [27]
+					}, -- [18]
 					{
 						["bag"] = 4,
 						["name"] = "Healing Potion",
 						["slot"] = 8,
 						["id"] = 929,
 						["count"] = 5,
-					}, -- [28]
+					}, -- [19]
 					{
 						["bag"] = 4,
 						["name"] = "Mining Pick",
 						["slot"] = 9,
 						["id"] = 2901,
 						["count"] = 1,
-					}, -- [29]
+					}, -- [20]
 					{
 						["bag"] = 4,
 						["name"] = "Hearthstone",
 						["slot"] = 10,
 						["id"] = 6948,
 						["count"] = 1,
-					}, -- [30]
+					}, -- [21]
 					{
 						["bag"] = 4,
 						["name"] = "Lesser Mana Potion",
 						["slot"] = 13,
 						["id"] = 3385,
 						["count"] = 1,
-					}, -- [31]
+					}, -- [22]
 				},
 				["Mxys"] = {
 					{
@@ -1843,125 +1761,34 @@ SkilletDB = {
 				},
 				["Mxyz"] = {
 					{
-						["bag"] = 0,
-						["name"] = "Small Glowing Shard",
-						["slot"] = 1,
-						["id"] = 11138,
-						["count"] = 1,
-					}, -- [1]
-					{
-						["bag"] = 0,
-						["name"] = "Sword of Decay",
-						["slot"] = 2,
-						["id"] = 1727,
-						["count"] = 1,
-					}, -- [2]
-					{
-						["bag"] = 0,
-						["name"] = "Glimmering Mail Legguards",
-						["slot"] = 3,
-						["id"] = 6386,
-						["count"] = 1,
-					}, -- [3]
-					{
-						["bag"] = 0,
-						["name"] = "Grunt's Chestpiece of Power",
-						["slot"] = 4,
-						["id"] = 15514,
-						["count"] = 1,
-					}, -- [4]
-					{
-						["bag"] = 0,
-						["name"] = "Watcher's Mantle of Arcane Wrath",
-						["slot"] = 5,
-						["id"] = 14182,
-						["count"] = 1,
-					}, -- [5]
-					{
-						["bag"] = 0,
-						["name"] = "Forest Leather Chestpiece",
-						["slot"] = 6,
-						["id"] = 3055,
-						["count"] = 1,
-					}, -- [6]
-					{
-						["bag"] = 0,
-						["name"] = "Sentry's Armsplints of Stamina",
-						["slot"] = 7,
-						["id"] = 15532,
-						["count"] = 1,
-					}, -- [7]
-					{
-						["bag"] = 0,
-						["name"] = "Spiked Chain Belt of the Whale",
-						["slot"] = 8,
-						["id"] = 15515,
-						["count"] = 1,
-					}, -- [8]
-					{
-						["bag"] = 0,
-						["name"] = "Spiked Chain Wristbands of Stamina",
-						["slot"] = 9,
-						["id"] = 15517,
-						["count"] = 1,
-					}, -- [9]
-					{
-						["bag"] = 0,
-						["name"] = "Hulking Boots",
-						["slot"] = 10,
-						["id"] = 14742,
-						["count"] = 1,
-					}, -- [10]
-					{
-						["bag"] = 0,
-						["name"] = "Ritual Shroud of the Whale",
-						["slot"] = 11,
-						["id"] = 14127,
-						["count"] = 1,
-					}, -- [11]
-					{
-						["bag"] = 0,
-						["name"] = "Battering Hammer of the Eagle",
-						["slot"] = 12,
-						["id"] = 3198,
-						["count"] = 1,
-					}, -- [12]
-					{
-						["bag"] = 0,
-						["name"] = "Zircon Band of Fire Resistance",
-						["slot"] = 13,
-						["id"] = 11967,
-						["count"] = 1,
-					}, -- [13]
-					{
 						["bag"] = 4,
 						["name"] = "Hearthstone",
 						["slot"] = 14,
 						["id"] = 6948,
 						["count"] = 1,
-					}, -- [14]
+					}, -- [1]
 				},
 				["Augustin"] = {
 					{
 						["bag"] = 0,
-						["name"] = "Forest Mushroom Cap",
-						["slot"] = 1,
-						["id"] = 4604,
-						["count"] = 4,
-					}, -- [1]
-					{
-						["bag"] = 0,
-						["name"] = "Refreshing Spring Water",
+						["name"] = "Conjured Water",
 						["slot"] = 2,
-						["id"] = 159,
-						["count"] = 2,
-					}, -- [2]
+						["id"] = 5350,
+						["count"] = 20,
+					}, -- [1]
 					{
 						["bag"] = 0,
 						["name"] = "Hearthstone",
 						["slot"] = 3,
 						["id"] = 6948,
 						["count"] = 1,
+					}, -- [2]
+					{
+						["bag"] = 0,
+						["name"] = "Conjured Water",
+						["slot"] = 4,
+						["id"] = 5350,
+						["count"] = 4,
 					}, -- [3]
 				},
 				["Dmitar"] = {

@@ -16,7 +16,7 @@ scaler:SetScript(
 			-- 	self:UnregisterEvent("UI_SCALE_CHANGED")
 			-- 	SetCVar("uiScale", scale)
 			-- end
-			UIParent:SetScale(xVermin.config.UIscale)
+			UIParent:SetScale(xVerminConfig.UIscale)
 		else
 			self:RegisterEvent("PLAYER_REGEN_ENABLED")
 		end

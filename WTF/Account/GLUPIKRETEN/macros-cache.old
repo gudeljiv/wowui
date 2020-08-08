@@ -1,12 +1,16 @@
+VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/castsequence Find Herbs,Find Minerals
+END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:1708
-/castsequence [combat]item:3385,item:3385,item:3385,item:3385,item:3385,item:3385
+/use [nocombat]item:0
+/castsequence [combat]
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:3771
-/castsequence [combat]item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929
+/use [nocombat]item:0
+/castsequence [combat]
 END
 VER 3 0000000000000001 "FRAME" "132150"
 /fstack
@@ -15,7 +19,7 @@ VER 3 0000000000000002 "MOVE" "Ability_Ambush."
 /run UIParent:SetScale(768 / string.match(({GetScreenResolutions()})[GetCurrentResolution()], "%d+x(%d+)"))
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
-#showtooltip item:769
+#showtooltip item:3771
 /cast feed pet
-/use item:769
+/use item:3771
 END

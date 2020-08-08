@@ -202,11 +202,11 @@ f:SetScript(
 		PetFrame:HookScript(
 			"OnUpdate",
 			function(self)
-				PetFrameHealthBarText:SetFont(xVermin.config.font.atari, 10, "THINOUTLINE")
+				PetFrameHealthBarText:SetFont(xVerminConfig.font.atari, 10, "THINOUTLINE")
 				PetFrameHealthBarText:SetPoint("TOPRIGHT", PetFrameHealthBar, "TOPRIGHT", 0, 2)
 				PetFrameHealthBarText.SetPoint = function()
 				end
-				PetFrameManaBarText:SetFont(xVermin.config.font.atari, 10, "THINOUTLINE")
+				PetFrameManaBarText:SetFont(xVerminConfig.font.atari, 10, "THINOUTLINE")
 				PetFrameManaBarText:SetPoint("TOPRIGHT", PetFrameManaBar, "TOPRIGHT", 0, 0)
 				PetFrameManaBarText.SetPoint = function()
 				end

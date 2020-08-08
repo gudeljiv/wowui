@@ -129,7 +129,7 @@ AdiBagsDB = {
 				["name"] = "Arial Narrow",
 			},
 			["positionMode"] = "manual",
-			["scale"] = 0.9,
+			["scale"] = 1.1,
 		},
 	},
 }

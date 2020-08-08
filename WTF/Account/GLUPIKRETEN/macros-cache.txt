@@ -1,6 +1,10 @@
+VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/castsequence Find Herbs,Find Minerals
+END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
+/use [nocombat]item:5350
 /castsequence [combat]
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
@@ -15,7 +19,7 @@ VER 3 0000000000000002 "MOVE" "Ability_Ambush."
 /run UIParent:SetScale(768 / string.match(({GetScreenResolutions()})[GetCurrentResolution()], "%d+x(%d+)"))
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
-#showtooltip item:769
+#showtooltip item:3771
 /cast feed pet
-/use item:769
+/use item:3771
 END

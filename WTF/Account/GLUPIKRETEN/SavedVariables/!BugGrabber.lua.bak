@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 1717,
+	["session"] = 1727,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -873,20 +873,12 @@ BugGrabberDB = {
 			["counter"] = 11,
 		}, -- [110]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'ItemRackButton0:SetAttribute()'.",
-			["time"] = "2020/08/02 11:49:42",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetAttribute'\nInterface\\AddOns\\ItemRack\\ItemRackButtons.lua:35: in function `InitButtons'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:282: in function `func'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:970: in function `OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>",
-			["session"] = 1614,
-			["counter"] = 2,
-		}, -- [111]
-		{
 			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'Details' tried to call the protected function 'CopyToClipboard()'.",
 			["time"] = "2020/08/02 16:33:14",
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `CopyToClipboard'\n...e\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua:548: in function `FrameStackTooltip_HandleFrameCommand'\n...e\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua:518: in function `command'\nInterface\\SharedXML\\KeyCommand.lua:46: in function `Update'\nInterface\\SharedXML\\KeyCommand.lua:110: in function `KeyCommand_Update'\n...e\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools-1.0.lua:727: in function <...e\\AddOns\\Blizzard_DebugTools\\Blizzard_DebugTools.lua:726>",
 			["session"] = 1618,
 			["counter"] = 1,
-		}, -- [112]
+		}, -- [111]
 		{
 			["message"] = "[string \"MailItem1Button.16a58d70fd0:Hide()\"]:1: malformed number near '.16a58d70fd0'",
 			["time"] = "2020/08/02 16:42:00",
@@ -894,7 +886,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 1619,
 			["counter"] = 1,
-		}, -- [113]
+		}, -- [112]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/MailBoxFrame.lua:58: attempt to call global 'SkinMailBox' (a nil value)",
 			["time"] = "2020/08/02 16:44:08",
@@ -902,7 +894,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Frames/MailBoxFrame.lua:58: in function <Interface\\AddOns\\xVermin\\Frames/MailBoxFrame.lua:57>\n[C]: in function `Show'\nInterface\\FrameXML\\UIParent.lua:2087: in function `SetUIPanel'\nInterface\\FrameXML\\UIParent.lua:1932: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1793: in function <Interface\\FrameXML\\UIParent.lua:1789>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2535: in function `ShowUIPanel'\nInterface\\FrameXML\\MailFrame.lua:52: in function <Interface\\FrameXML\\MailFrame.lua:50>\n[C]: in function `TurnOrActionStop'\n[string \"TURNORACTION\"]:4: in function <[string \"TURNORACTION\"]:1>",
 			["session"] = 1620,
 			["counter"] = 1,
-		}, -- [114]
+		}, -- [113]
 		{
 			["message"] = "[string \"SaveBindings()\"]:1: attempt to call global 'SaveBindings' (a nil value)",
 			["time"] = "2020/08/02 19:31:44",
@@ -910,7 +902,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"SaveBindings()\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 1630,
 			["counter"] = 1,
-		}, -- [115]
+		}, -- [114]
 		{
 			["message"] = "[string \"SaveBindings(1)\"]:1: attempt to call global 'SaveBindings' (a nil value)",
 			["time"] = "2020/08/02 19:32:12",
@@ -918,7 +910,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"SaveBindings(1)\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 1630,
 			["counter"] = 1,
-		}, -- [116]
+		}, -- [115]
 		{
 			["message"] = "[string \"Loadbindings(1)\"]:1: attempt to call global 'Loadbindings' (a nil value)",
 			["time"] = "2020/08/02 19:33:47",
@@ -926,7 +918,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"Loadbindings(1)\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 1630,
 			["counter"] = 1,
-		}, -- [117]
+		}, -- [116]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Bindings.lua:112: attempt to call global 'SaveBindings' (a nil value)",
 			["time"] = "2020/08/02 19:55:55",
@@ -934,7 +926,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Bindings.lua:112: in function <Interface\\AddOns\\xVermin\\Bindings.lua:1>\nInterface\\AddOns\\xVermin\\Bindings.lua:218: in function <Interface\\AddOns\\xVermin\\Bindings.lua:217>",
 			["session"] = 1648,
 			["counter"] = 1,
-		}, -- [118]
+		}, -- [117]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Unit.lua:76: attempt to index upvalue 'color' (a nil value)",
 			["time"] = "2020/08/02 20:11:24",
@@ -942,7 +934,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Unit.lua:76: in function <Interface\\AddOns\\xVermin\\Unit.lua:68>\n[C]: ?",
 			["session"] = 1652,
 			["counter"] = 7,
-		}, -- [119]
+		}, -- [118]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Unit.lua:25: attempt to index upvalue 'color' (a nil value)",
 			["time"] = "2020/08/02 20:11:24",
@@ -950,7 +942,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Unit.lua:25: in function <Interface\\AddOns\\xVermin\\Unit.lua:16>\n[C]: ?\n[C]: ?",
 			["session"] = 1652,
 			["counter"] = 567,
-		}, -- [120]
+		}, -- [119]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Unit.lua:77: attempt to index upvalue 'color' (a nil value)",
 			["time"] = "2020/08/02 20:12:29",
@@ -958,7 +950,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Unit.lua:77: in function <Interface\\AddOns\\xVermin\\Unit.lua:69>\n[C]: ?",
 			["session"] = 1653,
 			["counter"] = 7,
-		}, -- [121]
+		}, -- [120]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Unit.lua:26: attempt to index upvalue 'color' (a nil value)",
 			["time"] = "2020/08/02 20:12:29",
@@ -966,13 +958,13 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Unit.lua:26: in function <Interface\\AddOns\\xVermin\\Unit.lua:17>\n[C]: ?\n[C]: ?",
 			["session"] = 1653,
 			["counter"] = 257,
-		}, -- [122]
+		}, -- [121]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
 			["session"] = 1654,
 			["time"] = "2020/08/02 20:13:03",
 			["counter"] = 3,
-		}, -- [123]
+		}, -- [122]
 		{
 			["message"] = "Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:411: attempt to compare number with nil",
 			["time"] = "2020/08/02 20:39:46",
@@ -980,7 +972,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:411: in function `UpdateBorder'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:313: in function `Update'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:290: in function `FullUpdate'\nInterface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:255: in function <Interface\\AddOns\\AdiBags\\widgets\\ItemButton.lua:243>\n[C]: in function `Show'\nInterface\\AddOns\\AdiBags\\widgets\\Section.lua:266: in function `AddItemButton'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:712: in function `DispatchItem'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:756: in function `UpdateButtons'\nInterface\\AddOns\\AdiBags\\widgets\\ContainerFrame.lua:349: in function `?'\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:119: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:119>\n[C]: ?\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:29: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:64: in function `SendMessage'\nInterface\\AddOns\\AdiBags\\core\\Core.lua:376: in function `?'\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:119: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:119>\n[C]: ?\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:29: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:64: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:59>\n(tail call): ?",
 			["session"] = 1663,
 			["counter"] = 1,
-		}, -- [124]
+		}, -- [123]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Experience.lua:107: attempt to concatenate local 'event' (a nil value)",
 			["time"] = "2020/08/02 21:33:29",
@@ -988,7 +980,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Experience.lua:107: in function <Interface\\AddOns\\xVermin\\Experience.lua:96>\nInterface\\AddOns\\xVermin\\Experience.lua:202: in function <Interface\\AddOns\\xVermin\\Experience.lua:192>",
 			["session"] = 1673,
 			["counter"] = 2,
-		}, -- [125]
+		}, -- [124]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\DamageFont.lua:1: attempt to index global 'DamageFont' (a nil value)",
 			["time"] = "2020/08/04 18:00:49",
@@ -996,13 +988,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\DamageFont.lua:1: in main chunk",
 			["session"] = 1680,
 			["counter"] = 2,
-		}, -- [126]
-		{
-			["message"] = "(null)",
-			["time"] = "2020/07/24 16:00:06",
-			["session"] = 1680,
-			["counter"] = 48,
-		}, -- [127]
+		}, -- [125]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Chat-Chat.lua:251: attempt to call global 'SetChatChannels' (a nil value)",
 			["time"] = "2020/08/04 18:23:15",
@@ -1010,6 +996,124 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Chat-Chat.lua:251: in function <Interface\\AddOns\\xVermin\\Chat.lua:83>",
 			["session"] = 1691,
 			["counter"] = 12,
+		}, -- [126]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Config.lua:83: attempt to index global 'xVermin' (a nil value)",
+			["time"] = "2020/08/08 20:36:28",
+			["locals"] = "(*temporary) = nil\n(*temporary) = <table> {\n petdebuff = <table> {\n }\n buff = <table> {\n }\n petbuff = <table> {\n }\n border = <table> {\n }\n font = <table> {\n }\n ReplacedDebuffTypeColor = <table> {\n }\n UIscale = 0.600000\n debuff = <table> {\n }\n background = <table> {\n }\n}\n(*temporary) = <table> {\n Disease = <table> {\n }\n Poison = <table> {\n }\n Curse = <table> {\n }\n Magic = <table> {\n }\n none = <table> {\n }\n}\n(*temporary) = <table> {\n b = 0\n g = 0.600000\n r = 0\n}\n(*temporary) = \"BOTTOMRIGHT\"\n(*temporary) = nil\n(*temporary) = \"BOTTOMRIGHT\"\n(*temporary) = 0\n(*temporary) = 2\n(*temporary) = \"Interface\\AddOns\\xVermin\\Media\\ItemQuality5\"\n(*temporary) = \"Interface\\AddOns\\xVermin\\Media\\ItemQuality6\"\n(*temporary) = \"Interface\\AddOns\\xVermin\\Media\\ItemQuality7\"\n(*temporary) = \"attempt to index global 'xVermin' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Config.lua:83: in main chunk",
+			["session"] = 1719,
+			["counter"] = 1,
+		}, -- [127]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/CustomContainers.lua:25: attempt to index global 'xVermin' (a nil value)",
+			["time"] = "2020/08/08 20:36:28",
+			["locals"] = "_ = \"Priest\"\nclass = \"PRIEST\"\ncolor = <table> {\n colorStr = \"ffffffff\"\n GetRGB = <function> defined @Interface\\SharedXML\\Util.lua:633\n OnLoad = <function> defined @Interface\\SharedXML\\Util.lua:622\n b = 1\n GenerateHexColorMarkup = <function> defined @Interface\\SharedXML\\Util.lua:664\n WrapTextInColorCode = <function> defined @Interface\\SharedXML\\Util.lua:668\n GenerateHexColor = <function> defined @Interface\\SharedXML\\Util.lua:660\n GetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:641\n IsEqualTo = <function> defined @Interface\\SharedXML\\Util.lua:626\n g = 1\n r = 1\n SetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:649\n GetRGBAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:637\n SetRGB = <function> defined @Interface\\SharedXML\\Util.lua:656\n GetRGBAAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:645\n}\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = CustomContainer_Combat {\n 0 = <userdata>\n}\n(*temporary) = <table> {\n}\n(*temporary) = nil\n(*temporary) = \"LEFT\"\n(*temporary) = 0\n(*temporary) = 0\n(*temporary) = <userdata>\n(*temporary) = \"attempt to index global 'xVermin' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Frames/CustomContainers.lua:25: in main chunk",
+			["session"] = 1719,
+			["counter"] = 1,
 		}, -- [128]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\DamageFont.lua:4: attempt to index global 'xVermin' (a nil value)",
+			["time"] = "2020/08/08 20:36:28",
+			["locals"] = "self = DamageFont {\n 0 = <userdata>\n ApplySystemFonts = <function> defined @Interface\\AddOns\\xVermin\\DamageFont.lua:3\n}\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'xVermin' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\DamageFont.lua:4: in function `ApplySystemFonts'\nInterface\\AddOns\\xVermin\\DamageFont.lua:17: in main chunk",
+			["session"] = 1719,
+			["counter"] = 1,
+		}, -- [129]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Experience.lua:59: attempt to index global 'xVermin' (a nil value)",
+			["time"] = "2020/08/08 20:36:28",
+			["locals"] = "_ = \"Priest\"\nclass = \"PRIEST\"\n_ = 5\nr = nil\ng = nil\nb = nil\nNewXP = nil\nhmmm = nil\ngained = nil\nXPToLVL = nil\nnum = nil\nsegment = nil\nrelperc = nil\nr1 = nil\nr2 = nil\ng1 = nil\ng2 = nil\nb1 = nil\nb2 = nil\nf = nil\nPetExpFrame = nil\nPlayerExpFrame = PlayerExpFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\npercent = nil\nrested = nil\noutput = nil\npcxp = nil\npmxp = nil\nppercent = nil\ncmtk = nil\ncolor = <table> {\n colorStr = \"ffffffff\"\n GetRGB = <function> defined @Interface\\SharedXML\\Util.lua:633\n OnLoad = <function> defined @Interface\\SharedXML\\Util.lua:622\n b = 1\n GenerateHexColorMarkup = <function> defined @Interface\\SharedXML\\Util.lua:664\n WrapTextInColorCode = <function> defined @Interface\\SharedXML\\Util.lua:668\n GenerateHexColor = <function> defined @Interface\\SharedXML\\Util.lua:660\n GetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:641\n IsEqualTo = <function> defined @Interface\\SharedXML\\Util.lua:626\n g = 1\n r = 1\n SetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:649\n GetRGBAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:637\n SetRGB = <function> defined @Interface\\SharedXML\\Util.lua:656\n GetRGBAAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:645\n}\nColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Experience.lua:16\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = <userdata>\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = <userdata>\n(*temporary) = <userdata>\n(*temporary) = \"attempt to index global 'xVermin' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Experience.lua:59: in main chunk",
+			["session"] = 1719,
+			["counter"] = 1,
+		}, -- [130]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\GarbageCollector.lua:9: attempt to index global 'xVermin' (a nil value)",
+			["time"] = "2020/08/08 20:36:28",
+			["locals"] = "cgt = CustomContainer_CombatGarbageText {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = \"ARTWORK\"\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = <userdata>\n(*temporary) = \"attempt to index global 'xVermin' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\GarbageCollector.lua:9: in main chunk",
+			["session"] = 1719,
+			["counter"] = 1,
+		}, -- [131]
+		{
+			["message"] = "...face\\AddOns\\xVermin\\PlayerTargetHealthPercentage.lua:7: attempt to index global 'xVermin' (a nil value)",
+			["time"] = "2020/08/08 20:36:28",
+			["locals"] = "TargetHealthFrame = TargetHealthFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = \"ARTWORK\"\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = <userdata>\n(*temporary) = <userdata>\n(*temporary) = \"attempt to index global 'xVermin' (a nil value)\"\n",
+			["stack"] = "...face\\AddOns\\xVermin\\PlayerTargetHealthPercentage.lua:7: in main chunk",
+			["session"] = 1719,
+			["counter"] = 1,
+		}, -- [132]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Unit.lua:19: attempt to index global 'xVermin' (a nil value)",
+			["time"] = "2020/08/08 20:36:28",
+			["locals"] = "_ = \"Priest\"\nclass = \"PRIEST\"\ncolor = <table> {\n colorStr = \"ffffffff\"\n GetRGB = <function> defined @Interface\\SharedXML\\Util.lua:633\n OnLoad = <function> defined @Interface\\SharedXML\\Util.lua:622\n b = 1\n GenerateHexColorMarkup = <function> defined @Interface\\SharedXML\\Util.lua:664\n WrapTextInColorCode = <function> defined @Interface\\SharedXML\\Util.lua:668\n GenerateHexColor = <function> defined @Interface\\SharedXML\\Util.lua:660\n GetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:641\n IsEqualTo = <function> defined @Interface\\SharedXML\\Util.lua:626\n g = 1\n r = 1\n SetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:649\n GetRGBAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:637\n SetRGB = <function> defined @Interface\\SharedXML\\Util.lua:656\n GetRGBAAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:645\n}\ncus = CustomContainer_CombatUnitState {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = \"ARTWORK\"\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = <userdata>\n(*temporary) = <userdata>\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'xVermin' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Unit.lua:19: in main chunk",
+			["session"] = 1719,
+			["counter"] = 1,
+		}, -- [133]
+		{
+			["message"] = "(null)",
+			["time"] = "2020/07/24 16:00:06",
+			["session"] = 1719,
+			["counter"] = 50,
+		}, -- [134]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\UIScale.lua:19: attempt to index global 'xVermin' (a nil value)",
+			["time"] = "2020/08/08 20:36:28",
+			["locals"] = "self = <unnamed> {\n 0 = <userdata>\n}\nevent = \"UI_SCALE_CHANGED\"\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = UIParent {\n 0 = <userdata>\n firstTimeLoaded = 1\n}\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'xVermin' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\UIScale.lua:19: in function <Interface\\AddOns\\xVermin\\UIScale.lua:6>",
+			["session"] = 1719,
+			["counter"] = 2,
+		}, -- [135]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Chat-Chat.lua:85: attempt to index global 'xVermin' (a nil value)",
+			["time"] = "2020/08/08 20:36:35",
+			["locals"] = "(*temporary) = 1365.333407\n(*temporary) = nil\n(*temporary) = UIParent {\n 0 = <userdata>\n firstTimeLoaded = 1\n variablesLoaded = true\n}\n(*temporary) = 0.640000\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'xVermin' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Chat-Chat.lua:85: in function <Interface\\AddOns\\xVermin\\Chat.lua:83>",
+			["session"] = 1719,
+			["counter"] = 1,
+		}, -- [136]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\xVermin-54000.lua:142: MonkeyQuestFrame:SetPoint(): Couldn't find region named 'CustomContainer_2'",
+			["time"] = "2020/08/08 20:36:35",
+			["locals"] = "(*temporary) = MonkeyQuestFrame {\n 0 = <userdata>\n}\n(*temporary) = \"TOPRIGHT\"\n(*temporary) = \"CustomContainer_2\"\n(*temporary) = \"TOPLEFT\"\n(*temporary) = -10\n(*temporary) = 0\n",
+			["stack"] = "[C]: in function `SetPoint'\nInterface\\AddOns\\xVermin\\xVermin-54000.lua:142: in function <Interface\\AddOns\\xVermin\\xVermin.lua:32>",
+			["session"] = 1719,
+			["counter"] = 1,
+		}, -- [137]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:42: attempt to index global 'xVermin' (a nil value)",
+			["time"] = "2020/08/08 20:36:35",
+			["locals"] = "itemLink = nil\nr = nil\ng = nil\nb = nil\nitemLink = nil\n(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = CharacterHeadSlot {\n }\n 2 = CharacterNeckSlot {\n }\n 3 = CharacterShoulderSlot {\n }\n 4 = CharacterBackSlot {\n }\n 5 = CharacterChestSlot {\n }\n 6 = CharacterWristSlot {\n }\n 7 = CharacterHandsSlot {\n }\n 8 = CharacterWaistSlot {\n }\n 9 = CharacterLegsSlot {\n }\n 10 = CharacterFeetSlot {\n }\n 11 = CharacterFinger0Slot {\n }\n 12 = CharacterFinger1Slot {\n }\n 13 = CharacterTrinket0Slot {\n }\n 14 = CharacterTrinket1Slot {\n }\n 15 = CharacterMainHandSlot {\n }\n 16 = CharacterSecondaryHandSlot {\n }\n 17 = CharacterRangedSlot {\n }\n 18 = CharacterAmmoSlot {\n }\n 19 = CharacterTabardSlot {\n }\n 20 = CharacterShirtSlot {\n }\n}\n(for control) = 1\ni = 1\nv = CharacterHeadSlot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface\\FrameXML\\PaperDollFrame.lua:815\n beautyShadow = <table> {\n }\n backgroundTextureName = 136516\n IconOverlay = <unnamed> {\n }\n beautyBorder = <table> {\n }\n checkRelic = false\n Count = CharacterHeadSlotCount {\n }\n IconBorder = <unnamed> {\n }\n searchOverlay = CharacterHeadSlotSearchOverlay {\n }\n icon = CharacterHeadSlotIconTexture {\n }\n}\n(*temporary) = <function> defined @Interface\\AddOns\\!Beautycase\\!Beautycase.lua:130\n(*temporary) = CharacterHeadSlot {\n 0 = <userdata>\n UpdateTooltip = <function> defined @Interface\\FrameXML\\PaperDollFrame.lua:815\n beautyShadow = <table> {\n }\n backgroundTextureName = 136516\n IconOverlay = <unnamed> {\n }\n beautyBorder = <table> {\n }\n checkRelic = false\n Count = CharacterHeadSlotCount {\n }\n IconBorder = <unnamed> {\n }\n searchOverlay = CharacterHeadSlotSearchOverlay {\n }\n icon = CharacterHeadSlotIconTexture {\n }\n}\n(*temporary) = nil\n(*temporary) = 136516\n(*temporary) = false\n(*temporary) = 1\n(*temporary) = 136516\n(*temporary) = false\n(*temporary) = 1\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'xVermin' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:42: in function <Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:1>",
+			["session"] = 1719,
+			["counter"] = 8,
+		}, -- [138]
+		{
+			["message"] = "[string \"print(e(768 / string.match(({GetScreenResolutions()})[GetCurren...\"]:1: ')' expected near '<eof>'",
+			["time"] = "2020/08/08 20:40:06",
+			["locals"] = "(*temporary) = \"print(e(768 / string.match(({GetScreenResolutions()})[GetCurrentResolution()], \"%d+x(%d+)\"))\"\n",
+			["stack"] = "[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 1720,
+			["counter"] = 1,
+		}, -- [139]
+		{
+			["message"] = "[string \"SetScale(0.6)\"]:1: attempt to call global 'SetScale' (a nil value)",
+			["time"] = "2020/08/08 20:41:02",
+			["locals"] = "(*temporary) = nil\n(*temporary) = 0.600000\n(*temporary) = \"attempt to call global 'SetScale' (a nil value)\"\n",
+			["stack"] = "[string \"SetScale(0.6)\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 1720,
+			["counter"] = 1,
+		}, -- [140]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'ItemRackButton0:SetAttribute()'.",
+			["time"] = "2020/08/02 11:49:42",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetAttribute'\nInterface\\AddOns\\ItemRack\\ItemRackButtons.lua:35: in function `InitButtons'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:282: in function `func'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:970: in function `OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>",
+			["session"] = 1727,
+			["counter"] = 3,
+		}, -- [141]
 	},
 }

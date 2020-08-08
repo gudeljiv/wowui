@@ -16,7 +16,7 @@ cus:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 2)
 cus:SetWidth(1)
 cus:SetHeight(1)
 cus.text = cus:CreateFontString(nil, "ARTWORK")
-cus.text:SetFont(xVermin.config.font.arial, 10, "NONE")
+cus.text:SetFont(xVerminConfig.font.arial, 10, "NONE")
 cus.text:SetPoint("LEFT", CustomContainer_Combat, "LEFT", 3, 0)
 
 PlayerFrame:HookScript(
@@ -45,7 +45,7 @@ if class == "HUNTER" then
 	ac:SetWidth(1)
 	ac:SetHeight(1)
 	ac.text = ac:CreateFontString(nil, "ARTWORK")
-	ac.text:SetFont(xVermin.config.font.arial, 10, "NONE")
+	ac.text:SetFont(xVerminConfig.font.arial, 10, "NONE")
 	ac.text:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 0)
 
 	PlayerFrame:HookScript(
@@ -68,7 +68,7 @@ us:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 2)
 us:SetWidth(1)
 us:SetHeight(1)
 us.text = us:CreateFontString(nil, "ARTWORK")
-us.text:SetFont(xVermin.config.font.arial, 10, "NONE")
+us.text:SetFont(xVerminConfig.font.arial, 10, "NONE")
 us.text:SetPoint("BOTTOMRIGHT", CustomContainer_Combat, "TOPRIGHT", -1, 2)
 
 PlayerFrame:HookScript(
@@ -96,7 +96,7 @@ fbs:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 2)
 fbs:SetWidth(10)
 fbs:SetHeight(10)
 fbs.text = fbs:CreateFontString(nil, "ARTWORK")
-fbs.text:SetFont(xVermin.config.font.arial, 8, "NONE")
+fbs.text:SetFont(xVerminConfig.font.arial, 8, "NONE")
 fbs.text:SetPoint("TOPLEFT", CustomContainer_Combat, "BOTTOMLEFT", 0, -3)
 
 local function CalculateFreeBagSpace()
