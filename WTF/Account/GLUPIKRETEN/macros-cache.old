@@ -4,19 +4,23 @@ VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
+/use [nocombat]item:5350
 /castsequence [combat]
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
+/use [nocombat]item:4536
 /castsequence [combat]
 END
 VER 3 0000000000000001 "FRAME" "132150"
 /fstack
 END
 VER 3 0000000000000002 "MOVE" "Ability_Ambush."
-/run UIParent:SetScale(768 / string.match(({GetScreenResolutions()})[GetCurrentResolution()], "%d+x(%d+)"))
+/run Details_TinyThreat:ClearAllPoints()
+/run Details_TinyThreat:SetMovable(true)
+/run Details_TinyThreat:SetUserPlaced(true)
+/run Details_TinyThreat:SetPoint("TOPRIGHT", "ChatFrame3", "TOPLEFT", -2, 2)
+/run Details_TinyThreat:CreateBeautyBorder(6)
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 #showtooltip item:3771

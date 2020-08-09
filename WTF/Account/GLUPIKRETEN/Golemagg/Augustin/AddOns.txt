@@ -293,3 +293,7 @@ Talented_Data_Export: disabled
 PerfectRaid: disabled
 SortBags: disabled
 TrackEverything: disabled
+AdiBags_Config: enabled
+Backpack: disabled
+Backpack_Classic: disabled
+ItemRackOptions: enabled

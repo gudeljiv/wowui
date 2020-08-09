@@ -249,16 +249,16 @@ EavesDropStatsDB = {
 						[2] = {
 						},
 					},
-					["Multi-Shot"] = {
+					["Wing Clip"] = {
 						[-2] = {
-							["time"] = "|cffffffff08/01/20 02:02:48|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMulti-Shot|r|h hits |Hunit:Creature-0-4447-47-17000-4515-0000A55849:Death's Head Acolyte|hDeath's Head Acolyte|h for |cffffffff85|r |cffffffffPhysical|r.",
-							["amount"] = 85,
+							["time"] = "|cffffffff07/16/20 11:51:37|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWing Clip|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-66-3246-00000F738C:Fleeting Plainstrider|hFleeting Plainstrider|h for |cffffffff4|r |cffffffffPhysical|r.",
+							["amount"] = 4,
 						},
 						[2] = {
-							["time"] = "|cffffffff08/01/20 09:28:29|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMulti-Shot|r|h hits |Hunit:Creature-0-4445-1-165-3458-00002486A9:Razormane Seer|hRazormane Seer|h for |cffffffff132|r |cffffffffPhysical|r.(Critical)",
-							["amount"] = 132,
+							["time"] = "|cffffffff07/22/20 05:37:51|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWing Clip|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-172-3100-0000182F7E:Elder Mottled Boar|hElder Mottled Boar|h for |cffffffff8|r |cffffffffPhysical|r.(Critical)",
+							["amount"] = 8,
 						},
-						["icon"] = 132330,
+						["icon"] = 132309,
 					},
 					["Mongoose Bite"] = {
 						[-2] = {
@@ -271,16 +271,16 @@ EavesDropStatsDB = {
 						},
 						["icon"] = 132215,
 					},
-					["Wing Clip"] = {
+					["Multi-Shot"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/16/20 11:51:37|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWing Clip|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-66-3246-00000F738C:Fleeting Plainstrider|hFleeting Plainstrider|h for |cffffffff4|r |cffffffffPhysical|r.",
-							["amount"] = 4,
+							["time"] = "|cffffffff08/01/20 02:02:48|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMulti-Shot|r|h hits |Hunit:Creature-0-4447-47-17000-4515-0000A55849:Death's Head Acolyte|hDeath's Head Acolyte|h for |cffffffff85|r |cffffffffPhysical|r.",
+							["amount"] = 85,
 						},
 						[2] = {
-							["time"] = "|cffffffff07/22/20 05:37:51|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWing Clip|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-172-3100-0000182F7E:Elder Mottled Boar|hElder Mottled Boar|h for |cffffffff8|r |cffffffffPhysical|r.(Critical)",
-							["amount"] = 8,
+							["time"] = "|cffffffff08/01/20 09:28:29|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMulti-Shot|r|h hits |Hunit:Creature-0-4445-1-165-3458-00002486A9:Razormane Seer|hRazormane Seer|h for |cffffffff132|r |cffffffffPhysical|r.(Critical)",
+							["amount"] = 132,
 						},
-						["icon"] = 132309,
+						["icon"] = 132330,
 					},
 					["Arcane Shot"] = {
 						[-2] = {

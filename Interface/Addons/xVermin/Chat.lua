@@ -81,8 +81,7 @@ local chat = CreateFrame("Frame")
 chat:SetScript(
 	"OnEvent",
 	function()
-		-- local chatWidth = GetScreenWidth() * UIParent:GetEffectiveScale() / 2.6
-		local chatWidth = (GetScreenWidth() * UIParent:GetEffectiveScale()) / (4.5 * xVerminConfig.UIscale)
+		local chatWidth = (GetScreenWidth() * UIParent:GetEffectiveScale()) / (4.2 * xVerminConfig.UIscale)
 
 		FCF_ResetChatWindows()
 		JoinChannelByName("WorldDefense")

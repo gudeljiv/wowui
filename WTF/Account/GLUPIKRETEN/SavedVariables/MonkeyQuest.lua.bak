@@ -263,28 +263,31 @@ MonkeyQuestConfig = {
 			["Deathknell - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Rattling the Rattlecages - false"] = {
+			["A New Plague - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Marla's Last Wish - false"] = {
+			["Wanted: Maggot Eye - false"] = {
 				["m_bChecked"] = true,
 			},
-			["The Mindless Ones - false"] = {
+			["Gordo's Task - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Scavenging Deathknell - false"] = {
+			["Fields of Grief - false"] = {
 				["m_bChecked"] = true,
 			},
-			["The Damned - false"] = {
+			["A Putrid Task - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Night Web's Hollow - false"] = {
+			["A Rogue's Deal - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Glyphic Scroll - false"] = {
+			["Tirisfal Glades - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Mage - true"] = {
+			["Vital Intelligence - false"] = {
+				["m_bChecked"] = true,
+			},
+			["At War With The Scarlet Crusade - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -841,9 +844,9 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 892.733215332031,
+		["m_iFrameBottom"] = 754.819152832031,
 		["m_bHideCompletedQuests"] = true,
-		["m_iFrameLeft"] = 1812.95556640625,
+		["m_iFrameLeft"] = 1739.55053710938,
 		["m_bColourDoneOrFailed"] = true,
 		["m_bLocked"] = true,
 		["m_bNoBorder"] = true,
@@ -860,7 +863,7 @@ MonkeyQuestConfig = {
 		["m_iFrameWidth"] = 270,
 		["m_bCrashBorder"] = false,
 		["m_strHeaderOpenColour"] = "|cffbfbfff",
-		["m_iFrameTop"] = 1047.40002441406,
+		["m_iFrameTop"] = 1006.10961914062,
 		["m_bObjectives"] = true,
 		["m_bHideHeader"] = false,
 		["m_bShowTooltipObjectives"] = true,

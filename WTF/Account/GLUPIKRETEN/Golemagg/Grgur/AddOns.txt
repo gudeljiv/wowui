@@ -96,3 +96,6 @@ PerfectRaid: disabled
 SortBags: disabled
 Peddler: enabled
 TrackEverything: disabled
+AdiBags_Config: enabled
+Backpack: disabled
+Backpack_Classic: disabled

@@ -111,19 +111,19 @@ local function UpdateExperience(self, event)
 			gained = NewXP - CurrentXP
 			XPToLVL = MaxXP - NewXP
 
-			print("------------------------------------------------------")
-			print("Event: " .. event)
-			print("CurrentXP: " .. CurrentXP)
-			print("MaxXP: " .. MaxXP)
-			print("NewXP: " .. NewXP)
-			print("Gained: " .. gained)
-			print("XPToLVL: " .. XPToLVL)
-			print("------------------------------------------------------")
+			-- print("------------------------------------------------------")
+			-- print("Event: " .. event)
+			-- print("CurrentXP: " .. CurrentXP)
+			-- print("MaxXP: " .. MaxXP)
+			-- print("NewXP: " .. NewXP)
+			-- print("Gained: " .. gained)
+			-- print("XPToLVL: " .. XPToLVL)
+			-- print("------------------------------------------------------")
 
 			cpxf.text:SetText(XPToLVL .. " (XP)")
 			cpxf.text:SetTextColor(color.r, color.g, color.b, 1)
 
-			if (gained > 0) then
+			if gained > 0 and event ~= "PLAYER_ENTERING_WORLD" then
 				hmmm = math.ceil((MaxXP - NewXP) / gained)
 				cmtk.text:SetText(hmmm)
 				cmtk.text:SetTextColor(color.r, color.g, color.b, 1)

@@ -46,9 +46,14 @@ f:SetScript(
 		-------------------------------------------
 		-- adjust position of Details TinyThreat
 		-------------------------------------------
-		if (IsAddOnLoaded("Details")) then
-			Details_TinyThreat:ClearAllPoints()
-			Details_TinyThreat:SetPoint("TOPRIGHT", "ChatFrame3", "TOPLEFT", -2, 2)
+		if (IsAddOnLoaded("Details_TinyThreat")) then
+			C_Timer.After(
+				5,
+				function()
+					Details_TinyThreat:ClearAllPoints()
+					Details_TinyThreat:SetPoint("TOPRIGHT", "ChatFrame3", "TOPLEFT", -2, 2)
+				end
+			)
 		end
 
 		-------------------------------------------
