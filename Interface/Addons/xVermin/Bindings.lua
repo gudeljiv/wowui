@@ -122,8 +122,22 @@ SlashCmdList["BINDINGS"] = FixBindings
 local f = CreateFrame("Frame")
 f:SetScript(
 	"OnEvent",
-	function()
-		FixBindings()
+	function(self, event)
+		C_Timer.After(
+			10,
+			function()
+				if not InCombatLockdown() then
+					FixBindings()
+				else
+					self:RegisterEvent("PLAYER_REGEN_ENABLED")
+				end
+			end
+		)
+
+		if event == "PLAYER_REGEN_ENABLED" then
+			self:UnregisterEvent("PLAYER_REGEN_ENABLED")
+		end
 	end
 )
-f:RegisterEvent("ADDON_LOADED")
+f:RegisterEvent("PLAYER_ENTERING_WORLD")
+f:RegisterEvent("VARIABLES_LOADED")

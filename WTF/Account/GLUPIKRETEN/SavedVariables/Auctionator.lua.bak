@@ -17655,9 +17655,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3553"] = 89,
 			["cc"] = 7,
 		},
-		["Manual: Strong Anti-Venom"] = {
-			["H3537"] = 50000,
-			["mr"] = 50000,
+		["Pattern: Frostsaber Leggings"] = {
+			["H3546"] = 9157,
+			["mr"] = 9157,
 		},
 		["Small Seaforium Charge"] = {
 			["H3537"] = 4000,
@@ -17686,9 +17686,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 116969,
 			["mr"] = 116969,
 		},
-		["Plans: Shadow Crescent Axe"] = {
-			["mr"] = 6999,
-			["H3546"] = 6999,
+		["Formula: Enchant Weapon - Winter's Might"] = {
+			["H3543"] = 447997,
+			["mr"] = 447997,
 		},
 		["Tracker's Gloves of the Monkey"] = {
 			["mr"] = 19900,
@@ -19204,13 +19204,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 2900,
 			["mr"] = 2900,
 		},
-		["Formula: Enchant Weapon - Winter's Might"] = {
-			["H3543"] = 447997,
-			["mr"] = 447997,
+		["Plans: Shadow Crescent Axe"] = {
+			["mr"] = 6999,
+			["H3546"] = 6999,
 		},
-		["Pattern: Frostsaber Leggings"] = {
-			["H3546"] = 9157,
-			["mr"] = 9157,
+		["Manual: Strong Anti-Venom"] = {
+			["H3537"] = 50000,
+			["mr"] = 50000,
 		},
 		["Recipe: Egg Nog"] = {
 			["mr"] = 217999,

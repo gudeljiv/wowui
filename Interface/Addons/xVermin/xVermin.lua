@@ -48,7 +48,7 @@ f:SetScript(
 		-------------------------------------------
 		if (IsAddOnLoaded("Details_TinyThreat")) then
 			C_Timer.After(
-				5,
+				15,
 				function()
 					Details_TinyThreat:ClearAllPoints()
 					Details_TinyThreat:SetPoint("TOPRIGHT", "ChatFrame3", "TOPLEFT", -2, 2)

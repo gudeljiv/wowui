@@ -102,10 +102,10 @@ EavesDropDB = {
 				["a"] = 0.4,
 			},
 			["TEXTSIZE"] = 13,
-			["SCROLLBUTTON"] = true,
+			["NUMLINES"] = 16,
 			["HIDETAB"] = true,
 			["LINEHEIGHT"] = 16,
-			["NUMLINES"] = 16,
+			["SCROLLBUTTON"] = true,
 		},
 		["Verminz - Golemagg"] = {
 			["LINEWIDTH"] = 100,

@@ -49,11 +49,13 @@ QuestieConfig = {
 	},
 	["char"] = {
 		["Mxzq - Golemagg"] = {
-			["TrackerWidth"] = 0,
+			["collapsedZones"] = {
+			},
 			["AutoUntrackedQuests"] = {
 			},
 			["migrationVersion"] = 1,
 			["complete"] = {
+				[6282] = true,
 				[837] = true,
 				[845] = true,
 				[869] = true,
@@ -87,9 +89,13 @@ QuestieConfig = {
 				[5041] = true,
 				[817] = true,
 				[825] = true,
+				[913] = true,
 				[849] = true,
+				[6385] = true,
 				[865] = true,
+				[1149] = true,
 				[881] = true,
+				[6381] = true,
 				[4921] = true,
 				[905] = true,
 				[786] = true,
@@ -99,37 +105,38 @@ QuestieConfig = {
 				[818] = true,
 				[826] = true,
 				[834] = true,
-				[842] = true,
-				[850] = true,
 				[6386] = true,
-				[6385] = true,
+				[850] = true,
+				[6365] = true,
+				[1492] = true,
+				[6283] = true,
 				[882] = true,
 				[890] = true,
-				[6383] = true,
+				[2161] = true,
 				[906] = true,
-				[6365] = true,
-				[4841] = true,
-				[3261] = true,
-				[6062] = true,
-				[5441] = true,
-				[3911] = true,
-				[835] = true,
-				[843] = true,
-				[851] = true,
 				[3087] = true,
+				[3911] = true,
+				[843] = true,
+				[5441] = true,
+				[5052] = true,
+				[6393] = true,
+				[835] = true,
+				[6394] = true,
+				[851] = true,
+				[788] = true,
 				[867] = true,
 				[875] = true,
-				[6081] = true,
+				[4865] = true,
 				[891] = true,
 				[899] = true,
 				[907] = true,
-				[788] = true,
-				[6082] = true,
+				[6081] = true,
 				[804] = true,
-				[4865] = true,
+				[6082] = true,
+				[3261] = true,
 				[6083] = true,
-				[1149] = true,
 				[4402] = true,
+				[4841] = true,
 				[844] = true,
 				[852] = true,
 				[3281] = true,
@@ -137,25 +144,19 @@ QuestieConfig = {
 				[876] = true,
 				[884] = true,
 				[892] = true,
-				[6394] = true,
-				[5052] = true,
+				[6062] = true,
+				[1087] = true,
 				[789] = true,
-				[2161] = true,
+				[6301] = true,
 				[805] = true,
-				[1492] = true,
+				[6383] = true,
 				[4821] = true,
-				[913] = true,
+				[842] = true,
 			},
 			["TrackerHiddenQuests"] = {
 			},
 			["trackerSetpoint"] = "AUTO",
 			["collapsedQuests"] = {
-			},
-			["TrackedQuests"] = {
-			},
-			["TrackerHiddenObjectives"] = {
-			},
-			["collapsedZones"] = {
 			},
 			["journey"] = {
 				{
@@ -1774,11 +1775,151 @@ QuestieConfig = {
 					["Event"] = "Level",
 					["NewLevel"] = 27,
 				}, -- [238]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+					["Level"] = 28,
+					["Quest"] = 5881,
+					["Timestamp"] = 1596966251,
+				}, -- [239]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+					["Level"] = 28,
+					["Quest"] = 6282,
+					["Timestamp"] = 1596966254,
+				}, -- [240]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+					["Level"] = 28,
+					["Quest"] = 6301,
+					["Timestamp"] = 1596966268,
+				}, -- [241]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+					["Level"] = 28,
+					["Quest"] = 1087,
+					["Timestamp"] = 1596966282,
+				}, -- [242]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+					["Level"] = 28,
+					["Quest"] = 6562,
+					["Timestamp"] = 1596966319,
+				}, -- [243]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+					["Level"] = 28,
+					["Quest"] = 6393,
+					["Timestamp"] = 1596966320,
+				}, -- [244]
+				{
+					["Timestamp"] = 1596969941,
+					["Event"] = "Level",
+					["NewLevel"] = 29,
+				}, -- [245]
+				{
+					["Timestamp"] = 1596972104,
+					["Quest"] = 6393,
+					["Level"] = 29,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+				}, -- [246]
+				{
+					["Timestamp"] = 1596972134,
+					["Quest"] = 6282,
+					["Level"] = 29,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+				}, -- [247]
+				{
+					["Timestamp"] = 1596972136,
+					["Quest"] = 6283,
+					["Level"] = 29,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+				}, -- [248]
+				{
+					["Timestamp"] = 1596972151,
+					["Quest"] = 6301,
+					["Level"] = 29,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+				}, -- [249]
+				{
+					["Timestamp"] = 1596972158,
+					["Quest"] = 6381,
+					["Level"] = 29,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+				}, -- [250]
+				{
+					["Timestamp"] = 1596972174,
+					["Quest"] = 1087,
+					["Level"] = 29,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+				}, -- [251]
+				{
+					["Timestamp"] = 1596972176,
+					["Quest"] = 1088,
+					["Level"] = 29,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+				}, -- [252]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+					["Level"] = 29,
+					["Quest"] = 6283,
+					["Timestamp"] = 1596986061,
+				}, -- [253]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+					["Level"] = 29,
+					["Quest"] = 6381,
+					["Timestamp"] = 1596986082,
+				}, -- [254]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
+					["Level"] = 29,
+					["Quest"] = 6562,
+					["Timestamp"] = 1596986163,
+				}, -- [255]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
+					["Level"] = 29,
+					["Quest"] = 5881,
+					["Timestamp"] = 1596986172,
+				}, -- [256]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
+					["Level"] = 29,
+					["Quest"] = 1088,
+					["Timestamp"] = 1596986176,
+				}, -- [257]
+				{
+					["Timestamp"] = 1596989631,
+					["Event"] = "Level",
+					["NewLevel"] = 30,
+				}, -- [258]
+			},
+			["TrackerWidth"] = 0,
+			["TrackerHiddenObjectives"] = {
+			},
+			["TrackedQuests"] = {
 			},
 		},
 		["Mxyz - Golemagg"] = {
-			["collapsedZones"] = {
-			},
+			["TrackerWidth"] = 0,
 			["migrationVersion"] = 1,
 			["complete"] = {
 				[5441] = true,
@@ -1793,6 +1934,15 @@ QuestieConfig = {
 			["TrackerHiddenQuests"] = {
 			},
 			["collapsedQuests"] = {
+			},
+			["TrackedQuests"] = {
+			},
+			["trackerSetpoint"] = "AUTO",
+			["TrackerHiddenObjectives"] = {
+			},
+			["collapsedZones"] = {
+			},
+			["AutoUntrackedQuests"] = {
 			},
 			["journey"] = {
 				{
@@ -1969,14 +2119,6 @@ QuestieConfig = {
 					["Quest"] = 792,
 					["Level"] = 5,
 				}, -- [26]
-			},
-			["trackerSetpoint"] = "AUTO",
-			["TrackerHiddenObjectives"] = {
-			},
-			["TrackerWidth"] = 0,
-			["AutoUntrackedQuests"] = {
-			},
-			["TrackedQuests"] = {
 			},
 		},
 		["Verminz - Golemagg"] = {
@@ -5991,12 +6133,12 @@ QuestieConfig = {
 				[1096] = true,
 				[6283] = true,
 				[1068] = true,
-				[1094] = true,
+				[549] = true,
 				[827] = true,
 				[868] = true,
 				[891] = true,
 				[5041] = true,
-				[804] = true,
+				[6384] = true,
 				[6386] = true,
 				[6385] = true,
 				[541] = true,
@@ -6004,7 +6146,7 @@ QuestieConfig = {
 				[216] = true,
 				[892] = true,
 				[924] = true,
-				[6384] = true,
+				[804] = true,
 				[5730] = true,
 				[4542] = true,
 				[5726] = true,
@@ -6063,7 +6205,7 @@ QuestieConfig = {
 				[6381] = true,
 				[6382] = true,
 				[1060] = true,
-				[549] = true,
+				[1094] = true,
 				[581] = true,
 				[6641] = true,
 				[900] = true,

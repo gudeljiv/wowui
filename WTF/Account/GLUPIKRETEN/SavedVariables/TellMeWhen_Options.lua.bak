@@ -3,69 +3,100 @@ TMWOptDB = {
 	["locale"] = {
 		["enus"] = {
 			["ItemCache"] = {
+				[1596970841] = {
+					[2770] = "copper ore",
+					[5602] = "sticky spider webbing",
+					[1701] = "curved basilisk claw",
+					[774] = "malachite",
+					[4606] = "spongy morel",
+					[16205] = "gaea seed",
+					[7912] = "solid stone",
+					[6444] = "forked tongue",
+					[5115] = "broken wishbone",
+					[1206] = "moss agate",
+					[765] = "silverleaf",
+					[1205] = "melon juice",
+					[1831] = "oaken war staff",
+					[5135] = "thin black claw",
+					[1744] = "laced mail shoulderpads",
+					[5136] = "torn furry ear",
+					[1529] = "jade",
+					[16312] = "incendrites",
+					[14571] = "bristlebark cape",
+					[2194] = "diamond hammer",
+					[5635] = "sharp claw",
+					[5601] = "hatched egg sac",
+					[1808] = "tough leather pants",
+					[2835] = "rough stone",
+					[2452] = "swiftthistle",
+					[14574] = "bristlebark britches",
+					[3355] = "wild steelbloom",
+					[5116] = "long tail feather",
+					[5001] = "heart ring",
+				},
 				[1596618248] = {
 					[4540] = "tough hunk of bread",
 				},
+				[1596987740] = {
+					[3770] = "mutton chop",
+				},
 				[1596915592] = {
-					[1367] = "ragged leather boots",
+					[11847] = "battered cloak",
 					[11127] = "scavenged goods",
 					[2173] = "old leather belt",
-					[11847] = "battered cloak",
+					[1367] = "ragged leather boots",
 				},
 				[1596962189] = {
-					[1417] = "beaten battle axe",
+					[5350] = "conjured water",
 					[35] = "bent staff",
 					[1395] = "apprentice's pants",
+					[1417] = "beaten battle axe",
 					[2885] = "scarlet crusade documents",
-					[6948] = "hearthstone",
 					[2672] = "stringy wolf meat",
 					[4604] = "forest mushroom cap",
 					[6096] = "apprentice's shirt",
-					[2589] = "linen cloth",
 					[3277] = "executor staff",
 					[1378] = "frayed pants",
 					[3035] = "laced pumpkin",
-					[6140] = "apprentice's robe",
 					[12737] = "gloom weed",
 					[55] = "apprentice's boots",
 					[4536] = "shiny red apple",
+					[6140] = "apprentice's robe",
 					[7628] = "nondescript letter",
-					[5350] = "conjured water",
 				},
 				[1595962062] = {
 					[1772] = "brocade shoes",
 					[1819] = "gouging pick",
 					[1795] = "rawhide belt",
-					[1705] = "lesser moonstone",
 					[9767] = "greenweave sandals",
 				},
 				[1596284504] = {
-					[2838] = "heavy stone",
-					[2220] = "box shield",
-					[2786] = "oiled blunderbuss",
-					[14190] = "raincaller vest",
-					[6607] = "dervish leggings",
-					[3172] = "boar intestines",
-					[5635] = "sharp claw",
 					[3676] = "slimy ichor",
-					[15533] = "sentry's headdress",
-					[3403] = "ivory boar tusk",
 					[15340] = "pathfinder cloak",
-					[3378] = "brocade belt",
-					[2295] = "large boar tusk",
-					[15341] = "pathfinder footpads",
-					[3818] = "fadeleaf",
-					[3355] = "wild steelbloom",
+					[14190] = "raincaller vest",
+					[15533] = "sentry's headdress",
+					[2786] = "oiled blunderbuss",
+					[6607] = "dervish leggings",
 					[17008] = "small scroll",
+					[3403] = "ivory boar tusk",
+					[3378] = "brocade belt",
+					[15341] = "pathfinder footpads",
+					[3172] = "boar intestines",
+					[2220] = "box shield",
+					[3818] = "fadeleaf",
+					[2295] = "large boar tusk",
 				},
-				[1595756046] = {
-					[3313] = "ceremonial leather harness",
-					[14119] = "aboriginal loincloth",
+				[1596914970] = {
+					[1366] = "ragged leather pants",
+					[1374] = "frayed shoes",
+					[159] = "refreshing spring water",
+					[3363] = "frayed belt",
+					[1369] = "ragged leather belt",
+					[2654] = "flimsy chain pants",
 				},
 				[1596219937] = {
 					[1179] = "ice cold milk",
 					[15116] = "rigid shoulders",
-					[1206] = "moss agate",
 				},
 				[1596558644] = {
 					[3274] = "flax boots",
@@ -76,7 +107,7 @@ TMWOptDB = {
 					[2070] = "darnassian bleu",
 				},
 				[1596283737] = {
-					[1827] = "meat cleaver",
+					[3301] = "sharp canine",
 					[1801] = "rawhide shoulderpads",
 					[2222] = "tower shield",
 					[1828] = "stone war axe",
@@ -85,38 +116,23 @@ TMWOptDB = {
 					[2766] = "deft stiletto",
 					[4542] = "moist cornbread",
 					[422] = "dwarven mild",
-					[3301] = "sharp canine",
+					[1827] = "meat cleaver",
 					[3381] = "cross-stitched bracers",
 				},
-				[1595875194] = {
-					[2770] = "copper ore",
-					[2835] = "rough stone",
-					[774] = "malachite",
-				},
 				[1596361781] = {
-					[5133] = "seeping gizzard",
-					[5075] = "blood shard",
-					[1822] = "cedar walking stick",
-					[3369] = "grave moss",
-					[1797] = "rawhide bracers",
-					[1210] = "shadowgem",
-					[2453] = "bruiseweed",
-					[2765] = "hunting knife",
-					[6584] = "scouting tunic",
-					[2771] = "tin ore",
-					[2775] = "silver ore",
-					[2836] = "coarse stone",
-					[6444] = "forked tongue",
-					[785] = "mageroyal",
-					[1749] = "linked chain cloak",
-					[3379] = "brocade bracers",
-					[3356] = "kingsblood",
-					[17056] = "light feather",
-					[2450] = "briarthorn",
-					[2452] = "swiftthistle",
 					[6826] = "brilliant scale",
+					[3369] = "grave moss",
+					[5133] = "seeping gizzard",
+					[1749] = "linked chain cloak",
+					[5075] = "blood shard",
 					[2449] = "earthroot",
+					[1210] = "shadowgem",
+					[2765] = "hunting knife",
 					[14373] = "sanguine belt",
+					[1822] = "cedar walking stick",
+					[1797] = "rawhide bracers",
+					[6584] = "scouting tunic",
+					[3379] = "brocade bracers",
 					[1776] = "brocade pants",
 				},
 				[1596019723] = {
@@ -127,10 +143,10 @@ TMWOptDB = {
 					[5972] = "pattern: fine leather pants",
 				},
 				[1596292319] = {
-					[6679] = "armor piercer",
+					[6686] = "tusken helm",
 					[6690] = "ferine leggings",
 					[6692] = "pronged reaver",
-					[6686] = "tusken helm",
+					[6679] = "armor piercer",
 				},
 				[1596212385] = {
 					[1753] = "linked chain vest",
@@ -138,39 +154,62 @@ TMWOptDB = {
 					[1775] = "brocade gloves",
 					[2783] = "shoddy blunderbuss",
 				},
+				[1596988040] = {
+					[9806] = "superior gloves",
+					[4306] = "silk cloth",
+					[2453] = "bruiseweed",
+					[2776] = "gold ore",
+					[785] = "mageroyal",
+					[15230] = "ridge cleaver",
+					[6688] = "whisperwind headdress",
+					[1708] = "sweet nectar",
+					[929] = "healing potion",
+					[3030] = "razor arrow",
+					[3857] = "coal",
+					[12054] = "demon band",
+					[14165] = "pagan britches",
+					[16987] = "screecher belt",
+					[3385] = "lesser mana potion",
+					[3771] = "wild hog shank",
+					[2771] = "tin ore",
+					[3858] = "mithril ore",
+					[1705] = "lesser moonstone",
+					[2772] = "iron ore",
+					[4568] = "grunt axe",
+					[2450] = "briarthorn",
+					[2836] = "coarse stone",
+					[2592] = "wool cloth",
+					[3356] = "kingsblood",
+					[15311] = "feral harness",
+					[6948] = "hearthstone",
+					[4928] = "sandrunner wristguards",
+					[5751] = "webwing cloak",
+					[5351] = "bounty hunter's ring",
+					[5299] = "gloves of the moon",
+					[2987] = "inscribed leather boots",
+					[2838] = "heavy stone",
+					[15284] = "long battle bow",
+					[6685] = "death speaker mantle",
+					[15532] = "sentry's armsplints",
+					[2901] = "mining pick",
+					[2775] = "silver ore",
+					[2589] = "linen cloth",
+				},
 				[1596618317] = {
 					[2092] = "worn dagger",
-					[59] = "acolyte's shoes",
+					[117] = "tough jerky",
 					[1396] = "acolyte's pants",
 					[6129] = "acolyte's robe",
-					[117] = "tough jerky",
+					[59] = "acolyte's shoes",
 				},
 				[1595918625] = {
 					[2782] = "mishandled recurve bow",
 					[2447] = "peacebloom",
-					[765] = "silverleaf",
 				},
-				[1596381662] = {
-					[4538] = "snapvine watermelon",
-					[1824] = "shiny war axe",
-					[1205] = "melon juice",
-					[5320] = "padded lamellar boots",
-					[5328] = "cinched belt",
-					[5092] = "charred razormane wand",
-					[1710] = "greater healing potion",
-					[5313] = "totemic clan ring",
-					[4306] = "silk cloth",
-					[15117] = "rigid leggings",
-					[4593] = "bristle whisker catfish",
-					[5310] = "sea dog britches",
-					[5314] = "boar hunter's cape",
-					[5318] = "zhovur axe",
-					[5093] = "razormane backstabber",
-					[15488] = "bloodspattered surcoat",
-					[9769] = "greenweave branch",
-					[5094] = "razormane war shield",
-					[9785] = "raider's bracers",
-					[2592] = "wool cloth",
+				[1596984576] = {
+					[16208] = "enchanted gaea seeds",
+					[16189] = "maggran's reserve letter",
+					[6477] = "grassland sash",
 				},
 				[1595784856] = {
 					[1821] = "warped blade",
@@ -180,22 +219,36 @@ TMWOptDB = {
 					[5019] = "sodium nitrate",
 					[14125] = "ritual leggings",
 				},
-				[1596393402] = {
-					[7074] = "chipped claw",
-					[5571] = "small black pouch",
-					[3264] = "duskbat wing",
-					[7073] = "broken fang",
-					[3265] = "scavenger paw",
-					[4865] = "ruined pelt",
-					[1372] = "ragged cloak",
+				[1596381662] = {
+					[1824] = "shiny war axe",
+					[5320] = "padded lamellar boots",
+					[5328] = "cinched belt",
+					[5092] = "charred razormane wand",
+					[4538] = "snapvine watermelon",
+					[4593] = "bristle whisker catfish",
+					[5310] = "sea dog britches",
+					[5314] = "boar hunter's cape",
+					[5318] = "zhovur axe",
+					[5313] = "totemic clan ring",
+					[5093] = "razormane backstabber",
+					[15488] = "bloodspattered surcoat",
+					[1710] = "greater healing potion",
+					[9769] = "greenweave branch",
+					[5094] = "razormane war shield",
+					[15117] = "rigid leggings",
+					[9785] = "raider's bracers",
 				},
 				[1596212736] = {
 					[14133] = "ritual tunic",
 				},
-				[1596912696] = {
-					[2772] = "iron ore",
-					[771] = "chipped boar tusk",
-					[4872] = "dry scorpid eye",
+				[1596393402] = {
+					[7074] = "chipped claw",
+					[5571] = "small black pouch",
+					[7073] = "broken fang",
+					[3264] = "duskbat wing",
+					[1372] = "ragged cloak",
+					[4865] = "ruined pelt",
+					[3265] = "scavenger paw",
 				},
 				[1596392831] = {
 					[2210] = "battered buckler",
@@ -204,19 +257,33 @@ TMWOptDB = {
 					[1376] = "frayed cloak",
 					[1377] = "frayed gloves",
 				},
-				[1595783793] = {
-					[954] = "scroll of strength",
+				[1596912696] = {
+					[4872] = "dry scorpid eye",
+					[771] = "chipped boar tusk",
 				},
 				[1596213394] = {
 					[5470] = "thunder lizard tail",
 				},
-				[1595756899] = {
-					[2455] = "minor mana potion",
-					[5337] = "wayfaring gloves",
+				[1596188191] = {
+					[10998] = "lesser astral essence",
+					[11135] = "greater mystic essence",
 				},
 				[1596618381] = {
 					[6124] = "novice's pants",
 					[6139] = "novice's robe",
+				},
+				[1596912373] = {
+					[769] = "chunk of boar meat",
+				},
+				[1596141829] = {
+					[1756] = "reinforced chain bracers",
+					[16744] = "warsong oil",
+					[20558] = "warsong gulch mark of honor",
+					[16647] = "shredder operating manual - page 3",
+					[5481] = "satyr horns",
+					[2840] = "copper bar",
+					[13016] = "killmaim",
+					[1805] = "tough leather bracers",
 				},
 				[1595856552] = {
 					[9802] = "superior boots",
@@ -226,106 +293,68 @@ TMWOptDB = {
 					[5346] = "orcish battle bow",
 					[6573] = "defender boots",
 				},
-				[1596141829] = {
-					[4606] = "spongy morel",
-					[1756] = "reinforced chain bracers",
-					[1805] = "tough leather bracers",
-					[20558] = "warsong gulch mark of honor",
-					[16647] = "shredder operating manual - page 3",
-					[5481] = "satyr horns",
-					[2840] = "copper bar",
-					[13016] = "killmaim",
-					[16744] = "warsong oil",
-				},
-				[1595964609] = {
-					[3770] = "mutton chop",
-					[3575] = "iron bar",
-				},
 				[1596558296] = {
 					[153] = "primitive kilt",
 					[154] = "primitive mantle",
 				},
 				[1596395159] = {
 					[2656] = "flimsy chain vest",
-					[7100] = "sticky ichor",
+					[3273] = "rugged mail vest",
 					[7101] = "bug eye",
 					[1476] = "snapped spider limb",
 					[2652] = "flimsy chain cloak",
 					[1364] = "ragged leather vest",
 					[2211] = "bent large shield",
-					[3273] = "rugged mail vest",
+					[7100] = "sticky ichor",
 					[11849] = "rustmetal bracers",
 				},
-				[1596959896] = {
-					[2987] = "inscribed leather boots",
-					[4928] = "sandrunner wristguards",
-					[14165] = "pagan britches",
-					[4568] = "grunt axe",
-					[5351] = "bounty hunter's ring",
-					[6688] = "whisperwind headdress",
-					[1708] = "sweet nectar",
-					[3385] = "lesser mana potion",
-					[14571] = "bristlebark cape",
-					[15230] = "ridge cleaver",
-					[2901] = "mining pick",
-					[3771] = "wild hog shank",
-					[12054] = "demon band",
-					[15311] = "feral harness",
-					[5299] = "gloves of the moon",
-					[6477] = "grassland sash",
-					[3030] = "razor arrow",
-					[6685] = "death speaker mantle",
-					[15284] = "long battle bow",
-					[929] = "healing potion",
+				[1595964609] = {
+					[3575] = "iron bar",
 				},
 				[1596618031] = {
 					[6134] = "primitive mantle",
 					[6135] = "primitive kilt",
 				},
 				[1596133496] = {
-					[12467] = "alien egg",
 					[9779] = "bandit cloak",
+					[12467] = "alien egg",
 				},
-				[1596912373] = {
-					[769] = "chunk of boar meat",
+				[1595783793] = {
+					[954] = "scroll of strength",
 				},
-				[1596219431] = {
-					[1712] = "scroll of spirit ii",
-					[2219] = "small round shield",
-					[1820] = "wooden maul",
-				},
-				[1596188191] = {
-					[10998] = "lesser astral essence",
-					[11135] = "greater mystic essence",
+				[1596987212] = {
+					[4093] = "large basilisk tail",
+					[11385] = "basilisk scale",
+					[5741] = "rock chip",
+					[17056] = "light feather",
+					[1702] = "intact basilisk spine",
 				},
 				[1596911977] = {
-					[1727] = "sword of decay",
-					[3055] = "forest leather chestpiece",
-					[3198] = "battering hammer",
 					[15514] = "grunt's chestpiece",
-					[14127] = "ritual shroud",
-					[36] = "worn mace",
-					[15515] = "spiked chain belt",
-					[6386] = "glimmering mail legguards",
-					[15532] = "sentry's armsplints",
+					[3055] = "forest leather chestpiece",
 					[11138] = "small glowing shard",
-					[15517] = "spiked chain wristbands",
+					[1727] = "sword of decay",
+					[14127] = "ritual shroud",
 					[14742] = "hulking boots",
-					[3275] = "flax gloves",
+					[15515] = "spiked chain belt",
+					[14182] = "watcher's mantle",
+					[3198] = "battering hammer",
+					[11967] = "zircon band",
+					[6386] = "glimmering mail legguards",
+					[15517] = "spiked chain wristbands",
+				},
+				[1596219431] = {
+					[2219] = "small round shield",
+					[1712] = "scroll of spirit ii",
+					[1820] = "wooden maul",
+				},
+				[1596962486] = {
+					[36] = "worn mace",
 					[51] = "neophyte's boots",
 					[52] = "neophyte's pants",
 					[53] = "neophyte's shirt",
 					[6144] = "neophyte's robe",
-					[11967] = "zircon band",
-					[14182] = "watcher's mantle",
-				},
-				[1596914970] = {
-					[1366] = "ragged leather pants",
-					[1374] = "frayed shoes",
-					[159] = "refreshing spring water",
-					[3363] = "frayed belt",
-					[1369] = "ragged leather belt",
-					[2654] = "flimsy chain pants",
+					[3275] = "flax gloves",
 				},
 			},
 			["XPac_AuraCache"] = 1,
@@ -402,6 +431,7 @@ TMWOptDB = {
 				["seal of command"] = 2,
 				["first aid"] = 2,
 				["insect swarm"] = 2,
+				["flame lash"] = 1,
 				["terrify"] = 1,
 				["fireball"] = 2,
 				["prowl"] = 2,
@@ -780,9 +810,9 @@ TMWOptDB = {
 				["lesser armor"] = 2,
 				["flee"] = 2,
 				["bestial wrath"] = 2,
-				["arcane protection"] = 2,
-				["touch of shadow"] = 2,
 				["corrupted strength"] = 1,
+				["sheen of zanza"] = 2,
+				["arcane protection"] = 2,
 				["arcane power"] = 2,
 				["flurry"] = 2,
 				["curse of the shadowhorn"] = 1,
@@ -851,7 +881,7 @@ TMWOptDB = {
 				["flip out"] = 2,
 				["rapid healing"] = 2,
 				["frost shock"] = 2,
-				["sheen of zanza"] = 2,
+				["touch of shadow"] = 2,
 				["withering poison"] = 1,
 				["disease cloud"] = 1,
 				["revenge stun"] = 2,
@@ -1849,10 +1879,10 @@ TMWOptDB = {
 			"00000000", -- [1]
 			"ff000000", -- [2]
 		},
-		["TellMeWhenDBBackupDate"] = 1596962189,
+		["TellMeWhenDBBackupDate"] = 1596988040,
 		["EditorHeight"] = 670.833435058594,
 		["LastChangelogVersion"] = 86907,
-		["ConfigWarningN"] = 196,
+		["ConfigWarningN"] = 197,
 		["TellMeWhenDBBackup"] = {
 			["profileKeys"] = {
 				["Dotwise - Golemagg"] = "Warrior",
@@ -13277,63 +13307,63 @@ TMWOptDB = {
 					["WarnInvalids"] = false,
 				},
 				["Hunter"] = {
-					["Locked"] = true,
-					["NumGroups"] = 3,
 					["Version"] = 86907,
+					["NumGroups"] = 3,
 					["Groups"] = {
 						{
 							["GUID"] = "TMW:group:1TWYPj24VzCn",
-							["Name"] = "Other",
 							["Point"] = {
 								["y"] = -20,
 								["x"] = -230,
 							},
-							["Enabled"] = false,
 							["Scale"] = 1.5,
+							["TextureName"] = "Details Flat",
+							["Enabled"] = false,
 							["Columns"] = 1,
 							["Icons"] = {
 								{
-									["Enabled"] = true,
 									["Type"] = "meta",
 									["Icons"] = {
 										"TMW:icon:1TZvNvgAkfmq", -- [1]
 										"TMW:icon:1TWYSTcSCl0z", -- [2]
 									},
+									["Enabled"] = true,
 								}, -- [1]
 							},
-							["TextureName"] = "Details Flat",
+							["Name"] = "Other",
 						}, -- [1]
 						{
-							["GUID"] = "TMW:group:1TeVAjjUoOOh",
-							["Columns"] = 20,
 							["Point"] = {
 								["y"] = -5,
 								["point"] = "TOP",
 								["relativePoint"] = "TOP",
 							},
+							["Scale"] = 1,
+							["Locked"] = true,
+							["GUID"] = "TMW:group:1TeVAjjUoOOh",
+							["Columns"] = 20,
 							["Icons"] = {
 								{
-									["GUID"] = "TMW:icon:1TeVAjjXQ0WB",
-									["Type"] = "buff",
 									["BuffOrDebuff"] = "HARMFUL",
 									["Unit"] = "target",
 									["OnlyMine"] = true,
+									["Type"] = "buff",
 									["Name"] = "Serpent Sting",
 									["Conditions"] = {
 										{
 											["Type"] = "MANA_ABS",
-											["Level"] = 100,
 											["Operator"] = ">",
+											["Level"] = 100,
 										}, -- [1]
 										{
-											["Unit"] = "target",
-											["Level"] = 35,
 											["Type"] = "LIBRANGECHECK",
 											["Operator"] = "<=",
+											["Unit"] = "target",
+											["Level"] = 35,
 										}, -- [2]
 										["n"] = 2,
 									},
-									["Enabled"] = true,
+									["GUID"] = "TMW:icon:1TeVAjjXQ0WB",
 									["States"] = {
 										{
 											["Alpha"] = 0,
@@ -13342,11 +13372,16 @@ TMWOptDB = {
 											["Alpha"] = 1,
 										}, -- [2]
 									},
+									["Enabled"] = true,
 								}, -- [1]
 								{
-									["Enabled"] = true,
+									["BuffOrDebuff"] = "HARMFUL",
+									["Unit"] = "target",
 									["Type"] = "buff",
 									["ShowTimerText"] = true,
+									["Enabled"] = true,
+									["Name"] = "Hunter's Mark",
+									["GUID"] = "TMW:icon:1TeVAjjavXC6",
 									["States"] = {
 										{
 											["Alpha"] = 0,
@@ -13355,30 +13390,26 @@ TMWOptDB = {
 											["Alpha"] = 0.15,
 										}, -- [2]
 									},
-									["BuffOrDebuff"] = "HARMFUL",
-									["GUID"] = "TMW:icon:1TeVAjjavXC6",
-									["Name"] = "Hunter's Mark",
-									["Unit"] = "target",
 								}, -- [2]
 								{
-									["GUID"] = "TMW:icon:1V6lsULwY3_Y",
 									["Type"] = "cooldown",
 									["Name"] = "Arcane Shot",
-									["RangeCheck"] = true,
 									["Conditions"] = {
 										{
 											["Type"] = "MANA_ABS",
-											["Level"] = 100,
 											["Operator"] = ">",
+											["Level"] = 100,
 										}, -- [1]
 										["n"] = 1,
 									},
+									["GUID"] = "TMW:icon:1V6lsULwY3_Y",
+									["RangeCheck"] = true,
 									["Enabled"] = true,
 								}, -- [3]
 								{
-									["Enabled"] = true,
 									["Type"] = "buff",
 									["Name"] = "Aspect of the Hawk",
+									["Enabled"] = true,
 									["GUID"] = "TMW:icon:1V6noP8ARoel",
 									["States"] = {
 										{
@@ -13390,42 +13421,41 @@ TMWOptDB = {
 									},
 								}, -- [4]
 							},
-							["Scale"] = 1,
 							["Name"] = "Hunter Spells",
 							["Alpha"] = 0,
-							["Locked"] = true,
 						}, -- [2]
 						{
-							["GUID"] = "TMW:group:1TeVDtajUwqa",
-							["Name"] = "Hunter Rotation",
 							["Point"] = {
 								["y"] = -88,
 								["x"] = 4.069010416666670e-05,
 							},
-							["Locked"] = true,
 							["Scale"] = 1.5,
+							["Locked"] = true,
+							["OnlyInCombat"] = true,
 							["Columns"] = 3,
 							["Icons"] = {
 								{
-									["Enabled"] = true,
 									["Type"] = "meta",
 									["Icons"] = {
 										"TMW:icon:1V6noP8ARoel", -- [1]
 										"TMW:icon:1TeVAjjavXC6", -- [2]
 									},
+									["Enabled"] = true,
 								}, -- [1]
 								{
-									["Enabled"] = true,
 									["Type"] = "meta",
 									["Icons"] = {
 										"TMW:icon:1TeVAjjXQ0WB", -- [1]
 										"TMW:icon:1V6lsULwY3_Y", -- [2]
 									},
+									["Enabled"] = true,
 								}, -- [2]
 							},
-							["OnlyInCombat"] = true,
+							["Name"] = "Hunter Rotation",
+							["GUID"] = "TMW:group:1TeVDtajUwqa",
 						}, -- [3]
 					},
+					["Locked"] = true,
 				},
 				["Warrior"] = {
 					["Locked"] = true,
@@ -13959,11 +13989,11 @@ TMWOptDB = {
 				},
 				["Priest"] = {
 					["Locked"] = true,
-					["Version"] = 86907,
 					["NumGroups"] = 8,
+					["Version"] = 86907,
 					["Groups"] = {
 						{
-							["Enabled"] = false,
+							["GUID"] = "TMW:group:1TQuFk14Ix42",
 							["Point"] = {
 								["y"] = -88,
 								["x"] = 4.069010416666670e-05,
@@ -14006,7 +14036,6 @@ TMWOptDB = {
 									["Type"] = "buff",
 									["Sort"] = -1,
 									["Name"] = "Battle Shout",
-									["DurationMin"] = 15,
 									["DurationMinEnabled"] = true,
 									["Conditions"] = {
 										{
@@ -14016,6 +14045,7 @@ TMWOptDB = {
 										}, -- [1]
 										["n"] = 1,
 									},
+									["DurationMin"] = 15,
 									["States"] = {
 										{
 											["Alpha"] = 0,
@@ -14031,7 +14061,11 @@ TMWOptDB = {
 							},
 							["TextureName"] = "Details Flat",
 							["LayoutDirection"] = 2,
-							["GUID"] = "TMW:group:1TQuFk14Ix42",
+							["SortPriorities"] = {
+								{
+									["Order"] = -1,
+								}, -- [1]
+							},
 							["Name"] = "Warrior Rotation",
 							["SettingsPerView"] = {
 								["icon"] = {
@@ -14040,25 +14074,21 @@ TMWOptDB = {
 								},
 							},
 							["Locked"] = true,
-							["SortPriorities"] = {
-								{
-									["Order"] = -1,
-								}, -- [1]
-							},
 							["Columns"] = 1,
+							["Enabled"] = false,
 							["OnlyInCombat"] = true,
 						}, -- [1]
 						{
 							["GUID"] = "TMW:group:1TQvxnAfbGyU",
-							["Name"] = "Warrior Spells",
 							["Point"] = {
 								["y"] = -5,
 								["point"] = "TOP",
 								["relativePoint"] = "TOP",
 							},
+							["Columns"] = 20,
 							["Alpha"] = 0,
 							["Locked"] = true,
-							["Columns"] = 20,
+							["Name"] = "Warrior Spells",
 							["Icons"] = {
 								{
 									["GUID"] = "TMW:icon:1TQv_LtTwAae",
@@ -14130,7 +14160,7 @@ TMWOptDB = {
 								{
 									["GUID"] = "TMW:icon:1TU=hLnlwyeY",
 									["Type"] = "cooldown",
-									["ShowTimerText"] = true,
+									["Name"] = "Overpower",
 									["RangeCheck"] = true,
 									["Conditions"] = {
 										{
@@ -14141,7 +14171,7 @@ TMWOptDB = {
 										["n"] = 1,
 									},
 									["Enabled"] = true,
-									["Name"] = "Overpower",
+									["ShowTimerText"] = true,
 								}, -- [4]
 								{
 									["GUID"] = "TMW:icon:1TWZdpV26rm5",
@@ -14225,12 +14255,12 @@ TMWOptDB = {
 						}, -- [3]
 						{
 							["GUID"] = "TMW:group:1TWYSTcQ410f",
-							["Columns"] = 20,
+							["Point"] = {
+								["y"] = -40,
+								["point"] = "TOP",
+								["relativePoint"] = "TOP",
+							},
 							["Scale"] = 1,
-							["Alpha"] = 0,
-							["TextureName"] = "Details Flat",
-							["Name"] = "General Buffs/Debbufs",
-							["Locked"] = true,
 							["Icons"] = {
 								{
 									["GUID"] = "TMW:icon:1TWYSTcSCl0z",
@@ -14253,23 +14283,23 @@ TMWOptDB = {
 									["Name"] = "Enrage",
 								}, -- [2]
 							},
-							["Point"] = {
-								["y"] = -40,
-								["point"] = "TOP",
-								["relativePoint"] = "TOP",
-							},
+							["TextureName"] = "Details Flat",
+							["Name"] = "General Buffs/Debbufs",
+							["Locked"] = true,
+							["Alpha"] = 0,
+							["Columns"] = 20,
 						}, -- [4]
 						{
 							["GUID"] = "TMW:group:1TeVAjjUoOOh",
-							["Name"] = "Hunter Spells",
 							["Point"] = {
 								["y"] = -75,
 								["point"] = "TOP",
 								["relativePoint"] = "TOP",
 							},
+							["Columns"] = 20,
 							["Alpha"] = 0,
 							["Locked"] = true,
-							["Columns"] = 20,
+							["Name"] = "Hunter Spells",
 							["Icons"] = {
 								{
 									["GUID"] = "TMW:icon:1TeVAjjXQ0WB",
@@ -14322,7 +14352,7 @@ TMWOptDB = {
 							["Name"] = "Hunter Rotation",
 						}, -- [6]
 						{
-							["Enabled"] = false,
+							["GUID"] = "TMW:group:1V6krZ0tqss=",
 							["Point"] = {
 								["y"] = -88,
 							},
@@ -14355,21 +14385,21 @@ TMWOptDB = {
 							["LayoutDirection"] = 2,
 							["Name"] = "Warlock Rotation",
 							["Locked"] = true,
-							["GUID"] = "TMW:group:1V6krZ0tqss=",
 							["Columns"] = 1,
+							["Enabled"] = false,
 							["OnlyInCombat"] = true,
 						}, -- [7]
 						{
 							["GUID"] = "TMW:group:1V6ky7Uf4nZ5",
-							["Name"] = "Warlock Spells",
 							["Point"] = {
 								["y"] = -110,
 								["point"] = "TOP",
 								["relativePoint"] = "TOP",
 							},
+							["Columns"] = 20,
 							["Alpha"] = 0,
 							["Locked"] = true,
-							["Columns"] = 20,
+							["Name"] = "Warlock Spells",
 							["Icons"] = {
 								{
 									["GUID"] = "TMW:icon:1V6ky7UjmQN=",

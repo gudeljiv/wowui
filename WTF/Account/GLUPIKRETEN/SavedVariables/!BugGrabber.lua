@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 1748,
+	["session"] = 1760,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -1108,21 +1108,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [140]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'ItemRackButton0:SetAttribute()'.",
-			["time"] = "2020/08/02 11:49:42",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetAttribute'\nInterface\\AddOns\\ItemRack\\ItemRackButtons.lua:35: in function `InitButtons'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:282: in function `func'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:970: in function `OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>",
-			["session"] = 1727,
-			["counter"] = 3,
-		}, -- [141]
-		{
 			["message"] = "Interface\\AddOns\\Backpack\\core\\EventHandler.lua:13: Attempt to register unknown event \"PLAYERREAGENTBANKSLOTS_CHANGED\"",
 			["time"] = "2020/08/09 09:57:29",
 			["locals"] = "(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = \"PLAYERREAGENTBANKSLOTS_CHANGED\"\n",
 			["stack"] = "[C]: in function `RegisterEvent'\nInterface\\AddOns\\Backpack\\core\\EventHandler.lua:13: in function <Interface\\AddOns\\Backpack\\core\\EventHandler.lua:6>\nInterface\\AddOns\\Backpack\\core\\EventHandler.lua:70: in function <Interface\\AddOns\\Backpack\\core\\EventHandler.lua:69>\nInterface\\AddOns\\Backpack\\core\\ContainerAPI.lua:117: in main chunk",
 			["session"] = 1729,
 			["counter"] = 1,
-		}, -- [142]
+		}, -- [141]
 		{
 			["message"] = "Interface\\AddOns\\Backpack\\core\\Core.lua:7: attempt to call field 'MixinAPI' (a nil value)",
 			["time"] = "2020/08/09 09:57:29",
@@ -1130,7 +1122,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\Backpack\\core\\Core.lua:7: in main chunk",
 			["session"] = 1729,
 			["counter"] = 1,
-		}, -- [143]
+		}, -- [142]
 		{
 			["message"] = "Interface\\AddOns\\Backpack\\core\\Categories-Categories.lua:65: attempt to call field 'Expose' (a nil value)",
 			["time"] = "2020/08/09 09:57:29",
@@ -1138,7 +1130,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\Backpack\\core\\Categories-Categories.lua:65: in main chunk",
 			["session"] = 1729,
 			["counter"] = 1,
-		}, -- [144]
+		}, -- [143]
 		{
 			["message"] = "Interface\\AddOns\\Backpack\\core\\ContainerButtons.lua:68: attempt to index global 'BackpackBank' (a nil value)",
 			["time"] = "2020/08/09 09:57:29",
@@ -1146,7 +1138,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\Backpack\\core\\ContainerButtons.lua:68: in main chunk",
 			["session"] = 1729,
 			["counter"] = 1,
-		}, -- [145]
+		}, -- [144]
 		{
 			["message"] = "Interface\\AddOns\\Backpack\\core\\Modules.lua:11: attempt to call field 'Expose' (a nil value)",
 			["time"] = "2020/08/09 09:57:29",
@@ -1154,7 +1146,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\Backpack\\core\\Modules.lua:11: in main chunk",
 			["session"] = 1729,
 			["counter"] = 1,
-		}, -- [146]
+		}, -- [145]
 		{
 			["message"] = "Interface\\AddOns\\Backpack\\core\\Position.lua:91: attempt to call method 'AddModule' (a nil value)",
 			["time"] = "2020/08/09 09:57:29",
@@ -1162,7 +1154,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\Backpack\\core\\Position.lua:91: in main chunk",
 			["session"] = 1729,
 			["counter"] = 1,
-		}, -- [147]
+		}, -- [146]
 		{
 			["message"] = "Interface\\AddOns\\Backpack\\core\\Blizzard.lua:22: attempt to index global 'ReagentBankFrame' (a nil value)",
 			["time"] = "2020/08/09 09:57:29",
@@ -1170,7 +1162,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\Backpack\\core\\Blizzard.lua:22: in main chunk",
 			["session"] = 1729,
 			["counter"] = 1,
-		}, -- [148]
+		}, -- [147]
 		{
 			["message"] = "Interface\\AddOns\\Backpack\\modules\\Restack.lua:40: attempt to call method 'AddModule' (a nil value)",
 			["time"] = "2020/08/09 09:57:29",
@@ -1178,7 +1170,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\Backpack\\modules\\Restack.lua:40: in main chunk",
 			["session"] = 1729,
 			["counter"] = 1,
-		}, -- [149]
+		}, -- [148]
 		{
 			["message"] = "Interface\\AddOns\\Backpack\\modules\\BagSlots.lua:194: attempt to call method 'AddModule' (a nil value)",
 			["time"] = "2020/08/09 09:57:29",
@@ -1186,7 +1178,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\Backpack\\modules\\BagSlots.lua:194: in main chunk",
 			["session"] = 1729,
 			["counter"] = 1,
-		}, -- [150]
+		}, -- [149]
 		{
 			["message"] = "Interface\\AddOns\\Backpack\\modules\\Currencies.lua:72: attempt to call method 'AddModule' (a nil value)",
 			["time"] = "2020/08/09 09:57:29",
@@ -1194,7 +1186,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\Backpack\\modules\\Currencies.lua:72: in main chunk",
 			["session"] = 1729,
 			["counter"] = 1,
-		}, -- [151]
+		}, -- [150]
 		{
 			["message"] = "Interface\\AddOns\\Backpack\\core\\Blizzard.lua:4: attempt to call method 'Toggle' (a nil value)",
 			["time"] = "2020/08/09 09:57:47",
@@ -1202,7 +1194,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\Backpack\\core\\Blizzard.lua:4: in function `ToggleAllBags'\n[string \"OPENALLBAGS\"]:1: in function <[string \"OPENALLBAGS\"]:1>",
 			["session"] = 1729,
 			["counter"] = 1,
-		}, -- [152]
+		}, -- [151]
 		{
 			["message"] = "Interface\\AddOns\\Backpack\\core\\Blizzard.lua:14: attempt to call method 'Toggle' (a nil value)",
 			["time"] = "2020/08/09 09:57:51",
@@ -1210,7 +1202,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\Backpack\\core\\Blizzard.lua:14: in function <Interface\\AddOns\\Backpack\\core\\Blizzard.lua:13>\n[C]: in function `securecall'\nInterface\\FrameXML\\UIParent.lua:1891: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:1793: in function <Interface\\FrameXML\\UIParent.lua:1789>\n[C]: in function `SetAttribute'\nInterface\\FrameXML\\UIParent.lua:2535: in function `ShowUIPanel'\nInterface\\FrameXML\\UIParent.lua:3382: in function `ToggleGameMenu'\n[string \"TOGGLEGAMEMENU\"]:1: in function <[string \"TOGGLEGAMEMENU\"]:1>",
 			["session"] = 1729,
 			["counter"] = 2,
-		}, -- [153]
+		}, -- [152]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\xVermin-54000.lua:56: Attempt to find 'this' in non-table object (used '.' instead of ':' ?)",
 			["time"] = "2020/08/09 10:17:05",
@@ -1218,6 +1210,22 @@ BugGrabberDB = {
 			["stack"] = "[C]: ?\nInterface\\AddOns\\xVermin\\xVermin-54000.lua:56: in function `MoveDTT'\nInterface\\AddOns\\xVermin\\xVermin-54000.lua:59: in function <Interface\\AddOns\\xVermin\\xVermin.lua:32>",
 			["session"] = 1740,
 			["counter"] = 4,
+		}, -- [153]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'SetBinding()'.",
+			["time"] = "2020/08/09 12:35:08",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetBinding'\nInterface\\AddOns\\xVermin\\Bindings.lua:2: in function <Interface\\AddOns\\xVermin\\Bindings.lua:1>\nInterface\\AddOns\\xVermin\\Bindings.lua:126: in function <Interface\\AddOns\\xVermin\\Bindings.lua:125>\n[C]: in function `LoadAddOn'\nInterface\\FrameXML\\UIParent.lua:353: in function `UIParentLoadAddOn'\nInterface\\FrameXML\\UIParent.lua:412: in function `TalentFrame_LoadUI'\nInterface\\FrameXML\\UIParent.lua:497: in function `ToggleTalentFrame'\n[string \"TOGGLETALENTS\"]:1: in function <[string \"TOGGLETALENTS\"]:1>",
+			["session"] = 1749,
+			["counter"] = 1,
 		}, -- [154]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'ItemRackButton0:SetAttribute()'.",
+			["time"] = "2020/08/02 11:49:42",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetAttribute'\nInterface\\AddOns\\ItemRack\\ItemRackButtons.lua:35: in function `InitButtons'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:282: in function `func'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:970: in function `OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>",
+			["session"] = 1751,
+			["counter"] = 4,
+		}, -- [155]
 	},
 }

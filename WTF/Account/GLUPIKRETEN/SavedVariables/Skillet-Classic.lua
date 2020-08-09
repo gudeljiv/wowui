@@ -24,14 +24,14 @@ SkilletDB = {
 			[6452] = {
 				["Anti-Venom"] = true,
 			},
-			[3530] = {
-				["Wool Bandage"] = true,
+			[3860] = {
+				["Smelt Mithril"] = true,
 			},
 			[8544] = {
 				["Mageweave Bandage"] = true,
 			},
-			[3575] = {
-				["Smelt Iron"] = true,
+			[2840] = {
+				["Smelt Copper"] = true,
 			},
 			[3577] = {
 				["Smelt Gold"] = true,
@@ -39,11 +39,11 @@ SkilletDB = {
 			[1251] = {
 				["Linen Bandage"] = true,
 			},
-			[3860] = {
-				["Smelt Mithril"] = true,
+			[3530] = {
+				["Wool Bandage"] = true,
 			},
-			[2840] = {
-				["Smelt Copper"] = true,
+			[3575] = {
+				["Smelt Iron"] = true,
 			},
 			[2841] = {
 				["Smelt Bronze"] = true,
@@ -148,7 +148,7 @@ SkilletDB = {
 			["ignoreListLocation_point"] = "CENTER",
 			["shoppingListLocation_scale"] = 1,
 			["standaloneQueueLocation_x"] = -280.833190917969,
-			["ignoreListLocation_x"] = 136.170593261719,
+			["shoppingListLocation_point"] = "CENTER",
 			["plugins"] = {
 				["ATL"] = {
 					["buyFactor"] = 4,
@@ -188,14 +188,14 @@ SkilletDB = {
 			["tradeSkillLocation_point"] = "TOPLEFT",
 			["standaloneQueueLocation_y"] = 247.500411987305,
 			["enhanced_recipe_display"] = true,
-			["tradeSkillLocation_y"] = -146.47119140625,
-			["transparency"] = 0.95,
-			["WarnLog"] = true,
 			["tradeSkillLocation_scale"] = 1,
-			["shoppingListLocation_point"] = "CENTER",
-			["standaloneQueueLocation_point"] = "BOTTOM",
-			["standaloneQueueLocation_scale"] = 1,
 			["shoppingListLocation_y"] = 157.881286621094,
+			["transparency"] = 0.95,
+			["standaloneQueueLocation_scale"] = 1,
+			["standaloneQueueLocation_point"] = "BOTTOM",
+			["ignoreListLocation_x"] = 136.170593261719,
+			["tradeSkillLocation_y"] = -146.47119140625,
+			["WarnLog"] = true,
 		},
 		["Mxym - Golemagg"] = {
 			["plugins"] = {
@@ -618,9 +618,9 @@ SkilletDB = {
 				["Mxzq"] = {
 					[2575] = {
 						"header Trade Goods", -- [1]
-						"eSmelt Gold", -- [2]
-						"tSmelt Mithril", -- [3]
-						"tSmelt Steel", -- [4]
+						"tSmelt Mithril", -- [2]
+						"tSmelt Steel", -- [3]
+						"tSmelt Gold", -- [4]
 						"tSmelt Iron", -- [5]
 						"tSmelt Bronze", -- [6]
 						"tSmelt Tin", -- [7]
@@ -665,13 +665,13 @@ SkilletDB = {
 			},
 			["bagData"] = {
 				["Mxzq"] = {
-					[3771] = 22,
-					[3030] = 2000,
-					[6948] = 1,
+					[3771] = 37,
+					[3030] = 1515,
+					[929] = 19,
+					[1708] = 26,
 					[2901] = 1,
-					[1708] = 29,
-					[3385] = 6,
-					[929] = 17,
+					[3385] = 3,
+					[6948] = 1,
 				},
 				["Mxys"] = {
 					[159] = 2,
@@ -810,19 +810,29 @@ SkilletDB = {
 				["Antun"] = {
 				},
 				["Mxyz"] = {
-					[15514] = 1,
-					[3055] = 1,
-					[11138] = 1,
 					[1727] = 1,
-					[14742] = 1,
-					[3198] = 1,
+					[2836] = 4,
+					[2838] = 3,
+					[2592] = 20,
+					[7912] = 23,
+					[774] = 2,
+					[14127] = 1,
+					[1705] = 1,
+					[14182] = 1,
 					[11967] = 1,
+					[2835] = 6,
+					[4306] = 18,
+					[1529] = 1,
+					[2194] = 1,
+					[1206] = 1,
+					[3055] = 1,
+					[14574] = 1,
+					[2770] = 8,
+					[15514] = 1,
+					[3198] = 1,
+					[5001] = 1,
 					[15515] = 1,
 					[15532] = 1,
-					[14127] = 1,
-					[6386] = 1,
-					[14182] = 1,
-					[15517] = 1,
 				},
 				["Augustin"] = {
 				},
@@ -867,13 +877,13 @@ SkilletDB = {
 						["maxRank"] = 225,
 						["isCraft"] = false,
 						["name"] = "Mining",
-						["rank"] = 180,
+						["rank"] = 188,
 					},
 					[2656] = {
 						["maxRank"] = 225,
 						["isCraft"] = false,
 						["name"] = "Smelting (Mining)",
-						["rank"] = 180,
+						["rank"] = 188,
 					},
 				},
 				["Mxys"] = {
@@ -996,16 +1006,17 @@ SkilletDB = {
 			},
 			["bankData"] = {
 				["Mxzq"] = {
+					[2776] = 2,
 					[6692] = 1,
+					[3857] = 5,
 					[20558] = 3,
 					[2838] = 11,
-					[2771] = 47,
-					[2772] = 42,
+					[2771] = 60,
+					[2772] = 54,
 					[2840] = 35,
 					[6686] = 1,
-					[2775] = 15,
-					[6690] = 1,
-					[6679] = 1,
+					[2775] = 19,
+					[3858] = 18,
 				},
 				["Mxys"] = {
 				},
@@ -1018,20 +1029,20 @@ SkilletDB = {
 				["Antun"] = {
 				},
 				["Mxyz"] = {
-					[4306] = 170,
+					[4306] = 154,
 					[3369] = 15,
-					[3355] = 1,
+					[3355] = 4,
 					[2838] = 16,
-					[3356] = 19,
-					[785] = 19,
-					[2592] = 111,
-					[2450] = 31,
-					[2589] = 29,
-					[2453] = 19,
-					[2452] = 25,
+					[3356] = 34,
+					[785] = 21,
+					[2592] = 121,
+					[2450] = 36,
+					[2449] = 3,
+					[2589] = 30,
+					[2452] = 26,
 					[2836] = 22,
 					[3818] = 5,
-					[2449] = 3,
+					[2453] = 19,
 				},
 				["Augustin"] = {
 				},
@@ -1132,10 +1143,10 @@ SkilletDB = {
 					}, -- [12]
 					{
 						["bag"] = -1,
-						["name"] = "Ferine Leggings",
+						["name"] = "Gold Ore",
 						["slot"] = 13,
-						["id"] = 6690,
-						["count"] = 1,
+						["id"] = 2776,
+						["count"] = 2,
 					}, -- [13]
 					{
 						["bag"] = -1,
@@ -1153,17 +1164,17 @@ SkilletDB = {
 					}, -- [15]
 					{
 						["bag"] = -1,
-						["name"] = "Armor Piercer",
+						["name"] = "Mithril Ore",
 						["slot"] = 16,
-						["id"] = 6679,
-						["count"] = 1,
+						["id"] = 3858,
+						["count"] = 10,
 					}, -- [16]
 					{
 						["bag"] = -1,
 						["name"] = "Silver Ore",
 						["slot"] = 17,
 						["id"] = 2775,
-						["count"] = 5,
+						["count"] = 9,
 					}, -- [17]
 					{
 						["bag"] = -1,
@@ -1177,15 +1188,43 @@ SkilletDB = {
 						["name"] = "Tin Ore",
 						["slot"] = 19,
 						["id"] = 2771,
-						["count"] = 7,
+						["count"] = 10,
 					}, -- [19]
 					{
 						["bag"] = -1,
 						["name"] = "Iron Ore",
 						["slot"] = 20,
 						["id"] = 2772,
-						["count"] = 2,
+						["count"] = 10,
 					}, -- [20]
+					{
+						["bag"] = -1,
+						["name"] = "Coal",
+						["slot"] = 21,
+						["id"] = 3857,
+						["count"] = 5,
+					}, -- [21]
+					{
+						["bag"] = -1,
+						["name"] = "Iron Ore",
+						["slot"] = 22,
+						["id"] = 2772,
+						["count"] = 4,
+					}, -- [22]
+					{
+						["bag"] = -1,
+						["name"] = "Tin Ore",
+						["slot"] = 23,
+						["id"] = 2771,
+						["count"] = 10,
+					}, -- [23]
+					{
+						["bag"] = -1,
+						["name"] = "Mithril Ore",
+						["slot"] = 24,
+						["id"] = 3858,
+						["count"] = 8,
+					}, -- [24]
 				},
 				["Mxys"] = {
 				},
@@ -1236,185 +1275,199 @@ SkilletDB = {
 					{
 						["bag"] = -1,
 						["name"] = "Silk Cloth",
-						["slot"] = 6,
+						["slot"] = 7,
 						["id"] = 4306,
 						["count"] = 20,
 					}, -- [6]
 					{
 						["bag"] = -1,
 						["name"] = "Silk Cloth",
-						["slot"] = 7,
+						["slot"] = 8,
 						["id"] = 4306,
 						["count"] = 20,
 					}, -- [7]
 					{
 						["bag"] = -1,
 						["name"] = "Silk Cloth",
-						["slot"] = 8,
-						["id"] = 4306,
-						["count"] = 20,
-					}, -- [8]
-					{
-						["bag"] = -1,
-						["name"] = "Silk Cloth",
 						["slot"] = 9,
 						["id"] = 4306,
 						["count"] = 20,
-					}, -- [9]
-					{
-						["bag"] = -1,
-						["name"] = "Wool Cloth",
-						["slot"] = 10,
-						["id"] = 2592,
-						["count"] = 20,
-					}, -- [10]
+					}, -- [8]
 					{
 						["bag"] = -1,
 						["name"] = "Briarthorn",
 						["slot"] = 11,
 						["id"] = 2450,
 						["count"] = 20,
-					}, -- [11]
+					}, -- [9]
 					{
 						["bag"] = -1,
 						["name"] = "Wild Steelbloom",
 						["slot"] = 12,
 						["id"] = 3355,
-						["count"] = 1,
-					}, -- [12]
+						["count"] = 4,
+					}, -- [10]
 					{
 						["bag"] = -1,
 						["name"] = "Fadeleaf",
 						["slot"] = 13,
 						["id"] = 3818,
 						["count"] = 5,
-					}, -- [13]
+					}, -- [11]
 					{
 						["bag"] = -1,
 						["name"] = "Heavy Stone",
 						["slot"] = 14,
 						["id"] = 2838,
 						["count"] = 16,
-					}, -- [14]
+					}, -- [12]
 					{
 						["bag"] = -1,
 						["name"] = "Wool Cloth",
 						["slot"] = 15,
 						["id"] = 2592,
 						["count"] = 20,
-					}, -- [15]
+					}, -- [13]
 					{
 						["bag"] = -1,
 						["name"] = "Bruiseweed",
 						["slot"] = 16,
 						["id"] = 2453,
 						["count"] = 19,
-					}, -- [16]
+					}, -- [14]
 					{
 						["bag"] = -1,
 						["name"] = "Coarse Stone",
 						["slot"] = 17,
 						["id"] = 2836,
 						["count"] = 16,
-					}, -- [17]
+					}, -- [15]
 					{
 						["bag"] = -1,
 						["name"] = "Silk Cloth",
 						["slot"] = 18,
 						["id"] = 4306,
 						["count"] = 20,
-					}, -- [18]
+					}, -- [16]
 					{
 						["bag"] = -1,
 						["name"] = "Silk Cloth",
 						["slot"] = 19,
 						["id"] = 4306,
 						["count"] = 20,
-					}, -- [19]
+					}, -- [17]
 					{
 						["bag"] = -1,
 						["name"] = "Silk Cloth",
 						["slot"] = 20,
 						["id"] = 4306,
-						["count"] = 10,
-					}, -- [20]
+						["count"] = 14,
+					}, -- [18]
 					{
 						["bag"] = -1,
 						["name"] = "Kingsblood",
 						["slot"] = 21,
 						["id"] = 3356,
 						["count"] = 19,
-					}, -- [21]
+					}, -- [19]
 					{
 						["bag"] = -1,
 						["name"] = "Briarthorn",
 						["slot"] = 22,
 						["id"] = 2450,
-						["count"] = 11,
-					}, -- [22]
+						["count"] = 16,
+					}, -- [20]
 					{
 						["bag"] = -1,
 						["name"] = "Wool Cloth",
 						["slot"] = 23,
 						["id"] = 2592,
 						["count"] = 20,
-					}, -- [23]
+					}, -- [21]
 					{
 						["bag"] = -1,
 						["name"] = "Wool Cloth",
 						["slot"] = 24,
 						["id"] = 2592,
 						["count"] = 11,
-					}, -- [24]
+					}, -- [22]
 					{
 						["bag"] = 5,
 						["name"] = "Linen Cloth",
 						["slot"] = 1,
 						["id"] = 2589,
 						["count"] = 20,
-					}, -- [25]
+					}, -- [23]
 					{
 						["bag"] = 5,
 						["name"] = "Coarse Stone",
 						["slot"] = 2,
 						["id"] = 2836,
 						["count"] = 6,
-					}, -- [26]
+					}, -- [24]
 					{
 						["bag"] = 5,
 						["name"] = "Swiftthistle",
 						["slot"] = 3,
 						["id"] = 2452,
-						["count"] = 5,
-					}, -- [27]
+						["count"] = 6,
+					}, -- [25]
 					{
 						["bag"] = 5,
 						["name"] = "Wool Cloth",
 						["slot"] = 4,
 						["id"] = 2592,
 						["count"] = 20,
-					}, -- [28]
+					}, -- [26]
 					{
 						["bag"] = 5,
 						["name"] = "Wool Cloth",
 						["slot"] = 5,
 						["id"] = 2592,
 						["count"] = 20,
-					}, -- [29]
+					}, -- [27]
 					{
 						["bag"] = 5,
 						["name"] = "Earthroot",
 						["slot"] = 6,
 						["id"] = 2449,
 						["count"] = 3,
-					}, -- [30]
+					}, -- [28]
 					{
 						["bag"] = 5,
 						["name"] = "Linen Cloth",
 						["slot"] = 7,
 						["id"] = 2589,
-						["count"] = 9,
+						["count"] = 10,
+					}, -- [29]
+					{
+						["bag"] = 5,
+						["name"] = "Kingsblood",
+						["slot"] = 8,
+						["id"] = 3356,
+						["count"] = 15,
+					}, -- [30]
+					{
+						["bag"] = 5,
+						["name"] = "Mageroyal",
+						["slot"] = 9,
+						["id"] = 785,
+						["count"] = 2,
 					}, -- [31]
+					{
+						["bag"] = 5,
+						["name"] = "Wool Cloth",
+						["slot"] = 10,
+						["id"] = 2592,
+						["count"] = 20,
+					}, -- [32]
+					{
+						["bag"] = 5,
+						["name"] = "Wool Cloth",
+						["slot"] = 11,
+						["id"] = 2592,
+						["count"] = 10,
+					}, -- [33]
 				},
 				["Augustin"] = {
 				},
@@ -1429,7 +1482,6 @@ SkilletDB = {
 			},
 			["inventoryData"] = {
 				["Mxzq"] = {
-					[3575] = 123,
 				},
 				["Mxys"] = {
 				},
@@ -1464,7 +1516,7 @@ SkilletDB = {
 						["searchtext"] = "",
 						["hideuncraftable"] = false,
 						["sortmethod"] = "By Difficulty",
-						["grouping"] = "Flat",
+						["grouping"] = "Blizzard",
 					},
 				},
 				["Vermin"] = {
@@ -1480,31 +1532,31 @@ SkilletDB = {
 				["Mxzq"] = {
 					{
 						["bag"] = 0,
+						["name"] = "Wild Hog Shank",
+						["slot"] = 1,
+						["id"] = 3771,
+						["count"] = 15,
+					}, -- [1]
+					{
+						["bag"] = 0,
+						["name"] = "Wild Hog Shank",
+						["slot"] = 2,
+						["id"] = 3771,
+						["count"] = 5,
+					}, -- [2]
+					{
+						["bag"] = 0,
 						["name"] = "Healing Potion",
 						["slot"] = 17,
 						["id"] = 929,
-						["count"] = 2,
-					}, -- [1]
-					{
-						["bag"] = 1,
-						["name"] = "Razor Arrow",
-						["slot"] = 1,
-						["id"] = 3030,
-						["count"] = 200,
-					}, -- [2]
-					{
-						["bag"] = 1,
-						["name"] = "Razor Arrow",
-						["slot"] = 2,
-						["id"] = 3030,
-						["count"] = 200,
+						["count"] = 4,
 					}, -- [3]
 					{
 						["bag"] = 1,
 						["name"] = "Razor Arrow",
 						["slot"] = 3,
 						["id"] = 3030,
-						["count"] = 200,
+						["count"] = 115,
 					}, -- [4]
 					{
 						["bag"] = 1,
@@ -1558,80 +1610,73 @@ SkilletDB = {
 					{
 						["bag"] = 4,
 						["name"] = "Wild Hog Shank",
-						["slot"] = 1,
-						["id"] = 3771,
-						["count"] = 2,
-					}, -- [12]
-					{
-						["bag"] = 4,
-						["name"] = "Wild Hog Shank",
 						["slot"] = 2,
 						["id"] = 3771,
-						["count"] = 20,
-					}, -- [13]
+						["count"] = 17,
+					}, -- [12]
 					{
 						["bag"] = 4,
 						["name"] = "Lesser Mana Potion",
 						["slot"] = 3,
 						["id"] = 3385,
-						["count"] = 5,
-					}, -- [14]
+						["count"] = 2,
+					}, -- [13]
 					{
 						["bag"] = 4,
 						["name"] = "Sweet Nectar",
 						["slot"] = 4,
 						["id"] = 1708,
-						["count"] = 9,
-					}, -- [15]
+						["count"] = 6,
+					}, -- [14]
 					{
 						["bag"] = 4,
 						["name"] = "Sweet Nectar",
 						["slot"] = 5,
 						["id"] = 1708,
 						["count"] = 20,
-					}, -- [16]
+					}, -- [15]
 					{
 						["bag"] = 4,
 						["name"] = "Healing Potion",
 						["slot"] = 6,
 						["id"] = 929,
 						["count"] = 5,
-					}, -- [17]
+					}, -- [16]
 					{
 						["bag"] = 4,
 						["name"] = "Healing Potion",
 						["slot"] = 7,
 						["id"] = 929,
 						["count"] = 5,
-					}, -- [18]
+					}, -- [17]
 					{
 						["bag"] = 4,
 						["name"] = "Healing Potion",
 						["slot"] = 8,
 						["id"] = 929,
 						["count"] = 5,
-					}, -- [19]
+					}, -- [18]
 					{
 						["bag"] = 4,
 						["name"] = "Mining Pick",
 						["slot"] = 9,
 						["id"] = 2901,
 						["count"] = 1,
-					}, -- [20]
+					}, -- [19]
 					{
 						["bag"] = 4,
 						["name"] = "Hearthstone",
 						["slot"] = 10,
 						["id"] = 6948,
 						["count"] = 1,
-					}, -- [21]
+					}, -- [20]
 					{
 						["bag"] = 4,
 						["name"] = "Lesser Mana Potion",
 						["slot"] = 13,
 						["id"] = 3385,
 						["count"] = 1,
-					}, -- [22]
+					}, -- [21]
 				},
 				["Mxys"] = {
 					{
