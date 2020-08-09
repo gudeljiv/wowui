@@ -59,7 +59,7 @@ local function SkinTarget()
 			frameBorder = _G["TargetFrameDebuff" .. i .. "Border"]
 			frameCount = _G["TargetFrameDebuff" .. i .. "Count"]
 
-			if D_unitCaster == "player" or D_spellName == "Sunder Armor" then
+			if D_unitCaster == "player" then
 				if frameBorder then
 					frameBorder:Hide()
 				end
@@ -83,7 +83,7 @@ local function SkinTarget()
 				end
 			else
 				if frame then
-					frame:Hide()
+				-- frame:Hide()
 				end
 			end
 		end

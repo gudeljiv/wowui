@@ -139,7 +139,7 @@ function NeedsFoodBadly:UpdateMacros()
 
 	local _, class, _ = UnitClass("player")
 	if (UnitExists("pet") and class == "HUNTER") then
-		local petType = UnitCreatureFamily("pet")
+		-- local petType = UnitCreatureFamily("pet")
 
 		petfoodMacro =
 			defaultPetFoodMacro:gsub(

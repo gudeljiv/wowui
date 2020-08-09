@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 1760,
+	["session"] = 1764,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -1227,5 +1227,21 @@ BugGrabberDB = {
 			["session"] = 1751,
 			["counter"] = 4,
 		}, -- [155]
+		{
+			["message"] = "[string \"print(GetItemInfo(|cffffffff|Hitem:14542::::::::30:::::::|h[Kra...\"]:1: unexpected symbol near '|'",
+			["time"] = "2020/08/09 19:52:02",
+			["locals"] = "(*temporary) = \"print(GetItemInfo(|cffffffff|Hitem:14542::::::::30:::::::|h[Kravel's Crate]|h|r))\"\n",
+			["stack"] = "[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 1764,
+			["counter"] = 1,
+		}, -- [156]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\BestFood.lua:252: attempt to index local 'b' (a nil value)",
+			["time"] = "2020/08/09 20:21:03",
+			["locals"] = "a = <table> {\n id = 3712\n type = \"Meat\"\n}\nb = nil\n(*temporary) = 4\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = 4\n(*temporary) = \"attempt to index local 'b' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\BestFood.lua:252: in function <Interface\\AddOns\\xVermin\\BestFood.lua:251>\n[C]: in function `sort'\nInterface\\AddOns\\xVermin\\BestFood.lua:160: in function `Sorted'\nInterface\\AddOns\\xVermin\\BestFood.lua:108: in function `UpdateMacros'\nInterface\\AddOns\\xVermin\\BestFood.lua:50: in function <Interface\\AddOns\\xVermin\\BestFood.lua:45>",
+			["session"] = 1764,
+			["counter"] = 3,
+		}, -- [157]
 	},
 }

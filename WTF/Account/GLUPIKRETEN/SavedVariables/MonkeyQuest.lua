@@ -822,6 +822,39 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Mxzq"] = {
 		["m_aQuestList"] = {
+			["Hardened Shells - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Goblin Sponsorship - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Thousand Needles - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Rocket Car Parts - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Martek the Exiled - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Load Lightening - false"] = {
+				["m_bChecked"] = true,
+			},
+			["A Bump in the Road - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Salt Flat Venom - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Encrusted Tail Fins - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Hemet Nesingwary - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Wharfmaster Dizzywig - false"] = {
+				["m_bChecked"] = true,
+			},
 		},
 	},
 	["Genesis|Malinac"] = {

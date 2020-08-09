@@ -87,6 +87,7 @@ AdiBagsDB = {
 				["stackable"] = true,
 				["incomplete"] = true,
 			},
+			["scale"] = 1,
 			["maxHeight"] = 0.3,
 			["skin"] = {
 				["BackpackColor"] = {
@@ -115,17 +116,16 @@ AdiBagsDB = {
 					["yOffset"] = -406.130065917969,
 				},
 				["Backpack"] = {
-					["xOffset"] = -365.120727539063,
-					["yOffset"] = 376.472381591797,
+					["xOffset"] = -280.81982421875,
+					["yOffset"] = 385.934814453125,
 				},
 			},
 			["rightClickConfig"] = false,
 			["sortingOrder"] = "byQualityAndLevel",
+			["positionMode"] = "manual",
 			["sectionFont"] = {
 				["name"] = "Arial Narrow",
 			},
-			["positionMode"] = "manual",
-			["scale"] = 1,
 		},
 	},
 }
