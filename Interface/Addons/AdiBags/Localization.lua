@@ -113,14 +113,10 @@ L["Dim junk"] = true
 L["Do not show anchor point"] = true
 L["Enabled bags"] = true
 L["Enabled"] = true
-L[
-		"Filters are used to dispatch items in bag sections. One item can only appear in one section. If the same item is selected by several filters, the one with the highest priority wins."
-	] = true
+L["Filters are used to dispatch items in bag sections. One item can only appear in one section. If the same item is selected by several filters, the one with the highest priority wins."] = true
 L["Filters"] = true
 L["Hide the colored corner shown when you move the bag."] = true
-L[
-		"If the addon seems not to work properly, please re-enable error reporting and check again before filing a bug ticket."
-	] = true
+L["If the addon seems not to work properly, please re-enable error reporting and check again before filing a bug ticket."] = true
 L["Insets"] = true
 L["Items"] = true
 L["Keep all stacks together."] = true
@@ -231,8 +227,7 @@ L["Space in use"] = true
 
 -- modules/FilterOverride.lua
 L["Add association"] = true
-L["Allow you manually redefine the section in which an item should be put. Simply drag an item on the section title."] =
-	true
+L["Allow you manually redefine the section in which an item should be put. Simply drag an item on the section title."] = true
 L["Alt-right-click to configure manual filtering."] = true
 L["Are you sure you want to remove this section ?"] = true
 L["Assign %s to ..."] = true
@@ -241,8 +236,7 @@ L["Click on a item to remove it from the list. You can drop an item on the empty
 L["Click on this button to create the new association."] = true
 L["Drop your item there to add it to this section."] = true
 L["Enter the name of the section to associate with the item."] = true
-L["Enter the name, link or itemid of the item to associate with the section. You can also drop an item into this box."] =
-	true
+L["Enter the name, link or itemid of the item to associate with the section. You can also drop an item into this box."] = true
 L["Item"] = true
 L["Manual filtering"] = true
 L["New Override"] = true
@@ -300,9 +294,7 @@ L["Legacy"] = true
 L["New"] = true
 L["Recent Items"] = true
 L["Reset new items"] = true
-L[
-		'Track new items in each bag, displaying a glowing aura over them and putting them in a special section. "New" status can be reset by clicking on the small "N" button at top left of bags.'
-	] = true
+L['Track new items in each bag, displaying a glowing aura over them and putting them in a special section. "New" status can be reset by clicking on the small "N" button at top left of bags.'] = true
 L["Track new items"] = true
 
 -- modules/SectionVisibilityDropdown.lua
@@ -363,14 +355,11 @@ L["enabled"] = true
 local locale = GetLocale()
 if locale == "frFR" then
 	------------------------ deDE ------------------------
-	L["Add a dropdown menu to bags that allow to hide the sections."] =
-		"Ajoute un menu déroulant aux sacs pour cacher les sections."
+	L["Add a dropdown menu to bags that allow to hide the sections."] = "Ajoute un menu déroulant aux sacs pour cacher les sections."
 	L["Add association"] = "Ajouter l'association"
-	L["Add more information in tooltips related to items in your bags."] =
-		"Ajoute des informations additionnelles dans les bulles d'aides des objets de vos sacs."
+	L["Add more information in tooltips related to items in your bags."] = "Ajoute des informations additionnelles dans les bulles d'aides des objets de vos sacs."
 	L["AdiBags Anchor"] = "Ancre d'AdiBags"
-	L["Adjust the maximum height of the bags, relative to screen size."] =
-		"Ajustez la taille maximale des sacs, par rapport à la taille de l'écran."
+	L["Adjust the maximum height of the bags, relative to screen size."] = "Ajustez la taille maximale des sacs, par rapport à la taille de l'écran."
 	L["AH category"] = "Catégorie HV"
 	L["AH subcategory"] = "Sous-catégorie HV"
 	L["Allow you manually redefine the section in which an item should be put. Simply drag an item on the section title."] =
@@ -386,8 +375,7 @@ if locale == "frFR" then
 	L["Are you sure you want to remove this section ?"] = "Etes-vous sûr de vouloir effacer cette section ?"
 	L["Assign %s to ..."] = "Assigner %s à ..." -- Needs review
 	L["At mechants', bank, auction house, ..."] = "Chez les marchands, à la banque, à l'hôtel des ventes, ..."
-	L["Automatically open the bags at merchant's, bank, ..."] =
-		"Ouvre automatiquement les sacs chez un marchand, à la banque, ..." -- Needs review
+	L["Automatically open the bags at merchant's, bank, ..."] = "Ouvre automatiquement les sacs chez un marchand, à la banque, ..." -- Needs review
 	L["Backpack"] = "Sac à dos"
 	L["Backpack color"] = "Couleur du sac à dos"
 	L["Bag background"] = "Arrière-plan des sacs"
@@ -403,45 +391,32 @@ if locale == "frFR" then
 	L["Bank Switcher"] = "Banque rapide"
 	L["Border"] = "Bord"
 	L["Border width"] = "Largeur du bord"
-	L["By category, subcategory, quality and item level (default)"] =
-		"Par catégorie, sous-catégorie, qualité et niveau d'objet (par défaut)"
+	L["By category, subcategory, quality and item level (default)"] = "Par catégorie, sous-catégorie, qualité et niveau d'objet (par défaut)"
 	L["By name"] = "Par nom"
 	L["By quality and item level"] = "Par qualité et niveau d'objet"
 	L["Category"] = "Catégorie"
-	L["Change stacking at merchants', auction house, bank, mailboxes or when trading."] =
-		"Modifie l'empilement chez les marchands, à l'autel des ventes, à la banque, aux boîtes aux lettres et lors des échanges."
-	L["Check this so armors are dispatched in four sections by type."] =
-		"Cochez ceci pour que les armures sont distribuées dans quatre sections selon leur type."
-	L["Check this to display a bag type tag in the top left corner of items."] =
-		"Cochez ceci pour afficher le type des sacs dans le coin supérieur gauche des objets."
-	L["Check this to display a colored border around items, based on item quality."] =
-		"Cochez ceci pour afficher un bord coloré autour des objets basé sur leur qualité."
-	L["Check this to display an icon after usage of each type of bags."] =
-		"Cochez ceci pour afficher une icône de type de sac après l'usage."
-	L["Check this to display an indicator on quest items."] =
-		"Cochez ceci pour afficher un indicateur sur les objets de quête."
-	L["Check this to display an textual tag before usage of each type of bags."] =
-		"Cochez ceci pour afficher le type de sac avant l'usage."
-	L["Check this to display only one value counting all equipped bags, ignoring their type."] =
-		"Cochez ceci pour n'afficher qu'une seule valeur pour tous les sacs, quelque soit leur type."
+	L["Change stacking at merchants', auction house, bank, mailboxes or when trading."] = "Modifie l'empilement chez les marchands, à l'autel des ventes, à la banque, aux boîtes aux lettres et lors des échanges."
+	L["Check this so armors are dispatched in four sections by type."] = "Cochez ceci pour que les armures sont distribuées dans quatre sections selon leur type."
+	L["Check this to display a bag type tag in the top left corner of items."] = "Cochez ceci pour afficher le type des sacs dans le coin supérieur gauche des objets."
+	L["Check this to display a colored border around items, based on item quality."] = "Cochez ceci pour afficher un bord coloré autour des objets basé sur leur qualité."
+	L["Check this to display an icon after usage of each type of bags."] = "Cochez ceci pour afficher une icône de type de sac après l'usage."
+	L["Check this to display an indicator on quest items."] = "Cochez ceci pour afficher un indicateur sur les objets de quête."
+	L["Check this to display an textual tag before usage of each type of bags."] = "Cochez ceci pour afficher le type de sac avant l'usage."
+	L["Check this to display only one value counting all equipped bags, ignoring their type."] = "Cochez ceci pour n'afficher qu'une seule valeur pour tous les sacs, quelque soit leur type."
 	L["Check this to have poor quality items dimmed."] = "Cochez ceci pour assombrir les objets de mauvaise qualité."
 	L["Check this to show space at your bank in the plugin."] = "Cochez ceci pour afficher l'espace libre de votre banque."
-	L["Check this to show this section. Uncheck to hide it."] =
-		"Cochez ceci pour afficher cette section. Décochez-le pour la cacher."
+	L["Check this to show this section. Uncheck to hide it."] = "Cochez ceci pour afficher cette section. Décochez-le pour la cacher."
 	L["Check to enable this module."] = "Cochez cette case pour activer ce module."
 	L["Click on a item to remove it from the list. You can drop an item on the empty slot to add it to the list."] =
 		"Cliquer sur un objet pour le retirer de la liste. Vous pouvez mettre un objet dans l'emplacement vide pour l'ajouter à la liste."
 	L["Click on this button to create the new association."] = "Cliquez sur ce bouton pour créer la nouvelle association."
 	L["Click or drag this item to remove it."] = "Cliquez sur l'objet ou glissez-le pour le retirer."
-	L["Click there to reset the bag positions and sizes."] =
-		"Cliquez ici pour remettre à zéro la position et la taille de sacs."
+	L["Click there to reset the bag positions and sizes."] = "Cliquez ici pour remettre à zéro la position et la taille de sacs."
 	L["Click to purchase"] = "Cliquez pour acheter."
 	L["Click to reset item status."] = "Cliquez pour remettre à zéro les nouveaux objets."
-	L["Click to select which sections should be shown or hidden. Section visibility is common to all bags."] =
-		"Cliquez pour sélectionner les sections à afficher ou à cacher. Ceci est commun à tous les sacs."
+	L["Click to select which sections should be shown or hidden. Section visibility is common to all bags."] = "Cliquez pour sélectionner les sections à afficher ou à cacher. Ceci est commun à tous les sacs."
 	L["Click to toggle the bag anchor."] = "Cliquez pour afficher/cacher l'ancre des sacs."
-	L["Click to toggle the equipped bag panel, so you can change them."] =
-		"Cliquez pour afficher/cacher le panneau des sacs équipés. Vous pourrez ainsi les manipuler."
+	L["Click to toggle the equipped bag panel, so you can change them."] = "Cliquez pour afficher/cacher le panneau des sacs équipés. Vous pourrez ainsi les manipuler."
 	L["Close"] = "Fermer"
 	L["Color"] = "Couleur" -- Needs review
 	L["Color scheme"] = "Thème de couleurs" -- Needs review
@@ -453,14 +428,10 @@ if locale == "frFR" then
 	L["Currencies to show"] = "Monnaies à afficher"
 	L["Currency"] = "Insignes"
 	L["Dim junk"] = "Assombrir la camelote"
-	L["Display character currency at bottom left of the backpack."] =
-		"Affiche les insignes du personnage en bas à gauche du sac à dos."
-	L["Display character money at bottom right of the backpack."] =
-		"Affiche l'or du personnage en bas à droite du sac à dos."
-	L["Display the level of equippable item in the top left corner of the button."] =
-		"Afficher le niveau objets des équipements dans le coin supérieur gauche du bouton." -- Needs review
-	L["Do not show level of items that cannot be equipped."] =
-		"N'affiche pas le niveau des objets qu'on ne peut pas équipper." -- Needs review
+	L["Display character currency at bottom left of the backpack."] = "Affiche les insignes du personnage en bas à gauche du sac à dos."
+	L["Display character money at bottom right of the backpack."] = "Affiche l'or du personnage en bas à droite du sac à dos."
+	L["Display the level of equippable item in the top left corner of the button."] = "Afficher le niveau objets des équipements dans le coin supérieur gauche du bouton." -- Needs review
+	L["Do not show level of items that cannot be equipped."] = "N'affiche pas le niveau des objets qu'on ne peut pas équipper." -- Needs review
 	L["Do not show level of poor quality items."] = "N'affiche pas le niveau des objets de mauvaise qualité." -- Needs review
 	L["Do not show levels under this threshold."] = "N'affiche de niveaux inférieurs à ce seuil." -- Needs review
 	L["Drag to move this bag."] = "Tirer pour déplacer ce sac."
@@ -479,9 +450,7 @@ if locale == "frFR" then
 	L["Filter"] = "Filtre"
 	L["Filtering information"] = "Information de filtrage"
 	L["Filters"] = "Filtres"
-	L[
-			"Filters are used to dispatch items in bag sections. One item can only appear in one section. If the same item is selected by several filters, the one with the highest priority wins."
-		] =
+	L["Filters are used to dispatch items in bag sections. One item can only appear in one section. If the same item is selected by several filters, the one with the highest priority wins."] =
 		"Les filtres sont utilisés pour répartir les objets en section de sac. Un objet ne peut apparaître que dans une seule section. Si un objet correspond à plusieurs filtres, celui avec la meilleur priorité l'emporte."
 	L["Font"] = "Police"
 	L["Four general sections."] = "Quatre sections générales."
@@ -504,8 +473,7 @@ if locale == "frFR" then
 	L["Item information"] = "Informations sur l'objet"
 	L["Item level"] = "Niveau d'objet" -- Needs review
 	L["Items"] = "Objets"
-	L["Items in this list are always considered as junk. Click an item to remove it from the list."] =
-		"Les objets de cette liste sont considérés comme de la camelote. Cliquez sur un objet pour le retirer de la liste."
+	L["Items in this list are always considered as junk. Click an item to remove it from the list."] = "Les objets de cette liste sont considérés comme de la camelote. Cliquez sur un objet pour le retirer de la liste."
 	L["Items in this list are never considered as junk. Click an item to remove it from the list."] =
 		"Les objets de cette liste ne sont jamais considérés comme de la camelote. Cliquez sur un objet pour le retirer de la liste."
 	L["Jewelry"] = "Joaillerie"
@@ -528,8 +496,7 @@ if locale == "frFR" then
 	L["MINING_BAG_TAG"] = "Mi"
 	L["Mininum level"] = "Niveau minimum" -- Needs review
 	L["Money"] = "Monnaie"
-	L["Move items from and to the bank by right-clicking on section headers."] =
-		"Déplacer des objets de ou vers la banque en cliquant-droit sur les en-tête de section."
+	L["Move items from and to the bank by right-clicking on section headers."] = "Déplacer des objets de ou vers la banque en cliquant-droit sur les en-tête de section."
 	L["Never"] = "Jamais"
 	L["New"] = "Nouveau"
 	L["New Override"] = "Nouvelle association"
@@ -547,16 +514,11 @@ if locale == "frFR" then
 	L["Position mode"] = "Disposition"
 	L["Press Alt while doing so to open a dropdown menu."] = "Presser Alt en le faisant pour ouvrir un menu déroulant." -- Needs review
 	L["Priority"] = "Priorité"
-	L["Provides a LDB data source to be displayed by LDB display addons."] =
-		"Fournit une source LDB qui peut être affichée dans un addon d'affichage de LDB."
-	L['Put any item that can be equipped (including bags) into the "Equipment" section.'] =
-		'Place les objets qui peuvent être équipés (y compris les sacs) dans la section "Equipement".'
-	L["Put items in sections depending on their first-level category at the Auction House."] =
-		"Répartit les objets en fonction de leur catégorie principale (premier niveau de l'Hôtel des Ventes). "
-	L['Put items of poor quality or labeled as junk in the "Junk" section.'] =
-		'Place les objets de mauvaise qualité ou considéré comme camelote dans la section "Camelote".'
-	L["Put quest-related items in their own section."] =
-		"Place les objets en rapport avec les quêtes dans une section spécifique."
+	L["Provides a LDB data source to be displayed by LDB display addons."] = "Fournit une source LDB qui peut être affichée dans un addon d'affichage de LDB."
+	L['Put any item that can be equipped (including bags) into the "Equipment" section.'] = 'Place les objets qui peuvent être équipés (y compris les sacs) dans la section "Equipement".'
+	L["Put items in sections depending on their first-level category at the Auction House."] = "Répartit les objets en fonction de leur catégorie principale (premier niveau de l'Hôtel des Ventes). "
+	L['Put items of poor quality or labeled as junk in the "Junk" section.'] = 'Place les objets de mauvaise qualité ou considéré comme camelote dans la section "Camelote".'
+	L["Put quest-related items in their own section."] = "Place les objets en rapport avec les quêtes dans une section spécifique."
 	L["Quality highlight"] = "Surlignage de la qualité"
 	L["Quest indicator"] = "Indicateur de quête"
 	L["Quest Items"] = "Objets de quête"
@@ -580,18 +542,13 @@ if locale == "frFR" then
 	L["Section setup"] = "Configuration de section"
 	L["Section visibility"] = "Visibilité des sections"
 	L["Section visibility button"] = "Bouton de visibilité des sections."
-	L["Select how bag usage should be formatted in the plugin."] =
-		"Choisissez comment l'occupation d'un sac doit être formaté."
-	L["Select how items should be sorted within each section."] =
-		"Choisissez comment les objets doivent être triés à l'intérieur de chaque section."
+	L["Select how bag usage should be formatted in the plugin."] = "Choisissez comment l'occupation d'un sac doit être formaté."
+	L["Select how items should be sorted within each section."] = "Choisissez comment les objets doivent être triés à l'intérieur de chaque section."
 	L["Select how the bags are positionned."] = "Choisissez comment les sacs sont positionnés." -- Needs review
-	L["Select the category of the section to associate. This is used to group sections together."] =
-		"Sélectionnez la catégorie de la section à associer. Ceci est utilisé pour regrouper les sections."
-	L["Select the sections in which the items should be dispatched."] =
-		"Sélectionnez les sections parmi lesquelles l'objet devra être affiché"
+	L["Select the category of the section to associate. This is used to group sections together."] = "Sélectionnez la catégorie de la section à associer. Ceci est utilisé pour regrouper les sections."
+	L["Select the sections in which the items should be dispatched."] = "Sélectionnez les sections parmi lesquelles l'objet devra être affiché"
 	L["Select which bags AdiBags should display."] = "Choisissez quels sacs AdiBags doit afficher." -- Needs review
-	L["Select which first-level categories should be split by sub-categories."] =
-		"Sélectionnez quelles catégories doivent être séparées en sous-catégories."
+	L["Select which first-level categories should be split by sub-categories."] = "Sélectionnez quelles catégories doivent être séparées en sous-catégories."
 	L["Separate incomplete stacks."] = "Séparer les piles incomplètes."
 	L["Separate unstackable items."] = "Séparer les objets non-empilables."
 	L["Show bag type icons"] = "Affiche les icônes de type de sacs"
@@ -602,10 +559,8 @@ if locale == "frFR" then
 	L["Show filtering information..."] = "Afficher les informations de filtrage..."
 	L["Show item information..."] = "Afficher les informations sur l'objet..."
 	L["Show only one free slot for each kind of bags."] = "N'affiche qu'un seul emplacement vide pour chaque type de sac."
-	L["Show only one slot of items that can be stacked."] =
-		"N'affiche qu'un seul emplacement pour les objets pouvant être empilés."
-	L["Show only one slot of items that cannot be stacked."] =
-		"N'affiche qu'un seul emplacement pour les objets ne pouvant normalement pas être empilés."
+	L["Show only one slot of items that can be stacked."] = "N'affiche qu'un seul emplacement pour les objets pouvant être empilés."
+	L["Show only one slot of items that cannot be stacked."] = "N'affiche qu'un seul emplacement pour les objets ne pouvant normalement pas être empilés."
 	L["Show %s"] = "Afficher %s"
 	L["Size"] = "Taille"
 	L["Skin"] = "Apparence"
@@ -624,41 +579,31 @@ if locale == "frFR" then
 	L["Toggle and configure plugins."] = "Activer et configurer les plugins."
 	L["Tooltip information"] = "Informations dans les bulles d'aides"
 	L["Track new items"] = "Détection des nouveaux objets"
-	L[
-			'Track new items in each bag, displaying a glowing aura over them and putting them in a special section. "New" status can be reset by clicking on the small "N" button at top left of bags.'
-		] =
+	L['Track new items in each bag, displaying a glowing aura over them and putting them in a special section. "New" status can be reset by clicking on the small "N" button at top left of bags.'] =
 		'Détecte les nouveaux objets dans chaque sac, affiche une lueur colorée auteur d\'eux et les place dans une section spéciale. Les nouveaux objets peuvent être remis à zéro en cliquant sur le bouton "N" en haut à droite des sacs.'
 	L["Uncheck this to disable AdiBags."] = "Décochez ceci pour désactiver AdiBags."
 	L["Unlock anchor"] = "Déverrouiller l'ancre"
-	L["Use this section to define any item-section association."] =
-		"Utilisez cette section pour définir de nouvelles associations objet-section."
+	L["Use this section to define any item-section association."] = "Utilisez cette section pour définir de nouvelles associations objet-section."
 	L["Use this to adjust the bag scale."] = "Ajustez la taille des sacs."
-	L["Use this to adjust the quality-based border opacity. 100% means fully opaque."] =
-		"Ajustez l'opacité de la bordure de qualité. 100% signifie complétement opaque."
+	L["Use this to adjust the quality-based border opacity. 100% means fully opaque."] = "Ajustez l'opacité de la bordure de qualité. 100% signifie complétement opaque."
 	L["Virtual stacks"] = "Piles virtuelles"
-	L["Virtual stacks display in one place items that actually spread over several bag slots."] =
-		"Les piles virtuelles affichent en un seul endroit plusieurs piles d'objets."
+	L["Virtual stacks display in one place items that actually spread over several bag slots."] = "Les piles virtuelles affichent en un seul endroit plusieurs piles d'objets."
 	L["Virtual stack slots"] = "Emplacements de pile virtuelle"
 	L["When alt is held down"] = "Quand ALT est enfoncé"
 	L["When any modifier key is held down"] = "Quand n'importe quelle touche de modification est enfoncée"
-	L["When checked, right-clicking on an empty space of a bag opens the configuration panel."] =
-		"Quand coché, un clic droit sur un espace vide d'un sac ouvre le panneau de configuration." -- Needs review
+	L["When checked, right-clicking on an empty space of a bag opens the configuration panel."] = "Quand coché, un clic droit sur un espace vide d'un sac ouvre le panneau de configuration." -- Needs review
 	L["When ctrl is held down"] = "Quand CONTROL est enfoncé"
 	L["When shift is held down"] = "Quand MAJ est enfoncé"
-	L["Which color scheme should be used to display the item level ?"] =
-		"Quel thème de couleur doit être utilisé pour afficher le niiveau d'objet ?" -- Needs review
+	L["Which color scheme should be used to display the item level ?"] = "Quel thème de couleur doit être utilisé pour afficher le niiveau d'objet ?" -- Needs review
 elseif locale == "deDE" then
 	------------------------ esMX ------------------------
 	-- no translation
 	------------------------ ruRU ------------------------
-	L["Add a dropdown menu to bags that allow to hide the sections."] =
-		"Fügt den Taschen ein Dropdown-Menü hinzu, welches es erlaubt die Abteilung zu verstecken."
+	L["Add a dropdown menu to bags that allow to hide the sections."] = "Fügt den Taschen ein Dropdown-Menü hinzu, welches es erlaubt die Abteilung zu verstecken."
 	L["Add association"] = "Füge Zuweisung hinzu"
-	L["Add more information in tooltips related to items in your bags."] =
-		"Füge mehr Informationen bezüglich der Items in deinen Taschen zum Tooltip hinzu"
+	L["Add more information in tooltips related to items in your bags."] = "Füge mehr Informationen bezüglich der Items in deinen Taschen zum Tooltip hinzu"
 	L["AdiBags Anchor"] = "AdiBags Anker"
-	L["Adjust the maximum height of the bags, relative to screen size."] =
-		"Passt die maximale Höhe der Taschen in Relation zur Monitorauflösung an."
+	L["Adjust the maximum height of the bags, relative to screen size."] = "Passt die maximale Höhe der Taschen in Relation zur Monitorauflösung an."
 	L["AH category"] = "AH Kategorie"
 	L["AH subcategory"] = "AH Unterkategorie"
 	L["Allow you manually redefine the section in which an item should be put. Simply drag an item on the section title."] =
@@ -675,67 +620,49 @@ elseif locale == "deDE" then
 	L["Bag type"] = "Taschenart"
 	L["Bag usage format"] = "Format der Taschennutzung"
 	L["Bank"] = "Bank"
-	L["By category, subcategory, quality and item level (default)"] =
-		"Nach Kategorie, Unterkategorie, Qualität und iLvl. (Standard)"
+	L["By category, subcategory, quality and item level (default)"] = "Nach Kategorie, Unterkategorie, Qualität und iLvl. (Standard)"
 	L["By name"] = "Nach Name"
 	L["By quality and item level"] = "Nach Qualität und Gegenstandsstufe"
 	L["Category"] = "Kategorie"
-	L["Check this so armors are dispatched in four sections by type."] =
-		"Markieren damit die Rüstungen in vier Typen eingeteilt wird."
-	L["Check this to display a bag type tag in the top left corner of items."] =
-		"Aktivieren um die Taschenart in der oberen linken Ecke eines Gegenstandes anzuzeigen"
-	L["Check this to display a colored border around items, based on item quality."] =
-		"Aktivieren um den Rahmen um den Gegenstand in der Farbe seiner Qualität anzuzeigen."
-	L["Check this to display an icon after usage of each type of bags."] =
-		"Aktivieren um ein icon nach der Benutzung jeglicher Art von Taschen anzuzeigen"
-	L["Check this to display an indicator on quest items."] =
-		"Aktivieren um Questgegenstände mit einem farblichen Rahmen hervorzuheben."
-	L["Check this to display an textual tag before usage of each type of bags."] =
-		"Aktivieren um einen Bezeichnung vor der Benutzung eines jeden Taschentyps anzeigen zu lassen"
-	L["Check this to display only one value counting all equipped bags, ignoring their type."] =
-		"Aktivieren um nur einen Wert anzuzeigen der alle belegten Taschenplätze zählt. Die Art der Tasche wird ignoriert."
-	L["Check this to have poor quality items dimmed."] =
-		"Aktivieren um Gegenstände mit geringer Qualität dunkler darzustellen"
-	L["Check this to show space at your bank in the plugin."] =
-		"Aktivieren um den freien Platz der Bank im Plugin anzuzeigen."
-	L["Check this to show this section. Uncheck to hide it."] =
-		"Auswählen, um diese Untergliederung anzuzeigen - abwählen, um sie zu verbergen"
+	L["Check this so armors are dispatched in four sections by type."] = "Markieren damit die Rüstungen in vier Typen eingeteilt wird."
+	L["Check this to display a bag type tag in the top left corner of items."] = "Aktivieren um die Taschenart in der oberen linken Ecke eines Gegenstandes anzuzeigen"
+	L["Check this to display a colored border around items, based on item quality."] = "Aktivieren um den Rahmen um den Gegenstand in der Farbe seiner Qualität anzuzeigen."
+	L["Check this to display an icon after usage of each type of bags."] = "Aktivieren um ein icon nach der Benutzung jeglicher Art von Taschen anzuzeigen"
+	L["Check this to display an indicator on quest items."] = "Aktivieren um Questgegenstände mit einem farblichen Rahmen hervorzuheben."
+	L["Check this to display an textual tag before usage of each type of bags."] = "Aktivieren um einen Bezeichnung vor der Benutzung eines jeden Taschentyps anzeigen zu lassen"
+	L["Check this to display only one value counting all equipped bags, ignoring their type."] = "Aktivieren um nur einen Wert anzuzeigen der alle belegten Taschenplätze zählt. Die Art der Tasche wird ignoriert."
+	L["Check this to have poor quality items dimmed."] = "Aktivieren um Gegenstände mit geringer Qualität dunkler darzustellen"
+	L["Check this to show space at your bank in the plugin."] = "Aktivieren um den freien Platz der Bank im Plugin anzuzeigen."
+	L["Check this to show this section. Uncheck to hide it."] = "Auswählen, um diese Untergliederung anzuzeigen - abwählen, um sie zu verbergen"
 	L["Check to enable this module."] = "Aktivieren um dieses Modul zu nutzen."
-	L["Click on this button to create the new association."] =
-		"Klicke auf diesen Knopf um eine neue Zuweisung zu erstellen"
+	L["Click on this button to create the new association."] = "Klicke auf diesen Knopf um eine neue Zuweisung zu erstellen"
 	L["Click there to reset the bag positions and sizes."] = "Hier klicken zum Zurücksetzen der Taschenposition und Größe."
 	L["Click to purchase"] = "Anklicken zum kaufen"
 	L["Click to reset item status."] = "Klicken um den Gegenstandsstatus zurückzusetzen."
 	L["Click to select which sections should be shown or hidden. Section visibility is common to all bags."] =
 		"Anklicken, um zu festzulegen welche Untergliederungen gezeigt werden sollen und welche nicht. Die Sichtbarkeit der Untergliederungen gilt für alle Taschen."
 	L["Click to toggle the bag anchor."] = "Klicken um den Taschenanker anzuzeigen"
-	L["Click to toggle the equipped bag panel, so you can change them."] =
-		"Klicken um die Taschenleiste anzuzeigen. Die Taschen können somit getauscht/belegt werden."
+	L["Click to toggle the equipped bag panel, so you can change them."] = "Klicken um die Taschenleiste anzuzeigen. Die Taschen können somit getauscht/belegt werden."
 	L["Close"] = "Schließen"
 	L["Configure"] = "Konfigurieren"
 	L["Container information"] = "Behälterinformation"
 	L["Currency"] = "Embleme"
 	L["Dim junk"] = "Graue Gegenstände verblassen."
-	L["Display character currency at bottom left of the backpack."] =
-		"Zeigt die Embleme des Charakters rechts unten beim Rucksack an"
-	L["Display character money at bottom right of the backpack."] =
-		"Zeigt das Gold des Charakters rechts unten beim Rucksack an"
+	L["Display character currency at bottom left of the backpack."] = "Zeigt die Embleme des Charakters rechts unten beim Rucksack an"
+	L["Display character money at bottom right of the backpack."] = "Zeigt das Gold des Charakters rechts unten beim Rucksack an"
 	L["Drop your item there to add it to this section."] = "Gegenstand hier ablegen, um es diesem Bereich zuzufügen"
 	L["Enabled"] = "aktiviert"
 	L["ENCHANTING_BAG_TAG"] = "Vz"
 	L["ENGINEERING_BAG_TAG"] = "Ing"
 	L["Enter the name, link or itemid of the item to associate with the section. You can also drop an item into this box."] =
 		"Gib den Namen, den Link oder die ItemId des Gegenstandes ein, der dem Bereich zugewiesen werden soll. Du kannst auch einen Gegenstand in dieses Feld ziehen."
-	L["Enter the name of the section to associate with the item."] =
-		"Gib den Namen des Bereiches ein, der dem Gegenstand zugewiesen werden soll"
+	L["Enter the name of the section to associate with the item."] = "Gib den Namen des Bereiches ein, der dem Gegenstand zugewiesen werden soll"
 	L["Equipment"] = "Ausrüstung"
 	L["Equipped bags"] = "Angelegte Taschen"
 	L["Filter"] = "Filter"
 	L["Filtering information"] = "Filterinformationen"
 	L["Filters"] = "Filter"
-	L[
-			"Filters are used to dispatch items in bag sections. One item can only appear in one section. If the same item is selected by several filters, the one with the highest priority wins."
-		] =
+	L["Filters are used to dispatch items in bag sections. One item can only appear in one section. If the same item is selected by several filters, the one with the highest priority wins."] =
 		"Filter werden benutzt um Gegenstände in Taschenabteilungen zu befördern. Ein Gegenstand kann immer nur in einer Abteilung auftauchen. Wenn für den Gegenstand mehrere Filter zutreffen dann wird der Filter mit der höchsten Priorität genommen."
 	L["Four general sections."] = "Vier Hauptbereiche"
 	L["Free space"] = "freier Platz"
@@ -776,14 +703,10 @@ elseif locale == "deDE" then
 	L["Plugins"] = "Plugins"
 	L["Position mode"] = "Positions Modus"
 	L["Priority"] = "Priorität"
-	L["Provides a LDB data source to be displayed by LDB display addons."] =
-		"Sieht vor, dass eine LDB Datenquelle von DataBroker Addons angezeigt wird"
-	L['Put any item that can be equipped (including bags) into the "Equipment" section.'] =
-		'Zeigt jeden verwendbaren Gegenstand (inklusive Taschen) im "Equipment" Bereich.'
-	L["Put items in sections depending on their first-level category at the Auction House."] =
-		"Zeigt Gegenstände basierend auf der ersten Kategorie des Auktoinshauses in den Bereichen an"
-	L['Put items of poor quality or labeled as junk in the "Junk" section.'] =
-		'Zeigt Gegenstände geringer Qualität oder als Müll gekennzeichnete Gegenstände im "Junk" Bereich an.'
+	L["Provides a LDB data source to be displayed by LDB display addons."] = "Sieht vor, dass eine LDB Datenquelle von DataBroker Addons angezeigt wird"
+	L['Put any item that can be equipped (including bags) into the "Equipment" section.'] = 'Zeigt jeden verwendbaren Gegenstand (inklusive Taschen) im "Equipment" Bereich.'
+	L["Put items in sections depending on their first-level category at the Auction House."] = "Zeigt Gegenstände basierend auf der ersten Kategorie des Auktoinshauses in den Bereichen an"
+	L['Put items of poor quality or labeled as junk in the "Junk" section.'] = 'Zeigt Gegenstände geringer Qualität oder als Müll gekennzeichnete Gegenstände im "Junk" Bereich an.'
 	L["Put quest-related items in their own section."] = "Zeigt questbezogene Gegenstände in einem eigenen Bereich an"
 	L["Quality highlight"] = "Qualität hervorheben"
 	L["Quest indicator"] = "Quest Kennzeichen"
@@ -798,16 +721,11 @@ elseif locale == "deDE" then
 	L["Section category"] = "Bereichskategorie"
 	L["Section setup"] = "Bereichssetup"
 	L["Section visibility"] = "Sichtbarkeit der Untergliederung"
-	L["Select how bag usage should be formatted in the plugin."] =
-		"Wähle aus, wie die Taschennutzung im Plugin formatiert werden soll"
-	L["Select how items should be sorted within each section."] =
-		"Wähle aus, wie die Gegenstände in jedem Bereich einsortiert werden sollen"
-	L["Select the category of the section to associate. This is used to group sections together."] =
-		"Wähle die Kategorie aus, die dem Bereich zugewiesen werden soll. Damit werden Bereiche zusammen angeordnet "
-	L["Select the sections in which the items should be dispatched."] =
-		"Wähle den Bereich aus, in welchem die Gegenstände abgelegt werden sollen"
-	L["Select which first-level categories should be split by sub-categories."] =
-		"Wähle aus, welche Oberkategorien von Unterkategorien aufgeteilt werden sollen"
+	L["Select how bag usage should be formatted in the plugin."] = "Wähle aus, wie die Taschennutzung im Plugin formatiert werden soll"
+	L["Select how items should be sorted within each section."] = "Wähle aus, wie die Gegenstände in jedem Bereich einsortiert werden sollen"
+	L["Select the category of the section to associate. This is used to group sections together."] = "Wähle die Kategorie aus, die dem Bereich zugewiesen werden soll. Damit werden Bereiche zusammen angeordnet "
+	L["Select the sections in which the items should be dispatched."] = "Wähle den Bereich aus, in welchem die Gegenstände abgelegt werden sollen"
+	L["Select which first-level categories should be split by sub-categories."] = "Wähle aus, welche Oberkategorien von Unterkategorien aufgeteilt werden sollen"
 	L["Show bag type icons"] = "Zeige die Art der Taschen als Icon an"
 	L["Show bag type tags"] = "Zeige die Art der Taschen als Text an"
 	L["Show bank usage"] = "Zeige die Bank Nutzung an"
@@ -826,34 +744,26 @@ elseif locale == "deDE" then
 	L["Toggle and configure plugins."] = "Plugins aktivieren und konfigurieren"
 	L["Tooltip information"] = "Tooltipinformation"
 	L["Track new items"] = "Neue Gegenstände beobachten"
-	L[
-			'Track new items in each bag, displaying a glowing aura over them and putting them in a special section. "New" status can be reset by clicking on the small "N" button at top left of bags.'
-		] =
+	L['Track new items in each bag, displaying a glowing aura over them and putting them in a special section. "New" status can be reset by clicking on the small "N" button at top left of bags.'] =
 		'Beobachtete Gegenstände in jeder Tasche mit einer glühenden Aura versehen und in eine spezielle Abteilung verschieben. Der "New" Status kann durch klicken auf den kleinen "N" Knopf oben links bei den Tachen zurückgesetzt werden.'
 	L["Uncheck this to disable AdiBags."] = "Abwählen, um Adibags zu deaktivieren."
 	L["Unlock anchor"] = "Anker aufschliessen"
-	L["Use this section to define any item-section association."] =
-		"Benutze diesen Bereich, um eine beliebige Gegenstand-Sektionen-Zuweisung zu definieren"
+	L["Use this section to define any item-section association."] = "Benutze diesen Bereich, um eine beliebige Gegenstand-Sektionen-Zuweisung zu definieren"
 	L["Use this to adjust the bag scale."] = "Skalierung der Taschen anpassen"
-	L["Use this to adjust the quality-based border opacity. 100% means fully opaque."] =
-		"Deckkraft der Umrandung für die Qualität der Gegenstände anpassen. 100% bedeutet volle Deckkraft"
+	L["Use this to adjust the quality-based border opacity. 100% means fully opaque."] = "Deckkraft der Umrandung für die Qualität der Gegenstände anpassen. 100% bedeutet volle Deckkraft"
 	L["Virtual stacks"] = "virtuelle Stapel"
-	L["Virtual stacks display in one place items that actually spread over several bag slots."] =
-		"Virtuelle Stapelanzeige von Gegenstäden, die in verschiedenen Taschen verteilt sind, an einer Stelle"
+	L["Virtual stacks display in one place items that actually spread over several bag slots."] = "Virtuelle Stapelanzeige von Gegenstäden, die in verschiedenen Taschen verteilt sind, an einer Stelle"
 	L["When alt is held down"] = "Wenn Alt gedrückt ist"
 	L["When any modifier key is held down"] = "Wenn irgendeine Modifizierungstase gedrückt ist"
 	L["When ctrl is held down"] = "Wenn Strg gedrückt ist"
 	L["When shift is held down"] = "Wenn Umschalt gedrückt ist"
 elseif locale == "ruRU" then
 	------------------------ esES ------------------------
-	L["Add a dropdown menu to bags that allow to hide the sections."] =
-		"Добавить выпадающее меню для сумок, в котором можно настроить отображение секций."
+	L["Add a dropdown menu to bags that allow to hide the sections."] = "Добавить выпадающее меню для сумок, в котором можно настроить отображение секций."
 	L["Add association"] = "Добавить объединение"
-	L["Add more information in tooltips related to items in your bags."] =
-		"Добавить Дополнительную информацию во всплывающих подсказках, касающихся предметов, в вашей сумке"
+	L["Add more information in tooltips related to items in your bags."] = "Добавить Дополнительную информацию во всплывающих подсказках, касающихся предметов, в вашей сумке"
 	L["AdiBags Anchor"] = "AdiBags Якорь"
-	L["Adjust the maximum height of the bags, relative to screen size."] =
-		"Регулировка максимальной высоты сумок, относительно размеру экрана."
+	L["Adjust the maximum height of the bags, relative to screen size."] = "Регулировка максимальной высоты сумок, относительно размеру экрана."
 	L["AH category"] = "Категория аукциона"
 	L["AH subcategory"] = "Подкатегория аукциона"
 	L["Allow you manually redefine the section in which an item should be put. Simply drag an item on the section title."] =
@@ -870,31 +780,20 @@ elseif locale == "ruRU" then
 	L["Bag usage format"] = "Формат использования сумки"
 	L["Bank"] = "Банк"
 	L["Bank bag #%d"] = "Сумка банка #%d"
-	L["By category, subcategory, quality and item level (default)"] =
-		"По категории, под-категории, качеству и уровню предмета (по умолчанию)"
+	L["By category, subcategory, quality and item level (default)"] = "По категории, под-категории, качеству и уровню предмета (по умолчанию)"
 	L["By name"] = "По имени"
 	L["By quality and item level"] = "По качеству и уровню"
 	L["Category"] = "Категория"
-	L["Check this so armors are dispatched in four sections by type."] =
-		"Отметьте это, и броня будет разделяться на четыре секции в зависимости от ее типа."
-	L["Check this to display a bag type tag in the top left corner of items."] =
-		"Поставте галочку, чтобы отображать тег сумки в левом верхнем углу иконки предмета."
-	L["Check this to display a colored border around items, based on item quality."] =
-		"Отметьте это, чтобы подкрашивать края предметов исходя из их качества."
-	L["Check this to display an icon after usage of each type of bags."] =
-		"Поставьте тут галочку для отображения иконки каждого типа сумок." -- Needs review
-	L["Check this to display an indicator on quest items."] =
-		"Поставьте тут галочку чтобы отображать индикатор на предметах, необходимых для задания."
-	L["Check this to display an textual tag before usage of each type of bags."] =
-		"Отметьте это, если хотите что бы отображалась текстовая пометка перед использованием каждого из типов сумок."
-	L["Check this to display only one value counting all equipped bags, ignoring their type."] =
-		"Отметьте это, если хотите что бы отображалась только количество пустых слотов во всех сумках, несмотря на тип сумок."
-	L["Check this to have poor quality items dimmed."] =
-		"Поставьте галочку, для отабражения низкова уровня вешей затемнёным цветом."
-	L["Check this to show space at your bank in the plugin."] =
-		"Отметьте это, если хотите чтобы отображались промежутки в окне банка вашего плагина." -- Needs review
-	L["Check this to show this section. Uncheck to hide it."] =
-		"Отметьте это что бы показывать эту секцию, или снимите отметку что бы ее скрыть."
+	L["Check this so armors are dispatched in four sections by type."] = "Отметьте это, и броня будет разделяться на четыре секции в зависимости от ее типа."
+	L["Check this to display a bag type tag in the top left corner of items."] = "Поставте галочку, чтобы отображать тег сумки в левом верхнем углу иконки предмета."
+	L["Check this to display a colored border around items, based on item quality."] = "Отметьте это, чтобы подкрашивать края предметов исходя из их качества."
+	L["Check this to display an icon after usage of each type of bags."] = "Поставьте тут галочку для отображения иконки каждого типа сумок." -- Needs review
+	L["Check this to display an indicator on quest items."] = "Поставьте тут галочку чтобы отображать индикатор на предметах, необходимых для задания."
+	L["Check this to display an textual tag before usage of each type of bags."] = "Отметьте это, если хотите что бы отображалась текстовая пометка перед использованием каждого из типов сумок."
+	L["Check this to display only one value counting all equipped bags, ignoring their type."] = "Отметьте это, если хотите что бы отображалась только количество пустых слотов во всех сумках, несмотря на тип сумок."
+	L["Check this to have poor quality items dimmed."] = "Поставьте галочку, для отабражения низкова уровня вешей затемнёным цветом."
+	L["Check this to show space at your bank in the plugin."] = "Отметьте это, если хотите чтобы отображались промежутки в окне банка вашего плагина." -- Needs review
+	L["Check this to show this section. Uncheck to hide it."] = "Отметьте это что бы показывать эту секцию, или снимите отметку что бы ее скрыть."
 	L["Check to enable this module."] = "Поставьте галочку для включения данного модуля."
 	L["Click on this button to create the new association."] = "Кликните на кнопку, что бы создать новую ассоциацию."
 	L["Click there to reset the bag positions and sizes."] = "Кликните тут чтобы сбросить расположение сумок и их размер."
@@ -903,33 +802,27 @@ elseif locale == "ruRU" then
 	L["Click to select which sections should be shown or hidden. Section visibility is common to all bags."] =
 		"Кликните что бы выбрать какие секции должны показываться, а какие скрываться. Настройки видимости секций общие для свех сумок."
 	L["Click to toggle the bag anchor."] = "Кликните чтобы переключить якорь сумки."
-	L["Click to toggle the equipped bag panel, so you can change them."] =
-		"Кликните для переключения панели надетых сумок, так что вы можете их изменить."
+	L["Click to toggle the equipped bag panel, so you can change them."] = "Кликните для переключения панели надетых сумок, так что вы можете их изменить."
 	L["Close"] = "Закрыть"
 	L["Configure"] = "Настройка"
 	L["Container information"] = "Информация о контейнере"
 	L["Currency"] = "Золото"
 	L["Dim junk"] = "Затемнять хлам"
-	L["Display character currency at bottom left of the backpack."] =
-		"Показывать количество золота у персонажа в нижней левой стороне окна сумок."
-	L["Display character money at bottom right of the backpack."] =
-		"Отображать деньги персонажа в нижнем правом углу рюкзака."
+	L["Display character currency at bottom left of the backpack."] = "Показывать количество золота у персонажа в нижней левой стороне окна сумок."
+	L["Display character money at bottom right of the backpack."] = "Отображать деньги персонажа в нижнем правом углу рюкзака."
 	L["Drop your item there to add it to this section."] = "Чтобы добавить предмет в этот раздел, переместите его туда. "
 	L["Enabled"] = "Включен"
 	L["ENCHANTING_BAG_TAG"] = "Чры"
 	L["ENGINEERING_BAG_TAG"] = "Эн"
 	L["Enter the name, link or itemid of the item to associate with the section. You can also drop an item into this box."] =
 		"Введите название, ссылку или ID предмета, что бы связать ее с секцией. Так же вы можете просто перетащить предмет в окошко."
-	L["Enter the name of the section to associate with the item."] =
-		"Введите название секции, с которой вы хотите связать вещь."
+	L["Enter the name of the section to associate with the item."] = "Введите название секции, с которой вы хотите связать вещь."
 	L["Equipment"] = "Экипировка"
 	L["Equipped bags"] = "Сумки персонажа"
 	L["Filter"] = "Фильтр"
 	L["Filtering information"] = "Фильтрование информации"
 	L["Filters"] = "Фильтры"
-	L[
-			"Filters are used to dispatch items in bag sections. One item can only appear in one section. If the same item is selected by several filters, the one with the highest priority wins."
-		] =
+	L["Filters are used to dispatch items in bag sections. One item can only appear in one section. If the same item is selected by several filters, the one with the highest priority wins."] =
 		"Фильтры используются для группировки ваших вещей. Одна вещь может находиться только в одной из секций. Если одна вещь входит в несколько фильтров, используется тот фильтр, чей приоритет выше."
 	L["Four general sections."] = "Четыре общих секции."
 	L["Free space"] = "Свободно"
@@ -970,14 +863,10 @@ elseif locale == "ruRU" then
 	L["Plugins"] = "Плагины"
 	L["Position mode"] = "Режим позиционирования"
 	L["Priority"] = "Приоритет"
-	L["Provides a LDB data source to be displayed by LDB display addons."] =
-		"Позволяет отображать источник LDB данных другими аддонами для отображения LDB." -- Needs review
-	L['Put any item that can be equipped (including bags) into the "Equipment" section.'] =
-		'Поместить все предметы которые могут быть одеты на персонажа (включая сумки) в секцию "Экипировка"'
-	L["Put items in sections depending on their first-level category at the Auction House."] =
-		"Раскладывать вещи в сумках, используя общие категории аукциона."
-	L['Put items of poor quality or labeled as junk in the "Junk" section.'] =
-		'Поместить предметы низкого качества или помеченных как хлам с секцию "Хлам".'
+	L["Provides a LDB data source to be displayed by LDB display addons."] = "Позволяет отображать источник LDB данных другими аддонами для отображения LDB." -- Needs review
+	L['Put any item that can be equipped (including bags) into the "Equipment" section.'] = 'Поместить все предметы которые могут быть одеты на персонажа (включая сумки) в секцию "Экипировка"'
+	L["Put items in sections depending on their first-level category at the Auction House."] = "Раскладывать вещи в сумках, используя общие категории аукциона."
+	L['Put items of poor quality or labeled as junk in the "Junk" section.'] = 'Поместить предметы низкого качества или помеченных как хлам с секцию "Хлам".'
 	L["Put quest-related items in their own section."] = "Поместить предметы связанные с заданием в свою секцию."
 	L["Quality highlight"] = "Подсвечивать в зависимости от качества"
 	L["Quest indicator"] = "Индикатор задания"
@@ -992,16 +881,11 @@ elseif locale == "ruRU" then
 	L["Section setup"] = "Настройки секции"
 	L["Section visibility"] = "Видимость секции"
 	L["Section visibility button"] = "Кнопка отображения секций"
-	L["Select how bag usage should be formatted in the plugin."] =
-		"Выберите способ, которым следует упорядочивать использование сумок плагином." -- Needs review
-	L["Select how items should be sorted within each section."] =
-		"Выберите как предметы должны сортироваться в пределах каждой секции."
-	L["Select the category of the section to associate. This is used to group sections together."] =
-		"Выберите категорию секции для того, что бы ее связать. Это необходимо для того, чтобы сгруппировать секции вместе."
-	L["Select the sections in which the items should be dispatched."] =
-		"Укажите секцию, в которой вещи необходимо разделить" -- Needs review
-	L["Select which first-level categories should be split by sub-categories."] =
-		"Укажите, какие общие категории должны быть разделены на субкатегории."
+	L["Select how bag usage should be formatted in the plugin."] = "Выберите способ, которым следует упорядочивать использование сумок плагином." -- Needs review
+	L["Select how items should be sorted within each section."] = "Выберите как предметы должны сортироваться в пределах каждой секции."
+	L["Select the category of the section to associate. This is used to group sections together."] = "Выберите категорию секции для того, что бы ее связать. Это необходимо для того, чтобы сгруппировать секции вместе."
+	L["Select the sections in which the items should be dispatched."] = "Укажите секцию, в которой вещи необходимо разделить" -- Needs review
+	L["Select which first-level categories should be split by sub-categories."] = "Укажите, какие общие категории должны быть разделены на субкатегории."
 	L["Show bag type icons"] = "Показать иконку типа сумки"
 	L["Show bag type tags"] = "Показать тег типа сумки"
 	L["Show bank usage"] = "Показать использование банка"
@@ -1009,10 +893,8 @@ elseif locale == "ruRU" then
 	L["Show filtering information..."] = "Показать данные фильтрации..."
 	L["Show item information..."] = "Показать данные о вещи..."
 	L["Show only one free slot for each kind of bags."] = "Показывать только один свободный слот для каждого типа сумок"
-	L["Show only one slot of items that can be stacked."] =
-		"Показывать только один слот для вещей, которые можно сложить в стопки"
-	L["Show only one slot of items that cannot be stacked."] =
-		"Показывать только один слот вещей, которые не могут быть сложены в стопки"
+	L["Show only one slot of items that can be stacked."] = "Показывать только один слот для вещей, которые можно сложить в стопки"
+	L["Show only one slot of items that cannot be stacked."] = "Показывать только один слот вещей, которые не могут быть сложены в стопки"
 	L["Show %s"] = "Показать %s"
 	L["Slot number"] = "Номер слота"
 	L["Sorting order"] = "Порядок сортировки"
@@ -1025,20 +907,15 @@ elseif locale == "ruRU" then
 	L["Toggle and configure plugins."] = "Переключение и настройка плагина."
 	L["Tooltip information"] = "Информация подсказки"
 	L["Track new items"] = "Следить за новыми предметами"
-	L[
-			'Track new items in each bag, displaying a glowing aura over them and putting them in a special section. "New" status can be reset by clicking on the small "N" button at top left of bags.'
-		] =
+	L['Track new items in each bag, displaying a glowing aura over them and putting them in a special section. "New" status can be reset by clicking on the small "N" button at top left of bags.'] =
 		'Отслеживать новые предметы в каждой сумке, подсвечивать их и помещать в отдельную секцию. Статус "Новое" может быть сброшен кликом по небольшой кнопке "N" находящейся, в верхней левой стороне окна сумок.'
 	L["Uncheck this to disable AdiBags."] = "Снимите галочку штобы выключить AdiBags."
 	L["Unlock anchor"] = "Разблок. якорь"
-	L["Use this section to define any item-section association."] =
-		"Использовать эту секцию, для определения любой связной с ней секцией" -- Needs review
+	L["Use this section to define any item-section association."] = "Использовать эту секцию, для определения любой связной с ней секцией" -- Needs review
 	L["Use this to adjust the bag scale."] = "Регулировка масштаба сумок."
-	L["Use this to adjust the quality-based border opacity. 100% means fully opaque."] =
-		"Используете ето для настройки, на основе качества, границ прозрачности. 100% означает полностью непрозрачный"
+	L["Use this to adjust the quality-based border opacity. 100% means fully opaque."] = "Используете ето для настройки, на основе качества, границ прозрачности. 100% означает полностью непрозрачный"
 	L["Virtual stacks"] = "Виртуальные стопки"
-	L["Virtual stacks display in one place items that actually spread over several bag slots."] =
-		"Виртуальные стопки отображают в одном месте предметы, которые фактически находятся в нескольких местах сумки." -- Needs review
+	L["Virtual stacks display in one place items that actually spread over several bag slots."] = "Виртуальные стопки отображают в одном месте предметы, которые фактически находятся в нескольких местах сумки." -- Needs review
 	L["Virtual stack slots"] = "Виртуальное сложение слотов"
 	L["When alt is held down"] = "Когда кнопка Alt нажата"
 	L["When any modifier key is held down"] = "Когда какая-либо клавиша модификатора нажата"
@@ -1046,8 +923,7 @@ elseif locale == "ruRU" then
 	L["When shift is held down"] = "Когда кнопка Shift нажата"
 elseif locale == "esES" then
 	------------------------ zhTW ------------------------
-	L["Adjust the maximum height of the bags, relative to screen size."] =
-		"Ajustar al maximo la altura de las bolsas, en relación a el tamaño de la pantalla."
+	L["Adjust the maximum height of the bags, relative to screen size."] = "Ajustar al maximo la altura de las bolsas, en relación a el tamaño de la pantalla."
 	L["Allow you manually redefine the section in which an item should be put. Simply drag an item on the section title."] =
 		"Permite redefinir manualmente la sección en la que un objeto debe situarse. Solo arrastra un objeto dentro del título de la sección"
 	L["Always"] = "Siempre"
@@ -1057,48 +933,37 @@ elseif locale == "esES" then
 	L["Bags"] = "Bolsas"
 	L["Bag usage format"] = "Formato mal usado."
 	L["Bank bag #%d"] = "Bolsa de banco #%d"
-	L["By category, subcategory, quality and item level (default)"] =
-		"Por categoria, subcategoria, calidad y nivel del objeto (por defecto)"
+	L["By category, subcategory, quality and item level (default)"] = "Por categoria, subcategoria, calidad y nivel del objeto (por defecto)"
 	L["By name"] = "Por Nombre"
 	L["By quality and item level"] = "Por calidad y nivel del objeto"
 	L["Category"] = "Categoria"
-	L["Check this to display a colored border around items, based on item quality."] =
-		"Señala esto para mostrar un borde coloreado alrededor de los objetos, basado solo en la calidad del objeto."
-	L["Check this to display an icon after usage of each type of bags."] =
-		"Marque esto para mostrar un icono después de las bolsas según su uso."
-	L["Check this to display an indicator on quest items."] =
-		"Marca esto para mostrar un indicador en los objetos de misión"
-	L["Check this to display an textual tag before usage of each type of bags."] =
-		"Marca esto para mostrar una frase de texto antes de las bolsas según su uso."
-	L["Check this to display only one value counting all equipped bags, ignoring their type."] =
-		"Marca esto para mostrar un valor contando todas las bolsas equipadas, ignorando su tipo de uso."
-	L["Check this to show space at your bank in the plugin."] =
-		"Marca esto para mostrar eel espacio en el banco en el Accesorio."
+	L["Check this to display a colored border around items, based on item quality."] = "Señala esto para mostrar un borde coloreado alrededor de los objetos, basado solo en la calidad del objeto."
+	L["Check this to display an icon after usage of each type of bags."] = "Marque esto para mostrar un icono después de las bolsas según su uso."
+	L["Check this to display an indicator on quest items."] = "Marca esto para mostrar un indicador en los objetos de misión"
+	L["Check this to display an textual tag before usage of each type of bags."] = "Marca esto para mostrar una frase de texto antes de las bolsas según su uso."
+	L["Check this to display only one value counting all equipped bags, ignoring their type."] = "Marca esto para mostrar un valor contando todas las bolsas equipadas, ignorando su tipo de uso."
+	L["Check this to show space at your bank in the plugin."] = "Marca esto para mostrar eel espacio en el banco en el Accesorio."
 	L["Check to enable this module."] = "Señala para habilitar este modulo."
 	L["Click on this button to create the new association."] = "Aprieta en este boton para crear una nueva asociación"
 	L["Click there to reset the bag positions and sizes."] = "Apretar aqui para borrar la posicion y tamaño de la bolsa."
 	L["Click to purchase"] = "Aprieta para comprar"
 	L["Click to reset item status."] = "Aprieta para borrar el estado de los objetos."
 	L["Click to toggle the bag anchor."] = "Aprieta para intercambiar el anclaje de la bolsa"
-	L["Click to toggle the equipped bag panel, so you can change them."] =
-		"Aprieta para intercambiar el panel de la bolsa equipada, para poder cambiarlas."
+	L["Click to toggle the equipped bag panel, so you can change them."] = "Aprieta para intercambiar el panel de la bolsa equipada, para poder cambiarlas."
 	L["Close"] = "Cerrar."
 	L["Configure"] = "Configurar"
 	L["Container information"] = "Informacion del contenerdor"
-	L["Display character money at bottom right of the backpack."] =
-		"Muestra el dinero en el personaje abajo a la derecha de la mochila."
+	L["Display character money at bottom right of the backpack."] = "Muestra el dinero en el personaje abajo a la derecha de la mochila."
 	L["Drop your item there to add it to this section."] = "Suelta tu objeto aqui para añadirlo a esta sección."
 	L["Enabled"] = "Habilitado."
-	L["Enter the name of the section to associate with the item."] =
-		"Escribe un nombre de sección para asociar con este objeto."
+	L["Enter the name of the section to associate with the item."] = "Escribe un nombre de sección para asociar con este objeto."
 	L["Equipment"] = "Equipado, Equipo."
 	L["Equipped bags"] = "Bolsas equipadas"
 	L["Filter"] = "filtro"
 	L["Filtering information"] = "Información filtrada"
 	L["Filters"] = "Filtros"
-	L[
-			"Filters are used to dispatch items in bag sections. One item can only appear in one section. If the same item is selected by several filters, the one with the highest priority wins."
-		] = "Los filtros se usan para disponer artículos en las secciones bolsa."
+	L["Filters are used to dispatch items in bag sections. One item can only appear in one section. If the same item is selected by several filters, the one with the highest priority wins."] =
+		"Los filtros se usan para disponer artículos en las secciones bolsa."
 	L["Free space"] = "Espacio vacio"
 	L["Free space / total space"] = "Espacio vacio / espacio total"
 	L["Highlight color"] = "Resaltar color"
@@ -1117,16 +982,11 @@ elseif locale == "esES" then
 		"Por favor fijese que este filtro encuentra cada uno de los objetos, Cualquier filtro con menor prioridad que este no tendra efecto."
 	L["Plugins"] = "Accesorio, complemento."
 	L["Priority"] = "Prioridad"
-	L["Provides a LDB data source to be displayed by LDB display addons."] =
-		"Proporciona una fuente de datos de Carga que se muestran en el panel del ayudante LDB.(loaddatabase)"
-	L['Put any item that can be equipped (including bags) into the "Equipment" section.'] =
-		'Ponga cualquier elemento que puede ser equipado (incluyendo las bolsas) en la sección "equipo" .'
-	L["Put items in sections depending on their first-level category at the Auction House."] =
-		"Coloca los artículos en las secciones en función de su primer nivel de categoría de la casa de subastas."
-	L['Put items of poor quality or labeled as junk in the "Junk" section.'] =
-		'Coloca los artículos de mala calidad o etiquetados como basura en la sección "basura" .'
-	L["Put quest-related items in their own section."] =
-		[=[Poner los objetos relacionados con misiones en su correspondiente seccion.
+	L["Provides a LDB data source to be displayed by LDB display addons."] = "Proporciona una fuente de datos de Carga que se muestran en el panel del ayudante LDB.(loaddatabase)"
+	L['Put any item that can be equipped (including bags) into the "Equipment" section.'] = 'Ponga cualquier elemento que puede ser equipado (incluyendo las bolsas) en la sección "equipo" .'
+	L["Put items in sections depending on their first-level category at the Auction House."] = "Coloca los artículos en las secciones en función de su primer nivel de categoría de la casa de subastas."
+	L['Put items of poor quality or labeled as junk in the "Junk" section.'] = 'Coloca los artículos de mala calidad o etiquetados como basura en la sección "basura" .'
+	L["Put quest-related items in their own section."] = [=[Poner los objetos relacionados con misiones en su correspondiente seccion.
 ( not quest section?)]=]
 	L["Quality highlight"] = "Resaltar calidad"
 	L["Quest indicator"] = "Señalador de misión"
@@ -1136,10 +996,8 @@ elseif locale == "esES" then
 	L["Right-click to try to empty this bag."] = "Boton derecho para intentar vaciar esta bolsa"
 	L["Scale"] = "escala."
 	L["Section visibility button"] = "Seccion de visibilidad del boton"
-	L["Select how bag usage should be formatted in the plugin."] =
-		"Selecciona como el uso de la bolsa sera conformado en el accesorio."
-	L["Select how items should be sorted within each section."] =
-		"Selecciona como se deben ordenar los objetos en cada sección."
+	L["Select how bag usage should be formatted in the plugin."] = "Selecciona como el uso de la bolsa sera conformado en el accesorio."
+	L["Select how items should be sorted within each section."] = "Selecciona como se deben ordenar los objetos en cada sección."
 	L["Select which first-level categories should be split by sub-categories."] =
 		"Selecciona que Categorias de primer nivel (encantameinto de objeto) deben separarse en subcategorias ( Encantamiento de objeto - permanente)"
 	L["Show only one free slot for each kind of bags."] = "Mostrar solo 1 hueco libre para cada tipo de bolsa"
@@ -1149,14 +1007,11 @@ elseif locale == "esES" then
 	L["Toggle and configure item filters."] = "Intercambia y configura los filtros de objetos."
 	L["Toggle and configure plugins."] = "Intercambia y configura los accesorios."
 	L["Track new items"] = "Rastrea objetos nuevos"
-	L[
-			'Track new items in each bag, displaying a glowing aura over them and putting them in a special section. "New" status can be reset by clicking on the small "N" button at top left of bags.'
-		] =
+	L['Track new items in each bag, displaying a glowing aura over them and putting them in a special section. "New" status can be reset by clicking on the small "N" button at top left of bags.'] =
 		'Rastrea objetos nuevos en cada bolsa, mostrando un aura brillante sobre ellos, y poniendolos en una sección especial.El estado  "nuevos" puede ser borrado en el pequeño boton "N" en el borde superior izquierdo de las bolsas.'
 	L["Unlock anchor"] = "desbloquear anclaje - desanclar."
 	L["Use this to adjust the bag scale."] = "Usa esto para ajustar la escala de la bolsa."
-	L["Use this to adjust the quality-based border opacity. 100% means fully opaque."] =
-		[=[Usa esto para ajustar la opacidad del borde basado en la calidad. 100% significa opaco.
+	L["Use this to adjust the quality-based border opacity. 100% means fully opaque."] = [=[Usa esto para ajustar la opacidad del borde basado en la calidad. 100% significa opaco.
 ]=]
 elseif locale == "zhTW" then
 	------------------------ zhCN ------------------------
@@ -1167,8 +1022,7 @@ elseif locale == "zhTW" then
 	L["Adjust the maximum height of the bags, relative to screen size."] = "調整背包最大高度，相對於螢幕尺寸"
 	L["AH category"] = "拍賣場類別"
 	L["AH subcategory"] = "拍賣場子類別"
-	L["Allow you manually redefine the section in which an item should be put. Simply drag an item on the section title."] =
-		"允許以手動方式，將物品拖曳至區塊標題來分類物品"
+	L["Allow you manually redefine the section in which an item should be put. Simply drag an item on the section title."] = "允許以手動方式，將物品拖曳至區塊標題來分類物品"
 	L["Alt-right-click to configure manual filtering."] = "按住Alt鍵單擊鼠標右鍵 配置手動篩選。" -- Needs review
 	L["Alt-right-click to configure the Junk module."] = "按住Alt鍵單擊鼠標右鍵配置垃圾模塊。" -- Needs review
 	L["Alt-right-click to switch to anchored placement."] = "按住Alt鍵單擊鼠標右鍵切換到錨定位置。" -- Needs review
@@ -1213,15 +1067,13 @@ elseif locale == "zhTW" then
 	L["Check this to show this section. Uncheck to hide it."] = "設定要顯示的類別" -- Needs review
 	L["Check to disable error reporting."] = "檢查禁用錯誤報告。" -- Needs review
 	L["Check to enable this module."] = "檢查以啟用模組。"
-	L["Click on a item to remove it from the list. You can drop an item on the empty slot to add it to the list."] =
-		"點擊一個項目從列表中刪除它。也可拖放物品至空格以添加至列表。" -- Needs review
+	L["Click on a item to remove it from the list. You can drop an item on the empty slot to add it to the list."] = "點擊一個項目從列表中刪除它。也可拖放物品至空格以添加至列表。" -- Needs review
 	L["Click on this button to create the new association."] = "建立新的關聯"
 	L["Click or drag this item to remove it."] = "單擊或拖動要刪除的物品。" -- Needs review
 	L["Click there to reset the bag positions and sizes."] = "點擊重置背包位置和尺寸。"
 	L["Click to purchase"] = "點擊購買"
 	L["Click to reset item status."] = "點擊重置物品狀態。"
-	L["Click to select which sections should be shown or hidden. Section visibility is common to all bags."] =
-		"設定要顯示或隱藏的類別" -- Needs review
+	L["Click to select which sections should be shown or hidden. Section visibility is common to all bags."] = "設定要顯示或隱藏的類別" -- Needs review
 	L["Click to toggle the bag anchor."] = "點擊開啟或關閉背包錨點。"
 	L["Click to toggle the equipped bag panel, so you can change them."] = "點擊開啟或關閉已裝備背包面板, 用來修改他們。"
 	L["Close"] = "關閉"
@@ -1248,8 +1100,7 @@ elseif locale == "zhTW" then
 	L["Enabled bags"] = "(啟用/關閉)袋UI介面" -- Needs review
 	L["ENCHANTING_BAG_TAG"] = "容器" -- Needs review
 	L["ENGINEERING_BAG_TAG"] = "工程"
-	L["Enter the name, link or itemid of the item to associate with the section. You can also drop an item into this box."] =
-		"輸入名稱、連結或物品ID及與之相關類別，也可以直接將物品拖曳至此處。" -- Needs review
+	L["Enter the name, link or itemid of the item to associate with the section. You can also drop an item into this box."] = "輸入名稱、連結或物品ID及與之相關類別，也可以直接將物品拖曳至此處。" -- Needs review
 	L["Enter the name of the section to associate with the item."] = "輸入類別名稱以建立相關" -- Needs review
 	L["Equipment"] = "裝備"
 	L["Equipped bags"] = "裝備背包"
@@ -1258,9 +1109,8 @@ elseif locale == "zhTW" then
 	L["Filter"] = "過濾"
 	L["Filtering information"] = "過濾資訊"
 	L["Filters"] = "篩檢程式"
-	L[
-			"Filters are used to dispatch items in bag sections. One item can only appear in one section. If the same item is selected by several filters, the one with the highest priority wins."
-		] = "篩檢程式是用來在背包分類中調度物品。一件物品只能在一個類別中顯示。如果在多個篩檢程式中選中相同的物品, 最高優先順序的一個將勝出。" -- Needs review
+	L["Filters are used to dispatch items in bag sections. One item can only appear in one section. If the same item is selected by several filters, the one with the highest priority wins."] =
+		"篩檢程式是用來在背包分類中調度物品。一件物品只能在一個類別中顯示。如果在多個篩檢程式中選中相同的物品, 最高優先順序的一個將勝出。" -- Needs review
 	L["Font"] = "字型"
 	L["Four general sections."] = "裝備分為四大類(武器/護甲/飾品/其他)" -- Needs review
 	L["Free space"] = "可用空間"
@@ -1271,9 +1121,7 @@ elseif locale == "zhTW" then
 	L["Hide zeroes"] = "隱藏零" -- Needs review
 	L["Highlight color"] = "高亮顏色"
 	L["Highlight scale"] = "高亮縮放"
-	L[
-			"If the addon seems not to work properly, please re-enable error reporting and check again before filing a bug ticket."
-		] = "如果該插件似乎不能正常工作，請重新啟用錯誤報告(error reporting)和錯誤歸檔(bug ticket)前再檢查一次。" -- Needs review
+	L["If the addon seems not to work properly, please re-enable error reporting and check again before filing a bug ticket."] = "如果該插件似乎不能正常工作，請重新啟用錯誤報告(error reporting)和錯誤歸檔(bug ticket)前再檢查一次。" -- Needs review
 	L["Ignore currencies with null amounts."] = "忽略貨幣的無效量。" -- Needs review
 	L["Ignore low quality items"] = "忽略低品質的物品"
 	L["Included categories"] = "包含分類" -- Needs review
@@ -1286,10 +1134,8 @@ elseif locale == "zhTW" then
 	L["Item information"] = "物品資訊"
 	L["Item level"] = "物品等級" -- Needs review
 	L["Items"] = "物品"
-	L["Items in this list are always considered as junk. Click an item to remove it from the list."] =
-		"在此列表中的物品一直被視為垃圾。可從列表中點擊要剔除的物品。" -- Needs review
-	L["Items in this list are never considered as junk. Click an item to remove it from the list."] =
-		"在此列表中的物品永遠不會被視為垃圾。可從列表中點擊要剔除的物品。" -- Needs review
+	L["Items in this list are always considered as junk. Click an item to remove it from the list."] = "在此列表中的物品一直被視為垃圾。可從列表中點擊要剔除的物品。" -- Needs review
+	L["Items in this list are never considered as junk. Click an item to remove it from the list."] = "在此列表中的物品永遠不會被視為垃圾。可從列表中點擊要剔除的物品。" -- Needs review
 	L["Jewelry"] = "飾品"
 	L["Junk category"] = "垃圾" -- Needs review
 	L["Keep all stacks together."] = "保持全部堆疊合起來。"
@@ -1324,8 +1170,7 @@ elseif locale == "zhTW" then
 	L["Only one section."] = "只分為一個類別" -- Needs review
 	L["Opacity"] = "透明度"
 	L["Open automatically"] = "自動打開" -- Needs review
-	L["Please note this filter matchs every item. Any filter with lower priority than this one will have no effect."] =
-		"請注意，此項篩選功能將適用全部物品，其他優先性較低的篩選設定將被覆蓋而無法生效。"
+	L["Please note this filter matchs every item. Any filter with lower priority than this one will have no effect."] = "請注意，此項篩選功能將適用全部物品，其他優先性較低的篩選設定將被覆蓋而無法生效。"
 	L["Plugins"] = "插件"
 	L["Position mode"] = "位置模式"
 	L["Press Alt while doing so to open a dropdown menu."] = "按下Alt鍵，而這樣做可以打開一個下拉菜單。" -- Needs review
@@ -1361,8 +1206,7 @@ elseif locale == "zhTW" then
 	L["Select how bag usage should be formatted in the plugin."] = "選擇背包使用狀況格式"
 	L["Select how items should be sorted within each section."] = "設定各類別物品的分類方式" -- Needs review
 	L["Select how the bags are positionned."] = "選擇袋的位置" -- Needs review
-	L["Select the category of the section to associate. This is used to group sections together."] =
-		"選擇分類相關聯的分組。這是用來組合類別的分組。" -- Needs review
+	L["Select the category of the section to associate. This is used to group sections together."] = "選擇分類相關聯的分組。這是用來組合類別的分組。" -- Needs review
 	L["Select the sections in which the items should be dispatched."] = "選擇物品類別的分組" -- Needs review
 	L["Select which bags AdiBags should display."] = "選擇那個袋作為AdiBags顯示" -- Needs review
 	L["Select which first-level categories should be split by sub-categories."] = "選擇使用子類型分拆的物品主類型" -- Needs review
@@ -1396,9 +1240,8 @@ elseif locale == "zhTW" then
 	L["Toggle and configure plugins."] = "切換和配置插件。"
 	L["Tooltip information"] = "提示資訊"
 	L["Track new items"] = "追蹤新物品"
-	L[
-			'Track new items in each bag, displaying a glowing aura over them and putting them in a special section. "New" status can be reset by clicking on the small "N" button at top left of bags.'
-		] = '在每個袋追踪新的物品，顯示一個發光的光環在"新的物品"上，並把"新的物品"歸類為一個特殊分類-新物品。可以通過點擊左上角的小“N”按鈕，還原分類。' -- Needs review
+	L['Track new items in each bag, displaying a glowing aura over them and putting them in a special section. "New" status can be reset by clicking on the small "N" button at top left of bags.'] =
+		'在每個袋追踪新的物品，顯示一個發光的光環在"新的物品"上，並把"新的物品"歸類為一個特殊分類-新物品。可以通過點擊左上角的小“N”按鈕，還原分類。' -- Needs review
 	L["Uncheck this to disable AdiBags."] = "不選此停用AdiBags。"
 	L["Unlock anchor"] = "解鎖錨點"
 	L["Use SyLevel"] = "使用SyLevel" -- Needs review
@@ -1423,8 +1266,7 @@ elseif locale == "zhCN" then
 	L["Adjust the maximum height of the bags, relative to screen size."] = "调整背包最大高度 (相对于屏幕)"
 	L["AH category"] = "拍卖类"
 	L["AH subcategory"] = "拍卖子类"
-	L["Allow you manually redefine the section in which an item should be put. Simply drag an item on the section title."] =
-		"允许以将物品拖曳至区块标题的方式来分类物品" -- Needs review
+	L["Allow you manually redefine the section in which an item should be put. Simply drag an item on the section title."] = "允许以将物品拖曳至区块标题的方式来分类物品" -- Needs review
 	L["Alt-right-click to configure manual filtering."] = "按住Alt键单击鼠标右键 配置手动筛选。"
 	L["Alt-right-click to configure the Junk module."] = "按住Alt键单击鼠标右键配置垃圾模块。"
 	L["Alt-right-click to switch to anchored placement."] = "按住Alt键单击鼠标右键切换到锚定位置。"
@@ -1469,15 +1311,13 @@ elseif locale == "zhCN" then
 	L["Check this to show this section. Uncheck to hide it."] = "勾选则显示此分组, 不勾选则隐藏."
 	L["Check to disable error reporting."] = "点选以禁用错误报告" -- Needs review
 	L["Check to enable this module."] = "启用此模块"
-	L["Click on a item to remove it from the list. You can drop an item on the empty slot to add it to the list."] =
-		"点击物品可从列表中移除. 也可拖放物品至空栏以添加至列表."
+	L["Click on a item to remove it from the list. You can drop an item on the empty slot to add it to the list."] = "点击物品可从列表中移除. 也可拖放物品至空栏以添加至列表."
 	L["Click on this button to create the new association."] = "创建一个新过滤"
 	L["Click or drag this item to remove it."] = "点击或拖出物品可移除."
 	L["Click there to reset the bag positions and sizes."] = "重置背包位置和尺寸"
 	L["Click to purchase"] = "购买"
 	L["Click to reset item status."] = "重置物品状态."
-	L["Click to select which sections should be shown or hidden. Section visibility is common to all bags."] =
-		"设置显示/隐藏物品分组, 默认全部显示."
+	L["Click to select which sections should be shown or hidden. Section visibility is common to all bags."] = "设置显示/隐藏物品分组, 默认全部显示."
 	L["Click to toggle the bag anchor."] = "切换背包锚点"
 	L["Click to toggle the equipped bag panel, so you can change them."] = "点击切换背包面板, 用于更换背包."
 	L["Close"] = "关闭"
@@ -1504,8 +1344,7 @@ elseif locale == "zhCN" then
 	L["Enabled bags"] = "(启用/关闭)袋UI界面"
 	L["ENCHANTING_BAG_TAG"] = "容器" -- Needs review
 	L["ENGINEERING_BAG_TAG"] = "工"
-	L["Enter the name, link or itemid of the item to associate with the section. You can also drop an item into this box."] =
-		"输入物品名称, 链接或物品 ID 到此分组, 也可以拖曳物品至此."
+	L["Enter the name, link or itemid of the item to associate with the section. You can also drop an item into this box."] = "输入物品名称, 链接或物品 ID 到此分组, 也可以拖曳物品至此."
 	L["Enter the name of the section to associate with the item."] = "输入分组名称以建立过滤"
 	L["Equipment"] = "装备"
 	L["Equipped bags"] = "已装备背包"
@@ -1514,9 +1353,8 @@ elseif locale == "zhCN" then
 	L["Filter"] = "过滤"
 	L["Filtering information"] = "过滤信息"
 	L["Filters"] = "过滤器"
-	L[
-			"Filters are used to dispatch items in bag sections. One item can only appear in one section. If the same item is selected by several filters, the one with the highest priority wins."
-		] = "过滤器将用于背包分类中调度物品, 一件物品仅可在一个分类中显示. 如果在多个过滤器中选中相同的物品, 将使用最高优先级."
+	L["Filters are used to dispatch items in bag sections. One item can only appear in one section. If the same item is selected by several filters, the one with the highest priority wins."] =
+		"过滤器将用于背包分类中调度物品, 一件物品仅可在一个分类中显示. 如果在多个过滤器中选中相同的物品, 将使用最高优先级."
 	L["Font"] = "字型"
 	L["Four general sections."] = "按护甲类型分组"
 	L["Free space"] = "空闲空间"
@@ -1527,9 +1365,7 @@ elseif locale == "zhCN" then
 	L["Hide zeroes"] = "隐藏零"
 	L["Highlight color"] = "高亮颜色"
 	L["Highlight scale"] = "高亮缩放"
-	L[
-			"If the addon seems not to work properly, please re-enable error reporting and check again before filing a bug ticket."
-		] = "如果插件看上去不能正常工作，请再向作者提交报告之前重新允许错误报告检查一次。" -- Needs review
+	L["If the addon seems not to work properly, please re-enable error reporting and check again before filing a bug ticket."] = "如果插件看上去不能正常工作，请再向作者提交报告之前重新允许错误报告检查一次。" -- Needs review
 	L["Ignore currencies with null amounts."] = "忽略货币的无效量。"
 	L["Ignore low quality items"] = "忽略劣质物品" -- Needs review
 	L["Included categories"] = "包含过滤"
@@ -1542,10 +1378,8 @@ elseif locale == "zhCN" then
 	L["Item information"] = "物品信息"
 	L["Item level"] = "物品等级" -- Needs review
 	L["Items"] = "物品"
-	L["Items in this list are always considered as junk. Click an item to remove it from the list."] =
-		"此列表物品将不被归类为垃圾. 点击可移除."
-	L["Items in this list are never considered as junk. Click an item to remove it from the list."] =
-		"此列表物品将不被归类为垃圾. 点击可移除."
+	L["Items in this list are always considered as junk. Click an item to remove it from the list."] = "此列表物品将不被归类为垃圾. 点击可移除."
+	L["Items in this list are never considered as junk. Click an item to remove it from the list."] = "此列表物品将不被归类为垃圾. 点击可移除."
 	L["Jewelry"] = "饰品"
 	L["Junk category"] = "垃圾"
 	L["Keep all stacks together."] = "将所有堆叠合并"
@@ -1579,8 +1413,7 @@ elseif locale == "zhCN" then
 	L["Only one section."] = "仅一个分组"
 	L["Opacity"] = "透明度"
 	L["Open automatically"] = "自动打开"
-	L["Please note this filter matchs every item. Any filter with lower priority than this one will have no effect."] =
-		"注意, 此筛选功能应用于全部物品, 其他优先级较低的筛选设置将被覆盖而无法生效."
+	L["Please note this filter matchs every item. Any filter with lower priority than this one will have no effect."] = "注意, 此筛选功能应用于全部物品, 其他优先级较低的筛选设置将被覆盖而无法生效."
 	L["Plugins"] = "组件"
 	L["Position mode"] = "定位模式"
 	L["Press Alt while doing so to open a dropdown menu."] = "按下Alt键将打开一个下拉菜单。" -- Needs review
@@ -1649,17 +1482,15 @@ elseif locale == "zhCN" then
 	L["Toggle and configure plugins."] = "配置组件"
 	L["Tooltip information"] = "提示信息"
 	L["Track new items"] = "追踪新物品"
-	L[
-			'Track new items in each bag, displaying a glowing aura over them and putting them in a special section. "New" status can be reset by clicking on the small "N" button at top left of bags.'
-		] = "追踪背包中的新物品, 新物品在[新物品]区将高亮显示, 可以点击右上[N]按钮将其重置."
+	L['Track new items in each bag, displaying a glowing aura over them and putting them in a special section. "New" status can be reset by clicking on the small "N" button at top left of bags.'] =
+		"追踪背包中的新物品, 新物品在[新物品]区将高亮显示, 可以点击右上[N]按钮将其重置."
 	L["Uncheck this to disable AdiBags."] = "反选禁用 AdiBags"
 	L["Unlock anchor"] = "解锁锚点"
 	L["Use this section to define any item-section association."] = "使用此分组定义任意物品分组过滤"
 	L["Use this to adjust the bag scale."] = "背包缩放"
 	L["Use this to adjust the quality-based border opacity. 100% means fully opaque."] = "调整品质背景透明度, 100% 为不透明"
 	L["Virtual stacks"] = "虚拟堆叠"
-	L["Virtual stacks display in one place items that actually spread over several bag slots."] =
-		"虚拟堆叠将同一物品用一个单位显示, 实际在背包中仍占用多个位置."
+	L["Virtual stacks display in one place items that actually spread over several bag slots."] = "虚拟堆叠将同一物品用一个单位显示, 实际在背包中仍占用多个位置."
 	L["Virtual stack slots"] = "虚拟堆叠"
 	L["When alt is held down"] = "当ALT键被按下" -- Needs review
 	L["When any modifier key is held down"] = "当任意键被按下" -- Needs review
@@ -1676,8 +1507,7 @@ elseif locale == "koKR" then
 	L["Adjust the maximum height of the bags, relative to screen size."] = "화면 크기를 고려해, 가방의 최대 높이를 조절합니다."
 	L["AH category"] = "경매장 분류"
 	L["AH subcategory"] = "경매장 하위 분류"
-	L["Allow you manually redefine the section in which an item should be put. Simply drag an item on the section title."] =
-		"수동으로 아이템을 넣을 항목을 재정의할 수 있도록 합니다. 단순히 아이템을 잡아 끌어다 해당 항목 제목에 놓으세요."
+	L["Allow you manually redefine the section in which an item should be put. Simply drag an item on the section title."] = "수동으로 아이템을 넣을 항목을 재정의할 수 있도록 합니다. 단순히 아이템을 잡아 끌어다 해당 항목 제목에 놓으세요."
 	L["Alt-right-click to switch to anchored placement."] = "'Alt 키' + '오른쪽클릭' 고정위치으로 전환" -- Needs review
 	L["Alt-right-click to switch to manual placement."] = "'Alt 키' + '오른쪽클릭' 수동위치로 전환" -- Needs review
 	L["Always"] = "항상"
@@ -1704,32 +1534,25 @@ elseif locale == "koKR" then
 	L["By name"] = "이름별"
 	L["By quality and item level"] = "품질과 아이템 레벨별"
 	L["Category"] = "분류"
-	L["Change stacking at merchants', auction house, bank, mailboxes or when trading."] =
-		"상점, 경매장, 은행, 우편함에서 혹은 거래 중인 경우에 겹치기를 변경합니다. "
+	L["Change stacking at merchants', auction house, bank, mailboxes or when trading."] = "상점, 경매장, 은행, 우편함에서 혹은 거래 중인 경우에 겹치기를 변경합니다. "
 	L["Check this so armors are dispatched in four sections by type."] = "방어구를 유형별로 4개의 항목안에 처리할 것 같으면 이것에 체크하십시요."
-	L["Check this to display a bag type tag in the top left corner of items."] =
-		"아이템의 상단 좌측 모서리에 가방 유형 태그를 표시하려면 이것에 체크하세요."
-	L["Check this to display a colored border around items, based on item quality."] =
-		"아이템 품질에 기반해, 아이템 주위에 색이 입혀진 테두리를 표시하려면 이것에 체크하세요."
+	L["Check this to display a bag type tag in the top left corner of items."] = "아이템의 상단 좌측 모서리에 가방 유형 태그를 표시하려면 이것에 체크하세요."
+	L["Check this to display a colored border around items, based on item quality."] = "아이템 품질에 기반해, 아이템 주위에 색이 입혀진 테두리를 표시하려면 이것에 체크하세요."
 	L["Check this to display an icon after usage of each type of bags."] = "각 유형의 가방 사용 칸수 뒤에 아이콘을 표시하려면 이것에 체크하세요."
 	L["Check this to display an indicator on quest items."] = "퀘스트 아이템에 지시기를 표시하려면 이것에 체크하세요."
-	L["Check this to display an textual tag before usage of each type of bags."] =
-		"각 유형의 가방 사용 칸수 앞에 문자 태그를 표시하려면 이것에 체크하세요."
-	L["Check this to display only one value counting all equipped bags, ignoring their type."] =
-		"착용된 모든 가방을 그것의 유형을 무시한 체로, 단지 하나의 값으로 셈해 표시하려면 이것에 체크하세요. "
+	L["Check this to display an textual tag before usage of each type of bags."] = "각 유형의 가방 사용 칸수 앞에 문자 태그를 표시하려면 이것에 체크하세요."
+	L["Check this to display only one value counting all equipped bags, ignoring their type."] = "착용된 모든 가방을 그것의 유형을 무시한 체로, 단지 하나의 값으로 셈해 표시하려면 이것에 체크하세요. "
 	L["Check this to have poor quality items dimmed."] = "하급 아이템을 흐릿하게 하려면 이것에 체크하세요."
 	L["Check this to show space at your bank in the plugin."] = "플러그인 안에 은행에서의 칸수를 보여주려면 이것에 체크하세요."
 	L["Check this to show this section. Uncheck to hide it."] = "이 항목을 보려면 이것에 체크하십시요. 그것을 숨기려면 체크를 해제하십시요."
 	L["Check to enable this module."] = "이 모듈을 사용하려면 체크하세요."
-	L["Click on a item to remove it from the list. You can drop an item on the empty slot to add it to the list."] =
-		"목록에서 아이템을 제거하려면 해당 아이템에 클릭하세요. 목록으로 아이템을 추가하려면 해당 아이템을 빈칸에 떨굴 수도 있습니다."
+	L["Click on a item to remove it from the list. You can drop an item on the empty slot to add it to the list."] = "목록에서 아이템을 제거하려면 해당 아이템에 클릭하세요. 목록으로 아이템을 추가하려면 해당 아이템을 빈칸에 떨굴 수도 있습니다."
 	L["Click on this button to create the new association."] = "새로운 연결체를 생성하기 위해서 이 버튼을 클릭합니다."
 	L["Click or drag this item to remove it."] = "이 아이템을 제거하려면 클릭하거나 잡아 끌으세요."
 	L["Click there to reset the bag positions and sizes."] = "가방의 위치와 크기를 초기화하려면 거기를 클릭하세요."
 	L["Click to purchase"] = "구매하려면 클릭하세요."
 	L["Click to reset item status."] = "아이템 현황을 초기화하려면 클릭하세요."
-	L["Click to select which sections should be shown or hidden. Section visibility is common to all bags."] =
-		"보여주거나 숨겨야 할 항목을 선택하려면 클릭하십시요. 항목 표시는 모든 가방에 공통적입니다."
+	L["Click to select which sections should be shown or hidden. Section visibility is common to all bags."] = "보여주거나 숨겨야 할 항목을 선택하려면 클릭하십시요. 항목 표시는 모든 가방에 공통적입니다."
 	L["Click to toggle the bag anchor."] = "가방 앵커를 전환하려면 클릭하세요."
 	L["Click to toggle the equipped bag panel, so you can change them."] = "착용된 가방 패널을 전환하기 위해 클릭함으로써, 그것을 변경할 수 있습니다. "
 	L["Close"] = "닫기"
@@ -1747,8 +1570,7 @@ elseif locale == "koKR" then
 	L["Enabled"] = "사용"
 	L["ENCHANTING_BAG_TAG"] = "마부"
 	L["ENGINEERING_BAG_TAG"] = "기공"
-	L["Enter the name, link or itemid of the item to associate with the section. You can also drop an item into this box."] =
-		"항목과 연계하기 위한 아이템의 이름, 링크, 아이템 id를 입력합니다. 또한 이 박스안에 아이템을 떨굴 수 있습니다."
+	L["Enter the name, link or itemid of the item to associate with the section. You can also drop an item into this box."] = "항목과 연계하기 위한 아이템의 이름, 링크, 아이템 id를 입력합니다. 또한 이 박스안에 아이템을 떨굴 수 있습니다."
 	L["Enter the name of the section to associate with the item."] = "아이템과 연계하기 위한 항목의 이름을 입력합니다."
 	L["Equipment"] = "착용 장비"
 	L["Equipped bags"] = "착용된 가방"
@@ -1756,9 +1578,7 @@ elseif locale == "koKR" then
 	L["Filter"] = "선별"
 	L["Filtering information"] = "선별하기 정보"
 	L["Filters"] = "선별기"
-	L[
-			"Filters are used to dispatch items in bag sections. One item can only appear in one section. If the same item is selected by several filters, the one with the highest priority wins."
-		] =
+	L["Filters are used to dispatch items in bag sections. One item can only appear in one section. If the same item is selected by several filters, the one with the highest priority wins."] =
 		"선별기는 아이템을 각각의 가방 항목안에 처리하기 위해 사용됩니다. 하나의 항목에는 오로지 하나의 아이템만 표시될 수 있습니다.  만일 동일한 아이템이 몇가지 선별기에 의해 선택되었다면, 가장 높은 우선순위를 지닌 하나가 선택될 것입니다.    "
 	L["Font"] = "글꼴" -- Needs review
 	L["Four general sections."] = "네가지 공통 항목"
@@ -1777,10 +1597,8 @@ elseif locale == "koKR" then
 	L["Item category"] = "아이템 분류"
 	L["Item information"] = "아이템 정보"
 	L["Items"] = "아이템"
-	L["Items in this list are always considered as junk. Click an item to remove it from the list."] =
-		"이 목록에 있는 아이템은 항상 잡동사니로 간주됩니다. 목록에서 아이템을 제거하려면 해당 아이템에 클릭하세요."
-	L["Items in this list are never considered as junk. Click an item to remove it from the list."] =
-		"이 목록에 있는 아이템은 결코 잡동사니로 간주되지 않습니다. 목록에서 아이템을 제거하려면 해당 아이템에 클릭하세요. "
+	L["Items in this list are always considered as junk. Click an item to remove it from the list."] = "이 목록에 있는 아이템은 항상 잡동사니로 간주됩니다. 목록에서 아이템을 제거하려면 해당 아이템에 클릭하세요."
+	L["Items in this list are never considered as junk. Click an item to remove it from the list."] = "이 목록에 있는 아이템은 결코 잡동사니로 간주되지 않습니다. 목록에서 아이템을 제거하려면 해당 아이템에 클릭하세요. "
 	L["Jewelry"] = "보석류"
 	L["Junk category"] = "잡동사니 분류"
 	L["Keep all stacks together."] = "모든 겹치기를 동시에 유지합니다."
@@ -1806,18 +1624,14 @@ elseif locale == "koKR" then
 	L["One section per item slot."] = "아이템 칸당 한개의 항목"
 	L["Only one section."] = "오직 한개의 항목"
 	L["Opacity"] = "불투명도"
-	L["Please note this filter matchs every item. Any filter with lower priority than this one will have no effect."] =
-		"이 선별기에 일치하는 모든 아이템에 주의하기 바랍니다. 이것보다 더 낮은 우선순위를 지닌 어떠한 선별기도 영향을 주지 못할 것입니다."
+	L["Please note this filter matchs every item. Any filter with lower priority than this one will have no effect."] = "이 선별기에 일치하는 모든 아이템에 주의하기 바랍니다. 이것보다 더 낮은 우선순위를 지닌 어떠한 선별기도 영향을 주지 못할 것입니다."
 	L["Plugins"] = "플러그인"
 	L["Position mode"] = "위치 모드"
 	L["Priority"] = "우선순위"
 	L["Provides a LDB data source to be displayed by LDB display addons."] = "LDB 표시 애드온에 의해 표시될 수 있도록 LDB 자료 출처를 제공합니다. "
-	L['Put any item that can be equipped (including bags) into the "Equipment" section.'] =
-		'착용할 수 있는 모든 아이템(가방을 포함한)을 "착용 장비" 항목에 집어 넣습니다.'
-	L["Put items in sections depending on their first-level category at the Auction House."] =
-		"경매장에서 그것의 첫번째 레벨 분류에 의존하는 항목안에 아이템을 집어 넣습니다."
-	L['Put items of poor quality or labeled as junk in the "Junk" section.'] =
-		'하위 품질 혹은 잡동사니로 이름 붙여진 아이템을 "잡동사니" 항목에 집어 넣습니다.'
+	L['Put any item that can be equipped (including bags) into the "Equipment" section.'] = '착용할 수 있는 모든 아이템(가방을 포함한)을 "착용 장비" 항목에 집어 넣습니다.'
+	L["Put items in sections depending on their first-level category at the Auction House."] = "경매장에서 그것의 첫번째 레벨 분류에 의존하는 항목안에 아이템을 집어 넣습니다."
+	L['Put items of poor quality or labeled as junk in the "Junk" section.'] = '하위 품질 혹은 잡동사니로 이름 붙여진 아이템을 "잡동사니" 항목에 집어 넣습니다.'
 	L["Put quest-related items in their own section."] = "퀘스트와 관련된 아이템을 그 자신의 항목에 집어 넣습니다."
 	L["Quality highlight"] = "품질 강조"
 	L["Quest indicator"] = "퀘스트 지시기"
@@ -1836,8 +1650,7 @@ elseif locale == "koKR" then
 	L["Section visibility button"] = "항목 표시 버튼"
 	L["Select how bag usage should be formatted in the plugin."] = "플러그인에 가방 사용 칸수를 어떻게 형식화할 것인지를 선택합니다."
 	L["Select how items should be sorted within each section."] = "각 항목내에서 아이템을 어떻게 정리할 것인지를 선택합니다."
-	L["Select the category of the section to associate. This is used to group sections together."] =
-		"연계하기 위한 항목의 분류를 선택합니다."
+	L["Select the category of the section to associate. This is used to group sections together."] = "연계하기 위한 항목의 분류를 선택합니다."
 	L["Select the sections in which the items should be dispatched."] = "아이템을 처리하게 될 항목을 선택합니다."
 	L["Select which first-level categories should be split by sub-categories."] = "하위 분류에 의해 나눠져야 할 첫번째 레벨 분류를 선택합니다."
 	L["Separate incomplete stacks."] = "겹침이 완료되지 않은 아이템은 분리합니다."
@@ -1867,33 +1680,26 @@ elseif locale == "koKR" then
 	L["Toggle and configure plugins."] = "플러그인 전환 및 설정"
 	L["Tooltip information"] = "툴팁 정보"
 	L["Track new items"] = "새 아이템 추적"
-	L[
-			'Track new items in each bag, displaying a glowing aura over them and putting them in a special section. "New" status can be reset by clicking on the small "N" button at top left of bags.'
-		] =
+	L['Track new items in each bag, displaying a glowing aura over them and putting them in a special section. "New" status can be reset by clicking on the small "N" button at top left of bags.'] =
 		'각 가방에 있는 새 아이템을 추적해, 그 위에 광이 나는 오라로 표시하고 별도의 항목에 집어 넣을 것입니다. "새 아이템" 상태는 가방 상단 우측의 작은 "N" 버튼을 클릭하는 것으로 초기화할 수 있습니다, '
 	L["Uncheck this to disable AdiBags."] = "AdiBags를 비활성화하려면 이것을 체크 해제 하십시요."
 	L["Unlock anchor"] = "앵커의 잠금 해제"
 	L["Use this section to define any item-section association."] = "특정 아이템 항목의 연계성을 재정의하기 위해서 이 항목을 사용합니다."
 	L["Use this to adjust the bag scale."] = "가방 비율을 조절하려면 이것을 사용하세요."
-	L["Use this to adjust the quality-based border opacity. 100% means fully opaque."] =
-		"등급에 기반한 테두리 불투명도를 조절하려면 이것을 사용하세요. 100%는 꽉찬 투명도를 의미합니다. "
+	L["Use this to adjust the quality-based border opacity. 100% means fully opaque."] = "등급에 기반한 테두리 불투명도를 조절하려면 이것을 사용하세요. 100%는 꽉찬 투명도를 의미합니다. "
 	L["Virtual stacks"] = "가상 겹치기"
-	L["Virtual stacks display in one place items that actually spread over several bag slots."] =
-		"가상 겹치기는 실제로 여러개의 가방 칸을 차지하는 아이템을 한칸으로 표시합니다."
+	L["Virtual stacks display in one place items that actually spread over several bag slots."] = "가상 겹치기는 실제로 여러개의 가방 칸을 차지하는 아이템을 한칸으로 표시합니다."
 	L["Virtual stack slots"] = "가상의 겹침 칸"
 	L["When alt is held down"] = "alt 키를 누르고 있는 경우"
 	L["When any modifier key is held down"] = "특정 변경키를 누르고 있는 경우"
 	L["When ctrl is held down"] = "ctrl 키를 누르고 있는 경우"
 	L["When shift is held down"] = "shift 키를 누르고 있는 경우"
 elseif locale == "ptBR" then
-	L["Add a dropdown menu to bags that allow to hide the sections."] =
-		"Adicione um menu retrátil nas bolsas que permitem esconder as seções"
+	L["Add a dropdown menu to bags that allow to hide the sections."] = "Adicione um menu retrátil nas bolsas que permitem esconder as seções"
 	L["Add association"] = "Adicionar associação"
-	L["Add more information in tooltips related to items in your bags."] =
-		"Adicionar mais informação nas janelas de saque relacionadas aos itens em suas bolsas"
+	L["Add more information in tooltips related to items in your bags."] = "Adicionar mais informação nas janelas de saque relacionadas aos itens em suas bolsas"
 	L["AdiBags Anchor"] = "Âncora do AdiBags"
-	L["Adjust the maximum height of the bags, relative to screen size."] =
-		"Ajusta a altura máxima das bolsas, relativo a altura da tela"
+	L["Adjust the maximum height of the bags, relative to screen size."] = "Ajusta a altura máxima das bolsas, relativo a altura da tela"
 	L["AH category"] = "Categoria da casa de leilões"
 	L["AH subcategory"] = "Subcategoria da casa de leilões"
 	L["Allow you manually redefine the section in which an item should be put. Simply drag an item on the section title."] =
@@ -1925,26 +1731,18 @@ elseif locale == "ptBR" then
 	L["Bank Switcher"] = "Modificador do banco"
 	L["Border"] = "Borda"
 	L["Border width"] = "Largura da borda"
-	L["By category, subcategory, quality and item level (default)"] =
-		"Por categoria, subcategoria, qualidade e nível do item (padrão)"
+	L["By category, subcategory, quality and item level (default)"] = "Por categoria, subcategoria, qualidade e nível do item (padrão)"
 	L["By name"] = "Por nome"
 	L["By quality and item level"] = "Por qualidade e nível do item"
 	L["Category"] = "Categoria"
-	L["Change stacking at merchants', auction house, bank, mailboxes or when trading."] =
-		"Mude empilhando nos vendedores, casa de leilões, banco, caixa de correio ou quando negociando"
-	L["Check this so armors are dispatched in four sections by type."] =
-		"Marque para que armaduras sejam colocadas em quatro seções por tipo"
-	L["Check this to display a bag type tag in the top left corner of items."] =
-		"Marque para mostrar o tipo de bolsa no topo esquerdo dos itens"
-	L["Check this to display a colored border around items, based on item quality."] =
-		"Marque para mostrar uma borda colorida em volta dos itens, baseados em sua qualidade"
-	L["Check this to display an icon after usage of each type of bags."] =
-		"Marque para mostrar um ícone após o uso de cada tipo de bolsas"
+	L["Change stacking at merchants', auction house, bank, mailboxes or when trading."] = "Mude empilhando nos vendedores, casa de leilões, banco, caixa de correio ou quando negociando"
+	L["Check this so armors are dispatched in four sections by type."] = "Marque para que armaduras sejam colocadas em quatro seções por tipo"
+	L["Check this to display a bag type tag in the top left corner of items."] = "Marque para mostrar o tipo de bolsa no topo esquerdo dos itens"
+	L["Check this to display a colored border around items, based on item quality."] = "Marque para mostrar uma borda colorida em volta dos itens, baseados em sua qualidade"
+	L["Check this to display an icon after usage of each type of bags."] = "Marque para mostrar um ícone após o uso de cada tipo de bolsas"
 	L["Check this to display an indicator on quest items."] = "Marque para mostrar um indicador de itens de missões"
-	L["Check this to display an textual tag before usage of each type of bags."] =
-		"Marque para mostrar uma aba de texto antes do uso de cada tipo de bolsas"
-	L["Check this to display only one value counting all equipped bags, ignoring their type."] =
-		"Marque para mostrar somente um valor contando todas as bolsas equipadas, ignorando seu tipo"
+	L["Check this to display an textual tag before usage of each type of bags."] = "Marque para mostrar uma aba de texto antes do uso de cada tipo de bolsas"
+	L["Check this to display only one value counting all equipped bags, ignoring their type."] = "Marque para mostrar somente um valor contando todas as bolsas equipadas, ignorando seu tipo"
 	L["Check this to have poor quality items dimmed."] = "Marque para ter itens de qualidade inferior apagados"
 	L["Check this to show space at your bank in the plugin."] = "Marque para mostrar o espaço no seu banco no plugin"
 	L["Check this to show this section. Uncheck to hide it."] = "Marque para mostrar essa seção. Desmarque para escondê-la"
@@ -1960,8 +1758,7 @@ elseif locale == "ptBR" then
 	L["Click to select which sections should be shown or hidden. Section visibility is common to all bags."] =
 		"Clique para selecionar quais seções deverão ser mostradas ou escondidas. Seleção de visibilidade é comum para todas as bolsas."
 	L["Click to toggle the bag anchor."] = "Clique para alternar a âncora da bolsa"
-	L["Click to toggle the equipped bag panel, so you can change them."] =
-		"Clique para alternar o painel da bolsa equipada, assim você pode alterá-las"
+	L["Click to toggle the equipped bag panel, so you can change them."] = "Clique para alternar o painel da bolsa equipada, assim você pode alterá-las"
 	L["Close"] = "Fechar"
 	L["Color"] = "Cor"
 	L["Color scheme"] = "Esquema de cores"
@@ -1971,14 +1768,10 @@ elseif locale == "ptBR" then
 	L["Currencies to show"] = "Moedas a mostrar"
 	L["Currency"] = "Moeda"
 	L["Dim junk"] = "Apagar sucata"
-	L["Display a smaller money frame. This setting will take effect on next reload."] =
-		"Mostra um quadro de dinheiro menor. Essa configuração será aplicada na próxima reinicialização."
-	L["Display character currency at bottom left of the backpack."] =
-		"Mostrar moedas do personagem na parte inferior esquerda da mochila"
-	L["Display character money at bottom right of the backpack."] =
-		"Mostra o dinheiro do personagem na parte de baixo direita da mochila"
-	L["Display the level of equippable item in the top left corner of the button."] =
-		"Mostra o nível equipável de item no topo esquerdo do botão."
+	L["Display a smaller money frame. This setting will take effect on next reload."] = "Mostra um quadro de dinheiro menor. Essa configuração será aplicada na próxima reinicialização."
+	L["Display character currency at bottom left of the backpack."] = "Mostrar moedas do personagem na parte inferior esquerda da mochila"
+	L["Display character money at bottom right of the backpack."] = "Mostra o dinheiro do personagem na parte de baixo direita da mochila"
+	L["Display the level of equippable item in the top left corner of the button."] = "Mostra o nível equipável de item no topo esquerdo do botão."
 	L["Do not show anchor point"] = "Não mostrar ponto da âncora"
 	L["Do not show level of items that cannot be equipped."] = "Não mostrar o nível de itens que não podem ser equipados."
 	L["Do not show level of poor quality items."] = "Não mostrar o nível de itens de baixa qualidade."
@@ -2000,9 +1793,7 @@ elseif locale == "ptBR" then
 	L["Filter"] = "Filtro"
 	L["Filtering information"] = "Informação de filtragem"
 	L["Filters"] = "Filtros"
-	L[
-			"Filters are used to dispatch items in bag sections. One item can only appear in one section. If the same item is selected by several filters, the one with the highest priority wins."
-		] =
+	L["Filters are used to dispatch items in bag sections. One item can only appear in one section. If the same item is selected by several filters, the one with the highest priority wins."] =
 		"Filtros são usados para enviar itens para as seções das bolsas. Um item pode aparecer somente em uma seção. Se o mesmo item está selecionado para vários filtros, o com maior prioridade definida vence."
 	L["Font"] = "Fonte"
 	L["Four general sections."] = "Quatro seções gerais"
@@ -2010,14 +1801,11 @@ elseif locale == "ptBR" then
 	L["Free space / total space"] = "Espaço livre / espaço total"
 	L["GEM_BAG_TAG"] = "Ge"
 	L["HERB_BAG_TAG"] = "Er"
-	L["Hide the colored corner shown when you move the bag."] =
-		"Oculta o canto colorido mostrado quando você move sua bolsa"
+	L["Hide the colored corner shown when you move the bag."] = "Oculta o canto colorido mostrado quando você move sua bolsa"
 	L["Hide zeroes"] = "Esconder zeros"
 	L["Highlight color"] = "Cor de destaque"
 	L["Highlight scale"] = "Escala de destaque"
-	L[
-			"If the addon seems not to work properly, please re-enable error reporting and check again before filing a bug ticket."
-		] =
+	L["If the addon seems not to work properly, please re-enable error reporting and check again before filing a bug ticket."] =
 		"Se o addon parecer não funcionar devidamente, por favor ative novamente o reporte de erros e verifique novamente antes de preencher um ticket de Bug(falha)"
 	L["Ignore currencies with null amounts."] = "Ignorar quantias com valores nulos"
 	L["Ignore low quality items"] = "Ignora itens de qualidade inferior"
@@ -2031,10 +1819,8 @@ elseif locale == "ptBR" then
 	L["Item information"] = "Informação do item"
 	L["Item level"] = "Nível do item"
 	L["Items"] = "Itens"
-	L["Items in this list are always considered as junk. Click an item to remove it from the list."] =
-		"Itens nessa lista são sempre considerados sucata. Click em um item para removê-lo da lista"
-	L["Items in this list are never considered as junk. Click an item to remove it from the list."] =
-		"Itens nessa lista nunca serão considerados sucata. Clique em um item para removê-lo da lista."
+	L["Items in this list are always considered as junk. Click an item to remove it from the list."] = "Itens nessa lista são sempre considerados sucata. Click em um item para removê-lo da lista"
+	L["Items in this list are never considered as junk. Click an item to remove it from the list."] = "Itens nessa lista nunca serão considerados sucata. Clique em um item para removê-lo da lista."
 	L["Jewelry"] = "Jóias"
 	L["Junk category"] = "Categoria de sucata"
 	L["Keep all stacks together."] = "Manter todas as pilhas juntas"
@@ -2056,8 +1842,7 @@ elseif locale == "ptBR" then
 	L["MINING_BAG_TAG"] = "Mi"
 	L["Mininum level"] = "Nível minimo"
 	L["Money"] = "Dinheiro"
-	L["Move items from and to the bank by right-clicking on section headers."] =
-		'Move itens "de" e "para" o banco quando clicar nos cabeçalhos de seção '
+	L["Move items from and to the bank by right-clicking on section headers."] = 'Move itens "de" e "para" o banco quando clicar nos cabeçalhos de seção '
 	L["Never"] = "Nunca"
 	L["New"] = "Novo"
 	L["New Override"] = "Nova Importancia"
@@ -2076,14 +1861,10 @@ elseif locale == "ptBR" then
 	L["Position mode"] = "Modo de posicionamento"
 	L["Press Alt while doing so to open a dropdown menu."] = "Pressione Alt enquanto faz isso para abrir o menu dropdown"
 	L["Priority"] = "Prioridade"
-	L["Provides a LDB data source to be displayed by LDB display addons."] =
-		"Fornece uma fonte LDB para ser exibida por LDB addons"
-	L['Put any item that can be equipped (including bags) into the "Equipment" section.'] =
-		'Põe qualquer item que pode ser equipado (incluindo bolsas) na categoria "equipamento"'
-	L["Put items in sections depending on their first-level category at the Auction House."] =
-		"Põe itens em seções dependendo da categoria inicial na Casa de Leilões"
-	L['Put items of poor quality or labeled as junk in the "Junk" section.'] =
-		'Põe itens de qualidade inferior ou rotulados como sucata na seção "Sucata" '
+	L["Provides a LDB data source to be displayed by LDB display addons."] = "Fornece uma fonte LDB para ser exibida por LDB addons"
+	L['Put any item that can be equipped (including bags) into the "Equipment" section.'] = 'Põe qualquer item que pode ser equipado (incluindo bolsas) na categoria "equipamento"'
+	L["Put items in sections depending on their first-level category at the Auction House."] = "Põe itens em seções dependendo da categoria inicial na Casa de Leilões"
+	L['Put items of poor quality or labeled as junk in the "Junk" section.'] = 'Põe itens de qualidade inferior ou rotulados como sucata na seção "Sucata" '
 	L["Put quest-related items in their own section."] = "Põe itens relativos a missões em suas respectivas seções"
 	L["Quality highlight"] = "Destaca qualidade"
 	L["Quest indicator"] = "Indicador de missões"
@@ -2108,18 +1889,13 @@ elseif locale == "ptBR" then
 	L["Section setup"] = "Configurações de seção"
 	L["Section visibility"] = "Visibilidade da seção"
 	L["Section visibility button"] = "Seção do botão de visibilidade"
-	L["Select how bag usage should be formatted in the plugin."] =
-		"Seleciona como o uso de bolsas deve ser formatado no plugin"
-	L["Select how items should be sorted within each section."] =
-		"Seleciona quantos itens devem ser arrumados em cada seção"
+	L["Select how bag usage should be formatted in the plugin."] = "Seleciona como o uso de bolsas deve ser formatado no plugin"
+	L["Select how items should be sorted within each section."] = "Seleciona quantos itens devem ser arrumados em cada seção"
 	L["Select how the bags are positionned."] = "Seleciona como as bolsas são posicionadas"
-	L["Select the category of the section to associate. This is used to group sections together."] =
-		"Selecione a categoria da seção para unir. Isto é usado para agrupar seções"
-	L["Select the sections in which the items should be dispatched."] =
-		"Selecione as seções para as quais os itens serão encaminhados"
+	L["Select the category of the section to associate. This is used to group sections together."] = "Selecione a categoria da seção para unir. Isto é usado para agrupar seções"
+	L["Select the sections in which the items should be dispatched."] = "Selecione as seções para as quais os itens serão encaminhados"
 	L["Select which bags AdiBags should display."] = "Seleciona quais bolsas o Adibags deve mostrar"
-	L["Select which first-level categories should be split by sub-categories."] =
-		"Seleciona qual categoria primária deve ser dividida em subcategorias"
+	L["Select which first-level categories should be split by sub-categories."] = "Seleciona qual categoria primária deve ser dividida em subcategorias"
 	L["Separate incomplete stacks."] = "Separar pilhas incompletas"
 	L["Separate unstackable items."] = "Separar itens não empilháveis"
 	L["Show bag type icons"] = "Mostrar o ícone dos tipos de bolsas"
@@ -2131,8 +1907,7 @@ elseif locale == "ptBR" then
 	L["Show item information..."] = "Mostrar informação do item"
 	L["Show only one free slot for each kind of bags."] = "Mostre somente um espaço livre para cada tipo de bolsa"
 	L["Show only one slot of items that can be stacked."] = "Mostre somente um espaço com itens que podem ser empilhados"
-	L["Show only one slot of items that cannot be stacked."] =
-		"Mostre somente um espaço de itens que não podem ser empilhados"
+	L["Show only one slot of items that cannot be stacked."] = "Mostre somente um espaço de itens que não podem ser empilhados"
 	L["Show %s"] = "Mostra %s"
 	L["Size"] = "Tamanho"
 	L["Skin"] = "Visual"
@@ -2151,30 +1926,23 @@ elseif locale == "ptBR" then
 	L["Toggle and configure plugins."] = "Alterna e configura plugins"
 	L["Tooltip information"] = "Dicas Informações"
 	L["Track new items"] = "Rastreia itens novos"
-	L[
-			'Track new items in each bag, displaying a glowing aura over them and putting them in a special section. "New" status can be reset by clicking on the small "N" button at top left of bags.'
-		] =
+	L['Track new items in each bag, displaying a glowing aura over them and putting them in a special section. "New" status can be reset by clicking on the small "N" button at top left of bags.'] =
 		'Rastreia itens novos em cada bolsa, mostrando uma aura brilhante sobre eles e colocando-os em uma seção especial. Status "Novo" pode ser apagado clicando no pequeno botão "N" no topo esquerdo de suas bolsas'
 	L["Uncheck this to disable AdiBags."] = "Desmarque para desabilitar AdiBags"
 	L["Unlock anchor"] = "Destrava âncora"
 	L["Use SyLevel"] = "Use SyLevel"
-	L["Use this section to define any item-section association."] =
-		"Use esta seção para definir qualquer associação seção-item"
+	L["Use this section to define any item-section association."] = "Use esta seção para definir qualquer associação seção-item"
 	L["Use this to adjust the bag scale."] = "Use para ajustar a escala da bolsa"
-	L["Use this to adjust the quality-based border opacity. 100% means fully opaque."] =
-		"Use para ajustar a opacidade da borda baseada na qualidade. 100% significa totalmente opaco"
+	L["Use this to adjust the quality-based border opacity. 100% means fully opaque."] = "Use para ajustar a opacidade da borda baseada na qualidade. 100% significa totalmente opaco"
 	L["Virtual stacks"] = "Emplilhamento virtual"
-	L["Virtual stacks display in one place items that actually spread over several bag slots."] =
-		"Emplilhamentos virtuais mostram em um espaço itens que na verdade se espalhariam por vários espaços das bolsas"
+	L["Virtual stacks display in one place items that actually spread over several bag slots."] = "Emplilhamentos virtuais mostram em um espaço itens que na verdade se espalhariam por vários espaços das bolsas"
 	L["Virtual stack slots"] = "Espaços de pilhas virtuais"
 	L["When alt is held down"] = "Quando ALT é pressionado"
 	L["When any modifier key is held down"] = "Quando qualquer tecla modificadora é Pressionada"
-	L["When checked, right-clicking on an empty space of a bag opens the configuration panel."] =
-		"Quando marcado, botão direito em um espaço vazio de uma bolsa abrirá o painel de configurações"
+	L["When checked, right-clicking on an empty space of a bag opens the configuration panel."] = "Quando marcado, botão direito em um espaço vazio de uma bolsa abrirá o painel de configurações"
 	L["When ctrl is held down"] = "Quando CTRL é pressionado"
 	L["When shift is held down"] = "Quando SHIFT é pressionado"
-	L["Which color scheme should be used to display the item level ?"] =
-		"Qual esquema de cores deve ser usado para mostrar o nível do item?"
+	L["Which color scheme should be used to display the item level ?"] = "Qual esquema de cores deve ser usado para mostrar o nível do item?"
 end
 
 -- @noloc]]

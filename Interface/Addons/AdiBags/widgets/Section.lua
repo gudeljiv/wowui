@@ -137,8 +137,8 @@ function sectionProto:OnAcquire(container, name, category)
 	self.count = 0
 	self.container = container
 	self:RegisterMessage("AdiBags_OrderChanged", "FullLayout")
-	-- self.Header:SetText(self.name)
-	self.Header:SetText("")
+	self.Header:SetText(self.name)
+	-- self.Header:SetText("")
 	self:UpdateHeaderScripts()
 end
 
@@ -180,13 +180,7 @@ end
 -- Section hooks
 --------------------------------------------------------------------------------
 
-local scriptDispatcher =
-	LibStub("CallbackHandler-1.0"):New(
-	addon,
-	"RegisterSectionHeaderScript",
-	"UnregisterSectionHeaderScript",
-	"UnregisterAllSectionHeaderScripts"
-)
+local scriptDispatcher = LibStub("CallbackHandler-1.0"):New(addon, "RegisterSectionHeaderScript", "UnregisterSectionHeaderScript", "UnregisterAllSectionHeaderScripts")
 
 local DispatchOnClick = function(...)
 	return scriptDispatcher:Fire("OnClick", ...)

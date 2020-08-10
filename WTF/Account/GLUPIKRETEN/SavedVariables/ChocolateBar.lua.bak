@@ -39,9 +39,6 @@ ChocolateBarDB = {
 	["profiles"] = {
 		["Default"] = {
 			["locked"] = false,
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -71,6 +68,9 @@ ChocolateBarDB = {
 					["index"] = 1,
 					["barOffx"] = -88.3325424194336,
 				},
+			},
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
 			},
 			["fixedStrata"] = true,
 			["objSettings"] = {
@@ -317,11 +317,11 @@ ChocolateBarDB = {
 					["customLabel"] = "B",
 				},
 			},
-			["fontName"] = "Friz Quadrata TT",
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["gap"] = 0,
-			["moveFrames"] = false,
 			["desaturated"] = false,
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["fontName"] = "Friz Quadrata TT",
+			["moveFrames"] = false,
+			["gap"] = 0,
 			["textOffset"] = 2,
 			["height"] = 20,
 			["moduleOptions"] = {
@@ -352,13 +352,13 @@ CB_PlayedTime = {
 		["total"] = 1719,
 	},
 	["Mxyz-"] = {
-		["total"] = 18636,
+		["total"] = 18762,
 	},
 	["Antun-"] = {
 		["total"] = 52,
 	},
 	["Vermin-"] = {
-		["total"] = 139284,
+		["total"] = 139361,
 	},
 	["Judawise-"] = {
 		["total"] = 437,
@@ -372,8 +372,8 @@ CB_PlayedTime = {
 	["Greenwise-"] = {
 		["total"] = 79871,
 	},
-	["Whatevs-"] = {
-		["total"] = 213,
+	["Dmitar-"] = {
+		["total"] = 55,
 	},
 	["Mxyzptlk-"] = {
 		["total"] = 8367,
@@ -400,12 +400,12 @@ CB_PlayedTime = {
 		["total"] = 2,
 	},
 	["Mxzq-"] = {
-		["total"] = 227475,
+		["total"] = 235473,
 	},
 	["Dotwise-"] = {
 		["total"] = 3924,
 	},
-	["Dmitar-"] = {
-		["total"] = 55,
+	["Whatevs-"] = {
+		["total"] = 213,
 	},
 }
