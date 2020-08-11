@@ -1,3 +1,5 @@
+local _, xVermin = ...
+
 local scaler = CreateFrame("Frame")
 scaler:RegisterEvent("VARIABLES_LOADED")
 scaler:RegisterEvent("UI_SCALE_CHANGED")
@@ -16,7 +18,7 @@ scaler:SetScript(
 			-- 	self:UnregisterEvent("UI_SCALE_CHANGED")
 			-- 	SetCVar("uiScale", scale)
 			-- end
-			UIParent:SetScale(xVerminConfig.UIscale)
+			UIParent:SetScale(xVermin.Config.UIscale)
 		else
 			self:RegisterEvent("PLAYER_REGEN_ENABLED")
 		end

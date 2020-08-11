@@ -488,22 +488,14 @@ function containerProto:OnLayout()
 	local hlr, hrr = self.HeaderLeftRegion, self.HeaderRightRegion
 	local blr, brr = self.BottomLeftRegion, self.BottomRightRegion
 	local minWidth =
-		max(
-		self.Title:GetStringWidth() + 32 + (hlr:IsShown() and hlr:GetWidth() or 0) + (hrr:IsShown() and hrr:GetWidth() or 0),
-		(blr:IsShown() and blr:GetWidth() or 0) + (brr:IsShown() and brr:GetWidth() or 0)
-	)
-	local bottomHeight =
-		max(blr:IsShown() and (BAG_INSET + blr:GetHeight()) or 0, brr:IsShown() and (BAG_INSET + brr:GetHeight()) or 0)
+		max(self.Title:GetStringWidth() + 32 + (hlr:IsShown() and hlr:GetWidth() or 0) + (hrr:IsShown() and hrr:GetWidth() or 0), (blr:IsShown() and blr:GetWidth() or 0) + (brr:IsShown() and brr:GetWidth() or 0))
+	local bottomHeight = max(blr:IsShown() and (BAG_INSET + blr:GetHeight()) or 0, brr:IsShown() and (BAG_INSET + brr:GetHeight()) or 0)
 	self.minWidth = minWidth
 	if self.forceLayout then
 		self:FullUpdate()
 	end
 	self:Debug("OnLayout", self.ToSortSection:GetHeight())
-	self:SetSize(
-		BAG_INSET * 2 + max(minWidth, self.Content:GetWidth()),
-		addon.TOP_PADDING + BAG_INSET + bottomHeight + self.Content:GetHeight() + self.ToSortSection:GetHeight() +
-			ITEM_SPACING
-	)
+	self:SetSize(BAG_INSET * 2 + max(minWidth, self.Content:GetWidth()), addon.TOP_PADDING + BAG_INSET + bottomHeight + self.Content:GetHeight() + self.ToSortSection:GetHeight() + ITEM_SPACING)
 end
 
 --------------------------------------------------------------------------------
@@ -554,8 +546,7 @@ function containerProto:UpdateContent(bag)
 			if link then
 				name, _, quality, iLevel, reqLevel, class, subclass, maxStack, equipSlot, texture, vendorPrice = GetItemInfo(link)
 				if not name then
-					name, _, quality, iLevel, reqLevel, class, subclass, maxStack, equipSlot, texture, vendorPrice =
-						GetItemInfo(itemId)
+					name, _, quality, iLevel, reqLevel, class, subclass, maxStack, equipSlot, texture, vendorPrice = GetItemInfo(itemId)
 				end
 				count = select(2, GetContainerItemInfo(bag, slot)) or 0
 			else
@@ -571,15 +562,16 @@ function containerProto:UpdateContent(bag)
 				slotData.count = count
 				slotData.link = link
 				slotData.itemId = itemId
-				slotData.name,
-					slotData.quality,
-					slotData.iLevel,
-					slotData.reqLevel,
-					slotData.class,
-					slotData.subclass,
-					slotData.equipSlot,
-					slotData.texture,
-					slotData.vendorPrice = name, quality, iLevel, reqLevel, class, subclass, equipSlot, texture, vendorPrice
+				slotData.name, slotData.quality, slotData.iLevel, slotData.reqLevel, slotData.class, slotData.subclass, slotData.equipSlot, slotData.texture, slotData.vendorPrice =
+					name,
+					quality,
+					iLevel,
+					reqLevel,
+					class,
+					subclass,
+					equipSlot,
+					texture,
+					vendorPrice
 				slotData.maxStack = maxStack or (link and 1 or 0)
 
 				if sameItem then
@@ -1008,8 +1000,7 @@ function containerProto:FullUpdate()
 	else
 		local uiScale, uiWidth, uiHeight = UIParent:GetEffectiveScale(), UIParent:GetSize()
 		local selfScale = self:GetEffectiveScale()
-		local maxHeight =
-			max(maxSectionHeight, settings.maxHeight * uiHeight * uiScale / selfScale - (ITEM_SIZE + ITEM_SPACING + HEADER_SIZE))
+		local maxHeight = max(maxSectionHeight, settings.maxHeight * uiHeight * uiScale / selfScale - (ITEM_SIZE + ITEM_SPACING + HEADER_SIZE))
 
 		local contentWidth, contentHeight = self:LayoutSections(maxHeight, columnWidth, self.minWidth, sections)
 		self.Content:SetSize(contentWidth, contentHeight)

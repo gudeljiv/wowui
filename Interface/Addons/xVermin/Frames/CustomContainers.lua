@@ -1,3 +1,5 @@
+local _, xVermin = ...
+
 local _, class = UnitClass("player")
 local color = RAID_CLASS_COLORS[class]
 if class == "SHAMAN" then
@@ -22,7 +24,7 @@ cc_combat:SetHeight(20)
 cc_combat:SetPoint("LEFT", cc, "LEFT", 0, 0)
 cc_combat:SetBackdrop(
 	{
-		bgFile = xVerminConfig.background.white,
+		bgFile = xVermin.Config.background.white,
 		edgeFile = "",
 		tile = false,
 		tileSize = 0,
@@ -107,7 +109,7 @@ cc1:SetHeight(30)
 cc1:SetPoint("LEFT", cc, "LEFT", 0, 0)
 cc1:SetBackdrop(
 	{
-		bgFile = xVerminConfig.background.white,
+		bgFile = xVermin.Config.background.white,
 		edgeFile = "",
 		tile = false,
 		tileSize = 0,
@@ -134,7 +136,7 @@ cc2:SetHeight(30)
 cc2:SetPoint("LEFT", cc, "LEFT", 0, 0)
 cc2:SetBackdrop(
 	{
-		bgFile = xVerminConfig.background.white,
+		bgFile = xVermin.Config.background.white,
 		edgeFile = "",
 		tile = false,
 		tileSize = 0,

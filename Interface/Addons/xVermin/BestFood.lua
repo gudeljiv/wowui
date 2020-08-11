@@ -1,3 +1,5 @@
+local _, xVermin = ...
+
 --[[ TODO
     * Add configuration options
         * Give option to treat buff food as low priority regular food

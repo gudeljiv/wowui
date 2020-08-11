@@ -1,3 +1,5 @@
+local _, xVermin = ...
+
 local function BorderItemSlots()
 	local itemLink, r, g, b, itemLink
 
@@ -32,14 +34,14 @@ local function BorderItemSlots()
 			_, _, itemRarity = GetItemInfo(itemLink)
 			if (itemRarity and itemRarity > 1) then
 				r, g, b = GetItemQualityColor(itemRarity)
-				v:SetBeautyBorderTexture(xVerminConfig.border.colorize)
+				v:SetBeautyBorderTexture(xVermin.Config.border.colorize)
 				v:SetBeautyBorderColor(r, g, b, 1)
 			else
-				v:SetBeautyBorderTexture(xVerminConfig.border.default)
+				v:SetBeautyBorderTexture(xVermin.Config.border.default)
 				v:SetBeautyBorderColor(1, 1, 1, 1)
 			end
 		else
-			v:SetBeautyBorderTexture(xVerminConfig.border.default)
+			v:SetBeautyBorderTexture(xVermin.Config.border.default)
 			v:SetBeautyBorderColor(1, 1, 1, 1)
 		end
 	end

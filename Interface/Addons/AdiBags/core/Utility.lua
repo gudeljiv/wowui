@@ -148,11 +148,7 @@ end
 --------------------------------------------------------------------------------
 
 function addon.IsValidItemLink(link)
-	if
-		type(link) == "string" and
-			(strmatch(link, "battlepet:") or strmatch(link, "keystone:") or
-				(strmatch(link, "item:[-:%d]+") and not strmatch(link, "item:%d+:0:0:0:0:0:0:0:0:0")))
-	 then
+	if type(link) == "string" and (strmatch(link, "battlepet:") or strmatch(link, "keystone:") or (strmatch(link, "item:[-:%d]+") and not strmatch(link, "item:%d+:0:0:0:0:0:0:0:0:0"))) then
 		return true
 	end
 end
@@ -168,8 +164,7 @@ local function __GetDistinctItemID(link)
 	if strmatch(link, "battlepet:") or strmatch(link, "keystone:") then
 		return link
 	else
-		local itemString, id, enchant, gem1, gem2, gem3, gem4, suffix, reforge =
-			strmatch(link, "(item:(%-?%d+):(%-?%d+):(%-?%d+):(%-?%d+):(%-?%d+):(%-?%d+):(%-?%d+):%-?%d+:%-?%d+:(%-?%d+))")
+		local itemString, id, enchant, gem1, gem2, gem3, gem4, suffix, reforge = strmatch(link, "(item:(%-?%d+):(%-?%d+):(%-?%d+):(%-?%d+):(%-?%d+):(%-?%d+):(%-?%d+):%-?%d+:%-?%d+:(%-?%d+))")
 		if not id then
 			return
 		end
@@ -237,8 +232,7 @@ end
 local JUNK = GetItemSubClassInfo(LE_ITEM_CLASS_MISCELLANEOUS, 0)
 function addon:IsJunk(itemId)
 	local _, _, quality, _, _, class, subclass = GetItemInfo(itemId)
-	return quality == ITEM_QUALITY_POOR or
-		(quality and quality < ITEM_QUALITY_UNCOMMON and (class == JUNK or subclass == JUNK))
+	return quality == ITEM_QUALITY_POOR or (quality and quality < ITEM_QUALITY_UNCOMMON and (class == JUNK or subclass == JUNK))
 end
 
 --------------------------------------------------------------------------------
@@ -283,10 +277,7 @@ end
 --------------------------------------------------------------------------------
 
 function addon.GetItemFamily(item)
-	if
-		(type(item) == "string" and (strmatch(item, "battlepet:") or strmatch(item, "keystone:"))) or
-			select(9, GetItemInfo(item)) == "INVTYPE_BAG"
-	 then
+	if (type(item) == "string" and (strmatch(item, "battlepet:") or strmatch(item, "keystone:"))) or select(9, GetItemInfo(item)) == "INVTYPE_BAG" then
 		return 0
 	else
 		return GetItemFamily(item)

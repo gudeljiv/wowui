@@ -1,7 +1,4 @@
-----------------------------------------------------------------------------------------
---	ClassicAutoDismount (by EsreverWoW)
-----------------------------------------------------------------------------------------
-local f = CreateFrame("Frame")
+local _, xVermin = ...
 
 local errorMessages = {
 	[ERR_ATTACK_MOUNTED] = true,
@@ -20,5 +17,6 @@ local function CheckDismount(self, event, ...)
 	UIErrorsFrame:Clear()
 end
 
+local f = CreateFrame("Frame")
 f:RegisterEvent("UI_ERROR_MESSAGE")
 f:SetScript("OnEvent", CheckDismount)

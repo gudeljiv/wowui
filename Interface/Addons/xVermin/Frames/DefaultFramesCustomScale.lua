@@ -1,6 +1,5 @@
--------------------------------------------
--- custom modification of wow UI elements
--------------------------------------------
+local _, xVermin = ...
+
 for i, v in pairs(
 	{
 		GameMenuFrame,

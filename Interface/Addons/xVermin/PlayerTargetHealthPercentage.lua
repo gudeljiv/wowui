@@ -1,10 +1,12 @@
+local _, xVermin = ...
+
 local TargetHealthFrame = CreateFrame("Frame", "TargetHealthFrame", UIParent)
 TargetHealthFrame:SetWidth(1)
 TargetHealthFrame:SetHeight(1)
 TargetHealthFrame:SetAlpha(0.9)
 TargetHealthFrame:SetPoint("CENTER", UIParent, "CENTER", 100, -40)
 TargetHealthFrame.text = TargetHealthFrame:CreateFontString(nil, "ARTWORK")
-TargetHealthFrame.text:SetFont(xVerminConfig.font.arial, 28, "THINOUTLINE")
+TargetHealthFrame.text:SetFont(xVermin.Config.font.arial, 28, "THINOUTLINE")
 TargetHealthFrame.text:SetPoint("CENTER", TargetHealthFrame, "CENTER", 0, 0)
 TargetHealthFrame:SetFrameStrata("LOW")
 
@@ -14,7 +16,7 @@ PlayerHealthFrame:SetHeight(1)
 PlayerHealthFrame:SetAlpha(0.9)
 PlayerHealthFrame:SetPoint("CENTER", UIParent, "CENTER", -100, -40)
 PlayerHealthFrame.text = PlayerHealthFrame:CreateFontString(nil, "ARTWORK")
-PlayerHealthFrame.text:SetFont(xVerminConfig.font.arial, 28, "THINOUTLINE")
+PlayerHealthFrame.text:SetFont(xVermin.Config.font.arial, 28, "THINOUTLINE")
 PlayerHealthFrame.text:SetPoint("CENTER", PlayerHealthFrame, "CENTER", 0, 0)
 PlayerHealthFrame:SetFrameStrata("LOW")
 

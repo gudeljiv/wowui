@@ -1,4 +1,5 @@
-local frame = CreateFrame("Frame")
+local _, xVermin = ...
+
 local messages = {
 	"Ability is not ready yet",
 	"Another action is in progress",
@@ -37,11 +38,13 @@ function uierrorsframe_addmessage(frame, text, red, green, blue, id)
 	old_uierrosframe_addmessage(frame, text, red, green, blue, id)
 end
 
-function onevent(frame, event, ...)
-	if event == "PLAYER_LOGIN" then
-		enable()
+local frame = CreateFrame("Frame")
+frame:SetScript(
+	"OnEvent",
+	function()
+		if event == "PLAYER_LOGIN" then
+			enable()
+		end
 	end
-end
-
-frame:SetScript("OnEvent", onevent)
+)
 frame:RegisterEvent("PLAYER_LOGIN")

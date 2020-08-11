@@ -1,3 +1,5 @@
+local _, xVermin = ...
+
 local type = 8
 local mark = false
 

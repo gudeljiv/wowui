@@ -1,3 +1,5 @@
+local _, xVermin = ...
+
 local function FixBindings()
 	SetBinding("A", "STRAFELEFT", 1)
 	SetBinding("D", "STRAFERIGHT", 1)

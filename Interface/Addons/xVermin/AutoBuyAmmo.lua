@@ -1,3 +1,5 @@
+local _, xVermin = ...
+
 local function BuyAmmo()
 	local index, TypeOfAmmo, BowEquipped, GunEquipped
 	local _, class, _ = UnitClass("player")

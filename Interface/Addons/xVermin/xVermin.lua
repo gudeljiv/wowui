@@ -1,4 +1,5 @@
--- added shortcut to /reload
+local _, xVermin = ...
+
 SLASH_RELOAD1 = "/rl"
 SlashCmdList["RELOAD"] = function(msg)
 	ReloadUI()
@@ -207,11 +208,11 @@ f:SetScript(
 		PetFrame:HookScript(
 			"OnUpdate",
 			function(self)
-				PetFrameHealthBarText:SetFont(xVerminConfig.font.atari, 10, "THINOUTLINE")
+				PetFrameHealthBarText:SetFont(xVermin.Config.font.atari, 10, "THINOUTLINE")
 				PetFrameHealthBarText:SetPoint("TOPRIGHT", PetFrameHealthBar, "TOPRIGHT", 0, 2)
 				PetFrameHealthBarText.SetPoint = function()
 				end
-				PetFrameManaBarText:SetFont(xVerminConfig.font.atari, 10, "THINOUTLINE")
+				PetFrameManaBarText:SetFont(xVermin.Config.font.atari, 10, "THINOUTLINE")
 				PetFrameManaBarText:SetPoint("TOPRIGHT", PetFrameManaBar, "TOPRIGHT", 0, 0)
 				PetFrameManaBarText.SetPoint = function()
 				end

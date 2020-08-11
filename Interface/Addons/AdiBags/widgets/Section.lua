@@ -130,7 +130,7 @@ end
 
 function sectionProto:OnAcquire(container, name, category)
 	self:SetParent(container)
-	self.name = name
+	self.name = name == "Miscellaneous" and "Misc" or name
 	self.category = category or name
 	self.key = BuildSectionKey(name, category)
 	self:SetSizeInSlots(0, 0)
@@ -138,7 +138,6 @@ function sectionProto:OnAcquire(container, name, category)
 	self.container = container
 	self:RegisterMessage("AdiBags_OrderChanged", "FullLayout")
 	self.Header:SetText(self.name)
-	-- self.Header:SetText("")
 	self:UpdateHeaderScripts()
 end
 

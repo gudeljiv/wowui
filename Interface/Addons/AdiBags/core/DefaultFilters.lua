@@ -171,9 +171,7 @@ function addon:SetupDefaultFilters()
 		itemCat.uiName = L["Item category"]
 		itemCat.uiDesc =
 			L["Put items in sections depending on their first-level category at the Auction House."] ..
-			"\n|cffff7700" ..
-				L["Please note this filter matchs every item. Any filter with lower priority than this one will have no effect."] ..
-					"|r"
+			"\n|cffff7700" .. L["Please note this filter matchs every item. Any filter with lower priority than this one will have no effect."] .. "|r"
 
 		function itemCat:OnInitialize(slotData)
 			self.db =

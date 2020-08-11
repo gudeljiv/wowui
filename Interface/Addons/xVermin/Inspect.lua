@@ -1,3 +1,5 @@
+local _, xVermin = ...
+
 local btn = CreateFrame("BUTTON", "MyBindingInspectTargetButton")
 SetBindingClick("I", btn:GetName())
 btn:SetScript(

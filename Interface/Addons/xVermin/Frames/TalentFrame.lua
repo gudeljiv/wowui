@@ -1,3 +1,5 @@
+local _, xVermin = ...
+
 local function SkinTalents()
 	for i = 1, 20 do
 		local frame = _G["TalentFrameTalent" .. i]

@@ -1,3 +1,5 @@
+local _, xVermin = ...
+
 local PetHappinessFrame = CreateFrame("Frame", "CustomContainer_PetHappinessFrame", CustomContainer_Combat)
 PetHappinessFrame:SetPoint("BOTTOM", CustomContainer_Combat, "TOP", 0, 10)
 PetHappinessFrame:SetWidth(35)

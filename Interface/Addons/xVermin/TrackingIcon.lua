@@ -1,3 +1,5 @@
+local _, xVermin = ...
+
 local TrackingIconFrame = CreateFrame("Frame", "TrackingIconFrame", Minimap)
 TrackingIconFrame:SetPoint("TOPLEFT", Minimap, "TOPLEFT", 5, -5)
 TrackingIconFrame:SetWidth(16)

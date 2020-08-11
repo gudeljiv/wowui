@@ -1,3 +1,4 @@
+-- local _, xVermin = ...
 -- local function SkinMailBox()
 -- 	local items = GetInboxNumItems()
 -- 	if items > 0 then

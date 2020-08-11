@@ -1,3 +1,5 @@
+local _, xVermin = ...
+
 local AutoCarrot_trinketId = nil
 
 local f = CreateFrame("Frame")

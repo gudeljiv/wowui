@@ -1,3 +1,5 @@
+local _, xVermin = ...
+
 _G.CHAT_FLAG_AFK = "[AFK] "
 _G.CHAT_FLAG_DND = "[DND] "
 _G.CHAT_FLAG_GM = "[GM] "
@@ -81,7 +83,7 @@ local chat = CreateFrame("Frame")
 chat:SetScript(
 	"OnEvent",
 	function()
-		local chatWidth = (GetScreenWidth() * UIParent:GetEffectiveScale()) / (4.2 * xVerminConfig.UIscale)
+		local chatWidth = (GetScreenWidth() * UIParent:GetEffectiveScale()) / (4.2 * xVermin.Config.UIscale)
 
 		FCF_ResetChatWindows()
 		JoinChannelByName("WorldDefense")

@@ -1,3 +1,5 @@
+local _, xVermin = ...
+
 SpellBookFrame:HookScript(
 	"OnShow",
 	function(self)

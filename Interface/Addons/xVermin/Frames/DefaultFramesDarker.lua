@@ -1,3 +1,5 @@
+local _, xVermin = ...
+
 for i, v in pairs(
 	{
 		LootFrameBg,

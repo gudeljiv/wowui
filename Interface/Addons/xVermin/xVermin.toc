@@ -24,7 +24,7 @@ AutoCarrot.lua
 AutoBuyAmmo.lua
 AutoDismount.lua
 AutoRepair.lua
-AutoSellJunk.lua
+AutoJunk.lua
 BestFood.lua
 BuffSource.lua
 Bindings.lua

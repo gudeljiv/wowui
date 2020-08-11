@@ -1,3 +1,5 @@
+local _, xVermin = ...
+
 local function ProcessAura(tooltip, func, ...)
 	local ok, _, _, _, _, _, _, caster = pcall(func, ...) --	Going to let the function validate args (an error should've already been thrown if invalid, just ignore it here)
 	if ok and caster then

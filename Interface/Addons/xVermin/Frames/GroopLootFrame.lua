@@ -1,3 +1,5 @@
+local _, xVermin = ...
+
 function RepositionLootFrames()
 	-- if not _G["LootRollMoverAnchor_Frame"] then return end
 	-- if not LRMDB then return end

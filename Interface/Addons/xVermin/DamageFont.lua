@@ -1,7 +1,9 @@
+local _, xVermin = ...
+
 DamageFont = CreateFrame("Frame", "DamageFont")
 
 function DamageFont:ApplySystemFonts()
-	DAMAGE_TEXT_FONT = xVerminConfig.font.damage
+	DAMAGE_TEXT_FONT = xVermin.Config.font.damage
 end
 
 DamageFont:SetScript(
