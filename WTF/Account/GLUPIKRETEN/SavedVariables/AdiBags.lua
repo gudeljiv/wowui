@@ -15,15 +15,19 @@ AdiBagsDB = {
 				["Default"] = {
 					["version"] = 3,
 					["overrides"] = {
+						[7912] = "Trade Goods#Mining",
+						[10940] = "Trade Goods#Enchanting",
 						[4306] = "Trade Goods#Cloth",
 						[2453] = "Trade Goods#Herbs",
 						[2776] = "Trade Goods#Mining",
 						[785] = "Trade Goods#Herbs",
 						[2840] = "Trade Goods#Mining",
 						[1251] = "Trade Goods#Bandages",
+						[11138] = "Trade Goods#Enchanting",
 						[2770] = "Trade Goods#Mining",
 						[3030] = "Ammunition#Ammo",
 						[3857] = "Trade Goods#Mining",
+						[3369] = "Trade Goods#Herbs",
 						[3818] = "Trade Goods#Herbs",
 						[3385] = "Consumable#Potions",
 						[2771] = "Trade Goods#Mining",
@@ -35,19 +39,23 @@ AdiBagsDB = {
 						[3355] = "Trade Goods#Herbs",
 						[3576] = "Trade Goods#Mining",
 						[2450] = "Trade Goods#Herbs",
+						[2836] = "Trade Goods#Mining",
 						[2592] = "Trade Goods#Cloth",
 						[3860] = "Trade Goods#Mining",
+						[11083] = "Trade Goods#Enchanting",
 						[3577] = "Trade Goods#Mining",
+						[2841] = "Trade Goods#Mining",
 						[1710] = "Consumable#Potions",
 						[3859] = "Trade Goods#Mining",
+						[2775] = "Trade Goods#Mining",
+						[3356] = "Trade Goods#Herbs",
+						[2589] = "Trade Goods#Cloth",
 						[929] = "Consumable#Potions",
 						[2581] = "Trade Goods#Bandages",
-						[2589] = "Trade Goods#Cloth",
-						[2775] = "Trade Goods#Mining",
 						[2452] = "Trade Goods#Herbs",
 						[2838] = "Trade Goods#Mining",
-						[3356] = "Trade Goods#Herbs",
-						[2841] = "Trade Goods#Mining",
+						[10939] = "Trade Goods#Enchanting",
+						[2835] = "Trade Goods#Mining",
 					},
 				},
 			},
@@ -70,9 +78,7 @@ AdiBagsDB = {
 				["Default"] = {
 					["glowColor"] = {
 						0.0627450980392157, -- [1]
-						nil, -- [2]
-						0.243137254901961, -- [3]
-						0.700000017881393, -- [4]
+						[3] = 0.243137254901961,
 					},
 				},
 			},
@@ -132,7 +138,7 @@ AdiBagsDB = {
 					nil, -- [1]
 					nil, -- [2]
 					0, -- [3]
-					0.689999997615814, -- [4]
+					0.8, -- [4]
 				},
 				["border"] = "None",
 				["insets"] = 2,

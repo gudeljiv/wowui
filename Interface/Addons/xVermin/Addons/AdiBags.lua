@@ -28,7 +28,7 @@
 -- end
 if (IsAddOnLoaded("AdiBags")) then
 	local AdiBagsContainer = _G["AdiBagsContainer1"]
-	print("ab", AdiBagsContainer)
+
 -- AdiBagsContainer:HookScript(
 -- 	"OnShow",
 -- 	function()

@@ -22,6 +22,7 @@ frame:SetScript(
 		SetCVar("chatClassColorOverride", 0)
 		SetCVar("ShowClassColorInFriendlyNameplate", 1)
 		SetCVar("scriptErrors", "1")
+		SetCVar("alwaysShowActionBars", "1")
 	end
 )
 

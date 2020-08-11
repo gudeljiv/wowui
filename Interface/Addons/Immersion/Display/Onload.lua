@@ -1,5 +1,5 @@
 local _, L = ...
-local frame = _G[ _ .. 'Frame' ]
+local frame = _G[_ .. "Frame"]
 local talkbox = frame.TalkBox
 local titles = frame.TitleButtons
 local inspector = frame.Inspector
@@ -25,33 +25,36 @@ inspector:SetIgnoreParentAlpha(true)
 ----------------------------------
 -- Register events for main frame
 ----------------------------------
-for _, event in pairs({
-	'ADDON_LOADED',
---	'ITEM_TEXT_BEGIN', 	-- Starting to read a book
---	'ITEM_TEXT_READY', 	-- New book text is ready
---	'ITEM_TEXT_CLOSED', -- Stop reading a book
-	'GOSSIP_CLOSED',	-- Close gossip frame
-	'GOSSIP_SHOW',		-- Show gossip options, can be a mix of gossip/quests
-	'QUEST_ACCEPTED', 	-- Use this event for on-the-fly quest text tracking.
-	'QUEST_COMPLETE',	-- Quest completed
-	'QUEST_DETAIL',		-- Quest details/objectives/accept frame
-	'QUEST_FINISHED',	-- Fires when quest frame is closed
-	'QUEST_GREETING',	-- Multiple quests to choose from, but no gossip options
---	'QUEST_IGNORED',	-- Ignore the currently shown quest
-	'QUEST_PROGRESS',	-- Fires when you click on a quest you're currently on
-	'QUEST_ITEM_UPDATE', -- Item update while in convo, refresh frames.
---	'MERCHANT_SHOW', 	-- Force close gossip on merchant interaction.
-	'NAME_PLATE_UNIT_ADDED', 	-- For nameplate mode
-	'NAME_PLATE_UNIT_REMOVED', 	-- For nameplate mode
-	'SUPER_TRACKED_QUEST_CHANGED',
-}) do frame:RegisterEvent(event) end
-
+for _, event in pairs(
+	{
+		"ADDON_LOADED",
+		--	'ITEM_TEXT_BEGIN', 	-- Starting to read a book
+		--	'ITEM_TEXT_READY', 	-- New book text is ready
+		--	'ITEM_TEXT_CLOSED', -- Stop reading a book
+		"GOSSIP_CLOSED", -- Close gossip frame
+		"GOSSIP_SHOW", -- Show gossip options, can be a mix of gossip/quests
+		"QUEST_ACCEPTED", -- Use this event for on-the-fly quest text tracking.
+		"QUEST_COMPLETE", -- Quest completed
+		"QUEST_DETAIL", -- Quest details/objectives/accept frame
+		"QUEST_FINISHED", -- Fires when quest frame is closed
+		"QUEST_GREETING", -- Multiple quests to choose from, but no gossip options
+		--	'QUEST_IGNORED',	-- Ignore the currently shown quest
+		"QUEST_PROGRESS", -- Fires when you click on a quest you're currently on
+		"QUEST_ITEM_UPDATE", -- Item update while in convo, refresh frames.
+		--	'MERCHANT_SHOW', 	-- Force close gossip on merchant interaction.
+		"NAME_PLATE_UNIT_ADDED", -- For nameplate mode
+		"NAME_PLATE_UNIT_REMOVED", -- For nameplate mode
+		"SUPER_TRACKED_QUEST_CHANGED"
+	}
+) do
+	frame:RegisterEvent(event)
+end
 
 frame.IgnoreResetEvent = {
 	QUEST_ACCEPTED = true,
 	NAME_PLATE_UNIT_ADDED = true,
 	NAME_PLATE_UNIT_REMOVED = true,
-	SUPER_TRACKED_QUEST_CHANGED = true,
+	SUPER_TRACKED_QUEST_CHANGED = true
 }
 
 frame.IgnoreGossipEvent = {
@@ -60,49 +63,52 @@ frame.IgnoreGossipEvent = {
 	QUEST_ACCEPTED = true,
 	NAME_PLATE_UNIT_ADDED = true,
 	NAME_PLATE_UNIT_REMOVED = true,
-	SUPER_TRACKED_QUEST_CHANGED = true,
+	SUPER_TRACKED_QUEST_CHANGED = true
 }
 
 ----------------------------------
 -- Register events for titlebuttons
 ----------------------------------
-for _, event in pairs({
-	'GOSSIP_CLOSED',	-- Hide buttons
-	'GOSSIP_SHOW',		-- Show gossip options, can be a mix of gossip/quests
-	'QUEST_COMPLETE',	-- Hide when going from gossip -> complete
-	'QUEST_DETAIL',		-- Hide when going from gossip -> detail
-	'QUEST_FINISHED',	-- Hide when going from gossip -> finished 
-	'QUEST_GREETING',	-- Show quest options, why is this a thing again?
---	'QUEST_IGNORED',	-- Hide when using ignore binding?
-	'QUEST_PROGRESS',	-- Hide when going from gossip -> active quest
---	'QUEST_LOG_UPDATE',	-- If quest changes while interacting
-}) do titles:RegisterEvent(event) end
+for _, event in pairs(
+	{
+		"GOSSIP_CLOSED", -- Hide buttons
+		"GOSSIP_SHOW", -- Show gossip options, can be a mix of gossip/quests
+		"QUEST_COMPLETE", -- Hide when going from gossip -> complete
+		"QUEST_DETAIL", -- Hide when going from gossip -> detail
+		"QUEST_FINISHED", -- Hide when going from gossip -> finished
+		"QUEST_GREETING", -- Show quest options, why is this a thing again?
+		--	'QUEST_IGNORED',	-- Hide when using ignore binding?
+		"QUEST_PROGRESS" -- Hide when going from gossip -> active quest
+		--	'QUEST_LOG_UPDATE',	-- If quest changes while interacting
+	}
+) do
+	titles:RegisterEvent(event)
+end
 
-titles:RegisterUnitEvent('UNIT_QUEST_LOG_CHANGED', 'player')
-
-
+titles:RegisterUnitEvent("UNIT_QUEST_LOG_CHANGED", "player")
 
 ----------------------------------
 -- Load SavedVaribles, config and compat
 ----------------------------------
 function frame:ADDON_LOADED(name)
 	if name == _ then
-		local svref = _ .. 'Setup'
+		-- If the compatibile addon loads after Immersion, run the function and remove from list.
+		local svref = _ .. "Setup"
 		L.cfg = _G[svref] or L.GetDefaultConfig()
 		_G[svref] = L.cfg
 
 		-- Set module scales
-		talkbox:SetScale(L('boxscale'))
-		titles:SetScale(L('titlescale'))
-		elements:SetScale(L('elementscale'))
-		self:SetScale(L('scale'))
+		talkbox:SetScale(L("boxscale"))
+		titles:SetScale(L("titlescale"))
+		elements:SetScale(L("elementscale"))
+		self:SetScale(L("scale"))
 
 		-- Set the module points
-		talkbox:SetPoint(L('boxpoint'), UIParent, L('boxoffsetX'), L('boxoffsetY'))
-		titles:SetPoint('CENTER', UIParent, 'CENTER', L('titleoffset'), L('titleoffsetY'))
+		talkbox:SetPoint(L("boxpoint"), UIParent, L("boxoffsetX"), L("boxoffsetY"))
+		titles:SetPoint("CENTER", UIParent, "CENTER", L("titleoffset"), L("titleoffsetY"))
 
-		self:SetFrameStrata(L('strata'))
-		talkbox:SetFrameStrata(L('strata'))
+		self:SetFrameStrata(L("strata"))
+		talkbox:SetFrameStrata(L("strata"))
 
 		-- If previous version and flyins were disabled, set anidivisor to instant
 		if L.cfg.disableflyin then
@@ -110,33 +116,35 @@ function frame:ADDON_LOADED(name)
 			L.cfg.anidivisor = 1
 		end
 
-		-- Hide portrait 
-		talkbox.PortraitFrame:SetShown(not L('disableportrait'))
-		talkbox.MainFrame.Model.PortraitBG:SetShown(not L('disableportrait'))
+		-- Hide portrait
+		talkbox.PortraitFrame:SetShown(not L("disableportrait"))
+		talkbox.MainFrame.Model.PortraitBG:SetShown(not L("disableportrait"))
 
 		-- Show solid background
-		talkbox.BackgroundFrame.SolidBackground:SetShown(L('solidbackground'))
-		elements:SetBackdrop(L('solidbackground') and L.Backdrops.TALKBOX_SOLID or L.Backdrops.TALKBOX)
+		talkbox.BackgroundFrame.SolidBackground:SetShown(L("solidbackground"))
+		elements:SetBackdrop(L("solidbackground") and L.Backdrops.TALKBOX_SOLID or L.Backdrops.TALKBOX)
 
 		-- Set frame ignore for hideUI features on load.
-		L.ToggleIgnoreFrame(Minimap, not L('hideminimap'))
-		L.ToggleIgnoreFrame(MinimapCluster, not L('hideminimap'))
-		L.ToggleIgnoreFrame(ObjectiveTrackerFrame, not L('hidetracker'))
+		L.ToggleIgnoreFrame(Minimap, not L("hideminimap"))
+		L.ToggleIgnoreFrame(MinimapCluster, not L("hideminimap"))
+		L.ToggleIgnoreFrame(ObjectiveTrackerFrame, not L("hidetracker"))
 
 		-- Register options table
-		LibStub('AceConfigRegistry-3.0'):RegisterOptionsTable(_, L.options)
-		L.config = LibStub('AceConfigDialog-3.0'):AddToBlizOptions(_)
+		LibStub("AceConfigRegistry-3.0"):RegisterOptionsTable(_, L.options)
+		L.config = LibStub("AceConfigDialog-3.0"):AddToBlizOptions(_)
 
 		-- Slash handler
-		_G['SLASH_' .. _:upper() .. '1'] = '/' .. _:lower()
-		SlashCmdList[_:upper()] = function() LibStub('AceConfigDialog-3.0'):Open(_) end
+		_G["SLASH_" .. _:upper() .. "1"] = "/" .. _:lower()
+		SlashCmdList[_:upper()] = function()
+			LibStub("AceConfigDialog-3.0"):Open(_)
+		end
 
 		-- Add some sexiness to the config frame.
-		local logo = CreateFrame('Frame', nil, L.config)
+		local logo = CreateFrame("Frame", nil, L.config)
 		logo:SetFrameLevel(4)
 		logo:SetSize(64, 64)
-		logo:SetPoint('TOPRIGHT', 8, 24)
-		logo:SetBackdrop({bgFile = ('Interface\\AddOns\\%s\\Textures\\Logo'):format(_)})
+		logo:SetPoint("TOPRIGHT", 8, 24)
+		logo:SetBackdrop({bgFile = ("Interface\\AddOns\\%s\\Textures\\Logo"):format(_)})
 		L.config.logo = logo
 
 		-- Run functions for compatibility with other addons on load.
@@ -153,21 +161,20 @@ function frame:ADDON_LOADED(name)
 				L.compat[addOn] = nil
 			end
 		end
-	-- If the compatibile addon loads after Immersion, run the function and remove from list.
 	elseif L.compat and L.compat[name] then
 		L.compat[name](self)
 		L.compat[name] = nil
 	end
 
 	-- The L.compat table is empty -> all addons are loaded, disabled or missing.
-	-- Garbage collect the table. 
+	-- Garbage collect the table.
 	if not next(L.compat) then
 		L.compat = nil
 	end
 
 	-- Immersion is loaded, no more addons to track. Garbage collect this function.
 	if not L.compat and IsAddOnLoaded(_) then
-		self:UnregisterEvent('ADDON_LOADED')
+		self:UnregisterEvent("ADDON_LOADED")
 		self.ADDON_LOADED = nil
 	end
 end
@@ -214,7 +221,7 @@ end
 -- region didn't exist on load.
 ----------------------------------
 local name = talkbox.NameFrame.Name
-name:SetPoint('TOPLEFT', talkbox.PortraitFrame.Portrait, 'TOPRIGHT', 2, -19)
+name:SetPoint("TOPLEFT", talkbox.PortraitFrame.Portrait, "TOPRIGHT", 2, -19)
 
 ----------------------------------
 -- Model script, light
@@ -237,25 +244,25 @@ function text:OnDisplayLineCallback(text)
 	talkbox.TextFrame.FadeIn:Stop()
 	talkbox.TextFrame.FadeIn:Play()
 	if text then
-		local isEmote = text:match('%b<>')
+		local isEmote = text:match("%b<>")
 		self:SetVertexColor(1, isEmote and 0.5 or 1, isEmote and 0 or 1)
 		model:PrepareAnimation(text, isEmote)
 		model:RunSequence(self:GetModifiedTime(), self:IsSequence())
 	end
-	
+
 	counter:Hide()
 	if self:IsSequence() then
 		if not self:IsFinished() then
 			counter:Show()
 			counter:SetText(self:GetProgress())
 		end
-		frame:AddHint('SQUARE', self:GetNumRemaining() <= 1 and RESET or NEXT)
+		frame:AddHint("SQUARE", self:GetNumRemaining() <= 1 and RESET or NEXT)
 	else
-		frame:RemoveHint('SQUARE')
+		frame:RemoveHint("SQUARE")
 	end
 
 	if self:IsVisible() then
-		if L('disableprogression') then
+		if L("disableprogression") then
 			self:PauseTimer()
 		end
 	end
@@ -263,7 +270,7 @@ end
 
 function text:OnFinishedCallback()
 	-- remove the last playback line, because the text played until completion.
-	if ( L('onthefly') or L('supertracked') ) and not self:IsForceFinishedFlagged() then
+	if (L("onthefly") or L("supertracked")) and not self:IsForceFinishedFlagged() then
 		frame:RemoveToastByText(self.storedText)
 	end
 end
@@ -271,9 +278,9 @@ end
 ----------------------------------
 -- Misc fixes
 ----------------------------------
-talkbox:RegisterForClicks('LeftButtonUp', 'RightButtonUp')
-talkbox:RegisterForDrag('LeftButton')
-talkbox.TextFrame.SpeechProgress:SetFont('Fonts\\MORPHEUS.ttf', 16, '')
+talkbox:RegisterForClicks("LeftButtonUp", "RightButtonUp")
+talkbox:RegisterForDrag("LeftButton")
+talkbox.TextFrame.SpeechProgress:SetFont("Fonts\\MORPHEUS.ttf", 16, "")
 
 ----------------------------------
 -- Set movable frames
@@ -289,7 +296,7 @@ titles:SetUserPlaced(false)
 -- Anchor the real talking head to the fake talking head,
 -- make it appear IN PLACE of the fake one if the fake one isn't shown.
 --------------------------------
-do 
+do
 	local function HookTalkingHead()
 		-- use this as assertion. if something else beat Immersion to it and manipulated the frame,
 		-- it shouldn't be moved, even if enabled by user. in essence, dummy protection.
@@ -299,7 +306,7 @@ do
 			local isTalkingHeadMoved, isDragging
 
 			local function Drag(self)
-				if isTalkingHeadMoved and L('movetalkinghead') then
+				if isTalkingHeadMoved and L("movetalkinghead") then
 					isDragging = true
 					talkbox:OnDragStart()
 				end
@@ -314,10 +321,11 @@ do
 
 			local function Move(self)
 				-- if the move is allowed
-				if L('movetalkinghead') then
+				if L("movetalkinghead") then
+					-- if the setting is toggled off and the frame was manipulated, reset.
 					self:ClearAllPoints(self)
-					self:RegisterForDrag('LeftButton')
-					
+					self:RegisterForDrag("LeftButton")
+
 					if not isTalkingHeadMoved then
 						-- Need this to keep it from resetting position
 						self.ignoreFramePositionManager = true
@@ -339,12 +347,10 @@ do
 					if not talkbox:IsVisible() then
 						talkbox:SetOffset() -- force update; (1) reset the offset calculation
 						talkbox:SetExtraOffset(0) -- (2) make sure it isn't offset by elements from prior quest
-						self:SetPoint('BOTTOM', talkbox, 'BOTTOM', 0, 0)
+						self:SetPoint("BOTTOM", talkbox, "BOTTOM", 0, 0)
 					else
-						self:SetPoint('BOTTOM', talkbox, 'TOP', 0, 0)
+						self:SetPoint("BOTTOM", talkbox, "TOP", 0, 0)
 					end
-
-				-- if the setting is toggled off and the frame was manipulated, reset.
 				elseif isTalkingHeadMoved then
 					UIPARENT_MANAGED_FRAME_POSITIONS.TalkingHeadFrame = managedFramePos
 					self.ignoreFramePositionManager = nil
@@ -359,12 +365,22 @@ do
 				end
 			end
 
-			TalkingHeadFrame:HookScript('OnShow', Move)
-			TalkingHeadFrame:HookScript('OnHide', Drop)
-			TalkingHeadFrame:HookScript('OnDragStart', Drag)
-			TalkingHeadFrame:HookScript('OnDragStop', Drop)
-			talkbox:HookScript('OnShow', function() Move(TalkingHeadFrame) end)
-			talkbox:HookScript('OnHide', function() Move(TalkingHeadFrame) end)
+			TalkingHeadFrame:HookScript("OnShow", Move)
+			TalkingHeadFrame:HookScript("OnHide", Drop)
+			TalkingHeadFrame:HookScript("OnDragStart", Drag)
+			TalkingHeadFrame:HookScript("OnDragStop", Drop)
+			talkbox:HookScript(
+				"OnShow",
+				function()
+					Move(TalkingHeadFrame)
+				end
+			)
+			talkbox:HookScript(
+				"OnHide",
+				function()
+					Move(TalkingHeadFrame)
+				end
+			)
 		end
 	end
 
@@ -372,22 +388,21 @@ do
 	if TalkingHeadFrame then
 		HookTalkingHead()
 	elseif TalkingHead_LoadUI then -- Hook to the loading function.
-		hooksecurefunc('TalkingHead_LoadUI', HookTalkingHead)
+		hooksecurefunc("TalkingHead_LoadUI", HookTalkingHead)
 	end
 end
-
 
 -- Azerite Empowered Item UI
 do
 	local loaded = false
 	local function ignoreAzeriteItemUI()
-		if not loaded and IsAddOnLoaded('Blizzard_AzeriteUI') then
+		if not loaded and IsAddOnLoaded("Blizzard_AzeriteUI") then
 			loaded = true
 			L.ToggleIgnoreFrame(AzeriteEmpoweredItemUI, true)
 		end
 	end
 	if OpenAzeriteEmpoweredItemUIFromItemLocation and OpenAzeriteEmpoweredItemUIFromLink then
-		hooksecurefunc('OpenAzeriteEmpoweredItemUIFromItemLocation', ignoreAzeriteItemUI)
-		hooksecurefunc('OpenAzeriteEmpoweredItemUIFromLink', ignoreAzeriteItemUI)
+		hooksecurefunc("OpenAzeriteEmpoweredItemUIFromItemLocation", ignoreAzeriteItemUI)
+		hooksecurefunc("OpenAzeriteEmpoweredItemUIFromLink", ignoreAzeriteItemUI)
 	end
 end
