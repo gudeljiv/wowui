@@ -1,6 +1,6 @@
 local _, Rotation = ...
 
-function Rotation.inRange(type)
+function Rotation.AOE(type)
 	local type = type or "bool"
 	local inRange = 0
 
