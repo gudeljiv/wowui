@@ -31,7 +31,7 @@ AdiBagsDB = {
 						[3575] = "Trade Goods#Mining",
 						[2771] = "Trade Goods#Mining",
 						[3858] = "Trade Goods#Mining",
-						[2589] = "Trade Goods#Cloth",
+						[3860] = "Trade Goods#Mining",
 						[3577] = "Trade Goods#Mining",
 						[2841] = "Trade Goods#Mining",
 						[3818] = "Trade Goods#Herbs",
@@ -43,8 +43,8 @@ AdiBagsDB = {
 						[2452] = "Trade Goods#Herbs",
 						[785] = "Trade Goods#Herbs",
 						[3355] = "Trade Goods#Herbs",
-						[3860] = "Trade Goods#Mining",
 						[2775] = "Trade Goods#Mining",
+						[2589] = "Trade Goods#Cloth",
 					},
 				},
 			},
@@ -55,6 +55,7 @@ AdiBagsDB = {
 					["splitBySubclass"] = {
 						["Recipe"] = false,
 						["Consumable"] = false,
+						["Misc"] = false,
 						["Trade Goods"] = false,
 						["Miscellaneous"] = false,
 					},
@@ -116,23 +117,16 @@ AdiBagsDB = {
 	["profiles"] = {
 		["Default"] = {
 			["virtualStacks"] = {
-				["stackable"] = true,
 				["incomplete"] = true,
 			},
 			["scale"] = 1,
 			["maxHeight"] = 0.3,
 			["skin"] = {
-				["BackpackColor"] = {
-					nil, -- [1]
-					nil, -- [2]
-					nil, -- [3]
-					0.705127239227295, -- [4]
-				},
 				["BankColor"] = {
 					nil, -- [1]
 					nil, -- [2]
 					0, -- [3]
-					0.694444328546524, -- [4]
+					0.689999997615814, -- [4]
 				},
 				["border"] = "None",
 				["insets"] = 2,
@@ -143,12 +137,12 @@ AdiBagsDB = {
 					["yOffset"] = 386.666717529297,
 				},
 				["Bank"] = {
-					["xOffset"] = 647.096862792969,
-					["yOffset"] = -419.033508300781,
+					["xOffset"] = 851.352294921875,
+					["yOffset"] = -329.717529296875,
 				},
 				["Backpack"] = {
-					["xOffset"] = -325.551513671875,
-					["yOffset"] = 442.709289550781,
+					["xOffset"] = -236.235473632813,
+					["yOffset"] = 408.662445068359,
 				},
 			},
 			["filters"] = {

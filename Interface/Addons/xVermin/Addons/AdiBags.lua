@@ -26,10 +26,13 @@
 -- 		end
 -- 	)
 -- end
--- -- local AdiBagsContainer = _G["AdiBagsContainer1"]
--- -- AdiBagsContainer:HookScript(
--- -- 	"OnShow",
--- -- 	function()
--- -- 		print("ab opened")
--- -- 	end
--- -- )
+if (IsAddOnLoaded("AdiBags")) then
+	local AdiBagsContainer = _G["AdiBagsContainer1"]
+	print("ab", AdiBagsContainer)
+-- AdiBagsContainer:HookScript(
+-- 	"OnShow",
+-- 	function()
+-- 		print("ab opened")
+-- 	end
+-- )
+end

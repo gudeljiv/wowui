@@ -298,17 +298,6 @@ EavesDropStatsDB = {
 						},
 						["icon"] = 132215,
 					},
-					["Multi-Shot"] = {
-						[-2] = {
-							["time"] = "|cffffffff08/09/20 07:45:52|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMulti-Shot|r|h hits |Hunit:Creature-0-4448-1-177-4147-0000B01DA7:Saltstone Basilisk|hSaltstone Basilisk|h for |cffffffff94|r |cffffffffPhysical|r.",
-							["amount"] = 94,
-						},
-						[2] = {
-							["time"] = "|cffffffff08/09/20 12:30:00|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMulti-Shot|r|h hits |Hunit:Creature-0-4448-1-186-4025-00002FD00B:Bloodfury Ambusher|hBloodfury Ambusher|h for |cffffffff137|r |cffffffffPhysical|r.(Critical)",
-							["amount"] = 137,
-						},
-						["icon"] = 132330,
-					},
 					["Wing Clip"] = {
 						[-2] = {
 							["time"] = "|cffffffff07/16/20 11:51:37|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWing Clip|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-66-3246-00000F738C:Fleeting Plainstrider|hFleeting Plainstrider|h for |cffffffff4|r |cffffffffPhysical|r.",
@@ -319,6 +308,17 @@ EavesDropStatsDB = {
 							["amount"] = 8,
 						},
 						["icon"] = 132309,
+					},
+					["Multi-Shot"] = {
+						[-2] = {
+							["time"] = "|cffffffff08/09/20 07:45:52|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMulti-Shot|r|h hits |Hunit:Creature-0-4448-1-177-4147-0000B01DA7:Saltstone Basilisk|hSaltstone Basilisk|h for |cffffffff94|r |cffffffffPhysical|r.",
+							["amount"] = 94,
+						},
+						[2] = {
+							["time"] = "|cffffffff08/09/20 12:30:00|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMulti-Shot|r|h hits |Hunit:Creature-0-4448-1-186-4025-00002FD00B:Bloodfury Ambusher|hBloodfury Ambusher|h for |cffffffff137|r |cffffffffPhysical|r.(Critical)",
+							["amount"] = 137,
+						},
+						["icon"] = 132330,
 					},
 				},
 			}, -- [1]

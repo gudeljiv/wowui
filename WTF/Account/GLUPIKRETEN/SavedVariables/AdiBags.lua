@@ -15,36 +15,39 @@ AdiBagsDB = {
 				["Default"] = {
 					["version"] = 3,
 					["overrides"] = {
-						[3576] = "Trade Goods#Mining",
-						[2772] = "Trade Goods#Mining",
-						[3859] = "Trade Goods#Mining",
-						[2776] = "Trade Goods#Mining",
-						[2592] = "Trade Goods#Cloth",
-						[2842] = "Trade Goods#Mining",
-						[929] = "Consumable#Potions",
-						[2775] = "Trade Goods#Mining",
-						[2449] = "Trade Goods#Herbs",
-						[3860] = "Trade Goods#Mining",
+						[4306] = "Trade Goods#Cloth",
 						[2453] = "Trade Goods#Herbs",
-						[3385] = "Consumable#Potions",
-						[3356] = "Trade Goods#Herbs",
-						[3575] = "Trade Goods#Mining",
-						[2771] = "Trade Goods#Mining",
-						[3858] = "Trade Goods#Mining",
-						[2589] = "Trade Goods#Cloth",
-						[3577] = "Trade Goods#Mining",
-						[2841] = "Trade Goods#Mining",
+						[2776] = "Trade Goods#Mining",
 						[785] = "Trade Goods#Herbs",
 						[2840] = "Trade Goods#Mining",
-						[2838] = "Trade Goods#Mining",
-						[4306] = "Trade Goods#Cloth",
-						[3857] = "Trade Goods#Mining",
-						[2450] = "Trade Goods#Herbs",
-						[2452] = "Trade Goods#Herbs",
-						[3818] = "Trade Goods#Herbs",
-						[3355] = "Trade Goods#Herbs",
-						[3030] = "Ammunition#Ammo",
+						[1251] = "Trade Goods#Bandages",
 						[2770] = "Trade Goods#Mining",
+						[3030] = "Ammunition#Ammo",
+						[3857] = "Trade Goods#Mining",
+						[3818] = "Trade Goods#Herbs",
+						[3385] = "Consumable#Potions",
+						[2771] = "Trade Goods#Mining",
+						[2842] = "Trade Goods#Mining",
+						[3858] = "Trade Goods#Mining",
+						[3575] = "Trade Goods#Mining",
+						[2449] = "Trade Goods#Herbs",
+						[2772] = "Trade Goods#Mining",
+						[3355] = "Trade Goods#Herbs",
+						[3576] = "Trade Goods#Mining",
+						[2450] = "Trade Goods#Herbs",
+						[2592] = "Trade Goods#Cloth",
+						[3860] = "Trade Goods#Mining",
+						[3577] = "Trade Goods#Mining",
+						[1710] = "Consumable#Potions",
+						[3859] = "Trade Goods#Mining",
+						[929] = "Consumable#Potions",
+						[2581] = "Trade Goods#Bandages",
+						[2589] = "Trade Goods#Cloth",
+						[2775] = "Trade Goods#Mining",
+						[2452] = "Trade Goods#Herbs",
+						[2838] = "Trade Goods#Mining",
+						[3356] = "Trade Goods#Herbs",
+						[2841] = "Trade Goods#Mining",
 					},
 				},
 			},
@@ -117,7 +120,6 @@ AdiBagsDB = {
 	["profiles"] = {
 		["Default"] = {
 			["virtualStacks"] = {
-				["stackable"] = true,
 				["incomplete"] = true,
 			},
 			["columnWidth"] = {
@@ -126,17 +128,11 @@ AdiBagsDB = {
 			},
 			["maxHeight"] = 0.3,
 			["skin"] = {
-				["BackpackColor"] = {
-					nil, -- [1]
-					nil, -- [2]
-					nil, -- [3]
-					0.705127239227295, -- [4]
-				},
 				["BankColor"] = {
 					nil, -- [1]
 					nil, -- [2]
 					0, -- [3]
-					0.694444328546524, -- [4]
+					0.689999997615814, -- [4]
 				},
 				["border"] = "None",
 				["insets"] = 2,
@@ -147,12 +143,12 @@ AdiBagsDB = {
 					["yOffset"] = 386.666717529297,
 				},
 				["Backpack"] = {
-					["xOffset"] = -325.551513671875,
-					["yOffset"] = 442.709289550781,
+					["xOffset"] = -236.235473632813,
+					["yOffset"] = 408.662445068359,
 				},
 				["Bank"] = {
-					["xOffset"] = 647.096862792969,
-					["yOffset"] = -419.033508300781,
+					["xOffset"] = 851.352294921875,
+					["yOffset"] = -329.717529296875,
 				},
 			},
 			["filters"] = {

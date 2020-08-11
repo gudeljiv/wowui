@@ -48,7 +48,8 @@ Postal3ClassicDB = {
 		["Mxyz - Golemagg"] = {
 			["BlackBook"] = {
 				["recent"] = {
-					"Mxzq|Golemagg|Horde", -- [1]
+					"Vermin|Golemagg|Horde", -- [1]
+					"Mxzq|Golemagg|Horde", -- [2]
 				},
 			},
 		},

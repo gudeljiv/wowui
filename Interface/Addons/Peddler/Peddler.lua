@@ -359,10 +359,8 @@ local function markAdiBagBags()
 		local itemButton = _G["AdiBagsItemButton" .. slotNumber]
 		if itemButton then
 			local _, bag, slot = strsplit("-", tostring(itemButton))
-
 			bag = tonumber(bag)
 			slot = tonumber(slot)
-
 			if bag and slot then
 				checkItem(bag, slot, itemButton)
 			end

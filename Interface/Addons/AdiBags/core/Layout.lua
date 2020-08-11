@@ -103,7 +103,10 @@ local function ManualBagLayout(self)
 	end
 end
 
-function addon:LayoutBags()
+function addon:LayoutBags(arg)
+	if arg and arg == "closed" then
+		SortBags()
+	end
 	local scale = self.db.profile.scale
 	for index, bag in self:IterateBags() do
 		if bag:HasFrame() then
