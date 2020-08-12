@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 1816,
+	["session"] = 1820,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -1270,19 +1270,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [160]
 		{
-			["message"] = "(null)",
-			["session"] = 1780,
-			["time"] = "2020/07/24 16:00:06",
-			["counter"] = 56,
-		}, -- [161]
-		{
 			["message"] = "Interface\\AddOns\\xVermin\\Addons/AdiBags.lua:45: attempt to index global 'myTimer' (a nil value)",
 			["time"] = "2020/08/12 09:23:37",
 			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'myTimer' (a nil value)\"\n",
 			["stack"] = "Interface\\AddOns\\xVermin\\Addons/AdiBags.lua:45: in function <Interface\\AddOns\\xVermin\\Addons/AdiBags.lua:42>\n[C]: ?",
 			["session"] = 1792,
 			["counter"] = 1,
-		}, -- [162]
+		}, -- [161]
 		{
 			["message"] = "[string \"us:Show()\"]:1: attempt to index global 'us' (a nil value)",
 			["time"] = "2020/08/12 09:33:13",
@@ -1290,7 +1284,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"us:Show()\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 1797,
 			["counter"] = 1,
-		}, -- [163]
+		}, -- [162]
 		{
 			["message"] = "[string \"print(us:IsVisible())\"]:1: attempt to index global 'us' (a nil value)",
 			["time"] = "2020/08/12 09:37:29",
@@ -1298,7 +1292,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"print(us:IsVisible())\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 1800,
 			["counter"] = 1,
-		}, -- [164]
+		}, -- [163]
 		{
 			["message"] = "Interface\\FrameXML\\UIParent.lua:3817: attempt to perform arithmetic on local 'challengeLevel' (a nil value)",
 			["time"] = "2020/08/12 12:42:49",
@@ -1306,7 +1300,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\FrameXML\\UIParent.lua:3817: in function <Interface\\FrameXML\\UIParent.lua:3816>\n(tail call): ?\n[string \"print(GetQuestDifficultyColor(level))\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 1804,
 			["counter"] = 1,
-		}, -- [165]
+		}, -- [164]
 		{
 			["message"] = "Interface\\AddOns\\nMinimap\\tab.lua:239: attempt to call method 'GenerateHexColor' (a nil value)",
 			["time"] = "2020/08/12 12:39:37",
@@ -1314,7 +1308,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\nMinimap\\tab.lua:239: in function `nMinimap_UpdateGuildButton'\nInterface\\AddOns\\nMinimap\\tab.lua:279: in function `nMinimap_UpdateGuildMembers'\nInterface\\AddOns\\nMinimap\\tab.lua:325: in function `nMinimapTab_Guild_UpdateScrollFrame'\nInterface\\AddOns\\nMinimap\\tab.lua:333: in function <Interface\\AddOns\\nMinimap\\tab.lua:328>",
 			["session"] = 1804,
 			["counter"] = 21,
-		}, -- [166]
+		}, -- [165]
 		{
 			["message"] = "Interface\\AddOns\\nMinimap\\tab.lua:240: attempt to call method 'GenerateHexColor' (a nil value)",
 			["time"] = "2020/08/12 12:43:26",
@@ -1322,7 +1316,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\nMinimap\\tab.lua:240: in function `nMinimap_UpdateGuildButton'\nInterface\\AddOns\\nMinimap\\tab.lua:280: in function `nMinimap_UpdateGuildMembers'\nInterface\\AddOns\\nMinimap\\tab.lua:326: in function `nMinimapTab_Guild_UpdateScrollFrame'\nInterface\\AddOns\\nMinimap\\tab.lua:334: in function <Interface\\AddOns\\nMinimap\\tab.lua:329>",
 			["session"] = 1808,
 			["counter"] = 31,
-		}, -- [167]
+		}, -- [166]
 		{
 			["message"] = "Interface\\AddOns\\nMinimap\\tab.lua:242: attempt to call method 'GenerateHexColor' (a nil value)",
 			["time"] = "2020/08/12 12:46:58",
@@ -1330,6 +1324,20 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\nMinimap\\tab.lua:242: in function `nMinimap_UpdateGuildButton'\nInterface\\AddOns\\nMinimap\\tab.lua:282: in function `nMinimap_UpdateGuildMembers'\nInterface\\AddOns\\nMinimap\\tab.lua:328: in function `nMinimapTab_Guild_UpdateScrollFrame'\nInterface\\AddOns\\nMinimap\\tab.lua:336: in function <Interface\\AddOns\\nMinimap\\tab.lua:331>",
 			["session"] = 1809,
 			["counter"] = 4,
+		}, -- [167]
+		{
+			["message"] = "Interface\\AddOns\\nMinimap\\tab.lua:774: attempt to index global 'nMinimapTab' (a nil value)",
+			["time"] = "2020/08/12 20:59:29",
+			["locals"] = "_ = \"nMinimap\"\nnMinimap = <table> {\n UpdateGuildText = <function> defined @Interface\\AddOns\\nMinimap\\tab.lua:203\n Config = <table> {\n }\n}\ncfg = <table> {\n scale = 1.100000\n tab = <table> {\n }\n mouseover = <table> {\n }\n location = <table> {\n }\n}\nselect = <function> defined =[C]:-1\nceil = <function> defined =[C]:-1\nmodf = <function> defined =[C]:-1\nformat = <function> defined =[C]:-1\nsort = <function> defined =[C]:-1\ntinsert = <function> defined =[C]:-1\nplayerName = \"Vermin\"\n_ = nil\nplayerRealm = \"Golemagg\"\nNUM_ADDONS_TO_DISPLAY = 86\nactivezone = <table> {\n a = 1\n GetRGB = <function> defined @Interface\\SharedXML\\Util.lua:633\n OnLoad = <function> defined @Interface\\SharedXML\\Util.lua:622\n b = 0\n GenerateHexColorMarkup = <function> defined @Interface\\SharedXML\\Util.lua:664\n WrapTextInColorCode = <function> defined @Interface\\SharedXML\\Util.lua:668\n GenerateHexColor = <function> defined @Interface\\SharedXML\\Util.lua:660\n GetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:641\n IsEqualTo = <function> defined @Interface\\SharedXML\\Util.lua:626\n g = 1\n r = 0.300000\n SetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:649\n GetRGBAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:637\n SetRGB = <function> defined @Interface\\SharedXML\\Util.lua:656\n GetRGBAAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:645\n}\ninactivezone = <table> {\n a = 1\n GetRGB = <function> defined @Interface\\SharedXML\\Util.lua:633\n OnLoad = <function> defined @Interface\\SharedXML\\Util.lua:622\n b = 0.750000\n GenerateHexColorMarkup = <function> defined @Interface\\SharedXML\\Util.lua:664\n WrapTextInColorCode = <function> defined @Interface\\SharedXML\\Util.lua:668\n GenerateHexColor = <function> defined @Interface\\SharedXML\\Util.lua:660\n GetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:641\n IsEqualTo = <function> defined @Interface\\SharedXML\\Util.lua:626\n g = 0.750000\n r = 0.750000\n SetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:649\n GetRGBAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:637\n SetRGB = <function> defined @Interface\\SharedXML\\Util.lua:656\n GetRGBAAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:645\n}\nguildIcon = \"|TInterface\\GossipFrame\\TabardGossipIcon:16:16:0:0:16:16:0:16:0:16|t\"\nfriendIcon = \"|A:groupfinder-icon-friend:18:18:0:0|a\"\nperformanceIcon = \"|TInterface\\AddOns\\nMinimap\\media\\texturePerformance:10:10:0:0:32:32:0:32:0:32|t\"\nFriendListEntries = <table> {\n}\nGuildListEntries = <table> {\n}\nMemoryListEntries = <table> {\n}\nAddonTable = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n 6 = <table> {\n }\n 7 = <table> {\n }\n 8 = <table> {\n }\n 9 = <table> {\n }\n 10 = <table> {\n }\n 11 = <table> {\n }\n 12 = <table> {\n }\n 13 = <table> {\n }\n 14 = <table> {\n }\n 15 = <table> {\n }\n 16 = <table> {\n }\n 17 = <table> {\n }\n 18 = <table> {\n }\n 19 = <table> {\n }\n 20 = <table> {\n }\n 21 = <table> {\n }\n 22 = <table> {\n }\n 23 = <table> {\n }\n 24 = <table> {\n }\n 25 = <table> {\n }\n 26 = <table> {\n }\n 27 = <table> {\n }\n 28 = <table> {\n }\n 29 = <table> {\n }\n 30 = <table> {\n }\n 31 = <table> {\n }\n 32 = <table> {\n }\n 33 = <table> {\n }\n 34 = <table> {\n }\n 35 = <table> {\n }\n 36 = <table> {\n }\n 37 = <table> {\n }\n 38 = <table> {\n }\n 39 = <table> {\n }\n 40 = <table> {\n }\n 41 = <table> {\n }\n 42 = <table> {\n }\n 43 = <table> {\n }\n 44 = <table> {\n }\n 45 = <table> {\n }\n 46 = <table> {\n }\n 47 = <table> {\n }\n 48 = <table> {\n }\n 49 = <table> {\n }\n 50 = <table> {\n }\n 51 = <table> {\n }\n 52 = <table> {\n }\n 53 = <table> {\n }\n 54 = <table> {\n }\n 55 = <table> {\n }\n 56 = <table> {\n }\n 57 = <table> {\n }\n 58 = <table> {\n }\n 59 = <table> {\n }\n 60 = <table> {\n }\n 61 = <table> {\n }\n 62 = <table> {\n }\n 63 = <table> {\n }\n 64 = <table> {\n }\n 65 = <table> {\n }\n 66 = <table> {\n }\n 67 = <table> {\n }\n 68 = <table> {\n }\n 69 = <table> {\n }\n 70 = <table> {\n }\n 71 = <table> {\n }\n 72 = <table> {\n }\n 73 = <table> {\n }\n 74 = <table> {\n }\n 75 = <table> {\n }\n 76 = <table> {\n }\n 77 = <table> {\n }\n 78 = <table> {\n }\n 79 = <table> {\n }\n 80 = <table> {\n }\n 81 = <table> {\n }\n 82 = <table> {\n }\n 83 = <table",
+			["stack"] = "Interface\\AddOns\\nMinimap\\tab.lua:774: in main chunk",
+			["session"] = 1820,
+			["counter"] = 1,
 		}, -- [168]
+		{
+			["message"] = "(null)",
+			["session"] = 1820,
+			["time"] = "2020/07/24 16:00:06",
+			["counter"] = 60,
+		}, -- [169]
 	},
 }

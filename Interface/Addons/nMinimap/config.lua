@@ -5,7 +5,7 @@ nMinimap.Config = {
 	location = {"TOPRIGHT", UIParent, "TOPRIGHT", -26, -26}, -- Default: {"TOPRIGHT", UIParent, "TOPRIGHT", -26, -26}
 	tab = {
 		show = true,
-		showAlways = false,
+		showAlways = true,
 		showBelowMinimap = false,
 		-- Number of addons shown in the memory section of the info tooltip. Set to "nil" to show all.
 		numberOfAddons = nil

@@ -5,8 +5,9 @@ local function ProcessAura(tooltip, func, ...)
 	if ok and caster then
 		local pet = caster
 		caster = (UnitIsUnit(caster, "pet") and "player" or caster:gsub("[pP][eE][tT]", ""))
-
-		tooltip:AddDoubleLine(" ", (pet == caster and "|cffffc000Source:|r %s" or "|cffffc000Source:|r %s (%s)"):format(UnitName(caster), UnitName(pet)), 1, 0.975, 0, RAID_CLASS_COLORS[select(2, UnitClass(caster))]:GetRGB())
+		if caster then
+			tooltip:AddDoubleLine(" ", (pet == caster and "|cffffc000Source:|r %s" or "|cffffc000Source:|r %s (%s)"):format(UnitName(caster), UnitName(pet)), 1, 0.975, 0, RAID_CLASS_COLORS[select(2, UnitClass(caster))]:GetRGB())
+		end
 		tooltip:Show()
 	end
 end

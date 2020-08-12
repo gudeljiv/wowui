@@ -23,26 +23,26 @@ SkilletDB = {
 			[6452] = {
 				["Anti-Venom"] = true,
 			},
-			[3860] = {
-				["Smelt Mithril"] = true,
-			},
-			[2842] = {
-				["Smelt Silver"] = true,
-			},
-			[2840] = {
-				["Smelt Copper"] = true,
+			[3530] = {
+				["Wool Bandage"] = true,
 			},
 			[8544] = {
 				["Mageweave Bandage"] = true,
 			},
+			[3575] = {
+				["Smelt Iron"] = true,
+			},
+			[3577] = {
+				["Smelt Gold"] = true,
+			},
 			[1251] = {
 				["Linen Bandage"] = true,
 			},
-			[3530] = {
-				["Wool Bandage"] = true,
+			[3860] = {
+				["Smelt Mithril"] = true,
 			},
-			[3575] = {
-				["Smelt Iron"] = true,
+			[2840] = {
+				["Smelt Copper"] = true,
 			},
 			[2841] = {
 				["Smelt Bronze"] = true,
@@ -53,8 +53,8 @@ SkilletDB = {
 			[3576] = {
 				["Smelt Tin"] = true,
 			},
-			[3577] = {
-				["Smelt Gold"] = true,
+			[2842] = {
+				["Smelt Silver"] = true,
 			},
 			[3859] = {
 				["Smelt Steel"] = true,
@@ -149,7 +149,7 @@ SkilletDB = {
 			["standaloneQueueLocation_x"] = -280.833190917969,
 			["ignoreListLocation_x"] = 136.170593261719,
 			["plugins"] = {
-				["AUC"] = {
+				["ATL"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
@@ -165,19 +165,19 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["beancounter"] = {
+				["AUC"] = {
+					["buyFactor"] = 4,
+					["markup"] = 1.05,
 					["enabled"] = true,
-					["days"] = 30,
 				},
 				["AHDB"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["ATL"] = {
-					["buyFactor"] = 4,
-					["markup"] = 1.05,
+				["beancounter"] = {
 					["enabled"] = true,
+					["days"] = 30,
 				},
 			},
 			["ignoreListLocation_scale"] = 1,
@@ -198,9 +198,10 @@ SkilletDB = {
 		},
 		["Mxym - Golemagg"] = {
 			["plugins"] = {
-				["beancounter"] = {
+				["AUC"] = {
+					["buyFactor"] = 4,
+					["markup"] = 1.05,
 					["enabled"] = true,
-					["days"] = 30,
 				},
 				["BBG"] = {
 					["enabled"] = true,
@@ -213,17 +214,16 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["ATL"] = {
-					["buyFactor"] = 4,
-					["markup"] = 1.05,
+				["beancounter"] = {
 					["enabled"] = true,
+					["days"] = 30,
 				},
 				["AHDB"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["AUC"] = {
+				["ATL"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
@@ -234,10 +234,9 @@ SkilletDB = {
 		},
 		["Mxyz - Golemagg"] = {
 			["plugins"] = {
-				["ATL"] = {
-					["buyFactor"] = 4,
-					["markup"] = 1.05,
+				["beancounter"] = {
 					["enabled"] = true,
+					["days"] = 30,
 				},
 				["BBG"] = {
 					["enabled"] = true,
@@ -250,7 +249,7 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["AUC"] = {
+				["ATL"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
@@ -260,9 +259,10 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["beancounter"] = {
+				["AUC"] = {
+					["buyFactor"] = 4,
+					["markup"] = 1.05,
 					["enabled"] = true,
-					["days"] = 30,
 				},
 			},
 			["FixBugs"] = true,
@@ -270,7 +270,7 @@ SkilletDB = {
 		},
 		["Augustin - Golemagg"] = {
 			["plugins"] = {
-				["AUC"] = {
+				["ATL"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
@@ -288,17 +288,17 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["beancounter"] = {
+				["AUC"] = {
+					["buyFactor"] = 4,
+					["markup"] = 1.05,
 					["enabled"] = true,
-					["days"] = 30,
 				},
 				["MTSL"] = {
 					["enabled"] = false,
 				},
-				["ATL"] = {
-					["buyFactor"] = 4,
-					["markup"] = 1.05,
+				["beancounter"] = {
 					["enabled"] = true,
+					["days"] = 30,
 				},
 			},
 			["FixBugs"] = true,
@@ -306,10 +306,9 @@ SkilletDB = {
 		},
 		["Grgur - Golemagg"] = {
 			["plugins"] = {
-				["ATL"] = {
-					["buyFactor"] = 4,
-					["markup"] = 1.05,
+				["beancounter"] = {
 					["enabled"] = true,
+					["days"] = 30,
 				},
 				["BBG"] = {
 					["enabled"] = true,
@@ -324,7 +323,7 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["AUC"] = {
+				["ATL"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
@@ -332,9 +331,10 @@ SkilletDB = {
 				["MTSL"] = {
 					["enabled"] = false,
 				},
-				["beancounter"] = {
+				["AUC"] = {
+					["buyFactor"] = 4,
+					["markup"] = 1.05,
 					["enabled"] = true,
-					["days"] = 30,
 				},
 			},
 			["FixBugs"] = true,
@@ -342,7 +342,7 @@ SkilletDB = {
 		},
 		["Mxys - Golemagg"] = {
 			["plugins"] = {
-				["AUC"] = {
+				["ATL"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
@@ -358,19 +358,19 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["beancounter"] = {
+				["AUC"] = {
+					["buyFactor"] = 4,
+					["markup"] = 1.05,
 					["enabled"] = true,
-					["days"] = 30,
 				},
 				["AHDB"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["ATL"] = {
-					["buyFactor"] = 4,
-					["markup"] = 1.05,
+				["beancounter"] = {
 					["enabled"] = true,
+					["days"] = 30,
 				},
 			},
 			["FixBugs"] = true,
@@ -378,10 +378,9 @@ SkilletDB = {
 		},
 		["Klhjakhsgdjh - Golemagg"] = {
 			["plugins"] = {
-				["ATL"] = {
-					["buyFactor"] = 4,
-					["markup"] = 1.05,
+				["beancounter"] = {
 					["enabled"] = true,
+					["days"] = 30,
 				},
 				["BBG"] = {
 					["enabled"] = true,
@@ -394,7 +393,7 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["AUC"] = {
+				["ATL"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
@@ -404,9 +403,10 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["beancounter"] = {
+				["AUC"] = {
+					["buyFactor"] = 4,
+					["markup"] = 1.05,
 					["enabled"] = true,
-					["days"] = 30,
 				},
 			},
 			["FixBugs"] = true,
@@ -414,10 +414,9 @@ SkilletDB = {
 		},
 		["Antun - Golemagg"] = {
 			["plugins"] = {
-				["ATL"] = {
-					["buyFactor"] = 4,
-					["markup"] = 1.05,
+				["beancounter"] = {
 					["enabled"] = true,
+					["days"] = 30,
 				},
 				["BBG"] = {
 					["enabled"] = true,
@@ -430,7 +429,7 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["AUC"] = {
+				["ATL"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
@@ -440,9 +439,10 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["beancounter"] = {
+				["AUC"] = {
+					["buyFactor"] = 4,
+					["markup"] = 1.05,
 					["enabled"] = true,
-					["days"] = 30,
 				},
 			},
 			["FixBugs"] = true,
@@ -450,7 +450,7 @@ SkilletDB = {
 		},
 		["Jaroslav - Golemagg"] = {
 			["plugins"] = {
-				["AUC"] = {
+				["ATL"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
@@ -466,19 +466,19 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["beancounter"] = {
+				["AUC"] = {
+					["buyFactor"] = 4,
+					["markup"] = 1.05,
 					["enabled"] = true,
-					["days"] = 30,
 				},
 				["AHDB"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["ATL"] = {
-					["buyFactor"] = 4,
-					["markup"] = 1.05,
+				["beancounter"] = {
 					["enabled"] = true,
+					["days"] = 30,
 				},
 			},
 			["FixBugs"] = true,
@@ -486,9 +486,10 @@ SkilletDB = {
 		},
 		["Dmitar - Golemagg"] = {
 			["plugins"] = {
-				["beancounter"] = {
+				["AUC"] = {
+					["buyFactor"] = 4,
+					["markup"] = 1.05,
 					["enabled"] = true,
-					["days"] = 30,
 				},
 				["BBG"] = {
 					["enabled"] = true,
@@ -501,17 +502,16 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["ATL"] = {
-					["buyFactor"] = 4,
-					["markup"] = 1.05,
+				["beancounter"] = {
 					["enabled"] = true,
+					["days"] = 30,
 				},
 				["AHDB"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["AUC"] = {
+				["ATL"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
@@ -522,7 +522,7 @@ SkilletDB = {
 		},
 		["Vermin - Golemagg"] = {
 			["plugins"] = {
-				["AUC"] = {
+				["ATL"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
@@ -538,19 +538,19 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["beancounter"] = {
+				["AUC"] = {
+					["buyFactor"] = 4,
+					["markup"] = 1.05,
 					["enabled"] = true,
-					["days"] = 30,
 				},
 				["AHDB"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["ATL"] = {
-					["buyFactor"] = 4,
-					["markup"] = 1.05,
+				["beancounter"] = {
 					["enabled"] = true,
+					["days"] = 30,
 				},
 			},
 			["tradeSkillLocation_x"] = 211.651824951172,
@@ -562,9 +562,10 @@ SkilletDB = {
 		},
 		["Mxyzptlk - Golemagg"] = {
 			["plugins"] = {
-				["beancounter"] = {
+				["AUC"] = {
+					["buyFactor"] = 4,
+					["markup"] = 1.05,
 					["enabled"] = true,
-					["days"] = 30,
 				},
 				["BBG"] = {
 					["enabled"] = true,
@@ -577,17 +578,16 @@ SkilletDB = {
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["ATL"] = {
-					["buyFactor"] = 4,
-					["markup"] = 1.05,
+				["beancounter"] = {
 					["enabled"] = true,
+					["days"] = 30,
 				},
 				["AHDB"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
 				},
-				["AUC"] = {
+				["ATL"] = {
 					["buyFactor"] = 4,
 					["markup"] = 1.05,
 					["enabled"] = true,
@@ -735,14 +735,14 @@ SkilletDB = {
 						[3860] = "",
 						[2840] = "",
 						[3575] = "",
-						[2841] = "",
+						[3576] = "",
 						[2842] = "",
 						[3577] = "",
 						["selected"] = "None",
-						[3576] = "",
 						["name"] = {
 							[""] = 8,
 						},
+						[2841] = "",
 					},
 				},
 				["Mxyz"] = {
@@ -939,14 +939,14 @@ SkilletDB = {
 						[3860] = "Trade Goods",
 						[2840] = "Trade Goods",
 						[3575] = "Trade Goods",
-						[2841] = "Trade Goods",
+						[3576] = "Trade Goods",
 						[2842] = "Trade Goods",
 						[3577] = "Trade Goods",
 						["selected"] = "None",
-						[3576] = "Trade Goods",
 						["name"] = {
 							["Trade Goods"] = 8,
 						},
+						[2841] = "Trade Goods",
 					},
 				},
 				["Mxyz"] = {

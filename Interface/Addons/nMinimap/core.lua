@@ -83,7 +83,7 @@ function GetMinimapShape()
 end
 
 Minimap:SetMaskTexture("Interface\\ChatFrame\\ChatFrameBackground")
-Minimap:CreateBeautyBorder(8)
+Minimap:CreateBeautyBorder(10)
 Minimap:SetBeautyBorderPadding(1)
 
 local classColor = RAID_CLASS_COLORS[select(2, UnitClass("player"))]

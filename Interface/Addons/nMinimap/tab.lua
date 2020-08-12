@@ -168,6 +168,18 @@ function nMinimapTab_OnLoad(self)
 		self:ClearAllPoints()
 		self:SetPoint("TOP", Minimap, "BOTTOM", 0, 2)
 	end
+
+	self:CreateBeautyBorder(10)
+	local classColor = RAID_CLASS_COLORS[select(2, UnitClass("player"))]
+	if select(2, UnitClass("player")) == "SHAMAN" then
+		classColor = {
+			b = 0.86666476726532,
+			g = 0.4392147064209,
+			r = 0
+		}
+	end
+	self:SetBeautyBorderTexture("white")
+	self:SetBeautyBorderColor(classColor.r, classColor.g, classColor.b)
 end
 
 function nMinimapTab_OnUpdate(self, elapsed)
