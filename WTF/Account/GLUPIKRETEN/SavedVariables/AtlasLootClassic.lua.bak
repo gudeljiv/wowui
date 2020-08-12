@@ -12,11 +12,11 @@ AtlasLootClassicDB = {
 		["Mxym - Golemagg"] = "Default",
 		["Korupcija - Stonespine"] = "Korupcija - Stonespine",
 		["Mxys - Golemagg"] = "Default",
-		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Augustin - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
+		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
 		["Mxyzptlk - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 		["Antun - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
@@ -145,13 +145,24 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
-		["Jaroslav - Golemagg"] = {
+		["Mxyzptlk - Golemagg"] = {
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"Ragefire", -- [2]
+					nil, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+			},
 		},
 		["Antun - Golemagg"] = {
 		},
 		["Augustin - Golemagg"] = {
 		},
 		["Grgur - Golemagg"] = {
+		},
+		["Jaroslav - Golemagg"] = {
 		},
 		["Vermin - Golemagg"] = {
 			["minimap"] = {
@@ -171,17 +182,6 @@ AtlasLootClassicDB = {
 					"TheTempleofAhnQiraj", -- [2]
 					13, -- [3]
 					3, -- [4]
-					0, -- [5]
-				},
-			},
-		},
-		["Mxyzptlk - Golemagg"] = {
-			["GUI"] = {
-				["selected"] = {
-					nil, -- [1]
-					"Ragefire", -- [2]
-					nil, -- [3]
-					1, -- [4]
 					0, -- [5]
 				},
 			},

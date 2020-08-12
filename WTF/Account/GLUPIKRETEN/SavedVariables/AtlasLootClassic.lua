@@ -15,11 +15,11 @@ AtlasLootClassicDB = {
 		["Mxym - Golemagg"] = "Default",
 		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
 		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
-		["Mxyzptlk - Golemagg"] = "Default",
+		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
 		["Augustin - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
-		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 		["Antun - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
@@ -145,27 +145,7 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
-		["Vermin - Golemagg"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
-			["GUI"] = {
-				["point"] = {
-					nil, -- [1]
-					nil, -- [2]
-					"CENTER", -- [3]
-					-172, -- [4]
-					63.9999885559082, -- [5]
-				},
-				["selected"] = {
-					nil, -- [1]
-					"TheTempleofAhnQiraj", -- [2]
-					13, -- [3]
-					3, -- [4]
-					0, -- [5]
-				},
-			},
+		["Jaroslav - Golemagg"] = {
 		},
 		["Default"] = {
 			["GUI"] = {
@@ -193,6 +173,28 @@ AtlasLootClassicDB = {
 		},
 		["Grgur - Golemagg"] = {
 		},
+		["Vermin - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+			["GUI"] = {
+				["point"] = {
+					nil, -- [1]
+					nil, -- [2]
+					"CENTER", -- [3]
+					-172, -- [4]
+					63.9999885559082, -- [5]
+				},
+				["selected"] = {
+					nil, -- [1]
+					"TheTempleofAhnQiraj", -- [2]
+					13, -- [3]
+					3, -- [4]
+					0, -- [5]
+				},
+			},
+		},
 		["Mxyzptlk - Golemagg"] = {
 			["GUI"] = {
 				["selected"] = {
@@ -203,8 +205,6 @@ AtlasLootClassicDB = {
 					0, -- [5]
 				},
 			},
-		},
-		["Jaroslav - Golemagg"] = {
 		},
 		["Klhjakhsgdjh - Golemagg"] = {
 			["GUI"] = {
