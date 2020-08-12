@@ -130,6 +130,18 @@ local function UpdateExperience(self, event)
 				cmtk.text:SetText(hmmm)
 				cmtk.text:SetTextColor(color.r, color.g, color.b, 1)
 
+				if myTimer then
+					myTimer:Cancel()
+				end
+
+				myTimer =
+					C_Timer.NewTimer(
+					120,
+					function()
+						UIFrameFadeOut(cmtk, 1, 1, 0)
+					end
+				)
+
 				cmxg.text:SetText("+" .. gained .. " (XP)")
 				cmxg.text:SetTextColor(color.r, color.g, color.b, 1)
 				UIFrameFadeIn(cmxg, 1, 0, 1)
@@ -181,15 +193,15 @@ local function UpdateExperience(self, event)
 
 		CurrentXP = NewXP
 
-		PlayerExpFrame:Show()
-		cmtk:Show()
-		cpxf:Show()
+		UIFrameFadeIn(PlayerExpFrame, 1, 0, 1)
+		UIFrameFadeIn(cmtk, 1, 0, 1)
+		UIFrameFadeIn(cpxf, 1, 0, 1)
 	else
-		PlayerExpFrame:Hide()
-		PetExpFrame:Hide()
-		cmtk:Hide()
-		cmxg:Hide()
-		cpxf:Hide()
+		UIFrameFadeOut(PlayerExpFrame, 1, 1, 0)
+		UIFrameFadeOut(PetExpFrame, 1, 1, 0)
+		UIFrameFadeOut(cmtk, 1, 1, 0)
+		UIFrameFadeOut(cmxg, 1, 1, 0)
+		UIFrameFadeOut(cpxf, 1, 1, 0)
 	end
 end
 

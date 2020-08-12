@@ -72,18 +72,28 @@ us:SetHeight(1)
 us.text = us:CreateFontString(nil, "ARTWORK")
 us.text:SetFont(xVermin.Config.font.arial, 10, "NONE")
 us.text:SetPoint("BOTTOMRIGHT", CustomContainer_Combat, "TOPRIGHT", -1, 2)
+us.text:SetTextColor(color.r, color.g, color.b, 1)
+-- us:Hide()
+
+local usVisible = false
 
 PlayerFrame:HookScript(
 	"OnUpdate",
 	function()
 		speed = string.format("%d", (GetUnitSpeed("Player") / 7) * 100)
 		if speed and speed ~= "0" then
+			usVisible = true
 			us.text:SetText(speed .. "%")
 		else
+			usVisible = false
 			us.text:SetText("")
 		end
-		-- us.text:SetTextColor(0.058, 0.901, 0.466, 1)
-		us.text:SetTextColor(color.r, color.g, color.b, 1)
+
+		-- if not usVisible then
+		-- 	UIFrameFadeIn(us, 0.6, 0, 1)
+		-- else
+		-- 	UIFrameFadeOut(us, 0.6, 1, 0)
+		-- end
 	end
 )
 

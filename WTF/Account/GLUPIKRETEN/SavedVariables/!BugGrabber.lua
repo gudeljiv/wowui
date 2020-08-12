@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 1787,
+	["session"] = 1803,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -1275,5 +1275,29 @@ BugGrabberDB = {
 			["session"] = 1780,
 			["counter"] = 56,
 		}, -- [161]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Addons/AdiBags.lua:45: attempt to index global 'myTimer' (a nil value)",
+			["time"] = "2020/08/12 09:23:37",
+			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'myTimer' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Addons/AdiBags.lua:45: in function <Interface\\AddOns\\xVermin\\Addons/AdiBags.lua:42>\n[C]: ?",
+			["session"] = 1792,
+			["counter"] = 1,
+		}, -- [162]
+		{
+			["message"] = "[string \"us:Show()\"]:1: attempt to index global 'us' (a nil value)",
+			["time"] = "2020/08/12 09:33:13",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'us' (a nil value)\"\n",
+			["stack"] = "[string \"us:Show()\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 1797,
+			["counter"] = 1,
+		}, -- [163]
+		{
+			["message"] = "[string \"print(us:IsVisible())\"]:1: attempt to index global 'us' (a nil value)",
+			["time"] = "2020/08/12 09:37:29",
+			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'us' (a nil value)\"\n",
+			["stack"] = "[string \"print(us:IsVisible())\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 1800,
+			["counter"] = 1,
+		}, -- [164]
 	},
 }

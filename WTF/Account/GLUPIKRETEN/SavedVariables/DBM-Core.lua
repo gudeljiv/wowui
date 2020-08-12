@@ -100,16 +100,16 @@ DBM_AllSavedOptions = {
 			1, -- [2]
 			0, -- [3]
 		},
-		["DontShowSpecialWarningText"] = false,
-		["DontShowPTText"] = false,
-		["DisableCinematics"] = false,
-		["SpecialWarningFlashRepeat1"] = false,
-		["SWarnClassColor"] = true,
 		["SpecialWarningFlashCol5"] = {
 			0.2, -- [1]
 			1, -- [2]
 			1, -- [3]
 		},
+		["DontShowPTText"] = false,
+		["DontShowSpecialWarningText"] = false,
+		["SpecialWarningFlashRepeat1"] = false,
+		["SWarnClassColor"] = true,
+		["DisableCinematics"] = false,
 		["AdvancedAutologBosses"] = false,
 		["ShowLHFrame"] = true,
 		["DontShowReminders"] = false,
@@ -222,9 +222,9 @@ DBM_AllSavedOptions = {
 		["UseRetailShamanColor"] = false,
 		["CountdownVoice"] = "Corsica",
 		["DontShowNameplateIcons"] = false,
+		["CountdownVoice3"] = "Smooth",
 		["SpecialWarningFlashRepeat2"] = false,
 		["DontShowUserTimers"] = false,
-		["CountdownVoice3"] = "Smooth",
 		["SpecialWarningFlashRepeat5"] = true,
 		["AutoRespond"] = true,
 		["HealthFrameGrowUp"] = false,

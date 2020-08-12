@@ -1,9 +1,9 @@
 local _, xVermin = ...
 
-local scaler = CreateFrame("Frame")
-scaler:RegisterEvent("VARIABLES_LOADED")
-scaler:RegisterEvent("UI_SCALE_CHANGED")
-scaler:SetScript(
+local f = CreateFrame("Frame")
+f:RegisterEvent("VARIABLES_LOADED")
+f:RegisterEvent("UI_SCALE_CHANGED")
+f:SetScript(
 	"OnEvent",
 	function(self, event)
 		if not InCombatLockdown() then
