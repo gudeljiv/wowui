@@ -58,7 +58,7 @@ TellMeWhen_Options: enabled
 TomTom: enabled
 UnitFramesImproved: disabled
 WeaponSwingTimer: enabled
-TradeSkillMaster: disabled
+TradeSkillMaster: enabled
 nBuff: enabled
 nHealth: enabled
 nMinimap: enabled
@@ -91,7 +91,7 @@ kRestack: disabled
 Talented: disabled
 Talented_Data: disabled
 Talented_Data_Export: disabled
-SimpleRaidTargetIcons: disabled
+SimpleRaidTargetIcons: enabled
 PerfectRaid: disabled
 SortBags: disabled
 Peddler: enabled
@@ -99,3 +99,4 @@ TrackEverything: disabled
 AdiBags_Config: enabled
 Backpack: disabled
 Backpack_Classic: disabled
+Skillet-Classic: disabled

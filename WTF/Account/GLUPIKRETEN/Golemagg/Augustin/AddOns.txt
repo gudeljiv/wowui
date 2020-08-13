@@ -93,7 +93,7 @@ oUF_Freebgrid_Config: disabled
 Postal: enabled
 RangeDisplay: disabled
 RangeDisplay_Options: enabled
-SimpleRaidTargetIcons: disabled
+SimpleRaidTargetIcons: enabled
 SquidMod: enabled
 Kui_Nameplates_Auras: disabled
 mortSoulReaper: enabled
@@ -102,7 +102,7 @@ DBM-Brawlers: enabled
 DBM-Scenario-MoP: enabled
 DBM-SiegeOfOrgrimmar: enabled
 DBM-ThroneofThunder: enabled
-TradeSkillMaster: disabled
+TradeSkillMaster: enabled
 TradeSkillMaster_AuctionDB: disabled
 TradeSkillMaster_Auctioning: disabled
 TradeSkillMaster_Crafting: disabled
@@ -296,4 +296,4 @@ TrackEverything: disabled
 AdiBags_Config: enabled
 Backpack: disabled
 Backpack_Classic: disabled
-ItemRackOptions: enabled
+Skillet-Classic: disabled
