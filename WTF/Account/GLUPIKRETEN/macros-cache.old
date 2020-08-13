@@ -4,23 +4,21 @@ VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:1708
+/use [nocombat]item:0
 /castsequence [combat]
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:3771
-/castsequence [combat]item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929
+/use [nocombat]item:0
+/castsequence [combat]
 END
 VER 3 0000000000000001 "FRAME" "132150"
-/fstack
+/run TargetFrameDebuff1Count:ClearAllPoints()
+/run TargetFrameDebuff1Count:SetPoint("BOTTOMRIGHT", TargetFrameDebuff1, "BOTTOMRIGHT", 2, -2)
 END
 VER 3 0000000000000002 "MOVE" "Ability_Ambush."
-/run Details_TinyThreat:ClearAllPoints()
-/run Details_TinyThreat:SetMovable(true)
-/run Details_TinyThreat:SetUserPlaced(true)
-/run Details_TinyThreat:SetPoint("TOPRIGHT", "ChatFrame3", "TOPLEFT", -2, 2)
-/run Details_TinyThreat:CreateBeautyBorder(6)
+/run TargetFrameDebuff1Count:ClearAllPoints()
+/run TargetFrameDebuff1Count:SetPoint("BOTTOMRIGHT", TargetFrameDebuff1, "BOTTOMRIGHT", 4, -4)
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 #showtooltip item:3771

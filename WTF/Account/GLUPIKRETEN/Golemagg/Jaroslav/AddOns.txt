@@ -100,3 +100,4 @@ AdiBags_Config: enabled
 Backpack: disabled
 Backpack_Classic: disabled
 Skillet-Classic: disabled
+TradeSkillMaster_AppHelper: enabled
