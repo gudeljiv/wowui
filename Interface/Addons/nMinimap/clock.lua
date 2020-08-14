@@ -7,7 +7,15 @@ local sort_func = function(a, b)
 	return a.name < b.name
 end
 
-local classColor = RAID_CLASS_COLORS[select(2, UnitClass("player"))]
+local _, class = UnitClass("player")
+local classColor = RAID_CLASS_COLORS[class]
+if class == "SHAMAN" then
+	classColor = {
+		b = 0.86666476726532,
+		g = 0.4392147064209,
+		r = 0
+	}
+end
 
 TimeManagerClockTicker:SetFont(STANDARD_TEXT_FONT, 15, "OUTLINE")
 TimeManagerClockTicker:SetShadowOffset(0, 0)
