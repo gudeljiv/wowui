@@ -1,5 +1,11 @@
-VER 3 0000000001000001 "Bolt" "INV_MISC_QUESTIONMARK"
-#showtooltip Lightning Bolt
-/cast Blood Fury
+VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
 /cast Lightning Bolt
+/cast Blood Fury
+END
+VER 3 0000000001000002 "HVer" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/target Vermin
+/follow Vermin
+/cast Healing Wave
 END

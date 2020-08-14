@@ -48,13 +48,13 @@ EavesDropDB = {
 			["LINEWIDTH"] = 130,
 			["x"] = 551.714104134467,
 			["TEXTSIZE"] = 13,
-			["FRAME"] = {
-				["a"] = 0.4,
-			},
+			["NUMLINES"] = 16,
 			["SCROLLBUTTON"] = true,
 			["LINEHEIGHT"] = 16,
 			["HIDETAB"] = true,
-			["NUMLINES"] = 16,
+			["FRAME"] = {
+				["a"] = 0.4,
+			},
 			["y"] = 236.195578993564,
 		},
 		["Pitchwise - Golemagg"] = {
@@ -106,18 +106,18 @@ EavesDropDB = {
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
+			["SCROLLBUTTON"] = true,
+			["TEXTSIZE"] = 13,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
-			["TEXTSIZE"] = 13,
-			["NUMLINES"] = 16,
 			["HIDETAB"] = true,
 			["LINEHEIGHT"] = 16,
-			["SCROLLBUTTON"] = true,
-		},
-		["Jaroslav - Golemagg"] = {
+			["NUMLINES"] = 16,
 		},
 		["Mxyzptlk - Golemagg"] = {
+		},
+		["Vermin - Golemagg"] = {
 		},
 		["Augustin - Golemagg"] = {
 		},
@@ -125,7 +125,7 @@ EavesDropDB = {
 		},
 		["Pitchwise - Genesis"] = {
 		},
-		["Vermin - Golemagg"] = {
+		["Jaroslav - Golemagg"] = {
 		},
 		["Klhjakhsgdjh - Golemagg"] = {
 		},
@@ -155,14 +155,14 @@ EavesDropDB = {
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
-			["SCROLLBUTTON"] = true,
+			["NUMLINES"] = 16,
 			["TEXTSIZE"] = 13,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
 			["HIDETAB"] = true,
 			["LINEHEIGHT"] = 16,
-			["NUMLINES"] = 16,
+			["SCROLLBUTTON"] = true,
 		},
 		["Ozrencic - Golemagg"] = {
 		},
