@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 1854,
 	["lastSanitation"] = 3,
+	["session"] = 1857,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -173,8 +173,8 @@ BugGrabberDB = {
 		}, -- [21]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["time"] = "2020/07/26 13:26:58",
 			["session"] = 1336,
+			["time"] = "2020/07/26 13:26:58",
 			["counter"] = 2,
 		}, -- [22]
 		{
@@ -554,8 +554,8 @@ BugGrabberDB = {
 		}, -- [69]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["session"] = 1423,
 			["time"] = "2020/07/27 20:37:46",
+			["session"] = 1423,
 			["counter"] = 4,
 		}, -- [70]
 		{
@@ -820,8 +820,8 @@ BugGrabberDB = {
 		}, -- [103]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["session"] = 1605,
 			["time"] = "2020/08/02 10:06:15",
+			["session"] = 1605,
 			["counter"] = 3,
 		}, -- [104]
 		{
@@ -961,8 +961,8 @@ BugGrabberDB = {
 		}, -- [121]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
-			["time"] = "2020/08/02 20:13:03",
 			["session"] = 1654,
+			["time"] = "2020/08/02 20:13:03",
 			["counter"] = 3,
 		}, -- [122]
 		{
@@ -1335,14 +1335,14 @@ BugGrabberDB = {
 		}, -- [168]
 		{
 			["message"] = "(null)",
-			["session"] = 1820,
 			["time"] = "2020/07/24 16:00:06",
+			["session"] = 1820,
 			["counter"] = 60,
 		}, -- [169]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["time"] = "2020/08/13 21:31:07",
 			["session"] = 1843,
+			["time"] = "2020/08/13 21:31:07",
 			["counter"] = 6,
 		}, -- [170]
 		{
@@ -1401,5 +1401,13 @@ BugGrabberDB = {
 			["session"] = 1852,
 			["counter"] = 1,
 		}, -- [177]
+		{
+			["message"] = "Interface\\FrameXML\\UIDropDownMenu.lua:987: attempt to index local 'button' (a nil value)",
+			["time"] = "2020/08/15 19:13:26",
+			["locals"] = "level = 1\nvalue = nil\ndropDownFrame = nil\nanchorName = Minimap {\n timer = 0\n 0 = <userdata>\n beautyBorder = <table> {\n }\n beautyShadow = <table> {\n }\n}\nxOffset = -97.999979\nyOffset = -3\nmenuList = nil\nbutton = nil\nautoHideDelay = nil\nlistFrame = DropDownList1 {\n 0 = <userdata>\n dropdown = BrowseDropDown {\n }\n shouldRefresh = true\n numButtons = 8\n maxWidth = 123.466667\n}\nlistFrameName = \"DropDownList1\"\ntempFrame = nil\npoint = nil\nrelativePoint = nil\nrelativeTo = nil\n(*temporary) = <function> defined @Interface\\FrameXML\\UIDropDownMenu.lua:25\n(*temporary) = nil\n(*temporary) = \"createframes\"\n(*temporary) = true\n(*temporary) = <function> defined @Interface\\FrameXML\\UIDropDownMenu.lua:306\n(*temporary) = 1\n(*temporary) = 0\n(*temporary) = 12\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'button' (a nil value)\"\nUIDropDownMenuDelegate = <unnamed> {\n 0 = <userdata>\n}\nGetChild = <function> defined @Interface\\FrameXML\\UIDropDownMenu.lua:63\n",
+			["stack"] = "Interface\\FrameXML\\UIDropDownMenu.lua:987: in function `ToggleDropDownMenu'\nInterface\\AddOns\\nMinimap\\core.lua:120: in function <Interface\\AddOns\\nMinimap\\core.lua:118>",
+			["session"] = 1857,
+			["counter"] = 2,
+		}, -- [178]
 	},
 }
