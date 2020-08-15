@@ -23,17 +23,17 @@ EavesDropDB = {
 		["Pepecocorita - Genesis"] = "Default",
 		["Mxys - Golemagg"] = "Default",
 		["Spija - Genesis"] = "Spija - Genesis",
-		["Vermin - Golemagg"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
-		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
+		["Dmitar - Golemagg"] = "Default",
+		["Dotwise - Golemagg"] = "Default",
+		["Korupcija - Genesis"] = "Default",
 		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
-		["Korupcija - Stonespine"] = "Default",
-		["Judawise - Golemagg"] = "Default",
 		["Paydo - Dreadmist"] = "Default",
-		["Korupcija - Genesis"] = "Default",
-		["Dotwise - Golemagg"] = "Default",
-		["Dmitar - Golemagg"] = "Default",
+		["Judawise - Golemagg"] = "Default",
+		["Korupcija - Stonespine"] = "Default",
+		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Dotwise - Golemagg"] = {
@@ -41,20 +41,20 @@ EavesDropDB = {
 		["Mxyz - Golemagg"] = {
 			["BORDER"] = {
 				["a"] = 0,
-				["r"] = 0.607843137254902,
-				["g"] = 0.607843137254902,
 				["b"] = 0.607843137254902,
+				["g"] = 0.607843137254902,
+				["r"] = 0.607843137254902,
 			},
 			["LINEWIDTH"] = 130,
 			["x"] = 551.714104134467,
 			["TEXTSIZE"] = 13,
-			["NUMLINES"] = 16,
-			["SCROLLBUTTON"] = true,
-			["LINEHEIGHT"] = 16,
-			["HIDETAB"] = true,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
+			["SCROLLBUTTON"] = true,
+			["LINEHEIGHT"] = 16,
+			["HIDETAB"] = true,
+			["NUMLINES"] = 16,
 			["y"] = 236.195578993564,
 		},
 		["Pitchwise - Golemagg"] = {
@@ -65,20 +65,20 @@ EavesDropDB = {
 			["LINEWIDTH"] = 130,
 			["BORDER"] = {
 				["a"] = 0,
-				["r"] = 0.607843137254902,
-				["g"] = 0.607843137254902,
 				["b"] = 0.607843137254902,
+				["g"] = 0.607843137254902,
+				["r"] = 0.607843137254902,
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
-			["SCROLLBUTTON"] = true,
+			["HIDETAB"] = true,
 			["TEXTSIZE"] = 13,
+			["SCROLLBUTTON"] = true,
+			["NUMLINES"] = 16,
+			["LINEHEIGHT"] = 16,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
-			["NUMLINES"] = 16,
-			["LINEHEIGHT"] = 16,
-			["HIDETAB"] = true,
 		},
 		["Greenwise - Golemagg"] = {
 		},
@@ -88,15 +88,7 @@ EavesDropDB = {
 		},
 		["Spija - Genesis"] = {
 		},
-		["Kosturko - Golemagg"] = {
-		},
-		["Korupcija - Stonespine"] = {
-		},
-		["Golemagg"] = {
-		},
-		["Mxym - Golemagg"] = {
-		},
-		["Default"] = {
+		["Mxzq - Golemagg"] = {
 			["LINEWIDTH"] = 130,
 			["BORDER"] = {
 				["a"] = 0,
@@ -108,30 +100,12 @@ EavesDropDB = {
 			["x"] = 551.714104134467,
 			["SCROLLBUTTON"] = true,
 			["TEXTSIZE"] = 13,
+			["NUMLINES"] = 16,
+			["HIDETAB"] = true,
+			["LINEHEIGHT"] = 16,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
-			["HIDETAB"] = true,
-			["LINEHEIGHT"] = 16,
-			["NUMLINES"] = 16,
-		},
-		["Mxyzptlk - Golemagg"] = {
-		},
-		["Vermin - Golemagg"] = {
-		},
-		["Augustin - Golemagg"] = {
-		},
-		["Grgur - Golemagg"] = {
-		},
-		["Pitchwise - Genesis"] = {
-		},
-		["Jaroslav - Golemagg"] = {
-		},
-		["Klhjakhsgdjh - Golemagg"] = {
-		},
-		["Antun - Golemagg"] = {
-		},
-		["Judawise - Golemagg"] = {
 		},
 		["Verminz - Golemagg"] = {
 			["LINEWIDTH"] = 100,
@@ -141,11 +115,31 @@ EavesDropDB = {
 			["x"] = 536.000144269463,
 			["TEXTSIZE"] = 12,
 			["FONT"] = "Arial Narrow",
-			["HIDETAB"] = true,
-			["SCROLLBUTTON"] = true,
 			["NUMLINES"] = 14,
+			["SCROLLBUTTON"] = true,
+			["HIDETAB"] = true,
 		},
-		["Mxzq - Golemagg"] = {
+		["Judawise - Golemagg"] = {
+		},
+		["Mxym - Golemagg"] = {
+		},
+		["Antun - Golemagg"] = {
+		},
+		["Vermin - Golemagg"] = {
+		},
+		["Jaroslav - Golemagg"] = {
+		},
+		["Augustin - Golemagg"] = {
+		},
+		["Grgur - Golemagg"] = {
+		},
+		["Pitchwise - Genesis"] = {
+		},
+		["Mxyzptlk - Golemagg"] = {
+		},
+		["Klhjakhsgdjh - Golemagg"] = {
+		},
+		["Default"] = {
 			["LINEWIDTH"] = 130,
 			["BORDER"] = {
 				["a"] = 0,
@@ -157,12 +151,18 @@ EavesDropDB = {
 			["x"] = 551.714104134467,
 			["NUMLINES"] = 16,
 			["TEXTSIZE"] = 13,
+			["SCROLLBUTTON"] = true,
+			["HIDETAB"] = true,
+			["LINEHEIGHT"] = 16,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
-			["HIDETAB"] = true,
-			["LINEHEIGHT"] = 16,
-			["SCROLLBUTTON"] = true,
+		},
+		["Golemagg"] = {
+		},
+		["Korupcija - Stonespine"] = {
+		},
+		["Kosturko - Golemagg"] = {
 		},
 		["Ozrencic - Golemagg"] = {
 		},
