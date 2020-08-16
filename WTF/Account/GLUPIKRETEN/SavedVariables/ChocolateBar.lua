@@ -38,6 +38,17 @@ ChocolateBarDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
+			["locked"] = false,
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["r"] = 0,
+					["g"] = 0,
+					["b"] = 0,
+				},
+				["textureName"] = "None",
+			},
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -58,22 +69,17 @@ ChocolateBarDB = {
 					["barOffx"] = -88.3325424194336,
 				},
 			},
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["r"] = 0,
-					["g"] = 0,
-					["b"] = 0,
-				},
-				["textureName"] = "None",
-			},
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
 			},
-			["locked"] = false,
-			["moveFrames"] = false,
+			["fixedStrata"] = true,
 			["objSettings"] = {
+				["RangeDisplay"] = {
+					["enabled"] = false,
+					["showText"] = false,
+					["barName"] = "ChocolateBar1",
+					["align"] = "right",
+				},
 				["PitBull4"] = {
 					["enabled"] = false,
 					["showText"] = false,
@@ -318,18 +324,18 @@ ChocolateBarDB = {
 					["customLabel"] = "B",
 				},
 			},
-			["desaturated"] = false,
+			["fontName"] = "Friz Quadrata TT",
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["gap"] = 0,
+			["moveFrames"] = false,
+			["desaturated"] = false,
+			["textOffset"] = 2,
+			["height"] = 20,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
 			["forceColor"] = false,
-			["fontName"] = "Friz Quadrata TT",
-			["textOffset"] = 2,
-			["height"] = 20,
-			["fixedStrata"] = true,
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["textColor"] = {
 				["a"] = 1,
 				["b"] = 1,
@@ -353,7 +359,7 @@ CB_PlayedTime = {
 		["total"] = 1719,
 	},
 	["Mxyz-"] = {
-		["total"] = 38076,
+		["total"] = 39411,
 	},
 	["Antun-"] = {
 		["total"] = 52,
@@ -373,8 +379,8 @@ CB_PlayedTime = {
 	["Greenwise-"] = {
 		["total"] = 79871,
 	},
-	["Whatevs-"] = {
-		["total"] = 213,
+	["Dmitar-"] = {
+		["total"] = 55,
 	},
 	["Mxyzptlk-"] = {
 		["total"] = 8367,
@@ -389,7 +395,7 @@ CB_PlayedTime = {
 		["total"] = 18945,
 	},
 	["Augustin-"] = {
-		["total"] = 15374,
+		["total"] = 19013,
 	},
 	["Kosturko-"] = {
 		["total"] = 1457,
@@ -401,12 +407,12 @@ CB_PlayedTime = {
 		["total"] = 2,
 	},
 	["Mxzq-"] = {
-		["total"] = 256214,
+		["total"] = 256307,
 	},
 	["Dotwise-"] = {
 		["total"] = 3924,
 	},
-	["Dmitar-"] = {
-		["total"] = 55,
+	["Whatevs-"] = {
+		["total"] = 213,
 	},
 }

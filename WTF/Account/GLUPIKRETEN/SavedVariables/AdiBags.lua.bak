@@ -135,6 +135,7 @@ AdiBagsDB = {
 	["profiles"] = {
 		["Default"] = {
 			["virtualStacks"] = {
+				["stackable"] = true,
 				["incomplete"] = true,
 			},
 			["scale"] = 1,
@@ -159,8 +160,9 @@ AdiBagsDB = {
 					["yOffset"] = -302.6298828125,
 				},
 				["Backpack"] = {
-					["xOffset"] = -236.235473632813,
-					["yOffset"] = 408.662445068359,
+					["xOffset"] = -398.029052734375,
+					["point"] = "TOPRIGHT",
+					["yOffset"] = -453.010314941406,
 				},
 			},
 			["filters"] = {

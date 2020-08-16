@@ -219,6 +219,7 @@ f:SetScript(
 				function()
 					MaxXP = UnitXPMax("player")
 					UpdateExperience(self, event)
+					cmtk:Hide()
 				end
 			)
 		else

@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 1879,
+	["session"] = 1889,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -1334,17 +1334,11 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [168]
 		{
-			["message"] = "(null)",
-			["time"] = "2020/07/24 16:00:06",
-			["session"] = 1820,
-			["counter"] = 60,
-		}, -- [169]
-		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
 			["session"] = 1843,
 			["time"] = "2020/08/13 21:31:07",
 			["counter"] = 6,
-		}, -- [170]
+		}, -- [169]
 		{
 			["message"] = "Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua:2: unexpected symbol near ')'",
 			["time"] = "2020/08/13 21:24:07",
@@ -1352,6 +1346,34 @@ BugGrabberDB = {
 			["stack"] = "",
 			["session"] = 1844,
 			["counter"] = 12,
+		}, -- [170]
+		{
+			["message"] = "...angeDisplay\\libs\\LibDualSpec-1.0\\LibDualSpec-1.0-17.lua:74: attempt to call global 'GetNumSpecializationsForClassID' (a nil value)",
+			["time"] = "2020/08/16 22:11:27",
+			["locals"] = "MAJOR = \"LibDualSpec-1.0\"\nMINOR = 17\nlib = <table> {\n registry = <table> {\n }\n options = <table> {\n }\n upgrades = <table> {\n }\n currentSpec = 0\n eventFrame = <unnamed> {\n }\n mixin = <table> {\n }\n}\nminor = nil\nregistry = <table> {\n}\noptions = <table> {\n}\nmixin = <table> {\n}\nupgrades = <table> {\n}\nAceDB3 = <table> {\n db_registry = <table> {\n }\n frame = <unnamed> {\n }\n New = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceDB-3.0\\AceDB-3.0.lua:709\n}\nAceDBOptions3 = <table> {\n optionTables = <table> {\n }\n handlers = <table> {\n }\n GetOptionsTable = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceDBOptions-3.0\\AceDBOptions-3.0.lua:442\n}\nAceConfigRegistry3 = <table> {\n RegisterOptionsTable = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceConfig-3.0\\AceConfigRegistry-3.0\\AceConfigRegistry-3.0.lua:315\n validated = <table> {\n }\n tables = <table> {\n }\n callbacks = <table> {\n }\n RegisterCallback = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:90\n GetOptionsTable = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceConfig-3.0\\AceConfigRegistry-3.0\\AceConfigRegistry-3.0.lua:360\n UnregisterCallback = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:153\n IterateOptionsTables = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceConfig-3.0\\AceConfigRegistry-3.0\\AceConfigRegistry-3.0.lua:346\n NotifyChange = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceConfig-3.0\\AceConfigRegistry-3.0\\AceConfigRegistry-3.0.lua:289\n ValidateOptionsTable = <function> defined @Interface\\AddOns\\ChocolateBar\\libs\\AceConfig-3.0\\AceConfigRegistry-3.0\\AceConfigRegistry-3.0.lua:276\n UnregisterAllCallbacks = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:174\n}\n_ = \"Mage\"\n_ = \"MAGE\"\nclassId = 8\n(*temporary) = nil\n(*temporary) = 8\n(*temporary) = \"attempt to call global 'GetNumSpecializationsForClassID' (a nil value)\"\n",
+			["stack"] = "...angeDisplay\\libs\\LibDualSpec-1.0\\LibDualSpec-1.0-17.lua:74: in main chunk",
+			["session"] = 1885,
+			["counter"] = 1,
 		}, -- [171]
+		{
+			["message"] = "Interface\\AddOns\\RangeDisplay\\RangeDisplay-v4.8.3.lua:715: attempt to call method 'EnhanceDatabase' (a nil value)",
+			["time"] = "2020/08/16 22:11:27",
+			["stack"] = "Interface\\AddOns\\RangeDisplay\\RangeDisplay-v4.8.3.lua:715: in function <Interface\\AddOns\\RangeDisplay\\RangeDisplay.lua:707>\n[C]: ?\n...ce\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0-12.lua:70: in function <...ce\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:65>\n...ce\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0-12.lua:498: in function `InitializeAddon'\n...ce\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0-12.lua:613: in function <...ce\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:605>",
+			["session"] = 1885,
+			["counter"] = 1,
+		}, -- [172]
+		{
+			["message"] = "Interface\\AddOns\\RangeDisplay\\RangeDisplay-v4.8.3.lua:780: attempt to index field 'db' (a nil value)",
+			["time"] = "2020/08/16 22:11:40",
+			["stack"] = "Interface\\AddOns\\RangeDisplay\\RangeDisplay-v4.8.3.lua:780: in function `applySettings'\nInterface\\AddOns\\RangeDisplay\\RangeDisplay-v4.8.3.lua:764: in function <Interface\\AddOns\\RangeDisplay\\RangeDisplay.lua:763>\n[C]: ?\n...ce\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0-12.lua:70: in function <...ce\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:65>\n...ce\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0-12.lua:527: in function `EnableAddon'\n...ce\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0-12.lua:620: in function <...ce\\AddOns\\AdiBags\\libs\\AceAddon-3.0\\AceAddon-3.0.lua:605>\n[C]: in function `LoadAddOn'\nInterface\\FrameXML\\UIParent.lua:353: in function `UIParentLoadAddOn'\nInterface\\FrameXML\\UIParent.lua:380: in function `CombatLog_LoadUI'\nInterface\\FrameXML\\UIParent.lua:695: in function <Interface\\FrameXML\\UIParent.lua:658>",
+			["session"] = 1885,
+			["counter"] = 1,
+		}, -- [173]
+		{
+			["message"] = "(null)",
+			["time"] = "2020/07/24 16:00:06",
+			["session"] = 1885,
+			["counter"] = 63,
+		}, -- [174]
 	},
 }

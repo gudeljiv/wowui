@@ -260,7 +260,31 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Augustin"] = {
 		["m_aQuestList"] = {
+			["Ju-Ju Heaps - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Minshina's Skull - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Thwarting Kolkar Aggression - false"] = {
+				["m_bChecked"] = true,
+			},
+			["A Solvent Spirit - false"] = {
+				["m_bChecked"] = true,
+			},
 			["Speak with Un'thuwa - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Practical Prey - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Report to Orgnil - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Durotar - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Zalazane - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Mage - true"] = {
@@ -846,10 +870,6 @@ MonkeyQuestConfig = {
 		["m_bAlwaysHeaders"] = false,
 		["m_bGrowUp"] = false,
 	},
-	["Golemagg|Mxzq"] = {
-		["m_aQuestList"] = {
-		},
-	},
 	["Global"] = {
 		["m_bItemsEnabled"] = true,
 		["m_iFont"] = 0,
@@ -874,7 +894,7 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 931.42138671875,
+		["m_iFrameBottom"] = 968.109619140625,
 		["m_bHideCompletedQuests"] = true,
 		["m_iFrameLeft"] = 1739.55053710938,
 		["m_bColourDoneOrFailed"] = true,
@@ -902,6 +922,10 @@ MonkeyQuestConfig = {
 		["m_bHideTitle"] = false,
 		["m_bHideTitleButtons"] = false,
 		["m_bGrowUp"] = false,
+	},
+	["Golemagg|Mxzq"] = {
+		["m_aQuestList"] = {
+		},
 	},
 	["Genesis|Malinac"] = {
 		["m_iFont"] = 0,
@@ -1104,19 +1128,19 @@ MonkeyQuestConfig = {
 		["m_bShowZoneHighlight"] = true,
 		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
 		["m_aQuestList"] = {
-			["Vanquish the Betrayers - false"] = {
+			["Encroachment - false"] = {
 				["m_bChecked"] = true,
 			},
 			["From The Wreckage.... - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Durotar - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Encroachment - false"] = {
-				["m_bChecked"] = true,
-			},
 			["Break a Few Eggs - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Vanquish the Betrayers - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Durotar - true"] = {
 				["m_bChecked"] = true,
 			},
 		},

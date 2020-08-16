@@ -91,7 +91,7 @@ ncShadow: enabled
 oUF_Freebgrid: disabled
 oUF_Freebgrid_Config: disabled
 Postal: enabled
-RangeDisplay: disabled
+RangeDisplay: enabled
 RangeDisplay_Options: enabled
 SimpleRaidTargetIcons: enabled
 SquidMod: enabled

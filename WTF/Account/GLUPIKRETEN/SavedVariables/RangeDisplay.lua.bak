@@ -1,0 +1,31 @@
+
+RangeDisplayDB3 = {
+	["profileKeys"] = {
+		["Augustin - Golemagg"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["mute"] = true,
+			["units"] = {
+				["pet"] = {
+				},
+				["playertarget"] = {
+					["y"] = 0.645166099071503,
+					["x"] = -3.44103670120239,
+				},
+				["focus"] = {
+				},
+				["arena2"] = {
+				},
+				["mouseover"] = {
+					["y"] = -36.5593032836914,
+					["x"] = -3.48463487625122,
+				},
+				["arena5"] = {
+				},
+				["arena4"] = {
+				},
+			},
+		},
+	},
+}

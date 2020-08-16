@@ -79,6 +79,25 @@ f:SetScript(
 		end
 
 		-------------------------------------------
+		-- adjust position of Recount
+		-------------------------------------------
+		if (IsAddOnLoaded("RangeDisplay")) then
+			-- Move it
+			RangeDisplayMainFrame_playertarget:SetPoint("CENTER", UIParent, "CENTER", 0, -20)
+			RangeDisplayMainFrame_mouseover:SetPoint("CENTER", UIParent, "CENTER", 0, -35)
+
+			-- Stop the default UI from moving it back
+			RangeDisplayMainFrame_playertarget.ClearAllPoints = function()
+			end
+			RangeDisplayMainFrame_playertarget.SetPoint = function()
+			end
+			RangeDisplayMainFrame_mouseover.ClearAllPoints = function()
+			end
+			RangeDisplayMainFrame_mouseover.SetPoint = function()
+			end
+		end
+
+		-------------------------------------------
 		-- Reposition toast frame.
 		-------------------------------------------
 		BNToastFrame:ClearAllPoints()
