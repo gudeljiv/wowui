@@ -22,12 +22,12 @@ QuestieConfig = {
 		["Mxys - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Korupcija - Stonespine"] = "Default",
-		["Jaroslav - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
 		["Vermins - Dreadmist"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
+		["Jaroslav - Golemagg"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Default",
 		["Antun - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Default",
@@ -49,7 +49,8 @@ QuestieConfig = {
 	},
 	["char"] = {
 		["Mxzq - Golemagg"] = {
-			["TrackerWidth"] = 0,
+			["collapsedZones"] = {
+			},
 			["migrationVersion"] = 1,
 			["complete"] = {
 				[6282] = true,
@@ -160,15 +161,6 @@ QuestieConfig = {
 			["TrackerHiddenQuests"] = {
 			},
 			["collapsedQuests"] = {
-			},
-			["TrackedQuests"] = {
-			},
-			["trackerSetpoint"] = "AUTO",
-			["TrackerHiddenObjectives"] = {
-			},
-			["collapsedZones"] = {
-			},
-			["AutoUntrackedQuests"] = {
 			},
 			["journey"] = {
 				{
@@ -2068,6 +2060,14 @@ QuestieConfig = {
 					["Event"] = "Level",
 					["NewLevel"] = 31,
 				}, -- [279]
+			},
+			["trackerSetpoint"] = "AUTO",
+			["TrackerHiddenObjectives"] = {
+			},
+			["TrackerWidth"] = 0,
+			["AutoUntrackedQuests"] = {
+			},
+			["TrackedQuests"] = {
 			},
 		},
 		["Mxyz - Golemagg"] = {
@@ -6272,7 +6272,7 @@ QuestieConfig = {
 				[3921] = true,
 				[825] = true,
 				[857] = true,
-				[805] = true,
+				[1096] = true,
 				[3923] = true,
 				[6301] = true,
 				[3924] = true,
@@ -6282,23 +6282,23 @@ QuestieConfig = {
 				[858] = true,
 				[890] = true,
 				[6393] = true,
-				[1096] = true,
+				[550] = true,
 				[6283] = true,
 				[1068] = true,
-				[6384] = true,
+				[804] = true,
 				[827] = true,
-				[868] = true,
+				[6386] = true,
 				[891] = true,
 				[6571] = true,
-				[1094] = true,
-				[6386] = true,
+				[549] = true,
+				[6641] = true,
 				[6385] = true,
 				[541] = true,
 				[828] = true,
 				[216] = true,
 				[892] = true,
 				[924] = true,
-				[549] = true,
+				[1094] = true,
 				[5730] = true,
 				[4542] = true,
 				[5726] = true,
@@ -6357,15 +6357,15 @@ QuestieConfig = {
 				[6381] = true,
 				[6382] = true,
 				[1060] = true,
-				[804] = true,
+				[6384] = true,
 				[581] = true,
-				[6641] = true,
+				[868] = true,
 				[900] = true,
 				[1095] = true,
 				[5041] = true,
 				[499] = true,
 				[5881] = true,
-				[550] = true,
+				[805] = true,
 				[837] = true,
 				[869] = true,
 				[901] = true,
@@ -7465,7 +7465,8 @@ QuestieConfig = {
 			},
 		},
 		["Augustin - Golemagg"] = {
-			["TrackerWidth"] = 0,
+			["collapsedZones"] = {
+			},
 			["AutoUntrackedQuests"] = {
 			},
 			["migrationVersion"] = 1,
@@ -7482,22 +7483,16 @@ QuestieConfig = {
 				[383] = true,
 				[6395] = true,
 				[407] = true,
-				[376] = true,
-				[834] = true,
-				[3901] = true,
-				[3902] = true,
 				[380] = true,
+				[3902] = true,
+				[3901] = true,
+				[834] = true,
+				[376] = true,
 			},
 			["TrackerHiddenQuests"] = {
 			},
 			["trackerSetpoint"] = "AUTO",
 			["collapsedQuests"] = {
-			},
-			["TrackedQuests"] = {
-			},
-			["collapsedZones"] = {
-			},
-			["TrackerHiddenObjectives"] = {
 			},
 			["journey"] = {
 				{
@@ -7874,6 +7869,11 @@ QuestieConfig = {
 					["Quest"] = 1883,
 					["Timestamp"] = 1597594355,
 				}, -- [56]
+			},
+			["TrackerHiddenObjectives"] = {
+			},
+			["TrackerWidth"] = 0,
+			["TrackedQuests"] = {
 			},
 		},
 		["Grgur - Golemagg"] = {
