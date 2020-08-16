@@ -29,26 +29,26 @@ local function SkinTarget()
 			frameBorder = _G["TargetFrameBuff" .. i .. "Border"]
 			frameCount = _G["TargetFrameBuff" .. i .. "Count"]
 
-			if UnitIsPlayer("target") or (petName ~= nil and targetName ~= nil and targetName == petName) then
-				if frameBorder then
-					frameBorder:Hide()
-				end
-
-				if frameCount then
-					frameCount:SetFont(xVermin.Config.font.atari, xVermin.Config.buff.fontsize - 1, xVermin.Config.buff.outline)
-					frameCount:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", 0, 2)
-				end
-
-				if frame then
-					frame:CreateBeautyBorder(xVermin.Config.buff.bordersize)
-					frame:SetBeautyBorderTexture(xVermin.Config.border.default)
-					frame:SetScale(xVermin.Config.buff.scale)
-				end
-			else
-				if frame then
-					frame:Hide()
-				end
+			-- if UnitIsPlayer("target") or (petName ~= nil and targetName ~= nil and targetName == petName) then
+			if frameBorder then
+				frameBorder:Hide()
 			end
+
+			if frameCount then
+				frameCount:SetFont(xVermin.Config.font.atari, xVermin.Config.buff.fontsize - 1, xVermin.Config.buff.outline)
+				frameCount:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", 0, 2)
+			end
+
+			if frame then
+				frame:CreateBeautyBorder(xVermin.Config.buff.bordersize)
+				frame:SetBeautyBorderTexture(xVermin.Config.border.default)
+				frame:SetScale(xVermin.Config.buff.scale)
+			end
+			-- else
+			-- 	if frame then
+			-- 		frame:Hide()
+			-- 	end
+			-- end
 
 			------------------------------------------------------------------------------------------------------------------------------------------------------
 			-- DEBUFFS -------------------------------------------------------------------------------------------------------------------------------------------
