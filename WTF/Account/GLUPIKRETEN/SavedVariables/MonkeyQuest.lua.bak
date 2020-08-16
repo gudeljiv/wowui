@@ -260,13 +260,10 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Augustin"] = {
 		["m_aQuestList"] = {
-			["Durotar - true"] = {
+			["Speak with Un'thuwa - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Vanquish the Betrayers - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Encroachment - false"] = {
+			["Mage - true"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -877,7 +874,7 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 853.14892578125,
+		["m_iFrameBottom"] = 968.109619140625,
 		["m_bHideTitleButtons"] = false,
 		["m_iFrameLeft"] = 1739.55053710938,
 		["m_bColourDoneOrFailed"] = true,

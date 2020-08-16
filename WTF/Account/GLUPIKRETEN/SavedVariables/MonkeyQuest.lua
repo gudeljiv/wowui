@@ -260,13 +260,10 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Augustin"] = {
 		["m_aQuestList"] = {
-			["Durotar - true"] = {
+			["Speak with Un'thuwa - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Vanquish the Betrayers - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Encroachment - false"] = {
+			["Mage - true"] = {
 				["m_bChecked"] = true,
 			},
 		},

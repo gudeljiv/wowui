@@ -15,11 +15,11 @@ AtlasLootClassicDB = {
 		["Mxym - Golemagg"] = "Default",
 		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
 		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
-		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
-		["Mxyzptlk - Golemagg"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 		["Antun - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
@@ -145,45 +145,6 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
-		["Mxyzptlk - Golemagg"] = {
-			["GUI"] = {
-				["selected"] = {
-					nil, -- [1]
-					"Ragefire", -- [2]
-					nil, -- [3]
-					1, -- [4]
-					0, -- [5]
-				},
-			},
-		},
-		["Default"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
-			["GUI"] = {
-				["point"] = {
-					nil, -- [1]
-					nil, -- [2]
-					"CENTER", -- [3]
-					-218.999954223633, -- [4]
-					136.999923706055, -- [5]
-				},
-				["selected"] = {
-					nil, -- [1]
-					"RazorfenKraul", -- [2]
-					nil, -- [3]
-					1, -- [4]
-					0, -- [5]
-				},
-			},
-		},
-		["Augustin - Golemagg"] = {
-		},
-		["Grgur - Golemagg"] = {
-		},
-		["Jaroslav - Golemagg"] = {
-		},
 		["Vermin - Golemagg"] = {
 			["GUI"] = {
 				["point"] = {
@@ -205,6 +166,45 @@ AtlasLootClassicDB = {
 				["shown"] = false,
 				["hide"] = true,
 			},
+		},
+		["Default"] = {
+			["GUI"] = {
+				["point"] = {
+					nil, -- [1]
+					nil, -- [2]
+					"CENTER", -- [3]
+					-218.999954223633, -- [4]
+					136.999923706055, -- [5]
+				},
+				["selected"] = {
+					nil, -- [1]
+					"RazorfenKraul", -- [2]
+					nil, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+		},
+		["Augustin - Golemagg"] = {
+		},
+		["Grgur - Golemagg"] = {
+		},
+		["Mxyzptlk - Golemagg"] = {
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"Ragefire", -- [2]
+					nil, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+			},
+		},
+		["Jaroslav - Golemagg"] = {
 		},
 		["Klhjakhsgdjh - Golemagg"] = {
 			["GUI"] = {
