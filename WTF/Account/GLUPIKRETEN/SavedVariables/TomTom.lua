@@ -13,8 +13,8 @@ TomTomDB = {
 		["Klhjakhsgdjh - Golemagg"] = "Default",
 		["Antun - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Default",
-		["Dotwise - Golemagg"] = "Default",
 		["Mxys - Golemagg"] = "Default",
+		["Dotwise - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
 	},
@@ -70,8 +70,8 @@ TomTomWaypointsM = {
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 		["Antun - Golemagg"] = "Antun - Golemagg",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
-		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
 		["Mxys - Golemagg"] = "Mxys - Golemagg",
+		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
 	},
@@ -100,9 +100,9 @@ TomTomWaypointsM = {
 		},
 		["Judawise - Golemagg"] = {
 		},
-		["Dotwise - Golemagg"] = {
-		},
 		["Mxys - Golemagg"] = {
+		},
+		["Dotwise - Golemagg"] = {
 		},
 		["Vermin - Golemagg"] = {
 		},

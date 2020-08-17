@@ -79,21 +79,22 @@ f:SetScript(
 		end
 
 		-------------------------------------------
-		-- adjust position of Recount
+		-- adjust position of RangeDisplay frames
 		-------------------------------------------
 		if (IsAddOnLoaded("RangeDisplay")) then
-			-- Move it
-			RangeDisplayMainFrame_playertarget:SetPoint("CENTER", UIParent, "CENTER", 0, -20)
-			RangeDisplayMainFrame_mouseover:SetPoint("CENTER", UIParent, "CENTER", 0, -35)
-
-			-- Stop the default UI from moving it back
-			RangeDisplayMainFrame_playertarget.ClearAllPoints = function()
+			if _G["RangeDisplayMainFrame_playertarget"] ~= nil then
+				RangeDisplayMainFrame_playertarget:SetPoint("CENTER", UIParent, "CENTER", 0, -20)
+				RangeDisplayMainFrame_playertarget.ClearAllPoints = function()
+				end
+				RangeDisplayMainFrame_playertarget.SetPoint = function()
+				end
 			end
-			RangeDisplayMainFrame_playertarget.SetPoint = function()
-			end
-			RangeDisplayMainFrame_mouseover.ClearAllPoints = function()
-			end
-			RangeDisplayMainFrame_mouseover.SetPoint = function()
+			if _G["RangeDisplayMainFrame_mouseover"] ~= nil then
+				RangeDisplayMainFrame_mouseover:SetPoint("CENTER", UIParent, "CENTER", 0, -35)
+				RangeDisplayMainFrame_mouseover.ClearAllPoints = function()
+				end
+				RangeDisplayMainFrame_mouseover.SetPoint = function()
+				end
 			end
 		end
 
