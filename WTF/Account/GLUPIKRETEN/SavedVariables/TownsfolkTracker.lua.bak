@@ -1,0 +1,13 @@
+
+TownsfolkTrackerDB = {
+	["profileKeys"] = {
+		["Mxzq - Golemagg"] = "Default",
+		["Augustin - Golemagg"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["minimapPos"] = 338.071495441108,
+			["showMinimapButton"] = false,
+		},
+	},
+}
