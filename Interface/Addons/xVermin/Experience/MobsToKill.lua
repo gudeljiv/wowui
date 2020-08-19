@@ -2,7 +2,7 @@ local _, xVermin = ...
 
 --local font = "Interface\\AddOns\\xVermin\\Media\\fontAtari.ttf"
 local _, class, _ = UnitClass("player")
-local r, g, b, NewXP, hmmm, gained, XPToLVL, num, segment, relperc, r1, r2, g1, g2, b1, b2, f, PetExpFrame, PlayerExpFrame, percent, rested, output, pcxp, pmxp, ppercent, cmtk
+local r, g, b, NewXP, hmmm, gained, XPToLVL, num, segment, relperc, r1, r2, g1, g2, b1, b2, PlayerXP, PetExpFrame, PlayerExpFrame, percent, rested, output, pcxp, pmxp, ppercent, cmtk
 local color = RAID_CLASS_COLORS[class]
 if class == "SHAMAN" then
 	color = {
@@ -15,55 +15,55 @@ end
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ---- color funtion based on amount of XP
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-local function ColorGradient(perc, ...)
-	if perc >= 1 then
-		r, g, b = select(select("#", ...) - 2, ...)
-		return r, g, b
-	elseif perc <= 0 then
-		r, g, b = ...
-		return r, g, b
-	end
+-- local function ColorGradient(perc, ...)
+-- 	if perc >= 1 then
+-- 		r, g, b = select(select("#", ...) - 2, ...)
+-- 		return r, g, b
+-- 	elseif perc <= 0 then
+-- 		r, g, b = ...
+-- 		return r, g, b
+-- 	end
 
-	num = select("#", ...) / 3
-	segment, relperc = math.modf(perc * (num - 1))
-	r1, g1, b1, r2, g2, b2 = select((segment * 3) + 1, ...)
-	return r1 + (r2 - r1) * relperc, g1 + (g2 - g1) * relperc, b1 + (b2 - b1) * relperc
-end
+-- 	num = select("#", ...) / 3
+-- 	segment, relperc = math.modf(perc * (num - 1))
+-- 	r1, g1, b1, r2, g2, b2 = select((segment * 3) + 1, ...)
+-- 	return r1 + (r2 - r1) * relperc, g1 + (g2 - g1) * relperc, b1 + (b2 - b1) * relperc
+-- end
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ---- creating all the frames we need
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-if class == "HUNTER" then
-	PetExpFrame = CreateFrame("Frame", "PetExpFrame", UIParent)
-	PetExpFrame:SetWidth(1)
-	PetExpFrame:SetHeight(1)
-	PetExpFrame:SetAlpha(0.9)
-	PetExpFrame:SetPoint("BOTTOMLEFT", ChatFrame1, "BOTTOMRIGHT", 5, 40)
-	PetExpFrame.text = PetExpFrame:CreateFontString(nil, "ARTWORK")
-	PetExpFrame.text:SetJustifyH("LEFT")
-	PetExpFrame.text:SetJustifyV("TOP")
-	PetExpFrame.text:SetFont(xVermin.Config.font.arial, 12)
-	PetExpFrame.text:SetShadowOffset(1, -1)
-	PetExpFrame.text:SetTextColor(1, 1, 1, 1)
-	PetExpFrame.text:SetPoint("LEFT", PetExpFrame, "LEFT", 0, 0)
-	PetExpFrame:SetFrameStrata("MEDIUM")
-	PetExpFrame:Hide()
-end
+-- if class == "HUNTER" then
+-- 	PetExpFrame = CreateFrame("Frame", "PetExpFrame", UIParent)
+-- 	PetExpFrame:SetWidth(1)
+-- 	PetExpFrame:SetHeight(1)
+-- 	PetExpFrame:SetAlpha(0.9)
+-- 	PetExpFrame:SetPoint("BOTTOMLEFT", ChatFrame1, "BOTTOMRIGHT", 5, 40)
+-- 	PetExpFrame.text = PetExpFrame:CreateFontString(nil, "ARTWORK")
+-- 	PetExpFrame.text:SetJustifyH("LEFT")
+-- 	PetExpFrame.text:SetJustifyV("TOP")
+-- 	PetExpFrame.text:SetFont(xVermin.Config.font.arial, 12)
+-- 	PetExpFrame.text:SetShadowOffset(1, -1)
+-- 	PetExpFrame.text:SetTextColor(1, 1, 1, 1)
+-- 	PetExpFrame.text:SetPoint("LEFT", PetExpFrame, "LEFT", 0, 0)
+-- 	PetExpFrame:SetFrameStrata("MEDIUM")
+-- 	PetExpFrame:Hide()
+-- end
 
-PlayerExpFrame = CreateFrame("Frame", "PlayerExpFrame", UIParent)
-PlayerExpFrame:SetWidth(1)
-PlayerExpFrame:SetHeight(1)
-PlayerExpFrame:SetAlpha(0.9)
-PlayerExpFrame:SetPoint("BOTTOMLEFT", ChatFrame1, "BOTTOMRIGHT", 5, 10)
-PlayerExpFrame.text = PlayerExpFrame:CreateFontString(nil, "ARTWORK")
-PlayerExpFrame.text:SetJustifyH("LEFT")
-PlayerExpFrame.text:SetJustifyV("TOP")
-PlayerExpFrame.text:SetFont(xVermin.Config.font.arial, 12)
-PlayerExpFrame.text:SetShadowOffset(1, -1)
-PlayerExpFrame.text:SetTextColor(1, 1, 1, 1)
-PlayerExpFrame.text:SetPoint("LEFT", PlayerExpFrame, "LEFT", 0, 0)
-PlayerExpFrame:SetFrameStrata("MEDIUM")
-PlayerExpFrame:Hide()
+-- PlayerExpFrame = CreateFrame("Frame", "PlayerExpFrame", UIParent)
+-- PlayerExpFrame:SetWidth(1)
+-- PlayerExpFrame:SetHeight(1)
+-- PlayerExpFrame:SetAlpha(0.9)
+-- PlayerExpFrame:SetPoint("BOTTOMLEFT", ChatFrame1, "BOTTOMRIGHT", 5, 10)
+-- PlayerExpFrame.text = PlayerExpFrame:CreateFontString(nil, "ARTWORK")
+-- PlayerExpFrame.text:SetJustifyH("LEFT")
+-- PlayerExpFrame.text:SetJustifyV("TOP")
+-- PlayerExpFrame.text:SetFont(xVermin.Config.font.arial, 12)
+-- PlayerExpFrame.text:SetShadowOffset(1, -1)
+-- PlayerExpFrame.text:SetTextColor(1, 1, 1, 1)
+-- PlayerExpFrame.text:SetPoint("LEFT", PlayerExpFrame, "LEFT", 0, 0)
+-- PlayerExpFrame:SetFrameStrata("MEDIUM")
+-- PlayerExpFrame:Hide()
 
 cmtk = CreateFrame("Frame", "CustomContainer_CombatMobsToKill", CustomContainer_Combat)
 cmtk:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 2)
@@ -113,15 +113,6 @@ local function UpdateExperience(self, event)
 			gained = NewXP - CurrentXP
 			XPToLVL = MaxXP - NewXP
 
-			-- print("------------------------------------------------------")
-			-- print("Event: " .. event)
-			-- print("CurrentXP: " .. CurrentXP)
-			-- print("MaxXP: " .. MaxXP)
-			-- print("NewXP: " .. NewXP)
-			-- print("Gained: " .. gained)
-			-- print("XPToLVL: " .. XPToLVL)
-			-- print("------------------------------------------------------")
-
 			cpxf.text:SetText(XPToLVL .. " (XP)")
 			cpxf.text:SetTextColor(color.r, color.g, color.b, 1)
 
@@ -153,52 +144,52 @@ local function UpdateExperience(self, event)
 				)
 			end
 
-			------------------------------------------------------------------------------------------------------------------------------------------------------------------
-			--- PLAYER EXPERIENCE --------------------------------------------------------------------------------------------------------------------------------------------
-			------------------------------------------------------------------------------------------------------------------------------------------------------------------
-			percent = floor((NewXP / MaxXP) * 100)
-			_, _, rested = GetRestState()
+		------------------------------------------------------------------------------------------------------------------------------------------------------------------
+		--- PLAYER EXPERIENCE --------------------------------------------------------------------------------------------------------------------------------------------
+		------------------------------------------------------------------------------------------------------------------------------------------------------------------
+		-- percent = floor((NewXP / MaxXP) * 100)
+		-- _, _, rested = GetRestState()
 
-			output = "player (" .. UnitLevel("player") .. "):"
-			if rested == 2 then
-				output = output .. " [rested x2] "
-			end
-			output = output .. "\n" .. NewXP .. " / " .. MaxXP .. " (" .. percent .. "%)"
-			PlayerExpFrame.text:SetText(output)
-			r, g, b = ColorGradient(percent / 100, 1, 0, 0, 1, 1, 0, 0, 1, 0)
-			PlayerExpFrame.text:SetTextColor(r, g, b, 1)
+		-- output = "player (" .. UnitLevel("player") .. "):"
+		-- if rested == 2 then
+		-- 	output = output .. " [rested x2] "
+		-- end
+		-- output = output .. "\n" .. NewXP .. " / " .. MaxXP .. " (" .. percent .. "%)"
+		-- PlayerExpFrame.text:SetText(output)
+		-- r, g, b = ColorGradient(percent / 100, 1, 0, 0, 1, 1, 0, 0, 1, 0)
+		-- PlayerExpFrame.text:SetTextColor(r, g, b, 1)
 		end
 
 		------------------------------------------------------------------------------------------------------------------------------------------------------------------
 		--- PET EXPERIENCE -----------------------------------------------------------------------------------------------------------------------------------------------
 		------------------------------------------------------------------------------------------------------------------------------------------------------------------
-		if class == "HUNTER" then
-			C_Timer.After(
-				0.5,
-				function()
-					if UnitExists("pet") then
-						pcxp, pmxp = GetPetExperience()
-						ppercent = floor((pcxp / pmxp) * 100)
-						output = "pet (" .. UnitLevel("pet") .. "):\n" .. pcxp .. " / " .. pmxp .. " (" .. ppercent .. "%)"
-						PetExpFrame.text:SetText(output)
-						r, g, b = ColorGradient(ppercent / 100, 1, 0, 0, 1, 1, 0, 0, 1, 0)
-						PetExpFrame.text:SetTextColor(r, g, b, 1)
-						PetExpFrame:Show()
-					else
-						PetExpFrame:Hide()
-					end
-				end
-			)
-		end
+		-- if class == "HUNTER" then
+		-- 	C_Timer.After(
+		-- 		0.5,
+		-- 		function()
+		-- 			if UnitExists("pet") then
+		-- 				pcxp, pmxp = GetPetExperience()
+		-- 				ppercent = floor((pcxp / pmxp) * 100)
+		-- 				output = "pet (" .. UnitLevel("pet") .. "):\n" .. pcxp .. " / " .. pmxp .. " (" .. ppercent .. "%)"
+		-- 				PetExpFrame.text:SetText(output)
+		-- 				r, g, b = ColorGradient(ppercent / 100, 1, 0, 0, 1, 1, 0, 0, 1, 0)
+		-- 				PetExpFrame.text:SetTextColor(r, g, b, 1)
+		-- 				PetExpFrame:Show()
+		-- 			else
+		-- 				PetExpFrame:Hide()
+		-- 			end
+		-- 		end
+		-- 	)
+		-- end
 
 		CurrentXP = NewXP
 
-		UIFrameFadeIn(PlayerExpFrame, 1, 0, 1)
+		-- UIFrameFadeIn(PlayerExpFrame, 1, 0, 1)
 		UIFrameFadeIn(cmtk, 1, 0, 1)
 		UIFrameFadeIn(cpxf, 1, 0, 1)
 	else
-		UIFrameFadeOut(PlayerExpFrame, 1, 1, 0)
-		UIFrameFadeOut(PetExpFrame, 1, 1, 0)
+		-- UIFrameFadeOut(PlayerExpFrame, 1, 1, 0)
+		-- UIFrameFadeOut(PetExpFrame, 1, 1, 0)
 		UIFrameFadeOut(cmtk, 1, 1, 0)
 		UIFrameFadeOut(cmxg, 1, 1, 0)
 		UIFrameFadeOut(cpxf, 1, 1, 0)

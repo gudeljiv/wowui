@@ -49,11 +49,14 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
-			["moveFrames"] = false,
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
 			},
-			["fixedStrata"] = true,
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+			},
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -311,17 +314,14 @@ ChocolateBarDB = {
 					["customLabel"] = "R",
 				},
 			},
-			["gap"] = 0,
 			["fontName"] = "Friz Quadrata TT",
-			["forceColor"] = false,
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
-			},
+			["fixedStrata"] = true,
+			["gap"] = 0,
+			["moveFrames"] = false,
 			["desaturated"] = false,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["forceColor"] = false,
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -365,7 +365,7 @@ CB_PlayedTime = {
 		["total"] = 1719,
 	},
 	["Mxyz-"] = {
-		["total"] = 44141,
+		["total"] = 44402,
 	},
 	["Antun-"] = {
 		["total"] = 52,
@@ -401,7 +401,7 @@ CB_PlayedTime = {
 		["total"] = 18945,
 	},
 	["Mxzq-"] = {
-		["total"] = 257933,
+		["total"] = 264528,
 	},
 	["Kosturko-"] = {
 		["total"] = 1457,
@@ -413,7 +413,7 @@ CB_PlayedTime = {
 		["total"] = 2,
 	},
 	["Augustin-"] = {
-		["total"] = 22392,
+		["total"] = 22557,
 	},
 	["Pitchwise-"] = {
 		["total"] = 390,

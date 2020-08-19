@@ -258,23 +258,6 @@ f:SetScript(
 				f.mpreg:SetText(GetRealMpFive())
 			end
 
-			if (f.extraPoints) then
-			-- if (UnitHasVehicleUI('player')) then
-			--     if (f.extraPoints:IsShown()) then
-			--         f.extraPoints:Hide()
-			--     end
-			-- else
-			-- local nump
-			-- if (playerClass == 'WARLOCK') then
-			--     nump = UnitPower('player', SPELL_POWER_SOUL_SHARDS)
-			-- elseif (playerClass == 'PALADIN') then
-			--     nump = UnitPower('player', SPELL_POWER_HOLY_POWER)
-			-- end
-
-			-- f.extraPoints:SetText(nump == 0 and '' or nump)
-			-- end
-			end
-
 			UpdateBar()
 			UpdateBarVisibility()
 

@@ -214,8 +214,8 @@ EavesDropStatsDB = {
 				["hit"] = {
 					["Raptor Strike"] = {
 						[-2] = {
-							["time"] = "|cffffffff08/09/20 12:30:08|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffRaptor Strike|r|h hits |Hunit:Creature-0-4448-1-186-4025-00002FD00B:Bloodfury Ambusher|hBloodfury Ambusher|h for |cffffffff36|r |cffffffffPhysical|r.(55 Overkill)",
-							["amount"] = 91,
+							["time"] = "|cffffffff08/19/20 09:54:08|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffRaptor Strike|r|h hits |Hunit:Creature-0-4447-1-223-4027-00003D72E5:Bloodfury Storm Witch|hBloodfury Storm Witch|h for |cffffffff101|r |cffffffffPhysical|r.",
+							["amount"] = 101,
 						},
 						[2] = {
 							["time"] = "|cffffffff08/11/20 09:14:49|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffRaptor Strike|r|h hits |Hunit:Creature-0-4448-1-177-4111-000032DC4D:Gravelsnout Kobold|hGravelsnout Kobold|h for |cffffffff169|r |cffffffffPhysical|r.(Critical)",
@@ -233,8 +233,8 @@ EavesDropStatsDB = {
 					},
 					["Melee Attack"] = {
 						[-2] = {
-							["time"] = "|cffffffff08/07/20 07:27:26|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h melee swing hits |Hunit:Creature-0-4448-1-35-3100-00002CEBFD:Elder Mottled Boar|hElder Mottled Boar|h for |cffffffff69|r |cffffffffPhysical|r.",
-							["amount"] = 69,
+							["time"] = "|cffffffff08/19/20 09:48:34|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h melee swing hits |Hunit:Creature-0-4447-1-223-4042-00003D8208:Singed Basilisk|hSinged Basilisk|h for |cffffffff73|r |cffffffffPhysical|r.",
+							["amount"] = 73,
 						},
 						[2] = {
 							["time"] = "|cffffffff08/09/20 12:33:13|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h melee swing hits |Hunit:Creature-0-4448-1-186-4025-0000AFD0D1:Bloodfury Ambusher|hBloodfury Ambusher|h for |cffffffff128|r |cffffffffPhysical|r.(Critical)",
@@ -298,17 +298,6 @@ EavesDropStatsDB = {
 						},
 						["icon"] = 132215,
 					},
-					["Wing Clip"] = {
-						[-2] = {
-							["time"] = "|cffffffff07/16/20 11:51:37|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWing Clip|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-66-3246-00000F738C:Fleeting Plainstrider|hFleeting Plainstrider|h for |cffffffff4|r |cffffffffPhysical|r.",
-							["amount"] = 4,
-						},
-						[2] = {
-							["time"] = "|cffffffff07/22/20 05:37:51|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWing Clip|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-172-3100-0000182F7E:Elder Mottled Boar|hElder Mottled Boar|h for |cffffffff8|r |cffffffffPhysical|r.(Critical)",
-							["amount"] = 8,
-						},
-						["icon"] = 132309,
-					},
 					["Multi-Shot"] = {
 						[-2] = {
 							["time"] = "|cffffffff08/11/20 09:04:18|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMulti-Shot|r|h hits |Hunit:Creature-0-4448-1-177-4124-00002D1A8C:Needles Cougar|hNeedles Cougar|h for |cffffffff99|r |cffffffffPhysical|r.",
@@ -319,6 +308,17 @@ EavesDropStatsDB = {
 							["amount"] = 137,
 						},
 						["icon"] = 132330,
+					},
+					["Wing Clip"] = {
+						[-2] = {
+							["time"] = "|cffffffff07/16/20 11:51:37|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWing Clip|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-66-3246-00000F738C:Fleeting Plainstrider|hFleeting Plainstrider|h for |cffffffff4|r |cffffffffPhysical|r.",
+							["amount"] = 4,
+						},
+						[2] = {
+							["time"] = "|cffffffff07/22/20 05:37:51|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWing Clip|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-172-3100-0000182F7E:Elder Mottled Boar|hElder Mottled Boar|h for |cffffffff8|r |cffffffffPhysical|r.(Critical)",
+							["amount"] = 8,
+						},
+						["icon"] = 132309,
 					},
 				},
 			}, -- [1]

@@ -22,9 +22,10 @@ VER 3 0000000000000007 "MAGE FOOD" "136173"
 /use [nocombat]item:5349
 END
 VER 3 0000000000000002 "MOVE" "Ability_Ambush."
+/run PlayerXPFrame:SetPoint("BOTTOMLEFT", ChatFrame1, "BOTTOMRIGHT", 5, 15)
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
-#showtooltip item:3771
+#showtooltip item:0
 /cast feed pet
-/use item:3771
+/use item:0
 END

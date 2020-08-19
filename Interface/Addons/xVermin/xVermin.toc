@@ -18,6 +18,10 @@ Frames/TalentFrame.lua
 Rotation/_Core.lua
 Rotation/Warrior.lua
 
+Experience/Player.lua
+Experience/Pet.lua
+Experience/MobsToKill.lua
+
 Addons/AdiBags.lua
 
 AutoCarrot.lua
@@ -31,7 +35,6 @@ Bindings.lua
 Chat.lua
 DamageFont.lua
 ErrorsFilter.lua
-Experience.lua
 GarbageCollector.lua
 Inspect.lua
 PetHappiness.lua

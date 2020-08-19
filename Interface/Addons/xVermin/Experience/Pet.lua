@@ -1,0 +1,124 @@
+local _, xVermin = ...
+local _, class, _ = UnitClass("player")
+
+local size = 125
+local scale = 1.4
+
+local PetXP = CreateFrame("Frame", "PetXPFrame", UIParent)
+PetXP:SetScale(scale)
+PetXP:SetSize(size, 18)
+PetXP:SetPoint("BOTTOM", PlayerXPFrame, "TOP", 0, 0)
+PetXP:EnableMouse(false)
+
+PetXP.XPbar = CreateFrame("StatusBar", "PetXPFrameStatusBar", UIParent)
+PetXP.XPbar:SetScale(1)
+PetXP.XPbar:SetSize(size * scale, 3)
+PetXP.XPbar:SetPoint("CENTER", PetXP, 0, -23)
+PetXP.XPbar:SetStatusBarTexture("Interface\\AddOns\\nPower\\media\\statusbarTexture")
+PetXP.XPbar:SetAlpha(0)
+
+PetXP.XPbar.Value = PetXP.XPbar:CreateFontString(nil, "ARTWORK")
+PetXP.XPbar.Value:SetFont("Fonts\\ARIALN.ttf", 18, "THINOUTLINE")
+PetXP.XPbar.Value:SetShadowOffset(0, 0)
+PetXP.XPbar.Value:SetPoint("CENTER", PetXP.XPbar, 0, 0)
+PetXP.XPbar.Value:SetVertexColor(1, 1, 1)
+
+PetXP.XPbar.Background = PetXP.XPbar:CreateTexture(nil, "BACKGROUND")
+PetXP.XPbar.Background:SetAllPoints(PetXP.XPbar)
+PetXP.XPbar.Background:SetTexture("Interface\\AddOns\\nPower\\media\\statusbarTexture")
+PetXP.XPbar.Background:SetVertexColor(0.25, 0.25, 0.25, 1)
+
+PetXP.XPbar.BackgroundShadow = CreateFrame("Frame", nil, PetXP.XPbar)
+PetXP.XPbar.BackgroundShadow:SetFrameStrata("BACKGROUND")
+PetXP.XPbar.BackgroundShadow:SetPoint("TOPLEFT", -4, 4)
+PetXP.XPbar.BackgroundShadow:SetPoint("BOTTOMRIGHT", 4, -4)
+PetXP.XPbar.BackgroundShadow:SetBackdrop(
+	{
+		BgFile = "Interface\\ChatFrame\\ChatFrameBackground",
+		edgeFile = "Interface\\Addons\\nPower\\media\\textureGlow",
+		edgeSize = 4,
+		insets = {left = 3, right = 3, top = 3, bottom = 3}
+	}
+)
+PetXP.XPbar.BackgroundShadow:SetBackdropColor(0.15, 0.15, 0.15, 1)
+PetXP.XPbar.BackgroundShadow:SetBackdropBorderColor(0, 0, 0)
+
+PetXP.XPbar.Below = PetXP.XPbar:CreateTexture(nil, "BACKGROUND")
+PetXP.XPbar.Below:SetHeight(14)
+PetXP.XPbar.Below:SetWidth(14)
+PetXP.XPbar.Below:SetTexture("Interface\\AddOns\\nPower\\media\\textureArrowBelow")
+
+PetXP.XPbar.Above = PetXP.XPbar:CreateTexture(nil, "BACKGROUND")
+PetXP.XPbar.Above:SetHeight(14)
+PetXP.XPbar.Above:SetWidth(14)
+PetXP.XPbar.Above:SetTexture("Interface\\AddOns\\nPower\\media\\textureArrowAbove")
+PetXP.XPbar.Above:SetPoint("BOTTOM", PetXP.XPbar.Below, "TOP", 0, PetXP.XPbar:GetHeight())
+
+local function FormatValue(self)
+	if (self >= 10000) then
+		return ("%.1fk"):format(self / 1e3)
+	else
+		return self
+	end
+end
+
+local PetXPVisible = false
+local function UpdateBarVisibility()
+	if UnitExists("pet") and UnitLevel("player") > UnitLevel("pet") then
+		if not PetXPVisible then
+			securecall("UIFrameFadeIn", PetXP.XPbar, 1, 0, 0.8)
+			PetXPVisible = true
+		end
+	else
+		if PetXPVisible then
+			securecall("UIFrameFadeOut", PetXP.XPbar, 1, 0.8, 0)
+			PetXPVisible = false
+		end
+	end
+end
+
+local function UpdateBarValueAndColor(self, event)
+	if UnitLevel("player") < MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] then
+		if class == "HUNTER" then
+			C_Timer.After(
+				0.5,
+				function()
+					if UnitExists("pet") then
+						CurrentXP, MaxXP = GetPetExperience()
+						percent = floor((CurrentXP / MaxXP) * 100)
+						r, g, b = xVermin:ColorGradient(percent / 100, 1, 0, 0, 1, 1, 0, 0, 1, 0)
+						PetXP.XPbar:SetMinMaxValues(0, MaxXP)
+						PetXP.XPbar:SetValue(CurrentXP)
+						PetXP.XPbar.Value:SetText(CurrentXP > 0 and FormatValue(CurrentXP) or "")
+						PetXP.XPbar:SetStatusBarColor(r, g, b)
+					end
+				end
+			)
+		end
+	end
+end
+
+local function UpdateBar()
+	UpdateBarVisibility()
+	UpdateBarValueAndColor()
+end
+
+PetXP:RegisterEvent("PLAYER_XP_UPDATE")
+PetXP:RegisterEvent("PLAYER_ENTERING_WORLD")
+PetXP:RegisterEvent("UNIT_PET")
+PetXP:RegisterEvent("PLAYER_LEVEL_UP")
+PetXP:SetScript(
+	"OnEvent",
+	function(self, event, arg1)
+		if event == "PLAYER_LEVEL_UP" or event == "PLAYER_ENTERING_WORLD" then
+			C_Timer.After(
+				3,
+				function()
+					UpdateBar()
+				end
+			)
+		else
+			UpdateBar()
+		end
+	end
+)

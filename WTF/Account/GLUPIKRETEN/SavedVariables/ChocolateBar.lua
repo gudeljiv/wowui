@@ -72,7 +72,10 @@ ChocolateBarDB = {
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
 			},
-			["fixedStrata"] = true,
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+			},
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -330,18 +333,15 @@ ChocolateBarDB = {
 					["customLabel"] = "B",
 				},
 			},
-			["desaturated"] = false,
+			["gap"] = 0,
+			["forceColor"] = false,
+			["fixedStrata"] = true,
 			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["fontName"] = "Friz Quadrata TT",
-			["moveFrames"] = false,
-			["gap"] = 0,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
-			},
-			["forceColor"] = false,
+			["desaturated"] = false,
+			["moveFrames"] = false,
 			["textColor"] = {
 				["a"] = 1,
 				["b"] = 1,
@@ -365,7 +365,7 @@ CB_PlayedTime = {
 		["total"] = 1719,
 	},
 	["Mxyz-"] = {
-		["total"] = 44205,
+		["total"] = 44402,
 	},
 	["Antun-"] = {
 		["total"] = 52,
@@ -401,7 +401,7 @@ CB_PlayedTime = {
 		["total"] = 18945,
 	},
 	["Augustin-"] = {
-		["total"] = 22392,
+		["total"] = 22557,
 	},
 	["Kosturko-"] = {
 		["total"] = 1457,
@@ -413,7 +413,7 @@ CB_PlayedTime = {
 		["total"] = 2,
 	},
 	["Mxzq-"] = {
-		["total"] = 257933,
+		["total"] = 264647,
 	},
 	["Dotwise-"] = {
 		["total"] = 3924,

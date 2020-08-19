@@ -1,3 +1,8 @@
+VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Fire Blast
+END
 VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
@@ -7,9 +12,4 @@ VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
 /cast Frostbolt
-END
-VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/startattack
-/cast Fire Blast
 END
