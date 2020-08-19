@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 1908,
+	["session"] = 1910,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -1398,5 +1398,13 @@ BugGrabberDB = {
 			["session"] = 1894,
 			["counter"] = 1,
 		}, -- [177]
+		{
+			["message"] = "[string \"MultiBarBottomLeft:SetPoint(\"TOP\", MainMenuBar, \"BOTTOM\" 0, 0)\"]:1: ')' expected near '0'",
+			["time"] = "2020/08/19 13:45:42",
+			["locals"] = "(*temporary) = \"MultiBarBottomLeft:SetPoint(\"TOP\", MainMenuBar, \"BOTTOM\" 0, 0)\"\n",
+			["stack"] = "[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2783: in function <Interface\\FrameXML\\ChatFrame.lua:2776>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:338: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 1909,
+			["counter"] = 1,
+		}, -- [178]
 	},
 }

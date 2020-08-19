@@ -8,23 +8,14 @@ TradeSkillMasterDB = {
 		["|cffffffff|Hitem:5116::::::::5:::::::|h[Long Tail Feather]|h|r"] = {
 			1611, -- [1]
 		},
-		["|cffa335ee|Hitem:811::::::::5:::::::|h[Axe of the Deep Woods]|h|r"] = {
-			651417, -- [1]
+		["|cffa335ee|Hitem:3075::::::::5:::::::|h[Eye of Flame]|h|r"] = {
+			249998, -- [1]
 		},
 		["|cffffffff|Hitem:16646::::::::5:::::::|h[Shredder Operating Manual - Page 2]|h|r"] = {
 			1523, -- [1]
 		},
-		["|cffa335ee|Hitem:3075::::::::5:::::::|h[Eye of Flame]|h|r"] = {
-			249998, -- [1]
-		},
-		["|cffffffff|Hitem:16651::::::::5:::::::|h[Shredder Operating Manual - Page 7]|h|r"] = {
-			1240, -- [1]
-		},
 		["|cff0070dd|Hitem:12996::::::::5:::::::|h[Band of Purification]|h|r"] = {
 			54040, -- [1]
-		},
-		["|cff0070dd|Hitem:11084::::::::5:::::::|h[Large Glimmering Shard]|h|r"] = {
-			1214, -- [1]
 		},
 		["|cffffffff|Hitem:16204::::::::5:::::::|h[Illusion Dust]|h|r"] = {
 			367, -- [1]
@@ -50,139 +41,77 @@ TradeSkillMasterDB = {
 			396, -- [21]
 			396, -- [22]
 			396, -- [23]
-			399, -- [24]
-			399, -- [25]
-			399, -- [26]
-			399, -- [27]
-			399, -- [28]
-			399, -- [29]
-			399, -- [30]
-			399, -- [31]
-			399, -- [32]
-			399, -- [33]
-			399, -- [34]
-			399, -- [35]
-			399, -- [36]
-			399, -- [37]
-			399, -- [38]
-			399, -- [39]
-			399, -- [40]
-			399, -- [41]
-			399, -- [42]
-			399, -- [43]
-			399, -- [44]
-			399, -- [45]
-			399, -- [46]
-			399, -- [47]
-			399, -- [48]
-			399, -- [49]
-			399, -- [50]
-			399, -- [51]
-			399, -- [52]
-			399, -- [53]
-			399, -- [54]
-			399, -- [55]
-			399, -- [56]
-			399, -- [57]
-			399, -- [58]
-			399, -- [59]
-			399, -- [60]
-			399, -- [61]
-			399, -- [62]
-			399, -- [63]
-			399, -- [64]
-			1860, -- [65]
-			1860, -- [66]
-			1860, -- [67]
-			1860, -- [68]
-			1860, -- [69]
-			1860, -- [70]
-			1860, -- [71]
-			1860, -- [72]
-			1860, -- [73]
-			1860, -- [74]
-			1980, -- [75]
-			1980, -- [76]
-			1980, -- [77]
-			1980, -- [78]
-			1980, -- [79]
-			1980, -- [80]
-			1980, -- [81]
-			1980, -- [82]
-			1980, -- [83]
-			1980, -- [84]
-			1995, -- [85]
-			1995, -- [86]
-			1995, -- [87]
-			1995, -- [88]
-			1995, -- [89]
-			1995, -- [90]
-			1995, -- [91]
-			1995, -- [92]
-			1995, -- [93]
-			7340, -- [94]
-			7340, -- [95]
-			7340, -- [96]
-			7920, -- [97]
-			7920, -- [98]
-			7920, -- [99]
-			7980, -- [100]
-			7980, -- [101]
-			7980, -- [102]
+			1860, -- [24]
+			1860, -- [25]
+			1860, -- [26]
+			1860, -- [27]
+			1860, -- [28]
+			1860, -- [29]
+			1860, -- [30]
+			1860, -- [31]
+			1860, -- [32]
+			1860, -- [33]
+			1980, -- [34]
+			1980, -- [35]
+			1980, -- [36]
+			1980, -- [37]
+			1980, -- [38]
+			1980, -- [39]
+			1980, -- [40]
+			1980, -- [41]
+			1980, -- [42]
+			1980, -- [43]
+			7340, -- [44]
+			7340, -- [45]
+			7340, -- [46]
+			7920, -- [47]
+			7920, -- [48]
+			7920, -- [49]
 		},
 		["|cff1eff00|Hitem:10939::::::::5:::::::|h[Greater Magic Essence]|h|r"] = {
 			3014, -- [1]
 		},
-		["|cff1eff00|Hitem:6586::::::678:252523648:5:::1::::|h[Scouting Gloves of the Tiger]|h|r"] = {
-			51831, -- [1]
-		},
-		["|cff1eff00|Hitem:3577::::::::5:::::::|h[Gold Bar]|h|r"] = {
-			2699, -- [1]
-		},
 		["|cff1eff00|Hitem:14742::::::::5:::::::|h[Hulking Boots]|h|r"] = {
 			28581, -- [1]
-		},
-		["|cffffffff|Hitem:2447::::::::5:::::::|h[Peacebloom]|h|r"] = {
-			138, -- [1]
-		},
-		["|cff1eff00|Hitem:15509::::::1551:1200865920:5:::::::|h[Grunt's Handwraps of Power]|h|r"] = {
-			5484, -- [1]
-		},
-		["|cff0070dd|Hitem:935::::::::5:::::::|h[Night Watch Shortsword]|h|r"] = {
-			111842, -- [1]
-		},
-		["|cff0070dd|Hitem:11138::::::::5:::::::|h[Small Glowing Shard]|h|r"] = {
-			428, -- [1]
-		},
-		["|cff1eff00|Hitem:15249::::::1024:1873939328:5:::::::|h[Polished Zweihander of the Whale]|h|r"] = {
-			46523, -- [1]
-		},
-		["|cff0070dd|Hitem:14344::::::::5:::::::|h[Large Brilliant Shard]|h|r"] = {
-			40599, -- [1]
-		},
-		["|cffffffff|Hitem:3174::::::::5:::::::|h[Spider Ichor]|h|r"] = {
-			33, -- [1]
-		},
-		["|cffa335ee|Hitem:867::::::::5:::1::::|h[Gloves of Holy Might]|h|r"] = {
-			219999, -- [1]
 		},
 		["|cffffffff|Hitem:2319::::::::5:::::::|h[Medium Leather]|h|r"] = {
 			1408, -- [1]
 		},
-		["|cff0070dd|Hitem:13012::::::::5:::::::|h[Yorgen Bracers]|h|r"] = {
-			201966, -- [1]
-		},
 		["|cffffffff|Hitem:3356::::::::5:::::::|h[Kingsblood]|h|r"] = {
 			1070, -- [1]
 		},
-		["|cff1eff00|Hitem:11081::::::::5:::::::|h[Formula: Enchant Shield - Lesser Protection]|h|r"] = {
-			13804, -- [1]
+		["|cff0070dd|Hitem:935::::::::5:::::::|h[Night Watch Shortsword]|h|r"] = {
+			111842, -- [1]
+		},
+		["|cff1eff00|Hitem:15249::::::1024:1873939328:5:::::::|h[Polished Zweihander of the Whale]|h|r"] = {
+			46523, -- [1]
+		},
+		["|cffffffff|Hitem:16651::::::::5:::::::|h[Shredder Operating Manual - Page 7]|h|r"] = {
+			1240, -- [1]
 		},
 		["|cff1eff00|Hitem:6578::::::1106:701872896:5:::::::|h[Defender Leggings of the Boar]|h|r"] = {
 			17499, -- [1]
 		},
+		["|cffa335ee|Hitem:867::::::::5:::1::::|h[Gloves of Holy Might]|h|r"] = {
+			219999, -- [1]
+		},
+		["|cff1eff00|Hitem:15509::::::1551:1200865920:5:::::::|h[Grunt's Handwraps of Power]|h|r"] = {
+			5484, -- [1]
+		},
+		["|cff0070dd|Hitem:13012::::::::5:::::::|h[Yorgen Bracers]|h|r"] = {
+			201966, -- [1]
+		},
+		["|cffffffff|Hitem:3174::::::::5:::::::|h[Spider Ichor]|h|r"] = {
+			33, -- [1]
+		},
+		["|cff1eff00|Hitem:11081::::::::5:::::::|h[Formula: Enchant Shield - Lesser Protection]|h|r"] = {
+			13804, -- [1]
+		},
 		["|cff0070dd|Hitem:13068::::::::5:::1::::|h[Obsidian Greaves]|h|r"] = {
 			149999, -- [1]
+		},
+		["|cff1eff00|Hitem:6586::::::678:252523648:5:::1::::|h[Scouting Gloves of the Tiger]|h|r"] = {
+			51831, -- [1]
 		},
 	},
 	["p@Default@internalData@bankingWarehousingGroupTreeContext"] = {
@@ -197,97 +126,97 @@ TradeSkillMasterDB = {
 	},
 	["c@Mxyz - Golemagg@internalData@auctionSaleHints"] = {
 		["Boots of Avoidancei:145491241999"] = 1597598461,
-		["Gloves of Holy Mighti:8671219999"] = 1597830962,
+		["Gloves of Holy Mighti:8671219999"] = 1597837227,
 		["Wildheart Belti:167161160483"] = 1597607766,
 		["Malefic Bracersi:187001169431"] = 1597567808,
 		["Peacebloomi:24473165"] = 1597737970,
 		["Small Glowing Shardi:111381541"] = 1597737970,
-		["Yorgen Bracersi:130121201966"] = 1597830962,
+		["Yorgen Bracersi:130121201966"] = 1597837227,
 		["Fortified Belt of the Beari:9814:1188127358"] = 1597686431,
 		["Illusion Dusti:162041399"] = 1597830962,
 		["Illusion Dusti:16204207980"] = 1597830962,
-		["Shredder Operating Manual - Page 7i:1665111240"] = 1597830962,
+		["Shredder Operating Manual - Page 7i:1665111240"] = 1597837227,
 		["Magefist Glovesi:129771238499"] = 1597747054,
-		["Hulking Bootsi:14742128581"] = 1597830962,
+		["Hulking Bootsi:14742128581"] = 1597837227,
 		["Night Watch Shortswordi:9351182663"] = 1597686431,
 		["Gloves of Holy Mighti:8671399600"] = 1597478314,
-		["Scouting Gloves of the Tigeri:6586:678151831"] = 1597830962,
+		["Scouting Gloves of the Tigeri:6586:678151831"] = 1597837227,
 		["Iron Bari:3575928116"] = 1597347498,
 		["Large Brilliant Shardi:14344137535"] = 1597591634,
 		["Malefic Bracersi:187001173546"] = 1597478314,
 		["Boots of Avoidancei:145491223997"] = 1597747054,
 		["Peacebloomi:2447207480"] = 1597478314,
-		["Illusion Dusti:16204207340"] = 1597830962,
-		["Illusion Dusti:16204207920"] = 1597830962,
+		["Illusion Dusti:16204207340"] = 1597837227,
+		["Illusion Dusti:16204207920"] = 1597837227,
 		["Gloves of Holy Mighti:8671289999"] = 1597607766,
 		["Fortified Belt of the Beari:9814:1188121705"] = 1597747054,
-		["Obsidian Greavesi:130681149999"] = 1597830962,
+		["Obsidian Greavesi:130681149999"] = 1597837227,
 		["Malefic Bracersi:187001229032"] = 1597418741,
 		["Eye of Flamei:30751182812"] = 1597686431,
 		["Illusion Dusti:16204208780"] = 1597677323,
 		["Large Glimmering Shardi:110841989"] = 1597347498,
 		["Obsidian Greavesi:130681147651"] = 1597607766,
-		["Spider Ichori:3174133"] = 1597830962,
-		["Axe of the Deep Woodsi:8111651417"] = 1597830962,
+		["Spider Ichori:3174133"] = 1597837227,
+		["Obsidian Greavesi:130681149807"] = 1597686431,
 		["Boots of Avoidancei:145491234999"] = 1597686431,
 		["Scouting Gloves of the Tigeri:6586:678169864"] = 1597686431,
-		["Formula: Enchant Shield - Lesser Protectioni:11081113804"] = 1597830962,
-		["Shredder Operating Manual - Page 2i:1664611523"] = 1597830962,
-		["Shredder Operating Manual - Page 12i:1665611195"] = 1597830630,
+		["Magefist Glovesi:129771244999"] = 1597686431,
+		["Long Tail Featheri:511631611"] = 1597837227,
+		["Formula: Enchant Shield - Lesser Protectioni:11081113804"] = 1597837227,
+		["Axe of the Deep Woodsi:8111651417"] = 1597830962,
 		["Peacebloomi:24473138"] = 1597830962,
-		["Greater Magic Essencei:1093923014"] = 1597830962,
-		["Obsidian Greavesi:130681149807"] = 1597686431,
-		["Night Watch Shortswordi:9351159999"] = 1597747054,
-		["Wildheart Belti:167161146173"] = 1597659908,
-		["Medium Leatheri:231921408"] = 1597830962,
-		["Peacebloomi:244713767"] = 1597418741,
-		["Long Tail Featheri:511631611"] = 1597830962,
 		["Gold Bari:357712699"] = 1597830962,
+		["Night Watch Shortswordi:9351159999"] = 1597747054,
+		["Gloves of Holy Mighti:8671244999"] = 1597686431,
+		["Shredder Operating Manual - Page 12i:1665611195"] = 1597830630,
+		["Peacebloomi:244713767"] = 1597418741,
+		["Illusion Dusti:1620454245"] = 1597418741,
+		["Illusion Dusti:1620451980"] = 1597837227,
 		["Illusion Dusti:162042013280"] = 1597418741,
 		["Small Glowing Shardi:111381435"] = 1597607766,
-		["Illusion Dusti:1620454245"] = 1597418741,
-		["Illusion Dusti:1620451980"] = 1597830962,
+		["Medium Leatheri:231921408"] = 1597837227,
+		["Small Glowing Shardi:111381446"] = 1597478314,
 		["Peacebloomi:2447134862"] = 1597478314,
-		["Bruiseweedi:24531526535"] = 1597418741,
-		["Greater Magic Essencei:1093911765"] = 1597347498,
+		["Illusion Dusti:1620451995"] = 1597830962,
+		["Eye of Flamei:30751187998"] = 1597599626,
 		["Greater Magic Essencei:1093911405"] = 1597478314,
-		["Kingsbloodi:335621070"] = 1597830962,
-		["Illusion Dusti:16204106640"] = 1597418741,
-		["Illusion Dusti:1620451860"] = 1597830962,
+		["Band of Purificationi:12996154040"] = 1597837227,
+		["Night Watch Shortswordi:9351111842"] = 1597837227,
+		["Illusion Dusti:1620451860"] = 1597837227,
 		["Illusion Dusti:162042010000"] = 1597478314,
-		["Band of Purificationi:12996154040"] = 1597830962,
-		["Gloves of Holy Mighti:8671359598"] = 1597567808,
 		["Gloves of Holy Mighti:8671169998"] = 1597747054,
-		["Night Watch Shortswordi:9351111842"] = 1597830962,
-		["Eye of Flamei:30751249998"] = 1597830962,
+		["Gloves of Holy Mighti:8671359598"] = 1597567808,
+		["Eye of Flamei:30751249998"] = 1597837227,
+		["Polished Zweihander of the Whalei:15249:1024146523"] = 1597837227,
+		["Grunt's Handwraps of Poweri:15509:155115484"] = 1597837227,
 		["Small Glowing Shardi:111381428"] = 1597830962,
 		["Scouting Gloves of the Tigeri:6586:678157186"] = 1597747054,
-		["Defender Leggings of the Boari:6578:1106117499"] = 1597830962,
-		["Polished Zweihander of the Whalei:15249:1024146523"] = 1597830962,
-		["Grunt's Handwraps of Poweri:15509:155115484"] = 1597830962,
+		["Defender Leggings of the Boari:6578:1106117499"] = 1597837227,
+		["Shredder Operating Manual - Page 2i:1664611523"] = 1597837227,
+		["Eye of Flamei:30751187995"] = 1597607766,
 		["Scouting Gloves of the Tigeri:6586:678159739"] = 1597607766,
-		["Magefist Glovesi:129771244999"] = 1597686431,
+		["Greater Magic Essencei:1093923014"] = 1597837227,
 		["Large Brilliant Shardi:14344140599"] = 1597830962,
 		["Eye of Flamei:30751324998"] = 1597747054,
-		["Illusion Dusti:162041367"] = 1597830962,
-		["Eye of Flamei:30751187995"] = 1597607766,
+		["Illusion Dusti:162041367"] = 1597837227,
+		["Illusion Dusti:16204106640"] = 1597418741,
 		["Boots of Avoidancei:145491235947"] = 1597607766,
 		["Peacebloomi:2447153"] = 1597607766,
-		["Illusion Dusti:162041396"] = 1597830962,
+		["Illusion Dusti:162041396"] = 1597837227,
 		["Fortified Belt of the Beari:9814:1188123398"] = 1597607766,
 		["Peacebloomi:2447201180"] = 1597418741,
 		["Large Glimmering Shardi:110841969"] = 1597478314,
 		["Large Glimmering Shardi:1108411279"] = 1597737970,
-		["Lean Wolf Flanki:101511143"] = 1597830962,
+		["Lean Wolf Flanki:101511143"] = 1597837227,
 		["Small Glowing Shardi:111381299"] = 1597347498,
-		["Small Glowing Shardi:111381446"] = 1597478314,
+		["Kingsbloodi:335621070"] = 1597837227,
 		["Large Glimmering Shardi:1108411427"] = 1597607766,
 		["Bruiseweedi:24531514520"] = 1597437478,
-		["Eye of Flamei:30751187998"] = 1597599626,
-		["Gloves of Holy Mighti:8671299998"] = 1597599630,
+		["Bruiseweedi:24531526535"] = 1597418741,
+		["Greater Magic Essencei:1093911765"] = 1597347498,
 		["Peacebloomi:244710580"] = 1597607766,
-		["Illusion Dusti:1620451995"] = 1597830962,
-		["Gloves of Holy Mighti:8671244999"] = 1597686431,
+		["Gloves of Holy Mighti:8671299998"] = 1597599630,
+		["Wildheart Belti:167161146173"] = 1597659908,
 		["Bruiseweedi:24532019360"] = 1597437478,
 		["Obsidian Greavesi:130681148593"] = 1597747054,
 		["Large Glimmering Shardi:1108411214"] = 1597830962,
@@ -372,11 +301,11 @@ TradeSkillMasterDB = {
 	["f@Horde - Golemagg@auctioningOptions@whitelist"] = {
 	},
 	["g@ @internalData@auctionUIFrameContext"] = {
-		["centerX"] = -403.969482421875,
+		["centerX"] = -377.980102539063,
 		["showDefault"] = false,
 		["scale"] = 1,
 		["height"] = 1011.87414550781,
-		["centerY"] = 81.9150085449219,
+		["centerY"] = 83.3791046142578,
 		["page"] = 3,
 		["width"] = 906.541625976563,
 	},
@@ -502,8 +431,8 @@ TradeSkillMasterDB = {
 		["g@internalData@appMessageId"] = 10,
 		["g@tooltipOptions@moduleTooltips"] = 10,
 		["g@coreOptions@tsmItemTweetEnabled"] = 10,
-		["s@internalData@bankQuantity"] = 19,
 		["g@userData@savedShoppingSearches"] = 10,
+		["s@internalData@bankQuantity"] = 19,
 		["p@internalData@shoppingGroupTreeContext"] = 13,
 		["g@tooltipOptions@inventoryTooltipFormat"] = 10,
 		["f@internalData@guildVaults"] = 10,
@@ -882,6 +811,18 @@ TradeSkillMasterDB = {
 			["name"] = "gold ore",
 			["filter"] = "gold ore",
 		}, -- [59]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1597837241,
+			["name"] = "deep wou",
+			["filter"] = "deep wou",
+		}, -- [60]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1597837251,
+			["name"] = "deep wood",
+			["filter"] = "deep wood",
+		}, -- [61]
 	},
 	["c@Mxzq - Golemagg@internalData@auctionPrices"] = {
 		["|cffffffff|Hitem:13464::::::::31:::::::|h[Golden Sansam]|h|r"] = {
@@ -1124,7 +1065,7 @@ TradeSkillMasterDB = {
 				["maxQty"] = 10,
 				["relationships"] = {
 				},
-				["keepQty"] = 0,
+				["maxQtyEnabled"] = false,
 				["target"] = "",
 				["restockSources"] = {
 					["guild"] = false,
@@ -1132,16 +1073,16 @@ TradeSkillMasterDB = {
 				},
 				["ignorePlayer"] = {
 				},
-				["maxQtyEnabled"] = false,
+				["keepQty"] = 0,
 			},
 			["Mxyz"] = {
 				["ignoreFactionrealm"] = {
 				},
 				["restock"] = false,
-				["maxQtyEnabled"] = true,
+				["keepQty"] = 0,
 				["relationships"] = {
 				},
-				["keepQty"] = 0,
+				["maxQtyEnabled"] = true,
 				["target"] = "Mxyz",
 				["restockSources"] = {
 					["guild"] = false,
@@ -1155,10 +1096,10 @@ TradeSkillMasterDB = {
 				["ignoreFactionrealm"] = {
 				},
 				["restock"] = false,
-				["maxQtyEnabled"] = true,
+				["keepQty"] = 0,
 				["relationships"] = {
 				},
-				["keepQty"] = 0,
+				["maxQtyEnabled"] = true,
 				["target"] = "Augustin",
 				["restockSources"] = {
 					["guild"] = false,
@@ -1298,11 +1239,11 @@ TradeSkillMasterDB = {
 				["relationships"] = {
 				},
 				["minRestock"] = 1,
-				["craftPriceMethod"] = "",
 				["ignorePlayer"] = {
 				},
-				["maxRestock"] = 3,
 				["minProfit"] = "100g",
+				["maxRestock"] = 3,
+				["craftPriceMethod"] = "",
 			},
 		},
 		["Warehousing"] = {
@@ -1314,12 +1255,12 @@ TradeSkillMasterDB = {
 				["keepBankQuantity"] = 0,
 				["relationships"] = {
 				},
-				["restockStackSize"] = 0,
-				["restockQuantity"] = 0,
 				["ignorePlayer"] = {
 				},
-				["keepBagQuantity"] = 0,
+				["restockQuantity"] = 0,
 				["restockKeepBankQuantity"] = 0,
+				["keepBagQuantity"] = 0,
+				["restockStackSize"] = 0,
 			},
 		},
 		["Vendoring"] = {
@@ -1350,33 +1291,13 @@ TradeSkillMasterDB = {
 				["enableSell"] = true,
 			},
 		},
-		["Sniper"] = {
-			["default"] = {
-				["ignorePlayer"] = {
-				},
-				["ignoreFactionrealm"] = {
-				},
-				["relationships"] = {
-				},
-				["belowPrice"] = "min(vendorsell - 50c, destroy - 5s)",
-			},
-			["disenchant"] = {
-				["belowPrice"] = "destroy-1s",
-				["ignorePlayer"] = {
-				},
-				["relationships"] = {
-				},
-				["ignoreFactionrealm"] = {
-				},
-			},
-		},
 		["Shopping"] = {
 			["#Default"] = {
-				["showAboveMaxPrice"] = true,
-				["ignoreFactionrealm"] = {
-				},
 				["relationships"] = {
 				},
+				["ignoreFactionrealm"] = {
+				},
+				["evenStacks"] = false,
 				["maxPrice"] = "dbmarket",
 				["restockQuantity"] = 0,
 				["restockSources"] = {
@@ -1387,7 +1308,27 @@ TradeSkillMasterDB = {
 				},
 				["ignorePlayer"] = {
 				},
-				["evenStacks"] = false,
+				["showAboveMaxPrice"] = true,
+			},
+		},
+		["Sniper"] = {
+			["default"] = {
+				["ignoreFactionrealm"] = {
+				},
+				["belowPrice"] = "min(vendorsell - 50c, destroy - 5s)",
+				["relationships"] = {
+				},
+				["ignorePlayer"] = {
+				},
+			},
+			["disenchant"] = {
+				["ignorePlayer"] = {
+				},
+				["ignoreFactionrealm"] = {
+				},
+				["relationships"] = {
+				},
+				["belowPrice"] = "destroy-1s",
 			},
 		},
 	},
@@ -1427,28 +1368,22 @@ TradeSkillMasterDB = {
 	["s@Mxyz - Horde - Golemagg@internalData@auctionQuantity"] = {
 		["i:6586"] = 1,
 		["i:13012"] = 1,
-		["i:11138"] = 1,
-		["i:2447"] = 3,
+		["i:16651"] = 1,
 		["i:15249"] = 1,
 		["i:16646"] = 1,
 		["i:15509"] = 1,
 		["i:13068"] = 1,
 		["i:3075"] = 1,
-		["i:811"] = 1,
-		["i:11081"] = 1,
-		["i:3577"] = 1,
 		["i:14742"] = 1,
 		["i:6578"] = 1,
 		["i:3174"] = 1,
 		["i:1015"] = 1,
-		["i:11084"] = 1,
 		["i:3356"] = 2,
-		["i:16651"] = 1,
-		["i:14344"] = 1,
+		["i:11081"] = 1,
 		["i:2319"] = 2,
-		["i:16204"] = 389,
-		["i:867"] = 1,
 		["i:5116"] = 3,
+		["i:867"] = 1,
+		["i:16204"] = 243,
 		["i:10939"] = 2,
 		["i:935"] = 1,
 		["i:12996"] = 1,
@@ -1521,12 +1456,12 @@ TradeSkillMasterDB = {
 				"#Default", -- [1]
 				["override"] = true,
 			},
-			["Sniper"] = {
-				"default", -- [1]
-				["override"] = true,
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+				["override"] = true,
+			},
+			["Sniper"] = {
+				"default", -- [1]
 				["override"] = true,
 			},
 		},
@@ -1548,11 +1483,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["BOE Items`Armor`Green`Level 19 BiS"] = {
@@ -1571,11 +1506,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["BOE Items`Armor`Purple"] = {
@@ -1594,11 +1529,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["Recipes"] = {
@@ -1619,11 +1554,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["Materials`Misc"] = {
@@ -1638,14 +1573,14 @@ TradeSkillMasterDB = {
 			["Crafting"] = {
 				"#Default", -- [1]
 			},
-			["Shopping"] = {
-				"#Default", -- [1]
+			["Sniper"] = {
+				"default", -- [1]
 			},
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
+			["Shopping"] = {
+				"#Default", -- [1]
 			},
 			["Warehousing"] = {
 				"#Default", -- [1]
@@ -1667,11 +1602,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["Recipes`Engineering"] = {
@@ -1690,11 +1625,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["Recipes`Vendor"] = {
@@ -1713,11 +1648,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["Materials`Reagents"] = {
@@ -1738,11 +1673,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["Materials`Herbs"] = {
@@ -1763,11 +1698,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["BOE Items`Armor"] = {
@@ -1786,11 +1721,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["BOE Items`Weapons`Blue`Level 19 BiS"] = {
@@ -1809,11 +1744,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["Materials`Enchanting"] = {
@@ -1834,11 +1769,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["BOE Items`Weapons`Green`Level 19 BiS"] = {
@@ -1857,11 +1792,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["Recipes`Blacksmithing"] = {
@@ -1880,11 +1815,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["Materials"] = {
@@ -1907,11 +1842,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["Class Books`Rogue"] = {
@@ -1930,11 +1865,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["Materials`Cloth"] = {
@@ -1956,11 +1891,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["BOE Items`Weapons`Purple"] = {
@@ -1979,11 +1914,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["Class Books`Mage"] = {
@@ -2002,11 +1937,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["BOE Items`Weapons`Blue"] = {
@@ -2025,11 +1960,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["Recipes`Leatherworking"] = {
@@ -2048,11 +1983,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["Materials`Leather"] = {
@@ -2073,11 +2008,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["Materials`Cooking"] = {
@@ -2098,11 +2033,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["Class Books`Priest"] = {
@@ -2121,11 +2056,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["Class Books`Hunter"] = {
@@ -2144,11 +2079,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["BOE Items`Armor`Blue"] = {
@@ -2167,11 +2102,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["BOE Items`Armor`Green"] = {
@@ -2190,11 +2125,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["BOE Items"] = {
@@ -2215,11 +2150,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["BOE Items`Weapons"] = {
@@ -2238,11 +2173,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["Class Books`Druid"] = {
@@ -2261,11 +2196,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["BOE Items`Weapons`Green"] = {
@@ -2284,11 +2219,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["Recipes`Vendor`Valuable"] = {
@@ -2307,11 +2242,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["Class Books`Warrior"] = {
@@ -2330,11 +2265,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["Recipes`First Aid"] = {
@@ -2353,11 +2288,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["Recipes`Fishing"] = {
@@ -2376,11 +2311,103 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
+			["Shopping"] = {
+				"#Default", -- [1]
+			},
 			["Sniper"] = {
 				"default", -- [1]
 			},
+		},
+		["Class Books`Shaman"] = {
+			["Mailing"] = {
+				"Mxyz", -- [1]
+			},
+			["Auctioning"] = {
+				"Flipping 50x1 24hrs", -- [1]
+			},
+			["Crafting"] = {
+				"#Default", -- [1]
+			},
+			["Warehousing"] = {
+				"#Default", -- [1]
+			},
+			["Vendoring"] = {
+				"#Default", -- [1]
+			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
+			},
+		},
+		["Recipes`Tailoring"] = {
+			["Mailing"] = {
+				"Mxyz", -- [1]
+			},
+			["Auctioning"] = {
+				"Flipping 50x1 24hrs", -- [1]
+			},
+			["Crafting"] = {
+				"#Default", -- [1]
+			},
+			["Warehousing"] = {
+				"#Default", -- [1]
+			},
+			["Vendoring"] = {
+				"#Default", -- [1]
+			},
+			["Shopping"] = {
+				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
+			},
+		},
+		["BOE Items`Armor`Blue`Level 19 BiS"] = {
+			["Mailing"] = {
+				"Mxyz", -- [1]
+			},
+			["Auctioning"] = {
+				"Flipping 50x1 8hrs", -- [1]
+			},
+			["Crafting"] = {
+				"#Default", -- [1]
+			},
+			["Warehousing"] = {
+				"#Default", -- [1]
+			},
+			["Vendoring"] = {
+				"#Default", -- [1]
+			},
+			["Shopping"] = {
+				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
+			},
+		},
+		["Recipes`Cooking"] = {
+			["Mailing"] = {
+				"Mxyz", -- [1]
+			},
+			["Auctioning"] = {
+				"Flipping 50x1 24hrs", -- [1]
+			},
+			["Crafting"] = {
+				"#Default", -- [1]
+			},
+			["Warehousing"] = {
+				"#Default", -- [1]
+			},
+			["Vendoring"] = {
+				"#Default", -- [1]
+			},
+			["Shopping"] = {
+				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["Materials`Minerals"] = {
@@ -2401,103 +2428,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
-				"#Default", -- [1]
-			},
-		},
-		["Recipes`Tailoring"] = {
-			["Mailing"] = {
-				"Mxyz", -- [1]
-			},
-			["Auctioning"] = {
-				"Flipping 50x1 24hrs", -- [1]
-			},
-			["Crafting"] = {
-				"#Default", -- [1]
-			},
-			["Warehousing"] = {
-				"#Default", -- [1]
-			},
-			["Vendoring"] = {
 				"#Default", -- [1]
 			},
 			["Sniper"] = {
 				"default", -- [1]
-			},
-			["Shopping"] = {
-				"#Default", -- [1]
-			},
-		},
-		["BOE Items`Armor`Blue`Level 19 BiS"] = {
-			["Mailing"] = {
-				"Mxyz", -- [1]
-			},
-			["Auctioning"] = {
-				"Flipping 50x1 8hrs", -- [1]
-			},
-			["Crafting"] = {
-				"#Default", -- [1]
-			},
-			["Warehousing"] = {
-				"#Default", -- [1]
-			},
-			["Vendoring"] = {
-				"#Default", -- [1]
-			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
-			["Shopping"] = {
-				"#Default", -- [1]
-			},
-		},
-		["Recipes`Cooking"] = {
-			["Mailing"] = {
-				"Mxyz", -- [1]
-			},
-			["Auctioning"] = {
-				"Flipping 50x1 24hrs", -- [1]
-			},
-			["Crafting"] = {
-				"#Default", -- [1]
-			},
-			["Warehousing"] = {
-				"#Default", -- [1]
-			},
-			["Vendoring"] = {
-				"#Default", -- [1]
-			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
-			["Shopping"] = {
-				"#Default", -- [1]
-			},
-		},
-		["Class Books`Shaman"] = {
-			["Mailing"] = {
-				"Mxyz", -- [1]
-			},
-			["Auctioning"] = {
-				"Flipping 50x1 24hrs", -- [1]
-			},
-			["Crafting"] = {
-				"#Default", -- [1]
-			},
-			["Warehousing"] = {
-				"#Default", -- [1]
-			},
-			["Vendoring"] = {
-				"#Default", -- [1]
-			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
-			["Shopping"] = {
-				"#Default", -- [1]
 			},
 		},
 		["Class Books`Paladin"] = {
@@ -2516,11 +2451,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["Recipes`Alchemy"] = {
@@ -2539,11 +2474,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 		["Class Books`Warlock"] = {
@@ -2562,11 +2497,11 @@ TradeSkillMasterDB = {
 			["Vendoring"] = {
 				"#Default", -- [1]
 			},
-			["Sniper"] = {
-				"default", -- [1]
-			},
 			["Shopping"] = {
 				"#Default", -- [1]
+			},
+			["Sniper"] = {
+				"default", -- [1]
 			},
 		},
 	},
@@ -2593,12 +2528,12 @@ TradeSkillMasterDB = {
 			["players"] = {
 				["Vermin"] = true,
 			},
-			["name"] = "Anti-Venom",
+			["itemString"] = "i:6452",
 			["profession"] = "First Aid",
 			["numResult"] = 3,
 			["hasCD"] = false,
 			["queued"] = 0,
-			["itemString"] = "i:6452",
+			["name"] = "Anti-Venom",
 		},
 		[10658187] = {
 			["mats"] = {
@@ -2607,12 +2542,12 @@ TradeSkillMasterDB = {
 			["players"] = {
 				["Vermin"] = true,
 			},
-			["name"] = "Silk Bandage",
+			["itemString"] = "i:6450",
 			["profession"] = "First Aid",
 			["numResult"] = 1,
 			["hasCD"] = false,
 			["queued"] = 0,
-			["itemString"] = "i:6450",
+			["name"] = "Silk Bandage",
 		},
 		[15192691] = {
 			["mats"] = {
@@ -2642,19 +2577,19 @@ TradeSkillMasterDB = {
 			["queued"] = 0,
 			["name"] = "Heavy Woolen Gloves",
 		},
-		[7924111] = {
+		[7296372] = {
 			["mats"] = {
-				["i:4338"] = 1,
+				["i:2320"] = 1,
+				["i:2996"] = 1,
 			},
-			["players"] = {
-				["Vermin"] = true,
-			},
-			["name"] = "Mageweave Bandage",
-			["profession"] = "First Aid",
+			["itemString"] = "i:10045",
+			["profession"] = "Tailoring",
 			["numResult"] = 1,
-			["hasCD"] = false,
+			["players"] = {
+				["Augustin"] = true,
+			},
 			["queued"] = 0,
-			["itemString"] = "i:8544",
+			["name"] = "Simple Linen Pants",
 		},
 		[6459982] = {
 			["mats"] = {
@@ -2670,20 +2605,20 @@ TradeSkillMasterDB = {
 			["queued"] = 0,
 			["name"] = "Heavy Woolen Pants",
 		},
-		[13805769] = {
+		[11111385] = {
 			["mats"] = {
-				["i:6260"] = 1,
-				["i:2320"] = 1,
-				["i:2996"] = 2,
+				["i:4305"] = 4,
+				["i:6260"] = 2,
+				["i:2321"] = 3,
 			},
 			["numResult"] = 1,
 			["profession"] = "Tailoring",
-			["itemString"] = "i:2577",
+			["itemString"] = "i:7046",
 			["players"] = {
 				["Augustin"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Blue Linen Shirt",
+			["name"] = "Azure Silk Pants",
 		},
 		[9589791] = {
 			["mats"] = {
@@ -2698,19 +2633,20 @@ TradeSkillMasterDB = {
 				["Mxzq"] = true,
 			},
 		},
-		[11477594] = {
+		[14782826] = {
 			["mats"] = {
-				["i:3575"] = 1,
-				["i:3857"] = 1,
+				["i:2997"] = 2,
+				["i:2605"] = 1,
+				["i:2321"] = 2,
 			},
-			["itemString"] = "i:3859",
-			["profession"] = "Mining",
 			["numResult"] = 1,
-			["name"] = "Steel Bar",
-			["queued"] = 0,
+			["profession"] = "Tailoring",
+			["itemString"] = "i:2582",
 			["players"] = {
-				["Mxzq"] = true,
+				["Augustin"] = true,
 			},
+			["queued"] = 0,
+			["name"] = "Green Woolen Vest",
 		},
 		[9326557] = {
 			["mats"] = {
@@ -2734,27 +2670,27 @@ TradeSkillMasterDB = {
 			["players"] = {
 				["Vermin"] = true,
 			},
-			["name"] = "Wool Bandage",
+			["itemString"] = "i:3530",
 			["profession"] = "First Aid",
 			["numResult"] = 1,
 			["hasCD"] = false,
 			["queued"] = 0,
-			["itemString"] = "i:3530",
+			["name"] = "Wool Bandage",
 		},
-		[11111385] = {
+		[13805769] = {
 			["mats"] = {
-				["i:4305"] = 4,
-				["i:6260"] = 2,
-				["i:2321"] = 3,
+				["i:6260"] = 1,
+				["i:2320"] = 1,
+				["i:2996"] = 2,
 			},
 			["numResult"] = 1,
 			["profession"] = "Tailoring",
-			["itemString"] = "i:7046",
+			["itemString"] = "i:2577",
 			["players"] = {
 				["Augustin"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Azure Silk Pants",
+			["name"] = "Blue Linen Shirt",
 		},
 		[12201120] = {
 			["mats"] = {
@@ -2800,20 +2736,20 @@ TradeSkillMasterDB = {
 			["queued"] = 0,
 			["name"] = "Azure Silk Hood",
 		},
-		[5007891] = {
+		[1999096] = {
 			["mats"] = {
 				["i:2321"] = 1,
-				["i:2605"] = 1,
-				["i:2996"] = 3,
+				["i:2997"] = 3,
+				["i:2604"] = 2,
 			},
 			["numResult"] = 1,
 			["profession"] = "Tailoring",
-			["itemString"] = "i:2579",
+			["itemString"] = "i:4330",
 			["players"] = {
 				["Augustin"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Green Linen Shirt",
+			["name"] = "Stylish Red Shirt",
 		},
 		[13999345] = {
 			["mats"] = {
@@ -2831,34 +2767,32 @@ TradeSkillMasterDB = {
 			["queued"] = 0,
 			["name"] = "Spidersilk Boots",
 		},
-		[4795822] = {
+		[2690872] = {
 			["mats"] = {
-				["i:2320"] = 1,
-				["i:2996"] = 1,
+				["i:2589"] = 2,
 			},
-			["itemString"] = "i:2570",
+			["itemString"] = "i:2996",
 			["profession"] = "Tailoring",
 			["numResult"] = 1,
 			["players"] = {
 				["Augustin"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Linen Cloak",
+			["name"] = "Bolt of Linen Cloth",
 		},
-		[14782826] = {
+		[11477594] = {
 			["mats"] = {
-				["i:2997"] = 2,
-				["i:2605"] = 1,
-				["i:2321"] = 2,
+				["i:3575"] = 1,
+				["i:3857"] = 1,
 			},
+			["itemString"] = "i:3859",
+			["profession"] = "Mining",
 			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:2582",
-			["players"] = {
-				["Augustin"] = true,
-			},
+			["name"] = "Steel Bar",
 			["queued"] = 0,
-			["name"] = "Green Woolen Vest",
+			["players"] = {
+				["Mxzq"] = true,
+			},
 		},
 		[8535256] = {
 			["mats"] = {
@@ -2875,61 +2809,61 @@ TradeSkillMasterDB = {
 			["queued"] = 0,
 			["name"] = "Pearl-clasped Cloak",
 		},
-		[3120034] = {
+		[5990314] = {
 			["mats"] = {
-				["i:6260"] = 1,
-				["i:2320"] = 1,
+				["i:2776"] = 1,
+			},
+			["itemString"] = "i:3577",
+			["profession"] = "Mining",
+			["numResult"] = 1,
+			["name"] = "Gold Bar",
+			["queued"] = 0,
+			["players"] = {
+				["Mxzq"] = true,
+			},
+		},
+		[11040240] = {
+			["mats"] = {
+				["i:2997"] = 3,
+				["i:2321"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Tailoring",
+			["itemString"] = "i:4240",
+			["players"] = {
+				["Augustin"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Woolen Bag",
+		},
+		[291211] = {
+			["mats"] = {
+				["i:2605"] = 1,
+				["i:2320"] = 2,
 				["i:2996"] = 3,
 			},
 			["numResult"] = 1,
 			["profession"] = "Tailoring",
-			["itemString"] = "i:6240",
+			["itemString"] = "i:4308",
 			["players"] = {
 				["Augustin"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Blue Linen Vest",
+			["name"] = "Green Linen Bracers",
 		},
-		[5890576] = {
+		[13618365] = {
 			["mats"] = {
 				["i:2321"] = 1,
-				["i:2996"] = 4,
+				["i:2997"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Tailoring",
-			["itemString"] = "i:10047",
+			["itemString"] = "i:2584",
 			["players"] = {
 				["Augustin"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Simple Kilt",
-		},
-		[13663819] = {
-			["mats"] = {
-				["i:2320"] = 1,
-				["i:2996"] = 1,
-			},
-			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:7026",
-			["players"] = {
-				["Augustin"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Linen Belt",
-		},
-		[4295377] = {
-			["mats"] = {
-				["i:2592"] = 3,
-			},
-			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:2997",
-			["players"] = {
-				["Augustin"] = true,
-			},
-			["queued"] = 0,
-			["name"] = "Bolt of Woolen Cloth",
+			["name"] = "Woolen Cape",
 		},
 		[6932054] = {
 			["mats"] = {
@@ -2959,20 +2893,20 @@ TradeSkillMasterDB = {
 				["Mxzq"] = true,
 			},
 		},
-		[1999096] = {
+		[5007891] = {
 			["mats"] = {
 				["i:2321"] = 1,
-				["i:2997"] = 3,
-				["i:2604"] = 2,
+				["i:2605"] = 1,
+				["i:2996"] = 3,
 			},
 			["numResult"] = 1,
 			["profession"] = "Tailoring",
-			["itemString"] = "i:4330",
+			["itemString"] = "i:2579",
 			["players"] = {
 				["Augustin"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Stylish Red Shirt",
+			["name"] = "Green Linen Shirt",
 		},
 		[2639358] = {
 			["mats"] = {
@@ -2989,20 +2923,19 @@ TradeSkillMasterDB = {
 			["queued"] = 0,
 			["name"] = "White Linen Shirt",
 		},
-		[2815793] = {
+		[3851513] = {
 			["mats"] = {
-				["i:4340"] = 1,
-				["i:2997"] = 2,
-				["i:2321"] = 1,
+				["i:2589"] = 1,
 			},
-			["numResult"] = 1,
-			["profession"] = "Tailoring",
-			["itemString"] = "i:2587",
 			["players"] = {
-				["Augustin"] = true,
+				["Vermin"] = true,
 			},
+			["itemString"] = "i:1251",
+			["profession"] = "First Aid",
+			["numResult"] = 1,
+			["hasCD"] = false,
 			["queued"] = 0,
-			["name"] = "Gray Woolen Shirt",
+			["name"] = "Linen Bandage",
 		},
 		[2554057] = {
 			["mats"] = {
@@ -3011,12 +2944,12 @@ TradeSkillMasterDB = {
 			["players"] = {
 				["Vermin"] = true,
 			},
-			["name"] = "Heavy Silk Bandage",
+			["itemString"] = "i:6451",
 			["profession"] = "First Aid",
 			["numResult"] = 1,
 			["hasCD"] = false,
 			["queued"] = 0,
-			["itemString"] = "i:6451",
+			["name"] = "Heavy Silk Bandage",
 		},
 		[11876348] = {
 			["mats"] = {
@@ -3025,12 +2958,12 @@ TradeSkillMasterDB = {
 			["players"] = {
 				["Vermin"] = true,
 			},
-			["name"] = "Heavy Wool Bandage",
+			["itemString"] = "i:3531",
 			["profession"] = "First Aid",
 			["numResult"] = 1,
 			["hasCD"] = false,
 			["queued"] = 0,
-			["itemString"] = "i:3531",
+			["name"] = "Heavy Wool Bandage",
 		},
 		[6463866] = {
 			["mats"] = {
@@ -3047,19 +2980,19 @@ TradeSkillMasterDB = {
 			["queued"] = 0,
 			["name"] = "White Woolen Dress",
 		},
-		[11040240] = {
+		[5890576] = {
 			["mats"] = {
-				["i:2997"] = 3,
 				["i:2321"] = 1,
+				["i:2996"] = 4,
 			},
 			["numResult"] = 1,
 			["profession"] = "Tailoring",
-			["itemString"] = "i:4240",
+			["itemString"] = "i:10047",
 			["players"] = {
 				["Augustin"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Woolen Bag",
+			["name"] = "Simple Kilt",
 		},
 		[1944586] = {
 			["mats"] = {
@@ -3074,20 +3007,19 @@ TradeSkillMasterDB = {
 				["Mxzq"] = true,
 			},
 		},
-		[291211] = {
+		[13663819] = {
 			["mats"] = {
-				["i:2605"] = 1,
-				["i:2320"] = 2,
-				["i:2996"] = 3,
+				["i:2320"] = 1,
+				["i:2996"] = 1,
 			},
 			["numResult"] = 1,
 			["profession"] = "Tailoring",
-			["itemString"] = "i:4308",
+			["itemString"] = "i:7026",
 			["players"] = {
 				["Augustin"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Green Linen Bracers",
+			["name"] = "Linen Belt",
 		},
 		[2607367] = {
 			["mats"] = {
@@ -3131,20 +3063,20 @@ TradeSkillMasterDB = {
 			["queued"] = 0,
 			["name"] = "Lesser Wizard's Robe",
 		},
-		[6209923] = {
+		[2815793] = {
 			["mats"] = {
+				["i:4340"] = 1,
+				["i:2997"] = 2,
 				["i:2321"] = 1,
-				["i:2318"] = 2,
-				["i:2996"] = 5,
 			},
 			["numResult"] = 1,
 			["profession"] = "Tailoring",
-			["itemString"] = "i:4312",
+			["itemString"] = "i:2587",
 			["players"] = {
 				["Augustin"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Soft-soled Linen Boots",
+			["name"] = "Gray Woolen Shirt",
 		},
 		[7521102] = {
 			["mats"] = {
@@ -3246,19 +3178,20 @@ TradeSkillMasterDB = {
 			["queued"] = 0,
 			["name"] = "White Linen Robe",
 		},
-		[3851513] = {
+		[6209923] = {
 			["mats"] = {
-				["i:2589"] = 1,
+				["i:2321"] = 1,
+				["i:2318"] = 2,
+				["i:2996"] = 5,
 			},
-			["players"] = {
-				["Vermin"] = true,
-			},
-			["name"] = "Linen Bandage",
-			["profession"] = "First Aid",
 			["numResult"] = 1,
-			["hasCD"] = false,
+			["profession"] = "Tailoring",
+			["itemString"] = "i:4312",
+			["players"] = {
+				["Augustin"] = true,
+			},
 			["queued"] = 0,
-			["itemString"] = "i:1251",
+			["name"] = "Soft-soled Linen Boots",
 		},
 		[3942616] = {
 			["mats"] = {
@@ -3294,26 +3227,25 @@ TradeSkillMasterDB = {
 			["players"] = {
 				["Vermin"] = true,
 			},
-			["name"] = "Heavy Linen Bandage",
+			["itemString"] = "i:2581",
 			["profession"] = "First Aid",
 			["numResult"] = 1,
 			["hasCD"] = false,
 			["queued"] = 0,
-			["itemString"] = "i:2581",
+			["name"] = "Heavy Linen Bandage",
 		},
-		[13618365] = {
+		[4295377] = {
 			["mats"] = {
-				["i:2321"] = 1,
-				["i:2997"] = 1,
+				["i:2592"] = 3,
 			},
 			["numResult"] = 1,
 			["profession"] = "Tailoring",
-			["itemString"] = "i:2584",
+			["itemString"] = "i:2997",
 			["players"] = {
 				["Augustin"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Woolen Cape",
+			["name"] = "Bolt of Woolen Cloth",
 		},
 		[16331903] = {
 			["mats"] = {
@@ -3330,18 +3262,20 @@ TradeSkillMasterDB = {
 			["queued"] = 0,
 			["name"] = "Linen Boots",
 		},
-		[5990314] = {
+		[3120034] = {
 			["mats"] = {
-				["i:2776"] = 1,
+				["i:6260"] = 1,
+				["i:2320"] = 1,
+				["i:2996"] = 3,
 			},
-			["itemString"] = "i:3577",
-			["profession"] = "Mining",
 			["numResult"] = 1,
-			["name"] = "Gold Bar",
-			["queued"] = 0,
+			["profession"] = "Tailoring",
+			["itemString"] = "i:6240",
 			["players"] = {
-				["Mxzq"] = true,
+				["Augustin"] = true,
 			},
+			["queued"] = 0,
+			["name"] = "Blue Linen Vest",
 		},
 		[11362209] = {
 			["mats"] = {
@@ -3386,18 +3320,19 @@ TradeSkillMasterDB = {
 				["Mxzq"] = true,
 			},
 		},
-		[2690872] = {
+		[4795822] = {
 			["mats"] = {
-				["i:2589"] = 2,
+				["i:2320"] = 1,
+				["i:2996"] = 1,
 			},
-			["itemString"] = "i:2996",
+			["itemString"] = "i:2570",
 			["profession"] = "Tailoring",
 			["numResult"] = 1,
 			["players"] = {
 				["Augustin"] = true,
 			},
 			["queued"] = 0,
-			["name"] = "Bolt of Linen Cloth",
+			["name"] = "Linen Cloak",
 		},
 		[14960130] = {
 			["mats"] = {
@@ -3414,19 +3349,19 @@ TradeSkillMasterDB = {
 			["queued"] = 0,
 			["name"] = "Woolen Boots",
 		},
-		[7296372] = {
+		[7924111] = {
 			["mats"] = {
-				["i:2320"] = 1,
-				["i:2996"] = 1,
+				["i:4338"] = 1,
 			},
-			["itemString"] = "i:10045",
-			["profession"] = "Tailoring",
-			["numResult"] = 1,
 			["players"] = {
-				["Augustin"] = true,
+				["Vermin"] = true,
 			},
+			["itemString"] = "i:8544",
+			["profession"] = "First Aid",
+			["numResult"] = 1,
+			["hasCD"] = false,
 			["queued"] = 0,
-			["name"] = "Simple Linen Pants",
+			["name"] = "Mageweave Bandage",
 		},
 	},
 	["c@Augustin - Golemagg@internalData@auctionSaleHints"] = {
@@ -3442,9 +3377,9 @@ TradeSkillMasterDB = {
 		["Lesser Wizard's Robei:5766122099"] = 1597737713,
 		["Pattern: Blue Overallsi:6274149547"] = 1597737713,
 		["Red Linen Robei:2572111095"] = 1597677192,
-		["Apprentice's Shirti:6096172497"] = 1597608245,
-		["Pattern: Red Woolen Bagi:577212499"] = 1597829584,
 		["Lesser Wizard's Robei:5766121993"] = 1597829584,
+		["Pattern: Red Woolen Bagi:577212499"] = 1597829584,
+		["Apprentice's Shirti:6096172497"] = 1597608245,
 		["Pattern: Blue Overallsi:6274134996"] = 1597829584,
 		["Pattern: Lavender Mageweave Shirti:10314138160"] = 1597829584,
 		["Pattern: Pink Mageweave Shirti:10317148750"] = 1597737713,
@@ -3517,8 +3452,8 @@ TradeSkillMasterDB = {
 		["collapsed"] = {
 			["Mats"] = true,
 			["Class Books"] = true,
-			["Recipes"] = true,
 			["BOE Items"] = true,
+			["Recipes"] = true,
 			["Consumables"] = true,
 			["BoEs"] = true,
 		},
@@ -3526,15 +3461,15 @@ TradeSkillMasterDB = {
 			["Recipes`Fishing"] = true,
 			["Recipes`Leatherworking"] = true,
 			["Recipes"] = true,
-			["Recipes`Enchanting"] = true,
-			["Recipes`Vendor`Valuable"] = true,
-			["Recipes`Cooking"] = true,
 			["Recipes`First Aid"] = true,
-			["Recipes`Engineering"] = true,
-			["Recipes`Vendor"] = true,
-			["Recipes`Blacksmithing"] = true,
+			["Recipes`Enchanting"] = true,
 			["Recipes`Tailoring"] = true,
+			["Recipes`Cooking"] = true,
+			["Recipes`Blacksmithing"] = true,
+			["Recipes`Engineering"] = true,
+			["Recipes`Vendor`Valuable"] = true,
 			["Recipes`Alchemy"] = true,
+			["Recipes`Vendor"] = true,
 		},
 	},
 	["r@Golemagg@internalData@csvIncome"] = "type,amount,otherPlayer,player,time\nMoney Transfer,10,Vermin,Augustin,1597501981\nMoney Transfer,100000,Mxyz,Augustin,1597607745",
@@ -3556,10 +3491,10 @@ TradeSkillMasterDB = {
 	["p@Default@internalData@exportGroupTreeContext"] = {
 	},
 	["s@Mxzq - Horde - Golemagg@internalData@bankQuantity"] = {
-		["i:10620"] = 255,
 		["i:6692"] = 1,
-		["i:20558"] = 3,
+		["i:10620"] = 255,
 		["i:6686"] = 1,
+		["i:20558"] = 3,
 	},
 	["f@Horde - Golemagg@internalData@pendingMail"] = {
 		["Mxyz"] = {
@@ -3597,7 +3532,7 @@ TradeSkillMasterDB = {
 			["Consumables`Food"] = true,
 		},
 		["selected"] = {
-			["BOE Items`Weapons`Purple"] = true,
+			["BOE Items`Armor`Purple"] = true,
 		},
 	},
 	["r@Golemagg@internalData@csvSales"] = "itemString,stackSize,quantity,price,otherPlayer,player,time,source\ni:17056,4,4,7,Merchant,Vermin,1597345704,Vendor\ni:4537,1,1,6,Merchant,Vermin,1597345704,Vendor\ni:1179,1,1,6,Merchant,Vermin,1597345704,Vendor\ni:4538,3,3,25,Merchant,Vermin,1597345705,Vendor\ni:1205,1,1,25,Merchant,Vermin,1597345707,Vendor\ni:5470,1,1,28,Merchant,Vermin,1597345710,Vendor\ni:2453,20,20,1685,Mpogla,Mxyz,1597336347,Auction\ni:2453,1,5,1681,Kronosus,Mxyz,1597337838,Auction\ni:16204,10,10,631,Foogle,Mxyz,1597346494,Auction\ni:3575,9,9,2968,Zornaci,Mxyz,1597350471,Auction\ni:2589,12,12,22,Toleedo,Vermin,1597347831,Auction\ni:2592,20,20,561,Woodencpu,Vermin,1597372263,Auction\ni:2592,1,1,562,Fumokintanas,Vermin,1597391604,Auction\ni:3859,20,20,3919,Earthshaker,Mxzq,1597352158,Auction\ni:3575,20,20,4602,Borjomi,Mxzq,1597369506,Auction\ni:2453,20,40,920,Nationalbank,Mxyz,1597440237,Auction\ni:2453,15,15,920,Nationalbank,Mxyz,1597440240,Auction\ni:2592,20,40,473,Regi,Vermin,1597437228,Auction\ni:4306,6,6,425,Rehn,Vermin,1597437619,Auction\ni:2589,17,17,30,Milojos,Vermin,1597437944,Auction\ni:9767:236,1,1,5258,Rathiy,Vermin,1597449266,Auction\ni:4538,7,7,25,Merchant,Vermin,1597479717,Vendor\ni:1205,1,1,25,Merchant,Vermin,1597479717,Vendor\ni:2592,4,4,473,Sterx,Vermin,1597487178,Auction\ni:3385,1,1,252,Oxtrojdic,Vermin,1597489164,Auction\ni:2070,1,1,1,Merchant,Augustin,1597503790,Vendor\ni:4538,2,2,25,Merchant,Vermin,1597506729,Vendor\ni:11176,1,1,3561,Grurm,Mxzq,1597501126,Auction\ni:11137,1,1,356,Deathbaron,Mxzq,1597501300,Auction\ni:2838,17,17,1617,Jsemheal,Mxzq,1597506988,Auction\ni:3575,20,40,4816,Daewen,Mxzq,1597508941,Auction\ni:4536,3,3,1,Merchant,Augustin,1597570175,Vendor\ni:159,1,1,1,Merchant,Augustin,1597570175,Vendor\ni:14093,1,1,21,Merchant,Augustin,1597570176,Vendor\ni:14089,1,1,30,Merchant,Augustin,1597570177,Vendor\ni:769,1,1,3,Merchant,Augustin,1597570178,Vendor\ni:18700,1,1,160960,Malekk,Mxyz,1597582184,Auction\ni:3575,20,60,3077,Yoinky,Mxzq,1597565786,Auction\ni:767,1,1,100,Merchant,Augustin,1597594176,Vendor\ni:35,1,1,9,Merchant,Augustin,1597594176,Vendor\ni:15484,1,1,68,Merchant,Augustin,1597594178,Vendor\ni:769,1,1,3,Merchant,Augustin,1597594183,Vendor\ni:17056,2,2,7,Merchant,Augustin,1597594186,Vendor\ni:2842,1,1,100,Merchant,Augustin,1597594189,Vendor\ni:4536,2,2,1,Merchant,Augustin,1597594190,Vendor\ni:117,1,1,1,Merchant,Augustin,1597594190,Vendor\ni:14344,1,1,35659,Merygun,Mxyz,1597591669,Auction\ni:13464,20,60,460,Debee,Mxzq,1597592499,Auction\ni:3860,20,60,1661,Shroomie,Mxzq,1597596122,Auction\ni:4938,1,1,236,Merchant,Augustin,1597611617,Vendor\ni:4946,1,1,67,Merchant,Augustin,1597611617,Vendor\ni:2447,10,10,55,Kubycek,Mxyz,1597620603,Auction\ni:16204,20,20,417,Heatman,Mxyz,1597642879,Auction\ni:6140,1,1,1,Merchant,Augustin,1597660579,Vendor\ni:16204,20,20,417,Ostfriese,Mxyz,1597664422,Auction\ni:16716,1,1,138865,Lastpak,Mxyz,1597664563,Auction\ni:3860,20,40,1441,Effectz,Mxzq,1597664300,Auction\ni:3860,20,20,1441,Fruiko,Mxzq,1597668903,Auction\ni:3859,20,20,3818,Raczker,Mxzq,1597678044,Auction\ni:4238,1,6,200,Merchant,Augustin,1597736937,Vendor\ni:3860,20,60,1263,Mooilkshake,Mxzq,1597693459,Auction\ni:3860,5,10,1262,Mooilkshake,Mxzq,1597693461,Auction\ni:3860,1,1,1442,Liluzivertt,Mxzq,1597700129,Auction\ni:3860,5,45,1890,Sugupocho,Mxzq,1597780154,Auction\ni:3860,20,20,1892,Bankerhasan,Mxzq,1597784264,Auction\ni:3860,1,1,1892,Rekako,Mxzq,1597793845,Auction\ni:3860,5,5,1890,Sugupocho,Mxzq,1597795172,Auction\ni:3860,20,40,1892,Akazx,Mxzq,1597796021,Auction\ni:3860,1,1,1892,Cepreu,Mxzq,1597820853,Auction\ni:12977,1,1,281019,Matusâlem,Mxyz,1597779966,Auction\ni:16204,1,13,349,Mariguyia,Mxyz,1597782530,Auction\ni:16204,1,6,349,Ixtlan,Mxyz,1597782709,Auction\ni:9814,1,1,12468,Hughjackdman,Mxyz,1597786208,Auction\ni:16204,1,3,349,Spatula,Mxyz,1597788225,Auction\ni:867,1,1,136951,Darkân,Mxyz,1597789440,Auction\ni:16204,1,12,349,Kuinu,Mxyz,1597791671,Auction\ni:16204,1,3,349,Felza,Mxyz,1597793888,Auction",
@@ -3628,18 +3563,18 @@ TradeSkillMasterDB = {
 		["Gromsbloodi:884613123487"] = 1597480375,
 		["Mithril Bari:38601627968"] = 1597608021,
 		["Golden Sansami:1346493474"] = 1597830234,
-		["Mithril Bari:38602034880"] = 1597608021,
-		["Steel Bari:385920149980"] = 1597502206,
 		["Steel Bari:385920138860"] = 1597830234,
+		["Steel Bari:385920149980"] = 1597502206,
 		["Golden Sansami:134642019940"] = 1597565634,
+		["Heavy Stonei:28381728934"] = 1597502206,
 		["Mithril Bari:386011517"] = 1597737833,
 		["Mithril Bari:38601643968"] = 1597565634,
 		["Light Leatheri:23182024400"] = 1597660163,
-		["Heavy Stonei:28381728934"] = 1597502206,
+		["Steel Bari:38592099620"] = 1597608021,
 		["Mithril Bari:38602054960"] = 1597565634,
 		["Iron Bari:357520101380"] = 1597502206,
 		["Mithril Bari:38602035800"] = 1597830234,
-		["Steel Bari:38592099620"] = 1597608021,
+		["Mithril Bari:38602034880"] = 1597608021,
 		["Gold Bari:357719900"] = 1597830234,
 		["Mithril Bari:38602034960"] = 1597608021,
 	},
@@ -3656,8 +3591,8 @@ TradeSkillMasterDB = {
 		["i:16894"] = 1,
 		["i:3577"] = 1,
 		["i:14742"] = 1,
-		["i:6578"] = 1,
 		["i:14344"] = 1,
+		["i:6578"] = 1,
 		["i:4306"] = 15,
 		["i:1710"] = 5,
 		["i:15249"] = 1,
@@ -3688,17 +3623,17 @@ TradeSkillMasterDB = {
 		},
 		["i:2589"] = {
 		},
-		["i:2319"] = {
-		},
-		["i:2775"] = {
-		},
-		["i:1475"] = {
-		},
 		["i:2320"] = {
 		},
 		["i:2996"] = {
 		},
-		["i:5498"] = {
+		["i:1475"] = {
+		},
+		["i:2319"] = {
+		},
+		["i:2775"] = {
+		},
+		["i:2321"] = {
 		},
 		["i:2592"] = {
 		},
@@ -3710,23 +3645,23 @@ TradeSkillMasterDB = {
 		},
 		["i:2776"] = {
 		},
-		["i:2605"] = {
+		["i:3383"] = {
 		},
 		["i:2772"] = {
 		},
-		["i:3576"] = {
+		["i:4305"] = {
 		},
 		["i:4306"] = {
 		},
-		["i:4338"] = {
+		["i:2771"] = {
 		},
 		["i:2604"] = {
 		},
 		["i:2324"] = {
 		},
-		["i:3383"] = {
+		["i:2605"] = {
 		},
-		["i:2771"] = {
+		["i:4338"] = {
 		},
 		["i:3857"] = {
 		},
@@ -3742,9 +3677,9 @@ TradeSkillMasterDB = {
 		},
 		["i:2840"] = {
 		},
-		["i:4305"] = {
+		["i:3576"] = {
 		},
-		["i:2321"] = {
+		["i:5498"] = {
 		},
 	},
 	["c@Mxyz - Golemagg@internalData@auctionMessages"] = {
@@ -3752,29 +3687,23 @@ TradeSkillMasterDB = {
 		["Your auction of Band of Purification sold."] = "|cff0070dd|Hitem:12996::::::::5:::::::|h[Band of Purification]|h|r",
 		["Your auction of Spider Ichor sold."] = "|cffffffff|Hitem:3174::::::::5:::::::|h[Spider Ichor]|h|r",
 		["Your auction of Lean Wolf Flank sold."] = "|cffffffff|Hitem:1015::::::::5:::::::|h[Lean Wolf Flank]|h|r",
-		["Your auction of Peacebloom sold."] = "|cffffffff|Hitem:2447::::::::5:::::::|h[Peacebloom]|h|r",
-		["Your auction of Small Glowing Shard sold."] = "|cff0070dd|Hitem:11138::::::::5:::::::|h[Small Glowing Shard]|h|r",
+		["Your auction of Grunt's Handwraps of Power sold."] = "|cff1eff00|Hitem:15509::::::1551:1200865920:5:::::::|h[Grunt's Handwraps of Power]|h|r",
 		["Your auction of Illusion Dust sold."] = "|cffffffff|Hitem:16204::::::::5:::::::|h[Illusion Dust]|h|r",
-		["Your auction of Defender Leggings of the Boar sold."] = "|cff1eff00|Hitem:6578::::::1106:701872896:5:::::::|h[Defender Leggings of the Boar]|h|r",
-		["Your auction of Large Brilliant Shard sold."] = "|cff0070dd|Hitem:14344::::::::5:::::::|h[Large Brilliant Shard]|h|r",
 		["Your auction of Scouting Gloves of the Tiger sold."] = "|cff1eff00|Hitem:6586::::::678:252523648:5:::1::::|h[Scouting Gloves of the Tiger]|h|r",
 		["Your auction of Eye of Flame sold."] = "|cffa335ee|Hitem:3075::::::::5:::::::|h[Eye of Flame]|h|r",
-		["Your auction of Shredder Operating Manual - Page 2 sold."] = "|cffffffff|Hitem:16646::::::::5:::::::|h[Shredder Operating Manual - Page 2]|h|r",
 		["Your auction of Shredder Operating Manual - Page 7 sold."] = "|cffffffff|Hitem:16651::::::::5:::::::|h[Shredder Operating Manual - Page 7]|h|r",
 		["Your auction of Night Watch Shortsword sold."] = "|cff0070dd|Hitem:935::::::::5:::::::|h[Night Watch Shortsword]|h|r",
-		["Your auction of Polished Zweihander of the Whale sold."] = "|cff1eff00|Hitem:15249::::::1024:1873939328:5:::::::|h[Polished Zweihander of the Whale]|h|r",
 		["Your auction of Medium Leather sold."] = "|cffffffff|Hitem:2319::::::::5:::::::|h[Medium Leather]|h|r",
-		["Your auction of Yorgen Bracers sold."] = "|cff0070dd|Hitem:13012::::::::5:::::::|h[Yorgen Bracers]|h|r",
+		["Your auction of Gloves of Holy Might sold."] = "|cffa335ee|Hitem:867::::::::5:::1::::|h[Gloves of Holy Might]|h|r",
 		["Your auction of Greater Magic Essence sold."] = "|cff1eff00|Hitem:10939::::::::5:::::::|h[Greater Magic Essence]|h|r",
-		["Your auction of Gold Bar sold."] = "|cff1eff00|Hitem:3577::::::::5:::::::|h[Gold Bar]|h|r",
-		["Your auction of Large Glimmering Shard sold."] = "|cff0070dd|Hitem:11084::::::::5:::::::|h[Large Glimmering Shard]|h|r",
-		["Your auction of Hulking Boots sold."] = "|cff1eff00|Hitem:14742::::::::5:::::::|h[Hulking Boots]|h|r",
+		["Your auction of Shredder Operating Manual - Page 2 sold."] = "|cffffffff|Hitem:16646::::::::5:::::::|h[Shredder Operating Manual - Page 2]|h|r",
+		["Your auction of Yorgen Bracers sold."] = "|cff0070dd|Hitem:13012::::::::5:::::::|h[Yorgen Bracers]|h|r",
 		["Your auction of Kingsblood sold."] = "|cffffffff|Hitem:3356::::::::5:::::::|h[Kingsblood]|h|r",
 		["Your auction of Long Tail Feather sold."] = "|cffffffff|Hitem:5116::::::::5:::::::|h[Long Tail Feather]|h|r",
 		["Your auction of Formula: Enchant Shield - Lesser Protection sold."] = "|cff1eff00|Hitem:11081::::::::5:::::::|h[Formula: Enchant Shield - Lesser Protection]|h|r",
-		["Your auction of Grunt's Handwraps of Power sold."] = "|cff1eff00|Hitem:15509::::::1551:1200865920:5:::::::|h[Grunt's Handwraps of Power]|h|r",
-		["Your auction of Axe of the Deep Woods sold."] = "|cffa335ee|Hitem:811::::::::5:::::::|h[Axe of the Deep Woods]|h|r",
-		["Your auction of Gloves of Holy Might sold."] = "|cffa335ee|Hitem:867::::::::5:::1::::|h[Gloves of Holy Might]|h|r",
+		["Your auction of Hulking Boots sold."] = "|cff1eff00|Hitem:14742::::::::5:::::::|h[Hulking Boots]|h|r",
+		["Your auction of Defender Leggings of the Boar sold."] = "|cff1eff00|Hitem:6578::::::1106:701872896:5:::::::|h[Defender Leggings of the Boar]|h|r",
+		["Your auction of Polished Zweihander of the Whale sold."] = "|cff1eff00|Hitem:15249::::::1024:1873939328:5:::::::|h[Polished Zweihander of the Whale]|h|r",
 	},
 	["r@Golemagg@internalData@accountingTrimmed"] = {
 	},
@@ -6550,29 +6479,29 @@ TradeSkillMasterDB = {
 		["i:10623"] = "BOE Items`Weapons`Blue",
 		["i:15519"] = "BOE Items`Armor`Green",
 		["i:13025"] = "BOE Items`Weapons`Blue",
-		["i:12028"] = "BOE Items`Armor`Green",
-		["i:4242"] = "BOE Items`Armor`Green",
 		["i:14225"] = "BOE Items`Armor`Green",
+		["i:4242"] = "BOE Items`Armor`Green",
+		["i:12028"] = "BOE Items`Armor`Green",
 		["i:14163"] = "BOE Items`Armor`Green",
 		["i:2622"] = "BOE Items`Armor`Green",
-		["i:14479"] = "Recipes`Tailoring",
-		["i:8203"] = "BOE Items`Armor`Green",
-		["i:10601"] = "Recipes`Engineering",
-		["i:14100"] = "BOE Items`Armor`Green",
 		["i:14769"] = "BOE Items`Armor`Green",
-		["i:2317"] = "BOE Items`Armor`Green",
+		["i:8203"] = "BOE Items`Armor`Green",
 		["i:14868"] = "BOE Items`Armor`Green",
-		["i:7369"] = "BOE Items`Armor`Green",
+		["i:14100"] = "BOE Items`Armor`Green",
 		["i:20694"] = "BOE Items`Armor`Green",
+		["i:2317"] = "BOE Items`Armor`Green",
+		["i:10601"] = "Recipes`Engineering",
+		["i:7369"] = "BOE Items`Armor`Green",
+		["i:14479"] = "Recipes`Tailoring",
 		["i:21282"] = "Class Books`Warlock",
 		["i:7357"] = "BOE Items`Armor`Green",
 		["i:14482"] = "Recipes`Tailoring",
 		["i:14146"] = "BOE Items`Armor`Purple",
 		["i:2976"] = "BOE Items`Armor`Green",
-		["i:14466"] = "Recipes`Tailoring",
+		["i:15599"] = "BOE Items`Armor`Green",
 		["i:15932"] = "BOE Items`Armor`Green",
 		["i:16673"] = "BOE Items`Armor`Blue",
-		["i:15599"] = "BOE Items`Armor`Green",
+		["i:14466"] = "Recipes`Tailoring",
 		["i:15239"] = "BOE Items`Weapons`Green",
 		["i:7753"] = "BOE Items`Weapons`Blue",
 		["i:14785"] = "BOE Items`Armor`Green",
@@ -6590,12 +6519,12 @@ TradeSkillMasterDB = {
 		["i:8315"] = "BOE Items`Armor`Green",
 		["i:4408"] = "Recipes`Engineering",
 		["i:4052"] = "BOE Items`Armor`Green",
-		["i:4695"] = "BOE Items`Armor`Green",
+		["i:7542"] = "BOE Items`Armor`Green",
 		["i:18678"] = "BOE Items`Armor`Blue",
 		["i:14497"] = "Recipes`Tailoring",
 		["i:7477"] = "BOE Items`Armor`Green",
 		["i:12703"] = "Recipes`Blacksmithing",
-		["i:7542"] = "BOE Items`Armor`Green",
+		["i:4695"] = "BOE Items`Armor`Green",
 		["i:12824"] = "Recipes`Blacksmithing",
 		["i:6348"] = "Recipes`Enchanting",
 		["i:15338"] = "BOE Items`Armor`Green",
@@ -6617,12 +6546,12 @@ TradeSkillMasterDB = {
 		["i:22762"] = "BOE Items`Armor`Blue",
 		["i:12974"] = "BOE Items`Weapons`Blue",
 		["i:14607"] = "BOE Items`Armor`Green",
-		["i:6332"] = "BOE Items`Armor`Blue",
+		["i:12803"] = "Materials`Reagents",
 		["i:14171"] = "BOE Items`Armor`Green",
 		["i:8176"] = "BOE Items`Armor`Green",
 		["i:11982"] = "BOE Items`Armor`Green",
 		["i:6569"] = "BOE Items`Armor`Green",
-		["i:12803"] = "Materials`Reagents",
+		["i:6332"] = "BOE Items`Armor`Blue",
 		["i:3871"] = "Recipes`Blacksmithing",
 		["i:5010"] = "BOE Items`Armor`Green",
 		["i:7421"] = "BOE Items`Armor`Green",
@@ -6634,12 +6563,12 @@ TradeSkillMasterDB = {
 		["i:15725"] = "Recipes`Vendor",
 		["i:6405"] = "BOE Items`Armor`Green",
 		["i:17026"] = "Materials`Reagents",
-		["i:14750"] = "BOE Items`Armor`Green",
+		["i:10151"] = "BOE Items`Armor`Green",
 		["i:19686"] = "BOE Items`Armor`Blue",
 		["i:5470"] = "Materials`Cooking",
 		["i:7972"] = "Materials`Reagents",
 		["i:14294"] = "BOE Items`Armor`Green",
-		["i:10151"] = "BOE Items`Armor`Green",
+		["i:14750"] = "BOE Items`Armor`Green",
 		["i:13111"] = "BOE Items`Armor`Blue",
 		["i:6403"] = "BOE Items`Armor`Green",
 		["i:6557"] = "BOE Items`Armor`Green",
@@ -6683,12 +6612,12 @@ TradeSkillMasterDB = {
 		["i:13134"] = "BOE Items`Armor`Blue",
 		["i:3307"] = "BOE Items`Armor`Green",
 		["i:10142"] = "BOE Items`Armor`Green",
-		["i:14779"] = "BOE Items`Armor`Green",
+		["i:2867"] = "BOE Items`Armor`Green",
 		["i:10278"] = "BOE Items`Armor`Green",
 		["i:8205"] = "BOE Items`Armor`Green",
 		["i:10090"] = "BOE Items`Armor`Green",
 		["i:4797"] = "BOE Items`Armor`Green",
-		["i:2867"] = "BOE Items`Armor`Green",
+		["i:14779"] = "BOE Items`Armor`Green",
 		["i:4722"] = "BOE Items`Armor`Green",
 		["i:13087"] = "BOE Items`Armor`Blue",
 		["i:12045"] = "BOE Items`Armor`Green",
@@ -6707,10 +6636,10 @@ TradeSkillMasterDB = {
 		["i:13054"] = "BOE Items`Weapons`Blue",
 		["i:3577"] = "Materials`Minerals",
 		["i:783"] = "Materials`Leather",
-		["i:3065"] = "BOE Items`Armor`Green",
+		["i:3302"] = "BOE Items`Armor`Green",
 		["i:2452"] = "Materials`Herbs",
 		["i:14367"] = "BOE Items`Armor`Green",
-		["i:3302"] = "BOE Items`Armor`Green",
+		["i:3065"] = "BOE Items`Armor`Green",
 		["i:7556"] = "BOE Items`Armor`Green",
 		["i:9867"] = "BOE Items`Armor`Green",
 		["i:15136"] = "BOE Items`Armor`Green",
@@ -6732,12 +6661,12 @@ TradeSkillMasterDB = {
 		["i:15771"] = "Recipes`Leatherworking",
 		["i:15212"] = "BOE Items`Weapons`Green",
 		["i:12831"] = "Recipes`Blacksmithing",
-		["i:11135"] = "Materials`Enchanting",
+		["i:4454"] = "BOE Items`Weapons`Blue",
 		["i:4737"] = "BOE Items`Armor`Green",
 		["i:14843"] = "BOE Items`Armor`Green",
 		["i:723"] = "Materials`Cooking",
 		["i:19695"] = "BOE Items`Armor`Blue",
-		["i:4454"] = "BOE Items`Weapons`Blue",
+		["i:11135"] = "Materials`Enchanting",
 		["i:14250"] = "BOE Items`Armor`Green",
 		["i:2924"] = "Materials`Cooking",
 		["i:8246"] = "BOE Items`Armor`Green",
@@ -6746,7 +6675,7 @@ TradeSkillMasterDB = {
 		["i:15387"] = "BOE Items`Armor`Green",
 		["i:3872"] = "Recipes`Blacksmithing",
 		["i:4655"] = "Materials`Cooking",
-		["i:12528"] = "BOE Items`Weapons`Blue",
+		["i:6379"] = "BOE Items`Armor`Green",
 		["i:21177"] = "Materials`Reagents",
 		["i:14256"] = "Materials`Cloth",
 		["i:14285"] = "BOE Items`Armor`Green",
@@ -6755,16 +6684,16 @@ TradeSkillMasterDB = {
 		["i:8367"] = "BOE Items`Armor`Blue",
 		["i:897"] = "BOE Items`Armor`Green",
 		["i:3853"] = "BOE Items`Weapons`Green",
-		["i:6379"] = "BOE Items`Armor`Green",
+		["i:12528"] = "BOE Items`Weapons`Blue",
 		["i:6180"] = "BOE Items`Armor`Green",
-		["i:14773"] = "BOE Items`Armor`Green",
+		["i:18948"] = "BOE Items`Armor`Blue",
 		["i:14380"] = "BOE Items`Armor`Green",
 		["i:10244"] = "BOE Items`Armor`Green",
 		["i:3866"] = "Recipes`Blacksmithing",
 		["i:20553"] = "Recipes`Blacksmithing",
 		["i:4348"] = "Recipes`Tailoring",
 		["i:13948"] = "Recipes`Vendor",
-		["i:18948"] = "BOE Items`Armor`Blue",
+		["i:14773"] = "BOE Items`Armor`Green",
 		["i:8133"] = "BOE Items`Armor`Green",
 		["i:9843"] = "BOE Items`Armor`Green",
 		["i:15625"] = "BOE Items`Armor`Green",
@@ -6778,51 +6707,51 @@ TradeSkillMasterDB = {
 		["i:14212"] = "BOE Items`Armor`Green",
 		["i:18731"] = "Recipes`Vendor",
 		["i:12832"] = "Recipes`Blacksmithing",
-		["i:2883"] = "Recipes`Blacksmithing",
+		["i:3413"] = "BOE Items`Weapons`Blue",
 		["i:11977"] = "BOE Items`Armor`Green",
 		["i:23090"] = "BOE Items`Armor`Blue",
 		["i:9378"] = "BOE Items`Weapons`Blue",
-		["i:3413"] = "BOE Items`Weapons`Blue",
+		["i:2883"] = "Recipes`Blacksmithing",
 		["i:14859"] = "BOE Items`Armor`Green",
 		["i:7485"] = "BOE Items`Armor`Green",
 		["i:1468"] = "Materials`Cooking",
 		["i:6591"] = "BOE Items`Armor`Green",
 		["i:7443"] = "BOE Items`Armor`Green",
-		["i:21547"] = "Recipes`Alchemy",
+		["i:2911"] = "BOE Items`Armor`Blue`Level 19 BiS",
 		["i:9794"] = "BOE Items`Armor`Green",
 		["i:7461"] = "BOE Items`Armor`Green",
 		["i:6376"] = "Recipes`Enchanting",
 		["i:7540"] = "BOE Items`Armor`Green",
-		["i:2911"] = "BOE Items`Armor`Blue`Level 19 BiS",
+		["i:7047"] = "BOE Items`Armor`Green",
 		["i:1560"] = "BOE Items`Armor`Green",
 		["i:776"] = "BOE Items`Weapons`Blue",
 		["i:15304"] = "BOE Items`Armor`Green",
-		["i:7047"] = "BOE Items`Armor`Green",
+		["i:21547"] = "Recipes`Alchemy",
 		["i:4037"] = "BOE Items`Armor`Green",
 		["i:9998"] = "BOE Items`Armor`Green",
-		["i:14604"] = "BOE Items`Armor`Green",
-		["i:15364"] = "BOE Items`Armor`Green",
-		["i:12025"] = "BOE Items`Armor`Green",
-		["i:1081"] = "Materials`Cooking",
-		["i:7430"] = "BOE Items`Armor`Green",
 		["i:12414"] = "BOE Items`Armor`Green",
+		["i:15364"] = "BOE Items`Armor`Green",
 		["i:20670"] = "BOE Items`Armor`Green",
-		["i:15339"] = "BOE Items`Armor`Green",
 		["i:10076"] = "BOE Items`Armor`Green",
+		["i:7430"] = "BOE Items`Armor`Green",
+		["i:14604"] = "BOE Items`Armor`Green",
+		["i:12025"] = "BOE Items`Armor`Green",
+		["i:15339"] = "BOE Items`Armor`Green",
+		["i:4254"] = "BOE Items`Armor`Green",
 		["i:4729"] = "BOE Items`Armor`Green",
 		["i:9060"] = "Materials`Reagents",
 		["i:14591"] = "BOE Items`Armor`Green",
 		["i:14122"] = "BOE Items`Armor`Green",
 		["i:1938"] = "BOE Items`Weapons`Green",
-		["i:4254"] = "BOE Items`Armor`Green",
+		["i:1713"] = "BOE Items`Armor`Blue",
 		["i:15388"] = "BOE Items`Armor`Green",
 		["i:6199"] = "BOE Items`Armor`Green",
 		["i:10044"] = "BOE Items`Armor`Green",
-		["i:9825"] = "BOE Items`Armor`Green",
-		["i:1713"] = "BOE Items`Armor`Blue",
+		["i:3569"] = "BOE Items`Armor`Green",
+		["i:1081"] = "Materials`Cooking",
 		["i:15535"] = "BOE Items`Armor`Green",
 		["i:12989"] = "BOE Items`Weapons`Blue",
-		["i:3569"] = "BOE Items`Armor`Green",
+		["i:9825"] = "BOE Items`Armor`Green",
 		["i:3049"] = "BOE Items`Armor`Green",
 		["i:15543"] = "BOE Items`Armor`Green",
 		["i:14048"] = "Materials`Cloth",
@@ -6833,16 +6762,16 @@ TradeSkillMasterDB = {
 		["i:7992"] = "Recipes`Blacksmithing",
 		["i:3832"] = "Recipes`Alchemy",
 		["i:15347"] = "BOE Items`Armor`Green",
-		["i:11165"] = "Recipes`Enchanting",
-		["i:21025"] = "Recipes`Cooking",
-		["i:14495"] = "Recipes`Tailoring",
 		["i:14286"] = "BOE Items`Armor`Green",
 		["i:14416"] = "BOE Items`Armor`Green",
+		["i:14495"] = "Recipes`Tailoring",
+		["i:15167"] = "BOE Items`Armor`Green",
+		["i:21025"] = "Recipes`Cooking",
 		["i:4714"] = "BOE Items`Armor`Green",
 		["i:4476"] = "BOE Items`Armor`Green",
 		["i:12016"] = "BOE Items`Armor`Green",
 		["i:15570"] = "BOE Items`Armor`Green",
-		["i:15167"] = "BOE Items`Armor`Green",
+		["i:11165"] = "Recipes`Enchanting",
 		["i:9938"] = "BOE Items`Armor`Green",
 		["i:11206"] = "Recipes`Enchanting",
 		["i:4250"] = "BOE Items`Armor`Green",
@@ -6858,21 +6787,21 @@ TradeSkillMasterDB = {
 		["i:15529"] = "BOE Items`Armor`Green",
 		["i:9916"] = "BOE Items`Armor`Green",
 		["i:14258"] = "BOE Items`Armor`Green",
-		["i:14427"] = "BOE Items`Armor`Green",
+		["i:12006"] = "BOE Items`Armor`Green`Level 19 BiS",
 		["i:1927"] = "BOE Items`Weapons`Green",
 		["i:20576"] = "Recipes`Vendor",
 		["i:13076"] = "BOE Items`Armor`Blue",
 		["i:6468"] = "BOE Items`Armor`Blue`Level 19 BiS",
 		["i:8313"] = "BOE Items`Armor`Green",
 		["i:2962"] = "BOE Items`Armor`Green",
-		["i:12006"] = "BOE Items`Armor`Green`Level 19 BiS",
-		["i:14555"] = "BOE Items`Weapons`Purple",
-		["i:21288"] = "Class Books`Paladin",
 		["i:4810"] = "BOE Items`Armor`Green",
+		["i:17061"] = "BOE Items`Armor`Blue",
+		["i:21288"] = "Class Books`Paladin",
+		["i:14427"] = "BOE Items`Armor`Green",
 		["i:4320"] = "BOE Items`Armor`Blue",
 		["i:9801"] = "BOE Items`Armor`Green",
 		["i:7481"] = "BOE Items`Armor`Green",
-		["i:17061"] = "BOE Items`Armor`Blue",
+		["i:14555"] = "BOE Items`Weapons`Purple",
 		["i:7527"] = "BOE Items`Armor`Green",
 		["i:15407"] = "Materials`Leather",
 		["i:16046"] = "Recipes`Vendor`Valuable",
@@ -6884,10 +6813,10 @@ TradeSkillMasterDB = {
 		["i:14498"] = "Recipes`Tailoring",
 		["i:9942"] = "BOE Items`Armor`Green",
 		["i:4731"] = "BOE Items`Armor`Green",
-		["i:15615"] = "BOE Items`Armor`Green",
+		["i:1440"] = "BOE Items`Weapons`Green",
 		["i:8114"] = "BOE Items`Armor`Green",
 		["i:15375"] = "BOE Items`Armor`Green",
-		["i:1440"] = "BOE Items`Weapons`Green",
+		["i:15615"] = "BOE Items`Armor`Green",
 		["i:16692"] = "BOE Items`Armor`Blue",
 		["i:16113"] = "Recipes`Vendor`Valuable",
 		["i:4825"] = "BOE Items`Weapons`Green",
@@ -6902,28 +6831,28 @@ TradeSkillMasterDB = {
 		["i:4039"] = "BOE Items`Armor`Green",
 		["i:13038"] = "BOE Items`Weapons`Blue",
 		["i:8314"] = "BOE Items`Armor`Green",
-		["i:10009"] = "BOE Items`Armor`Green",
+		["i:3056"] = "BOE Items`Armor`Green",
 		["i:9953"] = "BOE Items`Armor`Green",
 		["i:6325"] = "Recipes`Vendor",
 		["i:15088"] = "BOE Items`Armor`Green",
 		["i:6390"] = "Recipes`Tailoring",
 		["i:14206"] = "BOE Items`Armor`Green",
-		["i:3056"] = "BOE Items`Armor`Green",
+		["i:5962"] = "BOE Items`Armor`Green",
 		["i:785"] = "Materials`Herbs",
 		["i:2620"] = "BOE Items`Armor`Green",
 		["i:7373"] = "BOE Items`Armor`Green",
 		["i:23199"] = "BOE Items`Armor`Blue",
 		["i:13860"] = "BOE Items`Armor`Green",
-		["i:5962"] = "BOE Items`Armor`Green",
+		["i:10009"] = "BOE Items`Armor`Green",
 		["i:19048"] = "BOE Items`Armor`Blue",
-		["i:6423"] = "BOE Items`Armor`Green",
+		["i:19049"] = "BOE Items`Armor`Blue",
 		["i:14178"] = "BOE Items`Armor`Green",
 		["i:4048"] = "BOE Items`Armor`Green",
 		["i:9948"] = "BOE Items`Armor`Green",
 		["i:21303"] = "Class Books`Rogue",
 		["i:14091"] = "BOE Items`Armor`Green",
 		["i:8293"] = "BOE Items`Armor`Green",
-		["i:19049"] = "BOE Items`Armor`Blue",
+		["i:6423"] = "BOE Items`Armor`Green",
 		["i:2988"] = "BOE Items`Armor`Green",
 		["i:10084"] = "BOE Items`Armor`Green",
 		["i:15652"] = "BOE Items`Armor`Green",
@@ -6970,26 +6899,26 @@ TradeSkillMasterDB = {
 		["i:5543"] = "Recipes`Blacksmithing",
 		["i:7491"] = "BOE Items`Armor`Green",
 		["i:14441"] = "BOE Items`Armor`Green",
-		["i:13068"] = "BOE Items`Armor`Blue",
-		["i:3358"] = "Materials`Herbs",
-		["i:10062"] = "BOE Items`Armor`Green",
 		["i:1189"] = "BOE Items`Armor`Green",
-		["i:3208"] = "BOE Items`Weapons`Green",
+		["i:3358"] = "Materials`Herbs",
 		["i:10099"] = "BOE Items`Armor`Green",
+		["i:13068"] = "BOE Items`Armor`Blue",
+		["i:3208"] = "BOE Items`Weapons`Green",
+		["i:10062"] = "BOE Items`Armor`Green",
 		["i:8143"] = "BOE Items`Armor`Green",
 		["i:15425"] = "BOE Items`Armor`Green",
 		["i:6274"] = "Recipes`Vendor",
 		["i:18235"] = "Recipes`Engineering",
 		["i:10378"] = "BOE Items`Armor`Green",
 		["i:16722"] = "BOE Items`Armor`Blue",
-		["i:7993"] = "Recipes`Blacksmithing",
+		["i:12015"] = "BOE Items`Armor`Green",
 		["i:944"] = "BOE Items`Weapons`Purple",
 		["i:19148"] = "BOE Items`Armor`Purple",
 		["i:7528"] = "BOE Items`Armor`Green",
 		["i:14979"] = "BOE Items`Armor`Green",
 		["i:12232"] = "Recipes`Vendor",
 		["i:6466"] = "BOE Items`Armor`Green",
-		["i:12015"] = "BOE Items`Armor`Green",
+		["i:7993"] = "Recipes`Blacksmithing",
 		["i:18405"] = "BOE Items`Armor`Purple",
 		["i:12057"] = "BOE Items`Armor`Green",
 		["i:15390"] = "BOE Items`Armor`Green",
@@ -7016,10 +6945,10 @@ TradeSkillMasterDB = {
 		["i:10112"] = "BOE Items`Armor`Green",
 		["i:15047"] = "BOE Items`Armor`Blue",
 		["i:7929"] = "BOE Items`Armor`Green",
-		["i:15078"] = "BOE Items`Armor`Green",
+		["i:14203"] = "BOE Items`Armor`Green",
 		["i:15945"] = "BOE Items`Armor`Green",
 		["i:2283"] = "BOE Items`Armor`Green",
-		["i:14203"] = "BOE Items`Armor`Green",
+		["i:15078"] = "BOE Items`Armor`Green",
 		["i:7449"] = "Recipes`Leatherworking",
 		["i:17029"] = "Materials`Reagents",
 		["i:20671"] = "BOE Items`Armor`Blue",
@@ -7038,7 +6967,7 @@ TradeSkillMasterDB = {
 		["i:14260"] = "BOE Items`Armor`Green",
 		["i:10608"] = "Recipes`Engineering",
 		["i:22389"] = "Recipes`Blacksmithing",
-		["i:15746"] = "Recipes`Leatherworking",
+		["i:5028"] = "BOE Items`Armor`Green",
 		["i:8346"] = "BOE Items`Armor`Blue",
 		["i:3735"] = "Recipes`Vendor",
 		["i:14297"] = "BOE Items`Armor`Green",
@@ -7046,7 +6975,7 @@ TradeSkillMasterDB = {
 		["i:9937"] = "BOE Items`Armor`Green",
 		["i:2274"] = "BOE Items`Armor`Green",
 		["i:20477"] = "BOE Items`Armor`Blue",
-		["i:5028"] = "BOE Items`Armor`Green",
+		["i:15746"] = "Recipes`Leatherworking",
 		["i:3609"] = "Recipes`Blacksmithing",
 		["i:18949"] = "Recipes`Vendor",
 		["i:8172"] = "Materials`Leather",
@@ -7069,20 +6998,20 @@ TradeSkillMasterDB = {
 		["i:15358"] = "BOE Items`Armor`Green",
 		["i:15369"] = "BOE Items`Armor`Green",
 		["i:9939"] = "BOE Items`Armor`Green",
-		["i:3186"] = "BOE Items`Weapons`Green",
+		["i:14173"] = "BOE Items`Armor`Green",
 		["i:8107"] = "BOE Items`Armor`Green",
 		["i:14603"] = "BOE Items`Armor`Green",
-		["i:14173"] = "BOE Items`Armor`Green",
-		["i:7288"] = "Recipes`Leatherworking",
-		["i:14951"] = "BOE Items`Armor`Green",
-		["i:15094"] = "BOE Items`Armor`Green",
 		["i:15611"] = "BOE Items`Armor`Green",
-		["i:6615"] = "BOE Items`Armor`Green",
+		["i:7288"] = "Recipes`Leatherworking",
+		["i:6418"] = "BOE Items`Armor`Green",
+		["i:15094"] = "BOE Items`Armor`Green",
+		["i:3186"] = "BOE Items`Weapons`Green",
+		["i:14852"] = "BOE Items`Armor`Green",
 		["i:13865"] = "BOE Items`Armor`Green",
 		["i:15660"] = "BOE Items`Armor`Green",
-		["i:6418"] = "BOE Items`Armor`Green",
+		["i:14951"] = "BOE Items`Armor`Green",
 		["i:12022"] = "BOE Items`Armor`Green",
-		["i:14852"] = "BOE Items`Armor`Green",
+		["i:6615"] = "BOE Items`Armor`Green",
 		["i:12694"] = "Recipes`Blacksmithing",
 		["i:4409"] = "Recipes`Engineering",
 		["i:6404"] = "BOE Items`Armor`Green",
@@ -7093,14 +7022,14 @@ TradeSkillMasterDB = {
 		["i:4793"] = "BOE Items`Armor`Green",
 		["i:14569"] = "BOE Items`Armor`Green",
 		["i:14855"] = "BOE Items`Armor`Green",
-		["i:8156"] = "BOE Items`Armor`Green",
+		["i:2058"] = "BOE Items`Weapons`Green",
 		["i:15429"] = "BOE Items`Armor`Green",
 		["i:9966"] = "BOE Items`Armor`Green",
 		["i:10282"] = "BOE Items`Armor`Green",
 		["i:24102"] = "Class Books`Rogue",
 		["i:3291"] = "BOE Items`Armor`Green",
 		["i:15751"] = "Recipes`Leatherworking",
-		["i:2058"] = "BOE Items`Weapons`Green",
+		["i:8156"] = "BOE Items`Armor`Green",
 		["i:13063"] = "BOE Items`Weapons`Blue",
 		["i:10203"] = "BOE Items`Armor`Green",
 		["i:16052"] = "Recipes`Engineering",
@@ -7109,7 +7038,7 @@ TradeSkillMasterDB = {
 		["i:9296"] = "Recipes`Alchemy",
 		["i:10379"] = "BOE Items`Armor`Green",
 		["i:15095"] = "BOE Items`Armor`Green",
-		["i:14801"] = "BOE Items`Armor`Green",
+		["i:6337"] = "BOE Items`Armor`Green",
 		["i:20406"] = "BOE Items`Armor`Green",
 		["i:15552"] = "BOE Items`Armor`Green",
 		["i:2868"] = "BOE Items`Armor`Green",
@@ -7118,7 +7047,7 @@ TradeSkillMasterDB = {
 		["i:6565"] = "BOE Items`Armor`Green",
 		["i:14431"] = "BOE Items`Armor`Green",
 		["i:8400"] = "Recipes`Leatherworking",
-		["i:6337"] = "BOE Items`Armor`Green",
+		["i:14801"] = "BOE Items`Armor`Green",
 		["i:15761"] = "Recipes`Leatherworking",
 		["i:17027"] = "Materials`Reagents",
 		["i:8185"] = "BOE Items`Armor`Green",
@@ -7143,7 +7072,7 @@ TradeSkillMasterDB = {
 		["i:22671"] = "BOE Items`Armor`Purple",
 		["i:15969"] = "BOE Items`Armor`Green",
 		["i:8111"] = "BOE Items`Armor`Green",
-		["i:6596"] = "BOE Items`Armor`Green",
+		["i:7930"] = "BOE Items`Armor`Green",
 		["i:15582"] = "BOE Items`Armor`Green",
 		["i:7933"] = "BOE Items`Armor`Green",
 		["i:15188"] = "BOE Items`Armor`Green",
@@ -7151,7 +7080,7 @@ TradeSkillMasterDB = {
 		["i:14445"] = "BOE Items`Armor`Green",
 		["i:2246"] = "BOE Items`Armor`Purple",
 		["i:14243"] = "BOE Items`Armor`Green",
-		["i:7930"] = "BOE Items`Armor`Green",
+		["i:6596"] = "BOE Items`Armor`Green",
 		["i:14807"] = "BOE Items`Armor`Green",
 		["i:14494"] = "Recipes`Tailoring",
 		["i:9382"] = "BOE Items`Armor`Green",
@@ -7176,10 +7105,10 @@ TradeSkillMasterDB = {
 		["i:12531"] = "BOE Items`Weapons`Blue",
 		["i:19149"] = "BOE Items`Armor`Purple",
 		["i:8319"] = "BOE Items`Armor`Green",
-		["i:14377"] = "BOE Items`Armor`Green",
+		["i:12625"] = "BOE Items`Armor`Blue",
 		["i:8109"] = "BOE Items`Armor`Green",
 		["i:10403"] = "BOE Items`Armor`Green",
-		["i:12625"] = "BOE Items`Armor`Blue",
+		["i:14377"] = "BOE Items`Armor`Green",
 		["i:14850"] = "BOE Items`Armor`Green",
 		["i:12551"] = "BOE Items`Armor`Blue",
 		["i:16246"] = "Recipes`Enchanting",
@@ -7202,16 +7131,16 @@ TradeSkillMasterDB = {
 		["i:14237"] = "BOE Items`Armor`Green",
 		["i:12716"] = "Recipes`Blacksmithing",
 		["i:14242"] = "BOE Items`Armor`Green",
-		["i:6378"] = "BOE Items`Armor`Green",
+		["i:7071"] = "Materials`Reagents",
 		["i:14639"] = "Recipes`Vendor`Valuable",
 		["i:12424"] = "BOE Items`Armor`Green",
 		["i:15926"] = "BOE Items`Armor`Green",
-		["i:6412"] = "BOE Items`Armor`Green",
+		["i:4244"] = "BOE Items`Armor`Green",
 		["i:7496"] = "BOE Items`Armor`Green",
 		["i:12616"] = "BOE Items`Armor`Green",
 		["i:15350"] = "BOE Items`Armor`Green",
-		["i:7071"] = "Materials`Reagents",
-		["i:4244"] = "BOE Items`Armor`Green",
+		["i:6378"] = "BOE Items`Armor`Green",
+		["i:6412"] = "BOE Items`Armor`Green",
 		["i:10071"] = "BOE Items`Armor`Green",
 		["i:14526"] = "Recipes`Vendor",
 		["i:15069"] = "BOE Items`Armor`Green",
@@ -7219,20 +7148,20 @@ TradeSkillMasterDB = {
 		["i:16799"] = "BOE Items`Armor`Purple",
 		["i:24222"] = "BOE Items`Weapons`Blue",
 		["i:15054"] = "BOE Items`Armor`Green",
-		["i:10633"] = "BOE Items`Armor`Blue",
+		["i:15571"] = "BOE Items`Armor`Green",
 		["i:18338"] = "BOE Items`Weapons`Blue",
 		["i:4567"] = "BOE Items`Weapons`Green",
 		["i:20550"] = "BOE Items`Armor`Blue",
-		["i:15571"] = "BOE Items`Armor`Green",
+		["i:10633"] = "BOE Items`Armor`Blue",
 		["i:20259"] = "BOE Items`Armor`Blue",
 		["i:14784"] = "BOE Items`Armor`Green",
 		["i:10180"] = "BOE Items`Armor`Green",
 		["i:5422"] = "BOE Items`Armor`Green",
 		["i:8265"] = "BOE Items`Armor`Green",
-		["i:9482"] = "BOE Items`Weapons`Blue",
+		["i:14123"] = "BOE Items`Armor`Green",
 		["i:1934"] = "BOE Items`Armor`Green",
 		["i:8123"] = "BOE Items`Armor`Green",
-		["i:14123"] = "BOE Items`Armor`Green",
+		["i:9482"] = "BOE Items`Weapons`Blue",
 		["i:19808"] = "BOE Items`Weapons`Green",
 		["i:5467"] = "Materials`Cooking",
 		["i:12416"] = "BOE Items`Armor`Green",
@@ -7280,15 +7209,15 @@ TradeSkillMasterDB = {
 		["i:3021"] = "BOE Items`Weapons`Blue",
 		["i:15393"] = "BOE Items`Armor`Green",
 		["i:5257"] = "BOE Items`Armor`Blue",
-		["i:7378"] = "BOE Items`Armor`Green",
+		["i:15693"] = "BOE Items`Armor`Green",
 		["i:2592"] = "Materials`Cloth",
 		["i:3309"] = "BOE Items`Armor`Green",
 		["i:15477"] = "BOE Items`Armor`Green",
-		["i:18265"] = "Recipes`Tailoring",
-		["i:8279"] = "BOE Items`Armor`Green",
-		["i:15693"] = "BOE Items`Armor`Green",
-		["i:12008"] = "BOE Items`Armor`Green",
 		["i:2984"] = "BOE Items`Armor`Green",
+		["i:8279"] = "BOE Items`Armor`Green",
+		["i:7378"] = "BOE Items`Armor`Green",
+		["i:12008"] = "BOE Items`Armor`Green",
+		["i:18265"] = "Recipes`Tailoring",
 		["i:4292"] = "Recipes`Tailoring",
 		["i:10370"] = "BOE Items`Armor`Green",
 		["i:12259"] = "BOE Items`Weapons`Green",
@@ -7301,12 +7230,12 @@ TradeSkillMasterDB = {
 		["i:15566"] = "BOE Items`Armor`Green",
 		["i:1220"] = "BOE Items`Weapons`Green",
 		["i:11174"] = "Materials`Enchanting",
-		["i:10210"] = "BOE Items`Armor`Green",
+		["i:6429"] = "BOE Items`Armor`Green",
 		["i:1481"] = "BOE Items`Weapons`Blue",
 		["i:3842"] = "BOE Items`Armor`Green",
 		["i:2775"] = "Materials`Minerals",
 		["i:10402"] = "BOE Items`Armor`Green",
-		["i:6429"] = "BOE Items`Armor`Green",
+		["i:10210"] = "BOE Items`Armor`Green",
 		["i:6416"] = "BOE Items`Armor`Green",
 		["i:20258"] = "BOE Items`Weapons`Blue",
 		["i:14808"] = "BOE Items`Armor`Green",
@@ -7314,27 +7243,27 @@ TradeSkillMasterDB = {
 		["i:9428"] = "BOE Items`Armor`Blue",
 		["i:14483"] = "Recipes`Tailoring",
 		["i:16817"] = "BOE Items`Armor`Purple",
-		["i:16736"] = "BOE Items`Armor`Blue",
+		["i:19162"] = "BOE Items`Armor`Purple",
 		["i:3058"] = "BOE Items`Armor`Green",
 		["i:9385"] = "BOE Items`Weapons`Blue",
-		["i:19162"] = "BOE Items`Armor`Purple",
-		["i:8317"] = "BOE Items`Armor`Green",
+		["i:16736"] = "BOE Items`Armor`Blue",
+		["i:14312"] = "BOE Items`Armor`Green",
 		["i:14448"] = "BOE Items`Armor`Green",
 		["i:8285"] = "BOE Items`Armor`Green",
 		["i:12636"] = "BOE Items`Armor`Blue",
-		["i:14312"] = "BOE Items`Armor`Green",
-		["i:12975"] = "BOE Items`Weapons`Blue",
 		["i:15493"] = "BOE Items`Armor`Green",
+		["i:12975"] = "BOE Items`Weapons`Blue",
+		["i:8317"] = "BOE Items`Armor`Green",
 		["i:7787"] = "BOE Items`Armor`Blue",
-		["i:13133"] = "BOE Items`Armor`Blue",
+		["i:14743"] = "BOE Items`Armor`Green",
 		["i:9366"] = "BOE Items`Armor`Green",
-		["i:1460"] = "BOE Items`Weapons`Green",
+		["i:8270"] = "BOE Items`Armor`Green",
 		["i:14957"] = "BOE Items`Armor`Green",
 		["i:9815"] = "BOE Items`Armor`Green",
 		["i:14295"] = "BOE Items`Armor`Green",
-		["i:14743"] = "BOE Items`Armor`Green",
+		["i:13133"] = "BOE Items`Armor`Blue",
 		["i:6368"] = "Recipes`Vendor",
-		["i:8270"] = "BOE Items`Armor`Green",
+		["i:1460"] = "BOE Items`Weapons`Green",
 		["i:14490"] = "Recipes`Tailoring",
 		["i:10858"] = "Recipes`Vendor",
 		["i:10027"] = "BOE Items`Armor`Green",
@@ -7350,16 +7279,16 @@ TradeSkillMasterDB = {
 		["i:1215"] = "BOE Items`Armor`Green",
 		["i:10254"] = "BOE Items`Armor`Green",
 		["i:7549"] = "BOE Items`Armor`Green",
-		["i:1679"] = "BOE Items`Weapons`Green",
+		["i:12429"] = "BOE Items`Armor`Green",
 		["i:14948"] = "BOE Items`Armor`Green",
 		["i:19684"] = "BOE Items`Armor`Blue",
 		["i:13028"] = "BOE Items`Weapons`Blue",
 		["i:20664"] = "BOE Items`Armor`Green",
-		["i:12429"] = "BOE Items`Armor`Green",
+		["i:14409"] = "BOE Items`Armor`Green",
 		["i:9433"] = "BOE Items`Armor`Blue",
 		["i:15194"] = "BOE Items`Armor`Green",
 		["i:11973"] = "BOE Items`Armor`Green",
-		["i:14409"] = "BOE Items`Armor`Green",
+		["i:1679"] = "BOE Items`Weapons`Green",
 		["i:10082"] = "BOE Items`Armor`Green",
 		["i:22890"] = "Class Books`Mage",
 		["i:13123"] = "BOE Items`Armor`Blue",
@@ -7382,14 +7311,14 @@ TradeSkillMasterDB = {
 		["i:1930"] = "BOE Items`Armor`Green",
 		["i:3011"] = "BOE Items`Armor`Green",
 		["i:10059"] = "BOE Items`Armor`Green",
-		["i:14365"] = "BOE Items`Armor`Green",
+		["i:15626"] = "BOE Items`Armor`Green",
 		["i:12425"] = "BOE Items`Armor`Green",
 		["i:8141"] = "BOE Items`Armor`Green",
 		["i:15139"] = "BOE Items`Armor`Green",
 		["i:6045"] = "Recipes`Blacksmithing",
 		["i:10106"] = "BOE Items`Armor`Green",
 		["i:10024"] = "BOE Items`Armor`Green",
-		["i:15626"] = "BOE Items`Armor`Green",
+		["i:14365"] = "BOE Items`Armor`Green",
 		["i:6336"] = "BOE Items`Armor`Green",
 		["i:14412"] = "BOE Items`Armor`Green",
 		["i:6388"] = "BOE Items`Armor`Green",
@@ -7404,35 +7333,35 @@ TradeSkillMasterDB = {
 		["i:6577"] = "BOE Items`Armor`Green`Level 19 BiS",
 		["i:14096"] = "BOE Items`Armor`Green",
 		["i:15527"] = "BOE Items`Armor`Green",
-		["i:12816"] = "Recipes`Blacksmithing",
+		["i:15610"] = "BOE Items`Armor`Green",
 		["i:7447"] = "BOE Items`Armor`Green",
 		["i:6264"] = "BOE Items`Armor`Green",
-		["i:15610"] = "BOE Items`Armor`Green",
+		["i:12816"] = "Recipes`Blacksmithing",
 		["i:19165"] = "BOE Items`Armor`Purple",
 		["i:3867"] = "Recipes`Blacksmithing",
 		["i:12408"] = "BOE Items`Armor`Green",
 		["i:3571"] = "BOE Items`Weapons`Green",
 		["i:7063"] = "BOE Items`Armor`Green",
-		["i:6541"] = "BOE Items`Armor`Green",
+		["i:14025"] = "BOE Items`Armor`Green",
 		["i:9811"] = "BOE Items`Armor`Green",
 		["i:14939"] = "BOE Items`Armor`Green",
 		["i:3172"] = "Materials`Cooking",
-		["i:14025"] = "BOE Items`Armor`Green",
+		["i:6541"] = "BOE Items`Armor`Green",
 		["i:7552"] = "BOE Items`Armor`Green",
 		["i:15575"] = "BOE Items`Armor`Green",
 		["i:11175"] = "Materials`Enchanting",
 		["i:13489"] = "Recipes`Alchemy",
-		["i:21284"] = "Class Books`Priest",
-		["i:4763"] = "BOE Items`Weapons`Green",
-		["i:15636"] = "BOE Items`Armor`Green",
-		["i:5753"] = "BOE Items`Armor`Green",
 		["i:4822"] = "BOE Items`Armor`Green",
+		["i:4763"] = "BOE Items`Weapons`Green",
+		["i:17054"] = "BOE Items`Weapons`Blue",
+		["i:5753"] = "BOE Items`Armor`Green",
+		["i:21284"] = "Class Books`Priest",
 		["i:8294"] = "BOE Items`Armor`Green",
 		["i:3608"] = "Recipes`Blacksmithing",
 		["i:7086"] = "Recipes`Tailoring",
 		["i:885"] = "BOE Items`Weapons`Green",
-		["i:17054"] = "BOE Items`Weapons`Blue",
-		["i:4792"] = "BOE Items`Armor`Green",
+		["i:15636"] = "BOE Items`Armor`Green",
+		["i:8131"] = "BOE Items`Armor`Green",
 		["i:20546"] = "Recipes`Tailoring",
 		["i:4312"] = "BOE Items`Armor`Green",
 		["i:15059"] = "BOE Items`Armor`Blue",
@@ -7441,7 +7370,7 @@ TradeSkillMasterDB = {
 		["i:15160"] = "BOE Items`Armor`Green",
 		["i:13109"] = "BOE Items`Armor`Blue",
 		["i:4710"] = "BOE Items`Armor`Green",
-		["i:8131"] = "BOE Items`Armor`Green",
+		["i:4792"] = "BOE Items`Armor`Green",
 		["i:21279"] = "Class Books`Mage",
 		["i:14180"] = "BOE Items`Armor`Green",
 		["i:3310"] = "BOE Items`Armor`Green",
@@ -7453,12 +7382,12 @@ TradeSkillMasterDB = {
 		["i:12612"] = "BOE Items`Armor`Green",
 		["i:21281"] = "Class Books`Warlock",
 		["i:14128"] = "BOE Items`Armor`Green",
-		["i:3040"] = "BOE Items`Weapons`Green",
+		["i:14457"] = "BOE Items`Armor`Green",
 		["i:18709"] = "BOE Items`Armor`Blue",
 		["i:18168"] = "BOE Items`Armor`Purple",
 		["i:5001"] = "BOE Items`Armor`Green",
 		["i:10097"] = "BOE Items`Armor`Green",
-		["i:14457"] = "BOE Items`Armor`Green",
+		["i:3040"] = "BOE Items`Weapons`Green",
 		["i:18511"] = "BOE Items`Armor`Purple",
 		["i:16583"] = "Materials`Reagents",
 		["i:9792"] = "BOE Items`Armor`Green",
@@ -7476,11 +7405,11 @@ TradeSkillMasterDB = {
 		["i:22661"] = "BOE Items`Armor`Purple",
 		["i:9833"] = "BOE Items`Armor`Green",
 		["i:5819"] = "BOE Items`Armor`Blue",
-		["i:7437"] = "BOE Items`Armor`Green",
+		["i:1602"] = "BOE Items`Weapons`Blue",
 		["i:3022"] = "BOE Items`Armor`Green",
 		["i:4351"] = "Recipes`Tailoring",
 		["i:8318"] = "BOE Items`Armor`Green",
-		["i:1602"] = "BOE Items`Weapons`Blue",
+		["i:7437"] = "BOE Items`Armor`Green",
 		["i:15289"] = "BOE Items`Weapons`Green",
 		["i:899"] = "BOE Items`Weapons`Green",
 		["i:3831"] = "Recipes`Alchemy",
@@ -7545,12 +7474,12 @@ TradeSkillMasterDB = {
 		["i:10583"] = "BOE Items`Armor`Blue",
 		["i:12240"] = "Recipes`Vendor",
 		["i:15250"] = "BOE Items`Weapons`Green",
-		["i:15251"] = "BOE Items`Weapons`Green",
+		["i:14982"] = "BOE Items`Armor`Green",
 		["i:2583"] = "BOE Items`Armor`Green",
 		["i:13136"] = "BOE Items`Weapons`Blue",
 		["i:5642"] = "Recipes`Vendor`Valuable",
 		["i:15511"] = "BOE Items`Armor`Green`Level 19 BiS",
-		["i:14982"] = "BOE Items`Armor`Green",
+		["i:15251"] = "BOE Items`Weapons`Green",
 		["i:12692"] = "Recipes`Blacksmithing",
 		["i:15271"] = "BOE Items`Weapons`Green",
 		["i:12256"] = "BOE Items`Armor`Green",
@@ -7570,19 +7499,19 @@ TradeSkillMasterDB = {
 		["i:7941"] = "BOE Items`Weapons`Green",
 		["i:10107"] = "BOE Items`Armor`Green",
 		["i:865"] = "BOE Items`Weapons`Green",
-		["i:15279"] = "BOE Items`Weapons`Green",
+		["i:7533"] = "BOE Items`Armor`Green",
 		["i:10273"] = "BOE Items`Armor`Green",
 		["i:15557"] = "BOE Items`Armor`Green",
-		["i:10179"] = "BOE Items`Armor`Green",
-		["i:7533"] = "BOE Items`Armor`Green",
-		["i:10321"] = "Recipes`Vendor`Valuable",
+		["i:10268"] = "BOE Items`Armor`Green",
+		["i:15279"] = "BOE Items`Weapons`Green",
+		["i:14578"] = "BOE Items`Armor`Green",
 		["i:4075"] = "BOE Items`Armor`Green",
 		["i:3682"] = "Recipes`Vendor",
 		["i:4766"] = "BOE Items`Weapons`Green",
 		["i:7736"] = "BOE Items`Weapons`Blue",
-		["i:10268"] = "BOE Items`Armor`Green",
+		["i:10179"] = "BOE Items`Armor`Green",
 		["i:5749"] = "BOE Items`Weapons`Green",
-		["i:14578"] = "BOE Items`Armor`Green",
+		["i:10321"] = "Recipes`Vendor`Valuable",
 		["i:15563"] = "BOE Items`Armor`Green",
 		["i:7352"] = "BOE Items`Armor`Green",
 		["i:20665"] = "BOE Items`Armor`Blue",
@@ -7593,13 +7522,13 @@ TradeSkillMasterDB = {
 		["i:12620"] = "BOE Items`Armor`Blue",
 		["i:11303"] = "BOE Items`Weapons`Green",
 		["i:10007"] = "BOE Items`Armor`Green",
-		["i:18673"] = "BOE Items`Armor`Blue",
-		["i:15018"] = "BOE Items`Armor`Green",
+		["i:15742"] = "Recipes`Leatherworking",
+		["i:10196"] = "BOE Items`Armor`Green",
 		["i:14601"] = "BOE Items`Armor`Green",
 		["i:8286"] = "BOE Items`Armor`Green",
-		["i:15742"] = "Recipes`Leatherworking",
+		["i:18673"] = "BOE Items`Armor`Blue",
 		["i:9802"] = "BOE Items`Armor`Green",
-		["i:10196"] = "BOE Items`Armor`Green",
+		["i:15018"] = "BOE Items`Armor`Green",
 		["i:2280"] = "BOE Items`Weapons`Green",
 		["i:10145"] = "BOE Items`Armor`Green",
 		["i:4354"] = "Recipes`Tailoring",
@@ -7608,21 +7537,21 @@ TradeSkillMasterDB = {
 		["i:5180"] = "BOE Items`Armor`Green",
 		["i:16671"] = "BOE Items`Armor`Blue",
 		["i:10092"] = "BOE Items`Armor`Green",
-		["i:9488"] = "BOE Items`Weapons`Blue",
+		["i:10105"] = "BOE Items`Armor`Green",
 		["i:13112"] = "BOE Items`Armor`Blue",
 		["i:9820"] = "BOE Items`Armor`Green",
-		["i:9298"] = "Recipes`Alchemy",
+		["i:10172"] = "BOE Items`Armor`Green",
 		["i:15523"] = "BOE Items`Armor`Green",
 		["i:14228"] = "BOE Items`Armor`Green",
 		["i:3041"] = "BOE Items`Weapons`Green",
-		["i:10105"] = "BOE Items`Armor`Green",
+		["i:9488"] = "BOE Items`Weapons`Blue",
 		["i:14474"] = "Recipes`Tailoring",
 		["i:19052"] = "BOE Items`Armor`Blue",
 		["i:5071"] = "BOE Items`Weapons`Green",
-		["i:10172"] = "BOE Items`Armor`Green",
-		["i:8188"] = "BOE Items`Weapons`Green",
+		["i:9298"] = "Recipes`Alchemy",
+		["i:15486"] = "BOE Items`Armor`Green",
 		["i:4777"] = "BOE Items`Weapons`Green",
-		["i:15295"] = "BOE Items`Weapons`Green",
+		["i:6540"] = "BOE Items`Armor`Green",
 		["i:16806"] = "BOE Items`Armor`Purple",
 		["i:24101"] = "Class Books`Druid",
 		["i:10230"] = "BOE Items`Armor`Green",
@@ -7631,38 +7560,38 @@ TradeSkillMasterDB = {
 		["i:10098"] = "BOE Items`Armor`Green",
 		["i:6661"] = "Recipes`Cooking",
 		["i:12001"] = "BOE Items`Armor`Green",
-		["i:15486"] = "BOE Items`Armor`Green",
-		["i:6540"] = "BOE Items`Armor`Green",
+		["i:8188"] = "BOE Items`Weapons`Green",
+		["i:15295"] = "BOE Items`Weapons`Green",
 		["i:1394"] = "BOE Items`Weapons`Green",
 		["i:15322"] = "BOE Items`Weapons`Green",
 		["i:10584"] = "BOE Items`Armor`Blue",
 		["i:15255"] = "BOE Items`Weapons`Green",
 		["i:10176"] = "BOE Items`Armor`Green",
-		["i:6239"] = "BOE Items`Armor`Green",
+		["i:4820"] = "BOE Items`Armor`Green",
 		["i:4571"] = "BOE Items`Weapons`Green",
 		["i:1933"] = "BOE Items`Weapons`Green",
-		["i:4820"] = "BOE Items`Armor`Green",
+		["i:6239"] = "BOE Items`Armor`Green",
 		["i:2167"] = "BOE Items`Armor`Green",
 		["i:15542"] = "BOE Items`Armor`Green",
 		["i:15359"] = "BOE Items`Armor`Green",
 		["i:8348"] = "BOE Items`Armor`Blue",
-		["i:14108"] = "BOE Items`Armor`Green",
+		["i:4090"] = "BOE Items`Weapons`Blue",
 		["i:4383"] = "BOE Items`Weapons`Green",
 		["i:15602"] = "BOE Items`Armor`Green",
 		["i:6552"] = "BOE Items`Armor`Green",
 		["i:20755"] = "Recipes`Enchanting",
-		["i:4090"] = "BOE Items`Weapons`Blue",
+		["i:14108"] = "BOE Items`Armor`Green",
 		["i:11084"] = "Materials`Enchanting",
 		["i:6892"] = "Recipes`Vendor",
 		["i:14671"] = "BOE Items`Armor`Green",
-		["i:11974"] = "BOE Items`Armor`Green",
+		["i:15981"] = "BOE Items`Armor`Green",
 		["i:7331"] = "BOE Items`Armor`Green",
 		["i:13095"] = "BOE Items`Armor`Blue",
 		["i:16792"] = "BOE Items`Weapons`Green",
 		["i:2977"] = "BOE Items`Armor`Green",
 		["i:10206"] = "BOE Items`Armor`Green",
 		["i:15630"] = "BOE Items`Armor`Green",
-		["i:15981"] = "BOE Items`Armor`Green",
+		["i:11974"] = "BOE Items`Armor`Green",
 		["i:4765"] = "BOE Items`Weapons`Green",
 		["i:6561"] = "BOE Items`Armor`Green",
 		["i:8159"] = "BOE Items`Armor`Green",
@@ -7674,15 +7603,15 @@ TradeSkillMasterDB = {
 		["i:10313"] = "Recipes`Tailoring",
 		["i:3856"] = "BOE Items`Weapons`Green",
 		["i:16664"] = "BOE Items`Armor`Green",
-		["i:14241"] = "BOE Items`Armor`Green",
+		["i:15150"] = "BOE Items`Armor`Green",
 		["i:10300"] = "Recipes`Tailoring",
 		["i:14864"] = "BOE Items`Armor`Green",
-		["i:14218"] = "BOE Items`Armor`Green",
+		["i:6587"] = "BOE Items`Armor`Green`Level 19 BiS",
 		["i:8128"] = "BOE Items`Armor`Green",
-		["i:5256"] = "BOE Items`Weapons`Green",
 		["i:14232"] = "BOE Items`Armor`Green",
-		["i:8345"] = "BOE Items`Armor`Blue",
 		["i:16223"] = "Recipes`Enchanting",
+		["i:8345"] = "BOE Items`Armor`Blue",
+		["i:7995"] = "Recipes`Vendor`Valuable",
 		["i:12790"] = "BOE Items`Weapons`Blue",
 		["i:7980"] = "Recipes`Blacksmithing",
 		["i:14415"] = "BOE Items`Armor`Green",
@@ -7693,34 +7622,34 @@ TradeSkillMasterDB = {
 		["i:12164"] = "Recipes`Vendor",
 		["i:15173"] = "BOE Items`Armor`Green",
 		["i:10072"] = "BOE Items`Armor`Green",
-		["i:3223"] = "BOE Items`Weapons`Green",
+		["i:7463"] = "BOE Items`Armor`Green",
 		["i:14791"] = "BOE Items`Armor`Green",
 		["i:4055"] = "BOE Items`Armor`Green",
-		["i:7463"] = "BOE Items`Armor`Green",
+		["i:3223"] = "BOE Items`Weapons`Green",
 		["i:7541"] = "BOE Items`Armor`Green",
 		["i:10100"] = "BOE Items`Armor`Green",
 		["i:2981"] = "BOE Items`Armor`Green",
 		["i:14246"] = "BOE Items`Armor`Green",
-		["i:12017"] = "BOE Items`Armor`Green",
+		["i:14933"] = "BOE Items`Armor`Green",
 		["i:7446"] = "BOE Items`Armor`Green",
 		["i:7939"] = "BOE Items`Armor`Blue",
 		["i:9777"] = "BOE Items`Armor`Green",
 		["i:4065"] = "BOE Items`Armor`Green",
 		["i:15263"] = "BOE Items`Weapons`Green",
-		["i:12239"] = "Recipes`Vendor`Valuable",
+		["i:3490"] = "BOE Items`Weapons`Green",
 		["i:2982"] = "BOE Items`Armor`Green",
 		["i:6396"] = "BOE Items`Armor`Green",
 		["i:6327"] = "BOE Items`Weapons`Blue",
-		["i:3490"] = "BOE Items`Weapons`Green",
+		["i:12239"] = "Recipes`Vendor`Valuable",
 		["i:14793"] = "BOE Items`Armor`Green",
 		["i:20655"] = "BOE Items`Armor`Green",
 		["i:12797"] = "BOE Items`Weapons`Blue",
 		["i:2819"] = "BOE Items`Weapons`Green",
-		["i:13493"] = "Recipes`Alchemy",
-		["i:11991"] = "BOE Items`Armor`Green",
-		["i:7554"] = "BOE Items`Armor`Green",
 		["i:13492"] = "Recipes`Alchemy",
+		["i:11991"] = "BOE Items`Armor`Green",
 		["i:9874"] = "BOE Items`Armor`Green",
+		["i:13493"] = "Recipes`Alchemy",
+		["i:7554"] = "BOE Items`Armor`Green",
 		["i:9814:1188"] = "BOE Items`Armor`Green",
 		["i:5011"] = "BOE Items`Armor`Green",
 		["i:3192"] = "BOE Items`Weapons`Green",
@@ -7730,13 +7659,13 @@ TradeSkillMasterDB = {
 		["i:3173"] = "Materials`Cooking",
 		["i:8134"] = "BOE Items`Armor`Green",
 		["i:13871"] = "BOE Items`Armor`Green",
-		["i:10121"] = "BOE Items`Armor`Green",
-		["i:15170"] = "BOE Items`Armor`Green",
-		["i:3492"] = "BOE Items`Weapons`Green",
 		["i:6417"] = "BOE Items`Armor`Green",
+		["i:15170"] = "BOE Items`Armor`Green",
+		["i:6580"] = "BOE Items`Armor`Green",
+		["i:10121"] = "BOE Items`Armor`Green",
 		["i:8215"] = "BOE Items`Armor`Green",
 		["i:10109"] = "BOE Items`Armor`Green",
-		["i:6580"] = "BOE Items`Armor`Green",
+		["i:3492"] = "BOE Items`Weapons`Green",
 		["i:16684"] = "BOE Items`Armor`Blue",
 		["i:2254"] = "BOE Items`Weapons`Green",
 		["i:3288"] = "BOE Items`Armor`Green",
@@ -7761,9 +7690,9 @@ TradeSkillMasterDB = {
 		["i:14045"] = "BOE Items`Armor`Green",
 		["i:8130"] = "BOE Items`Armor`Green",
 		["i:9927"] = "BOE Items`Armor`Green",
+		["i:12017"] = "BOE Items`Armor`Green",
 		["i:2565"] = "BOE Items`Armor`Blue",
 		["i:6387"] = "BOE Items`Armor`Green",
-		["i:14933"] = "BOE Items`Armor`Green",
 		["i:4369"] = "BOE Items`Weapons`Green",
 		["i:10167"] = "BOE Items`Armor`Green",
 		["i:10325"] = "Recipes`Vendor`Valuable",
@@ -7774,11 +7703,11 @@ TradeSkillMasterDB = {
 		["i:20408"] = "BOE Items`Armor`Green",
 		["i:14369"] = "BOE Items`Armor`Green",
 		["i:12250"] = "BOE Items`Weapons`Green",
+		["i:5256"] = "BOE Items`Weapons`Green",
 		["i:2821"] = "BOE Items`Weapons`Green",
-		["i:7995"] = "Recipes`Vendor`Valuable",
-		["i:15150"] = "BOE Items`Armor`Green",
+		["i:14218"] = "BOE Items`Armor`Green",
 		["i:2098"] = "BOE Items`Weapons`Blue",
-		["i:6587"] = "BOE Items`Armor`Green`Level 19 BiS",
+		["i:14241"] = "BOE Items`Armor`Green",
 		["i:1300"] = "BOE Items`Weapons`Green",
 		["i:7474"] = "BOE Items`Armor`Green",
 		["i:754"] = "BOE Items`Weapons`Blue",
@@ -8693,8 +8622,8 @@ TradeSkillMasterDB = {
 			["searchType"] = "postItems",
 		}, -- [39]
 		{
-			["searchType"] = "postItems",
 			["lastSearch"] = 1597830946,
+			["searchType"] = "postItems",
 			["filter"] = "i:811",
 		}, -- [40]
 	},

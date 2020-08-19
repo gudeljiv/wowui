@@ -22,8 +22,6 @@ VER 3 0000000000000007 "MAGE FOOD" "136173"
 /use [nocombat]item:5349
 END
 VER 3 0000000000000002 "MOVE" "Ability_Ambush."
-/run RangeDisplayMainFrame_playertarget:SetPoint("CENTER", UIParent, "CENTER", 0, 0)
-/run RangeDisplayMainFrame_mouseover:SetPoint("CENTER", UIParent, "CENTER", 0, -35)
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 #showtooltip item:3771

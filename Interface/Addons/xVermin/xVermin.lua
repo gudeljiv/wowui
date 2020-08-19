@@ -197,8 +197,29 @@ f:SetScript(
 		end
 
 		-------------------------------------------
-		-- right action bars
+		-- action bars
 		-------------------------------------------
+
+		MainMenuExpBar:Hide()
+		MainMenuExpBar:HookScript(
+			"OnShow",
+			function(self)
+				self:Hide()
+			end
+		)
+		ReputationWatchBar:Hide()
+		ReputationWatchBar:HookScript(
+			"OnShow",
+			function(self)
+				self:Hide()
+			end
+		)
+
+		MultiBarBottomLeft:ClearAllPoints()
+		MultiBarBottomLeft:SetPoint("BOTTOM", MainMenuBar, "TOP", 0, -5)
+		MultiBarBottomLeft.SetPoint = function()
+		end
+
 		MultiBarRightButton1:ClearAllPoints()
 		MultiBarRightButton1:SetPoint("LEFT", CustomContainer_1, "RIGHT", 5, 2)
 		MultiBarRightButton1.ClearAllPoints = function()
