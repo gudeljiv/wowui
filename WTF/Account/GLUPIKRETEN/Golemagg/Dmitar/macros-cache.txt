@@ -1,5 +1,6 @@
 VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
-#showtooltip Smite
+#showtooltip
 /startattack
 /cast Smite
+/cast Berserking
 END

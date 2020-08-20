@@ -4,6 +4,7 @@ EavesDropStatsDB = {
 		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
 		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
+		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
 	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {
@@ -418,6 +419,56 @@ EavesDropStatsDB = {
 						[-2] = {
 							["time"] = "|cffffffff07/24/20 12:22:46|r\n|Hunit:Player-4465-01CE7466:Mxyzptlk|hMxyzptlk|h suffers |cffff13131|r |cffff1313Nature|r damage from |Hunit:Creature-0-4448-0-158-1504-00001AACA2:Young Night Web Spider|hYoung Night Web Spider's|h |Hspell:0:0:SPELL_PERIODIC_DAMAGE|h|cffff1313Weak Poison|r|h.",
 							["amount"] = 1,
+						},
+						[2] = {
+						},
+					},
+				},
+			},
+		},
+		["Jaroslav - Golemagg"] = {
+			{
+				["heal"] = {
+					["Healing Touch"] = {
+						[-2] = {
+							["time"] = "|cffffffff08/20/20 06:59:52|r\n|Hunit:Player-4465-01D553C4:Jaroslav|hJaroslav's|h |Hspell:0:0:SPELL_HEAL|h|cffffffffHealing Touch|r|h heals |Hunit:Player-4465-01D553C4:Jaroslav|hJaroslav|h for |cffffffff0|r.(42 Overhealed)",
+							["amount"] = 42,
+						},
+						[2] = {
+							["time"] = "|cffffffff08/20/20 06:59:48|r\n|Hunit:Player-4465-01D553C4:Jaroslav|hJaroslav's|h |Hspell:0:0:SPELL_HEAL|h|cffffffffHealing Touch|r|h heals |Hunit:Player-4465-01D553C4:Jaroslav|hJaroslav|h for |cffffffff0|r.(67 Overhealed) (Critical)",
+							["amount"] = 67,
+						},
+						["icon"] = 136041,
+					},
+				},
+				["hit"] = {
+					["Wrath"] = {
+						[-2] = {
+							["time"] = "|cffffffff08/20/20 06:59:24|r\n|Hunit:Player-4465-01D553C4:Jaroslav|hJaroslav's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWrath|r|h hits |Hunit:Creature-0-4447-1-231-2955-00003E89B0:Plainstrider|hPlainstrider|h for |cffffffff15|r |cffffffffNature|r.",
+							["amount"] = 15,
+						},
+						[2] = {
+							["time"] = "|cffffffff08/20/20 06:57:55|r\n|Hunit:Player-4465-01D553C4:Jaroslav|hJaroslav's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWrath|r|h hits |Hunit:Creature-0-4447-1-231-2955-00003EAAC2:Plainstrider|hPlainstrider|h for |cffffffff21|r |cffffffffNature|r.(Critical)",
+							["amount"] = 21,
+						},
+						["icon"] = 136006,
+					},
+					["Melee Attack"] = {
+						[-2] = {
+							["time"] = "|cffffffff08/20/20 06:57:18|r\n|Hunit:Player-4465-01D553C4:Jaroslav|hJaroslav's|h melee swing hits |Hunit:Creature-0-4447-1-231-2955-00003EAAD2:Plainstrider|hPlainstrider|h for |cffffffff11|r |cffffffffPhysical|r.",
+							["amount"] = 11,
+						},
+						[2] = {
+						},
+					},
+				},
+			}, -- [1]
+			[-1] = {
+				["hit"] = {
+					["Physical"] = {
+						[-2] = {
+							["time"] = "|cffffffff08/20/20 06:58:36|r\n|Hunit:Creature-0-4447-1-231-2955-00003EA650:Plainstrider|hPlainstrider's|h melee swing hits |Hunit:Player-4465-01D553C4:Jaroslav|hJaroslav|h for |cffff13133|r |cffff1313Physical|r.",
+							["amount"] = 3,
 						},
 						[2] = {
 						},

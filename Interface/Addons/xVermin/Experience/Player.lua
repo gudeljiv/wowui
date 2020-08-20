@@ -65,14 +65,6 @@ PlayerXP.XPbar.Above:SetWidth(14)
 PlayerXP.XPbar.Above:SetTexture("Interface\\AddOns\\xVermin\\Media\\textureArrowAbove")
 PlayerXP.XPbar.Above:SetPoint("BOTTOM", PlayerXP.XPbar.Below, "TOP", 0, PlayerXP.XPbar:GetHeight())
 
-local function FormatValue(self)
-	if (self >= 10000) then
-		return ("%.1fk"):format(self / 1e3)
-	else
-		return self
-	end
-end
-
 local function UpdateBarVisibility()
 	if UnitLevel("player") < MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] then
 		PlayerXP.XPbar:SetAlpha(0.8)
@@ -83,20 +75,17 @@ end
 
 local function UpdateBarValueAndColor(self, event)
 	if UnitLevel("player") < MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] then
-		if event ~= "UNIT_PET" then
-			CurrentXP = UnitXP("player")
-			MaxXP = UnitXPMax("player")
-			percent = floor((CurrentXP / MaxXP) * 100)
-			_, _, rested = GetRestState()
-			r, g, b = xVermin:ColorGradient(percent / 100, 1, 0, 0, 1, 1, 0, 0, 1, 0)
-			PlayerXP.XPbar:SetMinMaxValues(0, MaxXP)
-			PlayerXP.XPbar:SetValue(CurrentXP)
-			-- PlayerXP.XPbar.Value:SetText(CurrentXP > 0 and FormatValue(CurrentXP) or 0)
-			PlayerXP.XPbar.Value:SetText(CurrentXP)
-			PlayerXP.XPbar.Percent:SetText(percent .. "%")
-			PlayerXP.XPbar.Rested:SetText(rested == 2 and "R" or "")
-			PlayerXP.XPbar:SetStatusBarColor(r, g, b)
-		end
+		CurrentXP = UnitXP("player")
+		MaxXP = UnitXPMax("player")
+		percent = floor((CurrentXP / MaxXP) * 100)
+		_, _, rested = GetRestState()
+		r, g, b = xVermin:ColorGradient(percent / 100, 1, 0, 0, 1, 1, 0, 0, 1, 0)
+		PlayerXP.XPbar:SetMinMaxValues(0, MaxXP)
+		PlayerXP.XPbar:SetValue(CurrentXP)
+		PlayerXP.XPbar.Value:SetText(xVermin:FormatNumber(CurrentXP, ","))
+		PlayerXP.XPbar.Percent:SetText(xVermin:Round(percent) .. "%")
+		PlayerXP.XPbar.Rested:SetText(rested == 2 and "R" or "")
+		PlayerXP.XPbar:SetStatusBarColor(r, g, b)
 	end
 end
 
@@ -107,26 +96,19 @@ end
 
 PlayerXP:RegisterEvent("PLAYER_XP_UPDATE")
 PlayerXP:RegisterEvent("PLAYER_ENTERING_WORLD")
-PlayerXP:RegisterEvent("UNIT_PET")
 PlayerXP:RegisterEvent("PLAYER_LEVEL_UP")
 PlayerXP:SetScript(
 	"OnEvent",
 	function(self, event, arg1)
-		-- if event == "PLAYER_LEVEL_UP" or event == "PLAYER_ENTERING_WORLD" then
-		-- 	C_Timer.After(
-		-- 		3,
-		-- 		function()
-		-- 			UpdateBar()
-		-- 		end
-		-- 	)
-		-- else
-		-- 	UpdateBar()
-		-- end
-		C_Timer.After(
-			1,
-			function()
-				UpdateBar()
-			end
-		)
+		if event == "PLAYER_LEVEL_UP" or event == "PLAYER_ENTERING_WORLD" then
+			C_Timer.After(
+				1,
+				function()
+					UpdateBar()
+				end
+			)
+		else
+			UpdateBar()
+		end
 	end
 )

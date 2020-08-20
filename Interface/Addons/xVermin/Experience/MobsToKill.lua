@@ -185,14 +185,19 @@ local function UpdateExperience(self, event)
 		CurrentXP = NewXP
 
 		-- UIFrameFadeIn(PlayerExpFrame, 1, 0, 1)
-		UIFrameFadeIn(cmtk, 1, 0, 1)
-		UIFrameFadeIn(cpxf, 1, 0, 1)
+		-- UIFrameFadeIn(cmtk, 1, 0, 1)
+		-- UIFrameFadeIn(cpxf, 1, 0, 1)
+		cmtk:Show()
+		cpxf:Show()
 	else
 		-- UIFrameFadeOut(PlayerExpFrame, 1, 1, 0)
 		-- UIFrameFadeOut(PetExpFrame, 1, 1, 0)
-		UIFrameFadeOut(cmtk, 1, 1, 0)
-		UIFrameFadeOut(cmxg, 1, 1, 0)
-		UIFrameFadeOut(cpxf, 1, 1, 0)
+		-- UIFrameFadeOut(cmtk, 1, 1, 0)
+		-- UIFrameFadeOut(cpxf, 1, 1, 0)
+		-- UIFrameFadeOut(cmxg, 1, 1, 0)
+		cmtk:Hide()
+		cpxf:Hide()
+		cmxg:Hide()
 	end
 end
 

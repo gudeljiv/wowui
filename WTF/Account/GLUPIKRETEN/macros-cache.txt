@@ -4,13 +4,13 @@ VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:159
+/use [nocombat]item:1708
 /castsequence [combat]
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:2070
-/castsequence [combat]
+/use [nocombat]item:3771
+/castsequence [combat]item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929
 END
 VER 3 0000000000000001 "FRAME" "132150"
 /run TargetFrameDebuff1Count:ClearAllPoints()
@@ -22,7 +22,7 @@ VER 3 0000000000000007 "MAGE FOOD" "136173"
 /use [nocombat]item:5349
 END
 VER 3 0000000000000002 "MOVE" "Ability_Ambush."
-/run PlayerXPFrame:SetPoint("BOTTOMLEFT", ChatFrame1, "BOTTOMRIGHT", 5, 15)
+/run print(string.format("%.2f %%", UnitXP("player") / UnitXPMax("player") * 100))
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 #showtooltip item:3771

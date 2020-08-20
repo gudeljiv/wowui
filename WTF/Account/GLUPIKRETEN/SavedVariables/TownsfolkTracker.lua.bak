@@ -1,9 +1,12 @@
 
 TownsfolkTrackerDB = {
 	["profileKeys"] = {
-		["Mxzq - Golemagg"] = "Default",
-		["Augustin - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
+		["Jaroslav - Golemagg"] = "Default",
+		["Augustin - Golemagg"] = "Default",
+		["Mxzq - Golemagg"] = "Default",
+		["Dmitar - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

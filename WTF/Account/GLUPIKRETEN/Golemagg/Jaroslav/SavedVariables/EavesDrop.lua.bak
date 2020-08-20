@@ -2,6 +2,7 @@
 EavesDropStatsDB = {
 	["profileKeys"] = {
 		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
+		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
 		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
 		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
 	},
@@ -172,6 +173,8 @@ EavesDropStatsDB = {
 					},
 				},
 			},
+		},
+		["Jaroslav - Golemagg"] = {
 		},
 		["Mxyzptlk - Golemagg"] = {
 			{

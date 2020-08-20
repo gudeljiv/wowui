@@ -1,48 +1,5 @@
 local _, xVermin = ...
 
-function xVermin:ColorGradient(perc, ...)
-	if perc >= 1 then
-		r, g, b = select(select("#", ...) - 2, ...)
-		return r, g, b
-	elseif perc <= 0 then
-		r, g, b = ...
-		return r, g, b
-	end
-
-	num = select("#", ...) / 3
-	segment, relperc = math.modf(perc * (num - 1))
-	r1, g1, b1, r2, g2, b2 = select((segment * 3) + 1, ...)
-	return r1 + (r2 - r1) * relperc, g1 + (g2 - g1) * relperc, b1 + (b2 - b1) * relperc
-end
-
-SLASH_RELOAD1 = "/rl"
-SlashCmdList["RELOAD"] = function(msg)
-	ReloadUI()
-end
-
-local frame = CreateFrame("Frame", "CVarSet")
-frame:RegisterEvent("PLAYER_ENTERING_WORLD")
-frame:SetScript(
-	"OnEvent",
-	function(self, event, ...)
-		SetCVar("autoQuestWatch", 0)
-		SetCVar("autoQuestProgress", 0)
-		SetCVar("instantQuestText", 1)
-		SetCVar("nameplateMaxDistance", 80)
-		SetCVar("ffxGlow", "1")
-		SetCVar("ffxDeath", "0")
-		SetCVar("ffxNether", "0")
-		SetCVar("violenceLevel", "5")
-		SetCVar("cameraDistanceMaxZoomFactor", 4.0)
-		SetCVar("chatClassColorOverride", 0)
-		SetCVar("ShowClassColorInFriendlyNameplate", 1)
-		SetCVar("scriptErrors", "1")
-		SetCVar("alwaysShowActionBars", "1")
-	end
-)
-
-RAID_CLASS_COLORS["SHAMAN"] = {r = 050 / 255, g = 111 / 255, b = 255 / 255, colorStr = "ff326fff"}
-
 local f = CreateFrame("Frame")
 f:SetScript(
 	"OnEvent",

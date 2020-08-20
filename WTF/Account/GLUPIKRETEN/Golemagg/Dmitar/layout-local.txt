@@ -3,7 +3,7 @@ Frame: EavesDropFrame
 FrameLevel: 1
 Anchor: RIGHT
 X: -29
-Y: 167
+Y: 187
 W: 154
 H: 322
 Frame: PlayerFrame
@@ -23,8 +23,8 @@ H: 30
 Frame: PetActionButton1
 FrameLevel: 3
 Anchor: BOTTOM
-X: -168
-Y: 142
+X: -170
+Y: 133
 W: 30
 H: 30
 Frame: ScriptErrorsFrame
@@ -55,13 +55,6 @@ X: 91
 Y: -74
 W: 500
 H: 478
-Frame: TargetFrame
-FrameLevel: 1
-Anchor: CENTER
-X: 250
-Y: -96
-W: 232
-H: 100
 Frame: QuestFrame
 FrameLevel: 1
 Anchor: TOPLEFT
@@ -97,6 +90,13 @@ X: 243
 Y: -107
 W: 50
 H: 50
+Frame: TargetFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 250
+Y: -96
+W: 232
+H: 100
 Frame: GameMenuFrame
 FrameLevel: 1
 Anchor: CENTER

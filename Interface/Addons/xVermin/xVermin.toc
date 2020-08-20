@@ -4,6 +4,7 @@
 ## Version: 54000
 
 Config.lua
+Core.lua
 
 Frames/CharacterFrame.lua
 Frames/CustomContainers.lua
