@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 1960,
 	["lastSanitation"] = 3,
-	["session"] = 1953,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -173,8 +173,8 @@ BugGrabberDB = {
 		}, -- [21]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["session"] = 1336,
 			["time"] = "2020/07/26 13:26:58",
+			["session"] = 1336,
 			["counter"] = 2,
 		}, -- [22]
 		{
@@ -554,8 +554,8 @@ BugGrabberDB = {
 		}, -- [69]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["time"] = "2020/07/27 20:37:46",
 			["session"] = 1423,
+			["time"] = "2020/07/27 20:37:46",
 			["counter"] = 4,
 		}, -- [70]
 		{
@@ -820,8 +820,8 @@ BugGrabberDB = {
 		}, -- [103]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["time"] = "2020/08/02 10:06:15",
 			["session"] = 1605,
+			["time"] = "2020/08/02 10:06:15",
 			["counter"] = 3,
 		}, -- [104]
 		{
@@ -961,8 +961,8 @@ BugGrabberDB = {
 		}, -- [121]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
-			["session"] = 1654,
 			["time"] = "2020/08/02 20:13:03",
+			["session"] = 1654,
 			["counter"] = 3,
 		}, -- [122]
 		{
@@ -1327,8 +1327,8 @@ BugGrabberDB = {
 		}, -- [167]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["session"] = 1843,
 			["time"] = "2020/08/13 21:31:07",
+			["session"] = 1843,
 			["counter"] = 6,
 		}, -- [168]
 		{
@@ -1363,8 +1363,8 @@ BugGrabberDB = {
 		}, -- [172]
 		{
 			["message"] = "(null)",
-			["time"] = "2020/07/24 16:00:06",
 			["session"] = 1885,
+			["time"] = "2020/07/24 16:00:06",
 			["counter"] = 63,
 		}, -- [173]
 		{
@@ -1455,8 +1455,8 @@ BugGrabberDB = {
 		}, -- [184]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Experience.lua",
-			["session"] = 1943,
 			["time"] = "2020/08/19 21:35:15",
+			["session"] = 1943,
 			["counter"] = 6,
 		}, -- [185]
 		{
@@ -1467,5 +1467,21 @@ BugGrabberDB = {
 			["session"] = 1945,
 			["counter"] = 5,
 		}, -- [186]
+		{
+			["message"] = "[string \"print(UnitMaxXP(\"player\"))\"]:1: attempt to call global 'UnitMaxXP' (a nil value)",
+			["time"] = "2020/08/20 14:24:17",
+			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = nil\n(*temporary) = \"player\"\n(*temporary) = \"attempt to call global 'UnitMaxXP' (a nil value)\"\n",
+			["stack"] = "[string \"print(UnitMaxXP(\"player\"))\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 1955,
+			["counter"] = 1,
+		}, -- [187]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Experience/Player.lua:82: attempt to perform arithmetic on global 'MaxXP' (a nil value)",
+			["time"] = "2020/08/20 14:33:13",
+			["locals"] = "self = nil\nevent = nil\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = 2937\n(*temporary) = nil\n(*temporary) = 0\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to perform arithmetic on global 'MaxXP' (a nil value)\"\n_ = \"xVermin\"\nxVermin = <table> {\n Config = <table> {\n }\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\xVermin.lua:3\n}\nPlayerXP = PlayerXPFrame {\n 0 = <userdata>\n XPbar = PlayerXPFrameStatusBar {\n }\n}\nFormatValue = <function> defined @Interface\\AddOns\\xVermin\\Experience/Player.lua:62\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Experience/Player.lua:82: in function <Interface\\AddOns\\xVermin\\Experience/Player.lua:78>\nInterface\\AddOns\\xVermin\\Experience/Player.lua:96: in function <Interface\\AddOns\\xVermin\\Experience/Player.lua:94>\nInterface\\AddOns\\xVermin\\Experience/Player.lua:115: in function <Interface\\AddOns\\xVermin\\Experience/Player.lua:105>",
+			["session"] = 1960,
+			["counter"] = 1,
+		}, -- [188]
 	},
 }

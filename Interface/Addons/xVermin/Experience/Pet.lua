@@ -14,18 +14,24 @@ PetXP.XPbar = CreateFrame("StatusBar", "PetXPFrameStatusBar", UIParent)
 PetXP.XPbar:SetScale(1)
 PetXP.XPbar:SetSize(size * scale, 3)
 PetXP.XPbar:SetPoint("CENTER", PetXP, 0, -23)
-PetXP.XPbar:SetStatusBarTexture("Interface\\AddOns\\nPower\\media\\statusbarTexture")
+PetXP.XPbar:SetStatusBarTexture("Interface\\AddOns\\xVermin\\Media\\statusbarTexture")
 PetXP.XPbar:SetAlpha(0)
 
 PetXP.XPbar.Value = PetXP.XPbar:CreateFontString(nil, "ARTWORK")
-PetXP.XPbar.Value:SetFont("Fonts\\ARIALN.ttf", 18, "THINOUTLINE")
+PetXP.XPbar.Value:SetFont("Fonts\\ARIALN.ttf", 14, "THINOUTLINE")
 PetXP.XPbar.Value:SetShadowOffset(0, 0)
-PetXP.XPbar.Value:SetPoint("CENTER", PetXP.XPbar, 0, 0)
+PetXP.XPbar.Value:SetPoint("LEFT", PetXP.XPbar, "LEFT", 2, 0)
 PetXP.XPbar.Value:SetVertexColor(1, 1, 1)
+
+PetXP.XPbar.Percent = PetXP.XPbar:CreateFontString(nil, "ARTWORK")
+PetXP.XPbar.Percent:SetFont("Fonts\\ARIALN.ttf", 18, "THINOUTLINE")
+PetXP.XPbar.Percent:SetShadowOffset(0, 0)
+PetXP.XPbar.Percent:SetPoint("CENTER", PetXP.XPbar, 0, 0)
+PetXP.XPbar.Percent:SetVertexColor(1, 1, 1)
 
 PetXP.XPbar.Background = PetXP.XPbar:CreateTexture(nil, "BACKGROUND")
 PetXP.XPbar.Background:SetAllPoints(PetXP.XPbar)
-PetXP.XPbar.Background:SetTexture("Interface\\AddOns\\nPower\\media\\statusbarTexture")
+PetXP.XPbar.Background:SetTexture("Interface\\AddOns\\xVermin\\Media\\statusbarTexture")
 PetXP.XPbar.Background:SetVertexColor(0.25, 0.25, 0.25, 1)
 
 PetXP.XPbar.BackgroundShadow = CreateFrame("Frame", nil, PetXP.XPbar)
@@ -35,7 +41,7 @@ PetXP.XPbar.BackgroundShadow:SetPoint("BOTTOMRIGHT", 4, -4)
 PetXP.XPbar.BackgroundShadow:SetBackdrop(
 	{
 		BgFile = "Interface\\ChatFrame\\ChatFrameBackground",
-		edgeFile = "Interface\\Addons\\nPower\\media\\textureGlow",
+		edgeFile = "Interface\\AddOns\\xVermin\\Media\\textureGlow",
 		edgeSize = 4,
 		insets = {left = 3, right = 3, top = 3, bottom = 3}
 	}
@@ -46,12 +52,12 @@ PetXP.XPbar.BackgroundShadow:SetBackdropBorderColor(0, 0, 0)
 PetXP.XPbar.Below = PetXP.XPbar:CreateTexture(nil, "BACKGROUND")
 PetXP.XPbar.Below:SetHeight(14)
 PetXP.XPbar.Below:SetWidth(14)
-PetXP.XPbar.Below:SetTexture("Interface\\AddOns\\nPower\\media\\textureArrowBelow")
+PetXP.XPbar.Below:SetTexture("Interface\\AddOns\\xVermin\\Media\\textureArrowBelow")
 
 PetXP.XPbar.Above = PetXP.XPbar:CreateTexture(nil, "BACKGROUND")
 PetXP.XPbar.Above:SetHeight(14)
 PetXP.XPbar.Above:SetWidth(14)
-PetXP.XPbar.Above:SetTexture("Interface\\AddOns\\nPower\\media\\textureArrowAbove")
+PetXP.XPbar.Above:SetTexture("Interface\\AddOns\\xVermin\\Media\\textureArrowAbove")
 PetXP.XPbar.Above:SetPoint("BOTTOM", PetXP.XPbar.Below, "TOP", 0, PetXP.XPbar:GetHeight())
 
 local function FormatValue(self)
@@ -89,7 +95,8 @@ local function UpdateBarValueAndColor(self, event)
 						r, g, b = xVermin:ColorGradient(percent / 100, 1, 0, 0, 1, 1, 0, 0, 1, 0)
 						PetXP.XPbar:SetMinMaxValues(0, MaxXP)
 						PetXP.XPbar:SetValue(CurrentXP)
-						PetXP.XPbar.Value:SetText(CurrentXP > 0 and FormatValue(CurrentXP) or "")
+						PetXP.XPbar.Value:SetText(CurrentXP)
+						PetXP.XPbar.Percent:SetText(percent .. "%")
 						PetXP.XPbar:SetStatusBarColor(r, g, b)
 					end
 				end
@@ -110,15 +117,21 @@ PetXP:RegisterEvent("PLAYER_LEVEL_UP")
 PetXP:SetScript(
 	"OnEvent",
 	function(self, event, arg1)
-		if event == "PLAYER_LEVEL_UP" or event == "PLAYER_ENTERING_WORLD" then
-			C_Timer.After(
-				3,
-				function()
-					UpdateBar()
-				end
-			)
-		else
-			UpdateBar()
-		end
+		-- if event == "PLAYER_LEVEL_UP" or event == "PLAYER_ENTERING_WORLD" then
+		-- 	C_Timer.After(
+		-- 		3,
+		-- 		function()
+		-- 			UpdateBar()
+		-- 		end
+		-- 	)
+		-- else
+		-- 	UpdateBar()
+		-- end
+		C_Timer.After(
+			1,
+			function()
+				UpdateBar()
+			end
+		)
 	end
 )
