@@ -31,8 +31,14 @@ PlayerXP.XPbar.Percent:SetVertexColor(1, 1, 1)
 PlayerXP.XPbar.Rested = PlayerXP.XPbar:CreateFontString(nil, "ARTWORK")
 PlayerXP.XPbar.Rested:SetFont("Fonts\\ARIALN.ttf", 14, "THINOUTLINE")
 PlayerXP.XPbar.Rested:SetShadowOffset(0, 0)
-PlayerXP.XPbar.Rested:SetPoint("RIGHT", PlayerXP.XPbar, "RIGHT", -2, 0)
+PlayerXP.XPbar.Rested:SetPoint("RIGHT", PlayerXP.XPbar, "RIGHT", -2, 5)
 PlayerXP.XPbar.Rested:SetVertexColor(1, 1, 1)
+
+PlayerXP.XPbar.RestedNumber = PlayerXP.XPbar:CreateFontString(nil, "ARTWORK")
+PlayerXP.XPbar.RestedNumber:SetFont("Fonts\\ARIALN.ttf", 10, "THINOUTLINE")
+PlayerXP.XPbar.RestedNumber:SetShadowOffset(0, 0)
+PlayerXP.XPbar.RestedNumber:SetPoint("CENTER", PlayerXP.XPbar.Rested, 0, -10)
+PlayerXP.XPbar.RestedNumber:SetVertexColor(1, 1, 1)
 
 PlayerXP.XPbar.Background = PlayerXP.XPbar:CreateTexture(nil, "BACKGROUND")
 PlayerXP.XPbar.Background:SetAllPoints(PlayerXP.XPbar)
@@ -85,6 +91,7 @@ local function UpdateBarValueAndColor(self, event)
 		PlayerXP.XPbar.Value:SetText(xVermin:FormatNumber(CurrentXP, ","))
 		PlayerXP.XPbar.Percent:SetText(xVermin:Round(percent) .. "%")
 		PlayerXP.XPbar.Rested:SetText(rested == 2 and "R" or "")
+		PlayerXP.XPbar.RestedNumber:SetText(rested == 2 and GetXPExhaustion() or "")
 		PlayerXP.XPbar:SetStatusBarColor(r, g, b)
 	end
 end

@@ -217,8 +217,6 @@ NWBdatabase = {
 						["englishClass"] = "HUNTER",
 						["zanCount"] = 0,
 						["race"] = "Orc",
-						["level"] = 31,
-						["onyCount"] = 1,
 						["buffs"] = {
 							["Warchief's Blessing"] = {
 								["track"] = false,
@@ -235,6 +233,8 @@ NWBdatabase = {
 								["timeLeft"] = -6377,
 							},
 						},
+						["onyCount"] = 1,
+						["level"] = 31,
 					},
 					["Mxys"] = {
 						["rendCount"] = 0,
@@ -242,9 +242,9 @@ NWBdatabase = {
 						["localizedClass"] = "Shaman",
 						["englishClass"] = "SHAMAN",
 						["zanCount"] = 0,
+						["level"] = 3,
 						["buffs"] = {
 						},
-						["level"] = 3,
 						["onyCount"] = 0,
 						["race"] = "Tauren",
 					},
@@ -254,6 +254,7 @@ NWBdatabase = {
 						["localizedClass"] = "Warlock",
 						["englishClass"] = "WARLOCK",
 						["zanCount"] = 0,
+						["level"] = 6,
 						["buffs"] = {
 							["Rallying Cry of the Dragonslayer"] = {
 								["track"] = true,
@@ -263,7 +264,6 @@ NWBdatabase = {
 								["timeLeft"] = 6709,
 							},
 						},
-						["level"] = 6,
 						["onyCount"] = 1,
 						["race"] = "Undead",
 					},
@@ -274,10 +274,10 @@ NWBdatabase = {
 						["englishClass"] = "WARLOCK",
 						["zanCount"] = 0,
 						["race"] = "Orc",
-						["level"] = 1,
-						["onyCount"] = 0,
 						["buffs"] = {
 						},
+						["onyCount"] = 0,
+						["level"] = 1,
 					},
 					["Antun"] = {
 						["rendCount"] = 0,
@@ -285,9 +285,9 @@ NWBdatabase = {
 						["localizedClass"] = "Shaman",
 						["englishClass"] = "SHAMAN",
 						["zanCount"] = 0,
-						["level"] = 1,
 						["buffs"] = {
 						},
+						["level"] = 1,
 						["onyCount"] = 0,
 						["race"] = "Troll",
 					},
@@ -297,9 +297,9 @@ NWBdatabase = {
 						["localizedClass"] = "Mage",
 						["englishClass"] = "MAGE",
 						["zanCount"] = 0,
+						["level"] = 5,
 						["buffs"] = {
 						},
-						["level"] = 5,
 						["onyCount"] = 0,
 						["race"] = "Undead",
 					},
@@ -310,24 +310,24 @@ NWBdatabase = {
 						["englishClass"] = "PRIEST",
 						["zanCount"] = 0,
 						["race"] = "Undead",
+						["level"] = 5,
+						["onyCount"] = 1,
 						["buffs"] = {
 							["Warchief's Blessing"] = {
 								["track"] = false,
 								["type"] = "rend",
 								["setTime"] = 1597926671,
 								["playedCacheSetAt"] = 44815,
-								["timeLeft"] = -267,
+								["timeLeft"] = -591,
 							},
 							["Rallying Cry of the Dragonslayer"] = {
 								["track"] = false,
 								["type"] = "nef",
 								["setTime"] = 1597607736,
 								["playedCacheSetAt"] = 39496,
-								["timeLeft"] = -1986,
+								["timeLeft"] = -2310,
 							},
 						},
-						["onyCount"] = 1,
-						["level"] = 5,
 					},
 					["Augustin"] = {
 						["rendCount"] = 0,
@@ -336,10 +336,10 @@ NWBdatabase = {
 						["englishClass"] = "MAGE",
 						["zanCount"] = 0,
 						["race"] = "Undead",
+						["level"] = 11,
+						["onyCount"] = 0,
 						["buffs"] = {
 						},
-						["onyCount"] = 0,
-						["level"] = 11,
 					},
 					["Dmitar"] = {
 						["rendCount"] = 0,
@@ -347,9 +347,9 @@ NWBdatabase = {
 						["localizedClass"] = "Priest",
 						["englishClass"] = "PRIEST",
 						["zanCount"] = 0,
+						["level"] = 2,
 						["buffs"] = {
 						},
-						["level"] = 2,
 						["onyCount"] = 0,
 						["race"] = "Troll",
 					},
@@ -359,9 +359,9 @@ NWBdatabase = {
 						["localizedClass"] = "Shaman",
 						["englishClass"] = "SHAMAN",
 						["zanCount"] = 0,
+						["level"] = 1,
 						["buffs"] = {
 						},
-						["level"] = 1,
 						["onyCount"] = 0,
 						["race"] = "Troll",
 					},
@@ -371,9 +371,9 @@ NWBdatabase = {
 						["localizedClass"] = "Druid",
 						["englishClass"] = "DRUID",
 						["zanCount"] = 0,
-						["level"] = 1,
 						["buffs"] = {
 						},
+						["level"] = 1,
 						["onyCount"] = 0,
 						["race"] = "Tauren",
 					},
@@ -384,24 +384,24 @@ NWBdatabase = {
 						["englishClass"] = "WARRIOR",
 						["zanCount"] = 0,
 						["race"] = "Orc",
+						["level"] = 27,
+						["onyCount"] = 1,
 						["buffs"] = {
 							["Warchief's Blessing"] = {
 								["track"] = false,
 								["type"] = "rend",
 								["setTime"] = 1595403970,
 								["playedCacheSetAt"] = 89820,
-								["timeLeft"] = -73511,
+								["timeLeft"] = -75969,
 							},
 							["Rallying Cry of the Dragonslayer"] = {
 								["track"] = true,
 								["type"] = "nef",
 								["setTime"] = 1597949188,
 								["playedCacheSetAt"] = 166920,
-								["timeLeft"] = 7189,
+								["timeLeft"] = 4731,
 							},
 						},
-						["onyCount"] = 1,
-						["level"] = 27,
 					},
 				},
 				["Kinthia-Golemagg"] = {
@@ -561,19 +561,17 @@ NWBdatabase = {
 				},
 				["layers"] = {
 					[72] = {
-						["GUID"] = "Creature-0-4447-1-72-3296-0000BC82E4",
+						["GUID"] = "Creature-0-4447-1-72-3322-00003C82E4",
 						["flower2"] = 0,
 						["rendYell"] = 1598018459,
 						["flower6"] = 1598020397,
 						["flower9"] = 0,
 						["rendYell2"] = 0,
 						["nef1"] = true,
-						["created"] = 1598020517,
+						["created"] = 1598031623,
 						["rend30"] = true,
-						["ony30"] = true,
 						["flower7"] = 1598020451,
 						["onyYell"] = 1598012144,
-						["ony15"] = true,
 						["rend10"] = true,
 						["layerMap"] = {
 							[75] = 1449,
@@ -620,48 +618,49 @@ NWBdatabase = {
 							[90] = 1447,
 						},
 						["onyTimer"] = 1598012159,
-						["nefTimer"] = 1598018748,
+						["rend0"] = true,
 						["rend5"] = true,
-						["flower3"] = 0,
+						["rend15"] = true,
 						["rend1"] = true,
-						["nef15"] = true,
-						["nef5"] = true,
+						["nefTimer"] = 1598018748,
+						["ony5"] = true,
 						["nefYell"] = 1598018733,
 						["flower1"] = 0,
-						["rend0"] = true,
-						["rendTimer"] = 1598018465,
+						["flower3"] = 0,
+						["rendTimer"] = 1598024636,
+						["nef15"] = true,
 						["flower4"] = 0,
-						["lastSeenNPC"] = 1598003734,
 						["onyNpcDied"] = 0,
-						["nefNpcDied"] = 0,
 						["flower8"] = 0,
+						["onyTimerWho"] = "Vending",
 						["nef10"] = true,
 						["onyYell2"] = 0,
-						["ony1"] = true,
+						["flower10"] = 0,
 						["nefYell2"] = 0,
 						["nefTimerWho"] = "Zemix",
-						["flower10"] = 0,
-						["flower5"] = 0,
-						["onyTimerWho"] = "Ruudoz",
-						["rend15"] = true,
+						["ony1"] = true,
+						["flower5"] = 1598031595,
+						["nefNpcDied"] = 0,
+						["lastSeenNPC"] = 1598003734,
 						["nef30"] = true,
 						["ony0"] = true,
-						["ony5"] = true,
+						["nef5"] = true,
 						["nef0"] = true,
 						["ony10"] = true,
 					},
 					[220] = {
 						["GUID"] = "other",
 						["flower10"] = 0,
-						["flower4"] = 0,
-						["flower6"] = 1598022319,
+						["flower4"] = 1598031446,
+						["flower6"] = 1598031789,
 						["flower9"] = 0,
 						["rendYell2"] = 0,
 						["nef1"] = true,
-						["created"] = 1598022690,
+						["created"] = 1598031861,
 						["rend30"] = true,
-						["flower7"] = 0,
-						["onyYell"] = 1598002333,
+						["ony30"] = true,
+						["flower7"] = 1598029060,
+						["onyYell"] = 1598024379,
 						["ony15"] = true,
 						["rend10"] = true,
 						["layerMap"] = {
@@ -708,35 +707,35 @@ NWBdatabase = {
 							[208] = 1429,
 							[240] = 1449,
 						},
-						["onyTimer"] = 1598002352,
+						["onyTimer"] = 1598024394,
 						["ony10"] = true,
-						["rend5"] = true,
-						["nefTimer"] = 1598007685,
-						["rend1"] = true,
-						["ony5"] = true,
-						["nef5"] = true,
-						["nef15"] = true,
-						["flower1"] = 0,
-						["rendYell"] = 1598004944,
-						["rendTimer"] = 1598018464,
 						["ony0"] = true,
-						["flower8"] = 1598021664,
+						["rend0"] = true,
+						["rend1"] = true,
+						["rend15"] = true,
+						["nef5"] = true,
+						["ony1"] = true,
+						["flower1"] = 1598031507,
+						["rend5"] = true,
+						["rendTimer"] = 1598024654,
+						["flower3"] = 1598020425,
+						["ony5"] = true,
 						["onyNpcDied"] = 0,
-						["nefNpcDied"] = 0,
-						["onyTimerWho"] = "Trickd",
+						["rendYell"] = 1598024630,
+						["onyTimerWho"] = "Novembre",
 						["nef10"] = true,
 						["onyYell2"] = 0,
 						["flower2"] = 0,
 						["nefYell2"] = 0,
-						["nefTimerWho"] = "Knifedrill",
-						["lastSeenNPC"] = 1598022940,
-						["flower5"] = 0,
-						["flower3"] = 1598020425,
-						["nefYell"] = 1598007670,
+						["nefTimerWho"] = "Gublag",
+						["nefNpcDied"] = 0,
+						["flower5"] = 1598029594,
+						["lastSeenNPC"] = 1598032661,
+						["flower8"] = 1598021664,
 						["nef30"] = true,
-						["rend15"] = true,
-						["ony1"] = true,
-						["rend0"] = true,
+						["nefYell"] = 1598007670,
+						["nef15"] = true,
+						["nefTimer"] = 1598007685,
 						["nef0"] = true,
 					},
 				},
@@ -1127,7 +1126,6 @@ NWBdatabase = {
 					["guild1"] = 1,
 				},
 				["dragon2"] = 0,
-				["nefNpcDied"] = 0,
 				["Kollegah-Golemagg"] = {
 					["guildCommand"] = 0,
 					["guildBuffDropped"] = 0,
@@ -1139,6 +1137,7 @@ NWBdatabase = {
 					["guildNpcDialogue"] = 0,
 					["guild1"] = 0,
 				},
+				["nefNpcDied"] = 0,
 				["Lightningfax-Golemagg"] = {
 					["guildCommand"] = 1,
 					["guildBuffDropped"] = 1,
@@ -1382,7 +1381,7 @@ NWBdatabase = {
 					["guild1"] = 1,
 				},
 				["dragon3"] = 0,
-				["tuber1"] = 0,
+				["flower9"] = 0,
 				["rendYell2"] = 1597926671,
 				["Hothiros-Golemagg"] = {
 					["guildCommand"] = 1,
@@ -1588,57 +1587,6 @@ NWBdatabase = {
 						[74] = 1455,
 						[90] = 1419,
 					},
-					[29] = {
-						nil, -- [1]
-						nil, -- [2]
-						1422, -- [3]
-						1429, -- [4]
-						1437, -- [5]
-						1416, -- [6]
-						1458, -- [7]
-						1426, -- [8]
-						1453, -- [9]
-						1421, -- [10]
-						1433, -- [11]
-						1434, -- [12]
-						1419, -- [13]
-						1425, -- [14]
-						1418, -- [15]
-						1427, -- [16]
-						1420, -- [17]
-						1435, -- [18]
-						1455, -- [19]
-						1423, -- [20]
-						1424, -- [21]
-						1428, -- [22]
-						1417, -- [23]
-						1431, -- [24]
-						1436, -- [25]
-						1432, -- [26]
-						nil, -- [27]
-						1448, -- [28]
-						nil, -- [29]
-						1450, -- [30]
-						1456, -- [31]
-						1413, -- [32]
-						1449, -- [33]
-						1451, -- [34]
-						1411, -- [35]
-						1445, -- [36]
-						nil, -- [37]
-						1412, -- [38]
-						1439, -- [39]
-						1444, -- [40]
-						1452, -- [41]
-						1447, -- [42]
-						1441, -- [43]
-						1457, -- [44]
-						1442, -- [45]
-						1446, -- [46]
-						1443, -- [47]
-						1440, -- [48]
-						["created"] = 1597736741,
-					},
 					[72] = {
 						[75] = 1449,
 						[91] = 1422,
@@ -1729,6 +1677,57 @@ NWBdatabase = {
 						[240] = 1449,
 						["created"] = 1597950572,
 					},
+					[29] = {
+						nil, -- [1]
+						nil, -- [2]
+						1422, -- [3]
+						1429, -- [4]
+						1437, -- [5]
+						1416, -- [6]
+						1458, -- [7]
+						1426, -- [8]
+						1453, -- [9]
+						1421, -- [10]
+						1433, -- [11]
+						1434, -- [12]
+						1419, -- [13]
+						1425, -- [14]
+						1418, -- [15]
+						1427, -- [16]
+						1420, -- [17]
+						1435, -- [18]
+						1455, -- [19]
+						1423, -- [20]
+						1424, -- [21]
+						1428, -- [22]
+						1417, -- [23]
+						1431, -- [24]
+						1436, -- [25]
+						1432, -- [26]
+						nil, -- [27]
+						1448, -- [28]
+						nil, -- [29]
+						1450, -- [30]
+						1456, -- [31]
+						1413, -- [32]
+						1449, -- [33]
+						1451, -- [34]
+						1411, -- [35]
+						1445, -- [36]
+						nil, -- [37]
+						1412, -- [38]
+						1439, -- [39]
+						1444, -- [40]
+						1452, -- [41]
+						1447, -- [42]
+						1441, -- [43]
+						1457, -- [44]
+						1442, -- [45]
+						1446, -- [46]
+						1443, -- [47]
+						1440, -- [48]
+						["created"] = 1597736741,
+					},
 				},
 				["flower3"] = 0,
 				["Danazol-Golemagg"] = {
@@ -1799,7 +1798,7 @@ NWBdatabase = {
 					["guild1"] = 1,
 				},
 				["flower1"] = 0,
-				["flower9"] = 0,
+				["tuber1"] = 0,
 				["Volhv-Golemagg"] = {
 					["guildCommand"] = 1,
 					["guildBuffDropped"] = 1,
@@ -1894,7 +1893,7 @@ NWBdatabase = {
 					["guildNpcDialogue"] = 0,
 					["guild1"] = 0,
 				},
-				["lastSyncBy"] = "Kartora-Golemagg",
+				["lastSyncBy"] = "Segundoinv-Golemagg",
 				["Brahim-Golemagg"] = {
 					["guildCommand"] = 1,
 					["guildBuffDropped"] = 1,
@@ -1931,39 +1930,34 @@ NWBdatabase = {
 				["F"] = {
 					{
 						["I"] = 72,
-						["H"] = 1598018464,
+						["H"] = 1598024635,
 						["G"] = "r",
 					}, -- [1]
 					{
 						["I"] = 220,
-						["H"] = 1598018464,
+						["H"] = 1598024634,
 						["G"] = "r",
 					}, -- [2]
 					{
 						["I"] = 220,
-						["H"] = 1598004950,
+						["H"] = 1598018465,
 						["G"] = "r",
 					}, -- [3]
 					{
 						["I"] = 72,
-						["H"] = 1597975113,
+						["H"] = 1598018464,
 						["G"] = "r",
 					}, -- [4]
 					{
 						["I"] = 220,
-						["H"] = 1597975112,
+						["H"] = 1598004950,
 						["G"] = "r",
 					}, -- [5]
 					{
-						["I"] = 220,
-						["H"] = 1597961618,
+						["I"] = 72,
+						["H"] = 1598004949,
 						["G"] = "r",
 					}, -- [6]
-					{
-						["I"] = 72,
-						["H"] = 1597961617,
-						["G"] = "r",
-					}, -- [7]
 				},
 				["Xtronal-Golemagg"] = {
 					["guildCommand"] = 1,

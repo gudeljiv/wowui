@@ -2,10 +2,10 @@
 cfg = {
 	["darkFrames"] = true,
 	["noClickFrame"] = false,
-	["bigAuras"] = false,
 	["usePartyFrames"] = false,
+	["bigAuras"] = false,
 	["largeAuraSize"] = 25,
-	["blueShamans"] = true,
+	["whoaTexture"] = true,
 	["classColor"] = true,
 	["useBossFrames"] = false,
 	["smallAuraSize"] = 20,
@@ -13,5 +13,5 @@ cfg = {
 	["reactionColor"] = true,
 	["BlizzardReactionColor"] = true,
 	["styleFont"] = false,
-	["whoaTexture"] = true,
+	["blueShamans"] = true,
 }

@@ -22,8 +22,8 @@ VER 3 0000000000000007 "MAGE FOOD" "136173"
 /use [nocombat]item:5349
 END
 VER 3 0000000000000002 "MOVE" "Ability_Ambush."
-/run CastingBarFrame.Text:ClearAllPoints()
-/run CastingBarFrame.Text:SetPoint("CENTER", CastingBarFrame, 0, 2)
+/run ChatFrame1EditBox:ClearAllPoints()
+/run ChatFrame1EditBox:SetPoint("CENTER", UIParent, 0, 0)
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 #showtooltip item:0

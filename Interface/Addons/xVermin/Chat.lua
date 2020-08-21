@@ -115,13 +115,14 @@ local function SetChat()
 	ChatFrame3Tab:Show()
 	ChatFrame3Background:SetAlpha(0.6)
 
-	local frame = FCF_OpenNewWindow("LFG")
-	FCF_SetChatWindowFontSize(nil, frame, 12)
+	local frame = ChatFrame4
+	FCF_SetWindowName(frame, "Looking for Group")
+	FCF_SetChatWindowFontSize(nil, frame, 10)
 	ChatFrame_RemoveAllMessageGroups(frame)
 	ChatFrame4:ClearAllPoints()
 	ChatFrame4:SetClampRectInsets(0, -1, 0, 0)
-	ChatFrame4:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", 3, 7)
-	ChatFrame4:SetHeight(220)
+	ChatFrame4:SetPoint("CENTER", ChatFrame1, 0, 240)
+	ChatFrame4:SetHeight(100)
 	ChatFrame4:SetWidth(chatWidth)
 	ChatFrame4:Show()
 	ChatFrame4Tab:Show()
@@ -164,7 +165,6 @@ local function SetChat()
 
 	ChatFrameChannelButton:Hide()
 	ChatFrameMenuButton:Hide()
-
 	ChatFrame1Tab:Click()
 end
 

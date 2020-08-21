@@ -24,14 +24,15 @@ _detalhes_database = {
 								"Indijanac <Mohikanac>", -- [1]
 							},
 							["colocacao"] = 1,
-							["total"] = 37.006223,
-							["classe"] = "HUNTER",
+							["friendlyfire"] = {
+							},
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.006223,
-							["spec"] = 254,
-							["dps_started"] = false,
 							["end_time"] = 1597517046,
+							["dps_started"] = false,
+							["total"] = 37.006223,
 							["on_hold"] = false,
 							["last_event"] = 1597517029,
 							["nome"] = "Mohikanac",
@@ -41,50 +42,51 @@ _detalhes_database = {
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 1.02749397489995,
+							["last_dps"] = 7.181261685816970e-05,
+							["spec"] = 254,
 							["custom"] = 0,
 							["tipo"] = 1,
 							["damage_taken"] = 402.006223,
 							["start_time"] = 1597517043,
 							["delay"] = 1597517029,
-							["friendlyfire_total"] = 0,
+							["classe"] = "HUNTER",
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
 							["totalabsorbed"] = 0.008772,
 							["damage_from"] = {
 								["Environment (Falling)"] = true,
+								["Environment (Fire)"] = true,
 							},
 							["targets"] = {
 							},
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
+							["tipo"] = 1,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.008772,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["total"] = 0.008772,
 							["serial"] = "Player-4465-00E5831F",
+							["dps_started"] = false,
+							["end_time"] = 1598032323,
+							["total"] = 0.008772,
+							["on_hold"] = false,
+							["nome"] = "Vermin",
+							["spec"] = 71,
+							["grupo"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
 								},
 								["tipo"] = 2,
 							},
-							["nome"] = "Vermin",
-							["spec"] = 71,
-							["grupo"] = true,
-							["tipo"] = 1,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["last_event"] = 0,
-							["damage_taken"] = 369.008772,
-							["start_time"] = 0,
+							["damage_taken"] = 381.008772,
+							["start_time"] = 1598032323,
 							["delay"] = 0,
 							["classe"] = "WARRIOR",
 						}, -- [2]
@@ -100,8 +102,8 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["fight_component"] = true,
 							["friendlyfire_total"] = 0,
+							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
@@ -270,6 +272,42 @@ _detalhes_database = {
 					["tipo"] = 7,
 					["combatId"] = 330,
 					["_ActorTable"] = {
+						{
+							["received"] = 20.006351,
+							["resource"] = 0.006351,
+							["targets"] = {
+								["Vermin"] = 20,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 1,
+							["classe"] = "WARRIOR",
+							["passiveover"] = 0.006351,
+							["total"] = 20.006351,
+							["nome"] = "Vermin",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Bloodrage"] = {
+										["total"] = 20,
+										["id"] = "Bloodrage",
+										["totalover"] = 0,
+										["targets"] = {
+											["Vermin"] = 20,
+										},
+										["counter"] = 11,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["totalover"] = 0.006351,
+							["alternatepower"] = 0.006351,
+							["last_event"] = 1598032322,
+							["tipo"] = 3,
+							["spec"] = 71,
+							["serial"] = "Player-4465-00E5831F",
+							["flag_original"] = 1297,
+						}, -- [1]
 					},
 				}, -- [3]
 				{
@@ -314,9 +352,9 @@ _detalhes_database = {
 							["nome"] = "Indijanac <Mohikanac>",
 							["pets"] = {
 							},
-							["last_event"] = 0,
 							["classe"] = "PET",
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Pet-0-4446-1-34-5828-010032BFBB",
 							["spell_cast"] = {
 								["Growl"] = 2,
@@ -335,21 +373,22 @@ _detalhes_database = {
 					["Mohikanac"] = true,
 					["Vermin"] = true,
 				},
+				["CombatStartedAt"] = 763387.766,
 				["tempo_start"] = 1597517010,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["enemy"] = "Singed Basilisk",
 				["combat_counter"] = 5759,
+				["playing_solo"] = true,
 				["totals"] = {
-					172.962201, -- [1]
+					172.817347, -- [1]
 					0, -- [2]
 					{
-						0, -- [1]
-						[0] = 0,
+						19.996337, -- [1]
+						[0] = -0.00569400000000542,
 						["alternatepower"] = 0,
-						[3] = 0,
+						[3] = -0.00909200000000254,
 						[6] = 0,
 					}, -- [3]
 					{
@@ -366,91 +405,14 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 				},
 				["player_last_events"] = {
-					["Mohikanac"] = {
-						{
-							true, -- [1]
-							"Falling", -- [2]
-							402, -- [3]
-							1597517141.698, -- [4]
-							983, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [1]
-						{
-						}, -- [2]
-						{
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 2,
-					},
 					["Vermin"] = {
 						{
 							true, -- [1]
-							"Falling", -- [2]
-							369, -- [3]
-							1597517142.663, -- [4]
+							"Fire", -- [2]
+							12, -- [3]
+							1598032471.259, -- [4]
 							929, -- [5]
-							"Environment (Falling)", -- [6]
+							"Environment (Fire)", -- [6]
 							nil, -- [7]
 							3, -- [8]
 							false, -- [9]
@@ -521,6 +483,56 @@ _detalhes_database = {
 						["n"] = 2,
 					},
 				},
+				["frags_need_refresh"] = false,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "19:52:03",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Singed Basilisk",
+				["TotalElapsedCombatTime"] = 10.5399999999208,
+				["CombatEndedAt"] = 763398.306,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "20:43:30",
+				["end_time"] = 763398.306,
+				["combat_id"] = 330,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+				},
+				["TimeData"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatSkillCache"] = {
+				},
+				["totals_grupo"] = {
+					0, -- [1]
+					0, -- [2]
+					{
+						20, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["start_time"] = 248081.853,
+				["contra"] = "Singed Basilisk",
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -540,37 +552,439 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
+			}, -- [1]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 330,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1300,
+							["totalabsorbed"] = 0.006223,
+							["damage_from"] = {
+								["Environment (Falling)"] = true,
+							},
+							["targets"] = {
+								["Singed Basilisk"] = 37,
+							},
+							["serial"] = "Player-4465-01820274",
+							["pets"] = {
+								"Indijanac <Mohikanac>", -- [1]
+							},
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.006223,
+							["end_time"] = 1597517046,
+							["dps_started"] = false,
+							["total"] = 37.006223,
+							["on_hold"] = false,
+							["last_event"] = 1597517029,
+							["nome"] = "Mohikanac",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["last_dps"] = 1.02749397489995,
+							["spec"] = 254,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 402.006223,
+							["start_time"] = 1597517043,
+							["delay"] = 1597517029,
+							["classe"] = "HUNTER",
+						}, -- [1]
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.008772,
+							["damage_from"] = {
+								["Environment (Falling)"] = true,
+							},
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["friendlyfire"] = {
+							},
+							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.008772,
+							["serial"] = "Player-4465-00E5831F",
+							["dps_started"] = false,
+							["end_time"] = 1598032323,
+							["total"] = 0.008772,
+							["on_hold"] = false,
+							["nome"] = "Vermin",
+							["spec"] = 71,
+							["grupo"] = true,
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 0,
+							["damage_taken"] = 369.008772,
+							["start_time"] = 1598032323,
+							["delay"] = 0,
+							["classe"] = "WARRIOR",
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.006002,
+							["damage_from"] = {
+								["Indijanac <Mohikanac>"] = true,
+								["Stonetalon Grunt"] = true,
+							},
+							["targets"] = {
+								["Indijanac <Mohikanac>"] = 136,
+							},
+							["pets"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["fight_component"] = true,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 136.006002,
+							["serial"] = "Creature-0-4446-1-34-4042-0000B7FAB3",
+							["dps_started"] = false,
+							["total"] = 136.006002,
+							["end_time"] = 1597517046,
+							["on_hold"] = false,
+							["nome"] = "Singed Basilisk",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 28,
+										["targets"] = {
+											["Indijanac <Mohikanac>"] = 136,
+											["Stonetalon Grunt"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 136,
+										["n_min"] = 26,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["MISS"] = 1,
+										["total"] = 136,
+										["c_max"] = 0,
+										["a_amt"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 5,
+										["spellschool"] = 1,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["last_event"] = 1597517042,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 790.006002,
+							["start_time"] = 1597517034,
+							["delay"] = 1597517030,
+							["monster"] = true,
+						}, -- [3]
+						{
+							["flag_original"] = 4370,
+							["totalabsorbed"] = 0.003563,
+							["damage_from"] = {
+								["Singed Basilisk"] = true,
+							},
+							["targets"] = {
+								["Singed Basilisk"] = 37,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 37.003563,
+							["total"] = 37.003563,
+							["dps_started"] = false,
+							["end_time"] = 1597517046,
+							["serial"] = "Pet-0-4446-1-34-5828-010032BFBB",
+							["ownerName"] = "Mohikanac",
+							["nome"] = "Indijanac <Mohikanac>",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 11,
+										["targets"] = {
+											["Singed Basilisk"] = 21,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 21,
+										["n_min"] = 10,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 21,
+										["c_max"] = 0,
+										["DODGE"] = 1,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 2,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									["Bite"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Singed Basilisk"] = 16,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 16,
+										["n_min"] = 16,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 16,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = "Bite",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire"] = {
+							},
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1597517029,
+							["damage_taken"] = 136.003563,
+							["start_time"] = 1597517043,
+							["delay"] = 1597517029,
+							["classe"] = "PET",
+						}, -- [4]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 330,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 330,
+					["_ActorTable"] = {
+						{
+							["received"] = 20.006351,
+							["resource"] = 0.006351,
+							["targets"] = {
+								["Vermin"] = 20,
+							},
+							["pets"] = {
+							},
+							["powertype"] = 1,
+							["classe"] = "WARRIOR",
+							["passiveover"] = 0.006351,
+							["total"] = 20.006351,
+							["nome"] = "Vermin",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Bloodrage"] = {
+										["total"] = 20,
+										["id"] = "Bloodrage",
+										["totalover"] = 0,
+										["targets"] = {
+											["Vermin"] = 20,
+										},
+										["counter"] = 11,
+									},
+								},
+								["tipo"] = 7,
+							},
+							["grupo"] = true,
+							["totalover"] = 0.006351,
+							["alternatepower"] = 0.006351,
+							["last_event"] = 1598032322,
+							["tipo"] = 3,
+							["spec"] = 71,
+							["serial"] = "Player-4465-00E5831F",
+							["flag_original"] = 1297,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 330,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 254,
+							["grupo"] = true,
+							["buff_uptime"] = 36,
+							["nome"] = "Mohikanac",
+							["pets"] = {
+								"Indijanac <Mohikanac>", -- [1]
+							},
+							["tipo"] = 4,
+							["last_event"] = 1597517046,
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Aspect of the Hawk"] = {
+										["appliedamt"] = 1,
+										["targets"] = {
+										},
+										["activedamt"] = 1,
+										["uptime"] = 36,
+										["id"] = "Aspect of the Hawk",
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["serial"] = "Player-4465-01820274",
+							["classe"] = "HUNTER",
+						}, -- [1]
+						{
+							["flag_original"] = 4370,
+							["ownerName"] = "Mohikanac",
+							["nome"] = "Indijanac <Mohikanac>",
+							["pets"] = {
+							},
+							["classe"] = "PET",
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["serial"] = "Pet-0-4446-1-34-5828-010032BFBB",
+							["spell_cast"] = {
+								["Growl"] = 2,
+								["Bite"] = 2,
+							},
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 330,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Mohikanac"] = true,
+					["Vermin"] = true,
+				},
+				["CombatStartedAt"] = 763387.766,
+				["tempo_start"] = 1597517010,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 5759,
+				["playing_solo"] = true,
+				["totals"] = {
+					172.83081, -- [1]
+					0, -- [2]
+					{
+						19.996337, -- [1]
+						[0] = -0.00569400000000542,
+						["alternatepower"] = 0,
+						[3] = -0.003973000000002,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
 				["frags_need_refresh"] = false,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "19:52:03",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Singed Basilisk",
+				["TotalElapsedCombatTime"] = 10.5399999999208,
+				["CombatEndedAt"] = 763398.306,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
 				},
 				["data_inicio"] = "20:43:30",
-				["end_time"] = 248117.869,
+				["end_time"] = 763398.306,
 				["combat_id"] = 330,
-				["instance_type"] = "none",
-				["contra"] = "Singed Basilisk",
-				["cleu_timeline"] = {
-				},
-				["hasSaved"] = true,
 				["spells_cast_timeline"] = {
 				},
-				["data_fim"] = "20:44:06",
+				["frags"] = {
+				},
+				["TimeData"] = {
+				},
 				["cleu_events"] = {
 					["n"] = 1,
 				},
 				["CombatSkillCache"] = {
 				},
-				["frags"] = {
-				},
-				["start_time"] = 248081.853,
-				["TimeData"] = {
-				},
 				["totals_grupo"] = {
 					0, -- [1]
 					0, -- [2]
 					{
-						0, -- [1]
+						20, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
 						[3] = 0,
@@ -587,7 +1001,28 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-			}, -- [1]
+				["start_time"] = 248081.853,
+				["contra"] = "Singed Basilisk",
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Mohikanac"] = 37.006223,
+						}, -- [1]
+					},
+				},
+			}, -- [2]
 			{
 				{
 					["tipo"] = 2,
@@ -829,8 +1264,8 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["fight_component"] = true,
 							["friendlyfire_total"] = 0,
+							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
@@ -838,7 +1273,7 @@ _detalhes_database = {
 							["serial"] = "Creature-0-4446-1-34-4029-00003818EA",
 							["monster"] = true,
 							["end_time"] = 1597516992,
-							["dps_started"] = false,
+							["total"] = 514.008391,
 							["on_hold"] = false,
 							["nome"] = "Blackened Ancient",
 							["spells"] = {
@@ -919,7 +1354,7 @@ _detalhes_database = {
 							["damage_taken"] = 942.008391,
 							["start_time"] = 1597516952,
 							["delay"] = 0,
-							["total"] = 514.008391,
+							["dps_started"] = false,
 						}, -- [2]
 						{
 							["flag_original"] = 4370,
@@ -963,7 +1398,7 @@ _detalhes_database = {
 										["n_dmg"] = 170,
 										["DODGE"] = 2,
 										["n_min"] = 7,
-										["g_dmg"] = 26,
+										["MISS"] = 4,
 										["counter"] = 28,
 										["a_amt"] = 0,
 										["r_amt"] = 0,
@@ -979,8 +1414,8 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["a_dmg"] = 0,
 										["n_amt"] = 15,
-										["MISS"] = 4,
 										["total"] = 276,
+										["g_dmg"] = 26,
 									},
 									["Bite"] = {
 										["c_amt"] = 0,
@@ -1038,8 +1473,8 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["fight_component"] = true,
 							["friendlyfire_total"] = 0,
+							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
@@ -1047,7 +1482,7 @@ _detalhes_database = {
 							["serial"] = "Creature-0-4446-1-34-4036-0001382143",
 							["monster"] = true,
 							["end_time"] = 1597516992,
-							["dps_started"] = false,
+							["total"] = 327.004937,
 							["on_hold"] = false,
 							["nome"] = "Rogue Flame Spirit",
 							["spells"] = {
@@ -1151,7 +1586,7 @@ _detalhes_database = {
 							["damage_taken"] = 602.004937,
 							["start_time"] = 1597516966,
 							["delay"] = 1597516968,
-							["total"] = 327.004937,
+							["dps_started"] = false,
 						}, -- [4]
 					},
 				}, -- [1]
@@ -1235,9 +1670,9 @@ _detalhes_database = {
 							["nome"] = "Indijanac <Mohikanac>",
 							["pets"] = {
 							},
-							["last_event"] = 0,
 							["classe"] = "PET",
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Pet-0-4446-1-34-5828-010032BFBB",
 							["spell_cast"] = {
 								["Growl"] = 8,
@@ -1304,6 +1739,18 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
+				["instance_type"] = "none",
+				["frags_need_refresh"] = true,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "20:42:24",
+				["end_time"] = 248063.517,
+				["cleu_timeline"] = {
+				},
+				["combat_id"] = 329,
+				["contra"] = "Rogue Flame Spirit",
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -1322,18 +1769,6 @@ _detalhes_database = {
 							["Mohikanac"] = 1544.00597,
 						}, -- [1]
 					},
-				},
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:42:24",
-				["end_time"] = 248063.517,
-				["combat_id"] = 329,
-				["instance_type"] = "none",
-				["contra"] = "Rogue Flame Spirit",
-				["cleu_timeline"] = {
 				},
 				["hasSaved"] = true,
 				["spells_cast_timeline"] = {
@@ -1372,7 +1807,7 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-			}, -- [2]
+			}, -- [3]
 			{
 				{
 					["tipo"] = 2,
@@ -1390,8 +1825,8 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["fight_component"] = true,
 							["friendlyfire_total"] = 0,
+							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
@@ -1399,7 +1834,7 @@ _detalhes_database = {
 							["serial"] = "Creature-0-4446-1-34-4037-0000382A72",
 							["monster"] = true,
 							["end_time"] = 1597516927,
-							["dps_started"] = false,
+							["total"] = 192.008818,
 							["on_hold"] = false,
 							["nome"] = "Burning Ravager",
 							["spells"] = {
@@ -1503,7 +1938,7 @@ _detalhes_database = {
 							["damage_taken"] = 651.008818,
 							["start_time"] = 1597516912,
 							["delay"] = 0,
-							["total"] = 192.008818,
+							["dps_started"] = false,
 						}, -- [1]
 						{
 							["flag_original"] = 1300,
@@ -1778,9 +2213,9 @@ _detalhes_database = {
 							["nome"] = "Indijanac <Mohikanac>",
 							["pets"] = {
 							},
-							["last_event"] = 0,
 							["classe"] = "PET",
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Pet-0-4446-1-34-5828-010032BFBB",
 							["spell_cast"] = {
 								["Growl"] = 2,
@@ -1831,6 +2266,18 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
+				["instance_type"] = "none",
+				["frags_need_refresh"] = true,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "20:41:52",
+				["end_time"] = 247999.244,
+				["cleu_timeline"] = {
+				},
+				["combat_id"] = 328,
+				["contra"] = "Burning Ravager",
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -1849,18 +2296,6 @@ _detalhes_database = {
 							["Mohikanac"] = 651.008509,
 						}, -- [1]
 					},
-				},
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:41:52",
-				["end_time"] = 247999.244,
-				["combat_id"] = 328,
-				["instance_type"] = "none",
-				["contra"] = "Burning Ravager",
-				["cleu_timeline"] = {
 				},
 				["hasSaved"] = true,
 				["spells_cast_timeline"] = {
@@ -1898,7 +2333,7 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-			}, -- [3]
+			}, -- [4]
 			{
 				{
 					["tipo"] = 2,
@@ -2175,8 +2610,8 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["fight_component"] = true,
 							["friendlyfire_total"] = 0,
+							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
@@ -2184,7 +2619,7 @@ _detalhes_database = {
 							["serial"] = "Creature-0-4446-1-34-4035-0000380AEE",
 							["monster"] = true,
 							["end_time"] = 1597516878,
-							["dps_started"] = false,
+							["total"] = 214.005822,
 							["on_hold"] = false,
 							["nome"] = "Furious Stone Spirit",
 							["spells"] = {
@@ -2260,7 +2695,7 @@ _detalhes_database = {
 							["damage_taken"] = 807.005822,
 							["start_time"] = 1597516859,
 							["delay"] = 0,
-							["total"] = 214.005822,
+							["dps_started"] = false,
 						}, -- [3]
 					},
 				}, -- [1]
@@ -2323,9 +2758,9 @@ _detalhes_database = {
 							["nome"] = "Indijanac <Mohikanac>",
 							["pets"] = {
 							},
-							["last_event"] = 0,
 							["classe"] = "PET",
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Pet-0-4446-1-34-5828-010032BFBB",
 							["spell_cast"] = {
 								["Growl"] = 4,
@@ -2391,6 +2826,18 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
+				["instance_type"] = "none",
+				["frags_need_refresh"] = true,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "20:41:00",
+				["end_time"] = 247950.247,
+				["cleu_timeline"] = {
+				},
+				["combat_id"] = 327,
+				["contra"] = "Furious Stone Spirit",
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -2409,18 +2856,6 @@ _detalhes_database = {
 							["Mohikanac"] = 807.002058,
 						}, -- [1]
 					},
-				},
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:41:00",
-				["end_time"] = 247950.247,
-				["combat_id"] = 327,
-				["instance_type"] = "none",
-				["contra"] = "Furious Stone Spirit",
-				["cleu_timeline"] = {
 				},
 				["hasSaved"] = true,
 				["spells_cast_timeline"] = {
@@ -2458,7 +2893,7 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-			}, -- [4]
+			}, -- [5]
 			{
 				{
 					["tipo"] = 2,
@@ -2585,7 +3020,7 @@ _detalhes_database = {
 							["serial"] = "Creature-0-4446-1-34-4038-0001381B3D",
 							["dps_started"] = false,
 							["end_time"] = 1597516859,
-							["friendlyfire_total"] = 0,
+							["monster"] = true,
 							["on_hold"] = false,
 							["nome"] = "Burning Destroyer",
 							["spells"] = {
@@ -2689,7 +3124,7 @@ _detalhes_database = {
 							["damage_taken"] = 745.00686,
 							["start_time"] = 1597516835,
 							["delay"] = 0,
-							["monster"] = true,
+							["friendlyfire_total"] = 0,
 						}, -- [2]
 						{
 							["flag_original"] = 4370,
@@ -2859,9 +3294,9 @@ _detalhes_database = {
 							["nome"] = "Indijanac <Mohikanac>",
 							["pets"] = {
 							},
-							["last_event"] = 0,
 							["classe"] = "PET",
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Pet-0-4446-1-34-5828-010032BFBB",
 							["spell_cast"] = {
 								["Growl"] = 3,
@@ -2928,6 +3363,18 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
+				["instance_type"] = "none",
+				["frags_need_refresh"] = true,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "20:40:35",
+				["end_time"] = 247920.955,
+				["cleu_timeline"] = {
+				},
+				["combat_id"] = 326,
+				["contra"] = "Burning Destroyer",
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -2946,18 +3393,6 @@ _detalhes_database = {
 							["Mohikanac"] = 745.00217,
 						}, -- [1]
 					},
-				},
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:40:35",
-				["end_time"] = 247920.955,
-				["combat_id"] = 326,
-				["instance_type"] = "none",
-				["contra"] = "Burning Destroyer",
-				["cleu_timeline"] = {
 				},
 				["hasSaved"] = true,
 				["spells_cast_timeline"] = {
@@ -2995,7 +3430,7 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-			}, -- [5]
+			}, -- [6]
 			{
 				{
 					["tipo"] = 2,
@@ -3013,8 +3448,8 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["fight_component"] = true,
 							["friendlyfire_total"] = 0,
+							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
@@ -3022,7 +3457,7 @@ _detalhes_database = {
 							["serial"] = "Creature-0-4446-1-34-4029-0000379726",
 							["monster"] = true,
 							["end_time"] = 1597516813,
-							["dps_started"] = false,
+							["total"] = 254.005228,
 							["on_hold"] = false,
 							["nome"] = "Blackened Ancient",
 							["spells"] = {
@@ -3068,7 +3503,7 @@ _detalhes_database = {
 							["damage_taken"] = 857.005228,
 							["start_time"] = 1597516794,
 							["delay"] = 0,
-							["total"] = 254.005228,
+							["dps_started"] = false,
 						}, -- [1]
 						{
 							["flag_original"] = 1300,
@@ -3376,9 +3811,9 @@ _detalhes_database = {
 							["nome"] = "Indijanac <Mohikanac>",
 							["pets"] = {
 							},
-							["last_event"] = 0,
 							["classe"] = "PET",
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Pet-0-4446-1-34-5828-010032BFBB",
 							["spell_cast"] = {
 								["Growl"] = 3,
@@ -3429,6 +3864,18 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
+				["instance_type"] = "none",
+				["frags_need_refresh"] = true,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "20:39:55",
+				["end_time"] = 247885.465,
+				["cleu_timeline"] = {
+				},
+				["combat_id"] = 325,
+				["contra"] = "Blackened Ancient",
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -3447,18 +3894,6 @@ _detalhes_database = {
 							["Mohikanac"] = 857.002797,
 						}, -- [1]
 					},
-				},
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:39:55",
-				["end_time"] = 247885.465,
-				["combat_id"] = 325,
-				["instance_type"] = "none",
-				["contra"] = "Blackened Ancient",
-				["cleu_timeline"] = {
 				},
 				["hasSaved"] = true,
 				["spells_cast_timeline"] = {
@@ -3496,7 +3931,7 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-			}, -- [6]
+			}, -- [7]
 			{
 				{
 					["tipo"] = 2,
@@ -3523,7 +3958,7 @@ _detalhes_database = {
 							["serial"] = "Creature-0-4446-1-34-4028-0000382015",
 							["dps_started"] = false,
 							["end_time"] = 1597516791,
-							["friendlyfire_total"] = 0,
+							["monster"] = true,
 							["on_hold"] = false,
 							["nome"] = "Charred Ancient",
 							["spells"] = {
@@ -3569,7 +4004,7 @@ _detalhes_database = {
 							["damage_taken"] = 668.005814,
 							["start_time"] = 1597516778,
 							["delay"] = 0,
-							["monster"] = true,
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 1300,
@@ -3876,9 +4311,9 @@ _detalhes_database = {
 							["nome"] = "Indijanac <Mohikanac>",
 							["pets"] = {
 							},
-							["last_event"] = 0,
 							["classe"] = "PET",
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Pet-0-4446-1-34-5828-010032BFBB",
 							["spell_cast"] = {
 								["Bite"] = 2,
@@ -3929,6 +4364,18 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
+				["instance_type"] = "none",
+				["frags_need_refresh"] = true,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "20:39:39",
+				["end_time"] = 247863.318,
+				["cleu_timeline"] = {
+				},
+				["combat_id"] = 324,
+				["contra"] = "Charred Ancient",
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -3947,18 +4394,6 @@ _detalhes_database = {
 							["Mohikanac"] = 668.00709,
 						}, -- [1]
 					},
-				},
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:39:39",
-				["end_time"] = 247863.318,
-				["combat_id"] = 324,
-				["instance_type"] = "none",
-				["contra"] = "Charred Ancient",
-				["cleu_timeline"] = {
 				},
 				["hasSaved"] = true,
 				["spells_cast_timeline"] = {
@@ -3996,7 +4431,7 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-			}, -- [7]
+			}, -- [8]
 			{
 				{
 					["tipo"] = 2,
@@ -4014,8 +4449,8 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["fight_component"] = true,
 							["friendlyfire_total"] = 0,
+							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
@@ -4023,7 +4458,7 @@ _detalhes_database = {
 							["serial"] = "Creature-0-4446-1-34-4041-0001B8297D",
 							["monster"] = true,
 							["end_time"] = 1597516774,
-							["dps_started"] = false,
+							["total"] = 204.004636,
 							["on_hold"] = false,
 							["nome"] = "Scorched Basilisk",
 							["spells"] = {
@@ -4071,7 +4506,7 @@ _detalhes_database = {
 							["damage_taken"] = 949.004636,
 							["start_time"] = 1597516759,
 							["delay"] = 0,
-							["total"] = 204.004636,
+							["dps_started"] = false,
 						}, -- [1]
 						{
 							["flag_original"] = 1300,
@@ -4085,17 +4520,17 @@ _detalhes_database = {
 							["pets"] = {
 								"Indijanac <Mohikanac>", -- [1]
 							},
-							["friendlyfire"] = {
-							},
-							["last_event"] = 1597516778,
 							["classe"] = "HUNTER",
+							["last_event"] = 1597516778,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 743.004888,
 							["serial"] = "Player-4465-01820274",
 							["dps_started"] = false,
 							["total"] = 968.004888,
-							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
 							["on_hold"] = false,
 							["nome"] = "Mohikanac",
 							["spells"] = {
@@ -4378,9 +4813,9 @@ _detalhes_database = {
 							["nome"] = "Indijanac <Mohikanac>",
 							["pets"] = {
 							},
-							["last_event"] = 0,
 							["classe"] = "PET",
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Pet-0-4446-1-34-5828-010032BFBB",
 							["spell_cast"] = {
 								["Growl"] = 2,
@@ -4431,6 +4866,18 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
+				["instance_type"] = "none",
+				["frags_need_refresh"] = true,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "20:39:20",
+				["end_time"] = 247846.287,
+				["cleu_timeline"] = {
+				},
+				["combat_id"] = 323,
+				["contra"] = "Scorched Basilisk",
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -4449,18 +4896,6 @@ _detalhes_database = {
 							["Mohikanac"] = 949.004888,
 						}, -- [1]
 					},
-				},
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:39:20",
-				["end_time"] = 247846.287,
-				["combat_id"] = 323,
-				["instance_type"] = "none",
-				["contra"] = "Scorched Basilisk",
-				["cleu_timeline"] = {
 				},
 				["hasSaved"] = true,
 				["spells_cast_timeline"] = {
@@ -4498,7 +4933,7 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-			}, -- [8]
+			}, -- [9]
 			{
 				{
 					["tipo"] = 2,
@@ -4515,17 +4950,17 @@ _detalhes_database = {
 							["pets"] = {
 								"Indijanac <Mohikanac>", -- [1]
 							},
-							["friendlyfire"] = {
-							},
-							["last_event"] = 1597516657,
 							["classe"] = "HUNTER",
+							["last_event"] = 1597516657,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 508.004761,
 							["serial"] = "Player-4465-01820274",
 							["dps_started"] = false,
 							["total"] = 763.004761,
-							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
 							["on_hold"] = false,
 							["nome"] = "Mohikanac",
 							["spells"] = {
@@ -4644,8 +5079,8 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["fight_component"] = true,
 							["friendlyfire_total"] = 0,
+							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
@@ -4653,7 +5088,7 @@ _detalhes_database = {
 							["serial"] = "Creature-0-4446-1-34-4023-00003819FF",
 							["monster"] = true,
 							["end_time"] = 1597516659,
-							["dps_started"] = false,
+							["total"] = 179.007702,
 							["on_hold"] = false,
 							["nome"] = "Bloodfury Roguefeather",
 							["spells"] = {
@@ -4727,7 +5162,7 @@ _detalhes_database = {
 							["damage_taken"] = 765.007702,
 							["start_time"] = 1597516647,
 							["delay"] = 0,
-							["total"] = 179.007702,
+							["dps_started"] = false,
 						}, -- [2]
 						{
 							["flag_original"] = 4370,
@@ -4908,9 +5343,9 @@ _detalhes_database = {
 							["nome"] = "Indijanac <Mohikanac>",
 							["pets"] = {
 							},
-							["last_event"] = 0,
 							["classe"] = "PET",
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Pet-0-4446-1-34-5828-010032BFBB",
 							["spell_cast"] = {
 								["Growl"] = 2,
@@ -4976,6 +5411,18 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
+				["instance_type"] = "none",
+				["frags_need_refresh"] = true,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "20:37:26",
+				["end_time"] = 247730.954,
+				["cleu_timeline"] = {
+				},
+				["combat_id"] = 322,
+				["contra"] = "Bloodfury Roguefeather",
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -4994,18 +5441,6 @@ _detalhes_database = {
 							["Mohikanac"] = 763.004761,
 						}, -- [1]
 					},
-				},
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:37:26",
-				["end_time"] = 247730.954,
-				["combat_id"] = 322,
-				["instance_type"] = "none",
-				["contra"] = "Bloodfury Roguefeather",
-				["cleu_timeline"] = {
 				},
 				["hasSaved"] = true,
 				["spells_cast_timeline"] = {
@@ -5043,7 +5478,7 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-			}, -- [9]
+			}, -- [10]
 			{
 				{
 					["tipo"] = 2,
@@ -5070,7 +5505,7 @@ _detalhes_database = {
 							["serial"] = "Creature-0-4446-1-34-4027-0000381A7C",
 							["dps_started"] = false,
 							["end_time"] = 1597516613,
-							["friendlyfire_total"] = 0,
+							["monster"] = true,
 							["on_hold"] = false,
 							["nome"] = "Bloodfury Storm Witch",
 							["spells"] = {
@@ -5144,7 +5579,7 @@ _detalhes_database = {
 							["damage_taken"] = 670.002399,
 							["start_time"] = 1597516602,
 							["delay"] = 0,
-							["monster"] = true,
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 1300,
@@ -5157,17 +5592,17 @@ _detalhes_database = {
 							["pets"] = {
 								"Indijanac <Mohikanac>", -- [1]
 							},
-							["friendlyfire"] = {
-							},
-							["last_event"] = 1597516611,
 							["classe"] = "HUNTER",
+							["last_event"] = 1597516611,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 442.001922,
 							["serial"] = "Player-4465-01820274",
 							["dps_started"] = false,
 							["total"] = 670.001922,
-							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
 							["on_hold"] = false,
 							["nome"] = "Mohikanac",
 							["spells"] = {
@@ -5461,9 +5896,9 @@ _detalhes_database = {
 							["nome"] = "Indijanac <Mohikanac>",
 							["pets"] = {
 							},
-							["last_event"] = 0,
 							["classe"] = "PET",
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Pet-0-4446-1-34-5828-010032BFBB",
 							["spell_cast"] = {
 								["Growl"] = 1,
@@ -5513,6 +5948,18 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
+				["instance_type"] = "none",
+				["frags_need_refresh"] = true,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "20:36:42",
+				["end_time"] = 247684.934,
+				["cleu_timeline"] = {
+				},
+				["combat_id"] = 321,
+				["contra"] = "Bloodfury Storm Witch",
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -5531,18 +5978,6 @@ _detalhes_database = {
 							["Mohikanac"] = 670.001922,
 						}, -- [1]
 					},
-				},
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:36:42",
-				["end_time"] = 247684.934,
-				["combat_id"] = 321,
-				["instance_type"] = "none",
-				["contra"] = "Bloodfury Storm Witch",
-				["cleu_timeline"] = {
 				},
 				["hasSaved"] = true,
 				["spells_cast_timeline"] = {
@@ -5580,7 +6015,7 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-			}, -- [10]
+			}, -- [11]
 			{
 				{
 					["tipo"] = 2,
@@ -5600,17 +6035,17 @@ _detalhes_database = {
 							["pets"] = {
 								"Indijanac <Mohikanac>", -- [1]
 							},
-							["friendlyfire"] = {
-							},
-							["last_event"] = 1597516602,
 							["classe"] = "HUNTER",
+							["last_event"] = 1597516602,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 2056.003077,
 							["serial"] = "Player-4465-01820274",
 							["dps_started"] = false,
 							["total"] = 2991.003077,
-							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
 							["on_hold"] = false,
 							["nome"] = "Mohikanac",
 							["spells"] = {
@@ -5728,16 +6163,16 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["tipo"] = 1,
 							["friendlyfire_total"] = 0,
+							["tipo"] = 1,
+							["classe"] = "WARRIOR",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.007579,
 							["serial"] = "Player-4465-00E5831F",
 							["dps_started"] = false,
 							["end_time"] = 1597516594,
-							["classe"] = "WARRIOR",
+							["on_hold"] = false,
 							["friendlyfire"] = {
 							},
 							["nome"] = "Vermin",
@@ -5825,7 +6260,7 @@ _detalhes_database = {
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 630,
-										["g_dmg"] = 0,
+										["a_amt"] = 0,
 										["n_min"] = 12,
 										["MISS"] = 2,
 										["counter"] = 37,
@@ -5843,8 +6278,8 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["a_dmg"] = 0,
 										["n_amt"] = 27,
-										["a_amt"] = 0,
 										["total"] = 765,
+										["g_dmg"] = 0,
 									},
 								},
 								["tipo"] = 2,
@@ -5875,8 +6310,8 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["fight_component"] = true,
 							["friendlyfire_total"] = 0,
+							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
@@ -5884,7 +6319,7 @@ _detalhes_database = {
 							["serial"] = "Creature-0-4446-1-34-4023-0000382AC5",
 							["monster"] = true,
 							["end_time"] = 1597516594,
-							["dps_started"] = false,
+							["total"] = 527.001588,
 							["on_hold"] = false,
 							["nome"] = "Bloodfury Roguefeather",
 							["spells"] = {
@@ -5962,7 +6397,7 @@ _detalhes_database = {
 							["damage_taken"] = 1569.001588,
 							["start_time"] = 1597516561,
 							["delay"] = 1597516548,
-							["total"] = 527.001588,
+							["dps_started"] = false,
 						}, -- [4]
 						{
 							["flag_original"] = 2632,
@@ -5987,7 +6422,7 @@ _detalhes_database = {
 							["serial"] = "Creature-0-4446-1-34-4027-0000380673",
 							["dps_started"] = false,
 							["end_time"] = 1597516594,
-							["friendlyfire_total"] = 0,
+							["monster"] = true,
 							["on_hold"] = false,
 							["nome"] = "Bloodfury Storm Witch",
 							["spells"] = {
@@ -6093,7 +6528,7 @@ _detalhes_database = {
 							["damage_taken"] = 1426.001674,
 							["start_time"] = 1597516577,
 							["delay"] = 1597516571,
-							["monster"] = true,
+							["friendlyfire_total"] = 0,
 						}, -- [5]
 					},
 				}, -- [1]
@@ -6185,9 +6620,9 @@ _detalhes_database = {
 							["nome"] = "Indijanac <Mohikanac>",
 							["pets"] = {
 							},
-							["last_event"] = 0,
 							["classe"] = "PET",
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Pet-0-4446-1-34-5828-010032BFBB",
 							["spell_cast"] = {
 								["Growl"] = 9,
@@ -6269,53 +6704,6 @@ _detalhes_database = {
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
 				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "20:36:34",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Bloodfury Roguefeather",
-				["TotalElapsedCombatTime"] = 23.8579999999783,
-				["CombatEndedAt"] = 247647.582,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Mohikanac"] = 2967.003077,
-							["Vermin"] = 0.007579,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 247665.817,
-				["combat_id"] = 320,
-				["data_inicio"] = "20:35:39",
-				["spells_cast_timeline"] = {
-				},
-				["combat_counter"] = 5749,
-				["frags"] = {
-					["Bloodfury Roguefeather"] = 2,
-					["Bloodfury Storm Witch"] = 2,
-				},
-				["CombatSkillCache"] = {
-				},
 				["totals_grupo"] = {
 					2056, -- [1]
 					0, -- [2]
@@ -6337,11 +6725,58 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "20:36:34",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Bloodfury Roguefeather",
+				["TotalElapsedCombatTime"] = 23.8579999999783,
+				["CombatEndedAt"] = 247647.582,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "20:35:39",
+				["end_time"] = 247665.817,
+				["combat_id"] = 320,
+				["frags"] = {
+					["Bloodfury Roguefeather"] = 2,
+					["Bloodfury Storm Witch"] = 2,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["combat_counter"] = 5749,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Mohikanac"] = 2967.003077,
+							["Vermin"] = 0.007579,
+						}, -- [1]
+					},
+				},
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
 				["start_time"] = 247610.792,
-				["contra"] = "Bloodfury Roguefeather",
 				["TimeData"] = {
 				},
-			}, -- [11]
+				["contra"] = "Bloodfury Roguefeather",
+			}, -- [12]
 			{
 				{
 					["tipo"] = 2,
@@ -6359,17 +6794,17 @@ _detalhes_database = {
 							["pets"] = {
 								"Indijanac <Mohikanac>", -- [1]
 							},
-							["friendlyfire"] = {
-							},
-							["last_event"] = 1597516538,
 							["classe"] = "HUNTER",
+							["last_event"] = 1597516538,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 470.001423,
 							["serial"] = "Player-4465-01820274",
 							["dps_started"] = false,
 							["total"] = 722.001423,
-							["friendlyfire_total"] = 0,
+							["friendlyfire"] = {
+							},
 							["on_hold"] = false,
 							["nome"] = "Mohikanac",
 							["spells"] = {
@@ -6615,8 +7050,8 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["fight_component"] = true,
 							["friendlyfire_total"] = 0,
+							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
@@ -6624,7 +7059,7 @@ _detalhes_database = {
 							["serial"] = "Creature-0-4446-1-34-4027-0000382AC0",
 							["monster"] = true,
 							["end_time"] = 1597516522,
-							["dps_started"] = false,
+							["total"] = 177.004365,
 							["on_hold"] = false,
 							["nome"] = "Bloodfury Storm Witch",
 							["spells"] = {
@@ -6700,7 +7135,7 @@ _detalhes_database = {
 							["damage_taken"] = 699.004365,
 							["start_time"] = 1597516513,
 							["delay"] = 0,
-							["total"] = 177.004365,
+							["dps_started"] = false,
 						}, -- [3]
 					},
 				}, -- [1]
@@ -6781,9 +7216,9 @@ _detalhes_database = {
 							["nome"] = "Indijanac <Mohikanac>",
 							["pets"] = {
 							},
-							["last_event"] = 0,
 							["classe"] = "PET",
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Pet-0-4446-1-34-5828-010032BFBB",
 							["spell_cast"] = {
 								["Bite"] = 1,
@@ -6849,6 +7284,18 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
+				["instance_type"] = "none",
+				["frags_need_refresh"] = true,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "20:35:11",
+				["end_time"] = 247594.247,
+				["cleu_timeline"] = {
+				},
+				["combat_id"] = 319,
+				["contra"] = "Bloodfury Storm Witch",
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -6867,18 +7314,6 @@ _detalhes_database = {
 							["Mohikanac"] = 699.001423,
 						}, -- [1]
 					},
-				},
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:35:11",
-				["end_time"] = 247594.247,
-				["combat_id"] = 319,
-				["instance_type"] = "none",
-				["contra"] = "Bloodfury Storm Witch",
-				["cleu_timeline"] = {
 				},
 				["hasSaved"] = true,
 				["spells_cast_timeline"] = {
@@ -6916,7 +7351,7 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-			}, -- [12]
+			}, -- [13]
 			{
 				{
 					["tipo"] = 2,
@@ -6943,7 +7378,7 @@ _detalhes_database = {
 							["serial"] = "Creature-0-4446-1-34-4024-0000382A52",
 							["dps_started"] = false,
 							["end_time"] = 1597516507,
-							["friendlyfire_total"] = 0,
+							["monster"] = true,
 							["on_hold"] = false,
 							["nome"] = "Bloodfury Slayer",
 							["spells"] = {
@@ -7016,7 +7451,7 @@ _detalhes_database = {
 							["damage_taken"] = 648.007909,
 							["start_time"] = 1597516496,
 							["delay"] = 0,
-							["monster"] = true,
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 1300,
@@ -7302,9 +7737,9 @@ _detalhes_database = {
 							["nome"] = "Indijanac <Mohikanac>",
 							["pets"] = {
 							},
-							["last_event"] = 0,
 							["classe"] = "PET",
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Pet-0-4446-1-34-5828-010032BFBB",
 							["spell_cast"] = {
 								["Growl"] = 2,
@@ -7369,6 +7804,18 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
+				["instance_type"] = "none",
+				["frags_need_refresh"] = true,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "20:34:56",
+				["end_time"] = 247578.821,
+				["cleu_timeline"] = {
+				},
+				["combat_id"] = 318,
+				["contra"] = "Bloodfury Slayer",
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -7387,18 +7834,6 @@ _detalhes_database = {
 							["Mohikanac"] = 648.005704,
 						}, -- [1]
 					},
-				},
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:34:56",
-				["end_time"] = 247578.821,
-				["combat_id"] = 318,
-				["instance_type"] = "none",
-				["contra"] = "Bloodfury Slayer",
-				["cleu_timeline"] = {
 				},
 				["hasSaved"] = true,
 				["spells_cast_timeline"] = {
@@ -7436,7 +7871,7 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-			}, -- [13]
+			}, -- [14]
 			{
 				{
 					["tipo"] = 2,
@@ -7691,7 +8126,7 @@ _detalhes_database = {
 							["serial"] = "Creature-0-4446-1-34-4027-000038062A",
 							["dps_started"] = false,
 							["end_time"] = 1597516496,
-							["friendlyfire_total"] = 0,
+							["monster"] = true,
 							["on_hold"] = false,
 							["nome"] = "Bloodfury Storm Witch",
 							["spells"] = {
@@ -7793,7 +8228,7 @@ _detalhes_database = {
 							["damage_taken"] = 745.005844,
 							["start_time"] = 1597516482,
 							["delay"] = 1597516483,
-							["monster"] = true,
+							["friendlyfire_total"] = 0,
 						}, -- [3]
 					},
 				}, -- [1]
@@ -7874,9 +8309,9 @@ _detalhes_database = {
 							["nome"] = "Indijanac <Mohikanac>",
 							["pets"] = {
 							},
-							["last_event"] = 0,
 							["classe"] = "PET",
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Pet-0-4446-1-34-5828-010032BFBB",
 							["spell_cast"] = {
 								["Bite"] = 2,
@@ -7943,6 +8378,18 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
+				["instance_type"] = "none",
+				["frags_need_refresh"] = true,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "20:34:30",
+				["end_time"] = 247554.92,
+				["cleu_timeline"] = {
+				},
+				["combat_id"] = 317,
+				["contra"] = "Bloodfury Storm Witch",
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -7961,18 +8408,6 @@ _detalhes_database = {
 							["Mohikanac"] = 745.001246,
 						}, -- [1]
 					},
-				},
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:34:30",
-				["end_time"] = 247554.92,
-				["combat_id"] = 317,
-				["instance_type"] = "none",
-				["contra"] = "Bloodfury Storm Witch",
-				["cleu_timeline"] = {
 				},
 				["hasSaved"] = true,
 				["spells_cast_timeline"] = {
@@ -8010,7 +8445,7 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-			}, -- [14]
+			}, -- [15]
 			{
 				{
 					["tipo"] = 2,
@@ -8293,7 +8728,7 @@ _detalhes_database = {
 							["serial"] = "Creature-0-4446-1-34-4027-0000382A91",
 							["dps_started"] = false,
 							["end_time"] = 1597516459,
-							["friendlyfire_total"] = 0,
+							["monster"] = true,
 							["on_hold"] = false,
 							["nome"] = "Bloodfury Storm Witch",
 							["spells"] = {
@@ -8339,7 +8774,7 @@ _detalhes_database = {
 							["damage_taken"] = 749.007126,
 							["start_time"] = 1597516450,
 							["delay"] = 0,
-							["monster"] = true,
+							["friendlyfire_total"] = 0,
 						}, -- [3]
 					},
 				}, -- [1]
@@ -8431,9 +8866,9 @@ _detalhes_database = {
 							["nome"] = "Indijanac <Mohikanac>",
 							["pets"] = {
 							},
-							["last_event"] = 0,
 							["classe"] = "PET",
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Pet-0-4446-1-34-5828-010032BFBB",
 							["spell_cast"] = {
 								["Growl"] = 2,
@@ -8499,6 +8934,18 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
+				["instance_type"] = "none",
+				["frags_need_refresh"] = true,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "20:34:09",
+				["end_time"] = 247531.474,
+				["cleu_timeline"] = {
+				},
+				["combat_id"] = 316,
+				["contra"] = "Bloodfury Storm Witch",
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -8517,18 +8964,6 @@ _detalhes_database = {
 							["Mohikanac"] = 749.005798,
 						}, -- [1]
 					},
-				},
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:34:09",
-				["end_time"] = 247531.474,
-				["combat_id"] = 316,
-				["instance_type"] = "none",
-				["contra"] = "Bloodfury Storm Witch",
-				["cleu_timeline"] = {
 				},
 				["hasSaved"] = true,
 				["spells_cast_timeline"] = {
@@ -8566,7 +9001,7 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-			}, -- [15]
+			}, -- [16]
 			{
 				{
 					["tipo"] = 2,
@@ -8810,8 +9245,8 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["fight_component"] = true,
 							["friendlyfire_total"] = 0,
+							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
@@ -8819,7 +9254,7 @@ _detalhes_database = {
 							["serial"] = "Creature-0-4446-1-34-4023-0000382A58",
 							["monster"] = true,
 							["end_time"] = 1597516432,
-							["dps_started"] = false,
+							["total"] = 229.007747,
 							["on_hold"] = false,
 							["nome"] = "Bloodfury Roguefeather",
 							["spells"] = {
@@ -8895,7 +9330,7 @@ _detalhes_database = {
 							["damage_taken"] = 737.007747,
 							["start_time"] = 1597516415,
 							["delay"] = 0,
-							["total"] = 229.007747,
+							["dps_started"] = false,
 						}, -- [3]
 					},
 				}, -- [1]
@@ -8977,9 +9412,9 @@ _detalhes_database = {
 							["nome"] = "Indijanac <Mohikanac>",
 							["pets"] = {
 							},
-							["last_event"] = 0,
 							["classe"] = "PET",
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Pet-0-4446-1-34-5828-010032BFBB",
 							["spell_cast"] = {
 								["Growl"] = 3,
@@ -9045,6 +9480,18 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
+				["instance_type"] = "none",
+				["frags_need_refresh"] = true,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "20:33:34",
+				["end_time"] = 247504.124,
+				["cleu_timeline"] = {
+				},
+				["combat_id"] = 315,
+				["contra"] = "Bloodfury Roguefeather",
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -9063,18 +9510,6 @@ _detalhes_database = {
 							["Mohikanac"] = 735.005905,
 						}, -- [1]
 					},
-				},
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:33:34",
-				["end_time"] = 247504.124,
-				["combat_id"] = 315,
-				["instance_type"] = "none",
-				["contra"] = "Bloodfury Roguefeather",
-				["cleu_timeline"] = {
 				},
 				["hasSaved"] = true,
 				["spells_cast_timeline"] = {
@@ -9112,7 +9547,7 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-			}, -- [16]
+			}, -- [17]
 			{
 				{
 					["tipo"] = 2,
@@ -9130,8 +9565,8 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["fight_component"] = true,
 							["friendlyfire_total"] = 0,
+							["fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
@@ -9139,7 +9574,7 @@ _detalhes_database = {
 							["serial"] = "Creature-0-4446-1-34-4024-0000382A3E",
 							["monster"] = true,
 							["end_time"] = 1597516413,
-							["dps_started"] = false,
+							["total"] = 183.001798,
 							["on_hold"] = false,
 							["nome"] = "Bloodfury Slayer",
 							["spells"] = {
@@ -9214,7 +9649,7 @@ _detalhes_database = {
 							["damage_taken"] = 645.001798,
 							["start_time"] = 1597516399,
 							["delay"] = 0,
-							["total"] = 183.001798,
+							["dps_started"] = false,
 						}, -- [1]
 						{
 							["flag_original"] = 1300,
@@ -9536,9 +9971,9 @@ _detalhes_database = {
 							["nome"] = "Indijanac <Mohikanac>",
 							["pets"] = {
 							},
-							["last_event"] = 0,
 							["classe"] = "PET",
 							["tipo"] = 4,
+							["last_event"] = 0,
 							["serial"] = "Pet-0-4446-1-34-5828-010032BFBB",
 							["spell_cast"] = {
 								["Bite"] = 2,
@@ -9562,6 +9997,7 @@ _detalhes_database = {
 				},
 				["alternate_power"] = {
 				},
+				["instance_type"] = "none",
 				["enemy"] = "Bloodfury Slayer",
 				["combat_counter"] = 5743,
 				["totals"] = {
@@ -9589,6 +10025,17 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
+				["frags_need_refresh"] = true,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "20:33:19",
+				["end_time"] = 247484.636,
+				["cleu_timeline"] = {
+				},
+				["combat_id"] = 314,
+				["contra"] = "Bloodfury Slayer",
 				["PhaseData"] = {
 					{
 						1, -- [1]
@@ -9608,18 +10055,6 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:33:19",
-				["end_time"] = 247484.636,
-				["combat_id"] = 314,
-				["instance_type"] = "none",
-				["contra"] = "Bloodfury Slayer",
-				["cleu_timeline"] = {
-				},
 				["hasSaved"] = true,
 				["spells_cast_timeline"] = {
 				},
@@ -9637,505 +10072,6 @@ _detalhes_database = {
 				},
 				["totals_grupo"] = {
 					375, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-			}, -- [17]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 313,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1300,
-							["totalabsorbed"] = 0.007713,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Bloodfury Slayer"] = 620,
-							},
-							["serial"] = "Player-4465-01820274",
-							["pets"] = {
-								"Indijanac <Mohikanac>", -- [1]
-							},
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["classe"] = "HUNTER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 439.007713,
-							["spec"] = 254,
-							["dps_started"] = false,
-							["total"] = 620.007713,
-							["on_hold"] = false,
-							["last_event"] = 1597516389,
-							["nome"] = "Mohikanac",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 28,
-										["targets"] = {
-											["Bloodfury Slayer"] = 56,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 56,
-										["n_min"] = 28,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 56,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 72,
-										["targets"] = {
-											["Bloodfury Slayer"] = 350,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 350,
-										["n_min"] = 67,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 350,
-										["c_max"] = 0,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 33,
-										["targets"] = {
-											["Bloodfury Slayer"] = 33,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 33,
-										["n_min"] = 33,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 33,
-										["c_max"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["end_time"] = 1597516390,
-							["last_dps"] = 69.0816393314315,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.007713,
-							["start_time"] = 1597516380,
-							["delay"] = 0,
-							["friendlyfire_total"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 4370,
-							["totalabsorbed"] = 0.006021,
-							["damage_from"] = {
-								["Bloodfury Slayer"] = true,
-							},
-							["targets"] = {
-								["Bloodfury Slayer"] = 181,
-							},
-							["pets"] = {
-							},
-							["on_hold"] = false,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 181.006021,
-							["classe"] = "PET",
-							["dps_started"] = false,
-							["total"] = 181.006021,
-							["serial"] = "Pet-0-4446-1-34-5828-010032BFBB",
-							["ownerName"] = "Mohikanac",
-							["nome"] = "Indijanac <Mohikanac>",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Bite"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 30,
-										["targets"] = {
-											["Bloodfury Slayer"] = 30,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 30,
-										["n_min"] = 30,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 30,
-										["c_max"] = 0,
-										["id"] = "Bite",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 2,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 26,
-										["targets"] = {
-											["Bloodfury Slayer"] = 151,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 151,
-										["n_min"] = 12,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 151,
-										["c_max"] = 0,
-										["DODGE"] = 1,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["b_dmg"] = 27,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["m_amt"] = 0,
-										["n_amt"] = 7,
-										["a_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["end_time"] = 1597516390,
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1597516398,
-							["damage_taken"] = 124.006021,
-							["start_time"] = 1597516380,
-							["delay"] = 0,
-							["friendlyfire"] = {
-							},
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.001487,
-							["damage_from"] = {
-								["Indijanac <Mohikanac>"] = true,
-								["Mohikanac"] = true,
-							},
-							["targets"] = {
-								["Indijanac <Mohikanac>"] = 124,
-							},
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["total"] = 124.001487,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 124.001487,
-							["serial"] = "Creature-0-4446-1-34-4024-00003829DB",
-							["dps_started"] = false,
-							["end_time"] = 1597516390,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["nome"] = "Bloodfury Slayer",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 33,
-										["targets"] = {
-											["Indijanac <Mohikanac>"] = 124,
-											["Indijanac"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 124,
-										["n_min"] = 29,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 124,
-										["c_max"] = 0,
-										["DODGE"] = 1,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["m_amt"] = 0,
-										["n_amt"] = 4,
-										["a_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1597516389,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 620.001487,
-							["start_time"] = 1597516381,
-							["delay"] = 0,
-							["monster"] = true,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 313,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 313,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 313,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Serpent Sting"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 9,
-										["id"] = "Serpent Sting",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["pets"] = {
-								"Indijanac <Mohikanac>", -- [1]
-							},
-							["classe"] = "HUNTER",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Aspect of the Hawk"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 10,
-										["id"] = "Aspect of the Hawk",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 9,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 254,
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Auto Shot"] = 5,
-								["Arcane Shot"] = 1,
-							},
-							["buff_uptime"] = 10,
-							["last_event"] = 1597516390,
-							["nome"] = "Mohikanac",
-							["tipo"] = 4,
-							["serial"] = "Player-4465-01820274",
-							["debuff_uptime_targets"] = {
-							},
-						}, -- [1]
-						{
-							["flag_original"] = 4370,
-							["ownerName"] = "Mohikanac",
-							["nome"] = "Indijanac <Mohikanac>",
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["classe"] = "PET",
-							["tipo"] = 4,
-							["serial"] = "Pet-0-4446-1-34-5828-010032BFBB",
-							["spell_cast"] = {
-								["Growl"] = 1,
-							},
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 313,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mohikanac"] = true,
-					["Vermin"] = true,
-				},
-				["tempo_start"] = 1597516380,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Mohikanac"] = 620.007713,
-						}, -- [1]
-					},
-				},
-				["enemy"] = "Bloodfury Slayer",
-				["combat_counter"] = 5742,
-				["totals"] = {
-					744, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:33:01",
-				["end_time"] = 247462.298,
-				["combat_id"] = 313,
-				["instance_type"] = "none",
-				["contra"] = "Bloodfury Slayer",
-				["cleu_timeline"] = {
-				},
-				["hasSaved"] = true,
-				["spells_cast_timeline"] = {
-				},
-				["data_fim"] = "20:33:11",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Bloodfury Slayer"] = 1,
-				},
-				["start_time"] = 247452.295,
-				["TimeData"] = {
-				},
-				["totals_grupo"] = {
-					439, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -10605,7 +10541,7 @@ _detalhes_database = {
 	},
 	["last_instance_time"] = 1596382827,
 	["active_profile"] = "Default",
-	["last_day"] = "20",
+	["last_day"] = "21",
 	["benchmark_db"] = {
 		["frame"] = {
 		},
@@ -10721,10 +10657,7 @@ _detalhes_database = {
 			},
 			["main_frame_strata"] = "LOW",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["font_size"] = 10,
-			["use_spark"] = true,
-			["x"] = 0,
-			["font_face"] = "Friz Quadrata TT",
+			["y"] = -4.577636718750e-05,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -10736,7 +10669,10 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
-			["y"] = -4.577636718750e-05,
+			["x"] = 0,
+			["font_face"] = "Friz Quadrata TT",
+			["use_spark"] = true,
+			["font_size"] = 10,
 			["author"] = "Details! Team",
 			["main_frame_locked"] = false,
 			["arrow_anchor_y"] = 0,
@@ -10751,10 +10687,10 @@ _detalhes_database = {
 		["reverse"] = false,
 		["channel"] = "SELF",
 	},
-	["combat_counter"] = 5761,
+	["combat_counter"] = 5773,
 	["last_realversion"] = 142,
 	["character_data"] = {
-		["logons"] = 1642,
+		["logons"] = 1654,
 	},
 	["combat_id"] = 330,
 	["savedStyles"] = {
@@ -10801,8 +10737,8 @@ _detalhes_database = {
 			},
 			["switch_healer"] = false,
 			["bars_sort_direction"] = 1,
+			["menu_icons_size"] = 1,
 			["backdrop_texture"] = "None",
-			["switch_healer_in_combat"] = false,
 			["switch_tank_in_combat"] = false,
 			["menu2_icons_size"] = 1.20000004768372,
 			["tooltip"] = {
@@ -10819,7 +10755,7 @@ _detalhes_database = {
 					1, -- [3]
 				},
 			},
-			["menu_icons_size"] = 1,
+			["switch_healer_in_combat"] = false,
 			["switch_all_roles_in_combat"] = {
 				2, -- [1]
 				1, -- [2]
@@ -10869,8 +10805,18 @@ _detalhes_database = {
 				["onenter"] = 1,
 			},
 			["switch_all_roles_after_wipe"] = false,
-			["desaturated_menu"] = false,
-			["show_sidebars"] = false,
+			["menu2_anchor_down"] = {
+				32, -- [1]
+				0, -- [2]
+			},
+			["statusbar_info"] = {
+				["alpha"] = 0,
+				["overlay"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+			},
 			["strata"] = "LOW",
 			["window_scale"] = 1,
 			["resetbutton_config"] = {
@@ -10918,21 +10864,18 @@ _detalhes_database = {
 				true, -- [3]
 				true, -- [4]
 			},
-			["switch_damager"] = false,
-			["auto_hide_menu"] = {
-				["left"] = true,
-				["right"] = true,
-			},
+			["desaturated_menu"] = false,
+			["show_sidebars"] = false,
 			["bars_grow_direction"] = 1,
 			["row_show_animation"] = {
 				["anim"] = "Fade",
 				["options"] = {
 				},
 			},
-			["hide_icon"] = true,
-			["toolbar_side"] = 2,
 			["grab_on_top"] = false,
+			["toolbar_side"] = 2,
 			["switch_damager_in_combat"] = false,
+			["hide_icon"] = true,
 			["micro_displays_side"] = 2,
 			["menu2_anchor"] = {
 				32, -- [1]
@@ -10965,18 +10908,11 @@ _detalhes_database = {
 				0, -- [2]
 			},
 			["hide_in_combat"] = false,
-			["statusbar_info"] = {
-				["alpha"] = 0,
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
+			["auto_hide_menu"] = {
+				["left"] = true,
+				["right"] = true,
 			},
-			["menu2_anchor_down"] = {
-				32, -- [1]
-				0, -- [2]
-			},
+			["switch_damager"] = false,
 			["show_statusbar"] = false,
 			["wallpaper"] = {
 				["overlay"] = {
@@ -11036,8 +10972,6 @@ _detalhes_database = {
 					1, -- [3]
 					1, -- [4]
 				},
-				["alpha"] = 0,
-				["textR_class_colors"] = false,
 				["backdrop"] = {
 					["enabled"] = false,
 					["texture"] = "Details BarBorder 2",
@@ -11049,11 +10983,13 @@ _detalhes_database = {
 					},
 					["size"] = 12,
 				},
-				["texture_background"] = "Blizzard",
+				["textL_class_colors"] = false,
 				["textL_custom_text"] = "{data3}{data2}",
+				["textR_class_colors"] = false,
+				["alpha"] = 0,
 				["no_icon"] = false,
 				["font_size"] = 11,
-				["textL_class_colors"] = false,
+				["texture_background"] = "Blizzard",
 				["font_face"] = "Arial Narrow",
 				["texture_class_colors"] = true,
 				["height"] = 20,
@@ -13376,9 +13312,9 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Mongoose Bite",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
@@ -13489,8 +13425,8 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
 					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
@@ -13522,9 +13458,9 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
@@ -13557,8 +13493,8 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
 					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
@@ -13591,9 +13527,9 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
@@ -13620,9 +13556,9 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Soot Covering",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
@@ -13654,8 +13590,8 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
 					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
@@ -13687,9 +13623,9 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
@@ -13714,9 +13650,9 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Curse of Weakness",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
@@ -13742,9 +13678,9 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Immolate",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
@@ -13776,8 +13712,8 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
 					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
@@ -13808,9 +13744,9 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Fire Shield Effect II",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
@@ -13837,9 +13773,9 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
@@ -13864,9 +13800,9 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Fire Shield II",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
@@ -13898,8 +13834,8 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
 					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
@@ -13931,9 +13867,9 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
@@ -13958,9 +13894,9 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Knockdown",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
@@ -13993,8 +13929,8 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
 					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
@@ -14025,9 +13961,9 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Fireball",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
@@ -14053,9 +13989,9 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Area Burn",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
@@ -14082,9 +14018,9 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
@@ -14116,8 +14052,8 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
 					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
@@ -14148,9 +14084,9 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
@@ -14182,8 +14118,8 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
 					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
@@ -14215,9 +14151,9 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
@@ -14251,8 +14187,8 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
 					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
@@ -14285,9 +14221,9 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
@@ -14313,9 +14249,9 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Thrash",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
@@ -14349,8 +14285,8 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
 					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
@@ -14382,9 +14318,9 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
@@ -14412,9 +14348,9 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Lightning Cloud",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
@@ -14442,9 +14378,9 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Lightning Bolt",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
@@ -14476,8 +14412,8 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
 					["monster"] = true,
+					["last_dps"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
@@ -14509,9 +14445,9 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
@@ -14536,9 +14472,9 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Curse of Recklessness",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
@@ -14590,7 +14526,7 @@ _detalhes_database = {
 					["healing_taken"] = 0.002508,
 					["fight_component"] = true,
 					["end_time"] = 1597339882,
-					["healing_from"] = {
+					["targets_absorbs"] = {
 					},
 					["nome"] = "Vermin",
 					["spells"] = {
@@ -14626,15 +14562,15 @@ _detalhes_database = {
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["last_event"] = 0,
-					["classe"] = "WARRIOR",
-					["custom"] = 0,
+					["healing_from"] = {
+					},
 					["tipo"] = 2,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["totaldenied"] = 0.002508,
 					["start_time"] = 1597339879,
 					["delay"] = 0,
-					["targets_absorbs"] = {
-					},
+					["classe"] = "WARRIOR",
 				}, -- [1]
 				{
 					["flag_original"] = 1298,
@@ -14717,7 +14653,7 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["received"] = 0.001921,
-					["resource"] = 1.480124,
+					["resource"] = 1.492826,
 					["targets"] = {
 						["Vermin"] = 0,
 					},
