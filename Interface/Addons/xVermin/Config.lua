@@ -81,5 +81,23 @@ xVermin.Config = {
 		Curse = {r = 0.60, g = 0.00, b = 1.00},
 		Disease = {r = 0.60, g = 0.40, b = 0},
 		Poison = {r = 0.00, g = 0.60, b = 0}
+	},
+	Chat = {
+		alwaysAlertOnWhisper = true,
+		disableFade = false,
+		chatOutline = false,
+		enableChatWindowBorder = false,
+		enableBottomButton = false,
+		enableHyperlinkTooltip = false,
+		enableBorderColoring = true,
+		enableVoiceChatButtons = false,
+		showInputBoxAbove = true, -- Show the chat input box above the chat window
+		tab = {
+			fontSize = 12,
+			fontOutline = true,
+			normalColor = {1, 1, 1},
+			specialColor = {1, 0, 1},
+			selectedColor = {0, 0.75, 1}
+		}
 	}
 }
