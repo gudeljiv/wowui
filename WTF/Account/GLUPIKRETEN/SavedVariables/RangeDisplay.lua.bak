@@ -2,13 +2,13 @@
 RangeDisplayDB3 = {
 	["profileKeys"] = {
 		["Mxyzptlk - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default",
+		["Jaroslav - Golemagg"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
 		["Mxzq - Golemagg"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
-		["Jaroslav - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -31,8 +31,8 @@ RangeDisplayDB3 = {
 					["mouseAnchor"] = false,
 					["enabled"] = false,
 					["y"] = -36.5593032836914,
-					["font"] = "Arial Narrow",
 					["x"] = -3.48463487625122,
+					["font"] = "Arial Narrow",
 				},
 				["arena5"] = {
 				},

@@ -139,53 +139,20 @@ local function SetChat()
 	ChatFrame5Tab:Show()
 	ChatFrame5Background:SetAlpha(0.6)
 
-	local channel_type, channel_name = JoinChannelByName("xVerminPrivateDEV", "perika10", ChatFrame6:GetID(), 1)
-
-	-- ChatFrame1.ClearAllPoints = function() end
-	ChatFrame1.SetPoint = function()
-	end
-	-- ChatFrame1.SetClampRectInsets = function() end
-	ChatFrame1Background.SetAlpha = function()
-	end
-
-	-- ChatFrame2.ClearAllPoints = function() end
-	ChatFrame2.SetPoint = function()
-	end
-	-- ChatFrame2.SetClampRectInsets = function() end
-	ChatFrame2Background.SetAlpha = function()
-	end
-
-	-- ChatFrame3.ClearAllPoints = function() end
-	ChatFrame3.SetPoint = function()
-	end
-	-- ChatFrame3.SetClampRectInsets = function() end
-	ChatFrame3Background.SetAlpha = function()
-	end
-
-	-- ChatFrame4.ClearAllPoints = function() end
-	ChatFrame4.SetPoint = function()
-	end
-	-- ChatFrame4.SetClampRectInsets = function() end
-	ChatFrame4Background.SetAlpha = function()
-	end
-
-	-- ChatFrame5.ClearAllPoints = function() end
-	ChatFrame5.SetPoint = function()
-	end
-	-- ChatFrame5.SetClampRectInsets = function() end
-	ChatFrame5Background.SetAlpha = function()
-	end
-
 	for i, v in pairs(
 		{
 			ChatFrame1,
 			ChatFrame2,
 			ChatFrame3,
 			ChatFrame4,
-			ChatFrame5,
-			ChatFrame6
+			ChatFrame5
 		}
 	) do
+		v.SetPoint = function()
+		end
+		_G[v:GetName() .. "Background"].SetAlpha = function()
+		end
+
 		v:HookScript(
 			"OnUpdate",
 			function(self)

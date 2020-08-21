@@ -41,8 +41,8 @@ SLASH_AUTOCARROT2 = "/ac"
 SlashCmdList["AUTOCARROT"] = function(msg)
 	AutoCarrot_Disabled = not AutoCarrot_Disabled
 	if (AutoCarrot_Disabled) then
-		print("|cff00ff00Auto|cffed9121Carrot|cffff0000: disabled")
+		print("|cffed9121AutoCarrot: |cffff0000disabled")
 	else
-		print("|cff00ff00Auto|cffed9121Carrot|cff1eff00: enabled")
+		print("|cffed9121AutoCarrot: |cff1eff00enabled")
 	end
 end

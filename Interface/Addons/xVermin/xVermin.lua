@@ -169,6 +169,13 @@ f:SetScript(
 		end
 
 		-------------------------------------------
+		-- CastingBarFrame Text
+		-------------------------------------------
+
+		CastingBarFrame.Text:ClearAllPoints()
+		CastingBarFrame.Text:SetPoint("CENTER", CastingBarFrame, 0, 2)
+
+		-------------------------------------------
 		-- action bars
 		-------------------------------------------
 

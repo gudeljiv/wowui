@@ -58,11 +58,11 @@ local function BuyAmmo()
 		if needtobuy > 0 then
 			local remainder = needtobuy % 200
 			local buys = (needtobuy - remainder) / 200
-			for _ = 1, buys do
-				BuyMerchantItem(index, 200)
-			end
 			if remainder > 0 then
 				BuyMerchantItem(index, remainder)
+			end
+			for _ = 1, buys do
+				BuyMerchantItem(index, 200)
 			end
 		end
 	end
