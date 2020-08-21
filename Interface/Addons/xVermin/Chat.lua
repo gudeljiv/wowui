@@ -196,21 +196,18 @@ chat:SetScript(
 				2,
 				function()
 					SetChat()
-				end
-			)
-		end
-		if event == "PLAYER_ENTERING_WORLD" then
-			C_Timer.After(
-				5,
-				function()
-					SetChatChannels()
+					C_Timer.After(
+						2,
+						function()
+							SetChatChannels()
+						end
+					)
 				end
 			)
 		end
 	end
 )
 chat:RegisterEvent("PLAYER_LOGIN")
-chat:RegisterEvent("PLAYER_ENTERING_WORLD")
 
 -- Tab text colors for the tabs
 hooksecurefunc(
@@ -242,7 +239,9 @@ hooksecurefunc(
 	end
 )
 
--- Modify the chat tabs.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- Modify the chat tabs ---------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 local function SkinTab(self)
 	local chat = _G[self]
 	local font, _, _ = chat:GetFont()
@@ -326,9 +325,7 @@ local function SkinTab(self)
 				else
 					r, g, b = n1, n2, n3
 				end
-
 				tabText:SetTextColor(r, g, b)
-
 				tab.wasShown = true
 			end
 
@@ -348,7 +345,7 @@ for _, frame in pairs(CHAT_FRAMES) do
 end
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
--- Modify the editbox
+-- Modify the editbox -----------------------------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ChatFrame1EditBox:SetAltArrowKeyMode(false)
 ChatFrame1EditBox:ClearAllPoints()
