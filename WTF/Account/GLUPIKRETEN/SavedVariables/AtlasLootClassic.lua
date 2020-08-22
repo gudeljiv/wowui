@@ -12,12 +12,12 @@ AtlasLootClassicDB = {
 		["Korupcija - Stonespine"] = "Korupcija - Stonespine",
 		["Mxym - Golemagg"] = "Default",
 		["Mxys - Golemagg"] = "Default",
-		["Jaroslav - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
 		["Koloman - Golemagg"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
+		["Jaroslav - Golemagg"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 		["Antun - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
@@ -146,10 +146,6 @@ AtlasLootClassicDB = {
 				},
 			},
 		},
-		["Jaroslav - Golemagg"] = {
-		},
-		["Antun - Golemagg"] = {
-		},
 		["Mxyzptlk - Golemagg"] = {
 			["GUI"] = {
 				["selected"] = {
@@ -161,20 +157,7 @@ AtlasLootClassicDB = {
 				},
 			},
 		},
-		["Augustin - Golemagg"] = {
-		},
-		["Grgur - Golemagg"] = {
-		},
-		["Koloman - Golemagg"] = {
-			["GUI"] = {
-				["selected"] = {
-					nil, -- [1]
-					"Ragefire", -- [2]
-					nil, -- [3]
-					1, -- [4]
-					0, -- [5]
-				},
-			},
+		["Antun - Golemagg"] = {
 		},
 		["Vermin - Golemagg"] = {
 			["GUI"] = {
@@ -198,6 +181,23 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
+		["Augustin - Golemagg"] = {
+		},
+		["Grgur - Golemagg"] = {
+		},
+		["Koloman - Golemagg"] = {
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"Ragefire", -- [2]
+					nil, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+			},
+		},
+		["Jaroslav - Golemagg"] = {
+		},
 		["Klhjakhsgdjh - Golemagg"] = {
 			["minimap"] = {
 				["shown"] = false,
@@ -214,10 +214,6 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Default"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 			["GUI"] = {
 				["point"] = {
 					nil, -- [1]
@@ -233,6 +229,10 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 		},
 		["Judawise - Golemagg"] = {
