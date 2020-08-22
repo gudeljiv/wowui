@@ -24,6 +24,7 @@ Experience/Pet.lua
 Experience/MobsToKill.lua
 
 Addons/AdiBags.lua
+Addons/Examiner.lua
 
 AutoCarrot.lua
 AutoBuyAmmo.lua
@@ -37,7 +38,6 @@ Chat.lua
 DamageFont.lua
 ErrorsFilter.lua
 GarbageCollector.lua
-Inspect.lua
 PetHappiness.lua
 PlayerTargetHealthPercentage.lua
 PlayerTargetSetMark.lua

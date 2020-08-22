@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 2046,
 	["lastSanitation"] = 3,
-	["session"] = 2031,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -173,8 +173,8 @@ BugGrabberDB = {
 		}, -- [21]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["session"] = 1336,
 			["time"] = "2020/07/26 13:26:58",
+			["session"] = 1336,
 			["counter"] = 2,
 		}, -- [22]
 		{
@@ -554,8 +554,8 @@ BugGrabberDB = {
 		}, -- [69]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["time"] = "2020/07/27 20:37:46",
 			["session"] = 1423,
+			["time"] = "2020/07/27 20:37:46",
 			["counter"] = 4,
 		}, -- [70]
 		{
@@ -820,8 +820,8 @@ BugGrabberDB = {
 		}, -- [103]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["time"] = "2020/08/02 10:06:15",
 			["session"] = 1605,
+			["time"] = "2020/08/02 10:06:15",
 			["counter"] = 3,
 		}, -- [104]
 		{
@@ -961,8 +961,8 @@ BugGrabberDB = {
 		}, -- [121]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
-			["session"] = 1654,
 			["time"] = "2020/08/02 20:13:03",
+			["session"] = 1654,
 			["counter"] = 3,
 		}, -- [122]
 		{
@@ -1327,8 +1327,8 @@ BugGrabberDB = {
 		}, -- [167]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["session"] = 1843,
 			["time"] = "2020/08/13 21:31:07",
+			["session"] = 1843,
 			["counter"] = 6,
 		}, -- [168]
 		{
@@ -1449,8 +1449,8 @@ BugGrabberDB = {
 		}, -- [183]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Experience.lua",
-			["session"] = 1943,
 			["time"] = "2020/08/19 21:35:15",
+			["session"] = 1943,
 			["counter"] = 6,
 		}, -- [184]
 		{
@@ -1526,19 +1526,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [193]
 		{
-			["message"] = "(null)",
-			["time"] = "2020/07/24 16:00:06",
-			["session"] = 1986,
-			["counter"] = 69,
-		}, -- [194]
-		{
 			["message"] = "Interface\\AddOns\\xVermin\\Chat-Chat.lua:154: attempt to concatenate local 'v' (a table value)",
 			["time"] = "2020/08/21 16:25:30",
 			["locals"] = "chatWidth = 524.321584\nframe = ChatFrame3 {\n SetJustifyV = <function> defined =[C]:-1\n RefreshIfNecessary = <function> defined =[C]:-1\n OnPostShow = <function> defined =[C]:-1\n CalculateLineAlphaValueFromTimestamp = <function> defined =[C]:-1\n isLayoutDirty = false\n tellTimer = 19084.841000\n isDisplayDirty = false\n GetFading = <function> defined =[C]:-1\n IsTextCopyable = <function> defined =[C]:-1\n shouldFadeAfterInactivity = true\n SetIndentedWordWrap = <function> defined =[C]:-1\n GetJustifyV = <function> defined =[C]:-1\n SetFont = <function> defined =[C]:-1\n GetMaxLines = <function> defined =[C]:-1\n GetIndentedWordWrap = <function> defined =[C]:-1\n buttonSide = \"left\"\n GetFont = <function> defined =[C]:-1\n checkedGMOTD = true\n SetMaxLines = <function> defined =[C]:-1\n CalculateSelectingCharacterIndicesForVisibleLine = <function> defined =[C]:-1\n PageUp = <function> defined =[C]:-1\n RefreshDisplay = <function> defined =[C]:-1\n SetFontObject = <function> defined =[C]:-1\n textIsCopyable = false\n SetOnScrollChangedCallback = <function> defined =[C]:-1\n ResizeButton = ChatFrame3ResizeButton {\n }\n overrideFadeTimestamp = 0\n MarkDisplayDirty = <function> defined =[C]:-1\n GetMessageInfo = <function> defined =[C]:-1\n GetOnScrollChangedCallback = <function> defined =[C]:-1\n AtTop = <function> defined =[C]:-1\n GetFontObject = <function> defined =[C]:-1\n fontStringPool = <table> {\n }\n CanEffectivelyFade = <function> defined =[C]:-1\n OnPreSizeChanged = <function> defined =[C]:-1\n OnPostMouseUp = <function> defined =[C]:-1\n GetSpacing = <function> defined =[C]:-1\n OnPreLoad = <function> defined =[C]:-1\n SetSpacing = <function> defined =[C]:-1\n name = \"Groups and parties\"\n CalculateLineSpacing = <function> defined =[C]:-1\n AddMessage = <function> defined @Interface\\AddOns\\xVermin\\Chat.lua:31\n InitializeFontableFrame = <function> defined =[C]:-1\n GetShadowColor = <function> defined =[C]:-1\n isUninteractable = false\n SetOnTextCopiedCallback = <function> defined =[C]:-1\n originalShow = <function> defined =[C]:-1\n AcquireFontString = <function> defined =[C]:-1\n TransformMessages = <function> defined =[C]:-1\n SetShadowColor = <function> defined =[C]:-1\n buttonFrame = ChatFrame3ButtonFrame {\n }\n HasFontObject = <function> defined =[C]:-1\n GetOnTextCopiedCallback = <function> defined =[C]:-1\n SetFading = <function> defined =[C]:-1\n OnPostHide = <function> defined =[C]:-1\n alternativeDefaultLanguage = \"Orcish\"\n isInitialized = 1\n ScrollByAmount = <function> defined =[C]:-1\n GetInsertMode = <function> defined =[C]:-1\n SetTimeVisible = <function> defined =[C]:-1\n hasOwnFontObject = true\n Clear = <function> defined =[C]:-1\n oldAlpha = 0\n channelList = <table> {\n }\n GetTimeVisible = <function> defined =[C]:-1\n IsSelectingText = <function> defined =[C]:-1\n SetTextCopyable = <function> defined =[C]:-1\n Show = <function> defined @Interface\\FrameXML\\FrameLocks.lua:135\n BackFillMessage = <function> defined =[C]:-1\n UnpackageEntry = <function> defined =[C]:-1\n FontStringContainer = <unnamed> {\n }\n SetShadowOffset = <function> defined =[C]:-1\n messageTypeList = <table> {\n }\n flashTimer = 0\n timeVisibleSecs = 120\n PackageEntry = <function> defined =[C]:-1\n MakeFontObjectCustom = <function> defined =[C]:-1\n fontObject = table: 0x11c411070 {\n }\n SetInsertMode = <function> defined =[C]:-1\n originalHide = <function> defined =[C]:-1\n ScrollDown = <function> defined =[C]:-1\n zoneChannelList = <table> {\n }\n SetScrollOffset = <function> defined =[C]:-1\n onDisplayRefreshedCallback = <function> defined =[C]:-1\n insertMode = 2\n ResetSelectingText = <function> defined =[C]:-1\n Hide = <function> defined @Interface\\FrameXML\\FrameLocks.lua:131\n GetTextColor = <function> defined =[C]:-1\n ResetAllFadeTimes = <function> defined =[C]:-1\n defaultLanguage = \"Orcish\"\n PageDown = <function> defined =[C]:-1\n GatherSelectedText = <function> defined =[C]:-1\n GetNumVisibleLines = <function> defined =[C]:-1\n ScrollUp = <function> defined =[C]:-1\n CalculateNumVisibleLines = <function> defined =[C]:-1\n fadeDurationSecs = 3\n ScrollToTop = <function> defined =[C]:-1\n 0 = <userdata>\n U",
 			["stack"] = "Interface\\AddOns\\xVermin\\Chat-Chat.lua:154: in function <Interface\\AddOns\\xVermin\\Chat.lua:52>\nInterface\\AddOns\\xVermin\\Chat-Chat.lua:199: in function <Interface\\AddOns\\xVermin\\Chat.lua:198>",
 			["session"] = 1990,
 			["counter"] = 1,
-		}, -- [195]
+		}, -- [194]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Chat-Chat.lua:153: attempt to concatenate local 'v' (a table value)",
 			["time"] = "2020/08/21 16:26:37",
@@ -1546,7 +1540,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Chat-Chat.lua:153: in function <Interface\\AddOns\\xVermin\\Chat.lua:52>\nInterface\\AddOns\\xVermin\\Chat-Chat.lua:198: in function <Interface\\AddOns\\xVermin\\Chat.lua:197>",
 			["session"] = 1992,
 			["counter"] = 2,
-		}, -- [196]
+		}, -- [195]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Chat-Chat.lua:178: attempt to concatenate local 'v' (a table value)",
 			["time"] = "2020/08/21 16:30:31",
@@ -1554,7 +1548,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Chat-Chat.lua:178: in function <Interface\\AddOns\\xVermin\\Chat.lua:52>\nInterface\\AddOns\\xVermin\\Chat-Chat.lua:226: in function <Interface\\AddOns\\xVermin\\Chat.lua:225>",
 			["session"] = 1995,
 			["counter"] = 3,
-		}, -- [197]
+		}, -- [196]
 		{
 			["message"] = "[string \"print(CanGuildBankRepair())\"]:1: attempt to call global 'CanGuildBankRepair' (a nil value)",
 			["time"] = "2020/08/21 17:16:43",
@@ -1562,7 +1556,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"print(CanGuildBankRepair())\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 2002,
 			["counter"] = 1,
-		}, -- [198]
+		}, -- [197]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'nBuff' tried to call the protected function 'TargetFrameToT:Show()'.",
 			["time"] = "2020/08/21 22:28:16",
@@ -1570,6 +1564,92 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Show'\nInterface\\FrameXML\\TargetFrame.lua:910: in function <Interface\\FrameXML\\TargetFrame.lua:905>\n[C]: ?\n[C]: in function `TargetofTarget_Update'\nInterface\\FrameXML\\TargetFrame.lua:420: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[C]: ?\n[C]: ?",
 			["session"] = 2018,
 			["counter"] = 1,
+		}, -- [198]
+		{
+			["message"] = "Interface\\AddOns\\Examiner\\Examiner-Classic Fan Update (1.09.2).lua:6: attempt to call field 'setScale' (a nil value)",
+			["time"] = "2020/08/22 17:12:01",
+			["locals"] = "gtt = GameTooltip {\n 0 = <userdata>\n SetInboxItem = <function> defined =[C]:-1\n SetBuybackItem = <function> defined =[C]:-1\n shoppingTooltips = <table> {\n }\n SetMerchantItem = <function> defined =[C]:-1\n SetQuestLogItem = <function> defined =[C]:-1\n BottomOverlay = <unnamed> {\n }\n SetTradePlayerItem = <function> defined =[C]:-1\n SetSendMailItem = <function> defined =[C]:-1\n updateTooltip = 0.200000\n SetInventoryItem = <function> defined =[C]:-1\n SetLootRollItem = <function> defined =[C]:-1\n SetHyperlink = <function> defined =[C]:-1\n TopOverlay = <unnamed> {\n }\n SetAuctionSellItem = <function> defined =[C]:-1\n SetBagItem = <function> defined =[C]:-1\n needsReset = true\n SetTradeTargetItem = <function> defined =[C]:-1\n SetLootItem = <function> defined =[C]:-1\n SetQuestItem = <function> defined =[C]:-1\n SetAuctionItem = <function> defined =[C]:-1\n}\nmodName = \"Examiner\"\nex = Examiner {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = 1.200000\n(*temporary) = \"attempt to call field 'setScale' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\Examiner\\Examiner-Classic Fan Update (1.09.2).lua:6: in main chunk",
+			["session"] = 2033,
+			["counter"] = 1,
 		}, -- [199]
+		{
+			["message"] = "Interface\\AddOns\\Examiner\\modcore.lua:126: attempt to get length of field 'options' (a nil value)",
+			["time"] = "2020/08/22 17:12:01",
+			["locals"] = "self = <table> {\n slotBtns = <table> {\n }\n index = 2\n token = \"ItemSlots\"\n hasData = true\n}\noption = <table> {\n label = \"Always Show Item Levels\"\n tip = \"With this enabled, the items will always show their item levels, instead of having to hold down the ALT key.\"\n default = true\n var = \"alwaysShowItemLevel\"\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to get length of field 'options' (a nil value)\"\nex = Examiner {\n modules = <table> {\n }\n GetModuleFromToken = <function> defined @Interface\\AddOns\\Examiner\\modcore.lua:18\n CreateDetailObject = <function> defined @Interface\\AddOns\\Examiner\\modcore.lua:49\n buttons = <table> {\n }\n ModuleCore = <table> {\n }\n SendModuleEvent = <function> defined @Interface\\AddOns\\Examiner\\modcore.lua:34\n CreateModule = <function> defined @Interface\\AddOns\\Examiner\\modcore.lua:27\n 0 = <userdata>\n}\n",
+			["stack"] = "Interface\\AddOns\\Examiner\\modcore.lua:126: in function `AddOption'\nInterface\\AddOns\\Examiner\\Modules\\itemslots.lua:13: in main chunk",
+			["session"] = 2033,
+			["counter"] = 2,
+		}, -- [200]
+		{
+			["message"] = "Interface\\AddOns\\Examiner\\modcore.lua:178: attempt to index field 'model' (a nil value)",
+			["time"] = "2020/08/22 17:12:01",
+			["locals"] = "self = <table> {\n index = 1\n page = <unnamed> {\n }\n button = <unnamed> {\n }\n token = \"More\"\n showItems = true\n hasButton = true\n help = \"Show more modules\nShift click for last active page\"\n hasData = true\n title = \"Module List\"\n}\nvalue = true\nnumBtn = 1\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = 1\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = 1\n(*temporary) = 2\n(*temporary) = nil\n(*temporary) = \"More\"\n(*temporary) = <userdata>\n(*temporary) = 13\n(*temporary) = <userdata>\n(*temporary) = \"OnLeave\"\n(*temporary) = \"attempt to index field 'model' (a nil value)\"\nex = Examiner {\n modules = <table> {\n }\n GetModuleFromToken = <function> defined @Interface\\AddOns\\Examiner\\modcore.lua:18\n CreateDetailObject = <function> defined @Interface\\AddOns\\Examiner\\modcore.lua:49\n buttons = <table> {\n }\n ModuleCore = <table> {\n }\n SendModuleEvent = <function> defined @Interface\\AddOns\\Examiner\\modcore.lua:34\n CreateModule = <function> defined @Interface\\AddOns\\Examiner\\modcore.lua:27\n 0 = <userdata>\n}\nCreateModuleButton = <function> defined @Interface\\AddOns\\Examiner\\modcore.lua:107\n",
+			["stack"] = "Interface\\AddOns\\Examiner\\modcore.lua:178: in function `HasButton'\nInterface\\AddOns\\Examiner\\Modules\\modlist.lua:8: in main chunk",
+			["session"] = 2033,
+			["counter"] = 6,
+		}, -- [201]
+		{
+			["message"] = "(null)",
+			["session"] = 2033,
+			["time"] = "2020/07/24 16:00:06",
+			["counter"] = 79,
+		}, -- [202]
+		{
+			["message"] = "[string \"EXAMINER_TARGET\"]:4: attempt to call method 'DoInspect' (a nil value)",
+			["time"] = "2020/08/22 17:12:33",
+			["locals"] = "keystate = \"down\"\npressure = 1\nangle = -1\nprecision = 0\n(*temporary) = nil\n(*temporary) = Examiner {\n modules = <table> {\n }\n GetModuleFromToken = <function> defined @Interface\\AddOns\\Examiner\\modcore.lua:18\n CreateDetailObject = <function> defined @Interface\\AddOns\\Examiner\\modcore.lua:49\n buttons = <table> {\n }\n ModuleCore = <table> {\n }\n SendModuleEvent = <function> defined @Interface\\AddOns\\Examiner\\modcore.lua:34\n CreateModule = <function> defined @Interface\\AddOns\\Examiner\\modcore.lua:27\n 0 = <userdata>\n}\n(*temporary) = \"target\"\n(*temporary) = \"attempt to call method 'DoInspect' (a nil value)\"\n",
+			["stack"] = "[string \"EXAMINER_TARGET\"]:4: in function <[string \"EXAMINER_TARGET\"]:1>",
+			["session"] = 2033,
+			["counter"] = 1,
+		}, -- [203]
+		{
+			["message"] = "[string \"ExaminerItemButtonHeadSlot.border:CreateBea...\"]:1: attempt to call method 'CreateBeautyBorder' (a nil value)",
+			["time"] = "2020/08/22 17:19:56",
+			["locals"] = "(*temporary) = nil\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = 6\n(*temporary) = \"attempt to call method 'CreateBeautyBorder' (a nil value)\"\n",
+			["stack"] = "[string \"ExaminerItemButtonHeadSlot.border:CreateBea...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 2035,
+			["counter"] = 1,
+		}, -- [204]
+		{
+			["message"] = "Interface\\AddOns\\Examiner\\Modules\\cache.lua:362: attempt to index upvalue 'cfg' (a nil value)",
+			["time"] = "2020/08/22 17:33:04",
+			["locals"] = "self = <table> {\n index = 4\n OnInitialize = <function> defined @Interface\\AddOns\\Examiner\\Modules\\cache.lua:77\n MenuInit = <function> defined @Interface\\AddOns\\Examiner\\Modules\\cache.lua:160\n help = \"Right Click for extended menu\"\n hasButton = true\n hasData = true\n OnCache = <function> defined @Interface\\AddOns\\Examiner\\Modules\\cache.lua:101\n MenuSelect = <function> defined @Interface\\AddOns\\Examiner\\Modules\\cache.lua:207\n cacheSortMethods = <table> {\n }\n scroll = ExaminerCacheScroll {\n }\n BuildCacheList = <function> defined @Interface\\AddOns\\Examiner\\Modules\\cache.lua:360\n OnButtonClick = <function> defined @Interface\\AddOns\\Examiner\\Modules\\cache.lua:86\n title = \"Cached Players\"\n showItems = true\n page = <unnamed> {\n }\n button = <unnamed> {\n }\n activeCacheList = <table> {\n }\n token = \"Cache\"\n}\n(*temporary) = \" \"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index upvalue 'cfg' (a nil value)\"\ncfg = nil\nlistPattern = \"([^%s]+):([^%s]+)\"\nfilterList = <table> {\n}\nlevelPattern = \"%s(%d*)(%-)(%d*)%s\"\nnumberPattern = \"%s%d+%s\"\nactiveCacheList = <table> {\n}\ncache = nil\nIncludeFilteredEntry = <function> defined @Interface\\AddOns\\Examiner\\Modules\\cache.lua:339\nCacheListSortFunc = <function> defined @Interface\\AddOns\\Examiner\\Modules\\cache.lua:280\nUpdateShownItems = <function> defined @Interface\\AddOns\\Examiner\\Modules\\cache.lua:295\n",
+			["stack"] = "Interface\\AddOns\\Examiner\\Modules\\cache.lua:362: in function `BuildCacheList'\nInterface\\AddOns\\Examiner\\Modules\\cache.lua:60: in function <Interface\\AddOns\\Examiner\\Modules\\cache.lua:58>\n[C]: in function `Show'\nInterface\\AddOns\\Examiner\\Examiner-Classic Fan Update (1.09.2).lua:603: in function `Display'\nInterface\\AddOns\\Examiner\\Examiner-Classic Fan Update (1.09.2).lua:808: in function `DoInspect'\n[string \"EXAMINER_TARGET\"]:4: in function <[string \"EXAMINER_TARGET\"]:1>",
+			["session"] = 2040,
+			["counter"] = 2,
+		}, -- [205]
+		{
+			["message"] = "Interface\\AddOns\\Examiner\\Modules\\stats.lua:395: attempt to index upvalue 'cfg' (a nil value)",
+			["time"] = "2020/08/22 17:33:05",
+			["locals"] = "self = <table> {\n index = 5\n InitDetails = <function> defined @Interface\\AddOns\\Examiner\\Modules\\stats.lua:242\n OnInitialize = <function> defined @Interface\\AddOns\\Examiner\\Modules\\stats.lua:53\n OnClearInspect = <function> defined @Interface\\AddOns\\Examiner\\Modules\\stats.lua:131\n OnInspect = <function> defined @Interface\\AddOns\\Examiner\\Modules\\stats.lua:89\n OnCompare = <function> defined @Interface\\AddOns\\Examiner\\Modules\\stats.lua:137\n help = \"Right Click for extended menu\"\n hasButton = true\n hasData = true\n scroll = ExaminerStatsScroll {\n }\n MenuSelect = <function> defined @Interface\\AddOns\\Examiner\\Modules\\stats.lua:194\n BuildShownList = <function> defined @Interface\\AddOns\\Examiner\\Modules\\stats.lua:394\n details = <table> {\n }\n OnConfigChanged = <function> defined @Interface\\AddOns\\Examiner\\Modules\\stats.lua:66\n page = <unnamed> {\n }\n MenuInit = <function> defined @Interface\\AddOns\\Examiner\\Modules\\stats.lua:153\n OnDetailsUpdate = <function> defined @Interface\\AddOns\\Examiner\\Modules\\stats.lua:142\n OnCacheLoaded = <function> defined @Interface\\AddOns\\Examiner\\Modules\\stats.lua:106\n title = \"Gear Statistics\"\n showItems = true\n OnInspectReady = <function> defined @Interface\\AddOns\\Examiner\\Modules\\stats.lua:89\n OnButtonClick = <function> defined @Interface\\AddOns\\Examiner\\Modules\\stats.lua:73\n button = <unnamed> {\n }\n token = \"Stats\"\n}\n(*temporary) = nil\n(*temporary) = \"attempt to index upvalue 'cfg' (a nil value)\"\ncfg = nil\nBuildStatList = <function> defined @Interface\\AddOns\\Examiner\\Modules\\stats.lua:345\nBuildInfoList = <function> defined @Interface\\AddOns\\Examiner\\Modules\\stats.lua:377\n",
+			["stack"] = "Interface\\AddOns\\Examiner\\Modules\\stats.lua:395: in function `BuildShownList'\nInterface\\AddOns\\Examiner\\Modules\\stats.lua:93: in function `?'\nInterface\\AddOns\\Examiner\\modcore.lua:37: in function `SendModuleEvent'\nInterface\\AddOns\\Examiner\\Examiner-Classic Fan Update (1.09.2).lua:697: in function `InspectReady'\nInterface\\AddOns\\Examiner\\Examiner-Classic Fan Update (1.09.2).lua:254: in function `?'\nInterface\\AddOns\\Examiner\\Examiner-Classic Fan Update (1.09.2).lua:355: in function <Interface\\AddOns\\Examiner\\Examiner.lua:354>",
+			["session"] = 2040,
+			["counter"] = 1,
+		}, -- [206]
+		{
+			["message"] = "Interface\\AddOns\\Examiner\\Modules\\cache.lua:259: attempt to index upvalue 'cache' (a nil value)",
+			["time"] = "2020/08/22 17:34:05",
+			["locals"] = "self = <unnamed> {\n 0 = <userdata>\n race = <unnamed> {\n }\n name = <unnamed> {\n }\n id = 8\n value = <unnamed> {\n }\n}\nmotion = true\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index upvalue 'cache' (a nil value)\"\ncache = nil\nCLASS_COLORS = <table> {\n HUNTER = <table> {\n }\n WARRIOR = <table> {\n }\n PALADIN = <table> {\n }\n MAGE = <table> {\n }\n PRIEST = <table> {\n }\n SHAMAN = <table> {\n }\n WARLOCK = <table> {\n }\n DEMONHUNTER = <table> {\n }\n DEATHKNIGHT = <table> {\n }\n DRUID = <table> {\n }\n MONK = <table> {\n }\n ROGUE = <table> {\n }\n}\nex = Examiner {\n 0 = <userdata>\n guid = \"Player-4465-01A2266C\"\n InspectMouseover = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:619\n modules = <table> {\n }\n INSPECT_READY = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:252\n RequestHonorData = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:831\n MODIFIER_STATE_CHANGED = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:242\n bgBottomLeft = <unnamed> {\n }\n HideGTT = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:1016\n info = <table> {\n }\n RequestAchievementData = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:845\n bgBottomRight = <unnamed> {\n }\n SetUnitDetailString = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:448\n unit = \"target\"\n CanInspect = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:592\n ClearInspect = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:635\n ItemButton_OnClick = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:1021\n GetModuleFromToken = <function> defined @Interface\\AddOns\\Examiner\\modcore.lua:18\n UPDATE_MOUSEOVER_UNIT = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:218\n details = <unnamed> {\n }\n DoInspect = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:722\n UNIT_INVENTORY_CHANGED = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:234\n CreateModule = <function> defined @Interface\\AddOns\\Examiner\\modcore.lua:27\n dlgTopLeft = <unnamed> {\n }\n Display = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:598\n OpenSimple = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:610\n UNIT_PORTRAIT_UPDATE = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:225\n INSPECT_HONOR_UPDATE = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:258\n CachePlayer = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:516\n UpdateObjects = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:925\n SetUnitGuildString = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:480\n SetBackgroundTexture = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:976\n LoadPlayerFromCache = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:526\n options = <table> {\n }\n isSelf = false\n SetBackgroundVertex = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:908\n model = <unnamed> {\n }\n ShowBackground = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:916\n requestedHonorData = true\n GetEntryName = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:507\n itemsLoaded = true\n guild = <unnamed> {\n }\n canInspect = true\n cfg = <table> {\n }\n dlgTopRight = <unnamed> {\n }\n unitType = 3\n portrait = <unnamed> {\n }\n bgTopRight = <unnamed> {\n }\n SendModuleEvent = <function> defined @Interface\\AddOns\\Examiner\\modcore.lua:34\n bgTopLeft = <unnamed> {\n }\n VARIABLES_LOADED = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:146\n CacheStatsForCompare = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:889\n title = <unnamed> {\n }\n PLAYER_TARGET_CHANGED = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:208\n compareStats = <table> {\n }\n ScanGear = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:813\n slashCommands = <table> {\n }\n CreateDetailObject = <function> defined @Interface\\AddOns\\Examiner\\modcore.lua:49\n buttons = <table> {",
+			["stack"] = "Interface\\AddOns\\Examiner\\Modules\\cache.lua:259: in function <Interface\\AddOns\\Examiner\\Modules\\cache.lua:258>",
+			["session"] = 2040,
+			["counter"] = 3,
+		}, -- [207]
+		{
+			["message"] = "Interface\\AddOns\\Examiner\\Libs\\AzDropDown.lua:287: ambiguous syntax (function call x new statement) near '('",
+			["time"] = "2020/08/22 17:32:41",
+			["locals"] = "",
+			["stack"] = "",
+			["session"] = 2041,
+			["counter"] = 2,
+		}, -- [208]
+		{
+			["message"] = "Interface\\AddOns\\Examiner\\Modules\\config.lua:86: attempt to index global 'AzDropDown' (a nil value)",
+			["time"] = "2020/08/22 17:32:44",
+			["locals"] = "self = <table> {\n index = 3\n OnInitialize = <function> defined @Interface\\AddOns\\Examiner\\Modules\\config.lua:82\n OnConfigChanged = <function> defined @Interface\\AddOns\\Examiner\\Modules\\config.lua:125\n page = <unnamed> {\n }\n token = \"Config\"\n showItems = true\n help = \"Examiner Settings\"\n hasData = true\n title = \"Configurations\"\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'AzDropDown' (a nil value)\"\ncfg = <table> {\n gearbutton = true\n pvpbutton = true\n makeMovable = true\n caching = <table> {\n }\n cacheSort = \"class\"\n clearInspectOnHide = false\n activePage = 4\n lastActivatedModule = 9\n bottom = 548.659241\n cacheFilter = \"\"\n delayedScanFix = true\n alwaysShowItemLevel = true\n autoInspect = true\n left = 406.967590\n statsViewType = 1\n prevPage = 1\n showBackground = true\n tooltipSmartAnchor = false\n combineAdditiveStats = true\n}\nex = Examiner {\n 0 = <userdata>\n UNIT_PORTRAIT_UPDATE = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:225\n portrait = <unnamed> {\n }\n UpdateObjects = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:925\n CachePlayer = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:516\n InspectMouseover = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:619\n CreateDetailObject = <function> defined @Interface\\AddOns\\Examiner\\modcore.lua:49\n SendModuleEvent = <function> defined @Interface\\AddOns\\Examiner\\modcore.lua:34\n SetUnitGuildString = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:480\n bgTopLeft = <unnamed> {\n }\n VARIABLES_LOADED = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:146\n LoadPlayerFromCache = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:526\n GetModuleFromToken = <function> defined @Interface\\AddOns\\Examiner\\modcore.lua:18\n title = <unnamed> {\n }\n modules = <table> {\n }\n bgTopRight = <unnamed> {\n }\n ModuleCore = <table> {\n }\n MODIFIER_STATE_CHANGED = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:242\n options = <table> {\n }\n bgBottomLeft = <unnamed> {\n }\n InspectReady = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:676\n HideGTT = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:1016\n ItemButton_OnEnter = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:1064\n ItemButton_OnLeave = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:1057\n ItemButton_OnClick = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:1021\n unitStats = <table> {\n }\n info = <table> {\n }\n model = <unnamed> {\n }\n dlgBottomLeft = <unnamed> {\n }\n RequestAchievementData = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:845\n SetBackgroundTexture = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:976\n ShowModulePage = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:947\n GetEntryName = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:507\n bgBottomRight = <unnamed> {\n }\n guild = <unnamed> {\n }\n SetUnitDetailString = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:448\n cfg = <table> {\n }\n dlgTopRight = <unnamed> {\n }\n ShowBackground = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:916\n SetBackgroundVertex = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:908\n DoInspect = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:722\n CanInspect = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:592\n INSPECT_HONOR_UPDATE = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:258\n RequestHonorData = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:831\n CacheStatsForCompare = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:889\n ClearInspect = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:635\n PLAYER_TARGET_CHANGED = <function> defined @Interface\\AddOns\\Examiner\\Examiner.lua:208\n compareStats = <table> {\n }\n ScanGear = <function> defined @Interfa",
+			["stack"] = "Interface\\AddOns\\Examiner\\Modules\\config.lua:86: in function `OnInitialize'\nInterface\\AddOns\\Examiner\\Examiner-Classic Fan Update (1.09.2).lua:187: in function `?'\nInterface\\AddOns\\Examiner\\Examiner-Classic Fan Update (1.09.2).lua:355: in function <Interface\\AddOns\\Examiner\\Examiner.lua:354>",
+			["session"] = 2041,
+			["counter"] = 2,
+		}, -- [209]
 	},
 }
