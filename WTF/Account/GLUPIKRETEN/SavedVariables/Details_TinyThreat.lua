@@ -6,13 +6,14 @@ Details_TinyThreatDB = {
 		["Mxyz - Golemagg"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
+		["Koloman - Golemagg"] = "Default",
 		["Mxys - Golemagg"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Default",
 		["Antun - Golemagg"] = "Default",
-		["Jaroslav - Golemagg"] = "Default",
-		["Dmitar - Golemagg"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
+		["Dmitar - Golemagg"] = "Default",
+		["Jaroslav - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

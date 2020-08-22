@@ -1,22 +1,23 @@
 
 TomTomDB = {
 	["profileKeys"] = {
-		["Mxzq - Golemagg"] = "Default",
-		["Mxym - Golemagg"] = "Default",
+		["Dotwise - Golemagg"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default",
 		["Verminz - Golemagg"] = "Default",
+		["Dmitar - Golemagg"] = "Default",
+		["Mxym - Golemagg"] = "Default",
+		["Mxzq - Golemagg"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
-		["Greenwise - Golemagg"] = "Default",
-		["Dmitar - Golemagg"] = "Default",
+		["Koloman - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Default",
 		["Antun - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Default",
-		["Dotwise - Golemagg"] = "Default",
-		["Mxys - Golemagg"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
+		["Greenwise - Golemagg"] = "Default",
+		["Mxys - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -58,41 +59,44 @@ TomTomDB = {
 TomTomWaypoints = nil
 TomTomWaypointsM = {
 	["profileKeys"] = {
-		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
-		["Mxym - Golemagg"] = "Mxym - Golemagg",
+		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
 		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
-		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Verminz - Golemagg"] = "Verminz - Golemagg",
+		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
+		["Mxym - Golemagg"] = "Mxym - Golemagg",
+		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 		["Augustin - Golemagg"] = "Augustin - Golemagg",
 		["Grgur - Golemagg"] = "Grgur - Golemagg",
-		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
-		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
+		["Koloman - Golemagg"] = "Koloman - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 		["Antun - Golemagg"] = "Antun - Golemagg",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
-		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
-		["Mxys - Golemagg"] = "Mxys - Golemagg",
 		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
-		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
+		["Mxys - Golemagg"] = "Mxys - Golemagg",
 	},
 	["profiles"] = {
-		["Mxzq - Golemagg"] = {
-		},
-		["Mxym - Golemagg"] = {
+		["Dotwise - Golemagg"] = {
 		},
 		["Mxyz - Golemagg"] = {
 		},
-		["Vermin - Golemagg"] = {
-		},
 		["Verminz - Golemagg"] = {
+		},
+		["Dmitar - Golemagg"] = {
+		},
+		["Mxym - Golemagg"] = {
+		},
+		["Mxzq - Golemagg"] = {
 		},
 		["Augustin - Golemagg"] = {
 		},
 		["Grgur - Golemagg"] = {
 		},
-		["Greenwise - Golemagg"] = {
+		["Koloman - Golemagg"] = {
 		},
-		["Dmitar - Golemagg"] = {
+		["Mxyzptlk - Golemagg"] = {
 		},
 		["Klhjakhsgdjh - Golemagg"] = {
 		},
@@ -100,13 +104,13 @@ TomTomWaypointsM = {
 		},
 		["Judawise - Golemagg"] = {
 		},
-		["Dotwise - Golemagg"] = {
-		},
-		["Mxys - Golemagg"] = {
-		},
 		["Jaroslav - Golemagg"] = {
 		},
-		["Mxyzptlk - Golemagg"] = {
+		["Vermin - Golemagg"] = {
+		},
+		["Greenwise - Golemagg"] = {
+		},
+		["Mxys - Golemagg"] = {
 		},
 	},
 }

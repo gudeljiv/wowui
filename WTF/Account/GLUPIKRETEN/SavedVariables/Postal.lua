@@ -1,23 +1,5 @@
 
 Postal3ClassicDB = {
-	["profileKeys"] = {
-		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
-		["Mxym - Golemagg"] = "Mxym - Golemagg",
-		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
-		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
-		["Verminz - Golemagg"] = "Verminz - Golemagg",
-		["Augustin - Golemagg"] = "Augustin - Golemagg",
-		["Grgur - Golemagg"] = "Grgur - Golemagg",
-		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
-		["Vermin - Golemagg"] = "Vermin - Golemagg",
-		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
-		["Antun - Golemagg"] = "Antun - Golemagg",
-		["Judawise - Golemagg"] = "Judawise - Golemagg",
-		["Mxys - Golemagg"] = "Mxys - Golemagg",
-		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
-		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
-		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
-	},
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
@@ -26,37 +8,41 @@ Postal3ClassicDB = {
 				"Dmitar|Golemagg|Horde|2|PRIEST", -- [3]
 				"Grgur|Golemagg|Horde|1|WARLOCK", -- [4]
 				"Jaroslav|Golemagg|Horde|1|DRUID", -- [5]
-				"Mxyzptlk|Golemagg|Horde|6|WARLOCK", -- [6]
-				"Mxyz|Golemagg|Horde|5|PRIEST", -- [7]
-				"Mxzq|Golemagg|Horde|31|HUNTER", -- [8]
-				"Vermin|Golemagg|Horde|28|WARRIOR", -- [9]
+				"Koloman|Golemagg|Horde|1|MAGE", -- [6]
+				"Mxyzptlk|Golemagg|Horde|6|WARLOCK", -- [7]
+				"Mxyz|Golemagg|Horde|5|PRIEST", -- [8]
+				"Mxzq|Golemagg|Horde|31|HUNTER", -- [9]
+				"Vermin|Golemagg|Horde|28|WARRIOR", -- [10]
 			},
 		},
 	},
+	["profileKeys"] = {
+		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
+		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
+		["Verminz - Golemagg"] = "Verminz - Golemagg",
+		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
+		["Mxym - Golemagg"] = "Mxym - Golemagg",
+		["Mxys - Golemagg"] = "Mxys - Golemagg",
+		["Augustin - Golemagg"] = "Augustin - Golemagg",
+		["Grgur - Golemagg"] = "Grgur - Golemagg",
+		["Koloman - Golemagg"] = "Koloman - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
+		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
+		["Antun - Golemagg"] = "Antun - Golemagg",
+		["Judawise - Golemagg"] = "Judawise - Golemagg",
+		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
+		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
+	},
 	["profiles"] = {
-		["Mxzq - Golemagg"] = {
-			["BlackBook"] = {
-				["recent"] = {
-					"Mxyz|Golemagg|Horde", -- [1]
-					"Byceps|Golemagg|Horde", -- [2]
-					"Vermin|Golemagg|Horde", -- [3]
-				},
-			},
-		},
-		["Mxym - Golemagg"] = {
+		["Dotwise - Golemagg"] = {
 		},
 		["Mxyz - Golemagg"] = {
 			["BlackBook"] = {
 				["recent"] = {
 					"Vermin|Golemagg|Horde", -- [1]
 					"Mxzq|Golemagg|Horde", -- [2]
-				},
-			},
-		},
-		["Mxyzptlk - Golemagg"] = {
-			["BlackBook"] = {
-				["recent"] = {
-					"Mxyz|Golemagg|Horde", -- [1]
 				},
 			},
 		},
@@ -67,11 +53,32 @@ Postal3ClassicDB = {
 				},
 			},
 		},
+		["Dmitar - Golemagg"] = {
+		},
+		["Mxym - Golemagg"] = {
+		},
+		["Mxys - Golemagg"] = {
+		},
 		["Augustin - Golemagg"] = {
 		},
 		["Grgur - Golemagg"] = {
 		},
-		["Jaroslav - Golemagg"] = {
+		["Koloman - Golemagg"] = {
+		},
+		["Mxyzptlk - Golemagg"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Mxyz|Golemagg|Horde", -- [1]
+				},
+			},
+		},
+		["Klhjakhsgdjh - Golemagg"] = {
+		},
+		["Antun - Golemagg"] = {
+		},
+		["Judawise - Golemagg"] = {
+		},
+		["Greenwise - Golemagg"] = {
 		},
 		["Vermin - Golemagg"] = {
 			["BlackBook"] = {
@@ -82,19 +89,16 @@ Postal3ClassicDB = {
 				},
 			},
 		},
-		["Klhjakhsgdjh - Golemagg"] = {
+		["Jaroslav - Golemagg"] = {
 		},
-		["Antun - Golemagg"] = {
-		},
-		["Judawise - Golemagg"] = {
-		},
-		["Mxys - Golemagg"] = {
-		},
-		["Dotwise - Golemagg"] = {
-		},
-		["Dmitar - Golemagg"] = {
-		},
-		["Greenwise - Golemagg"] = {
+		["Mxzq - Golemagg"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Mxyz|Golemagg|Horde", -- [1]
+					"Byceps|Golemagg|Horde", -- [2]
+					"Vermin|Golemagg|Horde", -- [3]
+				},
+			},
 		},
 	},
 }
