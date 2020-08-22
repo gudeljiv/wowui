@@ -105,7 +105,17 @@ end
 local f = CreateFrame("Frame")
 f:RegisterEvent("PLAYER_ENTERING_WORLD")
 f:RegisterEvent("CHAT_MSG_SKILL")
-f:SetScript("OnEvent", InitializeTracking)
+f:SetScript(
+	"OnEvent",
+	function(self, event, isInitialLogin, isReloadingUi)
+		if event == "PLAYER_ENTERING_WORLD" and (isInitialLogin or isReloadingUi) then
+			InitializeTracking()
+		end
+		if event == "CHAT_MSG_SKILL" then
+			InitializeTracking()
+		end
+	end
+)
 
 MiniMapTrackingFrame:HookScript(
 	"OnShow",

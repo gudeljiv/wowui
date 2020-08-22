@@ -126,9 +126,14 @@ end
 local f = CreateFrame("frame")
 f:SetScript(
 	"OnEvent",
-	function(self, event)
+	function(self, event, isInitialLogin, isReloadingUi)
 		fs = 0
-		CalculateFreeBagSpace()
+		if event == "PLAYER_ENTERING_WORLD" and (isInitialLogin or isReloadingUi) then
+			CalculateFreeBagSpace()
+		end
+		if event ~= "PLAYER_ENTERING_WORLD" then
+			CalculateFreeBagSpace()
+		end
 	end
 )
 

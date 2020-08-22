@@ -106,15 +106,16 @@ PlayerXP:RegisterEvent("PLAYER_ENTERING_WORLD")
 PlayerXP:RegisterEvent("PLAYER_LEVEL_UP")
 PlayerXP:SetScript(
 	"OnEvent",
-	function(self, event, arg1)
-		if event == "PLAYER_LEVEL_UP" or event == "PLAYER_ENTERING_WORLD" then
+	function(self, event, isInitialLogin, isReloadingUi)
+		if event == "PLAYER_LEVEL_UP" or (event == "PLAYER_ENTERING_WORLD" and (isInitialLogin or isReloadingUi)) then
 			C_Timer.After(
 				1,
 				function()
 					UpdateBar()
 				end
 			)
-		else
+		end
+		if event == "PLAYER_XP_UPDATE" then
 			UpdateBar()
 		end
 	end

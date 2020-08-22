@@ -124,20 +124,22 @@ SlashCmdList["BINDINGS"] = FixBindings
 local f = CreateFrame("Frame")
 f:SetScript(
 	"OnEvent",
-	function(self, event)
-		C_Timer.After(
-			10,
-			function()
-				if not InCombatLockdown() then
-					FixBindings()
-				else
-					self:RegisterEvent("PLAYER_REGEN_ENABLED")
+	function(self, event, isInitialLogin, isReloadingUi)
+		if isInitialLogin or isReloadingUi then
+			C_Timer.After(
+				10,
+				function()
+					if not InCombatLockdown() then
+						FixBindings()
+					else
+						self:RegisterEvent("PLAYER_REGEN_ENABLED")
+					end
 				end
-			end
-		)
+			)
 
-		if event == "PLAYER_REGEN_ENABLED" then
-			self:UnregisterEvent("PLAYER_REGEN_ENABLED")
+			if event == "PLAYER_REGEN_ENABLED" then
+				self:UnregisterEvent("PLAYER_REGEN_ENABLED")
+			end
 		end
 	end
 )

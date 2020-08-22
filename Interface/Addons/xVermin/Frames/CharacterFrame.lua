@@ -48,6 +48,16 @@ local function BorderItemSlots()
 end
 
 local f = CreateFrame("Frame")
-f:SetScript("OnEvent", BorderItemSlots)
 f:RegisterEvent("UNIT_INVENTORY_CHANGED")
 f:RegisterEvent("PLAYER_ENTERING_WORLD")
+f:SetScript(
+	"OnEvent",
+	function(self, event, isInitialLogin, isReloadingUi)
+		if event == "PLAYER_ENTERING_WORLD" and (isInitialLogin or isReloadingUi) then
+			BorderItemSlots()
+		end
+		if event == "UNIT_INVENTORY_CHANGED" then
+			BorderItemSlots()
+		end
+	end
+)

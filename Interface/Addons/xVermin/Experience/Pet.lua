@@ -116,12 +116,14 @@ PetXP:RegisterEvent("UNIT_PET")
 PetXP:RegisterEvent("PLAYER_LEVEL_UP")
 PetXP:SetScript(
 	"OnEvent",
-	function(self, event, arg1)
-		C_Timer.After(
-			1,
-			function()
-				UpdateBar()
-			end
-		)
+	function(self, event, isInitialLogin, isReloadingUi)
+		if not isInitialLogin and not isReloadingUi then
+			C_Timer.After(
+				1,
+				function()
+					UpdateBar()
+				end
+			)
+		end
 	end
 )

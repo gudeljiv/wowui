@@ -47,7 +47,7 @@ XPToLevel:Hide()
 local CurrentXP = UnitXP("player")
 local MaxXP = UnitXPMax("player")
 
-local function UpdateExperience(self, event)
+local function UpdateExperience()
 	if UnitLevel("player") < MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] then
 		MobsToKill:Show()
 		XPToLevel:Show()
@@ -96,23 +96,24 @@ local function UpdateExperience(self, event)
 end
 
 local f = CreateFrame("Frame")
-f:RegisterEvent("PLAYER_XP_UPDATE")
-f:RegisterEvent("PLAYER_ENTERING_WORLD")
 f:RegisterEvent("PLAYER_LEVEL_UP")
+f:RegisterEvent("PLAYER_ENTERING_WORLD")
+f:RegisterEvent("PLAYER_XP_UPDATE")
 f:SetScript(
 	"OnEvent",
-	function(self, event)
-		if event == "PLAYER_LEVEL_UP" or event == "PLAYER_ENTERING_WORLD" then
+	function(self, event, isInitialLogin, isReloadingUi)
+		if event == "PLAYER_LEVEL_UP" or (event == "PLAYER_ENTERING_WORLD" and (isInitialLogin or isReloadingUi)) then
 			C_Timer.After(
 				1,
 				function()
 					MaxXP = UnitXPMax("player")
-					UpdateExperience(self, event)
+					UpdateExperience()
 					MobsToKill:Hide()
 				end
 			)
-		else
-			UpdateExperience(self, event)
+		end
+		if event == "PLAYER_XP_UPDATE" then
+			UpdateExperience()
 		end
 	end
 )
