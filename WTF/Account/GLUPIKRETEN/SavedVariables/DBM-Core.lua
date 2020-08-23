@@ -105,11 +105,7 @@ DBM_AllSavedOptions = {
 		["SWarnClassColor"] = true,
 		["HideTooltips"] = false,
 		["SpecialWarningFontSize2"] = 36,
-		["SpecialWarningFlashCol5"] = {
-			0.2, -- [1]
-			1, -- [2]
-			1, -- [3]
-		},
+		["DisableCinematics"] = false,
 		["RangeFrameSound2"] = "none",
 		["ShowLHFrame"] = true,
 		["DontShowReminders"] = false,
@@ -226,9 +222,9 @@ DBM_AllSavedOptions = {
 		["UseRetailShamanColor"] = false,
 		["CountdownVoice"] = "Corsica",
 		["DontShowNameplateIcons"] = false,
+		["SpecialWarningFlashRepeat2"] = false,
 		["DontShowUserTimers"] = false,
 		["CountdownVoice3"] = "Smooth",
-		["SpecialWarningFlashRepeat2"] = false,
 		["SpecialWarningFlashRepeat5"] = true,
 		["DisableStatusWhisper"] = false,
 		["EventDungMusicMythicFilter"] = true,
@@ -265,8 +261,12 @@ DBM_AllSavedOptions = {
 		["ShowPizzaMessage"] = true,
 		["AdvancedAutologBosses"] = false,
 		["SpecialWarningFlashRepeat1"] = false,
-		["DisableCinematics"] = false,
 		["DontShowSpecialWarningText"] = false,
+		["SpecialWarningFlashCol5"] = {
+			0.2, -- [1]
+			1, -- [2]
+			1, -- [3]
+		},
 		["Enabled"] = true,
 		["AFKHealthWarning"] = false,
 		["SpecialWarningSound2"] = "Interface\\AddOns\\DBM-Core\\sounds\\ClassicSupport\\UR_Algalon_BHole01.ogg",

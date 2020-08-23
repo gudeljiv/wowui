@@ -62,16 +62,12 @@ local function SetChat()
 	ChatFrame1:SetClampRectInsets(0, -1, 0, 0)
 	ChatFrame1:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", 3, 7)
 	ChatFrame1:SetHeight(220)
-	ChatFrame1:SetWidth(chatWidth)
-	ChatFrame1Background:SetAlpha(0.6)
 	FCF_SetChatWindowFontSize(nil, ChatFrame1, 12)
 
 	ChatFrame2:ClearAllPoints()
 	ChatFrame2:SetClampRectInsets(0, -1, 0, 0)
 	ChatFrame2:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", 3, 7)
 	ChatFrame2:SetHeight(196)
-	ChatFrame2:SetWidth(chatWidth)
-	ChatFrame2Background:SetAlpha(0.6)
 	FCF_SetChatWindowFontSize(nil, ChatFrame2, 12)
 
 	local frame = ChatFrame3
@@ -110,10 +106,8 @@ local function SetChat()
 	ChatFrame3:SetClampRectInsets(0, -1, 0, 0)
 	ChatFrame3:SetPoint("BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", -3, 7)
 	ChatFrame3:SetHeight(220)
-	ChatFrame3:SetWidth(chatWidth)
 	ChatFrame3:Show()
 	ChatFrame3Tab:Show()
-	ChatFrame3Background:SetAlpha(0.6)
 
 	local frame = ChatFrame4
 	FCF_SetWindowName(frame, "Looking for Group")
@@ -123,10 +117,8 @@ local function SetChat()
 	ChatFrame4:SetClampRectInsets(0, -1, 0, 0)
 	ChatFrame4:SetPoint("CENTER", ChatFrame1, 0, 240)
 	ChatFrame4:SetHeight(100)
-	ChatFrame4:SetWidth(chatWidth)
 	ChatFrame4:Show()
 	ChatFrame4Tab:Show()
-	ChatFrame4Background:SetAlpha(0.6)
 
 	local frame = FCF_OpenNewWindow("Defense")
 	FCF_SetChatWindowFontSize(nil, frame, 12)
@@ -135,10 +127,8 @@ local function SetChat()
 	ChatFrame5:SetClampRectInsets(0, -1, 0, 0)
 	ChatFrame5:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", 3, 7)
 	ChatFrame5:SetHeight(220)
-	ChatFrame5:SetWidth(chatWidth)
 	ChatFrame5:Show()
 	ChatFrame5Tab:Show()
-	ChatFrame5Background:SetAlpha(0.6)
 
 	for i, v in pairs(
 		{
@@ -149,18 +139,40 @@ local function SetChat()
 			ChatFrame5
 		}
 	) do
+		v:SetWidth(chatWidth)
+
 		v.SetPoint = function()
 		end
+		_G[v:GetName() .. "Background"]:SetAlpha(0.6)
 		_G[v:GetName() .. "Background"].SetAlpha = function()
 		end
 
-		v:HookScript(
-			"OnUpdate",
-			function(self)
-				local btnFrame = _G[v:GetName() .. "ButtonFrame"]
-				btnFrame:Hide()
-			end
-		)
+		local BottomButton = _G[v:GetName() .. "ButtonFrameBottomButton"]
+		local UpButton = _G[v:GetName() .. "ButtonFrameUpButton"]
+		local DownButton = _G[v:GetName() .. "ButtonFrameDownButton"]
+		local MinimizeButton = _G[v:GetName() .. "ButtonFrameMinimizeButton"]
+
+		UpButton:Hide()
+		UpButton.Show = function()
+		end
+
+		DownButton:Hide()
+		DownButton.Show = function()
+		end
+
+		MinimizeButton:Hide()
+		DownButton.Show = function()
+		end
+
+		BottomButton:ClearAllPoints()
+		BottomButton:SetPoint("BOTTOMRIGHT", v, "BOTTOMRIGHT", 0, -5)
+		BottomButton:SetScale(0.7)
+		BottomButton.SetPoint = function()
+		end
+		BottomButton.Hide = function()
+		end
+		BottomButton.SetScale = function()
+		end
 	end
 
 	ChatFrameChannelButton:Hide()

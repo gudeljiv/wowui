@@ -1,9 +1,10 @@
 local _, xVermin = ...
 
 local TrackingIconFrame = CreateFrame("Frame", "TrackingIconFrame", Minimap)
-TrackingIconFrame:SetPoint("TOPLEFT", Minimap, "TOPLEFT", 5, -5)
+TrackingIconFrame:SetPoint("TOPRIGHT", Minimap, "TOPRIGHT", -5, -5)
 TrackingIconFrame:SetWidth(16)
 TrackingIconFrame:SetHeight(16)
+TrackingIconFrame:EnableMouse(false)
 TrackingIconFrame:CreateBeautyBorder(6)
 TrackingIconFrame:SetFrameStrata("LOW")
 TrackingIconFrame.Icon = TrackingIconFrame:CreateTexture()

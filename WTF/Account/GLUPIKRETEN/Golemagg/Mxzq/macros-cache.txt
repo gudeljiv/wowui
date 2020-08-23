@@ -1,3 +1,9 @@
+VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Raptor Strike
+/cast Mongoose Bite
+END
 VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast feign death
@@ -37,10 +43,4 @@ VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast rapid fire
 /cast blood fury
-END
-VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/startattack
-/cast Raptor Strike
-/cast Mongoose Bite
 END
