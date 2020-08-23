@@ -19,7 +19,7 @@ Details_TinyThreatDB = {
 		["Default"] = {
 			["enabled"] = true,
 			["animate"] = true,
-			["useclasscolors"] = false,
+			["author"] = "Details! Team",
 			["playercolor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -31,7 +31,7 @@ Details_TinyThreatDB = {
 			["dividebyhundred"] = true,
 			["showamount"] = false,
 			["useplayercolor"] = false,
-			["author"] = "Details! Team",
+			["useclasscolors"] = false,
 			["alwaysshowme"] = true,
 		},
 	},
