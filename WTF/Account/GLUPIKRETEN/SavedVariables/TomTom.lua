@@ -6,7 +6,7 @@ TomTomDB = {
 		["Verminz - Golemagg"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
 		["Mxym - Golemagg"] = "Default",
-		["Mxys - Golemagg"] = "Default",
+		["Mxzq - Golemagg"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
 		["Koloman - Golemagg"] = "Default",
@@ -14,10 +14,10 @@ TomTomDB = {
 		["Klhjakhsgdjh - Golemagg"] = "Default",
 		["Antun - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Default",
-		["Greenwise - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
-		["Mxzq - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
+		["Greenwise - Golemagg"] = "Default",
+		["Mxys - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -64,7 +64,7 @@ TomTomWaypointsM = {
 		["Verminz - Golemagg"] = "Verminz - Golemagg",
 		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
 		["Mxym - Golemagg"] = "Mxym - Golemagg",
-		["Mxys - Golemagg"] = "Mxys - Golemagg",
+		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 		["Augustin - Golemagg"] = "Augustin - Golemagg",
 		["Grgur - Golemagg"] = "Grgur - Golemagg",
 		["Koloman - Golemagg"] = "Koloman - Golemagg",
@@ -72,10 +72,10 @@ TomTomWaypointsM = {
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 		["Antun - Golemagg"] = "Antun - Golemagg",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
-		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
-		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
-		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
+		["Mxys - Golemagg"] = "Mxys - Golemagg",
 	},
 	["profiles"] = {
 		["Dotwise - Golemagg"] = {
@@ -88,7 +88,7 @@ TomTomWaypointsM = {
 		},
 		["Mxym - Golemagg"] = {
 		},
-		["Mxys - Golemagg"] = {
+		["Mxzq - Golemagg"] = {
 		},
 		["Augustin - Golemagg"] = {
 		},
@@ -104,13 +104,13 @@ TomTomWaypointsM = {
 		},
 		["Judawise - Golemagg"] = {
 		},
-		["Greenwise - Golemagg"] = {
+		["Jaroslav - Golemagg"] = {
 		},
 		["Vermin - Golemagg"] = {
 		},
-		["Jaroslav - Golemagg"] = {
+		["Greenwise - Golemagg"] = {
 		},
-		["Mxzq - Golemagg"] = {
+		["Mxys - Golemagg"] = {
 		},
 	},
 }
