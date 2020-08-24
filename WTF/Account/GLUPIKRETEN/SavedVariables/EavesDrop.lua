@@ -24,6 +24,7 @@ EavesDropDB = {
 		["Pepecocorita - Genesis"] = "Default",
 		["Mxys - Golemagg"] = "Default",
 		["Spija - Genesis"] = "Spija - Genesis",
+		["Vermins - Stonespine"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
 		["Dotwise - Golemagg"] = "Default",
 		["Korupcija - Genesis"] = "Default",
@@ -40,27 +41,29 @@ EavesDropDB = {
 		["Dotwise - Golemagg"] = {
 		},
 		["Mxyz - Golemagg"] = {
+			["LINEWIDTH"] = 130,
 			["BORDER"] = {
 				["a"] = 0,
 				["b"] = 0.607843137254902,
 				["g"] = 0.607843137254902,
 				["r"] = 0.607843137254902,
 			},
-			["LINEWIDTH"] = 130,
+			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
+			["SCROLLBUTTON"] = true,
 			["TEXTSIZE"] = 13,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
-			["SCROLLBUTTON"] = true,
-			["LINEHEIGHT"] = 16,
 			["HIDETAB"] = true,
+			["LINEHEIGHT"] = 16,
 			["NUMLINES"] = 16,
-			["y"] = 236.195578993564,
 		},
 		["Pitchwise - Golemagg"] = {
 		},
 		["Elohssa - Stonespine"] = {
+		},
+		["Vermins - Stonespine"] = {
 		},
 		["Paydo - Dreadmist"] = {
 			["LINEWIDTH"] = 130,
@@ -74,12 +77,12 @@ EavesDropDB = {
 			["x"] = 551.714104134467,
 			["HIDETAB"] = true,
 			["TEXTSIZE"] = 13,
+			["SCROLLBUTTON"] = true,
+			["NUMLINES"] = 16,
+			["LINEHEIGHT"] = 16,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
-			["NUMLINES"] = 16,
-			["LINEHEIGHT"] = 16,
-			["SCROLLBUTTON"] = true,
 		},
 		["Greenwise - Golemagg"] = {
 		},
@@ -97,14 +100,14 @@ EavesDropDB = {
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
-			["SCROLLBUTTON"] = true,
+			["NUMLINES"] = 16,
 			["TEXTSIZE"] = 13,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
 			["HIDETAB"] = true,
 			["LINEHEIGHT"] = 16,
-			["NUMLINES"] = 16,
+			["SCROLLBUTTON"] = true,
 		},
 		["Verminz - Golemagg"] = {
 			["LINEWIDTH"] = 100,
@@ -118,7 +121,7 @@ EavesDropDB = {
 			["SCROLLBUTTON"] = true,
 			["HIDETAB"] = true,
 		},
-		["DRUID"] = {
+		["Spija - Genesis"] = {
 		},
 		["Judawise - Golemagg"] = {
 		},
@@ -145,27 +148,27 @@ EavesDropDB = {
 		["Klhjakhsgdjh - Golemagg"] = {
 		},
 		["Default"] = {
-			["LINEWIDTH"] = 130,
 			["BORDER"] = {
 				["a"] = 0,
 				["b"] = 0.607843137254902,
 				["g"] = 0.607843137254902,
 				["r"] = 0.607843137254902,
 			},
-			["y"] = 236.195578993564,
+			["LINEWIDTH"] = 130,
 			["x"] = 551.714104134467,
-			["NUMLINES"] = 16,
 			["TEXTSIZE"] = 13,
+			["NUMLINES"] = 16,
 			["SCROLLBUTTON"] = true,
-			["HIDETAB"] = true,
 			["LINEHEIGHT"] = 16,
+			["HIDETAB"] = true,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
+			["y"] = 236.195578993564,
 		},
 		["Golemagg"] = {
 		},
-		["Spija - Genesis"] = {
+		["DRUID"] = {
 		},
 		["Kosturko - Golemagg"] = {
 		},

@@ -1,12 +1,18 @@
 
 GMMONEY = {
+	["Stonespine"] = {
+		["Vermins"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "WARRIOR",
+		},
+	},
 	["Golemagg"] = {
 		["Mxzq"] = {
-			["GOLD"] = 1946517,
+			["GOLD"] = 1965890,
 			["CLASS"] = "HUNTER",
 		},
 		["Mxyz"] = {
-			["GOLD"] = 2583147,
+			["GOLD"] = 2597838,
 			["CLASS"] = "PRIEST",
 		},
 		["Mxyzptlk"] = {

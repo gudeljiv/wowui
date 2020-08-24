@@ -6,6 +6,7 @@ TomTomDB = {
 		["Verminz - Golemagg"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
 		["Mxym - Golemagg"] = "Default",
+		["Vermins - Stonespine"] = "Default",
 		["Mxzq - Golemagg"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
@@ -64,6 +65,7 @@ TomTomWaypointsM = {
 		["Verminz - Golemagg"] = "Verminz - Golemagg",
 		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
 		["Mxym - Golemagg"] = "Mxym - Golemagg",
+		["Vermins - Stonespine"] = "Vermins - Stonespine",
 		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 		["Augustin - Golemagg"] = "Augustin - Golemagg",
 		["Grgur - Golemagg"] = "Grgur - Golemagg",
@@ -87,6 +89,8 @@ TomTomWaypointsM = {
 		["Dmitar - Golemagg"] = {
 		},
 		["Mxym - Golemagg"] = {
+		},
+		["Vermins - Stonespine"] = {
 		},
 		["Mxzq - Golemagg"] = {
 		},

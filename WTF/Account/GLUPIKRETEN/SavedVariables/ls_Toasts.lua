@@ -7,6 +7,7 @@ LS_TOASTS_GLOBAL_CONFIG = {
 		["Elohssa - Stonespine"] = "Default",
 		["Paydo - Dreadmist"] = "Default",
 		["Kosturko - Golemagg"] = "Default",
+		["Vermins - Stonespine"] = "Default",
 		["Korupcija - Stonespine"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
 		["Verminz - Golemagg"] = "Default",

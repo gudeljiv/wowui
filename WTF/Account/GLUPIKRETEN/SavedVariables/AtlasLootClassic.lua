@@ -7,6 +7,7 @@ AtlasLootClassicDB = {
 		["Elohssa - Stonespine"] = "Elohssa - Stonespine",
 		["Paydo - Dreadmist"] = "Paydo - Dreadmist",
 		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
+		["Vermins - Stonespine"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
 		["Verminz - Golemagg"] = "Verminz - Golemagg",
 		["Korupcija - Stonespine"] = "Korupcija - Stonespine",
@@ -96,6 +97,8 @@ AtlasLootClassicDB = {
 					0, -- [5]
 				},
 			},
+		},
+		["Vermins - Stonespine"] = {
 		},
 		["Dmitar - Golemagg"] = {
 		},

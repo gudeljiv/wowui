@@ -6,6 +6,7 @@ Postal3ClassicDB = {
 		["Verminz - Golemagg"] = "Verminz - Golemagg",
 		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
 		["Mxym - Golemagg"] = "Mxym - Golemagg",
+		["Vermins - Stonespine"] = "Vermins - Stonespine",
 		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 		["Augustin - Golemagg"] = "Augustin - Golemagg",
 		["Grgur - Golemagg"] = "Grgur - Golemagg",
@@ -31,7 +32,8 @@ Postal3ClassicDB = {
 				"Mxyzptlk|Golemagg|Horde|6|WARLOCK", -- [7]
 				"Mxyz|Golemagg|Horde|5|PRIEST", -- [8]
 				"Mxzq|Golemagg|Horde|31|HUNTER", -- [9]
-				"Vermin|Golemagg|Horde|28|WARRIOR", -- [10]
+				"Vermins|Stonespine|Horde|2|WARRIOR", -- [10]
+				"Vermin|Golemagg|Horde|28|WARRIOR", -- [11]
 			},
 		},
 	},
@@ -56,6 +58,8 @@ Postal3ClassicDB = {
 		["Dmitar - Golemagg"] = {
 		},
 		["Mxym - Golemagg"] = {
+		},
+		["Vermins - Stonespine"] = {
 		},
 		["Mxzq - Golemagg"] = {
 			["BlackBook"] = {
