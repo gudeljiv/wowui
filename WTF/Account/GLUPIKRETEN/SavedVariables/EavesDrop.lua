@@ -50,20 +50,20 @@ EavesDropDB = {
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
-			["SCROLLBUTTON"] = true,
-			["TEXTSIZE"] = 13,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
+			["TEXTSIZE"] = 13,
+			["NUMLINES"] = 16,
 			["HIDETAB"] = true,
 			["LINEHEIGHT"] = 16,
-			["NUMLINES"] = 16,
+			["SCROLLBUTTON"] = true,
 		},
 		["Pitchwise - Golemagg"] = {
 		},
 		["Elohssa - Stonespine"] = {
 		},
-		["Vermins - Stonespine"] = {
+		["Greenwise - Golemagg"] = {
 		},
 		["Paydo - Dreadmist"] = {
 			["LINEWIDTH"] = 130,
@@ -84,30 +84,28 @@ EavesDropDB = {
 				["a"] = 0.4,
 			},
 		},
-		["Greenwise - Golemagg"] = {
-		},
 		["Dmitar - Golemagg"] = {
 		},
 		["Mxys - Golemagg"] = {
 		},
 		["Mxzq - Golemagg"] = {
-			["LINEWIDTH"] = 130,
 			["BORDER"] = {
 				["a"] = 0,
 				["r"] = 0.607843137254902,
 				["g"] = 0.607843137254902,
 				["b"] = 0.607843137254902,
 			},
-			["y"] = 236.195578993564,
+			["LINEWIDTH"] = 130,
 			["x"] = 551.714104134467,
-			["NUMLINES"] = 16,
 			["TEXTSIZE"] = 13,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
-			["HIDETAB"] = true,
-			["LINEHEIGHT"] = 16,
 			["SCROLLBUTTON"] = true,
+			["LINEHEIGHT"] = 16,
+			["HIDETAB"] = true,
+			["NUMLINES"] = 16,
+			["y"] = 236.195578993564,
 		},
 		["Verminz - Golemagg"] = {
 			["LINEWIDTH"] = 100,
@@ -121,17 +119,19 @@ EavesDropDB = {
 			["SCROLLBUTTON"] = true,
 			["HIDETAB"] = true,
 		},
-		["Spija - Genesis"] = {
-		},
 		["Judawise - Golemagg"] = {
+		},
+		["Spija - Genesis"] = {
 		},
 		["Antun - Golemagg"] = {
 		},
 		["Korupcija - Stonespine"] = {
 		},
-		["Mxym - Golemagg"] = {
-		},
 		["Vermin - Golemagg"] = {
+		},
+		["Vermins - Stonespine"] = {
+		},
+		["Mxym - Golemagg"] = {
 		},
 		["Jaroslav - Golemagg"] = {
 		},
@@ -148,23 +148,23 @@ EavesDropDB = {
 		["Klhjakhsgdjh - Golemagg"] = {
 		},
 		["Default"] = {
+			["LINEWIDTH"] = 130,
 			["BORDER"] = {
 				["a"] = 0,
 				["b"] = 0.607843137254902,
 				["g"] = 0.607843137254902,
 				["r"] = 0.607843137254902,
 			},
-			["LINEWIDTH"] = 130,
+			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
-			["TEXTSIZE"] = 13,
-			["NUMLINES"] = 16,
 			["SCROLLBUTTON"] = true,
-			["LINEHEIGHT"] = 16,
-			["HIDETAB"] = true,
+			["TEXTSIZE"] = 13,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
-			["y"] = 236.195578993564,
+			["HIDETAB"] = true,
+			["LINEHEIGHT"] = 16,
+			["NUMLINES"] = 16,
 		},
 		["Golemagg"] = {
 		},

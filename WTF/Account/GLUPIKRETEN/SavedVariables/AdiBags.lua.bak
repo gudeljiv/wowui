@@ -132,6 +132,7 @@ AdiBagsDB = {
 		["Dmitar - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",
+		["Vermins - Stonespine"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -159,9 +160,8 @@ AdiBagsDB = {
 					["yOffset"] = 386.666717529297,
 				},
 				["Backpack"] = {
-					["xOffset"] = -245.844970703125,
-					["point"] = "TOPRIGHT",
-					["yOffset"] = -449.282165527344,
+					["xOffset"] = -266.708862304688,
+					["yOffset"] = 441.591064453125,
 				},
 				["Bank"] = {
 					["xOffset"] = 441.011413574219,

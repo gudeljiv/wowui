@@ -83,13 +83,6 @@ local function UpdateBarValueAndColor(self, event)
 end
 
 local function UpdateBar()
-	for factionIndex = 1, GetNumFactions() do
-		name, description, standingId, bottomValue, topValue, earnedValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild = GetFactionInfo(factionIndex)
-		if isHeader == nil then
-			DEFAULT_CHAT_FRAME:AddMessage("Faction: " .. name .. " - " .. earnedValue)
-		end
-	end
-
 	local factionIndex = 1
 	local lastFactionName
 	repeat
@@ -98,7 +91,7 @@ local function UpdateBar()
 			break
 		end
 		lastFactionName = name
-		DEFAULT_CHAT_FRAME:AddMessage("Faction: " .. lastFactionName .. " - " .. earnedValue)
+		-- print("Faction: " .. lastFactionName .. " - " .. earnedValue)
 		factionIndex = factionIndex + 1
 	until factionIndex > 200
 	-- UpdateBarVisibility()

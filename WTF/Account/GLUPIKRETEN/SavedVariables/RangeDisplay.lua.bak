@@ -2,6 +2,7 @@
 RangeDisplayDB3 = {
 	["profileKeys"] = {
 		["Mxzq - Golemagg"] = "Default",
+		["Vermins - Stonespine"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",

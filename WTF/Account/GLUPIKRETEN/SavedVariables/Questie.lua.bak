@@ -22,13 +22,13 @@ QuestieConfig = {
 		["Korupcija - Stonespine"] = "Default",
 		["Mxym - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
+		["Jaroslav - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default",
 		["Vermins - Dreadmist"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
 		["Koloman - Golemagg"] = "Default",
-		["Jaroslav - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Default",
 		["Antun - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Default",
@@ -51,6 +51,8 @@ QuestieConfig = {
 	["char"] = {
 		["Mxzq - Golemagg"] = {
 			["TrackerWidth"] = 0,
+			["AutoUntrackedQuests"] = {
+			},
 			["migrationVersion"] = 1,
 			["complete"] = {
 				[6282] = true,
@@ -86,62 +88,62 @@ QuestieConfig = {
 				[880] = true,
 				[888] = true,
 				[896] = true,
-				[6394] = true,
+				[6301] = true,
 				[5041] = true,
-				[6393] = true,
-				[6386] = true,
-				[6385] = true,
+				[1111] = true,
+				[1149] = true,
+				[1176] = true,
 				[817] = true,
 				[825] = true,
-				[6384] = true,
-				[6383] = true,
+				[6283] = true,
+				[913] = true,
 				[849] = true,
-				[6301] = true,
+				[794] = true,
 				[865] = true,
-				[6365] = true,
+				[6385] = true,
 				[881] = true,
 				[6381] = true,
 				[4921] = true,
 				[905] = true,
 				[786] = true,
-				[794] = true,
+				[6383] = true,
 				[4542] = true,
-				[1104] = true,
+				[6384] = true,
 				[818] = true,
 				[826] = true,
 				[834] = true,
-				[842] = true,
+				[6386] = true,
 				[850] = true,
-				[6283] = true,
-				[3261] = true,
+				[6062] = true,
+				[5052] = true,
 				[1105] = true,
 				[882] = true,
 				[890] = true,
-				[6082] = true,
-				[906] = true,
-				[6081] = true,
-				[6062] = true,
-				[5441] = true,
-				[5052] = true,
 				[4865] = true,
-				[3911] = true,
-				[835] = true,
-				[843] = true,
-				[851] = true,
+				[906] = true,
 				[4841] = true,
+				[2161] = true,
+				[1087] = true,
+				[6393] = true,
+				[835] = true,
+				[3911] = true,
+				[5441] = true,
+				[6394] = true,
+				[851] = true,
+				[4402] = true,
 				[867] = true,
 				[875] = true,
-				[1087] = true,
+				[788] = true,
 				[891] = true,
 				[899] = true,
 				[907] = true,
-				[788] = true,
-				[4402] = true,
+				[6081] = true,
+				[6082] = true,
 				[804] = true,
 				[1492] = true,
 				[6083] = true,
 				[3087] = true,
-				[2161] = true,
+				[843] = true,
 				[844] = true,
 				[852] = true,
 				[3281] = true,
@@ -149,17 +151,18 @@ QuestieConfig = {
 				[876] = true,
 				[884] = true,
 				[892] = true,
-				[1176] = true,
-				[1149] = true,
+				[842] = true,
+				[1104] = true,
 				[789] = true,
-				[1111] = true,
+				[3261] = true,
 				[805] = true,
 				[1110] = true,
 				[4821] = true,
-				[913] = true,
+				[6365] = true,
 			},
 			["TrackerHiddenQuests"] = {
 			},
+			["trackerSetpoint"] = "AUTO",
 			["collapsedQuests"] = {
 			},
 			["journey"] = {
@@ -2061,35 +2064,38 @@ QuestieConfig = {
 					["NewLevel"] = 31,
 				}, -- [279]
 			},
-			["trackerSetpoint"] = "AUTO",
 			["TrackerHiddenObjectives"] = {
 			},
 			["collapsedZones"] = {
-			},
-			["AutoUntrackedQuests"] = {
 			},
 			["TrackedQuests"] = {
 			},
 		},
 		["Mxyz - Golemagg"] = {
-			["TrackerWidth"] = 0,
-			["AutoUntrackedQuests"] = {
+			["collapsedZones"] = {
 			},
 			["migrationVersion"] = 1,
 			["complete"] = {
 				[5441] = true,
-				[364] = true,
+				[804] = true,
 				[4402] = true,
 				[363] = true,
-				[804] = true,
+				[790] = true,
 				[3097] = true,
 				[788] = true,
-				[790] = true,
+				[364] = true,
 			},
 			["TrackerHiddenQuests"] = {
 			},
-			["trackerSetpoint"] = "AUTO",
 			["collapsedQuests"] = {
+			},
+			["TrackedQuests"] = {
+			},
+			["trackerSetpoint"] = "AUTO",
+			["TrackerHiddenObjectives"] = {
+			},
+			["TrackerWidth"] = 0,
+			["AutoUntrackedQuests"] = {
 			},
 			["journey"] = {
 				{
@@ -2266,12 +2272,6 @@ QuestieConfig = {
 					["SubType"] = "Abandon",
 					["Event"] = "Quest",
 				}, -- [26]
-			},
-			["collapsedZones"] = {
-			},
-			["TrackerHiddenObjectives"] = {
-			},
-			["TrackedQuests"] = {
 			},
 		},
 		["Verminz - Golemagg"] = {
@@ -6273,7 +6273,7 @@ QuestieConfig = {
 				[3921] = true,
 				[825] = true,
 				[857] = true,
-				[805] = true,
+				[550] = true,
 				[3923] = true,
 				[6301] = true,
 				[3924] = true,
@@ -6283,16 +6283,16 @@ QuestieConfig = {
 				[858] = true,
 				[890] = true,
 				[837] = true,
-				[1096] = true,
+				[805] = true,
 				[6283] = true,
 				[1068] = true,
 				[6571] = true,
 				[827] = true,
-				[868] = true,
+				[6641] = true,
 				[891] = true,
 				[5041] = true,
 				[804] = true,
-				[6386] = true,
+				[868] = true,
 				[581] = true,
 				[541] = true,
 				[828] = true,
@@ -6360,13 +6360,13 @@ QuestieConfig = {
 				[5730] = true,
 				[549] = true,
 				[6385] = true,
-				[6641] = true,
+				[6386] = true,
 				[900] = true,
 				[1095] = true,
 				[6384] = true,
 				[499] = true,
 				[5881] = true,
-				[550] = true,
+				[1096] = true,
 				[6393] = true,
 				[6394] = true,
 				[901] = true,
@@ -10011,10 +10011,24 @@ QuestieConfig = {
 			},
 		},
 		["Vermins - Stonespine"] = {
+			["collapsedZones"] = {
+			},
+			["AutoUntrackedQuests"] = {
+			},
+			["migrationVersion"] = 1,
+			["complete"] = {
+				[3911] = true,
+				[4641] = true,
+			},
+			["TrackerHiddenQuests"] = {
+			},
+			["trackerSetpoint"] = "AUTO",
+			["collapsedQuests"] = {
+			},
+			["TrackerHiddenObjectives"] = {
+			},
 			["journey"] = {
 				{
-					["Party"] = {
-					},
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
 					["Level"] = 1,
@@ -10022,8 +10036,6 @@ QuestieConfig = {
 					["Timestamp"] = 1567348022,
 				}, -- [1]
 				{
-					["Party"] = {
-					},
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
 					["Level"] = 1,
@@ -10031,8 +10043,6 @@ QuestieConfig = {
 					["Timestamp"] = 1567348033,
 				}, -- [2]
 				{
-					["Party"] = {
-					},
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
 					["Level"] = 1,
@@ -10041,14 +10051,10 @@ QuestieConfig = {
 				}, -- [3]
 				{
 					["Timestamp"] = 1567348789,
-					["Party"] = {
-					},
 					["Event"] = "Level",
 					["NewLevel"] = 2,
 				}, -- [4]
 				{
-					["Party"] = {
-					},
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
 					["Level"] = 2,
@@ -10056,13 +10062,6 @@ QuestieConfig = {
 					["Timestamp"] = 1567349003,
 				}, -- [5]
 				{
-					["Party"] = {
-						{
-							["Class"] = "Priest",
-							["Name"] = "Konac",
-							["Level"] = 2,
-						}, -- [1]
-					},
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
 					["Level"] = 2,
@@ -10070,10 +10069,9 @@ QuestieConfig = {
 					["Timestamp"] = 1567350155,
 				}, -- [6]
 			},
-			["complete"] = {
-				[4641] = true,
-				[3911] = true,
+			["TrackedQuests"] = {
 			},
+			["TrackerWidth"] = 0,
 		},
 		["Vermin - Golemagg"] = {
 			["showRepeatableQuests"] = false,
