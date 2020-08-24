@@ -6,70 +6,14 @@ f:SetScript(
 	function(self, event, isInitialLogin, isReloadingUi)
 		if isInitialLogin or isReloadingUi then
 			-------------------------------------------
-			-- adjust position of OmenBarAnchor
+			-- Position of choco bars
 			-------------------------------------------
-			if (IsAddOnLoaded("Omen")) then
-				local OriginalSetPointOmen = getmetatable(OmenAnchor).__index.SetPoint
-				local function MoveOmen(self)
-					self:ClearAllPoints()
-					OriginalSetPointOmen(self, "CENTER", 0, -237)
-				end
-				hooksecurefunc(OmenAnchor, "SetPoint", MoveOmen)
-				MoveOmen(OmenAnchor)
-			end
-
-			-------------------------------------------
-			-- adjust position of Details TinyThreat
-			-------------------------------------------
-			if (IsAddOnLoaded("Details_TinyThreat")) then
-				C_Timer.After(
-					15,
-					function()
-						Details_TinyThreat:ClearAllPoints()
-						Details_TinyThreat:SetPoint("TOPRIGHT", "ChatFrame3", "TOPLEFT", -2, 2)
-					end
-				)
-			end
-
-			-------------------------------------------
-			-- adjust position of Recount
-			-------------------------------------------
-			if (IsAddOnLoaded("Recount")) then
-				-- Move it
-				Recount_MainWindow:Show()
-				Recount_MainWindow:ClearAllPoints()
-				Recount_MainWindow:SetMovable(true)
-				Recount_MainWindow:SetUserPlaced(true)
-				Recount_MainWindow:SetWidth(300)
-				Recount_MainWindow:SetHeight(110)
-				Recount_MainWindow:SetPoint("TOPLEFT", UIParent, "TOPLEFT", 5, 7)
-
-				-- Stop the default UI from moving it back
-				Recount_MainWindow.ClearAllPoints = function()
-				end
-				Recount_MainWindow.SetPoint = function()
-				end
-			end
-
-			-------------------------------------------
-			-- adjust position of RangeDisplay frames
-			-------------------------------------------
-			if (IsAddOnLoaded("RangeDisplay")) then
-				if _G["RangeDisplayMainFrame_playertarget"] ~= nil then
-					RangeDisplayMainFrame_playertarget:SetPoint("CENTER", UIParent, "CENTER", 0, -20)
-					RangeDisplayMainFrame_playertarget.ClearAllPoints = function()
-					end
-					RangeDisplayMainFrame_playertarget.SetPoint = function()
-					end
-				end
-				if _G["RangeDisplayMainFrame_mouseover"] ~= nil then
-					RangeDisplayMainFrame_mouseover:SetPoint("CENTER", UIParent, "CENTER", 0, -35)
-					RangeDisplayMainFrame_mouseover.ClearAllPoints = function()
-					end
-					RangeDisplayMainFrame_mouseover.SetPoint = function()
-					end
-				end
-			end
+			ChocolateBar1:ClearAllPoints()
+			ChocolateBar1:SetPoint("LEFT", CustomContainer_1, "LEFT", 5, 0)
+			ChocolateBar1:SetWidth(145)
+			ChocolateBar2:ClearAllPoints()
+			ChocolateBar2:SetPoint("LEFT", CustomContainer_2, "LEFT", 5, 0)
+			ChocolateBar2:SetWidth(145)
 
 			-------------------------------------------
 			-- Reposition toast frame.
@@ -126,27 +70,6 @@ f:SetScript(
 			)
 
 			-------------------------------------------
-			-- Position of choco bars
-			-------------------------------------------
-			ChocolateBar1:ClearAllPoints()
-			ChocolateBar1:SetPoint("LEFT", CustomContainer_1, "LEFT", 5, 0)
-			ChocolateBar1:SetWidth(145)
-			ChocolateBar2:ClearAllPoints()
-			ChocolateBar2:SetPoint("LEFT", CustomContainer_2, "LEFT", 5, 0)
-			ChocolateBar2:SetWidth(145)
-
-			-------------------------------------------
-			-- monkey quest
-			-------------------------------------------
-			MonkeyQuestFrame:ClearAllPoints()
-			MonkeyQuestFrame:SetPoint("TOPRIGHT", "CustomContainer_2", "TOPLEFT", -10, 0)
-			MonkeyQuestFrame:CreateBeautyBorder(8)
-			MonkeyQuestFrame.ClearAllPoints = function()
-			end
-			MonkeyQuestFrame.SetPoint = function()
-			end
-
-			-------------------------------------------
 			-- druability frame
 			-------------------------------------------
 			DurabilityFrame:ClearAllPoints()
@@ -172,14 +95,12 @@ f:SetScript(
 			-------------------------------------------
 			-- CastingBarFrame Text
 			-------------------------------------------
-
 			CastingBarFrame.Text:ClearAllPoints()
 			CastingBarFrame.Text:SetPoint("CENTER", CastingBarFrame, 0, 2)
 
 			-------------------------------------------
 			-- action bars
 			-------------------------------------------
-
 			MainMenuExpBar:Hide()
 			MainMenuExpBar:HookScript(
 				"OnShow",
@@ -226,7 +147,6 @@ f:SetScript(
 			-------------------------------------------
 			--- pet, player and target frame positioning
 			-------------------------------------------
-
 			PetFrame:HookScript(
 				"OnUpdate",
 				function(self)
@@ -279,36 +199,3 @@ local function TargetFrameTextAdjustment()
 	TargetFrameManaBarText:SetScale(0.8)
 end
 hooksecurefunc("TargetFrame_CheckClassification", TargetFrameTextAdjustment)
-
--------------------------------------------
--- Fast loot function
--------------------------------------------
-local tDelay = 0
-local function FastLoot()
-	if GetTime() - tDelay >= 0.3 then
-		tDelay = GetTime()
-		if GetCVarBool("autoLootDefault") ~= IsModifiedClick("AUTOLOOTTOGGLE") then
-			for i = GetNumLootItems(), 1, -1 do
-				LootSlot(i)
-			end
-			tDelay = GetTime()
-		end
-	end
-end
-
-local faster = CreateFrame("Frame")
-faster:RegisterEvent("LOOT_READY")
-faster:SetScript("OnEvent", FastLoot)
-
-LootFrame:HookScript(
-	"OnShow",
-	function()
-		local numLootItems = GetNumLootItems()
-		for i = GetNumLootItems(), 1, -1 do
-			local frame = _G["LootButton" .. i]
-			if (frame ~= nil) then
-				frame:CreateBeautyBorder(6)
-			end
-		end
-	end
-)

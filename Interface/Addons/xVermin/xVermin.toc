@@ -13,6 +13,7 @@ Frames/DefaultFramesDarker.lua
 Frames/GroopLootFrame.lua
 Frames/InspectFrame.lua
 Frames/MailBoxFrame.lua
+Frames/LootFrame.lua
 Frames/SpellBookFrame.lua
 Frames/TalentFrame.lua
 
@@ -25,6 +26,11 @@ Experience/MobsToKill.lua
 
 Addons/AdiBags.lua
 Addons/Examiner.lua
+Addons/MonkeyQuest.lua
+Addons/Omen.lua
+Addons/RangeDisplay.lua
+Addons/Recount.lua
+Addons/TinyThreat.lua
 
 AutoCarrot.lua
 AutoBuyAmmo.lua
@@ -37,6 +43,7 @@ Bindings.lua
 Chat.lua
 DamageFont.lua
 ErrorsFilter.lua
+FastLoot.lua
 GarbageCollector.lua
 PetHappiness.lua
 PlayerTargetHealthPercentage.lua

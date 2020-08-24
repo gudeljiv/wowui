@@ -1,3 +1,5 @@
+local _, xVermin = ...
+
 -- LoadAddOn("Blizzard_TimeManager")
 -- local fadeouttable = {}
 -- table.insert(fadeouttable, GameTimeFrame)

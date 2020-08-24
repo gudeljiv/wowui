@@ -31,7 +31,6 @@ PlayerFrame:HookScript(
 		if (UnitIsDND("player")) then
 			cus.text:SetText("DND")
 		end
-		-- cus.text:SetTextColor(0.058, 0.901, 0.466, 1)
 		cus.text:SetTextColor(color.r, color.g, color.b, 1)
 	end
 )
@@ -73,7 +72,6 @@ us.text = us:CreateFontString(nil, "ARTWORK")
 us.text:SetFont(xVermin.Config.font.arial, 10, "NONE")
 us.text:SetPoint("BOTTOMRIGHT", CustomContainer_Combat, "TOPRIGHT", -1, 2)
 us.text:SetTextColor(color.r, color.g, color.b, 1)
--- us:Hide()
 
 local usVisible = false
 
@@ -118,7 +116,6 @@ local function CalculateFreeBagSpace()
 			fs = fs + numberOfFreeSlots
 		end
 		fbs.text:SetText(fs)
-		-- fbs.text:SetTextColor(0.058, 0.901, 0.466, 1)
 		fbs.text:SetTextColor(color.r, color.g, color.b, 1)
 	end
 end

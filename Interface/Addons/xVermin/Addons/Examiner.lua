@@ -1,3 +1,5 @@
+local _, xVermin = ...
+
 -- local function SkinItems()
 -- 	local itemLink, r, g, b, itemLink
 -- 	for i, v in pairs(
