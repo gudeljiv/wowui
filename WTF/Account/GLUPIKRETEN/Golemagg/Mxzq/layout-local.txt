@@ -102,8 +102,8 @@ FrameLevel: 1
 Anchor: CENTER
 X: -360
 Y: 199
-W: 366
-H: 188
+W: 359
+H: 399
 Frame: TargetFrame
 FrameLevel: 1
 Anchor: CENTER

@@ -5,8 +5,10 @@ local isClassic = (WOW_PROJECT_ID == WOW_PROJECT_CLASSIC)
 local AUTO, GROUND, FLYING, UNDERWATER, WATERWALK, YAK, MAMMOTH, BRUTO = 0, 1, 2, 3, 4, 5, 6, 7
 
 -- These variables and functions are used for print formatting.
-local line = "|c002F2F2A---------------------------------------------|r"
-local pre = "|c002F2F2A*|r   "
+-- local line = "|c002F2F2A---------------------------------------------|r"
+local line = ""
+-- local pre = "|c002F2F2A*|r   "
+local pre = ""
 local sep = " |c00FFFFFF-|r "
 local retailOnly = " |c00C2C5CC(RETAIL ONLY)|r"
 
@@ -56,6 +58,7 @@ SlashCmdList["FMP"] = function(msg)
 		print(pre .. header("FollowMePls Whisper Commands:"))
 		print(pre .. subj("!follow") .. sep .. desc("Makes the character follow you, simply '!f' works too."))
 		print(pre .. subj("!mount") .. sep .. desc("Makes the character summon a random mount, simply '!m' works too.") .. retailOnly)
+		print(pre .. subj("!waterwalk") .. sep .. desc("Makes the character summon a random mount that can walk on water.") .. retailOnly)
 		print(pre .. subj("!waterwalk") .. sep .. desc("Makes the character summon a random mount that can walk on water.") .. retailOnly)
 		print(pre .. subj("!yak") .. sep .. desc("Makes the character summon the 'Grand Expedition Yak' mount.") .. retailOnly)
 		print(pre .. subj("!mammoth") .. sep .. desc("Makes the character summon the 'Traveler's Tundra Mammoth' mount.") .. retailOnly)
@@ -298,11 +301,11 @@ frame:SetScript(
 					FMP_MSG = 1
 				end
 
-				if FMP_MSG == 1 then
-					print(pre .. subj("FollowMePls loaded."))
-					print(pre .. subj("Type /fmp to see commands."))
-					print(pre .. subj("Source: github.com/techiew/FollowMePls"))
-				end
+			-- if FMP_MSG == 1 then
+			-- 	print(pre .. subj("FollowMePls loaded."))
+			-- 	print(pre .. subj("Type /fmp to see commands."))
+			-- 	print(pre .. subj("Source: github.com/techiew/FollowMePls"))
+			-- end
 			end
 		end
 
