@@ -42,9 +42,7 @@ local frame = CreateFrame("Frame")
 frame:SetScript(
 	"OnEvent",
 	function()
-		if event == "PLAYER_LOGIN" then
-			enable()
-		end
+		enable()
 	end
 )
 frame:RegisterEvent("PLAYER_LOGIN")

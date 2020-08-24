@@ -240,7 +240,6 @@ hooksecurefunc(
 		local frameName = chatFrame:GetName()
 		local chatTab = _G[frameName .. "Tab"]
 		local tabGlow = _G[frameName .. "TabGlow"]
-
 		if not tabGlow:IsShown() then
 			if frameName.isDocked then
 				securecall("UIFrameFadeOut", chatTab, CHAT_FRAME_FADE_OUT_TIME, chatTab:GetAlpha(), CHAT_FRAME_TAB_NORMAL_NOMOUSE_ALPHA)

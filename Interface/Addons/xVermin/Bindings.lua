@@ -117,15 +117,11 @@ local function FixBindings()
 	SetBinding("CTRL-L", "NONE", 1)
 end
 
-SLASH_BINDINGS1 = "/fix_bindings"
-SLASH_BINDINGS2 = "/fb"
-SlashCmdList["BINDINGS"] = FixBindings
-
 local f = CreateFrame("Frame")
 f:SetScript(
 	"OnEvent",
 	function(self, event, isInitialLogin, isReloadingUi)
-		if isInitialLogin or isReloadingUi then
+		if event == "PLAYER_ENTERING_WORLD" and (isInitialLogin or isReloadingUi) then
 			C_Timer.After(
 				10,
 				function()
@@ -136,12 +132,16 @@ f:SetScript(
 					end
 				end
 			)
+		end
 
-			if event == "PLAYER_REGEN_ENABLED" then
-				self:UnregisterEvent("PLAYER_REGEN_ENABLED")
-			end
+		if event == "PLAYER_REGEN_ENABLED" then
+			FixBindings()
+			self:UnregisterEvent("PLAYER_REGEN_ENABLED")
 		end
 	end
 )
 f:RegisterEvent("PLAYER_ENTERING_WORLD")
-f:RegisterEvent("VARIABLES_LOADED")
+
+SLASH_BINDINGS1 = "/fix_bindings"
+SLASH_BINDINGS2 = "/fb"
+SlashCmdList["BINDINGS"] = FixBindings

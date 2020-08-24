@@ -17,12 +17,11 @@ Frames/LootFrame.lua
 Frames/SpellBookFrame.lua
 Frames/TalentFrame.lua
 
-Rotation/_Core.lua
-Rotation/Warrior.lua
-
 Experience/Player.lua
 Experience/Pet.lua
 Experience/MobsToKill.lua
+
+Reputation/Reputation.lua
 
 Addons/AdiBags.lua
 Addons/Examiner.lua
@@ -36,7 +35,6 @@ AutoCarrot.lua
 AutoBuyAmmo.lua
 AutoDismount.lua
 AutoRepair.lua
-AutoJunk.lua
 BestFood.lua
 BuffSource.lua
 Bindings.lua
@@ -53,5 +51,8 @@ SortBags.lua
 TrackingIcon.lua
 UIScale.lua
 Unit.lua
+
+Rotation/_Core.lua
+Rotation/Warrior.lua
 
 xVermin.lua
