@@ -270,7 +270,7 @@ DBM-ZG: enabled
 Questie: enabled
 GnomishVendorShrinker: disabled
 TradeSkillMaster_AppHelper: enabled
-ZygorGuidesViewerClassic: enabled
+ZygorGuidesViewerClassic: disabled
 DugisGuideViewerZ: disabled
 !BugGrabber: enabled
 BugSack: enabled

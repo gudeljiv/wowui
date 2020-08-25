@@ -46,7 +46,7 @@ FrameLevel: 1
 Anchor: CENTER
 X: -119
 Y: 29
-W: 850
+W: 858
 H: 660
 Frame: AddonList
 FrameLevel: 1
@@ -97,6 +97,13 @@ X: 243
 Y: -107
 W: 50
 H: 50
+Frame: aux_frame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 10
+Y: -58
+W: 768
+H: 447
 Frame: TargetFrame
 FrameLevel: 1
 Anchor: CENTER
