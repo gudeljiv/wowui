@@ -30,7 +30,3 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 /cast feed pet
 /use item:0
 END
-VER 3 0000000000000008 "TSMMacro" "INV_Misc_Flower_01"
-/click TSMShoppingBuyoutBtn
-/click TSMAuctioningBtn
-END

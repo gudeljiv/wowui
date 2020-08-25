@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 2106,
 	["lastSanitation"] = 3,
-	["session"] = 2097,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -173,8 +173,8 @@ BugGrabberDB = {
 		}, -- [21]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["session"] = 1336,
 			["time"] = "2020/07/26 13:26:58",
+			["session"] = 1336,
 			["counter"] = 2,
 		}, -- [22]
 		{
@@ -554,8 +554,8 @@ BugGrabberDB = {
 		}, -- [69]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["time"] = "2020/07/27 20:37:46",
 			["session"] = 1423,
+			["time"] = "2020/07/27 20:37:46",
 			["counter"] = 4,
 		}, -- [70]
 		{
@@ -820,8 +820,8 @@ BugGrabberDB = {
 		}, -- [103]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["time"] = "2020/08/02 10:06:15",
 			["session"] = 1605,
+			["time"] = "2020/08/02 10:06:15",
 			["counter"] = 3,
 		}, -- [104]
 		{
@@ -961,8 +961,8 @@ BugGrabberDB = {
 		}, -- [121]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
-			["session"] = 1654,
 			["time"] = "2020/08/02 20:13:03",
+			["session"] = 1654,
 			["counter"] = 3,
 		}, -- [122]
 		{
@@ -1327,8 +1327,8 @@ BugGrabberDB = {
 		}, -- [167]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["session"] = 1843,
 			["time"] = "2020/08/13 21:31:07",
+			["session"] = 1843,
 			["counter"] = 6,
 		}, -- [168]
 		{
@@ -1449,8 +1449,8 @@ BugGrabberDB = {
 		}, -- [183]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Experience.lua",
-			["session"] = 1943,
 			["time"] = "2020/08/19 21:35:15",
+			["session"] = 1943,
 			["counter"] = 6,
 		}, -- [184]
 		{
@@ -1590,19 +1590,13 @@ BugGrabberDB = {
 			["counter"] = 6,
 		}, -- [201]
 		{
-			["message"] = "(null)",
-			["time"] = "2020/07/24 16:00:06",
-			["session"] = 2033,
-			["counter"] = 79,
-		}, -- [202]
-		{
 			["message"] = "[string \"EXAMINER_TARGET\"]:4: attempt to call method 'DoInspect' (a nil value)",
 			["time"] = "2020/08/22 17:12:33",
 			["locals"] = "keystate = \"down\"\npressure = 1\nangle = -1\nprecision = 0\n(*temporary) = nil\n(*temporary) = Examiner {\n modules = <table> {\n }\n GetModuleFromToken = <function> defined @Interface\\AddOns\\Examiner\\modcore.lua:18\n CreateDetailObject = <function> defined @Interface\\AddOns\\Examiner\\modcore.lua:49\n buttons = <table> {\n }\n ModuleCore = <table> {\n }\n SendModuleEvent = <function> defined @Interface\\AddOns\\Examiner\\modcore.lua:34\n CreateModule = <function> defined @Interface\\AddOns\\Examiner\\modcore.lua:27\n 0 = <userdata>\n}\n(*temporary) = \"target\"\n(*temporary) = \"attempt to call method 'DoInspect' (a nil value)\"\n",
 			["stack"] = "[string \"EXAMINER_TARGET\"]:4: in function <[string \"EXAMINER_TARGET\"]:1>",
 			["session"] = 2033,
 			["counter"] = 1,
-		}, -- [203]
+		}, -- [202]
 		{
 			["message"] = "[string \"ExaminerItemButtonHeadSlot.border:CreateBea...\"]:1: attempt to call method 'CreateBeautyBorder' (a nil value)",
 			["time"] = "2020/08/22 17:19:56",
@@ -1610,7 +1604,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"ExaminerItemButtonHeadSlot.border:CreateBea...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 2035,
 			["counter"] = 1,
-		}, -- [204]
+		}, -- [203]
 		{
 			["message"] = "Interface\\AddOns\\Examiner\\Modules\\cache.lua:362: attempt to index upvalue 'cfg' (a nil value)",
 			["time"] = "2020/08/22 17:33:04",
@@ -1618,7 +1612,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\Examiner\\Modules\\cache.lua:362: in function `BuildCacheList'\nInterface\\AddOns\\Examiner\\Modules\\cache.lua:60: in function <Interface\\AddOns\\Examiner\\Modules\\cache.lua:58>\n[C]: in function `Show'\nInterface\\AddOns\\Examiner\\Examiner-Classic Fan Update (1.09.2).lua:603: in function `Display'\nInterface\\AddOns\\Examiner\\Examiner-Classic Fan Update (1.09.2).lua:808: in function `DoInspect'\n[string \"EXAMINER_TARGET\"]:4: in function <[string \"EXAMINER_TARGET\"]:1>",
 			["session"] = 2040,
 			["counter"] = 2,
-		}, -- [205]
+		}, -- [204]
 		{
 			["message"] = "Interface\\AddOns\\Examiner\\Modules\\stats.lua:395: attempt to index upvalue 'cfg' (a nil value)",
 			["time"] = "2020/08/22 17:33:05",
@@ -1626,7 +1620,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\Examiner\\Modules\\stats.lua:395: in function `BuildShownList'\nInterface\\AddOns\\Examiner\\Modules\\stats.lua:93: in function `?'\nInterface\\AddOns\\Examiner\\modcore.lua:37: in function `SendModuleEvent'\nInterface\\AddOns\\Examiner\\Examiner-Classic Fan Update (1.09.2).lua:697: in function `InspectReady'\nInterface\\AddOns\\Examiner\\Examiner-Classic Fan Update (1.09.2).lua:254: in function `?'\nInterface\\AddOns\\Examiner\\Examiner-Classic Fan Update (1.09.2).lua:355: in function <Interface\\AddOns\\Examiner\\Examiner.lua:354>",
 			["session"] = 2040,
 			["counter"] = 1,
-		}, -- [206]
+		}, -- [205]
 		{
 			["message"] = "Interface\\AddOns\\Examiner\\Modules\\cache.lua:259: attempt to index upvalue 'cache' (a nil value)",
 			["time"] = "2020/08/22 17:34:05",
@@ -1634,7 +1628,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\Examiner\\Modules\\cache.lua:259: in function <Interface\\AddOns\\Examiner\\Modules\\cache.lua:258>",
 			["session"] = 2040,
 			["counter"] = 3,
-		}, -- [207]
+		}, -- [206]
 		{
 			["message"] = "Interface\\AddOns\\Examiner\\Libs\\AzDropDown.lua:287: ambiguous syntax (function call x new statement) near '('",
 			["time"] = "2020/08/22 17:32:41",
@@ -1642,7 +1636,7 @@ BugGrabberDB = {
 			["stack"] = "",
 			["session"] = 2041,
 			["counter"] = 2,
-		}, -- [208]
+		}, -- [207]
 		{
 			["message"] = "Interface\\AddOns\\Examiner\\Modules\\config.lua:86: attempt to index global 'AzDropDown' (a nil value)",
 			["time"] = "2020/08/22 17:32:44",
@@ -1650,7 +1644,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\Examiner\\Modules\\config.lua:86: in function `OnInitialize'\nInterface\\AddOns\\Examiner\\Examiner-Classic Fan Update (1.09.2).lua:187: in function `?'\nInterface\\AddOns\\Examiner\\Examiner-Classic Fan Update (1.09.2).lua:355: in function <Interface\\AddOns\\Examiner\\Examiner.lua:354>",
 			["session"] = 2041,
 			["counter"] = 2,
-		}, -- [209]
+		}, -- [208]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Chat-Chat.lua:162: '<eof>' expected near 'end'",
 			["time"] = "2020/08/23 12:17:26",
@@ -1658,7 +1652,7 @@ BugGrabberDB = {
 			["stack"] = "",
 			["session"] = 2058,
 			["counter"] = 4,
-		}, -- [210]
+		}, -- [209]
 		{
 			["message"] = "[string \"BottomButton:ClearAllPoints()\"]:1: attempt to index global 'BottomButton' (a nil value)",
 			["time"] = "2020/08/23 12:29:43",
@@ -1666,7 +1660,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"BottomButton:ClearAllPoints()\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2783: in function <Interface\\FrameXML\\ChatFrame.lua:2776>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:338: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 2061,
 			["counter"] = 1,
-		}, -- [211]
+		}, -- [210]
 		{
 			["message"] = "[string \"BottomButton:SetPoint(\"BOTTOMRIGHT\", ChatFr...\"]:1: attempt to index global 'BottomButton' (a nil value)",
 			["time"] = "2020/08/23 12:29:43",
@@ -1674,7 +1668,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"BottomButton:SetPoint(\"BOTTOMRIGHT\", ChatFr...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2783: in function <Interface\\FrameXML\\ChatFrame.lua:2776>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:338: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 2061,
 			["counter"] = 1,
-		}, -- [212]
+		}, -- [211]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:101: attempt to concatenate local 'isWatched' (a boolean value)",
 			["time"] = "2020/08/24 15:44:58",
@@ -1682,7 +1676,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:101: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:85>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:118: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:117>",
 			["session"] = 2088,
 			["counter"] = 2,
-		}, -- [213]
+		}, -- [212]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:89: attempt to concatenate local 'isWatched' (a boolean value)",
 			["time"] = "2020/08/24 15:46:38",
@@ -1690,7 +1684,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:89: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:85>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:117: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:116>",
 			["session"] = 2089,
 			["counter"] = 1,
-		}, -- [214]
+		}, -- [213]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:88: attempt to concatenate local 'isWatched' (a boolean value)",
 			["time"] = "2020/08/24 15:47:46",
@@ -1698,6 +1692,36 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:88: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:85>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:116: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:115>",
 			["session"] = 2090,
 			["counter"] = 1,
+		}, -- [214]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:113: attempt to index global 'Reputation' (a nil value)",
+			["time"] = "2020/08/25 16:57:57",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:46\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:71\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:61\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:38\n Config = <table> {\n }\n}\nsize = 125\nscale = 1.400000\nbars = <table> {\n}\nCreateBar = <function> defined @Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:7\nUpdateBarVisibility = <function> defined @Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:70\nUpdateBarValueAndColor = <function> defined @Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:81\nUpdateBar = <function> defined @Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:96\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'Reputation' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:113: in main chunk",
+			["session"] = 2103,
+			["counter"] = 3,
 		}, -- [215]
+		{
+			["message"] = "(null)",
+			["session"] = 2103,
+			["time"] = "2020/07/24 16:00:06",
+			["counter"] = 88,
+		}, -- [216]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:106: attempt to index global 'self' (a nil value)",
+			["time"] = "2020/08/25 17:06:09",
+			["locals"] = "factionIndex = 1\nlastFactionName = \"Horde\"\nname = \"Horde\"\ndescription = \"\"\nstandingId = 5\nbottomValue = 3000\ntopValue = 9000\nearnedValue = 3500\natWarWith = false\ncanToggleAtWar = true\nisHeader = true\nisCollapsed = false\nhasRep = false\nisWatched = false\nisChild = false\n(*temporary) = nil\n(*temporary) = false\n(*temporary) = 67\n(*temporary) = \"attempt to index global 'self' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:106: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:96>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:128: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:118>",
+			["session"] = 2104,
+			["counter"] = 6,
+		}, -- [217]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:36: attempt to index global 'Reputation' (a nil value)",
+			["time"] = "2020/08/25 17:06:47",
+			["locals"] = "name = \"ReputationBar1\"\nfactionIndex = 1\ny = 0\nf = ReputationBar1 {\n 0 = <userdata>\n Bar = <unnamed> {\n }\n}\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"BACKGROUND\"\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = <userdata>\n(*temporary) = \"attempt to index global 'Reputation' (a nil value)\"\nscale = 1.400000\nsize = 125\nbars = <table> {\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:36: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:7>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:106: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:96>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:128: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:118>",
+			["session"] = 2105,
+			["counter"] = 6,
+		}, -- [218]
 	},
 }

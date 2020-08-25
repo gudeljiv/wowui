@@ -1,0 +1,1105 @@
+
+ZygorGuidesViewerClassicSettings = {
+	["char"] = {
+		["Mxzq - Golemagg"] = {
+			["guides_history_ZGV4clear"] = true,
+			["taxis"] = {
+				["Orgrimmar"] = true,
+				["translation"] = {
+					["enUS"] = {
+					},
+				},
+			},
+			["SkillsKnown"] = {
+				["Herbalism"] = {
+					["name"] = "Herbalism",
+					["active"] = true,
+					["max"] = 300,
+					["level"] = 203,
+					["skillID"] = 182,
+				},
+				["Mining"] = {
+					["name"] = "Mining",
+					["active"] = true,
+					["max"] = 225,
+					["level"] = 196,
+					["skillID"] = 186,
+				},
+				[""] = {
+					["max"] = 0,
+					["level"] = 0,
+					["placeholder"] = true,
+					["active"] = false,
+				},
+			},
+			["lastlogin"] = 1598367667,
+			["badupgrade"] = {
+			},
+			["tabguides"] = {
+			},
+			["SISlog"] = {
+				"&fsp: no guide found, abort", -- [1]
+			},
+			["initialFlightPathsLoaded"] = true,
+			["debuglog"] = {
+				"17:01:13.437.119> Viewer started. ---------------------------", -- [1]
+			},
+			["RecipesKnownNew"] = {
+			},
+			["guidestephistory"] = {
+			},
+			["notifications"] = {
+			},
+		},
+		["Augustin - Golemagg"] = {
+			["SISdestination"] = {
+				"LEVELING\\Tirisfal Glades (1-12) [Undead Starter]", -- [1]
+				124, -- [2]
+			},
+			["SISquests"] = {
+				[355] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
+				[5482] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
+				[371] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
+				[426] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
+				[372] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
+				[427] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
+				[404] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
+				[358] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
+				[359] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
+				[367] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
+				[360] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
+				[492] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
+				[5481] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
+				[369] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
+				[354] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
+				[370] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
+				[368] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
+			},
+			["step"] = 47,
+			["SkillsKnown"] = {
+				[""] = {
+					["max"] = 0,
+					["level"] = 0,
+					["placeholder"] = true,
+					["active"] = false,
+				},
+				["Tailoring"] = {
+					["name"] = "Tailoring",
+					["active"] = true,
+					["max"] = 150,
+					["level"] = 150,
+					["skillID"] = 197,
+				},
+			},
+			["lastlogin"] = 1598367476,
+			["badupgrade"] = {
+			},
+			["tabguides"] = {
+				{
+					["title"] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
+					["step"] = 47,
+				}, -- [1]
+			},
+			["guidename"] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
+			["guides_history_ZGV4clear"] = true,
+			["debuglog"] = {
+				"16:58:02.459.836> Viewer started. ---------------------------", -- [1]
+			},
+			["notifications"] = {
+			},
+			["initialFlightPathsLoaded"] = true,
+			["guideTurnInsOnly"] = false,
+			["guides_history"] = {
+				{
+					"LEVELING\\Tirisfal Glades (1-12) [Undead Starter]", -- [1]
+					47, -- [2]
+				}, -- [1]
+			},
+			["RecipesKnownNew"] = {
+			},
+			["guidestephistory"] = {
+				["LEVELING\\Tirisfal Glades (1-12) [Undead Starter]"] = {
+					["steps"] = {
+					},
+					["lasttime"] = 1598367484,
+				},
+			},
+			["taxis"] = {
+				["translation"] = {
+					["enUS"] = {
+					},
+				},
+				["Undercity"] = true,
+			},
+			["SISguides"] = {
+				["LEVELING\\Tirisfal Glades (1-12) [Undead Starter]"] = 124,
+			},
+			["SISlog"] = {
+				"&fsp: suggested guide isLEVELING\\Tirisfal Glades (1-12) [Undead Starter]", -- [1]
+				"&fsp: > ding for level 11 found at step 118", -- [2]
+				"&fsp: > possible accept found at step 124", -- [3]
+				"&fsp: > finding all future guides", -- [4]
+				"&fsp: > finding all past guides", -- [5]
+				"&fsp: >>> no previous guide, terminate loop", -- [6]
+				"&fsp: >> marking required guides", -- [7]
+				"&fsp: >> locating earliest guides", -- [8]
+				"&fsp: >> done LEVELING\\Tirisfal Glades (1-12) [Undead Starter]", -- [9]
+				"&fsp: >> loading LEVELING\\Tirisfal Glades (1-12) [Undead Starter]", -- [10]
+				"&fsp: >> locating first relevant step", -- [11]
+				"&fsp: >> found at 47", -- [12]
+			},
+		},
+	},
+	["global"] = {
+		["gii_cache"] = {
+			["item:5351::::::::31:::11::::"] = {
+				"Bounty Hunter's Ring", -- [1]
+				"|cff1eff00|Hitem:5351::::::::31:::11::::|h[Bounty Hunter's Ring]|h|r", -- [2]
+				2, -- [3]
+				20, -- [4]
+				0, -- [5]
+				"Armor", -- [6]
+				"Miscellaneous", -- [7]
+				1, -- [8]
+				"INVTYPE_FINGER", -- [9]
+				133343, -- [10]
+				403, -- [11]
+				4, -- [12]
+				0, -- [13]
+				1, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			[12737] = {
+				"Gloom Weed", -- [1]
+				"|cffffffff|Hitem:12737::::::::11:::::::|h[Gloom Weed]|h|r", -- [2]
+				1, -- [3]
+				1, -- [4]
+				0, -- [5]
+				"Quest", -- [6]
+				"Quest", -- [7]
+				20, -- [8]
+				"", -- [9]
+				134185, -- [10]
+				0, -- [11]
+				12, -- [12]
+				0, -- [13]
+				4, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367484,
+			},
+			["item:3771::::::::31:::::::"] = {
+				"Wild Hog Shank", -- [1]
+				"|cffffffff|Hitem:3771::::::::31:::::::|h[Wild Hog Shank]|h|r", -- [2]
+				1, -- [3]
+				35, -- [4]
+				25, -- [5]
+				"Consumable", -- [6]
+				"Consumable", -- [7]
+				20, -- [8]
+				"", -- [9]
+				133969, -- [10]
+				50, -- [11]
+				0, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			["item:4945::::::::11:::11::::"] = {
+				"Faintly Glowing Skull", -- [1]
+				"|cffffffff|Hitem:4945::::::::11:::11::::|h[Faintly Glowing Skull]|h|r", -- [2]
+				1, -- [3]
+				9, -- [4]
+				0, -- [5]
+				"Consumable", -- [6]
+				"Consumable", -- [7]
+				1, -- [8]
+				"", -- [9]
+				133728, -- [10]
+				37, -- [11]
+				0, -- [12]
+				0, -- [13]
+				1, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367483,
+			},
+			["item:2901::::::::31:::14::::"] = {
+				"Mining Pick", -- [1]
+				"|cffffffff|Hitem:2901::::::::31:::14::::|h[Mining Pick]|h|r", -- [2]
+				1, -- [3]
+				4, -- [4]
+				1, -- [5]
+				"Weapon", -- [6]
+				"Miscellaneous", -- [7]
+				1, -- [8]
+				"INVTYPE_WEAPONMAINHAND", -- [9]
+				134708, -- [10]
+				16, -- [11]
+				2, -- [12]
+				14, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			["item:7026::::::::11:::::::"] = {
+				"Linen Belt", -- [1]
+				"|cffffffff|Hitem:7026::::::::11:::::::|h[Linen Belt]|h|r", -- [2]
+				1, -- [3]
+				9, -- [4]
+				4, -- [5]
+				"Armor", -- [6]
+				"Cloth", -- [7]
+				1, -- [8]
+				"INVTYPE_WAIST", -- [9]
+				132494, -- [10]
+				22, -- [11]
+				4, -- [12]
+				1, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367483,
+			},
+			["item:9513::::::::11:::11::::"] = {
+				"Ley Staff", -- [1]
+				"|cff1eff00|Hitem:9513::::::::11:::11::::|h[Ley Staff]|h|r", -- [2]
+				2, -- [3]
+				10, -- [4]
+				0, -- [5]
+				"Weapon", -- [6]
+				"Staves", -- [7]
+				1, -- [8]
+				"INVTYPE_2HWEAPON", -- [9]
+				135158, -- [10]
+				305, -- [11]
+				2, -- [12]
+				10, -- [13]
+				1, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367483,
+			},
+			["item:4568::::::17:365205888:31:::1::::"] = {
+				"Grunt Axe of Agility", -- [1]
+				"|cff1eff00|Hitem:4568::::::17:365205888:31:::1::::|h[Grunt Axe of Agility]|h|r", -- [2]
+				2, -- [3]
+				21, -- [4]
+				16, -- [5]
+				"Weapon", -- [6]
+				"One-Handed Axes", -- [7]
+				1, -- [8]
+				"INVTYPE_WEAPON", -- [9]
+				132403, -- [10]
+				1694, -- [11]
+				2, -- [12]
+				0, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			["item:2572::::::::11:::::::"] = {
+				"Red Linen Robe", -- [1]
+				"|cff1eff00|Hitem:2572::::::::11:::::::|h[Red Linen Robe]|h|r", -- [2]
+				2, -- [3]
+				10, -- [4]
+				5, -- [5]
+				"Armor", -- [6]
+				"Cloth", -- [7]
+				1, -- [8]
+				"INVTYPE_ROBE", -- [9]
+				132659, -- [10]
+				99, -- [11]
+				4, -- [12]
+				1, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367483,
+			},
+			["item:1708::::::::31:::::::"] = {
+				"Sweet Nectar", -- [1]
+				"|cffffffff|Hitem:1708::::::::31:::::::|h[Sweet Nectar]|h|r", -- [2]
+				1, -- [3]
+				35, -- [4]
+				25, -- [5]
+				"Consumable", -- [6]
+				"Consumable", -- [7]
+				20, -- [8]
+				"", -- [9]
+				132799, -- [10]
+				50, -- [11]
+				0, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			["item:118::::::::11:::::::"] = {
+				"Minor Healing Potion", -- [1]
+				"|cffffffff|Hitem:118::::::::11:::::::|h[Minor Healing Potion]|h|r", -- [2]
+				1, -- [3]
+				5, -- [4]
+				1, -- [5]
+				"Consumable", -- [6]
+				"Consumable", -- [7]
+				5, -- [8]
+				"", -- [9]
+				134829, -- [10]
+				5, -- [11]
+				0, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367483,
+			},
+			["item:15284::::::::31:::::::"] = {
+				"Long Battle Bow", -- [1]
+				"|cff1eff00|Hitem:15284::::::::31:::::::|h[Long Battle Bow]|h|r", -- [2]
+				2, -- [3]
+				29, -- [4]
+				24, -- [5]
+				"Weapon", -- [6]
+				"Bows", -- [7]
+				1, -- [8]
+				"INVTYPE_RANGED", -- [9]
+				135489, -- [10]
+				3039, -- [11]
+				2, -- [12]
+				2, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			["item:5751::::::::31:::::::"] = {
+				"Webwing Cloak", -- [1]
+				"|cff1eff00|Hitem:5751::::::::31:::::::|h[Webwing Cloak]|h|r", -- [2]
+				2, -- [3]
+				25, -- [4]
+				20, -- [5]
+				"Armor", -- [6]
+				"Cloth", -- [7]
+				1, -- [8]
+				"INVTYPE_CLOAK", -- [9]
+				133762, -- [10]
+				1028, -- [11]
+				4, -- [12]
+				1, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			["item:3030::::::::31:::::::"] = {
+				"Razor Arrow", -- [1]
+				"|cffffffff|Hitem:3030::::::::31:::::::|h[Razor Arrow]|h|r", -- [2]
+				1, -- [3]
+				30, -- [4]
+				25, -- [5]
+				"Projectile", -- [6]
+				"Arrow", -- [7]
+				200, -- [8]
+				"INVTYPE_AMMO", -- [9]
+				132382, -- [10]
+				0, -- [11]
+				6, -- [12]
+				2, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			["item:12054::::::::31:::::::"] = {
+				"Demon Band", -- [1]
+				"|cff1eff00|Hitem:12054::::::::31:::::::|h[Demon Band]|h|r", -- [2]
+				2, -- [3]
+				24, -- [4]
+				19, -- [5]
+				"Armor", -- [6]
+				"Miscellaneous", -- [7]
+				1, -- [8]
+				"INVTYPE_FINGER", -- [9]
+				133346, -- [10]
+				837, -- [11]
+				4, -- [12]
+				0, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			["item:2321::::::::11:::::::"] = {
+				"Fine Thread", -- [1]
+				"|cffffffff|Hitem:2321::::::::11:::::::|h[Fine Thread]|h|r", -- [2]
+				1, -- [3]
+				20, -- [4]
+				0, -- [5]
+				"Trade Goods", -- [6]
+				"Trade Goods", -- [7]
+				20, -- [8]
+				"", -- [9]
+				132912, -- [10]
+				25, -- [11]
+				7, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367483,
+			},
+			["item:15311::::::596:1748812032:31:::::::"] = {
+				"Feral Harness of the Monkey", -- [1]
+				"|cff1eff00|Hitem:15311::::::596:1748812032:31:::::::|h[Feral Harness of the Monkey]|h|r", -- [2]
+				2, -- [3]
+				22, -- [4]
+				17, -- [5]
+				"Armor", -- [6]
+				"Leather", -- [7]
+				1, -- [8]
+				"INVTYPE_CHEST", -- [9]
+				132719, -- [10]
+				982, -- [11]
+				4, -- [12]
+				2, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			["item:2592::::::::11:::::::"] = {
+				"Wool Cloth", -- [1]
+				"|cffffffff|Hitem:2592::::::::11:::::::|h[Wool Cloth]|h|r", -- [2]
+				1, -- [3]
+				15, -- [4]
+				0, -- [5]
+				"Trade Goods", -- [6]
+				"Trade Goods", -- [7]
+				20, -- [8]
+				"", -- [9]
+				132911, -- [10]
+				33, -- [11]
+				7, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367483,
+			},
+			["item:1431::::::::11:::::::"] = {
+				"Patchwork Pants", -- [1]
+				"|cff9d9d9d|Hitem:1431::::::::11:::::::|h[Patchwork Pants]|h|r", -- [2]
+				0, -- [3]
+				8, -- [4]
+				3, -- [5]
+				"Armor", -- [6]
+				"Cloth", -- [7]
+				1, -- [8]
+				"INVTYPE_LEGS", -- [9]
+				134591, -- [10]
+				20, -- [11]
+				4, -- [12]
+				1, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367483,
+			},
+			["item:15127::::::766:2077433856:31:::::::"] = {
+				"Robust Shoulders of the Owl", -- [1]
+				"|cff1eff00|Hitem:15127::::::766:2077433856:31:::::::|h[Robust Shoulders of the Owl]|h|r", -- [2]
+				2, -- [3]
+				30, -- [4]
+				25, -- [5]
+				"Armor", -- [6]
+				"Leather", -- [7]
+				1, -- [8]
+				"INVTYPE_SHOULDER", -- [9]
+				135039, -- [10]
+				1647, -- [11]
+				4, -- [12]
+				2, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			["item:2589::::::::11:::::::"] = {
+				"Linen Cloth", -- [1]
+				"|cffffffff|Hitem:2589::::::::11:::::::|h[Linen Cloth]|h|r", -- [2]
+				1, -- [3]
+				5, -- [4]
+				0, -- [5]
+				"Trade Goods", -- [6]
+				"Trade Goods", -- [7]
+				20, -- [8]
+				"", -- [9]
+				132889, -- [10]
+				13, -- [11]
+				7, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367483,
+			},
+			["item:2320::::::::11:::::::"] = {
+				"Coarse Thread", -- [1]
+				"|cffffffff|Hitem:2320::::::::11:::::::|h[Coarse Thread]|h|r", -- [2]
+				1, -- [3]
+				5, -- [4]
+				0, -- [5]
+				"Trade Goods", -- [6]
+				"Trade Goods", -- [7]
+				20, -- [8]
+				"", -- [9]
+				132891, -- [10]
+				2, -- [11]
+				7, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367483,
+			},
+			["item:4671::::::::11:::::::"] = {
+				"Ancestral Cloak", -- [1]
+				"|cffffffff|Hitem:4671::::::::11:::::::|h[Ancestral Cloak]|h|r", -- [2]
+				1, -- [3]
+				9, -- [4]
+				4, -- [5]
+				"Armor", -- [6]
+				"Cloth", -- [7]
+				1, -- [8]
+				"INVTYPE_CLOAK", -- [9]
+				133762, -- [10]
+				32, -- [11]
+				4, -- [12]
+				1, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367483,
+			},
+			["item:3577::::::::31:::::::"] = {
+				"Gold Bar", -- [1]
+				"|cff1eff00|Hitem:3577::::::::31:::::::|h[Gold Bar]|h|r", -- [2]
+				2, -- [3]
+				30, -- [4]
+				0, -- [5]
+				"Trade Goods", -- [6]
+				"Trade Goods", -- [7]
+				20, -- [8]
+				"", -- [9]
+				133217, -- [10]
+				600, -- [11]
+				7, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367768,
+			},
+			["|cffffffff|Hitem:1708::::::::31:::::::|h[Sweet Nectar]|h|r"] = {
+				"Sweet Nectar", -- [1]
+				"|cffffffff|Hitem:1708::::::::31:::::::|h[Sweet Nectar]|h|r", -- [2]
+				1, -- [3]
+				35, -- [4]
+				25, -- [5]
+				"Consumable", -- [6]
+				"Consumable", -- [7]
+				20, -- [8]
+				"", -- [9]
+				132799, -- [10]
+				50, -- [11]
+				0, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367801,
+			},
+			["item:4941::::::::11:::::::"] = {
+				"Really Sticky Glue", -- [1]
+				"|cffffffff|Hitem:4941::::::::11:::::::|h[Really Sticky Glue]|h|r", -- [2]
+				1, -- [3]
+				10, -- [4]
+				0, -- [5]
+				"Consumable", -- [6]
+				"Consumable", -- [7]
+				20, -- [8]
+				"", -- [9]
+				134712, -- [10]
+				11, -- [11]
+				0, -- [12]
+				0, -- [13]
+				1, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367483,
+			},
+			["item:6688::::::::31:::1::::"] = {
+				"Whisperwind Headdress", -- [1]
+				"|cff1eff00|Hitem:6688::::::::31:::1::::|h[Whisperwind Headdress]|h|r", -- [2]
+				2, -- [3]
+				32, -- [4]
+				27, -- [5]
+				"Armor", -- [6]
+				"Leather", -- [7]
+				1, -- [8]
+				"INVTYPE_HEAD", -- [9]
+				133119, -- [10]
+				2059, -- [11]
+				4, -- [12]
+				2, -- [13]
+				1, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			["|cffffffff|Hitem:3771::::::::31:::::::|h[Wild Hog Shank]|h|r"] = {
+				"Wild Hog Shank", -- [1]
+				"|cffffffff|Hitem:3771::::::::31:::::::|h[Wild Hog Shank]|h|r", -- [2]
+				1, -- [3]
+				35, -- [4]
+				25, -- [5]
+				"Consumable", -- [6]
+				"Consumable", -- [7]
+				20, -- [8]
+				"", -- [9]
+				133969, -- [10]
+				50, -- [11]
+				0, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367801,
+			},
+			["|cffffffff|Hitem:929::::::::31:::::::|h[Healing Potion]|h|r"] = {
+				"Healing Potion", -- [1]
+				"|cffffffff|Hitem:929::::::::31:::::::|h[Healing Potion]|h|r", -- [2]
+				1, -- [3]
+				22, -- [4]
+				12, -- [5]
+				"Consumable", -- [6]
+				"Consumable", -- [7]
+				5, -- [8]
+				"", -- [9]
+				134831, -- [10]
+				75, -- [11]
+				0, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367801,
+			},
+			["|cff1eff00|Hitem:3577::::::::31:::::::|h[Gold Bar]|h|r"] = {
+				"Gold Bar", -- [1]
+				"|cff1eff00|Hitem:3577::::::::31:::::::|h[Gold Bar]|h|r", -- [2]
+				2, -- [3]
+				30, -- [4]
+				0, -- [5]
+				"Trade Goods", -- [6]
+				"Trade Goods", -- [7]
+				20, -- [8]
+				"", -- [9]
+				133217, -- [10]
+				600, -- [11]
+				7, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367809,
+			},
+			["item:6948::::::::31:::::::"] = {
+				"Hearthstone", -- [1]
+				"|cffffffff|Hitem:6948::::::::31:::::::|h[Hearthstone]|h|r", -- [2]
+				1, -- [3]
+				1, -- [4]
+				0, -- [5]
+				"Miscellaneous", -- [6]
+				"Junk", -- [7]
+				1, -- [8]
+				"", -- [9]
+				134414, -- [10]
+				0, -- [11]
+				15, -- [12]
+				0, -- [13]
+				1, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			["item:6690::::::::31:::1::::"] = {
+				"Ferine Leggings", -- [1]
+				"|cff1eff00|Hitem:6690::::::::31:::1::::|h[Ferine Leggings]|h|r", -- [2]
+				2, -- [3]
+				34, -- [4]
+				29, -- [5]
+				"Armor", -- [6]
+				"Leather", -- [7]
+				1, -- [8]
+				"INVTYPE_LEGS", -- [9]
+				134594, -- [10]
+				3346, -- [11]
+				4, -- [12]
+				2, -- [13]
+				1, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			["item:4338::::::::11:::::::"] = {
+				"Mageweave Cloth", -- [1]
+				"|cffffffff|Hitem:4338::::::::11:::::::|h[Mageweave Cloth]|h|r", -- [2]
+				1, -- [3]
+				40, -- [4]
+				0, -- [5]
+				"Trade Goods", -- [6]
+				"Trade Goods", -- [7]
+				20, -- [8]
+				"", -- [9]
+				132892, -- [10]
+				250, -- [11]
+				7, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367483,
+			},
+			["item:929::::::::31:::::::"] = {
+				"Healing Potion", -- [1]
+				"|cffffffff|Hitem:929::::::::31:::::::|h[Healing Potion]|h|r", -- [2]
+				1, -- [3]
+				22, -- [4]
+				12, -- [5]
+				"Consumable", -- [6]
+				"Consumable", -- [7]
+				5, -- [8]
+				"", -- [9]
+				134831, -- [10]
+				75, -- [11]
+				0, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			["item:11287::::::::11:::::::"] = {
+				"Lesser Magic Wand", -- [1]
+				"|cff1eff00|Hitem:11287::::::::11:::::::|h[Lesser Magic Wand]|h|r", -- [2]
+				2, -- [3]
+				15, -- [4]
+				5, -- [5]
+				"Weapon", -- [6]
+				"Wands", -- [7]
+				1, -- [8]
+				"INVTYPE_RANGEDRIGHT", -- [9]
+				135139, -- [10]
+				508, -- [11]
+				2, -- [12]
+				19, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367483,
+			},
+			["item:16987::::::::31:::11::::"] = {
+				"Screecher Belt", -- [1]
+				"|cff1eff00|Hitem:16987::::::::31:::11::::|h[Screecher Belt]|h|r", -- [2]
+				2, -- [3]
+				27, -- [4]
+				0, -- [5]
+				"Armor", -- [6]
+				"Leather", -- [7]
+				1, -- [8]
+				"INVTYPE_WAIST", -- [9]
+				132494, -- [10]
+				884, -- [11]
+				4, -- [12]
+				2, -- [13]
+				1, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			["item:2987::::::::31:::1::::"] = {
+				"Inscribed Leather Boots", -- [1]
+				"|cff1eff00|Hitem:2987::::::::31:::1::::|h[Inscribed Leather Boots]|h|r", -- [2]
+				2, -- [3]
+				18, -- [4]
+				13, -- [5]
+				"Armor", -- [6]
+				"Leather", -- [7]
+				1, -- [8]
+				"INVTYPE_FEET", -- [9]
+				132539, -- [10]
+				408, -- [11]
+				4, -- [12]
+				2, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			["item:3182::::::::11:::::::"] = {
+				"Spider's Silk", -- [1]
+				"|cffffffff|Hitem:3182::::::::11:::::::|h[Spider's Silk]|h|r", -- [2]
+				1, -- [3]
+				20, -- [4]
+				0, -- [5]
+				"Trade Goods", -- [6]
+				"Trade Goods", -- [7]
+				10, -- [8]
+				"", -- [9]
+				136113, -- [10]
+				387, -- [11]
+				7, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367483,
+			},
+			["item:55::::::::11:::::::"] = {
+				"Apprentice's Boots", -- [1]
+				"|cffffffff|Hitem:55::::::::11:::::::|h[Apprentice's Boots]|h|r", -- [2]
+				1, -- [3]
+				1, -- [4]
+				0, -- [5]
+				"Armor", -- [6]
+				"Miscellaneous", -- [7]
+				1, -- [8]
+				"INVTYPE_FEET", -- [9]
+				132543, -- [10]
+				1, -- [11]
+				4, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367483,
+			},
+			["item:4305::::::::11:::::::"] = {
+				"Bolt of Silk Cloth", -- [1]
+				"|cffffffff|Hitem:4305::::::::11:::::::|h[Bolt of Silk Cloth]|h|r", -- [2]
+				1, -- [3]
+				35, -- [4]
+				0, -- [5]
+				"Trade Goods", -- [6]
+				"Trade Goods", -- [7]
+				10, -- [8]
+				"", -- [9]
+				132907, -- [10]
+				600, -- [11]
+				7, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367483,
+			},
+			["item:6948::::::::11:::::::"] = {
+				"Hearthstone", -- [1]
+				"|cffffffff|Hitem:6948::::::::11:::::::|h[Hearthstone]|h|r", -- [2]
+				1, -- [3]
+				1, -- [4]
+				0, -- [5]
+				"Miscellaneous", -- [6]
+				"Junk", -- [7]
+				1, -- [8]
+				"", -- [9]
+				134414, -- [10]
+				0, -- [11]
+				15, -- [12]
+				0, -- [13]
+				1, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367483,
+			},
+			["item:4928::::::::31:::11::::"] = {
+				"Sandrunner Wristguards", -- [1]
+				"|cffffffff|Hitem:4928::::::::31:::11::::|h[Sandrunner Wristguards]|h|r", -- [2]
+				1, -- [3]
+				8, -- [4]
+				0, -- [5]
+				"Armor", -- [6]
+				"Leather", -- [7]
+				1, -- [8]
+				"INVTYPE_WRIST", -- [9]
+				132611, -- [10]
+				20, -- [11]
+				4, -- [12]
+				2, -- [13]
+				1, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			["item:5299::::::::31:::11::::"] = {
+				"Gloves of the Moon", -- [1]
+				"|cff1eff00|Hitem:5299::::::::31:::11::::|h[Gloves of the Moon]|h|r", -- [2]
+				2, -- [3]
+				20, -- [4]
+				0, -- [5]
+				"Armor", -- [6]
+				"Leather", -- [7]
+				1, -- [8]
+				"INVTYPE_HAND", -- [9]
+				132952, -- [10]
+				359, -- [11]
+				4, -- [12]
+				2, -- [13]
+				1, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			["item:4306::::::::11:::::::"] = {
+				"Silk Cloth", -- [1]
+				"|cffffffff|Hitem:4306::::::::11:::::::|h[Silk Cloth]|h|r", -- [2]
+				1, -- [3]
+				30, -- [4]
+				0, -- [5]
+				"Trade Goods", -- [6]
+				"Trade Goods", -- [7]
+				20, -- [8]
+				"", -- [9]
+				132905, -- [10]
+				150, -- [11]
+				7, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367483,
+			},
+			["item:6692::::::::31:::1::::"] = {
+				"Pronged Reaver", -- [1]
+				"|cff0070dd|Hitem:6692::::::::31:::1::::|h[Pronged Reaver]|h|r", -- [2]
+				3, -- [3]
+				36, -- [4]
+				31, -- [5]
+				"Weapon", -- [6]
+				"One-Handed Axes", -- [7]
+				1, -- [8]
+				"INVTYPE_WEAPON", -- [9]
+				132409, -- [10]
+				9788, -- [11]
+				2, -- [12]
+				0, -- [13]
+				1, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+		},
+		["sv_version"] = 2,
+	},
+	["profileKeys"] = {
+		["Mxzq - Golemagg"] = "Augustin",
+		["Augustin - Golemagg"] = "Augustin",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["usernamed"] = true,
+			["frame_anchor"] = {
+				"CENTER", -- [1]
+				{
+					["variablesLoaded"] = true,
+					["fadeInfo"] = {
+						["startAlpha"] = 1,
+						["endAlpha"] = 1,
+						["mode"] = "IN",
+						["fadeTimer"] = 0.500000007450581,
+						["timeToFade"] = 0.5,
+					},
+					["firstTimeLoaded"] = 1,
+					[0] = nil --[[ skipped userdata ]],
+				}, -- [2]
+				"CENTER", -- [3]
+				0, -- [4]
+				0, -- [5]
+			},
+		},
+		["Mxzq"] = {
+			["usernamed"] = true,
+			["frame_anchor"] = {
+				"CENTER", -- [1]
+				{
+					["variablesLoaded"] = true,
+					["fadeInfo"] = {
+						["startAlpha"] = 1,
+						["endAlpha"] = 1,
+						["mode"] = "IN",
+						["fadeTimer"] = 0.500000007450581,
+						["timeToFade"] = 0.5,
+					},
+					["firstTimeLoaded"] = 1,
+					[0] = nil --[[ skipped userdata ]],
+				}, -- [2]
+				"CENTER", -- [3]
+				0, -- [4]
+				0, -- [5]
+			},
+		},
+		["Augustin"] = {
+			["arrowunit"] = 2,
+			["frame_positions"] = {
+				["ZygorGuidesViewerPointer_ArrowCtrl"] = {
+					"CENTER", -- [1]
+					nil, -- [2]
+					"CENTER", -- [3]
+					-110.070945739746, -- [4]
+					-158.581359863281, -- [5]
+				},
+			},
+			["gmlastsection"] = "LEVELING",
+			["gmlasthomeversion"] = 1,
+			["windowlocked"] = true,
+			["is_default"] = true,
+			["gear_selected_spec"] = 1,
+			["gear_selected_class"] = 3,
+			["framescale_s"] = 7,
+			["framescale"] = 0.8449,
+			["frame_anchor"] = {
+				"RIGHT", -- [1]
+				{
+					["variablesLoaded"] = true,
+					["fadeInfo"] = {
+						["startAlpha"] = 1,
+						["endAlpha"] = 1,
+						["mode"] = "IN",
+						["fadeTimer"] = 0.500000007450581,
+						["timeToFade"] = 0.5,
+					},
+					["firstTimeLoaded"] = 1,
+					[0] = nil --[[ skipped userdata ]],
+				}, -- [2]
+				"RIGHT", -- [3]
+				-391.804718017578, -- [4]
+				-35.1411895751953, -- [5]
+			},
+			["framescale_menu"] = 0.8449,
+			["profile_current"] = 3,
+			["framescale_menu_s"] = 7,
+			["arrowscale"] = 0.519999980926514,
+			["usernamed"] = true,
+			["arrowscale_s"] = 1,
+		},
+	},
+}
