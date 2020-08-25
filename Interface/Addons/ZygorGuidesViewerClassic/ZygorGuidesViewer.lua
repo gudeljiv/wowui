@@ -3657,7 +3657,8 @@ function ZGV:RaceClassMatch(fit)
 end
 
 
---[[
+
+
 function ZGV:RaceClassMatch(fit)
 	if type(fit)=="table" then
 		for i,v in ipairs(fit) do if self:RaceClassMatch(v) then return true end end
@@ -3679,7 +3680,6 @@ function ZGV:RaceClassMatch(fit)
 	local ret = (race==fit or class==fit or faction==fit or race.." "..class==fit)
 	if neg then return not ret else return ret end
 end
---]]
 
 function ZGV:RaceClassMatchList(list)
 	list=list..","
@@ -6107,11 +6107,6 @@ end
 
 local legion_popup_class = { "Warrior","Paladin","Hunter","Rogue","Priest","Death Knight","Shaman","Mage","Warlock","Monk","Druid","Demon Hunter" }
 function ZGV:PLAYER_LEVEL_UP(event,level)
-	if ZGV.db.profile.n_popup_skills and ZGV.db.profile.n_popup_skills_level then -- use payload level, unitlevel is not yet updated
-		ZGV:ScheduleTimer(function() ZGV.Skills:ShowSkillPopup(level) end,5) 
-	end
-
-	--[[
 	local title,message,guide
 	local _,_,classnum = UnitClass("player")
 	local classname = legion_popup_class[classnum]
@@ -6141,7 +6136,6 @@ function ZGV:PLAYER_LEVEL_UP(event,level)
 	if guide then
 		guide:LegionPopup(title,message,level)
 	end
-	--]]
 end
 
 local POIcache={}

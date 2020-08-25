@@ -44,9 +44,6 @@ local force_maptype={
 local ZGV_mapcache = {}
 function ZGV.GetMapInfo(mapid)
 	if not mapid then return end
-	--[[ mothballed fake dungeon maps
-	if ZGV.Dungeons.MapToData[mapid] then return ZGV.Dungeons.MapToData[mapid] end
-	--]]
 	local mapdata = ZGV_mapcache[mapid]
 	if mapdata then return mapdata end
 	ZGV_mapcache[mapid] = C_Map.GetMapInfo(mapid)
@@ -210,11 +207,6 @@ local function FixMAPDATA()
 	-- expedition maps are now properly filled with GWP data
 
 	MAPDATA[1170]=MAPDATA[1170] or MAPDATA[543]  -- Gorgrond - Mag'har scenario
-	--[[ mothballed fake dungeon maps
-	for map,data in pairs(ZGV.Dungeons.MapToData) do
-		MAPDATA[map] = {map,0,0,0,0}
-	end
-	--]]
 end
 
 FixHBD() -- fix what HBD is breaking

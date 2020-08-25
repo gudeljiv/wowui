@@ -284,6 +284,3 @@ tinsert(ZGV.startups,{"Chain Parser",function(self)
 	ZGV:CleanupChains()
 	ZGV:CreateReverseQuestChains_yielding()
 end})
-
-
--- ([0-9]+)`([0-9]+)",\n  to  \1",\n[\2]=\1,\n

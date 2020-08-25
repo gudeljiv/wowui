@@ -2,7 +2,7 @@
 ZygorGuidesViewerClassicSettings = {
 	["char"] = {
 		["Mxzq - Golemagg"] = {
-			["notifications"] = {
+			["RecipesKnownNew"] = {
 			},
 			["guides_history_ZGV4clear"] = true,
 			["debuglog"] = {
@@ -33,12 +33,6 @@ ZygorGuidesViewerClassicSettings = {
 			["SISlog"] = {
 				"&fsp: no guide found, abort", -- [1]
 			},
-			["RecipesKnownNew"] = {
-			},
-			["lastlogin"] = 1598367667,
-			["initialFlightPathsLoaded"] = true,
-			["guidestephistory"] = {
-			},
 			["taxis"] = {
 				["translation"] = {
 					["enUS"] = {
@@ -46,10 +40,16 @@ ZygorGuidesViewerClassicSettings = {
 				},
 				["Orgrimmar"] = true,
 			},
-			["tabguides"] = {
+			["lastlogin"] = 1598367667,
+			["notifications"] = {
+			},
+			["guidestephistory"] = {
 			},
 			["badupgrade"] = {
 			},
+			["tabguides"] = {
+			},
+			["initialFlightPathsLoaded"] = true,
 		},
 		["Augustin - Golemagg"] = {
 			["SISdestination"] = {
@@ -119,8 +119,7 @@ ZygorGuidesViewerClassicSettings = {
 				"&fsp: >> locating first relevant step", -- [11]
 				"&fsp: >> found at 47", -- [12]
 			},
-			["SISguides"] = {
-				["LEVELING\\Tirisfal Glades (1-12) [Undead Starter]"] = 124,
+			["notifications"] = {
 			},
 			["guideTurnInsOnly"] = false,
 			["guides_history"] = {
@@ -129,14 +128,15 @@ ZygorGuidesViewerClassicSettings = {
 					47, -- [2]
 				}, -- [1]
 			},
+			["SISguides"] = {
+				["LEVELING\\Tirisfal Glades (1-12) [Undead Starter]"] = 124,
+			},
 			["guidestephistory"] = {
 				["LEVELING\\Tirisfal Glades (1-12) [Undead Starter]"] = {
 					["steps"] = {
 					},
 					["lasttime"] = 1598367484,
 				},
-			},
-			["notifications"] = {
 			},
 			["taxis"] = {
 				["Undercity"] = true,
@@ -154,7 +154,13 @@ ZygorGuidesViewerClassicSettings = {
 				"LEVELING\\Tirisfal Glades (1-12) [Undead Starter]", -- [1]
 				38, -- [2]
 			},
+			["CurrentDeals"] = {
+			},
 			["step"] = 9,
+			["ATsearchitems"] = {
+			},
+			["GGbuyitems"] = {
+			},
 			["guidename"] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
 			["guides_history_ZGV4clear"] = true,
 			["guideTurnInsOnly"] = false,
@@ -163,6 +169,8 @@ ZygorGuidesViewerClassicSettings = {
 					"LEVELING\\Tirisfal Glades (1-12) [Undead Starter]", -- [1]
 					9, -- [2]
 				}, -- [1]
+			},
+			["notifications"] = {
 			},
 			["taxis"] = {
 				["Undercity"] = true,
@@ -188,7 +196,7 @@ ZygorGuidesViewerClassicSettings = {
 				[3902] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
 				[383] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
 				[360] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
-				[368] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
+				[492] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
 				[376] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
 				[365] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
 				[5481] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
@@ -197,7 +205,40 @@ ZygorGuidesViewerClassicSettings = {
 				[354] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
 				[6395] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
 				[370] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
-				[492] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
+				[368] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
+			},
+			["RecipesKnownNew"] = {
+			},
+			["AThiddenitems"] = {
+			},
+			["lastlogin"] = 1598370726,
+			["tabguides"] = {
+				{
+					["title"] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
+					["step"] = 9,
+				}, -- [1]
+			},
+			["badupgrade"] = {
+			},
+			["initialFlightPathsLoaded"] = true,
+			["debuglog"] = {
+				"17:03:58.577.781> Viewer started. ---------------------------", -- [1]
+				"17:52:26.168.082> Viewer started. ---------------------------", -- [2]
+			},
+			["profile_selected"] = true,
+			["SISlog"] = {
+				"&fsp: suggested guide isLEVELING\\Tirisfal Glades (1-12) [Undead Starter]", -- [1]
+				"&fsp: > ding for level 5 found at step 35", -- [2]
+				"&fsp: > possible accept found at step 38", -- [3]
+				"&fsp: > finding all future guides", -- [4]
+				"&fsp: > finding all past guides", -- [5]
+				"&fsp: >>> no previous guide, terminate loop", -- [6]
+				"&fsp: >> marking required guides", -- [7]
+				"&fsp: >> locating earliest guides", -- [8]
+				"&fsp: >> done LEVELING\\Tirisfal Glades (1-12) [Undead Starter]", -- [9]
+				"&fsp: >> loading LEVELING\\Tirisfal Glades (1-12) [Undead Starter]", -- [10]
+				"&fsp: >> locating first relevant step", -- [11]
+				"&fsp: >> found at 9", -- [12]
 			},
 			["SkillsKnown"] = {
 				[""] = {
@@ -214,47 +255,584 @@ ZygorGuidesViewerClassicSettings = {
 					["skillID"] = 333,
 				},
 			},
-			["lastlogin"] = 1598367831,
+			["guidestephistory"] = {
+				["LEVELING\\Tirisfal Glades (1-12) [Undead Starter]"] = {
+					["steps"] = {
+					},
+					["lasttime"] = 1598370750,
+				},
+			},
+			["SISguides"] = {
+				["LEVELING\\Tirisfal Glades (1-12) [Undead Starter]"] = 38,
+			},
+		},
+		["Vermin - Golemagg"] = {
+			["SISdestination"] = {
+				"LEVELING\\Thousand Needles (28-29)", -- [1]
+				1, -- [2]
+			},
+			["SISquests"] = {
+				[4505] = "LEVELING\\Felwood (54-55)",
+				[190] = "LEVELING\\Stranglethorn Vale (31-31)",
+				[1261] = "LEVELING\\Stranglethorn Vale (39-39)",
+				[2] = "LEVELING\\Desolace (32-34)",
+				[1262] = "LEVELING\\Dustwallow Marsh (43-44)",
+				[10] = "LEVELING\\Tanaris (50-51)",
+				[191] = "LEVELING\\Stranglethorn Vale (31-31)",
+				[1018] = true,
+				[24] = "LEVELING\\Ashenvale (25-27)",
+				[1269] = "LEVELING\\Dustwallow Marsh (34-34)",
+				[5062] = "LEVELING\\Thousand Needles (28-29)",
+				[5581] = "LEVELING\\Desolace (44-44)",
+				[3562] = "LEVELING\\Azshara (51-51)",
+				[3563] = "LEVELING\\Azshara (51-51)",
+				[1273] = "LEVELING\\Dustwallow Marsh (43-44)",
+				[3565] = "LEVELING\\Azshara (51-51)",
+				[192] = "LEVELING\\Stranglethorn Vale (34-36)",
+				[3568] = "LEVELING\\Azshara (46-46)",
+				[3569] = "LEVELING\\Azshara (51-51)",
+				[5088] = "LEVELING\\Thousand Needles (28-29)",
+				[5601] = "LEVELING\\Winterspring (55-55)",
+				[5094] = "DUNGEONS\\Scholomance Quests",
+				[5096] = "DUNGEONS\\Scholomance Quests",
+				[5098] = "DUNGEONS\\Scholomance Quests",
+				[642] = "LEVELING\\Arathi Highlands (36-37)",
+				[193] = "LEVELING\\Stranglethorn Vale (48-48)",
+				[81] = "LEVELING\\The Hinterlands (46-48)",
+				[113] = "LEVELING\\Tanaris (50-51)",
+				[5142] = true,
+				[194] = "LEVELING\\Stranglethorn Vale (31-31)",
+				[3601] = "LEVELING\\Azshara (54-54)",
+				[5152] = "LEVELING\\Eastern Plaguelands (57-58)",
+				[5154] = "LEVELING\\Western Plaguelands (58-58)",
+				[649] = "LEVELING\\Feralas (45-46)",
+				[7725] = "LEVELING\\Feralas (49-50)",
+				[8284] = "LEVELING\\Silithus (58-59)",
+				[7731] = "LEVELING\\Feralas (45-46)",
+				[778] = "LEVELING\\Badlands (40-42)",
+				[651] = "LEVELING\\Arathi Highlands (36-37)",
+				[82] = "LEVELING\\Tanaris (50-51)",
+				[2605] = "LEVELING\\Tanaris (50-51)",
+				[2606] = "LEVELING\\Tanaris (50-51)",
+				[654] = "LEVELING\\Tanaris (50-51)",
+				[196] = "LEVELING\\Stranglethorn Vale (34-36)",
+				[3121] = "LEVELING\\Feralas (45-46)",
+				[3122] = "LEVELING\\Feralas (45-46)",
+				[655] = "LEVELING\\Arathi Highlands (30-31)",
+				[3124] = "LEVELING\\Feralas (49-50)",
+				[3125] = "LEVELING\\Feralas (49-50)",
+				[3126] = "LEVELING\\Feralas (49-50)",
+				[3127] = "LEVELING\\Feralas (49-50)",
+				[3128] = "LEVELING\\Feralas (45-46)",
+				[3129] = "LEVELING\\Feralas (49-50)",
+				[5741] = "LEVELING\\Desolace (32-34)",
+				[5232] = "LEVELING\\Western Plaguelands (56-57)",
+				[2621] = "LEVELING\\Swamp of Sorrows (49-49)",
+				[2622] = "LEVELING\\Swamp of Sorrows (49-49)",
+				[2623] = "LEVELING\\Swamp of Sorrows (49-49)",
+				[197] = "LEVELING\\Stranglethorn Vale (39-39)",
+				[4741] = "LEVELING\\Silithus (58-59)",
+				[8460] = "LEVELING\\Felwood (55-56)",
+				[4244] = "LEVELING\\Un'Goro Crater (52-54)",
+				[1321] = "LEVELING\\Dustwallow Marsh (34-34)",
+				[5781] = "LEVELING\\Eastern Plaguelands (57-58)",
+				[1322] = "LEVELING\\Dustwallow Marsh (38-39)",
+				[2641] = "LEVELING\\Tanaris (50-51)",
+				[1323] = "LEVELING\\Dustwallow Marsh (38-39)",
+				[663] = "LEVELING\\Arathi Highlands (40-40)",
+				[7841] = "LEVELING\\The Hinterlands (46-48)",
+				[7843] = "LEVELING\\The Hinterlands (51-52)",
+				[665] = "LEVELING\\Arathi Highlands (40-40)",
+				[666] = "LEVELING\\Arathi Highlands (40-40)",
+				[4284] = "LEVELING\\Un'Goro Crater (52-54)",
+				[4288] = "LEVELING\\Un'Goro Crater (52-54)",
+				[4290] = "LEVELING\\Un'Goro Crater (52-54)",
+				[2661] = "LEVELING\\Un'Goro Crater (52-54)",
+				[2662] = "LEVELING\\Un'Goro Crater (52-54)",
+				[668] = "LEVELING\\Arathi Highlands (40-40)",
+				[669] = "LEVELING\\Arathi Highlands (40-40)",
+				[4821] = "LEVELING\\Thousand Needles (25-25)",
+				[5845] = "LEVELING\\Eastern Plaguelands (57-58)",
+				[232] = "LEVELING\\Azshara (46-46)",
+				[544] = "LEVELING\\Alterac Mountains (37-38)",
+				[672] = "LEVELING\\Arathi Highlands (30-31)",
+				[545] = "LEVELING\\Alterac Mountains (37-38)",
+				[6382] = true,
+				[674] = "LEVELING\\Arathi Highlands (30-31)",
+				[4865] = "LEVELING\\Thousand Needles (28-29)",
+				[676] = "LEVELING\\Arathi Highlands (36-37)",
+				[5901] = "LEVELING\\Western Plaguelands (56-57)",
+				[677] = "LEVELING\\Arathi Highlands (36-37)",
+				[4883] = "LEVELING\\Winterspring (59-60)",
+				[742] = "LEVELING\\The Barrens (16-21)",
+				[675] = "LEVELING\\Arathi Highlands (30-31)",
+				[678] = "LEVELING\\Arathi Highlands (36-37)",
+				[3541] = "LEVELING\\Azshara (51-51)",
+				[1276] = "LEVELING\\Dustwallow Marsh (43-44)",
+				[1148] = "LEVELING\\Thousand Needles (38-38)",
+				[607] = "LEVELING\\Stranglethorn Vale (39-39)",
+				[8280] = "LEVELING\\Silithus (58-59)",
+				[8285] = "LEVELING\\Silithus (58-59)",
+				[552] = "LEVELING\\Hillsbrad Foothills (29-30)",
+				[2862] = "LEVELING\\Feralas (45-46)",
+				[604] = "LEVELING\\Stranglethorn Vale (42-43)",
+				[936] = true,
+				[8273] = "LEVELING\\The Hinterlands (46-48)",
+				[8277] = "LEVELING\\Silithus (58-59)",
+				[8281] = "LEVELING\\Silithus (58-59)",
+				[1361] = "LEVELING\\Hillsbrad Foothills (29-30)",
+				[1106] = "LEVELING\\Thousand Needles (38-38)",
+				[1362] = "LEVELING\\Thousand Needles (31-32)",
+				[7842] = "LEVELING\\The Hinterlands (46-48)",
+				[235] = true,
+				[1108] = "LEVELING\\Badlands (40-42)",
+				[698] = "LEVELING\\Swamp of Sorrows (39-40)",
+				[1426] = "LEVELING\\Swamp of Sorrows (42-42)",
+				[1365] = "LEVELING\\Desolace (32-34)",
+				[556] = "LEVELING\\Alterac Mountains (37-38)",
+				[1366] = "LEVELING\\Desolace (32-34)",
+				[1111] = "LEVELING\\Thousand Needles (31-32)",
+				[1123] = "LEVELING\\Western Plaguelands (58-58)",
+				[1112] = "LEVELING\\Dustwallow Marsh (34-34)",
+				[1368] = "LEVELING\\Desolace (32-34)",
+				[7541] = "LEVELING\\Feralas (45-46)",
+				[626] = "LEVELING\\Dustwallow Marsh (49-49)",
+				[1114] = "LEVELING\\Thousand Needles (38-38)",
+				[1370] = "LEVELING\\Desolace (32-34)",
+				[1115] = "LEVELING\\Thousand Needles (38-38)",
+				[3517] = "LEVELING\\Azshara (51-51)",
+				[1116] = "LEVELING\\Stranglethorn Vale (39-39)",
+				[4450] = "LEVELING\\Searing Gorge (48-49)",
+				[1117] = "LEVELING\\Stranglethorn Vale (42-43)",
+				[2742] = "LEVELING\\The Hinterlands (46-48)",
+				[1118] = "LEVELING\\Tanaris (44-45)",
+				[1374] = "LEVELING\\Desolace (44-44)",
+				[4971] = "LEVELING\\Western Plaguelands (58-58)",
+				[1130] = "LEVELING\\The Barrens (16-21)",
+				[208] = "LEVELING\\Stranglethorn Vale (48-48)",
+				[568] = "LEVELING\\Stranglethorn Vale (34-36)",
+				[5021] = "LEVELING\\Western Plaguelands (56-57)",
+				[5023] = "LEVELING\\Western Plaguelands (56-57)",
+				[5236] = "LEVELING\\Western Plaguelands (56-57)",
+				[4985] = "LEVELING\\Western Plaguelands (56-57)",
+				[4987] = "LEVELING\\Western Plaguelands (56-57)",
+				[4292] = "LEVELING\\Un'Goro Crater (52-54)",
+				[1124] = "LEVELING\\Western Plaguelands (58-58)",
+				[575] = "LEVELING\\Stranglethorn Vale (34-36)",
+				[1125] = "LEVELING\\Silithus (58-59)",
+				[2976] = "LEVELING\\Feralas (45-46)",
+				[1126] = "LEVELING\\Silithus (58-59)",
+				[6023] = "LEVELING\\Western Plaguelands (58-58)",
+				[3783] = "LEVELING\\Winterspring (55-55)",
+				[6027] = "LEVELING\\Desolace (32-34)",
+				[4496] = "LEVELING\\Un'Goro Crater (52-54)",
+				[3564] = "LEVELING\\Azshara (51-51)",
+				[4449] = "LEVELING\\Searing Gorge (48-49)",
+				[2766] = "LEVELING\\Feralas (45-46)",
+				[2767] = "LEVELING\\Feralas (49-50)",
+				[4506] = "LEVELING\\Felwood (55-56)",
+				[1131] = "LEVELING\\The Barrens (16-21)",
+				[238] = "LEVELING\\Azshara (46-46)",
+				[5534] = "LEVELING\\Azshara (54-54)",
+				[5231] = "LEVELING\\Western Plaguelands (56-57)",
+				[5234] = "LEVELING\\Western Plaguelands (56-57)",
+				[5095] = true,
+				[5542] = "LEVELING\\Eastern Plaguelands (57-58)",
+				[1183] = "LEVELING\\Stranglethorn Vale (34-36)",
+				[662] = "LEVELING\\Arathi Highlands (40-40)",
+				[5086] = "LEVELING\\Winterspring (56-56)",
+				[1136] = "LEVELING\\Thousand Needles (28-29)",
+				[5050] = "LEVELING\\Eastern Plaguelands (57-58)",
+				[1137] = "LEVELING\\Badlands (40-42)",
+				[2782] = "LEVELING\\The Hinterlands (46-48)",
+				[570] = "LEVELING\\Stranglethorn Vale (34-36)",
+				[5049] = "LEVELING\\Eastern Plaguelands (57-58)",
+				[5051] = "LEVELING\\Western Plaguelands (58-58)",
+				[2801] = "LEVELING\\Swamp of Sorrows (49-49)",
+				[571] = "LEVELING\\Stranglethorn Vale (39-39)",
+				[699] = "LEVELING\\Swamp of Sorrows (39-40)",
+				[4881] = "LEVELING\\Thousand Needles (28-29)",
+				[5083] = true,
+				[572] = "LEVELING\\Stranglethorn Vale (39-39)",
+				[1178] = "LEVELING\\Thousand Needles (31-32)",
+				[1238] = "LEVELING\\Dustwallow Marsh (38-39)",
+				[4642] = "LEVELING\\Western Plaguelands (56-57)",
+				[573] = "LEVELING\\Stranglethorn Vale (39-39)",
+				[701] = "LEVELING\\Arathi Highlands (36-37)",
+				[1145] = "LEVELING\\Thousand Needles (31-32)",
+				[1181] = "LEVELING\\Stranglethorn Vale (34-36)",
+				[1146] = "LEVELING\\Desolace (32-34)",
+				[702] = "LEVELING\\Arathi Highlands (36-37)",
+				[1147] = "LEVELING\\Thousand Needles (38-38)",
+				[5085] = "LEVELING\\Felwood (55-56)",
+				[5087] = "LEVELING\\Winterspring (59-60)",
+				[1169] = "LEVELING\\Dustwallow Marsh (43-44)",
+				[243] = "LEVELING\\Azshara (46-46)",
+				[5093] = true,
+				[576] = "LEVELING\\Stranglethorn Vale (42-43)",
+				[4061] = "DUNGEONS\\Blackrock Depths Quests",
+				[7730] = "LEVELING\\Feralas (45-46)",
+				[3821] = "LEVELING\\Burning Steppes (54-54)",
+				[577] = "LEVELING\\Stranglethorn Vale (34-36)",
+				[1690] = "LEVELING\\Tanaris (44-45)",
+				[2974] = "LEVELING\\Feralas (45-46)",
+				[6131] = true,
+				[3822] = "LEVELING\\Burning Steppes (54-54)",
+				[1488] = "LEVELING\\Desolace (44-44)",
+				[209] = "LEVELING\\Stranglethorn Vale (42-43)",
+				[557] = "LEVELING\\Alterac Mountains (37-38)",
+				[3481] = "DUNGEONS\\Blackrock Depths Quests",
+				[569] = "LEVELING\\Stranglethorn Vale (34-36)",
+				[1180] = "LEVELING\\Dustwallow Marsh (34-34)",
+				[2822] = "LEVELING\\Feralas (45-46)",
+				[3845] = "LEVELING\\Un'Goro Crater (52-54)",
+				[3123] = "LEVELING\\Feralas (45-46)",
+				[1427] = "LEVELING\\Swamp of Sorrows (42-42)",
+				[964] = "DUNGEONS\\Scholomance Quests",
+				[581] = "LEVELING\\Stranglethorn Vale (34-36)",
+				[7003] = "LEVELING\\Feralas (49-50)",
+				[1190] = "LEVELING\\Tanaris (44-45)",
+				[715] = "LEVELING\\Badlands (40-42)",
+				[582] = "LEVELING\\Stranglethorn Vale (34-36)",
+				[710] = "LEVELING\\Badlands (40-42)",
+				[838] = "DUNGEONS\\Scholomance Quests",
+				[5149] = "LEVELING\\Eastern Plaguelands (57-58)",
+				[583] = "LEVELING\\Stranglethorn Vale (31-31)",
+				[5153] = "LEVELING\\Western Plaguelands (58-58)",
+				[5155] = "LEVELING\\Felwood (54-55)",
+				[5157] = "LEVELING\\Felwood (55-56)",
+				[1373] = "LEVELING\\Desolace (32-34)",
+				[1422] = "LEVELING\\Swamp of Sorrows (39-40)",
+				[5163] = "LEVELING\\Winterspring (56-56)",
+				[32] = "LEVELING\\Tanaris (50-51)",
+				[4145] = "DUNGEONS\\Temple of Atal'Hakkar Quests",
+				[8278] = "LEVELING\\Silithus (58-59)",
+				[8282] = "LEVELING\\Silithus (58-59)",
+				[186] = "LEVELING\\Stranglethorn Vale (31-31)",
+				[1170] = "LEVELING\\Dustwallow Marsh (43-44)",
+				[7732] = "LEVELING\\Feralas (45-46)",
+				[1171] = "LEVELING\\Dustwallow Marsh (43-44)",
+				[5181] = "LEVELING\\Silithus (58-59)",
+				[587] = "LEVELING\\Stranglethorn Vale (42-43)",
+				[1428] = "LEVELING\\Swamp of Sorrows (49-49)",
+				[1173] = "LEVELING\\Dustwallow Marsh (49-49)",
+				[1429] = "DUNGEONS\\Temple of Atal'Hakkar Quests",
+				[714] = "LEVELING\\Badlands (40-42)",
+				[716] = "LEVELING\\Badlands (40-42)",
+				[2903] = "LEVELING\\Feralas (45-46)",
+				[1431] = "LEVELING\\Desolace (32-34)",
+				[1176] = "LEVELING\\Thousand Needles (31-32)",
+				[1432] = "LEVELING\\Desolace (32-34)",
+				[650] = "LEVELING\\Feralas (45-46)",
+				[1433] = "LEVELING\\Desolace (32-34)",
+				[2863] = "LEVELING\\Feralas (45-46)",
+				[1434] = "LEVELING\\Desolace (32-34)",
+				[5211] = "LEVELING\\Eastern Plaguelands (57-58)",
+				[1435] = "LEVELING\\Desolace (32-34)",
+				[1691] = "LEVELING\\Tanaris (44-45)",
+				[1480] = "LEVELING\\Desolace (32-34)",
+				[847] = "LEVELING\\Arathi Highlands (36-37)",
+				[77] = "LEVELING\\The Hinterlands (46-48)",
+				[1182] = "LEVELING\\Stranglethorn Vale (34-36)",
+				[2872] = "LEVELING\\Stranglethorn Vale (42-43)",
+				[2873] = "LEVELING\\Tanaris (44-45)",
+				[5229] = "LEVELING\\Western Plaguelands (56-57)",
+				[5742] = "LEVELING\\Eastern Plaguelands (57-58)",
+				[5233] = "LEVELING\\Western Plaguelands (56-57)",
+				[5235] = "LEVELING\\Western Plaguelands (56-57)",
+				[977] = "LEVELING\\Winterspring (55-55)",
+				[1186] = "LEVELING\\Thousand Needles (38-38)",
+				[5241] = "LEVELING\\Eastern Plaguelands (57-58)",
+				[1187] = "LEVELING\\Thousand Needles (38-38)",
+				[1104] = "LEVELING\\Thousand Needles (31-32)",
+				[595] = "LEVELING\\Stranglethorn Vale (39-39)",
+				[1444] = "DUNGEONS\\Temple of Atal'Hakkar Quests",
+				[777] = "LEVELING\\Badlands (40-42)",
+				[3908] = "LEVELING\\Un'Goro Crater (52-54)",
+				[596] = "LEVELING\\Stranglethorn Vale (34-36)",
+				[3570] = "LEVELING\\Azshara (51-51)",
+				[3518] = "LEVELING\\Azshara (51-51)",
+				[8462] = "LEVELING\\Felwood (55-56)",
+				[597] = "LEVELING\\Stranglethorn Vale (39-39)",
+				[4243] = "LEVELING\\Un'Goro Crater (52-54)",
+				[4245] = "LEVELING\\Un'Goro Crater (52-54)",
+				[3561] = "LEVELING\\Azshara (51-51)",
+				[598] = "LEVELING\\Stranglethorn Vale (39-39)",
+				[501] = "LEVELING\\Hillsbrad Foothills (29-30)",
+				[1195] = "LEVELING\\The Barrens (16-21)",
+				[1424] = "DUNGEONS\\Temple of Atal'Hakkar Quests",
+				[1196] = "LEVELING\\Stonetalon Mountains (27-28)",
+				[553] = "LEVELING\\Hillsbrad Foothills (29-30)",
+				[1197] = "LEVELING\\Thousand Needles (28-29)",
+				[2902] = "LEVELING\\Feralas (45-46)",
+				[600] = "LEVELING\\Stranglethorn Vale (42-43)",
+				[195] = "LEVELING\\Stranglethorn Vale (31-31)",
+				[7734] = "LEVELING\\Feralas (49-50)",
+				[1206] = "LEVELING\\Dustwallow Marsh (38-39)",
+				[1218] = "LEVELING\\Dustwallow Marsh (38-39)",
+				[1718] = "LEVELING\\Arathi Highlands (30-31)",
+				[1201] = "LEVELING\\Dustwallow Marsh (38-39)",
+				[3380] = "DUNGEONS\\Temple of Atal'Hakkar Quests",
+				[1202] = "LEVELING\\Dustwallow Marsh (38-39)",
+				[605] = "LEVELING\\Stranglethorn Vale (34-36)",
+				[4285] = "LEVELING\\Un'Goro Crater (52-54)",
+				[4287] = "LEVELING\\Un'Goro Crater (52-54)",
+				[6844] = "LEVELING\\Silithus (58-59)",
+				[4291] = "LEVELING\\Un'Goro Crater (52-54)",
+				[4293] = "LEVELING\\Azshara (51-51)",
+				[712] = "LEVELING\\Badlands (40-42)",
+				[4808] = "DUNGEONS\\Scholomance Quests",
+				[4810] = "DUNGEONS\\Scholomance Quests",
+				[4301] = "LEVELING\\Un'Goro Crater (52-54)",
+				[3542] = "LEVELING\\Azshara (51-51)",
+				[1719] = "LEVELING\\Arathi Highlands (30-31)",
+				[606] = "LEVELING\\Stranglethorn Vale (39-39)",
+				[1172] = "LEVELING\\Dustwallow Marsh (49-49)",
+				[3442] = "DUNGEONS\\Blackrock Depths Quests",
+				[5846] = "LEVELING\\Eastern Plaguelands (57-58)",
+				[734] = "LEVELING\\Badlands (40-42)",
+				[2933] = "DUNGEONS\\Zul'Farrak Quests",
+				[3441] = "DUNGEONS\\Blackrock Depths Quests",
+				[4321] = "LEVELING\\Un'Goro Crater (52-54)",
+				[3443] = "DUNGEONS\\Blackrock Depths Quests",
+				[3444] = "LEVELING\\Tanaris (50-51)",
+				[2934] = "DUNGEONS\\Zul'Farrak Quests",
+				[608] = "LEVELING\\Stranglethorn Vale (48-48)",
+				[4842] = "LEVELING\\Winterspring (55-55)",
+				[864] = "LEVELING\\Tanaris (50-51)",
+				[992] = "LEVELING\\Tanaris (44-45)",
+				[609] = "LEVELING\\Stranglethorn Vale (42-43)",
+				[6383] = "LEVELING\\Ashenvale (22-22)",
+				[3452] = "DUNGEONS\\Blackrock Depths Quests",
+				[3453] = "DUNGEONS\\Blackrock Depths Quests",
+				[3454] = "DUNGEONS\\Blackrock Depths Quests",
+				[185] = "LEVELING\\Stranglethorn Vale (31-31)",
+				[599] = "LEVELING\\Stranglethorn Vale (39-39)",
+				[23] = "LEVELING\\Ashenvale (25-27)",
+				[4289] = "LEVELING\\Un'Goro Crater (52-54)",
+				[247] = "LEVELING\\Desolace (32-34)",
+				[1203] = "LEVELING\\Dustwallow Marsh (38-39)",
+				[5381] = "LEVELING\\Desolace (32-34)",
+				[3462] = "DUNGEONS\\Blackrock Depths Quests",
+				[3463] = "DUNGEONS\\Blackrock Depths Quests",
+				[3761] = "LEVELING\\Un'Goro Crater (52-54)",
+				[3762] = true,
+				[5902] = "LEVELING\\Western Plaguelands (58-58)",
+				[4882] = "LEVELING\\Winterspring (59-60)",
+				[3784] = true,
+				[1481] = "LEVELING\\Desolace (32-34)",
+				[1194] = "LEVELING\\Tanaris (44-45)",
+				[1482] = "LEVELING\\Desolace (32-34)",
+				[980] = "LEVELING\\Un'Goro Crater (52-54)",
+				[974] = "LEVELING\\Un'Goro Crater (52-54)",
+				[4147] = "DUNGEONS\\Temple of Atal'Hakkar Quests",
+				[1484] = "LEVELING\\Desolace (32-34)",
+				[1188] = "LEVELING\\Tanaris (44-45)",
+				[4494] = "LEVELING\\Azshara (51-51)",
+				[4726] = "DUNGEONS\\Scholomance Quests",
+				[1184] = "LEVELING\\Thousand Needles (38-38)",
+				[2874] = "LEVELING\\Tanaris (44-45)",
+				[1000] = true,
+				[3844] = "LEVELING\\Un'Goro Crater (52-54)",
+				[8279] = "LEVELING\\Silithus (58-59)",
+				[2973] = "LEVELING\\Feralas (45-46)",
+				[8798] = "LEVELING\\Winterspring (59-60)",
+				[2975] = "LEVELING\\Feralas (45-46)",
+				[187] = "LEVELING\\Stranglethorn Vale (31-31)",
+				[4062] = "DUNGEONS\\Blackrock Depths Quests",
+				[2978] = "LEVELING\\Feralas (45-46)",
+				[2979] = "LEVELING\\Feralas (45-46)",
+				[2980] = "LEVELING\\Feralas (45-46)",
+				[713] = "LEVELING\\Badlands (40-42)",
+				[502] = "LEVELING\\Hillsbrad Foothills (29-30)",
+				[8323] = "LEVELING\\Silithus (58-59)",
+				[711] = "LEVELING\\Badlands (40-42)",
+				[1239] = "LEVELING\\Dustwallow Marsh (38-39)",
+				[1004] = "LEVELING\\Eastern Plaguelands (57-58)",
+				[1240] = "LEVELING\\Dustwallow Marsh (38-39)",
+				[8465] = "LEVELING\\Felwood (54-55)",
+				[110] = "LEVELING\\Tanaris (50-51)",
+				[5230] = "LEVELING\\Western Plaguelands (56-57)",
+				[5228] = "LEVELING\\Western Plaguelands (56-57)",
+				[188] = "LEVELING\\Stranglethorn Vale (34-36)",
+				[3504] = "LEVELING\\Feralas (45-46)",
+				[3505] = "LEVELING\\Azshara (54-54)",
+				[3506] = "LEVELING\\Azshara (54-54)",
+				[3507] = "LEVELING\\Azshara (54-54)",
+				[4294] = "LEVELING\\Azshara (51-51)",
+				[4966] = "LEVELING\\Thousand Needles (28-29)",
+				[624] = "LEVELING\\Stranglethorn Vale (48-48)",
+				[4022] = "DUNGEONS\\Blackrock Depths Quests",
+				[4972] = "LEVELING\\Western Plaguelands (58-58)",
+				[3002] = "LEVELING\\Feralas (45-46)",
+				[625] = "LEVELING\\Swamp of Sorrows (49-49)",
+				[2784] = "LEVELING\\Swamp of Sorrows (49-49)",
+				[8461] = "LEVELING\\Felwood (54-55)",
+				[6004] = "LEVELING\\Western Plaguelands (58-58)",
+				[4984] = "LEVELING\\Western Plaguelands (56-57)",
+				[189] = "LEVELING\\Stranglethorn Vale (34-36)",
+				[1251] = "LEVELING\\Dustwallow Marsh (34-34)",
+				[5210] = "LEVELING\\Western Plaguelands (58-58)",
+				[4492] = "LEVELING\\Un'Goro Crater (52-54)",
+				[3782] = "LEVELING\\Un'Goro Crater (52-54)",
+				[5084] = "LEVELING\\Winterspring (55-55)",
+				[6390] = "LEVELING\\Western Plaguelands (58-58)",
+				[628] = "LEVELING\\Stranglethorn Vale (39-39)",
+				[4491] = "LEVELING\\Un'Goro Crater (52-54)",
+				[4521] = "LEVELING\\Felwood (54-55)",
+				[8276] = true,
+				[8287] = "LEVELING\\Silithus (58-59)",
+				[379] = "LEVELING\\Tanaris (50-51)",
+				[4809] = "DUNGEONS\\Scholomance Quests",
+				[4721] = "LEVELING\\Winterspring (59-60)",
+			},
+			["CurrentDeals"] = {
+			},
+			["step"] = 46,
+			["ATsearchitems"] = {
+			},
+			["lastlogin"] = 1598370608,
+			["GGbuyitems"] = {
+			},
 			["badupgrade"] = {
 			},
 			["tabguides"] = {
 				{
-					["title"] = "LEVELING\\Tirisfal Glades (1-12) [Undead Starter]",
-					["step"] = 9,
+					["title"] = "LEVELING\\The Barrens (16-21)",
+					["step"] = 46,
 				}, -- [1]
 			},
+			["guidestephistory"] = {
+				["LEVELING\\The Barrens (16-21)"] = {
+					["steps"] = {
+						12, -- [1]
+						13, -- [2]
+						14, -- [3]
+						15, -- [4]
+						16, -- [5]
+						17, -- [6]
+						18, -- [7]
+						19, -- [8]
+						20, -- [9]
+						21, -- [10]
+						22, -- [11]
+						23, -- [12]
+						24, -- [13]
+						25, -- [14]
+						26, -- [15]
+						27, -- [16]
+						28, -- [17]
+						29, -- [18]
+						30, -- [19]
+						31, -- [20]
+						32, -- [21]
+						33, -- [22]
+						34, -- [23]
+						35, -- [24]
+						36, -- [25]
+						37, -- [26]
+						38, -- [27]
+						39, -- [28]
+						40, -- [29]
+						41, -- [30]
+						42, -- [31]
+						43, -- [32]
+						44, -- [33]
+						45, -- [34]
+					},
+					["lasttime"] = 1598370623,
+				},
+			},
+			["RecipesKnownNew"] = {
+			},
+			["profile_selected"] = true,
+			["guidename"] = "LEVELING\\The Barrens (16-21)",
+			["guides_history_ZGV4clear"] = true,
+			["debuglog"] = {
+				"17:50:20.074.658> Viewer started. ---------------------------", -- [1]
+			},
+			["AThiddenitems"] = {
+			},
+			["initialFlightPathsLoaded"] = true,
+			["guideTurnInsOnly"] = false,
+			["guides_history"] = {
+				{
+					"LEVELING\\The Barrens (16-21)", -- [1]
+					46, -- [2]
+				}, -- [1]
+			},
+			["SISguides"] = {
+				["LEVELING\\Ashenvale (25-27)"] = true,
+				["LEVELING\\The Barrens (25-25)"] = -1,
+				["DUNGEONS\\Scholomance Quests"] = true,
+				["LEVELING\\Durotar (1-12) [Orc & Troll Starter]"] = -1,
+				["DUNGEONS\\Stratholme - Live Side Quests"] = true,
+				["LEVELING\\Stonetalon Mountains (23-25)"] = -1,
+				["LEVELING\\Stonetalon Mountains (21-22)"] = -1,
+				["DUNGEONS\\Blackrock Depths Quests"] = true,
+				["LEVELING\\Thousand Needles (28-29)"] = 1,
+				["LEVELING\\The Barrens (16-21)"] = true,
+				["DUNGEONS\\Zul'Farrak Quests"] = true,
+				["LEVELING\\Thousand Needles (25-25)"] = true,
+				["DUNGEONS\\Upper Blackrock Quests"] = true,
+				["LEVELING\\The Barrens (22-23)"] = -1,
+				["LEVELING\\Stonetalon Mountains (15-16)"] = -1,
+				["DUNGEONS\\Temple of Atal'Hakkar Quests"] = true,
+				["LEVELING\\Stonetalon Mountains (27-28)"] = true,
+				["LEVELING\\The Barrens (12-15)"] = -1,
+				["LEVELING\\Ashenvale (22-22)"] = true,
+			},
+			["notifications"] = {
+			},
+			["taxis"] = {
+				["translation"] = {
+					["enUS"] = {
+					},
+				},
+				["Orgrimmar"] = true,
+			},
 			["SISlog"] = {
-				"&fsp: suggested guide isLEVELING\\Tirisfal Glades (1-12) [Undead Starter]", -- [1]
-				"&fsp: > ding for level 5 found at step 35", -- [2]
-				"&fsp: > possible accept found at step 38", -- [3]
+				"&fsp: suggested guide isLEVELING\\Thousand Needles (28-29)", -- [1]
+				"&fsp: > no ding for 28, starting at step 1", -- [2]
+				"&fsp: > possible accept found at step 1", -- [3]
 				"&fsp: > finding all future guides", -- [4]
 				"&fsp: > finding all past guides", -- [5]
 				"&fsp: >>> no previous guide, terminate loop", -- [6]
 				"&fsp: >> marking required guides", -- [7]
 				"&fsp: >> locating earliest guides", -- [8]
-				"&fsp: >> done LEVELING\\Tirisfal Glades (1-12) [Undead Starter]", -- [9]
-				"&fsp: >> loading LEVELING\\Tirisfal Glades (1-12) [Undead Starter]", -- [10]
+				"&fsp: >> done LEVELING\\The Barrens (16-21)", -- [9]
+				"&fsp: >> loading LEVELING\\The Barrens (16-21)", -- [10]
 				"&fsp: >> locating first relevant step", -- [11]
-				"&fsp: >> found at 9", -- [12]
+				"&fsp: >> found at 97", -- [12]
 			},
-			["SISguides"] = {
-				["LEVELING\\Tirisfal Glades (1-12) [Undead Starter]"] = 38,
-			},
-			["initialFlightPathsLoaded"] = true,
-			["debuglog"] = {
-				"17:03:58.577.781> Viewer started. ---------------------------", -- [1]
-			},
-			["profile_selected"] = true,
-			["RecipesKnownNew"] = {
-			},
-			["guidestephistory"] = {
-				["LEVELING\\Tirisfal Glades (1-12) [Undead Starter]"] = {
-					["steps"] = {
-					},
-					["lasttime"] = 1598367841,
+			["SkillsKnown"] = {
+				[""] = {
+					["max"] = 0,
+					["level"] = 0,
+					["placeholder"] = true,
+					["active"] = false,
 				},
-			},
-			["notifications"] = {
+				["Blacksmithing"] = {
+					["name"] = "Blacksmithing",
+					["active"] = true,
+					["max"] = 150,
+					["level"] = 97,
+					["skillID"] = 164,
+				},
+				["First Aid"] = {
+					["name"] = "First Aid",
+					["active"] = true,
+					["max"] = 225,
+					["level"] = 225,
+					["skillID"] = 129,
+				},
+				["Enchanting"] = {
+					["name"] = "Enchanting",
+					["active"] = true,
+					["max"] = 75,
+					["level"] = 47,
+					["skillID"] = 333,
+				},
 			},
 		},
 	},
@@ -262,48 +840,36 @@ ZygorGuidesViewerClassicSettings = {
 		["Mxzq - Golemagg"] = "Augustin",
 		["Augustin - Golemagg"] = "Augustin",
 		["Mxyz - Golemagg"] = "Augustin",
+		["Vermin - Golemagg"] = "Augustin",
+	},
+	["factionrealm"] = {
+		["Horde - Golemagg"] = {
+			["gold_scan_data"] = {
+			},
+			["gold_scan_time"] = {
+			},
+		},
 	},
 	["global"] = {
 		["gii_cache"] = {
-			[0] = {
-			},
-			["item:5351::::::::31:::11::::"] = {
-				"Bounty Hunter's Ring", -- [1]
-				"|cff1eff00|Hitem:5351::::::::31:::11::::|h[Bounty Hunter's Ring]|h|r", -- [2]
+			["item:11972::::::1411:948400128:5:::1::::"] = {
+				"Carnelian Loop of Fire Resistance", -- [1]
+				"|cff1eff00|Hitem:11972::::::1411:948400128:5:::1::::|h[Carnelian Loop of Fire Resistance]|h|r", -- [2]
 				2, -- [3]
-				20, -- [4]
-				0, -- [5]
+				40, -- [4]
+				35, -- [5]
 				"Armor", -- [6]
 				"Miscellaneous", -- [7]
 				1, -- [8]
 				"INVTYPE_FINGER", -- [9]
-				133343, -- [10]
-				403, -- [11]
+				133344, -- [10]
+				4649, -- [11]
 				4, -- [12]
 				0, -- [13]
-				1, -- [14]
+				2, -- [14]
 				254, -- [15]
 				[17] = false,
-				["timestamp"] = 1598367675,
-			},
-			["item:6948::::::::11:::::::"] = {
-				"Hearthstone", -- [1]
-				"|cffffffff|Hitem:6948::::::::11:::::::|h[Hearthstone]|h|r", -- [2]
-				1, -- [3]
-				1, -- [4]
-				0, -- [5]
-				"Miscellaneous", -- [6]
-				"Junk", -- [7]
-				1, -- [8]
-				"", -- [9]
-				134414, -- [10]
-				0, -- [11]
-				15, -- [12]
-				0, -- [13]
-				1, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367483,
+				["timestamp"] = 1598367927,
 			},
 			["item:3275::::::::5:::11::::"] = {
 				"Flax Gloves", -- [1]
@@ -322,140 +888,140 @@ ZygorGuidesViewerClassicSettings = {
 				1, -- [14]
 				254, -- [15]
 				[17] = false,
-				["timestamp"] = 1598367840,
+				["timestamp"] = 1598370749,
 			},
-			["item:6582::::::1018:1829154944:5:::1::::"] = {
-				"Scouting Boots of the Whale", -- [1]
-				"|cff1eff00|Hitem:6582::::::1018:1829154944:5:::1::::|h[Scouting Boots of the Whale]|h|r", -- [2]
+			["item:5299::::::::28:::11::::"] = {
+				"Gloves of the Moon", -- [1]
+				"|cff1eff00|Hitem:5299::::::::28:::11::::|h[Gloves of the Moon]|h|r", -- [2]
 				2, -- [3]
-				22, -- [4]
-				17, -- [5]
+				20, -- [4]
+				0, -- [5]
 				"Armor", -- [6]
 				"Leather", -- [7]
 				1, -- [8]
-				"INVTYPE_FEET", -- [9]
-				132539, -- [10]
-				731, -- [11]
-				4, -- [12]
-				2, -- [13]
-				2, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367937,
-			},
-			["item:15329::::::847:2022385536:5:::::::"] = {
-				"Wrangler's Belt of the Eagle", -- [1]
-				"|cff1eff00|Hitem:15329::::::847:2022385536:5:::::::|h[Wrangler's Belt of the Eagle]|h|r", -- [2]
-				2, -- [3]
-				24, -- [4]
-				19, -- [5]
-				"Armor", -- [6]
-				"Leather", -- [7]
-				1, -- [8]
-				"INVTYPE_WAIST", -- [9]
-				132505, -- [10]
-				622, -- [11]
-				4, -- [12]
-				2, -- [13]
-				2, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367927,
-			},
-			["item:2901::::::::31:::14::::"] = {
-				"Mining Pick", -- [1]
-				"|cffffffff|Hitem:2901::::::::31:::14::::|h[Mining Pick]|h|r", -- [2]
-				1, -- [3]
-				4, -- [4]
-				1, -- [5]
-				"Weapon", -- [6]
-				"Miscellaneous", -- [7]
-				1, -- [8]
-				"INVTYPE_WEAPONMAINHAND", -- [9]
-				134708, -- [10]
-				16, -- [11]
-				2, -- [12]
-				14, -- [13]
-				0, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367675,
-			},
-			["item:12006::::::93:1939069696:5:::::::"] = {
-				"Meadow Ring of Agility", -- [1]
-				"|cff1eff00|Hitem:12006::::::93:1939069696:5:::::::|h[Meadow Ring of Agility]|h|r", -- [2]
-				2, -- [3]
-				22, -- [4]
-				17, -- [5]
-				"Armor", -- [6]
-				"Miscellaneous", -- [7]
-				1, -- [8]
-				"INVTYPE_FINGER", -- [9]
-				133354, -- [10]
-				1064, -- [11]
-				4, -- [12]
-				0, -- [13]
-				2, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367929,
-			},
-			["item:7026::::::::11:::::::"] = {
-				"Linen Belt", -- [1]
-				"|cffffffff|Hitem:7026::::::::11:::::::|h[Linen Belt]|h|r", -- [2]
-				1, -- [3]
-				9, -- [4]
-				4, -- [5]
-				"Armor", -- [6]
-				"Cloth", -- [7]
-				1, -- [8]
-				"INVTYPE_WAIST", -- [9]
-				132494, -- [10]
-				22, -- [11]
-				4, -- [12]
-				1, -- [13]
-				0, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367483,
-			},
-			["item:6690::::::::31:::1::::"] = {
-				"Ferine Leggings", -- [1]
-				"|cff1eff00|Hitem:6690::::::::31:::1::::|h[Ferine Leggings]|h|r", -- [2]
-				2, -- [3]
-				34, -- [4]
-				29, -- [5]
-				"Armor", -- [6]
-				"Leather", -- [7]
-				1, -- [8]
-				"INVTYPE_LEGS", -- [9]
-				134594, -- [10]
-				3346, -- [11]
+				"INVTYPE_HAND", -- [9]
+				132952, -- [10]
+				359, -- [11]
 				4, -- [12]
 				2, -- [13]
 				1, -- [14]
 				254, -- [15]
 				[17] = false,
-				["timestamp"] = 1598367675,
+				["timestamp"] = 1598370622,
 			},
-			["|cff1eff00|Hitem:15501::::::::5:::::::|h[Outrunner's Cloak]|h|r"] = {
-				"Outrunner's Cloak", -- [1]
-				"|cff1eff00|Hitem:15501::::::::5:::::::|h[Outrunner's Cloak]|h|r", -- [2]
+			["item:2838::::::::28:::::::"] = {
+				"Heavy Stone", -- [1]
+				"|cffffffff|Hitem:2838::::::::28:::::::|h[Heavy Stone]|h|r", -- [2]
+				1, -- [3]
+				25, -- [4]
+				0, -- [5]
+				"Trade Goods", -- [6]
+				"Trade Goods", -- [7]
+				20, -- [8]
+				"", -- [9]
+				135238, -- [10]
+				60, -- [11]
+				7, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598370695,
+			},
+			["|cff1eff00|Hitem:6586::::::134::5:::::::|h[Scouting Gloves of Spirit]|h|r"] = {
+				"Scouting Gloves of Spirit", -- [1]
+				"|cff1eff00|Hitem:6586::::::134::5:::::::|h[Scouting Gloves of Spirit]|h|r", -- [2]
 				2, -- [3]
-				17, -- [4]
-				12, -- [5]
+				23, -- [4]
+				18, -- [5]
 				"Armor", -- [6]
-				"Cloth", -- [7]
+				"Leather", -- [7]
 				1, -- [8]
-				"INVTYPE_CLOAK", -- [9]
-				133765, -- [10]
-				269, -- [11]
+				"INVTYPE_HAND", -- [9]
+				132961, -- [10]
+				505, -- [11]
 				4, -- [12]
-				1, -- [13]
+				2, -- [13]
 				2, -- [14]
 				254, -- [15]
 				[17] = false,
-				["timestamp"] = 1598367919,
+				["timestamp"] = 1598370765,
+			},
+			["item:7443::::::1029::5:::::::"] = {
+				"Sentinel Gloves of the Whale", -- [1]
+				"|cff1eff00|Hitem:7443::::::1029::5:::::::|h[Sentinel Gloves of the Whale]|h|r", -- [2]
+				2, -- [3]
+				37, -- [4]
+				32, -- [5]
+				"Armor", -- [6]
+				"Leather", -- [7]
+				1, -- [8]
+				"INVTYPE_HAND", -- [9]
+				132939, -- [10]
+				2243, -- [11]
+				4, -- [12]
+				2, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598370765,
+			},
+			["item:5956::::::::28:::14::::"] = {
+				"Blacksmith Hammer", -- [1]
+				"|cffffffff|Hitem:5956::::::::28:::14::::|h[Blacksmith Hammer]|h|r", -- [2]
+				1, -- [3]
+				1, -- [4]
+				1, -- [5]
+				"Weapon", -- [6]
+				"Miscellaneous", -- [7]
+				1, -- [8]
+				"INVTYPE_WEAPONMAINHAND", -- [9]
+				133057, -- [10]
+				3, -- [11]
+				2, -- [12]
+				14, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598370622,
+			},
+			["item:3478::::::::28:::::::"] = {
+				"Coarse Grinding Stone", -- [1]
+				"|cffffffff|Hitem:3478::::::::28:::::::|h[Coarse Grinding Stone]|h|r", -- [2]
+				1, -- [3]
+				20, -- [4]
+				0, -- [5]
+				"Trade Goods", -- [6]
+				"Trade Goods", -- [7]
+				20, -- [8]
+				"", -- [9]
+				135244, -- [10]
+				10, -- [11]
+				7, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598370695,
+			},
+			[4895] = {
+				"Thunder Lizard Horn", -- [1]
+				"|cffffffff|Hitem:4895::::::::28:::::::|h[Thunder Lizard Horn]|h|r", -- [2]
+				1, -- [3]
+				1, -- [4]
+				0, -- [5]
+				"Quest", -- [6]
+				"Quest", -- [7]
+				1, -- [8]
+				"", -- [9]
+				133723, -- [10]
+				0, -- [11]
+				12, -- [12]
+				0, -- [13]
+				4, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598370656,
 			},
 			["item:15284::::::::31:::::::"] = {
 				"Long Battle Bow", -- [1]
@@ -476,43 +1042,43 @@ ZygorGuidesViewerClassicSettings = {
 				[17] = false,
 				["timestamp"] = 1598367675,
 			},
-			["item:5751::::::::31:::::::"] = {
-				"Webwing Cloak", -- [1]
-				"|cff1eff00|Hitem:5751::::::::31:::::::|h[Webwing Cloak]|h|r", -- [2]
+			["item:5351::::::::28:::11::::"] = {
+				"Bounty Hunter's Ring", -- [1]
+				"|cff1eff00|Hitem:5351::::::::28:::11::::|h[Bounty Hunter's Ring]|h|r", -- [2]
 				2, -- [3]
-				25, -- [4]
-				20, -- [5]
+				20, -- [4]
+				0, -- [5]
 				"Armor", -- [6]
-				"Cloth", -- [7]
+				"Miscellaneous", -- [7]
 				1, -- [8]
-				"INVTYPE_CLOAK", -- [9]
-				133762, -- [10]
-				1028, -- [11]
+				"INVTYPE_FINGER", -- [9]
+				133343, -- [10]
+				403, -- [11]
 				4, -- [12]
-				1, -- [13]
-				2, -- [14]
+				0, -- [13]
+				1, -- [14]
 				254, -- [15]
 				[17] = false,
-				["timestamp"] = 1598367675,
+				["timestamp"] = 1598370622,
 			},
-			["item:3030::::::::31:::::::"] = {
-				"Razor Arrow", -- [1]
-				"|cffffffff|Hitem:3030::::::::31:::::::|h[Razor Arrow]|h|r", -- [2]
-				1, -- [3]
-				30, -- [4]
-				25, -- [5]
-				"Projectile", -- [6]
-				"Arrow", -- [7]
-				200, -- [8]
-				"INVTYPE_AMMO", -- [9]
-				132382, -- [10]
-				0, -- [11]
-				6, -- [12]
-				2, -- [13]
-				0, -- [14]
+			["item:5318::::::::28:::11::::"] = {
+				"Zhovur Axe", -- [1]
+				"|cff1eff00|Hitem:5318::::::::28:::11::::|h[Zhovur Axe]|h|r", -- [2]
+				2, -- [3]
+				20, -- [4]
+				0, -- [5]
+				"Weapon", -- [6]
+				"Two-Handed Axes", -- [7]
+				1, -- [8]
+				"INVTYPE_2HWEAPON", -- [9]
+				135572, -- [10]
+				1789, -- [11]
+				2, -- [12]
+				1, -- [13]
+				1, -- [14]
 				254, -- [15]
 				[17] = false,
-				["timestamp"] = 1598367675,
+				["timestamp"] = 1598370622,
 			},
 			["item:13008::::::::5:::::::"] = {
 				"Dalewind Trousers", -- [1]
@@ -552,24 +1118,43 @@ ZygorGuidesViewerClassicSettings = {
 				[17] = false,
 				["timestamp"] = 1598367675,
 			},
-			["item:6948::::::::5:::::::"] = {
-				"Hearthstone", -- [1]
-				"|cffffffff|Hitem:6948::::::::5:::::::|h[Hearthstone]|h|r", -- [2]
-				1, -- [3]
-				1, -- [4]
+			["item:5310::::::::28:::11::::"] = {
+				"Sea Dog Britches", -- [1]
+				"|cff1eff00|Hitem:5310::::::::28:::11::::|h[Sea Dog Britches]|h|r", -- [2]
+				2, -- [3]
+				20, -- [4]
 				0, -- [5]
-				"Miscellaneous", -- [6]
-				"Junk", -- [7]
+				"Armor", -- [6]
+				"Cloth", -- [7]
 				1, -- [8]
-				"", -- [9]
-				134414, -- [10]
-				0, -- [11]
-				15, -- [12]
-				0, -- [13]
+				"INVTYPE_LEGS", -- [9]
+				134582, -- [10]
+				555, -- [11]
+				4, -- [12]
+				1, -- [13]
 				1, -- [14]
 				254, -- [15]
 				[17] = false,
-				["timestamp"] = 1598367840,
+				["timestamp"] = 1598370622,
+			},
+			["item:9814::::::115:1340638336:5:::1::::"] = {
+				"Fortified Belt of Strength", -- [1]
+				"|cff1eff00|Hitem:9814::::::115:1340638336:5:::1::::|h[Fortified Belt of Strength]|h|r", -- [2]
+				2, -- [3]
+				24, -- [4]
+				19, -- [5]
+				"Armor", -- [6]
+				"Mail", -- [7]
+				1, -- [8]
+				"INVTYPE_WAIST", -- [9]
+				132493, -- [10]
+				733, -- [11]
+				4, -- [12]
+				3, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367934,
 			},
 			["item:15501::::::1181:1433040896:5:::1::::"] = {
 				"Outrunner's Cloak of the Bear", -- [1]
@@ -590,59 +1175,40 @@ ZygorGuidesViewerClassicSettings = {
 				[17] = false,
 				["timestamp"] = 1598367938,
 			},
-			["item:2987::::::::31:::1::::"] = {
-				"Inscribed Leather Boots", -- [1]
-				"|cff1eff00|Hitem:2987::::::::31:::1::::|h[Inscribed Leather Boots]|h|r", -- [2]
+			["item:15488::::::1186:321185664:28:::::::"] = {
+				"Bloodspattered Surcoat of the Bear", -- [1]
+				"|cff1eff00|Hitem:15488::::::1186:321185664:28:::::::|h[Bloodspattered Surcoat of the Bear]|h|r", -- [2]
 				2, -- [3]
-				18, -- [4]
-				13, -- [5]
+				21, -- [4]
+				16, -- [5]
 				"Armor", -- [6]
-				"Leather", -- [7]
+				"Mail", -- [7]
 				1, -- [8]
-				"INVTYPE_FEET", -- [9]
-				132539, -- [10]
-				408, -- [11]
+				"INVTYPE_CHEST", -- [9]
+				132629, -- [10]
+				967, -- [11]
 				4, -- [12]
-				2, -- [13]
+				3, -- [13]
 				2, -- [14]
 				254, -- [15]
 				[17] = false,
-				["timestamp"] = 1598367675,
+				["timestamp"] = 1598370622,
 			},
-			["item:55::::::::11:::::::"] = {
-				"Apprentice's Boots", -- [1]
-				"|cffffffff|Hitem:55::::::::11:::::::|h[Apprentice's Boots]|h|r", -- [2]
+			["item:4671::::::::11:::::::"] = {
+				"Ancestral Cloak", -- [1]
+				"|cffffffff|Hitem:4671::::::::11:::::::|h[Ancestral Cloak]|h|r", -- [2]
 				1, -- [3]
-				1, -- [4]
-				0, -- [5]
+				9, -- [4]
+				4, -- [5]
 				"Armor", -- [6]
-				"Miscellaneous", -- [7]
+				"Cloth", -- [7]
 				1, -- [8]
-				"INVTYPE_FEET", -- [9]
-				132543, -- [10]
-				1, -- [11]
+				"INVTYPE_CLOAK", -- [9]
+				133762, -- [10]
+				32, -- [11]
 				4, -- [12]
-				0, -- [13]
+				1, -- [13]
 				0, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367483,
-			},
-			["item:4941::::::::11:::::::"] = {
-				"Really Sticky Glue", -- [1]
-				"|cffffffff|Hitem:4941::::::::11:::::::|h[Really Sticky Glue]|h|r", -- [2]
-				1, -- [3]
-				10, -- [4]
-				0, -- [5]
-				"Consumable", -- [6]
-				"Consumable", -- [7]
-				20, -- [8]
-				"", -- [9]
-				134712, -- [10]
-				11, -- [11]
-				0, -- [12]
-				0, -- [13]
-				1, -- [14]
 				254, -- [15]
 				[17] = false,
 				["timestamp"] = 1598367483,
@@ -685,24 +1251,24 @@ ZygorGuidesViewerClassicSettings = {
 				[17] = false,
 				["timestamp"] = 1598367931,
 			},
-			["item:4338::::::::11:::::::"] = {
-				"Mageweave Cloth", -- [1]
-				"|cffffffff|Hitem:4338::::::::11:::::::|h[Mageweave Cloth]|h|r", -- [2]
-				1, -- [3]
-				40, -- [4]
+			["item:5313::::::::28:::11::::"] = {
+				"Totemic Clan Ring", -- [1]
+				"|cff1eff00|Hitem:5313::::::::28:::11::::|h[Totemic Clan Ring]|h|r", -- [2]
+				2, -- [3]
+				25, -- [4]
 				0, -- [5]
-				"Trade Goods", -- [6]
-				"Trade Goods", -- [7]
-				20, -- [8]
-				"", -- [9]
-				132892, -- [10]
-				250, -- [11]
-				7, -- [12]
+				"Armor", -- [6]
+				"Miscellaneous", -- [7]
+				1, -- [8]
+				"INVTYPE_FINGER", -- [9]
+				134413, -- [10]
+				650, -- [11]
+				4, -- [12]
 				0, -- [13]
-				0, -- [14]
+				1, -- [14]
 				254, -- [15]
 				[17] = false,
-				["timestamp"] = 1598367483,
+				["timestamp"] = 1598370622,
 			},
 			["item:6787::::::::5:::::::"] = {
 				"White Woolen Dress", -- [1]
@@ -722,63 +1288,6 @@ ZygorGuidesViewerClassicSettings = {
 				254, -- [15]
 				[17] = false,
 				["timestamp"] = 1598367930,
-			},
-			["item:14274::::::878:2070476160:5:::::::"] = {
-				"Gaea's Leggings of the Eagle", -- [1]
-				"|cff1eff00|Hitem:14274::::::878:2070476160:5:::::::|h[Gaea's Leggings of the Eagle]|h|r", -- [2]
-				2, -- [3]
-				51, -- [4]
-				46, -- [5]
-				"Armor", -- [6]
-				"Cloth", -- [7]
-				1, -- [8]
-				"INVTYPE_LEGS", -- [9]
-				134591, -- [10]
-				10448, -- [11]
-				4, -- [12]
-				1, -- [13]
-				2, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367938,
-			},
-			["item:15310::::::757:1688376704:5:::::::"] = {
-				"Feral Gloves of the Owl", -- [1]
-				"|cff1eff00|Hitem:15310::::::757:1688376704:5:::::::|h[Feral Gloves of the Owl]|h|r", -- [2]
-				2, -- [3]
-				18, -- [4]
-				13, -- [5]
-				"Armor", -- [6]
-				"Leather", -- [7]
-				1, -- [8]
-				"INVTYPE_HAND", -- [9]
-				132939, -- [10]
-				279, -- [11]
-				4, -- [12]
-				2, -- [13]
-				2, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367947,
-			},
-			["item:15511::::::1106:1337185536:5:::::::"] = {
-				"Grunt's Legguards of the Boar", -- [1]
-				"|cff1eff00|Hitem:15511::::::1106:1337185536:5:::::::|h[Grunt's Legguards of the Boar]|h|r", -- [2]
-				2, -- [3]
-				24, -- [4]
-				19, -- [5]
-				"Armor", -- [6]
-				"Mail", -- [7]
-				1, -- [8]
-				"INVTYPE_LEGS", -- [9]
-				134583, -- [10]
-				1474, -- [11]
-				4, -- [12]
-				3, -- [13]
-				2, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367947,
 			},
 			["item:7443::::::1029:590539520:5:::1::::"] = {
 				"Sentinel Gloves of the Whale", -- [1]
@@ -818,25 +1327,6 @@ ZygorGuidesViewerClassicSettings = {
 				[17] = false,
 				["timestamp"] = 1598367483,
 			},
-			["item:15305::::::::5:::::::"] = {
-				"Feral Shoes", -- [1]
-				"|cff1eff00|Hitem:15305::::::::5:::::::|h[Feral Shoes]|h|r", -- [2]
-				2, -- [3]
-				18, -- [4]
-				13, -- [5]
-				"Armor", -- [6]
-				"Leather", -- [7]
-				1, -- [8]
-				"INVTYPE_FEET", -- [9]
-				132539, -- [10]
-				412, -- [11]
-				4, -- [12]
-				2, -- [13]
-				2, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367919,
-			},
 			["item:4928::::::::31:::11::::"] = {
 				"Sandrunner Wristguards", -- [1]
 				"|cffffffff|Hitem:4928::::::::31:::11::::|h[Sandrunner Wristguards]|h|r", -- [2]
@@ -875,25 +1365,6 @@ ZygorGuidesViewerClassicSettings = {
 				[17] = false,
 				["timestamp"] = 1598367934,
 			},
-			["item:6692::::::::31:::1::::"] = {
-				"Pronged Reaver", -- [1]
-				"|cff0070dd|Hitem:6692::::::::31:::1::::|h[Pronged Reaver]|h|r", -- [2]
-				3, -- [3]
-				36, -- [4]
-				31, -- [5]
-				"Weapon", -- [6]
-				"One-Handed Axes", -- [7]
-				1, -- [8]
-				"INVTYPE_WEAPON", -- [9]
-				132409, -- [10]
-				9788, -- [11]
-				2, -- [12]
-				0, -- [13]
-				1, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367675,
-			},
 			["|cff1eff00|Hitem:15305::::::::5:::::::|h[Feral Shoes]|h|r"] = {
 				"Feral Shoes", -- [1]
 				"|cff1eff00|Hitem:15305::::::::5:::::::|h[Feral Shoes]|h|r", -- [2]
@@ -912,44 +1383,6 @@ ZygorGuidesViewerClassicSettings = {
 				254, -- [15]
 				[17] = false,
 				["timestamp"] = 1598367919,
-			},
-			["item:1990::::::216:676488832:5:::1::::"] = {
-				"Ballast Maul of Spirit", -- [1]
-				"|cff1eff00|Hitem:1990::::::216:676488832:5:::1::::|h[Ballast Maul of Spirit]|h|r", -- [2]
-				2, -- [3]
-				36, -- [4]
-				31, -- [5]
-				"Weapon", -- [6]
-				"Two-Handed Maces", -- [7]
-				1, -- [8]
-				"INVTYPE_2HWEAPON", -- [9]
-				133481, -- [10]
-				10077, -- [11]
-				2, -- [12]
-				5, -- [13]
-				2, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367946,
-			},
-			["item:6416::::::::5:::1::::"] = {
-				"Aurora Boots", -- [1]
-				"|cff1eff00|Hitem:6416::::::::5:::1::::|h[Aurora Boots]|h|r", -- [2]
-				2, -- [3]
-				38, -- [4]
-				33, -- [5]
-				"Armor", -- [6]
-				"Cloth", -- [7]
-				1, -- [8]
-				"INVTYPE_FEET", -- [9]
-				132539, -- [10]
-				2728, -- [11]
-				4, -- [12]
-				1, -- [13]
-				2, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367945,
 			},
 			["item:10998::::::::5:::::::"] = {
 				"Lesser Astral Essence", -- [1]
@@ -1027,81 +1460,24 @@ ZygorGuidesViewerClassicSettings = {
 				[17] = false,
 				["timestamp"] = 1598367924,
 			},
-			["item:4320::::::::5:::::::"] = {
-				"Spidersilk Boots", -- [1]
-				"|cff0070dd|Hitem:4320::::::::5:::::::|h[Spidersilk Boots]|h|r", -- [2]
-				3, -- [3]
-				25, -- [4]
-				20, -- [5]
-				"Armor", -- [6]
-				"Cloth", -- [7]
-				1, -- [8]
-				"INVTYPE_FEET", -- [9]
-				132539, -- [10]
-				979, -- [11]
-				4, -- [12]
-				1, -- [13]
-				2, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367927,
-			},
-			["item:15305::::::759:2128220544:5:::::::"] = {
-				"Feral Shoes of the Owl", -- [1]
-				"|cff1eff00|Hitem:15305::::::759:2128220544:5:::::::|h[Feral Shoes of the Owl]|h|r", -- [2]
-				2, -- [3]
-				18, -- [4]
-				13, -- [5]
-				"Armor", -- [6]
-				"Leather", -- [7]
-				1, -- [8]
-				"INVTYPE_FEET", -- [9]
-				132539, -- [10]
-				412, -- [11]
-				4, -- [12]
-				2, -- [13]
-				2, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367944,
-			},
-			["item:15510::::::97:732812672:5:::1::::"] = {
-				"Grunt's Belt of Strength", -- [1]
-				"|cff1eff00|Hitem:15510::::::97:732812672:5:::1::::|h[Grunt's Belt of Strength]|h|r", -- [2]
-				2, -- [3]
-				20, -- [4]
-				15, -- [5]
-				"Armor", -- [6]
-				"Mail", -- [7]
-				1, -- [8]
-				"INVTYPE_WAIST", -- [9]
-				132504, -- [10]
-				423, -- [11]
-				4, -- [12]
-				3, -- [13]
-				2, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367944,
-			},
-			["|cff1eff00|Hitem:3577::::::::31:::::::|h[Gold Bar]|h|r"] = {
-				"Gold Bar", -- [1]
-				"|cff1eff00|Hitem:3577::::::::31:::::::|h[Gold Bar]|h|r", -- [2]
-				2, -- [3]
-				30, -- [4]
+			["item:4945::::::::11:::11::::"] = {
+				"Faintly Glowing Skull", -- [1]
+				"|cffffffff|Hitem:4945::::::::11:::11::::|h[Faintly Glowing Skull]|h|r", -- [2]
+				1, -- [3]
+				9, -- [4]
 				0, -- [5]
-				"Trade Goods", -- [6]
-				"Trade Goods", -- [7]
-				20, -- [8]
+				"Consumable", -- [6]
+				"Consumable", -- [7]
+				1, -- [8]
 				"", -- [9]
-				133217, -- [10]
-				600, -- [11]
-				7, -- [12]
+				133728, -- [10]
+				37, -- [11]
+				0, -- [12]
 				0, -- [13]
-				0, -- [14]
+				1, -- [14]
 				254, -- [15]
 				[17] = false,
-				["timestamp"] = 1598367809,
+				["timestamp"] = 1598367483,
 			},
 			["item:7488::::::869:332876288:5:::::::"] = {
 				"Captain's Circlet of the Eagle", -- [1]
@@ -1141,25 +1517,6 @@ ZygorGuidesViewerClassicSettings = {
 				[17] = false,
 				["timestamp"] = 1598367937,
 			},
-			["item:7754::::::::5:::1::::"] = {
-				"Harbinger Boots", -- [1]
-				"|cff0070dd|Hitem:7754::::::::5:::1::::|h[Harbinger Boots]|h|r", -- [2]
-				3, -- [3]
-				30, -- [4]
-				25, -- [5]
-				"Armor", -- [6]
-				"Leather", -- [7]
-				1, -- [8]
-				"INVTYPE_FEET", -- [9]
-				132539, -- [10]
-				1959, -- [11]
-				4, -- [12]
-				2, -- [13]
-				2, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367940,
-			},
 			["item:9513::::::::11:::11::::"] = {
 				"Ley Staff", -- [1]
 				"|cff1eff00|Hitem:9513::::::::11:::11::::|h[Ley Staff]|h|r", -- [2]
@@ -1179,43 +1536,24 @@ ZygorGuidesViewerClassicSettings = {
 				[17] = false,
 				["timestamp"] = 1598367483,
 			},
-			["item:4568::::::17:365205888:31:::1::::"] = {
-				"Grunt Axe of Agility", -- [1]
-				"|cff1eff00|Hitem:4568::::::17:365205888:31:::1::::|h[Grunt Axe of Agility]|h|r", -- [2]
+			["item:15511::::::1106:1337185536:5:::::::"] = {
+				"Grunt's Legguards of the Boar", -- [1]
+				"|cff1eff00|Hitem:15511::::::1106:1337185536:5:::::::|h[Grunt's Legguards of the Boar]|h|r", -- [2]
 				2, -- [3]
-				21, -- [4]
-				16, -- [5]
-				"Weapon", -- [6]
-				"One-Handed Axes", -- [7]
-				1, -- [8]
-				"INVTYPE_WEAPON", -- [9]
-				132403, -- [10]
-				1694, -- [11]
-				2, -- [12]
-				0, -- [13]
-				2, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367675,
-			},
-			["item:14327::::::874:403940352:5:::1::::"] = {
-				"Resplendent Belt of the Eagle", -- [1]
-				"|cff1eff00|Hitem:14327::::::874:403940352:5:::1::::|h[Resplendent Belt of the Eagle]|h|r", -- [2]
-				2, -- [3]
-				58, -- [4]
-				53, -- [5]
+				24, -- [4]
+				19, -- [5]
 				"Armor", -- [6]
-				"Cloth", -- [7]
+				"Mail", -- [7]
 				1, -- [8]
-				"INVTYPE_WAIST", -- [9]
-				132502, -- [10]
-				7659, -- [11]
+				"INVTYPE_LEGS", -- [9]
+				134583, -- [10]
+				1474, -- [11]
 				4, -- [12]
-				1, -- [13]
+				3, -- [13]
 				2, -- [14]
 				254, -- [15]
 				[17] = false,
-				["timestamp"] = 1598367934,
+				["timestamp"] = 1598367947,
 			},
 			["item:2572::::::::11:::::::"] = {
 				"Red Linen Robe", -- [1]
@@ -1255,63 +1593,6 @@ ZygorGuidesViewerClassicSettings = {
 				[17] = false,
 				["timestamp"] = 1598367947,
 			},
-			["item:1708::::::::31:::::::"] = {
-				"Sweet Nectar", -- [1]
-				"|cffffffff|Hitem:1708::::::::31:::::::|h[Sweet Nectar]|h|r", -- [2]
-				1, -- [3]
-				35, -- [4]
-				25, -- [5]
-				"Consumable", -- [6]
-				"Consumable", -- [7]
-				20, -- [8]
-				"", -- [9]
-				132799, -- [10]
-				50, -- [11]
-				0, -- [12]
-				0, -- [13]
-				0, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367675,
-			},
-			["item:15501::::::1181:886105216:5:::1::::"] = {
-				"Outrunner's Cloak of the Bear", -- [1]
-				"|cff1eff00|Hitem:15501::::::1181:886105216:5:::1::::|h[Outrunner's Cloak of the Bear]|h|r", -- [2]
-				2, -- [3]
-				17, -- [4]
-				12, -- [5]
-				"Armor", -- [6]
-				"Cloth", -- [7]
-				1, -- [8]
-				"INVTYPE_CLOAK", -- [9]
-				133765, -- [10]
-				269, -- [11]
-				4, -- [12]
-				1, -- [13]
-				2, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367939,
-			},
-			["item:15305::::::759:1576787328:5:::::::"] = {
-				"Feral Shoes of the Owl", -- [1]
-				"|cff1eff00|Hitem:15305::::::759:1576787328:5:::::::|h[Feral Shoes of the Owl]|h|r", -- [2]
-				2, -- [3]
-				18, -- [4]
-				13, -- [5]
-				"Armor", -- [6]
-				"Leather", -- [7]
-				1, -- [8]
-				"INVTYPE_FEET", -- [9]
-				132539, -- [10]
-				412, -- [11]
-				4, -- [12]
-				2, -- [13]
-				2, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367940,
-			},
 			["item:118::::::::11:::::::"] = {
 				"Minor Healing Potion", -- [1]
 				"|cffffffff|Hitem:118::::::::11:::::::|h[Minor Healing Potion]|h|r", -- [2]
@@ -1330,44 +1611,6 @@ ZygorGuidesViewerClassicSettings = {
 				254, -- [15]
 				[17] = false,
 				["timestamp"] = 1598367483,
-			},
-			["item:4671::::::::11:::::::"] = {
-				"Ancestral Cloak", -- [1]
-				"|cffffffff|Hitem:4671::::::::11:::::::|h[Ancestral Cloak]|h|r", -- [2]
-				1, -- [3]
-				9, -- [4]
-				4, -- [5]
-				"Armor", -- [6]
-				"Cloth", -- [7]
-				1, -- [8]
-				"INVTYPE_CLOAK", -- [9]
-				133762, -- [10]
-				32, -- [11]
-				4, -- [12]
-				1, -- [13]
-				0, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367483,
-			},
-			["item:6578::::::1106:701872896:5:::::::"] = {
-				"Defender Leggings of the Boar", -- [1]
-				"|cff1eff00|Hitem:6578::::::1106:701872896:5:::::::|h[Defender Leggings of the Boar]|h|r", -- [2]
-				2, -- [3]
-				23, -- [4]
-				18, -- [5]
-				"Armor", -- [6]
-				"Mail", -- [7]
-				1, -- [8]
-				"INVTYPE_LEGS", -- [9]
-				134583, -- [10]
-				1302, -- [11]
-				4, -- [12]
-				3, -- [13]
-				2, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367936,
 			},
 			["item:6948::::::::31:::::::"] = {
 				"Hearthstone", -- [1]
@@ -1388,43 +1631,24 @@ ZygorGuidesViewerClassicSettings = {
 				[17] = false,
 				["timestamp"] = 1598367675,
 			},
-			["item:2915::::::::5:::1::::"] = {
-				"Taran Icebreaker", -- [1]
-				"|cffa335ee|Hitem:2915::::::::5:::1::::|h[Taran Icebreaker]|h|r", -- [2]
-				4, -- [3]
-				52, -- [4]
-				47, -- [5]
-				"Weapon", -- [6]
-				"Two-Handed Maces", -- [7]
-				1, -- [8]
-				"INVTYPE_2HWEAPON", -- [9]
-				133039, -- [10]
-				55289, -- [11]
-				2, -- [12]
-				5, -- [13]
-				2, -- [14]
+			["item:2321::::::::11:::::::"] = {
+				"Fine Thread", -- [1]
+				"|cffffffff|Hitem:2321::::::::11:::::::|h[Fine Thread]|h|r", -- [2]
+				1, -- [3]
+				20, -- [4]
+				0, -- [5]
+				"Trade Goods", -- [6]
+				"Trade Goods", -- [7]
+				20, -- [8]
+				"", -- [9]
+				132912, -- [10]
+				25, -- [11]
+				7, -- [12]
+				0, -- [13]
+				0, -- [14]
 				254, -- [15]
 				[17] = false,
-				["timestamp"] = 1598367936,
-			},
-			["item:7353::::::1031:1287384192:5:::1::::"] = {
-				"Elder's Padded Armor of the Whale", -- [1]
-				"|cff1eff00|Hitem:7353::::::1031:1287384192:5:::1::::|h[Elder's Padded Armor of the Whale]|h|r", -- [2]
-				2, -- [3]
-				35, -- [4]
-				30, -- [5]
-				"Armor", -- [6]
-				"Cloth", -- [7]
-				1, -- [8]
-				"INVTYPE_CHEST", -- [9]
-				135020, -- [10]
-				2998, -- [11]
-				4, -- [12]
-				1, -- [13]
-				2, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367935,
+				["timestamp"] = 1598367483,
 			},
 			["item:15477::::::6:185414784:5:::::::"] = {
 				"Charger's Pants of Strength", -- [1]
@@ -1445,195 +1669,43 @@ ZygorGuidesViewerClassicSettings = {
 				[17] = false,
 				["timestamp"] = 1598367934,
 			},
-			["item:9814::::::115:1340638336:5:::1::::"] = {
-				"Fortified Belt of Strength", -- [1]
-				"|cff1eff00|Hitem:9814::::::115:1340638336:5:::1::::|h[Fortified Belt of Strength]|h|r", -- [2]
+			["item:6416::::::::5:::1::::"] = {
+				"Aurora Boots", -- [1]
+				"|cff1eff00|Hitem:6416::::::::5:::1::::|h[Aurora Boots]|h|r", -- [2]
 				2, -- [3]
-				24, -- [4]
-				19, -- [5]
-				"Armor", -- [6]
-				"Mail", -- [7]
-				1, -- [8]
-				"INVTYPE_WAIST", -- [9]
-				132493, -- [10]
-				733, -- [11]
-				4, -- [12]
-				3, -- [13]
-				2, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367934,
-			},
-			["item:6593::::::1101:381757312:5:::1::::"] = {
-				"Battleforge Cloak of the Boar", -- [1]
-				"|cff1eff00|Hitem:6593::::::1101:381757312:5:::1::::|h[Battleforge Cloak of the Boar]|h|r", -- [2]
-				2, -- [3]
-				26, -- [4]
-				21, -- [5]
+				38, -- [4]
+				33, -- [5]
 				"Armor", -- [6]
 				"Cloth", -- [7]
 				1, -- [8]
-				"INVTYPE_CLOAK", -- [9]
-				133770, -- [10]
-				922, -- [11]
+				"INVTYPE_FEET", -- [9]
+				132539, -- [10]
+				2728, -- [11]
 				4, -- [12]
 				1, -- [13]
 				2, -- [14]
 				254, -- [15]
 				[17] = false,
-				["timestamp"] = 1598367931,
+				["timestamp"] = 1598367945,
 			},
-			["item:6037::::::::5:::::::"] = {
-				"Truesilver Bar", -- [1]
-				"|cff1eff00|Hitem:6037::::::::5:::::::|h[Truesilver Bar]|h|r", -- [2]
-				2, -- [3]
-				50, -- [4]
-				0, -- [5]
-				"Trade Goods", -- [6]
-				"Trade Goods", -- [7]
-				20, -- [8]
-				"", -- [9]
-				133222, -- [10]
-				1250, -- [11]
-				7, -- [12]
-				0, -- [13]
-				0, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367840,
-			},
-			["item:2321::::::::11:::::::"] = {
-				"Fine Thread", -- [1]
-				"|cffffffff|Hitem:2321::::::::11:::::::|h[Fine Thread]|h|r", -- [2]
-				1, -- [3]
-				20, -- [4]
-				0, -- [5]
-				"Trade Goods", -- [6]
-				"Trade Goods", -- [7]
-				20, -- [8]
-				"", -- [9]
-				132912, -- [10]
-				25, -- [11]
-				7, -- [12]
-				0, -- [13]
-				0, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367483,
-			},
-			["item:9771::::::848:2145818496:5:::::::"] = {
-				"Greenweave Gloves of the Eagle", -- [1]
-				"|cff1eff00|Hitem:9771::::::848:2145818496:5:::::::|h[Greenweave Gloves of the Eagle]|h|r", -- [2]
-				2, -- [3]
-				25, -- [4]
-				20, -- [5]
-				"Armor", -- [6]
-				"Cloth", -- [7]
-				1, -- [8]
-				"INVTYPE_HAND", -- [9]
-				132952, -- [10]
-				532, -- [11]
-				4, -- [12]
-				1, -- [13]
-				2, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367931,
-			},
-			["item:15311::::::596:1748812032:31:::::::"] = {
-				"Feral Harness of the Monkey", -- [1]
-				"|cff1eff00|Hitem:15311::::::596:1748812032:31:::::::|h[Feral Harness of the Monkey]|h|r", -- [2]
-				2, -- [3]
-				22, -- [4]
-				17, -- [5]
-				"Armor", -- [6]
-				"Leather", -- [7]
-				1, -- [8]
-				"INVTYPE_CHEST", -- [9]
-				132719, -- [10]
-				982, -- [11]
-				4, -- [12]
-				2, -- [13]
-				2, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367675,
-			},
-			["item:2592::::::::11:::::::"] = {
-				"Wool Cloth", -- [1]
-				"|cffffffff|Hitem:2592::::::::11:::::::|h[Wool Cloth]|h|r", -- [2]
-				1, -- [3]
-				15, -- [4]
-				0, -- [5]
-				"Trade Goods", -- [6]
-				"Trade Goods", -- [7]
-				20, -- [8]
-				"", -- [9]
-				132911, -- [10]
-				33, -- [11]
-				7, -- [12]
-				0, -- [13]
-				0, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367483,
-			},
-			["item:1431::::::::11:::::::"] = {
-				"Patchwork Pants", -- [1]
-				"|cff9d9d9d|Hitem:1431::::::::11:::::::|h[Patchwork Pants]|h|r", -- [2]
+			["item:52::::::::5:::::::"] = {
+				"Neophyte's Pants", -- [1]
+				"|cff9d9d9d|Hitem:52::::::::5:::::::|h[Neophyte's Pants]|h|r", -- [2]
 				0, -- [3]
-				8, -- [4]
-				3, -- [5]
+				1, -- [4]
+				1, -- [5]
 				"Armor", -- [6]
 				"Cloth", -- [7]
 				1, -- [8]
 				"INVTYPE_LEGS", -- [9]
-				134591, -- [10]
-				20, -- [11]
+				134582, -- [10]
+				1, -- [11]
 				4, -- [12]
 				1, -- [13]
 				0, -- [14]
 				254, -- [15]
 				[17] = false,
-				["timestamp"] = 1598367483,
-			},
-			["item:36::::::::5:::::::"] = {
-				"Worn Mace", -- [1]
-				"|cffffffff|Hitem:36::::::::5:::::::|h[Worn Mace]|h|r", -- [2]
-				1, -- [3]
-				2, -- [4]
-				1, -- [5]
-				"Weapon", -- [6]
-				"One-Handed Maces", -- [7]
-				1, -- [8]
-				"INVTYPE_WEAPONMAINHAND", -- [9]
-				133478, -- [10]
-				7, -- [11]
-				2, -- [12]
-				4, -- [13]
-				0, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367840,
-			},
-			["item:9776::::::1015:1485637120:5:::1::::"] = {
-				"Bandit Boots of the Whale", -- [1]
-				"|cff1eff00|Hitem:9776::::::1015:1485637120:5:::1::::|h[Bandit Boots of the Whale]|h|r", -- [2]
-				2, -- [3]
-				20, -- [4]
-				15, -- [5]
-				"Armor", -- [6]
-				"Leather", -- [7]
-				1, -- [8]
-				"INVTYPE_FEET", -- [9]
-				132539, -- [10]
-				547, -- [11]
-				4, -- [12]
-				2, -- [13]
-				2, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367927,
+				["timestamp"] = 1598370749,
 			},
 			["item:2589::::::::11:::::::"] = {
 				"Linen Cloth", -- [1]
@@ -1654,6 +1726,1205 @@ ZygorGuidesViewerClassicSettings = {
 				[17] = false,
 				["timestamp"] = 1598367483,
 			},
+			[12737] = {
+				"Gloom Weed", -- [1]
+				"|cffffffff|Hitem:12737::::::::11:::::::|h[Gloom Weed]|h|r", -- [2]
+				1, -- [3]
+				1, -- [4]
+				0, -- [5]
+				"Quest", -- [6]
+				"Quest", -- [7]
+				20, -- [8]
+				"", -- [9]
+				134185, -- [10]
+				0, -- [11]
+				12, -- [12]
+				0, -- [13]
+				4, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367484,
+			},
+			["item:15510::::::97:732812672:5:::1::::"] = {
+				"Grunt's Belt of Strength", -- [1]
+				"|cff1eff00|Hitem:15510::::::97:732812672:5:::1::::|h[Grunt's Belt of Strength]|h|r", -- [2]
+				2, -- [3]
+				20, -- [4]
+				15, -- [5]
+				"Armor", -- [6]
+				"Mail", -- [7]
+				1, -- [8]
+				"INVTYPE_WAIST", -- [9]
+				132504, -- [10]
+				423, -- [11]
+				4, -- [12]
+				3, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367944,
+			},
+			["item:7754::::::::5:::1::::"] = {
+				"Harbinger Boots", -- [1]
+				"|cff0070dd|Hitem:7754::::::::5:::1::::|h[Harbinger Boots]|h|r", -- [2]
+				3, -- [3]
+				30, -- [4]
+				25, -- [5]
+				"Armor", -- [6]
+				"Leather", -- [7]
+				1, -- [8]
+				"INVTYPE_FEET", -- [9]
+				132539, -- [10]
+				1959, -- [11]
+				4, -- [12]
+				2, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367940,
+			},
+			["|cffffffff|Hitem:3771::::::::31:::::::|h[Wild Hog Shank]|h|r"] = {
+				"Wild Hog Shank", -- [1]
+				"|cffffffff|Hitem:3771::::::::31:::::::|h[Wild Hog Shank]|h|r", -- [2]
+				1, -- [3]
+				35, -- [4]
+				25, -- [5]
+				"Consumable", -- [6]
+				"Consumable", -- [7]
+				20, -- [8]
+				"", -- [9]
+				133969, -- [10]
+				50, -- [11]
+				0, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367801,
+			},
+			["item:16987::::::::31:::11::::"] = {
+				"Screecher Belt", -- [1]
+				"|cff1eff00|Hitem:16987::::::::31:::11::::|h[Screecher Belt]|h|r", -- [2]
+				2, -- [3]
+				27, -- [4]
+				0, -- [5]
+				"Armor", -- [6]
+				"Leather", -- [7]
+				1, -- [8]
+				"INVTYPE_WAIST", -- [9]
+				132494, -- [10]
+				884, -- [11]
+				4, -- [12]
+				2, -- [13]
+				1, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			["item:2863::::::::28:::::::"] = {
+				"Coarse Sharpening Stone", -- [1]
+				"|cffffffff|Hitem:2863::::::::28:::::::|h[Coarse Sharpening Stone]|h|r", -- [2]
+				1, -- [3]
+				15, -- [4]
+				5, -- [5]
+				"Trade Goods", -- [6]
+				"Trade Goods", -- [7]
+				20, -- [8]
+				"", -- [9]
+				135249, -- [10]
+				10, -- [11]
+				7, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598370695,
+			},
+			["item:5299::::::::31:::11::::"] = {
+				"Gloves of the Moon", -- [1]
+				"|cff1eff00|Hitem:5299::::::::31:::11::::|h[Gloves of the Moon]|h|r", -- [2]
+				2, -- [3]
+				20, -- [4]
+				0, -- [5]
+				"Armor", -- [6]
+				"Leather", -- [7]
+				1, -- [8]
+				"INVTYPE_HAND", -- [9]
+				132952, -- [10]
+				359, -- [11]
+				4, -- [12]
+				2, -- [13]
+				1, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			["item:4306::::::::11:::::::"] = {
+				"Silk Cloth", -- [1]
+				"|cffffffff|Hitem:4306::::::::11:::::::|h[Silk Cloth]|h|r", -- [2]
+				1, -- [3]
+				30, -- [4]
+				0, -- [5]
+				"Trade Goods", -- [6]
+				"Trade Goods", -- [7]
+				20, -- [8]
+				"", -- [9]
+				132905, -- [10]
+				150, -- [11]
+				7, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367483,
+			},
+			["item:5351::::::::31:::11::::"] = {
+				"Bounty Hunter's Ring", -- [1]
+				"|cff1eff00|Hitem:5351::::::::31:::11::::|h[Bounty Hunter's Ring]|h|r", -- [2]
+				2, -- [3]
+				20, -- [4]
+				0, -- [5]
+				"Armor", -- [6]
+				"Miscellaneous", -- [7]
+				1, -- [8]
+				"INVTYPE_FINGER", -- [9]
+				133343, -- [10]
+				403, -- [11]
+				4, -- [12]
+				0, -- [13]
+				1, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			["item:6948::::::::11:::::::"] = {
+				"Hearthstone", -- [1]
+				"|cffffffff|Hitem:6948::::::::11:::::::|h[Hearthstone]|h|r", -- [2]
+				1, -- [3]
+				1, -- [4]
+				0, -- [5]
+				"Miscellaneous", -- [6]
+				"Junk", -- [7]
+				1, -- [8]
+				"", -- [9]
+				134414, -- [10]
+				0, -- [11]
+				15, -- [12]
+				0, -- [13]
+				1, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367483,
+			},
+			["item:6582::::::1018:1829154944:5:::1::::"] = {
+				"Scouting Boots of the Whale", -- [1]
+				"|cff1eff00|Hitem:6582::::::1018:1829154944:5:::1::::|h[Scouting Boots of the Whale]|h|r", -- [2]
+				2, -- [3]
+				22, -- [4]
+				17, -- [5]
+				"Armor", -- [6]
+				"Leather", -- [7]
+				1, -- [8]
+				"INVTYPE_FEET", -- [9]
+				132539, -- [10]
+				731, -- [11]
+				4, -- [12]
+				2, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367937,
+			},
+			["item:9776::::::1015:1485637120:5:::1::::"] = {
+				"Bandit Boots of the Whale", -- [1]
+				"|cff1eff00|Hitem:9776::::::1015:1485637120:5:::1::::|h[Bandit Boots of the Whale]|h|r", -- [2]
+				2, -- [3]
+				20, -- [4]
+				15, -- [5]
+				"Armor", -- [6]
+				"Leather", -- [7]
+				1, -- [8]
+				"INVTYPE_FEET", -- [9]
+				132539, -- [10]
+				547, -- [11]
+				4, -- [12]
+				2, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367927,
+			},
+			["item:12006::::::93:1939069696:5:::::::"] = {
+				"Meadow Ring of Agility", -- [1]
+				"|cff1eff00|Hitem:12006::::::93:1939069696:5:::::::|h[Meadow Ring of Agility]|h|r", -- [2]
+				2, -- [3]
+				22, -- [4]
+				17, -- [5]
+				"Armor", -- [6]
+				"Miscellaneous", -- [7]
+				1, -- [8]
+				"INVTYPE_FINGER", -- [9]
+				133354, -- [10]
+				1064, -- [11]
+				4, -- [12]
+				0, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367929,
+			},
+			["item:7026::::::::11:::::::"] = {
+				"Linen Belt", -- [1]
+				"|cffffffff|Hitem:7026::::::::11:::::::|h[Linen Belt]|h|r", -- [2]
+				1, -- [3]
+				9, -- [4]
+				4, -- [5]
+				"Armor", -- [6]
+				"Cloth", -- [7]
+				1, -- [8]
+				"INVTYPE_WAIST", -- [9]
+				132494, -- [10]
+				22, -- [11]
+				4, -- [12]
+				1, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367483,
+			},
+			["item:6690::::::::31:::1::::"] = {
+				"Ferine Leggings", -- [1]
+				"|cff1eff00|Hitem:6690::::::::31:::1::::|h[Ferine Leggings]|h|r", -- [2]
+				2, -- [3]
+				34, -- [4]
+				29, -- [5]
+				"Armor", -- [6]
+				"Leather", -- [7]
+				1, -- [8]
+				"INVTYPE_LEGS", -- [9]
+				134594, -- [10]
+				3346, -- [11]
+				4, -- [12]
+				2, -- [13]
+				1, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			["|cff1eff00|Hitem:7443::::::1029::5:::::::|h[Sentinel Gloves of the Whale]|h|r"] = {
+				"Sentinel Gloves of the Whale", -- [1]
+				"|cff1eff00|Hitem:7443::::::1029::5:::::::|h[Sentinel Gloves of the Whale]|h|r", -- [2]
+				2, -- [3]
+				37, -- [4]
+				32, -- [5]
+				"Armor", -- [6]
+				"Leather", -- [7]
+				1, -- [8]
+				"INVTYPE_HAND", -- [9]
+				132939, -- [10]
+				2243, -- [11]
+				4, -- [12]
+				2, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598370765,
+			},
+			["|cff1eff00|Hitem:15501::::::::5:::::::|h[Outrunner's Cloak]|h|r"] = {
+				"Outrunner's Cloak", -- [1]
+				"|cff1eff00|Hitem:15501::::::::5:::::::|h[Outrunner's Cloak]|h|r", -- [2]
+				2, -- [3]
+				17, -- [4]
+				12, -- [5]
+				"Armor", -- [6]
+				"Cloth", -- [7]
+				1, -- [8]
+				"INVTYPE_CLOAK", -- [9]
+				133765, -- [10]
+				269, -- [11]
+				4, -- [12]
+				1, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367919,
+			},
+			["item:2915::::::::5:::1::::"] = {
+				"Taran Icebreaker", -- [1]
+				"|cffa335ee|Hitem:2915::::::::5:::1::::|h[Taran Icebreaker]|h|r", -- [2]
+				4, -- [3]
+				52, -- [4]
+				47, -- [5]
+				"Weapon", -- [6]
+				"Two-Handed Maces", -- [7]
+				1, -- [8]
+				"INVTYPE_2HWEAPON", -- [9]
+				133039, -- [10]
+				55289, -- [11]
+				2, -- [12]
+				5, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367936,
+			},
+			["item:5751::::::::31:::::::"] = {
+				"Webwing Cloak", -- [1]
+				"|cff1eff00|Hitem:5751::::::::31:::::::|h[Webwing Cloak]|h|r", -- [2]
+				2, -- [3]
+				25, -- [4]
+				20, -- [5]
+				"Armor", -- [6]
+				"Cloth", -- [7]
+				1, -- [8]
+				"INVTYPE_CLOAK", -- [9]
+				133762, -- [10]
+				1028, -- [11]
+				4, -- [12]
+				1, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			["item:3030::::::::31:::::::"] = {
+				"Razor Arrow", -- [1]
+				"|cffffffff|Hitem:3030::::::::31:::::::|h[Razor Arrow]|h|r", -- [2]
+				1, -- [3]
+				30, -- [4]
+				25, -- [5]
+				"Projectile", -- [6]
+				"Arrow", -- [7]
+				200, -- [8]
+				"INVTYPE_AMMO", -- [9]
+				132382, -- [10]
+				0, -- [11]
+				6, -- [12]
+				2, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			["item:6948::::::::5:::::::"] = {
+				"Hearthstone", -- [1]
+				"|cffffffff|Hitem:6948::::::::5:::::::|h[Hearthstone]|h|r", -- [2]
+				1, -- [3]
+				1, -- [4]
+				0, -- [5]
+				"Miscellaneous", -- [6]
+				"Junk", -- [7]
+				1, -- [8]
+				"", -- [9]
+				134414, -- [10]
+				0, -- [11]
+				15, -- [12]
+				0, -- [13]
+				1, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598370750,
+			},
+			["item:15127::::::766:2077433856:31:::::::"] = {
+				"Robust Shoulders of the Owl", -- [1]
+				"|cff1eff00|Hitem:15127::::::766:2077433856:31:::::::|h[Robust Shoulders of the Owl]|h|r", -- [2]
+				2, -- [3]
+				30, -- [4]
+				25, -- [5]
+				"Armor", -- [6]
+				"Leather", -- [7]
+				1, -- [8]
+				"INVTYPE_SHOULDER", -- [9]
+				135039, -- [10]
+				1647, -- [11]
+				4, -- [12]
+				2, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			["item:9785::::::1180:604967424:28:::::::"] = {
+				"Raider's Bracers of the Bear", -- [1]
+				"|cff1eff00|Hitem:9785::::::1180:604967424:28:::::::|h[Raider's Bracers of the Bear]|h|r", -- [2]
+				2, -- [3]
+				17, -- [4]
+				12, -- [5]
+				"Armor", -- [6]
+				"Mail", -- [7]
+				1, -- [8]
+				"INVTYPE_WRIST", -- [9]
+				132612, -- [10]
+				268, -- [11]
+				4, -- [12]
+				3, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598370622,
+			},
+			["item:2841::::::::28:::::::"] = {
+				"Bronze Bar", -- [1]
+				"|cffffffff|Hitem:2841::::::::28:::::::|h[Bronze Bar]|h|r", -- [2]
+				1, -- [3]
+				20, -- [4]
+				0, -- [5]
+				"Trade Goods", -- [6]
+				"Trade Goods", -- [7]
+				20, -- [8]
+				"", -- [9]
+				133227, -- [10]
+				50, -- [11]
+				7, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598370695,
+			},
+			["item:4941::::::::11:::::::"] = {
+				"Really Sticky Glue", -- [1]
+				"|cffffffff|Hitem:4941::::::::11:::::::|h[Really Sticky Glue]|h|r", -- [2]
+				1, -- [3]
+				10, -- [4]
+				0, -- [5]
+				"Consumable", -- [6]
+				"Consumable", -- [7]
+				20, -- [8]
+				"", -- [9]
+				134712, -- [10]
+				11, -- [11]
+				0, -- [12]
+				0, -- [13]
+				1, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367483,
+			},
+			[5050] = {
+				"Ignition Key", -- [1]
+				"|cffffffff|Hitem:5050::::::::28:::::::|h[Ignition Key]|h|r", -- [2]
+				1, -- [3]
+				1, -- [4]
+				0, -- [5]
+				"Key", -- [6]
+				"Key", -- [7]
+				1, -- [8]
+				"", -- [9]
+				134240, -- [10]
+				0, -- [11]
+				13, -- [12]
+				0, -- [13]
+				4, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598370683,
+			},
+			[10327] = {
+				"Horn of Echeyakee", -- [1]
+				"|cffffffff|Hitem:10327::::::::28:::::::|h[Horn of Echeyakee]|h|r", -- [2]
+				1, -- [3]
+				1, -- [4]
+				0, -- [5]
+				"Quest", -- [6]
+				"Quest", -- [7]
+				1, -- [8]
+				"", -- [9]
+				134227, -- [10]
+				0, -- [11]
+				12, -- [12]
+				0, -- [13]
+				4, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598370678,
+			},
+			["item:4338::::::::11:::::::"] = {
+				"Mageweave Cloth", -- [1]
+				"|cffffffff|Hitem:4338::::::::11:::::::|h[Mageweave Cloth]|h|r", -- [2]
+				1, -- [3]
+				40, -- [4]
+				0, -- [5]
+				"Trade Goods", -- [6]
+				"Trade Goods", -- [7]
+				20, -- [8]
+				"", -- [9]
+				132892, -- [10]
+				250, -- [11]
+				7, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367483,
+			},
+			["item:15310::::::757:1688376704:5:::::::"] = {
+				"Feral Gloves of the Owl", -- [1]
+				"|cff1eff00|Hitem:15310::::::757:1688376704:5:::::::|h[Feral Gloves of the Owl]|h|r", -- [2]
+				2, -- [3]
+				18, -- [4]
+				13, -- [5]
+				"Armor", -- [6]
+				"Leather", -- [7]
+				1, -- [8]
+				"INVTYPE_HAND", -- [9]
+				132939, -- [10]
+				279, -- [11]
+				4, -- [12]
+				2, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367947,
+			},
+			["item:15501::::::1181:886105216:5:::1::::"] = {
+				"Outrunner's Cloak of the Bear", -- [1]
+				"|cff1eff00|Hitem:15501::::::1181:886105216:5:::1::::|h[Outrunner's Cloak of the Bear]|h|r", -- [2]
+				2, -- [3]
+				17, -- [4]
+				12, -- [5]
+				"Armor", -- [6]
+				"Cloth", -- [7]
+				1, -- [8]
+				"INVTYPE_CLOAK", -- [9]
+				133765, -- [10]
+				269, -- [11]
+				4, -- [12]
+				1, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367939,
+			},
+			["item:15305::::::::5:::::::"] = {
+				"Feral Shoes", -- [1]
+				"|cff1eff00|Hitem:15305::::::::5:::::::|h[Feral Shoes]|h|r", -- [2]
+				2, -- [3]
+				18, -- [4]
+				13, -- [5]
+				"Armor", -- [6]
+				"Leather", -- [7]
+				1, -- [8]
+				"INVTYPE_FEET", -- [9]
+				132539, -- [10]
+				412, -- [11]
+				4, -- [12]
+				2, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367919,
+			},
+			[5065] = {
+				"Harpy Lieutenant Ring", -- [1]
+				"|cffffffff|Hitem:5065::::::::28:::::::|h[Harpy Lieutenant Ring]|h|r", -- [2]
+				1, -- [3]
+				1, -- [4]
+				0, -- [5]
+				"Quest", -- [6]
+				"Quest", -- [7]
+				20, -- [8]
+				"", -- [9]
+				133344, -- [10]
+				0, -- [11]
+				12, -- [12]
+				0, -- [13]
+				4, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598370681,
+			},
+			["item:6692::::::::31:::1::::"] = {
+				"Pronged Reaver", -- [1]
+				"|cff0070dd|Hitem:6692::::::::31:::1::::|h[Pronged Reaver]|h|r", -- [2]
+				3, -- [3]
+				36, -- [4]
+				31, -- [5]
+				"Weapon", -- [6]
+				"One-Handed Axes", -- [7]
+				1, -- [8]
+				"INVTYPE_WEAPON", -- [9]
+				132409, -- [10]
+				9788, -- [11]
+				2, -- [12]
+				0, -- [13]
+				1, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			["item:3771::::::::31:::::::"] = {
+				"Wild Hog Shank", -- [1]
+				"|cffffffff|Hitem:3771::::::::31:::::::|h[Wild Hog Shank]|h|r", -- [2]
+				1, -- [3]
+				35, -- [4]
+				25, -- [5]
+				"Consumable", -- [6]
+				"Consumable", -- [7]
+				20, -- [8]
+				"", -- [9]
+				133969, -- [10]
+				50, -- [11]
+				0, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			["item:6586::::::134::5:::::::"] = {
+				"Scouting Gloves of Spirit", -- [1]
+				"|cff1eff00|Hitem:6586::::::134::5:::::::|h[Scouting Gloves of Spirit]|h|r", -- [2]
+				2, -- [3]
+				23, -- [4]
+				18, -- [5]
+				"Armor", -- [6]
+				"Leather", -- [7]
+				1, -- [8]
+				"INVTYPE_HAND", -- [9]
+				132961, -- [10]
+				505, -- [11]
+				4, -- [12]
+				2, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598370765,
+			},
+			["item:9771::::::848:2145818496:5:::::::"] = {
+				"Greenweave Gloves of the Eagle", -- [1]
+				"|cff1eff00|Hitem:9771::::::848:2145818496:5:::::::|h[Greenweave Gloves of the Eagle]|h|r", -- [2]
+				2, -- [3]
+				25, -- [4]
+				20, -- [5]
+				"Armor", -- [6]
+				"Cloth", -- [7]
+				1, -- [8]
+				"INVTYPE_HAND", -- [9]
+				132952, -- [10]
+				532, -- [11]
+				4, -- [12]
+				1, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367931,
+			},
+			[5055] = {
+				"Intact Raptor Horn", -- [1]
+				"|cffffffff|Hitem:5055::::::::28:::::::|h[Intact Raptor Horn]|h|r", -- [2]
+				1, -- [3]
+				1, -- [4]
+				0, -- [5]
+				"Quest", -- [6]
+				"Quest", -- [7]
+				20, -- [8]
+				"", -- [9]
+				133723, -- [10]
+				0, -- [11]
+				12, -- [12]
+				0, -- [13]
+				4, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598370681,
+			},
+			[0] = {
+			},
+			["item:1990::::::216:676488832:5:::1::::"] = {
+				"Ballast Maul of Spirit", -- [1]
+				"|cff1eff00|Hitem:1990::::::216:676488832:5:::1::::|h[Ballast Maul of Spirit]|h|r", -- [2]
+				2, -- [3]
+				36, -- [4]
+				31, -- [5]
+				"Weapon", -- [6]
+				"Two-Handed Maces", -- [7]
+				1, -- [8]
+				"INVTYPE_2HWEAPON", -- [9]
+				133481, -- [10]
+				10077, -- [11]
+				2, -- [12]
+				5, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367946,
+			},
+			["|cff1eff00|Hitem:7443::::::1029:590539520:5:::1::::|h[Sentinel Gloves of the Whale]|h|r"] = {
+				"Sentinel Gloves of the Whale", -- [1]
+				"|cff1eff00|Hitem:7443::::::1029:590539520:5:::1::::|h[Sentinel Gloves of the Whale]|h|r", -- [2]
+				2, -- [3]
+				37, -- [4]
+				32, -- [5]
+				"Armor", -- [6]
+				"Leather", -- [7]
+				1, -- [8]
+				"INVTYPE_HAND", -- [9]
+				132939, -- [10]
+				2243, -- [11]
+				4, -- [12]
+				2, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367925,
+			},
+			["item:14327::::::874:403940352:5:::1::::"] = {
+				"Resplendent Belt of the Eagle", -- [1]
+				"|cff1eff00|Hitem:14327::::::874:403940352:5:::1::::|h[Resplendent Belt of the Eagle]|h|r", -- [2]
+				2, -- [3]
+				58, -- [4]
+				53, -- [5]
+				"Armor", -- [6]
+				"Cloth", -- [7]
+				1, -- [8]
+				"INVTYPE_WAIST", -- [9]
+				132502, -- [10]
+				7659, -- [11]
+				4, -- [12]
+				1, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367934,
+			},
+			["item:2840::::::::28:::::::"] = {
+				"Copper Bar", -- [1]
+				"|cffffffff|Hitem:2840::::::::28:::::::|h[Copper Bar]|h|r", -- [2]
+				1, -- [3]
+				10, -- [4]
+				0, -- [5]
+				"Trade Goods", -- [6]
+				"Trade Goods", -- [7]
+				20, -- [8]
+				"", -- [9]
+				133216, -- [10]
+				10, -- [11]
+				7, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598370695,
+			},
+			["item:15501::::::::5:::::::"] = {
+				"Outrunner's Cloak", -- [1]
+				"|cff1eff00|Hitem:15501::::::::5:::::::|h[Outrunner's Cloak]|h|r", -- [2]
+				2, -- [3]
+				17, -- [4]
+				12, -- [5]
+				"Armor", -- [6]
+				"Cloth", -- [7]
+				1, -- [8]
+				"INVTYPE_CLOAK", -- [9]
+				133765, -- [10]
+				269, -- [11]
+				4, -- [12]
+				1, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367919,
+			},
+			["item:1708::::::::31:::::::"] = {
+				"Sweet Nectar", -- [1]
+				"|cffffffff|Hitem:1708::::::::31:::::::|h[Sweet Nectar]|h|r", -- [2]
+				1, -- [3]
+				35, -- [4]
+				25, -- [5]
+				"Consumable", -- [6]
+				"Consumable", -- [7]
+				20, -- [8]
+				"", -- [9]
+				132799, -- [10]
+				50, -- [11]
+				0, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			["item:15311::::::596:1748812032:31:::::::"] = {
+				"Feral Harness of the Monkey", -- [1]
+				"|cff1eff00|Hitem:15311::::::596:1748812032:31:::::::|h[Feral Harness of the Monkey]|h|r", -- [2]
+				2, -- [3]
+				22, -- [4]
+				17, -- [5]
+				"Armor", -- [6]
+				"Leather", -- [7]
+				1, -- [8]
+				"INVTYPE_CHEST", -- [9]
+				132719, -- [10]
+				982, -- [11]
+				4, -- [12]
+				2, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			["item:15305::::::759:1576787328:5:::::::"] = {
+				"Feral Shoes of the Owl", -- [1]
+				"|cff1eff00|Hitem:15305::::::759:1576787328:5:::::::|h[Feral Shoes of the Owl]|h|r", -- [2]
+				2, -- [3]
+				18, -- [4]
+				13, -- [5]
+				"Armor", -- [6]
+				"Leather", -- [7]
+				1, -- [8]
+				"INVTYPE_FEET", -- [9]
+				132539, -- [10]
+				412, -- [11]
+				4, -- [12]
+				2, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367940,
+			},
+			[5089] = {
+				"Console Key", -- [1]
+				"|cffffffff|Hitem:5089::::::::28:::::::|h[Console Key]|h|r", -- [2]
+				1, -- [3]
+				1, -- [4]
+				0, -- [5]
+				"Key", -- [6]
+				"Key", -- [7]
+				1, -- [8]
+				"", -- [9]
+				134248, -- [10]
+				0, -- [11]
+				13, -- [12]
+				0, -- [13]
+				4, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598370679,
+			},
+			["item:929::::::::31:::::::"] = {
+				"Healing Potion", -- [1]
+				"|cffffffff|Hitem:929::::::::31:::::::|h[Healing Potion]|h|r", -- [2]
+				1, -- [3]
+				22, -- [4]
+				12, -- [5]
+				"Consumable", -- [6]
+				"Consumable", -- [7]
+				5, -- [8]
+				"", -- [9]
+				134831, -- [10]
+				75, -- [11]
+				0, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			[5062] = {
+				"Raptor Head", -- [1]
+				"|cffffffff|Hitem:5062::::::::28:::::::|h[Raptor Head]|h|r", -- [2]
+				1, -- [3]
+				1, -- [4]
+				0, -- [5]
+				"Quest", -- [6]
+				"Quest", -- [7]
+				20, -- [8]
+				"", -- [9]
+				136217, -- [10]
+				0, -- [11]
+				12, -- [12]
+				0, -- [13]
+				4, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598370671,
+			},
+			["item:6593::::::1101:381757312:5:::1::::"] = {
+				"Battleforge Cloak of the Boar", -- [1]
+				"|cff1eff00|Hitem:6593::::::1101:381757312:5:::1::::|h[Battleforge Cloak of the Boar]|h|r", -- [2]
+				2, -- [3]
+				26, -- [4]
+				21, -- [5]
+				"Armor", -- [6]
+				"Cloth", -- [7]
+				1, -- [8]
+				"INVTYPE_CLOAK", -- [9]
+				133770, -- [10]
+				922, -- [11]
+				4, -- [12]
+				1, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367931,
+			},
+			["item:4568::::::17:365205888:31:::1::::"] = {
+				"Grunt Axe of Agility", -- [1]
+				"|cff1eff00|Hitem:4568::::::17:365205888:31:::1::::|h[Grunt Axe of Agility]|h|r", -- [2]
+				2, -- [3]
+				21, -- [4]
+				16, -- [5]
+				"Weapon", -- [6]
+				"One-Handed Axes", -- [7]
+				1, -- [8]
+				"INVTYPE_WEAPON", -- [9]
+				132403, -- [10]
+				1694, -- [11]
+				2, -- [12]
+				0, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			["item:1710::::::::28:::::::"] = {
+				"Greater Healing Potion", -- [1]
+				"|cffffffff|Hitem:1710::::::::28:::::::|h[Greater Healing Potion]|h|r", -- [2]
+				1, -- [3]
+				31, -- [4]
+				21, -- [5]
+				"Consumable", -- [6]
+				"Consumable", -- [7]
+				5, -- [8]
+				"", -- [9]
+				134832, -- [10]
+				125, -- [11]
+				0, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598370695,
+			},
+			["item:7353::::::1031:1287384192:5:::1::::"] = {
+				"Elder's Padded Armor of the Whale", -- [1]
+				"|cff1eff00|Hitem:7353::::::1031:1287384192:5:::1::::|h[Elder's Padded Armor of the Whale]|h|r", -- [2]
+				2, -- [3]
+				35, -- [4]
+				30, -- [5]
+				"Armor", -- [6]
+				"Cloth", -- [7]
+				1, -- [8]
+				"INVTYPE_CHEST", -- [9]
+				135020, -- [10]
+				2998, -- [11]
+				4, -- [12]
+				1, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367935,
+			},
+			["item:55::::::::11:::::::"] = {
+				"Apprentice's Boots", -- [1]
+				"|cffffffff|Hitem:55::::::::11:::::::|h[Apprentice's Boots]|h|r", -- [2]
+				1, -- [3]
+				1, -- [4]
+				0, -- [5]
+				"Armor", -- [6]
+				"Miscellaneous", -- [7]
+				1, -- [8]
+				"INVTYPE_FEET", -- [9]
+				132543, -- [10]
+				1, -- [11]
+				4, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367483,
+			},
+			[5097] = {
+				"Cats Eye Emerald", -- [1]
+				"|cffffffff|Hitem:5097::::::::28:::::::|h[Cats Eye Emerald]|h|r", -- [2]
+				1, -- [3]
+				1, -- [4]
+				0, -- [5]
+				"Quest", -- [6]
+				"Quest", -- [7]
+				1, -- [8]
+				"", -- [9]
+				134104, -- [10]
+				0, -- [11]
+				12, -- [12]
+				0, -- [13]
+				4, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598370695,
+			},
+			["item:6037::::::::5:::::::"] = {
+				"Truesilver Bar", -- [1]
+				"|cff1eff00|Hitem:6037::::::::5:::::::|h[Truesilver Bar]|h|r", -- [2]
+				2, -- [3]
+				50, -- [4]
+				0, -- [5]
+				"Trade Goods", -- [6]
+				"Trade Goods", -- [7]
+				20, -- [8]
+				"", -- [9]
+				133222, -- [10]
+				1250, -- [11]
+				7, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598370750,
+			},
+			[5099] = {
+				"Hoof of Lakota'mani", -- [1]
+				"|cffffffff|Hitem:5099::::::::28:::::::|h[Hoof of Lakota'mani]|h|r", -- [2]
+				1, -- [3]
+				10, -- [4]
+				10, -- [5]
+				"Quest", -- [6]
+				"Quest", -- [7]
+				1, -- [8]
+				"", -- [9]
+				132318, -- [10]
+				0, -- [11]
+				12, -- [12]
+				0, -- [13]
+				1, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598370660,
+			},
+			[5100] = {
+				"Echeyakee's Hide", -- [1]
+				"|cffffffff|Hitem:5100::::::::28:::::::|h[Echeyakee's Hide]|h|r", -- [2]
+				1, -- [3]
+				1, -- [4]
+				0, -- [5]
+				"Quest", -- [6]
+				"Quest", -- [7]
+				1, -- [8]
+				"", -- [9]
+				134371, -- [10]
+				0, -- [11]
+				12, -- [12]
+				0, -- [13]
+				4, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598370678,
+			},
+			["item:6144::::::::5:::::::"] = {
+				"Neophyte's Robe", -- [1]
+				"|cff9d9d9d|Hitem:6144::::::::5:::::::|h[Neophyte's Robe]|h|r", -- [2]
+				0, -- [3]
+				1, -- [4]
+				1, -- [5]
+				"Armor", -- [6]
+				"Cloth", -- [7]
+				1, -- [8]
+				"INVTYPE_ROBE", -- [9]
+				132654, -- [10]
+				1, -- [11]
+				4, -- [12]
+				1, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598370749,
+			},
+			["item:2592::::::::11:::::::"] = {
+				"Wool Cloth", -- [1]
+				"|cffffffff|Hitem:2592::::::::11:::::::|h[Wool Cloth]|h|r", -- [2]
+				1, -- [3]
+				15, -- [4]
+				0, -- [5]
+				"Trade Goods", -- [6]
+				"Trade Goods", -- [7]
+				20, -- [8]
+				"", -- [9]
+				132911, -- [10]
+				33, -- [11]
+				7, -- [12]
+				0, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367483,
+			},
+			["item:9779::::::586:698132224:5:::1::::"] = {
+				"Bandit Cloak of the Monkey", -- [1]
+				"|cff1eff00|Hitem:9779::::::586:698132224:5:::1::::|h[Bandit Cloak of the Monkey]|h|r", -- [2]
+				2, -- [3]
+				18, -- [4]
+				13, -- [5]
+				"Armor", -- [6]
+				"Cloth", -- [7]
+				1, -- [8]
+				"INVTYPE_CLOAK", -- [9]
+				133771, -- [10]
+				334, -- [11]
+				4, -- [12]
+				1, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367927,
+			},
+			["item:36::::::::5:::::::"] = {
+				"Worn Mace", -- [1]
+				"|cffffffff|Hitem:36::::::::5:::::::|h[Worn Mace]|h|r", -- [2]
+				1, -- [3]
+				2, -- [4]
+				1, -- [5]
+				"Weapon", -- [6]
+				"One-Handed Maces", -- [7]
+				1, -- [8]
+				"INVTYPE_WEAPONMAINHAND", -- [9]
+				133478, -- [10]
+				7, -- [11]
+				2, -- [12]
+				4, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598370749,
+			},
+			["item:14274::::::878:2070476160:5:::::::"] = {
+				"Gaea's Leggings of the Eagle", -- [1]
+				"|cff1eff00|Hitem:14274::::::878:2070476160:5:::::::|h[Gaea's Leggings of the Eagle]|h|r", -- [2]
+				2, -- [3]
+				51, -- [4]
+				46, -- [5]
+				"Armor", -- [6]
+				"Cloth", -- [7]
+				1, -- [8]
+				"INVTYPE_LEGS", -- [9]
+				134591, -- [10]
+				10448, -- [11]
+				4, -- [12]
+				1, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367938,
+			},
+			["item:4320::::::::5:::::::"] = {
+				"Spidersilk Boots", -- [1]
+				"|cff0070dd|Hitem:4320::::::::5:::::::|h[Spidersilk Boots]|h|r", -- [2]
+				3, -- [3]
+				25, -- [4]
+				20, -- [5]
+				"Armor", -- [6]
+				"Cloth", -- [7]
+				1, -- [8]
+				"INVTYPE_FEET", -- [9]
+				132539, -- [10]
+				979, -- [11]
+				4, -- [12]
+				1, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367927,
+			},
 			["item:2320::::::::11:::::::"] = {
 				"Coarse Thread", -- [1]
 				"|cffffffff|Hitem:2320::::::::11:::::::|h[Coarse Thread]|h|r", -- [2]
@@ -1673,24 +2944,24 @@ ZygorGuidesViewerClassicSettings = {
 				[17] = false,
 				["timestamp"] = 1598367483,
 			},
-			["item:11972::::::1411:948400128:5:::1::::"] = {
-				"Carnelian Loop of Fire Resistance", -- [1]
-				"|cff1eff00|Hitem:11972::::::1411:948400128:5:::1::::|h[Carnelian Loop of Fire Resistance]|h|r", -- [2]
-				2, -- [3]
-				40, -- [4]
-				35, -- [5]
-				"Armor", -- [6]
-				"Miscellaneous", -- [7]
-				1, -- [8]
-				"INVTYPE_FINGER", -- [9]
-				133344, -- [10]
-				4649, -- [11]
-				4, -- [12]
+			["item:3771::::::::28:::::::"] = {
+				"Wild Hog Shank", -- [1]
+				"|cffffffff|Hitem:3771::::::::28:::::::|h[Wild Hog Shank]|h|r", -- [2]
+				1, -- [3]
+				35, -- [4]
+				25, -- [5]
+				"Consumable", -- [6]
+				"Consumable", -- [7]
+				20, -- [8]
+				"", -- [9]
+				133969, -- [10]
+				50, -- [11]
+				0, -- [12]
 				0, -- [13]
-				2, -- [14]
+				0, -- [14]
 				254, -- [15]
 				[17] = false,
-				["timestamp"] = 1598367927,
+				["timestamp"] = 1598370695,
 			},
 			["item:3577::::::::31:::::::"] = {
 				"Gold Bar", -- [1]
@@ -1711,24 +2982,24 @@ ZygorGuidesViewerClassicSettings = {
 				[17] = false,
 				["timestamp"] = 1598367768,
 			},
-			["item:9779::::::586:698132224:5:::1::::"] = {
-				"Bandit Cloak of the Monkey", -- [1]
-				"|cff1eff00|Hitem:9779::::::586:698132224:5:::1::::|h[Bandit Cloak of the Monkey]|h|r", -- [2]
-				2, -- [3]
-				18, -- [4]
-				13, -- [5]
+			["item:51::::::::5:::::::"] = {
+				"Neophyte's Boots", -- [1]
+				"|cffffffff|Hitem:51::::::::5:::::::|h[Neophyte's Boots]|h|r", -- [2]
+				1, -- [3]
+				1, -- [4]
+				0, -- [5]
 				"Armor", -- [6]
-				"Cloth", -- [7]
+				"Miscellaneous", -- [7]
 				1, -- [8]
-				"INVTYPE_CLOAK", -- [9]
-				133771, -- [10]
-				334, -- [11]
+				"INVTYPE_FEET", -- [9]
+				132538, -- [10]
+				1, -- [11]
 				4, -- [12]
-				1, -- [13]
-				2, -- [14]
+				0, -- [13]
+				0, -- [14]
 				254, -- [15]
 				[17] = false,
-				["timestamp"] = 1598367927,
+				["timestamp"] = 1598370749,
 			},
 			["|cffffffff|Hitem:1708::::::::31:::::::|h[Sweet Nectar]|h|r"] = {
 				"Sweet Nectar", -- [1]
@@ -1787,100 +3058,100 @@ ZygorGuidesViewerClassicSettings = {
 				[17] = false,
 				["timestamp"] = 1598367675,
 			},
-			[12737] = {
-				"Gloom Weed", -- [1]
-				"|cffffffff|Hitem:12737::::::::11:::::::|h[Gloom Weed]|h|r", -- [2]
-				1, -- [3]
-				1, -- [4]
-				0, -- [5]
-				"Quest", -- [6]
-				"Quest", -- [7]
-				20, -- [8]
-				"", -- [9]
-				134185, -- [10]
-				0, -- [11]
-				12, -- [12]
-				0, -- [13]
-				4, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367484,
-			},
-			["item:3771::::::::31:::::::"] = {
-				"Wild Hog Shank", -- [1]
-				"|cffffffff|Hitem:3771::::::::31:::::::|h[Wild Hog Shank]|h|r", -- [2]
-				1, -- [3]
-				35, -- [4]
-				25, -- [5]
-				"Consumable", -- [6]
-				"Consumable", -- [7]
-				20, -- [8]
-				"", -- [9]
-				133969, -- [10]
-				50, -- [11]
-				0, -- [12]
-				0, -- [13]
-				0, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367675,
-			},
-			["item:4945::::::::11:::11::::"] = {
-				"Faintly Glowing Skull", -- [1]
-				"|cffffffff|Hitem:4945::::::::11:::11::::|h[Faintly Glowing Skull]|h|r", -- [2]
-				1, -- [3]
-				9, -- [4]
-				0, -- [5]
-				"Consumable", -- [6]
-				"Consumable", -- [7]
+			["item:1431::::::::11:::::::"] = {
+				"Patchwork Pants", -- [1]
+				"|cff9d9d9d|Hitem:1431::::::::11:::::::|h[Patchwork Pants]|h|r", -- [2]
+				0, -- [3]
+				8, -- [4]
+				3, -- [5]
+				"Armor", -- [6]
+				"Cloth", -- [7]
 				1, -- [8]
-				"", -- [9]
-				133728, -- [10]
-				37, -- [11]
-				0, -- [12]
-				0, -- [13]
-				1, -- [14]
+				"INVTYPE_LEGS", -- [9]
+				134591, -- [10]
+				20, -- [11]
+				4, -- [12]
+				1, -- [13]
+				0, -- [14]
 				254, -- [15]
 				[17] = false,
 				["timestamp"] = 1598367483,
 			},
-			["|cff1eff00|Hitem:7443::::::1029:590539520:5:::1::::|h[Sentinel Gloves of the Whale]|h|r"] = {
-				"Sentinel Gloves of the Whale", -- [1]
-				"|cff1eff00|Hitem:7443::::::1029:590539520:5:::1::::|h[Sentinel Gloves of the Whale]|h|r", -- [2]
+			["item:5328::::::::28:::11::::"] = {
+				"Cinched Belt", -- [1]
+				"|cff1eff00|Hitem:5328::::::::28:::11::::|h[Cinched Belt]|h|r", -- [2]
 				2, -- [3]
-				37, -- [4]
-				32, -- [5]
+				15, -- [4]
+				0, -- [5]
 				"Armor", -- [6]
-				"Leather", -- [7]
+				"Mail", -- [7]
 				1, -- [8]
-				"INVTYPE_HAND", -- [9]
-				132939, -- [10]
-				2243, -- [11]
+				"INVTYPE_WAIST", -- [9]
+				132492, -- [10]
+				205, -- [11]
 				4, -- [12]
-				2, -- [13]
-				2, -- [14]
+				3, -- [13]
+				1, -- [14]
 				254, -- [15]
 				[17] = false,
-				["timestamp"] = 1598367925,
+				["timestamp"] = 1598370622,
 			},
-			["item:15501::::::::5:::::::"] = {
-				"Outrunner's Cloak", -- [1]
-				"|cff1eff00|Hitem:15501::::::::5:::::::|h[Outrunner's Cloak]|h|r", -- [2]
+			["item:5314::::::::28:::11::::"] = {
+				"Boar Hunter's Cape", -- [1]
+				"|cff1eff00|Hitem:5314::::::::28:::11::::|h[Boar Hunter's Cape]|h|r", -- [2]
 				2, -- [3]
-				17, -- [4]
-				12, -- [5]
+				20, -- [4]
+				0, -- [5]
 				"Armor", -- [6]
 				"Cloth", -- [7]
 				1, -- [8]
 				"INVTYPE_CLOAK", -- [9]
-				133765, -- [10]
-				269, -- [11]
+				133762, -- [10]
+				528, -- [11]
 				4, -- [12]
 				1, -- [13]
+				1, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598370622,
+			},
+			["item:12982::::::::28:::::::"] = {
+				"Silver-linked Footguards", -- [1]
+				"|cff0070dd|Hitem:12982::::::::28:::::::|h[Silver-linked Footguards]|h|r", -- [2]
+				3, -- [3]
+				21, -- [4]
+				16, -- [5]
+				"Armor", -- [6]
+				"Mail", -- [7]
+				1, -- [8]
+				"INVTYPE_FEET", -- [9]
+				132535, -- [10]
+				850, -- [11]
+				4, -- [12]
+				3, -- [13]
 				2, -- [14]
 				254, -- [15]
 				[17] = false,
-				["timestamp"] = 1598367919,
+				["timestamp"] = 1598370622,
+			},
+			["item:6578::::::1106:701872896:5:::::::"] = {
+				"Defender Leggings of the Boar", -- [1]
+				"|cff1eff00|Hitem:6578::::::1106:701872896:5:::::::|h[Defender Leggings of the Boar]|h|r", -- [2]
+				2, -- [3]
+				23, -- [4]
+				18, -- [5]
+				"Armor", -- [6]
+				"Mail", -- [7]
+				1, -- [8]
+				"INVTYPE_LEGS", -- [9]
+				134583, -- [10]
+				1302, -- [11]
+				4, -- [12]
+				3, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367936,
 			},
 			["|cffffffff|Hitem:929::::::::31:::::::|h[Healing Potion]|h|r"] = {
 				"Healing Potion", -- [1]
@@ -1901,62 +3172,24 @@ ZygorGuidesViewerClassicSettings = {
 				[17] = false,
 				["timestamp"] = 1598367801,
 			},
-			["item:929::::::::31:::::::"] = {
-				"Healing Potion", -- [1]
-				"|cffffffff|Hitem:929::::::::31:::::::|h[Healing Potion]|h|r", -- [2]
-				1, -- [3]
-				22, -- [4]
-				12, -- [5]
-				"Consumable", -- [6]
-				"Consumable", -- [7]
-				5, -- [8]
-				"", -- [9]
-				134831, -- [10]
-				75, -- [11]
-				0, -- [12]
-				0, -- [13]
-				0, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367675,
-			},
-			["|cffffffff|Hitem:3771::::::::31:::::::|h[Wild Hog Shank]|h|r"] = {
-				"Wild Hog Shank", -- [1]
-				"|cffffffff|Hitem:3771::::::::31:::::::|h[Wild Hog Shank]|h|r", -- [2]
-				1, -- [3]
-				35, -- [4]
-				25, -- [5]
-				"Consumable", -- [6]
-				"Consumable", -- [7]
+			["|cff1eff00|Hitem:3577::::::::31:::::::|h[Gold Bar]|h|r"] = {
+				"Gold Bar", -- [1]
+				"|cff1eff00|Hitem:3577::::::::31:::::::|h[Gold Bar]|h|r", -- [2]
+				2, -- [3]
+				30, -- [4]
+				0, -- [5]
+				"Trade Goods", -- [6]
+				"Trade Goods", -- [7]
 				20, -- [8]
 				"", -- [9]
-				133969, -- [10]
-				50, -- [11]
-				0, -- [12]
+				133217, -- [10]
+				600, -- [11]
+				7, -- [12]
 				0, -- [13]
 				0, -- [14]
 				254, -- [15]
 				[17] = false,
-				["timestamp"] = 1598367801,
-			},
-			["item:16987::::::::31:::11::::"] = {
-				"Screecher Belt", -- [1]
-				"|cff1eff00|Hitem:16987::::::::31:::11::::|h[Screecher Belt]|h|r", -- [2]
-				2, -- [3]
-				27, -- [4]
-				0, -- [5]
-				"Armor", -- [6]
-				"Leather", -- [7]
-				1, -- [8]
-				"INVTYPE_WAIST", -- [9]
-				132494, -- [10]
-				884, -- [11]
-				4, -- [12]
-				2, -- [13]
-				1, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367675,
+				["timestamp"] = 1598367809,
 			},
 			["item:11287::::::::11:::::::"] = {
 				"Lesser Magic Wand", -- [1]
@@ -1977,6 +3210,44 @@ ZygorGuidesViewerClassicSettings = {
 				[17] = false,
 				["timestamp"] = 1598367483,
 			},
+			["item:6948::::::::28:::::::"] = {
+				"Hearthstone", -- [1]
+				"|cffffffff|Hitem:6948::::::::28:::::::|h[Hearthstone]|h|r", -- [2]
+				1, -- [3]
+				1, -- [4]
+				0, -- [5]
+				"Miscellaneous", -- [6]
+				"Junk", -- [7]
+				1, -- [8]
+				"", -- [9]
+				134414, -- [10]
+				0, -- [11]
+				15, -- [12]
+				0, -- [13]
+				1, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598370695,
+			},
+			["item:9807::::::128:257741696:28:::::::"] = {
+				"Superior Shoulders of Defense", -- [1]
+				"|cff1eff00|Hitem:9807::::::128:257741696:28:::::::|h[Superior Shoulders of Defense]|h|r", -- [2]
+				2, -- [3]
+				27, -- [4]
+				22, -- [5]
+				"Armor", -- [6]
+				"Leather", -- [7]
+				1, -- [8]
+				"INVTYPE_SHOULDER", -- [9]
+				135039, -- [10]
+				1255, -- [11]
+				4, -- [12]
+				2, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598370622,
+			},
 			["item:12996::::::::5:::::::"] = {
 				"Band of Purification", -- [1]
 				"|cff0070dd|Hitem:12996::::::::5:::::::|h[Band of Purification]|h|r", -- [2]
@@ -1996,62 +3267,62 @@ ZygorGuidesViewerClassicSettings = {
 				[17] = false,
 				["timestamp"] = 1598367941,
 			},
-			["item:52::::::::5:::::::"] = {
-				"Neophyte's Pants", -- [1]
-				"|cff9d9d9d|Hitem:52::::::::5:::::::|h[Neophyte's Pants]|h|r", -- [2]
-				0, -- [3]
-				1, -- [4]
-				1, -- [5]
-				"Armor", -- [6]
-				"Cloth", -- [7]
-				1, -- [8]
-				"INVTYPE_LEGS", -- [9]
-				134582, -- [10]
-				1, -- [11]
-				4, -- [12]
-				1, -- [13]
-				0, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367840,
-			},
-			["item:6144::::::::5:::::::"] = {
-				"Neophyte's Robe", -- [1]
-				"|cff9d9d9d|Hitem:6144::::::::5:::::::|h[Neophyte's Robe]|h|r", -- [2]
-				0, -- [3]
-				1, -- [4]
-				1, -- [5]
-				"Armor", -- [6]
-				"Cloth", -- [7]
-				1, -- [8]
-				"INVTYPE_ROBE", -- [9]
-				132654, -- [10]
-				1, -- [11]
-				4, -- [12]
-				1, -- [13]
-				0, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367840,
-			},
-			["item:15127::::::766:2077433856:31:::::::"] = {
-				"Robust Shoulders of the Owl", -- [1]
-				"|cff1eff00|Hitem:15127::::::766:2077433856:31:::::::|h[Robust Shoulders of the Owl]|h|r", -- [2]
+			["item:2987::::::::31:::1::::"] = {
+				"Inscribed Leather Boots", -- [1]
+				"|cff1eff00|Hitem:2987::::::::31:::1::::|h[Inscribed Leather Boots]|h|r", -- [2]
 				2, -- [3]
-				30, -- [4]
-				25, -- [5]
+				18, -- [4]
+				13, -- [5]
 				"Armor", -- [6]
 				"Leather", -- [7]
 				1, -- [8]
-				"INVTYPE_SHOULDER", -- [9]
-				135039, -- [10]
-				1647, -- [11]
+				"INVTYPE_FEET", -- [9]
+				132539, -- [10]
+				408, -- [11]
 				4, -- [12]
 				2, -- [13]
 				2, -- [14]
 				254, -- [15]
 				[17] = false,
 				["timestamp"] = 1598367675,
+			},
+			["item:2901::::::::31:::14::::"] = {
+				"Mining Pick", -- [1]
+				"|cffffffff|Hitem:2901::::::::31:::14::::|h[Mining Pick]|h|r", -- [2]
+				1, -- [3]
+				4, -- [4]
+				1, -- [5]
+				"Weapon", -- [6]
+				"Miscellaneous", -- [7]
+				1, -- [8]
+				"INVTYPE_WEAPONMAINHAND", -- [9]
+				134708, -- [10]
+				16, -- [11]
+				2, -- [12]
+				14, -- [13]
+				0, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367675,
+			},
+			["item:15329::::::847:2022385536:5:::::::"] = {
+				"Wrangler's Belt of the Eagle", -- [1]
+				"|cff1eff00|Hitem:15329::::::847:2022385536:5:::::::|h[Wrangler's Belt of the Eagle]|h|r", -- [2]
+				2, -- [3]
+				24, -- [4]
+				19, -- [5]
+				"Armor", -- [6]
+				"Leather", -- [7]
+				1, -- [8]
+				"INVTYPE_WAIST", -- [9]
+				132505, -- [10]
+				622, -- [11]
+				4, -- [12]
+				2, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367927,
 			},
 			["item:3075::::::::5:::::::"] = {
 				"Eye of Flame", -- [1]
@@ -2072,62 +3343,62 @@ ZygorGuidesViewerClassicSettings = {
 				[17] = false,
 				["timestamp"] = 1598367936,
 			},
-			["item:5299::::::::31:::11::::"] = {
-				"Gloves of the Moon", -- [1]
-				"|cff1eff00|Hitem:5299::::::::31:::11::::|h[Gloves of the Moon]|h|r", -- [2]
-				2, -- [3]
-				20, -- [4]
-				0, -- [5]
-				"Armor", -- [6]
-				"Leather", -- [7]
-				1, -- [8]
-				"INVTYPE_HAND", -- [9]
-				132952, -- [10]
-				359, -- [11]
-				4, -- [12]
-				2, -- [13]
-				1, -- [14]
-				254, -- [15]
-				[17] = false,
-				["timestamp"] = 1598367675,
-			},
-			["item:4306::::::::11:::::::"] = {
-				"Silk Cloth", -- [1]
-				"|cffffffff|Hitem:4306::::::::11:::::::|h[Silk Cloth]|h|r", -- [2]
+			["item:3470::::::::28:::::::"] = {
+				"Rough Grinding Stone", -- [1]
+				"|cffffffff|Hitem:3470::::::::28:::::::|h[Rough Grinding Stone]|h|r", -- [2]
 				1, -- [3]
-				30, -- [4]
+				10, -- [4]
 				0, -- [5]
 				"Trade Goods", -- [6]
 				"Trade Goods", -- [7]
 				20, -- [8]
 				"", -- [9]
-				132905, -- [10]
-				150, -- [11]
+				135243, -- [10]
+				5, -- [11]
 				7, -- [12]
 				0, -- [13]
 				0, -- [14]
 				254, -- [15]
 				[17] = false,
-				["timestamp"] = 1598367483,
+				["timestamp"] = 1598370695,
 			},
-			["item:51::::::::5:::::::"] = {
-				"Neophyte's Boots", -- [1]
-				"|cffffffff|Hitem:51::::::::5:::::::|h[Neophyte's Boots]|h|r", -- [2]
-				1, -- [3]
-				1, -- [4]
-				0, -- [5]
+			["item:15305::::::759:2128220544:5:::::::"] = {
+				"Feral Shoes of the Owl", -- [1]
+				"|cff1eff00|Hitem:15305::::::759:2128220544:5:::::::|h[Feral Shoes of the Owl]|h|r", -- [2]
+				2, -- [3]
+				18, -- [4]
+				13, -- [5]
 				"Armor", -- [6]
-				"Miscellaneous", -- [7]
+				"Leather", -- [7]
 				1, -- [8]
 				"INVTYPE_FEET", -- [9]
-				132538, -- [10]
-				1, -- [11]
+				132539, -- [10]
+				412, -- [11]
 				4, -- [12]
+				2, -- [13]
+				2, -- [14]
+				254, -- [15]
+				[17] = false,
+				["timestamp"] = 1598367944,
+			},
+			["item:2842::::::::28:::::::"] = {
+				"Silver Bar", -- [1]
+				"|cff1eff00|Hitem:2842::::::::28:::::::|h[Silver Bar]|h|r", -- [2]
+				2, -- [3]
+				10, -- [4]
+				0, -- [5]
+				"Trade Goods", -- [6]
+				"Trade Goods", -- [7]
+				20, -- [8]
+				"", -- [9]
+				133215, -- [10]
+				100, -- [11]
+				7, -- [12]
 				0, -- [13]
 				0, -- [14]
 				254, -- [15]
 				[17] = false,
-				["timestamp"] = 1598367840,
+				["timestamp"] = 1598370695,
 			},
 		},
 		["sv_version"] = 2,
@@ -2175,6 +3446,11 @@ ZygorGuidesViewerClassicSettings = {
 		},
 		["Augustin"] = {
 			["arrowunit"] = 2,
+			["IsWidgetCollapsed"] = {
+				["Appraiser"] = false,
+			},
+			["show_ui"] = true,
+			["im_town_alert"] = false,
 			["frame_positions"] = {
 				["ZygorGuidesViewerPointer_ArrowCtrl"] = {
 					"CENTER", -- [1]
@@ -2184,10 +3460,51 @@ ZygorGuidesViewerClassicSettings = {
 					-158.581359863281, -- [5]
 				},
 			},
-			["gmlasthomeversion"] = 1,
-			["framescale_menu"] = 0.8449,
+			["im_always_wait"] = false,
+			["fullness_search"] = 1,
+			["Inventory Manager"] = {
+				["lastParentName"] = "Blizzard",
+				["showText"] = false,
+				["isSnapped"] = true,
+				["lastParent"] = {
+					[0] = nil --[[ skipped userdata ]],
+					["PortraitButton"] = {
+						[0] = nil --[[ skipped userdata ]],
+					},
+					["Portrait"] = {
+						[0] = nil --[[ skipped userdata ]],
+					},
+					["ClickableTitleFrame"] = {
+						[0] = nil --[[ skipped userdata ]],
+					},
+					["bags"] = {
+					},
+					["forceExtended"] = false,
+					["bagsShown"] = 0,
+				},
+				["isSnappedSize"] = 169,
+				["im_lastWidth"] = 169,
+			},
+			["gear_selected_build"] = 1,
+			["gear_active_build"] = 1,
+			["tmp__was_stealth"] = true,
+			["tmp__was_sheened"] = true,
+			["hidearrowwithguides"] = false,
+			["load_betaguides"] = true,
+			["stickycolored"] = false,
+			["gold_profitlevel"] = 0.25,
+			["gold_tooltips_guide"] = 1,
+			["gold_tooltips_shift"] = true,
+			["gold_tooltips_ah"] = 2,
+			["load_gold"] = true,
+			["autogear_protectheirlooms_all"] = true,
+			["gold_format_white"] = false,
+			["n_nc_numpetguides"] = 5,
+			["windowlocked"] = true,
+			["aucmode"] = "unit",
+			["framescale_s"] = 7,
 			["framescale"] = 0.8449,
-			["enable_viewer"] = false,
+			["hide_dev_once"] = false,
 			["frame_anchor"] = {
 				"RIGHT", -- [1]
 				{
@@ -2198,25 +3515,45 @@ ZygorGuidesViewerClassicSettings = {
 						["startAlpha"] = 1,
 						["endAlpha"] = 1,
 						["mode"] = "IN",
-						["fadeTimer"] = 0.504000017419457,
+						["fadeTimer"] = 0.506000024266541,
 						["timeToFade"] = 0.5,
 					},
 				}, -- [2]
 				"RIGHT", -- [3]
-				-391.804718017578, -- [4]
+				-391.804809570313, -- [4]
 				-35.1411895751953, -- [5]
 			},
-			["profile_current"] = 3,
-			["gear_selected_spec"] = 1,
-			["arrowscale"] = 0.519999980926514,
-			["windowlocked"] = true,
-			["gear_selected_class"] = 3,
+			["dispprimary"] = {
+				["showborder"] = true,
+			},
+			["geareffects"] = true,
+			["autogear_protectheirlooms"] = true,
 			["is_default"] = true,
+			["AuctionFrame_offset"] = {
+				770, -- [1]
+				515, -- [2]
+			},
+			["framescale_menu_s"] = 7,
+			["arrowscale"] = 0.519999980926514,
+			["gear_selected_class"] = 3,
+			["load_im"] = true,
+			["load_mail"] = true,
 			["gmlastsection"] = "LEVELING",
 			["usernamed"] = true,
 			["arrowscale_s"] = 1,
-			["framescale_s"] = 7,
-			["framescale_menu_s"] = 7,
+			["framescale_menu"] = 0.8449,
+			["gear_selected_spec"] = 1,
+			["debug_flags"] = {
+				["display"] = {
+					["enabled"] = false,
+					["color"] = false,
+				},
+				["lr_initpath_v"] = {
+					["enabled"] = false,
+					["color"] = false,
+				},
+			},
+			["gmlasthomeversion"] = 1,
 		},
 	},
 }

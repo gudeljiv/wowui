@@ -174,8 +174,8 @@ function ZGV:QuestTracking_CacheQuestLog(from)
 
 	local nc=0
 
-	--local numEntries, numQuests = GetNumQuestLogEntries();
-	for i = 1,99 do  -- because collapsing affects numEntries, while hidden quests are still readable
+	local numEntries, numQuests = GetNumQuestLogEntries();
+	for i = 1,MAX_NUM_QUESTS do
 		local sQuestLogTitleText, iQuestLevel, iSuggestedGroup, isHeader, isCollapsed, isComplete, frequency, questID, startEvent, displayQuestID, isOnMap, hasLocalPOI, isTask, isBounty, isStory = GetQuestLogTitle(i)
 
 		if not sQuestLogTitleText then break end

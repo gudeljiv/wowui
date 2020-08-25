@@ -158,33 +158,10 @@ function QuestItem:TestCurStepForQuestItem()
 	end		
 end
 
-local hard_protected = {
-	[20408] = {zone=1451}, -- Twilight Cultist Cowl, while in Silithus
-	[20406] = {zone=1451}, -- Twilight Cultist Mantle, while in Silithus
-	[20407] = {zone=1451}, -- Twilight Cultist Robe, while in Silithus
-}
-
 local ItemCache = ItemScore.ItemCache
 function QuestItem:IsProtectedQuestItem(itemlink)
 	local item = ItemScore:GetItemDetails(itemlink)
-	if not (item and item.itemid) then return false,false end
-
-	local hard_data = hard_protected[item.itemid]
-	if hard_data then
-		if hard_data.zone then
-			local x,y,map = LibRover:GetPlayerPosition()
-			if map == hard_data.zone then 
-				return true, item.slot
-			end
-		end
-		if hard_data.quest then
-			if C_QuestLog.IsOnQuest(hard_data.quest) then
-				return true, item.slot
-			end
-		end
-	end
-
-	local itemid = item.itemid
+	if not item then return false,false end
 
 	local questid, questitemid = QuestItem:TestCurStepForQuestItem()
 	if not (questid and questitemid) then return false,false end

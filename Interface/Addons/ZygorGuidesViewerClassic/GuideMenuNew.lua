@@ -432,8 +432,6 @@ function GuideMenu:Update()
 					end				
 
 					row:SetScript("OnClick",function(this,button) 
-						if ZGV.DEV and IsShiftKeyDown() then GuideMenu:ExportPath(row) return end
-
 						if button=="RightButton" then GuideMenu:ShowParent() return end
 						GuideMenu:SetFocusedRow(row) 
 					end)
@@ -463,7 +461,6 @@ function GuideMenu:Update()
 					row.icon:SetTexCoord(unpack(ICON_FOLDER))
 					row:SetScript("OnDoubleClick",nil)
 					row:SetScript("OnClick",function(this,button) 
-						if ZGV.DEV and IsShiftKeyDown() then GuideMenu:ExportPath(row) return end
 						if button=="RightButton" then GuideMenu:ShowParent() return end
 						GuideMenu:SetFocusedRow() 
 						GuideMenu:Open(object.fullpath) 

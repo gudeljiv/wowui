@@ -46,7 +46,7 @@ local find_nearest_classes = {
 	[2] = "Hunter",
 	[3] = "Hunter pets",
 	[4] = "Mage",
-	[5] = "Paladin",
+	[5] = "Palladin",
 	[6] = "Priest",
 	[7] = "Rogue",
 	[8] = "Shaman",
@@ -431,7 +431,7 @@ function WW:FindNPC_Smart(typ)
 		more_points[#more_points+1]={m=w.m,f=w.f,x=w.x,y=w.y,title="Nearest "..typ.." #"..w.id, noskip=true}
 	end
 
-	LibRover:QueueFindPath(0,0,0, b.m,b.x,b.y, ZGV.Pointer.PathFoundHandler, {foundnpcs=foundnpcs, direct=not ZGV.db.profile.pathfinding, multiple_ends=more_points })
+	LibRover:FindPath(0,0,0, b.m,b.x,b.y, ZGV.Pointer.PathFoundHandler, {foundnpcs=foundnpcs, direct=not ZGV.db.profile.pathfinding, multiple_ends=more_points })
 	LibRover:UpdateNow()
 end
 
@@ -443,7 +443,7 @@ function WW:Find_Taxi()
 		if node.c==cont then tinsert(taxis,{m=node.m,f=node.f,x=node.x,y=node.y,title=node.name,name=node.name,id=node.npcid,learnfpath=true}) end
 	end
 	local b=taxis[1]
-	LibRover:QueueFindPath(0,0,0, b.m,b.x,b.y, ZGV.Pointer.PathFoundHandler, {foundnpcs=taxis, direct=not ZGV.db.profile.pathfinding, multiple_ends=taxis })
+	LibRover:FindPath(0,0,0, b.m,b.x,b.y, ZGV.Pointer.PathFoundHandler, {foundnpcs=taxis, direct=not ZGV.db.profile.pathfinding, multiple_ends=taxis })
 	LibRover:UpdateNow(true)
 end
 

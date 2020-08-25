@@ -776,6 +776,8 @@ function ZGV:Options_DefineOptionTables()
 		})
 
 
+		--[[ classic hidden
+
 		AddOptionSep()
 		AddOptionSpace()
 		AddOption('',{ type = 'description', name=L['opt_preview_title'], font=ZGV.font_dialog_gray})
@@ -799,26 +801,25 @@ function ZGV:Options_DefineOptionTables()
 		AddOption('preview_scale',{
 			type = 'select',
 			style = 'slider',
-			values = { [0.4] = L["opt_preview_scale_small"], [0.5]="", [0.6]="", [0.7] = L["opt_preview_scale_normal"], [0.8]="", [0.9]="", [1] = L["opt_preview_scale_full"] },
+			values = { [0.5] = L["opt_preview_scale_small"], [0.7] = L["opt_preview_scale_normal"], [1] = L["opt_preview_scale_full"] },
 			set = function(i,v) Setter_Simple(i,v) ZGV.PointerMap:UpdateSettings() end,
 			_default = 1,
 			disabled = function() return not self.db.profile.preview end,
 			width="single", 
 			_inline=true,
 		})
-		AddOptionSep()
+		AddOption('',{ type = 'description', name="  ", width=30})
 		AddOption('preview_alpha',{
 			type = 'select',
 			style = 'slider',
 			values = { [0.5] = L["opt_preview_alpha_low"], [0.7] = L["opt_preview_alpha_normal"], [1] = L["opt_preview_alpha_high"] },
 			set = function(i,v) Setter_Simple(i,v) ZGV.PointerMap:UpdateSettings() end,
-			_default = 1,
+			_default = 0.7,
 			disabled = function() return not self.db.profile.preview end,
 			width="single", 
 			_inline=true,
 			--hidden=true,
 		})
-		--[[
 		AddOption('',{ type = 'description', name="  ", width=30})
 		AddOptionSep()
 		AddOption('preview_duration',{
@@ -844,6 +845,7 @@ function ZGV:Options_DefineOptionTables()
 			width="single",
 			_inline=true,
 		})
+
 		--]]
 
 		-- make the WHOLE group obey 'pathfinding' for visibility.
@@ -1070,35 +1072,8 @@ function ZGV:Options_DefineOptionTables()
 
 			AddOption("notify_following",{type='description', font=ZGV.font_dialog})
 			AddOption('n_popup_guides',{ type = 'toggle', width = "full", _default = true, })
-
-			AddOptionSpace()
-
-			AddOption('',{type="description", name=L['opt_group_notify_skills'], font=ZGV.font_dialog })
-
-			AddOption('n_popup_skills',{ type = 'toggle', width = "double", _default = true, })
-			AddOptionSep()
-			AddOption('',{type="description", name=L['opt_group_notify_also'], font=ZGV.font_dialog })
-			AddOption('n_popup_skills_optional',{ type = 'toggle', width = "single", set = function(i,v) Setter_Simple(i,v) ZGV.Skills:RefreshSkillPopup() end, _default = true, disabled=function() return not self.db.profile.n_popup_skills end })
-			AddOption('n_popup_skills_future',{ type = 'toggle', width = "single",   set = function(i,v) Setter_Simple(i,v) ZGV.Skills:RefreshSkillPopup() end, _default = true, disabled=function() return not self.db.profile.n_popup_skills end })
-			AddOption('',{type="description", name=L['opt_group_notify_skills_when'], font=ZGV.font_dialog })
-			AddOption('n_popup_skills_login',{ type = 'toggle', width = "double", _default = true, disabled=function() return not self.db.profile.n_popup_skills end, indent=20, })
-			AddOption('n_popup_skills_level',{ type = 'toggle', width = "double", _default = true, disabled=function() return not self.db.profile.n_popup_skills end, indent=20, })
-			AddOption('n_popup_skills_town',{ type = 'toggle', width = "double", _default = true, disabled=function() return not self.db.profile.n_popup_skills end, indent=20, })
-			AddOption('n_popup_skills_dist',{ type = 'toggle', width = "double", _default = true, disabled=function() return not self.db.profile.n_popup_skills end, indent=20, })
-			AddOptionSep()
-			AddOption('',{
-				type = 'execute',	
-				name = L['opt_n_popup_skills_clear'],
-				func=function ()
-					table.wipe(ZGV.db.char.bannedskills)
-					ZGV.Skills.SkillsPopup:Hide()
-					ZGV.Skills:ShowSkillPopup()
-				end,
-				width='single',
-			})
-
 			--AddOption('n_popup_sis',{ type = 'toggle', width = "full", _default = true, disabled=function() return not self.db.profile.n_popup_guides end, indent=15 })
-			AddOption('n_popup_dungeon',{ type = 'toggle', width = "full", _default = true })
+			--AddOption('n_popup_dungeon',{ type = 'toggle', width = "full", _default = true })
 			--AddOption('n_popup_monk',{ type = 'toggle', width = "full", _default = true, disabled=function() return not (select(3,UnitClass("player"))==10) end ,--[[ hidden=function() return select(3,UnitClass("player"))~=10 end,--]] })
 			--AddOption('n_popup_pet',{ type = 'toggle', width = "full", _default = true ,--[[ hidden=function() return select(3,UnitClass("player"))~=10 end,--]] })
 			--AddOption('n_popup_wq',{ type = 'toggle', width = "full", _default = true, set = function(i,v) Setter_Simple(i,v) if v then self.db.profile.worldquestmap = true end end })
@@ -1106,11 +1081,11 @@ function ZGV:Options_DefineOptionTables()
 	
 	AddOptionGroup("gear","Gear","zggear")	---- OPTIONS: gear
 	do
-		AddOption('autogear',{ type = 'toggle',width="full", _default=true, set = function(i,v) Setter_Simple(i,v) ZGV.ItemScore.GearFinder:UpdateSystemTab() end})
+		AddOption('autogear',{ type = 'toggle',width="full", _default=true, set = function(i,v) Setter_Simple(i,v) --[[ZGV.ItemScore.GearFinder:UpdateSystemTab()--]] end})
 		AddOption('autogearauto',{ type='toggle', width="full", _default=false, disabled=function() return not self.db.profile.autogear end })
 
 		AddOption('itemscore_tooltips',{ type = 'toggle',width="full", _default=true, set = Setter_Simple, disabled=function() return not self.db.profile.autogear end})
-
+		--[=[ CLASSIC HIDDEN
 		AddOption('itemscore_tooltips_azerite',{ type = 'toggle',width="full", _default=true, indent=20, set = Setter_Simple, disabled=function() return not (self.db.profile.autogear and self.db.profile.itemscore_tooltips) end})
 
 		AddOptionSpace()
@@ -1118,10 +1093,38 @@ function ZGV:Options_DefineOptionTables()
 		AddOptionSpace()
 		AddOption('',{ type = "description", name = L["opt_gear_sources_dungeons"]:format(), font=ZGV.font_dialog_gray, width="full", disabled=function() return not self.db.profile.autogear end })
 			AddOption('gear_1',{ name=PLAYER_DIFFICULTY1,  type='toggle', width="100", _default=true, set = function(i,v) Setter_Simple(i,v) ZGV.ItemScore.GearFinder:ClearResults() end, disabled=function() return not self.db.profile.autogear end, })
+			AddOption('gear_2',{ name=PLAYER_DIFFICULTY2,  type='toggle', width="100", _default=true, set = function(i,v) Setter_Simple(i,v) ZGV.ItemScore.GearFinder:ClearResults() end, disabled=function() return not self.db.profile.autogear end, })
+			AddOption('gear_23',{ name=PLAYER_DIFFICULTY6,  type='toggle', width="100", _default=false, set = function(i,v) Setter_Simple(i,v) ZGV.ItemScore.GearFinder:ClearResults() end, disabled=function() return not self.db.profile.autogear end, })
+			AddOption('gear_24',{ name=PLAYER_DIFFICULTY_TIMEWALKER,  type='toggle', width="120", _default=false, set = function(i,v) Setter_Simple(i,v) ZGV.ItemScore.GearFinder:ClearResults() end, disabled=function() return not self.db.profile.autogear end, })
+
+			AddOption('gear_23_plus',{
+				name="Mythic difficulty",
+				type = 'select',
+				style = 'slider',
+				values={ 
+					[1]="     0", 
+					[2]="+2", 
+					[3]="+3", 
+					[4]="+4", 
+					[5]="+5", 
+					[6]="+6", 
+					[7]="+7", 
+					[8]="+8", 
+					[9]="+9", 
+					[10]= "+10   ", 
+				},
+				_default=1,
+				width=400,
+				hidden=function() return not self.db.profile.gear_23 end,
+				set = function(i,v) Setter_Simple(i,v) ZGV.ItemScore.GearFinder:ClearResults() end, disabled=function() return not (self.db.profile.autogear and self.db.profile.gear_23) end, })
+
 
 			AddOptionSpace()
 		AddOption('',{ type = "description", name = L["opt_gear_sources_raids"]:format(), font=ZGV.font_dialog_gray, width="full" })
+			AddOption('gear_17',{ name=PLAYER_DIFFICULTY3, type='toggle', width="100", _default=true, set = function(i,v) Setter_Simple(i,v) ZGV.ItemScore.GearFinder:ClearResults() end, disabled=function() return not self.db.profile.autogear end, })
 			AddOption('gear_14',{ name=PLAYER_DIFFICULTY1, type='toggle', width="100", _default=false, set = function(i,v) Setter_Simple(i,v) ZGV.db.profile.gear_3=v ZGV.db.profile.gear_4=v ZGV.ItemScore.GearFinder:ClearResults() end, disabled=function() return not self.db.profile.autogear end, }) -- also setting filters for prelfr raids
+			AddOption('gear_15',{ name=PLAYER_DIFFICULTY2, type='toggle', width="100", _default=false, set = function(i,v) Setter_Simple(i,v) ZGV.db.profile.gear_5=v ZGV.db.profile.gear_6=v ZGV.ItemScore.GearFinder:ClearResults() end, disabled=function() return not self.db.profile.autogear end, }) -- also setting filters for prelfr raids
+			AddOption('gear_16',{ name=PLAYER_DIFFICULTY6, type='toggle', width="100", _default=false, set = function(i,v) Setter_Simple(i,v) ZGV.db.profile.gear_7=v ZGV.ItemScore.GearFinder:ClearResults() end, disabled=function() return not self.db.profile.autogear end, }) -- also setting filters for prelfr raids
 			AddOptionSpace()
 
 		--[[ TODO
@@ -1136,6 +1139,7 @@ function ZGV:Options_DefineOptionTables()
 		--AddOptionSep()
 
 		AddOptionSpace()
+		--]=]
 
 		AddOption('clearnotupgrades',{
 			type = 'execute',	
@@ -1377,9 +1381,6 @@ function ZGV:Options_DefineOptionTables()
 							for index,stat in pairs(ZGV.ItemScore.Keywords) do -- wipe
 								ZGV.db.profile[groupname.."_"..stat.blizz] = nil
 							end
-							table.wipe(ZGV.db.char.tabguides)
-							ZGV.db.char.guidename=nil
-
 							ZGV.ItemScore:DelayedRefreshUserData()
 						end,
 						width='single',
@@ -2085,11 +2086,9 @@ function ZGV:Options_DefineOptionTables()
 						LibTaxi.TaxiFrameButton:SetShown(v)
 						LibTaxi.TaxiFrameButton2:SetShown(v)
 					end
-					if ZGV.GuideMenu.MainFrame then 
-						ZGV.GuideMenu:PrepareGuidesMenuButtons() 
-						ZGV.GuideMenu.MainFrame.GuidePathExport:SetShown(v)
-					end
-					if ZGV.PointerMap then ZGV.PointerMap:UpdateDevSettings() end
+					if ZygorGearFinderFrame then for i,v in pairs(ZygorGearFinderFrame.Items) do v.testbutton:SetShown(v) end end
+					if ZGV.GuideMenu.MainFrame then ZGV.GuideMenu:PrepareGuidesMenuButtons() end
+					if ZGV.Gold.Appraiser then ZGV.Gold.Appraiser:ApplyDebugDisplay() end
 				end, 
 			})
 
@@ -2097,23 +2096,6 @@ function ZGV:Options_DefineOptionTables()
 
 			AddOption('disabledev',{ name = "Disable dev menu for next reload", type = 'execute', width = "double", func = function() self.db.profile.hide_dev_once=true ReloadUI() end})
 			AddOption('debug_newicons',{ type = 'toggle', name="Use new test icons", width = "full", _default = false })
-
-			AddOption('test_mappreview',{ name = "Show dungeon map", type = 'execute', width = "double", func = function() 
-				local sorted = {}
-				for id,data in pairs(ZGV.PointerMap.Instances) do  tinsert(sorted,{id=id,data=data})  end
-				table.sort(sorted,function(a,b) return (a.data.name or "")<(b.data.name or "") end)
-
-				local menu = {}
-				for i,id_data in ipairs(sorted) do
-					tinsert(menu,{
-						text = (id_data.data[1].file=="" and "|cff888888" or "") .. id_data.data.name,
-						hasArrow = false,
-						isNotRadio = true,
-						func = function() ZGV.PointerMap:ShowPreview(id_data.id) end,
-					})
-				end
-				EasyFork(menu,ZGVF_Default_Menu,ZGV.Frame:GetName(),0,0,"MENU",3)  -- replacement for EasyMenu, just not as insecure.
-			end})
 		end
 
 		AddOptionGroup("debugfake","DebugFake","zgdebugfake", { name="Debug: faking stuff", guiHidden = not self.DEV or self.db.profile.hide_dev_once, })
@@ -2121,7 +2103,7 @@ function ZGV:Options_DefineOptionTables()
 			AddOption('fakelevel',{
 				name = "Fake level (0=disable)",
 				width="full",
-				type = 'range', min = 0, max = 60, step = 0.2, bigStep = 0.2,  -- EXPANSION: update
+				type = 'range', min = 0, max = 110, step = 0.2, bigStep = 0.2,  -- EXPANSION: update
 				get = function(i,v) return self.db.char[i[#i]] end,
 				set = function(i,v) self.db.char[i[#i]]=v end,
 			})
@@ -3188,6 +3170,7 @@ function ZGV:Options_DefineOptionTables()
 
 		
 		end
+		self.db.profile.hide_dev_once = false
 
 		AddOptionGroup("debugshare","DebugShare","zgdebugshare", { name="Debug: share", guiHidden = not self.DEV or self.db.profile.hide_dev_once, })
 		do
@@ -3235,8 +3218,6 @@ function ZGV:Options_DefineOptionTables()
 			})
 			AddOptionSpace()
 		end
-
-		self.db.profile.hide_dev_once = false
 	--end
 
 
@@ -3329,8 +3310,7 @@ local defaults = {
 		maint_fetchquestdata = true,
 		maint_fetchitemdata = true,
 
-		notifications = {},
-		bannedskills = {},
+		notifcations = {},
 
 		guides_history = {},
 

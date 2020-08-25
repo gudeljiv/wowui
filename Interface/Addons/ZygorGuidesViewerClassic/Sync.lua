@@ -441,7 +441,7 @@ function Sync:GetStepGoalPartyStatusText(stepnum,goalnum)
 	for i,name in ipairs(partysort) do repeat
 		local status = self.PartyStatus[name]
 		if not status then break end --continue
-		if not (status.guide and (status.guide==ZGV.CurrentGuide.title or status.guide:find("SHARED\\",1,true))) then break end
+		if not (status.guide==ZGV.CurrentGuide.title or status.guide:find("SHARED\\",1,true)) then break end
 
 		local step
 		if status.stepnum==stepnum then
@@ -803,11 +803,7 @@ function Sync:GetStepSource(stepnum)
 		end
 		if in_step then
 			table.insert(rawstep,line)
-			if linematch=="step" and ZGV.CurrentGuide.steps[stepnum].map then 
-				local floorpack = LibRover.data.MapNamesByID[ZGV.CurrentGuide.steps[stepnum].map]
-				local mapname = floorpack[1].."/"..floorpack[2]
-				table.insert(rawstep,"map "..mapname) 
-			end
+			if linematch=="step" and ZGV.CurrentGuide.steps[stepnum].map then table.insert(rawstep,"map "..ZGV.CurrentGuide.steps[stepnum].map) end
 		end
 	end
 	local t2=debugprofilestop()

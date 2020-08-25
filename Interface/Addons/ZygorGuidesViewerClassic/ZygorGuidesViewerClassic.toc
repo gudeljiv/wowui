@@ -1,4 +1,4 @@
-## Interface: 11305
+## Interface: 11304
 ## Title: Zygor Guides Viewer Classic
 ## Notes: Free multi-purpose leveling guide viewer.|n|nDesigned for use with Zygor Guides, but supporting user-supplied guides as well.
 ## Author: Zygor Guides

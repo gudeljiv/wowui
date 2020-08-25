@@ -23,80 +23,113 @@ Dungeons.DungeonNamesToMapNames  = DungeonNamesToMapNames
 
 Dungeons.ExpansionsLimits = {
 	[0] = 60,
+	[1] = 80,
+	[2] = 80,
+	[3] = 90,
+	[4] = 90,
+	[5] = 100,
+	[6] = 110,
+	[7] = 120,
 }
 
 -- Timewalks and legion mythics do not have any lfg entry, so we need to hardcode basic data for them
 local hardcoded_dungeons = {
-	[719] =  {instanceID=48,   expansionLevel=0, minLevel=15, difficulty=1, mapid=9001, name="Blackfathom Deeps"},
-	[1584] = {instanceID=230,  expansionLevel=0, minLevel=42, difficulty=1, mapid=9002, name="Blackrock Depths"},
-	[2557] = {instanceID=429,  expansionLevel=0, minLevel=31, difficulty=1, mapid=9005, name="Dire Maul East", instancename="Dire Maul"},
-	[2558] = {instanceID=429,  expansionLevel=0, minLevel=31, difficulty=1, mapid=9005, name="Dire Maul North", instancename="Dire Maul"},
-	[2559] = {instanceID=429,  expansionLevel=0, minLevel=31, difficulty=1, mapid=9005, name="Dire Maul West", instancename="Dire Maul"},
-	[721] =  {instanceID=90,   expansionLevel=0, minLevel=19, difficulty=1, mapid=9006, name="Gnomeregan"},
-	[1583] = {instanceID=229,  expansionLevel=0, minLevel=48, difficulty=1, mapid=9003, name="Lower Blackrock Spire"},
-	[2102] = {instanceID=349,  expansionLevel=0, minLevel=25, difficulty=1, mapid=9007, name="Maraudon Inner", instancename="Maraudon"},
-	[2101] = {instanceID=349,  expansionLevel=0, minLevel=25, difficulty=1, mapid=9007, name="Maraudon Orange", instancename="Maraudon"},
-	[2100] = {instanceID=349,  expansionLevel=0, minLevel=25, difficulty=1, mapid=9007, name="Maraudon Purple", instancename="Maraudon"},
-	[2437] = {instanceID=389,  expansionLevel=0, minLevel=10, difficulty=1, mapid=9010, name="Ragefire Chasm"},
-	[722] =  {instanceID=129,  expansionLevel=0, minLevel=35, difficulty=1, mapid=9011, name="Razorfen Downs"},
-	[491] =  {instanceID=47,   expansionLevel=0, minLevel=25, difficulty=1, mapid=9012, name="Razorfen Kraul"},
-	[796] =  {instanceID=1004, expansionLevel=0, minLevel=20, difficulty=1, mapid=9015, name="Scarlet Monastery Armory", instancename="Scarlet Monastery"},
-	[797] =  {instanceID=1004, expansionLevel=0, minLevel=20, difficulty=1, mapid=9015, name="Scarlet Monastery Cathedral", instancename="Scarlet Monastery"},
-	[798] =  {instanceID=1004, expansionLevel=0, minLevel=20, difficulty=1, mapid=9015, name="Scarlet Monastery Graveyard", instancename="Scarlet Monastery"},
-	[799] =  {instanceID=1004, expansionLevel=0, minLevel=20, difficulty=1, mapid=9015, name="Scarlet Monastery Library", instancename="Scarlet Monastery"},
-	[2057] = {instanceID=1007, expansionLevel=0, minLevel=33, difficulty=1, mapid=9016, name="Scholomance"},
-	[209] =  {instanceID=33,   expansionLevel=0, minLevel=11, difficulty=1, mapid=9017, name="Shadowfang Keep"},
-	[2017] = {instanceID=329,  expansionLevel=0, minLevel=37, difficulty=1, mapid=9018, name="Stratholme Living", instancename="Stratholme"},
-	[2018] = {instanceID=329,  expansionLevel=0, minLevel=37, difficulty=1, mapid=9018, name="Stratholme Undead", instancename="Stratholme"},
-	[1581] = {instanceID=36,   expansionLevel=0, minLevel=10, difficulty=1, mapid=9020, name="The Deadmines"},
-	[717] =  {instanceID=34,   expansionLevel=0, minLevel=15, difficulty=1, mapid=9021, name="The Stockade"},
-	[1477] = {instanceID=109,  expansionLevel=0, minLevel=45, difficulty=1, mapid=9022, name="The Temple of Atal'Hakkar"},
-	[1337] = {instanceID=70,   expansionLevel=0, minLevel=30, difficulty=1, mapid=9023, name="Uldaman"},
-	[1582] = {instanceID=229,  expansionLevel=0, minLevel=48, difficulty=1, mapid=9003, name="Upper Blackrock Spire"},
-	[718] =  {instanceID=43,   expansionLevel=0, minLevel=10, difficulty=1, mapid=9024, name="Wailing Caverns"},
-	[1176] = {instanceID=209,  expansionLevel=0, minLevel=39, difficulty=1, mapid=9025, name="Zul'Farrak"},
+	-- timewalk tbc
+	["e_249"] = {expansionLevel=1, minLevel=61, difficulty=24, name="Magisters' Terrace"},
+	["e_250"] = {expansionLevel=1, minLevel=61, difficulty=24, name="Mana-Tombs"},
+	["e_254"] = {expansionLevel=1, minLevel=61, difficulty=24, name="The Arcatraz"},
+	["e_255"] = {expansionLevel=1, minLevel=61, difficulty=24, name="The Black Morass"},
+	["e_259"] = {expansionLevel=1, minLevel=61, difficulty=24, name="The Shattered Halls"},
+	["e_260"] = {expansionLevel=1, minLevel=61, difficulty=24, name="The Slave Pens"},
+	-- timewalk wotlk
+	["e_271"] = {expansionLevel=2, minLevel=61, difficulty=24, name="Ahn'kahet: The Old Kingdom"},
+	["e_274"] = {expansionLevel=2, minLevel=61, difficulty=24, name="Gundrak"},
+	["e_275"] = {expansionLevel=2, minLevel=61, difficulty=24, name="Halls of Lightning"},
+	["e_278"] = {expansionLevel=2, minLevel=61, difficulty=24, name="Pit of Saron"},
+	["e_281"] = {expansionLevel=2, minLevel=61, difficulty=24, name="The Nexus"},
+	["e_286"] = {expansionLevel=2, minLevel=61, difficulty=24, name="Utgarde Pinnacle"},
+	-- timewalk cata
+	["e_184"] = {expansionLevel=3, minLevel=81, difficulty=24, name="End Time"},
+	["e_71"]  = {expansionLevel=3, minLevel=81, difficulty=24, name="Grim Batol"},
+	["e_69"]  = {expansionLevel=3, minLevel=81, difficulty=24, name="Lost City of the Tol'vir"},
+	["e_67"]  = {expansionLevel=3, minLevel=81, difficulty=24, name="The Stonecore"},
+	["e_68"]  = {expansionLevel=3, minLevel=81, difficulty=24, name="The Vortex Pinnacle"},
+	["e_65"]  = {expansionLevel=3, minLevel=81, difficulty=24, name="Throne of the Tides"},
+	-- timewalk mop
+	["e_303"] = {expansionLevel=4, minLevel=81, difficulty=24, name="Gate of the Setting Sun"},
+	["e_321"] = {expansionLevel=4, minLevel=81, difficulty=24, name="Mogu'Shan Palace"},
+	["e_312"] = {expansionLevel=4, minLevel=81, difficulty=24, name="Shado'Pan Monastery"},
+	["e_324"] = {expansionLevel=4, minLevel=81, difficulty=24, name="Siege of Niuzao Temple"},
+	["e_302"] = {expansionLevel=4, minLevel=81, difficulty=24, name="Stormstout Brewery"},
+	["e_313"] = {expansionLevel=4, minLevel=81, difficulty=24, name="Temple of the Jade Dragon"},
 
-	[2677] = {instanceID=469, expansionLevel=0, minLevel=60, difficulty=14, mapid=9004, name="Blackwing Lair"},
-	[2717] = {instanceID=409, expansionLevel=0, minLevel=60, difficulty=14, mapid=9008, name="Molten Core"},
-	[3456] = {instanceID=533, expansionLevel=0, minLevel=60, difficulty=-14, mapid=9009, name="Naxxramas"}, -- verify instanceID, correct difficulty once unlocked
-	[2159] = {instanceID=249, expansionLevel=0, minLevel=60, difficulty=14, mapid=9010, name="Onyxia"}, -- verify instanceID
-	[3429] = {instanceID=509, expansionLevel=0, minLevel=60, difficulty=14, mapid=9013, name="The Ruins of Ahn'Qiraj"},
-	[3428] = {instanceID=531, expansionLevel=0, minLevel=60, difficulty=14, mapid=9019, name="The Temple of Ahn'Qiraj"},
-	[0] =    {instanceID=0,   expansionLevel=0, minLevel=60, difficulty=14, mapid=-1, name="World Bosses"},
-	[1977] = {instanceID=309, expansionLevel=0, minLevel=60, difficulty=14, mapid=9026, name="Zul'Gurub"}, -- verify instanceID
+	-- mythic legion
+	["e_777"]  = {expansionLevel=6, minLevel=110, min_ilevel=170, difficulty=23, name="Assault on Violet Hold"},
+	["e_740"]  = {expansionLevel=6, minLevel=110, min_ilevel=170, difficulty=23, name="Black Rook Hold"},
+	["e_800"]  = {expansionLevel=6, minLevel=110, min_ilevel=170, difficulty=23, name="Court of Stars"},
+	["e_762"]  = {expansionLevel=6, minLevel=110, min_ilevel=170, difficulty=23, name="Darkheart Thicket"},
+	["e_716"]  = {expansionLevel=6, minLevel=110, min_ilevel=170, difficulty=23, name="Eye of Azshara"},
+	["e_721"]  = {expansionLevel=6, minLevel=110, min_ilevel=170, difficulty=23, name="Halls of Valor"},
+	["e_727"]  = {expansionLevel=6, minLevel=110, min_ilevel=170, difficulty=23, name="Maw of Souls"},
+	["e_767"]  = {expansionLevel=6, minLevel=110, min_ilevel=170, difficulty=23, name="Neltharion's Lair"},
+	["e_726"]  = {expansionLevel=6, minLevel=110, min_ilevel=170, difficulty=23, name="The Arcway"},
+	["e_707"]  = {expansionLevel=6, minLevel=110, min_ilevel=170, difficulty=23, name="Vault of the Wardens"},
+	["e_860"]  = {expansionLevel=6, minLevel=110, min_ilevel=170, difficulty=23, name="Return to Karazhan"},
+	["e_900"]  = {expansionLevel=6, minLevel=110, min_ilevel=170, difficulty=23, name="Cathedral of Eternal Night"},
+	["e_945"]  = {expansionLevel=6, minLevel=110, min_ilevel=170, difficulty=23, name="Seat of the Triumvirate"},
+	-- mythic battle for azeroth
+	["e_968"]  = {expansionLevel=7, minLevel=120, min_ilevel=310, difficulty=23, name="Atal'Dazar"},
+	["e_1001"]  = {expansionLevel=7, minLevel=120, min_ilevel=310, difficulty=23, name="Freehold"},
+	["e_1041"]  = {expansionLevel=7, minLevel=120, min_ilevel=310, difficulty=23, name="Kings' Rest"},
+	["e_1036"]  = {expansionLevel=7, minLevel=120, min_ilevel=310, difficulty=23, name="Shrine of the Storm"},
+	["e_1023"]  = {expansionLevel=7, minLevel=120, min_ilevel=310, difficulty=23, name="Siege of Boralus"},
+	["e_1030"]  = {expansionLevel=7, minLevel=120, min_ilevel=310, difficulty=23, name="Temple of Sethraliss"},
+	["e_1012"]  = {expansionLevel=7, minLevel=120, min_ilevel=310, difficulty=23, name="The MOTHERLODE!!"},
+	["e_1022"]  = {expansionLevel=7, minLevel=120, min_ilevel=310, difficulty=23, name="The Underrot"},
+	["e_1002"]  = {expansionLevel=7, minLevel=120, min_ilevel=310, difficulty=23, name="Tol Dagor"},
+	["e_1021"]  = {expansionLevel=7, minLevel=120, min_ilevel=310, difficulty=23, name="Waycrest Manor"},
 
+	-- world bosses
+	["e_1028"]  = {expansionLevel=7, minLevel=120, min_ilevel=280, difficulty=14, name="World Bosses"}, 
+	["e_833"]  = {expansionLevel=6, minLevel=110, min_ilevel=150, difficulty=14, name="World Bosses"},
+	["e_557"]  = {expansionLevel=5, minLevel=100, min_ilevel=90, difficulty=14, name="World Bosses"},
+	["e_322"]  = {expansionLevel=4, minLevel=80, min_ilevel=70, difficulty=14, name="World Bosses"},
 }
 
-Dungeons.InstanceToLFG = {}
---[[ mothballed fake dungeon maps
-Dungeons.MapToData = {}
---]]
-for i,v in pairs(hardcoded_dungeons) do
-	Dungeons.InstanceToLFG[v.instanceID] = Dungeons.InstanceToLFG[v.instanceID] or i
-	--[[ mothballed fake dungeon maps
-	Dungeons.MapToData[v.mapid] = Dungeons.MapToData[v.mapid] or {mapID=v.mapid, mapType=Enum.UIMapType.Dungeon, name=v.instancename or v.name, parentMapID=v.mapid}
-	--]]
-end
-
 local attunements = {
-	[1582] = {attunement_quest=4743}, -- Upper Blackrock Spire
-	[2102] = {attunement_quest=7044}, -- Maraudon Inner
-	[2057] = {attunement_quest_a=5505, attunement_quest_h=5511}, -- Scholomance
-	[2159] = {attunement_quest_a=6502, attunement_quest_h=6602}, -- Onyxia
-	[3456] = {attunement_quest=9121}, -- Naxxramas
+	["e_860"] = {attunement_achieve=11547}, -- Return to Karazhan M
+	["e_900"] = {attunement_queston=46244}, -- Cathedral of Eternal Night M
+	[1115] = {attunement_achieve=11547}, -- Return to Karazhan HC
+	[1488] = {attunement_queston=46244}, -- Cathedral of Eternal Night HC
+}
+
+local override_min_levels = { -- bfa dungeons have different min levels per faction
+	[1672] = { Alliance=110, Horde=120, Neutral=120 }, -- Freehold
+	[1774] = { Alliance=110, Horde=120, Neutral=120 }, -- Shrine of the Storm
+	[1705] = { Alliance=110, Horde=120, Neutral=120 }, -- Waycrest Manor
+	[1778] = { Alliance=115, Horde=120, Neutral=120 }, -- Tol Dagor
+	[1668] = { Alliance=120, Horde=110, Neutral=120 }, -- Atal´dazar
+	[1694] = { Alliance=120, Horde=110, Neutral=120 }, -- Temple of Sethraliss
+	[1777] = { Alliance=120, Horde=110, Neutral=120 }, -- The Underrot
+	[1707] = { Alliance=120, Horde=115, Neutral=120 }, -- The Motherlode!!
 }
 
 setmetatable(Dungeons,{
 	__index=function(t,id)
 		-- cache from game, to get all data in one place
+		do return end  -- CLASSIC TODO rework
 
 		if not id then return end
 
 		if type(id)=="string" and not hardcoded_dungeons[id] then return end   -- error("No function Dungeons."..id)   -- don't error, this breaks Spoo.
 
-		local d=hardcoded_dungeons[id]
-		local name,expansionLevel,minLevel,min_ilevel,difficulty = d.name,d.expansionLevel,d.minLevel,d.min_ilevel,d.difficulty
-
+		local name, typeID, subtypeID, minLevel, maxLevel, recLevel, minRecLevel, maxRecLevel, expansionLevel, groupID, textureFilename, difficulty, maxPlayers, description, isHoliday, min_ilevel, attunement_achieve, attunement_quest, attunement_queston
+		if hardcoded_dungeons[id] then
+			local d=hardcoded_dungeons[id]
+			name,expansionLevel,minLevel,min_ilevel,difficulty = d.name,d.expansionLevel,d.minLevel,d.min_ilevel,d.difficulty
+		else
+			name, typeID, subtypeID, minLevel, maxLevel, recLevel, minRecLevel, maxRecLevel, expansionLevel, groupID, textureFilename, difficulty, maxPlayers, description, isHoliday, bonusRepAmount, minPlayers, isTimeWalker, name2, min_ilevel  = GetLFGDungeonInfo(id)
+		end
 
 		if name and typeID~=4 then
 			local dungeon = {}
@@ -105,14 +138,18 @@ setmetatable(Dungeons,{
 			dungeon.name = name
 			dungeon.difficulty = difficulty
 			dungeon.isHoliday = isHoliday
-			dungeon.minLevel = minLevel
+			if override_min_levels[id] then
+				dungeon.minLevel = override_min_levels[id][Dungeons.Faction]
+			else
+				dungeon.minLevel = minLevel
+			end
 			dungeon.expansionLevel = expansionLevel
-			dungeon.maxScaleLevel = dungeon.maxLevel
-			dungeon.min_ilevel = 0
+			dungeon.maxScaleLevel = math.max(Dungeons.ExpansionsLimits[expansionLevel],dungeon.minLevel) -- maxscale cannot be lower than minlevel (uldir hero/mythic reports being from exp6, so maxscale would be 110)
+			dungeon.min_ilevel = min_ilevel
 
 			if attunements[id] then
 				dungeon.attunement_achieve = attunements[id].attunement_achieve
-				dungeon.attunement_quest = attunements[id].attunement_quest or (Dungeons.Faction=="Alliance" and attunements[id].attunement_quest_a) or (Dungeons.Faction=="Horde" and attunements[id].attunement_quest_h)
+				dungeon.attunement_quest = attunements[id].attunement_quest
 				dungeon.attunement_queston = attunements[id].attunement_queston
 			end
 
@@ -134,7 +171,7 @@ end
 function Dungeons:Init()
 	--if not LFDDungeonList then return end
 	Dungeons.Faction = UnitFactionGroup("player")
-	for id,_ in pairs(hardcoded_dungeons) do
+	for id=1,2000 do
 		local cache_wasted = self[id]
 	end
 end

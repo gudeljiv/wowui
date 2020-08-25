@@ -32615,8 +32615,5 @@ ZygorGuidesViewer_L("NPCs", "enUS", function() return {
 [006491]="Spirit Healer|",
 [011066]="Jhag|",
 [002857]="Thund|",
-[7356]="Plaguemaw the Rotting|",
-[011122]="Restless Soul|",
-[016788]="Festival Flamekeeper|",
 
 } end)

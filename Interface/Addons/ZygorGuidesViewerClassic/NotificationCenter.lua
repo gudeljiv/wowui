@@ -646,16 +646,6 @@ function Notification:SaveNotifications()
 				notif.texcoords,
 				notif.data,
 			}
-		elseif notif.butType == "skills" then
-			saved[notif.id] = {
-				notif.butType,
-				ZGV.L['notifcenter_skill_title_default'],
-				notif.textString,
-				notif.addtime,
-				notif.icon:GetTexture(),
-				notif.texcoords,
-				notif.data,
-			}
 		end
 	end
 end
@@ -685,8 +675,6 @@ function Notification:AddedSavedNotifications()
 		texCoord = info[6]
 		data = info[7]
 
-		local restore = true
-
 		if info[1] == "pet" then
 			ZGV.CreatureDetector:AddGuideToDetectedGuides(guide)
 
@@ -698,28 +686,23 @@ function Notification:AddedSavedNotifications()
 		elseif info[1] == "legion" then
 			guideData = guide
 			OnClick = function(self) ZGV:PLAYER_LEVEL_UP(nil,data.level) end
-		elseif info[1] == "skills" then
-			OnClick = function(self) ZGV.Skills:ShowSkillPopup() end
-			restore = not ZGV.db.profile.n_popup_skills_login -- restore this button only if we would not be showing login popup
 		end
 
-		if restore then
-			ZGV.NotificationCenter.AddButton(
-				myId,
-				title,
-				text,
-				texture,
-				texCoord,
-				OnClick,
-				OnEnter,
-				priority,
-				poptime,
-				removetime,
-				quiet,
-				OnOpen,
-				myType,
-				{time=addtime,guide=guideData,level=(data and data.level or nil),dontdelete=(data and data.dontdelete or nil)})
-		end
+		ZGV.NotificationCenter.AddButton(
+			myId,
+			title,
+			text,
+			texture,
+			texCoord,
+			OnClick,
+			OnEnter,
+			priority,
+			poptime,
+			removetime,
+			quiet,
+			OnOpen,
+			myType,
+			{time=addtime,guide=guideData,level=(data and data.level or nil),dontdelete=(data and data.dontdelete or nil)})
 	end
 end
 

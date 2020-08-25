@@ -59,8 +59,6 @@
 
 	<Script file="NotificationCenter.lua"/>
 
-	<Script file="Skills.lua"/>
-
 	<Script file="MapCoords.lua"/>
 
 	<Script file="Pointer.lua"/>
@@ -105,12 +103,17 @@
 	<Script file="CreatureDetector.lua" />
 	
 	<Script file="Item-DataTables.lua" />
+	<!--
+	<Script file="Item-ItemScore.lua" />
+	<Script file="Item-GearFinder.lua" />
+	-->
 
 	<Script file="Item-ItemScore.lua" />
 	<Script file="Item-Upgrades.lua" />
 	<Script file="Item-GearFinder.lua" />
 	<Script file="Item-Quest.lua" />
 
+	<Include file="GoldUI\Gold.xml" />
 	<Include file="Data\data.xml"/>
 
 	<!--

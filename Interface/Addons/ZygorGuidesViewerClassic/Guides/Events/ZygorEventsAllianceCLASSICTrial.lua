@@ -3,62 +3,6 @@ if not ZygorGuidesViewer then return end
 if UnitFactionGroup("player")~="Alliance" then return end
 if ZGV:DoMutex("EventsA") then return end
 ZygorGuidesViewer.GuideMenuTier = "TRI"
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Children's Week\\Children's Week Main Questline",{
-author="support@zygorguides.com",
-description="This guide will walk you through the quests for the \"Children's Week\" event.",
-condition_end=function() return completedq(171) end,
-},[[
-step
-talk Orphan Matron Nightingale##14450
-Tell her _"Well what do you know, this is Children's Week! What can I do to help?"_
-accept Children's Week##1468 |goto Stormwind City 47.35,38.19
-step
-talk Emmithue Smails##14481
-buy 1 Tigule and Foror's Strawberry Ice Cream##7228 |goto 53.79,65.38 |q 4822 |future
-step
-use the Human Orphan Whistle##18598
-_Next to you:_
-talk Human Orphan##14305
-turnin Children's Week##1468
-accept The Bough of the Eternals##1479
-accept The Stonewrought Dam##1558
-accept Spooky Lighthouse##1687
-step
-use the Human Orphan Whistle##18598
-Go to the Westfall Lighthouse |q 1687/1 |goto Westfall 30.52,85.82
-step
-use the Human Orphan Whistle##18598
-Go to the Top of the Stonewrought Dam |q 1558/1 |goto Dun Morogh 48.26,14.11
-step
-use the Human Orphan Whistle##18598
-Go to the Bank in Darnassus |q 1479/1 |goto Darnassus 41.04,42.91
-step
-use the Human Orphan Whistle##18598
-_Next to you:_
-talk Human Orphan##14305
-turnin The Bough of the Eternals##1479
-turnin The Stonewrought Dam##1558
-turnin Spooky Lighthouse##1687
-accept You Scream, I Scream...##4822
-accept Jaina's Autograph##558
-step
-Enter the building |goto Dustwallow Marsh 65.74,48.63 < 10 |walk
-talk Lady Jaina Proudmoore##4968
-|tip Inside at the top of the tower.
-|tip She walks around the area.
-Tell her _"Lady Jaina, this may sound like an odd request..."_
-collect Jaina's Autograph##18642 |goto 66.25,49.04 |q 558
-step
-use the Human Orphan Whistle##18598
-_Next to you:_
-talk Human Orphan##14305
-turnin You Scream, I Scream...##4822
-turnin Jaina's Autograph##558
-accept A Warden of the Alliance##171
-step
-talk Orphan Matron Nightingale##14450
-turnin A Warden of the Alliance##171 |goto Stormwind City 47.35,38.19
-]])
 ZygorGuidesViewer:RegisterGuide("Events Guides\\Darkmoon Faire\\Elwynn Forest\\Sayge's Fortunes (Elwynn Forest)",{
 author="support@zygorguides.com",
 description="\nReceive a stat buff and have your fortune told by Sayge at the Darkmoon Faire.",
@@ -523,168 +467,246 @@ talk Flik##14860
 buy 1 Tree Frog Box##11026 |goto Elwynn Forest 42.59,70.30
 |tip This item costs 1 gold.
 ]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Midsummer Fire Festival\\Midsummer Fire Festival Quests",{
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Love is in the Air\\Love is in the Air Quests",{
 author="support@zygorguides.com",
-condition_end=function() return completedq(9365) end,
-description="\nComplete the following Midsummer Fire Festival event quests:\n\nThe Festival of Fire\n"..
-"Flickering Flames in the Eastern Kingdoms\nFlickering Flames in Kalimdor\nWild Fires in \n"..
-"Eastern Kingdoms\nWild Fires in Kalimdor\nA Light in Dark Places\nStealing the Undercity's\n"..
-" Flame\nStealing Thunder Bluff's Flame\nStealing Orgrimmar's Flame\nA Thief's Reward\n\n"..
-"|cffff0000NOTE:|r You will need to be at least level 50 to fully complete this guide.",
+description="\nThis guide will assist you in completing the quests for the \"Love is in the Air\" event.",
+condition_end=function() return completedq(9029) end,
 },[[
 step
-talk Festival Loremaster##16817
-accept The Festival of Fire##9367 |goto Ironforge 63.83,25.55
-accept Flickering Flames in the Eastern Kingdoms##9389 |goto 63.83,25.55
-accept Flickering Flames in Kalimdor##9388 |goto 63.83,25.55
+talk Aristan Mottar##16105
+accept Dangerous Love##8903 |goto Stormwind City 54.60,65.29
 step
-talk Festival Flamekeeper##16788
-accept Wild Fires in the Eastern Kingdoms##9323 |goto 63.59,24.66
-accept Wild Fires in Kalimdor##9322 |goto 63.59,24.66
-accept A Light in Dark Places##9319 |goto 63.59,24.66 |only if level >= 50
+talk Innkeeper Allison##6740
+|tip Inside the building.
+buy 1 Love Token##21815 |goto 52.62,65.70 |q 8903
+buy 1 Cologne Bottle##21833 |goto 52.62,65.70 |q 8903
+buy 1 Perfume Bottle##21829 |goto 52.62,65.70 |q 8903
 step
-click Flame of Ironforge
-Touch the Flame of Ironforge |q 9367/2 |goto 64.24,25.21
+use the Cologne Bottle##21833
+use the Perfume Bottle##21829
+Apply Perfume or Cologne |condition hasbuff("spell:26681") or hasbuff("spell:26682") |q 8903
+|tip Perfume allows you to give Love Tokens to male NPCs.
+|tip Cologne allows you to give Love Tokens to female NPCs.
 step
-click Flame of the Wetlands
-Touch the Flame of the Wetlands |q 9389/4 |goto Wetlands 51.19,16.98
+Talk to NPCs
+|tip Talk to those with a heart above their head.
+Tell them _"Here, I'd like to give you this token of my love."_
+use the Pledge of Adoration: Stormwind##21975
+use the Pledge of Friendship: Stormwind##22178
+collect 1 Stormwind Guard's Card##22143 |q 8903
 step
-click Flame of the Hinterlands
-Touch the Flame of the Hinterlands |q 9323/3 |goto The Hinterlands 62.03,53.41
+talk Aristan Mottar##16105
+turnin Dangerous Love##8903 |goto 54.60,65.29
+accept Artisan's Hunch##9024 |goto 54.60,65.29
 step
-click Flame of Hillsbrad
-Touch the Flame of Hillsbrad |q 9389/1 |goto Hillsbrad Foothills 54.48,33.89
+talk Morgan Pestle##279
+|tip Inside the building.
+turnin Artisan's Hunch##9024 |goto 56.20,64.58
+accept Morgan's Discovery##9025 |goto 56.20,64.58
 step
-click Flame of Silverpine
-Touch the Flame of Silverpine |q 9389/2 |goto Silverpine Forest 54.11,69.74
+talk Aristan Mottar##16105
+turnin Morgan's Discovery##9025 |goto 54.60,65.29
+accept Tracing the Source##9026 |goto 54.60,65.29
 step
-click Flame of the Undercity
-accept Stealing the Undercity's Flame##9326 |goto Undercity 66.05,36.31
-|tip
-Click Here to Skip this Step |confirm
-|tip This step requires you to enter the opposing faction's capital city
-|tip If skipped, you will not be able to complete this quest or the "A Thief's Reward" quest.
-|only if level >= 50
+talk Innkeeper Allison##6740
+|tip Inside the building.
+turnin Tracing the Source##9026 |goto 52.62,65.70
+accept Tracing the Source##9027 |goto 52.62,65.70
 step
-click Flame of Scholomance
-|tip Inside The Viewing Room with Marduk Blackpool and Vectus.
-|tip You will need The Key to Scholomance to enter the dungeon.
-|tip You will also need the Viewing Room Key dropped by Rattlegore to enter the Viewing Room.
-|tip You can also have another player let you in.
-Touch the Flame of Scholomance |q 9319/4 |goto Eastern Kingdoms 52.75,26.41
-|tip
-Click Here to Skip this Dungeon Step |confirm
-|tip If skipped, you will not be able to complete the "A Light in Dark Places" quest.
-|only if havequest(9319) or completedq(9319)
+talk Evert Sorisam##16106
+|tip Inside the building.
+turnin Tracing the Source##9027 |goto 39.83,46.97
+accept The Source Revealed##9028 |goto 39.83,46.97
 step
-click Flame of the Plaguelands
-Touch the Flame of the Plaguelands |q 9323/2 |goto Eastern Plaguelands 57.50,72.55
+Follow the path up |goto Hillsbrad Foothills 75.5,24.0
+Enter the cave |goto 77.7,19.4
+Run up the hill |goto Alterac Mountains 84.3,84.3
+Follow the path up |goto 86.1,25.3
+talk Apothecary Staffron Lerent##16107
+turnin The Source Revealed##9028 |goto 89.5,75.5
 step
-click Flame of Stratholme
-|tip On the live side, just before entering the Scarlet Crusade compound.
-Touch the Flame of Stratholme |q 9319/3 |goto Eastern Kingdoms 55.12,17.36
-|tip
-Click Here to Skip this Dungeon Step |confirm
-|tip If skipped, you will not be able to complete the "A Light in Dark Places" quest.
-|only if havequest(9319) or completedq(9319)
+click Fragrant Cauldron
+accept A Bubbling Cauldron##9029 |goto 89.6,75.7
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\Love is in the Air\\Gift Giving",{
+author="support@zygorguides.com",
+description="\nThis guide will assist you in completing the \"Gift Giving\" quest for the \"Love is in the Air\" event.",
+},[[
 step
-click Flame of Searing Gorge
-Touch the Flame of Searing Gorge |q 9323/4 |goto Searing Gorge 33.05,73.03
+label "Begin_Guide"
+talk Innkeeper Allison##6740
+|tip Inside the building.
+buy 10 Love Token##21815 |goto Stormwind City 52.62,65.70
+buy 1 Cologne Bottle##21833 |goto 52.62,65.70
+buy 1 Perfume Bottle##21829 |goto 52.62,65.70
 step
-Enter Blackrock Mountain |goto 34.75,84.02 < 10 |walk
-Run up the chain |goto Eastern Kingdoms 48.74,63.79 < 10 |walk
-Jump down |goto 48.77,63.67 < 10 |walk
-Jump down |goto 48.89,63.87 < 5 |walk
-click Flame of Blackrock Spire
-|tip Inside Lower Blackrock Spire on Urok Doomhowl's platform.
-Touch the Flame of Blackrock Spire |q 9319/2 |goto 48.95,63.88
-|tip
-Click Here to Skip this Dungeon Step |confirm
-|tip If skipped, you will not be able to complete the "A Light in Dark Places" quest.
-|only if havequest(9319) or completedq(9319)
+label "Apply_Perfume_or_Cologne_Stormwind"
+use the Cologne Bottle##21833
+use the Perfume Bottle##21829
+Apply Perfume or Cologne |condition hasbuff("spell:26681") or hasbuff("spell:26682")
+|tip Perfume allows you to give Love Tokens to male NPCs.
+|tip Cologne allows you to give Love Tokens to female NPCs.
 step
-click Flame of Stormwind
-Touch the Flame of Stormwind |q 9367/1 |goto Stormwind City 38.84,61.44
+Talk to Stormwind City NPCs
+|tip Talk to guards around Stormwind who have hearts over their heads.
+|tip If you run out of Love Tokens, talk to the nearest Innkeeper to purchase more.
+Tell them _"Here, I'd like to give you this token of my love."_
+use the Pledge of Adoration: Stormwind##21975
+use the Pledge of Friendship: Stormwind##22178
+collect 5 Pledge of Loyalty: Stormwind##22117 |goto Stormwind City 55.91,61.93 |or
+'|condition not hasbuff("spell:26681") and not hasbuff("spell:26682") and itemcount (22117) < 5 |next "Apply_Perfume_or_Cologne_Stormwind" |or
 step
-click Flame of Westfall
-Touch the Flame of Westfall |q 9389/3 |goto Westfall 33.99,80.26
+Talk to Stormwind City NPCs
+|tip Talk to guards around Stormwind who have hearts over their heads.
+|tip If you run out of Love Tokens, talk to the nearest Innkeeper to purchase more.
+Tell them _"Here, I'd like to give you this token of my love."_
+use the Pledge of Adoration: Stormwind##21975
+use the Pledge of Friendship: Stormwind##22178
+collect 5 Stormwind Guard's Card##22143 |goto Stormwind City 55.91,61.93 |or
+'|condition not hasbuff("spell:26681") and not hasbuff("spell:26682") and itemcount (22143) < 5 |next "Apply_Perfume_or_Cologne_Stormwind" |or
 step
-click Flame of the Blasted Lands
-Touch the Flame of the Blasted Lands |q 9323/1 |goto Blasted Lands 54.01,31.28
+Talk to non-guard NPCs
+|tip Talk to NPCs who aren't guards around Stormwind who have hearts over their heads.
+|tip If you run out of Love Tokens, talk to the nearest Innkeeper to purchase more.
+Tell them _"Here, I'd like to give you this token of my love."_
+use the Gift of Adoration: Stormwind##21981 |only if not hasbuff("spell:26680")
+use the Gift of Friendship: Stormwind##22170 |only not hasbuff("spell:26680")
+collect 5 Homemade Bread##22176 |goto Stormwind City 55.91,61.93 |or
+'|condition not hasbuff("spell:26681") and not hasbuff("spell:26682") and itemcount (22176) < 5 |next "Apply_Perfume_or_Cologne_Stormwind" |or
 step
-Wait for the boat |goto Stranglethorn Vale 25.85,73.11
-Ride the Boat to Ratchet |goto The Barrens 63.63,38.64 < 50 |c |noway |q 9388
+use the Pledge of Loyalty: Stormwind##22117
+collect 1 Stormwind Pledge Collection##22285
 step
-click Flame of the Barrens
-Touch the Flame of the Barrens |q 9388/2 |goto 59.82,39.27
+use the Stormwind Guard's Card##22143
+collect 1 Bundle of Cards##22284
 step
-click Flame of Un'Goro
-Touch the Flame of Un'Goro |q 9322/3 |goto Un'Goro Crater 70.34,75.99
+use the Homemade Bread##22176
+collect 1 Sack of Homemade Bread##22283
 step
-click Flame of Silithus
-Touch the Flame of Silithus |q 9322/2 |goto Silithus 78.08,18.90
+use the Stormwind Pledge Collection##22285
+collect 1 Stormwind Gift Collection##22131
 step
-click Flame of Dire Maul
-|tip Inside Dire Maul North, at the top of the staircase following Guard Slip'kik.
-|tip You will need the Crescent Key from Dire Maul East to enter the dungeon.
-|tip You can also have another player let you in.
-Touch the Flame of Dire Maul |q 9319/1 |goto Kalimdor 43.39,66.52
-|tip
-Click Here to Skip this Dungeon Step |confirm
-|tip If skipped, you will not be able to complete the "A Light in Dark Places" quest.
-|only if havequest(9319) or completedq(9319)
+label "Apply_Perfume_or_Cologne_Ironforge"
+use the Cologne Bottle##21833
+use the Perfume Bottle##21829
+Apply Perfume or Cologne |condition hasbuff("spell:26681") or hasbuff("spell:26682")
+|tip Perfume allows you to give Love Tokens to male NPCs.
+|tip Cologne allows you to give Love Tokens to female NPCs.
 step
-click Flame of Thunder Bluff
-accept Stealing Thunder Bluff's Flame##9325 |goto Thunder Bluff 21.30,26.68
-|tip
-Click Here to Skip this Step |confirm
-|tip This step requires you to enter the opposing faction's capital city
-|tip If skipped, you will not be able to complete this quest or the "A Thief's Reward" quest.
-|only if level >= 50
+Talk to Ironforge guard NPCs
+|tip Talk to guards around Ironforge who have hearts over their heads.
+|tip If you run out of Love Tokens, talk to the nearest Innkeeper to purchase more.
+|tip Nearly all Ironforge guards are male, so Perfume works best for this.
+Tell them _"Here, I'd like to give you this token of my love."_
+use the Pledge of Adoration: Ironforge##22154
+use the Pledge of Friendship: Ironforge##22160
+collect 5 Pledge of Loyalty: Ironforge##22119 |goto Ironforge 30.63,66.72 |or
+'|condition not hasbuff("spell:26681") and not hasbuff("spell:26682") and itemcount (22119) < 5 |next "Apply_Perfume_or_Cologne_Ironforge" |or
 step
-click Flame of Stonetalon
-Touch the Flame of Stonetalon |q 9388/4 |goto Stonetalon Mountains 59.54,72.41
+Talk to Ironforge guard NPCs
+|tip Talk to guards around Ironforge who have hearts over their heads.
+|tip If you run out of Love Tokens, talk to the nearest Innkeeper to purchase more.
+|tip Nearly all Ironforge guards are male, so Perfume works best for this.
+Tell them _"Here, I'd like to give you this token of my love."_
+use the Pledge of Adoration: Ironforge##22154
+use the Pledge of Friendship: Ironforge##22160
+collect 5 Ironforge Guard's Card##22141 |goto Ironforge 30.63,66.72 |or
+'|condition not hasbuff("spell:26681") and not hasbuff("spell:26682") and itemcount (22141) < 5 |next "Apply_Perfume_or_Cologne_Ironforge" |or
 step
-click Flame of Ashenvale
-Touch the Flame of Ashenvale |q 9388/1 |goto Ashenvale 64.75,71.61
+Talk to non-guard NPCs
+|tip Talk to NPCs who aren't guards around Ironforge who have hearts over their heads.
+|tip If you run out of Love Tokens, talk to the nearest Innkeeper to purchase more.
+Tell them _"Here, I'd like to give you this token of my love."_
+use the Gift of Adoration: Ironforge##21980
+use the Gift of Friendship: Ironforge##22168
+collect 5 Dwarven Homebrew##22173 |goto Ironforge 30.63,66.72 |or
+'|condition not hasbuff("spell:26681") and not hasbuff("spell:26682") and itemcount (22173) < 5 |next "Apply_Perfume_or_Cologne_Ironforge" |or
 step
-click Flame of Orgrimmar
-accept Stealing Orgrimmar's Flame##9324 |goto Orgrimmar 42.32,34.33
-|tip
-Click Here to Skip this Step |confirm
-|tip This step requires you to enter the opposing faction's capital city
-|tip If skipped, you will not be able to complete this quest or the "A Thief's Reward" quest.
-|only if level >= 50
+use the Pledge of Loyalty: Ironforge##22119
+collect 1 Ironforge Pledge Collection##22286
 step
-click Flame of Azshara
-Touch the Flame of Azshara |q 9322/1 |goto Azshara 41.44,43.07
+use the Ironforge Guard's Card##22141
+collect 1 Parcel of Cards##22287
 step
-click Flame of Winterspring
-Touch the Flame of Winterspring |q 9322/4 |goto Winterspring 30.72,43.04
+use the Dwarven Homebrew##22173
+collect 1 Case of Homebrew##22288
 step
-click Flame of Darkshore
-Touch the Flame of Darkshore |q 9388/3 |goto Darkshore 41.54,90.61
+use the Ironforge Pledge Collection##22286
+collect 1 Ironforge Gift Collection##22132
 step
-click Flame of Darnassus
-Touch the Flame of Darnassus |q 9367/3 |goto Teldrassil 56.63,92.32
+label "Apply_Perfume_or_Cologne_Darnassus"
+use the Cologne Bottle##21833
+use the Perfume Bottle##21829
+Apply Perfume or Cologne |condition hasbuff("spell:26681") or hasbuff("spell:26682")
+|tip Perfume allows you to give Love Tokens to male NPCs.
+|tip Cologne allows you to give Love Tokens to female NPCs.
 step
-talk Festival Loremaster##16817
-turnin The Festival of Fire##9367 |goto 56.58,92.29
-turnin Stealing Thunder Bluff's Flame##9325 |goto 56.58,92.29 |only if readyq(9325) or completedq(9325)
-turnin Stealing Orgrimmar's Flame##9324 |goto 56.58,92.29 |only if readyq(9324) or completedq(9324)
-turnin Stealing the Undercity's Flame##9326 |goto 56.58,92.29 |only if readyq(9326) or completedq(9326)
+Talk to Darnassus guard NPCs
+|tip Talk to guards around Darnassus who have hearts over their heads.
+|tip If you run out of Love Tokens, talk to the nearest Innkeeper to purchase more.
+|tip Nearly all Darnassus guards are female, so Cologne works best for this.
+Tell them _"Here, I'd like to give you this token of my love."_
+use the Pledge of Adoration: Darnassus##22155
+use the Pledge of Friendship: Darnassus##22159
+collect 5 Pledge of Loyalty: Darnassus##22120 |goto Darnassus 43.11,41.20 |or
+'|condition not hasbuff("spell:26681") and not hasbuff("spell:26682") and itemcount (22120) < 5 |next "Apply_Perfume_or_Cologne_Darnassus" |or
 step
-talk Festival Talespinner##16818
-accept A Thief's Reward##9365 |goto 56.58,92.29
-|only if completedallq(9325,9324,9326)
+Talk to Darnassus guard NPCs
+|tip Talk to guards around Darnassus who have hearts over their heads.
+|tip If you run out of Love Tokens, talk to the nearest Innkeeper to purchase more.
+|tip Nearly all Darnassus guards are female, so Cologne works best for this.
+Tell them _"Here, I'd like to give you this token of my love."_
+use the Pledge of Adoration: Darnassus##22155
+use the Pledge of Friendship: Darnassus##22159
+collect 5 Sentinel's Card##22140 |goto Darnassus 43.11,41.20 |or
+'|condition not hasbuff("spell:26681") and not hasbuff("spell:26682") and itemcount (22140) < 5 |next "Apply_Perfume_or_Cologne_Darnassus" |or
 step
-talk Festival Flamekeeper##16788
-turnin Flickering Flames in the Eastern Kingdoms##9389 |goto 56.55,91.98
-turnin Flickering Flames in Kalimdor##9388 |goto 56.55,91.98
-turnin Wild Fires in the Eastern Kingdoms##9323 |goto 56.55,91.98
-turnin Wild Fires in Kalimdor##9322 |goto 56.55,91.98
-turnin A Light in Dark Places##9319 |goto 56.55,91.98 |only if readyq(9319) or completedq(9319)
+Talk to non-guard NPCs
+|tip Talk to NPCs who aren't guards around Darnassus who have hearts over their heads.
+|tip If you run out of Love Tokens, talk to the nearest Innkeeper to purchase more.
+Tell them _"Here, I'd like to give you this token of my love."_
+use the Gift of Adoration: Darnassus##21980
+use the Gift of Friendship: Darnassus##22168
+collect 5 Handmade Woodcraft##21960 |goto Darnassus 43.11,41.20 |or
+'|condition not hasbuff("spell:26681") and not hasbuff("spell:26682") and itemcount (21960) < 5 |next "Apply_Perfume_or_Cologne_Darnassus" |or
 step
-_Congratulations!_
-You Completed the "Midsummer Fire Festival" Event.
+use the Pledge of Loyalty: Darnassus##22120
+collect 1 Darnassus Pledge Collection##22290
+step
+use the Sentinel's Card##22140
+collect 1 Stack of Cards##22289
+step
+use the Handmade Woodcraft##21960
+collect 1 Box of Woodcrafts##22291
+step
+use the Darnassus Pledge Collection##22290
+collect 1 Darnassus Gift Collection##22133
+step
+use the Stormwind Gift Collection##22131
+collect 1 Alliance Gift Collection##22262
+step
+Choose the faction leader you would like to vote for:
+|tip Turning in this quest in a capital city votes for that leader.
+Bolvar Fordragon |confirm |next "Bolvar_Fordragon"
+Magni Bronzebeard |confirm |next "Vote_Magni_Bronzebeard"
+Tyrande Whisperwind |confirm |next "Tyrande_Whisperwind"
+step
+label "Bolvar_Fordragon"
+talk Kwee Q. Peddlefeet##16075
+accept Gift Giving##8993 |goto Stormwind City 78.67,17.45 |next "Final_Step"
+step
+label "Vote_Magni_Bronzebeard"
+talk Kwee Q. Peddlefeet##16075
+accept Gift Giving##8993 |goto Ironforge 40.30,56.59 |next "Final_Step"
+step
+label "Tyrande_Whisperwind"
+Enter the building |goto Darnassus 39.03,77.23 < 15 |walk
+Run up the ramp |goto 40.49,91.59 < 15 |walk
+talk Kwee Q. Peddlefeet##16075
+|tip Upstairs inside the building.
+accept Gift Giving##8993 |goto 38.11,80.50 |next "Final_Step"
+step
+label "Final_Step"
+You completed the Gift Giving quest
+Click Here to Complete it Again |confirm |next "Begin_Guide"
 ]])

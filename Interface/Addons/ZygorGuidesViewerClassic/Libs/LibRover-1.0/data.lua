@@ -80,36 +80,6 @@ data.MapIDsByName = {
 ["Eastern Kingdoms B"]={[0]=1463},
 ["Kalimdor B"]={[0]=1464},
 
---[[ mothballed fake dungeon maps
--- Faked dungeons and raids
-["Blackfathom Deeps"] =		{[0]=9001},
-["Blackrock Depths"] =		{[0]=9002},
-["Blackrock Spire"] =		{[0]=9003},
-["Blackwing Lair"] =		{[0]=9004},
-["Dire Maul"] =			{[0]=9005},
-["Gnomeregan"] =		{[0]=9006},
-["Maraudon"] =			{[0]=9007},
-["Molten Core"] =		{[0]=9008},
-["Naxxramas"] =			{[0]=9009},
-["Onyxia"] =			{[0]=9010},
-["Ragefire Chasm"] =		{[0]=9010},
-["Razorfen Downs"] =		{[0]=9011},
-["Razorfen Kraul"] =		{[0]=9012},
-["Ruins of Ahn'Qiraj"] =	{[0]=9013},
-["Scarlet Halls"] =		{[0]=9014},
-["Scarlet Monastery"] =		{[0]=9015},
-["Scholomance"] =		{[0]=9016},
-["Shadowfang Keep"] =		{[0]=9017},
-["Stratholme"] =		{[0]=9018},
-["Temple of Ahn'Qiraj"] =	{[0]=9019},
-["The Deadmines"] =		{[0]=9020},
-["The Stockade"] =		{[0]=9021},
-["The Temple of Atal'Hakkar"] =	{[0]=9022},
-["Uldaman"] =			{[0]=9023},
-["Wailing Caverns"] =		{[0]=9024},
-["Zul'Farrak"] =		{[0]=9025},
-["Zul'Gurub"] =			{[0]=9026},
---]]
 }
 
 data.MapNamesByID = {}

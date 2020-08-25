@@ -1348,8 +1348,8 @@ Pointer.frame_worldmap_functions = {}
 Pointer.frame_taximap_functions = {}
 
 function Pointer.frame_minimap_functions.OnEnter(self,arg,tip)
-	if not self.waypoint or self.waypoint.passive then return end
-	if self.icon:IsVisible() or (self.arrow and self.arrow:IsVisible()) then
+	if self.waypoint.passive then return end
+	if self.waypoint and (self.icon:IsVisible() or (self.arrow and self.arrow:IsVisible())) then
 		tip = tip or GameTooltip
 		ShowTooltip(self,tip)
 		if not self.waypoint.tooltipdata then
@@ -1384,7 +1384,7 @@ function Pointer.frame_minimap_functions.OnEnter(self,arg,tip)
 end
 
 function Pointer.frame_minimap_functions.OnLeave(self)
-	if not self.waypoint or self.waypoint.passive then return end
+	if self.waypoint.passive then return end
 	if WorldMapTooltip then WorldMapTooltip:Hide() else GameTooltip:Hide() end
 	self.hastooltip=false
 	if ZGV.DEV then self.icon:SetVertexColor(self.waypoint.icon.tex.r or 1,self.waypoint.icon.tex.g or 1,self.waypoint.icon.tex.b or 1) end
@@ -1605,8 +1605,8 @@ function Pointer.frame_minimap_functions.OnEvent(self,event,...)
 end
 
 function Pointer.frame_worldmap_functions.OnEnter(self,arg)
-	if not self.waypoint or self.waypoint.passive then return end
-	if self.icon:IsVisible() or self.arrow:IsVisible() then
+	if self.waypoint and self.waypoint.passive then return end
+	if self.waypoint and (self.icon:IsVisible() or self.arrow:IsVisible()) then
 		--WorldMapPOIFrame.old_allowBlobTooltip = WorldMapPOIFrame.allowBlobTooltip  -- TODO: reimplement? whatever this was?
 		--WorldMapPOIFrame.allowBlobTooltip = false
 
@@ -1616,7 +1616,8 @@ function Pointer.frame_worldmap_functions.OnEnter(self,arg)
 end
 
 function Pointer.frame_worldmap_functions.OnLeave(self)
-	if not self.waypoint or self.waypoint.passive then return end
+	if not self.waypoint then return end
+	if self.waypoint and self.waypoint.passive then return end
 	if WorldMapTooltip then WorldMapTooltip:Hide() else GameTooltip:Hide() end
 
 	--WorldMapPOIFrame.allowBlobTooltip = WorldMapPOIFrame.old_allowBlobTooltip  -- TODO: reimplement? whatever this was?
@@ -1657,7 +1658,7 @@ function Pointer.frame_taximap_functions.OnEvent(self,event,...)
 		-- try the new FlightMapFrame, too!
 			Pointer.taxitexture = 3007
 		end
-		--if way then way:UpdateMiniMapIcon() end -- removed 2015-01-13 01:07:29
+		--if way then way:UpdateMiniMapIcon() end --
 	end
 end
 
@@ -2106,6 +2107,9 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 	--if not GetPlayerFacing() then self:Hide() return end
 
 	-- our preview got closed by something unexpected, and we did not clean up.
+	if ZGV.PointerMap.PreviewVisible and not WorldMapFrame:IsVisible() then
+		ZGV.PointerMap:RestoreMapSettings()
+	end
 	
 	arrow_elapse_sum=arrow_elapse_sum+elapsed
 	if arrow_elapse_sum<ARROW_FPS then return end
@@ -2139,15 +2143,7 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 	-- or PetBattleFrame:IsVisible()
 	or (not ZGV.Frame:IsVisible() and waypoint.type~="manual" and ZGV.dig_in(LibRover,'endnode','waypoint','type')~="manual")  --and ZGV.db.profile.hidearrowwithguide 
 	then
-		if ZGV.PointerMap:ShouldShowPreview() then -- enable preview on guides with no steps while inside valid instance
-			if not ZGV.PointerMap.Frame:IsVisible() then
-				ArrowFrame:ShowInstance()
-				ArrowFrame:ShowText(L["pointer_preview_show"])
-			else
-				ArrowFrame:HideInstance()
-				ArrowFrame:ShowText(L["pointer_preview_hide"])
-			end
-		elseif not InCombatLockdown() then
+		if not InCombatLockdown() then
 			ArrowFrame:Hide()
 		end
 		if not WorldMapFrame:IsVisible() and self.waypoints and #self.waypoints > 0 and not ZGV.Frame:IsVisible() then self:ClearSets() end -- Hide waypoints and ants if we are not looking at the world map.
@@ -2406,8 +2402,8 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 
 			ArrowFrame:Hide()
 
-		elseif ZGV.PointerMap:ShouldShowPreview() then
-			if not ZGV.PointerMap.Frame:IsVisible() then
+		elseif ZGV.db.profile.preview and (ZGV.db.char.fakeinstance or not GetPlayerFacing()) then
+			if not ZGV.PointerMap.PreviewVisible then
 				ArrowFrame:ShowInstance()
 				if ZGV.db.profile.preview_control=="manual" and not ZGV.db.char.previewhidden then
 					ZGV.PointerMap:ShowPreview()
@@ -2573,11 +2569,11 @@ function Pointer.ArrowFrame_OnUpdate_Common(self,elapsed)
 		errortxt = (errortxt and errortxt.."\n" or "").."|cffff4400"..waypoint.errortext.."|r"
 	end
 
-	if ZGV.PointerMap:ShouldShowPreview() then
-		if ZGV.PointerMap.Frame:IsVisible() then
-			errortxt=L["pointer_preview_hide"]
+	if ZGV.db.profile.preview and (ZGV.db.char.fakeinstance or not GetPlayerFacing()) then
+		if ZGV.PointerMap.PreviewVisible then
+			errortxt="Click to hide Map Preview"
 		else
-			errortxt=L["pointer_preview_show"]
+			errortxt="Click to show Map Preview"
 		end
 	end
 
@@ -2647,8 +2643,8 @@ function Pointer.ArrowFrame_OnClick(frame,button)
 
 	if button=="LeftButton" then
 		if not frame.dragging then -- and ZGV.db.profile.pathfinding and self.waypoint.pathfollow=="pathfind" then
-			if ZGV.PointerMap:ShouldShowPreview() then
-				if not ZGV.PointerMap.Frame:IsVisible() then
+			if ZGV.db.profile.preview and (ZGV.db.char.fakeinstance or not GetPlayerFacing()) then
+				if not ZGV.PointerMap.PreviewVisible then
 					ZGV.PointerMap:ShowPreview()
 				else
 					ZGV.PointerMap:HidePreview("manual")

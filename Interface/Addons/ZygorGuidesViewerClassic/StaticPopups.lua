@@ -47,7 +47,6 @@ local popupTypes = {
 	["loot"] = 6,
 	["default"] = 7,
 	["legion"] = 8,
-	["skills"] = 0,
 }
 
 function PopupHandler:NewPopup(name,ptype,skin)

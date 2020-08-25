@@ -36,9 +36,9 @@ function Guide:New(title,header,data)
 		devonly=ZGV.DevGuides
 	}
 
-	if not path:find("SHARED") and ZGV:NeedsAnimatedPopup(guide) then
-		ZGV.AnimatePopup = true
-		return nil
+    if not path:find("SHARED") and ZGV:NeedsAnimatedPopup(guide) then
+    ZGV.AnimatePopup = true
+	--return nil
 	end
 
 	setmetatable(guide,GuideProto_mt)
@@ -733,9 +733,9 @@ end
 
 function GuideFuncs:SuggestDungeonGuide(dungeonguide)
 	if not ( ZGV.db.profile.n_popup_guides and ZGV.db.profile.n_popup_dungeon and ZGV.Frame:IsVisible()) then return end
-	local lfgid = dungeonguide.lfgid
+	local mapid = dungeonguide.mapid
 
-	ZGV:Debug("Suggesting guide %s for dungeon %s",dungeonguide.title,ZGV.Dungeons[lfgid] and ZGV.Dungeons[lfgid].name or "unknown")
+	ZGV:Debug("Suggesting guide %s for dungeon %s",dungeonguide.title,ZGV.GetMapNameByID(mapid))
 
 	if not self.DungPopup then
 		self.DungPopup = ZGV.PopupHandler:NewPopup("ZygorDungeonPopup","dungeon")
@@ -744,12 +744,12 @@ function GuideFuncs:SuggestDungeonGuide(dungeonguide)
 			if ZGV.CurrentGuide.type~="DUNGEON" then -- to avoid guides overwriters when player chains dungeons without leaving them (lfg/lfr spam)
 				ZGV.db.char.PreDungeonGuide = ZGV.CurrentGuide.title
 			end
-			ZGV.Tabs:LoadGuideToTab(self.guide,1,"lfgid")
+			ZGV.Tabs:LoadGuideToTab(self.guide,1,"mapid")
 		end
 
 		self.DungPopup.OnDecline = function(self)
 			if IsShiftKeyDown() then
-				ZGV.db.profile.suggestiondungeonnum[self.lfgid].allow=false
+				ZGV.db.profile.suggestiondungeonnum[self.mapid].allow=false
 			end
 		end
 
@@ -765,16 +765,16 @@ function GuideFuncs:SuggestDungeonGuide(dungeonguide)
 		end
 	end
 
-	if not ZGV.db.profile.suggestiondungeonnum[lfgid] then ZGV.db.profile.suggestiondungeonnum[lfgid]={} end
+	if not ZGV.db.profile.suggestiondungeonnum[mapid] then ZGV.db.profile.suggestiondungeonnum[mapid]={} end
 
-	local dung= ZGV.db.profile.suggestiondungeonnum[lfgid]
+	local dung= ZGV.db.profile.suggestiondungeonnum[mapid]
 	dung.lastdate=date():gsub("%s.*","") --Returns a string with the last date saved.
 	dung.lasttime=GetTime()
 	dung.allow=true --assume we will allow it, adjust it if they tell us to.
 
 	self.DungPopup:SetText(L['static_loadguide']:format(dungeonguide.title_short))
 	self.DungPopup.guide=dungeonguide
-	self.DungPopup.lfgid=lfgid
+	self.DungPopup.mapid=mapid
 
 	self.DungPopup:Show()
 end
@@ -831,26 +831,23 @@ function GuideFuncs:SuggestPreviousGuide(prevguide)
 end
 
 function GuideFuncs:IsDungeon()
-	if not ZGV.guidesloaded then ZGV:ScheduleTimer(function() GuideFuncs:IsDungeon() end,10.0) return false,"wait" end -- Wait for guides to load before we scan them.
+	if not ZGV.guidesloaded then ZGV:ScheduleTimer(function() GuideFuncs:IsDungeon() end,10.0) return end -- Wait for guides to load before we scan them.
 
 	local inInstance, instanceType = IsInInstance()
 
 	if not inInstance or (instanceType~="party" and instanceType~="raid") then
 		GuideFuncs:SuggestPreviousGuide()
-		return false,"previous"
+		return 
 	end		
 
-	local _, _, _, _, _, _, _, instanceID, _, LfgDungeonID = GetInstanceInfo()
-	local lfgid = ZGV.Dungeons.InstanceToLFG[instanceID]
-	if not lfgid then return false,"no lfgid" end
-
-	local dung = ZGV.db.profile.suggestiondungeonnum[lfgid]
+	local map = ZGV.CurrentMapID or ZGV.GetCurrentMapID()
+	local dung = ZGV.db.profile.suggestiondungeonnum[map]
 	local day=date():gsub("%s.*","") --Returns a string with date in 00/00/00 format.
 	local time=GetTime()
 
 	local found_guide
 	for i,guide in ipairs(ZGV.registeredguides) do
-		if guide.type == "DUNGEONS" and guide.lfgid and guide.lfgid == lfgid and
+		if guide.type == "DUNGEONS" and guide.mapid and guide.mapid == map and
 		(not guide.dungeondifficulty or guide.dungeondifficulty==GetDungeonDifficultyID()) then
 			local tab = ZGV.Tabs:DoesTabExist(guide.title)
 			if tab then  --If they already have the guide loaded.
@@ -858,13 +855,14 @@ function GuideFuncs:IsDungeon()
 					ZGV.db.char.PreDungeonGuide = ZGV.CurrentGuide.title
 				end				
 				tab:ActivateGuide()
-				return true,"activate"
+				return
 			end
 
 			found_guide = guide
 			break
 		end
 	end
+
 
 	if found_guide and (not dung or --have not been to this dungeon yet.
 		dung.allow and (dung.lastdate~=day or (time-dung.lasttime)>3600)) then--Is it the same day and been more than an hour?

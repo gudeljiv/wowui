@@ -346,18 +346,6 @@ function ZGVP:HasProfessionSlot()
 	return not (p1 and p2)
 end
 
-local function UpdateSpellInfo(_,_,arg3)
-	do return end
-	for level,skills in pairs(ZGVP.SkillTraining) do
-		if skills[arg3] then
-			local name, _, icon = GetSpellInfo(skill)
-			skills[arg3].name = skills[arg3].name or name
-			skills[arg3].rank = skills[arg3].rank or GetSpellSubtext(arg3)
-			skills[arg3].icon = skills[arg3].icon or icon
-		end
-	end
-end
-
 tinsert(ZGV.startups,{"Professions setup",function(self)
 	ZGV.db.char.SkillsKnown = ZGV.db.char.SkillsKnown or {}
 	ZGV.db.char.RecipesKnownNew = ZGV.db.char.RecipesKnownNew or {}
@@ -379,9 +367,6 @@ tinsert(ZGV.startups,{"Professions setup",function(self)
 
 	self:AddEventHandler("TRADE_SKILL_LIST_UPDATE","CacheRecipes")
 
-	self:AddEventHandler("SPELL_TEXT_UPDATE",UpdateSpellInfo) -- replaces CHAT_MSG_SKILL for our needs
-	self:AddEventHandler("SPELL_DATA_LOAD_RESULT",UpdateSpellInfo) -- replaces CHAT_MSG_SKILL for our needs
-
 	--self:AddEventHandler("CHAT_MSG_COMBAT_FACTION_CHANGE","CHAT_MSG_COMBAT_FACTION_CHANGE_Faction")
 
 	LoadAddOn("Blizzard_TradeSkillUI")
@@ -389,4 +374,6 @@ tinsert(ZGV.startups,{"Professions setup",function(self)
 	ZGV:CacheSkills()
 
 	hooksecurefunc("SkillFrame_UpdateSkills",function() ZGV:CacheSkills() end)
+
+
 end})

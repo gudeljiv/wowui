@@ -292,11 +292,6 @@ function DropDown:SetCurrentSelectedByValue(value)
 	end
 end
 
-function DropDown:SetCurrentSelectedByIndex(value)
-	local pullout = self.pullout
-	self:SetCurrentSelectedItem(pullout.items[value])
-end
-
 function DropDown:Show()
 	self.frame:Show()
 end
@@ -323,10 +318,6 @@ end
 function DropDown:OnHeightSet(height)
 	local button = self.button
 	button:SetSize(height,height)
-end
-
-function DropDown:Clear()
-	self.pullout:Clear()
 end
 
 function private.DropDown_Click(self,button)

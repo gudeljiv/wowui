@@ -30,3 +30,5 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 /cast feed pet
 /use item:0
 END
+VER 3 0000000000000008 "ZygorAction1" "134400"
+END

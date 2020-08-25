@@ -131,8 +131,8 @@ step
 talk Deputy Willem##823
 |tip Outside, in front of the building.
 turnin Brotherhood of Thieves##18 |goto 48.17,42.94
-accept Milly Osworth##3903 |goto 48.17,42.94
 accept Bounty on Garrick Padfoot##6 |goto 48.17,42.94
+accept Milly Osworth##3903 |goto 48.17,42.94
 step
 Enter the building |goto 48.28,42.02 < 7 |walk
 talk Marshal McBride##197
@@ -1365,8 +1365,8 @@ Follow the path |goto 38.42,50.90 < 30 |only if walking
 talk Sentinel Arynia Cloudsbreak##3519
 accept The Enchanted Glade##937 |goto 38.31,34.36
 step
-use the Amethyst Phial##18152
-collect Filled Amethyst Phial##18151 |q 7383/1 |goto 38.43,34.04
+use the Amethyst Phial##5623
+collect Vial of Blessed Water##5646 |q 7383/1 |goto 38.43,34.04
 step
 Kill Bloodfeather enemies around this area
 collect 6 Bloodfeather Belt##5204 |q 937/1 |goto 36.25,38.54
@@ -1619,15 +1619,6 @@ Follow the path down |goto Teldrassil 57.07,63.22 < 30 |only if walking
 talk Denalan##2080
 turnin Return to Denalan##2498 |goto Teldrassil 60.90,68.49
 accept Oakenscowl##2499 |goto Teldrassil 60.90,68.49
-step
-Enter the cave |goto 53.31,74.82 < 7 |walk
-kill Oakenscowl##2166
-|tip Inside the cave.
-|tip He is Elite but you should be able to kill him at this level.
-collect Gargantuan Tumor##8136 |q 2499/1 |goto 53.76,75.12
-step
-talk Denalan##2080
-turnin Oakenscowl##2499 |goto 60.90,68.49
 step
 Follow the path |goto 56.95,63.20 < 30 |only if walking
 Follow the road |goto 54.27,58.37 < 30 |only if walking

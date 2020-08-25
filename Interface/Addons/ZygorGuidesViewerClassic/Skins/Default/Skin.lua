@@ -271,6 +271,6 @@ end
 function ZGV:UpdateScales()
 	local scale = ZGV.db.profile.framescale
 	ZGV.Frame:SetScale(scale)
-	if ZGV.Goldguide and ZGV.Goldguide.MainFrame then ZGV.Goldguide.MainFrame:SetScale(scale) end
+	if ZGV.Goldguide then ZGV.Goldguide.MainFrame:SetScale(scale) end
 	ZGV.ActionBar:SetScale()
 end

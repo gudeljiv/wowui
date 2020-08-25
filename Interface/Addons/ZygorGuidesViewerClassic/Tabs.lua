@@ -112,11 +112,11 @@ function Tabs:Initialize()
 end
 
 function Tabs:LoadGuideToTab(guide,step,special,shared)
-	local tab = Tabs:TryToActivateGuide(guide)
-	if tab then 
-		tab:AssignGuide(guide,step,shared)
+	if Tabs:TryToActivateGuide(guide) then 
+		Tabs:AssignGuide(guidetitle,step,shared)
 		return
 	else
+		local tab
 		if special then
 			tab = Tabs:GetSpecialTabFromPool(special)
 		else
@@ -279,8 +279,6 @@ end
 
 -- update guide for current tab, select tab if none was activated before
 function Tabs:UpdateCurrentTab()
-	if not ZGV.CurrentGuide then return end
-
 	local tab
 
 	-- tab already activated during this session

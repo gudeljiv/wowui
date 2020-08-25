@@ -33,15 +33,17 @@ end
 local classspecs=
 {
 	["WARRIOR"]		= { "Arms","Fury","Protection" },
+	["DEATHKNIGHT"]		= { "Blood","Frost","Unholy" },
 	["MONK"]		= { "Brewmaster","Mistweaver","Windwalker" },
 	["PALADIN"]		= { "Holy","Protection","Retribution" },
-	["HUNTER"]		= { "Beast Mastery","Marksmanship","Survival" },
-	["ROGUE"]		= { "Assassination","Combat","Subtlety" },
+	["HUNTER"]		= { "BeastMastery","Marksmanship","Survival" },
+	["ROGUE"]		= { "Assassination","Outlaw","Subtlety" },
 	["PRIEST"]		= { "Discipline","Holy","Shadow" },
 	["MAGE"]		= { "Arcane","Fire","Frost" },
 	["WARLOCK"]		= { "Affliction","Demonology","Destruction" },
 	["SHAMAN"]		= { "Elemental","Enhancement","Restoration" },
-	["DRUID"]		= { "Balance","Feral","Restoration" },
+	["DRUID"]		= { "Balance","Feral","Guardian","Restoration" },
+	["DEMONHUNTER"]		= { "Havoc","Vengeance" },
 }
 Parser.classspecs = classspecs
 
@@ -94,32 +96,28 @@ local function ParseMapXYDist(text,insanefloor,returnmany)
 
 	-- First, try x,y,dist in various forms.
 
-	local r_number = "(%-?[0-9%.]+)"
-	local r_comma = "%s*,%s*"
-	local r_maybecomma = "%s*,?%s*"
-
 	-- OBSOLETE: x,y,dist
-	                           --       mt?   ,?            -x______       ,   -y______      ,    -dist___
-	maptext,x,y,dist = text:match("^%s*(.-)"..r_maybecomma..r_number..r_comma..r_number..r_comma..r_number.."%s*$")
+	                           --       mt    ,?    -x_________ , -y_________ , -dist______
+	maptext,x,y,dist = text:match("^%s*(.-)%s*,*%s*(%-?[0-9%.]+),(%-?[0-9%.]+),(%-?[0-9%.]+)%s*$")
 
 	-- PRIMARY: x,y <> dist
-	                                                    --     mt?   ,?            -x______  ,        -y______        <>        dist____
-	if not x then maptext,x,y,disttype,dist = text:match("^%s*(.-)"..r_maybecomma..r_number..r_comma..r_number.."%s*([<>])%s*"..r_number.."%s*$") end
+	                                                  --       mt    ,?    -x_________    ,    -y_________      <>      dist____
+	if not x then maptext,x,y,disttype,dist = text:match("^%s*(.-)%s*,*%s*(%-?[0-9%.]+)%s*,%s*(%-?[0-9%.]+)%s*([<>])%s*([0-9%.]+)%s*$") end
 
 	-- PRIMARY: x,y
-	                                    --       mt?   ,?            -x______  ,        -y______
-	if not x then maptext,x,y = text:match("^%s*(.-)"..r_maybecomma..r_number..r_comma..r_number.."%s*$") end
+	                                    --       mt    ,?    -x_________    ,    -y_________
+	if not x then maptext,x,y = text:match("^%s*(.-)%s*,*%s*(%-?[0-9%.]+)%s*,%s*(%-?[0-9%.]+)%s*$") end
 
 	if maptext then text = maptext end
 
 	-- If there were any x,y,dist in the text, they're now gone. What's left is just a map, MAYBE.
-	if #text>0 then
+	if #text>1 then
 		-- PRIMARY: whatever##id
 		                --     id_
 		mapid = text:match("##(%d+)") -- could have mapname, too, but we don't care
 
-		-- SECONDARY: map/floor
-		                                      --       map_   /   floor
+		-- OBSOLETE: map/floor
+		                                      --      map     /  floor
 		if not mapid then mapname,flr = text:match("%s*(.-)%s*/%s*(%d+)") end
 
 		-- LAST RESORT: map
@@ -307,7 +305,6 @@ local ConditionEnv = {
 			local cl=class:lower()  
 			self[cl] = (pcl==cl)  
 		end
-		self.pcl = pcl
 		-- Store race constants
 		 local pra = select(2,UnitRace("player")):lower()
 		 for i,ra in ipairs{"nightelf","dwarf","human","gnome","draenei","worgen", "orc","troll","scourge","tauren","bloodelf","goblin", "pandaren", "lightforgeddraenei","voidelf","darkirondwarf", "highmountaintauren","nightborne","magharorc"} do  self[ra] = (pra==ra)  end
@@ -459,8 +456,8 @@ local ConditionEnv = {
 		return true
 	end,
 	haveq = function(id) return Parser.ConditionEnv.havequest(id) end,
-	haveanyq = function(...) return Parser.ConditionEnv.haveanyquest(...) end,
-	haveallq = function(...) return Parser.ConditionEnv.haveallquest(...) end,
+	haveanyquest = function(...) return Parser.ConditionEnv.haveanyquest(...) end,
+	haveallquest = function(...) return Parser.ConditionEnv.haveallquest(...) end,
 
 	
 	achieved = function(achieveid,subid)
@@ -615,30 +612,6 @@ local ConditionEnv = {
 	end,
 	isdead = function()
 		return UnitIsDeadOrGhost("player")
-	end,
-	talentspent = function(tree)
-		local class = ConditionEnv.pcl
-		if not classspecs[class] then return 0 end
-		local t
-		for i,v in ipairs(classspecs[class]) do
-			if v==tree then
-				t=i
-				break
-			end
-		end
-		local name, iconTexture, pointsSpent = GetTalentTabInfo(t)
-		return pointsSpent or 0
-	end,
-	talentknown = function(id)
-		return IsSpellKnown(id) or IsPlayerSpell(id)
-	end,
-	talentanyknown = function(...)
-		local count = select("#", ...)
-		for i = 1, count do
-			local id = select(i, ...)
-			if Parser.ConditionEnv.talentknown(id) then return true end
-		end
-		return false
 	end,
 }
 setmetatable(ConditionEnv,{__index=function(t,k) return k and rawget(t,k:lower()) end})
@@ -1863,7 +1836,7 @@ end
 tinsert(ZGV.startups,{"Parser unit tests",function(self)
 	do -- unit-check ParseMapXYDist
 
-		----[[
+		--[[
 		local function is(v1,v2) -- evil "almost equal"
 			return v1 and v2 and math.abs(v1-v2)<0.001
 		end
@@ -1873,7 +1846,6 @@ tinsert(ZGV.startups,{"Parser unit tests",function(self)
 			assert(f(map,flr,x,y,dist),"ParseMapXYDist fail: \""..s.."\" resolved to m="..tostring(map)..", f="..tostring(flr)..", x="..tostring(x)..", y="..tostring(y)..", d="..tostring(dist))
 		end
 
-		--[[
 		mapcheck("Stormwind City",function(map,flr,x,y,dist) return map==84 end)
 		--mapcheck("Dalaran/2",function(map,flr,x,y,dist) return map==125 and flr==1 end)
 		mapcheck("12.3,12.8",function(map,flr,x,y,dist) return is(x,0.123) and is(y,0.128) end)
@@ -1895,11 +1867,7 @@ tinsert(ZGV.startups,{"Parser unit tests",function(self)
 		mapcheck("Arrakis##895 12.3,12.8",function(map,flr,x,y,dist) return map==895 and is(x,0.123) and is(y,0.128) end)
 		mapcheck("504 12.3,12.8 <5",function(map,flr,x,y,dist) return map==504 and is(x,0.123) and is(y,0.128) and dist==5 end)
 		mapcheck("Hogwarts##895 12.3,12.8 > 8",function(map,flr,x,y,dist) return map==895 and is(x,0.123) and is(y,0.128) and dist==-8 end)
-		mapcheck("Durotar/0 12.3,12.8",function(map,flr,x,y,dist) return map==1 and is(x,0.123) and is(y,0.128) end)
 		--]]
-		mapcheck("1 12.3,45.6",function(map,flr,x,y,dist) return map==1 and is(x,0.123) and is(y,0.456) end)
-		mapcheck("1",function(map,flr,x,y,dist) return map==1 and not x and not y end)
-		mapcheck("37",function(map,flr,x,y,dist) return map==37 and not x and not y end)
 
 		local goal={}
 		ZGV.GOALTYPES['accept'].parse(goal,"Quest##123")  assert(goal.quest=="Quest","accept parse fail 1")  assert(goal.questid==123,"accept parse fail 2")  table.wipe(goal)

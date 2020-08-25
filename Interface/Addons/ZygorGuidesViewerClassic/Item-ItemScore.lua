@@ -118,7 +118,7 @@ function ItemScore:SetStatWeights(playerclass,playerlevel)
 	self.playerclass = playerclass or (select(2,UnitClass("player")))
 	self.playerclassName = (select(1,UnitClass("player")))
 	self.playerclassNum = (select(3,UnitClass("player")))
-	self.playerlevel = playerlevel or ((ZGV.db.char.fakelevel or 0)>0 and ZGV.db.char.fakelevel) or UnitLevel("player")
+	self.playerlevel = playerlevel or UnitLevel("player")
 	self.playerfaction = UnitFactionGroup("player")
 
 	if not ZGV.db.profile.gear_active_build then
@@ -207,7 +207,7 @@ function ItemScore:GetItemDetails(itemlink)
 	if not itemlink then return false end
 
 	-- if item is not yet cached, grab its data
-	if not (ItemCache[itemlink] and ItemCache[itemlink].stats) then
+	if not (ItemCache[itemlink] and ItemCache[itemlink].stats and next(ItemCache[itemlink].stats)) then
 		-- that is a new one
 		local stats = {}
 		local itemName,_,itemRarity,_,itemMinLevel,_,_,_,itemEquipLoc,texture,_,itemClassID,itemSubClassID = ZGV:GetItemInfo(itemlink) 
@@ -233,8 +233,6 @@ function ItemScore:GetItemDetails(itemlink)
 			local line=Gratuity:GetLine(num)
 
 			if not line then break end
-
-			if line==RETRIEVING_ITEM_INFO then return false end
 
 			local found_class = line:match( gsub(ITEM_CLASSES_ALLOWED,"%%s","(.*)")) 
 			if found_class then playerclass = found_class end
@@ -445,25 +443,23 @@ end
 --	is valid - bool - is item valid for current player
 --	is final - bool - was validity really checked (and not skipped due to no gii info)
 --	comment - string - verbose description of result
---	future - bool - can this item becode valid later
 function ItemScore:IsValidItem(itemlink, future)
-	if not itemlink then return false, false, "No itemlink", false end
+	if not itemlink then return false, false, "No itemlink" end
 
 	local item = ItemScore:GetItemDetails(itemlink)
-	if not item then return false, false, "No info", false end
+	if not item then return false, false, "No info" end
 
-	if item.validated and not future then return item.valid, true, item.validstatus, item.validfuture end
+	if item.validated then return item.valid, true, item.validstatus end
 
 	if not item.slot then 
 		item.validated = true
 		item.valid = false
 		item.validstatus = "not equipment"
-		item.validfuture = false
-		return false, true, item.validstatus, item.validfuture
+		return false, true, item.validstatus
 	end
 
 	local types = self.ActiveRuleSet.itemtypes
-	if not types then return false, false, "No info", false end
+	if not types then return false, false, "No info" end
 
 	-- is something that can be equipped
 	local subclass
@@ -475,8 +471,7 @@ function ItemScore:IsValidItem(itemlink, future)
 		item.validated = true
 		item.valid = false
 		item.validstatus = "not equipment "..(item.class).." "..(item.subclass)
-		item.validfuture = false
-		return false, true, item.validstatus, item.validfuture
+		return false, true, item.validstatus
 	end
 
 	-- can equip at current level, cloaks are cloth, but valid for all classes
@@ -486,14 +481,12 @@ function ItemScore:IsValidItem(itemlink, future)
 		item.validated = true
 		item.valid = false
 		item.validstatus = ("%s is not valid for %s"):format(subclass,self.playerclassName)
-		item.validfuture = false
-		return false, true, item.validstatus, item.validfuture
+		return false, true, item.validstatus
 	elseif not future and self.playerlevel < useble_since_level then
 		item.validated = true
 		item.valid = false
 		item.validstatus = ("required level %d to use"):format(useble_since_level)
-		item.validfuture = true
-		return false, true, item.validstatus, item.validfuture
+		return false, true, item.validstatus
 	end
 
 	-- do we have skill to use this
@@ -501,8 +494,7 @@ function ItemScore:IsValidItem(itemlink, future)
 		item.validated = true
 		item.valid = false
 		item.validstatus = "no skill "..subclass
-		item.validfuture = false
-		return false, true, item.validstatus, item.validfuture
+		return false, true, item.validstatus
 	end
 
 	-- player class
@@ -519,8 +511,7 @@ function ItemScore:IsValidItem(itemlink, future)
 			item.validated = true
 			item.valid = false
 			item.validstatus = "wrong class"
-			item.validfuture = false
-			return false, true, item.validstatus, item.validfuture
+			return false, true, item.validstatus
 		end
 	end
 
@@ -529,16 +520,14 @@ function ItemScore:IsValidItem(itemlink, future)
 		item.validated = true
 		item.valid = false
 		item.validstatus = ("required level %d to equip"):format(item.minlevel)
-		item.validfuture = true
-		return false, true, item.validstatus, item.validfuture
+		return false, true, item.validstatus
 	end
 
 	-- if we are here, it means that none of conditions forced early exit. wheeee have an upgrade
 	item.validated = true
 	item.valid = true
 	item.validstatus = "ok"
-	item.validfuture = true
-	return true, true, "ok", true
+	return true, true, "ok"
 end
 
 -- returns items equipped in requested slots, used by pointer
@@ -744,7 +733,7 @@ end
 tinsert(ZGV.startups,{"ItemScore",function(self)
 	ZGV.db.char.badupgrade = ZGV.db.char.badupgrade or {}
 	ItemScore:Initialise()
-	ItemScore.GearFinder:Initialise()
+	--ItemScore.GearFinder:Initialise() -- CLASSIC TODO rework with proper tab hooking 
 
 	GameTooltip:HookScript("OnTooltipSetItem", ItemScore_SetTooltipData)
 	GameTooltip:HookScript("OnTooltipCleared", ItemScore_ClearTooltipData)

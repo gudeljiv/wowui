@@ -4397,106 +4397,6 @@ do
 			return self
 		end
 
-		function LibRover:Explain()
-			local types = {
-				[Enum.UIMapType.Continent] = "Continent",
-				[Enum.UIMapType.Dungeon] = "Dungeon",
-				[Enum.UIMapType.Micro] = "Micro",
-				[Enum.UIMapType.Zone] = "Zone",
-				[Enum.UIMapType.Orphan] = "Orphan",
-			}
-
-			  
-			local n1 = LibRover.nodes['start'][1]
-			local n2 = LibRover.nodes['end'][1]
-
-			local meta
-			for fi,fou in ipairs(n1.n) do if fou[1]==n2 then meta=fou[2] break end end
-
-			local n1_info = ZGV.GetMapInfo(n1.m)
-			local n2_info = ZGV.GetMapInfo(n2.m)
-
-
-			local n1_lrname = LibRover.data.MapNamesByID[n1.m][1]
-			local n2_lrname = LibRover.data.MapNamesByID[n2.m][1]
-
-			local n1_floor = LibRover.data.FloorByID[n1.m]
-			local n2_floor = LibRover.data.FloorByID[n2.m]
-
-			local n1parent_info = ZGV.GetMapInfo(n1_info.parentMapID)
-			local n2parent_info = ZGV.GetMapInfo(n2_info.parentMapID)
-
-			local n1continent_info = ZGV.GetMapInfo(n1_info.parentMapID)
-			local n2continent_info = ZGV.GetMapInfo(n2_info.parentMapID)
-
-			Spoo({n1_info=n1_info,n2_info=n2_info,n1_lrname=n1_lrname,n2_lrname=n2_lrname,n1_floor=n1_floor,n2_floor=n2_floor,n1parent_info=n1parent_info,n2parent_info=n2parent_info,n1continent_info=n1continent_info,n2continent_info=n2continent_info})
-
-			local outstring = ""
-
-			outstring = outstring .. "\n" .. ("* %s %s/%d (mapid %d) %.1f,%.1f. Blizzard name of the map is %s.\nMap type is %s on continent %s (%s %d), with parent being %s (%s %d)."):format("You are on", n1_lrname, n1_floor, n1.m, n1.x*100,n1.y*100, n1_info.name, types[n1_info.mapType], n1continent_info.name, types[n1continent_info.mapType] or "???", n1.c, n1parent_info.name, types[n1parent_info.mapType] or "???", n1_info.parentMapID)
-			outstring = outstring .. "\n" .. ("* %s %s/%d (mapid %d) %.1f,%.1f. Blizzard name of the map is %s.\nMap type is %s on continent %s (%s %d), with parent being %s (%s %d)."):format("Target is",  n2_lrname, n2_floor, n2.m, n2.x*100,n2.y*100, n2_info.name, types[n2_info.mapType], n2continent_info.name, types[n2continent_info.mapType] or "???", n2.c, n2parent_info.name, types[n2parent_info.mapType] or "???", n2_info.parentMapID)
-			outstring = outstring .. "\n"
-			outstring = outstring .. "\n" .. ("* Are points linked in LibRover? %s %s %s"):format(meta and "yes" or "no", meta and ("mode "..meta.mode) or "",meta and ("cost "..(meta.cost or "?")) or "")
-
-			local canfly,reasonfly = n1:CanFlyTo(n2)
-			local canwalk,reasonwalk,penalty = n1:CanWalkTo(n2)
-
-			outstring = outstring .. "\n" .. ("* Does LibRover think you can WALK between them: %s (why: %s) %s"):format(tostring(canwalk),reasonwalk,penalty or "")
-			outstring = outstring .. "\n" .. ("* Does LibRover think you can FLY between them: %s (why: %s)"):format(tostring(canfly),reasonfly or "")
-
-			local headeradded = false
-			if not MAPDATA[n1.m] then
-				outstring = outstring .. "\n" .. "Starting point map is missing from MAPDATA. This is bad, and needs devs attention."
-			end
-			if not MAPDATA[n2.m] then
-				outstring = outstring .. "\n" .. "Target point map is missing from MAPDATA. This is bad, and needs devs attention."
-			end
-
-			if n1.m~=n2.m then
-				if n1_lrname==n2_lrname then
-					outstring = outstring .. "\n" .. "> Points are on the same map, but not on the same floor. Check if correct floor is used, there is a connection defined between floors, or if that fails, if maps are green bordered."
-				else
-					outstring = outstring .. "\n" .. "> Points not on the same map. Check if correct map name is used."
-				end
-			end
-
-			if n1.c~=n2.c then
-				if n1_info.mapType==n2_info.mapType and (n1_info.mapType==Enum.UIMapType.Orphan or n1_info.mapType==Enum.UIMapType.Dungeon) then
-					outstring = outstring .. "\n" .. "> Points not on the same continent, but are orphans or dungeons. Maybe switching map type to micro will solve this."
-				else
-					outstring = outstring .. "\n" .. "> Points not on the same continent. Devs will need to chime in."
-				end
-			end
-
-			if n1_info.mapType==Enum.UIMapType.Orphan then
-				outstring = outstring .. "\n" .. "> Start is an orphaned map. It will need to be corrected in mapcoords force_maptype."
-			end
-			if n2_info.mapType==Enum.UIMapType.Orphan then
-				outstring = outstring .. "\n" .. "> Target is an orphaned map. It will need to be corrected in mapcoords force_maptype."
-			end
-
-			local goal
-			if ZGV.Pointer.current_waypoint and ZGV.Pointer.current_waypoint.goal then
-				goal = ZGV.Pointer.current_waypoint.goal
-			else
-				for i,v in pairs(ZGV.CurrentStep.goals) do
-					if v.m==n2.m and v.x==n2.x and v.y==n2.y then
-						goal = v
-					end
-				end
-			end
-
-			if goal and (goal.scenario_name or goal.scenario_stagenum or goal.scenario_criteriaid) then
-				if not C_Scenario.IsInScenario() then 
-					outstring = outstring .. "\n" .. "    Destination goal is within scenario, you have not started it"
-				else
-					outstring = outstring .. "\n" .. "    Destination goal is within scenario, maybe you need to teleport somewhere first"
-				end
-			end
-
-			ZGV:ShowDump(outstring)
-		end
-
 		function LibRover:DebugBanLink(n1,n2,mode)
 			if not n1 then self.debug_banlink=nil return end
 			self.debug_banlink = self.debug_banlink or {}
@@ -4606,7 +4506,6 @@ do
 					
 					return 0
 				end
-				return false  -- still no mapdata
 			end
 			return mapdata[2]
 		end

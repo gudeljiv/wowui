@@ -12,5 +12,4 @@
 
 	<Script file="Tradeskill_Recipes.lua"/>
 	<Script file="Tradeskill_Status.lua"/>
-	<Script file="Skill_Training.lua"/>
 </Ui>

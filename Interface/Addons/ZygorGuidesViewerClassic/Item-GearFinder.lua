@@ -1,3 +1,5 @@
+do return end
+
 local ZGV = ZygorGuidesViewer
 if not (ZGV and ZGV.ItemScore) then return end
 
@@ -14,15 +16,16 @@ local tinsert,tremove,print,ipairs,pairs,wipe,debugprofilestop=tinsert,tremove,p
 local ItemScore = ZGV.ItemScore
 local GearFinder = {}
 ItemScore.GearFinder = GearFinder
-ItemScore.Items = {}
 
-local PAST_DUNGEONS_LIMIT = 30 -- how many levels can user be above min level before we start ignoring its dungeon
+local PAST_DUNGEONS_LIMIT = 1 -- how many levels can user be above previous expansion cap before we start ignoring its dungeon
 local FUTURE_DUNGEONS_LIMIT = 5 -- how many levels to look ahead for future upgrades
 
 
 function GearFinder:Initialise()
-	--GearFinder:TrimDatabase()
+	GearFinder:TrimDatabase()
 	GearFinder:CreateMainFrame()
+	CharacterFrame:HookScript("OnShow", function() GearFinder:CreateSystemTab() end)
+	CharacterFrame:HookScript("OnHide", function() GearFinder:RestoreBlizzardFrame() end)
 end
 
 -- remove all non-player class drops, and all bosses that do not drop anything for player
@@ -59,7 +62,7 @@ end
 --	comment - string - verbose message
 function GearFinder:IsValidDungeon(dungeon, instanceId)
 	local ident = dungeon
-	--if ident==0 then ident="e_"..instanceId end
+	if ident==0 then ident="e_"..instanceId end
 
 	local dungeon = ZGV.Dungeons[ident]
 
@@ -70,8 +73,7 @@ function GearFinder:IsValidDungeon(dungeon, instanceId)
 	if dungeon.difficulty and not ZGV.db.profile["gear_"..dungeon.difficulty] then return false, false, ident, 0, false, "instance filtered out" end
 	if dungeon.isHoliday then return false, false, ident, 0, false, "holiday dungeons not supported" end
 	if dungeon.minLevel and dungeon.minLevel > (ItemScore.playerlevel+FUTURE_DUNGEONS_LIMIT) then return false, false, ident, 0, false, "need way higher level" end
-	if dungeon.minLevel and dungeon.minLevel < (ItemScore.playerlevel-PAST_DUNGEONS_LIMIT) then return false, false, ident, 0, false, "outleveled" end
-	--if dungeon.maxScaleLevel < (ItemScore.playerlevel-PAST_DUNGEONS_LIMIT) then return false, false, ident, 0, false, "outleveled" end
+	if dungeon.maxScaleLevel < (ItemScore.playerlevel-PAST_DUNGEONS_LIMIT) then return false, false, ident, 0, false, "outleveled" end
 
 	local mythic = dungeon.difficulty==23 and dungeon.maxScaleLevel == MAX_PLAYER_LEVEL_TABLE[GetAccountExpansionLevel()]
 
@@ -106,7 +108,6 @@ GearFinder.UpgradeQueue = {
 	[INVSLOT_FINGER2] = {},
 	[INVSLOT_TRINKET1] = {},
 	[INVSLOT_TRINKET2] = {},
-	[INVSLOT_RANGED] = {},
 }
 
 -- those slots should not have the same item suggested
@@ -172,11 +173,10 @@ local function loot_score_dungeon_thread()
 					fail_counter = fail_counter + 1
 				else
 					success_counter = success_counter + 1
-					local is_upgrade, slot, change, score, comment, futurevalid, slot_2, change_2  = ItemScore.Upgrades:IsUpgrade(itemlink)
+					local is_upgrade, slot, change, score, comment, slot_2, change_2  = ItemScore.Upgrades:IsUpgrade(itemlink)
 					if is_upgrade and is_replacement(twohander_equipped,item)  then
 						item.ident = ident
 						item.boss = itemdata.boss
-						item.bossname = itemdata.bossname
 						item.encounterId = itemdata.encounterId
 						item.quest = itemdata.quest
 						if not (item.quest and IsQuestFlaggedCompleted(item.quest)) then
@@ -184,9 +184,6 @@ local function loot_score_dungeon_thread()
 
 							if slot_2 then table.insert(GearFinder.UpgradeQueue[slot_2],item) end
 						end
-					elseif futurevalid then
-						GearFinder.ItemsToMaybeScore[ident] = GearFinder.ItemsToMaybeScore[ident] or {}
-						table.insert(GearFinder.ItemsToMaybeScore[ident],itemdata)
 					end
 					GearFinder.ItemsToScore[ident][index]=nil
 				end
@@ -250,39 +247,37 @@ local function loot_score_dungeon_thread()
 	while true do
 		local fail_counter = 0
 		for _,dungeon in ipairs(GearFinder.FutureDungeons) do
-			if GearFinder.ItemsToMaybeScore[dungeon.ident] then
-				for index,itemdata in pairs(GearFinder.ItemsToMaybeScore[dungeon.ident]) do
-					local itemlink = itemdata.itemlink
-					local item = ItemScore:GetItemDetails(itemlink)
-					if not item then 
-						fail_counter = fail_counter + 1
-					else
-						success_counter = success_counter + 1
-						local is_upgrade, slot, change, score, comment, validfuture, slot_2, change_2 = ItemScore.Upgrades:IsUpgrade(itemlink,"future")
-						-- only record future items for slots that do not have upgrades from current dungeons
-						if slot and GearFinder.UpgradeQueue[slot] and not GearFinder.UpgradeQueue[slot][1] then
-							if is_upgrade and is_replacement(twohander_equipped,item) then
-								item.ident = dungeon.ident
-								item.boss = itemdata.boss
-								item.encounterId = itemdata.encounterId
-								item.future = true
-								item.quest = itemdata.quest
-								if not (item.quest and IsQuestFlaggedCompleted(item.quest)) then
-									table.insert(GearFinder.UpgradeQueue[slot],item)
+			for index,itemdata in pairs(GearFinder.ItemsToMaybeScore[dungeon.ident]) do
+				local itemlink = itemdata.itemlink
+				local item = ItemScore:GetItemDetails(itemlink)
+				if not item then 
+					fail_counter = fail_counter + 1
+				else
+					success_counter = success_counter + 1
+					local is_upgrade, slot, change, score, comment, slot_2, change_2 = ItemScore.Upgrades:IsUpgrade(itemlink,"future")
+					-- only record future items for slots that do not have upgrades from current dungeons
+					if slot and not GearFinder.UpgradeQueue[slot][1] then
+						if is_upgrade and is_replacement(twohander_equipped,item) then
+							item.ident = dungeon.ident
+							item.boss = itemdata.boss
+							item.encounterId = itemdata.encounterId
+							item.future = true
+							item.quest = itemdata.quest
+							if not (item.quest and IsQuestFlaggedCompleted(item.quest)) then
+								table.insert(GearFinder.UpgradeQueue[slot],item)
 
-									if slot_2 then table.insert(GearFinder.UpgradeQueue[slot_2],item) end
-								end
+								if slot_2 then table.insert(GearFinder.UpgradeQueue[slot_2],item) end
 							end
 						end
-						GearFinder.ItemsToMaybeScore[dungeon.ident][index]=nil
 					end
+					GearFinder.ItemsToMaybeScore[dungeon.ident][index]=nil
 				end
-				ready = success_counter / total * 100
-				ZGV:Debug("&gear future scored %d of %d/%d",success_counter,total_future,total)
-				ZGV:Debug("&gear future failed %d",fail_counter)
-				GearFinder.MainFrame.Progress:SetPercent(ready)
-				coroutine.yield()
 			end
+			ready = success_counter / total * 100
+			ZGV:Debug("&gear future scored %d of %d/%d",success_counter,total_future,total)
+			ZGV:Debug("&gear future failed %d",fail_counter)
+			GearFinder.MainFrame.Progress:SetPercent(ready)
+			coroutine.yield()
 		end
 		if fail_counter==0 then break end
 	end
@@ -344,7 +339,7 @@ function GearFinder:ScoreDungeonItems()
 
 	GearFinder.DungeonItemsScored = false
 
-	local player = "ALL"
+	local player = ZGV.ItemScore.playerclass
 	for i,v in pairs(GearFinder.UpgradeQueue) do table.wipe(v) end
 	table.wipe(GearFinder.ItemsToScore)
 	table.wipe(GearFinder.ItemsToMaybeScore)
@@ -353,15 +348,8 @@ function GearFinder:ScoreDungeonItems()
 	local faction = self.playerfaction=="Alliance" and 1 or 2
 
 	for dungeon,dungeondata in pairs(ZygorGuidesViewer.ItemScore.Items) do
-		local valid, future, ident, maxscale, mythic, comment = GearFinder:IsValidDungeon(dungeondata.dungeonmap, dungeondata.instanceId)
-
-		--local capped_player_level = math.min(maxscale, ItemScore.playerlevel)
-
-		-- fill table with future dungeons, so we can sort it by minlevel,ilvl requirements later
-		if valid or future then
-			local dungeon = ZGV.Dungeons[ident] 
-			table.insert(GearFinder.FutureDungeons,{ident=ident,minLevel=dungeon.minLevel or 0,min_ilevel=dungeon.min_ilevel or 0})
-		end
+		local valid, future, ident, maxscale, mythic, comment = GearFinder:IsValidDungeon(dungeondata.dungeon, dungeondata.instanceId)
+		local capped_player_level = math.min(maxscale, ItemScore.playerlevel)
 
 		if valid then
 			GearFinder.ItemsToScore[ident] = {}
@@ -369,22 +357,26 @@ function GearFinder:ScoreDungeonItems()
 				if type(bossdata)=="table" then
 					for _,itemlink in pairs(bossdata[player]) do
 						if type(itemlink)=="number" then itemlink = "item:"..itemlink end
-						--itemlink = ZGV.ItemLink.SetLevel(itemlink,capped_player_level,false)
+						itemlink = ZGV.ItemLink.SetLevel(itemlink,capped_player_level,false)
 						local qname if bossdata.quest and bossdata.quest[faction] then qname=C_QuestLog.GetQuestInfo(bossdata.quest[faction]) end -- prefetch quest name
-						table.insert(GearFinder.ItemsToScore[ident],{itemlink=itemlink,boss=bossdata.boss, bossname=bossdata.name, encounterId=bossdata.encounterId, quest=bossdata.quest and bossdata.quest[faction], questname=qname})
+						table.insert(GearFinder.ItemsToScore[ident],{itemlink=itemlink,boss=bossdata.boss, encounterId=bossdata.encounterId, quest=bossdata.quest and bossdata.quest[faction], questname=qname})
 					end
 				end
 			end
 		elseif future then
 			GearFinder.ItemsToMaybeScore[ident] = {}
 
+			-- fill table with future dungeons, so we can sort it by minlevel,ilvl requirements later
+			local dungeon = ZGV.Dungeons[ident] 
+			table.insert(GearFinder.FutureDungeons,{ident=ident,minLevel=dungeon.minLevel or 0,min_ilevel=dungeon.min_ilevel or 0})
+
 			for boss,bossdata in pairs(dungeondata) do
 				if type(bossdata)=="table" then
 					for _,itemlink in pairs(bossdata[player]) do
 						if type(itemlink)=="number" then itemlink = "item:"..itemlink end
-						--itemlink = ZGV.ItemLink.SetLevel(itemlink,capped_player_level,false)
+						itemlink = ZGV.ItemLink.SetLevel(itemlink,capped_player_level,false)
 						local qname if bossdata.quest and bossdata.quest[faction] then qname=C_QuestLog.GetQuestInfo(bossdata.quest[faction]) end -- prefetch quest name
-						table.insert(GearFinder.ItemsToMaybeScore[ident],{itemlink=itemlink,boss=bossdata.boss, bossname=bossdata.name, encounterId=bossdata.encounterId, quest=bossdata.quest and bossdata.quest[faction], questname=qname})
+						table.insert(GearFinder.ItemsToMaybeScore[ident],{itemlink=itemlink,boss=bossdata.boss, encounterId=bossdata.encounterId, quest=bossdata.quest and bossdata.quest[faction], questname=qname})
 					end
 				end
 			end
@@ -412,7 +404,7 @@ end
 local function make_button(object)
 	local button = CHAIN(CreateFrame("Button",nil,GearFinder.MainFrame))
 		:SetFrameLevel(GearFinder.MainFrame:GetFrameLevel()+2)
-		:SetSize(240,36)
+		:SetSize(240,40)
 	.__END	
 		button:SetScript("OnEnter",function()
 			if button.dungeonguide then
@@ -427,10 +419,10 @@ local function make_button(object)
 	button.tooltiphandler = CHAIN(CreateFrame("Button",nil,button))
 		:SetFrameLevel(button:GetFrameLevel()+1)
 		:SetPoint("TOPLEFT")
-		:SetSize(36,36)
+		:SetSize(40,40)
 	.__END	
 		button.itemicon = CHAIN(button.tooltiphandler:CreateTexture()) 
-			:SetSize(36,36)
+			:SetSize(40,40)
 			:SetPoint("TOPLEFT",button) 
 			:SetTexture(object[1])
 		.__END
@@ -532,65 +524,18 @@ function GearFinder:ApplySkin()
 
 end
 
-function GearFinder:UpdateSystemTab()
-	if ZGV.db.profile.autogear then
-		GearFinder.PaperDollButtonFrame:Show()
-	else
-		GearFinder.PaperDollButtonFrame:Hide()
-		GearFinder.MainFrame:Hide()
-	end
-end
-
--- support function for character frame system tab creation
-local function OnNonZygorClick()
-	if GearFinder.MainFrame:IsVisible() then
-		CharacterNameText:Show()
-		CharacterFramePortrait:Show()
-		CharacterFrameCloseButton:Show()
-		GearFinder.MainFrame:Hide()
-	end
-end
-
 -- creates main frame, with header and footer, adds entries for all equip slots and guide info
 -- no params
 -- no returns
 function GearFinder:CreateMainFrame()
 	if self.MainFrame then return end
 
-	GearFinder.PaperDollButtonFrame = ZGV.ChainCall(CreateFrame("FRAME",nil,PaperDollFrame))
-		:SetPoint("TOPRIGHT", PaperDollFrame, "TOPRIGHT", -25, -42)
-		:SetSize(50,50)
-		:SetBackdrop({bgFile="Interface\\Minimap\\MiniMap-TrackingBorder"})--,tile=true, tileSize=50})
-		:SetFrameLevel(610)
-		:Show()
-	.__END
-
-	GearFinder.PaperDollButton = ZGV.ChainCall(CreateFrame("Button", nil , GearFinder.PaperDollButtonFrame))
-		:SetSize(20,20)
-		:SetPoint("TOPLEFT", GearFinder.PaperDollButtonFrame, "TOPLEFT", 5, -5)
-		:SetBackdrop({bgFile=ZGV.DIR.."\\Skins\\zglogo-back"})
-		:SetNormalTexture(ZGV.DIR.."\\Skins\\zglogo")
-		:SetFrameLevel(611)
-		:SetScript("OnClick", function() 
-			GearFinder:ShowFinder()	
-		end)
-		:SetScript("OnEnter",function(self) 
-			CHAIN(GameTooltip):SetOwner(self, "ANCHOR_TOP") 
-			:SetText("Toggle Zygor Gear Finder") 
-			:Show() 
-			end)
-		:SetScript("OnLeave",function(self) GameTooltip:Hide() end)
-		:Show()
-	.__END
-	GearFinder.PaperDollButton:GetNormalTexture():SetTexCoord(0,0,0,1/4 , 1,0,1,1/4)
-
-
 	self.MainFrame = CHAIN(ui:Create("Frame",UIParent,"ZygorGearFinder"))
 		:SetWidth(700)
-		:SetPoint("TOPLEFT",PaperDollFrame,"TOPLEFT")
-		:SetPoint("BOTTOMLEFT",PaperDollFrame,"BOTTOMLEFT",0,75)
+		:SetPoint("TOPLEFT",CharacterFrame,"TOPLEFT")
+		:SetPoint("BOTTOMLEFT",CharacterFrame,"BOTTOMLEFT")
 		:SetFrameStrata("HIGH")
-		:SetFrameLevel(PaperDollFrame:GetFrameLevel()+1)
+		:SetFrameLevel(CharacterFrame:GetFrameLevel()+1)
 		:SetToplevel(enable)
 		.__END
 
@@ -610,12 +555,8 @@ function GearFinder:CreateMainFrame()
 		:SetPoint("TOPRIGHT",-5,-5)
 		:SetSize(17,17)
 		:SetScript("OnClick", function() 
-			CharacterNameText:Show()
-			CharacterFramePortrait:Show()
-			CharacterFrameCloseButton:Show()
-			GearFinder.MainFrame:Hide()
-			PanelTemplates_SelectTab(CharacterFrameTab1)
-			ToggleCharacter("PaperDollFrame")
+			MF:Hide()
+			HideUIPanel(CharacterFrame) 
 		end)
 		.__END
 	ZGV.F.AssignButtonTexture(MF.close,(SkinData("TitleButtons")),6,32)
@@ -645,7 +586,6 @@ function GearFinder:CreateMainFrame()
 		{136530,INVSLOT_WRIST,INVTYPE_WRIST},
 		{136518,INVSLOT_MAINHAND,INVTYPE_WEAPON},
 		{136524,INVSLOT_OFFHAND,INVTYPE_WEAPONOFFHAND},
-		{136520,INVSLOT_RANGED,INVTYPE_RANGED},
 	}
 
 	local right_column = {
@@ -680,7 +620,7 @@ function GearFinder:CreateMainFrame()
 		if previous then
 			button:SetPoint("TOPLEFT",previous,"BOTTOMLEFT",0,-6)
 		else
-			button:SetPoint("TOPLEFT",MF.Buttons[INVSLOT_HEAD],"TOPRIGHT",18,0)
+			button:SetPoint("TOPLEFT",MF.Buttons[INVSLOT_HEAD],"TOPRIGHT",20,0)
 		end
 		previous = button
 		MF.Buttons[object[2]] = button
@@ -783,34 +723,150 @@ function GearFinder:CreateMainFrame()
 
 
 	GearFinder:ApplySkin()
-
-	GearFinder:UpdateSystemTab()
 	MF:Hide()
 end
 
+-- unhide elements of blizzard ui we hid when showing our frame
+-- no params
+-- no returns
+function GearFinder:RestoreBlizzardFrame()
+	CharacterFrameInset:Show()
+	CharacterFramePortrait:Show()
+	CharacterFrameBg:Show()
+	CharacterFrameTitleText:Show()
+	CharacterFrameCloseButton:Show()
 
-
-function GearFinder:ShowFinder()
-	if ZygorGearFinder:IsVisible() then GearFinder.MainFrame:Hide() return end
-	if not GearFinder.HookedChar then
-		ItemScore:Hook("CharacterFrameTab_OnClick", OnNonZygorClick, true)
-		GearFinder.HookedChar = true
+	if CharacterFramePortraitFrame then
+		CharacterFramePortraitFrame:Show()
+		CharacterFrameTitleBg:Show()
+		CharacterFrameLeftBorder:Show()
+		CharacterFrameTopBorder:Show()
+		CharacterFrameRightBorder:Show()
+		CharacterFrameBottomBorder:Show()
+		CharacterFrameTopTileStreaks:Show()
+		CharacterFrameTopRightCorner:Show()
+		CharacterFrameBotLeftCorner:Show()
+		CharacterFrameBotRightCorner:Show()
 	end
 
-	CharacterNameText:Hide()
+	if CharacterFrame.NineSlice then
+		for i,v in pairs(CharacterFrame.NineSlice) do
+			if type(v)=="table" and v.Show then v:Show() end
+		end
+		CharacterFrame.TitleBg:Show()
+		CharacterFrame.TopTileStreaks:Hide()
+	end
+end
+
+-- support function for character frame system tab creation
+local function OnZygorTabClick(self) 
+	if ZygorGearFinder:IsVisible() then return end
+	ToggleCharacter("ZygorGearFinder")
+	PanelTemplates_SetTab(CharacterFrame, self:GetID())
+
+	CharacterFrameInset:Hide()
 	CharacterFramePortrait:Hide()
+	CharacterFrameBg:Hide()
+	CharacterFrameTitleText:Hide()
 	CharacterFrameCloseButton:Hide()
-	PaperDollFrame:Hide()
 
-	for i=1,CharacterFrame.numTabs do
-		PanelTemplates_DeselectTab(_G["CharacterFrameTab"..i])
+	if CharacterFramePortraitFrame then
+		CharacterFramePortraitFrame:Hide()
+		CharacterFrameTitleBg:Hide()
+		CharacterFrameLeftBorder:Hide()
+		CharacterFrameTopBorder:Hide()
+		CharacterFrameRightBorder:Hide()
+		CharacterFrameBottomBorder:Hide()
+		CharacterFrameTopTileStreaks:Hide()
+		CharacterFrameTopRightCorner:Hide()
+		CharacterFrameBotLeftCorner:Hide()
+		CharacterFrameBotRightCorner:Hide()
 	end
 
-	ZygorGearFinder:Show()
+	if CharacterFrame.NineSlice then
+		for i,v in pairs(CharacterFrame.NineSlice) do
+			if type(v)=="table" and v.Hide then v:Hide() end
+		end
+		CharacterFrame.TitleBg:Hide()
+		CharacterFrame.TopTileStreaks:Hide()
+	end
+
 	GearFinder:ScoreDungeonItems()
 end
 
+-- support function for character frame system tab creation
+local function ZygorTabAnchor()
+	local tab = GearFinder.BlizzardTab
+	if not tab then return end
+	if tab.Anchored then return end
 
+	for i=1,CharacterFrame.numTabs do
+		local previous = _G["CharacterFrameTab"..i]
+		if previous and previous~=tab and previous:IsVisible() then
+			tab:SetPoint("LEFT", previous, "RIGHT", -16, 0)
+			tab.Anchored = true
+		end
+	end
+end
+
+
+-- support function for character frame system tab creation
+local function OnNonZygorClick()
+	GearFinder:RestoreBlizzardFrame()
+end
+
+-- attaches zygor gearfinder tab button to blizzard character frame, hooks functions to show/hide our frame and blizz elements
+-- no params
+-- no returns
+function GearFinder:CreateSystemTab()
+	if not ZGV.db.profile.autogear then return end
+
+	if self.BlizzardTab then
+		ZygorTabAnchor()
+		return
+	end
+
+	local n = CharacterFrame.numTabs + 1
+	local tab = CreateFrame("Button", "CharacterFrameTab"..n, CharacterFrame, "CharacterFrameTabButtonTemplate")
+	tab:SetID(n)
+	tab:SetText("|cfffe6000Gear Finder")
+	tab:SetNormalFontObject(GameFontHighlightSmall)
+	tab:Show()
+	tab:SetScript("OnClick", OnZygorTabClick)
+	tab.Zygor = true
+	self.BlizzardTab = tab
+
+	ZygorTabAnchor()
+
+
+	PanelTemplates_SetNumTabs(CharacterFrame, n)
+	PanelTemplates_EnableTab(CharacterFrame, n)
+	PanelTemplates_TabResize(_G["CharacterFrameTab4"], nil, 100, nil, nil);
+
+	ItemScore:Hook("CharacterFrameTab_OnClick", OnNonZygorClick, true)
+	ItemScore:Hook("CharacterFrame_Expand", OnNonZygorClick, true)
+
+	table.insert(CHARACTERFRAME_SUBFRAMES,"ZygorGearFinder")
+
+end
+
+function GearFinder:UpdateSystemTab()
+	if ZGV.db.profile.autogear then
+		if not self.BlizzardTab then 
+			GearFinder:CreateSystemTab()
+		end
+		self.BlizzardTab:Show()
+	else
+		if self.BlizzardTab then 
+			self.BlizzardTab:Hide()
+			GearFinder:RestoreBlizzardFrame()
+			if CharacterFrame:IsVisible() and GearFinder.MainFrame:IsVisible() then
+				GearFinder.MainFrame:Hide()
+				ToggleCharacter("PaperDollFrame")
+			end
+		end
+	end
+end
 
 -- maps difficulty id to display name (normal, heroic etc)
 local diff_to_name = {
@@ -896,9 +952,7 @@ function GearFinder:DisplayResults()
 			end
 
 			if upgrade.future then
-				if upgrade.minlevel and upgrade.minlevel > ItemScore.playerlevel then
-					button.itemencounter:SetText("(requires level "..upgrade.minlevel..")")
-				elseif dungeon.minLevel and dungeon.minLevel > ItemScore.playerlevel then 
+				if dungeon.minLevel and dungeon.minLevel > ItemScore.playerlevel then 
 					button.itemencounter:SetText("(requires level "..dungeon.minLevel..")")
 				end
 			else
@@ -906,8 +960,6 @@ function GearFinder:DisplayResults()
 					button.itemencounter:SetText("Quest: "..(upgrade.questname or C_QuestLog.GetQuestInfo(upgrade.quest) or ""))
 				elseif upgrade.encounterId then 
 					button.itemencounter:SetText(EJ_GetEncounterInfo(upgrade.encounterId))
-				elseif upgrade.bossname then 
-					button.itemencounter:SetText(upgrade.bossname)
 				end
 			end
 		else

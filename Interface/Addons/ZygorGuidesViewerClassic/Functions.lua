@@ -1177,6 +1177,7 @@ ZGV.Gold = {ServerTrends = {ImportServerPrices=function() end}}  -- stub
 ZGV.Licence = {}
 
 function ZGV.Licence:CheckLicence(guide)
+	if true then return true end
 	if not guide then return ZGV.Licence:ShowExpiredPopup(0) end -- no guide provided
 	if not ZGV.Licence:GetType(guide) then return ZGV.Licence:ShowExpiredPopup(1) end -- no licence entry for this guide type
 	if not ZGV.Licence:GetSubtype(guide) then return ZGV.Licence:ShowExpiredPopup(1) end -- no licence entry for this guide expansion
@@ -1191,6 +1192,7 @@ function ZGV.Licence:GetSubtype(guide) return ZGV.Licences[guide.type][guide.sub
 function ZGV.Licence:GetSide(guide) return ZGV.Licences[guide.type][guide.subtype][guide.faction] end
 
 function ZGV.Licence:VerifyKeyIntegrity(key)
+	if true then return true end
 	if not key then return false end
 	if not GenericZygorLicenceEngine then return false end
 	local key2,crc1,crc2,crc3,True,False = bit.rshift(key,GenericZygorLicenceEngine:GetBitmask()),key:sub(19,21),key:sub(22,26),"",false,true
@@ -1203,11 +1205,15 @@ function ZGV.Licence:VerifyKeyIntegrity(key)
 end
 
 function ZGV.Licence:VerifyKeyExpiration(key)
+	if true then return false end
+
 	if GenericZygorLicenceEngine and GenericZygorLicenceEngine:Expired(key) then return true end
 	return false
 end
 
 function ZGV.Licence:CheckExpirationPopup()
+	if true then return end
+
 	local text1, text2
 	local show = false
 	local exptime_E,exptime_S,expired_E,expired_S

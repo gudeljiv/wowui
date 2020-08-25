@@ -192,7 +192,6 @@ end
 --   change - int - percentage of score change
 --   score - int - score value
 --   comment - string - verbose comment
---   validfuture - bool - can item be valid in players future (min level)
 --   slot_2 - int or nil - optional secondary slotid for what the item is upgrade for, or nil if not an upgrade
 --   change_2 - int - percentage of score change
 
@@ -210,8 +209,8 @@ function Upgrades:IsUpgrade(itemlink,future)
 	-- check validity
 	local score,success,comment = ItemScore:GetItemScore(itemlink)
 	if not success then return false, nil, 0, 0, "not scored" end
-	local valid, final, comment, futurevalid = ItemScore:IsValidItem(itemlink,future)
-	if not valid then return false, nil, 0, 0, "not valid "..comment, futurevalid end
+	local valid, final, comment = ItemScore:IsValidItem(itemlink,future)
+	if not valid then return false, nil, 0, 0, "not valid "..comment end
 
 	ZGV:Debug("&itemscore Checking %s for upgrade",itemlink)
 
@@ -257,7 +256,7 @@ function Upgrades:IsUpgrade(itemlink,future)
 
 	-- upgrade for both slots
 	if upgrade_slot_1 > 0 and upgrade_slot_2 > 0 then
-		return true, slot_1, upgrade_slot_1, item.score, "ok", false, slot_2, upgrade_slot_2
+		return true, slot_1, upgrade_slot_1, item.score, "ok", slot_2, upgrade_slot_2
 	else
 	-- upgrade for one slot
 		if can_equip_1 and upgrade_slot_1 > 0 then
@@ -668,7 +667,7 @@ function Upgrades:ProcessPossibleUpgrades()
 				process_slot = slot
 				break
 			else
-				if newitem.change and newitem.change>max_change then
+				if newitem.change>max_change then
 					ZGV:Debug("&itemscore PPU slot %d: considering change %s",slot,newitem.change)
 					max_change = newitem.change
 					process_slot = slot
@@ -1227,7 +1226,7 @@ function Upgrades:ShowEquipmentChangePopup(slot)
 
 	F.stattext:SetText(changes)
 
-	ZGV.PopupHandler:QueuePush(F)
+	F:Show()
 
 	return true
 end

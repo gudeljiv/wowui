@@ -38,12 +38,10 @@ function arrowframeproto:OnLoad()
 	local skindir = ZGV.DIR.."\\Arrows\\".. arrowskindir
 	self.arrow.arr:SetTexture(true)
 	self.arrow.arr:SetTexture(skindir.."\\arrow",false)
-	self.arrow.arr:SetTexCoord(0,0,0,0)
 	self.arrow.arr:SetDrawLayer("ARTWORK",1)
 	self.arrow.arrspecular:SetTexture(true)
 	self.arrow.arrspecular:SetTexture(skindir.."\\arrow-specular",false)
 	self.arrow.arrspecular:SetDrawLayer("ARTWORK",2)
-	self.arrow.arrspecular:SetTexCoord(0,0,0,0)
 	self.special:SetTexture(skindir.."\\specials",false)
 	self.special:Hide()
 	
@@ -201,18 +199,15 @@ function arrowframeproto:ShowSpecial(spec)
 	self.arrow:Hide() self.special:Show()
 	for k,v in ipairs(specials) do if v~=spec then self.special[v]:Stop() end end
 	self.special[spec]:Play()
-	self:Show()
 end
 
 function arrowframeproto:ShowStairs(up)
 	self:ShowSpecial(up and "upstairs" or "downstairs")
-	self:Show()
 end
 
 function arrowframeproto:ShowWaiting(phase)
 	--self.arrow:SetAngle(phase*6.28)
 	self:ShowSpecial("waiting")
-	self:Show()
 end
 
 function arrowframeproto:ShowNothing()
@@ -221,22 +216,18 @@ end
 
 function arrowframeproto:ShowError()
 	self:ShowSpecial("error")
-	self:Show()
 end
 
 function arrowframeproto:ShowInstance()
 	self:ShowSpecial("instance")
-	self:Show()
 end
 
 function arrowframeproto:HideInstance()
 	self:ShowSpecial("instancehide")
-	self:Show()
 end
 
 function arrowframeproto:ShowWarning()
 	self.arrow.warning:Play()
-	self:Show()
 end
 
 function arrowframeproto:SetNotice (text)

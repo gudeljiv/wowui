@@ -216,7 +216,6 @@ function GuideMenu:CreateFrames()
 		:SetSize(MAINFRAME_WIDTH,MAINFRAME_HEIGHT)
 		:SetPoint("CENTER",UIParent)
 		:SetFrameStrata("DIALOG")
-		:SetFrameLevel(10)
 		:CanDrag(true)
 		:SetScript("OnUpdate",UpdateHandler)
 		:SetScript("OnHide",function() GuideMenu.UseTab=nil end) -- reset tab behaviour to 'add new tab'
@@ -299,7 +298,7 @@ function GuideMenu:CreateFrames()
 		.__END
 		MF.FooterVersion = CHAIN(MF.Footer:CreateFontString())
 			:SetFont(FONTBOLD,12)
-			:SetText("VER:")
+			:SetText("Release:")
 		.__END
 
 		MF.FooterVersionVal = CHAIN(MF.Footer:CreateFontString())
@@ -567,36 +566,6 @@ function GuideMenu:CreateFrames()
 			:SetAnim(false)
 			:Hide()
 		.__END
-
-	if ZGV.DEV then
-		MF.GuidePathExport = CHAIN(ui:Create("EditBox",MF))
-			:SetPoint("BOTTOM",MF,"BOTTOM",0,3)
-			:SetWidth(350)
-			:SetTextColor(1,1,1,1)
-			:SetBackdropColor(0,0,0,1)
-			:SetBackdropBorderColor(0.3,0.3,0.3,1)
-			:SetScript("OnEditFocusLost",function(self)
-				self:HighlightText(0,0)
-			end)
-			:SetScript("OnEditFocusGained",function(self)
-				self:HighlightText()
-			end)
-			:Hide()
-		.__END
-		if ZGV.db.profile.debug_display then
-			MF.GuidePathExport:Show()
-		end
-	end
-end
-
-function GuideMenu:ExportPath(row)
-	if row.guide then
-		GuideMenu.MainFrame.GuidePathExport:SetText(row.guide.title:gsub("\\","\\\\"))
-	elseif row.group then
-		GuideMenu.MainFrame.GuidePathExport:SetText(row.group.fullpath:gsub("\\","\\\\"))
-	end
-	GuideMenu.MainFrame.GuidePathExport:SetFocus()
-	GuideMenu.MainFrame.GuidePathExport:HighlightText()
 end
 
 local function MenuButton_SetHighlight(button,tf,force)
@@ -714,8 +683,6 @@ function GuideMenu:Show(path,...)
 		else
 			path = firstpages[ZGV.db.profile.gmfirstpage]
 		end
-		GuideMenu.MainFrame.MenuGuides.SearchEdit:SetText("")	
-		GuideMenu.MainFrame.MenuGuides.SearchEdit:SetFocus()	
 	end
 
 	GuideMenu:Open(path or "Home",nil,...)

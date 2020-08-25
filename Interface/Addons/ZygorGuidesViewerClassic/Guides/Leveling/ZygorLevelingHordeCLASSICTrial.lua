@@ -867,7 +867,7 @@ turnin A Task Unfinished##1656 |goto 46.62,61.09
 step
 talk Innkeeper Kauth##6747
 |tip Inside the building.
-home Bloodhoof Village |goto 46.62,61.09 |q 860 |future
+home Bloodhoof Village |goto 46.62,61.09
 step
 Leave the building |goto 46.81,60.53 < 7 |walk
 talk Zarlman Two-Moons##3054
