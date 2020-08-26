@@ -4,14 +4,14 @@ local size = 125
 local scale = 1.4
 local bars = {}
 
-local function CreateBar(name, factionIndex)
-	local f = CreateFrame("Frame", name, UIParent)
+local function CreateBar(frameName)
+	local f = CreateFrame("Frame", frameName, UIParent)
 	f:SetScale(scale)
 	f:SetSize(size, 12)
 	f:SetPoint("CENTER", UIParent, "CENTER", -600, 0)
 	f:EnableMouse(false)
 
-	f.Bar = CreateFrame("StatusBar", name .. "StatusBar", UIParent)
+	f.Bar = CreateFrame("StatusBar", frameName .. "StatusBar", UIParent)
 	f.Bar:SetScale(1)
 	f.Bar:SetSize(size * scale, 2)
 	f.Bar:SetPoint("CENTER", f, 0, 0)
@@ -24,11 +24,11 @@ local function CreateBar(name, factionIndex)
 	f.Bar.Value:SetPoint("LEFT", f.Bar, "LEFT", 2, 0)
 	f.Bar.Value:SetVertexColor(1, 1, 1)
 
-	f.Bar.Percent = f.Bar:CreateFontString(nil, "ARTWORK")
-	f.Bar.Percent:SetFont("Fonts\\ARIALN.ttf", 18, "THINOUTLINE")
-	f.Bar.Percent:SetShadowOffset(0, 0)
-	f.Bar.Percent:SetPoint("CENTER", f.Bar, 0, 0)
-	f.Bar.Percent:SetVertexColor(1, 1, 1)
+	f.Bar.FactionName = f.Bar:CreateFontString(nil, "ARTWORK")
+	f.Bar.FactionName:SetFont("Fonts\\ARIALN.ttf", 18, "THINOUTLINE")
+	f.Bar.FactionName:SetShadowOffset(0, 0)
+	f.Bar.FactionName:SetPoint("RIGHT", f.Bar, "RIGHT", -2, 10)
+	f.Bar.FactionName:SetVertexColor(1, 1, 1)
 
 	f.Bar.Background = f.Bar:CreateTexture(nil, "BACKGROUND")
 	f.Bar.Background:SetAllPoints(f.Bar)
@@ -75,17 +75,17 @@ local function UpdateBarVisibility()
 end
 
 local function UpdateBarValueAndColor()
-	if UnitLevel("player") < MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] then
-		CurrentXP = UnitXP("player")
-		MaxXP = UnitXPMax("player")
-		percent = floor((CurrentXP / MaxXP) * 100)
-		_, _, rested = GetRestState()
-		r, g, b = xVermin:ColorGradient(percent / 100, 1, 0, 0, 1, 1, 0, 0, 1, 0)
-		Reputation.Bar:SetMinMaxValues(0, MaxXP)
-		Reputation.Bar:SetValue(CurrentXP)
-		Reputation.Bar.Value:SetText(xVermin:FormatNumber(CurrentXP, ","))
-		Reputation.Bar.Percent:SetText(xVermin:Round(percent) .. "%")
-		Reputation.Bar:SetStatusBarColor(r, g, b)
+	for key, value in pairs(bars) do
+		if not value.hidden then
+			local percent = floor((value.FactionInfo.earnedValue / value.FactionInfo.topValue) * 100)
+			local r, g, b = xVermin:ColorGradient(percent / 100, 1, 0, 0, 1, 1, 0, 0, 1, 0)
+
+			_G[value.frameStatusBar]:SetMinMaxValues(0, value.FactionInfo.topValue)
+			_G[value.frameStatusBar]:SetValue(value.FactionInfo.earnedValue)
+			_G[value.frameStatusBar].Value:SetText(value.FactionInfo.earnedValue)
+			_G[value.frameStatusBar].FactionName:SetText(value.FactionInfo.name)
+			_G[value.frameStatusBar].SetStatusBarColor(r, g, b, 1)
+		end
 	end
 end
 
@@ -108,8 +108,20 @@ local function UpdateBars()
 		if isWatched then
 			if not bars[factionIndex] then
 				print("create bar: " .. frameName)
-				CreateBar(frameName, factionIndex)
-				bars[factionIndex] = {factionIndex = factionIndex, name = frameName, frameStatusBar = frameStatusBar, time = GetTime(), isWatched = isWatched, hidden = false}
+				CreateBar(frameName)
+				bars[factionIndex] = {
+					factionIndex = factionIndex,
+					frameName = frameName,
+					frameStatusBar = frameStatusBar,
+					time = GetTime(),
+					isWatched = isWatched,
+					hidden = false,
+					FactionInfo = {
+						name = name,
+						earnedValue = earnedValue,
+						topValue = topValue
+					}
+				}
 			end
 			bars[factionIndex].hidden = false
 		end
@@ -118,7 +130,7 @@ local function UpdateBars()
 	until factionIndex > 200
 
 	UpdateBarVisibility()
-	-- UpdateBarValueAndColor(event)
+	UpdateBarValueAndColor()
 end
 
 local wf = CreateFrame("Frame")
