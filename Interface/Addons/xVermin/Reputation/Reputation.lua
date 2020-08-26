@@ -161,7 +161,7 @@ wf:SetScript(
 		-- 	)
 		-- end
 		if event == "UPDATE_FACTION" then
-			UpdateBars(event)
+		-- UpdateBars(event)
 		end
 	end
 )
