@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 2149,
+	["session"] = 2155,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -1762,5 +1762,21 @@ BugGrabberDB = {
 			["session"] = 2145,
 			["counter"] = 5,
 		}, -- [223]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:87: Attempt to find 'this' in non-table object (used '.' instead of ':' ?)",
+			["time"] = "2020/08/26 18:13:03",
+			["locals"] = "(*temporary) = 1\n(*temporary) = 0.700000\n(*temporary) = 0\n(*temporary) = 1\n",
+			["stack"] = "[C]: in function `SetStatusBarColor'\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:87: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:77>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:133: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:92>",
+			["session"] = 2150,
+			["counter"] = 1,
+		}, -- [224]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:137: Attempt to find 'this' in non-table object (used '.' instead of ':' ?)",
+			["time"] = "2020/08/26 18:44:29",
+			["locals"] = "(*temporary) = 0\n(*temporary) = 1\n(*temporary) = 0\n(*temporary) = 1\n",
+			["stack"] = "[C]: in function `SetStatusBarColor'\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:137: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:93>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:183: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:142>",
+			["session"] = 2154,
+			["counter"] = 5,
+		}, -- [225]
 	},
 }

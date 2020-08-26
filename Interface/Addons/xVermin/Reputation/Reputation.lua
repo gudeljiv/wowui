@@ -3,6 +3,13 @@ local _, xVermin = ...
 local size = 125
 local scale = 1.4
 local bars = {}
+local standings = {
+	neutral = {value = 3000, color = "yellow"},
+	friendly = {value = 6000, color = "lightgreen"},
+	honored = {value = 12000, color = "green"},
+	unfriendly = {value = 0, color = "orange"},
+	hostile = {value = -3000, color = "red"}
+}
 
 local function CreateBar(frameName)
 	local f = CreateFrame("Frame", frameName, UIParent)
@@ -19,16 +26,22 @@ local function CreateBar(frameName)
 	f.Bar:SetAlpha(0)
 
 	f.Bar.Value = f.Bar:CreateFontString(nil, "ARTWORK")
-	f.Bar.Value:SetFont("Fonts\\ARIALN.ttf", 14, "THINOUTLINE")
+	f.Bar.Value:SetFont("Fonts\\ARIALN.ttf", 10, "THINOUTLINE")
 	f.Bar.Value:SetShadowOffset(0, 0)
-	f.Bar.Value:SetPoint("LEFT", f.Bar, "LEFT", 2, 0)
+	f.Bar.Value:SetPoint("LEFT", f.Bar, "LEFT", 2, 10)
 	f.Bar.Value:SetVertexColor(1, 1, 1)
 
 	f.Bar.FactionName = f.Bar:CreateFontString(nil, "ARTWORK")
-	f.Bar.FactionName:SetFont("Fonts\\ARIALN.ttf", 18, "THINOUTLINE")
+	f.Bar.FactionName:SetFont("Fonts\\ARIALN.ttf", 12, "THINOUTLINE")
 	f.Bar.FactionName:SetShadowOffset(0, 0)
 	f.Bar.FactionName:SetPoint("RIGHT", f.Bar, "RIGHT", -2, 10)
 	f.Bar.FactionName:SetVertexColor(1, 1, 1)
+
+	f.Bar.Standing = f.Bar:CreateFontString(nil, "ARTWORK")
+	f.Bar.Standing:SetFont("Fonts\\ARIALN.ttf", 10, "THINOUTLINE")
+	f.Bar.Standing:SetShadowOffset(0, 0)
+	f.Bar.Standing:SetPoint("LEFT", f.Bar, "LEFT", 2, -10)
+	f.Bar.Standing:SetVertexColor(1, 1, 1)
 
 	f.Bar.Background = f.Bar:CreateTexture(nil, "BACKGROUND")
 	f.Bar.Background:SetAllPoints(f.Bar)
@@ -63,7 +76,7 @@ local function CreateBar(frameName)
 end
 
 local function UpdateBarVisibility()
-	print("Update Visibility: ", table.getn(bars))
+	-- print("Update Visibility: ", table.getn(bars))
 
 	for key, value in pairs(bars) do
 		if value.hidden then
@@ -74,17 +87,54 @@ local function UpdateBarVisibility()
 	end
 end
 
+local function reputationCalculator(earnedValue, topValue)
+end
+
 local function UpdateBarValueAndColor()
 	for key, value in pairs(bars) do
 		if not value.hidden then
-			local percent = floor((value.FactionInfo.earnedValue / value.FactionInfo.topValue) * 100)
-			local r, g, b = xVermin:ColorGradient(percent / 100, 1, 0, 0, 1, 1, 0, 0, 1, 0)
+			print(value.FactionInfo.earnedValue, value.FactionInfo.topValue)
+
+			if value.FactionInfo.earnedValue < 0 then
+				standing = "unfriendly"
+				color = {r = 238 / 255, g = 102 / 255, b = 34 / 255}
+				standingValue = 3000 + value.FactionInfo.earnedValue
+				topValue = 3000
+			end
+
+			if value.FactionInfo.earnedValue < -3000 then
+				standing = "hostile"
+				color = {r = 255 / 255, g = 0 / 255, b = 0 / 255}
+				standingValue = 3000 + value.FactionInfo.earnedValue
+				topValue = 3000
+			end
+
+			if value.FactionInfo.earnedValue > 0 then
+				standing = "neutral"
+				color = {r = 255 / 255, g = 255 / 255, b = 0 / 255}
+				standingValue = value.FactionInfo.earnedValue
+				topValue = 3000
+			end
+
+			if value.FactionInfo.earnedValue > 3000 then
+				standing = "friendly"
+				color = {r = 0 / 255, g = 255 / 255, b = 0 / 255}
+				standingValue = value.FactionInfo.earnedValue - 3000
+				topValue = 6000
+			end
+
+			if value.FactionInfo.earnedValue > 9000 then
+				standing = "honored"
+				color = {r = 0 / 255, g = 255 / 255, b = 136 / 255}
+				standingValue = value.FactionInfo.earnedValue - 9000
+				topValue = 12000
+			end
 
 			_G[value.frameStatusBar]:SetMinMaxValues(0, value.FactionInfo.topValue)
 			_G[value.frameStatusBar]:SetValue(value.FactionInfo.earnedValue)
-			_G[value.frameStatusBar].Value:SetText(value.FactionInfo.earnedValue)
+			_G[value.frameStatusBar].Value:SetText(standingValue .. "/" .. topValue)
 			_G[value.frameStatusBar].FactionName:SetText(value.FactionInfo.name)
-			_G[value.frameStatusBar].SetStatusBarColor(r, g, b, 1)
+			_G[value.frameStatusBar]:SetStatusBarColor(color.r, color.g, color.b, 1)
 		end
 	end
 end
@@ -107,7 +157,7 @@ local function UpdateBars()
 		end
 		if isWatched then
 			if not bars[factionIndex] then
-				print("create bar: " .. frameName)
+				-- print("create bar: " .. frameName)
 				CreateBar(frameName)
 				bars[factionIndex] = {
 					factionIndex = factionIndex,

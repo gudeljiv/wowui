@@ -40,6 +40,20 @@ ChocolateBarDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
+			["locked"] = false,
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["r"] = 0,
+					["g"] = 0,
+					["b"] = 0,
+				},
+				["textureName"] = "None",
+			},
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -59,20 +73,6 @@ ChocolateBarDB = {
 					["index"] = 1,
 					["barOffx"] = -88.3325424194336,
 				},
-			},
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["locked"] = false,
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["r"] = 0,
-					["g"] = 0,
-					["b"] = 0,
-				},
-				["textureName"] = "None",
 			},
 			["moveFrames"] = false,
 			["objSettings"] = {
@@ -332,14 +332,14 @@ ChocolateBarDB = {
 					["customLabel"] = "B",
 				},
 			},
-			["desaturated"] = false,
 			["gap"] = 0,
+			["fontName"] = "Friz Quadrata TT",
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
 			["forceColor"] = false,
-			["fontName"] = "Friz Quadrata TT",
+			["desaturated"] = false,
 			["textOffset"] = 2,
 			["height"] = 20,
 			["fixedStrata"] = true,
@@ -367,7 +367,7 @@ CB_PlayedTime = {
 		["total"] = 1719,
 	},
 	["Mxyz-"] = {
-		["total"] = 68217,
+		["total"] = 68934,
 	},
 	["Antun-"] = {
 		["total"] = 52,
@@ -393,11 +393,11 @@ CB_PlayedTime = {
 	["Augustin-"] = {
 		["total"] = 23851,
 	},
-	["Dmitar-"] = {
-		["total"] = 517,
+	["Whatevs-"] = {
+		["total"] = 213,
 	},
-	["Vermins-"] = {
-		["total"] = 3014,
+	["Mxyzptlk-"] = {
+		["total"] = 8398,
 	},
 	["Dotwise-"] = {
 		["total"] = 3924,
@@ -415,18 +415,18 @@ CB_PlayedTime = {
 		["total"] = 1457,
 	},
 	["Mxzq-"] = {
-		["total"] = 277469,
+		["total"] = 278553,
 	},
 	["Grgur-"] = {
 		["total"] = 562,
 	},
-	["Mxyzptlk-"] = {
-		["total"] = 8398,
+	["Vermins-"] = {
+		["total"] = 3014,
 	},
 	["Koloman-"] = {
 		["total"] = 129,
 	},
-	["Whatevs-"] = {
-		["total"] = 213,
+	["Dmitar-"] = {
+		["total"] = 517,
 	},
 }
