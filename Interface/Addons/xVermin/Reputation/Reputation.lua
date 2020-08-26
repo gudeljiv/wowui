@@ -5,12 +5,10 @@ local scale = 1.4
 local bars = {}
 
 local function CreateBar(name, factionIndex)
-	local y = (factionIndex - 1) * 24
-
 	local f = CreateFrame("Frame", name, UIParent)
 	f:SetScale(scale)
 	f:SetSize(size, 12)
-	f:SetPoint("CENTER", UIParent, "CENTER", -600, y)
+	f:SetPoint("CENTER", UIParent, "CENTER", -600, 0)
 	f:EnableMouse(false)
 
 	f.Bar = CreateFrame("StatusBar", name .. "StatusBar", UIParent)
@@ -67,7 +65,7 @@ local function CreateBar(name, factionIndex)
 end
 
 local function UpdateBarVisibility(event)
-	-- print(table.getn(bars))
+	print("Update Visibility: ", table.getn(bars))
 	-- print(event)
 	for key, value in pairs(bars) do -- Tells the engine to go through all of the table and put the keys and values of the table in pairs and then do something with them.
 		-- print(value.name)
@@ -121,7 +119,7 @@ local function UpdateBars(event)
 				bars[factionIndex] = {factionIndex = factionIndex, name = frameName, time = GetTime(), isWatched = isWatched, hidden = false}
 			else
 				if _G[frameName .. "StatusBar"] then
-					_G[frameName .. "StatusBar"]:Show()
+					_G[frameName .. "StatusBar"]:SetAlpha(0.8)
 				end
 			end
 
@@ -130,7 +128,7 @@ local function UpdateBars(event)
 					bars[factionIndex].hidden = "true"
 				end
 				if _G[frameName .. "StatusBar"] then
-					_G[frameName .. "StatusBar"]:Hide()
+					_G[frameName .. "StatusBar"]:SetAlpha(0)
 				end
 			end
 
