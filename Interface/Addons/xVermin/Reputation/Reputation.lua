@@ -5,20 +5,20 @@ local scale = 1.4
 local bars = {}
 
 local function CreateBar(name, factionIndex)
-	local y = (factionIndex - 1) * 100
+	local y = (factionIndex - 1) * 24
 
 	local f = CreateFrame("Frame", name, UIParent)
 	f:SetScale(scale)
-	f:SetSize(size, 18)
-	f:SetPoint("CENTER", UIParent, "CENTER", 0, y)
+	f:SetSize(size, 12)
+	f:SetPoint("CENTER", UIParent, "CENTER", -600, y)
 	f:EnableMouse(false)
 
-	f.Bar = CreateFrame("StatusBar", nil, UIParent)
+	f.Bar = CreateFrame("StatusBar", name .. "StatusBar", UIParent)
 	f.Bar:SetScale(1)
-	f.Bar:SetSize(size * scale, 3)
-	f.Bar:SetPoint("CENTER", f, 0, -23)
+	f.Bar:SetSize(size * scale, 2)
+	f.Bar:SetPoint("CENTER", f, 0, 0)
 	f.Bar:SetStatusBarTexture("Interface\\AddOns\\xVermin\\Media\\statusbarTexture")
-	f.Bar:SetAlpha(0)
+	f.Bar:SetAlpha(0.8)
 
 	f.Bar.Value = f.Bar:CreateFontString(nil, "ARTWORK")
 	f.Bar.Value:SetFont("Fonts\\ARIALN.ttf", 14, "THINOUTLINE")
@@ -63,13 +63,15 @@ local function CreateBar(name, factionIndex)
 	f.Bar.Above:SetTexture("Interface\\AddOns\\xVermin\\Media\\textureArrowAbove")
 	f.Bar.Above:SetPoint("BOTTOM", f.Bar.Below, "TOP", 0, f.Bar:GetHeight())
 
-	local bar = {factionIndex, name, GetTime()}
-	table.insert(bars, bar)
+	print("create bar: " .. name)
 end
 
-local function UpdateBarVisibility()
-	for k, v in pairs(bars) do -- Tells the engine to go through all of the table and put the keys and values of the table in pairs and then do something with them.
-		print(bars.bar)
+local function UpdateBarVisibility(event)
+	-- print(table.getn(bars))
+	-- print(event)
+	for key, value in pairs(bars) do -- Tells the engine to go through all of the table and put the keys and values of the table in pairs and then do something with them.
+		-- print(value.name)
+		-- print("-----------------------------------------")
 	end
 	-- if UnitLevel("player") < MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] then
 	-- 	Reputation.Bar:SetAlpha(0.8)
@@ -78,7 +80,7 @@ local function UpdateBarVisibility()
 	-- end
 end
 
-local function UpdateBarValueAndColor(self, event)
+local function UpdateBarValueAndColor(event)
 	if UnitLevel("player") < MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] then
 		CurrentXP = UnitXP("player")
 		MaxXP = UnitXPMax("player")
@@ -93,21 +95,55 @@ local function UpdateBarValueAndColor(self, event)
 	end
 end
 
-local function UpdateBar()
-	local factionIndex = 1
-	local lastFactionName
-	repeat
-		local name, description, standingId, bottomValue, topValue, earnedValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild = GetFactionInfo(factionIndex)
-		if name == lastFactionName then
-			break
-		end
-		lastFactionName = name
-		-- print("Faction: " .. lastFactionName .. " - " .. earnedValue)
-		CreateBar("ReputationBar" .. factionIndex, factionIndex)
-		factionIndex = factionIndex + 1
-	until factionIndex > 200
-	-- UpdateBarVisibility()
-	-- UpdateBarValueAndColor()
+local function UpdateBars(event)
+	if event then
+		local factionIndex = 1
+		local lastFactionName
+		local create_bar = true
+		local frameName
+
+		repeat
+			local name, description, standingId, bottomValue, topValue, earnedValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild = GetFactionInfo(factionIndex)
+			print(name, lastFactionName, factionIndex)
+			if name == lastFactionName then
+				break
+			end
+			lastFactionName = name
+
+			if bars[factionIndex] then
+				create_bar = false
+			end
+
+			frameName = "xVerminReputationBar" .. factionIndex
+
+			if create_bar and isWatched then
+				CreateBar(frameName, factionIndex)
+				bars[factionIndex] = {factionIndex = factionIndex, name = frameName, time = GetTime(), isWatched = isWatched, hidden = false}
+			else
+				if _G[frameName .. "StatusBar"] then
+					_G[frameName .. "StatusBar"]:Show()
+				end
+			end
+
+			if not isWatched then
+				if bars[factionIndex] then
+					bars[factionIndex].hidden = "true"
+				end
+				if _G[frameName .. "StatusBar"] then
+					_G[frameName .. "StatusBar"]:Hide()
+				end
+			end
+
+			if bars[factionIndex] then
+				print(bars[factionIndex].name, bars[factionIndex].hidden, bars[factionIndex].time)
+			end
+
+			factionIndex = factionIndex + 1
+		until factionIndex > 200
+
+		UpdateBarVisibility(event)
+	-- UpdateBarValueAndColor(event)
+	end
 end
 
 local wf = CreateFrame("Frame")
@@ -116,16 +152,16 @@ wf:RegisterEvent("PLAYER_ENTERING_WORLD")
 wf:SetScript(
 	"OnEvent",
 	function(self, event, isInitialLogin, isReloadingUi)
-		if event == "PLAYER_LEVEL_UP" or (event == "PLAYER_ENTERING_WORLD" and (isInitialLogin or isReloadingUi)) then
-			C_Timer.After(
-				1,
-				function()
-					UpdateBar()
-				end
-			)
-		end
+		-- if event == "PLAYER_ENTERING_WORLD" and (isInitialLogin or isReloadingUi) then
+		-- 	C_Timer.After(
+		-- 		1,
+		-- 		function()
+		-- 			UpdateBars(event)
+		-- 		end
+		-- 	)
+		-- end
 		if event == "UPDATE_FACTION" then
-			UpdateBar()
+			UpdateBars(event)
 		end
 	end
 )
