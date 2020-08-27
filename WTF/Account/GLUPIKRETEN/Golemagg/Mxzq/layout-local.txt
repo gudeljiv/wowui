@@ -76,13 +76,6 @@ X: 480
 Y: 81
 W: 170
 H: 240
-Frame: ItemRefTooltip
-FrameLevel: 1
-Anchor: CENTER
-X: -360
-Y: 199
-W: 128
-H: 64
 Frame: AtlasLoot_GUI-Frame
 FrameLevel: 1
 Anchor: CENTER
@@ -111,6 +104,13 @@ X: 250
 Y: -96
 W: 232
 H: 100
+Frame: ItemRefTooltip
+FrameLevel: 1
+Anchor: CENTER
+X: -360
+Y: 199
+W: 361
+H: 252
 Frame: aux_frame
 FrameLevel: 1
 Anchor: TOPLEFT
