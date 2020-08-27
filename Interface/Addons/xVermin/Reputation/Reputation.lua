@@ -157,7 +157,6 @@ local function UpdateBars()
 		end
 		if isWatched then
 			if not bars[factionIndex] then
-				-- print("create bar: " .. frameName)
 				CreateBar(frameName)
 				bars[factionIndex] = {
 					factionIndex = factionIndex,
