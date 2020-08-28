@@ -130,6 +130,20 @@ local function UpdateBarValueAndColor()
 				topValue = 12000
 			end
 
+			if value.FactionInfo.earnedValue > 12000 then
+				standing = "revered"
+				color = {r = 0 / 255, g = 255 / 255, b = 204 / 255}
+				standingValue = value.FactionInfo.earnedValue - 12000
+				topValue = 21000
+			end
+
+			if value.FactionInfo.earnedValue > 21000 then
+				standing = "exalted"
+				color = {r = 0 / 255, g = 255 / 255, b = 255 / 255}
+				standingValue = value.FactionInfo.earnedValue - 21000
+				topValue = 999
+			end
+
 			_G[value.frameStatusBar]:SetMinMaxValues(0, value.FactionInfo.topValue)
 			_G[value.frameStatusBar]:SetValue(value.FactionInfo.earnedValue)
 			_G[value.frameStatusBar].Value:SetText(standingValue .. "/" .. topValue)
