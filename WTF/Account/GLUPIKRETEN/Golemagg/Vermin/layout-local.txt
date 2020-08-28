@@ -39,7 +39,7 @@ FrameLevel: 1
 Anchor: TOP
 X: -4
 Y: -138
-W: 850
+W: 858
 H: 660
 Frame: AddonList
 FrameLevel: 1
