@@ -13,7 +13,7 @@ PetXP:EnableMouse(false)
 PetXP.XPbar = CreateFrame("StatusBar", "PetXPFrameStatusBar", UIParent)
 PetXP.XPbar:SetScale(1)
 PetXP.XPbar:SetSize(size * scale, 3)
-PetXP.XPbar:SetPoint("CENTER", PetXP, 0, -23)
+PetXP.XPbar:SetPoint("CENTER", PetXP, 0, 0)
 PetXP.XPbar:SetStatusBarTexture("Interface\\AddOns\\xVermin\\Media\\statusbarTexture")
 PetXP.XPbar:SetAlpha(0)
 

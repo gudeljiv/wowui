@@ -4,13 +4,13 @@ VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
+/use [nocombat]item:1708
 /castsequence [combat]
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:3771
-/castsequence [combat]item:1710,item:1710,item:1710,item:1710,item:1710
+/castsequence [combat]item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929
 END
 VER 3 0000000000000001 "FRAME" "132150"
 /run TargetFrameDebuff1Count:ClearAllPoints()
@@ -23,12 +23,12 @@ VER 3 0000000000000007 "MAGE FOOD" "136173"
 END
 VER 3 0000000000000002 "MOVE" "Ability_Ambush."
 /run xVerminReputationMasterFrame:ClearAllPoints()
-/run xVerminReputationMasterFrame:SetPoint("BOTTOM", PlayerFrameXPStatusBar, "TOP", 0, -300)
+/run xVerminReputationMasterFrame:SetPoint("BOTTOM", PlayerFrameXPStatusBar, "TOP", 0, 300)
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
-#showtooltip item:0
+#showtooltip item:3771
 /cast feed pet
-/use item:0
+/use item:3771
 END
 VER 3 0000000000000008 "ZygorAction1" "134400"
 END

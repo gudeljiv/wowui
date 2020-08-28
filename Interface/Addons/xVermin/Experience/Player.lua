@@ -6,13 +6,13 @@ local scale = 1.4
 local PlayerXP = CreateFrame("Frame", "PlayerXPFrame", UIParent)
 PlayerXP:SetScale(scale)
 PlayerXP:SetSize(size, 18)
-PlayerXP:SetPoint("BOTTOMLEFT", ChatFrame1, "BOTTOMRIGHT", 5, 15)
+PlayerXP:SetPoint("BOTTOMLEFT", ChatFrame1, "BOTTOMRIGHT", 5, 0)
 PlayerXP:EnableMouse(false)
 
 PlayerXP.XPbar = CreateFrame("StatusBar", "PlayerXPFrameStatusBar", UIParent)
 PlayerXP.XPbar:SetScale(1)
 PlayerXP.XPbar:SetSize(size * scale, 3)
-PlayerXP.XPbar:SetPoint("CENTER", PlayerXP, 0, -23)
+PlayerXP.XPbar:SetPoint("CENTER", PlayerXP, 0, 0)
 PlayerXP.XPbar:SetStatusBarTexture("Interface\\AddOns\\xVermin\\Media\\statusbarTexture")
 PlayerXP.XPbar:SetAlpha(0)
 

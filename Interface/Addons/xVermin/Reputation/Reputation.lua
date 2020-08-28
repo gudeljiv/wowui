@@ -13,9 +13,9 @@ local standings = {
 
 local masterFrame = CreateFrame("Frame", "xVerminReputationMasterFrame", UIParent)
 masterFrame:SetScale(scale)
-masterFrame:SetSize(size, 500)
-masterFrame:SetPoint("CENTER", UIParent, "CENTER", -600, 0)
-masterFrame:Show()
+masterFrame:SetSize(size, 300)
+masterFrame:SetPoint("BOTTOMLEFT", ChatFrame1, "BOTTOMRIGHT", 5, 50)
+masterFrame:Hide()
 
 local function CreateBar(frameName)
 	local f = CreateFrame("Frame", frameName, UIParent)
@@ -92,19 +92,18 @@ local function UpdateBarVisibility()
 end
 
 local function UpdateBarPosition()
-	if _G["PetFrameXPStatusBar"] and _G["PetFrameXPStatusBar"]:IsVisible() then
-		masterFrame:SetPoint("BOTTOM", PetFrameXPStatusBar, "TOP", 0, -50)
-	elseif _G["PlayerFrameXPStatusBar"] and _G["PlayerFrameXPStatusBar"]:IsVisible() then
-		masterFrame:SetPoint("BOTTOM", PlayerFrameXPStatusBar, "TOP", 0, -50)
-	else
-		masterFrame:SetPoint("BOTTOMLEFT", ChatFrame1, "BOTTOMRIGHT", 5, 15)
-	end
+	-- if _G["PlayerFrameXPStatusBar"] and _G["PlayerFrameXPStatusBar"]:IsVisible() then
+	-- 	masterFrame:SetPoint("BOTTOM", PlayerFrameXPStatusBar, "TOP", 0, -50)
+	-- end
+	-- if _G["PetFrameXPStatusBar"] and _G["PetFrameXPStatusBar"]:IsVisible() then
+	-- 	masterFrame:SetPoint("BOTTOM", PetFrameXPStatusBar, "TOP", 0, -50)
+	-- end
 end
 
 local function UpdateBarValueAndColor()
 	for key, value in pairs(bars) do
 		if not value.hidden then
-			print(value.FactionInfo.earnedValue, value.FactionInfo.topValue)
+			-- print(value.FactionInfo.earnedValue, value.FactionInfo.topValue)
 
 			if value.FactionInfo.earnedValue < 0 then
 				standing = "unfriendly"
