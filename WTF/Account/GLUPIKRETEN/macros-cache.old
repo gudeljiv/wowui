@@ -22,8 +22,8 @@ VER 3 0000000000000007 "MAGE FOOD" "136173"
 /use [nocombat]item:5349
 END
 VER 3 0000000000000002 "MOVE" "Ability_Ambush."
-/run ChatFrame3ButtonFrameBottomButton:ClearAllPoints()
-/run ChatFrame3ButtonFrameBottomButton:SetPoint("BOTTOMRIGHT", ChatFrame3, "BOTTOMRIGHT", -10, 0)
+/run xVerminReputationMasterFrame:ClearAllPoints()
+/run xVerminReputationMasterFrame:SetPoint("BOTTOM", PlayerFrameXPStatusBar, "TOP", 0, -300)
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 #showtooltip item:0

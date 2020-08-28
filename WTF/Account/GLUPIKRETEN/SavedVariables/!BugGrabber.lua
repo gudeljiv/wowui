@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 2178,
 	["lastSanitation"] = 3,
-	["session"] = 2163,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -173,8 +173,8 @@ BugGrabberDB = {
 		}, -- [21]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["session"] = 1336,
 			["time"] = "2020/07/26 13:26:58",
+			["session"] = 1336,
 			["counter"] = 2,
 		}, -- [22]
 		{
@@ -554,8 +554,8 @@ BugGrabberDB = {
 		}, -- [69]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["time"] = "2020/07/27 20:37:46",
 			["session"] = 1423,
+			["time"] = "2020/07/27 20:37:46",
 			["counter"] = 4,
 		}, -- [70]
 		{
@@ -820,8 +820,8 @@ BugGrabberDB = {
 		}, -- [103]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["time"] = "2020/08/02 10:06:15",
 			["session"] = 1605,
+			["time"] = "2020/08/02 10:06:15",
 			["counter"] = 3,
 		}, -- [104]
 		{
@@ -961,8 +961,8 @@ BugGrabberDB = {
 		}, -- [121]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
-			["session"] = 1654,
 			["time"] = "2020/08/02 20:13:03",
+			["session"] = 1654,
 			["counter"] = 3,
 		}, -- [122]
 		{
@@ -1327,8 +1327,8 @@ BugGrabberDB = {
 		}, -- [167]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["session"] = 1843,
 			["time"] = "2020/08/13 21:31:07",
+			["session"] = 1843,
 			["counter"] = 6,
 		}, -- [168]
 		{
@@ -1449,8 +1449,8 @@ BugGrabberDB = {
 		}, -- [183]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Experience.lua",
-			["session"] = 1943,
 			["time"] = "2020/08/19 21:35:15",
+			["session"] = 1943,
 			["counter"] = 6,
 		}, -- [184]
 		{
@@ -1703,8 +1703,8 @@ BugGrabberDB = {
 		}, -- [215]
 		{
 			["message"] = "(null)",
-			["time"] = "2020/07/24 16:00:06",
 			["session"] = 2103,
+			["time"] = "2020/07/24 16:00:06",
 			["counter"] = 88,
 		}, -- [216]
 		{
@@ -1778,5 +1778,53 @@ BugGrabberDB = {
 			["session"] = 2154,
 			["counter"] = 5,
 		}, -- [225]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:149: attempt to concatenate global 'topValue' (a nil value)",
+			["time"] = "2020/08/28 20:37:32",
+			["locals"] = "(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 14 = <table> {\n }\n}\n(for control) = 14\nkey = 14\nvalue = <table> {\n factionIndex = 14\n time = 1370930.917000\n frameName = \"xVerminReputationBar14\"\n FactionInfo = <table> {\n }\n isWatched = true\n hidden = false\n frameStatusBar = \"xVerminReputationBar14StatusBar\"\n}\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = \"/\"\n(*temporary) = nil\n(*temporary) = true\n(*temporary) = \"attempt to concatenate global 'topValue' (a nil value)\"\nbars = <table> {\n 14 = <table> {\n }\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:149: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:93>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:196: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:156>",
+			["session"] = 2165,
+			["counter"] = 1,
+		}, -- [226]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:95: attempt to index field 'PetFrameXP' (a nil value)",
+			["time"] = "2020/08/28 20:48:35",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'PetFrameXP' (a nil value)\"\nmasterFrame = <unnamed> {\n 0 = <userdata>\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:95: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:94>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:206: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:167>",
+			["session"] = 2172,
+			["counter"] = 5,
+		}, -- [227]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:95: attempt to index field 'PetFrameXPStatusBar' (a nil value)",
+			["time"] = "2020/08/28 20:50:15",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'PetFrameXPStatusBar' (a nil value)\"\nmasterFrame = <unnamed> {\n 0 = <userdata>\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:95: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:94>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:206: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:167>",
+			["session"] = 2173,
+			["counter"] = 5,
+		}, -- [228]
+		{
+			["message"] = "[string \"PetFrameXPStatusBar:Show()\"]:1: attempt to index global 'PetFrameXPStatusBar' (a nil value)",
+			["time"] = "2020/08/28 20:50:37",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'PetFrameXPStatusBar' (a nil value)\"\n",
+			["stack"] = "[string \"PetFrameXPStatusBar:Show()\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 2173,
+			["counter"] = 1,
+		}, -- [229]
+		{
+			["message"] = "[string \"xVerminReputationMasterFrame:ClearAllPoints...\"]:1: attempt to index global 'xVerminReputationMasterFrame' (a nil value)",
+			["time"] = "2020/08/28 20:53:06",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'xVerminReputationMasterFrame' (a nil value)\"\n",
+			["stack"] = "[string \"xVerminReputationMasterFrame:ClearAllPoints...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2783: in function <Interface\\FrameXML\\ChatFrame.lua:2776>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:338: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 2176,
+			["counter"] = 6,
+		}, -- [230]
+		{
+			["message"] = "[string \"xVerminReputationMasterFrame:SetPoint(\"BOTT...\"]:1: attempt to index global 'xVerminReputationMasterFrame' (a nil value)",
+			["time"] = "2020/08/28 20:52:37",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'xVerminReputationMasterFrame' (a nil value)\"\n",
+			["stack"] = "[string \"xVerminReputationMasterFrame:SetPoint(\"BOTT...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 2176,
+			["counter"] = 7,
+		}, -- [231]
 	},
 }

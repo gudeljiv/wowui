@@ -4,99 +4,99 @@ Blizzard_Console_SavedVars = {
 	["height"] = 300,
 	["messageHistory"] = {
 		{
-			"[IBN_Login] Joining realmsubRegion=\"43-101-89\" realmAddress=\"43-4-8\"", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [1]
 		{
-			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [2]
 		{
-			"NetClient::HandleConnect()\n", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [3]
 		{
-			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [4]
 		{
-			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [5]
 		{
-			"[GlueLogin] Disconnecting from authentication server.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [6]
 		{
-			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [7]
 		{
-			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [8]
 		{
-			"[GlueLogin] Disconnected from authentication server.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [9]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [10]
 		{
-			"Got new connection 3", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [11]
 		{
-			"Proficiency in item class 2 set to 0x0000000010", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [12]
 		{
-			"Proficiency in item class 4 set to 0x0000000001", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [13]
 		{
-			"Proficiency in item class 2 set to 0x0000004010", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [14]
 		{
-			"Proficiency in item class 2 set to 0x0000084010", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [15]
 		{
-			"Proficiency in item class 4 set to 0x0000000003", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [16]
 		{
-			"Proficiency in item class 2 set to 0x0000084010", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [17]
 		{
-			"Proficiency in item class 4 set to 0x0000000003", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [18]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [19]
 		{
-			"Time set to 8/27/2020 (Thu) 22:05", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [20]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [21]
 		{
-			"Time played:", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [22]
 		{
-			"Total: 0d 19h 24m 26s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [23]
 		{
-			"Level: 0d 17h 48m 40s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [24]
 		{
@@ -104,15 +104,15 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [25]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [26]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Total: 0d 19h 34m 21s", -- [1]
 			0, -- [2]
 		}, -- [27]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Level: 0d 17h 58m 35s", -- [1]
 			0, -- [2]
 		}, -- [28]
 		{
@@ -284,119 +284,119 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [70]
 		{
-			"Time played:", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [71]
 		{
-			"Total: 0d 19h 24m 51s", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [72]
 		{
-			"Level: 0d 17h 49m 5s", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [73]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Attempted to register existing command: ShowObjUsage\n", -- [1]
 			0, -- [2]
 		}, -- [74]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Attempted to register existing command: SetDifficulty\n", -- [1]
 			0, -- [2]
 		}, -- [75]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [76]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [77]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [78]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
 		}, -- [79]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 2 set to 0x0000000081", -- [1]
 			0, -- [2]
 		}, -- [80]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 2 set to 0x0000000181", -- [1]
 			0, -- [2]
 		}, -- [81]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 2 set to 0x0000000183", -- [1]
 			0, -- [2]
 		}, -- [82]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 2 set to 0x0000008183", -- [1]
 			0, -- [2]
 		}, -- [83]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 4 set to 0x0000000001", -- [1]
 			0, -- [2]
 		}, -- [84]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 2 set to 0x000000c183", -- [1]
 			0, -- [2]
 		}, -- [85]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 2 set to 0x000004c183", -- [1]
 			0, -- [2]
 		}, -- [86]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 2 set to 0x000004c1c3", -- [1]
 			0, -- [2]
 		}, -- [87]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 4 set to 0x0000000009", -- [1]
 			0, -- [2]
 		}, -- [88]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 4 set to 0x000000000d", -- [1]
 			0, -- [2]
 		}, -- [89]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 4 set to 0x000000000f", -- [1]
 			0, -- [2]
 		}, -- [90]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 4 set to 0x000000004f", -- [1]
 			0, -- [2]
 		}, -- [91]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 2 set to 0x000004c1c3", -- [1]
 			0, -- [2]
 		}, -- [92]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 4 set to 0x000000004f", -- [1]
 			0, -- [2]
 		}, -- [93]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [94]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time set to 8/28/2020 (Fri) 20:30", -- [1]
 			0, -- [2]
 		}, -- [95]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [96]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [97]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Total: 2d 0h 46m 13s", -- [1]
 			0, -- [2]
 		}, -- [98]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Level: 0d 1h 4m 19s", -- [1]
 			0, -- [2]
 		}, -- [99]
 		{
@@ -1068,15 +1068,15 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [266]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [267]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Total: 2d 0h 47m 7s", -- [1]
 			0, -- [2]
 		}, -- [268]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Level: 0d 1h 5m 13s", -- [1]
 			0, -- [2]
 		}, -- [269]
 		{
@@ -1508,95 +1508,95 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [376]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [377]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [378]
 		{
-			"Attempted to register existing command: ShowObjUsage\n", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [379]
 		{
-			"Attempted to register existing command: SetDifficulty\n", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [380]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [381]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [382]
 		{
-			"Got new connection 3", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [383]
 		{
-			"Proficiency in item class 2 set to 0x0000000001", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [384]
 		{
-			"Proficiency in item class 2 set to 0x0000000005", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [385]
 		{
-			"Proficiency in item class 2 set to 0x000000000d", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [386]
 		{
-			"Proficiency in item class 2 set to 0x000000040d", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [387]
 		{
-			"Proficiency in item class 4 set to 0x0000000001", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [388]
 		{
-			"Proficiency in item class 2 set to 0x000000440d", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [389]
 		{
-			"Proficiency in item class 4 set to 0x0000000005", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [390]
 		{
-			"Proficiency in item class 4 set to 0x0000000007", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [391]
 		{
-			"Proficiency in item class 2 set to 0x000000440d", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [392]
 		{
-			"Proficiency in item class 4 set to 0x0000000007", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [393]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [394]
 		{
-			"Time set to 8/27/2020 (Thu) 22:14", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [395]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [396]
 		{
-			"Time played:", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [397]
 		{
-			"Total: 3d 5h 32m 5s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [398]
 		{
-			"Level: 0d 10h 36m 25s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [399]
 		{
@@ -1900,15 +1900,15 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [474]
 		{
-			"Time played:", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [475]
 		{
-			"Total: 3d 5h 32m 34s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [476]
 		{
-			"Level: 0d 10h 36m 54s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [477]
 		{
@@ -2132,27 +2132,27 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [532]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [533]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [534]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [535]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [536]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Total: 2d 0h 53m 1s", -- [1]
 			0, -- [2]
 		}, -- [537]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Level: 0d 1h 11m 7s", -- [1]
 			0, -- [2]
 		}, -- [538]
 		{
@@ -2244,15 +2244,15 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [560]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [561]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Total: 2d 0h 53m 55s", -- [1]
 			0, -- [2]
 		}, -- [562]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Level: 0d 1h 12m 1s", -- [1]
 			0, -- [2]
 		}, -- [563]
 		{
@@ -2396,27 +2396,27 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [598]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [599]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [600]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [601]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [602]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Total: 2d 0h 56m 37s", -- [1]
 			0, -- [2]
 		}, -- [603]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Level: 0d 1h 14m 43s", -- [1]
 			0, -- [2]
 		}, -- [604]
 		{
@@ -2460,27 +2460,27 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [614]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [615]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [616]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [617]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [618]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Total: 2d 0h 57m 13s", -- [1]
 			0, -- [2]
 		}, -- [619]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Level: 0d 1h 15m 19s", -- [1]
 			0, -- [2]
 		}, -- [620]
 		{
@@ -2600,27 +2600,27 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [649]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [650]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [651]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [652]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [653]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Total: 2d 0h 58m 6s", -- [1]
 			0, -- [2]
 		}, -- [654]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Level: 0d 1h 16m 12s", -- [1]
 			0, -- [2]
 		}, -- [655]
 		{
@@ -2680,27 +2680,27 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [669]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [670]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [671]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [672]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [673]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Total: 2d 0h 58m 20s", -- [1]
 			0, -- [2]
 		}, -- [674]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Level: 0d 1h 16m 26s", -- [1]
 			0, -- [2]
 		}, -- [675]
 		{
@@ -2740,27 +2740,27 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [684]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [685]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [686]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [687]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [688]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Total: 2d 0h 58m 45s", -- [1]
 			0, -- [2]
 		}, -- [689]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Level: 0d 1h 16m 51s", -- [1]
 			0, -- [2]
 		}, -- [690]
 		{
@@ -2900,15 +2900,15 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [724]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [725]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Total: 2d 0h 59m 39s", -- [1]
 			0, -- [2]
 		}, -- [726]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Level: 0d 1h 17m 45s", -- [1]
 			0, -- [2]
 		}, -- [727]
 		{
@@ -3192,383 +3192,383 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [797]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [798]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [799]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [800]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [801]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Total: 2d 1h 3m 22s", -- [1]
 			0, -- [2]
 		}, -- [802]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Level: 0d 1h 21m 28s", -- [1]
 			0, -- [2]
 		}, -- [803]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [804]
 		{
-			"Sorting particles normally.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [805]
 		{
-			"Water detail changed to 3", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [806]
 		{
-			"Ripple detail changed to 2", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [807]
 		{
-			"Reflection mode changed to 3", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [808]
 		{
-			"Reflection downscale changed to 0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [809]
 		{
-			"Sunshafts quality changed to 2", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [810]
 		{
-			"Enabling BSP node cache (first time - starting up)", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [811]
 		{
-			"WorldPoolUsage must be stream, dynamic or static.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [812]
 		{
-			"CVar 'worldPoolUsage' failed validation for its initial value.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [813]
 		{
-			"Alpha map bit depth set to 8bit on restart.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [814]
 		{
-			"Volume fog enabled.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [815]
 		{
-			"Projected textures enabled.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [816]
 		{
-			"Shadow mode changed to 4 - 4 band dynamic shadows, 2048", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [817]
 		{
-			"Shadow texture size changed to 2048.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [818]
 		{
-			"Soft shadows changed to 1.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [819]
 		{
-			"SSAO mode set to 4", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [820]
 		{
-			"SSAO distance value set to 100.000000", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [821]
 		{
-			"SSAO blur set to 2", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [822]
 		{
-			"SkyCloudLOD set to 0", -- [1]
+			"Total: 2d 1h 4m 16s", -- [1]
 			0, -- [2]
 		}, -- [823]
 		{
-			"Terrain mip level changed to 0.", -- [1]
+			"Level: 0d 1h 22m 22s", -- [1]
 			0, -- [2]
 		}, -- [824]
 		{
-			"Render scale changed to 1", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [825]
 		{
-			"Resample quality changed to 2", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [826]
 		{
-			"MSAA disabled", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [827]
 		{
-			"MSAA for alpha-test enabled.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [828]
 		{
-			"Component texture lod changed to 0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [829]
 		{
-			"Component texture lod changed to 0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [830]
 		{
-			"World preload object sort enabled.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [831]
 		{
-			"World load object sort enabled.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [832]
 		{
-			"World preload non critical disabled.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [833]
 		{
-			"World preload high res textures enabled.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [834]
 		{
-			"FFX: Anti Aliasing Mode disabled", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [835]
 		{
-			"FFX: Color Blind Test Mode Disabled", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [836]
 		{
-			"FFX: Color correction enabled", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [837]
 		{
-			"Full memory crash dump disabled", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [838]
 		{
-			"Error display disabled", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [839]
 		{
-			"Error display shown", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [840]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [841]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"Total: 2d 1h 5m 2s", -- [1]
 			0, -- [2]
 		}, -- [842]
 		{
-			"Now filtering: all messages", -- [1]
+			"Level: 0d 1h 23m 8s", -- [1]
 			0, -- [2]
 		}, -- [843]
 		{
-			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [844]
 		{
-			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [845]
 		{
-			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [846]
 		{
-			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [847]
 		{
-			"[GlueLogin] Starting loginlauncherPortal=\"eu.actual.battle.net\" loginPortal=\"eu.actual.battle.net:1119\"", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [848]
 		{
-			"[GlueLogin] Resetting", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [849]
 		{
-			"[IBN_Login] Initializing", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [850]
 		{
-			"[IBN_Login] Attempting logonhost=\"eu.actual.battle.net\" port=\"1119\"", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [851]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [852]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [853]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [854]
 		{
-			"[GlueLogin] Logon complete.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [855]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [856]
 		{
-			"[IBN_Login] Requesting realm list ticket", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [857]
 		{
-			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [858]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [859]
 		{
-			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [860]
 		{
-			"[IBN_Login] Requesting last played charsnumSubRegions=\"1\"", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [861]
 		{
-			"[GlueLogin] Realm list ready.", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [862]
 		{
-			"[IBN_Login] Joining realmsubRegion=\"43-101-89\" realmAddress=\"43-4-8\"", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [863]
 		{
-			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [864]
 		{
-			"NetClient::HandleConnect()\n", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [865]
 		{
-			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			"Total: 2d 1h 5m 48s", -- [1]
 			0, -- [2]
 		}, -- [866]
 		{
-			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
+			"Level: 0d 1h 23m 54s", -- [1]
 			0, -- [2]
 		}, -- [867]
 		{
-			"[GlueLogin] Disconnecting from authentication server.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [868]
 		{
-			"Got new connection 2", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [869]
 		{
-			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [870]
 		{
-			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [871]
 		{
-			"[GlueLogin] Disconnected from authentication server.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [872]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [873]
 		{
-			"Got new connection 3", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [874]
 		{
-			"Proficiency in item class 2 set to 0x0000000001", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [875]
 		{
-			"Proficiency in item class 2 set to 0x0000000005", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [876]
 		{
-			"Proficiency in item class 2 set to 0x000000000d", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [877]
 		{
-			"Proficiency in item class 2 set to 0x000000040d", -- [1]
+			"Total: 2d 1h 6m 9s", -- [1]
 			0, -- [2]
 		}, -- [878]
 		{
-			"Proficiency in item class 4 set to 0x0000000001", -- [1]
+			"Level: 0d 1h 24m 15s", -- [1]
 			0, -- [2]
 		}, -- [879]
 		{
-			"Proficiency in item class 2 set to 0x000000440d", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [880]
 		{
-			"Proficiency in item class 4 set to 0x0000000005", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [881]
 		{
-			"Proficiency in item class 4 set to 0x0000000007", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [882]
 		{
-			"Proficiency in item class 2 set to 0x000000440d", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [883]
 		{
-			"Proficiency in item class 4 set to 0x0000000007", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [884]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [885]
 		{
-			"Time set to 8/28/2020 (Fri) 8:16", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [886]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [887]
 		{
-			"Time played:", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [888]
 		{
-			"Total: 3d 5h 38m 14s", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [889]
 		{
-			"Level: 0d 10h 42m 34s", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [890]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Total: 2d 1h 7m 4s", -- [1]
 			0, -- [2]
 		}, -- [891]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Level: 0d 1h 25m 10s", -- [1]
 			0, -- [2]
 		}, -- [892]
 		{
@@ -3664,19 +3664,19 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [915]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [916]
 		{
-			"Time played:", -- [1]
+			"Total: 2d 1h 7m 58s", -- [1]
 			0, -- [2]
 		}, -- [917]
 		{
-			"Total: 3d 5h 38m 59s", -- [1]
+			"Level: 0d 1h 26m 4s", -- [1]
 			0, -- [2]
 		}, -- [918]
 		{
-			"Level: 0d 10h 43m 19s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [919]
 		{
@@ -3688,195 +3688,195 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [921]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [922]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [923]
 		{
-			"Attempted to register existing command: ShowObjUsage\n", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [924]
 		{
-			"Attempted to register existing command: SetDifficulty\n", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [925]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [926]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [927]
 		{
-			"Got new connection 3", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [928]
 		{
-			"Proficiency in item class 2 set to 0x0000000080", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [929]
 		{
-			"Proficiency in item class 2 set to 0x0000000081", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [930]
 		{
-			"Proficiency in item class 2 set to 0x0000000181", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [931]
 		{
-			"Proficiency in item class 2 set to 0x0000000183", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [932]
 		{
-			"Proficiency in item class 2 set to 0x0000008183", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [933]
 		{
-			"Proficiency in item class 4 set to 0x0000000001", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [934]
 		{
-			"Proficiency in item class 2 set to 0x000000c183", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [935]
 		{
-			"Proficiency in item class 2 set to 0x000004c183", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [936]
 		{
-			"Proficiency in item class 2 set to 0x000004c1c3", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [937]
 		{
-			"Proficiency in item class 4 set to 0x0000000009", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [938]
 		{
-			"Proficiency in item class 4 set to 0x000000000d", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [939]
 		{
-			"Proficiency in item class 4 set to 0x000000000f", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [940]
 		{
-			"Proficiency in item class 4 set to 0x000000004f", -- [1]
+			"Total: 2d 1h 8m 25s", -- [1]
 			0, -- [2]
 		}, -- [941]
 		{
-			"Proficiency in item class 2 set to 0x000004c1c3", -- [1]
+			"Level: 0d 1h 26m 31s", -- [1]
 			0, -- [2]
 		}, -- [942]
 		{
-			"Proficiency in item class 4 set to 0x000000004f", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [943]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [944]
 		{
-			"Time set to 8/28/2020 (Fri) 8:17", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [945]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [946]
 		{
-			"Time played:", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [947]
 		{
-			"Total: 2d 0h 46m 5s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [948]
 		{
-			"Level: 0d 1h 4m 11s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [949]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [950]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [951]
 		{
-			"Attempted to register existing command: ShowObjUsage\n", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [952]
 		{
-			"Attempted to register existing command: SetDifficulty\n", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [953]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [954]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [955]
 		{
-			"Got new connection 3", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [956]
 		{
-			"Proficiency in item class 2 set to 0x0000000010", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [957]
 		{
-			"Proficiency in item class 4 set to 0x0000000001", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [958]
 		{
-			"Proficiency in item class 2 set to 0x0000004010", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [959]
 		{
-			"Proficiency in item class 2 set to 0x0000084010", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [960]
 		{
-			"Proficiency in item class 4 set to 0x0000000003", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [961]
 		{
-			"Proficiency in item class 2 set to 0x0000084010", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [962]
 		{
-			"Proficiency in item class 4 set to 0x0000000003", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [963]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [964]
 		{
-			"Time set to 8/28/2020 (Fri) 8:17", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [965]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [966]
 		{
-			"Time played:", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [967]
 		{
-			"Total: 0d 19h 30m 59s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [968]
 		{
-			"Level: 0d 17h 55m 13s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [969]
 		{
@@ -3916,15 +3916,15 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [978]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [979]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Total: 2d 1h 9m 19s", -- [1]
 			0, -- [2]
 		}, -- [980]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Level: 0d 1h 27m 25s", -- [1]
 			0, -- [2]
 		}, -- [981]
 		{
@@ -3940,15 +3940,15 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [984]
 		{
-			"Time played:", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [985]
 		{
-			"Total: 0d 19h 31m 52s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [986]
 		{
-			"Level: 0d 17h 56m 6s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [987]
 		{
@@ -3972,27 +3972,27 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [992]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [993]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [994]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [995]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [996]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Total: 2d 1h 10m 3s", -- [1]
 			0, -- [2]
 		}, -- [997]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Level: 0d 1h 28m 9s", -- [1]
 			0, -- [2]
 		}, -- [998]
 		{

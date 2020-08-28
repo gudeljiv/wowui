@@ -11,11 +11,17 @@ local standings = {
 	hostile = {value = -3000, color = "red"}
 }
 
+local masterFrame = CreateFrame("Frame", "xVerminReputationMasterFrame", UIParent)
+masterFrame:SetScale(scale)
+masterFrame:SetSize(size, 500)
+masterFrame:SetPoint("CENTER", UIParent, "CENTER", -600, 0)
+masterFrame:Show()
+
 local function CreateBar(frameName)
 	local f = CreateFrame("Frame", frameName, UIParent)
 	f:SetScale(scale)
 	f:SetSize(size, 12)
-	f:SetPoint("CENTER", UIParent, "CENTER", -600, 0)
+	f:SetPoint("BOTTOM", masterFrame, 0, 0)
 	f:EnableMouse(false)
 
 	f.Bar = CreateFrame("StatusBar", frameName .. "StatusBar", UIParent)
@@ -76,8 +82,6 @@ local function CreateBar(frameName)
 end
 
 local function UpdateBarVisibility()
-	-- print("Update Visibility: ", table.getn(bars))
-
 	for key, value in pairs(bars) do
 		if value.hidden then
 			_G[value.frameStatusBar]:SetAlpha(0)
@@ -87,7 +91,14 @@ local function UpdateBarVisibility()
 	end
 end
 
-local function reputationCalculator(earnedValue, topValue)
+local function UpdateBarPosition()
+	if _G["PetFrameXPStatusBar"] and _G["PetFrameXPStatusBar"]:IsVisible() then
+		masterFrame:SetPoint("BOTTOM", PetFrameXPStatusBar, "TOP", 0, -50)
+	elseif _G["PlayerFrameXPStatusBar"] and _G["PlayerFrameXPStatusBar"]:IsVisible() then
+		masterFrame:SetPoint("BOTTOM", PlayerFrameXPStatusBar, "TOP", 0, -50)
+	else
+		masterFrame:SetPoint("BOTTOMLEFT", ChatFrame1, "BOTTOMRIGHT", 5, 15)
+	end
 end
 
 local function UpdateBarValueAndColor()
@@ -109,7 +120,7 @@ local function UpdateBarValueAndColor()
 				topValue = 3000
 			end
 
-			if value.FactionInfo.earnedValue > 0 then
+			if value.FactionInfo.earnedValue >= 0 then
 				standing = "neutral"
 				color = {r = 255 / 255, g = 255 / 255, b = 0 / 255}
 				standingValue = value.FactionInfo.earnedValue
@@ -192,6 +203,7 @@ local function UpdateBars()
 		factionIndex = factionIndex + 1
 	until factionIndex > 200
 
+	UpdateBarPosition()
 	UpdateBarVisibility()
 	UpdateBarValueAndColor()
 end

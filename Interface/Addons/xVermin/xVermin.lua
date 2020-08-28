@@ -19,7 +19,7 @@ f:SetScript(
 			-- Reposition toast frame.
 			-------------------------------------------
 			BNToastFrame:ClearAllPoints()
-			BNToastFrame:SetPoint("BOTTOMLEFT", ChatFrame1, "TOPLEFT", 0, 35)
+			BNToastFrame:SetPoint("BOTTOMLEFT", ChatFrame4, "TOPLEFT", 0, 35)
 			BNToastFrame.CloseButton:Hide()
 			BNToastFrame:SetBackdrop(
 				{
