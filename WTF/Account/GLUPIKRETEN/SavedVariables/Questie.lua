@@ -50,8 +50,7 @@ QuestieConfig = {
 	},
 	["char"] = {
 		["Mxzq - Golemagg"] = {
-			["collapsedZones"] = {
-			},
+			["TrackerWidth"] = 0,
 			["migrationVersion"] = 1,
 			["complete"] = {
 				[6282] = true,
@@ -162,14 +161,6 @@ QuestieConfig = {
 			["TrackerHiddenQuests"] = {
 			},
 			["collapsedQuests"] = {
-			},
-			["TrackedQuests"] = {
-			},
-			["trackerSetpoint"] = "AUTO",
-			["TrackerHiddenObjectives"] = {
-			},
-			["TrackerWidth"] = 0,
-			["AutoUntrackedQuests"] = {
 			},
 			["journey"] = {
 				{
@@ -2070,26 +2061,41 @@ QuestieConfig = {
 					["NewLevel"] = 31,
 				}, -- [279]
 			},
+			["trackerSetpoint"] = "AUTO",
+			["TrackerHiddenObjectives"] = {
+			},
+			["collapsedZones"] = {
+			},
+			["AutoUntrackedQuests"] = {
+			},
+			["TrackedQuests"] = {
+			},
 		},
 		["Mxyz - Golemagg"] = {
-			["TrackerWidth"] = 0,
+			["collapsedZones"] = {
+			},
 			["AutoUntrackedQuests"] = {
 			},
 			["migrationVersion"] = 1,
 			["complete"] = {
 				[5441] = true,
-				[364] = true,
+				[790] = true,
 				[4402] = true,
 				[363] = true,
-				[804] = true,
+				[364] = true,
 				[3097] = true,
 				[788] = true,
-				[790] = true,
+				[804] = true,
 			},
 			["TrackerHiddenQuests"] = {
 			},
 			["trackerSetpoint"] = "AUTO",
 			["collapsedQuests"] = {
+			},
+			["TrackedQuests"] = {
+			},
+			["TrackerWidth"] = 0,
+			["TrackerHiddenObjectives"] = {
 			},
 			["journey"] = {
 				{
@@ -2266,12 +2272,6 @@ QuestieConfig = {
 					["SubType"] = "Abandon",
 					["Event"] = "Quest",
 				}, -- [26]
-			},
-			["collapsedZones"] = {
-			},
-			["TrackerHiddenObjectives"] = {
-			},
-			["TrackedQuests"] = {
 			},
 		},
 		["Verminz - Golemagg"] = {

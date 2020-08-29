@@ -50,14 +50,14 @@ EavesDropDB = {
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
-			["FRAME"] = {
-				["a"] = 0.4,
-			},
+			["SCROLLBUTTON"] = true,
 			["TEXTSIZE"] = 13,
 			["NUMLINES"] = 16,
 			["HIDETAB"] = true,
 			["LINEHEIGHT"] = 16,
-			["SCROLLBUTTON"] = true,
+			["FRAME"] = {
+				["a"] = 0.4,
+			},
 		},
 		["Pitchwise - Golemagg"] = {
 		},
@@ -163,13 +163,13 @@ EavesDropDB = {
 			["LINEWIDTH"] = 130,
 			["x"] = 551.714104134467,
 			["TEXTSIZE"] = 13,
-			["FRAME"] = {
-				["a"] = 0.4,
-			},
+			["NUMLINES"] = 16,
 			["SCROLLBUTTON"] = true,
 			["LINEHEIGHT"] = 16,
 			["HIDETAB"] = true,
-			["NUMLINES"] = 16,
+			["FRAME"] = {
+				["a"] = 0.4,
+			},
 			["y"] = 236.195578993564,
 		},
 		["Ozrencic - Golemagg"] = {

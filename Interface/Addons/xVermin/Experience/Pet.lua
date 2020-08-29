@@ -70,7 +70,7 @@ end
 
 local PetXPVisible = false
 local function UpdateBarVisibility()
-	if UnitExists("pet") and UnitLevel("player") > UnitLevel("pet") then
+	if UnitExists("pet") and UnitLevel("player") >= UnitLevel("pet") then
 		if not PetXPVisible then
 			securecall("UIFrameFadeIn", PetXP.XPbar, 1, 0, 0.8)
 			PetXPVisible = true
@@ -110,20 +110,15 @@ local function UpdateBar()
 	end
 end
 
-PetXP:RegisterEvent("PLAYER_XP_UPDATE")
-PetXP:RegisterEvent("PLAYER_ENTERING_WORLD")
 PetXP:RegisterEvent("UNIT_PET")
-PetXP:RegisterEvent("PLAYER_LEVEL_UP")
 PetXP:SetScript(
 	"OnEvent",
-	function(self, event, isInitialLogin, isReloadingUi)
-		if not isInitialLogin and not isReloadingUi then
-			C_Timer.After(
-				1,
-				function()
-					UpdateBar()
-				end
-			)
-		end
+	function()
+		C_Timer.After(
+			1,
+			function()
+				UpdateBar()
+			end
+		)
 	end
 )

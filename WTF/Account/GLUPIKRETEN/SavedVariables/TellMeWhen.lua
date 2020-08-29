@@ -11424,6 +11424,8 @@ TellMeWhenDB = {
 			["WarnInvalids"] = false,
 		},
 		["Hunter"] = {
+			["Version"] = 86907,
+			["NumGroups"] = 3,
 			["Groups"] = {
 				{
 					["GUID"] = "TMW:group:1TWYPj24VzCn",
@@ -11467,8 +11469,8 @@ TellMeWhenDB = {
 								}, -- [1]
 								{
 									["Type"] = "LIBRANGECHECK",
-									["Unit"] = "target",
 									["Operator"] = "<=",
+									["Unit"] = "target",
 									["Level"] = 35,
 								}, -- [2]
 								["n"] = 2,
@@ -11570,8 +11572,6 @@ TellMeWhenDB = {
 					["GUID"] = "TMW:group:1TeVDtajUwqa",
 				}, -- [3]
 			},
-			["NumGroups"] = 3,
-			["Version"] = 86907,
 			["Locked"] = true,
 		},
 		["Warrior"] = {
@@ -12124,10 +12124,10 @@ TellMeWhenDB = {
 		},
 		["Priest"] = {
 			["Locked"] = true,
-			["Version"] = 86907,
+			["NumGroups"] = 8,
 			["Groups"] = {
 				{
-					["GUID"] = "TMW:group:1TQuFk14Ix42",
+					["Enabled"] = false,
 					["Point"] = {
 						["y"] = -88,
 						["x"] = 4.069010416666670e-05,
@@ -12170,6 +12170,7 @@ TellMeWhenDB = {
 							["Type"] = "buff",
 							["Sort"] = -1,
 							["Name"] = "Battle Shout",
+							["DurationMinEnabled"] = true,
 							["Conditions"] = {
 								{
 									["Type"] = "RAGE_ABS",
@@ -12179,7 +12180,6 @@ TellMeWhenDB = {
 								["n"] = 1,
 							},
 							["DurationMin"] = 15,
-							["DurationMinEnabled"] = true,
 							["States"] = {
 								{
 									["Alpha"] = 0,
@@ -12195,11 +12195,7 @@ TellMeWhenDB = {
 					},
 					["TextureName"] = "Details Flat",
 					["LayoutDirection"] = 2,
-					["SortPriorities"] = {
-						{
-							["Order"] = -1,
-						}, -- [1]
-					},
+					["GUID"] = "TMW:group:1TQuFk14Ix42",
 					["Name"] = "Warrior Rotation",
 					["SettingsPerView"] = {
 						["icon"] = {
@@ -12208,21 +12204,25 @@ TellMeWhenDB = {
 						},
 					},
 					["Locked"] = true,
+					["SortPriorities"] = {
+						{
+							["Order"] = -1,
+						}, -- [1]
+					},
 					["Columns"] = 1,
-					["Enabled"] = false,
 					["OnlyInCombat"] = true,
 				}, -- [1]
 				{
 					["GUID"] = "TMW:group:1TQvxnAfbGyU",
-					["Name"] = "Warrior Spells",
 					["Point"] = {
 						["y"] = -5,
 						["point"] = "TOP",
 						["relativePoint"] = "TOP",
 					},
+					["Columns"] = 20,
 					["Alpha"] = 0,
 					["Locked"] = true,
-					["Columns"] = 20,
+					["Name"] = "Warrior Spells",
 					["Icons"] = {
 						{
 							["GUID"] = "TMW:icon:1TQv_LtTwAae",
@@ -12294,7 +12294,7 @@ TellMeWhenDB = {
 						{
 							["GUID"] = "TMW:icon:1TU=hLnlwyeY",
 							["Type"] = "cooldown",
-							["Name"] = "Overpower",
+							["ShowTimerText"] = true,
 							["RangeCheck"] = true,
 							["Conditions"] = {
 								{
@@ -12305,7 +12305,7 @@ TellMeWhenDB = {
 								["n"] = 1,
 							},
 							["Enabled"] = true,
-							["ShowTimerText"] = true,
+							["Name"] = "Overpower",
 						}, -- [4]
 						{
 							["GUID"] = "TMW:icon:1TWZdpV26rm5",
@@ -12389,12 +12389,12 @@ TellMeWhenDB = {
 				}, -- [3]
 				{
 					["GUID"] = "TMW:group:1TWYSTcQ410f",
-					["Point"] = {
-						["y"] = -40,
-						["point"] = "TOP",
-						["relativePoint"] = "TOP",
-					},
+					["Columns"] = 20,
 					["Scale"] = 1,
+					["Alpha"] = 0,
+					["TextureName"] = "Details Flat",
+					["Name"] = "General Buffs/Debbufs",
+					["Locked"] = true,
 					["Icons"] = {
 						{
 							["GUID"] = "TMW:icon:1TWYSTcSCl0z",
@@ -12417,23 +12417,23 @@ TellMeWhenDB = {
 							["Name"] = "Enrage",
 						}, -- [2]
 					},
-					["TextureName"] = "Details Flat",
-					["Name"] = "General Buffs/Debbufs",
-					["Locked"] = true,
-					["Alpha"] = 0,
-					["Columns"] = 20,
+					["Point"] = {
+						["y"] = -40,
+						["point"] = "TOP",
+						["relativePoint"] = "TOP",
+					},
 				}, -- [4]
 				{
 					["GUID"] = "TMW:group:1TeVAjjUoOOh",
-					["Name"] = "Hunter Spells",
 					["Point"] = {
 						["y"] = -75,
 						["point"] = "TOP",
 						["relativePoint"] = "TOP",
 					},
+					["Columns"] = 20,
 					["Alpha"] = 0,
 					["Locked"] = true,
-					["Columns"] = 20,
+					["Name"] = "Hunter Spells",
 					["Icons"] = {
 						{
 							["GUID"] = "TMW:icon:1TeVAjjXQ0WB",
@@ -12486,7 +12486,7 @@ TellMeWhenDB = {
 					["Name"] = "Hunter Rotation",
 				}, -- [6]
 				{
-					["GUID"] = "TMW:group:1V6krZ0tqss=",
+					["Enabled"] = false,
 					["Point"] = {
 						["y"] = -88,
 					},
@@ -12519,21 +12519,21 @@ TellMeWhenDB = {
 					["LayoutDirection"] = 2,
 					["Name"] = "Warlock Rotation",
 					["Locked"] = true,
+					["GUID"] = "TMW:group:1V6krZ0tqss=",
 					["Columns"] = 1,
-					["Enabled"] = false,
 					["OnlyInCombat"] = true,
 				}, -- [7]
 				{
 					["GUID"] = "TMW:group:1V6ky7Uf4nZ5",
-					["Name"] = "Warlock Spells",
 					["Point"] = {
 						["y"] = -110,
 						["point"] = "TOP",
 						["relativePoint"] = "TOP",
 					},
+					["Columns"] = 20,
 					["Alpha"] = 0,
 					["Locked"] = true,
-					["Columns"] = 20,
+					["Name"] = "Warlock Spells",
 					["Icons"] = {
 						{
 							["GUID"] = "TMW:icon:1V6ky7UjmQN=",
@@ -12590,7 +12590,7 @@ TellMeWhenDB = {
 					["Scale"] = 1,
 				}, -- [8]
 			},
-			["NumGroups"] = 8,
+			["Version"] = 86907,
 		},
 		["Klhjakhsgdjh - Golemagg"] = {
 			["Locked"] = true,

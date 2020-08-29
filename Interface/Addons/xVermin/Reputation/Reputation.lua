@@ -3,6 +3,7 @@ local _, xVermin = ...
 local size = 125
 local scale = 1.4
 local bars = {}
+local pet = false
 local standings = {
 	neutral = {value = 3000, color = "yellow"},
 	friendly = {value = 6000, color = "lightgreen"},
@@ -11,20 +12,14 @@ local standings = {
 	hostile = {value = -3000, color = "red"}
 }
 
-local masterFrame = CreateFrame("Frame", "xVerminReputationMasterFrame", UIParent)
-masterFrame:SetScale(scale)
-masterFrame:SetSize(size, 300)
-masterFrame:SetPoint("BOTTOMLEFT", ChatFrame1, "BOTTOMRIGHT", 5, 50)
-masterFrame:Hide()
+local f = CreateFrame("Frame", xVerminReputationFrame, UIParent)
+f:SetScale(scale)
+f:SetSize(size, 12)
+f:SetPoint("BOTTOMLEFT", ChatFrame1, "BOTTOMRIGHT", 5, 50)
+f:EnableMouse(false)
 
-local function CreateBar(frameName)
-	local f = CreateFrame("Frame", frameName, UIParent)
-	f:SetScale(scale)
-	f:SetSize(size, 12)
-	f:SetPoint("BOTTOM", masterFrame, 0, 0)
-	f:EnableMouse(false)
-
-	f.Bar = CreateFrame("StatusBar", frameName .. "StatusBar", UIParent)
+local function CreateBar(frameStatusBar)
+	f.Bar = CreateFrame("StatusBar", frameStatusBar, UIParent)
 	f.Bar:SetScale(1)
 	f.Bar:SetSize(size * scale, 2)
 	f.Bar:SetPoint("CENTER", f, 0, 0)
@@ -92,12 +87,18 @@ local function UpdateBarVisibility()
 end
 
 local function UpdateBarPosition()
-	-- if _G["PlayerFrameXPStatusBar"] and _G["PlayerFrameXPStatusBar"]:IsVisible() then
-	-- 	masterFrame:SetPoint("BOTTOM", PlayerFrameXPStatusBar, "TOP", 0, -50)
-	-- end
-	-- if _G["PetFrameXPStatusBar"] and _G["PetFrameXPStatusBar"]:IsVisible() then
-	-- 	masterFrame:SetPoint("BOTTOM", PetFrameXPStatusBar, "TOP", 0, -50)
-	-- end
+	for key, value in pairs(bars) do
+		if not value.hidden then
+			if _G["PlayerXPFrameStatusBar"] and _G["PlayerXPFrameStatusBar"]:GetAlpha() > 0 then
+				print(pet)
+				if pet then
+					_G[value.frameStatusBar]:SetPoint("BOTTOM", PetXPFrameStatusBar, "TOP", 0, 30)
+				else
+					_G[value.frameStatusBar]:SetPoint("BOTTOM", PlayerXPFrameStatusBar, "TOP", 0, 30)
+				end
+			end
+		end
+	end
 end
 
 local function UpdateBarValueAndColor()
@@ -165,7 +166,7 @@ end
 
 local function UpdateBars()
 	local factionIndex = 1
-	local lastFactionName, frameName, frameStatusBar
+	local lastFactionName, frameStatusBar
 
 	repeat
 		local name, description, standingId, bottomValue, topValue, earnedValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild = GetFactionInfo(factionIndex)
@@ -173,7 +174,6 @@ local function UpdateBars()
 			break
 		end
 		lastFactionName = name
-		frameName = "xVerminReputationBar" .. factionIndex
 		frameStatusBar = "xVerminReputationBar" .. factionIndex .. "StatusBar"
 
 		if bars[factionIndex] then
@@ -181,10 +181,9 @@ local function UpdateBars()
 		end
 		if isWatched then
 			if not bars[factionIndex] then
-				CreateBar(frameName)
+				CreateBar(frameStatusBar)
 				bars[factionIndex] = {
 					factionIndex = factionIndex,
-					frameName = frameName,
 					frameStatusBar = frameStatusBar,
 					time = GetTime(),
 					isWatched = isWatched,
@@ -202,9 +201,26 @@ local function UpdateBars()
 		factionIndex = factionIndex + 1
 	until factionIndex > 200
 
-	UpdateBarPosition()
 	UpdateBarVisibility()
 	UpdateBarValueAndColor()
+	UpdateBarPosition(false)
+end
+
+if _G["PetXPFrameStatusBar"] then
+	PetFrame:HookScript(
+		"OnShow",
+		function()
+			pet = true
+			UpdateBarPosition()
+		end
+	)
+	PetFrame:HookScript(
+		"OnHide",
+		function()
+			pet = false
+			UpdateBarPosition()
+		end
+	)
 end
 
 local wf = CreateFrame("Frame")

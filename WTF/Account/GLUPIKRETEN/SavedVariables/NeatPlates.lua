@@ -154,7 +154,7 @@ NeatPlatesSpellDB = {
 			["castTime"] = 4701,
 		},
 		["Heavy Runecloth Bandage"] = {
-			["castTime"] = 3042,
+			["castTime"] = 3006,
 		},
 		["Enchant Chest - Superior Health"] = {
 			["castTime"] = 5035,
@@ -176,7 +176,7 @@ NeatPlatesSpellDB = {
 		["Enlarge"] = {
 		},
 		["Greater Fire Protection Potion"] = {
-			["castTime"] = 3499,
+			["castTime"] = 2913,
 		},
 		["Throw Rock"] = {
 		},
@@ -356,7 +356,7 @@ NeatPlatesSpellDB = {
 			["castTime"] = 37061,
 		},
 		["Light Leather"] = {
-			["castTime"] = 3084.0000000298,
+			["castTime"] = 3980,
 		},
 		["Searing Totem"] = {
 			["castTime"] = 6105,
@@ -527,7 +527,7 @@ NeatPlatesSpellDB = {
 		["Intercept Stun"] = {
 		},
 		["Enchant Chest - Minor Health"] = {
-			["castTime"] = 5021.0000000596,
+			["castTime"] = 4998,
 		},
 		["Robes of Arcana"] = {
 			["castTime"] = 9972,
@@ -1000,7 +1000,7 @@ NeatPlatesSpellDB = {
 			["castTime"] = 1514,
 		},
 		["Dismiss Pet"] = {
-			["castTime"] = 5050,
+			["castTime"] = 5037,
 		},
 		["Elemental Mastery"] = {
 		},
@@ -1142,7 +1142,7 @@ NeatPlatesSpellDB = {
 		["Tame Beast"] = {
 		},
 		["Cultivate Packet of Seeds"] = {
-			["castTime"] = 295,
+			["castTime"] = 10011,
 		},
 		["Runed Copper Bracers"] = {
 			["castTime"] = 4737,
@@ -1172,7 +1172,7 @@ NeatPlatesSpellDB = {
 		["Fiery Weapon"] = {
 		},
 		["Blackmouth Oil"] = {
-			["castTime"] = 4921.99999976158,
+			["castTime"] = 4976,
 		},
 		["Raptor Strike"] = {
 			["castTime"] = 3753,
@@ -1269,7 +1269,7 @@ NeatPlatesSpellDB = {
 			["castTime"] = 3001,
 		},
 		["Summon Dreadsteed"] = {
-			["castTime"] = 3263,
+			["castTime"] = 2990.00000023842,
 		},
 		["Frost Shock"] = {
 			["castTime"] = 10625.9999997616,
@@ -1308,7 +1308,7 @@ NeatPlatesSpellDB = {
 			["castTime"] = 2513,
 		},
 		["Summon Warhorse"] = {
-			["castTime"] = 3303,
+			["castTime"] = 3009,
 		},
 		["Shadowmeld"] = {
 		},
@@ -1605,7 +1605,7 @@ NeatPlatesSpellDB = {
 		["Cold Blood"] = {
 		},
 		["Blinding Powder"] = {
-			["castTime"] = 2980,
+			["castTime"] = 2996,
 		},
 		["Crimson Silk Cloak"] = {
 		},
@@ -1673,7 +1673,7 @@ NeatPlatesSpellDB = {
 		["Primal Batskin Bracers"] = {
 		},
 		["Ghost Wolf"] = {
-			["castTime"] = 2993,
+			["castTime"] = 980.999999761582,
 		},
 		["Fade"] = {
 			["castTime"] = 1168,
@@ -1898,7 +1898,7 @@ NeatPlatesSpellDB = {
 		["Enchanted Resonite Crystal"] = {
 		},
 		["Greater Nature Protection Potion"] = {
-			["castTime"] = 3056.00000023842,
+			["castTime"] = 2386,
 		},
 		["Restoration"] = {
 		},
@@ -2434,7 +2434,7 @@ NeatPlatesSpellDB = {
 			["castTime"] = 2968.9999999404,
 		},
 		["Hearthstone"] = {
-			["castTime"] = 9924,
+			["castTime"] = 10044,
 		},
 		["Flametongue Weapon"] = {
 			["castTime"] = 3782,
@@ -2508,7 +2508,7 @@ NeatPlatesSpellDB = {
 			["castTime"] = 9232,
 		},
 		["Conjure Water"] = {
-			["castTime"] = 3112,
+			["castTime"] = 2816,
 		},
 		["Arcane Protection"] = {
 		},
@@ -3000,7 +3000,7 @@ NeatPlatesSpellDB = {
 			["castTime"] = 5045.99999988079,
 		},
 		["Astral Recall"] = {
-			["castTime"] = 10116.0000002384,
+			["castTime"] = 10150,
 		},
 		["Enchant Chest - Lesser Health"] = {
 			["castTime"] = 4900,
@@ -5392,10 +5392,8 @@ NeatPlatesSpellDB = {
 			["417"] = {
 			},
 		},
-		["Dayneria"] = {
-			["3283"] = {
-			},
-			["3286"] = {
+		["Slam"] = {
+			["7873"] = {
 			},
 		},
 		["Cripple"] = {
@@ -5407,8 +5405,8 @@ NeatPlatesSpellDB = {
 				["castTime"] = 1950,
 			},
 		},
-		["Vérszegény"] = {
-			["3246"] = {
+		["Blood Pact"] = {
+			["416"] = {
 			},
 		},
 		["Targhul"] = {
@@ -5417,8 +5415,8 @@ NeatPlatesSpellDB = {
 			["2267"] = {
 			},
 		},
-		["Slam"] = {
-			["7873"] = {
+		["Argia"] = {
+			["3284"] = {
 			},
 		},
 		["Fevered Plague"] = {
@@ -6244,8 +6242,8 @@ NeatPlatesSpellDB = {
 			["1564"] = {
 			},
 		},
-		["Argia"] = {
-			["3284"] = {
+		["Vérszegény"] = {
+			["3246"] = {
 			},
 		},
 		["Matyldator"] = {
@@ -6254,8 +6252,10 @@ NeatPlatesSpellDB = {
 			["4283"] = {
 			},
 		},
-		["Blood Pact"] = {
-			["416"] = {
+		["Dayneria"] = {
+			["3283"] = {
+			},
+			["3286"] = {
 			},
 		},
 		["Xele"] = {

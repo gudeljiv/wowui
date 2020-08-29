@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 2187,
+	["session"] = 2211,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -1826,5 +1826,29 @@ BugGrabberDB = {
 			["session"] = 2176,
 			["counter"] = 7,
 		}, -- [231]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:84: attempt to call global 'UpdateBarPosition' (a nil value)",
+			["time"] = "2020/08/29 09:20:54",
+			["locals"] = "(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 3 = <table> {\n }\n}\n(for control) = 3\nkey = 3\nvalue = <table> {\n factionIndex = 3\n time = 1416732.587000\n FactionInfo = <table> {\n }\n isWatched = true\n hidden = false\n frameStatusBar = \"xVerminReputationBar3StatusBar\"\n}\n(*temporary) = nil\n(*temporary) = \"xVerminReputationBar3StatusBar\"\n(*temporary) = \"attempt to call global 'UpdateBarPosition' (a nil value)\"\nbars = <table> {\n 3 = <table> {\n }\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:84: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:78>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:199: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:162>",
+			["session"] = 2191,
+			["counter"] = 1,
+		}, -- [232]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:20: attempt to call global 'UpdateBarPosition' (a nil value)",
+			["time"] = "2020/08/29 09:58:38",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"attempt to call global 'UpdateBarPosition' (a nil value)\"\npet = true\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:20: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:18>\n[C]: ?\n[C]: in function `Show'\nInterface\\FrameXML\\PetFrame.lua:47: in function <Interface\\FrameXML\\PetFrame.lua:41>\n[C]: in function `PetFrame_Update'\nInterface\\FrameXML\\PetFrame.lua:72: in function <Interface\\FrameXML\\PetFrame.lua:67>",
+			["session"] = 2210,
+			["counter"] = 1,
+		}, -- [233]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:27: attempt to call global 'UpdateBarPosition' (a nil value)",
+			["time"] = "2020/08/29 09:58:36",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"attempt to call global 'UpdateBarPosition' (a nil value)\"\npet = false\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:27: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:25>\n[C]: ?\n[C]: in function `Hide'\nInterface\\FrameXML\\PetFrame.lua:62: in function <Interface\\FrameXML\\PetFrame.lua:41>\n[C]: in function `PetFrame_Update'\nInterface\\FrameXML\\PetFrame.lua:72: in function <Interface\\FrameXML\\PetFrame.lua:67>",
+			["session"] = 2210,
+			["counter"] = 2,
+		}, -- [234]
 	},
 }
