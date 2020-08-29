@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 2213,
+	["session"] = 2239,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -1850,5 +1850,37 @@ BugGrabberDB = {
 			["session"] = 2210,
 			["counter"] = 2,
 		}, -- [234]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:84: attempt to index field '?' (a nil value)",
+			["time"] = "2020/08/29 17:42:33",
+			["locals"] = "(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n 6 = <table> {\n }\n 7 = <table> {\n }\n 8 = <table> {\n }\n 9 = <table> {\n }\n 10 = <table> {\n }\n 11 = <table> {\n }\n 12 = <table> {\n }\n 13 = <table> {\n }\n 14 = <table> {\n }\n 15 = <table> {\n }\n}\n(for control) = 1\nkey = 1\nvalue = <table> {\n factionIndex = 1\n time = 1446828.161000\n FactionInfo = <table> {\n }\n isWatched = false\n hidden = false\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field '?' (a nil value)\"\nbars = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n 6 = <table> {\n }\n 7 = <table> {\n }\n 8 = <table> {\n }\n 9 = <table> {\n }\n 10 = <table> {\n }\n 11 = <table> {\n }\n 12 = <table> {\n }\n 13 = <table> {\n }\n 14 = <table> {\n }\n 15 = <table> {\n }\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:84: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:79>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:234: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:166>",
+			["session"] = 2217,
+			["counter"] = 5,
+		}, -- [235]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:82: attempt to index field '?' (a nil value)",
+			["time"] = "2020/08/29 17:47:18",
+			["locals"] = "(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n 6 = <table> {\n }\n 7 = <table> {\n }\n 8 = <table> {\n }\n 9 = <table> {\n }\n 10 = <table> {\n }\n 11 = <table> {\n }\n 12 = <table> {\n }\n 13 = <table> {\n }\n 14 = <table> {\n }\n 15 = <table> {\n }\n}\n(for control) = 1\nkey = 1\nvalue = <table> {\n factionIndex = 1\n FactionInfo = <table> {\n }\n isWatched = false\n hidden = true\n frameStatusBar = \"xVerminReputationBar1StatusBar\"\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field '?' (a nil value)\"\nbars = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n 6 = <table> {\n }\n 7 = <table> {\n }\n 8 = <table> {\n }\n 9 = <table> {\n }\n 10 = <table> {\n }\n 11 = <table> {\n }\n 12 = <table> {\n }\n 13 = <table> {\n }\n 14 = <table> {\n }\n 15 = <table> {\n }\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:82: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:79>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:248: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:166>",
+			["session"] = 2225,
+			["counter"] = 40,
+		}, -- [236]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:105: attempt to perform arithmetic on global 'counter' (a nil value)",
+			["time"] = "2020/08/29 18:37:47",
+			["locals"] = "(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n 6 = <table> {\n }\n 7 = <table> {\n }\n 8 = <table> {\n }\n 9 = <table> {\n }\n 10 = <table> {\n }\n 11 = <table> {\n }\n 12 = <table> {\n }\n 13 = <table> {\n }\n 14 = <table> {\n }\n 15 = <table> {\n }\n}\n(for control) = 1\nkey = 1\nvalue = <table> {\n factionIndex = 1\n FactionInfo = <table> {\n }\n isWatched = false\n barCreated = false\n hidden = true\n frameStatusBar = \"xvrb_1\"\n}\n(*temporary) = nil\n(*temporary) = <table> {\n factionIndex = 1\n FactionInfo = <table> {\n }\n isWatched = false\n barCreated = false\n hidden = true\n frameStatusBar = \"xvrb_1\"\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to perform arithmetic on global 'counter' (a nil value)\"\nbars = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n 6 = <table> {\n }\n 7 = <table> {\n }\n 8 = <table> {\n }\n 9 = <table> {\n }\n 10 = <table> {\n }\n 11 = <table> {\n }\n 12 = <table> {\n }\n 13 = <table> {\n }\n 14 = <table> {\n }\n 15 = <table> {\n }\n}\npet = false\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:105: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:91>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:272: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:180>",
+			["session"] = 2233,
+			["counter"] = 9,
+		}, -- [237]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:112: xvrb_11:SetPoint(): trying to anchor to itself",
+			["time"] = "2020/08/29 18:42:48",
+			["locals"] = "(*temporary) = xvrb_11 {\n 0 = <userdata>\n Above = <unnamed> {\n }\n Below = <unnamed> {\n }\n Standing = <unnamed> {\n }\n FactionName = <unnamed> {\n }\n Background = <unnamed> {\n }\n Value = <unnamed> {\n }\n BackgroundShadow = <unnamed> {\n }\n}\n(*temporary) = \"BOTTOM\"\n(*temporary) = xvrb_11 {\n 0 = <userdata>\n Above = <unnamed> {\n }\n Below = <unnamed> {\n }\n Standing = <unnamed> {\n }\n FactionName = <unnamed> {\n }\n Background = <unnamed> {\n }\n Value = <unnamed> {\n }\n BackgroundShadow = <unnamed> {\n }\n}\n(*temporary) = \"TOP\"\n(*temporary) = 0\n(*temporary) = 60\n",
+			["stack"] = "[C]: in function `SetPoint'\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:112: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:91>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:281: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:189>",
+			["session"] = 2237,
+			["counter"] = 1,
+		}, -- [238]
 	},
 }

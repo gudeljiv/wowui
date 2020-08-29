@@ -18,8 +18,8 @@ f:SetSize(size, 12)
 f:SetPoint("BOTTOMLEFT", ChatFrame1, "BOTTOMRIGHT", 5, 50)
 f:EnableMouse(false)
 
-local function CreateBar(frameStatusBar)
-	f.Bar = CreateFrame("StatusBar", frameStatusBar, UIParent)
+local function CreateBar(input)
+	f.Bar = CreateFrame("StatusBar", input.frameStatusBar, UIParent)
 	f.Bar:SetScale(1)
 	f.Bar:SetSize(size * scale, 2)
 	f.Bar:SetPoint("CENTER", f, 0, 0)
@@ -79,7 +79,9 @@ end
 local function UpdateBarVisibility()
 	for key, value in pairs(bars) do
 		if value.hidden then
-			_G[value.frameStatusBar]:SetAlpha(0)
+			if _G[value.frameStatusBar] then
+				_G[value.frameStatusBar]:SetAlpha(0)
+			end
 		else
 			_G[value.frameStatusBar]:SetAlpha(0.8)
 		end
@@ -87,14 +89,38 @@ local function UpdateBarVisibility()
 end
 
 local function UpdateBarPosition()
+	local anchor
 	for key, value in pairs(bars) do
 		if not value.hidden then
-			if _G["PlayerXPFrameStatusBar"] and _G["PlayerXPFrameStatusBar"]:GetAlpha() > 0 then
-				if pet then
-					_G[value.frameStatusBar]:SetPoint("BOTTOM", PetXPFrameStatusBar, "TOP", 0, 30)
-				else
-					_G[value.frameStatusBar]:SetPoint("BOTTOM", PlayerXPFrameStatusBar, "TOP", 0, 30)
+			if value.isWatched then
+				anchor = _G[value.frameStatusBar]
+				if _G["PlayerXPFrameStatusBar"] and _G["PlayerXPFrameStatusBar"]:GetAlpha() > 0 then
+					if pet then
+						_G[value.frameStatusBar]:SetPoint("BOTTOM", PetXPFrameStatusBar, "TOP", 0, 30)
+					else
+						_G[value.frameStatusBar]:SetPoint("BOTTOM", PlayerXPFrameStatusBar, "TOP", 0, 30)
+					end
 				end
+			end
+		end
+	end
+
+	local counter = 1
+	for key, value in pairs(bars) do
+		if not value.hidden then
+			if not value.isWatched then
+				if anchor then
+					_G[value.frameStatusBar]:SetPoint("BOTTOM", anchor, "TOP", 0, 30 * counter)
+				else
+					if _G["PlayerXPFrameStatusBar"] and _G["PlayerXPFrameStatusBar"]:GetAlpha() > 0 then
+						if pet then
+							_G[value.frameStatusBar]:SetPoint("BOTTOM", PetXPFrameStatusBar, "TOP", 0, 30 * counter)
+						else
+							_G[value.frameStatusBar]:SetPoint("BOTTOM", PlayerXPFrameStatusBar, "TOP", 0, 30 * counter)
+						end
+					end
+				end
+				counter = counter + 1
 			end
 		end
 	end
@@ -103,8 +129,6 @@ end
 local function UpdateBarValueAndColor()
 	for key, value in pairs(bars) do
 		if not value.hidden then
-			-- print(value.FactionInfo.earnedValue, value.FactionInfo.topValue)
-
 			if value.FactionInfo.earnedValue < 0 then
 				standing = "unfriendly"
 				color = {r = 238 / 255, g = 102 / 255, b = 34 / 255}
@@ -165,40 +189,93 @@ end
 
 local function UpdateBars()
 	local factionIndex = 1
-	local lastFactionName, frameStatusBar
+	local lastFactionName
 
 	repeat
 		local name, description, standingId, bottomValue, topValue, earnedValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild = GetFactionInfo(factionIndex)
 		if name == lastFactionName then
 			break
 		end
-		lastFactionName = name
-		frameStatusBar = "xVerminReputationBar" .. factionIndex .. "StatusBar"
 
-		if bars[factionIndex] then
-			bars[factionIndex].hidden = true
-		end
-		if isWatched then
-			if not bars[factionIndex] then
-				CreateBar(frameStatusBar)
-				bars[factionIndex] = {
-					factionIndex = factionIndex,
-					frameStatusBar = frameStatusBar,
-					time = GetTime(),
-					isWatched = isWatched,
-					hidden = false,
-					FactionInfo = {
-						name = name,
-						earnedValue = earnedValue,
-						topValue = topValue
-					}
+		if not bars[factionIndex] then
+			bars[factionIndex] = {
+				factionIndex = factionIndex,
+				frameStatusBar = "xvrb_" .. factionIndex,
+				hidden = true,
+				barCreated = false,
+				FactionInfo = {
+					earnedValue = earnedValue
 				}
-			end
-			bars[factionIndex].hidden = false
+			}
 		end
+
+		bars[factionIndex].isWatched = isWatched
+		bars[factionIndex].FactionInfo.name = name
+		bars[factionIndex].FactionInfo.earnedValue_old = bars[factionIndex].FactionInfo.earnedValue and bars[factionIndex].FactionInfo.earnedValue or earnedValue
+		bars[factionIndex].FactionInfo.earnedValue = earnedValue
+		bars[factionIndex].FactionInfo.topValue = topValue
 
 		factionIndex = factionIndex + 1
 	until factionIndex > 200
+
+	for key, value in pairs(bars) do
+		if value.isWatched then
+			value.hidden = false
+			value.time = GetTime()
+			if not value.barCreated then
+				CreateBar(value)
+				value.barCreated = true
+			end
+		end
+
+		-- print(value.FactionInfo.name, value.FactionInfo.earnedValue, value.FactionInfo.earnedValue_old)
+
+		if value.FactionInfo.earnedValue_old ~= value.FactionInfo.earnedValue and not value.isWatched then
+			if not value.barCreated then
+				CreateBar(value)
+				value.barCreated = true
+				value.hidden = false
+			end
+		end
+	end
+
+	-- repeat
+	-- 	local name, description, standingId, bottomValue, topValue, earnedValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild = GetFactionInfo(factionIndex)
+	-- 	if name == lastFactionName then
+	-- 		break
+	-- 	end
+	-- 	lastFactionName = name
+	-- 	frameStatusBar = "xVerminReputationBar" .. factionIndex .. "StatusBar"
+
+	-- 	if bars[factionIndex] then
+	-- 		bars[factionIndex].hidden = true
+	-- 	end
+	-- 	if isWatched then
+	-- 		if not bars[factionIndex] then
+	-- 			CreateBar(frameStatusBar)
+	-- 			bars[factionIndex] = {
+	-- 				factionIndex = factionIndex,
+	-- 				frameStatusBar = frameStatusBar,
+	-- 				time = GetTime(),
+	-- 				isWatched = isWatched,
+	-- 				hidden = false,
+	-- 				FactionInfo = {
+	-- 					name = name,
+	-- 					earnedValue = earnedValue,
+	-- 					topValue = topValue
+	-- 				}
+	-- 			}
+	-- 		end
+	-- 		bars[factionIndex].hidden = false
+	-- 		bars[factionIndex].FactionInfo = {
+	-- 			name = name,
+	-- 			earnedValue = earnedValue,
+	-- 			topValue = topValue
+	-- 		}
+	-- 	end
+
+	-- 	factionIndex = factionIndex + 1
+	-- until factionIndex > 200
 
 	UpdateBarVisibility()
 	UpdateBarValueAndColor()

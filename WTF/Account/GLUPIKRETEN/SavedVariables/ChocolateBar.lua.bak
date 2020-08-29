@@ -60,10 +60,6 @@ ChocolateBarDB = {
 					["width"] = 147,
 				},
 			},
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["moveFrames"] = false,
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -74,7 +70,9 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
-			["fixedStrata"] = true,
+			["forceColor"] = false,
+			["locked"] = false,
+			["moveFrames"] = false,
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -332,18 +330,20 @@ ChocolateBarDB = {
 					["customLabel"] = "R",
 				},
 			},
-			["desaturated"] = false,
-			["gap"] = 0,
-			["forceColor"] = false,
+			["fontName"] = "Friz Quadrata TT",
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
-			["fontName"] = "Friz Quadrata TT",
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["fixedStrata"] = true,
+			["desaturated"] = false,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["locked"] = false,
+			["gap"] = 0,
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
 			["textColor"] = {
 				["a"] = 1,
 				["r"] = 1,
@@ -367,7 +367,7 @@ CB_PlayedTime = {
 		["total"] = 1719,
 	},
 	["Mxyz-"] = {
-		["total"] = 71480,
+		["total"] = 72261,
 	},
 	["Antun-"] = {
 		["total"] = 52,
@@ -378,8 +378,8 @@ CB_PlayedTime = {
 	["Judawise-"] = {
 		["total"] = 437,
 	},
-	["Dmitar-"] = {
-		["total"] = 517,
+	["Whatevs-"] = {
+		["total"] = 213,
 	},
 	["Mxym-"] = {
 		["total"] = 4765,
@@ -390,14 +390,14 @@ CB_PlayedTime = {
 	["Koloman-"] = {
 		["total"] = 129,
 	},
-	["Vermins-"] = {
-		["total"] = 3014,
-	},
-	["Whatevs-"] = {
-		["total"] = 213,
-	},
 	["Mxyzptlk-"] = {
 		["total"] = 8398,
+	},
+	["Dmitar-"] = {
+		["total"] = 517,
+	},
+	["Vermins-"] = {
+		["total"] = 3014,
 	},
 	["Dotwise-"] = {
 		["total"] = 3924,
@@ -409,7 +409,7 @@ CB_PlayedTime = {
 		["total"] = 18945,
 	},
 	["Mxzq-"] = {
-		["total"] = 282616,
+		["total"] = 286769,
 	},
 	["Kosturko-"] = {
 		["total"] = 1457,
