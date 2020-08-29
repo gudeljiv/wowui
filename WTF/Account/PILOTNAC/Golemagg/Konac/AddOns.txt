@@ -84,3 +84,10 @@ DBM-AQ20: disabled
 DBM-AQ40: disabled
 DBM-ZG: disabled
 Questie: disabled
+Auctionator: disabled
+aux-addon: enabled
+Examiner: disabled
+RangeDisplay: disabled
+RangeDisplay_Options: disabled
+TownsfolkTracker: disabled
+ZygorGuidesViewerClassic: disabled

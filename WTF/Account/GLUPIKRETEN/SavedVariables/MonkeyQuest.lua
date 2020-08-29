@@ -757,10 +757,6 @@ MonkeyQuestConfig = {
 		["m_bAlwaysHeaders"] = false,
 		["m_bGrowUp"] = false,
 	},
-	["Golemagg|Mxzq"] = {
-		["m_aQuestList"] = {
-		},
-	},
 	["Global"] = {
 		["m_bItemsEnabled"] = true,
 		["m_iFont"] = 0,
@@ -813,6 +809,10 @@ MonkeyQuestConfig = {
 		["m_bHideTitle"] = false,
 		["m_bHideTitleButtons"] = false,
 		["m_bGrowUp"] = false,
+	},
+	["Golemagg|Mxzq"] = {
+		["m_aQuestList"] = {
+		},
 	},
 	["Genesis|Malinac"] = {
 		["m_iFont"] = 0,
@@ -899,19 +899,19 @@ MonkeyQuestConfig = {
 		["m_bShowZoneHighlight"] = true,
 		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
 		["m_aQuestList"] = {
-			["Vanquish the Betrayers - false"] = {
+			["Encroachment - false"] = {
 				["m_bChecked"] = true,
 			},
 			["From The Wreckage.... - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Durotar - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Encroachment - false"] = {
-				["m_bChecked"] = true,
-			},
 			["Break a Few Eggs - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Vanquish the Betrayers - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Durotar - true"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -964,10 +964,6 @@ MonkeyQuestConfig = {
 			},
 		},
 	},
-	["Golemagg|Dmitar"] = {
-		["m_aQuestList"] = {
-		},
-	},
 	["Golemagg|Greenwise"] = {
 		["m_aQuestList"] = {
 			["Miner's Fortune - false"] = {
@@ -1015,6 +1011,10 @@ MonkeyQuestConfig = {
 			["Tribes at War - false"] = {
 				["m_bChecked"] = true,
 			},
+		},
+	},
+	["Golemagg|Dmitar"] = {
+		["m_aQuestList"] = {
 		},
 	},
 	["Golemagg|Pitchwise"] = {

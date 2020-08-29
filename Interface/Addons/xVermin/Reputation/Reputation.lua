@@ -90,7 +90,6 @@ local function UpdateBarPosition()
 	for key, value in pairs(bars) do
 		if not value.hidden then
 			if _G["PlayerXPFrameStatusBar"] and _G["PlayerXPFrameStatusBar"]:GetAlpha() > 0 then
-				print(pet)
 				if pet then
 					_G[value.frameStatusBar]:SetPoint("BOTTOM", PetXPFrameStatusBar, "TOP", 0, 30)
 				else
@@ -203,7 +202,7 @@ local function UpdateBars()
 
 	UpdateBarVisibility()
 	UpdateBarValueAndColor()
-	UpdateBarPosition(false)
+	UpdateBarPosition()
 end
 
 if _G["PetXPFrameStatusBar"] then

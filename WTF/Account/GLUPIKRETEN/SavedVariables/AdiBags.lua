@@ -43,6 +43,7 @@ AdiBagsDB = {
 						[2449] = "Trade Goods#Herbs",
 						[2772] = "Trade Goods#Mining",
 						[3355] = "Trade Goods#Herbs",
+						[8839] = "Trade Goods#Herbs",
 						[3859] = "Trade Goods#Mining",
 						[3576] = "Trade Goods#Mining",
 						[2450] = "Trade Goods#Herbs",

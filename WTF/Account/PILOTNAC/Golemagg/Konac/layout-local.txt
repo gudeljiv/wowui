@@ -1,1 +1,8 @@
 Version: 1
+Frame: aux_frame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 10
+Y: -103
+W: 768
+H: 447
