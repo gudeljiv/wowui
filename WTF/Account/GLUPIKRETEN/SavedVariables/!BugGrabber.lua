@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 2239,
+	["session"] = 2295,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -1882,5 +1882,21 @@ BugGrabberDB = {
 			["session"] = 2237,
 			["counter"] = 1,
 		}, -- [238]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:212: attempt to index field 'FactionInfo' (a nil value)",
+			["time"] = "2020/08/30 13:05:36",
+			["locals"] = "factionIndex = 1\nlastFactionName = nil\nname = \"Horde\"\ndescription = \"\"\nstandingId = 5\nbottomValue = 3000\ntopValue = 9000\nearnedValue = 4705\natWarWith = false\ncanToggleAtWar = true\nisHeader = true\nisCollapsed = false\nhasRep = false\nisWatched = false\nisChild = false\n(*temporary) = nil\n(*temporary) = <table> {\n frameStatusBar = \"xvrb_1\"\n isWatched = false\n barCreated = false\n hidden = true\n factionIndex = 1\n}\n(*temporary) = \"xvrb_1\"\n(*temporary) = \"1\"\n(*temporary) = \"attempt to index field 'FactionInfo' (a nil value)\"\nbars = <table> {\n Horde = <table> {\n }\n}\nCreateBar = <function> defined @Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:21\nUpdateBarValueAndColor = <function> defined @Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:131\nUpdateBarPosition = <function> defined @Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:93\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:212: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:192>",
+			["session"] = 2275,
+			["counter"] = 3,
+		}, -- [239]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:213: attempt to index field 'FactionInfo' (a nil value)",
+			["time"] = "2020/08/30 13:06:03",
+			["locals"] = "factionIndex = 1\nlastFactionName = nil\nname = \"Horde\"\ndescription = \"\"\nstandingId = 5\nbottomValue = 3000\ntopValue = 9000\nearnedValue = 4705\natWarWith = false\ncanToggleAtWar = true\nisHeader = true\nisCollapsed = false\nhasRep = false\nisWatched = false\nisChild = false\n(*temporary) = nil\n(*temporary) = <table> {\n factionIndex = 1\n isWatched = false\n timer = false\n barCreated = false\n hidden = true\n frameStatusBar = \"xvrb_1\"\n}\n(*temporary) = \"xvrb_1\"\n(*temporary) = \"1\"\n(*temporary) = \"attempt to index field 'FactionInfo' (a nil value)\"\nbars = <table> {\n Horde = <table> {\n }\n}\nCreateBar = <function> defined @Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:21\nUpdateBarValueAndColor = <function> defined @Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:131\nUpdateBarPosition = <function> defined @Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:93\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:213: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:192>",
+			["session"] = 2276,
+			["counter"] = 6,
+		}, -- [240]
 	},
 }

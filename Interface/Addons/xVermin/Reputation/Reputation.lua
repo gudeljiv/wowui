@@ -78,12 +78,14 @@ end
 
 local function UpdateBarVisibility()
 	for key, value in pairs(bars) do
-		if value.hidden then
-			if _G[value.frameStatusBar] then
-				_G[value.frameStatusBar]:SetAlpha(0)
+		if value.barCreated then
+			if value.hidden then
+				-- _G[value.frameStatusBar]:SetAlpha(0)
+				securecall("UIFrameFadeOut", _G[value.frameStatusBar], 1, 0.8, 0)
+			else
+				-- _G[value.frameStatusBar]:SetAlpha(0.8)
+				securecall("UIFrameFadeIn", _G[value.frameStatusBar], 1, 0, 0.8)
 			end
-		else
-			_G[value.frameStatusBar]:SetAlpha(0.8)
 		end
 	end
 end
@@ -197,87 +199,83 @@ local function UpdateBars()
 			break
 		end
 
-		if not bars[factionIndex] then
-			bars[factionIndex] = {
+		if not bars[name] then
+			bars[name] = {
 				factionIndex = factionIndex,
 				frameStatusBar = "xvrb_" .. factionIndex,
 				hidden = true,
 				barCreated = false,
-				FactionInfo = {
-					earnedValue = earnedValue
-				}
+				timer = false,
+				FactionInfo = {}
 			}
 		end
 
-		bars[factionIndex].isWatched = isWatched
-		bars[factionIndex].FactionInfo.name = name
-		bars[factionIndex].FactionInfo.earnedValue_old = bars[factionIndex].FactionInfo.earnedValue and bars[factionIndex].FactionInfo.earnedValue or earnedValue
-		bars[factionIndex].FactionInfo.earnedValue = earnedValue
-		bars[factionIndex].FactionInfo.topValue = topValue
+		bars[name].isWatched = isWatched
+		bars[name].FactionInfo.name = name
+		bars[name].FactionInfo.earnedValue_old = bars[name].FactionInfo.earnedValue and bars[name].FactionInfo.earnedValue or earnedValue
+		bars[name].FactionInfo.earnedValue = earnedValue
+		bars[name].FactionInfo.topValue = topValue
 
 		factionIndex = factionIndex + 1
 	until factionIndex > 200
 
 	for key, value in pairs(bars) do
-		if value.isWatched then
-			value.hidden = false
-			value.time = GetTime()
-			if not value.barCreated then
-				CreateBar(value)
-				value.barCreated = true
+		if not value.isWatched then
+			if value.FactionInfo.earnedValue_old ~= value.FactionInfo.earnedValue then
+				if not value.barCreated then
+					CreateBar(value)
+					value.barCreated = true
+				end
+
+				if value.hidden then
+					C_Timer.After(
+						0.2,
+						function()
+							securecall("UIFrameFadeIn", _G[value.frameStatusBar], 1, 0, 0.8)
+						end
+					)
+					value.hidden = false
+				end
+
+				if value.timer then
+					value.timer:Cancel()
+					value.timer = false
+				end
+
+				value.timer =
+					C_Timer.NewTimer(
+					30,
+					function()
+						securecall("UIFrameFadeOut", _G[value.frameStatusBar], 1, 0.8, 0)
+						value.hidden = true
+						value.timer = false
+					end
+				)
+			end
+
+			if not value.timer and not value.hidden then
+				securecall("UIFrameFadeOut", _G[value.frameStatusBar], 1, 0.8, 0)
+				value.hidden = true
 			end
 		end
 
-		-- print(value.FactionInfo.name, value.FactionInfo.earnedValue, value.FactionInfo.earnedValue_old)
-
-		if value.FactionInfo.earnedValue_old ~= value.FactionInfo.earnedValue and not value.isWatched then
-			if not value.barCreated then
-				CreateBar(value)
-				value.barCreated = true
+		if value.isWatched then
+			if value.hidden then
 				value.hidden = false
+				if not value.barCreated then
+					CreateBar(value)
+					value.barCreated = true
+				end
+				securecall("UIFrameFadeIn", _G[value.frameStatusBar], 1, 0, 0.8)
+			end
+			if value.timer then
+				value.timer:Cancel()
+				value.timer = false
 			end
 		end
 	end
 
-	-- repeat
-	-- 	local name, description, standingId, bottomValue, topValue, earnedValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild = GetFactionInfo(factionIndex)
-	-- 	if name == lastFactionName then
-	-- 		break
-	-- 	end
-	-- 	lastFactionName = name
-	-- 	frameStatusBar = "xVerminReputationBar" .. factionIndex .. "StatusBar"
-
-	-- 	if bars[factionIndex] then
-	-- 		bars[factionIndex].hidden = true
-	-- 	end
-	-- 	if isWatched then
-	-- 		if not bars[factionIndex] then
-	-- 			CreateBar(frameStatusBar)
-	-- 			bars[factionIndex] = {
-	-- 				factionIndex = factionIndex,
-	-- 				frameStatusBar = frameStatusBar,
-	-- 				time = GetTime(),
-	-- 				isWatched = isWatched,
-	-- 				hidden = false,
-	-- 				FactionInfo = {
-	-- 					name = name,
-	-- 					earnedValue = earnedValue,
-	-- 					topValue = topValue
-	-- 				}
-	-- 			}
-	-- 		end
-	-- 		bars[factionIndex].hidden = false
-	-- 		bars[factionIndex].FactionInfo = {
-	-- 			name = name,
-	-- 			earnedValue = earnedValue,
-	-- 			topValue = topValue
-	-- 		}
-	-- 	end
-
-	-- 	factionIndex = factionIndex + 1
-	-- until factionIndex > 200
-
-	UpdateBarVisibility()
+	-- UpdateBarVisibility()
 	UpdateBarValueAndColor()
 	UpdateBarPosition()
 end
