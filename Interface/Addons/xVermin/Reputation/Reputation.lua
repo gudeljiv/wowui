@@ -76,20 +76,6 @@ local function CreateBar(input)
 	f.Bar.Above:SetPoint("BOTTOM", f.Bar.Below, "TOP", 0, f.Bar:GetHeight())
 end
 
-local function UpdateBarVisibility()
-	for key, value in pairs(bars) do
-		if value.barCreated then
-			if value.hidden then
-				-- _G[value.frameStatusBar]:SetAlpha(0)
-				securecall("UIFrameFadeOut", _G[value.frameStatusBar], 1, 0.8, 0)
-			else
-				-- _G[value.frameStatusBar]:SetAlpha(0.8)
-				securecall("UIFrameFadeIn", _G[value.frameStatusBar], 1, 0, 0.8)
-			end
-		end
-	end
-end
-
 local function UpdateBarPosition()
 	local anchor
 	for key, value in pairs(bars) do
@@ -124,6 +110,50 @@ local function UpdateBarPosition()
 				end
 				counter = counter + 1
 			end
+		end
+	end
+end
+
+local function UpdateBarVisibility()
+	-- for key, value in pairs(bars) do
+	-- 	if value.barCreated then
+	-- 		if value.hidden then
+	-- 			-- _G[value.frameStatusBar]:SetAlpha(0)
+	-- 			securecall("UIFrameFadeOut", _G[value.frameStatusBar], 1, 0.8, 0)
+	-- 		else
+	-- 			-- _G[value.frameStatusBar]:SetAlpha(0.8)
+	-- 			securecall("UIFrameFadeIn", _G[value.frameStatusBar], 1, 0, 0.8)
+	-- 		end
+	-- 	end
+	-- end
+	for key, value in pairs(bars) do
+		if value.autobars then
+			if value.hidden then
+				C_Timer.After(
+					1,
+					function()
+						securecall("UIFrameFadeIn", _G[value.frameStatusBar], 1, 0, 0.8)
+					end
+				)
+				value.hidden = false
+			end
+
+			if value.timer then
+				value.timer:Cancel()
+				value.timer = false
+			end
+
+			value.timer =
+				C_Timer.NewTimer(
+				30,
+				function()
+					securecall("UIFrameFadeOut", _G[value.frameStatusBar], 1, 0.8, 0)
+					value.hidden = true
+					value.timer = false
+					UpdateBarPosition()
+					value.autobars = false
+				end
+			)
 		end
 	end
 end
@@ -206,6 +236,7 @@ local function UpdateBars()
 				hidden = true,
 				barCreated = false,
 				timer = false,
+				autobars = false,
 				FactionInfo = {}
 			}
 		end
@@ -227,30 +258,7 @@ local function UpdateBars()
 					value.barCreated = true
 				end
 
-				if value.hidden then
-					C_Timer.After(
-						0.2,
-						function()
-							securecall("UIFrameFadeIn", _G[value.frameStatusBar], 1, 0, 0.8)
-						end
-					)
-					value.hidden = false
-				end
-
-				if value.timer then
-					value.timer:Cancel()
-					value.timer = false
-				end
-
-				value.timer =
-					C_Timer.NewTimer(
-					30,
-					function()
-						securecall("UIFrameFadeOut", _G[value.frameStatusBar], 1, 0.8, 0)
-						value.hidden = true
-						value.timer = false
-					end
-				)
+				value.autobars = true
 			end
 
 			if not value.timer and not value.hidden then
@@ -275,7 +283,7 @@ local function UpdateBars()
 		end
 	end
 
-	-- UpdateBarVisibility()
+	UpdateBarVisibility()
 	UpdateBarValueAndColor()
 	UpdateBarPosition()
 end
