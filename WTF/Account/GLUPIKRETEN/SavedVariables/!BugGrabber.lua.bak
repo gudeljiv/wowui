@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 2298,
+	["session"] = 2316,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -1898,5 +1898,29 @@ BugGrabberDB = {
 			["session"] = 2276,
 			["counter"] = 6,
 		}, -- [240]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:70: attempt to index field 'bar' (a nil value)",
+			["time"] = "2020/08/31 17:16:15",
+			["locals"] = "input = <table> {\n factionIndex = 5\n isWatched = true\n autobars = false\n FactionInfo = <table> {\n }\n timer = false\n barCreated = false\n hidden = false\n frameStatusBar = \"XVRB_5\"\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"BOTTOM\"\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = \"TOP\"\n(*temporary) = 0\n(*temporary) = 1.999992\n(*temporary) = <userdata>\n(*temporary) = \"attempt to index field 'bar' (a nil value)\"\nf = <unnamed> {\n 0 = <userdata>\n Bar = XVRB_5 {\n }\n}\nsize = 125\nscale = 1.400000\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:70: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:13>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:309: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:232>",
+			["session"] = 2303,
+			["counter"] = 1,
+		}, -- [241]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:87: attempt to index field '?' (a nil value)",
+			["time"] = "2020/08/31 17:24:36",
+			["locals"] = "anchor = nil\n(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n Other = <table> {\n }\n Undercity = <table> {\n }\n Darkspear Trolls = <table> {\n }\n Thunder Bluff = <table> {\n }\n Inactive = <table> {\n }\n Horde = <table> {\n }\n Orgrimmar = <table> {\n }\n}\n(for control) = \"Undercity\"\nkey = \"Undercity\"\nvalue = <table> {\n factionIndex = 5\n isWatched = true\n autobars = false\n FactionInfo = <table> {\n }\n timer = false\n barCreated = true\n hidden = false\n frameStatusBar = \"XVRB_5\"\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"wrap\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field '?' (a nil value)\"\nbars = <table> {\n Other = <table> {\n }\n Undercity = <table> {\n }\n Darkspear Trolls = <table> {\n }\n Thunder Bluff = <table> {\n }\n Inactive = <table> {\n }\n Horde = <table> {\n }\n Orgrimmar = <table> {\n }\n}\npet = false\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:87: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:77>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:325: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:234>\n[C]: in function `ExpandFactionHeader'\n...terface\\AddOns\\Questie\\Modules\\QuestieReputation.lua:13: in function `Update'\n...erface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:56: in function `Initialize'\n...rface\\AddOns\\Questie\\Modules\\QuestieEventHandler.lua:132: in function <...rface\\AddOns\\Questie\\Modules\\QuestieEventHandler.lua:126>",
+			["session"] = 2314,
+			["counter"] = 7,
+		}, -- [242]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:85: attempt to index field '?' (a nil value)",
+			["time"] = "2020/08/31 17:29:39",
+			["locals"] = "anchor = nil\n(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n Other = <table> {\n }\n Undercity = <table> {\n }\n Frostwolf Clan = <table> {\n }\n Booty Bay = <table> {\n }\n Horde Forces = <table> {\n }\n Ratchet = <table> {\n }\n Gadgetzan = <table> {\n }\n Everlook = <table> {\n }\n Inactive = <table> {\n }\n Darkspear Trolls = <table> {\n }\n Steamwheedle Cartel = <table> {\n }\n Horde = <table> {\n }\n Warsong Outriders = <table> {\n }\n Thunder Bluff = <table> {\n }\n Orgrimmar = <table> {\n }\n}\n(for control) = \"Orgrimmar\"\nkey = \"Orgrimmar\"\nvalue = <table> {\n factionIndex = 3\n isWatched = true\n autobars = false\n FactionInfo = <table> {\n }\n timer = false\n barCreated = true\n hidden = false\n frameStatusBar = \"XVRB_3\"\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"wrap\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field '?' (a nil value)\"\nbars = <table> {\n Other = <table> {\n }\n Undercity = <table> {\n }\n Frostwolf Clan = <table> {\n }\n Booty Bay = <table> {\n }\n Horde Forces = <table> {\n }\n Ratchet = <table> {\n }\n Gadgetzan = <table> {\n }\n Everlook = <table> {\n }\n Inactive = <table> {\n }\n Darkspear Trolls = <table> {\n }\n Steamwheedle Cartel = <table> {\n }\n Horde = <table> {\n }\n Warsong Outriders = <table> {\n }\n Thunder Bluff = <table> {\n }\n Orgrimmar = <table> {\n }\n}\npet = true\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:85: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:77>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:325: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:234>\n[C]: in function `ExpandFactionHeader'\n...terface\\AddOns\\Questie\\Modules\\QuestieReputation.lua:13: in function `Update'\n...erface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:56: in function `Initialize'\n...rface\\AddOns\\Questie\\Modules\\QuestieEventHandler.lua:132: in function <...rface\\AddOns\\Questie\\Modules\\QuestieEventHandler.lua:126>",
+			["session"] = 2315,
+			["counter"] = 8,
+		}, -- [243]
 	},
 }

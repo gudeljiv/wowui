@@ -4,25 +4,23 @@ local size = 125
 local scale = 1.4
 local bars = {}
 local pet = false
-local standings = {
-	neutral = {value = 3000, color = "yellow"},
-	friendly = {value = 6000, color = "lightgreen"},
-	honored = {value = 12000, color = "green"},
-	unfriendly = {value = 0, color = "orange"},
-	hostile = {value = -3000, color = "red"}
-}
 
 local f = CreateFrame("Frame", xVerminReputationFrame, UIParent)
 f:SetScale(scale)
 f:SetSize(size, 12)
 f:SetPoint("BOTTOMLEFT", ChatFrame1, "BOTTOMRIGHT", 5, 50)
-f:EnableMouse(false)
 
 local function CreateBar(input)
+	f.Wrapper = CreateFrame("Frame", input.frameStatusBar .. "_wrap", UIParent)
+	f.Wrapper:SetScale(1)
+	f.Wrapper:SetSize(size * scale, 30)
+	f.Wrapper:SetPoint("CENTER", f, 0, 0)
+	f.Wrapper:SetAlpha(0)
+
 	f.Bar = CreateFrame("StatusBar", input.frameStatusBar, UIParent)
 	f.Bar:SetScale(1)
 	f.Bar:SetSize(size * scale, 2)
-	f.Bar:SetPoint("CENTER", f, 0, 0)
+	f.Bar:SetPoint("CENTER", f.Wrapper, 0, -10)
 	f.Bar:SetStatusBarTexture("Interface\\AddOns\\xVermin\\Media\\statusbarTexture")
 	f.Bar:SetAlpha(0)
 
@@ -33,7 +31,7 @@ local function CreateBar(input)
 	f.Bar.Value:SetVertexColor(1, 1, 1)
 
 	f.Bar.FactionName = f.Bar:CreateFontString(nil, "ARTWORK")
-	f.Bar.FactionName:SetFont("Fonts\\ARIALN.ttf", 12, "THINOUTLINE")
+	f.Bar.FactionName:SetFont("Fonts\\ARIALN.ttf", 10, "THINOUTLINE")
 	f.Bar.FactionName:SetShadowOffset(0, 0)
 	f.Bar.FactionName:SetPoint("RIGHT", f.Bar, "RIGHT", -2, 10)
 	f.Bar.FactionName:SetVertexColor(1, 1, 1)
@@ -81,13 +79,14 @@ local function UpdateBarPosition()
 	for key, value in pairs(bars) do
 		if not value.hidden then
 			if value.isWatched then
-				anchor = _G[value.frameStatusBar]
+				anchor = _G[value.frameStatusBar .. "_wrap"]
 				if _G["PlayerXPFrameStatusBar"] and _G["PlayerXPFrameStatusBar"]:GetAlpha() > 0 then
 					if pet then
-						_G[value.frameStatusBar]:SetPoint("BOTTOM", PetXPFrameStatusBar, "TOP", 0, 30)
+						_G[value.frameStatusBar .. "_wrap"]:SetPoint("BOTTOM", PetXPFrameStatusBar, "TOP", 0, 30)
 					else
-						_G[value.frameStatusBar]:SetPoint("BOTTOM", PlayerXPFrameStatusBar, "TOP", 0, 30)
+						_G[value.frameStatusBar .. "_wrap"]:SetPoint("BOTTOM", PlayerXPFrameStatusBar, "TOP", 0, 30)
 					end
+				-- _G[value.frameStatusBar]:SetPoint("CENTER", _G[value.frameStatusBar .. "wrap"], 0, 0)
 				end
 			end
 		end
@@ -98,13 +97,13 @@ local function UpdateBarPosition()
 		if not value.hidden then
 			if not value.isWatched then
 				if anchor then
-					_G[value.frameStatusBar]:SetPoint("BOTTOM", anchor, "TOP", 0, 30 * counter)
+					_G[value.frameStatusBar .. "_wrap"]:SetPoint("BOTTOM", anchor, "TOP", 0, 30 * counter)
 				else
 					if _G["PlayerXPFrameStatusBar"] and _G["PlayerXPFrameStatusBar"]:GetAlpha() > 0 then
 						if pet then
-							_G[value.frameStatusBar]:SetPoint("BOTTOM", PetXPFrameStatusBar, "TOP", 0, 30 * counter)
+							_G[value.frameStatusBar .. "_wrap"]:SetPoint("BOTTOM", PetXPFrameStatusBar, "TOP", 0, 30 * counter)
 						else
-							_G[value.frameStatusBar]:SetPoint("BOTTOM", PlayerXPFrameStatusBar, "TOP", 0, 30 * counter)
+							_G[value.frameStatusBar .. "_wrap"]:SetPoint("BOTTOM", PlayerXPFrameStatusBar, "TOP", 0, 30 * counter)
 						end
 					end
 				end
@@ -126,85 +125,83 @@ local function UpdateBarVisibility()
 	-- 		end
 	-- 	end
 	-- end
-	for key, value in pairs(bars) do
-		if value.autobars then
-			if value.hidden then
-				C_Timer.After(
-					1,
-					function()
-						securecall("UIFrameFadeIn", _G[value.frameStatusBar], 1, 0, 0.8)
-					end
-				)
-				value.hidden = false
-			end
-
-			if value.timer then
-				value.timer:Cancel()
-				value.timer = false
-			end
-
-			value.timer =
-				C_Timer.NewTimer(
-				30,
-				function()
-					securecall("UIFrameFadeOut", _G[value.frameStatusBar], 1, 0.8, 0)
-					value.hidden = true
-					value.timer = false
-					UpdateBarPosition()
-					value.autobars = false
-				end
-			)
-		end
-	end
+	-- for key, value in pairs(bars) do
+	-- 	if value.autobars then
+	-- 		if value.hidden then
+	-- 			C_Timer.After(
+	-- 				1,
+	-- 				function()
+	-- 					securecall("UIFrameFadeIn", _G[value.frameStatusBar], 1, 0, 0.8)
+	-- 				end
+	-- 			)
+	-- 			value.hidden = false
+	-- 		end
+	-- 		if value.timer then
+	-- 			value.timer:Cancel()
+	-- 			value.timer = false
+	-- 		end
+	-- 		value.timer =
+	-- 			C_Timer.NewTimer(
+	-- 			30,
+	-- 			function()
+	-- 				securecall("UIFrameFadeOut", _G[value.frameStatusBar], 1, 0.8, 0)
+	-- 				value.hidden = true
+	-- 				value.timer = false
+	-- 				value.autobars = false
+	-- 				UpdateBarPosition()
+	-- 			end
+	-- 		)
+	-- 	end
+	-- end
 end
 
 local function UpdateBarValueAndColor()
 	for key, value in pairs(bars) do
 		if not value.hidden then
-			if value.FactionInfo.earnedValue < 0 then
-				standing = "unfriendly"
-				color = {r = 238 / 255, g = 102 / 255, b = 34 / 255}
-				standingValue = 3000 + value.FactionInfo.earnedValue
-				topValue = 3000
-			end
-
 			if value.FactionInfo.earnedValue < -3000 then
-				standing = "hostile"
+				standing = "HOSTILE"
 				color = {r = 255 / 255, g = 0 / 255, b = 0 / 255}
 				standingValue = 3000 + value.FactionInfo.earnedValue
 				topValue = 3000
 			end
 
+			if value.FactionInfo.earnedValue < 0 then
+				standing = "UNFRIENDLY"
+				color = {r = 238 / 255, g = 102 / 255, b = 34 / 255}
+				standingValue = 3000 + value.FactionInfo.earnedValue
+				topValue = 3000
+			end
+
 			if value.FactionInfo.earnedValue >= 0 then
-				standing = "neutral"
+				standing = "NEUTRAL"
 				color = {r = 255 / 255, g = 255 / 255, b = 0 / 255}
 				standingValue = value.FactionInfo.earnedValue
 				topValue = 3000
 			end
 
 			if value.FactionInfo.earnedValue > 3000 then
-				standing = "friendly"
+				standing = "FRIENDLY"
 				color = {r = 0 / 255, g = 255 / 255, b = 0 / 255}
 				standingValue = value.FactionInfo.earnedValue - 3000
 				topValue = 6000
 			end
 
 			if value.FactionInfo.earnedValue > 9000 then
-				standing = "honored"
+				standing = "HONORED"
 				color = {r = 0 / 255, g = 255 / 255, b = 136 / 255}
 				standingValue = value.FactionInfo.earnedValue - 9000
 				topValue = 12000
 			end
 
 			if value.FactionInfo.earnedValue > 12000 then
-				standing = "revered"
+				standing = "REVERED"
 				color = {r = 0 / 255, g = 255 / 255, b = 204 / 255}
 				standingValue = value.FactionInfo.earnedValue - 12000
 				topValue = 21000
 			end
 
 			if value.FactionInfo.earnedValue > 21000 then
-				standing = "exalted"
+				standing = "EXALTED"
 				color = {r = 0 / 255, g = 255 / 255, b = 255 / 255}
 				standingValue = value.FactionInfo.earnedValue - 21000
 				topValue = 999
@@ -212,9 +209,25 @@ local function UpdateBarValueAndColor()
 
 			_G[value.frameStatusBar]:SetMinMaxValues(0, value.FactionInfo.topValue)
 			_G[value.frameStatusBar]:SetValue(value.FactionInfo.earnedValue)
+			_G[value.frameStatusBar]:SetStatusBarColor(color.r, color.g, color.b, 1)
+
 			_G[value.frameStatusBar].Value:SetText(standingValue .. "/" .. topValue)
 			_G[value.frameStatusBar].FactionName:SetText(value.FactionInfo.name)
-			_G[value.frameStatusBar]:SetStatusBarColor(color.r, color.g, color.b, 1)
+
+		-- _G[value.frameStatusBar .. "_wrap"]:SetScript(
+		-- 	"OnEnter",
+		-- 	function()
+		-- 		_G[value.frameStatusBar].Value:SetText(xVermin:Round(standingValue / topValue * 100) .. "%")
+		-- 		_G[value.frameStatusBar].FactionName:SetText(standing)
+		-- 	end
+		-- )
+		-- _G[value.frameStatusBar .. "_wrap"]:SetScript(
+		-- 	"OnLeave",
+		-- 	function()
+		-- 		_G[value.frameStatusBar].Value:SetText(standingValue .. "/" .. topValue)
+		-- 		_G[value.frameStatusBar].FactionName:SetText(value.FactionInfo.name)
+		-- 	end
+		-- )
 		end
 	end
 end
@@ -232,7 +245,7 @@ local function UpdateBars()
 		if not bars[name] then
 			bars[name] = {
 				factionIndex = factionIndex,
-				frameStatusBar = "xvrb_" .. factionIndex,
+				frameStatusBar = "XVRB_" .. factionIndex,
 				hidden = true,
 				barCreated = false,
 				timer = false,
@@ -258,7 +271,32 @@ local function UpdateBars()
 					value.barCreated = true
 				end
 
-				value.autobars = true
+				if value.hidden then
+					C_Timer.After(
+						1,
+						function()
+							securecall("UIFrameFadeIn", _G[value.frameStatusBar], 1, 0, 0.8)
+						end
+					)
+					value.hidden = false
+				end
+
+				if value.timer then
+					value.timer:Cancel()
+					value.timer = false
+				end
+
+				value.timer =
+					C_Timer.NewTimer(
+					30,
+					function()
+						securecall("UIFrameFadeOut", _G[value.frameStatusBar], 1, 0.8, 0)
+						value.hidden = true
+						value.timer = false
+						value.autobars = false
+						UpdateBarPosition()
+					end
+				)
 			end
 
 			if not value.timer and not value.hidden then
@@ -283,7 +321,7 @@ local function UpdateBars()
 		end
 	end
 
-	UpdateBarVisibility()
+	-- UpdateBarVisibility()
 	UpdateBarValueAndColor()
 	UpdateBarPosition()
 end
