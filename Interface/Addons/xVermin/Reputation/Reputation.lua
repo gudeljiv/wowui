@@ -210,10 +210,10 @@ local function UpdateBarValueAndColor()
 			_G[value.frameStatusBar]:SetMinMaxValues(0, value.FactionInfo.topValue)
 			_G[value.frameStatusBar]:SetValue(value.FactionInfo.earnedValue)
 			_G[value.frameStatusBar]:SetStatusBarColor(color.r, color.g, color.b, 1)
-
 			_G[value.frameStatusBar].Value:SetText(standingValue .. "/" .. topValue)
 			_G[value.frameStatusBar].FactionName:SetText(value.FactionInfo.name)
 
+		-- _G[value.frameStatusBar .. "_wrap"]:SetScript("OnEnter", nil)
 		-- _G[value.frameStatusBar .. "_wrap"]:SetScript(
 		-- 	"OnEnter",
 		-- 	function()
@@ -221,6 +221,8 @@ local function UpdateBarValueAndColor()
 		-- 		_G[value.frameStatusBar].FactionName:SetText(standing)
 		-- 	end
 		-- )
+
+		-- _G[value.frameStatusBar .. "_wrap"]:SetScript("OnLeave", nil)
 		-- _G[value.frameStatusBar .. "_wrap"]:SetScript(
 		-- 	"OnLeave",
 		-- 	function()
@@ -232,7 +234,7 @@ local function UpdateBarValueAndColor()
 	end
 end
 
-local function UpdateBars()
+local function UpdateBars(self, event)
 	local factionIndex = 1
 	local lastFactionName
 
@@ -260,66 +262,64 @@ local function UpdateBars()
 		bars[name].FactionInfo.earnedValue = earnedValue
 		bars[name].FactionInfo.topValue = topValue
 
-		factionIndex = factionIndex + 1
-	until factionIndex > 200
-
-	for key, value in pairs(bars) do
-		if not value.isWatched then
-			if value.FactionInfo.earnedValue_old ~= value.FactionInfo.earnedValue then
-				if not value.barCreated then
-					CreateBar(value)
-					value.barCreated = true
+		if not bars[name].isWatched then
+			if bars[name].FactionInfo.earnedValue_old ~= bars[name].FactionInfo.earnedValue then
+				if not bars[name].barCreated then
+					CreateBar(bars[name])
+					bars[name].barCreated = true
 				end
 
-				if value.hidden then
+				if bars[name].hidden then
 					C_Timer.After(
 						1,
 						function()
-							securecall("UIFrameFadeIn", _G[value.frameStatusBar], 1, 0, 0.8)
+							securecall("UIFrameFadeIn", _G[bars[name].frameStatusBar], 1, 0, 0.8)
 						end
 					)
-					value.hidden = false
+					bars[name].hidden = false
 				end
 
-				if value.timer then
-					value.timer:Cancel()
-					value.timer = false
+				if bars[name].timer then
+					bars[name].timer:Cancel()
+					bars[name].timer = false
 				end
 
-				value.timer =
+				bars[name].timer =
 					C_Timer.NewTimer(
 					30,
 					function()
-						securecall("UIFrameFadeOut", _G[value.frameStatusBar], 1, 0.8, 0)
-						value.hidden = true
-						value.timer = false
-						value.autobars = false
-						UpdateBarPosition()
+						securecall("UIFrameFadeOut", _G[bars[name].frameStatusBar], 1, 0.8, 0)
+						bars[name].hidden = true
+						bars[name].timer = false
+						bars[name].autobars = false
+						_G[bars[name].frameStatusBar].fadeInfo.finishedFunc = UpdateBarPosition
 					end
 				)
 			end
 
-			if not value.timer and not value.hidden then
-				securecall("UIFrameFadeOut", _G[value.frameStatusBar], 1, 0.8, 0)
-				value.hidden = true
+			if not bars[name].timer and not bars[name].hidden then
+				securecall("UIFrameFadeOut", _G[bars[name].frameStatusBar], 1, 0.8, 0)
+				bars[name].hidden = true
 			end
 		end
 
-		if value.isWatched then
-			if value.hidden then
-				value.hidden = false
-				if not value.barCreated then
-					CreateBar(value)
-					value.barCreated = true
+		if bars[name].isWatched then
+			if bars[name].hidden then
+				bars[name].hidden = false
+				if not bars[name].barCreated then
+					CreateBar(bars[name])
+					bars[name].barCreated = true
 				end
-				securecall("UIFrameFadeIn", _G[value.frameStatusBar], 1, 0, 0.8)
+				securecall("UIFrameFadeIn", _G[bars[name].frameStatusBar], 1, 0, 0.8)
 			end
-			if value.timer then
-				value.timer:Cancel()
-				value.timer = false
+			if bars[name].timer then
+				bars[name].timer:Cancel()
+				bars[name].timer = false
 			end
 		end
-	end
+
+		factionIndex = factionIndex + 1
+	until factionIndex > 200
 
 	-- UpdateBarVisibility()
 	UpdateBarValueAndColor()

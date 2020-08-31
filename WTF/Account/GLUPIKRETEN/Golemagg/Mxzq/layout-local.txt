@@ -90,13 +90,6 @@ X: -219
 Y: 137
 W: 920
 H: 600
-Frame: MkQL_Main_Frame
-FrameLevel: 1
-Anchor: CENTER
-X: 237
-Y: 145
-W: 516
-H: 589
 Frame: aux_frame
 FrameLevel: 1
 Anchor: TOPLEFT
@@ -104,6 +97,13 @@ X: 19
 Y: -64
 W: 768
 H: 447
+Frame: MkQL_Main_Frame
+FrameLevel: 1
+Anchor: CENTER
+X: 237
+Y: 145
+W: 516
+H: 589
 Frame: nTooltip_Anchor
 FrameLevel: 1
 Anchor: BOTTOMRIGHT

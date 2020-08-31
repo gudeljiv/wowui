@@ -304,8 +304,8 @@ EavesDropStatsDB = {
 							["amount"] = 113,
 						},
 						[2] = {
-							["time"] = "|cffffffff08/09/20 12:30:00|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMulti-Shot|r|h hits |Hunit:Creature-0-4448-1-186-4025-00002FD00B:Bloodfury Ambusher|hBloodfury Ambusher|h for |cffffffff137|r |cffffffffPhysical|r.(Critical)",
-							["amount"] = 137,
+							["time"] = "|cffffffff08/31/20 06:29:21|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMulti-Shot|r|h hits |Hunit:Creature-0-4448-1-42-3382-00004D2178:Southsea Cannoneer|hSouthsea Cannoneer|h for |cffffffff33|r |cffffffffPhysical|r.(183 Overkill) (Critical)",
+							["amount"] = 216,
 						},
 						["icon"] = 132330,
 					},

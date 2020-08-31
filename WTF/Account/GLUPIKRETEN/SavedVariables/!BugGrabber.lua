@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 2317,
+	["session"] = 2347,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -1922,5 +1922,69 @@ BugGrabberDB = {
 			["session"] = 2315,
 			["counter"] = 8,
 		}, -- [243]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:265: attempt to index global 'value' (a nil value)",
+			["time"] = "2020/08/31 18:40:52",
+			["locals"] = "factionIndex = 1\nlastFactionName = nil\nname = \"Horde\"\ndescription = \"\"\nstandingId = 5\nbottomValue = 3000\ntopValue = 9000\nearnedValue = 4705\natWarWith = false\ncanToggleAtWar = true\nisHeader = true\nisCollapsed = false\nhasRep = false\nisWatched = false\nisChild = false\n(*temporary) = nil\n(*temporary) = 4705\n(*temporary) = <table> {\n topValue = 9000\n earnedValue_old = 4705\n name = \"Horde\"\n earnedValue = 4705\n}\n(*temporary) = \"1\"\n(*temporary) = \"attempt to index global 'value' (a nil value)\"\nbars = <table> {\n Horde = <table> {\n }\n}\nCreateBar = <function> defined @Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:13\nUpdateBarPosition = <function> defined @Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:77\nUpdateBarValueAndColor = <function> defined @Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:158\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:265: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:237>",
+			["session"] = 2325,
+			["counter"] = 7,
+		}, -- [244]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:266: attempt to index global 'value' (a nil value)",
+			["time"] = "2020/08/31 18:41:37",
+			["locals"] = "factionIndex = 13\nlastFactionName = nil\nname = \"Ratchet\"\ndescription = \"Part of the Steamwheedle Cartel, this goblin city provides a neutral haven for those that wish to trade goods and services in the Barrens.\"\nstandingId = 4\nbottomValue = 0\ntopValue = 3000\nearnedValue = 2355\natWarWith = false\ncanToggleAtWar = true\nisHeader = false\nisCollapsed = false\nhasRep = false\nisWatched = false\nisChild = false\n(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = nil\n(*temporary) = <table> {\n topValue = 3000\n earnedValue_old = 2355\n name = \"Ratchet\"\n earnedValue = 2355\n}\n(*temporary) = \"13\"\n(*temporary) = \"attempt to index global 'value' (a nil value)\"\nbars = <table> {\n Undercity = <table> {\n }\n Frostwolf Clan = <table> {\n }\n Horde Forces = <table> {\n }\n Ratchet = <table> {\n }\n Gadgetzan = <table> {\n }\n Everlook = <table> {\n }\n Booty Bay = <table> {\n }\n Darkspear Trolls = <table> {\n }\n Steamwheedle Cartel = <table> {\n }\n Horde = <table> {\n }\n Warsong Outriders = <table> {\n }\n Thunder Bluff = <table> {\n }\n Orgrimmar = <table> {\n }\n}\nCreateBar = <function> defined @Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:13\nUpdateBarPosition = <function> defined @Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:77\nUpdateBarValueAndColor = <function> defined @Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:158\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:266: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:237>",
+			["session"] = 2326,
+			["counter"] = 5,
+		}, -- [245]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:269: attempt to index global 'value' (a nil value)",
+			["time"] = "2020/08/31 18:48:23",
+			["locals"] = "self = <unnamed> {\n 0 = <userdata>\n}\nevent = \"UPDATE_FACTION\"\nfactionIndex = 1\nlastFactionName = nil\nname = \"Horde\"\ndescription = \"\"\nstandingId = 5\nbottomValue = 3000\ntopValue = 9000\nearnedValue = 4705\natWarWith = false\ncanToggleAtWar = true\nisHeader = true\nisCollapsed = false\nhasRep = false\nisWatched = false\nisChild = false\n(*temporary) = nil\n(*temporary) = 4705\n(*temporary) = <table> {\n topValue = 9000\n earnedValue_old = 4705\n name = \"Horde\"\n earnedValue = 4705\n}\n(*temporary) = \"1\"\n(*temporary) = false\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'value' (a nil value)\"\nbars = <table> {\n Horde = <table> {\n }\n}\nCreateBar = <function> defined @Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:13\nUpdateBarPosition = <function> defined @Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:77\nUpdateBarValueAndColor = <function> defined @Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:158\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:269: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:237>",
+			["session"] = 2331,
+			["counter"] = 5,
+		}, -- [246]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:296: attempt to call field 'finishedFunc' (a nil value)",
+			["time"] = "2020/08/31 18:54:39",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"attempt to call field 'finishedFunc' (a nil value)\"\nbars = <table> {\n Other = <table> {\n }\n Undercity = <table> {\n }\n Frostwolf Clan = <table> {\n }\n Booty Bay = <table> {\n }\n Horde Forces = <table> {\n }\n Ratchet = <table> {\n }\n Gadgetzan = <table> {\n }\n Everlook = <table> {\n }\n Inactive = <table> {\n }\n Darkspear Trolls = <table> {\n }\n Steamwheedle Cartel = <table> {\n }\n Horde = <table> {\n }\n Warsong Outriders = <table> {\n }\n Thunder Bluff = <table> {\n }\n Orgrimmar = <table> {\n }\n}\nname = \"Booty Bay\"\nUpdateBarPosition = <function> defined @Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:77\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:296: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:290>\nInterface\\SharedXML\\C_TimerAugment.lua:16: in function <Interface\\SharedXML\\C_TimerAugment.lua:14>",
+			["session"] = 2334,
+			["counter"] = 4,
+		}, -- [247]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:299: attempt to call field 'finishedFunc' (a nil value)",
+			["time"] = "2020/08/31 19:01:51",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"attempt to call field 'finishedFunc' (a nil value)\"\nbars = <table> {\n Other = <table> {\n }\n Undercity = <table> {\n }\n Frostwolf Clan = <table> {\n }\n Booty Bay = <table> {\n }\n Horde Forces = <table> {\n }\n Ratchet = <table> {\n }\n Gadgetzan = <table> {\n }\n Everlook = <table> {\n }\n Inactive = <table> {\n }\n Darkspear Trolls = <table> {\n }\n Steamwheedle Cartel = <table> {\n }\n Horde = <table> {\n }\n Warsong Outriders = <table> {\n }\n Thunder Bluff = <table> {\n }\n Orgrimmar = <table> {\n }\n}\nname = \"Booty Bay\"\nUpdateBarPosition = <function> defined @Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:77\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:299: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:290>\nInterface\\SharedXML\\C_TimerAugment.lua:16: in function <Interface\\SharedXML\\C_TimerAugment.lua:14>",
+			["session"] = 2337,
+			["counter"] = 4,
+		}, -- [248]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:299: attempt to call field 'UpdateBarPosition' (a nil value)",
+			["time"] = "2020/08/31 19:05:46",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"attempt to call field 'UpdateBarPosition' (a nil value)\"\nbars = <table> {\n Other = <table> {\n }\n Undercity = <table> {\n }\n Frostwolf Clan = <table> {\n }\n Booty Bay = <table> {\n }\n Horde Forces = <table> {\n }\n Ratchet = <table> {\n }\n Gadgetzan = <table> {\n }\n Everlook = <table> {\n }\n Inactive = <table> {\n }\n Darkspear Trolls = <table> {\n }\n Steamwheedle Cartel = <table> {\n }\n Horde = <table> {\n }\n Warsong Outriders = <table> {\n }\n Thunder Bluff = <table> {\n }\n Orgrimmar = <table> {\n }\n}\nname = \"Booty Bay\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:299: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:290>\nInterface\\SharedXML\\C_TimerAugment.lua:16: in function <Interface\\SharedXML\\C_TimerAugment.lua:14>",
+			["session"] = 2338,
+			["counter"] = 4,
+		}, -- [249]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:297: attempt to call method 'GetName' (a nil value)",
+			["time"] = "2020/08/31 19:06:59",
+			["locals"] = "(*temporary) = <table> {\n UpdateOnBarHighlightMarksBySpell = <function> defined @Interface\\FrameXML\\ActionButton.lua:70\n ERR_OUT_OF_CHI = \"Not enough chi\"\n DH_HAVOC_CORE_ABILITY_2 = \"Strong melee attack that consumes Fury. If it critical strikes, some Fury is refunded.\"\n MerchantItem9ItemButtonStock = MerchantItem9ItemButtonStock {\n }\n GetTrainerServiceTypeFilter = <function> defined =[C]:-1\n UNIT_NAMES_COMBATLOG_TOOLTIP = \"Color unit names.\"\n aux.frame11Shine10 = aux.frame11Shine10 {\n }\n SetTrainerServiceTypeFilter = <function> defined =[C]:-1\n LE_GAME_ERR_CHAT_RAID_RESTRICTED_TRIAL = 742\n SPELL_FAILED_CUSTOM_ERROR_71 = \"This partygoer wants to dance with you.\"\n LE_GAME_ERR_PET_SPELL_TARGETS_DEAD = 399\n ERROR_CLUB_TICKET_COUNT_AT_MAX_COMMUNITY = \"Can't create any more invite links for this group.\"\n RecruitAFriendFrame = RecruitAFriendFrame {\n }\n aux.frame12FlyoutBorderShadow = aux.frame12FlyoutBorderShadow {\n }\n CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture = CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture {\n }\n ERR_TRADE_EQUIPPED_BAG = \"You can't trade equipped bags.\"\n PVP_RANK_6_1 = \"Corporal\"\n MultiBarLeftButton7 = MultiBarLeftButton7 {\n }\n InterfaceOptionsNamesPanelUnitNameplatesShowAll = InterfaceOptionsNamesPanelUnitNameplatesShowAll {\n }\n GuildScrollFrameEntry20 = GuildScrollFrameEntry20 {\n }\n VideoOptionsFrameDefaults = VideoOptionsFrameDefaults {\n }\n MerchantItem2AltCurrencyFrameItem1Text = MerchantItem2AltCurrencyFrameItem1Text {\n }\n DetailsWindowOptionsBarTextEditorEntryNumberLines = DetailsWindowOptionsBarTextEditorEntryNumberLines {\n }\n OPTION_TOOLTIP_ACTION_BUTTON_USE_KEY_DOWN = \"Action button keybinds will respond on key down, rather than on key up.\"\n BINDING_NAME_NAMEPLATES = \"Show Enemy Name Plates\"\n INSTANCE_UNAVAILABLE_OTHER_TEMPORARILY_DISABLED = \"%s cannot enter. This instance is temporarily disabled.\"\n Atr_StackList9 = Atr_StackList9 {\n }\n MultiBarBottomRightButton8Shine5 = MultiBarBottomRightButton8Shine5 {\n }\n IsReferAFriendLinked = <function> defined =[C]:-1\n MAIL_LETTER_TOOLTIP = \"Click to make a permanent\ncopy of this letter.\"\n UnitFrameManaBar_UnregisterDefaultEvents = <function> defined @Interface\\FrameXML\\UnitFrame.lua:602\n ERR_NOAMMO_S = \"%s\"\n CraftExpandTabLeft = CraftExpandTabLeft {\n }\n CHAT_CONFIG_OTHER_COMBAT = <table> {\n }\n Questie_ItemButton18Shine14 = Questie_ItemButton18Shine14 {\n }\n FCFDockOverflowButton_OnClick = <function> defined @Interface\\FrameXML\\FloatingChatFrame.lua:2373\n BOOST2_WARRIOR_COLOSSUSSMASH = \"Use |cFFFFFFFFColossus Smash|r.\n\n|cFFFFFFFFColossus Smash|r increases your damage.\"\n BN_UNABLE_TO_RESOLVE_NAME = \"Unable to whisper '%s'. Blizzard services may be unavailable.\"\n LE_GAME_ERR_RECRUIT_A_FRIEND_FAILED = 952\n CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight = CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight {\n }\n LE_GAME_ERR_ONLY_ONE_QUIVER = 32\n SpellButton6Cooldown = SpellButton6Cooldown {\n }\n AdiBagsItemButton4IconQuestTexture = AdiBagsItemButton4IconQuestTexture {\n }\n LOSS_OF_CONTROL_DISPLAY_FEAR = \"Feared\"\n Graphics_QualityText = Graphics_QualityText {\n }\n questieLineFrame38 = questieLineFrame38 {\n }\n VOICEMACRO_4_Sc_1_FEMALE = \"Help me attack!\"\n StanceButton4FlyoutArrow = StanceButton4FlyoutArrow {\n }\n MultiBarRightButton7Shine9 = MultiBarRightButton7Shine9 {\n }\n BankFrameItem17SearchOverlay = BankFrameItem17SearchOverlay {\n }\n DMG_LCD = \"DMG\"\n VideoOptionsPanel_Cancel = <function> defined @Interface\\SharedXML\\VideoOptionsPanels.lua:315\n HubPanelProfileDefaultFriendlyNameColorMode = HubPanelProfileDefaultFriendlyNameColorMode {\n }\n Is64BitClient = <function> defined =[C]:-1\n SecureCmdItemParse = <function> defined @Interface\\FrameXML\\ChatFrame.lua:1111\n SLASH_STOPATTACK1 = \"/stopattack\"\n SortQuestWatches = <function> defined =[C]:-1\n ContainerFrame4Item16Cooldown = ContainerFrame4Item16Cooldown {\n }\n MINIMAP_TRACKING_TRAINER_CLASS = \"Class Trainer\"\n SLASH_DISMOUNT2 = \"/dismount\"\n DUNGEON_FLOOR_DRAGONBLIGHTCHROMIESCENARIO2 = \"Andorhal\"\n PlayerFrame_UpdateReadyCheck = ",
+			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:297: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:290>\nInterface\\SharedXML\\C_TimerAugment.lua:16: in function <Interface\\SharedXML\\C_TimerAugment.lua:14>",
+			["session"] = 2339,
+			["counter"] = 4,
+		}, -- [250]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:299: attempt to index field 'fadeInfo' (a nil value)",
+			["time"] = "2020/08/31 19:08:06",
+			["locals"] = "(*temporary) = nil\n(*temporary) = XVRB_9 {\n 0 = <userdata>\n Above = <unnamed> {\n }\n BackgroundShadow = <unnamed> {\n }\n Below = <unnamed> {\n }\n Standing = <unnamed> {\n }\n Value = <unnamed> {\n }\n Background = <unnamed> {\n }\n fadeInfo = <table> {\n }\n FactionName = <unnamed> {\n }\n}\n(*temporary) = \"XVRB_9\"\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = true\n(*temporary) = \"attempt to index field 'fadeInfo' (a nil value)\"\nbars = <table> {\n Other = <table> {\n }\n Undercity = <table> {\n }\n Frostwolf Clan = <table> {\n }\n Booty Bay = <table> {\n }\n Horde Forces = <table> {\n }\n Ratchet = <table> {\n }\n Gadgetzan = <table> {\n }\n Everlook = <table> {\n }\n Inactive = <table> {\n }\n Darkspear Trolls = <table> {\n }\n Steamwheedle Cartel = <table> {\n }\n Horde = <table> {\n }\n Warsong Outriders = <table> {\n }\n Thunder Bluff = <table> {\n }\n Orgrimmar = <table> {\n }\n}\nname = \"Steamwheedle Cartel\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:299: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:290>\nInterface\\SharedXML\\C_TimerAugment.lua:16: in function <Interface\\SharedXML\\C_TimerAugment.lua:14>",
+			["session"] = 2340,
+			["counter"] = 4,
+		}, -- [251]
 	},
 }
