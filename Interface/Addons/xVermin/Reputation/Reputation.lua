@@ -98,7 +98,6 @@ local function UpdateBarPosition()
 					else
 						_G[value.frameStatusBar .. "_wrap"]:SetPoint("BOTTOM", PlayerXPFrameStatusBar, "TOP", 0, 30)
 					end
-				-- _G[value.frameStatusBar]:SetPoint("CENTER", _G[value.frameStatusBar .. "wrap"], 0, 0)
 				end
 			end
 		end
@@ -194,7 +193,6 @@ local function UpdateBarValueAndColor()
 			_G[value.frameStatusBar].FactionName2:Hide()
 
 			_G[value.frameStatusBar .. "_wrap"]:SetFrameStrata("HIGH")
-
 			_G[value.frameStatusBar .. "_wrap"]:SetScript(
 				"OnEnter",
 				function()
