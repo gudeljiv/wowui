@@ -104,13 +104,6 @@ X: 243
 Y: -107
 W: 50
 H: 50
-Frame: StanceButton1
-FrameLevel: 3
-Anchor: CENTER
-X: 0
-Y: 0
-W: 30
-H: 30
 Frame: aux_frame
 FrameLevel: 1
 Anchor: TOPLEFT
@@ -118,6 +111,13 @@ X: 13
 Y: -55
 W: 768
 H: 447
+Frame: StanceButton1
+FrameLevel: 3
+Anchor: CENTER
+X: 0
+Y: 0
+W: 30
+H: 30
 Frame: TargetFrame
 FrameLevel: 1
 Anchor: CENTER
