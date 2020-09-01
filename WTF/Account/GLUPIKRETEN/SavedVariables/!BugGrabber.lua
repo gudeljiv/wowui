@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 2366,
 	["lastSanitation"] = 3,
-	["session"] = 2349,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -173,8 +173,8 @@ BugGrabberDB = {
 		}, -- [21]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["session"] = 1336,
 			["time"] = "2020/07/26 13:26:58",
+			["session"] = 1336,
 			["counter"] = 2,
 		}, -- [22]
 		{
@@ -554,8 +554,8 @@ BugGrabberDB = {
 		}, -- [69]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["time"] = "2020/07/27 20:37:46",
 			["session"] = 1423,
+			["time"] = "2020/07/27 20:37:46",
 			["counter"] = 4,
 		}, -- [70]
 		{
@@ -820,8 +820,8 @@ BugGrabberDB = {
 		}, -- [103]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["time"] = "2020/08/02 10:06:15",
 			["session"] = 1605,
+			["time"] = "2020/08/02 10:06:15",
 			["counter"] = 3,
 		}, -- [104]
 		{
@@ -961,8 +961,8 @@ BugGrabberDB = {
 		}, -- [121]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
-			["session"] = 1654,
 			["time"] = "2020/08/02 20:13:03",
+			["session"] = 1654,
 			["counter"] = 3,
 		}, -- [122]
 		{
@@ -1327,8 +1327,8 @@ BugGrabberDB = {
 		}, -- [167]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["session"] = 1843,
 			["time"] = "2020/08/13 21:31:07",
+			["session"] = 1843,
 			["counter"] = 6,
 		}, -- [168]
 		{
@@ -1449,8 +1449,8 @@ BugGrabberDB = {
 		}, -- [183]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Experience.lua",
-			["session"] = 1943,
 			["time"] = "2020/08/19 21:35:15",
+			["session"] = 1943,
 			["counter"] = 6,
 		}, -- [184]
 		{
@@ -1703,8 +1703,8 @@ BugGrabberDB = {
 		}, -- [215]
 		{
 			["message"] = "(null)",
-			["time"] = "2020/07/24 16:00:06",
 			["session"] = 2103,
+			["time"] = "2020/07/24 16:00:06",
 			["counter"] = 88,
 		}, -- [216]
 		{
@@ -1986,5 +1986,37 @@ BugGrabberDB = {
 			["session"] = 2340,
 			["counter"] = 4,
 		}, -- [251]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:105: attempt to index field '?' (a nil value)",
+			["time"] = "2020/09/01 11:02:58",
+			["locals"] = "anchor = nil\n(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n Other = <table> {\n }\n Undercity = <table> {\n }\n Frostwolf Clan = <table> {\n }\n Booty Bay = <table> {\n }\n Horde Forces = <table> {\n }\n Ratchet = <table> {\n }\n Gadgetzan = <table> {\n }\n Everlook = <table> {\n }\n Inactive = <table> {\n }\n Darkspear Trolls = <table> {\n }\n Steamwheedle Cartel = <table> {\n }\n Horde = <table> {\n }\n Warsong Outriders = <table> {\n }\n Thunder Bluff = <table> {\n }\n Orgrimmar = <table> {\n }\n}\n(for control) = \"Other\"\nkey = \"Other\"\nvalue = <table> {\n factionIndex = 14\n autobars = false\n FactionInfo = <table> {\n }\n timer = false\n barCreated = false\n hidden = true\n frameStatusBar = \"XVRB_14\"\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"_wrap\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field '?' (a nil value)\"\nbars = <table> {\n Other = <table> {\n }\n Undercity = <table> {\n }\n Frostwolf Clan = <table> {\n }\n Booty Bay = <table> {\n }\n Horde Forces = <table> {\n }\n Ratchet = <table> {\n }\n Gadgetzan = <table> {\n }\n Everlook = <table> {\n }\n Inactive = <table> {\n }\n Darkspear Trolls = <table> {\n }\n Steamwheedle Cartel = <table> {\n }\n Horde = <table> {\n }\n Warsong Outriders = <table> {\n }\n Thunder Bluff = <table> {\n }\n Orgrimmar = <table> {\n }\n}\npet = false\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:105: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:89>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:353: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:264>",
+			["session"] = 2351,
+			["counter"] = 9,
+		}, -- [252]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:287: attempt to index field '?' (a nil value)",
+			["time"] = "2020/09/01 11:13:24",
+			["locals"] = "self = <unnamed> {\n 0 = <userdata>\n}\nevent = \"UPDATE_FACTION\"\nfactionIndex = 1\nlastFactionName = nil\nname = \"Horde\"\ndescription = \"\"\nstandingId = 5\nbottomValue = 3000\ntopValue = 9000\nearnedValue = 4705\natWarWith = false\ncanToggleAtWar = true\nisHeader = true\nisCollapsed = false\nhasRep = false\nisWatched = false\nisChild = false\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"_wrap\"\n(*temporary) = \"1\"\n(*temporary) = false\n(*temporary) = nil\n(*temporary) = \"attempt to index field '?' (a nil value)\"\nbars = <table> {\n Horde = <table> {\n }\n}\nCreateBar = <function> defined @Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:13\nUpdateBarPosition = <function> defined @Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:89\nUpdateBarValueAndColor = <function> defined @Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:170\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:287: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:258>",
+			["session"] = 2356,
+			["counter"] = 5,
+		}, -- [253]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:235: attempt to index field '?' (a nil value)",
+			["time"] = "2020/09/01 11:16:22",
+			["locals"] = "(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n Other = <table> {\n }\n Undercity = <table> {\n }\n Frostwolf Clan = <table> {\n }\n Booty Bay = <table> {\n }\n Horde Forces = <table> {\n }\n Ratchet = <table> {\n }\n Gadgetzan = <table> {\n }\n Everlook = <table> {\n }\n Inactive = <table> {\n }\n Darkspear Trolls = <table> {\n }\n Steamwheedle Cartel = <table> {\n }\n Horde = <table> {\n }\n Warsong Outriders = <table> {\n }\n Thunder Bluff = <table> {\n }\n Orgrimmar = <table> {\n }\n}\n(for control) = \"Orgrimmar\"\nkey = \"Orgrimmar\"\nvalue = <table> {\n factionIndex = 3\n isWatched = true\n autobars = false\n FactionInfo = <table> {\n }\n timer = false\n barCreated = true\n hidden = false\n frameStatusBar = \"XVRB_3\"\n}\n(*temporary) = <table> {\n UpdateOnBarHighlightMarksBySpell = <function> defined @Interface\\FrameXML\\ActionButton.lua:70\n ERR_OUT_OF_CHI = \"Not enough chi\"\n DH_HAVOC_CORE_ABILITY_2 = \"Strong melee attack that consumes Fury. If it critical strikes, some Fury is refunded.\"\n MerchantItem9ItemButtonStock = MerchantItem9ItemButtonStock {\n }\n GetTrainerServiceTypeFilter = <function> defined =[C]:-1\n UNIT_NAMES_COMBATLOG_TOOLTIP = \"Color unit names.\"\n aux.frame11Shine10 = aux.frame11Shine10 {\n }\n SetTrainerServiceTypeFilter = <function> defined =[C]:-1\n LE_GAME_ERR_CHAT_RAID_RESTRICTED_TRIAL = 742\n SPELL_FAILED_CUSTOM_ERROR_71 = \"This partygoer wants to dance with you.\"\n LE_GAME_ERR_PET_SPELL_TARGETS_DEAD = 399\n ERROR_CLUB_TICKET_COUNT_AT_MAX_COMMUNITY = \"Can't create any more invite links for this group.\"\n RecruitAFriendFrame = RecruitAFriendFrame {\n }\n aux.frame12FlyoutBorderShadow = aux.frame12FlyoutBorderShadow {\n }\n CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture = CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture {\n }\n ERR_TRADE_EQUIPPED_BAG = \"You can't trade equipped bags.\"\n PVP_RANK_6_1 = \"Corporal\"\n MultiBarLeftButton7 = MultiBarLeftButton7 {\n }\n InterfaceOptionsNamesPanelUnitNameplatesShowAll = InterfaceOptionsNamesPanelUnitNameplatesShowAll {\n }\n GuildScrollFrameEntry20 = GuildScrollFrameEntry20 {\n }\n VideoOptionsFrameDefaults = VideoOptionsFrameDefaults {\n }\n MerchantItem2AltCurrencyFrameItem1Text = MerchantItem2AltCurrencyFrameItem1Text {\n }\n DetailsWindowOptionsBarTextEditorEntryNumberLines = DetailsWindowOptionsBarTextEditorEntryNumberLines {\n }\n OPTION_TOOLTIP_ACTION_BUTTON_USE_KEY_DOWN = \"Action button keybinds will respond on key down, rather than on key up.\"\n BINDING_NAME_NAMEPLATES = \"Show Enemy Name Plates\"\n INSTANCE_UNAVAILABLE_OTHER_TEMPORARILY_DISABLED = \"%s cannot enter. This instance is temporarily disabled.\"\n Atr_StackList9 = Atr_StackList9 {\n }\n MultiBarBottomRightButton8Shine5 = MultiBarBottomRightButton8Shine5 {\n }\n IsReferAFriendLinked = <function> defined =[C]:-1\n MAIL_LETTER_TOOLTIP = \"Click to make a permanent\ncopy of this letter.\"\n UnitFrameManaBar_UnregisterDefaultEvents = <function> defined @Interface\\FrameXML\\UnitFrame.lua:602\n DUNGEON_FLOOR_UPPERBLACKROCKSPIRE3 = \"Hall of Blackhand\"\n CraftExpandTabLeft = CraftExpandTabLeft {\n }\n CHAT_CONFIG_OTHER_COMBAT = <table> {\n }\n Questie_ItemButton18Shine14 = Questie_ItemButton18Shine14 {\n }\n FCFDockOverflowButton_OnClick = <function> defined @Interface\\FrameXML\\FloatingChatFrame.lua:2373\n BOOST2_WARRIOR_COLOSSUSSMASH = \"Use |cFFFFFFFFColossus Smash|r.\n\n|cFFFFFFFFColossus Smash|r increases your damage.\"\n BN_UNABLE_TO_RESOLVE_NAME = \"Unable to whisper '%s'. Blizzard services may be unavailable.\"\n LE_GAME_ERR_RECRUIT_A_FRIEND_FAILED = 952\n CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight = CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight {\n }\n LE_GAME_ERR_ONLY_ONE_QUIVER = 32\n SpellButton6Cooldown = SpellButton6Cooldown {\n }\n AdiBagsItemButton4IconQuestTexture = AdiBagsItemButton4IconQuestTexture {\n }\n LOSS_OF_CONTROL_DISPLAY_FEAR = \"Feared\"\n Graphics_QualityText = Graphics_QualityText {\n }\n questieLineFrame38 = questieLineFrame38 {\n }\n ROGUE_COMBAT_CORE_ABILITY_4 = \"Melee ability with an increased range that consumes Combo Points.\"\n StanceButton4FlyoutArrow = StanceBut",
+			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:235: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:170>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:354: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:260>",
+			["session"] = 2358,
+			["counter"] = 1,
+		}, -- [254]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:196: attempt to index field '?' (a nil value)",
+			["time"] = "2020/09/01 11:22:20",
+			["locals"] = "(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n Other = <table> {\n }\n Undercity = <table> {\n }\n Frostwolf Clan = <table> {\n }\n Booty Bay = <table> {\n }\n Horde Forces = <table> {\n }\n Ratchet = <table> {\n }\n Gadgetzan = <table> {\n }\n Everlook = <table> {\n }\n Inactive = <table> {\n }\n Darkspear Trolls = <table> {\n }\n Steamwheedle Cartel = <table> {\n }\n Horde = <table> {\n }\n Warsong Outriders = <table> {\n }\n Thunder Bluff = <table> {\n }\n Orgrimmar = <table> {\n }\n}\n(for control) = \"Orgrimmar\"\nkey = \"Orgrimmar\"\nvalue = <table> {\n factionIndex = 3\n isWatched = true\n FactionInfo = <table> {\n }\n timer = false\n barCreated = true\n hidden = false\n frameStatusBar = \"XVRB_3\"\n}\n(*temporary) = <table> {\n UpdateOnBarHighlightMarksBySpell = <function> defined @Interface\\FrameXML\\ActionButton.lua:70\n ERR_OUT_OF_CHI = \"Not enough chi\"\n DH_HAVOC_CORE_ABILITY_2 = \"Strong melee attack that consumes Fury. If it critical strikes, some Fury is refunded.\"\n MerchantItem9ItemButtonStock = MerchantItem9ItemButtonStock {\n }\n GetTrainerServiceTypeFilter = <function> defined =[C]:-1\n UNIT_NAMES_COMBATLOG_TOOLTIP = \"Color unit names.\"\n aux.frame11Shine10 = aux.frame11Shine10 {\n }\n SetTrainerServiceTypeFilter = <function> defined =[C]:-1\n LE_GAME_ERR_CHAT_RAID_RESTRICTED_TRIAL = 742\n SPELL_FAILED_CUSTOM_ERROR_71 = \"This partygoer wants to dance with you.\"\n LE_GAME_ERR_PET_SPELL_TARGETS_DEAD = 399\n ERROR_CLUB_TICKET_COUNT_AT_MAX_COMMUNITY = \"Can't create any more invite links for this group.\"\n RecruitAFriendFrame = RecruitAFriendFrame {\n }\n aux.frame12FlyoutBorderShadow = aux.frame12FlyoutBorderShadow {\n }\n CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture = CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture {\n }\n ERR_TRADE_EQUIPPED_BAG = \"You can't trade equipped bags.\"\n PVP_RANK_6_1 = \"Corporal\"\n MultiBarLeftButton7 = MultiBarLeftButton7 {\n }\n InterfaceOptionsNamesPanelUnitNameplatesShowAll = InterfaceOptionsNamesPanelUnitNameplatesShowAll {\n }\n GuildScrollFrameEntry20 = GuildScrollFrameEntry20 {\n }\n VideoOptionsFrameDefaults = VideoOptionsFrameDefaults {\n }\n MerchantItem2AltCurrencyFrameItem1Text = MerchantItem2AltCurrencyFrameItem1Text {\n }\n DetailsWindowOptionsBarTextEditorEntryNumberLines = DetailsWindowOptionsBarTextEditorEntryNumberLines {\n }\n OPTION_TOOLTIP_ACTION_BUTTON_USE_KEY_DOWN = \"Action button keybinds will respond on key down, rather than on key up.\"\n BINDING_NAME_NAMEPLATES = \"Show Enemy Name Plates\"\n INSTANCE_UNAVAILABLE_OTHER_TEMPORARILY_DISABLED = \"%s cannot enter. This instance is temporarily disabled.\"\n Atr_StackList9 = Atr_StackList9 {\n }\n MultiBarBottomRightButton8Shine5 = MultiBarBottomRightButton8Shine5 {\n }\n IsReferAFriendLinked = <function> defined =[C]:-1\n MAIL_LETTER_TOOLTIP = \"Click to make a permanent\ncopy of this letter.\"\n UnitFrameManaBar_UnregisterDefaultEvents = <function> defined @Interface\\FrameXML\\UnitFrame.lua:602\n DUNGEON_FLOOR_UPPERBLACKROCKSPIRE3 = \"Hall of Blackhand\"\n CraftExpandTabLeft = CraftExpandTabLeft {\n }\n CHAT_CONFIG_OTHER_COMBAT = <table> {\n }\n Questie_ItemButton18Shine14 = Questie_ItemButton18Shine14 {\n }\n FCFDockOverflowButton_OnClick = <function> defined @Interface\\FrameXML\\FloatingChatFrame.lua:2373\n BOOST2_WARRIOR_COLOSSUSSMASH = \"Use |cFFFFFFFFColossus Smash|r.\n\n|cFFFFFFFFColossus Smash|r increases your damage.\"\n BN_UNABLE_TO_RESOLVE_NAME = \"Unable to whisper '%s'. Blizzard services may be unavailable.\"\n LE_GAME_ERR_RECRUIT_A_FRIEND_FAILED = 952\n CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight = CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight {\n }\n LE_GAME_ERR_ONLY_ONE_QUIVER = 32\n SpellButton6Cooldown = SpellButton6Cooldown {\n }\n AdiBagsItemButton4IconQuestTexture = AdiBagsItemButton4IconQuestTexture {\n }\n LOSS_OF_CONTROL_DISPLAY_FEAR = \"Feared\"\n Graphics_QualityText = Graphics_QualityText {\n }\n questieLineFrame38 = questieLineFrame38 {\n }\n ROGUE_COMBAT_CORE_ABILITY_4 = \"Melee ability with an increased range that consumes Combo Points.\"\n StanceButton4FlyoutArrow = StanceButton4FlyoutArrow {\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:196: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:131>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:316: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:221>",
+			["session"] = 2360,
+			["counter"] = 3,
+		}, -- [255]
 	},
 }

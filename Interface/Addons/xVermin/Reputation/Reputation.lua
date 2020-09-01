@@ -30,11 +30,23 @@ local function CreateBar(input)
 	f.Bar.Value:SetPoint("LEFT", f.Bar, "LEFT", 2, 10)
 	f.Bar.Value:SetVertexColor(1, 1, 1)
 
+	f.Bar.Value2 = f.Bar:CreateFontString(nil, "ARTWORK")
+	f.Bar.Value2:SetFont("Fonts\\ARIALN.ttf", 10, "THINOUTLINE")
+	f.Bar.Value2:SetShadowOffset(0, 0)
+	f.Bar.Value2:SetPoint("LEFT", f.Bar, "LEFT", 2, 10)
+	f.Bar.Value2:SetVertexColor(1, 1, 1)
+
 	f.Bar.FactionName = f.Bar:CreateFontString(nil, "ARTWORK")
 	f.Bar.FactionName:SetFont("Fonts\\ARIALN.ttf", 10, "THINOUTLINE")
 	f.Bar.FactionName:SetShadowOffset(0, 0)
 	f.Bar.FactionName:SetPoint("RIGHT", f.Bar, "RIGHT", -2, 10)
 	f.Bar.FactionName:SetVertexColor(1, 1, 1)
+
+	f.Bar.FactionName2 = f.Bar:CreateFontString(nil, "ARTWORK")
+	f.Bar.FactionName2:SetFont("Fonts\\ARIALN.ttf", 10, "THINOUTLINE")
+	f.Bar.FactionName2:SetShadowOffset(0, 0)
+	f.Bar.FactionName2:SetPoint("RIGHT", f.Bar, "RIGHT", -2, 10)
+	f.Bar.FactionName2:SetVertexColor(1, 1, 1)
 
 	f.Bar.Standing = f.Bar:CreateFontString(nil, "ARTWORK")
 	f.Bar.Standing:SetFont("Fonts\\ARIALN.ttf", 10, "THINOUTLINE")
@@ -114,45 +126,6 @@ local function UpdateBarPosition()
 end
 
 local function UpdateBarVisibility()
-	-- for key, value in pairs(bars) do
-	-- 	if value.barCreated then
-	-- 		if value.hidden then
-	-- 			-- _G[value.frameStatusBar]:SetAlpha(0)
-	-- 			securecall("UIFrameFadeOut", _G[value.frameStatusBar], 1, 0.8, 0)
-	-- 		else
-	-- 			-- _G[value.frameStatusBar]:SetAlpha(0.8)
-	-- 			securecall("UIFrameFadeIn", _G[value.frameStatusBar], 1, 0, 0.8)
-	-- 		end
-	-- 	end
-	-- end
-	-- for key, value in pairs(bars) do
-	-- 	if value.autobars then
-	-- 		if value.hidden then
-	-- 			C_Timer.After(
-	-- 				1,
-	-- 				function()
-	-- 					securecall("UIFrameFadeIn", _G[value.frameStatusBar], 1, 0, 0.8)
-	-- 				end
-	-- 			)
-	-- 			value.hidden = false
-	-- 		end
-	-- 		if value.timer then
-	-- 			value.timer:Cancel()
-	-- 			value.timer = false
-	-- 		end
-	-- 		value.timer =
-	-- 			C_Timer.NewTimer(
-	-- 			30,
-	-- 			function()
-	-- 				securecall("UIFrameFadeOut", _G[value.frameStatusBar], 1, 0.8, 0)
-	-- 				value.hidden = true
-	-- 				value.timer = false
-	-- 				value.autobars = false
-	-- 				UpdateBarPosition()
-	-- 			end
-	-- 		)
-	-- 	end
-	-- end
 end
 
 local function UpdateBarValueAndColor()
@@ -212,24 +185,35 @@ local function UpdateBarValueAndColor()
 			_G[value.frameStatusBar]:SetStatusBarColor(color.r, color.g, color.b, 1)
 			_G[value.frameStatusBar].Value:SetText(standingValue .. "/" .. topValue)
 			_G[value.frameStatusBar].FactionName:SetText(value.FactionInfo.name)
+			_G[value.frameStatusBar].Value2:SetText(xVermin:Round(standingValue / topValue * 100) .. "%")
+			_G[value.frameStatusBar].FactionName2:SetText(standing)
 
-		-- _G[value.frameStatusBar .. "_wrap"]:SetScript("OnEnter", nil)
-		-- _G[value.frameStatusBar .. "_wrap"]:SetScript(
-		-- 	"OnEnter",
-		-- 	function()
-		-- 		_G[value.frameStatusBar].Value:SetText(xVermin:Round(standingValue / topValue * 100) .. "%")
-		-- 		_G[value.frameStatusBar].FactionName:SetText(standing)
-		-- 	end
-		-- )
+			_G[value.frameStatusBar].Value:Show()
+			_G[value.frameStatusBar].Value2:Hide()
+			_G[value.frameStatusBar].FactionName:Show()
+			_G[value.frameStatusBar].FactionName2:Hide()
 
-		-- _G[value.frameStatusBar .. "_wrap"]:SetScript("OnLeave", nil)
-		-- _G[value.frameStatusBar .. "_wrap"]:SetScript(
-		-- 	"OnLeave",
-		-- 	function()
-		-- 		_G[value.frameStatusBar].Value:SetText(standingValue .. "/" .. topValue)
-		-- 		_G[value.frameStatusBar].FactionName:SetText(value.FactionInfo.name)
-		-- 	end
-		-- )
+			_G[value.frameStatusBar .. "_wrap"]:SetFrameStrata("HIGH")
+
+			_G[value.frameStatusBar .. "_wrap"]:SetScript(
+				"OnEnter",
+				function()
+					_G[value.frameStatusBar].Value:Hide()
+					_G[value.frameStatusBar].Value2:Show()
+					_G[value.frameStatusBar].FactionName:Hide()
+					_G[value.frameStatusBar].FactionName2:Show()
+				end
+			)
+
+			_G[value.frameStatusBar .. "_wrap"]:SetScript(
+				"OnLeave",
+				function()
+					_G[value.frameStatusBar].Value:Show()
+					_G[value.frameStatusBar].Value2:Hide()
+					_G[value.frameStatusBar].FactionName:Show()
+					_G[value.frameStatusBar].FactionName2:Hide()
+				end
+			)
 		end
 	end
 end
@@ -251,7 +235,6 @@ local function UpdateBars(self, event)
 				hidden = true,
 				barCreated = false,
 				timer = false,
-				autobars = false,
 				FactionInfo = {}
 			}
 		end
@@ -261,6 +244,12 @@ local function UpdateBars(self, event)
 		bars[name].FactionInfo.earnedValue_old = bars[name].FactionInfo.earnedValue and bars[name].FactionInfo.earnedValue or earnedValue
 		bars[name].FactionInfo.earnedValue = earnedValue
 		bars[name].FactionInfo.topValue = topValue
+
+		if _G[bars[name].frameStatusBar .. "_wrap"] then
+			_G[bars[name].frameStatusBar .. "_wrap"]:SetScript("OnEnter", nil)
+			_G[bars[name].frameStatusBar .. "_wrap"]:SetScript("OnLeave", nil)
+			_G[bars[name].frameStatusBar .. "_wrap"]:SetFrameStrata("BACKGROUND")
+		end
 
 		if not bars[name].isWatched then
 			if bars[name].FactionInfo.earnedValue_old ~= bars[name].FactionInfo.earnedValue then
@@ -291,7 +280,6 @@ local function UpdateBars(self, event)
 						securecall("UIFrameFadeOut", _G[bars[name].frameStatusBar], 1, 0.8, 0)
 						bars[name].hidden = true
 						bars[name].timer = false
-						bars[name].autobars = false
 						_G[bars[name].frameStatusBar].fadeInfo.finishedFunc = UpdateBarPosition
 					end
 				)
