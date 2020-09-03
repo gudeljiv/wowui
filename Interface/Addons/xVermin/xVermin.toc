@@ -14,6 +14,7 @@ Frames/GroopLootFrame.lua
 Frames/InspectFrame.lua
 Frames/MailBoxFrame.lua
 Frames/LootFrame.lua
+Frames/RaidFrameReSizer.lua
 Frames/SpellBookFrame.lua
 Frames/TalentFrame.lua
 
