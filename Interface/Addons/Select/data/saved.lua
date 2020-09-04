@@ -5,27 +5,27 @@
 -- right now old flyout savedvars don't get deleted; but this should be a minimal impact and having old saved
 -- attributes may be nice to have so keeping it for now.
 
-local _,s = ...
+local _, s = ...
 s.saved = {}
 
 SelectPerCharacterSettings = {}
 
 -- saves the attribClass,attribType,attribKey,attribValue for the given flyout list
-function s.saved:Set(list,attribClass,attribType,attribKey,attribValue)
-    local saved = SelectPerCharacterSettings
-    if not saved[list] then
-        saved[list] = {}
-    end
-    saved[list][1] = attribClass
-    saved[list][2] = attribType
-    saved[list][3] = attribKey
-    saved[list][4] = attribValue
+function s.saved:Set(list, attribClass, attribType, attribKey, attribValue)
+	local saved = SelectPerCharacterSettings
+	if not saved[list] then
+		saved[list] = {}
+	end
+	saved[list][1] = attribClass
+	saved[list][2] = attribType
+	saved[list][3] = attribKey
+	saved[list][4] = attribValue
 end
 
 -- returns the attribClass,attribType,attribKey,attribValue for the given flyout list
 function s.saved:Get(list)
-    local saved = SelectPerCharacterSettings[list]
-    if saved then
-        return saved[1],saved[2],saved[3],saved[4]
-    end
+	local saved = SelectPerCharacterSettings[list]
+	if saved then
+		return saved[1], saved[2], saved[3], saved[4]
+	end
 end

@@ -1,20 +1,22 @@
 -- menu.lua handles the creation and update of the S000M buttons that are /clicked
 -- it opens a flyout at the cursor's position for the current state
 
-local _,s = ...
+local _, s = ...
 s.menu = {}
 
 function s.menu:Create(action)
-    local index = action:GetID()
-    local selectline = action:GetAttribute("selectline")
+	local index = action:GetID()
+	local selectline = action:GetAttribute("selectline")
 
-    local menu = CreateFrame("Button",format("S%03dM",index),action,"SecureHandlerClickTemplate,SecureHandlerStateTemplate")
-    menu:RegisterForClicks("AnyUp")
+	local menu = CreateFrame("Button", format("S%03dM", index), action, "SecureHandlerClickTemplate,SecureHandlerStateTemplate")
+	menu:RegisterForClicks("AnyUp")
 
-    menu:SetScript("PreClick",s.menu.PreClick)
+	menu:SetScript("PreClick", s.menu.PreClick)
 
-    -- _onstate-select: when state changes, hide its flyout if open and copy the new state's flyout attributes to the parent action
-    menu:SetAttribute("_onstate-select",[[
+	-- _onstate-select: when state changes, hide its flyout if open and copy the new state's flyout attributes to the parent action
+	menu:SetAttribute(
+		"_onstate-select",
+		[[
         local oldstate = self:GetAttribute("activelist")
         local action = self:GetParent()
         local root = action:GetParent()
@@ -64,10 +66,13 @@ function s.menu:Create(action)
         end
 
         self:SetAttribute("activelist",newstate)
-    ]])
+    ]]
+	)
 
-    -- _onclick: the /click of S000M opens the flyout menu, hiding any previous one if it exists
-    menu:SetAttribute("_onclick",[[
+	-- _onclick: the /click of S000M opens the flyout menu, hiding any previous one if it exists
+	menu:SetAttribute(
+		"_onclick",
+		[[
         local flyoutFrame = self:GetParent():GetParent():GetFrameRef(self:GetAttribute("activelist"))
         if flyoutFrame then
             if flyoutFrame:IsVisible() then
@@ -91,23 +96,24 @@ function s.menu:Create(action)
             flyoutFrame:Show()
         end
 
-    ]])
+    ]]
+	)
 
-    RegisterStateDriver(menu,"select",selectline)
+	RegisterStateDriver(menu, "select", selectline)
 
-    return menu
+	return menu
 end
 
 function s.menu:UpdateStateDriver(action)
-    UnregisterStateDriver(action.menu,"select")
-    RegisterStateDriver(action.menu,"select",action:GetAttribute("selectline"))
+	UnregisterStateDriver(action.menu, "select")
+	RegisterStateDriver(action.menu, "select", action:GetAttribute("selectline"))
 end
 
 function s.menu:PreClick()
-    if not InCombatLockdown() then
-        local list = self:GetAttribute("activelist")
-        if list and s.root.flyouts[list] then
-            s.flyout:Fill(s.root.flyouts[list])
-        end
-    end
+	if not InCombatLockdown() then
+		local list = self:GetAttribute("activelist")
+		if list and s.root.flyouts[list] then
+			s.flyout:Fill(s.root.flyouts[list])
+		end
+	end
 end

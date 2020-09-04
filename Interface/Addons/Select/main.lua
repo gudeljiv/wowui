@@ -50,88 +50,88 @@
     equipsets and other swappable things are not supported; there's no way to change their icon without directly
     referencing the action button's icon.)
 ]]
-
-local _,s = ...
+local _, s = ...
 s.main = {}
 _Select = s
 
-local macrosEditedDuringCombat -- becomes true during combat when a macro is potentially edited
+local macrosEditedDuringCombat  -- becomes true during combat when a macro is potentially edited
 
 --[[ event handling ]]
-
 s.main.frame = CreateFrame("Frame")
-s.main.frame:SetScript("OnEvent",function(self,event,...)
-    if s.main[event] then
-        s.main[event](self,...)
-    end
-end)
+s.main.frame:SetScript(
+	"OnEvent",
+	function(self, event, ...)
+		if s.main[event] then
+			s.main[event](self, ...)
+		end
+	end
+)
 
 -- register login event to kick everything off
 s.main.frame:RegisterEvent("PLAYER_LOGIN")
 
 --[[ events ]]
-
 -- fires once on login to set up savedvars, register for events, and start updating macros to create secure s.main.frames
 function s.main:PLAYER_LOGIN()
-    s.settings:Load()
-    s.main.frame:RegisterEvent("UPDATE_MACROS")
-    s.main.frame:RegisterEvent("PLAYER_REGEN_DISABLED")
-    s.main.frame:RegisterEvent("PLAYER_REGEN_ENABLED")
-    s.main.frame:RegisterEvent("PLAYER_EQUIPMENT_CHANGED")
+	s.settings:Load()
+	s.main.frame:RegisterEvent("UPDATE_MACROS")
+	s.main.frame:RegisterEvent("PLAYER_REGEN_DISABLED")
+	s.main.frame:RegisterEvent("PLAYER_REGEN_ENABLED")
+	s.main.frame:RegisterEvent("PLAYER_EQUIPMENT_CHANGED")
 
-    -- for now all caches are enabled from the start to improve reliability. note: moving this to an independent
-    -- PLAYER_LOGIN from s.cache will often mean these caches will be empty/not enabled when first queried in this
-    -- execution path. messing with this will require extensive testing with deleted saved variables!
-    s.cache:Enable("item")
-    s.cache:Enable("spell")
-    s.cache:Enable("mount")
-    s.cache:Enable("toy")
+	-- for now all caches are enabled from the start to improve reliability. note: moving this to an independent
+	-- PLAYER_LOGIN from s.cache will often mean these caches will be empty/not enabled when first queried in this
+	-- execution path. messing with this will require extensive testing with deleted saved variables!
+	s.cache:Enable("item")
+	s.cache:Enable("spell")
+	s.cache:Enable("mount")
+	s.cache:Enable("toy")
 
-    s.main:UPDATE_MACROS() -- pretend event just fired; could've logged into combat and need to handle it
-    s.root:FillMissing() -- after first pass of secure s.main.frames being set up, look for missing flyouts/actions (savedvars maybe wiped?)
+	s.main:UPDATE_MACROS() -- pretend event just fired; could've logged into combat and need to handle it
+	s.root:FillMissing() -- after first pass of secure s.main.frames being set up, look for missing flyouts/actions (savedvars maybe wiped?)
 end
 
 -- fires when selecting macros in the macro edit window or closing the macro window; the macros and secure s.main.frames may need updating
 function s.main:UPDATE_MACROS()
-    if not InCombatLockdown() then
-        macrosEditedDuringCombat = nil
-        s.macro:UpdateAllMacros()
-        s.root:UpdateSecureFrames()
-    else
-        macrosEditedDuringCombat = true
-    end
+	if not InCombatLockdown() then
+		macrosEditedDuringCombat = nil
+		s.macro:UpdateAllMacros()
+		s.root:UpdateSecureFrames()
+	else
+		macrosEditedDuringCombat = true
+	end
 end
 
 -- fires when entering combat; fill flyouts so they're the most up-to-date when used during combat
 function s.main:PLAYER_REGEN_DISABLED()
-    s.flyout:FillAll()
-    if s.options:IsVisible() then
-        s.options:EnableSettings(false)
-    end
+	s.flyout:FillAll()
+	if s.options:IsVisible() then
+		s.options:EnableSettings(false)
+	end
 end
 
 -- fires when leaving combat; if any macro edits were made during combat, now they can be processed
 function s.main:PLAYER_REGEN_ENABLED()
-    -- if macros were edited during combat, then return to process them after leaving combat
-    if macrosEditedDuringCombat then
-        s.main:UPDATE_MACROS()
-    end
-    if s.options:IsVisible() then
-        s.options:EnableSettings(true)
-    end
+	-- if macros were edited during combat, then return to process them after leaving combat
+	if macrosEditedDuringCombat then
+		s.main:UPDATE_MACROS()
+	end
+	if s.options:IsVisible() then
+		s.options:EnableSettings(true)
+	end
 end
 
 -- fires after player equipment changes; equipslot macros icons update after the item in the slot changes and not during select
 function s.main:PLAYER_EQUIPMENT_CHANGED()
 	if s.cache:IsEnabled("item") then -- only fire if item cache is running; todo: flag specific macros that have a /use
-        s.macro:UpdateAllIcons()
+		s.macro:UpdateAllIcons()
 	end
 end
 
 -- the /select slash command actually does nothing and doesn't need to exist, but adding one to summon options
 -- if no parameters given
 SlashCmdList["SELECT"] = function(msg)
-	if (msg or ""):trim()=="" then
+	if (msg or ""):trim() == "" then
 		InterfaceOptionsFrame_Show()
 		InterfaceOptionsFrame_OpenToCategory("Select")
 	end
