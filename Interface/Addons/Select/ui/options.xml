@@ -1,0 +1,540 @@
+<Ui>
+	<FontString name="SelectOptionsTextTemplate" inherits="GameFontHighlight" justifyH="LEFT" virtual="true">
+		<Size x="480" y="0"/>
+		<Color r=".85" g=".85" b=".85"/>
+	</FontString>
+
+	<FontString name="SelectOptionsHelpTitleTemplate" inherits="GameFontNormal" justifyH="LEFT" virtual="true">
+		<Size x="340" y="0"/>
+	</FontString>
+
+	<FontString name="SelectOptionsHelpTextTemplate" inherits="GameFontHighlightSmall" justifyH="LEFT" virtual="true">
+		<Size x="340" y="0"/>
+		<Color r=".85" g=".85" b=".85"/>
+	</FontString>
+
+	<FontString name="SelectOptionsHelpExamplesTemplate" inherits="GameFontHighlight" justifyH="LEFT" virtual="true">
+		<Size x="120" y="0"/>
+	</FontString>
+
+	<FontString name="SelectOptionsColumnNumTemplate" inherits="GameFontHighlightSmall" justifyH="RIGHT" virtual="true">
+		<Size x="18" y="0"/>
+	</FontString>
+	<FontString name="SelectOptionsColumnNameTemplate" inherits="GameFontHighlightSmall" justifyH="LEFT" virtual="true">
+		<Size x="68" y="0"/>
+		<Color r=".85" g=".85" b=".85"/>
+	</FontString>
+
+	<FontString name="SelectOptionsNotesTextTemplate" inherits="GameFontHighlightSmall" justifyH="LEFT" virtual="true">
+		<Size x="480" y="0"/>
+		<Color r=".85" g=".85" b=".85"/>
+	</FontString>
+
+    <CheckButton name="SelectOptionsCheckButtonTemplate" inherits="UICheckButtonTemplate"  virtual="true">
+		<HitRectInsets>
+			<AbsInset left="-2" right="-220" top="-2" bottom="-2"/>
+		</HitRectInsets>
+        <Scripts>
+            <OnEnter>
+                self.text:SetTextColor(1,1,1)
+                self:GetParent().optionDescription:Show()
+                self:GetParent().optionDescription.optionTitle:SetText(self.optionTitle or "")
+                self:GetParent().optionDescription.optionText:SetText(self.optionText or "")
+            </OnEnter>
+            <OnLeave>
+                self.text:SetTextColor(1,0.82,0)
+                self:GetParent().optionDescription:Hide()
+            </OnLeave>
+            <OnLoad>
+                self.text:SetFontObject("GameFontNormal")
+                if self.optionTitle then
+                    self.text:SetText(self.optionTitle)
+                end
+            </OnLoad>
+			<OnClick>
+				SelectOptionsPanel.CheckButtonOnClick(self,button)
+			</OnClick>
+        </Scripts>
+    </CheckButton>
+
+	<Frame name="SelectOptionsPanel" parent="InterfaceOptionsFramePanelContainer" hidden="true">
+		<Layers>
+			<Layer level="ARTWORK">
+				<FontString parentKey="title" inherits="GameFontNormalLarge" text="Select">
+					<Anchors>
+						<Anchor point="TOPLEFT" x="16" y="-16"/>
+					</Anchors>
+				</FontString>
+				<FontString parentKey="version" inherits="GameFontNormalSmall">
+					<Anchors>
+						<Anchor point="BOTTOMLEFT" relativeKey="$parent.title" relativePoint="BOTTOMRIGHT" x="4" y="0"/>
+					</Anchors>
+				</FontString>
+				<FontString inherits="GameFontHighlight" justifyH="LEFT" justifyV="TOP" text="This addon creates the /select macro command to cast items and spells among a list, and to change what to cast from a flyout.">
+					<Size x="590" y="0"/>
+					<Anchors>
+						<Anchor point="TOPLEFT" x="16" y="-40"/>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<Frames>
+			<ScrollFrame parentKey="scrollFrame" inherits="UIPanelScrollFrameTemplate">
+				<Size x="590" y="700"/>
+				<Anchors>
+					<Anchor point="TOPLEFT" x="32" y="-80"/>
+					<Anchor point="BOTTOMRIGHT" x="-32" y="10"/>
+				</Anchors>
+				<ScrollChild parentKey="scrollChild">
+					<Frame>
+						<Size x="500" y="830"/>
+						<Frames>
+							<!-- how to use frame -->
+							<Frame parentKey="howto" inherits="InsetFrameTemplate3">
+								<Size x="500" y="155"/>
+								<Anchors>
+									<Anchor point="TOPLEFT" x="16" y="-16"/>
+								</Anchors>
+								<Layers>
+									<Layer level="ARTWORK">
+										<FontString inherits="GameFontNormal" text="How to Use">
+											<Anchors>
+												<Anchor point="BOTTOM" relativePoint="TOP" x="0" y="2"/>
+											</Anchors>
+										</FontString>
+										<FontString parentKey="line1" inherits="SelectOptionsTextTemplate" text="The /select macro command, like /castsequence, uses a list of items and spells separated by commas:">
+											<Anchors>
+												<Anchor point="TOPLEFT" x="10" y="-8"/>
+											</Anchors>
+										</FontString>
+										<FontString parentKey="line2" inherits="ChatFontNormal" justifyH="CENTER" text="/select Golden Gryphon, Swift Razzashi Raptor, Magic Rooster, etc.">
+											<Size x="480" y="0"/>
+											<Anchors>
+												<Anchor point="TOP" relativeKey="$parent.line1" relativePoint="BOTTOM" x="0" y="-10"/>
+											</Anchors>
+										</FontString>
+										<FontString parentKey="line3" inherits="SelectOptionsTextTemplate" text="Unlike /castsequence that advances to the next item on each cast, /select will always use the currently selected item. For new macros it will be the first item listed in the /select.">
+											<Anchors>
+												<Anchor point="TOP" relativeKey="$parent.line2" relativePoint="BOTTOM" x="0" y="-10"/>
+											</Anchors>
+										</FontString>
+										<FontString parentKey="line4" inherits="SelectOptionsTextTemplate" text="To change to a different item or spell, right-click the macro on your bars to summon a flyout and choose a new item or spell. Your macro will now use the new item until you decide to change it again.">
+											<Size x="480" y="0"/>
+											<Anchors>
+												<Anchor point="TOP" relativeKey="$parent.line3" relativePoint="BOTTOM" x="0" y="-8"/>
+											</Anchors>
+										</FontString>
+									</Layer>
+								</Layers>
+							</Frame>
+							<!-- settings frame -->
+							<Frame parentKey="settings" inherits="InsetFrameTemplate3">
+								<Size x="500" y="254"/>
+								<Anchors>
+									<Anchor point="TOP" relativeKey="$parent.howto" relativePoint="BOTTOM" x="0" y="-28"/>
+								</Anchors>
+                                <Layers>
+                                    <Layer level="ARTWORK">
+										<FontString inherits="GameFontNormal" text="Settings">
+											<Anchors>
+												<Anchor point="BOTTOM" relativePoint="TOP" x="0" y="2"/>
+											</Anchors>
+										</FontString>
+                                    </Layer>
+                                </Layers>
+								<Frames>
+                                    <Frame parentKey="optionDescription" inherits="InsetFrameTemplate3" hidden="true">
+                                        <Anchors>
+                                            <Anchor point="TOPLEFT" x="260" y="-8"/>
+                                            <Anchor point="BOTTOMRIGHT" x="-8" y="8"/>
+                                        </Anchors>
+                                        <Layers>
+                                            <Layer level="ARTWORK">
+                                                <FontString parentKey="optionTitle" justifyH="CENTER" justifyV="CENTER" inherits="GameFontHighlight">
+                                                    <Anchors>
+                                                        <Anchor point="TOPLEFT" X="8" y="=6"/>
+                                                        <Anchor point="BOTTOMRIGHT" relativePoint="TOPRIGHT" x="-8" y="-32"/>
+                                                    </Anchors>
+                                                </FontString>
+                                                <FontString parentKey="optionText" justifyH="LEFT" justifyV="TOP" inherits="GameFontNormal">
+                                                    <Anchors>
+                                                        <Anchor point="TOPLEFT" x="8" y="-32"/>
+                                                        <Anchor point="BOTTOMRIGHT" x="-8" y="8"/>
+                                                    </Anchors>
+                                                </FontString>
+                                            </Layer>
+                                        </Layers>
+                                    </Frame>
+									<CheckButton parentKey="UseWhenSelecting" inherits="SelectOptionsCheckButtonTemplate">
+										<Anchors>
+											<Anchor point="TOPLEFT" x="8" y="-8"/>
+										</Anchors>
+                                        <KeyValues>
+											<KeyValue key="optionKey" value="UseWhenSelecting"/>
+                                            <KeyValue key="optionTitle" value="Use Item Or Spell When Selecting"/>
+                                            <KeyValue key="optionText" value="While checked, when choosing an item or spell from the flyout, immediately use that item or spell in addition to loading it onto your macro. This makes the flyouts behave more like default spell flyouts."/>
+                                        </KeyValues>
+									</CheckButton>
+									<CheckButton parentKey="DontSelectWithAlt" inherits="SelectOptionsCheckButtonTemplate">
+										<Anchors>
+											<Anchor point="TOPLEFT" x="8" y="-38"/>
+										</Anchors>
+                                        <KeyValues>
+											<KeyValue key="optionKey" value="DontSelectWithAlt"/>
+                                            <KeyValue key="optionTitle" value="Use But Don't Select With &lt;Alt&gt;"/>
+                                            <KeyValue key="optionText" value="Whether this option is checked or not, you can hold Alt as you click an item or spell in the flyout to use it. But while this is checked, holding Alt will prevent loading the action onto your macro. This is useful for seldom-used items like vendor mounts."/>
+                                        </KeyValues>
+									</CheckButton>
+									<CheckButton parentKey="UseOnRightClick" inherits="SelectOptionsCheckButtonTemplate">
+										<Anchors>
+											<Anchor point="TOPLEFT" x="8" y="-68"/>
+										</Anchors>
+                                        <KeyValues>
+											<KeyValue key="optionKey" value="UseOnRightClick"/>
+                                            <KeyValue key="optionTitle" value="Use Item Or Spell On Right Click"/>
+                                            <KeyValue key="optionText" value="While checked, right-clicking an item or spell in a flyout will use the item or spell just like holding down Alt. If &#124;cffffffffUse But Don't Select With &lt;Alt&gt;&#124;r is also checked, then right-clicks will also use but not select the chosen item or spell."/>
+                                        </KeyValues>
+									</CheckButton>
+									<CheckButton parentKey="DontAddToMacroTooltip" inherits="SelectOptionsCheckButtonTemplate">
+										<Anchors>
+											<Anchor point="TOPLEFT" x="8" y="-98"/>
+										</Anchors>
+                                        <KeyValues>
+											<KeyValue key="optionKey" value="DontAddToMacroTooltip"/>
+                                            <KeyValue key="optionTitle" value="Don't Add Macro To Tooltip"/>
+                                            <KeyValue key="optionText" value="While this option is checked, do not add the select macro text to the end of the tooltip on the action bars."/>
+                                        </KeyValues>
+									</CheckButton>
+									<CheckButton parentKey="EquipslotOnlySoulbound" inherits="SelectOptionsCheckButtonTemplate">
+										<Anchors>
+											<Anchor point="TOPLEFT" x="8" y="-128"/>
+										</Anchors>
+                                        <KeyValues>
+											<KeyValue key="optionKey" value="EquipslotOnlySoulbound"/>
+                                            <KeyValue key="optionTitle" value="Only Select Soulbound Equipslots"/>
+                                            <KeyValue key="optionText" value="While checked, selecting equipslot:&lt;slot&gt; will only display soulbind items in the flyout."/>
+                                        </KeyValues>
+									</CheckButton>
+									<CheckButton parentKey="OnlySummonableMounts" inherits="SelectOptionsCheckButtonTemplate">
+										<Anchors>
+											<Anchor point="TOPLEFT" x="8" y="-158"/>
+										</Anchors>
+                                        <KeyValues>
+											<KeyValue key="optionKey" value="OnlySummonableMounts"/>
+                                            <KeyValue key="optionTitle" value="Only Select Summonable Mounts"/>
+                                            <KeyValue key="optionText" value="While this is checked, don't add any mounts you can't summon to mount:&lt;search&gt; flyouts. This includes class-specific or area-specific mounts. Faction-restricted mounts will always remain hidden."/>
+                                        </KeyValues>
+									</CheckButton>
+									<CheckButton parentKey="UseFlatStyle" inherits="SelectOptionsCheckButtonTemplate">
+										<Anchors>
+											<Anchor point="TOPLEFT" x="8" y="-188"/>
+										</Anchors>
+                                        <KeyValues>
+											<KeyValue key="optionKey" value="UseFlatStyle"/>
+                                            <KeyValue key="optionTitle" value="Use Flat Flyout and Button Style"/>
+                                            <KeyValue key="optionText" value="While this option is checked, flyouts and buttons on the flyouts will have a flatter appearance with squared-off corners."/>
+                                        </KeyValues>
+									</CheckButton>
+									<CheckButton parentKey="ShowSubtext" inherits="SelectOptionsCheckButtonTemplate">
+										<Anchors>
+											<Anchor point="TOPLEFT" x="8" y="-218"/>
+										</Anchors>
+                                        <KeyValues>
+											<KeyValue key="optionKey" value="ShowSubtext"/>
+                                            <KeyValue key="optionTitle" value="Show Subtext on Spell Tooltips"/>
+                                            <KeyValue key="optionText" value="If a spell has a subtext, such as Heal(Rank 3) or Polymorph(Turtle), display that subtext in the tooltip for the spell. This option is useful for Classic WoW where spell ranks play a greater role."/>
+                                        </KeyValues>
+									</CheckButton>
+								</Frames>
+							</Frame>
+
+							<!-- search:keyword frame (renaming to Filter:Search) -->
+							<Frame parentKey="searchkeyword" inherits="InsetFrameTemplate3">
+								<Size x="500" y="588"/>
+								<Anchors>
+									<Anchor point="TOP" relativeKey="$parent.settings" relativePoint="BOTTOM" x="0" y="-28"/>
+								</Anchors>
+								<Layers>
+									<Layer level="ARTWORK">
+										<FontString inherits="GameFontNormal" text="Filter:Search">
+											<Anchors>
+												<Anchor point="BOTTOM" relativePoint="TOP" x="0" y="2"/>
+											</Anchors>
+										</FontString>
+										<FontString parentKey="line1" inherits="SelectOptionsTextTemplate" text="To help add items and spells to your /select macros, filter:searches are usable in place of an item or spell name.">
+											<Anchors>
+												<Anchor point="TOPLEFT" x="10" y="-8"/>
+											</Anchors>
+										</FontString>
+										<FontString parentKey="line2" inherits="SelectOptionsTextTemplate" text="These search through your bags and spellbooks to fill the flyouts with items and spells that match the keyword(s).">
+											<Anchors>
+												<Anchor point="TOP" relativeKey="$parent.line1" relativePoint="BOTTOM" x="0" y="-8"/>
+											</Anchors>
+										</FontString>
+										<FontString parentKey="header" inherits="GameFontHighlight" justifyH="LEFT" text="Filter:Search">
+											<Size x="340" y="0"/>
+											<Anchors>
+												<Anchor point="TOPLEFT" relativeKey="$parent.line2" relativePoint="BOTTOMLEFT" x="0" y="-12"/>
+											</Anchors>
+										</FontString>
+										<FontString parentKey="example" inherits="GameFontHighlight" justifyH="LEFT" text="Examples">
+											<Size x="120" y="0"/>
+											<Anchors>
+												<Anchor point="TOPRIGHT" relativeKey="$parent.line2" relativePoint="BOTTOMRIGHT" x="0" y="-12"/>
+											</Anchors>
+										</FontString>
+
+										<!-- item -->
+										<FontString parentKey="item" inherits="SelectOptionsHelpTitleTemplate" text="item:id or partial name">
+											<Anchors>
+												<Anchor point="TOPLEFT" relativeKey="$parent.header" relativePoint="BOTTOMLEFT" x="0" y="-10"/>
+											</Anchors>
+										</FontString>
+										<FontString inherits="SelectOptionsHelpTextTemplate" text="Add an item by its numerical id or all items in your bags or worn that contain the partial name.">
+											<Anchors>
+												<Anchor point="TOPLEFT" relativeKey="$parent.item" relativePoint="BOTTOMLEFT" x="0" y="-4"/>
+											</Anchors>
+										</FontString>
+										<FontString inherits="SelectOptionsHelpExamplesTemplate" text="item:1234&#xD;item:Bandage&#xD;item:Ore">
+											<Anchors>
+												<Anchor point="TOPLEFT" relativeKey="$parent.item" relativePoint="TOPRIGHT" x="20" y="0"/>
+											</Anchors>
+										</FontString>
+
+										<!-- spell -->
+										<FontString parentKey="spell" inherits="SelectOptionsHelpTitleTemplate" text="spell:id or partial name">
+											<Anchors>
+												<Anchor point="TOPLEFT" relativeKey="$parent.item" relativePoint="BOTTOMLEFT" x="0" y="-36"/>
+											</Anchors>
+										</FontString>
+										<FontString inherits="SelectOptionsHelpTextTemplate" text="Add a spell by its numerical id or all spells that contain the partial name.">
+											<Anchors>
+												<Anchor point="TOPLEFT" relativeKey="$parent.spell" relativePoint="BOTTOMLEFT" x="0" y="-4"/>
+											</Anchors>
+										</FontString>
+										<FontString inherits="SelectOptionsHelpExamplesTemplate" text="spell:1234&#xD;spell:Shout&#xD;spell:Polymorph">
+											<Anchors>
+												<Anchor point="TOPLEFT" relativeKey="$parent.spell" relativePoint="TOPRIGHT" x="20" y="0"/>
+											</Anchors>
+										</FontString>
+
+										<!-- type -->
+										<FontString parentKey="type" inherits="SelectOptionsHelpTitleTemplate" text="type:ItemType">
+											<Anchors>
+												<Anchor point="TOPLEFT" relativeKey="$parent.spell" relativePoint="BOTTOMLEFT" x="0" y="-36"/>
+											</Anchors>
+										</FontString>
+										<FontString inherits="SelectOptionsHelpTextTemplate" text="Adds all items that contain the keyword in one of its type fields. See wow.gamepedia.com/ItemType for a full list. Note: many specific types are not defined in Classic clients. For instance, instead of using 'Food &amp; Drink' use 'Consumable'.">
+											<Anchors>
+												<Anchor point="TOPLEFT" relativeKey="$parent.type" relativePoint="BOTTOMLEFT" x="0" y="-4"/>
+											</Anchors>
+										</FontString>
+										<FontString inherits="SelectOptionsHelpExamplesTemplate" text="type:Quest&#xD;type:Food&#xD;type:Herb">
+											<Anchors>
+												<Anchor point="TOPLEFT" relativeKey="$parent.type" relativePoint="TOPRIGHT" x="20" y="0"/>
+											</Anchors>
+										</FontString>
+
+                                        <!-- equipslot -->
+                                        <FontString parentKey="equipslot" inherits="SelectOptionsHelpTitleTemplate" text="equipslot:slot">
+                                            <Anchors>
+                                                <Anchor point="TOPLEFT" relativeKey="$parent.type" relativePoint="BOTTOMLEFT" x="0" y="-56"/>
+                                            </Anchors>
+                                        </FontString>
+                                        <FontString inherits="SelectOptionsHelpTextTemplate" text="Adds all items that equip into the given slot. Any item selected for an equipslot will attempt to equip into that slot when chosen.">
+                                            <Anchors>
+                                                <Anchor point="TOPLEFT" relativeKey="$parent.equipslot" relativePoint="BOTTOMLEFT" x="0" y="-4"/>
+                                            </Anchors>
+                                        </FontString>
+										<FontString inherits="SelectOptionsHelpExamplesTemplate" text="equipslot:16&#xD;equipslot:13&#xD;equipslot:14">
+											<Anchors>
+												<Anchor point="TOPLEFT" relativeKey="$parent.equipslot" relativePoint="TOPRIGHT" x="20" y="0"/>
+											</Anchors>
+										</FontString>
+
+                                        <!-- validslots -->
+                                        <FontString parentKey="validslots" inherits="SelectOptionsHelpTextTemplate" text="The numbers 0 to 19 are valid slots to use with equipslot (0 and 18 only on Classic clients):">
+                                            <Size x="480" y="0"/>
+                                            <Anchors>
+                                                <Anchor point="TOPLEFT" relativeKey="$parent.equipslot" relativePoint="BOTTOMLEFT" x="0" y="-32"/>
+                                            </Anchors>
+                                        </FontString>
+                                        <FontString parentKey="column1nums" inherits="SelectOptionsColumnNumTemplate" text="0:&#xD;1:&#xD;2:&#xD;3:">
+                                            <Anchors>
+                                                <Anchor point="TOPLEFT" relativeKey="$parent.validslots" relativePoint="BOTTOMLEFT" x="0" y="-4"/>
+                                            </Anchors>
+                                        </FontString>
+                                        <FontString parentKey="column1names" inherits="SelectOptionsColumnNameTemplate" text="Ammo&#xD;Head&#xD;Neck&#xD;Shoulder">
+                                            <Anchors>
+                                                <Anchor point="TOPLEFT" relativeKey="$parent.column1nums" relativePoint="TOPRIGHT" x="2" y="0"/>
+                                            </Anchors>
+                                        </FontString>
+                                        <FontString parentKey="column2nums" inherits="SelectOptionsColumnNumTemplate" text="4:&#xD;5:&#xD;6:&#xD;7:">
+                                            <Anchors>
+                                                <Anchor point="TOPLEFT" relativeKey="$parent.column1names" relativePoint="TOPRIGHT" x="2" y="0"/>
+                                            </Anchors>
+                                        </FontString>
+                                        <FontString parentKey="column2names" inherits="SelectOptionsColumnNameTemplate" text="Shirt&#xD;Chest&#xD;Waist&#xD;Legs">
+                                            <Anchors>
+                                                <Anchor point="TOPLEFT" relativeKey="$parent.column2nums" relativePoint="TOPRIGHT" x="2" y="0"/>
+                                            </Anchors>
+                                        </FontString>
+                                        <FontString parentKey="column3nums" inherits="SelectOptionsColumnNumTemplate" text="8:&#xD;9:&#xD;10:&#xD;11:">
+                                            <Anchors>
+                                                <Anchor point="TOPLEFT" relativeKey="$parent.column2names" relativePoint="TOPRIGHT" x="2" y="0"/>
+                                            </Anchors>
+                                        </FontString>
+                                        <FontString parentKey="column3names" inherits="SelectOptionsColumnNameTemplate" text="Feet&#xD;Wrist&#xD;Hands&#xD;Finger 1">
+                                            <Anchors>
+                                                <Anchor point="TOPLEFT" relativeKey="$parent.column3nums" relativePoint="TOPRIGHT" x="2" y="0"/>
+                                            </Anchors>
+                                        </FontString>
+                                        <FontString parentKey="column4nums" inherits="SelectOptionsColumnNumTemplate" text="12:&#xD;13:&#xD;14:&#xD;15:">
+                                            <Anchors>
+                                                <Anchor point="TOPLEFT" relativeKey="$parent.column3names" relativePoint="TOPRIGHT" x="2" y="0"/>
+                                            </Anchors>
+                                        </FontString>
+                                        <FontString parentKey="column4names" inherits="SelectOptionsColumnNameTemplate" text="Finger 2&#xD;Trinket 1&#xD;Trinket 2&#xD;Back">
+                                            <Anchors>
+                                                <Anchor point="TOPLEFT" relativeKey="$parent.column4nums" relativePoint="TOPRIGHT" x="2" y="0"/>
+                                            </Anchors>
+                                        </FontString>
+                                        <FontString parentKey="column5nums" inherits="SelectOptionsColumnNumTemplate" text="16:&#xD;17:&#xD;18:&#xD;19:">
+                                            <Anchors>
+                                                <Anchor point="TOPLEFT" relativeKey="$parent.column4names" relativePoint="TOPRIGHT" x="2" y="0"/>
+                                            </Anchors>
+                                        </FontString>
+                                        <FontString parentKey="column5names" inherits="SelectOptionsColumnNameTemplate" text="Main Hand&#xD;Off Hand&#xD;Ranged&#xD;Tabard">
+                                            <Anchors>
+                                                <Anchor point="TOPLEFT" relativeKey="$parent.column5nums" relativePoint="TOPRIGHT" x="2" y="0"/>
+                                            </Anchors>
+                                        </FontString>
+
+                                        <!-- flyout -->
+                                        <FontString parentKey="flyout" inherits="SelectOptionsHelpTitleTemplate" text="flyout:direction">
+                                            <Anchors>
+                                                <Anchor point="TOPLEFT" relativeKey="$parent.type" relativePoint="BOTTOMLEFT" x="0" y="-164"/>
+                                            </Anchors>
+                                        </FontString>
+                                        <FontString inherits="SelectOptionsHelpTextTemplate" text="This doesn't add any items or spells, but instead chooses the flyout direction, which can be one of: left, up, right, or down.">
+                                            <Anchors>
+                                                <Anchor point="TOPLEFT" relativeKey="$parent.flyout" relativePoint="BOTTOMLEFT" x="0" y="-4"/>
+                                            </Anchors>
+                                        </FontString>
+										<FontString inherits="SelectOptionsHelpExamplesTemplate" text="flyout:left&#xD;flyout:up&#xD;flyout:down">
+											<Anchors>
+												<Anchor point="TOPLEFT" relativeKey="$parent.flyout" relativePoint="TOPRIGHT" x="20" y="0"/>
+											</Anchors>
+										</FontString>
+
+										<!-- retailonly -->
+										<FontString parentKey="retailonly" inherits="GameFontHighlightSmall" justifyH="LEFT" text="The following only work on Retail clients and have no effect on Classic clients:">
+											<Anchors>
+												<Anchor point="TOPLEFT" relativeKey="$parent.flyout" relativePoint="BOTTOMLEFT" x="0" y="-34"/>
+											</Anchors>
+										</FontString>
+
+										<!-- mount -->
+										<FontString parentKey="mount" inherits="SelectOptionsHelpTitleTemplate" text="mount:flying, land, aquatic, favorite, or partial name">
+											<Anchors>
+												<Anchor point="TOPLEFT" relativeKey="$parent.retailonly" relativePoint="BOTTOMLEFT" x="0" y="-10"/>
+											</Anchors>
+										</FontString>
+										<FontString inherits="SelectOptionsHelpTextTemplate" text="Adds all flying mounts, land mounts, aquatic mounts, favorite mounts or mounts that contain the partial name. Other mount:keywords include: favflying, favland and any.">
+											<Anchors>
+												<Anchor point="TOPLEFT" relativeKey="$parent.mount" relativePoint="BOTTOMLEFT" x="0" y="-4"/>
+											</Anchors>
+										</FontString>
+										<FontString inherits="SelectOptionsHelpExamplesTemplate" text="mount:flying&#xD;mount:Raptor&#xD;mount:favorite">
+											<Anchors>
+												<Anchor point="TOPLEFT" relativeKey="$parent.mount" relativePoint="TOPRIGHT" x="20" y="0"/>
+											</Anchors>
+										</FontString>
+
+										<!-- profession -->
+										<FontString parentKey="profession" inherits="SelectOptionsHelpTitleTemplate" text="profession:primary, secondary or any">
+											<Anchors>
+												<Anchor point="TOPLEFT" relativeKey="$parent.mount" relativePoint="BOTTOMLEFT" x="0" y="-44"/>
+											</Anchors>
+										</FontString>
+										<FontString inherits="SelectOptionsHelpTextTemplate" text="Adds all primary professions, secondary professions or any professions.">
+											<Anchors>
+												<Anchor point="TOPLEFT" relativeKey="$parent.profession" relativePoint="BOTTOMLEFT" x="0" y="-4"/>
+											</Anchors>
+										</FontString>
+										<FontString inherits="SelectOptionsHelpExamplesTemplate" text="profession:Primary&#xD;profession:Any&#xD;profession:Herb">
+											<Anchors>
+												<Anchor point="TOPLEFT" relativeKey="$parent.profession" relativePoint="TOPRIGHT" x="20" y="0"/>
+											</Anchors>
+										</FontString>
+
+										<!-- toy -->
+										<FontString parentKey="toy" inherits="SelectOptionsHelpTitleTemplate" text="toy:favorite, any or partial name">
+											<Anchors>
+												<Anchor point="TOPLEFT" relativeKey="$parent.profession" relativePoint="BOTTOMLEFT" x="0" y="-36"/>
+											</Anchors>
+										</FontString>
+										<FontString inherits="SelectOptionsHelpTextTemplate" text="Adds all favorite toys or toys that contain the partial name.">
+											<Anchors>
+												<Anchor point="TOPLEFT" relativeKey="$parent.toy" relativePoint="BOTTOMLEFT" x="0" y="-4"/>
+											</Anchors>
+										</FontString>
+										<FontString inherits="SelectOptionsHelpExamplesTemplate" text="toy:Favorite&#xD;toy:Crashin'&#xD;toy:Any">
+											<Anchors>
+												<Anchor point="TOPLEFT" relativeKey="$parent.toy" relativePoint="TOPRIGHT" x="20" y="0"/>
+											</Anchors>
+										</FontString>
+									</Layer>
+								</Layers>
+							</Frame>
+
+							<!-- notes at end of options -->
+							<Frame parentKey="notes" inherits="InsetFrameTemplate3">
+								<Size x="500" y="240"/>
+								<Anchors>
+									<Anchor point="TOP" relativeKey="$parent.searchkeyword" relativePoint="BOTTOM" x="0" y="-28"/>
+								</Anchors>
+								<Layers>
+									<Layer level="ARTWORK">
+										<FontString inherits="GameFontNormal" text="Notes">
+											<Anchors>
+												<Anchor point="BOTTOM" relativePoint="TOP" x="0" y="2"/>
+											</Anchors>
+										</FontString>
+										<FontString parentKey="line1" inherits="SelectOptionsNotesTextTemplate" text="You can select from flyouts while in combat, but Select can only set up flyouts and macro changes outside of combat. If you're in combat when you gain an item or edit a macro, the flyouts won't reflect the new item or changed macro until you leave combat.">
+											<Anchors>
+												<Anchor point="TOPLEFT" x="10" y="-10"/>
+											</Anchors>
+										</FontString>
+										<FontString parentKey="line2" inherits="SelectOptionsNotesTextTemplate" text="Like /equip in regular macros, selecting equipslots is not 100% reliable when you have multiples of the same item. This is especially true when attempting to equip two identical weapons, rings or trinkets in both slots.">
+											<Anchors>
+												<Anchor point="TOP" relativeKey="$parent.line1" relativePoint="BOTTOM" x="0" y="-10"/>
+											</Anchors>
+										</FontString>
+										<FontString parentKey="line3" inherits="SelectOptionsNotesTextTemplate" text="Flyout direction is per-flyout. If you have '/select [flyable] flying mounts, flyout:left; land mounts', then only the flying mounts flyout will open to the left. You may want to add flyout:left to the land mounts also.">
+											<Anchors>
+												<Anchor point="TOP" relativeKey="$parent.line2" relativePoint="BOTTOM" x="0" y="-10"/>
+											</Anchors>
+										</FontString>
+										<FontString parentKey="line4" inherits="SelectOptionsNotesTextTemplate" text="If two macros share the same list of items or spells, such as 'Hearthstone, Garrison Hearthstone, Dalaran Hearthstone', then when you log out and back in, only the last-select hearthstone will load into both macros. If you want to keep them distinct, make one select slightly different, such as 'Hearthstone, Garrison Hearthstone, Dalaran Hearthstone, Ignore This'.">
+											<Anchors>
+												<Anchor point="TOP" relativeKey="$parent.line3" relativePoint="BOTTOM" x="0" y="-10"/>
+											</Anchors>
+										</FontString>
+										<FontString parentKey="line5" inherits="SelectOptionsNotesTextTemplate" text="Similarly, if you use '/select [@focus,mod][] list', you may want to separate it into '/select [@focus,mod] list; list, x' so it knows to update the icon to the focused unit. When cast it will properly use the [@focus,mod][] syntax, but for technical reasons the macro icon's status against the new unit won't change unless you separate lists as [@focus,mod] list; list, (anything) to make the lists distinct.">
+											<Anchors>
+												<Anchor point="TOP" relativeKey="$parent.line4" relativePoint="BOTTOM" x="0" y="-10"/>
+											</Anchors>
+										</FontString>
+     
+                                    </Layer>
+                                </Layers>
+                            </Frame>
+
+						</Frames>
+					</Frame>
+				</ScrollChild>
+			</ScrollFrame>
+		</Frames>
+	</Frame>
+</Ui>
