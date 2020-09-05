@@ -64,7 +64,7 @@ rInfostrings: disabled
 rLib: disabled
 DBM-Party-Cataclysm: enabled
 DBM-ThroneFourWinds: enabled
-AdiBags: enabled
+AdiBags: disabled
 WeakAuras: disabled
 WeakAurasModelPaths: enabled
 WeakAurasOptions: enabled
@@ -293,7 +293,7 @@ Talented_Data_Export: disabled
 PerfectRaid: disabled
 SortBags: disabled
 TrackEverything: disabled
-AdiBags_Config: enabled
+AdiBags_Config: disabled
 Backpack: disabled
 Skillet-Classic: disabled
 Details_DataStorage: enabled

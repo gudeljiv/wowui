@@ -1,5 +1,5 @@
-!Colorz: disabled
-!Beautycase: disabled
+!Colorz: enabled
+!Beautycase: enabled
 AdiBags: disabled
 AdiBags_Config: disabled
 Align: disabled

@@ -44,8 +44,8 @@ H: 512
 Frame: InterfaceOptionsFrame
 FrameLevel: 1
 Anchor: CENTER
-X: 64
-Y: 85
+X: -12
+Y: 90
 W: 858
 H: 660
 Frame: AddonList
@@ -107,8 +107,8 @@ H: 50
 Frame: aux_frame
 FrameLevel: 1
 Anchor: TOPLEFT
-X: 10
-Y: -58
+X: 8
+Y: -47
 W: 768
 H: 447
 Frame: TargetFrame
