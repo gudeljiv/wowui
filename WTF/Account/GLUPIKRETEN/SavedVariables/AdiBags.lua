@@ -28,15 +28,15 @@ AdiBagsDB = {
 						[13466] = "Trade Goods#Herbs",
 						[2840] = "Trade Goods#Mining",
 						[1251] = "Trade Goods#Bandages",
-						[2770] = "Trade Goods#Mining",
+						[13463] = "Trade Goods#Herbs",
 						[11137] = "Trade Goods#Enchanting",
-						[3030] = "Ammunition#Ammo",
+						[20007] = "Consumable#Potions",
 						[11138] = "Trade Goods#Enchanting",
 						[2447] = "Trade Goods#Herbs",
-						[2581] = "Trade Goods#Bandages",
-						[20007] = "Consumable#Potions",
+						[2770] = "Trade Goods#Mining",
+						[3030] = "Ammunition#Ammo",
 						[3857] = "Trade Goods#Mining",
-						[2838] = "Trade Goods#Mining",
+						[2775] = "Trade Goods#Mining",
 						[3369] = "Trade Goods#Herbs",
 						[3818] = "Trade Goods#Herbs",
 						[3385] = "Consumable#Potions",
@@ -45,15 +45,15 @@ AdiBagsDB = {
 						[2842] = "Trade Goods#Mining",
 						[3858] = "Trade Goods#Mining",
 						[11176] = "Trade Goods#Enchanting",
-						[3575] = "Trade Goods#Mining",
+						[2772] = "Trade Goods#Mining",
 						[8846] = "Trade Goods#Herbs",
-						[11083] = "Trade Goods#Enchanting",
+						[3575] = "Trade Goods#Mining",
 						[2449] = "Trade Goods#Herbs",
 						[11084] = "Trade Goods#Enchanting",
-						[3859] = "Trade Goods#Mining",
 						[3355] = "Trade Goods#Herbs",
-						[2835] = "Trade Goods#Mining",
-						[929] = "Consumable#Potions",
+						[3859] = "Trade Goods#Mining",
+						[8839] = "Trade Goods#Herbs",
+						[13452] = "Consumable#Potions",
 						[3820] = "Trade Goods#Herbs",
 						[3576] = "Trade Goods#Mining",
 						[2450] = "Trade Goods#Herbs",
@@ -61,21 +61,21 @@ AdiBagsDB = {
 						[2592] = "Trade Goods#Cloth",
 						[3860] = "Trade Goods#Mining",
 						[118] = "Consumable#Potions",
-						[2589] = "Trade Goods#Cloth",
+						[3358] = "Trade Goods#Herbs",
 						[2841] = "Trade Goods#Mining",
 						[3577] = "Trade Goods#Mining",
-						[3356] = "Trade Goods#Herbs",
 						[1710] = "Consumable#Potions",
+						[3356] = "Trade Goods#Herbs",
 						[10620] = "Trade Goods#Mining",
-						[3358] = "Trade Goods#Herbs",
-						[13452] = "Consumable#Potions",
-						[8839] = "Trade Goods#Herbs",
+						[2589] = "Trade Goods#Cloth",
+						[929] = "Consumable#Potions",
+						[2835] = "Trade Goods#Mining",
 						[13457] = "Consumable#Potions",
-						[2772] = "Trade Goods#Mining",
+						[11083] = "Trade Goods#Enchanting",
 						[2452] = "Trade Goods#Herbs",
-						[2775] = "Trade Goods#Mining",
+						[2838] = "Trade Goods#Mining",
 						[10939] = "Trade Goods#Enchanting",
-						[13463] = "Trade Goods#Herbs",
+						[2581] = "Trade Goods#Bandages",
 					},
 				},
 			},
@@ -105,7 +105,7 @@ AdiBagsDB = {
 		},
 		["Equipment"] = {
 		},
-		["MoneyFrame"] = {
+		["AdiBags_TooltipInfo"] = {
 		},
 		["DataSource"] = {
 			["profiles"] = {
@@ -116,16 +116,16 @@ AdiBagsDB = {
 		},
 		["Junk"] = {
 		},
-		["AdiBags_TooltipInfo"] = {
+		["MoneyFrame"] = {
 		},
 	},
 	["char"] = {
 		["Vermin - Golemagg"] = {
 			["collapsedSections"] = {
-				["Bag #1#Bag #1"] = true,
+				["Bag #3#Bag #3"] = true,
 				["Bag #2#Bag #2"] = true,
 				["Bag #4#Bag #4"] = true,
-				["Bag #3#Bag #3"] = true,
+				["Bag #1#Bag #1"] = true,
 			},
 		},
 	},
@@ -139,18 +139,21 @@ AdiBagsDB = {
 		["Mxys - Golemagg"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Default",
 		["Antun - Golemagg"] = "Default",
-		["Vermins - Stonespine"] = "Default",
-		["Vermin - Golemagg"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
-		["Dmitar - Golemagg"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
+		["Dmitar - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
+		["Vermins - Stonespine"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["virtualStacks"] = {
 				["incomplete"] = true,
 			},
-			["scale"] = 1,
+			["columnWidth"] = {
+				["Bank"] = 8,
+				["Backpack"] = 6,
+			},
 			["maxHeight"] = 0.3,
 			["skin"] = {
 				["BankColor"] = {
@@ -167,13 +170,13 @@ AdiBagsDB = {
 					["xOffset"] = -177.833374023438,
 					["yOffset"] = 386.666717529297,
 				},
-				["Bank"] = {
-					["xOffset"] = 441.011413574219,
-					["yOffset"] = -302.6298828125,
-				},
 				["Backpack"] = {
 					["xOffset"] = -240.0419921875,
 					["yOffset"] = 438.150146484375,
+				},
+				["Bank"] = {
+					["xOffset"] = 441.011413574219,
+					["yOffset"] = -302.6298828125,
 				},
 			},
 			["filters"] = {
@@ -186,10 +189,7 @@ AdiBagsDB = {
 				["size"] = 8,
 			},
 			["positionMode"] = "manual",
-			["columnWidth"] = {
-				["Backpack"] = 6,
-				["Bank"] = 8,
-			},
+			["scale"] = 1,
 		},
 	},
 }

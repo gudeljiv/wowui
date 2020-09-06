@@ -129,6 +129,8 @@ end
 
 local function UpdateBarValueAndColor()
 	for key, value in pairs(bars) do
+		-- print("Faction: " .. key .. " - " .. (value.hidden and "true" or "false") .. "-" .. (value.isWatched and "true" or "false"))
+
 		if not value.hidden then
 			if value.FactionInfo.earnedValue < -3000 then
 				standing = "HOSTILE"
@@ -332,3 +334,28 @@ end
 local wf = CreateFrame("Frame")
 wf:RegisterEvent("UPDATE_FACTION")
 wf:SetScript("OnEvent", UpdateBars)
+
+-- print("---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------")
+
+-- for factionIndex = 1, GetNumFactions() do
+-- 	name, description, standingId, bottomValue, topValue, earnedValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild = GetFactionInfo(factionIndex)
+-- 	-- if isHeader == nil then
+-- 	print("Faction: " .. name .. " - " .. earnedValue)
+-- 	-- end
+-- end
+
+-- print("---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------")
+
+-- local factionIndex = 1
+-- local lastFactionName
+-- repeat
+-- 	local name, description, standingId, bottomValue, topValue, earnedValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild = GetFactionInfo(factionIndex)
+-- 	if name == lastFactionName then
+-- 		break
+-- 	end
+-- 	lastFactionName = name
+-- 	print("Faction: " .. name .. " - " .. earnedValue)
+-- 	factionIndex = factionIndex + 1
+-- until factionIndex > 200
+
+-- print("---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------")

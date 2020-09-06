@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 2426,
 	["lastSanitation"] = 3,
-	["session"] = 2409,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -173,8 +173,8 @@ BugGrabberDB = {
 		}, -- [21]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["session"] = 1336,
 			["time"] = "2020/07/26 13:26:58",
+			["session"] = 1336,
 			["counter"] = 2,
 		}, -- [22]
 		{
@@ -554,8 +554,8 @@ BugGrabberDB = {
 		}, -- [69]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["time"] = "2020/07/27 20:37:46",
 			["session"] = 1423,
+			["time"] = "2020/07/27 20:37:46",
 			["counter"] = 4,
 		}, -- [70]
 		{
@@ -813,8 +813,8 @@ BugGrabberDB = {
 		}, -- [102]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["time"] = "2020/08/02 10:06:15",
 			["session"] = 1605,
+			["time"] = "2020/08/02 10:06:15",
 			["counter"] = 3,
 		}, -- [103]
 		{
@@ -954,8 +954,8 @@ BugGrabberDB = {
 		}, -- [120]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
-			["session"] = 1654,
 			["time"] = "2020/08/02 20:13:03",
+			["session"] = 1654,
 			["counter"] = 3,
 		}, -- [121]
 		{
@@ -1320,8 +1320,8 @@ BugGrabberDB = {
 		}, -- [166]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["session"] = 1843,
 			["time"] = "2020/08/13 21:31:07",
+			["session"] = 1843,
 			["counter"] = 6,
 		}, -- [167]
 		{
@@ -1442,8 +1442,8 @@ BugGrabberDB = {
 		}, -- [182]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Experience.lua",
-			["session"] = 1943,
 			["time"] = "2020/08/19 21:35:15",
+			["session"] = 1943,
 			["counter"] = 6,
 		}, -- [183]
 		{
@@ -2021,10 +2021,34 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [255]
 		{
-			["message"] = "(null)",
-			["time"] = "2020/07/24 16:00:06",
-			["session"] = 2406,
-			["counter"] = 91,
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:339: attempt to concatenate global 'isHeader' (a boolean value)",
+			["time"] = "2020/09/06 17:19:06",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:46\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:71\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:61\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:38\n Config = <table> {\n }\n}\nsize = 125\nscale = 1.400000\nbars = <table> {\n}\npet = false\nf = <unnamed> {\n 0 = <userdata>\n}\nCreateBar = <function> defined @Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:13\nUpdateBarPosition = <function> defined @Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:89\nUpdateBarVisibility = <function> defined @Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:127\nUpdateBarValueAndColor = <function> defined @Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:130\nUpdateBars = <function> defined @Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:219\nwf = <unnamed> {\n 0 = <userdata>\n}\n(for index) = 1\n(for limit) = 14\n(for step) = 1\nfactionIndex = 1\n(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = \"Faction: \"\n(*temporary) = \"Horde\"\n(*temporary) = \" - \"\n(*temporary) = 4628\n(*temporary) = \" - \"\n(*temporary) = true\n(*temporary) = true\n(*temporary) = true\n(*temporary) = false\n(*temporary) = false\n(*temporary) = false\n(*temporary) = false\n(*temporary) = \"attempt to concatenate global 'isHeader' (a boolean value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:339: in main chunk",
+			["session"] = 2419,
+			["counter"] = 1,
 		}, -- [256]
+		{
+			["message"] = "(null)",
+			["session"] = 2419,
+			["time"] = "2020/07/24 16:00:06",
+			["counter"] = 94,
+		}, -- [257]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:132: attempt to concatenate field 'isWatched' (a nil value)",
+			["time"] = "2020/09/06 17:25:30",
+			["locals"] = "(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n Other = <table> {\n }\n Undercity = <table> {\n }\n Frostwolf Clan = <table> {\n }\n Majordomo Executus = <table> {\n }\n Everlook = <table> {\n }\n Horde Forces = <table> {\n }\n Ratchet = <table> {\n }\n Darkmoon Faire = <table> {\n }\n Gadgetzan = <table> {\n }\n Inactive = <table> {\n }\n Darkspear Trolls = <table> {\n }\n Booty Bay = <table> {\n }\n Horde = <table> {\n }\n Steamwheedle Cartel = <table> {\n }\n Thunder Bluff = <table> {\n }\n Orgrimmar = <table> {\n }\n}\n(for control) = \"Other\"\nkey = \"Other\"\nvalue = <table> {\n factionIndex = 13\n FactionInfo = <table> {\n }\n timer = false\n barCreated = false\n hidden = true\n frameStatusBar = \"XVRB_13\"\n}\n(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = \"Faction: \"\n(*temporary) = \"Other\"\n(*temporary) = \" - \"\n(*temporary) = true\n(*temporary) = \"-\"\n(*temporary) = nil\n(*temporary) = \"attempt to concatenate field 'isWatched' (a nil value)\"\nbars = <table> {\n Other = <table> {\n }\n Undercity = <table> {\n }\n Frostwolf Clan = <table> {\n }\n Majordomo Executus = <table> {\n }\n Everlook = <table> {\n }\n Horde Forces = <table> {\n }\n Ratchet = <table> {\n }\n Darkmoon Faire = <table> {\n }\n Gadgetzan = <table> {\n }\n Inactive = <table> {\n }\n Darkspear Trolls = <table> {\n }\n Booty Bay = <table> {\n }\n Horde = <table> {\n }\n Steamwheedle Cartel = <table> {\n }\n Thunder Bluff = <table> {\n }\n Orgrimmar = <table> {\n }\n}\nxVermin = <table> {\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:46\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:71\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:61\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:38\n Config = <table> {\n }\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:132: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:130>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:313: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:221>",
+			["session"] = 2424,
+			["counter"] = 5,
+		}, -- [258]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:132: attempt to concatenate field 'hidden' (a boolean value)",
+			["time"] = "2020/09/06 17:26:27",
+			["locals"] = "(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n Other = <table> {\n }\n Undercity = <table> {\n }\n Frostwolf Clan = <table> {\n }\n Majordomo Executus = <table> {\n }\n Everlook = <table> {\n }\n Horde Forces = <table> {\n }\n Ratchet = <table> {\n }\n Darkmoon Faire = <table> {\n }\n Gadgetzan = <table> {\n }\n Inactive = <table> {\n }\n Darkspear Trolls = <table> {\n }\n Booty Bay = <table> {\n }\n Horde = <table> {\n }\n Steamwheedle Cartel = <table> {\n }\n Thunder Bluff = <table> {\n }\n Orgrimmar = <table> {\n }\n}\n(for control) = \"Other\"\nkey = \"Other\"\nvalue = <table> {\n factionIndex = 13\n FactionInfo = <table> {\n }\n timer = false\n barCreated = false\n hidden = true\n frameStatusBar = \"XVRB_13\"\n}\n(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = \"Faction: \"\n(*temporary) = \"Other\"\n(*temporary) = \" - \"\n(*temporary) = true\n(*temporary) = nil\n(*temporary) = \"attempt to concatenate field 'hidden' (a boolean value)\"\nbars = <table> {\n Other = <table> {\n }\n Undercity = <table> {\n }\n Frostwolf Clan = <table> {\n }\n Majordomo Executus = <table> {\n }\n Everlook = <table> {\n }\n Horde Forces = <table> {\n }\n Ratchet = <table> {\n }\n Darkmoon Faire = <table> {\n }\n Gadgetzan = <table> {\n }\n Inactive = <table> {\n }\n Darkspear Trolls = <table> {\n }\n Booty Bay = <table> {\n }\n Horde = <table> {\n }\n Steamwheedle Cartel = <table> {\n }\n Thunder Bluff = <table> {\n }\n Orgrimmar = <table> {\n }\n}\nxVermin = <table> {\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:46\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:71\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:61\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:38\n Config = <table> {\n }\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:132: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:130>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:313: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:221>",
+			["session"] = 2425,
+			["counter"] = 5,
+		}, -- [259]
 	},
 }
