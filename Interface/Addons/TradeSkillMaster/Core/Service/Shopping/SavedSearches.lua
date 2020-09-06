@@ -1,9 +1,7 @@
 -- ------------------------------------------------------------------------------ --
 --                                TradeSkillMaster                                --
---                http://www.curse.com/addons/wow/tradeskill-master               --
---                                                                                --
---             A TradeSkillMaster Addon (http://tradeskillmaster.com)             --
---    All Rights Reserved* - Detailed license information included with addon.    --
+--                          https://tradeskillmaster.com                          --
+--    All Rights Reserved - Detailed license information included with addon.     --
 -- ------------------------------------------------------------------------------ --
 
 local _, TSM = ...
@@ -49,7 +47,6 @@ function SavedSearches.OnInitialize()
 		:AddStringField("name")
 		:AddNumberField("lastSearch")
 		:AddBooleanField("isFavorite")
-		:AddStringField("mode")
 		:AddStringField("filter")
 		:AddIndex("index")
 		:AddIndex("lastSearch")
@@ -57,8 +54,7 @@ function SavedSearches.OnInitialize()
 		:Commit()
 	private.db:BulkInsertStart()
 	for index, data in pairs(TSM.db.global.userData.savedShoppingSearches) do
-		assert(data.searchMode == "normal" or data.searchMode == "crafting")
-		private.db:BulkInsertNewRow(index, data.name, data.lastSearch, data.isFavorite and true or false, data.searchMode, data.filter)
+		private.db:BulkInsertNewRow(index, data.name, data.lastSearch, data.isFavorite and true or false, data.filter)
 	end
 	private.db:BulkInsertEnd()
 end
@@ -121,7 +117,8 @@ function SavedSearches.RecordFilterSearch(filter)
 			name = filter,
 			filter = filter,
 			lastSearch = time(),
-			searchMode = strfind(strlower(filter), "/crafting$") and "crafting" or "normal",
+			-- TODO: remove this once we don't care about backwards compatibility with 4.9.x
+			searchMode = "normal",
 			isFavorite = nil,
 		}
 		tinsert(TSM.db.global.userData.savedShoppingSearches, data)
@@ -130,7 +127,6 @@ function SavedSearches.RecordFilterSearch(filter)
 			:SetField("name", data.name)
 			:SetField("lastSearch", data.lastSearch)
 			:SetField("isFavorite", data.isFavorite and true or false)
-			:SetField("mode", data.searchMode)
 			:SetField("filter", data.filter)
 			:Create()
 	end
