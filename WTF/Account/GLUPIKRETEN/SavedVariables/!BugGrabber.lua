@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 2404,
+	["session"] = 2410,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -1695,19 +1695,13 @@ BugGrabberDB = {
 			["counter"] = 3,
 		}, -- [214]
 		{
-			["message"] = "(null)",
-			["session"] = 2103,
-			["time"] = "2020/07/24 16:00:06",
-			["counter"] = 88,
-		}, -- [215]
-		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:106: attempt to index global 'self' (a nil value)",
 			["time"] = "2020/08/25 17:06:09",
 			["locals"] = "factionIndex = 1\nlastFactionName = \"Horde\"\nname = \"Horde\"\ndescription = \"\"\nstandingId = 5\nbottomValue = 3000\ntopValue = 9000\nearnedValue = 3500\natWarWith = false\ncanToggleAtWar = true\nisHeader = true\nisCollapsed = false\nhasRep = false\nisWatched = false\nisChild = false\n(*temporary) = nil\n(*temporary) = false\n(*temporary) = 67\n(*temporary) = \"attempt to index global 'self' (a nil value)\"\n",
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:106: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:96>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:128: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:118>",
 			["session"] = 2104,
 			["counter"] = 6,
-		}, -- [216]
+		}, -- [215]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:36: attempt to index global 'Reputation' (a nil value)",
 			["time"] = "2020/08/25 17:06:47",
@@ -1715,14 +1709,14 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:36: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:7>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:106: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:96>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:128: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:118>",
 			["session"] = 2105,
 			["counter"] = 6,
-		}, -- [217]
+		}, -- [216]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\SortBags.lua:455: attempt to perform arithmetic on field '?' (a nil value)",
 			["time"] = "2020/08/26 10:56:53",
 			["stack"] = "Interface\\AddOns\\xVermin\\SortBags.lua:455: in function `Initialize'\nInterface\\AddOns\\xVermin\\SortBags.lua:233: in function `Start'\nInterface\\AddOns\\xVermin\\SortBags.lua:17: in function `SortBags'\nInterface\\AddOns\\AdiBags\\core\\Layout.lua:108: in function `?'\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:117: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:117>\n[C]: ?\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:29: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:64: in function `SendMessage'\nInterface\\AddOns\\AdiBags\\core\\Bags.lua:105: in function `Close'\nInterface\\AddOns\\AdiBags\\core\\Hooks.lua:126: in function <Interface\\AddOns\\AdiBags\\core\\Hooks.lua:120>\n(tail call): ?\n(tail call): ?\n[string \"OPENALLBAGS\"]:1: in function <[string \"OPENALLBAGS\"]:1>",
 			["session"] = 2116,
 			["counter"] = 1,
-		}, -- [218]
+		}, -- [217]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:92: attempt to index global 'Reputation' (a nil value)",
 			["time"] = "2020/08/26 11:23:38",
@@ -1730,7 +1724,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:92: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:85>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:122: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:100>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:141: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:131>",
 			["session"] = 2130,
 			["counter"] = 6,
-		}, -- [219]
+		}, -- [218]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:16: CreateFrame: Unknown frame type 'xVerminReputationBar2StatusBar'",
 			["time"] = "2020/08/26 11:37:13",
@@ -1738,7 +1732,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `CreateFrame'\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:16: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:7>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:121: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:100>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:151: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:141>",
 			["session"] = 2138,
 			["counter"] = 6,
-		}, -- [220]
+		}, -- [219]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:125: attempt to index field '?' (a nil value)",
 			["time"] = "2020/08/26 11:32:38",
@@ -1746,7 +1740,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:125: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:100>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:149: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:139>",
 			["session"] = 2144,
 			["counter"] = 17,
-		}, -- [221]
+		}, -- [220]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:130: attempt to index field '?' (a nil value)",
 			["time"] = "2020/08/26 11:53:38",
@@ -1754,7 +1748,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:130: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:98>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:158: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:148>",
 			["session"] = 2145,
 			["counter"] = 5,
-		}, -- [222]
+		}, -- [221]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:87: Attempt to find 'this' in non-table object (used '.' instead of ':' ?)",
 			["time"] = "2020/08/26 18:13:03",
@@ -1762,7 +1756,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `SetStatusBarColor'\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:87: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:77>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:133: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:92>",
 			["session"] = 2150,
 			["counter"] = 1,
-		}, -- [223]
+		}, -- [222]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:137: Attempt to find 'this' in non-table object (used '.' instead of ':' ?)",
 			["time"] = "2020/08/26 18:44:29",
@@ -1770,7 +1764,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `SetStatusBarColor'\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:137: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:93>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:183: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:142>",
 			["session"] = 2154,
 			["counter"] = 5,
-		}, -- [224]
+		}, -- [223]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:149: attempt to concatenate global 'topValue' (a nil value)",
 			["time"] = "2020/08/28 20:37:32",
@@ -1778,7 +1772,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:149: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:93>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:196: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:156>",
 			["session"] = 2165,
 			["counter"] = 1,
-		}, -- [225]
+		}, -- [224]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:95: attempt to index field 'PetFrameXP' (a nil value)",
 			["time"] = "2020/08/28 20:48:35",
@@ -1786,7 +1780,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:95: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:94>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:206: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:167>",
 			["session"] = 2172,
 			["counter"] = 5,
-		}, -- [226]
+		}, -- [225]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:95: attempt to index field 'PetFrameXPStatusBar' (a nil value)",
 			["time"] = "2020/08/28 20:50:15",
@@ -1794,7 +1788,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:95: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:94>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:206: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:167>",
 			["session"] = 2173,
 			["counter"] = 5,
-		}, -- [227]
+		}, -- [226]
 		{
 			["message"] = "[string \"PetFrameXPStatusBar:Show()\"]:1: attempt to index global 'PetFrameXPStatusBar' (a nil value)",
 			["time"] = "2020/08/28 20:50:37",
@@ -1802,7 +1796,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"PetFrameXPStatusBar:Show()\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 2173,
 			["counter"] = 1,
-		}, -- [228]
+		}, -- [227]
 		{
 			["message"] = "[string \"xVerminReputationMasterFrame:ClearAllPoints...\"]:1: attempt to index global 'xVerminReputationMasterFrame' (a nil value)",
 			["time"] = "2020/08/28 20:53:06",
@@ -1810,7 +1804,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"xVerminReputationMasterFrame:ClearAllPoints...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2783: in function <Interface\\FrameXML\\ChatFrame.lua:2776>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:338: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 2176,
 			["counter"] = 6,
-		}, -- [229]
+		}, -- [228]
 		{
 			["message"] = "[string \"xVerminReputationMasterFrame:SetPoint(\"BOTT...\"]:1: attempt to index global 'xVerminReputationMasterFrame' (a nil value)",
 			["time"] = "2020/08/28 20:52:37",
@@ -1818,7 +1812,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"xVerminReputationMasterFrame:SetPoint(\"BOTT...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 2176,
 			["counter"] = 7,
-		}, -- [230]
+		}, -- [229]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:84: attempt to call global 'UpdateBarPosition' (a nil value)",
 			["time"] = "2020/08/29 09:20:54",
@@ -1826,7 +1820,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:84: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:78>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:199: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:162>",
 			["session"] = 2191,
 			["counter"] = 1,
-		}, -- [231]
+		}, -- [230]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:20: attempt to call global 'UpdateBarPosition' (a nil value)",
 			["time"] = "2020/08/29 09:58:38",
@@ -1834,7 +1828,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:20: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:18>\n[C]: ?\n[C]: in function `Show'\nInterface\\FrameXML\\PetFrame.lua:47: in function <Interface\\FrameXML\\PetFrame.lua:41>\n[C]: in function `PetFrame_Update'\nInterface\\FrameXML\\PetFrame.lua:72: in function <Interface\\FrameXML\\PetFrame.lua:67>",
 			["session"] = 2210,
 			["counter"] = 1,
-		}, -- [232]
+		}, -- [231]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:27: attempt to call global 'UpdateBarPosition' (a nil value)",
 			["time"] = "2020/08/29 09:58:36",
@@ -1842,7 +1836,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:27: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:25>\n[C]: ?\n[C]: in function `Hide'\nInterface\\FrameXML\\PetFrame.lua:62: in function <Interface\\FrameXML\\PetFrame.lua:41>\n[C]: in function `PetFrame_Update'\nInterface\\FrameXML\\PetFrame.lua:72: in function <Interface\\FrameXML\\PetFrame.lua:67>",
 			["session"] = 2210,
 			["counter"] = 2,
-		}, -- [233]
+		}, -- [232]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:84: attempt to index field '?' (a nil value)",
 			["time"] = "2020/08/29 17:42:33",
@@ -1850,7 +1844,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:84: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:79>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:234: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:166>",
 			["session"] = 2217,
 			["counter"] = 5,
-		}, -- [234]
+		}, -- [233]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:82: attempt to index field '?' (a nil value)",
 			["time"] = "2020/08/29 17:47:18",
@@ -1858,7 +1852,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:82: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:79>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:248: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:166>",
 			["session"] = 2225,
 			["counter"] = 40,
-		}, -- [235]
+		}, -- [234]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:105: attempt to perform arithmetic on global 'counter' (a nil value)",
 			["time"] = "2020/08/29 18:37:47",
@@ -1866,7 +1860,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:105: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:91>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:272: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:180>",
 			["session"] = 2233,
 			["counter"] = 9,
-		}, -- [236]
+		}, -- [235]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:112: xvrb_11:SetPoint(): trying to anchor to itself",
 			["time"] = "2020/08/29 18:42:48",
@@ -1874,7 +1868,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `SetPoint'\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:112: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:91>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:281: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:189>",
 			["session"] = 2237,
 			["counter"] = 1,
-		}, -- [237]
+		}, -- [236]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:212: attempt to index field 'FactionInfo' (a nil value)",
 			["time"] = "2020/08/30 13:05:36",
@@ -1882,7 +1876,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:212: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:192>",
 			["session"] = 2275,
 			["counter"] = 3,
-		}, -- [238]
+		}, -- [237]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:213: attempt to index field 'FactionInfo' (a nil value)",
 			["time"] = "2020/08/30 13:06:03",
@@ -1890,7 +1884,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:213: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:192>",
 			["session"] = 2276,
 			["counter"] = 6,
-		}, -- [239]
+		}, -- [238]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:70: attempt to index field 'bar' (a nil value)",
 			["time"] = "2020/08/31 17:16:15",
@@ -1898,7 +1892,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:70: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:13>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:309: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:232>",
 			["session"] = 2303,
 			["counter"] = 1,
-		}, -- [240]
+		}, -- [239]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:87: attempt to index field '?' (a nil value)",
 			["time"] = "2020/08/31 17:24:36",
@@ -1906,7 +1900,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:87: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:77>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:325: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:234>\n[C]: in function `ExpandFactionHeader'\n...terface\\AddOns\\Questie\\Modules\\QuestieReputation.lua:13: in function `Update'\n...erface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:56: in function `Initialize'\n...rface\\AddOns\\Questie\\Modules\\QuestieEventHandler.lua:132: in function <...rface\\AddOns\\Questie\\Modules\\QuestieEventHandler.lua:126>",
 			["session"] = 2314,
 			["counter"] = 7,
-		}, -- [241]
+		}, -- [240]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:85: attempt to index field '?' (a nil value)",
 			["time"] = "2020/08/31 17:29:39",
@@ -1914,7 +1908,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:85: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:77>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:325: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:234>\n[C]: in function `ExpandFactionHeader'\n...terface\\AddOns\\Questie\\Modules\\QuestieReputation.lua:13: in function `Update'\n...erface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:56: in function `Initialize'\n...rface\\AddOns\\Questie\\Modules\\QuestieEventHandler.lua:132: in function <...rface\\AddOns\\Questie\\Modules\\QuestieEventHandler.lua:126>",
 			["session"] = 2315,
 			["counter"] = 8,
-		}, -- [242]
+		}, -- [241]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:265: attempt to index global 'value' (a nil value)",
 			["time"] = "2020/08/31 18:40:52",
@@ -1922,7 +1916,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:265: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:237>",
 			["session"] = 2325,
 			["counter"] = 7,
-		}, -- [243]
+		}, -- [242]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:266: attempt to index global 'value' (a nil value)",
 			["time"] = "2020/08/31 18:41:37",
@@ -1930,7 +1924,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:266: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:237>",
 			["session"] = 2326,
 			["counter"] = 5,
-		}, -- [244]
+		}, -- [243]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:269: attempt to index global 'value' (a nil value)",
 			["time"] = "2020/08/31 18:48:23",
@@ -1938,7 +1932,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:269: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:237>",
 			["session"] = 2331,
 			["counter"] = 5,
-		}, -- [245]
+		}, -- [244]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:296: attempt to call field 'finishedFunc' (a nil value)",
 			["time"] = "2020/08/31 18:54:39",
@@ -1946,7 +1940,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:296: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:290>\nInterface\\SharedXML\\C_TimerAugment.lua:16: in function <Interface\\SharedXML\\C_TimerAugment.lua:14>",
 			["session"] = 2334,
 			["counter"] = 4,
-		}, -- [246]
+		}, -- [245]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:299: attempt to call field 'finishedFunc' (a nil value)",
 			["time"] = "2020/08/31 19:01:51",
@@ -1954,7 +1948,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:299: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:290>\nInterface\\SharedXML\\C_TimerAugment.lua:16: in function <Interface\\SharedXML\\C_TimerAugment.lua:14>",
 			["session"] = 2337,
 			["counter"] = 4,
-		}, -- [247]
+		}, -- [246]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:299: attempt to call field 'UpdateBarPosition' (a nil value)",
 			["time"] = "2020/08/31 19:05:46",
@@ -1962,7 +1956,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:299: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:290>\nInterface\\SharedXML\\C_TimerAugment.lua:16: in function <Interface\\SharedXML\\C_TimerAugment.lua:14>",
 			["session"] = 2338,
 			["counter"] = 4,
-		}, -- [248]
+		}, -- [247]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:297: attempt to call method 'GetName' (a nil value)",
 			["time"] = "2020/08/31 19:06:59",
@@ -1970,7 +1964,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:297: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:290>\nInterface\\SharedXML\\C_TimerAugment.lua:16: in function <Interface\\SharedXML\\C_TimerAugment.lua:14>",
 			["session"] = 2339,
 			["counter"] = 4,
-		}, -- [249]
+		}, -- [248]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:299: attempt to index field 'fadeInfo' (a nil value)",
 			["time"] = "2020/08/31 19:08:06",
@@ -1978,7 +1972,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:299: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:290>\nInterface\\SharedXML\\C_TimerAugment.lua:16: in function <Interface\\SharedXML\\C_TimerAugment.lua:14>",
 			["session"] = 2340,
 			["counter"] = 4,
-		}, -- [250]
+		}, -- [249]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:105: attempt to index field '?' (a nil value)",
 			["time"] = "2020/09/01 11:02:58",
@@ -1986,7 +1980,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:105: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:89>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:353: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:264>",
 			["session"] = 2351,
 			["counter"] = 9,
-		}, -- [251]
+		}, -- [250]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:287: attempt to index field '?' (a nil value)",
 			["time"] = "2020/09/01 11:13:24",
@@ -1994,7 +1988,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:287: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:258>",
 			["session"] = 2356,
 			["counter"] = 5,
-		}, -- [252]
+		}, -- [251]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:235: attempt to index field '?' (a nil value)",
 			["time"] = "2020/09/01 11:16:22",
@@ -2002,7 +1996,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:235: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:170>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:354: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:260>",
 			["session"] = 2358,
 			["counter"] = 1,
-		}, -- [253]
+		}, -- [252]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:196: attempt to index field '?' (a nil value)",
 			["time"] = "2020/09/01 11:22:20",
@@ -2010,13 +2004,27 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:196: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:131>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:316: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:221>",
 			["session"] = 2360,
 			["counter"] = 3,
-		}, -- [254]
+		}, -- [253]
 		{
 			["message"] = "Interface\\AddOns\\PerfectRaid\\Dongle.lua:363: Attempt to register unknown event \"UNIT_HEAL_PREDICTION\"",
 			["time"] = "2020/07/28 10:14:02",
 			["stack"] = "Interface\\AddOns\\PerfectRaid\\Dongle.lua:456: in function `TriggerMessage'\nInterface\\AddOns\\PerfectRaid\\PerfectRaid_Config.lua:151: in function `SaveOptions'\nInterface\\AddOns\\PerfectRaid\\PerfectRaid_Config.lua:123: in function <Interface\\AddOns\\PerfectRaid\\PerfectRaid_Config.lua:123>",
 			["session"] = 2402,
 			["counter"] = 3,
+		}, -- [254]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/RaidFrameReSizer.lua:10: Usage: SetOverrideBindingClick(owner, isPriority, \"KEY\", \"buttonName\"[, \"mouseButton\"])",
+			["time"] = "2020/09/06 11:02:29",
+			["locals"] = "(*temporary) = AddOnName_ButtonName {\n 0 = <userdata>\n}\n(*temporary) = \"F12\"\n(*temporary) = \"AddOnName_ButtonName\"\n",
+			["stack"] = "[C]: in function `SetOverrideBindingClick'\nInterface\\AddOns\\xVermin\\Frames/RaidFrameReSizer.lua:10: in main chunk",
+			["session"] = 2406,
+			["counter"] = 1,
 		}, -- [255]
+		{
+			["message"] = "(null)",
+			["session"] = 2406,
+			["time"] = "2020/07/24 16:00:06",
+			["counter"] = 91,
+		}, -- [256]
 	},
 }
