@@ -761,7 +761,12 @@ function private.GraphXStepFunc(prevValue, suggestedStep)
 		private.tempTimeTable.sec = 0
 	elseif suggestedStep > SECONDS_PER_DAY / 6 then
 		private.tempTimeTable.day = private.tempTimeTable.day + 1
-		private.tempTimeTable.hour = 0
+		if private.tempTimeTable.hour == 23 then
+			-- add an extra hour to avoid DST issues
+			private.tempTimeTable.hour = 1
+		else
+			private.tempTimeTable.hour = 0
+		end
 		private.tempTimeTable.min = 0
 		private.tempTimeTable.sec = 0
 	else
@@ -769,7 +774,9 @@ function private.GraphXStepFunc(prevValue, suggestedStep)
 		private.tempTimeTable.min = 0
 		private.tempTimeTable.sec = 0
 	end
-	return time(private.tempTimeTable)
+	local newValue = time(private.tempTimeTable)
+	assert(newValue > prevValue)
+	return newValue
 end
 
 function private.GraphYStepFunc(mode, ...)

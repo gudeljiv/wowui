@@ -1,5 +1,25 @@
 
 Postal3ClassicDB = {
+	["profileKeys"] = {
+		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
+		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
+		["Verminz - Golemagg"] = "Verminz - Golemagg",
+		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
+		["Mxym - Golemagg"] = "Mxym - Golemagg",
+		["Vermins - Stonespine"] = "Vermins - Stonespine",
+		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
+		["Augustin - Golemagg"] = "Augustin - Golemagg",
+		["Grgur - Golemagg"] = "Grgur - Golemagg",
+		["Koloman - Golemagg"] = "Koloman - Golemagg",
+		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
+		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
+		["Antun - Golemagg"] = "Antun - Golemagg",
+		["Judawise - Golemagg"] = "Judawise - Golemagg",
+		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
+		["Mxys - Golemagg"] = "Mxys - Golemagg",
+	},
 	["global"] = {
 		["BlackBook"] = {
 			["alts"] = {
@@ -13,29 +33,9 @@ Postal3ClassicDB = {
 				"Mxyz|Golemagg|Horde|5|PRIEST", -- [8]
 				"Mxzq|Golemagg|Horde|31|HUNTER", -- [9]
 				"Vermins|Stonespine|Horde|2|WARRIOR", -- [10]
-				"Vermin|Golemagg|Horde|29|WARRIOR", -- [11]
+				"Vermin|Golemagg|Horde|30|WARRIOR", -- [11]
 			},
 		},
-	},
-	["profileKeys"] = {
-		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
-		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
-		["Verminz - Golemagg"] = "Verminz - Golemagg",
-		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
-		["Mxym - Golemagg"] = "Mxym - Golemagg",
-		["Mxys - Golemagg"] = "Mxys - Golemagg",
-		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
-		["Augustin - Golemagg"] = "Augustin - Golemagg",
-		["Grgur - Golemagg"] = "Grgur - Golemagg",
-		["Koloman - Golemagg"] = "Koloman - Golemagg",
-		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
-		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
-		["Antun - Golemagg"] = "Antun - Golemagg",
-		["Judawise - Golemagg"] = "Judawise - Golemagg",
-		["Vermin - Golemagg"] = "Vermin - Golemagg",
-		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
-		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
-		["Vermins - Stonespine"] = "Vermins - Stonespine",
 	},
 	["profiles"] = {
 		["Dotwise - Golemagg"] = {
@@ -59,9 +59,16 @@ Postal3ClassicDB = {
 		},
 		["Mxym - Golemagg"] = {
 		},
-		["Mxys - Golemagg"] = {
+		["Vermins - Stonespine"] = {
 		},
-		["Greenwise - Golemagg"] = {
+		["Mxzq - Golemagg"] = {
+			["BlackBook"] = {
+				["recent"] = {
+					"Mxyz|Golemagg|Horde", -- [1]
+					"Byceps|Golemagg|Horde", -- [2]
+					"Vermin|Golemagg|Horde", -- [3]
+				},
+			},
 		},
 		["Augustin - Golemagg"] = {
 		},
@@ -82,6 +89,8 @@ Postal3ClassicDB = {
 		},
 		["Judawise - Golemagg"] = {
 		},
+		["Jaroslav - Golemagg"] = {
+		},
 		["Vermin - Golemagg"] = {
 			["BlackBook"] = {
 				["recent"] = {
@@ -91,18 +100,9 @@ Postal3ClassicDB = {
 				},
 			},
 		},
-		["Jaroslav - Golemagg"] = {
+		["Greenwise - Golemagg"] = {
 		},
-		["Mxzq - Golemagg"] = {
-			["BlackBook"] = {
-				["recent"] = {
-					"Mxyz|Golemagg|Horde", -- [1]
-					"Byceps|Golemagg|Horde", -- [2]
-					"Vermin|Golemagg|Horde", -- [3]
-				},
-			},
-		},
-		["Vermins - Stonespine"] = {
+		["Mxys - Golemagg"] = {
 		},
 	},
 }

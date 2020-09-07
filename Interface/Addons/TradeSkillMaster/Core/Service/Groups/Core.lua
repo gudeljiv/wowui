@@ -56,6 +56,8 @@ function Groups.OnInitialize()
 end
 
 function Groups.RebuildDatabase()
+	wipe(private.groupListCache)
+
 	-- convert ignoreRandomEnchants to ignoreItemVariations
 	for _, info in pairs(TSM.db.profile.userData.groups) do
 		if info.ignoreRandomEnchants ~= nil then

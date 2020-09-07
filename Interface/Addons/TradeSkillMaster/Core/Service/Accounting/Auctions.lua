@@ -20,7 +20,7 @@ local private = {
 	statsTemp = {},
 }
 local COMBINE_TIME_THRESHOLD = 300 -- group expenses within 5 minutes together
-local REMOVE_OLD_THRESHOLD = 365 * 24 * 60 * 60 -- remove records over 1 year old
+local REMOVE_OLD_THRESHOLD = 180 * 24 * 60 * 60 -- remove records over 6 months old
 local SECONDS_PER_DAY = 24 * 60 * 60
 local CSV_KEYS = { "itemString", "stackSize", "quantity", "player", "time" }
 

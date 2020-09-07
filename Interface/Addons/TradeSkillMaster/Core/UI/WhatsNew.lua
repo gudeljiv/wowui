@@ -11,10 +11,12 @@ local _, TSM = ...
 local WhatsNew = TSM.UI:NewPackage("WhatsNew")
 local L = TSM.Include("Locale").GetTable()
 local Theme = TSM.Include("Util.Theme")
+local Analytics = TSM.Include("Util.Analytics")
 local Settings = TSM.Include("Service.Settings")
 local UIElements = TSM.Include("UI.UIElements")
 local private = {
 	settings = nil,
+	showTime = nil,
 }
 local WHATS_NEW_VERSION = 1
 local CONTENT_LINES = {
@@ -40,6 +42,7 @@ function WhatsNew.GetDialog()
 	if private.settings.whatsNewVersion == WHATS_NEW_VERSION then
 		return
 	end
+	private.showTime = GetTime()
 	return UIElements.New("Frame")
 		:SetLayout("VERTICAL")
 		:SetSize(650, 390)
@@ -88,4 +91,5 @@ end
 function private.DialogCloseBtnOnClick(button)
 	private.settings.whatsNewVersion = WHATS_NEW_VERSION
 	button:GetBaseElement():HideDialog()
+	Analytics.Action("WHATS_NEW_TIME", floor((GetTime() - private.showTime) * 1000), WHATS_NEW_VERSION)
 end

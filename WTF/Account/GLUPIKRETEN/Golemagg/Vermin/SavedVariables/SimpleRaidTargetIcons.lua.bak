@@ -32,5 +32,6 @@ SRTIExternalUF = {
 		"CompactRaidFrame3", -- [3]
 		"CompactRaidFrame4", -- [4]
 		"CompactRaidFrame5", -- [5]
+		"CompactRaidFrame6", -- [6]
 	},
 }
