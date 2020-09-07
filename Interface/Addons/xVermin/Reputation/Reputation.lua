@@ -129,8 +129,6 @@ end
 
 local function UpdateBarValueAndColor()
 	for key, value in pairs(bars) do
-		-- print("Faction: " .. key .. " - " .. (value.hidden and "true" or "false") .. "-" .. (value.isWatched and "true" or "false"))
-
 		if not value.hidden then
 			if value.FactionInfo.earnedValue < -3000 then
 				standing = "HOSTILE"
