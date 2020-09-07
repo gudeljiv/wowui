@@ -96,6 +96,7 @@ local function UpdateBarPosition()
 			if value.isWatched then
 				anchor = _G[value.frameStatusBar .. "_wrap"]
 				if _G["PlayerXPFrameStatusBar"] and _G["PlayerXPFrameStatusBar"]:GetAlpha() > 0 then
+					_G[value.frameStatusBar .. "_wrap"]:ClearAllPoints()
 					if pet then
 						_G[value.frameStatusBar .. "_wrap"]:SetPoint("BOTTOM", PetXPFrameStatusBar, "TOP", 0, 30)
 					else
@@ -112,6 +113,7 @@ local function UpdateBarPosition()
 	for key, value in pairs(bars) do
 		if not value.hidden then
 			if not value.isWatched then
+				_G[value.frameStatusBar .. "_wrap"]:ClearAllPoints()
 				if anchor then
 					_G[value.frameStatusBar .. "_wrap"]:SetPoint("BOTTOM", anchor, "TOP", 0, 30 * counter)
 				else

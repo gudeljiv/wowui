@@ -6,36 +6,6 @@ EavesDropStatsDB = {
 	["profiles"] = {
 		["Konac - Golemagg"] = {
 			{
-				["hit"] = {
-					["Holy Nova"] = {
-						[-2] = {
-							["time"] = "|cffffffff09/07/20 05:59:12|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffHoly Nova|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4448-0-20-1765-0000565516:Worg|hWorg|h |cffffffff203|r |cffffffffHoly|r. ",
-							["amount"] = 203,
-						},
-						[2] = {
-						},
-						["icon"] = 135922,
-					},
-					["Shoot"] = {
-						[-2] = {
-							["time"] = "|cffffffff09/07/20 06:06:20|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Haction:RANGE_DAMAGE|h|cffffffffShoot|r|h |Haction:RANGE_DAMAGE|hhit|h |Hunit:Creature-0-4448-0-8-2354-0000564306:Vicious Gray Bear|hVicious Gray Bear|h |cffffffff163|r |cffffffffNature|r. ",
-							["amount"] = 163,
-						},
-						[2] = {
-							["time"] = "|cffffffff09/07/20 06:07:12|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Haction:RANGE_DAMAGE|h|cffffffffShoot|r|h |Haction:RANGE_DAMAGE|hhit|h |Hunit:Creature-0-4448-0-8-2354-00005655BD:Vicious Gray Bear|hVicious Gray Bear|h |cffffffff173|r |cffffffffNature|r. (Critical) ",
-							["amount"] = 173,
-						},
-					},
-					["Shadow Word: Pain"] = {
-						[-2] = {
-							["time"] = "|cffffffff09/07/20 05:12:09|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_PERIODIC_DAMAGE|h|cffffffffShadow Word: Pain|r|h |Haction:SPELL_PERIODIC_DAMAGE|hdamaged|h |Hunit:Creature-0-4448-1-48-6238-0000564DAC:Big Will|hBig Will|h |cffffffff156|r |cffffffffShadow|r. ",
-							["amount"] = 156,
-						},
-						[2] = {
-						},
-						["icon"] = 136207,
-					},
-				},
 				["heal"] = {
 					["Renew"] = {
 						[-2] = {
@@ -74,6 +44,36 @@ EavesDropStatsDB = {
 						[2] = {
 						},
 						["icon"] = 135907,
+					},
+				},
+				["hit"] = {
+					["Holy Nova"] = {
+						[-2] = {
+							["time"] = "|cffffffff09/07/20 05:59:12|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffHoly Nova|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4448-0-20-1765-0000565516:Worg|hWorg|h |cffffffff203|r |cffffffffHoly|r. ",
+							["amount"] = 203,
+						},
+						[2] = {
+						},
+						["icon"] = 135922,
+					},
+					["Shadow Word: Pain"] = {
+						[-2] = {
+							["time"] = "|cffffffff09/07/20 05:12:09|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_PERIODIC_DAMAGE|h|cffffffffShadow Word: Pain|r|h |Haction:SPELL_PERIODIC_DAMAGE|hdamaged|h |Hunit:Creature-0-4448-1-48-6238-0000564DAC:Big Will|hBig Will|h |cffffffff156|r |cffffffffShadow|r. ",
+							["amount"] = 156,
+						},
+						[2] = {
+						},
+						["icon"] = 136207,
+					},
+					["Shoot"] = {
+						[-2] = {
+							["time"] = "|cffffffff09/07/20 06:06:20|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Haction:RANGE_DAMAGE|h|cffffffffShoot|r|h |Haction:RANGE_DAMAGE|hhit|h |Hunit:Creature-0-4448-0-8-2354-0000564306:Vicious Gray Bear|hVicious Gray Bear|h |cffffffff163|r |cffffffffNature|r. ",
+							["amount"] = 163,
+						},
+						[2] = {
+							["time"] = "|cffffffff09/07/20 06:07:12|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Haction:RANGE_DAMAGE|h|cffffffffShoot|r|h |Haction:RANGE_DAMAGE|hhit|h |Hunit:Creature-0-4448-0-8-2354-00005655BD:Vicious Gray Bear|hVicious Gray Bear|h |cffffffff173|r |cffffffffNature|r. (Critical) ",
+							["amount"] = 173,
+						},
 					},
 				},
 			}, -- [1]

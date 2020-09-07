@@ -104,13 +104,6 @@ X: -27
 Y: 27
 W: 50
 H: 50
-Frame: aux_frame
-FrameLevel: 1
-Anchor: TOPLEFT
-X: 19
-Y: -64
-W: 768
-H: 447
 Frame: TargetFrame
 FrameLevel: 1
 Anchor: CENTER
