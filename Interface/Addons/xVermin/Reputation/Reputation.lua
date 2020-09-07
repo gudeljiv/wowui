@@ -232,7 +232,7 @@ local function UpdateBars(self, event)
 			if not bars[name] then
 				bars[name] = {
 					factionIndex = factionIndex,
-					frameStatusBar = "XVRB_" .. factionIndex,
+					frameStatusBar = "XVRB" .. factionIndex,
 					hidden = true,
 					barCreated = false,
 					timer = false,
