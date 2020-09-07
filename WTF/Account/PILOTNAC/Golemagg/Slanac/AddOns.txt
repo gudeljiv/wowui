@@ -64,7 +64,7 @@ rInfostrings: disabled
 rLib: disabled
 DBM-Party-Cataclysm: enabled
 DBM-ThroneFourWinds: enabled
-AdiBags: disabled
+AdiBags: enabled
 WeakAuras: disabled
 WeakAurasModelPaths: enabled
 WeakAurasOptions: enabled
@@ -91,7 +91,7 @@ ncShadow: enabled
 oUF_Freebgrid: disabled
 oUF_Freebgrid_Config: disabled
 Postal: enabled
-RangeDisplay: disabled
+RangeDisplay: enabled
 RangeDisplay_Options: enabled
 SimpleRaidTargetIcons: enabled
 SquidMod: enabled
@@ -290,10 +290,10 @@ kRestack: disabled
 Talented: disabled
 Talented_Data: disabled
 Talented_Data_Export: disabled
-PerfectRaid: disabled
+PerfectRaid: enabled
 SortBags: disabled
 TrackEverything: disabled
-AdiBags_Config: disabled
+AdiBags_Config: enabled
 Backpack: disabled
 Skillet-Classic: disabled
 Details_DataStorage: enabled
@@ -306,3 +306,7 @@ whoaThickFrames_Classic: enabled
 CharacterStatsClassic: enabled
 xVermin: enabled
 DBM-Karma-Skin: enabled
+aux-addon: disabled
+Examiner: enabled
+Select: enabled
+TownsfolkTracker: enabled

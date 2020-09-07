@@ -448,7 +448,10 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Vermin"] = {
 		["m_aQuestList"] = {
-			["The Islander - false"] = {
+			["The Windwatcher - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Cyclonian - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Warrior - true"] = {
@@ -845,7 +848,7 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 968.109619140625,
+		["m_iFrameBottom"] = 919.378295898438,
 		["m_bHideTitleButtons"] = false,
 		["m_iFrameLeft"] = 1739.55053710938,
 		["m_bColourDoneOrFailed"] = true,

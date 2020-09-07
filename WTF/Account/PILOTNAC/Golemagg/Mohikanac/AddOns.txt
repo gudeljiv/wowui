@@ -1,7 +1,7 @@
 !Colorz: enabled
 !Beautycase: enabled
-AdiBags: disabled
-AdiBags_Config: disabled
+AdiBags: enabled
+AdiBags_Config: enabled
 Align: enabled
 Aptechka: enabled
 AptechkaOptions: enabled
@@ -84,3 +84,11 @@ DBM-AQ20: enabled
 DBM-AQ40: enabled
 DBM-ZG: enabled
 Questie: enabled
+Auctionator: enabled
+aux-addon: disabled
+Examiner: enabled
+PerfectRaid: enabled
+RangeDisplay: enabled
+RangeDisplay_Options: enabled
+Select: enabled
+TownsfolkTracker: enabled

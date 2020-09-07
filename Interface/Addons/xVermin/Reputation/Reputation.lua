@@ -41,6 +41,9 @@ local function CreateBar(input)
 	f.Bar.FactionName:SetShadowOffset(0, 0)
 	f.Bar.FactionName:SetPoint("RIGHT", f.Bar, "RIGHT", -2, 10)
 	f.Bar.FactionName:SetVertexColor(1, 1, 1)
+	f.Bar.FactionName:SetWordWrap()
+	f.Bar.FactionName:SetJustifyH("RIGHT")
+	f.Bar.FactionName:SetWidth(size / scale)
 
 	f.Bar.FactionName2 = f.Bar:CreateFontString(nil, "ARTWORK")
 	f.Bar.FactionName2:SetFont("Fonts\\ARIALN.ttf", 10, "THINOUTLINE")
@@ -98,6 +101,8 @@ local function UpdateBarPosition()
 					else
 						_G[value.frameStatusBar .. "_wrap"]:SetPoint("BOTTOM", PlayerXPFrameStatusBar, "TOP", 0, 30)
 					end
+				else
+					_G[value.frameStatusBar .. "_wrap"]:SetPoint("BOTTOMLEFT", ChatFrame1, "BOTTOMRIGHT", 5, 0)
 				end
 			end
 		end
@@ -116,6 +121,8 @@ local function UpdateBarPosition()
 						else
 							_G[value.frameStatusBar .. "_wrap"]:SetPoint("BOTTOM", PlayerXPFrameStatusBar, "TOP", 0, 30 * counter)
 						end
+					else
+						_G[value.frameStatusBar .. "_wrap"]:SetPoint("BOTTOMLEFT", ChatFrame1, "BOTTOMRIGHT", 5, 30 * counter)
 					end
 				end
 				counter = counter + 1
@@ -130,18 +137,25 @@ end
 local function UpdateBarValueAndColor()
 	for key, value in pairs(bars) do
 		if not value.hidden then
-			if value.FactionInfo.earnedValue < -3000 then
-				standing = "HOSTILE"
-				color = {r = 255 / 255, g = 0 / 255, b = 0 / 255}
-				standingValue = 3000 + value.FactionInfo.earnedValue
-				topValue = 3000
-			end
-
 			if value.FactionInfo.earnedValue < 0 then
 				standing = "UNFRIENDLY"
 				color = {r = 238 / 255, g = 102 / 255, b = 34 / 255}
 				standingValue = 3000 + value.FactionInfo.earnedValue
 				topValue = 3000
+			end
+
+			if value.FactionInfo.earnedValue < -3000 then
+				standing = "HOSTILE"
+				color = {r = 255 / 255, g = 0 / 255, b = 0 / 255}
+				standingValue = 9000 + value.FactionInfo.earnedValue
+				topValue = 6000
+			end
+
+			if value.FactionInfo.earnedValue < -6000 then
+				standing = "HATED"
+				color = {r = 255 / 255, g = 0 / 255, b = 0 / 255}
+				standingValue = 42000 + value.FactionInfo.earnedValue
+				topValue = 36000
 			end
 
 			if value.FactionInfo.earnedValue >= 0 then
@@ -165,22 +179,22 @@ local function UpdateBarValueAndColor()
 				topValue = 12000
 			end
 
-			if value.FactionInfo.earnedValue > 12000 then
+			if value.FactionInfo.earnedValue > 21000 then
 				standing = "REVERED"
 				color = {r = 0 / 255, g = 255 / 255, b = 204 / 255}
-				standingValue = value.FactionInfo.earnedValue - 12000
+				standingValue = value.FactionInfo.earnedValue - 21000
 				topValue = 21000
 			end
 
-			if value.FactionInfo.earnedValue > 21000 then
+			if value.FactionInfo.earnedValue > 42000 then
 				standing = "EXALTED"
 				color = {r = 0 / 255, g = 255 / 255, b = 255 / 255}
-				standingValue = value.FactionInfo.earnedValue - 21000
+				standingValue = value.FactionInfo.earnedValue - 42000
 				topValue = 999
 			end
 
-			_G[value.frameStatusBar]:SetMinMaxValues(0, value.FactionInfo.topValue)
-			_G[value.frameStatusBar]:SetValue(value.FactionInfo.earnedValue)
+			_G[value.frameStatusBar]:SetMinMaxValues(0, topValue)
+			_G[value.frameStatusBar]:SetValue(standingValue)
 			_G[value.frameStatusBar]:SetStatusBarColor(color.r, color.g, color.b, 1)
 			_G[value.frameStatusBar].Value:SetText(standingValue .. "/" .. topValue)
 			_G[value.frameStatusBar].FactionName:SetText(value.FactionInfo.name)
@@ -221,7 +235,8 @@ local function UpdateBars(self, event)
 
 	local numFactions = GetNumFactions()
 	while factionIndex <= numFactions do
-		local name, description, standingId, bottomValue, topValue, earnedValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild, factionID, hasBonusRepGain, canBeLFGBonus = GetFactionInfo(factionIndex)
+		local name, description, standingId, bottomValue, topValue, earnedValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild, factionID, hasBonusRepGain, canBeLFGBonus =
+			GetFactionInfo(factionIndex)
 
 		if isHeader and isCollapsed then
 			ExpandFactionHeader(factionIndex)
