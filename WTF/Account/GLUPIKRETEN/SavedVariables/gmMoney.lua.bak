@@ -40,12 +40,12 @@ GMMONEY = {
 			["CLASS"] = "DRUID",
 		},
 		["Vermin"] = {
-			["GOLD"] = 494600,
+			["GOLD"] = 490297,
 			["CLASS"] = "WARRIOR",
 		},
 	},
 }
 GMMONEYSET = {
-	["FULLDISP"] = true,
 	["TEXTMODE"] = true,
+	["FULLDISP"] = true,
 }
