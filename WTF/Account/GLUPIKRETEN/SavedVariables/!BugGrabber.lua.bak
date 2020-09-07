@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 2426,
+	["session"] = 2434,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -2050,5 +2050,13 @@ BugGrabberDB = {
 			["session"] = 2425,
 			["counter"] = 5,
 		}, -- [259]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'RaidGroupButton1:Hide()'.",
+			["time"] = "2020/09/06 18:01:44",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Hide'\nInterface\\AddOns\\Blizzard_RaidUI\\Blizzard_RaidUI.lua:511: in function `RaidGroupFrame_Update'\nInterface\\FrameXML\\RaidFrame.lua:121: in function `RaidFrame_Update'\nInterface\\FrameXML\\RaidFrame.lua:60: in function `RaidFrame_OnEvent'\nInterface\\AddOns\\Blizzard_RaidUI\\Blizzard_RaidUI.lua:169: in function <Interface\\AddOns\\Blizzard_RaidUI\\Blizzard_RaidUI.lua:168>",
+			["session"] = 2427,
+			["counter"] = 1,
+		}, -- [260]
 	},
 }

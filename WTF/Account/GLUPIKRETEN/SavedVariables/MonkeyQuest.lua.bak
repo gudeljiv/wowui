@@ -448,6 +448,15 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Vermin"] = {
 		["m_aQuestList"] = {
+			["The Islander - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Warrior - true"] = {
+				["m_bChecked"] = true,
+			},
+			["The Affray - false"] = {
+				["m_bChecked"] = true,
+			},
 		},
 	},
 	["Golemagg|Kosturko"] = {

@@ -13,7 +13,7 @@ Postal3ClassicDB = {
 				"Mxyz|Golemagg|Horde|5|PRIEST", -- [8]
 				"Mxzq|Golemagg|Horde|31|HUNTER", -- [9]
 				"Vermins|Stonespine|Horde|2|WARRIOR", -- [10]
-				"Vermin|Golemagg|Horde|29|WARRIOR", -- [11]
+				"Vermin|Golemagg|Horde|30|WARRIOR", -- [11]
 			},
 		},
 	},

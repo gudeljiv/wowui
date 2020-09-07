@@ -448,10 +448,13 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Vermin"] = {
 		["m_aQuestList"] = {
+			["The Islander - false"] = {
+				["m_bChecked"] = true,
+			},
 			["Warrior - true"] = {
 				["m_bChecked"] = true,
 			},
-			["The Islander - false"] = {
+			["The Affray - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -809,7 +812,7 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 930.561157226563,
+		["m_iFrameBottom"] = 968.109619140625,
 		["m_bHideCompletedQuests"] = true,
 		["m_iFrameLeft"] = 1739.55053710938,
 		["m_bColourDoneOrFailed"] = true,
