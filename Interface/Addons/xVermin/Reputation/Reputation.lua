@@ -237,8 +237,7 @@ local function UpdateBars(self, event)
 
 	local numFactions = GetNumFactions()
 	while factionIndex <= numFactions do
-		local name, description, standingId, bottomValue, topValue, earnedValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild, factionID, hasBonusRepGain, canBeLFGBonus =
-			GetFactionInfo(factionIndex)
+		local name, description, standingId, bottomValue, topValue, earnedValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild, factionID, hasBonusRepGain, canBeLFGBonus = GetFactionInfo(factionIndex)
 
 		if isHeader and isCollapsed then
 			ExpandFactionHeader(factionIndex)
