@@ -1,8 +1,8 @@
 local _, xVermin = ...
 
 xVermin.Config = {
-	-- scale = 768 / string.match(({GetScreenResolutions()})[GetCurrentResolution()], "%d+x(%d+)"),
-	UIscale = 0.62,
+	UIscale = 768 / string.match(({GetScreenResolutions()})[GetCurrentResolution()], "%d+x(%d+)"),
+	-- UIscale = 0.62,
 	font = {
 		arial = "Fonts\\ARIALN.ttf",
 		atari = "Interface\\AddOns\\xVermin\\Media\\Atari.ttf",
