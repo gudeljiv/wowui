@@ -304,6 +304,7 @@ function ApplicationFrame.ShowConfirmationDialog(self, title, subTitle, callback
 		:SetPadding(12, 12, 8, 12)
 		:AddAnchor("CENTER")
 		:SetBackgroundColor("FRAME_BG", true)
+		:SetMouseEnabled(true)
 		:AddChild(UIElements.New("Frame", "header")
 			:SetLayout("HORIZONTAL")
 			:SetHeight(24)

@@ -83,6 +83,24 @@ function ApplicationGroupTree.SetContextTable(self, tbl, defaultTbl)
 	return self
 end
 
+--- Gets whether or not a group is currently selected.
+-- @tparam ApplicationGroupTree self The application group tree object
+-- @tparam string groupPath The group to check
+-- @treturn boolean Whether or not the group is selected
+function ApplicationGroupTree.IsGroupSelected(self, groupPath)
+	return self:_IsSelected(groupPath)
+end
+
+--- Gets whether or not a group is currently selected.
+-- @tparam ApplicationGroupTree self The application group tree object
+-- @tparam string groupPath The group to set the selected state of
+-- @tparam boolean selected Whether or not the group should be selected
+-- @treturn ApplicationGroupTree The application group tree object
+function ApplicationGroupTree.SetGroupSelected(self, groupPath, selected)
+	self:_SetSelected(groupPath, selected)
+	return self
+end
+
 --- Gets whether or not the selection is cleared.
 -- @tparam ApplicationGroupTree self The application group tree object
 -- @tparam[opt=false] boolean updateData Whether or not to update the data first

@@ -27,6 +27,8 @@ local private = {
 	dataChanged = false,
 	baseStatsQuery = nil,
 	statsQuery = nil,
+	baseStatsMinTimeQuery = nil,
+	statsMinTimeQuery = nil,
 	syncHashesThread = nil,
 	isSyncHashesThreadRunning = false,
 	syncHashDayCache = {},
@@ -99,6 +101,19 @@ function Transactions.OnInitialize()
 		:Equal("baseItemString", Database.BoundQueryParam())
 		:Equal("itemString", Database.BoundQueryParam())
 		:NotEqual("source", "Vendor")
+	private.baseStatsMinTimeQuery = private.db:NewQuery()
+		:Select("quantity", "price")
+		:Equal("type", Database.BoundQueryParam())
+		:Equal("baseItemString", Database.BoundQueryParam())
+		:GreaterThanOrEqual("time", Database.BoundQueryParam())
+		:NotEqual("source", "Vendor")
+	private.statsMinTimeQuery = private.db:NewQuery()
+		:Select("quantity", "price")
+		:Equal("type", Database.BoundQueryParam())
+		:Equal("baseItemString", Database.BoundQueryParam())
+		:Equal("itemString", Database.BoundQueryParam())
+		:GreaterThanOrEqual("time", Database.BoundQueryParam())
+		:NotEqual("source", "Vendor")
 	private.syncHashesThread = Threading.New("TRANSACTIONS_SYNC_HASHES", private.SyncHashesThread)
 end
 
@@ -150,13 +165,9 @@ end
 function Transactions.RemoveOldData(days)
 	private.dataChanged = true
 	private.db:SetQueryUpdatesPaused(true)
-	local query = private.db:NewQuery()
+	local numRecords = private.db:NewQuery()
 		:LessThan("time", time() - days * SECONDS_PER_DAY)
-	local numRecords = query:Count()
-	for _, uuid in query:UUIDIterator() do
-		private.db:DeleteRowByUUID(uuid)
-	end
-	query:Release()
+		:DeleteAndRelease()
 	private.db:SetQueryUpdatesPaused(false)
 	private.OnItemRecordsChanged("sale")
 	private.OnItemRecordsChanged("buy")
@@ -164,14 +175,22 @@ function Transactions.RemoveOldData(days)
 	return numRecords
 end
 
-function Transactions.GetSaleStats(itemString)
+function Transactions.GetSaleStats(itemString, minTime)
 	local baseItemString = ItemString.GetBase(itemString)
 	local isBaseItemString = itemString == baseItemString
-	local query = isBaseItemString and private.baseStatsQuery or private.statsQuery
-	if isBaseItemString then
-		query:BindParams("sale", baseItemString)
+	local query = nil
+	if minTime then
+		if isBaseItemString then
+			query = private.baseStatsMinTimeQuery:BindParams("sale", baseItemString, minTime)
+		else
+			query = private.statsMinTimeQuery:BindParams("sale", baseItemString, itemString, minTime)
+		end
 	else
-		query:BindParams("sale", baseItemString, itemString)
+		if isBaseItemString then
+			query = private.baseStatsQuery:BindParams("sale", baseItemString)
+		else
+			query = private.statsQuery:BindParams("sale", baseItemString, itemString)
+		end
 	end
 	query:ResetOrderBy()
 	local totalPrice = query:SumOfProduct("quantity", "price")

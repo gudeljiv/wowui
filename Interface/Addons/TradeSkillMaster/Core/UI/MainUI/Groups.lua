@@ -50,7 +50,7 @@ local OPERATION_LABELS = {
 	Vendoring = L["Vendoring operations control selling to and buying from a vendor."],
 	Warehousing = L["Warehousing operations control moving in and out of the bank."],
 }
-local DEFAULT_IMPORT_GROUP_TREE_CONTEXT = { selected = {}, collapsed = {} }
+local DEFAULT_IMPORT_GROUP_TREE_CONTEXT = { unselected = {}, collapsed = {} }
 
 
 
@@ -821,7 +821,7 @@ function private.GetImportSummaryDialog()
 			)
 			:AddChild(UIElements.New("Texture", "line")
 				:SetWidth(2)
-				:SetTexture("ACTIVE_BG")
+				:SetTexture("ACTIVE_BG_ALT")
 			)
 			:AddChild(UIElements.New("Button", "operations")
 				:SetWidth("AUTO")
@@ -832,7 +832,7 @@ function private.GetImportSummaryDialog()
 			)
 			:AddChild(UIElements.New("Texture", "line2")
 				:SetWidth(2)
-				:SetTexture("ACTIVE_BG")
+				:SetTexture("ACTIVE_BG_ALT")
 			)
 			:AddChild(UIElements.New("Button", "items")
 				:SetWidth("AUTO")
@@ -862,10 +862,16 @@ function private.GetImportSummaryDialog()
 				)
 				:AddChild(UIElements.New("Button", "expandAllBtn")
 					:SetSize(24, 24)
-					:SetMargin(8, 0, 0, 0)
+					:SetMargin(8, 4, 0, 0)
 					:SetBackground("iconPack.18x18/Expand All")
 					:SetScript("OnClick", private.ImportExpandAllOnClick)
 					:SetTooltip(L["Expand / Collapse All Groups"])
+				)
+				:AddChild(UIElements.New("Button", "selectAllBtn")
+					:SetSize(24, 24)
+					:SetBackground("iconPack.18x18/Select All")
+					:SetScript("OnClick", private.ImportSelectAllOnClick)
+					:SetTooltip(L["Select / Deselect All Groups"])
 				)
 			)
 			:AddChild(UIElements.New("ApplicationGroupTree", "groupTree")
@@ -919,9 +925,8 @@ function private.GetImportSummaryDialog()
 end
 
 function private.ImportInputOnValueChanged(input)
-	local isValid, numItems, numGroups, numExistingItems, numOperations, numExistingOperations, numExistingCustomSources = TSM.Groups.ImportExport.ProcessImport(input:GetValue())
 	local baseFrame = input:GetBaseElement()
-	if not isValid then
+	if not TSM.Groups.ImportExport.ProcessImport(input:GetValue()) then
 		baseFrame:HideDialog()
 		Log.PrintUser(L["The pasted value was not valid. Ensure you are pasting the entire import string."])
 		return
@@ -943,6 +948,11 @@ function private.ImportInputOnValueChanged(input)
 	baseFrame:HideDialog()
 	local dialogFrame = private.GetImportSummaryDialog()
 	baseFrame:ShowDialogFrame(dialogFrame)
+	private.UpdateImportConfirmationDialog(dialogFrame)
+end
+
+function private.UpdateImportConfirmationDialog(dialogFrame)
+	local numItems, numGroups, numExistingItems, numOperations, numExistingOperations, numExistingCustomSources = TSM.Groups.ImportExport.GetImportTotals()
 	dialogFrame:GetElement("nav.groups")
 		:SetText(format(L["%d Groups"], numGroups))
 	dialogFrame:GetElement("nav.operations")
@@ -992,11 +1002,35 @@ function private.ImportExpandAllOnClick(button)
 		:ToggleExpandAll()
 end
 
+function private.ImportSelectAllOnClick(button)
+	local importGroupName = TSM.Groups.ImportExport.GetPendingImportGroupName()
+	local groupTree = button:GetElement("__parent.__parent.groupTree")
+	groupTree:SetGroupSelected(importGroupName, false)
+	groupTree:ToggleSelectAll()
+end
+
 function private.ImportGroupTreeOnGroupSelectionChanged(groupTree)
-	-- hacky way to disable selection on the group tree
-	if not groupTree:IsSelectionCleared() then
-		groupTree:ToggleSelectAll()
+	local importGroupName = TSM.Groups.ImportExport.GetPendingImportGroupName()
+	groupTree:SetGroupSelected(importGroupName, true)
+	-- make sure the parent of any selected groups are also selected
+	for relativeGroupPath in TSM.Groups.ImportExport.PendingImportGroupIterator() do
+		local groupPath = relativeGroupPath == TSM.CONST.ROOT_GROUP_PATH and importGroupName or TSM.Groups.Path.Join(importGroupName, relativeGroupPath)
+		local isSelected = groupTree:IsGroupSelected(groupPath)
+		TSM.Groups.ImportExport.SetGroupFiltered(relativeGroupPath, not isSelected)
+		if isSelected then
+			local tempGroupPath = TSM.Groups.Path.Split(groupPath)
+			while tempGroupPath do
+				groupTree:SetGroupSelected(tempGroupPath, true)
+				tempGroupPath = TSM.Groups.Path.Split(tempGroupPath)
+			end
+		end
 	end
+	for relativeGroupPath in TSM.Groups.ImportExport.PendingImportGroupIterator() do
+		local groupPath = relativeGroupPath == TSM.CONST.ROOT_GROUP_PATH and importGroupName or TSM.Groups.Path.Join(importGroupName, relativeGroupPath)
+		local isSelected = groupTree:IsGroupSelected(groupPath)
+		TSM.Groups.ImportExport.SetGroupFiltered(relativeGroupPath, not isSelected)
+	end
+	private.UpdateImportConfirmationDialog(groupTree:GetParentElement():GetParentElement())
 end
 
 function private.ImportIncludeOperationsCheckboxOnValueChanged(checkbox)
