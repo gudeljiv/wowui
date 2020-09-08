@@ -10,6 +10,7 @@ local Math = TSM.Include("Util.Math")
 local private = {
 	characterGuildTemp = {},
 }
+local SECONDS_PER_DAY = 24 * 60 * 60
 
 
 
@@ -40,7 +41,8 @@ function Accounting.GetSummaryQuery(timeFilterStart, timeFilterEnd, ignoredChara
 end
 
 function Accounting.GetSaleRate(itemString)
-	local _, totalSaleNum = TSM.Accounting.Transactions.GetSaleStats(itemString)
+	-- since auction data only goes back 180 days, limit the sales to that same time range
+	local _, totalSaleNum = TSM.Accounting.Transactions.GetSaleStats(itemString, 180 * SECONDS_PER_DAY)
 	if not totalSaleNum then
 		return nil
 	end

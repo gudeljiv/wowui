@@ -6,11 +6,13 @@
 
 local _, TSM = ...
 local SavedSearches = TSM.Shopping:NewPackage("SavedSearches")
+local Log = TSM.Include("Util.Log")
 local Database = TSM.Include("Util.Database")
 local TempTable = TSM.Include("Util.TempTable")
 local private = {
 	db = nil,
 }
+local MAX_RECENT_SEARCHES = 2000
 
 
 
@@ -22,6 +24,7 @@ function SavedSearches.OnInitialize()
 	-- remove duplicates
 	local keepSearch = TempTable.Acquire()
 	for _, data in ipairs(TSM.db.global.userData.savedShoppingSearches) do
+		data.searchMode = nil -- clear out old 4.9.x data
 		local filter = strlower(data.filter)
 		if not keepSearch[filter] then
 			keepSearch[filter] = data
@@ -41,6 +44,23 @@ function SavedSearches.OnInitialize()
 		end
 	end
 	TempTable.Release(keepSearch)
+
+	-- remove old recent searches
+	local remainingRecentSearches = MAX_RECENT_SEARCHES
+	local numRemoved = 0
+	for i = #TSM.db.global.userData.savedShoppingSearches, 1, -1 do
+		if not TSM.db.global.userData.savedShoppingSearches[i].isFavorite then
+			if remainingRecentSearches > 0 then
+				remainingRecentSearches = remainingRecentSearches - 1
+			else
+				tremove(TSM.db.global.userData.savedShoppingSearches, i)
+				numRemoved = numRemoved + 1
+			end
+		end
+	end
+	if numRemoved > 0 then
+		Log.Info("Removed %d old recent searches", numRemoved)
+	end
 
 	private.db = Database.NewSchema("SHOPPING_SAVED_SEARCHES")
 		:AddUniqueNumberField("index")
@@ -117,8 +137,6 @@ function SavedSearches.RecordFilterSearch(filter)
 			name = filter,
 			filter = filter,
 			lastSearch = time(),
-			-- TODO: remove this once we don't care about backwards compatibility with 4.9.x
-			searchMode = "normal",
 			isFavorite = nil,
 		}
 		tinsert(TSM.db.global.userData.savedShoppingSearches, data)

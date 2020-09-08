@@ -228,6 +228,67 @@ function DatabaseTable.DeleteRowByUUID(self, uuid)
 	self:_UpdateQueries()
 end
 
+--- Build delete rows from the DB by UUID.
+-- @tparam DatabaseTable self The database object
+-- @tparam table uuids A list of UUIDs of rows to delete
+function DatabaseTable.BulkDelete(self, uuids)
+	assert(not self._trigramIndexField, "Cannot bulk delete on tables with trigram indexes")
+	assert(not self._bulkInsertContext)
+	for _, uuid in ipairs(uuids) do
+		for field, uniqueValues in pairs(self._uniques) do
+			uniqueValues[self:GetRowFieldByUUID(uuid, field)] = nil
+		end
+
+		-- lookup the index of the row being deleted
+		local uuidIndex = ((self._uuidToDataOffsetLookup[uuid] - 1) / self._numStoredFields) + 1
+		local rowIndex = self._uuidToDataOffsetLookup[uuid]
+		assert(rowIndex)
+
+		-- get the index of the last row
+		local lastUUIDIndex = #self._data / self._numStoredFields
+		local lastRowIndex = #self._data - self._numStoredFields + 1
+		assert(lastRowIndex > 0 and lastUUIDIndex > 0)
+
+		-- remove this row from both lookups
+		self._uuidToDataOffsetLookup[uuid] = nil
+
+		if rowIndex == lastRowIndex then
+			-- this is the last row so just remove it
+			for _ = 1, self._numStoredFields do
+				tremove(self._data)
+			end
+			assert(uuidIndex == #self._uuids)
+			self._uuids[#self._uuids] = nil
+		else
+			-- this row is in the middle, so move the last row into this slot
+			local moveRowUUID = tremove(self._uuids)
+			self._uuids[uuidIndex] = moveRowUUID
+			self._uuidToDataOffsetLookup[moveRowUUID] = rowIndex
+			for i = self._numStoredFields, 1, -1 do
+				local moveDataIndex = lastRowIndex + i - 1
+				assert(moveDataIndex == #self._data)
+				self._data[rowIndex + i - 1] = self._data[moveDataIndex]
+				tremove(self._data)
+			end
+		end
+	end
+
+	-- re-build the indexes
+	for indexField, indexList in pairs(self._indexLists) do
+		wipe(indexList)
+		local indexValues = TempTable.Acquire()
+		for i = 1, #self._uuids do
+			local uuid = self._uuids[i]
+			indexList[i] = uuid
+			indexValues[uuid] = self:_GetRowIndexValue(uuid, indexField)
+		end
+		Table.SortWithValueLookup(indexList, indexValues)
+		TempTable.Release(indexValues)
+	end
+
+	self:_UpdateQueries()
+end
+
 --- Delete a row.
 -- @tparam DatabaseTable self The database object
 -- @tparam DatabaseRow deleteRow The database row object to delete

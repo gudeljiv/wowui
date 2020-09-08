@@ -882,9 +882,7 @@ end
 -- @treturn ?number The number of rows deleted (equal to `:Count()`)
 function DatabaseQuery.DeleteAndRelease(self)
 	local count = self:Count()
-	for _, uuid in ipairs(self._result) do
-		self._db:DeleteRowByUUID(uuid)
-	end
+	self._db:BulkDelete(self._result)
 	self:Release()
 	return count
 end

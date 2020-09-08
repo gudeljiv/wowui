@@ -25,8 +25,8 @@ local private = {
 		groupOperations = nil,
 		operations = nil,
 		customSources = nil,
-		numInvalidItems = nil,
 		numChangedOperations = nil,
+		filteredGroups = {},
 	},
 }
 local MAGIC_STR = "TSM_EXPORT"
@@ -157,33 +157,61 @@ function ImportExport.GenerateExport(exportGroupPath, includeSubGroups, excludeO
 end
 
 function ImportExport.ProcessImport(str)
-	if private.DecodeNewImport(str) or private.DecodeOldImport(str) or private.DecodeOldGroupOrItemListImport(str) then
-		local numExistingItems = 0
-		for itemString in pairs(private.importContext.items) do
+	return private.DecodeNewImport(str) or private.DecodeOldImport(str) or private.DecodeOldGroupOrItemListImport(str)
+end
+
+function ImportExport.GetImportTotals()
+	local numExistingItems = 0
+	for itemString, groupPath in pairs(private.importContext.items) do
+		if not private.importContext.filteredGroups[groupPath] then
 			if TSM.Groups.IsItemInGroup(itemString) then
 				numExistingItems = numExistingItems + 1
 			end
 		end
-		local numOperations, numExistingOperations = 0, 0
-		for moduleName, moduleOperations in pairs(private.importContext.operations) do
-			for operationName in pairs(moduleOperations) do
+	end
+	wipe(private.importContext.customSources)
+	local numOperations, numExistingOperations = 0, 0
+	for moduleName, moduleOperations in pairs(private.importContext.operations) do
+		local usedOperations = TempTable.Acquire()
+		for groupPath, operations in pairs(private.importContext.groupOperations) do
+			if not private.importContext.filteredGroups[groupPath] then
+				for _, operationName in ipairs(operations[moduleName]) do
+					usedOperations[operationName] = true
+				end
+			end
+		end
+		for operationName, operationSettings in pairs(moduleOperations) do
+			if usedOperations[operationName] then
 				numOperations = numOperations + 1
 				if TSM.Operations.Exists(moduleName, operationName) then
 					numExistingOperations = numExistingOperations + 1
 				end
+				for key in pairs(EXPORT_CUSTOM_STRINGS[moduleName]) do
+					private.GetCustomSources(operationSettings[key], private.importContext.customSources)
+				end
 			end
 		end
-		local numExistingCustomSources = 0
-		for name in pairs(private.importContext.customSources) do
-			if TSM.db.global.userData.customPriceSources[name] then
-				numExistingCustomSources = numExistingCustomSources + 1
-			end
-		end
-		local numItems = Table.Count(private.importContext.items)
-		local numGroups = Table.Count(private.importContext.groups)
-		return true, numItems, numGroups, numExistingItems, numOperations, numExistingOperations, numExistingCustomSources
+		TempTable.Release(usedOperations)
 	end
-	return false
+	local numExistingCustomSources = 0
+	for name in pairs(private.importContext.customSources) do
+		if TSM.db.global.userData.customPriceSources[name] then
+			numExistingCustomSources = numExistingCustomSources + 1
+		end
+	end
+	local numItems = 0
+	for _, groupPath in pairs(private.importContext.items) do
+		if not private.importContext.filteredGroups[groupPath] then
+			numItems = numItems + 1
+		end
+	end
+	local numGroups = 0
+	for groupPath in pairs(private.importContext.groups) do
+		if not private.importContext.filteredGroups[groupPath] then
+			numGroups = numGroups + 1
+		end
+	end
+	return numItems, numGroups, numExistingItems, numOperations, numExistingOperations, numExistingCustomSources
 end
 
 function ImportExport.PendingImportGroupIterator()
@@ -196,10 +224,31 @@ function ImportExport.GetPendingImportGroupName()
 	return private.importContext.groupName
 end
 
+function ImportExport.SetGroupFiltered(groupPath, isFiltered)
+	private.importContext.filteredGroups[groupPath] = isFiltered or nil
+end
+
 function ImportExport.CommitImport(moveExistingItems, includeOperations, replaceOperations)
 	assert(private.importContext.groupName)
 	local numOperations, numCustomSources = 0, 0
 	if includeOperations and next(private.importContext.operations) then
+		-- remove filtered operations
+		for moduleName, moduleOperations in pairs(private.importContext.operations) do
+			local usedOperations = TempTable.Acquire()
+			for groupPath, operations in pairs(private.importContext.groupOperations) do
+				if not private.importContext.filteredGroups[groupPath] then
+					for _, operationName in ipairs(operations[moduleName]) do
+						usedOperations[operationName] = true
+					end
+				end
+			end
+			for operationName in pairs(moduleOperations) do
+				if not usedOperations[operationName] then
+					moduleOperations[operationName] = nil
+				end
+			end
+			TempTable.Release(usedOperations)
+		end
 		if not replaceOperations then
 			-- remove existing operations and custom sources from the import context
 			for moduleName, moduleOperations in pairs(private.importContext.operations) do
@@ -219,6 +268,15 @@ function ImportExport.CommitImport(moveExistingItems, includeOperations, replace
 			end
 		end
 		if next(private.importContext.customSources) then
+			-- regenerate the list of custom sources in case some operations were filtered out
+			wipe(private.importContext.customSources)
+			for moduleName, moduleOperations in pairs(private.importContext.operations) do
+				for _, operationSettings in pairs(moduleOperations) do
+					for key in pairs(EXPORT_CUSTOM_STRINGS[moduleName]) do
+						private.GetCustomSources(operationSettings[key], private.importContext.customSources)
+					end
+				end
+			end
 			-- create the custom sources
 			numCustomSources = Table.Count(private.importContext.customSources)
 			CustomPrice.BulkCreateCustomPriceSourcesFromImport(private.importContext.customSources, replaceOperations)
@@ -232,17 +290,21 @@ function ImportExport.CommitImport(moveExistingItems, includeOperations, replace
 	if not includeOperations then
 		wipe(private.importContext.groupOperations)
 	end
+	-- filter the groups
+	for groupPath in pairs(private.importContext.filteredGroups) do
+		private.importContext.groups[groupPath] = nil
+		private.importContext.groupOperations[groupPath] = nil
+	end
+	for itemString, groupPath in pairs(private.importContext.items) do
+		if private.importContext.filteredGroups[groupPath] then
+			private.importContext.items[itemString] = nil
+		end
+	end
 	-- create the groups
 	local numItems = TSM.Groups.BulkCreateFromImport(private.importContext.groupName, private.importContext.items, private.importContext.groups, private.importContext.groupOperations, moveExistingItems)
 
 	-- print the message
 	Log.PrintfUser(L["Imported group (%s) with %d items, %d operations, and %d custom sources."], private.importContext.groupName, numItems, numOperations, numCustomSources)
-	if private.importContext.numInvalidItems > 0 then
-		Log.PrintfUser(L["NOTE: The import contained %d invalid items which were ignored."], private.importContext.numInvalidItems)
-	end
-	if private.importContext.numChangedOperations > 0 then
-		Log.PrintfUser(L["NOTE: The import contained %d operations with at least one invalid setting which was reset."], private.importContext.numChangedOperations)
-	end
 	ImportExport.ClearImportContext()
 end
 
@@ -253,8 +315,7 @@ function ImportExport.ClearImportContext()
 	private.importContext.groupOperations = nil
 	private.importContext.operations = nil
 	private.importContext.customSources = nil
-	private.importContext.numInvalidItems = nil
-	private.importContext.numChangedOperations = nil
+	wipe(private.importContext.filteredGroups)
 end
 
 
@@ -386,6 +447,13 @@ function private.DecodeNewImport(str)
 		return false
 	end
 
+	if numInvalidItems > 0 then
+		Log.PrintfUser(L["NOTE: The import contained %d invalid items which were ignored."], numInvalidItems)
+	end
+	if numChangedOperations > 0 then
+		Log.PrintfUser(L["NOTE: The import contained %d operations with at least one invalid setting which was reset."], numChangedOperations)
+	end
+
 	Log.Info("Decoded new import string")
 	private.importContext.groupName = private.DedupImportGroupName(groupName)
 	private.importContext.items = items
@@ -393,8 +461,6 @@ function private.DecodeNewImport(str)
 	private.importContext.groupOperations = groupOperations
 	private.importContext.operations = operations
 	private.importContext.customSources = customSources
-	private.importContext.numInvalidItems = numInvalidItems
-	private.importContext.numChangedOperations = numChangedOperations
 	return true
 end
 
@@ -481,6 +547,13 @@ function private.DecodeOldImport(str)
 		private.UpdateTopLevelGroup(commonTopLevelGroup, items, groups, groupOperations)
 	end
 
+	if numInvalidItems > 0 then
+		Log.PrintfUser(L["NOTE: The import contained %d invalid items which were ignored."], numInvalidItems)
+	end
+	if numChangedOperations > 0 then
+		Log.PrintfUser(L["NOTE: The import contained %d operations with at least one invalid setting which was reset."], numChangedOperations)
+	end
+
 	Log.Info("Decoded old import string")
 	private.importContext.groupName = private.DedupImportGroupName(commonTopLevelGroup or L["Imported Group"])
 	private.importContext.items = items
@@ -488,8 +561,6 @@ function private.DecodeOldImport(str)
 	private.importContext.groupOperations = groupOperations
 	private.importContext.operations = operations
 	private.importContext.customSources = {}
-	private.importContext.numInvalidItems = numInvalidItems
-	private.importContext.numChangedOperations = numChangedOperations
 	return true
 end
 
@@ -507,6 +578,10 @@ function private.DecodeOldGroupOrItemListImport(str)
 		private.UpdateTopLevelGroup(commonTopLevelGroup, items, groups, groupOperations)
 	end
 
+	if numInvalidItems > 0 then
+		Log.PrintfUser(L["NOTE: The import contained %d invalid items which were ignored."], numInvalidItems)
+	end
+
 	Log.Info("Decoded old group or item list")
 	private.importContext.groupName = private.DedupImportGroupName(commonTopLevelGroup or L["Imported Group"])
 	private.importContext.items = items
@@ -514,8 +589,6 @@ function private.DecodeOldGroupOrItemListImport(str)
 	private.importContext.groupOperations = groupOperations
 	private.importContext.operations = {}
 	private.importContext.customSources = {}
-	private.importContext.numInvalidItems = numInvalidItems
-	private.importContext.numChangedOperations = 0
 	return true
 end
 
