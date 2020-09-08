@@ -8,9 +8,9 @@ W: 112
 H: 36
 Frame: EavesDropFrame
 FrameLevel: 1
-Anchor: RIGHT
+Anchor: TOPRIGHT
 X: -29
-Y: 187
+Y: -272
 W: 154
 H: 322
 Frame: PlayerFrame
