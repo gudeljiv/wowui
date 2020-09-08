@@ -1,11 +1,4 @@
 Version: 1
-Frame: PetActionButton1
-FrameLevel: 3
-Anchor: BOTTOM
-X: -170
-Y: 133
-W: 30
-H: 30
 Frame: EavesDropFrame
 FrameLevel: 1
 Anchor: RIGHT
@@ -104,6 +97,13 @@ X: -27
 Y: 27
 W: 50
 H: 50
+Frame: PetActionButton1
+FrameLevel: 3
+Anchor: BOTTOM
+X: -170
+Y: 133
+W: 30
+H: 30
 Frame: TargetFrame
 FrameLevel: 1
 Anchor: CENTER
