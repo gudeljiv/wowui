@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 2474,
 	["lastSanitation"] = 3,
-	["session"] = 2461,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -173,8 +173,8 @@ BugGrabberDB = {
 		}, -- [21]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["session"] = 1336,
 			["time"] = "2020/07/26 13:26:58",
+			["session"] = 1336,
 			["counter"] = 2,
 		}, -- [22]
 		{
@@ -554,8 +554,8 @@ BugGrabberDB = {
 		}, -- [69]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["time"] = "2020/07/27 20:37:46",
 			["session"] = 1423,
+			["time"] = "2020/07/27 20:37:46",
 			["counter"] = 4,
 		}, -- [70]
 		{
@@ -813,8 +813,8 @@ BugGrabberDB = {
 		}, -- [102]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["time"] = "2020/08/02 10:06:15",
 			["session"] = 1605,
+			["time"] = "2020/08/02 10:06:15",
 			["counter"] = 3,
 		}, -- [103]
 		{
@@ -954,8 +954,8 @@ BugGrabberDB = {
 		}, -- [120]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
-			["session"] = 1654,
 			["time"] = "2020/08/02 20:13:03",
+			["session"] = 1654,
 			["counter"] = 3,
 		}, -- [121]
 		{
@@ -1436,8 +1436,8 @@ BugGrabberDB = {
 		}, -- [181]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Experience.lua",
-			["session"] = 1943,
 			["time"] = "2020/08/19 21:35:15",
+			["session"] = 1943,
 			["counter"] = 6,
 		}, -- [182]
 		{
@@ -2023,19 +2023,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [255]
 		{
-			["message"] = "(null)",
-			["time"] = "2020/07/24 16:00:06",
-			["session"] = 2419,
-			["counter"] = 94,
-		}, -- [256]
-		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:132: attempt to concatenate field 'isWatched' (a nil value)",
 			["time"] = "2020/09/06 17:25:30",
 			["locals"] = "(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n Other = <table> {\n }\n Undercity = <table> {\n }\n Frostwolf Clan = <table> {\n }\n Majordomo Executus = <table> {\n }\n Everlook = <table> {\n }\n Horde Forces = <table> {\n }\n Ratchet = <table> {\n }\n Darkmoon Faire = <table> {\n }\n Gadgetzan = <table> {\n }\n Inactive = <table> {\n }\n Darkspear Trolls = <table> {\n }\n Booty Bay = <table> {\n }\n Horde = <table> {\n }\n Steamwheedle Cartel = <table> {\n }\n Thunder Bluff = <table> {\n }\n Orgrimmar = <table> {\n }\n}\n(for control) = \"Other\"\nkey = \"Other\"\nvalue = <table> {\n factionIndex = 13\n FactionInfo = <table> {\n }\n timer = false\n barCreated = false\n hidden = true\n frameStatusBar = \"XVRB_13\"\n}\n(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = \"Faction: \"\n(*temporary) = \"Other\"\n(*temporary) = \" - \"\n(*temporary) = true\n(*temporary) = \"-\"\n(*temporary) = nil\n(*temporary) = \"attempt to concatenate field 'isWatched' (a nil value)\"\nbars = <table> {\n Other = <table> {\n }\n Undercity = <table> {\n }\n Frostwolf Clan = <table> {\n }\n Majordomo Executus = <table> {\n }\n Everlook = <table> {\n }\n Horde Forces = <table> {\n }\n Ratchet = <table> {\n }\n Darkmoon Faire = <table> {\n }\n Gadgetzan = <table> {\n }\n Inactive = <table> {\n }\n Darkspear Trolls = <table> {\n }\n Booty Bay = <table> {\n }\n Horde = <table> {\n }\n Steamwheedle Cartel = <table> {\n }\n Thunder Bluff = <table> {\n }\n Orgrimmar = <table> {\n }\n}\nxVermin = <table> {\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:46\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:71\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:61\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:38\n Config = <table> {\n }\n}\n",
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:132: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:130>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:313: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:221>",
 			["session"] = 2424,
 			["counter"] = 5,
-		}, -- [257]
+		}, -- [256]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:132: attempt to concatenate field 'hidden' (a boolean value)",
 			["time"] = "2020/09/06 17:26:27",
@@ -2043,7 +2037,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:132: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:130>\nInterface\\AddOns\\xVermin\\Reputation/Reputation.lua:313: in function <Interface\\AddOns\\xVermin\\Reputation/Reputation.lua:221>",
 			["session"] = 2425,
 			["counter"] = 5,
-		}, -- [258]
+		}, -- [257]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'RaidGroupButton1:Hide()'.",
 			["time"] = "2020/09/06 18:01:44",
@@ -2051,7 +2045,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Hide'\nInterface\\AddOns\\Blizzard_RaidUI\\Blizzard_RaidUI.lua:511: in function `RaidGroupFrame_Update'\nInterface\\FrameXML\\RaidFrame.lua:121: in function `RaidFrame_Update'\nInterface\\FrameXML\\RaidFrame.lua:60: in function `RaidFrame_OnEvent'\nInterface\\AddOns\\Blizzard_RaidUI\\Blizzard_RaidUI.lua:169: in function <Interface\\AddOns\\Blizzard_RaidUI\\Blizzard_RaidUI.lua:168>",
 			["session"] = 2427,
 			["counter"] = 1,
-		}, -- [259]
+		}, -- [258]
 		{
 			["message"] = "[string \"XVRB2_wrap::SetPoint(\"BOTTOM\", PlayerXPFrameStatusBar, \"TOP\", 0...\"]:1: '<name>' expected near ':'",
 			["time"] = "2020/09/07 21:51:42",
@@ -2059,12 +2053,146 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 2444,
 			["counter"] = 1,
-		}, -- [260]
+		}, -- [259]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["session"] = 2448,
 			["time"] = "2020/08/13 21:31:07",
+			["session"] = 2448,
 			["counter"] = 9,
+		}, -- [260]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Config.lua:5: attempt to compare number with string",
+			["time"] = "2020/09/09 09:29:26",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n}\nresolution = \"3840x2160\"\nresolution_width = \"2160\"\n(*temporary) = \"3840x2160\"\n(*temporary) = \"%d+x(%d+)\"\n(*temporary) = \"2160\"\n(*temporary) = \"1280x1024\"\n(*temporary) = \"1344x756\"\n(*temporary) = \"1344x1008\"\n(*temporary) = \"1600x900\"\n(*temporary) = \"1600x1200\"\n(*temporary) = \"1920x1080\"\n(*temporary) = \"2048x1080\"\n(*temporary) = \"2048x1152\"\n(*temporary) = \"2304x1296\"\n(*temporary) = \"attempt to compare number with string\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Config.lua:5: in main chunk",
+			["session"] = 2464,
+			["counter"] = 1,
 		}, -- [261]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Config.lua:113: 'end' expected (to close 'if' at line 6) near '<eof>'",
+			["time"] = "2020/09/09 09:30:30",
+			["locals"] = "",
+			["stack"] = "",
+			["session"] = 2465,
+			["counter"] = 1,
+		}, -- [262]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Config.lua:6: attempt to compare number with string",
+			["time"] = "2020/09/09 09:30:45",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n}\nresolution = \"3840x2160\"\nresolution_width = \"2160\"\n(*temporary) = \"3840x2160\"\n(*temporary) = \"%d+x(%d+)\"\n(*temporary) = \"2160\"\n(*temporary) = \"1280x1024\"\n(*temporary) = \"1344x756\"\n(*temporary) = \"1344x1008\"\n(*temporary) = \"1600x900\"\n(*temporary) = \"1600x1200\"\n(*temporary) = \"1920x1080\"\n(*temporary) = \"2048x1080\"\n(*temporary) = \"2048x1152\"\n(*temporary) = \"2304x1296\"\n(*temporary) = \"attempt to compare number with string\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Config.lua:6: in main chunk",
+			["session"] = 2466,
+			["counter"] = 1,
+		}, -- [263]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Config.lua:7: attempt to compare number with string",
+			["time"] = "2020/09/09 09:33:47",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n}\nscale = nil\nresolution = \"3840x2160\"\nresolution_width = \"2160\"\n(*temporary) = \"3840x2160\"\n(*temporary) = \"%d+x(%d+)\"\n(*temporary) = \"2160\"\n(*temporary) = \"1280x1024\"\n(*temporary) = \"1344x756\"\n(*temporary) = \"1344x1008\"\n(*temporary) = \"1600x900\"\n(*temporary) = \"1600x1200\"\n(*temporary) = \"1920x1080\"\n(*temporary) = \"2048x1080\"\n(*temporary) = \"2048x1152\"\n(*temporary) = \"attempt to compare number with string\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Config.lua:7: in main chunk",
+			["session"] = 2467,
+			["counter"] = 1,
+		}, -- [264]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Config.lua:9: attempt to compare number with string",
+			["time"] = "2020/09/09 09:36:13",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n}\nscale = nil\nscaleX = nil\nresolution = \"3840x2160\"\nresolution_width = \"2160\"\n(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = \"3840x2160\"\n(*temporary) = \"2160\"\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = true\n(*temporary) = true\n(*temporary) = true\n(*temporary) = true\n(*temporary) = \"2160\"\n(*temporary) = true\n(*temporary) = nil\n(*temporary) = \"attempt to compare number with string\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Config.lua:9: in main chunk",
+			["session"] = 2469,
+			["counter"] = 1,
+		}, -- [265]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/CustomContainers.lua:27: attempt to index field 'Config' (a nil value)",
+			["time"] = "2020/09/09 09:29:26",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:71\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:46\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:38\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:61\n}\n_ = \"Priest\"\nclass = \"PRIEST\"\ncolor = <table> {\n colorStr = \"ffffffff\"\n GetRGB = <function> defined @Interface\\SharedXML\\Util.lua:633\n OnLoad = <function> defined @Interface\\SharedXML\\Util.lua:622\n b = 1\n GenerateHexColorMarkup = <function> defined @Interface\\SharedXML\\Util.lua:664\n WrapTextInColorCode = <function> defined @Interface\\SharedXML\\Util.lua:668\n GenerateHexColor = <function> defined @Interface\\SharedXML\\Util.lua:660\n GetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:641\n IsEqualTo = <function> defined @Interface\\SharedXML\\Util.lua:626\n g = 1\n r = 1\n SetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:649\n GetRGBAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:637\n SetRGB = <function> defined @Interface\\SharedXML\\Util.lua:656\n GetRGBAAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:645\n}\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = CustomContainer_Combat {\n 0 = <userdata>\n}\n(*temporary) = <table> {\n}\n(*temporary) = nil\n(*temporary) = \"LEFT\"\n(*temporary) = 0\n(*temporary) = 0\n(*temporary) = <userdata>\n(*temporary) = \"attempt to index field 'Config' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Frames/CustomContainers.lua:27: in main chunk",
+			["session"] = 2469,
+			["counter"] = 5,
+		}, -- [266]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Experience/MobsToKill.lua:20: attempt to index field 'Config' (a nil value)",
+			["time"] = "2020/09/09 09:29:26",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:71\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:46\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:38\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:61\n}\n_ = \"Priest\"\nclass = \"PRIEST\"\n_ = 5\nr = nil\ng = nil\nb = nil\nNewXP = nil\nhmmm = nil\ngained = nil\nXPToLVL = nil\nnum = nil\nsegment = nil\nrelperc = nil\nr1 = nil\nr2 = nil\ng1 = nil\ng2 = nil\nb1 = nil\nb2 = nil\nPlayerXP = nil\nPetExpFrame = nil\nPlayerExpFrame = nil\npercent = nil\nrested = nil\noutput = nil\npcxp = nil\npmxp = nil\nppercent = nil\nMobsToKill = CustomContainer_CombatMobsToKill {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\ncolor = <table> {\n colorStr = \"ffffffff\"\n GetRGB = <function> defined @Interface\\SharedXML\\Util.lua:633\n OnLoad = <function> defined @Interface\\SharedXML\\Util.lua:622\n b = 1\n GenerateHexColorMarkup = <function> defined @Interface\\SharedXML\\Util.lua:664\n WrapTextInColorCode = <function> defined @Interface\\SharedXML\\Util.lua:668\n GenerateHexColor = <function> defined @Interface\\SharedXML\\Util.lua:660\n GetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:641\n IsEqualTo = <function> defined @Interface\\SharedXML\\Util.lua:626\n g = 1\n r = 1\n SetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:649\n GetRGBAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:637\n SetRGB = <function> defined @Interface\\SharedXML\\Util.lua:656\n GetRGBAAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:645\n}\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = \"ARTWORK\"\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = <userdata>\n(*temporary) = <userdata>\n(*temporary) = \"attempt to index field 'Config' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Experience/MobsToKill.lua:20: in main chunk",
+			["session"] = 2469,
+			["counter"] = 5,
+		}, -- [267]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Chat-Chat.lua:271: attempt to index field 'Config' (a nil value)",
+			["time"] = "2020/09/09 09:29:26",
+			["locals"] = "self = \"ChatFrame1\"\nchat = ChatFrame1 {\n GatherSelectedText = <function> defined =[C]:-1\n RefreshIfNecessary = <function> defined =[C]:-1\n OnPostShow = <function> defined =[C]:-1\n CalculateLineAlphaValueFromTimestamp = <function> defined =[C]:-1\n ScrollUp = <function> defined =[C]:-1\n tellTimer = 195454.246000\n fadeDurationSecs = 3\n GetFading = <function> defined =[C]:-1\n IsTextCopyable = <function> defined =[C]:-1\n shouldFadeAfterInactivity = true\n SetIndentedWordWrap = <function> defined =[C]:-1\n GetJustifyV = <function> defined =[C]:-1\n ScrollToBottom = <function> defined =[C]:-1\n GetMaxLines = <function> defined =[C]:-1\n GetIndentedWordWrap = <function> defined =[C]:-1\n buttonSide = \"left\"\n GetFont = <function> defined =[C]:-1\n SetMaxLines = <function> defined =[C]:-1\n CalculateSelectingCharacterIndicesForVisibleLine = <function> defined =[C]:-1\n OnPostUpdate = <function> defined =[C]:-1\n RefreshDisplay = <function> defined =[C]:-1\n SetFontObject = <function> defined =[C]:-1\n textIsCopyable = false\n SetOnScrollChangedCallback = <function> defined =[C]:-1\n CalculateNumVisibleLines = <function> defined =[C]:-1\n overrideFadeTimestamp = 0\n MarkDisplayDirty = <function> defined =[C]:-1\n GetMessageInfo = <function> defined =[C]:-1\n GetOnScrollChangedCallback = <function> defined =[C]:-1\n AtTop = <function> defined =[C]:-1\n GetFontObject = <function> defined =[C]:-1\n fontStringPool = <table> {\n }\n CanEffectivelyFade = <function> defined =[C]:-1\n OnPreSizeChanged = <function> defined =[C]:-1\n GetScrollOffset = <function> defined =[C]:-1\n GetSpacing = <function> defined =[C]:-1\n OnPreLoad = <function> defined =[C]:-1\n SetSpacing = <function> defined =[C]:-1\n name = \"General\"\n CalculateLineSpacing = <function> defined =[C]:-1\n AddMessage = <function> defined @Interface\\AddOns\\xVermin\\Chat.lua:31\n InitializeFontableFrame = <function> defined =[C]:-1\n GetShadowColor = <function> defined =[C]:-1\n isUninteractable = false\n SetOnTextCopiedCallback = <function> defined =[C]:-1\n RemoveMessagesByPredicate = <function> defined =[C]:-1\n TransformMessages = <function> defined =[C]:-1\n SetShadowColor = <function> defined =[C]:-1\n buttonFrame = ChatFrame1ButtonFrame {\n }\n HasFontObject = <function> defined =[C]:-1\n isDocked = 1\n GetOnTextCopiedCallback = <function> defined =[C]:-1\n SetFading = <function> defined =[C]:-1\n OnPostHide = <function> defined =[C]:-1\n alternativeDefaultLanguage = \"Orcish\"\n isInitialized = 1\n GetNumVisibleLines = <function> defined =[C]:-1\n GetInsertMode = <function> defined =[C]:-1\n SetTimeVisible = <function> defined =[C]:-1\n hasOwnFontObject = true\n Clear = <function> defined =[C]:-1\n oldAlpha = 0\n channelList = <table> {\n }\n GetTimeVisible = <function> defined =[C]:-1\n MarkLayoutDirty = <function> defined =[C]:-1\n SetTextCopyable = <function> defined =[C]:-1\n BackFillMessage = <function> defined =[C]:-1\n UnpackageEntry = <function> defined =[C]:-1\n FontStringContainer = <unnamed> {\n }\n SetShadowOffset = <function> defined =[C]:-1\n messageTypeList = <table> {\n }\n flashTimer = 0\n timeVisibleSecs = 120\n PackageEntry = <function> defined =[C]:-1\n MakeFontObjectCustom = <function> defined =[C]:-1\n fontObject = table: 0x115dcd4d0 {\n }\n SetInsertMode = <function> defined =[C]:-1\n UpdateSelectingText = <function> defined =[C]:-1\n zoneChannelList = <table> {\n }\n SetScrollOffset = <function> defined =[C]:-1\n onDisplayRefreshedCallback = <function> defined =[C]:-1\n insertMode = 2\n ResetSelectingText = <function> defined =[C]:-1\n GetTextColor = <function> defined =[C]:-1\n CallOnDisplayRefreshed = <function> defined =[C]:-1\n 0 = <userdata>\n IsSelectingText = <function> defined =[C]:-1\n OnFontObjectUpdated = <function> defined =[C]:-1\n FindCharacterAndLineIndexAtCoordinate = <function> defined =[C]:-1\n ResizeButton = ChatFrame1ResizeButton {\n }\n SetFont = <function> defined =[C]:-1\n OnPostMouseDown = <function> defined =[C]:-1\n defaultLanguage = \"Orcish\"\n ScrollToTop = <function> defined =[C]:-1\n Background = ChatFrame1Background {\n }\n isDisplayDirty = true\n AdjustMessageColors = <function> defined =[C]:-1\n GetNumMessages ",
+			["stack"] = "Interface\\AddOns\\xVermin\\Chat-Chat.lua:271: in function `SkinTab'\nInterface\\AddOns\\xVermin\\Chat-Chat.lua:354: in main chunk",
+			["session"] = 2469,
+			["counter"] = 5,
+		}, -- [268]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\GarbageCollector.lua:8: attempt to index field 'Config' (a nil value)",
+			["time"] = "2020/09/09 09:29:26",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:71\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:46\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:38\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:61\n}\ncgt = CustomContainer_CombatGarbageText {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = \"ARTWORK\"\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = <userdata>\n(*temporary) = \"attempt to index field 'Config' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\GarbageCollector.lua:8: in main chunk",
+			["session"] = 2469,
+			["counter"] = 5,
+		}, -- [269]
+		{
+			["message"] = "...face\\AddOns\\xVermin\\PlayerTargetHealthPercentage.lua:9: attempt to index field 'Config' (a nil value)",
+			["time"] = "2020/09/09 09:29:26",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:71\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:46\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:38\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:61\n}\nTargetHealthFrame = TargetHealthFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = \"ARTWORK\"\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = <userdata>\n(*temporary) = <userdata>\n(*temporary) = \"attempt to index field 'Config' (a nil value)\"\n",
+			["stack"] = "...face\\AddOns\\xVermin\\PlayerTargetHealthPercentage.lua:9: in main chunk",
+			["session"] = 2469,
+			["counter"] = 5,
+		}, -- [270]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Unit.lua:21: attempt to index field 'Config' (a nil value)",
+			["time"] = "2020/09/09 09:29:26",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:71\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:46\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:38\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:61\n}\n_ = \"Priest\"\nclass = \"PRIEST\"\ncolor = <table> {\n colorStr = \"ffffffff\"\n GetRGB = <function> defined @Interface\\SharedXML\\Util.lua:633\n OnLoad = <function> defined @Interface\\SharedXML\\Util.lua:622\n b = 1\n GenerateHexColorMarkup = <function> defined @Interface\\SharedXML\\Util.lua:664\n WrapTextInColorCode = <function> defined @Interface\\SharedXML\\Util.lua:668\n GenerateHexColor = <function> defined @Interface\\SharedXML\\Util.lua:660\n GetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:641\n IsEqualTo = <function> defined @Interface\\SharedXML\\Util.lua:626\n g = 1\n r = 1\n SetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:649\n GetRGBAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:637\n SetRGB = <function> defined @Interface\\SharedXML\\Util.lua:656\n GetRGBAAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:645\n}\ncus = CustomContainer_CombatUnitState {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = \"ARTWORK\"\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = <userdata>\n(*temporary) = <userdata>\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'Config' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Unit.lua:21: in main chunk",
+			["session"] = 2469,
+			["counter"] = 5,
+		}, -- [271]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\UIScale.lua:21: attempt to index field 'Config' (a nil value)",
+			["time"] = "2020/09/09 09:29:26",
+			["locals"] = "self = <unnamed> {\n 0 = <userdata>\n}\nevent = \"UI_SCALE_CHANGED\"\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = UIParent {\n 0 = <userdata>\n firstTimeLoaded = 1\n}\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'Config' (a nil value)\"\nxVermin = <table> {\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:46\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:61\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:38\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:71\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\UIScale.lua:21: in function <Interface\\AddOns\\xVermin\\UIScale.lua:8>",
+			["session"] = 2469,
+			["counter"] = 5,
+		}, -- [272]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Chat-Chat.lua:53: attempt to index field 'Config' (a nil value)",
+			["time"] = "2020/09/09 09:29:28",
+			["locals"] = "(*temporary) = 1365.333361\n(*temporary) = nil\n(*temporary) = UIParent {\n 0 = <userdata>\n firstTimeLoaded = 1\n variablesLoaded = true\n}\n(*temporary) = 0.650000\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'Config' (a nil value)\"\nxVermin = <table> {\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:46\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:61\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:38\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:71\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Chat-Chat.lua:53: in function <Interface\\AddOns\\xVermin\\Chat.lua:52>\nInterface\\AddOns\\xVermin\\Chat-Chat.lua:210: in function <Interface\\AddOns\\xVermin\\Chat.lua:209>",
+			["session"] = 2469,
+			["counter"] = 5,
+		}, -- [273]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\DamageFont.lua:5: attempt to index field 'Config' (a nil value)",
+			["time"] = "2020/09/09 09:29:26",
+			["locals"] = "self = DamageFont {\n 0 = <userdata>\n ApplySystemFonts = <function> defined @Interface\\AddOns\\xVermin\\DamageFont.lua:4\n}\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'Config' (a nil value)\"\nxVermin = <table> {\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:71\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:46\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:38\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:61\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\DamageFont.lua:5: in function `ApplySystemFonts'\nInterface\\AddOns\\xVermin\\DamageFont.lua:16: in main chunk",
+			["session"] = 2469,
+			["counter"] = 18,
+		}, -- [274]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:38: attempt to index field 'Config' (a nil value)",
+			["time"] = "2020/09/09 09:30:23",
+			["locals"] = "(for index) = 1\n(for limit) = 32\n(for step) = 1\ni = 1\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = TargetFrameBuff1Count {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = \"Count\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'Config' (a nil value)\"\nhasPet = false\nisHunterPet = false\npetName = nil\ntargetName = nil\nB_spellId = 132242\n_ = nil\nB_unitCaster = \"target\"\nD_spellId = nil\nD_unitCaster = nil\nframe = TargetFrameBuff1 {\n 0 = <userdata>\n unit = \"target\"\n}\nframeBorder = nil\nframeCount = TargetFrameBuff1Count {\n 0 = <userdata>\n}\nxVermin = <table> {\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:46\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:61\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:38\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:71\n}\ncolor = nil\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:38: in function <Interface\\AddOns\\xVermin\\SkinBuffs.lua:13>\n[C]: ?\n[C]: in function `TargetFrame_UpdateAuras'\n[string \"*:OnShow\"]:1: in function <[string \"*:OnShow\"]:1>\n[C]: in function `Show'\nInterface\\FrameXML\\TargetFrame.lua:910: in function <Interface\\FrameXML\\TargetFrame.lua:905>\n[C]: ?\n[C]: in function `TargetofTarget_Update'\nInterface\\FrameXML\\TargetFrame.lua:109: in function `TargetFrame_Update'\nInterface\\FrameXML\\TargetFrame.lua:150: in function <Interface\\FrameXML\\TargetFrame.lua:142>\n[C]: in function `CameraOrSelectOrMoveStop'\n[string \"CAMERAORSELECTORMOVE\"]:4: in function <[string \"CAMERAORSELECTORMOVE\"]:1>",
+			["session"] = 2469,
+			["counter"] = 83,
+		}, -- [275]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\xVermin-54000.lua:208: attempt to compare number with string",
+			["time"] = "2020/09/09 09:37:22",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:46\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:71\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:61\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:38\n Config = <table> {\n }\n}\nf = <unnamed> {\n 0 = <userdata>\n}\nTargetFrameTextAdjustment = <function> defined @Interface\\AddOns\\xVermin\\xVermin.lua:196\nresolution = \"3840x2160\"\nresolution_width = \"2160\"\n(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = \"3840x2160\"\n(*temporary) = \"2160\"\n(*temporary) = \"attempt to compare number with string\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\xVermin-54000.lua:208: in main chunk",
+			["session"] = 2470,
+			["counter"] = 1,
+		}, -- [276]
+		{
+			["message"] = "(null)",
+			["session"] = 2470,
+			["time"] = "2020/07/24 16:00:06",
+			["counter"] = 97,
+		}, -- [277]
 	},
 }
