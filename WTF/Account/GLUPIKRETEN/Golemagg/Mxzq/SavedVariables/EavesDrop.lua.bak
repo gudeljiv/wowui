@@ -362,8 +362,8 @@ EavesDropStatsDB = {
 							["amount"] = 698,
 						},
 						[2] = {
-							["time"] = "|cffffffff08/02/20 11:18:32|r\n|Hunit:Creature-0-4445-1-165-5859-0000262730:Hagg Taurenbane|hHagg Taurenbane's|h melee swing hits |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h for |cffff1313183|r |cffff1313Physical|r.(Critical)",
-							["amount"] = 183,
+							["time"] = "|cffffffff09/09/20 08:53:29|r\n|Hunit:Player-4465-01D5EFAB:Justfreezeme|hJustfreezeme's|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Hemorrhage|r|h hits |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h for |cffff1313220|r |cffff1313Physical|r.(Critical)",
+							["amount"] = 220,
 						},
 					},
 					["Nature"] = {

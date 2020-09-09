@@ -1,17 +1,14 @@
 
 PerfectRaidDB = {
+	["profileKeys"] = {
+		["Konac - Golemagg"] = "Konac - Golemagg",
+		["Kamenac - Golemagg"] = "Kamenac - Golemagg",
+	},
 	["global"] = {
 		["sv_version"] = 1,
 	},
-	["profileKeys"] = {
-		["Konac - Golemagg"] = "Konac - Golemagg",
-	},
 	["profiles"] = {
 		["Konac - Golemagg"] = {
-			["positions"] = {
-				["PRHeader1"] = {
-				},
-			},
 			["buffs"] = {
 				{
 					["buffname"] = "Power Word: Fortitude",
@@ -19,111 +16,194 @@ PerfectRaidDB = {
 					["conds"] = "All",
 					["groupname3"] = "Qiraji Fortitude",
 					["disptext"] = "F",
-					["groupname2"] = "Commanding Shout",
 					["groupname"] = "Imp: Blood Pact",
+					["groupname2"] = "Commanding Shout",
 					["color"] = "FFFFFF",
 				}, -- [1]
 				{
 					["buffname"] = "Power Word: Shield",
-					["color"] = "FFD800",
-					["conds"] = "All",
 					["disptext"] = "PwS",
+					["conds"] = "All",
+					["color"] = "FFD800",
 				}, -- [2]
 				{
 					["buffname"] = "Weakened Soul",
-					["color"] = "FF5500",
-					["conds"] = "All",
 					["disptext"] = "Ws",
+					["conds"] = "All",
+					["color"] = "FF5500",
 				}, -- [3]
 				{
 					["buffname"] = "Renew",
 					["conds"] = "All",
 					["disptext"] = "Rn",
-					["showexpiry"] = true,
 					["color"] = "00FF10",
+					["showexpiry"] = true,
 				}, -- [4]
 				{
 					["buffname"] = "Shadow Protection",
 					["conds"] = "All",
 					["disptext"] = "Sh",
-					["color"] = "9900FF",
-					["missing"] = true,
 					["groupname"] = "Prayer of Shadow Protection",
+					["missing"] = true,
+					["color"] = "9900FF",
 				}, -- [5]
 				{
 					["buffname"] = "Divine Spirit",
 					["conds"] = "All",
 					["disptext"] = "Spi",
-					["color"] = "9900FF",
-					["missing"] = true,
 					["groupname"] = "Prayer of Spirit",
+					["missing"] = true,
+					["color"] = "9900FF",
 				}, -- [6]
 				{
 					["buffname"] = "Power Infusion",
-					["color"] = "00FF33",
-					["conds"] = "All",
 					["disptext"] = "PwI",
+					["conds"] = "All",
+					["color"] = "00FF33",
 				}, -- [7]
 				{
 					["buffname"] = "Fear Ward",
-					["color"] = "9900FF",
-					["conds"] = "All",
 					["disptext"] = "FW",
+					["conds"] = "All",
+					["color"] = "9900FF",
 				}, -- [8]
 				{
 					["buffname"] = "Prayer of Mending",
-					["color"] = "FFCF7F",
-					["conds"] = "All",
 					["disptext"] = "PoM",
+					["conds"] = "All",
+					["color"] = "FFCF7F",
 				}, -- [9]
 				{
 					["buffname"] = "Innervate",
-					["color"] = "00FF33",
-					["conds"] = "Mana",
 					["disptext"] = "Inn",
+					["conds"] = "Mana",
+					["color"] = "00FF33",
 				}, -- [10]
 				{
 					["buffname"] = "Wild Growth",
-					["color"] = "01796F",
-					["conds"] = "All",
 					["disptext"] = "Wg",
+					["conds"] = "All",
+					["color"] = "01796F",
 				}, -- [11]
 				{
 					["buffname"] = "Soulstone Resurrection",
-					["color"] = "CA21FF",
-					["conds"] = "All",
 					["disptext"] = "Ss",
+					["conds"] = "All",
+					["color"] = "CA21FF",
 				}, -- [12]
 				{
 					["buffname"] = "Mortal Strike",
-					["color"] = "FF1111",
-					["conds"] = "All",
 					["disptext"] = "Ms",
+					["conds"] = "All",
+					["color"] = "FF1111",
 				}, -- [13]
 				{
 					["buffname"] = "Disease",
-					["color"] = "996600",
-					["conds"] = "All",
 					["disptext"] = "Di",
+					["conds"] = "All",
+					["color"] = "996600",
 				}, -- [14]
 				{
 					["buffname"] = "Magic",
-					["color"] = "3399FF",
-					["conds"] = "All",
 					["disptext"] = "Ma",
+					["conds"] = "All",
+					["color"] = "3399FF",
 				}, -- [15]
 				{
 					["buffname"] = "Food",
-					["color"] = "d79a6d",
-					["conds"] = "All",
 					["disptext"] = "Foo",
+					["conds"] = "All",
+					["color"] = "d79a6d",
 				}, -- [16]
 				{
 					["buffname"] = "Drink",
+					["disptext"] = "Dr",
+					["conds"] = "All",
 					["color"] = "00a1de",
+				}, -- [17]
+			},
+			["positions"] = {
+				["PRHeader1"] = {
+				},
+			},
+			["headers"] = {
+				{
+					["numColumns"] = 2,
+					["scale"] = 1,
+					["colSpacing"] = 0,
+					["sortType"] = "NAME",
+					["deficit"] = 1,
+					["colAnchor"] = "LEFT",
+					["filter"] = "WARRIOR,DEATHKNIGHT,PRIEST,DRUID,SHAMAN,PALADIN,MONK,MAGE,ROGUE,WARLOCK,HUNTER,DEMONHUNTER",
+					["groupBy"] = "CLASS",
+					["maxUnits"] = 25,
+				}, -- [1]
+			},
+		},
+		["Kamenac - Golemagg"] = {
+			["positions"] = {
+				["PRHeader1"] = {
+				},
+			},
+			["buffs"] = {
+				{
+					["buffname"] = "Power Infusion",
+					["conds"] = "All",
+					["disptext"] = "PwI",
+					["color"] = "00FF33",
+				}, -- [1]
+				{
+					["buffname"] = "Fear Ward",
+					["conds"] = "All",
+					["disptext"] = "FW",
+					["color"] = "9900FF",
+				}, -- [2]
+				{
+					["buffname"] = "Innervate",
+					["conds"] = "Mana",
+					["disptext"] = "Inn",
+					["color"] = "00FF33",
+				}, -- [3]
+				{
+					["buffname"] = "Wild Growth",
+					["conds"] = "All",
+					["disptext"] = "Wg",
+					["color"] = "01796F",
+				}, -- [4]
+				{
+					["buffname"] = "Soulstone Resurrection",
+					["conds"] = "All",
+					["disptext"] = "Ss",
+					["color"] = "CA21FF",
+				}, -- [5]
+				{
+					["buffname"] = "Commanding Shout",
+					["missing"] = true,
+					["conds"] = "All",
+					["groupname3"] = "Qiraji Fortitude",
+					["disptext"] = "CS",
+					["groupname"] = "Imp: Blood Pact",
+					["groupname2"] = "Power Word: Fortitude",
+					["color"] = "FFBF00",
+				}, -- [6]
+				{
+					["buffname"] = "Mortal Strike",
+					["conds"] = "All",
+					["disptext"] = "Ms",
+					["color"] = "FF1111",
+				}, -- [7]
+				{
+					["buffname"] = "Food",
+					["conds"] = "All",
+					["disptext"] = "Foo",
+					["color"] = "d79a6d",
+				}, -- [8]
+				{
+					["buffname"] = "Drink",
 					["conds"] = "All",
 					["disptext"] = "Dr",
-				}, -- [17]
+					["color"] = "00a1de",
+				}, -- [9]
 			},
 			["headers"] = {
 				{

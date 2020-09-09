@@ -2,6 +2,7 @@
 RangeDisplayDB3 = {
 	["profileKeys"] = {
 		["Konac - Golemagg"] = "Default",
+		["Kamenac - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

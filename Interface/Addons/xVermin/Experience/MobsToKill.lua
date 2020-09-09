@@ -64,11 +64,11 @@ local function UpdateExperience()
 			MobsToKill.text:SetText(hmmm)
 			MobsToKill.text:SetTextColor(color.r, color.g, color.b, 1)
 
-			if myTimer then
-				myTimer:Cancel()
+			if MobToKillTimer then
+				MobToKillTimer:Cancel()
 			end
 
-			myTimer =
+			MobToKillTimer =
 				C_Timer.NewTimer(
 				120,
 				function()

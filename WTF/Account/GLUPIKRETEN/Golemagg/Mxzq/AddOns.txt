@@ -103,3 +103,5 @@ Skillet-Classic: disabled
 TradeSkillMaster_AppHelper: enabled
 RangeDisplay: enabled
 aux-addon: disabled
+GatherMate2: enabled
+GatherMate2_Data: enabled

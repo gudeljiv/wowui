@@ -154,8 +154,8 @@ cargBags_Nivaya: disabled
 TradeSkillMaster_Accounting: disabled
 autoloot: enabled
 Reforgenator: disabled
-GatherMate2: disabled
-GatherMate2_Data: disabled
+GatherMate2: enabled
+GatherMate2_Data: enabled
 GnomishInboxShrinker: disabled
 ChocolateBar_Options: disabled
 SkadaFriendlyFire: enabled
