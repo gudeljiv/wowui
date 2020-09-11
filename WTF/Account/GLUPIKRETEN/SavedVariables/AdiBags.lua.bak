@@ -50,39 +50,39 @@ AdiBagsDB = {
 						[10939] = "Trade Goods#Enchanting",
 						[10940] = "Trade Goods#Enchanting",
 						[2450] = "Trade Goods#Herbs",
-						[10620] = "Trade Goods#Mining",
-						[3859] = "Trade Goods#Mining",
-						[13465] = "Trade Goods#Herbs",
-						[2452] = "Trade Goods#Herbs",
-						[1710] = "Consumable#Potions",
-						[11084] = "Trade Goods#Enchanting",
+						[16204] = "Trade Goods#Enchanting",
+						[2776] = "Trade Goods#Mining",
+						[2842] = "Trade Goods#Mining",
 						[5634] = "Consumable#Potions",
+						[1710] = "Consumable#Potions",
 						[9179] = "Consumable#Potions",
+						[2452] = "Trade Goods#Herbs",
+						[3470] = "Trade Goods#Mining",
 						[2770] = "Trade Goods#Mining",
 						[3818] = "Trade Goods#Herbs",
 						[2453] = "Trade Goods#Herbs",
-						[4306] = "Trade Goods#Cloth",
+						[3820] = "Trade Goods#Herbs",
 						[11083] = "Trade Goods#Enchanting",
-						[20008] = "Consumable#Potions",
+						[11084] = "Trade Goods#Enchanting",
 						[2835] = "Trade Goods#Mining",
 						[1251] = "Trade Goods#Bandages",
 						[2772] = "Trade Goods#Mining",
-						[3820] = "Trade Goods#Herbs",
+						[4306] = "Trade Goods#Cloth",
 						[2836] = "Trade Goods#Mining",
-						[2771] = "Trade Goods#Mining",
-						[8839] = "Trade Goods#Herbs",
-						[3857] = "Trade Goods#Mining",
-						[2581] = "Trade Goods#Bandages",
-						[11137] = "Trade Goods#Enchanting",
-						[8846] = "Trade Goods#Herbs",
 						[10978] = "Trade Goods#Enchanting",
+						[8846] = "Trade Goods#Herbs",
+						[11137] = "Trade Goods#Enchanting",
+						[2581] = "Trade Goods#Bandages",
+						[3857] = "Trade Goods#Mining",
+						[8839] = "Trade Goods#Herbs",
+						[2771] = "Trade Goods#Mining",
 						[2838] = "Trade Goods#Mining",
-						[3470] = "Trade Goods#Mining",
+						[20008] = "Consumable#Potions",
 						[2775] = "Trade Goods#Mining",
 						[118] = "Consumable#Potions",
-						[2842] = "Trade Goods#Mining",
-						[2776] = "Trade Goods#Mining",
-						[16204] = "Trade Goods#Enchanting",
+						[13465] = "Trade Goods#Herbs",
+						[3859] = "Trade Goods#Mining",
+						[10620] = "Trade Goods#Mining",
 					},
 				},
 			},
@@ -112,7 +112,7 @@ AdiBagsDB = {
 		},
 		["Equipment"] = {
 		},
-		["MoneyFrame"] = {
+		["AdiBags_TooltipInfo"] = {
 		},
 		["DataSource"] = {
 			["profiles"] = {
@@ -123,16 +123,16 @@ AdiBagsDB = {
 		},
 		["Junk"] = {
 		},
-		["AdiBags_TooltipInfo"] = {
+		["MoneyFrame"] = {
 		},
 	},
 	["char"] = {
 		["Vermin - Golemagg"] = {
 			["collapsedSections"] = {
-				["Bag #1#Bag #1"] = true,
+				["Bag #3#Bag #3"] = true,
 				["Bag #2#Bag #2"] = true,
 				["Bag #4#Bag #4"] = true,
-				["Bag #3#Bag #3"] = true,
+				["Bag #1#Bag #1"] = true,
 			},
 		},
 	},
@@ -146,18 +146,21 @@ AdiBagsDB = {
 		["Mxys - Golemagg"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Default",
 		["Antun - Golemagg"] = "Default",
-		["Vermins - Stonespine"] = "Default",
-		["Vermin - Golemagg"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
-		["Dmitar - Golemagg"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
+		["Dmitar - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
+		["Vermins - Stonespine"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["virtualStacks"] = {
 				["incomplete"] = true,
 			},
-			["scale"] = 1,
+			["columnWidth"] = {
+				["Bank"] = 8,
+				["Backpack"] = 6,
+			},
 			["maxHeight"] = 0.3,
 			["skin"] = {
 				["BankColor"] = {
@@ -174,13 +177,13 @@ AdiBagsDB = {
 					["xOffset"] = -177.833374023438,
 					["yOffset"] = 386.666717529297,
 				},
-				["Bank"] = {
-					["xOffset"] = 441.011413574219,
-					["yOffset"] = -302.6298828125,
-				},
 				["Backpack"] = {
 					["xOffset"] = -333.424560546875,
 					["yOffset"] = 593.829650878906,
+				},
+				["Bank"] = {
+					["xOffset"] = 441.011413574219,
+					["yOffset"] = -302.6298828125,
 				},
 			},
 			["filters"] = {
@@ -193,10 +196,7 @@ AdiBagsDB = {
 				["size"] = 8,
 			},
 			["positionMode"] = "manual",
-			["columnWidth"] = {
-				["Backpack"] = 6,
-				["Bank"] = 8,
-			},
+			["scale"] = 1,
 		},
 	},
 }
