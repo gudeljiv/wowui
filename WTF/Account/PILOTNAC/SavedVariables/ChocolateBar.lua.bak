@@ -42,11 +42,6 @@ ChocolateBarDB = {
 	["addonVersion"] = "@project-version@",
 	["profiles"] = {
 		["Default"] = {
-			["locked"] = false,
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["moveFrames"] = false,
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -67,7 +62,21 @@ ChocolateBarDB = {
 					["width"] = 147,
 				},
 			},
-			["fixedStrata"] = true,
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
+			["forceColor"] = false,
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["b"] = 0,
+					["g"] = 0,
+					["r"] = 0,
+				},
+				["textureName"] = "None",
+			},
+			["moveFrames"] = false,
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -325,27 +334,18 @@ ChocolateBarDB = {
 					["customLabel"] = "R",
 				},
 			},
-			["fontName"] = "Friz Quadrata TT",
 			["desaturated"] = false,
-			["forceColor"] = false,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["fixedStrata"] = true,
 			["gap"] = 0,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["b"] = 0,
-					["g"] = 0,
-					["r"] = 0,
-				},
-				["textureName"] = "None",
-			},
+			["fontName"] = "Friz Quadrata TT",
+			["locked"] = false,
 			["textColor"] = {
 				["a"] = 1,
 				["r"] = 1,
@@ -383,11 +383,11 @@ CB_PlayedTime = {
 	["Judawise-"] = {
 		["total"] = 437,
 	},
-	["Kamenac-"] = {
-		["total"] = 1557534,
-	},
 	["Konac-"] = {
-		["total"] = 5812522,
+		["total"] = 5812662,
+	},
+	["Dotwise-"] = {
+		["total"] = 3924,
 	},
 	["Mxym-"] = {
 		["total"] = 4765,
@@ -395,26 +395,26 @@ CB_PlayedTime = {
 	["Klhjakhsgdjh-"] = {
 		["total"] = 53,
 	},
-	["Dotwise-"] = {
-		["total"] = 3924,
-	},
 	["Mohikanac-"] = {
 		["total"] = 161584,
 	},
 	["Dmitar-"] = {
 		["total"] = 55,
 	},
+	["Whatevs-"] = {
+		["total"] = 213,
+	},
 	["Mxyzptlk-"] = {
 		["total"] = 8367,
 	},
-	["Whatevs-"] = {
-		["total"] = 213,
+	["Paydo-"] = {
+		["total"] = 18945,
 	},
 	["Verminz-"] = {
 		["total"] = 311368,
 	},
-	["Paydo-"] = {
-		["total"] = 18945,
+	["Kamenac-"] = {
+		["total"] = 1557649,
 	},
 	["Mxzq-"] = {
 		["total"] = 248345,

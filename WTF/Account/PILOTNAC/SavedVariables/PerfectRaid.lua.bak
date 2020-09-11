@@ -9,16 +9,20 @@ PerfectRaidDB = {
 	},
 	["profiles"] = {
 		["Konac - Golemagg"] = {
+			["positions"] = {
+				["PRHeader1"] = {
+				},
+			},
 			["buffs"] = {
 				{
 					["buffname"] = "Power Word: Fortitude",
-					["missing"] = true,
+					["disptext"] = "F",
 					["conds"] = "All",
 					["groupname3"] = "Qiraji Fortitude",
-					["disptext"] = "F",
+					["color"] = "FFFFFF",
 					["groupname"] = "Imp: Blood Pact",
 					["groupname2"] = "Commanding Shout",
-					["color"] = "FFFFFF",
+					["missing"] = true,
 				}, -- [1]
 				{
 					["buffname"] = "Power Word: Shield",
@@ -122,10 +126,6 @@ PerfectRaidDB = {
 					["color"] = "00a1de",
 				}, -- [17]
 			},
-			["positions"] = {
-				["PRHeader1"] = {
-				},
-			},
 			["headers"] = {
 				{
 					["numColumns"] = 2,
@@ -141,69 +141,69 @@ PerfectRaidDB = {
 			},
 		},
 		["Kamenac - Golemagg"] = {
-			["positions"] = {
-				["PRHeader1"] = {
-				},
-			},
 			["buffs"] = {
 				{
 					["buffname"] = "Power Infusion",
-					["conds"] = "All",
 					["disptext"] = "PwI",
+					["conds"] = "All",
 					["color"] = "00FF33",
 				}, -- [1]
 				{
 					["buffname"] = "Fear Ward",
-					["conds"] = "All",
 					["disptext"] = "FW",
+					["conds"] = "All",
 					["color"] = "9900FF",
 				}, -- [2]
 				{
 					["buffname"] = "Innervate",
-					["conds"] = "Mana",
 					["disptext"] = "Inn",
+					["conds"] = "Mana",
 					["color"] = "00FF33",
 				}, -- [3]
 				{
 					["buffname"] = "Wild Growth",
-					["conds"] = "All",
 					["disptext"] = "Wg",
+					["conds"] = "All",
 					["color"] = "01796F",
 				}, -- [4]
 				{
 					["buffname"] = "Soulstone Resurrection",
-					["conds"] = "All",
 					["disptext"] = "Ss",
+					["conds"] = "All",
 					["color"] = "CA21FF",
 				}, -- [5]
 				{
 					["buffname"] = "Commanding Shout",
-					["missing"] = true,
+					["disptext"] = "CS",
 					["conds"] = "All",
 					["groupname3"] = "Qiraji Fortitude",
-					["disptext"] = "CS",
+					["color"] = "FFBF00",
 					["groupname"] = "Imp: Blood Pact",
 					["groupname2"] = "Power Word: Fortitude",
-					["color"] = "FFBF00",
+					["missing"] = true,
 				}, -- [6]
 				{
 					["buffname"] = "Mortal Strike",
-					["conds"] = "All",
 					["disptext"] = "Ms",
+					["conds"] = "All",
 					["color"] = "FF1111",
 				}, -- [7]
 				{
 					["buffname"] = "Food",
-					["conds"] = "All",
 					["disptext"] = "Foo",
+					["conds"] = "All",
 					["color"] = "d79a6d",
 				}, -- [8]
 				{
 					["buffname"] = "Drink",
-					["conds"] = "All",
 					["disptext"] = "Dr",
+					["conds"] = "All",
 					["color"] = "00a1de",
 				}, -- [9]
+			},
+			["positions"] = {
+				["PRHeader1"] = {
+				},
 			},
 			["headers"] = {
 				{
