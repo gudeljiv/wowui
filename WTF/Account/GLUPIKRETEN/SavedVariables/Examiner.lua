@@ -11,7 +11,7 @@ Examiner_Config = {
 	["clearInspectOnHide"] = true,
 	["activePage"] = 5,
 	["lastActivatedModule"] = 3,
-	["bottom"] = 558.408447265625,
+	["bottom"] = 623.408569335938,
 	["cacheFilter"] = "",
 	["delayedScanFix"] = true,
 	["alwaysShowItemLevel"] = false,
@@ -21,7 +21,7 @@ Examiner_Config = {
 	["tooltipSmartAnchor"] = true,
 	["showBackground"] = true,
 	["prevPage"] = 3,
-	["left"] = 381.878051757813,
+	["left"] = 363.544799804688,
 }
 Examiner_Cache = {
 }
