@@ -43,9 +43,9 @@ W: 384
 H: 512
 Frame: InterfaceOptionsFrame
 FrameLevel: 1
-Anchor: LEFT
-X: 195
-Y: 160
+Anchor: CENTER
+X: 401
+Y: 169
 W: 858
 H: 660
 Frame: AddonList
@@ -76,6 +76,13 @@ X: -219
 Y: 137
 W: 920
 H: 600
+Frame: Five Second Rule Statusbar
+FrameLevel: 1
+Anchor: CENTER
+X: -229
+Y: -42
+W: 170
+H: 12
 Frame: MkQL_Main_Frame
 FrameLevel: 1
 Anchor: CENTER

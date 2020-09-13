@@ -10,7 +10,7 @@ END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:3771
-/castsequence [combat]item:1710,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929
+/castsequence [combat]item:1710,item:1710,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929,item:929
 END
 VER 3 0000000000000001 "FRAME" "132150"
 /run TargetFrameDebuff1Count:ClearAllPoints()
@@ -26,9 +26,12 @@ VER 3 0000000000000002 "MOVE" "Ability_Ambush."
 /run XVRB2_wrap:SetPoint("BOTTOM", PlayerXPFrameStatusBar, "TOP", 0, 30)
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
-#showtooltip item:12037
+#showtooltip item:1081
 /cast feed pet
-/use item:12037
+/use item:1081
+END
+VER 3 000000000000000A "TSMMacro" "INV_Misc_Flower_01"
+/click TSMAuctioningBtn
 END
 VER 3 0000000000000008 "ZygorAction1" "134400"
 END
