@@ -16,12 +16,12 @@ Examiner_Config = {
 	["delayedScanFix"] = true,
 	["alwaysShowItemLevel"] = false,
 	["autoInspect"] = true,
-	["combineAdditiveStats"] = true,
-	["statsViewType"] = 1,
-	["tooltipSmartAnchor"] = true,
-	["showBackground"] = true,
-	["prevPage"] = 3,
 	["left"] = 363.544799804688,
+	["statsViewType"] = 1,
+	["prevPage"] = 3,
+	["showBackground"] = true,
+	["tooltipSmartAnchor"] = true,
+	["combineAdditiveStats"] = true,
 }
 Examiner_Cache = {
 }

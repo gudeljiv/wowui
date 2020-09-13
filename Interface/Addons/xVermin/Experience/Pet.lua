@@ -84,22 +84,15 @@ local function UpdateBarVisibility()
 end
 
 local function UpdateBarValueAndColor(self, event)
-	if UnitLevel("player") < MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] then
-		C_Timer.After(
-			0.5,
-			function()
-				if UnitExists("pet") then
-					CurrentXP, MaxXP = GetPetExperience()
-					percent = floor((CurrentXP / MaxXP) * 100)
-					r, g, b = xVermin:ColorGradient(percent / 100, 1, 0, 0, 1, 1, 0, 0, 1, 0)
-					PetXP.XPbar:SetMinMaxValues(0, MaxXP)
-					PetXP.XPbar:SetValue(CurrentXP)
-					PetXP.XPbar.Value:SetText(xVermin:FormatNumber(CurrentXP, ","))
-					PetXP.XPbar.Percent:SetText(xVermin:Round(percent) .. "%")
-					PetXP.XPbar:SetStatusBarColor(r, g, b)
-				end
-			end
-		)
+	if UnitExists("pet") then
+		CurrentXP, MaxXP = GetPetExperience()
+		percent = floor((CurrentXP / MaxXP) * 100)
+		r, g, b = xVermin:ColorGradient(percent / 100, 1, 0, 0, 1, 1, 0, 0, 1, 0)
+		PetXP.XPbar:SetMinMaxValues(0, MaxXP)
+		PetXP.XPbar:SetValue(CurrentXP)
+		PetXP.XPbar.Value:SetText(xVermin:FormatNumber(CurrentXP, ","))
+		PetXP.XPbar.Percent:SetText(xVermin:Round(percent) .. "%")
+		PetXP.XPbar:SetStatusBarColor(r, g, b)
 	end
 end
 
@@ -111,11 +104,12 @@ local function UpdateBar()
 end
 
 PetXP:RegisterEvent("UNIT_PET")
+PetXP:RegisterEvent("UNIT_PET_EXPERIENCE")
 PetXP:SetScript(
 	"OnEvent",
-	function()
+	function(self, event)
 		C_Timer.After(
-			1,
+			0.5,
 			function()
 				UpdateBar()
 			end
