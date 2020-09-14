@@ -195,7 +195,9 @@ function Operations.Update(moduleName, operationName)
 		local operation = private.operations[moduleName][operationName]
 		while operation.relationships[key] do
 			local newOperation = private.operations[moduleName][operation.relationships[key]]
-			if not newOperation then break end
+			if not newOperation then
+				break
+			end
 			operation = newOperation
 		end
 		private.operations[moduleName][operationName][key] = operation[key]
@@ -261,6 +263,10 @@ function Operations.SanitizeSettings(moduleName, operationName, operationSetting
 		private.operationInfo[moduleName].customSanitizeFunction(operationSettings)
 	end
 	for key, value in pairs(operationSettings) do
+		if Operations.IsCircularRelationship(moduleName, operationName, key) then
+			Log.Err("Removing circular relationship (%s, %s, %s)", moduleName, operationName, key)
+			operationSettings.relationships[key] = nil
+		end
 		if not operationInfo[key] then
 			operationSettings[key] = nil
 		elseif type(value) ~= operationInfo[key].type then
