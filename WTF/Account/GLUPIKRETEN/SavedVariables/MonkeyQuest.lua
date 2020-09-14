@@ -781,28 +781,6 @@ MonkeyQuestConfig = {
 		["m_bAlwaysHeaders"] = false,
 		["m_bGrowUp"] = false,
 	},
-	["Golemagg|Mxzq"] = {
-		["m_aQuestList"] = {
-			["Guile of the Raptor - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Princess Trapped - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Arathi Highlands - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Foul Magics - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Sigil of Strom - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Call to Arms - false"] = {
-				["m_bChecked"] = true,
-			},
-		},
-	},
 	["Global"] = {
 		["m_bItemsEnabled"] = true,
 		["m_iFont"] = 2,
@@ -827,9 +805,9 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 1125.76354980469,
+		["m_iFrameBottom"] = 959.400024414063,
 		["m_bHideCompletedQuests"] = true,
-		["m_iFrameLeft"] = 2019.82434082031,
+		["m_iFrameLeft"] = 2097.39990234375,
 		["m_bColourDoneOrFailed"] = true,
 		["m_bLocked"] = true,
 		["m_bNoBorder"] = true,
@@ -846,7 +824,7 @@ MonkeyQuestConfig = {
 		["m_iFrameWidth"] = 270,
 		["m_bCrashBorder"] = false,
 		["m_strHeaderOpenColour"] = "|cffbfbfff",
-		["m_iFrameTop"] = 1163.76354980469,
+		["m_iFrameTop"] = 1207.39990234375,
 		["m_bObjectives"] = true,
 		["m_bHideHeader"] = false,
 		["m_bShowTooltipObjectives"] = true,
@@ -855,6 +833,28 @@ MonkeyQuestConfig = {
 		["m_bHideTitle"] = false,
 		["m_bHideTitleButtons"] = false,
 		["m_bGrowUp"] = false,
+	},
+	["Golemagg|Mxzq"] = {
+		["m_aQuestList"] = {
+			["Guile of the Raptor - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Princess Trapped - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Arathi Highlands - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Call to Arms - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Sigil of Strom - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Foul Magics - false"] = {
+				["m_bChecked"] = true,
+			},
+		},
 	},
 	["Genesis|Malinac"] = {
 		["m_iFont"] = 0,
@@ -941,19 +941,19 @@ MonkeyQuestConfig = {
 		["m_bShowZoneHighlight"] = true,
 		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
 		["m_aQuestList"] = {
-			["Vanquish the Betrayers - false"] = {
+			["Encroachment - false"] = {
 				["m_bChecked"] = true,
 			},
 			["From The Wreckage.... - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Durotar - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Encroachment - false"] = {
-				["m_bChecked"] = true,
-			},
 			["Break a Few Eggs - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Vanquish the Betrayers - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Durotar - true"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -1006,10 +1006,6 @@ MonkeyQuestConfig = {
 			},
 		},
 	},
-	["Golemagg|Dmitar"] = {
-		["m_aQuestList"] = {
-		},
-	},
 	["Golemagg|Greenwise"] = {
 		["m_aQuestList"] = {
 			["Miner's Fortune - false"] = {
@@ -1057,6 +1053,10 @@ MonkeyQuestConfig = {
 			["Tribes at War - false"] = {
 				["m_bChecked"] = true,
 			},
+		},
+	},
+	["Golemagg|Dmitar"] = {
+		["m_aQuestList"] = {
 		},
 	},
 	["Golemagg|Pitchwise"] = {
