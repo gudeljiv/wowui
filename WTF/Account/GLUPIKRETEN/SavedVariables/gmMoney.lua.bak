@@ -8,7 +8,7 @@ GMMONEY = {
 	},
 	["Golemagg"] = {
 		["Mxzq"] = {
-			["GOLD"] = 1922013,
+			["GOLD"] = 1922603,
 			["CLASS"] = "HUNTER",
 		},
 		["Mxyz"] = {
@@ -46,6 +46,6 @@ GMMONEY = {
 	},
 }
 GMMONEYSET = {
-	["FULLDISP"] = true,
 	["TEXTMODE"] = true,
+	["FULLDISP"] = true,
 }
