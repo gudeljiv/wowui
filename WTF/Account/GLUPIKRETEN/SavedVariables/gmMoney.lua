@@ -8,11 +8,11 @@ GMMONEY = {
 	},
 	["Golemagg"] = {
 		["Mxzq"] = {
-			["GOLD"] = 1923633,
+			["GOLD"] = 1925695,
 			["CLASS"] = "HUNTER",
 		},
 		["Mxyz"] = {
-			["GOLD"] = 8274423,
+			["GOLD"] = 6791288,
 			["CLASS"] = "PRIEST",
 		},
 		["Mxyzptlk"] = {

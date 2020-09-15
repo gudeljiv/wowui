@@ -256,14 +256,14 @@ function Operations.GetDescription(moduleName, operationName)
 	return private.operationInfo[moduleName].infoCallback(operationSettings)
 end
 
-function Operations.SanitizeSettings(moduleName, operationName, operationSettings, silentMissingCommonKeys)
+function Operations.SanitizeSettings(moduleName, operationName, operationSettings, silentMissingCommonKeys, noRelationshipCheck)
 	local didReset = false
 	local operationInfo = private.operationInfo[moduleName].info
 	if private.operationInfo[moduleName].customSanitizeFunction then
 		private.operationInfo[moduleName].customSanitizeFunction(operationSettings)
 	end
 	for key, value in pairs(operationSettings) do
-		if Operations.IsCircularRelationship(moduleName, operationName, key) then
+		if not noRelationshipCheck and Operations.IsCircularRelationship(moduleName, operationName, key) then
 			Log.Err("Removing circular relationship (%s, %s, %s)", moduleName, operationName, key)
 			operationSettings.relationships[key] = nil
 		end

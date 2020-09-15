@@ -18007,8 +18007,7 @@ L["Buy Options"] = "Настройки покупки"
 --[[Translation missing --]]
 L["Buyback All"] = "Buyback All"
 L["Buyer/Seller"] = "Покупатель/Продавец"
---[[Translation missing --]]
-L["Buyout"] = "Buyout"
+L["Buyout"] = "Выкуп"
 L["Buyout (item)"] = "Выкуп (шт)"
 L["Buyout (stack)"] = "Выкуп (стак)"
 --[[Translation missing --]]
@@ -18018,10 +18017,8 @@ L["Buyout confirmation alert"] = "Buyout confirmation alert"
 L["Buyout Price"] = "Цена выкупа"
 L["Buyout Sniper Paused"] = "Выкуп «Снайпер» на паузе"
 L["Buyout Sniper Running"] = "Запущен «Снайпер» на выкуп"
---[[Translation missing --]]
-L["Cancel"] = "Cancel"
---[[Translation missing --]]
-L["Cancel %d / %d"] = "Cancel %d / %d"
+L["Cancel"] = "Отмена"
+L["Cancel %d / %d"] = "Отменить %d / %d"
 --[[Translation missing --]]
 L["Cancel Auction"] = "Cancel Auction"
 L["Cancel auctions with bids"] = "Отменять аукционы со ставками"
@@ -18892,8 +18889,7 @@ L["Performing a dry-run of your Mailing operations for the selected groups."] = 
 L["Performs a full, manual scan of the AH to populate some AuctionDB data if none is otherwise available."] = "Performs a full, manual scan of the AH to populate some AuctionDB data if none is otherwise available."
 L["Player Gold"] = "Золото игрока"
 L["Player Invite Accept"] = "Игрок принял приглашение"
---[[Translation missing --]]
-L["Post"] = "Post"
+L["Post"] = "Выставить"
 --[[Translation missing --]]
 L["Post / Cancel"] = "Post / Cancel"
 L["Post at Maximum Price"] = "Выставить по максимальной цене"
@@ -19171,12 +19167,9 @@ L["Search"] = "Поиск"
 L["Search %s operations"] = "Search %s operations"
 L["Search Bags"] = "Искать в сумках"
 L["Search Groups"] = "Поиск группы"
---[[Translation missing --]]
-L["Search items"] = "Search items"
---[[Translation missing --]]
-L["Search items in group"] = "Search items in group"
---[[Translation missing --]]
-L["Search items in mailbox"] = "Search items in mailbox"
+L["Search items"] = "Поиск предметов"
+L["Search items in group"] = "Поиск предметов в группе"
+L["Search items in mailbox"] = "Поиск предметов на почте"
 L["Search Operations"] = "Поиск операции"
 L["Search Patterns"] = "Поиск по рецептам"
 --[[Translation missing --]]
@@ -19227,8 +19220,7 @@ L["Send Excess Gold to Banker"] = "Отправка лишнего золота"
 --[[Translation missing --]]
 L["Send Gold"] = "Send Gold"
 L["Send grouped items individually"] = "Отправлять сгруппированные предметы поштучно"
---[[Translation missing --]]
-L["Send Mail"] = "Send Mail"
+L["Send Mail"] = "Отправить письмо"
 L["Send Money"] = "Отправить деньги"
 --[[Translation missing --]]
 L["Send your active profile to this synced account"] = "Send your active profile to this synced account"

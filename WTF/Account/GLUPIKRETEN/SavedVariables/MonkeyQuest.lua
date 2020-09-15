@@ -805,7 +805,7 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 959.400024414063,
+		["m_iFrameBottom"] = 1169.39990234375,
 		["m_bHideCompletedQuests"] = true,
 		["m_iFrameLeft"] = 2097.39990234375,
 		["m_bColourDoneOrFailed"] = true,
@@ -845,13 +845,13 @@ MonkeyQuestConfig = {
 			["Arathi Highlands - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Call to Arms - false"] = {
+			["Foul Magics - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Sigil of Strom - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Foul Magics - false"] = {
+			["Call to Arms - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
