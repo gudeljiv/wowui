@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 2554,
+	["session"] = 2556,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -2195,21 +2195,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [277]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'ItemRackButton0:SetAttribute()'.",
-			["time"] = "2020/08/02 11:49:42",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetAttribute'\nInterface\\AddOns\\ItemRack\\ItemRackButtons.lua:35: in function `InitButtons'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:282: in function `func'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:970: in function `OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>",
-			["session"] = 2525,
-			["counter"] = 6,
-		}, -- [278]
-		{
 			["message"] = "Interface\\AddOns\\xVermin\\BestFood.lua:254: attempt to index local 'b' (a nil value)",
 			["time"] = "2020/09/13 21:33:09",
 			["locals"] = "a = <table> {\n id = 12037\n type = \"Meat\"\n}\nb = nil\n(*temporary) = 1\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = 1\n(*temporary) = \"attempt to index local 'b' (a nil value)\"\n",
 			["stack"] = "Interface\\AddOns\\xVermin\\BestFood.lua:254: in function <Interface\\AddOns\\xVermin\\BestFood.lua:253>\n[C]: in function `sort'\nInterface\\AddOns\\xVermin\\BestFood.lua:162: in function `Sorted'\nInterface\\AddOns\\xVermin\\BestFood.lua:110: in function `UpdateMacros'\nInterface\\AddOns\\xVermin\\BestFood.lua:52: in function <Interface\\AddOns\\xVermin\\BestFood.lua:47>",
 			["session"] = 2525,
 			["counter"] = 1,
-		}, -- [279]
+		}, -- [278]
 		{
 			["message"] = "[string \"print(GetWidth(\"PlayerFrame\"))\"]:1: attempt to call global 'GetWidth' (a nil value)",
 			["time"] = "2020/09/16 16:41:31",
@@ -2217,6 +2209,22 @@ BugGrabberDB = {
 			["stack"] = "[string \"print(GetWidth(\"PlayerFrame\"))\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 2547,
 			["counter"] = 1,
+		}, -- [279]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'ItemRackButton0:SetAttribute()'.",
+			["time"] = "2020/08/02 11:49:42",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetAttribute'\nInterface\\AddOns\\ItemRack\\ItemRackButtons.lua:35: in function `InitButtons'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:282: in function `func'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:970: in function `OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>",
+			["session"] = 2556,
+			["counter"] = 7,
 		}, -- [280]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'SetCVar()'.",
+			["time"] = "2020/09/16 19:28:47",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetCVar'\nInterface\\AddOns\\xVermin\\Core.lua:20: in function <Interface\\AddOns\\xVermin\\Core.lua:16>",
+			["session"] = 2556,
+			["counter"] = 1,
+		}, -- [281]
 	},
 }
