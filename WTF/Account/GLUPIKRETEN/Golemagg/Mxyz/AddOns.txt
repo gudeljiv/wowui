@@ -299,3 +299,4 @@ Backpack_Classic: disabled
 Skillet-Classic: disabled
 ItemRackOptions: enabled
 aux-addon: disabled
+FiveSecondRule: disabled

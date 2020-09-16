@@ -297,3 +297,4 @@ AdiBags_Config: enabled
 Backpack: disabled
 Skillet-Classic: disabled
 aux-addon: disabled
+FiveSecondRule: disabled

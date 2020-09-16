@@ -249,16 +249,16 @@ EavesDropStatsDB = {
 						[2] = {
 						},
 					},
-					["Multi-Shot"] = {
+					["Wing Clip"] = {
 						[-2] = {
-							["time"] = "|cffffffff09/01/20 11:04:39|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMulti-Shot|r|h hits |Hunit:Creature-0-4448-1-42-3381-00004E0DF3:Southsea Brigand|hSouthsea Brigand|h for |cffffffff82|r |cffffffffPhysical|r.(33 Overkill)",
-							["amount"] = 115,
+							["time"] = "|cffffffff07/16/20 11:51:37|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWing Clip|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-66-3246-00000F738C:Fleeting Plainstrider|hFleeting Plainstrider|h for |cffffffff4|r |cffffffffPhysical|r.",
+							["amount"] = 4,
 						},
 						[2] = {
-							["time"] = "|cffffffff08/31/20 06:29:21|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMulti-Shot|r|h hits |Hunit:Creature-0-4448-1-42-3382-00004D2178:Southsea Cannoneer|hSouthsea Cannoneer|h for |cffffffff33|r |cffffffffPhysical|r.(183 Overkill) (Critical)",
-							["amount"] = 216,
+							["time"] = "|cffffffff07/22/20 05:37:51|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWing Clip|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-172-3100-0000182F7E:Elder Mottled Boar|hElder Mottled Boar|h for |cffffffff8|r |cffffffffPhysical|r.(Critical)",
+							["amount"] = 8,
 						},
-						["icon"] = 132330,
+						["icon"] = 132309,
 					},
 					["Mongoose Bite"] = {
 						[-2] = {
@@ -271,16 +271,16 @@ EavesDropStatsDB = {
 						},
 						["icon"] = 132215,
 					},
-					["Wing Clip"] = {
+					["Multi-Shot"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/16/20 11:51:37|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWing Clip|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-66-3246-00000F738C:Fleeting Plainstrider|hFleeting Plainstrider|h for |cffffffff4|r |cffffffffPhysical|r.",
-							["amount"] = 4,
+							["time"] = "|cffffffff09/01/20 11:04:39|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMulti-Shot|r|h hits |Hunit:Creature-0-4448-1-42-3381-00004E0DF3:Southsea Brigand|hSouthsea Brigand|h for |cffffffff82|r |cffffffffPhysical|r.(33 Overkill)",
+							["amount"] = 115,
 						},
 						[2] = {
-							["time"] = "|cffffffff07/22/20 05:37:51|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWing Clip|r|h hits |Hicon:128:dest|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-172-3100-0000182F7E:Elder Mottled Boar|hElder Mottled Boar|h for |cffffffff8|r |cffffffffPhysical|r.(Critical)",
-							["amount"] = 8,
+							["time"] = "|cffffffff08/31/20 06:29:21|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMulti-Shot|r|h hits |Hunit:Creature-0-4448-1-42-3382-00004D2178:Southsea Cannoneer|hSouthsea Cannoneer|h for |cffffffff33|r |cffffffffPhysical|r.(183 Overkill) (Critical)",
+							["amount"] = 216,
 						},
-						["icon"] = 132309,
+						["icon"] = 132330,
 					},
 					["Arcane Shot"] = {
 						[-2] = {
@@ -297,8 +297,8 @@ EavesDropStatsDB = {
 				["heal"] = {
 					["Healing Potion"] = {
 						[-2] = {
-							["time"] = "|cffffffff09/13/20 05:20:44|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_HEAL|h|cffffffffHealing Potion|r|h heals |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h for |cffffffff513|r.",
-							["amount"] = 513,
+							["time"] = "|cffffffff09/16/20 04:57:54|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h |Hspell:0:0:SPELL_HEAL|h|cffffffffHealing Potion|r|h heals |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h for |cffffffff541|r.",
+							["amount"] = 541,
 						},
 						[2] = {
 						},
@@ -352,8 +352,8 @@ EavesDropStatsDB = {
 					},
 					["Frost"] = {
 						[-2] = {
-							["time"] = "|cffffffff07/26/20 12:20:02|r\n|Hicon:128:source|h|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_8.blp:0|t|h|Hunit:Creature-0-4448-1-29-3436-00001D5889:Kuz|hKuz's|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Frostbolt|r|h hits |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h for |cffff131378|r |cffff1313Frost|r.",
-							["amount"] = 78,
+							["time"] = "|cffffffff09/16/20 05:17:40|r\n|Hunit:Creature-0-4469-0-14-2567-0000622C71:Boulderfist Magus|hBoulderfist Magus's|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Frostbolt|r|h hits |Hunit:Player-4465-01C7FC88:Mxzq|hMxzq|h for |cffff1313152|r |cffff1313Frost|r.",
+							["amount"] = 152,
 						},
 						[2] = {
 						},

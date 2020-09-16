@@ -298,3 +298,4 @@ Backpack: disabled
 Backpack_Classic: disabled
 Skillet-Classic: disabled
 aux-addon: disabled
+FiveSecondRule: disabled

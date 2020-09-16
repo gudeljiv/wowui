@@ -2,7 +2,7 @@
 FiveSecondRule_Options = {
 	["showTicks"] = true,
 	["flat"] = false,
-	["averageManaTick"] = 16.6666666666667,
+	["averageManaTick"] = 16.8,
 	["showSpark"] = true,
 	["statusBarBackgroundColor"] = {
 		0, -- [1]
@@ -27,9 +27,11 @@ FiveSecondRule_Options = {
 		1, -- [4]
 	},
 	["tickSizeRunningWindow"] = {
-		16, -- [1]
+		17, -- [1]
 		17, -- [2]
-		17, -- [3]
+		16, -- [3]
+		17, -- [4]
+		17, -- [5]
 	},
 	["showText"] = true,
 	["barHeight"] = 11,

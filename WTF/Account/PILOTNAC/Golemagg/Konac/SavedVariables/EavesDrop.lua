@@ -6,6 +6,63 @@ EavesDropStatsDB = {
 	["profiles"] = {
 		["Konac - Golemagg"] = {
 			{
+				["hit"] = {
+					["Shoot"] = {
+						[-2] = {
+							["time"] = "|cffffffff09/08/20 03:19:14|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Haction:RANGE_DAMAGE|h|cffffffffShoot|r|h |Haction:RANGE_DAMAGE|hhit|h |Hunit:Creature-0-4448-1-26-8961-0000576988:Felpaw Ravager|hFelpaw Ravager|h |cffffffff167|r |cffffffffNature|r. ",
+							["amount"] = 167,
+						},
+						[2] = {
+							["time"] = "|cffffffff09/08/20 03:11:07|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Haction:RANGE_DAMAGE|h|cffffffffShoot|r|h |Haction:RANGE_DAMAGE|hhit|h |Hunit:Creature-0-4448-1-38-7457-0000576C7C:Rogue Ice Thistle|hRogue Ice Thistle|h |cffffffff235|r |cffffffffNature|r. (Critical) ",
+							["amount"] = 235,
+						},
+					},
+					["Holy Fire"] = {
+						[-2] = {
+							["time"] = "|cffffffff09/08/20 03:11:00|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffHoly Fire|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4448-1-38-7457-0000576C7C:Rogue Ice Thistle|hRogue Ice Thistle|h |cffffffff410|r |cffffffffHoly|r. ",
+							["amount"] = 410,
+						},
+						[2] = {
+						},
+						["icon"] = 135972,
+					},
+					["Smite"] = {
+						[-2] = {
+							["time"] = "|cffffffff09/08/20 03:11:04|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffSmite|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4448-1-38-7457-0000576C7C:Rogue Ice Thistle|hRogue Ice Thistle|h |cffffffff465|r |cffffffffHoly|r. ",
+							["amount"] = 465,
+						},
+						[2] = {
+						},
+						["icon"] = 135924,
+					},
+					["Shadow Word: Pain"] = {
+						[-2] = {
+							["time"] = "|cffffffff09/07/20 05:12:09|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_PERIODIC_DAMAGE|h|cffffffffShadow Word: Pain|r|h |Haction:SPELL_PERIODIC_DAMAGE|hdamaged|h |Hunit:Creature-0-4448-1-48-6238-0000564DAC:Big Will|hBig Will|h |cffffffff156|r |cffffffffShadow|r. ",
+							["amount"] = 156,
+						},
+						[2] = {
+						},
+						["icon"] = 136207,
+					},
+					["Mind Blast"] = {
+						[-2] = {
+							["time"] = "|cffffffff09/08/20 03:18:53|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMind Blast|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4448-1-26-8961-0000576988:Felpaw Ravager|hFelpaw Ravager|h |cffffffff568|r |cffffffffShadow|r. ",
+							["amount"] = 568,
+						},
+						[2] = {
+						},
+						["icon"] = 136224,
+					},
+					["Holy Nova"] = {
+						[-2] = {
+							["time"] = "|cffffffff09/07/20 05:59:12|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffHoly Nova|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4448-0-20-1765-0000565516:Worg|hWorg|h |cffffffff203|r |cffffffffHoly|r. ",
+							["amount"] = 203,
+						},
+						[2] = {
+						},
+						["icon"] = 135922,
+					},
+				},
 				["heal"] = {
 					["Renew"] = {
 						[-2] = {
@@ -46,63 +103,6 @@ EavesDropStatsDB = {
 						[2] = {
 						},
 						["icon"] = 135907,
-					},
-				},
-				["hit"] = {
-					["Shoot"] = {
-						[-2] = {
-							["time"] = "|cffffffff09/08/20 03:19:14|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Haction:RANGE_DAMAGE|h|cffffffffShoot|r|h |Haction:RANGE_DAMAGE|hhit|h |Hunit:Creature-0-4448-1-26-8961-0000576988:Felpaw Ravager|hFelpaw Ravager|h |cffffffff167|r |cffffffffNature|r. ",
-							["amount"] = 167,
-						},
-						[2] = {
-							["time"] = "|cffffffff09/08/20 03:11:07|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Haction:RANGE_DAMAGE|h|cffffffffShoot|r|h |Haction:RANGE_DAMAGE|hhit|h |Hunit:Creature-0-4448-1-38-7457-0000576C7C:Rogue Ice Thistle|hRogue Ice Thistle|h |cffffffff235|r |cffffffffNature|r. (Critical) ",
-							["amount"] = 235,
-						},
-					},
-					["Holy Fire"] = {
-						[-2] = {
-							["time"] = "|cffffffff09/08/20 03:11:00|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffHoly Fire|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4448-1-38-7457-0000576C7C:Rogue Ice Thistle|hRogue Ice Thistle|h |cffffffff410|r |cffffffffHoly|r. ",
-							["amount"] = 410,
-						},
-						[2] = {
-						},
-						["icon"] = 135972,
-					},
-					["Smite"] = {
-						[-2] = {
-							["time"] = "|cffffffff09/08/20 03:11:04|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffSmite|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4448-1-38-7457-0000576C7C:Rogue Ice Thistle|hRogue Ice Thistle|h |cffffffff465|r |cffffffffHoly|r. ",
-							["amount"] = 465,
-						},
-						[2] = {
-						},
-						["icon"] = 135924,
-					},
-					["Shadow Word: Pain"] = {
-						[-2] = {
-							["time"] = "|cffffffff09/07/20 05:12:09|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_PERIODIC_DAMAGE|h|cffffffffShadow Word: Pain|r|h |Haction:SPELL_PERIODIC_DAMAGE|hdamaged|h |Hunit:Creature-0-4448-1-48-6238-0000564DAC:Big Will|hBig Will|h |cffffffff156|r |cffffffffShadow|r. ",
-							["amount"] = 156,
-						},
-						[2] = {
-						},
-						["icon"] = 136207,
-					},
-					["Holy Nova"] = {
-						[-2] = {
-							["time"] = "|cffffffff09/07/20 05:59:12|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffHoly Nova|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4448-0-20-1765-0000565516:Worg|hWorg|h |cffffffff203|r |cffffffffHoly|r. ",
-							["amount"] = 203,
-						},
-						[2] = {
-						},
-						["icon"] = 135922,
-					},
-					["Mind Blast"] = {
-						[-2] = {
-							["time"] = "|cffffffff09/08/20 03:18:53|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMind Blast|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4448-1-26-8961-0000576988:Felpaw Ravager|hFelpaw Ravager|h |cffffffff568|r |cffffffffShadow|r. ",
-							["amount"] = 568,
-						},
-						[2] = {
-						},
-						["icon"] = 136224,
 					},
 				},
 			}, -- [1]

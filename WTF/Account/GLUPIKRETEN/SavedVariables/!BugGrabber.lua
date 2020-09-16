@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 2554,
 	["lastSanitation"] = 3,
-	["session"] = 2541,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -173,8 +173,8 @@ BugGrabberDB = {
 		}, -- [21]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["session"] = 1336,
 			["time"] = "2020/07/26 13:26:58",
+			["session"] = 1336,
 			["counter"] = 2,
 		}, -- [22]
 		{
@@ -554,8 +554,8 @@ BugGrabberDB = {
 		}, -- [69]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["time"] = "2020/07/27 20:37:46",
 			["session"] = 1423,
+			["time"] = "2020/07/27 20:37:46",
 			["counter"] = 4,
 		}, -- [70]
 		{
@@ -813,8 +813,8 @@ BugGrabberDB = {
 		}, -- [102]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["time"] = "2020/08/02 10:06:15",
 			["session"] = 1605,
+			["time"] = "2020/08/02 10:06:15",
 			["counter"] = 3,
 		}, -- [103]
 		{
@@ -954,8 +954,8 @@ BugGrabberDB = {
 		}, -- [120]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
-			["session"] = 1654,
 			["time"] = "2020/08/02 20:13:03",
+			["session"] = 1654,
 			["counter"] = 3,
 		}, -- [121]
 		{
@@ -1436,8 +1436,8 @@ BugGrabberDB = {
 		}, -- [181]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Experience.lua",
-			["session"] = 1943,
 			["time"] = "2020/08/19 21:35:15",
+			["session"] = 1943,
 			["counter"] = 6,
 		}, -- [182]
 		{
@@ -2048,8 +2048,8 @@ BugGrabberDB = {
 		}, -- [258]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["session"] = 2448,
 			["time"] = "2020/08/13 21:31:07",
+			["session"] = 2448,
 			["counter"] = 9,
 		}, -- [259]
 		{
@@ -2182,8 +2182,8 @@ BugGrabberDB = {
 		}, -- [275]
 		{
 			["message"] = "(null)",
-			["time"] = "2020/07/24 16:00:06",
 			["session"] = 2470,
+			["time"] = "2020/07/24 16:00:06",
 			["counter"] = 97,
 		}, -- [276]
 		{
@@ -2210,5 +2210,13 @@ BugGrabberDB = {
 			["session"] = 2525,
 			["counter"] = 1,
 		}, -- [279]
+		{
+			["message"] = "[string \"print(GetWidth(\"PlayerFrame\"))\"]:1: attempt to call global 'GetWidth' (a nil value)",
+			["time"] = "2020/09/16 16:41:31",
+			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = nil\n(*temporary) = \"PlayerFrame\"\n(*temporary) = \"attempt to call global 'GetWidth' (a nil value)\"\n",
+			["stack"] = "[string \"print(GetWidth(\"PlayerFrame\"))\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 2547,
+			["counter"] = 1,
+		}, -- [280]
 	},
 }
