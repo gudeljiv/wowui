@@ -7,11 +7,11 @@ Postal3ClassicDB = {
 				"Augustin|Golemagg|Horde|11|MAGE", -- [2]
 				"Dmitar|Golemagg|Horde|2|PRIEST", -- [3]
 				"Grgur|Golemagg|Horde|1|WARLOCK", -- [4]
-				"Jaroslav|Golemagg|Horde|1|DRUID", -- [5]
+				"Jaroslav|Golemagg|Horde|2|DRUID", -- [5]
 				"Koloman|Golemagg|Horde|1|MAGE", -- [6]
 				"Mxyzptlk|Golemagg|Horde|6|WARLOCK", -- [7]
 				"Mxyz|Golemagg|Horde|5|PRIEST", -- [8]
-				"Mxzq|Golemagg|Horde|33|HUNTER", -- [9]
+				"Mxzq|Golemagg|Horde|34|HUNTER", -- [9]
 				"Vermins|Stonespine|Horde|2|WARRIOR", -- [10]
 				"Vermin|Golemagg|Horde|30|WARRIOR", -- [11]
 			},
