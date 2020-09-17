@@ -92,3 +92,5 @@ RangeDisplay: enabled
 RangeDisplay_Options: enabled
 Select: enabled
 TownsfolkTracker: enabled
+GatherMate2: enabled
+GatherMate2_Data: enabled

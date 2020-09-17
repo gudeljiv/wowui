@@ -93,3 +93,5 @@ TownsfolkTracker: enabled
 ZygorGuidesViewerClassic: disabled
 PerfectRaid: enabled
 Select: enabled
+GatherMate2: enabled
+GatherMate2_Data: enabled
