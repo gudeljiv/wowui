@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 2572,
+	["session"] = 2592,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -2226,5 +2226,13 @@ BugGrabberDB = {
 			["session"] = 2564,
 			["counter"] = 2,
 		}, -- [281]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Core.lua:95: attempt to concatenate upvalue 'debug' (a boolean value)",
+			["time"] = "2020/09/18 19:32:03",
+			["locals"] = "msg = \"\"\n(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = \"DEBUG: \"\n(*temporary) = false\n(*temporary) = \"attempt to concatenate upvalue 'debug' (a boolean value)\"\ndebug = false\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Core.lua:95: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 2579,
+			["counter"] = 2,
+		}, -- [282]
 	},
 }

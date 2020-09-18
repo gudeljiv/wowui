@@ -130,13 +130,24 @@ local function SetChat()
 	ChatFrame5:Show()
 	ChatFrame5Tab:Show()
 
+	local frame = FCF_OpenNewWindow("Debug")
+	FCF_SetChatWindowFontSize(nil, frame, 12)
+	ChatFrame_RemoveAllMessageGroups(frame)
+	ChatFrame6:ClearAllPoints()
+	ChatFrame6:SetClampRectInsets(0, -1, 0, 0)
+	ChatFrame6:SetPoint("BOTTOMLEFT", UIParent, "BOTTOMLEFT", 3, 7)
+	ChatFrame6:SetHeight(220)
+	ChatFrame6:Show()
+	ChatFrame6Tab:Show()
+
 	for i, v in pairs(
 		{
 			ChatFrame1,
 			ChatFrame2,
 			ChatFrame3,
 			ChatFrame4,
-			ChatFrame5
+			ChatFrame5,
+			ChatFrame6
 		}
 	) do
 		v:SetWidth(chatWidth)

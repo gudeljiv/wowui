@@ -46,10 +46,11 @@ XPToLevel:Hide()
 
 local CurrentXP = UnitXP("player")
 local MaxXP = UnitXPMax("player")
+local MobToKillTimer
+local mbk = false
 
 local function UpdateExperience()
 	if UnitLevel("player") < MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] then
-		MobsToKill:Show()
 		XPToLevel:Show()
 		NewXP = UnitXP("player")
 
@@ -59,10 +60,27 @@ local function UpdateExperience()
 		XPToLevel.text:SetText(XPToLVL .. " (XP)")
 		XPToLevel.text:SetTextColor(color.r, color.g, color.b, 1)
 
+		xVermin:LogBreak()
+		xVermin:Log("current xp: " .. CurrentXP)
+		xVermin:Log("new xp: " .. NewXP)
+		xVermin:Log("gained: " .. gained)
+		xVermin:Log("xp to lvl: " .. XPToLVL)
+		xVermin:Log("mobs to lvl: " .. math.ceil((MaxXP - NewXP) / gained))
+		xVermin:LogBreak()
+
 		if gained > 0 then
 			hmmm = math.ceil((MaxXP - NewXP) / gained)
 			MobsToKill.text:SetText(hmmm)
 			MobsToKill.text:SetTextColor(color.r, color.g, color.b, 1)
+
+			xVermin:Log("mbk frame: " .. (mbk and "true" or "false"))
+			xVermin:Log("mbk timer: " .. (MobToKillTimer and "true" or "false"))
+			xVermin:LogBreak()
+
+			if not mbk then
+				UIFrameFadeIn(MobsToKill, 1, 0, 1)
+				mbk = true
+			end
 
 			if MobToKillTimer then
 				MobToKillTimer:Cancel()
@@ -70,9 +88,10 @@ local function UpdateExperience()
 
 			MobToKillTimer =
 				C_Timer.NewTimer(
-				120,
-				function()
+				60,
+				function(self)
 					UIFrameFadeOut(MobsToKill, 1, 1, 0)
+					mbk = false
 				end
 			)
 

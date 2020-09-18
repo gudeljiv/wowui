@@ -52,58 +52,22 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Jaroslav"] = {
 		["m_aQuestList"] = {
-			["The Hunt Continues - false"] = {
-				["m_bChecked"] = true,
-			},
 			["Mulgore - true"] = {
 				["m_bChecked"] = true,
 			},
-			["The Hunt Begins - false"] = {
+			["Rite of Wisdom - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Rite of Strength - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Battleboars - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Red Cloud Mesa - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Verdant Note - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Rite of Vision - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Sharing the Land - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Druid - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Dangers of the Windfury - false"] = {
-				["m_bChecked"] = true,
-			},
-			["A Humble Task - false"] = {
-				["m_bChecked"] = true,
-			},
-			["A Task Unfinished - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Rites of the Earthmother - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Break Sharptusk! - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Swoop Hunting - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Poison Water - false"] = {
+			["Winterhoof Cleansing - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Mazzranache - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Dwarven Digging - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Dangers of the Windfury - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -1129,9 +1093,9 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 1125.76354980469,
+		["m_iFrameBottom"] = 985.39990234375,
 		["m_bHideTitleButtons"] = false,
-		["m_iFrameLeft"] = 2019.82434082031,
+		["m_iFrameLeft"] = 2097.39990234375,
 		["m_bColourDoneOrFailed"] = true,
 		["m_bLocked"] = true,
 		["m_bNoBorder"] = true,
@@ -1148,7 +1112,7 @@ MonkeyQuestConfig = {
 		["m_strMidObjectiveColour"] = "|cFFFFFF00",
 		["m_bCrashBorder"] = false,
 		["m_strHeaderOpenColour"] = "|cffbfbfff",
-		["m_iFrameTop"] = 1163.76354980469,
+		["m_iFrameTop"] = 1207.39990234375,
 		["m_bObjectives"] = true,
 		["m_bHideHeader"] = false,
 		["m_bShowNumQuests"] = true,

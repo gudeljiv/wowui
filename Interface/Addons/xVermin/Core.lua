@@ -82,3 +82,26 @@ function xVermin:ColorGradient(perc, ...)
 	r1, g1, b1, r2, g2, b2 = select((segment * 3) + 1, ...)
 	return r1 + (r2 - r1) * relperc, g1 + (g2 - g1) * relperc, b1 + (b2 - b1) * relperc
 end
+
+local debug = false
+SLASH_DEBUG1 = "/xdebug"
+SlashCmdList["DEBUG"] = function(msg)
+	if msg == "" then
+		debug = not debug
+	else
+		debug = msg
+	end
+	ChatFrame6:AddMessage("DEBUG: " .. (debug and "true" or "false"))
+end
+
+function xVermin:Log(input)
+	if debug then
+		ChatFrame6:AddMessage(input)
+	end
+end
+
+function xVermin:LogBreak()
+	if debug then
+		ChatFrame6:AddMessage("--------------------------------------------------------")
+	end
+end
