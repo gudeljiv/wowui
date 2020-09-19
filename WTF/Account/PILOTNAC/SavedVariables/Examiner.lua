@@ -9,12 +9,12 @@ Examiner_Config = {
 	["alwaysShowItemLevel"] = true,
 	["combineAdditiveStats"] = true,
 	["autoInspect"] = true,
-	["cacheSort"] = "class",
+	["gearbutton"] = true,
 	["statsViewType"] = 1,
 	["clearInspectOnHide"] = false,
 	["showBackground"] = true,
 	["delayedScanFix"] = true,
-	["gearbutton"] = true,
+	["cacheSort"] = "class",
 }
 Examiner_Cache = {
 }
