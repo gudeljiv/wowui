@@ -9,12 +9,12 @@ EavesDropStatsDB = {
 				["hit"] = {
 					["Shoot"] = {
 						[-2] = {
-							["time"] = "|cffffffff09/08/20 03:19:14|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Haction:RANGE_DAMAGE|h|cffffffffShoot|r|h |Haction:RANGE_DAMAGE|hhit|h |Hunit:Creature-0-4448-1-26-8961-0000576988:Felpaw Ravager|hFelpaw Ravager|h |cffffffff167|r |cffffffffNature|r. ",
-							["amount"] = 167,
+							["time"] = "|cffffffff09/20/20 01:24:48|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Haction:RANGE_DAMAGE|h|cffffffffShoot|r|h |Haction:RANGE_DAMAGE|hhit|h |Hunit:Creature-0-4469-0-18-8597-0000672859:Plaguehound|hPlaguehound|h |cffffffff169|r |cffffffffNature|r. ",
+							["amount"] = 169,
 						},
 						[2] = {
-							["time"] = "|cffffffff09/08/20 03:11:07|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Haction:RANGE_DAMAGE|h|cffffffffShoot|r|h |Haction:RANGE_DAMAGE|hhit|h |Hunit:Creature-0-4448-1-38-7457-0000576C7C:Rogue Ice Thistle|hRogue Ice Thistle|h |cffffffff235|r |cffffffffNature|r. (Critical) ",
-							["amount"] = 235,
+							["time"] = "|cffffffff09/20/20 01:24:55|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Haction:RANGE_DAMAGE|h|cffffffffShoot|r|h |Haction:RANGE_DAMAGE|hhit|h |Hunit:Creature-0-4469-0-18-8597-0000672859:Plaguehound|hPlaguehound|h |cffffffff252|r |cffffffffNature|r. (Critical) ",
+							["amount"] = 252,
 						},
 					},
 					["Holy Fire"] = {
@@ -55,10 +55,12 @@ EavesDropStatsDB = {
 					},
 					["Holy Nova"] = {
 						[-2] = {
-							["time"] = "|cffffffff09/07/20 05:59:12|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffHoly Nova|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4448-0-20-1765-0000565516:Worg|hWorg|h |cffffffff203|r |cffffffffHoly|r. ",
-							["amount"] = 203,
+							["time"] = "|cffffffff09/20/20 07:15:01|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffHoly Nova|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4469-1-31-3278-0000678A3B:Witchwing Slayer|hWitchwing Slayer|h |cffffffff44|r |cffffffffHoly|r. (173 Overkill) ",
+							["amount"] = 217,
 						},
 						[2] = {
+							["time"] = "|cffffffff09/20/20 07:05:25|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffHoly Nova|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4469-1-31-3274-0000677EA7:Kolkar Pack Runner|hKolkar Pack Runner|h |cffffffff172|r |cffffffffHoly|r. (147 Overkill) (Critical) ",
+							["amount"] = 319,
 						},
 						["icon"] = 135922,
 					},
@@ -75,32 +77,34 @@ EavesDropStatsDB = {
 					},
 					["Greater Heal"] = {
 						[-2] = {
-							["time"] = "|cffffffff09/08/20 03:03:54|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_HEAL|h|cffffffffGreater Heal|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-008847C4:Sokeres|hSokeres|h |cffffffff1458|r |cffffffffHoly|r. (1377 Overhealed) ",
-							["amount"] = 2835,
+							["time"] = "|cffffffff09/20/20 01:22:48|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_HEAL|h|cffffffffGreater Heal|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffffffff0|r |cffffffffHoly|r. (2997 Overhealed) ",
+							["amount"] = 2997,
 						},
 						[2] = {
-							["time"] = "|cffffffff09/07/20 05:16:26|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_HEAL|h|cffffffffGreater Heal|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffffffff0|r |cffffffffHoly|r. (4408 Overhealed) (Critical) ",
-							["amount"] = 4408,
+							["time"] = "|cffffffff09/20/20 01:22:22|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_HEAL|h|cffffffffGreater Heal|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffffffff0|r |cffffffffHoly|r. (4441 Overhealed) (Critical) ",
+							["amount"] = 4441,
 						},
 						["icon"] = 135913,
 					},
 					["Holy Nova"] = {
 						[-2] = {
-							["time"] = "|cffffffff09/07/20 05:59:12|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_HEAL|h|cffffffffHoly Nova|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffffffff0|r |cffffffffHoly|r. (474 Overhealed) ",
-							["amount"] = 474,
+							["time"] = "|cffffffff09/20/20 05:33:18|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_HEAL|h|cffffffffHoly Nova|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffffffff0|r |cffffffffHoly|r. (481 Overhealed) ",
+							["amount"] = 481,
 						},
 						[2] = {
-							["time"] = "|cffffffff09/07/20 05:59:15|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_HEAL|h|cffffffffHoly Nova|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-00E5831F:Vermin|hVermin|h |cffffffff0|r |cffffffffHoly|r. (677 Overhealed) (Critical) ",
-							["amount"] = 677,
+							["time"] = "|cffffffff09/20/20 06:50:18|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_HEAL|h|cffffffffHoly Nova|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-01D5BF39:Augustin|hAugustin|h |cffffffff0|r |cffffffffHoly|r. (720 Overhealed) (Critical) ",
+							["amount"] = 720,
 						},
 						["icon"] = 135922,
 					},
 					["Flash Heal"] = {
 						[-2] = {
-							["time"] = "|cffffffff09/07/20 05:15:44|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_HEAL|h|cffffffffFlash Heal|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffffffff0|r |cffffffffHoly|r. (1396 Overhealed) ",
-							["amount"] = 1396,
+							["time"] = "|cffffffff09/20/20 01:23:00|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_HEAL|h|cffffffffFlash Heal|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffffffff0|r |cffffffffHoly|r. (1432 Overhealed) ",
+							["amount"] = 1432,
 						},
 						[2] = {
+							["time"] = "|cffffffff09/20/20 01:22:59|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_HEAL|h|cffffffffFlash Heal|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffffffff0|r |cffffffffHoly|r. (2074 Overhealed) (Critical) ",
+							["amount"] = 2074,
 						},
 						["icon"] = 135907,
 					},
@@ -120,8 +124,8 @@ EavesDropStatsDB = {
 					},
 					["Arcane"] = {
 						[-2] = {
-							["time"] = "|cffffffff09/17/20 10:40:33|r\n|Hunit:Creature-0-4469-0-18-8524-000063C649:Cursed Mage|hCursed Mage|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Arcane Bolt|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffff1313225|r |cffff1313Arcane|r. ",
-							["amount"] = 225,
+							["time"] = "|cffffffff09/20/20 12:43:16|r\n|Hunit:Creature-0-4469-0-18-8524-000066AB47:Cursed Mage|hCursed Mage|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Arcane Bolt|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffff1313284|r |cffff1313Arcane|r. ",
+							["amount"] = 284,
 						},
 						[2] = {
 						},
@@ -144,8 +148,8 @@ EavesDropStatsDB = {
 					},
 					["Nature"] = {
 						[-2] = {
-							["time"] = "|cffffffff09/18/20 05:49:50|r\n|Hunit:Creature-0-4469-0-18-8545-000064B826:Abomination|hAbomination|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Disease Cloud|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffff131337|r |cffff1313Nature|r. ",
-							["amount"] = 37,
+							["time"] = "|cffffffff09/20/20 06:20:53|r\n|Hunit:Creature-0-4469-1-31-3273-0000677F87:Kolkar Stormer|hKolkar Stormer|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Lightning Bolt|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffff131351|r |cffff1313Nature|r. ",
+							["amount"] = 51,
 						},
 						[2] = {
 						},

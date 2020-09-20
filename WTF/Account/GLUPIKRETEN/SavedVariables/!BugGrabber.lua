@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 2598,
 	["lastSanitation"] = 3,
+	["session"] = 2605,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -173,8 +173,8 @@ BugGrabberDB = {
 		}, -- [21]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["time"] = "2020/07/26 13:26:58",
 			["session"] = 1336,
+			["time"] = "2020/07/26 13:26:58",
 			["counter"] = 2,
 		}, -- [22]
 		{
@@ -554,8 +554,8 @@ BugGrabberDB = {
 		}, -- [69]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["session"] = 1423,
 			["time"] = "2020/07/27 20:37:46",
+			["session"] = 1423,
 			["counter"] = 4,
 		}, -- [70]
 		{
@@ -813,8 +813,8 @@ BugGrabberDB = {
 		}, -- [102]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["session"] = 1605,
 			["time"] = "2020/08/02 10:06:15",
+			["session"] = 1605,
 			["counter"] = 3,
 		}, -- [103]
 		{
@@ -954,8 +954,8 @@ BugGrabberDB = {
 		}, -- [120]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
-			["time"] = "2020/08/02 20:13:03",
 			["session"] = 1654,
+			["time"] = "2020/08/02 20:13:03",
 			["counter"] = 3,
 		}, -- [121]
 		{
@@ -1436,8 +1436,8 @@ BugGrabberDB = {
 		}, -- [181]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Experience.lua",
-			["time"] = "2020/08/19 21:35:15",
 			["session"] = 1943,
+			["time"] = "2020/08/19 21:35:15",
 			["counter"] = 6,
 		}, -- [182]
 		{
@@ -2048,8 +2048,8 @@ BugGrabberDB = {
 		}, -- [258]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["time"] = "2020/08/13 21:31:07",
 			["session"] = 2448,
+			["time"] = "2020/08/13 21:31:07",
 			["counter"] = 9,
 		}, -- [259]
 		{
@@ -2182,8 +2182,8 @@ BugGrabberDB = {
 		}, -- [275]
 		{
 			["message"] = "(null)",
-			["session"] = 2470,
 			["time"] = "2020/07/24 16:00:06",
+			["session"] = 2470,
 			["counter"] = 97,
 		}, -- [276]
 		{
@@ -2211,28 +2211,28 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [279]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'ItemRackButton0:SetAttribute()'.",
-			["time"] = "2020/08/02 11:49:42",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetAttribute'\nInterface\\AddOns\\ItemRack\\ItemRackButtons.lua:35: in function `InitButtons'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:282: in function `func'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:970: in function `OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>",
-			["session"] = 2564,
-			["counter"] = 8,
-		}, -- [280]
-		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'SetCVar()'.",
-			["time"] = "2020/09/16 19:28:47",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetCVar'\nInterface\\AddOns\\xVermin\\Core.lua:20: in function <Interface\\AddOns\\xVermin\\Core.lua:16>",
-			["session"] = 2564,
-			["counter"] = 2,
-		}, -- [281]
-		{
 			["message"] = "Interface\\AddOns\\xVermin\\Core.lua:95: attempt to concatenate upvalue 'debug' (a boolean value)",
 			["time"] = "2020/09/18 19:32:03",
 			["locals"] = "msg = \"\"\n(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = \"DEBUG: \"\n(*temporary) = false\n(*temporary) = \"attempt to concatenate upvalue 'debug' (a boolean value)\"\ndebug = false\n",
 			["stack"] = "Interface\\AddOns\\xVermin\\Core.lua:95: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 2579,
 			["counter"] = 2,
+		}, -- [280]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'ItemRackButton0:SetAttribute()'.",
+			["time"] = "2020/08/02 11:49:42",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetAttribute'\nInterface\\AddOns\\ItemRack\\ItemRackButtons.lua:35: in function `InitButtons'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:282: in function `func'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:970: in function `OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>",
+			["session"] = 2603,
+			["counter"] = 9,
+		}, -- [281]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'SetCVar()'.",
+			["time"] = "2020/09/16 19:28:47",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetCVar'\nInterface\\AddOns\\xVermin\\Core.lua:20: in function <Interface\\AddOns\\xVermin\\Core.lua:16>",
+			["session"] = 2603,
+			["counter"] = 3,
 		}, -- [282]
 	},
 }

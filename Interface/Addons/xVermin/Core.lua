@@ -5,30 +5,43 @@ SlashCmdList["RELOAD"] = function(msg)
 	ReloadUI()
 end
 
+local function FixCVar()
+	C_Timer.After(
+		10,
+		function()
+			SetCVar("autoQuestWatch", 0)
+			SetCVar("autoQuestProgress", 0)
+			SetCVar("instantQuestText", 1)
+			SetCVar("nameplateMaxDistance", 80)
+			SetCVar("ffxGlow", "1")
+			SetCVar("ffxDeath", "0")
+			SetCVar("ffxNether", "0")
+			SetCVar("violenceLevel", "5")
+			SetCVar("cameraDistanceMaxZoomFactor", 4.0)
+			SetCVar("chatClassColorOverride", 0)
+			SetCVar("ShowClassColorInFriendlyNameplate", 1)
+			SetCVar("scriptErrors", "1")
+			SetCVar("alwaysShowActionBars", "1")
+		end
+	)
+end
+
 local frame = CreateFrame("Frame", "CVarSet")
 frame:RegisterEvent("PLAYER_ENTERING_WORLD")
 frame:SetScript(
 	"OnEvent",
 	function(self, event, isInitialLogin, isReloadingUi)
-		if isInitialLogin then
-			C_Timer.After(
-				10,
-				function()
-					SetCVar("autoQuestWatch", 0)
-					SetCVar("autoQuestProgress", 0)
-					SetCVar("instantQuestText", 1)
-					SetCVar("nameplateMaxDistance", 80)
-					SetCVar("ffxGlow", "1")
-					SetCVar("ffxDeath", "0")
-					SetCVar("ffxNether", "0")
-					SetCVar("violenceLevel", "5")
-					SetCVar("cameraDistanceMaxZoomFactor", 4.0)
-					SetCVar("chatClassColorOverride", 0)
-					SetCVar("ShowClassColorInFriendlyNameplate", 1)
-					SetCVar("scriptErrors", "1")
-					SetCVar("alwaysShowActionBars", "1")
-				end
-			)
+		if event == "PLAYER_ENTERING_WORLD" and isInitialLogin then
+			if not InCombatLockdown() then
+				FixCVar()
+			else
+				self:RegisterEvent("PLAYER_REGEN_ENABLED")
+			end
+		end
+
+		if event == "PLAYER_REGEN_ENABLED" then
+			FixCVar()
+			self:UnregisterEvent("PLAYER_REGEN_ENABLED")
 		end
 	end
 )

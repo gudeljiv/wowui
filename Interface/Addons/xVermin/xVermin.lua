@@ -186,8 +186,13 @@ f:SetScript(
 
 			PlayerFrame:ClearAllPoints()
 			PlayerFrame:SetPoint("CENTER", UIParent, "CENTER", -250, -96)
+			PlayerFrame.SetPoint = function()
+			end
+
 			TargetFrame:ClearAllPoints()
 			TargetFrame:SetPoint("CENTER", UIParent, "CENTER", 250, -96)
+			TargetFrame.SetPoint = function()
+			end
 		end
 	end
 )

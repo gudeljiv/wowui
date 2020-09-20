@@ -6,7 +6,7 @@ GMMONEY = {
 			["CLASS"] = "SHAMAN",
 		},
 		["Konac"] = {
-			["GOLD"] = 8986481,
+			["GOLD"] = 8987335,
 			["CLASS"] = "PRIEST",
 		},
 		["Mohikanac"] = {
@@ -14,12 +14,12 @@ GMMONEY = {
 			["CLASS"] = "HUNTER",
 		},
 		["Kamenac"] = {
-			["GOLD"] = 10047981,
+			["GOLD"] = 4047951,
 			["CLASS"] = "WARRIOR",
 		},
 	},
 }
 GMMONEYSET = {
-	["TEXTMODE"] = true,
 	["FULLDISP"] = true,
+	["TEXTMODE"] = true,
 }

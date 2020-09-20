@@ -1,0 +1,55 @@
+
+FLogVars = {
+	["enabled"] = false,
+	["sessions"] = {
+		["default"] = {
+			["ah"] = 0,
+			["drops"] = {
+			},
+			["rep"] = {
+			},
+			["goldPerHour"] = 0,
+			["skill"] = {
+			},
+			["vendor"] = 0,
+			["xp"] = 0,
+			["kills"] = {
+			},
+			["honor"] = 0,
+			["gold"] = 0,
+			["seconds"] = 554,
+			["resets"] = 0,
+			["bls"] = {
+			},
+			["lastUse"] = 1600598514,
+		},
+	},
+	["lockMinimapButton"] = false,
+	["ver"] = 1.1301,
+	["inInstance"] = false,
+	["itemTooltip"] = true,
+	["frameRect"] = {
+		["y"] = -301.000213623047,
+		["x"] = -7.00005149841309,
+		["point"] = "RIGHT",
+		["height"] = 200,
+		["visible"] = false,
+		["width"] = 250.000091552734,
+	},
+	["currentSession"] = "default",
+	["minimapButtonPosition"] = {
+		["y"] = -139.590896606445,
+		["x"] = 4.90963697433472,
+		["point"] = "TOPRIGHT",
+	},
+	["enableMinimapButton"] = true,
+	["bls"] = {
+	},
+	["lockFrames"] = false,
+}
+FLogSVEnabled = nil
+FLogSVSessions = nil
+FLogSVCurrentSession = nil
+FLogSVLastInstance = nil
+FLogSVInInstance = nil
+FLogSVAutoSwitchOnInstances = nil

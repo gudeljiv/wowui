@@ -4,13 +4,13 @@ VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:1179
+/use [nocombat]item:0
 /castsequence [combat]
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:4541
-/castsequence [combat]
+/use [nocombat]item:0
+/castsequence [combat]item:118,item:118
 END
 VER 3 0000000000000001 "FRAME" "132150"
 /run TargetFrameDebuff1Count:ClearAllPoints()
@@ -26,9 +26,9 @@ VER 3 0000000000000002 "MOVE" "Ability_Ambush."
 /run XVRB2_wrap:SetPoint("BOTTOM", PlayerXPFrameStatusBar, "TOP", 0, 30)
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
-#showtooltip item:0
+#showtooltip item:12184
 /cast feed pet
-/use item:0
+/use item:12184
 END
 VER 3 000000000000000A "TSMMacro" "INV_Misc_Flower_01"
 /click TSMAuctioningBtn
