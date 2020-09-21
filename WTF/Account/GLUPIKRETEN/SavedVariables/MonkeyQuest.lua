@@ -55,25 +55,25 @@ MonkeyQuestConfig = {
 			["The Venture Co. - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Druid - true"] = {
+			["Wildmane Cleansing - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Journey to the Crossroads - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Wildmane Totem - false"] = {
+			["Druid - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Wildmane Cleansing - false"] = {
+			["Wildmane Totem - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Supervisor Fizsprocket - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Heeding the Call - false"] = {
+			["Thunderhorn Cleansing - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Rite of Wisdom - false"] = {
+			["Heeding the Call - false"] = {
 				["m_bChecked"] = true,
 			},
 			["The Ravaged Caravan - false"] = {
@@ -85,7 +85,7 @@ MonkeyQuestConfig = {
 			["Dwarven Digging - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Thunderhorn Cleansing - false"] = {
+			["Rite of Wisdom - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Mulgore - true"] = {
@@ -299,25 +299,73 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Augustin"] = {
 		["m_aQuestList"] = {
-			["The Barrens - true"] = {
+			["WANTED: Baron Longshore - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Echeyakee - false"] = {
+			["Hezrul Bloodmark - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Serena Bloodfeather - false"] = {
+			["Jorn Skyseer - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Altered Beings - false"] = {
+			["Raptor Horns - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Southsea Freebooters - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Ishamuhale - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Runed Scroll - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Miner's Fortune - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Stolen Booty - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Enraged Thunder Lizards - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Angry Scytheclaws - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Guns of Northwatch - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Smart Drinks - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Missing Shipment - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Verog the Dervish - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Stolen Silver - false"] = {
+			["Counterattack! - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Wharfmaster Dizzywig - false"] = {
+			["Wailing Caverns - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Consumed by Hatred - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Lost in Battle - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Barrens - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Blood Shards of Agamaggan - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Lakota'mani - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Tribes at War - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -847,9 +895,9 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 891.965698242188,
+		["m_iFrameBottom"] = 1169.39990234375,
 		["m_bHideCompletedQuests"] = true,
-		["m_iFrameLeft"] = 2019.82434082031,
+		["m_iFrameLeft"] = 2097.39990234375,
 		["m_bColourDoneOrFailed"] = true,
 		["m_bLocked"] = true,
 		["m_bNoBorder"] = true,
@@ -866,7 +914,7 @@ MonkeyQuestConfig = {
 		["m_iFrameWidth"] = 270,
 		["m_bCrashBorder"] = false,
 		["m_strHeaderOpenColour"] = "|cffbfbfff",
-		["m_iFrameTop"] = 1163.76354980469,
+		["m_iFrameTop"] = 1207.39990234375,
 		["m_bObjectives"] = true,
 		["m_bHideHeader"] = false,
 		["m_bShowTooltipObjectives"] = true,

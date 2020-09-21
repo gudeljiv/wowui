@@ -22,13 +22,13 @@ QuestieConfig = {
 		["Korupcija - Stonespine"] = "Default",
 		["Mxym - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
-		["Jaroslav - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
 		["Vermins - Dreadmist"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
 		["Koloman - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default",
+		["Jaroslav - Golemagg"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Default",
 		["Antun - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Default",
@@ -91,12 +91,12 @@ QuestieConfig = {
 				[840] = true,
 				[848] = true,
 				[805] = true,
-				[1087] = true,
+				[4841] = true,
 				[872] = true,
 				[880] = true,
 				[888] = true,
 				[896] = true,
-				[4841] = true,
+				[1087] = true,
 				[5041] = true,
 				[865] = true,
 				[674] = true,
@@ -2227,22 +2227,31 @@ QuestieConfig = {
 			},
 		},
 		["Mxyz - Golemagg"] = {
-			["TrackerWidth"] = 0,
+			["collapsedZones"] = {
+			},
+			["AutoUntrackedQuests"] = {
+			},
 			["migrationVersion"] = 1,
 			["complete"] = {
 				[5441] = true,
-				[804] = true,
+				[790] = true,
 				[4402] = true,
 				[363] = true,
-				[790] = true,
+				[364] = true,
 				[3097] = true,
 				[788] = true,
-				[364] = true,
+				[804] = true,
 			},
 			["TrackerHiddenQuests"] = {
 			},
+			["trackerSetpoint"] = "AUTO",
 			["collapsedQuests"] = {
 			},
+			["TrackedQuests"] = {
+			},
+			["TrackerHiddenObjectives"] = {
+			},
+			["TrackerWidth"] = 0,
 			["journey"] = {
 				{
 					["Timestamp"] = 1594142104,
@@ -2418,15 +2427,6 @@ QuestieConfig = {
 					["SubType"] = "Abandon",
 					["Event"] = "Quest",
 				}, -- [26]
-			},
-			["trackerSetpoint"] = "AUTO",
-			["TrackerHiddenObjectives"] = {
-			},
-			["collapsedZones"] = {
-			},
-			["AutoUntrackedQuests"] = {
-			},
-			["TrackedQuests"] = {
 			},
 		},
 		["Verminz - Golemagg"] = {
@@ -6428,7 +6428,7 @@ QuestieConfig = {
 				[3921] = true,
 				[825] = true,
 				[857] = true,
-				[550] = true,
+				[805] = true,
 				[3923] = true,
 				[6301] = true,
 				[3924] = true,
@@ -6438,23 +6438,23 @@ QuestieConfig = {
 				[858] = true,
 				[890] = true,
 				[837] = true,
-				[805] = true,
+				[1096] = true,
 				[6283] = true,
 				[1068] = true,
 				[6571] = true,
 				[827] = true,
-				[6641] = true,
+				[868] = true,
 				[891] = true,
 				[5041] = true,
-				[6384] = true,
-				[868] = true,
+				[804] = true,
+				[6386] = true,
 				[581] = true,
 				[541] = true,
 				[828] = true,
 				[216] = true,
 				[892] = true,
 				[924] = true,
-				[549] = true,
+				[1094] = true,
 				[1060] = true,
 				[4542] = true,
 				[5726] = true,
@@ -6513,15 +6513,15 @@ QuestieConfig = {
 				[6381] = true,
 				[6382] = true,
 				[5730] = true,
-				[1094] = true,
+				[549] = true,
 				[6385] = true,
-				[6386] = true,
+				[6641] = true,
 				[900] = true,
 				[1095] = true,
-				[804] = true,
+				[6384] = true,
 				[499] = true,
 				[5881] = true,
-				[1096] = true,
+				[550] = true,
 				[6393] = true,
 				[6394] = true,
 				[901] = true,
@@ -9275,56 +9275,85 @@ QuestieConfig = {
 			},
 		},
 		["Augustin - Golemagg"] = {
-			["TrackerWidth"] = 0,
-			["AutoUntrackedQuests"] = {
+			["collapsedZones"] = {
 			},
 			["migrationVersion"] = 1,
 			["complete"] = {
 				[1884] = true,
 				[826] = true,
+				[891] = true,
+				[895] = true,
 				[834] = true,
+				[899] = true,
+				[870] = true,
 				[840] = true,
 				[842] = true,
 				[844] = true,
 				[364] = true,
-				[848] = true,
+				[365] = true,
 				[850] = true,
+				[3281] = true,
+				[882] = true,
+				[5052] = true,
+				[878] = true,
+				[4021] = true,
+				[852] = true,
+				[4921] = true,
+				[3261] = true,
+				[851] = true,
 				[376] = true,
 				[872] = true,
+				[905] = true,
+				[876] = true,
 				[380] = true,
 				[817] = true,
 				[382] = true,
 				[383] = true,
 				[1882] = true,
+				[888] = true,
+				[890] = true,
+				[892] = true,
+				[871] = true,
+				[887] = true,
 				[835] = true,
 				[837] = true,
+				[3901] = true,
+				[1883] = true,
+				[3902] = true,
 				[845] = true,
 				[6395] = true,
-				[381] = true,
+				[869] = true,
 				[5041] = true,
-				[8] = true,
-				[1883] = true,
+				[1492] = true,
 				[855] = true,
-				[3901] = true,
-				[365] = true,
+				[903] = true,
+				[881] = true,
+				[880] = true,
+				[848] = true,
+				[865] = true,
+				[867] = true,
 				[407] = true,
 				[808] = true,
-				[867] = true,
-				[869] = true,
-				[871] = true,
-				[3902] = true,
+				[363] = true,
 				[875] = true,
 				[877] = true,
-				[363] = true,
+				[8] = true,
 				[818] = true,
-				[870] = true,
+				[883] = true,
 				[3098] = true,
-				[903] = true,
+				[381] = true,
 			},
 			["TrackerHiddenQuests"] = {
 			},
-			["trackerSetpoint"] = "AUTO",
 			["collapsedQuests"] = {
+			},
+			["TrackedQuests"] = {
+			},
+			["trackerSetpoint"] = "AUTO",
+			["TrackerHiddenObjectives"] = {
+			},
+			["TrackerWidth"] = 0,
+			["AutoUntrackedQuests"] = {
 			},
 			["journey"] = {
 				{
@@ -10087,12 +10116,350 @@ QuestieConfig = {
 					["Quest"] = 880,
 					["Timestamp"] = 1600622564,
 				}, -- [112]
-			},
-			["collapsedZones"] = {
-			},
-			["TrackerHiddenObjectives"] = {
-			},
-			["TrackedQuests"] = {
+				{
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
+					["Timestamp"] = 1600700213,
+					["Quest"] = 887,
+					["Level"] = 13,
+				}, -- [113]
+				{
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
+					["Timestamp"] = 1600700251,
+					["Quest"] = 1492,
+					["Level"] = 13,
+				}, -- [114]
+				{
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
+					["Timestamp"] = 1600700253,
+					["Quest"] = 896,
+					["Level"] = 13,
+				}, -- [115]
+				{
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
+					["Timestamp"] = 1600700271,
+					["Quest"] = 895,
+					["Level"] = 13,
+				}, -- [116]
+				{
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
+					["Timestamp"] = 1600700289,
+					["Quest"] = 865,
+					["Level"] = 13,
+				}, -- [117]
+				{
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
+					["Timestamp"] = 1600700316,
+					["Quest"] = 891,
+					["Level"] = 13,
+				}, -- [118]
+				{
+					["Timestamp"] = 1600700913,
+					["Event"] = "Level",
+					["NewLevel"] = 14,
+				}, -- [119]
+				{
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
+					["Timestamp"] = 1600701876,
+					["Quest"] = 880,
+					["Level"] = 14,
+				}, -- [120]
+				{
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
+					["Timestamp"] = 1600701887,
+					["Quest"] = 899,
+					["Level"] = 14,
+				}, -- [121]
+				{
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
+					["Timestamp"] = 1600701890,
+					["Quest"] = 4921,
+					["Level"] = 14,
+				}, -- [122]
+				{
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
+					["Timestamp"] = 1600701899,
+					["Quest"] = 881,
+					["Level"] = 14,
+				}, -- [123]
+				{
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
+					["Timestamp"] = 1600701901,
+					["Quest"] = 905,
+					["Level"] = 14,
+				}, -- [124]
+				{
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
+					["Timestamp"] = 1600701939,
+					["Quest"] = 876,
+					["Level"] = 14,
+				}, -- [125]
+				{
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
+					["Timestamp"] = 1600701953,
+					["Quest"] = 3281,
+					["Level"] = 14,
+				}, -- [126]
+				{
+					["Timestamp"] = 1600702103,
+					["Quest"] = 887,
+					["Level"] = 14,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+				}, -- [127]
+				{
+					["Timestamp"] = 1600702105,
+					["Quest"] = 890,
+					["Level"] = 14,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+				}, -- [128]
+				{
+					["Timestamp"] = 1600702109,
+					["Quest"] = 895,
+					["Level"] = 14,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+				}, -- [129]
+				{
+					["Timestamp"] = 1600702138,
+					["Quest"] = 865,
+					["Level"] = 14,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+				}, -- [130]
+				{
+					["Timestamp"] = 1600702139,
+					["Quest"] = 1491,
+					["Level"] = 14,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+				}, -- [131]
+				{
+					["Timestamp"] = 1600702167,
+					["Event"] = "Level",
+					["NewLevel"] = 15,
+				}, -- [132]
+				{
+					["Timestamp"] = 1600702168,
+					["Quest"] = 891,
+					["Level"] = 15,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+				}, -- [133]
+				{
+					["Timestamp"] = 1600702196,
+					["Quest"] = 1491,
+					["Level"] = 15,
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
+				}, -- [134]
+				{
+					["Timestamp"] = 1600702278,
+					["Quest"] = 890,
+					["Level"] = 15,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+				}, -- [135]
+				{
+					["Timestamp"] = 1600702280,
+					["Quest"] = 892,
+					["Level"] = 15,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+				}, -- [136]
+				{
+					["Timestamp"] = 1600702318,
+					["Quest"] = 892,
+					["Level"] = 15,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+				}, -- [137]
+				{
+					["Timestamp"] = 1600702319,
+					["Quest"] = 888,
+					["Level"] = 15,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+				}, -- [138]
+				{
+					["Timestamp"] = 1600703112,
+					["Quest"] = 888,
+					["Level"] = 15,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+				}, -- [139]
+				{
+					["Timestamp"] = 1600703516,
+					["Quest"] = 905,
+					["Level"] = 15,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+				}, -- [140]
+				{
+					["Timestamp"] = 1600703518,
+					["Quest"] = 3261,
+					["Level"] = 15,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+				}, -- [141]
+				{
+					["Timestamp"] = 1600703645,
+					["Quest"] = 851,
+					["Level"] = 15,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+				}, -- [142]
+				{
+					["Timestamp"] = 1600703646,
+					["Quest"] = 852,
+					["Level"] = 15,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+				}, -- [143]
+				{
+					["Timestamp"] = 1600704062,
+					["Quest"] = 3513,
+					["Level"] = 15,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+				}, -- [144]
+				{
+					["Timestamp"] = 1600704238,
+					["Quest"] = 3261,
+					["Level"] = 15,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+				}, -- [145]
+				{
+					["Timestamp"] = 1600704239,
+					["Quest"] = 882,
+					["Level"] = 15,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+				}, -- [146]
+				{
+					["Timestamp"] = 1600704247,
+					["Quest"] = 878,
+					["Level"] = 15,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+				}, -- [147]
+				{
+					["Timestamp"] = 1600704492,
+					["Quest"] = 883,
+					["Level"] = 15,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+				}, -- [148]
+				{
+					["Timestamp"] = 1600705514,
+					["Quest"] = 899,
+					["Level"] = 15,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+				}, -- [149]
+				{
+					["Timestamp"] = 1600705521,
+					["Quest"] = 4921,
+					["Level"] = 15,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+				}, -- [150]
+				{
+					["Timestamp"] = 1600705603,
+					["Quest"] = 896,
+					["Level"] = 15,
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
+				}, -- [151]
+				{
+					["Timestamp"] = 1600705658,
+					["Quest"] = 852,
+					["Level"] = 15,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+				}, -- [152]
+				{
+					["Timestamp"] = 1600705664,
+					["Quest"] = 4021,
+					["Level"] = 15,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+				}, -- [153]
+				{
+					["Timestamp"] = 1600705834,
+					["Event"] = "Level",
+					["NewLevel"] = 16,
+				}, -- [154]
+				{
+					["Timestamp"] = 1600705835,
+					["Quest"] = 4021,
+					["Level"] = 16,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+				}, -- [155]
+				{
+					["Timestamp"] = 1600706179,
+					["Quest"] = 878,
+					["Level"] = 16,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+				}, -- [156]
+				{
+					["Timestamp"] = 1600706182,
+					["Quest"] = 5052,
+					["Level"] = 16,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+				}, -- [157]
+				{
+					["Timestamp"] = 1600706188,
+					["Quest"] = 5052,
+					["Level"] = 16,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+				}, -- [158]
+				{
+					["Timestamp"] = 1600706205,
+					["Quest"] = 882,
+					["Level"] = 16,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+				}, -- [159]
+				{
+					["Timestamp"] = 1600706207,
+					["Quest"] = 907,
+					["Level"] = 16,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+				}, -- [160]
+				{
+					["Timestamp"] = 1600706212,
+					["Quest"] = 883,
+					["Level"] = 16,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+				}, -- [161]
+				{
+					["Timestamp"] = 1600706220,
+					["Quest"] = 3513,
+					["Level"] = 16,
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
+				}, -- [162]
 			},
 		},
 		["Grgur - Golemagg"] = {

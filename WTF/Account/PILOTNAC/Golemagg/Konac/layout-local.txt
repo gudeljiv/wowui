@@ -22,9 +22,9 @@ W: 30
 H: 30
 Frame: InterfaceOptionsFrame
 FrameLevel: 1
-Anchor: TOP
-X: -215
-Y: -145
+Anchor: RIGHT
+X: -130
+Y: 24
 W: 858
 H: 660
 Frame: ItemRefTooltip

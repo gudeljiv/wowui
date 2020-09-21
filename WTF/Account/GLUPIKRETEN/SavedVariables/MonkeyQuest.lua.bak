@@ -61,10 +61,10 @@ MonkeyQuestConfig = {
 			["Journey to the Crossroads - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Rite of Wisdom - false"] = {
+			["Heeding the Call - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Wildmane Cleansing - false"] = {
+			["Wildmane Totem - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Supervisor Fizsprocket - false"] = {
@@ -73,7 +73,7 @@ MonkeyQuestConfig = {
 			["The Ravaged Caravan - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Thunderhorn Cleansing - false"] = {
+			["Rite of Wisdom - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Dwarven Digging - false"] = {
@@ -82,13 +82,13 @@ MonkeyQuestConfig = {
 			["The Hunter's Way - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Heeding the Call - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Wildmane Totem - false"] = {
+			["Thunderhorn Cleansing - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Druid - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Wildmane Cleansing - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -299,67 +299,73 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Augustin"] = {
 		["m_aQuestList"] = {
-			["Serena Bloodfeather - false"] = {
+			["WANTED: Baron Longshore - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Stolen Silver - false"] = {
+			["Hezrul Bloodmark - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Plainstrider Menace - false"] = {
+			["Jorn Skyseer - false"] = {
 				["m_bChecked"] = true,
 			},
-			["The Forgotten Pools - false"] = {
+			["Raptor Horns - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Fungal Spores - false"] = {
+			["Southsea Freebooters - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Centaur Bracers - false"] = {
+			["Ishamuhale - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Supplies for the Crossroads - false"] = {
+			["The Runed Scroll - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Harpy Raiders - false"] = {
+			["Miner's Fortune - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Raptor Thieves - false"] = {
+			["Stolen Booty - false"] = {
 				["m_bChecked"] = true,
 			},
-			["The Zhevra - false"] = {
+			["Enraged Thunder Lizards - false"] = {
 				["m_bChecked"] = true,
 			},
-			["The Stagnant Oasis - false"] = {
+			["Blood Shards of Agamaggan - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Verog the Dervish - false"] = {
+			["The Guns of Northwatch - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Prowlers of the Barrens - false"] = {
+			["Smart Drinks - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Counterattack! - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Lakota'mani - false"] = {
 				["m_bChecked"] = true,
 			},
 			["The Barrens - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Altered Beings - false"] = {
+			["Wailing Caverns - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Echeyakee - false"] = {
+			["Consumed by Hatred - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Kolkar Leaders - false"] = {
+			["Lost in Battle - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Disrupt the Attacks - false"] = {
+			["Verog the Dervish - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Harpy Lieutenants - false"] = {
+			["The Missing Shipment - false"] = {
 				["m_bChecked"] = true,
 			},
-			["The Disruption Ends - false"] = {
+			["The Angry Scytheclaws - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Wharfmaster Dizzywig - false"] = {
+			["Tribes at War - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -1159,9 +1165,9 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 1125.76354980469,
+		["m_iFrameBottom"] = 1121.39990234375,
 		["m_bHideTitleButtons"] = false,
-		["m_iFrameLeft"] = 2019.82434082031,
+		["m_iFrameLeft"] = 2097.39990234375,
 		["m_bColourDoneOrFailed"] = true,
 		["m_bLocked"] = true,
 		["m_bNoBorder"] = true,
@@ -1178,7 +1184,7 @@ MonkeyQuestConfig = {
 		["m_strMidObjectiveColour"] = "|cFFFFFF00",
 		["m_bCrashBorder"] = false,
 		["m_strHeaderOpenColour"] = "|cffbfbfff",
-		["m_iFrameTop"] = 1163.76354980469,
+		["m_iFrameTop"] = 1207.39990234375,
 		["m_bObjectives"] = true,
 		["m_bHideHeader"] = false,
 		["m_bShowNumQuests"] = true,

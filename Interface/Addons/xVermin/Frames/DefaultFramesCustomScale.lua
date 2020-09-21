@@ -10,7 +10,8 @@ for i, v in pairs(
 		MailFrame,
 		MacroFrame,
 		ItemTextFrame,
-		DressUpFrame
+		DressUpFrame,
+		TaxiFrame
 	}
 ) do
 	v:SetScale(1.2)

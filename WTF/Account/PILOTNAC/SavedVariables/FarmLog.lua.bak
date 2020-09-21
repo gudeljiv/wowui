@@ -1,6 +1,8 @@
 
 FLogGlobalVars = {
-	["ignoredItems"] = {
+	["ahPrice"] = {
+		["Golemagg"] = {
+		},
 	},
 	["blt"] = {
 		["Golemagg"] = {
@@ -19,18 +21,16 @@ FLogGlobalVars = {
 		["Golemagg"] = {
 		},
 	},
-	["ahPrice"] = {
-		["Golemagg"] = {
-		},
-	},
+	["ver"] = 1.1301,
 	["resumeSessionOnSwitch"] = true,
-	["sortBy"] = "A",
+	["sortSessionBy"] = "A",
 	["dismissLootWindowOnEsc"] = false,
 	["reportTo"] = {
 	},
-	["sortSessionBy"] = "A",
+	["sortBy"] = "A",
 	["groupByMobName"] = true,
-	["ver"] = 1.1301,
+	["ignoredItems"] = {
+	},
 }
 FLogSVDebugMode = nil
 FLogSVItemRarity = nil

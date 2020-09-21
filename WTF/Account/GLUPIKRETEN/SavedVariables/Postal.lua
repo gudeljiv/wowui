@@ -4,7 +4,7 @@ Postal3ClassicDB = {
 		["BlackBook"] = {
 			["alts"] = {
 				"Antun|Golemagg|Horde|1|SHAMAN", -- [1]
-				"Augustin|Golemagg|Horde|13|MAGE", -- [2]
+				"Augustin|Golemagg|Horde|14|MAGE", -- [2]
 				"Dmitar|Golemagg|Horde|2|PRIEST", -- [3]
 				"Grgur|Golemagg|Horde|1|WARLOCK", -- [4]
 				"Jaroslav|Golemagg|Horde|9|DRUID", -- [5]
