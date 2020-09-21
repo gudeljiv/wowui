@@ -1,14 +1,14 @@
 
 FLogGlobalVars = {
-	["ignoredItems"] = {
-	},
+	["ver"] = 1.1301,
 	["blt"] = {
 		["Golemagg"] = {
 		},
 	},
 	["debug"] = false,
 	["ahMinQuality"] = 1,
-	["autoSwitchInstances"] = true,
+	["ignoredItems"] = {
+	},
 	["blp"] = {
 	},
 	["ahScan"] = {
@@ -24,13 +24,13 @@ FLogGlobalVars = {
 		},
 	},
 	["resumeSessionOnSwitch"] = true,
-	["sortBy"] = "A",
+	["sortSessionBy"] = "A",
 	["dismissLootWindowOnEsc"] = false,
 	["reportTo"] = {
 	},
-	["sortSessionBy"] = "A",
+	["sortBy"] = "A",
 	["groupByMobName"] = true,
-	["ver"] = 1.1301,
+	["autoSwitchInstances"] = true,
 }
 FLogSVDebugMode = nil
 FLogSVItemRarity = nil
