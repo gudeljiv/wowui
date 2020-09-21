@@ -60,10 +60,6 @@ ChocolateBarDB = {
 					["barOffx"] = -88.3325424194336,
 				},
 			},
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["locked"] = false,
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -74,10 +70,11 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
 			},
+			["locked"] = false,
+			["fixedStrata"] = true,
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -283,16 +280,16 @@ ChocolateBarDB = {
 					["showText"] = false,
 					["customLabel"] = "R",
 				},
+				["TestNoText"] = {
+					["enabled"] = false,
+					["index"] = 4,
+					["barName"] = "ChocolateBar1",
+				},
 				["Leatrix_Maps"] = {
 					["enabled"] = false,
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
-				},
-				["TestNoText"] = {
-					["enabled"] = false,
-					["index"] = 4,
-					["barName"] = "ChocolateBar1",
 				},
 				["TradeSkillMaster"] = {
 					["align"] = "right",
@@ -342,14 +339,17 @@ ChocolateBarDB = {
 				},
 			},
 			["desaturated"] = false,
-			["forceColor"] = false,
-			["fixedStrata"] = true,
 			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["fontName"] = "Friz Quadrata TT",
+			["moveFrames"] = false,
 			["gap"] = 0,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["fontName"] = "Friz Quadrata TT",
-			["moveFrames"] = false,
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+			},
+			["forceColor"] = false,
 			["textColor"] = {
 				["a"] = 1,
 				["b"] = 1,
@@ -373,7 +373,7 @@ CB_PlayedTime = {
 		["total"] = 1719,
 	},
 	["Mxyz-"] = {
-		["total"] = 119855,
+		["total"] = 121125,
 	},
 	["Antun-"] = {
 		["total"] = 52,
@@ -399,11 +399,11 @@ CB_PlayedTime = {
 	["Augustin-"] = {
 		["total"] = 35390,
 	},
-	["Dmitar-"] = {
-		["total"] = 517,
+	["Whatevs-"] = {
+		["total"] = 213,
 	},
-	["Vermins-"] = {
-		["total"] = 3014,
+	["Mxyzptlk-"] = {
+		["total"] = 8398,
 	},
 	["Dotwise-"] = {
 		["total"] = 3924,
@@ -426,13 +426,13 @@ CB_PlayedTime = {
 	["Grgur-"] = {
 		["total"] = 562,
 	},
-	["Mxyzptlk-"] = {
-		["total"] = 8398,
+	["Vermins-"] = {
+		["total"] = 3014,
 	},
 	["Koloman-"] = {
 		["total"] = 129,
 	},
-	["Whatevs-"] = {
-		["total"] = 213,
+	["Dmitar-"] = {
+		["total"] = 517,
 	},
 }
