@@ -8,7 +8,7 @@ FLogVars = {
 			},
 			["lastUse"] = 1600598265,
 			["goldPerHour"] = 0,
-			["skill"] = {
+			["rep"] = {
 			},
 			["vendor"] = 0,
 			["resets"] = 0,
@@ -20,16 +20,16 @@ FLogVars = {
 			["xp"] = 0,
 			["bls"] = {
 			},
-			["rep"] = {
+			["skill"] = {
 			},
 		},
 	},
 	["lockMinimapButton"] = false,
+	["inInstance"] = false,
+	["ver"] = 1.1301,
+	["itemTooltip"] = true,
 	["bls"] = {
 	},
-	["inInstance"] = false,
-	["itemTooltip"] = true,
-	["ver"] = 1.1301,
 	["currentSession"] = "default",
 	["minimapButtonPosition"] = {
 		["y"] = -139.590896606445,
