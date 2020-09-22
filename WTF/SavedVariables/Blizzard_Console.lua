@@ -1,6 +1,7 @@
 
 Blizzard_Console_SavedVars = {
 	["version"] = 3,
+	["height"] = 300,
 	["messageHistory"] = {
 		{
 			"DBCache::CancelCallback ignored", -- [1]
@@ -187,591 +188,591 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [46]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [47]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [48]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Sorting particles normally.", -- [1]
 			0, -- [2]
 		}, -- [49]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Water detail changed to 3", -- [1]
 			0, -- [2]
 		}, -- [50]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Ripple detail changed to 2", -- [1]
 			0, -- [2]
 		}, -- [51]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Reflection mode changed to 3", -- [1]
 			0, -- [2]
 		}, -- [52]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
 		}, -- [53]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [54]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Enabling BSP node cache (first time - starting up)", -- [1]
 			0, -- [2]
 		}, -- [55]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"WorldPoolUsage must be stream, dynamic or static.", -- [1]
 			0, -- [2]
 		}, -- [56]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CVar 'worldPoolUsage' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [57]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Alpha map bit depth set to 8bit on restart.", -- [1]
 			0, -- [2]
 		}, -- [58]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Volume fog enabled.", -- [1]
 			0, -- [2]
 		}, -- [59]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Projected textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [60]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Shadow mode changed to 4 - 4 band dynamic shadows, 2048", -- [1]
 			0, -- [2]
 		}, -- [61]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
 		}, -- [62]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Soft shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [63]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"SSAO mode set to 4", -- [1]
 			0, -- [2]
 		}, -- [64]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"SSAO distance value set to 100.000000", -- [1]
 			0, -- [2]
 		}, -- [65]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"SSAO blur set to 2", -- [1]
 			0, -- [2]
 		}, -- [66]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
 		}, -- [67]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [68]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Render scale changed to 1", -- [1]
 			0, -- [2]
 		}, -- [69]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Resample quality changed to 1", -- [1]
 			0, -- [2]
 		}, -- [70]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"MSAA disabled", -- [1]
 			0, -- [2]
 		}, -- [71]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"MSAA for alpha-test enabled.", -- [1]
 			0, -- [2]
 		}, -- [72]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
 		}, -- [73]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
 		}, -- [74]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"World preload object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [75]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"World load object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [76]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"World preload non critical disabled.", -- [1]
 			0, -- [2]
 		}, -- [77]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [78]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"FFX: Anti Aliasing Mode set to CMAA", -- [1]
 			0, -- [2]
 		}, -- [79]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"FFX: Color Blind Test Mode Disabled", -- [1]
 			0, -- [2]
 		}, -- [80]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"FFX: Color correction enabled", -- [1]
 			0, -- [2]
 		}, -- [81]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Full memory crash dump disabled", -- [1]
 			0, -- [2]
 		}, -- [82]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Error display disabled", -- [1]
 			0, -- [2]
 		}, -- [83]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Error display shown", -- [1]
 			0, -- [2]
 		}, -- [84]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [85]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [86]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Now filtering: all messages", -- [1]
 			0, -- [2]
 		}, -- [87]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [88]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [89]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [90]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [91]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Starting loginlauncherPortal=\"eu.actual.battle.net\" loginPortal=\"eu.actual.battle.net:1119\"", -- [1]
 			0, -- [2]
 		}, -- [92]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Resetting", -- [1]
 			0, -- [2]
 		}, -- [93]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] Initializing", -- [1]
 			0, -- [2]
 		}, -- [94]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] Attempting logonhost=\"eu.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
 		}, -- [95]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [96]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [97]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [98]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Logon complete.", -- [1]
 			0, -- [2]
 		}, -- [99]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [100]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] Requesting realm list ticket", -- [1]
 			0, -- [2]
 		}, -- [101]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [102]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [103]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [104]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] Requesting last played charsnumSubRegions=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [105]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Realm list ready.", -- [1]
 			0, -- [2]
 		}, -- [106]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] Joining realmsubRegion=\"43-101-89\" realmAddress=\"43-4-8\"", -- [1]
 			0, -- [2]
 		}, -- [107]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [108]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"NetClient::HandleConnect()\n", -- [1]
 			0, -- [2]
 		}, -- [109]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [110]
 		{
-			"Sorting particles normally.", -- [1]
+			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [111]
 		{
-			"Water detail changed to 3", -- [1]
+			"[GlueLogin] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [112]
 		{
-			"Ripple detail changed to 2", -- [1]
+			"Got new connection 2", -- [1]
 			0, -- [2]
 		}, -- [113]
 		{
-			"Reflection mode changed to 3", -- [1]
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
 			0, -- [2]
 		}, -- [114]
 		{
-			"Reflection downscale changed to 0", -- [1]
+			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
 		}, -- [115]
 		{
-			"Sunshafts quality changed to 2", -- [1]
+			"[GlueLogin] Disconnected from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [116]
 		{
-			"Enabling BSP node cache (first time - starting up)", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [117]
 		{
-			"WorldPoolUsage must be stream, dynamic or static.", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [118]
 		{
-			"CVar 'worldPoolUsage' failed validation for its initial value.", -- [1]
+			"Proficiency in item class 2 set to 0x0000000010", -- [1]
 			0, -- [2]
 		}, -- [119]
 		{
-			"Alpha map bit depth set to 8bit on restart.", -- [1]
+			"Proficiency in item class 4 set to 0x0000000001", -- [1]
 			0, -- [2]
 		}, -- [120]
 		{
-			"Volume fog enabled.", -- [1]
+			"Proficiency in item class 2 set to 0x0000004010", -- [1]
 			0, -- [2]
 		}, -- [121]
 		{
-			"Projected textures enabled.", -- [1]
+			"Proficiency in item class 2 set to 0x0000084010", -- [1]
 			0, -- [2]
 		}, -- [122]
 		{
-			"Shadow mode changed to 4 - 4 band dynamic shadows, 2048", -- [1]
+			"Proficiency in item class 4 set to 0x0000000003", -- [1]
 			0, -- [2]
 		}, -- [123]
 		{
-			"Shadow texture size changed to 2048.", -- [1]
+			"Proficiency in item class 2 set to 0x0000084010", -- [1]
 			0, -- [2]
 		}, -- [124]
 		{
-			"Soft shadows changed to 1.", -- [1]
+			"Proficiency in item class 4 set to 0x0000000003", -- [1]
 			0, -- [2]
 		}, -- [125]
 		{
-			"SSAO mode set to 4", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [126]
 		{
-			"SSAO distance value set to 100.000000", -- [1]
+			"Time set to 9/21/2020 (Mon) 22:24", -- [1]
 			0, -- [2]
 		}, -- [127]
 		{
-			"SSAO blur set to 2", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [128]
 		{
-			"SkyCloudLOD set to 0", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [129]
 		{
-			"Terrain mip level changed to 0.", -- [1]
+			"Total: 1d 9h 37m 55s", -- [1]
 			0, -- [2]
 		}, -- [130]
 		{
-			"Render scale changed to 1", -- [1]
+			"Level: 1d 8h 2m 9s", -- [1]
 			0, -- [2]
 		}, -- [131]
 		{
-			"Resample quality changed to 1", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [132]
 		{
-			"MSAA disabled", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [133]
 		{
-			"MSAA for alpha-test enabled.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [134]
 		{
-			"Component texture lod changed to 0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [135]
 		{
-			"Component texture lod changed to 0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [136]
 		{
-			"World preload object sort enabled.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [137]
 		{
-			"World load object sort enabled.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [138]
 		{
-			"World preload non critical disabled.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [139]
 		{
-			"World preload high res textures enabled.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [140]
 		{
-			"FFX: Anti Aliasing Mode set to CMAA", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [141]
 		{
-			"FFX: Color Blind Test Mode Disabled", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [142]
 		{
-			"FFX: Color correction enabled", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [143]
 		{
-			"Full memory crash dump disabled", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [144]
 		{
-			"Error display disabled", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [145]
 		{
-			"Error display shown", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [146]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [147]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [148]
 		{
-			"Now filtering: all messages", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [149]
 		{
-			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [150]
 		{
-			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [151]
 		{
-			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [152]
 		{
-			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [153]
 		{
-			"[GlueLogin] Starting loginlauncherPortal=\"eu.actual.battle.net\" loginPortal=\"eu.actual.battle.net:1119\"", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [154]
 		{
-			"[GlueLogin] Resetting", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [155]
 		{
-			"[IBN_Login] Initializing", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [156]
 		{
-			"[IBN_Login] Attempting logonhost=\"eu.actual.battle.net\" port=\"1119\"", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [157]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [158]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [159]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [160]
 		{
-			"[GlueLogin] Logon complete.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [161]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [162]
 		{
-			"[IBN_Login] Requesting realm list ticket", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [163]
 		{
-			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [164]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [165]
 		{
-			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [166]
 		{
-			"[IBN_Login] Requesting last played charsnumSubRegions=\"1\"", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [167]
 		{
-			"[GlueLogin] Realm list ready.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [168]
 		{
-			"[IBN_Login] Joining realmsubRegion=\"43-101-89\" realmAddress=\"43-4-8\"", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [169]
 		{
-			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [170]
 		{
-			"NetClient::HandleConnect()\n", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [171]
 		{
-			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [172]
 		{
-			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [173]
 		{
-			"[GlueLogin] Disconnecting from authentication server.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [174]
 		{
-			"Got new connection 2", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [175]
 		{
-			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [176]
 		{
-			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [177]
 		{
-			"[GlueLogin] Disconnected from authentication server.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [178]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [179]
 		{
-			"Got new connection 3", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [180]
 		{
-			"Proficiency in item class 2 set to 0x0000000010", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [181]
 		{
-			"Proficiency in item class 4 set to 0x0000000001", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [182]
 		{
-			"Proficiency in item class 2 set to 0x0000004010", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [183]
 		{
-			"Proficiency in item class 2 set to 0x0000084010", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [184]
 		{
-			"Proficiency in item class 4 set to 0x0000000003", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [185]
 		{
-			"Proficiency in item class 2 set to 0x0000084010", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [186]
 		{
-			"Proficiency in item class 4 set to 0x0000000003", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [187]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [188]
 		{
-			"Time set to 9/21/2020 (Mon) 21:49", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [189]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [190]
 		{
-			"Time played:", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [191]
 		{
-			"Total: 1d 9h 28m 48s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [192]
 		{
-			"Level: 1d 7h 53m 2s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [193]
 		{
@@ -803,15 +804,15 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [200]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [201]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Total: 1d 9h 38m 45s", -- [1]
 			0, -- [2]
 		}, -- [202]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Level: 1d 8h 2m 59s", -- [1]
 			0, -- [2]
 		}, -- [203]
 		{
@@ -1239,15 +1240,15 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [309]
 		{
-			"Time played:", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [310]
 		{
-			"Total: 1d 9h 29m 37s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [311]
 		{
-			"Level: 1d 7h 53m 51s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [312]
 		{
@@ -1811,1255 +1812,1255 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [452]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [453]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [454]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Sorting particles normally.", -- [1]
 			0, -- [2]
 		}, -- [455]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Water detail changed to 3", -- [1]
 			0, -- [2]
 		}, -- [456]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Ripple detail changed to 2", -- [1]
 			0, -- [2]
 		}, -- [457]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Reflection mode changed to 3", -- [1]
 			0, -- [2]
 		}, -- [458]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
 		}, -- [459]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [460]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Enabling BSP node cache (first time - starting up)", -- [1]
 			0, -- [2]
 		}, -- [461]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"WorldPoolUsage must be stream, dynamic or static.", -- [1]
 			0, -- [2]
 		}, -- [462]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CVar 'worldPoolUsage' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [463]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Alpha map bit depth set to 8bit on restart.", -- [1]
 			0, -- [2]
 		}, -- [464]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Volume fog enabled.", -- [1]
 			0, -- [2]
 		}, -- [465]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Projected textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [466]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Shadow mode changed to 4 - 4 band dynamic shadows, 2048", -- [1]
 			0, -- [2]
 		}, -- [467]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
 		}, -- [468]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Soft shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [469]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"SSAO mode set to 4", -- [1]
 			0, -- [2]
 		}, -- [470]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"SSAO distance value set to 100.000000", -- [1]
 			0, -- [2]
 		}, -- [471]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"SSAO blur set to 2", -- [1]
 			0, -- [2]
 		}, -- [472]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
 		}, -- [473]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [474]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Render scale changed to 1", -- [1]
 			0, -- [2]
 		}, -- [475]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Resample quality changed to 1", -- [1]
 			0, -- [2]
 		}, -- [476]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"MSAA disabled", -- [1]
 			0, -- [2]
 		}, -- [477]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"MSAA for alpha-test disabled.", -- [1]
 			0, -- [2]
 		}, -- [478]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
 		}, -- [479]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
 		}, -- [480]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"World preload object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [481]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"World load object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [482]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"World preload non critical disabled.", -- [1]
 			0, -- [2]
 		}, -- [483]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [484]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"FFX: Anti Aliasing Mode set to CMAA", -- [1]
 			0, -- [2]
 		}, -- [485]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"FFX: Color Blind Test Mode Disabled", -- [1]
 			0, -- [2]
 		}, -- [486]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"FFX: Color correction enabled", -- [1]
 			0, -- [2]
 		}, -- [487]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CVar 'fullDump' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [488]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Error display disabled", -- [1]
 			0, -- [2]
 		}, -- [489]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Error display shown", -- [1]
 			0, -- [2]
 		}, -- [490]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [491]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [492]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Now filtering: all messages", -- [1]
 			0, -- [2]
 		}, -- [493]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [494]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [495]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [496]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [497]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Starting loginlauncherPortal=\"eu.actual.battle.net\" loginPortal=\"eu.actual.battle.net:1119\"", -- [1]
 			0, -- [2]
 		}, -- [498]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Resetting", -- [1]
 			0, -- [2]
 		}, -- [499]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] Initializing", -- [1]
 			0, -- [2]
 		}, -- [500]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] Attempting logonhost=\"eu.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
 		}, -- [501]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [502]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [503]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [504]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Logon complete.", -- [1]
 			0, -- [2]
 		}, -- [505]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [506]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] Requesting realm list ticket", -- [1]
 			0, -- [2]
 		}, -- [507]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\"", -- [1]
 			0, -- [2]
 		}, -- [508]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Fatal error while logging inresult=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"Error getting RealmList ticket\")\"", -- [1]
 			0, -- [2]
 		}, -- [509]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
 		}, -- [510]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Disconnected from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [511]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] DestroyingisInitialized=\"true\"", -- [1]
 			0, -- [2]
 		}, -- [512]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [513]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Sorting particles normally.", -- [1]
 			0, -- [2]
 		}, -- [514]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Water detail changed to 3", -- [1]
 			0, -- [2]
 		}, -- [515]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Ripple detail changed to 2", -- [1]
 			0, -- [2]
 		}, -- [516]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Reflection mode changed to 3", -- [1]
 			0, -- [2]
 		}, -- [517]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
 		}, -- [518]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [519]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Enabling BSP node cache (first time - starting up)", -- [1]
 			0, -- [2]
 		}, -- [520]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"WorldPoolUsage must be stream, dynamic or static.", -- [1]
 			0, -- [2]
 		}, -- [521]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CVar 'worldPoolUsage' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [522]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Alpha map bit depth set to 8bit on restart.", -- [1]
 			0, -- [2]
 		}, -- [523]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Volume fog enabled.", -- [1]
 			0, -- [2]
 		}, -- [524]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Projected textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [525]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Shadow mode changed to 4 - 4 band dynamic shadows, 2048", -- [1]
 			0, -- [2]
 		}, -- [526]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
 		}, -- [527]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Soft shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [528]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"SSAO mode set to 4", -- [1]
 			0, -- [2]
 		}, -- [529]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"SSAO distance value set to 100.000000", -- [1]
 			0, -- [2]
 		}, -- [530]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"SSAO blur set to 2", -- [1]
 			0, -- [2]
 		}, -- [531]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
 		}, -- [532]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [533]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Render scale changed to 1", -- [1]
 			0, -- [2]
 		}, -- [534]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Resample quality changed to 1", -- [1]
 			0, -- [2]
 		}, -- [535]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"MSAA disabled", -- [1]
 			0, -- [2]
 		}, -- [536]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"MSAA for alpha-test disabled.", -- [1]
 			0, -- [2]
 		}, -- [537]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
 		}, -- [538]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
 		}, -- [539]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"World preload object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [540]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"World load object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [541]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"World preload non critical disabled.", -- [1]
 			0, -- [2]
 		}, -- [542]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [543]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"FFX: Anti Aliasing Mode set to CMAA", -- [1]
 			0, -- [2]
 		}, -- [544]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"FFX: Color Blind Test Mode Disabled", -- [1]
 			0, -- [2]
 		}, -- [545]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"FFX: Color correction enabled", -- [1]
 			0, -- [2]
 		}, -- [546]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CVar 'fullDump' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [547]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Error display disabled", -- [1]
 			0, -- [2]
 		}, -- [548]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Error display shown", -- [1]
 			0, -- [2]
 		}, -- [549]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [550]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [551]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Now filtering: all messages", -- [1]
 			0, -- [2]
 		}, -- [552]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [553]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [554]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [555]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [556]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Starting loginlauncherPortal=\"eu.actual.battle.net\" loginPortal=\"eu.actual.battle.net:1119\"", -- [1]
 			0, -- [2]
 		}, -- [557]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Resetting", -- [1]
 			0, -- [2]
 		}, -- [558]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] Initializing", -- [1]
 			0, -- [2]
 		}, -- [559]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] Attempting logonhost=\"eu.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
 		}, -- [560]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [561]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [562]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [563]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Logon complete.", -- [1]
 			0, -- [2]
 		}, -- [564]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [565]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] Requesting realm list ticket", -- [1]
 			0, -- [2]
 		}, -- [566]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [567]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [568]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [569]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] Requesting last played charsnumSubRegions=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [570]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Realm list ready.", -- [1]
 			0, -- [2]
 		}, -- [571]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] Joining realmsubRegion=\"43-101-89\" realmAddress=\"43-4-8\"", -- [1]
 			0, -- [2]
 		}, -- [572]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [573]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"NetClient::HandleConnect()\n", -- [1]
 			0, -- [2]
 		}, -- [574]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [575]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [576]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [577]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Got new connection 2", -- [1]
 			0, -- [2]
 		}, -- [578]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
 			0, -- [2]
 		}, -- [579]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
 		}, -- [580]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Disconnected from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [581]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [582]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [583]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 2 set to 0x0000000010", -- [1]
 			0, -- [2]
 		}, -- [584]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 4 set to 0x0000000001", -- [1]
 			0, -- [2]
 		}, -- [585]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 2 set to 0x0000004010", -- [1]
 			0, -- [2]
 		}, -- [586]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 2 set to 0x0000084010", -- [1]
 			0, -- [2]
 		}, -- [587]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 4 set to 0x0000000003", -- [1]
 			0, -- [2]
 		}, -- [588]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 2 set to 0x0000084010", -- [1]
 			0, -- [2]
 		}, -- [589]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 4 set to 0x0000000003", -- [1]
 			0, -- [2]
 		}, -- [590]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [591]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time set to 9/22/2020 (Tue) 11:48", -- [1]
 			0, -- [2]
 		}, -- [592]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [593]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [594]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Total: 1d 9h 46m 34s", -- [1]
 			0, -- [2]
 		}, -- [595]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Level: 1d 8h 10m 48s", -- [1]
 			0, -- [2]
 		}, -- [596]
 		{
-			"Sorting particles normally.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [597]
 		{
-			"Water detail changed to 3", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [598]
 		{
-			"Ripple detail changed to 2", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [599]
 		{
-			"Reflection mode changed to 3", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [600]
 		{
-			"Reflection downscale changed to 0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [601]
 		{
-			"Sunshafts quality changed to 2", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [602]
 		{
-			"Enabling BSP node cache (first time - starting up)", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [603]
 		{
-			"WorldPoolUsage must be stream, dynamic or static.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [604]
 		{
-			"CVar 'worldPoolUsage' failed validation for its initial value.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [605]
 		{
-			"Alpha map bit depth set to 8bit on restart.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [606]
 		{
-			"Volume fog enabled.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [607]
 		{
-			"Projected textures enabled.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [608]
 		{
-			"Shadow mode changed to 4 - 4 band dynamic shadows, 2048", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [609]
 		{
-			"Shadow texture size changed to 2048.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [610]
 		{
-			"Soft shadows changed to 1.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [611]
 		{
-			"SSAO mode set to 4", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [612]
 		{
-			"SSAO distance value set to 100.000000", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [613]
 		{
-			"SSAO blur set to 2", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [614]
 		{
-			"SkyCloudLOD set to 0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [615]
 		{
-			"Terrain mip level changed to 0.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [616]
 		{
-			"Render scale changed to 1", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [617]
 		{
-			"Resample quality changed to 1", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [618]
 		{
-			"MSAA disabled", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [619]
 		{
-			"MSAA for alpha-test enabled.", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [620]
 		{
-			"Component texture lod changed to 0", -- [1]
+			"Total: 1d 9h 47m 25s", -- [1]
 			0, -- [2]
 		}, -- [621]
 		{
-			"Component texture lod changed to 0", -- [1]
+			"Level: 1d 8h 11m 39s", -- [1]
 			0, -- [2]
 		}, -- [622]
 		{
-			"World preload object sort enabled.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [623]
 		{
-			"World load object sort enabled.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [624]
 		{
-			"World preload non critical disabled.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [625]
 		{
-			"World preload high res textures enabled.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [626]
 		{
-			"FFX: Anti Aliasing Mode set to CMAA", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [627]
 		{
-			"FFX: Color Blind Test Mode Disabled", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [628]
 		{
-			"FFX: Color correction enabled", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [629]
 		{
-			"Full memory crash dump disabled", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [630]
 		{
-			"Error display disabled", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [631]
 		{
-			"Error display shown", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [632]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [633]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [634]
 		{
-			"Now filtering: all messages", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [635]
 		{
-			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [636]
 		{
-			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [637]
 		{
-			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [638]
 		{
-			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [639]
 		{
-			"[GlueLogin] Starting loginlauncherPortal=\"eu.actual.battle.net\" loginPortal=\"eu.actual.battle.net:1119\"", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [640]
 		{
-			"[GlueLogin] Resetting", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [641]
 		{
-			"[IBN_Login] Initializing", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [642]
 		{
-			"[IBN_Login] Attempting logonhost=\"eu.actual.battle.net\" port=\"1119\"", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [643]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [644]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Sorting particles normally.", -- [1]
 			0, -- [2]
 		}, -- [645]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Water detail changed to 3", -- [1]
 			0, -- [2]
 		}, -- [646]
 		{
-			"[GlueLogin] Logon complete.", -- [1]
+			"Ripple detail changed to 2", -- [1]
 			0, -- [2]
 		}, -- [647]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"Reflection mode changed to 3", -- [1]
 			0, -- [2]
 		}, -- [648]
 		{
-			"[IBN_Login] Requesting realm list ticket", -- [1]
+			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
 		}, -- [649]
 		{
-			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [650]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"Enabling BSP node cache (first time - starting up)", -- [1]
 			0, -- [2]
 		}, -- [651]
 		{
-			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			"WorldPoolUsage must be stream, dynamic or static.", -- [1]
 			0, -- [2]
 		}, -- [652]
 		{
-			"[IBN_Login] Requesting last played charsnumSubRegions=\"1\"", -- [1]
+			"CVar 'worldPoolUsage' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [653]
 		{
-			"[GlueLogin] Realm list ready.", -- [1]
+			"Alpha map bit depth set to 8bit on restart.", -- [1]
 			0, -- [2]
 		}, -- [654]
 		{
-			"[IBN_Login] Joining realmsubRegion=\"43-101-89\" realmAddress=\"43-4-8\"", -- [1]
+			"Volume fog enabled.", -- [1]
 			0, -- [2]
 		}, -- [655]
 		{
-			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			"Projected textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [656]
 		{
-			"NetClient::HandleConnect()\n", -- [1]
+			"Shadow mode changed to 4 - 4 band dynamic shadows, 2048", -- [1]
 			0, -- [2]
 		}, -- [657]
 		{
-			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
 		}, -- [658]
 		{
-			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
+			"Soft shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [659]
 		{
-			"[GlueLogin] Disconnecting from authentication server.", -- [1]
+			"SSAO mode set to 4", -- [1]
 			0, -- [2]
 		}, -- [660]
 		{
-			"Got new connection 2", -- [1]
+			"SSAO distance value set to 100.000000", -- [1]
 			0, -- [2]
 		}, -- [661]
 		{
-			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			"SSAO blur set to 2", -- [1]
 			0, -- [2]
 		}, -- [662]
 		{
-			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
 		}, -- [663]
 		{
-			"[GlueLogin] Disconnected from authentication server.", -- [1]
+			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [664]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Render scale changed to 1", -- [1]
 			0, -- [2]
 		}, -- [665]
 		{
-			"Got new connection 3", -- [1]
+			"Resample quality changed to 1", -- [1]
 			0, -- [2]
 		}, -- [666]
 		{
-			"Proficiency in item class 2 set to 0x0000000010", -- [1]
+			"MSAA disabled", -- [1]
 			0, -- [2]
 		}, -- [667]
 		{
-			"Proficiency in item class 4 set to 0x0000000001", -- [1]
+			"MSAA for alpha-test disabled.", -- [1]
 			0, -- [2]
 		}, -- [668]
 		{
-			"Proficiency in item class 2 set to 0x0000004010", -- [1]
+			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
 		}, -- [669]
 		{
-			"Proficiency in item class 2 set to 0x0000084010", -- [1]
+			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
 		}, -- [670]
 		{
-			"Proficiency in item class 4 set to 0x0000000003", -- [1]
+			"World preload object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [671]
 		{
-			"Proficiency in item class 2 set to 0x0000084010", -- [1]
+			"World load object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [672]
 		{
-			"Proficiency in item class 4 set to 0x0000000003", -- [1]
+			"World preload non critical disabled.", -- [1]
 			0, -- [2]
 		}, -- [673]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [674]
 		{
-			"Time set to 9/21/2020 (Mon) 22:24", -- [1]
+			"FFX: Anti Aliasing Mode set to CMAA", -- [1]
 			0, -- [2]
 		}, -- [675]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"FFX: Color Blind Test Mode Disabled", -- [1]
 			0, -- [2]
 		}, -- [676]
 		{
-			"Time played:", -- [1]
+			"FFX: Color correction enabled", -- [1]
 			0, -- [2]
 		}, -- [677]
 		{
-			"Total: 1d 9h 37m 55s", -- [1]
+			"CVar 'fullDump' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [678]
 		{
-			"Level: 1d 8h 2m 9s", -- [1]
+			"Error display disabled", -- [1]
 			0, -- [2]
 		}, -- [679]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Error display shown", -- [1]
 			0, -- [2]
 		}, -- [680]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [681]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [682]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Now filtering: all messages", -- [1]
 			0, -- [2]
 		}, -- [683]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [684]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [685]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [686]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [687]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Starting loginlauncherPortal=\"nullopt\" loginPortal=\"EU.actual.battle.net:1119\"", -- [1]
 			0, -- [2]
 		}, -- [688]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Resetting", -- [1]
 			0, -- [2]
 		}, -- [689]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] Initializing", -- [1]
 			0, -- [2]
 		}, -- [690]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] Attempting logonhost=\"EU.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
 		}, -- [691]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [692]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [693]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [694]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [695]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [696]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [697]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Logon complete.", -- [1]
 			0, -- [2]
 		}, -- [698]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [699]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] Requesting realm list ticket", -- [1]
 			0, -- [2]
 		}, -- [700]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [701]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [702]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [703]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] Requesting last played charsnumSubRegions=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [704]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Realm list ready.", -- [1]
 			0, -- [2]
 		}, -- [705]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] Joining realmsubRegion=\"43-101-89\" realmAddress=\"43-4-8\"", -- [1]
 			0, -- [2]
 		}, -- [706]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [707]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"NetClient::HandleConnect()\n", -- [1]
 			0, -- [2]
 		}, -- [708]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [709]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [710]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [711]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
 			0, -- [2]
 		}, -- [712]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
 		}, -- [713]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"[GlueLogin] Disconnected from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [714]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [715]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [716]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 2 set to 0x0000000010", -- [1]
 			0, -- [2]
 		}, -- [717]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 2 set to 0x0000000410", -- [1]
 			0, -- [2]
 		}, -- [718]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 2 set to 0x0000008410", -- [1]
 			0, -- [2]
 		}, -- [719]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 4 set to 0x0000000001", -- [1]
 			0, -- [2]
 		}, -- [720]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 2 set to 0x000000c410", -- [1]
 			0, -- [2]
 		}, -- [721]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 2 set to 0x000008c410", -- [1]
 			0, -- [2]
 		}, -- [722]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 2 set to 0x000018c410", -- [1]
 			0, -- [2]
 		}, -- [723]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 4 set to 0x0000000003", -- [1]
 			0, -- [2]
 		}, -- [724]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 2 set to 0x000018c410", -- [1]
 			0, -- [2]
 		}, -- [725]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 4 set to 0x0000000003", -- [1]
 			0, -- [2]
 		}, -- [726]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [727]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time set to 9/22/2020 (Tue) 11:52", -- [1]
 			0, -- [2]
 		}, -- [728]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [729]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18034, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [730]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17371, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [731]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9408, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [732]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18037, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [733]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9315, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [734]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18033, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [735]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21364, effect aura: 85, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [736]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18029, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [737]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9318, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [738]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9316, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [739]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18033, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [740]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18033, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [741]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9318, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [742]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21618, effect aura: 85, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [743]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18032, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [744]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 23264, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [745]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [746]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Total: 67d 14h 17m 11s", -- [1]
 			0, -- [2]
 		}, -- [747]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Level: 50d 21h 40m 11s", -- [1]
 			0, -- [2]
 		}, -- [748]
 		{
-			"Time played:", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [749]
 		{
-			"Total: 1d 9h 38m 45s", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18034, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [750]
 		{
-			"Level: 1d 8h 2m 59s", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17371, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [751]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9408, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [752]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18037, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [753]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9315, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [754]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18033, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [755]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21364, effect aura: 85, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [756]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18029, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [757]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9318, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [758]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9316, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [759]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18033, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [760]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18033, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [761]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9318, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [762]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21618, effect aura: 85, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [763]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18032, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [764]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 23264, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [765]
 		{
@@ -3199,67 +3200,67 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [799]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18034, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [800]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17371, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [801]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9408, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [802]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18037, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [803]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9315, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [804]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18033, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [805]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21364, effect aura: 85, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [806]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18029, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [807]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9318, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [808]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9316, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [809]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18033, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [810]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18033, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [811]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9318, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [812]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21618, effect aura: 85, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [813]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18032, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [814]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 23264, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [815]
 		{
@@ -3311,15 +3312,15 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [827]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [828]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Total: 67d 14h 18m 3s", -- [1]
 			0, -- [2]
 		}, -- [829]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Level: 50d 21h 41m 3s", -- [1]
 			0, -- [2]
 		}, -- [830]
 		{
@@ -3651,131 +3652,131 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [912]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18034, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [913]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17371, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [914]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9408, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [915]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18037, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [916]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9315, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [917]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18033, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [918]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21364, effect aura: 85, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [919]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18029, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [920]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9318, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [921]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9316, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [922]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18033, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [923]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18033, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [924]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9318, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [925]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21618, effect aura: 85, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [926]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18032, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [927]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 23264, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [928]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18034, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [929]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17371, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [930]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9408, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [931]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18037, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [932]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9315, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [933]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18033, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [934]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21364, effect aura: 85, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [935]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18029, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [936]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9318, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [937]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9316, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [938]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18033, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [939]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18033, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [940]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9318, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [941]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21618, effect aura: 85, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [942]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18032, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [943]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 23264, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [944]
 		{
@@ -3783,195 +3784,195 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [945]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18034, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [946]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17371, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [947]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9408, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [948]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18037, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [949]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9315, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [950]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18033, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [951]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21364, effect aura: 85, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [952]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18029, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [953]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9318, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [954]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9316, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [955]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18033, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [956]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18033, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [957]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9318, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [958]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21618, effect aura: 85, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [959]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18032, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [960]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 23264, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [961]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18034, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [962]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17371, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [963]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9408, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [964]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18037, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [965]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9315, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [966]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18033, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [967]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21364, effect aura: 85, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [968]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18029, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [969]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9318, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [970]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9316, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [971]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18033, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [972]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18033, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [973]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9318, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [974]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21618, effect aura: 85, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [975]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18032, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [976]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 23264, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [977]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18034, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [978]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17371, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [979]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9408, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [980]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18037, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [981]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9315, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [982]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18033, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [983]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21364, effect aura: 85, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [984]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18029, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [985]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9318, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [986]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9316, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [987]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18033, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [988]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18033, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [989]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9318, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [990]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 21618, effect aura: 85, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [991]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18032, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [992]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 23264, effect aura: 135, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [993]
 		{
@@ -4007,9 +4008,8 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [1001]
 	},
-	["height"] = 300,
-	["fontHeight"] = 14,
 	["isShown"] = false,
+	["fontHeight"] = 14,
 	["commandHistory"] = {
 	},
 }
