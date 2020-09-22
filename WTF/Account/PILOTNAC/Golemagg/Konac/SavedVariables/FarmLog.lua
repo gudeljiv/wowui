@@ -8,7 +8,7 @@ FLogVars = {
 			},
 			["lastUse"] = 1600598514,
 			["goldPerHour"] = 0,
-			["skill"] = {
+			["rep"] = {
 			},
 			["vendor"] = 0,
 			["resets"] = 0,
@@ -20,7 +20,7 @@ FLogVars = {
 			["xp"] = 0,
 			["bls"] = {
 			},
-			["rep"] = {
+			["skill"] = {
 			},
 		},
 	},

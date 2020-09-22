@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 1910,
+	["session"] = 1912,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -1417,5 +1417,13 @@ BugGrabberDB = {
 			["session"] = 1900,
 			["counter"] = 1,
 		}, -- [179]
+		{
+			["message"] = "Interface\\AddOns\\nMinimap\\tab.lua:487: attempt to call method 'GenerateHexColor' (a nil value)",
+			["time"] = "2020/09/22 22:18:26",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\nMinimap\\tab.lua:487: in function `nMinimap_UpdateFriendButton'\nInterface\\AddOns\\nMinimap\\tab.lua:519: in function `nMinimap_UpdateFriends'\nInterface\\AddOns\\nMinimap\\tab.lua:569: in function `nMinimapTab_Friends_UpdateScrollFrame'\nInterface\\AddOns\\nMinimap\\tab.lua:607: in function <Interface\\AddOns\\nMinimap\\tab.lua:601>",
+			["session"] = 1912,
+			["counter"] = 7,
+		}, -- [180]
 	},
 }

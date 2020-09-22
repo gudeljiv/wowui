@@ -6,10 +6,10 @@ FLogVars = {
 			["ah"] = 0,
 			["drops"] = {
 			},
-			["skill"] = {
+			["rep"] = {
 			},
 			["goldPerHour"] = 0,
-			["rep"] = {
+			["skill"] = {
 			},
 			["vendor"] = 0,
 			["xp"] = 0,

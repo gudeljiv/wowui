@@ -62,10 +62,6 @@ ChocolateBarDB = {
 					["barOffx"] = -88.3325424194336,
 				},
 			},
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["locked"] = false,
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -76,7 +72,14 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
-			["moveFrames"] = false,
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
+			["locked"] = false,
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+			},
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -282,16 +285,16 @@ ChocolateBarDB = {
 					["showText"] = false,
 					["customLabel"] = "R",
 				},
-				["TestNoText"] = {
-					["enabled"] = false,
-					["index"] = 4,
-					["barName"] = "ChocolateBar1",
-				},
 				["Leatrix_Maps"] = {
 					["enabled"] = false,
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
+				},
+				["TestNoText"] = {
+					["enabled"] = false,
+					["index"] = 4,
+					["barName"] = "ChocolateBar1",
 				},
 				["TradeSkillMaster"] = {
 					["align"] = "right",
@@ -340,18 +343,15 @@ ChocolateBarDB = {
 					["customLabel"] = "B",
 				},
 			},
-			["fontName"] = "Friz Quadrata TT",
 			["desaturated"] = false,
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
-			},
 			["forceColor"] = false,
+			["fixedStrata"] = true,
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["gap"] = 0,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["fixedStrata"] = true,
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["fontName"] = "Friz Quadrata TT",
+			["moveFrames"] = false,
 			["textColor"] = {
 				["a"] = 1,
 				["b"] = 1,
@@ -419,8 +419,8 @@ CB_PlayedTime = {
 	["Verminz-"] = {
 		["total"] = 311368,
 	},
-	["Paydo-"] = {
-		["total"] = 18945,
+	["Kamenac-"] = {
+		["total"] = 1557770,
 	},
 	["Kosturko-"] = {
 		["total"] = 1457,
@@ -428,8 +428,8 @@ CB_PlayedTime = {
 	["Mxzq-"] = {
 		["total"] = 248345,
 	},
-	["Kamenac-"] = {
-		["total"] = 1557770,
+	["Paydo-"] = {
+		["total"] = 18945,
 	},
 	["Grgur-"] = {
 		["total"] = 2,
@@ -441,6 +441,6 @@ CB_PlayedTime = {
 		["total"] = 3924,
 	},
 	["Konac-"] = {
-		["total"] = 5840283,
+		["total"] = 5840786,
 	},
 }

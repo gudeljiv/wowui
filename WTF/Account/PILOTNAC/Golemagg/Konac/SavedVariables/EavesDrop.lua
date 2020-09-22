@@ -90,12 +90,12 @@ EavesDropStatsDB = {
 					},
 					["Holy Nova"] = {
 						[-2] = {
-							["time"] = "|cffffffff09/20/20 07:15:01|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffHoly Nova|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4469-1-31-3278-0000678A3B:Witchwing Slayer|hWitchwing Slayer|h |cffffffff44|r |cffffffffHoly|r. (173 Overkill) ",
-							["amount"] = 217,
+							["time"] = "|cffffffff09/22/20 10:57:44|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffHoly Nova|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4469-1-31-3252-00006A5315:Silithid Swarmer|hSilithid Swarmer|h |cffffffff164|r |cffffffffHoly|r. (54 Overkill) ",
+							["amount"] = 218,
 						},
 						[2] = {
-							["time"] = "|cffffffff09/20/20 07:05:25|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffHoly Nova|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4469-1-31-3274-0000677EA7:Kolkar Pack Runner|hKolkar Pack Runner|h |cffffffff172|r |cffffffffHoly|r. (147 Overkill) (Critical) ",
-							["amount"] = 319,
+							["time"] = "|cffffffff09/22/20 10:58:17|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffHoly Nova|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4469-1-31-4196-0000EA6563:Silithid Swarm|hSilithid Swarm|h |cffffffff1|r |cffffffffHoly|r. (325 Overkill) (Critical) ",
+							["amount"] = 326,
 						},
 						["icon"] = 135922,
 					},
