@@ -6,29 +6,35 @@ FLogVars = {
 			["ah"] = 0,
 			["drops"] = {
 			},
-			["lastUse"] = 1600598514,
+			["skill"] = {
+			},
 			["goldPerHour"] = 0,
 			["rep"] = {
 			},
 			["vendor"] = 0,
-			["resets"] = 0,
+			["xp"] = 0,
 			["kills"] = {
 			},
-			["seconds"] = 554,
-			["gold"] = 0,
 			["honor"] = 0,
-			["xp"] = 0,
+			["gold"] = 0,
+			["seconds"] = 554,
+			["resets"] = 0,
 			["bls"] = {
 			},
-			["skill"] = {
-			},
+			["lastUse"] = 1600598514,
 		},
 	},
 	["lockMinimapButton"] = false,
-	["inInstance"] = false,
 	["ver"] = 1.1301,
+	["inInstance"] = false,
 	["itemTooltip"] = true,
-	["bls"] = {
+	["frameRect"] = {
+		["y"] = -301.000213623047,
+		["x"] = -7.00005149841309,
+		["point"] = "RIGHT",
+		["height"] = 200,
+		["visible"] = false,
+		["width"] = 250.000091552734,
 	},
 	["currentSession"] = "default",
 	["minimapButtonPosition"] = {
@@ -37,13 +43,7 @@ FLogVars = {
 		["point"] = "TOPRIGHT",
 	},
 	["enableMinimapButton"] = true,
-	["frameRect"] = {
-		["y"] = -301.000213623047,
-		["x"] = -7.00005149841309,
-		["point"] = "RIGHT",
-		["height"] = 200,
-		["visible"] = false,
-		["width"] = 250.000091552734,
+	["bls"] = {
 	},
 	["lockFrames"] = false,
 }
