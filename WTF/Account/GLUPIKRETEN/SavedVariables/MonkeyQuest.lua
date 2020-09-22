@@ -61,34 +61,34 @@ MonkeyQuestConfig = {
 			["Journey to the Crossroads - false"] = {
 				["m_bChecked"] = true,
 			},
+			["Heeding the Call - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Wildmane Totem - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Supervisor Fizsprocket - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Dwarven Digging - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Rite of Wisdom - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Ravaged Caravan - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Hunter's Way - false"] = {
+				["m_bChecked"] = true,
+			},
 			["Thunderhorn Cleansing - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Druid - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Supervisor Fizsprocket - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Ravaged Caravan - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Heeding the Call - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Dwarven Digging - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Hunter's Way - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Rite of Wisdom - false"] = {
-				["m_bChecked"] = true,
-			},
 			["Wildmane Cleansing - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Wildmane Totem - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -299,73 +299,10 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Augustin"] = {
 		["m_aQuestList"] = {
-			["WANTED: Baron Longshore - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Hezrul Bloodmark - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Jorn Skyseer - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Raptor Horns - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Southsea Freebooters - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Ishamuhale - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Runed Scroll - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Miner's Fortune - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Stolen Booty - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Enraged Thunder Lizards - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Lakota'mani - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Guns of Northwatch - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Smart Drinks - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Blood Shards of Agamaggan - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Counterattack! - false"] = {
-				["m_bChecked"] = true,
-			},
 			["The Barrens - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Wailing Caverns - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Consumed by Hatred - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Lost in Battle - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Verog the Dervish - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Missing Shipment - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Angry Scytheclaws - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Tribes at War - false"] = {
+			["Enraged Thunder Lizards - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -908,27 +845,58 @@ MonkeyQuestConfig = {
 		["m_iFrameLeft"] = 1425.90026473384,
 		["m_bGrowUp"] = false,
 	},
-	["Golemagg|Mxzq"] = {
-		["m_aQuestList"] = {
-			["Guile of the Raptor - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Princess Trapped - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Real Threat - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Arathi Highlands - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Sigil of Strom - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Call to Arms - false"] = {
-				["m_bChecked"] = true,
-			},
-		},
+	["Global"] = {
+		["m_bItemsEnabled"] = true,
+		["m_iFont"] = 2,
+		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
+		["m_strSpecialObjectiveColour"] = "|cFFFFFF00",
+		["m_iFrameAlpha"] = 1,
+		["m_bColourTitle"] = true,
+		["m_strAnchor"] = "ANCHOR_TOPLEFT",
+		["m_bAllowRightClick"] = true,
+		["m_strZoneHighlightColour"] = "|cff494961",
+		["m_strFinishObjectiveColour"] = "|cFF33DDFF",
+		["m_bShowHidden"] = true,
+		["m_bItemsOnLeft"] = true,
+		["m_bShowNoobTips"] = true,
+		["m_bHideCompletedObjectives"] = false,
+		["m_bShowZoneHighlight"] = true,
+		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
+		["m_bAlwaysHeaders"] = false,
+		["m_bDisplay"] = true,
+		["m_bMinimized"] = false,
+		["m_strInitialObjectiveColour"] = "|cFFD82619",
+		["m_iHighlightAlpha"] = 0,
+		["m_bShowQuestLevel"] = false,
+		["m_bShowDailyNumQuests"] = false,
+		["m_iFrameBottom"] = 1125.76354980469,
+		["m_bHideTitleButtons"] = false,
+		["m_iFrameLeft"] = 2019.82434082031,
+		["m_bColourDoneOrFailed"] = true,
+		["m_bLocked"] = true,
+		["m_bNoBorder"] = true,
+		["m_bNoHeaders"] = false,
+		["m_iQuestPadding"] = 12,
+		["m_strOverviewColour"] = "|cff7f7f7f",
+		["m_bShowTooltipObjectives"] = true,
+		["m_bColourSubObjectivesByProgress"] = true,
+		["m_iFrameWidth"] = 270,
+		["m_iFontHeight"] = 11,
+		["m_strQuestTitleColour"] = "|cFFFFFFFF",
+		["m_bWorkComplete"] = true,
+		["m_bHideQuestsEnabled"] = false,
+		["m_strMidObjectiveColour"] = "|cFFFFFF00",
+		["m_bCrashBorder"] = false,
+		["m_strHeaderOpenColour"] = "|cffbfbfff",
+		["m_iFrameTop"] = 1163.76354980469,
+		["m_bObjectives"] = true,
+		["m_bHideHeader"] = false,
+		["m_bShowNumQuests"] = true,
+		["m_iAlpha"] = 0.5,
+		["m_bShowQuestTextTooltip"] = false,
+		["m_bHideTitle"] = false,
+		["m_bHideCompletedQuests"] = true,
+		["m_bGrowUp"] = false,
 	},
 	["Genesis|Malinac"] = {
 		["m_iFont"] = 0,
@@ -998,6 +966,26 @@ MonkeyQuestConfig = {
 			},
 		},
 	},
+	["Golemagg|Dmitar"] = {
+		["m_aQuestList"] = {
+		},
+	},
+	["Stonespine|Vermins"] = {
+		["m_aQuestList"] = {
+			["Sarkoth - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Valley of Trials - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Vile Familiars - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Cutting Teeth - false"] = {
+				["m_bChecked"] = true,
+			},
+		},
+	},
 	["Golemagg|Greenwise"] = {
 		["m_aQuestList"] = {
 			["Miner's Fortune - false"] = {
@@ -1047,26 +1035,6 @@ MonkeyQuestConfig = {
 			},
 		},
 	},
-	["Stonespine|Vermins"] = {
-		["m_aQuestList"] = {
-			["Sarkoth - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Valley of Trials - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Vile Familiars - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Cutting Teeth - false"] = {
-				["m_bChecked"] = true,
-			},
-		},
-	},
-	["Golemagg|Dmitar"] = {
-		["m_aQuestList"] = {
-		},
-	},
 	["Dreadmist|Vermins"] = {
 		["m_iFont"] = 0,
 		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
@@ -1084,19 +1052,19 @@ MonkeyQuestConfig = {
 		["m_bShowZoneHighlight"] = true,
 		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
 		["m_aQuestList"] = {
-			["Break a Few Eggs - false"] = {
+			["Durotar - true"] = {
 				["m_bChecked"] = true,
 			},
 			["From The Wreckage.... - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Durotar - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Vanquish the Betrayers - false"] = {
+			["Break a Few Eggs - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Encroachment - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Vanquish the Betrayers - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -1141,58 +1109,27 @@ MonkeyQuestConfig = {
 		["m_aQuestList"] = {
 		},
 	},
-	["Global"] = {
-		["m_bItemsEnabled"] = true,
-		["m_iFont"] = 2,
-		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
-		["m_strSpecialObjectiveColour"] = "|cFFFFFF00",
-		["m_iFrameAlpha"] = 1,
-		["m_bColourTitle"] = true,
-		["m_strAnchor"] = "ANCHOR_TOPLEFT",
-		["m_bAllowRightClick"] = true,
-		["m_strZoneHighlightColour"] = "|cff494961",
-		["m_strFinishObjectiveColour"] = "|cFF33DDFF",
-		["m_bShowHidden"] = true,
-		["m_bItemsOnLeft"] = true,
-		["m_bShowNoobTips"] = true,
-		["m_bHideCompletedObjectives"] = false,
-		["m_bShowZoneHighlight"] = true,
-		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
-		["m_bAlwaysHeaders"] = false,
-		["m_bDisplay"] = true,
-		["m_bMinimized"] = false,
-		["m_strInitialObjectiveColour"] = "|cFFD82619",
-		["m_iHighlightAlpha"] = 0,
-		["m_bShowQuestLevel"] = false,
-		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 1125.76354980469,
-		["m_bHideTitleButtons"] = false,
-		["m_iFrameLeft"] = 2019.82434082031,
-		["m_bColourDoneOrFailed"] = true,
-		["m_bLocked"] = true,
-		["m_bNoBorder"] = true,
-		["m_bNoHeaders"] = false,
-		["m_iQuestPadding"] = 12,
-		["m_strOverviewColour"] = "|cff7f7f7f",
-		["m_bShowTooltipObjectives"] = true,
-		["m_bColourSubObjectivesByProgress"] = true,
-		["m_iFrameWidth"] = 270,
-		["m_iFontHeight"] = 11,
-		["m_strQuestTitleColour"] = "|cFFFFFFFF",
-		["m_bWorkComplete"] = true,
-		["m_bHideQuestsEnabled"] = false,
-		["m_strMidObjectiveColour"] = "|cFFFFFF00",
-		["m_bCrashBorder"] = false,
-		["m_strHeaderOpenColour"] = "|cffbfbfff",
-		["m_iFrameTop"] = 1163.76354980469,
-		["m_bObjectives"] = true,
-		["m_bHideHeader"] = false,
-		["m_bShowNumQuests"] = true,
-		["m_iAlpha"] = 0.5,
-		["m_bShowQuestTextTooltip"] = false,
-		["m_bHideTitle"] = false,
-		["m_bHideCompletedQuests"] = true,
-		["m_bGrowUp"] = false,
+	["Golemagg|Mxzq"] = {
+		["m_aQuestList"] = {
+			["Guile of the Raptor - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Princess Trapped - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Real Threat - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Arathi Highlands - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Sigil of Strom - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Call to Arms - false"] = {
+				["m_bChecked"] = true,
+			},
+		},
 	},
 	["Genesis|Lonatz"] = {
 		["m_iFont"] = 0,
