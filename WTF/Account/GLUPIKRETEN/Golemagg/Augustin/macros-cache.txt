@@ -3,9 +3,6 @@ VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
 /startattack
 /cast Fire Blast
 END
-VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
-/follow konac
-END
 VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
@@ -14,5 +11,5 @@ END
 VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
-/cast Frostbolt
+/cast [mod:shift]Frostbolt(Rank 1);Frostbolt
 END

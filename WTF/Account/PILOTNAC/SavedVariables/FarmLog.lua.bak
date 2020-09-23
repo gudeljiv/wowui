@@ -1,17 +1,18 @@
 
 FLogGlobalVars = {
-	["ahPrice"] = {
-		["Golemagg"] = {
-		},
-	},
+	["autoSwitchInstances"] = true,
 	["blt"] = {
 		["Golemagg"] = {
 		},
 	},
 	["debug"] = false,
 	["ahMinQuality"] = 1,
-	["autoSwitchInstances"] = true,
+	["ignoredItems"] = {
+	},
 	["blp"] = {
+		["300"] = {
+			["attempt"] = 3,
+		},
 	},
 	["ahScan"] = {
 		["Golemagg"] = {
@@ -19,17 +20,37 @@ FLogGlobalVars = {
 	},
 	["instances"] = {
 		["Golemagg"] = {
+			{
+				["enter"] = 1600859297,
+				["player"] = "Konac",
+				["name"] = "Scarlet Monastery",
+				["leave"] = 1600859414,
+			}, -- [1]
+			{
+				["enter"] = 1600859111,
+				["player"] = "Konac",
+				["name"] = "Scarlet Monastery",
+				["leave"] = 1600859280,
+			}, -- [2]
+			{
+				["enter"] = 1600858914,
+				["player"] = "Konac",
+				["name"] = "Scarlet Monastery",
+				["leave"] = 1600859100,
+			}, -- [3]
 		},
 	},
 	["ver"] = 1.1301,
 	["resumeSessionOnSwitch"] = true,
-	["sortSessionBy"] = "A",
+	["sortBy"] = "A",
 	["dismissLootWindowOnEsc"] = false,
 	["reportTo"] = {
 	},
-	["sortBy"] = "A",
+	["sortSessionBy"] = "A",
 	["groupByMobName"] = true,
-	["ignoredItems"] = {
+	["ahPrice"] = {
+		["Golemagg"] = {
+		},
 	},
 }
 FLogSVDebugMode = nil

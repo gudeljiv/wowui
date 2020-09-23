@@ -55,25 +55,25 @@ MonkeyQuestConfig = {
 			["The Venture Co. - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Druid - true"] = {
+			["Wildmane Cleansing - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Journey to the Crossroads - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Wildmane Totem - false"] = {
+			["Druid - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Wildmane Cleansing - false"] = {
+			["Wildmane Totem - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Supervisor Fizsprocket - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Heeding the Call - false"] = {
+			["Thunderhorn Cleansing - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Rite of Wisdom - false"] = {
+			["Heeding the Call - false"] = {
 				["m_bChecked"] = true,
 			},
 			["The Ravaged Caravan - false"] = {
@@ -85,7 +85,7 @@ MonkeyQuestConfig = {
 			["Dwarven Digging - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Thunderhorn Cleansing - false"] = {
+			["Rite of Wisdom - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Mulgore - true"] = {
@@ -299,27 +299,6 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Augustin"] = {
 		["m_aQuestList"] = {
-			["The Barrens - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Egg Hunt - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Gann's Reclamation - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Revenge of Gann - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Betrayal from Within - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Weapons of Choice - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Mahren Skyseer - false"] = {
-				["m_bChecked"] = true,
-			},
 		},
 	},
 	["Genesis|Pitchwise"] = {
@@ -847,9 +826,9 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 1169.39990234375,
+		["m_iFrameBottom"] = 1125.76354980469,
 		["m_bHideCompletedQuests"] = true,
-		["m_iFrameLeft"] = 2097.39990234375,
+		["m_iFrameLeft"] = 2019.82434082031,
 		["m_bColourDoneOrFailed"] = true,
 		["m_bLocked"] = true,
 		["m_bNoBorder"] = true,
@@ -866,7 +845,7 @@ MonkeyQuestConfig = {
 		["m_iFrameWidth"] = 270,
 		["m_bCrashBorder"] = false,
 		["m_strHeaderOpenColour"] = "|cffbfbfff",
-		["m_iFrameTop"] = 1207.39990234375,
+		["m_iFrameTop"] = 1163.76354980469,
 		["m_bObjectives"] = true,
 		["m_bHideHeader"] = false,
 		["m_bShowTooltipObjectives"] = true,

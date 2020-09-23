@@ -6,44 +6,74 @@ FLogVars = {
 			["ah"] = 0,
 			["drops"] = {
 			},
-			["lastUse"] = 1600598514,
-			["goldPerHour"] = 0,
 			["rep"] = {
 			},
+			["goldPerHour"] = 0,
+			["skill"] = {
+			},
 			["vendor"] = 0,
-			["resets"] = 0,
+			["xp"] = 0,
 			["kills"] = {
 			},
+			["honor"] = 0,
+			["gold"] = 0,
 			["seconds"] = 554,
+			["resets"] = 0,
+			["bls"] = {
+			},
+			["lastUse"] = 1600598514,
+		},
+		["Scarlet Monastery"] = {
+			["ah"] = 0,
+			["drops"] = {
+				["Herbalism"] = {
+					["|cffffffff|Hitem:3369::::::::_:::::::|h[Grave Moss]|h|r"] = {
+						10, -- [1]
+						250, -- [2]
+						25, -- [3]
+						"V", -- [4]
+					},
+				},
+			},
+			["lastUse"] = 1600865956,
+			["goldPerHour"] = 1520.27027027027,
+			["skill"] = {
+			},
+			["vendor"] = 250,
+			["resets"] = 4,
+			["kills"] = {
+				["Herbalism"] = 4,
+			},
+			["seconds"] = 592,
 			["gold"] = 0,
 			["honor"] = 0,
 			["xp"] = 0,
 			["bls"] = {
 			},
-			["skill"] = {
+			["rep"] = {
 			},
 		},
 	},
-	["lockMinimapButton"] = false,
-	["inInstance"] = false,
 	["ver"] = 1.1301,
-	["itemTooltip"] = true,
-	["bls"] = {
+	["lockMinimapButton"] = false,
+	["frameRect"] = {
+		["y"] = -155.634902954102,
+		["x"] = -153.654647827148,
+		["point"] = "RIGHT",
+		["height"] = 200.000061035156,
+		["visible"] = false,
+		["width"] = 250.000015258789,
 	},
-	["currentSession"] = "default",
+	["inInstance"] = false,
+	["itemTooltip"] = true,
 	["minimapButtonPosition"] = {
 		["y"] = -139.590896606445,
 		["x"] = 4.90963697433472,
 		["point"] = "TOPRIGHT",
 	},
+	["currentSession"] = "Scarlet Monastery",
 	["enableMinimapButton"] = true,
-	["frameRect"] = {
-		["y"] = -301.000213623047,
-		["x"] = -7.00005149841309,
-		["point"] = "RIGHT",
-		["height"] = 200,
-		["visible"] = false,
-		["width"] = 250.000091552734,
+	["bls"] = {
 	},
 	["lockFrames"] = false,
 }

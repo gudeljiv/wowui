@@ -19,7 +19,7 @@ END
 VER 3 0000000000000008 "Food" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:0
-/castsequence [combat]item:858
+/castsequence [combat]
 END
 VER 3 0000000000000006 "Heal" "INV_MISC_QUESTIONMARK"
 #showtooltip Heal(Rank 3)

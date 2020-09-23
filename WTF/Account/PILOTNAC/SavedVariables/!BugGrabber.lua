@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 1912,
 	["lastSanitation"] = 3,
+	["session"] = 1915,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -173,8 +173,8 @@ BugGrabberDB = {
 		}, -- [21]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["time"] = "2020/07/26 13:26:58",
 			["session"] = 1336,
+			["time"] = "2020/07/26 13:26:58",
 			["counter"] = 2,
 		}, -- [22]
 		{
@@ -554,8 +554,8 @@ BugGrabberDB = {
 		}, -- [69]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["session"] = 1423,
 			["time"] = "2020/07/27 20:37:46",
+			["session"] = 1423,
 			["counter"] = 4,
 		}, -- [70]
 		{
@@ -820,8 +820,8 @@ BugGrabberDB = {
 		}, -- [103]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["session"] = 1605,
 			["time"] = "2020/08/02 10:06:15",
+			["session"] = 1605,
 			["counter"] = 3,
 		}, -- [104]
 		{
@@ -961,8 +961,8 @@ BugGrabberDB = {
 		}, -- [121]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
-			["time"] = "2020/08/02 20:13:03",
 			["session"] = 1654,
+			["time"] = "2020/08/02 20:13:03",
 			["counter"] = 3,
 		}, -- [122]
 		{
@@ -1327,14 +1327,14 @@ BugGrabberDB = {
 		}, -- [167]
 		{
 			["message"] = "(null)",
-			["session"] = 1820,
 			["time"] = "2020/07/24 16:00:06",
+			["session"] = 1820,
 			["counter"] = 60,
 		}, -- [168]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["time"] = "2020/08/13 21:31:07",
 			["session"] = 1843,
+			["time"] = "2020/08/13 21:31:07",
 			["counter"] = 6,
 		}, -- [169]
 		{
@@ -1425,5 +1425,21 @@ BugGrabberDB = {
 			["session"] = 1912,
 			["counter"] = 7,
 		}, -- [180]
+		{
+			["message"] = "Interface\\AddOns\\FarmLog\\FarmLog-v1.6.lua:1399: attempt to concatenate upvalue 'BL_ITEM_NAME' (a nil value)",
+			["time"] = "2020/09/23 13:02:42",
+			["locals"] = "self = FarmLog {\n OnSkillsEvent = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:1156\n RefreshMainWindow = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:599\n Migrate = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:272\n OnCombatLogEvent = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:1232\n OnCurrencyEvent = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:1299\n OnInstanceInfoEvent = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:1676\n OnEnteringWorld = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:1630\n PurgeInstances = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:459\n UpdateInstanceCount = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:433\n CloseOpenInstances = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:483\n IncreaseBlackLotusPickStat = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:1387\n AskQuestion = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:605\n GetLastInstance = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:469\n OnSpellCastEvent = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:1108\n ResetSessionVars = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:523\n PrepareAuctionHouseResults = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:1718\n ParseMinimapTooltip = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:1406\n InsertLoot = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:1437\n OnCombatFactionChange = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:1221\n UIError = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:2129\n OnUpdate = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:1829\n SetBlackLotusItemId = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:1339\n OnEvent = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:1778\n PauseSession = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:509\n OnEnterCombat = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:1687\n OnAuctionUpdate = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:1710\n ScanAuctionHouse = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:1698\n AnalyzeAuctionHouseResults = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:1729\n OnCombatHonorEvent = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:1137\n OnAddonLoaded = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:1557\n GetCurrentSessionTime = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:493\n ParseSkillEvent = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:1147\n OnMoneyEvent = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:1331\n OnLootEvent = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:1490\n ResumeSession = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:498\n AddInstance = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:448\n 0 = <userdata>\n ParseXPEvent = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:1183\n LogBlackLotusCurrentLocation = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:1345\n LogBlackLotus = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:1377\n ShowBlackLotusTimers = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:1419\n ParseRepEvent = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:1212\n OnLootOpened = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:1256\n ShowBlackLotusLog = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:1098\n ResetSession = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:575\n RepushInstance = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:477\n ToggleLogging = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:585\n OnCombatXPEvent = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:1198\n DeleteSession = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:561\n StartSession = <function> defined @Interface\\AddOns\\FarmLog\\FarmLog.lua:541\n}\nstatName = \"attempt\"\n(for index) = 7\n(for limit) = 50\n(for step) = 1\nskillIndex = 7\nskillName = \"He",
+			["stack"] = "Interface\\AddOns\\FarmLog\\FarmLog-v1.6.lua:1399: in function `IncreaseBlackLotusPickStat'\nInterface\\AddOns\\FarmLog\\FarmLog-v1.6.lua:1116: in function `OnSpellCastEvent'\nInterface\\AddOns\\FarmLog\\FarmLog-v1.6.lua:1799: in function `OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
+			["session"] = 1915,
+			["counter"] = 5,
+		}, -- [181]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'TargetFrameToT:Show()'.",
+			["time"] = "2020/09/23 13:06:51",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Show'\nInterface\\FrameXML\\TargetFrame.lua:910: in function <Interface\\FrameXML\\TargetFrame.lua:905>\n[C]: ?\n[C]: in function `TargetofTarget_Update'\nInterface\\FrameXML\\TargetFrame.lua:420: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[C]: ?\n[C]: ?",
+			["session"] = 1915,
+			["counter"] = 2,
+		}, -- [182]
 	},
 }
