@@ -13,6 +13,13 @@ X: -170
 Y: 133
 W: 30
 H: 30
+Frame: InterfaceOptionsFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 244
+Y: -128
+W: 858
+H: 660
 Frame: ItemRefTooltip
 FrameLevel: 1
 Anchor: CENTER
@@ -34,10 +41,3 @@ X: -27
 Y: 27
 W: 50
 H: 50
-Frame: InterfaceOptionsFrame
-FrameLevel: 1
-Anchor: TOPLEFT
-X: 244
-Y: -128
-W: 858
-H: 660

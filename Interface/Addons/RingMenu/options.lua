@@ -277,6 +277,7 @@ function RingMenuOptions_SetupPanel()
 				local keyBind = CreateKeyChordStringFromTable(keys)
 				local command = getRingBindingCommand(RingMenuOptionsPanel.currentRingID)
 				SetBinding(keyBind, command)
+				print(keyBind, command)
 				AttemptToSaveBindings(GetCurrentBindingSet())
 
 				widgetChanged(self.widget, keyBind)

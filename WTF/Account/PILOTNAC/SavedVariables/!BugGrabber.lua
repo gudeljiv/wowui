@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 1918,
 	["lastSanitation"] = 3,
+	["session"] = 1923,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -173,8 +173,8 @@ BugGrabberDB = {
 		}, -- [21]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["time"] = "2020/07/26 13:26:58",
 			["session"] = 1336,
+			["time"] = "2020/07/26 13:26:58",
 			["counter"] = 2,
 		}, -- [22]
 		{
@@ -554,8 +554,8 @@ BugGrabberDB = {
 		}, -- [69]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["session"] = 1423,
 			["time"] = "2020/07/27 20:37:46",
+			["session"] = 1423,
 			["counter"] = 4,
 		}, -- [70]
 		{
@@ -820,8 +820,8 @@ BugGrabberDB = {
 		}, -- [103]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["session"] = 1605,
 			["time"] = "2020/08/02 10:06:15",
+			["session"] = 1605,
 			["counter"] = 3,
 		}, -- [104]
 		{
@@ -961,8 +961,8 @@ BugGrabberDB = {
 		}, -- [121]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
-			["time"] = "2020/08/02 20:13:03",
 			["session"] = 1654,
+			["time"] = "2020/08/02 20:13:03",
 			["counter"] = 3,
 		}, -- [122]
 		{
@@ -1327,14 +1327,14 @@ BugGrabberDB = {
 		}, -- [167]
 		{
 			["message"] = "(null)",
-			["session"] = 1820,
 			["time"] = "2020/07/24 16:00:06",
+			["session"] = 1820,
 			["counter"] = 60,
 		}, -- [168]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["time"] = "2020/08/13 21:31:07",
 			["session"] = 1843,
+			["time"] = "2020/08/13 21:31:07",
 			["counter"] = 6,
 		}, -- [169]
 		{
@@ -1435,8 +1435,8 @@ BugGrabberDB = {
 		}, -- [181]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\FarmLog\\FarmLog.toc",
-			["time"] = "2020/09/23 22:14:04",
 			["session"] = 1916,
+			["time"] = "2020/09/23 22:14:04",
 			["counter"] = 2,
 		}, -- [182]
 		{
@@ -1447,5 +1447,13 @@ BugGrabberDB = {
 			["session"] = 1916,
 			["counter"] = 3,
 		}, -- [183]
+		{
+			["message"] = "[string \"CLICK RingMenuToggleRing1:LeftButton\"]:1: '=' expected near 'RingMenuToggleRing1'",
+			["time"] = "2020/09/24 16:08:58",
+			["locals"] = "(*temporary) = \"CLICK RingMenuToggleRing1:LeftButton\"\n",
+			["stack"] = "[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 1920,
+			["counter"] = 1,
+		}, -- [184]
 	},
 }
