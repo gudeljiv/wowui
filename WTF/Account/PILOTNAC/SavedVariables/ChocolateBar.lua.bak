@@ -42,11 +42,6 @@ ChocolateBarDB = {
 	["addonVersion"] = "@project-version@",
 	["profiles"] = {
 		["Default"] = {
-			["locked"] = false,
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["forceColor"] = false,
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -67,7 +62,24 @@ ChocolateBarDB = {
 					["width"] = 147,
 				},
 			},
-			["moveFrames"] = false,
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["b"] = 0,
+					["g"] = 0,
+					["r"] = 0,
+				},
+				["textureName"] = "None",
+			},
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+			},
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -282,10 +294,11 @@ ChocolateBarDB = {
 					["align"] = "right",
 					["index"] = 3,
 				},
-				["TestNoText"] = {
+				["Leatrix_Maps"] = {
 					["enabled"] = false,
-					["index"] = 4,
+					["showText"] = false,
 					["barName"] = "ChocolateBar1",
+					["align"] = "right",
 				},
 				["TradeSkillMaster"] = {
 					["align"] = "right",
@@ -308,11 +321,10 @@ ChocolateBarDB = {
 					["barName"] = "ChocolateBar2",
 					["align"] = "right",
 				},
-				["Leatrix_Maps"] = {
+				["TestNoText"] = {
 					["enabled"] = false,
-					["showText"] = false,
+					["index"] = 4,
 					["barName"] = "ChocolateBar1",
-					["align"] = "right",
 				},
 				["gmMoney"] = {
 					["index"] = 1,
@@ -332,26 +344,14 @@ ChocolateBarDB = {
 				},
 			},
 			["fontName"] = "Friz Quadrata TT",
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
-			},
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["fixedStrata"] = true,
+			["gap"] = 0,
+			["moveFrames"] = false,
 			["desaturated"] = false,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["gap"] = 0,
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["b"] = 0,
-					["g"] = 0,
-					["r"] = 0,
-				},
-				["textureName"] = "None",
-			},
+			["forceColor"] = false,
+			["locked"] = false,
 			["textColor"] = {
 				["a"] = 1,
 				["r"] = 1,
@@ -390,7 +390,7 @@ CB_PlayedTime = {
 		["total"] = 437,
 	},
 	["Konac-"] = {
-		["total"] = 5849038,
+		["total"] = 5850633,
 	},
 	["Dotwise-"] = {
 		["total"] = 3924,
@@ -413,14 +413,14 @@ CB_PlayedTime = {
 	["Mxyzptlk-"] = {
 		["total"] = 8367,
 	},
-	["Kamenac-"] = {
-		["total"] = 1557770,
+	["Paydo-"] = {
+		["total"] = 18945,
 	},
 	["Verminz-"] = {
 		["total"] = 311368,
 	},
-	["Paydo-"] = {
-		["total"] = 18945,
+	["Kamenac-"] = {
+		["total"] = 1557770,
 	},
 	["Mxzq-"] = {
 		["total"] = 248345,
