@@ -42,20 +42,6 @@ ChocolateBarDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["locked"] = false,
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["r"] = 0,
-					["g"] = 0,
-					["b"] = 0,
-				},
-				["textureName"] = "None",
-			},
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -76,10 +62,21 @@ ChocolateBarDB = {
 					["barOffx"] = -88.3325424194336,
 				},
 			},
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
 			},
+			["locked"] = false,
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["r"] = 0,
+					["g"] = 0,
+					["b"] = 0,
+				},
+				["textureName"] = "None",
+			},
+			["fixedStrata"] = true,
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -285,16 +282,16 @@ ChocolateBarDB = {
 					["showText"] = false,
 					["customLabel"] = "R",
 				},
+				["TestNoText"] = {
+					["enabled"] = false,
+					["index"] = 4,
+					["barName"] = "ChocolateBar1",
+				},
 				["Leatrix_Maps"] = {
 					["enabled"] = false,
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
-				},
-				["TestNoText"] = {
-					["enabled"] = false,
-					["index"] = 4,
-					["barName"] = "ChocolateBar1",
 				},
 				["TradeSkillMaster"] = {
 					["align"] = "right",
@@ -344,14 +341,17 @@ ChocolateBarDB = {
 				},
 			},
 			["fontName"] = "Friz Quadrata TT",
-			["forceColor"] = false,
-			["fixedStrata"] = true,
 			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["gap"] = 0,
+			["moveFrames"] = false,
 			["desaturated"] = false,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["gap"] = 0,
-			["moveFrames"] = false,
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+			},
+			["forceColor"] = false,
 			["textColor"] = {
 				["a"] = 1,
 				["b"] = 1,
@@ -419,8 +419,8 @@ CB_PlayedTime = {
 	["Verminz-"] = {
 		["total"] = 311368,
 	},
-	["Kamenac-"] = {
-		["total"] = 1557770,
+	["Paydo-"] = {
+		["total"] = 18945,
 	},
 	["Kosturko-"] = {
 		["total"] = 1457,
@@ -428,8 +428,8 @@ CB_PlayedTime = {
 	["Mxzq-"] = {
 		["total"] = 248345,
 	},
-	["Paydo-"] = {
-		["total"] = 18945,
+	["Kamenac-"] = {
+		["total"] = 1557770,
 	},
 	["Grgur-"] = {
 		["total"] = 2,
@@ -441,6 +441,6 @@ CB_PlayedTime = {
 		["total"] = 3924,
 	},
 	["Konac-"] = {
-		["total"] = 5853167,
+		["total"] = 5861854,
 	},
 }

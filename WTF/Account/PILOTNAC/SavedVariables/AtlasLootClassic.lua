@@ -18,12 +18,12 @@ AtlasLootClassicDB = {
 		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
 		["Mxym - Golemagg"] = "Default",
 		["Mxys - Golemagg"] = "Default",
-		["Slanac - Golemagg"] = "Default",
-		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
-		["Augustin - Golemagg"] = "Default",
-		["Grgur - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
+		["Augustin - Golemagg"] = "Default",
+		["Grgur - Golemagg"] = "Default",
+		["Slanac - Golemagg"] = "Default",
+		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 		["Antun - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
@@ -219,6 +219,17 @@ AtlasLootClassicDB = {
 				},
 			},
 		},
+		["Slanac - Golemagg"] = {
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"Ragefire", -- [2]
+					nil, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+			},
+		},
 		["Vermin - Golemagg"] = {
 			["GUI"] = {
 				["point"] = {
@@ -241,24 +252,13 @@ AtlasLootClassicDB = {
 				["hide"] = true,
 			},
 		},
-		["Mxyzptlk - Golemagg"] = {
-			["GUI"] = {
-				["selected"] = {
-					nil, -- [1]
-					"Ragefire", -- [2]
-					nil, -- [3]
-					1, -- [4]
-					0, -- [5]
-				},
-			},
-		},
 		["Augustin - Golemagg"] = {
 		},
 		["Grgur - Golemagg"] = {
 		},
 		["Jaroslav - Golemagg"] = {
 		},
-		["Slanac - Golemagg"] = {
+		["Mxyzptlk - Golemagg"] = {
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]

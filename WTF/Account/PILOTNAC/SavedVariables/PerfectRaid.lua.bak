@@ -16,13 +16,13 @@ PerfectRaidDB = {
 			["buffs"] = {
 				{
 					["buffname"] = "Power Word: Fortitude",
-					["color"] = "FFFFFF",
+					["missing"] = true,
 					["conds"] = "All",
 					["groupname3"] = "Qiraji Fortitude",
-					["missing"] = true,
+					["disptext"] = "F",
 					["groupname"] = "Imp: Blood Pact",
 					["groupname2"] = "Commanding Shout",
-					["disptext"] = "F",
+					["color"] = "FFFFFF",
 				}, -- [1]
 				{
 					["buffname"] = "Power Word: Shield",
@@ -174,13 +174,13 @@ PerfectRaidDB = {
 				}, -- [5]
 				{
 					["buffname"] = "Commanding Shout",
-					["color"] = "FFBF00",
+					["missing"] = true,
 					["conds"] = "All",
 					["groupname3"] = "Qiraji Fortitude",
-					["missing"] = true,
+					["disptext"] = "CS",
 					["groupname"] = "Imp: Blood Pact",
 					["groupname2"] = "Power Word: Fortitude",
-					["disptext"] = "CS",
+					["color"] = "FFBF00",
 				}, -- [6]
 				{
 					["buffname"] = "Mortal Strike",

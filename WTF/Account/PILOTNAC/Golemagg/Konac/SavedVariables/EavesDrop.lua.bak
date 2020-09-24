@@ -96,6 +96,15 @@ EavesDropStatsDB = {
 						},
 						["icon"] = 136207,
 					},
+					["Mind Blast"] = {
+						[-2] = {
+							["time"] = "|cffffffff09/08/20 03:18:53|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMind Blast|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4448-1-26-8961-0000576988:Felpaw Ravager|hFelpaw Ravager|h |cffffffff568|r |cffffffffShadow|r. ",
+							["amount"] = 568,
+						},
+						[2] = {
+						},
+						["icon"] = 136224,
+					},
 					["Holy Nova"] = {
 						[-2] = {
 							["time"] = "|cffffffff09/22/20 10:57:44|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffHoly Nova|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4469-1-31-3252-00006A5315:Silithid Swarmer|hSilithid Swarmer|h |cffffffff164|r |cffffffffHoly|r. (54 Overkill) ",
@@ -107,14 +116,13 @@ EavesDropStatsDB = {
 						},
 						["icon"] = 135922,
 					},
-					["Mind Blast"] = {
+					["Thorns"] = {
 						[-2] = {
-							["time"] = "|cffffffff09/08/20 03:18:53|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMind Blast|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4448-1-26-8961-0000576988:Felpaw Ravager|hFelpaw Ravager|h |cffffffff568|r |cffffffffShadow|r. ",
-							["amount"] = 568,
+							["time"] = "|cffffffff09/24/20 06:24:09|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:DAMAGE_SHIELD|h|cffffffffThorns|r|h |Haction:DAMAGE_SHIELD|hdamages|h |Hunit:Creature-0-4468-1-32-4024-00006CBAE9:Bloodfury Slayer|hBloodfury Slayer|h |cffffffff9|r |cffffffffNature|r. ",
+							["amount"] = 9,
 						},
 						[2] = {
 						},
-						["icon"] = 136224,
 					},
 				},
 			}, -- [1]
@@ -166,8 +174,8 @@ EavesDropStatsDB = {
 					},
 					["Nature"] = {
 						[-2] = {
-							["time"] = "|cffffffff09/20/20 06:20:53|r\n|Hunit:Creature-0-4469-1-31-3273-0000677F87:Kolkar Stormer|hKolkar Stormer|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Lightning Bolt|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffff131351|r |cffff1313Nature|r. ",
-							["amount"] = 51,
+							["time"] = "|cffffffff09/24/20 06:22:17|r\n|Hunit:Creature-0-4468-1-32-4027-00006C811F:Bloodfury Storm Witch|hBloodfury Storm Witch|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Lightning Bolt|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffff1313110|r |cffff1313Nature|r. ",
+							["amount"] = 110,
 						},
 						[2] = {
 						},

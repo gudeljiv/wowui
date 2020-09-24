@@ -1006,9 +1006,9 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 1125.76354980469,
+		["m_iFrameBottom"] = 1169.39990234375,
 		["m_bHideCompletedQuests"] = true,
-		["m_iFrameLeft"] = 2019.82434082031,
+		["m_iFrameLeft"] = 2097.39990234375,
 		["m_bColourDoneOrFailed"] = true,
 		["m_bLocked"] = true,
 		["m_bNoBorder"] = true,
@@ -1025,7 +1025,7 @@ MonkeyQuestConfig = {
 		["m_iFrameWidth"] = 270,
 		["m_bCrashBorder"] = false,
 		["m_strHeaderOpenColour"] = "|cffbfbfff",
-		["m_iFrameTop"] = 1163.76354980469,
+		["m_iFrameTop"] = 1207.39990234375,
 		["m_bObjectives"] = true,
 		["m_bHideHeader"] = false,
 		["m_bShowTooltipObjectives"] = true,
@@ -1103,19 +1103,19 @@ MonkeyQuestConfig = {
 		["m_bShowZoneHighlight"] = true,
 		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
 		["m_aQuestList"] = {
-			["Vanquish the Betrayers - false"] = {
+			["Encroachment - false"] = {
 				["m_bChecked"] = true,
 			},
 			["From The Wreckage.... - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Durotar - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Encroachment - false"] = {
-				["m_bChecked"] = true,
-			},
 			["Break a Few Eggs - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Vanquish the Betrayers - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Durotar - true"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -1151,6 +1151,26 @@ MonkeyQuestConfig = {
 		["m_bHideTitle"] = false,
 		["m_iFrameLeft"] = 1650.51281738281,
 		["m_bGrowUp"] = false,
+	},
+	["Stonespine|Vermins"] = {
+		["m_aQuestList"] = {
+			["Sarkoth - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Valley of Trials - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Vile Familiars - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Cutting Teeth - false"] = {
+				["m_bChecked"] = true,
+			},
+		},
+	},
+	["Golemagg|Dmitar"] = {
+		["m_aQuestList"] = {
+		},
 	},
 	["Golemagg|Mohikanac"] = {
 		["m_aQuestList"] = {
@@ -1198,22 +1218,51 @@ MonkeyQuestConfig = {
 			},
 		},
 	},
-	["Golemagg|Dmitar"] = {
+	["Golemagg|Greenwise"] = {
 		["m_aQuestList"] = {
-		},
-	},
-	["Stonespine|Vermins"] = {
-		["m_aQuestList"] = {
-			["Sarkoth - false"] = {
+			["Miner's Fortune - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Valley of Trials - true"] = {
+			["Mura Runetotem - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Vile Familiars - false"] = {
+			["Jorn Skyseer - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Cutting Teeth - false"] = {
+			["The Guns of Northwatch - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Smart Drinks - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Hezrul Bloodmark - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Deepmoss Spider Eggs - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Barrens - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Wailing Caverns - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Ziz Fizziks - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Egg Hunt - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Hamuul Runetotem - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Trouble at the Docks - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Letter to Jin'Zil - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Tribes at War - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -1268,7 +1317,7 @@ MonkeyQuestConfig = {
 			["Silithus - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Bijou's Belongings - false"] = {
+			["Urok Doomhowl - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Blackrock Spire - true"] = {
@@ -1289,62 +1338,13 @@ MonkeyQuestConfig = {
 			["Gammerita, Mon! - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Urok Doomhowl - false"] = {
+			["Bijou's Belongings - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Invaders of Alterac Valley - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Hunt the Savages - false"] = {
-				["m_bChecked"] = true,
-			},
-		},
-	},
-	["Golemagg|Greenwise"] = {
-		["m_aQuestList"] = {
-			["Miner's Fortune - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Mura Runetotem - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Jorn Skyseer - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Guns of Northwatch - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Smart Drinks - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Hezrul Bloodmark - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Deepmoss Spider Eggs - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Barrens - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Wailing Caverns - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Ziz Fizziks - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Egg Hunt - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Hamuul Runetotem - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Trouble at the Docks - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Letter to Jin'Zil - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Tribes at War - false"] = {
 				["m_bChecked"] = true,
 			},
 		},

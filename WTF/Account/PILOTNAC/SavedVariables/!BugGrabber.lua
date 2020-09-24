@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 1923,
+	["session"] = 1925,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -1410,21 +1410,13 @@ BugGrabberDB = {
 			["counter"] = 5,
 		}, -- [178]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'SetCVar()'.",
-			["time"] = "2020/09/20 16:52:43",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetCVar'\nInterface\\AddOns\\xVermin\\Core.lua:20: in function <Interface\\AddOns\\xVermin\\Core.lua:16>",
-			["session"] = 1900,
-			["counter"] = 1,
-		}, -- [179]
-		{
 			["message"] = "Interface\\AddOns\\nMinimap\\tab.lua:487: attempt to call method 'GenerateHexColor' (a nil value)",
 			["time"] = "2020/09/22 22:18:26",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "Interface\\AddOns\\nMinimap\\tab.lua:487: in function `nMinimap_UpdateFriendButton'\nInterface\\AddOns\\nMinimap\\tab.lua:519: in function `nMinimap_UpdateFriends'\nInterface\\AddOns\\nMinimap\\tab.lua:569: in function `nMinimapTab_Friends_UpdateScrollFrame'\nInterface\\AddOns\\nMinimap\\tab.lua:607: in function <Interface\\AddOns\\nMinimap\\tab.lua:601>",
 			["session"] = 1912,
 			["counter"] = 7,
-		}, -- [180]
+		}, -- [179]
 		{
 			["message"] = "Interface\\AddOns\\FarmLog\\FarmLog-v1.6.lua:1399: attempt to concatenate upvalue 'BL_ITEM_NAME' (a nil value)",
 			["time"] = "2020/09/23 13:02:42",
@@ -1432,21 +1424,13 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\FarmLog\\FarmLog-v1.6.lua:1399: in function `IncreaseBlackLotusPickStat'\nInterface\\AddOns\\FarmLog\\FarmLog-v1.6.lua:1116: in function `OnSpellCastEvent'\nInterface\\AddOns\\FarmLog\\FarmLog-v1.6.lua:1799: in function `OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
 			["session"] = 1915,
 			["counter"] = 5,
-		}, -- [181]
+		}, -- [180]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\FarmLog\\FarmLog.toc",
 			["session"] = 1916,
 			["time"] = "2020/09/23 22:14:04",
 			["counter"] = 2,
-		}, -- [182]
-		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'TargetFrameToT:Show()'.",
-			["time"] = "2020/09/23 13:06:51",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Show'\nInterface\\FrameXML\\TargetFrame.lua:910: in function <Interface\\FrameXML\\TargetFrame.lua:905>\n[C]: ?\n[C]: in function `TargetofTarget_Update'\nInterface\\FrameXML\\TargetFrame.lua:420: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[C]: ?\n[C]: ?",
-			["session"] = 1916,
-			["counter"] = 3,
-		}, -- [183]
+		}, -- [181]
 		{
 			["message"] = "[string \"CLICK RingMenuToggleRing1:LeftButton\"]:1: '=' expected near 'RingMenuToggleRing1'",
 			["time"] = "2020/09/24 16:08:58",
@@ -1454,6 +1438,22 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 1920,
 			["counter"] = 1,
+		}, -- [182]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'TargetFrameToT:Show()'.",
+			["time"] = "2020/09/23 13:06:51",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Show'\nInterface\\FrameXML\\TargetFrame.lua:910: in function <Interface\\FrameXML\\TargetFrame.lua:905>\n[C]: ?\n[C]: in function `TargetofTarget_Update'\nInterface\\FrameXML\\TargetFrame.lua:420: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[C]: ?\n[C]: ?",
+			["session"] = 1924,
+			["counter"] = 4,
+		}, -- [183]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'SetCVar()'.",
+			["time"] = "2020/09/20 16:52:43",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetCVar'\nInterface\\AddOns\\xVermin\\Core.lua:20: in function <Interface\\AddOns\\xVermin\\Core.lua:16>",
+			["session"] = 1925,
+			["counter"] = 2,
 		}, -- [184]
 	},
 }

@@ -37,8 +37,8 @@ EavesDropStatsDB = {
 					},
 					["Shadow Word: Pain"] = {
 						[-2] = {
-							["time"] = "|cffffffff09/07/20 05:12:09|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_PERIODIC_DAMAGE|h|cffffffffShadow Word: Pain|r|h |Haction:SPELL_PERIODIC_DAMAGE|hdamaged|h |Hunit:Creature-0-4448-1-48-6238-0000564DAC:Big Will|hBig Will|h |cffffffff156|r |cffffffffShadow|r. ",
-							["amount"] = 156,
+							["time"] = "|cffffffff09/24/20 07:07:56|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_PERIODIC_DAMAGE|h|cffffffffShadow Word: Pain|r|h |Haction:SPELL_PERIODIC_DAMAGE|hdamaged|h |Hunit:Creature-0-4468-1-32-11915-0000EBE1BF:Gogger Rock Keeper|hGogger Rock Keeper|h |cffffffff157|r |cffffffffShadow|r. ",
+							["amount"] = 157,
 						},
 						[2] = {
 						},
@@ -46,8 +46,8 @@ EavesDropStatsDB = {
 					},
 					["Mind Blast"] = {
 						[-2] = {
-							["time"] = "|cffffffff09/08/20 03:18:53|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMind Blast|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4448-1-26-8961-0000576988:Felpaw Ravager|hFelpaw Ravager|h |cffffffff568|r |cffffffffShadow|r. ",
-							["amount"] = 568,
+							["time"] = "|cffffffff09/24/20 06:49:37|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMind Blast|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4468-1-32-4024-00006CCA05:Bloodfury Slayer|hBloodfury Slayer|h |cffffffff225|r |cffffffffShadow|r. (346 Overkill) ",
+							["amount"] = 571,
 						},
 						[2] = {
 						},
@@ -63,6 +63,14 @@ EavesDropStatsDB = {
 							["amount"] = 326,
 						},
 						["icon"] = 135922,
+					},
+					["Thorns"] = {
+						[-2] = {
+							["time"] = "|cffffffff09/24/20 06:24:09|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:DAMAGE_SHIELD|h|cffffffffThorns|r|h |Haction:DAMAGE_SHIELD|hdamages|h |Hunit:Creature-0-4468-1-32-4024-00006CBAE9:Bloodfury Slayer|hBloodfury Slayer|h |cffffffff9|r |cffffffffNature|r. ",
+							["amount"] = 9,
+						},
+						[2] = {
+						},
 					},
 				},
 				["heal"] = {
@@ -150,8 +158,8 @@ EavesDropStatsDB = {
 					},
 					["Fire"] = {
 						[-2] = {
-							["time"] = "|cffffffff09/21/20 06:11:01|r\n|Hunit:Creature-0-4469-1-31-3263-000068CFAD:Bristleback Geomancer|hBristleback Geomancer|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Fireball|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffff131386|r |cffff1313Fire|r. ",
-							["amount"] = 86,
+							["time"] = "|cffffffff09/24/20 06:48:06|r\n|Hunit:Creature-0-4468-1-32-4038-00016CCA68:Burning Destroyer|hBurning Destroyer|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Fireball|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffff131397|r |cffff1313Fire|r. ",
+							["amount"] = 97,
 						},
 						[2] = {
 						},
@@ -166,8 +174,8 @@ EavesDropStatsDB = {
 					},
 					["Nature"] = {
 						[-2] = {
-							["time"] = "|cffffffff09/20/20 06:20:53|r\n|Hunit:Creature-0-4469-1-31-3273-0000677F87:Kolkar Stormer|hKolkar Stormer|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Lightning Bolt|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffff131351|r |cffff1313Nature|r. ",
-							["amount"] = 51,
+							["time"] = "|cffffffff09/24/20 06:22:17|r\n|Hunit:Creature-0-4468-1-32-4027-00006C811F:Bloodfury Storm Witch|hBloodfury Storm Witch|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Lightning Bolt|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffff1313110|r |cffff1313Nature|r. ",
+							["amount"] = 110,
 						},
 						[2] = {
 						},
