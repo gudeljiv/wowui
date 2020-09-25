@@ -61,11 +61,11 @@ local function UpdateExperience()
 		XPToLevel.text:SetTextColor(color.r, color.g, color.b, 1)
 
 		xVermin:LogBreak()
-		xVermin:Log("current xp: " .. CurrentXP)
-		xVermin:Log("new xp: " .. NewXP)
-		xVermin:Log("gained: " .. gained)
-		xVermin:Log("xp to lvl: " .. XPToLVL)
-		xVermin:Log("mobs to lvl: " .. math.ceil((MaxXP - NewXP) / gained))
+		xVermin:Log("current xp: " .. CurrentXP, mbk)
+		xVermin:Log("new xp: " .. NewXP, mbk)
+		xVermin:Log("gained: " .. gained, mbk)
+		xVermin:Log("xp to lvl: " .. XPToLVL, mbk)
+		xVermin:Log("mobs to lvl: " .. math.ceil((MaxXP - NewXP) / gained), mbk)
 		xVermin:LogBreak()
 
 		if gained > 0 then
@@ -73,8 +73,8 @@ local function UpdateExperience()
 			MobsToKill.text:SetText(hmmm)
 			MobsToKill.text:SetTextColor(color.r, color.g, color.b, 1)
 
-			xVermin:Log("mbk frame: " .. (mbk and "true" or "false"))
-			xVermin:Log("mbk timer: " .. (MobToKillTimer and "true" or "false"))
+			xVermin:Log("mbk frame: " .. (mbk and "true" or "false"), mbk)
+			xVermin:Log("mbk timer: " .. (MobToKillTimer and "true" or "false"), mbk)
 			xVermin:LogBreak()
 
 			if not mbk then

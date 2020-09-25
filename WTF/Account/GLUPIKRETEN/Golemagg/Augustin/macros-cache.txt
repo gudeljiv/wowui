@@ -13,3 +13,8 @@ VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 /startattack
 /cast Fireball
 END
+VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use Conjured Fresh Water
+/use Conjured Bread
+END

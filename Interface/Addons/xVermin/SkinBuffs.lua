@@ -42,7 +42,8 @@ local function SkinTarget()
 			if frame then
 				frame:CreateBeautyBorder(xVermin.Config.buff.bordersize)
 				frame:SetBeautyBorderTexture(xVermin.Config.border.default)
-				frame:SetScale(xVermin.Config.buff.scale)
+				-- frame:SetScale(xVermin.Config.buff.scale)
+				frame:SetSize(21, 21)
 			end
 			-- else
 			-- 	if frame then
@@ -57,33 +58,34 @@ local function SkinTarget()
 			frameBorder = _G["TargetFrameDebuff" .. i .. "Border"]
 			frameCount = _G["TargetFrameDebuff" .. i .. "Count"]
 
-			if D_unitCaster == "player" then
-				if frameBorder then
-					frameBorder:Hide()
-				end
-
-				if frameCount then
-					frameCount:SetFont(xVermin.Config.font.arial, xVermin.Config.debuff.fontsize - 1, xVermin.Config.debuff.outline)
-					frameCount:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", 3, 0)
-				end
-
-				if select(4, UnitDebuff("target", i)) then
-					color = xVermin.Config.ReplacedDebuffTypeColor[select(4, UnitDebuff("target", i))]
-				else
-					color = xVermin.Config.ReplacedDebuffTypeColor["none"]
-				end
-
-				if frame then
-					frame:CreateBeautyBorder(xVermin.Config.debuff.bordersize)
-					frame:SetBeautyBorderTexture(xVermin.Config.border.colorize)
-					frame:SetBeautyBorderColor(color.r, color.g, color.b)
-					frame:SetScale(xVermin.Config.buff.scale)
-				end
-			else
-				if frame then
-				-- frame:Hide()
-				end
+			-- if D_unitCaster == "player" or UnitName("target") == UnitName("player") then
+			if frameBorder then
+				frameBorder:Hide()
 			end
+
+			if frameCount then
+				frameCount:SetFont(xVermin.Config.font.arial, xVermin.Config.debuff.fontsize - 1, xVermin.Config.debuff.outline)
+				frameCount:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", 3, 0)
+			end
+
+			if select(4, UnitDebuff("target", i)) then
+				color = xVermin.Config.ReplacedDebuffTypeColor[select(4, UnitDebuff("target", i))]
+			else
+				color = xVermin.Config.ReplacedDebuffTypeColor["none"]
+			end
+
+			if frame then
+				frame:CreateBeautyBorder(xVermin.Config.debuff.bordersize)
+				frame:SetBeautyBorderTexture(xVermin.Config.border.colorize)
+				frame:SetBeautyBorderColor(color.r, color.g, color.b)
+				-- frame:SetScale(xVermin.Config.buff.scale)
+				frame:SetSize(21, 21)
+			end
+			-- else
+			-- if frame then
+			-- frame:Hide()
+			-- end
+			-- end
 		end
 	end
 end
@@ -113,6 +115,7 @@ local function SkinPet()
 			if frame then
 				frame:CreateBeautyBorder(xVermin.Config.petbuff.bordersize)
 				frame:SetBeautyBorderTexture(xVermin.Config.border.default)
+				frame:SetSize(21, 21)
 			end
 
 			------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -141,6 +144,7 @@ local function SkinPet()
 				frame:CreateBeautyBorder(xVermin.Config.petdebuff.bordersize)
 				frame:SetBeautyBorderTexture(xVermin.Config.border.colorize)
 				frame:SetBeautyBorderColor(color.r, color.g, color.b)
+				frame:SetSize(21, 21)
 			end
 		end
 	end
