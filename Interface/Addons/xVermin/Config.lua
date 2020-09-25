@@ -31,7 +31,7 @@ xVermin.Config = {
 	},
 	buff = {
 		scale = 1.3,
-		fontsize = 10,
+		fontsize = 9,
 		outline = "THINOUTLINE",
 		bordersize = 6,
 		position = {
@@ -44,7 +44,7 @@ xVermin.Config = {
 	},
 	debuff = {
 		scale = 1.3,
-		fontsize = 10,
+		fontsize = 9,
 		outline = "THINOUTLINE",
 		bordersize = 6,
 		position = {
@@ -56,7 +56,7 @@ xVermin.Config = {
 		}
 	},
 	petbuff = {
-		fontsize = 10,
+		fontsize = 9,
 		outline = "THINOUTLINE",
 		bordersize = 6,
 		position = {
@@ -68,7 +68,7 @@ xVermin.Config = {
 		}
 	},
 	petdebuff = {
-		fontsize = 10,
+		fontsize = 9,
 		outline = "THINOUTLINE",
 		bordersize = 6,
 		position = {

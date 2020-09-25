@@ -78,6 +78,15 @@ EavesDropStatsDB = {
 						},
 						["icon"] = 135972,
 					},
+					["Touch of Weakness"] = {
+						[-2] = {
+							["time"] = "|cffffffff09/25/20 09:24:39|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffTouch of Weakness|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4468-0-4-2053-00016E43D2:Haggard Refugee|hHaggard Refugee|h |cffffffff72|r |cffffffffShadow|r. ",
+							["amount"] = 72,
+						},
+						[2] = {
+						},
+						["icon"] = 136143,
+					},
 					["Smite"] = {
 						[-2] = {
 							["time"] = "|cffffffff09/08/20 03:11:04|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffSmite|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4448-1-38-7457-0000576C7C:Rogue Ice Thistle|hRogue Ice Thistle|h |cffffffff465|r |cffffffffHoly|r. ",
@@ -127,6 +136,17 @@ EavesDropStatsDB = {
 				},
 			}, -- [1]
 			[-1] = {
+				["heal"] = {
+					["Lesser Heal"] = {
+						[-2] = {
+							["time"] = "|cffffffff09/25/20 09:07:32|r\n|Hunit:Player-4465-01EDB539:Hedä|hHedä|h |Hspell:0:0:SPELL_HEAL|h|cff82f4ffLesser Heal|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cff82f4ff78|r |cff82f4ffHoly|r. ",
+							["amount"] = 78,
+						},
+						[2] = {
+						},
+						["icon"] = 135929,
+					},
+				},
 				["hit"] = {
 					["Physical"] = {
 						[-2] = {

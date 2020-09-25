@@ -43,7 +43,7 @@ local function SkinTarget()
 				frame:CreateBeautyBorder(xVermin.Config.buff.bordersize)
 				frame:SetBeautyBorderTexture(xVermin.Config.border.default)
 				-- frame:SetScale(xVermin.Config.buff.scale)
-				frame:SetSize(21, 21)
+				frame:SetSize(28, 28)
 			end
 			-- else
 			-- 	if frame then
@@ -79,7 +79,7 @@ local function SkinTarget()
 				frame:SetBeautyBorderTexture(xVermin.Config.border.colorize)
 				frame:SetBeautyBorderColor(color.r, color.g, color.b)
 				-- frame:SetScale(xVermin.Config.buff.scale)
-				frame:SetSize(21, 21)
+				frame:SetSize(28, 28)
 			end
 			-- else
 			-- if frame then
