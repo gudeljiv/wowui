@@ -1,0 +1,57 @@
+
+KILLTRACK_CHAR = {
+	["MOBS"] = {
+		[1767] = {
+			["Name"] = "Vile Fin Shredder",
+			["Kills"] = 0,
+		},
+		[2349] = {
+			["Name"] = "Giant Moss Creeper",
+			["Kills"] = 0,
+		},
+		[3100] = {
+			["Name"] = "Elder Mottled Boar",
+			["Kills"] = 0,
+		},
+		[2268] = {
+			["Name"] = "Hillsbrad Footman",
+			["Kills"] = 1,
+		},
+		[2449] = {
+			["Name"] = "Citizen Wilkes",
+			["Kills"] = 0,
+		},
+		[2442] = {
+			["Name"] = "Cow",
+			["Kills"] = 0,
+		},
+		[2360] = {
+			["Name"] = "Hillsbrad Farmhand",
+			["Kills"] = 1,
+		},
+		[2248] = {
+			["Name"] = "Cave Yeti",
+			["Kills"] = 0,
+		},
+		[2384] = {
+			["Name"] = "Starving Mountain Lion",
+			["Kills"] = 0,
+		},
+		[2356] = {
+			["Name"] = "Elder Gray Bear",
+			["Kills"] = 1,
+		},
+		[2354] = {
+			["Name"] = "Vicious Gray Bear",
+			["Kills"] = 0,
+		},
+		[2350] = {
+			["Name"] = "Forest Moss Creeper",
+			["Kills"] = 0,
+		},
+		[2266] = {
+			["Name"] = "Hillsbrad Farmer",
+			["Kills"] = 5,
+		},
+	},
+}

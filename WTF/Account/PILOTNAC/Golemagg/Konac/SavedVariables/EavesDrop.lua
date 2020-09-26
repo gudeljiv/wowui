@@ -6,84 +6,6 @@ EavesDropStatsDB = {
 	["profiles"] = {
 		["Konac - Golemagg"] = {
 			{
-				["hit"] = {
-					["Shoot"] = {
-						[-2] = {
-							["time"] = "|cffffffff09/21/20 05:19:22|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Haction:RANGE_DAMAGE|h|cffffffffShoot|r|h |Haction:RANGE_DAMAGE|hhit|h |Hunit:Creature-0-4469-1-31-3255-0000E8985A:Sunscale Screecher|hSunscale Screecher|h |cffffffff170|r |cffffffffNature|r. ",
-							["amount"] = 170,
-						},
-						[2] = {
-							["time"] = "|cffffffff09/20/20 01:24:55|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Haction:RANGE_DAMAGE|h|cffffffffShoot|r|h |Haction:RANGE_DAMAGE|hhit|h |Hunit:Creature-0-4469-0-18-8597-0000672859:Plaguehound|hPlaguehound|h |cffffffff252|r |cffffffffNature|r. (Critical) ",
-							["amount"] = 252,
-						},
-					},
-					["Holy Fire"] = {
-						[-2] = {
-							["time"] = "|cffffffff09/08/20 03:11:00|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffHoly Fire|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4448-1-38-7457-0000576C7C:Rogue Ice Thistle|hRogue Ice Thistle|h |cffffffff410|r |cffffffffHoly|r. ",
-							["amount"] = 410,
-						},
-						[2] = {
-						},
-						["icon"] = 135972,
-					},
-					["Shadow Word: Pain"] = {
-						[-2] = {
-							["time"] = "|cffffffff09/24/20 07:07:56|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_PERIODIC_DAMAGE|h|cffffffffShadow Word: Pain|r|h |Haction:SPELL_PERIODIC_DAMAGE|hdamaged|h |Hunit:Creature-0-4468-1-32-11915-0000EBE1BF:Gogger Rock Keeper|hGogger Rock Keeper|h |cffffffff157|r |cffffffffShadow|r. ",
-							["amount"] = 157,
-						},
-						[2] = {
-						},
-						["icon"] = 136207,
-					},
-					["Smite"] = {
-						[-2] = {
-							["time"] = "|cffffffff09/08/20 03:11:04|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffSmite|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4448-1-38-7457-0000576C7C:Rogue Ice Thistle|hRogue Ice Thistle|h |cffffffff465|r |cffffffffHoly|r. ",
-							["amount"] = 465,
-						},
-						[2] = {
-							["time"] = "|cffffffff09/26/20 12:23:27|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffSmite|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4468-0-4-2529-00006F15A8:Son of Arugal|hSon of Arugal|h |cffffffff714|r |cffffffffHoly|r. (Critical) ",
-							["amount"] = 714,
-						},
-						["icon"] = 135924,
-					},
-					["Touch of Weakness"] = {
-						[-2] = {
-							["time"] = "|cffffffff09/25/20 09:24:39|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffTouch of Weakness|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4468-0-4-2053-00016E43D2:Haggard Refugee|hHaggard Refugee|h |cffffffff72|r |cffffffffShadow|r. ",
-							["amount"] = 72,
-						},
-						[2] = {
-						},
-						["icon"] = 136143,
-					},
-					["Holy Nova"] = {
-						[-2] = {
-							["time"] = "|cffffffff09/22/20 10:57:44|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffHoly Nova|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4469-1-31-3252-00006A5315:Silithid Swarmer|hSilithid Swarmer|h |cffffffff164|r |cffffffffHoly|r. (54 Overkill) ",
-							["amount"] = 218,
-						},
-						[2] = {
-							["time"] = "|cffffffff09/22/20 10:58:17|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffHoly Nova|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4469-1-31-4196-0000EA6563:Silithid Swarm|hSilithid Swarm|h |cffffffff1|r |cffffffffHoly|r. (325 Overkill) (Critical) ",
-							["amount"] = 326,
-						},
-						["icon"] = 135922,
-					},
-					["Mind Blast"] = {
-						[-2] = {
-							["time"] = "|cffffffff09/24/20 06:49:37|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMind Blast|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4468-1-32-4024-00006CCA05:Bloodfury Slayer|hBloodfury Slayer|h |cffffffff225|r |cffffffffShadow|r. (346 Overkill) ",
-							["amount"] = 571,
-						},
-						[2] = {
-						},
-						["icon"] = 136224,
-					},
-					["Thorns"] = {
-						[-2] = {
-							["time"] = "|cffffffff09/24/20 06:24:09|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:DAMAGE_SHIELD|h|cffffffffThorns|r|h |Haction:DAMAGE_SHIELD|hdamages|h |Hunit:Creature-0-4468-1-32-4024-00006CBAE9:Bloodfury Slayer|hBloodfury Slayer|h |cffffffff9|r |cffffffffNature|r. ",
-							["amount"] = 9,
-						},
-						[2] = {
-						},
-					},
-				},
 				["heal"] = {
 					["Renew"] = {
 						[-2] = {
@@ -118,8 +40,8 @@ EavesDropStatsDB = {
 					},
 					["Holy Nova"] = {
 						[-2] = {
-							["time"] = "|cffffffff09/20/20 05:33:18|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_HEAL|h|cffffffffHoly Nova|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffffffff0|r |cffffffffHoly|r. (481 Overhealed) ",
-							["amount"] = 481,
+							["time"] = "|cffffffff09/26/20 05:53:36|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_HEAL|h|cffffffffHoly Nova|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffffffff0|r |cffffffffHoly|r. (482 Overhealed) ",
+							["amount"] = 482,
 						},
 						[2] = {
 							["time"] = "|cffffffff09/20/20 06:50:18|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_HEAL|h|cffffffffHoly Nova|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-01D5BF39:Augustin|hAugustin|h |cffffffff0|r |cffffffffHoly|r. (720 Overhealed) (Critical) ",
@@ -136,8 +58,97 @@ EavesDropStatsDB = {
 						},
 					},
 				},
+				["hit"] = {
+					["Shoot"] = {
+						[-2] = {
+							["time"] = "|cffffffff09/21/20 05:19:22|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Haction:RANGE_DAMAGE|h|cffffffffShoot|r|h |Haction:RANGE_DAMAGE|hhit|h |Hunit:Creature-0-4469-1-31-3255-0000E8985A:Sunscale Screecher|hSunscale Screecher|h |cffffffff170|r |cffffffffNature|r. ",
+							["amount"] = 170,
+						},
+						[2] = {
+							["time"] = "|cffffffff09/26/20 11:07:14|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Haction:RANGE_DAMAGE|h|cffffffffShoot|r|h |Haction:RANGE_DAMAGE|hhit|h |Hunit:Creature-0-4468-0-15-2266-0002EFAAB7:Hillsbrad Farmer|hHillsbrad Farmer|h |cffffffff253|r |cffffffffNature|r. (Critical) ",
+							["amount"] = 253,
+						},
+					},
+					["Holy Fire"] = {
+						[-2] = {
+							["time"] = "|cffffffff09/08/20 03:11:00|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffHoly Fire|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4448-1-38-7457-0000576C7C:Rogue Ice Thistle|hRogue Ice Thistle|h |cffffffff410|r |cffffffffHoly|r. ",
+							["amount"] = 410,
+						},
+						[2] = {
+						},
+						["icon"] = 135972,
+					},
+					["Touch of Weakness"] = {
+						[-2] = {
+							["time"] = "|cffffffff09/25/20 09:24:39|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffTouch of Weakness|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4468-0-4-2053-00016E43D2:Haggard Refugee|hHaggard Refugee|h |cffffffff72|r |cffffffffShadow|r. ",
+							["amount"] = 72,
+						},
+						[2] = {
+						},
+						["icon"] = 136143,
+					},
+					["Smite"] = {
+						[-2] = {
+							["time"] = "|cffffffff09/08/20 03:11:04|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffSmite|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4448-1-38-7457-0000576C7C:Rogue Ice Thistle|hRogue Ice Thistle|h |cffffffff465|r |cffffffffHoly|r. ",
+							["amount"] = 465,
+						},
+						[2] = {
+							["time"] = "|cffffffff09/26/20 12:23:27|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffSmite|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4468-0-4-2529-00006F15A8:Son of Arugal|hSon of Arugal|h |cffffffff714|r |cffffffffHoly|r. (Critical) ",
+							["amount"] = 714,
+						},
+						["icon"] = 135924,
+					},
+					["Shadow Word: Pain"] = {
+						[-2] = {
+							["time"] = "|cffffffff09/24/20 07:07:56|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_PERIODIC_DAMAGE|h|cffffffffShadow Word: Pain|r|h |Haction:SPELL_PERIODIC_DAMAGE|hdamaged|h |Hunit:Creature-0-4468-1-32-11915-0000EBE1BF:Gogger Rock Keeper|hGogger Rock Keeper|h |cffffffff157|r |cffffffffShadow|r. ",
+							["amount"] = 157,
+						},
+						[2] = {
+						},
+						["icon"] = 136207,
+					},
+					["Mind Blast"] = {
+						[-2] = {
+							["time"] = "|cffffffff09/24/20 06:49:37|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMind Blast|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4468-1-32-4024-00006CCA05:Bloodfury Slayer|hBloodfury Slayer|h |cffffffff225|r |cffffffffShadow|r. (346 Overkill) ",
+							["amount"] = 571,
+						},
+						[2] = {
+						},
+						["icon"] = 136224,
+					},
+					["Holy Nova"] = {
+						[-2] = {
+							["time"] = "|cffffffff09/22/20 10:57:44|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffHoly Nova|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4469-1-31-3252-00006A5315:Silithid Swarmer|hSilithid Swarmer|h |cffffffff164|r |cffffffffHoly|r. (54 Overkill) ",
+							["amount"] = 218,
+						},
+						[2] = {
+							["time"] = "|cffffffff09/22/20 10:58:17|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffHoly Nova|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4469-1-31-4196-0000EA6563:Silithid Swarm|hSilithid Swarm|h |cffffffff1|r |cffffffffHoly|r. (325 Overkill) (Critical) ",
+							["amount"] = 326,
+						},
+						["icon"] = 135922,
+					},
+					["Thorns"] = {
+						[-2] = {
+							["time"] = "|cffffffff09/24/20 06:24:09|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:DAMAGE_SHIELD|h|cffffffffThorns|r|h |Haction:DAMAGE_SHIELD|hdamages|h |Hunit:Creature-0-4468-1-32-4024-00006CBAE9:Bloodfury Slayer|hBloodfury Slayer|h |cffffffff9|r |cffffffffNature|r. ",
+							["amount"] = 9,
+						},
+						[2] = {
+						},
+					},
+				},
 			}, -- [1]
 			[-1] = {
+				["heal"] = {
+					["Lesser Heal"] = {
+						[-2] = {
+							["time"] = "|cffffffff09/25/20 09:07:32|r\n|Hunit:Player-4465-01EDB539:Hedä|hHedä|h |Hspell:0:0:SPELL_HEAL|h|cff82f4ffLesser Heal|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cff82f4ff78|r |cff82f4ffHoly|r. ",
+							["amount"] = 78,
+						},
+						[2] = {
+						},
+						["icon"] = 135929,
+					},
+				},
 				["hit"] = {
 					["Physical"] = {
 						[-2] = {
@@ -145,8 +156,8 @@ EavesDropStatsDB = {
 							["amount"] = 4237,
 						},
 						[2] = {
-							["time"] = "|cffffffff09/08/20 03:10:11|r\n|Hunit:Creature-0-4448-1-38-7450-0000577D44:Ragged Owlbeast|hRagged Owlbeast|h |Haction:SWING_DAMAGE|h|cffff1313Melee|r|h |Haction:SWING_DAMAGE|hhit|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffff1313202|r |cffff1313Physical|r. (Critical) ",
-							["amount"] = 202,
+							["time"] = "|cffffffff09/26/20 08:44:42|r\n|Hunit:Player-4465-00B9E488:Labellaflor|hLabellaflor|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Eviscerate|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffff1313393|r |cffff1313Physical|r. (1013 Overkill) (Critical) ",
+							["amount"] = 1406,
 						},
 					},
 					["Arcane"] = {
@@ -185,22 +196,11 @@ EavesDropStatsDB = {
 					},
 					["Nature"] = {
 						[-2] = {
-							["time"] = "|cffffffff09/24/20 06:22:17|r\n|Hunit:Creature-0-4468-1-32-4027-00006C811F:Bloodfury Storm Witch|hBloodfury Storm Witch|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Lightning Bolt|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffff1313110|r |cffff1313Nature|r. ",
-							["amount"] = 110,
+							["time"] = "|cffffffff09/26/20 08:50:39|r\n|Hunit:Player-4465-00B9E488:Labellaflor|hLabellaflor|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Lightning Strike|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffff1313231|r |cffff1313Nature|r. ",
+							["amount"] = 231,
 						},
 						[2] = {
 						},
-					},
-				},
-				["heal"] = {
-					["Lesser Heal"] = {
-						[-2] = {
-							["time"] = "|cffffffff09/25/20 09:07:32|r\n|Hunit:Player-4465-01EDB539:Hedä|hHedä|h |Hspell:0:0:SPELL_HEAL|h|cff82f4ffLesser Heal|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cff82f4ff78|r |cff82f4ffHoly|r. ",
-							["amount"] = 78,
-						},
-						[2] = {
-						},
-						["icon"] = 135929,
 					},
 				},
 			},

@@ -5,12 +5,12 @@ END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:2136
-/castsequence [combat]
+/castsequence [combat]item:3827,item:3827,item:3827,item:3827,item:3827,item:3827,item:3827,item:3827,item:3827,item:3827,item:3827,item:3827,item:3827,item:3827
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:1113
-/castsequence [combat]item:858,item:858,item:858
+/use [nocombat]item:4538
+/castsequence [combat]item:929,item:929,item:929
 END
 VER 3 0000000000000001 "FRAME" "132150"
 /run TargetFrameDebuff1Count:ClearAllPoints()

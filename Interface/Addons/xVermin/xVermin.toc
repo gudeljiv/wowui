@@ -5,6 +5,7 @@
 
 Config.lua
 Core.lua
+Debug.lua
 
 Frames/CharacterFrame.lua
 Frames/CustomContainers.lua

@@ -60,22 +60,22 @@ local function UpdateExperience()
 		XPToLevel.text:SetText(XPToLVL .. " (XP)")
 		XPToLevel.text:SetTextColor(color.r, color.g, color.b, 1)
 
-		xVermin:LogBreak()
-		xVermin:Log("current xp: " .. CurrentXP, mbk)
-		xVermin:Log("new xp: " .. NewXP, mbk)
-		xVermin:Log("gained: " .. gained, mbk)
-		xVermin:Log("xp to lvl: " .. XPToLVL, mbk)
-		xVermin:Log("mobs to lvl: " .. math.ceil((MaxXP - NewXP) / gained), mbk)
-		xVermin:LogBreak()
+		xVermin:LogBreak(false, "mbk")
+		xVermin:Log("current xp: " .. CurrentXP, "mbk")
+		xVermin:Log("new xp: " .. NewXP, "mbk")
+		xVermin:Log("gained: " .. gained, "mbk")
+		xVermin:Log("xp to lvl: " .. XPToLVL, "mbk")
+		xVermin:Log("mobs to lvl: " .. math.ceil((MaxXP - NewXP) / gained), "mbk")
+		xVermin:LogBreak(false, "mbk")
 
 		if gained > 0 then
 			hmmm = math.ceil((MaxXP - NewXP) / gained)
 			MobsToKill.text:SetText(hmmm)
 			MobsToKill.text:SetTextColor(color.r, color.g, color.b, 1)
 
-			xVermin:Log("mbk frame: " .. (mbk and "true" or "false"), mbk)
-			xVermin:Log("mbk timer: " .. (MobToKillTimer and "true" or "false"), mbk)
-			xVermin:LogBreak()
+			xVermin:Log("mbk frame: " .. (mbk and "true" or "false"), "mbk")
+			xVermin:Log("mbk timer: " .. (MobToKillTimer and "true" or "false"), "mbk")
+			xVermin:LogBreak(false, "mbk")
 
 			if not mbk then
 				UIFrameFadeIn(MobsToKill, 1, 0, 1)

@@ -95,38 +95,3 @@ function xVermin:ColorGradient(perc, ...)
 	r1, g1, b1, r2, g2, b2 = select((segment * 3) + 1, ...)
 	return r1 + (r2 - r1) * relperc, g1 + (g2 - g1) * relperc, b1 + (b2 - b1) * relperc
 end
-
-local debug, mbk, buffskin = false
-SLASH_DEBUG1 = "/xdebug"
-SlashCmdList["DEBUG"] = function(msg)
-	if msg == "" then
-		ChatFrame6:AddMessage(" - mbk")
-		ChatFrame6:AddMessage(" - buffskin")
-	else
-		if msg == "mbk" then
-			mbk = not mbk
-			debug = mbk
-			ChatFrame6:AddMessage("Mobs to kill: " .. (mbk and "true" or "false"))
-		end
-		if msg == "buffskin" then
-			buffskin = not buffskin
-			debug = buffskin
-			ChatFrame6:AddMessage("Skinn buffs: " .. (buffskin and "true" or "false"))
-		end
-	end
-end
-
-function xVermin:Log(input, source)
-	if source == "mbk" and mbk then
-		ChatFrame6:AddMessage(input)
-	end
-	if source == "buffskin" and buffskin then
-		ChatFrame6:AddMessage(input)
-	end
-end
-
-function xVermin:LogBreak()
-	if debug then
-		ChatFrame6:AddMessage("--------------------------------------------------------")
-	end
-end

@@ -1,17 +1,16 @@
 local _, xVermin = ...
 
-local totalxp = 0
-local maxxp = UnitXPMax("player")
-local currentxp = UnitXP("player")
+local totalxp, gained = 0
+local maxxp, currentxp, tolevel
 
 cc = CreateFrame("Frame", "CustomContainer", UIParent)
-cc:SetWidth(154)
-cc:SetHeight(30)
-cc:SetPoint("TOPRIGHT", "EavesDropFrame", "BOTTOMRIGHT", 0, -5)
+cc:SetWidth(110)
+cc:SetHeight(20)
+cc:SetPoint("TOP", "CustomContainer_Combat", "BOTTOM", 0, -15)
 
 tx = CreateFrame("Frame", "TotalXP", cc)
-tx:SetWidth(154)
-tx:SetHeight(30)
+tx:SetWidth(110)
+tx:SetHeight(20)
 tx:SetPoint("LEFT", cc, "LEFT", 0, 0)
 
 tx:SetBackdrop(
@@ -25,17 +24,16 @@ tx:SetBackdrop(
 	}
 )
 tx:SetBackdropColor(0, 0, 0, 0.4)
-tx:Show()
 tx:SetFrameStrata("BACKGROUND")
-tx:CreateBeautyBorder(8)
+tx:CreateBeautyBorder(6)
 
 local txtotal = CreateFrame("Frame", "TotalXPText", tx)
-txtotal:SetPoint("CENTER", tx, "CENTER", 0, 2)
+txtotal:SetPoint("CENTER", tx, "CENTER", 0, 0)
 txtotal:SetWidth(1)
 txtotal:SetHeight(1)
 txtotal.text = txtotal:CreateFontString(nil, "ARTWORK")
-txtotal.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
-txtotal.text:SetPoint("RIGHT", tx, "RIGHT", -6, 0)
+txtotal.text:SetFont(xVermin.Config.font.arial, 10, "NONE")
+txtotal.text:SetPoint("CENTER", tx, "CENTER", 0, -2)
 txtotal.text:SetText("0 (XP)")
 
 tx:SetScript(
@@ -45,33 +43,45 @@ tx:SetScript(
 			totalxp = 0
 			txtotal.text:SetText(totalxp .. " (XP)")
 		end
+		if button == "RightButton" then
+			xVermin:Debug()
+		end
 	end
 )
 
-local function Calculate()
-	newxp = UnitXP("player")
-	gained = newxp - currentxp
-	totalxp = totalxp + gained
-	txtotal.text:SetText(totalxp .. " (XP)")
-	currentxp = newxp
+local function Calculate(event, isInitialLogin, isReloadingUi)
+	if event == "PLAYER_ENTERING_WORLD" and (isInitialLogin or isReloadingUi) then
+		maxxp = UnitXPMax("player")
+		currentxp = UnitXP("player")
+	else
+		newxp = UnitXP("player")
+		if event == "PLAYER_LEVEL_UP" then
+			gained = maxxp - currentxp + newxp
+			maxxp = UnitXPMax("player")
+		else
+			gained = newxp - currentxp
+		end
+		totalxp = totalxp + gained
+		txtotal.text:SetText(totalxp .. " (XP)")
+
+		xVermin:LogBreak(false, "txp")
+		xVermin:Log("Gained XP: " .. gained .. ", Total XP: " .. totalxp, "txp")
+
+		currentxp = newxp
+	end
 end
 
 tx:RegisterEvent("PLAYER_XP_UPDATE")
 tx:RegisterEvent("PLAYER_LEVEL_UP")
+tx:RegisterEvent("PLAYER_ENTERING_WORLD")
 tx:SetScript(
 	"OnEvent",
 	function(self, event, isInitialLogin, isReloadingUi)
-		if event == "PLAYER_LEVEL_UP" then
-			C_Timer.After(
-				1,
-				function()
-					maxxp = UnitXPMax("player")
-					Calculate()
-				end
-			)
-		end
-		if event == "PLAYER_XP_UPDATE" then
-			Calculate()
+		if UnitLevel("player") == MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] then
+			tx:Hide()
+		else
+			tx:Show()
+			Calculate(event, isInitialLogin, isReloadingUi)
 		end
 	end
 )

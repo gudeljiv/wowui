@@ -1,0 +1,89 @@
+
+KILLTRACK = {
+	["BROKER"] = {
+		["MINIMAP"] = {
+			["hide"] = true,
+		},
+		["SHORT_TEXT"] = false,
+	},
+	["PRINTKILLS"] = false,
+	["SHOW_EXP"] = false,
+	["TOOLTIP"] = true,
+	["PRINTNEW"] = false,
+	["MOBS"] = {
+		[1767] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Vile Fin Shredder",
+		},
+		[2349] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Giant Moss Creeper",
+		},
+		[3100] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Elder Mottled Boar",
+		},
+		[2268] = {
+			["AchievCount"] = 0,
+			["Kills"] = 2,
+			["Name"] = "Hillsbrad Footman",
+		},
+		[2449] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Citizen Wilkes",
+		},
+		[2442] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Cow",
+		},
+		[2360] = {
+			["AchievCount"] = 0,
+			["Kills"] = 2,
+			["Name"] = "Hillsbrad Farmhand",
+		},
+		[2248] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Cave Yeti",
+		},
+		[2384] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Starving Mountain Lion",
+		},
+		[2266] = {
+			["AchievCount"] = 0,
+			["Kills"] = 6,
+			["Name"] = "Hillsbrad Farmer",
+		},
+		[2350] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Forest Moss Creeper",
+		},
+		[2354] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Vicious Gray Bear",
+		},
+		[2356] = {
+			["AchievCount"] = 0,
+			["Kills"] = 1,
+			["Name"] = "Elder Gray Bear",
+		},
+	},
+	["DISABLE_RAIDS"] = false,
+	["ACHIEV_THRESHOLD"] = 1000,
+	["DISABLE_DUNGEONS"] = false,
+	["IMMEDIATE"] = {
+		["THRESHOLD"] = 0,
+		["POSITION"] = {
+		},
+	},
+	["COUNT_GROUP"] = false,
+}
