@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 1928,
 	["lastSanitation"] = 3,
+	["session"] = 1929,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -173,8 +173,8 @@ BugGrabberDB = {
 		}, -- [21]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["time"] = "2020/07/26 13:26:58",
 			["session"] = 1336,
+			["time"] = "2020/07/26 13:26:58",
 			["counter"] = 2,
 		}, -- [22]
 		{
@@ -554,8 +554,8 @@ BugGrabberDB = {
 		}, -- [69]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["session"] = 1423,
 			["time"] = "2020/07/27 20:37:46",
+			["session"] = 1423,
 			["counter"] = 4,
 		}, -- [70]
 		{
@@ -820,8 +820,8 @@ BugGrabberDB = {
 		}, -- [103]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["session"] = 1605,
 			["time"] = "2020/08/02 10:06:15",
+			["session"] = 1605,
 			["counter"] = 3,
 		}, -- [104]
 		{
@@ -961,8 +961,8 @@ BugGrabberDB = {
 		}, -- [121]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
-			["time"] = "2020/08/02 20:13:03",
 			["session"] = 1654,
+			["time"] = "2020/08/02 20:13:03",
 			["counter"] = 3,
 		}, -- [122]
 		{
@@ -1327,14 +1327,14 @@ BugGrabberDB = {
 		}, -- [167]
 		{
 			["message"] = "(null)",
-			["session"] = 1820,
 			["time"] = "2020/07/24 16:00:06",
+			["session"] = 1820,
 			["counter"] = 60,
 		}, -- [168]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["time"] = "2020/08/13 21:31:07",
 			["session"] = 1843,
+			["time"] = "2020/08/13 21:31:07",
 			["counter"] = 6,
 		}, -- [169]
 		{
@@ -1419,8 +1419,8 @@ BugGrabberDB = {
 		}, -- [179]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\FarmLog\\FarmLog.toc",
-			["time"] = "2020/09/23 22:14:04",
 			["session"] = 1916,
+			["time"] = "2020/09/23 22:14:04",
 			["counter"] = 2,
 		}, -- [180]
 		{
@@ -1440,20 +1440,20 @@ BugGrabberDB = {
 			["counter"] = 2,
 		}, -- [182]
 		{
-			["message"] = "Interface\\AddOns\\nMinimap\\tab.lua:487: attempt to call method 'GenerateHexColor' (a nil value)",
-			["time"] = "2020/09/22 22:18:26",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "Interface\\AddOns\\nMinimap\\tab.lua:487: in function `nMinimap_UpdateFriendButton'\nInterface\\AddOns\\nMinimap\\tab.lua:519: in function `nMinimap_UpdateFriends'\nInterface\\AddOns\\nMinimap\\tab.lua:569: in function `nMinimapTab_Friends_UpdateScrollFrame'\nInterface\\AddOns\\nMinimap\\tab.lua:607: in function <Interface\\AddOns\\nMinimap\\tab.lua:601>",
-			["session"] = 1928,
-			["counter"] = 22,
-		}, -- [183]
-		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'TargetFrameToT:Show()'.",
 			["time"] = "2020/09/23 13:06:51",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Show'\nInterface\\FrameXML\\TargetFrame.lua:910: in function <Interface\\FrameXML\\TargetFrame.lua:905>\n[C]: ?\n[C]: in function `TargetofTarget_Update'\nInterface\\FrameXML\\TargetFrame.lua:420: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[C]: ?\n[C]: ?",
 			["session"] = 1928,
 			["counter"] = 5,
+		}, -- [183]
+		{
+			["message"] = "Interface\\AddOns\\nMinimap\\tab.lua:487: attempt to call method 'GenerateHexColor' (a nil value)",
+			["time"] = "2020/09/22 22:18:26",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\nMinimap\\tab.lua:487: in function `nMinimap_UpdateFriendButton'\nInterface\\AddOns\\nMinimap\\tab.lua:519: in function `nMinimap_UpdateFriends'\nInterface\\AddOns\\nMinimap\\tab.lua:569: in function `nMinimapTab_Friends_UpdateScrollFrame'\nInterface\\AddOns\\nMinimap\\tab.lua:607: in function <Interface\\AddOns\\nMinimap\\tab.lua:601>",
+			["session"] = 1929,
+			["counter"] = 94,
 		}, -- [184]
 	},
 }

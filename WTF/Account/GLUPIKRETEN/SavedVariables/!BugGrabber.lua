@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 2644,
 	["lastSanitation"] = 3,
+	["session"] = 2657,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -165,8 +165,8 @@ BugGrabberDB = {
 		}, -- [20]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["time"] = "2020/07/26 13:26:58",
 			["session"] = 1336,
+			["time"] = "2020/07/26 13:26:58",
 			["counter"] = 2,
 		}, -- [21]
 		{
@@ -546,8 +546,8 @@ BugGrabberDB = {
 		}, -- [68]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["session"] = 1423,
 			["time"] = "2020/07/27 20:37:46",
+			["session"] = 1423,
 			["counter"] = 4,
 		}, -- [69]
 		{
@@ -805,8 +805,8 @@ BugGrabberDB = {
 		}, -- [101]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["session"] = 1605,
 			["time"] = "2020/08/02 10:06:15",
+			["session"] = 1605,
 			["counter"] = 3,
 		}, -- [102]
 		{
@@ -946,8 +946,8 @@ BugGrabberDB = {
 		}, -- [119]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
-			["time"] = "2020/08/02 20:13:03",
 			["session"] = 1654,
+			["time"] = "2020/08/02 20:13:03",
 			["counter"] = 3,
 		}, -- [120]
 		{
@@ -1428,8 +1428,8 @@ BugGrabberDB = {
 		}, -- [180]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Experience.lua",
-			["time"] = "2020/08/19 21:35:15",
 			["session"] = 1943,
+			["time"] = "2020/08/19 21:35:15",
 			["counter"] = 6,
 		}, -- [181]
 		{
@@ -2040,8 +2040,8 @@ BugGrabberDB = {
 		}, -- [257]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["time"] = "2020/08/13 21:31:07",
 			["session"] = 2448,
+			["time"] = "2020/08/13 21:31:07",
 			["counter"] = 9,
 		}, -- [258]
 		{
@@ -2173,19 +2173,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [274]
 		{
-			["message"] = "(null)",
-			["session"] = 2470,
-			["time"] = "2020/07/24 16:00:06",
-			["counter"] = 97,
-		}, -- [275]
-		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'MultiBarBottomLeft:SetShown()'.",
 			["time"] = "2020/09/09 20:53:10",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetShown'\nInterface\\FrameXML\\MultiActionBars.lua:36: in function <Interface\\FrameXML\\MultiActionBars.lua:34>\nInterface\\FrameXML\\MultiActionBars.lua:52: in function `MultiActionBar_Update'\nInterface\\FrameXML\\InterfaceOptionsPanels.lua:1175: in function `setFunc'\nInterface\\FrameXML\\InterfaceOptionsPanels.lua:87: in function <Interface\\FrameXML\\InterfaceOptionsPanels.lua:83>\n[C]: in function `pcall'\nInterface\\FrameXML\\InterfaceOptionsFrame.lua:217: in function <Interface\\FrameXML\\InterfaceOptionsFrame.lua:216>\n[C]: in function `securecall'\nInterface\\FrameXML\\InterfaceOptionsFrame.lua:252: in function <Interface\\FrameXML\\InterfaceOptionsFrame.lua:248>\n[C]: in function `Click'\nInterface\\FrameXML\\UIParent.lua:3353: in function `ToggleGameMenu'\n[string \"TOGGLEGAMEMENU\"]:1: in function <[string \"TOGGLEGAMEMENU\"]:1>",
 			["session"] = 2481,
 			["counter"] = 1,
-		}, -- [276]
+		}, -- [275]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\BestFood.lua:254: attempt to index local 'b' (a nil value)",
 			["time"] = "2020/09/13 21:33:09",
@@ -2193,7 +2187,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\BestFood.lua:254: in function <Interface\\AddOns\\xVermin\\BestFood.lua:253>\n[C]: in function `sort'\nInterface\\AddOns\\xVermin\\BestFood.lua:162: in function `Sorted'\nInterface\\AddOns\\xVermin\\BestFood.lua:110: in function `UpdateMacros'\nInterface\\AddOns\\xVermin\\BestFood.lua:52: in function <Interface\\AddOns\\xVermin\\BestFood.lua:47>",
 			["session"] = 2525,
 			["counter"] = 1,
-		}, -- [277]
+		}, -- [276]
 		{
 			["message"] = "[string \"print(GetWidth(\"PlayerFrame\"))\"]:1: attempt to call global 'GetWidth' (a nil value)",
 			["time"] = "2020/09/16 16:41:31",
@@ -2201,7 +2195,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"print(GetWidth(\"PlayerFrame\"))\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 2547,
 			["counter"] = 1,
-		}, -- [278]
+		}, -- [277]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Core.lua:95: attempt to concatenate upvalue 'debug' (a boolean value)",
 			["time"] = "2020/09/18 19:32:03",
@@ -2209,15 +2203,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Core.lua:95: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 2579,
 			["counter"] = 2,
-		}, -- [279]
-		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'ItemRackButton0:SetAttribute()'.",
-			["time"] = "2020/08/02 11:49:42",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetAttribute'\nInterface\\AddOns\\ItemRack\\ItemRackButtons.lua:35: in function `InitButtons'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:282: in function `func'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:970: in function `OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>",
-			["session"] = 2603,
-			["counter"] = 9,
-		}, -- [280]
+		}, -- [278]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'SetCVar()'.",
 			["time"] = "2020/09/16 19:28:47",
@@ -2225,7 +2211,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetCVar'\nInterface\\AddOns\\xVermin\\Core.lua:20: in function <Interface\\AddOns\\xVermin\\Core.lua:16>",
 			["session"] = 2628,
 			["counter"] = 4,
-		}, -- [281]
+		}, -- [279]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:61: attempt to index upvalue 'frame' (a nil value)",
 			["time"] = "2020/07/25 16:34:57",
@@ -2233,6 +2219,36 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:61: in function <Interface\\AddOns\\xVermin\\SkinBuffs.lua:26>\n[C]: ?\n[C]: in function `TargetFrame_UpdateAuras'\nInterface\\FrameXML\\TargetFrame.lua:131: in function `TargetFrame_Update'\nInterface\\FrameXML\\TargetFrame.lua:150: in function <Interface\\FrameXML\\TargetFrame.lua:142>\n[C]: in function `CameraOrSelectOrMoveStop'\n[string \"CAMERAORSELECTORMOVE\"]:4: in function <[string \"CAMERAORSELECTORMOVE\"]:1>",
 			["session"] = 2637,
 			["counter"] = 288,
+		}, -- [280]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Experience/TotalXP.lua:6: CustomContainerTotalXP:SetPoint(): Wrong object type for function",
+			["time"] = "2020/09/26 12:07:20",
+			["locals"] = "(*temporary) = CustomContainerTotalXP {\n 0 = <userdata>\n}\n(*temporary) = \"BOTTOM\"\n(*temporary) = <table> {\n TrackStat = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDropStats.lua:57\n SetDefaultModuleLibraries = <function> defined @Interface\\AddOns\\GatherMate2\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:367\n DisplayEvent = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:898\n ScrollUp = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:1130\n EnableModule = <function> defined @Interface\\AddOns\\GatherMate2\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:332\n modules = <table> {\n }\n CancelTimer = <function> defined @Interface\\AddOns\\Details\\Libs\\AceTimer-3.0\\AceTimer-3.0.lua:147\n IterateEmbeds = <function> defined @Interface\\AddOns\\GatherMate2\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:442\n SetupHistory = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDropStats.lua:160\n UpdateRepHonorEvents = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:256\n ResetEvents = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:1012\n Printf = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceConsole-3.0\\AceConsole-3.0.lua:69\n ScrollToBottom = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:1124\n SetDefaultModulePrototype = <function> defined @Interface\\AddOns\\GatherMate2\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:409\n defaultModuleState = true\n IsEnabled = <function> defined @Interface\\AddOns\\GatherMate2\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:451\n ScheduleTimer = <function> defined @Interface\\AddOns\\Details\\Libs\\AceTimer-3.0\\AceTimer-3.0.lua:94\n DisableModule = <function> defined @Interface\\AddOns\\GatherMate2\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:350\n RegisterMessage = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:90\n GetArgs = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceConsole-3.0\\AceConsole-3.0.lua:144\n ShowHistory = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:1270\n OpenMenu = <function> defined @Interface\\AddOns\\EavesDrop\\options.lua:768\n SetFonts = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:381\n CombatEvent = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:423\n ShortenString = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:1240\n SetEnabledState = <function> defined @Interface\\AddOns\\GatherMate2\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:424\n ShowFrame = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:418\n enabledState = true\n RegisterEvent = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:90\n SendToChat = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:1254\n IterateModules = <function> defined @Interface\\AddOns\\GatherMate2\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:437\n ScrollDown = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:1139\n UpdateExpEvents = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:248\n SetDisplay = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDropStats.lua:46\n ToolTipAnchor = \"ANCHOR_RIGHT\"\n OnInitialize = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:185\n NewModule = <function> defined @Interface\\AddOns\\GatherMate2\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:235\n options = <table> {\n }\n chardb = <table> {\n }\n db = <table> {\n }\n GetModule = <function> defined @Interface\\AddOns\\GatherMate2\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:210\n PLAYER_DEAD = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:886\n COMBAT_TEXT_UPDATE = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:818\n baseName = \"EavesDrop\"\n UpdateCombatEvents = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:238\n TimeLeft = <function> defined @Interface\\AddOns\\Details\\Libs\\AceTimer-3.0\\AceTimer-3.0.lua:172\n FindCombatDown = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:1107\n UnregisterChatCommand = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceConsole-3.0\\AceConsole-3.0.lua:111\n RegisterChatCommand = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceConsole-3.0\\AceCons",
+			["stack"] = "[C]: in function `SetPoint'\nInterface\\AddOns\\xVermin\\Experience/TotalXP.lua:6: in main chunk",
+			["session"] = 2646,
+			["counter"] = 1,
+		}, -- [281]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'ItemRackButton0:SetAttribute()'.",
+			["time"] = "2020/08/02 11:49:42",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetAttribute'\nInterface\\AddOns\\ItemRack\\ItemRackButtons.lua:35: in function `InitButtons'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:282: in function `func'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:970: in function `OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>",
+			["session"] = 2650,
+			["counter"] = 10,
 		}, -- [282]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Experience/TotalXP.lua:36: attempt to index global 'cus' (a nil value)",
+			["time"] = "2020/09/26 12:27:57",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:128\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:59\n Log = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:119\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:84\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:74\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:51\n Config = <table> {\n }\n}\ntotalxp = 0\nmaxxp = 23200\ncurrentxp = 17608\ntxtotal = TotalXPText {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = 1\n(*temporary) = <userdata>\n(*temporary) = \"CENTER\"\n(*temporary) = 0\n(*temporary) = 0\n(*temporary) = \"attempt to index global 'cus' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Experience/TotalXP.lua:36: in main chunk",
+			["session"] = 2651,
+			["counter"] = 1,
+		}, -- [283]
+		{
+			["message"] = "(null)",
+			["time"] = "2020/07/24 16:00:06",
+			["session"] = 2651,
+			["counter"] = 103,
+		}, -- [284]
 	},
 }
