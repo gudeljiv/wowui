@@ -77,30 +77,33 @@ function RingMenu_UpdateRing(ringID)
 		rf.toggleButton:SetAttribute(
 			"_onmousedown",
 			[[ -- (self, button)
-            local rf = self:GetParent()
-            local numRings = self:GetAttribute("numRings")
-            local allowMultipleOpenRings = self:GetAttribute("allowMultipleOpenRings")
-            local UIParent = self:GetFrameRef("UIParent")
-            
-            if rf:IsShown() then
-                rf:Hide()
-            else
-                 if not allowMultipleOpenRings then
-                    for ringID = 1, numRings do
-                        local rfOther = self:GetFrameRef("ringFrame" .. ringID)
-                        if rfOther then
-                            rfOther:Hide()
-                        end
-                    end
-                end
-                local relx, rely = UIParent:GetMousePosition()
-                local x = relx * UIParent:GetWidth()
-                local y = rely * UIParent:GetHeight()
-                rf:SetPoint("CENTER", UIParent, "BOTTOMLEFT", x, y)
-                rf:Show()
-            end
-        ]]
+				local rf = self:GetParent()
+				local numRings = self:GetAttribute("numRings")
+				local allowMultipleOpenRings = self:GetAttribute("allowMultipleOpenRings")
+				local UIParent = self:GetFrameRef("UIParent")
+				
+				if rf:IsShown() then
+					rf:Hide()
+				else
+					if not allowMultipleOpenRings then
+					for ringID = 1, numRings do
+						local rfOther = self:GetFrameRef("ringFrame" .. ringID)
+						if rfOther then
+							rfOther:Hide()
+						end
+					end
+				end
+				local relx, rely = UIParent:GetMousePosition()
+				local x = UIParent:GetWidth() / 2 + 300
+				local y = UIParent:GetHeight() / 2 + 100
+				rf:SetPoint("CENTER", UIParent, "BOTTOMLEFT", x, y)
+				rf:Show()
+			end
+		]]
 		)
+
+		-- local x = relx * UIParent:GetWidth()
+		-- local y = rely * UIParent:GetHeight()
 
 		rf:Hide()
 	end
