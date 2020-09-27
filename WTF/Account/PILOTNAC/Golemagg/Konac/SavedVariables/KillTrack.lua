@@ -101,6 +101,10 @@ KILLTRACK_CHAR = {
 			["Name"] = "Snake",
 			["Kills"] = 0,
 		},
+		[3300] = {
+			["Name"] = "Adder",
+			["Kills"] = 0,
+		},
 		[3631] = {
 			["Name"] = "Deviate Stinglash",
 			["Kills"] = 0,
@@ -113,9 +117,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Farmer Ray",
 			["Kills"] = 0,
 		},
-		[5775] = {
-			["Name"] = "Verdan the Everliving",
-			["Kills"] = 1,
+		[2620] = {
+			["Name"] = "Prairie Dog",
+			["Kills"] = 0,
 		},
 		[3671] = {
 			["Name"] = "Lady Anacondra",
@@ -125,9 +129,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Elder Gray Bear",
 			["Kills"] = 3,
 		},
-		[3673] = {
-			["Name"] = "Lord Serpentis",
-			["Kills"] = 1,
+		[2248] = {
+			["Name"] = "Cave Yeti",
+			["Kills"] = 0,
 		},
 		[3632] = {
 			["Name"] = "Deviate Creeper",
@@ -137,17 +141,17 @@ KILLTRACK_CHAR = {
 			["Name"] = "Evolving Ectoplasm",
 			["Kills"] = 7,
 		},
-		[5056] = {
-			["Name"] = "Deviate Dreadfang",
-			["Kills"] = 3,
+		[2360] = {
+			["Name"] = "Hillsbrad Farmhand",
+			["Kills"] = 2,
 		},
-		[3670] = {
-			["Name"] = "Lord Pythas",
-			["Kills"] = 1,
+		[3840] = {
+			["Name"] = "Druid of the Fang",
+			["Kills"] = 24,
 		},
-		[5761] = {
-			["Name"] = "Deviate Shambler",
-			["Kills"] = 15,
+		[3100] = {
+			["Name"] = "Elder Mottled Boar",
+			["Kills"] = 0,
 		},
 		[2349] = {
 			["Name"] = "Giant Moss Creeper",
@@ -165,25 +169,25 @@ KILLTRACK_CHAR = {
 			["Name"] = "Deviate Slayer",
 			["Kills"] = 0,
 		},
-		[3100] = {
-			["Name"] = "Elder Mottled Boar",
-			["Kills"] = 0,
+		[5761] = {
+			["Name"] = "Deviate Shambler",
+			["Kills"] = 15,
 		},
-		[3840] = {
-			["Name"] = "Druid of the Fang",
-			["Kills"] = 24,
+		[3670] = {
+			["Name"] = "Lord Pythas",
+			["Kills"] = 1,
 		},
-		[2360] = {
-			["Name"] = "Hillsbrad Farmhand",
-			["Kills"] = 2,
+		[5056] = {
+			["Name"] = "Deviate Dreadfang",
+			["Kills"] = 3,
 		},
-		[2248] = {
-			["Name"] = "Cave Yeti",
-			["Kills"] = 0,
+		[3673] = {
+			["Name"] = "Lord Serpentis",
+			["Kills"] = 1,
 		},
-		[2620] = {
-			["Name"] = "Prairie Dog",
-			["Kills"] = 0,
+		[5775] = {
+			["Name"] = "Verdan the Everliving",
+			["Kills"] = 1,
 		},
 	},
 }

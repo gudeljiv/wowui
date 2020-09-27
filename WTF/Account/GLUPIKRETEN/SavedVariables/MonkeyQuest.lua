@@ -61,10 +61,10 @@ MonkeyQuestConfig = {
 			["Journey to the Crossroads - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Thunderhorn Cleansing - false"] = {
+			["Rite of Wisdom - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Druid - true"] = {
+			["Wildmane Cleansing - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Supervisor Fizsprocket - false"] = {
@@ -73,7 +73,7 @@ MonkeyQuestConfig = {
 			["Dwarven Digging - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Heeding the Call - false"] = {
+			["Thunderhorn Cleansing - false"] = {
 				["m_bChecked"] = true,
 			},
 			["The Ravaged Caravan - false"] = {
@@ -82,13 +82,13 @@ MonkeyQuestConfig = {
 			["The Hunter's Way - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Rite of Wisdom - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Wildmane Cleansing - false"] = {
+			["Heeding the Call - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Wildmane Totem - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Druid - true"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -869,7 +869,7 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 1110.39990234375,
+		["m_iFrameBottom"] = 994.399963378906,
 		["m_bHideTitleButtons"] = false,
 		["m_iFrameLeft"] = 2097.39990234375,
 		["m_bColourDoneOrFailed"] = true,

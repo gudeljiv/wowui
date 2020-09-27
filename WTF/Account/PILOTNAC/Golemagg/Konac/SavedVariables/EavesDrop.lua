@@ -6,58 +6,6 @@ EavesDropStatsDB = {
 	["profiles"] = {
 		["Konac - Golemagg"] = {
 			{
-				["heal"] = {
-					["Renew"] = {
-						[-2] = {
-							["time"] = "|cffffffff09/17/20 10:23:56|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_PERIODIC_HEAL|h|cffffffffRenew|r|h |Haction:SPELL_PERIODIC_HEAL|hhealed|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffffffff0|r |cffffffffHoly|r. (385 Overhealed) ",
-							["amount"] = 385,
-						},
-						[2] = {
-						},
-						["icon"] = 135953,
-					},
-					["Greater Heal"] = {
-						[-2] = {
-							["time"] = "|cffffffff09/20/20 01:22:48|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_HEAL|h|cffffffffGreater Heal|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffffffff0|r |cffffffffHoly|r. (2997 Overhealed) ",
-							["amount"] = 2997,
-						},
-						[2] = {
-							["time"] = "|cffffffff09/20/20 01:22:22|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_HEAL|h|cffffffffGreater Heal|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffffffff0|r |cffffffffHoly|r. (4441 Overhealed) (Critical) ",
-							["amount"] = 4441,
-						},
-						["icon"] = 135913,
-					},
-					["Flash Heal"] = {
-						[-2] = {
-							["time"] = "|cffffffff09/20/20 01:23:00|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_HEAL|h|cffffffffFlash Heal|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffffffff0|r |cffffffffHoly|r. (1432 Overhealed) ",
-							["amount"] = 1432,
-						},
-						[2] = {
-							["time"] = "|cffffffff09/20/20 01:22:59|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_HEAL|h|cffffffffFlash Heal|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffffffff0|r |cffffffffHoly|r. (2074 Overhealed) (Critical) ",
-							["amount"] = 2074,
-						},
-						["icon"] = 135907,
-					},
-					["Holy Nova"] = {
-						[-2] = {
-							["time"] = "|cffffffff09/26/20 05:53:36|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_HEAL|h|cffffffffHoly Nova|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffffffff0|r |cffffffffHoly|r. (482 Overhealed) ",
-							["amount"] = 482,
-						},
-						[2] = {
-							["time"] = "|cffffffff09/20/20 06:50:18|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_HEAL|h|cffffffffHoly Nova|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-01D5BF39:Augustin|hAugustin|h |cffffffff0|r |cffffffffHoly|r. (720 Overhealed) (Critical) ",
-							["amount"] = 720,
-						},
-						["icon"] = 135922,
-					},
-					["Healing Potion"] = {
-						[-2] = {
-							["time"] = "|cffffffff09/23/20 10:08:17|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_HEAL|h|cffffffffHealing Potion|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffffffff164|r |cffffffffPhysical|r. ",
-							["amount"] = 164,
-						},
-						[2] = {
-						},
-					},
-				},
 				["hit"] = {
 					["Holy Fire"] = {
 						[-2] = {
@@ -121,15 +69,6 @@ EavesDropStatsDB = {
 							["amount"] = 253,
 						},
 					},
-					["Touch of Weakness"] = {
-						[-2] = {
-							["time"] = "|cffffffff09/25/20 09:24:39|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffTouch of Weakness|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4468-0-4-2053-00016E43D2:Haggard Refugee|hHaggard Refugee|h |cffffffff72|r |cffffffffShadow|r. ",
-							["amount"] = 72,
-						},
-						[2] = {
-						},
-						["icon"] = 136143,
-					},
 					["Shadow Word: Pain"] = {
 						[-2] = {
 							["time"] = "|cffffffff09/24/20 07:07:56|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_PERIODIC_DAMAGE|h|cffffffffShadow Word: Pain|r|h |Haction:SPELL_PERIODIC_DAMAGE|hdamaged|h |Hunit:Creature-0-4468-1-32-11915-0000EBE1BF:Gogger Rock Keeper|hGogger Rock Keeper|h |cffffffff157|r |cffffffffShadow|r. ",
@@ -138,6 +77,15 @@ EavesDropStatsDB = {
 						[2] = {
 						},
 						["icon"] = 136207,
+					},
+					["Touch of Weakness"] = {
+						[-2] = {
+							["time"] = "|cffffffff09/25/20 09:24:39|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffTouch of Weakness|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4468-0-4-2053-00016E43D2:Haggard Refugee|hHaggard Refugee|h |cffffffff72|r |cffffffffShadow|r. ",
+							["amount"] = 72,
+						},
+						[2] = {
+						},
+						["icon"] = 136143,
 					},
 					["Thorns"] = {
 						[-2] = {
@@ -148,19 +96,60 @@ EavesDropStatsDB = {
 						},
 					},
 				},
-			}, -- [1]
-			[-1] = {
 				["heal"] = {
-					["Lesser Heal"] = {
+					["Renew"] = {
 						[-2] = {
-							["time"] = "|cffffffff09/25/20 09:07:32|r\n|Hunit:Player-4465-01EDB539:Hedä|hHedä|h |Hspell:0:0:SPELL_HEAL|h|cff82f4ffLesser Heal|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cff82f4ff78|r |cff82f4ffHoly|r. ",
-							["amount"] = 78,
+							["time"] = "|cffffffff09/17/20 10:23:56|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_PERIODIC_HEAL|h|cffffffffRenew|r|h |Haction:SPELL_PERIODIC_HEAL|hhealed|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffffffff0|r |cffffffffHoly|r. (385 Overhealed) ",
+							["amount"] = 385,
 						},
 						[2] = {
 						},
-						["icon"] = 135929,
+						["icon"] = 135953,
+					},
+					["Greater Heal"] = {
+						[-2] = {
+							["time"] = "|cffffffff09/20/20 01:22:48|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_HEAL|h|cffffffffGreater Heal|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffffffff0|r |cffffffffHoly|r. (2997 Overhealed) ",
+							["amount"] = 2997,
+						},
+						[2] = {
+							["time"] = "|cffffffff09/20/20 01:22:22|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_HEAL|h|cffffffffGreater Heal|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffffffff0|r |cffffffffHoly|r. (4441 Overhealed) (Critical) ",
+							["amount"] = 4441,
+						},
+						["icon"] = 135913,
+					},
+					["Flash Heal"] = {
+						[-2] = {
+							["time"] = "|cffffffff09/20/20 01:23:00|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_HEAL|h|cffffffffFlash Heal|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffffffff0|r |cffffffffHoly|r. (1432 Overhealed) ",
+							["amount"] = 1432,
+						},
+						[2] = {
+							["time"] = "|cffffffff09/20/20 01:22:59|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_HEAL|h|cffffffffFlash Heal|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffffffff0|r |cffffffffHoly|r. (2074 Overhealed) (Critical) ",
+							["amount"] = 2074,
+						},
+						["icon"] = 135907,
+					},
+					["Holy Nova"] = {
+						[-2] = {
+							["time"] = "|cffffffff09/26/20 05:53:36|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_HEAL|h|cffffffffHoly Nova|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffffffff0|r |cffffffffHoly|r. (482 Overhealed) ",
+							["amount"] = 482,
+						},
+						[2] = {
+							["time"] = "|cffffffff09/20/20 06:50:18|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_HEAL|h|cffffffffHoly Nova|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-01D5BF39:Augustin|hAugustin|h |cffffffff0|r |cffffffffHoly|r. (720 Overhealed) (Critical) ",
+							["amount"] = 720,
+						},
+						["icon"] = 135922,
+					},
+					["Healing Potion"] = {
+						[-2] = {
+							["time"] = "|cffffffff09/23/20 10:08:17|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_HEAL|h|cffffffffHealing Potion|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffffffff164|r |cffffffffPhysical|r. ",
+							["amount"] = 164,
+						},
+						[2] = {
+						},
 					},
 				},
+			}, -- [1]
+			[-1] = {
 				["hit"] = {
 					["Physical"] = {
 						[-2] = {
@@ -213,6 +202,17 @@ EavesDropStatsDB = {
 						},
 						[2] = {
 						},
+					},
+				},
+				["heal"] = {
+					["Lesser Heal"] = {
+						[-2] = {
+							["time"] = "|cffffffff09/25/20 09:07:32|r\n|Hunit:Player-4465-01EDB539:Hedä|hHedä|h |Hspell:0:0:SPELL_HEAL|h|cff82f4ffLesser Heal|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cff82f4ff78|r |cff82f4ffHoly|r. ",
+							["amount"] = 78,
+						},
+						[2] = {
+						},
+						["icon"] = 135929,
 					},
 				},
 			},

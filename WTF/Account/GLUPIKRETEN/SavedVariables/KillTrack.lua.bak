@@ -21,6 +21,11 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Stormsnout",
 		},
+		[3248] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Barrens Giraffe",
+		},
 		[5755] = {
 			["AchievCount"] = 0,
 			["Kills"] = 4,
@@ -37,15 +42,21 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Gray Bear",
 		},
+		[3241] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Savannah Patriarch",
+		},
 		[1924] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Moonrage Bloodhowler",
 		},
-		[1867] = {
+		[5756] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Dalaran Apprentice",
+			["Kills"] = 9,
+			["Name"] = "Deviate Venomwing",
+			["Exp"] = 47,
 		},
 		[6466] = {
 			["AchievCount"] = 0,
@@ -57,12 +68,6 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Hillsbrad Apprentice Blacksmith",
 		},
-		[5756] = {
-			["AchievCount"] = 0,
-			["Kills"] = 9,
-			["Name"] = "Deviate Venomwing",
-			["Exp"] = 47,
-		},
 		[2540] = {
 			["AchievCount"] = 0,
 			["Kills"] = 1,
@@ -73,6 +78,11 @@ KILLTRACK = {
 			["Kills"] = 7,
 			["Name"] = "Deviate Adder",
 			["Exp"] = 31,
+		},
+		[2384] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Starving Mountain Lion",
 		},
 		[2360] = {
 			["AchievCount"] = 0,
@@ -86,11 +96,11 @@ KILLTRACK = {
 			["Name"] = "Haggard Refugee",
 			["Exp"] = 113,
 		},
-		[232] = {
+		[2054] = {
 			["AchievCount"] = 0,
-			["Kills"] = 2,
-			["Name"] = "Farmer Ray",
-			["Exp"] = 160,
+			["Kills"] = 21,
+			["Name"] = "Sickly Refugee",
+			["Exp"] = 127,
 		},
 		[5775] = {
 			["AchievCount"] = 0,
@@ -98,17 +108,16 @@ KILLTRACK = {
 			["Name"] = "Verdan the Everliving",
 			["Exp"] = 94,
 		},
-		[2266] = {
+		[2959] = {
 			["AchievCount"] = 0,
-			["Kills"] = 128,
-			["Name"] = "Hillsbrad Farmer",
-			["Exp"] = 168,
+			["Kills"] = 0,
+			["Name"] = "Prairie Stalker",
 		},
-		[2267] = {
+		[5761] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Hillsbrad Peasant",
-			["Exp"] = 178,
+			["Kills"] = 15,
+			["Name"] = "Deviate Shambler",
+			["Exp"] = 37,
 		},
 		[2408] = {
 			["AchievCount"] = 0,
@@ -120,11 +129,11 @@ KILLTRACK = {
 			["Kills"] = 3,
 			["Name"] = "Chicken",
 		},
-		[8886] = {
+		[3653] = {
 			["AchievCount"] = 0,
-			["Kills"] = 14,
-			["Name"] = "Deviate Python",
-			["Exp"] = 6,
+			["Kills"] = 1,
+			["Name"] = "Kresh",
+			["Exp"] = 67,
 		},
 		[5682] = {
 			["AchievCount"] = 0,
@@ -132,22 +141,22 @@ KILLTRACK = {
 			["Name"] = "Dalin Forgewright",
 			["Exp"] = 37,
 		},
-		[5761] = {
+		[3637] = {
 			["AchievCount"] = 0,
-			["Kills"] = 15,
-			["Name"] = "Deviate Shambler",
-			["Exp"] = 37,
+			["Kills"] = 4,
+			["Name"] = "Deviate Guardian",
+			["Exp"] = 50,
 		},
-		[2959] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Prairie Stalker",
-		},
-		[3653] = {
+		[2267] = {
 			["AchievCount"] = 0,
 			["Kills"] = 1,
-			["Name"] = "Kresh",
-			["Exp"] = 67,
+			["Name"] = "Hillsbrad Peasant",
+			["Exp"] = 178,
+		},
+		[2960] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Prairie Wolf Alpha",
 		},
 		[5053] = {
 			["AchievCount"] = 0,
@@ -166,22 +175,21 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Vicious Gray Bear",
 		},
-		[2054] = {
+		[1914] = {
 			["AchievCount"] = 0,
-			["Kills"] = 21,
-			["Name"] = "Sickly Refugee",
-			["Exp"] = 127,
+			["Kills"] = 0,
+			["Name"] = "Dalaran Mage",
+			["Exp"] = 10,
 		},
 		[3630] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Deviate Coiler",
 		},
-		[3840] = {
+		[3242] = {
 			["AchievCount"] = 0,
-			["Kills"] = 25,
-			["Name"] = "Druid of the Fang",
-			["Exp"] = 42,
+			["Kills"] = 0,
+			["Name"] = "Zhevra Runner",
 		},
 		[3835] = {
 			["AchievCount"] = 0,
@@ -206,15 +214,17 @@ KILLTRACK = {
 			["Name"] = "Lord Pythas",
 			["Exp"] = 94,
 		},
-		[2960] = {
+		[232] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Prairie Wolf Alpha",
+			["Kills"] = 2,
+			["Name"] = "Farmer Ray",
+			["Exp"] = 160,
 		},
-		[4129] = {
+		[8886] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Hecklefang Snarler",
+			["Kills"] = 14,
+			["Name"] = "Deviate Python",
+			["Exp"] = 6,
 		},
 		[5056] = {
 			["AchievCount"] = 0,
@@ -222,10 +232,10 @@ KILLTRACK = {
 			["Name"] = "Deviate Dreadfang",
 			["Exp"] = 42,
 		},
-		[2442] = {
+		[1867] = {
 			["AchievCount"] = 0,
-			["Kills"] = 11,
-			["Name"] = "Cow",
+			["Kills"] = 0,
+			["Name"] = "Dalaran Apprentice",
 		},
 		[2387] = {
 			["AchievCount"] = 0,
@@ -255,15 +265,20 @@ KILLTRACK = {
 			["Name"] = "Elder Gray Bear",
 			["Exp"] = 21,
 		},
-		[2254] = {
+		[4129] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Crushridge Mauler",
+			["Name"] = "Hecklefang Snarler",
 		},
 		[3632] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Deviate Creeper",
+		},
+		[2254] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Crushridge Mauler",
 		},
 		[3640] = {
 			["AchievCount"] = 0,
@@ -271,26 +286,20 @@ KILLTRACK = {
 			["Name"] = "Evolving Ectoplasm",
 			["Exp"] = 26,
 		},
-		[3242] = {
+		[2442] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Zhevra Runner",
-		},
-		[2914] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Snake",
+			["Kills"] = 11,
+			["Name"] = "Cow",
 		},
 		[2404] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Blacksmith Verringtan",
 		},
-		[1914] = {
+		[2914] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Dalaran Mage",
-			["Exp"] = 10,
+			["Name"] = "Snake",
 		},
 		[2449] = {
 			["AchievCount"] = 0,
@@ -309,21 +318,22 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Sunscale Screecher",
 		},
-		[3637] = {
+		[2266] = {
 			["AchievCount"] = 0,
-			["Kills"] = 4,
-			["Name"] = "Deviate Guardian",
-			["Exp"] = 50,
+			["Kills"] = 128,
+			["Name"] = "Hillsbrad Farmer",
+			["Exp"] = 168,
 		},
 		[2956] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Adult Plainstrider",
 		},
-		[2384] = {
+		[3840] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Starving Mountain Lion",
+			["Kills"] = 25,
+			["Name"] = "Druid of the Fang",
+			["Exp"] = 42,
 		},
 		[3035] = {
 			["AchievCount"] = 0,

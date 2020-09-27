@@ -1,14 +1,14 @@
 
 KILLTRACK = {
+	["COUNT_GROUP"] = false,
+	["PRINTKILLS"] = false,
+	["SHOW_EXP"] = false,
 	["BROKER"] = {
 		["MINIMAP"] = {
 			["hide"] = true,
 		},
 		["SHORT_TEXT"] = false,
 	},
-	["PRINTKILLS"] = false,
-	["SHOW_EXP"] = false,
-	["TOOLTIP"] = true,
 	["PRINTNEW"] = false,
 	["MOBS"] = {
 		[2350] = {
@@ -136,6 +136,11 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Snake",
 		},
+		[3300] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Adder",
+		},
 		[3631] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
@@ -151,10 +156,10 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Farmer Ray",
 		},
-		[5775] = {
+		[2620] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Verdan the Everliving",
+			["Kills"] = 0,
+			["Name"] = "Prairie Dog",
 		},
 		[3671] = {
 			["AchievCount"] = 0,
@@ -166,10 +171,10 @@ KILLTRACK = {
 			["Kills"] = 3,
 			["Name"] = "Elder Gray Bear",
 		},
-		[3673] = {
+		[2248] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Lord Serpentis",
+			["Kills"] = 0,
+			["Name"] = "Cave Yeti",
 		},
 		[3632] = {
 			["AchievCount"] = 0,
@@ -181,20 +186,20 @@ KILLTRACK = {
 			["Kills"] = 7,
 			["Name"] = "Evolving Ectoplasm",
 		},
-		[5056] = {
+		[2360] = {
 			["AchievCount"] = 0,
-			["Kills"] = 3,
-			["Name"] = "Deviate Dreadfang",
+			["Kills"] = 2,
+			["Name"] = "Hillsbrad Farmhand",
 		},
-		[3670] = {
+		[3840] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Lord Pythas",
+			["Kills"] = 24,
+			["Name"] = "Druid of the Fang",
 		},
-		[5761] = {
+		[3100] = {
 			["AchievCount"] = 0,
-			["Kills"] = 15,
-			["Name"] = "Deviate Shambler",
+			["Kills"] = 0,
+			["Name"] = "Elder Mottled Boar",
 		},
 		[2349] = {
 			["AchievCount"] = 0,
@@ -216,39 +221,39 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Deviate Slayer",
 		},
-		[3100] = {
+		[5761] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Elder Mottled Boar",
+			["Kills"] = 15,
+			["Name"] = "Deviate Shambler",
 		},
-		[3840] = {
+		[3670] = {
 			["AchievCount"] = 0,
-			["Kills"] = 24,
-			["Name"] = "Druid of the Fang",
+			["Kills"] = 1,
+			["Name"] = "Lord Pythas",
 		},
-		[2360] = {
+		[5056] = {
 			["AchievCount"] = 0,
-			["Kills"] = 2,
-			["Name"] = "Hillsbrad Farmhand",
+			["Kills"] = 3,
+			["Name"] = "Deviate Dreadfang",
 		},
-		[2248] = {
+		[3673] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Cave Yeti",
+			["Kills"] = 1,
+			["Name"] = "Lord Serpentis",
 		},
-		[2620] = {
+		[5775] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Prairie Dog",
+			["Kills"] = 1,
+			["Name"] = "Verdan the Everliving",
 		},
 	},
-	["DISABLE_RAIDS"] = false,
-	["ACHIEV_THRESHOLD"] = 1000,
-	["DISABLE_DUNGEONS"] = false,
 	["IMMEDIATE"] = {
 		["THRESHOLD"] = 0,
 		["POSITION"] = {
 		},
 	},
-	["COUNT_GROUP"] = false,
+	["ACHIEV_THRESHOLD"] = 1000,
+	["DISABLE_DUNGEONS"] = false,
+	["DISABLE_RAIDS"] = false,
+	["TOOLTIP"] = true,
 }
