@@ -15,7 +15,7 @@ KILLTRACK_CHAR = {
 		},
 		[2268] = {
 			["Name"] = "Hillsbrad Footman",
-			["Kills"] = 1,
+			["Kills"] = 2,
 		},
 		[2449] = {
 			["Name"] = "Citizen Wilkes",
@@ -27,31 +27,35 @@ KILLTRACK_CHAR = {
 		},
 		[2360] = {
 			["Name"] = "Hillsbrad Farmhand",
-			["Kills"] = 1,
+			["Kills"] = 2,
 		},
 		[2248] = {
 			["Name"] = "Cave Yeti",
 			["Kills"] = 0,
 		},
+		[2266] = {
+			["Name"] = "Hillsbrad Farmer",
+			["Kills"] = 6,
+		},
 		[2384] = {
 			["Name"] = "Starving Mountain Lion",
-			["Kills"] = 0,
-		},
-		[2356] = {
-			["Name"] = "Elder Gray Bear",
-			["Kills"] = 1,
-		},
-		[2354] = {
-			["Name"] = "Vicious Gray Bear",
 			["Kills"] = 0,
 		},
 		[2350] = {
 			["Name"] = "Forest Moss Creeper",
 			["Kills"] = 0,
 		},
-		[2266] = {
-			["Name"] = "Hillsbrad Farmer",
-			["Kills"] = 5,
+		[2354] = {
+			["Name"] = "Vicious Gray Bear",
+			["Kills"] = 0,
+		},
+		[2356] = {
+			["Name"] = "Elder Gray Bear",
+			["Kills"] = 3,
+		},
+		[232] = {
+			["Name"] = "Farmer Ray",
+			["Kills"] = 0,
 		},
 	},
 }

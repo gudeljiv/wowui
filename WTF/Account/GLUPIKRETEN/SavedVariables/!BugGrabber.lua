@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 2676,
 	["lastSanitation"] = 3,
+	["session"] = 2679,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -165,8 +165,8 @@ BugGrabberDB = {
 		}, -- [20]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["time"] = "2020/07/26 13:26:58",
 			["session"] = 1336,
+			["time"] = "2020/07/26 13:26:58",
 			["counter"] = 2,
 		}, -- [21]
 		{
@@ -546,8 +546,8 @@ BugGrabberDB = {
 		}, -- [68]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["session"] = 1423,
 			["time"] = "2020/07/27 20:37:46",
+			["session"] = 1423,
 			["counter"] = 4,
 		}, -- [69]
 		{
@@ -805,8 +805,8 @@ BugGrabberDB = {
 		}, -- [101]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["session"] = 1605,
 			["time"] = "2020/08/02 10:06:15",
+			["session"] = 1605,
 			["counter"] = 3,
 		}, -- [102]
 		{
@@ -946,8 +946,8 @@ BugGrabberDB = {
 		}, -- [119]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
-			["time"] = "2020/08/02 20:13:03",
 			["session"] = 1654,
+			["time"] = "2020/08/02 20:13:03",
 			["counter"] = 3,
 		}, -- [120]
 		{
@@ -1428,8 +1428,8 @@ BugGrabberDB = {
 		}, -- [180]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Experience.lua",
-			["time"] = "2020/08/19 21:35:15",
 			["session"] = 1943,
+			["time"] = "2020/08/19 21:35:15",
 			["counter"] = 6,
 		}, -- [181]
 		{
@@ -2040,8 +2040,8 @@ BugGrabberDB = {
 		}, -- [257]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["time"] = "2020/08/13 21:31:07",
 			["session"] = 2448,
+			["time"] = "2020/08/13 21:31:07",
 			["counter"] = 9,
 		}, -- [258]
 		{
@@ -2205,21 +2205,13 @@ BugGrabberDB = {
 			["counter"] = 2,
 		}, -- [278]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'SetCVar()'.",
-			["time"] = "2020/09/16 19:28:47",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetCVar'\nInterface\\AddOns\\xVermin\\Core.lua:20: in function <Interface\\AddOns\\xVermin\\Core.lua:16>",
-			["session"] = 2628,
-			["counter"] = 4,
-		}, -- [279]
-		{
 			["message"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:61: attempt to index upvalue 'frame' (a nil value)",
 			["time"] = "2020/07/25 16:34:57",
 			["locals"] = "(for index) = 1\n(for limit) = 32\n(for step) = 1\ni = 1\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = false\n(*temporary) = \"Count\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index upvalue 'frame' (a nil value)\"\nhasPet = true\nisHunterPet = true\npetName = \"Cat\"\ntargetName = \"Bristleback Geomancer\"\nB_spellId = nil\nB_unitCaster = nil\nD_spellId = nil\nD_unitCaster = nil\nframe = nil\nframeBorder = nil\nframeCount = nil\ncolor = <table> {\n b = 0\n g = 0\n r = 0.800000\n}\n",
 			["stack"] = "Interface\\AddOns\\xVermin\\SkinBuffs.lua:61: in function <Interface\\AddOns\\xVermin\\SkinBuffs.lua:26>\n[C]: ?\n[C]: in function `TargetFrame_UpdateAuras'\nInterface\\FrameXML\\TargetFrame.lua:131: in function `TargetFrame_Update'\nInterface\\FrameXML\\TargetFrame.lua:150: in function <Interface\\FrameXML\\TargetFrame.lua:142>\n[C]: in function `CameraOrSelectOrMoveStop'\n[string \"CAMERAORSELECTORMOVE\"]:4: in function <[string \"CAMERAORSELECTORMOVE\"]:1>",
 			["session"] = 2637,
 			["counter"] = 288,
-		}, -- [280]
+		}, -- [279]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Experience/TotalXP.lua:6: CustomContainerTotalXP:SetPoint(): Wrong object type for function",
 			["time"] = "2020/09/26 12:07:20",
@@ -2227,7 +2219,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `SetPoint'\nInterface\\AddOns\\xVermin\\Experience/TotalXP.lua:6: in main chunk",
 			["session"] = 2646,
 			["counter"] = 1,
-		}, -- [281]
+		}, -- [280]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'ItemRackButton0:SetAttribute()'.",
 			["time"] = "2020/08/02 11:49:42",
@@ -2235,7 +2227,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetAttribute'\nInterface\\AddOns\\ItemRack\\ItemRackButtons.lua:35: in function `InitButtons'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:282: in function `func'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:970: in function `OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>",
 			["session"] = 2650,
 			["counter"] = 10,
-		}, -- [282]
+		}, -- [281]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Experience/TotalXP.lua:36: attempt to index global 'cus' (a nil value)",
 			["time"] = "2020/09/26 12:27:57",
@@ -2243,13 +2235,13 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Experience/TotalXP.lua:36: in main chunk",
 			["session"] = 2651,
 			["counter"] = 1,
-		}, -- [283]
+		}, -- [282]
 		{
 			["message"] = "(null)",
-			["session"] = 2651,
 			["time"] = "2020/07/24 16:00:06",
+			["session"] = 2651,
 			["counter"] = 103,
-		}, -- [284]
+		}, -- [283]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Experience/TotalXP.lua:85: unexpected symbol near ')'",
 			["time"] = "2020/09/26 13:22:53",
@@ -2257,6 +2249,14 @@ BugGrabberDB = {
 			["stack"] = "",
 			["session"] = 2662,
 			["counter"] = 4,
+		}, -- [284]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'SetCVar()'.",
+			["time"] = "2020/09/16 19:28:47",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetCVar'\nInterface\\AddOns\\xVermin\\Core.lua:20: in function <Interface\\AddOns\\xVermin\\Core.lua:16>",
+			["session"] = 2677,
+			["counter"] = 5,
 		}, -- [285]
 	},
 }

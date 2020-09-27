@@ -1,14 +1,14 @@
 
 KILLTRACK = {
-	["COUNT_GROUP"] = false,
-	["PRINTKILLS"] = false,
-	["SHOW_EXP"] = false,
 	["BROKER"] = {
 		["MINIMAP"] = {
 			["hide"] = true,
 		},
 		["SHORT_TEXT"] = false,
 	},
+	["PRINTKILLS"] = false,
+	["SHOW_EXP"] = false,
+	["TOOLTIP"] = true,
 	["PRINTNEW"] = false,
 	["MOBS"] = {
 		[1914] = {
@@ -16,6 +16,12 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Dalaran Mage",
 			["Exp"] = 10,
+		},
+		[232] = {
+			["AchievCount"] = 0,
+			["Kills"] = 2,
+			["Name"] = "Farmer Ray",
+			["Exp"] = 160,
 		},
 		[2404] = {
 			["AchievCount"] = 0,
@@ -31,6 +37,11 @@ KILLTRACK = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Forest Moss Creeper",
+		},
+		[620] = {
+			["AchievCount"] = 0,
+			["Kills"] = 3,
+			["Name"] = "Chicken",
 		},
 		[2540] = {
 			["AchievCount"] = 0,
@@ -50,14 +61,15 @@ KILLTRACK = {
 		},
 		[2360] = {
 			["AchievCount"] = 0,
-			["Kills"] = 66,
+			["Kills"] = 166,
 			["Name"] = "Hillsbrad Farmhand",
-			["Exp"] = 31,
+			["Exp"] = 145,
 		},
-		[2387] = {
+		[2267] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Hillsbrad Councilman",
+			["Kills"] = 1,
+			["Name"] = "Hillsbrad Peasant",
+			["Exp"] = 178,
 		},
 		[2054] = {
 			["AchievCount"] = 0,
@@ -75,10 +87,11 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Dalaran Apprentice",
 		},
-		[2332] = {
+		[2053] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Valdred Moray",
+			["Kills"] = 20,
+			["Name"] = "Haggard Refugee",
+			["Exp"] = 113,
 		},
 		[2403] = {
 			["AchievCount"] = 0,
@@ -90,7 +103,12 @@ KILLTRACK = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Citizen Wilkes",
-			["Exp"] = 93,
+			["Exp"] = 30,
+		},
+		[2254] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Crushridge Mauler",
 		},
 		[5682] = {
 			["AchievCount"] = 0,
@@ -98,14 +116,9 @@ KILLTRACK = {
 			["Name"] = "Dalin Forgewright",
 			["Exp"] = 37,
 		},
-		[2254] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Crushridge Mauler",
-		},
 		[2442] = {
 			["AchievCount"] = 0,
-			["Kills"] = 4,
+			["Kills"] = 11,
 			["Name"] = "Cow",
 		},
 		[2351] = {
@@ -118,54 +131,52 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Starving Mountain Lion",
 		},
+		[2354] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Vicious Gray Bear",
+		},
 		[2356] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Elder Gray Bear",
 			["Exp"] = 21,
 		},
-		[2354] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Vicious Gray Bear",
-		},
 		[2266] = {
 			["AchievCount"] = 0,
-			["Kills"] = 53,
+			["Kills"] = 128,
 			["Name"] = "Hillsbrad Farmer",
-			["Exp"] = 42,
+			["Exp"] = 168,
 		},
 		[2268] = {
 			["AchievCount"] = 0,
-			["Kills"] = 2,
+			["Kills"] = 6,
 			["Name"] = "Hillsbrad Footman",
-			["Exp"] = 18,
+			["Exp"] = 176,
 		},
-		[2053] = {
+		[2332] = {
 			["AchievCount"] = 0,
-			["Kills"] = 20,
-			["Name"] = "Haggard Refugee",
-			["Exp"] = 113,
+			["Kills"] = 0,
+			["Name"] = "Valdred Moray",
 		},
 		[1912] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Dalaran Protector",
 		},
-		[2267] = {
+		[2387] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Hillsbrad Peasant",
-			["Exp"] = 178,
+			["Kills"] = 0,
+			["Name"] = "Hillsbrad Councilman",
 		},
 	},
+	["DISABLE_RAIDS"] = false,
+	["ACHIEV_THRESHOLD"] = 1000,
+	["DISABLE_DUNGEONS"] = false,
 	["IMMEDIATE"] = {
 		["THRESHOLD"] = 0,
 		["POSITION"] = {
 		},
 	},
-	["ACHIEV_THRESHOLD"] = 1000,
-	["DISABLE_DUNGEONS"] = false,
-	["DISABLE_RAIDS"] = false,
-	["TOOLTIP"] = true,
+	["COUNT_GROUP"] = true,
 }

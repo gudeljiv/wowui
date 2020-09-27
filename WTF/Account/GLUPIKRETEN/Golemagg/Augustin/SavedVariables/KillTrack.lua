@@ -5,6 +5,10 @@ KILLTRACK_CHAR = {
 			["Name"] = "Dalaran Mage",
 			["Kills"] = 0,
 		},
+		[232] = {
+			["Name"] = "Farmer Ray",
+			["Kills"] = 2,
+		},
 		[2404] = {
 			["Name"] = "Blacksmith Verringtan",
 			["Kills"] = 0,
@@ -16,6 +20,10 @@ KILLTRACK_CHAR = {
 		[2350] = {
 			["Name"] = "Forest Moss Creeper",
 			["Kills"] = 0,
+		},
+		[620] = {
+			["Name"] = "Chicken",
+			["Kills"] = 3,
 		},
 		[2540] = {
 			["Name"] = "Dalaran Serpent",
@@ -31,11 +39,11 @@ KILLTRACK_CHAR = {
 		},
 		[2360] = {
 			["Name"] = "Hillsbrad Farmhand",
-			["Kills"] = 66,
+			["Kills"] = 166,
 		},
-		[2267] = {
-			["Name"] = "Hillsbrad Peasant",
-			["Kills"] = 1,
+		[2387] = {
+			["Name"] = "Hillsbrad Councilman",
+			["Kills"] = 0,
 		},
 		[2054] = {
 			["Name"] = "Sickly Refugee",
@@ -49,9 +57,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Dalaran Apprentice",
 			["Kills"] = 0,
 		},
-		[2053] = {
-			["Name"] = "Haggard Refugee",
-			["Kills"] = 20,
+		[2332] = {
+			["Name"] = "Valdred Moray",
+			["Kills"] = 0,
 		},
 		[2403] = {
 			["Name"] = "Farmer Getz",
@@ -61,17 +69,17 @@ KILLTRACK_CHAR = {
 			["Name"] = "Citizen Wilkes",
 			["Kills"] = 0,
 		},
-		[2254] = {
-			["Name"] = "Crushridge Mauler",
-			["Kills"] = 0,
-		},
 		[5682] = {
 			["Name"] = "Dalin Forgewright",
 			["Kills"] = 0,
 		},
+		[2254] = {
+			["Name"] = "Crushridge Mauler",
+			["Kills"] = 0,
+		},
 		[2442] = {
 			["Name"] = "Cow",
-			["Kills"] = 4,
+			["Kills"] = 11,
 		},
 		[2351] = {
 			["Name"] = "Gray Bear",
@@ -81,33 +89,33 @@ KILLTRACK_CHAR = {
 			["Name"] = "Starving Mountain Lion",
 			["Kills"] = 0,
 		},
-		[2354] = {
-			["Name"] = "Vicious Gray Bear",
-			["Kills"] = 0,
-		},
 		[2356] = {
 			["Name"] = "Elder Gray Bear",
 			["Kills"] = 0,
 		},
+		[2354] = {
+			["Name"] = "Vicious Gray Bear",
+			["Kills"] = 0,
+		},
 		[2266] = {
 			["Name"] = "Hillsbrad Farmer",
-			["Kills"] = 53,
+			["Kills"] = 128,
 		},
 		[2268] = {
 			["Name"] = "Hillsbrad Footman",
-			["Kills"] = 2,
+			["Kills"] = 6,
 		},
-		[2332] = {
-			["Name"] = "Valdred Moray",
-			["Kills"] = 0,
+		[2053] = {
+			["Name"] = "Haggard Refugee",
+			["Kills"] = 20,
 		},
 		[1912] = {
 			["Name"] = "Dalaran Protector",
 			["Kills"] = 0,
 		},
-		[2387] = {
-			["Name"] = "Hillsbrad Councilman",
-			["Kills"] = 0,
+		[2267] = {
+			["Name"] = "Hillsbrad Peasant",
+			["Kills"] = 1,
 		},
 	},
 }
