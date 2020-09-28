@@ -8,6 +8,932 @@ _detalhes_database = {
 			{
 				{
 					["tipo"] = 2,
+					["combatId"] = 46,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.003255,
+							["damage_from"] = {
+								["DieBUSTA"] = true,
+							},
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["last_event"] = 1601282395,
+							["spells"] = {
+								["_ActorTable"] = {
+									["Chilled"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["DieBUSTA"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["c_min"] = 0,
+										["id"] = "Chilled",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["n_amt"] = 0,
+										["m_crit"] = 0,
+										["b_dmg"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["RESIST"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 16,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.003255,
+							["delay"] = 0,
+							["dps_started"] = false,
+							["total"] = 0.003255,
+							["classe"] = "MAGE",
+							["damage_taken"] = 397.003255,
+							["nome"] = "Augustin",
+							["spec"] = 64,
+							["grupo"] = true,
+							["end_time"] = 1601282396,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["start_time"] = 1601282396,
+							["serial"] = "Player-4465-01D5BF39",
+							["friendlyfire"] = {
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 4424,
+							["totalabsorbed"] = 0.001228,
+							["damage_from"] = {
+								["Tarren Mill Deathguard"] = true,
+							},
+							["targets"] = {
+								["Augustin"] = 397,
+							},
+							["pets"] = {
+							},
+							["friendlyfire"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 397.001228,
+							["last_event"] = 1601282396,
+							["fight_component"] = true,
+							["total"] = 397.001228,
+							["delay"] = 0,
+							["classe"] = "PET",
+							["nome"] = "DieBUSTA",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Lightning Breath"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 148,
+										["targets"] = {
+											["Augustin"] = 148,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 148,
+										["n_min"] = 148,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 148,
+										["c_max"] = 0,
+										["id"] = "Lightning Breath",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 133,
+										["targets"] = {
+											["Augustin"] = 249,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 249,
+										["n_min"] = 116,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 249,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["damage_taken"] = 1180.001228,
+							["end_time"] = 1601282396,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["start_time"] = 1601282394,
+							["serial"] = "Pet-0-4468-0-15-11357-0600300FBF",
+							["dps_started"] = false,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 46,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 46,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 46,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["nome"] = "Augustin",
+							["spec"] = 64,
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["buff_uptime"] = 4,
+							["classe"] = "MAGE",
+							["tipo"] = 4,
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Frost Armor"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Frost Armor",
+										["uptime"] = 2,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									["Arcane Intellect"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Arcane Intellect",
+										["uptime"] = 2,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["serial"] = "Player-4465-01D5BF39",
+							["last_event"] = 1601282396,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 46,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Augustin"] = true,
+				},
+				["tempo_start"] = 1601282394,
+				["last_events_tables"] = {
+					{
+						{
+							{
+								true, -- [1]
+								"Lightning Breath", -- [2]
+								148, -- [3]
+								1601282394.174, -- [4]
+								386, -- [5]
+								"DieBUSTA", -- [6]
+								nil, -- [7]
+								8, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [1]
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								116, -- [3]
+								1601282394.874, -- [4]
+								238, -- [5]
+								"DieBUSTA", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [2]
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								133, -- [3]
+								1601282396.209, -- [4]
+								122, -- [5]
+								"DieBUSTA", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								11, -- [10]
+							}, -- [3]
+							{
+								3, -- [1]
+								0, -- [2]
+								0, -- [3]
+								0, -- [4]
+								0, -- [5]
+								"Augustin", -- [6]
+							}, -- [4]
+						}, -- [1]
+						1601282396.541, -- [2]
+						"Augustin", -- [3]
+						"MAGE", -- [4]
+						668, -- [5]
+						"0m 2s", -- [6]
+						["dead"] = true,
+						["dead_at"] = 2.36699999985285,
+					}, -- [1]
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					396.983855, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 1,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["totals_grupo"] = {
+					0, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 1,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = false,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "10:39:56",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "DieBUSTA",
+				["TotalElapsedCombatTime"] = 1244319.994,
+				["CombatEndedAt"] = 1244319.994,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Augustin"] = 0.003255,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["end_time"] = 1244319.994,
+				["combat_id"] = 46,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+				},
+				["data_inicio"] = "10:39:54",
+				["combat_counter"] = 5112,
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "DieBUSTA",
+				["start_time"] = 1244317.627,
+				["TimeData"] = {
+				},
+				["player_last_events"] = {
+				},
+			}, -- [1]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 45,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.003096,
+							["damage_from"] = {
+								["Gray Bear"] = true,
+								["DieBUSTA"] = true,
+							},
+							["targets"] = {
+								["Gray Bear"] = 741,
+							},
+							["delay"] = 0,
+							["pets"] = {
+							},
+							["custom"] = 0,
+							["tipo"] = 1,
+							["classe"] = "MAGE",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 741.003096,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1601282215,
+							["damage_taken"] = 435.003096,
+							["spells"] = {
+								["_ActorTable"] = {
+									["Fireball"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 180,
+										["targets"] = {
+											["Gray Bear"] = 521,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 521,
+										["n_min"] = 5,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 521,
+										["c_max"] = 0,
+										["id"] = "Fireball",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 8,
+										["a_dmg"] = 0,
+										["spellschool"] = 4,
+									},
+									["Chilled"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["DieBUSTA"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["c_min"] = 0,
+										["id"] = "Chilled",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["n_amt"] = 0,
+										["m_crit"] = 0,
+										["b_dmg"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["RESIST"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 16,
+									},
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 37,
+										["targets"] = {
+											["Gray Bear"] = 96,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 96,
+										["n_min"] = 23,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 96,
+										["c_max"] = 0,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Fire Blast"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 124,
+										["targets"] = {
+											["Gray Bear"] = 124,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 124,
+										["n_min"] = 124,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 124,
+										["c_max"] = 0,
+										["id"] = "Fire Blast",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 4,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["nome"] = "Augustin",
+							["spec"] = 64,
+							["grupo"] = true,
+							["last_dps"] = 49.4562568243764,
+							["friendlyfire_total"] = 0,
+							["colocacao"] = 1,
+							["last_event"] = 1601282393,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1601282200,
+							["serial"] = "Player-4465-01D5BF39",
+							["total"] = 741.003096,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.002744,
+							["damage_from"] = {
+								["Augustin"] = true,
+							},
+							["targets"] = {
+								["Augustin"] = 153,
+							},
+							["pets"] = {
+							},
+							["tipo"] = 1,
+							["end_time"] = 1601282215,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 153.002744,
+							["delay"] = 0,
+							["monster"] = true,
+							["total"] = 153.002744,
+							["dps_started"] = false,
+							["damage_taken"] = 741.002744,
+							["nome"] = "Gray Bear",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 34,
+										["targets"] = {
+											["Augustin"] = 153,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 153,
+										["n_min"] = 28,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 153,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["friendlyfire_total"] = 0,
+							["last_dps"] = 0,
+							["friendlyfire"] = {
+							},
+							["custom"] = 0,
+							["last_event"] = 1601282213,
+							["on_hold"] = false,
+							["start_time"] = 1601282203,
+							["serial"] = "Creature-0-4468-0-15-2351-000070FA7A",
+							["fight_component"] = true,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 45,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 45,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 45,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Fireball"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = -1,
+										["refreshamt"] = 1,
+										["id"] = "Fireball",
+										["uptime"] = 12,
+										["targets"] = {
+										},
+										["appliedamt"] = 0,
+									},
+									["Chilled"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 3,
+										["id"] = "Chilled",
+										["uptime"] = 9,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["pets"] = {
+							},
+							["classe"] = "MAGE",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Frost Armor"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Frost Armor",
+										["uptime"] = 15,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									["Arcane Intellect"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Arcane Intellect",
+										["uptime"] = 15,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 21,
+							["nome"] = "Augustin",
+							["spec"] = 64,
+							["grupo"] = true,
+							["spell_cast"] = {
+								["Fireball"] = 2,
+								["Shoot"] = 3,
+								["Fire Blast"] = 1,
+							},
+							["tipo"] = 4,
+							["last_event"] = 1601282215,
+							["buff_uptime_targets"] = {
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["serial"] = "Player-4465-01D5BF39",
+							["buff_uptime"] = 30,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 45,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Augustin"] = true,
+				},
+				["CombatStartedAt"] = 1244316.331,
+				["tempo_start"] = 1601282200,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					893.971228, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["totals_grupo"] = {
+					741, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "10:36:55",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Gray Bear",
+				["TotalElapsedCombatTime"] = 1244138.7,
+				["CombatEndedAt"] = 1244138.7,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Augustin"] = 741.003096,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["end_time"] = 1244138.7,
+				["combat_id"] = 45,
+				["combat_counter"] = 5111,
+				["frags"] = {
+					["Gray Bear"] = 1,
+				},
+				["player_last_events"] = {
+					["Augustin"] = {
+						{
+							true, -- [1]
+							"Lightning Breath", -- [2]
+							152, -- [3]
+							1601282392.574, -- [4]
+							668, -- [5]
+							"DieBUSTA", -- [6]
+							nil, -- [7]
+							8, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [1]
+						{
+							true, -- [1]
+							"!Melee", -- [2]
+							130, -- [3]
+							1601282392.878, -- [4]
+							668, -- [5]
+							"DieBUSTA", -- [6]
+							nil, -- [7]
+							1, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [2]
+						{
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 3,
+					},
+				},
+				["TimeData"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["data_inicio"] = "10:36:40",
+				["start_time"] = 1244123.717,
+				["contra"] = "Gray Bear",
+				["spells_cast_timeline"] = {
+				},
+			}, -- [2]
+			{
+				{
+					["tipo"] = 2,
 					["combatId"] = 44,
 					["_ActorTable"] = {
 						{
@@ -22,29 +948,19 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["total"] = 4258.007337,
-							["friendlyfire"] = {
-							},
-							["classe"] = "PRIEST",
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 4258.007337,
-							["damage_taken"] = 992.007337,
-							["serial"] = "Player-4465-00C4D96C",
+							["boss_fight_component"] = true,
+							["delay"] = 0,
 							["dps_started"] = false,
 							["end_time"] = 1601201332,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
+							["classe"] = "PRIEST",
+							["friendlyfire"] = {
+							},
 							["nome"] = "Konac",
-							["spec"] = 257,
-							["grupo"] = true,
-							["last_event"] = 1601201331,
-							["colocacao"] = 1,
-							["boss_fight_component"] = true,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 236.503406854595,
-							["start_time"] = 1601201314,
-							["delay"] = 0,
 							["spells"] = {
 								["_ActorTable"] = {
 									["Shadow Word: Pain"] = {
@@ -65,16 +981,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Shadow Word: Pain",
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 5,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 32,
 									},
 									["Holy Fire"] = {
 										["c_amt"] = 0,
@@ -94,16 +1010,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Holy Fire",
 										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 6,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 2,
 									},
 									["Mind Blast"] = {
 										["c_amt"] = 0,
@@ -123,16 +1039,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Mind Blast",
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 32,
 									},
 									["Smite"] = {
 										["c_amt"] = 2,
@@ -152,20 +1068,30 @@ _detalhes_database = {
 										["c_max"] = 681,
 										["id"] = "Smite",
 										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 676,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 2,
 									},
 								},
 								["tipo"] = 2,
 							},
+							["grupo"] = true,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["spec"] = 257,
+							["colocacao"] = 1,
+							["last_event"] = 1601201331,
+							["damage_taken"] = 992.007337,
+							["start_time"] = 1601201314,
+							["serial"] = "Player-4465-00C4D96C",
+							["last_dps"] = 236.503406854595,
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
@@ -175,34 +1101,35 @@ _detalhes_database = {
 							},
 							["targets"] = {
 							},
-							["on_hold"] = false,
 							["pets"] = {
 							},
-							["friendlyfire"] = {
-							},
+							["classe"] = "MAGE",
+							["last_event"] = 0,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.005002,
-							["spec"] = 64,
+							["delay"] = 0,
 							["dps_started"] = false,
+							["end_time"] = 1601282200,
 							["total"] = 0.005002,
-							["classe"] = "MAGE",
-							["serial"] = "Player-4465-01D5BF39",
+							["damage_taken"] = 131.005002,
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
+							["spec"] = 64,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 131.005002,
-							["start_time"] = 0,
-							["delay"] = 0,
-							["last_event"] = 0,
+							["on_hold"] = false,
+							["start_time"] = 1601282200,
+							["serial"] = "Player-4465-01D5BF39",
+							["friendlyfire"] = {
+							},
 						}, -- [2]
 						{
 							["flag_original"] = -2147483648,
@@ -236,12 +1163,12 @@ _detalhes_database = {
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 4938.007536,
-							["damage_taken"] = 0.007536,
-							["dps_started"] = true,
-							["total"] = 4938.007536,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["end_time"] = 1601282200,
+							["classe"] = "UNKNOW",
+							["serial"] = "",
 							["nome"] = "Environment (Falling)",
-							["delay"] = 1601205184,
-							["timeMachine"] = 1,
 							["spells"] = {
 								["_ActorTable"] = {
 									["Falling"] = {
@@ -280,30 +1207,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Falling",
 										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
+										["spellschool"] = 3,
+										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 21,
-										["a_dmg"] = 0,
-										["spellschool"] = 3,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["friendlyfire"] = {
 							},
-							["last_event"] = 1601205184,
+							["tipo"] = 1,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = true,
-							["start_time"] = 1601205154,
-							["serial"] = "",
-							["classe"] = "UNKNOW",
+							["last_event"] = 1601205184,
+							["damage_taken"] = 0.007536,
+							["start_time"] = 1601282169,
+							["delay"] = 1601205184,
+							["total"] = 4938.007536,
 						}, -- [3]
 						{
 							["flag_original"] = 2632,
@@ -316,19 +1243,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["monster"] = true,
-							["nome"] = "Verdan the Everliving",
+							["friendlyfire_total"] = 0,
+							["boss_fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 992.005729,
-							["serial"] = "Creature-0-4447-43-10046-5775-0000705D11",
-							["dps_started"] = false,
+							["delay"] = 0,
+							["monster"] = true,
 							["total"] = 992.005729,
+							["on_hold"] = false,
 							["friendlyfire"] = {
 							},
-							["damage_taken"] = 4258.005729,
-							["boss_fight_component"] = true,
+							["nome"] = "Verdan the Everliving",
 							["spells"] = {
 								["_ActorTable"] = {
 									["!Melee"] = {
@@ -349,29 +1276,29 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 4,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["tipo"] = 1,
-							["end_time"] = 1601201332,
-							["last_dps"] = 0,
-							["custom"] = 0,
 							["last_event"] = 1601201327,
-							["on_hold"] = false,
+							["last_dps"] = 0,
+							["end_time"] = 1601201332,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 4258.005729,
 							["start_time"] = 1601201317,
-							["delay"] = 0,
-							["friendlyfire_total"] = 0,
+							["serial"] = "Creature-0-4447-43-10046-5775-0000705D11",
+							["dps_started"] = false,
 						}, -- [4]
 						{
 							["flag_original"] = 2632,
@@ -383,22 +1310,20 @@ _detalhes_database = {
 							["targets"] = {
 								["Muxel"] = 82,
 							},
-							["monster"] = true,
 							["pets"] = {
 							},
-							["timeMachine"] = 2,
+							["last_event"] = 1601204516,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 82.001258,
-							["on_hold"] = true,
-							["dps_started"] = true,
-							["total"] = 82.001258,
 							["classe"] = "UNKNOW",
-							["serial"] = "Creature-0-4468-1-11-3256-0000706F80",
+							["monster"] = true,
+							["end_time"] = 1601282200,
+							["delay"] = 1601204516,
+							["total"] = 82.001258,
 							["nome"] = "Sunscale Scytheclaw",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -418,28 +1343,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["r_amt"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
+							["damage_taken"] = 32.001258,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 32.001258,
-							["start_time"] = 1601204514,
-							["delay"] = 1601204516,
-							["last_event"] = 1601204516,
+							["on_hold"] = false,
+							["start_time"] = 1601282197,
+							["serial"] = "Creature-0-4468-1-11-3256-0000706F80",
+							["dps_started"] = false,
 						}, -- [5]
 						{
 							["flag_original"] = 1304,
@@ -452,19 +1379,17 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["timeMachine"] = 6,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 50.00732,
-							["on_hold"] = true,
-							["dps_started"] = true,
-							["total"] = 50.00732,
+							["last_event"] = 1601204551,
+							["dps_started"] = false,
+							["end_time"] = 1601282200,
+							["delay"] = 1601204551,
 							["classe"] = "UNGROUPPLAYER",
-							["serial"] = "Player-4465-01EE86AF",
 							["nome"] = "Mitake",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Autoshot"] = {
 										["c_amt"] = 0,
@@ -484,16 +1409,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "!Autoshot",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["r_amt"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									["Arcane Shot"] = {
 										["c_amt"] = 0,
@@ -513,28 +1438,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Arcane Shot",
 										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["r_amt"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 15,
 										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 64,
 									},
 								},
+								["tipo"] = 2,
 							},
+							["damage_taken"] = 45.00732,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 45.00732,
-							["start_time"] = 1601204550,
-							["delay"] = 1601204551,
-							["last_event"] = 1601204551,
+							["on_hold"] = false,
+							["start_time"] = 1601282198,
+							["serial"] = "Player-4465-01EE86AF",
+							["total"] = 50.00732,
 						}, -- [6]
 						{
 							["flag_original"] = 2632,
@@ -545,22 +1472,20 @@ _detalhes_database = {
 							["targets"] = {
 								["Mitake"] = 45,
 							},
-							["monster"] = true,
 							["pets"] = {
 							},
-							["timeMachine"] = 5,
+							["last_event"] = 1601204549,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 45.001551,
-							["on_hold"] = true,
-							["dps_started"] = true,
-							["total"] = 45.001551,
 							["classe"] = "UNKNOW",
-							["serial"] = "Creature-0-4468-1-11-3273-000070707F",
+							["monster"] = true,
+							["end_time"] = 1601282200,
+							["delay"] = 1601204549,
+							["total"] = 45.001551,
 							["nome"] = "Kolkar Stormer",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["Lightning Bolt"] = {
 										["c_amt"] = 0,
@@ -580,28 +1505,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Lightning Bolt",
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["r_amt"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
 									},
 								},
+								["tipo"] = 2,
 							},
+							["damage_taken"] = 50.001551,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 50.001551,
-							["start_time"] = 1601204549,
-							["delay"] = 1601204549,
-							["last_event"] = 1601204549,
+							["on_hold"] = false,
+							["start_time"] = 1601282199,
+							["serial"] = "Creature-0-4468-1-11-3273-000070707F",
+							["dps_started"] = false,
 						}, -- [7]
 						{
 							["flag_original"] = 4376,
@@ -613,19 +1540,17 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["timeMachine"] = 3,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 21.004631,
-							["on_hold"] = true,
-							["dps_started"] = true,
-							["total"] = 21.004631,
+							["last_event"] = 1601204516,
+							["dps_started"] = false,
+							["end_time"] = 1601282200,
+							["delay"] = 1601204516,
 							["classe"] = "PET",
-							["serial"] = "Pet-0-4468-1-11-1997-01002E079B",
 							["nome"] = "Owlxel",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -645,16 +1570,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["r_amt"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									["Claw"] = {
 										["c_amt"] = 0,
@@ -674,28 +1599,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Claw",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["r_amt"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
+							["damage_taken"] = 0.004631,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 0.004631,
-							["start_time"] = 1601204515,
-							["delay"] = 1601204516,
-							["last_event"] = 1601204516,
+							["on_hold"] = false,
+							["start_time"] = 1601282198,
+							["serial"] = "Pet-0-4468-1-11-1997-01002E079B",
+							["total"] = 21.004631,
 						}, -- [8]
 						{
 							["flag_original"] = 1304,
@@ -708,20 +1635,48 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["timeMachine"] = 4,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 11.002693,
-							["on_hold"] = true,
-							["dps_started"] = true,
-							["total"] = 11.002693,
+							["last_event"] = 1601204516,
+							["dps_started"] = false,
+							["end_time"] = 1601282200,
+							["delay"] = 1601204516,
 							["classe"] = "UNGROUPPLAYER",
-							["serial"] = "Player-4465-01A87E42",
 							["nome"] = "Muxel",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Sunscale Scytheclaw"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["r_amt"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["MISS"] = 1,
+									},
 									["Wing Clip"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -740,46 +1695,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Wing Clip",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["r_amt"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Sunscale Scytheclaw"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["MISS"] = 1,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
 										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["spellschool"] = 1,
 									},
 									["Serpent Sting"] = {
 										["c_amt"] = 0,
@@ -799,28 +1724,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Serpent Sting",
 										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
+										["r_amt"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 8,
 									},
 								},
+								["tipo"] = 2,
 							},
+							["damage_taken"] = 82.002693,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 82.002693,
-							["start_time"] = 1601204515,
-							["delay"] = 1601204516,
-							["last_event"] = 1601204516,
+							["on_hold"] = false,
+							["start_time"] = 1601282198,
+							["serial"] = "Player-4465-01A87E42",
+							["total"] = 11.002693,
 						}, -- [9]
 					},
 				}, -- [1]
@@ -851,21 +1778,21 @@ _detalhes_database = {
 										},
 										["actived_at"] = 1601201328,
 										["uptime"] = 0,
-										["appliedamt"] = 0,
+										["counter"] = 0,
 										["refreshamt"] = 0,
 										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 0,
 									},
 									["Holy Fire"] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = "Holy Fire",
+										["uptime"] = 10,
 										["targets"] = {
 										},
-										["activedamt"] = 0,
-										["uptime"] = 10,
-										["id"] = "Holy Fire",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 								},
 								["tipo"] = 9,
@@ -875,15 +1802,15 @@ _detalhes_database = {
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									["Reactive Fade"] = {
-										["appliedamt"] = 2,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 2,
+										["refreshamt"] = 0,
+										["id"] = "Reactive Fade",
+										["uptime"] = 8,
 										["targets"] = {
 										},
-										["activedamt"] = 2,
-										["uptime"] = 8,
-										["id"] = "Reactive Fade",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 2,
 									},
 								},
 								["tipo"] = 9,
@@ -897,15 +1824,15 @@ _detalhes_database = {
 								["Mind Blast"] = 1,
 								["Smite"] = 4,
 							},
-							["boss_fight_component"] = true,
-							["last_event"] = 1601201331,
-							["tipo"] = 4,
-							["nome"] = "Konac",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-00C4D96C",
 							["buff_uptime_targets"] = {
 							},
+							["tipo"] = 4,
+							["last_event"] = 1601201331,
+							["pets"] = {
+							},
+							["nome"] = "Konac",
+							["serial"] = "Player-4465-00C4D96C",
+							["boss_fight_component"] = true,
 						}, -- [1]
 					},
 				}, -- [4]
@@ -916,15 +1843,18 @@ _detalhes_database = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
-					["Augustin"] = true,
 					["Konac"] = true,
+					["Augustin"] = true,
 				},
-				["tempo_start"] = 1601201314,
+				["CombatStartedAt"] = 1244122.884,
+				["overall_added"] = true,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 5102,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["totals"] = {
 					10396.898086, -- [1]
 					0, -- [2]
@@ -932,62 +1862,22 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
-				["totals_grupo"] = {
-					4258, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "party",
-				["hasSaved"] = true,
-				["data_fim"] = "12:08:53",
-				["cleu_timeline"] = {
-				},
-				["TotalElapsedCombatTime"] = 1602751.001,
-				["CombatEndedAt"] = 1602751.001,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "12:08:35",
-				["end_time"] = 1602751.635,
-				["combat_id"] = 44,
-				["frags"] = {
-					["Verdan the Everliving"] = 1,
-				},
-				["overall_added"] = true,
 				["player_last_events"] = {
 					["Augustin"] = {
 						{
@@ -1087,33 +1977,33 @@ _detalhes_database = {
 						["n"] = 4,
 					},
 				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "party",
+				["hasSaved"] = true,
+				["data_fim"] = "12:08:53",
+				["cleu_timeline"] = {
+				},
+				["TotalElapsedCombatTime"] = 1602751.001,
+				["CombatEndedAt"] = 1602751.001,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "12:08:35",
+				["end_time"] = 1602751.635,
+				["combat_id"] = 44,
 				["spells_cast_timeline"] = {
 				},
-				["is_boss"] = {
-					["mapid"] = 43,
-					["diff_string"] = "normal",
-					["index"] = 1,
-					["zone"] = "Wailing Caverns",
-					["id"] = 0,
-					["ej_instance_id"] = 0,
-					["diff"] = 16,
-					["try_number"] = 6,
-				},
-				["contra"] = "Verdan the Everliving",
-				["CombatSkillCache"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["start_time"] = 1602733.631,
-				["TimeData"] = {
-				},
+				["tempo_start"] = 1601201314,
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Konac"] = 4258.007337,
+						}, -- [1]
 					},
 					["heal_section"] = {
 					},
@@ -1121,13 +2011,51 @@ _detalhes_database = {
 						{
 						}, -- [1]
 					},
-					["damage"] = {
-						{
-							["Konac"] = 4258.007337,
-						}, -- [1]
+					["damage_section"] = {
 					},
 				},
-			}, -- [1]
+				["frags"] = {
+					["Verdan the Everliving"] = 1,
+				},
+				["is_boss"] = {
+					["mapid"] = 43,
+					["diff_string"] = "normal",
+					["index"] = 1,
+					["zone"] = "Wailing Caverns",
+					["id"] = 0,
+					["try_number"] = 6,
+					["diff"] = 16,
+					["ej_instance_id"] = 0,
+				},
+				["TimeData"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["combat_counter"] = 5102,
+				["start_time"] = 1602733.631,
+				["contra"] = "Verdan the Everliving",
+				["totals_grupo"] = {
+					4258, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+			}, -- [3]
 			{
 				{
 					["tipo"] = 2,
@@ -1143,19 +2071,7 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["nome"] = "Konac",
-							["classe"] = "PRIEST",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 2918.008991,
-							["spec"] = 257,
-							["serial"] = "Player-4465-00C4D96C",
-							["dps_started"] = false,
-							["end_time"] = 1601201275,
 							["damage_taken"] = 0.008991,
-							["total"] = 2918.008991,
-							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
 									["Shadow Word: Pain"] = {
@@ -1176,16 +2092,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Shadow Word: Pain",
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 5,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 32,
 									},
 									["Holy Fire"] = {
 										["c_amt"] = 0,
@@ -1205,16 +2121,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Holy Fire",
 										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 6,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 2,
 									},
 									["!Autoshot"] = {
 										["c_amt"] = 1,
@@ -1234,31 +2150,43 @@ _detalhes_database = {
 										["c_max"] = 207,
 										["id"] = "!Autoshot",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 207,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 10,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["tipo"] = 1,
-							["colocacao"] = 1,
-							["last_dps"] = 107.707404067836,
-							["custom"] = 0,
-							["last_event"] = 1601201273,
-							["on_hold"] = false,
-							["start_time"] = 1601201246,
-							["delay"] = 0,
+							["classe"] = "PRIEST",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 2918.008991,
 							["friendlyfire"] = {
 							},
+							["delay"] = 0,
+							["dps_started"] = false,
+							["total"] = 2918.008991,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["boss_fight_component"] = true,
+							["spec"] = 257,
+							["grupo"] = true,
+							["end_time"] = 1601201275,
+							["last_event"] = 1601201273,
+							["custom"] = 0,
+							["colocacao"] = 1,
+							["tipo"] = 1,
+							["last_dps"] = 107.707404067836,
+							["start_time"] = 1601201246,
+							["serial"] = "Player-4465-00C4D96C",
+							["nome"] = "Konac",
 						}, -- [1]
 						{
 							["flag_original"] = 2632,
@@ -1270,18 +2198,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["monster"] = true,
-							["nome"] = "Lord Serpentis",
+							["end_time"] = 1601201275,
+							["boss_fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.005316,
-							["serial"] = "Creature-0-4447-43-10046-3673-0000705D11",
-							["dps_started"] = false,
+							["delay"] = 0,
+							["monster"] = true,
 							["total"] = 0.005316,
 							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["boss_fight_component"] = true,
+							["damage_taken"] = 2918.005316,
+							["nome"] = "Lord Serpentis",
 							["spells"] = {
 								["_ActorTable"] = {
 									["Lightning Bolt"] = {
@@ -1302,30 +2230,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Lightning Bolt",
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["RESIST"] = 6,
+										["n_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 6,
 										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
+										["RESIST"] = 6,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["last_event"] = 1601201269,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 2918.005316,
+							["last_event"] = 1601201269,
+							["on_hold"] = false,
 							["start_time"] = 1601201275,
-							["delay"] = 0,
-							["end_time"] = 1601201275,
+							["serial"] = "Creature-0-4447-43-10046-3673-0000705D11",
+							["dps_started"] = false,
 						}, -- [2]
 					},
 				}, -- [1]
@@ -1347,18 +2275,18 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 2632,
-							["tipo"] = 4,
+							["last_event"] = 0,
 							["nome"] = "Lord Serpentis",
 							["pets"] = {
 							},
-							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
 							["spell_cast"] = {
 								["Lightning Bolt"] = 6,
 							},
-							["last_event"] = 0,
+							["tipo"] = 4,
 							["monster"] = true,
 							["serial"] = "Creature-0-4447-43-10046-3673-0000705D11",
-							["classe"] = "UNKNOW",
+							["boss_fight_component"] = true,
 						}, -- [1]
 						{
 							["flag_original"] = 1298,
@@ -1366,45 +2294,45 @@ _detalhes_database = {
 							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
 									["Shadow Word: Pain"] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = "Shadow Word: Pain",
+										["uptime"] = 16,
 										["targets"] = {
 										},
-										["activedamt"] = 0,
-										["uptime"] = 16,
-										["id"] = "Shadow Word: Pain",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 									["Holy Fire"] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = "Holy Fire",
+										["uptime"] = 11,
 										["targets"] = {
 										},
-										["activedamt"] = 0,
-										["uptime"] = 11,
-										["id"] = "Holy Fire",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 								},
 								["tipo"] = 9,
 							},
-							["boss_fight_component"] = true,
+							["nome"] = "Konac",
 							["spec"] = 257,
 							["grupo"] = true,
-							["pets"] = {
-							},
-							["nome"] = "Konac",
-							["debuff_uptime_targets"] = {
-							},
-							["last_event"] = 1601201273,
 							["spell_cast"] = {
 								["Shoot"] = 11,
 								["Holy Fire"] = 1,
 								["Shadow Word: Pain"] = 1,
 							},
+							["last_event"] = 1601201273,
+							["boss_fight_component"] = true,
 							["tipo"] = 4,
+							["pets"] = {
+							},
+							["debuff_uptime_targets"] = {
+							},
 							["serial"] = "Player-4465-00C4D96C",
 							["classe"] = "PRIEST",
 						}, -- [2]
@@ -1417,19 +2345,21 @@ _detalhes_database = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
-					["Augustin"] = true,
 					["Konac"] = true,
+					["Augustin"] = true,
 				},
 				["overall_added"] = true,
 				["cleu_timeline"] = {
 				},
 				["alternate_power"] = {
 				},
-				["data_fim"] = "12:07:55",
+				["spells_cast_timeline"] = {
+				},
 				["cleu_events"] = {
 					["n"] = 1,
 				},
-				["data_inicio"] = "12:07:26",
+				["last_events_tables"] = {
+				},
 				["totals"] = {
 					2918, -- [1]
 					0, -- [2]
@@ -1437,21 +2367,21 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
 				["totals_grupo"] = {
 					2918, -- [1]
@@ -1460,32 +2390,63 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
-				["contra"] = "Lord Serpentis",
+				["TimeData"] = {
+				},
 				["frags_need_refresh"] = true,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
 				},
+				["data_inicio"] = "12:07:26",
+				["end_time"] = 1602694.185,
+				["tempo_start"] = 1601201246,
+				["instance_type"] = "party",
+				["combat_id"] = 42,
+				["combat_counter"] = 5100,
+				["hasSaved"] = true,
+				["frags"] = {
+					["Lord Serpentis"] = 1,
+				},
+				["data_fim"] = "12:07:55",
+				["is_boss"] = {
+					["mapid"] = 43,
+					["diff_string"] = "normal",
+					["index"] = 1,
+					["zone"] = "Wailing Caverns",
+					["id"] = 0,
+					["try_number"] = 5,
+					["diff"] = 16,
+					["ej_instance_id"] = 0,
+				},
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 1602665.159,
+				["contra"] = "Lord Serpentis",
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Konac"] = 2918.008991,
+						}, -- [1]
 					},
 					["heal_section"] = {
 					},
@@ -1493,43 +2454,10 @@ _detalhes_database = {
 						{
 						}, -- [1]
 					},
-					["damage"] = {
-						{
-							["Konac"] = 2918.008991,
-						}, -- [1]
+					["damage_section"] = {
 					},
 				},
-				["end_time"] = 1602694.185,
-				["tempo_start"] = 1601201246,
-				["instance_type"] = "party",
-				["player_last_events"] = {
-				},
-				["combat_counter"] = 5100,
-				["hasSaved"] = true,
-				["frags"] = {
-					["Lord Serpentis"] = 1,
-				},
-				["is_boss"] = {
-					["mapid"] = 43,
-					["diff_string"] = "normal",
-					["index"] = 1,
-					["zone"] = "Wailing Caverns",
-					["id"] = 0,
-					["ej_instance_id"] = 0,
-					["diff"] = 16,
-					["try_number"] = 5,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["combat_id"] = 42,
-				["start_time"] = 1602665.159,
-				["TimeData"] = {
-				},
-				["last_events_tables"] = {
-				},
-			}, -- [2]
+			}, -- [4]
 			{
 				{
 					["tipo"] = 2,
@@ -1552,19 +2480,7 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["nome"] = "Konac",
-							["classe"] = "PRIEST",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 7856.005311,
-							["spec"] = 257,
-							["serial"] = "Player-4465-00C4D96C",
-							["dps_started"] = false,
-							["end_time"] = 1601200629,
 							["damage_taken"] = 2241.005311,
-							["total"] = 7856.005311,
-							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
 									["Shadow Word: Pain"] = {
@@ -1588,16 +2504,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Shadow Word: Pain",
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 22,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 32,
 									},
 									["!Autoshot"] = {
 										["c_amt"] = 0,
@@ -1620,16 +2536,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "!Autoshot",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 23,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									["Smite"] = {
 										["c_amt"] = 1,
@@ -1651,31 +2567,43 @@ _detalhes_database = {
 										["c_max"] = 680,
 										["id"] = "Smite",
 										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 680,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 2,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["tipo"] = 1,
-							["colocacao"] = 1,
-							["last_dps"] = 107.296092641334,
-							["custom"] = 0,
-							["last_event"] = 1601200627,
-							["on_hold"] = false,
-							["start_time"] = 1601200554,
-							["delay"] = 0,
+							["classe"] = "PRIEST",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 7856.005311,
 							["friendlyfire"] = {
 							},
+							["delay"] = 0,
+							["dps_started"] = false,
+							["total"] = 7856.005311,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["boss_fight_component"] = true,
+							["spec"] = 257,
+							["grupo"] = true,
+							["end_time"] = 1601200629,
+							["last_event"] = 1601200627,
+							["custom"] = 0,
+							["colocacao"] = 1,
+							["tipo"] = 1,
+							["last_dps"] = 107.296092641334,
+							["start_time"] = 1601200554,
+							["serial"] = "Player-4465-00C4D96C",
+							["nome"] = "Konac",
 						}, -- [1]
 						{
 							["flag_original"] = 2632,
@@ -1688,18 +2616,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["monster"] = true,
-							["nome"] = "Deviate Shambler",
+							["friendlyfire_total"] = 0,
+							["boss_fight_component"] = true,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 464.004144,
-							["serial"] = "Creature-0-4447-43-10046-5761-0002F05D11",
-							["dps_started"] = false,
+							["delay"] = 1601200586,
+							["monster"] = true,
 							["total"] = 464.004144,
 							["end_time"] = 1601200629,
-							["on_hold"] = false,
-							["boss_fight_component"] = true,
+							["damage_taken"] = 2218.004144,
+							["nome"] = "Deviate Shambler",
 							["spells"] = {
 								["_ActorTable"] = {
 									["!Melee"] = {
@@ -1718,19 +2646,19 @@ _detalhes_database = {
 										["counter"] = 13,
 										["total"] = 464,
 										["c_max"] = 0,
-										["MISS"] = 1,
+										["r_amt"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
 										["n_amt"] = 12,
-										["a_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["MISS"] = 1,
 									},
 									["Wild Regeneration"] = {
 										["c_amt"] = 0,
@@ -1749,29 +2677,29 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Wild Regeneration",
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["last_event"] = 1601200586,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 2218.004144,
+							["last_event"] = 1601200586,
+							["on_hold"] = false,
 							["start_time"] = 1601200599,
-							["delay"] = 1601200586,
-							["friendlyfire_total"] = 0,
+							["serial"] = "Creature-0-4447-43-10046-5761-0002F05D11",
+							["dps_started"] = false,
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
@@ -1784,49 +2712,20 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["monster"] = true,
-							["boss_fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Druid of the Fang",
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 462.005272,
-							["serial"] = "Creature-0-4447-43-10046-3840-0001705D11",
-							["dps_started"] = false,
+							["delay"] = 1601200593,
+							["monster"] = true,
 							["total"] = 462.005272,
 							["end_time"] = 1601200629,
-							["on_hold"] = false,
-							["nome"] = "Druid of the Fang",
+							["damage_taken"] = 1763.005272,
+							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
-									["Lightning Bolt"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 75,
-										["targets"] = {
-											["Konac"] = 208,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 208,
-										["n_min"] = 66,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 208,
-										["c_max"] = 0,
-										["id"] = "Lightning Bolt",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["RESIST"] = 5,
-										["m_amt"] = 0,
-										["successful_casted"] = 8,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-									},
 									["!Melee"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -1841,22 +2740,22 @@ _detalhes_database = {
 										["n_min"] = 35,
 										["g_dmg"] = 0,
 										["counter"] = 9,
-										["DODGE"] = 2,
+										["total"] = 254,
 										["r_amt"] = 0,
 										["c_max"] = 0,
-										["MISS"] = 1,
+										["spellschool"] = 1,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 6,
-										["spellschool"] = 1,
-										["total"] = 254,
+										["MISS"] = 1,
+										["DODGE"] = 2,
 									},
 									["Serpent Form"] = {
 										["c_amt"] = 0,
@@ -1875,29 +2774,58 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Serpent Form",
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									["Lightning Bolt"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 75,
+										["targets"] = {
+											["Konac"] = 208,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 208,
+										["n_min"] = 66,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 208,
+										["c_max"] = 0,
+										["id"] = "Lightning Bolt",
+										["r_dmg"] = 0,
 										["r_amt"] = 0,
+										["c_min"] = 0,
+										["m_crit"] = 0,
+										["n_amt"] = 3,
+										["m_amt"] = 0,
+										["successful_casted"] = 8,
+										["b_dmg"] = 0,
+										["RESIST"] = 5,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["last_event"] = 1601200593,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 1763.005272,
+							["last_event"] = 1601200593,
+							["on_hold"] = false,
 							["start_time"] = 1601200598,
-							["delay"] = 1601200593,
-							["friendlyfire_total"] = 0,
+							["serial"] = "Creature-0-4447-43-10046-3840-0001705D11",
+							["dps_started"] = false,
 						}, -- [3]
 						{
 							["flag_original"] = 2632,
@@ -1906,23 +2834,23 @@ _detalhes_database = {
 								["Konac"] = true,
 							},
 							["targets"] = {
-								["Augustin"] = 234,
 								["Konac"] = 1089,
+								["Augustin"] = 234,
 							},
 							["pets"] = {
 							},
-							["monster"] = true,
-							["boss_fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Lord Pythas",
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1323.004733,
-							["serial"] = "Creature-0-4447-43-10046-3670-0000705D11",
-							["dps_started"] = false,
+							["delay"] = 1601200565,
+							["monster"] = true,
 							["total"] = 1323.004733,
 							["end_time"] = 1601200629,
-							["on_hold"] = false,
-							["nome"] = "Lord Pythas",
+							["damage_taken"] = 2610.004733,
+							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
 									["Sleep"] = {
@@ -1943,16 +2871,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Sleep",
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["RESIST"] = 1,
+										["n_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 3,
 										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
+										["RESIST"] = 1,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									["Thunderclap"] = {
 										["c_amt"] = 0,
@@ -1961,8 +2889,8 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 81,
 										["targets"] = {
-											["Augustin"] = 234,
 											["Konac"] = 0,
+											["Augustin"] = 234,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 234,
@@ -1973,16 +2901,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Thunderclap",
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["RESIST"] = 3,
+										["n_amt"] = 3,
 										["m_amt"] = 0,
 										["successful_casted"] = 3,
 										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["c_min"] = 0,
-										["r_amt"] = 0,
+										["RESIST"] = 3,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -1998,22 +2926,22 @@ _detalhes_database = {
 										["n_min"] = 30,
 										["g_dmg"] = 0,
 										["counter"] = 30,
-										["DODGE"] = 2,
+										["total"] = 1019,
 										["r_amt"] = 0,
 										["c_max"] = 0,
-										["MISS"] = 8,
+										["spellschool"] = 1,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 20,
-										["spellschool"] = 1,
-										["total"] = 1019,
+										["MISS"] = 8,
+										["DODGE"] = 2,
 									},
 									["Lightning Bolt"] = {
 										["c_amt"] = 0,
@@ -2033,16 +2961,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Lightning Bolt",
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["RESIST"] = 3,
+										["n_amt"] = 1,
 										["m_amt"] = 0,
 										["successful_casted"] = 4,
 										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["c_min"] = 0,
-										["r_amt"] = 0,
+										["RESIST"] = 3,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 									["Healing Touch"] = {
 										["c_amt"] = 0,
@@ -2061,29 +2989,29 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Healing Touch",
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 2,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["last_event"] = 1601200625,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 2610.004733,
+							["last_event"] = 1601200625,
+							["on_hold"] = false,
 							["start_time"] = 1601200570,
-							["delay"] = 1601200565,
-							["friendlyfire_total"] = 0,
+							["serial"] = "Creature-0-4447-43-10046-3670-0000705D11",
+							["dps_started"] = false,
 						}, -- [4]
 						{
 							["flag_original"] = 1297,
@@ -2096,30 +3024,7 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["total"] = 0.008295,
-							["friendlyfire"] = {
-							},
-							["classe"] = "MAGE",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.008295,
-							["damage_taken"] = 354.008295,
-							["serial"] = "Player-4465-01D5BF39",
-							["dps_started"] = false,
-							["end_time"] = 1601200629,
 							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["nome"] = "Augustin",
-							["spec"] = 64,
-							["grupo"] = true,
-							["last_event"] = 1601200610,
-							["colocacao"] = 2,
-							["boss_fight_component"] = true,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 0.000113291813488677,
-							["start_time"] = 1601200629,
-							["delay"] = 0,
 							["spells"] = {
 								["_ActorTable"] = {
 									["Chilled"] = {
@@ -2138,23 +3043,46 @@ _detalhes_database = {
 										["counter"] = 3,
 										["total"] = 0,
 										["c_max"] = 0,
-										["IMMUNE"] = 3,
+										["r_amt"] = 0,
 										["id"] = "Chilled",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
+										["a_dmg"] = 0,
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["c_min"] = 0,
+										["a_amt"] = 0,
 										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 16,
+										["IMMUNE"] = 3,
 									},
 								},
 								["tipo"] = 2,
 							},
+							["classe"] = "MAGE",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.008295,
+							["boss_fight_component"] = true,
+							["delay"] = 0,
+							["dps_started"] = false,
+							["end_time"] = 1601200629,
+							["friendlyfire"] = {
+							},
+							["total"] = 0.008295,
+							["nome"] = "Augustin",
+							["spec"] = 64,
+							["grupo"] = true,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["on_hold"] = false,
+							["colocacao"] = 2,
+							["last_event"] = 1601200610,
+							["damage_taken"] = 354.008295,
+							["start_time"] = 1601200629,
+							["serial"] = "Player-4465-01D5BF39",
+							["last_dps"] = 0.000113291813488677,
 						}, -- [5]
 						{
 							["flag_original"] = 2632,
@@ -2163,23 +3091,23 @@ _detalhes_database = {
 								["Konac"] = true,
 							},
 							["targets"] = {
-								["Konac"] = 226,
 								["Augustin"] = 120,
+								["Konac"] = 226,
 							},
 							["pets"] = {
 							},
-							["monster"] = true,
-							["boss_fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Evolving Ectoplasm",
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 346.004669,
-							["serial"] = "Creature-0-4447-43-10046-3640-0000705D11",
-							["dps_started"] = false,
+							["delay"] = 0,
+							["monster"] = true,
 							["total"] = 346.004669,
 							["end_time"] = 1601200629,
-							["on_hold"] = false,
-							["nome"] = "Evolving Ectoplasm",
+							["damage_taken"] = 1265.004669,
+							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
 									["!Melee"] = {
@@ -2189,8 +3117,8 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 42,
 										["targets"] = {
-											["Konac"] = 226,
 											["Augustin"] = 120,
+											["Konac"] = 226,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 346,
@@ -2201,30 +3129,30 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 10,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["last_event"] = 1601200624,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 1265.004669,
+							["last_event"] = 1601200624,
+							["on_hold"] = false,
 							["start_time"] = 1601200606,
-							["delay"] = 0,
-							["friendlyfire_total"] = 0,
+							["serial"] = "Creature-0-4447-43-10046-3640-0000705D11",
+							["dps_started"] = false,
 						}, -- [6]
 					},
 				}, -- [1]
@@ -2236,87 +3164,87 @@ _detalhes_database = {
 							["flag_original"] = 2632,
 							["totalabsorb"] = 0.001896,
 							["last_hps"] = 0,
-							["targets_overheal"] = {
+							["healing_from"] = {
 							},
 							["targets"] = {
 							},
-							["delay"] = 0,
+							["serial"] = "Creature-0-4447-43-10046-3670-0000705D11",
 							["pets"] = {
 							},
-							["totalover_without_pet"] = 0.001896,
-							["healing_from"] = {
+							["iniciar_hps"] = false,
+							["targets_overheal"] = {
 							},
 							["classe"] = "UNKNOW",
 							["totalover"] = 0.001896,
 							["total_without_pet"] = 0.001896,
-							["iniciar_hps"] = false,
-							["start_time"] = 1601200629,
+							["totalover_without_pet"] = 0.001896,
+							["totaldenied"] = 0.001896,
 							["monster"] = true,
-							["end_time"] = 1601200629,
+							["total"] = 0.001896,
 							["healing_taken"] = 0.001896,
-							["heal_enemy_amt"] = 486,
-							["boss_fight_component"] = true,
+							["targets_absorbs"] = {
+							},
+							["nome"] = "Lord Pythas",
 							["spells"] = {
 								["_ActorTable"] = {
 								},
 								["tipo"] = 3,
 							},
-							["total"] = 0.001896,
-							["targets_absorbs"] = {
-							},
+							["end_time"] = 1601200629,
+							["heal_enemy_amt"] = 486,
 							["heal_enemy"] = {
 								["Healing Touch"] = 486,
 							},
-							["nome"] = "Lord Pythas",
+							["last_event"] = 1601200614,
 							["custom"] = 0,
 							["tipo"] = 2,
 							["on_hold"] = false,
-							["totaldenied"] = 0.001896,
-							["serial"] = "Creature-0-4447-43-10046-3670-0000705D11",
-							["last_event"] = 1601200614,
+							["start_time"] = 1601200629,
+							["delay"] = 0,
+							["boss_fight_component"] = true,
 						}, -- [1]
 						{
 							["flag_original"] = 2632,
 							["totalabsorb"] = 0.008529,
 							["last_hps"] = 0,
-							["targets_overheal"] = {
+							["healing_from"] = {
 							},
 							["targets"] = {
 							},
-							["delay"] = 0,
+							["serial"] = "Creature-0-4447-43-10046-5761-0002F05D11",
 							["pets"] = {
 							},
-							["totalover_without_pet"] = 0.008529,
-							["healing_from"] = {
+							["iniciar_hps"] = false,
+							["targets_overheal"] = {
 							},
 							["classe"] = "UNKNOW",
 							["totalover"] = 0.008529,
 							["total_without_pet"] = 0.008529,
-							["iniciar_hps"] = false,
-							["start_time"] = 1601200629,
+							["totalover_without_pet"] = 0.008529,
+							["totaldenied"] = 0.008529,
 							["monster"] = true,
-							["end_time"] = 1601200629,
+							["total"] = 0.008529,
 							["healing_taken"] = 0.008529,
-							["heal_enemy_amt"] = 380,
-							["boss_fight_component"] = true,
+							["targets_absorbs"] = {
+							},
+							["nome"] = "Deviate Shambler",
 							["spells"] = {
 								["_ActorTable"] = {
 								},
 								["tipo"] = 3,
 							},
-							["total"] = 0.008529,
-							["targets_absorbs"] = {
-							},
+							["end_time"] = 1601200629,
+							["heal_enemy_amt"] = 380,
 							["heal_enemy"] = {
 								["Wild Regeneration"] = 380,
 							},
-							["nome"] = "Deviate Shambler",
+							["last_event"] = 1601200586,
 							["custom"] = 0,
 							["tipo"] = 2,
 							["on_hold"] = false,
-							["totaldenied"] = 0.008529,
-							["serial"] = "Creature-0-4447-43-10046-5761-0002F05D11",
-							["last_event"] = 1601200586,
+							["start_time"] = 1601200629,
+							["delay"] = 0,
+							["boss_fight_component"] = true,
 						}, -- [2]
 					},
 				}, -- [2]
@@ -2335,15 +3263,15 @@ _detalhes_database = {
 							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
 									["Shadow Word: Pain"] = {
-										["appliedamt"] = 4,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = "Shadow Word: Pain",
+										["uptime"] = 49,
 										["targets"] = {
 										},
-										["activedamt"] = 0,
-										["uptime"] = 49,
-										["id"] = "Shadow Word: Pain",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 4,
 									},
 								},
 								["tipo"] = 9,
@@ -2353,37 +3281,37 @@ _detalhes_database = {
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									["Power Word: Fortitude"] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Power Word: Fortitude",
+										["uptime"] = 75,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 75,
-										["id"] = "Power Word: Fortitude",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 									["Divine Spirit"] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Divine Spirit",
+										["uptime"] = 75,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 75,
-										["id"] = "Divine Spirit",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 									["Reactive Fade"] = {
-										["appliedamt"] = 9,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 9,
+										["refreshamt"] = 0,
+										["id"] = "Reactive Fade",
+										["uptime"] = 35,
 										["targets"] = {
 										},
-										["activedamt"] = 9,
-										["uptime"] = 35,
-										["id"] = "Reactive Fade",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 9,
 									},
 								},
 								["tipo"] = 9,
@@ -2398,107 +3326,107 @@ _detalhes_database = {
 								["Shoot"] = 22,
 								["Smite"] = 3,
 							},
-							["boss_fight_component"] = true,
-							["last_event"] = 1601200629,
-							["tipo"] = 4,
-							["nome"] = "Konac",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-00C4D96C",
 							["debuff_uptime_targets"] = {
 							},
+							["tipo"] = 4,
+							["last_event"] = 1601200629,
+							["pets"] = {
+							},
+							["nome"] = "Konac",
+							["serial"] = "Player-4465-00C4D96C",
+							["boss_fight_component"] = true,
 						}, -- [1]
 						{
 							["flag_original"] = 1047,
-							["nome"] = "Augustin",
+							["buff_uptime_targets"] = {
+							},
 							["spec"] = 64,
 							["grupo"] = true,
-							["last_event"] = 1601200629,
-							["buff_uptime"] = 150,
 							["boss_fight_component"] = true,
 							["pets"] = {
 							},
-							["tipo"] = 4,
-							["buff_uptime_targets"] = {
-							},
+							["nome"] = "Augustin",
+							["buff_uptime"] = 150,
+							["last_event"] = 1601200629,
+							["classe"] = "MAGE",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									["Frost Armor"] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Frost Armor",
+										["uptime"] = 75,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 75,
-										["id"] = "Frost Armor",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 									["Arcane Intellect"] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Arcane Intellect",
+										["uptime"] = 75,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 75,
-										["id"] = "Arcane Intellect",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 								},
 								["tipo"] = 9,
 							},
 							["serial"] = "Player-4465-01D5BF39",
-							["classe"] = "MAGE",
+							["tipo"] = 4,
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
-							["tipo"] = 4,
+							["last_event"] = 0,
 							["nome"] = "Druid of the Fang",
 							["pets"] = {
 							},
-							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
 							["spell_cast"] = {
 								["Lightning Bolt"] = 8,
 								["Serpent Form"] = 1,
 							},
-							["last_event"] = 0,
+							["tipo"] = 4,
 							["monster"] = true,
 							["serial"] = "Creature-0-4447-43-10046-3840-0001705D11",
-							["classe"] = "UNKNOW",
+							["boss_fight_component"] = true,
 						}, -- [3]
 						{
 							["flag_original"] = 2632,
-							["tipo"] = 4,
+							["last_event"] = 0,
 							["nome"] = "Lord Pythas",
 							["pets"] = {
 							},
-							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
 							["spell_cast"] = {
 								["Healing Touch"] = 2,
 								["Thunderclap"] = 3,
 								["Lightning Bolt"] = 4,
 								["Sleep"] = 3,
 							},
-							["last_event"] = 0,
+							["tipo"] = 4,
 							["monster"] = true,
 							["serial"] = "Creature-0-4447-43-10046-3670-0000705D11",
-							["classe"] = "UNKNOW",
+							["boss_fight_component"] = true,
 						}, -- [4]
 						{
 							["flag_original"] = 2632,
-							["tipo"] = 4,
+							["last_event"] = 0,
 							["nome"] = "Deviate Shambler",
 							["pets"] = {
 							},
-							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
 							["spell_cast"] = {
 								["Wild Regeneration"] = 1,
 							},
-							["last_event"] = 0,
+							["tipo"] = 4,
 							["monster"] = true,
 							["serial"] = "Creature-0-4447-43-10046-5761-0002F05D11",
-							["classe"] = "UNKNOW",
+							["boss_fight_component"] = true,
 						}, -- [5]
 						{
 							["flag_original"] = 68168,
@@ -2514,22 +3442,22 @@ _detalhes_database = {
 							["monster"] = true,
 							["debuff_uptime"] = 8,
 							["spellschool"] = 32,
+							["boss_fight_component"] = true,
 							["debuff_uptime_targets"] = {
 								["Augustin"] = {
 									["uptime"] = 8,
-									["appliedamt"] = 0,
+									["refreshamt"] = 0,
 									["activedamt"] = 0,
 									["actived"] = false,
-									["refreshamt"] = 0,
+									["appliedamt"] = 0,
 								},
 							},
-							["boss_fight_component"] = true,
-							["nome"] = "Sleep",
+							["last_event"] = 1601200602,
 							["tipo"] = 4,
 							["damage_twin"] = "Lord Pythas",
-							["damage_spellid"] = "Sleep",
 							["serial"] = "Creature-0-4447-43-10046-3670-0000705D11",
-							["last_event"] = 1601200602,
+							["damage_spellid"] = "Sleep",
+							["nome"] = "Sleep",
 						}, -- [6]
 						{
 							["flag_original"] = 68168,
@@ -2545,22 +3473,22 @@ _detalhes_database = {
 							["monster"] = true,
 							["debuff_uptime"] = 30,
 							["spellschool"] = 8,
+							["boss_fight_component"] = true,
 							["debuff_uptime_targets"] = {
 								["Augustin"] = {
 									["uptime"] = 30,
-									["appliedamt"] = 0,
+									["refreshamt"] = 0,
 									["activedamt"] = 0,
 									["actived"] = false,
-									["refreshamt"] = 0,
+									["appliedamt"] = 0,
 								},
 							},
-							["boss_fight_component"] = true,
-							["nome"] = "Thunderclap",
+							["last_event"] = 1601200628,
 							["tipo"] = 4,
 							["damage_twin"] = "Lord Pythas",
-							["damage_spellid"] = "Thunderclap",
 							["serial"] = "Creature-0-4447-43-10046-3670-0000705D11",
-							["last_event"] = 1601200628,
+							["damage_spellid"] = "Thunderclap",
+							["nome"] = "Thunderclap",
 						}, -- [7]
 					},
 				}, -- [4]
@@ -2571,18 +3499,16 @@ _detalhes_database = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
-					["Augustin"] = true,
 					["Konac"] = true,
+					["Augustin"] = true,
 				},
 				["CombatStartedAt"] = 1601976.744,
-				["overall_added"] = true,
+				["tempo_start"] = 1601200554,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 5084,
 				["totals"] = {
 					10451, -- [1]
 					0, -- [2]
@@ -2590,42 +3516,23 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
-				["totals_grupo"] = {
-					7856, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
+				["player_last_events"] = {
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "party",
@@ -2642,40 +3549,23 @@ _detalhes_database = {
 				["data_inicio"] = "11:55:55",
 				["end_time"] = 1602048.254,
 				["combat_id"] = 28,
-				["spells_cast_timeline"] = {
-				},
-				["tempo_start"] = 1601200554,
-				["player_last_events"] = {
-				},
 				["frags"] = {
 					["Druid of the Fang"] = 1,
 					["Deviate Shambler"] = 1,
 					["Evolving Ectoplasm"] = 1,
 					["Lord Pythas"] = 1,
 				},
-				["is_boss"] = {
-					["mapid"] = 43,
-					["diff_string"] = "normal",
-					["index"] = 1,
-					["zone"] = "Wailing Caverns",
-					["id"] = 0,
-					["ej_instance_id"] = 0,
-					["diff"] = 16,
-					["try_number"] = 4,
-				},
-				["TimeData"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["combat_counter"] = 5084,
-				["start_time"] = 1601973.225,
-				["contra"] = "Deviate Shambler",
+				["overall_added"] = true,
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Konac"] = 7856.005311,
+							["Augustin"] = 0.008295,
+						}, -- [1]
 					},
 					["heal_section"] = {
 					},
@@ -2683,14 +3573,52 @@ _detalhes_database = {
 						{
 						}, -- [1]
 					},
-					["damage"] = {
-						{
-							["Augustin"] = 0.008295,
-							["Konac"] = 7856.005311,
-						}, -- [1]
+					["damage_section"] = {
 					},
 				},
-			}, -- [3]
+				["spells_cast_timeline"] = {
+				},
+				["is_boss"] = {
+					["mapid"] = 43,
+					["diff_string"] = "normal",
+					["index"] = 1,
+					["zone"] = "Wailing Caverns",
+					["id"] = 0,
+					["try_number"] = 4,
+					["diff"] = 16,
+					["ej_instance_id"] = 0,
+				},
+				["contra"] = "Deviate Shambler",
+				["CombatSkillCache"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["start_time"] = 1601973.225,
+				["TimeData"] = {
+				},
+				["totals_grupo"] = {
+					7856, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+			}, -- [5]
 			{
 				{
 					["tipo"] = 2,
@@ -2703,23 +3631,23 @@ _detalhes_database = {
 								["Konac"] = true,
 							},
 							["targets"] = {
-								["Augustin"] = 84,
 								["Konac"] = 89,
+								["Augustin"] = 84,
 							},
 							["pets"] = {
 							},
-							["monster"] = true,
-							["boss_fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Deviate Crocolisk",
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 173.008987,
-							["serial"] = "Creature-0-4447-43-10046-5053-0001705D11",
-							["dps_started"] = false,
+							["delay"] = 1601200256,
+							["monster"] = true,
 							["total"] = 173.008987,
 							["end_time"] = 1601200266,
-							["on_hold"] = false,
-							["nome"] = "Deviate Crocolisk",
+							["damage_taken"] = 780.008987,
+							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
 									["!Melee"] = {
@@ -2729,8 +3657,8 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 26,
 										["targets"] = {
-											["Augustin"] = 84,
 											["Konac"] = 89,
+											["Augustin"] = 84,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 115,
@@ -2739,53 +3667,61 @@ _detalhes_database = {
 										["counter"] = 7,
 										["total"] = 173,
 										["c_max"] = 58,
-										["MISS"] = 1,
+										["r_amt"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["a_dmg"] = 0,
 										["b_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["c_min"] = 58,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["c_min"] = 58,
+										["a_amt"] = 0,
 										["n_amt"] = 5,
-										["a_dmg"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 1,
+										["MISS"] = 1,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["last_event"] = 1601200256,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 780.008987,
+							["last_event"] = 1601200256,
+							["on_hold"] = false,
 							["start_time"] = 1601200251,
-							["delay"] = 1601200256,
-							["friendlyfire_total"] = 0,
+							["serial"] = "Creature-0-4447-43-10046-5053-0001705D11",
+							["dps_started"] = false,
 						}, -- [1]
 						{
 							["flag_original"] = 1298,
 							["totalabsorbed"] = 0.001898,
 							["damage_from"] = {
-								["Kresh"] = true,
 								["Deviate Crocolisk"] = true,
+								["Kresh"] = true,
 							},
 							["targets"] = {
-								["Kresh"] = 1412,
 								["Deviate Crocolisk"] = 780,
+								["Kresh"] = 1412,
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["nome"] = "Konac",
+							["damage_taken"] = 218.001898,
+							["spec"] = 257,
 							["classe"] = "PRIEST",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 2192.001898,
+							["friendlyfire"] = {
+							},
+							["delay"] = 0,
+							["dps_started"] = false,
+							["end_time"] = 1601200266,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
 									["Shadow Word: Pain"] = {
@@ -2795,8 +3731,8 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 156,
 										["targets"] = {
-											["Kresh"] = 624,
 											["Deviate Crocolisk"] = 780,
+											["Kresh"] = 624,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 1404,
@@ -2807,16 +3743,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Shadow Word: Pain",
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 9,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 32,
 									},
 									["!Autoshot"] = {
 										["c_amt"] = 1,
@@ -2836,38 +3772,30 @@ _detalhes_database = {
 										["c_max"] = 231,
 										["id"] = "!Autoshot",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 231,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 4,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["serial"] = "Player-4465-00C4D96C",
-							["dps_started"] = false,
-							["total"] = 2192.001898,
-							["damage_taken"] = 218.001898,
-							["end_time"] = 1601200266,
-							["boss_fight_component"] = true,
-							["spec"] = 257,
 							["grupo"] = true,
-							["tipo"] = 1,
-							["colocacao"] = 1,
-							["last_dps"] = 109.37587435774,
-							["custom"] = 0,
+							["total"] = 2192.001898,
 							["last_event"] = 1601200262,
-							["on_hold"] = false,
+							["custom"] = 0,
+							["colocacao"] = 1,
+							["tipo"] = 1,
+							["last_dps"] = 109.37587435774,
 							["start_time"] = 1601200244,
-							["delay"] = 0,
-							["friendlyfire"] = {
-							},
+							["serial"] = "Player-4465-00C4D96C",
+							["nome"] = "Konac",
 						}, -- [2]
 						{
 							["flag_original"] = 1297,
@@ -2880,12 +3808,20 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["nome"] = "Augustin",
+							["damage_taken"] = 84.008839,
+							["spec"] = 64,
 							["classe"] = "MAGE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 176.008839,
+							["friendlyfire"] = {
+							},
+							["delay"] = 0,
+							["dps_started"] = false,
+							["end_time"] = 1601200266,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
 									["Scorch"] = {
@@ -2906,62 +3842,53 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Scorch",
 										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 4,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["serial"] = "Player-4465-01D5BF39",
-							["dps_started"] = false,
-							["total"] = 176.008839,
-							["damage_taken"] = 84.008839,
-							["end_time"] = 1601200266,
-							["boss_fight_component"] = true,
-							["spec"] = 64,
 							["grupo"] = true,
-							["tipo"] = 1,
-							["colocacao"] = 2,
-							["last_dps"] = 8.78243795221187,
-							["custom"] = 0,
+							["total"] = 176.008839,
 							["last_event"] = 1601200262,
-							["on_hold"] = false,
+							["custom"] = 0,
+							["colocacao"] = 2,
+							["tipo"] = 1,
+							["last_dps"] = 8.78243795221187,
 							["start_time"] = 1601200259,
-							["delay"] = 0,
-							["friendlyfire"] = {
-							},
+							["serial"] = "Player-4465-01D5BF39",
+							["nome"] = "Augustin",
 						}, -- [3]
 						{
 							["flag_original"] = 2600,
 							["totalabsorbed"] = 0.004961,
 							["damage_from"] = {
-								["Augustin"] = true,
 								["Konac"] = true,
+								["Augustin"] = true,
 							},
 							["targets"] = {
 								["Konac"] = 129,
 							},
 							["pets"] = {
 							},
-							["tipo"] = 1,
+							["last_event"] = 1601200261,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 129.004961,
-							["classe"] = "UNKNOW",
+							["nome"] = "Kresh",
 							["dps_started"] = false,
 							["total"] = 129.004961,
-							["serial"] = "Creature-0-4447-43-10046-3653-0000705D11",
-							["friendlyfire"] = {
-							},
+							["delay"] = 0,
+							["on_hold"] = false,
 							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
@@ -2979,35 +3906,36 @@ _detalhes_database = {
 										["n_min"] = 41,
 										["g_dmg"] = 0,
 										["counter"] = 5,
-										["DODGE"] = 1,
+										["total"] = 129,
 										["r_amt"] = 0,
 										["c_max"] = 0,
-										["MISS"] = 1,
+										["spellschool"] = 1,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 3,
-										["spellschool"] = 1,
-										["total"] = 129,
+										["MISS"] = 1,
+										["DODGE"] = 1,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["damage_taken"] = 1588.004961,
+							["friendlyfire"] = {
+							},
 							["end_time"] = 1601200266,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1601200261,
-							["on_hold"] = false,
+							["tipo"] = 1,
+							["damage_taken"] = 1588.004961,
 							["start_time"] = 1601200255,
-							["delay"] = 0,
-							["nome"] = "Kresh",
+							["serial"] = "Creature-0-4447-43-10046-3653-0000705D11",
+							["classe"] = "UNKNOW",
 						}, -- [4]
 					},
 				}, -- [1]
@@ -3038,10 +3966,10 @@ _detalhes_database = {
 										},
 										["actived_at"] = 1601200262,
 										["uptime"] = 11,
-										["appliedamt"] = 2,
+										["counter"] = 0,
 										["refreshamt"] = 0,
 										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 2,
 									},
 								},
 								["tipo"] = 9,
@@ -3051,37 +3979,37 @@ _detalhes_database = {
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									["Power Word: Fortitude"] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Power Word: Fortitude",
+										["uptime"] = 24,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 24,
-										["id"] = "Power Word: Fortitude",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 									["Divine Spirit"] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Divine Spirit",
+										["uptime"] = 24,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 24,
-										["id"] = "Divine Spirit",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 									["Reactive Fade"] = {
-										["appliedamt"] = 2,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 2,
+										["refreshamt"] = 0,
+										["id"] = "Reactive Fade",
+										["uptime"] = 8,
 										["targets"] = {
 										},
-										["activedamt"] = 2,
-										["uptime"] = 8,
-										["id"] = "Reactive Fade",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 2,
 									},
 								},
 								["tipo"] = 9,
@@ -3095,30 +4023,30 @@ _detalhes_database = {
 								["Shadow Word: Pain"] = 2,
 								["Shoot"] = 6,
 							},
-							["boss_fight_component"] = true,
-							["last_event"] = 1601200266,
-							["tipo"] = 4,
-							["nome"] = "Konac",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-00C4D96C",
 							["debuff_uptime_targets"] = {
 							},
+							["tipo"] = 4,
+							["last_event"] = 1601200266,
+							["pets"] = {
+							},
+							["nome"] = "Konac",
+							["serial"] = "Player-4465-00C4D96C",
+							["boss_fight_component"] = true,
 						}, -- [1]
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
 									["Chilled"] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 1,
+										["id"] = "Chilled",
+										["uptime"] = 10,
 										["targets"] = {
 										},
-										["activedamt"] = 0,
-										["uptime"] = 10,
-										["id"] = "Chilled",
-										["refreshamt"] = 1,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 								},
 								["tipo"] = 9,
@@ -3128,26 +4056,26 @@ _detalhes_database = {
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									["Frost Armor"] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Frost Armor",
+										["uptime"] = 24,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 24,
-										["id"] = "Frost Armor",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 									["Arcane Intellect"] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Arcane Intellect",
+										["uptime"] = 24,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 24,
-										["id"] = "Arcane Intellect",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 								},
 								["tipo"] = 9,
@@ -3160,15 +4088,15 @@ _detalhes_database = {
 							["spell_cast"] = {
 								["Scorch"] = 3,
 							},
-							["boss_fight_component"] = true,
-							["last_event"] = 1601200266,
-							["tipo"] = 4,
-							["nome"] = "Augustin",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-01D5BF39",
 							["debuff_uptime_targets"] = {
 							},
+							["tipo"] = 4,
+							["last_event"] = 1601200266,
+							["pets"] = {
+							},
+							["nome"] = "Augustin",
+							["serial"] = "Player-4465-01D5BF39",
+							["boss_fight_component"] = true,
 						}, -- [2]
 					},
 				}, -- [4]
@@ -3179,18 +4107,16 @@ _detalhes_database = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
-					["Augustin"] = true,
 					["Konac"] = true,
+					["Augustin"] = true,
 				},
 				["CombatStartedAt"] = 1601711.412,
-				["overall_added"] = true,
+				["tempo_start"] = 1601200242,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 5073,
 				["totals"] = {
 					2670, -- [1]
 					0, -- [2]
@@ -3198,42 +4124,23 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
-				["totals_grupo"] = {
-					2368, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
+				["player_last_events"] = {
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "party",
@@ -3250,38 +4157,21 @@ _detalhes_database = {
 				["data_inicio"] = "11:50:43",
 				["end_time"] = 1601685.756,
 				["combat_id"] = 17,
-				["spells_cast_timeline"] = {
-				},
-				["tempo_start"] = 1601200242,
-				["player_last_events"] = {
-				},
 				["frags"] = {
-					["Kresh"] = 1,
 					["Deviate Crocolisk"] = 2,
+					["Kresh"] = 1,
 				},
-				["is_boss"] = {
-					["mapid"] = 43,
-					["diff_string"] = "normal",
-					["index"] = 1,
-					["zone"] = "Wailing Caverns",
-					["id"] = 0,
-					["ej_instance_id"] = 0,
-					["diff"] = 16,
-					["try_number"] = 3,
-				},
-				["TimeData"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["combat_counter"] = 5073,
-				["start_time"] = 1601661.743,
-				["contra"] = "Deviate Crocolisk",
+				["overall_added"] = true,
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Konac"] = 2192.001898,
+							["Augustin"] = 176.008839,
+						}, -- [1]
 					},
 					["heal_section"] = {
 					},
@@ -3289,14 +4179,52 @@ _detalhes_database = {
 						{
 						}, -- [1]
 					},
-					["damage"] = {
-						{
-							["Augustin"] = 176.008839,
-							["Konac"] = 2192.001898,
-						}, -- [1]
+					["damage_section"] = {
 					},
 				},
-			}, -- [4]
+				["spells_cast_timeline"] = {
+				},
+				["is_boss"] = {
+					["mapid"] = 43,
+					["diff_string"] = "normal",
+					["index"] = 1,
+					["zone"] = "Wailing Caverns",
+					["id"] = 0,
+					["try_number"] = 3,
+					["diff"] = 16,
+					["ej_instance_id"] = 0,
+				},
+				["contra"] = "Deviate Crocolisk",
+				["CombatSkillCache"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["start_time"] = 1601661.743,
+				["TimeData"] = {
+				},
+				["totals_grupo"] = {
+					2368, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+			}, -- [6]
 			{
 				{
 					["tipo"] = 2,
@@ -3316,12 +4244,20 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
-							["nome"] = "Konac",
+							["damage_taken"] = 1386.004529,
+							["spec"] = 257,
 							["classe"] = "PRIEST",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 2827.004529,
+							["friendlyfire"] = {
+							},
+							["delay"] = 0,
+							["dps_started"] = false,
+							["end_time"] = 1601200016,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
 									["Shadow Word: Pain"] = {
@@ -3342,16 +4278,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Shadow Word: Pain",
 										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 5,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 32,
 									},
 									["!Autoshot"] = {
 										["c_amt"] = 0,
@@ -3371,16 +4307,16 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "!Autoshot",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 10,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
 									},
 									["Holy Nova"] = {
 										["c_amt"] = 1,
@@ -3401,38 +4337,30 @@ _detalhes_database = {
 										["c_max"] = 324,
 										["id"] = "Holy Nova",
 										["r_dmg"] = 0,
-										["spellschool"] = 2,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 324,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["a_dmg"] = 0,
+										["spellschool"] = 2,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["serial"] = "Player-4465-00C4D96C",
-							["dps_started"] = false,
-							["total"] = 2827.004529,
-							["damage_taken"] = 1386.004529,
-							["end_time"] = 1601200016,
-							["boss_fight_component"] = true,
-							["spec"] = 257,
 							["grupo"] = true,
-							["tipo"] = 1,
-							["colocacao"] = 1,
-							["last_dps"] = 117.767320515965,
-							["custom"] = 0,
+							["total"] = 2827.004529,
 							["last_event"] = 1601200014,
-							["on_hold"] = false,
+							["custom"] = 0,
+							["colocacao"] = 1,
+							["tipo"] = 1,
+							["last_dps"] = 117.767320515965,
 							["start_time"] = 1601199992,
-							["delay"] = 0,
-							["friendlyfire"] = {
-							},
+							["serial"] = "Player-4465-00C4D96C",
+							["nome"] = "Konac",
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
@@ -3444,33 +4372,33 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["on_hold"] = false,
-							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
+							["last_event"] = 0,
 							["classe"] = "MAGE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.001948,
-							["serial"] = "Player-4465-01D5BF39",
+							["delay"] = 0,
 							["dps_started"] = false,
 							["total"] = 0.001948,
-							["spec"] = 64,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Augustin",
 							["spells"] = {
 								["_ActorTable"] = {
 								},
 								["tipo"] = 2,
 							},
+							["damage_taken"] = 184.001948,
+							["nome"] = "Augustin",
+							["spec"] = 64,
 							["grupo"] = true,
 							["end_time"] = 1601200046,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
-							["damage_taken"] = 184.001948,
+							["tipo"] = 1,
+							["on_hold"] = false,
 							["start_time"] = 1601200046,
-							["delay"] = 0,
-							["friendlyfire_total"] = 0,
+							["serial"] = "Player-4465-01D5BF39",
+							["friendlyfire"] = {
+							},
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
@@ -3483,18 +4411,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["monster"] = true,
-							["boss_fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Deviate Python",
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 306.008637,
-							["serial"] = "Creature-0-4447-43-10046-8886-0002705D12",
-							["dps_started"] = false,
+							["delay"] = 0,
+							["monster"] = true,
 							["total"] = 306.008637,
 							["end_time"] = 1601200016,
-							["on_hold"] = false,
-							["nome"] = "Deviate Python",
+							["damage_taken"] = 535.008637,
+							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
 									["!Melee"] = {
@@ -3511,36 +4439,36 @@ _detalhes_database = {
 										["n_min"] = 18,
 										["g_dmg"] = 0,
 										["counter"] = 20,
-										["DODGE"] = 1,
+										["total"] = 306,
 										["r_amt"] = 0,
 										["c_max"] = 0,
-										["MISS"] = 5,
+										["spellschool"] = 1,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["b_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
 										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["a_dmg"] = 0,
 										["n_amt"] = 14,
-										["spellschool"] = 1,
-										["total"] = 306,
+										["MISS"] = 5,
+										["DODGE"] = 1,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["last_event"] = 1601200012,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 535.008637,
+							["last_event"] = 1601200012,
+							["on_hold"] = false,
 							["start_time"] = 1601199994,
-							["delay"] = 0,
-							["friendlyfire_total"] = 0,
+							["serial"] = "Creature-0-4447-43-10046-8886-0002705D12",
+							["dps_started"] = false,
 						}, -- [3]
 						{
 							["flag_original"] = 2632,
@@ -3553,50 +4481,20 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["monster"] = true,
-							["boss_fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Lord Cobrahn",
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 211.002796,
-							["serial"] = "Creature-0-4447-43-10046-3669-0000705D11",
-							["dps_started"] = false,
+							["delay"] = 0,
+							["monster"] = true,
 							["total"] = 211.002796,
 							["end_time"] = 1601200016,
-							["on_hold"] = false,
-							["nome"] = "Lord Cobrahn",
+							["damage_taken"] = 2292.002796,
+							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 87,
-										["targets"] = {
-											["Konac"] = 87,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 87,
-										["n_min"] = 87,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 87,
-										["c_max"] = 0,
-										["DODGE"] = 1,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["c_min"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["r_amt"] = 0,
-									},
 									["Lightning Bolt"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -3615,16 +4513,46 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Lightning Bolt",
 										["r_dmg"] = 37,
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 1,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["RESIST"] = 3,
+										["n_amt"] = 2,
 										["m_amt"] = 0,
 										["successful_casted"] = 5,
 										["b_dmg"] = 0,
-										["n_amt"] = 2,
+										["RESIST"] = 3,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 87,
+										["targets"] = {
+											["Konac"] = 87,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 87,
+										["n_min"] = 87,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 87,
+										["c_max"] = 0,
+										["r_amt"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
 										["c_min"] = 0,
-										["r_amt"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 1,
+										["spellschool"] = 1,
+										["DODGE"] = 1,
 									},
 									["Cobrahn Serpent Form"] = {
 										["c_amt"] = 0,
@@ -3643,29 +4571,29 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Cobrahn Serpent Form",
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["last_event"] = 1601200013,
+							["tipo"] = 1,
+							["last_dps"] = 0,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 2292.002796,
+							["last_event"] = 1601200013,
+							["on_hold"] = false,
 							["start_time"] = 1601199996,
-							["delay"] = 0,
-							["friendlyfire_total"] = 0,
+							["serial"] = "Creature-0-4447-43-10046-3669-0000705D11",
+							["dps_started"] = false,
 						}, -- [4]
 					},
 				}, -- [1]
@@ -3675,13 +4603,13 @@ _detalhes_database = {
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1298,
-							["targets_overheal"] = {
-								["Augustin"] = 681,
+							["healing_from"] = {
+								["Konac"] = true,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "PRIEST",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 681.003079,
 							["total_without_pet"] = 479.003079,
 							["total"] = 479.003079,
@@ -3700,10 +4628,10 @@ _detalhes_database = {
 							["totalover_without_pet"] = 0.003079,
 							["healing_taken"] = 479.003079,
 							["end_time"] = 1601200016,
-							["healing_from"] = {
-								["Konac"] = true,
+							["targets_overheal"] = {
+								["Augustin"] = 681,
 							},
-							["boss_fight_component"] = true,
+							["last_event"] = 1601200012,
 							["nome"] = "Konac",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -3715,8 +4643,8 @@ _detalhes_database = {
 										},
 										["n_max"] = 479,
 										["targets"] = {
-											["Augustin"] = 0,
 											["Konac"] = 479,
+											["Augustin"] = 0,
 										},
 										["n_min"] = 479,
 										["counter"] = 2,
@@ -3728,35 +4656,35 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 479,
-										["n_amt"] = 1,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["c_min"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 1,
+										["n_curado"] = 479,
+										["m_amt"] = 0,
 										["absorbed"] = 0,
 									},
 								},
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1601200012,
+							["classe"] = "PRIEST",
+							["totaldenied"] = 0.003079,
 							["custom"] = 0,
 							["tipo"] = 2,
 							["spec"] = 257,
-							["totaldenied"] = 0.003079,
+							["start_time"] = 1601200012,
 							["delay"] = 0,
-							["last_event"] = 1601200012,
+							["boss_fight_component"] = true,
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
-							["targets_overheal"] = {
+							["healing_from"] = {
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "MAGE",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 0.00649,
 							["total_without_pet"] = 0.00649,
 							["total"] = 0.00649,
@@ -3774,9 +4702,9 @@ _detalhes_database = {
 							["totalover_without_pet"] = 0.00649,
 							["healing_taken"] = 0.00649,
 							["end_time"] = 1601200016,
-							["healing_from"] = {
+							["targets_overheal"] = {
 							},
-							["boss_fight_component"] = true,
+							["last_event"] = 0,
 							["nome"] = "Augustin",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -3784,14 +4712,14 @@ _detalhes_database = {
 								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1601200016,
+							["classe"] = "MAGE",
+							["totaldenied"] = 0.00649,
 							["custom"] = 0,
 							["tipo"] = 2,
 							["spec"] = 64,
-							["totaldenied"] = 0.00649,
+							["start_time"] = 1601200016,
 							["delay"] = 0,
-							["last_event"] = 0,
+							["boss_fight_component"] = true,
 						}, -- [2]
 					},
 				}, -- [2]
@@ -3810,15 +4738,15 @@ _detalhes_database = {
 							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
 									["Shadow Word: Pain"] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = "Shadow Word: Pain",
+										["uptime"] = 15,
 										["targets"] = {
 										},
-										["activedamt"] = 0,
-										["uptime"] = 15,
-										["id"] = "Shadow Word: Pain",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 								},
 								["tipo"] = 9,
@@ -3828,37 +4756,37 @@ _detalhes_database = {
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									["Power Word: Fortitude"] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Power Word: Fortitude",
+										["uptime"] = 24,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 24,
-										["id"] = "Power Word: Fortitude",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 									["Divine Spirit"] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Divine Spirit",
+										["uptime"] = 24,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 24,
-										["id"] = "Divine Spirit",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 									["Reactive Fade"] = {
-										["appliedamt"] = 3,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 3,
+										["refreshamt"] = 0,
+										["id"] = "Reactive Fade",
+										["uptime"] = 12,
 										["targets"] = {
 										},
-										["activedamt"] = 3,
-										["uptime"] = 12,
-										["id"] = "Reactive Fade",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 3,
 									},
 								},
 								["tipo"] = 9,
@@ -3870,77 +4798,77 @@ _detalhes_database = {
 							["grupo"] = true,
 							["spell_cast"] = {
 								["Shadow Word: Pain"] = 1,
-								["Holy Nova"] = 1,
 								["Shoot"] = 9,
+								["Holy Nova"] = 1,
 							},
-							["boss_fight_component"] = true,
-							["last_event"] = 1601200016,
-							["tipo"] = 4,
-							["nome"] = "Konac",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-00C4D96C",
 							["debuff_uptime_targets"] = {
 							},
+							["tipo"] = 4,
+							["last_event"] = 1601200016,
+							["pets"] = {
+							},
+							["nome"] = "Konac",
+							["serial"] = "Player-4465-00C4D96C",
+							["boss_fight_component"] = true,
 						}, -- [1]
 						{
 							["flag_original"] = 1047,
-							["nome"] = "Augustin",
+							["buff_uptime_targets"] = {
+							},
 							["spec"] = 64,
 							["grupo"] = true,
-							["last_event"] = 1601200016,
-							["buff_uptime"] = 48,
 							["boss_fight_component"] = true,
 							["pets"] = {
 							},
-							["tipo"] = 4,
-							["buff_uptime_targets"] = {
-							},
+							["nome"] = "Augustin",
+							["buff_uptime"] = 48,
+							["last_event"] = 1601200016,
+							["classe"] = "MAGE",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									["Frost Armor"] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Frost Armor",
+										["uptime"] = 24,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 24,
-										["id"] = "Frost Armor",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 									["Arcane Intellect"] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Arcane Intellect",
+										["uptime"] = 24,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 24,
-										["id"] = "Arcane Intellect",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 								},
 								["tipo"] = 9,
 							},
 							["serial"] = "Player-4465-01D5BF39",
-							["classe"] = "MAGE",
+							["tipo"] = 4,
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
-							["tipo"] = 4,
+							["last_event"] = 0,
 							["nome"] = "Lord Cobrahn",
 							["pets"] = {
 							},
-							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
 							["spell_cast"] = {
 								["Lightning Bolt"] = 5,
 								["Cobrahn Serpent Form"] = 1,
 							},
-							["last_event"] = 0,
+							["tipo"] = 4,
 							["monster"] = true,
 							["serial"] = "Creature-0-4447-43-10046-3669-0000705D11",
-							["classe"] = "UNKNOW",
+							["boss_fight_component"] = true,
 						}, -- [3]
 					},
 				}, -- [4]
@@ -3951,18 +4879,16 @@ _detalhes_database = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
-					["Augustin"] = true,
 					["Konac"] = true,
+					["Augustin"] = true,
 				},
 				["CombatStartedAt"] = 1601465.56,
-				["overall_added"] = true,
+				["tempo_start"] = 1601199992,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 5067,
 				["totals"] = {
 					3343.99768, -- [1]
 					479, -- [2]
@@ -3970,139 +4896,23 @@ _detalhes_database = {
 						0, -- [1]
 						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
-					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
 				},
-				["totals_grupo"] = {
-					2827, -- [1]
-					479, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "party",
-				["hasSaved"] = true,
-				["data_fim"] = "11:46:57",
-				["cleu_timeline"] = {
-				},
-				["TotalElapsedCombatTime"] = 22.6569999998901,
-				["CombatEndedAt"] = 1601434.842,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "11:46:33",
-				["end_time"] = 1601435.363,
-				["combat_id"] = 11,
-				["spells_cast_timeline"] = {
-				},
-				["tempo_start"] = 1601199992,
 				["player_last_events"] = {
-					["Augustin"] = {
-						{
-							true, -- [1]
-							"Falling", -- [2]
-							184, -- [3]
-							1601200029.657, -- [4]
-							902, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [1]
-						{
-						}, -- [2]
-						{
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 2,
-					},
 					["Konac"] = {
 						{
 							true, -- [1]
@@ -4180,755 +4990,13 @@ _detalhes_database = {
 						}, -- [32]
 						["n"] = 2,
 					},
-				},
-				["frags"] = {
-					["Deviate Python"] = 2,
-					["Lord Cobrahn"] = 1,
-				},
-				["is_boss"] = {
-					["mapid"] = 43,
-					["diff_string"] = "normal",
-					["index"] = 1,
-					["zone"] = "Wailing Caverns",
-					["id"] = 0,
-					["ej_instance_id"] = 0,
-					["diff"] = 16,
-					["try_number"] = 2,
-				},
-				["TimeData"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["combat_counter"] = 5067,
-				["start_time"] = 1601411.358,
-				["contra"] = "Lord Cobrahn",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Augustin"] = 0.00649,
-							["Konac"] = 479.003079,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Konac"] = 2827.004529,
-						}, -- [1]
-					},
-				},
-			}, -- [5]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1298,
-							["totalabsorbed"] = 0.007266,
-							["damage_from"] = {
-								["Environment (Falling)"] = true,
-								["Lady Anacondra"] = true,
-							},
-							["targets"] = {
-								["Druid of the Fang"] = 1615,
-								["Lady Anacondra"] = 2301,
-							},
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["nome"] = "Konac",
-							["classe"] = "PRIEST",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 3916.007266,
-							["spells"] = {
-								["_ActorTable"] = {
-									["Shadow Word: Pain"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 156,
-										["targets"] = {
-											["Druid of the Fang"] = 936,
-											["Lady Anacondra"] = 780,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1716,
-										["n_min"] = 156,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 1716,
-										["c_max"] = 0,
-										["id"] = "Shadow Word: Pain",
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 11,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 223,
-										["g_amt"] = 0,
-										["n_max"] = 165,
-										["targets"] = {
-											["Druid of the Fang"] = 679,
-											["Lady Anacondra"] = 973,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1429,
-										["n_min"] = 102,
-										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 1652,
-										["c_max"] = 223,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 209,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 223,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 11,
-										["a_amt"] = 0,
-										["r_amt"] = 2,
-									},
-									["Mind Blast"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 548,
-										["targets"] = {
-											["Lady Anacondra"] = 548,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 548,
-										["n_min"] = 548,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 548,
-										["c_max"] = 0,
-										["id"] = "Mind Blast",
-										["r_dmg"] = 0,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["serial"] = "Player-4465-00C4D96C",
-							["dps_started"] = false,
-							["total"] = 3916.007266,
-							["damage_taken"] = 538.007266,
-							["end_time"] = 1601199539,
-							["boss_fight_component"] = true,
-							["spec"] = 257,
-							["grupo"] = true,
-							["tipo"] = 1,
-							["colocacao"] = 1,
-							["last_dps"] = 126.249508865183,
-							["custom"] = 0,
-							["last_event"] = 1601199537,
-							["on_hold"] = false,
-							["start_time"] = 1601199508,
-							["delay"] = 0,
-							["friendlyfire"] = {
-							},
-						}, -- [1]
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.001767,
-							["damage_from"] = {
-								["Druid of the Fang"] = true,
-								["Environment (Falling)"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["total"] = 0.001767,
-							["friendlyfire"] = {
-							},
-							["classe"] = "MAGE",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.001767,
-							["damage_taken"] = 103.001767,
-							["serial"] = "Player-4465-01D5BF39",
-							["dps_started"] = false,
-							["end_time"] = 1601199539,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["nome"] = "Augustin",
-							["spec"] = 64,
-							["grupo"] = true,
-							["last_event"] = 0,
-							["colocacao"] = 2,
-							["boss_fight_component"] = true,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["last_dps"] = 6.091843066940710e-05,
-							["start_time"] = 1601199539,
-							["delay"] = 0,
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.003712,
-							["damage_from"] = {
-								["Konac"] = true,
-							},
-							["targets"] = {
-								["Konac"] = 302,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["boss_fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 302.003712,
-							["serial"] = "Creature-0-4447-43-10046-3671-0000705D11",
-							["dps_started"] = false,
-							["total"] = 302.003712,
-							["end_time"] = 1601199539,
-							["on_hold"] = false,
-							["nome"] = "Lady Anacondra",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Healing Touch"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Healing Touch",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 64,
-										["targets"] = {
-											["Konac"] = 236,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 236,
-										["n_min"] = 53,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 236,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["Lightning Bolt"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 66,
-										["targets"] = {
-											["Konac"] = 66,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 66,
-										["n_min"] = 66,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 66,
-										["c_max"] = 0,
-										["id"] = "Lightning Bolt",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["RESIST"] = 1,
-										["m_amt"] = 0,
-										["successful_casted"] = 2,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1601199526,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 2301.003712,
-							["start_time"] = 1601199522,
-							["delay"] = 1601199526,
-							["friendlyfire_total"] = 0,
-						}, -- [3]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.001105,
-							["damage_from"] = {
-								["Konac"] = true,
-							},
-							["targets"] = {
-								["Augustin"] = 69,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["boss_fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 69.001105,
-							["serial"] = "Creature-0-4447-43-10046-3840-0000705D11",
-							["dps_started"] = false,
-							["total"] = 69.001105,
-							["end_time"] = 1601199539,
-							["on_hold"] = false,
-							["nome"] = "Druid of the Fang",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Lightning Bolt"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 69,
-										["targets"] = {
-											["Konac"] = 0,
-											["Augustin"] = 69,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 69,
-										["n_min"] = 69,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 69,
-										["c_max"] = 0,
-										["id"] = "Lightning Bolt",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["RESIST"] = 4,
-										["m_amt"] = 0,
-										["successful_casted"] = 5,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-									},
-									["Healing Touch"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Healing Touch",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1601199529,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 1615.001105,
-							["start_time"] = 1601199529,
-							["delay"] = 1601199529,
-							["friendlyfire_total"] = 0,
-						}, -- [4]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 2632,
-							["totalabsorb"] = 0.001996,
-							["last_hps"] = 0,
-							["targets_overheal"] = {
-							},
-							["targets"] = {
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["totalover_without_pet"] = 0.001996,
-							["healing_from"] = {
-							},
-							["classe"] = "UNKNOW",
-							["totalover"] = 0.001996,
-							["total_without_pet"] = 0.001996,
-							["iniciar_hps"] = false,
-							["start_time"] = 1601199539,
-							["monster"] = true,
-							["end_time"] = 1601199539,
-							["healing_taken"] = 0.001996,
-							["heal_enemy_amt"] = 216,
-							["boss_fight_component"] = true,
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["total"] = 0.001996,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-								["Healing Touch"] = 216,
-							},
-							["nome"] = "Lady Anacondra",
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["totaldenied"] = 0.001996,
-							["serial"] = "Creature-0-4447-43-10046-3671-0000705D11",
-							["last_event"] = 1601199522,
-						}, -- [1]
-						{
-							["flag_original"] = 2632,
-							["totalabsorb"] = 0.006724,
-							["last_hps"] = 0,
-							["targets_overheal"] = {
-							},
-							["targets"] = {
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["totalover_without_pet"] = 0.006724,
-							["healing_from"] = {
-							},
-							["classe"] = "UNKNOW",
-							["totalover"] = 0.006724,
-							["total_without_pet"] = 0.006724,
-							["iniciar_hps"] = false,
-							["start_time"] = 1601199539,
-							["monster"] = true,
-							["end_time"] = 1601199539,
-							["healing_taken"] = 0.006724,
-							["heal_enemy_amt"] = 220,
-							["boss_fight_component"] = true,
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["total"] = 0.006724,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-								["Healing Touch"] = 220,
-							},
-							["nome"] = "Druid of the Fang",
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["totaldenied"] = 0.006724,
-							["serial"] = "Creature-0-4447-43-10046-3840-0000705D11",
-							["last_event"] = 1601199533,
-						}, -- [2]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Shadow Word: Pain"] = {
-										["activedamt"] = -1,
-										["id"] = "Shadow Word: Pain",
-										["targets"] = {
-										},
-										["actived_at"] = 1601199532,
-										["uptime"] = 9,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 70,
-							["classe"] = "PRIEST",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Power Word: Fortitude"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 31,
-										["id"] = "Power Word: Fortitude",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Divine Spirit"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 31,
-										["id"] = "Divine Spirit",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Reactive Fade"] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 2,
-										["uptime"] = 8,
-										["id"] = "Reactive Fade",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 9,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 257,
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Shadow Word: Pain"] = 1,
-								["Shoot"] = 12,
-							},
-							["boss_fight_component"] = true,
-							["last_event"] = 1601199539,
-							["tipo"] = 4,
-							["nome"] = "Konac",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-00C4D96C",
-							["debuff_uptime_targets"] = {
-							},
-						}, -- [1]
-						{
-							["flag_original"] = 1047,
-							["nome"] = "Augustin",
-							["spec"] = 64,
-							["grupo"] = true,
-							["last_event"] = 1601199539,
-							["buff_uptime"] = 62,
-							["boss_fight_component"] = true,
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["buff_uptime_targets"] = {
-							},
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Frost Armor"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 31,
-										["id"] = "Frost Armor",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Arcane Intellect"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 31,
-										["id"] = "Arcane Intellect",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-01D5BF39",
-							["classe"] = "MAGE",
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["tipo"] = 4,
-							["nome"] = "Lady Anacondra",
-							["pets"] = {
-							},
-							["boss_fight_component"] = true,
-							["spell_cast"] = {
-								["Lightning Bolt"] = 2,
-								["Healing Touch"] = 1,
-							},
-							["last_event"] = 0,
-							["monster"] = true,
-							["serial"] = "Creature-0-4447-43-10046-3671-0000705D11",
-							["classe"] = "UNKNOW",
-						}, -- [3]
-						{
-							["flag_original"] = 68168,
-							["tipo"] = 4,
-							["nome"] = "Druid of the Fang",
-							["pets"] = {
-							},
-							["boss_fight_component"] = true,
-							["spell_cast"] = {
-								["Lightning Bolt"] = 5,
-								["Healing Touch"] = 1,
-							},
-							["last_event"] = 0,
-							["monster"] = true,
-							["serial"] = "Creature-0-4447-43-10046-3840-0000705D11",
-							["classe"] = "UNKNOW",
-						}, -- [4]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Augustin"] = true,
-					["Konac"] = true,
-				},
-				["CombatStartedAt"] = 1601030.11,
-				["overall_added"] = true,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 5057,
-				["totals"] = {
-					4286.994073, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
 					["Augustin"] = {
 						{
 							true, -- [1]
 							"Falling", -- [2]
-							34, -- [3]
-							1601199544.152, -- [4]
-							853, -- [5]
+							184, -- [3]
+							1601200029.657, -- [4]
+							902, -- [5]
 							"Environment (Falling)", -- [6]
 							nil, -- [7]
 							3, -- [8]
@@ -4999,6 +5067,866 @@ _detalhes_database = {
 						}, -- [32]
 						["n"] = 2,
 					},
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "party",
+				["hasSaved"] = true,
+				["data_fim"] = "11:46:57",
+				["cleu_timeline"] = {
+				},
+				["TotalElapsedCombatTime"] = 22.6569999998901,
+				["CombatEndedAt"] = 1601434.842,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "11:46:33",
+				["end_time"] = 1601435.363,
+				["combat_id"] = 11,
+				["frags"] = {
+					["Deviate Python"] = 2,
+					["Lord Cobrahn"] = 1,
+				},
+				["overall_added"] = true,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Konac"] = 2827.004529,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Konac"] = 479.003079,
+							["Augustin"] = 0.00649,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["spells_cast_timeline"] = {
+				},
+				["is_boss"] = {
+					["mapid"] = 43,
+					["diff_string"] = "normal",
+					["index"] = 1,
+					["zone"] = "Wailing Caverns",
+					["id"] = 0,
+					["try_number"] = 2,
+					["diff"] = 16,
+					["ej_instance_id"] = 0,
+				},
+				["contra"] = "Lord Cobrahn",
+				["CombatSkillCache"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["start_time"] = 1601411.358,
+				["TimeData"] = {
+				},
+				["totals_grupo"] = {
+					2827, -- [1]
+					479, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+			}, -- [7]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1298,
+							["totalabsorbed"] = 0.007266,
+							["damage_from"] = {
+								["Environment (Falling)"] = true,
+								["Lady Anacondra"] = true,
+							},
+							["targets"] = {
+								["Druid of the Fang"] = 1615,
+								["Lady Anacondra"] = 2301,
+							},
+							["pets"] = {
+							},
+							["damage_taken"] = 538.007266,
+							["spec"] = 257,
+							["classe"] = "PRIEST",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 3916.007266,
+							["friendlyfire"] = {
+							},
+							["delay"] = 0,
+							["dps_started"] = false,
+							["end_time"] = 1601199539,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["boss_fight_component"] = true,
+							["spells"] = {
+								["_ActorTable"] = {
+									["Shadow Word: Pain"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 156,
+										["targets"] = {
+											["Druid of the Fang"] = 936,
+											["Lady Anacondra"] = 780,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1716,
+										["n_min"] = 156,
+										["g_dmg"] = 0,
+										["counter"] = 11,
+										["total"] = 1716,
+										["c_max"] = 0,
+										["id"] = "Shadow Word: Pain",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 11,
+										["a_dmg"] = 0,
+										["spellschool"] = 32,
+									},
+									["!Autoshot"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 223,
+										["g_amt"] = 0,
+										["n_max"] = 165,
+										["targets"] = {
+											["Druid of the Fang"] = 679,
+											["Lady Anacondra"] = 973,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1429,
+										["n_min"] = 102,
+										["g_dmg"] = 0,
+										["counter"] = 12,
+										["total"] = 1652,
+										["c_max"] = 223,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 209,
+										["r_amt"] = 2,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 223,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 11,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Mind Blast"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 548,
+										["targets"] = {
+											["Lady Anacondra"] = 548,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 548,
+										["n_min"] = 548,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 548,
+										["c_max"] = 0,
+										["id"] = "Mind Blast",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 32,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["total"] = 3916.007266,
+							["last_event"] = 1601199537,
+							["custom"] = 0,
+							["colocacao"] = 1,
+							["tipo"] = 1,
+							["last_dps"] = 126.249508865183,
+							["start_time"] = 1601199508,
+							["serial"] = "Player-4465-00C4D96C",
+							["nome"] = "Konac",
+						}, -- [1]
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.001767,
+							["damage_from"] = {
+								["Druid of the Fang"] = true,
+								["Environment (Falling)"] = true,
+							},
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["classe"] = "MAGE",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.001767,
+							["boss_fight_component"] = true,
+							["delay"] = 0,
+							["dps_started"] = false,
+							["end_time"] = 1601199539,
+							["friendlyfire"] = {
+							},
+							["total"] = 0.001767,
+							["nome"] = "Augustin",
+							["spec"] = 64,
+							["grupo"] = true,
+							["tipo"] = 1,
+							["custom"] = 0,
+							["on_hold"] = false,
+							["colocacao"] = 2,
+							["last_event"] = 0,
+							["damage_taken"] = 103.001767,
+							["start_time"] = 1601199539,
+							["serial"] = "Player-4465-01D5BF39",
+							["last_dps"] = 6.091843066940710e-05,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.003712,
+							["damage_from"] = {
+								["Konac"] = true,
+							},
+							["targets"] = {
+								["Konac"] = 302,
+							},
+							["pets"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["nome"] = "Lady Anacondra",
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 302.003712,
+							["delay"] = 1601199526,
+							["monster"] = true,
+							["total"] = 302.003712,
+							["end_time"] = 1601199539,
+							["damage_taken"] = 2301.003712,
+							["boss_fight_component"] = true,
+							["spells"] = {
+								["_ActorTable"] = {
+									["Healing Touch"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = "Healing Touch",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 64,
+										["targets"] = {
+											["Konac"] = 236,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 236,
+										["n_min"] = 53,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 236,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Lightning Bolt"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 66,
+										["targets"] = {
+											["Konac"] = 66,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 66,
+										["n_min"] = 66,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 66,
+										["c_max"] = 0,
+										["id"] = "Lightning Bolt",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+										["m_crit"] = 0,
+										["n_amt"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 2,
+										["b_dmg"] = 0,
+										["RESIST"] = 1,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["friendlyfire"] = {
+							},
+							["custom"] = 0,
+							["last_event"] = 1601199526,
+							["on_hold"] = false,
+							["start_time"] = 1601199522,
+							["serial"] = "Creature-0-4447-43-10046-3671-0000705D11",
+							["dps_started"] = false,
+						}, -- [3]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.001105,
+							["damage_from"] = {
+								["Konac"] = true,
+							},
+							["targets"] = {
+								["Augustin"] = 69,
+							},
+							["pets"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["nome"] = "Druid of the Fang",
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 69.001105,
+							["delay"] = 1601199529,
+							["monster"] = true,
+							["total"] = 69.001105,
+							["end_time"] = 1601199539,
+							["damage_taken"] = 1615.001105,
+							["boss_fight_component"] = true,
+							["spells"] = {
+								["_ActorTable"] = {
+									["Lightning Bolt"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 69,
+										["targets"] = {
+											["Augustin"] = 69,
+											["Konac"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 69,
+										["n_min"] = 69,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 69,
+										["c_max"] = 0,
+										["id"] = "Lightning Bolt",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+										["m_crit"] = 0,
+										["n_amt"] = 1,
+										["m_amt"] = 0,
+										["successful_casted"] = 5,
+										["b_dmg"] = 0,
+										["RESIST"] = 4,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+									["Healing Touch"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = "Healing Touch",
+										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["tipo"] = 1,
+							["last_dps"] = 0,
+							["friendlyfire"] = {
+							},
+							["custom"] = 0,
+							["last_event"] = 1601199529,
+							["on_hold"] = false,
+							["start_time"] = 1601199529,
+							["serial"] = "Creature-0-4447-43-10046-3840-0000705D11",
+							["dps_started"] = false,
+						}, -- [4]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 2632,
+							["totalabsorb"] = 0.001996,
+							["last_hps"] = 0,
+							["healing_from"] = {
+							},
+							["targets"] = {
+							},
+							["serial"] = "Creature-0-4447-43-10046-3671-0000705D11",
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["targets_overheal"] = {
+							},
+							["classe"] = "UNKNOW",
+							["totalover"] = 0.001996,
+							["total_without_pet"] = 0.001996,
+							["totalover_without_pet"] = 0.001996,
+							["totaldenied"] = 0.001996,
+							["monster"] = true,
+							["total"] = 0.001996,
+							["healing_taken"] = 0.001996,
+							["targets_absorbs"] = {
+							},
+							["nome"] = "Lady Anacondra",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 3,
+							},
+							["end_time"] = 1601199539,
+							["heal_enemy_amt"] = 216,
+							["heal_enemy"] = {
+								["Healing Touch"] = 216,
+							},
+							["last_event"] = 1601199522,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["start_time"] = 1601199539,
+							["delay"] = 0,
+							["boss_fight_component"] = true,
+						}, -- [1]
+						{
+							["flag_original"] = 2632,
+							["totalabsorb"] = 0.006724,
+							["last_hps"] = 0,
+							["healing_from"] = {
+							},
+							["targets"] = {
+							},
+							["serial"] = "Creature-0-4447-43-10046-3840-0000705D11",
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["targets_overheal"] = {
+							},
+							["classe"] = "UNKNOW",
+							["totalover"] = 0.006724,
+							["total_without_pet"] = 0.006724,
+							["totalover_without_pet"] = 0.006724,
+							["totaldenied"] = 0.006724,
+							["monster"] = true,
+							["total"] = 0.006724,
+							["healing_taken"] = 0.006724,
+							["targets_absorbs"] = {
+							},
+							["nome"] = "Druid of the Fang",
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 3,
+							},
+							["end_time"] = 1601199539,
+							["heal_enemy_amt"] = 220,
+							["heal_enemy"] = {
+								["Healing Touch"] = 220,
+							},
+							["last_event"] = 1601199533,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["on_hold"] = false,
+							["start_time"] = 1601199539,
+							["delay"] = 0,
+							["boss_fight_component"] = true,
+						}, -- [2]
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Shadow Word: Pain"] = {
+										["activedamt"] = -1,
+										["id"] = "Shadow Word: Pain",
+										["targets"] = {
+										},
+										["actived_at"] = 1601199532,
+										["uptime"] = 9,
+										["counter"] = 0,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["buff_uptime"] = 70,
+							["classe"] = "PRIEST",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Power Word: Fortitude"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Power Word: Fortitude",
+										["uptime"] = 31,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									["Divine Spirit"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Divine Spirit",
+										["uptime"] = 31,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									["Reactive Fade"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 2,
+										["refreshamt"] = 0,
+										["id"] = "Reactive Fade",
+										["uptime"] = 8,
+										["targets"] = {
+										},
+										["appliedamt"] = 2,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 9,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 257,
+							["grupo"] = true,
+							["spell_cast"] = {
+								["Shadow Word: Pain"] = 1,
+								["Shoot"] = 12,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 1601199539,
+							["pets"] = {
+							},
+							["nome"] = "Konac",
+							["serial"] = "Player-4465-00C4D96C",
+							["boss_fight_component"] = true,
+						}, -- [1]
+						{
+							["flag_original"] = 1047,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 64,
+							["grupo"] = true,
+							["boss_fight_component"] = true,
+							["pets"] = {
+							},
+							["nome"] = "Augustin",
+							["buff_uptime"] = 62,
+							["last_event"] = 1601199539,
+							["classe"] = "MAGE",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Frost Armor"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Frost Armor",
+										["uptime"] = 31,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									["Arcane Intellect"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Arcane Intellect",
+										["uptime"] = 31,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["serial"] = "Player-4465-01D5BF39",
+							["tipo"] = 4,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["last_event"] = 0,
+							["nome"] = "Lady Anacondra",
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["spell_cast"] = {
+								["Lightning Bolt"] = 2,
+								["Healing Touch"] = 1,
+							},
+							["tipo"] = 4,
+							["monster"] = true,
+							["serial"] = "Creature-0-4447-43-10046-3671-0000705D11",
+							["boss_fight_component"] = true,
+						}, -- [3]
+						{
+							["flag_original"] = 68168,
+							["last_event"] = 0,
+							["nome"] = "Druid of the Fang",
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["spell_cast"] = {
+								["Lightning Bolt"] = 5,
+								["Healing Touch"] = 1,
+							},
+							["tipo"] = 4,
+							["monster"] = true,
+							["serial"] = "Creature-0-4447-43-10046-3840-0000705D11",
+							["boss_fight_component"] = true,
+						}, -- [4]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Konac"] = true,
+					["Augustin"] = true,
+				},
+				["CombatStartedAt"] = 1601030.11,
+				["tempo_start"] = 1601199508,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["totals"] = {
+					4286.994073, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["totals_grupo"] = {
+					3916, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "party",
+				["hasSaved"] = true,
+				["data_fim"] = "11:39:00",
+				["cleu_timeline"] = {
+				},
+				["TotalElapsedCombatTime"] = 27.5220000001136,
+				["CombatEndedAt"] = 1600958.563,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "11:38:29",
+				["end_time"] = 1600958.809,
+				["combat_id"] = 2,
+				["overall_added"] = true,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Konac"] = 3916.007266,
+							["Augustin"] = 0.001767,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["contra"] = "Lady Anacondra",
+				["frags"] = {
+					["Druid of the Fang"] = 1,
+					["Lady Anacondra"] = 1,
+				},
+				["is_boss"] = {
+					["mapid"] = 43,
+					["diff_string"] = "normal",
+					["index"] = 1,
+					["zone"] = "Wailing Caverns",
+					["id"] = 0,
+					["try_number"] = 1,
+					["diff"] = 16,
+					["ej_instance_id"] = 0,
+				},
+				["combat_counter"] = 5057,
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
 					["Konac"] = {
 						{
 							true, -- [1]
@@ -5076,90 +6004,90 @@ _detalhes_database = {
 						}, -- [32]
 						["n"] = 2,
 					},
+					["Augustin"] = {
+						{
+							true, -- [1]
+							"Falling", -- [2]
+							34, -- [3]
+							1601199544.152, -- [4]
+							853, -- [5]
+							"Environment (Falling)", -- [6]
+							nil, -- [7]
+							3, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [1]
+						{
+						}, -- [2]
+						{
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 2,
+					},
 				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "party",
-				["hasSaved"] = true,
-				["data_fim"] = "11:39:00",
-				["cleu_timeline"] = {
-				},
-				["TotalElapsedCombatTime"] = 27.5220000001136,
-				["CombatEndedAt"] = 1600958.563,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "11:38:29",
-				["end_time"] = 1600958.809,
-				["combat_id"] = 2,
-				["tempo_start"] = 1601199508,
-				["frags"] = {
-					["Druid of the Fang"] = 1,
-					["Lady Anacondra"] = 1,
-				},
+				["start_time"] = 1600927.791,
 				["TimeData"] = {
 				},
 				["spells_cast_timeline"] = {
 				},
-				["is_boss"] = {
-					["mapid"] = 43,
-					["diff_string"] = "normal",
-					["index"] = 1,
-					["zone"] = "Wailing Caverns",
-					["id"] = 0,
-					["ej_instance_id"] = 0,
-					["diff"] = 16,
-					["try_number"] = 1,
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["totals_grupo"] = {
-					3916, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["start_time"] = 1600927.791,
-				["contra"] = "Lady Anacondra",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Augustin"] = 0.001767,
-							["Konac"] = 3916.007266,
-						}, -- [1]
-					},
-				},
-			}, -- [6]
+			}, -- [8]
 		},
 	},
 	["last_version"] = "v1.13.5.212",
@@ -5191,10 +6119,10 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = 631.647338867188,
-					["x"] = -1160.94877624512,
+					["y"] = 609.827941894531,
+					["x"] = -1122.16083526611,
 					["w"] = 234.897445678711,
-					["h"] = 136.640991210938,
+					["h"] = 136.641036987305,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -5225,10 +6153,10 @@ _detalhes_database = {
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = 631.647338867188,
-					["x"] = -929.012847900391,
+					["y"] = 609.827941894531,
+					["x"] = -890.224884033203,
 					["w"] = 228.974395751953,
-					["h"] = 136.640884399414,
+					["h"] = 136.640869140625,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -5259,10 +6187,10 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -579.153717041016,
+					["y"] = -557.335556030273,
 					["x"] = 420.47412109375,
-					["w"] = 180.000991821289,
-					["h"] = 178.307662963867,
+					["w"] = 180.001007080078,
+					["h"] = 178.307647705078,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -5287,7 +6215,7 @@ _detalhes_database = {
 	},
 	["last_instance_time"] = 1601199382,
 	["active_profile"] = "Default",
-	["last_day"] = "27",
+	["last_day"] = "28",
 	["benchmark_db"] = {
 		["frame"] = {
 		},
@@ -5308,8 +6236,8 @@ _detalhes_database = {
 			["dividebyhundred"] = true,
 			["showamount"] = false,
 			["useplayercolor"] = false,
-			["alwaysshowme"] = true,
 			["useclasscolors"] = false,
+			["alwaysshowme"] = true,
 		},
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["enabled"] = true,
@@ -5322,15 +6250,20 @@ _detalhes_database = {
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = true,
 			["opened"] = 0,
-			["author"] = "Details! Team",
-			["show_icon"] = 5,
-			["hide_on_combat"] = false,
 			["max_emote_segments"] = 3,
-		},
-		["DETAILS_PLUGIN_DPS_TUNING"] = {
-			["enabled"] = true,
 			["author"] = "Details! Team",
-			["SpellBarsShowType"] = 1,
+			["hide_on_combat"] = false,
+			["show_icon"] = 5,
+		},
+		["DETAILS_PLUGIN_YANP"] = {
+			["enabled"] = true,
+			["rightclick_closed"] = false,
+			["auto_open"] = true,
+			["hide_on_combat"] = true,
+			["author"] = "Details! Team",
+			["deaths_table"] = {
+			},
+			["shown_time"] = 30,
 		},
 		["DETAILS_PLUGIN_TIME_ATTACK"] = {
 			["enabled"] = true,
@@ -5343,902 +6276,3876 @@ _detalhes_database = {
 			},
 			["time"] = 40,
 			["history_lastindex"] = 0,
-			["author"] = "Details! Team",
+			["realm_lastamt"] = 0,
 			["realm_history"] = {
 			},
-			["realm_lastamt"] = 0,
-		},
-		["DETAILS_PLUGIN_YANP"] = {
-			["enabled"] = true,
-			["rightclick_closed"] = false,
-			["auto_open"] = true,
 			["author"] = "Details! Team",
-			["hide_on_combat"] = true,
-			["deaths_table"] = {
-			},
-			["shown_time"] = 30,
 		},
+		["DETAILS_PLUGIN_DPS_TUNING"] = {
+			["enabled"] = true,
+			["author"] = "Details! Team",
+			["SpellBarsShowType"] = 1,
+		},
+	},
+	["combat_counter"] = 5113,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
 	["announce_prepots"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
 		["reverse"] = false,
 	},
-	["combat_counter"] = 5106,
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
 	["last_realversion"] = 142,
+	["character_data"] = {
+		["logons"] = 1523,
+	},
+	["combat_id"] = 46,
+	["savedStyles"] = {
+		{
+			["show_statusbar"] = false,
+			["desaturated_menu2"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0, -- [4]
+			},
+			["menu_anchor"] = {
+				-60, -- [1]
+				0, -- [2]
+				["side"] = 1,
+			},
+			["menu2_icons"] = {
+				true, -- [1]
+				true, -- [2]
+				true, -- [3]
+			},
+			["bg_r"] = 0,
+			["skin"] = "Minimalistic",
+			["name"] = "final",
+			["following"] = {
+				["enabled"] = false,
+				["bar_color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+				["text_color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+			},
+			["color_buttons"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["switch_healer"] = false,
+			["bars_sort_direction"] = 1,
+			["switch_healer_in_combat"] = false,
+			["menu_icons_size"] = 1,
+			["instance_button_anchor"] = {
+				-27, -- [1]
+				1, -- [2]
+			},
+			["menu2_icons_size"] = 1.20000004768372,
+			["tooltip"] = {
+				["n_abilities"] = 3,
+				["n_enemies"] = 3,
+			},
+			["total_bar"] = {
+				["enabled"] = false,
+				["only_in_group"] = true,
+				["icon"] = "Interface\\ICONS\\INV_Sigil_Thorim",
+				["color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+			},
+			["backdrop_texture"] = "None",
+			["switch_all_roles_in_combat"] = {
+				2, -- [1]
+				1, -- [2]
+				8, -- [3]
+			},
+			["switch_tank_in_combat"] = false,
+			["bg_alpha"] = 0.0199999995529652,
+			["row_info"] = {
+				["textR_outline"] = false,
+				["textL_outline"] = false,
+				["icon_file"] = "Interface\\AddOns\\Details\\images\\classes_small_alpha",
+				["percent_type"] = 1,
+				["start_after_icon"] = false,
+				["texture_background_file"] = "Interface\\TargetingFrame\\UI-StatusBar",
+				["textR_enable_custom_text"] = true,
+				["textR_custom_text"] = "{data1} ({data2}) ",
+				["fixed_texture_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
+				["textL_show_number"] = false,
+				["space"] = {
+					["right"] = 0,
+					["left"] = 0,
+					["between"] = 0,
+				},
+				["texture"] = "BantoBar",
+				["texture_background_class_color"] = true,
+				["fixed_texture_background_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					0.680000007152557, -- [4]
+				},
+				["font_face_file"] = "Fonts\\ARIALN.TTF",
+				["fixed_text_color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
+				["textL_custom_text"] = "{data3}{data2}",
+				["texture_background"] = "Blizzard",
+				["alpha"] = 0,
+				["textL_class_colors"] = false,
+				["backdrop"] = {
+					["enabled"] = false,
+					["texture"] = "Details BarBorder 2",
+					["color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["size"] = 12,
+				},
+				["no_icon"] = false,
+				["font_size"] = 11,
+				["textR_class_colors"] = false,
+				["font_face"] = "Arial Narrow",
+				["texture_class_colors"] = true,
+				["height"] = 20,
+				["texture_file"] = "Interface\\AddOns\\Details\\images\\BantoBar",
+				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
+				["textL_enable_custom_text"] = true,
+			},
+			["closebutton_config"] = {
+				["pushed_texture"] = "Interface\\Buttons\\UI-Panel-MinimizeButton-Down",
+				["highlight_texture"] = "Interface\\Buttons\\UI-Panel-MinimizeButton-Highlight",
+				["anchor"] = {
+					0, -- [1]
+					0, -- [2]
+				},
+				["normal_texture"] = "Interface\\Buttons\\UI-Panel-MinimizeButton-Up",
+				["alpha"] = 0.8,
+				["size"] = {
+					19, -- [1]
+					19, -- [2]
+				},
+			},
+			["menu_alpha"] = {
+				["enabled"] = false,
+				["onleave"] = 1,
+				["ignorebars"] = false,
+				["iconstoo"] = true,
+				["onenter"] = 1,
+			},
+			["plugins_grow_direction"] = 1,
+			["switch_damager"] = false,
+			["auto_hide_menu"] = {
+				["left"] = true,
+				["right"] = true,
+			},
+			["strata"] = "LOW",
+			["menu_anchor_down"] = {
+				-22, -- [1]
+				0, -- [2]
+			},
+			["resetbutton_config"] = {
+				["highlight_vertexcolor"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
+				["anchor"] = {
+					2, -- [1]
+					0, -- [2]
+				},
+				["highlight_texture"] = "Interface\\Addons\\Details\\Images\\reset_button2",
+				["normal_texcoord"] = {
+					0, -- [1]
+					1, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
+				["normal_vertexcolor"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
+				["highlight_texcoord"] = {
+					0, -- [1]
+					1, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
+				["normal_texture"] = "Interface\\Addons\\Details\\Images\\reset_button2",
+				["size"] = {
+					13, -- [1]
+					13, -- [2]
+				},
+			},
+			["switch_tank"] = false,
+			["hide_in_combat_alpha"] = 0,
+			["switch_all_roles_after_wipe"] = false,
+			["menu_icons"] = {
+				true, -- [1]
+				true, -- [2]
+				true, -- [3]
+				true, -- [4]
+			},
+			["menu2_anchor_down"] = {
+				32, -- [1]
+				0, -- [2]
+			},
+			["statusbar_info"] = {
+				["alpha"] = 0,
+				["overlay"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+			},
+			["row_show_animation"] = {
+				["anim"] = "Fade",
+				["options"] = {
+				},
+			},
+			["bars_grow_direction"] = 1,
+			["switch_damager_in_combat"] = false,
+			["toolbar_side"] = 2,
+			["hide_icon"] = true,
+			["grab_on_top"] = false,
+			["micro_displays_side"] = 2,
+			["menu2_anchor"] = {
+				32, -- [1]
+				3, -- [2]
+			},
+			["auto_current"] = true,
+			["instancebutton_config"] = {
+				["textcolor"] = {
+					0.8, -- [1]
+					0.6, -- [2]
+					0, -- [3]
+					0.8, -- [4]
+				},
+				["highlight_texture"] = "Interface\\Buttons\\UI-Panel-MinimizeButton-Highlight",
+				["textshadow"] = false,
+				["anchor"] = {
+					5, -- [1]
+					0, -- [2]
+				},
+				["textfont"] = "Friz Quadrata TT",
+				["textsize"] = 15,
+				["size"] = {
+					20, -- [1]
+					16, -- [2]
+				},
+			},
+			["bg_g"] = 0,
+			["window_scale"] = 1,
+			["hide_in_combat"] = false,
+			["show_sidebars"] = false,
+			["desaturated_menu"] = false,
+			["hide_in_combat_type"] = 1,
+			["wallpaper"] = {
+				["enabled"] = false,
+				["texcoord"] = {
+					0, -- [1]
+					1, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
+				["overlay"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
+				["anchor"] = "all",
+				["height"] = 0,
+				["alpha"] = 0.5,
+				["width"] = 0,
+			},
+			["stretch_button_side"] = 2,
+			["hide_out_of_combat"] = false,
+			["version"] = 3,
+			["attribute_text"] = {
+				["enabled"] = false,
+				["shadow"] = false,
+				["side"] = 1,
+				["text_size"] = 11,
+				["anchor"] = {
+					-17, -- [1]
+					10, -- [2]
+				},
+				["text_color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
+				["text_face"] = "Arial Narrow",
+			},
+			["bg_b"] = 0,
+		}, -- [1]
+	},
+	["force_font_outline"] = "",
+	["on_death_menu"] = true,
+	["announce_deaths"] = {
+		["enabled"] = false,
+		["last_hits"] = 1,
+		["only_first"] = 5,
+		["where"] = 1,
+	},
+	["tabela_overall"] = {
+		{
+			["tipo"] = 2,
+			["_ActorTable"] = {
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.016763,
+					["damage_from"] = {
+						["Konac"] = true,
+					},
+					["targets"] = {
+						["Konac"] = 792,
+						["Augustin"] = 323,
+					},
+					["pets"] = {
+					},
+					["fight_component"] = true,
+					["on_hold"] = false,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 1115.016763,
+					["delay"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1601199490,
+					["friendlyfire_total"] = 0,
+					["last_dps"] = 0,
+					["nome"] = "Deviate Guardian",
+					["spells"] = {
+						["_ActorTable"] = {
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 45,
+								["targets"] = {
+									["Konac"] = 792,
+									["Augustin"] = 323,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 1115,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 39,
+								["total"] = 1115,
+								["c_max"] = 0,
+								["r_amt"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["b_dmg"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 29,
+								["MISS"] = 8,
+								["DODGE"] = 2,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["tipo"] = 1,
+					["friendlyfire"] = {
+					},
+					["total"] = 1115.016763,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["damage_taken"] = 5407.016763,
+					["start_time"] = 1601199441,
+					["serial"] = "Creature-0-4447-43-10046-3637-0003705D12",
+					["monster"] = true,
+				}, -- [1]
+				{
+					["flag_original"] = 1297,
+					["totalabsorbed"] = 0.15562,
+					["damage_from"] = {
+						["Deviate Dreadfang"] = true,
+						["Deviate Shambler"] = true,
+						["Deviate Python"] = true,
+						["Deviate Guardian"] = true,
+						["Druid of the Fang"] = true,
+						["Deviate Venomwing"] = true,
+						["Evolving Ectoplasm"] = true,
+						["Deviate Crocolisk"] = true,
+						["Deviate Viper"] = true,
+						["Lord Pythas"] = true,
+						["Deviate Adder"] = true,
+						["Deviate Lasher"] = true,
+					},
+					["targets"] = {
+						["Druid of the Fang"] = 208,
+						["Gray Bear"] = 0,
+						["Kresh"] = 176,
+					},
+					["delay"] = 0,
+					["pets"] = {
+					},
+					["nome"] = "Augustin",
+					["total"] = 384.15562,
+					["classe"] = "MAGE",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 384.15562,
+					["on_hold"] = false,
+					["dps_started"] = false,
+					["end_time"] = 1601199490,
+					["last_dps"] = 0,
+					["tipo"] = 1,
+					["boss_fight_component"] = true,
+					["spec"] = 64,
+					["grupo"] = true,
+					["friendlyfire"] = {
+					},
+					["spells"] = {
+						["_ActorTable"] = {
+							["Chilled"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Deviate Shambler"] = 0,
+									["Evolving Ectoplasm"] = 0,
+									["Deviate Lasher"] = 0,
+									["Deviate Guardian"] = 0,
+									["DieBUSTA"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 12,
+								["total"] = 0,
+								["c_max"] = 0,
+								["r_amt"] = 0,
+								["id"] = "Chilled",
+								["r_dmg"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["RESIST"] = 3,
+								["a_dmg"] = 0,
+								["IMMUNE"] = 9,
+							},
+							["Scorch"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 66,
+								["targets"] = {
+									["Kresh"] = 176,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 176,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 3,
+								["total"] = 176,
+								["c_max"] = 0,
+								["id"] = "Scorch",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 3,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Fireball"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 103,
+								["targets"] = {
+									["Druid of the Fang"] = 208,
+									["Gray Bear"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 208,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 3,
+								["total"] = 208,
+								["c_max"] = 0,
+								["id"] = "Fireball",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 3,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["!Autoshot"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Gray Bear"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "!Autoshot",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+							["Fire Blast"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Gray Bear"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Fire Blast",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["custom"] = 0,
+					["last_event"] = 0,
+					["damage_taken"] = 7910.15562,
+					["start_time"] = 1601199475,
+					["serial"] = "Player-4465-01D5BF39",
+					["friendlyfire_total"] = 0,
+				}, -- [2]
+				{
+					["flag_original"] = 1298,
+					["totalabsorbed"] = 0.204869,
+					["damage_from"] = {
+						["Deviate Dreadfang"] = true,
+						["Deviate Shambler"] = true,
+						["Lord Cobrahn"] = true,
+						["Deviate Crocolisk"] = true,
+						["Deviate Python"] = true,
+						["Deviate Guardian"] = true,
+						["Lady Anacondra"] = true,
+						["Deviate Adder"] = true,
+						["Druid of the Fang"] = true,
+						["Deviate Venomwing"] = true,
+						["Evolving Ectoplasm"] = true,
+						["Kresh"] = true,
+						["Deviate Viper"] = true,
+						["Lord Pythas"] = true,
+						["Deviate Lasher"] = true,
+						["Verdan the Everliving"] = true,
+					},
+					["targets"] = {
+						["Lord Serpentis"] = 2918,
+						["Deviate Shambler"] = 20824,
+						["Deviate Guardian"] = 5407,
+						["Deviate Adder"] = 9846,
+						["Deviate Viper"] = 5429,
+						["Lady Anacondra"] = 2301,
+						["Deviate Dreadfang"] = 4902,
+						["Verdan the Everliving"] = 4258,
+						["Deviate Lasher"] = 6020,
+						["Druid of the Fang"] = 34597,
+						["Deviate Venomwing"] = 11069,
+						["Evolving Ectoplasm"] = 6621,
+						["Deviate Crocolisk"] = 2184,
+						["Lord Pythas"] = 2610,
+						["Lord Cobrahn"] = 2292,
+						["Deviate Python"] = 2746,
+						["Kresh"] = 1412,
+					},
+					["delay"] = 0,
+					["pets"] = {
+					},
+					["nome"] = "Konac",
+					["end_time"] = 1601199490,
+					["friendlyfire_total"] = 0,
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 125436.204869,
+					["on_hold"] = false,
+					["dps_started"] = false,
+					["total"] = 125436.204869,
+					["damage_taken"] = 15495.204869,
+					["tipo"] = 1,
+					["boss_fight_component"] = true,
+					["spells"] = {
+						["_ActorTable"] = {
+							["Mind Blast"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 568,
+								["targets"] = {
+									["Druid of the Fang"] = 1674,
+									["Deviate Venomwing"] = 543,
+									["Deviate Adder"] = 559,
+									["Lady Anacondra"] = 548,
+									["Verdan the Everliving"] = 552,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 3876,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 7,
+								["total"] = 3876,
+								["c_max"] = 0,
+								["id"] = "Mind Blast",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 7,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Holy Fire"] = {
+								["c_amt"] = 2,
+								["b_amt"] = 0,
+								["c_dmg"] = 1435,
+								["g_amt"] = 0,
+								["n_max"] = 492,
+								["targets"] = {
+									["Deviate Dreadfang"] = 568,
+									["Deviate Venomwing"] = 1358,
+									["Lord Serpentis"] = 647,
+									["Druid of the Fang"] = 1812,
+									["Verdan the Everliving"] = 657,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 3607,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 35,
+								["total"] = 5042,
+								["c_max"] = 752,
+								["id"] = "Holy Fire",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 33,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["!Melee"] = {
+								["c_amt"] = 1,
+								["b_amt"] = 0,
+								["c_dmg"] = 298,
+								["g_amt"] = 0,
+								["n_max"] = 181,
+								["targets"] = {
+									["Deviate Adder"] = 181,
+									["Deviate Shambler"] = 298,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 181,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 2,
+								["total"] = 479,
+								["c_max"] = 298,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 1,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Smite"] = {
+								["c_amt"] = 7,
+								["b_amt"] = 0,
+								["c_dmg"] = 4775,
+								["g_amt"] = 0,
+								["n_max"] = 488,
+								["targets"] = {
+									["Druid of the Fang"] = 5779,
+									["Deviate Shambler"] = 5072,
+									["Evolving Ectoplasm"] = 2083,
+									["Deviate Viper"] = 458,
+									["Deviate Venomwing"] = 947,
+									["Deviate Dreadfang"] = 2051,
+									["Verdan the Everliving"] = 2279,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 13894,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 37,
+								["total"] = 18669,
+								["c_max"] = 707,
+								["id"] = "Smite",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 30,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Holy Nova"] = {
+								["c_amt"] = 11,
+								["b_amt"] = 0,
+								["c_dmg"] = 3327,
+								["g_amt"] = 0,
+								["n_max"] = 218,
+								["targets"] = {
+									["Druid of the Fang"] = 1121,
+									["Deviate Shambler"] = 1336,
+									["Evolving Ectoplasm"] = 498,
+									["Deviate Adder"] = 1211,
+									["Deviate Python"] = 2590,
+									["Lord Cobrahn"] = 193,
+									["Deviate Lasher"] = 6020,
+									["Deviate Venomwing"] = 192,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 9834,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 59,
+								["total"] = 13161,
+								["c_max"] = 326,
+								["id"] = "Holy Nova",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 48,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["!Autoshot"] = {
+								["c_amt"] = 14,
+								["b_amt"] = 0,
+								["c_dmg"] = 2811,
+								["g_amt"] = 0,
+								["n_max"] = 170,
+								["targets"] = {
+									["Deviate Dreadfang"] = 435,
+									["Deviate Shambler"] = 3666,
+									["Deviate Guardian"] = 2443,
+									["Kresh"] = 788,
+									["Lord Pythas"] = 1674,
+									["Druid of the Fang"] = 7553,
+									["Deviate Venomwing"] = 3528,
+									["Evolving Ectoplasm"] = 1076,
+									["Deviate Adder"] = 2117,
+									["Deviate Viper"] = 915,
+									["Lord Cobrahn"] = 1319,
+									["Lady Anacondra"] = 973,
+									["Lord Serpentis"] = 1501,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 25177,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 217,
+								["total"] = 27988,
+								["c_max"] = 247,
+								["r_amt"] = 21,
+								["id"] = "!Autoshot",
+								["r_dmg"] = 2072,
+								["b_dmg"] = 0,
+								["n_amt"] = 198,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["RESIST"] = 1,
+								["a_dmg"] = 0,
+								["IMMUNE"] = 4,
+							},
+							["Shadow Word: Pain"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 157,
+								["targets"] = {
+									["Deviate Dreadfang"] = 1848,
+									["Deviate Shambler"] = 10452,
+									["Lord Cobrahn"] = 780,
+									["Deviate Crocolisk"] = 2184,
+									["Deviate Python"] = 156,
+									["Deviate Guardian"] = 2964,
+									["Lady Anacondra"] = 780,
+									["Deviate Adder"] = 5778,
+									["Druid of the Fang"] = 16658,
+									["Deviate Venomwing"] = 4501,
+									["Evolving Ectoplasm"] = 2964,
+									["Kresh"] = 624,
+									["Deviate Viper"] = 4056,
+									["Lord Pythas"] = 936,
+									["Lord Serpentis"] = 770,
+									["Verdan the Everliving"] = 770,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 56221,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 363,
+								["total"] = 56221,
+								["c_max"] = 0,
+								["r_amt"] = 0,
+								["id"] = "Shadow Word: Pain",
+								["r_dmg"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 361,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["RESIST"] = 1,
+								["a_dmg"] = 0,
+								["IMMUNE"] = 1,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["grupo"] = true,
+					["friendlyfire"] = {
+					},
+					["spec"] = 257,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["last_dps"] = 0,
+					["start_time"] = 1601198584,
+					["serial"] = "Player-4465-00C4D96C",
+					["classe"] = "PRIEST",
+				}, -- [3]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.029179,
+					["damage_from"] = {
+						["Konac"] = true,
+					},
+					["targets"] = {
+						["Konac"] = 1398,
+						["Augustin"] = 433,
+					},
+					["delay"] = 0,
+					["pets"] = {
+					},
+					["nome"] = "Evolving Ectoplasm",
+					["friendlyfire_total"] = 0,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 1831.029179,
+					["monster"] = true,
+					["dps_started"] = false,
+					["total"] = 1831.029179,
+					["friendlyfire"] = {
+					},
+					["tipo"] = 1,
+					["boss_fight_component"] = true,
+					["spells"] = {
+						["_ActorTable"] = {
+							["!Melee"] = {
+								["c_amt"] = 1,
+								["b_amt"] = 0,
+								["c_dmg"] = 72,
+								["g_amt"] = 0,
+								["n_max"] = 46,
+								["targets"] = {
+									["Konac"] = 1398,
+									["Augustin"] = 433,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 1759,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 57,
+								["total"] = 1831,
+								["c_max"] = 72,
+								["r_amt"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["b_dmg"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 49,
+								["DODGE"] = 3,
+								["MISS"] = 4,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["last_dps"] = 0,
+					["end_time"] = 1601199490,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["damage_taken"] = 6621.029179,
+					["start_time"] = 1601199361,
+					["serial"] = "Creature-0-4447-43-10046-3640-0004705D11",
+					["fight_component"] = true,
+				}, -- [4]
+				{
+					["flag_original"] = 2632,
+					["totalabsorbed"] = 0.006089,
+					["damage_from"] = {
+						["Konac"] = true,
+					},
+					["targets"] = {
+						["Konac"] = 302,
+					},
+					["pets"] = {
+					},
+					["monster"] = true,
+					["nome"] = "Lady Anacondra",
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 302.006089,
+					["delay"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1601199540,
+					["last_dps"] = 0,
+					["damage_taken"] = 2301.006089,
+					["boss_fight_component"] = true,
+					["spells"] = {
+						["_ActorTable"] = {
+							["Healing Touch"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Healing Touch",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 1,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 64,
+								["targets"] = {
+									["Konac"] = 236,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 236,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 4,
+								["total"] = 236,
+								["c_max"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 4,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Lightning Bolt"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 66,
+								["targets"] = {
+									["Konac"] = 66,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 66,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 2,
+								["total"] = 66,
+								["c_max"] = 0,
+								["id"] = "Lightning Bolt",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+								["m_crit"] = 0,
+								["n_amt"] = 1,
+								["m_amt"] = 0,
+								["successful_casted"] = 2,
+								["b_dmg"] = 0,
+								["RESIST"] = 1,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["tipo"] = 1,
+					["friendlyfire_total"] = 0,
+					["total"] = 302.006089,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1601199520,
+					["serial"] = "Creature-0-4447-43-10046-3671-0000705D11",
+					["friendlyfire"] = {
+					},
+				}, -- [5]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 135.09376,
+					["damage_from"] = {
+						["Konac"] = true,
+						["Augustin"] = true,
+					},
+					["targets"] = {
+						["Augustin"] = 2246,
+						["Konac"] = 1300,
+					},
+					["delay"] = 0,
+					["pets"] = {
+					},
+					["nome"] = "Druid of the Fang",
+					["friendlyfire_total"] = 0,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 3546.09376,
+					["monster"] = true,
+					["dps_started"] = false,
+					["end_time"] = 1601199540,
+					["on_hold"] = false,
+					["tipo"] = 1,
+					["boss_fight_component"] = true,
+					["spells"] = {
+						["_ActorTable"] = {
+							["Healing Touch"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Healing Touch",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 12,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 58,
+								["targets"] = {
+									["Konac"] = 520,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 520,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 23,
+								["total"] = 520,
+								["c_max"] = 0,
+								["r_amt"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["b_dmg"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 14,
+								["MISS"] = 7,
+								["DODGE"] = 2,
+							},
+							["Druid's Slumber"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Augustin"] = 0,
+									["Konac"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 2,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Druid's Slumber",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+								["m_crit"] = 0,
+								["n_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 4,
+								["b_dmg"] = 0,
+								["RESIST"] = 2,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Lightning Bolt"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 88,
+								["targets"] = {
+									["Konac"] = 780,
+									["Augustin"] = 2246,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 3026,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 96,
+								["total"] = 3026,
+								["c_max"] = 0,
+								["id"] = "Lightning Bolt",
+								["r_dmg"] = 154,
+								["r_amt"] = 4,
+								["c_min"] = 0,
+								["m_crit"] = 0,
+								["n_amt"] = 43,
+								["m_amt"] = 0,
+								["successful_casted"] = 91,
+								["b_dmg"] = 0,
+								["RESIST"] = 53,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Serpent Form"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Serpent Form",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 4,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["friendlyfire"] = {
+					},
+					["total"] = 3546.09376,
+					["last_dps"] = 0,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["damage_taken"] = 34805.09376,
+					["start_time"] = 1601199250,
+					["serial"] = "Creature-0-4447-43-10046-3840-0000705D11",
+					["fight_component"] = true,
+				}, -- [6]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.012926,
+					["damage_from"] = {
+						["Konac"] = true,
+					},
+					["targets"] = {
+						["Konac"] = 1296,
+						["Augustin"] = 579,
+					},
+					["pets"] = {
+					},
+					["monster"] = true,
+					["on_hold"] = false,
+					["friendlyfire_total"] = 0,
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 1875.012926,
+					["delay"] = 0,
+					["fight_component"] = true,
+					["total"] = 1875.012926,
+					["friendlyfire"] = {
+					},
+					["damage_taken"] = 5429.012926,
+					["nome"] = "Deviate Viper",
+					["spells"] = {
+						["_ActorTable"] = {
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 52,
+								["targets"] = {
+									["Konac"] = 1236,
+									["Augustin"] = 411,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 1647,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 49,
+								["total"] = 1647,
+								["c_max"] = 0,
+								["r_amt"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["b_dmg"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 40,
+								["DODGE"] = 5,
+								["MISS"] = 4,
+							},
+							["Localized Toxin"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 14,
+								["targets"] = {
+									["Konac"] = 60,
+									["Augustin"] = 168,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 228,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 27,
+								["total"] = 228,
+								["c_max"] = 0,
+								["id"] = "Localized Toxin",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+								["m_crit"] = 0,
+								["n_amt"] = 22,
+								["m_amt"] = 0,
+								["successful_casted"] = 8,
+								["b_dmg"] = 0,
+								["RESIST"] = 5,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["tipo"] = 1,
+					["classe"] = "UNKNOW",
+					["end_time"] = 1601199710,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["last_dps"] = 0,
+					["start_time"] = 1601199584,
+					["serial"] = "Creature-0-4447-43-10046-5755-0000705D11",
+					["dps_started"] = false,
+				}, -- [7]
+				{
+					["flag_original"] = 2632,
+					["totalabsorbed"] = 0.037736,
+					["damage_from"] = {
+						["Konac"] = true,
+					},
+					["targets"] = {
+						["Konac"] = 1427,
+						["Augustin"] = 1098,
+					},
+					["pets"] = {
+					},
+					["monster"] = true,
+					["on_hold"] = false,
+					["friendlyfire_total"] = 0,
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 2525.037736,
+					["delay"] = 0,
+					["fight_component"] = true,
+					["total"] = 2525.037736,
+					["friendlyfire"] = {
+					},
+					["damage_taken"] = 9846.037736,
+					["nome"] = "Deviate Adder",
+					["spells"] = {
+						["_ActorTable"] = {
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 49,
+								["targets"] = {
+									["Konac"] = 1427,
+									["Augustin"] = 978,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 2405,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 72,
+								["total"] = 2405,
+								["c_max"] = 0,
+								["r_amt"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["b_dmg"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 61,
+								["MISS"] = 6,
+								["DODGE"] = 5,
+							},
+							["Poison"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 12,
+								["targets"] = {
+									["Konac"] = 0,
+									["Augustin"] = 120,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 120,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 16,
+								["total"] = 120,
+								["c_max"] = 0,
+								["id"] = "Poison",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+								["m_crit"] = 0,
+								["n_amt"] = 10,
+								["m_amt"] = 0,
+								["successful_casted"] = 7,
+								["b_dmg"] = 0,
+								["RESIST"] = 6,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["tipo"] = 1,
+					["classe"] = "UNKNOW",
+					["end_time"] = 1601199710,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["last_dps"] = 0,
+					["start_time"] = 1601199557,
+					["serial"] = "Creature-0-4447-43-10046-5048-0003705D12",
+					["dps_started"] = false,
+				}, -- [8]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.029448,
+					["damage_from"] = {
+						["Konac"] = true,
+					},
+					["targets"] = {
+						["Konac"] = 418,
+						["Augustin"] = 251,
+					},
+					["delay"] = 0,
+					["pets"] = {
+					},
+					["last_dps"] = 0,
+					["classe"] = "UNKNOW",
+					["friendlyfire_total"] = 0,
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 669.029448,
+					["monster"] = true,
+					["fight_component"] = true,
+					["total"] = 669.029448,
+					["on_hold"] = false,
+					["tipo"] = 1,
+					["nome"] = "Deviate Python",
+					["spells"] = {
+						["_ActorTable"] = {
+							["!Melee"] = {
+								["c_amt"] = 3,
+								["b_amt"] = 0,
+								["c_dmg"] = 155,
+								["g_amt"] = 0,
+								["n_max"] = 29,
+								["targets"] = {
+									["Konac"] = 418,
+									["Augustin"] = 251,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 514,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 32,
+								["total"] = 669,
+								["c_max"] = 54,
+								["r_amt"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["b_dmg"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 23,
+								["DODGE"] = 1,
+								["MISS"] = 5,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["damage_taken"] = 2746.029448,
+					["end_time"] = 1601199710,
+					["boss_fight_component"] = true,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["friendlyfire"] = {
+					},
+					["start_time"] = 1601199675,
+					["serial"] = "Creature-0-4447-43-10046-8886-0002F05D12",
+					["dps_started"] = false,
+				}, -- [9]
+				{
+					["flag_original"] = 2632,
+					["totalabsorbed"] = 0.006203,
+					["damage_from"] = {
+						["Konac"] = true,
+					},
+					["targets"] = {
+						["Konac"] = 211,
+					},
+					["pets"] = {
+					},
+					["monster"] = true,
+					["nome"] = "Lord Cobrahn",
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 211.006203,
+					["delay"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1601200017,
+					["last_dps"] = 0,
+					["damage_taken"] = 2292.006203,
+					["boss_fight_component"] = true,
+					["spells"] = {
+						["_ActorTable"] = {
+							["Lightning Bolt"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 87,
+								["targets"] = {
+									["Konac"] = 124,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 124,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 5,
+								["total"] = 124,
+								["c_max"] = 0,
+								["id"] = "Lightning Bolt",
+								["r_dmg"] = 37,
+								["r_amt"] = 1,
+								["c_min"] = 0,
+								["m_crit"] = 0,
+								["n_amt"] = 2,
+								["m_amt"] = 0,
+								["successful_casted"] = 5,
+								["b_dmg"] = 0,
+								["RESIST"] = 3,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 87,
+								["targets"] = {
+									["Konac"] = 87,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 87,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 2,
+								["total"] = 87,
+								["c_max"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 1,
+								["a_dmg"] = 0,
+								["DODGE"] = 1,
+							},
+							["Cobrahn Serpent Form"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Cobrahn Serpent Form",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 1,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["tipo"] = 1,
+					["friendlyfire_total"] = 0,
+					["total"] = 211.006203,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1601199994,
+					["serial"] = "Creature-0-4447-43-10046-3669-0000705D11",
+					["friendlyfire"] = {
+					},
+				}, -- [10]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.030123,
+					["damage_from"] = {
+						["Konac"] = true,
+					},
+					["targets"] = {
+						["Augustin"] = 161,
+						["Konac"] = 152,
+					},
+					["delay"] = 0,
+					["pets"] = {
+					},
+					["last_dps"] = 0,
+					["classe"] = "UNKNOW",
+					["friendlyfire_total"] = 0,
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 313.030123,
+					["monster"] = true,
+					["fight_component"] = true,
+					["total"] = 313.030123,
+					["on_hold"] = false,
+					["tipo"] = 1,
+					["nome"] = "Deviate Crocolisk",
+					["spells"] = {
+						["_ActorTable"] = {
+							["!Melee"] = {
+								["c_amt"] = 1,
+								["b_amt"] = 0,
+								["c_dmg"] = 58,
+								["g_amt"] = 0,
+								["n_max"] = 26,
+								["targets"] = {
+									["Augustin"] = 161,
+									["Konac"] = 152,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 255,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 15,
+								["total"] = 313,
+								["c_max"] = 58,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 11,
+								["a_dmg"] = 0,
+								["MISS"] = 3,
+							},
+							["Tendon Rip"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Tendon Rip",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 1,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["damage_taken"] = 2184.030123,
+					["end_time"] = 1601200059,
+					["boss_fight_component"] = true,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["friendlyfire"] = {
+					},
+					["start_time"] = 1601200019,
+					["serial"] = "Creature-0-4447-43-10046-5053-0001F05D11",
+					["dps_started"] = false,
+				}, -- [11]
+				{
+					["flag_original"] = 2600,
+					["totalabsorbed"] = 0.010744,
+					["damage_from"] = {
+						["Augustin"] = true,
+						["Konac"] = true,
+					},
+					["targets"] = {
+						["Konac"] = 129,
+					},
+					["pets"] = {
+					},
+					["tipo"] = 1,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 129.010744,
+					["friendlyfire_total"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1601200267,
+					["delay"] = 0,
+					["last_dps"] = 0,
+					["boss_fight_component"] = true,
+					["spells"] = {
+						["_ActorTable"] = {
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 45,
+								["targets"] = {
+									["Konac"] = 129,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 129,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 5,
+								["total"] = 129,
+								["c_max"] = 0,
+								["r_amt"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["b_dmg"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 3,
+								["DODGE"] = 1,
+								["MISS"] = 1,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["damage_taken"] = 1588.010744,
+					["total"] = 129.010744,
+					["nome"] = "Kresh",
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1601200253,
+					["serial"] = "Creature-0-4447-43-10046-3653-0000705D11",
+					["friendlyfire"] = {
+					},
+				}, -- [12]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 402.066103,
+					["damage_from"] = {
+						["Konac"] = true,
+					},
+					["targets"] = {
+						["Konac"] = 2902,
+						["Augustin"] = 304,
+					},
+					["delay"] = 0,
+					["pets"] = {
+					},
+					["nome"] = "Deviate Shambler",
+					["friendlyfire_total"] = 0,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 3206.066103,
+					["fight_component"] = true,
+					["dps_started"] = false,
+					["total"] = 3206.066103,
+					["friendlyfire"] = {
+					},
+					["tipo"] = 1,
+					["boss_fight_component"] = true,
+					["spells"] = {
+						["_ActorTable"] = {
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 49,
+								["targets"] = {
+									["Konac"] = 2902,
+									["Augustin"] = 304,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 3206,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 101,
+								["total"] = 3206,
+								["c_max"] = 0,
+								["r_amt"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["b_dmg"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 85,
+								["DODGE"] = 5,
+								["MISS"] = 11,
+							},
+							["Wild Regeneration"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Wild Regeneration",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 7,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["last_dps"] = 0,
+					["end_time"] = 1601200316,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["damage_taken"] = 20824.066103,
+					["start_time"] = 1601200108,
+					["serial"] = "Creature-0-4447-43-10046-5761-0003705D12",
+					["monster"] = true,
+				}, -- [13]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 220.041795,
+					["damage_from"] = {
+						["Konac"] = true,
+					},
+					["targets"] = {
+						["Konac"] = 1389,
+						["Augustin"] = 1536,
+					},
+					["pets"] = {
+					},
+					["damage_taken"] = 6020.041795,
+					["friendlyfire"] = {
+					},
+					["friendlyfire_total"] = 0,
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 2925.041795,
+					["delay"] = 0,
+					["dps_started"] = false,
+					["total"] = 2925.041795,
+					["classe"] = "UNKNOW",
+					["last_dps"] = 0,
+					["nome"] = "Deviate Lasher",
+					["spells"] = {
+						["_ActorTable"] = {
+							["!Melee"] = {
+								["c_amt"] = 4,
+								["b_amt"] = 0,
+								["c_dmg"] = 244,
+								["g_amt"] = 0,
+								["n_max"] = 36,
+								["targets"] = {
+									["Konac"] = 928,
+									["Augustin"] = 774,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 1458,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 66,
+								["total"] = 1702,
+								["c_max"] = 66,
+								["r_amt"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["b_dmg"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 51,
+								["DODGE"] = 7,
+								["MISS"] = 4,
+							},
+							["Wide Slash"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 51,
+								["targets"] = {
+									["Augustin"] = 762,
+									["Konac"] = 461,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 1223,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 35,
+								["total"] = 1223,
+								["c_max"] = 0,
+								["r_amt"] = 0,
+								["id"] = "Wide Slash",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["b_dmg"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 21,
+								["a_amt"] = 0,
+								["n_amt"] = 29,
+								["MISS"] = 5,
+								["DODGE"] = 1,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["tipo"] = 1,
+					["monster"] = true,
+					["end_time"] = 1601200410,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1601200342,
+					["serial"] = "Creature-0-4447-43-10046-5055-0008F05D12",
+					["fight_component"] = true,
+				}, -- [14]
+				{
+					["flag_original"] = 2632,
+					["totalabsorbed"] = 0.007168,
+					["damage_from"] = {
+						["Konac"] = true,
+					},
+					["targets"] = {
+						["Augustin"] = 234,
+						["Konac"] = 1089,
+					},
+					["pets"] = {
+					},
+					["monster"] = true,
+					["nome"] = "Lord Pythas",
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 1323.007168,
+					["delay"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1601200630,
+					["last_dps"] = 0,
+					["damage_taken"] = 2610.007168,
+					["boss_fight_component"] = true,
+					["spells"] = {
+						["_ActorTable"] = {
+							["Sleep"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Augustin"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 1,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Sleep",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+								["m_crit"] = 0,
+								["n_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 3,
+								["b_dmg"] = 0,
+								["RESIST"] = 1,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Thunderclap"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 81,
+								["targets"] = {
+									["Augustin"] = 234,
+									["Konac"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 234,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 6,
+								["total"] = 234,
+								["c_max"] = 0,
+								["id"] = "Thunderclap",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+								["m_crit"] = 0,
+								["n_amt"] = 3,
+								["m_amt"] = 0,
+								["successful_casted"] = 3,
+								["b_dmg"] = 0,
+								["RESIST"] = 3,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 76,
+								["targets"] = {
+									["Konac"] = 1019,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 1019,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 30,
+								["total"] = 1019,
+								["c_max"] = 0,
+								["r_amt"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["b_dmg"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 20,
+								["DODGE"] = 2,
+								["MISS"] = 8,
+							},
+							["Lightning Bolt"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 70,
+								["targets"] = {
+									["Konac"] = 70,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 70,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 4,
+								["total"] = 70,
+								["c_max"] = 0,
+								["id"] = "Lightning Bolt",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+								["m_crit"] = 0,
+								["n_amt"] = 1,
+								["m_amt"] = 0,
+								["successful_casted"] = 4,
+								["b_dmg"] = 0,
+								["RESIST"] = 3,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Healing Touch"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Healing Touch",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 2,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["tipo"] = 1,
+					["friendlyfire_total"] = 0,
+					["total"] = 1323.007168,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1601200568,
+					["serial"] = "Creature-0-4447-43-10046-3670-0000705D11",
+					["friendlyfire"] = {
+					},
+				}, -- [15]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.036234,
+					["damage_from"] = {
+						["Konac"] = true,
+					},
+					["targets"] = {
+						["Konac"] = 1244,
+						["Augustin"] = 591,
+					},
+					["pets"] = {
+					},
+					["damage_taken"] = 11069.036234,
+					["friendlyfire"] = {
+					},
+					["friendlyfire_total"] = 0,
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 1835.036234,
+					["delay"] = 0,
+					["dps_started"] = false,
+					["total"] = 1835.036234,
+					["classe"] = "UNKNOW",
+					["last_dps"] = 0,
+					["nome"] = "Deviate Venomwing",
+					["spells"] = {
+						["_ActorTable"] = {
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 48,
+								["targets"] = {
+									["Konac"] = 175,
+									["Augustin"] = 42,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 217,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 6,
+								["total"] = 217,
+								["c_max"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 5,
+								["a_dmg"] = 0,
+								["MISS"] = 1,
+							},
+							["Toxic Spit"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 63,
+								["targets"] = {
+									["Konac"] = 1069,
+									["Augustin"] = 549,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 1618,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 32,
+								["total"] = 1618,
+								["c_max"] = 0,
+								["id"] = "Toxic Spit",
+								["r_dmg"] = 131,
+								["r_amt"] = 4,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 30,
+								["b_dmg"] = 0,
+								["n_amt"] = 32,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["tipo"] = 1,
+					["monster"] = true,
+					["end_time"] = 1601200917,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1601200813,
+					["serial"] = "Creature-0-4447-43-10046-5756-0000F05D13",
+					["fight_component"] = true,
+				}, -- [16]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.027166,
+					["damage_from"] = {
+						["Konac"] = true,
+					},
+					["targets"] = {
+						["Konac"] = 454,
+						["Augustin"] = 154,
+					},
+					["pets"] = {
+					},
+					["fight_component"] = true,
+					["on_hold"] = false,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 608.027166,
+					["delay"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1601201097,
+					["friendlyfire_total"] = 0,
+					["last_dps"] = 0,
+					["nome"] = "Deviate Dreadfang",
+					["spells"] = {
+						["_ActorTable"] = {
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 57,
+								["targets"] = {
+									["Konac"] = 454,
+									["Augustin"] = 154,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 608,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 17,
+								["total"] = 608,
+								["c_max"] = 0,
+								["r_amt"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["b_dmg"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 14,
+								["DODGE"] = 1,
+								["MISS"] = 2,
+							},
+							["Terrify"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Augustin"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 1,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Terrify",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+								["m_crit"] = 0,
+								["n_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 2,
+								["b_dmg"] = 0,
+								["RESIST"] = 1,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["tipo"] = 1,
+					["friendlyfire"] = {
+					},
+					["total"] = 608.027166,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["damage_taken"] = 4902.027166,
+					["start_time"] = 1601201055,
+					["serial"] = "Creature-0-4447-43-10046-5056-0002705D12",
+					["monster"] = true,
+				}, -- [17]
+				{
+					["flag_original"] = 2632,
+					["totalabsorbed"] = 0.01331,
+					["damage_from"] = {
+						["Konac"] = true,
+					},
+					["targets"] = {
+					},
+					["pets"] = {
+					},
+					["monster"] = true,
+					["nome"] = "Lord Serpentis",
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.01331,
+					["delay"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1601201275,
+					["last_dps"] = 0,
+					["damage_taken"] = 2918.01331,
+					["boss_fight_component"] = true,
+					["spells"] = {
+						["_ActorTable"] = {
+							["Lightning Bolt"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Konac"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 6,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Lightning Bolt",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+								["m_crit"] = 0,
+								["n_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 6,
+								["b_dmg"] = 0,
+								["RESIST"] = 6,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["tipo"] = 1,
+					["friendlyfire_total"] = 0,
+					["total"] = 0.01331,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1601201272,
+					["serial"] = "Creature-0-4447-43-10046-3673-0000705D11",
+					["friendlyfire"] = {
+					},
+				}, -- [18]
+				{
+					["flag_original"] = 2632,
+					["totalabsorbed"] = 0.008787,
+					["damage_from"] = {
+						["Konac"] = true,
+					},
+					["targets"] = {
+						["Konac"] = 992,
+					},
+					["pets"] = {
+					},
+					["monster"] = true,
+					["nome"] = "Verdan the Everliving",
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 992.008787,
+					["delay"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1601201333,
+					["last_dps"] = 0,
+					["damage_taken"] = 4258.008787,
+					["boss_fight_component"] = true,
+					["spells"] = {
+						["_ActorTable"] = {
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 277,
+								["targets"] = {
+									["Konac"] = 992,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 992,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 4,
+								["total"] = 992,
+								["c_max"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 4,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["tipo"] = 1,
+					["friendlyfire_total"] = 0,
+					["total"] = 992.008787,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1601201315,
+					["serial"] = "Creature-0-4447-43-10046-5775-0000705D11",
+					["friendlyfire"] = {
+					},
+				}, -- [19]
+				{
+					["flag_original"] = 4424,
+					["totalabsorbed"] = 0.005749,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Augustin"] = 0,
+					},
+					["pets"] = {
+					},
+					["on_hold"] = false,
+					["classe"] = "PET",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.005749,
+					["fight_component"] = true,
+					["dps_started"] = false,
+					["end_time"] = 1601282491,
+					["last_event"] = 0,
+					["friendlyfire"] = {
+					},
+					["nome"] = "DieBUSTA",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+							["Lightning Breath"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Augustin"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Lightning Breath",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Augustin"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+						},
+					},
+					["friendlyfire_total"] = 0,
+					["total"] = 0.005749,
+					["serial"] = "Pet-0-4468-0-15-11357-0600300FBF",
+					["custom"] = 0,
+					["tipo"] = 1,
+					["damage_taken"] = 0.005749,
+					["start_time"] = 1601282488,
+					["delay"] = 0,
+					["last_dps"] = 0,
+				}, -- [20]
+				{
+					["flag_original"] = 68168,
+					["totalabsorbed"] = 0.007858,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Augustin"] = 0,
+					},
+					["fight_component"] = true,
+					["pets"] = {
+					},
+					["end_time"] = 1601282491,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.007858,
+					["friendlyfire"] = {
+					},
+					["dps_started"] = false,
+					["total"] = 0.007858,
+					["last_event"] = 0,
+					["friendlyfire_total"] = 0,
+					["nome"] = "Gray Bear",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Augustin"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+						},
+					},
+					["monster"] = true,
+					["on_hold"] = false,
+					["serial"] = "Creature-0-4468-0-15-2351-000070FA7A",
+					["custom"] = 0,
+					["tipo"] = 1,
+					["damage_taken"] = 0.007858,
+					["start_time"] = 1601282488,
+					["delay"] = 0,
+					["last_dps"] = 0,
+				}, -- [21]
+			},
+		}, -- [1]
+		{
+			["tipo"] = 3,
+			["_ActorTable"] = {
+				{
+					["flag_original"] = 1298,
+					["healing_from"] = {
+						["Konac"] = true,
+					},
+					["pets"] = {
+					},
+					["iniciar_hps"] = false,
+					["classe"] = "PRIEST",
+					["totalover"] = 19978.089952,
+					["total_without_pet"] = 12439.089952,
+					["total"] = 12439.089952,
+					["targets_absorbs"] = {
+						["Konac"] = 793,
+					},
+					["heal_enemy"] = {
+					},
+					["on_hold"] = false,
+					["serial"] = "Player-4465-00C4D96C",
+					["totalabsorb"] = 793.089952,
+					["last_hps"] = 0,
+					["targets"] = {
+						["Konac"] = 0,
+						["Augustin"] = 11838,
+					},
+					["totalover_without_pet"] = 0.089952,
+					["healing_taken"] = 6514.089952,
+					["fight_component"] = true,
+					["end_time"] = 1601199490,
+					["targets_overheal"] = {
+						["Konac"] = 4805,
+						["Augustin"] = 0,
+					},
+					["last_event"] = 0,
+					["nome"] = "Konac",
+					["spells"] = {
+						["_ActorTable"] = {
+							["Holy Nova"] = {
+								["c_amt"] = 2,
+								["totalabsorb"] = 0,
+								["targets_overheal"] = {
+									["Konac"] = 2888,
+									["Augustin"] = 5455,
+								},
+								["n_max"] = 479,
+								["targets"] = {
+									["Augustin"] = 1597,
+									["Konac"] = 4177,
+								},
+								["n_min"] = 0,
+								["counter"] = 30,
+								["overheal"] = 8343,
+								["total"] = 5774,
+								["c_max"] = 323,
+								["id"] = "Holy Nova",
+								["targets_absorbs"] = {
+								},
+								["c_curado"] = 323,
+								["m_crit"] = 0,
+								["m_healed"] = 0,
+								["c_min"] = 0,
+								["totaldenied"] = 0,
+								["n_amt"] = 28,
+								["n_curado"] = 5451,
+								["m_amt"] = 0,
+								["absorbed"] = 0,
+							},
+							["Power Word: Shield"] = {
+								["c_amt"] = 0,
+								["totalabsorb"] = 793,
+								["targets_overheal"] = {
+								},
+								["n_max"] = 83,
+								["targets"] = {
+									["Konac"] = 793,
+								},
+								["n_min"] = 0,
+								["counter"] = 21,
+								["overheal"] = 0,
+								["total"] = 793,
+								["c_max"] = 0,
+								["id"] = "Power Word: Shield",
+								["targets_absorbs"] = {
+									["Konac"] = 793,
+								},
+								["c_curado"] = 0,
+								["m_crit"] = 0,
+								["m_healed"] = 0,
+								["c_min"] = 0,
+								["totaldenied"] = 0,
+								["n_amt"] = 21,
+								["n_curado"] = 793,
+								["m_amt"] = 0,
+								["absorbed"] = 0,
+							},
+							["Renew"] = {
+								["c_amt"] = 0,
+								["totalabsorb"] = 0,
+								["targets_overheal"] = {
+									["Konac"] = 1917,
+									["Augustin"] = 9718,
+								},
+								["n_max"] = 385,
+								["targets"] = {
+									["Konac"] = 1544,
+									["Augustin"] = 4328,
+								},
+								["n_min"] = 0,
+								["counter"] = 63,
+								["overheal"] = 11635,
+								["total"] = 5872,
+								["c_max"] = 0,
+								["id"] = "Renew",
+								["targets_absorbs"] = {
+								},
+								["c_curado"] = 0,
+								["m_crit"] = 0,
+								["m_healed"] = 0,
+								["c_min"] = 0,
+								["totaldenied"] = 0,
+								["n_amt"] = 63,
+								["n_curado"] = 5872,
+								["m_amt"] = 0,
+								["absorbed"] = 0,
+							},
+						},
+						["tipo"] = 3,
+					},
+					["grupo"] = true,
+					["heal_enemy_amt"] = 0,
+					["totaldenied"] = 0.089952,
+					["custom"] = 0,
+					["tipo"] = 2,
+					["spec"] = 257,
+					["start_time"] = 1601199281,
+					["delay"] = 0,
+					["boss_fight_component"] = true,
+				}, -- [1]
+				{
+					["flag_original"] = 1297,
+					["healing_from"] = {
+						["Konac"] = true,
+					},
+					["pets"] = {
+					},
+					["iniciar_hps"] = false,
+					["classe"] = "MAGE",
+					["totalover"] = 0.098243,
+					["total_without_pet"] = 0.098243,
+					["total"] = 0.098243,
+					["targets_absorbs"] = {
+					},
+					["heal_enemy"] = {
+					},
+					["on_hold"] = false,
+					["serial"] = "Player-4465-01D5BF39",
+					["totalabsorb"] = 0.098243,
+					["last_hps"] = 0,
+					["targets"] = {
+					},
+					["totalover_without_pet"] = 0.098243,
+					["healing_taken"] = 5925.098243,
+					["fight_component"] = true,
+					["end_time"] = 1601199490,
+					["targets_overheal"] = {
+					},
+					["last_event"] = 0,
+					["nome"] = "Augustin",
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
+					},
+					["grupo"] = true,
+					["heal_enemy_amt"] = 0,
+					["totaldenied"] = 0.098243,
+					["custom"] = 0,
+					["tipo"] = 2,
+					["spec"] = 64,
+					["start_time"] = 1601199487,
+					["delay"] = 0,
+					["boss_fight_component"] = true,
+				}, -- [2]
+				{
+					["flag_original"] = 2632,
+					["totalabsorb"] = 0.010208,
+					["last_hps"] = 0,
+					["targets_overheal"] = {
+					},
+					["targets"] = {
+					},
+					["delay"] = 0,
+					["pets"] = {
+					},
+					["totalover_without_pet"] = 0.010208,
+					["healing_from"] = {
+					},
+					["heal_enemy_amt"] = 216,
+					["totalover"] = 0.010208,
+					["total_without_pet"] = 0.010208,
+					["iniciar_hps"] = false,
+					["totaldenied"] = 0.010208,
+					["monster"] = true,
+					["end_time"] = 1601199540,
+					["healing_taken"] = 0.010208,
+					["boss_fight_component"] = true,
+					["nome"] = "Lady Anacondra",
+					["targets_absorbs"] = {
+					},
+					["total"] = 0.010208,
+					["classe"] = "UNKNOW",
+					["heal_enemy"] = {
+						["Healing Touch"] = 216,
+					},
+					["tipo"] = 2,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1601199537,
+					["serial"] = "Creature-0-4447-43-10046-3671-0000705D11",
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
+					},
+				}, -- [3]
+				{
+					["flag_original"] = 2632,
+					["totalabsorb"] = 0.041652,
+					["last_hps"] = 0,
+					["targets_overheal"] = {
+					},
+					["targets"] = {
+					},
+					["delay"] = 0,
+					["pets"] = {
+					},
+					["totalover_without_pet"] = 0.041652,
+					["healing_from"] = {
+					},
+					["heal_enemy_amt"] = 2733,
+					["totalover"] = 0.041652,
+					["total_without_pet"] = 0.041652,
+					["iniciar_hps"] = false,
+					["totaldenied"] = 0.041652,
+					["monster"] = true,
+					["end_time"] = 1601199540,
+					["healing_taken"] = 0.041652,
+					["boss_fight_component"] = true,
+					["nome"] = "Druid of the Fang",
+					["targets_absorbs"] = {
+					},
+					["total"] = 0.041652,
+					["classe"] = "UNKNOW",
+					["heal_enemy"] = {
+						["Healing Touch"] = 2733,
+					},
+					["tipo"] = 2,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1601199537,
+					["serial"] = "Creature-0-4447-43-10046-3840-0000705D11",
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
+					},
+				}, -- [4]
+				{
+					["flag_original"] = 2632,
+					["totalabsorb"] = 0.009621,
+					["last_hps"] = 0,
+					["targets_overheal"] = {
+					},
+					["targets"] = {
+					},
+					["delay"] = 0,
+					["pets"] = {
+					},
+					["totalover_without_pet"] = 0.009621,
+					["healing_from"] = {
+					},
+					["heal_enemy_amt"] = 486,
+					["totalover"] = 0.009621,
+					["total_without_pet"] = 0.009621,
+					["iniciar_hps"] = false,
+					["totaldenied"] = 0.009621,
+					["monster"] = true,
+					["end_time"] = 1601200630,
+					["healing_taken"] = 0.009621,
+					["boss_fight_component"] = true,
+					["nome"] = "Lord Pythas",
+					["targets_absorbs"] = {
+					},
+					["total"] = 0.009621,
+					["classe"] = "UNKNOW",
+					["heal_enemy"] = {
+						["Healing Touch"] = 486,
+					},
+					["tipo"] = 2,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1601200627,
+					["serial"] = "Creature-0-4447-43-10046-3670-0000705D11",
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
+					},
+				}, -- [5]
+				{
+					["flag_original"] = 2632,
+					["totalabsorb"] = 0.020783,
+					["last_hps"] = 0,
+					["targets_overheal"] = {
+					},
+					["targets"] = {
+					},
+					["delay"] = 0,
+					["pets"] = {
+					},
+					["totalover_without_pet"] = 0.020783,
+					["healing_from"] = {
+					},
+					["classe"] = "UNKNOW",
+					["totalover"] = 0.020783,
+					["total_without_pet"] = 0.020783,
+					["iniciar_hps"] = false,
+					["totaldenied"] = 0.020783,
+					["monster"] = true,
+					["end_time"] = 1601200630,
+					["heal_enemy_amt"] = 1276,
+					["boss_fight_component"] = true,
+					["nome"] = "Deviate Shambler",
+					["targets_absorbs"] = {
+					},
+					["total"] = 0.020783,
+					["healing_taken"] = 0.020783,
+					["heal_enemy"] = {
+						["Wild Regeneration"] = 1276,
+					},
+					["tipo"] = 2,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1601200627,
+					["serial"] = "Creature-0-4447-43-10046-5761-0002F05D11",
+					["spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 3,
+					},
+				}, -- [6]
+			},
+		}, -- [2]
+		{
+			["tipo"] = 7,
+			["_ActorTable"] = {
+			},
+		}, -- [3]
+		{
+			["tipo"] = 9,
+			["_ActorTable"] = {
+				{
+					["flag_original"] = 1047,
+					["debuff_uptime_spells"] = {
+						["_ActorTable"] = {
+							["Weakened Soul"] = {
+								["counter"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 2,
+								["id"] = "Weakened Soul",
+								["uptime"] = 24,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+							["Holy Fire"] = {
+								["counter"] = 0,
+								["activedamt"] = 0,
+								["appliedamt"] = 7,
+								["id"] = "Holy Fire",
+								["uptime"] = 60,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+							["Shadow Word: Pain"] = {
+								["counter"] = 0,
+								["refreshamt"] = 1,
+								["activedamt"] = -24,
+								["uptime"] = 540,
+								["id"] = "Shadow Word: Pain",
+								["appliedamt"] = 60,
+								["targets"] = {
+								},
+								["actived_at"] = 27220406548,
+							},
+						},
+						["tipo"] = 9,
+					},
+					["buff_uptime"] = 1962,
+					["classe"] = "PRIEST",
+					["buff_uptime_spells"] = {
+						["_ActorTable"] = {
+							["Renew"] = {
+								["counter"] = 0,
+								["activedamt"] = 2,
+								["appliedamt"] = 2,
+								["id"] = "Renew",
+								["uptime"] = 27,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+							["Power Word: Shield"] = {
+								["counter"] = 0,
+								["activedamt"] = 4,
+								["appliedamt"] = 4,
+								["id"] = "Power Word: Shield",
+								["uptime"] = 39,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+							["Divine Spirit"] = {
+								["counter"] = 0,
+								["activedamt"] = 29,
+								["appliedamt"] = 29,
+								["id"] = "Divine Spirit",
+								["uptime"] = 802,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+							["Power Word: Fortitude"] = {
+								["counter"] = 0,
+								["activedamt"] = 29,
+								["appliedamt"] = 29,
+								["id"] = "Power Word: Fortitude",
+								["uptime"] = 802,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+							["Reactive Fade"] = {
+								["counter"] = 0,
+								["activedamt"] = 74,
+								["appliedamt"] = 74,
+								["id"] = "Reactive Fade",
+								["uptime"] = 292,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+						},
+						["tipo"] = 9,
+					},
+					["fight_component"] = true,
+					["debuff_uptime"] = 624,
+					["boss_fight_component"] = true,
+					["spec"] = 257,
+					["grupo"] = true,
+					["spell_cast"] = {
+						["Shoot"] = 221,
+						["Holy Fire"] = 4,
+						["Power Word: Shield"] = 2,
+						["Smite"] = 36,
+						["Shadow Word: Pain"] = 56,
+						["Holy Nova"] = 15,
+						["Renew"] = 13,
+						["Mind Blast"] = 6,
+					},
+					["debuff_uptime_targets"] = {
+					},
+					["last_event"] = 0,
+					["tipo"] = 4,
+					["pets"] = {
+					},
+					["buff_uptime_targets"] = {
+					},
+					["serial"] = "Player-4465-00C4D96C",
+					["nome"] = "Konac",
+				}, -- [1]
+				{
+					["flag_original"] = 1047,
+					["debuff_uptime_spells"] = {
+						["_ActorTable"] = {
+							["Chilled"] = {
+								["counter"] = 0,
+								["activedamt"] = 0,
+								["appliedamt"] = 37,
+								["id"] = "Chilled",
+								["uptime"] = 221,
+								["targets"] = {
+								},
+								["refreshamt"] = 41,
+							},
+							["Fireball"] = {
+								["counter"] = 0,
+								["activedamt"] = 0,
+								["appliedamt"] = 1,
+								["id"] = "Fireball",
+								["uptime"] = 3,
+								["targets"] = {
+								},
+								["refreshamt"] = 1,
+							},
+						},
+						["tipo"] = 9,
+					},
+					["buff_uptime"] = 1642,
+					["classe"] = "MAGE",
+					["buff_uptime_spells"] = {
+						["_ActorTable"] = {
+							["Frost Armor"] = {
+								["counter"] = 0,
+								["activedamt"] = 30,
+								["appliedamt"] = 30,
+								["id"] = "Frost Armor",
+								["uptime"] = 822,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+							["Arcane Intellect"] = {
+								["counter"] = 0,
+								["activedamt"] = 30,
+								["appliedamt"] = 30,
+								["id"] = "Arcane Intellect",
+								["uptime"] = 820,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+						},
+						["tipo"] = 9,
+					},
+					["fight_component"] = true,
+					["debuff_uptime"] = 224,
+					["boss_fight_component"] = true,
+					["spec"] = 64,
+					["grupo"] = true,
+					["spell_cast"] = {
+						["Scorch"] = 3,
+						["Fireball"] = 2,
+						["Shoot"] = 0,
+						["Fire Blast"] = 0,
+					},
+					["debuff_uptime_targets"] = {
+					},
+					["last_event"] = 0,
+					["tipo"] = 4,
+					["pets"] = {
+					},
+					["nome"] = "Augustin",
+					["serial"] = "Player-4465-01D5BF39",
+					["buff_uptime_targets"] = {
+					},
+				}, -- [2]
+				{
+					["monster"] = true,
+					["last_event"] = 0,
+					["nome"] = "Lady Anacondra",
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["flag_original"] = 2632,
+					["tipo"] = 4,
+					["boss_fight_component"] = true,
+					["serial"] = "Creature-0-4447-43-10046-3671-0000705D11",
+					["spell_cast"] = {
+						["Lightning Bolt"] = 2,
+						["Healing Touch"] = 1,
+					},
+				}, -- [3]
+				{
+					["flag_original"] = 68168,
+					["fight_component"] = true,
+					["boss_fight_component"] = true,
+					["nome"] = "Druid of the Fang",
+					["pets"] = {
+					},
+					["spell_cast"] = {
+						["Healing Touch"] = 12,
+						["Druid's Slumber"] = 4,
+						["Lightning Bolt"] = 91,
+						["Serpent Form"] = 4,
+					},
+					["last_event"] = 0,
+					["classe"] = "UNKNOW",
+					["tipo"] = 4,
+					["serial"] = "Creature-0-4447-43-10046-3840-0000705D11",
+					["monster"] = true,
+				}, -- [4]
+				{
+					["monster"] = true,
+					["last_event"] = 0,
+					["nome"] = "Deviate Viper",
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["flag_original"] = 68168,
+					["tipo"] = 4,
+					["fight_component"] = true,
+					["serial"] = "Creature-0-4447-43-10046-5755-0000705D11",
+					["spell_cast"] = {
+						["Localized Toxin"] = 8,
+					},
+				}, -- [5]
+				{
+					["monster"] = true,
+					["last_event"] = 0,
+					["nome"] = "Deviate Adder",
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["flag_original"] = 2632,
+					["tipo"] = 4,
+					["fight_component"] = true,
+					["serial"] = "Creature-0-4447-43-10046-5048-0003705D12",
+					["spell_cast"] = {
+						["Poison"] = 7,
+					},
+				}, -- [6]
+				{
+					["monster"] = true,
+					["last_event"] = 0,
+					["nome"] = "Lord Cobrahn",
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["flag_original"] = 2632,
+					["tipo"] = 4,
+					["boss_fight_component"] = true,
+					["serial"] = "Creature-0-4447-43-10046-3669-0000705D11",
+					["spell_cast"] = {
+						["Lightning Bolt"] = 5,
+						["Cobrahn Serpent Form"] = 1,
+					},
+				}, -- [7]
+				{
+					["monster"] = true,
+					["last_event"] = 0,
+					["nome"] = "Deviate Crocolisk",
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["flag_original"] = 2632,
+					["tipo"] = 4,
+					["fight_component"] = true,
+					["serial"] = "Creature-0-4447-43-10046-5053-0000705D11",
+					["spell_cast"] = {
+						["Tendon Rip"] = 1,
+					},
+				}, -- [8]
+				{
+					["fight_component"] = true,
+					["pets"] = {
+					},
+					["nome"] = "Deviate Shambler",
+					["boss_fight_component"] = true,
+					["spell_cast"] = {
+						["Wild Regeneration"] = 7,
+					},
+					["monster"] = true,
+					["last_event"] = 0,
+					["classe"] = "UNKNOW",
+					["tipo"] = 4,
+					["serial"] = "Creature-0-4447-43-10046-5761-0003705D12",
+					["flag_original"] = 68168,
+				}, -- [9]
+				{
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["nome"] = "Deviate Lasher",
+					["spell_cast"] = {
+						["Wide Slash"] = 21,
+					},
+					["tipo"] = 4,
+					["pets"] = {
+					},
+					["last_event"] = 0,
+					["flag_original"] = 2632,
+					["serial"] = "Creature-0-4447-43-10046-5055-0000F05D13",
+					["monster"] = true,
+				}, -- [10]
+				{
+					["monster"] = true,
+					["last_event"] = 0,
+					["nome"] = "Lord Pythas",
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["flag_original"] = 2632,
+					["tipo"] = 4,
+					["boss_fight_component"] = true,
+					["serial"] = "Creature-0-4447-43-10046-3670-0000705D11",
+					["spell_cast"] = {
+						["Healing Touch"] = 2,
+						["Thunderclap"] = 3,
+						["Lightning Bolt"] = 4,
+						["Sleep"] = 3,
+					},
+				}, -- [11]
+				{
+					["flag_original"] = 68168,
+					["debuff_uptime_spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 9,
+					},
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["boss_debuff"] = true,
+					["monster"] = true,
+					["debuff_uptime"] = 8,
+					["spellschool"] = 32,
+					["nome"] = "Sleep",
+					["debuff_uptime_targets"] = {
+						["Augustin"] = {
+							["uptime"] = 8,
+							["refreshamt"] = 0,
+							["activedamt"] = 0,
+							["actived"] = false,
+							["appliedamt"] = 0,
+						},
+					},
+					["last_event"] = 0,
+					["tipo"] = 4,
+					["damage_twin"] = "Lord Pythas",
+					["serial"] = "Creature-0-4447-43-10046-3670-0000705D11",
+					["damage_spellid"] = "Sleep",
+					["boss_fight_component"] = true,
+				}, -- [12]
+				{
+					["flag_original"] = 68168,
+					["debuff_uptime_spells"] = {
+						["_ActorTable"] = {
+						},
+						["tipo"] = 9,
+					},
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["boss_debuff"] = true,
+					["monster"] = true,
+					["debuff_uptime"] = 30,
+					["spellschool"] = 8,
+					["nome"] = "Thunderclap",
+					["debuff_uptime_targets"] = {
+						["Augustin"] = {
+							["uptime"] = 30,
+							["refreshamt"] = 0,
+							["activedamt"] = 0,
+							["actived"] = false,
+							["appliedamt"] = 0,
+						},
+					},
+					["last_event"] = 0,
+					["tipo"] = 4,
+					["damage_twin"] = "Lord Pythas",
+					["serial"] = "Creature-0-4447-43-10046-3670-0000705D11",
+					["damage_spellid"] = "Thunderclap",
+					["boss_fight_component"] = true,
+				}, -- [13]
+				{
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["nome"] = "Deviate Venomwing",
+					["spell_cast"] = {
+						["Toxic Spit"] = 30,
+					},
+					["last_event"] = 0,
+					["monster"] = true,
+					["tipo"] = 4,
+					["pets"] = {
+					},
+					["serial"] = "Creature-0-4447-43-10046-5756-0000F05D13",
+					["flag_original"] = 68168,
+				}, -- [14]
+				{
+					["monster"] = true,
+					["last_event"] = 0,
+					["nome"] = "Deviate Dreadfang",
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["flag_original"] = 68168,
+					["tipo"] = 4,
+					["fight_component"] = true,
+					["serial"] = "Creature-0-4447-43-10046-5056-0002705D12",
+					["spell_cast"] = {
+						["Terrify"] = 2,
+					},
+				}, -- [15]
+				{
+					["monster"] = true,
+					["last_event"] = 0,
+					["nome"] = "Lord Serpentis",
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["flag_original"] = 2632,
+					["tipo"] = 4,
+					["boss_fight_component"] = true,
+					["serial"] = "Creature-0-4447-43-10046-3673-0000705D11",
+					["spell_cast"] = {
+						["Lightning Bolt"] = 6,
+					},
+				}, -- [16]
+			},
+		}, -- [4]
+		{
+			["tipo"] = 2,
+			["_ActorTable"] = {
+			},
+		}, -- [5]
+		["raid_roster"] = {
+		},
+		["tempo_start"] = 1601199429,
+		["last_events_tables"] = {
+		},
+		["alternate_power"] = {
+		},
+		["segments_added"] = {
+			{
+				["elapsed"] = 18.0039999999572,
+				["type"] = 6,
+				["clock"] = "12:08:35",
+			}, -- [1]
+			{
+				["elapsed"] = 11.0169999999926,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "12:08:05",
+			}, -- [2]
+			{
+				["elapsed"] = 29.0260000000708,
+				["type"] = 6,
+				["clock"] = "12:07:26",
+			}, -- [3]
+			{
+				["elapsed"] = 11.0190000000875,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "12:06:38",
+			}, -- [4]
+			{
+				["elapsed"] = 17.0049999998882,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "12:05:43",
+			}, -- [5]
+			{
+				["elapsed"] = 13.0169999999926,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "12:05:23",
+			}, -- [6]
+			{
+				["elapsed"] = 11.0200000000186,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "12:05:04",
+			}, -- [7]
+			{
+				["elapsed"] = 27.0300000000279,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "12:04:30",
+			}, -- [8]
+			{
+				["elapsed"] = 38.0540000000037,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "12:03:15",
+			}, -- [9]
+			{
+				["elapsed"] = 38.0030000000261,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "12:02:12",
+			}, -- [10]
+			{
+				["elapsed"] = 42.0120000001043,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "12:01:15",
+			}, -- [11]
+			{
+				["elapsed"] = 46.0200000000186,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "11:59:48",
+			}, -- [12]
+			{
+				["elapsed"] = 17.0060000000522,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "11:58:09",
+			}, -- [13]
+			{
+				["elapsed"] = 75.028999999864,
+				["type"] = 6,
+				["clock"] = "11:55:55",
+			}, -- [14]
+			{
+				["elapsed"] = 12.0190000000875,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "11:55:36",
+			}, -- [15]
+			{
+				["elapsed"] = 12.0239999999758,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "11:54:30",
+			}, -- [16]
+			{
+				["elapsed"] = 18.0060000000522,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "11:54:07",
+			}, -- [17]
+			{
+				["elapsed"] = 19.0039999999572,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "11:53:35",
+			}, -- [18]
+			{
+				["elapsed"] = 28.0030000000261,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "11:53:02",
+			}, -- [19]
+			{
+				["elapsed"] = 12.0069999999832,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "11:52:34",
+			}, -- [20]
+			{
+				["elapsed"] = 15.0279999999329,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "11:52:08",
+			}, -- [21]
+			{
+				["elapsed"] = 22.0009999999311,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "11:51:34",
+			}, -- [22]
+			{
+				["elapsed"] = 24.0130000000354,
+				["type"] = 6,
+				["clock"] = "11:50:43",
+			}, -- [23]
+			{
+				["elapsed"] = 10.0230000000447,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "11:50:24",
+			}, -- [24]
+			{
+				["elapsed"] = 11.0219999998808,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "11:50:07",
+			}, -- [25]
+			{
+				["elapsed"] = 17.0069999999832,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "11:49:03",
+			}, -- [26]
+			{
+				["elapsed"] = 22.0160000000615,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "11:48:13",
+			}, -- [27]
+			{
+				["elapsed"] = 12.0009999999311,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "11:47:27",
+			}, -- [28]
+			{
+				["elapsed"] = 24.0050000001211,
+				["type"] = 6,
+				["clock"] = "11:46:33",
+			}, -- [29]
+			{
+				["elapsed"] = 14.0210000001825,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "11:46:09",
+			}, -- [30]
+		},
+		["combat_counter"] = 5055,
+		["totals"] = {
+			149225.658577, -- [1]
+			12439.226189, -- [2]
+			{
+				0, -- [1]
+				[0] = 0,
+				["alternatepower"] = 0,
+				[6] = 0,
+				[3] = 0,
+			}, -- [3]
+			{
+				["buff_uptime"] = 0,
+				["ress"] = 0,
+				["dead"] = 0,
+				["cc_break"] = 0,
+				["interrupt"] = 0,
+				["debuff_uptime"] = 0,
+				["dispell"] = 0,
+				["cooldowns_defensive"] = 0,
+			}, -- [4]
+			["voidzone_damage"] = 0,
+			["frags_total"] = 0,
+		},
+		["player_last_events"] = {
+		},
+		["frags_need_refresh"] = false,
+		["aura_timeline"] = {
+		},
+		["__call"] = {
+		},
+		["data_inicio"] = "11:37:10",
+		["end_time"] = 1602751.635,
+		["cleu_timeline"] = {
+		},
+		["totals_grupo"] = {
+			125820.348717, -- [1]
+			12439.180921, -- [2]
+			{
+				0, -- [1]
+				[0] = 0,
+				["alternatepower"] = 0,
+				[6] = 0,
+				[3] = 0,
+			}, -- [3]
+			{
+				["buff_uptime"] = 0,
+				["ress"] = 0,
+				["dead"] = 0,
+				["cc_break"] = 0,
+				["interrupt"] = 0,
+				["debuff_uptime"] = 0,
+				["dispell"] = 0,
+				["cooldowns_defensive"] = 0,
+			}, -- [4]
+		},
+		["overall_refreshed"] = true,
+		["PhaseData"] = {
+			{
+				1, -- [1]
+				1, -- [2]
+			}, -- [1]
+			["damage"] = {
+			},
+			["heal_section"] = {
+			},
+			["heal"] = {
+			},
+			["damage_section"] = {
+			},
+		},
+		["hasSaved"] = true,
+		["spells_cast_timeline"] = {
+		},
+		["data_fim"] = "12:08:53",
+		["overall_enemy_name"] = "-- x -- x --",
+		["CombatSkillCache"] = {
+		},
+		["frags"] = {
+		},
+		["start_time"] = 1601737.054,
+		["TimeData"] = {
+		},
+		["cleu_events"] = {
+			["n"] = 1,
+		},
+	},
+	["mythic_dungeon_currentsaved"] = {
+		["dungeon_name"] = "",
+		["started"] = false,
+		["segment_id"] = 0,
+		["ej_id"] = 0,
+		["started_at"] = 0,
+		["run_id"] = 0,
+		["level"] = 0,
+		["dungeon_zone_id"] = 0,
+		["previous_boss_killed_at"] = 0,
+	},
+	["ignore_nicktag"] = true,
 	["cached_talents"] = {
-		["Player-4465-00C4D96C"] = {
-			{
-				135995, -- [1]
-				5, -- [2]
-				1, -- [3]
-				2, -- [4]
-				1, -- [5]
-				256, -- [6]
-				5, -- [7]
-			}, -- [1]
-			{
-				135463, -- [1]
-				0, -- [2]
-				1, -- [3]
-				3, -- [4]
-				1, -- [5]
-				256, -- [6]
-				5, -- [7]
-			}, -- [2]
-			{
-				136053, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				1, -- [5]
-				256, -- [6]
-				5, -- [7]
-			}, -- [3]
-			{
-				135987, -- [1]
-				2, -- [2]
-				2, -- [3]
-				2, -- [4]
-				1, -- [5]
-				256, -- [6]
-				2, -- [7]
-			}, -- [4]
-			{
-				135940, -- [1]
-				3, -- [2]
-				2, -- [3]
-				3, -- [4]
-				1, -- [5]
-				256, -- [6]
-				3, -- [7]
-			}, -- [5]
-			{
-				136107, -- [1]
-				2, -- [2]
-				2, -- [3]
-				4, -- [4]
-				1, -- [5]
-				256, -- [6]
-				2, -- [7]
-			}, -- [6]
-			{
-				135863, -- [1]
-				1, -- [2]
-				3, -- [3]
-				2, -- [4]
-				1, -- [5]
-				256, -- [6]
-				1, -- [7]
-			}, -- [7]
-			{
-				136090, -- [1]
-				3, -- [2]
-				3, -- [3]
-				3, -- [4]
-				1, -- [5]
-				256, -- [6]
-				3, -- [7]
-			}, -- [8]
-			{
-				135926, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				1, -- [5]
-				256, -- [6]
-				3, -- [7]
-			}, -- [9]
-			{
-				132156, -- [1]
-				4, -- [2]
-				4, -- [3]
-				2, -- [4]
-				1, -- [5]
-				256, -- [6]
-				5, -- [7]
-			}, -- [10]
-			{
-				136170, -- [1]
-				0, -- [2]
-				4, -- [3]
-				4, -- [4]
-				1, -- [5]
-				256, -- [6]
-				2, -- [7]
-			}, -- [11]
-			{
-				136031, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				1, -- [5]
-				256, -- [6]
-				5, -- [7]
-			}, -- [12]
-			{
-				135898, -- [1]
-				1, -- [2]
-				5, -- [3]
-				3, -- [4]
-				1, -- [5]
-				256, -- [6]
-				1, -- [7]
-			}, -- [13]
-			{
-				136092, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				1, -- [5]
-				256, -- [6]
-				5, -- [7]
-			}, -- [14]
-			{
-				135939, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				1, -- [5]
-				256, -- [6]
-				1, -- [7]
-			}, -- [15]
-			{
-				135918, -- [1]
-				2, -- [2]
-				1, -- [3]
-				1, -- [4]
-				2, -- [5]
-				257, -- [6]
-				2, -- [7]
-			}, -- [16]
-			{
-				135953, -- [1]
-				3, -- [2]
-				1, -- [3]
-				2, -- [4]
-				2, -- [5]
-				257, -- [6]
-				3, -- [7]
-			}, -- [17]
-			{
-				135967, -- [1]
-				5, -- [2]
-				1, -- [3]
-				3, -- [4]
-				2, -- [5]
-				257, -- [6]
-				5, -- [7]
-			}, -- [18]
-			{
-				135976, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				2, -- [5]
-				257, -- [6]
-				5, -- [7]
-			}, -- [19]
-			{
-				135971, -- [1]
-				5, -- [2]
-				2, -- [3]
-				3, -- [4]
-				2, -- [5]
-				257, -- [6]
-				5, -- [7]
-			}, -- [20]
-			{
-				135922, -- [1]
-				1, -- [2]
-				3, -- [3]
-				1, -- [4]
-				2, -- [5]
-				257, -- [6]
-				1, -- [7]
-			}, -- [21]
-			{
-				135877, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				2, -- [5]
-				257, -- [6]
-				3, -- [7]
-			}, -- [22]
-			{
-				135928, -- [1]
-				3, -- [2]
-				3, -- [3]
-				4, -- [4]
-				2, -- [5]
-				257, -- [6]
-				3, -- [7]
-			}, -- [23]
-			{
-				135949, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				2, -- [5]
-				257, -- [6]
-				2, -- [7]
-			}, -- [24]
-			{
-				135916, -- [1]
-				1, -- [2]
-				4, -- [3]
-				2, -- [4]
-				2, -- [5]
-				257, -- [6]
-				3, -- [7]
-			}, -- [25]
-			{
-				135973, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				2, -- [5]
-				257, -- [6]
-				2, -- [7]
-			}, -- [26]
-			{
-				135943, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				2, -- [5]
-				257, -- [6]
-				2, -- [7]
-			}, -- [27]
-			{
-				132864, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				2, -- [5]
-				257, -- [6]
-				1, -- [7]
-			}, -- [28]
-			{
-				135977, -- [1]
-				5, -- [2]
-				5, -- [3]
-				3, -- [4]
-				2, -- [5]
-				257, -- [6]
-				5, -- [7]
-			}, -- [29]
-			{
-				136057, -- [1]
-				5, -- [2]
-				6, -- [3]
-				3, -- [4]
-				2, -- [5]
-				257, -- [6]
-				5, -- [7]
-			}, -- [30]
-			{
-				135980, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				2, -- [5]
-				257, -- [6]
-				1, -- [7]
-			}, -- [31]
-			{
-				136188, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				3, -- [5]
-				258, -- [6]
-				5, -- [7]
-			}, -- [32]
-			{
-				136160, -- [1]
-				0, -- [2]
-				1, -- [3]
-				3, -- [4]
-				3, -- [5]
-				258, -- [6]
-				5, -- [7]
-			}, -- [33]
-			{
-				136205, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				3, -- [5]
-				258, -- [6]
-				3, -- [7]
-			}, -- [34]
-			{
-				136207, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				3, -- [5]
-				258, -- [6]
-				2, -- [7]
-			}, -- [35]
-			{
-				136126, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				3, -- [5]
-				258, -- [6]
-				5, -- [7]
-			}, -- [36]
-			{
-				136184, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				3, -- [5]
-				258, -- [6]
-				2, -- [7]
-			}, -- [37]
-			{
-				136224, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				3, -- [5]
-				258, -- [6]
-				5, -- [7]
-			}, -- [38]
-			{
-				136208, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				3, -- [5]
-				258, -- [6]
-				1, -- [7]
-			}, -- [39]
-			{
-				135994, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				3, -- [5]
-				258, -- [6]
-				2, -- [7]
-			}, -- [40]
-			{
-				136130, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				3, -- [5]
-				258, -- [6]
-				3, -- [7]
-			}, -- [41]
-			{
-				136123, -- [1]
-				0, -- [2]
-				4, -- [3]
-				4, -- [4]
-				3, -- [5]
-				258, -- [6]
-				5, -- [7]
-			}, -- [42]
-			{
-				136164, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				3, -- [5]
-				258, -- [6]
-				1, -- [7]
-			}, -- [43]
-			{
-				136230, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				3, -- [5]
-				258, -- [6]
-				1, -- [7]
-			}, -- [44]
-			{
-				136165, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				3, -- [5]
-				258, -- [6]
-				2, -- [7]
-			}, -- [45]
-			{
-				136223, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				3, -- [5]
-				258, -- [6]
-				5, -- [7]
-			}, -- [46]
-			{
-				136200, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				3, -- [5]
-				258, -- [6]
-				1, -- [7]
-			}, -- [47]
-		},
-		["Player-4465-01E12147"] = {
-			{
-				135894, -- [1]
-				2, -- [2]
-				1, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [1]
-			{
-				135892, -- [1]
-				3, -- [2]
-				1, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				5, -- [7]
-			}, -- [2]
-			{
-				136096, -- [1]
-				0, -- [2]
-				1, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				5, -- [7]
-			}, -- [3]
-			{
-				135463, -- [1]
-				2, -- [2]
-				2, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [4]
-			{
-				136011, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				5, -- [7]
-			}, -- [5]
-			{
-				136170, -- [1]
-				5, -- [2]
-				2, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				5, -- [7]
-			}, -- [6]
-			{
-				136006, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [7]
-			{
-				136116, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [8]
-			{
-				135733, -- [1]
-				1, -- [2]
-				3, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				1, -- [7]
-			}, -- [9]
-			{
-				136153, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [10]
-			{
-				135856, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				2, -- [7]
-			}, -- [11]
-			{
-				136208, -- [1]
-				0, -- [2]
-				4, -- [3]
-				4, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [12]
-			{
-				136031, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				1, -- [7]
-			}, -- [13]
-			{
-				136129, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				1, -- [5]
-				62, -- [6]
-				5, -- [7]
-			}, -- [14]
-			{
-				136222, -- [1]
-				0, -- [2]
-				6, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				3, -- [7]
-			}, -- [15]
-			{
-				136048, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				1, -- [5]
-				62, -- [6]
-				1, -- [7]
-			}, -- [16]
-			{
-				135812, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				5, -- [7]
-			}, -- [17]
-			{
-				135821, -- [1]
-				0, -- [2]
-				1, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				5, -- [7]
-			}, -- [18]
-			{
-				135818, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				5, -- [7]
-			}, -- [19]
-			{
-				135815, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [20]
-			{
-				135807, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [21]
-			{
-				135813, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [22]
-			{
-				135826, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [23]
-			{
-				135808, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [24]
-			{
-				135805, -- [1]
-				0, -- [2]
-				3, -- [3]
-				4, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [25]
-			{
-				135827, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [26]
-			{
-				135806, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				2, -- [7]
-			}, -- [27]
-			{
-				135820, -- [1]
-				0, -- [2]
-				4, -- [3]
-				4, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [28]
-			{
-				136115, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				3, -- [7]
-			}, -- [29]
-			{
-				135903, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [30]
-			{
-				135817, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				2, -- [5]
-				63, -- [6]
-				5, -- [7]
-			}, -- [31]
-			{
-				135824, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				2, -- [5]
-				63, -- [6]
-				1, -- [7]
-			}, -- [32]
-			{
-				135850, -- [1]
-				2, -- [2]
-				1, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [33]
-			{
-				135846, -- [1]
-				1, -- [2]
-				1, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				5, -- [7]
-			}, -- [34]
-			{
-				135989, -- [1]
-				3, -- [2]
-				1, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [35]
-			{
-				135855, -- [1]
-				5, -- [2]
-				2, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				5, -- [7]
-			}, -- [36]
-			{
-				135842, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [37]
-			{
-				135840, -- [1]
-				2, -- [2]
-				2, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [38]
-			{
-				135864, -- [1]
-				3, -- [2]
-				2, -- [3]
-				4, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [39]
-			{
-				135845, -- [1]
-				3, -- [2]
-				3, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [40]
-			{
-				135865, -- [1]
-				1, -- [2]
-				3, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				1, -- [7]
-			}, -- [41]
-			{
-				135857, -- [1]
-				3, -- [2]
-				3, -- [3]
-				4, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [42]
-			{
-				136141, -- [1]
-				2, -- [2]
-				4, -- [3]
-				1, -- [4]
-				3, -- [5]
-				64, -- [6]
-				2, -- [7]
-			}, -- [43]
-			{
-				135860, -- [1]
-				3, -- [2]
-				4, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [44]
-			{
-				135849, -- [1]
-				5, -- [2]
-				4, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				5, -- [7]
-			}, -- [45]
-			{
-				135841, -- [1]
-				1, -- [2]
-				5, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				1, -- [7]
-			}, -- [46]
-			{
-				135852, -- [1]
-				3, -- [2]
-				5, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				3, -- [7]
-			}, -- [47]
-			{
-				135836, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				3, -- [5]
-				64, -- [6]
-				5, -- [7]
-			}, -- [48]
-			{
-				135988, -- [1]
-				1, -- [2]
-				7, -- [3]
-				2, -- [4]
-				3, -- [5]
-				64, -- [6]
-				1, -- [7]
-			}, -- [49]
-		},
 		["Player-4465-01D5BF39"] = {
 			{
 				135894, -- [1]
@@ -6683,3637 +10590,10 @@ _detalhes_database = {
 			}, -- [49]
 		},
 	},
-	["combat_id"] = 44,
-	["savedStyles"] = {
-		{
-			["show_statusbar"] = false,
-			["desaturated_menu2"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0, -- [4]
-			},
-			["menu_anchor"] = {
-				-60, -- [1]
-				0, -- [2]
-				["side"] = 1,
-			},
-			["menu2_icons"] = {
-				true, -- [1]
-				true, -- [2]
-				true, -- [3]
-			},
-			["bg_r"] = 0,
-			["skin"] = "Minimalistic",
-			["name"] = "final",
-			["following"] = {
-				["enabled"] = false,
-				["bar_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
-				["text_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
-			},
-			["color_buttons"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["switch_healer"] = false,
-			["bars_sort_direction"] = 1,
-			["menu_icons_size"] = 1,
-			["backdrop_texture"] = "None",
-			["instance_button_anchor"] = {
-				-27, -- [1]
-				1, -- [2]
-			},
-			["menu2_icons_size"] = 1.20000004768372,
-			["tooltip"] = {
-				["n_abilities"] = 3,
-				["n_enemies"] = 3,
-			},
-			["total_bar"] = {
-				["enabled"] = false,
-				["only_in_group"] = true,
-				["icon"] = "Interface\\ICONS\\INV_Sigil_Thorim",
-				["color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
-			},
-			["switch_healer_in_combat"] = false,
-			["switch_all_roles_in_combat"] = {
-				2, -- [1]
-				1, -- [2]
-				8, -- [3]
-			},
-			["switch_tank_in_combat"] = false,
-			["bg_alpha"] = 0.0199999995529652,
-			["row_info"] = {
-				["textR_outline"] = false,
-				["textL_outline"] = false,
-				["icon_file"] = "Interface\\AddOns\\Details\\images\\classes_small_alpha",
-				["percent_type"] = 1,
-				["start_after_icon"] = false,
-				["texture_background_file"] = "Interface\\TargetingFrame\\UI-StatusBar",
-				["textR_enable_custom_text"] = true,
-				["textR_custom_text"] = "{data1} ({data2}) ",
-				["fixed_texture_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
-				["textL_show_number"] = false,
-				["space"] = {
-					["right"] = 0,
-					["left"] = 0,
-					["between"] = 0,
-				},
-				["texture"] = "BantoBar",
-				["texture_background_class_color"] = true,
-				["fixed_texture_background_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					0.680000007152557, -- [4]
-				},
-				["font_face_file"] = "Fonts\\ARIALN.TTF",
-				["fixed_text_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
-				["backdrop"] = {
-					["enabled"] = false,
-					["texture"] = "Details BarBorder 2",
-					["color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["size"] = 12,
-				},
-				["textL_class_colors"] = false,
-				["textL_custom_text"] = "{data3}{data2}",
-				["textR_class_colors"] = false,
-				["alpha"] = 0,
-				["no_icon"] = false,
-				["font_size"] = 11,
-				["texture_background"] = "Blizzard",
-				["font_face"] = "Arial Narrow",
-				["texture_class_colors"] = true,
-				["height"] = 20,
-				["texture_file"] = "Interface\\AddOns\\Details\\images\\BantoBar",
-				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
-				["textL_enable_custom_text"] = true,
-			},
-			["closebutton_config"] = {
-				["pushed_texture"] = "Interface\\Buttons\\UI-Panel-MinimizeButton-Down",
-				["highlight_texture"] = "Interface\\Buttons\\UI-Panel-MinimizeButton-Highlight",
-				["anchor"] = {
-					0, -- [1]
-					0, -- [2]
-				},
-				["normal_texture"] = "Interface\\Buttons\\UI-Panel-MinimizeButton-Up",
-				["alpha"] = 0.8,
-				["size"] = {
-					19, -- [1]
-					19, -- [2]
-				},
-			},
-			["menu_alpha"] = {
-				["enabled"] = false,
-				["onleave"] = 1,
-				["ignorebars"] = false,
-				["iconstoo"] = true,
-				["onenter"] = 1,
-			},
-			["plugins_grow_direction"] = 1,
-			["menu2_anchor_down"] = {
-				32, -- [1]
-				0, -- [2]
-			},
-			["statusbar_info"] = {
-				["alpha"] = 0,
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
-			},
-			["strata"] = "LOW",
-			["menu_anchor_down"] = {
-				-22, -- [1]
-				0, -- [2]
-			},
-			["resetbutton_config"] = {
-				["highlight_vertexcolor"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
-				["anchor"] = {
-					2, -- [1]
-					0, -- [2]
-				},
-				["highlight_texture"] = "Interface\\Addons\\Details\\Images\\reset_button2",
-				["normal_texcoord"] = {
-					0, -- [1]
-					1, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
-				["normal_vertexcolor"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
-				["highlight_texcoord"] = {
-					0, -- [1]
-					1, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
-				["normal_texture"] = "Interface\\Addons\\Details\\Images\\reset_button2",
-				["size"] = {
-					13, -- [1]
-					13, -- [2]
-				},
-			},
-			["switch_tank"] = false,
-			["hide_in_combat_alpha"] = 0,
-			["switch_all_roles_after_wipe"] = false,
-			["menu_icons"] = {
-				true, -- [1]
-				true, -- [2]
-				true, -- [3]
-				true, -- [4]
-			},
-			["desaturated_menu"] = false,
-			["show_sidebars"] = false,
-			["row_show_animation"] = {
-				["anim"] = "Fade",
-				["options"] = {
-				},
-			},
-			["bars_grow_direction"] = 1,
-			["grab_on_top"] = false,
-			["toolbar_side"] = 2,
-			["switch_damager_in_combat"] = false,
-			["hide_icon"] = true,
-			["micro_displays_side"] = 2,
-			["menu2_anchor"] = {
-				32, -- [1]
-				3, -- [2]
-			},
-			["auto_current"] = true,
-			["instancebutton_config"] = {
-				["textcolor"] = {
-					0.8, -- [1]
-					0.6, -- [2]
-					0, -- [3]
-					0.8, -- [4]
-				},
-				["highlight_texture"] = "Interface\\Buttons\\UI-Panel-MinimizeButton-Highlight",
-				["textshadow"] = false,
-				["anchor"] = {
-					5, -- [1]
-					0, -- [2]
-				},
-				["textfont"] = "Friz Quadrata TT",
-				["textsize"] = 15,
-				["size"] = {
-					20, -- [1]
-					16, -- [2]
-				},
-			},
-			["bg_g"] = 0,
-			["window_scale"] = 1,
-			["hide_in_combat"] = false,
-			["auto_hide_menu"] = {
-				["left"] = true,
-				["right"] = true,
-			},
-			["switch_damager"] = false,
-			["hide_in_combat_type"] = 1,
-			["wallpaper"] = {
-				["enabled"] = false,
-				["texcoord"] = {
-					0, -- [1]
-					1, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
-				["anchor"] = "all",
-				["height"] = 0,
-				["alpha"] = 0.5,
-				["width"] = 0,
-			},
-			["stretch_button_side"] = 2,
-			["hide_out_of_combat"] = false,
-			["version"] = 3,
-			["attribute_text"] = {
-				["enabled"] = false,
-				["shadow"] = false,
-				["side"] = 1,
-				["text_size"] = 11,
-				["anchor"] = {
-					-17, -- [1]
-					10, -- [2]
-				},
-				["text_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-				},
-				["text_face"] = "Arial Narrow",
-			},
-			["bg_b"] = 0,
-		}, -- [1]
-	},
-	["ignore_nicktag"] = true,
-	["mythic_dungeon_currentsaved"] = {
-		["dungeon_name"] = "",
-		["started"] = false,
-		["segment_id"] = 0,
-		["ej_id"] = 0,
-		["started_at"] = 0,
-		["run_id"] = 0,
-		["level"] = 0,
-		["dungeon_zone_id"] = 0,
-		["previous_boss_killed_at"] = 0,
-	},
-	["announce_deaths"] = {
-		["enabled"] = false,
-		["last_hits"] = 1,
-		["only_first"] = 5,
-		["where"] = 1,
-	},
-	["tabela_overall"] = {
-		{
-			["tipo"] = 2,
-			["_ActorTable"] = {
-				{
-					["flag_original"] = 68168,
-					["totalabsorbed"] = 0.016763,
-					["damage_from"] = {
-						["Konac"] = true,
-					},
-					["targets"] = {
-						["Augustin"] = 323,
-						["Konac"] = 792,
-					},
-					["pets"] = {
-					},
-					["monster"] = true,
-					["last_dps"] = 0,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 1115.016763,
-					["serial"] = "Creature-0-4447-43-10046-3637-0003705D12",
-					["fight_component"] = true,
-					["end_time"] = 1601199490,
-					["friendlyfire_total"] = 0,
-					["damage_taken"] = 5407.016763,
-					["nome"] = "Deviate Guardian",
-					["spells"] = {
-						["_ActorTable"] = {
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 45,
-								["targets"] = {
-									["Augustin"] = 323,
-									["Konac"] = 792,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 1115,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 39,
-								["total"] = 1115,
-								["c_max"] = 0,
-								["DODGE"] = 2,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["MISS"] = 8,
-								["b_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["c_min"] = 0,
-								["n_amt"] = 29,
-								["a_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["last_event"] = 0,
-					["total"] = 1115.016763,
-					["friendlyfire"] = {
-					},
-					["custom"] = 0,
-					["tipo"] = 1,
-					["on_hold"] = false,
-					["start_time"] = 1601199441,
-					["delay"] = 0,
-					["dps_started"] = false,
-				}, -- [1]
-				{
-					["flag_original"] = 1297,
-					["totalabsorbed"] = 0.15562,
-					["damage_from"] = {
-						["Deviate Dreadfang"] = true,
-						["Deviate Shambler"] = true,
-						["Deviate Python"] = true,
-						["Deviate Guardian"] = true,
-						["Druid of the Fang"] = true,
-						["Deviate Venomwing"] = true,
-						["Evolving Ectoplasm"] = true,
-						["Deviate Crocolisk"] = true,
-						["Deviate Viper"] = true,
-						["Lord Pythas"] = true,
-						["Deviate Lasher"] = true,
-						["Deviate Adder"] = true,
-					},
-					["targets"] = {
-						["Druid of the Fang"] = 208,
-						["Kresh"] = 176,
-					},
-					["serial"] = "Player-4465-01D5BF39",
-					["pets"] = {
-					},
-					["boss_fight_component"] = true,
-					["classe"] = "MAGE",
-					["friendlyfire_total"] = 0,
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 384.15562,
-					["last_dps"] = 0,
-					["dps_started"] = false,
-					["end_time"] = 1601199490,
-					["damage_taken"] = 7910.15562,
-					["last_event"] = 0,
-					["nome"] = "Augustin",
-					["spec"] = 64,
-					["grupo"] = true,
-					["spells"] = {
-						["_ActorTable"] = {
-							["Fireball"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 103,
-								["targets"] = {
-									["Druid of the Fang"] = 208,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 208,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 3,
-								["total"] = 208,
-								["c_max"] = 0,
-								["id"] = "Fireball",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 3,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["Scorch"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 66,
-								["targets"] = {
-									["Kresh"] = 176,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 176,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 3,
-								["total"] = 176,
-								["c_max"] = 0,
-								["id"] = "Scorch",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 3,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["Chilled"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Deviate Lasher"] = 0,
-									["Deviate Guardian"] = 0,
-									["Evolving Ectoplasm"] = 0,
-									["Deviate Shambler"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 12,
-								["total"] = 0,
-								["c_max"] = 0,
-								["IMMUNE"] = 9,
-								["id"] = "Chilled",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["RESIST"] = 3,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["c_min"] = 0,
-								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["friendlyfire"] = {
-					},
-					["custom"] = 0,
-					["tipo"] = 1,
-					["on_hold"] = false,
-					["start_time"] = 1601199475,
-					["delay"] = 0,
-					["total"] = 384.15562,
-				}, -- [2]
-				{
-					["flag_original"] = 1298,
-					["totalabsorbed"] = 0.204869,
-					["damage_from"] = {
-						["Deviate Dreadfang"] = true,
-						["Deviate Shambler"] = true,
-						["Verdan the Everliving"] = true,
-						["Deviate Python"] = true,
-						["Deviate Lasher"] = true,
-						["Deviate Guardian"] = true,
-						["Lord Pythas"] = true,
-						["Kresh"] = true,
-						["Druid of the Fang"] = true,
-						["Deviate Venomwing"] = true,
-						["Evolving Ectoplasm"] = true,
-						["Deviate Adder"] = true,
-						["Deviate Viper"] = true,
-						["Lady Anacondra"] = true,
-						["Deviate Crocolisk"] = true,
-						["Lord Cobrahn"] = true,
-					},
-					["targets"] = {
-						["Lord Serpentis"] = 2918,
-						["Deviate Shambler"] = 20824,
-						["Deviate Guardian"] = 5407,
-						["Deviate Adder"] = 9846,
-						["Deviate Viper"] = 5429,
-						["Lady Anacondra"] = 2301,
-						["Deviate Dreadfang"] = 4902,
-						["Verdan the Everliving"] = 4258,
-						["Deviate Lasher"] = 6020,
-						["Druid of the Fang"] = 34597,
-						["Deviate Venomwing"] = 11069,
-						["Evolving Ectoplasm"] = 6621,
-						["Deviate Crocolisk"] = 2184,
-						["Kresh"] = 1412,
-						["Lord Cobrahn"] = 2292,
-						["Deviate Python"] = 2746,
-						["Lord Pythas"] = 2610,
-					},
-					["serial"] = "Player-4465-00C4D96C",
-					["pets"] = {
-					},
-					["boss_fight_component"] = true,
-					["friendlyfire_total"] = 0,
-					["classe"] = "PRIEST",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 125436.204869,
-					["damage_taken"] = 15495.204869,
-					["dps_started"] = false,
-					["total"] = 125436.204869,
-					["last_dps"] = 0,
-					["last_event"] = 0,
-					["nome"] = "Konac",
-					["spells"] = {
-						["_ActorTable"] = {
-							["Mind Blast"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 568,
-								["targets"] = {
-									["Druid of the Fang"] = 1674,
-									["Deviate Venomwing"] = 543,
-									["Deviate Adder"] = 559,
-									["Lady Anacondra"] = 548,
-									["Verdan the Everliving"] = 552,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 3876,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 7,
-								["total"] = 3876,
-								["c_max"] = 0,
-								["id"] = "Mind Blast",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 7,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["Holy Fire"] = {
-								["c_amt"] = 2,
-								["b_amt"] = 0,
-								["c_dmg"] = 1435,
-								["g_amt"] = 0,
-								["n_max"] = 492,
-								["targets"] = {
-									["Deviate Dreadfang"] = 568,
-									["Deviate Venomwing"] = 1358,
-									["Verdan the Everliving"] = 657,
-									["Druid of the Fang"] = 1812,
-									["Lord Serpentis"] = 647,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 3607,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 35,
-								["total"] = 5042,
-								["c_max"] = 752,
-								["id"] = "Holy Fire",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 33,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["!Melee"] = {
-								["c_amt"] = 1,
-								["b_amt"] = 0,
-								["c_dmg"] = 298,
-								["g_amt"] = 0,
-								["n_max"] = 181,
-								["targets"] = {
-									["Deviate Shambler"] = 298,
-									["Deviate Adder"] = 181,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 181,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 2,
-								["total"] = 479,
-								["c_max"] = 298,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 1,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["Smite"] = {
-								["c_amt"] = 7,
-								["b_amt"] = 0,
-								["c_dmg"] = 4775,
-								["g_amt"] = 0,
-								["n_max"] = 488,
-								["targets"] = {
-									["Druid of the Fang"] = 5779,
-									["Deviate Shambler"] = 5072,
-									["Evolving Ectoplasm"] = 2083,
-									["Deviate Viper"] = 458,
-									["Verdan the Everliving"] = 2279,
-									["Deviate Dreadfang"] = 2051,
-									["Deviate Venomwing"] = 947,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 13894,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 37,
-								["total"] = 18669,
-								["c_max"] = 707,
-								["id"] = "Smite",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 30,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["Holy Nova"] = {
-								["c_amt"] = 11,
-								["b_amt"] = 0,
-								["c_dmg"] = 3327,
-								["g_amt"] = 0,
-								["n_max"] = 218,
-								["targets"] = {
-									["Druid of the Fang"] = 1121,
-									["Deviate Shambler"] = 1336,
-									["Evolving Ectoplasm"] = 498,
-									["Deviate Adder"] = 1211,
-									["Deviate Python"] = 2590,
-									["Lord Cobrahn"] = 193,
-									["Deviate Venomwing"] = 192,
-									["Deviate Lasher"] = 6020,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 9834,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 59,
-								["total"] = 13161,
-								["c_max"] = 326,
-								["id"] = "Holy Nova",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 48,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["!Autoshot"] = {
-								["c_amt"] = 14,
-								["b_amt"] = 0,
-								["c_dmg"] = 2811,
-								["g_amt"] = 0,
-								["n_max"] = 170,
-								["targets"] = {
-									["Deviate Dreadfang"] = 435,
-									["Deviate Shambler"] = 3666,
-									["Deviate Guardian"] = 2443,
-									["Lord Serpentis"] = 1501,
-									["Lady Anacondra"] = 973,
-									["Druid of the Fang"] = 7553,
-									["Deviate Venomwing"] = 3528,
-									["Evolving Ectoplasm"] = 1076,
-									["Deviate Adder"] = 2117,
-									["Deviate Viper"] = 915,
-									["Lord Pythas"] = 1674,
-									["Lord Cobrahn"] = 1319,
-									["Kresh"] = 788,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 25177,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 217,
-								["total"] = 27988,
-								["c_max"] = 247,
-								["IMMUNE"] = 4,
-								["id"] = "!Autoshot",
-								["r_dmg"] = 2072,
-								["a_dmg"] = 0,
-								["RESIST"] = 1,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["c_min"] = 0,
-								["n_amt"] = 198,
-								["b_dmg"] = 0,
-								["r_amt"] = 21,
-							},
-							["Shadow Word: Pain"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 157,
-								["targets"] = {
-									["Deviate Dreadfang"] = 1848,
-									["Deviate Shambler"] = 10452,
-									["Verdan the Everliving"] = 770,
-									["Lord Serpentis"] = 770,
-									["Deviate Python"] = 156,
-									["Deviate Guardian"] = 2964,
-									["Lord Pythas"] = 936,
-									["Kresh"] = 624,
-									["Druid of the Fang"] = 16658,
-									["Deviate Venomwing"] = 4501,
-									["Evolving Ectoplasm"] = 2964,
-									["Deviate Adder"] = 5778,
-									["Deviate Viper"] = 4056,
-									["Lady Anacondra"] = 780,
-									["Deviate Crocolisk"] = 2184,
-									["Lord Cobrahn"] = 780,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 56221,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 363,
-								["total"] = 56221,
-								["c_max"] = 0,
-								["IMMUNE"] = 1,
-								["id"] = "Shadow Word: Pain",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["RESIST"] = 1,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["c_min"] = 0,
-								["n_amt"] = 361,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["grupo"] = true,
-					["spec"] = 257,
-					["friendlyfire"] = {
-					},
-					["custom"] = 0,
-					["tipo"] = 1,
-					["on_hold"] = false,
-					["start_time"] = 1601198584,
-					["delay"] = 0,
-					["end_time"] = 1601199490,
-				}, -- [3]
-				{
-					["flag_original"] = 68168,
-					["totalabsorbed"] = 0.029179,
-					["damage_from"] = {
-						["Konac"] = true,
-					},
-					["targets"] = {
-						["Augustin"] = 433,
-						["Konac"] = 1398,
-					},
-					["serial"] = "Creature-0-4447-43-10046-3640-0004705D11",
-					["pets"] = {
-					},
-					["last_dps"] = 0,
-					["dps_started"] = false,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 1831.029179,
-					["fight_component"] = true,
-					["monster"] = true,
-					["total"] = 1831.029179,
-					["friendlyfire"] = {
-					},
-					["last_event"] = 0,
-					["nome"] = "Evolving Ectoplasm",
-					["spells"] = {
-						["_ActorTable"] = {
-							["!Melee"] = {
-								["c_amt"] = 1,
-								["b_amt"] = 0,
-								["c_dmg"] = 72,
-								["g_amt"] = 0,
-								["n_max"] = 46,
-								["targets"] = {
-									["Augustin"] = 433,
-									["Konac"] = 1398,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 1759,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 57,
-								["total"] = 1831,
-								["c_max"] = 72,
-								["MISS"] = 4,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["DODGE"] = 3,
-								["b_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["c_min"] = 0,
-								["n_amt"] = 49,
-								["a_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["boss_fight_component"] = true,
-					["end_time"] = 1601199490,
-					["on_hold"] = false,
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 6621.029179,
-					["start_time"] = 1601199361,
-					["delay"] = 0,
-					["friendlyfire_total"] = 0,
-				}, -- [4]
-				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.006089,
-					["damage_from"] = {
-						["Konac"] = true,
-					},
-					["targets"] = {
-						["Konac"] = 302,
-					},
-					["pets"] = {
-					},
-					["damage_taken"] = 2301.006089,
-					["boss_fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 302.006089,
-					["serial"] = "Creature-0-4447-43-10046-3671-0000705D11",
-					["dps_started"] = false,
-					["end_time"] = 1601199540,
-					["last_dps"] = 0,
-					["friendlyfire"] = {
-					},
-					["nome"] = "Lady Anacondra",
-					["spells"] = {
-						["_ActorTable"] = {
-							["Healing Touch"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Healing Touch",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 1,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 64,
-								["targets"] = {
-									["Konac"] = 236,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 236,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 4,
-								["total"] = 236,
-								["c_max"] = 0,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 4,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["Lightning Bolt"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 66,
-								["targets"] = {
-									["Konac"] = 66,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 66,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 2,
-								["total"] = 66,
-								["c_max"] = 0,
-								["id"] = "Lightning Bolt",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["a_amt"] = 0,
-								["m_crit"] = 0,
-								["RESIST"] = 1,
-								["m_amt"] = 0,
-								["successful_casted"] = 2,
-								["b_dmg"] = 0,
-								["n_amt"] = 1,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["last_event"] = 0,
-					["total"] = 302.006089,
-					["friendlyfire_total"] = 0,
-					["custom"] = 0,
-					["tipo"] = 1,
-					["on_hold"] = false,
-					["start_time"] = 1601199520,
-					["delay"] = 0,
-					["monster"] = true,
-				}, -- [5]
-				{
-					["flag_original"] = 68168,
-					["totalabsorbed"] = 135.09376,
-					["damage_from"] = {
-						["Augustin"] = true,
-						["Konac"] = true,
-					},
-					["targets"] = {
-						["Konac"] = 1300,
-						["Augustin"] = 2246,
-					},
-					["serial"] = "Creature-0-4447-43-10046-3840-0000705D11",
-					["pets"] = {
-					},
-					["damage_taken"] = 34805.09376,
-					["dps_started"] = false,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 3546.09376,
-					["friendlyfire"] = {
-					},
-					["monster"] = true,
-					["end_time"] = 1601199540,
-					["on_hold"] = false,
-					["last_event"] = 0,
-					["nome"] = "Druid of the Fang",
-					["spells"] = {
-						["_ActorTable"] = {
-							["Healing Touch"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Healing Touch",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 12,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 58,
-								["targets"] = {
-									["Konac"] = 520,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 520,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 23,
-								["total"] = 520,
-								["c_max"] = 0,
-								["DODGE"] = 2,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["MISS"] = 7,
-								["b_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["c_min"] = 0,
-								["n_amt"] = 14,
-								["a_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							["Druid's Slumber"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Konac"] = 0,
-									["Augustin"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 2,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Druid's Slumber",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["a_amt"] = 0,
-								["m_crit"] = 0,
-								["RESIST"] = 2,
-								["m_amt"] = 0,
-								["successful_casted"] = 4,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["Lightning Bolt"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 88,
-								["targets"] = {
-									["Augustin"] = 2246,
-									["Konac"] = 780,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 3026,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 96,
-								["total"] = 3026,
-								["c_max"] = 0,
-								["id"] = "Lightning Bolt",
-								["r_dmg"] = 154,
-								["a_dmg"] = 0,
-								["a_amt"] = 0,
-								["m_crit"] = 0,
-								["RESIST"] = 53,
-								["m_amt"] = 0,
-								["successful_casted"] = 91,
-								["b_dmg"] = 0,
-								["n_amt"] = 43,
-								["c_min"] = 0,
-								["r_amt"] = 4,
-							},
-							["Serpent Form"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Serpent Form",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 4,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["boss_fight_component"] = true,
-					["total"] = 3546.09376,
-					["fight_component"] = true,
-					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
-					["start_time"] = 1601199250,
-					["delay"] = 0,
-					["friendlyfire_total"] = 0,
-				}, -- [6]
-				{
-					["flag_original"] = 68168,
-					["totalabsorbed"] = 0.012926,
-					["damage_from"] = {
-						["Konac"] = true,
-					},
-					["targets"] = {
-						["Augustin"] = 579,
-						["Konac"] = 1296,
-					},
-					["pets"] = {
-					},
-					["dps_started"] = false,
-					["damage_taken"] = 5429.012926,
-					["friendlyfire_total"] = 0,
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 1875.012926,
-					["serial"] = "Creature-0-4447-43-10046-5755-0000705D11",
-					["monster"] = true,
-					["total"] = 1875.012926,
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
-					["nome"] = "Deviate Viper",
-					["spells"] = {
-						["_ActorTable"] = {
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 52,
-								["targets"] = {
-									["Augustin"] = 411,
-									["Konac"] = 1236,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 1647,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 49,
-								["total"] = 1647,
-								["c_max"] = 0,
-								["MISS"] = 4,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["DODGE"] = 5,
-								["b_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["c_min"] = 0,
-								["n_amt"] = 40,
-								["a_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							["Localized Toxin"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 14,
-								["targets"] = {
-									["Augustin"] = 168,
-									["Konac"] = 60,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 228,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 27,
-								["total"] = 228,
-								["c_max"] = 0,
-								["id"] = "Localized Toxin",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["a_amt"] = 0,
-								["m_crit"] = 0,
-								["RESIST"] = 5,
-								["m_amt"] = 0,
-								["successful_casted"] = 8,
-								["b_dmg"] = 0,
-								["n_amt"] = 22,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["last_event"] = 0,
-					["end_time"] = 1601199710,
-					["classe"] = "UNKNOW",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["on_hold"] = false,
-					["start_time"] = 1601199584,
-					["delay"] = 0,
-					["fight_component"] = true,
-				}, -- [7]
-				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.037736,
-					["damage_from"] = {
-						["Konac"] = true,
-					},
-					["targets"] = {
-						["Augustin"] = 1098,
-						["Konac"] = 1427,
-					},
-					["pets"] = {
-					},
-					["dps_started"] = false,
-					["damage_taken"] = 9846.037736,
-					["friendlyfire_total"] = 0,
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 2525.037736,
-					["serial"] = "Creature-0-4447-43-10046-5048-0003705D12",
-					["monster"] = true,
-					["total"] = 2525.037736,
-					["friendlyfire"] = {
-					},
-					["last_dps"] = 0,
-					["nome"] = "Deviate Adder",
-					["spells"] = {
-						["_ActorTable"] = {
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 49,
-								["targets"] = {
-									["Augustin"] = 978,
-									["Konac"] = 1427,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 2405,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 72,
-								["total"] = 2405,
-								["c_max"] = 0,
-								["DODGE"] = 5,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["MISS"] = 6,
-								["b_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["c_min"] = 0,
-								["n_amt"] = 61,
-								["a_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							["Poison"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 12,
-								["targets"] = {
-									["Augustin"] = 120,
-									["Konac"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 120,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 16,
-								["total"] = 120,
-								["c_max"] = 0,
-								["id"] = "Poison",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["a_amt"] = 0,
-								["m_crit"] = 0,
-								["RESIST"] = 6,
-								["m_amt"] = 0,
-								["successful_casted"] = 7,
-								["b_dmg"] = 0,
-								["n_amt"] = 10,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["last_event"] = 0,
-					["end_time"] = 1601199710,
-					["classe"] = "UNKNOW",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["on_hold"] = false,
-					["start_time"] = 1601199557,
-					["delay"] = 0,
-					["fight_component"] = true,
-				}, -- [8]
-				{
-					["flag_original"] = 68168,
-					["totalabsorbed"] = 0.029448,
-					["damage_from"] = {
-						["Konac"] = true,
-					},
-					["targets"] = {
-						["Augustin"] = 251,
-						["Konac"] = 418,
-					},
-					["serial"] = "Creature-0-4447-43-10046-8886-0002F05D12",
-					["pets"] = {
-					},
-					["boss_fight_component"] = true,
-					["fight_component"] = true,
-					["friendlyfire_total"] = 0,
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 669.029448,
-					["dps_started"] = false,
-					["monster"] = true,
-					["total"] = 669.029448,
-					["last_dps"] = 0,
-					["last_event"] = 0,
-					["nome"] = "Deviate Python",
-					["spells"] = {
-						["_ActorTable"] = {
-							["!Melee"] = {
-								["c_amt"] = 3,
-								["b_amt"] = 0,
-								["c_dmg"] = 155,
-								["g_amt"] = 0,
-								["n_max"] = 29,
-								["targets"] = {
-									["Augustin"] = 251,
-									["Konac"] = 418,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 514,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 32,
-								["total"] = 669,
-								["c_max"] = 54,
-								["MISS"] = 5,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["DODGE"] = 1,
-								["b_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["c_min"] = 0,
-								["n_amt"] = 23,
-								["a_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["damage_taken"] = 2746.029448,
-					["end_time"] = 1601199710,
-					["on_hold"] = false,
-					["custom"] = 0,
-					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
-					["start_time"] = 1601199675,
-					["delay"] = 0,
-					["classe"] = "UNKNOW",
-				}, -- [9]
-				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.006203,
-					["damage_from"] = {
-						["Konac"] = true,
-					},
-					["targets"] = {
-						["Konac"] = 211,
-					},
-					["pets"] = {
-					},
-					["damage_taken"] = 2292.006203,
-					["boss_fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 211.006203,
-					["serial"] = "Creature-0-4447-43-10046-3669-0000705D11",
-					["dps_started"] = false,
-					["end_time"] = 1601200017,
-					["last_dps"] = 0,
-					["friendlyfire"] = {
-					},
-					["nome"] = "Lord Cobrahn",
-					["spells"] = {
-						["_ActorTable"] = {
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 87,
-								["targets"] = {
-									["Konac"] = 87,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 87,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 2,
-								["total"] = 87,
-								["c_max"] = 0,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["DODGE"] = 1,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["m_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 1,
-								["a_amt"] = 0,
-								["r_amt"] = 0,
-							},
-							["Lightning Bolt"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 87,
-								["targets"] = {
-									["Konac"] = 124,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 124,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 5,
-								["total"] = 124,
-								["c_max"] = 0,
-								["id"] = "Lightning Bolt",
-								["r_dmg"] = 37,
-								["a_dmg"] = 0,
-								["a_amt"] = 0,
-								["m_crit"] = 0,
-								["RESIST"] = 3,
-								["m_amt"] = 0,
-								["successful_casted"] = 5,
-								["b_dmg"] = 0,
-								["n_amt"] = 2,
-								["c_min"] = 0,
-								["r_amt"] = 1,
-							},
-							["Cobrahn Serpent Form"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Cobrahn Serpent Form",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 1,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["last_event"] = 0,
-					["total"] = 211.006203,
-					["friendlyfire_total"] = 0,
-					["custom"] = 0,
-					["tipo"] = 1,
-					["on_hold"] = false,
-					["start_time"] = 1601199994,
-					["delay"] = 0,
-					["monster"] = true,
-				}, -- [10]
-				{
-					["flag_original"] = 68168,
-					["totalabsorbed"] = 0.030123,
-					["damage_from"] = {
-						["Konac"] = true,
-					},
-					["targets"] = {
-						["Konac"] = 152,
-						["Augustin"] = 161,
-					},
-					["serial"] = "Creature-0-4447-43-10046-5053-0001F05D11",
-					["pets"] = {
-					},
-					["boss_fight_component"] = true,
-					["fight_component"] = true,
-					["friendlyfire_total"] = 0,
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 313.030123,
-					["dps_started"] = false,
-					["monster"] = true,
-					["total"] = 313.030123,
-					["last_dps"] = 0,
-					["last_event"] = 0,
-					["nome"] = "Deviate Crocolisk",
-					["spells"] = {
-						["_ActorTable"] = {
-							["!Melee"] = {
-								["c_amt"] = 1,
-								["b_amt"] = 0,
-								["c_dmg"] = 58,
-								["g_amt"] = 0,
-								["n_max"] = 26,
-								["targets"] = {
-									["Konac"] = 152,
-									["Augustin"] = 161,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 255,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 15,
-								["total"] = 313,
-								["c_max"] = 58,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["MISS"] = 3,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["m_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 11,
-								["a_amt"] = 0,
-								["r_amt"] = 0,
-							},
-							["Tendon Rip"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Tendon Rip",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 1,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["damage_taken"] = 2184.030123,
-					["end_time"] = 1601200059,
-					["on_hold"] = false,
-					["custom"] = 0,
-					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
-					["start_time"] = 1601200019,
-					["delay"] = 0,
-					["classe"] = "UNKNOW",
-				}, -- [11]
-				{
-					["flag_original"] = 2600,
-					["totalabsorbed"] = 0.010744,
-					["damage_from"] = {
-						["Konac"] = true,
-						["Augustin"] = true,
-					},
-					["targets"] = {
-						["Konac"] = 129,
-					},
-					["pets"] = {
-					},
-					["last_event"] = 0,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 129.010744,
-					["damage_taken"] = 1588.010744,
-					["dps_started"] = false,
-					["end_time"] = 1601200267,
-					["serial"] = "Creature-0-4447-43-10046-3653-0000705D11",
-					["last_dps"] = 0,
-					["boss_fight_component"] = true,
-					["spells"] = {
-						["_ActorTable"] = {
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 45,
-								["targets"] = {
-									["Konac"] = 129,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 129,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 5,
-								["total"] = 129,
-								["c_max"] = 0,
-								["MISS"] = 1,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["DODGE"] = 1,
-								["b_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["c_min"] = 0,
-								["n_amt"] = 3,
-								["a_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["friendlyfire"] = {
-					},
-					["total"] = 129.010744,
-					["nome"] = "Kresh",
-					["custom"] = 0,
-					["tipo"] = 1,
-					["on_hold"] = false,
-					["start_time"] = 1601200253,
-					["delay"] = 0,
-					["friendlyfire_total"] = 0,
-				}, -- [12]
-				{
-					["flag_original"] = 68168,
-					["totalabsorbed"] = 402.066103,
-					["damage_from"] = {
-						["Konac"] = true,
-					},
-					["targets"] = {
-						["Augustin"] = 304,
-						["Konac"] = 2902,
-					},
-					["serial"] = "Creature-0-4447-43-10046-5761-0003705D12",
-					["pets"] = {
-					},
-					["last_dps"] = 0,
-					["dps_started"] = false,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 3206.066103,
-					["monster"] = true,
-					["fight_component"] = true,
-					["total"] = 3206.066103,
-					["friendlyfire"] = {
-					},
-					["last_event"] = 0,
-					["nome"] = "Deviate Shambler",
-					["spells"] = {
-						["_ActorTable"] = {
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 49,
-								["targets"] = {
-									["Augustin"] = 304,
-									["Konac"] = 2902,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 3206,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 101,
-								["total"] = 3206,
-								["c_max"] = 0,
-								["MISS"] = 11,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["DODGE"] = 5,
-								["b_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["c_min"] = 0,
-								["n_amt"] = 85,
-								["a_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							["Wild Regeneration"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Wild Regeneration",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 7,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["boss_fight_component"] = true,
-					["end_time"] = 1601200316,
-					["on_hold"] = false,
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 20824.066103,
-					["start_time"] = 1601200108,
-					["delay"] = 0,
-					["friendlyfire_total"] = 0,
-				}, -- [13]
-				{
-					["flag_original"] = 68168,
-					["totalabsorbed"] = 220.041795,
-					["damage_from"] = {
-						["Konac"] = true,
-					},
-					["targets"] = {
-						["Augustin"] = 1536,
-						["Konac"] = 1389,
-					},
-					["pets"] = {
-					},
-					["dps_started"] = false,
-					["damage_taken"] = 6020.041795,
-					["friendlyfire_total"] = 0,
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 2925.041795,
-					["serial"] = "Creature-0-4447-43-10046-5055-0008F05D12",
-					["fight_component"] = true,
-					["total"] = 2925.041795,
-					["classe"] = "UNKNOW",
-					["last_dps"] = 0,
-					["nome"] = "Deviate Lasher",
-					["spells"] = {
-						["_ActorTable"] = {
-							["!Melee"] = {
-								["c_amt"] = 4,
-								["b_amt"] = 0,
-								["c_dmg"] = 244,
-								["g_amt"] = 0,
-								["n_max"] = 36,
-								["targets"] = {
-									["Augustin"] = 774,
-									["Konac"] = 928,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 1458,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 66,
-								["total"] = 1702,
-								["c_max"] = 66,
-								["MISS"] = 4,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["DODGE"] = 7,
-								["b_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["c_min"] = 0,
-								["n_amt"] = 51,
-								["a_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							["Wide Slash"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 51,
-								["targets"] = {
-									["Konac"] = 461,
-									["Augustin"] = 762,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 1223,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 35,
-								["total"] = 1223,
-								["c_max"] = 0,
-								["DODGE"] = 1,
-								["id"] = "Wide Slash",
-								["r_dmg"] = 0,
-								["MISS"] = 5,
-								["b_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 21,
-								["c_min"] = 0,
-								["n_amt"] = 29,
-								["a_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["last_event"] = 0,
-					["end_time"] = 1601200410,
-					["monster"] = true,
-					["custom"] = 0,
-					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
-					["start_time"] = 1601200342,
-					["delay"] = 0,
-					["on_hold"] = false,
-				}, -- [14]
-				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.007168,
-					["damage_from"] = {
-						["Konac"] = true,
-					},
-					["targets"] = {
-						["Konac"] = 1089,
-						["Augustin"] = 234,
-					},
-					["pets"] = {
-					},
-					["damage_taken"] = 2610.007168,
-					["boss_fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 1323.007168,
-					["serial"] = "Creature-0-4447-43-10046-3670-0000705D11",
-					["dps_started"] = false,
-					["end_time"] = 1601200630,
-					["last_dps"] = 0,
-					["friendlyfire"] = {
-					},
-					["nome"] = "Lord Pythas",
-					["spells"] = {
-						["_ActorTable"] = {
-							["Sleep"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Augustin"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 1,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Sleep",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["a_amt"] = 0,
-								["m_crit"] = 0,
-								["RESIST"] = 1,
-								["m_amt"] = 0,
-								["successful_casted"] = 3,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["Thunderclap"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 81,
-								["targets"] = {
-									["Konac"] = 0,
-									["Augustin"] = 234,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 234,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 6,
-								["total"] = 234,
-								["c_max"] = 0,
-								["id"] = "Thunderclap",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["a_amt"] = 0,
-								["m_crit"] = 0,
-								["RESIST"] = 3,
-								["m_amt"] = 0,
-								["successful_casted"] = 3,
-								["b_dmg"] = 0,
-								["n_amt"] = 3,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 76,
-								["targets"] = {
-									["Konac"] = 1019,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 1019,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 30,
-								["total"] = 1019,
-								["c_max"] = 0,
-								["MISS"] = 8,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["DODGE"] = 2,
-								["b_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["c_min"] = 0,
-								["n_amt"] = 20,
-								["a_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							["Lightning Bolt"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 70,
-								["targets"] = {
-									["Konac"] = 70,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 70,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 4,
-								["total"] = 70,
-								["c_max"] = 0,
-								["id"] = "Lightning Bolt",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["a_amt"] = 0,
-								["m_crit"] = 0,
-								["RESIST"] = 3,
-								["m_amt"] = 0,
-								["successful_casted"] = 4,
-								["b_dmg"] = 0,
-								["n_amt"] = 1,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["Healing Touch"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Healing Touch",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 2,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["last_event"] = 0,
-					["total"] = 1323.007168,
-					["friendlyfire_total"] = 0,
-					["custom"] = 0,
-					["tipo"] = 1,
-					["on_hold"] = false,
-					["start_time"] = 1601200568,
-					["delay"] = 0,
-					["monster"] = true,
-				}, -- [15]
-				{
-					["flag_original"] = 68168,
-					["totalabsorbed"] = 0.036234,
-					["damage_from"] = {
-						["Konac"] = true,
-					},
-					["targets"] = {
-						["Augustin"] = 591,
-						["Konac"] = 1244,
-					},
-					["pets"] = {
-					},
-					["dps_started"] = false,
-					["damage_taken"] = 11069.036234,
-					["friendlyfire_total"] = 0,
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 1835.036234,
-					["serial"] = "Creature-0-4447-43-10046-5756-0000F05D13",
-					["fight_component"] = true,
-					["total"] = 1835.036234,
-					["classe"] = "UNKNOW",
-					["last_dps"] = 0,
-					["nome"] = "Deviate Venomwing",
-					["spells"] = {
-						["_ActorTable"] = {
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 48,
-								["targets"] = {
-									["Augustin"] = 42,
-									["Konac"] = 175,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 217,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 6,
-								["total"] = 217,
-								["c_max"] = 0,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["MISS"] = 1,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["m_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 5,
-								["a_amt"] = 0,
-								["r_amt"] = 0,
-							},
-							["Toxic Spit"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 63,
-								["targets"] = {
-									["Augustin"] = 549,
-									["Konac"] = 1069,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 1618,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 32,
-								["total"] = 1618,
-								["c_max"] = 0,
-								["id"] = "Toxic Spit",
-								["r_dmg"] = 131,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 30,
-								["b_dmg"] = 0,
-								["n_amt"] = 32,
-								["c_min"] = 0,
-								["r_amt"] = 4,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["last_event"] = 0,
-					["end_time"] = 1601200917,
-					["monster"] = true,
-					["custom"] = 0,
-					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
-					["start_time"] = 1601200813,
-					["delay"] = 0,
-					["on_hold"] = false,
-				}, -- [16]
-				{
-					["flag_original"] = 68168,
-					["totalabsorbed"] = 0.027166,
-					["damage_from"] = {
-						["Konac"] = true,
-					},
-					["targets"] = {
-						["Augustin"] = 154,
-						["Konac"] = 454,
-					},
-					["pets"] = {
-					},
-					["monster"] = true,
-					["last_dps"] = 0,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 608.027166,
-					["serial"] = "Creature-0-4447-43-10046-5056-0002705D12",
-					["fight_component"] = true,
-					["end_time"] = 1601201097,
-					["friendlyfire_total"] = 0,
-					["damage_taken"] = 4902.027166,
-					["nome"] = "Deviate Dreadfang",
-					["spells"] = {
-						["_ActorTable"] = {
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 57,
-								["targets"] = {
-									["Augustin"] = 154,
-									["Konac"] = 454,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 608,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 17,
-								["total"] = 608,
-								["c_max"] = 0,
-								["MISS"] = 2,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["DODGE"] = 1,
-								["b_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["c_min"] = 0,
-								["n_amt"] = 14,
-								["a_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							["Terrify"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Augustin"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 1,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Terrify",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["a_amt"] = 0,
-								["m_crit"] = 0,
-								["RESIST"] = 1,
-								["m_amt"] = 0,
-								["successful_casted"] = 2,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["last_event"] = 0,
-					["total"] = 608.027166,
-					["friendlyfire"] = {
-					},
-					["custom"] = 0,
-					["tipo"] = 1,
-					["on_hold"] = false,
-					["start_time"] = 1601201055,
-					["delay"] = 0,
-					["dps_started"] = false,
-				}, -- [17]
-				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.01331,
-					["damage_from"] = {
-						["Konac"] = true,
-					},
-					["targets"] = {
-					},
-					["pets"] = {
-					},
-					["damage_taken"] = 2918.01331,
-					["boss_fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.01331,
-					["serial"] = "Creature-0-4447-43-10046-3673-0000705D11",
-					["dps_started"] = false,
-					["end_time"] = 1601201275,
-					["last_dps"] = 0,
-					["friendlyfire"] = {
-					},
-					["nome"] = "Lord Serpentis",
-					["spells"] = {
-						["_ActorTable"] = {
-							["Lightning Bolt"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Konac"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 6,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Lightning Bolt",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["a_amt"] = 0,
-								["m_crit"] = 0,
-								["RESIST"] = 6,
-								["m_amt"] = 0,
-								["successful_casted"] = 6,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["last_event"] = 0,
-					["total"] = 0.01331,
-					["friendlyfire_total"] = 0,
-					["custom"] = 0,
-					["tipo"] = 1,
-					["on_hold"] = false,
-					["start_time"] = 1601201272,
-					["delay"] = 0,
-					["monster"] = true,
-				}, -- [18]
-				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.008787,
-					["damage_from"] = {
-						["Konac"] = true,
-					},
-					["targets"] = {
-						["Konac"] = 992,
-					},
-					["pets"] = {
-					},
-					["damage_taken"] = 4258.008787,
-					["boss_fight_component"] = true,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 992.008787,
-					["serial"] = "Creature-0-4447-43-10046-5775-0000705D11",
-					["dps_started"] = false,
-					["end_time"] = 1601201333,
-					["last_dps"] = 0,
-					["friendlyfire"] = {
-					},
-					["nome"] = "Verdan the Everliving",
-					["spells"] = {
-						["_ActorTable"] = {
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 277,
-								["targets"] = {
-									["Konac"] = 992,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 992,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 4,
-								["total"] = 992,
-								["c_max"] = 0,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 4,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["last_event"] = 0,
-					["total"] = 992.008787,
-					["friendlyfire_total"] = 0,
-					["custom"] = 0,
-					["tipo"] = 1,
-					["on_hold"] = false,
-					["start_time"] = 1601201315,
-					["delay"] = 0,
-					["monster"] = true,
-				}, -- [19]
-			},
-		}, -- [1]
-		{
-			["tipo"] = 3,
-			["_ActorTable"] = {
-				{
-					["flag_original"] = 1298,
-					["targets_overheal"] = {
-						["Augustin"] = 0,
-						["Konac"] = 4805,
-					},
-					["pets"] = {
-					},
-					["iniciar_hps"] = false,
-					["heal_enemy_amt"] = 0,
-					["totalover"] = 19978.089952,
-					["total_without_pet"] = 12439.089952,
-					["total"] = 12439.089952,
-					["targets_absorbs"] = {
-						["Konac"] = 793,
-					},
-					["heal_enemy"] = {
-					},
-					["on_hold"] = false,
-					["serial"] = "Player-4465-00C4D96C",
-					["totalabsorb"] = 793.089952,
-					["last_hps"] = 0,
-					["targets"] = {
-						["Augustin"] = 11838,
-						["Konac"] = 0,
-					},
-					["totalover_without_pet"] = 0.089952,
-					["healing_taken"] = 6514.089952,
-					["fight_component"] = true,
-					["end_time"] = 1601199490,
-					["healing_from"] = {
-						["Konac"] = true,
-					},
-					["boss_fight_component"] = true,
-					["nome"] = "Konac",
-					["spells"] = {
-						["_ActorTable"] = {
-							["Holy Nova"] = {
-								["c_amt"] = 2,
-								["totalabsorb"] = 0,
-								["targets_overheal"] = {
-									["Augustin"] = 5455,
-									["Konac"] = 2888,
-								},
-								["n_max"] = 479,
-								["targets"] = {
-									["Konac"] = 4177,
-									["Augustin"] = 1597,
-								},
-								["n_min"] = 0,
-								["counter"] = 30,
-								["overheal"] = 8343,
-								["total"] = 5774,
-								["c_max"] = 323,
-								["id"] = "Holy Nova",
-								["targets_absorbs"] = {
-								},
-								["c_curado"] = 323,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["n_curado"] = 5451,
-								["n_amt"] = 28,
-								["totaldenied"] = 0,
-								["m_healed"] = 0,
-								["absorbed"] = 0,
-							},
-							["Power Word: Shield"] = {
-								["c_amt"] = 0,
-								["totalabsorb"] = 793,
-								["targets_overheal"] = {
-								},
-								["n_max"] = 83,
-								["targets"] = {
-									["Konac"] = 793,
-								},
-								["n_min"] = 0,
-								["counter"] = 21,
-								["overheal"] = 0,
-								["total"] = 793,
-								["c_max"] = 0,
-								["id"] = "Power Word: Shield",
-								["targets_absorbs"] = {
-									["Konac"] = 793,
-								},
-								["c_curado"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["n_curado"] = 793,
-								["n_amt"] = 21,
-								["totaldenied"] = 0,
-								["m_healed"] = 0,
-								["absorbed"] = 0,
-							},
-							["Renew"] = {
-								["c_amt"] = 0,
-								["totalabsorb"] = 0,
-								["targets_overheal"] = {
-									["Augustin"] = 9718,
-									["Konac"] = 1917,
-								},
-								["n_max"] = 385,
-								["targets"] = {
-									["Augustin"] = 4328,
-									["Konac"] = 1544,
-								},
-								["n_min"] = 0,
-								["counter"] = 63,
-								["overheal"] = 11635,
-								["total"] = 5872,
-								["c_max"] = 0,
-								["id"] = "Renew",
-								["targets_absorbs"] = {
-								},
-								["c_curado"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["n_curado"] = 5872,
-								["n_amt"] = 63,
-								["totaldenied"] = 0,
-								["m_healed"] = 0,
-								["absorbed"] = 0,
-							},
-						},
-						["tipo"] = 3,
-					},
-					["grupo"] = true,
-					["classe"] = "PRIEST",
-					["start_time"] = 1601199281,
-					["custom"] = 0,
-					["tipo"] = 2,
-					["spec"] = 257,
-					["totaldenied"] = 0.089952,
-					["delay"] = 0,
-					["last_event"] = 0,
-				}, -- [1]
-				{
-					["flag_original"] = 1297,
-					["targets_overheal"] = {
-					},
-					["pets"] = {
-					},
-					["iniciar_hps"] = false,
-					["heal_enemy_amt"] = 0,
-					["totalover"] = 0.098243,
-					["total_without_pet"] = 0.098243,
-					["total"] = 0.098243,
-					["targets_absorbs"] = {
-					},
-					["heal_enemy"] = {
-					},
-					["on_hold"] = false,
-					["serial"] = "Player-4465-01D5BF39",
-					["totalabsorb"] = 0.098243,
-					["last_hps"] = 0,
-					["targets"] = {
-					},
-					["totalover_without_pet"] = 0.098243,
-					["healing_taken"] = 5925.098243,
-					["fight_component"] = true,
-					["end_time"] = 1601199490,
-					["healing_from"] = {
-						["Konac"] = true,
-					},
-					["boss_fight_component"] = true,
-					["nome"] = "Augustin",
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
-					["grupo"] = true,
-					["classe"] = "MAGE",
-					["start_time"] = 1601199487,
-					["custom"] = 0,
-					["tipo"] = 2,
-					["spec"] = 64,
-					["totaldenied"] = 0.098243,
-					["delay"] = 0,
-					["last_event"] = 0,
-				}, -- [2]
-				{
-					["flag_original"] = 2632,
-					["totalabsorb"] = 0.010208,
-					["last_hps"] = 0,
-					["healing_from"] = {
-					},
-					["targets"] = {
-					},
-					["serial"] = "Creature-0-4447-43-10046-3671-0000705D11",
-					["pets"] = {
-					},
-					["iniciar_hps"] = false,
-					["targets_overheal"] = {
-					},
-					["heal_enemy_amt"] = 216,
-					["totalover"] = 0.010208,
-					["total_without_pet"] = 0.010208,
-					["totalover_without_pet"] = 0.010208,
-					["start_time"] = 1601199537,
-					["monster"] = true,
-					["total"] = 0.010208,
-					["healing_taken"] = 0.010208,
-					["classe"] = "UNKNOW",
-					["nome"] = "Lady Anacondra",
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
-					["end_time"] = 1601199540,
-					["boss_fight_component"] = true,
-					["heal_enemy"] = {
-						["Healing Touch"] = 216,
-					},
-					["targets_absorbs"] = {
-					},
-					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["totaldenied"] = 0.010208,
-					["delay"] = 0,
-					["tipo"] = 2,
-				}, -- [3]
-				{
-					["flag_original"] = 2632,
-					["totalabsorb"] = 0.041652,
-					["last_hps"] = 0,
-					["healing_from"] = {
-					},
-					["targets"] = {
-					},
-					["serial"] = "Creature-0-4447-43-10046-3840-0000705D11",
-					["pets"] = {
-					},
-					["iniciar_hps"] = false,
-					["targets_overheal"] = {
-					},
-					["heal_enemy_amt"] = 2733,
-					["totalover"] = 0.041652,
-					["total_without_pet"] = 0.041652,
-					["totalover_without_pet"] = 0.041652,
-					["start_time"] = 1601199537,
-					["monster"] = true,
-					["total"] = 0.041652,
-					["healing_taken"] = 0.041652,
-					["classe"] = "UNKNOW",
-					["nome"] = "Druid of the Fang",
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
-					["end_time"] = 1601199540,
-					["boss_fight_component"] = true,
-					["heal_enemy"] = {
-						["Healing Touch"] = 2733,
-					},
-					["targets_absorbs"] = {
-					},
-					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["totaldenied"] = 0.041652,
-					["delay"] = 0,
-					["tipo"] = 2,
-				}, -- [4]
-				{
-					["flag_original"] = 2632,
-					["totalabsorb"] = 0.009621,
-					["last_hps"] = 0,
-					["healing_from"] = {
-					},
-					["targets"] = {
-					},
-					["serial"] = "Creature-0-4447-43-10046-3670-0000705D11",
-					["pets"] = {
-					},
-					["iniciar_hps"] = false,
-					["targets_overheal"] = {
-					},
-					["heal_enemy_amt"] = 486,
-					["totalover"] = 0.009621,
-					["total_without_pet"] = 0.009621,
-					["totalover_without_pet"] = 0.009621,
-					["start_time"] = 1601200627,
-					["monster"] = true,
-					["total"] = 0.009621,
-					["healing_taken"] = 0.009621,
-					["classe"] = "UNKNOW",
-					["nome"] = "Lord Pythas",
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
-					["end_time"] = 1601200630,
-					["boss_fight_component"] = true,
-					["heal_enemy"] = {
-						["Healing Touch"] = 486,
-					},
-					["targets_absorbs"] = {
-					},
-					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["totaldenied"] = 0.009621,
-					["delay"] = 0,
-					["tipo"] = 2,
-				}, -- [5]
-				{
-					["flag_original"] = 2632,
-					["totalabsorb"] = 0.020783,
-					["last_hps"] = 0,
-					["healing_from"] = {
-					},
-					["targets"] = {
-					},
-					["serial"] = "Creature-0-4447-43-10046-5761-0002F05D11",
-					["pets"] = {
-					},
-					["iniciar_hps"] = false,
-					["targets_overheal"] = {
-					},
-					["classe"] = "UNKNOW",
-					["totalover"] = 0.020783,
-					["total_without_pet"] = 0.020783,
-					["totalover_without_pet"] = 0.020783,
-					["start_time"] = 1601200627,
-					["monster"] = true,
-					["total"] = 0.020783,
-					["heal_enemy_amt"] = 1276,
-					["healing_taken"] = 0.020783,
-					["nome"] = "Deviate Shambler",
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
-					["end_time"] = 1601200630,
-					["boss_fight_component"] = true,
-					["heal_enemy"] = {
-						["Wild Regeneration"] = 1276,
-					},
-					["targets_absorbs"] = {
-					},
-					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["totaldenied"] = 0.020783,
-					["delay"] = 0,
-					["tipo"] = 2,
-				}, -- [6]
-			},
-		}, -- [2]
-		{
-			["tipo"] = 7,
-			["_ActorTable"] = {
-			},
-		}, -- [3]
-		{
-			["tipo"] = 9,
-			["_ActorTable"] = {
-				{
-					["flag_original"] = 1047,
-					["debuff_uptime_spells"] = {
-						["_ActorTable"] = {
-							["Weakened Soul"] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 1,
-								["appliedamt"] = 2,
-								["id"] = "Weakened Soul",
-								["uptime"] = 24,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							["Holy Fire"] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 0,
-								["appliedamt"] = 7,
-								["id"] = "Holy Fire",
-								["uptime"] = 60,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							["Shadow Word: Pain"] = {
-								["actived_at"] = 27220406548,
-								["refreshamt"] = 1,
-								["activedamt"] = -24,
-								["appliedamt"] = 60,
-								["id"] = "Shadow Word: Pain",
-								["uptime"] = 540,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-						},
-						["tipo"] = 9,
-					},
-					["buff_uptime"] = 1962,
-					["classe"] = "PRIEST",
-					["buff_uptime_spells"] = {
-						["_ActorTable"] = {
-							["Renew"] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 2,
-								["appliedamt"] = 2,
-								["id"] = "Renew",
-								["uptime"] = 27,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							["Power Word: Shield"] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 4,
-								["appliedamt"] = 4,
-								["id"] = "Power Word: Shield",
-								["uptime"] = 39,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							["Divine Spirit"] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 29,
-								["appliedamt"] = 29,
-								["id"] = "Divine Spirit",
-								["uptime"] = 802,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							["Power Word: Fortitude"] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 29,
-								["appliedamt"] = 29,
-								["id"] = "Power Word: Fortitude",
-								["uptime"] = 802,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							["Reactive Fade"] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 74,
-								["appliedamt"] = 74,
-								["id"] = "Reactive Fade",
-								["uptime"] = 292,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-						},
-						["tipo"] = 9,
-					},
-					["fight_component"] = true,
-					["debuff_uptime"] = 624,
-					["boss_fight_component"] = true,
-					["spec"] = 257,
-					["grupo"] = true,
-					["spell_cast"] = {
-						["Shoot"] = 221,
-						["Holy Fire"] = 4,
-						["Power Word: Shield"] = 2,
-						["Smite"] = 36,
-						["Shadow Word: Pain"] = 56,
-						["Mind Blast"] = 6,
-						["Renew"] = 13,
-						["Holy Nova"] = 15,
-					},
-					["nome"] = "Konac",
-					["tipo"] = 4,
-					["last_event"] = 0,
-					["buff_uptime_targets"] = {
-					},
-					["pets"] = {
-					},
-					["serial"] = "Player-4465-00C4D96C",
-					["debuff_uptime_targets"] = {
-					},
-				}, -- [1]
-				{
-					["flag_original"] = 1047,
-					["debuff_uptime_spells"] = {
-						["_ActorTable"] = {
-							["Chilled"] = {
-								["refreshamt"] = 41,
-								["activedamt"] = 0,
-								["appliedamt"] = 37,
-								["id"] = "Chilled",
-								["uptime"] = 221,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							["Fireball"] = {
-								["refreshamt"] = 1,
-								["activedamt"] = 0,
-								["appliedamt"] = 1,
-								["id"] = "Fireball",
-								["uptime"] = 3,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-						},
-						["tipo"] = 9,
-					},
-					["buff_uptime"] = 1642,
-					["classe"] = "MAGE",
-					["buff_uptime_spells"] = {
-						["_ActorTable"] = {
-							["Frost Armor"] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 30,
-								["appliedamt"] = 30,
-								["id"] = "Frost Armor",
-								["uptime"] = 822,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							["Arcane Intellect"] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 30,
-								["appliedamt"] = 30,
-								["id"] = "Arcane Intellect",
-								["uptime"] = 820,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-						},
-						["tipo"] = 9,
-					},
-					["fight_component"] = true,
-					["debuff_uptime"] = 224,
-					["boss_fight_component"] = true,
-					["spec"] = 64,
-					["grupo"] = true,
-					["spell_cast"] = {
-						["Fireball"] = 2,
-						["Scorch"] = 3,
-					},
-					["buff_uptime_targets"] = {
-					},
-					["tipo"] = 4,
-					["last_event"] = 0,
-					["nome"] = "Augustin",
-					["pets"] = {
-					},
-					["serial"] = "Player-4465-01D5BF39",
-					["debuff_uptime_targets"] = {
-					},
-				}, -- [2]
-				{
-					["monster"] = true,
-					["tipo"] = 4,
-					["nome"] = "Lady Anacondra",
-					["pets"] = {
-					},
-					["spell_cast"] = {
-						["Lightning Bolt"] = 2,
-						["Healing Touch"] = 1,
-					},
-					["flag_original"] = 2632,
-					["last_event"] = 0,
-					["boss_fight_component"] = true,
-					["serial"] = "Creature-0-4447-43-10046-3671-0000705D11",
-					["classe"] = "UNKNOW",
-				}, -- [3]
-				{
-					["flag_original"] = 68168,
-					["tipo"] = 4,
-					["nome"] = "Druid of the Fang",
-					["monster"] = true,
-					["pets"] = {
-					},
-					["spell_cast"] = {
-						["Healing Touch"] = 12,
-						["Druid's Slumber"] = 4,
-						["Lightning Bolt"] = 91,
-						["Serpent Form"] = 4,
-					},
-					["fight_component"] = true,
-					["last_event"] = 0,
-					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-4447-43-10046-3840-0000705D11",
-					["boss_fight_component"] = true,
-				}, -- [4]
-				{
-					["monster"] = true,
-					["tipo"] = 4,
-					["nome"] = "Deviate Viper",
-					["pets"] = {
-					},
-					["spell_cast"] = {
-						["Localized Toxin"] = 8,
-					},
-					["flag_original"] = 68168,
-					["last_event"] = 0,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-4447-43-10046-5755-0000705D11",
-					["classe"] = "UNKNOW",
-				}, -- [5]
-				{
-					["monster"] = true,
-					["tipo"] = 4,
-					["nome"] = "Deviate Adder",
-					["pets"] = {
-					},
-					["spell_cast"] = {
-						["Poison"] = 7,
-					},
-					["flag_original"] = 2632,
-					["last_event"] = 0,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-4447-43-10046-5048-0003705D12",
-					["classe"] = "UNKNOW",
-				}, -- [6]
-				{
-					["monster"] = true,
-					["tipo"] = 4,
-					["nome"] = "Lord Cobrahn",
-					["pets"] = {
-					},
-					["spell_cast"] = {
-						["Lightning Bolt"] = 5,
-						["Cobrahn Serpent Form"] = 1,
-					},
-					["flag_original"] = 2632,
-					["last_event"] = 0,
-					["boss_fight_component"] = true,
-					["serial"] = "Creature-0-4447-43-10046-3669-0000705D11",
-					["classe"] = "UNKNOW",
-				}, -- [7]
-				{
-					["monster"] = true,
-					["tipo"] = 4,
-					["nome"] = "Deviate Crocolisk",
-					["pets"] = {
-					},
-					["spell_cast"] = {
-						["Tendon Rip"] = 1,
-					},
-					["flag_original"] = 2632,
-					["last_event"] = 0,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-4447-43-10046-5053-0000705D11",
-					["classe"] = "UNKNOW",
-				}, -- [8]
-				{
-					["fight_component"] = true,
-					["tipo"] = 4,
-					["nome"] = "Deviate Shambler",
-					["flag_original"] = 68168,
-					["spell_cast"] = {
-						["Wild Regeneration"] = 7,
-					},
-					["monster"] = true,
-					["pets"] = {
-					},
-					["last_event"] = 0,
-					["classe"] = "UNKNOW",
-					["serial"] = "Creature-0-4447-43-10046-5761-0003705D12",
-					["boss_fight_component"] = true,
-				}, -- [9]
-				{
-					["fight_component"] = true,
-					["last_event"] = 0,
-					["nome"] = "Deviate Lasher",
-					["spell_cast"] = {
-						["Wide Slash"] = 21,
-					},
-					["monster"] = true,
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
-					["flag_original"] = 2632,
-					["serial"] = "Creature-0-4447-43-10046-5055-0000F05D13",
-					["tipo"] = 4,
-				}, -- [10]
-				{
-					["monster"] = true,
-					["tipo"] = 4,
-					["nome"] = "Lord Pythas",
-					["pets"] = {
-					},
-					["spell_cast"] = {
-						["Healing Touch"] = 2,
-						["Thunderclap"] = 3,
-						["Lightning Bolt"] = 4,
-						["Sleep"] = 3,
-					},
-					["flag_original"] = 2632,
-					["last_event"] = 0,
-					["boss_fight_component"] = true,
-					["serial"] = "Creature-0-4447-43-10046-3670-0000705D11",
-					["classe"] = "UNKNOW",
-				}, -- [11]
-				{
-					["flag_original"] = 68168,
-					["debuff_uptime_spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 9,
-					},
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
-					["boss_debuff"] = true,
-					["monster"] = true,
-					["debuff_uptime"] = 8,
-					["spellschool"] = 32,
-					["debuff_uptime_targets"] = {
-						["Augustin"] = {
-							["uptime"] = 8,
-							["appliedamt"] = 0,
-							["activedamt"] = 0,
-							["actived"] = false,
-							["refreshamt"] = 0,
-						},
-					},
-					["nome"] = "Sleep",
-					["boss_fight_component"] = true,
-					["tipo"] = 4,
-					["damage_twin"] = "Lord Pythas",
-					["damage_spellid"] = "Sleep",
-					["serial"] = "Creature-0-4447-43-10046-3670-0000705D11",
-					["last_event"] = 0,
-				}, -- [12]
-				{
-					["flag_original"] = 68168,
-					["debuff_uptime_spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 9,
-					},
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
-					["boss_debuff"] = true,
-					["monster"] = true,
-					["debuff_uptime"] = 30,
-					["spellschool"] = 8,
-					["debuff_uptime_targets"] = {
-						["Augustin"] = {
-							["uptime"] = 30,
-							["appliedamt"] = 0,
-							["activedamt"] = 0,
-							["actived"] = false,
-							["refreshamt"] = 0,
-						},
-					},
-					["nome"] = "Thunderclap",
-					["boss_fight_component"] = true,
-					["tipo"] = 4,
-					["damage_twin"] = "Lord Pythas",
-					["damage_spellid"] = "Thunderclap",
-					["serial"] = "Creature-0-4447-43-10046-3670-0000705D11",
-					["last_event"] = 0,
-				}, -- [13]
-				{
-					["fight_component"] = true,
-					["tipo"] = 4,
-					["nome"] = "Deviate Venomwing",
-					["spell_cast"] = {
-						["Toxic Spit"] = 30,
-					},
-					["flag_original"] = 68168,
-					["monster"] = true,
-					["classe"] = "UNKNOW",
-					["pets"] = {
-					},
-					["serial"] = "Creature-0-4447-43-10046-5756-0000F05D13",
-					["last_event"] = 0,
-				}, -- [14]
-				{
-					["monster"] = true,
-					["tipo"] = 4,
-					["nome"] = "Deviate Dreadfang",
-					["pets"] = {
-					},
-					["spell_cast"] = {
-						["Terrify"] = 2,
-					},
-					["flag_original"] = 68168,
-					["last_event"] = 0,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-4447-43-10046-5056-0002705D12",
-					["classe"] = "UNKNOW",
-				}, -- [15]
-				{
-					["monster"] = true,
-					["tipo"] = 4,
-					["nome"] = "Lord Serpentis",
-					["pets"] = {
-					},
-					["spell_cast"] = {
-						["Lightning Bolt"] = 6,
-					},
-					["flag_original"] = 2632,
-					["last_event"] = 0,
-					["boss_fight_component"] = true,
-					["serial"] = "Creature-0-4447-43-10046-3673-0000705D11",
-					["classe"] = "UNKNOW",
-				}, -- [16]
-			},
-		}, -- [4]
-		{
-			["tipo"] = 2,
-			["_ActorTable"] = {
-			},
-		}, -- [5]
-		["raid_roster"] = {
-		},
-		["tempo_start"] = 1601199429,
-		["last_events_tables"] = {
-		},
-		["alternate_power"] = {
-		},
-		["spells_cast_timeline"] = {
-		},
-		["combat_counter"] = 5055,
-		["totals"] = {
-			149225.658577, -- [1]
-			12439.226189, -- [2]
-			{
-				0, -- [1]
-				[0] = 0,
-				["alternatepower"] = 0,
-				[3] = 0,
-				[6] = 0,
-			}, -- [3]
-			{
-				["buff_uptime"] = 0,
-				["ress"] = 0,
-				["cooldowns_defensive"] = 0,
-				["dispell"] = 0,
-				["interrupt"] = 0,
-				["debuff_uptime"] = 0,
-				["cc_break"] = 0,
-				["dead"] = 0,
-			}, -- [4]
-			["frags_total"] = 0,
-			["voidzone_damage"] = 0,
-		},
-		["player_last_events"] = {
-		},
-		["frags_need_refresh"] = false,
-		["aura_timeline"] = {
-		},
-		["__call"] = {
-		},
-		["data_inicio"] = "11:37:10",
-		["end_time"] = 1602751.635,
-		["cleu_events"] = {
-			["n"] = 1,
-		},
-		["totals_grupo"] = {
-			125820.348717, -- [1]
-			12439.180921, -- [2]
-			{
-				0, -- [1]
-				[0] = 0,
-				["alternatepower"] = 0,
-				[3] = 0,
-				[6] = 0,
-			}, -- [3]
-			{
-				["buff_uptime"] = 0,
-				["ress"] = 0,
-				["cooldowns_defensive"] = 0,
-				["dispell"] = 0,
-				["interrupt"] = 0,
-				["debuff_uptime"] = 0,
-				["cc_break"] = 0,
-				["dead"] = 0,
-			}, -- [4]
-		},
-		["overall_refreshed"] = true,
-		["frags"] = {
-		},
-		["hasSaved"] = true,
-		["segments_added"] = {
-			{
-				["elapsed"] = 18.0039999999572,
-				["type"] = 6,
-				["clock"] = "12:08:35",
-			}, -- [1]
-			{
-				["elapsed"] = 11.0169999999926,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "12:08:05",
-			}, -- [2]
-			{
-				["elapsed"] = 29.0260000000708,
-				["type"] = 6,
-				["clock"] = "12:07:26",
-			}, -- [3]
-			{
-				["elapsed"] = 11.0190000000875,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "12:06:38",
-			}, -- [4]
-			{
-				["elapsed"] = 17.0049999998882,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "12:05:43",
-			}, -- [5]
-			{
-				["elapsed"] = 13.0169999999926,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "12:05:23",
-			}, -- [6]
-			{
-				["elapsed"] = 11.0200000000186,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "12:05:04",
-			}, -- [7]
-			{
-				["elapsed"] = 27.0300000000279,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "12:04:30",
-			}, -- [8]
-			{
-				["elapsed"] = 38.0540000000037,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "12:03:15",
-			}, -- [9]
-			{
-				["elapsed"] = 38.0030000000261,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "12:02:12",
-			}, -- [10]
-			{
-				["elapsed"] = 42.0120000001043,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "12:01:15",
-			}, -- [11]
-			{
-				["elapsed"] = 46.0200000000186,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "11:59:48",
-			}, -- [12]
-			{
-				["elapsed"] = 17.0060000000522,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "11:58:09",
-			}, -- [13]
-			{
-				["elapsed"] = 75.028999999864,
-				["type"] = 6,
-				["clock"] = "11:55:55",
-			}, -- [14]
-			{
-				["elapsed"] = 12.0190000000875,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "11:55:36",
-			}, -- [15]
-			{
-				["elapsed"] = 12.0239999999758,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "11:54:30",
-			}, -- [16]
-			{
-				["elapsed"] = 18.0060000000522,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "11:54:07",
-			}, -- [17]
-			{
-				["elapsed"] = 19.0039999999572,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "11:53:35",
-			}, -- [18]
-			{
-				["elapsed"] = 28.0030000000261,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "11:53:02",
-			}, -- [19]
-			{
-				["elapsed"] = 12.0069999999832,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "11:52:34",
-			}, -- [20]
-			{
-				["elapsed"] = 15.0279999999329,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "11:52:08",
-			}, -- [21]
-			{
-				["elapsed"] = 22.0009999999311,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "11:51:34",
-			}, -- [22]
-			{
-				["elapsed"] = 24.0130000000354,
-				["type"] = 6,
-				["clock"] = "11:50:43",
-			}, -- [23]
-			{
-				["elapsed"] = 10.0230000000447,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "11:50:24",
-			}, -- [24]
-			{
-				["elapsed"] = 11.0219999998808,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "11:50:07",
-			}, -- [25]
-			{
-				["elapsed"] = 17.0069999999832,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "11:49:03",
-			}, -- [26]
-			{
-				["elapsed"] = 22.0160000000615,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "11:48:13",
-			}, -- [27]
-			{
-				["elapsed"] = 12.0009999999311,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "11:47:27",
-			}, -- [28]
-			{
-				["elapsed"] = 24.0050000001211,
-				["type"] = 6,
-				["clock"] = "11:46:33",
-			}, -- [29]
-			{
-				["elapsed"] = 14.0210000001825,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "11:46:09",
-			}, -- [30]
-		},
-		["data_fim"] = "12:08:53",
-		["overall_enemy_name"] = "-- x -- x --",
-		["CombatSkillCache"] = {
-		},
-		["PhaseData"] = {
-			{
-				1, -- [1]
-				1, -- [2]
-			}, -- [1]
-			["damage_section"] = {
-			},
-			["heal_section"] = {
-			},
-			["heal"] = {
-			},
-			["damage"] = {
-			},
-		},
-		["start_time"] = 1601737.054,
-		["TimeData"] = {
-		},
-		["cleu_timeline"] = {
-		},
-	},
-	["on_death_menu"] = true,
-	["force_font_outline"] = "",
-	["character_data"] = {
-		["logons"] = 1518,
-	},
 	["announce_cooldowns"] = {
+		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
-		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},

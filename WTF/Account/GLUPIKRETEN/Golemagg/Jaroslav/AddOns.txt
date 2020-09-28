@@ -37,10 +37,10 @@ Leatrix_Maps: enabled
 Lorti UI Classic: enabled
 ls_Toasts: enabled
 MikScrollingBattleText: enabled
-MonkeyBuddy: enabled
-MonkeyLibrary: enabled
-MonkeyQuest: enabled
-MonkeyQuestLog: enabled
+MonkeyBuddy: disabled
+MonkeyLibrary: disabled
+MonkeyQuest: disabled
+MonkeyQuestLog: disabled
 MSBTOptions: enabled
 NeatPlates: enabled
 NeatPlatesHub: enabled

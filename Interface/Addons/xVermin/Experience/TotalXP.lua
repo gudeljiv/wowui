@@ -3,6 +3,16 @@ local _, xVermin = ...
 local totalxp, gained = 0
 local maxxp, currentxp, tolevel
 
+local _, class, _ = UnitClass("player")
+local color = RAID_CLASS_COLORS[class]
+if class == "SHAMAN" then
+	color = {
+		b = 0.86666476726532,
+		g = 0.4392147064209,
+		r = 0
+	}
+end
+
 cc = CreateFrame("Frame", "CustomContainer", UIParent)
 cc:SetWidth(110)
 cc:SetHeight(20)
@@ -32,9 +42,10 @@ txtotal:SetPoint("CENTER", tx, "CENTER", 0, 0)
 txtotal:SetWidth(1)
 txtotal:SetHeight(1)
 txtotal.text = txtotal:CreateFontString(nil, "ARTWORK")
-txtotal.text:SetFont(xVermin.Config.font.arial, 10, "NONE")
-txtotal.text:SetPoint("CENTER", tx, "CENTER", 0, -2)
+txtotal.text:SetFont(xVermin.Config.font.arial, 9, "NONE")
+txtotal.text:SetPoint("CENTER", tx, "CENTER", 0, -1)
 txtotal.text:SetText("0 (XP)")
+txtotal.text:SetTextColor(color.r, color.g, color.b, 1)
 
 tx:SetScript(
 	"OnMouseDown",

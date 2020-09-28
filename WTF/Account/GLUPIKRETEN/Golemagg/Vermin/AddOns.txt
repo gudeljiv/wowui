@@ -184,10 +184,10 @@ LootWonAlert_Hider_Mover: disabled
 LootRollMover: disabled
 LovelyLoot: disabled
 MailboxCleaner: disabled
-MonkeyBuddy: enabled
-MonkeyLibrary: enabled
-MonkeyQuest: enabled
-MonkeyQuestLog: enabled
+MonkeyBuddy: disabled
+MonkeyLibrary: disabled
+MonkeyQuest: disabled
+MonkeyQuestLog: disabled
 xVerminz: enabled
 Kui_Media: disabled
 Kui_Nameplates_Core_Config: disabled
