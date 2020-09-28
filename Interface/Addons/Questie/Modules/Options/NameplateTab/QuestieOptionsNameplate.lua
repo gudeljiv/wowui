@@ -23,13 +23,13 @@ function QuestieOptions.tabs.nameplate:Initialize()
             nameplate_options = {
                 type = "header",
                 order = 1,
-                name = function() return QuestieLocale:GetUIString('NAMEPLATE_OPTIONS_HEADER'); end,
+                name = function() return QuestieLocale:GetUIString('NAMEPLATE_HEAD'); end,
             },
             nameplateEnabled = {
                 type = "toggle",
-                order = 1.1,
-                name = function() return QuestieLocale:GetUIString('ENABLE_NAMEPLATES'); end,
-                desc = function() return QuestieLocale:GetUIString('ENABLE_NAMEPLATES_DESC'); end,
+                order = 3,
+                name = function() return QuestieLocale:GetUIString('NAMEPLATE_TOGGLE'); end,
+                desc = function() return QuestieLocale:GetUIString('NAMEPLATE_TOGGLE_DESC'); end,
                 width = "full",
                 get = function(info) return QuestieOptions:GetGlobalOptionValue(info); end,
                 set = function (info, value)
@@ -41,10 +41,10 @@ function QuestieOptions.tabs.nameplate:Initialize()
                     end
                 end,
             },
-            Spacer_A = QuestieOptionsUtils:Spacer(1.2),
+            Spacer_A = QuestieOptionsUtils:Spacer(4),
             nameplateX = {
                 type = "range",
-                order = 1.3,
+                order = 5,
                 name = function() return QuestieLocale:GetUIString('NAMEPLATE_X'); end,
                 desc = function() return QuestieLocale:GetUIString('NAMEPLATE_X_DESC', optionsDefaults.global.nameplateX ); end,
                 width = "normal",
@@ -60,7 +60,7 @@ function QuestieOptions.tabs.nameplate:Initialize()
             },
             nameplateY = {
                 type = "range",
-                order = 1.4,
+                order = 5,
                 name = function() return QuestieLocale:GetUIString('NAMEPLATE_Y'); end,
                 desc = function() return QuestieLocale:GetUIString('NAMEPLATE_Y_DESC', optionsDefaults.global.nameplateY); end,
                 width = "normal",
@@ -76,7 +76,7 @@ function QuestieOptions.tabs.nameplate:Initialize()
             },
             nameplateScale = {
                 type = "range",
-                order = 1.5,
+                order = 6,
                 name = function() return QuestieLocale:GetUIString('NAMEPLATE_SCALE'); end,
                 desc = function() return QuestieLocale:GetUIString('NAMEPLATE_SCALE_DESC', optionsDefaults.global.nameplateScale); end,
                 width = "double",
@@ -91,10 +91,10 @@ function QuestieOptions.tabs.nameplate:Initialize()
                 end,
 
             },
-            Spacer_B = QuestieOptionsUtils:Spacer(1.6),
+            Spacer_B = QuestieOptionsUtils:Spacer(7),
             nameplateReset = {
                 type = "execute",
-                order = 1.7,
+                order = 8,
                 name = function() return QuestieLocale:GetUIString('NAMEPLATE_RESET_BTN'); end,
                 desc = function() return QuestieLocale:GetUIString('NAMEPLATE_RESET_BTN_DESC'); end,
                 disabled = function() return not Questie.db.global.nameplateEnabled; end,
@@ -105,15 +105,16 @@ function QuestieOptions.tabs.nameplate:Initialize()
                     QuestieNameplate:RedrawIcons();
                 end,
             },
-            Spacer_C = QuestieOptionsUtils:Spacer(1.9),
+            Spacer_C = QuestieOptionsUtils:Spacer(9),
             targetframe_header = {
                 type = "header",
-                order = 2,
+                order = 20,
                 name = function() return QuestieLocale:GetUIString('TARGET_HEAD'); end,
             },
+            Spacer_D = QuestieOptionsUtils:Spacer(21),
             nameplateTargetFrameEnabled = {
                 type = "toggle",
-                order = 2.1,
+                order = 22,
                 name = function() return QuestieLocale:GetUIString('TARGET_TOGGLE'); end,
                 desc = function() return QuestieLocale:GetUIString('TARGET_TOGGLE_DESC'); end,
                 width = "full",
@@ -129,10 +130,10 @@ function QuestieOptions.tabs.nameplate:Initialize()
                     end
                 end,
             },
-            Spacer_E = QuestieOptionsUtils:Spacer(2.2),
+            Spacer_E = QuestieOptionsUtils:Spacer(23),
             nameplateTargetFrameX  = {
                 type = "range",
-                order = 2.3,
+                order = 24,
                 name = function() return QuestieLocale:GetUIString('TARGET_X'); end,
                 desc = function() return QuestieLocale:GetUIString('TARGET_X_DESC', optionsDefaults.global.nameplateTargetFrameX); end,
                 width = "normal",
@@ -148,7 +149,7 @@ function QuestieOptions.tabs.nameplate:Initialize()
             },
             nameplateTargetFrameY  = {
                 type = "range",
-                order = 2.4,
+                order = 24,
                 name = function() return QuestieLocale:GetUIString('TARGET_Y'); end,
                 desc = function() return QuestieLocale:GetUIString('TARGET_Y_DESC', optionsDefaults.global.nameplateTargetFrameY); end,
                 width = "normal",
@@ -164,7 +165,7 @@ function QuestieOptions.tabs.nameplate:Initialize()
             },
             nameplateTargetFrameScale  = {
                 type = "range",
-                order = 2.5,
+                order = 25,
                 name = function() return QuestieLocale:GetUIString('TARGET_SCALE'); end,
                 desc = function() return QuestieLocale:GetUIString('TARGET_SCALE_DESC', optionsDefaults.global.nameplateTargetFrameScale); end,
                 width = "double",
@@ -179,10 +180,10 @@ function QuestieOptions.tabs.nameplate:Initialize()
                 end,
 
             },
-            Spacer_F = QuestieOptionsUtils:Spacer(2.6),
+            Spacer_F = QuestieOptionsUtils:Spacer(26),
             targetFrameReset = {
                 type = "execute",
-                order = 2.7,
+                order = 27,
                 name = function() return QuestieLocale:GetUIString('TARGET_RESET_BTN'); end,
                 desc = function() return QuestieLocale:GetUIString('TARGET_RESET_BTN_DESC'); end,
                 disabled = function() return not Questie.db.global.nameplateTargetFrameEnabled; end,

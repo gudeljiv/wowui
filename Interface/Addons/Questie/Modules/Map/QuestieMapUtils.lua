@@ -7,10 +7,11 @@ local QuestieLib = QuestieLoader:ImportModule("QuestieLib");
 
 local HBD = LibStub("HereBeDragonsQuestie-2.0")
 
--- All the speed we can get is worth it.
+-- ALl the speed we can get is worth it.
 local tinsert = table.insert
 local pairs = pairs
 
+--- Currently not in use.
 function QuestieMap.utils:SetDrawOrder(frame)
     -- This is all fixes to always be on top of HandyNotes notes Let the frame level wars begin.
     -- HandyNotes uses GetFrameLevel + 6, so we use +7
@@ -29,16 +30,12 @@ function QuestieMap.utils:SetDrawOrder(frame)
     end
 
     -- Draw layer is between -8 and 7, please leave some number above so we don't paint ourselves into a corner...
-    if frame.data then
-        if frame.data.Icon == ICON_TYPE_REPEATABLE then
-            frame.texture:SetDrawLayer("OVERLAY", 4)
-        elseif frame.data.Icon == ICON_TYPE_AVAILABLE then
-            frame.texture:SetDrawLayer("OVERLAY", 5)
-        elseif frame.data.Icon == ICON_TYPE_COMPLETE then
-            frame.texture:SetDrawLayer("OVERLAY", 6)
-        else
-            frame.texture:SetDrawLayer("OVERLAY", 0)
-        end
+    if (frame.data and
+        (frame.data.Icon == ICON_TYPE_AVAILABLE or frame.data.Icon ==
+            ICON_TYPE_REPEATABLE)) then
+        frame.texture:SetDrawLayer("OVERLAY", 5)
+    elseif (frame.data and frame.data.Icon == ICON_TYPE_COMPLETE) then
+        frame.texture:SetDrawLayer("OVERLAY", 6)
     else
         frame.texture:SetDrawLayer("OVERLAY", 0)
     end
@@ -87,7 +84,7 @@ function QuestieMap.utils:CalcHotzones(points, rangeR, count)
                 tinsert(notes, point);
                 for index2, point2 in pairs(points) do
                     --We only want to cluster icons that are on the same map.
-                    if(point.UiMapID == point2.UiMapID) then
+                    if(point.UIMapId == point2.UIMapId) then
                         local times = 1;
 
                         --We want things further away to be clustered more
@@ -101,10 +98,10 @@ function QuestieMap.utils:CalcHotzones(points, rangeR, count)
                         end
                         local aX, aY = HBD:GetWorldCoordinatesFromZone(
                                             point.x / times, point.y / times,
-                                            point.UiMapID)
+                                            point.UIMapId)
                         local bX, bY = HBD:GetWorldCoordinatesFromZone(
                                             point2.x / times, point2.y / times,
-                                            point2.UiMapID)
+                                            point2.UIMapId)
                         -- local dX = (point.x*times) - (point2.x*times)
                         -- local dY = (point.y*times) - (point2.y*times);
                         local distance =
@@ -153,45 +150,13 @@ end
 
 function QuestieMap.utils:MapExplorationUpdate()
     for questId, frameList in pairs(QuestieMap.questIdFrames) do
-        for _, frameName in pairs(frameList) do
+        for _, frameName in ipairs(frameList) do
             local frame = _G[frameName]
             if (frame and frame.x and frame.y and frame.UiMapID and frame.hidden) then
                 if (QuestieMap.utils:IsExplored(frame.UiMapID, frame.x, frame.y)) then
                     frame:FakeUnhide()
                 end
             end
-        end
-    end
-end
-
---- Rescale a single icon
----@param frameRef string|IconFrame @The global name/iconRef of the icon frame, e.g. "QuestieFrame1"
-function QuestieMap.utils:RecaleIcon(frameRef, modifier)
-    local zoomModifier = modifier or 1;
-    local frame = frameRef;
-    if(type(frameRef) == "string") then
-        frame = _G[frameRef];
-    end
-    if frame and frame.data then
-        if(frame.data.GetIconScale) then
-            frame.data.IconScale = frame.data:GetIconScale();
-            local scale = nil
-            if(frame.miniMapIcon) then
-                scale = 16 * (frame.data.IconScale or 1) * (Questie.db.global.globalMiniMapScale or 0.7);
-            else
-                scale = 16 * (frame.data.IconScale or 1) * (Questie.db.global.globalScale or 0.7);
-            end
-
-            if(frame.miniMapIcon) then
-                zoomModifier = 1;
-            end
-
-            if scale > 1 then
-                --frame:SetScale(zoomModifier)
-                frame:SetSize(scale*zoomModifier, scale*zoomModifier);
-            end
-        else
-            Questie:Error("A frame is lacking the GetIconScale function for resizing!", frame.data.Id);
         end
     end
 end

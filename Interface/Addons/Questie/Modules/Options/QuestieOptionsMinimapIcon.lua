@@ -15,7 +15,7 @@ local QuestieLib = QuestieLoader:ImportModule("QuestieLib");
 local minimapIconLDB = nil
 
 function QuestieOptionsMinimapIcon:Initialize()
-    minimapIconLDB = LibStub("LibDataBroker-1.1"):NewDataObject("Questie", {
+    minimapIconLDB = LibStub("LibDataBroker-1.1"):NewDataObject("MinimapIcon", {
         type = "data source",
         text = "Questie",
         icon = ICON_TYPE_COMPLETE,
@@ -23,8 +23,7 @@ function QuestieOptionsMinimapIcon:Initialize()
         OnClick = function (self, button)
             if button == "LeftButton" then
                 if IsShiftKeyDown() then
-                    Questie.db.char.enabled = (not Questie.db.char.enabled)
-                    QuestieQuest:ToggleNotes(Questie.db.char.enabled)
+                    QuestieQuest:ToggleNotes();
 
                     -- CLose config window if it's open to avoid desyncing the Checkbox
                     QuestieOptions:HideFrame();
@@ -34,11 +33,7 @@ function QuestieOptionsMinimapIcon:Initialize()
                     return
                 end
 
-                if InCombatLockdown() then
-                    QuestieOptions:HideFrame()
-                else
-                    QuestieOptions:OpenConfigWindow()
-                end
+                QuestieOptions:OpenConfigWindow()
 
                 if QuestieJourney:IsShown() then
                     QuestieJourney.ToggleJourneyWindow();
@@ -54,7 +49,7 @@ function QuestieOptionsMinimapIcon:Initialize()
                     return;
                 elseif IsControlKeyDown() then
                     Questie.db.profile.minimap.hide = true;
-                    Questie.minimapConfigIcon:Hide("Questie");
+                    Questie.minimapConfigIcon:Hide("MinimapIcon");
                     return;
                 end
             end

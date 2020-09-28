@@ -26,16 +26,16 @@ local function AddHudQuestIcon(tableString, icon, AreaID, x, y, r, g, b)
     if tableString and not AddedHudIds[tableString] then
         --Icon based filters, if icon is disabled, return without adding
         if not Questie.db.global.dbmHUDShowSlay and icon:find("slay") or not Questie.db.global.dbmHUDShowQuest and (icon:find("complete") or icon:find("available")) or not Questie.db.global.dbmHUDShowInteract and icon:find("object") or not Questie.db.global.dbmHUDShowLoot and icon:find("loot") then return end
-        if not DBM.HudMap.HUDEnabled then
+        if not DBMHudMap.HUDEnabled then
             --Force a fixed zoom, if one is not set, hudmap tries to zoom out until all registered icons fit, that's no good for world wide quest icons
-            DBM.HudMap:SetFixedZoom(Questie.db.global.DBMHUDZoom or 100)
+            DBMHudMap:SetFixedZoom(Questie.db.global.DBMHUDZoom or 100)
             QuestieDBMIntegration:ChangeRefreshRate(Questie.db.global.DBMHUDRefresh or 0.03)
         end
         --uniqueID, name, texture, x, y, radius, duration, r, g, b, a, blend, useLocalMap, LocalMapId
         if Questie.db.global.dbmHUDShowAlert then
-            DBM.HudMap:RegisterPositionMarker(tableString, "Questie", icon, x, y, Questie.db.global.dbmHUDRadius or 3, nil, r, g, b, 1, nil, true, AreaID):Appear():RegisterForAlerts()
+            DBMHudMap:RegisterPositionMarker(tableString, "Questie", icon, x, y, Questie.db.global.dbmHUDRadius or 3, nil, r, g, b, 1, nil, true, AreaID):Appear():RegisterForAlerts()
         else
-            DBM.HudMap:RegisterPositionMarker(tableString, "Questie", icon, x, y, Questie.db.global.dbmHUDRadius or 3, nil, r, g, b, 1, nil, true, AreaID):Appear()
+            DBMHudMap:RegisterPositionMarker(tableString, "Questie", icon, x, y, Questie.db.global.dbmHUDRadius or 3, nil, r, g, b, 1, nil, true, AreaID):Appear()
         end
         AddedHudIds[tableString] = true
         --print("Adding "..tableString)
@@ -45,7 +45,7 @@ end
 --Removes icons from hud display
 local function RemoveHudQuestIcon(tableString)
     if tableString and AddedHudIds[tableString] then
-        DBM.HudMap:FreeEncounterMarkerByTarget(tableString, "Questie")
+        DBMHudMap:FreeEncounterMarkerByTarget(tableString, "Questie")
         AddedHudIds[tableString] = nil
         --print("Removing "..tableString)
     end
@@ -100,7 +100,7 @@ do
         local _, _, _, _, _, _, _, mapID = GetInstanceInfo()
         if LastInstanceMapID ~= mapID then
             LastInstanceMapID = mapID
-            DBM.HudMap:ClearAllEdges()--Wipe out any edges, they wouldn't work cross continent anyways
+            DBMHudMap:ClearAllEdges()--Wipe out any edges, they wouldn't work cross continent anyways
             if IsInInstance() then--We've entered an instance, DBM itself will already wiped/disabled hud for entering a map restricted area, but locally we need to wipe AddedHudIds
                 AddedHudIds = {}
             else
@@ -114,7 +114,7 @@ do
 
     --Called when Hud Option in questie options is toggled to on
     function QuestieDBMIntegration:EnableHUD()
-        if DBM and DBM.HudMap and not QuestieHUDEnabled then
+        if DBMHudMap and not QuestieHUDEnabled then
             QuestieHUDEnabled = true
             eventFrame:RegisterEvent("LOADING_SCREEN_DISABLED")
             DelayedMapCheck()
@@ -128,7 +128,7 @@ do
 
     function QuestieDBMIntegration:SoftReset()
         --Needed for when Icon sizes, or icon filters are changed
-        if DBM and DBM.HudMap and QuestieHUDEnabled then
+        if DBMHudMap and QuestieHUDEnabled then
             CleanupPoints(9999)--Wipes all the added markers
             ReAddHudIcons()--Re-Add all icons
         end
@@ -137,9 +137,9 @@ do
     function QuestieDBMIntegration:ClearAll(disable)
         --Needed for QuestieQuest:SmoothReset(), which should call QuestieDBMIntegration:ClearAll() to also wipe hud markers. Do not call disable arg
         --Hud Markers will be regenerated when questie regenerates it's own icons
-        if DBM and DBM.HudMap and QuestieHUDEnabled then
+        if DBMHudMap and QuestieHUDEnabled then
             for tableString, points in pairs(AddedHudIds) do
-                DBM.HudMap:FreeEncounterMarkerByTarget(tableString, "Questie")
+                DBMHudMap:FreeEncounterMarkerByTarget(tableString, "Questie")
                 AddedHudIds[tableString] = nil
             end
             KalimdorPoints = {}
@@ -168,10 +168,10 @@ end
 --  Global Functions  --
 ------------------------
 --Called in QuestieMap in DrawWorldIcon function right after QuestieMap:QueueDraw
---QuestieDBMIntegration:RegisterHudQuestIcon(tostring(icon), data.Icon, ZoneDB:GetUiMapIdByAreaId(AreaID), x, y, colors[1], colors[2], colors[3])
+--QuestieDBMIntegration:RegisterHudQuestIcon(tostring(icon), data.Icon, ZoneDataAreaIDToUiMapID[AreaID], x, y, colors[1], colors[2], colors[3])
 --Take note of x, y. do not /100 the coords sent to this itegration, since HudMap expects unmodified values
 function QuestieDBMIntegration:RegisterHudQuestIcon(tableString, icon, AreaID, x, y, r, g, b)
-    if DBM and DBM.HudMap and QuestieHUDEnabled and tableString then
+    if DBMHudMap and QuestieHUDEnabled and tableString then
         local _, _, instanceID = HBD:GetWorldCoordinatesFromZone(x, y, AreaID)--Used to transform mapid to instance ID, DBM will transform the coords more reliably later
         --Eastern Kingdoms: Instance 0, Map 1415. Kalimdor: Instance 1, Map 1414
         if instanceID == 0 then
@@ -217,7 +217,7 @@ end
 --Called in QuestieFramePool in Unload right after HBDPins:RemoveWorldMapIcon. Add the below line
 --QuestieDBMIntegration:UnregisterHudQuestIcon(tostring(self))
 function QuestieDBMIntegration:UnregisterHudQuestIcon(tableString)
-    if DBM and DBM.HudMap and QuestieHUDEnabled and tableString then
+    if DBMHudMap and QuestieHUDEnabled and tableString then
         if KalimdorPoints[tableString] then KalimdorPoints[tableString] = nil end
         if EKPoints[tableString] then EKPoints[tableString] = nil end
         if AddedHudIds[tableString] then
@@ -227,27 +227,27 @@ function QuestieDBMIntegration:UnregisterHudQuestIcon(tableString)
 end
 
 function QuestieDBMIntegration:ChangeZoomLevel(zoom)
-    if DBM and DBM.HudMap and QuestieHUDEnabled then
-        DBM.HudMap:SetFixedZoom(zoom)
+    if DBMHudMap and QuestieHUDEnabled then
+        DBMHudMap:SetFixedZoom(zoom)
     end
 end
 
 function QuestieDBMIntegration:ChangeRefreshRate(rate)
-    if DBM and DBM.HudMap and QuestieHUDEnabled and DBM.HudMap.Version then
+    if DBMHudMap and QuestieHUDEnabled and DBMHudMap.Version then
         if rate < 0.01 then rate = 0.01 end--just to protect against a user who might try to hack their config file
-        DBM.HudMap:SetFixedUpdateRate(rate)
+        DBMHudMap:SetFixedUpdateRate(rate)
     end
 end
 
 --Creates a line between player and a specific point
 function QuestieDBMIntegration:EdgeTo(tableString)
-    if DBM and DBM.HudMap and tableString then
+    if DBMHudMap and tableString then
         if not AddedHudIds[tableString.."edge"] then
             --Request Marker table from DBM for specific tableString
-            local marker2 = DBM.HudMap:GetEncounterMarker(tableString.."Questie")
+            local marker2 = DBMHudMap:GetEncounterMarker(tableString.."Questie")
             if marker2 and type(marker2) == "table" then
                 --Now, create a practically invisible point on player to establish edge from location
-                local marker1 = DBM.HudMap:RegisterRangeMarkerOnPartyMember(tableString, "party", playerName, 0.1, nil, 0, 1, 0, 1, nil, false):Appear()--objectId, texture, person, radius, duration, r, g, b, a, blend, canFilterSelf
+                local marker1 = DBMHudMap:RegisterRangeMarkerOnPartyMember(tableString, "party", playerName, 0.1, nil, 0, 1, 0, 1, nil, false):Appear()--objectId, texture, person, radius, duration, r, g, b, a, blend, canFilterSelf
                 marker2:EdgeTo(marker1, nil, hudDuration, 0, 1, 0, 1)--point_or_unit_or_x, from_y, duration, r, g, b, a, w, texfile, extend
                 AddedHudIds[tableString..playerName] = true
             --else
@@ -259,10 +259,10 @@ end
 
 --Creates a line between player and a specific point
 function QuestieDBMIntegration:ClearHudEdge(tableString)
-    if DBM and DBM.HudMap and tableString then
+    if DBMHudMap and tableString then
         if AddedHudIds[tableString..playerName] then
             AddedHudIds[tableString..playerName] = nil
-            DBM.HudMap:FreeEncounterMarkerByTarget(tableString, playerName)--Wipes player marker, doing so should automatically wipe edge
+            DBMHudMap:FreeEncounterMarkerByTarget(tableString, playerName)--Wipes player marker, doing so should automatically wipe edge
         end
     end
 end

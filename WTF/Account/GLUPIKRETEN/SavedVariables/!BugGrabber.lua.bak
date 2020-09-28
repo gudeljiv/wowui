@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 2700,
 	["lastSanitation"] = 3,
-	["session"] = 2691,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -165,8 +165,8 @@ BugGrabberDB = {
 		}, -- [20]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["session"] = 1336,
 			["time"] = "2020/07/26 13:26:58",
+			["session"] = 1336,
 			["counter"] = 2,
 		}, -- [21]
 		{
@@ -546,8 +546,8 @@ BugGrabberDB = {
 		}, -- [68]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["time"] = "2020/07/27 20:37:46",
 			["session"] = 1423,
+			["time"] = "2020/07/27 20:37:46",
 			["counter"] = 4,
 		}, -- [69]
 		{
@@ -805,8 +805,8 @@ BugGrabberDB = {
 		}, -- [101]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["time"] = "2020/08/02 10:06:15",
 			["session"] = 1605,
+			["time"] = "2020/08/02 10:06:15",
 			["counter"] = 3,
 		}, -- [102]
 		{
@@ -946,8 +946,8 @@ BugGrabberDB = {
 		}, -- [119]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
-			["session"] = 1654,
 			["time"] = "2020/08/02 20:13:03",
+			["session"] = 1654,
 			["counter"] = 3,
 		}, -- [120]
 		{
@@ -1428,8 +1428,8 @@ BugGrabberDB = {
 		}, -- [180]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Experience.lua",
-			["session"] = 1943,
 			["time"] = "2020/08/19 21:35:15",
+			["session"] = 1943,
 			["counter"] = 6,
 		}, -- [181]
 		{
@@ -2040,8 +2040,8 @@ BugGrabberDB = {
 		}, -- [257]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["session"] = 2448,
 			["time"] = "2020/08/13 21:31:07",
+			["session"] = 2448,
 			["counter"] = 9,
 		}, -- [258]
 		{
@@ -2238,8 +2238,8 @@ BugGrabberDB = {
 		}, -- [282]
 		{
 			["message"] = "(null)",
-			["time"] = "2020/07/24 16:00:06",
 			["session"] = 2651,
+			["time"] = "2020/07/24 16:00:06",
 			["counter"] = 103,
 		}, -- [283]
 		{
@@ -2258,5 +2258,37 @@ BugGrabberDB = {
 			["session"] = 2677,
 			["counter"] = 5,
 		}, -- [285]
+		{
+			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:269: Wrong object type for function",
+			["time"] = "2020/09/28 15:58:54",
+			["locals"] = "(*temporary) = \"Frame\"\n(*temporary) = nil\n(*temporary) = <table> {\n HookBaseTracker = <function> defined @Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:789\n MoveDurabilityFrame = <function> defined @Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:256\n Unhook = <function> defined @Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:776\n Update = <function> defined @Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:371\n GetActiveQuestsFrame = <function> defined @Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:363\n GetBaseFrame = <function> defined @Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:328\n private = <table> {\n }\n Untrack = <function> defined @Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:767\n SetCounterEnabled = <function> defined @Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:895\n menu = <table> {\n }\n utils = <table> {\n }\n UnFocus = <function> defined @Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:669\n RemoveQuest = <function> defined @Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:886\n ResetDurabilityFrame = <function> defined @Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:251\n CreateBaseFrame = <function> defined @Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:268\n FocusQuest = <function> defined @Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:747\n ResetLinesForFontChange = <function> defined @Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:880\n Initialize = <function> defined @Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:125\n FocusObjective = <function> defined @Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:711\n GetBackgroundPadding = <function> defined @Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:367\n SetBaseFrame = <function> defined @Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:332\n ResetLocation = <function> defined @Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:243\n}\n(*temporary) = nil\n",
+			["stack"] = "[C]: in function `CreateFrame'\n...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:269: in function `CreateBaseFrame'\n...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:141: in function `Initialize'\n...rface\\AddOns\\Questie\\Modules\\QuestieEventHandler.lua:169: in function <...rface\\AddOns\\Questie\\Modules\\QuestieEventHandler.lua:166>",
+			["session"] = 2694,
+			["counter"] = 1,
+		}, -- [286]
+		{
+			["message"] = "Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:269: unfinished string near '\"QuestieTracker, UIParent)'",
+			["time"] = "2020/09/28 15:59:24",
+			["locals"] = "",
+			["stack"] = "",
+			["session"] = 2695,
+			["counter"] = 4,
+		}, -- [287]
+		{
+			["message"] = "...erface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:477: attempt to call method 'Update' (a nil value)",
+			["time"] = "2020/09/28 15:59:28",
+			["locals"] = "self = <table> {\n ToggleNotes = <function> defined @Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:59\n AbandonedQuest = <function> defined @Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:403\n CompleteQuest = <function> defined @Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:377\n UnhideQuest = <function> defined @Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:297\n GetAllQuestIdsNoObjectives = <function> defined @Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:480\n UpdateObjectiveNotes = <function> defined @Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:544\n Initialize = <function> defined @Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:47\n GetAllLeaderBoardDetails = <function> defined @Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:1176\n ForceToMap = <function> defined @Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:660\n ClearAllNotes = <function> defined @Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:119\n GetAllQuestIds = <function> defined @Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:455\n AcceptQuest = <function> defined @Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:333\n HideQuest = <function> defined @Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:292\n PopulateQuestLogInfo = <function> defined @Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:915\n GetAllQuestObjectives = <function> defined @Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:936\n SmoothReset = <function> defined @Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:196\n ShouldQuestShowObjectives = <function> defined @Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:499\n PopulateObjectiveNotes = <function> defined @Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:874\n UpdateHiddenNotes = <function> defined @Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:245\n private = <table> {\n }\n GetRawLeaderBoardDetails = <function> defined @Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:303\n CalculateAvailableQuests = <function> defined @Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:1541\n PopulateObjective = <function> defined @Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:690\n isCompleteByQuestId = <function> defined @Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:521\n AddFinisher = <function> defined @Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:556\n DrawAllAvailableQuests = <function> defined @Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:1388\n availableQuests = <table> {\n }\n NotesHidden = false\n AddAllNotes = <function> defined @Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:165\n IsComplete = <function> defined @Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:540\n _IsCompleteHack = <function> defined @Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:511\n UpdateQuest = <function> defined @Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:436\n Reset = <function> defined @Interface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:180\n}\nnumEntries = 7\nnumQuests = 6\n(*temporary) = nil\n(*temporary) = <table> {\n private = <table> {\n }\n utils = <table> {\n }\n menu = <table> {\n }\n}\n(*temporary) = \"attempt to call method 'Update' (a nil value)\"\nQuestiePlayer = <table> {\n GetPlayerLevel = <function> defined @Interface\\AddOns\\Questie\\Modules\\Libs\\QuestiePlayer.lua:29\n SetPlayerLevel = <function> defined @Interface\\AddOns\\Questie\\Modules\\Libs\\QuestiePlayer.lua:22\n GetPartyMembers = <function> defined @Interface\\AddOns\\Questie\\Modules\\Libs\\QuestiePlayer.lua:65\n GetCurrentContinentId = <function> defined @Interface\\AddOns\\Questie\\Modules\\Libs\\QuestiePlayer.lua:48\n GetPartyMemberByName = <function> defined @Interface\\AddOns\\Questie\\Modules\\Libs\\QuestiePlayer.lua:81\n Initialize = <function> defined @Interface\\AddOns\\Questie\\Modules\\Libs\\QuestiePlayer.lua:17\n private = <table> {\n }\n GetGroupType = <function> defined @Interface\\AddOns\\Questie\\Modules\\Libs\\QuestiePlayer.lua:34\n currentQuestlog = <table> {\n }\n GetCurrentZoneId = <function> de",
+			["stack"] = "...erface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:477: in function `GetAllQuestIds'\n...rface\\AddOns\\Questie\\Modules\\QuestieEventHandler.lua:168: in function <...rface\\AddOns\\Questie\\Modules\\QuestieEventHandler.lua:166>",
+			["session"] = 2695,
+			["counter"] = 1,
+		}, -- [288]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Addons/Questie.lua:17: attempt to index global 'QuestieTracker' (a nil value)",
+			["time"] = "2020/09/28 16:04:02",
+			["locals"] = "self = <unnamed> {\n 0 = <userdata>\n}\nevent = \"PLAYER_ENTERING_WORLD\"\nisInitialLogin = false\nisReloadingUi = true\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = true\n(*temporary) = true\n(*temporary) = true\n(*temporary) = true\n(*temporary) = \"attempt to index global 'QuestieTracker' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Addons/Questie.lua:17: in function <Interface\\AddOns\\xVermin\\Addons/Questie.lua:6>",
+			["session"] = 2699,
+			["counter"] = 1,
+		}, -- [289]
 	},
 }

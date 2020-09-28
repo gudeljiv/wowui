@@ -1,7 +1,7 @@
 
 KILLTRACK = {
+	["TOOLTIP"] = true,
 	["COUNT_GROUP"] = true,
-	["PRINTKILLS"] = false,
 	["SHOW_EXP"] = false,
 	["BROKER"] = {
 		["MINIMAP"] = {
@@ -253,27 +253,27 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Prairie Wolf Alpha",
 		},
-		[2578] = {
+		[11357] = {
+			["AchievCount"] = 0,
+			["Kills"] = 1,
+			["Name"] = "DieBUSTA",
+		},
+		[1867] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Young Mesa Buzzard",
+			["Name"] = "Dalaran Apprentice",
 		},
-		[3240] = {
+		[5055] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Stormsnout",
+			["Kills"] = 31,
+			["Name"] = "Deviate Lasher",
+			["Exp"] = 8,
 		},
-		[2561] = {
+		[3670] = {
 			["AchievCount"] = 0,
-			["Kills"] = 16,
-			["Name"] = "Highland Fleshstalker",
-			["Exp"] = 494,
-		},
-		[5755] = {
-			["AchievCount"] = 0,
-			["Kills"] = 4,
-			["Name"] = "Deviate Viper",
-			["Exp"] = 37,
+			["Kills"] = 1,
+			["Name"] = "Lord Pythas",
+			["Exp"] = 94,
 		},
 		[5761] = {
 			["AchievCount"] = 0,
@@ -286,31 +286,30 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Savannah Patriarch",
 		},
-		[3673] = {
+		[1924] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Lord Serpentis",
-			["Exp"] = 94,
+			["Kills"] = 0,
+			["Name"] = "Moonrage Bloodhowler",
 		},
 		[3248] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Barrens Giraffe",
 		},
-		[6466] = {
+		[620] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Gamon",
-		},
-		[2565] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Giant Plains Creeper",
+			["Kills"] = 3,
+			["Name"] = "Chicken",
 		},
 		[2540] = {
 			["AchievCount"] = 0,
 			["Kills"] = 1,
 			["Name"] = "Dalaran Serpent",
+		},
+		[6466] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Gamon",
 		},
 		[2360] = {
 			["AchievCount"] = 0,
@@ -345,15 +344,16 @@ KILLTRACK = {
 			["Name"] = "Hillsbrad Farmer",
 			["Exp"] = 168,
 		},
-		[620] = {
-			["AchievCount"] = 0,
-			["Kills"] = 3,
-			["Name"] = "Chicken",
-		},
-		[1924] = {
+		[2565] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Moonrage Bloodhowler",
+			["Name"] = "Giant Plains Creeper",
+		},
+		[3673] = {
+			["AchievCount"] = 0,
+			["Kills"] = 1,
+			["Name"] = "Lord Serpentis",
+			["Exp"] = 94,
 		},
 		[3632] = {
 			["AchievCount"] = 0,
@@ -366,36 +366,36 @@ KILLTRACK = {
 			["Name"] = "Hillsbrad Peasant",
 			["Exp"] = 178,
 		},
-		[3670] = {
+		[5755] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Lord Pythas",
-			["Exp"] = 94,
+			["Kills"] = 4,
+			["Name"] = "Deviate Viper",
+			["Exp"] = 37,
 		},
-		[5055] = {
+		[2561] = {
 			["AchievCount"] = 0,
-			["Kills"] = 31,
-			["Name"] = "Deviate Lasher",
-			["Exp"] = 8,
+			["Kills"] = 16,
+			["Name"] = "Highland Fleshstalker",
+			["Exp"] = 494,
 		},
-		[1867] = {
+		[3240] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Dalaran Apprentice",
+			["Name"] = "Stormsnout",
 		},
-		[11357] = {
+		[2578] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "DieBUSTA",
+			["Kills"] = 0,
+			["Name"] = "Young Mesa Buzzard",
 		},
 	},
+	["DISABLE_RAIDS"] = false,
+	["ACHIEV_THRESHOLD"] = 1000,
+	["DISABLE_DUNGEONS"] = false,
 	["IMMEDIATE"] = {
 		["THRESHOLD"] = 0,
 		["POSITION"] = {
 		},
 	},
-	["ACHIEV_THRESHOLD"] = 1000,
-	["DISABLE_DUNGEONS"] = false,
-	["DISABLE_RAIDS"] = false,
-	["TOOLTIP"] = true,
+	["PRINTKILLS"] = false,
 }

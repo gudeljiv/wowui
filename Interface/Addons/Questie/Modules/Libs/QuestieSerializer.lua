@@ -166,7 +166,6 @@ QuestieSerializer.ReaderTable = {
 
    [20] = function(self) return _ReadArray(self, self.stream:ReadByte()) end,
    [21] = function(self) return _ReadArray(self, self.stream:ReadShort()) end,
-   [22] = function(self) return _ReadArray(self, self.stream:ReadInt()) end,
 
    --up to 31
 
@@ -235,10 +234,7 @@ QuestieSerializer.WriterTable = {
             if key and v then count = count + 1; end
         end
         if isArray(value) then
-            if count > 65530 then
-                self.stream:WriteByte(22) -- chungus array
-                self.stream:WriteInt(count)
-            elseif count > 254 then
+            if count > 254 then
                 self.stream:WriteByte(21) -- big array
                 self.stream:WriteShort(count)
             else
@@ -246,12 +242,11 @@ QuestieSerializer.WriterTable = {
                 self.stream:WriteByte(count)
             end
             for _, v in pairs(value) do
-                local t = type(v)
-                if not QuestieSerializer.WriterTable[t] then
-                    print("QuestieSerializer Error: Unhandled type: " .. t)
+                if not QuestieSerializer.WriterTable[type(v)] then
+                    print("QuestieSerializer Error: Unhandled type: " .. type(value))
                 else
-                    QuestieSerializer.WriterTable[t](self, v, depth)
-                    if t == "string" then
+                    QuestieSerializer.WriterTable[type(v)](self, v, depth)
+                    if type(v) == "string" then
                         addHash(v)
                     end
                 end
@@ -283,62 +278,51 @@ QuestieSerializer.WriterTable = {
     end
 }
 
-QuestieSerializer.enableObjectLimit = true
-
 function QuestieSerializer:WriteKeyValuePair(key, value, depth)
     if not value or not key then return; end
     if not depth then
         depth = 0
     end
-    if self.objectCount > 8192 and false then print("[QuestieSerializer] Too many objects in input table!") return end
+    if self.objectCount > 8192 then print("[QuestieSerializer] Too many objects in input table!") return end
     self.objectCount = self.objectCount + 1
-    local keyType = type(key)
-    local valueType = type(value)
-    local writeKey = QuestieSerializer.WriterTable[keyType]
-    local writeValue = QuestieSerializer.WriterTable[valueType]
-    if not writeKey or not writeValue then
-        print("QuestieSerializer Error: Unhandled type: " .. keyType .. "  " .. valueType)
+    if not QuestieSerializer.WriterTable[type(value)] or not QuestieSerializer.WriterTable[type(key)] then
+        print("QuestieSerializer Error: Unhandled type: " .. type(key) .. "  " .. type(value))
     else
-        writeKey(self, key, depth)
-        if keyType == "string" then
+        QuestieSerializer.WriterTable[type(key)](self, key, depth)
+        if type(key) == "string" then
             addHash(key)
         end
-        writeValue(self, value, depth)
-        if valueType == "string" then
+        QuestieSerializer.WriterTable[type(value)](self, value, depth)
+        if type(value) == "string" then
             addHash(value)
         end
     end
 end
 
-function QuestieSerializer:SetupStream(encoding)
-    if not encoding then
-        encoding = "1short"
-    end
-    if self.stream and self.streamEncoding == encoding then
+function QuestieSerializer:SetupStream()
+    if self.stream then
         self.stream:reset()
     else
-        self.stream = QuestieStreamLib:GetStream(encoding)
-        self.streamEncoding = encoding
+        self.stream = QuestieStreamLib:GetStream("1short")
     end
     clearHashes()
 end
 
-function QuestieSerializer:Serialize(tab, encoding)
-    QuestieSerializer:SetupStream(encoding)
+function QuestieSerializer:Serialize(tab)
+    QuestieSerializer:SetupStream()
     self.objectCount = 0
     --QuestieSerializer:WriteKeyValuePair("meta", {protocolVersion = 1, mode="1short"})
     QuestieSerializer:WriteKeyValuePair(1, tab)
     return self.stream:Save()
 end
 
-function QuestieSerializer:Deserialize(data, encoding)
-    QuestieSerializer:SetupStream(encoding)
+function QuestieSerializer:Deserialize(data)
+    QuestieSerializer:SetupStream()
     self.stream:Load(data)
     --local meta = _ReadTable(self, 1)
     local data = _ReadTable(self, 1)
     return data[1]
 end
-
 local _libAS = LibStub("AceSerializer-3.0")
 local _libCP = LibStub("LibCompress")
 local _CPTable = _libCP:GetAddonEncodeTable()

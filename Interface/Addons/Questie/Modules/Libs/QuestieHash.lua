@@ -6,7 +6,7 @@ local QuestieLib = QuestieLoader:ImportModule("QuestieLib");
 ---@type QuestieQuest
 local QuestieQuest = QuestieLoader:ImportModule("QuestieQuest")
 
-local libS = QuestieLoader:ImportModule("QuestieSerializer")
+local libS = LibStub:GetLibrary("AceSerializer-3.0")
 local libC = LibStub:GetLibrary("LibCompress")
 
 local questLogHashes = {}
@@ -53,10 +53,8 @@ end
 
 function QuestieHash:CompareQuestHashes()
     Questie:Debug(DEBUG_DEVELOP, "CompareQuestHashes")
-    local hashChanged = false
-
     if questLogHashes == nil then
-        return hashChanged
+        return
     end
     ExpandQuestHeader(0) -- Expand all headers
 
@@ -71,15 +69,10 @@ function QuestieHash:CompareQuestHashes()
                 if oldhash ~= newHash then
                     Questie:Debug(DEBUG_DEVELOP, "CompareQuestHashes: Hash changed for questId:", questId)
                     _SafeUpdateQuest(questId, newHash);
-                    hashChanged = true
                 end
-            else
-                Questie:Debug(DEBUG_CRITICAL, "[QuestieHash:CompareQuestHashes] Quest hash is missing for", questId)
             end
         end
     end
-
-    return hashChanged
 end
 
 _SafeUpdateQuest = function(questId, hash, count)

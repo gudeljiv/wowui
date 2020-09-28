@@ -13,7 +13,6 @@ local module = {}
 -- ["ModuleName"] = moduleReference
 ---@type table<string, Module>
 local modules = {}
-QuestieLoader._modules = modules -- store reference so modules can be iterated for profiling
 
 ---@return Module @Module reference
 function QuestieLoader:CreateBlankModule()

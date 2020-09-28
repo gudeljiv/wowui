@@ -4,6 +4,8 @@ local QuestieMap = QuestieLoader:CreateModule("QuestieMap");
 -------------------------
 --Import modules.
 -------------------------
+---@type QuestieQuest
+local QuestieQuest = QuestieLoader:ImportModule("QuestieQuest");
 ---@type QuestieFramePool
 local QuestieFramePool = QuestieLoader:ImportModule("QuestieFramePool");
 ---@type QuestieDBMIntegration
@@ -14,8 +16,6 @@ local QuestieLib = QuestieLoader:ImportModule("QuestieLib");
 local QuestiePlayer = QuestieLoader:ImportModule("QuestiePlayer");
 ---@type QuestieDB
 local QuestieDB = QuestieLoader:ImportModule("QuestieDB");
----@type ZoneDB
-local ZoneDB = QuestieLoader:ImportModule("ZoneDB")
 
 QuestieMap.ICON_MAP_TYPE = "MAP";
 QuestieMap.ICON_MINIMAP_TYPE = "MINIMAP";
@@ -37,6 +37,8 @@ QuestieMap.questIdFrames = {}
 -- For details about frame.data see QuestieMap.ShowNPC and QuestieMap.ShowObject
 QuestieMap.manualFrames = {}
 
+--We haven't got the same nice things for the minimap as we do on the main map.
+QuestieMap.minimapFramesShown = {} -- I would do minimapFrames.shown but that would break the logic below
 
 --Used in my fadelogic.
 local fadeOverDistance = 10;
@@ -55,6 +57,7 @@ local tremove = table.remove;
 local tunpack = unpack;
 
 
+QUESTIE_CLUSTER_DISTANCE = 70; -- smaller numbers = more icons on the map
 QuestieMap.drawTimer = nil;
 QuestieMap.fadeLogicTimerShown = nil;
 
@@ -62,29 +65,25 @@ QuestieMap.fadeLogicTimerShown = nil;
 function QuestieMap:GetFramesForQuest(questId)
     local frames = {}
     --If no frames exists or if the quest does not exist we just return an empty list
-    if QuestieMap.questIdFrames[questId] then
-        for _, name in pairs(QuestieMap.questIdFrames[questId]) do
-            if _G[name] then
-                frames[name] = _G[name]
-            end
+    if (QuestieMap.questIdFrames[questId]) then
+        for i, name in ipairs(QuestieMap.questIdFrames[questId]) do
+            tinsert(frames, _G[name])
         end
     end
     return frames
 end
 
 function QuestieMap:UnloadQuestFrames(questId, iconType)
-    if QuestieMap.questIdFrames[questId] then
-        if iconType == nil then
-            for _, frame in pairs(QuestieMap:GetFramesForQuest(questId)) do
+    if(QuestieMap.questIdFrames[questId]) then
+        if(iconType == nil) then
+            for _, frame in ipairs(QuestieMap:GetFramesForQuest(questId)) do
                 frame:Unload();
             end
             QuestieMap.questIdFrames[questId] = nil;
         else
-            for name, frame in pairs(QuestieMap:GetFramesForQuest(questId)) do
-                if frame and frame.data and frame.data.Icon == iconType then
+            for _, frame in ipairs(QuestieMap:GetFramesForQuest(questId)) do
+                if(frame and frame.data and frame.data.Icon == iconType) then
                     frame:Unload();
-                    QuestieMap.questIdFrames[questId][name] = nil
-                    _G[name] = nil
                 end
             end
         end
@@ -115,22 +114,48 @@ function QuestieMap:UnloadManualFrames(id)
     end
 end
 
-function QuestieMap:ResetManualFrames()
-    for id, _ in pairs(QuestieMap.manualFrames) do
-        QuestieMap:UnloadManualFrames(id)
+-- Rescale a single icon
+---@param frameRef string|IconFrame @The global name/iconRef of the icon frame, e.g. "QuestieFrame1"
+local function rescaleIcon(frameRef, modifier)
+    local zoomModifier = modifier or 1;
+    local frame = frameRef;
+    if(type(frameRef) == "string") then
+        frame = _G[frameRef];
+    end
+    if frame and frame.data then
+        if(frame.data.GetIconScale) then
+            frame.data.IconScale = frame.data:GetIconScale();
+            local scale = nil
+            if(frame.miniMapIcon) then
+                scale = 16 * (frame.data.IconScale or 1) * (Questie.db.global.globalMiniMapScale or 0.7);
+            else
+                scale = 16 * (frame.data.IconScale or 1) * (Questie.db.global.globalScale or 0.7);
+            end
+
+            if(frame.miniMapIcon) then
+                zoomModifier = 1;
+            end
+
+            if scale > 1 then
+                --frame:SetScale(zoomModifier)
+                frame:SetSize(scale*zoomModifier, scale*zoomModifier);
+            end
+        else
+            Questie:Error("A frame is lacking the GetIconScale function for resizing!", frame.data.Id);
+        end
     end
 end
 
 -- Rescale all the icons
 function QuestieMap:RescaleIcons(modifier)
     for _, framelist in pairs(QuestieMap.questIdFrames) do
-        for _, frameName in pairs(framelist) do
-            QuestieMap.utils:RecaleIcon(frameName, modifier)
+        for _, frameName in ipairs(framelist) do
+            rescaleIcon(frameName, modifier)
         end
     end
     for _, framelist in pairs(QuestieMap.manualFrames) do
         for _, frameName in ipairs(framelist) do
-            QuestieMap.utils:RecaleIcon(frameName, modifier)
+            rescaleIcon(frameName, modifier)
         end
     end
 end
@@ -140,9 +165,9 @@ local mapDrawQueue = {};
 local minimapDrawQueue = {};
 function QuestieMap:InitializeQueue()
     Questie:Debug(DEBUG_DEVELOP, "[QuestieMap] Starting draw queue timer!")
-    QuestieMap.drawTimer = C_Timer.NewTicker(0.2, QuestieMap.ProcessQueue)
-    QuestieMap.processCounter = 0 -- used to reduce calls on edge notes
+    QuestieMap.drawTimer = C_Timer.NewTicker(0.005, QuestieMap.ProcessQueue)
     QuestieMap.fadeLogicTimerShown = C_Timer.NewTicker(0.3, QuestieMap.ProcessShownMinimapIcons);
+
 end
 
 
@@ -171,32 +196,21 @@ function HBDPins.worldmapProvider:OnMapChanged()
     end
     for pin in HBDPins.worldmapProvider:GetMap():EnumeratePinsByTemplate("HereBeDragonsPinsTemplateQuestie") do
         local frame = pin.icon;
-        QuestieMap.utils:RecaleIcon(frame, scaling)
+        rescaleIcon(frame, scaling)
+        if (frame.data and (frame.data.Icon == ICON_TYPE_AVAILABLE or frame.data.Icon == ICON_TYPE_REPEATABLE or frame.data.Icon == ICON_TYPE_COMPLETE)) then
+            QuestieMap.utils:SetDrawOrder(frame);
+        end
     end
 end
 
 function QuestieMap:ProcessShownMinimapIcons()
-    local doEdgeUpdate = false
-    QuestieMap.processCounter = QuestieMap.processCounter + 1
-    if QuestieMap.processCounter > 13 then -- only update icons on the edge every 4 seconds
-        QuestieMap.processCounter = 0
-        doEdgeUpdate = true
-    end
-
-    local playerX, playerY, playerInstanceID = HBD:GetPlayerWorldPosition()
-    QuestieMap.playerX = playerX
-    QuestieMap.playerY = playerY
-    ---@param minimapFrame IconFrame
-    for minimapFrame, data in pairs(HBDPins.activeMinimapPins) do
-        if ((data.distanceFromMinimapCenter < 1.1) or doEdgeUpdate) and minimapFrame.miniMapIcon then
-            if minimapFrame.FadeLogic then
-                minimapFrame:FadeLogic()
-            end
-            if minimapFrame.GlowUpdate then
-                minimapFrame:GlowUpdate()
-            end
+    for _, minimapFrame in pairs(QuestieMap.minimapFramesShown) do
+        if (minimapFrame.FadeLogic and minimapFrame.miniMapIcon) then
+            minimapFrame:FadeLogic()
         end
-        
+        if minimapFrame.GlowUpdate then
+            minimapFrame:GlowUpdate()
+        end
     end
 end
 
@@ -210,21 +224,17 @@ end
 
 
 function QuestieMap:ProcessQueue()
-    if next(mapDrawQueue) ~= nil or next(minimapDrawQueue) ~= nil then
-        for i = 1, math.min(24, math.max(#mapDrawQueue, #minimapDrawQueue)) do
-            local mapDrawCall = tremove(mapDrawQueue, 1);
-            if(mapDrawCall) then
-                local frame = mapDrawCall[2];
-                HBDPins:AddWorldMapIconMap(tunpack(mapDrawCall));
-                QuestieMap.utils:SetDrawOrder(frame);
-            end
-            local minimapDrawCall = tremove(minimapDrawQueue, 1);
-            if(minimapDrawCall) then
-                local frame = minimapDrawCall[2];
-                HBDPins:AddMinimapIconMap(tunpack(minimapDrawCall));
-
-                QuestieMap.utils:SetDrawOrder(frame);
-            end
+    local mapDrawCall = tremove(mapDrawQueue, 1);
+    if(mapDrawCall) then
+        HBDPins:AddWorldMapIconMap(tunpack(mapDrawCall));
+    end
+    local minimapDrawCall = tremove(minimapDrawQueue, 1);
+    if(minimapDrawCall) then
+        local frame = minimapDrawCall[2];
+        HBDPins:AddMinimapIconMap(tunpack(minimapDrawCall));
+        
+        if (frame.data and (frame.data.Icon == ICON_TYPE_AVAILABLE or frame.data.Icon == ICON_TYPE_REPEATABLE or frame.data.Icon == ICON_TYPE_COMPLETE)) then
+            QuestieMap.utils:SetDrawOrder(frame);
         end
     end
 end
@@ -234,13 +244,10 @@ end
 -- QuestieQuest do for questIdFrames
 ---@param npcID integer @The ID of the NPC
 function QuestieMap:ShowNPC(npcID)
-    if type(npcID) ~= "number" then
-        Questie:Debug(DEBUG_DEVELOP, "[QuestieMap:ShowNPC]", "Got <" .. type(npcID) .. "> instead of <number>")
-        return
-    end
+    if type(npcID) ~= "number" then return end
     -- get the NPC data
     local npc = QuestieDB:GetNPC(npcID)
-    if npc == nil or npc.spawns == nil then return end
+    if npc == nil then return end
 
     -- create the icon data
     local data = {}
@@ -272,9 +279,8 @@ function QuestieMap:ShowNPC(npcID)
         if(zone ~= nil and spawns ~= nil) then
             for _, coords in ipairs(spawns) do
                 -- instance spawn, draw entrance on map
-                local dungeonLocation = ZoneDB:GetDungeonLocation(zone)
-                if dungeonLocation ~= nil then
-                    for _, value in ipairs(dungeonLocation) do
+                if (instanceData[zone] ~= nil) then
+                    for index, value in ipairs(instanceData[zone]) do
                         QuestieMap:DrawManualIcon(data, value[1], value[2], value[3])
                     end
                 -- world spawn
@@ -318,9 +324,8 @@ function QuestieMap:ShowObject(objectID)
         if(zone ~= nil and spawns ~= nil) then
             for _, coords in ipairs(spawns) do
                 -- instance spawn, draw entrance on map
-                local dungeonLocation = ZoneDB:GetDungeonLocation(zone)
-                if dungeonLocation ~= nil then
-                    for _, value in ipairs(dungeonLocation) do
+                if (instanceData[zone] ~= nil) then
+                    for _, value in ipairs(instanceData[zone]) do
                         QuestieMap:DrawManualIcon(data, value[1], value[2], value[3])
                     end
                 -- world spawn
@@ -337,9 +342,7 @@ function QuestieMap:DrawLineIcon(lineFrame, areaID, x, y)
         error("Questie"..": AddWorldMapIconMap: 'AreaID', 'x' and 'y' must be numbers "..areaID.." "..x.." "..y)
     end
 
-    local uiMapId = ZoneDB:GetUiMapIdByAreaId(areaID)
-
-    HBDPins:AddWorldMapIconMap(Questie, lineFrame, uiMapId, x, y, HBD_PINS_WORLDMAP_SHOW_CURRENT)
+    HBDPins:AddWorldMapIconMap(Questie, lineFrame, ZoneDataAreaIDToUiMapID[areaID], x, y, HBD_PINS_WORLDMAP_SHOW_CURRENT)
 end
 
 
@@ -359,15 +362,14 @@ function QuestieMap:DrawManualIcon(data, areaID, x, y)
     if type(data.id) ~= "number" or type(data.id) ~= "number"then
         error("Questie".."Data.id must be set to the NPC or object ID!")
     end
-
-    local uiMapId = ZoneDB:GetUiMapIdByAreaId(areaID)
-    if (not uiMapId) then
-        Questie:Error("No UiMapID for areaId :".. areaID .. " " .. tostring(data.Name))
+    if ZoneDataAreaIDToUiMapID[areaID] == nil then
+        --Questie:Error("No UiMapID for ("..tostring(zoneDataClassic[AreaID])..") :".. AreaID .. tostring(data.Name))
         return nil, nil
     end
     -- set the icon
     local texture = "Interface\\WorldMap\\WorldMapPartyIcon"
     -- Save new zone ID format, used in QuestieFramePool
+    data.UiMapID = ZoneDataAreaIDToUiMapID[areaID]
     -- create a list for all frames belonging to a NPC (id > 0) or an object (id < 0)
     if(QuestieMap.manualFrames[data.id] == nil) then
         QuestieMap.manualFrames[data.id] = {}
@@ -379,14 +381,13 @@ function QuestieMap:DrawManualIcon(data, areaID, x, y)
     icon.x = x
     icon.y = y
     icon.AreaID = areaID -- used by QuestieFramePool
-    icon.UiMapID = uiMapId
     icon.miniMapIcon = false;
     icon.texture:SetTexture(texture)
     icon:SetWidth(16 * (data:GetIconScale() or 0.7))
     icon:SetHeight(16 * (data:GetIconScale() or 0.7))
 
     -- add the map icon
-    QuestieMap:QueueDraw(QuestieMap.ICON_MAP_TYPE, Questie, icon, icon.UiMapID, x/100, y/100, 3) -- showFlag)
+    QuestieMap:QueueDraw(QuestieMap.ICON_MAP_TYPE, Questie, icon, data.UiMapID, x/100, y/100, 3) -- showFlag)
     tinsert(QuestieMap.manualFrames[data.id], icon:GetName())
 
     -- create the minimap icon
@@ -401,17 +402,16 @@ function QuestieMap:DrawManualIcon(data, areaID, x, y)
     iconMinimap.x = x
     iconMinimap.y = y
     iconMinimap.AreaID = areaID -- used by QuestieFramePool
-    iconMinimap.UiMapID = uiMapId
     iconMinimap.texture:SetTexture(texture)
     iconMinimap.texture:SetVertexColor(colorsMinimap[1], colorsMinimap[2], colorsMinimap[3], 1);
     iconMinimap.miniMapIcon = true;
 
     -- add the minimap icon
-    QuestieMap:QueueDraw(QuestieMap.ICON_MINIMAP_TYPE, Questie, iconMinimap, iconMinimap.UiMapID, x / 100, y / 100, true, true);
+    QuestieMap:QueueDraw(QuestieMap.ICON_MINIMAP_TYPE, Questie, iconMinimap, data.UiMapID, x / 100, y / 100, true, true);
     tinsert(QuestieMap.manualFrames[data.id], iconMinimap:GetName())
 
     -- make sure notes are only shown when they are supposed to
-    if (not Questie.db.char.enabled) then -- TODO: or (not Questie.db.global.manualNotes)
+    if (QuestieQuest.NotesHidden) then -- TODO: or (not Questie.db.global.manualNotes)
         icon:FakeHide()
         iconMinimap:FakeHide()
     else
@@ -430,7 +430,6 @@ end
 --A layer to keep the area convertion away from the other parts of the code
 --coordinates need to be 0-1 instead of 0-100
 --showFlag isn't required but may want to be Modified
----@return IconFrame, IconFrame
 function QuestieMap:DrawWorldIcon(data, areaID, x, y, showFlag)
     if type(data) ~= "table" then
         error("Questie"..": AddWorldMapIconMap: must have some data")
@@ -441,42 +440,32 @@ function QuestieMap:DrawWorldIcon(data, areaID, x, y, showFlag)
     if type(data.Id) ~= "number" or type(data.Id) ~= "number"then
         error("Questie".."Data.Id must be set to the quests ID!")
     end
-
-    local uiMapId = ZoneDB:GetUiMapIdByAreaId(areaID)
-    if (not uiMapId) then
-        local mapInfo = C_Map.GetMapInfo(areaID)
-        local parentMapId = mapInfo.parentMapID
-        if (not parentMapId) then
-            error("No UiMapID for areaId : ".. areaID .. " - ".. tostring(data.Name))
-            return nil, nil
-        else
-            areaID = parentMapId
-        end
+    if ZoneDataAreaIDToUiMapID[areaID] == nil then
+        --Questie:Error("No UiMapID for ("..tostring(zoneDataClassic[AreaID])..") :".. AreaID .. tostring(data.Name))
+        return nil, nil
     end
-
-    if (not showFlag) then
-        showFlag = HBD_PINS_WORLDMAP_SHOW_WORLD
-    end
-
+    if(showFlag == nil) then showFlag = HBD_PINS_WORLDMAP_SHOW_WORLD; end
+    -- if(floatOnEdge == nil) then floatOnEdge = true; end
     local floatOnEdge = true
 
-    ---@type IconFrame
+    if areaID then
+        data.UiMapID = ZoneDataAreaIDToUiMapID[areaID];
+    end
+
     local iconMap = QuestieFramePool:GetFrame()
     iconMap.data = data
     iconMap.x = x
     iconMap.y = y
     iconMap.AreaID = areaID
-    iconMap.UiMapID = uiMapId
     iconMap.miniMapIcon = false;
     iconMap:UpdateTexture(data.Icon);
 
-    ---@type IconFrame
+
     local iconMinimap = QuestieFramePool:GetFrame()
     iconMinimap.data = data
     iconMinimap.x = x
     iconMinimap.y = y
     iconMinimap.AreaID = areaID
-    iconMinimap.UiMapID = uiMapId
     --data.refMiniMap = iconMinimap -- used for removing
     --Are we a minimap note?
     iconMinimap.miniMapIcon = true;
@@ -484,32 +473,15 @@ function QuestieMap:DrawWorldIcon(data, areaID, x, y, showFlag)
 
     local questieGlobalDB = Questie.db.global
 
-    if (not iconMinimap.FadeLogic) then
-        function iconMinimap:SetFade(value)
-            if self.lastGlowFade ~= value then
-                self.lastGlowFade = value
-                if self.glowTexture then
-                    local r, g, b = self.glowTexture:GetVertexColor()
-                    self.glowTexture:SetVertexColor(r,g,b,value)
-                end
-                self.texture:SetVertexColor(self.texture.r, self.texture.g, self.texture.b, value)
-            end
-        end
+    if(not iconMinimap.FadeLogic) then
         function iconMinimap:FadeLogic()
-            if self.miniMapIcon and self.x and self.y and self.texture and self.UiMapID and self.texture.SetVertexColor and Questie and Questie.db and Questie.db.global and Questie.db.global.fadeLevel and HBD and HBD.GetPlayerZonePosition and QuestieLib and QuestieLib.Euclid then
+            if self.miniMapIcon and self.x and self.y and self.texture and self.data.UiMapID and self.texture.SetVertexColor and Questie and Questie.db and Questie.db.global and Questie.db.global.fadeLevel and HBD and HBD.GetPlayerZonePosition and QuestieLib and QuestieLib.Euclid then
+                local playerX, playerY, playerInstanceID = HBD:GetPlayerWorldPosition()
 
-                if(QuestieMap.playerX and QuestieMap.playerY) then
-                    local x, y
-                    if not self.worldX then
-                        x, y = HBD:GetWorldCoordinatesFromZone(self.x/100, self.y/100, self.UiMapID)
-                        self.worldX = x
-                        self.worldY = y
-                    else
-                        x = self.worldX
-                        y = self.worldY
-                    end
+                if(playerX and playerY) then
+                    local x, y, instance = HBD:GetWorldCoordinatesFromZone(self.x/100, self.y/100, self.data.UiMapID)
                     if(x and y) then
-                        local distance = QuestieLib:Euclid(QuestieMap.playerX, QuestieMap.playerY, x, y);
+                        local distance = QuestieLib:Euclid(playerX, playerY, x, y);
 
                         --Very small value before, hard to work with.
                         distance = distance / 10
@@ -517,29 +489,58 @@ function QuestieMap:DrawWorldIcon(data, areaID, x, y, showFlag)
                         local normalizedValue = 1 / fadeOverDistance; --Opacity / Distance to fade over
 
                         if(distance > questieGlobalDB.fadeLevel) then
-                            local fade = 1 - (math.min(10, (distance - questieGlobalDB.fadeLevel)) * normalizedValue);
-
-                            self:SetFade(fade)
+                            local fade = 1 - (math.min(10, (distance-questieGlobalDB.fadeLevel)) * normalizedValue);
+                            local dr,dg,db = self.texture:GetVertexColor()
+                            self.texture:SetVertexColor(dr, dg, db, fade)
+                            if self.glowTexture and self.glowTexture.GetVertexColor then
+                                local r, g, b = self.glowTexture:GetVertexColor()
+                                self.glowTexture:SetVertexColor(r,g,b,fade)
+                            end
                         elseif (distance < questieGlobalDB.fadeOverPlayerDistance) and questieGlobalDB.fadeOverPlayer then
                             local fadeAmount = QuestieLib:Remap(distance, 0, questieGlobalDB.fadeOverPlayerDistance, questieGlobalDB.fadeOverPlayerLevel, 1);
                             -- local fadeAmount = math.max(fadeAmount, 0.5);
                             if self.faded and fadeAmount > questieGlobalDB.iconFadeLevel then
                                 fadeAmount = questieGlobalDB.iconFadeLevel
                             end
-                            self:SetFade(fadeAmount)
+                            local dr, dg, db = self.texture:GetVertexColor()
+                            self.texture:SetVertexColor(dr, dg, db, fadeAmount)
+                            if self.glowTexture and self.glowTexture.GetVertexColor then
+                                local r,g,b = self.glowTexture:GetVertexColor()
+                                self.glowTexture:SetVertexColor(r, g, b, fadeAmount)
+                            end
                         else
                             if self.faded then
-                                self:SetFade(questieGlobalDB.iconFadeLevel)
+                                local dr,dg,db = self.texture:GetVertexColor()
+                                self.texture:SetVertexColor(dr, dg, db, questieGlobalDB.iconFadeLevel)
+                                if self.glowTexture and self.glowTexture.GetVertexColor then
+                                    local r, g, b = self.glowTexture:GetVertexColor()
+                                    self.glowTexture:SetVertexColor(r, g, b, questieGlobalDB.iconFadeLevel)
+                                end
                             else
-                                self:SetFade(1)
+                                local dr,dg,db = self.texture:GetVertexColor()
+                                self.texture:SetVertexColor(dr, dg, db, 1)
+                                if self.glowTexture and self.glowTexture.GetVertexColor then
+                                    local r, g, b = self.glowTexture:GetVertexColor()
+                                    self.glowTexture:SetVertexColor(r, g, b, 1)
+                                end
                             end
                         end
                     end
                 else
                     if self.faded then
-                        self:SetFade(questieGlobalDB.iconFadeLevel)
+                        local dr,dg,db = self.texture:GetVertexColor()
+                        self.texture:SetVertexColor(dr, dg, db, questieGlobalDB.iconFadeLevel)
+                        if self.glowTexture and self.glowTexture.GetVertexColor then
+                            local r, g, b = self.glowTexture:GetVertexColor()
+                            self.glowTexture:SetVertexColor(r, g, b, questieGlobalDB.iconFadeLevel)
+                        end
                     else
-                        self:SetFade(1)
+                        local dr,dg,db = self.texture:GetVertexColor()
+                        self.texture:SetVertexColor(dr, dg, db, 1)
+                        if self.glowTexture and self.glowTexture.GetVertexColor then
+                            local r, g, b = self.glowTexture:GetVertexColor()
+                            self.glowTexture:SetVertexColor(r, g, b, 1)
+                        end
                     end
                 end
             end
@@ -548,32 +549,33 @@ function QuestieMap:DrawWorldIcon(data, areaID, x, y, showFlag)
         -- iconMinimap:SetScript("OnUpdate", )
     end
 
-    QuestieMap:QueueDraw(QuestieMap.ICON_MINIMAP_TYPE, Questie, iconMinimap, uiMapId, x / 100, y / 100, true, floatOnEdge)
-    QuestieMap:QueueDraw(QuestieMap.ICON_MAP_TYPE, Questie, iconMap, uiMapId, x / 100, y / 100, showFlag)
+    QuestieMap:QueueDraw(QuestieMap.ICON_MINIMAP_TYPE, Questie, iconMinimap, ZoneDataAreaIDToUiMapID[areaID], x / 100, y / 100, true, floatOnEdge)
+    QuestieMap:QueueDraw(QuestieMap.ICON_MAP_TYPE, Questie, iconMap, ZoneDataAreaIDToUiMapID[areaID], x / 100, y / 100, showFlag)
     local r, g, b = iconMinimap.texture:GetVertexColor()
-    QuestieDBMIntegration:RegisterHudQuestIcon(tostring(iconMap), data.Icon, uiMapId, x, y, r, g, b)
+    QuestieDBMIntegration:RegisterHudQuestIcon(tostring(iconMap), data.Icon, ZoneDataAreaIDToUiMapID[areaID], x, y, r, g, b)
 
     if(QuestieMap.questIdFrames[data.Id] == nil) then
         QuestieMap.questIdFrames[data.Id] = {}
     end
 
-    -- tinsert(QuestieMap.questIdFrames[data.Id], iconMap:GetName())
-    -- tinsert(QuestieMap.questIdFrames[data.Id], iconMinimap:GetName())
-    QuestieMap.questIdFrames[data.Id][iconMap:GetName()] = iconMap:GetName()
-    QuestieMap.questIdFrames[data.Id][iconMinimap:GetName()] = iconMinimap:GetName()
+    tinsert(QuestieMap.questIdFrames[data.Id], iconMap:GetName())
+    tinsert(QuestieMap.questIdFrames[data.Id], iconMinimap:GetName())
 
 
     --Hide unexplored logic
-    if(not QuestieMap.utils:IsExplored(iconMap.UiMapID, x, y) and Questie.db.char.hideUnexploredMapIcons) then
+    if(not QuestieMap.utils:IsExplored(iconMap.data.UiMapID, x, y) and questieGlobalDB.hideUnexploredMapIcons) then
         iconMap:FakeHide()
         iconMinimap:FakeHide()
     end
 
-    if iconMap:ShouldBeHidden() then
+    -- preset hidden state when needed (logic from QuestieQuest:UpdateHiddenNotes
+    -- we should add all this code to something like obj:CheckHide() instead of copying it
+    if (QuestieQuest.NotesHidden or (((not questieGlobalDB.enableObjectives) and (iconMap.data.Type == "monster" or iconMap.data.Type == "object" or iconMap.data.Type == "event" or iconMap.data.Type == "item"))
+                or ((not questieGlobalDB.enableTurnins) and iconMap.data.Type == "complete")
+                or ((not questieGlobalDB.enableAvailable) and iconMap.data.Type == "available"))
+                or ((not questieGlobalDB.enableMapIcons) and (not iconMap.miniMapIcon))
+                or ((not questieGlobalDB.enableMiniMapIcons) and (iconMap.miniMapIcon))) or (iconMap.data.ObjectiveData and iconMap.data.ObjectiveData.HideIcons) or (iconMap.data.QuestData and iconMap.data.QuestData.HideIcons and iconMap.data.Type ~= "complete") then
         iconMap:FakeHide()
-    end
-
-    if iconMinimap:ShouldBeHidden() then
         iconMinimap:FakeHide()
     end
 
@@ -596,25 +598,25 @@ function QuestieMap:FindClosestStarter()
                 closestStarter[questId].type = "";
                 for starterType, starters in pairs(quest.Starts) do
                         if(starterType == "GameObject") then
-                            for _, ObjectID in ipairs(starters or {}) do
+                            for index, ObjectID in ipairs(starters or {}) do
                                 local obj = QuestieDB:GetObject(ObjectID)
                                 if(obj ~= nil and obj.spawns ~= nil) then
                                     for Zone, Spawns in pairs(obj.spawns) do
                                         if(Zone ~= nil and Spawns ~= nil) then
                                             for _, coords in ipairs(Spawns) do
-                                                if(coords[1] == -1 or coords[2] == -1) then -- instace locations
-                                                    local dungeonLocation = ZoneDB:GetDungeonLocation(Zone)
-                                                    if dungeonLocation ~= nil then
-                                                        for _, value in ipairs(dungeonLocation) do
+                                                if(coords[1] == -1 or coords[2] == -1) then
+                                                    if(instanceData[Zone] ~= nil) then
+                                                        for index, value in ipairs(instanceData[Zone]) do
                                                             if(value[1] and value[2]) then
-                                                                local x, y, _ = HBD:GetWorldCoordinatesFromZone(value[1]/100, value[2]/100, ZoneDB:GetUiMapIdByAreaId(value[3]))
+                                                                local x, y, instance = HBD:GetWorldCoordinatesFromZone(value[1]/100, value[2]/100, ZoneDataAreaIDToUiMapID[value[3]])
                                                                 if(x and y) then
                                                                     local distance = QuestieLib:Euclid(playerX or 0, playerY or 0, x, y);
+                                                                    --Questie:Print(x, y, ZoneDataAreaIDToUiMapID[Zone], distance)
                                                                     if(closestStarter[questId].distance > distance) then
                                                                         closestStarter[questId].distance = distance;
                                                                         closestStarter[questId].x = x;
                                                                         closestStarter[questId].y = y;
-                                                                        closestStarter[questId].zone = ZoneDB:GetUiMapIdByAreaId(Zone);
+                                                                        closestStarter[questId].zone = ZoneDataAreaIDToUiMapID[Zone];
                                                                         closestStarter[questId].type = "GameObject - " .. obj.name;
                                                                     end
                                                                 end
@@ -622,15 +624,15 @@ function QuestieMap:FindClosestStarter()
                                                         end
                                                     end
                                                 else
-                                                    local uiMapId = ZoneDB:GetUiMapIdByAreaId(Zone)
-                                                    local x, y, _ = HBD:GetWorldCoordinatesFromZone(coords[1]/100, coords[2]/100, uiMapId)
+                                                    local x, y, instance = HBD:GetWorldCoordinatesFromZone(coords[1]/100, coords[2]/100, ZoneDataAreaIDToUiMapID[Zone])
                                                     if(x and y) then
                                                         local distance = QuestieLib:Euclid(playerX or 0, playerY or 0, x, y);
+                                                        --Questie:Print(x, y, ZoneDataAreaIDToUiMapID[Zone], distance)
                                                         if(closestStarter[questId].distance > distance) then
                                                             closestStarter[questId].distance = distance;
                                                             closestStarter[questId].x = x;
                                                             closestStarter[questId].y = y;
-                                                            closestStarter[questId].zone = uiMapId
+                                                            closestStarter[questId].zone = ZoneDataAreaIDToUiMapID[Zone];
                                                             closestStarter[questId].type = "GameObject - " .. obj.name;
                                                         end
                                                     end
@@ -641,26 +643,25 @@ function QuestieMap:FindClosestStarter()
                                 end
                             end
                         elseif(starterType == "NPC") then
-                            for _, NPCID in ipairs(starters or {}) do
+                            for index, NPCID in ipairs(starters or {}) do
                                 local NPC = QuestieDB:GetNPC(NPCID)
                                 if (NPC ~= nil and NPC.spawns ~= nil and NPC.friendly) then
                                     for Zone, Spawns in pairs(NPC.spawns) do
                                         if(Zone ~= nil and Spawns ~= nil) then
                                             for _, coords in ipairs(Spawns) do
                                                 if(coords[1] == -1 or coords[2] == -1) then
-                                                    local dungeonLocation = ZoneDB:GetDungeonLocation(Zone)
-                                                    if dungeonLocation ~= nil then
-                                                        for _, value in ipairs(dungeonLocation) do
+                                                    if(instanceData[Zone] ~= nil) then
+                                                        for index, value in ipairs(instanceData[Zone]) do
                                                             if(value[1] and value[2]) then
-                                                                local uiMapId = ZoneDB:GetUiMapIdByAreaId(value[3])
-                                                                local x, y, _ = HBD:GetWorldCoordinatesFromZone(value[1]/100, value[2]/100, uiMapId)
+                                                                local x, y, instance = HBD:GetWorldCoordinatesFromZone(value[1]/100, value[2]/100, ZoneDataAreaIDToUiMapID[value[3]])
                                                                 if(x and y) then
                                                                     local distance = QuestieLib:Euclid(playerX or 0, playerY or 0, x, y);
+                                                                    --Questie:Print(x, y, ZoneDataAreaIDToUiMapID[Zone], distance)
                                                                     if(closestStarter[questId].distance > distance) then
                                                                         closestStarter[questId].distance = distance;
                                                                         closestStarter[questId].x = x;
                                                                         closestStarter[questId].y = y;
-                                                                        closestStarter[questId].zone = ZoneDB:GetUiMapIdByAreaId(Zone);
+                                                                        closestStarter[questId].zone = ZoneDataAreaIDToUiMapID[Zone];
                                                                         closestStarter[questId].type = "NPC - ".. NPC.name;
                                                                     end
                                                                 end
@@ -668,15 +669,15 @@ function QuestieMap:FindClosestStarter()
                                                         end
                                                     end
                                                 elseif(coords[1] and coords[2]) then
-                                                    local uiMapId = ZoneDB:GetUiMapIdByAreaId(Zone)
-                                                    local x, y, _ = HBD:GetWorldCoordinatesFromZone(coords[1]/100, coords[2]/100, uiMapId)
+                                                    local x, y, instance = HBD:GetWorldCoordinatesFromZone(coords[1]/100, coords[2]/100, ZoneDataAreaIDToUiMapID[Zone])
                                                     if(x and y) then
                                                         local distance = QuestieLib:Euclid(playerX or 0, playerY or 0, x, y);
+                                                        --Questie:Print(x, y, ZoneDataAreaIDToUiMapID[Zone], distance)
                                                         if(closestStarter[questId].distance > distance) then
                                                             closestStarter[questId].distance = distance;
                                                             closestStarter[questId].x = x;
                                                             closestStarter[questId].y = y;
-                                                            closestStarter[questId].zone = ZoneDB:GetUiMapIdByAreaId(Zone);
+                                                            closestStarter[questId].zone = ZoneDataAreaIDToUiMapID[Zone];
                                                             closestStarter[questId].type = "NPC - ".. NPC.name;
                                                         end
                                                     end
@@ -702,9 +703,6 @@ function QuestieMap:FindClosestStarter()
 end
 
 function QuestieMap:GetNearestSpawn(objective)
-    if objective == nil then
-        return nil
-    end
     local playerX, playerY, playerI = HBD:GetPlayerWorldPosition()
     local bestDistance = 999999999
     local bestSpawn, bestSpawnZone, bestSpawnId, bestSpawnType, bestSpawnName
@@ -712,8 +710,8 @@ function QuestieMap:GetNearestSpawn(objective)
         for id, spawnData in pairs(objective.spawnList) do
             for zone, spawns in pairs(spawnData.Spawns) do
                 for _,spawn in pairs(spawns) do
-                    local uiMapId = ZoneDB:GetUiMapIdByAreaId(zone)
-                    local dX, dY, dInstance = HBD:GetWorldCoordinatesFromZone(spawn[1]/100.0, spawn[2]/100.0, uiMapId)
+                    local dX, dY, dInstance = HBD:GetWorldCoordinatesFromZone(spawn[1]/100.0, spawn[2]/100.0, ZoneDataAreaIDToUiMapID[zone])
+                    --print (" " .. tostring(dX) .. " " .. tostring(dY) .. " " .. ZoneDataAreaIDToUiMapID[zone])
                     local dist = HBD:GetWorldDistance(dInstance, playerX, playerY, dX, dY)
                     if dist then
                         if dInstance ~= playerI then
@@ -736,29 +734,23 @@ function QuestieMap:GetNearestSpawn(objective)
 end
 
 function QuestieMap:GetNearestQuestSpawn(quest)
-    if quest == nil then
-        return nil
-    end
-    if quest:IsComplete() == 1 then
-        local finisherSpawns = nil
-        local finisherName = nil
+    if QuestieQuest:IsComplete(quest) then
+        local finisher = nil
         if quest.Finisher ~= nil then
             if quest.Finisher.Type == "monster" then
-                --finisher = QuestieDB:GetNPC(quest.Finisher.Id)
-                finisherSpawns, finisherName = unpack(QuestieDB.QueryNPC(quest.Finisher.Id, "spawns", "name"))
+                finisher = QuestieDB:GetNPC(quest.Finisher.Id)
             elseif quest.Finisher.Type == "object" then
-                --finisher = QuestieDB:GetObject(quest.Finisher.Id)
-                finisherSpawns, finisherName = unpack(QuestieDB.QueryObject(quest.Finisher.Id, "spawns", "name"))
+                finisher = QuestieDB:GetObject(quest.Finisher.Id)
             end
         end
-        if finisherSpawns then -- redundant code
+        if finisher and finisher.spawns then -- redundant code
             local bestDistance = 999999999
             local playerX, playerY, playerI = HBD:GetPlayerWorldPosition()
             local bestSpawn, bestSpawnZone, bestSpawnId, bestSpawnType, bestSpawnName
-            for zone, spawns in pairs(finisherSpawns) do
+            for zone, spawns in pairs(finisher.spawns) do
                 for _, spawn in pairs(spawns) do
-                    local uiMapId = ZoneDB:GetUiMapIdByAreaId(zone)
-                    local dX, dY, dInstance = HBD:GetWorldCoordinatesFromZone(spawn[1]/100.0, spawn[2]/100.0, uiMapId)
+                    local dX, dY, dInstance = HBD:GetWorldCoordinatesFromZone(spawn[1]/100.0, spawn[2]/100.0, ZoneDataAreaIDToUiMapID[zone])
+                    --print (" " .. tostring(dX) .. " " .. tostring(dY) .. " " .. ZoneDataAreaIDToUiMapID[zone])
                     local dist = HBD:GetWorldDistance(dInstance, playerX, playerY, dX, dY)
                     if dist then
                         if dInstance ~= playerI then
@@ -769,7 +761,7 @@ function QuestieMap:GetNearestQuestSpawn(quest)
                             bestSpawn = spawn
                             bestSpawnZone = zone
                             bestSpawnType = quest.Finisher.Type
-                            bestSpawnName = finisherName
+                            bestSpawnName = finisher.LocalizedName or finisher.name
                         end
                     end
                 end
@@ -780,19 +772,17 @@ function QuestieMap:GetNearestQuestSpawn(quest)
     end
     local bestDistance = 999999999
     local bestSpawn, bestSpawnZone, bestSpawnId, bestSpawnType, bestSpawnName
-    if quest.Objectives then -- to prevent error if nil
-        for _, objective in pairs(quest.Objectives) do
-            local spawn, zone, Name, id, Type, dist = QuestieMap:GetNearestSpawn(objective)
-            if spawn and dist < bestDistance and ((not objective.Needed) or objective.Needed ~= objective.Collected) then
-                bestDistance = dist
-                bestSpawn = spawn
-                bestSpawnZone = zone
-                bestSpawnId = id
-                bestSpawnType = Type
-                bestSpawnName = Name
-            end
+    for _, objective in pairs(quest.Objectives) do
+        local spawn, zone, Name, id, Type, dist = QuestieMap:GetNearestSpawn(objective)
+        if spawn and dist < bestDistance and ((not objective.Needed) or objective.Needed ~= objective.Collected) then
+            bestDistance = dist
+            bestSpawn = spawn
+            bestSpawnZone = zone
+            bestSpawnId = id
+            bestSpawnType = Type
+            bestSpawnName = Name
         end
-    end -- end of nil error prevention
+    end
     if quest.SpecialObjectives then
         for _, objective in pairs(quest.SpecialObjectives) do
             local spawn, zone, Name, id, Type, dist = QuestieMap:GetNearestSpawn(objective)
@@ -807,20 +797,4 @@ function QuestieMap:GetNearestQuestSpawn(quest)
         end
     end
     return bestSpawn, bestSpawnZone, bestSpawnName, bestSpawnId, bestSpawnType, bestDistance
-end
-
-QuestieMap.zoneWaypointColorOverrides = { -- this is used when the default orange color doesn't work well in specific zones
-    [38] = {0,0.1,0.9,0.7} -- loch modan
-}
-
-QuestieMap.zoneWaypointHoverColorOverrides = {
-    [38] = {0,0.6,1,1} -- loch modan
-}
-
-function QuestieMap:DrawWaypoints(icon, waypoints, zone, x, y)
-    local lineFrames = QuestieFramePool:CreateWaypoints(icon, waypoints, nil, QuestieMap.zoneWaypointColorOverrides[zone])
-
-    for _, lineFrame in ipairs(lineFrames) do
-        QuestieMap:DrawLineIcon(lineFrame, zone, x, y)
-    end
 end

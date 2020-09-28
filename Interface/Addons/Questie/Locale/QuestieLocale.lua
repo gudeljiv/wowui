@@ -1,14 +1,12 @@
 QuestieLocale = {};
 QuestieLocale.locale = {};
 LangItemLookup = {}
-LangNameLookup = {};
+LangNameLookup= {};
 LangObjectNameLookup = {};
 LangObjectLookup = {};
 LangQuestLookup = {};
 LangContinentLookup = {}
 LangZoneLookup = {}
-LangZoneCategoryLookup = {}
-LangQuestCategory = {}
 
 -------------------------
 --Import modules.
@@ -27,7 +25,6 @@ function QuestieLocale:Initialize()
         end
     end
     -- Load quest locales
-    -- data is {<questName>, {<questDescription>,...}, {<questObjective>,...}}
     for id, data in pairs(LangQuestLookup[locale] or {}) do
         if QuestieDB.questData[id] then
             if data[1] then
@@ -37,11 +34,7 @@ function QuestieLocale:Initialize()
             if data[3] then
                  -- needs to be saved as a table for tooltips to have lines
                  -- TODO: split string into ~80 char lines
-                if type(data[3]) == "string" then
-                    QuestieDB.questData[id][QuestieDB.questKeys.objectivesText] = {data[3]}
-                else
-                    QuestieDB.questData[id][QuestieDB.questKeys.objectivesText] = data[3]
-                end
+                QuestieDB.questData[id][QuestieDB.questKeys.objectivesText] = {data[3]}
             end
         end
     end
@@ -67,11 +60,9 @@ function QuestieLocale:Initialize()
             table.insert(LangObjectNameLookup[name], id)
         end
     end
-    -- Load continent, zone locales, and quest catagories
+    -- Load continent and zone locales
     LangContinentLookup = LangContinentLookup[locale] or LangContinentLookup["enUS"] or {}
     LangZoneLookup = LangZoneLookup[locale] or LangZoneLookup["enUS"] or {}
-    LangZoneCategoryLookup = LangZoneCategoryLookup[locale] or LangZoneCategoryLookup["enUS"] or {}
-    LangQuestCategory = LangQuestCategory[locale] or LangQuestCategory["enUS"] or {}
 end
 
 function QuestieLocale:FallbackLocale(lang)

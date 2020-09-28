@@ -17,10 +17,6 @@ KILLTRACK_CHAR = {
 			["Name"] = "Deviate Viper",
 			["Kills"] = 4,
 		},
-		[2959] = {
-			["Name"] = "Prairie Stalker",
-			["Kills"] = 0,
-		},
 		[3673] = {
 			["Name"] = "Lord Serpentis",
 			["Kills"] = 1,
@@ -28,6 +24,10 @@ KILLTRACK_CHAR = {
 		[1912] = {
 			["Name"] = "Dalaran Protector",
 			["Kills"] = 0,
+		},
+		[5756] = {
+			["Name"] = "Deviate Venomwing",
+			["Kills"] = 9,
 		},
 		[2351] = {
 			["Name"] = "Gray Bear",
@@ -41,16 +41,12 @@ KILLTRACK_CHAR = {
 			["Name"] = "Moonrage Bloodhowler",
 			["Kills"] = 0,
 		},
-		[5756] = {
-			["Name"] = "Deviate Venomwing",
-			["Kills"] = 9,
+		[2265] = {
+			["Name"] = "Hillsbrad Apprentice Blacksmith",
+			["Kills"] = 0,
 		},
 		[6466] = {
 			["Name"] = "Gamon",
-			["Kills"] = 0,
-		},
-		[2265] = {
-			["Name"] = "Hillsbrad Apprentice Blacksmith",
 			["Kills"] = 0,
 		},
 		[3840] = {
@@ -61,33 +57,37 @@ KILLTRACK_CHAR = {
 			["Name"] = "Deviate Adder",
 			["Kills"] = 7,
 		},
+		[2384] = {
+			["Name"] = "Starving Mountain Lion",
+			["Kills"] = 0,
+		},
 		[11357] = {
 			["Name"] = "DieBUSTA",
 			["Kills"] = 1,
 		},
-		[2360] = {
-			["Name"] = "Hillsbrad Farmhand",
-			["Kills"] = 166,
+		[3242] = {
+			["Name"] = "Zhevra Runner",
+			["Kills"] = 0,
 		},
 		[2053] = {
 			["Name"] = "Haggard Refugee",
 			["Kills"] = 20,
 		},
-		[5682] = {
-			["Name"] = "Dalin Forgewright",
-			["Kills"] = 0,
+		[2266] = {
+			["Name"] = "Hillsbrad Farmer",
+			["Kills"] = 128,
 		},
 		[5775] = {
 			["Name"] = "Verdan the Everliving",
 			["Kills"] = 1,
 		},
-		[2266] = {
-			["Name"] = "Hillsbrad Farmer",
-			["Kills"] = 128,
+		[2959] = {
+			["Name"] = "Prairie Stalker",
+			["Kills"] = 0,
 		},
-		[3637] = {
-			["Name"] = "Deviate Guardian",
-			["Kills"] = 4,
+		[5682] = {
+			["Name"] = "Dalin Forgewright",
+			["Kills"] = 0,
 		},
 		[2408] = {
 			["Name"] = "Snapjaw",
@@ -97,9 +97,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Chicken",
 			["Kills"] = 3,
 		},
-		[3242] = {
-			["Name"] = "Zhevra Runner",
-			["Kills"] = 0,
+		[3637] = {
+			["Name"] = "Deviate Guardian",
+			["Kills"] = 4,
 		},
 		[2054] = {
 			["Name"] = "Sickly Refugee",
@@ -113,9 +113,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Biletoad",
 			["Kills"] = 0,
 		},
-		[2267] = {
-			["Name"] = "Hillsbrad Peasant",
-			["Kills"] = 1,
+		[2960] = {
+			["Name"] = "Prairie Wolf Alpha",
+			["Kills"] = 0,
 		},
 		[5053] = {
 			["Name"] = "Deviate Crocolisk",
@@ -217,13 +217,13 @@ KILLTRACK_CHAR = {
 			["Name"] = "Blacksmith Verringtan",
 			["Kills"] = 0,
 		},
+		[2267] = {
+			["Name"] = "Hillsbrad Peasant",
+			["Kills"] = 1,
+		},
 		[3653] = {
 			["Name"] = "Kresh",
 			["Kills"] = 1,
-		},
-		[2960] = {
-			["Name"] = "Prairie Wolf Alpha",
-			["Kills"] = 0,
 		},
 		[1923] = {
 			["Name"] = "Bloodsnout Worg",
@@ -233,9 +233,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Sunscale Screecher",
 			["Kills"] = 0,
 		},
-		[2384] = {
-			["Name"] = "Starving Mountain Lion",
-			["Kills"] = 0,
+		[2360] = {
+			["Name"] = "Hillsbrad Farmhand",
+			["Kills"] = 166,
 		},
 		[2956] = {
 			["Name"] = "Adult Plainstrider",

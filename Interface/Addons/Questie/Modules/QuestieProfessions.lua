@@ -1,24 +1,25 @@
 ---@class QuestieProfessions
 local QuestieProfessions = QuestieLoader:CreateModule("QuestieProfessions");
-
+---@type QuestieQuest
+local QuestieQuest = QuestieLoader:ImportModule("QuestieQuest")
 local playerProfessions = {}
 local professionTable = {}
 
 function QuestieProfessions:Update()
     Questie:Debug(DEBUG_DEVELOP, "QuestieProfession: Update")
     ExpandSkillHeader(0) -- Expand all header
-    local isProfessionUpdate = false
+    local isProfUpdate = false
 
     for i=1, GetNumSkillLines() do
         if i > 14 then break; end -- We don't have to go through all the weapon skills
 
-        local skillName, isHeader, _, skillRank, _, _, _, _, _, _, _, _, _ = GetSkillLineInfo(i)
+        local skillName, isHeader, isExpanded, skillRank, _, _, _, _, _, _, _, _, _ = GetSkillLineInfo(i)
         if isHeader == nil and professionTable[skillName] then
-            isProfessionUpdate = true -- A profession leveled up, not something like "Defense"
+            isProfUpdate = true -- A profession leveled up, not something like "Defense"
             playerProfessions[professionTable[skillName]] = skillRank
         end
     end
-    return isProfessionUpdate
+    return isProfUpdate
 end
 
 -- This function is just for debugging purpose
@@ -27,22 +28,16 @@ function QuestieProfessions:GetPlayerProfessions()
     return playerProfessions
 end
 
-local function HasProfession(profession)
-    return profession == nil or playerProfessions[profession] ~= nil
+local function HasProfession(prof)
+    return prof == nil or playerProfessions[prof] ~= nil
 end
 
-local function HasSkillLevel(profession, skillLevel)
-    return skillLevel == nil or playerProfessions[profession] >= skillLevel
+local function HasProfessionSkill(prof, skillLevel)
+    return skillLevel == nil or playerProfessions[prof] >= skillLevel
 end
 
-function QuestieProfessions:HasProfessionAndSkillLevel(requiredSkill)
-    if requiredSkill == nil then
-        return true
-    end
-
-    local profession = requiredSkill[1]
-    local skillLevel = requiredSkill[2]
-    return HasProfession(profession) and HasSkillLevel(profession, skillLevel)
+function QuestieProfessions:HasProfessionAndSkill(reqSkill)
+    return reqSkill == nil or (HasProfession(reqSkill[1]) and HasProfessionSkill(reqSkill[1], reqSkill[2]))
 end
 
 -- There are no quests for Skinning and Mining so we don't need them

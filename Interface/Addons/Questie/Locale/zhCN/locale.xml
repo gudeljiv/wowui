@@ -5,5 +5,4 @@
   <Script file="lookupQuests.lua"/>
   <Script file="lookupObjects.lua"/>
   <Script file="lookupZones.lua"/>
-  <Script file="lookupQuestCategory.lua"/>
 </Ui>

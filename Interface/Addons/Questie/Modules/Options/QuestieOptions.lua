@@ -10,26 +10,25 @@ local QuestieOptionsMinimapIcon = QuestieLoader:ImportModule("QuestieOptionsMini
 
 
 QuestieOptions.tabs = {...}
-QuestieConfigFrame = nil
+QuestieConfigFrame = {...}
 
 local AceGUI = LibStub("AceGUI-3.0")
-local AceConfigDialog = LibStub("AceConfigDialogQuestie-3.0")
 
 -- Forward declaration
-local _CreateOptionsTable
+local _CreateGUI
 
 function QuestieOptions:Initialize()
     Questie:Debug(DEBUG_DEVELOP, "[QuestieOptions]: Initializing...")
 
-    local optionsTable = _CreateOptionsTable()
-    LibStub("AceConfigQuestie-3.0"):RegisterOptionsTable("Questie", optionsTable)
-    Questie.configFrame = AceConfigDialog:AddToBlizOptions("Questie", "Questie");
+    local optionsGUI = _CreateGUI()
+    LibStub("AceConfigQuestie-3.0"):RegisterOptionsTable("Questie", optionsGUI)
+    Questie.configFrame = LibStub("AceConfigDialogQuestie-3.0"):AddToBlizOptions("Questie", "Questie");
 
     local configFrame = AceGUI:Create("Frame");
-    AceConfigDialog:SetDefaultSize("Questie", 625, 780)
-    AceConfigDialog:Open("Questie", configFrame)
+    LibStub("AceConfigDialogQuestie-3.0"):SetDefaultSize("Questie", 625, 700)
+    LibStub("AceConfigDialogQuestie-3.0"):Open("Questie", configFrame)
     configFrame:Hide();
-    QuestieConfigFrame = configFrame;
+    QuestieConfigFrame = configFrame.frame;
     table.insert(UISpecialFrames, "QuestieConfigFrame");
 
     QuestieOptionsMinimapIcon:Initialize()
@@ -47,7 +46,7 @@ end
 function QuestieOptions:OpenConfigWindow()
     if not QuestieConfigFrame:IsShown() then
         PlaySound(882)
-        AceConfigDialog:Open("Questie", QuestieConfigFrame)
+        QuestieConfigFrame:Show()
     else
         QuestieConfigFrame:Hide()
     end
@@ -78,7 +77,7 @@ function QuestieOptions:ClusterRedraw()
 end
 
 
-_CreateOptionsTable = function()
+_CreateGUI = function()
     return {
         name = "Questie",
         handler = Questie,

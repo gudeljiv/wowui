@@ -13,8 +13,9 @@ Frames/DefaultFramesCustomScale.lua
 Frames/DefaultFramesDarker.lua
 Frames/GroopLootFrame.lua
 Frames/InspectFrame.lua
-Frames/MailBoxFrame.lua
 Frames/LootFrame.lua
+Frames/MailBoxFrame.lua
+Frames/MailBoxFrame.lua
 Frames/RaidFrameReSizer.lua
 Frames/SpellBookFrame.lua
 Frames/TalentFrame.lua
@@ -30,6 +31,7 @@ Addons/AdiBags.lua
 Addons/Examiner.lua
 Addons/MonkeyQuest.lua
 Addons/Omen.lua
+Addons/Questie.lua
 Addons/RangeDisplay.lua
 Addons/Recount.lua
 Addons/TinyThreat.lua

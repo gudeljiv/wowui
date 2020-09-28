@@ -1,11 +1,12 @@
 ---@class QuestiePlayer
 local QuestiePlayer = QuestieLoader:CreateModule("QuestiePlayer");
-local _QuestiePlayer = QuestiePlayer.private
 -------------------------
 --Import modules.
 -------------------------
----@type ZoneDB
-local ZoneDB = QuestieLoader:ImportModule("ZoneDB")
+---@type QuestieDBZone
+local QuestieDBZone = QuestieLoader:ImportModule("QuestieDBZone")
+
+local _QuestiePlayer = {...};
 
 QuestiePlayer.currentQuestlog = {} --Gets populated by QuestieQuest:GetAllQuestIds(), this is either an object to the quest in question, or the ID if the object doesn't exist.
 _QuestiePlayer.playerLevel = -1
@@ -15,14 +16,6 @@ local math_max = math.max;
 
 function QuestiePlayer:Initialize()
     _QuestiePlayer.playerLevel = UnitLevel("player")
-
-    local _, _, raceIndex = UnitRace("player")
-    raceIndex = math.pow(2, raceIndex-1)
-    _QuestiePlayer.raceIndex = raceIndex
-
-    local _, _, classIndex = UnitClass("player")
-    classIndex = math.pow(2, classIndex-1)
-    _QuestiePlayer.classIndex = classIndex
 end
 
 --Always compare to the UnitLevel parameter, returning the highest.
@@ -48,33 +41,17 @@ function QuestiePlayer:GetGroupType()
     end
 end
 
-function QuestiePlayer:HasRequiredRace(requiredRaces)
-    if (not requiredRaces) then
-        return true
-    end
-
-    return not (requiredRaces ~= 0 and (bit.band(requiredRaces, _QuestiePlayer.raceIndex) == 0))
-end
-
-function QuestiePlayer:HasRequiredClass(requiredClasses)
-    if (not requiredClasses) then
-        return true
-    end
-
-    return not (requiredClasses ~= 0 and (bit.band(requiredClasses, _QuestiePlayer.classIndex) == 0))
-end
-
 function QuestiePlayer:GetCurrentZoneId()
-    return ZoneDB:GetAreaIdByUiMapId(C_Map.GetBestMapForUnit("player"))
+    return QuestieDBZone:GetAreaIdByUIMapID(C_Map.GetBestMapForUnit("player"))
 end
 
 function QuestiePlayer:GetCurrentContinentId()
     local currentZoneId = QuestiePlayer:GetCurrentZoneId()
-    if (not currentZoneId) or currentZoneId == 0 then
-        return 1 -- Default to Eastern Kingdom
+    if currentZoneId == 0 then
+        return 0
     end
 
-    local currentContinentId = 1 -- Default to Eastern Kingdom
+    local currentContinentId = 0
     for cId, cont in pairs(LangZoneLookup) do
         for id, _ in pairs(cont) do
             if id == currentZoneId then
@@ -132,21 +109,4 @@ function QuestiePlayer:GetPartyMemberByName(playerName)
         end
     end
     return nil;
-end
-
-function QuestiePlayer:GetPartyMemberList()
-    local members = {}
-    if(UnitInParty("player") or UnitInRaid("player")) then
-        local player = {}
-        for index=1, 40 do
-            local name = UnitName("party"..index)
-            if name then
-                members[name] = true
-            end
-            if(index > 6 and not UnitInRaid("player")) then
-                break
-            end
-        end
-    end
-    return members
 end
