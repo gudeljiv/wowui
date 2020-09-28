@@ -1,14 +1,14 @@
 
 KILLTRACK = {
+	["COUNT_GROUP"] = false,
+	["PRINTKILLS"] = false,
+	["SHOW_EXP"] = false,
 	["BROKER"] = {
 		["MINIMAP"] = {
 			["hide"] = true,
 		},
 		["SHORT_TEXT"] = false,
 	},
-	["PRINTKILLS"] = false,
-	["SHOW_EXP"] = false,
-	["TOOLTIP"] = true,
 	["PRINTNEW"] = false,
 	["MOBS"] = {
 		[2268] = {
@@ -18,7 +18,7 @@ KILLTRACK = {
 		},
 		[2427] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
+			["Kills"] = 2,
 			["Name"] = "Jailor Eston",
 		},
 		[5775] = {
@@ -38,7 +38,7 @@ KILLTRACK = {
 		},
 		[2428] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
+			["Kills"] = 2,
 			["Name"] = "Jailor Marlgen",
 		},
 		[2270] = {
@@ -103,7 +103,7 @@ KILLTRACK = {
 		},
 		[2244] = {
 			["AchievCount"] = 0,
-			["Kills"] = 20,
+			["Kills"] = 52,
 			["Name"] = "Syndicate Shadow Mage",
 		},
 		[3673] = {
@@ -188,7 +188,7 @@ KILLTRACK = {
 		},
 		[2349] = {
 			["AchievCount"] = 0,
-			["Kills"] = 15,
+			["Kills"] = 16,
 			["Name"] = "Giant Moss Creeper",
 		},
 		[5048] = {
@@ -233,7 +233,7 @@ KILLTRACK = {
 		},
 		[2385] = {
 			["AchievCount"] = 0,
-			["Kills"] = 2,
+			["Kills"] = 3,
 			["Name"] = "Feral Mountain Lion",
 		},
 		[5056] = {
@@ -248,7 +248,7 @@ KILLTRACK = {
 		},
 		[2354] = {
 			["AchievCount"] = 0,
-			["Kills"] = 23,
+			["Kills"] = 26,
 			["Name"] = "Vicious Gray Bear",
 		},
 		[2386] = {
@@ -283,7 +283,7 @@ KILLTRACK = {
 		},
 		[2261] = {
 			["AchievCount"] = 0,
-			["Kills"] = 34,
+			["Kills"] = 95,
 			["Name"] = "Syndicate Watchman",
 		},
 		[5761] = {
@@ -291,55 +291,60 @@ KILLTRACK = {
 			["Kills"] = 15,
 			["Name"] = "Deviate Shambler",
 		},
-		[2914] = {
+		[1125] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Snake",
+			["Name"] = "Boar",
+		},
+		[2260] = {
+			["AchievCount"] = 0,
+			["Kills"] = 30,
+			["Name"] = "Syndicate Rogue",
 		},
 		[2240] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Syndicate Footpad",
 		},
-		[2403] = {
+		[5756] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Farmer Getz",
+			["Kills"] = 9,
+			["Name"] = "Deviate Venomwing",
 		},
 		[2264] = {
 			["AchievCount"] = 0,
 			["Kills"] = 2,
 			["Name"] = "Hillsbrad Tailor",
 		},
-		[2449] = {
-			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Citizen Wilkes",
-		},
-		[3630] = {
+		[6466] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Deviate Coiler",
+			["Name"] = "Gamon",
 		},
 		[2360] = {
 			["AchievCount"] = 0,
 			["Kills"] = 7,
 			["Name"] = "Hillsbrad Farmhand",
 		},
+		[3630] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Deviate Coiler",
+		},
 		[3273] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Kolkar Stormer",
 		},
-		[3242] = {
+		[2620] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Zhevra Runner",
+			["Name"] = "Prairie Dog",
 		},
-		[2248] = {
+		[3415] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Cave Yeti",
+			["Kills"] = 0,
+			["Name"] = "Savannah Huntress",
 		},
 		[3631] = {
 			["AchievCount"] = 0,
@@ -351,15 +356,15 @@ KILLTRACK = {
 			["Kills"] = 13,
 			["Name"] = "Hillsbrad Farmer",
 		},
-		[3415] = {
+		[2248] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Savannah Huntress",
+			["Kills"] = 1,
+			["Name"] = "Cave Yeti",
 		},
-		[2620] = {
+		[3242] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Prairie Dog",
+			["Name"] = "Zhevra Runner",
 		},
 		[3632] = {
 			["AchievCount"] = 0,
@@ -368,37 +373,37 @@ KILLTRACK = {
 		},
 		[2267] = {
 			["AchievCount"] = 0,
-			["Kills"] = 5,
+			["Kills"] = 6,
 			["Name"] = "Hillsbrad Peasant",
 		},
-		[6466] = {
+		[2449] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Gamon",
+			["Kills"] = 1,
+			["Name"] = "Citizen Wilkes",
 		},
-		[5756] = {
+		[2403] = {
 			["AchievCount"] = 0,
-			["Kills"] = 9,
-			["Name"] = "Deviate Venomwing",
+			["Kills"] = 1,
+			["Name"] = "Farmer Getz",
 		},
 		[3633] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Deviate Slayer",
 		},
-		[2260] = {
+		[2914] = {
 			["AchievCount"] = 0,
-			["Kills"] = 11,
-			["Name"] = "Syndicate Rogue",
+			["Kills"] = 0,
+			["Name"] = "Snake",
 		},
 	},
-	["DISABLE_RAIDS"] = false,
-	["ACHIEV_THRESHOLD"] = 1000,
-	["DISABLE_DUNGEONS"] = false,
 	["IMMEDIATE"] = {
 		["THRESHOLD"] = 0,
 		["POSITION"] = {
 		},
 	},
-	["COUNT_GROUP"] = false,
+	["ACHIEV_THRESHOLD"] = 1000,
+	["DISABLE_DUNGEONS"] = false,
+	["DISABLE_RAIDS"] = false,
+	["TOOLTIP"] = true,
 }
