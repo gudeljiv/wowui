@@ -1,5 +1,9 @@
 local _, xVermin = ...
 
+-- LootFrame:Hide()
+-- LootFrame.Show = function()
+-- end
+
 LootFrame:HookScript(
 	"OnShow",
 	function()

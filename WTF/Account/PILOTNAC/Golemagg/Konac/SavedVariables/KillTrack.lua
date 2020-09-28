@@ -1,60 +1,160 @@
 
 KILLTRACK_CHAR = {
 	["MOBS"] = {
-		[2350] = {
-			["Name"] = "Forest Moss Creeper",
-			["Kills"] = 0,
+		[2268] = {
+			["Name"] = "Hillsbrad Footman",
+			["Kills"] = 16,
+		},
+		[2427] = {
+			["Name"] = "Jailor Eston",
+			["Kills"] = 1,
+		},
+		[5775] = {
+			["Name"] = "Verdan the Everliving",
+			["Kills"] = 1,
 		},
 		[3634] = {
 			["Name"] = "Deviate Stalker",
 			["Kills"] = 0,
 		},
-		[5756] = {
-			["Name"] = "Deviate Venomwing",
-			["Kills"] = 9,
+		[2269] = {
+			["Name"] = "Hillsbrad Miner",
+			["Kills"] = 7,
+		},
+		[2428] = {
+			["Name"] = "Jailor Marlgen",
+			["Kills"] = 1,
+		},
+		[2270] = {
+			["Name"] = "Hillsbrad Sentry",
+			["Kills"] = 2,
+		},
+		[3636] = {
+			["Name"] = "Deviate Ravager",
+			["Kills"] = 0,
+		},
+		[2335] = {
+			["Name"] = "Magistrate Burnside",
+			["Kills"] = 2,
+		},
+		[3637] = {
+			["Name"] = "Deviate Guardian",
+			["Kills"] = 4,
+		},
+		[3669] = {
+			["Name"] = "Lord Cobrahn",
+			["Kills"] = 1,
+		},
+		[3638] = {
+			["Name"] = "Devouring Ectoplasm",
+			["Kills"] = 0,
+		},
+		[3670] = {
+			["Name"] = "Lord Pythas",
+			["Kills"] = 1,
+		},
+		[2305] = {
+			["Name"] = "Foreman Bonds",
+			["Kills"] = 0,
+		},
+		[3671] = {
+			["Name"] = "Lady Anacondra",
+			["Kills"] = 1,
+		},
+		[521] = {
+			["Name"] = "buttsecks",
+			["Kills"] = 0,
+		},
+		[3100] = {
+			["Name"] = "Elder Mottled Boar",
+			["Kills"] = 0,
+		},
+		[3640] = {
+			["Name"] = "Evolving Ectoplasm",
+			["Kills"] = 7,
+		},
+		[2244] = {
+			["Name"] = "Syndicate Shadow Mage",
+			["Kills"] = 20,
+		},
+		[3673] = {
+			["Name"] = "Lord Serpentis",
+			["Kills"] = 1,
+		},
+		[2372] = {
+			["Name"] = "Mudsnout Gnoll",
+			["Kills"] = 8,
 		},
 		[3674] = {
 			["Name"] = "Skum",
 			["Kills"] = 0,
 		},
-		[5048] = {
-			["Name"] = "Deviate Adder",
-			["Kills"] = 7,
+		[2373] = {
+			["Name"] = "Mudsnout Shaman",
+			["Kills"] = 4,
 		},
-		[6466] = {
-			["Name"] = "Gamon",
-			["Kills"] = 0,
+		[2406] = {
+			["Name"] = "Mountain Lion",
+			["Kills"] = 4,
 		},
-		[3273] = {
-			["Name"] = "Kolkar Stormer",
-			["Kills"] = 0,
-		},
-		[3415] = {
-			["Name"] = "Savannah Huntress",
-			["Kills"] = 0,
-		},
-		[3242] = {
-			["Name"] = "Zhevra Runner",
+		[13816] = {
+			["Name"] = "Prospector Stonehewer",
 			["Kills"] = 0,
 		},
 		[1767] = {
 			["Name"] = "Vile Fin Shredder",
 			["Kills"] = 0,
 		},
-		[3636] = {
-			["Name"] = "Deviate Ravager",
+		[2407] = {
+			["Name"] = "Hulking Mountain Lion",
+			["Kills"] = 4,
+		},
+		[2503] = {
+			["Name"] = "Hillsbrad Foreman",
+			["Kills"] = 6,
+		},
+		[2408] = {
+			["Name"] = "Snapjaw",
 			["Kills"] = 0,
 		},
-		[2384] = {
-			["Name"] = "Starving Mountain Lion",
+		[232] = {
+			["Name"] = "Farmer Ray",
+			["Kills"] = 1,
+		},
+		[2442] = {
+			["Name"] = "Cow",
 			["Kills"] = 0,
 		},
-		[2266] = {
-			["Name"] = "Hillsbrad Farmer",
+		[3300] = {
+			["Name"] = "Adder",
+			["Kills"] = 0,
+		},
+		[3840] = {
+			["Name"] = "Druid of the Fang",
+			["Kills"] = 24,
+		},
+		[2348] = {
+			["Name"] = "Elder Moss Creeper",
+			["Kills"] = 1,
+		},
+		[8886] = {
+			["Name"] = "Deviate Python",
+			["Kills"] = 14,
+		},
+		[2349] = {
+			["Name"] = "Giant Moss Creeper",
+			["Kills"] = 15,
+		},
+		[5048] = {
+			["Name"] = "Deviate Adder",
 			["Kills"] = 7,
 		},
-		[3637] = {
-			["Name"] = "Deviate Guardian",
+		[2350] = {
+			["Name"] = "Forest Moss Creeper",
+			["Kills"] = 3,
+		},
+		[2351] = {
+			["Name"] = "Gray Bear",
 			["Kills"] = 4,
 		},
 		[3653] = {
@@ -65,129 +165,145 @@ KILLTRACK_CHAR = {
 			["Name"] = "Deviate Crocolisk",
 			["Kills"] = 5,
 		},
-		[3669] = {
-			["Name"] = "Lord Cobrahn",
+		[2384] = {
+			["Name"] = "Starving Mountain Lion",
+			["Kills"] = 31,
+		},
+		[2448] = {
+			["Name"] = "Clerk Horrace Whitesteed",
 			["Kills"] = 1,
-		},
-		[2354] = {
-			["Name"] = "Vicious Gray Bear",
-			["Kills"] = 0,
-		},
-		[3244] = {
-			["Name"] = "Greater Plainstrider",
-			["Kills"] = 0,
-		},
-		[3630] = {
-			["Name"] = "Deviate Coiler",
-			["Kills"] = 0,
-		},
-		[3638] = {
-			["Name"] = "Devouring Ectoplasm",
-			["Kills"] = 0,
-		},
-		[2449] = {
-			["Name"] = "Citizen Wilkes",
-			["Kills"] = 1,
-		},
-		[2268] = {
-			["Name"] = "Hillsbrad Footman",
-			["Kills"] = 2,
 		},
 		[5055] = {
 			["Name"] = "Deviate Lasher",
 			["Kills"] = 31,
 		},
+		[2385] = {
+			["Name"] = "Feral Mountain Lion",
+			["Kills"] = 2,
+		},
+		[5056] = {
+			["Name"] = "Deviate Dreadfang",
+			["Kills"] = 3,
+		},
+		[5755] = {
+			["Name"] = "Deviate Viper",
+			["Kills"] = 4,
+		},
+		[2354] = {
+			["Name"] = "Vicious Gray Bear",
+			["Kills"] = 23,
+		},
+		[2386] = {
+			["Name"] = "Southshore Guard",
+			["Kills"] = 0,
+		},
+		[2450] = {
+			["Name"] = "Miner Hackett",
+			["Kills"] = 1,
+		},
+		[3244] = {
+			["Name"] = "Greater Plainstrider",
+			["Kills"] = 0,
+		},
+		[2387] = {
+			["Name"] = "Hillsbrad Councilman",
+			["Kills"] = 7,
+		},
+		[2451] = {
+			["Name"] = "Farmer Kalaba",
+			["Kills"] = 1,
+		},
+		[2356] = {
+			["Name"] = "Elder Gray Bear",
+			["Kills"] = 9,
+		},
+		[2261] = {
+			["Name"] = "Syndicate Watchman",
+			["Kills"] = 34,
+		},
+		[5761] = {
+			["Name"] = "Deviate Shambler",
+			["Kills"] = 15,
+		},
 		[2914] = {
 			["Name"] = "Snake",
 			["Kills"] = 0,
 		},
-		[3300] = {
-			["Name"] = "Adder",
+		[2240] = {
+			["Name"] = "Syndicate Footpad",
 			["Kills"] = 0,
+		},
+		[2403] = {
+			["Name"] = "Farmer Getz",
+			["Kills"] = 1,
+		},
+		[2264] = {
+			["Name"] = "Hillsbrad Tailor",
+			["Kills"] = 2,
+		},
+		[2449] = {
+			["Name"] = "Citizen Wilkes",
+			["Kills"] = 1,
+		},
+		[3630] = {
+			["Name"] = "Deviate Coiler",
+			["Kills"] = 0,
+		},
+		[2360] = {
+			["Name"] = "Hillsbrad Farmhand",
+			["Kills"] = 7,
+		},
+		[3273] = {
+			["Name"] = "Kolkar Stormer",
+			["Kills"] = 0,
+		},
+		[3242] = {
+			["Name"] = "Zhevra Runner",
+			["Kills"] = 0,
+		},
+		[2248] = {
+			["Name"] = "Cave Yeti",
+			["Kills"] = 1,
 		},
 		[3631] = {
 			["Name"] = "Deviate Stinglash",
 			["Kills"] = 0,
 		},
-		[2442] = {
-			["Name"] = "Cow",
-			["Kills"] = 0,
+		[2266] = {
+			["Name"] = "Hillsbrad Farmer",
+			["Kills"] = 13,
 		},
-		[232] = {
-			["Name"] = "Farmer Ray",
+		[3415] = {
+			["Name"] = "Savannah Huntress",
 			["Kills"] = 0,
 		},
 		[2620] = {
 			["Name"] = "Prairie Dog",
 			["Kills"] = 0,
 		},
-		[3671] = {
-			["Name"] = "Lady Anacondra",
-			["Kills"] = 1,
-		},
-		[2356] = {
-			["Name"] = "Elder Gray Bear",
-			["Kills"] = 3,
-		},
-		[2248] = {
-			["Name"] = "Cave Yeti",
-			["Kills"] = 0,
-		},
 		[3632] = {
 			["Name"] = "Deviate Creeper",
 			["Kills"] = 0,
 		},
-		[3640] = {
-			["Name"] = "Evolving Ectoplasm",
-			["Kills"] = 7,
+		[2267] = {
+			["Name"] = "Hillsbrad Peasant",
+			["Kills"] = 5,
 		},
-		[2360] = {
-			["Name"] = "Hillsbrad Farmhand",
-			["Kills"] = 2,
-		},
-		[3840] = {
-			["Name"] = "Druid of the Fang",
-			["Kills"] = 24,
-		},
-		[3100] = {
-			["Name"] = "Elder Mottled Boar",
+		[6466] = {
+			["Name"] = "Gamon",
 			["Kills"] = 0,
 		},
-		[2349] = {
-			["Name"] = "Giant Moss Creeper",
-			["Kills"] = 0,
-		},
-		[8886] = {
-			["Name"] = "Deviate Python",
-			["Kills"] = 14,
-		},
-		[5755] = {
-			["Name"] = "Deviate Viper",
-			["Kills"] = 4,
+		[5756] = {
+			["Name"] = "Deviate Venomwing",
+			["Kills"] = 9,
 		},
 		[3633] = {
 			["Name"] = "Deviate Slayer",
 			["Kills"] = 0,
 		},
-		[5761] = {
-			["Name"] = "Deviate Shambler",
-			["Kills"] = 15,
-		},
-		[3670] = {
-			["Name"] = "Lord Pythas",
-			["Kills"] = 1,
-		},
-		[5056] = {
-			["Name"] = "Deviate Dreadfang",
-			["Kills"] = 3,
-		},
-		[3673] = {
-			["Name"] = "Lord Serpentis",
-			["Kills"] = 1,
-		},
-		[5775] = {
-			["Name"] = "Verdan the Everliving",
-			["Kills"] = 1,
+		[2260] = {
+			["Name"] = "Syndicate Rogue",
+			["Kills"] = 11,
 		},
 	},
 }
