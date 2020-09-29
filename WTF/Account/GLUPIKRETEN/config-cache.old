@@ -1,5 +1,4 @@
 SET deselectOnClick "1"
-SET autoInteract "1"
 SET autoClearAFK "0"
 SET alwaysCompareItems "1"
 SET showTargetOfTarget "1"

@@ -1,7 +1,7 @@
 local ComboColor = nPower.energy.comboColor
 local playerClass = select(2, UnitClass("player"))
 
-local f = CreateFrame("Frame", nil, UIParent)
+local f = CreateFrame("Frame", "nPower", UIParent)
 f:SetScale(1.4)
 f:SetSize(18, 18)
 f:SetPoint(unpack(nPower.position))
@@ -57,7 +57,7 @@ if (playerClass == "WARLOCK" and nPower.showSoulshards or playerClass == "PALADI
 	f.extraPoints:SetPoint("CENTER", 0, 0)
 end
 
-f.Power = CreateFrame("StatusBar", nil, UIParent)
+f.Power = CreateFrame("StatusBar", "nPowerStatusBar", UIParent)
 f.Power:SetScale(nPower.scale)
 f.Power:SetSize(nPower.sizeWidth, 3)
 f.Power:SetPoint("CENTER", f, 0, -23)
@@ -160,10 +160,7 @@ end
 local function UpdateBarVisibility()
 	local _, powerType = UnitPowerType("player")
 
-	if
-		((not nPower.energy.show and powerType == "ENERGY") or (not nPower.focus.show and powerType == "FOCUS") or (not nPower.rage.show and powerType == "RAGE") or (not nPower.mana.show and powerType == "MANA") or
-			UnitIsDeadOrGhost("player"))
-	 then
+	if ((not nPower.energy.show and powerType == "ENERGY") or (not nPower.focus.show and powerType == "FOCUS") or (not nPower.rage.show and powerType == "RAGE") or (not nPower.mana.show and powerType == "MANA") or UnitIsDeadOrGhost("player")) then
 		f.Power:SetAlpha(0)
 	elseif (InCombatLockdown()) then
 		securecall("UIFrameFadeIn", f.Power, 0.3, f.Power:GetAlpha(), nPower.activeAlpha)

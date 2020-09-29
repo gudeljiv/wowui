@@ -35,7 +35,7 @@ local function SkinTarget()
 			end
 
 			if frameCount then
-				frameCount:SetFont(xVermin.Config.font.atari, xVermin.Config.buff.fontsize - 1, xVermin.Config.buff.outline)
+				frameCount:SetFont(xVermin.Config.font.atari, xVermin.Config.buff.fontsize, xVermin.Config.buff.outline)
 				frameCount:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", 0, 2)
 			end
 
@@ -64,7 +64,7 @@ local function SkinTarget()
 			end
 
 			if frameCount then
-				frameCount:SetFont(xVermin.Config.font.arial, xVermin.Config.debuff.fontsize - 1, xVermin.Config.debuff.outline)
+				frameCount:SetFont(xVermin.Config.font.arial, xVermin.Config.debuff.fontsize, xVermin.Config.debuff.outline)
 				frameCount:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", 3, 0)
 			end
 

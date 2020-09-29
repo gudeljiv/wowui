@@ -106,6 +106,7 @@ local function FixBindings()
 	SetBinding("ALT-F3", "NONE", 1)
 	SetBinding("ALT-X", "NONE", 1)
 	SetBinding("ALT-R", "NONE", 1)
+	SetBinding("ALT-D", "NONE", 1)
 	SetBinding("ALT-4", "NONE", 1)
 	SetBinding("ALT-5", "NONE", 1)
 	SetBinding("ALT-6", "NONE", 1)
@@ -122,16 +123,11 @@ f:SetScript(
 	"OnEvent",
 	function(self, event, isInitialLogin, isReloadingUi)
 		if event == "PLAYER_ENTERING_WORLD" and (isInitialLogin or isReloadingUi) then
-			C_Timer.After(
-				10,
-				function()
-					if not InCombatLockdown() then
-						FixBindings()
-					else
-						self:RegisterEvent("PLAYER_REGEN_ENABLED")
-					end
-				end
-			)
+			if not InCombatLockdown() then
+				FixBindings()
+			else
+				self:RegisterEvent("PLAYER_REGEN_ENABLED")
+			end
 		end
 
 		if event == "PLAYER_REGEN_ENABLED" then

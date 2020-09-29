@@ -92,7 +92,7 @@ bind ALT-R NONE
 bind ALT-4 NONE
 bind ALT-5 NONE
 bind ALT-6 NONE
-bind CTRL-G NONE
+bind CTRL-G CLICK RingMenuToggleRing1:LeftButton
 bind SHIFT-7 NONE
 bind SHIFT-8 NONE
 bind SHIFT-9 NONE
