@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 2711,
+	["session"] = 2723,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -2290,5 +2290,21 @@ BugGrabberDB = {
 			["session"] = 2699,
 			["counter"] = 1,
 		}, -- [289]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Chat-Chat.lua:33: bad argument #1 to 'gsub' (string expected, got boolean)",
+			["time"] = "2020/09/29 16:36:58",
+			["locals"] = "(*temporary) = false\n(*temporary) = \"General.-\"\n(*temporary) = \"\"\n(*temporary) = \"string expected, got boolean\"\n",
+			["stack"] = "[C]: in function `gsub'\nInterface\\AddOns\\xVermin\\Chat-Chat.lua:33: in function `AddMessage'\nInterface\\AddOns\\ClickToMove\\ClickToMove-1.1.0.lua:151: in function `print'\nInterface\\AddOns\\xVermin\\LootHelper.lua:21: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:20>",
+			["session"] = 2715,
+			["counter"] = 4,
+		}, -- [290]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:22: attempt to concatenate a boolean value",
+			["time"] = "2020/09/29 16:42:29",
+			["locals"] = "self = MyBindingLootHelper {\n 0 = <userdata>\n}\nbutton = \"LeftButton\"\ndown = false\n(*temporary) = <function> defined @Interface\\AddOns\\ClickToMove\\ClickToMove.lua:149\n(*temporary) = \"1: \"\n(*temporary) = false\n(*temporary) = \"attempt to concatenate a boolean value\"\nGet = <function> defined @Interface\\AddOns\\xVermin\\LootHelper.lua:13\nSet = <function> defined @Interface\\AddOns\\xVermin\\LootHelper.lua:3\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:22: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:21>",
+			["session"] = 2719,
+			["counter"] = 13,
+		}, -- [291]
 	},
 }

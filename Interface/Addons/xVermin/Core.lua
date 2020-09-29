@@ -6,24 +6,20 @@ SlashCmdList["RELOAD"] = function(msg)
 end
 
 local function FixCVar()
-	C_Timer.After(
-		10,
-		function()
-			SetCVar("autoQuestWatch", 0)
-			SetCVar("autoQuestProgress", 0)
-			SetCVar("instantQuestText", 1)
-			SetCVar("nameplateMaxDistance", 80)
-			SetCVar("ffxGlow", "1")
-			SetCVar("ffxDeath", "0")
-			SetCVar("ffxNether", "0")
-			SetCVar("violenceLevel", "5")
-			SetCVar("cameraDistanceMaxZoomFactor", 4.0)
-			SetCVar("chatClassColorOverride", 0)
-			SetCVar("ShowClassColorInFriendlyNameplate", 1)
-			SetCVar("scriptErrors", "1")
-			SetCVar("alwaysShowActionBars", "1")
-		end
-	)
+	SetCVar("autoQuestWatch", 0)
+	SetCVar("autoQuestProgress", 0)
+	SetCVar("instantQuestText", 1)
+	SetCVar("nameplateMaxDistance", 80)
+	SetCVar("ffxGlow", "1")
+	SetCVar("ffxDeath", "0")
+	SetCVar("ffxNether", "0")
+	SetCVar("violenceLevel", "5")
+	SetCVar("cameraDistanceMaxZoomFactor", 4.0)
+	SetCVar("chatClassColorOverride", 0)
+	SetCVar("ShowClassColorInFriendlyNameplate", 1)
+	SetCVar("scriptErrors", "1")
+	SetCVar("alwaysShowActionBars", "1")
+	SetCVar("AutoInteract", "0")
 end
 
 local frame = CreateFrame("Frame", "CVarSet")

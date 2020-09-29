@@ -875,7 +875,7 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 1077.80407714844,
+		["m_iFrameBottom"] = 1125.76354980469,
 		["m_bHideTitleButtons"] = false,
 		["m_iFrameLeft"] = 2019.82434082031,
 		["m_bColourDoneOrFailed"] = true,
@@ -1117,22 +1117,19 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Mxzq"] = {
 		["m_aQuestList"] = {
-			["Guile of the Raptor - false"] = {
-				["m_bChecked"] = true,
-			},
 			["The Princess Trapped - false"] = {
 				["m_bChecked"] = true,
 			},
 			["The Real Threat - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Arathi Highlands - true"] = {
+			["Call to Arms - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Sigil of Strom - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Call to Arms - false"] = {
+			["Arathi Highlands - true"] = {
 				["m_bChecked"] = true,
 			},
 		},

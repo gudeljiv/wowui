@@ -1,7 +1,7 @@
 
 KILLTRACK = {
+	["TOOLTIP"] = true,
 	["COUNT_GROUP"] = false,
-	["PRINTKILLS"] = false,
 	["SHOW_EXP"] = false,
 	["BROKER"] = {
 		["MINIMAP"] = {
@@ -291,40 +291,30 @@ KILLTRACK = {
 			["Kills"] = 15,
 			["Name"] = "Deviate Shambler",
 		},
-		[1125] = {
+		[2914] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Boar",
-		},
-		[2260] = {
-			["AchievCount"] = 0,
-			["Kills"] = 30,
-			["Name"] = "Syndicate Rogue",
+			["Name"] = "Snake",
 		},
 		[2240] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Syndicate Footpad",
 		},
-		[5756] = {
+		[2403] = {
 			["AchievCount"] = 0,
-			["Kills"] = 9,
-			["Name"] = "Deviate Venomwing",
+			["Kills"] = 1,
+			["Name"] = "Farmer Getz",
+		},
+		[2449] = {
+			["AchievCount"] = 0,
+			["Kills"] = 1,
+			["Name"] = "Citizen Wilkes",
 		},
 		[2264] = {
 			["AchievCount"] = 0,
 			["Kills"] = 2,
 			["Name"] = "Hillsbrad Tailor",
-		},
-		[6466] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Gamon",
-		},
-		[2360] = {
-			["AchievCount"] = 0,
-			["Kills"] = 7,
-			["Name"] = "Hillsbrad Farmhand",
 		},
 		[3630] = {
 			["AchievCount"] = 0,
@@ -336,35 +326,45 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Kolkar Stormer",
 		},
-		[2620] = {
+		[6466] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Prairie Dog",
+			["Name"] = "Gamon",
 		},
-		[3415] = {
+		[3242] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Savannah Huntress",
-		},
-		[3631] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Deviate Stinglash",
-		},
-		[2266] = {
-			["AchievCount"] = 0,
-			["Kills"] = 13,
-			["Name"] = "Hillsbrad Farmer",
+			["Name"] = "Zhevra Runner",
 		},
 		[2248] = {
 			["AchievCount"] = 0,
 			["Kills"] = 1,
 			["Name"] = "Cave Yeti",
 		},
-		[3242] = {
+		[3631] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Zhevra Runner",
+			["Name"] = "Deviate Stinglash",
+		},
+		[1125] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Boar",
+		},
+		[2266] = {
+			["AchievCount"] = 0,
+			["Kills"] = 13,
+			["Name"] = "Hillsbrad Farmer",
+		},
+		[3415] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Savannah Huntress",
+		},
+		[2620] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Prairie Dog",
 		},
 		[3632] = {
 			["AchievCount"] = 0,
@@ -376,34 +376,34 @@ KILLTRACK = {
 			["Kills"] = 6,
 			["Name"] = "Hillsbrad Peasant",
 		},
-		[2449] = {
+		[2360] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Citizen Wilkes",
+			["Kills"] = 7,
+			["Name"] = "Hillsbrad Farmhand",
 		},
-		[2403] = {
+		[5756] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Farmer Getz",
+			["Kills"] = 9,
+			["Name"] = "Deviate Venomwing",
 		},
 		[3633] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Deviate Slayer",
 		},
-		[2914] = {
+		[2260] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Snake",
+			["Kills"] = 30,
+			["Name"] = "Syndicate Rogue",
 		},
 	},
+	["DISABLE_RAIDS"] = false,
+	["ACHIEV_THRESHOLD"] = 1000,
+	["DISABLE_DUNGEONS"] = false,
 	["IMMEDIATE"] = {
 		["THRESHOLD"] = 0,
 		["POSITION"] = {
 		},
 	},
-	["ACHIEV_THRESHOLD"] = 1000,
-	["DISABLE_DUNGEONS"] = false,
-	["DISABLE_RAIDS"] = false,
-	["TOOLTIP"] = true,
+	["PRINTKILLS"] = false,
 }

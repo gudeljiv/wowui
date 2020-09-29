@@ -225,33 +225,25 @@ KILLTRACK_CHAR = {
 			["Name"] = "Deviate Shambler",
 			["Kills"] = 15,
 		},
-		[1125] = {
-			["Name"] = "Boar",
+		[2914] = {
+			["Name"] = "Snake",
 			["Kills"] = 0,
-		},
-		[2260] = {
-			["Name"] = "Syndicate Rogue",
-			["Kills"] = 30,
 		},
 		[2240] = {
 			["Name"] = "Syndicate Footpad",
 			["Kills"] = 0,
 		},
-		[5756] = {
-			["Name"] = "Deviate Venomwing",
-			["Kills"] = 9,
+		[2403] = {
+			["Name"] = "Farmer Getz",
+			["Kills"] = 1,
+		},
+		[2449] = {
+			["Name"] = "Citizen Wilkes",
+			["Kills"] = 1,
 		},
 		[2264] = {
 			["Name"] = "Hillsbrad Tailor",
 			["Kills"] = 2,
-		},
-		[6466] = {
-			["Name"] = "Gamon",
-			["Kills"] = 0,
-		},
-		[2360] = {
-			["Name"] = "Hillsbrad Farmhand",
-			["Kills"] = 7,
 		},
 		[3630] = {
 			["Name"] = "Deviate Coiler",
@@ -261,28 +253,36 @@ KILLTRACK_CHAR = {
 			["Name"] = "Kolkar Stormer",
 			["Kills"] = 0,
 		},
-		[2620] = {
-			["Name"] = "Prairie Dog",
+		[6466] = {
+			["Name"] = "Gamon",
 			["Kills"] = 0,
 		},
-		[3415] = {
-			["Name"] = "Savannah Huntress",
+		[3242] = {
+			["Name"] = "Zhevra Runner",
 			["Kills"] = 0,
+		},
+		[2248] = {
+			["Name"] = "Cave Yeti",
+			["Kills"] = 1,
 		},
 		[3631] = {
 			["Name"] = "Deviate Stinglash",
+			["Kills"] = 0,
+		},
+		[1125] = {
+			["Name"] = "Boar",
 			["Kills"] = 0,
 		},
 		[2266] = {
 			["Name"] = "Hillsbrad Farmer",
 			["Kills"] = 13,
 		},
-		[2248] = {
-			["Name"] = "Cave Yeti",
-			["Kills"] = 1,
+		[3415] = {
+			["Name"] = "Savannah Huntress",
+			["Kills"] = 0,
 		},
-		[3242] = {
-			["Name"] = "Zhevra Runner",
+		[2620] = {
+			["Name"] = "Prairie Dog",
 			["Kills"] = 0,
 		},
 		[3632] = {
@@ -293,21 +293,21 @@ KILLTRACK_CHAR = {
 			["Name"] = "Hillsbrad Peasant",
 			["Kills"] = 6,
 		},
-		[2449] = {
-			["Name"] = "Citizen Wilkes",
-			["Kills"] = 1,
+		[2360] = {
+			["Name"] = "Hillsbrad Farmhand",
+			["Kills"] = 7,
 		},
-		[2403] = {
-			["Name"] = "Farmer Getz",
-			["Kills"] = 1,
+		[5756] = {
+			["Name"] = "Deviate Venomwing",
+			["Kills"] = 9,
 		},
 		[3633] = {
 			["Name"] = "Deviate Slayer",
 			["Kills"] = 0,
 		},
-		[2914] = {
-			["Name"] = "Snake",
-			["Kills"] = 0,
+		[2260] = {
+			["Name"] = "Syndicate Rogue",
+			["Kills"] = 30,
 		},
 	},
 }
