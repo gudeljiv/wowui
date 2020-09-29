@@ -61,10 +61,10 @@ MonkeyQuestConfig = {
 			["Journey to the Crossroads - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Rite of Wisdom - false"] = {
+			["Heeding the Call - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Wildmane Cleansing - false"] = {
+			["Wildmane Totem - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Supervisor Fizsprocket - false"] = {
@@ -73,7 +73,7 @@ MonkeyQuestConfig = {
 			["Dwarven Digging - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Thunderhorn Cleansing - false"] = {
+			["Rite of Wisdom - false"] = {
 				["m_bChecked"] = true,
 			},
 			["The Ravaged Caravan - false"] = {
@@ -82,13 +82,13 @@ MonkeyQuestConfig = {
 			["The Hunter's Way - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Heeding the Call - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Wildmane Totem - false"] = {
+			["Thunderhorn Cleansing - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Druid - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Wildmane Cleansing - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -299,19 +299,13 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Augustin"] = {
 		["m_aQuestList"] = {
-			["WANTED: Syndicate Personnel - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Hillsbrad Foothills - true"] = {
+			["Elixir of Pain - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Battle of Hillsbrad - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Souvenirs of Death - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Elixir of Pain - false"] = {
+			["Hillsbrad Foothills - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Elixir of Agony - false"] = {
@@ -881,9 +875,9 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 1029.40002441406,
+		["m_iFrameBottom"] = 1077.80407714844,
 		["m_bHideTitleButtons"] = false,
-		["m_iFrameLeft"] = 2097.39990234375,
+		["m_iFrameLeft"] = 2019.82434082031,
 		["m_bColourDoneOrFailed"] = true,
 		["m_bLocked"] = true,
 		["m_bNoBorder"] = true,
@@ -900,7 +894,7 @@ MonkeyQuestConfig = {
 		["m_strMidObjectiveColour"] = "|cFFFFFF00",
 		["m_bCrashBorder"] = false,
 		["m_strHeaderOpenColour"] = "|cffbfbfff",
-		["m_iFrameTop"] = 1207.39990234375,
+		["m_iFrameTop"] = 1163.76354980469,
 		["m_bObjectives"] = true,
 		["m_bHideHeader"] = false,
 		["m_bShowNumQuests"] = true,

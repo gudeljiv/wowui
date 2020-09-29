@@ -40,11 +40,6 @@ ChocolateBarDB = {
 	["addonVersion"] = "@project-version@",
 	["profiles"] = {
 		["Default"] = {
-			["locked"] = false,
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["forceColor"] = false,
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -65,7 +60,19 @@ ChocolateBarDB = {
 					["width"] = 147,
 				},
 			},
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["b"] = 0,
+					["g"] = 0,
+					["r"] = 0,
+				},
+				["textureName"] = "None",
+			},
 			["moveFrames"] = false,
+			["locked"] = false,
+			["fixedStrata"] = true,
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -339,25 +346,18 @@ ChocolateBarDB = {
 				},
 			},
 			["fontName"] = "Friz Quadrata TT",
+			["desaturated"] = false,
+			["forceColor"] = false,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["fixedStrata"] = true,
-			["desaturated"] = false,
+			["gap"] = 0,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["gap"] = 0,
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["b"] = 0,
-					["g"] = 0,
-					["r"] = 0,
-				},
-				["textureName"] = "None",
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
 			},
 			["textColor"] = {
 				["a"] = 1,
@@ -382,13 +382,13 @@ CB_PlayedTime = {
 		["total"] = 1719,
 	},
 	["Mxyz-"] = {
-		["total"] = 124885,
+		["total"] = 125136,
 	},
 	["Antun-"] = {
 		["total"] = 52,
 	},
 	["Vermin-"] = {
-		["total"] = 199952,
+		["total"] = 199978,
 	},
 	["Judawise-"] = {
 		["total"] = 437,
@@ -436,7 +436,7 @@ CB_PlayedTime = {
 		["total"] = 562,
 	},
 	["Augustin-"] = {
-		["total"] = 103238,
+		["total"] = 106306,
 	},
 	["Pitchwise-"] = {
 		["total"] = 390,

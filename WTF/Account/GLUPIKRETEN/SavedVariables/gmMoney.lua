@@ -12,28 +12,12 @@ GMMONEY = {
 			["CLASS"] = "HUNTER",
 		},
 		["Mxyz"] = {
-			["GOLD"] = 713555,
+			["GOLD"] = 779028,
 			["CLASS"] = "PRIEST",
-		},
-		["Mxyzptlk"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "WARLOCK",
-		},
-		["Koloman"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "MAGE",
 		},
 		["Augustin"] = {
-			["GOLD"] = 536097,
+			["GOLD"] = 528657,
 			["CLASS"] = "MAGE",
-		},
-		["Dmitar"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "PRIEST",
-		},
-		["Grgur"] = {
-			["GOLD"] = 50,
-			["CLASS"] = "WARLOCK",
 		},
 		["Jaroslav"] = {
 			["GOLD"] = 250557,

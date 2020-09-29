@@ -319,11 +319,10 @@ KILLTRACK = {
 			["Name"] = "Deviate Venomwing",
 			["Exp"] = 47,
 		},
-		[2260] = {
+		[11357] = {
 			["AchievCount"] = 0,
-			["Kills"] = 32,
-			["Name"] = "Syndicate Rogue",
-			["Exp"] = 19,
+			["Kills"] = 1,
+			["Name"] = "DieBUSTA",
 		},
 		[2450] = {
 			["AchievCount"] = 0,
@@ -331,10 +330,11 @@ KILLTRACK = {
 			["Name"] = "Miner Hackett",
 			["Exp"] = 58,
 		},
-		[11357] = {
+		[2260] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "DieBUSTA",
+			["Kills"] = 32,
+			["Name"] = "Syndicate Rogue",
+			["Exp"] = 19,
 		},
 		[2387] = {
 			["AchievCount"] = 0,
@@ -342,16 +342,15 @@ KILLTRACK = {
 			["Name"] = "Hillsbrad Councilman",
 			["Exp"] = 27,
 		},
+		[2959] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Prairie Stalker",
+		},
 		[2578] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Young Mesa Buzzard",
-		},
-		[2451] = {
-			["AchievCount"] = 0,
-			["Kills"] = 3,
-			["Name"] = "Farmer Kalaba",
-			["Exp"] = 170,
 		},
 		[2356] = {
 			["AchievCount"] = 0,
@@ -496,10 +495,11 @@ KILLTRACK = {
 			["Name"] = "Hillsbrad Peasant",
 			["Exp"] = 26,
 		},
-		[2959] = {
+		[2451] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Prairie Stalker",
+			["Kills"] = 3,
+			["Name"] = "Farmer Kalaba",
+			["Exp"] = 170,
 		},
 		[3240] = {
 			["AchievCount"] = 0,

@@ -40,20 +40,6 @@ ChocolateBarDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
-			["locked"] = false,
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["r"] = 0,
-					["g"] = 0,
-					["b"] = 0,
-				},
-				["textureName"] = "None",
-			},
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -74,7 +60,21 @@ ChocolateBarDB = {
 					["barOffx"] = -88.3325424194336,
 				},
 			},
-			["moveFrames"] = false,
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["r"] = 0,
+					["g"] = 0,
+					["b"] = 0,
+				},
+				["textureName"] = "None",
+			},
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
+			["locked"] = false,
+			["fixedStrata"] = true,
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -347,18 +347,18 @@ ChocolateBarDB = {
 					["customLabel"] = "B",
 				},
 			},
-			["desaturated"] = false,
 			["gap"] = 0,
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["desaturated"] = false,
+			["moveFrames"] = false,
+			["fontName"] = "Friz Quadrata TT",
+			["textOffset"] = 2,
+			["height"] = 20,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
 			["forceColor"] = false,
-			["fontName"] = "Friz Quadrata TT",
-			["textOffset"] = 2,
-			["height"] = 20,
-			["fixedStrata"] = true,
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["textColor"] = {
 				["a"] = 1,
 				["b"] = 1,
@@ -382,13 +382,13 @@ CB_PlayedTime = {
 		["total"] = 1719,
 	},
 	["Mxyz-"] = {
-		["total"] = 125027,
+		["total"] = 125136,
 	},
 	["Antun-"] = {
 		["total"] = 52,
 	},
 	["Vermin-"] = {
-		["total"] = 199952,
+		["total"] = 199978,
 	},
 	["Judawise-"] = {
 		["total"] = 437,
@@ -406,7 +406,7 @@ CB_PlayedTime = {
 		["total"] = 390,
 	},
 	["Augustin-"] = {
-		["total"] = 103238,
+		["total"] = 106306,
 	},
 	["Whatevs-"] = {
 		["total"] = 213,
@@ -430,7 +430,7 @@ CB_PlayedTime = {
 		["total"] = 1457,
 	},
 	["Mxzq-"] = {
-		["total"] = 336674,
+		["total"] = 337941,
 	},
 	["Grgur-"] = {
 		["total"] = 562,
