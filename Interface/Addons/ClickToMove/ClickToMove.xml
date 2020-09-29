@@ -1,0 +1,8 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/..\FrameXML\UI.xsd">
+    <Frame name="ClickToMoveFrame" parent="UIParent">
+        <Scripts>
+            <OnLoad>  ctm_OnLoad();  </OnLoad>
+            <OnEvent> ctm_OnEvent(); </OnEvent>
+        </Scripts>    
+    </Frame>
+</Ui>
