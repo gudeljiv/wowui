@@ -290,7 +290,7 @@
 		Frame:SetScript ("OnEvent", function(self, event, ...) 
 			if (NewPlugin.OnEvent) then
 				if (event == "PLAYER_LOGIN") then
-					NewPlugin:OnEvent (self, "ADDON_LOADED", NewPlugin.Frame:GetName(), "player_login")
+					NewPlugin:OnEvent (self, "ADDON_LOADED", NewPlugin.Frame:GetName())
 					NewPlugin.Frame:Hide()
 					return
 				end

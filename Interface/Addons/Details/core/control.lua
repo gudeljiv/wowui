@@ -468,6 +468,7 @@
 			--> hide / alpha / switch in combat
 			for index, instancia in ipairs (_detalhes.tabela_instancias) do 
 				if (instancia.ativa) then
+					--instancia:SetCombatAlpha (nil, nil, true) --passado para o regen disable
 					instancia:CheckSwitchOnCombatStart (true)
 				end
 			end
@@ -817,9 +818,8 @@
 				--_detalhes:CanSendMissData()
 				
 				if (_detalhes.data_sync and zoneType == "raid") then
-					--disabled since the clue range within raids and dungeons are working nominal
-					--_detalhes:SendRaidDataNonEqualizedSchedule()
-					--_detalhes:EqualizeActorsSchedule (false)
+					_detalhes:SendRaidDataNonEqualizedSchedule()
+					_detalhes:EqualizeActorsSchedule (false)
 				end
 
 				if (_detalhes.tabela_vigente.is_boss) then
@@ -947,6 +947,7 @@
 			--> hide / alpha in combat
 			for index, instancia in ipairs (_detalhes.tabela_instancias) do 
 				if (instancia.ativa) then
+					--instancia:SetCombatAlpha (nil, nil, true) --passado para o regen enabled
 					if (instancia.auto_switch_to_old) then
 						instancia:CheckSwitchOnCombatEnd()
 					end
@@ -1143,7 +1144,7 @@
 			if (playerSpecID and playerClass) then
 				for spellID, t in pairs (validSpells) do
 					if (playerClass == t.class and playerSpecID == t.spec) then
-						--_detalhes:SendMissData (spellID, t.container, _detalhes.network.ids [t.commID])
+						_detalhes:SendMissData (spellID, t.container, _detalhes.network.ids [t.commID])
 					end
 				end
 			end
@@ -1168,7 +1169,7 @@
 							_detalhes:Msg ("(debug) sending miss data packet:", spellID, containerType, commID)
 						end
 						
-						--_detalhes:SendRaidOrPartyData (commID, data)
+						_detalhes:SendRaidOrPartyData (commID, data)
 					end
 				end
 			end
@@ -1411,7 +1412,7 @@
 				if (actor.flag_original and bit.band (actor.flag_original, OBJECT_TYPE_PETS) ~= 0) then
 					--> do not have owner and he isn't on owner container
 					if (not actor.owner and not _detalhes.tabela_pets.pets [actor.serial]) then
-						--_detalhes:SendPetOwnerRequest (actor.serial, actor.nome)
+						_detalhes:SendPetOwnerRequest (actor.serial, actor.nome)
 					end
 				end
 			end
@@ -1420,7 +1421,7 @@
 		function _detalhes:SendRaidDataNonEqualizedSchedule()
 			_detalhes:ScheduleTimer ("SendNonEqualizedData", 0.5+math.random())
 		end
-		
+
 		function _detalhes:EqualizeActorsSchedule (host_of)
 		
 			--> store pets sent through 'needpetowner'
@@ -1435,7 +1436,7 @@
 
 			--> do not equilize if there is any disabled capture
 			--if (_detalhes:CaptureIsAllEnabled()) then
-				--_detalhes:ScheduleTimer ("EqualizeActors", 2.5+math.random()+math.random() , host_of)
+				_detalhes:ScheduleTimer ("EqualizeActors", 2.5+math.random()+math.random() , host_of)
 			--end
 		end
 		
@@ -1505,12 +1506,11 @@
 			local data = {damage, heal, energy, misc, damageSpells, healingSpells}
 
 			--> envia os dados do proprio host pra ele antes
-			--disabled: if this function is called by a foreign caller
 			if (host_of) then
-				--_detalhes:SendRaidDataAs (_detalhes.network.ids.CLOUD_EQUALIZE, host_of, nil, data)
-				--_detalhes:EqualizeActors()
+				_detalhes:SendRaidDataAs (_detalhes.network.ids.CLOUD_EQUALIZE, host_of, nil, data)
+				_detalhes:EqualizeActors()
 			else
-				--_detalhes:SendRaidData (_detalhes.network.ids.CLOUD_EQUALIZE, data)
+				_detalhes:SendRaidData (_detalhes.network.ids.CLOUD_EQUALIZE, data)
 			end
 		end
 
@@ -1524,8 +1524,7 @@
 					end
 				end
 
-				--disabled: if this function is called by a foreign caller
-				--_detalhes:SendRaidOrPartyData (_detalhes.network.ids.CLOUD_UNEQUALIZED, actors)
+				_detalhes:SendRaidOrPartyData (_detalhes.network.ids.CLOUD_UNEQUALIZED, actors)
 			end
 		end
 

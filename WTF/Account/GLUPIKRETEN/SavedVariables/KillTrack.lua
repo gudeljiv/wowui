@@ -1,9 +1,14 @@
 
 KILLTRACK = {
-	["PRINTKILLS"] = false,
 	["COUNT_GROUP"] = true,
+	["PRINTKILLS"] = false,
 	["SHOW_EXP"] = false,
-	["TOOLTIP"] = true,
+	["BROKER"] = {
+		["MINIMAP"] = {
+			["hide"] = true,
+		},
+		["SHORT_TEXT"] = false,
+	},
 	["PRINTNEW"] = false,
 	["MOBS"] = {
 		[2268] = {
@@ -240,15 +245,15 @@ KILLTRACK = {
 		},
 		[2350] = {
 			["AchievCount"] = 0,
-			["Kills"] = 5,
+			["Kills"] = 6,
 			["Name"] = "Forest Moss Creeper",
-			["Exp"] = 28,
+			["Exp"] = 190,
 		},
 		[2351] = {
 			["AchievCount"] = 0,
-			["Kills"] = 6,
+			["Kills"] = 9,
 			["Name"] = "Gray Bear",
-			["Exp"] = 111,
+			["Exp"] = 222,
 		},
 		[3653] = {
 			["AchievCount"] = 0,
@@ -286,11 +291,10 @@ KILLTRACK = {
 			["Name"] = "Mountain Lion",
 			["Exp"] = 58,
 		},
-		[2448] = {
+		[2956] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Clerk Horrace Whitesteed",
-			["Exp"] = 27,
+			["Kills"] = 0,
+			["Name"] = "Adult Plainstrider",
 		},
 		[3242] = {
 			["AchievCount"] = 0,
@@ -338,22 +342,22 @@ KILLTRACK = {
 			["Name"] = "Miner Hackett",
 			["Exp"] = 58,
 		},
-		[2959] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Prairie Stalker",
-		},
-		[2387] = {
-			["AchievCount"] = 0,
-			["Kills"] = 8,
-			["Name"] = "Hillsbrad Councilman",
-			["Exp"] = 54,
-		},
 		[2451] = {
 			["AchievCount"] = 0,
 			["Kills"] = 4,
 			["Name"] = "Farmer Kalaba",
 			["Exp"] = 170,
+		},
+		[2260] = {
+			["AchievCount"] = 0,
+			["Kills"] = 32,
+			["Name"] = "Syndicate Rogue",
+			["Exp"] = 19,
+		},
+		[2959] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Prairie Stalker",
 		},
 		[2578] = {
 			["AchievCount"] = 0,
@@ -504,21 +508,22 @@ KILLTRACK = {
 			["Name"] = "Hillsbrad Peasant",
 			["Exp"] = 143,
 		},
-		[2260] = {
+		[2387] = {
 			["AchievCount"] = 0,
-			["Kills"] = 32,
-			["Name"] = "Syndicate Rogue",
-			["Exp"] = 19,
+			["Kills"] = 8,
+			["Name"] = "Hillsbrad Councilman",
+			["Exp"] = 54,
 		},
 		[11357] = {
 			["AchievCount"] = 0,
 			["Kills"] = 1,
 			["Name"] = "DieBUSTA",
 		},
-		[2956] = {
+		[2448] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Adult Plainstrider",
+			["Kills"] = 1,
+			["Name"] = "Clerk Horrace Whitesteed",
+			["Exp"] = 27,
 		},
 		[2274] = {
 			["AchievCount"] = 0,
@@ -535,10 +540,5 @@ KILLTRACK = {
 	["ACHIEV_THRESHOLD"] = 1000,
 	["DISABLE_DUNGEONS"] = false,
 	["DISABLE_RAIDS"] = false,
-	["BROKER"] = {
-		["MINIMAP"] = {
-			["hide"] = true,
-		},
-		["SHORT_TEXT"] = false,
-	},
+	["TOOLTIP"] = true,
 }

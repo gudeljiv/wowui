@@ -140,6 +140,17 @@ local function SetChat()
 	ChatFrame6:Show()
 	ChatFrame6Tab:Show()
 
+	local frame = ChatFrame7
+	FCF_SetWindowName(frame, "Loot & XP")
+	FCF_SetChatWindowFontSize(nil, frame, 10)
+	ChatFrame_RemoveAllMessageGroups(frame)
+	ChatFrame7:ClearAllPoints()
+	ChatFrame7:SetClampRectInsets(0, -1, 0, 0)
+	ChatFrame7:SetPoint("CENTER", ChatFrame3, 0, 240)
+	ChatFrame7:SetHeight(100)
+	ChatFrame7:Show()
+	ChatFrame7Tab:Show()
+
 	for i, v in pairs(
 		{
 			ChatFrame1,
@@ -147,7 +158,8 @@ local function SetChat()
 			ChatFrame3,
 			ChatFrame4,
 			ChatFrame5,
-			ChatFrame6
+			ChatFrame6,
+			ChatFrame7
 		}
 	) do
 		v:SetWidth(chatWidth)
@@ -200,6 +212,7 @@ local function SetChatChannels()
 	ChatFrame_RemoveAllChannels(ChatFrame4)
 	ChatFrame_RemoveAllChannels(ChatFrame5)
 	ChatFrame_RemoveAllChannels(ChatFrame6)
+	ChatFrame_RemoveAllChannels(ChatFrame7)
 
 	JoinChannelByName("LookingForGroup")
 	JoinChannelByName("LocalDefense")
@@ -208,6 +221,20 @@ local function SetChatChannels()
 	ChatFrame_AddChannel(ChatFrame4, "LookingForGroup")
 	ChatFrame_AddChannel(ChatFrame5, "LocalDefense")
 	ChatFrame_AddChannel(ChatFrame5, "WorldDefense")
+
+	ChatFrame_RemoveMessageGroup(ChatFrame1, "COMBAT_XP_GAIN")
+	ChatFrame_RemoveMessageGroup(ChatFrame1, "COMBAT_HONOR_GAIN")
+	ChatFrame_RemoveMessageGroup(ChatFrame1, "COMBAT_FACTION_CHANGE")
+	ChatFrame_RemoveMessageGroup(ChatFrame1, "SKILL")
+	ChatFrame_RemoveMessageGroup(ChatFrame1, "LOOT")
+	ChatFrame_RemoveMessageGroup(ChatFrame1, "MONEY")
+
+	ChatFrame_AddMessageGroup(ChatFrame7, "COMBAT_XP_GAIN")
+	ChatFrame_AddMessageGroup(ChatFrame7, "COMBAT_HONOR_GAIN")
+	ChatFrame_AddMessageGroup(ChatFrame7, "COMBAT_FACTION_CHANGE")
+	ChatFrame_AddMessageGroup(ChatFrame7, "SKILL")
+	ChatFrame_AddMessageGroup(ChatFrame7, "LOOT")
+	ChatFrame_AddMessageGroup(ChatFrame7, "MONEY")
 end
 
 local chat = CreateFrame("Frame")

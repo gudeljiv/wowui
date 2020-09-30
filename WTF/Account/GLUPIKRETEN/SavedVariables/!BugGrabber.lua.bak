@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 2733,
+	["session"] = 2739,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -2322,5 +2322,83 @@ BugGrabberDB = {
 			["session"] = 2732,
 			["counter"] = 1,
 		}, -- [293]
+		{
+			["message"] = "...Ons\\Details\\Libs\\DF\\Details-Framework-Classic\\fw.lua:2657: D!Framework (DetailsOptionsWindow1CreateWindowButton:OnMouseUp()) error: Interface\\AddOns\\Details\\classes\\classe_damage.lua:2406: attempt to index local 'bars_show_data' (a nil value)\n====================\n...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:887: in function <...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:800>\n\n====================\n",
+			["time"] = "2020/09/30 12:17:09",
+			["locals"] = "(*temporary) = \"D!Framework (DetailsOptionsWindow1CreateWindowButton:OnMouseUp()) error: Interface\\AddOns\\Details\\classes\\classe_damage.lua:2406: attempt to index local 'bars_show_data' (a nil value)\n====================\n...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:887: in function <...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:800>\n\n====================\n\"\n",
+			["stack"] = "[C]: in function `error'\n...Ons\\Details\\Libs\\DF\\Details-Framework-Classic\\fw.lua:2657: in function `CoreDispatch'\n...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:887: in function <...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:800>",
+			["session"] = 2736,
+			["counter"] = 1,
+		}, -- [294]
+		{
+			["message"] = "...Ons\\Details\\Libs\\DF\\Details-Framework-Classic\\fw.lua:2657: D!Framework (DetailsSegmentButton4:OnMouseUp()) error: Interface\\AddOns\\Details\\gumps\\janela_principal.lua:7566: attempt to perform arithmetic on local 'buttons_spacement' (a nil value)\n====================\n...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:887: in function <...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:800>\n\n====================\n",
+			["time"] = "2020/09/30 12:18:08",
+			["locals"] = "(*temporary) = \"D!Framework (DetailsSegmentButton4:OnMouseUp()) error: Interface\\AddOns\\Details\\gumps\\janela_principal.lua:7566: attempt to perform arithmetic on local 'buttons_spacement' (a nil value)\n====================\n...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:887: in function <...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:800>\n\n====================\n\"\n",
+			["stack"] = "[C]: in function `error'\n...Ons\\Details\\Libs\\DF\\Details-Framework-Classic\\fw.lua:2657: in function `CoreDispatch'\n...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:887: in function <...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:800>",
+			["session"] = 2736,
+			["counter"] = 1,
+		}, -- [295]
+		{
+			["message"] = "Interface\\AddOns\\Details\\gumps\\janela_principal.lua:4625: bad argument #1 to 'unpack' (table expected, got nil)",
+			["time"] = "2020/09/30 12:17:42",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"table expected, got nil\"\n",
+			["stack"] = "[C]: in function `unpack'\nInterface\\AddOns\\Details\\gumps\\janela_principal.lua:4625: in function `InstanceRefreshRows'\nInterface\\AddOns\\Details\\gumps\\janela_principal.lua:4134: in function `CriaNovaBarra'\nInterface\\AddOns\\Details\\core\\windows.lua:727: in function `ReajustaGump'\nInterface\\AddOns\\Details\\gumps\\janela_principal.lua:1126: in function <Interface\\AddOns\\Details\\gumps\\janela_principal.lua:1124>",
+			["session"] = 2736,
+			["counter"] = 14,
+		}, -- [296]
+		{
+			["message"] = "Interface\\AddOns\\Details\\classes\\classe_damage.lua:2406: attempt to index local 'bars_show_data' (a nil value)",
+			["time"] = "2020/09/30 12:17:10",
+			["locals"] = "self = <table> {\n flag_original = 276\n totalabsorbed = 0.008572\n damage_from = <table> {\n }\n targets = <table> {\n }\n colocacao = 1\n pets = <table> {\n }\n minha_barra = DetailsBarra_4_1 {\n }\n spec = 267\n friendlyfire_total = 48514242\n raid_targets = <table> {\n }\n total_without_pet = 0.008572\n friendlyfire = <table> {\n }\n on_hold = false\n dps_started = false\n total = 33172159.959196\n classe = \"WARLOCK\"\n serial = \"0x0000-0000-0000\"\n nome = \"Sargeras\"\n spells = <table> {\n }\n grupo = true\n displayName = \"Sargeras\"\n last_dps = 92144.888776\n custom = 0\n tipo = 1\n damage_taken = 26056363\n start_time = 0\n delay = 0\n last_event = 0\n}\ninstancia = <table> {\n h_baixo = DetailsBottomSideBarHighlight4 {\n }\n desaturated_menu2 = false\n h_esquerda = DetailsLeftSideBarHighlight4 {\n }\n bg_r = 0.094100\n oldwith = 320\n rows_showing = 9\n micro_displays_locked = true\n tooltip = <table> {\n }\n icons = <table> {\n }\n ponto3 = <table> {\n }\n ponto1 = <table> {\n }\n rolagem = true\n attribute_text = <table> {\n }\n closebutton_config = <table> {\n }\n windowBackgroundDisplay = Details_GumpFrame4 {\n }\n lastIcon = <table> {\n }\n menu_icons = <table> {\n }\n show_sidebars = false\n hide_icon = true\n consolidate = false\n toolbar_side = 1\n sub_atributo = 1\n atributo = 1\n bg_b = 0.094100\n largura_scroll = 26\n backdrop_texture = \"Details Ground\"\n scroll = Details_ScrollBar4 {\n }\n sub_atributo_last = <table> {\n }\n barraS = <table> {\n }\n bgdisplay = Details_GumpFrame4 {\n }\n switch_healer = false\n showing = <table> {\n }\n ponto4 = <table> {\n }\n name = \"\"\n menu2_points = <table> {\n }\n freeze_icon = <unnamed> {\n }\n snap = <table> {\n }\n clickthrough_incombatonly = true\n hide_in_combat_alpha = 0\n locs = <table> {\n }\n firstIcon = DetailsClearSegmentsButton4 {\n }\n row_show_animation = <table> {\n }\n grab_on_top = false\n menu_points = <table> {\n }\n instancebutton_config = <table> {\n }\n hide_in_combat = false\n posicao = <table> {\n }\n row_height = 23.513054\n hide_in_combat_type = 1\n clickthrough_window = false\n menu_anchor = <table> {\n }\n total_buttons_shown = 5\n hide_out_of_combat = false\n rows_created = 8\n bars_sort_direction = 1\n switch_all_roles_in_combat = false\n clickthrough_toolbaricons = false\n bgframe = Details_WindowFrame4 {\n }\n barras = <table> {\n }\n resetbutton_config = <table> {\n }\n switch_tank = false\n windowSwitchButton = Details_SwitchButtonFrame4 {\n }\n plugins_grow_direction = 1\n rowframe = DetailsRowFrame4 {\n }\n switch_damager = false\n micro_displays_side = 2\n window_scale = 1\n h_direita = DetailsRightSideBarHighlight4 {\n }\n meu_id = 4\n bg_g = 0.094100\n top = 33172159.959196\n freeze_texto = <unnamed> {\n }\n mostrando = \"normal\"\n ativa = true\n break_snap_button = DetailsBreakSnapButton4 {\n }\n alturaAntiga = 129.999985\n menu2_anchor = <table> {\n }\n last_modo = 2\n menu2_anchor_down = <table> {\n }\n skin = \"Minimalistic\"\n toolbar_icon_file = \"Interface\\AddOns\\Details\\images\\toolbar_icons\"\n following = <table> {\n }\n show_statusbar = false\n segmento = 0\n cached_bar_width = 320\n menu2_icons = <table> {\n }\n menu_icons_size = 0.800000\n menu2_icons_size = 1\n iniciada = true\n skin_custom = \"\"\n version = 3\n bars_grow_direction = 1\n v_barras = false\n instance_button_anchor = <table> {\n }\n bg_alpha = 0.200000\n LastModo = 2\n color_buttons = <table> {\n }\n row_info = <table> {\n }\n _version = <unnamed> {\n }\n ignore_mass_showhide = false\n switch_all_roles_after_wipe = false\n strata = \"LOW\"\n desaturated_menu = false\n auto_hide_menu = <table> {\n }\n clickthrough_rows = false\n ponto2 = <table> {\n }\n need_rolagem = true\n switch_healer_in_combat = false\n floatingframe = DetailsInstance4BorderHolder {\n }\n statusbar_info = <table> {\n }\n color = <table> {\n }\n menu_anchor_down = <table> {\n }\n rows_max = 50\n switch_tank_in_combat = false\n bgdisplay_loc = 0\n h_cima = DetailsTopSideBarHighlight4 {\n }\n overall_data_warning = <unnamed> {\n }\n modo = 2\n auto_current = true\n StatusBar = <table> {\n }\n menu_alpha = <table> {\n }\n bars_inverted = false\n baseframe = DetailsBaseFrame4 {\n }\n libwindow = <table> {\n }\n menu_attribute_string = <table> {\n }\n isLocked = false\n wallpaper = <table> {\n }\n stretch_but",
+			["stack"] = "Interface\\AddOns\\Details\\classes\\classe_damage.lua:2406: in function `AtualizaBarra'\nInterface\\AddOns\\Details\\classes\\classe_damage.lua:2229: in function <Interface\\AddOns\\Details\\classes\\classe_damage.lua:1568>\n(tail call): ?\nInterface\\AddOns\\Details\\core\\control.lua:1946: in function `?'\n...ce\\AddOns\\Details\\Libs\\AceTimer-3.0\\AceTimer-3.0-17.lua:55: in function <...ce\\AddOns\\Details\\Libs\\AceTimer-3.0\\AceTimer-3.0.lua:50>",
+			["session"] = 2736,
+			["counter"] = 9,
+		}, -- [297]
+		{
+			["message"] = "...Ons\\Details\\Libs\\DF\\Details-Framework-Classic\\fw.lua:2657: D!Framework (DetailsOptionsWindowCreateExampleBarsButton:OnMouseUp()) error: Interface\\AddOns\\Details\\classes\\classe_damage.lua:2406: attempt to index local 'bars_show_data' (a nil value)\n====================\n...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:887: in function <...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:800>\n\n====================\n",
+			["time"] = "2020/09/30 12:17:25",
+			["locals"] = "(*temporary) = \"D!Framework (DetailsOptionsWindowCreateExampleBarsButton:OnMouseUp()) error: Interface\\AddOns\\Details\\classes\\classe_damage.lua:2406: attempt to index local 'bars_show_data' (a nil value)\n====================\n...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:887: in function <...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:800>\n\n====================\n\"\n",
+			["stack"] = "[C]: in function `error'\n...Ons\\Details\\Libs\\DF\\Details-Framework-Classic\\fw.lua:2657: in function `CoreDispatch'\n...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:887: in function <...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:800>",
+			["session"] = 2736,
+			["counter"] = 4,
+		}, -- [298]
+		{
+			["message"] = "...Ons\\Details\\Libs\\DF\\Details-Framework-Classic\\fw.lua:2657: D!Framework (DetailsModeButton4:OnMouseUp()) error: Interface\\AddOns\\Details\\gumps\\janela_principal.lua:7566: attempt to perform arithmetic on local 'buttons_spacement' (a nil value)\n====================\n...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:887: in function <...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:800>\n\n====================\n",
+			["time"] = "2020/09/30 12:18:04",
+			["locals"] = "(*temporary) = \"D!Framework (DetailsModeButton4:OnMouseUp()) error: Interface\\AddOns\\Details\\gumps\\janela_principal.lua:7566: attempt to perform arithmetic on local 'buttons_spacement' (a nil value)\n====================\n...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:887: in function <...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:800>\n\n====================\n\"\n",
+			["stack"] = "[C]: in function `error'\n...Ons\\Details\\Libs\\DF\\Details-Framework-Classic\\fw.lua:2657: in function `CoreDispatch'\n...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:887: in function <...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:800>",
+			["session"] = 2736,
+			["counter"] = 4,
+		}, -- [299]
+		{
+			["message"] = "Interface\\AddOns\\Details\\gumps\\janela_principal.lua:7566: attempt to perform arithmetic on local 'buttons_spacement' (a nil value)",
+			["time"] = "2020/09/30 12:17:41",
+			["locals"] = "self = <table> {\n h_baixo = DetailsBottomSideBarHighlight4 {\n }\n desaturated_menu2 = false\n h_esquerda = DetailsLeftSideBarHighlight4 {\n }\n bg_r = 0.094100\n oldwith = 320\n rows_showing = 23\n micro_displays_locked = true\n tooltip = <table> {\n }\n icons = <table> {\n }\n ponto3 = <table> {\n }\n ponto1 = <table> {\n }\n rolagem = true\n attribute_text = <table> {\n }\n closebutton_config = <table> {\n }\n windowBackgroundDisplay = Details_GumpFrame4 {\n }\n lastIcon = <table> {\n }\n menu_icons = <table> {\n }\n show_sidebars = false\n hide_icon = true\n consolidate = false\n toolbar_side = 1\n sub_atributo = 1\n atributo = 1\n bg_b = 0.094100\n largura_scroll = 26\n backdrop_texture = \"Details Ground\"\n scroll = Details_ScrollBar4 {\n }\n sub_atributo_last = <table> {\n }\n barraS = <table> {\n }\n bgdisplay = Details_GumpFrame4 {\n }\n switch_healer = false\n showing = <table> {\n }\n ponto4 = <table> {\n }\n name = \"\"\n menu2_points = <table> {\n }\n freeze_icon = <unnamed> {\n }\n snap = <table> {\n }\n clickthrough_incombatonly = true\n hide_in_combat_alpha = 0\n locs = <table> {\n }\n firstIcon = DetailsClearSegmentsButton4 {\n }\n row_show_animation = <table> {\n }\n grab_on_top = false\n menu_points = <table> {\n }\n instancebutton_config = <table> {\n }\n hide_in_combat = false\n posicao = <table> {\n }\n row_height = 23.513054\n hide_in_combat_type = 1\n clickthrough_window = false\n menu_anchor = <table> {\n }\n total_buttons_shown = 5\n hide_out_of_combat = false\n rows_created = 8\n bars_sort_direction = 1\n switch_all_roles_in_combat = false\n clickthrough_toolbaricons = false\n bgframe = Details_WindowFrame4 {\n }\n barras = <table> {\n }\n resetbutton_config = <table> {\n }\n switch_tank = false\n windowSwitchButton = Details_SwitchButtonFrame4 {\n }\n plugins_grow_direction = 1\n rowframe = DetailsRowFrame4 {\n }\n switch_damager = false\n micro_displays_side = 2\n window_scale = 1\n h_direita = DetailsRightSideBarHighlight4 {\n }\n meu_id = 4\n bg_g = 0.094100\n top = 66168010.329620\n freeze_texto = <unnamed> {\n }\n is_interacting = true\n mostrando = \"normal\"\n ativa = true\n break_snap_button = DetailsBreakSnapButton4 {\n }\n alturaAntiga = 129.999985\n menu2_anchor = <table> {\n }\n last_modo = 2\n menu2_anchor_down = <table> {\n }\n skin = \"Minimalistic\"\n toolbar_icon_file = \"Interface\\AddOns\\Details\\images\\toolbar_icons\"\n following = <table> {\n }\n show_statusbar = false\n segmento = 0\n cached_bar_width = 320\n menu2_icons = <table> {\n }\n menu_icons_size = 0.800000\n menu2_icons_size = 1\n iniciada = true\n skin_custom = \"\"\n version = 3\n bars_grow_direction = 1\n v_barras = false\n instance_button_anchor = <table> {\n }\n bg_alpha = 0.200000\n LastModo = 2\n color_buttons = <table> {\n }\n row_info = <table> {\n }\n _version = <unnamed> {\n }\n ignore_mass_showhide = false\n switch_all_roles_after_wipe = false\n strata = \"LOW\"\n desaturated_menu = false\n auto_hide_menu = <table> {\n }\n clickthrough_rows = false\n ponto2 = <table> {\n }\n need_rolagem = true\n switch_healer_in_combat = false\n floatingframe = DetailsInstance4BorderHolder {\n }\n statusbar_info = <table> {\n }\n color = <table> {\n }\n menu_anchor_down = <table> {\n }\n rows_max = 50\n switch_tank_in_combat = false\n bgdisplay_loc = 0\n h_cima = DetailsTopSideBarHighlight4 {\n }\n overall_data_warning = <unnamed> {\n }\n modo = 2\n auto_current = true\n StatusBar = <table> {\n }\n menu_alpha = <table> {\n }\n bars_inverted = false\n baseframe = DetailsBaseFrame4 {\n }\n libwindow = <table> {\n }\n menu_attribute_string = <table> {\n }\n isLocked = true\n wallpaper = <table> {\n }\n stretch_button_side = 1\n switch_damager_in_combat = false\n rows_fit_in_window = 5\n alert = DetailsAlertFrame4 {\n }\n total_bar = <table> {\n }\n}\nwindow_width = 320\nbuttons_shown = 5\nbuttons_width = 12.800000\nbuttons_spacement = nil\n(*temporary) = 64.000001\n(*temporary) = 4\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to perform arithmetic on local 'buttons_spacement' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\Details\\gumps\\janela_principal.lua:7566: in function `RefreshAttributeTextSize'\nInterface\\AddOns\\Details\\gumps\\janela_principal.lua:378: in function <Interface\\AddOns\\Details\\gumps\\janela_principal.lua:374>\nInterface\\AddOns\\Details\\gumps\\janela_principal.lua:1040: in function <Interface\\AddOns\\Details\\gumps\\janela_principal.lua:1039>",
+			["session"] = 2736,
+			["counter"] = 260,
+		}, -- [300]
+		{
+			["message"] = "Interface\\AddOns\\Details\\gumps\\janela_options.lua:11477: Usage: DetailsOptionsWindow4CustomTextureEntry:SetText(\"text\")",
+			["time"] = "2020/09/30 12:17:36",
+			["locals"] = "(*temporary) = DetailsOptionsWindow4CustomTextureEntry {\n 0 = <userdata>\n background_frame = <unnamed> {\n }\n label = DetailsOptionsWindow4CustomTextureEntry_Desc {\n }\n current_bordercolor = <table> {\n }\n MyObject = <table> {\n }\n}\n(*temporary) = nil\n",
+			["stack"] = "[C]: in function `SetText'\nInterface\\AddOns\\Details\\gumps\\janela_options.lua:11477: in function `update_all'\nInterface\\AddOns\\Details\\gumps\\janela_options.lua:137: in function `?'\n...ce\\AddOns\\Details\\Libs\\AceTimer-3.0\\AceTimer-3.0-17.lua:55: in function <...ce\\AddOns\\Details\\Libs\\AceTimer-3.0\\AceTimer-3.0.lua:50>",
+			["session"] = 2736,
+			["counter"] = 6,
+		}, -- [301]
+		{
+			["message"] = "...tails\\Libs\\DF\\Details-Framework-Classic\\dropdown.lua:490: Details! Framework: dropdown DetailsOptionsWindowInstanceSelectDropdown error: Interface\\AddOns\\Details\\gumps\\janela_options.lua:11477: Usage: DetailsOptionsWindow4CustomTextureEntry:SetText(\"text\")",
+			["time"] = "2020/09/30 12:17:14",
+			["locals"] = "(*temporary) = \"Details! Framework: dropdown DetailsOptionsWindowInstanceSelectDropdown error: Interface\\AddOns\\Details\\gumps\\janela_options.lua:11477: Usage: DetailsOptionsWindow4CustomTextureEntry:SetText(\"text\")\"\n",
+			["stack"] = "[C]: in function `error'\n...tails\\Libs\\DF\\Details-Framework-Classic\\dropdown.lua:490: in function <...tails\\Libs\\DF\\Details-Framework-Classic\\dropdown.lua:477>",
+			["session"] = 2736,
+			["counter"] = 6,
+		}, -- [302]
+		{
+			["message"] = "Couldn't open Interface\\AddOns\\ClickToMove\\ClickToMove.toc",
+			["session"] = 2739,
+			["time"] = "2020/09/30 12:15:00",
+			["counter"] = 8,
+		}, -- [303]
 	},
 }

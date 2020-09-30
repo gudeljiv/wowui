@@ -273,10 +273,8 @@ function SlashCmdList.DETAILS (msg, editbox)
 		end)
 		
 	elseif (msg == "sync") then
-
-		Details:Msg ("Sync is disabled, range inside raids and dungeons are working nominal.")
-		--_detalhes.data_sync = not _detalhes.data_sync
-		--Details:Msg ("Sync: ", _detalhes.data_sync and "turned ON" or "turned OFF")
+		_detalhes.data_sync = not _detalhes.data_sync
+		Details:Msg ("Sync: ", _detalhes.data_sync and "turned ON" or "turned OFF")
 
 	elseif (msg == "realmsync") then
 		
