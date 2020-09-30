@@ -1,14 +1,14 @@
 
 KILLTRACK = {
-	["TOOLTIP"] = true,
-	["COUNT_GROUP"] = false,
-	["SHOW_EXP"] = false,
 	["BROKER"] = {
 		["MINIMAP"] = {
 			["hide"] = true,
 		},
 		["SHORT_TEXT"] = false,
 	},
+	["PRINTKILLS"] = false,
+	["SHOW_EXP"] = false,
+	["TOOLTIP"] = true,
 	["PRINTNEW"] = false,
 	["MOBS"] = {
 		[2268] = {
@@ -331,15 +331,15 @@ KILLTRACK = {
 			["Kills"] = 2,
 			["Name"] = "Hillsbrad Tailor",
 		},
-		[3630] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Deviate Coiler",
-		},
 		[6466] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Gamon",
+		},
+		[3630] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Deviate Coiler",
 		},
 		[2360] = {
 			["AchievCount"] = 0,
@@ -420,5 +420,5 @@ KILLTRACK = {
 		["POSITION"] = {
 		},
 	},
-	["PRINTKILLS"] = false,
+	["COUNT_GROUP"] = false,
 }

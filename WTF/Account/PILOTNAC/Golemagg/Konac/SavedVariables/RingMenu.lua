@@ -12,11 +12,11 @@ RingMenu_ringConfig = {
 			["b"] = 0,
 		},
 		["radius"] = 100,
-		["angle"] = 0,
+		["keyBind"] = "CTRL-G",
 		["backdropScale"] = 1.5,
 		["closeOnClick"] = true,
-		["keyBind"] = "CTRL-G",
-		["numSlots"] = 12,
+		["angle"] = 0,
 		["firstSlot"] = 13,
+		["numSlots"] = 12,
 	}, -- [1]
 }

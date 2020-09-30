@@ -123,7 +123,7 @@ KILLTRACK_CHAR = {
 		},
 		[2442] = {
 			["Name"] = "Cow",
-			["Kills"] = 27,
+			["Kills"] = 28,
 		},
 		[1912] = {
 			["Name"] = "Dalaran Protector",
@@ -209,13 +209,13 @@ KILLTRACK_CHAR = {
 			["Name"] = "Miner Hackett",
 			["Kills"] = 1,
 		},
-		[2387] = {
-			["Name"] = "Hillsbrad Councilman",
-			["Kills"] = 8,
-		},
 		[2260] = {
 			["Name"] = "Syndicate Rogue",
 			["Kills"] = 32,
+		},
+		[2387] = {
+			["Name"] = "Hillsbrad Councilman",
+			["Kills"] = 8,
 		},
 		[2448] = {
 			["Name"] = "Clerk Horrace Whitesteed",
@@ -281,16 +281,16 @@ KILLTRACK_CHAR = {
 			["Name"] = "Hillsbrad Tailor",
 			["Kills"] = 6,
 		},
+		[3630] = {
+			["Name"] = "Deviate Coiler",
+			["Kills"] = 0,
+		},
 		[2360] = {
 			["Name"] = "Hillsbrad Farmhand",
-			["Kills"] = 352,
+			["Kills"] = 361,
 		},
 		[6466] = {
 			["Name"] = "Gamon",
-			["Kills"] = 0,
-		},
-		[3630] = {
-			["Name"] = "Deviate Coiler",
 			["Kills"] = 0,
 		},
 		[2265] = {
@@ -311,7 +311,7 @@ KILLTRACK_CHAR = {
 		},
 		[2266] = {
 			["Name"] = "Hillsbrad Farmer",
-			["Kills"] = 290,
+			["Kills"] = 299,
 		},
 		[3241] = {
 			["Name"] = "Savannah Patriarch",

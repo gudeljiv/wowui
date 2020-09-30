@@ -265,8 +265,8 @@ KILLTRACK_CHAR = {
 			["Name"] = "Hillsbrad Farmhand",
 			["Kills"] = 8,
 		},
-		[3630] = {
-			["Name"] = "Deviate Coiler",
+		[6466] = {
+			["Name"] = "Gamon",
 			["Kills"] = 0,
 		},
 		[2265] = {
@@ -289,8 +289,8 @@ KILLTRACK_CHAR = {
 			["Name"] = "Hillsbrad Farmer",
 			["Kills"] = 17,
 		},
-		[6466] = {
-			["Name"] = "Gamon",
+		[3630] = {
+			["Name"] = "Deviate Coiler",
 			["Kills"] = 0,
 		},
 		[2449] = {

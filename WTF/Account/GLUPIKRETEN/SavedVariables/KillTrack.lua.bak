@@ -1,14 +1,14 @@
 
 KILLTRACK = {
+	["TOOLTIP"] = true,
+	["COUNT_GROUP"] = true,
+	["SHOW_EXP"] = false,
 	["BROKER"] = {
 		["MINIMAP"] = {
 			["hide"] = true,
 		},
 		["SHORT_TEXT"] = false,
 	},
-	["PRINTKILLS"] = false,
-	["SHOW_EXP"] = false,
-	["TOOLTIP"] = true,
 	["PRINTNEW"] = false,
 	["MOBS"] = {
 		[2268] = {
@@ -285,16 +285,16 @@ KILLTRACK = {
 			["Name"] = "Starving Mountain Lion",
 			["Exp"] = 42,
 		},
-		[2956] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Adult Plainstrider",
-		},
 		[2448] = {
 			["AchievCount"] = 0,
 			["Kills"] = 1,
 			["Name"] = "Clerk Horrace Whitesteed",
 			["Exp"] = 27,
+		},
+		[2956] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Adult Plainstrider",
 		},
 		[3242] = {
 			["AchievCount"] = 0,
@@ -342,27 +342,28 @@ KILLTRACK = {
 			["Name"] = "Miner Hackett",
 			["Exp"] = 58,
 		},
-		[2260] = {
-			["AchievCount"] = 0,
-			["Kills"] = 32,
-			["Name"] = "Syndicate Rogue",
-			["Exp"] = 19,
-		},
 		[2387] = {
 			["AchievCount"] = 0,
 			["Kills"] = 8,
 			["Name"] = "Hillsbrad Councilman",
 			["Exp"] = 54,
 		},
+		[2260] = {
+			["AchievCount"] = 0,
+			["Kills"] = 32,
+			["Name"] = "Syndicate Rogue",
+			["Exp"] = 19,
+		},
 		[2578] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Young Mesa Buzzard",
 		},
-		[2959] = {
+		[2451] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Prairie Stalker",
+			["Kills"] = 4,
+			["Name"] = "Farmer Kalaba",
+			["Exp"] = 170,
 		},
 		[2356] = {
 			["AchievCount"] = 0,
@@ -508,11 +509,10 @@ KILLTRACK = {
 			["Name"] = "Hillsbrad Peasant",
 			["Exp"] = 143,
 		},
-		[2451] = {
+		[2959] = {
 			["AchievCount"] = 0,
-			["Kills"] = 4,
-			["Name"] = "Farmer Kalaba",
-			["Exp"] = 170,
+			["Kills"] = 0,
+			["Name"] = "Prairie Stalker",
 		},
 		[3240] = {
 			["AchievCount"] = 0,
@@ -540,5 +540,5 @@ KILLTRACK = {
 		["POSITION"] = {
 		},
 	},
-	["COUNT_GROUP"] = true,
+	["PRINTKILLS"] = false,
 }

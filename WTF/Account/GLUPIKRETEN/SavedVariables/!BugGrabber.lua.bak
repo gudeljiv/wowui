@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 2739,
+	["session"] = 2741,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -2396,9 +2396,9 @@ BugGrabberDB = {
 		}, -- [302]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\ClickToMove\\ClickToMove.toc",
-			["session"] = 2739,
+			["session"] = 2740,
 			["time"] = "2020/09/30 12:15:00",
-			["counter"] = 8,
+			["counter"] = 10,
 		}, -- [303]
 	},
 }

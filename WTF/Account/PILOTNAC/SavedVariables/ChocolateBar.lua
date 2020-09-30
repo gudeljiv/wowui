@@ -43,6 +43,9 @@ ChocolateBarDB = {
 	["profiles"] = {
 		["Default"] = {
 			["locked"] = false,
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -73,10 +76,10 @@ ChocolateBarDB = {
 					["barOffx"] = -88.3325424194336,
 				},
 			},
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
 			},
-			["moveFrames"] = false,
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -349,18 +352,15 @@ ChocolateBarDB = {
 					["customLabel"] = "KT",
 				},
 			},
-			["desaturated"] = false,
 			["gap"] = 0,
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
-			},
 			["forceColor"] = false,
+			["fixedStrata"] = true,
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["fontName"] = "Friz Quadrata TT",
 			["textOffset"] = 2,
 			["height"] = 20,
-			["fixedStrata"] = true,
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["desaturated"] = false,
+			["moveFrames"] = false,
 			["textColor"] = {
 				["a"] = 1,
 				["b"] = 1,
@@ -428,8 +428,8 @@ CB_PlayedTime = {
 	["Verminz-"] = {
 		["total"] = 311368,
 	},
-	["Paydo-"] = {
-		["total"] = 18945,
+	["Kamenac-"] = {
+		["total"] = 1557770,
 	},
 	["Kosturko-"] = {
 		["total"] = 1457,
@@ -437,8 +437,8 @@ CB_PlayedTime = {
 	["Mxzq-"] = {
 		["total"] = 248345,
 	},
-	["Kamenac-"] = {
-		["total"] = 1557770,
+	["Paydo-"] = {
+		["total"] = 18945,
 	},
 	["Grgur-"] = {
 		["total"] = 2,
@@ -450,6 +450,6 @@ CB_PlayedTime = {
 		["total"] = 3924,
 	},
 	["Konac-"] = {
-		["total"] = 5911266,
+		["total"] = 5915563,
 	},
 }

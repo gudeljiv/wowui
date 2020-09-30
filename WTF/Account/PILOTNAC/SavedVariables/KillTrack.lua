@@ -1,9 +1,14 @@
 
 KILLTRACK = {
-	["PRINTKILLS"] = false,
 	["COUNT_GROUP"] = false,
+	["PRINTKILLS"] = false,
 	["SHOW_EXP"] = false,
-	["TOOLTIP"] = true,
+	["BROKER"] = {
+		["MINIMAP"] = {
+			["hide"] = true,
+		},
+		["SHORT_TEXT"] = false,
+	},
 	["PRINTNEW"] = false,
 	["MOBS"] = {
 		[2268] = {
@@ -336,10 +341,10 @@ KILLTRACK = {
 			["Kills"] = 8,
 			["Name"] = "Hillsbrad Farmhand",
 		},
-		[3630] = {
+		[6466] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Deviate Coiler",
+			["Name"] = "Gamon",
 		},
 		[2265] = {
 			["AchievCount"] = 0,
@@ -366,10 +371,10 @@ KILLTRACK = {
 			["Kills"] = 17,
 			["Name"] = "Hillsbrad Farmer",
 		},
-		[6466] = {
+		[3630] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Gamon",
+			["Name"] = "Deviate Coiler",
 		},
 		[2449] = {
 			["AchievCount"] = 0,
@@ -415,10 +420,5 @@ KILLTRACK = {
 	["ACHIEV_THRESHOLD"] = 1000,
 	["DISABLE_DUNGEONS"] = false,
 	["DISABLE_RAIDS"] = false,
-	["BROKER"] = {
-		["MINIMAP"] = {
-			["hide"] = true,
-		},
-		["SHORT_TEXT"] = false,
-	},
+	["TOOLTIP"] = true,
 }

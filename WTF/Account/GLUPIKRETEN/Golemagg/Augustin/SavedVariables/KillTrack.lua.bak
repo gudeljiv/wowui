@@ -155,7 +155,7 @@ KILLTRACK_CHAR = {
 		},
 		[2350] = {
 			["Name"] = "Forest Moss Creeper",
-			["Kills"] = 5,
+			["Kills"] = 6,
 		},
 		[2351] = {
 			["Name"] = "Gray Bear",
@@ -213,9 +213,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Enraged Stanley",
 			["Kills"] = 2,
 		},
-		[2260] = {
-			["Name"] = "Syndicate Rogue",
-			["Kills"] = 32,
+		[2387] = {
+			["Name"] = "Hillsbrad Councilman",
+			["Kills"] = 8,
 		},
 		[2349] = {
 			["Name"] = "Giant Moss Creeper",
@@ -281,6 +281,10 @@ KILLTRACK_CHAR = {
 			["Name"] = "Hillsbrad Tailor",
 			["Kills"] = 6,
 		},
+		[6466] = {
+			["Name"] = "Gamon",
+			["Kills"] = 0,
+		},
 		[3630] = {
 			["Name"] = "Deviate Coiler",
 			["Kills"] = 0,
@@ -288,10 +292,6 @@ KILLTRACK_CHAR = {
 		[2360] = {
 			["Name"] = "Hillsbrad Farmhand",
 			["Kills"] = 352,
-		},
-		[6466] = {
-			["Name"] = "Gamon",
-			["Kills"] = 0,
 		},
 		[2265] = {
 			["Name"] = "Hillsbrad Apprentice Blacksmith",
@@ -341,9 +341,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Clerk Horrace Whitesteed",
 			["Kills"] = 1,
 		},
-		[2387] = {
-			["Name"] = "Hillsbrad Councilman",
-			["Kills"] = 8,
+		[2260] = {
+			["Name"] = "Syndicate Rogue",
+			["Kills"] = 32,
 		},
 	},
 }
