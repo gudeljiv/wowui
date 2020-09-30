@@ -1,19 +1,14 @@
 
 KILLTRACK = {
-	["BROKER"] = {
-		["MINIMAP"] = {
-			["hide"] = true,
-		},
-		["SHORT_TEXT"] = false,
-	},
 	["PRINTKILLS"] = false,
+	["COUNT_GROUP"] = false,
 	["SHOW_EXP"] = false,
 	["TOOLTIP"] = true,
 	["PRINTNEW"] = false,
 	["MOBS"] = {
 		[2268] = {
 			["AchievCount"] = 0,
-			["Kills"] = 21,
+			["Kills"] = 22,
 			["Name"] = "Hillsbrad Footman",
 		},
 		[2427] = {
@@ -103,7 +98,7 @@ KILLTRACK = {
 		},
 		[2244] = {
 			["AchievCount"] = 0,
-			["Kills"] = 52,
+			["Kills"] = 53,
 			["Name"] = "Syndicate Shadow Mage",
 		},
 		[3673] = {
@@ -146,6 +141,11 @@ KILLTRACK = {
 			["Kills"] = 4,
 			["Name"] = "Hulking Mountain Lion",
 		},
+		[2344] = {
+			["AchievCount"] = 0,
+			["Kills"] = 11,
+			["Name"] = "Dun Garok Mountaineer",
+		},
 		[2503] = {
 			["AchievCount"] = 0,
 			["Kills"] = 6,
@@ -155,6 +155,16 @@ KILLTRACK = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Snapjaw",
+		},
+		[2345] = {
+			["AchievCount"] = 0,
+			["Kills"] = 7,
+			["Name"] = "Dun Garok Rifleman",
+		},
+		[2346] = {
+			["AchievCount"] = 0,
+			["Kills"] = 2,
+			["Name"] = "Dun Garok Priest",
 		},
 		[232] = {
 			["AchievCount"] = 0,
@@ -198,7 +208,7 @@ KILLTRACK = {
 		},
 		[2350] = {
 			["AchievCount"] = 0,
-			["Kills"] = 3,
+			["Kills"] = 4,
 			["Name"] = "Forest Moss Creeper",
 		},
 		[2351] = {
@@ -248,7 +258,7 @@ KILLTRACK = {
 		},
 		[2354] = {
 			["AchievCount"] = 0,
-			["Kills"] = 28,
+			["Kills"] = 29,
 			["Name"] = "Vicious Gray Bear",
 		},
 		[2386] = {
@@ -291,20 +301,25 @@ KILLTRACK = {
 			["Kills"] = 15,
 			["Name"] = "Deviate Shambler",
 		},
+		[2260] = {
+			["AchievCount"] = 0,
+			["Kills"] = 31,
+			["Name"] = "Syndicate Rogue",
+		},
 		[2274] = {
 			["AchievCount"] = 0,
 			["Kills"] = 1,
 			["Name"] = "Enraged Stanley",
 		},
-		[3242] = {
+		[5756] = {
+			["AchievCount"] = 0,
+			["Kills"] = 9,
+			["Name"] = "Deviate Venomwing",
+		},
+		[3273] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Zhevra Runner",
-		},
-		[2404] = {
-			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Blacksmith Verringtan",
+			["Name"] = "Kolkar Stormer",
 		},
 		[2914] = {
 			["AchievCount"] = 0,
@@ -316,15 +331,15 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Syndicate Footpad",
 		},
-		[2403] = {
+		[2620] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Farmer Getz",
+			["Kills"] = 0,
+			["Name"] = "Prairie Dog",
 		},
-		[2449] = {
+		[3415] = {
 			["AchievCount"] = 0,
-			["Kills"] = 2,
-			["Name"] = "Citizen Wilkes",
+			["Kills"] = 0,
+			["Name"] = "Savannah Huntress",
 		},
 		[2264] = {
 			["AchievCount"] = 0,
@@ -336,50 +351,50 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Gamon",
 		},
+		[1125] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Boar",
+		},
 		[3630] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Deviate Coiler",
-		},
-		[2360] = {
-			["AchievCount"] = 0,
-			["Kills"] = 8,
-			["Name"] = "Hillsbrad Farmhand",
 		},
 		[2265] = {
 			["AchievCount"] = 0,
 			["Kills"] = 4,
 			["Name"] = "Hillsbrad Apprentice Blacksmith",
 		},
-		[3631] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Deviate Stinglash",
-		},
 		[2248] = {
 			["AchievCount"] = 0,
 			["Kills"] = 1,
 			["Name"] = "Cave Yeti",
 		},
-		[1125] = {
+		[2360] = {
+			["AchievCount"] = 0,
+			["Kills"] = 11,
+			["Name"] = "Hillsbrad Farmhand",
+		},
+		[3631] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Boar",
+			["Name"] = "Deviate Stinglash",
 		},
 		[2266] = {
 			["AchievCount"] = 0,
-			["Kills"] = 17,
+			["Kills"] = 19,
 			["Name"] = "Hillsbrad Farmer",
 		},
-		[3415] = {
+		[2449] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Savannah Huntress",
+			["Kills"] = 2,
+			["Name"] = "Citizen Wilkes",
 		},
-		[2620] = {
+		[2403] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Prairie Dog",
+			["Kills"] = 1,
+			["Name"] = "Farmer Getz",
 		},
 		[3632] = {
 			["AchievCount"] = 0,
@@ -391,34 +406,39 @@ KILLTRACK = {
 			["Kills"] = 6,
 			["Name"] = "Hillsbrad Peasant",
 		},
-		[3273] = {
+		[2404] = {
+			["AchievCount"] = 0,
+			["Kills"] = 1,
+			["Name"] = "Blacksmith Verringtan",
+		},
+		[3242] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Kolkar Stormer",
-		},
-		[5756] = {
-			["AchievCount"] = 0,
-			["Kills"] = 9,
-			["Name"] = "Deviate Venomwing",
+			["Name"] = "Zhevra Runner",
 		},
 		[3633] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Deviate Slayer",
 		},
-		[2260] = {
+		[2371] = {
 			["AchievCount"] = 0,
-			["Kills"] = 30,
-			["Name"] = "Syndicate Rogue",
+			["Kills"] = 1,
+			["Name"] = "Daggerspine Siren",
 		},
 	},
-	["DISABLE_RAIDS"] = false,
-	["ACHIEV_THRESHOLD"] = 1000,
-	["DISABLE_DUNGEONS"] = false,
 	["IMMEDIATE"] = {
 		["THRESHOLD"] = 0,
 		["POSITION"] = {
 		},
 	},
-	["COUNT_GROUP"] = false,
+	["ACHIEV_THRESHOLD"] = 1000,
+	["DISABLE_DUNGEONS"] = false,
+	["DISABLE_RAIDS"] = false,
+	["BROKER"] = {
+		["MINIMAP"] = {
+			["hide"] = true,
+		},
+		["SHORT_TEXT"] = false,
+	},
 }

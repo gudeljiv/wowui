@@ -141,15 +141,26 @@ local function SetChat()
 	ChatFrame6Tab:Show()
 
 	local frame = ChatFrame7
-	FCF_SetWindowName(frame, "Loot & XP")
+	FCF_SetWindowName(frame, "Loot")
 	FCF_SetChatWindowFontSize(nil, frame, 10)
 	ChatFrame_RemoveAllMessageGroups(frame)
 	ChatFrame7:ClearAllPoints()
 	ChatFrame7:SetClampRectInsets(0, -1, 0, 0)
-	ChatFrame7:SetPoint("CENTER", ChatFrame3, 0, 240)
-	ChatFrame7:SetHeight(100)
+	ChatFrame7:SetPoint("RIGHT", ChatFrame3, -((chatWidth / 2) + 4), 260)
+	ChatFrame7:SetHeight(200)
 	ChatFrame7:Show()
 	ChatFrame7Tab:Show()
+
+	local frame = ChatFrame8
+	FCF_SetWindowName(frame, "XP")
+	FCF_SetChatWindowFontSize(nil, frame, 10)
+	ChatFrame_RemoveAllMessageGroups(frame)
+	ChatFrame8:ClearAllPoints()
+	ChatFrame8:SetClampRectInsets(0, -1, 0, 0)
+	ChatFrame8:SetPoint("RIGHT", ChatFrame3, 0, 260)
+	ChatFrame8:SetHeight(200)
+	ChatFrame8:Show()
+	ChatFrame8Tab:Show()
 
 	for i, v in pairs(
 		{
@@ -159,10 +170,15 @@ local function SetChat()
 			ChatFrame4,
 			ChatFrame5,
 			ChatFrame6,
-			ChatFrame7
+			ChatFrame7,
+			ChatFrame8
 		}
 	) do
-		v:SetWidth(chatWidth)
+		if (v:GetName() == "ChatFrame7" or v:GetName() == "ChatFrame8") then
+			v:SetWidth((chatWidth / 2) - 4)
+		else
+			v:SetWidth(chatWidth)
+		end
 
 		v.SetPoint = function()
 		end
@@ -229,12 +245,12 @@ local function SetChatChannels()
 	ChatFrame_RemoveMessageGroup(ChatFrame1, "LOOT")
 	ChatFrame_RemoveMessageGroup(ChatFrame1, "MONEY")
 
-	ChatFrame_AddMessageGroup(ChatFrame7, "COMBAT_XP_GAIN")
-	ChatFrame_AddMessageGroup(ChatFrame7, "COMBAT_HONOR_GAIN")
-	ChatFrame_AddMessageGroup(ChatFrame7, "COMBAT_FACTION_CHANGE")
 	ChatFrame_AddMessageGroup(ChatFrame7, "SKILL")
 	ChatFrame_AddMessageGroup(ChatFrame7, "LOOT")
 	ChatFrame_AddMessageGroup(ChatFrame7, "MONEY")
+	ChatFrame_AddMessageGroup(ChatFrame8, "COMBAT_XP_GAIN")
+	ChatFrame_AddMessageGroup(ChatFrame8, "COMBAT_HONOR_GAIN")
+	ChatFrame_AddMessageGroup(ChatFrame8, "COMBAT_FACTION_CHANGE")
 end
 
 local chat = CreateFrame("Frame")
