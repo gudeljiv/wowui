@@ -1,9 +1,9 @@
 Version: 1
 Frame: EavesDropFrame
 FrameLevel: 1
-Anchor: TOPRIGHT
+Anchor: RIGHT
 X: -29
-Y: -272
+Y: 266
 W: 154
 H: 322
 Frame: PlayerFrame
@@ -101,7 +101,7 @@ Frame: LootFrame
 FrameLevel: 10
 Anchor: CENTER
 X: 480
-Y: -20
+Y: 2
 W: 170
 H: 240
 Frame: TargetFrame

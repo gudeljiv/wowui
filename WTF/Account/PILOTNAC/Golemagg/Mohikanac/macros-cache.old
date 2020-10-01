@@ -1,14 +1,14 @@
-VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/startattack
-/cast raptor strike
-/cast mongoose bite
-END
 VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast arcane shot
 /cast !auto shot
 /petattack
+END
+VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast raptor strike
+/cast mongoose bite
 END
 VER 3 0000000001000003 "diseng" "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -17,6 +17,7 @@ END
 VER 3 0000000001000002 "SS" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cleartarget [dead][help]
+/startattack
 /cast Serpent Sting
 /petattack [harm]
 END

@@ -1,6 +1,6 @@
 local _, xVermin = ...
 
-local totalxp, gained = 0
+local totalxp, pulltotal, gained = 0
 local maxxp, currentxp, tolevel
 
 local _, class, _ = UnitClass("player")
@@ -16,7 +16,7 @@ end
 cc = CreateFrame("Frame", "CustomContainer", UIParent)
 cc:SetWidth(110)
 cc:SetHeight(20)
-cc:SetPoint("TOP", "CustomContainer_Combat", "BOTTOM", 0, -15)
+cc:SetPoint("BOTTOM", UIParent, "BOTTOM", -60, 300)
 
 tx = CreateFrame("Frame", "TotalXP", cc)
 tx:SetWidth(110)
@@ -103,14 +103,26 @@ tx:RegisterEvent("PLAYER_XP_UPDATE")
 tx:RegisterEvent("PLAYER_LEVEL_UP")
 tx:RegisterEvent("PLAYER_ENTERING_WORLD")
 tx:RegisterEvent("PLAYER_REGEN_DISABLED")
+tx:RegisterEvent("PLAYER_REGEN_ENABLED")
 tx:SetScript(
 	"OnEvent",
 	function(self, event, isInitialLogin, isReloadingUi)
 		if UnitLevel("player") == MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] then
 			tx:Hide()
 		else
-			tx:Show()
-			CalculateTotal(event, isInitialLogin, isReloadingUi)
+			if event ~= "PLAYER_REGEN_ENABLED" then
+				tx:Show()
+				CalculateTotal(event, isInitialLogin, isReloadingUi)
+			end
+		end
+
+		if event == "PLAYER_REGEN_DISABLED" then
+			tx:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\Media\\textureWhite")
+			tx:SetBeautyBorderColor(color.r, color.g, color.b, 1)
+		end
+		if event == "PLAYER_REGEN_ENABLED" then
+			tx:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\Media\\textureNormal")
+			tx:SetBeautyBorderColor(1, 1, 1, 1)
 		end
 	end
 )

@@ -6,24 +6,15 @@ EavesDropStatsDB = {
 	["profiles"] = {
 		["Kamenac - Golemagg"] = {
 			{
-				["heal"] = {
-					["Bloodthirst"] = {
-						[-2] = {
-							["time"] = "|cffffffff09/09/20 08:33:08|r\n|Hunit:Player-4465-010DF944:Kamenac|hYour|h |Hspell:0:0:SPELL_HEAL|h|cffffffffBloodthirst|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-010DF944:Kamenac|hYou|h |cffffffff20|r |cffffffffPhysical|r. ",
-							["amount"] = 20,
-						},
-						[2] = {
-						},
-						["icon"] = 136012,
-					},
-				},
 				["hit"] = {
-					["Shadow Bolt"] = {
+					["Melee Attack"] = {
 						[-2] = {
-							["time"] = "|cffffffff09/09/20 08:33:15|r\n|Hunit:Player-4465-010DF944:Kamenac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffShadow Bolt|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4448-1-14-6521-0000591B85:Living Blaze|hLiving Blaze|h |cffffffff75|r |cffffffffShadow|r. ",
-							["amount"] = 75,
+							["time"] = "|cffffffff09/09/20 08:33:13|r\n|Hunit:Player-4465-010DF944:Kamenac|hYour|h |Haction:SWING_DAMAGE|h|cffffffffMelee|r|h |Haction:SWING_DAMAGE|hhit|h |Hunit:Creature-0-4448-1-14-6521-0000591B85:Living Blaze|hLiving Blaze|h |cffffffff173|r |cffffffffPhysical|r. ",
+							["amount"] = 173,
 						},
 						[2] = {
+							["time"] = "|cffffffff09/09/20 08:33:06|r\n|Hunit:Player-4465-010DF944:Kamenac|hYour|h |Haction:SWING_DAMAGE|h|cffffffffMelee|r|h |Haction:SWING_DAMAGE|hhit|h |Hunit:Creature-0-4448-1-14-6521-0000591B85:Living Blaze|hLiving Blaze|h |cffffffff304|r |cffffffffPhysical|r. (Critical) ",
+							["amount"] = 304,
 						},
 					},
 					["Bloodthirst"] = {
@@ -46,15 +37,24 @@ EavesDropStatsDB = {
 						},
 						["icon"] = 132282,
 					},
-					["Melee Attack"] = {
+					["Shadow Bolt"] = {
 						[-2] = {
-							["time"] = "|cffffffff09/09/20 08:33:13|r\n|Hunit:Player-4465-010DF944:Kamenac|hYour|h |Haction:SWING_DAMAGE|h|cffffffffMelee|r|h |Haction:SWING_DAMAGE|hhit|h |Hunit:Creature-0-4448-1-14-6521-0000591B85:Living Blaze|hLiving Blaze|h |cffffffff173|r |cffffffffPhysical|r. ",
-							["amount"] = 173,
+							["time"] = "|cffffffff09/09/20 08:33:15|r\n|Hunit:Player-4465-010DF944:Kamenac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffShadow Bolt|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4448-1-14-6521-0000591B85:Living Blaze|hLiving Blaze|h |cffffffff75|r |cffffffffShadow|r. ",
+							["amount"] = 75,
 						},
 						[2] = {
-							["time"] = "|cffffffff09/09/20 08:33:06|r\n|Hunit:Player-4465-010DF944:Kamenac|hYour|h |Haction:SWING_DAMAGE|h|cffffffffMelee|r|h |Haction:SWING_DAMAGE|hhit|h |Hunit:Creature-0-4448-1-14-6521-0000591B85:Living Blaze|hLiving Blaze|h |cffffffff304|r |cffffffffPhysical|r. (Critical) ",
-							["amount"] = 304,
 						},
+					},
+				},
+				["heal"] = {
+					["Bloodthirst"] = {
+						[-2] = {
+							["time"] = "|cffffffff09/09/20 08:33:08|r\n|Hunit:Player-4465-010DF944:Kamenac|hYour|h |Hspell:0:0:SPELL_HEAL|h|cffffffffBloodthirst|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-010DF944:Kamenac|hYou|h |cffffffff20|r |cffffffffPhysical|r. ",
+							["amount"] = 20,
+						},
+						[2] = {
+						},
+						["icon"] = 136012,
 					},
 				},
 			}, -- [1]
