@@ -237,6 +237,10 @@ KILLTRACK_CHAR = {
 			["Name"] = "Deviate Shambler",
 			["Kills"] = 15,
 		},
+		[3273] = {
+			["Name"] = "Kolkar Stormer",
+			["Kills"] = 0,
+		},
 		[2371] = {
 			["Name"] = "Daggerspine Siren",
 			["Kills"] = 1,
@@ -321,8 +325,8 @@ KILLTRACK_CHAR = {
 			["Name"] = "Hillsbrad Peasant",
 			["Kills"] = 6,
 		},
-		[3273] = {
-			["Name"] = "Kolkar Stormer",
+		[7360] = {
+			["Name"] = "Dun Garok Soldier",
 			["Kills"] = 0,
 		},
 		[5756] = {
