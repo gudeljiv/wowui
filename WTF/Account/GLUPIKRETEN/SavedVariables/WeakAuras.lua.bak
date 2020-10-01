@@ -1,0 +1,24 @@
+
+WeakAurasSaved = {
+	["dynamicIconCache"] = {
+	},
+	["displays"] = {
+	},
+	["lastArchiveClear"] = 1601569666,
+	["minimap"] = {
+		["minimapPos"] = 34.3920514550927,
+		["hide"] = true,
+	},
+	["lastUpgrade"] = 1601569669,
+	["dbVersion"] = 33,
+	["login_squelch_time"] = 10,
+	["registered"] = {
+	},
+	["frame"] = {
+		["xOffset"] = -841.999755859375,
+		["yOffset"] = -400.5,
+		["height"] = 665.000061035156,
+		["width"] = 830,
+	},
+	["editor_theme"] = "Monokai",
+}

@@ -1,7 +1,12 @@
 
 KILLTRACK = {
+	["BROKER"] = {
+		["MINIMAP"] = {
+			["hide"] = true,
+		},
+		["SHORT_TEXT"] = false,
+	},
 	["PRINTKILLS"] = false,
-	["COUNT_GROUP"] = false,
 	["SHOW_EXP"] = false,
 	["TOOLTIP"] = true,
 	["PRINTNEW"] = false,
@@ -296,31 +301,35 @@ KILLTRACK = {
 			["Kills"] = 95,
 			["Name"] = "Syndicate Watchman",
 		},
+		[5756] = {
+			["AchievCount"] = 0,
+			["Kills"] = 9,
+			["Name"] = "Deviate Venomwing",
+		},
 		[5761] = {
 			["AchievCount"] = 0,
 			["Kills"] = 15,
 			["Name"] = "Deviate Shambler",
 		},
-		[2952] = {
+		[2371] = {
 			["AchievCount"] = 0,
-			["Kills"] = 4,
-			["Name"] = "Bristleback Quilboar",
-			["Exp"] = 130,
+			["Kills"] = 1,
+			["Name"] = "Daggerspine Siren",
 		},
 		[2260] = {
 			["AchievCount"] = 0,
 			["Kills"] = 31,
 			["Name"] = "Syndicate Rogue",
 		},
-		[2274] = {
+		[3242] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Zhevra Runner",
+		},
+		[2404] = {
 			["AchievCount"] = 0,
 			["Kills"] = 1,
-			["Name"] = "Enraged Stanley",
-		},
-		[5756] = {
-			["AchievCount"] = 0,
-			["Kills"] = 9,
-			["Name"] = "Deviate Venomwing",
+			["Name"] = "Blacksmith Verringtan",
 		},
 		[3273] = {
 			["AchievCount"] = 0,
@@ -332,15 +341,15 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Snake",
 		},
-		[2240] = {
+		[2403] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Syndicate Footpad",
+			["Kills"] = 1,
+			["Name"] = "Farmer Getz",
 		},
-		[2620] = {
+		[2449] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Prairie Dog",
+			["Kills"] = 2,
+			["Name"] = "Citizen Wilkes",
 		},
 		[3415] = {
 			["AchievCount"] = 0,
@@ -352,20 +361,20 @@ KILLTRACK = {
 			["Kills"] = 2,
 			["Name"] = "Hillsbrad Tailor",
 		},
-		[1125] = {
+		[3631] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Boar",
+			["Name"] = "Deviate Stinglash",
+		},
+		[2360] = {
+			["AchievCount"] = 0,
+			["Kills"] = 11,
+			["Name"] = "Hillsbrad Farmhand",
 		},
 		[6466] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Gamon",
-		},
-		[3630] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Deviate Coiler",
 		},
 		[2265] = {
 			["AchievCount"] = 0,
@@ -377,30 +386,30 @@ KILLTRACK = {
 			["Kills"] = 1,
 			["Name"] = "Cave Yeti",
 		},
-		[2360] = {
-			["AchievCount"] = 0,
-			["Kills"] = 11,
-			["Name"] = "Hillsbrad Farmhand",
-		},
-		[3631] = {
+		[3630] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Deviate Stinglash",
+			["Name"] = "Deviate Coiler",
+		},
+		[1125] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Boar",
 		},
 		[2266] = {
 			["AchievCount"] = 0,
 			["Kills"] = 19,
 			["Name"] = "Hillsbrad Farmer",
 		},
-		[2449] = {
+		[2620] = {
 			["AchievCount"] = 0,
-			["Kills"] = 2,
-			["Name"] = "Citizen Wilkes",
+			["Kills"] = 0,
+			["Name"] = "Prairie Dog",
 		},
-		[2403] = {
+		[2240] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Farmer Getz",
+			["Kills"] = 0,
+			["Name"] = "Syndicate Footpad",
 		},
 		[3632] = {
 			["AchievCount"] = 0,
@@ -412,39 +421,35 @@ KILLTRACK = {
 			["Kills"] = 6,
 			["Name"] = "Hillsbrad Peasant",
 		},
-		[2404] = {
-			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Blacksmith Verringtan",
-		},
-		[3242] = {
+		[7360] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Zhevra Runner",
+			["Name"] = "Dun Garok Soldier",
+		},
+		[2274] = {
+			["AchievCount"] = 0,
+			["Kills"] = 1,
+			["Name"] = "Enraged Stanley",
 		},
 		[3633] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Deviate Slayer",
 		},
-		[2371] = {
+		[2952] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Daggerspine Siren",
+			["Kills"] = 4,
+			["Name"] = "Bristleback Quilboar",
+			["Exp"] = 130,
 		},
 	},
+	["DISABLE_RAIDS"] = false,
+	["ACHIEV_THRESHOLD"] = 1000,
+	["DISABLE_DUNGEONS"] = false,
 	["IMMEDIATE"] = {
 		["THRESHOLD"] = 0,
 		["POSITION"] = {
 		},
 	},
-	["ACHIEV_THRESHOLD"] = 1000,
-	["DISABLE_DUNGEONS"] = false,
-	["DISABLE_RAIDS"] = false,
-	["BROKER"] = {
-		["MINIMAP"] = {
-			["hide"] = true,
-		},
-		["SHORT_TEXT"] = false,
-	},
+	["COUNT_GROUP"] = false,
 }

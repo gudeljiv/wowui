@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 2765,
+	["session"] = 2771,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -2400,5 +2400,13 @@ BugGrabberDB = {
 			["time"] = "2020/09/30 12:15:00",
 			["counter"] = 10,
 		}, -- [303]
+		{
+			["message"] = "...ate2\\Libs\\AceGUI-3.0-41\\widgets\\AceGUIWidget-Slider.lua:104: attempt to perform arithmetic on a nil value",
+			["time"] = "2020/10/01 19:16:04",
+			["locals"] = "frame = <unnamed> {\n 0 = <userdata>\n obj = <table> {\n }\n}\nself = <table> {\n label = <unnamed> {\n }\n parent = <table> {\n }\n step = 0.010000\n OnAcquire = <function> defined @Interface\\AddOns\\GatherMate2\\Libs\\AceGUI-3.0\\widgets\\AceGUIWidget-Slider.lua:128\n SetDisabled = <function> defined @Interface\\AddOns\\GatherMate2\\Libs\\AceGUI-3.0\\widgets\\AceGUIWidget-Slider.lua:140\n userdata = <table> {\n }\n SetSliderValues = <function> defined @Interface\\AddOns\\GatherMate2\\Libs\\AceGUI-3.0\\widgets\\AceGUIWidget-Slider.lua:178\n value = 0\n base = <table> {\n }\n ispercent = true\n hightext = <unnamed> {\n }\n type = \"Slider\"\n AceGUIWidgetVersion = 23\n GetValue = <function> defined @Interface\\AddOns\\GatherMate2\\Libs\\AceGUI-3.0\\widgets\\AceGUIWidget-Slider.lua:170\n max = 1\n alignoffset = 25\n SetValue = <function> defined @Interface\\AddOns\\GatherMate2\\Libs\\AceGUI-3.0\\widgets\\AceGUIWidget-Slider.lua:162\n min = 0\n SetIsPercent = <function> defined @Interface\\AddOns\\GatherMate2\\Libs\\AceGUI-3.0\\widgets\\AceGUIWidget-Slider.lua:193\n events = <table> {\n }\n lowtext = <unnamed> {\n }\n editbox = <unnamed> {\n }\n frame = <unnamed> {\n }\n SetLabel = <function> defined @Interface\\AddOns\\GatherMate2\\Libs\\AceGUI-3.0\\widgets\\AceGUIWidget-Slider.lua:174\n slider = <unnamed> {\n }\n}\nvalue = \"30ž\"\n(*temporary) = nil\n(*temporary) = \"30ž\"\n(*temporary) = nil\n(*temporary) = \"\"\n(*temporary) = \"attempt to perform arithmetic on a nil value\"\ntonumber = <function> defined =[C]:-1\nPlaySound = <function> defined =[C]:-1\n",
+			["stack"] = "...ate2\\Libs\\AceGUI-3.0-41\\widgets\\AceGUIWidget-Slider.lua:104: in function <...ate2\\Libs\\AceGUI-3.0\\widgets\\AceGUIWidget-Slider.lua:99>",
+			["session"] = 2771,
+			["counter"] = 1,
+		}, -- [304]
 	},
 }

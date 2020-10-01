@@ -65,7 +65,7 @@ rLib: disabled
 DBM-Party-Cataclysm: enabled
 DBM-ThroneFourWinds: enabled
 AdiBags: enabled
-WeakAuras: disabled
+WeakAuras: enabled
 WeakAurasModelPaths: enabled
 WeakAurasOptions: enabled
 WeakAurasTutorials: disabled

@@ -1,14 +1,9 @@
 
 KILLTRACK = {
-	["COUNT_GROUP"] = true,
 	["PRINTKILLS"] = false,
+	["COUNT_GROUP"] = true,
 	["SHOW_EXP"] = false,
-	["BROKER"] = {
-		["MINIMAP"] = {
-			["hide"] = true,
-		},
-		["SHORT_TEXT"] = false,
-	},
+	["TOOLTIP"] = true,
 	["PRINTNEW"] = false,
 	["MOBS"] = {
 		[2268] = {
@@ -319,10 +314,11 @@ KILLTRACK = {
 			["Kills"] = 1,
 			["Name"] = "DieBUSTA",
 		},
-		[2956] = {
+		[2448] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Adult Plainstrider",
+			["Kills"] = 1,
+			["Name"] = "Clerk Horrace Whitesteed",
+			["Exp"] = 27,
 		},
 		[3242] = {
 			["AchievCount"] = 0,
@@ -353,10 +349,11 @@ KILLTRACK = {
 			["Name"] = "Vicious Gray Bear",
 			["Exp"] = 18,
 		},
-		[2386] = {
+		[5756] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Southshore Guard",
+			["Kills"] = 9,
+			["Name"] = "Deviate Venomwing",
+			["Exp"] = 47,
 		},
 		[3241] = {
 			["AchievCount"] = 0,
@@ -403,16 +400,16 @@ KILLTRACK = {
 			["Name"] = "Syndicate Watchman",
 			["Exp"] = 14,
 		},
+		[2960] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Prairie Wolf Alpha",
+		},
 		[5761] = {
 			["AchievCount"] = 0,
 			["Kills"] = 15,
 			["Name"] = "Deviate Shambler",
 			["Exp"] = 37,
-		},
-		[2960] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Prairie Wolf Alpha",
 		},
 		[5055] = {
 			["AchievCount"] = 0,
@@ -536,17 +533,15 @@ KILLTRACK = {
 			["Name"] = "Hillsbrad Peasant",
 			["Exp"] = 143,
 		},
-		[5756] = {
+		[2386] = {
 			["AchievCount"] = 0,
-			["Kills"] = 9,
-			["Name"] = "Deviate Venomwing",
-			["Exp"] = 47,
+			["Kills"] = 0,
+			["Name"] = "Southshore Guard",
 		},
-		[2448] = {
+		[2956] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Clerk Horrace Whitesteed",
-			["Exp"] = 27,
+			["Kills"] = 0,
+			["Name"] = "Adult Plainstrider",
 		},
 		[2274] = {
 			["AchievCount"] = 0,
@@ -569,5 +564,10 @@ KILLTRACK = {
 	["ACHIEV_THRESHOLD"] = 1000,
 	["DISABLE_DUNGEONS"] = false,
 	["DISABLE_RAIDS"] = false,
-	["TOOLTIP"] = true,
+	["BROKER"] = {
+		["MINIMAP"] = {
+			["hide"] = true,
+		},
+		["SHORT_TEXT"] = false,
+	},
 }
