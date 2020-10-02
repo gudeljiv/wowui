@@ -16,7 +16,11 @@ end
 cc = CreateFrame("Frame", "CustomContainer", UIParent)
 cc:SetWidth(110)
 cc:SetHeight(20)
-cc:SetPoint("BOTTOM", UIParent, "BOTTOM", 60, 300)
+if UnitLevel("player") == MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] then
+	cc:SetPoint("BOTTOM", UIParent, "BOTTOM", 0, 300)
+else
+	cc:SetPoint("BOTTOM", UIParent, "BOTTOM", 60, 300)
+end
 
 cc_combat = CreateFrame("Frame", "CustomContainer_Combat", cc)
 cc_combat:SetWidth(110)
