@@ -129,7 +129,7 @@ local function FixBindings()
 	if UnitName("player") == "Konac" then
 		SetBinding("ALT-X", "MULTIACTIONBAR2BUTTON10", 1)
 		SetBinding("SHIFT-X", "MULTIACTIONBAR2BUTTON11", 1)
-		SetBinding("x", "MULTIACTIONBAR2BUTTON12", 1)
+		SetBinding("X", "MULTIACTIONBAR2BUTTON12", 1)
 	end
 end
 
