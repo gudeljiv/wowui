@@ -50,14 +50,14 @@ EavesDropDB = {
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
-			["NUMLINES"] = 16,
-			["TEXTSIZE"] = 13,
 			["SCROLLBUTTON"] = true,
-			["HIDETAB"] = true,
-			["LINEHEIGHT"] = 16,
+			["TEXTSIZE"] = 13,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
+			["HIDETAB"] = true,
+			["LINEHEIGHT"] = 16,
+			["NUMLINES"] = 16,
 		},
 		["Pitchwise - Golemagg"] = {
 		},
@@ -75,11 +75,11 @@ EavesDropDB = {
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
+			["SCROLLBUTTON"] = true,
+			["TEXTSIZE"] = 13,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
-			["TEXTSIZE"] = 13,
-			["SCROLLBUTTON"] = true,
 			["NUMLINES"] = 16,
 			["LINEHEIGHT"] = 16,
 			["HIDETAB"] = true,
@@ -90,11 +90,11 @@ EavesDropDB = {
 		},
 		["Kosturko - Golemagg"] = {
 		},
-		["DRUID"] = {
+		["Spija - Genesis"] = {
 		},
 		["Golemagg"] = {
 		},
-		["Spija - Genesis"] = {
+		["DRUID"] = {
 		},
 		["Default"] = {
 			["BORDER"] = {
@@ -163,14 +163,14 @@ EavesDropDB = {
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
+			["NUMLINES"] = 16,
+			["TEXTSIZE"] = 13,
+			["SCROLLBUTTON"] = true,
+			["HIDETAB"] = true,
+			["LINEHEIGHT"] = 16,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
-			["TEXTSIZE"] = 13,
-			["NUMLINES"] = 16,
-			["HIDETAB"] = true,
-			["LINEHEIGHT"] = 16,
-			["SCROLLBUTTON"] = true,
 		},
 		["Ozrencic - Golemagg"] = {
 		},

@@ -1,14 +1,14 @@
 
 KILLTRACK = {
-	["TOOLTIP"] = true,
-	["COUNT_GROUP"] = false,
-	["SHOW_EXP"] = false,
 	["BROKER"] = {
 		["MINIMAP"] = {
 			["hide"] = true,
 		},
 		["SHORT_TEXT"] = false,
 	},
+	["PRINTKILLS"] = false,
+	["SHOW_EXP"] = false,
+	["TOOLTIP"] = true,
 	["PRINTNEW"] = false,
 	["MOBS"] = {
 		[2268] = {
@@ -33,7 +33,7 @@ KILLTRACK = {
 		},
 		[2269] = {
 			["AchievCount"] = 0,
-			["Kills"] = 26,
+			["Kills"] = 29,
 			["Name"] = "Hillsbrad Miner",
 		},
 		[2428] = {
@@ -78,7 +78,7 @@ KILLTRACK = {
 		},
 		[2305] = {
 			["AchievCount"] = 0,
-			["Kills"] = 15,
+			["Kills"] = 22,
 			["Name"] = "Foreman Bonds",
 		},
 		[3671] = {
@@ -153,7 +153,7 @@ KILLTRACK = {
 		},
 		[2503] = {
 			["AchievCount"] = 0,
-			["Kills"] = 10,
+			["Kills"] = 15,
 			["Name"] = "Hillsbrad Foreman",
 		},
 		[2408] = {
@@ -376,20 +376,20 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Deviate Coiler",
 		},
-		[6466] = {
+		[2360] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Gamon",
+			["Kills"] = 11,
+			["Name"] = "Hillsbrad Farmhand",
 		},
 		[2265] = {
 			["AchievCount"] = 0,
 			["Kills"] = 4,
 			["Name"] = "Hillsbrad Apprentice Blacksmith",
 		},
-		[2360] = {
+		[6466] = {
 			["AchievCount"] = 0,
-			["Kills"] = 11,
-			["Name"] = "Hillsbrad Farmhand",
+			["Kills"] = 0,
+			["Name"] = "Gamon",
 		},
 		[2248] = {
 			["AchievCount"] = 0,
@@ -428,7 +428,7 @@ KILLTRACK = {
 		},
 		[7360] = {
 			["AchievCount"] = 0,
-			["Kills"] = 6,
+			["Kills"] = 8,
 			["Name"] = "Dun Garok Soldier",
 		},
 		[2274] = {
@@ -456,5 +456,5 @@ KILLTRACK = {
 		["POSITION"] = {
 		},
 	},
-	["PRINTKILLS"] = false,
+	["COUNT_GROUP"] = false,
 }

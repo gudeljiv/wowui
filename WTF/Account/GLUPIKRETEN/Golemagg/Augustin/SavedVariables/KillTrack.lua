@@ -15,7 +15,7 @@ KILLTRACK_CHAR = {
 		},
 		[2269] = {
 			["Name"] = "Hillsbrad Miner",
-			["Kills"] = 421,
+			["Kills"] = 656,
 		},
 		[2428] = {
 			["Name"] = "Jailor Marlgen",
@@ -23,7 +23,7 @@ KILLTRACK_CHAR = {
 		},
 		[2270] = {
 			["Name"] = "Hillsbrad Sentry",
-			["Kills"] = 9,
+			["Kills"] = 10,
 		},
 		[3255] = {
 			["Name"] = "Sunscale Screecher",
@@ -51,7 +51,7 @@ KILLTRACK_CHAR = {
 		},
 		[2305] = {
 			["Name"] = "Foreman Bonds",
-			["Kills"] = 9,
+			["Kills"] = 12,
 		},
 		[3671] = {
 			["Name"] = "Lady Anacondra",
@@ -119,7 +119,7 @@ KILLTRACK_CHAR = {
 		},
 		[2503] = {
 			["Name"] = "Hillsbrad Foreman",
-			["Kills"] = 127,
+			["Kills"] = 194,
 		},
 		[2408] = {
 			["Name"] = "Snapjaw",
@@ -173,9 +173,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Forest Moss Creeper",
 			["Kills"] = 8,
 		},
-		[2448] = {
-			["Name"] = "Clerk Horrace Whitesteed",
-			["Kills"] = 1,
+		[2349] = {
+			["Name"] = "Giant Moss Creeper",
+			["Kills"] = 25,
 		},
 		[2351] = {
 			["Name"] = "Gray Bear",
@@ -189,9 +189,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Dalaran Mage",
 			["Kills"] = 0,
 		},
-		[2349] = {
-			["Name"] = "Giant Moss Creeper",
-			["Kills"] = 25,
+		[620] = {
+			["Name"] = "Chicken",
+			["Kills"] = 11,
 		},
 		[5053] = {
 			["Name"] = "Deviate Crocolisk",
@@ -201,13 +201,13 @@ KILLTRACK_CHAR = {
 			["Name"] = "Starving Mountain Lion",
 			["Kills"] = 33,
 		},
-		[620] = {
-			["Name"] = "Chicken",
-			["Kills"] = 11,
-		},
 		[2956] = {
 			["Name"] = "Adult Plainstrider",
 			["Kills"] = 0,
+		},
+		[2448] = {
+			["Name"] = "Clerk Horrace Whitesteed",
+			["Kills"] = 1,
 		},
 		[3242] = {
 			["Name"] = "Zhevra Runner",
@@ -229,9 +229,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Vicious Gray Bear",
 			["Kills"] = 30,
 		},
-		[2386] = {
-			["Name"] = "Southshore Guard",
-			["Kills"] = 0,
+		[5756] = {
+			["Name"] = "Deviate Venomwing",
+			["Kills"] = 9,
 		},
 		[2274] = {
 			["Name"] = "Enraged Stanley",
@@ -239,7 +239,7 @@ KILLTRACK_CHAR = {
 		},
 		[2450] = {
 			["Name"] = "Miner Hackett",
-			["Kills"] = 17,
+			["Kills"] = 24,
 		},
 		[2260] = {
 			["Name"] = "Syndicate Rogue",
@@ -365,9 +365,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Dun Garok Soldier",
 			["Kills"] = 4,
 		},
-		[5756] = {
-			["Name"] = "Deviate Venomwing",
-			["Kills"] = 9,
+		[2386] = {
+			["Name"] = "Southshore Guard",
+			["Kills"] = 0,
 		},
 		[2371] = {
 			["Name"] = "Daggerspine Siren",

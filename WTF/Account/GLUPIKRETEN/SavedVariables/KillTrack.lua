@@ -1,14 +1,14 @@
 
 KILLTRACK = {
-	["TOOLTIP"] = true,
-	["COUNT_GROUP"] = true,
-	["SHOW_EXP"] = false,
 	["BROKER"] = {
 		["MINIMAP"] = {
 			["hide"] = true,
 		},
 		["SHORT_TEXT"] = false,
 	},
+	["PRINTKILLS"] = false,
+	["SHOW_EXP"] = false,
+	["TOOLTIP"] = true,
 	["PRINTNEW"] = false,
 	["MOBS"] = {
 		[2268] = {
@@ -30,9 +30,9 @@ KILLTRACK = {
 		},
 		[2269] = {
 			["AchievCount"] = 0,
-			["Kills"] = 421,
+			["Kills"] = 656,
 			["Name"] = "Hillsbrad Miner",
-			["Exp"] = 45,
+			["Exp"] = 133,
 		},
 		[2428] = {
 			["AchievCount"] = 0,
@@ -42,9 +42,9 @@ KILLTRACK = {
 		},
 		[2270] = {
 			["AchievCount"] = 0,
-			["Kills"] = 9,
+			["Kills"] = 10,
 			["Name"] = "Hillsbrad Sentry",
-			["Exp"] = 155,
+			["Exp"] = 162,
 		},
 		[3255] = {
 			["AchievCount"] = 0,
@@ -189,7 +189,7 @@ KILLTRACK = {
 		},
 		[2503] = {
 			["AchievCount"] = 0,
-			["Kills"] = 127,
+			["Kills"] = 194,
 			["Name"] = "Hillsbrad Foreman",
 			["Exp"] = 146,
 		},
@@ -268,7 +268,7 @@ KILLTRACK = {
 		},
 		[2305] = {
 			["AchievCount"] = 0,
-			["Kills"] = 9,
+			["Kills"] = 12,
 			["Name"] = "Foreman Bonds",
 			["Exp"] = 204,
 		},
@@ -330,16 +330,16 @@ KILLTRACK = {
 			["Name"] = "Starving Mountain Lion",
 			["Exp"] = 42,
 		},
+		[2956] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Adult Plainstrider",
+		},
 		[2448] = {
 			["AchievCount"] = 0,
 			["Kills"] = 1,
 			["Name"] = "Clerk Horrace Whitesteed",
 			["Exp"] = 27,
-		},
-		[2956] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Adult Plainstrider",
 		},
 		[3242] = {
 			["AchievCount"] = 0,
@@ -370,10 +370,22 @@ KILLTRACK = {
 			["Name"] = "Vicious Gray Bear",
 			["Exp"] = 18,
 		},
-		[2386] = {
+		[5756] = {
+			["AchievCount"] = 0,
+			["Kills"] = 9,
+			["Name"] = "Deviate Venomwing",
+			["Exp"] = 47,
+		},
+		[1867] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Southshore Guard",
+			["Name"] = "Dalaran Apprentice",
+		},
+		[2450] = {
+			["AchievCount"] = 0,
+			["Kills"] = 24,
+			["Name"] = "Miner Hackett",
+			["Exp"] = 179,
 		},
 		[2387] = {
 			["AchievCount"] = 0,
@@ -381,32 +393,22 @@ KILLTRACK = {
 			["Name"] = "Hillsbrad Councilman",
 			["Exp"] = 54,
 		},
-		[2450] = {
-			["AchievCount"] = 0,
-			["Kills"] = 17,
-			["Name"] = "Miner Hackett",
-			["Exp"] = 179,
-		},
-		[1867] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Dalaran Apprentice",
-		},
 		[2260] = {
 			["AchievCount"] = 0,
 			["Kills"] = 33,
 			["Name"] = "Syndicate Rogue",
 			["Exp"] = 26,
 		},
-		[2959] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Prairie Stalker",
-		},
 		[2578] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Young Mesa Buzzard",
+		},
+		[2451] = {
+			["AchievCount"] = 0,
+			["Kills"] = 4,
+			["Name"] = "Farmer Kalaba",
+			["Exp"] = 170,
 		},
 		[2356] = {
 			["AchievCount"] = 0,
@@ -426,11 +428,10 @@ KILLTRACK = {
 			["Name"] = "Deviate Lasher",
 			["Exp"] = 8,
 		},
-		[5761] = {
+		[2960] = {
 			["AchievCount"] = 0,
-			["Kills"] = 15,
-			["Name"] = "Deviate Shambler",
-			["Exp"] = 37,
+			["Kills"] = 0,
+			["Name"] = "Prairie Wolf Alpha",
 		},
 		[2540] = {
 			["AchievCount"] = 0,
@@ -515,16 +516,16 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Rat",
 		},
-		[2960] = {
+		[5761] = {
+			["AchievCount"] = 0,
+			["Kills"] = 15,
+			["Name"] = "Deviate Shambler",
+			["Exp"] = 37,
+		},
+		[2959] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Prairie Wolf Alpha",
-		},
-		[2451] = {
-			["AchievCount"] = 0,
-			["Kills"] = 4,
-			["Name"] = "Farmer Kalaba",
-			["Exp"] = 170,
+			["Name"] = "Prairie Stalker",
 		},
 		[2266] = {
 			["AchievCount"] = 0,
@@ -537,11 +538,10 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Giant Plains Creeper",
 		},
-		[5756] = {
+		[2386] = {
 			["AchievCount"] = 0,
-			["Kills"] = 9,
-			["Name"] = "Deviate Venomwing",
-			["Exp"] = 47,
+			["Kills"] = 0,
+			["Name"] = "Southshore Guard",
 		},
 		[3632] = {
 			["AchievCount"] = 0,
@@ -587,5 +587,5 @@ KILLTRACK = {
 		["POSITION"] = {
 		},
 	},
-	["PRINTKILLS"] = false,
+	["COUNT_GROUP"] = true,
 }

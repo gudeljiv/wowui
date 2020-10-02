@@ -19,7 +19,7 @@ KILLTRACK_CHAR = {
 		},
 		[2269] = {
 			["Name"] = "Hillsbrad Miner",
-			["Kills"] = 19,
+			["Kills"] = 27,
 		},
 		[2428] = {
 			["Name"] = "Jailor Marlgen",
@@ -55,7 +55,7 @@ KILLTRACK_CHAR = {
 		},
 		[2305] = {
 			["Name"] = "Foreman Bonds",
-			["Kills"] = 14,
+			["Kills"] = 15,
 		},
 		[3671] = {
 			["Name"] = "Lady Anacondra",
@@ -115,7 +115,7 @@ KILLTRACK_CHAR = {
 		},
 		[2503] = {
 			["Name"] = "Hillsbrad Foreman",
-			["Kills"] = 9,
+			["Kills"] = 10,
 		},
 		[2408] = {
 			["Name"] = "Snapjaw",
@@ -285,21 +285,21 @@ KILLTRACK_CHAR = {
 			["Name"] = "Cave Yeti",
 			["Kills"] = 42,
 		},
-		[2360] = {
-			["Name"] = "Hillsbrad Farmhand",
-			["Kills"] = 11,
-		},
 		[3630] = {
 			["Name"] = "Deviate Coiler",
+			["Kills"] = 0,
+		},
+		[6466] = {
+			["Name"] = "Gamon",
 			["Kills"] = 0,
 		},
 		[2265] = {
 			["Name"] = "Hillsbrad Apprentice Blacksmith",
 			["Kills"] = 4,
 		},
-		[6466] = {
-			["Name"] = "Gamon",
-			["Kills"] = 0,
+		[2360] = {
+			["Name"] = "Hillsbrad Farmhand",
+			["Kills"] = 11,
 		},
 		[2449] = {
 			["Name"] = "Citizen Wilkes",

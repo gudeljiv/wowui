@@ -19,7 +19,7 @@ KILLTRACK_CHAR = {
 		},
 		[2269] = {
 			["Name"] = "Hillsbrad Miner",
-			["Kills"] = 26,
+			["Kills"] = 29,
 		},
 		[2428] = {
 			["Name"] = "Jailor Marlgen",
@@ -55,7 +55,7 @@ KILLTRACK_CHAR = {
 		},
 		[2305] = {
 			["Name"] = "Foreman Bonds",
-			["Kills"] = 15,
+			["Kills"] = 22,
 		},
 		[3671] = {
 			["Name"] = "Lady Anacondra",
@@ -115,7 +115,7 @@ KILLTRACK_CHAR = {
 		},
 		[2503] = {
 			["Name"] = "Hillsbrad Foreman",
-			["Kills"] = 10,
+			["Kills"] = 15,
 		},
 		[2408] = {
 			["Name"] = "Snapjaw",
@@ -285,20 +285,20 @@ KILLTRACK_CHAR = {
 			["Name"] = "Citizen Wilkes",
 			["Kills"] = 2,
 		},
-		[6466] = {
-			["Name"] = "Gamon",
-			["Kills"] = 0,
-		},
 		[2360] = {
 			["Name"] = "Hillsbrad Farmhand",
 			["Kills"] = 11,
+		},
+		[3630] = {
+			["Name"] = "Deviate Coiler",
+			["Kills"] = 0,
 		},
 		[2265] = {
 			["Name"] = "Hillsbrad Apprentice Blacksmith",
 			["Kills"] = 4,
 		},
-		[3630] = {
-			["Name"] = "Deviate Coiler",
+		[6466] = {
+			["Name"] = "Gamon",
 			["Kills"] = 0,
 		},
 		[2248] = {
@@ -331,7 +331,7 @@ KILLTRACK_CHAR = {
 		},
 		[7360] = {
 			["Name"] = "Dun Garok Soldier",
-			["Kills"] = 6,
+			["Kills"] = 8,
 		},
 		[5756] = {
 			["Name"] = "Deviate Venomwing",
