@@ -5,25 +5,25 @@ GMMONEY = {
 			["GOLD"] = 4047891,
 			["CLASS"] = "WARRIOR",
 		},
-		["Junac"] = {
-			["GOLD"] = 91,
-			["CLASS"] = "DRUID",
+		["Slanac"] = {
+			["GOLD"] = 177715,
+			["CLASS"] = "SHAMAN",
 		},
 		["Konac"] = {
-			["GOLD"] = 8700507,
+			["GOLD"] = 8703773,
 			["CLASS"] = "PRIEST",
 		},
 		["Mohikanac"] = {
 			["GOLD"] = 1154148,
 			["CLASS"] = "HUNTER",
 		},
-		["Slanac"] = {
-			["GOLD"] = 177715,
-			["CLASS"] = "SHAMAN",
+		["Junac"] = {
+			["GOLD"] = 91,
+			["CLASS"] = "DRUID",
 		},
 	},
 }
 GMMONEYSET = {
-	["FULLDISP"] = true,
 	["TEXTMODE"] = true,
+	["FULLDISP"] = true,
 }

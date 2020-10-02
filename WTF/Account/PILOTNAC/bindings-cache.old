@@ -101,3 +101,4 @@ bind CTRL-SHIFT-B NONE
 bind CTRL-L NONE
 bind ALT-D NONE
 bind SHIFT-X MULTIACTIONBAR3BUTTON9
+bind ALT-Q CLICK MyBindingLootHelper:LeftButton

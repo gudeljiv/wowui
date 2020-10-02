@@ -174,15 +174,17 @@ local function SetChat()
 			ChatFrame8
 		}
 	) do
-		if (v:GetName() == "ChatFrame7" or v:GetName() == "ChatFrame8") then
-			v:SetWidth((chatWidth / 2) - 4)
-		else
-			v:SetWidth(chatWidth)
-		end
-
 		v.SetPoint = function()
 		end
-		_G[v:GetName() .. "Background"]:SetAlpha(0.6)
+
+		if (v:GetName() == "ChatFrame7" or v:GetName() == "ChatFrame8") then
+			v:SetWidth((chatWidth / 2) - 4)
+			_G[v:GetName() .. "Background"]:SetAlpha(0.3)
+		else
+			v:SetWidth(chatWidth)
+			_G[v:GetName() .. "Background"]:SetAlpha(0.6)
+		end
+
 		_G[v:GetName() .. "Background"].SetAlpha = function()
 		end
 
