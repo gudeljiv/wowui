@@ -1,14 +1,14 @@
 
 KILLTRACK = {
+	["TOOLTIP"] = true,
+	["COUNT_GROUP"] = false,
+	["SHOW_EXP"] = false,
 	["BROKER"] = {
 		["MINIMAP"] = {
 			["hide"] = true,
 		},
 		["SHORT_TEXT"] = false,
 	},
-	["PRINTKILLS"] = false,
-	["SHOW_EXP"] = false,
-	["TOOLTIP"] = true,
 	["PRINTNEW"] = false,
 	["MOBS"] = {
 		[2268] = {
@@ -40,6 +40,11 @@ KILLTRACK = {
 			["AchievCount"] = 0,
 			["Kills"] = 2,
 			["Name"] = "Jailor Marlgen",
+		},
+		[2587] = {
+			["AchievCount"] = 0,
+			["Kills"] = 1,
+			["Name"] = "Syndicate Pathstalker",
 		},
 		[2270] = {
 			["AchievCount"] = 0,
@@ -121,6 +126,11 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Skum",
 		},
+		[2563] = {
+			["AchievCount"] = 0,
+			["Kills"] = 1,
+			["Name"] = "Plains Creeper",
+		},
 		[2373] = {
 			["AchievCount"] = 0,
 			["Kills"] = 4,
@@ -130,6 +140,11 @@ KILLTRACK = {
 			["AchievCount"] = 0,
 			["Kills"] = 4,
 			["Name"] = "Mountain Lion",
+		},
+		[2565] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Giant Plains Creeper",
 		},
 		[13816] = {
 			["AchievCount"] = 0,
@@ -206,15 +221,40 @@ KILLTRACK = {
 			["Kills"] = 21,
 			["Name"] = "Giant Moss Creeper",
 		},
+		[4480] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Kenata Dabyrie",
+		},
 		[5048] = {
 			["AchievCount"] = 0,
 			["Kills"] = 7,
 			["Name"] = "Deviate Adder",
 		},
+		[2560] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Highland Thrasher",
+		},
 		[2350] = {
 			["AchievCount"] = 0,
 			["Kills"] = 4,
 			["Name"] = "Forest Moss Creeper",
+		},
+		[3631] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Deviate Stinglash",
+		},
+		[3630] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Deviate Coiler",
+		},
+		[4479] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Fardel Dabyrie",
 		},
 		[2351] = {
 			["AchievCount"] = 0,
@@ -226,6 +266,16 @@ KILLTRACK = {
 			["Kills"] = 1,
 			["Name"] = "Kresh",
 		},
+		[2559] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Highland Strider",
+		},
+		[4481] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Marcel Dabyrie",
+		},
 		[5053] = {
 			["AchievCount"] = 0,
 			["Kills"] = 5,
@@ -235,6 +285,11 @@ KILLTRACK = {
 			["AchievCount"] = 0,
 			["Kills"] = 32,
 			["Name"] = "Starving Mountain Lion",
+		},
+		[2589] = {
+			["AchievCount"] = 0,
+			["Kills"] = 1,
+			["Name"] = "Syndicate Mercenary",
 		},
 		[2448] = {
 			["AchievCount"] = 0,
@@ -270,6 +325,11 @@ KILLTRACK = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Southshore Guard",
+		},
+		[2586] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Syndicate Highwayman",
 		},
 		[2450] = {
 			["AchievCount"] = 0,
@@ -351,10 +411,10 @@ KILLTRACK = {
 			["Kills"] = 1,
 			["Name"] = "Farmer Getz",
 		},
-		[3631] = {
+		[2581] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Deviate Stinglash",
+			["Name"] = "Dabyrie Militia",
 		},
 		[2449] = {
 			["AchievCount"] = 0,
@@ -371,25 +431,25 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Savannah Huntress",
 		},
-		[3630] = {
+		[2582] = {
+			["AchievCount"] = 0,
+			["Kills"] = 3,
+			["Name"] = "Dabyrie Laborer",
+		},
+		[6466] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Deviate Coiler",
-		},
-		[2360] = {
-			["AchievCount"] = 0,
-			["Kills"] = 11,
-			["Name"] = "Hillsbrad Farmhand",
+			["Name"] = "Gamon",
 		},
 		[2265] = {
 			["AchievCount"] = 0,
 			["Kills"] = 4,
 			["Name"] = "Hillsbrad Apprentice Blacksmith",
 		},
-		[6466] = {
+		[2360] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Gamon",
+			["Kills"] = 11,
+			["Name"] = "Hillsbrad Farmhand",
 		},
 		[2248] = {
 			["AchievCount"] = 0,
@@ -456,5 +516,5 @@ KILLTRACK = {
 		["POSITION"] = {
 		},
 	},
-	["COUNT_GROUP"] = false,
+	["PRINTKILLS"] = false,
 }

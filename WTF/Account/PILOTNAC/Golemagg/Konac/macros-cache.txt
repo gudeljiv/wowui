@@ -7,17 +7,19 @@ VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 /cast Shadow Word: Pain
 /w augustin !f
 END
-VER 3 0000000001000001 "AUG RENEW" "136032"
+VER 3 0000000001000001 "AR" "INV_MISC_QUESTIONMARK"
+#showtooltip
 /follow augustin
 /target augustin
 /cast Renew(Rank 6)
 END
-VER 3 0000000001000002 "AUG SHIELD" "136032"
+VER 3 0000000001000002 "BUFF" "INV_MISC_QUESTIONMARK"
+#showtooltip
 /follow augustin
 /target augustin
-/cast Power Word: Shield(Rank 2)
+/castsequence Power Word: Fortitude(Rank 4), Divine Spirit(Rank 2)
 END
-VER 3 0000000001000003 "SELF RENEW" "136032"
-/follow vermin
+VER 3 0000000001000003 "SR" "INV_MISC_QUESTIONMARK"
+#showtooltip
 /cast [@Konac] Renew
 END

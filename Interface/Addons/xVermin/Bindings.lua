@@ -125,6 +125,12 @@ local function FixBindings()
 	SetBinding("CTRL-F12", "NONE", 1)
 	SetBinding("CTRL-SHIFT-B", "NONE", 1)
 	SetBinding("CTRL-L", "NONE", 1)
+
+	if UnitName("player") == "Konac" then
+		SetBinding("ALT-X", "MULTIACTIONBAR2BUTTON10", 1)
+		SetBinding("SHIFT-X", "MULTIACTIONBAR2BUTTON11", 1)
+		SetBinding("x", "MULTIACTIONBAR2BUTTON12", 1)
+	end
 end
 
 local f = CreateFrame("Frame")

@@ -12,11 +12,11 @@ GMMONEY = {
 			["CLASS"] = "HUNTER",
 		},
 		["Augustin"] = {
-			["GOLD"] = 1012037,
+			["GOLD"] = 1146268,
 			["CLASS"] = "MAGE",
 		},
 		["Mxyz"] = {
-			["GOLD"] = 369954,
+			["GOLD"] = 459355,
 			["CLASS"] = "PRIEST",
 		},
 		["Jaroslav"] = {
