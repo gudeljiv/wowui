@@ -40,7 +40,12 @@ function addon:SetTargetCastbarPosition(castbar, parentFrame)
 	--     end
 	-- end
 
-	castbar:SetPoint("BOTTOM", CustomContainer_Combat, "TOP", 0, 10)
+	if UnitLevel("player") == MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] then
+		castbar:SetPoint("BOTTOM", CustomContainer_Combat, "TOP", 0, 20)
+	else
+		castbar:SetPoint("BOTTOM", CustomContainer_Combat, "TOP", -60, 20)
+	end
+
 	castbar:CreateBeautyBorder(2)
 end
 
@@ -120,10 +125,7 @@ function addon:SetLSMBorders(castbar, cast, db)
 	-- TODO: should be a better way to handle this.
 	-- Certain borders with transparent textures requires frame level 1 to show correctly.
 	-- Meanwhile non-transparent textures requires the frame level to be higher than the castbar frame level
-	if
-		db.castBorder == "Interface\\CHARACTERFRAME\\UI-Party-Border" or
-			db.castBorder == "Interface\\Tooltips\\ChatBubble-Backdrop"
-	 then
+	if db.castBorder == "Interface\\CHARACTERFRAME\\UI-Party-Border" or db.castBorder == "Interface\\Tooltips\\ChatBubble-Backdrop" then
 		castbar.BorderFrame:SetFrameLevel(1)
 	else
 		castbar.BorderFrame:SetFrameLevel(castbar:GetFrameLevel() + 1)

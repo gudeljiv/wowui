@@ -8,7 +8,7 @@ VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 /w augustin !f
 END
 VER 3 0000000001000001 "AR" "INV_MISC_QUESTIONMARK"
-#showtooltip
+#showtooltip Renew
 /follow augustin
 /target augustin
 /cast Renew(Rank 6)
@@ -20,6 +20,6 @@ VER 3 0000000001000002 "BUFF" "INV_MISC_QUESTIONMARK"
 /castsequence Power Word: Fortitude(Rank 4), Divine Spirit(Rank 2)
 END
 VER 3 0000000001000003 "SR" "INV_MISC_QUESTIONMARK"
-#showtooltip
+#showtooltip Renew
 /cast [@Konac] Renew
 END

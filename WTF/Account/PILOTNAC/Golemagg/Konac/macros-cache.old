@@ -8,18 +8,18 @@ VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
 /run TotalXPText.Text:SetPoint("CENTER", TotalXPText, "CENTER", 0, -10)
 END
 VER 3 0000000001000001 "AR" "INV_MISC_QUESTIONMARK"
-#showtooltip
+#showtooltip Renew
 /follow augustin
 /target augustin
 /cast Renew(Rank 6)
 END
-VER 3 0000000001000002 "AUG SHIELD" "136032"
+VER 3 0000000001000002 "BUFF" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /follow augustin
 /target augustin
-/cast Renew(Rank 6)
+/castsequence Power Word: Fortitude(Rank 4), Divine Spirit(Rank 2)
 END
-VER 3 0000000001000003 "SELF RENEW" "136032"
-/follow vermin
+VER 3 0000000001000003 "SR" "INV_MISC_QUESTIONMARK"
+#showtooltip Renew
 /cast [@Konac] Renew
 END

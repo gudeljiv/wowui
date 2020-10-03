@@ -56,8 +56,8 @@ EavesDropStatsDB = {
 							["amount"] = 488,
 						},
 						[2] = {
-							["time"] = "|cffffffff10/01/20 10:03:11|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffSmite|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4445-0-42-2503-00007635E0:Hillsbrad Foreman|hHillsbrad Foreman|h |cffffffff289|r |cffffffffHoly|r. (428 Overkill) (Critical) ",
-							["amount"] = 717,
+							["time"] = "|cffffffff10/03/20 09:51:40|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffSmite|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4445-0-31-2582-0000782D74:Dabyrie Laborer|hDabyrie Laborer|h |cffffffff347|r |cffffffffHoly|r. (372 Overkill) (Critical) ",
+							["amount"] = 719,
 						},
 						["icon"] = 135924,
 					},

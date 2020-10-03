@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 2785,
+	["session"] = 2795,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -2459,5 +2459,29 @@ BugGrabberDB = {
 			["session"] = 2782,
 			["counter"] = 12,
 		}, -- [311]
+		{
+			["message"] = "...r\\LibTSM\\Service\\AuctionScanClasses\\ResultSubRow.lua:239: assertion failed!",
+			["time"] = "2020/10/03 18:21:13",
+			["locals"] = "(*temporary) = false\n",
+			["stack"] = "[C]: in function `assert'\n...r\\LibTSM\\Service\\AuctionScanClasses\\ResultSubRow.lua:239: in function <...r\\LibTSM\\Service\\AuctionScanClasses\\ResultSubRow.lua:237>\n(tail call): ?\n...dOns\\TradeSkillMaster\\Core\\UI\\AuctionUI\\Shopping.lua:2325: in function <...dOns\\TradeSkillMaster\\Core\\UI\\AuctionUI\\Shopping.lua:2320>\n(tail call): ?\n(tail call): ?\n(tail call): ?\n(tail call): ?\n...\\TradeSkillMaster\\LibTSM\\Util\\FSMClasses\\Machine.lua:178: in function <...\\TradeSkillMaster\\LibTSM\\Util\\FSMClasses\\Machine.lua:160>\n(tail call): ?\n...\\TradeSkillMaster\\LibTSM\\Util\\FSMClasses\\Machine.lua:136: in function <...\\TradeSkillMaster\\LibTSM\\Util\\FSMClasses\\Machine.lua:114>\n(tail call): ?\n...dOns\\TradeSkillMaster\\Core\\UI\\AuctionUI\\Shopping.lua:2601: in function `callback'\n...erface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Event.lua:85: in function `ProcessEvent'\n...erface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Event.lua:101: in function <...erface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Event.lua:93>",
+			["session"] = 2794,
+			["counter"] = 1,
+		}, -- [312]
+		{
+			["message"] = "...erface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Event.lua:97: assertion failed!",
+			["time"] = "2020/10/03 18:21:16",
+			["locals"] = "(*temporary) = false\n",
+			["stack"] = "[C]: in function `assert'\n...erface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Event.lua:97: in function <...erface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Event.lua:93>",
+			["session"] = 2794,
+			["counter"] = 44,
+		}, -- [313]
+		{
+			["message"] = "...ce\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\TempTable.lua:41: Could not acquire temp table",
+			["time"] = "2020/10/03 18:21:20",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"Could not acquire temp table\"\n",
+			["stack"] = "[C]: in function `assert'\n...ce\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\TempTable.lua:41: in function `Acquire'\n...\\AddOns\\TradeSkillMaster\\LibTSM\\Service\\Settings-Settings.lua:721: in function `CharacterByAccountFactionrealmIterator'\n...killMaster\\LibTSM\\Service\\SyncClasses\\Connection.lua:394: in function `GetTargetCharacter'\n...killMaster\\LibTSM\\Service\\SyncClasses\\Connection.lua:255: in function `pendingCallback'\n...erface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Delay.lua:171: in function <...erface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Delay.lua:136>",
+			["session"] = 2794,
+			["counter"] = 129,
+		}, -- [314]
 	},
 }

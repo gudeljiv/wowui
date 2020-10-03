@@ -25,6 +25,10 @@ KILLTRACK_CHAR = {
 			["Name"] = "Jailor Marlgen",
 			["Kills"] = 2,
 		},
+		[2587] = {
+			["Name"] = "Syndicate Pathstalker",
+			["Kills"] = 1,
+		},
 		[2270] = {
 			["Name"] = "Hillsbrad Sentry",
 			["Kills"] = 3,
@@ -89,6 +93,10 @@ KILLTRACK_CHAR = {
 			["Name"] = "Skum",
 			["Kills"] = 0,
 		},
+		[2563] = {
+			["Name"] = "Plains Creeper",
+			["Kills"] = 2,
+		},
 		[2373] = {
 			["Name"] = "Mudsnout Shaman",
 			["Kills"] = 4,
@@ -96,6 +104,10 @@ KILLTRACK_CHAR = {
 		[2406] = {
 			["Name"] = "Mountain Lion",
 			["Kills"] = 4,
+		},
+		[2565] = {
+			["Name"] = "Giant Plains Creeper",
+			["Kills"] = 0,
 		},
 		[13816] = {
 			["Name"] = "Prospector Stonehewer",
@@ -137,6 +149,10 @@ KILLTRACK_CHAR = {
 			["Name"] = "Cow",
 			["Kills"] = 0,
 		},
+		[2559] = {
+			["Name"] = "Highland Strider",
+			["Kills"] = 0,
+		},
 		[3300] = {
 			["Name"] = "Adder",
 			["Kills"] = 0,
@@ -149,6 +165,14 @@ KILLTRACK_CHAR = {
 			["Name"] = "Elder Moss Creeper",
 			["Kills"] = 1,
 		},
+		[2589] = {
+			["Name"] = "Syndicate Mercenary",
+			["Kills"] = 1,
+		},
+		[2560] = {
+			["Name"] = "Highland Thrasher",
+			["Kills"] = 0,
+		},
 		[8886] = {
 			["Name"] = "Deviate Python",
 			["Kills"] = 14,
@@ -157,13 +181,33 @@ KILLTRACK_CHAR = {
 			["Name"] = "Giant Moss Creeper",
 			["Kills"] = 21,
 		},
+		[2403] = {
+			["Name"] = "Farmer Getz",
+			["Kills"] = 1,
+		},
 		[5048] = {
 			["Name"] = "Deviate Adder",
 			["Kills"] = 7,
 		},
+		[1548] = {
+			["Name"] = "Cursed Darkhound",
+			["Kills"] = 0,
+		},
 		[2350] = {
 			["Name"] = "Forest Moss Creeper",
 			["Kills"] = 4,
+		},
+		[2586] = {
+			["Name"] = "Syndicate Highwayman",
+			["Kills"] = 0,
+		},
+		[4480] = {
+			["Name"] = "Kenata Dabyrie",
+			["Kills"] = 0,
+		},
+		[4479] = {
+			["Name"] = "Fardel Dabyrie",
+			["Kills"] = 0,
 		},
 		[2351] = {
 			["Name"] = "Gray Bear",
@@ -173,6 +217,14 @@ KILLTRACK_CHAR = {
 			["Name"] = "Kresh",
 			["Kills"] = 1,
 		},
+		[2620] = {
+			["Name"] = "Prairie Dog",
+			["Kills"] = 0,
+		},
+		[4481] = {
+			["Name"] = "Marcel Dabyrie",
+			["Kills"] = 0,
+		},
 		[5053] = {
 			["Name"] = "Deviate Crocolisk",
 			["Kills"] = 5,
@@ -180,6 +232,10 @@ KILLTRACK_CHAR = {
 		[2384] = {
 			["Name"] = "Starving Mountain Lion",
 			["Kills"] = 32,
+		},
+		[3415] = {
+			["Name"] = "Savannah Huntress",
+			["Kills"] = 0,
 		},
 		[2448] = {
 			["Name"] = "Clerk Horrace Whitesteed",
@@ -205,9 +261,13 @@ KILLTRACK_CHAR = {
 			["Name"] = "Vicious Gray Bear",
 			["Kills"] = 29,
 		},
-		[2386] = {
-			["Name"] = "Southshore Guard",
-			["Kills"] = 0,
+		[5756] = {
+			["Name"] = "Deviate Venomwing",
+			["Kills"] = 9,
+		},
+		[2387] = {
+			["Name"] = "Hillsbrad Councilman",
+			["Kills"] = 8,
 		},
 		[2450] = {
 			["Name"] = "Miner Hackett",
@@ -217,9 +277,13 @@ KILLTRACK_CHAR = {
 			["Name"] = "Greater Plainstrider",
 			["Kills"] = 0,
 		},
-		[2387] = {
-			["Name"] = "Hillsbrad Councilman",
-			["Kills"] = 8,
+		[2260] = {
+			["Name"] = "Syndicate Rogue",
+			["Kills"] = 31,
+		},
+		[1789] = {
+			["Name"] = "Skeletal Acolyte",
+			["Kills"] = 0,
 		},
 		[2451] = {
 			["Name"] = "Farmer Kalaba",
@@ -233,61 +297,61 @@ KILLTRACK_CHAR = {
 			["Name"] = "Syndicate Watchman",
 			["Kills"] = 95,
 		},
-		[2260] = {
-			["Name"] = "Syndicate Rogue",
-			["Kills"] = 31,
+		[1125] = {
+			["Name"] = "Boar",
+			["Kills"] = 0,
 		},
 		[5761] = {
 			["Name"] = "Deviate Shambler",
 			["Kills"] = 15,
 		},
-		[3273] = {
-			["Name"] = "Kolkar Stormer",
+		[2738] = {
+			["Name"] = "Stromgarde Cavalryman",
 			["Kills"] = 0,
-		},
-		[5756] = {
-			["Name"] = "Deviate Venomwing",
-			["Kills"] = 9,
-		},
-		[2274] = {
-			["Name"] = "Enraged Stanley",
-			["Kills"] = 1,
-		},
-		[3242] = {
-			["Name"] = "Zhevra Runner",
-			["Kills"] = 0,
-		},
-		[2404] = {
-			["Name"] = "Blacksmith Verringtan",
-			["Kills"] = 1,
-		},
-		[2620] = {
-			["Name"] = "Prairie Dog",
-			["Kills"] = 0,
-		},
-		[3415] = {
-			["Name"] = "Savannah Huntress",
-			["Kills"] = 0,
-		},
-		[2403] = {
-			["Name"] = "Farmer Getz",
-			["Kills"] = 1,
-		},
-		[1125] = {
-			["Name"] = "Boar",
-			["Kills"] = 0,
-		},
-		[2264] = {
-			["Name"] = "Hillsbrad Tailor",
-			["Kills"] = 2,
 		},
 		[2248] = {
 			["Name"] = "Cave Yeti",
 			["Kills"] = 42,
 		},
+		[2914] = {
+			["Name"] = "Snake",
+			["Kills"] = 0,
+		},
 		[6466] = {
 			["Name"] = "Gamon",
 			["Kills"] = 0,
+		},
+		[2612] = {
+			["Name"] = "Lieutenant Valorcall",
+			["Kills"] = 0,
+		},
+		[3630] = {
+			["Name"] = "Deviate Coiler",
+			["Kills"] = 0,
+		},
+		[2240] = {
+			["Name"] = "Syndicate Footpad",
+			["Kills"] = 0,
+		},
+		[2581] = {
+			["Name"] = "Dabyrie Militia",
+			["Kills"] = 10,
+		},
+		[2449] = {
+			["Name"] = "Citizen Wilkes",
+			["Kills"] = 2,
+		},
+		[2264] = {
+			["Name"] = "Hillsbrad Tailor",
+			["Kills"] = 2,
+		},
+		[2274] = {
+			["Name"] = "Enraged Stanley",
+			["Kills"] = 1,
+		},
+		[2582] = {
+			["Name"] = "Dabyrie Laborer",
+			["Kills"] = 4,
 		},
 		[2360] = {
 			["Name"] = "Hillsbrad Farmhand",
@@ -297,13 +361,13 @@ KILLTRACK_CHAR = {
 			["Name"] = "Hillsbrad Apprentice Blacksmith",
 			["Kills"] = 4,
 		},
-		[3630] = {
-			["Name"] = "Deviate Coiler",
-			["Kills"] = 0,
+		[2404] = {
+			["Name"] = "Blacksmith Verringtan",
+			["Kills"] = 1,
 		},
-		[2449] = {
-			["Name"] = "Citizen Wilkes",
-			["Kills"] = 2,
+		[3242] = {
+			["Name"] = "Zhevra Runner",
+			["Kills"] = 0,
 		},
 		[3631] = {
 			["Name"] = "Deviate Stinglash",
@@ -313,12 +377,12 @@ KILLTRACK_CHAR = {
 			["Name"] = "Hillsbrad Farmer",
 			["Kills"] = 19,
 		},
-		[2240] = {
-			["Name"] = "Syndicate Footpad",
+		[3273] = {
+			["Name"] = "Kolkar Stormer",
 			["Kills"] = 0,
 		},
-		[2914] = {
-			["Name"] = "Snake",
+		[2386] = {
+			["Name"] = "Southshore Guard",
 			["Kills"] = 0,
 		},
 		[3632] = {

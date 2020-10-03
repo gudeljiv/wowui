@@ -12,7 +12,7 @@ local _, xVermin = ...
 --]]
 local defaultFoodMacro = [[#showtooltip
 /use [nocombat]<food>
-/castsequence [combat]<hPotions>
+/castsequence [combat] reset=combat <hPotions>
 ]]
 local defaultPetFoodMacro = [[#showtooltip <petfood>
 /cast feed pet
@@ -23,7 +23,7 @@ local defaultPetFoodMacro = [[#showtooltip <petfood>
 --]]
 local defaultDrinkMacro = [[#showtooltip
 /use [nocombat]<drink>
-/castsequence [combat]<mPotions>
+/castsequence [combat] reset=combat <mPotions>
 ]]
 
 local function CreateOrUpdateMacro(macroName, text)
@@ -310,9 +310,9 @@ function NeedsFoodBadly:BuildSequence(stone, potions)
 		table.insert(sequence, "item:" .. tostring(stone[1].id))
 	end
 	for _, potion in pairs(potions) do
-		for _ = 1, GetItemCount(potion.id) do
-			table.insert(sequence, "item:" .. tostring(potion.id))
-		end
+		-- for _ = 1, GetItemCount(potion.id) do
+		table.insert(sequence, "item:" .. tostring(potion.id))
+		-- end
 	end
 	sequenceStr = table.concat(sequence, ",", 1, math.min(table.getn(sequence), 14))
 	return sequenceStr

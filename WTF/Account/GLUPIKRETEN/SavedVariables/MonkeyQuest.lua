@@ -55,37 +55,37 @@ MonkeyQuestConfig = {
 			["The Venture Co. - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Druid - true"] = {
+			["Wildmane Cleansing - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Journey to the Crossroads - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Wildmane Totem - false"] = {
+			["Druid - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Wildmane Cleansing - false"] = {
+			["Wildmane Totem - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Supervisor Fizsprocket - false"] = {
 				["m_bChecked"] = true,
 			},
+			["Thunderhorn Cleansing - false"] = {
+				["m_bChecked"] = true,
+			},
 			["Heeding the Call - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Rite of Wisdom - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Ravaged Caravan - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Hunter's Way - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Dwarven Digging - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Thunderhorn Cleansing - false"] = {
+			["The Hunter's Way - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Ravaged Caravan - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Rite of Wisdom - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Mulgore - true"] = {
@@ -299,27 +299,6 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Augustin"] = {
 		["m_aQuestList"] = {
-			["Crystal in the Mountains - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Hillsbrad Foothills - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Elixir of Agony - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Arathi Highlands - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Battle of Hillsbrad - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Helcular's Revenge - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Humbert's Sword - false"] = {
-				["m_bChecked"] = true,
-			},
 		},
 	},
 	["Genesis|Pitchwise"] = {
@@ -823,6 +802,25 @@ MonkeyQuestConfig = {
 		["m_bAlwaysHeaders"] = false,
 		["m_bGrowUp"] = false,
 	},
+	["Golemagg|Mxzq"] = {
+		["m_aQuestList"] = {
+			["The Princess Trapped - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Real Threat - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Call to Arms - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Sigil of Strom - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Arathi Highlands - true"] = {
+				["m_bChecked"] = true,
+			},
+		},
+	},
 	["Global"] = {
 		["m_bItemsEnabled"] = true,
 		["m_iFont"] = 2,
@@ -841,8 +839,8 @@ MonkeyQuestConfig = {
 		["m_bShowZoneHighlight"] = true,
 		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
 		["m_bAlwaysHeaders"] = false,
-		["m_bDisplay"] = true,
-		["m_bMinimized"] = true,
+		["m_bDisplay"] = false,
+		["m_bMinimized"] = false,
 		["m_strInitialObjectiveColour"] = "|cFFD82619",
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
@@ -875,25 +873,6 @@ MonkeyQuestConfig = {
 		["m_bHideTitle"] = false,
 		["m_bHideTitleButtons"] = false,
 		["m_bGrowUp"] = false,
-	},
-	["Golemagg|Mxzq"] = {
-		["m_aQuestList"] = {
-			["The Princess Trapped - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Real Threat - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Call to Arms - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Sigil of Strom - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Arathi Highlands - true"] = {
-				["m_bChecked"] = true,
-			},
-		},
 	},
 	["Genesis|Malinac"] = {
 		["m_iFont"] = 0,
@@ -980,19 +959,19 @@ MonkeyQuestConfig = {
 		["m_bShowZoneHighlight"] = true,
 		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
 		["m_aQuestList"] = {
-			["Encroachment - false"] = {
+			["Vanquish the Betrayers - false"] = {
 				["m_bChecked"] = true,
 			},
 			["From The Wreckage.... - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Break a Few Eggs - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Vanquish the Betrayers - false"] = {
-				["m_bChecked"] = true,
-			},
 			["Durotar - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Encroachment - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Break a Few Eggs - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -1045,6 +1024,10 @@ MonkeyQuestConfig = {
 			},
 		},
 	},
+	["Golemagg|Dmitar"] = {
+		["m_aQuestList"] = {
+		},
+	},
 	["Golemagg|Greenwise"] = {
 		["m_aQuestList"] = {
 			["Miner's Fortune - false"] = {
@@ -1092,10 +1075,6 @@ MonkeyQuestConfig = {
 			["Tribes at War - false"] = {
 				["m_bChecked"] = true,
 			},
-		},
-	},
-	["Golemagg|Dmitar"] = {
-		["m_aQuestList"] = {
 		},
 	},
 	["Golemagg|Pitchwise"] = {

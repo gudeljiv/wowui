@@ -66,7 +66,7 @@ ChocolateBarDB = {
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
 			},
-			["moveFrames"] = false,
+			["forceColor"] = false,
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -77,7 +77,7 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
-			["fixedStrata"] = true,
+			["moveFrames"] = false,
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -350,17 +350,17 @@ ChocolateBarDB = {
 					["align"] = "right",
 				},
 			},
-			["desaturated"] = false,
-			["gap"] = 0,
-			["forceColor"] = false,
+			["fontName"] = "Friz Quadrata TT",
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
-			["fontName"] = "Friz Quadrata TT",
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["fixedStrata"] = true,
+			["desaturated"] = false,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["gap"] = 0,
 			["locked"] = false,
 			["textColor"] = {
 				["a"] = 1,
@@ -379,7 +379,7 @@ CB_PlayedTime = {
 		["total"] = 21359,
 	},
 	["Slanac-"] = {
-		["total"] = 146952,
+		["total"] = 147102,
 	},
 	["Elohssa-"] = {
 		["total"] = 3552,
@@ -397,7 +397,7 @@ CB_PlayedTime = {
 		["total"] = 149513,
 	},
 	["Konac-"] = {
-		["total"] = 5947365,
+		["total"] = 5968641,
 	},
 	["Judawise-"] = {
 		["total"] = 437,

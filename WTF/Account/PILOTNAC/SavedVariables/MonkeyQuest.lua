@@ -918,37 +918,37 @@ MonkeyQuestConfig = {
 			["The Runed Scroll - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Zul'Gurub - true"] = {
-				["m_bChecked"] = true,
-			},
 			["Blackrock Spire - true"] = {
 				["m_bChecked"] = true,
 			},
 			["High Chief Winterfall - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Seal of Ascension - false"] = {
-				["m_bChecked"] = true,
-			},
 			["The Human, Ras Frostwhisper - false"] = {
 				["m_bChecked"] = true,
 			},
-			["The Videre Elixir - false"] = {
+			["Seal of Ascension - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Zul'Gurub - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Western Plaguelands - true"] = {
 				["m_bChecked"] = true,
 			},
+			["The Videre Elixir - false"] = {
+				["m_bChecked"] = true,
+			},
 			["A Matter of Time - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Alterac Valley - true"] = {
+			["The Barrens - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Brotherly Love - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Un'Goro Crater - true"] = {
+			["Alterac Valley - true"] = {
 				["m_bChecked"] = true,
 			},
 			["When Smokey Sings, I Get Violent - false"] = {
@@ -957,7 +957,7 @@ MonkeyQuestConfig = {
 			["Proving Grounds - false"] = {
 				["m_bChecked"] = true,
 			},
-			["The Barrens - true"] = {
+			["Un'Goro Crater - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Blackrock Depths - true"] = {
@@ -986,8 +986,8 @@ MonkeyQuestConfig = {
 		["m_bShowZoneHighlight"] = true,
 		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
 		["m_bAlwaysHeaders"] = false,
-		["m_bDisplay"] = true,
-		["m_bMinimized"] = true,
+		["m_bDisplay"] = false,
+		["m_bMinimized"] = false,
 		["m_strInitialObjectiveColour"] = "|cFFD82619",
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
