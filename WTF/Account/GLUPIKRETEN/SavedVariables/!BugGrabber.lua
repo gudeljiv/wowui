@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 2860,
+	["session"] = 2874,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -2627,5 +2627,13 @@ BugGrabberDB = {
 			["time"] = "2020/07/24 16:00:06",
 			["counter"] = 133,
 		}, -- [332]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:155: attempt to index global 'KillCountFrame' (a nil value)",
+			["time"] = "2020/10/04 14:34:19",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'KillCountFrame' (a nil value)\"\nDisplayData = <function> defined @Interface\\AddOns\\xVermin\\Frames/KillCount.lua:129\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:155: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:153>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:172: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:165>",
+			["session"] = 2865,
+			["counter"] = 2,
+		}, -- [333]
 	},
 }

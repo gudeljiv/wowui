@@ -1,0 +1,4 @@
+
+KillCountFrame = {
+	["show"] = true,
+}

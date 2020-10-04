@@ -17,12 +17,12 @@ end
 kcc = CreateFrame("Frame", "KillCountContainer", UIParent)
 kcc:SetWidth(100)
 kcc:SetHeight(200)
-kcc:SetPoint("TOPRIGHT", MonkeyQuestFrame, "BOTTOMRIGHT", 0, -5)
+kcc:SetPoint("TOPLEFT", UIParent, "TOPLEFT", 5, -350)
 
 kc = CreateFrame("Frame", "KillCount", kcc)
 kc:SetWidth(100)
 kc:SetHeight(200)
-kc:SetPoint("TOPRIGHT", MonkeyQuestFrame, "BOTTOMRIGHT", 0, -5)
+kc:SetPoint("TOPLEFT", UIParent, "TOPLEFT", 5, -350)
 kc:SetFrameStrata("LOW")
 kc:SetBackdrop(
 	{
@@ -142,12 +142,33 @@ local function DisplayData()
 	local w = kclistnames.text:GetStringWidth() + kclistvalues.text:GetStringWidth() + 20
 	local h = kctitle.text:GetStringHeight() + kctotal.text:GetStringHeight() + kclistnames.text:GetStringHeight() + 75
 	kc:SetSize(math.max(w, 150), math.max(h, 85))
+
+	if KillCountFrame and KillCountFrame.show then
+		kc:Show()
+	else
+		kc:Hide()
+	end
 end
 
+local function OnAddonLoaded()
+	if not KillCountFrame or KillCountFrame == nil then
+		KillCountFrame = {show = true}
+	end
+
+	DisplayData()
+end
+
+kc:RegisterEvent("ADDON_LOADED")
 kc:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 kc:SetScript(
 	"OnEvent",
-	function(self, event, isInitialLogin, isReloadingUi)
+	function(self, event, ...)
+		local args = {...}
+		if event == "ADDON_LOADED" then
+			if args[1] == "xVermin" then
+				OnAddonLoaded()
+			end
+		end
 		local _, eventType, _, sourceGUID, sourceName, _, _, destGUID, destName, _, _, spellID = CombatLogGetCurrentEventInfo()
 		if (eventType == "PARTY_KILL" and sourceName == UnitName("player")) then
 			SendToTable(destName)
@@ -167,3 +188,9 @@ kcreset:SetScript(
 )
 
 DisplayData()
+
+SLASH_kc_settings1 = "/kc"
+SlashCmdList["kc_settings"] = function(msg)
+	KillCountFrame.show = not KillCountFrame.show
+	DisplayData()
+end

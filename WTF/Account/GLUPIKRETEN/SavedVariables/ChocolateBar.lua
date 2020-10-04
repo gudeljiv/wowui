@@ -40,6 +40,11 @@ ChocolateBarDB = {
 	["addonVersion"] = "@project-version@",
 	["profiles"] = {
 		["Default"] = {
+			["locked"] = false,
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
+			["forceColor"] = false,
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -60,21 +65,7 @@ ChocolateBarDB = {
 					["width"] = 147,
 				},
 			},
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
 			["moveFrames"] = false,
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["b"] = 0,
-					["g"] = 0,
-					["r"] = 0,
-				},
-				["textureName"] = "None",
-			},
-			["fixedStrata"] = true,
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -357,17 +348,26 @@ ChocolateBarDB = {
 				},
 			},
 			["desaturated"] = false,
-			["gap"] = 0,
-			["forceColor"] = false,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
-			["fontName"] = "Friz Quadrata TT",
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["fixedStrata"] = true,
+			["gap"] = 0,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["locked"] = false,
+			["fontName"] = "Friz Quadrata TT",
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["b"] = 0,
+					["g"] = 0,
+					["r"] = 0,
+				},
+				["textureName"] = "None",
+			},
 			["textColor"] = {
 				["a"] = 1,
 				["r"] = 1,
@@ -391,7 +391,7 @@ CB_PlayedTime = {
 		["total"] = 1719,
 	},
 	["Mxyz-"] = {
-		["total"] = 129146,
+		["total"] = 130391,
 	},
 	["Antun-"] = {
 		["total"] = 52,
@@ -402,8 +402,8 @@ CB_PlayedTime = {
 	["Judawise-"] = {
 		["total"] = 437,
 	},
-	["Dmitar-"] = {
-		["total"] = 517,
+	["Whatevs-"] = {
+		["total"] = 213,
 	},
 	["Mxym-"] = {
 		["total"] = 4765,
@@ -414,14 +414,14 @@ CB_PlayedTime = {
 	["Koloman-"] = {
 		["total"] = 129,
 	},
-	["Vermins-"] = {
-		["total"] = 3014,
-	},
-	["Whatevs-"] = {
-		["total"] = 213,
-	},
 	["Mxyzptlk-"] = {
 		["total"] = 8398,
+	},
+	["Dmitar-"] = {
+		["total"] = 517,
+	},
+	["Vermins-"] = {
+		["total"] = 3014,
 	},
 	["Dotwise-"] = {
 		["total"] = 3924,
