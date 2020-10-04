@@ -1,4 +1,0 @@
-
-KillCountFrame = {
-	["show"] = true,
-}

@@ -50,6 +50,15 @@ EavesDropStatsDB = {
 						},
 						["icon"] = 136224,
 					},
+					["Devouring Plague"] = {
+						[-2] = {
+							["time"] = "|cffffffff10/04/20 08:26:13|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_PERIODIC_DAMAGE|h|cffffffffDevouring Plague|r|h |Haction:SPELL_PERIODIC_DAMAGE|hdamaged|h |Hunit:Player-4465-01E86FCD:Tulamorka|hTulamorka|h |cffffffff118|r |cffffffffShadow|r. ",
+							["amount"] = 118,
+						},
+						[2] = {
+						},
+						["icon"] = 136123,
+					},
 					["Smite"] = {
 						[-2] = {
 							["time"] = "|cffffffff09/27/20 11:56:27|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffSmite|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4447-43-10046-5761-0002F05D11:Deviate Shambler|hDeviate Shambler|h |cffffffff201|r |cffffffffHoly|r. (287 Overkill) ",
@@ -140,6 +149,15 @@ EavesDropStatsDB = {
 							["amount"] = 723,
 						},
 						["icon"] = 135922,
+					},
+					["Devouring Plague"] = {
+						[-2] = {
+							["time"] = "|cffffffff10/04/20 08:26:13|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_HEAL|h|cffffffffDevouring Plague|r|h |Haction:SPELL_HEAL|hhealed|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffffffff118|r |cffffffffShadow|r. ",
+							["amount"] = 118,
+						},
+						[2] = {
+						},
+						["icon"] = 136123,
 					},
 					["Healing Potion"] = {
 						[-2] = {

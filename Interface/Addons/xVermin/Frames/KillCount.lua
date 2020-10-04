@@ -1,7 +1,6 @@
 local _, xVermin = ...
 
-local killcountlist, killcounttotal, names, counts, total
-local tempKillLog = {}
+local killcountlist, killcounttotal, names, counts, total, percentages
 local sortedKillLog = {}
 
 local _, class, _ = UnitClass("player")
@@ -14,13 +13,13 @@ if class == "SHAMAN" then
 	}
 end
 
-local KillCountFrame = {}
-KillCountFrame.defaults = {
+local defaults = {}
+defaults = {
 	show = true,
-	position = {pos1 = "TOPLEFT", anchor = UIParent, pos2 = "TOPLEFT", x = 5, y = -350}
+	position = {from = "TOPLEFT", anchor = "UIParent", to = "TOPLEFT", x = 5, y = -350}
 }
 
-kc = CreateFrame("Frame", "KillCountCounter", UIParent)
+kc = CreateFrame("Frame", "KillCountFrame", UIParent)
 kc:SetWidth(100)
 kc:SetHeight(200)
 kc:SetPoint("TOPLEFT", UIParent, "TOPLEFT", 5, -350)
@@ -57,7 +56,12 @@ kc:SetScript(
 			self:StopMovingOrSizing()
 			self.isMoving = false
 		end
-		KillCountFrame.position = self:GetPoint()
+		local point, relativeTo, relativePoint, xOfs, yOfs = self:GetPoint()
+		xKillCount.position.from = point
+		xKillCount.position.anchor = relativeTo and relativeTo:GetName() or nil
+		xKillCount.position.to = relativePoint
+		xKillCount.position.x = xOfs
+		xKillCount.position.y = yOfs
 	end
 )
 kc:SetScript(
@@ -96,7 +100,7 @@ kclistnames:SetWidth(1)
 kclistnames:SetHeight(1)
 kclistnames.text = kclistnames:CreateFontString(nil, "ARTWORK")
 kclistnames.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
-kclistnames.text:SetPoint("TOPLEFT", kc, "TOPLEFT", 5, -50)
+kclistnames.text:SetPoint("TOPLEFT", kc, "TOPLEFT", 10, -50)
 kclistnames.text:SetText("")
 kclistnames.text:SetJustifyH("LEFT")
 kclistnames.text:SetTextColor(1, 1, 1, 1)
@@ -107,14 +111,26 @@ kclistvalues:SetWidth(1)
 kclistvalues:SetHeight(1)
 kclistvalues.text = kclistvalues:CreateFontString(nil, "ARTWORK")
 kclistvalues.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
-kclistvalues.text:SetPoint("TOPRIGHT", kc, "TOPRIGHT", -5, -50)
+kclistvalues.text:SetPoint("TOPRIGHT", kc, "TOPRIGHT", -10, -50)
 kclistvalues.text:SetText("")
 kclistvalues.text:SetJustifyH("RIGHT")
 kclistvalues.text:SetTextColor(1, 1, 1, 1)
 
+local kclistpercentages = CreateFrame("Frame", "KillCountListValues", kc)
+kclistpercentages:SetPoint("RIGHT", kc, "RIGHT", 0, 0)
+kclistpercentages:SetWidth(1)
+kclistpercentages:SetHeight(1)
+kclistpercentages.text = kclistpercentages:CreateFontString(nil, "ARTWORK")
+kclistpercentages.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
+kclistpercentages.text:SetPoint("TOPRIGHT", kc, "TOPRIGHT", -10, -50)
+kclistpercentages.text:SetText("")
+kclistpercentages.text:SetJustifyH("RIGHT")
+kclistpercentages.text:SetTextColor(1, 1, 1, 1)
+kclistpercentages:Hide()
+
 local kcreset = CreateFrame("Frame", "KillCountReset", kc)
 kcreset:SetPoint("BOTTOM", kc, "BOTTOM", 0, 10)
-kcreset:SetFrameStrata("HIGH")
+kcreset:SetFrameStrata("MEDIUM")
 kcreset.text = kcreset:CreateFontString(nil, "ARTWORK")
 kcreset.text:SetFont(xVermin.Config.font.arial, 14, "NONE")
 kcreset.text:SetPoint("BOTTOM", kc, "BOTTOM", 0, 10)
@@ -123,18 +139,33 @@ kcreset.text:SetTextColor(0.2, 0.8, 0.2, 1)
 kcreset:SetWidth(kcreset.text:GetStringWidth())
 kcreset:SetHeight(kcreset.text:GetStringHeight())
 
+kc:SetScript(
+	"OnEnter",
+	function()
+		kclistvalues:Hide()
+		kclistpercentages:Show()
+	end
+)
+kc:SetScript(
+	"OnLeave",
+	function()
+		kclistvalues:Show()
+		kclistpercentages:Hide()
+	end
+)
+
 local function SendToTable(name)
-	if (tempKillLog[name] ~= nil) then
-		tempKillLog[name].count = tempKillLog[name].count + 1
+	if (killLog[name] ~= nil) then
+		killLog[name].count = killLog[name].count + 1
 	else
-		tempKillLog[name] = {
+		killLog[name] = {
 			name = name,
 			count = 1
 		}
 	end
 
 	sortedKillLog = {}
-	for k, v in pairs(tempKillLog) do
+	for k, v in pairs(killLog) do
 		table.insert(
 			sortedKillLog,
 			{
@@ -155,44 +186,45 @@ end
 local function DisplayData()
 	names = ""
 	counts = ""
+	percentages = ""
 	total = 0
+
+	for key, value in pairs(sortedKillLog) do
+		total = total + value.count
+	end
 
 	for key, value in pairs(sortedKillLog) do
 		names = names .. value.name .. "\n"
 		counts = counts .. value.count .. "\n"
-		total = total + value.count
+		percentages = percentages .. xVermin:Round((value.count / total * 100), 1) .. "%" .. "\n"
 	end
 
 	kctotal.text:SetText("Total: " .. total)
 	kclistnames.text:SetText(names)
 	kclistvalues.text:SetText(counts)
+	kclistpercentages.text:SetText(percentages)
 
-	-- kc:SetSize((kclistnames.text:GetStringWidth() + kclistvalues.text:GetStringWidth()), kclistnames.text:GetStringHeight())
-	-- print("W: " .. kclistnames.text:GetStringWidth() + kclistvalues.text:GetStringWidth())
-	-- print("H: " .. kctitle.text:GetStringHeight() + kctotal.text:GetStringHeight() + kclistnames.text:GetStringHeight())
-
-	local w = kclistnames.text:GetStringWidth() + kclistvalues.text:GetStringWidth() + 20
+	local w = kclistnames.text:GetStringWidth() + kclistpercentages.text:GetStringWidth() + 20
 	local h = kctitle.text:GetStringHeight() + kctotal.text:GetStringHeight() + kclistnames.text:GetStringHeight() + 75
 	kc:SetSize(math.max(w, 150), math.max(h, 85))
 
-	print(KillCountFrame.position)
-
-	if KillCountFrame and KillCountFrame.show then
+	if xKillCount and xKillCount.show then
+		kc:ClearAllPoints()
+		kc:SetPoint(xKillCount.position.from, (xKillCount.position.anchor and xKillCount.position.anchor or nil), xKillCount.position.to, xKillCount.position.x, xKillCount.position.y)
 		kc:Show()
-		kc:SetPoint(KillCountFrame.position.pos1, KillCountFrame.position.anchor:GetName(), KillCountFrame.position.pos2, KillCountFrame.position.x, KillCountFrame.position.y)
 	else
 		kc:Hide()
 	end
 end
 
 local function OnAddonLoaded()
-	if not KillCountFrame or KillCountFrame == nil then
-		KillCountFrame = {}
-	else
-		for setting, value in pairs(KillCountFrame.defaults) do
-			if KillCountFrame[setting] == nil then
-				KillCountFrame[setting] = value
-			end
+	if not xKillCount or xKillCount == nil then
+		xKillCount = {}
+	end
+
+	for setting, value in pairs(defaults) do
+		if xKillCount[setting] == nil then
+			xKillCount[setting] = value
 		end
 	end
 
@@ -222,6 +254,7 @@ kcreset:SetScript(
 	"OnMouseDown",
 	function(self, button)
 		if button == "LeftButton" then
+			killLog = {}
 			sortedKillLog = {}
 			DisplayData()
 		end
@@ -230,8 +263,26 @@ kcreset:SetScript(
 
 DisplayData()
 
+local function Print()
+	ChatFrame1:AddMessage("\124cffFFFF00(show/hide)\124r Show/Hide KillCount window: " .. (xKillCount.show and "\124cff00FF00show\124r" or "\124cffFF0000show\124r") .. "/" .. (not xKillCount.show and "\124cff00FF00hide\124r" or "\124cffFF0000hide\124r"))
+	ChatFrame1:AddMessage("\124cffFFFF00(reset)\124r Reset KillCount window position")
+end
+
 SLASH_kc_settings1 = "/kc"
 SlashCmdList["kc_settings"] = function(msg)
-	KillCountFrame.show = not KillCountFrame.show
+	ChatFrame1Tab:Click()
+	if (msg == "reset") then
+		for setting, value in pairs(defaults) do
+			xKillCount[setting] = value
+		end
+	end
+	if (msg == "show") then
+		xKillCount.show = true
+	end
+	if (msg == "hide") then
+		xKillCount.show = false
+	end
+
+	Print()
 	DisplayData()
 end

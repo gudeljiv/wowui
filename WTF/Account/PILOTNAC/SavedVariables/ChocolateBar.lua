@@ -63,10 +63,6 @@ ChocolateBarDB = {
 					["barOffx"] = -88.3325424194336,
 				},
 			},
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["locked"] = false,
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -77,7 +73,14 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
-			["moveFrames"] = false,
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
+			["locked"] = false,
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+			},
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -350,18 +353,15 @@ ChocolateBarDB = {
 					["customLabel"] = "KT",
 				},
 			},
-			["desaturated"] = false,
 			["gap"] = 0,
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
-			},
 			["forceColor"] = false,
+			["fixedStrata"] = true,
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["fontName"] = "Friz Quadrata TT",
 			["textOffset"] = 2,
 			["height"] = 20,
-			["fixedStrata"] = true,
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["desaturated"] = false,
+			["moveFrames"] = false,
 			["textColor"] = {
 				["a"] = 1,
 				["b"] = 1,
@@ -408,8 +408,8 @@ CB_PlayedTime = {
 	["Augustin-"] = {
 		["total"] = 6295,
 	},
-	["Mohikanac-"] = {
-		["total"] = 167544,
+	["Mxym-"] = {
+		["total"] = 4765,
 	},
 	["Klhjakhsgdjh-"] = {
 		["total"] = 53,
@@ -417,11 +417,11 @@ CB_PlayedTime = {
 	["Junac-"] = {
 		["total"] = 2534,
 	},
-	["Dmitar-"] = {
-		["total"] = 55,
-	},
 	["Whatevs-"] = {
 		["total"] = 213,
+	},
+	["Dmitar-"] = {
+		["total"] = 55,
 	},
 	["Mxyzptlk-"] = {
 		["total"] = 8367,
@@ -429,31 +429,31 @@ CB_PlayedTime = {
 	["Ozrencic-"] = {
 		["total"] = 853,
 	},
-	["Mxzq-"] = {
-		["total"] = 248345,
-	},
-	["Paydo-"] = {
-		["total"] = 18945,
-	},
-	["Kosturko-"] = {
-		["total"] = 1457,
+	["Verminz-"] = {
+		["total"] = 311368,
 	},
 	["Kamenac-"] = {
 		["total"] = 1557891,
 	},
-	["Verminz-"] = {
-		["total"] = 311368,
+	["Kosturko-"] = {
+		["total"] = 1457,
+	},
+	["Paydo-"] = {
+		["total"] = 18945,
+	},
+	["Mxzq-"] = {
+		["total"] = 248345,
 	},
 	["Grgur-"] = {
 		["total"] = 2,
 	},
-	["Mxym-"] = {
-		["total"] = 4765,
+	["Mohikanac-"] = {
+		["total"] = 167544,
 	},
 	["Dotwise-"] = {
 		["total"] = 3924,
 	},
 	["Konac-"] = {
-		["total"] = 5968696,
+		["total"] = 5977301,
 	},
 }

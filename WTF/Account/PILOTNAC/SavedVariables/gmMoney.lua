@@ -10,7 +10,7 @@ GMMONEY = {
 			["CLASS"] = "DRUID",
 		},
 		["Konac"] = {
-			["GOLD"] = 4658348,
+			["GOLD"] = 5836312,
 			["CLASS"] = "PRIEST",
 		},
 		["Mohikanac"] = {

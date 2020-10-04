@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 2884,
+	["session"] = 2926,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -2654,19 +2654,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [335]
 		{
-			["message"] = "(null)",
-			["session"] = 2877,
-			["time"] = "2020/07/24 16:00:06",
-			["counter"] = 139,
-		}, -- [336]
-		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:184: Usage: KillCountCounter:SetPoint(\"point\" [, region or nil] [, \"relativePoint\"] [, offsetX, offsetY])",
 			["time"] = "2020/10/04 16:37:54",
 			["locals"] = "(*temporary) = KillCountCounter {\n 0 = <userdata>\n beautyBorder = <table> {\n }\n beautyShadow = <table> {\n }\n}\n(*temporary) = <table> {\n 1 = \"TOPLEFT\"\n 2 = UIParent {\n }\n 3 = \"TOPLEFT\"\n 4 = 5\n 5 = -350\n}\n",
 			["stack"] = "[C]: in function `SetPoint'\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:184: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:159>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:201: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:190>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:212: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:208>",
 			["session"] = 2878,
 			["counter"] = 1,
-		}, -- [337]
+		}, -- [336]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:186: Usage: KillCountCounter:SetPoint(\"point\" [, region or nil] [, \"relativePoint\"] [, offsetX, offsetY])",
 			["time"] = "2020/10/04 16:38:37",
@@ -2674,7 +2668,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `SetPoint'\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:186: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:159>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:203: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:192>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:214: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:210>",
 			["session"] = 2880,
 			["counter"] = 2,
-		}, -- [338]
+		}, -- [337]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:197: bad argument #1 to 'unpack' (table expected, got boolean)",
 			["time"] = "2020/10/04 16:39:55",
@@ -2682,7 +2676,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `unpack'\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:197: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:192>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:215: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:211>",
 			["session"] = 2881,
 			["counter"] = 1,
-		}, -- [339]
+		}, -- [338]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:181: KillCountCounter:SetPoint(): Unknown region point",
 			["time"] = "2020/10/04 16:41:30",
@@ -2690,6 +2684,116 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `SetPoint'\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:181: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:154>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:198: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:187>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:209: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:205>",
 			["session"] = 2882,
 			["counter"] = 1,
+		}, -- [339]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:179: attempt to call method 'GetName' (a nil value)",
+			["time"] = "2020/10/04 17:06:39",
+			["locals"] = "w = 20\nh = 101.256413\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = KillCountCounter {\n 0 = <userdata>\n beautyBorder = <table> {\n }\n beautyShadow = <table> {\n }\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = <table> {\n variablesLoaded = true\n firstTimeLoaded = 1\n}\n(*temporary) = \"attempt to call method 'GetName' (a nil value)\"\nnames = \"\"\ncounts = \"\"\ntotal = 0\nsortedKillLog = <table> {\n}\nkctotal = KillCountTotal {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkclistnames = KillCountListNames {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkclistvalues = KillCountListValues {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkctitle = KillCountTitle {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:179: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:156>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:196: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:185>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:207: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:203>",
+			["session"] = 2893,
+			["counter"] = 4,
 		}, -- [340]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:175: attempt to index global 'KillCountFrame' (a nil value)",
+			["time"] = "2020/10/04 17:05:39",
+			["locals"] = "w = 20\nh = 101.256413\n(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = nil\n(*temporary) = 150\n(*temporary) = 101.256413\n(*temporary) = <userdata>\n(*temporary) = 85\n(*temporary) = 101.256413\n(*temporary) = \"attempt to index global 'KillCountFrame' (a nil value)\"\nnames = \"\"\ncounts = \"\"\ntotal = 0\nsortedKillLog = <table> {\n}\nkctotal = KillCountTotal {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkclistnames = KillCountListNames {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkclistvalues = KillCountListValues {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkctitle = KillCountTitle {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:175: in function `DisplayData'\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:228: in main chunk",
+			["session"] = 2894,
+			["counter"] = 6,
+		}, -- [341]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:179: attempt to index field 'anchor' (a nil value)",
+			["time"] = "2020/10/04 17:11:07",
+			["locals"] = "w = 20\nh = 101.256413\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = KillCountCounter {\n 0 = <userdata>\n beautyBorder = <table> {\n }\n beautyShadow = <table> {\n }\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = true\n(*temporary) = true\n(*temporary) = \"attempt to index field 'anchor' (a nil value)\"\nnames = \"\"\ncounts = \"\"\ntotal = 0\nsortedKillLog = <table> {\n}\nkctotal = KillCountTotal {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkclistnames = KillCountListNames {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkclistvalues = KillCountListValues {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkctitle = KillCountTitle {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:179: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:156>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:196: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:185>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:207: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:203>",
+			["session"] = 2894,
+			["counter"] = 1,
+		}, -- [342]
+		{
+			["message"] = "(null)",
+			["session"] = 2894,
+			["time"] = "2020/07/24 16:00:06",
+			["counter"] = 157,
+		}, -- [343]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:179: Usage: KillCountCounter:SetPoint(\"point\" [, region or nil] [, \"relativePoint\"] [, offsetX, offsetY])",
+			["time"] = "2020/10/04 17:05:39",
+			["locals"] = "(*temporary) = KillCountCounter {\n 0 = <userdata>\n beautyBorder = <table> {\n }\n beautyShadow = <table> {\n }\n}\n(*temporary) = nil\n(*temporary) = \"UIParent\"\n(*temporary) = nil\n(*temporary) = 5\n(*temporary) = -350\n",
+			["stack"] = "[C]: in function `SetPoint'\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:179: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:156>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:196: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:185>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:207: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:203>",
+			["session"] = 2895,
+			["counter"] = 2,
+		}, -- [344]
+		{
+			["message"] = "[string \"print(KillCountFrame:GetPoint())\"]:1: attempt to call method 'GetPoint' (a nil value)",
+			["time"] = "2020/10/04 17:15:48",
+			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = nil\n(*temporary) = <table> {\n show = true\n position = \"TOPLEFT\"\n}\n(*temporary) = \"attempt to call method 'GetPoint' (a nil value)\"\n",
+			["stack"] = "[string \"print(KillCountFrame:GetPoint())\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 2898,
+			["counter"] = 1,
+		}, -- [345]
+		{
+			["message"] = "[string \"print(pack(KillCountCounter:GetPoint()))\"]:1: attempt to call global 'pack' (a nil value)",
+			["time"] = "2020/10/04 17:16:22",
+			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = nil\n(*temporary) = \"TOPLEFT\"\n(*temporary) = nil\n(*temporary) = \"TOPLEFT\"\n(*temporary) = 121.000099\n(*temporary) = -203.000534\n(*temporary) = \"attempt to call global 'pack' (a nil value)\"\n",
+			["stack"] = "[string \"print(pack(KillCountCounter:GetPoint()))\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 2898,
+			["counter"] = 1,
+		}, -- [346]
+		{
+			["message"] = "[string \"print(unpack(KillCountCounter:GetPoint()))\"]:1: bad argument #1 to 'unpack' (table expected, got string)",
+			["time"] = "2020/10/04 17:16:30",
+			["locals"] = "(*temporary) = \"TOPLEFT\"\n(*temporary) = nil\n(*temporary) = \"TOPLEFT\"\n(*temporary) = 121.000099\n(*temporary) = -203.000534\n(*temporary) = \"table expected, got string\"\n",
+			["stack"] = "[C]: in function `unpack'\n[string \"print(unpack(KillCountCounter:GetPoint()))\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 2898,
+			["counter"] = 1,
+		}, -- [347]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:61: attempt to index field 'position' (a string value)",
+			["time"] = "2020/10/04 17:18:56",
+			["locals"] = "self = KillCountFrame {\n 0 = <userdata>\n isMoving = false\n beautyBorder = <table> {\n }\n beautyShadow = <table> {\n }\n}\nbutton = \"LeftButton\"\npoint = \"TOP\"\nrelativeTo = nil\nrelativePoint = \"TOP\"\nxOfs = -562.000122\nyOfs = -259.999908\n(*temporary) = \"TOPLEFT\"\n(*temporary) = -259.999908\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'position' (a string value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:61: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:55>",
+			["session"] = 2899,
+			["counter"] = 1,
+		}, -- [348]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:62: attempt to index local 'relativeTo' (a nil value)",
+			["time"] = "2020/10/04 17:20:45",
+			["locals"] = "self = KillCountFrame {\n 0 = <userdata>\n isMoving = false\n beautyBorder = <table> {\n }\n beautyShadow = <table> {\n }\n}\nbutton = \"LeftButton\"\npoint = \"TOP\"\nrelativeTo = nil\nrelativePoint = \"TOP\"\nxOfs = -443.000061\nyOfs = -172.000137\n(*temporary) = <table> {\n y = -350\n x = 5\n to = \"TOPLEFT\"\n from = \"TOP\"\n anchor = \"UIParent\"\n}\n(*temporary) = -172.000137\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'relativeTo' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:62: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:55>",
+			["session"] = 2902,
+			["counter"] = 2,
+		}, -- [349]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:239: unexpected symbol near ')'",
+			["time"] = "2020/10/04 17:27:25",
+			["locals"] = "",
+			["stack"] = "",
+			["session"] = 2908,
+			["counter"] = 4,
+		}, -- [350]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:80: attempt to index global 'kclistvalues' (a nil value)",
+			["time"] = "2020/10/04 18:17:40",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'kclistvalues' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:80: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:79>",
+			["session"] = 2919,
+			["counter"] = 2,
+		}, -- [351]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:87: attempt to index global 'kclistvalues' (a nil value)",
+			["time"] = "2020/10/04 18:17:40",
+			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'kclistvalues' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:87: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:86>",
+			["session"] = 2919,
+			["counter"] = 2,
+		}, -- [352]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:159: attempt to index global 'killLog' (a nil value)",
+			["time"] = "2020/10/04 19:56:16",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:159: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:158>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:248: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:239>",
+			["session"] = 2926,
+			["counter"] = 1,
+		}, -- [353]
 	},
 }
