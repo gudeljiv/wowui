@@ -1,6 +1,6 @@
 local _, xVermin = ...
 
-local mbk, bs, txp, override = false
+local mbk, bs, txp, kc, override = false
 
 local function PrintLog()
 	xVermin:LogBreak(true)
@@ -8,6 +8,7 @@ local function PrintLog()
 	ChatFrame6:AddMessage("\124cffFFFF00(mbk)\124r Mobs to kill: " .. (mbk and "\124cff00FF00true\124r" or "\124cffFF0000false\124r"))
 	ChatFrame6:AddMessage("\124cffFFFF00(bs)\124r Skin buffs: " .. (bs and "\124cff00FF00true\124r" or "\124cffFF0000false\124r"))
 	ChatFrame6:AddMessage("\124cffFFFF00(txp)\124r Total XP: " .. (txp and "\124cff00FF00true\124r" or "\124cffFF0000false\124r"))
+	ChatFrame6:AddMessage("\124cffFFFF00(kc)\124r Kill Count: " .. (kc and "\124cff00FF00true\124r" or "\124cffFF0000false\124r"))
 end
 
 function xVermin:Debug(msg)
@@ -23,6 +24,10 @@ function xVermin:Debug(msg)
 	if msg == "txp" then
 		txp = not txp
 		module = "txp"
+	end
+	if msg == "kc" then
+		kc = not kc
+		module = "kc"
 	end
 	PrintLog()
 end
@@ -41,6 +46,9 @@ function xVermin:Log(message, source)
 		ChatFrame6:AddMessage(message)
 	end
 	if source == "txp" and txp then
+		ChatFrame6:AddMessage(message)
+	end
+	if source == "kc" and kc then
 		ChatFrame6:AddMessage(message)
 	end
 end

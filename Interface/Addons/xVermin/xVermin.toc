@@ -13,6 +13,7 @@ Frames/DefaultFramesCustomScale.lua
 Frames/DefaultFramesDarker.lua
 Frames/GroopLootFrame.lua
 Frames/InspectFrame.lua
+Frames/KillCount.lua
 Frames/LootFrame.lua
 Frames/MailBoxFrame.lua
 Frames/MailBoxFrame.lua

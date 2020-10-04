@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 2794,
 	["lastSanitation"] = 3,
+	["session"] = 2859,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -165,8 +165,8 @@ BugGrabberDB = {
 		}, -- [20]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["time"] = "2020/07/26 13:26:58",
 			["session"] = 1336,
+			["time"] = "2020/07/26 13:26:58",
 			["counter"] = 2,
 		}, -- [21]
 		{
@@ -546,8 +546,8 @@ BugGrabberDB = {
 		}, -- [68]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["session"] = 1423,
 			["time"] = "2020/07/27 20:37:46",
+			["session"] = 1423,
 			["counter"] = 4,
 		}, -- [69]
 		{
@@ -805,8 +805,8 @@ BugGrabberDB = {
 		}, -- [101]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["session"] = 1605,
 			["time"] = "2020/08/02 10:06:15",
+			["session"] = 1605,
 			["counter"] = 3,
 		}, -- [102]
 		{
@@ -946,8 +946,8 @@ BugGrabberDB = {
 		}, -- [119]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
-			["time"] = "2020/08/02 20:13:03",
 			["session"] = 1654,
+			["time"] = "2020/08/02 20:13:03",
 			["counter"] = 3,
 		}, -- [120]
 		{
@@ -1420,8 +1420,8 @@ BugGrabberDB = {
 		}, -- [179]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Experience.lua",
-			["time"] = "2020/08/19 21:35:15",
 			["session"] = 1943,
+			["time"] = "2020/08/19 21:35:15",
 			["counter"] = 6,
 		}, -- [180]
 		{
@@ -2032,8 +2032,8 @@ BugGrabberDB = {
 		}, -- [256]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["time"] = "2020/08/13 21:31:07",
 			["session"] = 2448,
+			["time"] = "2020/08/13 21:31:07",
 			["counter"] = 9,
 		}, -- [257]
 		{
@@ -2221,19 +2221,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [280]
 		{
-			["message"] = "(null)",
-			["session"] = 2651,
-			["time"] = "2020/07/24 16:00:06",
-			["counter"] = 103,
-		}, -- [281]
-		{
 			["message"] = "Interface\\AddOns\\xVermin\\Experience/TotalXP.lua:85: unexpected symbol near ')'",
 			["time"] = "2020/09/26 13:22:53",
 			["locals"] = "",
 			["stack"] = "",
 			["session"] = 2662,
 			["counter"] = 4,
-		}, -- [282]
+		}, -- [281]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'SetCVar()'.",
 			["time"] = "2020/09/16 19:28:47",
@@ -2241,7 +2235,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetCVar'\nInterface\\AddOns\\xVermin\\Core.lua:20: in function <Interface\\AddOns\\xVermin\\Core.lua:16>",
 			["session"] = 2677,
 			["counter"] = 5,
-		}, -- [283]
+		}, -- [282]
 		{
 			["message"] = "...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:269: Wrong object type for function",
 			["time"] = "2020/09/28 15:58:54",
@@ -2249,7 +2243,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `CreateFrame'\n...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:269: in function `CreateBaseFrame'\n...ce\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:141: in function `Initialize'\n...rface\\AddOns\\Questie\\Modules\\QuestieEventHandler.lua:169: in function <...rface\\AddOns\\Questie\\Modules\\QuestieEventHandler.lua:166>",
 			["session"] = 2694,
 			["counter"] = 1,
-		}, -- [284]
+		}, -- [283]
 		{
 			["message"] = "Interface\\AddOns\\Questie\\Modules\\Tracker\\QuestieTracker.lua:269: unfinished string near '\"QuestieTracker, UIParent)'",
 			["time"] = "2020/09/28 15:59:24",
@@ -2257,7 +2251,7 @@ BugGrabberDB = {
 			["stack"] = "",
 			["session"] = 2695,
 			["counter"] = 4,
-		}, -- [285]
+		}, -- [284]
 		{
 			["message"] = "...erface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:477: attempt to call method 'Update' (a nil value)",
 			["time"] = "2020/09/28 15:59:28",
@@ -2265,7 +2259,7 @@ BugGrabberDB = {
 			["stack"] = "...erface\\AddOns\\Questie\\Modules\\Quest\\QuestieQuest.lua:477: in function `GetAllQuestIds'\n...rface\\AddOns\\Questie\\Modules\\QuestieEventHandler.lua:168: in function <...rface\\AddOns\\Questie\\Modules\\QuestieEventHandler.lua:166>",
 			["session"] = 2695,
 			["counter"] = 1,
-		}, -- [286]
+		}, -- [285]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Addons/Questie.lua:17: attempt to index global 'QuestieTracker' (a nil value)",
 			["time"] = "2020/09/28 16:04:02",
@@ -2273,7 +2267,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Addons/Questie.lua:17: in function <Interface\\AddOns\\xVermin\\Addons/Questie.lua:6>",
 			["session"] = 2699,
 			["counter"] = 1,
-		}, -- [287]
+		}, -- [286]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Chat-Chat.lua:33: bad argument #1 to 'gsub' (string expected, got boolean)",
 			["time"] = "2020/09/29 16:36:58",
@@ -2281,7 +2275,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `gsub'\nInterface\\AddOns\\xVermin\\Chat-Chat.lua:33: in function `AddMessage'\nInterface\\AddOns\\ClickToMove\\ClickToMove-1.1.0.lua:151: in function `print'\nInterface\\AddOns\\xVermin\\LootHelper.lua:21: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:20>",
 			["session"] = 2715,
 			["counter"] = 4,
-		}, -- [288]
+		}, -- [287]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:22: attempt to concatenate a boolean value",
 			["time"] = "2020/09/29 16:42:29",
@@ -2289,7 +2283,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:22: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:21>",
 			["session"] = 2719,
 			["counter"] = 13,
-		}, -- [289]
+		}, -- [288]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'SetBinding()'.",
 			["time"] = "2020/08/09 12:35:08",
@@ -2297,7 +2291,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetBinding'\nInterface\\AddOns\\xVermin\\Bindings.lua:2: in function <Interface\\AddOns\\xVermin\\Bindings.lua:1>\nInterface\\AddOns\\xVermin\\Bindings.lua:126: in function <Interface\\AddOns\\xVermin\\Bindings.lua:125>\n[C]: in function `LoadAddOn'\nInterface\\FrameXML\\UIParent.lua:353: in function `UIParentLoadAddOn'\nInterface\\FrameXML\\UIParent.lua:412: in function `TalentFrame_LoadUI'\nInterface\\FrameXML\\UIParent.lua:497: in function `ToggleTalentFrame'\n[string \"TOGGLETALENTS\"]:1: in function <[string \"TOGGLETALENTS\"]:1>",
 			["session"] = 2725,
 			["counter"] = 2,
-		}, -- [290]
+		}, -- [289]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:13: attempt to call method 'SetAlpha' (a nil value)",
 			["time"] = "2020/09/29 21:14:13",
@@ -2305,7 +2299,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:13: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:3>\nInterface\\AddOns\\xVermin\\LootHelper.lua:53: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:51>",
 			["session"] = 2732,
 			["counter"] = 1,
-		}, -- [291]
+		}, -- [290]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:25: attempt to call method 'SetAlpha' (a nil value)",
 			["time"] = "2020/09/29 21:14:18",
@@ -2313,7 +2307,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:25: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:3>\nInterface\\AddOns\\xVermin\\LootHelper.lua:53: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:51>",
 			["session"] = 2732,
 			["counter"] = 1,
-		}, -- [292]
+		}, -- [291]
 		{
 			["message"] = "...Ons\\Details\\Libs\\DF\\Details-Framework-Classic\\fw.lua:2657: D!Framework (DetailsOptionsWindow1CreateWindowButton:OnMouseUp()) error: Interface\\AddOns\\Details\\classes\\classe_damage.lua:2406: attempt to index local 'bars_show_data' (a nil value)\n====================\n...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:887: in function <...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:800>\n\n====================\n",
 			["time"] = "2020/09/30 12:17:09",
@@ -2321,7 +2315,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `error'\n...Ons\\Details\\Libs\\DF\\Details-Framework-Classic\\fw.lua:2657: in function `CoreDispatch'\n...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:887: in function <...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:800>",
 			["session"] = 2736,
 			["counter"] = 1,
-		}, -- [293]
+		}, -- [292]
 		{
 			["message"] = "...Ons\\Details\\Libs\\DF\\Details-Framework-Classic\\fw.lua:2657: D!Framework (DetailsSegmentButton4:OnMouseUp()) error: Interface\\AddOns\\Details\\gumps\\janela_principal.lua:7566: attempt to perform arithmetic on local 'buttons_spacement' (a nil value)\n====================\n...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:887: in function <...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:800>\n\n====================\n",
 			["time"] = "2020/09/30 12:18:08",
@@ -2329,7 +2323,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `error'\n...Ons\\Details\\Libs\\DF\\Details-Framework-Classic\\fw.lua:2657: in function `CoreDispatch'\n...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:887: in function <...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:800>",
 			["session"] = 2736,
 			["counter"] = 1,
-		}, -- [294]
+		}, -- [293]
 		{
 			["message"] = "Interface\\AddOns\\Details\\gumps\\janela_principal.lua:4625: bad argument #1 to 'unpack' (table expected, got nil)",
 			["time"] = "2020/09/30 12:17:42",
@@ -2337,7 +2331,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `unpack'\nInterface\\AddOns\\Details\\gumps\\janela_principal.lua:4625: in function `InstanceRefreshRows'\nInterface\\AddOns\\Details\\gumps\\janela_principal.lua:4134: in function `CriaNovaBarra'\nInterface\\AddOns\\Details\\core\\windows.lua:727: in function `ReajustaGump'\nInterface\\AddOns\\Details\\gumps\\janela_principal.lua:1126: in function <Interface\\AddOns\\Details\\gumps\\janela_principal.lua:1124>",
 			["session"] = 2736,
 			["counter"] = 14,
-		}, -- [295]
+		}, -- [294]
 		{
 			["message"] = "Interface\\AddOns\\Details\\classes\\classe_damage.lua:2406: attempt to index local 'bars_show_data' (a nil value)",
 			["time"] = "2020/09/30 12:17:10",
@@ -2345,7 +2339,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\Details\\classes\\classe_damage.lua:2406: in function `AtualizaBarra'\nInterface\\AddOns\\Details\\classes\\classe_damage.lua:2229: in function <Interface\\AddOns\\Details\\classes\\classe_damage.lua:1568>\n(tail call): ?\nInterface\\AddOns\\Details\\core\\control.lua:1946: in function `?'\n...ce\\AddOns\\Details\\Libs\\AceTimer-3.0\\AceTimer-3.0-17.lua:55: in function <...ce\\AddOns\\Details\\Libs\\AceTimer-3.0\\AceTimer-3.0.lua:50>",
 			["session"] = 2736,
 			["counter"] = 9,
-		}, -- [296]
+		}, -- [295]
 		{
 			["message"] = "...Ons\\Details\\Libs\\DF\\Details-Framework-Classic\\fw.lua:2657: D!Framework (DetailsOptionsWindowCreateExampleBarsButton:OnMouseUp()) error: Interface\\AddOns\\Details\\classes\\classe_damage.lua:2406: attempt to index local 'bars_show_data' (a nil value)\n====================\n...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:887: in function <...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:800>\n\n====================\n",
 			["time"] = "2020/09/30 12:17:25",
@@ -2353,7 +2347,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `error'\n...Ons\\Details\\Libs\\DF\\Details-Framework-Classic\\fw.lua:2657: in function `CoreDispatch'\n...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:887: in function <...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:800>",
 			["session"] = 2736,
 			["counter"] = 4,
-		}, -- [297]
+		}, -- [296]
 		{
 			["message"] = "...Ons\\Details\\Libs\\DF\\Details-Framework-Classic\\fw.lua:2657: D!Framework (DetailsModeButton4:OnMouseUp()) error: Interface\\AddOns\\Details\\gumps\\janela_principal.lua:7566: attempt to perform arithmetic on local 'buttons_spacement' (a nil value)\n====================\n...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:887: in function <...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:800>\n\n====================\n",
 			["time"] = "2020/09/30 12:18:04",
@@ -2361,7 +2355,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `error'\n...Ons\\Details\\Libs\\DF\\Details-Framework-Classic\\fw.lua:2657: in function `CoreDispatch'\n...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:887: in function <...Details\\Libs\\DF\\Details-Framework-Classic\\button.lua:800>",
 			["session"] = 2736,
 			["counter"] = 4,
-		}, -- [298]
+		}, -- [297]
 		{
 			["message"] = "Interface\\AddOns\\Details\\gumps\\janela_principal.lua:7566: attempt to perform arithmetic on local 'buttons_spacement' (a nil value)",
 			["time"] = "2020/09/30 12:17:41",
@@ -2369,7 +2363,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\Details\\gumps\\janela_principal.lua:7566: in function `RefreshAttributeTextSize'\nInterface\\AddOns\\Details\\gumps\\janela_principal.lua:378: in function <Interface\\AddOns\\Details\\gumps\\janela_principal.lua:374>\nInterface\\AddOns\\Details\\gumps\\janela_principal.lua:1040: in function <Interface\\AddOns\\Details\\gumps\\janela_principal.lua:1039>",
 			["session"] = 2736,
 			["counter"] = 260,
-		}, -- [299]
+		}, -- [298]
 		{
 			["message"] = "Interface\\AddOns\\Details\\gumps\\janela_options.lua:11477: Usage: DetailsOptionsWindow4CustomTextureEntry:SetText(\"text\")",
 			["time"] = "2020/09/30 12:17:36",
@@ -2377,7 +2371,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `SetText'\nInterface\\AddOns\\Details\\gumps\\janela_options.lua:11477: in function `update_all'\nInterface\\AddOns\\Details\\gumps\\janela_options.lua:137: in function `?'\n...ce\\AddOns\\Details\\Libs\\AceTimer-3.0\\AceTimer-3.0-17.lua:55: in function <...ce\\AddOns\\Details\\Libs\\AceTimer-3.0\\AceTimer-3.0.lua:50>",
 			["session"] = 2736,
 			["counter"] = 6,
-		}, -- [300]
+		}, -- [299]
 		{
 			["message"] = "...tails\\Libs\\DF\\Details-Framework-Classic\\dropdown.lua:490: Details! Framework: dropdown DetailsOptionsWindowInstanceSelectDropdown error: Interface\\AddOns\\Details\\gumps\\janela_options.lua:11477: Usage: DetailsOptionsWindow4CustomTextureEntry:SetText(\"text\")",
 			["time"] = "2020/09/30 12:17:14",
@@ -2385,13 +2379,13 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `error'\n...tails\\Libs\\DF\\Details-Framework-Classic\\dropdown.lua:490: in function <...tails\\Libs\\DF\\Details-Framework-Classic\\dropdown.lua:477>",
 			["session"] = 2736,
 			["counter"] = 6,
-		}, -- [301]
+		}, -- [300]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\ClickToMove\\ClickToMove.toc",
-			["time"] = "2020/09/30 12:15:00",
 			["session"] = 2740,
+			["time"] = "2020/09/30 12:15:00",
 			["counter"] = 10,
-		}, -- [302]
+		}, -- [301]
 		{
 			["message"] = "...ate2\\Libs\\AceGUI-3.0-41\\widgets\\AceGUIWidget-Slider.lua:104: attempt to perform arithmetic on a nil value",
 			["time"] = "2020/10/01 19:16:04",
@@ -2399,35 +2393,35 @@ BugGrabberDB = {
 			["stack"] = "...ate2\\Libs\\AceGUI-3.0-41\\widgets\\AceGUIWidget-Slider.lua:104: in function <...ate2\\Libs\\AceGUI-3.0\\widgets\\AceGUIWidget-Slider.lua:99>",
 			["session"] = 2771,
 			["counter"] = 1,
-		}, -- [303]
+		}, -- [302]
 		{
 			["message"] = "[string \"--[==[ Error in 'Freeze':'initialization' ]...\"]:4: attempt to index local 'r' (a nil value)",
 			["time"] = "2020/10/02 10:37:47",
 			["stack"] = "[C]: in function `xpcall'\nInterface\\AddOns\\WeakAuras\\AuraEnvironment.lua:289: in function `ActivateAuraEnvironment'\nInterface\\AddOns\\WeakAuras\\GenericTrigger.lua:763: in function `CreateFakeStates'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.18.4.lua:6255: in function `UpdateFakeStatesFor'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.18.4.lua:6231: in function `FakeStatesFor'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.18.4.lua:4734: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:4622>\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.18.4.lua:4754: in function `Add'\n...AddOns\\WeakAurasOptions\\OptionsFrames\\TextEditor.lua:721: in function `Close'\n...AddOns\\WeakAurasOptions\\OptionsFrames\\TextEditor.lua:224: in function <...AddOns\\WeakAurasOptions\\OptionsFrames\\TextEditor.lua:223>",
 			["session"] = 2777,
 			["counter"] = 5,
-		}, -- [304]
+		}, -- [303]
 		{
 			["message"] = "[string \"--[==[ Error in 'Freeze':'initialization' ]...\"]:12: attempt to index global 'supported' (a nil value)",
 			["time"] = "2020/10/02 10:38:09",
 			["stack"] = "[C]: in function `xpcall'\nInterface\\AddOns\\WeakAuras\\AuraEnvironment.lua:289: in function `ActivateAuraEnvironment'\nInterface\\AddOns\\WeakAuras\\GenericTrigger.lua:763: in function `CreateFakeStates'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.18.4.lua:6255: in function `UpdateFakeStatesFor'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.18.4.lua:6231: in function `FakeStatesFor'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.18.4.lua:4734: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:4622>\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.18.4.lua:4754: in function `Add'\n...AddOns\\WeakAurasOptions\\OptionsFrames\\TextEditor.lua:721: in function `Close'\n...AddOns\\WeakAurasOptions\\OptionsFrames\\TextEditor.lua:224: in function <...AddOns\\WeakAurasOptions\\OptionsFrames\\TextEditor.lua:223>",
 			["session"] = 2777,
 			["counter"] = 10,
-		}, -- [305]
+		}, -- [304]
 		{
 			["message"] = "[string \"--[==[ Error in 'Freeze':'initialization' ]...\"]:4: attempt to call method 'GetName' (a nil value)",
 			["time"] = "2020/10/02 10:40:56",
 			["stack"] = "[C]: in function `xpcall'\nInterface\\AddOns\\WeakAuras\\AuraEnvironment.lua:289: in function `ActivateAuraEnvironment'\nInterface\\AddOns\\WeakAuras\\GenericTrigger.lua:763: in function `CreateFakeStates'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.18.4.lua:6255: in function `UpdateFakeStatesFor'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.18.4.lua:6231: in function `FakeStatesFor'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.18.4.lua:4734: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:4622>\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.18.4.lua:4754: in function `Add'\n...AddOns\\WeakAurasOptions\\OptionsFrames\\TextEditor.lua:721: in function `Close'\n...AddOns\\WeakAurasOptions\\OptionsFrames\\TextEditor.lua:224: in function <...AddOns\\WeakAurasOptions\\OptionsFrames\\TextEditor.lua:223>",
 			["session"] = 2777,
 			["counter"] = 5,
-		}, -- [306]
+		}, -- [305]
 		{
 			["message"] = "[string \"--[==[ Error in 'Frost Nova':'initializatio...\"]:7: attempt to index global 'supported' (a nil value)",
 			["time"] = "2020/10/02 10:42:27",
 			["stack"] = "[C]: in function `xpcall'\nInterface\\AddOns\\WeakAuras\\AuraEnvironment.lua:289: in function `ActivateAuraEnvironment'\nInterface\\AddOns\\WeakAuras\\GenericTrigger.lua:763: in function `CreateFakeStates'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.18.4.lua:6255: in function `UpdateFakeStatesFor'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.18.4.lua:6231: in function `FakeStatesFor'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.18.4.lua:4734: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:4622>\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.18.4.lua:4754: in function `Add'\n...AddOns\\WeakAurasOptions\\OptionsFrames\\TextEditor.lua:725: in function `Close'\n...AddOns\\WeakAurasOptions\\OptionsFrames\\TextEditor.lua:224: in function <...AddOns\\WeakAurasOptions\\OptionsFrames\\TextEditor.lua:223>",
 			["session"] = 2777,
 			["counter"] = 1,
-		}, -- [307]
+		}, -- [306]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Experience/TotalXP.lua:91: attempt to perform arithmetic on upvalue 'pulltotal' (a nil value)",
 			["time"] = "2020/10/02 11:51:22",
@@ -2435,14 +2429,14 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Experience/TotalXP.lua:91: in function <Interface\\AddOns\\xVermin\\Experience/TotalXP.lua:75>\nInterface\\AddOns\\xVermin\\Experience/TotalXP.lua:115: in function <Interface\\AddOns\\xVermin\\Experience/TotalXP.lua:109>",
 			["session"] = 2778,
 			["counter"] = 7,
-		}, -- [308]
+		}, -- [307]
 		{
 			["message"] = "[string \"--[==[ Error in 'Frost Nova':'initializatio...\"]:1: attempt to call method 'CreateBeautyBorder' (a nil value)",
 			["time"] = "2020/10/02 12:19:10",
 			["stack"] = "[C]: in function `xpcall'\nInterface\\AddOns\\WeakAuras\\AuraEnvironment.lua:289: in function `ActivateAuraEnvironment'\nInterface\\AddOns\\WeakAuras\\GenericTrigger.lua:763: in function `CreateFakeStates'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.18.4.lua:6255: in function `UpdateFakeStatesFor'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.18.4.lua:6231: in function `FakeStatesFor'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.18.4.lua:4734: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:4622>\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.18.4.lua:4754: in function `Add'\nInterface\\AddOns\\WeakAurasOptions\\CommonOptions.lua:1290: in function <Interface\\AddOns\\WeakAurasOptions\\CommonOptions.lua:1281>\n[C]: ?\n...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0-79.lua:51: in function <...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0.lua:49>\n...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0-79.lua:843: in function <...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0.lua:664>\n[C]: ?\n...ce\\AddOns\\GatherMate2\\Libs\\AceGUI-3.0\\AceGUI-3.0-41.lua:72: in function <...ce\\AddOns\\GatherMate2\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:70>\n...ce\\AddOns\\GatherMate2\\Libs\\AceGUI-3.0\\AceGUI-3.0-41.lua:306: in function `Fire'\n...I-Widgets\\AceGUIWidget-WeakAurasMultiLineEditBox.lua:59: in function <...I-Widgets\\AceGUIWidget-WeakAurasMultiLineEditBox.lua:56>",
 			["session"] = 2778,
 			["counter"] = 1,
-		}, -- [309]
+		}, -- [308]
 		{
 			["message"] = "[string \"WeakAurasCooldownfrost_nova:CreateBautyBord...\"]:1: attempt to call method 'CreateBautyBorder' (a nil value)",
 			["time"] = "2020/10/02 12:21:05",
@@ -2450,7 +2444,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"WeakAurasCooldownfrost_nova:CreateBautyBord...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 2778,
 			["counter"] = 2,
-		}, -- [310]
+		}, -- [309]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'ItemRackButton0:SetAttribute()'.",
 			["time"] = "2020/08/02 11:49:42",
@@ -2458,7 +2452,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetAttribute'\nInterface\\AddOns\\ItemRack\\ItemRackButtons.lua:35: in function `InitButtons'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:282: in function `func'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:970: in function `OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>",
 			["session"] = 2782,
 			["counter"] = 12,
-		}, -- [311]
+		}, -- [310]
 		{
 			["message"] = "...r\\LibTSM\\Service\\AuctionScanClasses\\ResultSubRow.lua:239: assertion failed!",
 			["time"] = "2020/10/03 18:21:13",
@@ -2466,7 +2460,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `assert'\n...r\\LibTSM\\Service\\AuctionScanClasses\\ResultSubRow.lua:239: in function <...r\\LibTSM\\Service\\AuctionScanClasses\\ResultSubRow.lua:237>\n(tail call): ?\n...dOns\\TradeSkillMaster\\Core\\UI\\AuctionUI\\Shopping.lua:2325: in function <...dOns\\TradeSkillMaster\\Core\\UI\\AuctionUI\\Shopping.lua:2320>\n(tail call): ?\n(tail call): ?\n(tail call): ?\n(tail call): ?\n...\\TradeSkillMaster\\LibTSM\\Util\\FSMClasses\\Machine.lua:178: in function <...\\TradeSkillMaster\\LibTSM\\Util\\FSMClasses\\Machine.lua:160>\n(tail call): ?\n...\\TradeSkillMaster\\LibTSM\\Util\\FSMClasses\\Machine.lua:136: in function <...\\TradeSkillMaster\\LibTSM\\Util\\FSMClasses\\Machine.lua:114>\n(tail call): ?\n...dOns\\TradeSkillMaster\\Core\\UI\\AuctionUI\\Shopping.lua:2601: in function `callback'\n...erface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Event.lua:85: in function `ProcessEvent'\n...erface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Event.lua:101: in function <...erface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Event.lua:93>",
 			["session"] = 2794,
 			["counter"] = 1,
-		}, -- [312]
+		}, -- [311]
 		{
 			["message"] = "...erface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Event.lua:97: assertion failed!",
 			["time"] = "2020/10/03 18:21:16",
@@ -2474,7 +2468,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `assert'\n...erface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Event.lua:97: in function <...erface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Event.lua:93>",
 			["session"] = 2794,
 			["counter"] = 44,
-		}, -- [313]
+		}, -- [312]
 		{
 			["message"] = "...ce\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\TempTable.lua:41: Could not acquire temp table",
 			["time"] = "2020/10/03 18:21:20",
@@ -2482,6 +2476,156 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `assert'\n...ce\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\TempTable.lua:41: in function `Acquire'\n...\\AddOns\\TradeSkillMaster\\LibTSM\\Service\\Settings-Settings.lua:721: in function `CharacterByAccountFactionrealmIterator'\n...killMaster\\LibTSM\\Service\\SyncClasses\\Connection.lua:394: in function `GetTargetCharacter'\n...killMaster\\LibTSM\\Service\\SyncClasses\\Connection.lua:255: in function `pendingCallback'\n...erface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Delay.lua:171: in function <...erface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Delay.lua:136>",
 			["session"] = 2794,
 			["counter"] = 129,
+		}, -- [313]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:94: attempt to index global 'kclist' (a nil value)",
+			["time"] = "2020/10/04 10:39:27",
+			["locals"] = "(*temporary) = <function> defined =[C]:-1\n(*temporary) = KillCount {\n 0 = <userdata>\n beautyBorder = <table> {\n }\n beautyShadow = <table> {\n }\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'kclist' (a nil value)\"\nnames = \"Total\"\ncounts = \"0\"\ntotal = 0\nkctotal = KillCountTotal {\n 0 = <userdata>\n text = 0\n}\nkclistnames = KillCountListNames {\n 0 = <userdata>\n text = \"Total\"\n}\nkclistvalues = KillCountListValues {\n 0 = <userdata>\n text = \"0\"\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:94: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:76>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:118: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:115>",
+			["session"] = 2796,
+			["counter"] = 1,
 		}, -- [314]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:107: attempt to concatenate local 'destName' (a nil value)",
+			["time"] = "2020/10/04 10:46:34",
+			["locals"] = "self = KillCount {\n 0 = <userdata>\n beautyBorder = <table> {\n }\n beautyShadow = <table> {\n }\n}\nevent = \"COMBAT_LOG_EVENT_UNFILTERED\"\nisInitialLogin = nil\nisReloadingUi = nil\n_ = 1601801194.126000\neventType = \"SPELL_CAST_START\"\n_ = false\nsourceGUID = \"Player-4465-01D5BF39\"\nsourceName = \"Augustin\"\n_ = 1297\n_ = 256\ndestGUID = \"\"\ndestName = nil\n_ = -2147483648\n_ = -2147483648\nspellID = 0\n(*temporary) = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n(*temporary) = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:80\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:47\n Config = <table> {\n }\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:70\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:55\n}\n(*temporary) = \"SPELL_CAST_START\"\n(*temporary) = \":\"\n(*temporary) = \"Augustin\"\n(*temporary) = \":\"\n(*temporary) = nil\n(*temporary) = \"attempt to concatenate local 'destName' (a nil value)\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:80\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:47\n Config = <table> {\n }\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:70\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:55\n}\nSendToTable = <function> defined @Interface\\AddOns\\xVermin\\Frames/KillCount.lua:68\nFormatData = <function> defined @Interface\\AddOns\\xVermin\\Frames/KillCount.lua:76\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:107: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:105>",
+			["session"] = 2799,
+			["counter"] = 5,
+		}, -- [315]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:107: attempt to concatenate local 'sourceName' (a nil value)",
+			["time"] = "2020/10/04 10:46:55",
+			["locals"] = "self = KillCount {\n 0 = <userdata>\n beautyBorder = <table> {\n }\n beautyShadow = <table> {\n }\n}\nevent = \"COMBAT_LOG_EVENT_UNFILTERED\"\nisInitialLogin = nil\nisReloadingUi = nil\n_ = 1601801215.680000\neventType = \"UNIT_DIED\"\n_ = true\nsourceGUID = \"\"\nsourceName = nil\n_ = -2147483648\n_ = -2147483648\ndestGUID = \"Creature-0-4445-1-124-3127-0000798520\"\ndestName = \"Venomtail Scorpid\"\n_ = 2632\n_ = 0\nspellID = -1\n(*temporary) = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n(*temporary) = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:80\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:47\n Config = <table> {\n }\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:70\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:55\n}\n(*temporary) = \"UNIT_DIED\"\n(*temporary) = \":\"\n(*temporary) = nil\n(*temporary) = \":Venomtail Scorpid\"\n(*temporary) = \"Venomtail Scorpid\"\n(*temporary) = \"attempt to concatenate local 'sourceName' (a nil value)\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:80\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:47\n Config = <table> {\n }\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:70\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:55\n}\nSendToTable = <function> defined @Interface\\AddOns\\xVermin\\Frames/KillCount.lua:68\nFormatData = <function> defined @Interface\\AddOns\\xVermin\\Frames/KillCount.lua:76\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:107: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:105>",
+			["session"] = 2799,
+			["counter"] = 2,
+		}, -- [316]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:69: attempt to index global 'killLog' (a nil value)",
+			["time"] = "2020/10/04 10:47:24",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:69: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:68>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:110: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:105>",
+			["session"] = 2800,
+			["counter"] = 2,
+		}, -- [317]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:95: attempt to call method 'GetStringWidth' (a nil value)",
+			["time"] = "2020/10/04 10:49:56",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:95: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:77>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:112: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:106>",
+			["session"] = 2801,
+			["counter"] = 1,
+		}, -- [318]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:44: attempt to index global 'kctotal' (a nil value)",
+			["time"] = "2020/10/04 11:38:59",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:55\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:80\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:70\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:47\n Config = <table> {\n }\n}\nkillcountlist = nil\nkillcounttotal = nil\nnames = nil\ncounts = nil\ntotal = nil\ntempKillLog = <table> {\n}\nsortedKillLog = <table> {\n}\n_ = \"Mage\"\nclass = \"MAGE\"\n_ = 8\ncolor = <table> {\n colorStr = \"ff3fc6ea\"\n GetRGB = <function> defined @Interface\\SharedXML\\Util.lua:633\n OnLoad = <function> defined @Interface\\SharedXML\\Util.lua:622\n b = 0.920000\n GenerateHexColorMarkup = <function> defined @Interface\\SharedXML\\Util.lua:664\n WrapTextInColorCode = <function> defined @Interface\\SharedXML\\Util.lua:668\n GenerateHexColor = <function> defined @Interface\\SharedXML\\Util.lua:660\n GetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:641\n IsEqualTo = <function> defined @Interface\\SharedXML\\Util.lua:626\n g = 0.780000\n r = 0.250000\n SetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:649\n GetRGBAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:637\n SetRGB = <function> defined @Interface\\SharedXML\\Util.lua:656\n GetRGBAAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:645\n}\nkctitle = KillCountTotal {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = 1\n(*temporary) = <userdata>\n(*temporary) = \"CENTER\"\n(*temporary) = 0\n(*temporary) = 0\n(*temporary) = <userdata>\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'kctotal' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:44: in main chunk",
+			["session"] = 2819,
+			["counter"] = 2,
+		}, -- [319]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:66: <unnamed>:SetPoint(): Unknown region point",
+			["time"] = "2020/10/04 11:44:58",
+			["locals"] = "(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = \"TOPLEFT\"\n(*temporary) = KillCount {\n 0 = <userdata>\n beautyBorder = <table> {\n }\n beautyShadow = <table> {\n }\n}\n(*temporary) = \"TOPLEEFT\"\n(*temporary) = 5\n(*temporary) = -50\n",
+			["stack"] = "[C]: in function `SetPoint'\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:66: in main chunk",
+			["session"] = 2826,
+			["counter"] = 1,
+		}, -- [320]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:164: attempt to call method 'SetScript' (a nil value)",
+			["time"] = "2020/10/04 11:52:53",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:55\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:80\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:70\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:47\n Config = <table> {\n }\n}\nkillcountlist = nil\nkillcounttotal = nil\nnames = nil\ncounts = nil\ntotal = nil\ntempKillLog = <table> {\n}\nsortedKillLog = <table> {\n}\n_ = \"Mage\"\nclass = \"MAGE\"\n_ = 8\ncolor = <table> {\n colorStr = \"ff3fc6ea\"\n GetRGB = <function> defined @Interface\\SharedXML\\Util.lua:633\n OnLoad = <function> defined @Interface\\SharedXML\\Util.lua:622\n b = 0.920000\n GenerateHexColorMarkup = <function> defined @Interface\\SharedXML\\Util.lua:664\n WrapTextInColorCode = <function> defined @Interface\\SharedXML\\Util.lua:668\n GenerateHexColor = <function> defined @Interface\\SharedXML\\Util.lua:660\n GetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:641\n IsEqualTo = <function> defined @Interface\\SharedXML\\Util.lua:626\n g = 0.780000\n r = 0.250000\n SetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:649\n GetRGBAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:637\n SetRGB = <function> defined @Interface\\SharedXML\\Util.lua:656\n GetRGBAAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:645\n}\nkctitle = KillCountTitle {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkctotal = KillCountTotal {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkclistnames = KillCountListNames {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkclistvalues = KillCountListValues {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkcreset = KillCountReset {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nSendToTable = <function> defined @Interface\\AddOns\\xVermin\\Frames/KillCount.lua:92\nDisplayData = <function> defined @Interface\\AddOns\\xVermin\\Frames/KillCount.lua:121\n(*temporary) = nil\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = \"OnMouseDown\"\n(*temporary) = <function> defined @Interface\\AddOns\\xVermin\\Frames/KillCount.lua:166\n(*temporary) = \"attempt to call method 'SetScript' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:164: in main chunk",
+			["session"] = 2830,
+			["counter"] = 1,
+		}, -- [321]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:163: attempt to call method 'SetScript' (a nil value)",
+			["time"] = "2020/10/04 11:54:09",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:55\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:80\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:70\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:47\n Config = <table> {\n }\n}\nkillcountlist = nil\nkillcounttotal = nil\nnames = nil\ncounts = nil\ntotal = nil\ntempKillLog = <table> {\n}\nsortedKillLog = <table> {\n}\n_ = \"Mage\"\nclass = \"MAGE\"\n_ = 8\ncolor = <table> {\n colorStr = \"ff3fc6ea\"\n GetRGB = <function> defined @Interface\\SharedXML\\Util.lua:633\n OnLoad = <function> defined @Interface\\SharedXML\\Util.lua:622\n b = 0.920000\n GenerateHexColorMarkup = <function> defined @Interface\\SharedXML\\Util.lua:664\n WrapTextInColorCode = <function> defined @Interface\\SharedXML\\Util.lua:668\n GenerateHexColor = <function> defined @Interface\\SharedXML\\Util.lua:660\n GetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:641\n IsEqualTo = <function> defined @Interface\\SharedXML\\Util.lua:626\n g = 0.780000\n r = 0.250000\n SetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:649\n GetRGBAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:637\n SetRGB = <function> defined @Interface\\SharedXML\\Util.lua:656\n GetRGBAAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:645\n}\nkctitle = KillCountTitle {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkctotal = KillCountTotal {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkclistnames = KillCountListNames {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkclistvalues = KillCountListValues {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkcreset = KillCountReset {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nSendToTable = <function> defined @Interface\\AddOns\\xVermin\\Frames/KillCount.lua:93\nDisplayData = <function> defined @Interface\\AddOns\\xVermin\\Frames/KillCount.lua:122\n(*temporary) = nil\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = \"OnMouseDown\"\n(*temporary) = <function> defined @Interface\\AddOns\\xVermin\\Frames/KillCount.lua:165\n(*temporary) = \"attempt to call method 'SetScript' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:163: in main chunk",
+			["session"] = 2831,
+			["counter"] = 1,
+		}, -- [322]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:174: attempt to call method 'SetScript' (a nil value)",
+			["time"] = "2020/10/04 11:54:51",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:55\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:80\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:70\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:47\n Config = <table> {\n }\n}\nkillcountlist = nil\nkillcounttotal = nil\nnames = nil\ncounts = nil\ntotal = nil\ntempKillLog = <table> {\n}\nsortedKillLog = <table> {\n}\n_ = \"Mage\"\nclass = \"MAGE\"\n_ = 8\ncolor = <table> {\n colorStr = \"ff3fc6ea\"\n GetRGB = <function> defined @Interface\\SharedXML\\Util.lua:633\n OnLoad = <function> defined @Interface\\SharedXML\\Util.lua:622\n b = 0.920000\n GenerateHexColorMarkup = <function> defined @Interface\\SharedXML\\Util.lua:664\n WrapTextInColorCode = <function> defined @Interface\\SharedXML\\Util.lua:668\n GenerateHexColor = <function> defined @Interface\\SharedXML\\Util.lua:660\n GetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:641\n IsEqualTo = <function> defined @Interface\\SharedXML\\Util.lua:626\n g = 0.780000\n r = 0.250000\n SetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:649\n GetRGBAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:637\n SetRGB = <function> defined @Interface\\SharedXML\\Util.lua:656\n GetRGBAAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:645\n}\nkctitle = KillCountTitle {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkctotal = KillCountTotal {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkclistnames = KillCountListNames {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkclistvalues = KillCountListValues {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkcreset = KillCountReset {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nSendToTable = <function> defined @Interface\\AddOns\\xVermin\\Frames/KillCount.lua:93\nDisplayData = <function> defined @Interface\\AddOns\\xVermin\\Frames/KillCount.lua:122\n(*temporary) = nil\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = \"OnMouseDown\"\n(*temporary) = <function> defined @Interface\\AddOns\\xVermin\\Frames/KillCount.lua:176\n(*temporary) = \"attempt to call method 'SetScript' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:174: in main chunk",
+			["session"] = 2832,
+			["counter"] = 1,
+		}, -- [323]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:175: attempt to call method 'SetScript' (a nil value)",
+			["time"] = "2020/10/04 11:56:00",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:55\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:80\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:70\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:47\n Config = <table> {\n }\n}\nkillcountlist = nil\nkillcounttotal = nil\nnames = nil\ncounts = nil\ntotal = nil\ntempKillLog = <table> {\n}\nsortedKillLog = <table> {\n}\n_ = \"Mage\"\nclass = \"MAGE\"\n_ = 8\ncolor = <table> {\n colorStr = \"ff3fc6ea\"\n GetRGB = <function> defined @Interface\\SharedXML\\Util.lua:633\n OnLoad = <function> defined @Interface\\SharedXML\\Util.lua:622\n b = 0.920000\n GenerateHexColorMarkup = <function> defined @Interface\\SharedXML\\Util.lua:664\n WrapTextInColorCode = <function> defined @Interface\\SharedXML\\Util.lua:668\n GenerateHexColor = <function> defined @Interface\\SharedXML\\Util.lua:660\n GetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:641\n IsEqualTo = <function> defined @Interface\\SharedXML\\Util.lua:626\n g = 0.780000\n r = 0.250000\n SetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:649\n GetRGBAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:637\n SetRGB = <function> defined @Interface\\SharedXML\\Util.lua:656\n GetRGBAAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:645\n}\nkctitle = KillCountTitle {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkctotal = KillCountTotal {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkclistnames = KillCountListNames {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkclistvalues = KillCountListValues {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkcreset = KillCountReset {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nSendToTable = <function> defined @Interface\\AddOns\\xVermin\\Frames/KillCount.lua:94\nDisplayData = <function> defined @Interface\\AddOns\\xVermin\\Frames/KillCount.lua:123\n(*temporary) = nil\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = \"OnMouseDown\"\n(*temporary) = <function> defined @Interface\\AddOns\\xVermin\\Frames/KillCount.lua:177\n(*temporary) = \"attempt to call method 'SetScript' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:175: in main chunk",
+			["session"] = 2833,
+			["counter"] = 1,
+		}, -- [324]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:91: attempt to call method 'GetStringWidth' (a nil value)",
+			["time"] = "2020/10/04 11:57:32",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:55\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:80\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:70\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:47\n Config = <table> {\n }\n}\nkillcountlist = nil\nkillcounttotal = nil\nnames = nil\ncounts = nil\ntotal = nil\ntempKillLog = <table> {\n}\nsortedKillLog = <table> {\n}\n_ = \"Mage\"\nclass = \"MAGE\"\n_ = 8\ncolor = <table> {\n colorStr = \"ff3fc6ea\"\n GetRGB = <function> defined @Interface\\SharedXML\\Util.lua:633\n OnLoad = <function> defined @Interface\\SharedXML\\Util.lua:622\n b = 0.920000\n GenerateHexColorMarkup = <function> defined @Interface\\SharedXML\\Util.lua:664\n WrapTextInColorCode = <function> defined @Interface\\SharedXML\\Util.lua:668\n GenerateHexColor = <function> defined @Interface\\SharedXML\\Util.lua:660\n GetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:641\n IsEqualTo = <function> defined @Interface\\SharedXML\\Util.lua:626\n g = 0.780000\n r = 0.250000\n SetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:649\n GetRGBAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:637\n SetRGB = <function> defined @Interface\\SharedXML\\Util.lua:656\n GetRGBAAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:645\n}\nkctitle = KillCountTitle {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkctotal = KillCountTotal {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkclistnames = KillCountListNames {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkclistvalues = KillCountListValues {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkcreset = KillCountReset {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = KillCountReset {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n(*temporary) = nil\n(*temporary) = KillCountReset {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n(*temporary) = \"attempt to call method 'GetStringWidth' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:91: in main chunk",
+			["session"] = 2834,
+			["counter"] = 1,
+		}, -- [325]
+		{
+			["message"] = "[string \"KillCountReset:GetStringWidth()\"]:1: attempt to call method 'GetStringWidth' (a nil value)",
+			["time"] = "2020/10/04 11:58:02",
+			["locals"] = "(*temporary) = nil\n(*temporary) = KillCountReset {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n(*temporary) = \"attempt to call method 'GetStringWidth' (a nil value)\"\n",
+			["stack"] = "[string \"KillCountReset:GetStringWidth()\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 2834,
+			["counter"] = 1,
+		}, -- [326]
+		{
+			["message"] = "[string \"print(KillCountReset:GetStringWidth())\"]:1: attempt to call method 'GetStringWidth' (a nil value)",
+			["time"] = "2020/10/04 11:58:09",
+			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = nil\n(*temporary) = KillCountReset {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n(*temporary) = \"attempt to call method 'GetStringWidth' (a nil value)\"\n",
+			["stack"] = "[string \"print(KillCountReset:GetStringWidth())\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 2834,
+			["counter"] = 1,
+		}, -- [327]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:177: attempt to call method 'SetScript' (a nil value)",
+			["time"] = "2020/10/04 11:58:48",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:55\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:80\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:70\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:47\n Config = <table> {\n }\n}\nkillcountlist = nil\nkillcounttotal = nil\nnames = nil\ncounts = nil\ntotal = nil\ntempKillLog = <table> {\n}\nsortedKillLog = <table> {\n}\n_ = \"Mage\"\nclass = \"MAGE\"\n_ = 8\ncolor = <table> {\n colorStr = \"ff3fc6ea\"\n GetRGB = <function> defined @Interface\\SharedXML\\Util.lua:633\n OnLoad = <function> defined @Interface\\SharedXML\\Util.lua:622\n b = 0.920000\n GenerateHexColorMarkup = <function> defined @Interface\\SharedXML\\Util.lua:664\n WrapTextInColorCode = <function> defined @Interface\\SharedXML\\Util.lua:668\n GenerateHexColor = <function> defined @Interface\\SharedXML\\Util.lua:660\n GetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:641\n IsEqualTo = <function> defined @Interface\\SharedXML\\Util.lua:626\n g = 0.780000\n r = 0.250000\n SetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:649\n GetRGBAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:637\n SetRGB = <function> defined @Interface\\SharedXML\\Util.lua:656\n GetRGBAAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:645\n}\nkctitle = KillCountTitle {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkctotal = KillCountTotal {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkclistnames = KillCountListNames {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkclistvalues = KillCountListValues {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkcreset = KillCountReset {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nSendToTable = <function> defined @Interface\\AddOns\\xVermin\\Frames/KillCount.lua:96\nDisplayData = <function> defined @Interface\\AddOns\\xVermin\\Frames/KillCount.lua:125\n(*temporary) = nil\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = \"OnMouseDown\"\n(*temporary) = <function> defined @Interface\\AddOns\\xVermin\\Frames/KillCount.lua:179\n(*temporary) = \"attempt to call method 'SetScript' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:177: in main chunk",
+			["session"] = 2835,
+			["counter"] = 1,
+		}, -- [328]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:144: Attempt to find 'this' in non-table object (used '.' instead of ':' ?)",
+			["time"] = "2020/10/04 12:07:08",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "[C]: in function `SetSize'\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:144: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:123>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:154: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:150>",
+			["session"] = 2841,
+			["counter"] = 1,
+		}, -- [329]
+		{
+			["message"] = "[string \"KillCount:SetPoint(\"TOPRIGHT\", EavesDrop, \"...\"]:1: KillCount:SetPoint(): Wrong object type for function",
+			["time"] = "2020/10/04 12:32:17",
+			["locals"] = "(*temporary) = KillCount {\n 0 = <userdata>\n beautyBorder = <table> {\n }\n beautyShadow = <table> {\n }\n}\n(*temporary) = \"TOPRIGHT\"\n(*temporary) = <table> {\n TrackStat = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDropStats.lua:57\n SetDefaultModuleLibraries = <function> defined @Interface\\AddOns\\GatherMate2\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:367\n DisplayEvent = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:898\n ScrollUp = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:1130\n EnableModule = <function> defined @Interface\\AddOns\\GatherMate2\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:332\n modules = <table> {\n }\n CancelTimer = <function> defined @Interface\\AddOns\\Details\\Libs\\AceTimer-3.0\\AceTimer-3.0.lua:147\n IterateEmbeds = <function> defined @Interface\\AddOns\\GatherMate2\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:442\n SetupHistory = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDropStats.lua:160\n UpdateRepHonorEvents = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:256\n ResetEvents = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:1012\n Printf = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceConsole-3.0\\AceConsole-3.0.lua:69\n ScrollToBottom = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:1124\n SetDefaultModulePrototype = <function> defined @Interface\\AddOns\\GatherMate2\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:409\n defaultModuleState = true\n IsEnabled = <function> defined @Interface\\AddOns\\GatherMate2\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:451\n ScheduleTimer = <function> defined @Interface\\AddOns\\Details\\Libs\\AceTimer-3.0\\AceTimer-3.0.lua:94\n DisableModule = <function> defined @Interface\\AddOns\\GatherMate2\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:350\n RegisterMessage = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:90\n GetArgs = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceConsole-3.0\\AceConsole-3.0.lua:144\n ShowHistory = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:1270\n OpenMenu = <function> defined @Interface\\AddOns\\EavesDrop\\options.lua:768\n SetFonts = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:381\n CombatEvent = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:423\n ShortenString = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:1240\n SetEnabledState = <function> defined @Interface\\AddOns\\GatherMate2\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:424\n ShowFrame = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:418\n enabledState = true\n RegisterEvent = <function> defined @Interface\\AddOns\\AdiBags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:90\n SendToChat = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:1254\n IterateModules = <function> defined @Interface\\AddOns\\GatherMate2\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:437\n ScrollDown = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:1139\n UpdateExpEvents = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:248\n SetDisplay = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDropStats.lua:46\n ToolTipAnchor = \"ANCHOR_RIGHT\"\n OnInitialize = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:185\n NewModule = <function> defined @Interface\\AddOns\\GatherMate2\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:235\n options = <table> {\n }\n chardb = <table> {\n }\n db = <table> {\n }\n GetModule = <function> defined @Interface\\AddOns\\GatherMate2\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:210\n PLAYER_DEAD = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:886\n COMBAT_TEXT_UPDATE = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:818\n baseName = \"EavesDrop\"\n UpdateCombatEvents = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:238\n TimeLeft = <function> defined @Interface\\AddOns\\Details\\Libs\\AceTimer-3.0\\AceTimer-3.0.lua:172\n FindCombatDown = <function> defined @Interface\\AddOns\\EavesDrop\\EavesDrop.lua:1107\n UnregisterChatCommand = <function> defined @Interface\\AddOns\\AdiBags\\libs\\AceConsole-3.0\\AceConsole-3.0.lua:111\n RegisterChatCommand = <function> defined @Inter",
+			["stack"] = "[C]: in function `SetPoint'\n[string \"KillCount:SetPoint(\"TOPRIGHT\", EavesDrop, \"...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2783: in function <Interface\\FrameXML\\ChatFrame.lua:2776>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:338: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 2857,
+			["counter"] = 1,
+		}, -- [330]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:25: attempt to call method 'SetPoin' (a nil value)",
+			["time"] = "2020/10/04 12:34:23",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:55\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:80\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:70\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:47\n Config = <table> {\n }\n}\nkillcountlist = nil\nkillcounttotal = nil\nnames = nil\ncounts = nil\ntotal = nil\ntempKillLog = <table> {\n}\nsortedKillLog = <table> {\n}\n_ = \"Mage\"\nclass = \"MAGE\"\n_ = 8\ncolor = <table> {\n colorStr = \"ff3fc6ea\"\n GetRGB = <function> defined @Interface\\SharedXML\\Util.lua:633\n OnLoad = <function> defined @Interface\\SharedXML\\Util.lua:622\n b = 0.920000\n GenerateHexColorMarkup = <function> defined @Interface\\SharedXML\\Util.lua:664\n WrapTextInColorCode = <function> defined @Interface\\SharedXML\\Util.lua:668\n GenerateHexColor = <function> defined @Interface\\SharedXML\\Util.lua:660\n GetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:641\n IsEqualTo = <function> defined @Interface\\SharedXML\\Util.lua:626\n g = 0.780000\n r = 0.250000\n SetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:649\n GetRGBAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:637\n SetRGB = <function> defined @Interface\\SharedXML\\Util.lua:656\n GetRGBAAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:645\n}\n(*temporary) = nil\n(*temporary) = KillCount {\n 0 = <userdata>\n}\n(*temporary) = \"TOPRIGHT\"\n(*temporary) = MonkeyQuestFrame {\n 0 = <userdata>\n}\n(*temporary) = \"BOTTOMRIGHT\"\n(*temporary) = 0\n(*temporary) = -5\n(*temporary) = \"attempt to call method 'SetPoin' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:25: in main chunk",
+			["session"] = 2858,
+			["counter"] = 1,
+		}, -- [331]
+		{
+			["message"] = "(null)",
+			["time"] = "2020/07/24 16:00:06",
+			["session"] = 2858,
+			["counter"] = 133,
+		}, -- [332]
 	},
 }

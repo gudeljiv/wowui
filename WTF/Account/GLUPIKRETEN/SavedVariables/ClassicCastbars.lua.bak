@@ -4,7 +4,7 @@ ClassicCastbarsDB = {
 	["movementDetect"] = true,
 	["version"] = "10",
 	["target"] = {
-		["castFontSize"] = 14,
+		["castFontSize"] = 12,
 		["autoPosition"] = true,
 		["iconPositionX"] = -5,
 		["textPositionX"] = 0,
@@ -16,14 +16,14 @@ ClassicCastbarsDB = {
 			1, -- [3]
 			1, -- [4]
 		},
-		["iconSize"] = 48,
+		["iconSize"] = 36,
 		["enabled"] = true,
-		["textPositionY"] = 15,
+		["textPositionY"] = 20,
 		["castFont"] = "Fonts\\FRIZQT__.TTF",
 		["showCastInfoOnly"] = false,
-		["width"] = 220.1,
+		["width"] = 240.1,
 		["castBorder"] = "",
-		["showTimer"] = false,
+		["iconPositionY"] = 0,
 		["statusColorChannel"] = {
 			0, -- [1]
 			1, -- [2]
@@ -35,14 +35,14 @@ ClassicCastbarsDB = {
 			-18, -- [2]
 			-87, -- [3]
 		},
-		["height"] = 6.1,
+		["height"] = 18.1,
 		["statusColor"] = {
 			1, -- [1]
 			0.7, -- [2]
 			0, -- [3]
 			1, -- [4]
 		},
-		["iconPositionY"] = 0,
+		["showTimer"] = true,
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]
@@ -70,7 +70,7 @@ ClassicCastbarsDB = {
 		["showCastInfoOnly"] = false,
 		["width"] = 106,
 		["castBorder"] = "Interface\\CastingBar\\UI-CastingBar-Border-Small",
-		["showTimer"] = false,
+		["iconPositionY"] = 0,
 		["statusColorChannel"] = {
 			0, -- [1]
 			1, -- [2]
@@ -89,7 +89,7 @@ ClassicCastbarsDB = {
 			0, -- [3]
 			1, -- [4]
 		},
-		["iconPositionY"] = 0,
+		["showTimer"] = false,
 		["textColor"] = {
 			1, -- [1]
 			1, -- [2]

@@ -1,14 +1,9 @@
 
 KILLTRACK = {
-	["TOOLTIP"] = true,
+	["PRINTKILLS"] = false,
 	["COUNT_GROUP"] = false,
 	["SHOW_EXP"] = false,
-	["BROKER"] = {
-		["MINIMAP"] = {
-			["hide"] = true,
-		},
-		["SHORT_TEXT"] = false,
-	},
+	["TOOLTIP"] = true,
 	["PRINTNEW"] = false,
 	["MOBS"] = {
 		[2268] = {
@@ -196,10 +191,10 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Cow",
 		},
-		[2371] = {
+		[2274] = {
 			["AchievCount"] = 0,
 			["Kills"] = 1,
-			["Name"] = "Daggerspine Siren",
+			["Name"] = "Enraged Stanley",
 		},
 		[2589] = {
 			["AchievCount"] = 0,
@@ -221,21 +216,21 @@ KILLTRACK = {
 			["Kills"] = 1,
 			["Name"] = "Elder Moss Creeper",
 		},
-		[2560] = {
+		[2559] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Highland Thrasher",
-		},
-		[8886] = {
-			["AchievCount"] = 0,
-			["Kills"] = 14,
-			["Name"] = "Deviate Python",
+			["Name"] = "Highland Strider",
 		},
 		[2952] = {
 			["AchievCount"] = 0,
 			["Kills"] = 4,
 			["Name"] = "Bristleback Quilboar",
 			["Exp"] = 130,
+		},
+		[8886] = {
+			["AchievCount"] = 0,
+			["Kills"] = 14,
+			["Name"] = "Deviate Python",
 		},
 		[2349] = {
 			["AchievCount"] = 0,
@@ -267,10 +262,10 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Syndicate Footpad",
 		},
-		[2249] = {
+		[4480] = {
 			["AchievCount"] = 0,
-			["Kills"] = 20,
-			["Name"] = "Ferocious Yeti",
+			["Kills"] = 0,
+			["Name"] = "Kenata Dabyrie",
 		},
 		[4479] = {
 			["AchievCount"] = 0,
@@ -287,10 +282,10 @@ KILLTRACK = {
 			["Kills"] = 1,
 			["Name"] = "Kresh",
 		},
-		[5756] = {
+		[2620] = {
 			["AchievCount"] = 0,
-			["Kills"] = 9,
-			["Name"] = "Deviate Venomwing",
+			["Kills"] = 0,
+			["Name"] = "Prairie Dog",
 		},
 		[4481] = {
 			["AchievCount"] = 0,
@@ -307,10 +302,10 @@ KILLTRACK = {
 			["Kills"] = 32,
 			["Name"] = "Starving Mountain Lion",
 		},
-		[2387] = {
+		[2260] = {
 			["AchievCount"] = 0,
-			["Kills"] = 8,
-			["Name"] = "Hillsbrad Councilman",
+			["Kills"] = 31,
+			["Name"] = "Syndicate Rogue",
 		},
 		[2448] = {
 			["AchievCount"] = 0,
@@ -342,15 +337,15 @@ KILLTRACK = {
 			["Kills"] = 29,
 			["Name"] = "Vicious Gray Bear",
 		},
-		[2386] = {
+		[5756] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Southshore Guard",
+			["Kills"] = 9,
+			["Name"] = "Deviate Venomwing",
 		},
-		[3631] = {
+		[1125] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Deviate Stinglash",
+			["Name"] = "Boar",
 		},
 		[2450] = {
 			["AchievCount"] = 0,
@@ -362,10 +357,10 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Greater Plainstrider",
 		},
-		[2260] = {
+		[2387] = {
 			["AchievCount"] = 0,
-			["Kills"] = 31,
-			["Name"] = "Syndicate Rogue",
+			["Kills"] = 8,
+			["Name"] = "Hillsbrad Councilman",
 		},
 		[1789] = {
 			["AchievCount"] = 0,
@@ -387,10 +382,10 @@ KILLTRACK = {
 			["Kills"] = 95,
 			["Name"] = "Syndicate Watchman",
 		},
-		[3242] = {
+		[2248] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Zhevra Runner",
+			["Kills"] = 42,
+			["Name"] = "Cave Yeti",
 		},
 		[5761] = {
 			["AchievCount"] = 0,
@@ -402,20 +397,20 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Stromgarde Cavalryman",
 		},
-		[2404] = {
-			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Blacksmith Verringtan",
-		},
-		[3630] = {
+		[3273] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Deviate Coiler",
+			["Name"] = "Kolkar Stormer",
 		},
 		[6466] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Gamon",
+		},
+		[2360] = {
+			["AchievCount"] = 0,
+			["Kills"] = 11,
+			["Name"] = "Hillsbrad Farmhand",
 		},
 		[2612] = {
 			["AchievCount"] = 0,
@@ -427,10 +422,10 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Snake",
 		},
-		[2403] = {
+		[3415] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Farmer Getz",
+			["Kills"] = 0,
+			["Name"] = "Savannah Huntress",
 		},
 		[2581] = {
 			["AchievCount"] = 0,
@@ -447,55 +442,55 @@ KILLTRACK = {
 			["Kills"] = 2,
 			["Name"] = "Hillsbrad Tailor",
 		},
-		[3415] = {
+		[2403] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Savannah Huntress",
+			["Kills"] = 1,
+			["Name"] = "Farmer Getz",
 		},
 		[2582] = {
 			["AchievCount"] = 0,
 			["Kills"] = 4,
 			["Name"] = "Dabyrie Laborer",
 		},
-		[2360] = {
+		[3630] = {
 			["AchievCount"] = 0,
-			["Kills"] = 11,
-			["Name"] = "Hillsbrad Farmhand",
+			["Kills"] = 0,
+			["Name"] = "Deviate Coiler",
 		},
 		[2265] = {
 			["AchievCount"] = 0,
 			["Kills"] = 4,
 			["Name"] = "Hillsbrad Apprentice Blacksmith",
 		},
-		[3273] = {
+		[2404] = {
+			["AchievCount"] = 0,
+			["Kills"] = 1,
+			["Name"] = "Blacksmith Verringtan",
+		},
+		[3242] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Kolkar Stormer",
+			["Name"] = "Zhevra Runner",
 		},
-		[2248] = {
-			["AchievCount"] = 0,
-			["Kills"] = 42,
-			["Name"] = "Cave Yeti",
-		},
-		[1125] = {
+		[3631] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Boar",
+			["Name"] = "Deviate Stinglash",
 		},
 		[2266] = {
 			["AchievCount"] = 0,
 			["Kills"] = 19,
 			["Name"] = "Hillsbrad Farmer",
 		},
-		[2620] = {
+		[2386] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Prairie Dog",
+			["Name"] = "Southshore Guard",
 		},
-		[4480] = {
+		[2249] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Kenata Dabyrie",
+			["Kills"] = 20,
+			["Name"] = "Ferocious Yeti",
 		},
 		[3632] = {
 			["AchievCount"] = 0,
@@ -512,29 +507,34 @@ KILLTRACK = {
 			["Kills"] = 8,
 			["Name"] = "Dun Garok Soldier",
 		},
-		[2559] = {
+		[2560] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Highland Strider",
+			["Name"] = "Highland Thrasher",
 		},
 		[3633] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Deviate Slayer",
 		},
-		[2274] = {
+		[2371] = {
 			["AchievCount"] = 0,
 			["Kills"] = 1,
-			["Name"] = "Enraged Stanley",
+			["Name"] = "Daggerspine Siren",
 		},
 	},
-	["DISABLE_RAIDS"] = false,
-	["ACHIEV_THRESHOLD"] = 1000,
-	["DISABLE_DUNGEONS"] = false,
 	["IMMEDIATE"] = {
 		["THRESHOLD"] = 0,
 		["POSITION"] = {
 		},
 	},
-	["PRINTKILLS"] = false,
+	["ACHIEV_THRESHOLD"] = 1000,
+	["DISABLE_DUNGEONS"] = false,
+	["DISABLE_RAIDS"] = false,
+	["BROKER"] = {
+		["MINIMAP"] = {
+			["hide"] = true,
+		},
+		["SHORT_TEXT"] = false,
+	},
 }
