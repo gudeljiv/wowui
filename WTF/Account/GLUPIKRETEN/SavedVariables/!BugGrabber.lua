@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 2874,
 	["lastSanitation"] = 3,
+	["session"] = 2885,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -165,8 +165,8 @@ BugGrabberDB = {
 		}, -- [20]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["time"] = "2020/07/26 13:26:58",
 			["session"] = 1336,
+			["time"] = "2020/07/26 13:26:58",
 			["counter"] = 2,
 		}, -- [21]
 		{
@@ -546,8 +546,8 @@ BugGrabberDB = {
 		}, -- [68]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["session"] = 1423,
 			["time"] = "2020/07/27 20:37:46",
+			["session"] = 1423,
 			["counter"] = 4,
 		}, -- [69]
 		{
@@ -805,8 +805,8 @@ BugGrabberDB = {
 		}, -- [101]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["session"] = 1605,
 			["time"] = "2020/08/02 10:06:15",
+			["session"] = 1605,
 			["counter"] = 3,
 		}, -- [102]
 		{
@@ -946,8 +946,8 @@ BugGrabberDB = {
 		}, -- [119]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
-			["time"] = "2020/08/02 20:13:03",
 			["session"] = 1654,
+			["time"] = "2020/08/02 20:13:03",
 			["counter"] = 3,
 		}, -- [120]
 		{
@@ -1420,8 +1420,8 @@ BugGrabberDB = {
 		}, -- [179]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Experience.lua",
-			["time"] = "2020/08/19 21:35:15",
 			["session"] = 1943,
+			["time"] = "2020/08/19 21:35:15",
 			["counter"] = 6,
 		}, -- [180]
 		{
@@ -2032,8 +2032,8 @@ BugGrabberDB = {
 		}, -- [256]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["time"] = "2020/08/13 21:31:07",
 			["session"] = 2448,
+			["time"] = "2020/08/13 21:31:07",
 			["counter"] = 9,
 		}, -- [257]
 		{
@@ -2382,8 +2382,8 @@ BugGrabberDB = {
 		}, -- [300]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\ClickToMove\\ClickToMove.toc",
-			["time"] = "2020/09/30 12:15:00",
 			["session"] = 2740,
+			["time"] = "2020/09/30 12:15:00",
 			["counter"] = 10,
 		}, -- [301]
 		{
@@ -2622,18 +2622,74 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [331]
 		{
-			["message"] = "(null)",
-			["session"] = 2858,
-			["time"] = "2020/07/24 16:00:06",
-			["counter"] = 133,
-		}, -- [332]
-		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:155: attempt to index global 'KillCountFrame' (a nil value)",
 			["time"] = "2020/10/04 14:34:19",
 			["locals"] = "(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'KillCountFrame' (a nil value)\"\nDisplayData = <function> defined @Interface\\AddOns\\xVermin\\Frames/KillCount.lua:129\n",
 			["stack"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:155: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:153>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:172: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:165>",
 			["session"] = 2865,
 			["counter"] = 2,
+		}, -- [332]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:178: bad argument #1 to 'unpack' (table expected, got nil)",
+			["time"] = "2020/10/04 16:29:18",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"table expected, got nil\"\n",
+			["stack"] = "[C]: in function `unpack'\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:178: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:153>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:192: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:184>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:203: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:199>",
+			["session"] = 2875,
+			["counter"] = 1,
 		}, -- [333]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:19: attempt to call global 'pack' (a nil value)",
+			["time"] = "2020/10/04 16:34:29",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:55\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:80\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:70\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:47\n Config = <table> {\n }\n}\nkillcountlist = nil\nkillcounttotal = nil\nnames = nil\ncounts = nil\ntotal = nil\ntempKillLog = <table> {\n}\nsortedKillLog = <table> {\n}\n_ = \"Priest\"\nclass = \"PRIEST\"\n_ = 5\ncolor = <table> {\n colorStr = \"ffffffff\"\n GetRGB = <function> defined @Interface\\SharedXML\\Util.lua:633\n OnLoad = <function> defined @Interface\\SharedXML\\Util.lua:622\n b = 1\n GenerateHexColorMarkup = <function> defined @Interface\\SharedXML\\Util.lua:664\n WrapTextInColorCode = <function> defined @Interface\\SharedXML\\Util.lua:668\n GenerateHexColor = <function> defined @Interface\\SharedXML\\Util.lua:660\n GetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:641\n IsEqualTo = <function> defined @Interface\\SharedXML\\Util.lua:626\n g = 1\n r = 1\n SetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:649\n GetRGBAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:637\n SetRGB = <function> defined @Interface\\SharedXML\\Util.lua:656\n GetRGBAAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:645\n}\n(*temporary) = nil\n(*temporary) = <table> {\n show = true\n}\n(*temporary) = nil\n(*temporary) = \"TOPLEFT\"\n(*temporary) = UIParent {\n 0 = <userdata>\n firstTimeLoaded = 1\n}\n(*temporary) = \"TOPLEFT\"\n(*temporary) = 5\n(*temporary) = -350\n(*temporary) = \"attempt to call global 'pack' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:19: in main chunk",
+			["session"] = 2876,
+			["counter"] = 1,
+		}, -- [334]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:20: attempt to index global 'KillCountFrame' (a nil value)",
+			["time"] = "2020/10/04 16:37:02",
+			["locals"] = "_ = \"xVermin\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:55\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:80\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:70\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:47\n Config = <table> {\n }\n}\nkillcountlist = nil\nkillcounttotal = nil\nnames = nil\ncounts = nil\ntotal = nil\ntempKillLog = <table> {\n}\nsortedKillLog = <table> {\n}\n_ = \"Priest\"\nclass = \"PRIEST\"\n_ = 5\ncolor = <table> {\n colorStr = \"ffffffff\"\n GetRGB = <function> defined @Interface\\SharedXML\\Util.lua:633\n OnLoad = <function> defined @Interface\\SharedXML\\Util.lua:622\n b = 1\n GenerateHexColorMarkup = <function> defined @Interface\\SharedXML\\Util.lua:664\n WrapTextInColorCode = <function> defined @Interface\\SharedXML\\Util.lua:668\n GenerateHexColor = <function> defined @Interface\\SharedXML\\Util.lua:660\n GetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:641\n IsEqualTo = <function> defined @Interface\\SharedXML\\Util.lua:626\n g = 1\n r = 1\n SetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:649\n GetRGBAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:637\n SetRGB = <function> defined @Interface\\SharedXML\\Util.lua:656\n GetRGBAAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:645\n}\n(*temporary) = nil\n(*temporary) = <table> {\n show = true\n position = <table> {\n }\n}\n(*temporary) = <table> {\n 1 = \"TOPLEFT\"\n 2 = UIParent {\n }\n 3 = \"TOPLEFT\"\n 4 = 5\n 5 = -350\n}\n(*temporary) = \"TOPLEFT\"\n(*temporary) = UIParent {\n 0 = <userdata>\n firstTimeLoaded = 1\n}\n(*temporary) = \"TOPLEFT\"\n(*temporary) = 5\n(*temporary) = -350\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'KillCountFrame' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:20: in main chunk",
+			["session"] = 2877,
+			["counter"] = 1,
+		}, -- [335]
+		{
+			["message"] = "(null)",
+			["time"] = "2020/07/24 16:00:06",
+			["session"] = 2877,
+			["counter"] = 139,
+		}, -- [336]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:184: Usage: KillCountCounter:SetPoint(\"point\" [, region or nil] [, \"relativePoint\"] [, offsetX, offsetY])",
+			["time"] = "2020/10/04 16:37:54",
+			["locals"] = "(*temporary) = KillCountCounter {\n 0 = <userdata>\n beautyBorder = <table> {\n }\n beautyShadow = <table> {\n }\n}\n(*temporary) = <table> {\n 1 = \"TOPLEFT\"\n 2 = UIParent {\n }\n 3 = \"TOPLEFT\"\n 4 = 5\n 5 = -350\n}\n",
+			["stack"] = "[C]: in function `SetPoint'\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:184: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:159>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:201: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:190>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:212: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:208>",
+			["session"] = 2878,
+			["counter"] = 1,
+		}, -- [337]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:186: Usage: KillCountCounter:SetPoint(\"point\" [, region or nil] [, \"relativePoint\"] [, offsetX, offsetY])",
+			["time"] = "2020/10/04 16:38:37",
+			["locals"] = "(*temporary) = KillCountCounter {\n 0 = <userdata>\n beautyBorder = <table> {\n }\n beautyShadow = <table> {\n }\n}\n(*temporary) = <table> {\n 1 = \"TOPLEFT\"\n 2 = UIParent {\n }\n 3 = \"TOPLEFT\"\n 4 = 5\n 5 = -350\n}\n",
+			["stack"] = "[C]: in function `SetPoint'\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:186: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:159>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:203: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:192>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:214: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:210>",
+			["session"] = 2880,
+			["counter"] = 2,
+		}, -- [338]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:197: bad argument #1 to 'unpack' (table expected, got boolean)",
+			["time"] = "2020/10/04 16:39:55",
+			["locals"] = "(*temporary) = true\n(*temporary) = \"table expected, got boolean\"\n",
+			["stack"] = "[C]: in function `unpack'\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:197: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:192>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:215: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:211>",
+			["session"] = 2881,
+			["counter"] = 1,
+		}, -- [339]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:181: KillCountCounter:SetPoint(): Unknown region point",
+			["time"] = "2020/10/04 16:41:30",
+			["locals"] = "(*temporary) = KillCountCounter {\n 0 = <userdata>\n beautyBorder = <table> {\n }\n beautyShadow = <table> {\n }\n}\n(*temporary) = \"\"TOPLEFT\", UIParent, \"TOPLEFT\", 5, -350\"\n",
+			["stack"] = "[C]: in function `SetPoint'\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:181: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:154>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:198: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:187>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:209: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:205>",
+			["session"] = 2882,
+			["counter"] = 1,
+		}, -- [340]
 	},
 }

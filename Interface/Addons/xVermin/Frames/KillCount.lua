@@ -14,12 +14,13 @@ if class == "SHAMAN" then
 	}
 end
 
-kcc = CreateFrame("Frame", "KillCountContainer", UIParent)
-kcc:SetWidth(100)
-kcc:SetHeight(200)
-kcc:SetPoint("TOPLEFT", UIParent, "TOPLEFT", 5, -350)
+local KillCountFrame = {}
+KillCountFrame.defaults = {
+	show = true,
+	position = {pos1 = "TOPLEFT", anchor = UIParent, pos2 = "TOPLEFT", x = 5, y = -350}
+}
 
-kc = CreateFrame("Frame", "KillCount", kcc)
+kc = CreateFrame("Frame", "KillCountCounter", UIParent)
 kc:SetWidth(100)
 kc:SetHeight(200)
 kc:SetPoint("TOPLEFT", UIParent, "TOPLEFT", 5, -350)
@@ -37,6 +38,37 @@ kc:SetBackdrop(
 kc:SetBackdropColor(0, 0, 0, 0.4)
 kc:SetFrameStrata("BACKGROUND")
 kc:CreateBeautyBorder(6)
+
+kc:EnableMouse(true)
+kc:SetMovable(true)
+kc:SetScript(
+	"OnMouseDown",
+	function(self, button)
+		if button == "LeftButton" and not self.isMoving then
+			self:StartMoving()
+			self.isMoving = true
+		end
+	end
+)
+kc:SetScript(
+	"OnMouseUp",
+	function(self, button)
+		if button == "LeftButton" and self.isMoving then
+			self:StopMovingOrSizing()
+			self.isMoving = false
+		end
+		KillCountFrame.position = self:GetPoint()
+	end
+)
+kc:SetScript(
+	"OnHide",
+	function(self)
+		if (self.isMoving) then
+			self:StopMovingOrSizing()
+			self.isMoving = false
+		end
+	end
+)
 
 local kctitle = CreateFrame("Frame", "KillCountTitle", kc)
 kctitle:SetPoint("CENTER", kc, "CENTER", 0, 0)
@@ -143,8 +175,11 @@ local function DisplayData()
 	local h = kctitle.text:GetStringHeight() + kctotal.text:GetStringHeight() + kclistnames.text:GetStringHeight() + 75
 	kc:SetSize(math.max(w, 150), math.max(h, 85))
 
+	print(KillCountFrame.position)
+
 	if KillCountFrame and KillCountFrame.show then
 		kc:Show()
+		kc:SetPoint(KillCountFrame.position.pos1, KillCountFrame.position.anchor:GetName(), KillCountFrame.position.pos2, KillCountFrame.position.x, KillCountFrame.position.y)
 	else
 		kc:Hide()
 	end
@@ -152,7 +187,13 @@ end
 
 local function OnAddonLoaded()
 	if not KillCountFrame or KillCountFrame == nil then
-		KillCountFrame = {show = true}
+		KillCountFrame = {}
+	else
+		for setting, value in pairs(KillCountFrame.defaults) do
+			if KillCountFrame[setting] == nil then
+				KillCountFrame[setting] = value
+			end
+		end
 	end
 
 	DisplayData()
