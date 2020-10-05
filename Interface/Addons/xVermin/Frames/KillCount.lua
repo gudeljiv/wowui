@@ -5,7 +5,7 @@ local sortedKillLog = {}
 local tStart = time()
 
 local defaults = {
-	show = true,
+	show = false,
 	position = {from = "TOPLEFT", anchor = "UIParent", to = "TOPLEFT", x = 5, y = -350},
 	killLog = {}
 }
