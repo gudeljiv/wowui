@@ -361,7 +361,8 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["gridType"] = "RD",
+			["authorOptions"] = {
+			},
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -372,15 +373,14 @@ WeakAurasSaved = {
 			["animate"] = false,
 			["customGrow"] = "function(newPositions, activeRegions)\n    local offset = 9/64 -- target_indicator_glow texture center offset\n    local distance = 18/64\n    local angle, x, y, h, w, s, c, sb, cb, da\n    local curveAngle, segmentCount, direction, base, direction\n\n    for i, r in ipairs(activeRegions) do\n        if r.region.GetRotation then\n            direction = r.data.config.direction\n            base = (r.data.config.rotationOffset + direction * 180)\n            angle = r.region:GetRotation() - direction * 180\n            h = r.data.height\n            w = r.data.width\n            curveAngle = r.data.config.curveAngle\n            segmentCount = r.data.config.segmentCount\n            s = sin(angle)\n            c = cos(angle)\n            sb = sin(base + (direction - 1) * 180)\n            cb = cos(base + (direction - 1) * 180)\n            da = curveAngle / (segmentCount - 1)\n            radius = 0.5 * w * distance / sin(da / 2)\n            x = c * radius + s * w * offset * (direction - 1.5) * 2 + radius * cb\n            y = s * radius * h / w - c * h * offset * (direction - 1.5) * 2 + radius * h / w * sb\n        else\n            x = 0\n            y = 0\n        end\n\n        if newPositions[i] then\n            newPositions[i][1] = x\n            newPositions[i][2] = y\n        else\n            newPositions[i] = {x, y}\n        end\n    end\nend\n",
 			["scale"] = 1,
-			["authorOptions"] = {
-			},
+			["arcLength"] = 30,
 			["border"] = false,
 			["borderEdge"] = "1 Pixel",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["limit"] = 5,
-			["radius"] = 300,
 			["rowSpace"] = 1,
+			["useLimit"] = false,
 			["constantFactor"] = "RADIUS",
 			["borderInset"] = 1,
 			["borderOffset"] = 4,
@@ -394,9 +394,10 @@ WeakAurasSaved = {
 			["stagger"] = 0,
 			["uid"] = "QYuwGRyspxh",
 			["frameStrata"] = 1,
-			["arcLength"] = 30,
+			["radius"] = 300,
 			["conditions"] = {
 			},
+			["gridType"] = "RD",
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -417,7 +418,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["useLimit"] = false,
 		},
 		["Kill Tracker"] = {
 			["controlledChildren"] = {
@@ -502,14 +502,6 @@ WeakAurasSaved = {
 			["id"] = "Kill Tracker",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["groupIcon"] = 136183,
-			["config"] = {
-			},
-			["uid"] = "NQfLrO1EXvg",
-			["borderInset"] = 1,
-			["conditions"] = {
-			},
-			["xOffset"] = 564.999633789063,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -530,6 +522,14 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["uid"] = "NQfLrO1EXvg",
+			["xOffset"] = 564.999633789063,
+			["groupIcon"] = 136183,
+			["conditions"] = {
+			},
+			["config"] = {
+			},
+			["borderInset"] = 1,
 		},
 		["Inform Party of reset"] = {
 			["outline"] = "OUTLINE",
@@ -1167,19 +1167,19 @@ WeakAurasSaved = {
 						["type"] = "custom",
 						["use_alwaystrue"] = true,
 						["unevent"] = "auto",
-						["unit"] = "player",
+						["use_unit"] = true,
 						["duration"] = "1",
 						["event"] = "Conditions",
-						["subeventPrefix"] = "SPELL",
-						["custom"] = "function(event)\n    if event == \"WA_KILL_TRACKER_KILL\" then\n        aura_env.active = true\n    end\n    \n    if event ~= \"WA_KILL_TRACKER_RESET\" then\n        return aura_env.active\n    end\nend\n\n\n",
-						["events"] = "WA_KILL_TRACKER_KILL WA_KILL_TRACKER_RESET WA_KILL_TRACKER_SHOW",
+						["unit"] = "player",
 						["spellIds"] = {
 						},
+						["custom"] = "function(event)\n    if event == \"WA_KILL_TRACKER_KILL\" then\n        aura_env.active = true\n    end\n    \n    if event ~= \"WA_KILL_TRACKER_RESET\" then\n        return aura_env.active\n    end\nend\n\n\n",
+						["events"] = "WA_KILL_TRACKER_KILL WA_KILL_TRACKER_RESET WA_KILL_TRACKER_SHOW",
 						["custom_type"] = "event",
 						["subeventSuffix"] = "_CAST_START",
 						["names"] = {
 						},
-						["use_unit"] = true,
+						["subeventPrefix"] = "SPELL",
 						["custom_hide"] = "custom",
 					},
 					["untrigger"] = {
@@ -2202,16 +2202,25 @@ WeakAurasSaved = {
 			},
 			["zoom"] = 0,
 			["regionType"] = "icon",
-			["parent"] = "Farming Tracker Spell",
-			["url"] = "https://wago.io/jpUN6WoYU/1",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+					["do_custom"] = true,
+					["custom"] = "\n\n",
+				},
+				["finish"] = {
+				},
+			},
 			["authorOptions"] = {
 			},
+			["parent"] = "Farming Tracker Spell",
 			["auto"] = true,
 			["config"] = {
 			},
@@ -2225,20 +2234,11 @@ WeakAurasSaved = {
 			["width"] = 64,
 			["uid"] = "DpMMi2Vw6ZA",
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-					["do_custom"] = true,
-					["custom"] = "\n\n",
-				},
-				["finish"] = {
-				},
-			},
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["selfPoint"] = "CENTER",
+			["url"] = "https://wago.io/jpUN6WoYU/1",
 		},
 		["Renew"] = {
 			["parent"] = "Farming Tracker Spell",
@@ -2342,10 +2342,8 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["authorOptions"] = {
-			},
+			["xOffset"] = 140,
 			["regionType"] = "icon",
-			["cooldownEdge"] = false,
 			["actions"] = {
 				["start"] = {
 				},
@@ -2356,7 +2354,12 @@ WeakAurasSaved = {
 					["custom"] = "\n\n",
 				},
 			},
-			["xOffset"] = 140,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -2377,6 +2380,8 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["authorOptions"] = {
+			},
 			["auto"] = true,
 			["uid"] = "QFEONHsX4uB",
 			["zoom"] = 0,
@@ -2394,12 +2399,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["cooldownEdge"] = false,
 		},
 		["Blink"] = {
 			["xOffset"] = 0,
@@ -2515,9 +2515,9 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["regionType"] = "icon",
-			["parent"] = "Farming Tracker Spell",
-			["url"] = "https://wago.io/jpUN6WoYU/1",
 			["selfPoint"] = "CENTER",
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 				},
@@ -2528,6 +2528,7 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
+			["parent"] = "Farming Tracker Spell",
 			["semver"] = "1.0.0",
 			["config"] = {
 			},
@@ -2541,17 +2542,16 @@ WeakAurasSaved = {
 			["width"] = 64,
 			["uid"] = "F6xaWtTgJSy",
 			["inverse"] = false,
-			["authorOptions"] = {
-			},
-			["conditions"] = {
-			},
-			["cooldown"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["conditions"] = {
+			},
+			["cooldown"] = true,
+			["url"] = "https://wago.io/jpUN6WoYU/1",
 		},
 		["Inform party of reset (people still inside) 2"] = {
 			["outline"] = "OUTLINE",
@@ -2757,8 +2757,17 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["selfPoint"] = "LEFT",
+			["space"] = 10,
 			["animate"] = true,
+			["rotation"] = 0,
+			["scale"] = 1,
+			["yOffset"] = 0,
+			["border"] = false,
+			["borderEdge"] = "Square Full White",
+			["regionType"] = "dynamicgroup",
+			["borderSize"] = 2,
+			["sort"] = "descending",
+			["selfPoint"] = "LEFT",
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -2779,15 +2788,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["scale"] = 1,
-			["grow"] = "VERTICAL",
-			["border"] = false,
-			["borderEdge"] = "Square Full White",
-			["regionType"] = "dynamicgroup",
-			["borderSize"] = 2,
-			["sort"] = "descending",
-			["xOffset"] = 350,
-			["yOffset"] = 0,
 			["constantFactor"] = "RADIUS",
 			["config"] = {
 			},
@@ -2801,11 +2801,11 @@ WeakAurasSaved = {
 			["gridWidth"] = 2,
 			["borderInset"] = 1,
 			["limit"] = 5,
-			["rotation"] = 0,
+			["xOffset"] = 350,
 			["conditions"] = {
 			},
 			["anchorPoint"] = "CENTER",
-			["space"] = 10,
+			["grow"] = "VERTICAL",
 		},
 		["Total AoE Icon"] = {
 			["outline"] = "OUTLINE",
@@ -2841,13 +2841,13 @@ WeakAurasSaved = {
 						["event"] = "Health",
 						["unit"] = "player",
 						["subeventPrefix"] = "SPELL",
+						["events"] = "CLEU",
 						["custom"] = "function(allstates, event, _, subEvent, _, sourceGUID, _, _, _, _, _, _, _, _, spellName, _, dmgAmount, overkill, spellSchool)\n    if subEvent == \"SPELL_DAMAGE\" and sourceGUID == UnitGUID(\"player\") and aura_env.spells[spellName] \n    or subEvent == \"SPELL_PERIODIC_DAMAGE\" and sourceGUID == UnitGUID(\"player\") and aura_env.spellsPeriodic[spellName] then\n        if not aura_env.firstHit or GetTime() - aura_env.firstHit > aura_env.config.dmgWindow then\n            aura_env.firstHit = GetTime()\n            allstates[aura_env.firstHit] = {\n                show = true,\n                changed = true,\n                progressType = 'timed',\n                expirationTime = GetTime() + aura_env.config.msgTime,\n                duration = aura_env.config.msgTime,\n                autoHide = true,\n                icon = aura_env.icons[spellName] or 132862,\n                spellName = spellName,\n                dmgAmount = dmgAmount,\n                count = 1,\n                spellSchool = spellSchool,\n            }\n            return true\n        else\n            allstates[aura_env.firstHit].count = allstates[aura_env.firstHit].count + 1\n            allstates[aura_env.firstHit].dmgAmount = allstates[aura_env.firstHit].dmgAmount + dmgAmount\n            allstates[aura_env.firstHit].changed = true\n            return true\n        end \n    end\nend",
-						["spellIds"] = {
-						},
 						["names"] = {
 						},
 						["check"] = "event",
-						["events"] = "CLEU",
+						["spellIds"] = {
+						},
 						["custom_type"] = "stateupdate",
 						["debuffType"] = "HELPFUL",
 					},
@@ -3228,7 +3228,7 @@ WeakAurasSaved = {
 			["fixedWidth"] = 200,
 			["selfPoint"] = "BOTTOM",
 			["regionType"] = "icon",
-			["preferToUpdate"] = false,
+			["icon"] = true,
 			["uid"] = "Fyj2Qe2APdw",
 			["automaticWidth"] = "Auto",
 			["width"] = 28,
@@ -3238,6 +3238,36 @@ WeakAurasSaved = {
 			["justify"] = "CENTER",
 			["tocversion"] = 11305,
 			["id"] = "Total AoE Icon",
+			["preferToUpdate"] = false,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["displayIcon"] = 132996,
+			["config"] = {
+				["Cl"] = true,
+				["SHW"] = true,
+				["DD"] = true,
+				["RoF"] = true,
+				["AE"] = true,
+				["GSC"] = true,
+				["HN"] = true,
+				["CL"] = true,
+				["RLB"] = true,
+				["dmgWindow"] = 0.2,
+				["Vl"] = true,
+				["TG"] = true,
+				["Ww"] = true,
+				["BW"] = true,
+				["Hf"] = true,
+				["OoI"] = true,
+				["Bz"] = true,
+				["Fs"] = true,
+				["FsDoT"] = false,
+				["msgTime"] = 3,
+				["CoC"] = true,
+				["FN"] = true,
+				["Hc"] = true,
+			},
+			["inverse"] = false,
 			["animation"] = {
 				["start"] = {
 					["colorR"] = 1,
@@ -3293,36 +3323,6 @@ WeakAurasSaved = {
 					["duration"] = "0.2",
 				},
 			},
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownEdge"] = false,
-			["config"] = {
-				["Cl"] = true,
-				["SHW"] = true,
-				["DD"] = true,
-				["RoF"] = true,
-				["AE"] = true,
-				["GSC"] = true,
-				["HN"] = true,
-				["CL"] = true,
-				["RLB"] = true,
-				["dmgWindow"] = 0.2,
-				["Vl"] = true,
-				["TG"] = true,
-				["Ww"] = true,
-				["BW"] = true,
-				["Hf"] = true,
-				["OoI"] = true,
-				["Bz"] = true,
-				["Fs"] = true,
-				["FsDoT"] = false,
-				["msgTime"] = 3,
-				["CoC"] = true,
-				["FN"] = true,
-				["Hc"] = true,
-			},
-			["inverse"] = false,
-			["displayIcon"] = 132996,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -3486,7 +3486,7 @@ WeakAurasSaved = {
 				}, -- [8]
 			},
 			["cooldown"] = false,
-			["icon"] = true,
+			["cooldownEdge"] = false,
 		},
 		["Frost Nova"] = {
 			["color"] = {
@@ -3588,7 +3588,38 @@ WeakAurasSaved = {
 			},
 			["cooldownTextDisabled"] = false,
 			["regionType"] = "icon",
+			["url"] = "https://wago.io/jpUN6WoYU/1",
+			["actions"] = {
+				["start"] = {
+					["do_glow"] = false,
+				},
+				["init"] = {
+					["do_custom"] = true,
+					["custom"] = "-- aura_env.region:CreateBeautyBorder(6)",
+				},
+				["finish"] = {
+				},
+			},
+			["xOffset"] = -70,
 			["parent"] = "Farming Tracker Spell",
+			["auto"] = true,
+			["uid"] = "OnHejeaJcIq",
+			["zoom"] = 0,
+			["semver"] = "1.0.0",
+			["tocversion"] = 11304,
+			["id"] = "Frost Nova",
+			["width"] = 64,
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
+			["config"] = {
+			},
+			["inverse"] = false,
+			["authorOptions"] = {
+			},
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -3608,37 +3639,6 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
-			},
-			["url"] = "https://wago.io/jpUN6WoYU/1",
-			["xOffset"] = -70,
-			["auto"] = true,
-			["uid"] = "OnHejeaJcIq",
-			["zoom"] = 0,
-			["semver"] = "1.0.0",
-			["tocversion"] = 11304,
-			["id"] = "Frost Nova",
-			["width"] = 64,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["do_glow"] = false,
-				},
-				["init"] = {
-					["do_custom"] = true,
-					["custom"] = "-- aura_env.region:CreateBeautyBorder(6)",
-				},
-				["finish"] = {
-				},
-			},
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["authorOptions"] = {
 			},
 		},
 		["KTList"] = {
@@ -3870,10 +3870,10 @@ WeakAurasSaved = {
 						["names"] = {
 						},
 						["customOverlay1"] = "",
-						["custom"] = "function(...)\n  return aura_env:on_tsu(...)\nend",
-						["events"] = "WA_NAN_SHIELD",
 						["spellIds"] = {
 						},
+						["custom"] = "function(...)\n  return aura_env:on_tsu(...)\nend",
+						["events"] = "WA_NAN_SHIELD",
 						["check"] = "event",
 						["subeventPrefix"] = "SPELL",
 						["subeventSuffix"] = "_CAST_START",
@@ -4025,15 +4025,15 @@ WeakAurasSaved = {
 			["width"] = 200,
 			["sparkHeight"] = 30,
 			["texture"] = "Details Flat",
-			["semver"] = "1.3.4",
+			["auto"] = true,
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
-			["spark"] = false,
+			["semver"] = "1.3.4",
 			["tocversion"] = 11302,
 			["id"] = "nanShield:Bar",
 			["sparkHidden"] = "NEVER",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["auto"] = true,
+			["spark"] = false,
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -4558,11 +4558,11 @@ WeakAurasSaved = {
 	},
 	["instanceHistoryDb"] = {
 		["sess"] = {
-			["delayUpdate"] = 1601908098,
+			["histOldest"] = "n/a",
 			["enterLoc"] = {
 				["instance"] = -1,
 			},
-			["histOldest"] = "n/a",
+			["delayUpdate"] = 1601916112.78319,
 			["histLiveCount"] = 0,
 		},
 		["History"] = {

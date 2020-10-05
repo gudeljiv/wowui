@@ -339,19 +339,19 @@ MonkeyQuestConfig = {
 			["Ashenvale - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Stonetalon Standstill - false"] = {
+			["Satyr Horns - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Shaman - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Melor Sends Word - false"] = {
+			["Thunder Bluff - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Ashenvale Outrunners - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Satyr Horns - false"] = {
+			["Stonetalon Standstill - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Deepmoss Spider Eggs - false"] = {
@@ -360,10 +360,10 @@ MonkeyQuestConfig = {
 			["The Barrens - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Warsong Supplies - false"] = {
+			["Hillsbrad Foothills - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Hillsbrad Foothills - true"] = {
+			["Warsong Supplies - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Report to Kadrak - false"] = {
@@ -378,7 +378,7 @@ MonkeyQuestConfig = {
 			["Isha Awak - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Thunder Bluff - true"] = {
+			["Melor Sends Word - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -1093,19 +1093,19 @@ MonkeyQuestConfig = {
 		["m_bShowZoneHighlight"] = true,
 		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
 		["m_aQuestList"] = {
-			["Durotar - true"] = {
+			["Break a Few Eggs - false"] = {
 				["m_bChecked"] = true,
 			},
 			["From The Wreckage.... - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Break a Few Eggs - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Encroachment - false"] = {
+			["Durotar - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Vanquish the Betrayers - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Encroachment - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -1141,88 +1141,6 @@ MonkeyQuestConfig = {
 		["m_bHideTitle"] = false,
 		["m_bAlwaysHeaders"] = false,
 		["m_bGrowUp"] = false,
-	},
-	["Golemagg|Kamenac"] = {
-		["m_aQuestList"] = {
-			["Orgrimmar - true"] = {
-				["m_bChecked"] = true,
-			},
-			["True Believers - false"] = {
-				["m_bChecked"] = true,
-			},
-			["For Great Honor - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Hinterlands - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Zaeldarr the Outcast - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Stratholme - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Eastern Plaguelands - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Scholomance - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Into The Maw of Madness - false"] = {
-				["m_bChecked"] = true,
-			},
-			["A Troubled Spirit - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Darkstone Tablet - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Restless Souls - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Sunken Temple - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Warrior - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Noggle's Lost Satchel - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Urok Doomhowl - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Bijou's Belongings - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Gammerita, Mon! - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Alterac Valley - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Barov Family Fortune - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Jammal'an the Prophet - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Archivist - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Blackrock Spire - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Silithus - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Invaders of Alterac Valley - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Hunt the Savages - false"] = {
-				["m_bChecked"] = true,
-			},
-		},
 	},
 	["Golemagg|Greenwise"] = {
 		["m_aQuestList"] = {
@@ -1273,24 +1191,86 @@ MonkeyQuestConfig = {
 			},
 		},
 	},
-	["Stonespine|Vermins"] = {
+	["Golemagg|Kamenac"] = {
 		["m_aQuestList"] = {
-			["Sarkoth - false"] = {
+			["Orgrimmar - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Valley of Trials - true"] = {
+			["True Believers - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Vile Familiars - false"] = {
+			["For Great Honor - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Cutting Teeth - false"] = {
+			["The Hinterlands - true"] = {
 				["m_bChecked"] = true,
 			},
-		},
-	},
-	["Golemagg|Dmitar"] = {
-		["m_aQuestList"] = {
+			["Zaeldarr the Outcast - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Stratholme - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Eastern Plaguelands - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Scholomance - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Into The Maw of Madness - false"] = {
+				["m_bChecked"] = true,
+			},
+			["A Troubled Spirit - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Darkstone Tablet - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Restless Souls - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Sunken Temple - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Warrior - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Noggle's Lost Satchel - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Bijou's Belongings - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Urok Doomhowl - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Gammerita, Mon! - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Alterac Valley - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Barov Family Fortune - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Jammal'an the Prophet - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Archivist - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Blackrock Spire - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Silithus - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Invaders of Alterac Valley - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Hunt the Savages - false"] = {
+				["m_bChecked"] = true,
+			},
 		},
 	},
 	["Golemagg|Mohikanac"] = {
@@ -1308,6 +1288,26 @@ MonkeyQuestConfig = {
 				["m_bChecked"] = true,
 			},
 			["Blackfathom Deeps - true"] = {
+				["m_bChecked"] = true,
+			},
+		},
+	},
+	["Golemagg|Dmitar"] = {
+		["m_aQuestList"] = {
+		},
+	},
+	["Stonespine|Vermins"] = {
+		["m_aQuestList"] = {
+			["Sarkoth - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Valley of Trials - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Vile Familiars - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Cutting Teeth - false"] = {
 				["m_bChecked"] = true,
 			},
 		},

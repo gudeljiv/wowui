@@ -1,0 +1,16 @@
+
+xKillCount = {
+	["show"] = true,
+	["position"] = {
+		["y"] = -278.999969482422,
+		["x"] = 425.000183105469,
+		["to"] = "TOPLEFT",
+		["from"] = "TOPLEFT",
+	},
+	["killLog"] = {
+		["Mirefin Coastrunner"] = {
+			["name"] = "Mirefin Coastrunner",
+			["count"] = 2,
+		},
+	},
+}

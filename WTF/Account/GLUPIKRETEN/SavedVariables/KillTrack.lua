@@ -742,13 +742,13 @@ KILLTRACK = {
 		},
 		[4358] = {
 			["AchievCount"] = 0,
-			["Kills"] = 27,
+			["Kills"] = 52,
 			["Name"] = "Mirefin Puddlejumper",
 			["Exp"] = 220,
 		},
 		[4359] = {
 			["AchievCount"] = 0,
-			["Kills"] = 30,
+			["Kills"] = 53,
 			["Name"] = "Mirefin Murloc",
 			["Exp"] = 231,
 		},
@@ -760,15 +760,15 @@ KILLTRACK = {
 		},
 		[4361] = {
 			["AchievCount"] = 0,
-			["Kills"] = 44,
+			["Kills"] = 96,
 			["Name"] = "Mirefin Muckdweller",
-			["Exp"] = 242,
+			["Exp"] = 236,
 		},
 		[4362] = {
 			["AchievCount"] = 0,
-			["Kills"] = 49,
+			["Kills"] = 92,
 			["Name"] = "Mirefin Coastrunner",
-			["Exp"] = 231,
+			["Exp"] = 242,
 		},
 		[4363] = {
 			["AchievCount"] = 0,

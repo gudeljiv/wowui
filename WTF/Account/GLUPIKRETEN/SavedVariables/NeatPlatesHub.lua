@@ -172,7 +172,12 @@ NeatPlatesHubSettings = {
 		["WidgetAuraTrackDisease"] = true,
 		["ColorFriendlyStatusTextMode"] = 1,
 		["StyleForceBarsOnTargets"] = false,
-		["TextUseBlizzardFont"] = false,
+		["ColorAttackingOtherTank"] = {
+			["a"] = 0.999997794628143,
+			["r"] = 0.058823399245739,
+			["g"] = 0.666665196418762,
+			["b"] = 0.784312009811401,
+		},
 		["StyleEnemyBarsOnActive"] = true,
 		["ColorGuildMember"] = {
 			["a"] = 0.999997794628143,
@@ -181,12 +186,7 @@ NeatPlatesHubSettings = {
 			["b"] = 0.999997794628143,
 		},
 		["ClassColorPartyMembers"] = false,
-		["ColorAttackingOtherTank"] = {
-			["a"] = 0.999997794628143,
-			["r"] = 0.058823399245739,
-			["g"] = 0.666665196418762,
-			["b"] = 0.784312009811401,
-		},
+		["UnitSpotlightScaleEnable"] = true,
 		["EmphasizedUnique"] = true,
 		["ScaleIgnoreNonEliteUnits"] = false,
 		["AuraScale"] = 1,
@@ -197,7 +197,7 @@ NeatPlatesHubSettings = {
 			["b"] = 0.149019286036491,
 		},
 		["BorderBuffPurgeable"] = 1,
-		["UnitSpotlightScaleEnable"] = true,
+		["TextUseBlizzardFont"] = false,
 		["ThreatWarningMode"] = "Auto",
 		["ColorPartyAggroText"] = false,
 		["ColorSchoolShadow"] = {

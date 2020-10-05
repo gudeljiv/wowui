@@ -1,4 +1,11 @@
 Version: 1
+Frame: KillCountFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 425
+Y: -279
+W: 150
+H: 101
 Frame: StanceButton1
 FrameLevel: 3
 Anchor: CENTER

@@ -76,26 +76,26 @@ kctitle.text:SetText("Kill Tracker")
 kctitle.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 
 local kctotal = CreateFrame("Frame", "KillCountTotal", kc)
-kctotal:SetPoint("TOPLEFT", kc, "TOPLEFT", 10, -30)
+kctotal:SetPoint("TOP", kc, "TOP", 0, -30)
 kctotal:SetWidth(1)
 kctotal:SetHeight(1)
 kctotal.text = kctotal:CreateFontString(nil, "ARTWORK")
 kctotal.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
-kctotal.text:SetPoint("TOPLEFT", kctotal, "TOPLEFT", 0, 0)
+kctotal.text:SetPoint("TOP", kctotal, "TOP", 0, 0)
 kctotal.text:SetText("Total: 0")
 kctotal.text:SetJustifyH("LEFT")
 kctotal.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 
-local kctime = CreateFrame("Frame", "KillCountTime", kc)
-kctime:SetPoint("TOPRIGHT", kc, "TOPRIGHT", -10, -30)
-kctime:SetWidth(1)
-kctime:SetHeight(1)
-kctime.text = kctime:CreateFontString(nil, "ARTWORK")
-kctime.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
-kctime.text:SetPoint("TOPRIGHT", kctime, "TOPRIGHT", 0, 0)
-kctime.text:SetText("00:00")
-kctime.text:SetJustifyH("RIGHT")
-kctime.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
+-- local kctime = CreateFrame("Frame", "KillCountTime", kc)
+-- kctime:SetPoint("TOPRIGHT", kc, "TOPRIGHT", -10, -30)
+-- kctime:SetWidth(1)
+-- kctime:SetHeight(1)
+-- kctime.text = kctime:CreateFontString(nil, "ARTWORK")
+-- kctime.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
+-- kctime.text:SetPoint("TOPRIGHT", kctime, "TOPRIGHT", 0, 0)
+-- kctime.text:SetText("00:00")
+-- kctime.text:SetJustifyH("RIGHT")
+-- kctime.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 
 local kclistnames = CreateFrame("Frame", "KillCountListNames", kc)
 kclistnames:SetPoint("TOPLEFT", kc, "TOPLEFT", 10, -50)
@@ -158,6 +158,9 @@ kc:SetScript(
 )
 
 local function SortData()
+	if (not xKillCount.show) then
+		return
+	end
 	sortedKillLog = {}
 	for k, v in pairs(xKillCount.killLog) do
 		table.insert(
@@ -178,6 +181,10 @@ local function SortData()
 end
 
 local function SendToTable(name)
+	if (not xKillCount.show) then
+		return
+	end
+
 	if (xKillCount.killLog[name] ~= nil) then
 		xKillCount.killLog[name].count = xKillCount.killLog[name].count + 1
 	else
@@ -191,6 +198,15 @@ local function SendToTable(name)
 end
 
 local function DisplayData()
+	if xKillCount and xKillCount.show then
+		kc:ClearAllPoints()
+		kc:SetPoint(xKillCount.position.from, (xKillCount.position.anchor and xKillCount.position.anchor or nil), xKillCount.position.to, xKillCount.position.x, xKillCount.position.y)
+		kc:Show()
+	else
+		kc:Hide()
+		return
+	end
+
 	names = ""
 	counts = ""
 	percentages = ""
@@ -215,15 +231,7 @@ local function DisplayData()
 	local h = kctitle.text:GetStringHeight() + kctotal.text:GetStringHeight() + kclistnames.text:GetStringHeight() + 75
 	kc:SetSize(math.max(w, 150), math.max(h, 85))
 
-	kctime.text:SetText(xVermin:TimeFormat(time() - tStart))
-
-	if xKillCount and xKillCount.show then
-		kc:ClearAllPoints()
-		kc:SetPoint(xKillCount.position.from, (xKillCount.position.anchor and xKillCount.position.anchor or nil), xKillCount.position.to, xKillCount.position.x, xKillCount.position.y)
-		kc:Show()
-	else
-		kc:Hide()
-	end
+	-- kctime.text:SetText(xVermin:TimeFormat(time() - tStart))
 end
 
 local function OnAddonLoaded()
@@ -254,13 +262,16 @@ kc:SetScript(
 		end
 		local _, eventType, _, sourceGUID, sourceName, _, _, destGUID, destName, _, _, spellID = CombatLogGetCurrentEventInfo()
 
-		-- if (eventType == "PARTY_KILL" and sourceName == UnitName("player")) then
-		-- 	SendToTable(destName)
-		-- 	DisplayData()
-		-- else
-		if (eventType == "UNIT_DIED") then
-			SendToTable(destName)
-			DisplayData()
+		if (xVermin.Class == ("HUNTER" or "WARLOCK") and UnitExists("pet")) then
+			if (eventType == "UNIT_DIED") then
+				SendToTable(destName)
+				DisplayData()
+			end
+		else
+			if (eventType == "PARTY_KILL" and sourceName == UnitName("player")) then
+				SendToTable(destName)
+				DisplayData()
+			end
 		end
 	end
 )
