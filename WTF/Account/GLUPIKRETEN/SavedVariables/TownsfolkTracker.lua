@@ -8,6 +8,7 @@ TownsfolkTrackerDB = {
 		["Grgur - Golemagg"] = "Default",
 		["Koloman - Golemagg"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
+		["Antun - Golemagg"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",

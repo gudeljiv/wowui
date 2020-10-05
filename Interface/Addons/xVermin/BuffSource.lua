@@ -6,16 +6,7 @@ local function ProcessAura(tooltip, func, ...)
 		local pet = caster
 		caster = (UnitIsUnit(caster, "pet") and "player" or caster:gsub("[pP][eE][tT]", ""))
 		if caster then
-			local _, class = UnitClass(caster)
-			local color = RAID_CLASS_COLORS[class]
-			if class == "SHAMAN" then
-				color = {
-					b = 0.86666476726532,
-					g = 0.4392147064209,
-					r = 0
-				}
-			end
-			tooltip:AddDoubleLine(" ", (pet == caster and "|cffffc000Source:|r %s" or "|cffffc000Source:|r %s (%s)"):format(UnitName(caster), UnitName(pet)), 1, 0.975, 0, color.r, color.g, color.b)
+			tooltip:AddDoubleLine(" ", (pet == caster and "|cffffc000Source:|r %s" or "|cffffc000Source:|r %s (%s)"):format(UnitName(caster), UnitName(pet)), 1, 0.975, 0, xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b)
 		end
 		tooltip:Show()
 	end

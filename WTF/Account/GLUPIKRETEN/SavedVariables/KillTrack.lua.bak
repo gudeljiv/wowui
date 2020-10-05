@@ -1,9 +1,14 @@
 
 KILLTRACK = {
-	["PRINTKILLS"] = false,
 	["COUNT_GROUP"] = true,
+	["PRINTKILLS"] = false,
 	["SHOW_EXP"] = false,
-	["TOOLTIP"] = true,
+	["BROKER"] = {
+		["MINIMAP"] = {
+			["hide"] = true,
+		},
+		["SHORT_TEXT"] = false,
+	},
 	["PRINTNEW"] = false,
 	["MOBS"] = {
 		[2956] = {
@@ -512,6 +517,12 @@ KILLTRACK = {
 			["Name"] = "Miner Hackett",
 			["Exp"] = 179,
 		},
+		[4363] = {
+			["AchievCount"] = 0,
+			["Kills"] = 1,
+			["Name"] = "Mirefin Oracle",
+			["Exp"] = 28,
+		},
 		[2449] = {
 			["AchievCount"] = 0,
 			["Kills"] = 2,
@@ -534,11 +545,6 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Valdred Moray",
 		},
-		[4128] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Hecklefang Stalker",
-		},
 		[4358] = {
 			["AchievCount"] = 0,
 			["Kills"] = 27,
@@ -557,21 +563,15 @@ KILLTRACK = {
 			["Name"] = "Magistrate Burnside",
 			["Exp"] = 29,
 		},
-		[2427] = {
-			["AchievCount"] = 0,
-			["Kills"] = 2,
-			["Name"] = "Jailor Eston",
-			["Exp"] = 23,
-		},
 		[3415] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Savannah Huntress",
 		},
-		[2428] = {
+		[2427] = {
 			["AchievCount"] = 0,
 			["Kills"] = 2,
-			["Name"] = "Jailor Marlgen",
+			["Name"] = "Jailor Eston",
 			["Exp"] = 23,
 		},
 		[3640] = {
@@ -580,21 +580,17 @@ KILLTRACK = {
 			["Name"] = "Evolving Ectoplasm",
 			["Exp"] = 26,
 		},
+		[2428] = {
+			["AchievCount"] = 0,
+			["Kills"] = 2,
+			["Name"] = "Jailor Marlgen",
+			["Exp"] = 23,
+		},
 		[2404] = {
 			["AchievCount"] = 0,
 			["Kills"] = 1,
 			["Name"] = "Blacksmith Verringtan",
 			["Exp"] = 54,
-		},
-		[1924] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Moonrage Bloodhowler",
-		},
-		[4351] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Bloodfen Raptor",
 		},
 		[2503] = {
 			["AchievCount"] = 0,
@@ -602,32 +598,48 @@ KILLTRACK = {
 			["Name"] = "Hillsbrad Foreman",
 			["Exp"] = 146,
 		},
+		[4351] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Bloodfen Raptor",
+		},
 		[2565] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Giant Plains Creeper",
 		},
-		[2559] = {
-			["AchievCount"] = 0,
-			["Kills"] = 8,
-			["Name"] = "Highland Strider",
-			["Exp"] = 322,
-		},
-		[3835] = {
+		[1924] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Biletoad",
+			["Name"] = "Moonrage Bloodhowler",
 		},
 		[2560] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Highland Thrasher",
 		},
-		[2561] = {
+		[2559] = {
 			["AchievCount"] = 0,
-			["Kills"] = 16,
-			["Name"] = "Highland Fleshstalker",
-			["Exp"] = 494,
+			["Kills"] = 13,
+			["Name"] = "Highland Strider",
+			["Exp"] = 286,
+		},
+		[3835] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Biletoad",
+		},
+		[2305] = {
+			["AchievCount"] = 0,
+			["Kills"] = 12,
+			["Name"] = "Foreman Bonds",
+			["Exp"] = 204,
+		},
+		[1923] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Bloodsnout Worg",
+			["Exp"] = 10,
 		},
 		[4341] = {
 			["AchievCount"] = 0,
@@ -650,17 +662,17 @@ KILLTRACK = {
 			["Name"] = "Plains Creeper",
 			["Exp"] = 394,
 		},
-		[1923] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Bloodsnout Worg",
-			["Exp"] = 10,
-		},
 		[2053] = {
 			["AchievCount"] = 0,
 			["Kills"] = 20,
 			["Name"] = "Haggard Refugee",
 			["Exp"] = 113,
+		},
+		[2561] = {
+			["AchievCount"] = 0,
+			["Kills"] = 16,
+			["Name"] = "Highland Fleshstalker",
+			["Exp"] = 494,
 		},
 		[2054] = {
 			["AchievCount"] = 0,
@@ -679,22 +691,16 @@ KILLTRACK = {
 			["Name"] = "Druid of the Fang",
 			["Exp"] = 42,
 		},
-		[2305] = {
-			["AchievCount"] = 0,
-			["Kills"] = 12,
-			["Name"] = "Foreman Bonds",
-			["Exp"] = 204,
-		},
-		[2566] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Boulderfist Brute",
-		},
 		[2248] = {
 			["AchievCount"] = 0,
 			["Kills"] = 44,
 			["Name"] = "Cave Yeti",
 			["Exp"] = 33,
+		},
+		[2566] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Boulderfist Brute",
 		},
 		[2407] = {
 			["AchievCount"] = 0,
@@ -723,6 +729,11 @@ KILLTRACK = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Gamon",
+		},
+		[4128] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Hecklefang Stalker",
 		},
 		[2442] = {
 			["AchievCount"] = 0,
@@ -753,11 +764,11 @@ KILLTRACK = {
 			["Name"] = "Mirefin Coastrunner",
 			["Exp"] = 231,
 		},
-		[4363] = {
+		[2572] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Mirefin Oracle",
-			["Exp"] = 28,
+			["Kills"] = 3,
+			["Name"] = "Drywhisker Kobold",
+			["Exp"] = 452,
 		},
 		[2738] = {
 			["AchievCount"] = 0,
@@ -784,10 +795,5 @@ KILLTRACK = {
 	["ACHIEV_THRESHOLD"] = 1000,
 	["DISABLE_DUNGEONS"] = false,
 	["DISABLE_RAIDS"] = false,
-	["BROKER"] = {
-		["MINIMAP"] = {
-			["hide"] = true,
-		},
-		["SHORT_TEXT"] = false,
-	},
+	["TOOLTIP"] = true,
 }

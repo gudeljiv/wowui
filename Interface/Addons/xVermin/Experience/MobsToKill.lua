@@ -1,16 +1,6 @@
 local _, xVermin = ...
 
---local font = "Interface\\AddOns\\xVermin\\Media\\fontAtari.ttf"
-local _, class, _ = UnitClass("player")
 local r, g, b, NewXP, hmmm, gained, XPToLVL, num, segment, relperc, r1, r2, g1, g2, b1, b2, PlayerXP, PetExpFrame, PlayerExpFrame, percent, rested, output, pcxp, pmxp, ppercent, MobsToKill
-local color = RAID_CLASS_COLORS[class]
-if class == "SHAMAN" then
-	color = {
-		b = 0.86666476726532,
-		g = 0.4392147064209,
-		r = 0
-	}
-end
 
 MobsToKill = CreateFrame("Frame", "CustomContainer_CombatMobsToKill", CustomContainer_Combat)
 MobsToKill:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 2)
@@ -58,7 +48,7 @@ local function UpdateExperience()
 		XPToLVL = MaxXP - NewXP
 
 		XPToLevel.text:SetText(XPToLVL .. " (XP)")
-		XPToLevel.text:SetTextColor(color.r, color.g, color.b, 1)
+		XPToLevel.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 
 		xVermin:LogBreak(false, "mbk")
 		xVermin:Log("current xp: " .. CurrentXP, "mbk")
@@ -71,7 +61,7 @@ local function UpdateExperience()
 		if gained > 0 then
 			hmmm = math.ceil((MaxXP - NewXP) / gained)
 			MobsToKill.text:SetText(hmmm)
-			MobsToKill.text:SetTextColor(color.r, color.g, color.b, 1)
+			MobsToKill.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 
 			xVermin:Log("mbk frame: " .. (mbk and "true" or "false"), "mbk")
 			xVermin:Log("mbk timer: " .. (MobToKillTimer and "true" or "false"), "mbk")
@@ -96,7 +86,7 @@ local function UpdateExperience()
 			)
 
 			gainedExperience.text:SetText("+" .. gained .. " (XP)")
-			gainedExperience.text:SetTextColor(color.r, color.g, color.b, 1)
+			gainedExperience.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 			UIFrameFadeIn(gainedExperience, 1, 0, 1)
 			C_Timer.After(
 				3,

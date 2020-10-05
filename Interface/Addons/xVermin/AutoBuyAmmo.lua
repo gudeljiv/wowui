@@ -2,7 +2,6 @@ local _, xVermin = ...
 
 local function BuyAmmo()
 	local index, TypeOfAmmo, BowEquipped, GunEquipped
-	local _, class, _ = UnitClass("player")
 	local numItems = GetMerchantNumItems()
 	local playerLevel = UnitLevel("player")
 
@@ -19,7 +18,7 @@ local function BuyAmmo()
 		ammoLevel = 40
 	end
 
-	if class ~= ("HUNTER" or "WARRIOR") then
+	if xVermin.Class ~= ("HUNTER" or "WARRIOR") then
 		return
 	end
 	BowEquipped = IsEquippedItemType("Bows") or IsEquippedItemType("Crossbows")
@@ -40,8 +39,7 @@ local function BuyAmmo()
 			return
 		end
 
-		local itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemIcon, itemSellPrice, itemClassID, itemSubClassID, bindType, expacID, itemSetID, isCraftingReagent =
-			GetItemInfo(GetMerchantItemLink(item))
+		local itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemIcon, itemSellPrice, itemClassID, itemSubClassID, bindType, expacID, itemSetID, isCraftingReagent = GetItemInfo(GetMerchantItemLink(item))
 
 		if itemSubType == TypeOfAmmo and isUsable and itemMinLevel == ammoLevel then
 			index = item
@@ -50,7 +48,7 @@ local function BuyAmmo()
 
 	if index then
 		local maxammo = 200
-		if class == "HUNTER" then
+		if xVermin.Class == "HUNTER" then
 			maxammo = GetContainerNumSlots(1) * 200
 		end
 		local ammoCount = GetInventoryItemCount("player", GetInventorySlotInfo("AmmoSlot"))

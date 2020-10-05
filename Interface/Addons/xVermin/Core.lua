@@ -1,5 +1,16 @@
 local _, xVermin = ...
 
+RAID_CLASS_COLORS["SHAMAN"] = {r = 0 / 255, g = 112 / 255, b = 222 / 255, colorStr = "ff0070DE"}
+xVermin.Class = select(2, UnitClass("player"))
+xVermin.ClassColor = RAID_CLASS_COLORS[xVermin.Class]
+-- if select(2, UnitClass("player")) == "SHAMAN" then
+-- 	xVermin.ClassColor = {
+-- 		r = 050 / 255,
+-- 		g = 111 / 255,
+-- 		b = 255 / 255
+-- 	}
+-- end
+
 SLASH_RELOAD1 = "/rl"
 SlashCmdList["RELOAD"] = function(msg)
 	ReloadUI()
@@ -41,8 +52,6 @@ frame:SetScript(
 		end
 	end
 )
-
-RAID_CLASS_COLORS["SHAMAN"] = {r = 050 / 255, g = 111 / 255, b = 255 / 255, colorStr = "ff326fff"}
 
 function xVermin:FormatValue(self)
 	if (self >= 10000) then
@@ -90,4 +99,16 @@ function xVermin:ColorGradient(perc, ...)
 	segment, relperc = math.modf(perc * (num - 1))
 	r1, g1, b1, r2, g2, b2 = select((segment * 3) + 1, ...)
 	return r1 + (r2 - r1) * relperc, g1 + (g2 - g1) * relperc, b1 + (b2 - b1) * relperc
+end
+
+function xVermin:TimeFormat(time)
+	local days = floor(time / 86400)
+	local hours = floor(mod(time, 86400) / 3600)
+	local minutes = floor(mod(time, 3600) / 60)
+	local seconds = floor(mod(time, 60))
+	if (time > 3599) then
+		return format("%01d:%02d:%02d", hours, minutes, seconds)
+	else
+		return format("%02d:%02d", minutes, seconds)
+	end
 end

@@ -2,20 +2,9 @@ local _, xVermin = ...
 
 local killcountlist, killcounttotal, names, counts, total, percentages
 local sortedKillLog = {}
-local killLog = {}
+local tStart = time()
 
-local _, class, _ = UnitClass("player")
-local color = RAID_CLASS_COLORS[class]
-if class == "SHAMAN" then
-	color = {
-		b = 0.86666476726532,
-		g = 0.4392147064209,
-		r = 0
-	}
-end
-
-local defaults = {}
-defaults = {
+local defaults = {
 	show = true,
 	position = {from = "TOPLEFT", anchor = "UIParent", to = "TOPLEFT", x = 5, y = -350},
 	killLog = {}
@@ -77,54 +66,66 @@ kc:SetScript(
 )
 
 local kctitle = CreateFrame("Frame", "KillCountTitle", kc)
-kctitle:SetPoint("CENTER", kc, "CENTER", 0, 0)
+kctitle:SetPoint("TOP", kc, "TOP", 0, -10)
 kctitle:SetWidth(1)
 kctitle:SetHeight(1)
 kctitle.text = kctitle:CreateFontString(nil, "ARTWORK")
 kctitle.text:SetFont(xVermin.Config.font.arial, 14, "NONE")
-kctitle.text:SetPoint("TOP", kc, "TOP", 0, -10)
+kctitle.text:SetPoint("TOP", kctitle, "TOP", 0, 0)
 kctitle.text:SetText("Kill Tracker")
-kctitle.text:SetTextColor(color.r, color.g, color.b, 1)
+kctitle.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 
 local kctotal = CreateFrame("Frame", "KillCountTotal", kc)
-kctotal:SetPoint("CENTER", kc, "CENTER", 0, 0)
+kctotal:SetPoint("TOPLEFT", kc, "TOPLEFT", 10, -30)
 kctotal:SetWidth(1)
 kctotal:SetHeight(1)
 kctotal.text = kctotal:CreateFontString(nil, "ARTWORK")
 kctotal.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
-kctotal.text:SetPoint("TOP", kc, "TOP", 0, -30)
+kctotal.text:SetPoint("TOPLEFT", kctotal, "TOPLEFT", 0, 0)
 kctotal.text:SetText("Total: 0")
-kctotal.text:SetTextColor(color.r, color.g, color.b, 1)
+kctotal.text:SetJustifyH("LEFT")
+kctotal.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
+
+local kctime = CreateFrame("Frame", "KillCountTime", kc)
+kctime:SetPoint("TOPRIGHT", kc, "TOPRIGHT", -10, -30)
+kctime:SetWidth(1)
+kctime:SetHeight(1)
+kctime.text = kctime:CreateFontString(nil, "ARTWORK")
+kctime.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
+kctime.text:SetPoint("TOPRIGHT", kctime, "TOPRIGHT", 0, 0)
+kctime.text:SetText("00:00")
+kctime.text:SetJustifyH("RIGHT")
+kctime.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 
 local kclistnames = CreateFrame("Frame", "KillCountListNames", kc)
-kclistnames:SetPoint("LEFT", kc, "LEFT", 0, 0)
+kclistnames:SetPoint("TOPLEFT", kc, "TOPLEFT", 10, -50)
 kclistnames:SetWidth(1)
 kclistnames:SetHeight(1)
 kclistnames.text = kclistnames:CreateFontString(nil, "ARTWORK")
 kclistnames.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
-kclistnames.text:SetPoint("TOPLEFT", kc, "TOPLEFT", 10, -50)
+kclistnames.text:SetPoint("TOPLEFT", kclistnames, "TOPLEFT", 0, 0)
 kclistnames.text:SetText("")
 kclistnames.text:SetJustifyH("LEFT")
 kclistnames.text:SetTextColor(1, 1, 1, 1)
 
 local kclistvalues = CreateFrame("Frame", "KillCountListValues", kc)
-kclistvalues:SetPoint("RIGHT", kc, "RIGHT", 0, 0)
+kclistvalues:SetPoint("TOPRIGHT", kc, "TOPRIGHT", -10, -50)
 kclistvalues:SetWidth(1)
 kclistvalues:SetHeight(1)
 kclistvalues.text = kclistvalues:CreateFontString(nil, "ARTWORK")
 kclistvalues.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
-kclistvalues.text:SetPoint("TOPRIGHT", kc, "TOPRIGHT", -10, -50)
+kclistvalues.text:SetPoint("TOPRIGHT", kclistvalues, "TOPRIGHT", 0, 0)
 kclistvalues.text:SetText("")
 kclistvalues.text:SetJustifyH("RIGHT")
 kclistvalues.text:SetTextColor(1, 1, 1, 1)
 
-local kclistpercentages = CreateFrame("Frame", "KillCountListValues", kc)
-kclistpercentages:SetPoint("RIGHT", kc, "RIGHT", 0, 0)
+local kclistpercentages = CreateFrame("Frame", "KillCountListPercentages", kc)
+kclistpercentages:SetPoint("TOPRIGHT", kc, "TOPRIGHT", -10, -50)
 kclistpercentages:SetWidth(1)
 kclistpercentages:SetHeight(1)
 kclistpercentages.text = kclistpercentages:CreateFontString(nil, "ARTWORK")
 kclistpercentages.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
-kclistpercentages.text:SetPoint("TOPRIGHT", kc, "TOPRIGHT", -10, -50)
+kclistpercentages.text:SetPoint("TOPRIGHT", kclistpercentages, "TOPRIGHT", 0, 0)
 kclistpercentages.text:SetText("")
 kclistpercentages.text:SetJustifyH("RIGHT")
 kclistpercentages.text:SetTextColor(1, 1, 1, 1)
@@ -135,7 +136,7 @@ kcreset:SetPoint("BOTTOM", kc, "BOTTOM", 0, 10)
 kcreset:SetFrameStrata("MEDIUM")
 kcreset.text = kcreset:CreateFontString(nil, "ARTWORK")
 kcreset.text:SetFont(xVermin.Config.font.arial, 14, "NONE")
-kcreset.text:SetPoint("BOTTOM", kc, "BOTTOM", 0, 10)
+kcreset.text:SetPoint("BOTTOM", kcreset, "BOTTOM", 0, 0)
 kcreset.text:SetText("Reset")
 kcreset.text:SetTextColor(0.2, 0.8, 0.2, 1)
 kcreset:SetWidth(kcreset.text:GetStringWidth())
@@ -156,19 +157,6 @@ kc:SetScript(
 	end
 )
 
-local function SendToTable(name)
-	if (xKillCount.killLog[name] ~= nil) then
-		xKillCount.killLog[name].count = xKillCount.killLog[name].count + 1
-	else
-		xKillCount.killLog[name] = {
-			name = name,
-			count = 1
-		}
-	end
-
-	SortData()
-end
-
 local function SortData()
 	sortedKillLog = {}
 	for k, v in pairs(xKillCount.killLog) do
@@ -187,6 +175,19 @@ local function SortData()
 			return a.count > b.count
 		end
 	)
+end
+
+local function SendToTable(name)
+	if (xKillCount.killLog[name] ~= nil) then
+		xKillCount.killLog[name].count = xKillCount.killLog[name].count + 1
+	else
+		xKillCount.killLog[name] = {
+			name = name,
+			count = 1
+		}
+	end
+
+	SortData()
 end
 
 local function DisplayData()
@@ -210,9 +211,11 @@ local function DisplayData()
 	kclistvalues.text:SetText(counts)
 	kclistpercentages.text:SetText(percentages)
 
-	local w = kclistnames.text:GetStringWidth() + kclistpercentages.text:GetStringWidth() + 20
+	local w = kclistnames.text:GetStringWidth() + kclistpercentages.text:GetStringWidth() + 40
 	local h = kctitle.text:GetStringHeight() + kctotal.text:GetStringHeight() + kclistnames.text:GetStringHeight() + 75
 	kc:SetSize(math.max(w, 150), math.max(h, 85))
+
+	kctime.text:SetText(xVermin:TimeFormat(time() - tStart))
 
 	if xKillCount and xKillCount.show then
 		kc:ClearAllPoints()
@@ -251,9 +254,11 @@ kc:SetScript(
 		end
 		local _, eventType, _, sourceGUID, sourceName, _, _, destGUID, destName, _, _, spellID = CombatLogGetCurrentEventInfo()
 
-		-- problem imam sa petom
-		-- or ((class == "HUNTER" or class == "WARLOCK") and eventType == "UNIT_DIED")
-		if (eventType == "PARTY_KILL" and sourceName == UnitName("player")) then
+		-- if (eventType == "PARTY_KILL" and sourceName == UnitName("player")) then
+		-- 	SendToTable(destName)
+		-- 	DisplayData()
+		-- else
+		if (eventType == "UNIT_DIED") then
 			SendToTable(destName)
 			DisplayData()
 		end
@@ -266,12 +271,11 @@ kcreset:SetScript(
 		if button == "LeftButton" then
 			xKillCount.killLog = {}
 			sortedKillLog = {}
+			tStart = time()
 			DisplayData()
 		end
 	end
 )
-
-DisplayData()
 
 local function Print()
 	ChatFrame1:AddMessage("\124cffFFFF00(show/hide)\124r Show/Hide KillCount window: " .. (xKillCount.show and "\124cff00FF00show\124r" or "\124cffFF0000show\124r") .. "/" .. (not xKillCount.show and "\124cff00FF00hide\124r" or "\124cffFF0000hide\124r"))

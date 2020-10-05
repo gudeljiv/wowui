@@ -1,7 +1,5 @@
 local _, xVermin = ...
 
-local _, class, _ = UnitClass("player")
-
 local function FixBindings()
 	SetBinding("A", "STRAFELEFT", 1)
 	SetBinding("D", "STRAFERIGHT", 1)
@@ -22,7 +20,7 @@ local function FixBindings()
 	SetBinding("L", "MONKEYQUEST_CLOSE", 1)
 	SetBinding("SHIFT-K", "BAGNON_KEYS_TOGGLE", 1)
 
-	if class == "HUNTER" or class == "WARLOCK" then
+	if xVermin.Class == "HUNTER" or xVermin.Class == "WARLOCK" then
 		SetBinding("ALT-1", "BONUSACTIONBUTTON1", 1)
 		SetBinding("ALT-2", "BONUSACTIONBUTTON2", 1)
 		SetBinding("ALT-3", "BONUSACTIONBUTTON3", 1)

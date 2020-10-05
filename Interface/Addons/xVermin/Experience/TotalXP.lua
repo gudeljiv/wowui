@@ -3,16 +3,6 @@ local _, xVermin = ...
 local totalxp, pulltotal, gained = 0
 local maxxp, currentxp, tolevel
 
-local _, class, _ = UnitClass("player")
-local color = RAID_CLASS_COLORS[class]
-if class == "SHAMAN" then
-	color = {
-		b = 0.86666476726532,
-		g = 0.4392147064209,
-		r = 0
-	}
-end
-
 cc = CreateFrame("Frame", "CustomContainer", UIParent)
 cc:SetWidth(110)
 cc:SetHeight(20)
@@ -45,7 +35,7 @@ txtotal.text = txtotal:CreateFontString(nil, "ARTWORK")
 txtotal.text:SetFont(xVermin.Config.font.arial, 9, "NONE")
 txtotal.text:SetPoint("RIGHT", tx, "RIGHT", -5, -1)
 txtotal.text:SetText("T: 0")
-txtotal.text:SetTextColor(color.r, color.g, color.b, 1)
+txtotal.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 
 local txpulltotal = CreateFrame("Frame", "TotalPullXPText", tx)
 txpulltotal:SetPoint("CENTER", tx, "CENTER", 0, 0)
@@ -55,7 +45,7 @@ txpulltotal.text = txpulltotal:CreateFontString(nil, "ARTWORK")
 txpulltotal.text:SetFont(xVermin.Config.font.arial, 9, "NONE")
 txpulltotal.text:SetPoint("LEFT", tx, "LEFT", 5, -1)
 txpulltotal.text:SetText("P: 0")
-txpulltotal.text:SetTextColor(color.r, color.g, color.b, 1)
+txpulltotal.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 
 tx:SetScript(
 	"OnMouseDown",
@@ -118,7 +108,7 @@ tx:SetScript(
 
 		if event == "PLAYER_REGEN_DISABLED" then
 			tx:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\Media\\textureWhite")
-			tx:SetBeautyBorderColor(color.r, color.g, color.b, 1)
+			tx:SetBeautyBorderColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 		end
 		if event == "PLAYER_REGEN_ENABLED" then
 			tx:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\Media\\textureNormal")

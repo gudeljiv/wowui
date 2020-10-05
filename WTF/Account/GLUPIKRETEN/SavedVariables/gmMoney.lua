@@ -7,6 +7,10 @@ GMMONEY = {
 		},
 	},
 	["Golemagg"] = {
+		["Antun"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "SHAMAN",
+		},
 		["Mxzq"] = {
 			["GOLD"] = 77694,
 			["CLASS"] = "HUNTER",

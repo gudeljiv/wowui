@@ -1,14 +1,14 @@
 
 KILLTRACK = {
+	["TOOLTIP"] = true,
+	["COUNT_GROUP"] = true,
+	["SHOW_EXP"] = false,
 	["BROKER"] = {
 		["MINIMAP"] = {
 			["hide"] = true,
 		},
 		["SHORT_TEXT"] = false,
 	},
-	["PRINTKILLS"] = false,
-	["SHOW_EXP"] = false,
-	["TOOLTIP"] = true,
 	["PRINTNEW"] = false,
 	["MOBS"] = {
 		[2956] = {
@@ -87,6 +87,12 @@ KILLTRACK = {
 			["AchievCount"] = 0,
 			["Kills"] = 1,
 			["Name"] = "Corrupted Mottled Boar",
+		},
+		[3098] = {
+			["AchievCount"] = 0,
+			["Kills"] = 1,
+			["Name"] = "Mottled Boar",
+			["Exp"] = 104,
 		},
 		[4396] = {
 			["AchievCount"] = 0,
@@ -501,12 +507,6 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Rat",
 		},
-		[2572] = {
-			["AchievCount"] = 0,
-			["Kills"] = 3,
-			["Name"] = "Drywhisker Kobold",
-			["Exp"] = 452,
-		},
 		[2270] = {
 			["AchievCount"] = 0,
 			["Kills"] = 10,
@@ -522,6 +522,12 @@ KILLTRACK = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Stromgarde Cavalryman",
+		},
+		[2572] = {
+			["AchievCount"] = 0,
+			["Kills"] = 3,
+			["Name"] = "Drywhisker Kobold",
+			["Exp"] = 452,
 		},
 		[2449] = {
 			["AchievCount"] = 0,
@@ -545,15 +551,15 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Valdred Moray",
 		},
-		[4128] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Hecklefang Stalker",
-		},
 		[2442] = {
 			["AchievCount"] = 0,
 			["Kills"] = 36,
 			["Name"] = "Cow",
+		},
+		[4128] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Hecklefang Stalker",
 		},
 		[6466] = {
 			["AchievCount"] = 0,
@@ -595,22 +601,16 @@ KILLTRACK = {
 			["Name"] = "Hulking Mountain Lion",
 			["Exp"] = 29,
 		},
-		[2248] = {
-			["AchievCount"] = 0,
-			["Kills"] = 44,
-			["Name"] = "Cave Yeti",
-			["Exp"] = 33,
-		},
 		[2566] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Boulderfist Brute",
 		},
-		[2305] = {
+		[2248] = {
 			["AchievCount"] = 0,
-			["Kills"] = 12,
-			["Name"] = "Foreman Bonds",
-			["Exp"] = 204,
+			["Kills"] = 44,
+			["Name"] = "Cave Yeti",
+			["Exp"] = 33,
 		},
 		[3840] = {
 			["AchievCount"] = 0,
@@ -618,32 +618,38 @@ KILLTRACK = {
 			["Name"] = "Druid of the Fang",
 			["Exp"] = 42,
 		},
-		[2559] = {
-			["AchievCount"] = 0,
-			["Kills"] = 8,
-			["Name"] = "Highland Strider",
-			["Exp"] = 322,
-		},
 		[1909] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Vile Fin Lakestalker",
 		},
-		[3835] = {
+		[2559] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Biletoad",
+			["Kills"] = 13,
+			["Name"] = "Highland Strider",
+			["Exp"] = 286,
 		},
-		[4341] = {
+		[2305] = {
+			["AchievCount"] = 0,
+			["Kills"] = 12,
+			["Name"] = "Foreman Bonds",
+			["Exp"] = 204,
+		},
+		[2560] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Drywallow Crocolisk",
+			["Name"] = "Highland Thrasher",
 		},
 		[2561] = {
 			["AchievCount"] = 0,
 			["Kills"] = 16,
 			["Name"] = "Highland Fleshstalker",
 			["Exp"] = 494,
+		},
+		[4341] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Drywallow Crocolisk",
 		},
 		[4342] = {
 			["AchievCount"] = 0,
@@ -661,17 +667,17 @@ KILLTRACK = {
 			["Name"] = "Haggard Refugee",
 			["Exp"] = 113,
 		},
-		[2563] = {
-			["AchievCount"] = 0,
-			["Kills"] = 14,
-			["Name"] = "Plains Creeper",
-			["Exp"] = 394,
-		},
 		[1923] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Bloodsnout Worg",
 			["Exp"] = 10,
+		},
+		[2563] = {
+			["AchievCount"] = 0,
+			["Kills"] = 14,
+			["Name"] = "Plains Creeper",
+			["Exp"] = 394,
 		},
 		[2054] = {
 			["AchievCount"] = 0,
@@ -679,20 +685,20 @@ KILLTRACK = {
 			["Name"] = "Sickly Refugee",
 			["Exp"] = 127,
 		},
-		[2560] = {
+		[3835] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Highland Thrasher",
-		},
-		[1924] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Moonrage Bloodhowler",
+			["Name"] = "Biletoad",
 		},
 		[2565] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Giant Plains Creeper",
+		},
+		[1924] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Moonrage Bloodhowler",
 		},
 		[4351] = {
 			["AchievCount"] = 0,
@@ -795,5 +801,5 @@ KILLTRACK = {
 		["POSITION"] = {
 		},
 	},
-	["COUNT_GROUP"] = true,
+	["PRINTKILLS"] = false,
 }

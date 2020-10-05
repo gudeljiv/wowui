@@ -1,15 +1,5 @@
 local _, xVermin = ...
 
-local _, class = UnitClass("player")
-local color = RAID_CLASS_COLORS[class]
-if class == "SHAMAN" then
-	color = {
-		b = 0.86666476726532,
-		g = 0.4392147064209,
-		r = 0
-	}
-end
-
 -----------------------------------------------------------------------------------------------------------------------------
 -- Unit (Player) state
 -----------------------------------------------------------------------------------------------------------------------------
@@ -31,16 +21,14 @@ PlayerFrame:HookScript(
 		if (UnitIsDND("player")) then
 			cus.text:SetText("DND")
 		end
-		cus.text:SetTextColor(color.r, color.g, color.b, 1)
+		cus.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 	end
 )
 
 -----------------------------------------------------------------------------------------------------------------------------
 -- Unit (Player) ammo count
 -----------------------------------------------------------------------------------------------------------------------------
-local _, class, _ = UnitClass("player")
--- or class == "WARRIOR"
-if class == "HUNTER" then
+if xVermin.Class == "HUNTER" then
 	local ac = CreateFrame("Frame", "CustomContainer_AmmoCount", CustomContainer_Combat)
 	ac:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 2)
 	ac:SetWidth(1)
@@ -71,7 +59,7 @@ us:SetHeight(1)
 us.text = us:CreateFontString(nil, "ARTWORK")
 us.text:SetFont(xVermin.Config.font.arial, 10, "NONE")
 us.text:SetPoint("BOTTOMRIGHT", CustomContainer_Combat, "TOPRIGHT", -1, 2)
-us.text:SetTextColor(color.r, color.g, color.b, 1)
+us.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 
 local usVisible = false
 
@@ -116,7 +104,7 @@ local function CalculateFreeBagSpace()
 			fs = fs + numberOfFreeSlots
 		end
 		fbs.text:SetText(fs)
-		fbs.text:SetTextColor(color.r, color.g, color.b, 1)
+		fbs.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 	end
 end
 

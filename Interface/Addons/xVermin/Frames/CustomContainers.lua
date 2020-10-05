@@ -1,15 +1,5 @@
 local _, xVermin = ...
 
-local _, class = UnitClass("player")
-local color = RAID_CLASS_COLORS[class]
-if class == "SHAMAN" then
-	color = {
-		b = 0.86666476726532,
-		g = 0.4392147064209,
-		r = 0
-	}
-end
-
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 -- CUSTOM CONTAINER COMBAT
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -49,7 +39,7 @@ f:SetScript(
 	function(self, event, ...)
 		if event == "PLAYER_REGEN_DISABLED" then
 			cc_combat:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\Media\\textureWhite")
-			cc_combat:SetBeautyBorderColor(color.r, color.g, color.b, 1)
+			cc_combat:SetBeautyBorderColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 		end
 		if event == "PLAYER_REGEN_ENABLED" then
 			cc_combat:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\Media\\textureNormal")

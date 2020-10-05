@@ -11,8 +11,7 @@ PetHappinessFrame.Icon:SetAllPoints(PetHappinessFrame)
 PetHappinessFrame:Hide()
 
 local function InitializePetHappiness()
-	local _, class, _ = UnitClass("player")
-	if (class ~= "HUNTER") then
+	if (xVermin.Class ~= "HUNTER") then
 		return
 	end
 

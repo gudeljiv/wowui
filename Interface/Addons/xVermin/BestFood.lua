@@ -139,8 +139,7 @@ function NeedsFoodBadly:UpdateMacros()
 	CreateOrUpdateMacro("Food", foodMacro)
 	CreateOrUpdateMacro("Drink", drinkMacro)
 
-	local _, class, _ = UnitClass("player")
-	if (UnitExists("pet") and class == "HUNTER") then
+	if (UnitExists("pet") and xVermin.Class == "HUNTER") then
 		-- local petType = UnitCreatureFamily("pet")
 
 		petfoodMacro =

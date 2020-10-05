@@ -298,3 +298,4 @@ Backpack: disabled
 Skillet-Classic: disabled
 aux-addon: disabled
 FiveSecondRule: disabled
+WeakAurasArchive: enabled

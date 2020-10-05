@@ -1,5 +1,4 @@
 local _, xVermin = ...
-local _, class, _ = UnitClass("player")
 
 local size = 125
 local scale = 1.4
@@ -98,7 +97,7 @@ end
 
 local function UpdateBar()
 	UpdateBarVisibility()
-	if class == "HUNTER" then
+	if xVermin.Class == "HUNTER" then
 		UpdateBarValueAndColor()
 	end
 end
