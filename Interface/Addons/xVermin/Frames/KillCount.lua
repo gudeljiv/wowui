@@ -17,7 +17,8 @@ end
 local defaults = {}
 defaults = {
 	show = true,
-	position = {from = "TOPLEFT", anchor = "UIParent", to = "TOPLEFT", x = 5, y = -350}
+	position = {from = "TOPLEFT", anchor = "UIParent", to = "TOPLEFT", x = 5, y = -350},
+	killLog = {}
 }
 
 kc = CreateFrame("Frame", "KillCountFrame", UIParent)
@@ -156,17 +157,21 @@ kc:SetScript(
 )
 
 local function SendToTable(name)
-	if (killLog[name] ~= nil) then
-		killLog[name].count = killLog[name].count + 1
+	if (xKillCount.killLog[name] ~= nil) then
+		xKillCount.killLog[name].count = xKillCount.killLog[name].count + 1
 	else
-		killLog[name] = {
+		xKillCount.killLog[name] = {
 			name = name,
 			count = 1
 		}
 	end
 
+	SortData()
+end
+
+local function SortData()
 	sortedKillLog = {}
-	for k, v in pairs(killLog) do
+	for k, v in pairs(xKillCount.killLog) do
 		table.insert(
 			sortedKillLog,
 			{
@@ -229,6 +234,7 @@ local function OnAddonLoaded()
 		end
 	end
 
+	SortData()
 	DisplayData()
 end
 
@@ -258,7 +264,7 @@ kcreset:SetScript(
 	"OnMouseDown",
 	function(self, button)
 		if button == "LeftButton" then
-			killLog = {}
+			xKillCount.killLog = {}
 			sortedKillLog = {}
 			DisplayData()
 		end
