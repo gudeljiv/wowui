@@ -1,11 +1,11 @@
 
 xKillCount = {
-	["show"] = true,
+	["show"] = false,
 	["killLog"] = {
 	},
 	["position"] = {
-		["y"] = -279.000061035156,
-		["x"] = 425.000030517578,
+		["y"] = -307,
+		["x"] = 490.999938964844,
 		["to"] = "TOPLEFT",
 		["from"] = "TOPLEFT",
 	},

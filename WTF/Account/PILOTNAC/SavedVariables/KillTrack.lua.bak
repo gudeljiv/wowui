@@ -71,6 +71,11 @@ KILLTRACK = {
 			["Kills"] = 1,
 			["Name"] = "Lord Cobrahn",
 		},
+		[4414] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Darkfang Venomspitter",
+		},
 		[3638] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
@@ -90,6 +95,11 @@ KILLTRACK = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Young Murk Thresher",
+		},
+		[3255] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Sunscale Screecher",
 		},
 		[3671] = {
 			["AchievCount"] = 0,
@@ -111,10 +121,20 @@ KILLTRACK = {
 			["Kills"] = 7,
 			["Name"] = "Evolving Ectoplasm",
 		},
-		[3255] = {
+		[2274] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Sunscale Screecher",
+			["Kills"] = 1,
+			["Name"] = "Enraged Stanley",
+		},
+		[2371] = {
+			["AchievCount"] = 0,
+			["Kills"] = 1,
+			["Name"] = "Daggerspine Siren",
+		},
+		[2589] = {
+			["AchievCount"] = 0,
+			["Kills"] = 1,
+			["Name"] = "Syndicate Mercenary",
 		},
 		[2244] = {
 			["AchievCount"] = 0,
@@ -126,15 +146,15 @@ KILLTRACK = {
 			["Kills"] = 1,
 			["Name"] = "Lord Serpentis",
 		},
-		[2559] = {
+		[2560] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Highland Strider",
+			["Name"] = "Highland Thrasher",
 		},
-		[2371] = {
+		[2620] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Daggerspine Siren",
+			["Kills"] = 0,
+			["Name"] = "Prairie Dog",
 		},
 		[2372] = {
 			["AchievCount"] = 0,
@@ -166,20 +186,20 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Mudrock Spikeshell",
 		},
-		[2560] = {
+		[3415] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Highland Thrasher",
+			["Name"] = "Savannah Huntress",
 		},
-		[2620] = {
+		[2404] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Prairie Dog",
+			["Kills"] = 1,
+			["Name"] = "Blacksmith Verringtan",
 		},
-		[2586] = {
+		[2248] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Syndicate Highwayman",
+			["Kills"] = 42,
+			["Name"] = "Cave Yeti",
 		},
 		[2406] = {
 			["AchievCount"] = 0,
@@ -206,10 +226,10 @@ KILLTRACK = {
 			["Kills"] = 4,
 			["Name"] = "Hulking Mountain Lion",
 		},
-		[3415] = {
+		[3631] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Savannah Huntress",
+			["Name"] = "Deviate Stinglash",
 		},
 		[2344] = {
 			["AchievCount"] = 0,
@@ -226,30 +246,30 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Snapjaw",
 		},
-		[4343] = {
+		[3840] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Drywallow Snapper",
+			["Kills"] = 24,
+			["Name"] = "Druid of the Fang",
 		},
 		[2345] = {
 			["AchievCount"] = 0,
 			["Kills"] = 7,
 			["Name"] = "Dun Garok Rifleman",
 		},
-		[3840] = {
+		[2350] = {
 			["AchievCount"] = 0,
-			["Kills"] = 24,
-			["Name"] = "Druid of the Fang",
+			["Kills"] = 4,
+			["Name"] = "Forest Moss Creeper",
 		},
-		[3631] = {
+		[8886] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Deviate Stinglash",
+			["Kills"] = 14,
+			["Name"] = "Deviate Python",
 		},
-		[2404] = {
+		[2360] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Blacksmith Verringtan",
+			["Kills"] = 11,
+			["Name"] = "Hillsbrad Farmhand",
 		},
 		[2346] = {
 			["AchievCount"] = 0,
@@ -261,25 +281,25 @@ KILLTRACK = {
 			["Kills"] = 1,
 			["Name"] = "Farmer Ray",
 		},
-		[2350] = {
+		[1553] = {
 			["AchievCount"] = 0,
-			["Kills"] = 4,
-			["Name"] = "Forest Moss Creeper",
+			["Kills"] = 0,
+			["Name"] = "Greater Duskbat",
 		},
 		[2442] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Cow",
 		},
-		[4480] = {
+		[4481] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Kenata Dabyrie",
+			["Name"] = "Marcel Dabyrie",
 		},
-		[2360] = {
+		[2264] = {
 			["AchievCount"] = 0,
-			["Kills"] = 11,
-			["Name"] = "Hillsbrad Farmhand",
+			["Kills"] = 2,
+			["Name"] = "Hillsbrad Tailor",
 		},
 		[3300] = {
 			["AchievCount"] = 0,
@@ -291,20 +311,20 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Toad",
 		},
-		[2348] = {
+		[3110] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Dreadmaw Crocolisk",
+		},
+		[4358] = {
 			["AchievCount"] = 0,
 			["Kills"] = 1,
-			["Name"] = "Elder Moss Creeper",
+			["Name"] = "Mirefin Puddlejumper",
 		},
-		[1553] = {
+		[3273] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Greater Duskbat",
-		},
-		[4481] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Marcel Dabyrie",
+			["Name"] = "Kolkar Stormer",
 		},
 		[2952] = {
 			["AchievCount"] = 0,
@@ -317,10 +337,10 @@ KILLTRACK = {
 			["Kills"] = 21,
 			["Name"] = "Giant Moss Creeper",
 		},
-		[3242] = {
+		[2260] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Zhevra Runner",
+			["Kills"] = 31,
+			["Name"] = "Syndicate Rogue",
 		},
 		[5048] = {
 			["AchievCount"] = 0,
@@ -337,10 +357,10 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Thunderhead",
 		},
-		[2449] = {
+		[2451] = {
 			["AchievCount"] = 0,
-			["Kills"] = 2,
-			["Name"] = "Citizen Wilkes",
+			["Kills"] = 1,
+			["Name"] = "Farmer Kalaba",
 		},
 		[2386] = {
 			["AchievCount"] = 0,
@@ -362,10 +382,10 @@ KILLTRACK = {
 			["Kills"] = 1,
 			["Name"] = "Kresh",
 		},
-		[4361] = {
+		[3630] = {
 			["AchievCount"] = 0,
-			["Kills"] = 7,
-			["Name"] = "Mirefin Muckdweller",
+			["Kills"] = 0,
+			["Name"] = "Deviate Coiler",
 		},
 		[3463] = {
 			["AchievCount"] = 0,
@@ -382,10 +402,10 @@ KILLTRACK = {
 			["Kills"] = 32,
 			["Name"] = "Starving Mountain Lion",
 		},
-		[2451] = {
+		[2249] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Farmer Kalaba",
+			["Kills"] = 20,
+			["Name"] = "Ferocious Yeti",
 		},
 		[2448] = {
 			["AchievCount"] = 0,
@@ -407,10 +427,10 @@ KILLTRACK = {
 			["Kills"] = 3,
 			["Name"] = "Deviate Dreadfang",
 		},
-		[5755] = {
+		[2449] = {
 			["AchievCount"] = 0,
-			["Kills"] = 4,
-			["Name"] = "Deviate Viper",
+			["Kills"] = 2,
+			["Name"] = "Citizen Wilkes",
 		},
 		[2354] = {
 			["AchievCount"] = 0,
@@ -422,10 +442,10 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Mirefin Murloc",
 		},
-		[4363] = {
+		[2914] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Mirefin Oracle",
+			["Kills"] = 0,
+			["Name"] = "Snake",
 		},
 		[2450] = {
 			["AchievCount"] = 0,
@@ -437,10 +457,10 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Greater Plainstrider",
 		},
-		[2387] = {
+		[4361] = {
 			["AchievCount"] = 0,
-			["Kills"] = 8,
-			["Name"] = "Hillsbrad Councilman",
+			["Kills"] = 7,
+			["Name"] = "Mirefin Muckdweller",
 		},
 		[1789] = {
 			["AchievCount"] = 0,
@@ -462,10 +482,10 @@ KILLTRACK = {
 			["Kills"] = 95,
 			["Name"] = "Syndicate Watchman",
 		},
-		[3630] = {
+		[2403] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Deviate Coiler",
+			["Kills"] = 1,
+			["Name"] = "Farmer Getz",
 		},
 		[5761] = {
 			["AchievCount"] = 0,
@@ -477,55 +497,55 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Stromgarde Cavalryman",
 		},
-		[2249] = {
-			["AchievCount"] = 0,
-			["Kills"] = 20,
-			["Name"] = "Ferocious Yeti",
-		},
-		[2914] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Snake",
-		},
-		[2403] = {
+		[4363] = {
 			["AchievCount"] = 0,
 			["Kills"] = 1,
-			["Name"] = "Farmer Getz",
+			["Name"] = "Mirefin Oracle",
 		},
-		[2612] = {
+		[2387] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Lieutenant Valorcall",
-		},
-		[2260] = {
-			["AchievCount"] = 0,
-			["Kills"] = 31,
-			["Name"] = "Syndicate Rogue",
+			["Kills"] = 8,
+			["Name"] = "Hillsbrad Councilman",
 		},
 		[4360] = {
 			["AchievCount"] = 0,
 			["Kills"] = 1,
 			["Name"] = "Mirefin Warrior",
 		},
+		[2612] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Lieutenant Valorcall",
+		},
+		[5755] = {
+			["AchievCount"] = 0,
+			["Kills"] = 4,
+			["Name"] = "Deviate Viper",
+		},
+		[3242] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Zhevra Runner",
+		},
 		[2581] = {
 			["AchievCount"] = 0,
 			["Kills"] = 11,
 			["Name"] = "Dabyrie Militia",
 		},
-		[4358] = {
-			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Mirefin Puddlejumper",
-		},
-		[2264] = {
-			["AchievCount"] = 0,
-			["Kills"] = 2,
-			["Name"] = "Hillsbrad Tailor",
-		},
-		[3273] = {
+		[4480] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Kolkar Stormer",
+			["Name"] = "Kenata Dabyrie",
+		},
+		[6020] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Slimeshell Makrura",
+		},
+		[5756] = {
+			["AchievCount"] = 0,
+			["Kills"] = 9,
+			["Name"] = "Deviate Venomwing",
 		},
 		[2582] = {
 			["AchievCount"] = 0,
@@ -542,15 +562,15 @@ KILLTRACK = {
 			["Kills"] = 4,
 			["Name"] = "Hillsbrad Apprentice Blacksmith",
 		},
-		[5756] = {
+		[2348] = {
 			["AchievCount"] = 0,
-			["Kills"] = 9,
-			["Name"] = "Deviate Venomwing",
+			["Kills"] = 1,
+			["Name"] = "Elder Moss Creeper",
 		},
-		[8886] = {
+		[4343] = {
 			["AchievCount"] = 0,
-			["Kills"] = 14,
-			["Name"] = "Deviate Python",
+			["Kills"] = 0,
+			["Name"] = "Drywallow Snapper",
 		},
 		[1125] = {
 			["AchievCount"] = 0,
@@ -562,15 +582,15 @@ KILLTRACK = {
 			["Kills"] = 19,
 			["Name"] = "Hillsbrad Farmer",
 		},
-		[2248] = {
-			["AchievCount"] = 0,
-			["Kills"] = 42,
-			["Name"] = "Cave Yeti",
-		},
 		[2240] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Syndicate Footpad",
+		},
+		[2586] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Syndicate Highwayman",
 		},
 		[3632] = {
 			["AchievCount"] = 0,
@@ -587,20 +607,20 @@ KILLTRACK = {
 			["Kills"] = 8,
 			["Name"] = "Dun Garok Soldier",
 		},
-		[2589] = {
+		[2559] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Syndicate Mercenary",
+			["Kills"] = 0,
+			["Name"] = "Highland Strider",
 		},
 		[3633] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Deviate Slayer",
 		},
-		[2274] = {
+		[3130] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Enraged Stanley",
+			["Kills"] = 0,
+			["Name"] = "Thunder Lizard",
 		},
 	},
 	["DISABLE_RAIDS"] = false,

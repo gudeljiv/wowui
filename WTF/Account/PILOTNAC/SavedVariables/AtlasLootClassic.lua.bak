@@ -215,17 +215,6 @@ AtlasLootClassicDB = {
 		},
 		["Antun - Golemagg"] = {
 		},
-		["Slanac - Golemagg"] = {
-			["GUI"] = {
-				["selected"] = {
-					nil, -- [1]
-					"Ragefire", -- [2]
-					nil, -- [3]
-					1, -- [4]
-					0, -- [5]
-				},
-			},
-		},
 		["Vermin - Golemagg"] = {
 			["minimap"] = {
 				["shown"] = false,
@@ -248,13 +237,24 @@ AtlasLootClassicDB = {
 				},
 			},
 		},
+		["Mxyzptlk - Golemagg"] = {
+			["GUI"] = {
+				["selected"] = {
+					nil, -- [1]
+					"Ragefire", -- [2]
+					nil, -- [3]
+					1, -- [4]
+					0, -- [5]
+				},
+			},
+		},
 		["Augustin - Golemagg"] = {
 		},
 		["Grgur - Golemagg"] = {
 		},
 		["Jaroslav - Golemagg"] = {
 		},
-		["Mxyzptlk - Golemagg"] = {
+		["Slanac - Golemagg"] = {
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]

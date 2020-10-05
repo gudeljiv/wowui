@@ -158,9 +158,6 @@ kc:SetScript(
 )
 
 local function SortData()
-	if (not xKillCount.show) then
-		return
-	end
 	sortedKillLog = {}
 	for k, v in pairs(xKillCount.killLog) do
 		table.insert(
@@ -181,10 +178,6 @@ local function SortData()
 end
 
 local function SendToTable(name)
-	if (not xKillCount.show) then
-		return
-	end
-
 	if (xKillCount.killLog[name] ~= nil) then
 		xKillCount.killLog[name].count = xKillCount.killLog[name].count + 1
 	else
@@ -198,14 +191,9 @@ local function SendToTable(name)
 end
 
 local function DisplayData()
-	if xKillCount and xKillCount.show then
-		kc:ClearAllPoints()
-		kc:SetPoint(xKillCount.position.from, (xKillCount.position.anchor and xKillCount.position.anchor or nil), xKillCount.position.to, xKillCount.position.x, xKillCount.position.y)
-		kc:Show()
-	else
-		kc:Hide()
-		return
-	end
+	kc:ClearAllPoints()
+	kc:SetPoint(xKillCount.position.from, (xKillCount.position.anchor and xKillCount.position.anchor or nil), xKillCount.position.to, xKillCount.position.x, xKillCount.position.y)
+	kc:Show()
 
 	names = ""
 	counts = ""
@@ -262,15 +250,17 @@ kc:SetScript(
 		end
 		local _, eventType, _, sourceGUID, sourceName, _, _, destGUID, destName, _, _, spellID = CombatLogGetCurrentEventInfo()
 
-		if (xVermin.Class == ("HUNTER" or "WARLOCK") and UnitExists("pet")) then
-			if (eventType == "UNIT_DIED") then
-				SendToTable(destName)
-				DisplayData()
-			end
-		else
-			if (eventType == "PARTY_KILL" and sourceName == UnitName("player")) then
-				SendToTable(destName)
-				DisplayData()
+		if xKillCount and xKillCount.show then
+			if (xVermin.Class == ("HUNTER" or "WARLOCK") and UnitExists("pet")) then
+				if (eventType == "UNIT_DIED") then
+					SendToTable(destName)
+					DisplayData()
+				end
+			else
+				if (eventType == "PARTY_KILL" and sourceName == UnitName("player")) then
+					SendToTable(destName)
+					DisplayData()
+				end
 			end
 		end
 	end
@@ -303,11 +293,12 @@ SlashCmdList["kc_settings"] = function(msg)
 	end
 	if (msg == "show") then
 		xKillCount.show = true
+		kc:Show()
 	end
 	if (msg == "hide") then
 		xKillCount.show = false
+		kc:Hide()
 	end
 
 	Print()
-	DisplayData()
 end
