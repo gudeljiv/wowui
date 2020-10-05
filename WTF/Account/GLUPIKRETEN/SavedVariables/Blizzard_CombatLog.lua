@@ -171,6 +171,7 @@ Blizzard_CombatLog_Filters = {
 				{
 					["sourceFlags"] = {
 						[17681] = true,
+						[12561] = true,
 					},
 					["eventList"] = {
 						["SPELL_PERIODIC_MISSED"] = false,

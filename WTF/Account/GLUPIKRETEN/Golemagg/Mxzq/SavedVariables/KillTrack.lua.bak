@@ -5,13 +5,17 @@ KILLTRACK_CHAR = {
 			["Name"] = "Highland Fleshstalker",
 			["Kills"] = 16,
 		},
+		[2761] = {
+			["Name"] = "Cresting Exile",
+			["Kills"] = 0,
+		},
 		[2563] = {
 			["Name"] = "Plains Creeper",
-			["Kills"] = 0,
+			["Kills"] = 11,
 		},
 		[2578] = {
 			["Name"] = "Young Mesa Buzzard",
-			["Kills"] = 0,
+			["Kills"] = 2,
 		},
 		[2565] = {
 			["Name"] = "Giant Plains Creeper",
@@ -23,7 +27,7 @@ KILLTRACK_CHAR = {
 		},
 		[2559] = {
 			["Name"] = "Highland Strider",
-			["Kills"] = 0,
+			["Kills"] = 7,
 		},
 	},
 }

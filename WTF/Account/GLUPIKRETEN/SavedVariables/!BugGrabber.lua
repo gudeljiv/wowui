@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 2927,
+	["session"] = 2935,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -2795,5 +2795,21 @@ BugGrabberDB = {
 			["session"] = 2926,
 			["counter"] = 1,
 		}, -- [353]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:158: attempt to index global 'killLog' (a nil value)",
+			["time"] = "2020/10/05 12:18:08",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:158: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:157>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:247: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:238>",
+			["session"] = 2928,
+			["counter"] = 1,
+		}, -- [354]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:158: attempt to index upvalue 'killLog' (a nil value)",
+			["time"] = "2020/10/05 12:19:34",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:158: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:157>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:247: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:238>",
+			["session"] = 2929,
+			["counter"] = 1,
+		}, -- [355]
 	},
 }

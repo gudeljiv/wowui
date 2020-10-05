@@ -55,25 +55,25 @@ MonkeyQuestConfig = {
 			["The Venture Co. - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Wildmane Cleansing - false"] = {
+			["Druid - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Journey to the Crossroads - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Druid - true"] = {
+			["Wildmane Totem - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Wildmane Totem - false"] = {
+			["Wildmane Cleansing - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Supervisor Fizsprocket - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Thunderhorn Cleansing - false"] = {
+			["Heeding the Call - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Heeding the Call - false"] = {
+			["Rite of Wisdom - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Dwarven Digging - false"] = {
@@ -85,7 +85,7 @@ MonkeyQuestConfig = {
 			["The Ravaged Caravan - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Rite of Wisdom - false"] = {
+			["Thunderhorn Cleansing - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Mulgore - true"] = {
@@ -845,9 +845,9 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 1169.39990234375,
+		["m_iFrameBottom"] = 950.915161132813,
 		["m_bHideCompletedQuests"] = true,
-		["m_iFrameLeft"] = 2097.39990234375,
+		["m_iFrameLeft"] = 2019.82434082031,
 		["m_bColourDoneOrFailed"] = true,
 		["m_bLocked"] = true,
 		["m_bNoBorder"] = true,
@@ -864,7 +864,7 @@ MonkeyQuestConfig = {
 		["m_iFrameWidth"] = 270,
 		["m_bCrashBorder"] = false,
 		["m_strHeaderOpenColour"] = "|cffbfbfff",
-		["m_iFrameTop"] = 1207.39990234375,
+		["m_iFrameTop"] = 1163.76354980469,
 		["m_bObjectives"] = true,
 		["m_bHideHeader"] = false,
 		["m_bShowTooltipObjectives"] = true,

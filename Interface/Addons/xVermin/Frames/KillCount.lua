@@ -2,6 +2,7 @@ local _, xVermin = ...
 
 local killcountlist, killcounttotal, names, counts, total, percentages
 local sortedKillLog = {}
+local killLog = {}
 
 local _, class, _ = UnitClass("player")
 local color = RAID_CLASS_COLORS[class]
@@ -243,6 +244,9 @@ kc:SetScript(
 			end
 		end
 		local _, eventType, _, sourceGUID, sourceName, _, _, destGUID, destName, _, _, spellID = CombatLogGetCurrentEventInfo()
+
+		-- problem imam sa petom
+		-- or ((class == "HUNTER" or class == "WARLOCK") and eventType == "UNIT_DIED")
 		if (eventType == "PARTY_KILL" and sourceName == UnitName("player")) then
 			SendToTable(destName)
 			DisplayData()
