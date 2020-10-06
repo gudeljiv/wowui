@@ -11,7 +11,7 @@ VER 3 0000000001000001 "AR" "INV_MISC_QUESTIONMARK"
 #showtooltip Renew
 /follow augustin
 /target augustin
-/cast Renew(Rank 6)
+/cast Renew(Rank 7)
 END
 VER 3 0000000001000002 "BUFF" "INV_MISC_QUESTIONMARK"
 #showtooltip

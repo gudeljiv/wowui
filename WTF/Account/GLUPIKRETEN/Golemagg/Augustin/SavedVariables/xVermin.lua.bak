@@ -2,27 +2,27 @@
 xKillCount = {
 	["show"] = true,
 	["position"] = {
-		["y"] = 229.371841430664,
-		["x"] = 418.000030517578,
+		["y"] = 128.371017456055,
+		["x"] = 425.500427246094,
 		["to"] = "LEFT",
 		["from"] = "LEFT",
 	},
 	["killLog"] = {
 		["Mirefin Muckdweller"] = {
 			["name"] = "Mirefin Muckdweller",
-			["count"] = 6,
-		},
-		["Mirefin Coastrunner"] = {
-			["name"] = "Mirefin Coastrunner",
-			["count"] = 7,
+			["count"] = 83,
 		},
 		["Mirefin Puddlejumper"] = {
 			["name"] = "Mirefin Puddlejumper",
-			["count"] = 9,
+			["count"] = 47,
+		},
+		["Mirefin Coastrunner"] = {
+			["name"] = "Mirefin Coastrunner",
+			["count"] = 85,
 		},
 		["Mirefin Murloc"] = {
 			["name"] = "Mirefin Murloc",
-			["count"] = 10,
+			["count"] = 62,
 		},
 	},
 }

@@ -131,7 +131,7 @@ local function SetChat()
 	ChatFrame5Tab:Show()
 
 	local frame = FCF_OpenNewWindow("Debug")
-	FCF_SetChatWindowFontSize(nil, frame, 12)
+	FCF_SetChatWindowFontSize(nil, frame, 10)
 	ChatFrame_RemoveAllMessageGroups(frame)
 	ChatFrame6:ClearAllPoints()
 	ChatFrame6:SetClampRectInsets(0, -1, 0, 0)

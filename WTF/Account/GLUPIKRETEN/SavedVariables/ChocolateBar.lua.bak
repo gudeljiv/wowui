@@ -340,11 +340,11 @@ ChocolateBarDB = {
 					["customLabel"] = "KT",
 				},
 			},
-			["desaturated"] = false,
-			["fixedStrata"] = true,
-			["fontName"] = "Friz Quadrata TT",
-			["moveFrames"] = false,
 			["gap"] = 0,
+			["fixedStrata"] = true,
+			["desaturated"] = false,
+			["moveFrames"] = false,
+			["fontName"] = "Friz Quadrata TT",
 			["textOffset"] = 2,
 			["height"] = 20,
 			["forceColor"] = false,
@@ -379,7 +379,7 @@ ChocolateBarDB = {
 }
 CB_PlayedTime = {
 	["Jaroslav-"] = {
-		["total"] = 17136,
+		["total"] = 17219,
 	},
 	["Korupcija-"] = {
 		["total"] = 21359,
@@ -433,7 +433,7 @@ CB_PlayedTime = {
 		["total"] = 18945,
 	},
 	["Mxzq-"] = {
-		["total"] = 343067,
+		["total"] = 345951,
 	},
 	["Kosturko-"] = {
 		["total"] = 1457,
@@ -445,7 +445,7 @@ CB_PlayedTime = {
 		["total"] = 562,
 	},
 	["Augustin-"] = {
-		["total"] = 196969,
+		["total"] = 206861,
 	},
 	["Pitchwise-"] = {
 		["total"] = 390,

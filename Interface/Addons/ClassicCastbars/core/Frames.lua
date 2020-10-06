@@ -46,7 +46,7 @@ function addon:SetTargetCastbarPosition(castbar, parentFrame)
 		castbar:SetPoint("BOTTOM", CustomContainer_Combat, "TOP", -60, 20)
 	end
 
-	castbar:CreateBeautyBorder(2)
+	castbar:CreateBeautyBorder(6)
 end
 
 function addon:SetCastbarIconAndText(castbar, cast, db)

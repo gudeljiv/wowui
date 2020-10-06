@@ -337,6 +337,10 @@ KILLTRACK_CHAR = {
 			["Name"] = "DieBUSTA",
 			["Kills"] = 1,
 		},
+		[5828] = {
+			["Name"] = "Mishabebe",
+			["Kills"] = 0,
+		},
 		[2540] = {
 			["Name"] = "Dalaran Serpent",
 			["Kills"] = 1,
@@ -353,6 +357,10 @@ KILLTRACK_CHAR = {
 			["Name"] = "Rat",
 			["Kills"] = 0,
 		},
+		[4514] = {
+			["Name"] = "ArmordEmxara",
+			["Kills"] = 0,
+		},
 		[5184] = {
 			["Name"] = "Theramore Sentry",
 			["Kills"] = 0,
@@ -364,6 +372,10 @@ KILLTRACK_CHAR = {
 		[2450] = {
 			["Name"] = "Miner Hackett",
 			["Kills"] = 24,
+		},
+		[2738] = {
+			["Name"] = "Stromgarde Cavalryman",
+			["Kills"] = 0,
 		},
 		[3241] = {
 			["Name"] = "Savannah Patriarch",
@@ -381,9 +393,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Hillsbrad Sentry",
 			["Kills"] = 10,
 		},
-		[2332] = {
-			["Name"] = "Valdred Moray",
-			["Kills"] = 0,
+		[4358] = {
+			["Name"] = "Mirefin Puddlejumper",
+			["Kills"] = 194,
 		},
 		[3127] = {
 			["Name"] = "Venomtail Scorpid",
@@ -393,17 +405,13 @@ KILLTRACK_CHAR = {
 			["Name"] = "Jailor Eston",
 			["Kills"] = 2,
 		},
-		[4358] = {
-			["Name"] = "Mirefin Puddlejumper",
-			["Kills"] = 61,
+		[4128] = {
+			["Name"] = "Hecklefang Stalker",
+			["Kills"] = 0,
 		},
 		[2428] = {
 			["Name"] = "Jailor Marlgen",
 			["Kills"] = 2,
-		},
-		[4128] = {
-			["Name"] = "Hecklefang Stalker",
-			["Kills"] = 0,
 		},
 		[3110] = {
 			["Name"] = "Dreadmaw Crocolisk",
@@ -421,25 +429,29 @@ KILLTRACK_CHAR = {
 			["Name"] = "Vile Fin Lakestalker",
 			["Kills"] = 0,
 		},
-		[2404] = {
-			["Name"] = "Blacksmith Verringtan",
-			["Kills"] = 1,
-		},
-		[2559] = {
-			["Name"] = "Highland Strider",
-			["Kills"] = 1,
-		},
-		[2305] = {
-			["Name"] = "Foreman Bonds",
-			["Kills"] = 12,
+		[3415] = {
+			["Name"] = "Savannah Huntress",
+			["Kills"] = 0,
 		},
 		[3835] = {
 			["Name"] = "Biletoad",
 			["Kills"] = 0,
 		},
-		[1923] = {
-			["Name"] = "Bloodsnout Worg",
+		[2559] = {
+			["Name"] = "Highland Strider",
+			["Kills"] = 1,
+		},
+		[1924] = {
+			["Name"] = "Moonrage Bloodhowler",
 			["Kills"] = 0,
+		},
+		[2305] = {
+			["Name"] = "Foreman Bonds",
+			["Kills"] = 12,
+		},
+		[2053] = {
+			["Name"] = "Haggard Refugee",
+			["Kills"] = 20,
 		},
 		[4341] = {
 			["Name"] = "Drywallow Crocolisk",
@@ -453,13 +465,13 @@ KILLTRACK_CHAR = {
 			["Name"] = "Drywallow Snapper",
 			["Kills"] = 0,
 		},
-		[1924] = {
-			["Name"] = "Moonrage Bloodhowler",
+		[1923] = {
+			["Name"] = "Bloodsnout Worg",
 			["Kills"] = 0,
 		},
-		[2053] = {
-			["Name"] = "Haggard Refugee",
-			["Kills"] = 20,
+		[2563] = {
+			["Name"] = "Plains Creeper",
+			["Kills"] = 3,
 		},
 		[2560] = {
 			["Name"] = "Highland Thrasher",
@@ -477,16 +489,12 @@ KILLTRACK_CHAR = {
 			["Name"] = "Giant Plains Creeper",
 			["Kills"] = 0,
 		},
-		[2563] = {
-			["Name"] = "Plains Creeper",
-			["Kills"] = 3,
+		[2404] = {
+			["Name"] = "Blacksmith Verringtan",
+			["Kills"] = 1,
 		},
 		[4351] = {
 			["Name"] = "Bloodfen Raptor",
-			["Kills"] = 0,
-		},
-		[3415] = {
-			["Name"] = "Savannah Huntress",
 			["Kills"] = 0,
 		},
 		[2248] = {
@@ -509,13 +517,17 @@ KILLTRACK_CHAR = {
 			["Name"] = "Kenata Dabyrie",
 			["Kills"] = 2,
 		},
+		[2332] = {
+			["Name"] = "Valdred Moray",
+			["Kills"] = 0,
+		},
 		[2442] = {
 			["Name"] = "Cow",
 			["Kills"] = 36,
 		},
 		[4359] = {
 			["Name"] = "Mirefin Murloc",
-			["Kills"] = 63,
+			["Kills"] = 220,
 		},
 		[4360] = {
 			["Name"] = "Mirefin Warrior",
@@ -523,19 +535,15 @@ KILLTRACK_CHAR = {
 		},
 		[4361] = {
 			["Name"] = "Mirefin Muckdweller",
-			["Kills"] = 102,
+			["Kills"] = 302,
 		},
 		[4362] = {
 			["Name"] = "Mirefin Coastrunner",
-			["Kills"] = 99,
+			["Kills"] = 315,
 		},
 		[4363] = {
 			["Name"] = "Mirefin Oracle",
 			["Kills"] = 1,
-		},
-		[2738] = {
-			["Name"] = "Stromgarde Cavalryman",
-			["Kills"] = 0,
 		},
 		[2612] = {
 			["Name"] = "Lieutenant Valorcall",
@@ -544,6 +552,10 @@ KILLTRACK_CHAR = {
 		[2449] = {
 			["Name"] = "Citizen Wilkes",
 			["Kills"] = 2,
+		},
+		[4397] = {
+			["Name"] = "Mudrock Spikeshell",
+			["Kills"] = 0,
 		},
 	},
 }

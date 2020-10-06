@@ -2,10 +2,11 @@
 MSBTProfiles_SavedVars = {
 	["profiles"] = {
 		["Default"] = {
-			["powerThrottleDuration"] = 2,
+			["powerThrottleDuration"] = 0,
 			["critFontName"] = "MSBT Yellowjacket",
 			["hideNames"] = true,
 			["hideFullHoTOverheals"] = false,
+			["dotThrottleDuration"] = 0,
 			["creationVersion"] = "5.7.123",
 			["groupNumbers"] = true,
 			["scrollAreas"] = {

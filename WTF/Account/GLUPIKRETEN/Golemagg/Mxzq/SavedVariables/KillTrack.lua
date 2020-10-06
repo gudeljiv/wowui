@@ -1,36 +1,40 @@
 
 KILLTRACK_CHAR = {
 	["MOBS"] = {
-		[2572] = {
-			["Name"] = "Drywhisker Kobold",
-			["Kills"] = 3,
+		[2566] = {
+			["Name"] = "Boulderfist Brute",
+			["Kills"] = 0,
+		},
+		[2559] = {
+			["Name"] = "Highland Strider",
+			["Kills"] = 28,
+		},
+		[2620] = {
+			["Name"] = "Prairie Dog",
+			["Kills"] = 0,
 		},
 		[2561] = {
 			["Name"] = "Highland Fleshstalker",
 			["Kills"] = 16,
 		},
-		[2566] = {
-			["Name"] = "Boulderfist Brute",
+		[2578] = {
+			["Name"] = "Young Mesa Buzzard",
+			["Kills"] = 4,
+		},
+		[2572] = {
+			["Name"] = "Drywhisker Kobold",
+			["Kills"] = 3,
+		},
+		[2565] = {
+			["Name"] = "Giant Plains Creeper",
 			["Kills"] = 0,
 		},
 		[2563] = {
 			["Name"] = "Plains Creeper",
-			["Kills"] = 12,
-		},
-		[2578] = {
-			["Name"] = "Young Mesa Buzzard",
-			["Kills"] = 2,
+			["Kills"] = 17,
 		},
 		[2761] = {
 			["Name"] = "Cresting Exile",
-			["Kills"] = 0,
-		},
-		[2559] = {
-			["Name"] = "Highland Strider",
-			["Kills"] = 15,
-		},
-		[2565] = {
-			["Name"] = "Giant Plains Creeper",
 			["Kills"] = 0,
 		},
 	},

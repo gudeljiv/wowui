@@ -4,6 +4,7 @@ local killcountlist, killcounttotal, names, counts, total, percentages, playerGU
 local sortedKillLog = {}
 local tStart = time()
 local timeticker = nil
+local overkill = 0
 
 local defaults = {
 	show = false,
@@ -215,13 +216,14 @@ local function SortData()
 	)
 end
 
-local function SendToTable(name)
+local function SendToTable(name, source)
 	if (xKillCount.killLog[name] ~= nil) then
 		xKillCount.killLog[name].count = xKillCount.killLog[name].count + 1
 	else
 		xKillCount.killLog[name] = {
 			name = name,
-			count = 1
+			count = 1,
+			source = source
 		}
 	end
 
@@ -281,6 +283,7 @@ end
 
 kc:RegisterEvent("ADDON_LOADED")
 kc:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
+
 kc:SetScript(
 	"OnEvent",
 	function(self, event, ...)
@@ -292,26 +295,39 @@ kc:SetScript(
 		end
 
 		if xKillCount and xKillCount.show then
-			playerGUID = UnitGUID("player")
-			petGUID = UnitExists("pet") and UnitGUID("pet") or ""
-
 			local _, eventType, _, sourceGUID, sourceName, _, _, destGUID, destName, _, _, spellID = CombatLogGetCurrentEventInfo()
 
-			-- print("player guid: " .. playerGUID)
-			-- print("pet guid: " .. petGUID)
 			-- if (eventType == "UNIT_DIED") then
 			-- 	print(CombatLogGetCurrentEventInfo())
 			-- end
 
-			if (xVermin.Class == ("HUNTER" or "WARLOCK") and UnitExists("pet")) then
-				if (eventType == "UNIT_DIED") then
-					SendToTable(destName)
+			if UnitExists("pet") and sourceGUID == UnitGUID("pet") then
+				if eventType == "SWING_DAMAGE" then
+					-- amount, overkill, school, resisted, blocked, absorbed, critical, glancing, crushing, isOffHand = select(12, CombatLogGetCurrentEventInfo())
+					overkill = select(2, select(12, CombatLogGetCurrentEventInfo()))
+				elseif eventType == "SPELL_DAMAGE" then
+					-- spellId, spellName, spellSchool, amount, overkill, school, resisted, blocked, absorbed, critical, glancing, crushing, isOffHand = select(12, CombatLogGetCurrentEventInfo())
+					overkill = select(5, select(12, CombatLogGetCurrentEventInfo()))
+				end
+
+				if (overkill and overkill > -1) then
+					SendToTable(destName, "pet")
 				end
 			else
-				if (eventType == "PARTY_KILL" and sourceName == UnitName("player")) then
-					SendToTable(destName)
+				if (eventType == "PARTY_KILL" and sourceGUID == UnitGUID("player")) then
+					SendToTable(destName, "player")
 				end
 			end
+
+			-- if (xVermin.Class == ("HUNTER" or "WARLOCK") and UnitExists("pet")) then
+			-- 	if (eventType == "UNIT_DIED") then
+			-- 		SendToTable(destName)
+			-- 	end
+			-- else
+			-- 	if (eventType == "PARTY_KILL" and sourceName == UnitName("player")) then
+			-- 		SendToTable(destName)
+			-- 	end
+			-- end
 			DisplayData()
 		end
 	end
