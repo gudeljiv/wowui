@@ -500,8 +500,8 @@ EavesDropStatsDB = {
 					},
 					["Moonfire"] = {
 						[-2] = {
-							["time"] = "|cffffffff09/18/20 10:16:33|r\n|Hunit:Player-4465-01D553C4:Jaroslav|hJaroslav's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMoonfire|r|h hits |Hunit:Creature-0-4469-1-44-2978-000064CF6C:Venture Co. Worker|hVenture Co. Worker|h for |cffffffff12|r |cffffffffArcane|r.",
-							["amount"] = 12,
+							["time"] = "|cffffffff10/06/20 05:01:36|r\n|Hunit:Player-4465-01D553C4:Jaroslav|hJaroslav's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMoonfire|r|h hits |Hunit:Creature-0-4445-1-131-2956-00007C8069:Adult Plainstrider|hAdult Plainstrider|h for |cffffffff13|r |cffffffffArcane|r.(3 Overkill)",
+							["amount"] = 16,
 						},
 						[2] = {
 							["time"] = "|cffffffff09/18/20 10:29:48|r\n|Hunit:Player-4465-01D553C4:Jaroslav|hJaroslav's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMoonfire|r|h hits |Hunit:Creature-0-4469-1-44-2978-0000651826:Venture Co. Worker|hVenture Co. Worker|h for |cffffffff16|r |cffffffffArcane|r.(Critical)",

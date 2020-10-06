@@ -1,8 +1,9 @@
 local _, xVermin = ...
 
-local killcountlist, killcounttotal, names, counts, total, percentages, timeticker, playerGUID, petGUID
+local killcountlist, killcounttotal, names, counts, total, percentages, playerGUID, petGUID
 local sortedKillLog = {}
 local tStart = time()
+local timeticker = nil
 
 local defaults = {
 	show = false,
@@ -76,18 +77,18 @@ kctitle.text:SetText("Kill Tracker")
 kctitle.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 
 local kctotal = CreateFrame("Frame", "KillCountTotal", kc)
-kctotal:SetPoint("TOPLEFT", kc, "TOPLEFT", 10, -30)
+kctotal:SetPoint("TOPLEFT", kc, "TOPLEFT", 10, -35)
 kctotal:SetWidth(1)
 kctotal:SetHeight(1)
 kctotal.text = kctotal:CreateFontString(nil, "ARTWORK")
 kctotal.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
-kctotal.text:SetPoint("TOP", kctotal, "TOP", 0, 0)
+kctotal.text:SetPoint("TOPLEFT", kctotal, "TOPLEFT", 0, 0)
 kctotal.text:SetText("Total: 0")
 kctotal.text:SetJustifyH("LEFT")
 kctotal.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 
 local kctimer = CreateFrame("Frame", "KillCountTimer", kc)
-kctimer:SetPoint("TOPRIGHT", kc, "TOPRIGHT", -10, -30)
+kctimer:SetPoint("TOPRIGHT", kc, "TOPRIGHT", -10, -35)
 kctimer:SetWidth(1)
 kctimer:SetHeight(1)
 kctimer.text = kctimer:CreateFontString(nil, "ARTWORK")
@@ -97,19 +98,8 @@ kctimer.text:SetText("00:00")
 kctimer.text:SetJustifyH("RIGHT")
 kctimer.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 
-local kctimerstartstop = CreateFrame("Frame", "KillCountTimerStartStop", kc)
-kctimerstartstop:SetPoint("TOPLEFT", kc, "TOPRIGHT", -10, -30)
-kctimerstartstop:SetWidth(1)
-kctimerstartstop:SetHeight(1)
-kctimerstartstop.text = kctimerstartstop:CreateFontString(nil, "ARTWORK")
-kctimerstartstop.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
-kctimerstartstop.text:SetPoint("TOPLEFT", kctimerstartstop, "TOPRIGHT", 0, 0)
-kctimerstartstop.text:SetText("STOP")
-kctimerstartstop.text:SetJustifyH("LEFT")
-kctimerstartstop.text:SetTextColor(220 / 255, 0 / 255, 100 / 255, 1)
-
 local kclistnames = CreateFrame("Frame", "KillCountListNames", kc)
-kclistnames:SetPoint("TOPLEFT", kc, "TOPLEFT", 10, -50)
+kclistnames:SetPoint("TOPLEFT", kc, "TOPLEFT", 10, -55)
 kclistnames:SetWidth(1)
 kclistnames:SetHeight(1)
 kclistnames.text = kclistnames:CreateFontString(nil, "ARTWORK")
@@ -120,7 +110,7 @@ kclistnames.text:SetJustifyH("LEFT")
 kclistnames.text:SetTextColor(1, 1, 1, 1)
 
 local kclistvalues = CreateFrame("Frame", "KillCountListValues", kc)
-kclistvalues:SetPoint("TOPRIGHT", kc, "TOPRIGHT", -10, -50)
+kclistvalues:SetPoint("TOPRIGHT", kc, "TOPRIGHT", -10, -55)
 kclistvalues:SetWidth(1)
 kclistvalues:SetHeight(1)
 kclistvalues.text = kclistvalues:CreateFontString(nil, "ARTWORK")
@@ -131,7 +121,7 @@ kclistvalues.text:SetJustifyH("RIGHT")
 kclistvalues.text:SetTextColor(1, 1, 1, 1)
 
 local kclistpercentages = CreateFrame("Frame", "KillCountListPercentages", kc)
-kclistpercentages:SetPoint("TOPRIGHT", kc, "TOPRIGHT", -10, -50)
+kclistpercentages:SetPoint("TOPRIGHT", kc, "TOPRIGHT", -10, -55)
 kclistpercentages:SetWidth(1)
 kclistpercentages:SetHeight(1)
 kclistpercentages.text = kclistpercentages:CreateFontString(nil, "ARTWORK")
@@ -142,12 +132,23 @@ kclistpercentages.text:SetJustifyH("RIGHT")
 kclistpercentages.text:SetTextColor(1, 1, 1, 1)
 kclistpercentages:Hide()
 
+local kctimerstartstop = CreateFrame("Frame", "KillCountTimerStartStop", kc)
+kctimerstartstop:SetPoint("BOTTOMRIGHT", kc, "BOTTOMRIGHT", -10, 10)
+kctimerstartstop:SetFrameStrata("MEDIUM")
+kctimerstartstop.text = kctimerstartstop:CreateFontString(nil, "ARTWORK")
+kctimerstartstop.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
+kctimerstartstop.text:SetPoint("BOTTOMRIGHT", kctimerstartstop, "BOTTOMRIGHT", 0, 0)
+kctimerstartstop.text:SetText("Stop")
+kctimerstartstop.text:SetTextColor(220 / 255, 0 / 255, 100 / 255, 1)
+kctimerstartstop:SetWidth(kctimerstartstop.text:GetStringWidth())
+kctimerstartstop:SetHeight(kctimerstartstop.text:GetStringHeight())
+
 local kcreset = CreateFrame("Frame", "KillCountReset", kc)
-kcreset:SetPoint("BOTTOM", kc, "BOTTOM", 0, 10)
+kcreset:SetPoint("BOTTOMLEFT", kc, "BOTTOMLEFT", 10, 10)
 kcreset:SetFrameStrata("MEDIUM")
 kcreset.text = kcreset:CreateFontString(nil, "ARTWORK")
-kcreset.text:SetFont(xVermin.Config.font.arial, 14, "NONE")
-kcreset.text:SetPoint("BOTTOM", kcreset, "BOTTOM", 0, 0)
+kcreset.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
+kcreset.text:SetPoint("BOTTOMLEFT", kcreset, "BOTTOMLEFT", 0, 0)
 kcreset.text:SetText("Reset")
 kcreset.text:SetTextColor(50 / 255, 200 / 255, 50 / 255, 1)
 kcreset:SetWidth(kcreset.text:GetStringWidth())
@@ -172,6 +173,7 @@ local function StopTimer()
 	if timeticker then
 		timeticker:Cancel()
 	end
+	kctimerstartstop.text:SetText("Start")
 end
 
 local function StartTimer()
@@ -182,9 +184,12 @@ local function StartTimer()
 			kctimer.text:SetText(xVermin:TimeFormat(time() - tStart))
 		end
 	)
+	kctimerstartstop.text:SetText("Stop")
 end
 
 local function RestartTimer()
+	kctimer.text:SetText("00:00")
+	kctimerstartstop.text:SetText("Stop")
 	StopTimer()
 	tStart = time()
 	StartTimer()
@@ -224,11 +229,18 @@ local function SendToTable(name)
 end
 
 local function DisplayData()
-	kc:ClearAllPoints()
-	kc:SetPoint(xKillCount.position.from, (xKillCount.position.anchor and xKillCount.position.anchor or nil), xKillCount.position.to, xKillCount.position.x, xKillCount.position.y)
-	kc:Show()
+	if xKillCount.show then
+		kc:ClearAllPoints()
+		kc:SetPoint(xKillCount.position.from, (xKillCount.position.anchor and xKillCount.position.anchor or nil), xKillCount.position.to, xKillCount.position.x, xKillCount.position.y)
+		kc:Show()
+	else
+		kc:Hide()
+		return
+	end
 
-	names, counts, percentages = ""
+	names = ""
+	values = ""
+	percentages = ""
 	total = 0
 
 	for key, value in pairs(sortedKillLog) do
@@ -237,17 +249,17 @@ local function DisplayData()
 
 	for key, value in pairs(sortedKillLog) do
 		names = names .. value.name .. "\n"
-		counts = counts .. value.count .. "\n"
+		values = values .. value.count .. "\n"
 		percentages = percentages .. xVermin:Round((value.count / total * 100), 1) .. "%" .. "\n"
 	end
 
 	kctotal.text:SetText("Total: " .. total)
 	kclistnames.text:SetText(names)
-	kclistvalues.text:SetText(counts)
+	kclistvalues.text:SetText(values)
 	kclistpercentages.text:SetText(percentages)
 
 	local w = kclistnames.text:GetStringWidth() + kclistpercentages.text:GetStringWidth() + 40
-	local h = kctitle.text:GetStringHeight() + kctotal.text:GetStringHeight() + kclistnames.text:GetStringHeight() + 75
+	local h = kctitle.text:GetStringHeight() + kctotal.text:GetStringHeight() + kclistnames.text:GetStringHeight() + 80
 	kc:SetSize(math.max(w, 150), math.max(h, 85))
 end
 
@@ -264,7 +276,7 @@ local function OnAddonLoaded()
 
 	SortData()
 	DisplayData()
-	StartTimer()
+	StopTimer()
 end
 
 kc:RegisterEvent("ADDON_LOADED")
@@ -281,27 +293,26 @@ kc:SetScript(
 
 		if xKillCount and xKillCount.show then
 			playerGUID = UnitGUID("player")
-			if UnitExists("pet") then
-				petGUID = UnitGUID("pet")
-			end
+			petGUID = UnitExists("pet") and UnitGUID("pet") or ""
 
 			local _, eventType, _, sourceGUID, sourceName, _, _, destGUID, destName, _, _, spellID = CombatLogGetCurrentEventInfo()
 
-			if (eventType == "UNIT_DIED" and sourceGUID == (playerGUID or petGUID)) then
-				print(eventType, sourceGUID, sourceName, destGUID, destName, spellID)
-			end
+			-- print("player guid: " .. playerGUID)
+			-- print("pet guid: " .. petGUID)
+			-- if (eventType == "UNIT_DIED") then
+			-- 	print(CombatLogGetCurrentEventInfo())
+			-- end
 
-		-- if (xVermin.Class == ("HUNTER" or "WARLOCK") and UnitExists("pet")) then
-		-- 	if (eventType == "UNIT_DIED") then
-		-- 		SendToTable(destName)
-		-- 		DisplayData()
-		-- 	end
-		-- else
-		-- 	if (eventType == "PARTY_KILL" and sourceName == UnitName("player")) then
-		-- 		SendToTable(destName)
-		-- 		DisplayData()
-		-- 	end
-		-- end
+			if (xVermin.Class == ("HUNTER" or "WARLOCK") and UnitExists("pet")) then
+				if (eventType == "UNIT_DIED") then
+					SendToTable(destName)
+				end
+			else
+				if (eventType == "PARTY_KILL" and sourceName == UnitName("player")) then
+					SendToTable(destName)
+				end
+			end
+			DisplayData()
 		end
 	end
 )
@@ -322,12 +333,10 @@ kctimerstartstop:SetScript(
 	"OnMouseDown",
 	function(self, button)
 		if button == "LeftButton" then
-			if timeticker:IsCancelled() then
+			if (not timeticker or (timeticker and timeticker:IsCancelled())) then
 				RestartTimer()
-				kctimerstartstop.text:SetText("STOP")
 			else
 				StopTimer()
-				kctimerstartstop.text:SetText("START")
 			end
 		end
 	end

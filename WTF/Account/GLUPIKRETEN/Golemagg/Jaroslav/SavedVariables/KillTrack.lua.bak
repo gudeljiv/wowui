@@ -1,0 +1,13 @@
+
+KILLTRACK_CHAR = {
+	["MOBS"] = {
+		[2958] = {
+			["Name"] = "Prairie Wolf",
+			["Kills"] = 2,
+		},
+		[2956] = {
+			["Name"] = "Adult Plainstrider",
+			["Kills"] = 1,
+		},
+	},
+}

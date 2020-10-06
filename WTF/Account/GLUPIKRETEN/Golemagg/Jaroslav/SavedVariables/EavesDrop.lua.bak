@@ -177,6 +177,26 @@ EavesDropStatsDB = {
 		["Jaroslav - Golemagg"] = {
 			{
 				["hit"] = {
+					["Entangling Roots"] = {
+						[-2] = {
+							["time"] = "|cffffffff09/19/20 12:41:58|r\n|Hunit:Creature-0-4469-1-44-2977-000065D702:Venture Co. Taskmaster|hVenture Co. Taskmaster|h suffers |cffffffff5|r |cffffffffNature|r damage from |Hunit:Player-4465-01D553C4:Jaroslav|hJaroslav's|h |Hspell:0:0:SPELL_PERIODIC_DAMAGE|h|cffffffffEntangling Roots|r|h.",
+							["amount"] = 5,
+						},
+						[2] = {
+						},
+						["icon"] = 136100,
+					},
+					["Wrath"] = {
+						[-2] = {
+							["time"] = "|cffffffff09/19/20 01:02:34|r\n|Hunit:Player-4465-01D553C4:Jaroslav|hJaroslav's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWrath|r|h hits |Hunit:Creature-0-4469-1-44-2960-000065E326:Prairie Wolf Alpha|hPrairie Wolf Alpha|h for |cffffffff32|r |cffffffffNature|r.",
+							["amount"] = 32,
+						},
+						[2] = {
+							["time"] = "|cffffffff09/18/20 10:29:42|r\n|Hunit:Player-4465-01D553C4:Jaroslav|hJaroslav's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWrath|r|h hits |Hunit:Creature-0-4469-1-44-2978-0000651826:Venture Co. Worker|hVenture Co. Worker|h for |cffffffff46|r |cffffffffNature|r.(Critical)",
+							["amount"] = 46,
+						},
+						["icon"] = 136006,
+					},
 					["Melee Attack"] = {
 						[-2] = {
 							["time"] = "|cffffffff09/18/20 08:01:16|r\n|Hunit:Player-4465-01D553C4:Jaroslav|hJaroslav's|h melee swing hits |Hunit:Creature-0-4469-1-44-2962-000064C205:Windfury Harpy|hWindfury Harpy|h for |cffffffff19|r |cffffffffPhysical|r.",
@@ -189,25 +209,14 @@ EavesDropStatsDB = {
 					},
 					["Moonfire"] = {
 						[-2] = {
-							["time"] = "|cffffffff09/18/20 10:16:33|r\n|Hunit:Player-4465-01D553C4:Jaroslav|hJaroslav's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMoonfire|r|h hits |Hunit:Creature-0-4469-1-44-2978-000064CF6C:Venture Co. Worker|hVenture Co. Worker|h for |cffffffff12|r |cffffffffArcane|r.",
-							["amount"] = 12,
+							["time"] = "|cffffffff10/06/20 05:01:36|r\n|Hunit:Player-4465-01D553C4:Jaroslav|hJaroslav's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMoonfire|r|h hits |Hunit:Creature-0-4445-1-131-2956-00007C8069:Adult Plainstrider|hAdult Plainstrider|h for |cffffffff13|r |cffffffffArcane|r.(3 Overkill)",
+							["amount"] = 16,
 						},
 						[2] = {
 							["time"] = "|cffffffff09/18/20 10:29:48|r\n|Hunit:Player-4465-01D553C4:Jaroslav|hJaroslav's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMoonfire|r|h hits |Hunit:Creature-0-4469-1-44-2978-0000651826:Venture Co. Worker|hVenture Co. Worker|h for |cffffffff16|r |cffffffffArcane|r.(Critical)",
 							["amount"] = 16,
 						},
 						["icon"] = 136096,
-					},
-					["Wrath"] = {
-						[-2] = {
-							["time"] = "|cffffffff09/18/20 08:23:03|r\n|Hunit:Player-4465-01D553C4:Jaroslav|hJaroslav's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWrath|r|h hits |Hunit:Creature-0-4469-1-44-2962-000064C1D1:Windfury Harpy|hWindfury Harpy|h for |cffffffff31|r |cffffffffNature|r.",
-							["amount"] = 31,
-						},
-						[2] = {
-							["time"] = "|cffffffff09/18/20 10:29:42|r\n|Hunit:Player-4465-01D553C4:Jaroslav|hJaroslav's|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffWrath|r|h hits |Hunit:Creature-0-4469-1-44-2978-0000651826:Venture Co. Worker|hVenture Co. Worker|h for |cffffffff46|r |cffffffffNature|r.(Critical)",
-							["amount"] = 46,
-						},
-						["icon"] = 136006,
 					},
 					["Thorns"] = {
 						[-2] = {
@@ -222,8 +231,8 @@ EavesDropStatsDB = {
 				["heal"] = {
 					["Healing Touch"] = {
 						[-2] = {
-							["time"] = "|cffffffff09/18/20 07:03:22|r\n|Hunit:Player-4465-01D553C4:Jaroslav|hJaroslav's|h |Hspell:0:0:SPELL_HEAL|h|cffffffffHealing Touch|r|h heals |Hunit:Player-4465-01D553C4:Jaroslav|hJaroslav|h for |cffffffff53|r.",
-							["amount"] = 53,
+							["time"] = "|cffffffff09/19/20 01:21:55|r\n|Hunit:Player-4465-01D553C4:Jaroslav|hJaroslav's|h |Hspell:0:0:SPELL_HEAL|h|cffffffffHealing Touch|r|h heals |Hunit:Player-4465-01D553C4:Jaroslav|hJaroslav|h for |cffffffff104|r.",
+							["amount"] = 104,
 						},
 						[2] = {
 							["time"] = "|cffffffff08/20/20 06:59:48|r\n|Hunit:Player-4465-01D553C4:Jaroslav|hJaroslav's|h |Hspell:0:0:SPELL_HEAL|h|cffffffffHealing Touch|r|h heals |Hunit:Player-4465-01D553C4:Jaroslav|hJaroslav|h for |cffffffff0|r.(67 Overhealed) (Critical)",
@@ -267,6 +276,8 @@ EavesDropStatsDB = {
 							["amount"] = 27,
 						},
 						[2] = {
+							["time"] = "|cffffffff09/19/20 01:24:17|r\n|Hunit:Creature-0-4469-1-44-3051-000065EA18:Supervisor Fizsprocket|hSupervisor Fizsprocket's|h melee swing hits |Hunit:Player-4465-01D553C4:Jaroslav|hJaroslav|h for |cffff131337|r |cffff1313Physical|r.(Critical)",
+							["amount"] = 37,
 						},
 					},
 					["Fire"] = {
