@@ -248,9 +248,9 @@ kc:SetScript(
 				OnAddonLoaded()
 			end
 		end
-		local _, eventType, _, sourceGUID, sourceName, _, _, destGUID, destName, _, _, spellID = CombatLogGetCurrentEventInfo()
 
 		if xKillCount and xKillCount.show then
+			local _, eventType, _, sourceGUID, sourceName, _, _, destGUID, destName, _, _, spellID = CombatLogGetCurrentEventInfo()
 			if (xVermin.Class == ("HUNTER" or "WARLOCK") and UnitExists("pet")) then
 				if (eventType == "UNIT_DIED") then
 					SendToTable(destName)
