@@ -12,11 +12,6 @@ DEJUNK_ADDON_SV = {
 	},
 	["Profiles"] = {
 		["Default"] = {
-			["SafeMode"] = false,
-			["DestroyBelowPrice"] = {
-				["Enabled"] = true,
-				["Value"] = 500,
-			},
 			["Inclusions"] = {
 				["6362"] = true,
 				["4539"] = true,
@@ -36,11 +31,22 @@ DEJUNK_ADDON_SV = {
 				["4424"] = true,
 				["4544"] = true,
 			},
+			["SafeMode"] = false,
+			["DestroyBelowPrice"] = {
+				["Enabled"] = true,
+				["Value"] = 500,
+			},
 			["AutoSell"] = true,
 			["AutoDestroy"] = true,
 			["Destroyables"] = {
+				["4585"] = true,
+				["1074"] = true,
+				["5637"] = true,
+				["7974"] = true,
 				["17058"] = true,
+				["4337"] = true,
 				["17057"] = true,
+				["12205"] = true,
 			},
 		},
 		["Jaroslav-Golemagg"] = {

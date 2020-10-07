@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 3035,
+	["session"] = 3037,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -3043,5 +3043,13 @@ BugGrabberDB = {
 			["session"] = 3034,
 			["counter"] = 6,
 		}, -- [384]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Experience/TotalXP.lua:81: attempt to perform arithmetic on upvalue 'pulltotal' (a nil value)",
+			["time"] = "2020/10/07 20:03:45",
+			["locals"] = "event = \"PLAYER_ENTERING_WORLD\"\nisInitialLogin = false\nisReloadingUi = false\n(*temporary) = nil\n(*temporary) = 0\n(*temporary) = 9551\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to perform arithmetic on upvalue 'pulltotal' (a nil value)\"\npulltotal = nil\nmaxxp = 85700\ncurrentxp = 9551\ngained = 0\ntotalxp = 0\ntxtotal = TotalXPText {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\ntxpulltotal = TotalPullXPText {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:64\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Class = \"MAGE\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:56\n ClassColor = <table> {\n }\n Config = <table> {\n }\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:79\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:104\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:89\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Experience/TotalXP.lua:81: in function <Interface\\AddOns\\xVermin\\Experience/TotalXP.lua:65>\nInterface\\AddOns\\xVermin\\Experience/TotalXP.lua:105: in function <Interface\\AddOns\\xVermin\\Experience/TotalXP.lua:99>",
+			["session"] = 3037,
+			["counter"] = 5,
+		}, -- [385]
 	},
 }

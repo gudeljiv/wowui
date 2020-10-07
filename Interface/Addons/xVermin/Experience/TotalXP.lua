@@ -67,6 +67,7 @@ local function CalculateTotal(event, isInitialLogin, isReloadingUi)
 		pulltotal = 0
 	end
 	if event == "PLAYER_ENTERING_WORLD" and (isInitialLogin or isReloadingUi) then
+		pulltotal = 0
 		maxxp = UnitXPMax("player")
 		currentxp = UnitXP("player")
 	else
