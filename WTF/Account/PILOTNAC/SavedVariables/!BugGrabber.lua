@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 2020,
+	["session"] = 2024,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -1434,19 +1434,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [181]
 		{
-			["message"] = "(null)",
-			["session"] = 1932,
-			["time"] = "2020/07/24 16:00:06",
-			["counter"] = 63,
-		}, -- [182]
-		{
 			["message"] = "Interface\\AddOns\\xVermin\\Debug.lua:6: attempt to call global 'Debug' (a nil value)",
 			["time"] = "2020/09/26 20:04:10",
 			["locals"] = "msg = \"\"\n(*temporary) = nil\n(*temporary) = \"\"\n(*temporary) = \"attempt to call global 'Debug' (a nil value)\"\n",
 			["stack"] = "Interface\\AddOns\\xVermin\\Debug.lua:6: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 1933,
 			["counter"] = 2,
-		}, -- [183]
+		}, -- [182]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Debug.lua:6: attempt to call global 'xDebug' (a nil value)",
 			["time"] = "2020/09/26 20:05:02",
@@ -1454,7 +1448,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Debug.lua:6: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 1934,
 			["counter"] = 1,
-		}, -- [184]
+		}, -- [183]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Debug.lua:7: unexpected symbol near ')'",
 			["time"] = "2020/09/26 20:17:06",
@@ -1462,7 +1456,7 @@ BugGrabberDB = {
 			["stack"] = "",
 			["session"] = 1943,
 			["counter"] = 4,
-		}, -- [185]
+		}, -- [184]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Experience/TotalXP.lua:48: attempt to call method 'Debug' (a nil value)",
 			["time"] = "2020/09/26 20:17:13",
@@ -1470,7 +1464,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Experience/TotalXP.lua:48: in function <Interface\\AddOns\\xVermin\\Experience/TotalXP.lua:42>",
 			["session"] = 1943,
 			["counter"] = 1,
-		}, -- [186]
+		}, -- [185]
 		{
 			["message"] = "[string \"TotalXPText.Text:ClearAllPoints()\"]:1: attempt to index field 'Text' (a nil value)",
 			["time"] = "2020/09/26 20:23:17",
@@ -1478,7 +1472,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"TotalXPText.Text:ClearAllPoints()\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2783: in function <Interface\\FrameXML\\ChatFrame.lua:2776>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:338: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 1949,
 			["counter"] = 20,
-		}, -- [187]
+		}, -- [186]
 		{
 			["message"] = "[string \"TotalXPText.Text:SetPoint(\"CENTER\", TotalXP...\"]:1: attempt to index field 'Text' (a nil value)",
 			["time"] = "2020/09/26 20:22:41",
@@ -1486,7 +1480,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"TotalXPText.Text:SetPoint(\"CENTER\", TotalXP...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 1949,
 			["counter"] = 22,
-		}, -- [188]
+		}, -- [187]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'SetCVar()'.",
 			["time"] = "2020/09/20 16:52:43",
@@ -1494,7 +1488,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetCVar'\nInterface\\AddOns\\xVermin\\Core.lua:20: in function <Interface\\AddOns\\xVermin\\Core.lua:16>",
 			["session"] = 1955,
 			["counter"] = 3,
-		}, -- [189]
+		}, -- [188]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Experience/TotalXP.lua:91: attempt to perform arithmetic on global 'pulltotal' (a nil value)",
 			["time"] = "2020/10/01 10:05:41",
@@ -1502,7 +1496,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\Experience/TotalXP.lua:91: in function <Interface\\AddOns\\xVermin\\Experience/TotalXP.lua:75>\nInterface\\AddOns\\xVermin\\Experience/TotalXP.lua:113: in function <Interface\\AddOns\\xVermin\\Experience/TotalXP.lua:108>",
 			["session"] = 1978,
 			["counter"] = 1,
-		}, -- [190]
+		}, -- [189]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'ItemRackButton0:SetAttribute()'.",
 			["time"] = "2020/08/02 11:49:42",
@@ -1510,21 +1504,147 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetAttribute'\nInterface\\AddOns\\ItemRack\\ItemRackButtons.lua:35: in function `InitButtons'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:282: in function `func'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:970: in function `OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>",
 			["session"] = 1987,
 			["counter"] = 7,
-		}, -- [191]
-		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'TargetFrameToT:Show()'.",
-			["time"] = "2020/09/23 13:06:51",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Show'\nInterface\\FrameXML\\TargetFrame.lua:910: in function <Interface\\FrameXML\\TargetFrame.lua:905>\n[C]: ?\n[C]: in function `TargetofTarget_Update'\nInterface\\FrameXML\\TargetFrame.lua:420: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[C]: ?\n[C]: ?",
-			["session"] = 2006,
-			["counter"] = 10,
-		}, -- [192]
+		}, -- [190]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\SortBags.lua:455: attempt to perform arithmetic on field '?' (a nil value)",
 			["time"] = "2020/10/02 18:54:46",
 			["stack"] = "Interface\\AddOns\\xVermin\\SortBags.lua:455: in function `Initialize'\nInterface\\AddOns\\xVermin\\SortBags.lua:233: in function `Start'\nInterface\\AddOns\\xVermin\\SortBags.lua:17: in function `SortBags'\nInterface\\AddOns\\AdiBags\\core\\Layout.lua:108: in function `?'\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:117: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:117>\n[C]: ?\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:29: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:64: in function `SendMessage'\nInterface\\AddOns\\AdiBags\\core\\Bags.lua:105: in function `Close'\nInterface\\AddOns\\AdiBags\\core\\Bags.lua:224: in function `?'\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:119: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:119>\n[C]: ?\n...\n[C]: in function `CloseAuctionHouse'\n...e\\AddOns\\TradeSkillMaster\\Core\\UI\\AuctionUI\\Core.lua:214: in function `?'\n...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:86: in function `ScriptHandlerCommon'\n...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:37: in function <...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:36>\n[C]: in function `Hide'\n...AddOns\\TradeSkillMaster\\Core\\UI\\Elements\\Element.lua:128: in function <...AddOns\\TradeSkillMaster\\Core\\UI\\Elements\\Element.lua:127>\n...radeSkillMaster\\External\\LibTSMClass\\LibTSMClass-1.lua:208: in function `Hide'\n...adeSkillMaster\\Core\\UI\\Elements\\ApplicationFrame.lua:482: in function `?'\n...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:86: in function `ScriptHandlerCommon'\n...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:37: in function <...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:36>",
 			["session"] = 2006,
 			["counter"] = 2,
+		}, -- [191]
+		{
+			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\events\\event-manager.lua",
+			["time"] = "2020/10/07 16:37:53",
+			["session"] = 2022,
+			["counter"] = 1,
+		}, -- [192]
+		{
+			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\lists\\lists.lua",
+			["time"] = "2020/10/07 16:37:53",
+			["session"] = 2022,
+			["counter"] = 1,
 		}, -- [193]
+		{
+			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\lists\\list-helper.lua",
+			["time"] = "2020/10/07 16:37:53",
+			["session"] = 2022,
+			["counter"] = 1,
+		}, -- [194]
+		{
+			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\bags.lua",
+			["time"] = "2020/10/07 16:37:53",
+			["session"] = 2022,
+			["counter"] = 1,
+		}, -- [195]
+		{
+			["message"] = "(null)",
+			["session"] = 2022,
+			["time"] = "2020/07/24 16:00:06",
+			["counter"] = 65,
+		}, -- [196]
+		{
+			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\utils.lua",
+			["time"] = "2020/10/07 16:37:53",
+			["session"] = 2022,
+			["counter"] = 1,
+		}, -- [197]
+		{
+			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\services\\confirmer.lua",
+			["time"] = "2020/10/07 16:37:53",
+			["session"] = 2022,
+			["counter"] = 1,
+		}, -- [198]
+		{
+			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\services\\dejunker.lua",
+			["time"] = "2020/10/07 16:37:53",
+			["session"] = 2022,
+			["counter"] = 1,
+		}, -- [199]
+		{
+			["message"] = "Interface\\AddOns\\Dejunk\\src\\consts.lua:94: attempt to index field 'Wow' (a nil value)",
+			["time"] = "2020/10/07 16:36:42",
+			["locals"] = "_ = \"Dejunk\"\nAddon = <table> {\n Utils = <table> {\n }\n Repairer = <table> {\n }\n IS_CLASSIC = true\n DB = <table> {\n }\n Destroyer = <table> {\n }\n DethsDBLib = <table> {\n }\n DethsColorLib = <table> {\n }\n Dejunker = <table> {\n }\n Confirmer = <table> {\n }\n MinimapIcon = <table> {\n }\n IS_RETAIL = false\n EventManager = <table> {\n }\n ListHelper = <table> {\n }\n UI = <table> {\n }\n Core = <table> {\n }\n Filters = <table> {\n }\n Colors = <table> {\n }\n Events = <table> {\n }\n Libs = <table> {\n }\n Bags = <table> {\n }\n VERSION = \"8.3.4\"\n Consts = <table> {\n }\n}\nConsts = <table> {\n DESTROY_BELOW_PRICE_STEP = 1\n DESTROY_EXCESS_SOUL_SHARDS_STEP = 1\n DESTROY_EXCESS_SOUL_SHARDS_MAX = 28\n SELL_BELOW_AVERAGE_ILVL_MIN = 10\n MAX_NUMBER = 2147483647\n SELL_BELOW_PRICE_MAX = 10000\n SELL_BELOW_PRICE_STEP = 1\n DESTROY_SAVE_SPACE_MAX = 16\n SELL_BELOW_PRICE_MIN = 2\n DESTROY_SAVE_SPACE_STEP = 1\n DESTROY_SAVE_SPACE_MIN = 1\n SAFE_MODE_MAX = 12\n SELL_BELOW_AVERAGE_ILVL_MAX = 100\n SELL_BELOW_AVERAGE_ILVL_STEP = 1\n SOUL_SHARD_ITEM_ID = 6265\n DESTROY_EXCESS_SOUL_SHARDS_MIN = 3\n DESTROY_BELOW_PRICE_MIN = 2\n DESTROY_BELOW_PRICE_MAX = 10000\n}\nE = <table> {\n}\nEventManager = <table> {\n}\nGetItemClassInfo = <function> defined =[C]:-1\nGetItemSubClassInfo = <function> defined =[C]:-1\nLE_ITEM_ARMOR_CLOTH = 1\nLE_ITEM_ARMOR_COSMETIC = 5\nLE_ITEM_ARMOR_GENERIC = 0\nLE_ITEM_ARMOR_IDOL = 8\nLE_ITEM_ARMOR_LEATHER = 2\nLE_ITEM_ARMOR_LIBRAM = 7\nLE_ITEM_ARMOR_MAIL = 3\nLE_ITEM_ARMOR_PLATE = 4\nLE_ITEM_ARMOR_SHIELD = 6\nLE_ITEM_ARMOR_TOTEM = 9\nLE_ITEM_CLASS_ARMOR = 4\nLE_ITEM_CLASS_WEAPON = 2\nLE_ITEM_WEAPON_AXE1H = 0\nLE_ITEM_WEAPON_AXE2H = 1\nLE_ITEM_WEAPON_BEARCLAW = nil\nLE_ITEM_WEAPON_BOWS = 2\nLE_ITEM_WEAPON_CATCLAW = nil\nLE_ITEM_WEAPON_CROSSBOW = 18\nLE_ITEM_WEAPON_DAGGER = 15\nLE_ITEM_WEAPON_FISHINGPOLE = 20\nLE_ITEM_WEAPON_GENERIC = 14\nLE_ITEM_WEAPON_GUNS = 3\nLE_ITEM_WEAPON_MACE1H = 4\nLE_ITEM_WEAPON_MACE2H = 5\nLE_ITEM_WEAPON_POLEARM = 6\nLE_ITEM_WEAPON_STAFF = 10\nLE_ITEM_WEAPON_SWORD1H = 7\nLE_ITEM_WEAPON_SWORD2H = 8\nLE_ITEM_WEAPON_THROWN = 16\nLE_ITEM_WEAPON_UNARMED = 13\nLE_ITEM_WEAPON_WAND = 19\nLE_ITEM_WEAPON_WARGLAIVE = 9\nNUM_LE_ITEM_ARMORS = 12\nNUM_LE_ITEM_WEAPONS = 21\n(*temporary) = nil\n(*temporary) = <table> {\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'Wow' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\Dejunk\\src\\consts.lua:94: in main chunk",
+			["session"] = 2023,
+			["counter"] = 3,
+		}, -- [200]
+		{
+			["message"] = "Interface\\AddOns\\Dejunk\\src\\db.lua:188: attempt to index field 'Wow' (a nil value)",
+			["time"] = "2020/10/07 16:36:42",
+			["locals"] = "AddonName = \"Dejunk\"\nAddon = <table> {\n Utils = <table> {\n }\n Repairer = <table> {\n }\n IS_CLASSIC = true\n DB = <table> {\n }\n Destroyer = <table> {\n }\n DethsDBLib = <table> {\n }\n DethsColorLib = <table> {\n }\n Dejunker = <table> {\n }\n Confirmer = <table> {\n }\n MinimapIcon = <table> {\n }\n IS_RETAIL = false\n EventManager = <table> {\n }\n ListHelper = <table> {\n }\n UI = <table> {\n }\n Core = <table> {\n }\n Filters = <table> {\n }\n Colors = <table> {\n }\n Events = <table> {\n }\n Libs = <table> {\n }\n Bags = <table> {\n }\n VERSION = \"8.3.4\"\n Consts = <table> {\n }\n}\nClamp = <function> defined @Interface\\SharedXML\\Util.lua:316\nConsts = <table> {\n DESTROY_BELOW_PRICE_STEP = 1\n DESTROY_EXCESS_SOUL_SHARDS_STEP = 1\n DESTROY_EXCESS_SOUL_SHARDS_MAX = 28\n SELL_BELOW_AVERAGE_ILVL_MIN = 10\n MAX_NUMBER = 2147483647\n SELL_BELOW_PRICE_MAX = 10000\n SELL_BELOW_PRICE_STEP = 1\n DESTROY_SAVE_SPACE_MAX = 16\n SELL_BELOW_PRICE_MIN = 2\n DESTROY_SAVE_SPACE_STEP = 1\n DESTROY_SAVE_SPACE_MIN = 1\n SAFE_MODE_MAX = 12\n SELL_BELOW_AVERAGE_ILVL_MAX = 100\n SELL_BELOW_AVERAGE_ILVL_STEP = 1\n SOUL_SHARD_ITEM_ID = 6265\n DESTROY_EXCESS_SOUL_SHARDS_MIN = 3\n DESTROY_BELOW_PRICE_MIN = 2\n DESTROY_BELOW_PRICE_MAX = 10000\n}\nDB = <table> {\n}\nE = <table> {\n}\nEventManager = <table> {\n}\ndefaults = <table> {\n Global = <table> {\n }\n Profile = <table> {\n }\n}\nconversions = <table> {\n 1 = <function> defined @Interface\\AddOns\\Dejunk\\src\\db.lua:114\n 2 = <function> defined @Interface\\AddOns\\Dejunk\\src\\db.lua:131\n 3 = <function> defined @Interface\\AddOns\\Dejunk\\src\\db.lua:164\n}\nreformat = <function> defined @Interface\\AddOns\\Dejunk\\src\\db.lua:178\n(*temporary) = nil\n(*temporary) = <table> {\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'Wow' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\Dejunk\\src\\db.lua:188: in main chunk",
+			["session"] = 2023,
+			["counter"] = 3,
+		}, -- [201]
+		{
+			["message"] = "...erface\\AddOns\\Dejunk\\src\\filters\\destroyer\\lists.lua:3: attempt to index field 'Lists' (a nil value)",
+			["time"] = "2020/10/07 16:36:42",
+			["locals"] = "_ = \"Dejunk\"\nAddon = <table> {\n Utils = <table> {\n }\n Repairer = <table> {\n }\n IS_CLASSIC = true\n DB = <table> {\n }\n Destroyer = <table> {\n }\n DethsDBLib = <table> {\n }\n DethsColorLib = <table> {\n }\n Dejunker = <table> {\n }\n Confirmer = <table> {\n }\n MinimapIcon = <table> {\n }\n IS_RETAIL = false\n EventManager = <table> {\n }\n ListHelper = <table> {\n }\n UI = <table> {\n }\n Core = <table> {\n }\n Filters = <table> {\n }\n Colors = <table> {\n }\n Events = <table> {\n }\n Libs = <table> {\n }\n Bags = <table> {\n }\n VERSION = \"8.3.4\"\n Consts = <table> {\n }\n}\nDB = <table> {\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'Lists' (a nil value)\"\n",
+			["stack"] = "...erface\\AddOns\\Dejunk\\src\\filters\\destroyer\\lists.lua:3: in main chunk",
+			["session"] = 2023,
+			["counter"] = 3,
+		}, -- [202]
+		{
+			["message"] = "Interface\\AddOns\\Dejunk\\src\\ui\\merchant-button.lua:16: attempt to call method 'Once' (a nil value)",
+			["time"] = "2020/10/07 16:36:42",
+			["locals"] = "AddonName = \"Dejunk\"\nAddon = <table> {\n Utils = <table> {\n }\n Repairer = <table> {\n }\n IS_CLASSIC = true\n DB = <table> {\n }\n Destroyer = <table> {\n }\n DethsDBLib = <table> {\n }\n DethsColorLib = <table> {\n }\n Dejunker = <table> {\n }\n Confirmer = <table> {\n }\n MinimapIcon = <table> {\n }\n IS_RETAIL = false\n EventManager = <table> {\n }\n ListHelper = <table> {\n }\n UI = <table> {\n }\n Core = <table> {\n }\n Filters = <table> {\n }\n Colors = <table> {\n }\n Events = <table> {\n }\n Libs = <table> {\n }\n Bags = <table> {\n }\n VERSION = \"8.3.4\"\n Consts = <table> {\n }\n}\nCore = <table> {\n}\nDB = <table> {\n}\nDejunker = <table> {\n}\nDTL = <table> {\n IsBindsWhenEquipped = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsTooltipLib\\DethsTooltipLib.lua:288\n FindLine = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsTooltipLib\\DethsTooltipLib.lua:213\n ShowHyperlink = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsTooltipLib\\DethsTooltipLib.lua:56\n Match = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsTooltipLib\\DethsTooltipLib.lua:241\n ShowTooltip = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsTooltipLib\\DethsTooltipLib.lua:39\n IsBindsToAccount = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsTooltipLib\\DethsTooltipLib.lua:278\n IsAccountBound = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsTooltipLib\\DethsTooltipLib.lua:273\n GetLines = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsTooltipLib\\DethsTooltipLib.lua:162\n IsTradeable = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsTooltipLib\\DethsTooltipLib.lua:298\n Find = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsTooltipLib\\DethsTooltipLib.lua:170\n IsSoulbound = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsTooltipLib\\DethsTooltipLib.lua:293\n FindExact = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsTooltipLib\\DethsTooltipLib.lua:196\n GetItemLevel = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsTooltipLib\\DethsTooltipLib.lua:303\n ScanBagSlot = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsTooltipLib\\DethsTooltipLib.lua:123\n IsBindsWhenUsed = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsTooltipLib\\DethsTooltipLib.lua:283\n __initial_load = true\n HideTooltip = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsTooltipLib\\DethsTooltipLib.lua:63\n ScanLink = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsTooltipLib\\DethsTooltipLib.lua:148\n}\nE = <table> {\n}\nEventManager = <table> {\n}\nL = <table> {\n IGNORE_COSMETIC_TOOLTIP = \"Ignore cosmetic and generic armor such as tabards, shirts, and held in off-hand items.\"\n DOES_NOT_APPLY_TO_QUALITY = \"Does not apply to %s quality items.\"\n QUALITY_TEXT = \"Quality\"\n REASON_SELL_ITEM_TO_BE_DESTROYED = \"Item to be destroyed otherwise.\"\n PROFILE_COPY_HELP_TEXT = \"Copy an existing profile's settings into the current profile. This will overwrite all settings for the current profile.\"\n GLOBAL_TEXT = \"Global\"\n REASON_IGNORE_QUEST_ITEMS_TEXT = \"Quest items are ignored.\"\n EPIC_TEXT = \"Epic\"\n AUTO_REPAIR_TOOLTIP = \"Automatically repair items upon opening a merchant window.\"\n AUTO_DESTROY_TEXT = \"Auto Destroy\"\n CHAT_TEXT = \"Chat\"\n COPY_TEXT = \"Copy\"\n BY_CATEGORY_TEXT = \"By Category\"\n DELETE_PROFILE_POPUP = \"Are you sure you want to delete the profile %s?\"\n LIST_ADD_REMOVE_HELP_TEXT = \"To add an item, drop it into the frame below. To remove an item, highlight an entry and Right-Click.\"\n ITEM_TOOLTIP_TEXT = \"Item Tooltip\"\n IMPORT_PROFILE_TEXT = \"Import Profile\"\n IGNORE_ITEM_ENHANCEMENTS_TOOLTIP = \"Ignore items used for enhancing weapons and armor.\"\n STATUS_SELLING_ITEMS_TEXT = \"Selling items...\"\n REASON_DESTROY_EXCESS_SOUL_SHARDS_TEXT = \"Excess Soul Shards are being destroyed.\"\n EXCLUSIONS_TEXT = \"Exclusions\"\n REPAIRED_ALL_ITEMS = \"Repaired all items for %s.\"\n IGNORE_TRADEABLE_TEXT = \"Tradeable\"\n EXPORT_PROFILE_TEXT = \"Export Profile\"\n ITEM_ALREADY_ON_LIST = \"%s is already on %s.\"\n REASON_DESTROY_TOYS_ALREADY_COLLECTED_TEXT = \"Toys already collected are being destroyed.\"\n IGNORE_RECIPES_TOOLTIP = \"Ignore tradeskill recipes.\"\n ITEM_LEVELS_TEXT = \"Item Levels\"\n",
+			["stack"] = "Interface\\AddOns\\Dejunk\\src\\ui\\merchant-button.lua:16: in main chunk",
+			["session"] = 2023,
+			["counter"] = 3,
+		}, -- [203]
+		{
+			["message"] = "Interface\\AddOns\\Dejunk\\src\\ui\\minimap-icon.lua:17: attempt to call method 'Once' (a nil value)",
+			["time"] = "2020/10/07 16:36:42",
+			["locals"] = "AddonName = \"Dejunk\"\nAddon = <table> {\n Utils = <table> {\n }\n Repairer = <table> {\n }\n IS_CLASSIC = true\n DB = <table> {\n }\n Destroyer = <table> {\n }\n DethsDBLib = <table> {\n }\n DethsColorLib = <table> {\n }\n Dejunker = <table> {\n }\n Confirmer = <table> {\n }\n MinimapIcon = <table> {\n }\n IS_RETAIL = false\n EventManager = <table> {\n }\n ListHelper = <table> {\n }\n UI = <table> {\n }\n Core = <table> {\n }\n Filters = <table> {\n }\n Colors = <table> {\n }\n Events = <table> {\n }\n Libs = <table> {\n }\n Bags = <table> {\n }\n VERSION = \"8.3.4\"\n Consts = <table> {\n }\n}\nColors = <table> {\n Yellow = \"E3E34FFF\"\n Primary = \"4FAFE3FF\"\n Green = \"4FE34FFF\"\n Red = \"E34F4FFF\"\n}\nDB = <table> {\n}\nDCL = <table> {\n RainbowString = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:61\n HexTableToRGBA = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:136\n Wow = <table> {\n }\n GetRandomColor = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:99\n metadata = <table> {\n }\n CSS = <table> {\n }\n ColorString = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:28\n GetColorByQuality = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/wow.lua:55\n NewColorTable = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:156\n GetColorTable = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:149\n HexToRGBA = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:110\n RemoveColor = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:82\n GetStringColor = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:91\n}\nDestroyer = <table> {\n}\nE = <table> {\n}\nEventManager = <table> {\n}\nL = <table> {\n IGNORE_COSMETIC_TOOLTIP = \"Ignore cosmetic and generic armor such as tabards, shirts, and held in off-hand items.\"\n DOES_NOT_APPLY_TO_QUALITY = \"Does not apply to %s quality items.\"\n QUALITY_TEXT = \"Quality\"\n REASON_SELL_ITEM_TO_BE_DESTROYED = \"Item to be destroyed otherwise.\"\n PROFILE_COPY_HELP_TEXT = \"Copy an existing profile's settings into the current profile. This will overwrite all settings for the current profile.\"\n GLOBAL_TEXT = \"Global\"\n REASON_IGNORE_QUEST_ITEMS_TEXT = \"Quest items are ignored.\"\n EPIC_TEXT = \"Epic\"\n AUTO_REPAIR_TOOLTIP = \"Automatically repair items upon opening a merchant window.\"\n AUTO_DESTROY_TEXT = \"Auto Destroy\"\n CHAT_TEXT = \"Chat\"\n COPY_TEXT = \"Copy\"\n BY_CATEGORY_TEXT = \"By Category\"\n DELETE_PROFILE_POPUP = \"Are you sure you want to delete the profile %s?\"\n LIST_ADD_REMOVE_HELP_TEXT = \"To add an item, drop it into the frame below. To remove an item, highlight an entry and Right-Click.\"\n ITEM_TOOLTIP_TEXT = \"Item Tooltip\"\n IMPORT_PROFILE_TEXT = \"Import Profile\"\n IGNORE_ITEM_ENHANCEMENTS_TOOLTIP = \"Ignore items used for enhancing weapons and armor.\"\n STATUS_SELLING_ITEMS_TEXT = \"Selling items...\"\n REASON_DESTROY_EXCESS_SOUL_SHARDS_TEXT = \"Excess Soul Shards are being destroyed.\"\n EXCLUSIONS_TEXT = \"Exclusions\"\n REPAIRED_ALL_ITEMS = \"Repaired all items for %s.\"\n IGNORE_TRADEABLE_TEXT = \"Tradeable\"\n EXPORT_PROFILE_TEXT = \"Export Profile\"\n ITEM_ALREADY_ON_LIST = \"%s is already on %s.\"\n REASON_DESTROY_TOYS_ALREADY_COLLECTED_TEXT = \"Toys already collected are being destroyed.\"\n IGNORE_RECIPES_TOOLTIP = \"Ignore tradeskill recipes.\"\n ITEM_LEVELS_TEXT = \"Item Levels\"\n BINDINGS_ADD_TO_LIST_TEXT = \"Add to %s\"\n IGNORE_TRADE_GOODS_TOOLTIP = \"Ignore items related to crafting professions.\"\n ITEM_TOOLTIP_TOOLTIP = \"Display a Dejunk message in an item's tooltip indicating if it will be sold or destroyed.|n|nThis tooltip only applies to items in your bags.\"\n IGNORE_TRADE_GOODS_TEXT = \"Trade Goods\"\n DELETE_TEXT = \"Delete\"\n SILENT_MODE_TEXT = \"Silent Mode\"\n CANNOT_SELL_WHILE_LISTS_UPDATING = \"Cannot sell while %s and %s are being updated.\"\n IGNORE_CONSUMABLES_TOOLTIP = \"Ignore consumable items such as food and potions.\"\n REASON_DESTROY_BY_QUALITY_TEXT = \"Items of this quality are being destroyed.\"\n IGNORE_GEMS_TOOLTIP = \"Ignore cut gems and ",
+			["stack"] = "Interface\\AddOns\\Dejunk\\src\\ui\\minimap-icon.lua:17: in main chunk",
+			["session"] = 2023,
+			["counter"] = 3,
+		}, -- [204]
+		{
+			["message"] = "Interface\\AddOns\\Dejunk\\src\\ui\\main.lua:8: attempt to index field 'Lists' (a nil value)",
+			["time"] = "2020/10/07 16:36:42",
+			["locals"] = "AddonName = \"Dejunk\"\nAddon = <table> {\n Utils = <table> {\n }\n Repairer = <table> {\n }\n IS_CLASSIC = true\n DB = <table> {\n }\n Destroyer = <table> {\n }\n DethsDBLib = <table> {\n }\n DethsColorLib = <table> {\n }\n Dejunker = <table> {\n }\n Confirmer = <table> {\n }\n MinimapIcon = <table> {\n }\n IS_RETAIL = false\n EventManager = <table> {\n }\n ListHelper = <table> {\n }\n UI = <table> {\n }\n Core = <table> {\n }\n Filters = <table> {\n }\n Colors = <table> {\n }\n Events = <table> {\n }\n Libs = <table> {\n }\n Bags = <table> {\n }\n VERSION = \"8.3.4\"\n Consts = <table> {\n }\n}\nAceGUI = <table> {\n objPools = <table> {\n }\n RegisterAsContainer = <function> defined @Interface\\AddOns\\ClassicCastbars_Options\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:497\n RegisterWidgetType = <function> defined @Interface\\AddOns\\ClassicCastbars_Options\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:535\n WidgetBase = <table> {\n }\n RegisterAsWidget = <function> defined @Interface\\AddOns\\ClassicCastbars_Options\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:513\n counts = <table> {\n }\n LayoutRegistry = <table> {\n }\n GetLayout = <function> defined @Interface\\AddOns\\ClassicCastbars_Options\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:559\n GetWidgetVersion = <function> defined @Interface\\AddOns\\ClassicCastbars_Options\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:589\n tooltip = AceGUITooltip {\n }\n Create = <function> defined @Interface\\AddOns\\ClassicCastbars_Options\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:144\n GetWidgetCount = <function> defined @Interface\\AddOns\\ClassicCastbars_Options\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:583\n GetNextWidgetNum = <function> defined @Interface\\AddOns\\ClassicCastbars_Options\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:572\n WidgetRegistry = <table> {\n }\n WidgetVersions = <table> {\n }\n RegisterLayout = <function> defined @Interface\\AddOns\\ClassicCastbars_Options\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:549\n Release = <function> defined @Interface\\AddOns\\ClassicCastbars_Options\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:178\n ClearFocus = <function> defined @Interface\\AddOns\\ClassicCastbars_Options\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:233\n WidgetContainerBase = <table> {\n }\n SetFocus = <function> defined @Interface\\AddOns\\ClassicCastbars_Options\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:223\n}\nColors = <table> {\n Yellow = \"E3E34FFF\"\n Primary = \"4FAFE3FF\"\n Green = \"4FE34FFF\"\n Red = \"E34F4FFF\"\n}\nConfirmer = <table> {\n}\nCore = <table> {\n}\nDCL = <table> {\n RainbowString = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:61\n HexTableToRGBA = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:136\n Wow = <table> {\n }\n GetRandomColor = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:99\n metadata = <table> {\n }\n CSS = <table> {\n }\n ColorString = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:28\n GetColorByQuality = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/wow.lua:55\n NewColorTable = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:156\n GetColorTable = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:149\n HexToRGBA = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:110\n RemoveColor = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:82\n GetStringColor = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:91\n}\nDejunker = <table> {\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'Lists' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\Dejunk\\src\\ui\\main.lua:8: in main chunk",
+			["session"] = 2023,
+			["counter"] = 3,
+		}, -- [205]
+		{
+			["message"] = "Interface\\AddOns\\Dejunk\\src\\ui\\groups\\lists.lua:4: attempt to index field 'Lists' (a nil value)",
+			["time"] = "2020/10/07 16:36:42",
+			["locals"] = "_ = \"Dejunk\"\nAddon = <table> {\n Utils = <table> {\n }\n Repairer = <table> {\n }\n IS_CLASSIC = true\n DB = <table> {\n }\n Destroyer = <table> {\n }\n DethsDBLib = <table> {\n }\n DethsColorLib = <table> {\n }\n Dejunker = <table> {\n }\n Confirmer = <table> {\n }\n MinimapIcon = <table> {\n }\n IS_RETAIL = false\n EventManager = <table> {\n }\n ListHelper = <table> {\n }\n UI = <table> {\n }\n Core = <table> {\n }\n Filters = <table> {\n }\n Colors = <table> {\n }\n Events = <table> {\n }\n Libs = <table> {\n }\n Bags = <table> {\n }\n VERSION = \"8.3.4\"\n Consts = <table> {\n }\n}\nAceGUI = <table> {\n objPools = <table> {\n }\n RegisterAsContainer = <function> defined @Interface\\AddOns\\ClassicCastbars_Options\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:497\n RegisterWidgetType = <function> defined @Interface\\AddOns\\ClassicCastbars_Options\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:535\n WidgetBase = <table> {\n }\n RegisterAsWidget = <function> defined @Interface\\AddOns\\ClassicCastbars_Options\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:513\n counts = <table> {\n }\n LayoutRegistry = <table> {\n }\n GetLayout = <function> defined @Interface\\AddOns\\ClassicCastbars_Options\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:559\n GetWidgetVersion = <function> defined @Interface\\AddOns\\ClassicCastbars_Options\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:589\n tooltip = AceGUITooltip {\n }\n Create = <function> defined @Interface\\AddOns\\ClassicCastbars_Options\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:144\n GetWidgetCount = <function> defined @Interface\\AddOns\\ClassicCastbars_Options\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:583\n GetNextWidgetNum = <function> defined @Interface\\AddOns\\ClassicCastbars_Options\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:572\n WidgetRegistry = <table> {\n }\n WidgetVersions = <table> {\n }\n RegisterLayout = <function> defined @Interface\\AddOns\\ClassicCastbars_Options\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:549\n Release = <function> defined @Interface\\AddOns\\ClassicCastbars_Options\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:178\n ClearFocus = <function> defined @Interface\\AddOns\\ClassicCastbars_Options\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:233\n WidgetContainerBase = <table> {\n }\n SetFocus = <function> defined @Interface\\AddOns\\ClassicCastbars_Options\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:223\n}\nConsts = <table> {\n DESTROY_BELOW_PRICE_STEP = 1\n DESTROY_EXCESS_SOUL_SHARDS_STEP = 1\n DESTROY_EXCESS_SOUL_SHARDS_MAX = 28\n SELL_BELOW_AVERAGE_ILVL_MIN = 10\n MAX_NUMBER = 2147483647\n SELL_BELOW_PRICE_MAX = 10000\n SELL_BELOW_PRICE_STEP = 1\n DESTROY_SAVE_SPACE_MAX = 16\n SELL_BELOW_PRICE_MIN = 2\n DESTROY_SAVE_SPACE_STEP = 1\n DESTROY_SAVE_SPACE_MIN = 1\n SAFE_MODE_MAX = 12\n SELL_BELOW_AVERAGE_ILVL_MAX = 100\n SELL_BELOW_AVERAGE_ILVL_STEP = 1\n SOUL_SHARD_ITEM_ID = 6265\n DESTROY_EXCESS_SOUL_SHARDS_MIN = 3\n DESTROY_BELOW_PRICE_MIN = 2\n DESTROY_BELOW_PRICE_MAX = 10000\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'Lists' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\Dejunk\\src\\ui\\groups\\lists.lua:4: in main chunk",
+			["session"] = 2023,
+			["counter"] = 3,
+		}, -- [206]
+		{
+			["message"] = "Interface\\AddOns\\Dejunk\\Bindings.lua:6: attempt to index field 'Lists' (a nil value)",
+			["time"] = "2020/10/07 16:36:42",
+			["locals"] = "AddonName = \"Dejunk\"\nAddon = <table> {\n Utils = <table> {\n }\n Repairer = <table> {\n }\n IS_CLASSIC = true\n DB = <table> {\n }\n Destroyer = <table> {\n }\n DethsDBLib = <table> {\n }\n DethsColorLib = <table> {\n }\n Dejunker = <table> {\n }\n Confirmer = <table> {\n }\n MinimapIcon = <table> {\n }\n IS_RETAIL = false\n EventManager = <table> {\n }\n ListHelper = <table> {\n }\n UI = <table> {\n }\n Core = <table> {\n }\n Filters = <table> {\n }\n Colors = <table> {\n }\n Events = <table> {\n }\n Libs = <table> {\n }\n Bags = <table> {\n }\n VERSION = \"8.3.4\"\n Consts = <table> {\n }\n}\nColors = <table> {\n Yellow = \"E3E34FFF\"\n Primary = \"4FAFE3FF\"\n Green = \"4FE34FFF\"\n Red = \"E34F4FFF\"\n}\nCore = <table> {\n}\nDCL = <table> {\n RainbowString = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:61\n HexTableToRGBA = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:136\n Wow = <table> {\n }\n GetRandomColor = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:99\n metadata = <table> {\n }\n CSS = <table> {\n }\n ColorString = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:28\n GetColorByQuality = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/wow.lua:55\n NewColorTable = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:156\n GetColorTable = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:149\n HexToRGBA = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:110\n RemoveColor = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:82\n GetStringColor = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:91\n}\nDejunker = <table> {\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'Lists' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\Dejunk\\Bindings.lua:6: in main chunk",
+			["session"] = 2023,
+			["counter"] = 3,
+		}, -- [207]
+		{
+			["message"] = "Interface\\AddOns\\Dejunk\\src\\core.lua:8: attempt to index field 'Lists' (a nil value)",
+			["time"] = "2020/10/07 16:36:42",
+			["locals"] = "AddonName = \"Dejunk\"\nAddon = <table> {\n Utils = <table> {\n }\n Repairer = <table> {\n }\n IS_CLASSIC = true\n DB = <table> {\n }\n Destroyer = <table> {\n }\n DethsDBLib = <table> {\n }\n DethsColorLib = <table> {\n }\n Dejunker = <table> {\n }\n Confirmer = <table> {\n }\n MinimapIcon = <table> {\n }\n IS_RETAIL = false\n EventManager = <table> {\n }\n ListHelper = <table> {\n }\n UI = <table> {\n }\n Core = <table> {\n }\n Filters = <table> {\n }\n Colors = <table> {\n }\n Events = <table> {\n }\n Libs = <table> {\n }\n Bags = <table> {\n }\n VERSION = \"8.3.4\"\n Consts = <table> {\n }\n}\nColors = <table> {\n Yellow = \"E3E34FFF\"\n Primary = \"4FAFE3FF\"\n Green = \"4FE34FFF\"\n Red = \"E34F4FFF\"\n}\nConfirmer = <table> {\n}\nCore = <table> {\n}\nDB = <table> {\n}\nDCL = <table> {\n RainbowString = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:61\n HexTableToRGBA = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:136\n Wow = <table> {\n }\n GetRandomColor = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:99\n metadata = <table> {\n }\n CSS = <table> {\n }\n ColorString = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:28\n GetColorByQuality = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/wow.lua:55\n NewColorTable = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:156\n GetColorTable = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:149\n HexToRGBA = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:110\n RemoveColor = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:82\n GetStringColor = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:91\n}\nDejunker = <table> {\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field 'Lists' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\Dejunk\\src\\core.lua:8: in main chunk",
+			["session"] = 2023,
+			["counter"] = 3,
+		}, -- [208]
+		{
+			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\events\\events.lua",
+			["session"] = 2023,
+			["time"] = "2020/10/07 16:36:53",
+			["counter"] = 3,
+		}, -- [209]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'TargetFrameToT:Show()'.",
+			["time"] = "2020/09/23 13:06:51",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Show'\nInterface\\FrameXML\\TargetFrame.lua:910: in function <Interface\\FrameXML\\TargetFrame.lua:905>\n[C]: ?\n[C]: in function `TargetofTarget_Update'\nInterface\\FrameXML\\TargetFrame.lua:420: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[C]: ?\n[C]: ?",
+			["session"] = 2024,
+			["counter"] = 11,
+		}, -- [210]
 	},
 }

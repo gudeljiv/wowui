@@ -471,11 +471,6 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Mudrock Spikeshell",
 		},
-		[3463] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Wandering Barrens Giraffe",
-		},
 		[3110] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
@@ -491,60 +486,65 @@ KILLTRACK = {
 			["Kills"] = 2,
 			["Name"] = "Magistrate Burnside",
 		},
-		[2427] = {
-			["AchievCount"] = 0,
-			["Kills"] = 2,
-			["Name"] = "Jailor Eston",
-		},
 		[3235] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Greater Barrens Kodo",
 		},
-		[2428] = {
+		[2427] = {
 			["AchievCount"] = 0,
 			["Kills"] = 2,
-			["Name"] = "Jailor Marlgen",
+			["Name"] = "Jailor Eston",
 		},
 		[3670] = {
 			["AchievCount"] = 0,
 			["Kills"] = 1,
 			["Name"] = "Lord Pythas",
 		},
+		[2428] = {
+			["AchievCount"] = 0,
+			["Kills"] = 2,
+			["Name"] = "Jailor Marlgen",
+		},
+		[3463] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Wandering Barrens Giraffe",
+		},
 		[3640] = {
 			["AchievCount"] = 0,
 			["Kills"] = 7,
 			["Name"] = "Evolving Ectoplasm",
 		},
-		[3130] = {
+		[2442] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Thunder Lizard",
+			["Name"] = "Cow",
 		},
 		[4514] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "ArmordEmxara",
 		},
-		[2305] = {
-			["AchievCount"] = 0,
-			["Kills"] = 22,
-			["Name"] = "Foreman Bonds",
-		},
 		[521] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "buttsecks",
+		},
+		[2620] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Prairie Dog",
 		},
 		[2559] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Highland Strider",
 		},
-		[2620] = {
+		[2305] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Prairie Dog",
+			["Kills"] = 22,
+			["Name"] = "Foreman Bonds",
 		},
 		[2560] = {
 			["AchievCount"] = 0,
@@ -556,10 +556,10 @@ KILLTRACK = {
 			["Kills"] = 1,
 			["Name"] = "Blacksmith Verringtan",
 		},
-		[2565] = {
+		[13816] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Giant Plains Creeper",
+			["Name"] = "Prospector Stonehewer",
 		},
 		[4342] = {
 			["AchievCount"] = 0,
@@ -581,11 +581,6 @@ KILLTRACK = {
 			["Kills"] = 2,
 			["Name"] = "Plains Creeper",
 		},
-		[13816] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Prospector Stonehewer",
-		},
 		[2248] = {
 			["AchievCount"] = 0,
 			["Kills"] = 42,
@@ -595,6 +590,11 @@ KILLTRACK = {
 			["AchievCount"] = 0,
 			["Kills"] = 4,
 			["Name"] = "Hulking Mountain Lion",
+		},
+		[2565] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Giant Plains Creeper",
 		},
 		[3840] = {
 			["AchievCount"] = 0,
@@ -616,10 +616,10 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Slimeshell Makrura",
 		},
-		[2442] = {
+		[3130] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Cow",
+			["Name"] = "Thunder Lizard",
 		},
 		[2952] = {
 			["AchievCount"] = 0,

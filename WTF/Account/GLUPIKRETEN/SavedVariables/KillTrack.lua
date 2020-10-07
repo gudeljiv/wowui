@@ -46,6 +46,11 @@ KILLTRACK = {
 			["Name"] = "Farmer Kalaba",
 			["Exp"] = 170,
 		},
+		[4124] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Needles Cougar",
+		},
 		[2581] = {
 			["AchievCount"] = 0,
 			["Kills"] = 259,
@@ -117,16 +122,36 @@ KILLTRACK = {
 			["Kills"] = 49,
 			["Name"] = "Elder Mottled Boar",
 		},
+		[14123] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Steeljaw Snapper",
+		},
 		[620] = {
 			["AchievCount"] = 0,
 			["Kills"] = 11,
 			["Name"] = "Chicken",
+		},
+		[5425] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Starving Blisterpaw",
 		},
 		[5682] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Dalin Forgewright",
 			["Exp"] = 37,
+		},
+		[5428] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Roc",
+		},
+		[4411] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Darkfang Lurker",
 		},
 		[4414] = {
 			["AchievCount"] = 0,
@@ -470,6 +495,11 @@ KILLTRACK = {
 			["Name"] = "Farmer Ray",
 			["Exp"] = 42,
 		},
+		[7855] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Southsea Pirate",
+		},
 		[2406] = {
 			["AchievCount"] = 0,
 			["Kills"] = 4,
@@ -503,6 +533,31 @@ KILLTRACK = {
 			["AchievCount"] = 0,
 			["Kills"] = 1,
 			["Name"] = "DieBUSTA",
+		},
+		[7858] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Southsea Swashbuckler",
+		},
+		[7856] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Southsea Freebooter",
+		},
+		[8996] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Voidwalker Minion",
+		},
+		[5617] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Wastewander Shadow Mage",
+		},
+		[5422] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Scorpid Hunter",
 		},
 		[5828] = {
 			["AchievCount"] = 0,
@@ -576,9 +631,9 @@ KILLTRACK = {
 		},
 		[4358] = {
 			["AchievCount"] = 0,
-			["Kills"] = 194,
+			["Kills"] = 260,
 			["Name"] = "Mirefin Puddlejumper",
-			["Exp"] = 196,
+			["Exp"] = 160,
 		},
 		[5184] = {
 			["AchievCount"] = 0,
@@ -839,9 +894,9 @@ KILLTRACK = {
 		},
 		[4359] = {
 			["AchievCount"] = 0,
-			["Kills"] = 220,
+			["Kills"] = 299,
 			["Name"] = "Mirefin Murloc",
-			["Exp"] = 196,
+			["Exp"] = 180,
 		},
 		[3463] = {
 			["AchievCount"] = 0,
@@ -850,15 +905,15 @@ KILLTRACK = {
 		},
 		[4361] = {
 			["AchievCount"] = 0,
-			["Kills"] = 302,
+			["Kills"] = 410,
 			["Name"] = "Mirefin Muckdweller",
-			["Exp"] = 196,
+			["Exp"] = 200,
 		},
 		[4362] = {
 			["AchievCount"] = 0,
-			["Kills"] = 315,
+			["Kills"] = 412,
 			["Name"] = "Mirefin Coastrunner",
-			["Exp"] = 215,
+			["Exp"] = 180,
 		},
 		[2572] = {
 			["AchievCount"] = 0,

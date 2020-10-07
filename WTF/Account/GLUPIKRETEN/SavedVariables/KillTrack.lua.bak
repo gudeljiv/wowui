@@ -128,6 +128,11 @@ KILLTRACK = {
 			["Name"] = "Dalin Forgewright",
 			["Exp"] = 37,
 		},
+		[4411] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Darkfang Lurker",
+		},
 		[4414] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
@@ -542,47 +547,47 @@ KILLTRACK = {
 			["Name"] = "Kenata Dabyrie",
 			["Exp"] = 88,
 		},
-		[5057] = {
-			["AchievCount"] = 0,
-			["Kills"] = 16,
-			["Name"] = "Theramore Deserter",
-			["Exp"] = 215,
-		},
 		[2572] = {
 			["AchievCount"] = 0,
 			["Kills"] = 3,
 			["Name"] = "Drywhisker Kobold",
 			["Exp"] = 452,
 		},
+		[5057] = {
+			["AchievCount"] = 0,
+			["Kills"] = 16,
+			["Name"] = "Theramore Deserter",
+			["Exp"] = 215,
+		},
 		[4397] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Mudrock Spikeshell",
-		},
-		[3235] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Greater Barrens Kodo",
-		},
-		[4075] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Rat",
 		},
 		[3463] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Wandering Barrens Giraffe",
 		},
-		[3466] = {
+		[4075] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Zhevra Courser",
+			["Name"] = "Rat",
+		},
+		[3235] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Greater Barrens Kodo",
 		},
 		[2442] = {
 			["AchievCount"] = 0,
 			["Kills"] = 36,
 			["Name"] = "Cow",
+		},
+		[3466] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Zhevra Courser",
 		},
 		[2612] = {
 			["AchievCount"] = 0,
@@ -611,26 +616,26 @@ KILLTRACK = {
 			["Name"] = "Miner Hackett",
 			["Exp"] = 179,
 		},
-		[2738] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Stromgarde Cavalryman",
-		},
 		[2566] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Boulderfist Brute",
 		},
-		[2332] = {
+		[2738] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Valdred Moray",
+			["Name"] = "Stromgarde Cavalryman",
 		},
 		[3840] = {
 			["AchievCount"] = 0,
 			["Kills"] = 25,
 			["Name"] = "Druid of the Fang",
 			["Exp"] = 42,
+		},
+		[2332] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Valdred Moray",
 		},
 		[6466] = {
 			["AchievCount"] = 0,
@@ -648,16 +653,16 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Balos Jacken",
 		},
-		[2408] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Snapjaw",
-		},
 		[2563] = {
 			["AchievCount"] = 0,
 			["Kills"] = 25,
 			["Name"] = "Plains Creeper",
 			["Exp"] = 394,
+		},
+		[2408] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Snapjaw",
 		},
 		[2407] = {
 			["AchievCount"] = 0,
@@ -682,26 +687,26 @@ KILLTRACK = {
 			["Name"] = "Jailor Marlgen",
 			["Exp"] = 23,
 		},
+		[4341] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Drywallow Crocolisk",
+		},
 		[4128] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Hecklefang Stalker",
 		},
-		[4341] = {
+		[3835] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Drywallow Crocolisk",
+			["Name"] = "Biletoad",
 		},
 		[2270] = {
 			["AchievCount"] = 0,
 			["Kills"] = 10,
 			["Name"] = "Hillsbrad Sentry",
 			["Exp"] = 162,
-		},
-		[3835] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Biletoad",
 		},
 		[2053] = {
 			["AchievCount"] = 0,
@@ -833,15 +838,15 @@ KILLTRACK = {
 		},
 		[4358] = {
 			["AchievCount"] = 0,
-			["Kills"] = 194,
+			["Kills"] = 207,
 			["Name"] = "Mirefin Puddlejumper",
 			["Exp"] = 196,
 		},
 		[4359] = {
 			["AchievCount"] = 0,
-			["Kills"] = 220,
+			["Kills"] = 234,
 			["Name"] = "Mirefin Murloc",
-			["Exp"] = 196,
+			["Exp"] = 176,
 		},
 		[4360] = {
 			["AchievCount"] = 0,
@@ -851,13 +856,13 @@ KILLTRACK = {
 		},
 		[4361] = {
 			["AchievCount"] = 0,
-			["Kills"] = 302,
+			["Kills"] = 328,
 			["Name"] = "Mirefin Muckdweller",
-			["Exp"] = 196,
+			["Exp"] = 215,
 		},
 		[4362] = {
 			["AchievCount"] = 0,
-			["Kills"] = 315,
+			["Kills"] = 333,
 			["Name"] = "Mirefin Coastrunner",
 			["Exp"] = 215,
 		},

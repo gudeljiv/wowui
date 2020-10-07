@@ -25,6 +25,10 @@ KILLTRACK_CHAR = {
 			["Name"] = "Dalaran Apprentice",
 			["Kills"] = 0,
 		},
+		[4124] = {
+			["Name"] = "Needles Cougar",
+			["Kills"] = 0,
+		},
 		[2581] = {
 			["Name"] = "Dabyrie Militia",
 			["Kills"] = 259,
@@ -73,12 +77,28 @@ KILLTRACK_CHAR = {
 			["Name"] = "Elder Mottled Boar",
 			["Kills"] = 49,
 		},
+		[14123] = {
+			["Name"] = "Steeljaw Snapper",
+			["Kills"] = 0,
+		},
 		[620] = {
 			["Name"] = "Chicken",
 			["Kills"] = 11,
 		},
+		[5425] = {
+			["Name"] = "Starving Blisterpaw",
+			["Kills"] = 0,
+		},
 		[5682] = {
 			["Name"] = "Dalin Forgewright",
+			["Kills"] = 0,
+		},
+		[5428] = {
+			["Name"] = "Roc",
+			["Kills"] = 0,
+		},
+		[4411] = {
+			["Name"] = "Darkfang Lurker",
 			["Kills"] = 0,
 		},
 		[4414] = {
@@ -321,6 +341,10 @@ KILLTRACK_CHAR = {
 			["Name"] = "Farmer Ray",
 			["Kills"] = 4,
 		},
+		[7855] = {
+			["Name"] = "Southsea Pirate",
+			["Kills"] = 0,
+		},
 		[2406] = {
 			["Name"] = "Mountain Lion",
 			["Kills"] = 4,
@@ -361,6 +385,26 @@ KILLTRACK_CHAR = {
 			["Name"] = "Dalaran Protector",
 			["Kills"] = 0,
 		},
+		[7858] = {
+			["Name"] = "Southsea Swashbuckler",
+			["Kills"] = 0,
+		},
+		[7856] = {
+			["Name"] = "Southsea Freebooter",
+			["Kills"] = 0,
+		},
+		[8996] = {
+			["Name"] = "Voidwalker Minion",
+			["Kills"] = 0,
+		},
+		[5617] = {
+			["Name"] = "Wastewander Shadow Mage",
+			["Kills"] = 0,
+		},
+		[5422] = {
+			["Name"] = "Scorpid Hunter",
+			["Kills"] = 0,
+		},
 		[4075] = {
 			["Name"] = "Rat",
 			["Kills"] = 0,
@@ -399,7 +443,7 @@ KILLTRACK_CHAR = {
 		},
 		[4358] = {
 			["Name"] = "Mirefin Puddlejumper",
-			["Kills"] = 194,
+			["Kills"] = 260,
 		},
 		[2270] = {
 			["Name"] = "Hillsbrad Sentry",
@@ -449,33 +493,21 @@ KILLTRACK_CHAR = {
 			["Name"] = "Jailor Marlgen",
 			["Kills"] = 2,
 		},
-		[2305] = {
-			["Name"] = "Foreman Bonds",
-			["Kills"] = 12,
-		},
 		[2407] = {
 			["Name"] = "Hulking Mountain Lion",
 			["Kills"] = 4,
 		},
-		[2563] = {
-			["Name"] = "Plains Creeper",
-			["Kills"] = 3,
-		},
-		[2053] = {
-			["Name"] = "Haggard Refugee",
-			["Kills"] = 20,
-		},
-		[2560] = {
-			["Name"] = "Highland Thrasher",
-			["Kills"] = 0,
+		[2248] = {
+			["Name"] = "Cave Yeti",
+			["Kills"] = 44,
 		},
 		[2408] = {
 			["Name"] = "Snapjaw",
 			["Kills"] = 0,
 		},
-		[2559] = {
-			["Name"] = "Highland Strider",
-			["Kills"] = 1,
+		[2563] = {
+			["Name"] = "Plains Creeper",
+			["Kills"] = 3,
 		},
 		[3840] = {
 			["Name"] = "Druid of the Fang",
@@ -484,6 +516,18 @@ KILLTRACK_CHAR = {
 		[3835] = {
 			["Name"] = "Biletoad",
 			["Kills"] = 0,
+		},
+		[2559] = {
+			["Name"] = "Highland Strider",
+			["Kills"] = 1,
+		},
+		[2560] = {
+			["Name"] = "Highland Thrasher",
+			["Kills"] = 0,
+		},
+		[2305] = {
+			["Name"] = "Foreman Bonds",
+			["Kills"] = 12,
 		},
 		[1909] = {
 			["Name"] = "Vile Fin Lakestalker",
@@ -509,9 +553,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Bloodsnout Worg",
 			["Kills"] = 0,
 		},
-		[2248] = {
-			["Name"] = "Cave Yeti",
-			["Kills"] = 44,
+		[2053] = {
+			["Name"] = "Haggard Refugee",
+			["Kills"] = 20,
 		},
 		[2054] = {
 			["Name"] = "Sickly Refugee",
@@ -563,7 +607,7 @@ KILLTRACK_CHAR = {
 		},
 		[4359] = {
 			["Name"] = "Mirefin Murloc",
-			["Kills"] = 220,
+			["Kills"] = 299,
 		},
 		[3463] = {
 			["Name"] = "Wandering Barrens Giraffe",
@@ -571,11 +615,11 @@ KILLTRACK_CHAR = {
 		},
 		[4361] = {
 			["Name"] = "Mirefin Muckdweller",
-			["Kills"] = 302,
+			["Kills"] = 410,
 		},
 		[4362] = {
 			["Name"] = "Mirefin Coastrunner",
-			["Kills"] = 315,
+			["Kills"] = 412,
 		},
 		[4363] = {
 			["Name"] = "Mirefin Oracle",

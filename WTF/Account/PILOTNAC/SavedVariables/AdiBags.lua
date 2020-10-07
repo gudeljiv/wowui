@@ -162,6 +162,7 @@ AdiBagsDB = {
 	["profileKeys"] = {
 		["Mxzq - Golemagg"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
+		["Stranac - Golemagg"] = "Default",
 		["Junac - Golemagg"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
 		["Konac - Golemagg"] = "Default",

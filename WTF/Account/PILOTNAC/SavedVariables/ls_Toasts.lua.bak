@@ -9,6 +9,7 @@ LS_TOASTS_GLOBAL_CONFIG = {
 		["Paydo - Dreadmist"] = "Default",
 		["Kosturko - Golemagg"] = "Default",
 		["Konac - Golemagg"] = "Default",
+		["Stranac - Golemagg"] = "Default",
 		["Whatevs - Stonespine"] = "Default",
 		["Korupcija - Stonespine"] = "Default",
 		["Mohikanac - Golemagg"] = "Default",

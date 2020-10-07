@@ -12,6 +12,7 @@ DEJUNK_ADDON_SV = {
 	},
 	["Profiles"] = {
 		["Default"] = {
+			["SafeMode"] = false,
 			["DestroyBelowPrice"] = {
 				["Enabled"] = true,
 				["Value"] = 500,
@@ -41,7 +42,6 @@ DEJUNK_ADDON_SV = {
 				["17058"] = true,
 				["17057"] = true,
 			},
-			["SilentMode"] = true,
 		},
 		["Jaroslav-Golemagg"] = {
 			["DestroyBelowPrice"] = {

@@ -91,10 +91,35 @@ KILLTRACK = {
 			["Kills"] = 1,
 			["Name"] = "Syndicate Mercenary",
 		},
+		[4143] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Sparkleshell Snapper",
+		},
 		[3100] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Elder Mottled Boar",
+		},
+		[14123] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Steeljaw Snapper",
+		},
+		[4147] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Saltstone Basilisk",
+		},
+		[5428] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Roc",
+		},
+		[4411] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Darkfang Lurker",
 		},
 		[4414] = {
 			["AchievCount"] = 0,
@@ -115,6 +140,11 @@ KILLTRACK = {
 			["AchievCount"] = 0,
 			["Kills"] = 7,
 			["Name"] = "Dun Garok Rifleman",
+		},
+		[3238] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Stormhide",
 		},
 		[2346] = {
 			["AchievCount"] = 0,
@@ -170,6 +200,11 @@ KILLTRACK = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Ornery Plainstrider",
+		},
+		[3246] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Fleeting Plainstrider",
 		},
 		[2354] = {
 			["AchievCount"] = 0,
@@ -235,6 +270,11 @@ KILLTRACK = {
 			["AchievCount"] = 0,
 			["Kills"] = 14,
 			["Name"] = "Deviate Python",
+		},
+		[3131] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Lightning Hide",
 		},
 		[2240] = {
 			["AchievCount"] = 0,
@@ -421,6 +461,11 @@ KILLTRACK = {
 			["Kills"] = 1,
 			["Name"] = "Farmer Ray",
 		},
+		[7855] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Southsea Pirate",
+		},
 		[2406] = {
 			["AchievCount"] = 0,
 			["Kills"] = 4,
@@ -465,6 +510,16 @@ KILLTRACK = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Skeletal Acolyte",
+		},
+		[5617] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Wastewander Shadow Mage",
+		},
+		[9377] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Swirling Vortex",
 		},
 		[2612] = {
 			["AchievCount"] = 0,
@@ -664,7 +719,7 @@ KILLTRACK = {
 		},
 		[4362] = {
 			["AchievCount"] = 0,
-			["Kills"] = 14,
+			["Kills"] = 15,
 			["Name"] = "Mirefin Coastrunner",
 		},
 		[4363] = {

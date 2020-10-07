@@ -2,14 +2,26 @@
 xKillCount = {
 	["show"] = true,
 	["killLog"] = {
-		["Theramore Deserter"] = {
-			["name"] = "Theramore Deserter",
-			["count"] = 16,
+		["Mirefin Puddlejumper"] = {
+			["name"] = "Mirefin Puddlejumper",
+			["count"] = 13,
+		},
+		["Mirefin Coastrunner"] = {
+			["name"] = "Mirefin Coastrunner",
+			["count"] = 17,
+		},
+		["Mirefin Muckdweller"] = {
+			["name"] = "Mirefin Muckdweller",
+			["count"] = 27,
+		},
+		["Mirefin Murloc"] = {
+			["name"] = "Mirefin Murloc",
+			["count"] = 14,
 		},
 	},
 	["position"] = {
-		["y"] = 128.371017456055,
-		["x"] = 425.500427246094,
+		["y"] = 317.370910644531,
+		["x"] = 423.500274658203,
 		["to"] = "LEFT",
 		["from"] = "LEFT",
 	},

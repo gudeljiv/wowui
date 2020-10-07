@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 3031,
+	["session"] = 3035,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -3035,5 +3035,13 @@ BugGrabberDB = {
 			["session"] = 3024,
 			["counter"] = 1,
 		}, -- [383]
+		{
+			["message"] = "Interface\\AddOns\\Dejunk\\src\\core.lua:51: attempt to index global 'CahtFrame6' (a nil value)",
+			["time"] = "2020/10/07 17:01:39",
+			["locals"] = "self = <table> {\n MinDelay = 0.100000\n OnUpdate = <function> defined @Interface\\AddOns\\Dejunk\\src\\core.lua:138\n Debug = <function> defined @Interface\\FrameXML\\UIParent.lua:4447\n PrintVerbose = <function> defined @Interface\\AddOns\\Dejunk\\src\\core.lua:56\n IsBusy = <function> defined @Interface\\AddOns\\Dejunk\\src\\core.lua:118\n CanDestroy = <function> defined @Interface\\AddOns\\Dejunk\\src\\core.lua:100\n Print = <function> defined @Interface\\AddOns\\Dejunk\\src\\core.lua:46\n CanDejunk = <function> defined @Interface\\AddOns\\Dejunk\\src\\core.lua:81\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index global 'CahtFrame6' (a nil value)\"\nDB = <table> {\n Reformat = <function> defined @Interface\\AddOns\\Dejunk\\src\\db.lua:178\n}\nDCL = <table> {\n RainbowString = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:61\n HexTableToRGBA = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:136\n Wow = <table> {\n }\n GetRandomColor = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:99\n metadata = <table> {\n }\n CSS = <table> {\n }\n ColorString = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:28\n GetColorByQuality = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/wow.lua:55\n NewColorTable = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:156\n GetColorTable = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:149\n HexToRGBA = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:110\n RemoveColor = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:82\n GetStringColor = <function> defined @Interface\\AddOns\\Dejunk\\libs\\DethsColorLib\\src/main.lua:91\n}\nAddonName = \"Dejunk\"\nColors = <table> {\n Yellow = \"E3E34FFF\"\n Primary = \"4FAFE3FF\"\n Green = \"4FE34FFF\"\n Red = \"E34F4FFF\"\n}\n",
+			["stack"] = "Interface\\AddOns\\Dejunk\\src\\core.lua:51: in function `Print'\nInterface\\AddOns\\Dejunk\\src\\core.lua:58: in function `PrintVerbose'\nInterface\\AddOns\\Dejunk\\src\\services\\confirmer.lua:168: in function `_ConfirmDestroyedItems'\nInterface\\AddOns\\Dejunk\\src\\services\\confirmer.lua:229: in function `func'\nInterface\\AddOns\\Dejunk\\src\\events\\event-manager.lua:46: in function `Fire'\nInterface\\AddOns\\Dejunk\\src\\events\\event-manager.lua:61: in function <Interface\\AddOns\\Dejunk\\src\\events\\event-manager.lua:60>",
+			["session"] = 3034,
+			["counter"] = 6,
+		}, -- [384]
 	},
 }
