@@ -43,8 +43,8 @@ W: 50
 H: 50
 Frame: KillCountFrame
 FrameLevel: 1
-Anchor: TOPLEFT
+Anchor: LEFT
 X: 491
-Y: -307
+Y: 291
 W: 100
 H: 200

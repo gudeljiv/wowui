@@ -1,14 +1,14 @@
 
 DEJUNK_ADDON_SV = {
 	["DDBL_Version"] = "2.0.2",
-	["ProfileKeys"] = {
-		["Augustin-Golemagg"] = "Default",
-	},
 	["Global"] = {
 		["Minimap"] = {
 			["minimapPos"] = 35.8575922896139,
 			["hide"] = true,
 		},
+	},
+	["ProfileKeys"] = {
+		["Augustin-Golemagg"] = "Default",
 	},
 	["Profiles"] = {
 		["Default"] = {
@@ -27,10 +27,10 @@ DEJUNK_ADDON_SV = {
 				["1708"] = true,
 				["1707"] = true,
 				["1711"] = true,
-				["4544"] = true,
+				["5785"] = true,
 				["4633"] = true,
 				["4424"] = true,
-				["5785"] = true,
+				["4544"] = true,
 			},
 			["SilentMode"] = true,
 			["Destroyables"] = {

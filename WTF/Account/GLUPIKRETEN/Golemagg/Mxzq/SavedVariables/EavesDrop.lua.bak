@@ -210,8 +210,8 @@ EavesDropStatsDB = {
 							["amount"] = 92,
 						},
 						[2] = {
-							["time"] = "|cffffffff08/09/20 12:33:13|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h melee swing hits |Hunit:Creature-0-4448-1-186-4025-0000AFD0D1:Bloodfury Ambusher|hBloodfury Ambusher|h for |cffffffff128|r |cffffffffPhysical|r.(Critical)",
-							["amount"] = 128,
+							["time"] = "|cffffffff10/07/20 11:59:17|r\n|Hunit:Player-4465-01C7FC88:Mxzq|hMxzq's|h melee swing hits |Hunit:Creature-0-4447-0-16-2578-00007D8B8E:Young Mesa Buzzard|hYoung Mesa Buzzard|h for |cffffffff150|r |cffffffffPhysical|r.(Critical)",
+							["amount"] = 150,
 						},
 					},
 					["Auto Shot"] = {

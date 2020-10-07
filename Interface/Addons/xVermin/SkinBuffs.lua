@@ -11,6 +11,17 @@ ReplacedDebuffTypeColor[""] = ReplacedDebuffTypeColor["none"]
 local frame, frameBorder, frameCount, color, B_spellId, D_spellId, B_unitCaster, D_unitCaster, petName, targetName, hasPet, isHunterPet
 
 local function SkinTarget()
+	if TargetFrameToT:IsVisible() then
+		for i = 1, 32 do
+			if _G["TargetFrameToTBuff" .. i] then
+				_G["TargetFrameToTBuff" .. i]:Hide()
+			end
+			if _G["TargetFrameToTDebuff" .. i] then
+				_G["TargetFrameToTDebuff" .. i]:Hide()
+			end
+		end
+	end
+
 	if TargetFrame:IsShown() then
 		hasPet, isHunterPet = HasPetUI()
 		if hasPet then

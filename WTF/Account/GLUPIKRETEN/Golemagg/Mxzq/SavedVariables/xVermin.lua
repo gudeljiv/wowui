@@ -2,19 +2,26 @@
 xKillCount = {
 	["show"] = true,
 	["killLog"] = {
-		["Highland Strider"] = {
-			["name"] = "Highland Strider",
-			["count"] = 2,
+		["Young Mesa Buzzard"] = {
+			["count"] = 1,
+			["source"] = "pet",
+			["name"] = "Young Mesa Buzzard",
 		},
 		["Plains Creeper"] = {
+			["source"] = "player",
 			["name"] = "Plains Creeper",
-			["count"] = 1,
+			["count"] = 4,
+		},
+		["Highland Strider"] = {
+			["source"] = "player",
+			["name"] = "Highland Strider",
+			["count"] = 4,
 		},
 	},
 	["position"] = {
-		["y"] = 248.185089111328,
-		["x"] = 396.875762939453,
-		["to"] = "LEFT",
-		["from"] = "LEFT",
+		["y"] = 145.438262939453,
+		["x"] = 552.449645996094,
+		["to"] = "CENTER",
+		["from"] = "CENTER",
 	},
 }
