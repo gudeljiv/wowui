@@ -4,8 +4,8 @@ FrameLevel: 1
 Anchor: TOP
 X: -489
 Y: -257
-W: 150
-H: 107
+W: 188
+H: 131
 Frame: EavesDropFrame
 FrameLevel: 1
 Anchor: RIGHT

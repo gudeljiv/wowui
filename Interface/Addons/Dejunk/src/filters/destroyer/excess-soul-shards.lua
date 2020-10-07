@@ -1,17 +1,16 @@
 local _, Addon = ...
+if not Addon.IS_CLASSIC then return end
+
 local Consts = Addon.Consts
 local DB = Addon.DB
 local Filter = {}
 local GetItemCount = _G.GetItemCount
 local L = Addon.Libs.L
 local tremove = table.remove
-local UnitClass = _G.UnitClass
 
 function Filter:Run(item)
-  local _, unitClass = UnitClass("PLAYER")
-
   if
-    unitClass == "WARLOCK" and
+    Consts.PLAYER_CLASS == "WARLOCK" and
     DB.Profile.DestroyExcessSoulShards.Enabled and
     item.ItemID == Consts.SOUL_SHARD_ITEM_ID and
     GetItemCount(Consts.SOUL_SHARD_ITEM_ID) >

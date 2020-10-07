@@ -1,54 +1,88 @@
--- MerchantButton: displays a "Dejunk" button on the merchant frame.
-
 local AddonName, Addon = ...
 local Core = Addon.Core
+local DB = Addon.DB
 local Dejunker = Addon.Dejunker
 local DTL = Addon.Libs.DTL
+local E = Addon.Events
+local EventManager = Addon.EventManager
 local L = Addon.Libs.L
-local MerchantButton = Addon.MerchantButton
+local MerchantButton = Addon.UI.MerchantButton
 local UI = Addon.UI
 
 -- ============================================================================
--- Merchant Button
+-- Events
 -- ============================================================================
 
--- Initializes the frame.
-function MerchantButton:Initialize()
-  self.Button = _G.CreateFrame(
+EventManager:Once(E.DatabaseReady, function()
+  local button = _G.CreateFrame(
     "Button",
     AddonName .. "MerchantButton",
     _G.MerchantFrame,
     "OptionsButtonTemplate"
   )
-  self.Button:SetText(AddonName)
+  button:SetText(AddonName)
+  button:RegisterForClicks("LeftButtonUp", "RightButtonUp")
 
   -- Skin & position button for ElvUI if necessary
-  local E = _G["ElvUI"] and _G["ElvUI"][1] -- ElvUI Engine
-  if E and E.private.skins.blizzard.enable and E.private.skins.blizzard.merchant then
-    E:GetModule("Skins"):HandleButton(self.Button)
-    self.Button:SetPoint("BOTTOMLEFT", _G.MerchantItem1, "TOPLEFT", 0, 8)
+  local ElvUI = _G.ElvUI and _G.ElvUI[1] -- ElvUI Engine
+  if
+    ElvUI and
+    ElvUI.private.skins.blizzard.enable and
+    ElvUI.private.skins.blizzard.merchant
+  then
+    ElvUI:GetModule("Skins"):HandleButton(button)
+    if Addon.IS_RETAIL then
+      button:SetPoint("TOPLEFT", 11, -28)
+    else
+      button:SetPoint("BOTTOMLEFT", _G.MerchantItem1, "TOPLEFT", 0, 8)
+    end
   else
-    self.Button:SetPoint("TOPLEFT", 60, -28)
+    if Addon.IS_RETAIL then
+      button:SetPoint("TOPRIGHT", _G.MerchantFrameLootFilter, "TOPLEFT", -4, 0)
+    else
+      button:SetPoint("TOPLEFT", 60, -28)
+    end
   end
 
-  self.Button:HookScript("OnUpdate", function(self, elapsed)
+  -- Scripts
+  button:HookScript("OnUpdate", function(self)
     self:SetEnabled(Core:CanDejunk())
   end)
 
-  self.Button:RegisterForClicks("LeftButtonUp", "RightButtonUp")
-  self.Button:HookScript("OnClick", function(self, button, down)
-    if (button == "LeftButton") then
-      Dejunker:StartDejunking()
-    elseif (button == "RightButton") then
+  button:HookScript("OnClick", function(self, mouseButton)
+    if (mouseButton == "LeftButton") then
+      Dejunker:Start()
+    elseif (mouseButton == "RightButton") then
       UI:Toggle()
     end
   end)
 
-  self.Button:HookScript("OnEnter", function(self)
-    DTL:ShowTooltip(self, "ANCHOR_RIGHT", self:GetText(), L.DEJUNK_BUTTON_TOOLTIP)
+  button:HookScript("OnEnter", function(self)
+    DTL:ShowTooltip(
+      self,
+      "ANCHOR_RIGHT",
+      self:GetText(),
+      L.DEJUNK_BUTTON_TOOLTIP
+    )
   end)
-  self.Button:HookScript("OnLeave", DTL.HideTooltip)
 
-  -- nil function
-  self.Initialize = nil
+  button:HookScript("OnLeave", function()
+    DTL:HideTooltip()
+  end)
+
+  -- Add to MerchantButton + update
+  MerchantButton.button = button
+  MerchantButton:Update()
+end)
+
+-- ============================================================================
+-- Functions
+-- ============================================================================
+
+function MerchantButton:Update()
+  if DB.Global.MerchantButton then
+    self.button:Show()
+  else
+    self.button:Hide()
+  end
 end

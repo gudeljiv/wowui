@@ -1,17 +1,19 @@
-local AddonName, Addon = ...
+local _, Addon = ...
 local AceGUI = Addon.Libs.AceGUI
 local AceSerializer = _G.LibStub("AceSerializer-3.0")
 local Colors = Addon.Colors
 local Core = Addon.Core
 local DB = Addon.DB
 local DCL = Addon.Libs.DCL
+local E = Addon.Events
+local EventManager = Addon.EventManager
 local L = Addon.Libs.L
-local ListManager = Addon.ListManager
 local next = next
+local pcall = pcall
 local Profiles = Addon.UI.Groups.Profiles
 local strtrim = _G.strtrim
-local Tools = Addon.Tools
-local Utils = Addon.UI.Utils
+local Utils = Addon.Utils
+local Widgets = Addon.UI.Widgets
 
 -- ============================================================================
 -- Helpers
@@ -21,10 +23,10 @@ local Utils = Addon.UI.Utils
 -- @param {string} key - profile key
 local function setProfile(key)
   if DB:SetProfile(key) then
-    ListManager:Update()
     Core:Print(
       L.PROFILE_ACTIVATED_TEXT:format(DCL:ColorString(key, Colors.Green))
     )
+    EventManager:Fire(E.ProfileChanged)
     return true
   end
   return false
@@ -37,6 +39,7 @@ local function copyProfile(key)
     Core:Print(
       L.PROFILE_COPIED_TEXT:format(DCL:ColorString(key, Colors.Yellow))
     )
+    EventManager:Fire(E.ProfileChanged)
     return true
   end
   return false
@@ -64,7 +67,8 @@ local function createProfile(key, importTable)
     )
     return false
   elseif DB:CreateProfile(key, importTable) then
-    return setProfile(key)
+    local success = pcall(function() DB:Reformat() end)
+    if success then return setProfile(key) else DB:DeleteProfile(key) end
   end
   return false
 end
@@ -122,23 +126,23 @@ function Profiles:Create(parent)
 end
 
 function Profiles:Profiles(parent)
-  Utils:Heading(parent, L.PROFILES_TEXT)
+  Widgets:Heading(parent, L.PROFILES_TEXT)
 
   do -- Create or switch
-    local group = Utils:InlineGroup({
+    local group = Widgets:InlineGroup({
       parent = parent,
       title = L.PROFILE_CREATE_OR_SWITCH_TEXT,
       fullWidth = true
     })
 
-    Utils:Label({
+    Widgets:Label({
       parent = group,
       text = L.PROFILE_CREATE_OR_SWITCH_HELP_TEXT,
       fullWidth = true
     })
 
     -- Create Profile
-    Utils:EditBox({
+    Widgets:EditBox({
       parent = group,
       label = L.PROFILE_NEW_TEXT,
       onEnterPressed = function(self, event, key)
@@ -155,7 +159,7 @@ function Profiles:Profiles(parent)
     })
 
     -- Existing Profiles
-    self.existingProfiles = Utils:Dropdown({
+    self.existingProfiles = Widgets:Dropdown({
       parent = group,
       label = L.PROFILE_EXISTING_PROFILES_TEXT,
       onValueChanged = function(self, event, key)
@@ -166,44 +170,44 @@ function Profiles:Profiles(parent)
   end
 
   do -- Copy
-    local group = Utils:InlineGroup({
+    local group = Widgets:InlineGroup({
       parent = parent,
       title = L.COPY_TEXT,
       fullWidth = true
     })
 
-    Utils:Label({
+    Widgets:Label({
       parent = group,
       text = L.PROFILE_COPY_HELP_TEXT,
       fullWidth = true
     })
 
-    self.copyProfile = Utils:Dropdown({
+    self.copyProfile = Widgets:Dropdown({
       parent = group,
       onValueChanged = function(self, event, key)
-        if copyProfile(key) then ListManager:Update() end
+        copyProfile(key)
         self:SetValue()
       end
     })
   end
 
   do -- Delete
-    local group = Utils:InlineGroup({
+    local group = Widgets:InlineGroup({
       parent = parent,
       title = L.DELETE_TEXT,
       fullWidth = true
     })
 
-    Utils:Label({
+    Widgets:Label({
       parent = group,
       text = L.PROFILE_DELETE_HELP_TEXT,
       fullWidth = true
     })
 
-    self.deleteProfile = Utils:Dropdown({
+    self.deleteProfile = Widgets:Dropdown({
       parent = group,
       onValueChanged = function(self, event, key)
-        Tools:YesNoPopup({
+        Utils:YesNoPopup({
           text = L.DELETE_PROFILE_POPUP:format(
             DCL:ColorString(key, Colors.Yellow)
           ),
@@ -234,26 +238,26 @@ function Profiles:UpdateDropdowns()
 end
 
 function Profiles:Import(parent)
-  Utils:Heading(parent, L.IMPORT_PROFILE_TEXT)
-  Utils:Label({
+  Widgets:Heading(parent, L.IMPORT_PROFILE_TEXT)
+  Widgets:Label({
     parent = parent,
     text = L.IMPORT_PROFILE_HELPER_TEXT,
     fullWidth = true
   })
 
-  local editBox = Utils:MultiLineEditBox({
+  local editBox = Widgets:MultiLineEditBox({
     parent = parent,
     fullWidth = true,
     numLines = 25
   })
 
-  local profileName = Utils:EditBox({
+  local profileName = Widgets:EditBox({
     parent = parent,
     label = L.PROFILE_NAME_TEXT,
     disableButton = true
   })
 
-  Utils:Button({
+  Widgets:Button({
     parent = parent,
     text = L.IMPORT_TEXT,
     onClick = function()
@@ -269,10 +273,8 @@ function Profiles:Import(parent)
 
       -- Deserialize profile
       local status, profile = AceSerializer:Deserialize(editBox:GetText())
-      if status and profile then
-        if createProfile(key, profile) then
-          Profiles.tabGroup:SelectTab("Profiles")
-        end
+      if status and profile and createProfile(key, profile) then
+        Profiles.tabGroup:SelectTab("Profiles")
       else
         Core:Print(L.PROFILE_INVALID_IMPORT_TEXT)
       end
@@ -281,21 +283,21 @@ function Profiles:Import(parent)
 end
 
 function Profiles:Export(parent)
-  Utils:Heading(parent, L.EXPORT_PROFILE_TEXT)
-  Utils:Label({
+  Widgets:Heading(parent, L.EXPORT_PROFILE_TEXT)
+  Widgets:Label({
     parent = parent,
     text = L.EXPORT_HELPER_TEXT,
     fullWidth = true
   })
 
-  local editBox = Utils:MultiLineEditBox({
+  local editBox = Widgets:MultiLineEditBox({
     parent = parent,
     -- text = AceSerializer:Serialize(DB.Profile),
     fullWidth = true,
     numLines = 25
   })
 
-  Utils:Button({
+  Widgets:Button({
     parent = parent,
     text = L.EXPORT_TEXT,
     onClick = function()

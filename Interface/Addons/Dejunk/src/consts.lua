@@ -2,6 +2,8 @@
 
 local _, Addon = ...
 local Consts = Addon.Consts
+local E = Addon.Events
+local EventManager = Addon.EventManager
 local GetItemClassInfo = _G.GetItemClassInfo
 local GetItemSubClassInfo = _G.GetItemSubClassInfo
 local LE_ITEM_ARMOR_CLOTH = _G.LE_ITEM_ARMOR_CLOTH
@@ -18,7 +20,9 @@ local LE_ITEM_CLASS_ARMOR = _G.LE_ITEM_CLASS_ARMOR
 local LE_ITEM_CLASS_WEAPON = _G.LE_ITEM_CLASS_WEAPON
 local LE_ITEM_WEAPON_AXE1H = _G.LE_ITEM_WEAPON_AXE1H
 local LE_ITEM_WEAPON_AXE2H = _G.LE_ITEM_WEAPON_AXE2H
+local LE_ITEM_WEAPON_BEARCLAW = _G.LE_ITEM_WEAPON_BEARCLAW
 local LE_ITEM_WEAPON_BOWS = _G.LE_ITEM_WEAPON_BOWS
+local LE_ITEM_WEAPON_CATCLAW = _G.LE_ITEM_WEAPON_CATCLAW
 local LE_ITEM_WEAPON_CROSSBOW = _G.LE_ITEM_WEAPON_CROSSBOW
 local LE_ITEM_WEAPON_DAGGER = _G.LE_ITEM_WEAPON_DAGGER
 local LE_ITEM_WEAPON_FISHINGPOLE = _G.LE_ITEM_WEAPON_FISHINGPOLE
@@ -33,6 +37,7 @@ local LE_ITEM_WEAPON_SWORD2H = _G.LE_ITEM_WEAPON_SWORD2H
 local LE_ITEM_WEAPON_THROWN = _G.LE_ITEM_WEAPON_THROWN
 local LE_ITEM_WEAPON_UNARMED = _G.LE_ITEM_WEAPON_UNARMED
 local LE_ITEM_WEAPON_WAND = _G.LE_ITEM_WEAPON_WAND
+local LE_ITEM_WEAPON_WARGLAIVE = _G.LE_ITEM_WEAPON_WARGLAIVE
 local NUM_LE_ITEM_ARMORS = _G.NUM_LE_ITEM_ARMORS
 local NUM_LE_ITEM_WEAPONS = _G.NUM_LE_ITEM_WEAPONS
 
@@ -40,17 +45,35 @@ local NUM_LE_ITEM_WEAPONS = _G.NUM_LE_ITEM_WEAPONS
 -- General Constants
 -- ============================================================================
 
+Consts.MAX_NUMBER = 2147483647 -- 32-bit signed
 Consts.SAFE_MODE_MAX = 12
 
 -- SellBelowPrice
-Consts.SELL_BELOW_PRICE_MIN = 2 -- 2 copper
-Consts.SELL_BELOW_PRICE_MAX = 100 * 100 * 1 -- 1 gold
-Consts.SELL_BELOW_PRICE_STEP = 1 -- 1 copper
+if Addon.IS_RETAIL then
+  Consts.SELL_BELOW_PRICE_MIN = 100 -- 1 silver
+  Consts.SELL_BELOW_PRICE_MAX = 100 * 100 * 10 -- 10 gold
+  Consts.SELL_BELOW_PRICE_STEP = 100 -- 1 silver
+else
+  Consts.SELL_BELOW_PRICE_MIN = 2 -- 2 copper
+  Consts.SELL_BELOW_PRICE_MAX = 100 * 100 * 1 -- 1 gold
+  Consts.SELL_BELOW_PRICE_STEP = 1 -- 1 copper
+end
+
+-- SellBelowAverageILVL
+Consts.SELL_BELOW_AVERAGE_ILVL_MIN = 10
+Consts.SELL_BELOW_AVERAGE_ILVL_MAX = 100
+Consts.SELL_BELOW_AVERAGE_ILVL_STEP = 1
 
 -- DestroyBelowPrice
-Consts.DESTROY_BELOW_PRICE_MIN = 2 -- 2 copper
-Consts.DESTROY_BELOW_PRICE_MAX = 100 * 100 * 1 -- 1 gold
-Consts.DESTROY_BELOW_PRICE_STEP = 1 -- 1 copper
+if Addon.IS_RETAIL then
+  Consts.DESTROY_BELOW_PRICE_MIN = 100 -- 1 silver
+  Consts.DESTROY_BELOW_PRICE_MAX = 100 * 100 * 10 -- 10 gold
+  Consts.DESTROY_BELOW_PRICE_STEP = 100 -- 1 silver
+else
+  Consts.DESTROY_BELOW_PRICE_MIN = 2 -- 2 copper
+  Consts.DESTROY_BELOW_PRICE_MAX = 100 * 100 * 1 -- 1 gold
+  Consts.DESTROY_BELOW_PRICE_STEP = 1 -- 1 copper
+end
 
 -- DestroyExcessSoulShards
 Consts.DESTROY_EXCESS_SOUL_SHARDS_MIN = 3
@@ -58,21 +81,41 @@ Consts.DESTROY_EXCESS_SOUL_SHARDS_MAX = 28
 Consts.DESTROY_EXCESS_SOUL_SHARDS_STEP = 1
 Consts.SOUL_SHARD_ITEM_ID = 6265
 
+-- DestroySaveSpace
+Consts.DESTROY_SAVE_SPACE_MIN = 1
+Consts.DESTROY_SAVE_SPACE_MAX = 16
+Consts.DESTROY_SAVE_SPACE_STEP = 1
+
 -- ============================================================================
 -- Consts Functions
 -- ============================================================================
 
--- Called from Core during the PLAYER_ENTERING_WORLD event.
+-- Set up event to initialize Consts
+EventManager:Once(E.Wow.PlayerLogin, function()
+  Consts:Initialize()
+end)
+
+-- Initializes constants which may be unavailable until the PLAYER_LOGIN event.
 function Consts:Initialize()
   -- Player class
   self.PLAYER_CLASS = select(2, _G.UnitClass("PLAYER"))
-  self:BuildSuitables()
+  self:BuildSuitables(self.PLAYER_CLASS)
 
   -- Item classes
   self.CONSUMABLE_CLASS = GetItemClassInfo(_G.LE_ITEM_CLASS_CONSUMABLE)
   self.ITEM_ENHANCEMENT_CLASS = GetItemClassInfo(_G.LE_ITEM_CLASS_ITEM_ENHANCEMENT)
+  self.MISCELLANEOUS_CLASS = GetItemClassInfo(_G.LE_ITEM_CLASS_MISCELLANEOUS)
+  self.REAGENT_CLASS = GetItemClassInfo(_G.LE_ITEM_CLASS_REAGENT)
   self.RECIPE_CLASS = GetItemClassInfo(_G.LE_ITEM_CLASS_RECIPE)
   self.TRADEGOODS_CLASS = GetItemClassInfo(_G.LE_ITEM_CLASS_TRADEGOODS)
+  self.QUESTITEM_CLASS = GetItemClassInfo(_G.LE_ITEM_CLASS_QUESTITEM)
+
+  if Addon.IS_RETAIL then
+    self.BATTLEPET_CLASS = GetItemClassInfo(_G.LE_ITEM_CLASS_BATTLEPET)
+    self.COMPANION_SUBCLASS = GetItemSubClassInfo(_G.LE_ITEM_CLASS_MISCELLANEOUS, 2)
+    self.GEM_CLASS = GetItemClassInfo(_G.LE_ITEM_CLASS_GEM)
+    self.GLYPH_CLASS = GetItemClassInfo(_G.LE_ITEM_CLASS_GLYPH)
+  end
 
   -- Armor class and subclasses
   self.ARMOR_CLASS = GetItemClassInfo(LE_ITEM_CLASS_ARMOR)
@@ -96,154 +139,200 @@ function Consts:Initialize()
 end
 
 -- Builds the SUITABLE_ARMOR and SUITABLE_WEAPONS Consts tables based on player class.
-function Consts:BuildSuitables()
-  local class = self.PLAYER_CLASS
+function Consts:BuildSuitables(class)
+  self.SUITABLE_ARMOR = {}
+  self.SUITABLE_WEAPONS = {}
 
-  if (class == "DRUID") then
-    self.SUITABLE_ARMOR = {
-      [LE_ITEM_ARMOR_CLOTH] = true,
-      [LE_ITEM_ARMOR_LEATHER] = true,
-      [LE_ITEM_ARMOR_IDOL] = true,
-    }
+  if (class == "DEATHKNIGHT") then
+    -- Armor
+    self.SUITABLE_ARMOR[LE_ITEM_ARMOR_PLATE] = true
+    -- Weapons
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_AXE1H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_AXE2H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_MACE1H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_MACE2H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_POLEARM] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_SWORD1H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_SWORD2H] = true
+  elseif (class == "DEMONHUNTER") then
+    -- Armor
+    self.SUITABLE_ARMOR[LE_ITEM_ARMOR_LEATHER] = true
+    -- Weapons
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_AXE1H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_DAGGER] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_SWORD1H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_UNARMED] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_WARGLAIVE] = true
+  elseif (class == "DRUID") then
+    -- Armor
+    self.SUITABLE_ARMOR[LE_ITEM_ARMOR_LEATHER] = true
 
-    self.SUITABLE_WEAPONS = {
-      [LE_ITEM_WEAPON_DAGGER] = true,
-      [LE_ITEM_WEAPON_MACE1H] = true,
-      [LE_ITEM_WEAPON_MACE2H] = true,
-      [LE_ITEM_WEAPON_STAFF] = true,
-      [LE_ITEM_WEAPON_UNARMED] = true,
-    }
+    if Addon.IS_CLASSIC then
+      self.SUITABLE_ARMOR[LE_ITEM_ARMOR_CLOTH] = true
+      self.SUITABLE_ARMOR[LE_ITEM_ARMOR_IDOL] = true
+    end
+
+    -- Weapons
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_DAGGER] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_MACE1H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_MACE2H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_STAFF] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_UNARMED] = true
+
+    if Addon.IS_RETAIL then
+      self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_BEARCLAW] = true
+      self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_CATCLAW] = true
+      self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_POLEARM] = true
+    end
   elseif (class == "HUNTER") then
-    self.SUITABLE_ARMOR = {
-      [LE_ITEM_ARMOR_CLOTH] = true,
-      [LE_ITEM_ARMOR_LEATHER] = true,
-      [LE_ITEM_ARMOR_MAIL] = true,
-    }
+    -- Armor
+    self.SUITABLE_ARMOR[LE_ITEM_ARMOR_MAIL] = true
 
-    self.SUITABLE_WEAPONS = {
-      [LE_ITEM_WEAPON_AXE1H] = true,
-      [LE_ITEM_WEAPON_AXE2H] = true,
-      [LE_ITEM_WEAPON_BOWS] = true,
-      [LE_ITEM_WEAPON_CROSSBOW] = true,
-      [LE_ITEM_WEAPON_GUNS] = true,
-      [LE_ITEM_WEAPON_POLEARM] = true,
-      [LE_ITEM_WEAPON_STAFF] = true,
-      [LE_ITEM_WEAPON_SWORD1H] = true,
-      [LE_ITEM_WEAPON_SWORD2H] = true,
-      [LE_ITEM_WEAPON_THROWN] = true,
-      [LE_ITEM_WEAPON_UNARMED] = true,
-    }
+    if Addon.IS_CLASSIC then
+      self.SUITABLE_ARMOR[LE_ITEM_ARMOR_CLOTH] = true
+      self.SUITABLE_ARMOR[LE_ITEM_ARMOR_LEATHER] = true
+    end
+
+    -- Weapons
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_AXE1H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_AXE2H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_BOWS] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_CROSSBOW] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_GUNS] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_POLEARM] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_STAFF] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_UNARMED] = true
+
+    if Addon.IS_CLASSIC then
+      self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_DAGGER] = true
+      self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_SWORD1H] = true
+      self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_SWORD2H] = true
+      self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_THROWN] = true
+    end
   elseif (class == "MAGE") then
-    self.SUITABLE_ARMOR = {
-      [LE_ITEM_ARMOR_CLOTH] = true
-    }
-
-    self.SUITABLE_WEAPONS = {
-      [LE_ITEM_WEAPON_DAGGER] = true,
-      [LE_ITEM_WEAPON_STAFF] = true,
-      [LE_ITEM_WEAPON_SWORD1H] = true,
-      [LE_ITEM_WEAPON_WAND] = true,
-    }
+    -- Armor
+    self.SUITABLE_ARMOR[LE_ITEM_ARMOR_CLOTH] = true
+    -- Weapons
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_DAGGER] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_STAFF] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_SWORD1H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_WAND] = true
+  elseif (class == "MONK") then
+    -- Armor
+    self.SUITABLE_ARMOR[LE_ITEM_ARMOR_LEATHER] = true
+    -- Weapons
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_POLEARM] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_STAFF] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_AXE1H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_UNARMED] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_MACE1H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_SWORD1H] = true
   elseif (class == "PALADIN") then
-    self.SUITABLE_ARMOR = {
-      [LE_ITEM_ARMOR_CLOTH] = true,
-      [LE_ITEM_ARMOR_LEATHER] = true,
-      [LE_ITEM_ARMOR_MAIL] = true,
-      [LE_ITEM_ARMOR_PLATE] = true,
-      [LE_ITEM_ARMOR_SHIELD] = true,
-      [LE_ITEM_ARMOR_LIBRAM] = true,
-    }
+    -- Armor
+    self.SUITABLE_ARMOR[LE_ITEM_ARMOR_PLATE] = true
+    self.SUITABLE_ARMOR[LE_ITEM_ARMOR_SHIELD] = true
 
-    self.SUITABLE_WEAPONS = {
-      [LE_ITEM_WEAPON_AXE1H] = true,
-      [LE_ITEM_WEAPON_AXE2H] = true,
-      [LE_ITEM_WEAPON_MACE1H] = true,
-      [LE_ITEM_WEAPON_MACE2H] = true,
-      [LE_ITEM_WEAPON_POLEARM] = true,
-      [LE_ITEM_WEAPON_SWORD1H] = true,
-      [LE_ITEM_WEAPON_SWORD2H] = true,
-    }
+    if Addon.IS_CLASSIC then
+      self.SUITABLE_ARMOR[LE_ITEM_ARMOR_CLOTH] = true
+      self.SUITABLE_ARMOR[LE_ITEM_ARMOR_LEATHER] = true
+      self.SUITABLE_ARMOR[LE_ITEM_ARMOR_MAIL] = true
+      self.SUITABLE_ARMOR[LE_ITEM_ARMOR_LIBRAM] = true
+    end
+
+    -- Weapons
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_AXE1H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_AXE2H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_MACE1H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_MACE2H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_POLEARM] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_SWORD1H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_SWORD2H] = true
   elseif (class == "PRIEST") then
-    self.SUITABLE_ARMOR = {
-      [LE_ITEM_ARMOR_CLOTH] = true,
-    }
-
-    self.SUITABLE_WEAPONS = {
-      [LE_ITEM_WEAPON_DAGGER] = true,
-      [LE_ITEM_WEAPON_MACE1H] = true,
-      [LE_ITEM_WEAPON_STAFF] = true,
-      [LE_ITEM_WEAPON_WAND] = true,
-    }
+    -- Armor
+    self.SUITABLE_ARMOR[LE_ITEM_ARMOR_CLOTH] = true
+    -- Weapons
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_DAGGER] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_MACE1H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_STAFF] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_WAND] = true
   elseif (class == "ROGUE") then
-    self.SUITABLE_ARMOR = {
-      [LE_ITEM_ARMOR_CLOTH] = true,
-      [LE_ITEM_ARMOR_LEATHER] = true,
-    }
+    -- Armor
+    self.SUITABLE_ARMOR[LE_ITEM_ARMOR_LEATHER] = true
 
-    self.SUITABLE_WEAPONS = {
-      [LE_ITEM_WEAPON_BOWS] = true,
-      [LE_ITEM_WEAPON_CROSSBOW] = true,
-      [LE_ITEM_WEAPON_DAGGER] = true,
-      [LE_ITEM_WEAPON_GUNS] = true,
-      [LE_ITEM_WEAPON_MACE1H] = true,
-      [LE_ITEM_WEAPON_SWORD1H] = true,
-      [LE_ITEM_WEAPON_THROWN] = true,
-      [LE_ITEM_WEAPON_UNARMED] = true,
-    }
+    if Addon.IS_CLASSIC then
+      self.SUITABLE_ARMOR[LE_ITEM_ARMOR_CLOTH] = true
+    end
+
+    -- Weapons
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_DAGGER] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_MACE1H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_SWORD1H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_UNARMED] = true
+
+    if Addon.IS_RETAIL then
+      self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_AXE1H] = true
+    else -- IS_CLASSIC
+      self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_BOWS] = true
+      self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_CROSSBOW] = true
+      self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_GUNS] = true
+      self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_THROWN] = true
+    end
   elseif (class == "SHAMAN") then
-    self.SUITABLE_ARMOR = {
-      [LE_ITEM_ARMOR_CLOTH] = true,
-      [LE_ITEM_ARMOR_LEATHER] = true,
-      [LE_ITEM_ARMOR_MAIL] = true,
-      [LE_ITEM_ARMOR_SHIELD] = true,
-      [LE_ITEM_ARMOR_TOTEM] = true,
-    }
+    -- Armor
+    self.SUITABLE_ARMOR[LE_ITEM_ARMOR_MAIL] = true
+    self.SUITABLE_ARMOR[LE_ITEM_ARMOR_SHIELD] = true
 
-    self.SUITABLE_WEAPONS = {
-      [LE_ITEM_WEAPON_AXE1H] = true,
-      [LE_ITEM_WEAPON_AXE2H] = true,
-      [LE_ITEM_WEAPON_DAGGER] = true,
-      [LE_ITEM_WEAPON_MACE1H] = true,
-      [LE_ITEM_WEAPON_MACE2H] = true,
-      [LE_ITEM_WEAPON_STAFF] = true,
-      [LE_ITEM_WEAPON_UNARMED] = true,
-    }
+    if Addon.IS_CLASSIC then
+      self.SUITABLE_ARMOR[LE_ITEM_ARMOR_CLOTH] = true
+      self.SUITABLE_ARMOR[LE_ITEM_ARMOR_LEATHER] = true
+      self.SUITABLE_ARMOR[LE_ITEM_ARMOR_TOTEM] = true
+    end
+
+    -- Weapons
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_AXE1H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_AXE2H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_DAGGER] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_MACE1H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_MACE2H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_STAFF] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_UNARMED] = true
   elseif (class == "WARLOCK") then
-    self.SUITABLE_ARMOR = {
-      [LE_ITEM_ARMOR_CLOTH] = true,
-    }
-
-    self.SUITABLE_WEAPONS = {
-      [LE_ITEM_WEAPON_DAGGER] = true,
-      [LE_ITEM_WEAPON_STAFF] = true,
-      [LE_ITEM_WEAPON_SWORD1H] = true,
-      [LE_ITEM_WEAPON_WAND] = true,
-    }
+    -- Armor
+    self.SUITABLE_ARMOR[LE_ITEM_ARMOR_CLOTH] = true
+    -- Weapons
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_DAGGER] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_STAFF] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_SWORD1H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_WAND] = true
   elseif (class == "WARRIOR") then
-    self.SUITABLE_ARMOR = {
-      [LE_ITEM_ARMOR_CLOTH] = true,
-      [LE_ITEM_ARMOR_LEATHER] = true,
-      [LE_ITEM_ARMOR_MAIL] = true,
-      [LE_ITEM_ARMOR_PLATE] = true,
-      [LE_ITEM_ARMOR_SHIELD] = true,
-    }
+    -- Armor
+    self.SUITABLE_ARMOR[LE_ITEM_ARMOR_PLATE] = true
+    self.SUITABLE_ARMOR[LE_ITEM_ARMOR_SHIELD] = true
 
-    self.SUITABLE_WEAPONS = {
-      [LE_ITEM_WEAPON_AXE1H] = true,
-      [LE_ITEM_WEAPON_AXE2H] = true,
-      [LE_ITEM_WEAPON_BOWS] = true,
-      [LE_ITEM_WEAPON_CROSSBOW] = true,
-      [LE_ITEM_WEAPON_DAGGER] = true,
-      [LE_ITEM_WEAPON_GUNS] = true,
-      [LE_ITEM_WEAPON_MACE1H] = true,
-      [LE_ITEM_WEAPON_MACE2H] = true,
-      [LE_ITEM_WEAPON_POLEARM] = true,
-      [LE_ITEM_WEAPON_STAFF] = true,
-      [LE_ITEM_WEAPON_SWORD1H] = true,
-      [LE_ITEM_WEAPON_SWORD2H] = true,
-      [LE_ITEM_WEAPON_THROWN] = true,
-      [LE_ITEM_WEAPON_UNARMED] = true,
-    }
+    if Addon.IS_CLASSIC then
+      self.SUITABLE_ARMOR[LE_ITEM_ARMOR_CLOTH] = true
+      self.SUITABLE_ARMOR[LE_ITEM_ARMOR_LEATHER] = true
+      self.SUITABLE_ARMOR[LE_ITEM_ARMOR_MAIL] = true
+    end
+
+    -- Weapons
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_AXE1H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_AXE2H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_MACE1H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_MACE2H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_POLEARM] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_STAFF] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_SWORD1H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_SWORD2H] = true
+    self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_UNARMED] = true
+
+    if Addon.IS_CLASSIC then
+      self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_BOWS] = true
+      self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_CROSSBOW] = true
+      self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_DAGGER] = true
+      self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_GUNS] = true
+      self.SUITABLE_WEAPONS[LE_ITEM_WEAPON_THROWN] = true
+    end
   else
     error(("Unsupported player class: \"%s\""):format(class))
   end
