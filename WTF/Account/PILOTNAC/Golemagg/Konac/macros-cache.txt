@@ -1,11 +1,11 @@
-VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
-/run TotalXPText.Text:ClearAllPoints()
-/run TotalXPText.Text:SetPoint("CENTER", TotalXPText, "CENTER", 0, -10)
-END
 VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast Shadow Word: Pain
 /w augustin !f
+END
+VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
+/run TotalXPText.Text:ClearAllPoints()
+/run TotalXPText.Text:SetPoint("CENTER", TotalXPText, "CENTER", 0, -10)
 END
 VER 3 0000000001000001 "AR" "INV_MISC_QUESTIONMARK"
 #showtooltip Renew
@@ -17,7 +17,7 @@ VER 3 0000000001000002 "BUFF" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /follow augustin
 /target augustin
-/castsequence Power Word: Fortitude(Rank 4), Divine Spirit(Rank 2)
+/castsequence Power Word: Fortitude(Rank 5), Divine Spirit(Rank 3)
 END
 VER 3 0000000001000003 "SR" "INV_MISC_QUESTIONMARK"
 #showtooltip Renew
