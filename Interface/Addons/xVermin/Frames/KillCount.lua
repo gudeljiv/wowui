@@ -317,6 +317,7 @@ kc:SetScript(
 
 kc:EnableMouse(true)
 kc:SetMovable(true)
+kc:SetClampedToScreen(true)
 
 kc:SetScript(
 	"OnMouseDown",

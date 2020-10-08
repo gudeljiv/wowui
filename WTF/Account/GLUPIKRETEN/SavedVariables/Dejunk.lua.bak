@@ -39,8 +39,14 @@ DEJUNK_ADDON_SV = {
 			["AutoSell"] = true,
 			["AutoDestroy"] = true,
 			["Destroyables"] = {
+				["5637"] = true,
+				["7974"] = true,
+				["1074"] = true,
+				["4585"] = true,
 				["17058"] = true,
+				["4337"] = true,
 				["17057"] = true,
+				["12205"] = true,
 			},
 		},
 		["Jaroslav-Golemagg"] = {
