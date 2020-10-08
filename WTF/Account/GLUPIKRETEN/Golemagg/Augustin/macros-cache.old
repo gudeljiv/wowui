@@ -8,13 +8,23 @@ VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 /startattack
 /cast Fireball
 END
-VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
+VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
-/use Conjured Fresh Water
-/use Conjured Bread
+/startattack
+/cast [mod:shift]Portal: Undercity;Teleport: Undercity
+END
+VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast [mod:shift]Portal: Orgrimmar;Teleport: Orgrimmar
+END
+VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast [mod:shift]Portal: Thunder Bluff;Teleport: Thunder Bluff
 END
 VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
-/cast [mod:shift]Frostbolt(Rank 1);Frostbolt
+/cast [mod:alt]Frostbolt(Rank 1);Frostbolt
 END

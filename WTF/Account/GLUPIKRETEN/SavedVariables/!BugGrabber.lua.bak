@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 3042,
 	["lastSanitation"] = 3,
-	["session"] = 3039,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -165,8 +165,8 @@ BugGrabberDB = {
 		}, -- [20]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["session"] = 1336,
 			["time"] = "2020/07/26 13:26:58",
+			["session"] = 1336,
 			["counter"] = 2,
 		}, -- [21]
 		{
@@ -546,8 +546,8 @@ BugGrabberDB = {
 		}, -- [68]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["time"] = "2020/07/27 20:37:46",
 			["session"] = 1423,
+			["time"] = "2020/07/27 20:37:46",
 			["counter"] = 4,
 		}, -- [69]
 		{
@@ -805,8 +805,8 @@ BugGrabberDB = {
 		}, -- [101]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["time"] = "2020/08/02 10:06:15",
 			["session"] = 1605,
+			["time"] = "2020/08/02 10:06:15",
 			["counter"] = 3,
 		}, -- [102]
 		{
@@ -946,8 +946,8 @@ BugGrabberDB = {
 		}, -- [119]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
-			["session"] = 1654,
 			["time"] = "2020/08/02 20:13:03",
+			["session"] = 1654,
 			["counter"] = 3,
 		}, -- [120]
 		{
@@ -1420,8 +1420,8 @@ BugGrabberDB = {
 		}, -- [179]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Experience.lua",
-			["session"] = 1943,
 			["time"] = "2020/08/19 21:35:15",
+			["session"] = 1943,
 			["counter"] = 6,
 		}, -- [180]
 		{
@@ -2032,8 +2032,8 @@ BugGrabberDB = {
 		}, -- [256]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["session"] = 2448,
 			["time"] = "2020/08/13 21:31:07",
+			["session"] = 2448,
 			["counter"] = 9,
 		}, -- [257]
 		{
@@ -2382,8 +2382,8 @@ BugGrabberDB = {
 		}, -- [300]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\ClickToMove\\ClickToMove.toc",
-			["session"] = 2740,
 			["time"] = "2020/09/30 12:15:00",
+			["session"] = 2740,
 			["counter"] = 10,
 		}, -- [301]
 		{
@@ -2959,8 +2959,8 @@ BugGrabberDB = {
 		}, -- [373]
 		{
 			["message"] = "(null)",
-			["time"] = "2020/07/24 16:00:06",
 			["session"] = 3013,
+			["time"] = "2020/07/24 16:00:06",
 			["counter"] = 172,
 		}, -- [374]
 		{
@@ -3051,5 +3051,12 @@ BugGrabberDB = {
 			["session"] = 3037,
 			["counter"] = 5,
 		}, -- [385]
+		{
+			["message"] = "attempt to call a table value",
+			["time"] = "2020/10/08 18:44:47",
+			["stack"] = "Interface\\AddOns\\WeakAuras\\WeakAuras-2.18.4.lua:7398: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:7325>\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.18.4.lua:7425: in function `AnchorFrame'\n...ace\\AddOns\\WeakAuras\\RegionTypes\\RegionPrototype.lua:857: in function `Expand'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.18.4.lua:6324: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:6318>\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.18.4.lua:6404: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:6371>\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.18.4.lua:6488: in function `UpdatedTriggerState'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.18.4.lua:6258: in function `UpdateFakeStatesFor'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.18.4.lua:6231: in function `FakeStatesFor'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.18.4.lua:4734: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:4622>\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.18.4.lua:4754: in function `Add'\nInterface\\AddOns\\WeakAurasOptions\\CommonOptions.lua:1290: in function <Interface\\AddOns\\WeakAurasOptions\\CommonOptions.lua:1281>\n[C]: ?\n...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0-79.lua:51: in function <...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0.lua:49>\n...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0-79.lua:843: in function <...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0.lua:664>\n[C]: ?\n...ce\\AddOns\\GatherMate2\\Libs\\AceGUI-3.0\\AceGUI-3.0-41.lua:72: in function <...ce\\AddOns\\GatherMate2\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:70>\n...ce\\AddOns\\GatherMate2\\Libs\\AceGUI-3.0\\AceGUI-3.0-41.lua:306: in function `Fire'\n...I-Widgets\\AceGUIWidget-WeakAurasMultiLineEditBox.lua:59: in function <...I-Widgets\\AceGUIWidget-WeakAurasMultiLineEditBox.lua:56>",
+			["session"] = 3042,
+			["counter"] = 24,
+		}, -- [386]
 	},
 }
