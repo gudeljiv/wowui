@@ -1,14 +1,22 @@
-
 DEJUNK_ADDON_SV = {
 	["DDBL_Version"] = "2.0.2",
 	["Global"] = {
 		["Minimap"] = {
 			["minimapPos"] = 35.8575922896139,
-			["hide"] = true,
-		},
+			["hide"] = true
+		}
 	},
 	["ProfileKeys"] = {
+		["Antun-Golemagg"] = "Default",
 		["Augustin-Golemagg"] = "Default",
+		["Dmitar-Golemagg"] = "Default",
+		["Grgur-Golemagg"] = "Default",
+		["Jaroslav-Golemagg"] = "Default",
+		["Koloman-Golemagg"] = "Default",
+		["Mxyz-Golemagg"] = "Default",
+		["Mxyzptlk-Golemagg"] = "Default",
+		["Mxzq-Golemagg"] = "Default",
+		["Vermin-Golemagg"] = "Default"
 	},
 	["Profiles"] = {
 		["Default"] = {
@@ -30,12 +38,12 @@ DEJUNK_ADDON_SV = {
 				["5785"] = true,
 				["4633"] = true,
 				["4424"] = true,
-				["4544"] = true,
+				["4544"] = true
 			},
 			["SafeMode"] = false,
 			["DestroyBelowPrice"] = {
 				["Enabled"] = true,
-				["Value"] = 500,
+				["Value"] = 500
 			},
 			["AutoSell"] = true,
 			["AutoDestroy"] = true,
@@ -48,26 +56,8 @@ DEJUNK_ADDON_SV = {
 				["17058"] = true,
 				["4337"] = true,
 				["1074"] = true,
-				["4585"] = true,
-			},
-		},
-		["Jaroslav-Golemagg"] = {
-			["DestroyBelowPrice"] = {
-				["Enabled"] = true,
-				["Value"] = 500,
-			},
-			["Inclusions"] = {
-				["6889"] = true,
-				["7005"] = true,
-				["4970"] = true,
-				["2672"] = true,
-			},
-			["AutoSell"] = true,
-			["AutoDestroy"] = true,
-			["Destroyables"] = {
-				["4541"] = true,
-				["1179"] = true,
-			},
-		},
-	},
+				["4585"] = true
+			}
+		}
+	}
 }
