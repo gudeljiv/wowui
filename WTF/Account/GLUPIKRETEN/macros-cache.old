@@ -4,26 +4,13 @@ VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
-/castsequence [combat] reset=combat item:6149
+/use [nocombat]item:8077
+/castsequence [combat] reset=combat item:5513,item:6149,item:3827
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
+/use [nocombat]item:1487
 /castsequence [combat] reset=combat item:1710
-END
-VER 3 0000000000000001 "FRAME" "132150"
-/run TargetFrameDebuff1Count:ClearAllPoints()
-/run TargetFrameDebuff1Count:SetPoint("BOTTOMRIGHT", TargetFrameDebuff1, "BOTTOMRIGHT", 2, -2)
-END
-VER 3 0000000000000007 "MAGE FOOD" "136173"
-#showtooltip
-/use [nocombat]item:5350
-/use [nocombat]item:5349
-END
-VER 3 0000000000000002 "MOVE" "Ability_Ambush."
-/run XVRB2_wrap:ClearAllPoints()
-/run XVRB2_wrap:SetPoint("BOTTOM", PlayerXPFrameStatusBar, "TOP", 0, 30)
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 #showtooltip item:12184
@@ -32,8 +19,4 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 END
 VER 3 000000000000000A "TSMMacro" "INV_Misc_Flower_01"
 /click TSMAuctioningBtn
-END
-VER 3 0000000000000008 "ZygorAction1" "134400"
-/run KillCount:ClearAllPoints()
-/run KillCount:SetPoint
 END

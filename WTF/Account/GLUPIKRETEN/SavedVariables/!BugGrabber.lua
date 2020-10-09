@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 3044,
+	["session"] = 3046,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -3058,5 +3058,13 @@ BugGrabberDB = {
 			["session"] = 3042,
 			["counter"] = 24,
 		}, -- [386]
+		{
+			["message"] = "[string \"(KillCountTimerStartStop:GetFrameStrata())\"]:1: syntax error near '<eof>'",
+			["time"] = "2020/10/09 14:58:23",
+			["locals"] = "(*temporary) = \"(KillCountTimerStartStop:GetFrameStrata())\"\n",
+			["stack"] = "[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 3045,
+			["counter"] = 1,
+		}, -- [387]
 	},
 }

@@ -2,27 +2,27 @@
 xKillCount = {
 	["show"] = true,
 	["position"] = {
-		["y"] = 317.370910644531,
-		["x"] = 423.500274658203,
+		["y"] = 299.215148925781,
+		["x"] = 498.188140869141,
 		["to"] = "LEFT",
 		["from"] = "LEFT",
 	},
 	["killLog"] = {
-		["Wastewander Bandit"] = {
-			["name"] = "Wastewander Bandit",
-			["count"] = 1,
+		["Mirefin Puddlejumper"] = {
+			["name"] = "Mirefin Puddlejumper",
+			["count"] = 18,
 		},
-		["Wastewander Thief"] = {
-			["name"] = "Wastewander Thief",
-			["count"] = 7,
+		["Mirefin Muckdweller"] = {
+			["name"] = "Mirefin Muckdweller",
+			["count"] = 22,
 		},
-		["Wastewander Shadow Mage"] = {
-			["name"] = "Wastewander Shadow Mage",
-			["count"] = 1,
+		["Mirefin Coastrunner"] = {
+			["name"] = "Mirefin Coastrunner",
+			["count"] = 21,
 		},
-		["Voidwalker Minion"] = {
-			["name"] = "Voidwalker Minion",
-			["count"] = 1,
+		["Mirefin Murloc"] = {
+			["name"] = "Mirefin Murloc",
+			["count"] = 10,
 		},
 	},
 }
