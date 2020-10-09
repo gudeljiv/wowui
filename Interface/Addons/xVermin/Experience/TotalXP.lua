@@ -2,6 +2,7 @@ local _, xVermin = ...
 
 local totalxp, pulltotal, gained = 0
 local maxxp, currentxp, tolevel
+local combatTimer = time()
 
 cc = CreateFrame("Frame", "CustomContainer", UIParent)
 cc:SetWidth(110)
@@ -64,7 +65,10 @@ tx:SetScript(
 
 local function CalculateTotal(event, isInitialLogin, isReloadingUi)
 	if event == "PLAYER_REGEN_DISABLED" then
-		pulltotal = 0
+		if time() - combatTimer > 2 then
+			pulltotal = 0
+			combatTimer = time()
+		end
 	end
 	if event == "PLAYER_ENTERING_WORLD" and (isInitialLogin or isReloadingUi) then
 		pulltotal = 0
