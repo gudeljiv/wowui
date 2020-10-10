@@ -44,12 +44,6 @@ local function UpdateExperience(event, isInitialLogin, isReloadingUi)
 		end
 
 		if gained > 0 then
-			ChatFrame6:AddMessage("event: " .. event)
-			ChatFrame6:AddMessage("mxp: " .. MaxXP)
-			ChatFrame6:AddMessage("cxp: " .. CurrentXP)
-			ChatFrame6:AddMessage("nxp: " .. NewXP)
-			ChatFrame6:AddMessage("gained: " .. gained)
-
 			hmmm = math.ceil((MaxXP - NewXP) / gained)
 			MobsToKill.text:SetText(hmmm)
 			MobsToKill.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)

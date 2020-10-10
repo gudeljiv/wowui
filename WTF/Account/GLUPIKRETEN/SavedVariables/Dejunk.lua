@@ -21,6 +21,11 @@ DEJUNK_ADDON_SV = {
 	},
 	["Profiles"] = {
 		["Default"] = {
+			["SafeMode"] = false,
+			["DestroyBelowPrice"] = {
+				["Enabled"] = true,
+				["Value"] = 500,
+			},
 			["Inclusions"] = {
 				["10285"] = true,
 				["6362"] = true,
@@ -41,26 +46,25 @@ DEJUNK_ADDON_SV = {
 				["4424"] = true,
 				["4544"] = true,
 			},
-			["SafeMode"] = false,
-			["DestroyBelowPrice"] = {
-				["Enabled"] = true,
-				["Value"] = 500,
-			},
 			["DestroyPoor"] = true,
 			["AutoSell"] = true,
+			["DestroySaveSpace"] = {
+				["Enabled"] = true,
+				["Value"] = 5,
+			},
 			["AutoDestroy"] = true,
 			["Destroyables"] = {
 				["10285"] = true,
 				["7974"] = true,
 				["17057"] = true,
 				["12205"] = true,
+				["5637"] = true,
 				["1074"] = true,
-				["8483"] = true,
 				["4585"] = true,
 				["17058"] = true,
 				["4337"] = true,
 				["6362"] = true,
-				["5637"] = true,
+				["8483"] = true,
 			},
 		},
 	},

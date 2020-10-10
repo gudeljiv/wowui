@@ -277,7 +277,6 @@ kc:SetScript(
 
 		if xKillCount and xKillCount.show then
 			if event == "PLAYER_REGEN_DISABLED" then
-				ChatFrame6:AddMessage("KC: " .. time() - combatTimer .. "s")
 				if time() - combatTimer > 2 then
 					pullkills = 0
 					combatTimer = time()
