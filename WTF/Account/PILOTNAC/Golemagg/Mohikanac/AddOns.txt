@@ -28,7 +28,7 @@ Details_TinyThreat: enabled
 EavesDrop: enabled
 FollowMePls: enabled
 gmMoney: enabled
-Immersion: enabled
+Immersion: disabled
 ItemRack: enabled
 ItemRackOptions: enabled
 Leatrix_Maps: enabled
@@ -86,7 +86,7 @@ DBM-ZG: enabled
 Questie: enabled
 Auctionator: enabled
 aux-addon: disabled
-Examiner: enabled
+Examiner: disabled
 PerfectRaid: enabled
 RangeDisplay: enabled
 RangeDisplay_Options: enabled

@@ -106,6 +106,7 @@ tx:SetScript(
 			tx:Hide()
 		else
 			if event ~= "PLAYER_REGEN_ENABLED" then
+				ChatFrame6:AddMessage("TX: " .. event .. ", " .. time() - combatTimer .. "s")
 				tx:Show()
 				CalculateTotal(event, isInitialLogin, isReloadingUi)
 			end

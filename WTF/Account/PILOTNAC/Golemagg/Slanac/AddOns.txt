@@ -297,7 +297,7 @@ AdiBags_Config: enabled
 Backpack: disabled
 Skillet-Classic: disabled
 Details_DataStorage: enabled
-Immersion: enabled
+Immersion: disabled
 ItemRack: enabled
 ItemRackOptions: enabled
 NovaWorldBuffs: enabled
@@ -307,6 +307,6 @@ CharacterStatsClassic: enabled
 xVermin: enabled
 DBM-Karma-Skin: enabled
 aux-addon: disabled
-Examiner: enabled
+Examiner: disabled
 Select: enabled
 TownsfolkTracker: enabled

@@ -971,25 +971,25 @@ MonkeyQuestConfig = {
 			["The Runed Scroll - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Zul'Gurub - true"] = {
+			["High Chief Winterfall - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Blackrock Spire - true"] = {
 				["m_bChecked"] = true,
 			},
-			["High Chief Winterfall - false"] = {
+			["The Barrens - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Seal of Ascension - false"] = {
 				["m_bChecked"] = true,
 			},
-			["The Human, Ras Frostwhisper - false"] = {
+			["Proving Grounds - false"] = {
 				["m_bChecked"] = true,
 			},
-			["The Videre Elixir - false"] = {
+			["When Smokey Sings, I Get Violent - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Western Plaguelands - true"] = {
+			["Un'Goro Crater - true"] = {
 				["m_bChecked"] = true,
 			},
 			["A Matter of Time - false"] = {
@@ -1001,16 +1001,16 @@ MonkeyQuestConfig = {
 			["Brotherly Love - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Un'Goro Crater - true"] = {
+			["The Videre Elixir - false"] = {
 				["m_bChecked"] = true,
 			},
-			["When Smokey Sings, I Get Violent - false"] = {
+			["Western Plaguelands - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Proving Grounds - false"] = {
+			["Zul'Gurub - true"] = {
 				["m_bChecked"] = true,
 			},
-			["The Barrens - true"] = {
+			["The Human, Ras Frostwhisper - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Blackrock Depths - true"] = {
@@ -1193,10 +1193,10 @@ MonkeyQuestConfig = {
 			["Noggle's Lost Satchel - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Urok Doomhowl - false"] = {
+			["Bijou's Belongings - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Bijou's Belongings - false"] = {
+			["Urok Doomhowl - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Gammerita, Mon! - false"] = {

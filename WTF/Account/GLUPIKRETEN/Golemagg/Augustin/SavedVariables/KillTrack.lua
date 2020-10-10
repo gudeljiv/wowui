@@ -275,7 +275,7 @@ KILLTRACK_CHAR = {
 		},
 		[4358] = {
 			["Name"] = "Mirefin Puddlejumper",
-			["Kills"] = 397,
+			["Kills"] = 418,
 		},
 		[2760] = {
 			["Name"] = "Burning Exile",
@@ -401,9 +401,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Hillsbrad Apprentice Blacksmith",
 			["Kills"] = 4,
 		},
-		[858] = {
-			["Name"] = "Sorrow Spinner",
-			["Kills"] = 0,
+		[3671] = {
+			["Name"] = "Lady Anacondra",
+			["Kills"] = 1,
 		},
 		[2266] = {
 			["Name"] = "Hillsbrad Farmer",
@@ -425,8 +425,8 @@ KILLTRACK_CHAR = {
 			["Name"] = "Hillsbrad Footman",
 			["Kills"] = 44,
 		},
-		[5286] = {
-			["Name"] = "Longtooth Runner",
+		[858] = {
+			["Name"] = "Sorrow Spinner",
 			["Kills"] = 0,
 		},
 		[2269] = {
@@ -745,9 +745,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Plains Creeper",
 			["Kills"] = 3,
 		},
-		[3671] = {
-			["Name"] = "Lady Anacondra",
-			["Kills"] = 1,
+		[5286] = {
+			["Name"] = "Longtooth Runner",
+			["Kills"] = 0,
 		},
 		[2054] = {
 			["Name"] = "Sickly Refugee",
@@ -799,7 +799,7 @@ KILLTRACK_CHAR = {
 		},
 		[4359] = {
 			["Name"] = "Mirefin Murloc",
-			["Kills"] = 432,
+			["Kills"] = 453,
 		},
 		[4360] = {
 			["Name"] = "Mirefin Warrior",
@@ -807,11 +807,11 @@ KILLTRACK_CHAR = {
 		},
 		[4361] = {
 			["Name"] = "Mirefin Muckdweller",
-			["Kills"] = 639,
+			["Kills"] = 758,
 		},
 		[4362] = {
 			["Name"] = "Mirefin Coastrunner",
-			["Kills"] = 692,
+			["Kills"] = 825,
 		},
 		[4363] = {
 			["Name"] = "Mirefin Oracle",

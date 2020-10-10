@@ -551,25 +551,25 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Peppa",
 		},
-		[5828] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Mishabebe",
-		},
 		[1192] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Toyotaa",
 		},
-		[7360] = {
+		[5828] = {
 			["AchievCount"] = 0,
-			["Kills"] = 8,
-			["Name"] = "Dun Garok Soldier",
+			["Kills"] = 0,
+			["Name"] = "Mishabebe",
 		},
 		[8996] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Voidwalker Minion",
+		},
+		[7360] = {
+			["AchievCount"] = 0,
+			["Kills"] = 8,
+			["Name"] = "Dun Garok Soldier",
 		},
 		[5420] = {
 			["AchievCount"] = 0,
@@ -616,15 +616,15 @@ KILLTRACK = {
 			["Kills"] = 7,
 			["Name"] = "Evolving Ectoplasm",
 		},
-		[768] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Shadow Panther",
-		},
 		[2110] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Black Rat",
+		},
+		[768] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Shadow Panther",
 		},
 		[3099] = {
 			["AchievCount"] = 0,
@@ -656,30 +656,30 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Kenata Dabyrie",
 		},
-		[1789] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Skeletal Acolyte",
-		},
 		[4481] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Marcel Dabyrie",
+		},
+		[1789] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Skeletal Acolyte",
 		},
 		[3130] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Thunder Lizard",
 		},
-		[9377] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Swirling Vortex",
-		},
 		[6020] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Slimeshell Makrura",
+		},
+		[9377] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Swirling Vortex",
 		},
 		[2952] = {
 			["AchievCount"] = 0,
@@ -692,15 +692,20 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Wastewander Bandit",
 		},
+		[740] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Adolescent Whelp",
+		},
 		[14230] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Burgle Eye",
 		},
-		[740] = {
+		[4341] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Adolescent Whelp",
+			["Name"] = "Drywallow Crocolisk",
 		},
 		[2427] = {
 			["AchievCount"] = 0,
@@ -722,15 +727,15 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Nightbane Worgen",
 		},
-		[2248] = {
-			["AchievCount"] = 0,
-			["Kills"] = 42,
-			["Name"] = "Cave Yeti",
-		},
 		[2560] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Highland Thrasher",
+		},
+		[2248] = {
+			["AchievCount"] = 0,
+			["Kills"] = 42,
+			["Name"] = "Cave Yeti",
 		},
 		[2404] = {
 			["AchievCount"] = 0,
@@ -797,15 +802,15 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "ArmordEmxara",
 		},
-		[2620] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Prairie Dog",
-		},
 		[769] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Deathstrike Tarantula",
+		},
+		[2620] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Prairie Dog",
 		},
 		[2565] = {
 			["AchievCount"] = 0,
@@ -874,7 +879,7 @@ KILLTRACK = {
 		},
 		[4362] = {
 			["AchievCount"] = 0,
-			["Kills"] = 18,
+			["Kills"] = 19,
 			["Name"] = "Mirefin Coastrunner",
 		},
 		[4363] = {

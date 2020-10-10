@@ -299,16 +299,16 @@ MonkeyQuestConfig = {
 			["Tabetha's Task - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Mage - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Shadowshard Fragments - false"] = {
+			["Return to the Marsh - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Waters of Xavian - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Return to the Marsh - false"] = {
+			["Shadowshard Fragments - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Mage - true"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -838,7 +838,7 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 1169.39990234375,
+		["m_iFrameBottom"] = 966.39990234375,
 		["m_bHideCompletedQuests"] = true,
 		["m_iFrameLeft"] = 2097.39990234375,
 		["m_bColourDoneOrFailed"] = true,

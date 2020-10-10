@@ -20,3 +20,10 @@ X: 0
 Y: 0
 W: 30
 H: 30
+Frame: GameMenuFrame
+FrameLevel: 1
+Anchor: TOP
+X: -49
+Y: -217
+W: 195
+H: 292

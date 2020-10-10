@@ -393,10 +393,11 @@ KILLTRACK = {
 			["Name"] = "Kenata Dabyrie",
 			["Exp"] = 88,
 		},
-		[1192] = {
+		[5756] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Toyotaa",
+			["Kills"] = 9,
+			["Name"] = "Deviate Venomwing",
+			["Exp"] = 47,
 		},
 		[4479] = {
 			["AchievCount"] = 0,
@@ -410,11 +411,10 @@ KILLTRACK = {
 			["Name"] = "Deviate Viper",
 			["Exp"] = 37,
 		},
-		[4481] = {
+		[1192] = {
 			["AchievCount"] = 0,
-			["Kills"] = 30,
-			["Name"] = "Marcel Dabyrie",
-			["Exp"] = 202,
+			["Kills"] = 0,
+			["Name"] = "Toyotaa",
 		},
 		[2249] = {
 			["AchievCount"] = 0,
@@ -702,10 +702,11 @@ KILLTRACK = {
 			["Name"] = "Hillsbrad Foreman",
 			["Exp"] = 146,
 		},
-		[3426] = {
+		[2406] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Zhevra Charger",
+			["Kills"] = 4,
+			["Name"] = "Mountain Lion",
+			["Exp"] = 58,
 		},
 		[2403] = {
 			["AchievCount"] = 0,
@@ -740,10 +741,10 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Southsea Pirate",
 		},
-		[7856] = {
+		[3426] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Southsea Freebooter",
+			["Name"] = "Zhevra Charger",
 		},
 		[2408] = {
 			["AchievCount"] = 0,
@@ -987,15 +988,14 @@ KILLTRACK = {
 		},
 		[4358] = {
 			["AchievCount"] = 0,
-			["Kills"] = 397,
+			["Kills"] = 418,
 			["Name"] = "Mirefin Puddlejumper",
 			["Exp"] = 154,
 		},
-		[2406] = {
+		[7856] = {
 			["AchievCount"] = 0,
-			["Kills"] = 4,
-			["Name"] = "Mountain Lion",
-			["Exp"] = 58,
+			["Kills"] = 0,
+			["Name"] = "Southsea Freebooter",
 		},
 		[2274] = {
 			["AchievCount"] = 0,
@@ -1107,11 +1107,11 @@ KILLTRACK = {
 			["Name"] = "Deviate Shambler",
 			["Exp"] = 37,
 		},
-		[5756] = {
+		[4481] = {
 			["AchievCount"] = 0,
-			["Kills"] = 9,
-			["Name"] = "Deviate Venomwing",
-			["Exp"] = 47,
+			["Kills"] = 30,
+			["Name"] = "Marcel Dabyrie",
+			["Exp"] = 202,
 		},
 		[3127] = {
 			["AchievCount"] = 0,
@@ -1142,9 +1142,9 @@ KILLTRACK = {
 		},
 		[4359] = {
 			["AchievCount"] = 0,
-			["Kills"] = 432,
+			["Kills"] = 453,
 			["Name"] = "Mirefin Murloc",
-			["Exp"] = 135,
+			["Exp"] = 154,
 		},
 		[4360] = {
 			["AchievCount"] = 0,
@@ -1154,13 +1154,13 @@ KILLTRACK = {
 		},
 		[4361] = {
 			["AchievCount"] = 0,
-			["Kills"] = 639,
+			["Kills"] = 758,
 			["Name"] = "Mirefin Muckdweller",
 			["Exp"] = 154,
 		},
 		[4362] = {
 			["AchievCount"] = 0,
-			["Kills"] = 692,
+			["Kills"] = 825,
 			["Name"] = "Mirefin Coastrunner",
 			["Exp"] = 173,
 		},
