@@ -97,9 +97,9 @@ KILLTRACK = {
 		},
 		[3098] = {
 			["AchievCount"] = 0,
-			["Kills"] = 7,
+			["Kills"] = 24,
 			["Name"] = "Mottled Boar",
-			["Exp"] = 52,
+			["Exp"] = 36,
 		},
 		[4396] = {
 			["AchievCount"] = 0,

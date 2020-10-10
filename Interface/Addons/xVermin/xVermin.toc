@@ -51,7 +51,6 @@ ErrorsFilter.lua
 FastLoot.lua
 GarbageCollector.lua
 LootHelper.lua
-PetHappiness.lua
 PlayerTargetHealthPercentage.lua
 PlayerTargetSetMark.lua
 SkinBuffs.lua

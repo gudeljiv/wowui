@@ -33,7 +33,7 @@ txtotal:SetPoint("CENTER", tx, "CENTER", 0, 0)
 txtotal:SetWidth(1)
 txtotal:SetHeight(1)
 txtotal.text = txtotal:CreateFontString(nil, "ARTWORK")
-txtotal.text:SetFont(xVermin.Config.font.arial, 9, "NONE")
+txtotal.text:SetFont(xVermin.Config.font.arial, 10, "NONE")
 txtotal.text:SetPoint("RIGHT", tx, "RIGHT", -5, -1)
 txtotal.text:SetText("T: 0")
 txtotal.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
@@ -43,7 +43,7 @@ txpulltotal:SetPoint("CENTER", tx, "CENTER", 0, 0)
 txpulltotal:SetWidth(1)
 txpulltotal:SetHeight(1)
 txpulltotal.text = txpulltotal:CreateFontString(nil, "ARTWORK")
-txpulltotal.text:SetFont(xVermin.Config.font.arial, 9, "NONE")
+txpulltotal.text:SetFont(xVermin.Config.font.arial, 10, "NONE")
 txpulltotal.text:SetPoint("LEFT", tx, "LEFT", 5, -1)
 txpulltotal.text:SetText("P: 0")
 txpulltotal.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
@@ -54,8 +54,8 @@ tx:SetScript(
 		if button == "LeftButton" then
 			totalxp = 0
 			pulltotal = 0
-			txtotal.text:SetText("T: " .. totalxp)
-			txpulltotal.text:SetText("P: " .. pulltotal)
+			txtotal.text:SetText("T: " .. xVermin:FormatNumber(totalxp, ","))
+			txpulltotal.text:SetText("P: " .. xVermin:FormatNumber(pulltotal, ","))
 		end
 		if button == "RightButton" then
 			xVermin:Debug()

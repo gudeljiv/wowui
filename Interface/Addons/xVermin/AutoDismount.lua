@@ -12,7 +12,6 @@ local function CheckDismount(self, event, ...)
 	if not IsMounted() or not errorMessages[select(2, ...)] then
 		return
 	end
-
 	Dismount()
 	UIErrorsFrame:Clear()
 end

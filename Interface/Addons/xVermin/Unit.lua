@@ -1,41 +1,16 @@
 local _, xVermin = ...
 
 -----------------------------------------------------------------------------------------------------------------------------
--- Unit (Player) state
------------------------------------------------------------------------------------------------------------------------------
-local cus = CreateFrame("Frame", "CustomContainer_CombatUnitState", CustomContainer_Combat)
-cus:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 2)
-cus:SetWidth(1)
-cus:SetHeight(1)
-cus.text = cus:CreateFontString(nil, "ARTWORK")
-cus.text:SetFont(xVermin.Config.font.arial, 10, "NONE")
-cus.text:SetPoint("LEFT", CustomContainer_Combat, "LEFT", 3, 0)
-
-PlayerFrame:HookScript(
-	"OnUpdate",
-	function()
-		cus.text:SetText("")
-		if (UnitIsAFK("player")) then
-			cus.text:SetText("AFK")
-		end
-		if (UnitIsDND("player")) then
-			cus.text:SetText("DND")
-		end
-		cus.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
-	end
-)
-
------------------------------------------------------------------------------------------------------------------------------
 -- Unit (Player) ammo count
 -----------------------------------------------------------------------------------------------------------------------------
 if xVermin.Class == "HUNTER" then
 	local ac = CreateFrame("Frame", "CustomContainer_AmmoCount", CustomContainer_Combat)
-	ac:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 2)
+	ac:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 0)
 	ac:SetWidth(1)
 	ac:SetHeight(1)
 	ac.text = ac:CreateFontString(nil, "ARTWORK")
 	ac.text:SetFont(xVermin.Config.font.arial, 10, "NONE")
-	ac.text:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 0)
+	ac.text:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, -1)
 
 	PlayerFrame:HookScript(
 		"OnUpdate",
@@ -53,12 +28,12 @@ end
 -----------------------------------------------------------------------------------------------------------------------------
 local speed
 local us = CreateFrame("Frame", "CustomContainer_CombatUnitSpeed", CustomContainer_Combat)
-us:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 2)
+us:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 0)
 us:SetWidth(1)
 us:SetHeight(1)
 us.text = us:CreateFontString(nil, "ARTWORK")
 us.text:SetFont(xVermin.Config.font.arial, 10, "NONE")
-us.text:SetPoint("BOTTOMRIGHT", CustomContainer_Combat, "TOPRIGHT", -1, 2)
+us.text:SetPoint("BOTTOMRIGHT", CustomContainer_Combat, "TOPRIGHT", -1, 3)
 us.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 
 local usVisible = false
@@ -74,12 +49,6 @@ PlayerFrame:HookScript(
 			usVisible = false
 			us.text:SetText("")
 		end
-
-		-- if not usVisible then
-		-- 	UIFrameFadeIn(us, 0.6, 0, 1)
-		-- else
-		-- 	UIFrameFadeOut(us, 0.6, 1, 0)
-		-- end
 	end
 )
 
@@ -90,12 +59,12 @@ PlayerFrame:HookScript(
 local numberOfFreeSlots, BagType, fs
 
 fbs = CreateFrame("Frame", "CustomContainer_CombatFreeBagSpace", CustomContainer_Combat)
-fbs:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 2)
+fbs:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 0)
 fbs:SetWidth(10)
 fbs:SetHeight(10)
 fbs.text = fbs:CreateFontString(nil, "ARTWORK")
-fbs.text:SetFont(xVermin.Config.font.arial, 8, "NONE")
-fbs.text:SetPoint("TOPLEFT", CustomContainer_Combat, "BOTTOMLEFT", 0, -3)
+fbs.text:SetFont(xVermin.Config.font.arial, 10, "NONE")
+fbs.text:SetPoint("LEFT", CustomContainer_Combat, "LEFT", 5, -1)
 
 local function CalculateFreeBagSpace()
 	for bag = 0, 4 do
@@ -109,6 +78,9 @@ local function CalculateFreeBagSpace()
 end
 
 local f = CreateFrame("frame")
+f:RegisterEvent("BAG_UPDATE")
+f:RegisterEvent("BAG_UPDATE_DELAYED")
+f:RegisterEvent("PLAYER_ENTERING_WORLD")
 f:SetScript(
 	"OnEvent",
 	function(self, event, isInitialLogin, isReloadingUi)
@@ -121,7 +93,3 @@ f:SetScript(
 		end
 	end
 )
-
-f:RegisterEvent("BAG_UPDATE")
-f:RegisterEvent("BAG_UPDATE_DELAYED")
-f:RegisterEvent("PLAYER_ENTERING_WORLD")

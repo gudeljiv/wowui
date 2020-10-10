@@ -361,7 +361,8 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["useLimit"] = false,
+			["authorOptions"] = {
+			},
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -372,6 +373,31 @@ WeakAurasSaved = {
 			["animate"] = false,
 			["customGrow"] = "function(newPositions, activeRegions)\n    local offset = 9/64 -- target_indicator_glow texture center offset\n    local distance = 18/64\n    local angle, x, y, h, w, s, c, sb, cb, da\n    local curveAngle, segmentCount, direction, base, direction\n\n    for i, r in ipairs(activeRegions) do\n        if r.region.GetRotation then\n            direction = r.data.config.direction\n            base = (r.data.config.rotationOffset + direction * 180)\n            angle = r.region:GetRotation() - direction * 180\n            h = r.data.height\n            w = r.data.width\n            curveAngle = r.data.config.curveAngle\n            segmentCount = r.data.config.segmentCount\n            s = sin(angle)\n            c = cos(angle)\n            sb = sin(base + (direction - 1) * 180)\n            cb = cos(base + (direction - 1) * 180)\n            da = curveAngle / (segmentCount - 1)\n            radius = 0.5 * w * distance / sin(da / 2)\n            x = c * radius + s * w * offset * (direction - 1.5) * 2 + radius * cb\n            y = s * radius * h / w - c * h * offset * (direction - 1.5) * 2 + radius * h / w * sb\n        else\n            x = 0\n            y = 0\n        end\n\n        if newPositions[i] then\n            newPositions[i][1] = x\n            newPositions[i][2] = y\n        else\n            newPositions[i] = {x, y}\n        end\n    end\nend\n",
 			["scale"] = 1,
+			["arcLength"] = 30,
+			["border"] = false,
+			["borderEdge"] = "1 Pixel",
+			["regionType"] = "dynamicgroup",
+			["borderSize"] = 2,
+			["sort"] = "none",
+			["rowSpace"] = 1,
+			["useLimit"] = false,
+			["constantFactor"] = "RADIUS",
+			["frameStrata"] = 1,
+			["borderOffset"] = 4,
+			["semver"] = "1.3.4",
+			["tocversion"] = 11302,
+			["id"] = "nanShield",
+			["uid"] = "QYuwGRyspxh",
+			["gridWidth"] = 5,
+			["anchorFrameType"] = "SCREEN",
+			["stagger"] = 0,
+			["borderInset"] = 1,
+			["config"] = {
+			},
+			["radius"] = 300,
+			["conditions"] = {
+			},
+			["gridType"] = "RD",
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -392,32 +418,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["border"] = false,
-			["borderEdge"] = "1 Pixel",
-			["regionType"] = "dynamicgroup",
-			["borderSize"] = 2,
-			["sort"] = "none",
-			["authorOptions"] = {
-			},
-			["arcLength"] = 30,
-			["constantFactor"] = "RADIUS",
-			["frameStrata"] = 1,
-			["borderOffset"] = 4,
-			["semver"] = "1.3.4",
-			["tocversion"] = 11302,
-			["id"] = "nanShield",
-			["uid"] = "QYuwGRyspxh",
-			["gridWidth"] = 5,
-			["anchorFrameType"] = "SCREEN",
-			["stagger"] = 0,
-			["borderInset"] = 1,
-			["config"] = {
-			},
-			["gridType"] = "RD",
-			["conditions"] = {
-			},
-			["rowSpace"] = 1,
-			["radius"] = 300,
 		},
 		["Kill Tracker"] = {
 			["controlledChildren"] = {
@@ -502,10 +502,14 @@ WeakAurasSaved = {
 			["id"] = "Kill Tracker",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
+			["groupIcon"] = 136183,
+			["uid"] = "NQfLrO1EXvg",
 			["borderInset"] = 1,
 			["config"] = {
 			},
-			["uid"] = "NQfLrO1EXvg",
+			["conditions"] = {
+			},
+			["xOffset"] = 564.999633789063,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -526,10 +530,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["conditions"] = {
-			},
-			["groupIcon"] = 136183,
-			["xOffset"] = 564.999633789063,
 		},
 		["Mana 5SecondRule + Ticks"] = {
 			["sparkWidth"] = 10,
@@ -3232,6 +3232,8 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
+			["selfPoint"] = "LEFT",
+			["animate"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -3252,17 +3254,15 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["animate"] = true,
-			["space"] = 10,
 			["scale"] = 1,
-			["xOffset"] = 350,
+			["grow"] = "VERTICAL",
 			["border"] = false,
 			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["sort"] = "descending",
+			["xOffset"] = 350,
 			["yOffset"] = 0,
-			["selfPoint"] = "LEFT",
 			["constantFactor"] = "RADIUS",
 			["config"] = {
 			},
@@ -3276,11 +3276,11 @@ WeakAurasSaved = {
 			["gridWidth"] = 2,
 			["borderInset"] = 1,
 			["limit"] = 5,
-			["grow"] = "VERTICAL",
+			["rotation"] = 0,
 			["conditions"] = {
 			},
 			["anchorPoint"] = "CENTER",
-			["rotation"] = 0,
+			["space"] = 10,
 		},
 		["Total AoE Icon"] = {
 			["outline"] = "OUTLINE",
@@ -3699,11 +3699,11 @@ WeakAurasSaved = {
 				}, -- [31]
 			},
 			["xOffset"] = 0,
-			["preferToUpdate"] = false,
+			["cooldownEdge"] = false,
 			["fixedWidth"] = 200,
 			["selfPoint"] = "BOTTOM",
 			["regionType"] = "icon",
-			["cooldownEdge"] = false,
+			["preferToUpdate"] = false,
 			["uid"] = "Fyj2Qe2APdw",
 			["automaticWidth"] = "Auto",
 			["width"] = 28,
@@ -3713,9 +3713,6 @@ WeakAurasSaved = {
 			["justify"] = "CENTER",
 			["tocversion"] = 11305,
 			["id"] = "Total AoE Icon",
-			["icon"] = true,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
 			["animation"] = {
 				["start"] = {
 					["colorR"] = 1,
@@ -3771,33 +3768,8 @@ WeakAurasSaved = {
 					["duration"] = "0.2",
 				},
 			},
-			["config"] = {
-				["Cl"] = true,
-				["SHW"] = true,
-				["DD"] = true,
-				["RoF"] = true,
-				["AE"] = true,
-				["GSC"] = true,
-				["HN"] = true,
-				["CL"] = true,
-				["RLB"] = true,
-				["dmgWindow"] = 0.2,
-				["Vl"] = true,
-				["TG"] = true,
-				["Ww"] = true,
-				["BW"] = true,
-				["Hf"] = true,
-				["OoI"] = true,
-				["Bz"] = true,
-				["Fs"] = true,
-				["FsDoT"] = false,
-				["msgTime"] = 3,
-				["CoC"] = true,
-				["FN"] = true,
-				["Hc"] = true,
-			},
-			["inverse"] = false,
-			["displayIcon"] = 132996,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
 			["conditions"] = {
 				{
 					["check"] = {
@@ -3960,8 +3932,36 @@ WeakAurasSaved = {
 					},
 				}, -- [8]
 			},
-			["cooldown"] = false,
+			["config"] = {
+				["Cl"] = true,
+				["SHW"] = true,
+				["DD"] = true,
+				["RoF"] = true,
+				["AE"] = true,
+				["GSC"] = true,
+				["HN"] = true,
+				["CL"] = true,
+				["RLB"] = true,
+				["dmgWindow"] = 0.2,
+				["Vl"] = true,
+				["TG"] = true,
+				["Ww"] = true,
+				["BW"] = true,
+				["Hf"] = true,
+				["OoI"] = true,
+				["Bz"] = true,
+				["Fs"] = true,
+				["FsDoT"] = false,
+				["msgTime"] = 3,
+				["CoC"] = true,
+				["FN"] = true,
+				["Hc"] = true,
+			},
+			["inverse"] = false,
 			["parent"] = "Total AoE",
+			["displayIcon"] = 132996,
+			["cooldown"] = false,
+			["icon"] = true,
 		},
 		["Frost Nova"] = {
 			["color"] = {
@@ -5033,7 +5033,7 @@ WeakAurasSaved = {
 	},
 	["instanceHistoryDb"] = {
 		["sess"] = {
-			["delayUpdate"] = 1602330015,
+			["delayUpdate"] = 1602339581,
 			["enterLoc"] = {
 				["instance"] = -1,
 			},

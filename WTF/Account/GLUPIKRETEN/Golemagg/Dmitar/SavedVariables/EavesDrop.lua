@@ -3796,8 +3796,8 @@ EavesDropStatsDB = {
 							["amount"] = 5,
 						},
 						[2] = {
-							["time"] = "|cffffffff10/10/20 01:41:46|r\n|Hunit:Player-4465-01D5536D:Dmitar|hDmitar's|h melee swing hits |Hunit:Creature-0-4447-1-28-3098-0000019D6E:Mottled Boar|hMottled Boar|h for |cffffffff2|r |cffffffffPhysical|r.(5 Overkill) (Critical)",
-							["amount"] = 7,
+							["time"] = "|cffffffff10/10/20 04:18:32|r\n|Hunit:Player-4465-01D5536D:Dmitar|hDmitar's|h melee swing hits |Hunit:Creature-0-4447-1-28-3098-000001C284:Mottled Boar|hMottled Boar|h for |cffffffff9|r |cffffffffPhysical|r.(Critical)",
+							["amount"] = 9,
 						},
 					},
 				},

@@ -1,13 +1,16 @@
 
 xKillCount = {
-	["show"] = false,
+	["show"] = true,
 	["killLog"] = {
+		["Mottled Boar"] = {
+			["name"] = "Mottled Boar",
+			["count"] = 3,
+		},
 	},
 	["position"] = {
-		["y"] = -350,
-		["x"] = 5,
-		["to"] = "TOPLEFT",
-		["from"] = "TOPLEFT",
-		["anchor"] = "UIParent",
+		["y"] = -322.000122070313,
+		["x"] = -584.49951171875,
+		["to"] = "TOP",
+		["from"] = "TOP",
 	},
 }

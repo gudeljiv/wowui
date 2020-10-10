@@ -93,30 +93,6 @@ local function UpdateBar(event, isInitialLogin, isReloadingUi)
 		PlayerXP.XPbar.UntilLevel:SetPoint("RIGHT", PlayerXP.XPbar, "RIGHT", -2, 0)
 		PlayerXP.XPbar.UntilLevel:SetFont("Fonts\\ARIALN.ttf", 14, "THINOUTLINE")
 	end
-	-- 	PlayerXP.XPbar.Rested:SetText(R)
-	-- 	PlayerXP.XPbar.RestedNumber:SetText(GetXPExhaustion())
-	-- 	PlayerXP.XPbar.UntilLevel:Hide()
-	-- end
-
-	-- if UnitLevel("player") < MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] then
-	-- 	CurrentXP = UnitXP("player")
-	-- 	MaxXP = UnitXPMax("player")
-	-- 	percent = floor((CurrentXP / MaxXP) * 100)
-	-- 	_, _, rested = GetRestState()
-	-- 	r, g, b = xVermin:ColorGradient(percent / 100, 1, 0, 0, 1, 1, 0, 0, 1, 0)
-	-- 	PlayerXP.XPbar:SetMinMaxValues(0, MaxXP)
-	-- 	PlayerXP.XPbar:SetValue(CurrentXP)
-	-- 	PlayerXP.XPbar.Value:SetText(xVermin:FormatNumber(CurrentXP, ","))
-	-- 	PlayerXP.XPbar.UntilLevel:SetText(xVermin:FormatNumber(MaxXP - CurrentXP, ","))
-	-- 	PlayerXP.XPbar.Percent:SetText(xVermin:Round(percent) .. "%")
-	-- 	PlayerXP.XPbar.Rested:SetText(rested == 2 and "R" or "")
-	-- 	PlayerXP.XPbar.RestedNumber:SetText(rested == 2 and GetXPExhaustion() or "")
-	-- 	PlayerXP.XPbar:SetStatusBarColor(r, g, b)
-
-	-- 	if (rested == 2) then
-	-- 		PlayerXP.XPbar.UntilLevel:Hide()
-	-- 	end
-	-- end
 end
 
 PlayerXP:RegisterEvent("PLAYER_XP_UPDATE")
@@ -132,17 +108,5 @@ PlayerXP:SetScript(
 			PlayerXP.XPbar:SetAlpha(0.8)
 			UpdateBar(event, isInitialLogin, isReloadingUi)
 		end
-
-		-- if event == "PLAYER_LEVEL_UP" or (event == "PLAYER_ENTERING_WORLD" and (isInitialLogin or isReloadingUi)) then
-		-- 	C_Timer.After(
-		-- 		1,
-		-- 		function()
-		-- 			UpdateBar()
-		-- 		end
-		-- 	)
-		-- end
-		-- if event == "PLAYER_XP_UPDATE" then
-		-- 	UpdateBar()
-		-- end
 	end
 )

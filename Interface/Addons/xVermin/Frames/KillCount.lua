@@ -262,6 +262,7 @@ end
 
 kc:RegisterEvent("ADDON_LOADED")
 kc:RegisterEvent("PLAYER_REGEN_DISABLED")
+kc:RegisterEvent("PLAYER_REGEN_ENABLED")
 kc:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 
 kc:SetScript(
@@ -281,6 +282,13 @@ kc:SetScript(
 					pullkills = 0
 					combatTimer = time()
 				end
+				kc:EnableMouse(false)
+				kc:SetMovable(false)
+			end
+
+			if event == "PLAYER_REGEN_ENABLED" then
+				kc:EnableMouse(true)
+				kc:SetMovable(true)
 			end
 
 			local _, eventType, _, sourceGUID, sourceName, _, _, destGUID, destName = CombatLogGetCurrentEventInfo()
@@ -420,6 +428,7 @@ SlashCmdList["kc_settings"] = function(msg)
 	end
 	if (msg == "show") then
 		xKillCount.show = true
+		DisplayData()
 		kc:Show()
 	end
 	if (msg == "hide") then

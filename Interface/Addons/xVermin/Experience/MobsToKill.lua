@@ -3,31 +3,22 @@ local _, xVermin = ...
 local r, g, b, NewXP, hmmm, gained, XPToLVL, num, segment, relperc, r1, r2, g1, g2, b1, b2, PlayerXP, PetExpFrame, PlayerExpFrame, percent, rested, output, pcxp, pmxp, ppercent, MobsToKill
 
 MobsToKill = CreateFrame("Frame", "CustomContainer_CombatMobsToKill", CustomContainer_Combat)
-MobsToKill:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 2)
+MobsToKill:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 0)
 MobsToKill:SetWidth(10)
 MobsToKill:SetHeight(10)
 MobsToKill.text = MobsToKill:CreateFontString(nil, "ARTWORK")
 MobsToKill.text:SetFont(xVermin.Config.font.arial, 10, "NONE")
-MobsToKill.text:SetPoint("RIGHT", CustomContainer_Combat, "RIGHT", -3, 0)
+MobsToKill.text:SetPoint("RIGHT", CustomContainer_Combat, "RIGHT", -5, -1)
 MobsToKill:Hide()
 
 gainedExperience = CreateFrame("Frame", "CustomContainer_CombatgainedExperience", CustomContainer_Combat)
-gainedExperience:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 2)
+gainedExperience:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 0)
 gainedExperience:SetWidth(10)
 gainedExperience:SetHeight(10)
 gainedExperience.text = gainedExperience:CreateFontString(nil, "ARTWORK")
 gainedExperience.text:SetFont(xVermin.Config.font.arial, 10, "NONE")
-gainedExperience.text:SetPoint("LEFT", CustomContainer_Combat, "RIGHT", 3, 0)
+gainedExperience.text:SetPoint("LEFT", CustomContainer_Combat, "RIGHT", 5, -1)
 gainedExperience:Hide()
-
--- XPToLevel = CreateFrame("Frame", "CustomContainer_CombatXPToLevel", CustomContainer_Combat)
--- XPToLevel:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 2)
--- XPToLevel:SetWidth(10)
--- XPToLevel:SetHeight(10)
--- XPToLevel.text = XPToLevel:CreateFontString(nil, "ARTWORK")
--- XPToLevel.text:SetFont(xVermin.Config.font.arial, 8, "NONE")
--- XPToLevel.text:SetPoint("TOPRIGHT", CustomContainer_Combat, "BOTTOMRIGHT", 0, -3)
--- XPToLevel:Hide()
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -39,33 +30,29 @@ local MaxXP = UnitXPMax("player")
 local MobToKillTimer
 local mbk = false
 
-local function UpdateExperience()
-	if UnitLevel("player") < MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] then
-		-- XPToLevel:Show()
+local function UpdateExperience(event, isInitialLogin, isReloadingUi)
+	if event == "PLAYER_ENTERING_WORLD" and (isInitialLogin or isReloadingUi) then
+		MaxXP = UnitXPMax("player")
+		CurrentXP = UnitXP("player")
+	else
 		NewXP = UnitXP("player")
-
-		gained = NewXP - CurrentXP
-		XPToLVL = MaxXP - NewXP
-
-		-- XPToLevel.text:SetText(XPToLVL .. " (XP)")
-		-- XPToLevel.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
-
-		xVermin:LogBreak(false, "mbk")
-		xVermin:Log("current xp: " .. CurrentXP, "mbk")
-		xVermin:Log("new xp: " .. NewXP, "mbk")
-		xVermin:Log("gained: " .. gained, "mbk")
-		xVermin:Log("xp to lvl: " .. XPToLVL, "mbk")
-		xVermin:Log("mobs to lvl: " .. math.ceil((MaxXP - NewXP) / gained), "mbk")
-		xVermin:LogBreak(false, "mbk")
+		if event == "PLAYER_LEVEL_UP" then
+			gained = MaxXP - CurrentXP + NewXP
+			MaxXP = UnitXPMax("player")
+		else
+			gained = NewXP - CurrentXP
+		end
 
 		if gained > 0 then
+			ChatFrame6:AddMessage("event: " .. event)
+			ChatFrame6:AddMessage("mxp: " .. MaxXP)
+			ChatFrame6:AddMessage("cxp: " .. CurrentXP)
+			ChatFrame6:AddMessage("nxp: " .. NewXP)
+			ChatFrame6:AddMessage("gained: " .. gained)
+
 			hmmm = math.ceil((MaxXP - NewXP) / gained)
 			MobsToKill.text:SetText(hmmm)
 			MobsToKill.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
-
-			xVermin:Log("mbk frame: " .. (mbk and "true" or "false"), "mbk")
-			xVermin:Log("mbk timer: " .. (MobToKillTimer and "true" or "false"), "mbk")
-			xVermin:LogBreak(false, "mbk")
 
 			if not mbk then
 				UIFrameFadeIn(MobsToKill, 1, 0, 1)
@@ -78,7 +65,7 @@ local function UpdateExperience()
 
 			MobToKillTimer =
 				C_Timer.NewTimer(
-				60,
+				120,
 				function(self)
 					UIFrameFadeOut(MobsToKill, 1, 1, 0)
 					mbk = false
@@ -89,18 +76,16 @@ local function UpdateExperience()
 			gainedExperience.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 			UIFrameFadeIn(gainedExperience, 1, 0, 1)
 			C_Timer.After(
-				3,
+				5,
 				function()
 					UIFrameFadeOut(gainedExperience, 1, 1, 0)
 				end
 			)
+			CurrentXP = NewXP
+		else
+			MobsToKill:Hide()
+			gainedExperience:Hide()
 		end
-
-		CurrentXP = NewXP
-	else
-		MobsToKill:Hide()
-		-- XPToLevel:Hide()
-		gainedExperience:Hide()
 	end
 end
 
@@ -111,18 +96,11 @@ f:RegisterEvent("PLAYER_XP_UPDATE")
 f:SetScript(
 	"OnEvent",
 	function(self, event, isInitialLogin, isReloadingUi)
-		if event == "PLAYER_LEVEL_UP" or (event == "PLAYER_ENTERING_WORLD" and (isInitialLogin or isReloadingUi)) then
-			C_Timer.After(
-				1,
-				function()
-					MaxXP = UnitXPMax("player")
-					UpdateExperience()
-					MobsToKill:Hide()
-				end
-			)
-		end
-		if event == "PLAYER_XP_UPDATE" then
-			UpdateExperience()
+		if UnitLevel("player") == MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] then
+			MobsToKill:Hide()
+			self:UnregisterAllEvents()
+		else
+			UpdateExperience(event, isInitialLogin, isReloadingUi)
 		end
 	end
 )

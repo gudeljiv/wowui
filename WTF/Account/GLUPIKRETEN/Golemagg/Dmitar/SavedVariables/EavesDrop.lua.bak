@@ -6623,6 +6623,8 @@ EavesDropStatsDB = {
 							["amount"] = 5,
 						},
 						[2] = {
+							["time"] = "|cffffffff10/10/20 04:18:32|r\n|Hunit:Player-4465-01D5536D:Dmitar|hDmitar's|h melee swing hits |Hunit:Creature-0-4447-1-28-3098-000001C284:Mottled Boar|hMottled Boar|h for |cffffffff9|r |cffffffffPhysical|r.(Critical)",
+							["amount"] = 9,
 						},
 					},
 					["Smite"] = {

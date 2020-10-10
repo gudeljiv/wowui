@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 3076,
+	["session"] = 3088,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -3066,5 +3066,13 @@ BugGrabberDB = {
 			["session"] = 3045,
 			["counter"] = 1,
 		}, -- [387]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Experience/MobsToKill.lua:47: attempt to concatenate global 'event' (a nil value)",
+			["time"] = "2020/10/10 16:06:00",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\xVermin\\Experience/MobsToKill.lua:47: in function <Interface\\AddOns\\xVermin\\Experience/MobsToKill.lua:33>\nInterface\\AddOns\\xVermin\\Experience/MobsToKill.lua:102: in function <Interface\\AddOns\\xVermin\\Experience/MobsToKill.lua:97>",
+			["session"] = 3078,
+			["counter"] = 1,
+		}, -- [388]
 	},
 }
