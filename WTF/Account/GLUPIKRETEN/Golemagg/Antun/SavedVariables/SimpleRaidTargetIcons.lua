@@ -22,4 +22,7 @@ SRTIExternalUF = {
 		"NugRaid7UnitButton1", -- [7]
 		"NugRaid8UnitButton1", -- [8]
 	},
+	["blizzard_compactraidframes"] = {
+		"CompactRaidFrame1", -- [1]
+	},
 }

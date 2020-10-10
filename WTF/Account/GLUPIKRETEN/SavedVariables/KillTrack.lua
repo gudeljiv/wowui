@@ -1,7 +1,7 @@
 
 KILLTRACK = {
-	["TOOLTIP"] = true,
 	["COUNT_GROUP"] = true,
+	["PRINTKILLS"] = false,
 	["SHOW_EXP"] = false,
 	["BROKER"] = {
 		["MINIMAP"] = {
@@ -97,9 +97,9 @@ KILLTRACK = {
 		},
 		[3098] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
+			["Kills"] = 15,
 			["Name"] = "Mottled Boar",
-			["Exp"] = 104,
+			["Exp"] = 48,
 		},
 		[4396] = {
 			["AchievCount"] = 0,
@@ -295,26 +295,26 @@ KILLTRACK = {
 			["Name"] = "Deviate Python",
 			["Exp"] = 6,
 		},
-		[3130] = {
+		[4133] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Thunder Lizard",
+			["Name"] = "Silithid Hive Drone",
 		},
-		[8310] = {
+		[4147] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Watcher Wollpert",
+			["Name"] = "Saltstone Basilisk",
 		},
-		[1108] = {
+		[1548] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Mistvale Gorilla",
+			["Name"] = "Cursed Darkhound",
 		},
-		[2572] = {
+		[4363] = {
 			["AchievCount"] = 0,
-			["Kills"] = 3,
-			["Name"] = "Drywhisker Kobold",
-			["Exp"] = 452,
+			["Kills"] = 1,
+			["Name"] = "Mirefin Oracle",
+			["Exp"] = 28,
 		},
 		[2449] = {
 			["AchievCount"] = 0,
@@ -332,10 +332,11 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Swine",
 		},
-		[3463] = {
+		[4360] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Wandering Barrens Giraffe",
+			["Kills"] = 2,
+			["Name"] = "Mirefin Warrior",
+			["Exp"] = 32,
 		},
 		[2450] = {
 			["AchievCount"] = 0,
@@ -343,15 +344,16 @@ KILLTRACK = {
 			["Name"] = "Miner Hackett",
 			["Exp"] = 179,
 		},
-		[2442] = {
-			["AchievCount"] = 0,
-			["Kills"] = 36,
-			["Name"] = "Cow",
-		},
-		[5422] = {
+		[742] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Scorpid Hunter",
+			["Name"] = "Green Wyrmkin",
+		},
+		[2345] = {
+			["AchievCount"] = 0,
+			["Kills"] = 7,
+			["Name"] = "Dun Garok Rifleman",
+			["Exp"] = 66,
 		},
 		[2371] = {
 			["AchievCount"] = 0,
@@ -371,10 +373,11 @@ KILLTRACK = {
 			["Name"] = "Mudsnout Gnoll",
 			["Exp"] = 27,
 		},
-		[9396] = {
+		[2970] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Ground Pounder",
+			["Kills"] = 1,
+			["Name"] = "Swoop",
+			["Exp"] = 162,
 		},
 		[2373] = {
 			["AchievCount"] = 0,
@@ -387,17 +390,15 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Glasshide Basilisk",
 		},
-		[4480] = {
+		[3127] = {
 			["AchievCount"] = 0,
-			["Kills"] = 2,
-			["Name"] = "Kenata Dabyrie",
-			["Exp"] = 88,
+			["Kills"] = 47,
+			["Name"] = "Venomtail Scorpid",
 		},
-		[5756] = {
+		[1192] = {
 			["AchievCount"] = 0,
-			["Kills"] = 9,
-			["Name"] = "Deviate Venomwing",
-			["Exp"] = 47,
+			["Kills"] = 0,
+			["Name"] = "Toyotaa",
 		},
 		[4479] = {
 			["AchievCount"] = 0,
@@ -411,10 +412,11 @@ KILLTRACK = {
 			["Name"] = "Deviate Viper",
 			["Exp"] = 37,
 		},
-		[1192] = {
+		[4481] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Toyotaa",
+			["Kills"] = 30,
+			["Name"] = "Marcel Dabyrie",
+			["Exp"] = 202,
 		},
 		[2249] = {
 			["AchievCount"] = 0,
@@ -422,10 +424,10 @@ KILLTRACK = {
 			["Name"] = "Ferocious Yeti",
 			["Exp"] = 36,
 		},
-		[2760] = {
+		[5251] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Burning Exile",
+			["Name"] = "Woodpaw Trapper",
 		},
 		[5249] = {
 			["AchievCount"] = 0,
@@ -439,15 +441,16 @@ KILLTRACK = {
 			["Name"] = "Kresh",
 			["Exp"] = 67,
 		},
-		[5251] = {
+		[5761] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Woodpaw Trapper",
+			["Kills"] = 15,
+			["Name"] = "Deviate Shambler",
+			["Exp"] = 37,
 		},
-		[2566] = {
+		[4351] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Boulderfist Brute",
+			["Name"] = "Bloodfen Raptor",
 		},
 		[5253] = {
 			["AchievCount"] = 0,
@@ -480,11 +483,10 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Woodpaw Alpha",
 		},
-		[3840] = {
+		[2565] = {
 			["AchievCount"] = 0,
-			["Kills"] = 25,
-			["Name"] = "Druid of the Fang",
-			["Exp"] = 42,
+			["Kills"] = 0,
+			["Name"] = "Giant Plains Creeper",
 		},
 		[5260] = {
 			["AchievCount"] = 0,
@@ -551,32 +553,33 @@ KILLTRACK = {
 			["Name"] = "Syndicate Watchman",
 			["Exp"] = 14,
 		},
-		[4111] = {
+		[4391] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Gravelsnout Kobold",
+			["Name"] = "Swamp Ooze",
 		},
-		[2563] = {
+		[1923] = {
 			["AchievCount"] = 0,
-			["Kills"] = 25,
-			["Name"] = "Plains Creeper",
-			["Exp"] = 394,
+			["Kills"] = 0,
+			["Name"] = "Bloodsnout Worg",
+			["Exp"] = 10,
 		},
-		[2265] = {
+		[747] = {
 			["AchievCount"] = 0,
 			["Kills"] = 4,
-			["Name"] = "Hillsbrad Apprentice Blacksmith",
-			["Exp"] = 52,
+			["Name"] = "Marsh Murloc",
+			["Exp"] = 276,
 		},
-		[4343] = {
+		[5618] = {
+			["AchievCount"] = 0,
+			["Kills"] = 2,
+			["Name"] = "Wastewander Bandit",
+			["Exp"] = 257,
+		},
+		[740] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Drywallow Snapper",
-		},
-		[4342] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Drywallow Vicejaw",
+			["Name"] = "Adolescent Whelp",
 		},
 		[2264] = {
 			["AchievCount"] = 0,
@@ -584,10 +587,11 @@ KILLTRACK = {
 			["Name"] = "Hillsbrad Tailor",
 			["Exp"] = 159,
 		},
-		[4341] = {
+		[5616] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Drywallow Crocolisk",
+			["Kills"] = 11,
+			["Name"] = "Wastewander Thief",
+			["Exp"] = 257,
 		},
 		[8996] = {
 			["AchievCount"] = 0,
@@ -595,10 +599,10 @@ KILLTRACK = {
 			["Name"] = "Voidwalker Minion",
 			["Exp"] = 202,
 		},
-		[858] = {
+		[5286] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Sorrow Spinner",
+			["Name"] = "Longtooth Runner",
 		},
 		[2266] = {
 			["AchievCount"] = 0,
@@ -630,10 +634,10 @@ KILLTRACK = {
 			["Name"] = "Hillsbrad Footman",
 			["Exp"] = 164,
 		},
-		[5286] = {
+		[858] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Longtooth Runner",
+			["Name"] = "Sorrow Spinner",
 		},
 		[2269] = {
 			["AchievCount"] = 0,
@@ -658,15 +662,15 @@ KILLTRACK = {
 			["Name"] = "Lord Serpentis",
 			["Exp"] = 94,
 		},
-		[3835] = {
+		[2560] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Biletoad",
+			["Name"] = "Highland Thrasher",
 		},
-		[1867] = {
+		[2620] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Dalaran Apprentice",
+			["Name"] = "Prairie Dog",
 		},
 		[2387] = {
 			["AchievCount"] = 0,
@@ -674,17 +678,17 @@ KILLTRACK = {
 			["Name"] = "Hillsbrad Councilman",
 			["Exp"] = 54,
 		},
-		[2305] = {
+		[2270] = {
 			["AchievCount"] = 0,
-			["Kills"] = 12,
-			["Name"] = "Foreman Bonds",
-			["Exp"] = 204,
+			["Kills"] = 10,
+			["Name"] = "Hillsbrad Sentry",
+			["Exp"] = 162,
 		},
-		[2053] = {
+		[2958] = {
 			["AchievCount"] = 0,
-			["Kills"] = 20,
-			["Name"] = "Haggard Refugee",
-			["Exp"] = 113,
+			["Kills"] = 2,
+			["Name"] = "Prairie Wolf",
+			["Exp"] = 82,
 		},
 		[923] = {
 			["AchievCount"] = 0,
@@ -696,17 +700,16 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Caliph Scorpidsting",
 		},
-		[2503] = {
+		[3235] = {
 			["AchievCount"] = 0,
-			["Kills"] = 194,
-			["Name"] = "Hillsbrad Foreman",
-			["Exp"] = 146,
+			["Kills"] = 0,
+			["Name"] = "Greater Barrens Kodo",
 		},
-		[2406] = {
+		[2274] = {
 			["AchievCount"] = 0,
-			["Kills"] = 4,
-			["Name"] = "Mountain Lion",
-			["Exp"] = 58,
+			["Kills"] = 2,
+			["Name"] = "Enraged Stanley",
+			["Exp"] = 328,
 		},
 		[2403] = {
 			["AchievCount"] = 0,
@@ -714,10 +717,10 @@ KILLTRACK = {
 			["Name"] = "Farmer Getz",
 			["Exp"] = 131,
 		},
-		[1909] = {
+		[3426] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Vile Fin Lakestalker",
+			["Name"] = "Zhevra Charger",
 		},
 		[2914] = {
 			["AchievCount"] = 0,
@@ -741,15 +744,16 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Southsea Pirate",
 		},
-		[3426] = {
+		[7856] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Zhevra Charger",
+			["Name"] = "Southsea Freebooter",
 		},
-		[2408] = {
+		[4358] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Snapjaw",
+			["Kills"] = 418,
+			["Name"] = "Mirefin Puddlejumper",
+			["Exp"] = 154,
 		},
 		[7858] = {
 			["AchievCount"] = 0,
@@ -783,10 +787,11 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Lieutenant Valorcall",
 		},
-		[4514] = {
+		[3671] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "ArmordEmxara",
+			["Kills"] = 1,
+			["Name"] = "Lady Anacondra",
+			["Exp"] = 84,
 		},
 		[766] = {
 			["AchievCount"] = 0,
@@ -824,10 +829,11 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Dalaran Protector",
 		},
-		[6466] = {
+		[750] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Gamon",
+			["Kills"] = 2,
+			["Name"] = "Marsh Inkspewer",
+			["Exp"] = 288,
 		},
 		[767] = {
 			["AchievCount"] = 0,
@@ -840,11 +846,10 @@ KILLTRACK = {
 			["Name"] = "Deviate Crocolisk",
 			["Exp"] = 15,
 		},
-		[2248] = {
+		[5184] = {
 			["AchievCount"] = 0,
-			["Kills"] = 44,
-			["Name"] = "Cave Yeti",
-			["Exp"] = 33,
+			["Kills"] = 0,
+			["Name"] = "Theramore Sentry",
 		},
 		[2404] = {
 			["AchievCount"] = 0,
@@ -852,88 +857,10 @@ KILLTRACK = {
 			["Name"] = "Blacksmith Verringtan",
 			["Exp"] = 54,
 		},
-		[2407] = {
-			["AchievCount"] = 0,
-			["Kills"] = 4,
-			["Name"] = "Cat",
-			["Exp"] = 29,
-		},
-		[1924] = {
+		[4397] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Moonrage Bloodhowler",
-		},
-		[4075] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Rat",
-		},
-		[1914] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Dalaran Mage",
-			["Exp"] = 10,
-		},
-		[3566] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Flatland Prowler",
-		},
-		[768] = {
-			["AchievCount"] = 0,
-			["Kills"] = 4,
-			["Name"] = "Shadow Panther",
-			["Exp"] = 240,
-		},
-		[2335] = {
-			["AchievCount"] = 0,
-			["Kills"] = 2,
-			["Name"] = "Magistrate Burnside",
-			["Exp"] = 29,
-		},
-		[5617] = {
-			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Wastewander Shadow Mage",
-			["Exp"] = 270,
-		},
-		[3640] = {
-			["AchievCount"] = 0,
-			["Kills"] = 7,
-			["Name"] = "Evolving Ectoplasm",
-			["Exp"] = 26,
-		},
-		[5057] = {
-			["AchievCount"] = 0,
-			["Kills"] = 16,
-			["Name"] = "Theramore Deserter",
-			["Exp"] = 215,
-		},
-		[3415] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Savannah Huntress",
-		},
-		[4128] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Hecklefang Stalker",
-		},
-		[769] = {
-			["AchievCount"] = 0,
-			["Kills"] = 61,
-			["Name"] = "Deathstrike Tarantula",
-			["Exp"] = 252,
-		},
-		[3466] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Zhevra Courser",
-		},
-		[2761] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Cresting Exile",
+			["Name"] = "Mudrock Spikeshell",
 		},
 		[2561] = {
 			["AchievCount"] = 0,
@@ -941,20 +868,99 @@ KILLTRACK = {
 			["Name"] = "Highland Fleshstalker",
 			["Exp"] = 494,
 		},
-		[4397] = {
+		[4075] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Mudrock Spikeshell",
+			["Name"] = "Rat",
+		},
+		[2761] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Cresting Exile",
+		},
+		[3566] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Flatland Prowler",
+		},
+		[3466] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Zhevra Courser",
+		},
+		[2335] = {
+			["AchievCount"] = 0,
+			["Kills"] = 2,
+			["Name"] = "Magistrate Burnside",
+			["Exp"] = 29,
+		},
+		[4128] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Hecklefang Stalker",
+		},
+		[3415] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Savannah Huntress",
+		},
+		[5057] = {
+			["AchievCount"] = 0,
+			["Kills"] = 16,
+			["Name"] = "Theramore Deserter",
+			["Exp"] = 215,
+		},
+		[3640] = {
+			["AchievCount"] = 0,
+			["Kills"] = 7,
+			["Name"] = "Evolving Ectoplasm",
+			["Exp"] = 26,
+		},
+		[5617] = {
+			["AchievCount"] = 0,
+			["Kills"] = 1,
+			["Name"] = "Wastewander Shadow Mage",
+			["Exp"] = 270,
+		},
+		[769] = {
+			["AchievCount"] = 0,
+			["Kills"] = 61,
+			["Name"] = "Deathstrike Tarantula",
+			["Exp"] = 252,
+		},
+		[768] = {
+			["AchievCount"] = 0,
+			["Kills"] = 4,
+			["Name"] = "Shadow Panther",
+			["Exp"] = 240,
+		},
+		[1914] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Dalaran Mage",
+			["Exp"] = 10,
+		},
+		[1924] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Moonrage Bloodhowler",
+		},
+		[2407] = {
+			["AchievCount"] = 0,
+			["Kills"] = 4,
+			["Name"] = "Cat",
+			["Exp"] = 29,
 		},
 		[5089] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Balos Jacken",
 		},
-		[5184] = {
+		[2248] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Theramore Sentry",
+			["Kills"] = 44,
+			["Name"] = "Cave Yeti",
+			["Exp"] = 33,
 		},
 		[14230] = {
 			["AchievCount"] = 0,
@@ -962,11 +968,10 @@ KILLTRACK = {
 			["Name"] = "Burgle Eye",
 			["Exp"] = 207,
 		},
-		[750] = {
+		[6466] = {
 			["AchievCount"] = 0,
-			["Kills"] = 2,
-			["Name"] = "Marsh Inkspewer",
-			["Exp"] = 288,
+			["Kills"] = 0,
+			["Name"] = "Gamon",
 		},
 		[2427] = {
 			["AchievCount"] = 0,
@@ -974,11 +979,10 @@ KILLTRACK = {
 			["Name"] = "Jailor Eston",
 			["Exp"] = 23,
 		},
-		[3671] = {
+		[4514] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Lady Anacondra",
-			["Exp"] = 84,
+			["Kills"] = 0,
+			["Name"] = "ArmordEmxara",
 		},
 		[2428] = {
 			["AchievCount"] = 0,
@@ -986,94 +990,92 @@ KILLTRACK = {
 			["Name"] = "Jailor Marlgen",
 			["Exp"] = 23,
 		},
-		[4358] = {
-			["AchievCount"] = 0,
-			["Kills"] = 418,
-			["Name"] = "Mirefin Puddlejumper",
-			["Exp"] = 154,
-		},
-		[7856] = {
+		[2408] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Southsea Freebooter",
+			["Name"] = "Snapjaw",
 		},
-		[2274] = {
-			["AchievCount"] = 0,
-			["Kills"] = 2,
-			["Name"] = "Enraged Stanley",
-			["Exp"] = 328,
-		},
-		[3235] = {
+		[1909] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Greater Barrens Kodo",
+			["Name"] = "Vile Fin Lakestalker",
 		},
-		[2958] = {
+		[2406] = {
 			["AchievCount"] = 0,
-			["Kills"] = 2,
-			["Name"] = "Prairie Wolf",
-			["Exp"] = 82,
+			["Kills"] = 4,
+			["Name"] = "Mountain Lion",
+			["Exp"] = 58,
 		},
-		[2270] = {
+		[2503] = {
 			["AchievCount"] = 0,
-			["Kills"] = 10,
-			["Name"] = "Hillsbrad Sentry",
-			["Exp"] = 162,
+			["Kills"] = 194,
+			["Name"] = "Hillsbrad Foreman",
+			["Exp"] = 146,
+		},
+		[2053] = {
+			["AchievCount"] = 0,
+			["Kills"] = 20,
+			["Name"] = "Haggard Refugee",
+			["Exp"] = 113,
+		},
+		[2305] = {
+			["AchievCount"] = 0,
+			["Kills"] = 12,
+			["Name"] = "Foreman Bonds",
+			["Exp"] = 204,
 		},
 		[2559] = {
 			["AchievCount"] = 0,
-			["Kills"] = 34,
+			["Kills"] = 36,
 			["Name"] = "Highland Strider",
 			["Exp"] = 322,
 		},
-		[2620] = {
+		[1867] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Prairie Dog",
+			["Name"] = "Dalaran Apprentice",
 		},
-		[2560] = {
+		[3835] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Highland Thrasher",
+			["Name"] = "Biletoad",
 		},
 		[5615] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Wastewander Rogue",
 		},
-		[5616] = {
-			["AchievCount"] = 0,
-			["Kills"] = 11,
-			["Name"] = "Wastewander Thief",
-			["Exp"] = 257,
-		},
-		[740] = {
+		[4341] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Adolescent Whelp",
+			["Name"] = "Drywallow Crocolisk",
 		},
-		[5618] = {
+		[4342] = {
 			["AchievCount"] = 0,
-			["Kills"] = 2,
-			["Name"] = "Wastewander Bandit",
-			["Exp"] = 257,
+			["Kills"] = 0,
+			["Name"] = "Drywallow Vicejaw",
 		},
-		[747] = {
+		[4343] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Drywallow Snapper",
+		},
+		[2265] = {
 			["AchievCount"] = 0,
 			["Kills"] = 4,
-			["Name"] = "Marsh Murloc",
-			["Exp"] = 276,
+			["Name"] = "Hillsbrad Apprentice Blacksmith",
+			["Exp"] = 52,
 		},
-		[1923] = {
+		[2563] = {
+			["AchievCount"] = 0,
+			["Kills"] = 26,
+			["Name"] = "Plains Creeper",
+			["Exp"] = 358,
+		},
+		[4111] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Bloodsnout Worg",
-			["Exp"] = 10,
-		},
-		[4391] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Swamp Ooze",
+			["Name"] = "Gravelsnout Kobold",
 		},
 		[2054] = {
 			["AchievCount"] = 0,
@@ -1086,59 +1088,58 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Wastewander Assassin",
 		},
-		[2565] = {
+		[3840] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Giant Plains Creeper",
+			["Kills"] = 25,
+			["Name"] = "Druid of the Fang",
+			["Exp"] = 42,
 		},
 		[741] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Dreaming Whelp",
 		},
-		[4351] = {
+		[2566] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Bloodfen Raptor",
+			["Name"] = "Boulderfist Brute",
 		},
-		[5761] = {
+		[2760] = {
 			["AchievCount"] = 0,
-			["Kills"] = 15,
-			["Name"] = "Deviate Shambler",
-			["Exp"] = 37,
+			["Kills"] = 0,
+			["Name"] = "Burning Exile",
 		},
-		[4481] = {
+		[5756] = {
 			["AchievCount"] = 0,
-			["Kills"] = 30,
-			["Name"] = "Marcel Dabyrie",
-			["Exp"] = 202,
+			["Kills"] = 9,
+			["Name"] = "Deviate Venomwing",
+			["Exp"] = 47,
 		},
-		[3127] = {
+		[4480] = {
 			["AchievCount"] = 0,
-			["Kills"] = 47,
-			["Name"] = "Venomtail Scorpid",
+			["Kills"] = 2,
+			["Name"] = "Kenata Dabyrie",
+			["Exp"] = 88,
 		},
 		[4355] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Bloodfen Scytheclaw",
 		},
-		[2970] = {
-			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Swoop",
-			["Exp"] = 162,
-		},
-		[2345] = {
-			["AchievCount"] = 0,
-			["Kills"] = 7,
-			["Name"] = "Dun Garok Rifleman",
-			["Exp"] = 66,
-		},
-		[742] = {
+		[9396] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Green Wyrmkin",
+			["Name"] = "Ground Pounder",
+		},
+		[5422] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Scorpid Hunter",
+		},
+		[2442] = {
+			["AchievCount"] = 0,
+			["Kills"] = 36,
+			["Name"] = "Cow",
 		},
 		[4359] = {
 			["AchievCount"] = 0,
@@ -1146,11 +1147,10 @@ KILLTRACK = {
 			["Name"] = "Mirefin Murloc",
 			["Exp"] = 154,
 		},
-		[4360] = {
+		[3463] = {
 			["AchievCount"] = 0,
-			["Kills"] = 2,
-			["Name"] = "Mirefin Warrior",
-			["Exp"] = 32,
+			["Kills"] = 0,
+			["Name"] = "Wandering Barrens Giraffe",
 		},
 		[4361] = {
 			["AchievCount"] = 0,
@@ -1164,35 +1164,35 @@ KILLTRACK = {
 			["Name"] = "Mirefin Coastrunner",
 			["Exp"] = 173,
 		},
-		[4363] = {
+		[2572] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Mirefin Oracle",
-			["Exp"] = 28,
+			["Kills"] = 3,
+			["Name"] = "Drywhisker Kobold",
+			["Exp"] = 452,
 		},
-		[1548] = {
+		[1108] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Cursed Darkhound",
+			["Name"] = "Mistvale Gorilla",
 		},
-		[4147] = {
+		[8310] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Saltstone Basilisk",
+			["Name"] = "Watcher Wollpert",
 		},
-		[4133] = {
+		[3130] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Silithid Hive Drone",
+			["Name"] = "Thunder Lizard",
 		},
 	},
-	["DISABLE_RAIDS"] = false,
-	["ACHIEV_THRESHOLD"] = 1000,
-	["DISABLE_DUNGEONS"] = false,
 	["IMMEDIATE"] = {
 		["THRESHOLD"] = 0,
 		["POSITION"] = {
 		},
 	},
-	["PRINTKILLS"] = false,
+	["ACHIEV_THRESHOLD"] = 1000,
+	["DISABLE_DUNGEONS"] = false,
+	["DISABLE_RAIDS"] = false,
+	["TOOLTIP"] = true,
 }

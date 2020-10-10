@@ -10,8 +10,8 @@ TomTomDB = {
 		["Mohikanac - Golemagg"] = "Default",
 		["Mxym - Golemagg"] = "Default",
 		["Stranac - Golemagg"] = "Default",
-		["Dmitar - Golemagg"] = "Default",
-		["Greenwise - Golemagg"] = "Default",
+		["Mxzq - Golemagg"] = "Default",
+		["Jaroslav - Golemagg"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
 		["Slanac - Golemagg"] = "Default",
@@ -19,9 +19,9 @@ TomTomDB = {
 		["Klhjakhsgdjh - Golemagg"] = "Default",
 		["Antun - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Default",
-		["Jaroslav - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
-		["Mxzq - Golemagg"] = "Default",
+		["Greenwise - Golemagg"] = "Default",
+		["Dmitar - Golemagg"] = "Default",
 		["Kamenac - Golemagg"] = "Default",
 	},
 	["profiles"] = {
@@ -73,8 +73,8 @@ TomTomWaypointsM = {
 		["Mohikanac - Golemagg"] = "Mohikanac - Golemagg",
 		["Mxym - Golemagg"] = "Mxym - Golemagg",
 		["Stranac - Golemagg"] = "Stranac - Golemagg",
-		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
-		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
+		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
+		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
 		["Augustin - Golemagg"] = "Augustin - Golemagg",
 		["Grgur - Golemagg"] = "Grgur - Golemagg",
 		["Slanac - Golemagg"] = "Slanac - Golemagg",
@@ -82,9 +82,9 @@ TomTomWaypointsM = {
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 		["Antun - Golemagg"] = "Antun - Golemagg",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
-		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
 		["Mxyzptlk - Golemagg"] = "Mxyzptlk - Golemagg",
-		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
+		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
+		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
 		["Kamenac - Golemagg"] = "Kamenac - Golemagg",
 	},
 	["profiles"] = {
@@ -106,9 +106,9 @@ TomTomWaypointsM = {
 		},
 		["Stranac - Golemagg"] = {
 		},
-		["Dmitar - Golemagg"] = {
+		["Mxzq - Golemagg"] = {
 		},
-		["Greenwise - Golemagg"] = {
+		["Jaroslav - Golemagg"] = {
 		},
 		["Augustin - Golemagg"] = {
 		},
@@ -124,11 +124,11 @@ TomTomWaypointsM = {
 		},
 		["Judawise - Golemagg"] = {
 		},
-		["Jaroslav - Golemagg"] = {
-		},
 		["Mxyzptlk - Golemagg"] = {
 		},
-		["Mxzq - Golemagg"] = {
+		["Greenwise - Golemagg"] = {
+		},
+		["Dmitar - Golemagg"] = {
 		},
 		["Kamenac - Golemagg"] = {
 		},

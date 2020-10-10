@@ -20,14 +20,14 @@ gainedExperience.text:SetFont(xVermin.Config.font.arial, 10, "NONE")
 gainedExperience.text:SetPoint("LEFT", CustomContainer_Combat, "RIGHT", 3, 0)
 gainedExperience:Hide()
 
-XPToLevel = CreateFrame("Frame", "CustomContainer_CombatXPToLevel", CustomContainer_Combat)
-XPToLevel:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 2)
-XPToLevel:SetWidth(10)
-XPToLevel:SetHeight(10)
-XPToLevel.text = XPToLevel:CreateFontString(nil, "ARTWORK")
-XPToLevel.text:SetFont(xVermin.Config.font.arial, 8, "NONE")
-XPToLevel.text:SetPoint("TOPRIGHT", CustomContainer_Combat, "BOTTOMRIGHT", 0, -3)
-XPToLevel:Hide()
+-- XPToLevel = CreateFrame("Frame", "CustomContainer_CombatXPToLevel", CustomContainer_Combat)
+-- XPToLevel:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 2)
+-- XPToLevel:SetWidth(10)
+-- XPToLevel:SetHeight(10)
+-- XPToLevel.text = XPToLevel:CreateFontString(nil, "ARTWORK")
+-- XPToLevel.text:SetFont(xVermin.Config.font.arial, 8, "NONE")
+-- XPToLevel.text:SetPoint("TOPRIGHT", CustomContainer_Combat, "BOTTOMRIGHT", 0, -3)
+-- XPToLevel:Hide()
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -41,14 +41,14 @@ local mbk = false
 
 local function UpdateExperience()
 	if UnitLevel("player") < MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] then
-		XPToLevel:Show()
+		-- XPToLevel:Show()
 		NewXP = UnitXP("player")
 
 		gained = NewXP - CurrentXP
 		XPToLVL = MaxXP - NewXP
 
-		XPToLevel.text:SetText(XPToLVL .. " (XP)")
-		XPToLevel.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
+		-- XPToLevel.text:SetText(XPToLVL .. " (XP)")
+		-- XPToLevel.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 
 		xVermin:LogBreak(false, "mbk")
 		xVermin:Log("current xp: " .. CurrentXP, "mbk")
@@ -99,7 +99,7 @@ local function UpdateExperience()
 		CurrentXP = NewXP
 	else
 		MobsToKill:Hide()
-		XPToLevel:Hide()
+		-- XPToLevel:Hide()
 		gainedExperience:Hide()
 	end
 end

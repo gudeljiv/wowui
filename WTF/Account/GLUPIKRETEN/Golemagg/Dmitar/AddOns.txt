@@ -301,3 +301,4 @@ aux-addon: disabled
 FiveSecondRule: disabled
 Immersion: disabled
 Examiner: disabled
+WeakAurasArchive: enabled

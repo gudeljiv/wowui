@@ -22,22 +22,22 @@ PlayerXP.XPbar.Value:SetShadowOffset(0, 0)
 PlayerXP.XPbar.Value:SetPoint("LEFT", PlayerXP.XPbar, "LEFT", 2, 0)
 PlayerXP.XPbar.Value:SetVertexColor(1, 1, 1)
 
+PlayerXP.XPbar.UntilLevel = PlayerXP.XPbar:CreateFontString(nil, "ARTWORK")
+PlayerXP.XPbar.UntilLevel:SetFont("Fonts\\ARIALN.ttf", 10, "THINOUTLINE")
+PlayerXP.XPbar.UntilLevel:SetShadowOffset(0, 0)
+PlayerXP.XPbar.UntilLevel:SetPoint("RIGHT", PlayerXP.XPbar, "RIGHT", 2, 10)
+PlayerXP.XPbar.UntilLevel:SetVertexColor(1, 1, 1)
+
 PlayerXP.XPbar.Percent = PlayerXP.XPbar:CreateFontString(nil, "ARTWORK")
 PlayerXP.XPbar.Percent:SetFont("Fonts\\ARIALN.ttf", 18, "THINOUTLINE")
 PlayerXP.XPbar.Percent:SetShadowOffset(0, 0)
 PlayerXP.XPbar.Percent:SetPoint("CENTER", PlayerXP.XPbar, 0, 0)
 PlayerXP.XPbar.Percent:SetVertexColor(1, 1, 1)
 
-PlayerXP.XPbar.Rested = PlayerXP.XPbar:CreateFontString(nil, "ARTWORK")
-PlayerXP.XPbar.Rested:SetFont("Fonts\\ARIALN.ttf", 14, "THINOUTLINE")
-PlayerXP.XPbar.Rested:SetShadowOffset(0, 0)
-PlayerXP.XPbar.Rested:SetPoint("RIGHT", PlayerXP.XPbar, "RIGHT", -2, 5)
-PlayerXP.XPbar.Rested:SetVertexColor(1, 1, 1)
-
 PlayerXP.XPbar.RestedNumber = PlayerXP.XPbar:CreateFontString(nil, "ARTWORK")
 PlayerXP.XPbar.RestedNumber:SetFont("Fonts\\ARIALN.ttf", 10, "THINOUTLINE")
 PlayerXP.XPbar.RestedNumber:SetShadowOffset(0, 0)
-PlayerXP.XPbar.RestedNumber:SetPoint("CENTER", PlayerXP.XPbar.Rested, 0, -10)
+PlayerXP.XPbar.RestedNumber:SetPoint("RIGHT", PlayerXP.XPbar, "RIGHT", 2, -10)
 PlayerXP.XPbar.RestedNumber:SetVertexColor(1, 1, 1)
 
 PlayerXP.XPbar.Background = PlayerXP.XPbar:CreateTexture(nil, "BACKGROUND")
@@ -71,34 +71,52 @@ PlayerXP.XPbar.Above:SetWidth(14)
 PlayerXP.XPbar.Above:SetTexture("Interface\\AddOns\\xVermin\\Media\\textureArrowAbove")
 PlayerXP.XPbar.Above:SetPoint("BOTTOM", PlayerXP.XPbar.Below, "TOP", 0, PlayerXP.XPbar:GetHeight())
 
-local function UpdateBarVisibility()
-	if UnitLevel("player") < MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] then
-		PlayerXP.XPbar:SetAlpha(0.8)
+local function UpdateBar(event, isInitialLogin, isReloadingUi)
+	MaxXP = UnitXPMax("player")
+	CurrentXP = UnitXP("player")
+
+	percent = floor((CurrentXP / MaxXP) * 100)
+	r, g, b = xVermin:ColorGradient(percent / 100, 1, 0, 0, 1, 1, 0, 0, 1, 0)
+
+	PlayerXP.XPbar:SetMinMaxValues(0, MaxXP)
+	PlayerXP.XPbar:SetValue(CurrentXP)
+	PlayerXP.XPbar.Value:SetText(xVermin:FormatNumber(CurrentXP, ","))
+	PlayerXP.XPbar.UntilLevel:SetText(xVermin:FormatNumber(MaxXP - CurrentXP, ","))
+	PlayerXP.XPbar.Percent:SetText(xVermin:Round(percent) .. "%")
+	PlayerXP.XPbar:SetStatusBarColor(r, g, b)
+
+	if (select(3, GetRestState()) == 2) then
+		PlayerXP.XPbar.RestedNumber:SetText("R: " .. GetXPExhaustion())
 	else
-		PlayerXP.XPbar:SetAlpha(0)
+		PlayerXP.XPbar.RestedNumber:Hide()
+		PlayerXP.XPbar.UntilLevel:SetText(xVermin:FormatNumber(MaxXP - CurrentXP, ","))
+		PlayerXP.XPbar.UntilLevel:SetPoint("RIGHT", PlayerXP.XPbar, "RIGHT", -2, 0)
+		PlayerXP.XPbar.UntilLevel:SetFont("Fonts\\ARIALN.ttf", 14, "THINOUTLINE")
 	end
-end
+	-- 	PlayerXP.XPbar.Rested:SetText(R)
+	-- 	PlayerXP.XPbar.RestedNumber:SetText(GetXPExhaustion())
+	-- 	PlayerXP.XPbar.UntilLevel:Hide()
+	-- end
 
-local function UpdateBarValueAndColor(self, event)
-	if UnitLevel("player") < MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] then
-		CurrentXP = UnitXP("player")
-		MaxXP = UnitXPMax("player")
-		percent = floor((CurrentXP / MaxXP) * 100)
-		_, _, rested = GetRestState()
-		r, g, b = xVermin:ColorGradient(percent / 100, 1, 0, 0, 1, 1, 0, 0, 1, 0)
-		PlayerXP.XPbar:SetMinMaxValues(0, MaxXP)
-		PlayerXP.XPbar:SetValue(CurrentXP)
-		PlayerXP.XPbar.Value:SetText(xVermin:FormatNumber(CurrentXP, ","))
-		PlayerXP.XPbar.Percent:SetText(xVermin:Round(percent) .. "%")
-		PlayerXP.XPbar.Rested:SetText(rested == 2 and "R" or "")
-		PlayerXP.XPbar.RestedNumber:SetText(rested == 2 and GetXPExhaustion() or "")
-		PlayerXP.XPbar:SetStatusBarColor(r, g, b)
-	end
-end
+	-- if UnitLevel("player") < MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] then
+	-- 	CurrentXP = UnitXP("player")
+	-- 	MaxXP = UnitXPMax("player")
+	-- 	percent = floor((CurrentXP / MaxXP) * 100)
+	-- 	_, _, rested = GetRestState()
+	-- 	r, g, b = xVermin:ColorGradient(percent / 100, 1, 0, 0, 1, 1, 0, 0, 1, 0)
+	-- 	PlayerXP.XPbar:SetMinMaxValues(0, MaxXP)
+	-- 	PlayerXP.XPbar:SetValue(CurrentXP)
+	-- 	PlayerXP.XPbar.Value:SetText(xVermin:FormatNumber(CurrentXP, ","))
+	-- 	PlayerXP.XPbar.UntilLevel:SetText(xVermin:FormatNumber(MaxXP - CurrentXP, ","))
+	-- 	PlayerXP.XPbar.Percent:SetText(xVermin:Round(percent) .. "%")
+	-- 	PlayerXP.XPbar.Rested:SetText(rested == 2 and "R" or "")
+	-- 	PlayerXP.XPbar.RestedNumber:SetText(rested == 2 and GetXPExhaustion() or "")
+	-- 	PlayerXP.XPbar:SetStatusBarColor(r, g, b)
 
-local function UpdateBar()
-	UpdateBarVisibility()
-	UpdateBarValueAndColor()
+	-- 	if (rested == 2) then
+	-- 		PlayerXP.XPbar.UntilLevel:Hide()
+	-- 	end
+	-- end
 end
 
 PlayerXP:RegisterEvent("PLAYER_XP_UPDATE")
@@ -107,16 +125,24 @@ PlayerXP:RegisterEvent("PLAYER_LEVEL_UP")
 PlayerXP:SetScript(
 	"OnEvent",
 	function(self, event, isInitialLogin, isReloadingUi)
-		if event == "PLAYER_LEVEL_UP" or (event == "PLAYER_ENTERING_WORLD" and (isInitialLogin or isReloadingUi)) then
-			C_Timer.After(
-				1,
-				function()
-					UpdateBar()
-				end
-			)
+		if UnitLevel("player") == MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] then
+			PlayerXP.XPbar:SetAlpha(0)
+			self:UnregisterAllEvents()
+		else
+			PlayerXP.XPbar:SetAlpha(0.8)
+			UpdateBar(event, isInitialLogin, isReloadingUi)
 		end
-		if event == "PLAYER_XP_UPDATE" then
-			UpdateBar()
-		end
+
+		-- if event == "PLAYER_LEVEL_UP" or (event == "PLAYER_ENTERING_WORLD" and (isInitialLogin or isReloadingUi)) then
+		-- 	C_Timer.After(
+		-- 		1,
+		-- 		function()
+		-- 			UpdateBar()
+		-- 		end
+		-- 	)
+		-- end
+		-- if event == "PLAYER_XP_UPDATE" then
+		-- 	UpdateBar()
+		-- end
 	end
 )

@@ -2,16 +2,16 @@
 GMMONEY = {
 	["Golemagg"] = {
 		["Kamenac"] = {
-			["GOLD"] = 4047891,
+			["GOLD"] = 3297892,
 			["CLASS"] = "WARRIOR",
 		},
 		["Stranac"] = {
 			["GOLD"] = 0,
 			["CLASS"] = "MAGE",
 		},
-		["Junac"] = {
-			["GOLD"] = 91,
-			["CLASS"] = "DRUID",
+		["Slanac"] = {
+			["GOLD"] = 177715,
+			["CLASS"] = "SHAMAN",
 		},
 		["Konac"] = {
 			["GOLD"] = 7721079,
@@ -21,13 +21,13 @@ GMMONEY = {
 			["GOLD"] = 1154148,
 			["CLASS"] = "HUNTER",
 		},
-		["Slanac"] = {
-			["GOLD"] = 177715,
-			["CLASS"] = "SHAMAN",
+		["Junac"] = {
+			["GOLD"] = 91,
+			["CLASS"] = "DRUID",
 		},
 	},
 }
 GMMONEYSET = {
-	["FULLDISP"] = true,
 	["TEXTMODE"] = true,
+	["FULLDISP"] = true,
 }
