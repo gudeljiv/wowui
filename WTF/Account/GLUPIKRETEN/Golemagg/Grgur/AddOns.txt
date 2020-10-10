@@ -107,3 +107,5 @@ GatherMate2: enabled
 GatherMate2_Data: enabled
 FiveSecondRule: disabled
 WeakAuras: enabled
+Immersion: disabled
+Examiner: disabled

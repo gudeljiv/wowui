@@ -14,7 +14,7 @@ AtlasLootClassicDB = {
 		["Verminz - Golemagg"] = "Verminz - Golemagg",
 		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
 		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
-		["Mxym - Golemagg"] = "Default",
+		["Vermins - Stonespine"] = "Default",
 		["Mxys - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Mxyzptlk - Golemagg"] = "Default",
@@ -25,7 +25,7 @@ AtlasLootClassicDB = {
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 		["Antun - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
-		["Vermins - Stonespine"] = "Default",
+		["Mxym - Golemagg"] = "Default",
 		["Korupcija - Stonespine"] = "Korupcija - Stonespine",
 		["Ozrencic - Golemagg"] = "Ozrencic - Golemagg",
 		["Whatevs - Stonespine"] = "Default",
@@ -150,6 +150,10 @@ AtlasLootClassicDB = {
 		["Vermins - Stonespine"] = {
 		},
 		["Default"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["point"] = {
 					nil, -- [1]
@@ -165,10 +169,6 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
 			},
 		},
 		["Mxyzptlk - Golemagg"] = {

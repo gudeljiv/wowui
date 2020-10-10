@@ -90,12 +90,12 @@ WeakAurasSaved = {
 			["fontSize"] = 13,
 			["shadowXOffset"] = 1,
 			["regionType"] = "text",
-			["preferToUpdate"] = false,
 			["parent"] = "Kill Tracker",
+			["preferToUpdate"] = false,
 			["fixedWidth"] = 200,
 			["automaticWidth"] = "Auto",
-			["justify"] = "LEFT",
 			["semver"] = "1.0.2",
+			["justify"] = "LEFT",
 			["tocversion"] = 11304,
 			["id"] = "KTHeader",
 			["xOffset"] = 0,
@@ -115,7 +115,6 @@ WeakAurasSaved = {
 			},
 			["conditions"] = {
 			},
-			["selfPoint"] = "BOTTOM",
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -136,6 +135,7 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
+			["selfPoint"] = "BOTTOM",
 		},
 		["Instance History - Extended"] = {
 			["controlledChildren"] = {
@@ -236,7 +236,7 @@ WeakAurasSaved = {
 					},
 				},
 				["use_class"] = false,
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -244,7 +244,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -252,11 +252,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -361,7 +361,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["useLimit"] = false,
+			["radius"] = 300,
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -372,6 +372,12 @@ WeakAurasSaved = {
 			["animate"] = false,
 			["customGrow"] = "function(newPositions, activeRegions)\n    local offset = 9/64 -- target_indicator_glow texture center offset\n    local distance = 18/64\n    local angle, x, y, h, w, s, c, sb, cb, da\n    local curveAngle, segmentCount, direction, base, direction\n\n    for i, r in ipairs(activeRegions) do\n        if r.region.GetRotation then\n            direction = r.data.config.direction\n            base = (r.data.config.rotationOffset + direction * 180)\n            angle = r.region:GetRotation() - direction * 180\n            h = r.data.height\n            w = r.data.width\n            curveAngle = r.data.config.curveAngle\n            segmentCount = r.data.config.segmentCount\n            s = sin(angle)\n            c = cos(angle)\n            sb = sin(base + (direction - 1) * 180)\n            cb = cos(base + (direction - 1) * 180)\n            da = curveAngle / (segmentCount - 1)\n            radius = 0.5 * w * distance / sin(da / 2)\n            x = c * radius + s * w * offset * (direction - 1.5) * 2 + radius * cb\n            y = s * radius * h / w - c * h * offset * (direction - 1.5) * 2 + radius * h / w * sb\n        else\n            x = 0\n            y = 0\n        end\n\n        if newPositions[i] then\n            newPositions[i][1] = x\n            newPositions[i][2] = y\n        else\n            newPositions[i] = {x, y}\n        end\n    end\nend\n",
 			["scale"] = 1,
+			["rowSpace"] = 1,
+			["border"] = false,
+			["borderEdge"] = "1 Pixel",
+			["regionType"] = "dynamicgroup",
+			["borderSize"] = 2,
+			["limit"] = 5,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -392,32 +398,26 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["border"] = false,
-			["borderEdge"] = "1 Pixel",
-			["regionType"] = "dynamicgroup",
-			["borderSize"] = 2,
-			["limit"] = 5,
-			["authorOptions"] = {
-			},
-			["arcLength"] = 30,
+			["gridType"] = "RD",
 			["constantFactor"] = "RADIUS",
-			["borderInset"] = 1,
+			["config"] = {
+			},
 			["borderOffset"] = 4,
 			["semver"] = "1.3.4",
 			["tocversion"] = 11302,
 			["id"] = "nanShield",
-			["config"] = {
-			},
-			["gridWidth"] = 5,
+			["borderInset"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["stagger"] = 0,
 			["uid"] = "QYuwGRyspxh",
-			["frameStrata"] = 1,
-			["gridType"] = "RD",
+			["gridWidth"] = 5,
+			["useLimit"] = false,
 			["conditions"] = {
 			},
-			["rowSpace"] = 1,
-			["radius"] = 300,
+			["arcLength"] = 30,
+			["authorOptions"] = {
+			},
 		},
 		["Kill Tracker"] = {
 			["controlledChildren"] = {
@@ -502,12 +502,10 @@ WeakAurasSaved = {
 			["id"] = "Kill Tracker",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["xOffset"] = 564.999633789063,
 			["borderInset"] = 1,
-			["groupIcon"] = 136183,
-			["uid"] = "NQfLrO1EXvg",
-			["conditions"] = {
+			["config"] = {
 			},
+			["uid"] = "NQfLrO1EXvg",
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -528,8 +526,10 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["config"] = {
+			["conditions"] = {
 			},
+			["groupIcon"] = 136183,
+			["xOffset"] = 564.999633789063,
 		},
 		["Mana 5SecondRule + Ticks"] = {
 			["sparkWidth"] = 10,
@@ -705,27 +705,27 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["uid"] = "jKqxo1NY(5d",
-			["spark"] = true,
+			["auto"] = true,
 			["anchorFrameType"] = "SELECTFRAME",
 			["customAnchor"] = "PlayerFrame",
 			["smoothProgress"] = false,
-			["anchorFrameFrame"] = "PlayerFrameHealthBar",
+			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
 			["borderInFront"] = true,
 			["frameStrata"] = 4,
 			["icon_side"] = "RIGHT",
-			["zoom"] = 0,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["sparkHeight"] = 30,
 			["texture"] = "Glamour2",
-			["auto"] = true,
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["spark"] = true,
+			["zoom"] = 0,
 			["semver"] = "1.0.0",
 			["tocversion"] = 11302,
 			["sparkHidden"] = "NEVER",
 			["useAdjustededMax"] = false,
 			["alpha"] = 1,
 			["width"] = 115,
-			["useAdjustededMin"] = false,
+			["anchorFrameFrame"] = "PlayerFrameHealthBar",
 			["config"] = {
 			},
 			["inverse"] = false,
@@ -873,8 +873,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["selfPoint"] = "BOTTOM",
-			["semver"] = "1.0.0",
 			["justify"] = "LEFT",
+			["semver"] = "1.0.0",
 			["tocversion"] = 11304,
 			["id"] = "Inform Party of reset",
 			["uid"] = "2vPHxmS0)PD",
@@ -934,12 +934,12 @@ WeakAurasSaved = {
 						["customVariables"] = "{\n    school = {\n        type = \"select\",\n        display = \"Damage Type\",\n        values = {\n            [\"All\"] = \"All\",\n            [\"Physical\"] = \"Physical\",\n            [\"Magic\"] = \"Magic\",\n            [\"Holy\"] = \"Holy\",\n            [\"Fire\"] = \"Fire\",\n            [\"Nature\"] = \"Nature\",\n            [\"Frost\"] = \"Frost\",\n            [\"Shadow\"] = \"Shadow\",\n            [\"Arcane\"] = \"Arcane\"\n        }\n    }\n}",
 						["names"] = {
 						},
-						["spellIds"] = {
-						},
+						["custom"] = "function(...)\n    return aura_env:on_tsu(...)\nend",
 						["unit"] = "player",
 						["check"] = "update",
 						["subeventSuffix"] = "_CAST_START",
-						["custom"] = "function(...)\n    return aura_env:on_tsu(...)\nend",
+						["spellIds"] = {
+						},
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -1189,8 +1189,8 @@ WeakAurasSaved = {
 			["displayText_format_p_time_precision"] = 0,
 			["wordWrap"] = "WordWrap",
 			["selfPoint"] = "BOTTOM",
-			["justify"] = "CENTER",
 			["semver"] = "1.3.4",
+			["justify"] = "CENTER",
 			["tocversion"] = 11302,
 			["id"] = "nanShield:Text",
 			["config"] = {
@@ -1297,8 +1297,8 @@ WeakAurasSaved = {
 						["event"] = "Health",
 						["subeventPrefix"] = "SPELL",
 						["unit"] = "player",
-						["custom"] = "function(...)\n    return aura_env:on_tsu(...)\nend",
 						["events"] = "PLAYER_ENTERING_WORLD WA_NAN_SHIELD",
+						["custom"] = "function(...)\n    return aura_env:on_tsu(...)\nend",
 						["spellIds"] = {
 						},
 						["check"] = "update",
@@ -1355,7 +1355,7 @@ WeakAurasSaved = {
 			["regionType"] = "texture",
 			["blendMode"] = "ADD",
 			["texture"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\target_indicator_glow.tga",
-			["width"] = 50,
+			["anchorFrameType"] = "SCREEN",
 			["discrete_rotation"] = 0,
 			["semver"] = "1.3.4",
 			["tocversion"] = 11302,
@@ -1373,7 +1373,7 @@ WeakAurasSaved = {
 					["colorA"] = 1,
 					["easeType"] = "none",
 					["duration"] = "0.2",
-					["scaley"] = 1,
+					["preset"] = "fade",
 					["alpha"] = 0,
 					["rotate"] = 0,
 					["y"] = 0,
@@ -1382,7 +1382,7 @@ WeakAurasSaved = {
 					["use_scale"] = true,
 					["duration_type"] = "seconds",
 					["easeStrength"] = 3,
-					["preset"] = "fade",
+					["scaley"] = 1,
 					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      return startX + (progress * (scaleX - startX)), startY + (progress * (scaleY - startY))\n    end\n  ",
 				},
 				["main"] = {
@@ -1418,9 +1418,9 @@ WeakAurasSaved = {
 					["duration"] = "0.2",
 				},
 			},
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
 			["frameStrata"] = 1,
+			["width"] = 50,
+			["alpha"] = 1,
 			["config"] = {
 				["direction"] = 1,
 				["segmentCount"] = 20,
@@ -1849,28 +1849,28 @@ WeakAurasSaved = {
 				["isHealthPct"] = false,
 				["debugEnabled"] = false,
 			},
-			["zoom"] = 0,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["icon_side"] = "RIGHT",
 			["width"] = 200,
 			["sparkHeight"] = 30,
 			["texture"] = "Details Flat",
 			["spark"] = false,
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["zoom"] = 0,
 			["auto"] = true,
 			["tocversion"] = 11302,
-			["id"] = "nanShield:Bar",
 			["sparkHidden"] = "NEVER",
+			["id"] = "nanShield:Bar",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["semver"] = "1.3.4",
+			["uid"] = "nNYjECvELIW",
+			["inverse"] = false,
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["inverse"] = false,
-			["uid"] = "nNYjECvELIW",
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 				{
@@ -2124,12 +2124,12 @@ WeakAurasSaved = {
 			["shadowXOffset"] = 1,
 			["anchorFrameFrame"] = "WeakAuras:KTList",
 			["regionType"] = "text",
-			["preferToUpdate"] = false,
 			["parent"] = "Kill Tracker",
+			["preferToUpdate"] = false,
 			["fixedWidth"] = 200,
 			["shadowYOffset"] = -1,
-			["semver"] = "1.0.2",
 			["justify"] = "LEFT",
+			["semver"] = "1.0.2",
 			["tocversion"] = 11304,
 			["id"] = "KTReset",
 			["wordWrap"] = "WordWrap",
@@ -2168,13 +2168,13 @@ WeakAurasSaved = {
 			},
 			["conditions"] = {
 			},
-			["automaticWidth"] = "Auto",
 			["color"] = {
 				0.51764705882353, -- [1]
 				1, -- [2]
 				0.34509803921569, -- [3]
 				1, -- [4]
 			},
+			["automaticWidth"] = "Auto",
 		},
 		["nanShield:Value"] = {
 			["outline"] = "None",
@@ -2204,10 +2204,10 @@ WeakAurasSaved = {
 						["custom_hide"] = "custom",
 						["unit"] = "player",
 						["type"] = "custom",
-						["custom_type"] = "status",
 						["unevent"] = "auto",
-						["events"] = "COMBAT_LOG_EVENT_UNFILTERED DELAYED_PLAYER_ENTERING_WORLD",
+						["custom_type"] = "status",
 						["custom"] = "function(...)\n    aura_env:on_cleu(...)\nend\n\n\n",
+						["events"] = "COMBAT_LOG_EVENT_UNFILTERED DELAYED_PLAYER_ENTERING_WORLD",
 						["event"] = "Conditions",
 						["customStacks"] = "",
 						["customDuration"] = "",
@@ -2286,8 +2286,8 @@ WeakAurasSaved = {
 					["width"] = 2,
 				}, -- [1]
 			},
-			["semver"] = "1.3.4",
 			["justify"] = "CENTER",
+			["semver"] = "1.3.4",
 			["tocversion"] = 11302,
 			["id"] = "nanShield:Value",
 			["config"] = {
@@ -2417,35 +2417,35 @@ WeakAurasSaved = {
 				},
 			},
 			["parent"] = "Farming Tracker Spell",
-			["sparkColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["config"] = {
 			},
 			["useAdjustedMax"] = false,
 			["smoothProgress"] = true,
 			["useAdjustededMin"] = false,
 			["regionType"] = "aurabar",
 			["auto"] = true,
-			["config"] = {
+			["sparkColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
-			["sparkDesaturate"] = false,
-			["spark"] = false,
+			["icon_side"] = "RIGHT",
+			["semver"] = "1.0.0",
 			["sparkHeight"] = 30,
 			["texture"] = "Glamour2",
 			["frameStrata"] = 1,
 			["zoom"] = 0,
-			["semver"] = "1.0.0",
+			["spark"] = false,
 			["tocversion"] = 11304,
-			["id"] = "Freeze",
+			["sparkHidden"] = "NEVER",
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["sparkHidden"] = "NEVER",
+			["id"] = "Freeze",
 			["uid"] = "iJ3GjV9fAPc",
 			["inverse"] = false,
-			["icon_side"] = "RIGHT",
+			["sparkDesaturate"] = false,
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
 			},
@@ -2595,11 +2595,11 @@ WeakAurasSaved = {
 						["names"] = {
 						},
 						["events"] = "",
-						["spellIds"] = {
-						},
+						["custom"] = "function(as)\n    if aura_env.autoReset then\n        aura_env.doAutoReset();\n    end\n    \n    if GetTime() - aura_env.lastDisplayUpdate >= aura_env.config.updateInterval then\n        local s = {};\n        s.changed = true;\n        \n        local count = 0;\n        \n        for k,v in pairs(aura_env.db.History) do\n            count = count + 1; \n        end\n        \n        s.name = \"Instance History\";\n        \n        s.progressType = \"static\";\n        \n        s.additionalProgress = {};\n        local now = time();\n        \n        local czk = aura_env.histZoneKey();\n        \n        local ordered = {};\n        \n        local dayCount = 0;\n        for k,v in pairs(aura_env.db.HistoryDay) do\n            if not (now > v.last + 86400 or v.last > now + 86400) then\n                dayCount = dayCount + 1;\n            end\n        end\n        \n        s.show = count >= aura_env.config.displayMin or dayCount >= aura_env.config.displayMin;\n        \n        if count > 0 then\n            s.value = 3600;\n            s.total = 3600;\n            local start = now-3600;\n            \n            for k,v in pairs(aura_env.db.History) do\n                if k == czk then\n                    v.last = now; \n                end\n                table.insert(ordered, {k, v.create});\n            end\n            \n            table.sort(ordered, function(a,b) return a[2]<b[2] end);\n            \n            for idx,t in pairs(ordered) do\n                local k = t[1];\n                local v = aura_env.db.History[k];\n                \n                if v.last >= start then\n                    \n                    local o = {};\n                    --o.max = math.min(3600, v.create - start);\n                    --o.min = math.max(0, math.min(v.last - start, o.max-25));\n                    \n                    o.max = math.max(0, math.min(3600, v.last - start));\n                    \n                    local prev = #s.additionalProgress > 0 and s.additionalProgress[#s.additionalProgress].max or 0;\n                    \n                    o.min = math.max(0, math.min(3600, math.min(math.max(prev+25, v.create - start), o.max-25)));\n                    \n                    --print(o.max, o.min)\n                    table.insert(s.additionalProgress, o);\n                end\n            end\n        elseif dayCount > 0 then\n            s.value = 86400;\n            s.total = 86400;\n            local start = now-86400;\n            \n            for k,v in pairs(aura_env.db.HistoryDay) do\n                if k == czk then\n                    v.last = now; \n                end\n                table.insert(ordered, {k, v.create});\n            end\n            \n            table.sort(ordered, function(a,b) return a[2]<b[2] end);\n            \n            for idx,t in pairs(ordered) do\n                local k = t[1];\n                local v = aura_env.db.HistoryDay[k];\n                \n                if v.last >= start then\n                    \n                    local o = {};\n                    --o.max = math.min(86400, v.create - start);\n                    --o.min = math.max(0, math.min(v.last - start, o.max-25));\n                    \n                    o.max = math.max(0, math.min(86400, v.last - start));\n                    \n                    local prev = #s.additionalProgress > 0 and s.additionalProgress[#s.additionalProgress].max or 0;\n                    \n                    o.min = math.max(0, math.min(86400, math.min(math.max(prev+25, v.create - start), o.max-25)));\n                    \n                    --print(o.max, o.min)\n                    table.insert(s.additionalProgress, o);\n                end\n            end\n        end\n        \n        \n        --DevTools_Dump(s.additionalProgress)\n        \n        as[1] = s;\n        \n        aura_env.lastDisplayUpdate = GetTime();\n        return true;\n    else\n        return false;\n    end\nend",
 						["subeventPrefix"] = "SPELL",
 						["check"] = "update",
-						["custom"] = "function(as)\n    if aura_env.autoReset then\n        aura_env.doAutoReset();\n    end\n    \n    if GetTime() - aura_env.lastDisplayUpdate >= aura_env.config.updateInterval then\n        local s = {};\n        s.changed = true;\n        \n        local count = 0;\n        \n        for k,v in pairs(aura_env.db.History) do\n            count = count + 1; \n        end\n        \n        s.name = \"Instance History\";\n        \n        s.progressType = \"static\";\n        \n        s.additionalProgress = {};\n        local now = time();\n        \n        local czk = aura_env.histZoneKey();\n        \n        local ordered = {};\n        \n        local dayCount = 0;\n        for k,v in pairs(aura_env.db.HistoryDay) do\n            if not (now > v.last + 86400 or v.last > now + 86400) then\n                dayCount = dayCount + 1;\n            end\n        end\n        \n        s.show = count >= aura_env.config.displayMin or dayCount >= aura_env.config.displayMin;\n        \n        if count > 0 then\n            s.value = 3600;\n            s.total = 3600;\n            local start = now-3600;\n            \n            for k,v in pairs(aura_env.db.History) do\n                if k == czk then\n                    v.last = now; \n                end\n                table.insert(ordered, {k, v.create});\n            end\n            \n            table.sort(ordered, function(a,b) return a[2]<b[2] end);\n            \n            for idx,t in pairs(ordered) do\n                local k = t[1];\n                local v = aura_env.db.History[k];\n                \n                if v.last >= start then\n                    \n                    local o = {};\n                    --o.max = math.min(3600, v.create - start);\n                    --o.min = math.max(0, math.min(v.last - start, o.max-25));\n                    \n                    o.max = math.max(0, math.min(3600, v.last - start));\n                    \n                    local prev = #s.additionalProgress > 0 and s.additionalProgress[#s.additionalProgress].max or 0;\n                    \n                    o.min = math.max(0, math.min(3600, math.min(math.max(prev+25, v.create - start), o.max-25)));\n                    \n                    --print(o.max, o.min)\n                    table.insert(s.additionalProgress, o);\n                end\n            end\n        elseif dayCount > 0 then\n            s.value = 86400;\n            s.total = 86400;\n            local start = now-86400;\n            \n            for k,v in pairs(aura_env.db.HistoryDay) do\n                if k == czk then\n                    v.last = now; \n                end\n                table.insert(ordered, {k, v.create});\n            end\n            \n            table.sort(ordered, function(a,b) return a[2]<b[2] end);\n            \n            for idx,t in pairs(ordered) do\n                local k = t[1];\n                local v = aura_env.db.HistoryDay[k];\n                \n                if v.last >= start then\n                    \n                    local o = {};\n                    --o.max = math.min(86400, v.create - start);\n                    --o.min = math.max(0, math.min(v.last - start, o.max-25));\n                    \n                    o.max = math.max(0, math.min(86400, v.last - start));\n                    \n                    local prev = #s.additionalProgress > 0 and s.additionalProgress[#s.additionalProgress].max or 0;\n                    \n                    o.min = math.max(0, math.min(86400, math.min(math.max(prev+25, v.create - start), o.max-25)));\n                    \n                    --print(o.max, o.min)\n                    table.insert(s.additionalProgress, o);\n                end\n            end\n        end\n        \n        \n        --DevTools_Dump(s.additionalProgress)\n        \n        as[1] = s;\n        \n        aura_env.lastDisplayUpdate = GetTime();\n        return true;\n    else\n        return false;\n    end\nend",
+						["spellIds"] = {
+						},
 						["customVariables"] = "\n\n",
 						["custom_hide"] = "timed",
 					},
@@ -2613,8 +2613,8 @@ WeakAurasSaved = {
 						["event"] = "Health",
 						["subeventPrefix"] = "SPELL",
 						["custom_hide"] = "timed",
-						["custom"] = "function(event, ...)\n    if aura_env[event] then\n        aura_env[event](...) \n    end\nend",
 						["events"] = "CHAT_MSG_SYSTEM,INSTANCE_BOOT_START, INSTANCE_BOOT_STOP, GROUP_ROSTER_UPDATE, PLAYER_ENTERING_WORLD, ZONE_CHANGED_NEW_AREA, RAID_INSTANCE_WELCOME, PLAYER_LEAVING_WORLD, PLAYER_CAMPING, CHAT_MSG_ADDON, SEND_INSTANCE_RESET_REQUEST",
+						["custom"] = "function(event, ...)\n    if aura_env[event] then\n        aura_env[event](...) \n    end\nend",
 						["subeventSuffix"] = "_CAST_START",
 						["unit"] = "player",
 						["spellIds"] = {
@@ -2775,12 +2775,12 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["semver"] = "1.0.0",
-			["id"] = "Instance History",
 			["sparkHidden"] = "NEVER",
+			["id"] = "Instance History",
 			["zoom"] = 0,
 			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
 			["width"] = 300,
+			["anchorFrameType"] = "SCREEN",
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
@@ -2954,9 +2954,10 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["parent"] = "Total AoE",
+			["cooldownEdge"] = false,
 			["fontSize"] = 16,
 			["alpha"] = 1,
+			["icon"] = true,
 			["animation"] = {
 				["start"] = {
 					["colorR"] = 1,
@@ -3012,7 +3013,214 @@ WeakAurasSaved = {
 					["colorB"] = 1,
 				},
 			},
+			["xOffset"] = 0,
+			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["op"] = ">=",
+						["value"] = "3",
+						["variable"] = "count",
+					},
+					["changes"] = {
+						{
+							["value"] = {
+								1, -- [1]
+								0.7921568627451, -- [2]
+								0, -- [3]
+								1, -- [4]
+							},
+							["property"] = "sub.1.text_color",
+						}, -- [1]
+					},
+				}, -- [1]
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["op"] = ">=",
+						["value"] = "5",
+						["variable"] = "count",
+					},
+					["changes"] = {
+						{
+							["value"] = {
+								1, -- [1]
+								0.42745098039216, -- [2]
+								0, -- [3]
+								1, -- [4]
+							},
+							["property"] = "sub.1.text_color",
+						}, -- [1]
+						{
+							["value"] = 20,
+							["property"] = "sub.2.text_fontSize",
+						}, -- [2]
+					},
+				}, -- [2]
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["op"] = ">=",
+						["value"] = "10",
+						["variable"] = "count",
+					},
+					["changes"] = {
+						{
+							["value"] = {
+								1, -- [1]
+								0.050980392156863, -- [2]
+								0, -- [3]
+								1, -- [4]
+							},
+							["property"] = "sub.1.text_color",
+						}, -- [1]
+						{
+							["value"] = 24,
+							["property"] = "sub.2.text_fontSize",
+						}, -- [2]
+					},
+				}, -- [3]
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["op"] = "==",
+						["value"] = "64",
+						["variable"] = "spellSchool",
+					},
+					["changes"] = {
+						{
+							["value"] = {
+								1, -- [1]
+								0.51764705882353, -- [2]
+								0.71372549019608, -- [3]
+								1, -- [4]
+							},
+							["property"] = "sub.2.text_color",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["op"] = "==",
+						["value"] = "16",
+						["variable"] = "spellSchool",
+					},
+					["changes"] = {
+						{
+							["value"] = {
+								0.36862745098039, -- [1]
+								0.8078431372549, -- [2]
+								1, -- [3]
+								1, -- [4]
+							},
+							["property"] = "sub.2.text_color",
+						}, -- [1]
+					},
+				}, -- [5]
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["op"] = "==",
+						["value"] = "4",
+						["variable"] = "spellSchool",
+					},
+					["changes"] = {
+						{
+							["value"] = {
+								1, -- [1]
+								0.44313725490196, -- [2]
+								0.14509803921569, -- [3]
+								1, -- [4]
+							},
+							["property"] = "sub.2.text_color",
+						}, -- [1]
+					},
+				}, -- [6]
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["op"] = "==",
+						["value"] = "8",
+						["variable"] = "spellSchool",
+					},
+					["changes"] = {
+						{
+							["value"] = {
+								0.4078431372549, -- [1]
+								0.78823529411765, -- [2]
+								0.36862745098039, -- [3]
+								1, -- [4]
+							},
+							["property"] = "sub.2.text_color",
+						}, -- [1]
+					},
+				}, -- [7]
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["op"] = "==",
+						["value"] = "32",
+						["variable"] = "spellSchool",
+					},
+					["changes"] = {
+						{
+							["value"] = {
+								0.69803921568628, -- [1]
+								0.40392156862745, -- [2]
+								1, -- [3]
+								1, -- [4]
+							},
+							["property"] = "sub.2.text_color",
+						}, -- [1]
+					},
+				}, -- [8]
+			},
+			["displayIcon"] = 132996,
+			["regionType"] = "icon",
+			["parent"] = "Total AoE",
+			["config"] = {
+				["Cl"] = true,
+				["SHW"] = true,
+				["DD"] = true,
+				["RoF"] = true,
+				["AE"] = true,
+				["GSC"] = true,
+				["HN"] = true,
+				["CL"] = true,
+				["RLB"] = true,
+				["dmgWindow"] = 0.2,
+				["Vl"] = true,
+				["TG"] = true,
+				["Ww"] = true,
+				["BW"] = true,
+				["Hf"] = true,
+				["OoI"] = true,
+				["Hc"] = true,
+				["FN"] = true,
+				["CoC"] = true,
+				["msgTime"] = 3,
+				["FsDoT"] = false,
+				["Fs"] = true,
+				["Bz"] = true,
+			},
 			["preferToUpdate"] = false,
+			["anchorFrameType"] = "SCREEN",
+			["cooldownTextDisabled"] = false,
+			["justify"] = "CENTER",
+			["zoom"] = 0.33,
+			["semver"] = "1.0.2",
+			["tocversion"] = 11305,
+			["id"] = "Total AoE Icon",
+			["auto"] = true,
+			["frameStrata"] = 1,
+			["width"] = 28,
+			["automaticWidth"] = "Auto",
+			["uid"] = "Fyj2Qe2APdw",
+			["inverse"] = false,
+			["selfPoint"] = "BOTTOM",
+			["fixedWidth"] = 200,
+			["cooldown"] = false,
 			["authorOptions"] = {
 				{
 					["text"] = "\n\n         |cFFFFCD00Total AoE |cFF505050by Oron\n",
@@ -3267,214 +3475,6 @@ WeakAurasSaved = {
 					["width"] = 2,
 				}, -- [31]
 			},
-			["displayIcon"] = 132996,
-			["cooldownEdge"] = false,
-			["regionType"] = "icon",
-			["conditions"] = {
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["op"] = ">=",
-						["value"] = "3",
-						["variable"] = "count",
-					},
-					["changes"] = {
-						{
-							["value"] = {
-								1, -- [1]
-								0.7921568627451, -- [2]
-								0, -- [3]
-								1, -- [4]
-							},
-							["property"] = "sub.1.text_color",
-						}, -- [1]
-					},
-				}, -- [1]
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["op"] = ">=",
-						["value"] = "5",
-						["variable"] = "count",
-					},
-					["changes"] = {
-						{
-							["value"] = {
-								1, -- [1]
-								0.42745098039216, -- [2]
-								0, -- [3]
-								1, -- [4]
-							},
-							["property"] = "sub.1.text_color",
-						}, -- [1]
-						{
-							["value"] = 20,
-							["property"] = "sub.2.text_fontSize",
-						}, -- [2]
-					},
-				}, -- [2]
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["op"] = ">=",
-						["value"] = "10",
-						["variable"] = "count",
-					},
-					["changes"] = {
-						{
-							["value"] = {
-								1, -- [1]
-								0.050980392156863, -- [2]
-								0, -- [3]
-								1, -- [4]
-							},
-							["property"] = "sub.1.text_color",
-						}, -- [1]
-						{
-							["value"] = 24,
-							["property"] = "sub.2.text_fontSize",
-						}, -- [2]
-					},
-				}, -- [3]
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["op"] = "==",
-						["value"] = "64",
-						["variable"] = "spellSchool",
-					},
-					["changes"] = {
-						{
-							["value"] = {
-								1, -- [1]
-								0.51764705882353, -- [2]
-								0.71372549019608, -- [3]
-								1, -- [4]
-							},
-							["property"] = "sub.2.text_color",
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["op"] = "==",
-						["value"] = "16",
-						["variable"] = "spellSchool",
-					},
-					["changes"] = {
-						{
-							["value"] = {
-								0.36862745098039, -- [1]
-								0.8078431372549, -- [2]
-								1, -- [3]
-								1, -- [4]
-							},
-							["property"] = "sub.2.text_color",
-						}, -- [1]
-					},
-				}, -- [5]
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["op"] = "==",
-						["value"] = "4",
-						["variable"] = "spellSchool",
-					},
-					["changes"] = {
-						{
-							["value"] = {
-								1, -- [1]
-								0.44313725490196, -- [2]
-								0.14509803921569, -- [3]
-								1, -- [4]
-							},
-							["property"] = "sub.2.text_color",
-						}, -- [1]
-					},
-				}, -- [6]
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["op"] = "==",
-						["value"] = "8",
-						["variable"] = "spellSchool",
-					},
-					["changes"] = {
-						{
-							["value"] = {
-								0.4078431372549, -- [1]
-								0.78823529411765, -- [2]
-								0.36862745098039, -- [3]
-								1, -- [4]
-							},
-							["property"] = "sub.2.text_color",
-						}, -- [1]
-					},
-				}, -- [7]
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["op"] = "==",
-						["value"] = "32",
-						["variable"] = "spellSchool",
-					},
-					["changes"] = {
-						{
-							["value"] = {
-								0.69803921568628, -- [1]
-								0.40392156862745, -- [2]
-								1, -- [3]
-								1, -- [4]
-							},
-							["property"] = "sub.2.text_color",
-						}, -- [1]
-					},
-				}, -- [8]
-			},
-			["config"] = {
-				["Cl"] = true,
-				["SHW"] = true,
-				["DD"] = true,
-				["RoF"] = true,
-				["AE"] = true,
-				["GSC"] = true,
-				["HN"] = true,
-				["CL"] = true,
-				["RLB"] = true,
-				["dmgWindow"] = 0.2,
-				["Vl"] = true,
-				["TG"] = true,
-				["Ww"] = true,
-				["BW"] = true,
-				["Hf"] = true,
-				["OoI"] = true,
-				["Hc"] = true,
-				["FN"] = true,
-				["CoC"] = true,
-				["msgTime"] = 3,
-				["FsDoT"] = false,
-				["Fs"] = true,
-				["Bz"] = true,
-			},
-			["icon"] = true,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = false,
-			["justify"] = "CENTER",
-			["zoom"] = 0.33,
-			["auto"] = true,
-			["tocversion"] = 11305,
-			["id"] = "Total AoE Icon",
-			["semver"] = "1.0.2",
-			["frameStrata"] = 1,
-			["width"] = 28,
-			["automaticWidth"] = "Auto",
-			["uid"] = "Fyj2Qe2APdw",
-			["inverse"] = false,
-			["selfPoint"] = "BOTTOM",
-			["fixedWidth"] = 200,
-			["cooldown"] = false,
-			["xOffset"] = 0,
 		},
 		["Farming Tracker Spell"] = {
 			["controlledChildren"] = {
@@ -3581,13 +3581,13 @@ WeakAurasSaved = {
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["uid"] = "LsC2(NCqen4",
-			["xOffset"] = -406.667065992944,
 			["config"] = {
 			},
+			["xOffset"] = -406.667065992944,
 			["conditions"] = {
 			},
-			["selfPoint"] = "BOTTOMLEFT",
 			["borderInset"] = 1,
+			["selfPoint"] = "BOTTOMLEFT",
 		},
 		["Inform party of reset (people still inside) 2"] = {
 			["outline"] = "OUTLINE",
@@ -3696,7 +3696,7 @@ WeakAurasSaved = {
 			},
 			["authorOptions"] = {
 			},
-			["semver"] = "1.0.0",
+			["justify"] = "LEFT",
 			["tocversion"] = 11304,
 			["id"] = "Inform party of reset (people still inside) 2",
 			["config"] = {
@@ -3705,7 +3705,7 @@ WeakAurasSaved = {
 			["anchorFrameType"] = "SCREEN",
 			["shadowYOffset"] = -1,
 			["uid"] = "Gy2R30EFpRj",
-			["justify"] = "LEFT",
+			["semver"] = "1.0.0",
 			["automaticWidth"] = "Auto",
 			["shadowColor"] = {
 				0, -- [1]
@@ -3847,18 +3847,18 @@ WeakAurasSaved = {
 			},
 			["semver"] = "1.0.0",
 			["uid"] = "DpMMi2Vw6ZA",
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0,
 			["auto"] = true,
 			["tocversion"] = 11304,
 			["id"] = "COC",
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
 			["width"] = 64,
 			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["config"] = {
 			},
 			["inverse"] = false,
-			["zoom"] = 0,
+			["cooldownTextDisabled"] = false,
 			["conditions"] = {
 			},
 			["cooldown"] = true,
@@ -4004,18 +4004,18 @@ WeakAurasSaved = {
 			},
 			["auto"] = true,
 			["uid"] = "F6xaWtTgJSy",
-			["zoom"] = 0,
+			["cooldownTextDisabled"] = false,
 			["semver"] = "1.0.0",
 			["tocversion"] = 11304,
 			["id"] = "Blink",
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
 			["width"] = 64,
 			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["config"] = {
 			},
 			["inverse"] = false,
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0,
 			["conditions"] = {
 			},
 			["cooldown"] = true,
@@ -4090,23 +4090,41 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["selfPoint"] = "LEFT",
+			["limit"] = 5,
 			["backdropColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["anchorPoint"] = "CENTER",
+			["rotation"] = 0,
 			["animate"] = true,
-			["grow"] = "VERTICAL",
+			["xOffset"] = 350,
 			["scale"] = 1,
-			["yOffset"] = 0,
+			["space"] = 10,
 			["border"] = false,
 			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["sort"] = "descending",
+			["anchorPoint"] = "CENTER",
+			["grow"] = "VERTICAL",
+			["constantFactor"] = "RADIUS",
+			["borderInset"] = 1,
+			["borderOffset"] = 4,
+			["semver"] = "1.0.2",
+			["tocversion"] = 11305,
+			["id"] = "Total AoE",
+			["gridWidth"] = 2,
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["internalVersion"] = 33,
+			["uid"] = "rmvzOw7o2IH",
+			["config"] = {
+			},
+			["yOffset"] = 0,
+			["conditions"] = {
+			},
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -4127,25 +4145,7 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["limit"] = 5,
-			["constantFactor"] = "RADIUS",
-			["borderInset"] = 1,
-			["borderOffset"] = 4,
-			["semver"] = "1.0.2",
-			["tocversion"] = 11305,
-			["id"] = "Total AoE",
-			["frameStrata"] = 1,
-			["gridWidth"] = 2,
-			["anchorFrameType"] = "SCREEN",
-			["internalVersion"] = 33,
-			["config"] = {
-			},
-			["uid"] = "rmvzOw7o2IH",
-			["xOffset"] = 350,
-			["conditions"] = {
-			},
-			["rotation"] = 0,
-			["space"] = 10,
+			["selfPoint"] = "LEFT",
 		},
 		["Renew"] = {
 			["parent"] = "Farming Tracker Spell",
@@ -4249,7 +4249,7 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["zoom"] = 0,
+			["cooldownTextDisabled"] = false,
 			["regionType"] = "icon",
 			["color"] = {
 				1, -- [1]
@@ -4291,14 +4291,14 @@ WeakAurasSaved = {
 			["semver"] = "1.0.0",
 			["config"] = {
 			},
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0,
 			["auto"] = true,
 			["tocversion"] = 11304,
 			["id"] = "Renew",
-			["frameStrata"] = 1,
 			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
 			["width"] = 64,
+			["anchorFrameType"] = "SCREEN",
 			["uid"] = "QFEONHsX4uB",
 			["inverse"] = false,
 			["authorOptions"] = {
@@ -4445,17 +4445,17 @@ WeakAurasSaved = {
 			["semver"] = "1.0.0",
 			["config"] = {
 			},
-			["zoom"] = 0,
+			["cooldownTextDisabled"] = false,
 			["auto"] = true,
 			["tocversion"] = 11304,
 			["id"] = "Frost Nova",
-			["frameStrata"] = 1,
 			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
 			["width"] = 64,
+			["anchorFrameType"] = "SCREEN",
 			["uid"] = "OnHejeaJcIq",
 			["inverse"] = false,
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0,
 			["conditions"] = {
 			},
 			["cooldown"] = true,
@@ -4584,12 +4584,12 @@ WeakAurasSaved = {
 			["anchorFrameFrame"] = "WeakAuras:KTTotal",
 			["regionType"] = "text",
 			["fixedWidth"] = 200,
-			["preferToUpdate"] = false,
 			["displayText_format_c1_format"] = "none",
+			["preferToUpdate"] = false,
 			["wordWrap"] = "WordWrap",
 			["parent"] = "Kill Tracker",
 			["shadowYOffset"] = -1,
-			["justify"] = "LEFT",
+			["semver"] = "1.0.2",
 			["tocversion"] = 11304,
 			["id"] = "KTList",
 			["config"] = {
@@ -4598,7 +4598,7 @@ WeakAurasSaved = {
 			["anchorFrameType"] = "SELECTFRAME",
 			["automaticWidth"] = "Auto",
 			["uid"] = ")rZjI53vyNI",
-			["semver"] = "1.0.2",
+			["justify"] = "LEFT",
 			["authorOptions"] = {
 			},
 			["shadowColor"] = {
@@ -4609,13 +4609,13 @@ WeakAurasSaved = {
 			},
 			["conditions"] = {
 			},
-			["selfPoint"] = "TOP",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["selfPoint"] = "TOP",
 		},
 		["KTTotal"] = {
 			["outline"] = "None",
@@ -4726,12 +4726,12 @@ WeakAurasSaved = {
 			["regionType"] = "text",
 			["conditions"] = {
 			},
-			["preferToUpdate"] = false,
 			["displayText_format_c1_format"] = "none",
+			["preferToUpdate"] = false,
 			["parent"] = "Kill Tracker",
 			["selfPoint"] = "TOP",
 			["shadowYOffset"] = -1,
-			["semver"] = "1.0.2",
+			["justify"] = "LEFT",
 			["tocversion"] = 11304,
 			["id"] = "KTTotal",
 			["uid"] = "qepIBP5I24B",
@@ -4759,7 +4759,7 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["justify"] = "LEFT",
+			["semver"] = "1.0.2",
 			["authorOptions"] = {
 			},
 			["shadowColor"] = {
@@ -4769,8 +4769,8 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["fixedWidth"] = 200,
-			["xOffset"] = 0,
 			["automaticWidth"] = "Auto",
+			["xOffset"] = 0,
 		},
 		["Mana regen with 5s rule"] = {
 			["sparkWidth"] = 15,
@@ -4977,14 +4977,14 @@ WeakAurasSaved = {
 			["sparkHeight"] = 30,
 			["texture"] = "ElvUI Blank",
 			["id"] = "Mana regen with 5s rule",
-			["sparkTexture"] = "GarrMission_EncounterBar-Spark",
+			["zoom"] = 0,
 			["spark"] = true,
 			["tocversion"] = 11302,
 			["sparkHidden"] = "NEVER",
 			["semver"] = "1.0.0",
 			["frameStrata"] = 5,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0,
+			["sparkTexture"] = "GarrMission_EncounterBar-Spark",
 			["uid"] = "dvZawXAyrxC",
 			["inverse"] = false,
 			["selfPoint"] = "CENTER",
@@ -5033,11 +5033,11 @@ WeakAurasSaved = {
 	},
 	["instanceHistoryDb"] = {
 		["sess"] = {
-			["histOldest"] = "n/a",
+			["delayUpdate"] = 1602314748,
 			["enterLoc"] = {
 				["instance"] = -1,
 			},
-			["delayUpdate"] = 1602270667.85372,
+			["histOldest"] = "n/a",
 			["histLiveCount"] = 0,
 		},
 		["History"] = {

@@ -301,3 +301,5 @@ ItemRackOptions: enabled
 aux-addon: disabled
 FiveSecondRule: disabled
 WeakAurasArchive: enabled
+Immersion: disabled
+Examiner: disabled

@@ -1,14 +1,14 @@
 
 KILLTRACK = {
+	["TOOLTIP"] = true,
+	["COUNT_GROUP"] = true,
+	["SHOW_EXP"] = false,
 	["BROKER"] = {
 		["MINIMAP"] = {
 			["hide"] = true,
 		},
 		["SHORT_TEXT"] = false,
 	},
-	["PRINTKILLS"] = false,
-	["SHOW_EXP"] = false,
-	["TOOLTIP"] = true,
 	["PRINTNEW"] = false,
 	["MOBS"] = {
 		[2956] = {
@@ -387,11 +387,11 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Glasshide Basilisk",
 		},
-		[5755] = {
+		[4480] = {
 			["AchievCount"] = 0,
-			["Kills"] = 4,
-			["Name"] = "Deviate Viper",
-			["Exp"] = 37,
+			["Kills"] = 2,
+			["Name"] = "Kenata Dabyrie",
+			["Exp"] = 88,
 		},
 		[1192] = {
 			["AchievCount"] = 0,
@@ -404,11 +404,11 @@ KILLTRACK = {
 			["Name"] = "Fardel Dabyrie",
 			["Exp"] = 197,
 		},
-		[4480] = {
+		[5755] = {
 			["AchievCount"] = 0,
-			["Kills"] = 2,
-			["Name"] = "Kenata Dabyrie",
-			["Exp"] = 88,
+			["Kills"] = 4,
+			["Name"] = "Deviate Viper",
+			["Exp"] = 37,
 		},
 		[4481] = {
 			["AchievCount"] = 0,
@@ -422,16 +422,16 @@ KILLTRACK = {
 			["Name"] = "Ferocious Yeti",
 			["Exp"] = 36,
 		},
+		[2760] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Burning Exile",
+		},
 		[5249] = {
 			["AchievCount"] = 0,
 			["Kills"] = 3,
 			["Name"] = "Woodpaw Mongrel",
 			["Exp"] = 257,
-		},
-		[2760] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Burning Exile",
 		},
 		[3653] = {
 			["AchievCount"] = 0,
@@ -439,11 +439,10 @@ KILLTRACK = {
 			["Name"] = "Kresh",
 			["Exp"] = 67,
 		},
-		[5761] = {
+		[5251] = {
 			["AchievCount"] = 0,
-			["Kills"] = 15,
-			["Name"] = "Deviate Shambler",
-			["Exp"] = 37,
+			["Kills"] = 0,
+			["Name"] = "Woodpaw Trapper",
 		},
 		[2566] = {
 			["AchievCount"] = 0,
@@ -563,11 +562,11 @@ KILLTRACK = {
 			["Name"] = "Plains Creeper",
 			["Exp"] = 394,
 		},
-		[8996] = {
+		[2265] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Voidwalker Minion",
-			["Exp"] = 202,
+			["Kills"] = 4,
+			["Name"] = "Hillsbrad Apprentice Blacksmith",
+			["Exp"] = 52,
 		},
 		[4343] = {
 			["AchievCount"] = 0,
@@ -590,11 +589,11 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Drywallow Crocolisk",
 		},
-		[2265] = {
+		[8996] = {
 			["AchievCount"] = 0,
-			["Kills"] = 4,
-			["Name"] = "Hillsbrad Apprentice Blacksmith",
-			["Exp"] = 52,
+			["Kills"] = 1,
+			["Name"] = "Voidwalker Minion",
+			["Exp"] = 202,
 		},
 		[858] = {
 			["AchievCount"] = 0,
@@ -714,10 +713,10 @@ KILLTRACK = {
 			["Name"] = "Farmer Getz",
 			["Exp"] = 131,
 		},
-		[3300] = {
+		[1909] = {
 			["AchievCount"] = 0,
-			["Kills"] = 2,
-			["Name"] = "Adder",
+			["Kills"] = 0,
+			["Name"] = "Vile Fin Lakestalker",
 		},
 		[2914] = {
 			["AchievCount"] = 0,
@@ -746,26 +745,26 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Southsea Freebooter",
 		},
-		[5055] = {
+		[2408] = {
 			["AchievCount"] = 0,
-			["Kills"] = 31,
-			["Name"] = "Deviate Lasher",
-			["Exp"] = 8,
+			["Kills"] = 0,
+			["Name"] = "Snapjaw",
 		},
 		[7858] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Southsea Swashbuckler",
 		},
-		[1909] = {
+		[3300] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Vile Fin Lakestalker",
+			["Kills"] = 2,
+			["Name"] = "Adder",
 		},
-		[2408] = {
+		[5055] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Snapjaw",
+			["Kills"] = 31,
+			["Name"] = "Deviate Lasher",
+			["Exp"] = 8,
 		},
 		[5056] = {
 			["AchievCount"] = 0,
@@ -1102,10 +1101,11 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Bloodfen Raptor",
 		},
-		[5251] = {
+		[5761] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Woodpaw Trapper",
+			["Kills"] = 15,
+			["Name"] = "Deviate Shambler",
+			["Exp"] = 37,
 		},
 		[5756] = {
 			["AchievCount"] = 0,
@@ -1194,5 +1194,5 @@ KILLTRACK = {
 		["POSITION"] = {
 		},
 	},
-	["COUNT_GROUP"] = true,
+	["PRINTKILLS"] = false,
 }

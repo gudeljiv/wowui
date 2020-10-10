@@ -300,3 +300,5 @@ Skillet-Classic: disabled
 aux-addon: disabled
 FiveSecondRule: disabled
 WeakAurasArchive: enabled
+Immersion: disabled
+Examiner: disabled

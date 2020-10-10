@@ -11,14 +11,21 @@ for i, v in pairs(
 		MacroFrame,
 		ItemTextFrame,
 		DressUpFrame,
-		TaxiFrame
+		TaxiFrame,
+		QuestFrame,
+		PetStableFrame,
+		GossipFrame
 	}
 ) do
 	v:SetScale(1.2)
+
+	v:ClearAllPoints()
+	v:SetPoint("CENTER", UIParent, "CENTER", 400, 300)
+	-- v.SetPoint = function()
+	-- end
 end
 
 local LoDMap = {
-	-- Maps Blizzard addon names to frame list
 	Blizzard_CraftUI = {"CraftFrame"},
 	Blizzard_MacroUI = {"MacroFrame"},
 	Blizzard_TalentUI = {"TalentFrame"},
@@ -26,20 +33,20 @@ local LoDMap = {
 	Blizzard_InspectUI = {"InspectFrame"}
 }
 
-local EventFrame = CreateFrame("Frame") --    Event Listener Frame
+local EventFrame = CreateFrame("Frame")
 EventFrame:RegisterEvent("ADDON_LOADED")
 EventFrame:SetScript(
 	"OnEvent",
-	function(self, event, ...) --   OnEvent Script
+	function(self, event, ...)
 		if event == "ADDON_LOADED" then
 			local framelist = LoDMap[(...)]
-			-- Loads list from map using addon name
-			if framelist then -- Check if one of the LoD addons in our list
+			if framelist then
 				for _, name in ipairs(framelist) do
-					local frame = _G[name] -- Get our frame from the global table
-
-					-- Do stuff
-					frame:SetScale(1.2) --    Set scale of the frame
+					_G[name]:SetScale(1.2)
+					_G[name]:ClearAllPoints()
+					_G[name]:SetPoint("CENTER", UIParent, "CENTER", 400, 300)
+					-- _G[name].SetPoint = function()
+					-- end
 				end
 			end
 		end

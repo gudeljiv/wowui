@@ -4,18 +4,22 @@ VER 3 0000000000000006 " " "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:8077
-/castsequence [combat] reset=combat item:6149,item:3827
+/use [nocombat]item:1708
+/castsequence [combat] reset=combat 
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:3927
-/castsequence [combat] reset=combat item:1710
+/use [nocombat]item:3771
+/castsequence [combat] reset=combat item:1710,item:929
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 #showtooltip item:12184
 /cast feed pet
 /use item:12184
+END
+VER 3 000000000000000B "TEST" "132097"
+/run CharacterFrame:ClearAllPoints()
+/run CharacterFrame:SetPoint("CENTER", UIParent, "CENTER", 400, 300)
 END
 VER 3 000000000000000A "TSMMacro" "INV_Misc_Flower_01"
 /click TSMAuctioningBtn

@@ -35,7 +35,7 @@ KILLTRACK_CHAR = {
 		},
 		[2563] = {
 			["Name"] = "Plains Creeper",
-			["Kills"] = 21,
+			["Kills"] = 22,
 		},
 	},
 }

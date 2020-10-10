@@ -299,3 +299,5 @@ Backpack_Classic: disabled
 Skillet-Classic: disabled
 aux-addon: disabled
 FiveSecondRule: disabled
+Immersion: disabled
+Examiner: disabled
