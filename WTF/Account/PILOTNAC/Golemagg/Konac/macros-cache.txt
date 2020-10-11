@@ -5,7 +5,6 @@ END
 VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast Shadow Word: Pain
-/w augustin !f
 END
 VER 3 0000000001000001 "AR" "INV_MISC_QUESTIONMARK"
 #showtooltip Renew

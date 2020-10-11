@@ -8,6 +8,7 @@ TomTomDB = {
 		["Mxym - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Mxzq - Golemagg"] = "Default",
+		["Testxv - Golemagg"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
 		["Koloman - Golemagg"] = "Default",
@@ -17,8 +18,8 @@ TomTomDB = {
 		["Judawise - Golemagg"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",
-		["Greenwise - Golemagg"] = "Default",
 		["Mxys - Golemagg"] = "Default",
+		["Greenwise - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -67,6 +68,7 @@ TomTomWaypointsM = {
 		["Mxym - Golemagg"] = "Mxym - Golemagg",
 		["Vermins - Stonespine"] = "Vermins - Stonespine",
 		["Mxzq - Golemagg"] = "Mxzq - Golemagg",
+		["Testxv - Golemagg"] = "Testxv - Golemagg",
 		["Augustin - Golemagg"] = "Augustin - Golemagg",
 		["Grgur - Golemagg"] = "Grgur - Golemagg",
 		["Koloman - Golemagg"] = "Koloman - Golemagg",
@@ -76,8 +78,8 @@ TomTomWaypointsM = {
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
 		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
-		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
 		["Mxys - Golemagg"] = "Mxys - Golemagg",
+		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
 	},
 	["profiles"] = {
 		["Dotwise - Golemagg"] = {
@@ -93,6 +95,8 @@ TomTomWaypointsM = {
 		["Vermins - Stonespine"] = {
 		},
 		["Mxzq - Golemagg"] = {
+		},
+		["Testxv - Golemagg"] = {
 		},
 		["Augustin - Golemagg"] = {
 		},
@@ -112,9 +116,9 @@ TomTomWaypointsM = {
 		},
 		["Vermin - Golemagg"] = {
 		},
-		["Greenwise - Golemagg"] = {
-		},
 		["Mxys - Golemagg"] = {
+		},
+		["Greenwise - Golemagg"] = {
 		},
 	},
 }

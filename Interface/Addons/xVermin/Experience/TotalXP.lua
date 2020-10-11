@@ -68,7 +68,7 @@ local function CalculateTotal(event, isInitialLogin, isReloadingUi)
 		if time() - combatTimer > 3 then
 			pulltotal = 0
 			combatTimer = time()
-			ChatFrame6:AddMessage("TX: " .. event .. ", RESET: " .. time() - combatTimer .. "s")
+		-- ChatFrame6:AddMessage("TX: " .. event .. ", RESET: " .. time() - combatTimer .. "s")
 		end
 	end
 	if event == "PLAYER_ENTERING_WORLD" and (isInitialLogin or isReloadingUi) then
@@ -106,7 +106,7 @@ tx:SetScript(
 		if UnitLevel("player") == MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] then
 			tx:Hide()
 		else
-			ChatFrame6:AddMessage("TX: " .. event .. ", " .. time() - combatTimer .. "s")
+			-- ChatFrame6:AddMessage("TX: " .. event .. ", " .. time() - combatTimer .. "s")
 			if event ~= "PLAYER_REGEN_ENABLED" then
 				tx:Show()
 				CalculateTotal(event, isInitialLogin, isReloadingUi)

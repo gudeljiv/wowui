@@ -25,6 +25,7 @@ ChocolateBarDB = {
 		["Mxys - Golemagg"] = "Default",
 		["Spija - Genesis"] = "Default",
 		["Vermins - Stonespine"] = "Default",
+		["Testxv - Golemagg"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
 		["Dotwise - Golemagg"] = "Default",
 		["Korupcija - Genesis"] = "Default",
@@ -359,11 +360,11 @@ ChocolateBarDB = {
 					["customLabel"] = "KT",
 				},
 			},
-			["desaturated"] = false,
-			["fixedStrata"] = true,
-			["fontName"] = "Friz Quadrata TT",
-			["moveFrames"] = false,
 			["gap"] = 0,
+			["fixedStrata"] = true,
+			["desaturated"] = false,
+			["moveFrames"] = false,
+			["fontName"] = "Friz Quadrata TT",
 			["textOffset"] = 2,
 			["height"] = 20,
 			["forceColor"] = false,
@@ -384,6 +385,9 @@ CB_PlayedTime = {
 	["Korupcija-"] = {
 		["total"] = 21359,
 	},
+	["Testxv-"] = {
+		["total"] = 70,
+	},
 	["Elohssa-"] = {
 		["total"] = 3552,
 	},
@@ -394,7 +398,7 @@ CB_PlayedTime = {
 		["total"] = 134313,
 	},
 	["Antun-"] = {
-		["total"] = 442,
+		["total"] = 794,
 	},
 	["Vermin-"] = {
 		["total"] = 199978,
@@ -442,10 +446,10 @@ CB_PlayedTime = {
 		["total"] = 853,
 	},
 	["Grgur-"] = {
-		["total"] = 562,
+		["total"] = 1248,
 	},
 	["Augustin-"] = {
-		["total"] = 253905,
+		["total"] = 257390,
 	},
 	["Pitchwise-"] = {
 		["total"] = 390,

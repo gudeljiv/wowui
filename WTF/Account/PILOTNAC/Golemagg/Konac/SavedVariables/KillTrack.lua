@@ -9,6 +9,10 @@ KILLTRACK_CHAR = {
 			["Name"] = "Clerk Horrace Whitesteed",
 			["Kills"] = 1,
 		},
+		[5646] = {
+			["Name"] = "Sandfury Axe Thrower",
+			["Kills"] = 0,
+		},
 		[2449] = {
 			["Name"] = "Citizen Wilkes",
 			["Kills"] = 2,
@@ -385,9 +389,21 @@ KILLTRACK_CHAR = {
 			["Name"] = "Enraged Stanley",
 			["Kills"] = 1,
 		},
+		[3126] = {
+			["Name"] = "Armored Scorpid",
+			["Kills"] = 0,
+		},
+		[7856] = {
+			["Name"] = "Southsea Freebooter",
+			["Kills"] = 0,
+		},
 		[2403] = {
 			["Name"] = "Farmer Getz",
 			["Kills"] = 1,
+		},
+		[7858] = {
+			["Name"] = "Southsea Swashbuckler",
+			["Kills"] = 0,
 		},
 		[2404] = {
 			["Name"] = "Blacksmith Verringtan",
@@ -409,6 +425,10 @@ KILLTRACK_CHAR = {
 			["Name"] = "Mountain Lion",
 			["Kills"] = 4,
 		},
+		[7857] = {
+			["Name"] = "Southsea Dock Worker",
+			["Kills"] = 1,
+		},
 		[5053] = {
 			["Name"] = "Deviate Crocolisk",
 			["Kills"] = 5,
@@ -427,6 +447,18 @@ KILLTRACK_CHAR = {
 		},
 		[5057] = {
 			["Name"] = "Theramore Deserter",
+			["Kills"] = 0,
+		},
+		[5650] = {
+			["Name"] = "Sandfury Witch Doctor",
+			["Kills"] = 0,
+		},
+		[5645] = {
+			["Name"] = "Sandfury Hideskinner",
+			["Kills"] = 0,
+		},
+		[3426] = {
+			["Name"] = "Zhevra Charger",
 			["Kills"] = 0,
 		},
 		[3235] = {
@@ -461,20 +493,20 @@ KILLTRACK_CHAR = {
 			["Name"] = "Hillsbrad Foreman",
 			["Kills"] = 15,
 		},
-		[750] = {
-			["Name"] = "Marsh Inkspewer",
-			["Kills"] = 0,
-		},
 		[4360] = {
 			["Name"] = "Mirefin Warrior",
 			["Kills"] = 1,
 		},
-		[10038] = {
-			["Name"] = "Night Watch Guard",
+		[750] = {
+			["Name"] = "Marsh Inkspewer",
 			["Kills"] = 0,
 		},
 		[2442] = {
 			["Name"] = "Cow",
+			["Kills"] = 0,
+		},
+		[10038] = {
+			["Name"] = "Night Watch Guard",
 			["Kills"] = 0,
 		},
 		[521] = {
@@ -497,8 +529,8 @@ KILLTRACK_CHAR = {
 			["Name"] = "Black Rat",
 			["Kills"] = 0,
 		},
-		[3126] = {
-			["Name"] = "Armored Scorpid",
+		[7883] = {
+			["Name"] = "Andre Firebeard",
 			["Kills"] = 0,
 		},
 		[2612] = {
@@ -509,20 +541,20 @@ KILLTRACK_CHAR = {
 			["Name"] = "Dire Mottled Boar",
 			["Kills"] = 0,
 		},
-		[2356] = {
-			["Name"] = "Elder Gray Bear",
-			["Kills"] = 13,
-		},
 		[2565] = {
 			["Name"] = "Giant Plains Creeper",
 			["Kills"] = 0,
+		},
+		[2356] = {
+			["Name"] = "Elder Gray Bear",
+			["Kills"] = 13,
 		},
 		[2589] = {
 			["Name"] = "Syndicate Mercenary",
 			["Kills"] = 1,
 		},
-		[1789] = {
-			["Name"] = "Skeletal Acolyte",
+		[769] = {
+			["Name"] = "Deathstrike Tarantula",
 			["Kills"] = 0,
 		},
 		[2248] = {
@@ -541,28 +573,28 @@ KILLTRACK_CHAR = {
 			["Name"] = "Prairie Dog",
 			["Kills"] = 0,
 		},
-		[13816] = {
-			["Name"] = "Prospector Stonehewer",
-			["Kills"] = 0,
-		},
 		[5618] = {
 			["Name"] = "Wastewander Bandit",
-			["Kills"] = 0,
-		},
-		[14230] = {
-			["Name"] = "Burgle Eye",
 			["Kills"] = 0,
 		},
 		[5617] = {
 			["Name"] = "Wastewander Shadow Mage",
 			["Kills"] = 0,
 		},
+		[14230] = {
+			["Name"] = "Burgle Eye",
+			["Kills"] = 0,
+		},
+		[4341] = {
+			["Name"] = "Drywallow Crocolisk",
+			["Kills"] = 0,
+		},
 		[2427] = {
 			["Name"] = "Jailor Eston",
 			["Kills"] = 2,
 		},
-		[4341] = {
-			["Name"] = "Drywallow Crocolisk",
+		[13816] = {
+			["Name"] = "Prospector Stonehewer",
 			["Kills"] = 0,
 		},
 		[2428] = {
@@ -573,13 +605,13 @@ KILLTRACK_CHAR = {
 			["Name"] = "Nightbane Worgen",
 			["Kills"] = 0,
 		},
-		[2345] = {
-			["Name"] = "Dun Garok Rifleman",
-			["Kills"] = 7,
-		},
 		[2305] = {
 			["Name"] = "Foreman Bonds",
 			["Kills"] = 22,
+		},
+		[2345] = {
+			["Name"] = "Dun Garok Rifleman",
+			["Kills"] = 7,
 		},
 		[2408] = {
 			["Name"] = "Snapjaw",
@@ -633,12 +665,12 @@ KILLTRACK_CHAR = {
 			["Name"] = "Marcel Dabyrie",
 			["Kills"] = 0,
 		},
-		[6020] = {
-			["Name"] = "Slimeshell Makrura",
+		[1789] = {
+			["Name"] = "Skeletal Acolyte",
 			["Kills"] = 0,
 		},
-		[769] = {
-			["Name"] = "Deathstrike Tarantula",
+		[6020] = {
+			["Name"] = "Slimeshell Makrura",
 			["Kills"] = 0,
 		},
 		[3840] = {

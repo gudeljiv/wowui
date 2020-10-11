@@ -44,11 +44,6 @@ ChocolateBarDB = {
 	["addonVersion"] = "@project-version@",
 	["profiles"] = {
 		["Default"] = {
-			["locked"] = false,
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -69,10 +64,21 @@ ChocolateBarDB = {
 					["width"] = 147,
 				},
 			},
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
 			},
+			["moveFrames"] = false,
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["b"] = 0,
+					["g"] = 0,
+					["r"] = 0,
+				},
+				["textureName"] = "None",
+			},
+			["fixedStrata"] = true,
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -346,23 +352,17 @@ ChocolateBarDB = {
 				},
 			},
 			["fontName"] = "Friz Quadrata TT",
-			["fixedStrata"] = true,
-			["gap"] = 0,
-			["moveFrames"] = false,
 			["desaturated"] = false,
+			["forceColor"] = false,
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+			},
+			["gap"] = 0,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["forceColor"] = false,
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["b"] = 0,
-					["g"] = 0,
-					["r"] = 0,
-				},
-				["textureName"] = "None",
-			},
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["locked"] = false,
 			["textColor"] = {
 				["a"] = 1,
 				["r"] = 1,
@@ -398,7 +398,7 @@ CB_PlayedTime = {
 		["total"] = 149513,
 	},
 	["Konac-"] = {
-		["total"] = 6036677,
+		["total"] = 6042596,
 	},
 	["Dotwise-"] = {
 		["total"] = 3924,
@@ -406,20 +406,20 @@ CB_PlayedTime = {
 	["Judawise-"] = {
 		["total"] = 437,
 	},
-	["Mxym-"] = {
-		["total"] = 4765,
-	},
-	["Dmitar-"] = {
-		["total"] = 55,
-	},
 	["Mohikanac-"] = {
 		["total"] = 167544,
+	},
+	["Junac-"] = {
+		["total"] = 2534,
+	},
+	["Mxym-"] = {
+		["total"] = 4765,
 	},
 	["Klhjakhsgdjh-"] = {
 		["total"] = 53,
 	},
-	["Verminz-"] = {
-		["total"] = 311368,
+	["Mxzq-"] = {
+		["total"] = 248345,
 	},
 	["Stranac-"] = {
 		["total"] = 73,
@@ -430,14 +430,14 @@ CB_PlayedTime = {
 	["Mxyzptlk-"] = {
 		["total"] = 8367,
 	},
-	["Kamenac-"] = {
-		["total"] = 1558123,
-	},
-	["Mxzq-"] = {
-		["total"] = 248345,
-	},
 	["Paydo-"] = {
 		["total"] = 18945,
+	},
+	["Verminz-"] = {
+		["total"] = 311368,
+	},
+	["Kamenac-"] = {
+		["total"] = 1558123,
 	},
 	["Kosturko-"] = {
 		["total"] = 1457,
@@ -445,8 +445,8 @@ CB_PlayedTime = {
 	["Ozrencic-"] = {
 		["total"] = 853,
 	},
-	["Junac-"] = {
-		["total"] = 2534,
+	["Dmitar-"] = {
+		["total"] = 55,
 	},
 	["Grgur-"] = {
 		["total"] = 2,

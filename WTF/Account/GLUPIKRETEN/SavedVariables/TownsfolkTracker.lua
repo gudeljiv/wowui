@@ -4,6 +4,7 @@ TownsfolkTrackerDB = {
 		["Mxzq - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
+		["Testxv - Golemagg"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
 		["Koloman - Golemagg"] = "Default",

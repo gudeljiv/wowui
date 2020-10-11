@@ -7,25 +7,33 @@ GMMONEY = {
 		},
 	},
 	["Golemagg"] = {
-		["Antun"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "SHAMAN",
-		},
 		["Mxzq"] = {
 			["GOLD"] = 75452,
 			["CLASS"] = "HUNTER",
-		},
-		["Augustin"] = {
-			["GOLD"] = 1143320,
-			["CLASS"] = "MAGE",
 		},
 		["Mxyz"] = {
 			["GOLD"] = 725115,
 			["CLASS"] = "PRIEST",
 		},
+		["Testxv"] = {
+			["GOLD"] = 0,
+			["CLASS"] = "HUNTER",
+		},
+		["Antun"] = {
+			["GOLD"] = 9,
+			["CLASS"] = "SHAMAN",
+		},
+		["Augustin"] = {
+			["GOLD"] = 1190938,
+			["CLASS"] = "MAGE",
+		},
 		["Dmitar"] = {
 			["GOLD"] = 0,
 			["CLASS"] = "PRIEST",
+		},
+		["Grgur"] = {
+			["GOLD"] = 50,
+			["CLASS"] = "WARLOCK",
 		},
 		["Jaroslav"] = {
 			["GOLD"] = 250730,

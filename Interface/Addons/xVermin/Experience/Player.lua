@@ -86,7 +86,7 @@ local function UpdateBar(event, isInitialLogin, isReloadingUi)
 	PlayerXP.XPbar:SetStatusBarColor(r, g, b)
 
 	if (select(3, GetRestState()) == 2) then
-		PlayerXP.XPbar.RestedNumber:SetText("R: " .. GetXPExhaustion())
+		PlayerXP.XPbar.RestedNumber:SetText("R: " .. xVermin:FormatNumber(GetXPExhaustion(), ","))
 	else
 		PlayerXP.XPbar.RestedNumber:Hide()
 		PlayerXP.XPbar.UntilLevel:SetText(xVermin:FormatNumber(MaxXP - CurrentXP, ","))

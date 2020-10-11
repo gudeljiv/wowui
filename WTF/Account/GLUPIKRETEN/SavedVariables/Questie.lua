@@ -35,10 +35,11 @@ QuestieConfig = {
 		["Kosturko - Golemagg"] = "Default",
 		["Mxys - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
-		["Mxym - Golemagg"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
+		["Mxym - Golemagg"] = "Default",
 		["Vermins - Dreadmist"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
+		["Testxv - Golemagg"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
 		["Koloman - Golemagg"] = "Default",
@@ -7247,6 +7248,120 @@ QuestieConfig = {
 				}, -- [2]
 			},
 		},
+		["Dotwise - Golemagg"] = {
+			["journey"] = {
+				{
+					["Party"] = {
+					},
+					["Timestamp"] = 1569532286,
+					["Quest"] = 363,
+					["Level"] = 1,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+				}, -- [1]
+				{
+					["Party"] = {
+					},
+					["Timestamp"] = 1569532319,
+					["Quest"] = 363,
+					["Level"] = 1,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
+				}, -- [2]
+				{
+					["Party"] = {
+					},
+					["Timestamp"] = 1569532320,
+					["Quest"] = 364,
+					["Level"] = 1,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+				}, -- [3]
+				{
+					["Party"] = {
+					},
+					["Timestamp"] = 1569532326,
+					["Quest"] = 1470,
+					["Level"] = 1,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+				}, -- [4]
+				{
+					["Party"] = {
+					},
+					["Timestamp"] = 1569532560,
+					["Event"] = "Level",
+					["NewLevel"] = 2,
+				}, -- [5]
+				{
+					["Party"] = {
+					},
+					["Level"] = 2,
+					["Quest"] = 1470,
+					["Timestamp"] = 1569590720,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
+				}, -- [6]
+				{
+					["Party"] = {
+					},
+					["Timestamp"] = 1569590757,
+					["Event"] = "Level",
+					["NewLevel"] = 3,
+				}, -- [7]
+				{
+					["Party"] = {
+					},
+					["Level"] = 2,
+					["Quest"] = 364,
+					["Timestamp"] = 1569590757,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
+				}, -- [8]
+				{
+					["Party"] = {
+					},
+					["Level"] = 3,
+					["Quest"] = 3099,
+					["Timestamp"] = 1569590760,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
+				}, -- [9]
+				{
+					["Party"] = {
+					},
+					["Level"] = 3,
+					["Quest"] = 3901,
+					["Timestamp"] = 1569590762,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
+				}, -- [10]
+				{
+					["Party"] = {
+					},
+					["Level"] = 3,
+					["Quest"] = 376,
+					["Timestamp"] = 1569590765,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
+				}, -- [11]
+				{
+					["Party"] = {
+					},
+					["Level"] = 3,
+					["Quest"] = 3099,
+					["Timestamp"] = 1569590768,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
+				}, -- [12]
+			},
+			["complete"] = {
+				[1470] = true,
+				[363] = true,
+				[364] = true,
+				[3099] = true,
+			},
+		},
 		["Mxym - Golemagg"] = {
 			["collapsedZones"] = {
 			},
@@ -7414,118 +7529,67 @@ QuestieConfig = {
 			["TrackedQuests"] = {
 			},
 		},
-		["Dotwise - Golemagg"] = {
+		["Vermins - Stonespine"] = {
+			["collapsedZones"] = {
+			},
+			["AutoUntrackedQuests"] = {
+			},
+			["migrationVersion"] = 1,
+			["complete"] = {
+				[3911] = true,
+				[4641] = true,
+			},
+			["TrackerHiddenQuests"] = {
+			},
+			["trackerSetpoint"] = "AUTO",
+			["collapsedQuests"] = {
+			},
+			["TrackerWidth"] = 0,
+			["TrackedQuests"] = {
+			},
 			["journey"] = {
 				{
-					["Party"] = {
-					},
-					["Timestamp"] = 1569532286,
-					["Quest"] = 363,
 					["Level"] = 1,
-					["Event"] = "Quest",
+					["Quest"] = 4641,
+					["Timestamp"] = 1567348022,
 					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [1]
 				{
-					["Party"] = {
-					},
-					["Timestamp"] = 1569532319,
-					["Quest"] = 363,
 					["Level"] = 1,
-					["Event"] = "Quest",
+					["Quest"] = 4641,
+					["Timestamp"] = 1567348033,
 					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [2]
 				{
-					["Party"] = {
-					},
-					["Timestamp"] = 1569532320,
-					["Quest"] = 364,
 					["Level"] = 1,
-					["Event"] = "Quest",
+					["Quest"] = 788,
+					["Timestamp"] = 1567348036,
 					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [3]
 				{
-					["Party"] = {
-					},
-					["Timestamp"] = 1569532326,
-					["Quest"] = 1470,
-					["Level"] = 1,
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
-				}, -- [4]
-				{
-					["Party"] = {
-					},
-					["Timestamp"] = 1569532560,
+					["Timestamp"] = 1567348789,
 					["Event"] = "Level",
 					["NewLevel"] = 2,
+				}, -- [4]
+				{
+					["Level"] = 2,
+					["Quest"] = 790,
+					["Timestamp"] = 1567349003,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [5]
 				{
-					["Party"] = {
-					},
 					["Level"] = 2,
-					["Quest"] = 1470,
-					["Timestamp"] = 1569590720,
-					["SubType"] = "Complete",
+					["Quest"] = 792,
+					["Timestamp"] = 1567350155,
+					["SubType"] = "Accept",
 					["Event"] = "Quest",
 				}, -- [6]
-				{
-					["Party"] = {
-					},
-					["Timestamp"] = 1569590757,
-					["Event"] = "Level",
-					["NewLevel"] = 3,
-				}, -- [7]
-				{
-					["Party"] = {
-					},
-					["Level"] = 2,
-					["Quest"] = 364,
-					["Timestamp"] = 1569590757,
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
-				}, -- [8]
-				{
-					["Party"] = {
-					},
-					["Level"] = 3,
-					["Quest"] = 3099,
-					["Timestamp"] = 1569590760,
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
-				}, -- [9]
-				{
-					["Party"] = {
-					},
-					["Level"] = 3,
-					["Quest"] = 3901,
-					["Timestamp"] = 1569590762,
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
-				}, -- [10]
-				{
-					["Party"] = {
-					},
-					["Level"] = 3,
-					["Quest"] = 376,
-					["Timestamp"] = 1569590765,
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
-				}, -- [11]
-				{
-					["Party"] = {
-					},
-					["Level"] = 3,
-					["Quest"] = 3099,
-					["Timestamp"] = 1569590768,
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
-				}, -- [12]
 			},
-			["complete"] = {
-				[1470] = true,
-				[363] = true,
-				[364] = true,
-				[3099] = true,
+			["TrackerHiddenObjectives"] = {
 			},
 		},
 		["Jaroslav - Golemagg"] = {
@@ -8360,7 +8424,7 @@ QuestieConfig = {
 				["persistent"] = true,
 				["minimap"] = true,
 			},
-			["collapsedQuests"] = {
+			["TrackerHiddenObjectives"] = {
 			},
 			["TrackerWidth"] = 0,
 			["journey"] = {
@@ -10505,20 +10569,19 @@ QuestieConfig = {
 				}, -- [297]
 			},
 			["migrationVersion"] = 1,
-			["TrackerHiddenObjectives"] = {
+			["collapsedQuests"] = {
 			},
 		},
 		["Grgur - Golemagg"] = {
-			["TrackerWidth"] = 0,
+			["collapsedZones"] = {
+			},
 			["AutoUntrackedQuests"] = {
 			},
 			["migrationVersion"] = 1,
 			["TrackerHiddenQuests"] = {
 			},
 			["trackerSetpoint"] = "AUTO",
-			["TrackerHiddenObjectives"] = {
-			},
-			["TrackedQuests"] = {
+			["collapsedQuests"] = {
 			},
 			["journey"] = {
 				{
@@ -10526,10 +10589,16 @@ QuestieConfig = {
 					["Event"] = "Level",
 					["NewLevel"] = 2,
 				}, -- [1]
+				{
+					["Timestamp"] = 1602403726,
+					["Event"] = "Level",
+					["NewLevel"] = 3,
+				}, -- [2]
 			},
-			["collapsedZones"] = {
+			["TrackerHiddenObjectives"] = {
 			},
-			["collapsedQuests"] = {
+			["TrackerWidth"] = 0,
+			["TrackedQuests"] = {
 			},
 		},
 		["Koloman - Golemagg"] = {
@@ -12457,17 +12526,14 @@ QuestieConfig = {
 			},
 		},
 		["Antun - Golemagg"] = {
-			["collapsedZones"] = {
-			},
+			["TrackerWidth"] = 0,
 			["AutoUntrackedQuests"] = {
 			},
 			["migrationVersion"] = 1,
 			["TrackerHiddenQuests"] = {
 			},
 			["trackerSetpoint"] = "AUTO",
-			["collapsedQuests"] = {
-			},
-			["TrackedQuests"] = {
+			["TrackerHiddenObjectives"] = {
 			},
 			["journey"] = {
 				{
@@ -12475,72 +12541,17 @@ QuestieConfig = {
 					["Event"] = "Level",
 					["NewLevel"] = 2,
 				}, -- [1]
+				{
+					["Timestamp"] = 1602404940,
+					["Event"] = "Level",
+					["NewLevel"] = 3,
+				}, -- [2]
 			},
-			["TrackerWidth"] = 0,
-			["TrackerHiddenObjectives"] = {
-			},
-		},
-		["Vermins - Stonespine"] = {
 			["collapsedZones"] = {
 			},
-			["AutoUntrackedQuests"] = {
-			},
-			["migrationVersion"] = 1,
-			["complete"] = {
-				[3911] = true,
-				[4641] = true,
-			},
-			["TrackerHiddenQuests"] = {
-			},
-			["trackerSetpoint"] = "AUTO",
 			["collapsedQuests"] = {
 			},
-			["TrackerWidth"] = 0,
 			["TrackedQuests"] = {
-			},
-			["journey"] = {
-				{
-					["Level"] = 1,
-					["Quest"] = 4641,
-					["Timestamp"] = 1567348022,
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
-				}, -- [1]
-				{
-					["Level"] = 1,
-					["Quest"] = 4641,
-					["Timestamp"] = 1567348033,
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
-				}, -- [2]
-				{
-					["Level"] = 1,
-					["Quest"] = 788,
-					["Timestamp"] = 1567348036,
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
-				}, -- [3]
-				{
-					["Timestamp"] = 1567348789,
-					["Event"] = "Level",
-					["NewLevel"] = 2,
-				}, -- [4]
-				{
-					["Level"] = 2,
-					["Quest"] = 790,
-					["Timestamp"] = 1567349003,
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
-				}, -- [5]
-				{
-					["Level"] = 2,
-					["Quest"] = 792,
-					["Timestamp"] = 1567350155,
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
-				}, -- [6]
-			},
-			["TrackerHiddenObjectives"] = {
 			},
 		},
 		["Mxyzptlk - Golemagg"] = {
@@ -12797,6 +12808,40 @@ QuestieConfig = {
 			["collapsedQuests"] = {
 			},
 			["TrackedQuests"] = {
+			},
+		},
+		["Testxv - Golemagg"] = {
+			["journey"] = {
+				{
+					["Timestamp"] = 1602405498,
+					["Event"] = "Level",
+					["NewLevel"] = 2,
+				}, -- [1]
+				{
+					["Timestamp"] = 1602406532,
+					["Event"] = "Level",
+					["NewLevel"] = 3,
+				}, -- [2]
+				{
+					["Timestamp"] = 1602407280,
+					["Event"] = "Level",
+					["NewLevel"] = 2,
+				}, -- [3]
+				{
+					["Timestamp"] = 1602407543,
+					["Event"] = "Level",
+					["NewLevel"] = 2,
+				}, -- [4]
+				{
+					["Timestamp"] = 1602407885,
+					["Event"] = "Level",
+					["NewLevel"] = 2,
+				}, -- [5]
+				{
+					["Timestamp"] = 1602408143,
+					["Event"] = "Level",
+					["NewLevel"] = 2,
+				}, -- [6]
 			},
 		},
 		["Kosturko - Golemagg"] = {

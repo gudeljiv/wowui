@@ -3,7 +3,11 @@ KILLTRACK_CHAR = {
 	["MOBS"] = {
 		[3098] = {
 			["Name"] = "Mottled Boar",
-			["Kills"] = 2,
+			["Kills"] = 8,
+		},
+		[3124] = {
+			["Name"] = "Scorpid Worker",
+			["Kills"] = 1,
 		},
 	},
 }

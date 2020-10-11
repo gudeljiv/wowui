@@ -814,23 +814,8 @@ MonkeyQuestConfig = {
 		["m_bAlwaysHeaders"] = false,
 		["m_bGrowUp"] = false,
 	},
-	["Golemagg|Mxzq"] = {
+	["Golemagg|Mxyzptlk"] = {
 		["m_aQuestList"] = {
-			["The Princess Trapped - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Real Threat - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Call to Arms - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Sigil of Strom - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Arathi Highlands - true"] = {
-				["m_bChecked"] = true,
-			},
 		},
 	},
 	["Global"] = {
@@ -886,6 +871,25 @@ MonkeyQuestConfig = {
 		["m_bHideTitleButtons"] = false,
 		["m_bGrowUp"] = false,
 	},
+	["Golemagg|Mxzq"] = {
+		["m_aQuestList"] = {
+			["The Princess Trapped - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Real Threat - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Call to Arms - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Sigil of Strom - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Arathi Highlands - true"] = {
+				["m_bChecked"] = true,
+			},
+		},
+	},
 	["Genesis|Malinac"] = {
 		["m_iFont"] = 0,
 		["m_strHeaderClosedColour"] = "|cFF9F9FFF",
@@ -936,10 +940,6 @@ MonkeyQuestConfig = {
 		["m_bHideTitle"] = false,
 		["m_bAlwaysHeaders"] = false,
 		["m_bGrowUp"] = false,
-	},
-	["Golemagg|Mxyzptlk"] = {
-		["m_aQuestList"] = {
-		},
 	},
 	["Golemagg|Dotwise"] = {
 		["m_aQuestList"] = {
@@ -1020,26 +1020,6 @@ MonkeyQuestConfig = {
 		["m_iFrameLeft"] = 1650.51281738281,
 		["m_bGrowUp"] = false,
 	},
-	["Stonespine|Vermins"] = {
-		["m_aQuestList"] = {
-			["Sarkoth - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Valley of Trials - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Vile Familiars - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Cutting Teeth - false"] = {
-				["m_bChecked"] = true,
-			},
-		},
-	},
-	["Golemagg|Dmitar"] = {
-		["m_aQuestList"] = {
-		},
-	},
 	["Golemagg|Greenwise"] = {
 		["m_aQuestList"] = {
 			["Miner's Fortune - false"] = {
@@ -1087,6 +1067,30 @@ MonkeyQuestConfig = {
 			["Tribes at War - false"] = {
 				["m_bChecked"] = true,
 			},
+		},
+	},
+	["Stonespine|Vermins"] = {
+		["m_aQuestList"] = {
+			["Sarkoth - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Valley of Trials - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Vile Familiars - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Cutting Teeth - false"] = {
+				["m_bChecked"] = true,
+			},
+		},
+	},
+	["Golemagg|Dmitar"] = {
+		["m_aQuestList"] = {
+		},
+	},
+	["Golemagg|Testxv"] = {
+		["m_aQuestList"] = {
 		},
 	},
 	["Golemagg|Pitchwise"] = {

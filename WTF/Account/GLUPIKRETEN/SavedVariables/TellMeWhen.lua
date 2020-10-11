@@ -7,10 +7,11 @@ TellMeWhenDB = {
 		["Verminz - Golemagg"] = "Warrior",
 		["Paydo - Dreadmist"] = "Warrior",
 		["Greenwise - Golemagg"] = "Warrior",
-		["Mxym - Golemagg"] = "Priest",
 		["Mxzq - Golemagg"] = "Hunter",
+		["Mxym - Golemagg"] = "Priest",
 		["Vermins - Stonespine"] = "Warrior",
 		["Vermin - Golemagg"] = "Warrior",
+		["Testxv - Golemagg"] = "Testxv - Golemagg",
 		["Augustin - Golemagg"] = "Mage",
 		["Grgur - Golemagg"] = "Grgur - Golemagg",
 		["Koloman - Golemagg"] = "Koloman - Golemagg",
@@ -12039,6 +12040,15 @@ TellMeWhenDB = {
 					},
 					["OnlyInCombat"] = true,
 				}, -- [3]
+			},
+		},
+		["Testxv - Golemagg"] = {
+			["Locked"] = true,
+			["Version"] = 86907,
+			["Groups"] = {
+				{
+					["GUID"] = "TMW:group:1VWiCxYSqwKw",
+				}, -- [1]
 			},
 		},
 		["Mage"] = {

@@ -7,19 +7,19 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 953,
+					["combatId"] = 969,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.006758,
+							["totalabsorbed"] = 0.008257,
 							["friendlyfire"] = {
 							},
 							["damage_from"] = {
-								["Mottled Boar"] = true,
+								["Vile Familiar"] = true,
 							},
 							["targets"] = {
-								["Mottled Boar"] = 56,
+								["Vile Familiar"] = 72,
 							},
 							["colocacao"] = 1,
 							["pets"] = {
@@ -27,325 +27,12 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 56.006758,
+							["total_without_pet"] = 72.008257,
 							["on_hold"] = false,
 							["dps_started"] = false,
-							["total"] = 56.006758,
+							["total"] = 72.008257,
 							["classe"] = "SHAMAN",
 							["serial"] = "Player-4465-01D55331",
-							["nome"] = "Antun",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									["Lightning Bolt"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 15,
-										["targets"] = {
-											["Mottled Boar"] = 44,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 44,
-										["n_min"] = 14,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 44,
-										["c_max"] = 0,
-										["id"] = "Lightning Bolt",
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 6,
-										["targets"] = {
-											["Mottled Boar"] = 12,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 12,
-										["n_min"] = 6,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 12,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["end_time"] = 1602329838,
-							["last_dps"] = 8.24356167207037,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 4.006758,
-							["start_time"] = 1602329830,
-							["delay"] = 0,
-							["last_event"] = 1602329836,
-						}, -- [1]
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.004966,
-							["damage_from"] = {
-								["Antun"] = true,
-							},
-							["targets"] = {
-								["Antun"] = 4,
-							},
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 4.004966,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["total"] = 4.004966,
-							["classe"] = "UNKNOW",
-							["serial"] = "Creature-0-4447-1-28-3098-000001931A",
-							["nome"] = "Mottled Boar",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 2,
-										["targets"] = {
-											["Antun"] = 4,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 4,
-										["n_min"] = 2,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 4,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1602329838,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 56.004966,
-							["start_time"] = 1602329834,
-							["delay"] = 0,
-							["last_event"] = 1602329835,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 953,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 953,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 953,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["nome"] = "Antun",
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["spell_cast"] = {
-								["Lightning Bolt"] = 2,
-							},
-							["serial"] = "Player-4465-01D55331",
-							["classe"] = "SHAMAN",
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 953,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Antun"] = true,
-				},
-				["tempo_start"] = 1602329830,
-				["cleu_timeline"] = {
-				},
-				["alternate_power"] = {
-				},
-				["TotalElapsedCombatTime"] = 54017.231,
-				["enemy"] = "Mottled Boar",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					60, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					56, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["last_events_tables"] = {
-				},
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Antun"] = 56.006758,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 54017.231,
-				["instance_type"] = "none",
-				["combat_id"] = 953,
-				["combat_counter"] = 3791,
-				["player_last_events"] = {
-				},
-				["CombatEndedAt"] = 54017.231,
-				["spells_cast_timeline"] = {
-				},
-				["data_fim"] = "13:37:19",
-				["data_inicio"] = "13:37:10",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Mottled Boar"] = 1,
-				},
-				["start_time"] = 54008.505,
-				["TimeData"] = {
-				},
-				["pvp"] = true,
-			}, -- [1]
-			{
-				{
-					["combatId"] = 952,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.006381,
-							["damage_from"] = {
-								["Mottled Boar"] = true,
-							},
-							["targets"] = {
-								["Mottled Boar"] = 55,
-							},
-							["pets"] = {
-							},
-							["classe"] = "SHAMAN",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 55.006381,
-							["friendlyfire"] = {
-							},
-							["colocacao"] = 1,
-							["dps_started"] = false,
-							["end_time"] = 1602329824,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
 							["nome"] = "Antun",
 							["spells"] = {
 								["tipo"] = 2,
@@ -357,14 +44,14 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 16,
 										["targets"] = {
-											["Mottled Boar"] = 46,
+											["Vile Familiar"] = 58,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 46,
-										["n_min"] = 14,
+										["n_dmg"] = 58,
+										["n_min"] = 13,
 										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 46,
+										["counter"] = 4,
+										["total"] = 58,
 										["c_max"] = 0,
 										["id"] = "Lightning Bolt",
 										["r_dmg"] = 0,
@@ -375,370 +62,57 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 3,
+										["n_amt"] = 4,
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
 									["!Melee"] = {
 										["c_amt"] = 0,
-										["b_amt"] = 0,
+										["b_amt"] = 1,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 5,
-										["targets"] = {
-											["Mottled Boar"] = 9,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 9,
-										["n_min"] = 4,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 9,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["total"] = 55.006381,
-							["serial"] = "Player-4465-01D55331",
-							["last_dps"] = 8.81512516024901,
-							["custom"] = 0,
-							["last_event"] = 1602329823,
-							["damage_taken"] = 4.006381,
-							["start_time"] = 1602329817,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.007296,
-							["damage_from"] = {
-								["Antun"] = true,
-							},
-							["targets"] = {
-								["Antun"] = 4,
-							},
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 4.007296,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["total"] = 4.007296,
-							["classe"] = "UNKNOW",
-							["serial"] = "Creature-0-4447-1-28-3098-00008191F6",
-							["nome"] = "Mottled Boar",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 2,
-										["targets"] = {
-											["Antun"] = 4,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 4,
-										["n_min"] = 2,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 4,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1602329824,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 55.007296,
-							["start_time"] = 1602329821,
-							["delay"] = 0,
-							["last_event"] = 1602329823,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 952,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 952,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 952,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["nome"] = "Antun",
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["last_event"] = 0,
-							["spell_cast"] = {
-								["Lightning Bolt"] = 2,
-							},
-							["serial"] = "Player-4465-01D55331",
-							["classe"] = "SHAMAN",
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 952,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Antun"] = true,
-				},
-				["CombatStartedAt"] = 54007.519,
-				["tempo_start"] = 1602329817,
-				["cleu_timeline"] = {
-				},
-				["alternate_power"] = {
-				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Mottled Boar",
-				["combat_counter"] = 3790,
-				["playing_solo"] = true,
-				["totals"] = {
-					59, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatEndedAt"] = 54003.065,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "13:36:58",
-				["end_time"] = 54003.065,
-				["totals_grupo"] = {
-					55, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["combat_id"] = 952,
-				["TotalElapsedCombatTime"] = 54003.065,
-				["frags_need_refresh"] = true,
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Antun"] = 55.006381,
-						}, -- [1]
-					},
-				},
-				["frags"] = {
-					["Mottled Boar"] = 1,
-				},
-				["data_fim"] = "13:37:05",
-				["instance_type"] = "none",
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 53996.185,
-				["TimeData"] = {
-				},
-				["pvp"] = true,
-			}, -- [2]
-			{
-				{
-					["combatId"] = 951,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.007394,
-							["damage_from"] = {
-								["Mottled Boar"] = true,
-							},
-							["targets"] = {
-								["Mottled Boar"] = 56,
-							},
-							["pets"] = {
-							},
-							["classe"] = "SHAMAN",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 56.007394,
-							["friendlyfire"] = {
-							},
-							["colocacao"] = 1,
-							["dps_started"] = false,
-							["end_time"] = 1602329803,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["nome"] = "Antun",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									["Lightning Bolt"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 16,
-										["targets"] = {
-											["Mottled Boar"] = 46,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 46,
-										["n_min"] = 15,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 46,
-										["c_max"] = 0,
-										["id"] = "Lightning Bolt",
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 1,
 										["n_max"] = 6,
 										["targets"] = {
-											["Mottled Boar"] = 10,
+											["Vile Familiar"] = 14,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 6,
-										["n_min"] = 6,
-										["g_dmg"] = 4,
-										["counter"] = 2,
-										["total"] = 10,
+										["n_dmg"] = 14,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["DODGE"] = 1,
+										["total"] = 14,
 										["c_max"] = 0,
+										["a_amt"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["PARRY"] = 1,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
+										["b_dmg"] = 3,
+										["n_amt"] = 3,
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
 								},
 							},
 							["grupo"] = true,
-							["total"] = 56.007394,
-							["serial"] = "Player-4465-01D55331",
-							["last_dps"] = 5.17915609395301,
+							["end_time"] = 1602404940,
+							["last_dps"] = 5.48885258022462,
 							["custom"] = 0,
-							["last_event"] = 1602329802,
-							["damage_taken"] = 10.007394,
-							["start_time"] = 1602329792,
-							["delay"] = 0,
 							["tipo"] = 1,
+							["damage_taken"] = 10.008257,
+							["start_time"] = 1602404925,
+							["delay"] = 0,
+							["last_event"] = 1602404938,
 						}, -- [1]
 						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.003711,
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.001068,
+							["monster"] = true,
 							["damage_from"] = {
 								["Antun"] = true,
 							},
@@ -751,13 +125,13 @@ _detalhes_database = {
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 10.003711,
+							["total_without_pet"] = 10.001068,
 							["on_hold"] = false,
 							["dps_started"] = false,
-							["total"] = 10.003711,
+							["total"] = 10.001068,
 							["classe"] = "UNKNOW",
-							["serial"] = "Creature-0-4447-1-28-3098-000001920B",
-							["nome"] = "Mottled Boar",
+							["serial"] = "Creature-0-4447-1-28-3101-000002ACA3",
+							["nome"] = "Vile Familiar",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
@@ -794,31 +168,31 @@ _detalhes_database = {
 							},
 							["friendlyfire"] = {
 							},
-							["end_time"] = 1602329803,
+							["end_time"] = 1602404940,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 56.003711,
-							["start_time"] = 1602329795,
+							["damage_taken"] = 72.001068,
+							["start_time"] = 1602404930,
 							["delay"] = 0,
-							["last_event"] = 1602329801,
+							["last_event"] = 1602404935,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 951,
+					["combatId"] = 969,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 951,
+					["combatId"] = 969,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 951,
+					["combatId"] = 969,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
@@ -838,7 +212,7 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 951,
+					["combatId"] = 969,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -846,19 +220,305 @@ _detalhes_database = {
 				["raid_roster"] = {
 					["Antun"] = true,
 				},
-				["CombatStartedAt"] = 53994.967,
-				["tempo_start"] = 1602329792,
+				["tempo_start"] = 1602404925,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["TotalElapsedCombatTime"] = 129120.311,
+				["enemy"] = "Vile Familiar",
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					82, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["totals_grupo"] = {
+					72, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["last_events_tables"] = {
+				},
+				["frags_need_refresh"] = true,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Antun"] = 72.008257,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 129120.311,
+				["instance_type"] = "none",
+				["combat_id"] = 969,
+				["combat_counter"] = 3810,
+				["player_last_events"] = {
+				},
+				["CombatEndedAt"] = 129120.311,
+				["spells_cast_timeline"] = {
+				},
+				["data_fim"] = "10:29:01",
+				["data_inicio"] = "10:28:46",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+					["Vile Familiar"] = 1,
+				},
+				["start_time"] = 129105.216,
+				["TimeData"] = {
+				},
+				["contra"] = "Vile Familiar",
+			}, -- [1]
+			{
+				{
+					["combatId"] = 968,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.003066,
+							["damage_from"] = {
+								["Vile Familiar"] = true,
+							},
+							["targets"] = {
+								["Vile Familiar"] = 75,
+							},
+							["pets"] = {
+							},
+							["classe"] = "SHAMAN",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 75.003066,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1602404896,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Antun",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Lightning Bolt"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Vile Familiar"] = 75,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 75,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 75,
+										["c_max"] = 0,
+										["id"] = "Lightning Bolt",
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 75.003066,
+							["serial"] = "Player-4465-01D55331",
+							["last_dps"] = 12.6608821742086,
+							["custom"] = 0,
+							["last_event"] = 1602404895,
+							["damage_taken"] = 3.003066,
+							["start_time"] = 1602404889,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.007717,
+							["damage_from"] = {
+								["Antun"] = true,
+							},
+							["targets"] = {
+								["Antun"] = 3,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 3.007717,
+							["monster"] = true,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1602404896,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Vile Familiar",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3,
+										["targets"] = {
+											["Antun"] = 3,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 3,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 3,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["total"] = 3.007717,
+							["serial"] = "Creature-0-4447-1-28-3101-000002B5D2",
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1602404893,
+							["damage_taken"] = 75.007717,
+							["start_time"] = 1602404893,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 968,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 968,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 968,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["nome"] = "Antun",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["spell_cast"] = {
+								["Lightning Bolt"] = 4,
+							},
+							["serial"] = "Player-4465-01D55331",
+							["classe"] = "SHAMAN",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 968,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Antun"] = true,
+				},
+				["CombatStartedAt"] = 129103.694,
+				["tempo_start"] = 1602404889,
 				["cleu_timeline"] = {
 				},
 				["alternate_power"] = {
 				},
 				["last_events_tables"] = {
 				},
-				["enemy"] = "Mottled Boar",
-				["combat_counter"] = 3789,
+				["enemy"] = "Vile Familiar",
+				["combat_counter"] = 3809,
 				["playing_solo"] = true,
 				["totals"] = {
-					66, -- [1]
+					78, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -885,15 +545,15 @@ _detalhes_database = {
 				["cleu_events"] = {
 					["n"] = 1,
 				},
-				["CombatEndedAt"] = 53982.018,
+				["CombatEndedAt"] = 129076.204,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "13:36:32",
-				["end_time"] = 53982.018,
+				["data_inicio"] = "10:28:10",
+				["end_time"] = 129076.204,
 				["totals_grupo"] = {
-					56, -- [1]
+					75, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -913,8 +573,8 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 951,
-				["TotalElapsedCombatTime"] = 53982.018,
+				["combat_id"] = 968,
+				["TotalElapsedCombatTime"] = 129076.204,
 				["frags_need_refresh"] = true,
 				["PhaseData"] = {
 					{
@@ -931,84 +591,55 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Antun"] = 56.007394,
+							["Antun"] = 75.003066,
 						}, -- [1]
 					},
 				},
 				["frags"] = {
-					["Mottled Boar"] = 1,
+					["Vile Familiar"] = 1,
 				},
-				["data_fim"] = "13:36:44",
+				["data_fim"] = "10:28:17",
 				["instance_type"] = "none",
 				["CombatSkillCache"] = {
 				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 53970.493,
+				["start_time"] = 129069.178,
+				["contra"] = "Vile Familiar",
 				["TimeData"] = {
 				},
-				["pvp"] = true,
-			}, -- [3]
+			}, -- [2]
 			{
 				{
-					["combatId"] = 950,
+					["combatId"] = 967,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.001843,
+							["totalabsorbed"] = 0.006972,
 							["damage_from"] = {
-								["Mottled Boar"] = true,
+								["Vile Familiar"] = true,
 							},
 							["targets"] = {
-								["Mottled Boar"] = 47,
+								["Vile Familiar"] = 72,
 							},
 							["pets"] = {
 							},
 							["classe"] = "SHAMAN",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 47.001843,
+							["total_without_pet"] = 72.006972,
 							["friendlyfire"] = {
 							},
 							["colocacao"] = 1,
 							["dps_started"] = false,
-							["end_time"] = 1602329783,
+							["end_time"] = 1602404882,
 							["friendlyfire_total"] = 0,
 							["on_hold"] = false,
 							["nome"] = "Antun",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 6,
-										["targets"] = {
-											["Mottled Boar"] = 17,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 17,
-										["n_min"] = 5,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 17,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
 									["Lightning Bolt"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
@@ -1016,18 +647,48 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 15,
 										["targets"] = {
-											["Mottled Boar"] = 30,
+											["Vile Familiar"] = 56,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 30,
-										["n_min"] = 15,
+										["n_dmg"] = 56,
+										["n_min"] = 13,
 										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 30,
+										["counter"] = 4,
+										["total"] = 56,
 										["c_max"] = 0,
 										["id"] = "Lightning Bolt",
 										["r_dmg"] = 0,
 										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 1,
+										["n_max"] = 6,
+										["targets"] = {
+											["Vile Familiar"] = 16,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 11,
+										["n_min"] = 5,
+										["g_dmg"] = 5,
+										["counter"] = 4,
+										["total"] = 16,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
@@ -1041,38 +702,38 @@ _detalhes_database = {
 								},
 							},
 							["grupo"] = true,
-							["total"] = 47.001843,
+							["total"] = 72.006972,
 							["serial"] = "Player-4465-01D55331",
-							["last_dps"] = 4.71149188051554,
+							["last_dps"] = 6.57657977897056,
 							["custom"] = 0,
-							["last_event"] = 1602329781,
-							["damage_taken"] = 7.001843,
-							["start_time"] = 1602329771,
+							["last_event"] = 1602404880,
+							["damage_taken"] = 9.006972,
+							["start_time"] = 1602404869,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [1]
 						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.006998,
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.002722,
 							["damage_from"] = {
 								["Antun"] = true,
 							},
 							["targets"] = {
-								["Antun"] = 7,
+								["Antun"] = 9,
 							},
 							["pets"] = {
 							},
-							["fight_component"] = true,
-							["friendlyfire_total"] = 0,
+							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 7.006998,
-							["on_hold"] = false,
+							["total_without_pet"] = 9.002722,
+							["monster"] = true,
+							["fight_component"] = true,
 							["dps_started"] = false,
-							["total"] = 7.006998,
-							["classe"] = "UNKNOW",
-							["serial"] = "Creature-0-4447-1-28-3098-00000192CC",
-							["nome"] = "Mottled Boar",
+							["end_time"] = 1602404882,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Vile Familiar",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
@@ -1081,18 +742,17 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 2,
+										["n_max"] = 3,
 										["targets"] = {
-											["Antun"] = 7,
+											["Antun"] = 6,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 7,
-										["n_min"] = 1,
+										["n_dmg"] = 6,
+										["n_min"] = 3,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 7,
+										["counter"] = 2,
+										["total"] = 6,
 										["c_max"] = 0,
-										["DODGE"] = 1,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
@@ -1102,39 +762,68 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 4,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Fireball"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3,
+										["targets"] = {
+											["Antun"] = 3,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 3,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 3,
+										["c_max"] = 0,
+										["id"] = "Fireball",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
 								},
 							},
+							["total"] = 9.002722,
+							["serial"] = "Creature-0-4447-1-28-3101-000002AD69",
 							["friendlyfire"] = {
 							},
-							["end_time"] = 1602329783,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 47.006998,
-							["start_time"] = 1602329771,
+							["last_event"] = 1602404878,
+							["damage_taken"] = 72.002722,
+							["start_time"] = 1602404872,
 							["delay"] = 0,
-							["last_event"] = 1602329779,
+							["tipo"] = 1,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 950,
+					["combatId"] = 967,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 950,
+					["combatId"] = 967,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 950,
+					["combatId"] = 967,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
@@ -1146,15 +835,30 @@ _detalhes_database = {
 							["tipo"] = 4,
 							["last_event"] = 0,
 							["spell_cast"] = {
-								["Lightning Bolt"] = 2,
+								["Lightning Bolt"] = 3,
 							},
 							["serial"] = "Player-4465-01D55331",
 							["classe"] = "SHAMAN",
 						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["nome"] = "Vile Familiar",
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["spell_cast"] = {
+								["Fireball"] = 1,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-4447-1-28-3101-000002AD69",
+							["classe"] = "UNKNOW",
+						}, -- [2]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 950,
+					["combatId"] = 967,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -1162,19 +866,19 @@ _detalhes_database = {
 				["raid_roster"] = {
 					["Antun"] = true,
 				},
-				["CombatStartedAt"] = 53969.872,
-				["tempo_start"] = 1602329771,
+				["CombatStartedAt"] = 129068.14,
+				["tempo_start"] = 1602404869,
 				["cleu_timeline"] = {
 				},
 				["alternate_power"] = {
 				},
 				["last_events_tables"] = {
 				},
-				["enemy"] = "Mottled Boar",
-				["combat_counter"] = 3788,
+				["enemy"] = "Vile Familiar",
+				["combat_counter"] = 3808,
 				["playing_solo"] = true,
 				["totals"] = {
-					54, -- [1]
+					81, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -1201,13 +905,2180 @@ _detalhes_database = {
 				["cleu_events"] = {
 					["n"] = 1,
 				},
-				["CombatEndedAt"] = 53961.776,
+				["CombatEndedAt"] = 129062.084,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "13:36:11",
-				["end_time"] = 53961.776,
+				["data_inicio"] = "10:27:50",
+				["end_time"] = 129062.084,
+				["totals_grupo"] = {
+					72, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["combat_id"] = 967,
+				["TotalElapsedCombatTime"] = 129062.084,
+				["frags_need_refresh"] = true,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Antun"] = 72.006972,
+						}, -- [1]
+					},
+				},
+				["frags"] = {
+					["Vile Familiar"] = 1,
+				},
+				["data_fim"] = "10:28:03",
+				["instance_type"] = "none",
+				["CombatSkillCache"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 129048.643,
+				["contra"] = "Vile Familiar",
+				["TimeData"] = {
+				},
+			}, -- [3]
+			{
+				{
+					["combatId"] = 966,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.007451,
+							["damage_from"] = {
+								["Mottled Boar"] = true,
+							},
+							["targets"] = {
+								["Mottled Boar"] = 62,
+							},
+							["pets"] = {
+							},
+							["classe"] = "SHAMAN",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 62.007451,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1602404841,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Antun",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Lightning Bolt"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Mottled Boar"] = 62,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 62,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 62,
+										["c_max"] = 0,
+										["id"] = "Lightning Bolt",
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 62.007451,
+							["serial"] = "Player-4465-01D55331",
+							["last_dps"] = 13.37520513374,
+							["custom"] = 0,
+							["last_event"] = 1602404841,
+							["damage_taken"] = 2.007451,
+							["start_time"] = 1602404836,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.005368,
+							["damage_from"] = {
+								["Antun"] = true,
+							},
+							["targets"] = {
+								["Antun"] = 2,
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 2.005368,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 2.005368,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4447-1-28-3098-00008249C9",
+							["nome"] = "Mottled Boar",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 2,
+										["targets"] = {
+											["Antun"] = 2,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2,
+										["n_min"] = 2,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 2,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1602404841,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 62.005368,
+							["start_time"] = 1602404839,
+							["delay"] = 0,
+							["last_event"] = 1602404839,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 966,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 966,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 966,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["nome"] = "Antun",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["spell_cast"] = {
+								["Lightning Bolt"] = 3,
+							},
+							["serial"] = "Player-4465-01D55331",
+							["classe"] = "SHAMAN",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 966,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Antun"] = true,
+				},
+				["CombatStartedAt"] = 129047.514,
+				["tempo_start"] = 1602404836,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Mottled Boar",
+				["combat_counter"] = 3807,
+				["playing_solo"] = true,
+				["totals"] = {
+					64, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatEndedAt"] = 129021.203,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "10:27:17",
+				["end_time"] = 129021.203,
+				["totals_grupo"] = {
+					62, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["combat_id"] = 966,
+				["TotalElapsedCombatTime"] = 129021.203,
+				["frags_need_refresh"] = true,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Antun"] = 62.007451,
+						}, -- [1]
+					},
+				},
+				["frags"] = {
+					["Mottled Boar"] = 1,
+				},
+				["data_fim"] = "10:27:22",
+				["instance_type"] = "none",
+				["CombatSkillCache"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 129016.029,
+				["TimeData"] = {
+				},
+				["pvp"] = true,
+			}, -- [4]
+			{
+				{
+					["combatId"] = 965,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.002507,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Vile Familiar"] = 77,
+							},
+							["pets"] = {
+							},
+							["classe"] = "SHAMAN",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 77.002507,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1602404750,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Antun",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Lightning Bolt"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 23,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Vile Familiar"] = 67,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 44,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 67,
+										["c_max"] = 23,
+										["id"] = "Lightning Bolt",
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 23,
+									},
+									["!Melee"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 10,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Vile Familiar"] = 10,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 10,
+										["c_max"] = 10,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 10,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 77.002507,
+							["serial"] = "Player-4465-01D55331",
+							["last_dps"] = 14.1600785214913,
+							["custom"] = 0,
+							["last_event"] = 1602404748,
+							["damage_taken"] = 0.002507,
+							["start_time"] = 1602404743,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.004037,
+							["damage_from"] = {
+								["Antun"] = true,
+							},
+							["targets"] = {
+							},
+							["monster"] = true,
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.004037,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 0.004037,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4447-1-28-3101-000002B66E",
+							["nome"] = "Vile Familiar",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Antun"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1602404750,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 77.004037,
+							["start_time"] = 1602404750,
+							["delay"] = 0,
+							["last_event"] = 1602404747,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 965,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 965,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 965,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["nome"] = "Antun",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["spell_cast"] = {
+								["Lightning Bolt"] = 3,
+							},
+							["serial"] = "Player-4465-01D55331",
+							["classe"] = "SHAMAN",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 965,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Antun"] = true,
+				},
+				["CombatStartedAt"] = 129015.127,
+				["tempo_start"] = 1602404743,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Vile Familiar",
+				["combat_counter"] = 3806,
+				["playing_solo"] = true,
+				["totals"] = {
+					77, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatEndedAt"] = 128930.018,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "10:25:44",
+				["end_time"] = 128930.018,
+				["totals_grupo"] = {
+					77, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["combat_id"] = 965,
+				["TotalElapsedCombatTime"] = 128930.018,
+				["frags_need_refresh"] = true,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Antun"] = 77.002507,
+						}, -- [1]
+					},
+				},
+				["frags"] = {
+					["Vile Familiar"] = 1,
+				},
+				["data_fim"] = "10:25:51",
+				["instance_type"] = "none",
+				["CombatSkillCache"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 128923.151,
+				["contra"] = "Vile Familiar",
+				["TimeData"] = {
+				},
+			}, -- [5]
+			{
+				{
+					["combatId"] = 964,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.006923,
+							["damage_from"] = {
+								["Mottled Boar"] = true,
+							},
+							["targets"] = {
+								["Mottled Boar"] = 43,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["classe"] = "SHAMAN",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 43.006923,
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1602404727,
+							["dps_started"] = false,
+							["total"] = 43.006923,
+							["colocacao"] = 1,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Antun",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Lightning Bolt"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Mottled Boar"] = 31,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 31,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 31,
+										["c_max"] = 0,
+										["id"] = "Lightning Bolt",
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 6,
+										["targets"] = {
+											["Mottled Boar"] = 12,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 12,
+										["n_min"] = 6,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 12,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-01D55331",
+							["last_dps"] = 7.5823206981585,
+							["custom"] = 0,
+							["last_event"] = 1602404725,
+							["damage_taken"] = 2.006923,
+							["start_time"] = 1602404720,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.006081,
+							["damage_from"] = {
+								["Antun"] = true,
+							},
+							["targets"] = {
+								["Antun"] = 2,
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["end_time"] = 1602404727,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 2.006081,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 2.006081,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4447-1-28-3098-000002C158",
+							["nome"] = "Mottled Boar",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 2,
+										["targets"] = {
+											["Antun"] = 2,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2,
+										["n_min"] = 2,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 2,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 43.006081,
+							["start_time"] = 1602404725,
+							["delay"] = 0,
+							["last_event"] = 1602404725,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 964,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 964,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 964,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["nome"] = "Antun",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["spell_cast"] = {
+								["Lightning Bolt"] = 1,
+							},
+							["serial"] = "Player-4465-01D55331",
+							["classe"] = "SHAMAN",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 964,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Antun"] = true,
+				},
+				["CombatStartedAt"] = 128921.986,
+				["tempo_start"] = 1602404720,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Mottled Boar",
+				["combat_counter"] = 3805,
+				["playing_solo"] = true,
+				["totals"] = {
+					45, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatEndedAt"] = 128906.585,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "10:25:21",
+				["end_time"] = 128906.585,
+				["totals_grupo"] = {
+					43, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["combat_id"] = 964,
+				["TotalElapsedCombatTime"] = 128906.585,
+				["frags_need_refresh"] = true,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Antun"] = 43.006923,
+						}, -- [1]
+					},
+				},
+				["frags"] = {
+					["Mottled Boar"] = 1,
+				},
+				["data_fim"] = "10:25:28",
+				["instance_type"] = "none",
+				["CombatSkillCache"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 128899.823,
+				["TimeData"] = {
+				},
+				["pvp"] = true,
+			}, -- [6]
+			{
+				{
+					["combatId"] = 963,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.002703,
+							["damage_from"] = {
+								["Scorpid Worker"] = true,
+							},
+							["targets"] = {
+								["Scorpid Worker"] = 77,
+							},
+							["pets"] = {
+							},
+							["classe"] = "SHAMAN",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 77.002703,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1602404710,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Antun",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Lightning Bolt"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Scorpid Worker"] = 77,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 77,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 77,
+										["c_max"] = 0,
+										["id"] = "Lightning Bolt",
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 77.002703,
+							["serial"] = "Player-4465-01D55331",
+							["last_dps"] = 12.885325133848,
+							["custom"] = 0,
+							["last_event"] = 1602404709,
+							["damage_taken"] = 3.002703,
+							["start_time"] = 1602404703,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.004912,
+							["damage_from"] = {
+								["Antun"] = true,
+							},
+							["targets"] = {
+								["Antun"] = 3,
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 3.004912,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 3.004912,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4447-1-28-3124-000002C129",
+							["nome"] = "Scorpid Worker",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3,
+										["targets"] = {
+											["Antun"] = 3,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 3,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 3,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1602404710,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 77.004912,
+							["start_time"] = 1602404708,
+							["delay"] = 0,
+							["last_event"] = 1602404708,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 963,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 963,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 963,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["nome"] = "Antun",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["spell_cast"] = {
+								["Lightning Bolt"] = 4,
+							},
+							["serial"] = "Player-4465-01D55331",
+							["classe"] = "SHAMAN",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 963,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Antun"] = true,
+				},
+				["CombatStartedAt"] = 128898.898,
+				["tempo_start"] = 1602404703,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Scorpid Worker",
+				["combat_counter"] = 3804,
+				["playing_solo"] = true,
+				["totals"] = {
+					80, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatEndedAt"] = 128889.585,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "10:25:04",
+				["end_time"] = 128889.585,
+				["totals_grupo"] = {
+					77, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["combat_id"] = 963,
+				["TotalElapsedCombatTime"] = 128889.585,
+				["frags_need_refresh"] = true,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Antun"] = 77.002703,
+						}, -- [1]
+					},
+				},
+				["frags"] = {
+					["Scorpid Worker"] = 1,
+				},
+				["data_fim"] = "10:25:11",
+				["instance_type"] = "none",
+				["CombatSkillCache"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 128883.011,
+				["TimeData"] = {
+				},
+				["pvp"] = true,
+			}, -- [7]
+			{
+				{
+					["combatId"] = 962,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.002056,
+							["damage_from"] = {
+								["Scorpid Worker"] = true,
+							},
+							["targets"] = {
+								["Scorpid Worker"] = 75,
+							},
+							["pets"] = {
+							},
+							["classe"] = "SHAMAN",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 75.002056,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1602404687,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Antun",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Lightning Bolt"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Scorpid Worker"] = 75,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 75,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 75,
+										["c_max"] = 0,
+										["id"] = "Lightning Bolt",
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 75.002056,
+							["serial"] = "Player-4465-01D55331",
+							["last_dps"] = 12.9873690043421,
+							["custom"] = 0,
+							["last_event"] = 1602404685,
+							["damage_taken"] = 3.002056,
+							["start_time"] = 1602404680,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.008726,
+							["damage_from"] = {
+								["Antun"] = true,
+							},
+							["targets"] = {
+								["Antun"] = 3,
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 3.008726,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 3.008726,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4447-1-28-3124-000002C07D",
+							["nome"] = "Scorpid Worker",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3,
+										["targets"] = {
+											["Antun"] = 3,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 3,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 3,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1602404687,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 75.008726,
+							["start_time"] = 1602404685,
+							["delay"] = 0,
+							["last_event"] = 1602404685,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 962,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 962,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 962,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["nome"] = "Antun",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["spell_cast"] = {
+								["Lightning Bolt"] = 4,
+							},
+							["serial"] = "Player-4465-01D55331",
+							["classe"] = "SHAMAN",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 962,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Antun"] = true,
+				},
+				["CombatStartedAt"] = 128881.856,
+				["tempo_start"] = 1602404680,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Scorpid Worker",
+				["combat_counter"] = 3803,
+				["playing_solo"] = true,
+				["totals"] = {
+					78, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatEndedAt"] = 128866.907,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "10:24:41",
+				["end_time"] = 128866.907,
+				["totals_grupo"] = {
+					75, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["combat_id"] = 962,
+				["TotalElapsedCombatTime"] = 128866.907,
+				["frags_need_refresh"] = true,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Antun"] = 75.002056,
+						}, -- [1]
+					},
+				},
+				["frags"] = {
+					["Scorpid Worker"] = 1,
+				},
+				["data_fim"] = "10:24:48",
+				["instance_type"] = "none",
+				["CombatSkillCache"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 128859.789,
+				["TimeData"] = {
+				},
+				["pvp"] = true,
+			}, -- [8]
+			{
+				{
+					["combatId"] = 961,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.002848,
+							["damage_from"] = {
+								["Scorpid Worker"] = true,
+							},
+							["targets"] = {
+								["Scorpid Worker"] = 75,
+							},
+							["pets"] = {
+							},
+							["classe"] = "SHAMAN",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 75.002848,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1602404533,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Antun",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Lightning Bolt"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Scorpid Worker"] = 46,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 46,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 46,
+										["c_max"] = 0,
+										["id"] = "Lightning Bolt",
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 2,
+										["n_max"] = 7,
+										["targets"] = {
+											["Scorpid Worker"] = 29,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 18,
+										["n_min"] = 5,
+										["g_dmg"] = 11,
+										["counter"] = 5,
+										["total"] = 29,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 75.002848,
+							["serial"] = "Player-4465-01D55331",
+							["last_dps"] = 5.690656145672,
+							["custom"] = 0,
+							["last_event"] = 1602404532,
+							["damage_taken"] = 19.002848,
+							["start_time"] = 1602404519,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.008382,
+							["damage_from"] = {
+								["Antun"] = true,
+							},
+							["targets"] = {
+								["Antun"] = 19,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 19.008382,
+							["end_time"] = 1602404680,
+							["dps_started"] = false,
+							["total"] = 19.008382,
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Scorpid Worker",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3,
+										["targets"] = {
+											["Antun"] = 15,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 15,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 15,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Weak Poison"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 1,
+										["targets"] = {
+											["Antun"] = 4,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 4,
+										["n_min"] = 1,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 4,
+										["c_max"] = 0,
+										["id"] = "Weak Poison",
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["on_hold"] = false,
+							["serial"] = "Creature-0-4447-1-28-3124-000002C029",
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1602404535,
+							["damage_taken"] = 75.008382,
+							["start_time"] = 1602404666,
+							["delay"] = 1602404535,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 961,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 961,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 961,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["nome"] = "Antun",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["spell_cast"] = {
+								["Lightning Bolt"] = 2,
+							},
+							["serial"] = "Player-4465-01D55331",
+							["classe"] = "SHAMAN",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 961,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Antun"] = true,
+				},
+				["CombatStartedAt"] = 128859.206,
+				["tempo_start"] = 1602404519,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Scorpid Worker",
+				["combat_counter"] = 3802,
+				["playing_solo"] = true,
+				["totals"] = {
+					94, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+					["Antun"] = {
+						{
+							true, -- [1]
+							"Weak Poison", -- [2]
+							1, -- [3]
+							1602404535.702, -- [4]
+							72, -- [5]
+							"Scorpid Worker", -- [6]
+							nil, -- [7]
+							8, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [1]
+						{
+						}, -- [2]
+						{
+						}, -- [3]
+						{
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 2,
+					},
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatEndedAt"] = 128712.657,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "10:22:00",
+				["end_time"] = 128712.657,
+				["totals_grupo"] = {
+					75, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["combat_id"] = 961,
+				["TotalElapsedCombatTime"] = 128712.657,
+				["frags_need_refresh"] = true,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Antun"] = 75.002848,
+						}, -- [1]
+					},
+				},
+				["frags"] = {
+					["Scorpid Worker"] = 1,
+				},
+				["data_fim"] = "10:22:14",
+				["instance_type"] = "none",
+				["CombatSkillCache"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 128699.477,
+				["TimeData"] = {
+				},
+				["pvp"] = true,
+			}, -- [9]
+			{
+				{
+					["combatId"] = 960,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.00501,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Mottled Boar"] = 47,
+							},
+							["pets"] = {
+							},
+							["classe"] = "SHAMAN",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 47.00501,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1602404514,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Antun",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Lightning Bolt"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 17,
+										["targets"] = {
+											["Mottled Boar"] = 47,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 47,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 47,
+										["c_max"] = 0,
+										["RESIST"] = 1,
+										["id"] = "Lightning Bolt",
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 47.00501,
+							["serial"] = "Player-4465-01D55331",
+							["last_dps"] = 11.5123708057837,
+							["custom"] = 0,
+							["last_event"] = 1602404512,
+							["damage_taken"] = 0.00501,
+							["start_time"] = 1602404508,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.006841,
+							["damage_from"] = {
+								["Antun"] = true,
+							},
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.006841,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 0.006841,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4447-1-28-3098-000001CF34",
+							["nome"] = "Mottled Boar",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1602404514,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 47.006841,
+							["start_time"] = 1602404514,
+							["delay"] = 0,
+							["last_event"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 960,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 960,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 960,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["nome"] = "Antun",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["spell_cast"] = {
+								["Lightning Bolt"] = 3,
+							},
+							["serial"] = "Player-4465-01D55331",
+							["classe"] = "SHAMAN",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 960,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Antun"] = true,
+				},
+				["CombatStartedAt"] = 128698.875,
+				["tempo_start"] = 1602404508,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Mottled Boar",
+				["combat_counter"] = 3801,
+				["playing_solo"] = true,
+				["totals"] = {
+					47, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatEndedAt"] = 128693.603,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "10:21:49",
+				["end_time"] = 128693.603,
 				["totals_grupo"] = {
 					47, -- [1]
 					0, -- [2]
@@ -1229,8 +3100,8 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 950,
-				["TotalElapsedCombatTime"] = 53961.776,
+				["combat_id"] = 960,
+				["TotalElapsedCombatTime"] = 128693.603,
 				["frags_need_refresh"] = true,
 				["PhaseData"] = {
 					{
@@ -1247,51 +3118,51 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Antun"] = 47.001843,
+							["Antun"] = 47.00501,
 						}, -- [1]
 					},
 				},
 				["frags"] = {
 					["Mottled Boar"] = 1,
 				},
-				["data_fim"] = "13:36:23",
+				["data_fim"] = "10:21:55",
 				["instance_type"] = "none",
 				["CombatSkillCache"] = {
 				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 53949.88,
+				["start_time"] = 128687.886,
 				["TimeData"] = {
 				},
 				["pvp"] = true,
-			}, -- [4]
+			}, -- [10]
 			{
 				{
-					["combatId"] = 949,
+					["combatId"] = 959,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.007498,
+							["totalabsorbed"] = 0.006116,
 							["damage_from"] = {
+								["Scorpid Worker"] = true,
 							},
 							["targets"] = {
-								["Mottled Boar"] = 45,
+								["Scorpid Worker"] = 74,
 							},
 							["pets"] = {
 							},
-							["on_hold"] = false,
 							["classe"] = "SHAMAN",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 45.007498,
+							["total_without_pet"] = 74.006116,
 							["friendlyfire"] = {
 							},
-							["end_time"] = 1602329762,
-							["dps_started"] = false,
-							["total"] = 45.007498,
 							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1602404467,
 							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
 							["nome"] = "Antun",
 							["spells"] = {
 								["tipo"] = 2,
@@ -1303,16 +3174,15 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 16,
 										["targets"] = {
-											["Mottled Boar"] = 45,
+											["Scorpid Worker"] = 62,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 45,
+										["n_dmg"] = 62,
 										["n_min"] = 14,
 										["g_dmg"] = 0,
 										["counter"] = 4,
-										["total"] = 45,
+										["total"] = 62,
 										["c_max"] = 0,
-										["RESIST"] = 1,
 										["id"] = "Lightning Bolt",
 										["r_dmg"] = 0,
 										["spellschool"] = 8,
@@ -1322,75 +3192,136 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 3,
+										["n_amt"] = 4,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 6,
+										["targets"] = {
+											["Scorpid Worker"] = 12,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 12,
+										["n_min"] = 6,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 12,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
 										["r_amt"] = 0,
 										["c_min"] = 0,
 									},
 								},
 							},
 							["grupo"] = true,
+							["total"] = 74.006116,
 							["serial"] = "Player-4465-01D55331",
-							["last_dps"] = 16.7127731154889,
+							["last_dps"] = 9.86222228144882,
 							["custom"] = 0,
-							["last_event"] = 1602329768,
-							["damage_taken"] = 0.007498,
-							["start_time"] = 1602329758,
+							["last_event"] = 1602404466,
+							["damage_taken"] = 6.006116,
+							["start_time"] = 1602404458,
 							["delay"] = 0,
 							["tipo"] = 1,
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.006353,
+							["totalabsorbed"] = 0.00575,
 							["damage_from"] = {
 								["Antun"] = true,
 							},
 							["targets"] = {
+								["Antun"] = 6,
 							},
-							["end_time"] = 1602329762,
 							["pets"] = {
 							},
 							["fight_component"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 0.006353,
+							["total_without_pet"] = 6.00575,
 							["on_hold"] = false,
 							["dps_started"] = false,
-							["total"] = 0.006353,
+							["total"] = 6.00575,
 							["classe"] = "UNKNOW",
-							["serial"] = "Creature-0-4447-1-28-3098-0000019C20",
-							["nome"] = "Mottled Boar",
+							["serial"] = "Creature-0-4447-1-28-3124-0000025ABE",
+							["nome"] = "Scorpid Worker",
 							["spells"] = {
 								["tipo"] = 2,
 								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3,
+										["targets"] = {
+											["Antun"] = 6,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 6,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 6,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
 								},
 							},
 							["friendlyfire"] = {
 							},
+							["end_time"] = 1602404467,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 45.006353,
-							["start_time"] = 1602329762,
+							["damage_taken"] = 74.00575,
+							["start_time"] = 1602404462,
 							["delay"] = 0,
-							["last_event"] = 0,
+							["last_event"] = 1602404465,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 949,
+					["combatId"] = 959,
 					["tipo"] = 3,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 949,
+					["combatId"] = 959,
 					["tipo"] = 7,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 949,
+					["combatId"] = 959,
 					["tipo"] = 9,
 					["_ActorTable"] = {
 						{
@@ -1402,7 +3333,7 @@ _detalhes_database = {
 							["tipo"] = 4,
 							["last_event"] = 0,
 							["spell_cast"] = {
-								["Lightning Bolt"] = 2,
+								["Lightning Bolt"] = 3,
 							},
 							["serial"] = "Player-4465-01D55331",
 							["classe"] = "SHAMAN",
@@ -1410,7 +3341,7 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 949,
+					["combatId"] = 959,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
@@ -1418,19 +3349,19 @@ _detalhes_database = {
 				["raid_roster"] = {
 					["Antun"] = true,
 				},
-				["CombatStartedAt"] = 53945.617,
-				["tempo_start"] = 1602329758,
+				["CombatStartedAt"] = 128686.708,
+				["tempo_start"] = 1602404458,
 				["cleu_timeline"] = {
 				},
 				["alternate_power"] = {
 				},
 				["last_events_tables"] = {
 				},
-				["enemy"] = "Mottled Boar",
-				["combat_counter"] = 3787,
+				["enemy"] = "Scorpid Worker",
+				["combat_counter"] = 3800,
 				["playing_solo"] = true,
 				["totals"] = {
-					45, -- [1]
+					80, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -1457,15 +3388,15 @@ _detalhes_database = {
 				["cleu_events"] = {
 					["n"] = 1,
 				},
-				["CombatEndedAt"] = 53940.732,
+				["CombatEndedAt"] = 128647.389,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "13:35:59",
-				["end_time"] = 53940.732,
+				["data_inicio"] = "10:20:59",
+				["end_time"] = 128647.389,
 				["totals_grupo"] = {
-					45, -- [1]
+					74, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -1485,8 +3416,8 @@ _detalhes_database = {
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 949,
-				["TotalElapsedCombatTime"] = 53940.732,
+				["combat_id"] = 959,
+				["TotalElapsedCombatTime"] = 128647.389,
 				["frags_need_refresh"] = true,
 				["PhaseData"] = {
 					{
@@ -1503,73 +3434,1132 @@ _detalhes_database = {
 					},
 					["damage"] = {
 						{
-							["Antun"] = 45.007498,
+							["Antun"] = 74.006116,
+						}, -- [1]
+					},
+				},
+				["frags"] = {
+					["Scorpid Worker"] = 1,
+				},
+				["data_fim"] = "10:21:08",
+				["instance_type"] = "none",
+				["CombatSkillCache"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 128638.268,
+				["TimeData"] = {
+				},
+				["pvp"] = true,
+			}, -- [11]
+			{
+				{
+					["combatId"] = 958,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.006563,
+							["damage_from"] = {
+								["Vile Familiar"] = true,
+							},
+							["targets"] = {
+								["Vile Familiar"] = 73,
+							},
+							["pets"] = {
+							},
+							["classe"] = "SHAMAN",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 73.006563,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1602404347,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Antun",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Lightning Bolt"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Scorpid Worker"] = 0,
+											["Vile Familiar"] = 73,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 73,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 6,
+										["total"] = 73,
+										["c_max"] = 0,
+										["RESIST"] = 1,
+										["id"] = "Lightning Bolt",
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 73.006563,
+							["serial"] = "Player-4465-01D55331",
+							["last_dps"] = 8.30752878925764,
+							["custom"] = 0,
+							["last_event"] = 1602404457,
+							["damage_taken"] = 4.006563,
+							["start_time"] = 1602404336,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.007468,
+							["damage_from"] = {
+								["Antun"] = true,
+							},
+							["targets"] = {
+								["Antun"] = 4,
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 4.007468,
+							["monster"] = true,
+							["fight_component"] = true,
+							["dps_started"] = false,
+							["end_time"] = 1602404347,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Vile Familiar",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 2,
+										["targets"] = {
+											["Antun"] = 4,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 4,
+										["n_min"] = 2,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 4,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["total"] = 4.007468,
+							["serial"] = "Creature-0-4447-1-28-3101-000002B67E",
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1602404343,
+							["damage_taken"] = 73.007468,
+							["start_time"] = 1602404341,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 958,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 958,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 958,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["nome"] = "Antun",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["spell_cast"] = {
+								["Lightning Bolt"] = 4,
+							},
+							["serial"] = "Player-4465-01D55331",
+							["classe"] = "SHAMAN",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 958,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Antun"] = true,
+				},
+				["CombatStartedAt"] = 128636.034,
+				["tempo_start"] = 1602404336,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Vile Familiar",
+				["combat_counter"] = 3799,
+				["playing_solo"] = true,
+				["totals"] = {
+					77, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatEndedAt"] = 128526.639,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "10:18:57",
+				["end_time"] = 128526.639,
+				["totals_grupo"] = {
+					73, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["combat_id"] = 958,
+				["TotalElapsedCombatTime"] = 128526.639,
+				["frags_need_refresh"] = true,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Antun"] = 73.006563,
+						}, -- [1]
+					},
+				},
+				["frags"] = {
+					["Vile Familiar"] = 1,
+				},
+				["data_fim"] = "10:19:08",
+				["instance_type"] = "none",
+				["CombatSkillCache"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 128516.212,
+				["contra"] = "Vile Familiar",
+				["TimeData"] = {
+				},
+			}, -- [12]
+			{
+				{
+					["combatId"] = 957,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.00746,
+							["damage_from"] = {
+								["Scorpid Worker"] = true,
+							},
+							["targets"] = {
+								["Scorpid Worker"] = 75,
+							},
+							["pets"] = {
+							},
+							["classe"] = "SHAMAN",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 75.00746,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1602404295,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Antun",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Lightning Bolt"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Scorpid Worker"] = 31,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 31,
+										["n_min"] = 15,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 31,
+										["c_max"] = 0,
+										["id"] = "Lightning Bolt",
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 2,
+										["n_max"] = 6,
+										["targets"] = {
+											["Scorpid Worker"] = 44,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 34,
+										["n_min"] = 5,
+										["g_dmg"] = 10,
+										["counter"] = 9,
+										["total"] = 44,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 6,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 75.00746,
+							["serial"] = "Player-4465-01D55331",
+							["last_dps"] = 3.49164230518515,
+							["custom"] = 0,
+							["last_event"] = 1602404293,
+							["damage_taken"] = 23.00746,
+							["start_time"] = 1602404274,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.003904,
+							["damage_from"] = {
+								["Antun"] = true,
+							},
+							["targets"] = {
+								["Antun"] = 23,
+							},
+							["pets"] = {
+							},
+							["end_time"] = 1602404336,
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 23.003904,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 23.003904,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4447-1-28-3124-0000025AA9",
+							["nome"] = "Scorpid Worker",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3,
+										["targets"] = {
+											["Antun"] = 15,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 15,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 15,
+										["c_max"] = 0,
+										["DODGE"] = 3,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 5,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Weak Poison"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 1,
+										["targets"] = {
+											["Antun"] = 8,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 8,
+										["n_min"] = 1,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 8,
+										["c_max"] = 0,
+										["id"] = "Weak Poison",
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 8,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 75.003904,
+							["start_time"] = 1602404310,
+							["delay"] = 1602404305,
+							["last_event"] = 1602404305,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 957,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 957,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 957,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["nome"] = "Antun",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["spell_cast"] = {
+								["Lightning Bolt"] = 1,
+							},
+							["serial"] = "Player-4465-01D55331",
+							["classe"] = "SHAMAN",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 957,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Antun"] = true,
+				},
+				["CombatStartedAt"] = 128514.907,
+				["tempo_start"] = 1602404274,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Scorpid Worker",
+				["combat_counter"] = 3798,
+				["playing_solo"] = true,
+				["totals"] = {
+					98, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+					["Antun"] = {
+						{
+							true, -- [1]
+							"Weak Poison", -- [2]
+							1, -- [3]
+							1602404296.971, -- [4]
+							68, -- [5]
+							"Scorpid Worker", -- [6]
+							nil, -- [7]
+							8, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [1]
+						{
+							true, -- [1]
+							"Weak Poison", -- [2]
+							1, -- [3]
+							1602404299.979, -- [4]
+							75, -- [5]
+							"Scorpid Worker", -- [6]
+							nil, -- [7]
+							8, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [2]
+						{
+							true, -- [1]
+							"Weak Poison", -- [2]
+							1, -- [3]
+							1602404302.881, -- [4]
+							78, -- [5]
+							"Scorpid Worker", -- [6]
+							nil, -- [7]
+							8, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [3]
+						{
+							true, -- [1]
+							"Weak Poison", -- [2]
+							1, -- [3]
+							1602404305.979, -- [4]
+							84, -- [5]
+							"Scorpid Worker", -- [6]
+							nil, -- [7]
+							8, -- [8]
+							false, -- [9]
+							-1, -- [10]
+						}, -- [4]
+						{
+						}, -- [5]
+						{
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						{
+						}, -- [9]
+						{
+						}, -- [10]
+						{
+						}, -- [11]
+						{
+						}, -- [12]
+						{
+						}, -- [13]
+						{
+						}, -- [14]
+						{
+						}, -- [15]
+						{
+						}, -- [16]
+						{
+						}, -- [17]
+						{
+						}, -- [18]
+						{
+						}, -- [19]
+						{
+						}, -- [20]
+						{
+						}, -- [21]
+						{
+						}, -- [22]
+						{
+						}, -- [23]
+						{
+						}, -- [24]
+						{
+						}, -- [25]
+						{
+						}, -- [26]
+						{
+						}, -- [27]
+						{
+						}, -- [28]
+						{
+						}, -- [29]
+						{
+						}, -- [30]
+						{
+						}, -- [31]
+						{
+						}, -- [32]
+						["n"] = 5,
+					},
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatEndedAt"] = 128475.235,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "10:17:55",
+				["end_time"] = 128475.235,
+				["totals_grupo"] = {
+					75, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["combat_id"] = 957,
+				["TotalElapsedCombatTime"] = 128475.235,
+				["frags_need_refresh"] = true,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Antun"] = 75.00746,
+						}, -- [1]
+					},
+				},
+				["frags"] = {
+					["Scorpid Worker"] = 1,
+				},
+				["data_fim"] = "10:18:16",
+				["instance_type"] = "none",
+				["CombatSkillCache"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 128453.753,
+				["TimeData"] = {
+				},
+				["pvp"] = true,
+			}, -- [13]
+			{
+				{
+					["combatId"] = 956,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.007298,
+							["damage_from"] = {
+								["Mottled Boar"] = true,
+							},
+							["targets"] = {
+								["Mottled Boar"] = 49,
+							},
+							["pets"] = {
+							},
+							["classe"] = "SHAMAN",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 49.007298,
+							["friendlyfire"] = {
+							},
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["end_time"] = 1602404266,
+							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["nome"] = "Antun",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Lightning Bolt"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 15,
+										["targets"] = {
+											["Mottled Boar"] = 43,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 43,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 43,
+										["c_max"] = 0,
+										["RESIST"] = 1,
+										["id"] = "Lightning Bolt",
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 6,
+										["targets"] = {
+											["Mottled Boar"] = 6,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 6,
+										["n_min"] = 6,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 6,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["total"] = 49.007298,
+							["serial"] = "Player-4465-01D55331",
+							["last_dps"] = 5.41457275438774,
+							["custom"] = 0,
+							["last_event"] = 1602404265,
+							["damage_taken"] = 2.007298,
+							["start_time"] = 1602404256,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.004886,
+							["damage_from"] = {
+								["Antun"] = true,
+							},
+							["targets"] = {
+								["Antun"] = 2,
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 2.004886,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 2.004886,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4447-1-28-3098-000002BF97",
+							["nome"] = "Mottled Boar",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 1,
+										["targets"] = {
+											["Antun"] = 2,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2,
+										["n_min"] = 1,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 2,
+										["c_max"] = 0,
+										["DODGE"] = 1,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1602404266,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 49.004886,
+							["start_time"] = 1602404262,
+							["delay"] = 0,
+							["last_event"] = 1602404264,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 956,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["combatId"] = 956,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 956,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["nome"] = "Antun",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["spell_cast"] = {
+								["Lightning Bolt"] = 3,
+							},
+							["serial"] = "Player-4465-01D55331",
+							["classe"] = "SHAMAN",
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 956,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Antun"] = true,
+				},
+				["CombatStartedAt"] = 128452.59,
+				["tempo_start"] = 1602404256,
+				["cleu_timeline"] = {
+				},
+				["alternate_power"] = {
+				},
+				["last_events_tables"] = {
+				},
+				["enemy"] = "Mottled Boar",
+				["combat_counter"] = 3797,
+				["playing_solo"] = true,
+				["totals"] = {
+					51, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatEndedAt"] = 128446.496,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "10:17:37",
+				["end_time"] = 128446.496,
+				["totals_grupo"] = {
+					49, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["combat_id"] = 956,
+				["TotalElapsedCombatTime"] = 128446.496,
+				["frags_need_refresh"] = true,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Antun"] = 49.007298,
 						}, -- [1]
 					},
 				},
 				["frags"] = {
 					["Mottled Boar"] = 1,
 				},
-				["data_fim"] = "13:36:02",
+				["data_fim"] = "10:17:47",
 				["instance_type"] = "none",
 				["CombatSkillCache"] = {
 				},
 				["spells_cast_timeline"] = {
 				},
-				["start_time"] = 53937.37,
+				["start_time"] = 128436.416,
 				["TimeData"] = {
 				},
 				["pvp"] = true,
-			}, -- [5]
+			}, -- [14]
 			{
 				{
 					["tipo"] = 2,
-					["combatId"] = 948,
+					["combatId"] = 955,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.00753,
+							["totalabsorbed"] = 0.005653,
 							["damage_from"] = {
-								["Mottled Boar"] = true,
+								["Scorpid Worker"] = true,
 							},
 							["targets"] = {
-								["Mottled Boar"] = 65,
+								["Scorpid Worker"] = 71,
 							},
 							["pets"] = {
 							},
-							["tipo"] = 1,
+							["last_event"] = 1602404208,
+							["end_time"] = 1602404210,
 							["friendlyfire_total"] = 0,
-							["classe"] = "SHAMAN",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 65.00753,
+							["total_without_pet"] = 71.005653,
 							["delay"] = 0,
 							["dps_started"] = false,
-							["end_time"] = 1602329689,
-							["on_hold"] = false,
-							["damage_taken"] = 2.00753,
+							["total"] = 71.005653,
+							["classe"] = "SHAMAN",
+							["damage_taken"] = 3.005653,
 							["nome"] = "Antun",
 							["spells"] = {
 								["_ActorTable"] = {
 									["Lightning Bolt"] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 21,
+										["c_dmg"] = 23,
 										["g_amt"] = 0,
-										["n_max"] = 16,
+										["n_max"] = 15,
 										["targets"] = {
-											["Mottled Boar"] = 65,
+											["Scorpid Worker"] = 67,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 44,
-										["n_min"] = 13,
+										["n_min"] = 14,
 										["g_dmg"] = 0,
 										["counter"] = 4,
-										["total"] = 65,
-										["c_max"] = 21,
+										["total"] = 67,
+										["c_max"] = 23,
 										["id"] = "Lightning Bolt",
 										["r_dmg"] = 0,
-										["c_min"] = 21,
+										["c_min"] = 23,
 										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
@@ -1580,62 +4570,21 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["spellschool"] = 8,
 									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 12.3753150580521,
-							["colocacao"] = 1,
-							["last_event"] = 1602329688,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1602329683,
-							["serial"] = "Player-4465-01D55331",
-							["total"] = 65.00753,
-						}, -- [1]
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.005896,
-							["damage_from"] = {
-								["Hamandaxe"] = true,
-								["Antun"] = true,
-							},
-							["targets"] = {
-								["Hamandaxe"] = 6,
-								["Antun"] = 2,
-							},
-							["pets"] = {
-							},
-							["end_time"] = 1602329758,
-							["nome"] = "Mottled Boar",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 8.005896,
-							["last_event"] = 1602329719,
-							["fight_component"] = true,
-							["total"] = 8.005896,
-							["delay"] = 1602329719,
-							["classe"] = "UNKNOW",
-							["spells"] = {
-								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 2,
+										["g_amt"] = 1,
+										["n_max"] = 0,
 										["targets"] = {
-											["Hamandaxe"] = 6,
-											["Antun"] = 2,
+											["Scorpid Worker"] = 4,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 8,
-										["n_min"] = 1,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 8,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 4,
+										["counter"] = 1,
+										["total"] = 4,
 										["c_max"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
@@ -1646,41 +4595,108 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 5,
+										["n_amt"] = 0,
 										["a_dmg"] = 0,
 										["spellschool"] = 1,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["damage_taken"] = 164.005896,
+							["grupo"] = true,
+							["custom"] = 0,
+							["last_dps"] = 9.96290907814276,
+							["colocacao"] = 1,
+							["tipo"] = 1,
 							["friendlyfire"] = {
 							},
+							["start_time"] = 1602404203,
+							["serial"] = "Player-4465-01D55331",
+							["on_hold"] = false,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.003059,
+							["damage_from"] = {
+								["Antun"] = true,
+							},
+							["targets"] = {
+								["Antun"] = 3,
+							},
+							["pets"] = {
+							},
+							["friendlyfire"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 3.003059,
+							["last_event"] = 1602404207,
+							["fight_component"] = true,
+							["total"] = 3.003059,
+							["delay"] = 0,
+							["classe"] = "UNKNOW",
+							["nome"] = "Scorpid Worker",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 3,
+										["targets"] = {
+											["Antun"] = 3,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 3,
+										["n_min"] = 3,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 3,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["damage_taken"] = 71.003059,
+							["end_time"] = 1602404210,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
 							["on_hold"] = false,
-							["start_time"] = 1602329749,
-							["serial"] = "Creature-0-4447-1-28-3098-0000019BD7",
+							["start_time"] = 1602404207,
+							["serial"] = "Creature-0-4447-1-28-3124-00000259F3",
 							["dps_started"] = false,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
 					["tipo"] = 3,
-					["combatId"] = 948,
+					["combatId"] = 955,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
 					["tipo"] = 7,
-					["combatId"] = 948,
+					["combatId"] = 955,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
 					["tipo"] = 9,
-					["combatId"] = 948,
+					["combatId"] = 955,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -1700,23 +4716,23 @@ _detalhes_database = {
 				}, -- [4]
 				{
 					["tipo"] = 2,
-					["combatId"] = 948,
+					["combatId"] = 955,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
 					["Antun"] = true,
 				},
-				["CombatStartedAt"] = 53936.297,
-				["tempo_start"] = 1602329683,
+				["CombatStartedAt"] = 128435.6,
+				["tempo_start"] = 1602404203,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 3785,
+				["combat_counter"] = 3795,
 				["playing_solo"] = true,
 				["totals"] = {
-					72.994214, -- [1]
+					74, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -1739,7 +4755,7 @@ _detalhes_database = {
 					["frags_total"] = 0,
 				},
 				["totals_grupo"] = {
-					65, -- [1]
+					71, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -1762,13 +4778,13 @@ _detalhes_database = {
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
 				["hasSaved"] = true,
-				["data_fim"] = "13:34:49",
+				["data_fim"] = "10:16:50",
 				["pvp"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Mottled Boar",
-				["TotalElapsedCombatTime"] = 53867.165,
-				["CombatEndedAt"] = 53867.165,
+				["enemy"] = "Scorpid Worker",
+				["TotalElapsedCombatTime"] = 128389.383,
+				["CombatEndedAt"] = 128389.383,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
@@ -1780,7 +4796,7 @@ _detalhes_database = {
 					}, -- [1]
 					["damage"] = {
 						{
-							["Antun"] = 65.00753,
+							["Antun"] = 71.005653,
 						}, -- [1]
 					},
 					["heal_section"] = {
@@ -1792,53 +4808,340 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["end_time"] = 53867.165,
-				["combat_id"] = 948,
+				["end_time"] = 128389.383,
+				["combat_id"] = 955,
 				["spells_cast_timeline"] = {
 				},
 				["player_last_events"] = {
 				},
-				["data_inicio"] = "13:34:43",
+				["data_inicio"] = "10:16:43",
 				["CombatSkillCache"] = {
 				},
 				["cleu_events"] = {
 					["n"] = 1,
 				},
-				["start_time"] = 53861.912,
+				["start_time"] = 128382.256,
 				["TimeData"] = {
 				},
 				["frags"] = {
-					["Mottled Boar"] = 1,
+					["Scorpid Worker"] = 1,
 				},
-			}, -- [6]
+			}, -- [15]
 			{
 				{
 					["tipo"] = 2,
-					["combatId"] = 947,
+					["combatId"] = 954,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.001127,
+							["totalabsorbed"] = 0.004588,
 							["damage_from"] = {
 								["Mottled Boar"] = true,
 							},
 							["targets"] = {
-								["Mottled Boar"] = 60,
+								["Mottled Boar"] = 59,
 							},
 							["pets"] = {
 							},
-							["classe"] = "SHAMAN",
+							["on_hold"] = false,
 							["tipo"] = 1,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 60.001127,
-							["delay"] = 0,
+							["total_without_pet"] = 59.004588,
+							["serial"] = "Player-4465-01D55331",
 							["dps_started"] = false,
-							["total"] = 60.001127,
+							["end_time"] = 1602404063,
+							["classe"] = "SHAMAN",
 							["friendlyfire"] = {
 							},
+							["nome"] = "Antun",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Lightning Bolt"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 16,
+										["targets"] = {
+											["Mottled Boar"] = 59,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 59,
+										["n_min"] = 14,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 59,
+										["c_max"] = 0,
+										["id"] = "Lightning Bolt",
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 4,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["colocacao"] = 1,
+							["last_dps"] = 11.2604175572719,
+							["custom"] = 0,
+							["last_event"] = 1602404062,
+							["damage_taken"] = 2.004588,
+							["start_time"] = 1602404058,
+							["delay"] = 0,
+							["total"] = 59.004588,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.008322,
+							["damage_from"] = {
+								["Antun"] = true,
+							},
+							["targets"] = {
+								["Antun"] = 2,
+							},
+							["pets"] = {
+							},
+							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 2.008322,
+							["dps_started"] = false,
+							["fight_component"] = true,
+							["total"] = 2.008322,
+							["serial"] = "Creature-0-4447-1-28-3098-0000020A01",
+							["damage_taken"] = 59.008322,
+							["nome"] = "Mottled Boar",
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 2,
+										["targets"] = {
+											["Antun"] = 2,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2,
+										["n_min"] = 2,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 2,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
 							["on_hold"] = false,
+							["end_time"] = 1602404063,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1602404062,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1602404062,
+							["delay"] = 0,
+							["classe"] = "UNKNOW",
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 954,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 954,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 954,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["nome"] = "Antun",
+							["grupo"] = true,
+							["pets"] = {
+							},
+							["classe"] = "SHAMAN",
+							["tipo"] = 4,
+							["last_event"] = 0,
+							["serial"] = "Player-4465-01D55331",
+							["spell_cast"] = {
+								["Lightning Bolt"] = 3,
+							},
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 954,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Antun"] = true,
+				},
+				["CombatStartedAt"] = 128381.28,
+				["tempo_start"] = 1602404058,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["playing_solo"] = true,
+				["totals"] = {
+					61, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "10:14:24",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Mottled Boar",
+				["TotalElapsedCombatTime"] = 128243.192,
+				["CombatEndedAt"] = 128243.192,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage_section"] = {
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage"] = {
+						{
+							["Antun"] = 59.004588,
+						}, -- [1]
+					},
+				},
+				["end_time"] = 128243.192,
+				["combat_id"] = 954,
+				["spells_cast_timeline"] = {
+				},
+				["data_inicio"] = "10:14:19",
+				["frags"] = {
+					["Mottled Boar"] = 1,
+				},
+				["CombatSkillCache"] = {
+				},
+				["combat_counter"] = 3793,
+				["start_time"] = 128237.952,
+				["TimeData"] = {
+				},
+				["totals_grupo"] = {
+					59, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["cooldowns_defensive"] = 0,
+						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+			}, -- [16]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 953,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.006758,
+							["damage_from"] = {
+								["Mottled Boar"] = true,
+							},
+							["targets"] = {
+								["Mottled Boar"] = 56,
+							},
+							["pets"] = {
+							},
+							["total"] = 56.006758,
+							["last_event"] = 1602329836,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 56.006758,
+							["delay"] = 0,
+							["dps_started"] = false,
+							["end_time"] = 1602329838,
+							["friendlyfire"] = {
+							},
+							["damage_taken"] = 4.006758,
 							["nome"] = "Antun",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -1849,26 +5152,25 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 15,
 										["targets"] = {
-											["Mottled Boar"] = 43,
+											["Mottled Boar"] = 44,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 43,
-										["n_min"] = 13,
+										["n_dmg"] = 44,
+										["n_min"] = 14,
 										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 43,
+										["counter"] = 3,
+										["total"] = 44,
 										["c_max"] = 0,
-										["r_amt"] = 0,
 										["id"] = "Lightning Bolt",
 										["r_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["RESIST"] = 1,
 										["a_dmg"] = 0,
 										["spellschool"] = 8,
 									},
@@ -1876,17 +5178,17 @@ _detalhes_database = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
-										["g_amt"] = 1,
+										["g_amt"] = 0,
 										["n_max"] = 6,
 										["targets"] = {
-											["Mottled Boar"] = 17,
+											["Mottled Boar"] = 12,
 										},
 										["m_dmg"] = 0,
 										["n_dmg"] = 12,
 										["n_min"] = 6,
-										["g_dmg"] = 5,
-										["counter"] = 3,
-										["total"] = 17,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 12,
 										["c_max"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
@@ -1906,35 +5208,35 @@ _detalhes_database = {
 							},
 							["grupo"] = true,
 							["custom"] = 0,
-							["last_dps"] = 4.10629119901628,
+							["last_dps"] = 6.41837703414906,
 							["colocacao"] = 1,
-							["last_event"] = 1601908546,
-							["damage_taken"] = 8.001127,
-							["start_time"] = 1601908534,
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["start_time"] = 1602329830,
 							["serial"] = "Player-4465-01D55331",
-							["end_time"] = 1601908547,
+							["classe"] = "SHAMAN",
 						}, -- [1]
 						{
 							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.001254,
+							["totalabsorbed"] = 0.004966,
 							["damage_from"] = {
 								["Antun"] = true,
 							},
 							["targets"] = {
-								["Antun"] = 8,
+								["Antun"] = 4,
 							},
 							["pets"] = {
 							},
-							["last_event"] = 1601908544,
+							["last_event"] = 1602329835,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 8.001254,
-							["end_time"] = 1601908547,
-							["dps_started"] = false,
-							["total"] = 8.001254,
-							["delay"] = 0,
+							["total_without_pet"] = 4.004966,
 							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["total"] = 4.004966,
+							["delay"] = 0,
+							["on_hold"] = false,
 							["nome"] = "Mottled Boar",
 							["spells"] = {
 								["_ActorTable"] = {
@@ -1945,14 +5247,14 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 2,
 										["targets"] = {
-											["Antun"] = 8,
+											["Antun"] = 4,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 8,
+										["n_dmg"] = 4,
 										["n_min"] = 2,
 										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 8,
+										["counter"] = 2,
+										["total"] = 4,
 										["c_max"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
@@ -1963,41 +5265,41 @@ _detalhes_database = {
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 4,
+										["n_amt"] = 2,
 										["a_dmg"] = 0,
 										["spellschool"] = 1,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["damage_taken"] = 60.001254,
 							["friendlyfire"] = {
 							},
+							["end_time"] = 1602329838,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1601908538,
-							["serial"] = "Creature-0-4445-1-124-3098-00007B2E1C",
+							["damage_taken"] = 56.004966,
+							["start_time"] = 1602329834,
+							["serial"] = "Creature-0-4447-1-28-3098-000001931A",
 							["fight_component"] = true,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
 					["tipo"] = 3,
-					["combatId"] = 947,
+					["combatId"] = 953,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
 					["tipo"] = 7,
-					["combatId"] = 947,
+					["combatId"] = 953,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
 					["tipo"] = 9,
-					["combatId"] = 947,
+					["combatId"] = 953,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -2008,7 +5310,7 @@ _detalhes_database = {
 							["last_event"] = 0,
 							["classe"] = "SHAMAN",
 							["spell_cast"] = {
-								["Lightning Bolt"] = 3,
+								["Lightning Bolt"] = 2,
 							},
 							["serial"] = "Player-4465-01D55331",
 							["tipo"] = 4,
@@ -2017,69 +5319,22 @@ _detalhes_database = {
 				}, -- [4]
 				{
 					["tipo"] = 2,
-					["combatId"] = 947,
+					["combatId"] = 953,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
 					["Antun"] = true,
 				},
-				["CombatStartedAt"] = 53861.043,
-				["tempo_start"] = 1601908534,
+				["CombatStartedAt"] = 128237.139,
+				["tempo_start"] = 1602329830,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 3782,
+				["combat_counter"] = 3791,
 				["playing_solo"] = true,
 				["totals"] = {
-					68, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "16:35:48",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Mottled Boar",
-				["TotalElapsedCombatTime"] = 33682.804,
-				["CombatEndedAt"] = 33682.804,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "16:35:34",
-				["end_time"] = 33682.804,
-				["combat_id"] = 947,
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Mottled Boar"] = 1,
-				},
-				["totals_grupo"] = {
 					60, -- [1]
 					0, -- [2]
 					{
@@ -2099,234 +5354,6 @@ _detalhes_database = {
 						["dispell"] = 0,
 						["cooldowns_defensive"] = 0,
 					}, -- [4]
-				},
-				["CombatSkillCache"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["start_time"] = 33668.192,
-				["TimeData"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Antun"] = 60.001127,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-			}, -- [7]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 946,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.001246,
-							["damage_from"] = {
-								["Plainstrider"] = true,
-							},
-							["targets"] = {
-								["Plainstrider"] = 48,
-							},
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["tipo"] = 1,
-							["classe"] = "SHAMAN",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 48.001246,
-							["delay"] = 1596558079,
-							["dps_started"] = false,
-							["end_time"] = 1596558099,
-							["friendlyfire"] = {
-							},
-							["on_hold"] = false,
-							["nome"] = "Mxys",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 9,
-										["targets"] = {
-											["Plainstrider"] = 48,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 48,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 48,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 2.42027156758931,
-							["colocacao"] = 1,
-							["last_event"] = 1596558096,
-							["damage_taken"] = 16.001246,
-							["start_time"] = 1596558089,
-							["serial"] = "Player-4465-01D4530D",
-							["total"] = 48.001246,
-						}, -- [1]
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.00715,
-							["damage_from"] = {
-								["Mxys"] = true,
-							},
-							["targets"] = {
-								["Mxys"] = 16,
-							},
-							["pets"] = {
-							},
-							["last_event"] = 1596558095,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 16.00715,
-							["total"] = 16.00715,
-							["fight_component"] = true,
-							["end_time"] = 1596558099,
-							["delay"] = 0,
-							["classe"] = "UNKNOW",
-							["nome"] = "Plainstrider",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 2,
-										["targets"] = {
-											["Mxys"] = 16,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 16,
-										["n_min"] = 1,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 16,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 9,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["damage_taken"] = 48.00715,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1596558079,
-							["serial"] = "Creature-0-4445-1-154-2955-0000294365",
-							["dps_started"] = false,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 946,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 946,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 946,
-					["_ActorTable"] = {
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 946,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mxys"] = true,
-				},
-				["CombatStartedAt"] = 33666.922,
-				["tempo_start"] = 1596558079,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["playing_solo"] = true,
-				["totals"] = {
-					64, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
 					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
 				},
@@ -2335,52 +5362,27 @@ _detalhes_database = {
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
 				["hasSaved"] = true,
-				["data_fim"] = "18:21:39",
+				["data_fim"] = "13:37:19",
 				["pvp"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Plainstrider",
-				["TotalElapsedCombatTime"] = 19.8330000000005,
-				["CombatEndedAt"] = 14715.27,
+				["enemy"] = "Mottled Boar",
+				["TotalElapsedCombatTime"] = 54017.231,
+				["CombatEndedAt"] = 54017.231,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "18:21:19",
-				["end_time"] = 14715.27,
-				["combat_id"] = 946,
+				["data_inicio"] = "13:37:10",
+				["end_time"] = 54017.231,
+				["combat_id"] = 953,
+				["spells_cast_timeline"] = {
+				},
 				["frags"] = {
-					["Plainstrider"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Mxys"] = 48.001246,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["CombatSkillCache"] = {
-				},
-				["combat_counter"] = 3775,
-				["start_time"] = 14695.437,
-				["TimeData"] = {
+					["Mottled Boar"] = 1,
 				},
 				["totals_grupo"] = {
-					48, -- [1]
+					56, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -2398,269 +5400,6 @@ _detalhes_database = {
 						["debuff_uptime"] = 0,
 						["dispell"] = 0,
 						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-			}, -- [8]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 945,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.002876,
-							["damage_from"] = {
-								["Plainstrider"] = true,
-							},
-							["targets"] = {
-								["Plainstrider"] = 87,
-							},
-							["pets"] = {
-							},
-							["total"] = 87.002876,
-							["last_event"] = 1596558031,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 87.002876,
-							["serial"] = "Player-4465-01D4530D",
-							["dps_started"] = false,
-							["end_time"] = 1596558033,
-							["on_hold"] = false,
-							["damage_taken"] = 19.002876,
-							["nome"] = "Mxys",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 13,
-										["g_amt"] = 0,
-										["n_max"] = 8,
-										["targets"] = {
-											["Plainstrider"] = 87,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 74,
-										["n_min"] = 7,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 87,
-										["c_max"] = 13,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 13,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 10,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["colocacao"] = 1,
-							["last_dps"] = 3.05842007944597,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1596558004,
-							["delay"] = 0,
-							["classe"] = "SHAMAN",
-						}, -- [1]
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.002547,
-							["damage_from"] = {
-								["Mxys"] = true,
-							},
-							["targets"] = {
-								["Mxys"] = 19,
-							},
-							["pets"] = {
-							},
-							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 19.002547,
-							["dps_started"] = false,
-							["fight_component"] = true,
-							["total"] = 19.002547,
-							["serial"] = "Creature-0-4445-1-154-2955-0000295A39",
-							["friendlyfire"] = {
-							},
-							["nome"] = "Plainstrider",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 2,
-										["targets"] = {
-											["Mxys"] = 19,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 19,
-										["n_min"] = 1,
-										["g_dmg"] = 0,
-										["counter"] = 15,
-										["total"] = 19,
-										["c_max"] = 0,
-										["MISS"] = 2,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["m_amt"] = 0,
-										["n_amt"] = 13,
-										["a_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["damage_taken"] = 87.002547,
-							["end_time"] = 1596558033,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1596558030,
-							["on_hold"] = false,
-							["start_time"] = 1596558004,
-							["delay"] = 0,
-							["classe"] = "UNKNOW",
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 945,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 945,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 945,
-					["_ActorTable"] = {
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 945,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mxys"] = true,
-				},
-				["CombatStartedAt"] = 14620.654,
-				["tempo_start"] = 1596558004,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 3773,
-				["playing_solo"] = true,
-				["totals"] = {
-					106, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "18:20:33",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Plainstrider",
-				["TotalElapsedCombatTime"] = 28.3160000000007,
-				["CombatEndedAt"] = 14648.97,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "18:20:04",
-				["end_time"] = 14648.97,
-				["combat_id"] = 945,
-				["spells_cast_timeline"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Mxys"] = 87.002876,
-						}, -- [1]
-					},
-				},
-				["totals_grupo"] = {
-					87, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
 					}, -- [4]
 				},
 				["CombatSkillCache"] = {
@@ -2668,254 +5407,18 @@ _detalhes_database = {
 				["cleu_events"] = {
 					["n"] = 1,
 				},
-				["start_time"] = 14620.523,
+				["start_time"] = 54008.505,
 				["TimeData"] = {
-				},
-				["frags"] = {
-					["Plainstrider"] = 2,
-				},
-			}, -- [9]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 944,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.007099,
-							["damage_from"] = {
-								["Plainstrider"] = true,
-							},
-							["targets"] = {
-								["Plainstrider"] = 43,
-							},
-							["pets"] = {
-							},
-							["classe"] = "SHAMAN",
-							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 43.007099,
-							["serial"] = "Player-4465-01D4530D",
-							["dps_started"] = false,
-							["total"] = 43.007099,
-							["friendlyfire"] = {
-							},
-							["damage_taken"] = 5.007099,
-							["nome"] = "Mxys",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 15,
-										["g_amt"] = 1,
-										["n_max"] = 7,
-										["targets"] = {
-											["Plainstrider"] = 43,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 21,
-										["n_min"] = 7,
-										["g_dmg"] = 7,
-										["counter"] = 5,
-										["total"] = 43,
-										["c_max"] = 15,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 15,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["colocacao"] = 1,
-							["last_dps"] = 4.83225831460694,
-							["custom"] = 0,
-							["last_event"] = 1596557761,
-							["on_hold"] = false,
-							["start_time"] = 1596557753,
-							["delay"] = 0,
-							["end_time"] = 1596557762,
-						}, -- [1]
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.003172,
-							["damage_from"] = {
-								["Mxys"] = true,
-							},
-							["targets"] = {
-								["Mxys"] = 5,
-							},
-							["pets"] = {
-							},
-							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 5.003172,
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["total"] = 5.003172,
-							["serial"] = "Creature-0-4445-1-154-2955-0000294EE3",
-							["on_hold"] = false,
-							["nome"] = "Plainstrider",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 2,
-										["targets"] = {
-											["Mxys"] = 5,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 5,
-										["n_min"] = 1,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 5,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1596557762,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1596557759,
-							["damage_taken"] = 43.003172,
-							["start_time"] = 1596557753,
-							["delay"] = 0,
-							["classe"] = "UNKNOW",
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 944,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 944,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 944,
-					["_ActorTable"] = {
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 944,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mxys"] = true,
-				},
-				["CombatStartedAt"] = 14370.598,
-				["tempo_start"] = 1596557753,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 3770,
-				["playing_solo"] = true,
-				["totals"] = {
-					48, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					43, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "18:16:03",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Plainstrider",
-				["TotalElapsedCombatTime"] = 8.46500000000015,
-				["CombatEndedAt"] = 14379.063,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
 				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Antun"] = 56.006758,
+						}, -- [1]
 					},
 					["heal_section"] = {
 					},
@@ -2923,77 +5426,58 @@ _detalhes_database = {
 						{
 						}, -- [1]
 					},
-					["damage"] = {
-						{
-							["Mxys"] = 43.007099,
-						}, -- [1]
+					["damage_section"] = {
 					},
 				},
-				["end_time"] = 14379.063,
-				["combat_id"] = 944,
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-					["Plainstrider"] = 1,
-				},
-				["data_inicio"] = "18:15:54",
-				["CombatSkillCache"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["start_time"] = 14370.163,
-				["TimeData"] = {
-				},
-				["player_last_events"] = {
-				},
-			}, -- [10]
+			}, -- [17]
 			{
 				{
 					["tipo"] = 2,
-					["combatId"] = 943,
+					["combatId"] = 952,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.005699,
+							["totalabsorbed"] = 0.006381,
 							["damage_from"] = {
+								["Mottled Boar"] = true,
 							},
 							["targets"] = {
-								["Ragged Scavenger"] = 57,
+								["Mottled Boar"] = 55,
 							},
 							["pets"] = {
 							},
-							["friendlyfire_total"] = 0,
+							["total"] = 55.006381,
 							["tipo"] = 1,
-							["classe"] = "MAGE",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 57.005699,
+							["total_without_pet"] = 55.006381,
 							["delay"] = 0,
 							["dps_started"] = false,
-							["end_time"] = 1596396220,
+							["end_time"] = 1602329824,
+							["friendlyfire"] = {
+							},
 							["on_hold"] = false,
-							["damage_taken"] = 0.005699,
-							["nome"] = "Mxym",
+							["nome"] = "Antun",
 							["spells"] = {
 								["_ActorTable"] = {
-									["Frostbolt"] = {
+									["Lightning Bolt"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 19,
+										["n_max"] = 16,
 										["targets"] = {
-											["Ragged Scavenger"] = 57,
+											["Mottled Boar"] = 46,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 57,
-										["n_min"] = 19,
+										["n_dmg"] = 46,
+										["n_min"] = 14,
 										["g_dmg"] = 0,
 										["counter"] = 3,
-										["total"] = 57,
+										["total"] = 46,
 										["c_max"] = 0,
-										["id"] = "Frostbolt",
+										["id"] = "Lightning Bolt",
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["a_amt"] = 0,
@@ -3004,1248 +5488,25 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
 										["a_dmg"] = 0,
-										["spellschool"] = 16,
+										["spellschool"] = 8,
 									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 15.4654636462837,
-							["colocacao"] = 1,
-							["last_event"] = 1596396220,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1596396216,
-							["serial"] = "Player-4465-01D4457C",
-							["total"] = 57.005699,
-						}, -- [1]
-						{
-							["flag_original"] = 68136,
-							["totalabsorbed"] = 0.006065,
-							["damage_from"] = {
-								["Mxym"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.006065,
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["total"] = 0.006065,
-							["delay"] = 0,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Ragged Scavenger",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["damage_taken"] = 57.006065,
-							["end_time"] = 1596396220,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1596396220,
-							["serial"] = "Creature-0-4445-0-178-1509-000026FF3B",
-							["dps_started"] = false,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 943,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 943,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 943,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Frostbolt"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = -1,
-										["refreshamt"] = 1,
-										["id"] = "Frostbolt",
-										["uptime"] = 2,
-										["targets"] = {
-										},
-										["appliedamt"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 8,
-							["classe"] = "MAGE",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Arcane Intellect"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Arcane Intellect",
-										["uptime"] = 4,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Frost Armor"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Frost Armor",
-										["uptime"] = 4,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 2,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Frostbolt"] = 2,
-							},
-							["nome"] = "Mxym",
-							["tipo"] = 4,
-							["debuff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-01D4457C",
-							["last_event"] = 1596396220,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 943,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mxym"] = true,
-				},
-				["tempo_start"] = 1596396216,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 3768,
-				["playing_solo"] = true,
-				["totals"] = {
-					57, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["totals_grupo"] = {
-					57, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:23:41",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Ragged Scavenger",
-				["TotalElapsedCombatTime"] = 1051479.329,
-				["CombatEndedAt"] = 1051479.329,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Mxym"] = 57.005699,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 1051479.329,
-				["combat_id"] = 943,
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["data_inicio"] = "21:23:37",
-				["CombatSkillCache"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["start_time"] = 1051475.643,
-				["TimeData"] = {
-				},
-				["frags"] = {
-					["Ragged Scavenger"] = 1,
-				},
-			}, -- [11]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 942,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.004304,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Scarlet Convert"] = 88,
-							},
-							["pets"] = {
-							},
-							["end_time"] = 1596396209,
-							["tipo"] = 1,
-							["classe"] = "MAGE",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 88.004304,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 88.004304,
-							["on_hold"] = false,
-							["damage_taken"] = 0.004304,
-							["nome"] = "Mxym",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Frostbolt"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 30,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Scarlet Convert"] = 88,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 58,
-										["n_min"] = 18,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 88,
-										["c_max"] = 30,
-										["id"] = "Frostbolt",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 30,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 16,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 20.1152694857143,
-							["colocacao"] = 1,
-							["last_event"] = 1596396208,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1596396204,
-							["serial"] = "Player-4465-01D4457C",
-							["friendlyfire_total"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.007552,
-							["damage_from"] = {
-								["Mxym"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.007552,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 0.007552,
-							["monster"] = true,
-							["damage_taken"] = 88.007552,
-							["nome"] = "Scarlet Convert",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 0,
-							["last_dps"] = 0,
-							["end_time"] = 1596396209,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1596396209,
-							["serial"] = "Creature-0-4445-0-178-1506-0000271283",
-							["fight_component"] = true,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 942,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 942,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 942,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Frostbolt"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = -1,
-										["refreshamt"] = 2,
-										["id"] = "Frostbolt",
-										["uptime"] = 4,
-										["targets"] = {
-										},
-										["appliedamt"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 10,
-							["classe"] = "MAGE",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Arcane Intellect"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Arcane Intellect",
-										["uptime"] = 5,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Frost Armor"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Frost Armor",
-										["uptime"] = 5,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 4,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Frostbolt"] = 3,
-							},
-							["nome"] = "Mxym",
-							["tipo"] = 4,
-							["debuff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-01D4457C",
-							["last_event"] = 1596396209,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 942,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mxym"] = true,
-				},
-				["CombatStartedAt"] = 1051474.882,
-				["tempo_start"] = 1596396204,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 3767,
-				["playing_solo"] = true,
-				["totals"] = {
-					88, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["totals_grupo"] = {
-					88, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:23:30",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Scarlet Convert",
-				["TotalElapsedCombatTime"] = 1051468.368,
-				["CombatEndedAt"] = 1051468.368,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Mxym"] = 88.004304,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 1051468.368,
-				["combat_id"] = 942,
-				["player_last_events"] = {
-				},
-				["frags"] = {
-					["Scarlet Convert"] = 1,
-				},
-				["data_inicio"] = "21:23:25",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 1051463.311,
-				["contra"] = "Scarlet Convert",
-				["spells_cast_timeline"] = {
-				},
-			}, -- [12]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 941,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.008915,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Scarlet Convert"] = 87,
-							},
-							["pets"] = {
-							},
-							["end_time"] = 1596396171,
-							["tipo"] = 1,
-							["classe"] = "MAGE",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 87.008915,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 87.008915,
-							["on_hold"] = false,
-							["damage_taken"] = 0.008915,
-							["nome"] = "Mxym",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Frostbolt"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 31,
-										["g_amt"] = 0,
-										["n_max"] = 19,
-										["targets"] = {
-											["Scarlet Convert"] = 87,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 56,
-										["n_min"] = 18,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 87,
-										["c_max"] = 31,
-										["id"] = "Frostbolt",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 31,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 16,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 19.2540196952417,
-							["colocacao"] = 1,
-							["last_event"] = 1596396170,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1596396165,
-							["serial"] = "Player-4465-01D4457C",
-							["friendlyfire_total"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.002347,
-							["damage_from"] = {
-								["Mxym"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.002347,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 0.002347,
-							["monster"] = true,
-							["damage_taken"] = 87.002347,
-							["nome"] = "Scarlet Convert",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 0,
-							["last_dps"] = 0,
-							["end_time"] = 1596396171,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1596396171,
-							["serial"] = "Creature-0-4445-0-178-1506-0000270FDC",
-							["fight_component"] = true,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 941,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 941,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 941,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Frostbolt"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = -1,
-										["refreshamt"] = 2,
-										["id"] = "Frostbolt",
-										["uptime"] = 4,
-										["targets"] = {
-										},
-										["appliedamt"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 12,
-							["classe"] = "MAGE",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Arcane Intellect"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Arcane Intellect",
-										["uptime"] = 6,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Frost Armor"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Frost Armor",
-										["uptime"] = 6,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 4,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Frostbolt"] = 3,
-							},
-							["nome"] = "Mxym",
-							["tipo"] = 4,
-							["debuff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-01D4457C",
-							["last_event"] = 1596396171,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 941,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mxym"] = true,
-				},
-				["CombatStartedAt"] = 1051462.647,
-				["tempo_start"] = 1596396165,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 3766,
-				["playing_solo"] = true,
-				["totals"] = {
-					87, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["totals_grupo"] = {
-					87, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:22:52",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Scarlet Convert",
-				["TotalElapsedCombatTime"] = 1051430.238,
-				["CombatEndedAt"] = 1051430.238,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Mxym"] = 87.008915,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 1051430.238,
-				["combat_id"] = 941,
-				["player_last_events"] = {
-				},
-				["frags"] = {
-					["Scarlet Convert"] = 1,
-				},
-				["data_inicio"] = "21:22:46",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 1051424.559,
-				["contra"] = "Scarlet Convert",
-				["spells_cast_timeline"] = {
-				},
-			}, -- [13]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 940,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.006491,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Scarlet Convert"] = 84,
-							},
-							["pets"] = {
-							},
-							["end_time"] = 1596396154,
-							["tipo"] = 1,
-							["classe"] = "MAGE",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 84.006491,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 84.006491,
-							["on_hold"] = false,
-							["damage_taken"] = 0.006491,
-							["nome"] = "Mxym",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Frostbolt"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Scarlet Convert"] = 84,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 84,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 84,
-										["c_max"] = 0,
-										["id"] = "Frostbolt",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["a_dmg"] = 0,
-										["spellschool"] = 16,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 19.873785427227,
-							["colocacao"] = 1,
-							["last_event"] = 1596396153,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1596396149,
-							["serial"] = "Player-4465-01D4457C",
-							["friendlyfire_total"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.007053,
-							["damage_from"] = {
-								["Mxym"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.007053,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 0.007053,
-							["monster"] = true,
-							["damage_taken"] = 84.007053,
-							["nome"] = "Scarlet Convert",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 0,
-							["last_dps"] = 0,
-							["end_time"] = 1596396154,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1596396154,
-							["serial"] = "Creature-0-4445-0-178-1506-000027077C",
-							["fight_component"] = true,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 940,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 940,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 940,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Frostbolt"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = -1,
-										["refreshamt"] = 2,
-										["id"] = "Frostbolt",
-										["uptime"] = 3,
-										["targets"] = {
-										},
-										["appliedamt"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 10,
-							["classe"] = "MAGE",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Arcane Intellect"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Arcane Intellect",
-										["uptime"] = 5,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Frost Armor"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Frost Armor",
-										["uptime"] = 5,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 3,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Frostbolt"] = 3,
-							},
-							["nome"] = "Mxym",
-							["tipo"] = 4,
-							["debuff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-01D4457C",
-							["last_event"] = 1596396154,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 940,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mxym"] = true,
-				},
-				["CombatStartedAt"] = 1051423.733,
-				["tempo_start"] = 1596396149,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 3765,
-				["playing_solo"] = true,
-				["totals"] = {
-					84, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["totals_grupo"] = {
-					84, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:22:35",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Scarlet Convert",
-				["TotalElapsedCombatTime"] = 1051413.532,
-				["CombatEndedAt"] = 1051413.532,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Mxym"] = 84.006491,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 1051413.532,
-				["combat_id"] = 940,
-				["player_last_events"] = {
-				},
-				["frags"] = {
-					["Scarlet Convert"] = 1,
-				},
-				["data_inicio"] = "21:22:30",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 1051408.344,
-				["contra"] = "Scarlet Convert",
-				["spells_cast_timeline"] = {
-				},
-			}, -- [14]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 939,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.006482,
-							["damage_from"] = {
-								["Scarlet Convert"] = true,
-							},
-							["targets"] = {
-								["Scarlet Convert"] = 73,
-							},
-							["pets"] = {
-							},
-							["end_time"] = 1596396143,
-							["tipo"] = 1,
-							["classe"] = "MAGE",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 73.006482,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 73.006482,
-							["on_hold"] = false,
-							["damage_taken"] = 14.006482,
-							["nome"] = "Mxym",
-							["spells"] = {
-								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 6,
+										["n_max"] = 5,
 										["targets"] = {
-											["Scarlet Convert"] = 32,
+											["Mottled Boar"] = 9,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 32,
+										["n_dmg"] = 9,
 										["n_min"] = 4,
 										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 32,
+										["counter"] = 2,
+										["total"] = 9,
 										["c_max"] = 0,
 										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Frostbolt"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Scarlet Convert"] = 41,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 41,
-										["n_min"] = 20,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 41,
-										["c_max"] = 0,
-										["id"] = "Frostbolt",
 										["r_dmg"] = 0,
 										["r_amt"] = 0,
 										["a_amt"] = 0,
@@ -4256,45 +5517,43 @@ _detalhes_database = {
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
 										["a_dmg"] = 0,
-										["spellschool"] = 16,
+										["spellschool"] = 1,
 									},
 								},
 								["tipo"] = 2,
 							},
 							["grupo"] = true,
 							["custom"] = 0,
-							["last_dps"] = 3.47716145931849,
+							["last_dps"] = 8.81512516024901,
 							["colocacao"] = 1,
-							["last_event"] = 1596396140,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1596396119,
-							["serial"] = "Player-4465-01D4457C",
-							["friendlyfire_total"] = 0,
+							["last_event"] = 1602329823,
+							["damage_taken"] = 4.006381,
+							["start_time"] = 1602329817,
+							["serial"] = "Player-4465-01D55331",
+							["classe"] = "SHAMAN",
 						}, -- [1]
 						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008947,
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.007296,
 							["damage_from"] = {
-								["Mxym"] = true,
+								["Antun"] = true,
 							},
 							["targets"] = {
-								["Mxym"] = 14,
+								["Antun"] = 4,
 							},
 							["pets"] = {
 							},
-							["classe"] = "UNKNOW",
-							["dps_started"] = false,
+							["last_event"] = 1602329823,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 14.008947,
+							["total_without_pet"] = 4.007296,
+							["classe"] = "UNKNOW",
+							["dps_started"] = false,
+							["total"] = 4.007296,
 							["delay"] = 0,
-							["monster"] = true,
-							["end_time"] = 1596396143,
-							["total"] = 14.008947,
-							["damage_taken"] = 73.008947,
-							["nome"] = "Scarlet Convert",
+							["on_hold"] = false,
+							["nome"] = "Mottled Boar",
 							["spells"] = {
 								["_ActorTable"] = {
 									["!Melee"] = {
@@ -4302,464 +5561,99 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 3,
+										["n_max"] = 2,
 										["targets"] = {
-											["Mxym"] = 14,
+											["Antun"] = 4,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 14,
+										["n_dmg"] = 4,
 										["n_min"] = 2,
 										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 14,
+										["counter"] = 2,
+										["total"] = 4,
 										["c_max"] = 0,
-										["r_amt"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["b_dmg"] = 0,
+										["r_amt"] = 0,
+										["a_amt"] = 0,
 										["m_crit"] = 0,
 										["c_min"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["n_amt"] = 2,
+										["a_dmg"] = 0,
 										["spellschool"] = 1,
-										["MISS"] = 1,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
 							["friendlyfire"] = {
 							},
+							["end_time"] = 1602329824,
+							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1596396138,
-							["on_hold"] = false,
-							["start_time"] = 1596396126,
-							["serial"] = "Creature-0-4445-0-178-1506-000027100B",
+							["tipo"] = 1,
+							["damage_taken"] = 55.007296,
+							["start_time"] = 1602329821,
+							["serial"] = "Creature-0-4447-1-28-3098-00008191F6",
 							["fight_component"] = true,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
 					["tipo"] = 3,
-					["combatId"] = 939,
+					["combatId"] = 952,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
 					["tipo"] = 7,
-					["combatId"] = 939,
+					["combatId"] = 952,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
 					["tipo"] = 9,
-					["combatId"] = 939,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Chilled"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 4,
-										["id"] = "Chilled",
-										["uptime"] = 15,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Frostbolt"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = -1,
-										["refreshamt"] = 0,
-										["id"] = "Frostbolt",
-										["uptime"] = 22,
-										["targets"] = {
-										},
-										["appliedamt"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 48,
-							["classe"] = "MAGE",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Arcane Intellect"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Arcane Intellect",
-										["uptime"] = 24,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Frost Armor"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Frost Armor",
-										["uptime"] = 24,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 37,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Frostbolt"] = 1,
-							},
-							["nome"] = "Mxym",
-							["tipo"] = 4,
-							["debuff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-01D4457C",
-							["last_event"] = 1596396143,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 939,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mxym"] = true,
-				},
-				["CombatStartedAt"] = 1051407.507,
-				["tempo_start"] = 1596396119,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 3764,
-				["playing_solo"] = true,
-				["totals"] = {
-					87, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["totals_grupo"] = {
-					73, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:22:23",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Scarlet Convert",
-				["TotalElapsedCombatTime"] = 1051401.856,
-				["CombatEndedAt"] = 1051401.856,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Mxym"] = 73.006482,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 1051401.856,
-				["combat_id"] = 939,
-				["player_last_events"] = {
-				},
-				["frags"] = {
-					["Scarlet Convert"] = 1,
-				},
-				["data_inicio"] = "21:22:00",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 1051378.706,
-				["contra"] = "Scarlet Convert",
-				["spells_cast_timeline"] = {
-				},
-			}, -- [15]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 938,
+					["combatId"] = 952,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.004998,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Scarlet Convert"] = 78,
-							},
-							["pets"] = {
-							},
-							["end_time"] = 1596396108,
-							["tipo"] = 1,
-							["classe"] = "MAGE",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 78.004998,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 78.004998,
-							["on_hold"] = false,
-							["damage_taken"] = 0.004998,
-							["nome"] = "Mxym",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Frostbolt"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Scarlet Convert"] = 78,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 78,
-										["n_min"] = 18,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 78,
-										["c_max"] = 0,
-										["id"] = "Frostbolt",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["a_dmg"] = 0,
-										["spellschool"] = 16,
-									},
-								},
-								["tipo"] = 2,
-							},
+							["nome"] = "Antun",
 							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 18.3024397002234,
-							["colocacao"] = 1,
-							["last_event"] = 1596396107,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1596396103,
-							["serial"] = "Player-4465-01D4457C",
-							["friendlyfire_total"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.004971,
-							["damage_from"] = {
-								["Mxym"] = true,
-							},
-							["targets"] = {
-							},
 							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.004971,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 0.004971,
-							["monster"] = true,
-							["damage_taken"] = 78.004971,
-							["nome"] = "Scarlet Convert",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
 							},
 							["last_event"] = 0,
-							["last_dps"] = 0,
-							["end_time"] = 1596396108,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1596396108,
-							["serial"] = "Creature-0-4445-0-178-1506-00002707DF",
-							["fight_component"] = true,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 938,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 938,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 938,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Frostbolt"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = -1,
-										["refreshamt"] = 2,
-										["id"] = "Frostbolt",
-										["uptime"] = 3,
-										["targets"] = {
-										},
-										["appliedamt"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 10,
-							["classe"] = "MAGE",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Arcane Intellect"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Arcane Intellect",
-										["uptime"] = 5,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Frost Armor"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Frost Armor",
-										["uptime"] = 5,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 3,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
+							["classe"] = "SHAMAN",
 							["spell_cast"] = {
-								["Frostbolt"] = 3,
+								["Lightning Bolt"] = 2,
 							},
-							["nome"] = "Mxym",
+							["serial"] = "Player-4465-01D55331",
 							["tipo"] = 4,
-							["debuff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-01D4457C",
-							["last_event"] = 1596396108,
 						}, -- [1]
 					},
 				}, -- [4]
 				{
 					["tipo"] = 2,
-					["combatId"] = 938,
+					["combatId"] = 952,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
-					["Mxym"] = true,
+					["Antun"] = true,
 				},
-				["CombatStartedAt"] = 1051377.92,
-				["tempo_start"] = 1596396103,
+				["CombatStartedAt"] = 54007.519,
+				["tempo_start"] = 1602329817,
 				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["combat_counter"] = 3763,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["playing_solo"] = true,
 				["totals"] = {
-					78, -- [1]
+					59, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -4781,39 +5675,29 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 					["frags_total"] = 0,
 				},
-				["totals_grupo"] = {
-					78, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
+				["player_last_events"] = {
 				},
 				["frags_need_refresh"] = true,
 				["instance_type"] = "none",
 				["hasSaved"] = true,
-				["data_fim"] = "21:21:49",
+				["data_fim"] = "13:37:05",
+				["pvp"] = true,
 				["cleu_timeline"] = {
 				},
-				["enemy"] = "Scarlet Convert",
-				["TotalElapsedCombatTime"] = 1051367.357,
-				["CombatEndedAt"] = 1051367.357,
+				["enemy"] = "Mottled Boar",
+				["TotalElapsedCombatTime"] = 54003.065,
+				["CombatEndedAt"] = 54003.065,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
+				},
+				["data_inicio"] = "13:36:58",
+				["end_time"] = 54003.065,
+				["combat_id"] = 952,
+				["frags"] = {
+					["Mottled Boar"] = 1,
+				},
+				["spells_cast_timeline"] = {
 				},
 				["PhaseData"] = {
 					{
@@ -4822,7 +5706,7 @@ _detalhes_database = {
 					}, -- [1]
 					["damage"] = {
 						{
-							["Mxym"] = 78.004998,
+							["Antun"] = 55.006381,
 						}, -- [1]
 					},
 					["heal_section"] = {
@@ -4834,261 +5718,14 @@ _detalhes_database = {
 					["damage_section"] = {
 					},
 				},
-				["end_time"] = 1051367.357,
-				["combat_id"] = 938,
-				["player_last_events"] = {
-				},
-				["frags"] = {
-					["Scarlet Convert"] = 1,
-				},
-				["data_inicio"] = "21:21:44",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
 				["CombatSkillCache"] = {
 				},
+				["combat_counter"] = 3790,
+				["start_time"] = 53996.185,
 				["TimeData"] = {
-				},
-				["start_time"] = 1051362.444,
-				["contra"] = "Scarlet Convert",
-				["spells_cast_timeline"] = {
-				},
-			}, -- [16]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 937,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.00231,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Scarlet Convert"] = 79,
-							},
-							["pets"] = {
-							},
-							["end_time"] = 1596396094,
-							["tipo"] = 1,
-							["classe"] = "MAGE",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 79.00231,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 79.00231,
-							["on_hold"] = false,
-							["damage_taken"] = 0.00231,
-							["nome"] = "Mxym",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Frostbolt"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 21,
-										["targets"] = {
-											["Scarlet Convert"] = 79,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 79,
-										["n_min"] = 19,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 79,
-										["c_max"] = 0,
-										["id"] = "Frostbolt",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["a_dmg"] = 0,
-										["spellschool"] = 16,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 17.681806177747,
-							["colocacao"] = 1,
-							["last_event"] = 1596396093,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1596396089,
-							["serial"] = "Player-4465-01D4457C",
-							["friendlyfire_total"] = 0,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.005485,
-							["damage_from"] = {
-								["Mxym"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.005485,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 0.005485,
-							["monster"] = true,
-							["damage_taken"] = 79.005485,
-							["nome"] = "Scarlet Convert",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 0,
-							["last_dps"] = 0,
-							["end_time"] = 1596396094,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1596396094,
-							["serial"] = "Creature-0-4445-0-178-1506-0000A7075C",
-							["fight_component"] = true,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 937,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 937,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 937,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Frostbolt"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = -1,
-										["refreshamt"] = 2,
-										["id"] = "Frostbolt",
-										["uptime"] = 4,
-										["targets"] = {
-										},
-										["appliedamt"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 10,
-							["classe"] = "MAGE",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Arcane Intellect"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Arcane Intellect",
-										["uptime"] = 5,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Frost Armor"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Frost Armor",
-										["uptime"] = 5,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 4,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Frostbolt"] = 3,
-							},
-							["nome"] = "Mxym",
-							["tipo"] = 4,
-							["debuff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-01D4457C",
-							["last_event"] = 1596396094,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 937,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mxym"] = true,
-				},
-				["CombatStartedAt"] = 1051361.754,
-				["tempo_start"] = 1596396089,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 3762,
-				["playing_solo"] = true,
-				["totals"] = {
-					79, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
 				},
 				["totals_grupo"] = {
-					79, -- [1]
+					55, -- [1]
 					0, -- [2]
 					{
 						0, -- [1]
@@ -5107,464 +5744,6 @@ _detalhes_database = {
 						["dispell"] = 0,
 						["cooldowns_defensive"] = 0,
 					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:21:35",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Scarlet Convert",
-				["TotalElapsedCombatTime"] = 1051353.244,
-				["CombatEndedAt"] = 1051353.244,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Mxym"] = 79.00231,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 1051353.244,
-				["combat_id"] = 937,
-				["player_last_events"] = {
-				},
-				["frags"] = {
-					["Scarlet Convert"] = 1,
-				},
-				["data_inicio"] = "21:21:30",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 1051348.05,
-				["contra"] = "Scarlet Convert",
-				["spells_cast_timeline"] = {
-				},
-			}, -- [17]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 936,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.001359,
-							["damage_from"] = {
-								["Scarlet Convert"] = true,
-							},
-							["targets"] = {
-								["Scarlet Convert"] = 72,
-							},
-							["pets"] = {
-							},
-							["total"] = 72.001359,
-							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 72.001359,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["end_time"] = 1596396076,
-							["damage_taken"] = 10.001359,
-							["friendlyfire"] = {
-							},
-							["nome"] = "Mxym",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Chilled"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Scarlet Convert"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["r_amt"] = 0,
-										["id"] = "Chilled",
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 0,
-										["RESIST"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 16,
-									},
-									["Frostbolt"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 19,
-										["targets"] = {
-											["Scarlet Convert"] = 56,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 56,
-										["n_min"] = 18,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 56,
-										["c_max"] = 0,
-										["id"] = "Frostbolt",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 16,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 6,
-										["targets"] = {
-											["Scarlet Convert"] = 16,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 16,
-										["n_min"] = 5,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 16,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["custom"] = 0,
-							["last_dps"] = 5.7962774915377,
-							["colocacao"] = 1,
-							["last_event"] = 1596396074,
-							["on_hold"] = false,
-							["start_time"] = 1596396062,
-							["serial"] = "Player-4465-01D4457C",
-							["classe"] = "MAGE",
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.003709,
-							["damage_from"] = {
-								["Mxym"] = true,
-							},
-							["targets"] = {
-								["Mxym"] = 10,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["end_time"] = 1596396076,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 10.003709,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 10.003709,
-							["fight_component"] = true,
-							["damage_taken"] = 72.003709,
-							["nome"] = "Scarlet Convert",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 4,
-										["targets"] = {
-											["Mxym"] = 10,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 10,
-										["n_min"] = 3,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 10,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1596396074,
-							["on_hold"] = false,
-							["start_time"] = 1596396069,
-							["serial"] = "Creature-0-4445-0-178-1506-0000271173",
-							["friendlyfire_total"] = 0,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 936,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 936,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 936,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Chilled"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 1,
-										["id"] = "Chilled",
-										["uptime"] = 6,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Frostbolt"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = -1,
-										["refreshamt"] = 1,
-										["id"] = "Frostbolt",
-										["uptime"] = 12,
-										["targets"] = {
-										},
-										["appliedamt"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 28,
-							["classe"] = "MAGE",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Arcane Intellect"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Arcane Intellect",
-										["uptime"] = 14,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Frost Armor"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Frost Armor",
-										["uptime"] = 14,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 18,
-							["buff_uptime_targets"] = {
-							},
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Frostbolt"] = 2,
-							},
-							["nome"] = "Mxym",
-							["tipo"] = 4,
-							["debuff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-01D4457C",
-							["last_event"] = 1596396076,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 936,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Mxym"] = true,
-				},
-				["CombatStartedAt"] = 1051347.063,
-				["tempo_start"] = 1596396062,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 3761,
-				["playing_solo"] = true,
-				["totals"] = {
-					82, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["totals_grupo"] = {
-					72, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "21:21:17",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Scarlet Convert",
-				["TotalElapsedCombatTime"] = 1051334.996,
-				["CombatEndedAt"] = 1051334.996,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Mxym"] = 72.001359,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["end_time"] = 1051334.996,
-				["combat_id"] = 936,
-				["player_last_events"] = {
-				},
-				["frags"] = {
-					["Scarlet Convert"] = 1,
-				},
-				["data_inicio"] = "21:21:03",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 1051321.614,
-				["contra"] = "Scarlet Convert",
-				["spells_cast_timeline"] = {
 				},
 			}, -- [18]
 		},
@@ -5598,7 +5777,7 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = 631.565795898438,
+					["y"] = 631.557373046875,
 					["x"] = -1160.94877624512,
 					["w"] = 234.897445678711,
 					["h"] = 136.641067504883,
@@ -5632,7 +5811,7 @@ _detalhes_database = {
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = 631.566040039063,
+					["y"] = 631.557739257813,
 					["x"] = -929.012847900391,
 					["w"] = 228.974395751953,
 					["h"] = 136.640808105469,
@@ -5694,7 +5873,7 @@ _detalhes_database = {
 	},
 	["last_instance_time"] = 1569743963,
 	["active_profile"] = "Default",
-	["last_day"] = "10",
+	["last_day"] = "11",
 	["benchmark_db"] = {
 		["frame"] = {
 		},
@@ -5715,8 +5894,8 @@ _detalhes_database = {
 			["dividebyhundred"] = true,
 			["showamount"] = false,
 			["useplayercolor"] = false,
-			["useclasscolors"] = false,
 			["alwaysshowme"] = true,
+			["useclasscolors"] = false,
 		},
 		["DETAILS_PLUGIN_DAMAGE_RANK"] = {
 			["enabled"] = true,
@@ -5729,20 +5908,15 @@ _detalhes_database = {
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = true,
 			["opened"] = 0,
-			["max_emote_segments"] = 3,
 			["author"] = "Details! Team",
-			["hide_on_combat"] = false,
 			["show_icon"] = 5,
+			["hide_on_combat"] = false,
+			["max_emote_segments"] = 3,
 		},
-		["DETAILS_PLUGIN_YANP"] = {
+		["DETAILS_PLUGIN_DPS_TUNING"] = {
 			["enabled"] = true,
-			["rightclick_closed"] = false,
-			["auto_open"] = true,
-			["hide_on_combat"] = true,
 			["author"] = "Details! Team",
-			["deaths_table"] = {
-			},
-			["shown_time"] = 30,
+			["SpellBarsShowType"] = 1,
 		},
 		["DETAILS_PLUGIN_TIME_ATTACK"] = {
 			["enabled"] = true,
@@ -5755,15 +5929,20 @@ _detalhes_database = {
 			},
 			["time"] = 40,
 			["history_lastindex"] = 0,
-			["realm_lastamt"] = 0,
+			["author"] = "Details! Team",
 			["realm_history"] = {
 			},
-			["author"] = "Details! Team",
+			["realm_lastamt"] = 0,
 		},
-		["DETAILS_PLUGIN_DPS_TUNING"] = {
+		["DETAILS_PLUGIN_YANP"] = {
 			["enabled"] = true,
+			["rightclick_closed"] = false,
+			["auto_open"] = true,
 			["author"] = "Details! Team",
-			["SpellBarsShowType"] = 1,
+			["hide_on_combat"] = true,
+			["deaths_table"] = {
+			},
+			["shown_time"] = 30,
 		},
 	},
 	["announce_prepots"] = {
@@ -5771,16 +5950,15 @@ _detalhes_database = {
 		["channel"] = "SELF",
 		["reverse"] = false,
 	},
-	["combat_counter"] = 3791,
+	["combat_counter"] = 3810,
 	["announce_firsthit"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
 	},
 	["last_realversion"] = 142,
-	["character_data"] = {
-		["logons"] = 1395,
+	["cached_talents"] = {
 	},
-	["combat_id"] = 953,
+	["combat_id"] = 969,
 	["savedStyles"] = {
 		{
 			["show_statusbar"] = false,
@@ -6088,8 +6266,18 @@ _detalhes_database = {
 			["bg_b"] = 0,
 		}, -- [1]
 	},
-	["force_font_outline"] = "",
-	["on_death_menu"] = true,
+	["ignore_nicktag"] = true,
+	["mythic_dungeon_currentsaved"] = {
+		["dungeon_name"] = "",
+		["started"] = false,
+		["segment_id"] = 0,
+		["ej_id"] = 0,
+		["started_at"] = 0,
+		["run_id"] = 0,
+		["level"] = 0,
+		["dungeon_zone_id"] = 0,
+		["previous_boss_killed_at"] = 0,
+	},
 	["announce_deaths"] = {
 		["enabled"] = false,
 		["last_hits"] = 1,
@@ -6112,15 +6300,15 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["on_hold"] = false,
+					["damage_taken"] = 0.005433,
 					["classe"] = "PRIEST",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005433,
-					["friendlyfire_total"] = 0,
+					["last_dps"] = 0,
 					["dps_started"] = false,
 					["end_time"] = 1595323224,
-					["serial"] = "Player-4465-01C75D20",
+					["delay"] = 0,
 					["total"] = 0.005433,
 					["nome"] = "Mxyz",
 					["spells"] = {
@@ -6143,15 +6331,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 							["Smite"] = {
 								["c_amt"] = 0,
@@ -6173,29 +6361,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Smite",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
 					["grupo"] = true,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.005433,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1595323221,
-					["delay"] = 0,
-					["last_dps"] = 0,
+					["serial"] = "Player-4465-01C75D20",
+					["friendlyfire_total"] = 0,
 				}, -- [1]
 				{
 					["flag_original"] = 68168,
@@ -6213,7 +6401,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001277,
-					["serial"] = "Creature-0-4448-0-5-1547-0000163414",
+					["delay"] = 0,
 					["monster"] = true,
 					["end_time"] = 1595323224,
 					["friendlyfire_total"] = 0,
@@ -6240,27 +6428,27 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.001277,
-					["custom"] = 0,
 					["tipo"] = 1,
+					["total"] = 0.001277,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["last_dps"] = 0,
 					["start_time"] = 1595323221,
-					["delay"] = 0,
+					["serial"] = "Creature-0-4448-0-5-1547-0000163414",
 					["fight_component"] = true,
 				}, -- [2]
 				{
@@ -6279,7 +6467,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004831,
-					["serial"] = "Creature-0-4448-0-5-1548-0000164A99",
+					["delay"] = 0,
 					["monster"] = true,
 					["end_time"] = 1595323224,
 					["friendlyfire_total"] = 0,
@@ -6306,27 +6494,27 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.004831,
-					["custom"] = 0,
 					["tipo"] = 1,
+					["total"] = 0.004831,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["last_dps"] = 0,
 					["start_time"] = 1595323221,
-					["delay"] = 0,
+					["serial"] = "Creature-0-4448-0-5-1548-0000164A99",
 					["fight_component"] = true,
 				}, -- [3]
 				{
@@ -6340,15 +6528,15 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007292,
-					["fight_component"] = true,
+					["friendlyfire_total"] = 0,
 					["dps_started"] = false,
 					["end_time"] = 1595323224,
-					["serial"] = "Creature-0-4448-0-5-1890-000016A4DF",
+					["delay"] = 0,
 					["damage_taken"] = 0.007292,
 					["nome"] = "Rattlecage Skeleton",
 					["spells"] = {
@@ -6372,15 +6560,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
@@ -6390,11 +6578,11 @@ _detalhes_database = {
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["last_dps"] = 0,
 					["start_time"] = 1595323221,
-					["delay"] = 0,
-					["friendlyfire_total"] = 0,
+					["serial"] = "Creature-0-4448-0-5-1890-000016A4DF",
+					["fight_component"] = true,
 				}, -- [4]
 				{
 					["flag_original"] = 68136,
@@ -6408,15 +6596,15 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008527,
-					["fight_component"] = true,
+					["friendlyfire_total"] = 0,
 					["dps_started"] = false,
 					["end_time"] = 1595624605,
-					["serial"] = "Creature-0-4448-1-172-3098-00001AEF3B",
+					["delay"] = 0,
 					["damage_taken"] = 0.008527,
 					["nome"] = "Mottled Boar",
 					["spells"] = {
@@ -6441,15 +6629,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
@@ -6459,11 +6647,11 @@ _detalhes_database = {
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["last_dps"] = 0,
 					["start_time"] = 1595624602,
-					["delay"] = 0,
-					["friendlyfire_total"] = 0,
+					["serial"] = "Creature-0-4448-1-172-3098-00001AEF3B",
+					["fight_component"] = true,
 				}, -- [5]
 				{
 					["flag_original"] = 68168,
@@ -6480,7 +6668,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005781,
-					["serial"] = "Creature-0-4448-1-172-3281-00001B2472",
+					["delay"] = 0,
 					["monster"] = true,
 					["end_time"] = 1595624605,
 					["friendlyfire_total"] = 0,
@@ -6507,27 +6695,27 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.005781,
-					["custom"] = 0,
 					["tipo"] = 1,
+					["total"] = 0.005781,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["last_dps"] = 0,
 					["start_time"] = 1595624602,
-					["delay"] = 0,
+					["serial"] = "Creature-0-4448-1-172-3281-00001B2472",
 					["fight_component"] = true,
 				}, -- [6]
 				{
@@ -6539,8 +6727,8 @@ _detalhes_database = {
 						["Mindless Zombie"] = 0,
 						["Duskbat"] = 0,
 						["Rattlecage Skeleton"] = 0,
-						["Meven Korgal"] = 0,
 						["Young Night Web Spider"] = 0,
+						["Night Web Spider"] = 0,
 						["Scarlet Convert"] = 0,
 						["Ragged Scavenger"] = 0,
 						["Wretched Zombie"] = 0,
@@ -6549,19 +6737,19 @@ _detalhes_database = {
 						["Mangy Duskbat"] = 0,
 						["Scarlet Initiate"] = 0,
 						["Young Scavenger"] = 0,
-						["Night Web Spider"] = 0,
+						["Meven Korgal"] = 0,
 					},
 					["pets"] = {
 					},
-					["on_hold"] = false,
+					["damage_taken"] = 0.001245,
 					["classe"] = "MAGE",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001245,
-					["friendlyfire_total"] = 0,
+					["last_dps"] = 0,
 					["dps_started"] = false,
 					["end_time"] = 1596391879,
-					["serial"] = "Player-4465-01D4457C",
+					["delay"] = 0,
 					["total"] = 0.001245,
 					["nome"] = "Mxym",
 					["spells"] = {
@@ -6577,9 +6765,9 @@ _detalhes_database = {
 									["Wretched Zombie"] = 0,
 									["Rattlecage Skeleton"] = 0,
 									["Mangy Duskbat"] = 0,
-									["Ragged Scavenger"] = 0,
-									["Young Scavenger"] = 0,
 									["Duskbat"] = 0,
+									["Young Scavenger"] = 0,
+									["Ragged Scavenger"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -6590,15 +6778,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Fireball",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 							["Frostbolt"] = {
 								["c_amt"] = 0,
@@ -6625,15 +6813,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Frostbolt",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
+								["a_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 							["!Melee"] = {
 								["c_amt"] = 0,
@@ -6664,15 +6852,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
+								["a_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 							["Chilled"] = {
 								["c_amt"] = 0,
@@ -6683,8 +6871,8 @@ _detalhes_database = {
 								["targets"] = {
 									["Mindless Zombie"] = 0,
 									["Mangy Duskbat"] = 0,
-									["Young Night Web Spider"] = 0,
 									["Night Web Spider"] = 0,
+									["Young Night Web Spider"] = 0,
 									["Scarlet Convert"] = 0,
 								},
 								["m_dmg"] = 0,
@@ -6696,29 +6884,29 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Chilled",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
 					["grupo"] = true,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.001245,
+					["last_event"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1596391876,
-					["delay"] = 0,
-					["last_dps"] = 0,
+					["serial"] = "Player-4465-01D4457C",
+					["friendlyfire_total"] = 0,
 				}, -- [7]
 				{
 					["flag_original"] = 68136,
@@ -6732,15 +6920,15 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003679,
-					["dps_started"] = false,
+					["friendlyfire_total"] = 0,
 					["fight_component"] = true,
 					["end_time"] = 1596391879,
-					["serial"] = "Creature-0-4445-0-178-1501-000026FC22",
+					["delay"] = 0,
 					["on_hold"] = false,
 					["nome"] = "Mindless Zombie",
 					["spells"] = {
@@ -6766,15 +6954,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
@@ -6784,11 +6972,11 @@ _detalhes_database = {
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["damage_taken"] = 0.003679,
 					["start_time"] = 1596391876,
-					["delay"] = 0,
-					["friendlyfire_total"] = 0,
+					["serial"] = "Creature-0-4445-0-178-1501-000026FC22",
+					["dps_started"] = false,
 				}, -- [8]
 				{
 					["flag_original"] = 68136,
@@ -6800,15 +6988,15 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001528,
-					["dps_started"] = false,
+					["friendlyfire_total"] = 0,
 					["fight_component"] = true,
 					["end_time"] = 1596391879,
-					["serial"] = "Creature-0-4445-0-178-1512-000026FA9B",
+					["delay"] = 0,
 					["on_hold"] = false,
 					["nome"] = "Duskbat",
 					["spells"] = {
@@ -6831,15 +7019,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
@@ -6849,11 +7037,11 @@ _detalhes_database = {
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["damage_taken"] = 0.001528,
 					["start_time"] = 1596391876,
-					["delay"] = 0,
-					["friendlyfire_total"] = 0,
+					["serial"] = "Creature-0-4445-0-178-1512-000026FA9B",
+					["dps_started"] = false,
 				}, -- [9]
 				{
 					["flag_original"] = 68136,
@@ -6866,15 +7054,15 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005944,
-					["friendlyfire_total"] = 0,
 					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1596392205,
-					["delay"] = 0,
+					["serial"] = "Creature-0-4445-0-178-1502-00002702D6",
 					["last_dps"] = 0,
 					["nome"] = "Wretched Zombie",
 					["spells"] = {
@@ -6899,15 +7087,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
+								["a_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
@@ -6917,11 +7105,11 @@ _detalhes_database = {
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["on_hold"] = false,
 					["start_time"] = 1596392202,
-					["serial"] = "Creature-0-4445-0-178-1502-00002702D6",
-					["dps_started"] = false,
+					["delay"] = 0,
+					["friendlyfire_total"] = 0,
 				}, -- [10]
 				{
 					["flag_original"] = 68136,
@@ -6933,15 +7121,15 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005211,
-					["fight_component"] = true,
+					["friendlyfire_total"] = 0,
 					["dps_started"] = false,
 					["end_time"] = 1596393208,
-					["serial"] = "Creature-0-4445-0-178-1508-00002700DC",
+					["delay"] = 0,
 					["damage_taken"] = 0.005211,
 					["nome"] = "Young Scavenger",
 					["spells"] = {
@@ -6964,15 +7152,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
@@ -6982,11 +7170,11 @@ _detalhes_database = {
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["last_dps"] = 0,
 					["start_time"] = 1596393205,
-					["delay"] = 0,
-					["friendlyfire_total"] = 0,
+					["serial"] = "Creature-0-4445-0-178-1508-00002700DC",
+					["fight_component"] = true,
 				}, -- [11]
 				{
 					["flag_original"] = 68136,
@@ -6998,15 +7186,15 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003617,
-					["fight_component"] = true,
+					["friendlyfire_total"] = 0,
 					["dps_started"] = false,
 					["end_time"] = 1596393208,
-					["serial"] = "Creature-0-4445-0-178-1513-000027017E",
+					["delay"] = 0,
 					["damage_taken"] = 0.003617,
 					["nome"] = "Mangy Duskbat",
 					["spells"] = {
@@ -7029,15 +7217,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
@@ -7047,11 +7235,11 @@ _detalhes_database = {
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["last_dps"] = 0,
 					["start_time"] = 1596393205,
-					["delay"] = 0,
-					["friendlyfire_total"] = 0,
+					["serial"] = "Creature-0-4445-0-178-1513-000027017E",
+					["fight_component"] = true,
 				}, -- [12]
 				{
 					["flag_original"] = 68136,
@@ -7063,15 +7251,15 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003178,
-					["fight_component"] = true,
+					["friendlyfire_total"] = 0,
 					["dps_started"] = false,
 					["end_time"] = 1596393208,
-					["serial"] = "Creature-0-4445-0-178-1509-000027022A",
+					["delay"] = 0,
 					["damage_taken"] = 0.003178,
 					["nome"] = "Ragged Scavenger",
 					["spells"] = {
@@ -7094,15 +7282,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
@@ -7112,11 +7300,11 @@ _detalhes_database = {
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["last_dps"] = 0,
 					["start_time"] = 1596393205,
-					["delay"] = 0,
-					["friendlyfire_total"] = 0,
+					["serial"] = "Creature-0-4445-0-178-1509-000027022A",
+					["fight_component"] = true,
 				}, -- [13]
 				{
 					["flag_original"] = 68136,
@@ -7127,15 +7315,15 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.004799,
-					["friendlyfire_total"] = 0,
 					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1596395056,
-					["delay"] = 0,
+					["serial"] = "Creature-0-4445-0-178-1919-000027029D",
 					["damage_taken"] = 0.004799,
 					["nome"] = "Samuel Fipps",
 					["spells"] = {
@@ -7148,11 +7336,11 @@ _detalhes_database = {
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["last_dps"] = 0,
 					["start_time"] = 1596395053,
-					["serial"] = "Creature-0-4445-0-178-1919-000027029D",
-					["dps_started"] = false,
+					["delay"] = 0,
+					["friendlyfire_total"] = 0,
 				}, -- [14]
 				{
 					["flag_original"] = 68136,
@@ -7163,15 +7351,15 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007724,
-					["friendlyfire_total"] = 0,
 					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1596395056,
-					["delay"] = 0,
+					["serial"] = "Creature-0-4445-0-178-4075-000026F43F",
 					["damage_taken"] = 0.007724,
 					["nome"] = "Rat",
 					["spells"] = {
@@ -7184,11 +7372,11 @@ _detalhes_database = {
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["last_dps"] = 0,
 					["start_time"] = 1596395053,
-					["serial"] = "Creature-0-4445-0-178-4075-000026F43F",
-					["dps_started"] = false,
+					["delay"] = 0,
+					["friendlyfire_total"] = 0,
 				}, -- [15]
 				{
 					["flag_original"] = 68136,
@@ -7200,15 +7388,15 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003429,
-					["friendlyfire_total"] = 0,
 					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1596395056,
-					["delay"] = 0,
+					["serial"] = "Creature-0-4445-0-178-1504-0000270A3C",
 					["damage_taken"] = 0.003429,
 					["nome"] = "Young Night Web Spider",
 					["spells"] = {
@@ -7231,15 +7419,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
+								["a_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 							["Weak Poison"] = {
 								["c_amt"] = 0,
@@ -7259,15 +7447,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Weak Poison",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
+								["a_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
@@ -7277,11 +7465,11 @@ _detalhes_database = {
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["last_dps"] = 0,
 					["start_time"] = 1596395053,
-					["serial"] = "Creature-0-4445-0-178-1504-0000270A3C",
-					["dps_started"] = false,
+					["delay"] = 0,
+					["friendlyfire_total"] = 0,
 				}, -- [16]
 				{
 					["flag_original"] = 68168,
@@ -7299,7 +7487,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008826,
-					["delay"] = 0,
+					["serial"] = "Creature-0-4445-0-178-1505-0000270278",
 					["monster"] = true,
 					["end_time"] = 1596395056,
 					["friendlyfire_total"] = 0,
@@ -7326,15 +7514,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
+								["a_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 							["Weak Poison"] = {
 								["c_amt"] = 0,
@@ -7354,27 +7542,27 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Weak Poison",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
+								["a_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["tipo"] = 1,
-					["total"] = 0.008826,
-					["on_hold"] = false,
-					["custom"] = 0,
 					["last_event"] = 0,
+					["on_hold"] = false,
+					["total"] = 0.008826,
+					["custom"] = 0,
+					["tipo"] = 1,
 					["last_dps"] = 0,
 					["start_time"] = 1596395053,
-					["serial"] = "Creature-0-4445-0-178-1505-0000270278",
+					["delay"] = 0,
 					["fight_component"] = true,
 				}, -- [17]
 				{
@@ -7393,7 +7581,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.002022,
-					["serial"] = "Creature-0-4445-0-178-1506-0000270823",
+					["delay"] = 0,
 					["monster"] = true,
 					["end_time"] = 1596395858,
 					["friendlyfire_total"] = 0,
@@ -7420,27 +7608,27 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.002022,
-					["custom"] = 0,
 					["tipo"] = 1,
+					["total"] = 0.002022,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["last_dps"] = 0,
 					["start_time"] = 1596395855,
-					["delay"] = 0,
+					["serial"] = "Creature-0-4445-0-178-1506-0000270823",
 					["fight_component"] = true,
 				}, -- [18]
 				{
@@ -7459,7 +7647,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.002573,
-					["serial"] = "Creature-0-4445-0-178-1507-000027068C",
+					["delay"] = 0,
 					["monster"] = true,
 					["end_time"] = 1596395858,
 					["friendlyfire_total"] = 0,
@@ -7486,27 +7674,27 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Fireball",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.002573,
-					["custom"] = 0,
 					["tipo"] = 1,
+					["total"] = 0.002573,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["last_dps"] = 0,
 					["start_time"] = 1596395855,
-					["delay"] = 0,
+					["serial"] = "Creature-0-4445-0-178-1507-000027068C",
 					["fight_component"] = true,
 				}, -- [19]
 				{
@@ -7526,7 +7714,7 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.008034,
-					["serial"] = "Creature-0-4445-0-178-1667-0000270791",
+					["delay"] = 0,
 					["dps_started"] = false,
 					["end_time"] = 1596557696,
 					["friendlyfire_total"] = 0,
@@ -7552,27 +7740,27 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.008034,
-					["custom"] = 0,
 					["tipo"] = 1,
+					["total"] = 0.008034,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
 					["damage_taken"] = 0.008034,
 					["start_time"] = 1596557693,
-					["delay"] = 0,
+					["serial"] = "Creature-0-4445-0-178-1667-0000270791",
 					["monster"] = true,
 				}, -- [20]
 				{
@@ -7585,15 +7773,16 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["damage_taken"] = 0.006609,
+					["on_hold"] = false,
 					["classe"] = "SHAMAN",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006609,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["dps_started"] = false,
 					["end_time"] = 1596557967,
-					["delay"] = 0,
+					["serial"] = "Player-4465-01D4530D",
 					["total"] = 0.006609,
 					["nome"] = "Mxys",
 					["spells"] = {
@@ -7616,29 +7805,28 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
 					["grupo"] = true,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["friendlyfire_total"] = 0,
 					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
+					["tipo"] = 1,
+					["damage_taken"] = 0.006609,
 					["start_time"] = 1596557964,
-					["serial"] = "Player-4465-01D4530D",
-					["friendlyfire"] = {
-					},
+					["delay"] = 0,
+					["last_dps"] = 0,
 				}, -- [21]
 				{
 					["flag_original"] = 68136,
@@ -7650,15 +7838,15 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005606,
-					["friendlyfire_total"] = 0,
 					["dps_started"] = false,
+					["fight_component"] = true,
 					["end_time"] = 1596557967,
-					["delay"] = 0,
+					["serial"] = "Creature-0-4445-1-154-2955-0000294EE3",
 					["damage_taken"] = 0.005606,
 					["nome"] = "Plainstrider",
 					["spells"] = {
@@ -7681,15 +7869,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
+								["a_amt"] = 0,
 								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["m_amt"] = 0,
+								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
@@ -7699,11 +7887,11 @@ _detalhes_database = {
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["last_dps"] = 0,
 					["start_time"] = 1596557964,
-					["serial"] = "Creature-0-4445-1-154-2955-0000294EE3",
-					["fight_component"] = true,
+					["delay"] = 0,
+					["friendlyfire_total"] = 0,
 				}, -- [22]
 				{
 					["flag_original"] = 1297,
@@ -7711,20 +7899,20 @@ _detalhes_database = {
 					["damage_from"] = {
 					},
 					["targets"] = {
+						["Scorpid Worker"] = 0,
 						["Mottled Boar"] = 0,
 					},
 					["pets"] = {
 					},
-					["on_hold"] = false,
+					["damage_taken"] = 0.003297,
 					["classe"] = "SHAMAN",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.003297,
-					["friendlyfire"] = {
-					},
+					["last_dps"] = 0,
 					["dps_started"] = false,
 					["end_time"] = 1602329595,
-					["serial"] = "Player-4465-01D55331",
+					["delay"] = 0,
 					["total"] = 0.003297,
 					["nome"] = "Antun",
 					["spells"] = {
@@ -7736,6 +7924,7 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
+									["Scorpid Worker"] = 0,
 									["Mottled Boar"] = 0,
 								},
 								["m_dmg"] = 0,
@@ -7747,15 +7936,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Lightning Bolt",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 							["!Melee"] = {
 								["c_amt"] = 0,
@@ -7764,7 +7953,75 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
+									["Scorpid Worker"] = 0,
 									["Mottled Boar"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["c_min"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["grupo"] = true,
+					["tipo"] = 1,
+					["friendlyfire_total"] = 0,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1602329592,
+					["serial"] = "Player-4465-01D55331",
+					["friendlyfire"] = {
+					},
+				}, -- [23]
+				{
+					["flag_original"] = 68136,
+					["totalabsorbed"] = 0.006961,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Antun"] = 0,
+					},
+					["pets"] = {
+					},
+					["on_hold"] = false,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.006961,
+					["fight_component"] = true,
+					["dps_started"] = false,
+					["end_time"] = 1602404237,
+					["last_event"] = 0,
+					["friendlyfire"] = {
+					},
+					["nome"] = "Scorpid Worker",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Antun"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -7778,26 +8035,25 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
 								["r_amt"] = 0,
+								["c_min"] = 0,
 							},
 						},
-						["tipo"] = 2,
 					},
-					["grupo"] = true,
-					["last_event"] = 0,
 					["friendlyfire_total"] = 0,
+					["total"] = 0.006961,
+					["serial"] = "Creature-0-4447-1-28-3124-00000259F3",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.003297,
-					["start_time"] = 1602329592,
+					["damage_taken"] = 0.006961,
+					["start_time"] = 1602404234,
 					["delay"] = 0,
 					["last_dps"] = 0,
-				}, -- [23]
+				}, -- [24]
 			},
 		}, -- [1]
 		{
@@ -7815,10 +8071,10 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["flag_original"] = 1047,
+					["nome"] = "Mxyz",
+					["grupo"] = true,
 					["buff_uptime_targets"] = {
 					},
-					["grupo"] = true,
-					["nome"] = "Mxyz",
 					["spell_cast"] = {
 						["Smite"] = 0,
 					},
@@ -7866,8 +8122,7 @@ _detalhes_database = {
 						},
 						["tipo"] = 9,
 					},
-					["pets"] = {
-					},
+					["buff_uptime"] = 0,
 					["classe"] = "MAGE",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
@@ -7887,7 +8142,7 @@ _detalhes_database = {
 						["tipo"] = 9,
 					},
 					["debuff_uptime"] = 0,
-					["debuff_uptime_targets"] = {
+					["buff_uptime_targets"] = {
 					},
 					["grupo"] = true,
 					["spell_cast"] = {
@@ -7896,11 +8151,12 @@ _detalhes_database = {
 					},
 					["nome"] = "Mxym",
 					["last_event"] = 0,
-					["buff_uptime_targets"] = {
+					["debuff_uptime_targets"] = {
 					},
-					["tipo"] = 4,
+					["pets"] = {
+					},
 					["serial"] = "Player-4465-01D4457C",
-					["buff_uptime"] = 0,
+					["tipo"] = 4,
 				}, -- [2]
 				{
 					["fight_component"] = true,
@@ -7909,42 +8165,42 @@ _detalhes_database = {
 					["spell_cast"] = {
 						["Weak Poison"] = 0,
 					},
-					["pets"] = {
-					},
+					["flag_original"] = 68136,
 					["last_event"] = 0,
 					["tipo"] = 4,
 					["serial"] = "Creature-0-4445-0-178-1504-0000270A3C",
-					["flag_original"] = 68136,
+					["pets"] = {
+					},
 				}, -- [3]
 				{
 					["monster"] = true,
-					["last_event"] = 0,
+					["tipo"] = 4,
 					["nome"] = "Night Web Spider",
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["flag_original"] = 68168,
-					["tipo"] = 4,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-4445-0-178-1505-0000270278",
 					["spell_cast"] = {
 						["Weak Poison"] = 0,
-					},
-				}, -- [4]
-				{
-					["monster"] = true,
-					["tipo"] = 4,
-					["nome"] = "Scarlet Initiate",
-					["pets"] = {
-					},
-					["spell_cast"] = {
-						["Fireball"] = 0,
 					},
 					["flag_original"] = 68168,
 					["last_event"] = 0,
 					["fight_component"] = true,
-					["serial"] = "Creature-0-4445-0-178-1507-000027068C",
+					["serial"] = "Creature-0-4445-0-178-1505-0000270278",
 					["classe"] = "UNKNOW",
+				}, -- [4]
+				{
+					["monster"] = true,
+					["last_event"] = 0,
+					["nome"] = "Scarlet Initiate",
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["flag_original"] = 68168,
+					["tipo"] = 4,
+					["fight_component"] = true,
+					["serial"] = "Creature-0-4445-0-178-1507-000027068C",
+					["spell_cast"] = {
+						["Fireball"] = 0,
+					},
 				}, -- [5]
 				{
 					["flag_original"] = 1297,
@@ -7952,9 +8208,9 @@ _detalhes_database = {
 					["grupo"] = true,
 					["pets"] = {
 					},
-					["last_event"] = 0,
 					["tipo"] = 4,
 					["classe"] = "SHAMAN",
+					["last_event"] = 0,
 					["serial"] = "Player-4465-01D55331",
 					["spell_cast"] = {
 						["Lightning Bolt"] = 0,
@@ -7982,21 +8238,21 @@ _detalhes_database = {
 				0, -- [1]
 				[0] = 0,
 				["alternatepower"] = 0,
-				[6] = 0,
 				[3] = 0,
+				[6] = 0,
 			}, -- [3]
 			{
 				["buff_uptime"] = 0,
 				["ress"] = 0,
-				["dead"] = 0,
-				["cc_break"] = 0,
+				["cooldowns_defensive"] = 0,
+				["dispell"] = 0,
 				["interrupt"] = 0,
 				["debuff_uptime"] = 0,
-				["dispell"] = 0,
-				["cooldowns_defensive"] = 0,
+				["cc_break"] = 0,
+				["dead"] = 0,
 			}, -- [4]
-			["voidzone_damage"] = 0,
 			["frags_total"] = 0,
+			["voidzone_damage"] = 0,
 		},
 		["player_last_events"] = {
 		},
@@ -8006,36 +8262,7 @@ _detalhes_database = {
 		["__call"] = {
 		},
 		["data_inicio"] = 0,
-		["frags"] = {
-		},
-		["PhaseData"] = {
-			{
-				1, -- [1]
-				1, -- [2]
-			}, -- [1]
-			["damage"] = {
-			},
-			["heal_section"] = {
-			},
-			["heal"] = {
-			},
-			["damage_section"] = {
-			},
-		},
-		["overall_refreshed"] = true,
-		["hasSaved"] = true,
 		["spells_cast_timeline"] = {
-		},
-		["data_fim"] = 0,
-		["cleu_events"] = {
-			["n"] = 1,
-		},
-		["CombatSkillCache"] = {
-		},
-		["cleu_timeline"] = {
-		},
-		["start_time"] = 0,
-		["TimeData"] = {
 		},
 		["totals_grupo"] = {
 			0, -- [1]
@@ -8044,39 +8271,59 @@ _detalhes_database = {
 				0, -- [1]
 				[0] = 0,
 				["alternatepower"] = 0,
-				[6] = 0,
 				[3] = 0,
+				[6] = 0,
 			}, -- [3]
 			{
 				["buff_uptime"] = 0,
 				["ress"] = 0,
-				["dead"] = 0,
-				["cc_break"] = 0,
+				["cooldowns_defensive"] = 0,
+				["dispell"] = 0,
 				["interrupt"] = 0,
 				["debuff_uptime"] = 0,
-				["dispell"] = 0,
-				["cooldowns_defensive"] = 0,
+				["cc_break"] = 0,
+				["dead"] = 0,
 			}, -- [4]
 		},
+		["overall_refreshed"] = true,
+		["hasSaved"] = true,
+		["frags"] = {
+		},
+		["data_fim"] = 0,
+		["cleu_timeline"] = {
+		},
+		["CombatSkillCache"] = {
+		},
+		["cleu_events"] = {
+			["n"] = 1,
+		},
+		["start_time"] = 0,
+		["TimeData"] = {
+		},
+		["PhaseData"] = {
+			{
+				1, -- [1]
+				1, -- [2]
+			}, -- [1]
+			["damage_section"] = {
+			},
+			["heal_section"] = {
+			},
+			["heal"] = {
+			},
+			["damage"] = {
+			},
+		},
 	},
-	["mythic_dungeon_currentsaved"] = {
-		["dungeon_name"] = "",
-		["started"] = false,
-		["segment_id"] = 0,
-		["ej_id"] = 0,
-		["started_at"] = 0,
-		["run_id"] = 0,
-		["level"] = 0,
-		["dungeon_zone_id"] = 0,
-		["previous_boss_killed_at"] = 0,
-	},
-	["ignore_nicktag"] = true,
-	["cached_talents"] = {
+	["on_death_menu"] = true,
+	["force_font_outline"] = "",
+	["character_data"] = {
+		["logons"] = 1398,
 	},
 	["announce_cooldowns"] = {
-		["enabled"] = false,
 		["ignored_cooldowns"] = {
 		},
+		["enabled"] = false,
 		["custom"] = "",
 		["channel"] = "RAID",
 	},

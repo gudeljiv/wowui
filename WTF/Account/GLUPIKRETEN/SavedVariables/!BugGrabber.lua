@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 3092,
+	["session"] = 3116,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -3074,5 +3074,21 @@ BugGrabberDB = {
 			["session"] = 3078,
 			["counter"] = 1,
 		}, -- [388]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Experience/MobsToKill.lua:46: attempt to concatenate upvalue 'mbk' (a boolean value)",
+			["time"] = "2020/10/11 09:58:34",
+			["locals"] = "event = \"PLAYER_XP_UPDATE\"\nisInitialLogin = \"player\"\nisReloadingUi = nil\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = ChatFrame6 {\n SetJustifyV = <function> defined =[C]:-1\n RefreshIfNecessary = <function> defined =[C]:-1\n OnPostShow = <function> defined =[C]:-1\n CalculateLineAlphaValueFromTimestamp = <function> defined =[C]:-1\n isLayoutDirty = true\n tellTimer = 127231.447000\n isDisplayDirty = true\n GetFading = <function> defined =[C]:-1\n IsTextCopyable = <function> defined =[C]:-1\n shouldFadeAfterInactivity = true\n SetIndentedWordWrap = <function> defined =[C]:-1\n GetJustifyV = <function> defined =[C]:-1\n SetFont = <function> defined =[C]:-1\n GetMaxLines = <function> defined =[C]:-1\n GetIndentedWordWrap = <function> defined =[C]:-1\n buttonSide = \"left\"\n GetFont = <function> defined =[C]:-1\n SetMaxLines = <function> defined =[C]:-1\n CalculateSelectingCharacterIndicesForVisibleLine = <function> defined =[C]:-1\n PageUp = <function> defined =[C]:-1\n RefreshDisplay = <function> defined =[C]:-1\n SetFontObject = <function> defined =[C]:-1\n textIsCopyable = false\n SetOnScrollChangedCallback = <function> defined =[C]:-1\n ResizeButton = ChatFrame6ResizeButton {\n }\n overrideFadeTimestamp = 0\n MarkDisplayDirty = <function> defined =[C]:-1\n GetMessageInfo = <function> defined =[C]:-1\n GetOnScrollChangedCallback = <function> defined =[C]:-1\n AtTop = <function> defined =[C]:-1\n GetFontObject = <function> defined =[C]:-1\n fontStringPool = <table> {\n }\n CanEffectivelyFade = <function> defined =[C]:-1\n OnPreSizeChanged = <function> defined =[C]:-1\n OnPostMouseUp = <function> defined =[C]:-1\n GetSpacing = <function> defined =[C]:-1\n OnPreLoad = <function> defined =[C]:-1\n SetSpacing = <function> defined =[C]:-1\n name = \"Debug\"\n CalculateLineSpacing = <function> defined =[C]:-1\n AddMessage = <function> defined =[C]:-1\n InitializeFontableFrame = <function> defined =[C]:-1\n GetShadowColor = <function> defined =[C]:-1\n isUninteractable = false\n SetOnTextCopiedCallback = <function> defined =[C]:-1\n originalShow = <function> defined =[C]:-1\n AcquireFontString = <function> defined =[C]:-1\n TransformMessages = <function> defined =[C]:-1\n AtBottom = <function> defined =[C]:-1\n buttonFrame = ChatFrame6ButtonFrame {\n }\n HasFontObject = <function> defined =[C]:-1\n isDocked = 1\n GetOnTextCopiedCallback = <function> defined =[C]:-1\n SetFading = <function> defined =[C]:-1\n OnPostHide = <function> defined =[C]:-1\n alternativeDefaultLanguage = \"Orcish\"\n isInitialized = 1\n ScrollByAmount = <function> defined =[C]:-1\n GetInsertMode = <function> defined =[C]:-1\n SetTimeVisible = <function> defined =[C]:-1\n hasOwnFontObject = true\n Clear = <function> defined =[C]:-1\n oldAlpha = 0.250000\n channelList = <table> {\n }\n GetTimeVisible = <function> defined =[C]:-1\n IsSelectingText = <function> defined =[C]:-1\n SetTextCopyable = <function> defined =[C]:-1\n Show = <function> defined @Interface\\FrameXML\\FrameLocks.lua:135\n BackFillMessage = <function> defined =[C]:-1\n UnpackageEntry = <function> defined =[C]:-1\n FontStringContainer = <unnamed> {\n }\n SetShadowOffset = <function> defined =[C]:-1\n messageTypeList = <table> {\n }\n flashTimer = 0\n timeVisibleSecs = 120\n PackageEntry = <function> defined =[C]:-1\n MakeFontObjectCustom = <function> defined =[C]:-1\n SetPoint = <function> defined @Interface\\AddOns\\xVermin\\Chat.lua:177\n fontObject = table: 00000243E5831FF0 {\n }\n SetInsertMode = <function> defined =[C]:-1\n originalHide = <function> defined =[C]:-1\n ScrollDown = <function> defined =[C]:-1\n zoneChannelList = <table> {\n }\n SetScrollOffset = <function> defined =[C]:-1\n onDisplayRefreshedCallback = <function> defined =[C]:-1\n insertMode = 2\n ResetSelectingText = <function> defined =[C]:-1\n Hide = <function> defined @Interface\\FrameXML\\FrameLocks.lua:131\n GetTextColor = <function> defined =[C]:-1\n ResetAllFadeTimes = <function> defined =[C]:-1\n defaultLanguage = \"Orcish\"\n GatherSelectedText = <function> defined =[C]:-1\n UpdateSelectingText = <function> defined =[C]:-1\n SetShadowColor = <function> defined =[C]:-1\n GetNumVisibleLines = <function> defined =[C]",
+			["stack"] = "Interface\\AddOns\\xVermin\\Experience/MobsToKill.lua:46: in function <Interface\\AddOns\\xVermin\\Experience/MobsToKill.lua:33>\nInterface\\AddOns\\xVermin\\Experience/MobsToKill.lua:109: in function <Interface\\AddOns\\xVermin\\Experience/MobsToKill.lua:104>",
+			["session"] = 3093,
+			["counter"] = 1,
+		}, -- [389]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Experience/MobsToKill.lua:47: attempt to concatenate a boolean value",
+			["time"] = "2020/10/11 10:03:02",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\xVermin\\Experience/MobsToKill.lua:47: in function <Interface\\AddOns\\xVermin\\Experience/MobsToKill.lua:33>\nInterface\\AddOns\\xVermin\\Experience/MobsToKill.lua:109: in function <Interface\\AddOns\\xVermin\\Experience/MobsToKill.lua:104>",
+			["session"] = 3094,
+			["counter"] = 1,
+		}, -- [390]
 	},
 }

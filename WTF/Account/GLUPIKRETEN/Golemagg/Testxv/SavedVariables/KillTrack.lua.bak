@@ -1,0 +1,25 @@
+
+KILLTRACK_CHAR = {
+	["MOBS"] = {
+		[3101] = {
+			["Name"] = "Vile Familiar",
+			["Kills"] = 11,
+		},
+		[2955] = {
+			["Name"] = "Plainstrider",
+			["Kills"] = 8,
+		},
+		[3124] = {
+			["Name"] = "Scorpid Worker",
+			["Kills"] = 4,
+		},
+		[3098] = {
+			["Name"] = "Mottled Boar",
+			["Kills"] = 26,
+		},
+		[2620] = {
+			["Name"] = "Prairie Dog",
+			["Kills"] = 0,
+		},
+	},
+}

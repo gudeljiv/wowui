@@ -109,3 +109,5 @@ FiveSecondRule: disabled
 WeakAuras: enabled
 Immersion: disabled
 Examiner: disabled
+WeakAurasCompanion: enabled
+WeakAurasArchive: enabled

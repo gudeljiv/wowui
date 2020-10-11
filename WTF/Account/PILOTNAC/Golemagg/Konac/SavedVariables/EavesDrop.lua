@@ -59,10 +59,19 @@ EavesDropStatsDB = {
 						},
 						["icon"] = 136123,
 					},
+					["Mana Burn"] = {
+						[-2] = {
+							["time"] = "|cffffffff10/11/20 12:36:09|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMana Burn|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Player-4465-01E2E7A8:Defity|hDefity|h |cffffffff151|r |cffffffffShadow|r. ",
+							["amount"] = 151,
+						},
+						[2] = {
+						},
+						["icon"] = 136170,
+					},
 					["Smite"] = {
 						[-2] = {
-							["time"] = "|cffffffff09/27/20 11:56:27|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffSmite|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4447-43-10046-5761-0002F05D11:Deviate Shambler|hDeviate Shambler|h |cffffffff201|r |cffffffffHoly|r. (287 Overkill) ",
-							["amount"] = 488,
+							["time"] = "|cffffffff10/11/20 12:35:35|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffSmite|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Player-4465-01E2E7A8:Defity|hDefity|h |cffffffff490|r |cffffffffHoly|r. ",
+							["amount"] = 490,
 						},
 						[2] = {
 							["time"] = "|cffffffff10/03/20 09:51:40|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffSmite|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4445-0-31-2582-0000782D74:Dabyrie Laborer|hDabyrie Laborer|h |cffffffff347|r |cffffffffHoly|r. (372 Overkill) (Critical) ",
@@ -82,8 +91,8 @@ EavesDropStatsDB = {
 					},
 					["Shadow Word: Pain"] = {
 						[-2] = {
-							["time"] = "|cffffffff09/24/20 07:07:56|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_PERIODIC_DAMAGE|h|cffffffffShadow Word: Pain|r|h |Haction:SPELL_PERIODIC_DAMAGE|hdamaged|h |Hunit:Creature-0-4468-1-32-11915-0000EBE1BF:Gogger Rock Keeper|hGogger Rock Keeper|h |cffffffff157|r |cffffffffShadow|r. ",
-							["amount"] = 157,
+							["time"] = "|cffffffff10/11/20 12:37:09|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_PERIODIC_DAMAGE|h|cffffffffShadow Word: Pain|r|h |Haction:SPELL_PERIODIC_DAMAGE|hdamaged|h |Hunit:Player-4465-01E2E7A8:Defity|hDefity|h |cffffffff120|r |cffffffffShadow|r. (50 Overkill) ",
+							["amount"] = 170,
 						},
 						[2] = {
 						},
@@ -218,16 +227,16 @@ EavesDropStatsDB = {
 					},
 					["Fire"] = {
 						[-2] = {
-							["time"] = "|cffffffff09/28/20 05:14:05|r\n|Hunit:Creature-0-4468-0-15-2335-000071FD98:Magistrate Burnside|hMagistrate Burnside|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Fireball|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffff1313151|r |cffff1313Fire|r. ",
-							["amount"] = 151,
+							["time"] = "|cffffffff10/11/20 12:26:04|r\n|Hunit:Player-4465-00B6D9C6:Kyth|hKyth|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Fireball|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffff13131657|r |cffff1313Fire|r. ",
+							["amount"] = 1657,
 						},
 						[2] = {
 						},
 					},
 					["Frost"] = {
 						[-2] = {
-							["time"] = "|cffffffff09/23/20 02:58:47|r\n|Hunit:Player-4465-01AD9F53:Degpro|hDegpro|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Cone of Cold|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffff1313420|r |cffff1313Frost|r. ",
-							["amount"] = 420,
+							["time"] = "|cffffffff10/11/20 12:35:31|r\n|Hunit:Player-4465-01E3FA80:Sydonay|hSydonay|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Frostbolt|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffff1313455|r |cffff1313Frost|r. ",
+							["amount"] = 455,
 						},
 						[2] = {
 						},

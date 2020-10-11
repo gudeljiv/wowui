@@ -7,10 +7,11 @@ TellMeWhenDB = {
 		["Verminz - Golemagg"] = "Warrior",
 		["Paydo - Dreadmist"] = "Warrior",
 		["Greenwise - Golemagg"] = "Warrior",
-		["Mxym - Golemagg"] = "Priest",
 		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
+		["Mxym - Golemagg"] = "Priest",
 		["Mxys - Golemagg"] = "Priest",
 		["Mxyzptlk - Golemagg"] = "Warlock",
+		["Testxv - Golemagg"] = "Testxv - Golemagg",
 		["Augustin - Golemagg"] = "Mage",
 		["Grgur - Golemagg"] = "Grgur - Golemagg",
 		["Koloman - Golemagg"] = "Koloman - Golemagg",
@@ -12123,6 +12124,15 @@ TellMeWhenDB = {
 			["TextureName"] = "Glamour2",
 			["Version"] = 86907,
 			["Locked"] = true,
+		},
+		["Testxv - Golemagg"] = {
+			["Locked"] = true,
+			["Version"] = 86907,
+			["Groups"] = {
+				{
+					["GUID"] = "TMW:group:1VWiCxYSqwKw",
+				}, -- [1]
+			},
 		},
 		["Augustin - Golemagg"] = {
 			["Version"] = 86907,

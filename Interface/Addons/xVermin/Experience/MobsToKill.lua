@@ -1,6 +1,7 @@
 local _, xVermin = ...
 
 local r, g, b, NewXP, hmmm, gained, XPToLVL, num, segment, relperc, r1, r2, g1, g2, b1, b2, PlayerXP, PetExpFrame, PlayerExpFrame, percent, rested, output, pcxp, pmxp, ppercent, MobsToKill
+local timer = time()
 
 MobsToKill = CreateFrame("Frame", "CustomContainer_CombatMobsToKill", CustomContainer_Combat)
 MobsToKill:SetPoint("CENTER", CustomContainer_Combat, "CENTER", 0, 0)
@@ -36,10 +37,27 @@ local function UpdateExperience(event, isInitialLogin, isReloadingUi)
 		CurrentXP = UnitXP("player")
 	else
 		NewXP = UnitXP("player")
+
 		if event == "PLAYER_LEVEL_UP" then
+			-- ChatFrame6:AddMessage(event)
+			-- ChatFrame6:AddMessage("MaxXP A: " .. MaxXP)
+			-- ChatFrame6:AddMessage("CurrentXP: " .. CurrentXP)
+			-- ChatFrame6:AddMessage("NewXP: " .. NewXP)
+			-- ChatFrame6:AddMessage("Gained: " .. gained)
+			-- ChatFrame6:AddMessage("Mobs: " .. math.ceil((MaxXP - NewXP) / gained))
+			-- ChatFrame6:AddMessage("-------------------------------------------------------------")
+			-- ChatFrame6:AddMessage("MaxXP B: " .. MaxXP)
+
 			gained = MaxXP - CurrentXP + NewXP
 			MaxXP = UnitXPMax("player")
 		else
+			-- ChatFrame6:AddMessage(event)
+			-- ChatFrame6:AddMessage("MaxXP: " .. MaxXP)
+			-- ChatFrame6:AddMessage("CurrentXP: " .. CurrentXP)
+			-- ChatFrame6:AddMessage("NewXP: " .. NewXP)
+			-- ChatFrame6:AddMessage("Gained: " .. gained)
+			-- ChatFrame6:AddMessage("Mobs: " .. math.ceil((MaxXP - NewXP) / gained))
+			-- ChatFrame6:AddMessage("-------------------------------------------------------------")
 			gained = NewXP - CurrentXP
 		end
 
@@ -48,19 +66,23 @@ local function UpdateExperience(event, isInitialLogin, isReloadingUi)
 			MobsToKill.text:SetText(hmmm)
 			MobsToKill.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 
+			-- ako MBK frame nije prikazan prikazi ga
 			if not mbk then
 				UIFrameFadeIn(MobsToKill, 1, 0, 1)
 				mbk = true
 			end
 
+			-- ako postoji timer zaustavi ga
 			if MobToKillTimer then
 				MobToKillTimer:Cancel()
 			end
 
+			-- kreiranje novog timera
 			MobToKillTimer =
 				C_Timer.NewTimer(
 				120,
 				function(self)
+					-- ugasi MBK frame nakon 120 sekundi
 					UIFrameFadeOut(MobsToKill, 1, 1, 0)
 					mbk = false
 				end
@@ -75,17 +97,15 @@ local function UpdateExperience(event, isInitialLogin, isReloadingUi)
 					UIFrameFadeOut(gainedExperience, 1, 1, 0)
 				end
 			)
-			CurrentXP = NewXP
-		else
-			MobsToKill:Hide()
-			gainedExperience:Hide()
 		end
+
+		CurrentXP = NewXP
 	end
 end
 
 local f = CreateFrame("Frame")
-f:RegisterEvent("PLAYER_LEVEL_UP")
 f:RegisterEvent("PLAYER_ENTERING_WORLD")
+f:RegisterEvent("PLAYER_LEVEL_UP")
 f:RegisterEvent("PLAYER_XP_UPDATE")
 f:SetScript(
 	"OnEvent",
@@ -94,7 +114,12 @@ f:SetScript(
 			MobsToKill:Hide()
 			self:UnregisterAllEvents()
 		else
-			UpdateExperience(event, isInitialLogin, isReloadingUi)
+			C_Timer.After(
+				1,
+				function()
+					UpdateExperience(event, isInitialLogin, isReloadingUi)
+				end
+			)
 		end
 	end
 )

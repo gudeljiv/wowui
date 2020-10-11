@@ -20556,9 +20556,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 126438,
 			["H3546"] = 126438,
 		},
-		["Plans: Shadow Crescent Axe"] = {
-			["H3565"] = 14199,
-			["mr"] = 14199,
+		["Pattern: Frostsaber Leggings"] = {
+			["H3556"] = 8504,
+			["mr"] = 8504,
 		},
 		["Wanderer's Leggings of Arcane Wrath"] = {
 			["mr"] = 103634,
@@ -20618,9 +20618,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3556"] = 4274,
 			["mr"] = 4274,
 		},
-		["Formula: Enchant Weapon - Winter's Might"] = {
-			["H3565"] = 798899,
-			["mr"] = 798899,
+		["Sturdy Quarterstaff of the Boar"] = {
+			["H3565"] = 2500,
+			["mr"] = 2500,
 		},
 		["Recipe: Egg Nog"] = {
 			["H3565"] = 109000,
@@ -20654,9 +20654,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3565"] = 29988,
 			["mr"] = 29988,
 		},
-		["Pattern: Frostsaber Leggings"] = {
-			["H3556"] = 8504,
-			["mr"] = 8504,
+		["Manual: Strong Anti-Venom"] = {
+			["H3537"] = 50000,
+			["mr"] = 50000,
 		},
 		["Bandit Pants of the Whale"] = {
 			["mr"] = 30772,
@@ -20760,9 +20760,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3546"] = 14187,
 			["mr"] = 14187,
 		},
-		["Manual: Strong Anti-Venom"] = {
-			["H3537"] = 50000,
-			["mr"] = 50000,
+		["Formula: Enchant Weapon - Winter's Might"] = {
+			["H3565"] = 798899,
+			["mr"] = 798899,
 		},
 		["Admiral's Hat"] = {
 			["mr"] = 149899,
@@ -20779,9 +20779,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3537"] = 108028,
 			["mr"] = 108028,
 		},
-		["Sturdy Quarterstaff of the Boar"] = {
-			["H3565"] = 2500,
-			["mr"] = 2500,
+		["Plans: Shadow Crescent Axe"] = {
+			["H3565"] = 14199,
+			["mr"] = 14199,
 		},
 		["Scouting Gloves of Defense"] = {
 			["mr"] = 115269,
@@ -25058,6 +25058,11 @@ AUCTIONATOR_TOONS = {
 	["Blooq"] = {
 		["firstSeen"] = 1490547957,
 		["firstVersion"] = "3.1.5",
+	},
+	["Testxv"] = {
+		["firstSeen"] = 1602405174,
+		["firstVersion"] = "8.1.0",
+		["guid"] = "Player-4465-01F554B6",
 	},
 	["Whatevs"] = {
 		["firstSeen"] = 1569353712,

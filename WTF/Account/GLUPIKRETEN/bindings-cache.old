@@ -66,7 +66,7 @@ bind CTRL-A ATTACKTARGET
 bind CTRL-B MULTIACTIONBAR4BUTTON8
 bind CTRL-' CLICK TopAbyssUIClassic_ConfirmPopUps:LeftButton
 bind SHIFT-C CLICK BT4Button21:LeftButton
-bind I EXAMINER_TARGET
+bind I CLICK MyBindingInspectTargetButton:LeftButton
 bind CTRL-I TOGGLELFGPARENT
 bind Y NONE
 bind J CLICK RingMenuToggleRing1:LeftButton

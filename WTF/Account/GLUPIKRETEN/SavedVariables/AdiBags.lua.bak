@@ -164,6 +164,7 @@ AdiBagsDB = {
 		["Mxzq - Golemagg"] = "Default",
 		["Mxym - Golemagg"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
+		["Testxv - Golemagg"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
 		["Koloman - Golemagg"] = "Default",

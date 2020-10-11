@@ -25,6 +25,7 @@ EavesDropDB = {
 		["Mxys - Golemagg"] = "Default",
 		["Spija - Genesis"] = "Spija - Genesis",
 		["Vermins - Stonespine"] = "Default",
+		["Testxv - Golemagg"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
 		["Dotwise - Golemagg"] = "Default",
 		["Korupcija - Genesis"] = "Default",
@@ -63,7 +64,9 @@ EavesDropDB = {
 		},
 		["Elohssa - Stonespine"] = {
 		},
-		["Greenwise - Golemagg"] = {
+		["Mxys - Golemagg"] = {
+		},
+		["Dmitar - Golemagg"] = {
 		},
 		["Paydo - Dreadmist"] = {
 			["LINEWIDTH"] = 130,
@@ -84,9 +87,7 @@ EavesDropDB = {
 				["a"] = 0.4,
 			},
 		},
-		["Dmitar - Golemagg"] = {
-		},
-		["Mxys - Golemagg"] = {
+		["Greenwise - Golemagg"] = {
 		},
 		["Mxzq - Golemagg"] = {
 			["LINEWIDTH"] = 130,
@@ -121,13 +122,15 @@ EavesDropDB = {
 		},
 		["Judawise - Golemagg"] = {
 		},
-		["Spija - Genesis"] = {
-		},
 		["Antun - Golemagg"] = {
+		},
+		["Spija - Genesis"] = {
 		},
 		["Korupcija - Stonespine"] = {
 		},
 		["Vermin - Golemagg"] = {
+		},
+		["Mxyzptlk - Golemagg"] = {
 		},
 		["Vermins - Stonespine"] = {
 		},
@@ -135,7 +138,7 @@ EavesDropDB = {
 		},
 		["Jaroslav - Golemagg"] = {
 		},
-		["Pitchwise - Genesis"] = {
+		["Testxv - Golemagg"] = {
 		},
 		["Augustin - Golemagg"] = {
 		},
@@ -143,7 +146,7 @@ EavesDropDB = {
 		},
 		["Koloman - Golemagg"] = {
 		},
-		["Mxyzptlk - Golemagg"] = {
+		["Pitchwise - Genesis"] = {
 		},
 		["Klhjakhsgdjh - Golemagg"] = {
 		},
