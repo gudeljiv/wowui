@@ -1,10 +1,19 @@
 local _, xVermin = ...
 
 local f = CreateFrame("Frame")
+f:RegisterEvent("PLAYER_ENTERING_WORLD")
 f:SetScript(
 	"OnEvent",
 	function(self, event, isInitialLogin, isReloadingUi)
 		if isInitialLogin or isReloadingUi then
+			SHOW_MULTI_ACTIONBAR_1 = 1
+			SHOW_MULTI_ACTIONBAR_2 = 1
+			SHOW_MULTI_ACTIONBAR_3 = 1
+			SHOW_MULTI_ACTIONBAR_4 = 1
+			ALWAYS_SHOW_MULTIBARS = 1
+			LOCK_ACTIONBAR = 1
+			InterfaceOptions_UpdateMultiActionBars()
+
 			-------------------------------------------
 			-- Position of choco bars
 			-------------------------------------------
@@ -196,7 +205,6 @@ f:SetScript(
 		end
 	end
 )
-f:RegisterEvent("PLAYER_ENTERING_WORLD")
 
 local function TargetFrameTextAdjustment()
 	TargetFrameHealthBarText:ClearAllPoints()

@@ -38,14 +38,14 @@ end
 NeedsFoodBadly = CreateFrame("frame")
 NeedsFoodBadly:RegisterEvent("BAG_UPDATE_DELAYED")
 NeedsFoodBadly:RegisterEvent("PLAYER_REGEN_ENABLED")
-NeedsFoodBadly:RegisterEvent("PLAYER_LEVEL_UP")
+NeedsFoodBadly:RegisterEvent("PLAYER_LEVEL_CHANGED")
 NeedsFoodBadly:RegisterEvent("UNIT_PET")
 
 NeedsFoodBadly.dirty = false
 NeedsFoodBadly:SetScript(
 	"OnEvent",
 	function(self, event, ...)
-		if event == "BAG_UPDATE_DELAYED" or event == "PLAYER_LEVEL_UP" or event == "UNIT_PET" then
+		if event == "BAG_UPDATE_DELAYED" or event == "PLAYER_LEVEL_CHANGED" or event == "UNIT_PET" then
 			if InCombatLockdown() then
 				NeedsFoodBadly.dirty = true
 			else

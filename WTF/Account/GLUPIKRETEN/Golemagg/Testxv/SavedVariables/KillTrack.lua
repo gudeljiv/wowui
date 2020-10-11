@@ -13,9 +13,13 @@ KILLTRACK_CHAR = {
 			["Name"] = "Scorpid Worker",
 			["Kills"] = 4,
 		},
+		[5951] = {
+			["Name"] = "Hare",
+			["Kills"] = 0,
+		},
 		[3098] = {
 			["Name"] = "Mottled Boar",
-			["Kills"] = 35,
+			["Kills"] = 52,
 		},
 		[2620] = {
 			["Name"] = "Prairie Dog",

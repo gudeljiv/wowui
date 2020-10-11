@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 3116,
+	["session"] = 3136,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -3090,5 +3090,85 @@ BugGrabberDB = {
 			["session"] = 3094,
 			["counter"] = 1,
 		}, -- [390]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Experience/MobsToKill.lua:58: attempt to concatenate upvalue 'gained' (a nil value)",
+			["time"] = "2020/10/11 15:57:06",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\xVermin\\Experience/MobsToKill.lua:58: in function <Interface\\AddOns\\xVermin\\Experience/MobsToKill.lua:34>\nInterface\\AddOns\\xVermin\\Experience/MobsToKill.lua:118: in function <Interface\\AddOns\\xVermin\\Experience/MobsToKill.lua:112>",
+			["session"] = 3126,
+			["counter"] = 2,
+		}, -- [391]
+		{
+			["message"] = "[string \"show [actionbar:1]\"]:1: '<name>' expected near '1'",
+			["time"] = "2020/10/11 15:58:13",
+			["locals"] = "(*temporary) = \"show [actionbar:1]\"\n",
+			["stack"] = "[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 3127,
+			["counter"] = 2,
+		}, -- [392]
+		{
+			["message"] = "[string \"show [actionbar:2]\"]:1: '<name>' expected near '2'",
+			["time"] = "2020/10/11 15:58:27",
+			["locals"] = "(*temporary) = \"show [actionbar:2]\"\n",
+			["stack"] = "[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 3127,
+			["counter"] = 1,
+		}, -- [393]
+		{
+			["message"] = "[string \"show [actionbar:3]\"]:1: '<name>' expected near '3'",
+			["time"] = "2020/10/11 15:58:29",
+			["locals"] = "(*temporary) = \"show [actionbar:3]\"\n",
+			["stack"] = "[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 3127,
+			["counter"] = 1,
+		}, -- [394]
+		{
+			["message"] = "[string \"SHOW_MULTI_ACTIONBAR_1\"]:1: '=' expected near '<eof>'",
+			["time"] = "2020/10/11 16:00:24",
+			["locals"] = "(*temporary) = \"SHOW_MULTI_ACTIONBAR_1\"\n",
+			["stack"] = "[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 3127,
+			["counter"] = 1,
+		}, -- [395]
+		{
+			["message"] = "[string \"SHOW_MULTI_ACTIONBAR_2\"]:1: '=' expected near '<eof>'",
+			["time"] = "2020/10/11 16:00:27",
+			["locals"] = "(*temporary) = \"SHOW_MULTI_ACTIONBAR_2\"\n",
+			["stack"] = "[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 3127,
+			["counter"] = 1,
+		}, -- [396]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:10: attempt to index global 'PlayerHealthFrame' (a nil value)",
+			["time"] = "2020/10/11 17:29:58",
+			["locals"] = "autointeract = true\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = false\n(*temporary) = <userdata>\n(*temporary) = \"attempt to index global 'PlayerHealthFrame' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:10: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:3>\nInterface\\AddOns\\xVermin\\LootHelper.lua:51: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:49>",
+			["session"] = 3134,
+			["counter"] = 2,
+		}, -- [397]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:21: attempt to index global 'PlayerHealthFrame' (a nil value)",
+			["time"] = "2020/10/11 17:30:03",
+			["locals"] = "autointeract = false\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = true\n(*temporary) = <userdata>\n(*temporary) = \"attempt to index global 'PlayerHealthFrame' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:21: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:3>\nInterface\\AddOns\\xVermin\\LootHelper.lua:51: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:49>",
+			["session"] = 3134,
+			["counter"] = 2,
+		}, -- [398]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:13: attempt to index global 'TargetHealthFrame' (a nil value)",
+			["time"] = "2020/10/11 17:34:09",
+			["locals"] = "autointeract = true\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = false\n(*temporary) = <userdata>\n(*temporary) = \"attempt to index global 'TargetHealthFrame' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:13: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:3>\nInterface\\AddOns\\xVermin\\LootHelper.lua:51: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:49>",
+			["session"] = 3135,
+			["counter"] = 2,
+		}, -- [399]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:24: attempt to index global 'TargetHealthFrame' (a nil value)",
+			["time"] = "2020/10/11 17:34:17",
+			["locals"] = "autointeract = false\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = true\n(*temporary) = <userdata>\n(*temporary) = \"attempt to index global 'TargetHealthFrame' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:24: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:3>\nInterface\\AddOns\\xVermin\\LootHelper.lua:51: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:49>",
+			["session"] = 3135,
+			["counter"] = 2,
+		}, -- [400]
 	},
 }

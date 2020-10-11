@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 2044,
 	["lastSanitation"] = 3,
+	["session"] = 2053,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -173,8 +173,8 @@ BugGrabberDB = {
 		}, -- [21]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["time"] = "2020/07/26 13:26:58",
 			["session"] = 1336,
+			["time"] = "2020/07/26 13:26:58",
 			["counter"] = 2,
 		}, -- [22]
 		{
@@ -554,8 +554,8 @@ BugGrabberDB = {
 		}, -- [69]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["session"] = 1423,
 			["time"] = "2020/07/27 20:37:46",
+			["session"] = 1423,
 			["counter"] = 4,
 		}, -- [70]
 		{
@@ -820,8 +820,8 @@ BugGrabberDB = {
 		}, -- [103]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["session"] = 1605,
 			["time"] = "2020/08/02 10:06:15",
+			["session"] = 1605,
 			["counter"] = 3,
 		}, -- [104]
 		{
@@ -961,8 +961,8 @@ BugGrabberDB = {
 		}, -- [121]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
-			["time"] = "2020/08/02 20:13:03",
 			["session"] = 1654,
+			["time"] = "2020/08/02 20:13:03",
 			["counter"] = 3,
 		}, -- [122]
 		{
@@ -1327,8 +1327,8 @@ BugGrabberDB = {
 		}, -- [167]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["time"] = "2020/08/13 21:31:07",
 			["session"] = 1843,
+			["time"] = "2020/08/13 21:31:07",
 			["counter"] = 6,
 		}, -- [168]
 		{
@@ -1405,8 +1405,8 @@ BugGrabberDB = {
 		}, -- [177]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\FarmLog\\FarmLog.toc",
-			["time"] = "2020/09/23 22:14:04",
 			["session"] = 1916,
+			["time"] = "2020/09/23 22:14:04",
 			["counter"] = 2,
 		}, -- [178]
 		{
@@ -1499,50 +1499,50 @@ BugGrabberDB = {
 		}, -- [189]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\events\\event-manager.lua",
-			["time"] = "2020/10/07 16:37:53",
 			["session"] = 2022,
+			["time"] = "2020/10/07 16:37:53",
 			["counter"] = 1,
 		}, -- [190]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\lists\\lists.lua",
-			["time"] = "2020/10/07 16:37:53",
 			["session"] = 2022,
+			["time"] = "2020/10/07 16:37:53",
 			["counter"] = 1,
 		}, -- [191]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\lists\\list-helper.lua",
-			["time"] = "2020/10/07 16:37:53",
 			["session"] = 2022,
+			["time"] = "2020/10/07 16:37:53",
 			["counter"] = 1,
 		}, -- [192]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\bags.lua",
-			["time"] = "2020/10/07 16:37:53",
 			["session"] = 2022,
+			["time"] = "2020/10/07 16:37:53",
 			["counter"] = 1,
 		}, -- [193]
 		{
 			["message"] = "(null)",
-			["session"] = 2022,
 			["time"] = "2020/07/24 16:00:06",
+			["session"] = 2022,
 			["counter"] = 65,
 		}, -- [194]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\utils.lua",
-			["time"] = "2020/10/07 16:37:53",
 			["session"] = 2022,
+			["time"] = "2020/10/07 16:37:53",
 			["counter"] = 1,
 		}, -- [195]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\services\\confirmer.lua",
-			["time"] = "2020/10/07 16:37:53",
 			["session"] = 2022,
+			["time"] = "2020/10/07 16:37:53",
 			["counter"] = 1,
 		}, -- [196]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\services\\dejunker.lua",
-			["time"] = "2020/10/07 16:37:53",
 			["session"] = 2022,
+			["time"] = "2020/10/07 16:37:53",
 			["counter"] = 1,
 		}, -- [197]
 		{
@@ -1619,25 +1619,17 @@ BugGrabberDB = {
 		}, -- [206]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\events\\events.lua",
-			["session"] = 2023,
 			["time"] = "2020/10/07 16:36:53",
+			["session"] = 2023,
 			["counter"] = 3,
 		}, -- [207]
-		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'TargetFrameToT:Show()'.",
-			["time"] = "2020/09/23 13:06:51",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Show'\nInterface\\FrameXML\\TargetFrame.lua:910: in function <Interface\\FrameXML\\TargetFrame.lua:905>\n[C]: ?\n[C]: in function `TargetofTarget_Update'\nInterface\\FrameXML\\TargetFrame.lua:420: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[C]: ?\n[C]: ?",
-			["session"] = 2026,
-			["counter"] = 13,
-		}, -- [208]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\SortBags.lua:455: attempt to perform arithmetic on field '?' (a nil value)",
 			["time"] = "2020/10/02 18:54:46",
 			["stack"] = "Interface\\AddOns\\xVermin\\SortBags.lua:455: in function `Initialize'\nInterface\\AddOns\\xVermin\\SortBags.lua:233: in function `Start'\nInterface\\AddOns\\xVermin\\SortBags.lua:17: in function `SortBags'\nInterface\\AddOns\\AdiBags\\core\\Layout.lua:108: in function `?'\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:117: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:117>\n[C]: ?\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:29: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:64: in function `SendMessage'\nInterface\\AddOns\\AdiBags\\core\\Bags.lua:105: in function `Close'\nInterface\\AddOns\\AdiBags\\core\\Bags.lua:224: in function `?'\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:119: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:119>\n[C]: ?\n...\n[C]: in function `CloseAuctionHouse'\n...e\\AddOns\\TradeSkillMaster\\Core\\UI\\AuctionUI\\Core.lua:214: in function `?'\n...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:86: in function `ScriptHandlerCommon'\n...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:37: in function <...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:36>\n[C]: in function `Hide'\n...AddOns\\TradeSkillMaster\\Core\\UI\\Elements\\Element.lua:128: in function <...AddOns\\TradeSkillMaster\\Core\\UI\\Elements\\Element.lua:127>\n...radeSkillMaster\\External\\LibTSMClass\\LibTSMClass-1.lua:208: in function `Hide'\n...adeSkillMaster\\Core\\UI\\Elements\\ApplicationFrame.lua:482: in function `?'\n...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:86: in function `ScriptHandlerCommon'\n...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:37: in function <...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:36>",
 			["session"] = 2042,
 			["counter"] = 4,
-		}, -- [209]
+		}, -- [208]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\AutoRepair.lua:9: attempt to index global 'CahtFrame6' (a nil value)",
 			["time"] = "2020/10/10 18:27:54",
@@ -1645,7 +1637,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\AutoRepair.lua:9: in function <Interface\\AddOns\\xVermin\\AutoRepair.lua:3>",
 			["session"] = 2043,
 			["counter"] = 1,
-		}, -- [210]
+		}, -- [209]
 		{
 			["message"] = "Interface\\AddOns\\nMinimap\\tab.lua:487: attempt to call method 'GenerateHexColor' (a nil value)",
 			["time"] = "2020/09/22 22:18:26",
@@ -1653,6 +1645,22 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\nMinimap\\tab.lua:487: in function `nMinimap_UpdateFriendButton'\nInterface\\AddOns\\nMinimap\\tab.lua:519: in function `nMinimap_UpdateFriends'\nInterface\\AddOns\\nMinimap\\tab.lua:569: in function `nMinimapTab_Friends_UpdateScrollFrame'\nInterface\\AddOns\\nMinimap\\tab.lua:607: in function <Interface\\AddOns\\nMinimap\\tab.lua:601>",
 			["session"] = 2044,
 			["counter"] = 1172,
+		}, -- [210]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'TargetFrameToT:Show()'.",
+			["time"] = "2020/09/23 13:06:51",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Show'\nInterface\\FrameXML\\TargetFrame.lua:910: in function <Interface\\FrameXML\\TargetFrame.lua:905>\n[C]: ?\n[C]: in function `TargetofTarget_Update'\nInterface\\FrameXML\\TargetFrame.lua:420: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[C]: ?\n[C]: ?",
+			["session"] = 2045,
+			["counter"] = 14,
 		}, -- [211]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'PetFrame:Hide()'.",
+			["time"] = "2020/10/11 16:59:24",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Hide'\nInterface\\FrameXML\\PetFrame.lua:62: in function <Interface\\FrameXML\\PetFrame.lua:41>\n[C]: in function `PetFrame_Update'\nInterface\\FrameXML\\PetFrame.lua:89: in function <Interface\\FrameXML\\PetFrame.lua:67>",
+			["session"] = 2052,
+			["counter"] = 1,
+		}, -- [212]
 	},
 }

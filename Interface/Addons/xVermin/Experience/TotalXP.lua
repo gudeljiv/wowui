@@ -77,7 +77,7 @@ local function CalculateTotal(event, isInitialLogin, isReloadingUi)
 		currentxp = UnitXP("player")
 	else
 		newxp = UnitXP("player")
-		if event == "PLAYER_LEVEL_UP" then
+		if event == "PLAYER_LEVEL_CHANGED" then
 			gained = maxxp - currentxp + newxp
 			maxxp = UnitXPMax("player")
 		else
@@ -96,7 +96,7 @@ local function CalculateTotal(event, isInitialLogin, isReloadingUi)
 end
 
 tx:RegisterEvent("PLAYER_XP_UPDATE")
-tx:RegisterEvent("PLAYER_LEVEL_UP")
+tx:RegisterEvent("PLAYER_LEVEL_CHANGED")
 tx:RegisterEvent("PLAYER_ENTERING_WORLD")
 tx:RegisterEvent("PLAYER_REGEN_DISABLED")
 tx:RegisterEvent("PLAYER_REGEN_ENABLED")

@@ -105,7 +105,7 @@ end
 PetXP:RegisterEvent("UNIT_PET")
 PetXP:RegisterEvent("UNIT_PET_EXPERIENCE")
 PetXP:RegisterEvent("PLAYER_REGEN_ENABLED")
-PetXP:RegisterEvent("PLAYER_LEVEL_UP")
+PetXP:RegisterEvent("PLAYER_LEVEL_CHANGED")
 PetXP:SetScript(
 	"OnEvent",
 	function(self, event)

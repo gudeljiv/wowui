@@ -4,7 +4,7 @@ FrameLevel: 1
 Anchor: TOPLEFT
 X: 564
 Y: -210
-W: 179
+W: 178
 H: 154
 Frame: StanceButton1
 FrameLevel: 3
@@ -27,6 +27,13 @@ X: -27
 Y: 27
 W: 50
 H: 50
+Frame: InterfaceOptionsFrame
+FrameLevel: 1
+Anchor: TOP
+X: 53
+Y: -184
+W: 858
+H: 660
 Frame: GameMenuFrame
 FrameLevel: 1
 Anchor: CENTER

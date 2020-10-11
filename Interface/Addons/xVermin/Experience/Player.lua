@@ -97,7 +97,7 @@ end
 
 PlayerXP:RegisterEvent("PLAYER_XP_UPDATE")
 PlayerXP:RegisterEvent("PLAYER_ENTERING_WORLD")
-PlayerXP:RegisterEvent("PLAYER_LEVEL_UP")
+PlayerXP:RegisterEvent("PLAYER_LEVEL_CHANGED")
 PlayerXP:SetScript(
 	"OnEvent",
 	function(self, event, isInitialLogin, isReloadingUi)

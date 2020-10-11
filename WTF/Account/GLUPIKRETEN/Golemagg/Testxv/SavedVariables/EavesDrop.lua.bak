@@ -31,8 +31,8 @@ EavesDropStatsDB = {
 					},
 					["Auto Shot"] = {
 						[-2] = {
-							["time"] = "|cffffffff10/11/20 11:06:23|r\n|Hunit:Player-4465-01F553FF:Testxv|hTestxv's|h ranged shot hit |Hunit:Creature-0-4447-1-28-3098-000002CA53:Mottled Boar|hMottled Boar|h for |cffffffff14|r |cffffffffPhysical|r.",
-							["amount"] = 14,
+							["time"] = "|cffffffff10/11/20 01:38:23|r\n|Hunit:Player-4465-01F55EB4:Testxv|hTestxv's|h ranged shot hit |Hunit:Creature-0-4447-1-28-3098-000002ED14:Mottled Boar|hMottled Boar|h for |cffffffff15|r |cffffffffPhysical|r.",
+							["amount"] = 15,
 						},
 						[2] = {
 							["time"] = "|cffffffff10/11/20 11:07:32|r\n|Hunit:Player-4465-01F553FF:Testxv|hTestxv's|h ranged shot hit |Hunit:Creature-0-4447-1-28-3098-000002C864:Mottled Boar|hMottled Boar|h for |cffffffff17|r |cffffffffPhysical|r.(10 Overkill) (Critical)",

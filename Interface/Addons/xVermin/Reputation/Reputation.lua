@@ -124,7 +124,7 @@ local function UpdateBarPosition()
 							_G[value.frameStatusBar .. "_wrap"]:SetPoint("BOTTOM", PlayerXPFrameStatusBar, "TOP", 0, 30 * counter)
 						end
 					else
-						_G[value.frameStatusBar .. "_wrap"]:SetPoint("BOTTOMLEFT", ChatFrame1, "BOTTOMRIGHT", 5, 30 * counter)
+						_G[value.frameStatusBar .. "_wrap"]:SetPoint("BOTTOMLEFT", ChatFrame1, "BOTTOMRIGHT", 5, 30 * (counter - 1))
 					end
 				end
 				counter = counter + 1
@@ -326,95 +326,6 @@ local function UpdateBars(self, event)
 		factionIndex = factionIndex + 1
 	end
 
-	-- local lastFactionName
-	-- repeat
-	-- 	local name, description, standingId, bottomValue, topValue, earnedValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild = GetFactionInfo(factionIndex)
-	-- 	if name == lastFactionName then
-	-- 		break
-	-- 	end
-
-	-- 	if not bars[name] then
-	-- 		bars[name] = {
-	-- 			factionIndex = factionIndex,
-	-- 			frameStatusBar = "XVRB_" .. factionIndex,
-	-- 			hidden = true,
-	-- 			barCreated = false,
-	-- 			timer = false,
-	-- 			FactionInfo = {}
-	-- 		}
-	-- 	end
-
-	-- 	bars[name].isWatched = isWatched
-	-- 	bars[name].FactionInfo.name = name
-	-- 	bars[name].FactionInfo.earnedValue_old = bars[name].FactionInfo.earnedValue and bars[name].FactionInfo.earnedValue or earnedValue
-	-- 	bars[name].FactionInfo.earnedValue = earnedValue
-	-- 	bars[name].FactionInfo.topValue = topValue
-
-	-- 	if _G[bars[name].frameStatusBar .. "_wrap"] then
-	-- 		_G[bars[name].frameStatusBar .. "_wrap"]:SetScript("OnEnter", nil)
-	-- 		_G[bars[name].frameStatusBar .. "_wrap"]:SetScript("OnLeave", nil)
-	-- 		_G[bars[name].frameStatusBar .. "_wrap"]:SetFrameStrata("BACKGROUND")
-	-- 	end
-
-	-- 	if not bars[name].isWatched then
-	-- 		if bars[name].FactionInfo.earnedValue_old ~= bars[name].FactionInfo.earnedValue then
-	-- 			if not bars[name].barCreated then
-	-- 				CreateBar(bars[name])
-	-- 				bars[name].barCreated = true
-	-- 			end
-
-	-- 			if bars[name].hidden then
-	-- 				C_Timer.After(
-	-- 					1,
-	-- 					function()
-	-- 						securecall("UIFrameFadeIn", _G[bars[name].frameStatusBar], 1, 0, 0.8)
-	-- 					end
-	-- 				)
-	-- 				bars[name].hidden = false
-	-- 			end
-
-	-- 			if bars[name].timer then
-	-- 				bars[name].timer:Cancel()
-	-- 				bars[name].timer = false
-	-- 			end
-
-	-- 			bars[name].timer =
-	-- 				C_Timer.NewTimer(
-	-- 				30,
-	-- 				function()
-	-- 					securecall("UIFrameFadeOut", _G[bars[name].frameStatusBar], 1, 0.8, 0)
-	-- 					bars[name].hidden = true
-	-- 					bars[name].timer = false
-	-- 					_G[bars[name].frameStatusBar].fadeInfo.finishedFunc = UpdateBarPosition
-	-- 				end
-	-- 			)
-	-- 		end
-
-	-- 		if not bars[name].timer and not bars[name].hidden then
-	-- 			securecall("UIFrameFadeOut", _G[bars[name].frameStatusBar], 1, 0.8, 0)
-	-- 			bars[name].hidden = true
-	-- 		end
-	-- 	end
-
-	-- 	if bars[name].isWatched then
-	-- 		if bars[name].hidden then
-	-- 			bars[name].hidden = false
-	-- 			if not bars[name].barCreated then
-	-- 				CreateBar(bars[name])
-	-- 				bars[name].barCreated = true
-	-- 			end
-	-- 			securecall("UIFrameFadeIn", _G[bars[name].frameStatusBar], 1, 0, 0.8)
-	-- 		end
-	-- 		if bars[name].timer then
-	-- 			bars[name].timer:Cancel()
-	-- 			bars[name].timer = false
-	-- 		end
-	-- 	end
-
-	-- 	factionIndex = factionIndex + 1
-	-- until factionIndex > 200
-
-	-- UpdateBarVisibility()
 	UpdateBarValueAndColor()
 	UpdateBarPosition()
 end
@@ -439,28 +350,3 @@ end
 local wf = CreateFrame("Frame")
 wf:RegisterEvent("UPDATE_FACTION")
 wf:SetScript("OnEvent", UpdateBars)
-
--- print("---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-
--- for factionIndex = 1, GetNumFactions() do
--- 	name, description, standingId, bottomValue, topValue, earnedValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild = GetFactionInfo(factionIndex)
--- 	-- if isHeader == nil then
--- 	print("Faction: " .. name .. " - " .. earnedValue)
--- 	-- end
--- end
-
--- print("---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-
--- local factionIndex = 1
--- local lastFactionName
--- repeat
--- 	local name, description, standingId, bottomValue, topValue, earnedValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild = GetFactionInfo(factionIndex)
--- 	if name == lastFactionName then
--- 		break
--- 	end
--- 	lastFactionName = name
--- 	print("Faction: " .. name .. " - " .. earnedValue)
--- 	factionIndex = factionIndex + 1
--- until factionIndex > 200
-
--- print("---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------")

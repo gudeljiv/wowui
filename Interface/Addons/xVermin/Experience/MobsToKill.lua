@@ -38,26 +38,10 @@ local function UpdateExperience(event, isInitialLogin, isReloadingUi)
 	else
 		NewXP = UnitXP("player")
 
-		if event == "PLAYER_LEVEL_UP" then
-			-- ChatFrame6:AddMessage(event)
-			-- ChatFrame6:AddMessage("MaxXP A: " .. MaxXP)
-			-- ChatFrame6:AddMessage("CurrentXP: " .. CurrentXP)
-			-- ChatFrame6:AddMessage("NewXP: " .. NewXP)
-			-- ChatFrame6:AddMessage("Gained: " .. gained)
-			-- ChatFrame6:AddMessage("Mobs: " .. math.ceil((MaxXP - NewXP) / gained))
-			-- ChatFrame6:AddMessage("-------------------------------------------------------------")
-			-- ChatFrame6:AddMessage("MaxXP B: " .. MaxXP)
-
+		if event == "PLAYER_LEVEL_CHANGED" then
 			gained = MaxXP - CurrentXP + NewXP
 			MaxXP = UnitXPMax("player")
 		else
-			-- ChatFrame6:AddMessage(event)
-			-- ChatFrame6:AddMessage("MaxXP: " .. MaxXP)
-			-- ChatFrame6:AddMessage("CurrentXP: " .. CurrentXP)
-			-- ChatFrame6:AddMessage("NewXP: " .. NewXP)
-			-- ChatFrame6:AddMessage("Gained: " .. gained)
-			-- ChatFrame6:AddMessage("Mobs: " .. math.ceil((MaxXP - NewXP) / gained))
-			-- ChatFrame6:AddMessage("-------------------------------------------------------------")
 			gained = NewXP - CurrentXP
 		end
 
@@ -105,8 +89,8 @@ end
 
 local f = CreateFrame("Frame")
 f:RegisterEvent("PLAYER_ENTERING_WORLD")
-f:RegisterEvent("PLAYER_LEVEL_UP")
 f:RegisterEvent("PLAYER_XP_UPDATE")
+f:RegisterEvent("PLAYER_LEVEL_CHANGED")
 f:SetScript(
 	"OnEvent",
 	function(self, event, isInitialLogin, isReloadingUi)
@@ -114,12 +98,7 @@ f:SetScript(
 			MobsToKill:Hide()
 			self:UnregisterAllEvents()
 		else
-			C_Timer.After(
-				1,
-				function()
-					UpdateExperience(event, isInitialLogin, isReloadingUi)
-				end
-			)
+			UpdateExperience(event, isInitialLogin, isReloadingUi)
 		end
 	end
 )

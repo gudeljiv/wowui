@@ -35,15 +35,15 @@ QuestieConfig = {
 		["Kosturko - Golemagg"] = "Default",
 		["Mxys - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
-		["Jaroslav - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
 		["Mxym - Golemagg"] = "Default",
 		["Vermins - Dreadmist"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
+		["Jaroslav - Golemagg"] = "Default",
 		["Testxv - Golemagg"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
 		["Koloman - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Default",
 		["Antun - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Default",
@@ -108,8 +108,8 @@ QuestieConfig = {
 				[4841] = true,
 				[840] = true,
 				[848] = true,
-				[6062] = true,
 				[865] = true,
+				[1087] = true,
 				[872] = true,
 				[880] = true,
 				[888] = true,
@@ -125,7 +125,7 @@ QuestieConfig = {
 				[826] = true,
 				[849] = true,
 				[5052] = true,
-				[1087] = true,
+				[6062] = true,
 				[842] = true,
 				[881] = true,
 				[6381] = true,
@@ -2301,13 +2301,13 @@ QuestieConfig = {
 			["migrationVersion"] = 1,
 			["complete"] = {
 				[5441] = true,
-				[364] = true,
+				[804] = true,
 				[4402] = true,
 				[363] = true,
-				[804] = true,
+				[790] = true,
 				[3097] = true,
 				[788] = true,
-				[790] = true,
+				[364] = true,
 			},
 			["TrackerHiddenQuests"] = {
 			},
@@ -6495,7 +6495,7 @@ QuestieConfig = {
 				[3921] = true,
 				[825] = true,
 				[857] = true,
-				[550] = true,
+				[1096] = true,
 				[3923] = true,
 				[6301] = true,
 				[3924] = true,
@@ -6505,23 +6505,23 @@ QuestieConfig = {
 				[858] = true,
 				[890] = true,
 				[6393] = true,
-				[805] = true,
+				[550] = true,
 				[6283] = true,
 				[1068] = true,
-				[549] = true,
+				[1094] = true,
 				[827] = true,
-				[6641] = true,
+				[6386] = true,
 				[891] = true,
 				[5041] = true,
-				[6384] = true,
-				[868] = true,
+				[804] = true,
+				[6641] = true,
 				[6385] = true,
 				[541] = true,
 				[828] = true,
 				[216] = true,
 				[892] = true,
 				[924] = true,
-				[804] = true,
+				[6384] = true,
 				[5730] = true,
 				[4542] = true,
 				[5726] = true,
@@ -6580,15 +6580,15 @@ QuestieConfig = {
 				[6381] = true,
 				[6382] = true,
 				[1060] = true,
-				[1094] = true,
+				[549] = true,
 				[581] = true,
-				[6386] = true,
+				[868] = true,
 				[900] = true,
 				[1095] = true,
 				[6571] = true,
 				[499] = true,
 				[5881] = true,
-				[1096] = true,
+				[805] = true,
 				[837] = true,
 				[869] = true,
 				[901] = true,
@@ -8268,17 +8268,10 @@ QuestieConfig = {
 			},
 		},
 		["Augustin - Golemagg"] = {
-			["collapsedZones"] = {
-			},
+			["TrackerWidth"] = 0,
 			["AutoUntrackedQuests"] = {
 			},
-			["TrackerLocation"] = {
-				"TOPLEFT", -- [1]
-				"UIParent", -- [2]
-				"CENTER", -- [3]
-				892.53369140625, -- [4]
-				504.242248535156, -- [5]
-			},
+			["migrationVersion"] = 1,
 			["complete"] = {
 				[6282] = true,
 				[837] = true,
@@ -8424,9 +8417,19 @@ QuestieConfig = {
 				["persistent"] = true,
 				["minimap"] = true,
 			},
+			["collapsedQuests"] = {
+			},
+			["collapsedZones"] = {
+			},
 			["TrackerHiddenObjectives"] = {
 			},
-			["TrackerWidth"] = 0,
+			["TrackerLocation"] = {
+				"TOPLEFT", -- [1]
+				"UIParent", -- [2]
+				"CENTER", -- [3]
+				892.53369140625, -- [4]
+				504.242248535156, -- [5]
+			},
 			["journey"] = {
 				{
 					["Event"] = "Quest",
@@ -10567,9 +10570,6 @@ QuestieConfig = {
 					["Event"] = "Level",
 					["NewLevel"] = 42,
 				}, -- [297]
-			},
-			["migrationVersion"] = 1,
-			["collapsedQuests"] = {
 			},
 		},
 		["Grgur - Golemagg"] = {
@@ -12842,6 +12842,16 @@ QuestieConfig = {
 					["Event"] = "Level",
 					["NewLevel"] = 2,
 				}, -- [6]
+				{
+					["Timestamp"] = 1602416342,
+					["Event"] = "Level",
+					["NewLevel"] = 2,
+				}, -- [7]
+				{
+					["Timestamp"] = 1602425111,
+					["Event"] = "Level",
+					["NewLevel"] = 2,
+				}, -- [8]
 			},
 		},
 		["Kosturko - Golemagg"] = {
