@@ -2,3 +2,4 @@ WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
 nPower: disabled
 nHealth: disabled
+Immersion: disabled

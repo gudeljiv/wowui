@@ -7,8 +7,8 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 63,
 					["tipo"] = 2,
+					["combatId"] = 63,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -18,23 +18,23 @@ _detalhes_database = {
 							["targets"] = {
 								["Southsea Dock Worker"] = 35,
 							},
+							["serial"] = "Player-4465-01D5BF39",
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["classe"] = "MAGE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 35.008272,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
+							["spec"] = 64,
 							["dps_started"] = false,
 							["end_time"] = 1602434782,
-							["friendlyfire_total"] = 0,
-							["spec"] = 64,
+							["on_hold"] = false,
+							["last_event"] = 1602434780,
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Autoshot"] = {
 										["c_amt"] = 0,
@@ -57,26 +57,26 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 35.008272,
-							["serial"] = "Player-4465-01D5BF39",
-							["last_dps"] = 350.08272,
+							["friendlyfire_total"] = 0,
+							["last_dps"] = 28.1870144927906,
 							["custom"] = 0,
-							["last_event"] = 1602434780,
+							["tipo"] = 1,
 							["damage_taken"] = 0.008272,
 							["start_time"] = 1602434780,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 35.008272,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -86,53 +86,53 @@ _detalhes_database = {
 							},
 							["targets"] = {
 							},
-							["monster"] = true,
 							["pets"] = {
 							},
 							["fight_component"] = true,
+							["dps_started"] = false,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.004038,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["total"] = 0.004038,
-							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-4447-1-41-7857-00008331E2",
+							["monster"] = true,
+							["total"] = 0.004038,
+							["damage_taken"] = 35.004038,
+							["on_hold"] = false,
 							["nome"] = "Southsea Dock Worker",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
+							["tipo"] = 1,
 							["end_time"] = 1602434782,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 35.004038,
+							["last_event"] = 0,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1602434782,
 							["delay"] = 0,
-							["last_event"] = 0,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 63,
 					["tipo"] = 3,
+					["combatId"] = 63,
 					["_ActorTable"] = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 63,
 					["tipo"] = 7,
+					["combatId"] = 63,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 63,
 					["tipo"] = 9,
+					["combatId"] = 63,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
@@ -144,32 +144,32 @@ _detalhes_database = {
 							["nome"] = "Augustin",
 							["pets"] = {
 							},
+							["tipo"] = 4,
 							["last_event"] = 1602434782,
-							["classe"] = "MAGE",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = "Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["serial"] = "Player-4465-01D5BF39",
-							["tipo"] = 4,
+							["classe"] = "MAGE",
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 63,
 					["tipo"] = 2,
+					["combatId"] = 63,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -177,15 +177,11 @@ _detalhes_database = {
 					["Augustin"] = true,
 				},
 				["tempo_start"] = 1602434780,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["TotalElapsedCombatTime"] = 158961.59,
-				["enemy"] = "Southsea Dock Worker",
-				["cleu_events"] = {
-					["n"] = 1,
-				},
+				["combat_counter"] = 6390,
 				["playing_solo"] = true,
 				["totals"] = {
 					35, -- [1]
@@ -200,15 +196,41 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 					["frags_total"] = 0,
 					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "18:46:22",
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Southsea Dock Worker",
+				["TotalElapsedCombatTime"] = 158961.59,
+				["CombatEndedAt"] = 158961.59,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "18:46:21",
+				["end_time"] = 158961.59,
+				["combat_id"] = 63,
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Southsea Dock Worker"] = 1,
 				},
 				["totals_grupo"] = {
 					35, -- [1]
@@ -223,33 +245,32 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["last_events_tables"] = {
+				["CombatSkillCache"] = {
 				},
-				["frags_need_refresh"] = true,
-				["aura_timeline"] = {
+				["TimeData"] = {
 				},
-				["__call"] = {
-				},
+				["start_time"] = 158960.348,
+				["contra"] = "Southsea Dock Worker",
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
 						}, -- [1]
-					},
-					["damage_section"] = {
 					},
 					["damage"] = {
 						{
@@ -257,31 +278,11 @@ _detalhes_database = {
 						}, -- [1]
 					},
 				},
-				["end_time"] = 158961.59,
-				["instance_type"] = "none",
-				["combat_id"] = 63,
-				["combat_counter"] = 6390,
-				["player_last_events"] = {
-				},
-				["CombatEndedAt"] = 158961.59,
-				["spells_cast_timeline"] = {
-				},
-				["data_fim"] = "18:46:22",
-				["data_inicio"] = "18:46:21",
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-					["Southsea Dock Worker"] = 1,
-				},
-				["start_time"] = 158960.348,
-				["TimeData"] = {
-				},
-				["contra"] = "Southsea Dock Worker",
 			}, -- [1]
 			{
 				{
-					["combatId"] = 62,
 					["tipo"] = 2,
+					["combatId"] = 62,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -294,21 +295,20 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
+							["last_event"] = 1602434779,
 							["classe"] = "MAGE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 20306.003744,
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1602434778,
+							["serial"] = "Player-4465-01D5BF39",
 							["dps_started"] = false,
 							["total"] = 20306.003744,
-							["colocacao"] = 1,
 							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["Chilled"] = {
 										["c_amt"] = 0,
@@ -326,19 +326,19 @@ _detalhes_database = {
 										["counter"] = 2,
 										["total"] = 0,
 										["c_max"] = 0,
-										["RESIST"] = 2,
+										["spellschool"] = 16,
 										["id"] = "Chilled",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 2,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["Blizzard"] = {
 										["c_amt"] = 0,
@@ -361,43 +361,13 @@ _detalhes_database = {
 										["spellschool"] = 16,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 193,
-										["r_amt"] = 30,
-										["c_min"] = 0,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 48,
-										["targets"] = {
-											["Southsea Dock Worker"] = 160,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 160,
-										["n_min"] = 20,
-										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 160,
-										["c_max"] = 0,
-										["RESIST"] = 1,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 20,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["r_amt"] = 1,
-										["c_min"] = 0,
+										["r_amt"] = 30,
 									},
 									["Cone of Cold"] = {
 										["c_amt"] = 0,
@@ -420,13 +390,43 @@ _detalhes_database = {
 										["spellschool"] = 16,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 22,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
+									},
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 48,
+										["targets"] = {
+											["Southsea Dock Worker"] = 160,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 160,
+										["n_min"] = 20,
+										["g_dmg"] = 0,
+										["counter"] = 5,
+										["total"] = 160,
+										["c_max"] = 0,
+										["spellschool"] = 1,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 20,
+										["a_dmg"] = 0,
+										["RESIST"] = 1,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 1,
 									},
 									["Frost Nova"] = {
 										["c_amt"] = 1,
@@ -444,31 +444,32 @@ _detalhes_database = {
 										["counter"] = 27,
 										["total"] = 645,
 										["c_max"] = 45,
-										["RESIST"] = 1,
+										["spellschool"] = 16,
 										["id"] = "Frost Nova",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 1,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 25,
-										["r_amt"] = 0,
 										["c_min"] = 45,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 25,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-01D5BF39",
+							["colocacao"] = 1,
 							["last_dps"] = 200.118298452742,
 							["custom"] = 0,
-							["last_event"] = 1602434779,
+							["tipo"] = 1,
 							["damage_taken"] = 4766.003744,
 							["start_time"] = 1602434726,
 							["delay"] = 1602434757,
-							["tipo"] = 1,
+							["end_time"] = 1602434778,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -482,20 +483,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4447-1-41-7857-000003351A",
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 5111.005836,
+							["serial"] = "Creature-0-4447-1-41-7857-000003351A",
 							["monster"] = true,
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["total"] = 5111.005836,
 							["end_time"] = 1602434778,
-							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["on_hold"] = false,
 							["nome"] = "Southsea Dock Worker",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 2,
@@ -518,16 +518,16 @@ _detalhes_database = {
 										["MISS"] = 2,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["a_dmg"] = 270,
 										["m_crit"] = 0,
-										["a_amt"] = 3,
 										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 65,
-										["r_amt"] = 0,
 										["c_min"] = 136,
+										["successful_casted"] = 0,
+										["a_amt"] = 3,
+										["n_amt"] = 65,
+										["spellschool"] = 1,
+										["r_amt"] = 0,
 									},
 									["Head Crack"] = {
 										["c_amt"] = 0,
@@ -550,41 +550,44 @@ _detalhes_database = {
 										["DODGE"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 3,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["on_hold"] = false,
+							["last_event"] = 1602434778,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1602434778,
+							["tipo"] = 1,
 							["damage_taken"] = 20306.005836,
 							["start_time"] = 1602434745,
 							["delay"] = 1602434744,
-							["tipo"] = 1,
+							["total"] = 5111.005836,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 62,
 					["tipo"] = 3,
+					["combatId"] = 62,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["targets_overheal"] = {
+							["healing_from"] = {
+								["Konac"] = true,
+								["Augustin"] = true,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "MAGE",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 0.003534,
 							["total_without_pet"] = 886.003534,
 							["total"] = 886.003534,
@@ -605,13 +608,8 @@ _detalhes_database = {
 							["healing_taken"] = 3175.003534,
 							["fight_component"] = true,
 							["end_time"] = 1602434778,
-							["healing_from"] = {
-								["Konac"] = true,
-								["Augustin"] = true,
-							},
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
 										["c_amt"] = 0,
@@ -631,10 +629,10 @@ _detalhes_database = {
 										["targets_absorbs"] = {
 											["Augustin"] = 886,
 										},
-										["m_healed"] = 0,
 										["c_curado"] = 0,
-										["m_crit"] = 0,
 										["c_min"] = 0,
+										["m_crit"] = 0,
+										["m_healed"] = 0,
 										["m_amt"] = 0,
 										["n_curado"] = 886,
 										["n_amt"] = 12,
@@ -643,15 +641,18 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
+							["targets_overheal"] = {
+							},
+							["classe"] = "MAGE",
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1602434715,
 							["start_time"] = 1602434767,
 							["totaldenied"] = 0.003534,
 							["delay"] = 1602434715,
-							["last_event"] = 1602434715,
+							["tipo"] = 2,
 						}, -- [1]
 						{
 							["flag_original"] = 1304,
@@ -671,17 +672,24 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["totalover_without_pet"] = 0.006129,
-							["end_time"] = 1602434778,
+							["iniciar_hps"] = false,
 							["classe"] = "PRIEST",
 							["totalover"] = 7043.006129,
 							["total_without_pet"] = 2634.006129,
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["start_time"] = 1602434712,
+							["healing_taken"] = 345.006129,
 							["fight_component"] = true,
 							["total"] = 2634.006129,
-							["healing_taken"] = 345.006129,
+							["delay"] = 1602434766,
+							["end_time"] = 1602434778,
+							["nome"] = "Konac",
+							["targets_absorbs"] = {
+							},
+							["heal_enemy_amt"] = 0,
+							["need_refresh"] = true,
+							["heal_enemy"] = {
+							},
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Renew"] = {
 										["c_amt"] = 0,
@@ -705,150 +713,142 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["n_curado"] = 2634,
 										["n_amt"] = 27,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
-							["nome"] = "Konac",
-							["targets_absorbs"] = {
-							},
-							["start_time"] = 1602434712,
-							["need_refresh"] = true,
-							["heal_enemy"] = {
-							},
-							["serial"] = "Player-4465-00C4D96C",
 							["custom"] = 0,
 							["last_event"] = 1602434766,
 							["on_hold"] = false,
 							["totaldenied"] = 0.006129,
-							["delay"] = 1602434766,
+							["serial"] = "Player-4465-00C4D96C",
 							["tipo"] = 2,
 						}, -- [2]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 62,
 					["tipo"] = 7,
+					["combatId"] = 62,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 62,
 					["tipo"] = 9,
+					["combatId"] = 62,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Frost Nova"] = {
-										["activedamt"] = 0,
-										["id"] = "Frost Nova",
+										["appliedamt"] = 26,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 24,
-										["appliedamt"] = 26,
+										["id"] = "Frost Nova",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blizzard"] = {
-										["activedamt"] = 0,
-										["id"] = "Blizzard",
+										["appliedamt"] = 36,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 24,
-										["appliedamt"] = 36,
+										["id"] = "Blizzard",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Cone of Cold"] = {
-										["activedamt"] = 1,
-										["id"] = "Cone of Cold",
+										["appliedamt"] = 13,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 12,
-										["appliedamt"] = 13,
+										["id"] = "Cone of Cold",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Chilled"] = {
-										["activedamt"] = 0,
-										["id"] = "Chilled",
+										["appliedamt"] = 10,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 22,
-										["appliedamt"] = 10,
+										["id"] = "Chilled",
 										["refreshamt"] = 9,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 147,
 							["classe"] = "MAGE",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
-										["activedamt"] = 2,
-										["id"] = "Ice Barrier",
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 18,
-										["appliedamt"] = 2,
+										["id"] = "Ice Barrier",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blink"] = {
-										["activedamt"] = 1,
-										["id"] = "Blink",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = "Blink",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Arcane Intellect"] = {
-										["activedamt"] = 1,
-										["id"] = "Arcane Intellect",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = "Arcane Intellect",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Ice Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Ice Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 21,
-										["appliedamt"] = 1,
+										["id"] = "Ice Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 102,
-										["appliedamt"] = 1,
+										["id"] = "Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -866,6 +866,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 82,
@@ -880,34 +881,34 @@ _detalhes_database = {
 								["Cone of Cold"] = 3,
 								["Blizzard"] = 3,
 							},
-							["nome"] = "Augustin",
-							["last_event"] = 1602434778,
 							["debuff_uptime_targets"] = {
 							},
+							["tipo"] = 4,
+							["nome"] = "Augustin",
 							["pets"] = {
 							},
 							["serial"] = "Player-4465-01D5BF39",
-							["tipo"] = 4,
+							["last_event"] = 1602434778,
 						}, -- [1]
 						{
 							["flag_original"] = 1304,
-							["tipo"] = 4,
-							["nome"] = "Konac",
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["need_refresh"] = true,
 							["last_event"] = 0,
+							["nome"] = "Konac",
+							["need_refresh"] = true,
 							["spell_cast"] = {
 								["Renew"] = 8,
 							},
-							["serial"] = "Player-4465-00C4D96C",
+							["fight_component"] = true,
 							["classe"] = "PRIEST",
+							["tipo"] = 4,
+							["serial"] = "Player-4465-00C4D96C",
+							["pets"] = {
+							},
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
-							["nome"] = "Southsea Dock Worker",
 							["tipo"] = 4,
+							["nome"] = "Southsea Dock Worker",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -922,8 +923,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 62,
 					["tipo"] = 2,
+					["combatId"] = 62,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -932,13 +933,10 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 158957.982,
 				["tempo_start"] = 1602434676,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Southsea Dock Worker",
 				["combat_counter"] = 6389,
 				["playing_solo"] = true,
 				["totals"] = {
@@ -954,10 +952,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -966,9 +964,14 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "18:46:18",
+				["cleu_timeline"] = {
 				},
+				["enemy"] = "Southsea Dock Worker",
+				["TotalElapsedCombatTime"] = 158957.63,
 				["CombatEndedAt"] = 158957.63,
 				["aura_timeline"] = {
 				},
@@ -976,6 +979,15 @@ _detalhes_database = {
 				},
 				["data_inicio"] = "18:44:37",
 				["end_time"] = 158957.63,
+				["combat_id"] = 62,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Southsea Dock Worker"] = 8,
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["totals_grupo"] = {
 					20306, -- [1]
 					886, -- [2]
@@ -989,22 +1001,27 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 62,
-				["TotalElapsedCombatTime"] = 158957.63,
-				["frags_need_refresh"] = true,
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Southsea Dock Worker",
+				["start_time"] = 158856.16,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -1012,32 +1029,17 @@ _detalhes_database = {
 							["Augustin"] = 886.003534,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Augustin"] = 20306.003744,
 						}, -- [1]
 					},
 				},
-				["frags"] = {
-					["Southsea Dock Worker"] = 8,
-				},
-				["data_fim"] = "18:46:18",
-				["instance_type"] = "none",
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 158856.16,
-				["contra"] = "Southsea Dock Worker",
-				["TimeData"] = {
-				},
 			}, -- [2]
 			{
 				{
-					["combatId"] = 61,
 					["tipo"] = 2,
+					["combatId"] = 61,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 2632,
@@ -1050,19 +1052,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["fight_component"] = true,
+							["total"] = 3267.005237,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 3267.005237,
-							["monster"] = true,
-							["fight_component"] = true,
+							["serial"] = "Creature-0-4447-1-41-7858-000003352F",
 							["dps_started"] = false,
 							["end_time"] = 1602434605,
 							["friendlyfire_total"] = 0,
 							["on_hold"] = false,
 							["nome"] = "Southsea Swashbuckler",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 1,
@@ -1084,16 +1086,16 @@ _detalhes_database = {
 										["DODGE"] = 4,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["a_dmg"] = 110,
 										["m_crit"] = 0,
-										["a_amt"] = 1,
 										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 42,
-										["r_amt"] = 0,
 										["c_min"] = 149,
+										["successful_casted"] = 0,
+										["a_amt"] = 1,
+										["n_amt"] = 42,
+										["spellschool"] = 1,
+										["r_amt"] = 0,
 									},
 									["Disarm"] = {
 										["c_amt"] = 0,
@@ -1115,26 +1117,26 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 3,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["m_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["total"] = 3267.005237,
-							["serial"] = "Creature-0-4447-1-41-7858-000003352F",
+							["last_event"] = 1602434602,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1602434602,
+							["tipo"] = 1,
 							["damage_taken"] = 15642.005237,
 							["start_time"] = 1602434558,
 							["delay"] = 1602434583,
-							["tipo"] = 1,
+							["monster"] = true,
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
@@ -1148,20 +1150,20 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["friendlyfire_total"] = 0,
+							["last_event"] = 1602434605,
 							["classe"] = "MAGE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 15642.002137,
-							["friendlyfire"] = {
-							},
-							["colocacao"] = 1,
+							["serial"] = "Player-4465-01D5BF39",
 							["dps_started"] = false,
 							["end_time"] = 1602434605,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
+							["damage_taken"] = 3329.002137,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["Blizzard"] = {
 										["c_amt"] = 0,
@@ -1184,13 +1186,13 @@ _detalhes_database = {
 										["spellschool"] = 16,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 96,
+										["a_amt"] = 0,
 										["r_amt"] = 13,
-										["c_min"] = 0,
 									},
 									["Frostbolt"] = {
 										["c_amt"] = 0,
@@ -1213,13 +1215,13 @@ _detalhes_database = {
 										["spellschool"] = 16,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Arcane Explosion"] = {
 										["c_amt"] = 0,
@@ -1242,13 +1244,13 @@ _detalhes_database = {
 										["spellschool"] = 64,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 7,
+										["a_amt"] = 0,
 										["r_amt"] = 1,
-										["c_min"] = 0,
 									},
 									["Fire Blast"] = {
 										["c_amt"] = 0,
@@ -1271,13 +1273,13 @@ _detalhes_database = {
 										["spellschool"] = 4,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Chilled"] = {
 										["c_amt"] = 0,
@@ -1295,19 +1297,19 @@ _detalhes_database = {
 										["counter"] = 5,
 										["total"] = 0,
 										["c_max"] = 0,
-										["RESIST"] = 5,
+										["spellschool"] = 16,
 										["id"] = "Chilled",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 5,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -1329,15 +1331,15 @@ _detalhes_database = {
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["m_amt"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["a_dmg"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Frost Nova"] = {
 										["c_amt"] = 3,
@@ -1355,19 +1357,19 @@ _detalhes_database = {
 										["counter"] = 14,
 										["total"] = 380,
 										["c_max"] = 48,
-										["RESIST"] = 1,
+										["spellschool"] = 16,
 										["id"] = "Frost Nova",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 1,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 10,
-										["r_amt"] = 0,
 										["c_min"] = 43,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 10,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["Cone of Cold"] = {
 										["c_amt"] = 1,
@@ -1385,19 +1387,19 @@ _detalhes_database = {
 										["counter"] = 24,
 										["total"] = 7192,
 										["c_max"] = 571,
-										["RESIST"] = 1,
+										["spellschool"] = 16,
 										["id"] = "Cone of Cold",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 1,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 22,
-										["r_amt"] = 0,
 										["c_min"] = 571,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 22,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["!Autoshot"] = {
 										["c_amt"] = 0,
@@ -1415,32 +1417,32 @@ _detalhes_database = {
 										["counter"] = 6,
 										["total"] = 181,
 										["c_max"] = 0,
-										["RESIST"] = 1,
+										["spellschool"] = 1,
 										["id"] = "!Autoshot",
 										["r_dmg"] = 35,
-										["spellschool"] = 1,
 										["a_dmg"] = 0,
+										["RESIST"] = 1,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["r_amt"] = 1,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 5,
+										["b_dmg"] = 0,
+										["r_amt"] = 1,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 15642.002137,
-							["serial"] = "Player-4465-01D5BF39",
+							["colocacao"] = 1,
 							["last_dps"] = 182.84260642439,
 							["custom"] = 0,
-							["last_event"] = 1602434605,
-							["damage_taken"] = 3329.002137,
+							["tipo"] = 1,
+							["on_hold"] = false,
 							["start_time"] = 1602434538,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 15642.002137,
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
@@ -1452,19 +1454,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["fight_component"] = true,
+							["total"] = 62.003197,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 62.003197,
-							["monster"] = true,
-							["fight_component"] = true,
+							["serial"] = "Creature-0-4447-1-41-7857-000003347E",
 							["dps_started"] = false,
 							["end_time"] = 1602434605,
 							["friendlyfire_total"] = 0,
 							["on_hold"] = false,
 							["nome"] = "Southsea Dock Worker",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -1487,42 +1489,44 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["total"] = 62.003197,
-							["serial"] = "Creature-0-4447-1-41-7857-000003347E",
+							["last_event"] = 1602434676,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1602434676,
+							["tipo"] = 1,
 							["damage_taken"] = 0.003197,
 							["start_time"] = 1602434604,
 							["delay"] = 1602434531,
-							["tipo"] = 1,
+							["monster"] = true,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 61,
 					["tipo"] = 3,
+					["combatId"] = 61,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["targets_overheal"] = {
+							["healing_from"] = {
+								["Konac"] = true,
+								["Augustin"] = true,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "MAGE",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 0.006719,
 							["total_without_pet"] = 443.006719,
 							["total"] = 443.006719,
@@ -1543,13 +1547,8 @@ _detalhes_database = {
 							["healing_taken"] = 3329.006719,
 							["fight_component"] = true,
 							["end_time"] = 1602434605,
-							["healing_from"] = {
-								["Konac"] = true,
-								["Augustin"] = true,
-							},
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
 										["c_amt"] = 0,
@@ -1569,10 +1568,10 @@ _detalhes_database = {
 										["targets_absorbs"] = {
 											["Augustin"] = 443,
 										},
-										["m_healed"] = 0,
 										["c_curado"] = 0,
-										["m_crit"] = 0,
 										["c_min"] = 0,
+										["m_crit"] = 0,
+										["m_healed"] = 0,
 										["m_amt"] = 0,
 										["n_curado"] = 443,
 										["n_amt"] = 7,
@@ -1581,15 +1580,18 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
+							["targets_overheal"] = {
+							},
+							["classe"] = "MAGE",
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1602434529,
 							["start_time"] = 1602434594,
 							["totaldenied"] = 0.006719,
 							["delay"] = 1602434529,
-							["last_event"] = 1602434529,
+							["tipo"] = 2,
 						}, -- [1]
 						{
 							["flag_original"] = 1304,
@@ -1607,17 +1609,24 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["totalover_without_pet"] = 0.005409,
-							["end_time"] = 1602434605,
+							["iniciar_hps"] = false,
 							["classe"] = "PRIEST",
 							["totalover"] = 8989.005409,
 							["total_without_pet"] = 2886.005409,
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["start_time"] = 1602434538,
+							["healing_taken"] = 0.005409,
 							["fight_component"] = true,
 							["total"] = 2886.005409,
-							["healing_taken"] = 0.005409,
+							["delay"] = 0,
+							["end_time"] = 1602434605,
+							["nome"] = "Konac",
+							["targets_absorbs"] = {
+							},
+							["heal_enemy_amt"] = 0,
+							["need_refresh"] = true,
+							["heal_enemy"] = {
+							},
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Renew"] = {
 										["c_amt"] = 0,
@@ -1641,161 +1650,153 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["n_curado"] = 2886,
 										["n_amt"] = 33,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
-							["nome"] = "Konac",
-							["targets_absorbs"] = {
-							},
-							["start_time"] = 1602434538,
-							["need_refresh"] = true,
-							["heal_enemy"] = {
-							},
-							["serial"] = "Player-4465-00C4D96C",
 							["custom"] = 0,
 							["last_event"] = 1602434605,
 							["on_hold"] = false,
 							["totaldenied"] = 0.005409,
-							["delay"] = 0,
+							["serial"] = "Player-4465-00C4D96C",
 							["tipo"] = 2,
 						}, -- [2]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 61,
 					["tipo"] = 7,
+					["combatId"] = 61,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 61,
 					["tipo"] = 9,
+					["combatId"] = 61,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Chilled"] = {
-										["activedamt"] = 0,
-										["id"] = "Chilled",
+										["appliedamt"] = 25,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 61,
-										["appliedamt"] = 25,
+										["id"] = "Chilled",
 										["refreshamt"] = 11,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Frost Nova"] = {
-										["activedamt"] = 0,
-										["id"] = "Frost Nova",
+										["appliedamt"] = 13,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 16,
-										["appliedamt"] = 13,
+										["id"] = "Frost Nova",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Frostbolt"] = {
-										["activedamt"] = 0,
-										["id"] = "Frostbolt",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 2,
-										["appliedamt"] = 1,
+										["id"] = "Frostbolt",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Cone of Cold"] = {
-										["activedamt"] = 0,
-										["id"] = "Cone of Cold",
+										["appliedamt"] = 17,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 25,
-										["appliedamt"] = 17,
+										["id"] = "Cone of Cold",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blizzard"] = {
-										["activedamt"] = 0,
-										["id"] = "Blizzard",
+										["appliedamt"] = 19,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 16,
-										["appliedamt"] = 19,
+										["id"] = "Blizzard",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 269,
 							["classe"] = "MAGE",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
-										["activedamt"] = 1,
-										["id"] = "Ice Barrier",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 10,
-										["appliedamt"] = 1,
+										["id"] = "Ice Barrier",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blink"] = {
-										["activedamt"] = 1,
-										["id"] = "Blink",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = "Blink",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Arcane Intellect"] = {
-										["activedamt"] = 1,
-										["id"] = "Arcane Intellect",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 86,
-										["appliedamt"] = 1,
+										["id"] = "Arcane Intellect",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Ice Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Ice Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 86,
-										["appliedamt"] = 1,
+										["id"] = "Ice Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 86,
-										["appliedamt"] = 1,
+										["id"] = "Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -1813,6 +1814,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 120,
@@ -1829,19 +1831,19 @@ _detalhes_database = {
 								["Cone of Cold"] = 4,
 								["Fire Blast"] = 1,
 							},
-							["nome"] = "Augustin",
-							["last_event"] = 1602434605,
 							["debuff_uptime_targets"] = {
 							},
+							["tipo"] = 4,
+							["nome"] = "Augustin",
 							["pets"] = {
 							},
 							["serial"] = "Player-4465-01D5BF39",
-							["tipo"] = 4,
+							["last_event"] = 1602434605,
 						}, -- [1]
 						{
 							["flag_original"] = 2632,
-							["nome"] = "Southsea Swashbuckler",
 							["tipo"] = 4,
+							["nome"] = "Southsea Swashbuckler",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -1855,24 +1857,24 @@ _detalhes_database = {
 						}, -- [2]
 						{
 							["flag_original"] = 1304,
-							["tipo"] = 4,
-							["nome"] = "Konac",
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["need_refresh"] = true,
 							["last_event"] = 0,
+							["nome"] = "Konac",
+							["need_refresh"] = true,
 							["spell_cast"] = {
 								["Renew"] = 9,
 							},
-							["serial"] = "Player-4465-00C4D96C",
+							["fight_component"] = true,
 							["classe"] = "PRIEST",
+							["tipo"] = 4,
+							["serial"] = "Player-4465-00C4D96C",
+							["pets"] = {
+							},
 						}, -- [3]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 61,
 					["tipo"] = 2,
+					["combatId"] = 61,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -1881,13 +1883,10 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 158856.058,
 				["tempo_start"] = 1602434519,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Southsea Swashbuckler",
 				["combat_counter"] = 6388,
 				["playing_solo"] = true,
 				["totals"] = {
@@ -1903,10 +1902,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -1915,9 +1914,14 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "18:43:26",
+				["cleu_timeline"] = {
 				},
+				["enemy"] = "Southsea Swashbuckler",
+				["TotalElapsedCombatTime"] = 158785.216,
 				["CombatEndedAt"] = 158785.216,
 				["aura_timeline"] = {
 				},
@@ -1925,6 +1929,15 @@ _detalhes_database = {
 				},
 				["data_inicio"] = "18:42:00",
 				["end_time"] = 158785.216,
+				["combat_id"] = 61,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Southsea Swashbuckler"] = 7,
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["totals_grupo"] = {
 					15642, -- [1]
 					443, -- [2]
@@ -1938,22 +1951,27 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 61,
-				["TotalElapsedCombatTime"] = 158785.216,
-				["frags_need_refresh"] = true,
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Southsea Swashbuckler",
+				["start_time"] = 158698.93,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -1961,32 +1979,17 @@ _detalhes_database = {
 							["Augustin"] = 443.006719,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Augustin"] = 15642.002137,
 						}, -- [1]
 					},
 				},
-				["frags"] = {
-					["Southsea Swashbuckler"] = 7,
-				},
-				["data_fim"] = "18:43:26",
-				["instance_type"] = "none",
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 158698.93,
-				["contra"] = "Southsea Swashbuckler",
-				["TimeData"] = {
-				},
 			}, -- [3]
 			{
 				{
-					["combatId"] = 60,
 					["tipo"] = 2,
+					["combatId"] = 60,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 68168,
@@ -2000,20 +2003,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4447-1-41-7857-00000334BC",
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 8163.006872,
+							["serial"] = "Creature-0-4447-1-41-7857-00000334BC",
 							["monster"] = true,
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["total"] = 8163.006872,
 							["end_time"] = 1602434418,
-							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["on_hold"] = false,
 							["nome"] = "Southsea Dock Worker",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 8,
@@ -2036,16 +2038,16 @@ _detalhes_database = {
 										["DODGE"] = 3,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["a_dmg"] = 124,
 										["m_crit"] = 0,
-										["a_amt"] = 2,
 										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 95,
-										["r_amt"] = 0,
 										["c_min"] = 128,
+										["successful_casted"] = 0,
+										["a_amt"] = 2,
+										["n_amt"] = 95,
+										["spellschool"] = 1,
+										["r_amt"] = 0,
 									},
 									["Head Crack"] = {
 										["c_amt"] = 0,
@@ -2067,25 +2069,26 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 7,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["m_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["on_hold"] = false,
+							["last_event"] = 1602434417,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1602434417,
+							["tipo"] = 1,
 							["damage_taken"] = 20707.006872,
 							["start_time"] = 1602434305,
 							["delay"] = 1602434381,
-							["tipo"] = 1,
+							["total"] = 8163.006872,
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
@@ -2102,21 +2105,20 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
+							["last_event"] = 1602434417,
 							["classe"] = "MAGE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 25176.006171,
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1602434418,
+							["serial"] = "Player-4465-01D5BF39",
 							["dps_started"] = false,
 							["total"] = 25176.006171,
-							["colocacao"] = 1,
 							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["Blizzard"] = {
 										["c_amt"] = 0,
@@ -2141,13 +2143,13 @@ _detalhes_database = {
 										["spellschool"] = 16,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 147,
+										["a_amt"] = 0,
 										["r_amt"] = 29,
-										["c_min"] = 0,
 									},
 									["Frostbolt"] = {
 										["c_amt"] = 0,
@@ -2170,13 +2172,13 @@ _detalhes_database = {
 										["spellschool"] = 16,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Arcane Explosion"] = {
 										["c_amt"] = 0,
@@ -2195,19 +2197,19 @@ _detalhes_database = {
 										["counter"] = 7,
 										["total"] = 862,
 										["c_max"] = 0,
-										["RESIST"] = 1,
+										["spellschool"] = 64,
 										["id"] = "Arcane Explosion",
 										["r_dmg"] = 116,
-										["spellschool"] = 64,
 										["a_dmg"] = 0,
+										["RESIST"] = 1,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["r_amt"] = 1,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 6,
+										["b_dmg"] = 0,
+										["r_amt"] = 1,
 									},
 									["Fire Blast"] = {
 										["c_amt"] = 0,
@@ -2230,13 +2232,13 @@ _detalhes_database = {
 										["spellschool"] = 4,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Chilled"] = {
 										["c_amt"] = 0,
@@ -2255,19 +2257,19 @@ _detalhes_database = {
 										["counter"] = 14,
 										["total"] = 0,
 										["c_max"] = 0,
-										["RESIST"] = 14,
+										["spellschool"] = 16,
 										["id"] = "Chilled",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 14,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -2289,15 +2291,15 @@ _detalhes_database = {
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["b_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["Frost Nova"] = {
 										["c_amt"] = 2,
@@ -2317,19 +2319,19 @@ _detalhes_database = {
 										["counter"] = 56,
 										["total"] = 1275,
 										["c_max"] = 47,
-										["RESIST"] = 5,
+										["spellschool"] = 16,
 										["id"] = "Frost Nova",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 5,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 49,
-										["r_amt"] = 0,
 										["c_min"] = 43,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 49,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["Cone of Cold"] = {
 										["c_amt"] = 2,
@@ -2349,19 +2351,19 @@ _detalhes_database = {
 										["counter"] = 47,
 										["total"] = 12920,
 										["c_max"] = 594,
-										["RESIST"] = 2,
+										["spellschool"] = 16,
 										["id"] = "Cone of Cold",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 2,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 43,
-										["r_amt"] = 0,
 										["c_min"] = 589,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 43,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["!Autoshot"] = {
 										["c_amt"] = 0,
@@ -2379,31 +2381,32 @@ _detalhes_database = {
 										["counter"] = 3,
 										["total"] = 77,
 										["c_max"] = 0,
-										["RESIST"] = 1,
+										["spellschool"] = 1,
 										["id"] = "!Autoshot",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
 										["a_dmg"] = 0,
+										["RESIST"] = 1,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-01D5BF39",
+							["colocacao"] = 1,
 							["last_dps"] = 169.721688931285,
 							["custom"] = 0,
-							["last_event"] = 1602434417,
+							["tipo"] = 1,
 							["damage_taken"] = 9056.006171,
 							["start_time"] = 1602434294,
 							["delay"] = 1602434283,
-							["tipo"] = 1,
+							["end_time"] = 1602434418,
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
@@ -2416,20 +2419,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4447-1-41-7855-00000333DC",
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 634.007688,
+							["serial"] = "Creature-0-4447-1-41-7855-00000333DC",
 							["monster"] = true,
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["total"] = 634.007688,
 							["end_time"] = 1602434418,
-							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["on_hold"] = false,
 							["nome"] = "Southsea Pirate",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -2452,26 +2454,27 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 8,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["on_hold"] = false,
+							["last_event"] = 1602434368,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1602434368,
+							["tipo"] = 1,
 							["damage_taken"] = 2312.007688,
 							["start_time"] = 1602434408,
 							["delay"] = 1602434368,
-							["tipo"] = 1,
+							["total"] = 634.007688,
 						}, -- [3]
 						{
 							["flag_original"] = 2632,
@@ -2485,20 +2488,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4447-1-41-7858-00000334E6",
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1138.002362,
+							["serial"] = "Creature-0-4447-1-41-7858-00000334E6",
 							["monster"] = true,
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["total"] = 1138.002362,
 							["end_time"] = 1602434418,
-							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["on_hold"] = false,
 							["nome"] = "Southsea Swashbuckler",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 1,
@@ -2521,15 +2523,15 @@ _detalhes_database = {
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["b_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 15,
-										["r_amt"] = 0,
 										["c_min"] = 149,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 15,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["Disarm"] = {
 										["c_amt"] = 0,
@@ -2551,40 +2553,43 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 2,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["m_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["on_hold"] = false,
+							["last_event"] = 1602434519,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1602434519,
+							["tipo"] = 1,
 							["damage_taken"] = 2157.002362,
 							["start_time"] = 1602434380,
 							["delay"] = 1602434381,
-							["tipo"] = 1,
+							["total"] = 1138.002362,
 						}, -- [4]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 60,
 					["tipo"] = 3,
+					["combatId"] = 60,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["targets_overheal"] = {
+							["healing_from"] = {
+								["Konac"] = true,
+								["Augustin"] = true,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "MAGE",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 0.00695,
 							["total_without_pet"] = 1329.00695,
 							["total"] = 1329.00695,
@@ -2605,13 +2610,8 @@ _detalhes_database = {
 							["healing_taken"] = 8919.00695,
 							["fight_component"] = true,
 							["end_time"] = 1602434418,
-							["healing_from"] = {
-								["Konac"] = true,
-								["Augustin"] = true,
-							},
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
 										["c_amt"] = 0,
@@ -2631,10 +2631,10 @@ _detalhes_database = {
 										["targets_absorbs"] = {
 											["Augustin"] = 1329,
 										},
-										["m_healed"] = 0,
 										["c_curado"] = 0,
-										["m_crit"] = 0,
 										["c_min"] = 0,
+										["m_crit"] = 0,
+										["m_healed"] = 0,
 										["m_amt"] = 0,
 										["n_curado"] = 1329,
 										["n_amt"] = 20,
@@ -2643,15 +2643,18 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
+							["targets_overheal"] = {
+							},
+							["classe"] = "MAGE",
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1602434350,
 							["start_time"] = 1602434400,
 							["totaldenied"] = 0.00695,
 							["delay"] = 1602434350,
-							["last_event"] = 1602434350,
+							["tipo"] = 2,
 						}, -- [1]
 						{
 							["flag_original"] = 1304,
@@ -2671,17 +2674,24 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["totalover_without_pet"] = 0.004097,
-							["end_time"] = 1602434418,
+							["iniciar_hps"] = false,
 							["classe"] = "PRIEST",
 							["totalover"] = 13097.004097,
 							["total_without_pet"] = 8469.004097,
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["start_time"] = 1602434281,
+							["healing_taken"] = 879.004097,
 							["fight_component"] = true,
 							["total"] = 8469.004097,
-							["healing_taken"] = 879.004097,
+							["delay"] = 0,
+							["end_time"] = 1602434418,
+							["nome"] = "Konac",
+							["targets_absorbs"] = {
+							},
+							["heal_enemy_amt"] = 0,
+							["need_refresh"] = true,
+							["heal_enemy"] = {
+							},
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Renew"] = {
 										["c_amt"] = 0,
@@ -2705,36 +2715,29 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["n_curado"] = 8469,
 										["n_amt"] = 60,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
-							["nome"] = "Konac",
-							["targets_absorbs"] = {
-							},
-							["start_time"] = 1602434281,
-							["need_refresh"] = true,
-							["heal_enemy"] = {
-							},
-							["serial"] = "Player-4465-00C4D96C",
 							["custom"] = 0,
 							["last_event"] = 1602434417,
 							["on_hold"] = false,
 							["totaldenied"] = 0.004097,
-							["delay"] = 0,
+							["serial"] = "Player-4465-00C4D96C",
 							["tipo"] = 2,
 						}, -- [2]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 60,
 					["tipo"] = 7,
+					["combatId"] = 60,
 					["_ActorTable"] = {
 						{
 							["received"] = 1433.005709,
@@ -2751,7 +2754,6 @@ _detalhes_database = {
 							["total"] = 1433.005709,
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									["Replenish Mana"] = {
 										["total"] = 596,
@@ -2772,6 +2774,7 @@ _detalhes_database = {
 										["counter"] = 1,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["flag_original"] = 1297,
@@ -2784,127 +2787,126 @@ _detalhes_database = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 60,
 					["tipo"] = 9,
+					["combatId"] = 60,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Chilled"] = {
-										["activedamt"] = 0,
-										["id"] = "Chilled",
+										["appliedamt"] = 54,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 109,
-										["appliedamt"] = 54,
+										["id"] = "Chilled",
 										["refreshamt"] = 30,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Frost Nova"] = {
-										["activedamt"] = 0,
-										["id"] = "Frost Nova",
+										["appliedamt"] = 41,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 45,
-										["appliedamt"] = 41,
+										["id"] = "Frost Nova",
 										["refreshamt"] = 10,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Frostbolt"] = {
-										["activedamt"] = 0,
-										["id"] = "Frostbolt",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 6,
-										["appliedamt"] = 1,
+										["id"] = "Frostbolt",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Cone of Cold"] = {
-										["activedamt"] = 0,
-										["id"] = "Cone of Cold",
+										["appliedamt"] = 38,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 55,
-										["appliedamt"] = 38,
+										["id"] = "Cone of Cold",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blizzard"] = {
-										["activedamt"] = 0,
-										["id"] = "Blizzard",
+										["appliedamt"] = 28,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 23,
-										["appliedamt"] = 28,
+										["id"] = "Blizzard",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 468,
 							["classe"] = "MAGE",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
-										["activedamt"] = 3,
-										["id"] = "Ice Barrier",
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 3,
 										["uptime"] = 19,
-										["appliedamt"] = 3,
+										["id"] = "Ice Barrier",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blink"] = {
-										["activedamt"] = 2,
-										["id"] = "Blink",
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 2,
-										["appliedamt"] = 2,
+										["id"] = "Blink",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Arcane Intellect"] = {
-										["activedamt"] = 1,
-										["id"] = "Arcane Intellect",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 149,
-										["appliedamt"] = 1,
+										["id"] = "Arcane Intellect",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Ice Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Ice Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 149,
-										["appliedamt"] = 1,
+										["id"] = "Ice Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 149,
-										["appliedamt"] = 1,
+										["id"] = "Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -2922,6 +2924,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 238,
@@ -2939,22 +2942,22 @@ _detalhes_database = {
 								["Cold Snap"] = 1,
 								["Frost Nova"] = 6,
 								["Shoot"] = 3,
-								["Cone of Cold"] = 6,
 								["Restore Mana"] = 1,
+								["Cone of Cold"] = 6,
 							},
-							["nome"] = "Augustin",
-							["last_event"] = 1602434418,
 							["debuff_uptime_targets"] = {
 							},
+							["tipo"] = 4,
+							["nome"] = "Augustin",
 							["pets"] = {
 							},
 							["serial"] = "Player-4465-01D5BF39",
-							["tipo"] = 4,
+							["last_event"] = 1602434418,
 						}, -- [1]
 						{
 							["flag_original"] = 2632,
-							["nome"] = "Southsea Dock Worker",
 							["tipo"] = 4,
+							["nome"] = "Southsea Dock Worker",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -2968,23 +2971,23 @@ _detalhes_database = {
 						}, -- [2]
 						{
 							["flag_original"] = 1304,
-							["tipo"] = 4,
-							["nome"] = "Konac",
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["need_refresh"] = true,
 							["last_event"] = 0,
+							["nome"] = "Konac",
+							["need_refresh"] = true,
 							["spell_cast"] = {
 								["Renew"] = 24,
 							},
-							["serial"] = "Player-4465-00C4D96C",
+							["fight_component"] = true,
 							["classe"] = "PRIEST",
+							["tipo"] = 4,
+							["serial"] = "Player-4465-00C4D96C",
+							["pets"] = {
+							},
 						}, -- [3]
 						{
 							["flag_original"] = 2632,
-							["nome"] = "Southsea Swashbuckler",
 							["tipo"] = 4,
+							["nome"] = "Southsea Swashbuckler",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -2999,8 +3002,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 60,
 					["tipo"] = 2,
+					["combatId"] = 60,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -3009,13 +3012,10 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 158697.641,
 				["tempo_start"] = 1602434269,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Southsea Dock Worker",
 				["combat_counter"] = 6387,
 				["playing_solo"] = true,
 				["totals"] = {
@@ -3031,10 +3031,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -3043,9 +3043,14 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "18:40:19",
+				["cleu_timeline"] = {
 				},
+				["enemy"] = "Southsea Dock Worker",
+				["TotalElapsedCombatTime"] = 158598.11,
 				["CombatEndedAt"] = 158598.11,
 				["aura_timeline"] = {
 				},
@@ -3053,6 +3058,17 @@ _detalhes_database = {
 				},
 				["data_inicio"] = "18:37:50",
 				["end_time"] = 158598.11,
+				["combat_id"] = 60,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Southsea Dock Worker"] = 9,
+					["Southsea Pirate"] = 1,
+					["Southsea Swashbuckler"] = 1,
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["totals_grupo"] = {
 					25176, -- [1]
 					1329, -- [2]
@@ -3066,22 +3082,27 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 60,
-				["TotalElapsedCombatTime"] = 158598.11,
-				["frags_need_refresh"] = true,
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Southsea Dock Worker",
+				["start_time"] = 158449.054,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -3089,34 +3110,17 @@ _detalhes_database = {
 							["Augustin"] = 1329.00695,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Augustin"] = 25176.006171,
 						}, -- [1]
 					},
 				},
-				["frags"] = {
-					["Southsea Dock Worker"] = 9,
-					["Southsea Pirate"] = 1,
-					["Southsea Swashbuckler"] = 1,
-				},
-				["data_fim"] = "18:40:19",
-				["instance_type"] = "none",
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 158449.054,
-				["contra"] = "Southsea Dock Worker",
-				["TimeData"] = {
-				},
 			}, -- [4]
 			{
 				{
-					["combatId"] = 59,
 					["tipo"] = 2,
+					["combatId"] = 59,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -3126,24 +3130,23 @@ _detalhes_database = {
 							["targets"] = {
 								["Southsea Dock Worker"] = 1576,
 							},
-							["total"] = 1576.005427,
+							["serial"] = "Player-4465-01D5BF39",
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["classe"] = "MAGE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1576.005427,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1602434182,
-							["friendlyfire_total"] = 0,
 							["spec"] = 64,
+							["dps_started"] = false,
+							["total"] = 1576.005427,
+							["on_hold"] = false,
+							["last_event"] = 1602434180,
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["Cone of Cold"] = {
 										["c_amt"] = 0,
@@ -3166,13 +3169,13 @@ _detalhes_database = {
 										["spellschool"] = 16,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Arcane Explosion"] = {
 										["c_amt"] = 1,
@@ -3190,31 +3193,32 @@ _detalhes_database = {
 										["counter"] = 5,
 										["total"] = 677,
 										["c_max"] = 227,
-										["RESIST"] = 1,
+										["spellschool"] = 64,
 										["id"] = "Arcane Explosion",
 										["r_dmg"] = 0,
-										["spellschool"] = 64,
 										["a_dmg"] = 0,
+										["RESIST"] = 1,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
 										["c_min"] = 227,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-01D5BF39",
+							["end_time"] = 1602434182,
 							["last_dps"] = 325.352069984642,
 							["custom"] = 0,
-							["last_event"] = 1602434180,
+							["tipo"] = 1,
 							["damage_taken"] = 0.005427,
 							["start_time"] = 1602434177,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 2632,
@@ -3224,41 +3228,41 @@ _detalhes_database = {
 							},
 							["targets"] = {
 							},
-							["monster"] = true,
 							["pets"] = {
 							},
 							["fight_component"] = true,
+							["dps_started"] = false,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 0.00585,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["total"] = 0.00585,
-							["classe"] = "UNKNOW",
 							["serial"] = "Creature-0-4447-1-41-7857-00000333C7",
+							["monster"] = true,
+							["total"] = 0.00585,
+							["damage_taken"] = 1576.00585,
+							["on_hold"] = false,
 							["nome"] = "Southsea Dock Worker",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
+							["tipo"] = 1,
 							["end_time"] = 1602434182,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 1576.00585,
+							["last_event"] = 1602434269,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1602434182,
 							["delay"] = 0,
-							["last_event"] = 1602434269,
+							["classe"] = "UNKNOW",
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 59,
 					["tipo"] = 3,
+					["combatId"] = 59,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -3268,33 +3272,33 @@ _detalhes_database = {
 							},
 							["targets"] = {
 							},
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-								},
-							},
+							["classe"] = "MAGE",
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
 							["healing_from"] = {
 							},
-							["classe"] = "MAGE",
+							["healing_taken"] = 0.003462,
 							["totalover"] = 0.003462,
 							["total_without_pet"] = 0.003462,
-							["heal_enemy_amt"] = 0,
 							["totalover_without_pet"] = 0.003462,
-							["healing_taken"] = 0.003462,
+							["start_time"] = 1602434182,
+							["heal_enemy_amt"] = 0,
 							["total"] = 0.003462,
 							["end_time"] = 1602434182,
-							["start_time"] = 1602434182,
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 3,
+							},
 							["nome"] = "Augustin",
 							["targets_absorbs"] = {
 							},
 							["grupo"] = true,
-							["spec"] = 64,
+							["serial"] = "Player-4465-01D5BF39",
 							["heal_enemy"] = {
 							},
-							["serial"] = "Player-4465-01D5BF39",
+							["spec"] = 64,
 							["custom"] = 0,
 							["tipo"] = 2,
 							["on_hold"] = false,
@@ -3305,14 +3309,14 @@ _detalhes_database = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 59,
 					["tipo"] = 7,
+					["combatId"] = 59,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 59,
 					["tipo"] = 9,
+					["combatId"] = 59,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
@@ -3320,61 +3324,61 @@ _detalhes_database = {
 							},
 							["spec"] = 64,
 							["grupo"] = true,
+							["last_event"] = 1602434182,
+							["pets"] = {
+							},
+							["nome"] = "Augustin",
+							["buff_uptime"] = 15,
+							["tipo"] = 4,
 							["spell_cast"] = {
 								["Arcane Explosion"] = 2,
 							},
-							["buff_uptime"] = 15,
-							["nome"] = "Augustin",
-							["pets"] = {
-							},
-							["last_event"] = 1602434182,
-							["classe"] = "MAGE",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = "Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Arcane Intellect"] = {
-										["activedamt"] = 1,
-										["id"] = "Arcane Intellect",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = "Arcane Intellect",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Ice Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Ice Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 5,
-										["appliedamt"] = 1,
+										["id"] = "Ice Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["serial"] = "Player-4465-01D5BF39",
-							["tipo"] = 4,
+							["classe"] = "MAGE",
 						}, -- [1]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 59,
 					["tipo"] = 2,
+					["combatId"] = 59,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -3383,13 +3387,10 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 158441.02,
 				["tempo_start"] = 1602434177,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Southsea Dock Worker",
 				["combat_counter"] = 6386,
 				["playing_solo"] = true,
 				["totals"] = {
@@ -3405,10 +3406,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -3417,9 +3418,14 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "18:36:23",
+				["cleu_timeline"] = {
 				},
+				["enemy"] = "Southsea Dock Worker",
+				["TotalElapsedCombatTime"] = 158361.786,
 				["CombatEndedAt"] = 158361.786,
 				["aura_timeline"] = {
 				},
@@ -3427,6 +3433,15 @@ _detalhes_database = {
 				},
 				["data_inicio"] = "18:36:18",
 				["end_time"] = 158361.786,
+				["combat_id"] = 59,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Southsea Dock Worker"] = 3,
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["totals_grupo"] = {
 					1576, -- [1]
 					0, -- [2]
@@ -3440,22 +3455,27 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 59,
-				["TotalElapsedCombatTime"] = 158361.786,
-				["frags_need_refresh"] = true,
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Southsea Dock Worker",
+				["start_time"] = 158356.942,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -3463,37 +3483,21 @@ _detalhes_database = {
 							["Augustin"] = 0.003462,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Augustin"] = 1576.005427,
 						}, -- [1]
 					},
 				},
-				["frags"] = {
-					["Southsea Dock Worker"] = 3,
-				},
-				["data_fim"] = "18:36:23",
-				["instance_type"] = "none",
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 158356.942,
-				["contra"] = "Southsea Dock Worker",
-				["TimeData"] = {
-				},
 			}, -- [5]
 			{
 				{
-					["combatId"] = 58,
 					["tipo"] = 2,
+					["combatId"] = 58,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["totalabsorbed"] = 0.002645,
-							["spec"] = 64,
 							["damage_from"] = {
 								["Southsea Dock Worker"] = true,
 								["Southsea Pirate"] = true,
@@ -3502,23 +3506,23 @@ _detalhes_database = {
 								["Southsea Dock Worker"] = 12115,
 								["Southsea Pirate"] = 4514,
 							},
+							["serial"] = "Player-4465-01D5BF39",
 							["pets"] = {
 							},
 							["colocacao"] = 1,
-							["end_time"] = 1602434177,
+							["total"] = 16629.002645,
 							["classe"] = "MAGE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 16629.002645,
+							["spec"] = 64,
+							["dps_started"] = false,
+							["end_time"] = 1602434177,
 							["friendlyfire"] = {
 							},
-							["dps_started"] = false,
-							["total"] = 16629.002645,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
+							["last_event"] = 1602434174,
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["Chilled"] = {
 										["c_amt"] = 0,
@@ -3537,19 +3541,19 @@ _detalhes_database = {
 										["counter"] = 6,
 										["total"] = 0,
 										["c_max"] = 0,
-										["RESIST"] = 6,
+										["spellschool"] = 16,
 										["id"] = "Chilled",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 6,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -3572,16 +3576,16 @@ _detalhes_database = {
 										["a_amt"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 1,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["r_amt"] = 0,
 									},
 									["Frost Nova"] = {
 										["c_amt"] = 3,
@@ -3600,19 +3604,19 @@ _detalhes_database = {
 										["counter"] = 39,
 										["total"] = 876,
 										["c_max"] = 48,
-										["RESIST"] = 5,
+										["spellschool"] = 16,
 										["id"] = "Frost Nova",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 5,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 31,
-										["r_amt"] = 0,
 										["c_min"] = 46,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 31,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["Frostbolt"] = {
 										["c_amt"] = 0,
@@ -3636,13 +3640,13 @@ _detalhes_database = {
 										["spellschool"] = 16,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 4,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Cone of Cold"] = {
 										["c_amt"] = 2,
@@ -3661,19 +3665,19 @@ _detalhes_database = {
 										["counter"] = 41,
 										["total"] = 11947,
 										["c_max"] = 579,
-										["RESIST"] = 3,
+										["spellschool"] = 16,
 										["id"] = "Cone of Cold",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 3,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 36,
-										["r_amt"] = 0,
 										["c_min"] = 549,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 36,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["Blizzard"] = {
 										["c_amt"] = 0,
@@ -3697,25 +3701,26 @@ _detalhes_database = {
 										["spellschool"] = 16,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 42,
+										["a_amt"] = 0,
 										["r_amt"] = 8,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-01D5BF39",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 148.586004065575,
 							["custom"] = 0,
-							["last_event"] = 1602434174,
-							["damage_taken"] = 6137.002645,
+							["tipo"] = 1,
+							["on_hold"] = false,
 							["start_time"] = 1602434100,
 							["delay"] = 1602434142,
-							["tipo"] = 1,
+							["damage_taken"] = 6137.002645,
 						}, -- [1]
 						{
 							["flag_original"] = 2632,
@@ -3731,20 +3736,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4447-1-41-7857-000003339D",
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 5246.002428,
+							["serial"] = "Creature-0-4447-1-41-7857-000003339D",
 							["monster"] = true,
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["total"] = 5246.002428,
 							["end_time"] = 1602434173,
-							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["on_hold"] = false,
 							["nome"] = "Southsea Dock Worker",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 3,
@@ -3768,16 +3772,16 @@ _detalhes_database = {
 										["DODGE"] = 6,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 65,
-										["r_amt"] = 0,
 										["c_min"] = 124,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 65,
+										["spellschool"] = 1,
+										["r_amt"] = 0,
 									},
 									["Head Crack"] = {
 										["c_amt"] = 0,
@@ -3799,25 +3803,26 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 2,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["m_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["on_hold"] = false,
+							["last_event"] = 1602434177,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1602434177,
+							["tipo"] = 1,
 							["damage_taken"] = 13741.002428,
 							["start_time"] = 1602434112,
 							["delay"] = 1602434161,
-							["tipo"] = 1,
+							["total"] = 5246.002428,
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
@@ -3831,20 +3836,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4447-1-41-7855-00000333DC",
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1875.001886,
+							["serial"] = "Creature-0-4447-1-41-7855-00000333DC",
 							["monster"] = true,
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["total"] = 1875.001886,
 							["end_time"] = 1602434173,
-							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["on_hold"] = false,
 							["nome"] = "Southsea Pirate",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 3,
@@ -3867,15 +3871,15 @@ _detalhes_database = {
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 118,
+										["b_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 1,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 17,
-										["r_amt"] = 0,
 										["c_min"] = 132,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 17,
+										["a_dmg"] = 118,
+										["r_amt"] = 0,
 									},
 									["Strike"] = {
 										["c_amt"] = 0,
@@ -3899,32 +3903,33 @@ _detalhes_database = {
 										["MISS"] = 2,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 3,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["on_hold"] = false,
+							["last_event"] = 1602434162,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1602434162,
+							["tipo"] = 1,
 							["damage_taken"] = 4514.001886,
 							["start_time"] = 1602434134,
 							["delay"] = 1602434162,
-							["tipo"] = 1,
+							["total"] = 1875.001886,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 58,
 					["tipo"] = 3,
+					["combatId"] = 58,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -3933,7 +3938,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "MAGE",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 0.006177,
 							["total_without_pet"] = 443.006177,
 							["total"] = 443.006177,
@@ -3954,13 +3959,9 @@ _detalhes_database = {
 							["healing_taken"] = 6137.006177,
 							["fight_component"] = true,
 							["end_time"] = 1602434173,
-							["healing_from"] = {
-								["Konac"] = true,
-								["Augustin"] = true,
-							},
+							["classe"] = "MAGE",
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
 										["c_amt"] = 0,
@@ -3980,10 +3981,10 @@ _detalhes_database = {
 										["targets_absorbs"] = {
 											["Augustin"] = 443,
 										},
-										["m_healed"] = 0,
 										["c_curado"] = 0,
-										["m_crit"] = 0,
 										["c_min"] = 0,
+										["m_crit"] = 0,
+										["m_healed"] = 0,
 										["m_amt"] = 0,
 										["n_curado"] = 443,
 										["n_amt"] = 7,
@@ -3992,16 +3993,20 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1602434164,
-							["custom"] = 0,
+							["healing_from"] = {
+								["Konac"] = true,
+								["Augustin"] = true,
+							},
 							["tipo"] = 2,
-							["spec"] = 64,
+							["custom"] = 0,
+							["last_event"] = 1602434069,
+							["start_time"] = 1602434164,
 							["totaldenied"] = 0.006177,
 							["delay"] = 1602434069,
-							["last_event"] = 1602434069,
+							["spec"] = 64,
 						}, -- [1]
 						{
 							["flag_original"] = 1304,
@@ -4021,17 +4026,24 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["totalover_without_pet"] = 0.00239,
-							["end_time"] = 1602434173,
+							["iniciar_hps"] = false,
 							["classe"] = "PRIEST",
 							["totalover"] = 11860.00239,
 							["total_without_pet"] = 6268.00239,
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["start_time"] = 1602434081,
+							["healing_taken"] = 574.00239,
 							["fight_component"] = true,
 							["total"] = 6268.00239,
-							["healing_taken"] = 574.00239,
+							["delay"] = 1602434063,
+							["end_time"] = 1602434173,
+							["nome"] = "Konac",
+							["targets_absorbs"] = {
+							},
+							["heal_enemy_amt"] = 0,
+							["need_refresh"] = true,
+							["heal_enemy"] = {
+							},
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Renew"] = {
 										["c_amt"] = 0,
@@ -4055,150 +4067,142 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["n_curado"] = 6268,
 										["n_amt"] = 50,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
-							["nome"] = "Konac",
-							["targets_absorbs"] = {
-							},
-							["start_time"] = 1602434081,
-							["need_refresh"] = true,
-							["heal_enemy"] = {
-							},
-							["serial"] = "Player-4465-00C4D96C",
 							["custom"] = 0,
 							["last_event"] = 1602434173,
 							["on_hold"] = false,
 							["totaldenied"] = 0.00239,
-							["delay"] = 1602434063,
+							["serial"] = "Player-4465-00C4D96C",
 							["tipo"] = 2,
 						}, -- [2]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 58,
 					["tipo"] = 7,
+					["combatId"] = 58,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 58,
 					["tipo"] = 9,
+					["combatId"] = 58,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Chilled"] = {
-										["activedamt"] = 0,
-										["id"] = "Chilled",
+										["appliedamt"] = 44,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 82,
-										["appliedamt"] = 44,
+										["id"] = "Chilled",
 										["refreshamt"] = 11,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Frost Nova"] = {
-										["activedamt"] = 0,
-										["id"] = "Frost Nova",
+										["appliedamt"] = 34,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 40,
-										["appliedamt"] = 34,
+										["id"] = "Frost Nova",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Frostbolt"] = {
-										["activedamt"] = 0,
-										["id"] = "Frostbolt",
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 14,
-										["appliedamt"] = 3,
+										["id"] = "Frostbolt",
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Cone of Cold"] = {
-										["activedamt"] = 0,
-										["id"] = "Cone of Cold",
+										["appliedamt"] = 35,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 66,
-										["appliedamt"] = 35,
+										["id"] = "Cone of Cold",
 										["refreshamt"] = 3,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blizzard"] = {
-										["activedamt"] = 5,
-										["id"] = "Blizzard",
+										["appliedamt"] = 8,
 										["targets"] = {
 										},
+										["activedamt"] = 5,
 										["uptime"] = 7,
-										["appliedamt"] = 8,
+										["id"] = "Blizzard",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 344,
 							["classe"] = "MAGE",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
-										["activedamt"] = 1,
-										["id"] = "Ice Barrier",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 8,
-										["appliedamt"] = 1,
+										["id"] = "Ice Barrier",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Arcane Intellect"] = {
-										["activedamt"] = 1,
-										["id"] = "Arcane Intellect",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 112,
-										["appliedamt"] = 1,
+										["id"] = "Arcane Intellect",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Ice Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Ice Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 112,
-										["appliedamt"] = 1,
+										["id"] = "Ice Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 112,
-										["appliedamt"] = 1,
+										["id"] = "Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -4216,6 +4220,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 209,
@@ -4231,17 +4236,17 @@ _detalhes_database = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1602434173,
+							["tipo"] = 4,
 							["nome"] = "Augustin",
 							["pets"] = {
 							},
 							["serial"] = "Player-4465-01D5BF39",
-							["tipo"] = 4,
+							["last_event"] = 1602434173,
 						}, -- [1]
 						{
 							["flag_original"] = 2632,
-							["nome"] = "Southsea Pirate",
 							["tipo"] = 4,
+							["nome"] = "Southsea Pirate",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -4255,8 +4260,8 @@ _detalhes_database = {
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
-							["nome"] = "Southsea Dock Worker",
 							["tipo"] = 4,
+							["nome"] = "Southsea Dock Worker",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -4270,24 +4275,24 @@ _detalhes_database = {
 						}, -- [3]
 						{
 							["flag_original"] = 1304,
-							["tipo"] = 4,
-							["nome"] = "Konac",
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["need_refresh"] = true,
 							["last_event"] = 0,
+							["nome"] = "Konac",
+							["need_refresh"] = true,
 							["spell_cast"] = {
 								["Renew"] = 16,
 							},
-							["serial"] = "Player-4465-00C4D96C",
+							["fight_component"] = true,
 							["classe"] = "PRIEST",
+							["tipo"] = 4,
+							["serial"] = "Player-4465-00C4D96C",
+							["pets"] = {
+							},
 						}, -- [4]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 58,
 					["tipo"] = 2,
+					["combatId"] = 58,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -4296,13 +4301,10 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 158353.695,
 				["tempo_start"] = 1602434061,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Southsea Pirate",
 				["combat_counter"] = 6385,
 				["playing_solo"] = true,
 				["totals"] = {
@@ -4318,10 +4320,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -4330,9 +4332,14 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "18:36:14",
+				["cleu_timeline"] = {
 				},
+				["enemy"] = "Southsea Pirate",
+				["TotalElapsedCombatTime"] = 158352.894,
 				["CombatEndedAt"] = 158352.894,
 				["aura_timeline"] = {
 				},
@@ -4340,6 +4347,16 @@ _detalhes_database = {
 				},
 				["data_inicio"] = "18:34:22",
 				["end_time"] = 158352.894,
+				["combat_id"] = 58,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Southsea Dock Worker"] = 3,
+					["Southsea Pirate"] = 1,
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["totals_grupo"] = {
 					16629, -- [1]
 					443, -- [2]
@@ -4353,22 +4370,27 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 58,
-				["TotalElapsedCombatTime"] = 158352.894,
-				["frags_need_refresh"] = true,
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Southsea Pirate",
+				["start_time"] = 158240.979,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -4376,33 +4398,17 @@ _detalhes_database = {
 							["Augustin"] = 443.006177,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Augustin"] = 16156.002645,
 						}, -- [1]
 					},
 				},
-				["frags"] = {
-					["Southsea Dock Worker"] = 3,
-					["Southsea Pirate"] = 1,
-				},
-				["data_fim"] = "18:36:14",
-				["instance_type"] = "none",
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 158240.979,
-				["contra"] = "Southsea Pirate",
-				["TimeData"] = {
-				},
 			}, -- [6]
 			{
 				{
-					["combatId"] = 57,
 					["tipo"] = 2,
+					["combatId"] = 57,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -4413,24 +4419,23 @@ _detalhes_database = {
 							["targets"] = {
 								["Southsea Swashbuckler"] = 20058,
 							},
-							["total"] = 20058.006953,
+							["serial"] = "Player-4465-01D5BF39",
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["classe"] = "MAGE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 20058.006953,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1602433997,
-							["friendlyfire_total"] = 0,
 							["spec"] = 64,
+							["dps_started"] = false,
+							["total"] = 20058.006953,
+							["on_hold"] = false,
+							["last_event"] = 1602433995,
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["Chilled"] = {
 										["c_amt"] = 0,
@@ -4448,49 +4453,19 @@ _detalhes_database = {
 										["counter"] = 7,
 										["total"] = 0,
 										["c_max"] = 0,
-										["RESIST"] = 7,
+										["spellschool"] = 16,
 										["id"] = "Chilled",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 7,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
-									},
-									["Cone of Cold"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 576,
-										["g_amt"] = 0,
-										["n_max"] = 314,
-										["targets"] = {
-											["Southsea Swashbuckler"] = 8401,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 7825,
-										["n_min"] = 286,
-										["g_dmg"] = 0,
-										["counter"] = 28,
-										["total"] = 8401,
-										["c_max"] = 576,
-										["RESIST"] = 1,
-										["id"] = "Cone of Cold",
-										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
 										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 26,
 										["r_amt"] = 0,
-										["c_min"] = 576,
 									},
 									["Frost Nova"] = {
 										["c_amt"] = 0,
@@ -4508,19 +4483,19 @@ _detalhes_database = {
 										["counter"] = 25,
 										["total"] = 578,
 										["c_max"] = 0,
-										["RESIST"] = 1,
+										["spellschool"] = 16,
 										["id"] = "Frost Nova",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 1,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 24,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 24,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["Blizzard"] = {
 										["c_amt"] = 0,
@@ -4543,13 +4518,43 @@ _detalhes_database = {
 										["spellschool"] = 16,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 160,
+										["a_amt"] = 0,
 										["r_amt"] = 19,
-										["c_min"] = 0,
+									},
+									["Cone of Cold"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 576,
+										["g_amt"] = 0,
+										["n_max"] = 314,
+										["targets"] = {
+											["Southsea Swashbuckler"] = 8401,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 7825,
+										["n_min"] = 286,
+										["g_dmg"] = 0,
+										["counter"] = 28,
+										["total"] = 8401,
+										["c_max"] = 576,
+										["spellschool"] = 16,
+										["id"] = "Cone of Cold",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["RESIST"] = 1,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 576,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 26,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["!Autoshot"] = {
 										["c_amt"] = 0,
@@ -4572,13 +4577,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 1,
-										["c_min"] = 0,
 									},
 									["Fire Blast"] = {
 										["c_amt"] = 0,
@@ -4601,25 +4606,26 @@ _detalhes_database = {
 										["spellschool"] = 4,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-01D5BF39",
+							["end_time"] = 1602433997,
 							["last_dps"] = 224.091778980646,
 							["custom"] = 0,
-							["last_event"] = 1602433995,
+							["tipo"] = 1,
 							["damage_taken"] = 3434.006953,
 							["start_time"] = 1602433932,
 							["delay"] = 1602433924,
-							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -4633,19 +4639,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["fight_component"] = true,
+							["total"] = 3801.004856,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 3801.004856,
-							["monster"] = true,
-							["fight_component"] = true,
+							["serial"] = "Creature-0-4447-1-41-7858-0000833306",
 							["dps_started"] = false,
 							["end_time"] = 1602433997,
 							["friendlyfire_total"] = 0,
 							["on_hold"] = false,
 							["nome"] = "Southsea Swashbuckler",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 3,
@@ -4668,16 +4674,16 @@ _detalhes_database = {
 										["MISS"] = 3,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["a_dmg"] = 142,
 										["m_crit"] = 0,
-										["a_amt"] = 2,
 										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 47,
-										["r_amt"] = 0,
 										["c_min"] = 122,
+										["successful_casted"] = 0,
+										["a_amt"] = 2,
+										["n_amt"] = 47,
+										["spellschool"] = 1,
+										["r_amt"] = 0,
 									},
 									["Disarm"] = {
 										["c_amt"] = 0,
@@ -4699,32 +4705,32 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 3,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["m_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["total"] = 3801.004856,
-							["serial"] = "Creature-0-4447-1-41-7858-0000833306",
+							["last_event"] = 1602433981,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1602433981,
+							["tipo"] = 1,
 							["damage_taken"] = 20058.004856,
 							["start_time"] = 1602433955,
 							["delay"] = 1602433981,
-							["tipo"] = 1,
+							["monster"] = true,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 57,
 					["tipo"] = 3,
+					["combatId"] = 57,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -4733,7 +4739,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "MAGE",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 0.001717,
 							["total_without_pet"] = 886.001717,
 							["total"] = 886.001717,
@@ -4754,13 +4760,9 @@ _detalhes_database = {
 							["healing_taken"] = 3434.001717,
 							["fight_component"] = true,
 							["end_time"] = 1602433997,
-							["healing_from"] = {
-								["Konac"] = true,
-								["Augustin"] = true,
-							},
+							["classe"] = "MAGE",
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
 										["c_amt"] = 0,
@@ -4780,10 +4782,10 @@ _detalhes_database = {
 										["targets_absorbs"] = {
 											["Augustin"] = 886,
 										},
-										["m_healed"] = 0,
 										["c_curado"] = 0,
-										["m_crit"] = 0,
 										["c_min"] = 0,
+										["m_crit"] = 0,
+										["m_healed"] = 0,
 										["m_amt"] = 0,
 										["n_curado"] = 886,
 										["n_amt"] = 13,
@@ -4792,16 +4794,20 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1602433985,
-							["custom"] = 0,
+							["healing_from"] = {
+								["Konac"] = true,
+								["Augustin"] = true,
+							},
 							["tipo"] = 2,
-							["spec"] = 64,
+							["custom"] = 0,
+							["last_event"] = 1602433946,
+							["start_time"] = 1602433985,
 							["totaldenied"] = 0.001717,
 							["delay"] = 1602433946,
-							["last_event"] = 1602433946,
+							["spec"] = 64,
 						}, -- [1]
 						{
 							["flag_original"] = 1304,
@@ -4821,17 +4827,24 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["totalover_without_pet"] = 0.001883,
-							["end_time"] = 1602433997,
+							["iniciar_hps"] = false,
 							["classe"] = "PRIEST",
 							["totalover"] = 11954.001883,
 							["total_without_pet"] = 2915.001883,
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["start_time"] = 1602433921,
+							["healing_taken"] = 367.001883,
 							["fight_component"] = true,
 							["total"] = 2915.001883,
-							["healing_taken"] = 367.001883,
+							["delay"] = 1602433912,
+							["end_time"] = 1602433997,
+							["nome"] = "Konac",
+							["targets_absorbs"] = {
+							},
+							["heal_enemy_amt"] = 0,
+							["need_refresh"] = true,
+							["heal_enemy"] = {
+							},
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Renew"] = {
 										["c_amt"] = 0,
@@ -4855,36 +4868,29 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["n_curado"] = 2915,
 										["n_amt"] = 41,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
-							["nome"] = "Konac",
-							["targets_absorbs"] = {
-							},
-							["start_time"] = 1602433921,
-							["need_refresh"] = true,
-							["heal_enemy"] = {
-							},
-							["serial"] = "Player-4465-00C4D96C",
 							["custom"] = 0,
 							["last_event"] = 1602433991,
 							["on_hold"] = false,
 							["totaldenied"] = 0.001883,
-							["delay"] = 1602433912,
+							["serial"] = "Player-4465-00C4D96C",
 							["tipo"] = 2,
 						}, -- [2]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 57,
 					["tipo"] = 7,
+					["combatId"] = 57,
 					["_ActorTable"] = {
 						{
 							["received"] = 867.001245,
@@ -4901,7 +4907,6 @@ _detalhes_database = {
 							["total"] = 867.001245,
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									["Restore Mana"] = {
 										["total"] = 867,
@@ -4913,6 +4918,7 @@ _detalhes_database = {
 										["counter"] = 1,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["flag_original"] = 1297,
@@ -4926,116 +4932,115 @@ _detalhes_database = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 57,
 					["tipo"] = 9,
+					["combatId"] = 57,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Chilled"] = {
-										["activedamt"] = 0,
-										["id"] = "Chilled",
+										["appliedamt"] = 23,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 60,
-										["appliedamt"] = 23,
+										["id"] = "Chilled",
 										["refreshamt"] = 9,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blizzard"] = {
-										["activedamt"] = 0,
-										["id"] = "Blizzard",
+										["appliedamt"] = 25,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 22,
-										["appliedamt"] = 25,
+										["id"] = "Blizzard",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Cone of Cold"] = {
-										["activedamt"] = 0,
-										["id"] = "Cone of Cold",
+										["appliedamt"] = 19,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 33,
-										["appliedamt"] = 19,
+										["id"] = "Cone of Cold",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Frost Nova"] = {
-										["activedamt"] = 0,
-										["id"] = "Frost Nova",
+										["appliedamt"] = 24,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 24,
-										["appliedamt"] = 24,
+										["id"] = "Frost Nova",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 292,
 							["classe"] = "MAGE",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
-										["activedamt"] = 2,
-										["id"] = "Ice Barrier",
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 23,
-										["appliedamt"] = 2,
+										["id"] = "Ice Barrier",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blink"] = {
-										["activedamt"] = 2,
-										["id"] = "Blink",
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 2,
-										["appliedamt"] = 2,
+										["id"] = "Blink",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Arcane Intellect"] = {
-										["activedamt"] = 1,
-										["id"] = "Arcane Intellect",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 89,
-										["appliedamt"] = 1,
+										["id"] = "Arcane Intellect",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Ice Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Ice Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 89,
-										["appliedamt"] = 1,
+										["id"] = "Ice Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 89,
-										["appliedamt"] = 1,
+										["id"] = "Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -5053,6 +5058,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 139,
@@ -5072,17 +5078,17 @@ _detalhes_database = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1602433997,
+							["tipo"] = 4,
 							["nome"] = "Augustin",
 							["pets"] = {
 							},
 							["serial"] = "Player-4465-01D5BF39",
-							["tipo"] = 4,
+							["last_event"] = 1602433997,
 						}, -- [1]
 						{
 							["flag_original"] = 2632,
-							["nome"] = "Southsea Swashbuckler",
 							["tipo"] = 4,
+							["nome"] = "Southsea Swashbuckler",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -5096,24 +5102,24 @@ _detalhes_database = {
 						}, -- [2]
 						{
 							["flag_original"] = 1304,
-							["tipo"] = 4,
-							["nome"] = "Konac",
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["need_refresh"] = true,
 							["last_event"] = 0,
+							["nome"] = "Konac",
+							["need_refresh"] = true,
 							["spell_cast"] = {
 								["Renew"] = 10,
 							},
-							["serial"] = "Player-4465-00C4D96C",
+							["fight_component"] = true,
 							["classe"] = "PRIEST",
+							["tipo"] = 4,
+							["serial"] = "Player-4465-00C4D96C",
+							["pets"] = {
+							},
 						}, -- [3]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 57,
 					["tipo"] = 2,
+					["combatId"] = 57,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -5122,13 +5128,10 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 158239.755,
 				["tempo_start"] = 1602433908,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Southsea Swashbuckler",
 				["combat_counter"] = 6384,
 				["playing_solo"] = true,
 				["totals"] = {
@@ -5144,10 +5147,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -5156,9 +5159,14 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "18:33:18",
+				["cleu_timeline"] = {
 				},
+				["enemy"] = "Southsea Swashbuckler",
+				["TotalElapsedCombatTime"] = 158177.301,
 				["CombatEndedAt"] = 158177.301,
 				["aura_timeline"] = {
 				},
@@ -5166,6 +5174,16 @@ _detalhes_database = {
 				},
 				["data_inicio"] = "18:31:49",
 				["end_time"] = 158177.301,
+				["combat_id"] = 57,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Southsea Dock Worker"] = 1,
+					["Southsea Swashbuckler"] = 9,
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["totals_grupo"] = {
 					20058, -- [1]
 					886, -- [2]
@@ -5179,22 +5197,27 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 57,
-				["TotalElapsedCombatTime"] = 158177.301,
-				["frags_need_refresh"] = true,
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Southsea Swashbuckler",
+				["start_time"] = 158087.793,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -5202,33 +5225,17 @@ _detalhes_database = {
 							["Augustin"] = 886.001717,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Augustin"] = 20058.006953,
 						}, -- [1]
 					},
 				},
-				["frags"] = {
-					["Southsea Dock Worker"] = 1,
-					["Southsea Swashbuckler"] = 9,
-				},
-				["data_fim"] = "18:33:18",
-				["instance_type"] = "none",
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 158087.793,
-				["contra"] = "Southsea Swashbuckler",
-				["TimeData"] = {
-				},
 			}, -- [7]
 			{
 				{
-					["combatId"] = 56,
 					["tipo"] = 2,
+					["combatId"] = 56,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 2632,
@@ -5244,20 +5251,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4447-1-41-7857-0000032E5C",
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 8628.003012,
+							["serial"] = "Creature-0-4447-1-41-7857-0000032E5C",
 							["monster"] = true,
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["total"] = 8628.003012,
 							["end_time"] = 1602433839,
-							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["on_hold"] = false,
 							["nome"] = "Southsea Dock Worker",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 4,
@@ -5281,16 +5287,16 @@ _detalhes_database = {
 										["MISS"] = 3,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["a_dmg"] = 92,
 										["m_crit"] = 0,
-										["a_amt"] = 1,
 										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 107,
-										["r_amt"] = 0,
 										["c_min"] = 110,
+										["successful_casted"] = 0,
+										["a_amt"] = 1,
+										["n_amt"] = 107,
+										["spellschool"] = 1,
+										["r_amt"] = 0,
 									},
 									["Head Crack"] = {
 										["c_amt"] = 0,
@@ -5312,30 +5318,30 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 7,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["m_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["on_hold"] = false,
+							["last_event"] = 1602433819,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1602433819,
+							["tipo"] = 1,
 							["damage_taken"] = 11830.003012,
 							["start_time"] = 1602433705,
 							["delay"] = 1602433819,
-							["tipo"] = 1,
+							["total"] = 8628.003012,
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
 							["totalabsorbed"] = 0.005999,
-							["spec"] = 64,
 							["damage_from"] = {
 								["Southsea Dock Worker"] = true,
 								["Southsea Swashbuckler"] = true,
@@ -5344,23 +5350,23 @@ _detalhes_database = {
 								["Southsea Dock Worker"] = 11534,
 								["Southsea Swashbuckler"] = 2470,
 							},
+							["serial"] = "Player-4465-01D5BF39",
 							["pets"] = {
 							},
 							["colocacao"] = 1,
-							["end_time"] = 1602433839,
+							["total"] = 14004.005999,
 							["classe"] = "MAGE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 14004.005999,
+							["spec"] = 64,
+							["dps_started"] = false,
+							["end_time"] = 1602433839,
 							["friendlyfire"] = {
 							},
-							["dps_started"] = false,
-							["total"] = 14004.005999,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
+							["last_event"] = 1602433837,
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["Chilled"] = {
 										["c_amt"] = 0,
@@ -5379,49 +5385,50 @@ _detalhes_database = {
 										["counter"] = 15,
 										["total"] = 0,
 										["c_max"] = 0,
-										["RESIST"] = 15,
+										["spellschool"] = 16,
 										["id"] = "Chilled",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 15,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
-									["!Autoshot"] = {
+									["Cone of Cold"] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 48,
+										["c_dmg"] = 581,
 										["g_amt"] = 0,
-										["n_max"] = 35,
+										["n_max"] = 315,
 										["targets"] = {
-											["Southsea Dock Worker"] = 169,
+											["Southsea Dock Worker"] = 8388,
+											["Southsea Swashbuckler"] = 2112,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 121,
-										["n_min"] = 25,
+										["n_dmg"] = 9919,
+										["n_min"] = 286,
 										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 169,
-										["c_max"] = 48,
-										["RESIST"] = 3,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 86,
-										["spellschool"] = 1,
+										["counter"] = 37,
+										["total"] = 10500,
+										["c_max"] = 581,
+										["spellschool"] = 16,
+										["id"] = "Cone of Cold",
+										["r_dmg"] = 0,
 										["a_dmg"] = 0,
+										["RESIST"] = 3,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
+										["c_min"] = 581,
 										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 33,
 										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["r_amt"] = 3,
-										["c_min"] = 48,
+										["r_amt"] = 0,
 									},
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -5444,45 +5451,46 @@ _detalhes_database = {
 										["MISS"] = 1,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["PARRY"] = 3,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["r_amt"] = 0,
 									},
-									["Arcane Explosion"] = {
-										["c_amt"] = 0,
+									["!Autoshot"] = {
+										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 0,
+										["c_dmg"] = 48,
 										["g_amt"] = 0,
-										["n_max"] = 155,
+										["n_max"] = 35,
 										["targets"] = {
-											["Southsea Dock Worker"] = 1655,
+											["Southsea Dock Worker"] = 169,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 1655,
-										["n_min"] = 147,
+										["n_dmg"] = 121,
+										["n_min"] = 25,
 										["g_dmg"] = 0,
-										["counter"] = 11,
-										["total"] = 1655,
-										["c_max"] = 0,
-										["id"] = "Arcane Explosion",
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
+										["counter"] = 8,
+										["total"] = 169,
+										["c_max"] = 48,
+										["spellschool"] = 1,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 86,
 										["a_dmg"] = 0,
+										["RESIST"] = 3,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
+										["c_min"] = 48,
 										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 4,
 										["b_dmg"] = 0,
-										["n_amt"] = 11,
-										["r_amt"] = 0,
-										["c_min"] = 0,
+										["r_amt"] = 3,
 									},
 									["Frost Nova"] = {
 										["c_amt"] = 2,
@@ -5499,22 +5507,22 @@ _detalhes_database = {
 										["n_min"] = 22,
 										["g_dmg"] = 0,
 										["counter"] = 30,
-										["EVADE"] = 1,
+										["id"] = "Frost Nova",
 										["total"] = 612,
 										["c_max"] = 47,
-										["RESIST"] = 5,
-										["id"] = "Frost Nova",
-										["r_dmg"] = 0,
 										["spellschool"] = 16,
+										["EVADE"] = 1,
+										["r_dmg"] = 0,
+										["RESIST"] = 5,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 22,
-										["r_amt"] = 0,
 										["c_min"] = 46,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 22,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["Frostbolt"] = {
 										["c_amt"] = 0,
@@ -5537,44 +5545,42 @@ _detalhes_database = {
 										["spellschool"] = 16,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
-									["Cone of Cold"] = {
-										["c_amt"] = 1,
+									["Arcane Explosion"] = {
+										["c_amt"] = 0,
 										["b_amt"] = 0,
-										["c_dmg"] = 581,
+										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 315,
+										["n_max"] = 155,
 										["targets"] = {
-											["Southsea Dock Worker"] = 8388,
-											["Southsea Swashbuckler"] = 2112,
+											["Southsea Dock Worker"] = 1655,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 9919,
-										["n_min"] = 286,
+										["n_dmg"] = 1655,
+										["n_min"] = 147,
 										["g_dmg"] = 0,
-										["counter"] = 37,
-										["total"] = 10500,
-										["c_max"] = 581,
-										["RESIST"] = 3,
-										["id"] = "Cone of Cold",
+										["counter"] = 11,
+										["total"] = 1655,
+										["c_max"] = 0,
+										["id"] = "Arcane Explosion",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
+										["spellschool"] = 64,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 33,
+										["n_amt"] = 11,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 581,
 									},
 									["Fire Blast"] = {
 										["c_amt"] = 0,
@@ -5593,31 +5599,32 @@ _detalhes_database = {
 										["counter"] = 3,
 										["total"] = 538,
 										["c_max"] = 0,
-										["RESIST"] = 1,
+										["spellschool"] = 4,
 										["id"] = "Fire Blast",
 										["r_dmg"] = 0,
-										["spellschool"] = 4,
 										["a_dmg"] = 0,
+										["RESIST"] = 1,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-01D5BF39",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 92.5670489407389,
 							["custom"] = 0,
-							["last_event"] = 1602433837,
-							["damage_taken"] = 8999.005999,
+							["tipo"] = 1,
+							["on_hold"] = false,
 							["start_time"] = 1602433728,
 							["delay"] = 1602433758,
-							["tipo"] = 1,
+							["damage_taken"] = 8999.005999,
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
@@ -5630,20 +5637,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4447-1-41-7858-0000033289",
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1281.001452,
+							["serial"] = "Creature-0-4447-1-41-7858-0000033289",
 							["monster"] = true,
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["total"] = 1281.001452,
 							["end_time"] = 1602433839,
-							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["on_hold"] = false,
 							["nome"] = "Southsea Swashbuckler",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 1,
@@ -5665,15 +5671,15 @@ _detalhes_database = {
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["b_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 15,
-										["r_amt"] = 0,
 										["c_min"] = 127,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 15,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["Disarm"] = {
 										["c_amt"] = 0,
@@ -5695,31 +5701,32 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 2,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["m_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["on_hold"] = false,
+							["last_event"] = 1602433908,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1602433908,
+							["tipo"] = 1,
 							["damage_taken"] = 2470.001452,
 							["start_time"] = 1602433810,
 							["delay"] = 1602433798,
-							["tipo"] = 1,
+							["total"] = 1281.001452,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 56,
 					["tipo"] = 3,
+					["combatId"] = 56,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -5728,7 +5735,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "MAGE",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 0.006342,
 							["total_without_pet"] = 443.006342,
 							["total"] = 443.006342,
@@ -5749,13 +5756,9 @@ _detalhes_database = {
 							["healing_taken"] = 8909.006342,
 							["fight_component"] = true,
 							["end_time"] = 1602433839,
-							["healing_from"] = {
-								["Konac"] = true,
-								["Augustin"] = true,
-							},
+							["classe"] = "MAGE",
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
 										["c_amt"] = 0,
@@ -5775,10 +5778,10 @@ _detalhes_database = {
 										["targets_absorbs"] = {
 											["Augustin"] = 443,
 										},
-										["m_healed"] = 0,
 										["c_curado"] = 0,
-										["m_crit"] = 0,
 										["c_min"] = 0,
+										["m_crit"] = 0,
+										["m_healed"] = 0,
 										["m_amt"] = 0,
 										["n_curado"] = 443,
 										["n_amt"] = 6,
@@ -5787,16 +5790,20 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1602433834,
-							["custom"] = 0,
+							["healing_from"] = {
+								["Konac"] = true,
+								["Augustin"] = true,
+							},
 							["tipo"] = 2,
-							["spec"] = 64,
+							["custom"] = 0,
+							["last_event"] = 1602433690,
+							["start_time"] = 1602433834,
 							["totaldenied"] = 0.006342,
 							["delay"] = 1602433690,
-							["last_event"] = 1602433690,
+							["spec"] = 64,
 						}, -- [1]
 						{
 							["flag_original"] = 1304,
@@ -5816,17 +5823,24 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["totalover_without_pet"] = 0.00682,
-							["end_time"] = 1602433839,
+							["iniciar_hps"] = false,
 							["classe"] = "PRIEST",
 							["totalover"] = 12822.00682,
 							["total_without_pet"] = 8823.00682,
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["start_time"] = 1602433716,
+							["healing_taken"] = 357.00682,
 							["fight_component"] = true,
 							["total"] = 8823.00682,
-							["healing_taken"] = 357.00682,
+							["delay"] = 1602433807,
+							["end_time"] = 1602433839,
+							["nome"] = "Konac",
+							["targets_absorbs"] = {
+							},
+							["heal_enemy_amt"] = 0,
+							["need_refresh"] = true,
+							["heal_enemy"] = {
+							},
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Renew"] = {
 										["c_amt"] = 0,
@@ -5850,150 +5864,142 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["n_curado"] = 8823,
 										["n_amt"] = 60,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
-							["nome"] = "Konac",
-							["targets_absorbs"] = {
-							},
-							["start_time"] = 1602433716,
-							["need_refresh"] = true,
-							["heal_enemy"] = {
-							},
-							["serial"] = "Player-4465-00C4D96C",
 							["custom"] = 0,
 							["last_event"] = 1602433831,
 							["on_hold"] = false,
 							["totaldenied"] = 0.00682,
-							["delay"] = 1602433807,
+							["serial"] = "Player-4465-00C4D96C",
 							["tipo"] = 2,
 						}, -- [2]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 56,
 					["tipo"] = 7,
+					["combatId"] = 56,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 56,
 					["tipo"] = 9,
+					["combatId"] = 56,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Chilled"] = {
-										["activedamt"] = 0,
-										["id"] = "Chilled",
+										["appliedamt"] = 44,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 128,
-										["appliedamt"] = 44,
+										["id"] = "Chilled",
 										["refreshamt"] = 17,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Frostbolt"] = {
-										["activedamt"] = 0,
-										["id"] = "Frostbolt",
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 3,
-										["appliedamt"] = 2,
+										["id"] = "Frostbolt",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Cone of Cold"] = {
-										["activedamt"] = 0,
-										["id"] = "Cone of Cold",
+										["appliedamt"] = 34,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 77,
-										["appliedamt"] = 34,
+										["id"] = "Cone of Cold",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Frost Nova"] = {
-										["activedamt"] = 0,
-										["id"] = "Frost Nova",
+										["appliedamt"] = 24,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 41,
-										["appliedamt"] = 24,
+										["id"] = "Frost Nova",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 464,
 							["classe"] = "MAGE",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
-										["activedamt"] = 1,
-										["id"] = "Ice Barrier",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = "Ice Barrier",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blink"] = {
-										["activedamt"] = 1,
-										["id"] = "Blink",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = "Blink",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Arcane Intellect"] = {
-										["activedamt"] = 1,
-										["id"] = "Arcane Intellect",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 153,
-										["appliedamt"] = 1,
+										["id"] = "Arcane Intellect",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Ice Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Ice Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 153,
-										["appliedamt"] = 1,
+										["id"] = "Ice Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 153,
-										["appliedamt"] = 1,
+										["id"] = "Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -6011,6 +6017,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 249,
@@ -6029,17 +6036,17 @@ _detalhes_database = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1602433839,
+							["tipo"] = 4,
 							["nome"] = "Augustin",
 							["pets"] = {
 							},
 							["serial"] = "Player-4465-01D5BF39",
-							["tipo"] = 4,
+							["last_event"] = 1602433839,
 						}, -- [1]
 						{
 							["flag_original"] = 2632,
-							["nome"] = "Southsea Swashbuckler",
 							["tipo"] = 4,
+							["nome"] = "Southsea Swashbuckler",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -6053,23 +6060,23 @@ _detalhes_database = {
 						}, -- [2]
 						{
 							["flag_original"] = 1304,
-							["tipo"] = 4,
-							["nome"] = "Konac",
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["need_refresh"] = true,
 							["last_event"] = 0,
+							["nome"] = "Konac",
+							["need_refresh"] = true,
 							["spell_cast"] = {
 								["Renew"] = 19,
 							},
-							["serial"] = "Player-4465-00C4D96C",
+							["fight_component"] = true,
 							["classe"] = "PRIEST",
+							["tipo"] = 4,
+							["serial"] = "Player-4465-00C4D96C",
+							["pets"] = {
+							},
 						}, -- [3]
 						{
 							["flag_original"] = 68168,
-							["nome"] = "Southsea Dock Worker",
 							["tipo"] = 4,
+							["nome"] = "Southsea Dock Worker",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -6084,8 +6091,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 56,
 					["tipo"] = 2,
+					["combatId"] = 56,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -6094,13 +6101,10 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 158086.575,
 				["tempo_start"] = 1602433686,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Southsea Dock Worker",
 				["combat_counter"] = 6383,
 				["playing_solo"] = true,
 				["totals"] = {
@@ -6116,10 +6120,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -6128,9 +6132,14 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "18:30:40",
+				["cleu_timeline"] = {
 				},
+				["enemy"] = "Southsea Dock Worker",
+				["TotalElapsedCombatTime"] = 158018.901,
 				["CombatEndedAt"] = 158018.901,
 				["aura_timeline"] = {
 				},
@@ -6138,6 +6147,18 @@ _detalhes_database = {
 				},
 				["data_inicio"] = "18:28:07",
 				["end_time"] = 158018.901,
+				["combat_id"] = 56,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Southsea Dock Worker"] = 5,
+					["Opos"] = 1,
+					["Southsea Swashbuckler"] = 1,
+					["Southsea Freebooter"] = 1,
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["totals_grupo"] = {
 					14004, -- [1]
 					443, -- [2]
@@ -6151,22 +6172,27 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 56,
-				["TotalElapsedCombatTime"] = 158018.901,
-				["frags_need_refresh"] = true,
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Southsea Dock Worker",
+				["start_time"] = 157865.622,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -6174,35 +6200,17 @@ _detalhes_database = {
 							["Augustin"] = 443.006342,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Augustin"] = 14004.005999,
 						}, -- [1]
 					},
 				},
-				["frags"] = {
-					["Southsea Dock Worker"] = 5,
-					["Opos"] = 1,
-					["Southsea Swashbuckler"] = 1,
-					["Southsea Freebooter"] = 1,
-				},
-				["data_fim"] = "18:30:40",
-				["instance_type"] = "none",
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 157865.622,
-				["contra"] = "Southsea Dock Worker",
-				["TimeData"] = {
-				},
 			}, -- [8]
 			{
 				{
-					["combatId"] = 55,
 					["tipo"] = 2,
+					["combatId"] = 55,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 68168,
@@ -6216,20 +6224,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4447-1-41-7857-0000032F95",
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 10657.006311,
+							["serial"] = "Creature-0-4447-1-41-7857-0000032F95",
 							["monster"] = true,
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["total"] = 10657.006311,
 							["end_time"] = 1602433611,
-							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["on_hold"] = false,
 							["nome"] = "Southsea Dock Worker",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 8,
@@ -6252,16 +6259,16 @@ _detalhes_database = {
 										["MISS"] = 9,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["a_dmg"] = 221,
 										["m_crit"] = 0,
-										["a_amt"] = 2,
 										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 127,
-										["r_amt"] = 0,
 										["c_min"] = 135,
+										["successful_casted"] = 0,
+										["a_amt"] = 2,
+										["n_amt"] = 127,
+										["spellschool"] = 1,
+										["r_amt"] = 0,
 									},
 									["Head Crack"] = {
 										["c_amt"] = 0,
@@ -6284,26 +6291,27 @@ _detalhes_database = {
 										["MISS"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 8,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["on_hold"] = false,
+							["last_event"] = 1602433686,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1602433686,
+							["tipo"] = 1,
 							["damage_taken"] = 18248.006311,
 							["start_time"] = 1602433497,
 							["delay"] = 1602433543,
-							["tipo"] = 1,
+							["total"] = 10657.006311,
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
@@ -6316,21 +6324,20 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
+							["last_event"] = 1602433610,
 							["classe"] = "MAGE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 18248.003408,
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1602433611,
+							["serial"] = "Player-4465-01D5BF39",
 							["dps_started"] = false,
 							["total"] = 18248.003408,
-							["colocacao"] = 1,
 							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["Chilled"] = {
 										["c_amt"] = 0,
@@ -6348,79 +6355,19 @@ _detalhes_database = {
 										["counter"] = 7,
 										["total"] = 0,
 										["c_max"] = 0,
-										["RESIST"] = 7,
+										["spellschool"] = 16,
 										["id"] = "Chilled",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 7,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
+										["m_amt"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["Arcane Explosion"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 152,
-										["targets"] = {
-											["Southsea Dock Worker"] = 742,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 742,
-										["n_min"] = 35,
-										["g_dmg"] = 0,
-										["counter"] = 8,
-										["total"] = 742,
-										["c_max"] = 0,
-										["id"] = "Arcane Explosion",
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 8,
 										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Southsea Dock Worker"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["MISS"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["a_amt"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Blizzard"] = {
 										["c_amt"] = 0,
@@ -6443,13 +6390,73 @@ _detalhes_database = {
 										["spellschool"] = 16,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 108,
+										["a_amt"] = 0,
 										["r_amt"] = 18,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Southsea Dock Worker"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["MISS"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["a_amt"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["b_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["spellschool"] = 1,
+										["r_amt"] = 0,
+									},
+									["Arcane Explosion"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 152,
+										["targets"] = {
+											["Southsea Dock Worker"] = 742,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 742,
+										["n_min"] = 35,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 742,
+										["c_max"] = 0,
+										["id"] = "Arcane Explosion",
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 8,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 									["Frost Nova"] = {
 										["c_amt"] = 0,
@@ -6467,19 +6474,19 @@ _detalhes_database = {
 										["counter"] = 30,
 										["total"] = 670,
 										["c_max"] = 0,
-										["RESIST"] = 2,
+										["spellschool"] = 16,
 										["id"] = "Frost Nova",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 2,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 28,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 28,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["Cone of Cold"] = {
 										["c_amt"] = 1,
@@ -6497,19 +6504,19 @@ _detalhes_database = {
 										["counter"] = 32,
 										["total"] = 8402,
 										["c_max"] = 579,
-										["RESIST"] = 4,
+										["spellschool"] = 16,
 										["id"] = "Cone of Cold",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 4,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 27,
-										["r_amt"] = 0,
 										["c_min"] = 579,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 27,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["!Autoshot"] = {
 										["c_amt"] = 3,
@@ -6527,19 +6534,19 @@ _detalhes_database = {
 										["counter"] = 19,
 										["total"] = 645,
 										["c_max"] = 64,
-										["RESIST"] = 2,
+										["spellschool"] = 1,
 										["id"] = "!Autoshot",
 										["r_dmg"] = 93,
-										["spellschool"] = 1,
 										["a_dmg"] = 0,
+										["RESIST"] = 2,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 14,
-										["r_amt"] = 3,
 										["c_min"] = 44,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 14,
+										["b_dmg"] = 0,
+										["r_amt"] = 3,
 									},
 									["Fire Blast"] = {
 										["c_amt"] = 0,
@@ -6562,40 +6569,43 @@ _detalhes_database = {
 										["spellschool"] = 4,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-01D5BF39",
+							["colocacao"] = 1,
 							["last_dps"] = 106.508550262946,
 							["custom"] = 0,
-							["last_event"] = 1602433610,
+							["tipo"] = 1,
 							["damage_taken"] = 8704.003408,
 							["start_time"] = 1602433504,
 							["delay"] = 1602433522,
-							["tipo"] = 1,
+							["end_time"] = 1602433611,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 55,
 					["tipo"] = 3,
+					["combatId"] = 55,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["targets_overheal"] = {
+							["healing_from"] = {
+								["Konac"] = true,
+								["Augustin"] = true,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "MAGE",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 0.001715,
 							["total_without_pet"] = 1329.001715,
 							["total"] = 1329.001715,
@@ -6616,13 +6626,8 @@ _detalhes_database = {
 							["healing_taken"] = 8650.001715,
 							["fight_component"] = true,
 							["end_time"] = 1602433611,
-							["healing_from"] = {
-								["Konac"] = true,
-								["Augustin"] = true,
-							},
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
 										["c_amt"] = 0,
@@ -6642,10 +6647,10 @@ _detalhes_database = {
 										["targets_absorbs"] = {
 											["Augustin"] = 1329,
 										},
-										["m_healed"] = 0,
 										["c_curado"] = 0,
-										["m_crit"] = 0,
 										["c_min"] = 0,
+										["m_crit"] = 0,
+										["m_healed"] = 0,
 										["m_amt"] = 0,
 										["n_curado"] = 1329,
 										["n_amt"] = 19,
@@ -6654,15 +6659,18 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
+							["targets_overheal"] = {
+							},
+							["classe"] = "MAGE",
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1602433493,
 							["start_time"] = 1602433584,
 							["totaldenied"] = 0.001715,
 							["delay"] = 1602433493,
-							["last_event"] = 1602433493,
+							["tipo"] = 2,
 						}, -- [1]
 						{
 							["flag_original"] = 1304,
@@ -6682,17 +6690,24 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["totalover_without_pet"] = 0.007682,
-							["end_time"] = 1602433611,
+							["iniciar_hps"] = false,
 							["classe"] = "PRIEST",
 							["totalover"] = 14337.007682,
 							["total_without_pet"] = 9296.007682,
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["start_time"] = 1602433464,
+							["healing_taken"] = 1975.007682,
 							["fight_component"] = true,
 							["total"] = 9296.007682,
-							["healing_taken"] = 1975.007682,
+							["delay"] = 0,
+							["end_time"] = 1602433611,
+							["nome"] = "Konac",
+							["targets_absorbs"] = {
+							},
+							["heal_enemy_amt"] = 0,
+							["need_refresh"] = true,
+							["heal_enemy"] = {
+							},
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Renew"] = {
 										["c_amt"] = 0,
@@ -6716,106 +6731,98 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["n_curado"] = 9296,
 										["n_amt"] = 66,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
-							["nome"] = "Konac",
-							["targets_absorbs"] = {
-							},
-							["start_time"] = 1602433464,
-							["need_refresh"] = true,
-							["heal_enemy"] = {
-							},
-							["serial"] = "Player-4465-00C4D96C",
 							["custom"] = 0,
 							["last_event"] = 1602433610,
 							["on_hold"] = false,
 							["totaldenied"] = 0.007682,
-							["delay"] = 0,
+							["serial"] = "Player-4465-00C4D96C",
 							["tipo"] = 2,
 						}, -- [2]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 55,
 					["tipo"] = 7,
+					["combatId"] = 55,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 55,
 					["tipo"] = 9,
+					["combatId"] = 55,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Chilled"] = {
-										["activedamt"] = 0,
-										["id"] = "Chilled",
+										["appliedamt"] = 42,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 133,
-										["appliedamt"] = 42,
+										["id"] = "Chilled",
 										["refreshamt"] = 47,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blizzard"] = {
-										["activedamt"] = 0,
-										["id"] = "Blizzard",
+										["appliedamt"] = 23,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 20,
-										["appliedamt"] = 23,
+										["id"] = "Blizzard",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Cone of Cold"] = {
-										["activedamt"] = 0,
-										["id"] = "Cone of Cold",
+										["appliedamt"] = 28,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 33,
-										["appliedamt"] = 28,
+										["id"] = "Cone of Cold",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Frost Nova"] = {
-										["activedamt"] = 0,
-										["id"] = "Frost Nova",
+										["appliedamt"] = 28,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 33,
-										["appliedamt"] = 28,
+										["id"] = "Frost Nova",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 365,
 							["classe"] = "MAGE",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
-										["activedamt"] = 3,
-										["id"] = "Ice Barrier",
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 3,
 										["uptime"] = 21,
-										["appliedamt"] = 3,
+										["id"] = "Ice Barrier",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -6833,28 +6840,29 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									["Arcane Intellect"] = {
-										["activedamt"] = 1,
-										["id"] = "Arcane Intellect",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 172,
-										["appliedamt"] = 1,
+										["id"] = "Arcane Intellect",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Ice Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Ice Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 172,
-										["appliedamt"] = 1,
+										["id"] = "Ice Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 219,
@@ -6863,26 +6871,26 @@ _detalhes_database = {
 							["grupo"] = true,
 							["spell_cast"] = {
 								["Ice Barrier"] = 2,
-								["Arcane Explosion"] = 2,
 								["Blizzard"] = 3,
+								["Arcane Explosion"] = 2,
 								["Frost Nova"] = 4,
 								["Shoot"] = 19,
 								["Cone of Cold"] = 5,
 								["Fire Blast"] = 3,
 							},
-							["nome"] = "Augustin",
-							["last_event"] = 1602433611,
 							["debuff_uptime_targets"] = {
 							},
+							["tipo"] = 4,
+							["nome"] = "Augustin",
 							["pets"] = {
 							},
 							["serial"] = "Player-4465-01D5BF39",
-							["tipo"] = 4,
+							["last_event"] = 1602433611,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
-							["nome"] = "Southsea Dock Worker",
 							["tipo"] = 4,
+							["nome"] = "Southsea Dock Worker",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -6896,24 +6904,24 @@ _detalhes_database = {
 						}, -- [2]
 						{
 							["flag_original"] = 1304,
-							["tipo"] = 4,
-							["nome"] = "Konac",
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["need_refresh"] = true,
 							["last_event"] = 0,
+							["nome"] = "Konac",
+							["need_refresh"] = true,
 							["spell_cast"] = {
 								["Renew"] = 19,
 							},
-							["serial"] = "Player-4465-00C4D96C",
+							["fight_component"] = true,
 							["classe"] = "PRIEST",
+							["tipo"] = 4,
+							["serial"] = "Player-4465-00C4D96C",
+							["pets"] = {
+							},
 						}, -- [3]
 					},
 				}, -- [4]
 				{
-					["combatId"] = 55,
 					["tipo"] = 2,
+					["combatId"] = 55,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -6922,13 +6930,10 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 157865.114,
 				["tempo_start"] = 1602433439,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Southsea Dock Worker",
 				["combat_counter"] = 6382,
 				["playing_solo"] = true,
 				["totals"] = {
@@ -6944,10 +6949,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -6956,9 +6961,14 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "18:26:52",
+				["cleu_timeline"] = {
 				},
+				["enemy"] = "Southsea Dock Worker",
+				["TotalElapsedCombatTime"] = 157791.047,
 				["CombatEndedAt"] = 157791.047,
 				["aura_timeline"] = {
 				},
@@ -6966,6 +6976,15 @@ _detalhes_database = {
 				},
 				["data_inicio"] = "18:24:00",
 				["end_time"] = 157791.047,
+				["combat_id"] = 55,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Southsea Dock Worker"] = 8,
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["totals_grupo"] = {
 					18248, -- [1]
 					1329, -- [2]
@@ -6979,22 +6998,27 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 55,
-				["TotalElapsedCombatTime"] = 157791.047,
-				["frags_need_refresh"] = true,
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Southsea Dock Worker",
+				["start_time"] = 157618.861,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -7002,32 +7026,17 @@ _detalhes_database = {
 							["Augustin"] = 1329.001715,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Augustin"] = 18248.003408,
 						}, -- [1]
 					},
 				},
-				["frags"] = {
-					["Southsea Dock Worker"] = 8,
-				},
-				["data_fim"] = "18:26:52",
-				["instance_type"] = "none",
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 157618.861,
-				["contra"] = "Southsea Dock Worker",
-				["TimeData"] = {
-				},
 			}, -- [9]
 			{
 				{
-					["combatId"] = 54,
 					["tipo"] = 2,
+					["combatId"] = 54,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -7038,24 +7047,23 @@ _detalhes_database = {
 							["targets"] = {
 								["Southsea Swashbuckler"] = 23211,
 							},
-							["total"] = 23211.0036,
+							["serial"] = "Player-4465-01D5BF39",
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["classe"] = "MAGE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 23211.0036,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1602433345,
-							["friendlyfire_total"] = 0,
 							["spec"] = 64,
+							["dps_started"] = false,
+							["total"] = 23211.0036,
+							["on_hold"] = false,
+							["last_event"] = 1602433343,
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["Chilled"] = {
 										["c_amt"] = 0,
@@ -7073,19 +7081,19 @@ _detalhes_database = {
 										["counter"] = 6,
 										["total"] = 0,
 										["c_max"] = 0,
-										["RESIST"] = 6,
+										["spellschool"] = 16,
 										["id"] = "Chilled",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 6,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -7107,15 +7115,15 @@ _detalhes_database = {
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["b_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["Frost Nova"] = {
 										["c_amt"] = 0,
@@ -7138,43 +7146,13 @@ _detalhes_database = {
 										["spellschool"] = 16,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 26,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 113,
-										["g_amt"] = 0,
-										["n_max"] = 48,
-										["targets"] = {
-											["Southsea Swashbuckler"] = 750,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 637,
-										["n_min"] = 21,
-										["g_dmg"] = 0,
-										["counter"] = 23,
-										["total"] = 750,
-										["c_max"] = 70,
-										["RESIST"] = 3,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 110,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 18,
-										["r_amt"] = 4,
-										["c_min"] = 43,
+										["r_amt"] = 0,
 									},
 									["Cone of Cold"] = {
 										["c_amt"] = 3,
@@ -7192,19 +7170,49 @@ _detalhes_database = {
 										["counter"] = 31,
 										["total"] = 9249,
 										["c_max"] = 594,
-										["RESIST"] = 3,
+										["spellschool"] = 16,
 										["id"] = "Cone of Cold",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 3,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 25,
-										["r_amt"] = 0,
 										["c_min"] = 554,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 25,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									["!Autoshot"] = {
+										["c_amt"] = 2,
+										["b_amt"] = 0,
+										["c_dmg"] = 113,
+										["g_amt"] = 0,
+										["n_max"] = 48,
+										["targets"] = {
+											["Southsea Swashbuckler"] = 750,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 637,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 23,
+										["total"] = 750,
+										["c_max"] = 70,
+										["spellschool"] = 1,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 110,
+										["a_dmg"] = 0,
+										["RESIST"] = 3,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 43,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 18,
+										["b_dmg"] = 0,
+										["r_amt"] = 4,
 									},
 									["Blizzard"] = {
 										["c_amt"] = 0,
@@ -7227,25 +7235,26 @@ _detalhes_database = {
 										["spellschool"] = 16,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 186,
+										["a_amt"] = 0,
 										["r_amt"] = 21,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-01D5BF39",
+							["end_time"] = 1602433345,
 							["last_dps"] = 222.934069691479,
 							["custom"] = 0,
-							["last_event"] = 1602433343,
+							["tipo"] = 1,
 							["damage_taken"] = 5486.0036,
 							["start_time"] = 1602433253,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 2632,
@@ -7259,19 +7268,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["fight_component"] = true,
+							["total"] = 5681.004327,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 5681.004327,
-							["monster"] = true,
-							["fight_component"] = true,
+							["serial"] = "Creature-0-4447-1-41-7858-0000032ECA",
 							["dps_started"] = false,
 							["end_time"] = 1602433345,
 							["friendlyfire_total"] = 0,
 							["on_hold"] = false,
 							["nome"] = "Southsea Swashbuckler",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 4,
@@ -7294,16 +7303,16 @@ _detalhes_database = {
 										["MISS"] = 5,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["a_dmg"] = 211,
 										["m_crit"] = 0,
-										["a_amt"] = 3,
 										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 68,
-										["r_amt"] = 0,
 										["c_min"] = 129,
+										["successful_casted"] = 0,
+										["a_amt"] = 3,
+										["n_amt"] = 68,
+										["spellschool"] = 1,
+										["r_amt"] = 0,
 									},
 									["Disarm"] = {
 										["c_amt"] = 0,
@@ -7326,33 +7335,33 @@ _detalhes_database = {
 										["DODGE"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 8,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["total"] = 5681.004327,
-							["serial"] = "Creature-0-4447-1-41-7858-0000032ECA",
+							["last_event"] = 1602433342,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1602433342,
+							["tipo"] = 1,
 							["damage_taken"] = 23211.004327,
 							["start_time"] = 1602433292,
 							["delay"] = 1602433316,
-							["tipo"] = 1,
+							["monster"] = true,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 54,
 					["tipo"] = 3,
+					["combatId"] = 54,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -7361,7 +7370,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "MAGE",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 0.003159,
 							["total_without_pet"] = 443.003159,
 							["total"] = 443.003159,
@@ -7382,13 +7391,9 @@ _detalhes_database = {
 							["healing_taken"] = 4790.003159,
 							["fight_component"] = true,
 							["end_time"] = 1602433345,
-							["healing_from"] = {
-								["Konac"] = true,
-								["Augustin"] = true,
-							},
+							["classe"] = "MAGE",
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
 										["c_amt"] = 0,
@@ -7408,10 +7413,10 @@ _detalhes_database = {
 										["targets_absorbs"] = {
 											["Augustin"] = 443,
 										},
-										["m_healed"] = 0,
 										["c_curado"] = 0,
-										["m_crit"] = 0,
 										["c_min"] = 0,
+										["m_crit"] = 0,
+										["m_healed"] = 0,
 										["m_amt"] = 0,
 										["n_curado"] = 443,
 										["n_amt"] = 6,
@@ -7420,16 +7425,20 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1602433335,
-							["custom"] = 0,
+							["healing_from"] = {
+								["Konac"] = true,
+								["Augustin"] = true,
+							},
 							["tipo"] = 2,
-							["spec"] = 64,
+							["custom"] = 0,
+							["last_event"] = 1602433249,
+							["start_time"] = 1602433335,
 							["totaldenied"] = 0.003159,
 							["delay"] = 1602433249,
-							["last_event"] = 1602433249,
+							["spec"] = 64,
 						}, -- [1]
 						{
 							["flag_original"] = 1304,
@@ -7449,17 +7458,24 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["totalover_without_pet"] = 0.007554,
-							["end_time"] = 1602433345,
+							["iniciar_hps"] = false,
 							["classe"] = "PRIEST",
 							["totalover"] = 13197.007554,
 							["total_without_pet"] = 4542.007554,
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["start_time"] = 1602433253,
+							["healing_taken"] = 195.007554,
 							["fight_component"] = true,
 							["total"] = 4542.007554,
-							["healing_taken"] = 195.007554,
+							["delay"] = 1602433333,
+							["end_time"] = 1602433345,
+							["nome"] = "Konac",
+							["targets_absorbs"] = {
+							},
+							["heal_enemy_amt"] = 0,
+							["need_refresh"] = true,
+							["heal_enemy"] = {
+							},
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Renew"] = {
 										["c_amt"] = 0,
@@ -7483,139 +7499,131 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["n_curado"] = 4542,
 										["n_amt"] = 49,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
-							["nome"] = "Konac",
-							["targets_absorbs"] = {
-							},
-							["start_time"] = 1602433253,
-							["need_refresh"] = true,
-							["heal_enemy"] = {
-							},
-							["serial"] = "Player-4465-00C4D96C",
 							["custom"] = 0,
 							["last_event"] = 1602433333,
 							["on_hold"] = false,
 							["totaldenied"] = 0.007554,
-							["delay"] = 1602433333,
+							["serial"] = "Player-4465-00C4D96C",
 							["tipo"] = 2,
 						}, -- [2]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 54,
 					["tipo"] = 7,
+					["combatId"] = 54,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 54,
 					["tipo"] = 9,
+					["combatId"] = 54,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Chilled"] = {
-										["activedamt"] = 0,
-										["id"] = "Chilled",
+										["appliedamt"] = 28,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 71,
-										["appliedamt"] = 28,
+										["id"] = "Chilled",
 										["refreshamt"] = 25,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blizzard"] = {
-										["activedamt"] = 0,
-										["id"] = "Blizzard",
+										["appliedamt"] = 41,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 28,
-										["appliedamt"] = 41,
+										["id"] = "Blizzard",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Cone of Cold"] = {
-										["activedamt"] = 0,
-										["id"] = "Cone of Cold",
+										["appliedamt"] = 18,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 11,
-										["appliedamt"] = 18,
+										["id"] = "Cone of Cold",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Frost Nova"] = {
-										["activedamt"] = 0,
-										["id"] = "Frost Nova",
+										["appliedamt"] = 23,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 24,
-										["appliedamt"] = 23,
+										["id"] = "Frost Nova",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 220,
 							["classe"] = "MAGE",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
-										["activedamt"] = 1,
-										["id"] = "Ice Barrier",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 9,
-										["appliedamt"] = 1,
+										["id"] = "Ice Barrier",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blink"] = {
-										["activedamt"] = 1,
-										["id"] = "Blink",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = "Blink",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Arcane Intellect"] = {
-										["activedamt"] = 1,
-										["id"] = "Arcane Intellect",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 105,
-										["appliedamt"] = 1,
+										["id"] = "Arcane Intellect",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Ice Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Ice Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 105,
-										["appliedamt"] = 1,
+										["id"] = "Ice Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -7633,6 +7641,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 134,
@@ -7649,32 +7658,32 @@ _detalhes_database = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1602433345,
+							["tipo"] = 4,
 							["nome"] = "Augustin",
 							["pets"] = {
 							},
 							["serial"] = "Player-4465-01D5BF39",
-							["tipo"] = 4,
+							["last_event"] = 1602433345,
 						}, -- [1]
 						{
 							["flag_original"] = 1304,
-							["tipo"] = 4,
-							["nome"] = "Konac",
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["need_refresh"] = true,
 							["last_event"] = 0,
+							["nome"] = "Konac",
+							["need_refresh"] = true,
 							["spell_cast"] = {
 								["Renew"] = 12,
 							},
-							["serial"] = "Player-4465-00C4D96C",
+							["fight_component"] = true,
 							["classe"] = "PRIEST",
+							["tipo"] = 4,
+							["serial"] = "Player-4465-00C4D96C",
+							["pets"] = {
+							},
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
-							["nome"] = "Southsea Swashbuckler",
 							["tipo"] = 4,
+							["nome"] = "Southsea Swashbuckler",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -7689,8 +7698,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 54,
 					["tipo"] = 2,
+					["combatId"] = 54,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -7699,13 +7708,10 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 157617.649,
 				["tempo_start"] = 1602433240,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Southsea Swashbuckler",
 				["combat_counter"] = 6381,
 				["playing_solo"] = true,
 				["totals"] = {
@@ -7721,10 +7727,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -7733,9 +7739,14 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "18:22:25",
+				["cleu_timeline"] = {
 				},
+				["enemy"] = "Southsea Swashbuckler",
+				["TotalElapsedCombatTime"] = 157524.472,
 				["CombatEndedAt"] = 157524.472,
 				["aura_timeline"] = {
 				},
@@ -7743,6 +7754,16 @@ _detalhes_database = {
 				},
 				["data_inicio"] = "18:20:41",
 				["end_time"] = 157524.472,
+				["combat_id"] = 54,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Southsea Swashbuckler"] = 10,
+					["Southsea Freebooter"] = 1,
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["totals_grupo"] = {
 					23211, -- [1]
 					443, -- [2]
@@ -7756,22 +7777,27 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 54,
-				["TotalElapsedCombatTime"] = 157524.472,
-				["frags_need_refresh"] = true,
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Southsea Swashbuckler",
+				["start_time"] = 157420.356,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -7779,33 +7805,17 @@ _detalhes_database = {
 							["Augustin"] = 443.003159,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Augustin"] = 23211.0036,
 						}, -- [1]
 					},
 				},
-				["frags"] = {
-					["Southsea Swashbuckler"] = 10,
-					["Southsea Freebooter"] = 1,
-				},
-				["data_fim"] = "18:22:25",
-				["instance_type"] = "none",
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 157420.356,
-				["contra"] = "Southsea Swashbuckler",
-				["TimeData"] = {
-				},
 			}, -- [10]
 			{
 				{
-					["combatId"] = 53,
 					["tipo"] = 2,
+					["combatId"] = 53,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -7817,24 +7827,23 @@ _detalhes_database = {
 							["targets"] = {
 								["Southsea Dock Worker"] = 26800,
 							},
-							["total"] = 26800.002668,
+							["serial"] = "Player-4465-01D5BF39",
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["classe"] = "MAGE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 26800.002668,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1602433151,
-							["friendlyfire_total"] = 0,
 							["spec"] = 64,
+							["dps_started"] = false,
+							["total"] = 26800.002668,
+							["on_hold"] = false,
+							["last_event"] = 1602433151,
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["Chilled"] = {
 										["c_amt"] = 0,
@@ -7852,19 +7861,19 @@ _detalhes_database = {
 										["counter"] = 17,
 										["total"] = 0,
 										["c_max"] = 0,
-										["RESIST"] = 17,
+										["spellschool"] = 16,
 										["id"] = "Chilled",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 17,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["Frost Nova"] = {
 										["c_amt"] = 2,
@@ -7882,19 +7891,19 @@ _detalhes_database = {
 										["counter"] = 70,
 										["total"] = 1544,
 										["c_max"] = 47,
-										["RESIST"] = 7,
+										["spellschool"] = 16,
 										["id"] = "Frost Nova",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 7,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 61,
-										["r_amt"] = 0,
 										["c_min"] = 46,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 61,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["!Autoshot"] = {
 										["c_amt"] = 0,
@@ -7912,19 +7921,19 @@ _detalhes_database = {
 										["counter"] = 19,
 										["total"] = 376,
 										["c_max"] = 0,
-										["RESIST"] = 7,
+										["spellschool"] = 1,
 										["id"] = "!Autoshot",
 										["r_dmg"] = 179,
-										["spellschool"] = 1,
 										["a_dmg"] = 0,
+										["RESIST"] = 7,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 12,
-										["r_amt"] = 6,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 12,
+										["b_dmg"] = 0,
+										["r_amt"] = 6,
 									},
 									["Blizzard"] = {
 										["c_amt"] = 0,
@@ -7947,13 +7956,13 @@ _detalhes_database = {
 										["spellschool"] = 16,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 173,
+										["a_amt"] = 0,
 										["r_amt"] = 31,
-										["c_min"] = 0,
 									},
 									["Arcane Explosion"] = {
 										["c_amt"] = 2,
@@ -7971,19 +7980,19 @@ _detalhes_database = {
 										["counter"] = 20,
 										["total"] = 1642,
 										["c_max"] = 230,
-										["RESIST"] = 4,
+										["spellschool"] = 64,
 										["id"] = "Arcane Explosion",
 										["r_dmg"] = 27,
-										["spellschool"] = 64,
 										["a_dmg"] = 0,
+										["RESIST"] = 4,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 14,
-										["r_amt"] = 1,
 										["c_min"] = 227,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 14,
+										["b_dmg"] = 0,
+										["r_amt"] = 1,
 									},
 									["Cone of Cold"] = {
 										["c_amt"] = 1,
@@ -8001,19 +8010,19 @@ _detalhes_database = {
 										["counter"] = 45,
 										["total"] = 11523,
 										["c_max"] = 570,
-										["RESIST"] = 5,
+										["spellschool"] = 16,
 										["id"] = "Cone of Cold",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 5,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 39,
-										["r_amt"] = 0,
 										["c_min"] = 570,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 39,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["Fire Blast"] = {
 										["c_amt"] = 0,
@@ -8036,25 +8045,26 @@ _detalhes_database = {
 										["spellschool"] = 4,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-01D5BF39",
+							["end_time"] = 1602433151,
 							["last_dps"] = 141.304018032091,
 							["custom"] = 0,
-							["last_event"] = 1602433151,
+							["tipo"] = 1,
 							["damage_taken"] = 9733.002668,
 							["start_time"] = 1602433000,
 							["delay"] = 1602433049,
-							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -8068,19 +8078,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["fight_component"] = true,
+							["total"] = 13219.00528,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 13219.00528,
-							["monster"] = true,
-							["fight_component"] = true,
+							["serial"] = "Creature-0-4447-1-41-7857-0000032CE4",
 							["dps_started"] = false,
 							["end_time"] = 1602433151,
 							["friendlyfire_total"] = 0,
 							["on_hold"] = false,
 							["nome"] = "Southsea Dock Worker",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 8,
@@ -8103,16 +8113,16 @@ _detalhes_database = {
 										["DODGE"] = 5,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 159,
-										["r_amt"] = 0,
 										["c_min"] = 131,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 159,
+										["spellschool"] = 1,
+										["r_amt"] = 0,
 									},
 									["Head Crack"] = {
 										["c_amt"] = 0,
@@ -8135,27 +8145,27 @@ _detalhes_database = {
 										["MISS"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 7,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["total"] = 13219.00528,
-							["serial"] = "Creature-0-4447-1-41-7857-0000032CE4",
+							["last_event"] = 1602433150,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1602433150,
+							["tipo"] = 1,
 							["damage_taken"] = 26800.00528,
 							["start_time"] = 1602433000,
 							["delay"] = 1602433135,
-							["tipo"] = 1,
+							["monster"] = true,
 						}, -- [2]
 						{
 							["flag_original"] = -2147483648,
@@ -8167,19 +8177,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["fight_component"] = true,
+							["tipo"] = 1,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 89.001709,
-							["on_hold"] = false,
 							["dps_started"] = false,
+							["fight_component"] = true,
 							["total"] = 89.001709,
-							["classe"] = "UNKNOW",
 							["serial"] = "",
+							["damage_taken"] = 0.001709,
 							["nome"] = "Environment (Falling)",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["Falling"] = {
 										["c_amt"] = 0,
@@ -8202,32 +8211,33 @@ _detalhes_database = {
 										["spellschool"] = 3,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["end_time"] = 1602433151,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.001709,
+							["last_event"] = 1602432973,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1602433150,
 							["delay"] = 1602432973,
-							["last_event"] = 1602432973,
+							["classe"] = "UNKNOW",
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 53,
 					["tipo"] = 3,
+					["combatId"] = 53,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -8236,7 +8246,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "MAGE",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 0.007741,
 							["total_without_pet"] = 886.007741,
 							["total"] = 886.007741,
@@ -8257,13 +8267,9 @@ _detalhes_database = {
 							["healing_taken"] = 9733.007741,
 							["fight_component"] = true,
 							["end_time"] = 1602433151,
-							["healing_from"] = {
-								["Konac"] = true,
-								["Augustin"] = true,
-							},
+							["classe"] = "MAGE",
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
 										["c_amt"] = 0,
@@ -8283,10 +8289,10 @@ _detalhes_database = {
 										["targets_absorbs"] = {
 											["Augustin"] = 886,
 										},
-										["m_healed"] = 0,
 										["c_curado"] = 0,
-										["m_crit"] = 0,
 										["c_min"] = 0,
+										["m_crit"] = 0,
+										["m_healed"] = 0,
 										["m_amt"] = 0,
 										["n_curado"] = 886,
 										["n_amt"] = 12,
@@ -8295,16 +8301,20 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1602433135,
-							["custom"] = 0,
+							["healing_from"] = {
+								["Konac"] = true,
+								["Augustin"] = true,
+							},
 							["tipo"] = 2,
-							["spec"] = 64,
+							["custom"] = 0,
+							["last_event"] = 1602432996,
+							["start_time"] = 1602433135,
 							["totaldenied"] = 0.007741,
 							["delay"] = 1602432996,
-							["last_event"] = 1602432996,
+							["spec"] = 64,
 						}, -- [1]
 						{
 							["flag_original"] = 1304,
@@ -8324,17 +8334,24 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["totalover_without_pet"] = 0.006193,
-							["end_time"] = 1602433151,
+							["iniciar_hps"] = false,
 							["classe"] = "PRIEST",
 							["totalover"] = 15467.006193,
 							["total_without_pet"] = 12428.006193,
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["start_time"] = 1602432984,
+							["healing_taken"] = 3581.006193,
 							["fight_component"] = true,
 							["total"] = 12428.006193,
-							["healing_taken"] = 3581.006193,
+							["delay"] = 0,
+							["end_time"] = 1602433151,
+							["nome"] = "Konac",
+							["targets_absorbs"] = {
+							},
+							["heal_enemy_amt"] = 0,
+							["need_refresh"] = true,
+							["heal_enemy"] = {
+							},
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Renew"] = {
 										["c_amt"] = 0,
@@ -8358,36 +8375,29 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["n_curado"] = 12428,
 										["n_amt"] = 77,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
-							["nome"] = "Konac",
-							["targets_absorbs"] = {
-							},
-							["start_time"] = 1602432984,
-							["need_refresh"] = true,
-							["heal_enemy"] = {
-							},
-							["serial"] = "Player-4465-00C4D96C",
 							["custom"] = 0,
 							["last_event"] = 1602433150,
 							["on_hold"] = false,
 							["totaldenied"] = 0.006193,
-							["delay"] = 0,
+							["serial"] = "Player-4465-00C4D96C",
 							["tipo"] = 2,
 						}, -- [2]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 53,
 					["tipo"] = 7,
+					["combatId"] = 53,
 					["_ActorTable"] = {
 						{
 							["received"] = 1316.008659,
@@ -8404,7 +8414,6 @@ _detalhes_database = {
 							["total"] = 1316.008659,
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									["Replenish Mana"] = {
 										["total"] = 556,
@@ -8425,6 +8434,7 @@ _detalhes_database = {
 										["counter"] = 1,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["flag_original"] = 1297,
@@ -8438,105 +8448,104 @@ _detalhes_database = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 53,
 					["tipo"] = 9,
+					["combatId"] = 53,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Frost Nova"] = {
-										["activedamt"] = 0,
-										["id"] = "Frost Nova",
+										["appliedamt"] = 53,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 51,
-										["appliedamt"] = 53,
+										["id"] = "Frost Nova",
 										["refreshamt"] = 10,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blizzard"] = {
-										["activedamt"] = 0,
-										["id"] = "Blizzard",
+										["appliedamt"] = 50,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 26,
-										["appliedamt"] = 50,
+										["id"] = "Blizzard",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Cone of Cold"] = {
-										["activedamt"] = 0,
-										["id"] = "Cone of Cold",
+										["appliedamt"] = 32,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 77,
-										["appliedamt"] = 32,
+										["id"] = "Cone of Cold",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Chilled"] = {
-										["activedamt"] = 0,
-										["id"] = "Chilled",
+										["appliedamt"] = 62,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 128,
-										["appliedamt"] = 62,
+										["id"] = "Chilled",
 										["refreshamt"] = 35,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 398,
 							["classe"] = "MAGE",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
-										["activedamt"] = 2,
-										["id"] = "Ice Barrier",
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 17,
-										["appliedamt"] = 2,
+										["id"] = "Ice Barrier",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blink"] = {
-										["activedamt"] = 3,
-										["id"] = "Blink",
+										["appliedamt"] = 3,
 										["targets"] = {
 										},
+										["activedamt"] = 3,
 										["uptime"] = 3,
-										["appliedamt"] = 3,
+										["id"] = "Blink",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Arcane Intellect"] = {
-										["activedamt"] = 1,
-										["id"] = "Arcane Intellect",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 189,
-										["appliedamt"] = 1,
+										["id"] = "Arcane Intellect",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Ice Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Ice Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 189,
-										["appliedamt"] = 1,
+										["id"] = "Ice Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -8554,6 +8563,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 282,
@@ -8571,37 +8581,37 @@ _detalhes_database = {
 								["Cold Snap"] = 1,
 								["Frost Nova"] = 7,
 								["Shoot"] = 19,
-								["Cone of Cold"] = 7,
 								["Restore Mana"] = 1,
+								["Cone of Cold"] = 7,
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1602433151,
+							["tipo"] = 4,
 							["nome"] = "Augustin",
 							["pets"] = {
 							},
 							["serial"] = "Player-4465-01D5BF39",
-							["tipo"] = 4,
+							["last_event"] = 1602433151,
 						}, -- [1]
 						{
 							["flag_original"] = 1304,
-							["tipo"] = 4,
-							["nome"] = "Konac",
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["need_refresh"] = true,
 							["last_event"] = 0,
+							["nome"] = "Konac",
+							["need_refresh"] = true,
 							["spell_cast"] = {
 								["Renew"] = 27,
 							},
-							["serial"] = "Player-4465-00C4D96C",
+							["fight_component"] = true,
 							["classe"] = "PRIEST",
+							["tipo"] = 4,
+							["serial"] = "Player-4465-00C4D96C",
+							["pets"] = {
+							},
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
-							["nome"] = "Southsea Dock Worker",
 							["tipo"] = 4,
+							["nome"] = "Southsea Dock Worker",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -8616,8 +8626,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 53,
 					["tipo"] = 2,
+					["combatId"] = 53,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -8626,13 +8636,10 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 157419.197,
 				["tempo_start"] = 1602432962,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Southsea Dock Worker",
 				["combat_counter"] = 6380,
 				["playing_solo"] = true,
 				["totals"] = {
@@ -8648,10 +8655,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -8660,9 +8667,14 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "18:19:12",
+				["cleu_timeline"] = {
 				},
+				["enemy"] = "Southsea Dock Worker",
+				["TotalElapsedCombatTime"] = 157331.221,
 				["CombatEndedAt"] = 157331.221,
 				["aura_timeline"] = {
 				},
@@ -8670,6 +8682,15 @@ _detalhes_database = {
 				},
 				["data_inicio"] = "18:16:02",
 				["end_time"] = 157331.221,
+				["combat_id"] = 53,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Southsea Dock Worker"] = 11,
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["totals_grupo"] = {
 					26800, -- [1]
 					886, -- [2]
@@ -8683,22 +8704,27 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 53,
-				["TotalElapsedCombatTime"] = 157331.221,
-				["frags_need_refresh"] = true,
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Southsea Dock Worker",
+				["start_time"] = 157141.559,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -8706,32 +8732,17 @@ _detalhes_database = {
 							["Augustin"] = 886.007741,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Augustin"] = 26800.002668,
 						}, -- [1]
 					},
 				},
-				["frags"] = {
-					["Southsea Dock Worker"] = 11,
-				},
-				["data_fim"] = "18:19:12",
-				["instance_type"] = "none",
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 157141.559,
-				["contra"] = "Southsea Dock Worker",
-				["TimeData"] = {
-				},
 			}, -- [11]
 			{
 				{
-					["combatId"] = 52,
 					["tipo"] = 2,
+					["combatId"] = 52,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -8748,20 +8759,20 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["friendlyfire_total"] = 0,
+							["last_event"] = 1602432778,
 							["classe"] = "MAGE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 3454.002072,
-							["friendlyfire"] = {
-							},
-							["colocacao"] = 1,
+							["serial"] = "Player-4465-01D5BF39",
 							["dps_started"] = false,
 							["end_time"] = 1602432783,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
+							["damage_taken"] = 3686.002072,
+							["friendlyfire"] = {
+							},
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["Chilled"] = {
 										["c_amt"] = 0,
@@ -8779,19 +8790,19 @@ _detalhes_database = {
 										["counter"] = 3,
 										["total"] = 0,
 										["c_max"] = 0,
-										["RESIST"] = 3,
+										["spellschool"] = 16,
 										["id"] = "Chilled",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 3,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["Frost Nova"] = {
 										["c_amt"] = 0,
@@ -8811,19 +8822,19 @@ _detalhes_database = {
 										["counter"] = 19,
 										["total"] = 425,
 										["c_max"] = 0,
-										["RESIST"] = 1,
+										["spellschool"] = 16,
 										["id"] = "Frost Nova",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 1,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 18,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 18,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["Cone of Cold"] = {
 										["c_amt"] = 0,
@@ -8847,13 +8858,13 @@ _detalhes_database = {
 										["spellschool"] = 16,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 10,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Fire Blast"] = {
 										["c_amt"] = 0,
@@ -8876,26 +8887,26 @@ _detalhes_database = {
 										["spellschool"] = 4,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["total"] = 3454.002072,
-							["serial"] = "Player-4465-01D5BF39",
+							["colocacao"] = 1,
 							["last_dps"] = 73.6885215795995,
 							["custom"] = 0,
-							["last_event"] = 1602432778,
-							["damage_taken"] = 3686.002072,
+							["tipo"] = 1,
+							["on_hold"] = false,
 							["start_time"] = 1602432766,
 							["delay"] = 1602432759,
-							["tipo"] = 1,
+							["total"] = 3454.002072,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -8909,20 +8920,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4447-1-41-7857-0000032CE4",
+							["dps_started"] = false,
+							["friendlyfire_total"] = 0,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 2922.004863,
-							["monster"] = true,
-							["end_time"] = 1602432962,
-							["dps_started"] = false,
-							["total"] = 2922.004863,
+							["serial"] = "Creature-0-4447-1-41-7857-0000032CE4",
 							["fight_component"] = true,
-							["friendlyfire_total"] = 0,
+							["end_time"] = 1602432962,
+							["total"] = 2922.004863,
+							["on_hold"] = false,
 							["nome"] = "Southsea Dock Worker",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 1,
@@ -8945,15 +8955,15 @@ _detalhes_database = {
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 133,
+										["b_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 2,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 38,
-										["r_amt"] = 0,
 										["c_min"] = 149,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 38,
+										["a_dmg"] = 133,
+										["r_amt"] = 0,
 									},
 									["Head Crack"] = {
 										["c_amt"] = 0,
@@ -8975,25 +8985,26 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 3,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["m_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["on_hold"] = false,
+							["last_event"] = 1602432962,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1602432962,
+							["tipo"] = 1,
 							["damage_taken"] = 3038.004863,
 							["start_time"] = 1602432917,
 							["delay"] = 1602432794,
-							["tipo"] = 1,
+							["monster"] = true,
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
@@ -9007,20 +9018,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4447-1-41-7856-0000032C04",
+							["dps_started"] = false,
+							["friendlyfire_total"] = 0,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1185.003812,
-							["monster"] = true,
-							["end_time"] = 1602432962,
-							["dps_started"] = false,
-							["total"] = 1185.003812,
+							["serial"] = "Creature-0-4447-1-41-7856-0000032C04",
 							["fight_component"] = true,
-							["friendlyfire_total"] = 0,
+							["end_time"] = 1602432962,
+							["total"] = 1185.003812,
+							["on_hold"] = false,
 							["nome"] = "Southsea Freebooter",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["Shoot"] = {
 										["c_amt"] = 0,
@@ -9044,25 +9054,26 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 9,
 										["b_dmg"] = 0,
 										["n_amt"] = 13,
+										["m_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["on_hold"] = false,
+							["last_event"] = 1602432797,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1602432797,
+							["tipo"] = 1,
 							["damage_taken"] = 54.003812,
 							["start_time"] = 1602432920,
 							["delay"] = 1602432797,
-							["tipo"] = 1,
+							["monster"] = true,
 						}, -- [3]
 						{
 							["flag_original"] = 2632,
@@ -9076,19 +9087,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["fight_component"] = true,
+							["total"] = 266.001928,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 266.001928,
-							["monster"] = true,
-							["fight_component"] = true,
+							["serial"] = "Creature-0-4447-1-41-7858-0000032ECA",
 							["dps_started"] = false,
 							["end_time"] = 1602432783,
 							["friendlyfire_total"] = 0,
 							["on_hold"] = false,
 							["nome"] = "Southsea Swashbuckler",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 1,
@@ -9112,13 +9123,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 128,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 128,
 									},
 									["Disarm"] = {
 										["c_amt"] = 0,
@@ -9140,41 +9151,43 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["m_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["total"] = 266.001928,
-							["serial"] = "Creature-0-4447-1-41-7858-0000032ECA",
+							["last_event"] = 1602432779,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1602432779,
+							["tipo"] = 1,
 							["damage_taken"] = 362.001928,
 							["start_time"] = 1602432776,
 							["delay"] = 1602432750,
-							["tipo"] = 1,
+							["monster"] = true,
 						}, -- [4]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 52,
 					["tipo"] = 3,
+					["combatId"] = 52,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["targets_overheal"] = {
+							["healing_from"] = {
+								["Konac"] = true,
+								["Augustin"] = true,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "MAGE",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 0.001134,
 							["total_without_pet"] = 886.001134,
 							["total"] = 886.001134,
@@ -9195,13 +9208,8 @@ _detalhes_database = {
 							["healing_taken"] = 1570.001134,
 							["fight_component"] = true,
 							["end_time"] = 1602432783,
-							["healing_from"] = {
-								["Konac"] = true,
-								["Augustin"] = true,
-							},
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
 										["c_amt"] = 0,
@@ -9221,10 +9229,10 @@ _detalhes_database = {
 										["targets_absorbs"] = {
 											["Augustin"] = 886,
 										},
-										["m_healed"] = 0,
 										["c_curado"] = 0,
-										["m_crit"] = 0,
 										["c_min"] = 0,
+										["m_crit"] = 0,
+										["m_healed"] = 0,
 										["m_amt"] = 0,
 										["n_curado"] = 886,
 										["n_amt"] = 12,
@@ -9233,15 +9241,18 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
+							["targets_overheal"] = {
+							},
+							["classe"] = "MAGE",
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1602432774,
 							["start_time"] = 1602432759,
 							["totaldenied"] = 0.001134,
 							["delay"] = 1602432745,
-							["last_event"] = 1602432774,
+							["tipo"] = 2,
 						}, -- [1]
 						{
 							["flag_original"] = 1304,
@@ -9258,17 +9269,24 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["totalover_without_pet"] = 0.00212,
-							["end_time"] = 1602432783,
+							["iniciar_hps"] = false,
 							["classe"] = "PRIEST",
 							["totalover"] = 685.00212,
 							["total_without_pet"] = 684.00212,
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["start_time"] = 1602432771,
+							["healing_taken"] = 0.00212,
 							["fight_component"] = true,
 							["total"] = 684.00212,
-							["healing_taken"] = 0.00212,
+							["delay"] = 1602432740,
+							["end_time"] = 1602432783,
+							["nome"] = "Konac",
+							["targets_absorbs"] = {
+							},
+							["heal_enemy_amt"] = 0,
+							["need_refresh"] = true,
+							["heal_enemy"] = {
+							},
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Renew"] = {
 										["c_amt"] = 0,
@@ -9290,139 +9308,131 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["n_curado"] = 684,
 										["n_amt"] = 4,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
-							["nome"] = "Konac",
-							["targets_absorbs"] = {
-							},
-							["start_time"] = 1602432771,
-							["need_refresh"] = true,
-							["heal_enemy"] = {
-							},
-							["serial"] = "Player-4465-00C4D96C",
 							["custom"] = 0,
 							["last_event"] = 1602432777,
 							["on_hold"] = false,
 							["totaldenied"] = 0.00212,
-							["delay"] = 1602432740,
+							["serial"] = "Player-4465-00C4D96C",
 							["tipo"] = 2,
 						}, -- [2]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 52,
 					["tipo"] = 7,
+					["combatId"] = 52,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 52,
 					["tipo"] = 9,
+					["combatId"] = 52,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Frost Nova"] = {
-										["activedamt"] = 10,
-										["id"] = "Frost Nova",
+										["appliedamt"] = 18,
 										["targets"] = {
 										},
+										["activedamt"] = 10,
 										["uptime"] = 13,
-										["appliedamt"] = 18,
+										["id"] = "Frost Nova",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Polymorph"] = {
-										["activedamt"] = 0,
-										["id"] = "Polymorph",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 11,
-										["appliedamt"] = 1,
+										["id"] = "Polymorph",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Cone of Cold"] = {
-										["activedamt"] = 10,
-										["id"] = "Cone of Cold",
+										["appliedamt"] = 10,
 										["targets"] = {
 										},
+										["activedamt"] = 10,
 										["uptime"] = 8,
-										["appliedamt"] = 10,
+										["id"] = "Cone of Cold",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Chilled"] = {
-										["activedamt"] = 6,
-										["id"] = "Chilled",
+										["appliedamt"] = 20,
 										["targets"] = {
 										},
+										["activedamt"] = 6,
 										["uptime"] = 41,
-										["appliedamt"] = 20,
+										["id"] = "Chilled",
 										["refreshamt"] = 9,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 112,
 							["classe"] = "MAGE",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
-										["activedamt"] = 2,
-										["id"] = "Ice Barrier",
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 17,
-										["appliedamt"] = 2,
+										["id"] = "Ice Barrier",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blink"] = {
-										["activedamt"] = 1,
-										["id"] = "Blink",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = "Blink",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Arcane Intellect"] = {
-										["activedamt"] = 1,
-										["id"] = "Arcane Intellect",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 47,
-										["appliedamt"] = 1,
+										["id"] = "Arcane Intellect",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Ice Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Ice Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 47,
-										["appliedamt"] = 1,
+										["id"] = "Ice Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -9440,6 +9450,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 73,
@@ -9454,19 +9465,19 @@ _detalhes_database = {
 								["Cone of Cold"] = 1,
 								["Fire Blast"] = 1,
 							},
-							["nome"] = "Augustin",
-							["last_event"] = 1602432783,
 							["debuff_uptime_targets"] = {
 							},
+							["tipo"] = 4,
+							["nome"] = "Augustin",
 							["pets"] = {
 							},
 							["serial"] = "Player-4465-01D5BF39",
-							["tipo"] = 4,
+							["last_event"] = 1602432783,
 						}, -- [1]
 						{
 							["flag_original"] = 2632,
-							["nome"] = "Southsea Freebooter",
 							["tipo"] = 4,
+							["nome"] = "Southsea Freebooter",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -9480,23 +9491,23 @@ _detalhes_database = {
 						}, -- [2]
 						{
 							["flag_original"] = 1304,
-							["tipo"] = 4,
-							["nome"] = "Konac",
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["need_refresh"] = true,
 							["last_event"] = 0,
+							["nome"] = "Konac",
+							["need_refresh"] = true,
 							["spell_cast"] = {
 								["Renew"] = 3,
 							},
-							["serial"] = "Player-4465-00C4D96C",
+							["fight_component"] = true,
 							["classe"] = "PRIEST",
+							["tipo"] = 4,
+							["serial"] = "Player-4465-00C4D96C",
+							["pets"] = {
+							},
 						}, -- [3]
 						{
 							["flag_original"] = 2632,
-							["nome"] = "Southsea Dock Worker",
 							["tipo"] = 4,
+							["nome"] = "Southsea Dock Worker",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -9510,8 +9521,8 @@ _detalhes_database = {
 						}, -- [4]
 						{
 							["flag_original"] = 2632,
-							["nome"] = "Southsea Swashbuckler",
 							["tipo"] = 4,
+							["nome"] = "Southsea Swashbuckler",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -9526,8 +9537,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 52,
 					["tipo"] = 2,
+					["combatId"] = 52,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -9536,10 +9547,6 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 157136.3,
 				["tempo_start"] = 1602432736,
-				["cleu_timeline"] = {
-				},
-				["alternate_power"] = {
-				},
 				["last_events_tables"] = {
 					{
 						{
@@ -9937,7 +9944,8 @@ _detalhes_database = {
 						["dead"] = true,
 					}, -- [1]
 				},
-				["enemy"] = "Southsea Dock Worker",
+				["alternate_power"] = {
+				},
 				["combat_counter"] = 6379,
 				["playing_solo"] = true,
 				["totals"] = {
@@ -9953,10 +9961,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 1,
 					}, -- [4]
@@ -9965,9 +9973,14 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
+				["frags_need_refresh"] = false,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "18:13:04",
+				["cleu_timeline"] = {
 				},
+				["enemy"] = "Southsea Dock Worker",
+				["TotalElapsedCombatTime"] = 156962.831,
 				["CombatEndedAt"] = 156962.831,
 				["aura_timeline"] = {
 				},
@@ -9975,6 +9988,14 @@ _detalhes_database = {
 				},
 				["data_inicio"] = "18:12:17",
 				["end_time"] = 156962.831,
+				["combat_id"] = 52,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["totals_grupo"] = {
 					3454, -- [1]
 					886, -- [2]
@@ -9988,22 +10009,27 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 1,
 					}, -- [4]
 				},
-				["combat_id"] = 52,
-				["TotalElapsedCombatTime"] = 156962.831,
-				["frags_need_refresh"] = false,
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Southsea Dock Worker",
+				["start_time"] = 156915.958,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -10011,59 +10037,44 @@ _detalhes_database = {
 							["Augustin"] = 886.001134,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Augustin"] = 3454.002072,
 						}, -- [1]
 					},
 				},
-				["frags"] = {
-				},
-				["data_fim"] = "18:13:04",
-				["instance_type"] = "none",
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 156915.958,
-				["contra"] = "Southsea Dock Worker",
-				["TimeData"] = {
-				},
 			}, -- [12]
 			{
 				{
-					["combatId"] = 51,
 					["tipo"] = 2,
+					["combatId"] = 51,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
 							["totalabsorbed"] = 0.007887,
-							["spec"] = 64,
 							["damage_from"] = {
 								["Southsea Swashbuckler"] = true,
 							},
 							["targets"] = {
 								["Southsea Swashbuckler"] = 20933,
 							},
+							["serial"] = "Player-4465-01D5BF39",
 							["pets"] = {
 							},
 							["colocacao"] = 1,
-							["end_time"] = 1602432638,
+							["total"] = 20933.007887,
 							["classe"] = "MAGE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 20933.007887,
+							["spec"] = 64,
+							["dps_started"] = false,
+							["end_time"] = 1602432638,
 							["friendlyfire"] = {
 							},
-							["dps_started"] = false,
-							["total"] = 20933.007887,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
+							["last_event"] = 1602432638,
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["Chilled"] = {
 										["c_amt"] = 0,
@@ -10081,19 +10092,19 @@ _detalhes_database = {
 										["counter"] = 7,
 										["total"] = 0,
 										["c_max"] = 0,
-										["RESIST"] = 7,
+										["spellschool"] = 16,
 										["id"] = "Chilled",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 7,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["Blizzard"] = {
 										["c_amt"] = 0,
@@ -10116,13 +10127,13 @@ _detalhes_database = {
 										["spellschool"] = 16,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 109,
+										["a_amt"] = 0,
 										["r_amt"] = 14,
-										["c_min"] = 0,
 									},
 									["Arcane Explosion"] = {
 										["c_amt"] = 0,
@@ -10140,19 +10151,19 @@ _detalhes_database = {
 										["counter"] = 15,
 										["total"] = 773,
 										["c_max"] = 0,
-										["RESIST"] = 3,
+										["spellschool"] = 64,
 										["id"] = "Arcane Explosion",
 										["r_dmg"] = 26,
-										["spellschool"] = 64,
 										["a_dmg"] = 0,
+										["RESIST"] = 3,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 12,
-										["r_amt"] = 1,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 12,
+										["b_dmg"] = 0,
+										["r_amt"] = 1,
 									},
 									["Frost Nova"] = {
 										["c_amt"] = 0,
@@ -10170,19 +10181,19 @@ _detalhes_database = {
 										["counter"] = 18,
 										["total"] = 406,
 										["c_max"] = 0,
-										["RESIST"] = 1,
+										["spellschool"] = 16,
 										["id"] = "Frost Nova",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 1,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 17,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 17,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["!Autoshot"] = {
 										["c_amt"] = 0,
@@ -10200,19 +10211,19 @@ _detalhes_database = {
 										["counter"] = 7,
 										["total"] = 147,
 										["c_max"] = 0,
-										["RESIST"] = 3,
+										["spellschool"] = 1,
 										["id"] = "!Autoshot",
 										["r_dmg"] = 29,
-										["spellschool"] = 1,
 										["a_dmg"] = 0,
+										["RESIST"] = 3,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["r_amt"] = 1,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 1,
 									},
 									["Cone of Cold"] = {
 										["c_amt"] = 2,
@@ -10235,13 +10246,13 @@ _detalhes_database = {
 										["spellschool"] = 16,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 544,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 37,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 544,
 									},
 									["Fire Blast"] = {
 										["c_amt"] = 0,
@@ -10264,25 +10275,26 @@ _detalhes_database = {
 										["spellschool"] = 4,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 1,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-01D5BF39",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 207.407412159292,
 							["custom"] = 0,
-							["last_event"] = 1602432638,
-							["damage_taken"] = 5639.007887,
+							["tipo"] = 1,
+							["on_hold"] = false,
 							["start_time"] = 1602432563,
 							["delay"] = 1602432575,
-							["tipo"] = 1,
+							["damage_taken"] = 5639.007887,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -10296,20 +10308,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4447-1-41-7858-0000032DA5",
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 6127.002367,
+							["serial"] = "Creature-0-4447-1-41-7858-0000032DA5",
 							["monster"] = true,
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["total"] = 6127.002367,
 							["end_time"] = 1602432638,
-							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["on_hold"] = false,
 							["nome"] = "Southsea Swashbuckler",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 3,
@@ -10332,16 +10343,16 @@ _detalhes_database = {
 										["MISS"] = 2,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["a_dmg"] = 78,
 										["m_crit"] = 0,
-										["a_amt"] = 1,
 										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 75,
-										["r_amt"] = 0,
 										["c_min"] = 131,
+										["successful_casted"] = 0,
+										["a_amt"] = 1,
+										["n_amt"] = 75,
+										["spellschool"] = 1,
+										["r_amt"] = 0,
 									},
 									["Disarm"] = {
 										["c_amt"] = 0,
@@ -10363,31 +10374,32 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 4,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["m_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["on_hold"] = false,
+							["last_event"] = 1602432635,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1602432635,
+							["tipo"] = 1,
 							["damage_taken"] = 20933.002367,
 							["start_time"] = 1602432560,
 							["delay"] = 1602432552,
-							["tipo"] = 1,
+							["total"] = 6127.002367,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 51,
 					["tipo"] = 3,
+					["combatId"] = 51,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -10396,7 +10408,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "MAGE",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 0.00514,
 							["total_without_pet"] = 443.00514,
 							["total"] = 443.00514,
@@ -10417,13 +10429,9 @@ _detalhes_database = {
 							["healing_taken"] = 4559.00514,
 							["fight_component"] = true,
 							["end_time"] = 1602432638,
-							["healing_from"] = {
-								["Konac"] = true,
-								["Augustin"] = true,
-							},
+							["classe"] = "MAGE",
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
 										["c_amt"] = 0,
@@ -10443,10 +10451,10 @@ _detalhes_database = {
 										["targets_absorbs"] = {
 											["Augustin"] = 443,
 										},
-										["m_healed"] = 0,
 										["c_curado"] = 0,
-										["m_crit"] = 0,
 										["c_min"] = 0,
+										["m_crit"] = 0,
+										["m_healed"] = 0,
 										["m_amt"] = 0,
 										["n_curado"] = 443,
 										["n_amt"] = 7,
@@ -10455,16 +10463,20 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1602432629,
-							["custom"] = 0,
+							["healing_from"] = {
+								["Konac"] = true,
+								["Augustin"] = true,
+							},
 							["tipo"] = 2,
-							["spec"] = 64,
+							["custom"] = 0,
+							["last_event"] = 1602432545,
+							["start_time"] = 1602432629,
 							["totaldenied"] = 0.00514,
 							["delay"] = 1602432545,
-							["last_event"] = 1602432545,
+							["spec"] = 64,
 						}, -- [1]
 						{
 							["flag_original"] = 1304,
@@ -10484,17 +10496,24 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["totalover_without_pet"] = 0.001459,
-							["end_time"] = 1602432638,
+							["iniciar_hps"] = false,
 							["classe"] = "PRIEST",
 							["totalover"] = 9759.001459,
 							["total_without_pet"] = 4604.001459,
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["start_time"] = 1602432561,
+							["healing_taken"] = 488.001459,
 							["fight_component"] = true,
 							["total"] = 4604.001459,
-							["healing_taken"] = 488.001459,
+							["delay"] = 1602432625,
+							["end_time"] = 1602432638,
+							["nome"] = "Konac",
+							["targets_absorbs"] = {
+							},
+							["heal_enemy_amt"] = 0,
+							["need_refresh"] = true,
+							["heal_enemy"] = {
+							},
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Renew"] = {
 										["c_amt"] = 0,
@@ -10518,139 +10537,131 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["n_curado"] = 4604,
 										["n_amt"] = 40,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
-							["nome"] = "Konac",
-							["targets_absorbs"] = {
-							},
-							["start_time"] = 1602432561,
-							["need_refresh"] = true,
-							["heal_enemy"] = {
-							},
-							["serial"] = "Player-4465-00C4D96C",
 							["custom"] = 0,
 							["last_event"] = 1602432625,
 							["on_hold"] = false,
 							["totaldenied"] = 0.001459,
-							["delay"] = 1602432625,
+							["serial"] = "Player-4465-00C4D96C",
 							["tipo"] = 2,
 						}, -- [2]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 51,
 					["tipo"] = 7,
+					["combatId"] = 51,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 51,
 					["tipo"] = 9,
+					["combatId"] = 51,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Chilled"] = {
-										["activedamt"] = 0,
-										["id"] = "Chilled",
+										["appliedamt"] = 28,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 84,
-										["appliedamt"] = 28,
+										["id"] = "Chilled",
 										["refreshamt"] = 16,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blizzard"] = {
-										["activedamt"] = 0,
-										["id"] = "Blizzard",
+										["appliedamt"] = 24,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 15,
-										["appliedamt"] = 24,
+										["id"] = "Blizzard",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Cone of Cold"] = {
-										["activedamt"] = 0,
-										["id"] = "Cone of Cold",
+										["appliedamt"] = 26,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 36,
-										["appliedamt"] = 26,
+										["id"] = "Cone of Cold",
 										["refreshamt"] = 6,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Frost Nova"] = {
-										["activedamt"] = 0,
-										["id"] = "Frost Nova",
+										["appliedamt"] = 17,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 16,
-										["appliedamt"] = 17,
+										["id"] = "Frost Nova",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 211,
 							["classe"] = "MAGE",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
-										["activedamt"] = 1,
-										["id"] = "Ice Barrier",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 8,
-										["appliedamt"] = 1,
+										["id"] = "Ice Barrier",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blink"] = {
-										["activedamt"] = 1,
-										["id"] = "Blink",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = "Blink",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Arcane Intellect"] = {
-										["activedamt"] = 1,
-										["id"] = "Arcane Intellect",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 101,
-										["appliedamt"] = 1,
+										["id"] = "Arcane Intellect",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Ice Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Ice Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 101,
-										["appliedamt"] = 1,
+										["id"] = "Ice Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -10668,6 +10679,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 151,
@@ -10686,32 +10698,32 @@ _detalhes_database = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1602432638,
+							["tipo"] = 4,
 							["nome"] = "Augustin",
 							["pets"] = {
 							},
 							["serial"] = "Player-4465-01D5BF39",
-							["tipo"] = 4,
+							["last_event"] = 1602432638,
 						}, -- [1]
 						{
 							["flag_original"] = 1304,
-							["tipo"] = 4,
-							["nome"] = "Konac",
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["need_refresh"] = true,
 							["last_event"] = 0,
+							["nome"] = "Konac",
+							["need_refresh"] = true,
 							["spell_cast"] = {
 								["Renew"] = 11,
 							},
-							["serial"] = "Player-4465-00C4D96C",
+							["fight_component"] = true,
 							["classe"] = "PRIEST",
+							["tipo"] = 4,
+							["serial"] = "Player-4465-00C4D96C",
+							["pets"] = {
+							},
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
-							["nome"] = "Southsea Swashbuckler",
 							["tipo"] = 4,
+							["nome"] = "Southsea Swashbuckler",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -10726,8 +10738,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 51,
 					["tipo"] = 2,
+					["combatId"] = 51,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -10736,13 +10748,10 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 156913.115,
 				["tempo_start"] = 1602432537,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Southsea Swashbuckler",
 				["combat_counter"] = 6378,
 				["playing_solo"] = true,
 				["totals"] = {
@@ -10758,10 +10767,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -10770,9 +10779,14 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "18:10:39",
+				["cleu_timeline"] = {
 				},
+				["enemy"] = "Southsea Swashbuckler",
+				["TotalElapsedCombatTime"] = 156817.96,
 				["CombatEndedAt"] = 156817.96,
 				["aura_timeline"] = {
 				},
@@ -10780,6 +10794,15 @@ _detalhes_database = {
 				},
 				["data_inicio"] = "18:08:58",
 				["end_time"] = 156817.96,
+				["combat_id"] = 51,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Southsea Swashbuckler"] = 9,
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["totals_grupo"] = {
 					20933, -- [1]
 					443, -- [2]
@@ -10793,22 +10816,27 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 51,
-				["TotalElapsedCombatTime"] = 156817.96,
-				["frags_need_refresh"] = true,
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Southsea Swashbuckler",
+				["start_time"] = 156717.033,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -10816,32 +10844,17 @@ _detalhes_database = {
 							["Augustin"] = 443.00514,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Augustin"] = 20933.007887,
 						}, -- [1]
 					},
 				},
-				["frags"] = {
-					["Southsea Swashbuckler"] = 9,
-				},
-				["data_fim"] = "18:10:39",
-				["instance_type"] = "none",
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 156717.033,
-				["contra"] = "Southsea Swashbuckler",
-				["TimeData"] = {
-				},
 			}, -- [13]
 			{
 				{
-					["combatId"] = 50,
 					["tipo"] = 2,
+					["combatId"] = 50,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 68168,
@@ -10855,19 +10868,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["fight_component"] = true,
+							["total"] = 6166.006628,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 6166.006628,
-							["monster"] = true,
-							["fight_component"] = true,
+							["serial"] = "Creature-0-4447-1-41-7857-0000032C7C",
 							["dps_started"] = false,
 							["end_time"] = 1602432438,
 							["friendlyfire_total"] = 0,
 							["on_hold"] = false,
 							["nome"] = "Southsea Dock Worker",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 8,
@@ -10890,16 +10903,16 @@ _detalhes_database = {
 										["MISS"] = 3,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["a_dmg"] = 80,
 										["m_crit"] = 0,
-										["a_amt"] = 1,
 										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 69,
-										["r_amt"] = 0,
 										["c_min"] = 123,
+										["successful_casted"] = 0,
+										["a_amt"] = 1,
+										["n_amt"] = 69,
+										["spellschool"] = 1,
+										["r_amt"] = 0,
 									},
 									["Head Crack"] = {
 										["c_amt"] = 0,
@@ -10921,26 +10934,26 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 2,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["m_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["total"] = 6166.006628,
-							["serial"] = "Creature-0-4447-1-41-7857-0000032C7C",
+							["last_event"] = 1602432433,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1602432433,
+							["tipo"] = 1,
 							["damage_taken"] = 18732.006628,
 							["start_time"] = 1602432393,
 							["delay"] = 1602432394,
-							["tipo"] = 1,
+							["monster"] = true,
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
@@ -10951,24 +10964,23 @@ _detalhes_database = {
 							["targets"] = {
 								["Southsea Dock Worker"] = 18732,
 							},
-							["total"] = 18732.005979,
+							["serial"] = "Player-4465-01D5BF39",
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["classe"] = "MAGE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 18732.005979,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1602432438,
-							["friendlyfire_total"] = 0,
 							["spec"] = 64,
+							["dps_started"] = false,
+							["total"] = 18732.005979,
+							["on_hold"] = false,
+							["last_event"] = 1602432437,
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["Chilled"] = {
 										["c_amt"] = 0,
@@ -10986,19 +10998,19 @@ _detalhes_database = {
 										["counter"] = 4,
 										["total"] = 0,
 										["c_max"] = 0,
-										["RESIST"] = 4,
+										["spellschool"] = 16,
 										["id"] = "Chilled",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 4,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -11020,45 +11032,15 @@ _detalhes_database = {
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
-										["a_dmg"] = 0,
+										["b_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
+										["m_amt"] = 0,
 										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 39,
-										["targets"] = {
-											["Southsea Dock Worker"] = 112,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 112,
-										["n_min"] = 35,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 112,
-										["c_max"] = 0,
-										["RESIST"] = 1,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
 										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Frost Nova"] = {
 										["c_amt"] = 1,
@@ -11081,13 +11063,13 @@ _detalhes_database = {
 										["spellschool"] = 16,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 47,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 15,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 47,
 									},
 									["Blizzard"] = {
 										["c_amt"] = 0,
@@ -11110,13 +11092,43 @@ _detalhes_database = {
 										["spellschool"] = 16,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 160,
+										["a_amt"] = 0,
 										["r_amt"] = 24,
+									},
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 39,
+										["targets"] = {
+											["Southsea Dock Worker"] = 112,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 112,
+										["n_min"] = 35,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 112,
+										["c_max"] = 0,
+										["spellschool"] = 1,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["RESIST"] = 1,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 3,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["Cone of Cold"] = {
 										["c_amt"] = 3,
@@ -11139,13 +11151,13 @@ _detalhes_database = {
 										["spellschool"] = 16,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 544,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 18,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 544,
 									},
 									["Fire Blast"] = {
 										["c_amt"] = 0,
@@ -11168,31 +11180,32 @@ _detalhes_database = {
 										["spellschool"] = 4,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 2,
+										["a_amt"] = 0,
 										["r_amt"] = 1,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-01D5BF39",
+							["end_time"] = 1602432438,
 							["last_dps"] = 172.911356456507,
 							["custom"] = 0,
-							["last_event"] = 1602432437,
+							["tipo"] = 1,
 							["damage_taken"] = 5448.005979,
 							["start_time"] = 1602432358,
 							["delay"] = 1602432346,
-							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 50,
 					["tipo"] = 3,
+					["combatId"] = 50,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -11201,7 +11214,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "MAGE",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 0.007647,
 							["total_without_pet"] = 886.007647,
 							["total"] = 886.007647,
@@ -11222,13 +11235,9 @@ _detalhes_database = {
 							["healing_taken"] = 4704.007647,
 							["fight_component"] = true,
 							["end_time"] = 1602432438,
-							["healing_from"] = {
-								["Konac"] = true,
-								["Augustin"] = true,
-							},
+							["classe"] = "MAGE",
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
 										["c_amt"] = 0,
@@ -11248,10 +11257,10 @@ _detalhes_database = {
 										["targets_absorbs"] = {
 											["Augustin"] = 886,
 										},
-										["m_healed"] = 0,
 										["c_curado"] = 0,
-										["m_crit"] = 0,
 										["c_min"] = 0,
+										["m_crit"] = 0,
+										["m_healed"] = 0,
 										["m_amt"] = 0,
 										["n_curado"] = 886,
 										["n_amt"] = 12,
@@ -11260,16 +11269,20 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1602432425,
-							["custom"] = 0,
+							["healing_from"] = {
+								["Konac"] = true,
+								["Augustin"] = true,
+							},
 							["tipo"] = 2,
-							["spec"] = 64,
+							["custom"] = 0,
+							["last_event"] = 1602432365,
+							["start_time"] = 1602432425,
 							["totaldenied"] = 0.007647,
 							["delay"] = 1602432365,
-							["last_event"] = 1602432365,
+							["spec"] = 64,
 						}, -- [1]
 						{
 							["flag_original"] = 1304,
@@ -11289,17 +11302,24 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["totalover_without_pet"] = 0.006319,
-							["end_time"] = 1602432438,
+							["iniciar_hps"] = false,
 							["classe"] = "PRIEST",
 							["totalover"] = 14137.006319,
 							["total_without_pet"] = 4536.006319,
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["start_time"] = 1602432341,
+							["healing_taken"] = 718.006319,
 							["fight_component"] = true,
 							["total"] = 4536.006319,
-							["healing_taken"] = 718.006319,
+							["delay"] = 1602432333,
+							["end_time"] = 1602432438,
+							["nome"] = "Konac",
+							["targets_absorbs"] = {
+							},
+							["heal_enemy_amt"] = 0,
+							["need_refresh"] = true,
+							["heal_enemy"] = {
+							},
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Renew"] = {
 										["c_amt"] = 0,
@@ -11323,106 +11343,98 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["n_curado"] = 4536,
 										["n_amt"] = 52,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
-							["nome"] = "Konac",
-							["targets_absorbs"] = {
-							},
-							["start_time"] = 1602432341,
-							["need_refresh"] = true,
-							["heal_enemy"] = {
-							},
-							["serial"] = "Player-4465-00C4D96C",
 							["custom"] = 0,
 							["last_event"] = 1602432437,
 							["on_hold"] = false,
 							["totaldenied"] = 0.006319,
-							["delay"] = 1602432333,
+							["serial"] = "Player-4465-00C4D96C",
 							["tipo"] = 2,
 						}, -- [2]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 50,
 					["tipo"] = 7,
+					["combatId"] = 50,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 50,
 					["tipo"] = 9,
+					["combatId"] = 50,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Chilled"] = {
-										["activedamt"] = 0,
-										["id"] = "Chilled",
+										["appliedamt"] = 23,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 64,
-										["appliedamt"] = 23,
+										["id"] = "Chilled",
 										["refreshamt"] = 41,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blizzard"] = {
-										["activedamt"] = 0,
-										["id"] = "Blizzard",
+										["appliedamt"] = 32,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 28,
-										["appliedamt"] = 32,
+										["id"] = "Blizzard",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Cone of Cold"] = {
-										["activedamt"] = 0,
-										["id"] = "Cone of Cold",
+										["appliedamt"] = 13,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 11,
-										["appliedamt"] = 13,
+										["id"] = "Cone of Cold",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Frost Nova"] = {
-										["activedamt"] = 0,
-										["id"] = "Frost Nova",
+										["appliedamt"] = 16,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 17,
-										["appliedamt"] = 16,
+										["id"] = "Frost Nova",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 231,
 							["classe"] = "MAGE",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
-										["activedamt"] = 2,
-										["id"] = "Ice Barrier",
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 13,
-										["appliedamt"] = 2,
+										["id"] = "Ice Barrier",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -11440,28 +11452,29 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									["Arcane Intellect"] = {
-										["activedamt"] = 1,
-										["id"] = "Arcane Intellect",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 109,
-										["appliedamt"] = 1,
+										["id"] = "Arcane Intellect",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Ice Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Ice Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 109,
-										["appliedamt"] = 1,
+										["id"] = "Ice Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 120,
@@ -11479,32 +11492,32 @@ _detalhes_database = {
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1602432438,
+							["tipo"] = 4,
 							["nome"] = "Augustin",
 							["pets"] = {
 							},
 							["serial"] = "Player-4465-01D5BF39",
-							["tipo"] = 4,
+							["last_event"] = 1602432438,
 						}, -- [1]
 						{
 							["flag_original"] = 1304,
-							["tipo"] = 4,
-							["nome"] = "Konac",
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["need_refresh"] = true,
 							["last_event"] = 0,
+							["nome"] = "Konac",
+							["need_refresh"] = true,
 							["spell_cast"] = {
 								["Renew"] = 16,
 							},
-							["serial"] = "Player-4465-00C4D96C",
+							["fight_component"] = true,
 							["classe"] = "PRIEST",
+							["tipo"] = 4,
+							["serial"] = "Player-4465-00C4D96C",
+							["pets"] = {
+							},
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
-							["nome"] = "Southsea Dock Worker",
 							["tipo"] = 4,
+							["nome"] = "Southsea Dock Worker",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -11519,8 +11532,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 50,
 					["tipo"] = 2,
+					["combatId"] = 50,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -11529,13 +11542,10 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 156715.795,
 				["tempo_start"] = 1602432329,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Southsea Dock Worker",
 				["combat_counter"] = 6377,
 				["playing_solo"] = true,
 				["totals"] = {
@@ -11551,10 +11561,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -11563,9 +11573,14 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "18:07:19",
+				["cleu_timeline"] = {
 				},
+				["enemy"] = "Southsea Dock Worker",
+				["TotalElapsedCombatTime"] = 156618.138,
 				["CombatEndedAt"] = 156618.138,
 				["aura_timeline"] = {
 				},
@@ -11573,6 +11588,15 @@ _detalhes_database = {
 				},
 				["data_inicio"] = "18:05:30",
 				["end_time"] = 156618.138,
+				["combat_id"] = 50,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Southsea Dock Worker"] = 8,
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["totals_grupo"] = {
 					18732, -- [1]
 					886, -- [2]
@@ -11586,22 +11610,27 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 50,
-				["TotalElapsedCombatTime"] = 156618.138,
-				["frags_need_refresh"] = true,
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Southsea Dock Worker",
+				["start_time"] = 156508.711,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -11609,32 +11638,17 @@ _detalhes_database = {
 							["Augustin"] = 886.007647,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Augustin"] = 18732.005979,
 						}, -- [1]
 					},
 				},
-				["frags"] = {
-					["Southsea Dock Worker"] = 8,
-				},
-				["data_fim"] = "18:07:19",
-				["instance_type"] = "none",
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 156508.711,
-				["contra"] = "Southsea Dock Worker",
-				["TimeData"] = {
-				},
 			}, -- [14]
 			{
 				{
-					["combatId"] = 49,
 					["tipo"] = 2,
+					["combatId"] = 49,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 68168,
@@ -11649,20 +11663,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4447-1-41-7858-0000032CE4",
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 753.003102,
+							["serial"] = "Creature-0-4447-1-41-7858-0000032CE4",
 							["monster"] = true,
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["total"] = 753.003102,
 							["end_time"] = 1602432276,
-							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["on_hold"] = false,
 							["nome"] = "Southsea Swashbuckler",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -11686,13 +11699,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 10,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Disarm"] = {
 										["c_amt"] = 0,
@@ -11714,53 +11727,53 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["m_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["on_hold"] = false,
+							["last_event"] = 1602432269,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1602432269,
+							["tipo"] = 1,
 							["damage_taken"] = 2225.003102,
 							["start_time"] = 1602432245,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["total"] = 753.003102,
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
 							["totalabsorbed"] = 0.005204,
-							["spec"] = 64,
 							["damage_from"] = {
 								["Southsea Swashbuckler"] = true,
 							},
 							["targets"] = {
 								["Southsea Swashbuckler"] = 413,
 							},
+							["serial"] = "Player-4465-01D5BF39",
 							["pets"] = {
 							},
 							["colocacao"] = 1,
-							["end_time"] = 1602432276,
+							["total"] = 413.005204,
 							["classe"] = "MAGE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 413.005204,
+							["spec"] = 64,
+							["dps_started"] = false,
+							["end_time"] = 1602432276,
 							["friendlyfire"] = {
 							},
-							["dps_started"] = false,
-							["total"] = 413.005204,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
+							["last_event"] = 1602432275,
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["Chilled"] = {
 										["c_amt"] = 0,
@@ -11778,19 +11791,19 @@ _detalhes_database = {
 										["counter"] = 1,
 										["total"] = 0,
 										["c_max"] = 0,
-										["RESIST"] = 1,
+										["spellschool"] = 16,
 										["id"] = "Chilled",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 1,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["Polymorph"] = {
 										["c_amt"] = 0,
@@ -11808,19 +11821,19 @@ _detalhes_database = {
 										["counter"] = 1,
 										["total"] = 0,
 										["c_max"] = 0,
-										["RESIST"] = 1,
+										["spellschool"] = 64,
 										["id"] = "Polymorph",
 										["r_dmg"] = 0,
-										["spellschool"] = 64,
 										["a_dmg"] = 0,
+										["RESIST"] = 1,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["!Autoshot"] = {
 										["c_amt"] = 1,
@@ -11838,19 +11851,19 @@ _detalhes_database = {
 										["counter"] = 15,
 										["total"] = 413,
 										["c_max"] = 39,
-										["RESIST"] = 3,
+										["spellschool"] = 1,
 										["id"] = "!Autoshot",
 										["r_dmg"] = 78,
-										["spellschool"] = 1,
 										["a_dmg"] = 0,
+										["RESIST"] = 3,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 11,
-										["r_amt"] = 3,
 										["c_min"] = 39,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 11,
+										["b_dmg"] = 0,
+										["r_amt"] = 3,
 									},
 									["Fire Blast"] = {
 										["c_amt"] = 0,
@@ -11868,37 +11881,38 @@ _detalhes_database = {
 										["counter"] = 1,
 										["total"] = 0,
 										["c_max"] = 0,
-										["RESIST"] = 1,
+										["spellschool"] = 4,
 										["id"] = "Fire Blast",
 										["r_dmg"] = 0,
-										["spellschool"] = 4,
 										["a_dmg"] = 0,
+										["RESIST"] = 1,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-01D5BF39",
+							["friendlyfire_total"] = 0,
 							["last_dps"] = 14.1629300778472,
 							["custom"] = 0,
-							["last_event"] = 1602432275,
-							["damage_taken"] = 185.005204,
+							["tipo"] = 1,
+							["on_hold"] = false,
 							["start_time"] = 1602432256,
 							["delay"] = 0,
-							["tipo"] = 1,
+							["damage_taken"] = 185.005204,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 49,
 					["tipo"] = 3,
+					["combatId"] = 49,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1304,
@@ -11918,17 +11932,24 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["totalover_without_pet"] = 0.00424,
-							["end_time"] = 1602432276,
+							["iniciar_hps"] = false,
 							["classe"] = "PRIEST",
 							["totalover"] = 2867.00424,
 							["total_without_pet"] = 753.00424,
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["start_time"] = 1602432254,
+							["healing_taken"] = 568.00424,
 							["fight_component"] = true,
 							["total"] = 753.00424,
-							["healing_taken"] = 568.00424,
+							["delay"] = 0,
+							["end_time"] = 1602432276,
+							["nome"] = "Konac",
+							["targets_absorbs"] = {
+							},
+							["heal_enemy_amt"] = 0,
+							["need_refresh"] = true,
+							["heal_enemy"] = {
+							},
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Renew"] = {
 										["c_amt"] = 0,
@@ -11952,29 +11973,22 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["n_curado"] = 753,
 										["n_amt"] = 10,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
-							["nome"] = "Konac",
-							["targets_absorbs"] = {
-							},
-							["start_time"] = 1602432254,
-							["need_refresh"] = true,
-							["heal_enemy"] = {
-							},
-							["serial"] = "Player-4465-00C4D96C",
 							["custom"] = 0,
 							["last_event"] = 1602432271,
 							["on_hold"] = false,
 							["totaldenied"] = 0.00424,
-							["delay"] = 0,
+							["serial"] = "Player-4465-00C4D96C",
 							["tipo"] = 2,
 						}, -- [1]
 						{
@@ -11985,34 +11999,34 @@ _detalhes_database = {
 							},
 							["targets"] = {
 							},
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-								},
-							},
+							["classe"] = "MAGE",
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
 							["healing_from"] = {
 								["Konac"] = true,
 							},
-							["classe"] = "MAGE",
+							["healing_taken"] = 185.00829,
 							["totalover"] = 0.00829,
 							["total_without_pet"] = 0.00829,
-							["heal_enemy_amt"] = 0,
 							["totalover_without_pet"] = 0.00829,
-							["healing_taken"] = 185.00829,
+							["start_time"] = 1602432276,
+							["heal_enemy_amt"] = 0,
 							["total"] = 0.00829,
 							["end_time"] = 1602432276,
-							["start_time"] = 1602432276,
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 3,
+							},
 							["nome"] = "Augustin",
 							["targets_absorbs"] = {
 							},
 							["grupo"] = true,
-							["spec"] = 64,
+							["serial"] = "Player-4465-01D5BF39",
 							["heal_enemy"] = {
 							},
-							["serial"] = "Player-4465-01D5BF39",
+							["spec"] = 64,
 							["custom"] = 0,
 							["tipo"] = 2,
 							["on_hold"] = false,
@@ -12023,61 +12037,62 @@ _detalhes_database = {
 					},
 				}, -- [2]
 				{
-					["combatId"] = 49,
 					["tipo"] = 7,
+					["combatId"] = 49,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 49,
 					["tipo"] = 9,
+					["combatId"] = 49,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Chilled"] = {
-										["activedamt"] = 0,
-										["id"] = "Chilled",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 8,
-										["appliedamt"] = 1,
+										["id"] = "Chilled",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
-							["buff_uptime"] = 62,
+							["pets"] = {
+							},
 							["classe"] = "MAGE",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Arcane Intellect"] = {
-										["activedamt"] = 1,
-										["id"] = "Arcane Intellect",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 31,
-										["appliedamt"] = 1,
+										["id"] = "Arcane Intellect",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Ice Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Ice Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 31,
-										["appliedamt"] = 1,
+										["id"] = "Ice Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["debuff_uptime"] = 8,
 							["buff_uptime_targets"] = {
@@ -12089,37 +12104,36 @@ _detalhes_database = {
 								["Shoot"] = 15,
 								["Fire Blast"] = 1,
 							},
-							["debuff_uptime_targets"] = {
-							},
+							["buff_uptime"] = 62,
 							["last_event"] = 1602432276,
 							["nome"] = "Augustin",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-01D5BF39",
 							["tipo"] = 4,
+							["serial"] = "Player-4465-01D5BF39",
+							["debuff_uptime_targets"] = {
+							},
 						}, -- [1]
 						{
 							["flag_original"] = 1304,
-							["tipo"] = 4,
-							["nome"] = "Konac",
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["need_refresh"] = true,
 							["last_event"] = 0,
+							["nome"] = "Konac",
+							["need_refresh"] = true,
 							["spell_cast"] = {
 								["Mind Blast"] = 1,
 								["Shoot"] = 3,
 								["Renew"] = 2,
 								["Smite"] = 2,
 							},
-							["serial"] = "Player-4465-00C4D96C",
+							["fight_component"] = true,
 							["classe"] = "PRIEST",
+							["tipo"] = 4,
+							["serial"] = "Player-4465-00C4D96C",
+							["pets"] = {
+							},
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
-							["nome"] = "Southsea Swashbuckler",
 							["tipo"] = 4,
+							["nome"] = "Southsea Swashbuckler",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -12134,8 +12148,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 49,
 					["tipo"] = 2,
+					["combatId"] = 49,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -12144,13 +12158,10 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 156507.504,
 				["tempo_start"] = 1602432245,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Southsea Swashbuckler",
 				["combat_counter"] = 6376,
 				["playing_solo"] = true,
 				["totals"] = {
@@ -12166,10 +12177,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -12178,9 +12189,14 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "18:04:37",
+				["cleu_timeline"] = {
 				},
+				["enemy"] = "Southsea Swashbuckler",
+				["TotalElapsedCombatTime"] = 156456.058,
 				["CombatEndedAt"] = 156456.058,
 				["aura_timeline"] = {
 				},
@@ -12188,6 +12204,15 @@ _detalhes_database = {
 				},
 				["data_inicio"] = "18:04:06",
 				["end_time"] = 156456.058,
+				["combat_id"] = 49,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Southsea Swashbuckler"] = 1,
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["totals_grupo"] = {
 					413, -- [1]
 					0, -- [2]
@@ -12201,22 +12226,27 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 49,
-				["TotalElapsedCombatTime"] = 156456.058,
-				["frags_need_refresh"] = true,
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Southsea Swashbuckler",
+				["start_time"] = 156425.197,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -12224,32 +12254,17 @@ _detalhes_database = {
 							["Augustin"] = 0.00829,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Augustin"] = 413.005204,
 						}, -- [1]
 					},
 				},
-				["frags"] = {
-					["Southsea Swashbuckler"] = 1,
-				},
-				["data_fim"] = "18:04:37",
-				["instance_type"] = "none",
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 156425.197,
-				["contra"] = "Southsea Swashbuckler",
-				["TimeData"] = {
-				},
 			}, -- [15]
 			{
 				{
-					["combatId"] = 48,
 					["tipo"] = 2,
+					["combatId"] = 48,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 2632,
@@ -12263,19 +12278,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["fight_component"] = true,
+							["total"] = 8470.007396,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 8470.007396,
-							["monster"] = true,
-							["fight_component"] = true,
+							["serial"] = "Creature-0-4447-1-41-7857-0000032BA1",
 							["dps_started"] = false,
 							["end_time"] = 1602432226,
 							["friendlyfire_total"] = 0,
 							["on_hold"] = false,
 							["nome"] = "Southsea Dock Worker",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 7,
@@ -12298,16 +12313,16 @@ _detalhes_database = {
 										["MISS"] = 8,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["a_dmg"] = 355,
 										["m_crit"] = 0,
-										["a_amt"] = 4,
 										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 97,
-										["r_amt"] = 0,
 										["c_min"] = 126,
+										["successful_casted"] = 0,
+										["a_amt"] = 4,
+										["n_amt"] = 97,
+										["spellschool"] = 1,
+										["r_amt"] = 0,
 									},
 									["Head Crack"] = {
 										["c_amt"] = 0,
@@ -12330,27 +12345,27 @@ _detalhes_database = {
 										["DODGE"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 6,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["total"] = 8470.007396,
-							["serial"] = "Creature-0-4447-1-41-7857-0000032BA1",
+							["last_event"] = 1602432222,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1602432222,
+							["tipo"] = 1,
 							["damage_taken"] = 18266.007396,
 							["start_time"] = 1602432086,
 							["delay"] = 1602432104,
-							["tipo"] = 1,
+							["monster"] = true,
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
@@ -12364,24 +12379,23 @@ _detalhes_database = {
 								["Southsea Dock Worker"] = 18266,
 								["Southsea Pirate"] = 2289,
 							},
-							["total"] = 20555.003427,
+							["serial"] = "Player-4465-01D5BF39",
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["classe"] = "MAGE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 20555.003427,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1602432226,
-							["friendlyfire_total"] = 0,
 							["spec"] = 64,
+							["dps_started"] = false,
+							["total"] = 20555.003427,
+							["on_hold"] = false,
+							["last_event"] = 1602432225,
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["Chilled"] = {
 										["c_amt"] = 0,
@@ -12400,19 +12414,80 @@ _detalhes_database = {
 										["counter"] = 11,
 										["total"] = 0,
 										["c_max"] = 0,
-										["RESIST"] = 11,
+										["spellschool"] = 16,
 										["id"] = "Chilled",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 11,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
 										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									["Cone of Cold"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 315,
+										["targets"] = {
+											["Southsea Dock Worker"] = 8214,
+											["Southsea Pirate"] = 903,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 9117,
+										["n_min"] = 289,
+										["g_dmg"] = 0,
+										["counter"] = 36,
+										["total"] = 9117,
+										["c_max"] = 0,
+										["spellschool"] = 16,
+										["id"] = "Cone of Cold",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["RESIST"] = 6,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 30,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Southsea Dock Worker"] = 0,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 0,
+										["c_max"] = 0,
+										["a_amt"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["m_amt"] = 0,
+										["m_crit"] = 0,
+										["PARRY"] = 1,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["a_dmg"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Arcane Explosion"] = {
 										["c_amt"] = 0,
@@ -12436,73 +12511,13 @@ _detalhes_database = {
 										["spellschool"] = 64,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 3,
+										["a_amt"] = 0,
 										["r_amt"] = 1,
-										["c_min"] = 0,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Southsea Dock Worker"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["a_amt"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["PARRY"] = 1,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 38,
-										["targets"] = {
-											["Southsea Dock Worker"] = 166,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 166,
-										["n_min"] = 20,
-										["g_dmg"] = 0,
-										["counter"] = 7,
-										["total"] = 166,
-										["c_max"] = 0,
-										["RESIST"] = 1,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 128,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["r_amt"] = 5,
-										["c_min"] = 0,
 									},
 									["Frost Nova"] = {
 										["c_amt"] = 0,
@@ -12521,19 +12536,19 @@ _detalhes_database = {
 										["counter"] = 40,
 										["total"] = 842,
 										["c_max"] = 0,
-										["RESIST"] = 4,
+										["spellschool"] = 16,
 										["id"] = "Frost Nova",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 4,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 36,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 36,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["Blizzard"] = {
 										["c_amt"] = 0,
@@ -12557,44 +12572,43 @@ _detalhes_database = {
 										["spellschool"] = 16,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 148,
+										["a_amt"] = 0,
 										["r_amt"] = 20,
-										["c_min"] = 0,
 									},
-									["Cone of Cold"] = {
+									["!Autoshot"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 315,
+										["n_max"] = 38,
 										["targets"] = {
-											["Southsea Dock Worker"] = 8214,
-											["Southsea Pirate"] = 903,
+											["Southsea Dock Worker"] = 166,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 9117,
-										["n_min"] = 289,
+										["n_dmg"] = 166,
+										["n_min"] = 20,
 										["g_dmg"] = 0,
-										["counter"] = 36,
-										["total"] = 9117,
+										["counter"] = 7,
+										["total"] = 166,
 										["c_max"] = 0,
-										["RESIST"] = 6,
-										["id"] = "Cone of Cold",
-										["r_dmg"] = 0,
-										["spellschool"] = 16,
+										["spellschool"] = 1,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 128,
 										["a_dmg"] = 0,
+										["RESIST"] = 1,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 30,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 6,
+										["b_dmg"] = 0,
+										["r_amt"] = 5,
 									},
 									["Fire Blast"] = {
 										["c_amt"] = 0,
@@ -12617,25 +12631,26 @@ _detalhes_database = {
 										["spellschool"] = 4,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 1,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-01D5BF39",
+							["end_time"] = 1602432226,
 							["last_dps"] = 133.925394198631,
 							["custom"] = 0,
-							["last_event"] = 1602432225,
+							["tipo"] = 1,
 							["damage_taken"] = 6661.003427,
 							["start_time"] = 1602432111,
 							["delay"] = 1602432167,
-							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
 						}, -- [2]
 						{
 							["flag_original"] = -2147483648,
@@ -12647,19 +12662,18 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["fight_component"] = true,
+							["tipo"] = 1,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 159.008919,
-							["on_hold"] = false,
 							["dps_started"] = false,
+							["fight_component"] = true,
 							["total"] = 159.008919,
-							["classe"] = "UNKNOW",
 							["serial"] = "",
+							["damage_taken"] = 0.008919,
 							["nome"] = "Environment (Falling)",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["Falling"] = {
 										["c_amt"] = 0,
@@ -12682,26 +12696,27 @@ _detalhes_database = {
 										["spellschool"] = 3,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["friendlyfire"] = {
-							},
+							["on_hold"] = false,
 							["end_time"] = 1602432226,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.008919,
+							["last_event"] = 1602432076,
+							["friendlyfire"] = {
+							},
 							["start_time"] = 1602432225,
 							["delay"] = 1602432076,
-							["last_event"] = 1602432076,
+							["classe"] = "UNKNOW",
 						}, -- [3]
 						{
 							["flag_original"] = 68168,
@@ -12715,19 +12730,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["fight_component"] = true,
+							["total"] = 1282.006388,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 1282.006388,
-							["monster"] = true,
-							["fight_component"] = true,
+							["serial"] = "Creature-0-4447-1-41-7855-0000032B0F",
 							["dps_started"] = false,
 							["end_time"] = 1602432226,
 							["friendlyfire_total"] = 0,
 							["on_hold"] = false,
 							["nome"] = "Southsea Pirate",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -12750,16 +12765,16 @@ _detalhes_database = {
 										["MISS"] = 1,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 15,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 15,
+										["spellschool"] = 1,
+										["r_amt"] = 0,
 									},
 									["Strike"] = {
 										["c_amt"] = 0,
@@ -12782,33 +12797,33 @@ _detalhes_database = {
 										["MISS"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["total"] = 1282.006388,
-							["serial"] = "Creature-0-4447-1-41-7855-0000032B0F",
+							["last_event"] = 1602432220,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1602432220,
+							["tipo"] = 1,
 							["damage_taken"] = 2289.006388,
 							["start_time"] = 1602432184,
 							["delay"] = 1602432190,
-							["tipo"] = 1,
+							["monster"] = true,
 						}, -- [4]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 48,
 					["tipo"] = 3,
+					["combatId"] = 48,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -12817,7 +12832,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "MAGE",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 0.005265,
 							["total_without_pet"] = 377.005265,
 							["total"] = 377.005265,
@@ -12838,13 +12853,9 @@ _detalhes_database = {
 							["healing_taken"] = 6513.005265,
 							["fight_component"] = true,
 							["end_time"] = 1602432226,
-							["healing_from"] = {
-								["Konac"] = true,
-								["Augustin"] = true,
-							},
+							["classe"] = "MAGE",
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
 										["c_amt"] = 0,
@@ -12864,10 +12875,10 @@ _detalhes_database = {
 										["targets_absorbs"] = {
 											["Augustin"] = 377,
 										},
-										["m_healed"] = 0,
 										["c_curado"] = 0,
-										["m_crit"] = 0,
 										["c_min"] = 0,
+										["m_crit"] = 0,
+										["m_healed"] = 0,
 										["m_amt"] = 0,
 										["n_curado"] = 377,
 										["n_amt"] = 5,
@@ -12876,16 +12887,20 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1602432221,
-							["custom"] = 0,
+							["healing_from"] = {
+								["Konac"] = true,
+								["Augustin"] = true,
+							},
 							["tipo"] = 2,
-							["spec"] = 64,
+							["custom"] = 0,
+							["last_event"] = 1602432075,
+							["start_time"] = 1602432221,
 							["totaldenied"] = 0.005265,
 							["delay"] = 1602432075,
-							["last_event"] = 1602432075,
+							["spec"] = 64,
 						}, -- [1]
 						{
 							["flag_original"] = 1304,
@@ -12905,17 +12920,24 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["totalover_without_pet"] = 0.002649,
-							["end_time"] = 1602432226,
+							["iniciar_hps"] = false,
 							["classe"] = "PRIEST",
 							["totalover"] = 16546.002649,
 							["total_without_pet"] = 9407.002649,
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["start_time"] = 1602432087,
+							["healing_taken"] = 3271.002649,
 							["fight_component"] = true,
 							["total"] = 9407.002649,
-							["healing_taken"] = 3271.002649,
+							["delay"] = 0,
+							["end_time"] = 1602432226,
+							["nome"] = "Konac",
+							["targets_absorbs"] = {
+							},
+							["heal_enemy_amt"] = 0,
+							["need_refresh"] = true,
+							["heal_enemy"] = {
+							},
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Renew"] = {
 										["c_amt"] = 0,
@@ -12939,36 +12961,29 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["n_curado"] = 9407,
 										["n_amt"] = 72,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
-							["nome"] = "Konac",
-							["targets_absorbs"] = {
-							},
-							["start_time"] = 1602432087,
-							["need_refresh"] = true,
-							["heal_enemy"] = {
-							},
-							["serial"] = "Player-4465-00C4D96C",
 							["custom"] = 0,
 							["last_event"] = 1602432226,
 							["on_hold"] = false,
 							["totaldenied"] = 0.002649,
-							["delay"] = 0,
+							["serial"] = "Player-4465-00C4D96C",
 							["tipo"] = 2,
 						}, -- [2]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 48,
 					["tipo"] = 7,
+					["combatId"] = 48,
 					["_ActorTable"] = {
 						{
 							["received"] = 1169.007368,
@@ -12985,7 +13000,6 @@ _detalhes_database = {
 							["total"] = 1169.007368,
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									["Replenish Mana"] = {
 										["total"] = 410,
@@ -13006,6 +13020,7 @@ _detalhes_database = {
 										["counter"] = 1,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["flag_original"] = 1297,
@@ -13019,13 +13034,12 @@ _detalhes_database = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 48,
 					["tipo"] = 9,
+					["combatId"] = 48,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Chilled"] = {
 										["activedamt"] = -1,
@@ -13040,85 +13054,85 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 									["Blizzard"] = {
-										["activedamt"] = 0,
-										["id"] = "Blizzard",
+										["appliedamt"] = 35,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 28,
-										["appliedamt"] = 35,
+										["id"] = "Blizzard",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Cone of Cold"] = {
-										["activedamt"] = 0,
-										["id"] = "Cone of Cold",
+										["appliedamt"] = 23,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 68,
-										["appliedamt"] = 23,
+										["id"] = "Cone of Cold",
 										["refreshamt"] = 1,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Frost Nova"] = {
-										["activedamt"] = 0,
-										["id"] = "Frost Nova",
+										["appliedamt"] = 28,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 37,
-										["appliedamt"] = 28,
+										["id"] = "Frost Nova",
 										["refreshamt"] = 8,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 315,
 							["classe"] = "MAGE",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
-										["activedamt"] = 1,
-										["id"] = "Ice Barrier",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 4,
-										["appliedamt"] = 1,
+										["id"] = "Ice Barrier",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blink"] = {
-										["activedamt"] = 1,
-										["id"] = "Blink",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = "Blink",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Arcane Intellect"] = {
-										["activedamt"] = 1,
-										["id"] = "Arcane Intellect",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 155,
-										["appliedamt"] = 1,
+										["id"] = "Arcane Intellect",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Ice Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Ice Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 155,
-										["appliedamt"] = 1,
+										["id"] = "Ice Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -13136,6 +13150,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 264,
@@ -13152,37 +13167,37 @@ _detalhes_database = {
 								["Cold Snap"] = 1,
 								["Frost Nova"] = 5,
 								["Shoot"] = 7,
-								["Cone of Cold"] = 8,
 								["Restore Mana"] = 1,
+								["Cone of Cold"] = 8,
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1602432226,
+							["tipo"] = 4,
 							["nome"] = "Augustin",
 							["pets"] = {
 							},
 							["serial"] = "Player-4465-01D5BF39",
-							["tipo"] = 4,
+							["last_event"] = 1602432226,
 						}, -- [1]
 						{
 							["flag_original"] = 1304,
-							["tipo"] = 4,
-							["nome"] = "Konac",
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["need_refresh"] = true,
 							["last_event"] = 0,
+							["nome"] = "Konac",
+							["need_refresh"] = true,
 							["spell_cast"] = {
 								["Renew"] = 22,
 							},
-							["serial"] = "Player-4465-00C4D96C",
+							["fight_component"] = true,
 							["classe"] = "PRIEST",
+							["tipo"] = 4,
+							["serial"] = "Player-4465-00C4D96C",
+							["pets"] = {
+							},
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
-							["nome"] = "Southsea Pirate",
 							["tipo"] = 4,
+							["nome"] = "Southsea Pirate",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -13196,8 +13211,8 @@ _detalhes_database = {
 						}, -- [3]
 						{
 							["flag_original"] = 2632,
-							["nome"] = "Southsea Dock Worker",
 							["tipo"] = 4,
+							["nome"] = "Southsea Dock Worker",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -13212,8 +13227,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 48,
 					["tipo"] = 2,
+					["combatId"] = 48,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -13222,13 +13237,10 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 156422.755,
 				["tempo_start"] = 1602432071,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Southsea Dock Worker",
 				["combat_counter"] = 6375,
 				["playing_solo"] = true,
 				["totals"] = {
@@ -13244,10 +13256,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -13256,9 +13268,14 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "18:03:47",
+				["cleu_timeline"] = {
 				},
+				["enemy"] = "Southsea Dock Worker",
+				["TotalElapsedCombatTime"] = 156405.756,
 				["CombatEndedAt"] = 156405.756,
 				["aura_timeline"] = {
 				},
@@ -13266,6 +13283,16 @@ _detalhes_database = {
 				},
 				["data_inicio"] = "18:01:12",
 				["end_time"] = 156405.756,
+				["combat_id"] = 48,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Southsea Dock Worker"] = 8,
+					["Southsea Pirate"] = 1,
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["totals_grupo"] = {
 					20555, -- [1]
 					377, -- [2]
@@ -13279,22 +13306,27 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 48,
-				["TotalElapsedCombatTime"] = 156405.756,
-				["frags_need_refresh"] = true,
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Southsea Dock Worker",
+				["start_time"] = 156251.385,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -13302,33 +13334,17 @@ _detalhes_database = {
 							["Augustin"] = 377.005265,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Augustin"] = 20555.003427,
 						}, -- [1]
 					},
 				},
-				["frags"] = {
-					["Southsea Dock Worker"] = 8,
-					["Southsea Pirate"] = 1,
-				},
-				["data_fim"] = "18:03:47",
-				["instance_type"] = "none",
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 156251.385,
-				["contra"] = "Southsea Dock Worker",
-				["TimeData"] = {
-				},
 			}, -- [16]
 			{
 				{
-					["combatId"] = 47,
 					["tipo"] = 2,
+					["combatId"] = 47,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -13340,24 +13356,23 @@ _detalhes_database = {
 							["targets"] = {
 								["Southsea Swashbuckler"] = 20089,
 							},
-							["total"] = 20089.008227,
+							["serial"] = "Player-4465-01D5BF39",
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["classe"] = "MAGE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 20089.008227,
-							["colocacao"] = 1,
-							["friendlyfire"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1602431986,
-							["friendlyfire_total"] = 0,
 							["spec"] = 64,
+							["dps_started"] = false,
+							["total"] = 20089.008227,
+							["on_hold"] = false,
+							["last_event"] = 1602431985,
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["Blizzard"] = {
 										["c_amt"] = 0,
@@ -13380,13 +13395,13 @@ _detalhes_database = {
 										["spellschool"] = 16,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 146,
+										["a_amt"] = 0,
 										["r_amt"] = 17,
-										["c_min"] = 0,
 									},
 									["Frostbolt"] = {
 										["c_amt"] = 0,
@@ -13409,13 +13424,13 @@ _detalhes_database = {
 										["spellschool"] = 16,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Arcane Explosion"] = {
 										["c_amt"] = 0,
@@ -13438,13 +13453,13 @@ _detalhes_database = {
 										["spellschool"] = 64,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 5,
+										["a_amt"] = 0,
 										["r_amt"] = 1,
-										["c_min"] = 0,
 									},
 									["Fire Blast"] = {
 										["c_amt"] = 0,
@@ -13462,19 +13477,19 @@ _detalhes_database = {
 										["counter"] = 3,
 										["total"] = 544,
 										["c_max"] = 0,
-										["RESIST"] = 1,
+										["spellschool"] = 4,
 										["id"] = "Fire Blast",
 										["r_dmg"] = 0,
-										["spellschool"] = 4,
 										["a_dmg"] = 0,
+										["RESIST"] = 1,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["Chilled"] = {
 										["c_amt"] = 0,
@@ -13492,19 +13507,19 @@ _detalhes_database = {
 										["counter"] = 7,
 										["total"] = 0,
 										["c_max"] = 0,
-										["RESIST"] = 7,
+										["spellschool"] = 16,
 										["id"] = "Chilled",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 7,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -13527,13 +13542,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 									["Frost Nova"] = {
 										["c_amt"] = 0,
@@ -13551,19 +13566,19 @@ _detalhes_database = {
 										["counter"] = 27,
 										["total"] = 544,
 										["c_max"] = 0,
-										["RESIST"] = 4,
+										["spellschool"] = 16,
 										["id"] = "Frost Nova",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 4,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 23,
-										["r_amt"] = 0,
 										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 23,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["Cone of Cold"] = {
 										["c_amt"] = 2,
@@ -13581,19 +13596,19 @@ _detalhes_database = {
 										["counter"] = 30,
 										["total"] = 8295,
 										["c_max"] = 563,
-										["RESIST"] = 4,
+										["spellschool"] = 16,
 										["id"] = "Cone of Cold",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 4,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 24,
-										["r_amt"] = 0,
 										["c_min"] = 547,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 24,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
 									},
 									["!Autoshot"] = {
 										["c_amt"] = 1,
@@ -13611,31 +13626,32 @@ _detalhes_database = {
 										["counter"] = 9,
 										["total"] = 279,
 										["c_max"] = 68,
-										["RESIST"] = 2,
+										["spellschool"] = 1,
 										["id"] = "!Autoshot",
 										["r_dmg"] = 49,
-										["spellschool"] = 1,
 										["a_dmg"] = 0,
+										["RESIST"] = 2,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["r_amt"] = 2,
 										["c_min"] = 68,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 6,
+										["b_dmg"] = 0,
+										["r_amt"] = 2,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-01D5BF39",
+							["end_time"] = 1602431986,
 							["last_dps"] = 174.991360862387,
 							["custom"] = 0,
-							["last_event"] = 1602431985,
+							["tipo"] = 1,
 							["damage_taken"] = 4736.008227,
 							["start_time"] = 1602431902,
 							["delay"] = 1602431886,
-							["tipo"] = 1,
+							["friendlyfire_total"] = 0,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
@@ -13649,19 +13665,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["fight_component"] = true,
+							["total"] = 6463.0064,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 6463.0064,
-							["monster"] = true,
-							["fight_component"] = true,
+							["serial"] = "Creature-0-4447-1-41-7858-0000032B1F",
 							["dps_started"] = false,
 							["end_time"] = 1602431986,
 							["friendlyfire_total"] = 0,
 							["on_hold"] = false,
 							["nome"] = "Southsea Swashbuckler",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 4,
@@ -13684,16 +13700,16 @@ _detalhes_database = {
 										["DODGE"] = 2,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["a_dmg"] = 72,
 										["m_crit"] = 0,
-										["a_amt"] = 1,
 										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 77,
-										["r_amt"] = 0,
 										["c_min"] = 147,
+										["successful_casted"] = 0,
+										["a_amt"] = 1,
+										["n_amt"] = 77,
+										["spellschool"] = 1,
+										["r_amt"] = 0,
 									},
 									["Disarm"] = {
 										["c_amt"] = 0,
@@ -13715,32 +13731,32 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 5,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["m_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["total"] = 6463.0064,
-							["serial"] = "Creature-0-4447-1-41-7858-0000032B1F",
+							["last_event"] = 1602431983,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1602431983,
+							["tipo"] = 1,
 							["damage_taken"] = 20089.0064,
 							["start_time"] = 1602431892,
 							["delay"] = 1602431913,
-							["tipo"] = 1,
+							["monster"] = true,
 						}, -- [2]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 47,
 					["tipo"] = 3,
+					["combatId"] = 47,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1304,
@@ -13760,17 +13776,24 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["totalover_without_pet"] = 0.006757,
-							["end_time"] = 1602431986,
+							["iniciar_hps"] = false,
 							["classe"] = "PRIEST",
 							["totalover"] = 9731.006757,
 							["total_without_pet"] = 5235.006757,
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["start_time"] = 1602431889,
+							["healing_taken"] = 1793.006757,
 							["fight_component"] = true,
 							["total"] = 5235.006757,
-							["healing_taken"] = 1793.006757,
+							["delay"] = 1602431945,
+							["end_time"] = 1602431986,
+							["nome"] = "Konac",
+							["targets_absorbs"] = {
+							},
+							["heal_enemy_amt"] = 0,
+							["need_refresh"] = true,
+							["heal_enemy"] = {
+							},
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Renew"] = {
 										["c_amt"] = 0,
@@ -13794,29 +13817,22 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["n_curado"] = 5235,
 										["n_amt"] = 42,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
-							["nome"] = "Konac",
-							["targets_absorbs"] = {
-							},
-							["start_time"] = 1602431889,
-							["need_refresh"] = true,
-							["heal_enemy"] = {
-							},
-							["serial"] = "Player-4465-00C4D96C",
 							["custom"] = 0,
 							["last_event"] = 1602431977,
 							["on_hold"] = false,
 							["totaldenied"] = 0.006757,
-							["delay"] = 1602431945,
+							["serial"] = "Player-4465-00C4D96C",
 							["tipo"] = 2,
 						}, -- [1]
 						{
@@ -13826,7 +13842,7 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "MAGE",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 0.003329,
 							["total_without_pet"] = 886.003329,
 							["total"] = 886.003329,
@@ -13847,13 +13863,9 @@ _detalhes_database = {
 							["healing_taken"] = 4328.003329,
 							["fight_component"] = true,
 							["end_time"] = 1602431986,
-							["healing_from"] = {
-								["Konac"] = true,
-								["Augustin"] = true,
-							},
+							["classe"] = "MAGE",
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
 										["c_amt"] = 0,
@@ -13873,10 +13885,10 @@ _detalhes_database = {
 										["targets_absorbs"] = {
 											["Augustin"] = 886,
 										},
-										["m_healed"] = 0,
 										["c_curado"] = 0,
-										["m_crit"] = 0,
 										["c_min"] = 0,
+										["m_crit"] = 0,
+										["m_healed"] = 0,
 										["m_amt"] = 0,
 										["n_curado"] = 886,
 										["n_amt"] = 12,
@@ -13885,22 +13897,26 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1602431974,
-							["custom"] = 0,
+							["healing_from"] = {
+								["Konac"] = true,
+								["Augustin"] = true,
+							},
 							["tipo"] = 2,
-							["spec"] = 64,
+							["custom"] = 0,
+							["last_event"] = 1602431905,
+							["start_time"] = 1602431974,
 							["totaldenied"] = 0.003329,
 							["delay"] = 1602431905,
-							["last_event"] = 1602431905,
+							["spec"] = 64,
 						}, -- [2]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 47,
 					["tipo"] = 7,
+					["combatId"] = 47,
 					["_ActorTable"] = {
 						{
 							["received"] = 1513.005653,
@@ -13917,7 +13933,6 @@ _detalhes_database = {
 							["total"] = 1513.005653,
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 7,
 								["_ActorTable"] = {
 									["Replenish Mana"] = {
 										["total"] = 622,
@@ -13938,6 +13953,7 @@ _detalhes_database = {
 										["counter"] = 1,
 									},
 								},
+								["tipo"] = 7,
 							},
 							["grupo"] = true,
 							["flag_original"] = 1297,
@@ -13951,116 +13967,115 @@ _detalhes_database = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 47,
 					["tipo"] = 9,
+					["combatId"] = 47,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Chilled"] = {
-										["activedamt"] = 0,
-										["id"] = "Chilled",
+										["appliedamt"] = 30,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 88,
-										["appliedamt"] = 30,
+										["id"] = "Chilled",
 										["refreshamt"] = 12,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Frost Nova"] = {
-										["activedamt"] = 0,
-										["id"] = "Frost Nova",
+										["appliedamt"] = 23,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 24,
-										["appliedamt"] = 23,
+										["id"] = "Frost Nova",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Frostbolt"] = {
-										["activedamt"] = 0,
-										["id"] = "Frostbolt",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 7,
-										["appliedamt"] = 1,
+										["id"] = "Frostbolt",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Cone of Cold"] = {
-										["activedamt"] = 0,
-										["id"] = "Cone of Cold",
+										["appliedamt"] = 18,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 38,
-										["appliedamt"] = 18,
+										["id"] = "Cone of Cold",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blizzard"] = {
-										["activedamt"] = 0,
-										["id"] = "Blizzard",
+										["appliedamt"] = 30,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 25,
-										["appliedamt"] = 30,
+										["id"] = "Blizzard",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 245,
 							["classe"] = "MAGE",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
-										["activedamt"] = 2,
-										["id"] = "Ice Barrier",
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 13,
-										["appliedamt"] = 2,
+										["id"] = "Ice Barrier",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blink"] = {
-										["activedamt"] = 2,
-										["id"] = "Blink",
+										["appliedamt"] = 2,
 										["targets"] = {
 										},
+										["activedamt"] = 2,
 										["uptime"] = 2,
-										["appliedamt"] = 2,
+										["id"] = "Blink",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Arcane Intellect"] = {
-										["activedamt"] = 1,
-										["id"] = "Arcane Intellect",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 115,
-										["appliedamt"] = 1,
+										["id"] = "Arcane Intellect",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Ice Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Ice Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 115,
-										["appliedamt"] = 1,
+										["id"] = "Ice Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -14078,6 +14093,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 182,
@@ -14094,38 +14110,38 @@ _detalhes_database = {
 								["Replenish Mana"] = 1,
 								["Blink"] = 2,
 								["Frost Nova"] = 3,
-								["Restore Mana"] = 1,
 								["Cone of Cold"] = 5,
+								["Restore Mana"] = 1,
 								["Shoot"] = 9,
 							},
 							["debuff_uptime_targets"] = {
 							},
-							["last_event"] = 1602431986,
+							["tipo"] = 4,
 							["nome"] = "Augustin",
 							["pets"] = {
 							},
 							["serial"] = "Player-4465-01D5BF39",
-							["tipo"] = 4,
+							["last_event"] = 1602431986,
 						}, -- [1]
 						{
 							["flag_original"] = 1304,
-							["tipo"] = 4,
-							["nome"] = "Konac",
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["need_refresh"] = true,
 							["last_event"] = 0,
+							["nome"] = "Konac",
+							["need_refresh"] = true,
 							["spell_cast"] = {
 								["Renew"] = 10,
 							},
-							["serial"] = "Player-4465-00C4D96C",
+							["fight_component"] = true,
 							["classe"] = "PRIEST",
+							["tipo"] = 4,
+							["serial"] = "Player-4465-00C4D96C",
+							["pets"] = {
+							},
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
-							["nome"] = "Southsea Swashbuckler",
 							["tipo"] = 4,
+							["nome"] = "Southsea Swashbuckler",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -14140,8 +14156,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 47,
 					["tipo"] = 2,
+					["combatId"] = 47,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -14150,13 +14166,10 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 156244.883,
 				["tempo_start"] = 1602431871,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Southsea Swashbuckler",
 				["combat_counter"] = 6374,
 				["playing_solo"] = true,
 				["totals"] = {
@@ -14172,10 +14185,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -14261,9 +14274,14 @@ _detalhes_database = {
 						["n"] = 2,
 					},
 				},
-				["cleu_events"] = {
-					["n"] = 1,
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "17:59:47",
+				["cleu_timeline"] = {
 				},
+				["enemy"] = "Southsea Swashbuckler",
+				["TotalElapsedCombatTime"] = 156165.862,
 				["CombatEndedAt"] = 156165.862,
 				["aura_timeline"] = {
 				},
@@ -14271,6 +14289,15 @@ _detalhes_database = {
 				},
 				["data_inicio"] = "17:57:52",
 				["end_time"] = 156165.862,
+				["combat_id"] = 47,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Southsea Swashbuckler"] = 9,
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["totals_grupo"] = {
 					20089, -- [1]
 					886, -- [2]
@@ -14284,22 +14311,27 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 47,
-				["TotalElapsedCombatTime"] = 156165.862,
-				["frags_need_refresh"] = true,
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Southsea Swashbuckler",
+				["start_time"] = 156051.062,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -14307,32 +14339,17 @@ _detalhes_database = {
 							["Augustin"] = 886.003329,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Augustin"] = 20089.008227,
 						}, -- [1]
 					},
 				},
-				["frags"] = {
-					["Southsea Swashbuckler"] = 9,
-				},
-				["data_fim"] = "17:59:47",
-				["instance_type"] = "none",
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 156051.062,
-				["contra"] = "Southsea Swashbuckler",
-				["TimeData"] = {
-				},
 			}, -- [17]
 			{
 				{
-					["combatId"] = 46,
 					["tipo"] = 2,
+					["combatId"] = 46,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 68168,
@@ -14348,20 +14365,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["serial"] = "Creature-0-4447-1-41-7857-0000030F73",
+							["fight_component"] = true,
+							["friendlyfire_total"] = 0,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 4452.007998,
+							["serial"] = "Creature-0-4447-1-41-7857-0000030F73",
 							["monster"] = true,
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["total"] = 4452.007998,
 							["end_time"] = 1602431812,
-							["friendlyfire_total"] = 0,
+							["dps_started"] = false,
+							["on_hold"] = false,
 							["nome"] = "Southsea Dock Worker",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 1,
@@ -14385,16 +14401,16 @@ _detalhes_database = {
 										["DODGE"] = 2,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
+										["b_dmg"] = 0,
 										["a_dmg"] = 83,
 										["m_crit"] = 0,
-										["a_amt"] = 1,
 										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 55,
-										["r_amt"] = 0,
 										["c_min"] = 131,
+										["successful_casted"] = 0,
+										["a_amt"] = 1,
+										["n_amt"] = 55,
+										["spellschool"] = 1,
+										["r_amt"] = 0,
 									},
 									["Head Crack"] = {
 										["c_amt"] = 0,
@@ -14417,26 +14433,27 @@ _detalhes_database = {
 										["MISS"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 5,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["on_hold"] = false,
+							["last_event"] = 1602431801,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1602431801,
+							["tipo"] = 1,
 							["damage_taken"] = 11963.007998,
 							["start_time"] = 1602431725,
 							["delay"] = 1602431801,
-							["tipo"] = 1,
+							["total"] = 4452.007998,
 						}, -- [1]
 						{
 							["flag_original"] = 1297,
@@ -14451,21 +14468,20 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
-							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
+							["last_event"] = 1602431811,
 							["classe"] = "MAGE",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 12740.00442,
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1602431812,
+							["serial"] = "Player-4465-01D5BF39",
 							["dps_started"] = false,
 							["total"] = 12740.00442,
-							["colocacao"] = 1,
 							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["Chilled"] = {
 										["c_amt"] = 0,
@@ -14483,171 +14499,19 @@ _detalhes_database = {
 										["counter"] = 4,
 										["total"] = 0,
 										["c_max"] = 0,
-										["RESIST"] = 4,
+										["spellschool"] = 16,
 										["id"] = "Chilled",
 										["r_dmg"] = 0,
-										["spellschool"] = 16,
 										["a_dmg"] = 0,
+										["RESIST"] = 4,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
-										["b_dmg"] = 0,
+										["m_amt"] = 0,
 										["n_amt"] = 0,
+										["b_dmg"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 48,
-										["targets"] = {
-											["Southsea Dock Worker"] = 114,
-											["Southsea Swashbuckler"] = 124,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 238,
-										["n_min"] = 23,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 238,
-										["c_max"] = 0,
-										["RESIST"] = 3,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 23,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 7,
-										["r_amt"] = 1,
-										["c_min"] = 0,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 2,
-										["n_max"] = 0,
-										["targets"] = {
-											["Southsea Dock Worker"] = 8,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 8,
-										["counter"] = 3,
-										["total"] = 8,
-										["c_max"] = 0,
-										["MISS"] = 1,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["Arcane Explosion"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 154,
-										["targets"] = {
-											["Southsea Dock Worker"] = 298,
-											["Southsea Swashbuckler"] = 154,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 452,
-										["n_min"] = 144,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 452,
-										["c_max"] = 0,
-										["id"] = "Arcane Explosion",
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["Blizzard"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 70,
-										["targets"] = {
-											["Southsea Dock Worker"] = 4848,
-											["Southsea Swashbuckler"] = 559,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 5407,
-										["n_min"] = 35,
-										["g_dmg"] = 0,
-										["counter"] = 81,
-										["total"] = 5407,
-										["c_max"] = 0,
-										["id"] = "Blizzard",
-										["r_dmg"] = 511,
-										["spellschool"] = 16,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 81,
-										["r_amt"] = 11,
-										["c_min"] = 0,
-									},
-									["Frost Nova"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 43,
-										["g_amt"] = 0,
-										["n_max"] = 25,
-										["targets"] = {
-											["Southsea Dock Worker"] = 374,
-											["Southsea Swashbuckler"] = 24,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 355,
-										["n_min"] = 22,
-										["g_dmg"] = 0,
-										["counter"] = 17,
-										["total"] = 398,
-										["c_max"] = 43,
-										["RESIST"] = 1,
-										["id"] = "Frost Nova",
-										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 15,
-										["r_amt"] = 0,
-										["c_min"] = 43,
 									},
 									["Cone of Cold"] = {
 										["c_amt"] = 1,
@@ -14671,13 +14535,165 @@ _detalhes_database = {
 										["spellschool"] = 16,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 587,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 19,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 587,
+									},
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 2,
+										["n_max"] = 0,
+										["targets"] = {
+											["Southsea Dock Worker"] = 8,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 8,
+										["counter"] = 3,
+										["total"] = 8,
+										["c_max"] = 0,
+										["MISS"] = 1,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["b_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 0,
+										["a_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									["!Autoshot"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 48,
+										["targets"] = {
+											["Southsea Dock Worker"] = 114,
+											["Southsea Swashbuckler"] = 124,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 238,
+										["n_min"] = 23,
+										["g_dmg"] = 0,
+										["counter"] = 10,
+										["total"] = 238,
+										["c_max"] = 0,
+										["spellschool"] = 1,
+										["id"] = "!Autoshot",
+										["r_dmg"] = 23,
+										["a_dmg"] = 0,
+										["RESIST"] = 3,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 7,
+										["b_dmg"] = 0,
+										["r_amt"] = 1,
+									},
+									["Blizzard"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 70,
+										["targets"] = {
+											["Southsea Dock Worker"] = 4848,
+											["Southsea Swashbuckler"] = 559,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 5407,
+										["n_min"] = 35,
+										["g_dmg"] = 0,
+										["counter"] = 81,
+										["total"] = 5407,
+										["c_max"] = 0,
+										["id"] = "Blizzard",
+										["r_dmg"] = 511,
+										["spellschool"] = 16,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 81,
+										["a_amt"] = 0,
+										["r_amt"] = 11,
+									},
+									["Frost Nova"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 43,
+										["g_amt"] = 0,
+										["n_max"] = 25,
+										["targets"] = {
+											["Southsea Dock Worker"] = 374,
+											["Southsea Swashbuckler"] = 24,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 355,
+										["n_min"] = 22,
+										["g_dmg"] = 0,
+										["counter"] = 17,
+										["total"] = 398,
+										["c_max"] = 43,
+										["spellschool"] = 16,
+										["id"] = "Frost Nova",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["RESIST"] = 1,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["c_min"] = 43,
+										["successful_casted"] = 0,
+										["m_amt"] = 0,
+										["n_amt"] = 15,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									["Arcane Explosion"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 154,
+										["targets"] = {
+											["Southsea Dock Worker"] = 298,
+											["Southsea Swashbuckler"] = 154,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 452,
+										["n_min"] = 144,
+										["g_dmg"] = 0,
+										["counter"] = 3,
+										["total"] = 452,
+										["c_max"] = 0,
+										["id"] = "Arcane Explosion",
+										["r_dmg"] = 0,
+										["spellschool"] = 64,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["m_amt"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 3,
+										["a_amt"] = 0,
+										["r_amt"] = 0,
 									},
 									["Fire Blast"] = {
 										["c_amt"] = 0,
@@ -14700,25 +14716,26 @@ _detalhes_database = {
 										["spellschool"] = 4,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["serial"] = "Player-4465-01D5BF39",
+							["colocacao"] = 1,
 							["last_dps"] = 89.8543881228599,
 							["custom"] = 0,
-							["last_event"] = 1602431811,
+							["tipo"] = 1,
 							["damage_taken"] = 4036.00442,
 							["start_time"] = 1602431725,
 							["delay"] = 1602431715,
-							["tipo"] = 1,
+							["end_time"] = 1602431812,
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
@@ -14733,19 +14750,19 @@ _detalhes_database = {
 							},
 							["pets"] = {
 							},
+							["fight_component"] = true,
+							["total"] = 839.004564,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
 							["total_without_pet"] = 839.004564,
-							["monster"] = true,
-							["fight_component"] = true,
+							["serial"] = "Creature-0-4447-1-41-7858-0000032B0A",
 							["dps_started"] = false,
 							["end_time"] = 1602431812,
 							["friendlyfire_total"] = 0,
 							["on_hold"] = false,
 							["nome"] = "Southsea Swashbuckler",
 							["spells"] = {
-								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 1,
@@ -14769,13 +14786,13 @@ _detalhes_database = {
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 131,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 10,
+										["a_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 131,
 									},
 									["Disarm"] = {
 										["c_amt"] = 0,
@@ -14797,41 +14814,43 @@ _detalhes_database = {
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["m_amt"] = 0,
+										["c_min"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
+										["m_amt"] = 0,
 										["r_amt"] = 0,
-										["c_min"] = 0,
 									},
 								},
+								["tipo"] = 2,
 							},
-							["total"] = 839.004564,
-							["serial"] = "Creature-0-4447-1-41-7858-0000032B0A",
+							["last_event"] = 1602431871,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1602431871,
+							["tipo"] = 1,
 							["damage_taken"] = 2161.004564,
 							["start_time"] = 1602431778,
 							["delay"] = 1602431773,
-							["tipo"] = 1,
+							["monster"] = true,
 						}, -- [3]
 					},
 				}, -- [1]
 				{
-					["combatId"] = 46,
 					["tipo"] = 3,
+					["combatId"] = 46,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["targets_overheal"] = {
+							["healing_from"] = {
+								["Konac"] = true,
+								["Augustin"] = true,
 							},
 							["pets"] = {
 							},
 							["iniciar_hps"] = false,
-							["classe"] = "MAGE",
+							["heal_enemy_amt"] = 0,
 							["totalover"] = 0.003504,
 							["total_without_pet"] = 443.003504,
 							["total"] = 443.003504,
@@ -14852,13 +14871,8 @@ _detalhes_database = {
 							["healing_taken"] = 3975.003504,
 							["fight_component"] = true,
 							["end_time"] = 1602431812,
-							["healing_from"] = {
-								["Konac"] = true,
-								["Augustin"] = true,
-							},
 							["nome"] = "Augustin",
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
 										["c_amt"] = 0,
@@ -14878,10 +14892,10 @@ _detalhes_database = {
 										["targets_absorbs"] = {
 											["Augustin"] = 443,
 										},
-										["m_healed"] = 0,
 										["c_curado"] = 0,
-										["m_crit"] = 0,
 										["c_min"] = 0,
+										["m_crit"] = 0,
+										["m_healed"] = 0,
 										["m_amt"] = 0,
 										["n_curado"] = 443,
 										["n_amt"] = 5,
@@ -14890,15 +14904,18 @@ _detalhes_database = {
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
 							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
+							["targets_overheal"] = {
+							},
+							["classe"] = "MAGE",
 							["custom"] = 0,
-							["tipo"] = 2,
+							["last_event"] = 1602431689,
 							["start_time"] = 1602431792,
 							["totaldenied"] = 0.003504,
 							["delay"] = 1602431689,
-							["last_event"] = 1602431689,
+							["tipo"] = 2,
 						}, -- [1]
 						{
 							["flag_original"] = 1304,
@@ -14918,17 +14935,24 @@ _detalhes_database = {
 							["pets"] = {
 							},
 							["totalover_without_pet"] = 0.005044,
-							["end_time"] = 1602431812,
+							["iniciar_hps"] = false,
 							["classe"] = "PRIEST",
 							["totalover"] = 13054.005044,
 							["total_without_pet"] = 4849.005044,
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
+							["start_time"] = 1602431706,
+							["healing_taken"] = 1317.005044,
 							["fight_component"] = true,
 							["total"] = 4849.005044,
-							["healing_taken"] = 1317.005044,
+							["delay"] = 1602431674,
+							["end_time"] = 1602431812,
+							["nome"] = "Konac",
+							["targets_absorbs"] = {
+							},
+							["heal_enemy_amt"] = 0,
+							["need_refresh"] = true,
+							["heal_enemy"] = {
+							},
 							["spells"] = {
-								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Renew"] = {
 										["c_amt"] = 0,
@@ -14952,139 +14976,131 @@ _detalhes_database = {
 										},
 										["c_curado"] = 0,
 										["m_crit"] = 0,
-										["c_min"] = 0,
 										["m_amt"] = 0,
+										["c_min"] = 0,
 										["n_curado"] = 4849,
 										["n_amt"] = 50,
-										["totaldenied"] = 0,
 										["m_healed"] = 0,
+										["totaldenied"] = 0,
 										["absorbed"] = 0,
 									},
 								},
+								["tipo"] = 3,
 							},
-							["nome"] = "Konac",
-							["targets_absorbs"] = {
-							},
-							["start_time"] = 1602431706,
-							["need_refresh"] = true,
-							["heal_enemy"] = {
-							},
-							["serial"] = "Player-4465-00C4D96C",
 							["custom"] = 0,
 							["last_event"] = 1602431809,
 							["on_hold"] = false,
 							["totaldenied"] = 0.005044,
-							["delay"] = 1602431674,
+							["serial"] = "Player-4465-00C4D96C",
 							["tipo"] = 2,
 						}, -- [2]
 					},
 				}, -- [2]
 				{
-					["combatId"] = 46,
 					["tipo"] = 7,
+					["combatId"] = 46,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
-					["combatId"] = 46,
 					["tipo"] = 9,
+					["combatId"] = 46,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Frost Nova"] = {
-										["activedamt"] = 0,
-										["id"] = "Frost Nova",
+										["appliedamt"] = 16,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 31,
-										["appliedamt"] = 16,
+										["id"] = "Frost Nova",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blizzard"] = {
-										["activedamt"] = 0,
-										["id"] = "Blizzard",
+										["appliedamt"] = 19,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 24,
-										["appliedamt"] = 19,
+										["id"] = "Blizzard",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Cone of Cold"] = {
-										["activedamt"] = 0,
-										["id"] = "Cone of Cold",
+										["appliedamt"] = 14,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 42,
-										["appliedamt"] = 14,
+										["id"] = "Cone of Cold",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Chilled"] = {
-										["activedamt"] = 0,
-										["id"] = "Chilled",
+										["appliedamt"] = 23,
 										["targets"] = {
 										},
+										["activedamt"] = 0,
 										["uptime"] = 104,
-										["appliedamt"] = 23,
+										["id"] = "Chilled",
 										["refreshamt"] = 15,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["buff_uptime"] = 304,
 							["classe"] = "MAGE",
 							["buff_uptime_spells"] = {
-								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
-										["activedamt"] = 1,
-										["id"] = "Ice Barrier",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 19,
-										["appliedamt"] = 1,
+										["id"] = "Ice Barrier",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blink"] = {
-										["activedamt"] = 1,
-										["id"] = "Blink",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 1,
-										["appliedamt"] = 1,
+										["id"] = "Blink",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Arcane Intellect"] = {
-										["activedamt"] = 1,
-										["id"] = "Arcane Intellect",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 142,
-										["appliedamt"] = 1,
+										["id"] = "Arcane Intellect",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Ice Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Ice Armor",
+										["appliedamt"] = 1,
 										["targets"] = {
 										},
+										["activedamt"] = 1,
 										["uptime"] = 142,
-										["appliedamt"] = 1,
+										["id"] = "Ice Armor",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
@@ -15102,6 +15118,7 @@ _detalhes_database = {
 										["counter"] = 0,
 									},
 								},
+								["tipo"] = 9,
 							},
 							["fight_component"] = true,
 							["debuff_uptime"] = 201,
@@ -15111,41 +15128,41 @@ _detalhes_database = {
 							["spell_cast"] = {
 								["Shoot"] = 10,
 								["Blink"] = 1,
-								["Arcane Explosion"] = 1,
 								["Blizzard"] = 3,
 								["Frost Nova"] = 4,
+								["Arcane Explosion"] = 1,
 								["Cone of Cold"] = 5,
 								["Fire Blast"] = 1,
 							},
-							["nome"] = "Augustin",
-							["last_event"] = 1602431812,
 							["debuff_uptime_targets"] = {
 							},
+							["tipo"] = 4,
+							["nome"] = "Augustin",
 							["pets"] = {
 							},
 							["serial"] = "Player-4465-01D5BF39",
-							["tipo"] = 4,
+							["last_event"] = 1602431812,
 						}, -- [1]
 						{
 							["flag_original"] = 1304,
-							["tipo"] = 4,
-							["nome"] = "Konac",
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["need_refresh"] = true,
 							["last_event"] = 0,
+							["nome"] = "Konac",
+							["need_refresh"] = true,
 							["spell_cast"] = {
 								["Renew"] = 13,
 								["Mind Blast"] = 1,
 							},
-							["serial"] = "Player-4465-00C4D96C",
+							["fight_component"] = true,
 							["classe"] = "PRIEST",
+							["tipo"] = 4,
+							["serial"] = "Player-4465-00C4D96C",
+							["pets"] = {
+							},
 						}, -- [2]
 						{
 							["flag_original"] = 68168,
-							["nome"] = "Southsea Dock Worker",
 							["tipo"] = 4,
+							["nome"] = "Southsea Dock Worker",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -15159,8 +15176,8 @@ _detalhes_database = {
 						}, -- [3]
 						{
 							["flag_original"] = 2632,
-							["nome"] = "Southsea Swashbuckler",
 							["tipo"] = 4,
+							["nome"] = "Southsea Swashbuckler",
 							["pets"] = {
 							},
 							["fight_component"] = true,
@@ -15175,8 +15192,8 @@ _detalhes_database = {
 					},
 				}, -- [4]
 				{
-					["combatId"] = 46,
 					["tipo"] = 2,
+					["combatId"] = 46,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -15185,13 +15202,10 @@ _detalhes_database = {
 				},
 				["CombatStartedAt"] = 156050.887,
 				["tempo_start"] = 1602431670,
-				["cleu_timeline"] = {
+				["last_events_tables"] = {
 				},
 				["alternate_power"] = {
 				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Southsea Dock Worker",
 				["combat_counter"] = 6373,
 				["playing_solo"] = true,
 				["totals"] = {
@@ -15207,10 +15221,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
@@ -15219,9 +15233,14 @@ _detalhes_database = {
 				},
 				["player_last_events"] = {
 				},
-				["cleu_events"] = {
-					["n"] = 1,
+				["frags_need_refresh"] = true,
+				["instance_type"] = "none",
+				["hasSaved"] = true,
+				["data_fim"] = "17:56:53",
+				["cleu_timeline"] = {
 				},
+				["enemy"] = "Southsea Dock Worker",
+				["TotalElapsedCombatTime"] = 155992.147,
 				["CombatEndedAt"] = 155992.147,
 				["aura_timeline"] = {
 				},
@@ -15229,6 +15248,16 @@ _detalhes_database = {
 				},
 				["data_inicio"] = "17:54:30",
 				["end_time"] = 155992.147,
+				["combat_id"] = 46,
+				["spells_cast_timeline"] = {
+				},
+				["frags"] = {
+					["Southsea Dock Worker"] = 5,
+					["Southsea Swashbuckler"] = 1,
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
 				["totals_grupo"] = {
 					12740, -- [1]
 					443, -- [2]
@@ -15242,22 +15271,27 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["debuff_uptime"] = 0,
 						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
 						["dispell"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 0,
 					}, -- [4]
 				},
-				["combat_id"] = 46,
-				["TotalElapsedCombatTime"] = 155992.147,
-				["frags_need_refresh"] = true,
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Southsea Dock Worker",
+				["start_time"] = 155849.579,
+				["TimeData"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
+					["damage_section"] = {
+					},
 					["heal_section"] = {
 					},
 					["heal"] = {
@@ -15265,27 +15299,11 @@ _detalhes_database = {
 							["Augustin"] = 443.003504,
 						}, -- [1]
 					},
-					["damage_section"] = {
-					},
 					["damage"] = {
 						{
 							["Augustin"] = 12740.00442,
 						}, -- [1]
 					},
-				},
-				["frags"] = {
-					["Southsea Dock Worker"] = 5,
-					["Southsea Swashbuckler"] = 1,
-				},
-				["data_fim"] = "17:56:53",
-				["instance_type"] = "none",
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 155849.579,
-				["contra"] = "Southsea Dock Worker",
-				["TimeData"] = {
 				},
 			}, -- [18]
 		},
@@ -15319,10 +15337,10 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = 631.545532226563,
-					["x"] = -1160.94877624512,
+					["y"] = 609.726257324219,
+					["x"] = -1122.16083526611,
 					["w"] = 234.897445678711,
-					["h"] = 136.641067504883,
+					["h"] = 136.641036987305,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -15353,10 +15371,10 @@ _detalhes_database = {
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = 631.545654296875,
-					["x"] = -929.012847900391,
+					["y"] = 609.726257324219,
+					["x"] = -890.224884033203,
 					["w"] = 228.974395751953,
-					["h"] = 136.640808105469,
+					["h"] = 136.640777587891,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -15387,10 +15405,10 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -579.153610229492,
+					["y"] = -557.335464477539,
 					["x"] = 420.47412109375,
-					["w"] = 180.000991821289,
-					["h"] = 178.307662963867,
+					["w"] = 180.001007080078,
+					["h"] = 178.307647705078,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -15415,7 +15433,7 @@ _detalhes_database = {
 	},
 	["last_instance_time"] = 1602429829,
 	["active_profile"] = "Default",
-	["last_day"] = "11",
+	["last_day"] = "12",
 	["benchmark_db"] = {
 		["frame"] = {
 		},
@@ -15455,8 +15473,8 @@ _detalhes_database = {
 		["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 			["enabled"] = true,
 			["opened"] = 0,
-			["author"] = "Details! Team",
 			["show_icon"] = 5,
+			["author"] = "Details! Team",
 			["hide_on_combat"] = false,
 			["max_emote_segments"] = 3,
 		},
@@ -15513,10 +15531,10 @@ _detalhes_database = {
 			["row_texture"] = "Glamour2",
 			["arrow_anchor_y"] = 0,
 			["main_frame_locked"] = true,
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["enabled"] = true,
 			["arrow_size"] = 10,
-			["use_spark"] = false,
+			["y"] = -147.105743408203,
 			["row_spacement"] = 17,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -15524,9 +15542,13 @@ _detalhes_database = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["author"] = "Details! Team",
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
+			},
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
-			["y"] = -147.105743408203,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -15538,30 +15560,26 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["size"] = 32,
 			},
+			["font_size"] = 10,
 			["x"] = 0.00750732421875,
 			["font_face"] = "Friz Quadrata TT",
-			["font_size"] = 10,
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
+			["use_spark"] = false,
+			["main_frame_strata"] = "LOW",
 			["point"] = "CENTER",
 			["row_height"] = 17,
 			["scale"] = 1,
 		},
-	},
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
 	},
 	["announce_prepots"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
 		["reverse"] = false,
 	},
-	["combat_counter"] = 6390,
+	["combat_counter"] = 6392,
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
+	},
 	["last_realversion"] = 142,
 	["cached_talents"] = {
 		["Player-4465-01D5BF39"] = {
@@ -16007,431 +16025,6 @@ _detalhes_database = {
 				1, -- [7]
 			}, -- [49]
 		},
-		["Player-4465-00C4D96C"] = {
-			{
-				135995, -- [1]
-				5, -- [2]
-				1, -- [3]
-				2, -- [4]
-				1, -- [5]
-				256, -- [6]
-				5, -- [7]
-			}, -- [1]
-			{
-				135463, -- [1]
-				0, -- [2]
-				1, -- [3]
-				3, -- [4]
-				1, -- [5]
-				256, -- [6]
-				5, -- [7]
-			}, -- [2]
-			{
-				136053, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				1, -- [5]
-				256, -- [6]
-				5, -- [7]
-			}, -- [3]
-			{
-				135987, -- [1]
-				2, -- [2]
-				2, -- [3]
-				2, -- [4]
-				1, -- [5]
-				256, -- [6]
-				2, -- [7]
-			}, -- [4]
-			{
-				135940, -- [1]
-				3, -- [2]
-				2, -- [3]
-				3, -- [4]
-				1, -- [5]
-				256, -- [6]
-				3, -- [7]
-			}, -- [5]
-			{
-				136107, -- [1]
-				2, -- [2]
-				2, -- [3]
-				4, -- [4]
-				1, -- [5]
-				256, -- [6]
-				2, -- [7]
-			}, -- [6]
-			{
-				135863, -- [1]
-				1, -- [2]
-				3, -- [3]
-				2, -- [4]
-				1, -- [5]
-				256, -- [6]
-				1, -- [7]
-			}, -- [7]
-			{
-				136090, -- [1]
-				3, -- [2]
-				3, -- [3]
-				3, -- [4]
-				1, -- [5]
-				256, -- [6]
-				3, -- [7]
-			}, -- [8]
-			{
-				135926, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				1, -- [5]
-				256, -- [6]
-				3, -- [7]
-			}, -- [9]
-			{
-				132156, -- [1]
-				4, -- [2]
-				4, -- [3]
-				2, -- [4]
-				1, -- [5]
-				256, -- [6]
-				5, -- [7]
-			}, -- [10]
-			{
-				136170, -- [1]
-				0, -- [2]
-				4, -- [3]
-				4, -- [4]
-				1, -- [5]
-				256, -- [6]
-				2, -- [7]
-			}, -- [11]
-			{
-				136031, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				1, -- [5]
-				256, -- [6]
-				5, -- [7]
-			}, -- [12]
-			{
-				135898, -- [1]
-				1, -- [2]
-				5, -- [3]
-				3, -- [4]
-				1, -- [5]
-				256, -- [6]
-				1, -- [7]
-			}, -- [13]
-			{
-				136092, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				1, -- [5]
-				256, -- [6]
-				5, -- [7]
-			}, -- [14]
-			{
-				135939, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				1, -- [5]
-				256, -- [6]
-				1, -- [7]
-			}, -- [15]
-			{
-				135918, -- [1]
-				2, -- [2]
-				1, -- [3]
-				1, -- [4]
-				2, -- [5]
-				257, -- [6]
-				2, -- [7]
-			}, -- [16]
-			{
-				135953, -- [1]
-				3, -- [2]
-				1, -- [3]
-				2, -- [4]
-				2, -- [5]
-				257, -- [6]
-				3, -- [7]
-			}, -- [17]
-			{
-				135967, -- [1]
-				5, -- [2]
-				1, -- [3]
-				3, -- [4]
-				2, -- [5]
-				257, -- [6]
-				5, -- [7]
-			}, -- [18]
-			{
-				135976, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				2, -- [5]
-				257, -- [6]
-				5, -- [7]
-			}, -- [19]
-			{
-				135971, -- [1]
-				5, -- [2]
-				2, -- [3]
-				3, -- [4]
-				2, -- [5]
-				257, -- [6]
-				5, -- [7]
-			}, -- [20]
-			{
-				135922, -- [1]
-				1, -- [2]
-				3, -- [3]
-				1, -- [4]
-				2, -- [5]
-				257, -- [6]
-				1, -- [7]
-			}, -- [21]
-			{
-				135877, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				2, -- [5]
-				257, -- [6]
-				3, -- [7]
-			}, -- [22]
-			{
-				135928, -- [1]
-				3, -- [2]
-				3, -- [3]
-				4, -- [4]
-				2, -- [5]
-				257, -- [6]
-				3, -- [7]
-			}, -- [23]
-			{
-				135949, -- [1]
-				0, -- [2]
-				4, -- [3]
-				1, -- [4]
-				2, -- [5]
-				257, -- [6]
-				2, -- [7]
-			}, -- [24]
-			{
-				135916, -- [1]
-				1, -- [2]
-				4, -- [3]
-				2, -- [4]
-				2, -- [5]
-				257, -- [6]
-				3, -- [7]
-			}, -- [25]
-			{
-				135973, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				2, -- [5]
-				257, -- [6]
-				2, -- [7]
-			}, -- [26]
-			{
-				135943, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				2, -- [5]
-				257, -- [6]
-				2, -- [7]
-			}, -- [27]
-			{
-				132864, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				2, -- [5]
-				257, -- [6]
-				1, -- [7]
-			}, -- [28]
-			{
-				135977, -- [1]
-				5, -- [2]
-				5, -- [3]
-				3, -- [4]
-				2, -- [5]
-				257, -- [6]
-				5, -- [7]
-			}, -- [29]
-			{
-				136057, -- [1]
-				5, -- [2]
-				6, -- [3]
-				3, -- [4]
-				2, -- [5]
-				257, -- [6]
-				5, -- [7]
-			}, -- [30]
-			{
-				135980, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				2, -- [5]
-				257, -- [6]
-				1, -- [7]
-			}, -- [31]
-			{
-				136188, -- [1]
-				0, -- [2]
-				1, -- [3]
-				2, -- [4]
-				3, -- [5]
-				258, -- [6]
-				5, -- [7]
-			}, -- [32]
-			{
-				136160, -- [1]
-				0, -- [2]
-				1, -- [3]
-				3, -- [4]
-				3, -- [5]
-				258, -- [6]
-				5, -- [7]
-			}, -- [33]
-			{
-				136205, -- [1]
-				0, -- [2]
-				2, -- [3]
-				1, -- [4]
-				3, -- [5]
-				258, -- [6]
-				3, -- [7]
-			}, -- [34]
-			{
-				136207, -- [1]
-				0, -- [2]
-				2, -- [3]
-				2, -- [4]
-				3, -- [5]
-				258, -- [6]
-				2, -- [7]
-			}, -- [35]
-			{
-				136126, -- [1]
-				0, -- [2]
-				2, -- [3]
-				3, -- [4]
-				3, -- [5]
-				258, -- [6]
-				5, -- [7]
-			}, -- [36]
-			{
-				136184, -- [1]
-				0, -- [2]
-				3, -- [3]
-				1, -- [4]
-				3, -- [5]
-				258, -- [6]
-				2, -- [7]
-			}, -- [37]
-			{
-				136224, -- [1]
-				0, -- [2]
-				3, -- [3]
-				2, -- [4]
-				3, -- [5]
-				258, -- [6]
-				5, -- [7]
-			}, -- [38]
-			{
-				136208, -- [1]
-				0, -- [2]
-				3, -- [3]
-				3, -- [4]
-				3, -- [5]
-				258, -- [6]
-				1, -- [7]
-			}, -- [39]
-			{
-				135994, -- [1]
-				0, -- [2]
-				4, -- [3]
-				2, -- [4]
-				3, -- [5]
-				258, -- [6]
-				2, -- [7]
-			}, -- [40]
-			{
-				136130, -- [1]
-				0, -- [2]
-				4, -- [3]
-				3, -- [4]
-				3, -- [5]
-				258, -- [6]
-				3, -- [7]
-			}, -- [41]
-			{
-				136123, -- [1]
-				0, -- [2]
-				4, -- [3]
-				4, -- [4]
-				3, -- [5]
-				258, -- [6]
-				5, -- [7]
-			}, -- [42]
-			{
-				136164, -- [1]
-				0, -- [2]
-				5, -- [3]
-				1, -- [4]
-				3, -- [5]
-				258, -- [6]
-				1, -- [7]
-			}, -- [43]
-			{
-				136230, -- [1]
-				0, -- [2]
-				5, -- [3]
-				2, -- [4]
-				3, -- [5]
-				258, -- [6]
-				1, -- [7]
-			}, -- [44]
-			{
-				136165, -- [1]
-				0, -- [2]
-				5, -- [3]
-				3, -- [4]
-				3, -- [5]
-				258, -- [6]
-				2, -- [7]
-			}, -- [45]
-			{
-				136223, -- [1]
-				0, -- [2]
-				6, -- [3]
-				3, -- [4]
-				3, -- [5]
-				258, -- [6]
-				5, -- [7]
-			}, -- [46]
-			{
-				136200, -- [1]
-				0, -- [2]
-				7, -- [3]
-				2, -- [4]
-				3, -- [5]
-				258, -- [6]
-				1, -- [7]
-			}, -- [47]
-		},
 	},
 	["combat_id"] = 63,
 	["savedStyles"] = {
@@ -16478,8 +16071,8 @@ _detalhes_database = {
 			},
 			["switch_healer"] = false,
 			["bars_sort_direction"] = 1,
-			["switch_healer_in_combat"] = false,
 			["menu_icons_size"] = 1,
+			["backdrop_texture"] = "None",
 			["instance_button_anchor"] = {
 				-27, -- [1]
 				1, -- [2]
@@ -16499,7 +16092,7 @@ _detalhes_database = {
 					1, -- [3]
 				},
 			},
-			["backdrop_texture"] = "None",
+			["switch_healer_in_combat"] = false,
 			["switch_all_roles_in_combat"] = {
 				2, -- [1]
 				1, -- [2]
@@ -16543,10 +16136,6 @@ _detalhes_database = {
 					1, -- [3]
 					1, -- [4]
 				},
-				["textL_custom_text"] = "{data3}{data2}",
-				["texture_background"] = "Blizzard",
-				["alpha"] = 0,
-				["textL_class_colors"] = false,
 				["backdrop"] = {
 					["enabled"] = false,
 					["texture"] = "Details BarBorder 2",
@@ -16558,9 +16147,13 @@ _detalhes_database = {
 					},
 					["size"] = 12,
 				},
+				["textL_class_colors"] = false,
+				["textL_custom_text"] = "{data3}{data2}",
+				["textR_class_colors"] = false,
+				["alpha"] = 0,
 				["no_icon"] = false,
 				["font_size"] = 11,
-				["textR_class_colors"] = false,
+				["texture_background"] = "Blizzard",
 				["font_face"] = "Arial Narrow",
 				["texture_class_colors"] = true,
 				["height"] = 20,
@@ -16590,10 +16183,17 @@ _detalhes_database = {
 				["onenter"] = 1,
 			},
 			["plugins_grow_direction"] = 1,
-			["switch_damager"] = false,
-			["auto_hide_menu"] = {
-				["left"] = true,
-				["right"] = true,
+			["menu2_anchor_down"] = {
+				32, -- [1]
+				0, -- [2]
+			},
+			["statusbar_info"] = {
+				["alpha"] = 0,
+				["overlay"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
 			},
 			["strata"] = "LOW",
 			["menu_anchor_down"] = {
@@ -16645,28 +16245,18 @@ _detalhes_database = {
 				true, -- [3]
 				true, -- [4]
 			},
-			["menu2_anchor_down"] = {
-				32, -- [1]
-				0, -- [2]
-			},
-			["statusbar_info"] = {
-				["alpha"] = 0,
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
-			},
+			["desaturated_menu"] = false,
+			["show_sidebars"] = false,
 			["row_show_animation"] = {
 				["anim"] = "Fade",
 				["options"] = {
 				},
 			},
 			["bars_grow_direction"] = 1,
-			["switch_damager_in_combat"] = false,
-			["toolbar_side"] = 2,
-			["hide_icon"] = true,
 			["grab_on_top"] = false,
+			["toolbar_side"] = 2,
+			["switch_damager_in_combat"] = false,
+			["hide_icon"] = true,
 			["micro_displays_side"] = 2,
 			["menu2_anchor"] = {
 				32, -- [1]
@@ -16696,8 +16286,11 @@ _detalhes_database = {
 			["bg_g"] = 0,
 			["window_scale"] = 1,
 			["hide_in_combat"] = false,
-			["show_sidebars"] = false,
-			["desaturated_menu"] = false,
+			["auto_hide_menu"] = {
+				["left"] = true,
+				["right"] = true,
+			},
+			["switch_damager"] = false,
 			["hide_in_combat_type"] = 1,
 			["wallpaper"] = {
 				["enabled"] = false,
@@ -16777,18 +16370,19 @@ _detalhes_database = {
 						"Lava Spout Totem <Sandfury Witch Doctor>", -- [1]
 						"Greater Healing Ward <Sandfury Witch Doctor>", -- [2]
 					},
-					["dps_started"] = false,
+					["friendlyfire"] = {
+					},
 					["monster"] = true,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 12959.122718,
-					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
+					["last_dps"] = 0,
+					["dps_started"] = false,
 					["end_time"] = 1602409477,
 					["on_hold"] = false,
 					["tipo"] = 1,
-					["boss_fight_component"] = true,
+					["nome"] = "Sandfury Witch Doctor",
 					["spells"] = {
 						["_ActorTable"] = {
 							["Healing Ward"] = {
@@ -16810,8 +16404,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 77,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -16837,8 +16431,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 69,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -16867,8 +16461,8 @@ _detalhes_database = {
 								["a_dmg"] = 1289,
 								["b_dmg"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 6,
 								["n_amt"] = 53,
@@ -16878,16 +16472,15 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
+					["boss_fight_component"] = true,
 					["total"] = 13914.122718,
-					["nome"] = "Sandfury Witch Doctor",
+					["fight_component"] = true,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["damage_taken"] = 2587.122718,
 					["start_time"] = 1602409311,
 					["serial"] = "Creature-0-4469-209-23243-5650-000482D376",
-					["damage_taken"] = 2587.122718,
+					["friendlyfire_total"] = 0,
 				}, -- [1]
 				{
 					["flag_original"] = 1297,
@@ -16923,15 +16516,16 @@ _detalhes_database = {
 					["pets"] = {
 					},
 					["boss_fight_component"] = true,
-					["classe"] = "MAGE",
 					["friendlyfire_total"] = 0,
+					["classe"] = "MAGE",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 16163.159077,
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["dps_started"] = false,
-					["total"] = 16163.159077,
-					["damage_taken"] = 66021.159077,
+					["end_time"] = 1602409477,
+					["last_dps"] = 0,
 					["tipo"] = 1,
 					["nome"] = "Augustin",
 					["spec"] = 64,
@@ -16945,9 +16539,10 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 70,
 								["targets"] = {
+									["Zul'Farrak Zombie"] = 9090,
 									["Southsea Swashbuckler"] = 0,
 									["Southsea Dock Worker"] = 0,
-									["Zul'Farrak Zombie"] = 9090,
+									["Southsea Pirate"] = 0,
 									["Zul'Farrak Dead Hero"] = 398,
 									["Southsea Freebooter"] = 0,
 								},
@@ -16963,11 +16558,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 201,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 17,
 							},
 							["Frostbolt"] = {
@@ -16977,6 +16572,8 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
+									["Southsea Dock Worker"] = 0,
+									["Southsea Pirate"] = 0,
 									["Southsea Swashbuckler"] = 0,
 								},
 								["m_dmg"] = 0,
@@ -16988,10 +16585,10 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Frostbolt",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -17006,6 +16603,7 @@ _detalhes_database = {
 								["n_max"] = 0,
 								["targets"] = {
 									["Southsea Dock Worker"] = 0,
+									["Southsea Pirate"] = 0,
 									["Southsea Swashbuckler"] = 0,
 								},
 								["m_dmg"] = 0,
@@ -17020,11 +16618,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 							["Fire Blast"] = {
@@ -17052,11 +16650,11 @@ _detalhes_database = {
 								["a_amt"] = 0,
 								["m_crit"] = 0,
 								["RESIST"] = 1,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 							["Chilled"] = {
@@ -17069,6 +16667,7 @@ _detalhes_database = {
 									["Scarab"] = 0,
 									["Southsea Swashbuckler"] = 0,
 									["Southsea Dock Worker"] = 0,
+									["Southsea Pirate"] = 0,
 									["Sandfury Witch Doctor"] = 0,
 									["Sandfury Blood Drinker"] = 0,
 								},
@@ -17080,18 +16679,18 @@ _detalhes_database = {
 								["total"] = 0,
 								["c_max"] = 0,
 								["r_amt"] = 0,
-								["id"] = "Chilled",
+								["EVADE"] = 5,
 								["r_dmg"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["RESIST"] = 14,
 								["a_dmg"] = 0,
-								["EVADE"] = 5,
+								["id"] = "Chilled",
 							},
 							["Winter's Chill"] = {
 								["c_amt"] = 0,
@@ -17125,6 +16724,37 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["EVADE"] = 4,
 							},
+							["!Autoshot"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 16,
+								["targets"] = {
+									["Southsea Dock Worker"] = 0,
+									["Southsea Freebooter"] = 0,
+									["Greater Healing Ward <Sandfury Witch Doctor>"] = 34,
+									["Southsea Swashbuckler"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 34,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 3,
+								["total"] = 34,
+								["c_max"] = 0,
+								["id"] = "!Autoshot",
+								["r_dmg"] = 34,
+								["a_dmg"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 3,
+								["c_min"] = 0,
+								["r_amt"] = 3,
+							},
 							["Frost Nova"] = {
 								["c_amt"] = 2,
 								["b_amt"] = 0,
@@ -17154,82 +16784,15 @@ _detalhes_database = {
 								["id"] = "Frost Nova",
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["m_crit"] = 0,
 								["n_amt"] = 51,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["RESIST"] = 4,
 								["a_amt"] = 0,
 								["a_dmg"] = 0,
-							},
-							["Cone of Cold"] = {
-								["c_amt"] = 1,
-								["b_amt"] = 0,
-								["c_dmg"] = 446,
-								["g_amt"] = 0,
-								["n_max"] = 313,
-								["targets"] = {
-									["Sandfury Shadowhunter"] = 0,
-									["Scarab"] = 1051,
-									["Sandfury Shadowcaster"] = 1029,
-									["Southsea Swashbuckler"] = 0,
-									["Southsea Dock Worker"] = 0,
-									["Southsea Freebooter"] = 0,
-									["Sandfury Witch Doctor"] = 2348,
-									["Sandfury Blood Drinker"] = 911,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 4893,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 21,
-								["total"] = 5339,
-								["c_max"] = 446,
-								["id"] = "Cone of Cold",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_amt"] = 0,
-								["m_crit"] = 0,
-								["n_amt"] = 18,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["RESIST"] = 2,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-							["!Autoshot"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 16,
-								["targets"] = {
-									["Southsea Dock Worker"] = 0,
-									["Southsea Freebooter"] = 0,
-									["Greater Healing Ward <Sandfury Witch Doctor>"] = 34,
-									["Southsea Swashbuckler"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 34,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 3,
-								["total"] = 34,
-								["c_max"] = 0,
-								["id"] = "!Autoshot",
-								["r_dmg"] = 34,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 3,
-								["m_amt"] = 0,
-								["r_amt"] = 3,
 							},
 							["!Melee"] = {
 								["c_amt"] = 0,
@@ -17239,6 +16802,7 @@ _detalhes_database = {
 								["n_max"] = 0,
 								["targets"] = {
 									["Southsea Dock Worker"] = 0,
+									["Southsea Pirate"] = 0,
 									["Southsea Freebooter"] = 0,
 									["Southsea Swashbuckler"] = 0,
 								},
@@ -17250,6 +16814,71 @@ _detalhes_database = {
 								["total"] = 0,
 								["c_max"] = 0,
 								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["m_amt"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Cone of Cold"] = {
+								["c_amt"] = 1,
+								["b_amt"] = 0,
+								["c_dmg"] = 446,
+								["g_amt"] = 0,
+								["n_max"] = 313,
+								["targets"] = {
+									["Southsea Dock Worker"] = 0,
+									["Southsea Pirate"] = 0,
+									["Sandfury Blood Drinker"] = 911,
+									["Sandfury Shadowhunter"] = 0,
+									["Sandfury Witch Doctor"] = 2348,
+									["Sandfury Shadowcaster"] = 1029,
+									["Southsea Swashbuckler"] = 0,
+									["Scarab"] = 1051,
+									["Southsea Freebooter"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 4893,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 21,
+								["total"] = 5339,
+								["c_max"] = 446,
+								["id"] = "Cone of Cold",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["c_min"] = 0,
+								["m_crit"] = 0,
+								["n_amt"] = 18,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["RESIST"] = 2,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Polymorph"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Southsea Swashbuckler"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Polymorph",
 								["r_dmg"] = 0,
 								["c_min"] = 0,
 								["m_crit"] = 0,
@@ -17267,11 +16896,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 66021.159077,
 					["start_time"] = 1602409348,
 					["serial"] = "Player-4465-01D5BF39",
-					["end_time"] = 1602409477,
+					["total"] = 16163.159077,
 				}, -- [2]
 				{
 					["flag_original"] = 2632,
@@ -17285,18 +16913,19 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["dps_started"] = false,
+					["friendlyfire"] = {
+					},
 					["monster"] = true,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 14911.114147,
-					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
+					["last_dps"] = 0,
+					["dps_started"] = false,
 					["end_time"] = 1602409477,
 					["on_hold"] = false,
 					["tipo"] = 1,
-					["boss_fight_component"] = true,
+					["nome"] = "Sandfury Blood Drinker",
 					["spells"] = {
 						["_ActorTable"] = {
 							["!Melee"] = {
@@ -17350,8 +16979,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 28,
 								["b_dmg"] = 0,
 								["n_amt"] = 3,
@@ -17361,16 +16990,15 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
+					["boss_fight_component"] = true,
 					["total"] = 14911.114147,
-					["nome"] = "Sandfury Blood Drinker",
+					["fight_component"] = true,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["damage_taken"] = 1315.114147,
 					["start_time"] = 1602409324,
 					["serial"] = "Creature-0-4469-209-23243-5649-000002D378",
-					["damage_taken"] = 1315.114147,
+					["friendlyfire_total"] = 0,
 				}, -- [3]
 				{
 					["flag_original"] = 2632,
@@ -17384,18 +17012,19 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["dps_started"] = false,
+					["friendlyfire"] = {
+					},
 					["monster"] = true,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 24198.131117,
-					["friendlyfire_total"] = 0,
-					["fight_component"] = true,
+					["last_dps"] = 0,
+					["dps_started"] = false,
 					["end_time"] = 1602409477,
 					["on_hold"] = false,
 					["tipo"] = 1,
-					["boss_fight_component"] = true,
+					["nome"] = "Sandfury Shadowcaster",
 					["spells"] = {
 						["_ActorTable"] = {
 							["Shadow Word: Pain"] = {
@@ -17418,8 +17047,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 3,
 								["b_dmg"] = 0,
 								["n_amt"] = 3,
@@ -17445,8 +17074,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 16,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -17475,8 +17104,8 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["b_dmg"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["a_amt"] = 0,
 								["n_amt"] = 11,
@@ -17505,8 +17134,8 @@ _detalhes_database = {
 								["b_dmg"] = 0,
 								["n_amt"] = 88,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 89,
 								["a_amt"] = 7,
 								["RESIST"] = 2,
@@ -17516,16 +17145,15 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["friendlyfire"] = {
-					},
+					["boss_fight_component"] = true,
 					["total"] = 24198.131117,
-					["nome"] = "Sandfury Shadowcaster",
+					["fight_component"] = true,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["damage_taken"] = 1149.131117,
 					["start_time"] = 1602409226,
 					["serial"] = "Creature-0-4469-209-23243-5648-000102D377",
-					["damage_taken"] = 1149.131117,
+					["friendlyfire_total"] = 0,
 				}, -- [4]
 				{
 					["flag_original"] = 8776,
@@ -17537,16 +17165,17 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["total"] = 955.0247,
+					["end_time"] = 1602409477,
 					["tipo"] = 1,
-					["classe"] = "PET",
+					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 955.0247,
 					["delay"] = 0,
 					["dps_started"] = false,
-					["end_time"] = 1602409477,
-					["last_dps"] = 0,
+					["total"] = 955.0247,
+					["friendlyfire"] = {
+					},
 					["ownerName"] = "Sandfury Witch Doctor",
 					["nome"] = "Lava Spout Totem <Sandfury Witch Doctor>",
 					["spells"] = {
@@ -17583,16 +17212,15 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.0247,
+					["last_dps"] = 0,
 					["fight_component"] = true,
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.0247,
 					["start_time"] = 1602409458,
 					["serial"] = "Creature-0-4469-209-23243-6017-000002D400",
-					["friendlyfire_total"] = 0,
+					["classe"] = "PET",
 				}, -- [5]
 				{
 					["flag_original"] = 2632,
@@ -17605,16 +17233,16 @@ _detalhes_database = {
 					["delay"] = 0,
 					["pets"] = {
 					},
-					["fight_component"] = true,
+					["boss_fight_component"] = true,
 					["dps_started"] = false,
-					["classe"] = "UNKNOW",
+					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 2352.019968,
-					["last_dps"] = 0,
+					["fight_component"] = true,
 					["monster"] = true,
 					["end_time"] = 1602410528,
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["tipo"] = 1,
 					["nome"] = "Sandfury Shadowhunter",
 					["spells"] = {
@@ -17639,8 +17267,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 11,
 								["b_dmg"] = 0,
 								["n_amt"] = 12,
@@ -17668,26 +17296,26 @@ _detalhes_database = {
 								["a_dmg"] = 241,
 								["m_crit"] = 0,
 								["a_amt"] = 1,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 3,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["boss_fight_component"] = true,
-					["total"] = 2352.019968,
-					["friendlyfire_total"] = 0,
-					["custom"] = 0,
-					["last_event"] = 0,
 					["friendlyfire"] = {
 					},
+					["total"] = 2352.019968,
+					["on_hold"] = false,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["damage_taken"] = 0.019968,
 					["start_time"] = 1602410491,
 					["serial"] = "Creature-0-4469-209-23243-7246-000282D378",
-					["damage_taken"] = 0.019968,
+					["classe"] = "UNKNOW",
 				}, -- [6]
 				{
 					["flag_original"] = 2600,
@@ -17706,10 +17334,10 @@ _detalhes_database = {
 					},
 					["total_without_pet"] = 1427.01052,
 					["friendlyfire_total"] = 0,
-					["dps_started"] = false,
+					["fight_component"] = true,
 					["end_time"] = 1602411228,
 					["delay"] = 0,
-					["damage_taken"] = 1144.01052,
+					["last_dps"] = 0,
 					["nome"] = "Scarab",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -17733,8 +17361,8 @@ _detalhes_database = {
 								["r_dmg"] = 0,
 								["r_amt"] = 0,
 								["m_crit"] = 0,
-								["m_amt"] = 0,
 								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 12,
@@ -17744,16 +17372,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["damage_taken"] = 1144.01052,
 					["total"] = 1427.01052,
 					["friendlyfire"] = {
 					},
 					["custom"] = 0,
 					["last_event"] = 0,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1602411216,
 					["serial"] = "Creature-0-4469-209-23243-7269-000382D378",
-					["fight_component"] = true,
+					["dps_started"] = false,
 				}, -- [7]
 				{
 					["flag_original"] = 1352,
@@ -17772,11 +17400,12 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001419,
-					["dps_started"] = false,
 					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1602414709,
 					["serial"] = "Player-4465-00B6D9C6",
-					["last_dps"] = 0,
+					["friendlyfire"] = {
+					},
 					["nome"] = "Kyth",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -17802,11 +17431,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 							["Presence of Mind"] = {
@@ -17829,11 +17458,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 							["Arcane Power"] = {
@@ -17856,11 +17485,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 							["Scorch"] = {
@@ -17884,11 +17513,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 							["Mind Quickening"] = {
@@ -17911,11 +17540,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 							["Fire Blast"] = {
@@ -17939,23 +17568,22 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 0.001419,
+					["last_dps"] = 0,
 					["on_hold"] = false,
 					["total"] = 0.001419,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.001419,
 					["start_time"] = 1602414706,
 					["delay"] = 0,
 					["friendlyfire_total"] = 0,
@@ -17966,26 +17594,28 @@ _detalhes_database = {
 					["damage_from"] = {
 					},
 					["targets"] = {
-						["Jabalí <Splinterll>"] = 0,
-						["Augustin"] = 0,
-						["Konac"] = 0,
 						["Nocaster"] = 0,
-						["Splinterll"] = 0,
+						["Jabalí <Splinterll>"] = 0,
+						["Opos"] = 0,
+						["Konac"] = 0,
 						["Dirtyapple"] = 0,
+						["Splinterll"] = 0,
+						["Augustin"] = 0,
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.002924,
 					["serial"] = "Creature-0-4447-1-41-7857-000002DD35",
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1602414709,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.002924,
+					["last_dps"] = 0,
 					["nome"] = "Southsea Dock Worker",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -17996,12 +17626,14 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
+									["Opos"] = 0,
+									["Splinterll"] = 0,
 									["Jabalí"] = 0,
 									["Jabalí <Splinterll>"] = 0,
 									["Augustin"] = 0,
-									["Dirtyapple"] = 0,
+									["Samq"] = 0,
 									["Nocaster"] = 0,
-									["Splinterll"] = 0,
+									["Dirtyapple"] = 0,
 									["Konac"] = 0,
 								},
 								["m_dmg"] = 0,
@@ -18016,11 +17648,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 							["Head Crack"] = {
@@ -18031,6 +17663,7 @@ _detalhes_database = {
 								["n_max"] = 0,
 								["targets"] = {
 									["Augustin"] = 0,
+									["Konac"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
@@ -18044,11 +17677,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -18059,11 +17692,10 @@ _detalhes_database = {
 					["total"] = 0.002924,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.002924,
 					["start_time"] = 1602414706,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [9]
 				{
 					["flag_original"] = 2632,
@@ -18078,17 +17710,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001429,
 					["serial"] = "Creature-0-4447-1-41-7858-000002DD2B",
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1602414709,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.001429,
+					["last_dps"] = 0,
 					["nome"] = "Southsea Swashbuckler",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18116,11 +17749,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 							["Disarm"] = {
@@ -18144,11 +17777,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -18159,11 +17792,10 @@ _detalhes_database = {
 					["total"] = 0.001429,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.001429,
 					["start_time"] = 1602414706,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [10]
 				{
 					["flag_original"] = 2632,
@@ -18176,17 +17808,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.005261,
 					["serial"] = "Creature-0-4447-1-41-7855-000002DD54",
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1602414709,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.005261,
+					["last_dps"] = 0,
 					["nome"] = "Southsea Pirate",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18213,12 +17846,41 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
+							},
+							["Strike"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Augustin"] = 0,
+									["Konac"] = 0,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 0,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = "Strike",
+								["r_dmg"] = 0,
+								["c_min"] = 0,
+								["m_crit"] = 0,
+								["r_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
@@ -18228,11 +17890,10 @@ _detalhes_database = {
 					["total"] = 0.005261,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.005261,
 					["start_time"] = 1602414706,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [11]
 				{
 					["flag_original"] = 2632,
@@ -18244,17 +17905,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006079,
 					["serial"] = "Creature-0-4447-1-41-5617-000002D32A",
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1602414709,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.006079,
+					["last_dps"] = 0,
 					["nome"] = "Wastewander Shadow Mage",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18279,11 +17941,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -18294,11 +17956,10 @@ _detalhes_database = {
 					["total"] = 0.006079,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.006079,
 					["start_time"] = 1602414706,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [12]
 				{
 					["flag_original"] = 68168,
@@ -18310,17 +17971,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007034,
 					["serial"] = "Creature-0-4447-1-41-9396-000002C191",
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1602414709,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.007034,
+					["last_dps"] = 0,
 					["nome"] = "Ground Pounder",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18345,11 +18007,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -18360,11 +18022,10 @@ _detalhes_database = {
 					["total"] = 0.007034,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.007034,
 					["start_time"] = 1602414706,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [13]
 				{
 					["flag_original"] = 68168,
@@ -18376,17 +18037,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.007041,
 					["serial"] = "Creature-0-4447-1-41-5419-000002DB40",
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1602414709,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.007041,
+					["last_dps"] = 0,
 					["nome"] = "Glasshide Basilisk",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18411,11 +18073,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -18426,11 +18088,10 @@ _detalhes_database = {
 					["total"] = 0.007041,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.007041,
 					["start_time"] = 1602414706,
 					["delay"] = 0,
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [14]
 				{
 					["flag_original"] = -2147483648,
@@ -18447,12 +18108,11 @@ _detalhes_database = {
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 156.01166,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.01166,
 					["fight_component"] = true,
 					["end_time"] = 1602427569,
 					["serial"] = "",
-					["damage_taken"] = 0.01166,
+					["last_dps"] = 0,
 					["nome"] = "Environment (Falling)",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18477,22 +18137,23 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 2,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["friendlyfire"] = {
+					},
 					["total"] = 156.01166,
 					["dps_started"] = false,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["last_dps"] = 0,
+					["on_hold"] = false,
 					["start_time"] = 1602427560,
 					["delay"] = 0,
 					["friendlyfire_total"] = 0,
@@ -18507,18 +18168,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
+					["damage_taken"] = 0.013295,
+					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 792.013295,
 					["serial"] = "Creature-0-4446-209-14686-7272-00000317B5",
-					["dps_started"] = false,
+					["monster"] = true,
 					["total"] = 792.013295,
 					["friendlyfire"] = {
 					},
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["boss_fight_component"] = true,
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18543,11 +18204,11 @@ _detalhes_database = {
 								["a_dmg"] = 213,
 								["m_crit"] = 0,
 								["a_amt"] = 1,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 3,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -18558,10 +18219,10 @@ _detalhes_database = {
 					["nome"] = "Theka the Martyr",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.013295,
+					["on_hold"] = false,
 					["start_time"] = 1602427995,
 					["delay"] = 0,
-					["monster"] = true,
+					["dps_started"] = false,
 				}, -- [16]
 				{
 					["flag_original"] = 68168,
@@ -18574,18 +18235,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["classe"] = "UNKNOW",
-					["last_dps"] = 0,
 					["friendlyfire_total"] = 0,
+					["damage_taken"] = 23.011901,
+					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 344.011901,
 					["serial"] = "Creature-0-4446-209-14686-7247-00000317B7",
-					["dps_started"] = false,
+					["monster"] = true,
 					["total"] = 344.011901,
 					["friendlyfire"] = {
 					},
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["boss_fight_component"] = true,
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18610,11 +18271,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 2,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -18625,10 +18286,10 @@ _detalhes_database = {
 					["nome"] = "Sandfury Soul Eater",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 23.011901,
+					["on_hold"] = false,
 					["start_time"] = 1602427997,
 					["delay"] = 0,
-					["monster"] = true,
+					["dps_started"] = false,
 				}, -- [17]
 				{
 					["flag_original"] = 2632,
@@ -18641,18 +18302,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["damage_taken"] = 444.008507,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 310.008507,
 					["serial"] = "Creature-0-4446-209-14686-7276-0000031CCE",
-					["dps_started"] = false,
+					["monster"] = true,
 					["total"] = 310.008507,
 					["friendlyfire"] = {
 					},
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["nome"] = "Zul'Farrak Dead Hero",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18677,11 +18338,11 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 3,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["r_amt"] = 0,
 							},
 						},
@@ -18692,10 +18353,10 @@ _detalhes_database = {
 					["classe"] = "UNKNOW",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 444.008507,
+					["on_hold"] = false,
 					["start_time"] = 1602428153,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [18]
 				{
 					["flag_original"] = 2632,
@@ -18708,18 +18369,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["last_dps"] = 0,
+					["dps_started"] = false,
+					["damage_taken"] = 9467.022331,
 					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 7617.022331,
 					["serial"] = "Creature-0-4446-209-14686-7286-0000831CCE",
-					["dps_started"] = false,
+					["monster"] = true,
 					["total"] = 7617.022331,
 					["friendlyfire"] = {
 					},
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["nome"] = "Zul'Farrak Zombie",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18760,10 +18421,10 @@ _detalhes_database = {
 					["classe"] = "UNKNOW",
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 9467.022331,
+					["on_hold"] = false,
 					["start_time"] = 1602428154,
 					["delay"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
 				}, -- [19]
 				{
 					["flag_original"] = 74312,
@@ -18775,16 +18436,16 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["friendlyfire_total"] = 0,
-					["last_event"] = 0,
 					["classe"] = "PET",
+					["last_event"] = 0,
+					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.013698,
 					["serial"] = "Creature-0-4446-209-14686-8179-0000032240",
-					["dps_started"] = false,
+					["fight_component"] = true,
 					["end_time"] = 1602429564,
-					["last_dps"] = 0,
+					["damage_taken"] = 34.013698,
 					["ownerName"] = "Sandfury Witch Doctor",
 					["nome"] = "Greater Healing Ward <Sandfury Witch Doctor>",
 					["spells"] = {
@@ -18792,16 +18453,16 @@ _detalhes_database = {
 						},
 						["tipo"] = 2,
 					},
-					["on_hold"] = false,
+					["last_dps"] = 0,
 					["friendlyfire"] = {
 					},
 					["total"] = 0.013698,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 34.013698,
+					["on_hold"] = false,
 					["start_time"] = 1602429561,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 				}, -- [20]
 				{
 					["flag_original"] = 68168,
@@ -18813,17 +18474,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.00669,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1602430274,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.00669,
+					["last_dps"] = 0,
 					["nome"] = "Starving Blisterpaw",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18845,10 +18507,10 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -18863,11 +18525,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.00669,
 					["start_time"] = 1602430271,
 					["serial"] = "Creature-0-4447-1-41-5425-0000031A30",
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [21]
 				{
 					["flag_original"] = 68168,
@@ -18879,17 +18540,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.001656,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1602430274,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.001656,
+					["last_dps"] = 0,
 					["nome"] = "Scorpid Hunter",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18911,10 +18573,10 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -18929,11 +18591,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.001656,
 					["start_time"] = 1602430271,
 					["serial"] = "Creature-0-4447-1-41-5422-000002E30E",
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [22]
 				{
 					["flag_original"] = 68168,
@@ -18947,17 +18608,18 @@ _detalhes_database = {
 					},
 					["pets"] = {
 					},
-					["last_dps"] = 0,
-					["monster"] = true,
+					["fight_component"] = true,
+					["friendlyfire"] = {
+					},
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.002186,
 					["delay"] = 0,
-					["fight_component"] = true,
+					["dps_started"] = false,
 					["end_time"] = 1602430274,
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.002186,
+					["last_dps"] = 0,
 					["nome"] = "Sandfury Axe Thrower",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -18981,10 +18643,10 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Throw",
 								["r_dmg"] = 0,
-								["c_min"] = 0,
-								["m_crit"] = 0,
 								["r_amt"] = 0,
+								["m_crit"] = 0,
 								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
@@ -18999,11 +18661,10 @@ _detalhes_database = {
 					["on_hold"] = false,
 					["custom"] = 0,
 					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
+					["damage_taken"] = 0.002186,
 					["start_time"] = 1602430271,
 					["serial"] = "Creature-0-4447-1-41-5646-000003112E",
-					["dps_started"] = false,
+					["monster"] = true,
 				}, -- [23]
 				{
 					["flag_original"] = 68168,
@@ -19014,23 +18675,22 @@ _detalhes_database = {
 						["Konac"] = 0,
 						["Augustin"] = 0,
 					},
-					["fight_component"] = true,
 					["pets"] = {
 					},
-					["end_time"] = 1602430498,
+					["dps_started"] = false,
+					["damage_taken"] = 0.006441,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
 					["total_without_pet"] = 0.006441,
+					["serial"] = "Creature-0-4447-1-41-7856-000003254B",
+					["monster"] = true,
+					["end_time"] = 1602430498,
+					["friendlyfire_total"] = 0,
 					["friendlyfire"] = {
 					},
-					["dps_started"] = false,
-					["total"] = 0.006441,
-					["last_event"] = 0,
-					["friendlyfire_total"] = 0,
 					["nome"] = "Southsea Freebooter",
 					["spells"] = {
-						["tipo"] = 2,
 						["_ActorTable"] = {
 							["Shoot"] = {
 								["c_amt"] = 0,
@@ -19054,12 +18714,12 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
+								["m_amt"] = 0,
 								["r_amt"] = 0,
-								["c_min"] = 0,
 							},
 							["!Melee"] = {
 								["c_amt"] = 0,
@@ -19082,24 +18742,25 @@ _detalhes_database = {
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
+								["m_amt"] = 0,
 								["r_amt"] = 0,
-								["c_min"] = 0,
 							},
 						},
+						["tipo"] = 2,
 					},
-					["monster"] = true,
+					["last_event"] = 0,
 					["on_hold"] = false,
-					["serial"] = "Creature-0-4447-1-41-7856-000003254B",
+					["total"] = 0.006441,
 					["custom"] = 0,
 					["tipo"] = 1,
-					["damage_taken"] = 0.006441,
+					["last_dps"] = 0,
 					["start_time"] = 1602430495,
 					["delay"] = 0,
-					["last_dps"] = 0,
+					["fight_component"] = true,
 				}, -- [24]
 			},
 		}, -- [1]
@@ -19117,7 +18778,9 @@ _detalhes_database = {
 					["totalover"] = 0.138841,
 					["total_without_pet"] = 21170.138841,
 					["total"] = 21170.138841,
-					["spec"] = 64,
+					["targets_absorbs"] = {
+						["Augustin"] = 0,
+					},
 					["heal_enemy"] = {
 					},
 					["on_hold"] = false,
@@ -19159,12 +18822,12 @@ _detalhes_database = {
 								},
 								["c_curado"] = 0,
 								["m_crit"] = 0,
-								["totaldenied"] = 0,
-								["m_amt"] = 0,
 								["m_healed"] = 0,
+								["c_min"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 75,
 								["n_curado"] = 12053,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["absorbed"] = 0,
 							},
 							["Mana Shield"] = {
@@ -19187,12 +18850,12 @@ _detalhes_database = {
 								},
 								["c_curado"] = 0,
 								["m_crit"] = 0,
-								["totaldenied"] = 0,
-								["m_amt"] = 0,
 								["m_healed"] = 0,
+								["c_min"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 63,
 								["n_curado"] = 7665,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["absorbed"] = 0,
 							},
 							["Healing Potion"] = {
@@ -19214,12 +18877,12 @@ _detalhes_database = {
 								},
 								["c_curado"] = 0,
 								["m_crit"] = 0,
-								["totaldenied"] = 0,
-								["m_amt"] = 0,
 								["m_healed"] = 0,
+								["c_min"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 3,
 								["n_curado"] = 1452,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["absorbed"] = 0,
 							},
 						},
@@ -19233,15 +18896,11 @@ _detalhes_database = {
 					["heal_enemy_amt"] = 0,
 					["start_time"] = 1602409192,
 					["delay"] = 0,
-					["targets_absorbs"] = {
-						["Augustin"] = 0,
-					},
+					["spec"] = 64,
 				}, -- [1]
 				{
 					["flag_original"] = 1298,
-					["targets_overheal"] = {
-						["Konac"] = 0,
-						["Augustin"] = 0,
+					["healing_from"] = {
 					},
 					["pets"] = {
 					},
@@ -19267,7 +18926,10 @@ _detalhes_database = {
 					["healing_taken"] = 0.0308,
 					["fight_component"] = true,
 					["end_time"] = 1602410484,
-					["classe"] = "PRIEST",
+					["targets_overheal"] = {
+						["Konac"] = 0,
+						["Augustin"] = 0,
+					},
 					["nome"] = "Konac",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -19293,12 +18955,12 @@ _detalhes_database = {
 								},
 								["c_curado"] = 0,
 								["m_crit"] = 0,
-								["totaldenied"] = 0,
-								["m_amt"] = 0,
 								["m_healed"] = 0,
+								["c_min"] = 0,
+								["totaldenied"] = 0,
 								["n_amt"] = 8,
 								["n_curado"] = 342,
-								["c_min"] = 0,
+								["m_amt"] = 0,
 								["absorbed"] = 0,
 							},
 							["Power Word: Shield"] = {
@@ -19321,27 +18983,26 @@ _detalhes_database = {
 								},
 								["c_curado"] = 0,
 								["m_crit"] = 0,
-								["m_healed"] = 0,
-								["c_min"] = 0,
 								["totaldenied"] = 0,
+								["m_amt"] = 0,
+								["m_healed"] = 0,
 								["n_amt"] = 0,
 								["n_curado"] = 0,
-								["m_amt"] = 0,
+								["c_min"] = 0,
 								["absorbed"] = 0,
 							},
 						},
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["healing_from"] = {
-					},
 					["spec"] = 257,
+					["classe"] = "PRIEST",
 					["custom"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 2,
 					["totaldenied"] = 0.0308,
 					["start_time"] = 1602410465,
 					["delay"] = 0,
-					["tipo"] = 2,
+					["last_event"] = 0,
 				}, -- [2]
 				{
 					["flag_original"] = 8776,
@@ -19369,7 +19030,7 @@ _detalhes_database = {
 					["healing_taken"] = 0.042822,
 					["end_time"] = 1602426856,
 					["ownerName"] = "Sandfury Witch Doctor",
-					["nome"] = "Greater Healing Ward <Sandfury Witch Doctor>",
+					["boss_fight_component"] = true,
 					["spells"] = {
 						["_ActorTable"] = {
 						},
@@ -19378,13 +19039,13 @@ _detalhes_database = {
 					["totaldenied"] = 0.042822,
 					["targets_overheal"] = {
 					},
-					["boss_fight_component"] = true,
+					["nome"] = "Greater Healing Ward <Sandfury Witch Doctor>",
 					["custom"] = 0,
-					["tipo"] = 2,
+					["last_event"] = 0,
 					["heal_enemy_amt"] = 23,
 					["start_time"] = 1602426853,
 					["delay"] = 0,
-					["last_event"] = 0,
+					["tipo"] = 2,
 				}, -- [3]
 				{
 					["flag_original"] = 2632,
@@ -19401,27 +19062,27 @@ _detalhes_database = {
 					["iniciar_hps"] = false,
 					["targets_overheal"] = {
 					},
-					["classe"] = "UNKNOW",
+					["healing_taken"] = 0.05254,
 					["totalover"] = 0.05254,
 					["total_without_pet"] = 0.05254,
 					["totalover_without_pet"] = 0.05254,
 					["start_time"] = 1602427508,
 					["monster"] = true,
 					["end_time"] = 1602427511,
-					["healing_taken"] = 0.05254,
+					["classe"] = "UNKNOW",
 					["heal_enemy_amt"] = 0,
+					["nome"] = "Sandfury Witch Doctor",
+					["targets_absorbs"] = {
+					},
+					["total"] = 0.05254,
 					["boss_fight_component"] = true,
+					["heal_enemy"] = {
+					},
 					["spells"] = {
 						["_ActorTable"] = {
 						},
 						["tipo"] = 3,
 					},
-					["total"] = 0.05254,
-					["targets_absorbs"] = {
-					},
-					["heal_enemy"] = {
-					},
-					["nome"] = "Sandfury Witch Doctor",
 					["custom"] = 0,
 					["last_event"] = 0,
 					["on_hold"] = false,
@@ -19443,27 +19104,27 @@ _detalhes_database = {
 					["totalover_without_pet"] = 0.033911,
 					["healing_from"] = {
 					},
-					["healing_taken"] = 0.033911,
+					["classe"] = "UNKNOW",
 					["totalover"] = 0.033911,
 					["total_without_pet"] = 0.033911,
 					["iniciar_hps"] = false,
 					["start_time"] = 1602427566,
 					["monster"] = true,
 					["total"] = 0.033911,
-					["classe"] = "UNKNOW",
+					["healing_taken"] = 0.033911,
 					["heal_enemy_amt"] = 0,
+					["boss_fight_component"] = true,
+					["targets_absorbs"] = {
+					},
+					["end_time"] = 1602427569,
 					["nome"] = "Sandfury Shadowcaster",
+					["heal_enemy"] = {
+					},
 					["spells"] = {
 						["_ActorTable"] = {
 						},
 						["tipo"] = 3,
 					},
-					["end_time"] = 1602427569,
-					["targets_absorbs"] = {
-					},
-					["heal_enemy"] = {
-					},
-					["boss_fight_component"] = true,
 					["custom"] = 0,
 					["tipo"] = 2,
 					["on_hold"] = false,
@@ -19478,7 +19139,7 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["received"] = 640.012432,
-					["resource"] = 0.019352,
+					["resource"] = 0.07662,
 					["targets"] = {
 						["Augustin"] = 0,
 					},
@@ -19500,6 +19161,15 @@ _detalhes_database = {
 									["Augustin"] = 0,
 								},
 								["counter"] = 1,
+							},
+							["Restore Mana"] = {
+								["total"] = 0,
+								["id"] = "Restore Mana",
+								["totalover"] = 0,
+								["targets"] = {
+									["Augustin"] = 0,
+								},
+								["counter"] = 0,
 							},
 						},
 						["tipo"] = 7,
@@ -19542,6 +19212,16 @@ _detalhes_database = {
 								},
 								["refreshamt"] = 0,
 							},
+							["Frost Nova"] = {
+								["counter"] = 0,
+								["activedamt"] = 10,
+								["appliedamt"] = 53,
+								["id"] = "Frost Nova",
+								["uptime"] = 97,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
 							["Blizzard"] = {
 								["refreshamt"] = 0,
 								["appliedamt"] = 85,
@@ -19552,16 +19232,6 @@ _detalhes_database = {
 								["targets"] = {
 								},
 								["counter"] = 0,
-							},
-							["Frost Nova"] = {
-								["counter"] = 0,
-								["activedamt"] = 10,
-								["appliedamt"] = 53,
-								["id"] = "Frost Nova",
-								["uptime"] = 97,
-								["targets"] = {
-								},
-								["refreshamt"] = 0,
 							},
 							["Frostbolt"] = {
 								["id"] = "Frostbolt",
@@ -19653,6 +19323,12 @@ _detalhes_database = {
 								},
 								["refreshamt"] = 0,
 							},
+							["Armor"] = {
+								["id"] = "Armor",
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
 							["Arcane Intellect"] = {
 								["counter"] = 0,
 								["activedamt"] = 29,
@@ -19695,19 +19371,21 @@ _detalhes_database = {
 					["grupo"] = true,
 					["spell_cast"] = {
 						["Ice Barrier"] = 6,
+						["Blizzard"] = 3,
 						["Mana Shield"] = 4,
+						["Cone of Cold"] = 6,
 						["Healing Potion"] = 3,
 						["Frostbolt"] = 0,
 						["Arcane Explosion"] = 0,
 						["Fire Blast"] = 1,
 						["Replenish Mana"] = 1,
 						["Blink"] = 13,
-						["Ice Block"] = 1,
-						["Blizzard"] = 3,
-						["Frost Nova"] = 12,
+						["Cold Snap"] = 0,
 						["Shoot"] = 3,
-						["Cone of Cold"] = 6,
+						["Frost Nova"] = 12,
 						["Polymorph"] = 0,
+						["Restore Mana"] = 0,
+						["Ice Block"] = 1,
 					},
 					["nome"] = "Augustin",
 					["last_event"] = 0,
@@ -19722,38 +19400,38 @@ _detalhes_database = {
 				}, -- [1]
 				{
 					["flag_original"] = 68168,
-					["pets"] = {
-					},
+					["last_event"] = 0,
 					["boss_fight_component"] = true,
 					["monster"] = true,
+					["pets"] = {
+					},
 					["spell_cast"] = {
 						["Lava Spout Totem"] = 69,
 						["Healing Ward"] = 77,
 					},
-					["fight_component"] = true,
 					["nome"] = "Sandfury Witch Doctor",
-					["tipo"] = 4,
-					["last_event"] = 0,
-					["serial"] = "Creature-0-4469-209-23243-5650-000482D376",
 					["classe"] = "UNKNOW",
+					["tipo"] = 4,
+					["serial"] = "Creature-0-4469-209-23243-5650-000482D376",
+					["fight_component"] = true,
 				}, -- [2]
 				{
 					["flag_original"] = 2632,
-					["pets"] = {
-					},
+					["last_event"] = 0,
 					["boss_fight_component"] = true,
 					["monster"] = true,
+					["pets"] = {
+					},
 					["spell_cast"] = {
 						["Shadow Word: Pain"] = 3,
 						["Demon Skin"] = 16,
 						["Shadow Bolt"] = 89,
 					},
-					["fight_component"] = true,
 					["nome"] = "Sandfury Shadowcaster",
-					["tipo"] = 4,
-					["last_event"] = 0,
-					["serial"] = "Creature-0-4469-209-23243-5648-000102D377",
 					["classe"] = "UNKNOW",
+					["tipo"] = 4,
+					["serial"] = "Creature-0-4469-209-23243-5648-000102D377",
+					["fight_component"] = true,
 				}, -- [3]
 				{
 					["flag_original"] = 2632,
@@ -19783,12 +19461,13 @@ _detalhes_database = {
 					["buff_uptime"] = 0,
 					["spell_cast"] = {
 						["Renew"] = 0,
+						["Shadow Word: Pain"] = 0,
 						["Power Word: Shield"] = 0,
 						["Smite"] = 0,
 						["Divine Spirit"] = 0,
-						["Shadow Word: Pain"] = 0,
 						["Power Word: Fortitude"] = 0,
 						["Mind Blast"] = 0,
+						["Shoot"] = 0,
 					},
 					["tipo"] = 4,
 					["last_event"] = 0,
@@ -19824,31 +19503,31 @@ _detalhes_database = {
 				}, -- [5]
 				{
 					["fight_component"] = true,
-					["classe"] = "UNKNOW",
+					["nome"] = "Sandfury Shadowhunter",
 					["boss_fight_component"] = true,
 					["monster"] = true,
+					["pets"] = {
+					},
 					["spell_cast"] = {
 						["Shoot"] = 11,
 					},
-					["nome"] = "Sandfury Shadowhunter",
-					["pets"] = {
-					},
 					["tipo"] = 4,
 					["last_event"] = 0,
+					["classe"] = "UNKNOW",
 					["serial"] = "Creature-0-4469-209-23243-7246-000282D378",
 					["flag_original"] = 2632,
 				}, -- [6]
 				{
 					["fight_component"] = true,
 					["nome"] = "Scarab",
-					["classe"] = "UNKNOW",
+					["last_event"] = 0,
 					["spell_cast"] = {
 						["Plague Cloud"] = 4,
 					},
 					["pets"] = {
 					},
-					["last_event"] = 0,
 					["tipo"] = 4,
+					["classe"] = "UNKNOW",
 					["serial"] = "Creature-0-4469-209-23243-7269-000082D376",
 					["flag_original"] = 2600,
 				}, -- [7]
@@ -19869,11 +19548,6 @@ _detalhes_database = {
 				}, -- [8]
 				{
 					["fight_component"] = true,
-					["flag_original"] = 1352,
-					["nome"] = "Kyth",
-					["enemy"] = true,
-					["pets"] = {
-					},
 					["spell_cast"] = {
 						["Fireball"] = 0,
 						["Presence of Mind"] = 0,
@@ -19882,8 +19556,13 @@ _detalhes_database = {
 						["Mind Quickening"] = 0,
 						["Fire Blast"] = 0,
 					},
-					["tipo"] = 4,
+					["nome"] = "Kyth",
+					["enemy"] = true,
+					["pets"] = {
+					},
+					["flag_original"] = 1352,
 					["last_event"] = 0,
+					["tipo"] = 4,
 					["serial"] = "Player-4465-00B6D9C6",
 					["classe"] = "UNGROUPPLAYER",
 				}, -- [9]
@@ -19950,8 +19629,8 @@ _detalhes_database = {
 				}, -- [12]
 				{
 					["monster"] = true,
-					["nome"] = "Southsea Freebooter",
 					["tipo"] = 4,
+					["nome"] = "Southsea Freebooter",
 					["pets"] = {
 					},
 					["spell_cast"] = {
@@ -19963,6 +19642,21 @@ _detalhes_database = {
 					["serial"] = "Creature-0-4447-1-41-7856-000003254B",
 					["classe"] = "UNKNOW",
 				}, -- [13]
+				{
+					["monster"] = true,
+					["last_event"] = 0,
+					["nome"] = "Southsea Pirate",
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["flag_original"] = 2632,
+					["tipo"] = 4,
+					["fight_component"] = true,
+					["serial"] = "Creature-0-4447-1-41-7855-00000332D7",
+					["spell_cast"] = {
+						["Strike"] = 0,
+					},
+				}, -- [14]
 			},
 		}, -- [4]
 		{
@@ -20241,7 +19935,7 @@ _detalhes_database = {
 	["on_death_menu"] = true,
 	["force_font_outline"] = "",
 	["character_data"] = {
-		["logons"] = 1726,
+		["logons"] = 1728,
 	},
 	["announce_cooldowns"] = {
 		["ignored_cooldowns"] = {

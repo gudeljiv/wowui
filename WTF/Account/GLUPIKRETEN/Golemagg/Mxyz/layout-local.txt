@@ -1,9 +1,9 @@
 Version: 1
 Frame: EavesDropFrame
 FrameLevel: 1
-Anchor: TOPRIGHT
+Anchor: RIGHT
 X: -29
-Y: -272
+Y: 266
 W: 154
 H: 322
 Frame: PlayerFrame

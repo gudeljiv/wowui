@@ -1,12 +1,6 @@
 
 DEJUNK_ADDON_SV = {
 	["DDBL_Version"] = "2.0.2",
-	["Global"] = {
-		["Minimap"] = {
-			["minimapPos"] = 35.8575922896139,
-			["hide"] = true,
-		},
-	},
 	["ProfileKeys"] = {
 		["Grgur-Golemagg"] = "Default",
 		["Mxyz-Golemagg"] = "Default",
@@ -15,9 +9,15 @@ DEJUNK_ADDON_SV = {
 		["Mxyzptlk-Golemagg"] = "Default",
 		["Augustin-Golemagg"] = "Default",
 		["Dmitar-Golemagg"] = "Default",
-		["Koloman-Golemagg"] = "Default",
-		["Mxzq-Golemagg"] = "Default",
 		["Vermin-Golemagg"] = "Default",
+		["Mxzq-Golemagg"] = "Default",
+		["Koloman-Golemagg"] = "Default",
+	},
+	["Global"] = {
+		["Minimap"] = {
+			["minimapPos"] = 35.8575922896139,
+			["hide"] = true,
+		},
 	},
 	["Profiles"] = {
 		["Default"] = {
@@ -41,10 +41,10 @@ DEJUNK_ADDON_SV = {
 				["1708"] = true,
 				["1707"] = true,
 				["1711"] = true,
-				["5785"] = true,
+				["4544"] = true,
 				["4633"] = true,
 				["4424"] = true,
-				["4544"] = true,
+				["5785"] = true,
 			},
 			["DestroyPoor"] = true,
 			["AutoSell"] = true,
@@ -59,13 +59,13 @@ DEJUNK_ADDON_SV = {
 				["7974"] = true,
 				["17057"] = true,
 				["12205"] = true,
-				["1074"] = true,
 				["8483"] = true,
-				["4585"] = true,
+				["5637"] = true,
+				["6362"] = true,
 				["17058"] = true,
 				["4337"] = true,
-				["6362"] = true,
-				["5637"] = true,
+				["4585"] = true,
+				["1074"] = true,
 			},
 		},
 	},

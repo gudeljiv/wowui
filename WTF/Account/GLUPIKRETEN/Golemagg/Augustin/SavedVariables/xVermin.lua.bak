@@ -10,11 +10,15 @@ xKillCount = {
 	["killLog"] = {
 		["Southsea Dock Worker"] = {
 			["name"] = "Southsea Dock Worker",
-			["count"] = 11,
+			["count"] = 87,
+		},
+		["Southsea Pirate"] = {
+			["name"] = "Southsea Pirate",
+			["count"] = 6,
 		},
 		["Southsea Swashbuckler"] = {
 			["name"] = "Southsea Swashbuckler",
-			["count"] = 7,
+			["count"] = 56,
 		},
 	},
 }
