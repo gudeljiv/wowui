@@ -386,6 +386,7 @@ kcreset:SetScript(
 		if button == "LeftButton" then
 			xKillCount.killLog = {}
 			sortedKillLog = {}
+			pullkills = 0
 			DisplayData()
 			RestartTimer()
 		end

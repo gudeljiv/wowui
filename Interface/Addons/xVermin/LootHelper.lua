@@ -1,10 +1,10 @@
 local _, xVermin = ...
 
+local ai = false
+
 local function Set(autointeract)
-	SetCVar("AutoInteract", autointeract and "1" or "0")
-	if (autointeract) then
-		-- PlayerHealthFrame:SetAlpha(0)
-		-- TargetHealthFrame:SetAlpha(0)
+	-- SetCVar("AutoInteract", autointeract and "1" or "0")
+	if autointeract then
 		SetBinding("MOUSEWHEELUP", "INTERACTMOUSEOVER", 1)
 		SetBinding("MOUSEWHEELDOWN", "INTERACTMOUSEOVER", 1)
 		PlayerFrame:SetAlpha(0)
@@ -14,8 +14,6 @@ local function Set(autointeract)
 		LootFrame:SetAlpha(0)
 		GameTooltip:SetScript("OnShow", GameTooltip.Hide)
 	else
-		-- PlayerHealthFrame:SetAlpha(1)
-		-- TargetHealthFrame:SetAlpha(1)
 		SetBinding("MOUSEWHEELDOWN", "MULTIACTIONBAR2BUTTON1", 1)
 		SetBinding("MOUSEWHEELUP", "MULTIACTIONBAR2BUTTON2", 1)
 		PlayerFrame:SetAlpha(1)
@@ -25,6 +23,8 @@ local function Set(autointeract)
 		LootFrame:SetAlpha(1)
 		GameTooltip:SetScript("OnShow", GameTooltip.Show)
 	end
+
+	ai = autointeract
 end
 
 local function Get()
@@ -36,7 +36,7 @@ f:SetScript(
 	"OnEvent",
 	function(self, event)
 		if event == "PLAYER_REGEN_ENABLED" then
-			Set(not Get())
+			Set(not ai)
 			f:UnregisterEvent("PLAYER_REGEN_ENABLED")
 		end
 	end
@@ -48,7 +48,8 @@ btn:SetScript(
 	"OnClick",
 	function(self, event)
 		if not InCombatLockdown() then
-			Set(not Get())
+			-- Set(not Get())
+			Set(not ai)
 		else
 			f:RegisterEvent("PLAYER_REGEN_ENABLED")
 		end

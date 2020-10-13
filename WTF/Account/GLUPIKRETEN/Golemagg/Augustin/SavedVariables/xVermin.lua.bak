@@ -1,24 +1,24 @@
 
 xKillCount = {
 	["show"] = true,
+	["killLog"] = {
+		["Greater Healing Ward"] = {
+			["name"] = "Greater Healing Ward",
+			["count"] = 1,
+		},
+		["Zul'Farrak Zombie"] = {
+			["name"] = "Zul'Farrak Zombie",
+			["count"] = 90,
+		},
+		["Zul'Farrak Dead Hero"] = {
+			["name"] = "Zul'Farrak Dead Hero",
+			["count"] = 3,
+		},
+	},
 	["position"] = {
 		["y"] = 295.687225341797,
 		["x"] = 493.107604980469,
 		["to"] = "LEFT",
 		["from"] = "LEFT",
-	},
-	["killLog"] = {
-		["Southsea Dock Worker"] = {
-			["name"] = "Southsea Dock Worker",
-			["count"] = 87,
-		},
-		["Southsea Pirate"] = {
-			["name"] = "Southsea Pirate",
-			["count"] = 6,
-		},
-		["Southsea Swashbuckler"] = {
-			["name"] = "Southsea Swashbuckler",
-			["count"] = 56,
-		},
 	},
 }

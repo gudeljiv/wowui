@@ -2269,7 +2269,7 @@ DBMPartyClassic_SavedStats = {
 		["mythicPulls"] = 0,
 		["challengePulls"] = 0,
 	},
-	["BlindHunter"] = {
+	["375"] = {
 		["normalPulls"] = 0,
 		["challengeKills"] = 0,
 		["challengeBestRank"] = 0,
@@ -2307,7 +2307,7 @@ DBMPartyClassic_SavedStats = {
 		["mythicPulls"] = 0,
 		["challengePulls"] = 0,
 	},
-	["471"] = {
+	["BlindHunter"] = {
 		["normalPulls"] = 0,
 		["challengeKills"] = 0,
 		["challengeBestRank"] = 0,
@@ -2592,7 +2592,7 @@ DBMPartyClassic_SavedStats = {
 		["mythicPulls"] = 0,
 		["challengePulls"] = 0,
 	},
-	["375"] = {
+	["471"] = {
 		["normalPulls"] = 0,
 		["challengeKills"] = 0,
 		["challengeBestRank"] = 0,

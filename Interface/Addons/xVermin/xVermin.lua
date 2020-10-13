@@ -125,13 +125,18 @@ f:SetScript(
 				end
 			)
 
+			Minimap:ClearAllPoints()
+			Minimap:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", -40, -40)
+			Minimap.SetPoint = function()
+			end
+
 			MultiBarBottomLeft:ClearAllPoints()
 			MultiBarBottomLeft:SetPoint("BOTTOM", MainMenuBar, "TOP", 0, -5)
 			MultiBarBottomLeft.SetPoint = function()
 			end
 
 			MultiBarRightButton1:ClearAllPoints()
-			MultiBarRightButton1:SetPoint("LEFT", CustomContainer_1, "RIGHT", 5, 2)
+			MultiBarRightButton1:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", -9, -25)
 			MultiBarRightButton1.ClearAllPoints = function()
 			end
 			MultiBarRightButton1.SetPoint = function()
@@ -144,8 +149,8 @@ f:SetScript(
 			MultiBarLeftButton1.SetPoint = function()
 			end
 
-			MultiBarRight:SetScale(0.7)
-			MultiBarLeft:SetScale(0.7)
+			MultiBarRight:SetScale(0.8)
+			MultiBarLeft:SetScale(0.8)
 			MultiBarRight.SetScale = function()
 			end
 			MultiBarLeft.SetScale = function()

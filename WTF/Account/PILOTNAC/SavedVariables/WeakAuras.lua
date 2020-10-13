@@ -15,9 +15,9 @@ WeakAurasSaved = {
 	},
 	["frame"] = {
 		["xOffset"] = -886.999877929688,
-		["yOffset"] = -359.500122070313,
-		["height"] = 665.000061035156,
 		["width"] = 830,
+		["height"] = 665.000061035156,
+		["yOffset"] = -359.500122070313,
 	},
 	["editor_theme"] = "Monokai",
 }
