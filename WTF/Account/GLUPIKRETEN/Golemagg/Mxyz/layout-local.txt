@@ -2,8 +2,8 @@ Version: 1
 Frame: EavesDropFrame
 FrameLevel: 1
 Anchor: RIGHT
-X: -29
-Y: 266
+X: -44
+Y: 250
 W: 154
 H: 322
 Frame: PlayerFrame
@@ -104,6 +104,13 @@ X: 243
 Y: -107
 W: 50
 H: 50
+Frame: WeakAurasOptions
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 284
+Y: -102
+W: 830
+H: 665
 Frame: TargetFrame
 FrameLevel: 1
 Anchor: CENTER
