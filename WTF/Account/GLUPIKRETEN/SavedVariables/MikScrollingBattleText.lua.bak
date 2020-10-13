@@ -13,14 +13,14 @@ MSBTProfiles_SavedVars = {
 				["Notification"] = {
 					["disabled"] = true,
 				},
-				["Outgoing"] = {
-					["stickyTextAlignIndex"] = 3,
-					["offsetX"] = 360,
+				["Incoming"] = {
+					["stickyTextAlignIndex"] = 1,
+					["offsetX"] = -400,
+					["iconAlign"] = "Right",
 					["behavior"] = "MSBT_NORMAL",
-					["iconAlign"] = "Left",
 					["offsetY"] = 50,
 					["animationStyle"] = "Straight",
-					["textAlignIndex"] = 3,
+					["textAlignIndex"] = 1,
 				},
 				["Static"] = {
 					["disabled"] = true,
@@ -32,13 +32,13 @@ MSBTProfiles_SavedVars = {
 					["offsetY"] = 0,
 					["name"] = "CRIT",
 				},
-				["Incoming"] = {
-					["stickyTextAlignIndex"] = 1,
-					["offsetX"] = -400,
-					["textAlignIndex"] = 1,
-					["iconAlign"] = "Right",
-					["offsetY"] = 50,
+				["Outgoing"] = {
+					["stickyTextAlignIndex"] = 3,
+					["offsetX"] = 360,
 					["animationStyle"] = "Straight",
+					["iconAlign"] = "Left",
+					["offsetY"] = 50,
+					["textAlignIndex"] = 3,
 					["behavior"] = "MSBT_NORMAL",
 				},
 			},
@@ -47,28 +47,21 @@ MSBTProfiles_SavedVars = {
 			["normalFontSize"] = 15,
 		},
 		["Multibox master"] = {
-			["creationVersion"] = "5.7.123",
+			["normalFontSize"] = 15,
 			["powerThrottleDuration"] = 2,
 			["critFontName"] = "MSBT Yellowjacket",
-			["groupNumbers"] = true,
 			["scrollAreas"] = {
 				["Outgoing"] = {
 					["stickyTextAlignIndex"] = 3,
 					["offsetX"] = 360,
-					["animationStyle"] = "Straight",
 					["iconAlign"] = "Left",
+					["behavior"] = "MSBT_NORMAL",
 					["offsetY"] = 50,
 					["textAlignIndex"] = 3,
-					["behavior"] = "MSBT_NORMAL",
-				},
-				["Incoming"] = {
-					["stickyTextAlignIndex"] = 1,
-					["offsetX"] = -400,
-					["behavior"] = "MSBT_NORMAL",
-					["iconAlign"] = "Right",
-					["offsetY"] = 50,
 					["animationStyle"] = "Straight",
-					["textAlignIndex"] = 1,
+				},
+				["Notification"] = {
+					["disabled"] = true,
 				},
 				["Static"] = {
 					["disabled"] = true,
@@ -80,13 +73,20 @@ MSBTProfiles_SavedVars = {
 					["offsetY"] = 0,
 					["name"] = "CRIT",
 				},
-				["Notification"] = {
-					["disabled"] = true,
+				["Incoming"] = {
+					["stickyTextAlignIndex"] = 1,
+					["offsetX"] = -400,
+					["animationStyle"] = "Straight",
+					["iconAlign"] = "Right",
+					["offsetY"] = 50,
+					["textAlignIndex"] = 1,
+					["behavior"] = "MSBT_NORMAL",
 				},
 			},
-			["normalFontName"] = "MSBT Yellowjacket",
 			["hideFullHoTOverheals"] = false,
-			["normalFontSize"] = 15,
+			["normalFontName"] = "MSBT Yellowjacket",
+			["groupNumbers"] = true,
+			["creationVersion"] = "5.7.123",
 		},
 	},
 }

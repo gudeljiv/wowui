@@ -61,8 +61,8 @@ EavesDropStatsDB = {
 					},
 					["Mana Burn"] = {
 						[-2] = {
-							["time"] = "|cffffffff10/11/20 12:36:09|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMana Burn|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Player-4465-01E2E7A8:Defity|hDefity|h |cffffffff151|r |cffffffffShadow|r. ",
-							["amount"] = 151,
+							["time"] = "|cffffffff10/12/20 08:20:02|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffMana Burn|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Player-4465-019A1857:Khampisak|hKhampisak|h |cffffffff379|r |cffffffffShadow|r. ",
+							["amount"] = 379,
 						},
 						[2] = {
 						},

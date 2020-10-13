@@ -1,14 +1,14 @@
 
 KILLTRACK = {
+	["TOOLTIP"] = true,
+	["COUNT_GROUP"] = false,
+	["SHOW_EXP"] = false,
 	["BROKER"] = {
 		["MINIMAP"] = {
 			["hide"] = true,
 		},
 		["SHORT_TEXT"] = false,
 	},
-	["PRINTKILLS"] = false,
-	["SHOW_EXP"] = false,
-	["TOOLTIP"] = true,
 	["PRINTNEW"] = false,
 	["MOBS"] = {
 		[3466] = {
@@ -291,6 +291,11 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Devouring Ectoplasm",
 		},
+		[3384] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Southsea Privateer",
+		},
 		[8886] = {
 			["AchievCount"] = 0,
 			["Kills"] = 14,
@@ -521,20 +526,20 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Skum",
 		},
-		[5649] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Sandfury Blood Drinker",
-		},
 		[4360] = {
 			["AchievCount"] = 0,
 			["Kills"] = 1,
 			["Name"] = "Mirefin Warrior",
 		},
-		[1192] = {
+		[5649] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Toyotaa",
+			["Name"] = "Sandfury Blood Drinker",
+		},
+		[4358] = {
+			["AchievCount"] = 0,
+			["Kills"] = 1,
+			["Name"] = "Mirefin Puddlejumper",
 		},
 		[923] = {
 			["AchievCount"] = 0,
@@ -546,15 +551,15 @@ KILLTRACK = {
 			["Kills"] = 1,
 			["Name"] = "Enraged Stanley",
 		},
-		[4358] = {
+		[1192] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Mirefin Puddlejumper",
+			["Kills"] = 0,
+			["Name"] = "Toyotaa",
 		},
-		[7856] = {
+		[2406] = {
 			["AchievCount"] = 0,
-			["Kills"] = 2,
-			["Name"] = "Southsea Freebooter",
+			["Kills"] = 4,
+			["Name"] = "Mountain Lion",
 		},
 		[2403] = {
 			["AchievCount"] = 0,
@@ -586,10 +591,10 @@ KILLTRACK = {
 			["Kills"] = 2,
 			["Name"] = "Southsea Pirate",
 		},
-		[2406] = {
+		[7856] = {
 			["AchievCount"] = 0,
-			["Kills"] = 4,
-			["Name"] = "Mountain Lion",
+			["Kills"] = 2,
+			["Name"] = "Southsea Freebooter",
 		},
 		[7857] = {
 			["AchievCount"] = 0,
@@ -651,20 +656,20 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Mishabebe",
 		},
-		[3126] = {
+		[3840] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Armored Scorpid",
+			["Kills"] = 24,
+			["Name"] = "Druid of the Fang",
 		},
 		[7360] = {
 			["AchievCount"] = 0,
 			["Kills"] = 8,
 			["Name"] = "Dun Garok Soldier",
 		},
-		[3840] = {
+		[3126] = {
 			["AchievCount"] = 0,
-			["Kills"] = 24,
-			["Name"] = "Druid of the Fang",
+			["Kills"] = 0,
+			["Name"] = "Armored Scorpid",
 		},
 		[3383] = {
 			["AchievCount"] = 0,
@@ -686,11 +691,6 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Lieutenant Valorcall",
 		},
-		[10038] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Night Watch Guard",
-		},
 		[5618] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
@@ -706,20 +706,25 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Drywallow Crocolisk",
 		},
-		[2356] = {
+		[10038] = {
 			["AchievCount"] = 0,
-			["Kills"] = 13,
-			["Name"] = "Elder Gray Bear",
+			["Kills"] = 0,
+			["Name"] = "Night Watch Guard",
+		},
+		[2560] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Highland Thrasher",
 		},
 		[768] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Shadow Panther",
 		},
-		[2560] = {
+		[2356] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Highland Thrasher",
+			["Kills"] = 13,
+			["Name"] = "Elder Gray Bear",
 		},
 		[7883] = {
 			["AchievCount"] = 0,
@@ -751,10 +756,10 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Hecklefang Stalker",
 		},
-		[769] = {
+		[1789] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
-			["Name"] = "Deathstrike Tarantula",
+			["Name"] = "Skeletal Acolyte",
 		},
 		[13816] = {
 			["AchievCount"] = 0,
@@ -821,15 +826,15 @@ KILLTRACK = {
 			["Kills"] = 4,
 			["Name"] = "Hulking Mountain Lion",
 		},
+		[769] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Deathstrike Tarantula",
+		},
 		[2408] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Snapjaw",
-		},
-		[1789] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Skeletal Acolyte",
 		},
 		[6020] = {
 			["AchievCount"] = 0,
@@ -1001,5 +1006,5 @@ KILLTRACK = {
 		["POSITION"] = {
 		},
 	},
-	["COUNT_GROUP"] = false,
+	["PRINTKILLS"] = false,
 }

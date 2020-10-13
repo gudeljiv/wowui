@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 2061,
+	["session"] = 2063,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -1659,8 +1659,8 @@ BugGrabberDB = {
 			["time"] = "2020/10/11 16:59:24",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Hide'\nInterface\\FrameXML\\PetFrame.lua:62: in function <Interface\\FrameXML\\PetFrame.lua:41>\n[C]: in function `PetFrame_Update'\nInterface\\FrameXML\\PetFrame.lua:89: in function <Interface\\FrameXML\\PetFrame.lua:67>",
-			["session"] = 2058,
-			["counter"] = 2,
+			["session"] = 2063,
+			["counter"] = 4,
 		}, -- [212]
 	},
 }
