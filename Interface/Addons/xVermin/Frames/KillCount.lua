@@ -5,7 +5,8 @@ local sortedKillLog = {}
 local tStart = time()
 local combatTimer = time()
 local timeticker = nil
-local pullkills = 0
+local pullkills, pullxp, totalxp = 0
+local xppadding = 20
 
 local defaults = {
 	show = false,
@@ -117,7 +118,7 @@ kctimerstartstop:SetWidth(kctimerstartstop.text:GetStringWidth())
 kctimerstartstop:SetHeight(kctimerstartstop.text:GetStringHeight())
 
 local kcreset = CreateFrame("Frame", "KillCountReset", kc)
-kcreset:SetPoint("BOTTOMLEFT", kc, "BOTTOMLEFT", 10, 10)
+kcreset:SetPoint("BOTTOMLEFT", kc, "BOTTOMLEFT", 10, 30)
 kcreset:SetFrameStrata("LOW")
 kcreset.text = kcreset:CreateFontString(nil, "ARTWORK")
 kcreset.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
@@ -126,6 +127,40 @@ kcreset.text:SetText("Reset")
 kcreset.text:SetTextColor(50 / 255, 200 / 255, 50 / 255, 1)
 kcreset:SetWidth(kcreset.text:GetStringWidth())
 kcreset:SetHeight(kcreset.text:GetStringHeight())
+
+local pullxp = CreateFrame("Frame", "PullExperience", kc)
+pullxp:SetPoint("BOTTOMLEFT", kc, "BOTTOMLEFT", 10, 20)
+pullxp:SetFrameStrata("LOW")
+pullxp.text = pullxp:CreateFontString(nil, "ARTWORK")
+pullxp.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
+pullxp.text:SetPoint("BOTTOMLEFT", pullxp, "BOTTOMLEFT", 0, 0)
+pullxp.text:SetText("Pull experience:")
+
+local pullxpvalue = CreateFrame("Frame", "PullExperienceValue", kc)
+pullxpvalue:SetPoint("BOTTOMRIGHT", kc, "BOTTOMRIGHT", -10, 20)
+pullxpvalue:SetFrameStrata("LOW")
+pullxpvalue.text = pullxpvalue:CreateFontString(nil, "ARTWORK")
+pullxpvalue.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
+pullxpvalue.text:SetPoint("BOTTOMRIGHT", pullxpvalue, "BOTTOMRIGHT", 0, 0)
+pullxpvalue.text:SetJustifyH("RIGHT")
+pullxpvalue.text:SetText("0")
+
+local totalxp = CreateFrame("Frame", "TotalExperience", kc)
+totalxp:SetPoint("BOTTOMLEFT", kc, "BOTTOMLEFT", 10, 10)
+totalxp:SetFrameStrata("LOW")
+totalxp.text = totalxp:CreateFontString(nil, "ARTWORK")
+totalxp.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
+totalxp.text:SetPoint("BOTTOMLEFT", totalxp, "BOTTOMLEFT", 0, 0)
+totalxp.text:SetText("Total experience:")
+
+local totalxpvalue = CreateFrame("Frame", "TotalExperienceValue", kc)
+totalxpvalue:SetPoint("BOTTOMRIGHT", kc, "BOTTOMRIGHT", -10, 10)
+totalxpvalue:SetFrameStrata("LOW")
+totalxpvalue.text = pullxpvalue:CreateFontString(nil, "ARTWORK")
+totalxpvalue.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
+totalxpvalue.text:SetPoint("BOTTOMRIGHT", totalxpvalue, "BOTTOMRIGHT", 0, 0)
+totalxpvalue.text:SetJustifyH("RIGHT")
+totalxpvalue.text:SetText("0")
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -226,8 +261,8 @@ local function DisplayData()
 	kclistpercentages.text:SetText(percentages)
 
 	local w = kclistnames.text:GetStringWidth() + kclistpercentages.text:GetStringWidth() + 40
-	local h = kctitle.text:GetStringHeight() + kctotal.text:GetStringHeight() + kclistnames.text:GetStringHeight() + 80
-	kc:SetSize(math.max(w, 150), math.max(h, 85))
+	local h = kctitle.text:GetStringHeight() + kctotal.text:GetStringHeight() + kclistnames.text:GetStringHeight() + 80 + xppadding
+	kc:SetSize(math.max(w, 250), math.max(h, 125))
 end
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -277,7 +312,7 @@ kc:SetScript(
 
 		if xKillCount and xKillCount.show then
 			if event == "PLAYER_REGEN_DISABLED" then
-				if time() - combatTimer > 2 then
+				if time() - combatTimer > 3 then
 					pullkills = 0
 					combatTimer = time()
 				end
@@ -290,29 +325,97 @@ kc:SetScript(
 				kc:SetMovable(true)
 			end
 
-			local _, eventType, _, sourceGUID, sourceName, _, _, destGUID, destName = CombatLogGetCurrentEventInfo()
-			local amount, overkill, school, resisted, blocked, absorbed, critical, glancing, crushing, isOffHand
-			local spellId, spellName, spellSchool
+			if event == "COMBAT_LOG_EVENT_UNFILTERED" then
+				local _, eventType, _, sourceGUID, sourceName, _, _, destGUID, destName = CombatLogGetCurrentEventInfo()
+				local amount, overkill, school, resisted, blocked, absorbed, critical, glancing, crushing, isOffHand
+				local spellId, spellName, spellSchool
 
-			if UnitExists("pet") and sourceGUID == UnitGUID("pet") then
-				if eventType == "SWING_DAMAGE" then
-					amount, overkill, school, resisted, blocked, absorbed, critical, glancing, crushing, isOffHand = select(12, CombatLogGetCurrentEventInfo())
-				elseif eventType == "SPELL_DAMAGE" then
-					spellId, spellName, spellSchool, amount, overkill, school, resisted, blocked, absorbed, critical, glancing, crushing, isOffHand = select(12, CombatLogGetCurrentEventInfo())
-				end
+				if UnitExists("pet") and sourceGUID == UnitGUID("pet") then
+					if eventType == "SWING_DAMAGE" then
+						amount, overkill, school, resisted, blocked, absorbed, critical, glancing, crushing, isOffHand = select(12, CombatLogGetCurrentEventInfo())
+					elseif eventType == "SPELL_DAMAGE" then
+						spellId, spellName, spellSchool, amount, overkill, school, resisted, blocked, absorbed, critical, glancing, crushing, isOffHand = select(12, CombatLogGetCurrentEventInfo())
+					end
 
-				if (overkill and overkill ~= -1) then
-					SendToTable(destName, "pet")
-					combatTimer = time()
-				end
-			else
-				if (eventType == "PARTY_KILL" and sourceGUID == UnitGUID("player")) then
-					SendToTable(destName, "player")
-					combatTimer = time()
+					if (overkill and overkill ~= -1) then
+						SendToTable(destName, "pet")
+						combatTimer = time()
+					end
+				else
+					if (eventType == "PARTY_KILL" and sourceGUID == UnitGUID("player")) then
+						SendToTable(destName, "player")
+						combatTimer = time()
+					end
 				end
 			end
 
 			DisplayData()
+		end
+	end
+)
+
+------------------------------
+-- Calculate XP
+------------------------------
+local totaltotal, pulltotal, gained = 0
+local maxxp, currentxp, tolevel
+
+local function CalculateTotalExperience(event, isInitialLogin, isReloadingUi)
+	if event == "PLAYER_REGEN_DISABLED" then
+		if time() - combatTimer > 3 then
+			pulltotal = 0
+			combatTimer = time()
+		end
+	end
+	if event == "PLAYER_ENTERING_WORLD" and (isInitialLogin or isReloadingUi) then
+		pulltotal = 0
+		maxxp = UnitXPMax("player")
+		currentxp = UnitXP("player")
+	else
+		newxp = UnitXP("player")
+		if event == "PLAYER_LEVEL_CHANGED" then
+			gained = maxxp - currentxp + newxp
+			maxxp = UnitXPMax("player")
+		else
+			gained = newxp - currentxp
+		end
+		totaltotal = totaltotal + gained
+		pulltotal = pulltotal + gained
+		totalxpvalue.text:SetText("Total experience: " .. totaltotal)
+		pullxpvalue.text:SetText("Pull experience: " .. pulltotal)
+
+		currentxp = newxp
+	end
+end
+
+local experience = CreateFrame("Frame")
+experience:RegisterEvent("PLAYER_XP_UPDATE")
+experience:RegisterEvent("PLAYER_LEVEL_CHANGED")
+experience:RegisterEvent("PLAYER_ENTERING_WORLD")
+experience:RegisterEvent("PLAYER_REGEN_DISABLED")
+experience:RegisterEvent("PLAYER_REGEN_ENABLED")
+experience:SetScript(
+	"OnEvent",
+	function(self, event, isInitialLogin, isReloadingUi)
+		if UnitLevel("player") == MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] then
+			xppadding = 0
+			pullxp:Hide()
+			totalxp:Hide()
+		else
+			if event ~= "PLAYER_REGEN_ENABLED" then
+				pullxp:Show()
+				totalxp:Show()
+				CalculateTotalExperience(event, isInitialLogin, isReloadingUi)
+			end
+		end
+
+		if event == "PLAYER_REGEN_DISABLED" then
+			pullxp.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
+			totalxp.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
+		end
+		if event == "PLAYER_REGEN_ENABLED" then
+			pullxp.text:SetTextColor(1, 1, 1, 1)
+			totalxp.text:SetTextColor(1, 1, 1, 1)
 		end
 	end
 )
@@ -387,8 +490,13 @@ kcreset:SetScript(
 			xKillCount.killLog = {}
 			sortedKillLog = {}
 			pullkills = 0
+
+			totalxp = 0
+			pulltotal = 0
+			totalxpvalue.text:SetText(totaltotal)
+			pullxpvalue.text:SetText(pulltotal)
+
 			DisplayData()
-			RestartTimer()
 		end
 	end
 )
