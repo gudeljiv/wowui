@@ -103,7 +103,7 @@ KILLTRACK_CHAR = {
 		},
 		[5425] = {
 			["Name"] = "Starving Blisterpaw",
-			["Kills"] = 0,
+			["Kills"] = 1,
 		},
 		[5426] = {
 			["Name"] = "Blisterpaw Hyena",
@@ -313,9 +313,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Scarab",
 			["Kills"] = 0,
 		},
-		[2371] = {
-			["Name"] = "Daggerspine Siren",
-			["Kills"] = 1,
+		[7276] = {
+			["Name"] = "Zul'Farrak Dead Hero",
+			["Kills"] = 20,
 		},
 		[7271] = {
 			["Name"] = "Witch Doctor Zum'rah",
@@ -337,9 +337,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Ward of Zum'rah",
 			["Kills"] = 0,
 		},
-		[7786] = {
-			["Name"] = "Skeleton of Zum'rah",
-			["Kills"] = 4,
+		[2371] = {
+			["Name"] = "Daggerspine Siren",
+			["Kills"] = 1,
 		},
 		[2244] = {
 			["Name"] = "Syndicate Shadow Mage",
@@ -379,7 +379,7 @@ KILLTRACK_CHAR = {
 		},
 		[7286] = {
 			["Name"] = "Zul'Farrak Zombie",
-			["Kills"] = 353,
+			["Kills"] = 392,
 		},
 		[2249] = {
 			["Name"] = "Ferocious Yeti",
@@ -489,13 +489,13 @@ KILLTRACK_CHAR = {
 			["Name"] = "Citizen Wilkes",
 			["Kills"] = 2,
 		},
-		[858] = {
-			["Name"] = "Sorrow Spinner",
+		[5286] = {
+			["Name"] = "Longtooth Runner",
 			["Kills"] = 0,
 		},
-		[4514] = {
-			["Name"] = "ArmordEmxara",
-			["Kills"] = 0,
+		[2265] = {
+			["Name"] = "Hillsbrad Apprentice Blacksmith",
+			["Kills"] = 4,
 		},
 		[4511] = {
 			["Name"] = "Jabalí",
@@ -505,13 +505,13 @@ KILLTRACK_CHAR = {
 			["Name"] = "Hillsbrad Tailor",
 			["Kills"] = 6,
 		},
-		[3671] = {
-			["Name"] = "Lady Anacondra",
-			["Kills"] = 1,
+		[858] = {
+			["Name"] = "Sorrow Spinner",
+			["Kills"] = 0,
 		},
-		[8996] = {
-			["Name"] = "Voidwalker Minion",
-			["Kills"] = 1,
+		[4514] = {
+			["Name"] = "ArmordEmxara",
+			["Kills"] = 0,
 		},
 		[8095] = {
 			["Name"] = "Sul'lithuz Sandcrawler",
@@ -537,9 +537,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Hillsbrad Footman",
 			["Kills"] = 44,
 		},
-		[5286] = {
-			["Name"] = "Longtooth Runner",
-			["Kills"] = 0,
+		[3671] = {
+			["Name"] = "Lady Anacondra",
+			["Kills"] = 1,
 		},
 		[2269] = {
 			["Name"] = "Hillsbrad Miner",
@@ -801,9 +801,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Lord Pythas",
 			["Kills"] = 1,
 		},
-		[2265] = {
-			["Name"] = "Hillsbrad Apprentice Blacksmith",
-			["Kills"] = 4,
+		[8996] = {
+			["Name"] = "Voidwalker Minion",
+			["Kills"] = 1,
 		},
 		[3241] = {
 			["Name"] = "Savannah Patriarch",
@@ -849,9 +849,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Drywallow Snapper",
 			["Kills"] = 0,
 		},
-		[7276] = {
-			["Name"] = "Zul'Farrak Dead Hero",
-			["Kills"] = 19,
+		[7786] = {
+			["Name"] = "Skeleton of Zum'rah",
+			["Kills"] = 7,
 		},
 		[2563] = {
 			["Name"] = "Plains Creeper",
@@ -931,7 +931,7 @@ KILLTRACK_CHAR = {
 		},
 		[5649] = {
 			["Name"] = "Sandfury Blood Drinker",
-			["Kills"] = 0,
+			["Kills"] = 1,
 		},
 		[2451] = {
 			["Name"] = "Farmer Kalaba",

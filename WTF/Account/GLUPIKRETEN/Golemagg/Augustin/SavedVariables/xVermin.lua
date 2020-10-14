@@ -2,21 +2,25 @@
 xKillCount = {
 	["show"] = true,
 	["killLog"] = {
-		["Zul'Farrak Zombie"] = {
-			["name"] = "Zul'Farrak Zombie",
-			["count"] = 216,
-		},
-		["Lava Spout Totem"] = {
-			["name"] = "Lava Spout Totem",
-			["count"] = 3,
-		},
 		["Zul'Farrak Dead Hero"] = {
 			["name"] = "Zul'Farrak Dead Hero",
-			["count"] = 15,
+			["count"] = 1,
+		},
+		["Zul'Farrak Zombie"] = {
+			["name"] = "Zul'Farrak Zombie",
+			["count"] = 39,
+		},
+		["Sandfury Blood Drinker"] = {
+			["name"] = "Sandfury Blood Drinker",
+			["count"] = 1,
 		},
 	},
+	["experience"] = {
+		["totaltotal"] = 37511,
+		["pulltotal"] = 0,
+	},
 	["position"] = {
-		["y"] = -50.3129577636719,
+		["y"] = -199.313018798828,
 		["x"] = 510.107543945313,
 		["to"] = "TOPLEFT",
 		["from"] = "TOPLEFT",

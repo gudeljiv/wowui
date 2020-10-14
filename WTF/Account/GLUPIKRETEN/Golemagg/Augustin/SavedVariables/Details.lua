@@ -7,1779 +7,121 @@ _detalhes_database = {
 		["tabelas"] = {
 			{
 				{
-					["combatId"] = 53,
+					["combatId"] = 24,
 					["tipo"] = 2,
 					["_ActorTable"] = {
 						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.00389,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Augustin"] = 198,
-							},
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 198.00389,
-							["monster"] = true,
-							["boss_fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1602619146,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["nome"] = "Sandfury Blood Drinker",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 198,
-										["targets"] = {
-											["Augustin"] = 198,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 198,
-										["n_min"] = 198,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 198,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["total"] = 198.00389,
-							["serial"] = "Creature-0-4447-209-13289-5649-000206060C",
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1602619084,
-							["damage_taken"] = 0.00389,
-							["start_time"] = 1602619145,
-							["delay"] = 1602619084,
-							["tipo"] = 1,
-						}, -- [1]
-						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.005844,
+							["totalabsorbed"] = 0.002398,
+							["total"] = 951.002398,
 							["damage_from"] = {
-								["Sandfury Shadowhunter"] = true,
-								["Sandfury Witch Doctor"] = true,
-								["Theka the Martyr"] = true,
-								["Sandfury Blood Drinker"] = true,
+								["Environment (Falling)"] = true,
+								["Zul'Farrak Zombie"] = true,
+								["Zul'Farrak Dead Hero"] = true,
+								["Skeleton of Zum'rah"] = true,
 							},
 							["targets"] = {
-								["Sandfury Witch Doctor"] = 23,
+								["Witch Doctor Zum'rah"] = 26,
+								["Zul'Farrak Zombie"] = 844,
+								["Zul'Farrak Dead Hero"] = 81,
 							},
 							["pets"] = {
 							},
-							["total"] = 23.005844,
-							["friendlyfire"] = {
-							},
-							["friendlyfire_total"] = 0,
+							["on_hold"] = false,
+							["boss_fight_component"] = true,
+							["classe"] = "MAGE",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 23.005844,
-							["boss_fight_component"] = true,
+							["total_without_pet"] = 951.002398,
 							["colocacao"] = 1,
+							["friendlyfire"] = {
+							},
 							["dps_started"] = false,
-							["end_time"] = 1602619146,
-							["classe"] = "MAGE",
-							["on_hold"] = false,
+							["end_time"] = 1602704214,
+							["friendlyfire_total"] = 0,
+							["spec"] = 64,
 							["nome"] = "Augustin",
 							["spells"] = {
 								["tipo"] = 2,
-								["_ActorTable"] = {
-									["Chilled"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Sandfury Blood Drinker"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["EVADE"] = 1,
-										["id"] = "Chilled",
-										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["Frost Nova"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 23,
-										["targets"] = {
-											["Sandfury Witch Doctor"] = 23,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 23,
-										["n_min"] = 23,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 23,
-										["c_max"] = 0,
-										["id"] = "Frost Nova",
-										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["spec"] = 64,
-							["serial"] = "Player-4465-01D5BF39",
-							["last_dps"] = 0.702597239188729,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 1275.005844,
-							["start_time"] = 1602619145,
-							["delay"] = 1602619117,
-							["last_event"] = 1602619117,
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.004924,
-							["damage_from"] = {
-								["Augustin"] = true,
-							},
-							["targets"] = {
-								["Augustin"] = 174,
-							},
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 174.004924,
-							["monster"] = true,
-							["boss_fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1602619146,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["nome"] = "Sandfury Witch Doctor",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									["Healing Ward"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Healing Ward",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 3,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["Lava Spout Totem"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Lava Spout Totem",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 3,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 174,
-										["targets"] = {
-											["Augustin"] = 174,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 174,
-										["n_min"] = 174,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 174,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["total"] = 174.004924,
-							["serial"] = "Creature-0-4447-209-13289-5650-000086060C",
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1602619115,
-							["damage_taken"] = 23.004924,
-							["start_time"] = 1602619145,
-							["delay"] = 1602619115,
-							["tipo"] = 1,
-						}, -- [3]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 298.004284,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Augustin"] = 642,
-							},
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 642.004284,
-							["monster"] = true,
-							["boss_fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1602619146,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["nome"] = "Sandfury Shadowhunter",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 191,
-										["targets"] = {
-											["Augustin"] = 361,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 361,
-										["n_min"] = 170,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 361,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 191,
-										["m_crit"] = 0,
-										["a_amt"] = 1,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["Shoot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 153,
-										["targets"] = {
-											["Augustin"] = 281,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 281,
-										["n_min"] = 128,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 281,
-										["c_max"] = 0,
-										["id"] = "Shoot",
-										["r_dmg"] = 0,
-										["a_dmg"] = 153,
-										["m_crit"] = 0,
-										["a_amt"] = 1,
-										["m_amt"] = 0,
-										["successful_casted"] = 2,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["total"] = 642.004284,
-							["serial"] = "Creature-0-4447-209-13289-7246-000086060C",
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1602619101,
-							["damage_taken"] = 0.004284,
-							["start_time"] = 1602619143,
-							["delay"] = 1602619101,
-							["tipo"] = 1,
-						}, -- [4]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 261.006044,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Augustin"] = 261,
-							},
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 261.006044,
-							["monster"] = true,
-							["boss_fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1602619146,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["nome"] = "Theka the Martyr",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 261,
-										["targets"] = {
-											["Augustin"] = 261,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 261,
-										["n_min"] = 261,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 261,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["total"] = 261.006044,
-							["serial"] = "Creature-0-4447-209-13289-7272-000006060A",
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1602619101,
-							["damage_taken"] = 0.006044,
-							["start_time"] = 1602619145,
-							["delay"] = 1602619101,
-							["tipo"] = 1,
-						}, -- [5]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 53,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "MAGE",
-							["totalover"] = 0.003674,
-							["total_without_pet"] = 842.003674,
-							["total"] = 842.003674,
-							["targets_absorbs"] = {
-								["Augustin"] = 842,
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-01D5BF39",
-							["totalabsorb"] = 842.003674,
-							["last_hps"] = 15.6314497827833,
-							["targets"] = {
-								["Augustin"] = 842,
-							},
-							["totalover_without_pet"] = 0.003674,
-							["healing_taken"] = 842.003674,
-							["boss_fight_component"] = true,
-							["end_time"] = 1602619146,
-							["healing_from"] = {
-								["Augustin"] = true,
-							},
-							["nome"] = "Augustin",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-									["Ice Barrier"] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 452,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 198,
-										["targets"] = {
-											["Augustin"] = 452,
-										},
-										["n_min"] = 126,
-										["counter"] = 3,
-										["overheal"] = 0,
-										["total"] = 452,
-										["c_max"] = 0,
-										["id"] = "Ice Barrier",
-										["targets_absorbs"] = {
-											["Augustin"] = 452,
-										},
-										["m_healed"] = 0,
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 452,
-										["n_amt"] = 3,
-										["totaldenied"] = 0,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-									["Mana Shield"] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 390,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 261,
-										["targets"] = {
-											["Augustin"] = 390,
-										},
-										["n_min"] = 44,
-										["counter"] = 3,
-										["overheal"] = 0,
-										["total"] = 390,
-										["c_max"] = 0,
-										["id"] = "Mana Shield",
-										["targets_absorbs"] = {
-											["Augustin"] = 390,
-										},
-										["m_healed"] = 0,
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 390,
-										["n_amt"] = 3,
-										["totaldenied"] = 0,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-								},
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1602619144,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["spec"] = 64,
-							["totaldenied"] = 0.003674,
-							["delay"] = 1602619101,
-							["last_event"] = 1602619101,
-						}, -- [1]
-						{
-							["flag_original"] = 2632,
-							["totalabsorb"] = 0.005754,
-							["last_hps"] = 0,
-							["targets_overheal"] = {
-							},
-							["targets"] = {
-							},
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-								},
-							},
-							["pets"] = {
-								"Greater Healing Ward <Sandfury Witch Doctor>", -- [1]
-							},
-							["iniciar_hps"] = false,
-							["healing_from"] = {
-							},
-							["healing_taken"] = 0.005754,
-							["totalover"] = 0.005754,
-							["total_without_pet"] = 0.005754,
-							["end_time"] = 1602619146,
-							["totalover_without_pet"] = 0.005754,
-							["monster"] = true,
-							["total"] = 0.005754,
-							["classe"] = "UNKNOW",
-							["boss_fight_component"] = true,
-							["nome"] = "Sandfury Witch Doctor",
-							["targets_absorbs"] = {
-							},
-							["heal_enemy_amt"] = 0,
-							["serial"] = "Creature-0-4447-209-13289-5650-000786060B",
-							["heal_enemy"] = {
-							},
-							["start_time"] = 1602619146,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["totaldenied"] = 0.005754,
-							["delay"] = 0,
-							["last_event"] = 0,
-						}, -- [2]
-						{
-							["flag_original"] = 8776,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 23,
-							["totalover"] = 0.002885,
-							["total_without_pet"] = 0.002885,
-							["total"] = 0.002885,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-								["Healing Aura"] = 23,
-							},
-							["on_hold"] = false,
-							["serial"] = "Creature-0-4447-209-13289-8179-00000606F9",
-							["totalabsorb"] = 0.002885,
-							["last_hps"] = 0,
-							["targets"] = {
-							},
-							["totalover_without_pet"] = 0.002885,
-							["healing_taken"] = 0.002885,
-							["end_time"] = 1602619146,
-							["boss_fight_component"] = true,
-							["ownerName"] = "Sandfury Witch Doctor",
-							["nome"] = "Greater Healing Ward <Sandfury Witch Doctor>",
-							["spells"] = {
-								["tipo"] = 3,
-								["_ActorTable"] = {
-								},
-							},
-							["healing_from"] = {
-							},
-							["start_time"] = 1602619146,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["classe"] = "PET",
-							["totaldenied"] = 0.002885,
-							["delay"] = 0,
-							["last_event"] = 1602619138,
-						}, -- [3]
-					},
-				}, -- [2]
-				{
-					["combatId"] = 53,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 53,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									["Chilled"] = {
-										["activedamt"] = 0,
-										["id"] = "Chilled",
-										["targets"] = {
-										},
-										["uptime"] = 18,
-										["appliedamt"] = 4,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Frost Nova"] = {
-										["activedamt"] = 0,
-										["id"] = "Frost Nova",
-										["targets"] = {
-										},
-										["uptime"] = 8,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["buff_uptime"] = 219,
-							["classe"] = "MAGE",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									["Ice Barrier"] = {
-										["activedamt"] = 1,
-										["id"] = "Ice Barrier",
-										["targets"] = {
-										},
-										["uptime"] = 16,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Arcane Intellect"] = {
-										["activedamt"] = 1,
-										["id"] = "Arcane Intellect",
-										["targets"] = {
-										},
-										["uptime"] = 62,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Ice Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Ice Armor",
-										["targets"] = {
-										},
-										["uptime"] = 62,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Dampen Magic"] = {
-										["activedamt"] = 1,
-										["id"] = "Dampen Magic",
-										["targets"] = {
-										},
-										["uptime"] = 62,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Red Skeletal Horse"] = {
-										["activedamt"] = 1,
-										["id"] = "Red Skeletal Horse",
-										["targets"] = {
-										},
-										["actived_at"] = 1602619084,
-										["uptime"] = 0,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-									["Mana Shield"] = {
-										["activedamt"] = 1,
-										["id"] = "Mana Shield",
-										["targets"] = {
-										},
-										["uptime"] = 17,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["debuff_uptime"] = 26,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 64,
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Frost Nova"] = 1,
-							},
-							["boss_fight_component"] = true,
-							["debuff_uptime_targets"] = {
-							},
-							["last_event"] = 1602619146,
-							["nome"] = "Augustin",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-01D5BF39",
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 2632,
-							["nome"] = "Sandfury Witch Doctor",
-							["tipo"] = 4,
-							["pets"] = {
-							},
-							["boss_fight_component"] = true,
-							["spell_cast"] = {
-								["Lava Spout Totem"] = 3,
-								["Healing Ward"] = 3,
-							},
-							["last_event"] = 0,
-							["monster"] = true,
-							["serial"] = "Creature-0-4447-209-13289-5650-000086060C",
-							["classe"] = "UNKNOW",
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["nome"] = "Sandfury Shadowhunter",
-							["tipo"] = 4,
-							["pets"] = {
-							},
-							["boss_fight_component"] = true,
-							["spell_cast"] = {
-								["Shoot"] = 2,
-							},
-							["last_event"] = 0,
-							["monster"] = true,
-							["serial"] = "Creature-0-4447-209-13289-7246-000186060E",
-							["classe"] = "UNKNOW",
-						}, -- [3]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 53,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Augustin"] = true,
-				},
-				["CombatStartedAt"] = 343336.359,
-				["tempo_start"] = 1602619084,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 6550,
-				["playing_solo"] = true,
-				["totals"] = {
-					1298, -- [1]
-					842, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "party",
-				["data_fim"] = "21:59:07",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = nil --[[ skipped inline function ]],
-				["TotalElapsedCombatTime"] = 343327.055,
-				["CombatEndedAt"] = 343327.055,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "21:58:05",
-				["end_time"] = 343327.055,
-				["combat_id"] = 53,
-				["overall_added"] = true,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["totals_grupo"] = {
-					23, -- [1]
-					842, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags"] = {
-					["Greater Healing Ward"] = 3,
-				},
-				["is_boss"] = {
-					["diff_string"] = "normal",
-					["index"] = 1,
-					["zone"] = "Zul'Farrak",
-					["encounter"] = nil --[[ skipped inline function ]],
-					["mapid"] = 209,
-					["try_number"] = 1,
-					["name"] = nil --[[ skipped inline function ]],
-					["id"] = 0,
-					["ej_instance_id"] = 0,
-					["diff"] = 16,
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Augustin"] = 842.003674,
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Augustin"] = 23.005844,
-						}, -- [1]
-					},
-				},
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 343265.382,
-				["contra"] = "Sandfury Blood Drinker",
-				["TimeData"] = {
-				},
-			}, -- [1]
-			{
-				{
-					["combatId"] = 50,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.004812,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Augustin"] = 134,
-							},
-							["pets"] = {
-							},
-							["serial"] = "Creature-0-4447-1-41-5425-0000058D21",
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 134.004812,
-							["monster"] = true,
-							["fight_component"] = true,
-							["dps_started"] = false,
-							["total"] = 134.004812,
-							["end_time"] = 1602618823,
-							["friendlyfire_total"] = 0,
-							["nome"] = "Starving Blisterpaw",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 69,
-										["targets"] = {
-											["Augustin"] = 134,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 134,
-										["n_min"] = 65,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 134,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["on_hold"] = false,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 1602618822,
-							["damage_taken"] = 0.004812,
-							["start_time"] = 1602618822,
-							["delay"] = 1602618812,
-							["tipo"] = 1,
-						}, -- [1]
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.005039,
-							["damage_from"] = {
-								["Starving Blisterpaw"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["classe"] = "MAGE",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.005039,
-							["on_hold"] = false,
-							["end_time"] = 1602618823,
-							["dps_started"] = false,
-							["total"] = 0.005039,
-							["friendlyfire"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["nome"] = "Augustin",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
-							["spec"] = 64,
-							["serial"] = "Player-4465-01D5BF39",
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["damage_taken"] = 134.005039,
-							["start_time"] = 1602618823,
-							["delay"] = 0,
-							["tipo"] = 1,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 50,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 50,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 50,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 64,
-							["grupo"] = true,
-							["buff_uptime"] = 23,
-							["nome"] = "Augustin",
-							["pets"] = {
-							},
-							["last_event"] = 1602618823,
-							["classe"] = "MAGE",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									["Red Skeletal Horse"] = {
-										["activedamt"] = 1,
-										["id"] = "Red Skeletal Horse",
-										["targets"] = {
-										},
-										["uptime"] = 11,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Mage Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Mage Armor",
-										["targets"] = {
-										},
-										["uptime"] = 11,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Arcane Intellect"] = {
-										["activedamt"] = 1,
-										["id"] = "Arcane Intellect",
-										["targets"] = {
-										},
-										["uptime"] = 1,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-4465-01D5BF39",
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 50,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Augustin"] = true,
-				},
-				["CombatStartedAt"] = 343099.922,
-				["tempo_start"] = 1602618812,
-				["cleu_timeline"] = {
-				},
-				["alternate_power"] = {
-				},
-				["last_events_tables"] = {
-				},
-				["enemy"] = "Starving Blisterpaw",
-				["combat_counter"] = 6547,
-				["playing_solo"] = true,
-				["totals"] = {
-					133.991334, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["CombatEndedAt"] = 343074.556,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "21:53:33",
-				["end_time"] = 343004.043,
-				["totals_grupo"] = {
-					0, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["combat_id"] = 50,
-				["TotalElapsedCombatTime"] = 3.27999999996973,
-				["frags_need_refresh"] = false,
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Augustin"] = 0.005039,
-						}, -- [1]
-					},
-				},
-				["frags"] = {
-				},
-				["data_fim"] = "21:53:44",
-				["instance_type"] = "none",
-				["CombatSkillCache"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["start_time"] = 342992.801,
-				["contra"] = "Starving Blisterpaw",
-				["TimeData"] = {
-				},
-			}, -- [2]
-			{
-				{
-					["combatId"] = 49,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 66888,
-							["totalabsorbed"] = 0.00349,
-							["damage_from"] = {
-								["Gadgetzan Bruiser"] = true,
-							},
-							["targets"] = {
-								["Augustin"] = 754,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 754.00349,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["total"] = 754.00349,
-							["classe"] = "UNGROUPPLAYER",
-							["serial"] = "Player-4465-017B483E",
-							["nome"] = "Shyldarina",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									["!Autoshot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 558,
-										["targets"] = {
-											["Augustin"] = 558,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 558,
-										["n_min"] = 558,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 558,
-										["c_max"] = 0,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 196,
-										["targets"] = {
-											["Augustin"] = 196,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 196,
-										["n_min"] = 196,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 196,
-										["c_max"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["spellschool"] = 64,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1602618731,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 115.00349,
-							["start_time"] = 1602618726,
-							["delay"] = 0,
-							["last_event"] = 1602618726,
-						}, -- [1]
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.001201,
-							["damage_from"] = {
-								["Shyldarina"] = true,
-							},
-							["targets"] = {
-							},
-							["on_hold"] = false,
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.001201,
-							["spec"] = 64,
-							["dps_started"] = false,
-							["total"] = 0.001201,
-							["classe"] = "MAGE",
-							["serial"] = "Player-4465-01D5BF39",
-							["nome"] = "Augustin",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-								},
-							},
-							["grupo"] = true,
-							["end_time"] = 1602618731,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 754.001201,
-							["start_time"] = 1602618731,
-							["delay"] = 0,
-							["last_event"] = 0,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["combatId"] = 49,
-					["tipo"] = 3,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["combatId"] = 49,
-					["tipo"] = 7,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["combatId"] = 49,
-					["tipo"] = 9,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 64,
-							["grupo"] = true,
-							["buff_uptime"] = 15,
-							["nome"] = "Augustin",
-							["pets"] = {
-							},
-							["last_event"] = 1602618731,
-							["classe"] = "MAGE",
-							["buff_uptime_spells"] = {
-								["tipo"] = 9,
-								["_ActorTable"] = {
-									["Red Skeletal Horse"] = {
-										["activedamt"] = 1,
-										["id"] = "Red Skeletal Horse",
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Mage Armor"] = {
-										["activedamt"] = 1,
-										["id"] = "Mage Armor",
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Arcane Intellect"] = {
-										["activedamt"] = 1,
-										["id"] = "Arcane Intellect",
-										["targets"] = {
-										},
-										["uptime"] = 5,
-										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-							},
-							["serial"] = "Player-4465-01D5BF39",
-							["tipo"] = 4,
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["combatId"] = 49,
-					["tipo"] = 2,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Augustin"] = true,
-				},
-				["CombatStartedAt"] = 342992.704,
-				["tempo_start"] = 1602618726,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 6546,
-				["playing_solo"] = true,
-				["totals"] = {
-					753.991297, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					0, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["debuff_uptime"] = 0,
-						["cooldowns_defensive"] = 0,
-						["interrupt"] = 0,
-						["dispell"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = false,
-				["instance_type"] = "none",
-				["data_fim"] = "21:52:12",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Shyldarina",
-				["TotalElapsedCombatTime"] = 342912.086,
-				["CombatEndedAt"] = 342912.086,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "21:52:06",
-				["end_time"] = 342912.086,
-				["combat_id"] = 49,
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-					["damage"] = {
-						{
-							["Augustin"] = 0.001201,
-						}, -- [1]
-					},
-				},
-				["CombatSkillCache"] = {
-				},
-				["frags"] = {
-				},
-				["start_time"] = 342906.373,
-				["contra"] = "Shyldarina",
-				["TimeData"] = {
-				},
-			}, -- [3]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 48,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.004491,
-							["tipo"] = 1,
-							["damage_from"] = {
-								["Shyldarina"] = true,
-							},
-							["targets"] = {
-								["Witch Doctor Zum'rah"] = 29,
-								["Zul'Farrak Zombie"] = 228294,
-								["Zul'Farrak Dead Hero"] = 1879,
-							},
-							["pets"] = {
-							},
-							["end_time"] = 1602614566,
-							["friendlyfire"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 230202.004491,
-							["damage_taken"] = 664.004491,
-							["serial"] = "Player-4465-01D5BF39",
-							["dps_started"] = false,
-							["total"] = 230202.004491,
-							["classe"] = "MAGE",
-							["on_hold"] = false,
-							["boss_fight_component"] = true,
-							["spells"] = {
 								["_ActorTable"] = {
 									["Blizzard"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 96,
+										["n_max"] = 27,
 										["targets"] = {
-											["Zul'Farrak Dead Hero"] = 1879,
-											["Zul'Farrak Zombie"] = 227327,
+											["Zul'Farrak Dead Hero"] = 81,
+											["Zul'Farrak Zombie"] = 459,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 229206,
+										["n_dmg"] = 540,
 										["n_min"] = 27,
 										["g_dmg"] = 0,
-										["counter"] = 3238,
-										["total"] = 229206,
+										["counter"] = 20,
+										["total"] = 540,
 										["c_max"] = 0,
 										["id"] = "Blizzard",
 										["r_dmg"] = 0,
 										["spellschool"] = 16,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
-										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 3238,
-										["a_amt"] = 0,
+										["n_amt"] = 20,
 										["r_amt"] = 0,
+										["c_min"] = 0,
 									},
 									["Flamestrike"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 71,
+										["n_max"] = 70,
 										["targets"] = {
-											["Zul'Farrak Zombie"] = 640,
+											["Zul'Farrak Zombie"] = 385,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 640,
+										["n_dmg"] = 385,
 										["n_min"] = 12,
 										["g_dmg"] = 0,
-										["counter"] = 27,
-										["total"] = 640,
+										["counter"] = 15,
+										["total"] = 385,
 										["c_max"] = 0,
 										["id"] = "Flamestrike",
 										["r_dmg"] = 0,
 										["spellschool"] = 4,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
-										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 27,
-										["a_amt"] = 0,
+										["n_amt"] = 15,
 										["r_amt"] = 0,
-									},
-									["Frostbolt"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 327,
-										["targets"] = {
-											["Zul'Farrak Zombie"] = 327,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 327,
-										["n_min"] = 327,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 327,
-										["c_max"] = 0,
-										["id"] = "Frostbolt",
-										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
 									},
 									["Fire Blast"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 29,
+										["n_max"] = 26,
 										["targets"] = {
-											["Witch Doctor Zum'rah"] = 29,
+											["Witch Doctor Zum'rah"] = 26,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 29,
-										["n_min"] = 29,
+										["n_dmg"] = 26,
+										["n_min"] = 26,
 										["g_dmg"] = 0,
 										["counter"] = 1,
-										["total"] = 29,
+										["total"] = 26,
 										["c_max"] = 0,
 										["id"] = "Fire Blast",
-										["r_dmg"] = 0,
+										["r_dmg"] = 26,
 										["spellschool"] = 4,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["colocacao"] = 1,
-							["nome"] = "Augustin",
-							["custom"] = 0,
-							["last_event"] = 1602614564,
-							["last_dps"] = 747.404252215947,
-							["start_time"] = 1602614377,
-							["delay"] = 1602614517,
-							["spec"] = 64,
-						}, -- [1]
-						{
-							["flag_original"] = 66888,
-							["totalabsorbed"] = 0.00529,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Augustin"] = 664,
-							},
-							["enemy"] = true,
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 664.00529,
-							["on_hold"] = false,
-							["dps_started"] = false,
-							["total"] = 664.00529,
-							["classe"] = "UNGROUPPLAYER",
-							["serial"] = "Player-4465-017B483E",
-							["nome"] = "Shyldarina",
-							["spells"] = {
-								["tipo"] = 2,
-								["_ActorTable"] = {
-									["Multi-Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 664,
-										["targets"] = {
-											["Augustin"] = 664,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 664,
-										["n_min"] = 664,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 664,
-										["c_max"] = 0,
-										["id"] = "Multi-Shot",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
@@ -1787,2354 +129,181 @@ _detalhes_database = {
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
 										["n_amt"] = 1,
-										["r_amt"] = 0,
-										["c_min"] = 0,
-									},
-								},
-							},
-							["friendlyfire"] = {
-							},
-							["end_time"] = 1602618726,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.00529,
-							["start_time"] = 1602618725,
-							["delay"] = 0,
-							["last_event"] = 1602618725,
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.007221,
-							["damage_from"] = {
-								["Augustin"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["boss_fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.007221,
-							["serial"] = "Creature-0-4446-209-32695-7276-000005F378",
-							["dps_started"] = false,
-							["total"] = 0.007221,
-							["end_time"] = 1602614566,
-							["on_hold"] = false,
-							["nome"] = "Zul'Farrak Dead Hero",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["damage_taken"] = 1879.007221,
-							["start_time"] = 1602614566,
-							["delay"] = 0,
-							["friendlyfire_total"] = 0,
-						}, -- [3]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.005951,
-							["damage_from"] = {
-								["Augustin"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["boss_fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.005951,
-							["serial"] = "Creature-0-4446-209-32695-7271-000005F0BF",
-							["dps_started"] = false,
-							["total"] = 0.005951,
-							["end_time"] = 1602614566,
-							["on_hold"] = false,
-							["nome"] = "Witch Doctor Zum'rah",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Ward of Zum'rah"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Ward of Zum'rah",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["damage_taken"] = 29.005951,
-							["start_time"] = 1602614566,
-							["delay"] = 0,
-							["friendlyfire_total"] = 0,
-						}, -- [4]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.003387,
-							["damage_from"] = {
-								["Augustin"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["boss_fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.003387,
-							["serial"] = "Creature-0-4446-209-32695-7286-000085F3AA",
-							["dps_started"] = false,
-							["total"] = 0.003387,
-							["end_time"] = 1602614566,
-							["on_hold"] = false,
-							["nome"] = "Zul'Farrak Zombie",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["damage_taken"] = 228294.003387,
-							["start_time"] = 1602614566,
-							["delay"] = 0,
-							["friendlyfire_total"] = 0,
-						}, -- [5]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 48,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 48,
-					["_ActorTable"] = {
-						{
-							["received"] = 1193.008424,
-							["resource"] = 0.008424,
-							["targets"] = {
-								["Augustin"] = 1193,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "MAGE",
-							["passiveover"] = 0.008424,
-							["total"] = 1193.008424,
-							["nome"] = "Augustin",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Replenish Mana"] = {
-										["total"] = 399,
-										["id"] = "Replenish Mana",
-										["totalover"] = 0,
-										["targets"] = {
-											["Augustin"] = 399,
-										},
-										["counter"] = 1,
-									},
-									["Restore Mana"] = {
-										["total"] = 794,
-										["id"] = "Restore Mana",
-										["totalover"] = 0,
-										["targets"] = {
-											["Augustin"] = 794,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["boss_fight_component"] = true,
-							["flag_original"] = 1297,
-							["alternatepower"] = 0.008424,
-							["last_event"] = 1602614351,
-							["spec"] = 64,
-							["tipo"] = 3,
-							["serial"] = "Player-4465-01D5BF39",
-							["totalover"] = 0.008424,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 48,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Blizzard"] = {
-										["appliedamt"] = 990,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 151,
-										["id"] = "Blizzard",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Flamestrike"] = {
-										["appliedamt"] = 6,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 8,
-										["id"] = "Flamestrike",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Frostbolt"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 0,
-										["id"] = "Frostbolt",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 813,
-							["classe"] = "MAGE",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Evocation"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 7,
-										["id"] = "Evocation",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Dampen Magic"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 190,
-										["id"] = "Dampen Magic",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Arcane Intellect"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 308,
-										["id"] = "Arcane Intellect",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Mage Armor"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 308,
-										["id"] = "Mage Armor",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 159,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 64,
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Replenish Mana"] = 1,
-								["Frostbolt"] = 1,
-								["Blizzard"] = 23,
-								["Evocation"] = 1,
-								["Restore Mana"] = 1,
-								["Fire Blast"] = 1,
-							},
-							["boss_fight_component"] = true,
-							["last_event"] = 1602614566,
-							["tipo"] = 4,
-							["nome"] = "Augustin",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-01D5BF39",
-							["debuff_uptime_targets"] = {
-							},
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["tipo"] = 4,
-							["nome"] = "Witch Doctor Zum'rah",
-							["pets"] = {
-							},
-							["boss_fight_component"] = true,
-							["spell_cast"] = {
-								["Ward of Zum'rah"] = 1,
-							},
-							["last_event"] = 0,
-							["monster"] = true,
-							["serial"] = "Creature-0-4446-209-32695-7271-000005F0BF",
-							["classe"] = "UNKNOW",
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 48,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Augustin"] = true,
-					["Konac"] = true,
-				},
-				["CombatStartedAt"] = 342906.077,
-				["tempo_start"] = 1602614258,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 6541,
-				["totals"] = {
-					230866, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 1192.984013,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					230202, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 1193,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "party",
-				["hasSaved"] = true,
-				["data_fim"] = "20:42:47",
-				["cleu_timeline"] = {
-				},
-				["TotalElapsedCombatTime"] = 338746.965,
-				["CombatEndedAt"] = 338746.965,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:37:39",
-				["end_time"] = 338747.055,
-				["combat_id"] = 48,
-				["frags"] = {
-					["Zul'Farrak Dead Hero"] = 1,
-					["Zul'Farrak Zombie"] = 43,
-					["Ward of Zum'rah"] = 1,
-				},
-				["overall_added"] = true,
-				["player_last_events"] = {
-					["Augustin"] = {
-						{
-							true, -- [1]
-							"Multi-Shot", -- [2]
-							664, -- [3]
-							1602618725.49, -- [4]
-							1923, -- [5]
-							"Shyldarina", -- [6]
-							nil, -- [7]
-							1, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [1]
-						{
-						}, -- [2]
-						{
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 2,
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["is_boss"] = {
-					["mapid"] = 209,
-					["diff_string"] = "normal",
-					["index"] = 1,
-					["zone"] = "Zul'Farrak",
-					["id"] = 0,
-					["ej_instance_id"] = 0,
-					["diff"] = 16,
-					["try_number"] = 1,
-				},
-				["contra"] = "Zul'Farrak Zombie",
-				["CombatSkillCache"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["start_time"] = 338439.053,
-				["TimeData"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Augustin"] = 230202.004491,
-						}, -- [1]
-					},
-				},
-			}, -- [4]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 41,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.004307,
-							["damage_from"] = {
-								["Augustin"] = true,
-							},
-							["targets"] = {
-								["Augustin"] = 463,
-							},
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 463.004307,
-							["serial"] = "Creature-0-4446-209-32695-5649-000285F0C1",
-							["dps_started"] = false,
-							["total"] = 463.004307,
-							["end_time"] = 1602613571,
-							["on_hold"] = false,
-							["nome"] = "Sandfury Blood Drinker",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 286,
-										["targets"] = {
-											["Augustin"] = 463,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 463,
-										["n_min"] = 177,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 463,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 177,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_amt"] = 1,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1602613560,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 46.004307,
-							["start_time"] = 1602613570,
-							["delay"] = 1602613560,
-							["fight_component"] = true,
-						}, -- [1]
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.001436,
-							["damage_from"] = {
-								["Sandfury Witch Doctor"] = true,
-								["Sandfury Shadowcaster"] = true,
-								["Sandfury Blood Drinker"] = true,
-							},
-							["targets"] = {
-								["Sandfury Witch Doctor"] = 72,
-								["Sandfury Shadowcaster"] = 25,
-								["Sandfury Blood Drinker"] = 46,
-							},
-							["serial"] = "Player-4465-01D5BF39",
-							["pets"] = {
-							},
-							["colocacao"] = 1,
-							["end_time"] = 1602613571,
-							["classe"] = "MAGE",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 143.001436,
-							["spec"] = 64,
-							["dps_started"] = false,
-							["total"] = 143.001436,
-							["friendlyfire"] = {
-							},
-							["last_event"] = 1602613550,
-							["nome"] = "Augustin",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Frost Nova"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 25,
-										["targets"] = {
-											["Sandfury Witch Doctor"] = 72,
-											["Sandfury Shadowcaster"] = 25,
-											["Sandfury Blood Drinker"] = 46,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 143,
-										["n_min"] = 23,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 143,
-										["c_max"] = 0,
-										["id"] = "Frost Nova",
-										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 6,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["last_dps"] = 7.28298629997108,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 2730.001436,
-							["start_time"] = 1602613570,
-							["delay"] = 1602613550,
-							["on_hold"] = false,
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 615.006432,
-							["damage_from"] = {
-								["Augustin"] = true,
-							},
-							["targets"] = {
-								["Augustin"] = 452,
-							},
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["monster"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 452.006432,
-							["serial"] = "Creature-0-4446-209-32695-5650-000085F0C0",
-							["dps_started"] = false,
-							["total"] = 452.006432,
-							["end_time"] = 1602613571,
-							["on_hold"] = false,
-							["nome"] = "Sandfury Witch Doctor",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Healing Ward"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Healing Ward",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 2,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-									},
-									["Lava Spout Totem"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Lava Spout Totem",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 3,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 291,
-										["targets"] = {
-											["Augustin"] = 452,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 452,
-										["n_min"] = 161,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 452,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1602613612,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 72.006432,
-							["start_time"] = 1602613567,
-							["delay"] = 1602613551,
-							["fight_component"] = true,
-						}, -- [3]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.003186,
-							["damage_from"] = {
-								["Augustin"] = true,
-							},
-							["targets"] = {
-								["Augustin"] = 1815,
-							},
-							["pets"] = {
-							},
-							["dps_started"] = false,
-							["end_time"] = 1602613571,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1815.003186,
-							["serial"] = "Creature-0-4446-209-32695-5648-000205F0C1",
-							["monster"] = true,
-							["total"] = 1815.003186,
-							["fight_component"] = true,
-							["on_hold"] = false,
-							["nome"] = "Sandfury Shadowcaster",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Shadow Bolt"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 264,
-										["targets"] = {
-											["Augustin"] = 1815,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1815,
-										["n_min"] = 105,
-										["g_dmg"] = 0,
-										["counter"] = 9,
-										["total"] = 1815,
-										["c_max"] = 0,
-										["id"] = "Shadow Bolt",
-										["r_dmg"] = 678,
-										["spellschool"] = 32,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 7,
-										["b_dmg"] = 0,
-										["n_amt"] = 9,
-										["a_amt"] = 0,
-										["r_amt"] = 4,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1602613565,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 25.003186,
-							["start_time"] = 1602613548,
-							["delay"] = 0,
-							["classe"] = "UNKNOW",
-						}, -- [4]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 41,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.005463,
-							["total_without_pet"] = 842.005463,
-							["total"] = 842.005463,
-							["spec"] = 64,
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 2,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-01D5BF39",
-							["totalabsorb"] = 842.005463,
-							["last_hps"] = 37.8157488098391,
-							["targets"] = {
-								["Augustin"] = 842,
-							},
-							["totalover_without_pet"] = 0.005463,
-							["healing_taken"] = 1820.005463,
-							["fight_component"] = true,
-							["end_time"] = 1602613571,
-							["last_event"] = 1602613560,
-							["nome"] = "Augustin",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Ice Barrier"] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 452,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 286,
-										["targets"] = {
-											["Augustin"] = 452,
-										},
-										["n_min"] = 166,
-										["counter"] = 2,
-										["overheal"] = 0,
-										["total"] = 452,
-										["c_max"] = 0,
-										["id"] = "Ice Barrier",
-										["targets_absorbs"] = {
-											["Augustin"] = 452,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["m_crit"] = 0,
-										["m_healed"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 452,
-										["n_amt"] = 2,
-										["totaldenied"] = 0,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-									["Mana Shield"] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 390,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 161,
-										["targets"] = {
-											["Augustin"] = 390,
-										},
-										["n_min"] = 104,
-										["counter"] = 3,
-										["overheal"] = 0,
-										["total"] = 390,
-										["c_max"] = 0,
-										["id"] = "Mana Shield",
-										["targets_absorbs"] = {
-											["Augustin"] = 390,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["m_crit"] = 0,
-										["m_healed"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 390,
-										["n_amt"] = 3,
-										["totaldenied"] = 0,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["healing_from"] = {
-								["Konac"] = true,
-								["Augustin"] = true,
-							},
-							["classe"] = "MAGE",
-							["custom"] = 0,
-							["tipo"] = 2,
-							["start_time"] = 1602613558,
-							["totaldenied"] = 0.005463,
-							["delay"] = 1602613560,
-							["targets_absorbs"] = {
-								["Augustin"] = 842,
-							},
-						}, -- [1]
-						{
-							["flag_original"] = 1298,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 0,
-							["totalover"] = 0.005535,
-							["total_without_pet"] = 978.005535,
-							["total"] = 978.005535,
-							["spec"] = 257,
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-00C4D96C",
-							["totalabsorb"] = 0.005535,
-							["last_hps"] = 43.9237193478782,
-							["targets"] = {
-								["Augustin"] = 978,
-							},
-							["totalover_without_pet"] = 0.005535,
-							["healing_taken"] = 0.005535,
-							["fight_component"] = true,
-							["end_time"] = 1602613571,
-							["last_event"] = 1602613570,
-							["nome"] = "Konac",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Renew"] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 0,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 326,
-										["targets"] = {
-											["Augustin"] = 978,
-										},
-										["n_min"] = 326,
-										["counter"] = 3,
-										["overheal"] = 0,
-										["total"] = 978,
-										["c_max"] = 0,
-										["id"] = "Renew",
-										["targets_absorbs"] = {
-										},
-										["c_curado"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 978,
-										["n_amt"] = 3,
-										["totaldenied"] = 0,
-										["m_healed"] = 0,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["healing_from"] = {
-							},
-							["classe"] = "PRIEST",
-							["custom"] = 0,
-							["tipo"] = 2,
-							["start_time"] = 1602613563,
-							["totaldenied"] = 0.005535,
-							["delay"] = 0,
-							["targets_absorbs"] = {
-							},
-						}, -- [2]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 41,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 41,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Chilled"] = {
-										["appliedamt"] = 4,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 22,
-										["id"] = "Chilled",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Frost Nova"] = {
-										["appliedamt"] = 6,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 8,
-										["id"] = "Frost Nova",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 16,
-							["classe"] = "MAGE",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Ice Barrier"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 0,
-										["id"] = "Ice Barrier",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Blink"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 1,
-										["id"] = "Blink",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Arcane Intellect"] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 2,
-										["uptime"] = 1,
-										["id"] = "Arcane Intellect",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Ice Armor"] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 2,
-										["uptime"] = 1,
-										["id"] = "Ice Armor",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Dampen Magic"] = {
-										["appliedamt"] = 2,
-										["targets"] = {
-										},
-										["activedamt"] = 2,
-										["uptime"] = 1,
-										["id"] = "Dampen Magic",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Honorless Target"] = {
-										["appliedamt"] = 0,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 0,
-										["id"] = "Honorless Target",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Mana Shield"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 12,
-										["id"] = "Mana Shield",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 30,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 64,
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Frost Nova"] = 1,
-								["Blink"] = 1,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["last_event"] = 1602613571,
-							["nome"] = "Augustin",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-01D5BF39",
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 2632,
-							["tipo"] = 4,
-							["nome"] = "Sandfury Shadowcaster",
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["spell_cast"] = {
-								["Shadow Bolt"] = 7,
-							},
-							["last_event"] = 0,
-							["monster"] = true,
-							["serial"] = "Creature-0-4446-209-32695-5648-000405F0C0",
-							["classe"] = "UNKNOW",
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["tipo"] = 4,
-							["nome"] = "Sandfury Witch Doctor",
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["spell_cast"] = {
-								["Lava Spout Totem"] = 3,
-								["Healing Ward"] = 2,
-							},
-							["last_event"] = 0,
-							["monster"] = true,
-							["serial"] = "Creature-0-4446-209-32695-5650-000085F0C0",
-							["classe"] = "UNKNOW",
-						}, -- [3]
-						{
-							["flag_original"] = 1298,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Psychic Scream"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 9,
-										["id"] = "Psychic Scream",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 0,
-							["classe"] = "PRIEST",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Honorless Target"] = {
-										["appliedamt"] = 0,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 0,
-										["id"] = "Honorless Target",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["fight_component"] = true,
-							["debuff_uptime"] = 9,
-							["debuff_uptime_targets"] = {
-							},
-							["spec"] = 257,
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Renew"] = 1,
-								["Psychic Scream"] = 1,
-							},
-							["buff_uptime_targets"] = {
-							},
-							["last_event"] = 1602613571,
-							["nome"] = "Konac",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-00C4D96C",
-							["tipo"] = 4,
-						}, -- [4]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 41,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Augustin"] = true,
-					["Konac"] = true,
-				},
-				["CombatStartedAt"] = 337790.552,
-				["tempo_start"] = 1602613548,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["totals"] = {
-					2873, -- [1]
-					1819.984233, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "20:26:12",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Sandfury Blood Drinker",
-				["TotalElapsedCombatTime"] = 4.1710000000312,
-				["CombatEndedAt"] = 337752.096,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:25:48",
-				["end_time"] = 337752.616,
-				["combat_id"] = 41,
-				["combat_counter"] = 6534,
-				["frags"] = {
-					["Greater Healing Ward"] = 1,
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Augustin"] = 842.005463,
-							["Konac"] = 978.005535,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Augustin"] = 143.001436,
-						}, -- [1]
-					},
-				},
-				["totals_grupo"] = {
-					143, -- [1]
-					1820, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Sandfury Blood Drinker",
-				["start_time"] = 337728.29,
-				["TimeData"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-			}, -- [5]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 40,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.006075,
-							["damage_from"] = {
-								["Skeleton of Zum'rah"] = true,
-								["Zul'Farrak Zombie"] = true,
-							},
-							["targets"] = {
-								["Witch Doctor Zum'rah"] = 24,
-								["Zul'Farrak Zombie"] = 228586,
-								["Zul'Farrak Dead Hero"] = 11822,
-								["Skeleton of Zum'rah"] = 54,
-							},
-							["pets"] = {
-							},
-							["classe"] = "MAGE",
-							["spec"] = 64,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 240486.006075,
-							["nome"] = "Augustin",
-							["delay"] = 1602613295,
-							["dps_started"] = false,
-							["end_time"] = 1602613320,
-							["on_hold"] = false,
-							["total"] = 240486.006075,
-							["boss_fight_component"] = true,
-							["spells"] = {
-								["_ActorTable"] = {
-									["Blizzard"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 96,
-										["targets"] = {
-											["Zul'Farrak Zombie"] = 228118,
-											["Zul'Farrak Dead Hero"] = 11647,
-											["Skeleton of Zum'rah"] = 54,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 239819,
-										["n_min"] = 14,
-										["g_dmg"] = 0,
-										["counter"] = 3600,
-										["total"] = 239819,
-										["c_max"] = 0,
-										["id"] = "Blizzard",
-										["r_dmg"] = 615,
-										["r_amt"] = 18,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3600,
-										["a_dmg"] = 0,
-										["spellschool"] = 16,
-									},
-									["Flamestrike"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 71,
-										["targets"] = {
-											["Zul'Farrak Zombie"] = 468,
-											["Zul'Farrak Dead Hero"] = 175,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 643,
-										["n_min"] = 12,
-										["g_dmg"] = 0,
-										["counter"] = 25,
-										["total"] = 643,
-										["c_max"] = 0,
-										["id"] = "Flamestrike",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 25,
-										["a_dmg"] = 0,
-										["spellschool"] = 4,
-									},
-									["Fire Blast"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 24,
-										["targets"] = {
-											["Witch Doctor Zum'rah"] = 24,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 24,
-										["n_min"] = 24,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 24,
-										["c_max"] = 0,
-										["id"] = "Fire Blast",
-										["r_dmg"] = 24,
 										["r_amt"] = 1,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
 										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 4,
 									},
 								},
-								["tipo"] = 2,
 							},
 							["grupo"] = true,
-							["last_event"] = 1602613318,
-							["custom"] = 0,
-							["damage_taken"] = 516.006075,
-							["colocacao"] = 1,
-							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1602613118,
 							["serial"] = "Player-4465-01D5BF39",
-							["last_dps"] = 829.247792538046,
+							["last_dps"] = 20.2284984578832,
+							["custom"] = 0,
+							["last_event"] = 1602704196,
+							["damage_taken"] = 3560.002398,
+							["start_time"] = 1602704202,
+							["delay"] = 1602704196,
+							["tipo"] = 1,
 						}, -- [1]
 						{
 							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.007506,
+							["totalabsorbed"] = 714.008776,
+							["monster"] = true,
 							["damage_from"] = {
 								["Augustin"] = true,
 							},
 							["targets"] = {
-								["Augustin"] = 464,
+								["Augustin"] = 2978,
 							},
 							["pets"] = {
 							},
-							["end_time"] = 1602613320,
 							["boss_fight_component"] = true,
-							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 464.007506,
-							["delay"] = 1602613088,
-							["monster"] = true,
-							["total"] = 464.007506,
-							["friendlyfire_total"] = 0,
-							["damage_taken"] = 228586.007506,
+							["total_without_pet"] = 2978.008776,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 2978.008776,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4447-209-19568-7286-00000752F1",
 							["nome"] = "Zul'Farrak Zombie",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 163,
-										["targets"] = {
-											["Augustin"] = 464,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 464,
-										["n_min"] = 147,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 464,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["last_dps"] = 0,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["last_event"] = 1602613088,
-							["on_hold"] = false,
-							["start_time"] = 1602613310,
-							["serial"] = "Creature-0-4446-209-32023-7286-000005EEFB",
-							["dps_started"] = false,
-						}, -- [2]
-						{
-							["flag_original"] = 8776,
-							["totalabsorbed"] = 0.008388,
-							["damage_from"] = {
-								["Augustin"] = true,
-							},
-							["targets"] = {
-								["Augustin"] = 52,
-							},
-							["pets"] = {
-							},
-							["last_event"] = 1602613069,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 52.008388,
-							["classe"] = "PET",
-							["dps_started"] = false,
-							["end_time"] = 1602613320,
-							["delay"] = 1602613069,
-							["nome"] = "Skeleton of Zum'rah",
-							["boss_fight_component"] = true,
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 52,
-										["targets"] = {
-											["Augustin"] = 52,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 52,
-										["n_min"] = 52,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 52,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["damage_taken"] = 54.008388,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1602613319,
-							["serial"] = "Creature-0-4446-209-32023-7786-000005EF42",
-							["total"] = 52.008388,
-						}, -- [3]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008304,
-							["damage_from"] = {
-								["Augustin"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["nome"] = "Witch Doctor Zum'rah",
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.008304,
-							["delay"] = 0,
-							["monster"] = true,
-							["total"] = 0.008304,
-							["end_time"] = 1602613320,
-							["damage_taken"] = 24.008304,
-							["boss_fight_component"] = true,
-							["spells"] = {
-								["_ActorTable"] = {
-									["Ward of Zum'rah"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Ward of Zum'rah",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 2,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["a_dmg"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 0,
-							["last_dps"] = 0,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1602613320,
-							["serial"] = "Creature-0-4446-209-32023-7271-000005EC7F",
-							["dps_started"] = false,
-						}, -- [4]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.003674,
-							["damage_from"] = {
-								["Augustin"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["friendlyfire_total"] = 0,
-							["nome"] = "Zul'Farrak Dead Hero",
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.003674,
-							["delay"] = 0,
-							["monster"] = true,
-							["total"] = 0.003674,
-							["end_time"] = 1602613320,
-							["damage_taken"] = 11822.003674,
-							["boss_fight_component"] = true,
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 0,
-							["last_dps"] = 0,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1602613320,
-							["serial"] = "Creature-0-4446-209-32023-7276-000005EEF9",
-							["dps_started"] = false,
-						}, -- [5]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 40,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 40,
-					["_ActorTable"] = {
-						{
-							["received"] = 1457.001066,
-							["resource"] = 0.001066,
-							["targets"] = {
-								["Augustin"] = 1457,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "MAGE",
-							["passiveover"] = 0.001066,
-							["total"] = 1457.001066,
-							["nome"] = "Augustin",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Replenish Mana"] = {
-										["total"] = 600,
-										["id"] = "Replenish Mana",
-										["totalover"] = 0,
-										["targets"] = {
-											["Augustin"] = 600,
-										},
-										["counter"] = 1,
-									},
-									["Restore Mana"] = {
-										["total"] = 857,
-										["id"] = "Restore Mana",
-										["totalover"] = 0,
-										["targets"] = {
-											["Augustin"] = 857,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["totalover"] = 0.001066,
-							["flag_original"] = 1297,
-							["tipo"] = 3,
-							["last_event"] = 1602613166,
-							["spec"] = 64,
-							["alternatepower"] = 0.001066,
-							["serial"] = "Player-4465-01D5BF39",
-							["boss_fight_component"] = true,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 40,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Blizzard"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = "Blizzard",
-										["uptime"] = 149,
-										["targets"] = {
-										},
-										["appliedamt"] = 984,
-									},
-									["Flamestrike"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 0,
-										["refreshamt"] = 0,
-										["id"] = "Flamestrike",
-										["uptime"] = 8,
-										["targets"] = {
-										},
-										["appliedamt"] = 7,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 775,
-							["classe"] = "MAGE",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Ice Barrier"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Ice Barrier",
-										["uptime"] = 5,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Arcane Intellect"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Arcane Intellect",
-										["uptime"] = 290,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Dampen Magic"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Dampen Magic",
-										["uptime"] = 184,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Mage Armor"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Mage Armor",
-										["uptime"] = 290,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-									["Evocation"] = {
-										["counter"] = 0,
-										["actived"] = false,
-										["activedamt"] = 1,
-										["refreshamt"] = 0,
-										["id"] = "Evocation",
-										["uptime"] = 6,
-										["targets"] = {
-										},
-										["appliedamt"] = 1,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 157,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 64,
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Replenish Mana"] = 1,
-								["Blizzard"] = 24,
-								["Evocation"] = 1,
-								["Restore Mana"] = 1,
-								["Fire Blast"] = 1,
-							},
-							["debuff_uptime_targets"] = {
-							},
-							["tipo"] = 4,
-							["last_event"] = 1602613320,
-							["pets"] = {
-							},
-							["nome"] = "Augustin",
-							["serial"] = "Player-4465-01D5BF39",
-							["boss_fight_component"] = true,
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["last_event"] = 0,
-							["nome"] = "Witch Doctor Zum'rah",
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["spell_cast"] = {
-								["Ward of Zum'rah"] = 2,
-							},
-							["tipo"] = 4,
-							["monster"] = true,
-							["serial"] = "Creature-0-4446-209-32023-7271-000005EC7F",
-							["boss_fight_component"] = true,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 40,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Konac"] = true,
-					["Augustin"] = true,
-				},
-				["CombatStartedAt"] = 337718.995,
-				["overall_added"] = true,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["totals"] = {
-					241001.996588, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 1457,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "party",
-				["hasSaved"] = true,
-				["data_fim"] = "20:22:00",
-				["cleu_timeline"] = {
-				},
-				["TotalElapsedCombatTime"] = 337499.542,
-				["CombatEndedAt"] = 337499.542,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "20:17:10",
-				["end_time"] = 337499.977,
-				["combat_id"] = 40,
-				["spells_cast_timeline"] = {
-				},
-				["tempo_start"] = 1602613030,
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Augustin"] = 240486.006075,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["frags"] = {
-					["Skeleton of Zum'rah"] = 8,
-					["Zul'Farrak Zombie"] = 43,
-					["Zul'Farrak Dead Hero"] = 6,
-					["Ward of Zum'rah"] = 2,
-				},
-				["is_boss"] = {
-					["mapid"] = 209,
-					["diff_string"] = "normal",
-					["index"] = 1,
-					["zone"] = "Zul'Farrak",
-					["id"] = 0,
-					["try_number"] = 1,
-					["diff"] = 16,
-					["ej_instance_id"] = 0,
-				},
-				["TimeData"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["combat_counter"] = 6532,
-				["start_time"] = 337209.972,
-				["contra"] = "Zul'Farrak Zombie",
-				["totals_grupo"] = {
-					240486, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 1457,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 0,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-			}, -- [6]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 35,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.006599,
-							["damage_from"] = {
-								["Skeleton of Zum'rah"] = true,
-								["Zul'Farrak Zombie"] = true,
-							},
-							["targets"] = {
-								["Zul'Farrak Zombie"] = 238940,
-								["Skeleton of Zum'rah"] = 54,
-								["Zul'Farrak Dead Hero"] = 7581,
-							},
-							["pets"] = {
-							},
-							["total"] = 246575.006599,
-							["damage_taken"] = 881.006599,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 246575.006599,
-							["last_dps"] = 761.036319862073,
-							["serial"] = "Player-4465-01D5BF39",
-							["dps_started"] = false,
-							["end_time"] = 1602612192,
-							["classe"] = "MAGE",
-							["friendlyfire"] = {
-							},
-							["boss_fight_component"] = true,
-							["spells"] = {
-								["_ActorTable"] = {
-									["Blizzard"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 96,
-										["targets"] = {
-											["Zul'Farrak Zombie"] = 238126,
-											["Skeleton of Zum'rah"] = 54,
-											["Zul'Farrak Dead Hero"] = 7581,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 245761,
-										["n_min"] = 14,
-										["g_dmg"] = 0,
-										["counter"] = 4292,
-										["total"] = 245761,
-										["c_max"] = 0,
-										["id"] = "Blizzard",
-										["r_dmg"] = 677,
-										["spellschool"] = 16,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4292,
-										["a_amt"] = 0,
-										["r_amt"] = 18,
-									},
-									["Flamestrike"] = {
 										["c_amt"] = 1,
 										["b_amt"] = 0,
-										["c_dmg"] = 93,
+										["c_dmg"] = 373,
 										["g_amt"] = 0,
-										["n_max"] = 65,
+										["n_max"] = 204,
 										["targets"] = {
-											["Zul'Farrak Zombie"] = 814,
+											["Augustin"] = 2978,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 721,
-										["n_min"] = 12,
+										["n_dmg"] = 2605,
+										["n_min"] = 154,
 										["g_dmg"] = 0,
-										["counter"] = 32,
-										["total"] = 814,
-										["c_max"] = 93,
-										["id"] = "Flamestrike",
+										["counter"] = 18,
+										["total"] = 2978,
+										["c_max"] = 373,
+										["MISS"] = 2,
+										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 4,
+										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
-										["c_min"] = 93,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 31,
-										["a_amt"] = 0,
+										["n_amt"] = 15,
 										["r_amt"] = 0,
+										["c_min"] = 373,
 									},
 								},
-								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["tipo"] = 1,
-							["colocacao"] = 1,
-							["nome"] = "Augustin",
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1602704214,
+							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1602612191,
-							["on_hold"] = false,
-							["start_time"] = 1602611922,
-							["delay"] = 1602612173,
-							["spec"] = 64,
-						}, -- [1]
+							["tipo"] = 1,
+							["damage_taken"] = 844.008776,
+							["start_time"] = 1602704204,
+							["delay"] = 0,
+							["last_event"] = 1602704213,
+						}, -- [2]
 						{
 							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.008245,
+							["totalabsorbed"] = 0.001886,
+							["monster"] = true,
 							["damage_from"] = {
 								["Augustin"] = true,
 							},
 							["targets"] = {
-								["Augustin"] = 832,
+								["Augustin"] = 418,
 							},
 							["pets"] = {
 							},
-							["dps_started"] = false,
-							["nome"] = "Zul'Farrak Zombie",
-							["classe"] = "UNKNOW",
+							["boss_fight_component"] = true,
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 832.008245,
-							["serial"] = "Creature-0-4469-209-5977-7286-000005EA66",
-							["monster"] = true,
-							["end_time"] = 1602612192,
-							["friendlyfire_total"] = 0,
+							["total_without_pet"] = 418.001886,
 							["on_hold"] = false,
-							["boss_fight_component"] = true,
+							["dps_started"] = false,
+							["total"] = 418.001886,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4447-209-19568-7276-0000075295",
+							["nome"] = "Zul'Farrak Dead Hero",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 190,
+										["n_max"] = 164,
 										["targets"] = {
-											["Augustin"] = 832,
+											["Augustin"] = 418,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 832,
-										["n_min"] = 157,
+										["n_dmg"] = 418,
+										["n_min"] = 105,
 										["g_dmg"] = 0,
-										["counter"] = 5,
-										["total"] = 832,
+										["counter"] = 3,
+										["total"] = 418,
 										["c_max"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
-										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 5,
-										["a_amt"] = 0,
+										["n_amt"] = 3,
 										["r_amt"] = 0,
-									},
-									["Announce Zul'Farrak Zombie"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Announce Zul'Farrak Zombie",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
 										["c_min"] = 0,
-										["successful_casted"] = 2,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["m_amt"] = 0,
-										["r_amt"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
-							["last_event"] = 1602612012,
 							["friendlyfire"] = {
 							},
+							["end_time"] = 1602704214,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 238940.008245,
-							["start_time"] = 1602612191,
-							["delay"] = 1602612012,
-							["total"] = 832.008245,
-						}, -- [2]
+							["damage_taken"] = 81.001886,
+							["start_time"] = 1602704212,
+							["delay"] = 0,
+							["last_event"] = 1602704212,
+						}, -- [3]
 						{
 							["flag_original"] = 8776,
-							["totalabsorbed"] = 0.006146,
+							["totalabsorbed"] = 0.002394,
 							["damage_from"] = {
-								["Augustin"] = true,
 							},
 							["targets"] = {
-								["Augustin"] = 49,
+								["Augustin"] = 146,
 							},
 							["pets"] = {
 							},
-							["tipo"] = 1,
+							["boss_fight_component"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 49.006146,
-							["total"] = 49.006146,
+							["total_without_pet"] = 146.002394,
+							["on_hold"] = false,
 							["dps_started"] = false,
-							["end_time"] = 1602612192,
-							["serial"] = "Creature-0-4469-209-5977-7786-000005EAB9",
-							["boss_fight_component"] = true,
+							["total"] = 146.002394,
+							["classe"] = "PET",
+							["serial"] = "Creature-0-4447-209-19568-7786-000007534C",
 							["nome"] = "Skeleton of Zum'rah",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
 									["!Melee"] = {
 										["c_amt"] = 0,
@@ -4143,1945 +312,131 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 49,
 										["targets"] = {
-											["Augustin"] = 49,
+											["Augustin"] = 146,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 49,
-										["n_min"] = 49,
+										["n_dmg"] = 146,
+										["n_min"] = 48,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 49,
+										["counter"] = 3,
+										["total"] = 146,
 										["c_max"] = 0,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
 										["spellschool"] = 1,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
+										["a_amt"] = 0,
 										["m_amt"] = 0,
-										["c_min"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_amt"] = 0,
+										["n_amt"] = 3,
 										["r_amt"] = 0,
+										["c_min"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
-							["on_hold"] = false,
 							["friendlyfire"] = {
 							},
+							["end_time"] = 1602704214,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1602611915,
-							["damage_taken"] = 54.006146,
-							["start_time"] = 1602612191,
-							["delay"] = 1602611915,
-							["classe"] = "PET",
-						}, -- [3]
+							["tipo"] = 1,
+							["damage_taken"] = 0.002394,
+							["start_time"] = 1602704206,
+							["delay"] = 0,
+							["last_event"] = 1602704212,
+						}, -- [4]
 						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.00716,
+							["flag_original"] = -2147483648,
+							["totalabsorbed"] = 0.006551,
 							["damage_from"] = {
 							},
 							["targets"] = {
+								["Augustin"] = 18,
 							},
 							["pets"] = {
 							},
-							["dps_started"] = false,
 							["boss_fight_component"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 0.00716,
-							["serial"] = "Creature-0-4469-209-5977-7271-000005E750",
-							["monster"] = true,
-							["total"] = 0.00716,
-							["end_time"] = 1602612192,
+							["total_without_pet"] = 18.006551,
 							["on_hold"] = false,
-							["nome"] = "Witch Doctor Zum'rah",
+							["dps_started"] = false,
+							["total"] = 18.006551,
+							["classe"] = "UNKNOW",
+							["serial"] = "",
+							["nome"] = "Environment (Falling)",
 							["spells"] = {
+								["tipo"] = 2,
 								["_ActorTable"] = {
-									["Ward of Zum'rah"] = {
+									["Falling"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 0,
+										["n_max"] = 18,
 										["targets"] = {
+											["Augustin"] = 18,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
+										["n_dmg"] = 18,
+										["n_min"] = 18,
 										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
+										["counter"] = 1,
+										["total"] = 18,
 										["c_max"] = 0,
-										["id"] = "Ward of Zum'rah",
+										["id"] = "Falling",
 										["r_dmg"] = 0,
+										["spellschool"] = 3,
 										["a_dmg"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
 										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
 										["r_amt"] = 0,
+										["c_min"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
-							["tipo"] = 1,
 							["friendlyfire"] = {
 							},
+							["end_time"] = 1602704214,
 							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 0,
-							["damage_taken"] = 0.00716,
-							["start_time"] = 1602612192,
+							["tipo"] = 1,
+							["damage_taken"] = 0.006551,
+							["start_time"] = 1602704209,
 							["delay"] = 0,
-							["classe"] = "UNKNOW",
-						}, -- [4]
+							["last_event"] = 1602704209,
+						}, -- [5]
 						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.006093,
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.004039,
 							["damage_from"] = {
 								["Augustin"] = true,
 							},
 							["targets"] = {
 							},
+							["monster"] = true,
 							["pets"] = {
 							},
-							["dps_started"] = false,
 							["boss_fight_component"] = true,
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 0.006093,
-							["serial"] = "Creature-0-4469-209-5977-7276-000005EAA0",
-							["monster"] = true,
-							["total"] = 0.006093,
-							["end_time"] = 1602612192,
+							["total_without_pet"] = 0.004039,
 							["on_hold"] = false,
-							["nome"] = "Zul'Farrak Dead Hero",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Announce Zul'Farrak Zombie"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Announce Zul'Farrak Zombie",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["m_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["damage_taken"] = 7581.006093,
-							["start_time"] = 1602612192,
-							["delay"] = 0,
+							["dps_started"] = false,
+							["total"] = 0.004039,
 							["classe"] = "UNKNOW",
-						}, -- [5]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 35,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 35,
-					["_ActorTable"] = {
-						{
-							["received"] = 2564.007299,
-							["resource"] = 0.007299,
-							["targets"] = {
-								["Augustin"] = 2564,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "MAGE",
-							["passiveover"] = 0.007299,
-							["total"] = 2564.007299,
-							["nome"] = "Augustin",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Replenish Mana"] = {
-										["total"] = 1052,
-										["id"] = "Replenish Mana",
-										["totalover"] = 0,
-										["targets"] = {
-											["Augustin"] = 1052,
-										},
-										["counter"] = 2,
-									},
-									["Restore Mana"] = {
-										["total"] = 1512,
-										["id"] = "Restore Mana",
-										["totalover"] = 0,
-										["targets"] = {
-											["Augustin"] = 1512,
-										},
-										["counter"] = 2,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["boss_fight_component"] = true,
-							["flag_original"] = 1297,
-							["alternatepower"] = 0.007299,
-							["tipo"] = 3,
-							["spec"] = 64,
-							["last_event"] = 1602612158,
-							["serial"] = "Player-4465-01D5BF39",
-							["totalover"] = 0.007299,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 35,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Blizzard"] = {
-										["appliedamt"] = 1369,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 201,
-										["id"] = "Blizzard",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Flamestrike"] = {
-										["appliedamt"] = 8,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 8,
-										["id"] = "Flamestrike",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 802,
-							["classe"] = "MAGE",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Dampen Magic"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 148,
-										["id"] = "Dampen Magic",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Evocation"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 6,
-										["id"] = "Evocation",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Mage Armor"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 324,
-										["id"] = "Mage Armor",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Arcane Intellect"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 324,
-										["id"] = "Arcane Intellect",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 209,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 64,
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Replenish Mana"] = 2,
-								["Evocation"] = 1,
-								["Restore Mana"] = 2,
-								["Blizzard"] = 30,
-							},
-							["boss_fight_component"] = true,
-							["last_event"] = 1602612192,
-							["tipo"] = 4,
-							["nome"] = "Augustin",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-01D5BF39",
-							["debuff_uptime_targets"] = {
-							},
-						}, -- [1]
-						{
-							["flag_original"] = 2632,
-							["tipo"] = 4,
-							["nome"] = "Zul'Farrak Zombie",
-							["pets"] = {
-							},
-							["boss_fight_component"] = true,
-							["spell_cast"] = {
-								["Announce Zul'Farrak Zombie"] = 2,
-							},
-							["last_event"] = 0,
-							["monster"] = true,
-							["serial"] = "Creature-0-4469-209-5977-7286-000005EAA0",
-							["classe"] = "UNKNOW",
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["tipo"] = 4,
-							["nome"] = "Zul'Farrak Dead Hero",
-							["pets"] = {
-							},
-							["boss_fight_component"] = true,
-							["spell_cast"] = {
-								["Announce Zul'Farrak Zombie"] = 1,
-							},
-							["last_event"] = 0,
-							["monster"] = true,
-							["serial"] = "Creature-0-4469-209-5977-7276-000005EAA0",
-							["classe"] = "UNKNOW",
-						}, -- [3]
-						{
-							["flag_original"] = 68168,
-							["tipo"] = 4,
+							["serial"] = "Creature-0-4447-209-19568-7271-0000075145",
 							["nome"] = "Witch Doctor Zum'rah",
-							["pets"] = {
-							},
-							["boss_fight_component"] = true,
-							["spell_cast"] = {
-								["Ward of Zum'rah"] = 1,
-							},
-							["last_event"] = 0,
-							["monster"] = true,
-							["serial"] = "Creature-0-4469-209-5977-7271-000005E750",
-							["classe"] = "UNKNOW",
-						}, -- [4]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 35,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Augustin"] = true,
-					["Konac"] = true,
-				},
-				["CombatStartedAt"] = 336814.502,
-				["tempo_start"] = 1602611868,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["combat_counter"] = 6526,
-				["totals"] = {
-					247455.995883, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 2564,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "party",
-				["hasSaved"] = true,
-				["data_fim"] = "20:03:13",
-				["cleu_timeline"] = {
-				},
-				["TotalElapsedCombatTime"] = 336372.353,
-				["CombatEndedAt"] = 336372.353,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Augustin"] = 246575.006599,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 336372.902,
-				["combat_id"] = 35,
-				["frags"] = {
-					["Zul'Farrak Zombie"] = 45,
-					["Skeleton of Zum'rah"] = 4,
-					["Zul'Farrak Dead Hero"] = 4,
-					["Ward of Zum'rah"] = 1,
-				},
-				["overall_added"] = true,
-				["totals_grupo"] = {
-					246575, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 2564,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["spells_cast_timeline"] = {
-				},
-				["is_boss"] = {
-					["mapid"] = 209,
-					["diff_string"] = "normal",
-					["index"] = 1,
-					["zone"] = "Zul'Farrak",
-					["id"] = 0,
-					["ej_instance_id"] = 0,
-					["diff"] = 16,
-					["try_number"] = 1,
-				},
-				["contra"] = "Zul'Farrak Zombie",
-				["CombatSkillCache"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["start_time"] = 336048.903,
-				["TimeData"] = {
-				},
-				["data_inicio"] = "19:57:49",
-			}, -- [7]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 29,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.004784,
-							["damage_from"] = {
-								["Sandfury Firecaller"] = true,
-								["Sandfury Axe Thrower"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["friendlyfire"] = {
-							},
-							["tipo"] = 1,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.004784,
-							["serial"] = "Player-4465-01D5BF39",
-							["dps_started"] = false,
-							["total"] = 0.004784,
-							["spec"] = 64,
-							["on_hold"] = false,
-							["nome"] = "Augustin",
 							["spells"] = {
-								["_ActorTable"] = {
-								},
 								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["end_time"] = 1602611386,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["last_event"] = 0,
-							["damage_taken"] = 532.004784,
-							["start_time"] = 1602611386,
-							["delay"] = 0,
-							["classe"] = "MAGE",
-						}, -- [1]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.006603,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Augustin"] = 274,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["total"] = 274.006603,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 274.006603,
-							["serial"] = "Creature-0-4447-1-41-5647-000004CA73",
-							["fight_component"] = true,
-							["end_time"] = 1602611386,
-							["dps_started"] = false,
-							["on_hold"] = false,
-							["nome"] = "Sandfury Firecaller",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Fireball"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 274,
-										["targets"] = {
-											["Augustin"] = 274,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 274,
-										["n_min"] = 274,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 274,
-										["c_max"] = 0,
-										["id"] = "Fireball",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["m_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Augustin"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["DODGE"] = 1,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["b_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["m_amt"] = 0,
-										["n_amt"] = 0,
-										["a_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1602611388,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.006603,
-							["start_time"] = 1602611385,
-							["delay"] = 1602611373,
-							["friendlyfire_total"] = 0,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.007752,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Augustin"] = 258,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["total"] = 258.007752,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 258.007752,
-							["serial"] = "Creature-0-4447-1-41-5646-000004B211",
-							["fight_component"] = true,
-							["end_time"] = 1602611386,
-							["dps_started"] = false,
-							["on_hold"] = false,
-							["nome"] = "Sandfury Axe Thrower",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Throw"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 129,
-										["targets"] = {
-											["Augustin"] = 258,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 258,
-										["n_min"] = 129,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 258,
-										["c_max"] = 0,
-										["id"] = "Throw",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1602611369,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.007752,
-							["start_time"] = 1602611383,
-							["delay"] = 1602611369,
-							["friendlyfire_total"] = 0,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 29,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 29,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 29,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 64,
-							["grupo"] = true,
-							["buff_uptime"] = 19,
-							["nome"] = "Augustin",
-							["pets"] = {
-							},
-							["last_event"] = 1602611386,
-							["classe"] = "MAGE",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Red Skeletal Horse"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 19,
-										["id"] = "Red Skeletal Horse",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-01D5BF39",
-							["tipo"] = 4,
-						}, -- [1]
-						{
-							["flag_original"] = 2632,
-							["tipo"] = 4,
-							["nome"] = "Sandfury Axe Thrower",
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["spell_cast"] = {
-								["Throw"] = 1,
-							},
-							["last_event"] = 0,
-							["monster"] = true,
-							["serial"] = "Creature-0-4447-1-41-5646-00000223B5",
-							["classe"] = "UNKNOW",
-						}, -- [2]
-						{
-							["flag_original"] = 2632,
-							["tipo"] = 4,
-							["nome"] = "Sandfury Firecaller",
-							["pets"] = {
-							},
-							["fight_component"] = true,
-							["spell_cast"] = {
-								["Fireball"] = 1,
-							},
-							["last_event"] = 0,
-							["monster"] = true,
-							["serial"] = "Creature-0-4447-1-41-5647-000004CA73",
-							["classe"] = "UNKNOW",
-						}, -- [3]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 29,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Augustin"] = true,
-					["Konac"] = true,
-				},
-				["CombatStartedAt"] = 335623.584,
-				["tempo_start"] = 1602611367,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["totals"] = {
-					531.998655, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					0, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = false,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "19:49:46",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Sandfury Axe Thrower",
-				["TotalElapsedCombatTime"] = 2.38400000002002,
-				["CombatEndedAt"] = 335580.119,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Augustin"] = 0.004784,
-						}, -- [1]
-					},
-				},
-				["end_time"] = 335566.615,
-				["combat_id"] = 29,
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-				},
-				["combat_counter"] = 6520,
-				["data_inicio"] = "19:49:27",
-				["CombatSkillCache"] = {
-				},
-				["player_last_events"] = {
-				},
-				["start_time"] = 335547.61,
-				["TimeData"] = {
-				},
-				["contra"] = "Sandfury Axe Thrower",
-			}, -- [8]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 28,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.004063,
-							["damage_from"] = {
-								["Mythael"] = true,
-								["Sandfury Axe Thrower"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["classe"] = "MAGE",
-							["last_event"] = 0,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.004063,
-							["delay"] = 0,
-							["dps_started"] = false,
-							["total"] = 0.004063,
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["damage_taken"] = 1685.004063,
-							["nome"] = "Augustin",
-							["spec"] = 64,
-							["grupo"] = true,
-							["end_time"] = 1602608645,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["friendlyfire"] = {
-							},
-							["start_time"] = 1602608645,
-							["serial"] = "Player-4465-01D5BF39",
-							["on_hold"] = false,
-						}, -- [1]
-						{
-							["flag_original"] = 66888,
-							["totalabsorbed"] = 0.004217,
-							["damage_from"] = {
-								["Gadgetzan Bruiser"] = true,
-							},
-							["targets"] = {
-								["Kichy"] = 4919,
-								["Végzet"] = 1182,
-								["Gadgetzan Bruiser"] = 206,
-								["Augustin"] = 1542,
-							},
-							["enemy"] = true,
-							["pets"] = {
-								"Furiwoof <Mythael>", -- [1]
-							},
-							["last_event"] = 1602608688,
-							["classe"] = "UNGROUPPLAYER",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 7849.004217,
-							["total"] = 7849.004217,
-							["dps_started"] = false,
-							["end_time"] = 1602611367,
-							["delay"] = 1602608688,
-							["damage_taken"] = 293.004217,
-							["nome"] = "Mythael",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Scatter Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 206,
-										["targets"] = {
-											["Gadgetzan Bruiser"] = 206,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 206,
-										["n_min"] = 206,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 206,
-										["c_max"] = 0,
-										["id"] = "Scatter Shot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Serpent Sting"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 114,
-										["targets"] = {
-											["Kichy"] = 342,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 342,
-										["n_min"] = 114,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 342,
-										["c_max"] = 0,
-										["id"] = "Serpent Sting",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_dmg"] = 0,
-										["spellschool"] = 8,
-									},
-									["Aimed Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 773,
-										["targets"] = {
-											["Kichy"] = 773,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 773,
-										["n_min"] = 773,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 773,
-										["c_max"] = 0,
-										["id"] = "Aimed Shot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["!Autoshot"] = {
-										["c_amt"] = 2,
-										["b_amt"] = 0,
-										["c_dmg"] = 2512,
-										["g_amt"] = 0,
-										["n_max"] = 501,
-										["targets"] = {
-											["Kichy"] = 2781,
-											["Augustin"] = 1542,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1811,
-										["n_min"] = 404,
-										["g_dmg"] = 0,
-										["counter"] = 6,
-										["total"] = 4323,
-										["c_max"] = 1542,
-										["id"] = "!Autoshot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 970,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Multi-Shot"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 1182,
-										["g_amt"] = 0,
-										["n_max"] = 627,
-										["targets"] = {
-											["Kichy"] = 627,
-											["Végzet"] = 1182,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 627,
-										["n_min"] = 627,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 1809,
-										["c_max"] = 1182,
-										["id"] = "Multi-Shot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 1182,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_dmg"] = 0,
-										["spellschool"] = 1,
-									},
-									["Arcane Shot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 198,
-										["targets"] = {
-											["Kichy"] = 396,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 396,
-										["n_min"] = 198,
-										["g_dmg"] = 0,
-										["counter"] = 2,
-										["total"] = 396,
-										["c_max"] = 0,
-										["id"] = "Arcane Shot",
-										["r_dmg"] = 0,
-										["r_amt"] = 0,
-										["a_amt"] = 0,
-										["m_crit"] = 0,
-										["c_min"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 2,
-										["a_dmg"] = 0,
-										["spellschool"] = 64,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["last_dps"] = 0,
-							["friendlyfire_total"] = 0,
-							["friendlyfire"] = {
-							},
-							["custom"] = 0,
-							["tipo"] = 1,
-							["on_hold"] = false,
-							["start_time"] = 1602611322,
-							["serial"] = "Player-4465-01B89D4D",
-							["fight_component"] = true,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 28,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 28,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 28,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["nome"] = "Augustin",
-							["spec"] = 64,
-							["grupo"] = true,
-							["pets"] = {
-							},
-							["last_event"] = 0,
-							["tipo"] = 4,
-							["serial"] = "Player-4465-01D5BF39",
-							["classe"] = "MAGE",
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 28,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Konac"] = true,
-					["Augustin"] = true,
-				},
-				["CombatStartedAt"] = 335544.957,
-				["tempo_start"] = 1602608644,
-				["last_events_tables"] = {
-					{
-						{
-							{
-								true, -- [1]
-								"!Autoshot", -- [2]
-								1542, -- [3]
-								1602608645.295, -- [4]
-								879, -- [5]
-								"Mythael", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								663, -- [10]
-							}, -- [1]
-							{
-								3, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-								0, -- [5]
-								"Augustin", -- [6]
-							}, -- [2]
-						}, -- [1]
-						1602608645.494, -- [2]
-						"Augustin", -- [3]
-						"MAGE", -- [4]
-						1498, -- [5]
-						"0m 0s", -- [6]
-						["dead"] = true,
-						["dead_at"] = 0.198999999964144,
-					}, -- [1]
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["totals"] = {
-					7848.950147, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 1,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-					["voidzone_damage"] = 0,
-					["frags_total"] = 0,
-				},
-				["totals_grupo"] = {
-					0, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[6] = 0,
-						[3] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["dead"] = 1,
-						["cc_break"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["dispell"] = 0,
-						["cooldowns_defensive"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "19:04:06",
-				["pvp"] = true,
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Mythael",
-				["TotalElapsedCombatTime"] = 11.3079999999609,
-				["CombatEndedAt"] = 335537.283,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "19:04:05",
-				["end_time"] = 332826.319,
-				["combat_id"] = 28,
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage"] = {
-						{
-							["Augustin"] = 0.004063,
-						}, -- [1]
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage_section"] = {
-					},
-				},
-				["spells_cast_timeline"] = {
-				},
-				["player_last_events"] = {
-					["Augustin"] = {
-						{
-							true, -- [1]
-							"!Melee", -- [2]
-							143, -- [3]
-							1602611364.533, -- [4]
-							1778, -- [5]
-							"Sandfury Axe Thrower", -- [6]
-							nil, -- [7]
-							1, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [1]
-						{
-						}, -- [2]
-						{
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 2,
-					},
-				},
-				["combat_counter"] = 6518,
-				["CombatSkillCache"] = {
-				},
-				["contra"] = "Mythael",
-				["start_time"] = 332825.312,
-				["TimeData"] = {
-				},
-				["frags"] = {
-					["Mythael"] = 1,
-				},
-			}, -- [9]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 21,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.001178,
-							["damage_from"] = {
-								["Glasshide Basilisk"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["end_time"] = 1602607368,
-							["last_event"] = 0,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.001178,
-							["serial"] = "Player-4465-01D5BF39",
-							["dps_started"] = false,
-							["total"] = 0.001178,
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["on_hold"] = false,
-							["nome"] = "Augustin",
-							["spec"] = 64,
-							["grupo"] = true,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 71.001178,
-							["start_time"] = 1602607368,
-							["delay"] = 0,
-							["classe"] = "MAGE",
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.001486,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Augustin"] = 71,
-							},
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["fight_component"] = true,
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 71.001486,
-							["serial"] = "Creature-0-4447-1-41-5419-000005A8BE",
-							["monster"] = true,
-							["total"] = 71.001486,
-							["end_time"] = 1602607368,
-							["on_hold"] = false,
-							["nome"] = "Glasshide Basilisk",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 71,
-										["targets"] = {
-											["Augustin"] = 71,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 71,
-										["n_min"] = 71,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 71,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1602607352,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.001486,
-							["start_time"] = 1602607367,
-							["delay"] = 1602607352,
-							["dps_started"] = false,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 21,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 21,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 21,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 64,
-							["grupo"] = true,
-							["buff_uptime"] = 48,
-							["nome"] = "Augustin",
-							["pets"] = {
-							},
-							["tipo"] = 4,
-							["last_event"] = 1602607368,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Arcane Intellect"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 16,
-										["id"] = "Arcane Intellect",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Mage Armor"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 16,
-										["id"] = "Mage Armor",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Red Skeletal Horse"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 16,
-										["id"] = "Red Skeletal Horse",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-01D5BF39",
-							["classe"] = "MAGE",
-						}, -- [1]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 21,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Augustin"] = true,
-					["Konac"] = true,
-				},
-				["CombatStartedAt"] = 332637.492,
-				["tempo_start"] = 1602607352,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["totals"] = {
-					70.993326, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					0, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = false,
-				["instance_type"] = "none",
-				["hasSaved"] = true,
-				["data_fim"] = "18:42:49",
-				["cleu_timeline"] = {
-				},
-				["enemy"] = "Glasshide Basilisk",
-				["TotalElapsedCombatTime"] = 11.3319999999949,
-				["CombatEndedAt"] = 331579.92,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "18:42:33",
-				["end_time"] = 331548.977,
-				["combat_id"] = 21,
-				["combat_counter"] = 6510,
-				["spells_cast_timeline"] = {
-				},
-				["frags"] = {
-				},
-				["player_last_events"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["TimeData"] = {
-				},
-				["start_time"] = 331532.967,
-				["contra"] = "Glasshide Basilisk",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Augustin"] = 0.001178,
-						}, -- [1]
-					},
-				},
-			}, -- [10]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 20,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.007141,
-							["damage_from"] = {
-								["Environment (Falling)"] = true,
-								["Zul'Farrak Zombie"] = true,
-							},
-							["targets"] = {
-								["Zul'Farrak Zombie"] = 217270,
-							},
-							["pets"] = {
-							},
-							["last_dps"] = 666.468325780254,
-							["nome"] = "Augustin",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 217270.007141,
-							["spec"] = 64,
-							["serial"] = "Player-4465-01D5BF39",
-							["dps_started"] = false,
-							["end_time"] = 1602607026,
-							["classe"] = "MAGE",
-							["damage_taken"] = 784.007141,
-							["boss_fight_component"] = true,
-							["spells"] = {
-								["_ActorTable"] = {
-									["Blizzard"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 70,
-										["targets"] = {
-											["Zul'Farrak Zombie"] = 216150,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 216150,
-										["n_min"] = 14,
-										["g_dmg"] = 0,
-										["counter"] = 4278,
-										["total"] = 216150,
-										["c_max"] = 0,
-										["id"] = "Blizzard",
-										["r_dmg"] = 5178,
-										["spellschool"] = 16,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 4278,
-										["a_amt"] = 0,
-										["r_amt"] = 149,
-									},
-									["Flamestrike"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 71,
-										["targets"] = {
-											["Zul'Farrak Zombie"] = 871,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 871,
-										["n_min"] = 6,
-										["g_dmg"] = 0,
-										["counter"] = 35,
-										["total"] = 871,
-										["c_max"] = 0,
-										["id"] = "Flamestrike",
-										["r_dmg"] = 6,
-										["spellschool"] = 4,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 35,
-										["a_amt"] = 0,
-										["r_amt"] = 1,
-									},
-									["Frostbolt"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 249,
-										["targets"] = {
-											["Zul'Farrak Zombie"] = 249,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 249,
-										["n_min"] = 249,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 249,
-										["c_max"] = 0,
-										["id"] = "Frostbolt",
-										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["total"] = 217270.007141,
-							["tipo"] = 1,
-							["colocacao"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1602607025,
-							["on_hold"] = false,
-							["start_time"] = 1602606757,
-							["delay"] = 1602606985,
-							["friendlyfire"] = {
-							},
-						}, -- [1]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.004146,
-							["damage_from"] = {
-								["Augustin"] = true,
-							},
-							["targets"] = {
-								["Augustin"] = 509,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["nome"] = "Zul'Farrak Zombie",
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 509.004146,
-							["serial"] = "Creature-0-4468-209-8211-7286-000105D260",
-							["dps_started"] = false,
-							["total"] = 509.004146,
-							["end_time"] = 1602607026,
-							["on_hold"] = false,
-							["boss_fight_component"] = true,
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 182,
-										["targets"] = {
-											["Augustin"] = 509,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 509,
-										["n_min"] = 149,
-										["g_dmg"] = 0,
-										["counter"] = 3,
-										["total"] = 509,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1602606913,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 217270.004146,
-							["start_time"] = 1602607025,
-							["delay"] = 1602606913,
-							["friendlyfire_total"] = 0,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.00514,
-							["damage_from"] = {
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["nome"] = "Witch Doctor Zum'rah",
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.00514,
-							["serial"] = "Creature-0-4468-209-8211-7271-000005D0F1",
-							["dps_started"] = false,
-							["total"] = 0.00514,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["boss_fight_component"] = true,
-							["spells"] = {
 								["_ActorTable"] = {
 									["Ward of Zum'rah"] = {
 										["c_amt"] = 0,
@@ -6107,795 +462,27 @@ _detalhes_database = {
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["c_min"] = 0,
 										["r_amt"] = 0,
+										["c_min"] = 0,
 									},
 								},
-								["tipo"] = 2,
 							},
-							["last_event"] = 0,
 							["friendlyfire"] = {
 							},
+							["end_time"] = 1602704214,
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 0.00514,
-							["start_time"] = 1602607026,
+							["damage_taken"] = 26.004039,
+							["start_time"] = 1602704214,
 							["delay"] = 0,
-							["end_time"] = 1602607026,
-						}, -- [3]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 20,
-					["_ActorTable"] = {
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 20,
-					["_ActorTable"] = {
-						{
-							["received"] = 1823.005806,
-							["resource"] = 0.005806,
-							["targets"] = {
-								["Augustin"] = 1823,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "MAGE",
-							["passiveover"] = 0.005806,
-							["total"] = 1823.005806,
-							["nome"] = "Augustin",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Replenish Mana"] = {
-										["total"] = 1027,
-										["id"] = "Replenish Mana",
-										["totalover"] = 0,
-										["targets"] = {
-											["Augustin"] = 1027,
-										},
-										["counter"] = 2,
-									},
-									["Restore Mana"] = {
-										["total"] = 796,
-										["id"] = "Restore Mana",
-										["totalover"] = 0,
-										["targets"] = {
-											["Augustin"] = 796,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["boss_fight_component"] = true,
-							["flag_original"] = 1297,
-							["alternatepower"] = 0.005806,
-							["last_event"] = 1602606951,
-							["spec"] = 64,
-							["tipo"] = 3,
-							["serial"] = "Player-4465-01D5BF39",
-							["totalover"] = 0.005806,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 20,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Blizzard"] = {
-										["appliedamt"] = 1294,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 186,
-										["id"] = "Blizzard",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Flamestrike"] = {
-										["appliedamt"] = 11,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 8,
-										["id"] = "Flamestrike",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Frostbolt"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 0,
-										["id"] = "Frostbolt",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 798,
-							["classe"] = "MAGE",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Ice Barrier"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 60,
-										["id"] = "Ice Barrier",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Arcane Intellect"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 326,
-										["id"] = "Arcane Intellect",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Dampen Magic"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 79,
-										["id"] = "Dampen Magic",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Mage Armor"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 326,
-										["id"] = "Mage Armor",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Evocation"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 7,
-										["id"] = "Evocation",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 194,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 64,
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Ice Barrier"] = 1,
-								["Frostbolt"] = 1,
-								["Blizzard"] = 29,
-								["Evocation"] = 1,
-								["Restore Mana"] = 1,
-								["Replenish Mana"] = 2,
-							},
-							["boss_fight_component"] = true,
-							["last_event"] = 1602607026,
-							["tipo"] = 4,
-							["nome"] = "Augustin",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-01D5BF39",
-							["debuff_uptime_targets"] = {
-							},
-						}, -- [1]
-						{
-							["flag_original"] = 68168,
-							["tipo"] = 4,
-							["nome"] = "Witch Doctor Zum'rah",
-							["pets"] = {
-							},
-							["boss_fight_component"] = true,
-							["spell_cast"] = {
-								["Ward of Zum'rah"] = 1,
-							},
 							["last_event"] = 0,
-							["monster"] = true,
-							["serial"] = "Creature-0-4468-209-8211-7271-000005D0F1",
-							["classe"] = "UNKNOW",
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 20,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Augustin"] = true,
-					["Konac"] = true,
-				},
-				["CombatStartedAt"] = 331522.469,
-				["overall_added"] = true,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["totals"] = {
-					217778.989037, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 1823,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					217270, -- [1]
-					0, -- [2]
-					{
-						0, -- [1]
-						[0] = 1823,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "party",
-				["hasSaved"] = true,
-				["data_fim"] = "18:37:07",
-				["cleu_timeline"] = {
-				},
-				["TotalElapsedCombatTime"] = 331207.273,
-				["CombatEndedAt"] = 331207.273,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "18:31:41",
-				["end_time"] = 331207.442,
-				["combat_id"] = 20,
-				["spells_cast_timeline"] = {
-				},
-				["tempo_start"] = 1602606700,
-				["player_last_events"] = {
-					["Augustin"] = {
-						{
-							true, -- [1]
-							"Falling", -- [2]
-							74, -- [3]
-							1602607121.46, -- [4]
-							2328, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [1]
-						{
-							true, -- [1]
-							"Falling", -- [2]
-							144, -- [3]
-							1602607194.099, -- [4]
-							2328, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [2]
-						{
-							true, -- [1]
-							"Falling", -- [2]
-							57, -- [3]
-							1602607195.689, -- [4]
-							2198, -- [5]
-							"Environment (Falling)", -- [6]
-							nil, -- [7]
-							3, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
 						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 4,
-					},
-				},
-				["frags"] = {
-					["Zul'Farrak Zombie"] = 41,
-					["Ward of Zum'rah"] = 1,
-				},
-				["is_boss"] = {
-					["mapid"] = 209,
-					["diff_string"] = "normal",
-					["index"] = 1,
-					["zone"] = "Zul'Farrak",
-					["id"] = 0,
-					["ej_instance_id"] = 0,
-					["diff"] = 16,
-					["try_number"] = 5,
-				},
-				["TimeData"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["combat_counter"] = 6509,
-				["start_time"] = 330881.44,
-				["contra"] = "Zul'Farrak Zombie",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Augustin"] = 217270.007141,
-						}, -- [1]
-					},
-				},
-			}, -- [11]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 19,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.005082,
-							["damage_from"] = {
-								["Sandfury Shadowhunter"] = true,
-								["Zul'Farrak Zombie"] = true,
-								["Theka the Martyr"] = true,
-							},
-							["targets"] = {
-								["Zul'Farrak Zombie"] = 240,
-							},
-							["pets"] = {
-							},
-							["last_dps"] = 7.05918062295728,
-							["nome"] = "Augustin",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 240.005082,
-							["spec"] = 64,
-							["serial"] = "Player-4465-01D5BF39",
-							["dps_started"] = false,
-							["end_time"] = 1602606613,
-							["classe"] = "MAGE",
-							["damage_taken"] = 2639.005082,
-							["boss_fight_component"] = true,
-							["spells"] = {
-								["_ActorTable"] = {
-									["Chilled"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Sandfury Shadowhunter"] = 0,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 0,
-										["c_max"] = 0,
-										["spellschool"] = 16,
-										["id"] = "Chilled",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["RESIST"] = 1,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 0,
-										["c_min"] = 0,
-										["n_amt"] = 0,
-										["b_dmg"] = 0,
-										["r_amt"] = 0,
-									},
-									["Frost Nova"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 25,
-										["targets"] = {
-											["Zul'Farrak Zombie"] = 240,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 240,
-										["n_min"] = 22,
-										["g_dmg"] = 0,
-										["counter"] = 10,
-										["total"] = 240,
-										["c_max"] = 0,
-										["id"] = "Frost Nova",
-										["r_dmg"] = 0,
-										["spellschool"] = 16,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 10,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["total"] = 240.005082,
-							["tipo"] = 1,
-							["colocacao"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1602606588,
-							["on_hold"] = false,
-							["start_time"] = 1602606612,
-							["delay"] = 1602606588,
-							["friendlyfire"] = {
-							},
-						}, -- [1]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.001317,
-							["damage_from"] = {
-								["Augustin"] = true,
-							},
-							["targets"] = {
-								["Augustin"] = 1415,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["boss_fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 1415.001317,
-							["serial"] = "Creature-0-4468-209-8211-7286-000005D25E",
-							["dps_started"] = false,
-							["total"] = 1415.001317,
-							["end_time"] = 1602606613,
-							["on_hold"] = false,
-							["nome"] = "Zul'Farrak Zombie",
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 171,
-										["targets"] = {
-											["Augustin"] = 1415,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 1415,
-										["n_min"] = 137,
-										["g_dmg"] = 0,
-										["counter"] = 11,
-										["DODGE"] = 1,
-										["r_amt"] = 0,
-										["c_max"] = 0,
-										["MISS"] = 1,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["b_dmg"] = 0,
-										["a_dmg"] = 171,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["a_amt"] = 1,
-										["n_amt"] = 9,
-										["spellschool"] = 1,
-										["total"] = 1415,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1602606594,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 240.001317,
-							["start_time"] = 1602606605,
-							["delay"] = 1602606594,
-							["friendlyfire_total"] = 0,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 458.002272,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Augustin"] = 902,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["nome"] = "Sandfury Shadowhunter",
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 902.002272,
-							["serial"] = "Creature-0-4468-209-8211-7246-000405D0F2",
-							["dps_started"] = false,
-							["total"] = 902.002272,
-							["end_time"] = 1602606613,
-							["on_hold"] = false,
-							["boss_fight_component"] = true,
-							["spells"] = {
-								["_ActorTable"] = {
-									["Shoot"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 160,
-										["targets"] = {
-											["Augustin"] = 595,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 595,
-										["n_min"] = 135,
-										["g_dmg"] = 0,
-										["counter"] = 4,
-										["total"] = 595,
-										["c_max"] = 0,
-										["id"] = "Shoot",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 3,
-										["b_dmg"] = 0,
-										["n_amt"] = 4,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 307,
-										["targets"] = {
-											["Augustin"] = 307,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 307,
-										["n_min"] = 307,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 307,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1602606595,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.002272,
-							["start_time"] = 1602606596,
-							["delay"] = 1602606595,
-							["friendlyfire_total"] = 0,
-						}, -- [3]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 168.003287,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Augustin"] = 322,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["boss_fight_component"] = true,
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 322.003287,
-							["serial"] = "Creature-0-4468-209-8211-7272-000005D0F1",
-							["dps_started"] = false,
-							["total"] = 322.003287,
-							["end_time"] = 1602606700,
-							["on_hold"] = false,
-							["nome"] = "Theka the Martyr",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Fevered Plague"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 14,
-										["targets"] = {
-											["Augustin"] = 322,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 322,
-										["n_min"] = 14,
-										["g_dmg"] = 0,
-										["counter"] = 23,
-										["total"] = 322,
-										["c_max"] = 0,
-										["id"] = "Fevered Plague",
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 23,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1602606692,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.003287,
-							["start_time"] = 1602606582,
-							["delay"] = 0,
-							["friendlyfire_total"] = 0,
-						}, -- [4]
 					},
 				}, -- [1]
 				{
+					["combatId"] = 24,
 					["tipo"] = 3,
-					["combatId"] = 19,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
@@ -6905,270 +492,1312 @@ _detalhes_database = {
 							},
 							["iniciar_hps"] = false,
 							["classe"] = "MAGE",
-							["totalover"] = 0.008502,
-							["total_without_pet"] = 569.008502,
-							["total"] = 569.008502,
+							["totalover"] = 0.008231,
+							["total_without_pet"] = 452.008231,
+							["total"] = 452.008231,
 							["targets_absorbs"] = {
-								["Augustin"] = 569,
+								["Augustin"] = 452,
 							},
 							["heal_enemy"] = {
 							},
 							["colocacao"] = 1,
 							["on_hold"] = false,
 							["serial"] = "Player-4465-01D5BF39",
-							["totalabsorb"] = 569.008502,
-							["last_hps"] = 17.0924752778421,
+							["totalabsorb"] = 452.008231,
+							["last_hps"] = 9.61453706422095,
 							["targets"] = {
-								["Augustin"] = 569,
+								["Augustin"] = 452,
 							},
-							["totalover_without_pet"] = 0.008502,
-							["healing_taken"] = 569.008502,
-							["end_time"] = 1602606613,
+							["totalover_without_pet"] = 0.008231,
+							["healing_taken"] = 452.008231,
+							["boss_fight_component"] = true,
+							["end_time"] = 1602704214,
 							["healing_from"] = {
 								["Augustin"] = true,
 							},
-							["boss_fight_component"] = true,
 							["nome"] = "Augustin",
 							["spells"] = {
+								["tipo"] = 3,
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
 										["c_amt"] = 0,
-										["totalabsorb"] = 269,
+										["totalabsorb"] = 452,
 										["targets_overheal"] = {
 										},
-										["n_max"] = 255,
+										["n_max"] = 204,
 										["targets"] = {
-											["Augustin"] = 269,
+											["Augustin"] = 452,
 										},
-										["n_min"] = 14,
-										["counter"] = 2,
+										["n_min"] = 79,
+										["counter"] = 3,
 										["overheal"] = 0,
-										["total"] = 269,
+										["total"] = 452,
 										["c_max"] = 0,
 										["id"] = "Ice Barrier",
 										["targets_absorbs"] = {
-											["Augustin"] = 269,
+											["Augustin"] = 452,
 										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["m_crit"] = 0,
 										["m_healed"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 269,
-										["n_amt"] = 2,
-										["totaldenied"] = 0,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-									["Mana Shield"] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 300,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 151,
-										["targets"] = {
-											["Augustin"] = 300,
-										},
-										["n_min"] = 52,
-										["counter"] = 3,
-										["overheal"] = 0,
-										["total"] = 300,
-										["c_max"] = 0,
-										["id"] = "Mana Shield",
-										["targets_absorbs"] = {
-											["Augustin"] = 300,
-										},
 										["c_curado"] = 0,
-										["c_min"] = 0,
 										["m_crit"] = 0,
-										["m_healed"] = 0,
+										["c_min"] = 0,
 										["m_amt"] = 0,
-										["n_curado"] = 300,
+										["n_curado"] = 452,
 										["n_amt"] = 3,
 										["totaldenied"] = 0,
 										["is_shield"] = true,
 										["absorbed"] = 0,
 									},
 								},
-								["tipo"] = 3,
 							},
 							["grupo"] = true,
 							["heal_enemy_amt"] = 0,
-							["start_time"] = 1602606606,
+							["start_time"] = 1602704211,
 							["custom"] = 0,
 							["tipo"] = 2,
 							["spec"] = 64,
-							["totaldenied"] = 0.008502,
-							["delay"] = 1602606587,
-							["last_event"] = 1602606612,
+							["totaldenied"] = 0.008231,
+							["delay"] = 0,
+							["last_event"] = 1602704211,
 						}, -- [1]
 					},
 				}, -- [2]
 				{
+					["combatId"] = 24,
 					["tipo"] = 7,
-					["combatId"] = 19,
 					["_ActorTable"] = {
 					},
 				}, -- [3]
 				{
+					["combatId"] = 24,
 					["tipo"] = 9,
-					["combatId"] = 19,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
-									["Chilled"] = {
-										["appliedamt"] = 7,
+									["Blizzard"] = {
+										["activedamt"] = 0,
+										["id"] = "Blizzard",
 										["targets"] = {
 										},
-										["activedamt"] = 0,
-										["uptime"] = 14,
-										["id"] = "Chilled",
-										["refreshamt"] = 2,
+										["uptime"] = 6,
+										["appliedamt"] = 17,
+										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									["Frost Nova"] = {
-										["appliedamt"] = 10,
+									["Flamestrike"] = {
+										["activedamt"] = 0,
+										["id"] = "Flamestrike",
 										["targets"] = {
 										},
-										["activedamt"] = 0,
 										["uptime"] = 8,
-										["id"] = "Frost Nova",
+										["appliedamt"] = 4,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
 							},
-							["buff_uptime"] = 115,
+							["buff_uptime"] = 142,
 							["classe"] = "MAGE",
 							["buff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
-										["appliedamt"] = 2,
+										["activedamt"] = 1,
+										["id"] = "Ice Barrier",
 										["targets"] = {
 										},
-										["activedamt"] = 2,
-										["uptime"] = 4,
-										["id"] = "Ice Barrier",
+										["uptime"] = 3,
+										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Blink"] = {
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["id"] = "Blink",
 										["targets"] = {
 										},
-										["activedamt"] = 1,
 										["uptime"] = 1,
-										["id"] = "Blink",
+										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Arcane Intellect"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
 										["activedamt"] = 1,
-										["uptime"] = 34,
 										["id"] = "Arcane Intellect",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Ice Armor"] = {
-										["appliedamt"] = 1,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 34,
-										["id"] = "Ice Armor",
+										["uptime"] = 46,
+										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 									["Dampen Magic"] = {
-										["appliedamt"] = 1,
+										["activedamt"] = 1,
+										["id"] = "Dampen Magic",
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 34,
-										["id"] = "Dampen Magic",
+										["uptime"] = 46,
+										["appliedamt"] = 1,
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
-									["Red Skeletal Horse"] = {
+									["Mage Armor"] = {
 										["activedamt"] = 1,
-										["id"] = "Red Skeletal Horse",
+										["id"] = "Mage Armor",
 										["targets"] = {
 										},
-										["actived_at"] = 1602606579,
-										["uptime"] = 0,
+										["uptime"] = 46,
 										["appliedamt"] = 1,
-										["refreshamt"] = 0,
-										["actived"] = true,
-										["counter"] = 0,
-									},
-									["Mana Shield"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 8,
-										["id"] = "Mana Shield",
 										["refreshamt"] = 0,
 										["actived"] = false,
 										["counter"] = 0,
 									},
 								},
-								["tipo"] = 9,
 							},
-							["debuff_uptime"] = 22,
+							["debuff_uptime"] = 14,
 							["buff_uptime_targets"] = {
 							},
 							["spec"] = 64,
 							["grupo"] = true,
 							["spell_cast"] = {
-								["Frost Nova"] = 1,
-								["Blink"] = 1,
 								["Ice Barrier"] = 1,
+								["Blink"] = 1,
+								["Counterspell"] = 1,
+								["Blizzard"] = 1,
+								["Fire Blast"] = 1,
 							},
 							["boss_fight_component"] = true,
-							["last_event"] = 1602606613,
-							["tipo"] = 4,
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1602704213,
 							["nome"] = "Augustin",
 							["pets"] = {
 							},
 							["serial"] = "Player-4465-01D5BF39",
-							["debuff_uptime_targets"] = {
-							},
+							["tipo"] = 4,
 						}, -- [1]
 						{
 							["flag_original"] = 68168,
+							["nome"] = "Witch Doctor Zum'rah",
 							["tipo"] = 4,
-							["nome"] = "Sandfury Shadowhunter",
 							["pets"] = {
 							},
 							["boss_fight_component"] = true,
 							["spell_cast"] = {
-								["Shoot"] = 3,
+								["Ward of Zum'rah"] = 1,
 							},
 							["last_event"] = 0,
 							["monster"] = true,
-							["serial"] = "Creature-0-4468-209-8211-7246-000405D0F2",
+							["serial"] = "Creature-0-4447-209-19568-7271-0000075145",
 							["classe"] = "UNKNOW",
 						}, -- [2]
 						{
 							["flag_original"] = 2632,
 							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
 								["_ActorTable"] = {
 								},
+							},
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["boss_debuff"] = true,
+							["monster"] = true,
+							["debuff_uptime"] = 5,
+							["spellschool"] = 1,
+							["debuff_uptime_targets"] = {
+								["Augustin"] = {
+									["uptime"] = 5,
+									["appliedamt"] = 0,
+									["activedamt"] = 0,
+									["actived"] = false,
+									["refreshamt"] = 0,
+								},
+							},
+							["boss_fight_component"] = true,
+							["nome"] = "Dazed",
+							["tipo"] = 4,
+							["damage_twin"] = "Zul'Farrak Zombie",
+							["damage_spellid"] = "Dazed",
+							["serial"] = "Creature-0-4447-209-19568-7286-000007529A",
+							["last_event"] = 1602704213,
+						}, -- [3]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 24,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Augustin"] = true,
+					["Konac"] = true,
+				},
+				["instance_type"] = "party",
+				["overall_added"] = true,
+				["last_events_tables"] = {
+					{
+						{
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								181, -- [3]
+								1602704205.02, -- [4]
+								2337, -- [5]
+								"Zul'Farrak Zombie", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [1]
+							{
+								4, -- [1]
+								"Dazed", -- [2]
+								1, -- [3]
+								1602704205.107, -- [4]
+								2337, -- [5]
+								"Zul'Farrak Zombie", -- [6]
+								false, -- [7]
+								false, -- [8]
+								false, -- [9]
+								false, -- [10]
+							}, -- [2]
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								181, -- [3]
+								1602704206.806, -- [4]
+								2156, -- [5]
+								"Zul'Farrak Zombie", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [3]
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								49, -- [3]
+								1602704206.806, -- [4]
+								2156, -- [5]
+								"Skeleton of Zum'rah", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [4]
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								49, -- [3]
+								1602704207.92, -- [4]
+								1926, -- [5]
+								"Skeleton of Zum'rah", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [5]
+							{
+								true, -- [1]
+								"Falling", -- [2]
+								18, -- [3]
+								1602704209.289, -- [4]
+								1877, -- [5]
+								"Environment (Falling)", -- [6]
+								nil, -- [7]
+								3, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [6]
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								169, -- [3]
+								1602704211.177, -- [4]
+								1859, -- [5]
+								"Zul'Farrak Zombie", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [7]
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								204, -- [3]
+								1602704211.177, -- [4]
+								1859, -- [5]
+								"Zul'Farrak Zombie", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [8]
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								163, -- [3]
+								1602704211.177, -- [4]
+								1859, -- [5]
+								"Zul'Farrak Zombie", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [9]
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								178, -- [3]
+								1602704211.177, -- [4]
+								1859, -- [5]
+								"Zul'Farrak Zombie", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [10]
+							{
+								false, -- [1]
+								"Ice Barrier", -- [2]
+								169, -- [3]
+								1602704211.177, -- [4]
+								1859, -- [5]
+								"Augustin", -- [6]
+								true, -- [7]
+								0, -- [8]
+							}, -- [11]
+							{
+								false, -- [1]
+								"Ice Barrier", -- [2]
+								204, -- [3]
+								1602704211.177, -- [4]
+								1859, -- [5]
+								"Augustin", -- [6]
+								true, -- [7]
+								0, -- [8]
+							}, -- [12]
+							{
+								false, -- [1]
+								"Ice Barrier", -- [2]
+								79, -- [3]
+								1602704211.177, -- [4]
+								1859, -- [5]
+								"Augustin", -- [6]
+								true, -- [7]
+								0, -- [8]
+							}, -- [13]
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								154, -- [3]
+								1602704212.77, -- [4]
+								1597, -- [5]
+								"Zul'Farrak Zombie", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [14]
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								163, -- [3]
+								1602704212.77, -- [4]
+								1597, -- [5]
+								"Zul'Farrak Zombie", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [15]
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								173, -- [3]
+								1602704212.77, -- [4]
+								1597, -- [5]
+								"Zul'Farrak Zombie", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [16]
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								186, -- [3]
+								1602704212.77, -- [4]
+								1597, -- [5]
+								"Zul'Farrak Zombie", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [17]
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								161, -- [3]
+								1602704212.77, -- [4]
+								1597, -- [5]
+								"Zul'Farrak Zombie", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [18]
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								195, -- [3]
+								1602704212.77, -- [4]
+								1597, -- [5]
+								"Zul'Farrak Zombie", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [19]
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								48, -- [3]
+								1602704212.77, -- [4]
+								1597, -- [5]
+								"Skeleton of Zum'rah", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [20]
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								164, -- [3]
+								1602704212.77, -- [4]
+								1597, -- [5]
+								"Zul'Farrak Dead Hero", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [21]
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								149, -- [3]
+								1602704212.77, -- [4]
+								1597, -- [5]
+								"Zul'Farrak Dead Hero", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [22]
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								105, -- [3]
+								1602704212.77, -- [4]
+								1597, -- [5]
+								"Zul'Farrak Dead Hero", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [23]
+							{
+								4, -- [1]
+								"Dazed", -- [2]
+								1, -- [3]
+								1602704212.77, -- [4]
+								1597, -- [5]
+								"Zul'Farrak Dead Hero", -- [6]
+								false, -- [7]
+								false, -- [8]
+								false, -- [9]
+								false, -- [10]
+							}, -- [24]
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								163, -- [3]
+								1602704213.156, -- [4]
+								1597, -- [5]
+								"Zul'Farrak Zombie", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								64, -- [10]
+							}, -- [25]
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								373, -- [3]
+								1602704213.182, -- [4]
+								1597, -- [5]
+								"Zul'Farrak Zombie", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								274, -- [10]
+							}, -- [26]
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								173, -- [3]
+								1602704213.182, -- [4]
+								1597, -- [5]
+								"Zul'Farrak Zombie", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								74, -- [10]
+							}, -- [27]
+							{
+								true, -- [1]
+								"!Melee", -- [2]
+								161, -- [3]
+								1602704213.182, -- [4]
+								1597, -- [5]
+								"Zul'Farrak Zombie", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								62, -- [10]
+							}, -- [28]
+							{
+								3, -- [1]
+								0, -- [2]
+								0, -- [3]
+								0, -- [4]
+								0, -- [5]
+								"Augustin", -- [6]
+							}, -- [29]
+						}, -- [1]
+						1602704213.573, -- [2]
+						"Augustin", -- [3]
+						"MAGE", -- [4]
+						1815, -- [5]
+						"0m 46s", -- [6]
+						["dead_at"] = 46.0669999999809,
+						["dead"] = true,
+					}, -- [1]
+				},
+				["alternate_power"] = {
+				},
+				["tempo_start"] = 1602704167,
+				["enemy"] = nil --[[ skipped inline function ]],
+				["combat_counter"] = 6601,
+				["cleu_timeline"] = {
+				},
+				["totals"] = {
+					4511, -- [1]
+					452, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 1,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["CombatEndedAt"] = 428393.925,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "21:36:07",
+				["end_time"] = 428394.871,
+				["is_boss"] = {
+					["diff_string"] = "normal",
+					["index"] = 1,
+					["zone"] = "Zul'Farrak",
+					["encounter"] = nil --[[ skipped inline function ]],
+					["mapid"] = 209,
+					["try_number"] = 2,
+					["name"] = nil --[[ skipped inline function ]],
+					["id"] = 0,
+					["ej_instance_id"] = 0,
+					["diff"] = 16,
+				},
+				["combat_id"] = 24,
+				["totals_grupo"] = {
+					951, -- [1]
+					452, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 1,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Augustin"] = 452.008231,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Augustin"] = 951.002398,
+						}, -- [1]
+					},
+				},
+				["frags"] = {
+					["Skeleton of Zum'rah"] = 1,
+				},
+				["data_fim"] = "21:36:54",
+				["TotalElapsedCombatTime"] = 428393.925,
+				["CombatSkillCache"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+				["start_time"] = 428347.858,
+				["contra"] = "Zul'Farrak Zombie",
+				["TimeData"] = {
+				},
+			}, -- [1]
+			{
+				{
+					["combatId"] = 19,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.001773,
+							["spec"] = 64,
+							["damage_from"] = {
+								["Witch Doctor Zum'rah"] = true,
+								["Zul'Farrak Zombie"] = true,
+							},
+							["targets"] = {
+								["Witch Doctor Zum'rah"] = 28,
+								["Zul'Farrak Zombie"] = 2992,
+							},
+							["pets"] = {
+							},
+							["friendlyfire"] = {
+							},
+							["boss_fight_component"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 3020.001773,
+							["end_time"] = 1602703501,
+							["colocacao"] = 1,
+							["dps_started"] = false,
+							["total"] = 3020.001773,
+							["classe"] = "MAGE",
+							["on_hold"] = false,
+							["nome"] = "Augustin",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Blizzard"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 28,
+										["targets"] = {
+											["Zul'Farrak Zombie"] = 1784,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 1784,
+										["n_min"] = 27,
+										["g_dmg"] = 0,
+										["counter"] = 66,
+										["total"] = 1784,
+										["c_max"] = 0,
+										["id"] = "Blizzard",
+										["r_dmg"] = 0,
+										["spellschool"] = 16,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 66,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Flamestrike"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 90,
+										["g_amt"] = 0,
+										["n_max"] = 65,
+										["targets"] = {
+											["Zul'Farrak Zombie"] = 612,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 522,
+										["n_min"] = 12,
+										["g_dmg"] = 0,
+										["counter"] = 29,
+										["total"] = 612,
+										["c_max"] = 90,
+										["id"] = "Flamestrike",
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 28,
+										["r_amt"] = 0,
+										["c_min"] = 90,
+									},
+									["Frost Nova"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 43,
+										["g_amt"] = 0,
+										["n_max"] = 25,
+										["targets"] = {
+											["Zul'Farrak Zombie"] = 596,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 553,
+										["n_min"] = 22,
+										["g_dmg"] = 0,
+										["counter"] = 24,
+										["total"] = 596,
+										["c_max"] = 43,
+										["id"] = "Frost Nova",
+										["r_dmg"] = 0,
+										["spellschool"] = 16,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 23,
+										["r_amt"] = 0,
+										["c_min"] = 43,
+									},
+									["Fire Blast"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 28,
+										["targets"] = {
+											["Witch Doctor Zum'rah"] = 28,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 28,
+										["n_min"] = 28,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 28,
+										["c_max"] = 0,
+										["id"] = "Fire Blast",
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["serial"] = "Player-4465-01D5BF39",
+							["last_dps"] = 71.8911105742234,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 2883.001773,
+							["start_time"] = 1602703474,
+							["delay"] = 1602703467,
+							["last_event"] = 1602703497,
+						}, -- [1]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 386.00493,
+							["damage_from"] = {
+								["Augustin"] = true,
+							},
+							["targets"] = {
+								["Augustin"] = 2696,
+							},
+							["pets"] = {
+							},
+							["serial"] = "Creature-0-4448-209-18931-7286-000107502E",
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 2696.00493,
+							["monster"] = true,
+							["boss_fight_component"] = true,
+							["dps_started"] = false,
+							["total"] = 2696.00493,
+							["end_time"] = 1602703501,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Zul'Farrak Zombie",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 338,
+										["g_amt"] = 0,
+										["n_max"] = 206,
+										["targets"] = {
+											["Augustin"] = 2696,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 2358,
+										["n_min"] = 148,
+										["g_dmg"] = 0,
+										["counter"] = 15,
+										["total"] = 2696,
+										["c_max"] = 338,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["spellschool"] = 1,
+										["a_dmg"] = 640,
+										["m_crit"] = 0,
+										["a_amt"] = 4,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 14,
+										["r_amt"] = 0,
+										["c_min"] = 338,
+									},
+								},
+							},
+							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1602703500,
+							["damage_taken"] = 2992.00493,
+							["start_time"] = 1602703496,
+							["delay"] = 0,
+							["tipo"] = 1,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.003956,
+							["damage_from"] = {
+								["Augustin"] = true,
+							},
+							["targets"] = {
+								["Augustin"] = 187,
+							},
+							["pets"] = {
+							},
+							["serial"] = "Creature-0-4448-209-18931-7271-0000074E39",
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 187.003956,
+							["monster"] = true,
+							["boss_fight_component"] = true,
+							["dps_started"] = false,
+							["total"] = 187.003956,
+							["end_time"] = 1602703501,
+							["friendlyfire_total"] = 0,
+							["nome"] = "Witch Doctor Zum'rah",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									["Ward of Zum'rah"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = "Ward of Zum'rah",
+										["r_dmg"] = 0,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["r_amt"] = 0,
+										["c_min"] = 0,
+									},
+									["Shadow Bolt"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 187,
+										["targets"] = {
+											["Augustin"] = 187,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 187,
+										["n_min"] = 187,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 187,
+										["c_max"] = 0,
+										["id"] = "Shadow Bolt",
+										["r_dmg"] = 187,
+										["a_dmg"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["r_amt"] = 1,
+										["c_min"] = 0,
+									},
+								},
+							},
+							["on_hold"] = false,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["last_event"] = 1602703474,
+							["damage_taken"] = 28.003956,
+							["start_time"] = 1602703500,
+							["delay"] = 1602703474,
+							["tipo"] = 1,
+						}, -- [3]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 178.001359,
+							["damage_from"] = {
+							},
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["monster"] = true,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.001359,
+							["on_hold"] = false,
+							["dps_started"] = false,
+							["total"] = 0.001359,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-4447-209-19568-5650-0001875146",
+							["nome"] = "Sandfury Witch Doctor",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["friendlyfire"] = {
+							},
+							["end_time"] = 1602703760,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.001359,
+							["start_time"] = 1602703760,
+							["delay"] = 0,
+							["last_event"] = 1602703760,
+						}, -- [4]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 19,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "MAGE",
+							["totalover"] = 0.005752,
+							["total_without_pet"] = 452.005752,
+							["total"] = 452.005752,
+							["targets_absorbs"] = {
+								["Augustin"] = 452,
+							},
+							["heal_enemy"] = {
+							},
+							["colocacao"] = 1,
+							["on_hold"] = false,
+							["serial"] = "Player-4465-01D5BF39",
+							["totalabsorb"] = 452.005752,
+							["last_hps"] = 10.7599921919705,
+							["targets"] = {
+								["Augustin"] = 452,
+							},
+							["totalover_without_pet"] = 0.005752,
+							["healing_taken"] = 452.005752,
+							["boss_fight_component"] = true,
+							["end_time"] = 1602703501,
+							["healing_from"] = {
+								["Augustin"] = true,
+							},
+							["nome"] = "Augustin",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									["Ice Barrier"] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 452,
+										["targets_overheal"] = {
+										},
+										["n_max"] = 206,
+										["targets"] = {
+											["Augustin"] = 452,
+										},
+										["n_min"] = 66,
+										["counter"] = 3,
+										["overheal"] = 0,
+										["total"] = 452,
+										["c_max"] = 0,
+										["id"] = "Ice Barrier",
+										["targets_absorbs"] = {
+											["Augustin"] = 452,
+										},
+										["m_healed"] = 0,
+										["c_curado"] = 0,
+										["m_crit"] = 0,
+										["c_min"] = 0,
+										["m_amt"] = 0,
+										["n_curado"] = 452,
+										["n_amt"] = 3,
+										["totaldenied"] = 0,
+										["is_shield"] = true,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["heal_enemy_amt"] = 0,
+							["start_time"] = 1602703499,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["spec"] = 64,
+							["totaldenied"] = 0.005752,
+							["delay"] = 0,
+							["last_event"] = 1602703500,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 19,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["combatId"] = 19,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
 								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Blizzard"] = {
+										["activedamt"] = 0,
+										["id"] = "Blizzard",
+										["targets"] = {
+										},
+										["uptime"] = 7,
+										["appliedamt"] = 36,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Flamestrike"] = {
+										["activedamt"] = 0,
+										["id"] = "Flamestrike",
+										["targets"] = {
+										},
+										["uptime"] = 8,
+										["appliedamt"] = 6,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Frost Nova"] = {
+										["activedamt"] = 24,
+										["id"] = "Frost Nova",
+										["targets"] = {
+										},
+										["uptime"] = 4,
+										["appliedamt"] = 24,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 85,
+							["classe"] = "MAGE",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									["Ice Barrier"] = {
+										["activedamt"] = 1,
+										["id"] = "Ice Barrier",
+										["targets"] = {
+										},
+										["uptime"] = 2,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Blink"] = {
+										["activedamt"] = 1,
+										["id"] = "Blink",
+										["targets"] = {
+										},
+										["uptime"] = 1,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Mage Armor"] = {
+										["activedamt"] = 1,
+										["id"] = "Mage Armor",
+										["targets"] = {
+										},
+										["uptime"] = 41,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									["Arcane Intellect"] = {
+										["activedamt"] = 1,
+										["id"] = "Arcane Intellect",
+										["targets"] = {
+										},
+										["uptime"] = 41,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["debuff_uptime"] = 19,
+							["buff_uptime_targets"] = {
+							},
+							["spec"] = 64,
+							["grupo"] = true,
+							["spell_cast"] = {
+								["Ice Barrier"] = 1,
+								["Blink"] = 1,
+								["Frost Nova"] = 1,
+								["Blizzard"] = 1,
+								["Fire Blast"] = 1,
+							},
+							["boss_fight_component"] = true,
+							["debuff_uptime_targets"] = {
+							},
+							["last_event"] = 1602703500,
+							["nome"] = "Augustin",
+							["pets"] = {
+							},
+							["serial"] = "Player-4465-01D5BF39",
+							["tipo"] = 4,
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["nome"] = "Witch Doctor Zum'rah",
+							["tipo"] = 4,
+							["pets"] = {
+							},
+							["boss_fight_component"] = true,
+							["spell_cast"] = {
+								["Ward of Zum'rah"] = 1,
+								["Shadow Bolt"] = 1,
+							},
+							["last_event"] = 0,
+							["monster"] = true,
+							["serial"] = "Creature-0-4448-209-18931-7271-0000074E39",
+							["classe"] = "UNKNOW",
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+								},
 							},
 							["pets"] = {
 							},
@@ -7191,14 +1820,14 @@ _detalhes_database = {
 							["tipo"] = 4,
 							["damage_twin"] = "Zul'Farrak Zombie",
 							["damage_spellid"] = "Dazed",
-							["serial"] = "Creature-0-4468-209-8211-7286-000005D262",
-							["last_event"] = 1602606594,
+							["serial"] = "Creature-0-4448-209-18931-7286-000007502D",
+							["last_event"] = 1602703500,
 						}, -- [3]
 					},
 				}, -- [4]
 				{
-					["tipo"] = 2,
 					["combatId"] = 19,
+					["tipo"] = 2,
 					["_ActorTable"] = {
 					},
 				}, -- [5]
@@ -7206,1505 +1835,29 @@ _detalhes_database = {
 					["Augustin"] = true,
 					["Konac"] = true,
 				},
-				["CombatStartedAt"] = 330881.429,
-				["overall_added"] = true,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["totals"] = {
-					2879, -- [1]
-					569, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					240, -- [1]
-					569, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = false,
-				["instance_type"] = "party",
-				["hasSaved"] = true,
-				["data_fim"] = "18:30:14",
-				["cleu_timeline"] = {
-				},
-				["TotalElapsedCombatTime"] = 330793.49,
-				["CombatEndedAt"] = 330793.49,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "18:29:40",
-				["end_time"] = 330793.837,
-				["combat_id"] = 19,
-				["spells_cast_timeline"] = {
-				},
-				["tempo_start"] = 1602606579,
-				["player_last_events"] = {
-					["Augustin"] = {
-						{
-							true, -- [1]
-							"Fevered Plague", -- [2]
-							14, -- [3]
-							1602606618.276, -- [4]
-							809, -- [5]
-							"Theka the Martyr", -- [6]
-							nil, -- [7]
-							8, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [1]
-						{
-							true, -- [1]
-							"Fevered Plague", -- [2]
-							14, -- [3]
-							1602606623.269, -- [4]
-							1035, -- [5]
-							"Theka the Martyr", -- [6]
-							nil, -- [7]
-							8, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [2]
-						{
-							true, -- [1]
-							"Fevered Plague", -- [2]
-							14, -- [3]
-							1602606628.258, -- [4]
-							1162, -- [5]
-							"Theka the Martyr", -- [6]
-							nil, -- [7]
-							8, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [3]
-						{
-							true, -- [1]
-							"Fevered Plague", -- [2]
-							14, -- [3]
-							1602606633.251, -- [4]
-							1204, -- [5]
-							"Theka the Martyr", -- [6]
-							nil, -- [7]
-							8, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [4]
-						{
-							true, -- [1]
-							"Fevered Plague", -- [2]
-							14, -- [3]
-							1602606638.247, -- [4]
-							1232, -- [5]
-							"Theka the Martyr", -- [6]
-							nil, -- [7]
-							8, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [5]
-						{
-							true, -- [1]
-							"Fevered Plague", -- [2]
-							14, -- [3]
-							1602606643.256, -- [4]
-							1273, -- [5]
-							"Theka the Martyr", -- [6]
-							nil, -- [7]
-							8, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [6]
-						{
-							true, -- [1]
-							"Fevered Plague", -- [2]
-							14, -- [3]
-							1602606648.267, -- [4]
-							1400, -- [5]
-							"Theka the Martyr", -- [6]
-							nil, -- [7]
-							8, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [7]
-						{
-							true, -- [1]
-							"Fevered Plague", -- [2]
-							14, -- [3]
-							1602606653.264, -- [4]
-							1738, -- [5]
-							"Theka the Martyr", -- [6]
-							nil, -- [7]
-							8, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [8]
-						{
-							true, -- [1]
-							"Fevered Plague", -- [2]
-							14, -- [3]
-							1602606658.247, -- [4]
-							1964, -- [5]
-							"Theka the Martyr", -- [6]
-							nil, -- [7]
-							8, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [9]
-						{
-							true, -- [1]
-							"Fevered Plague", -- [2]
-							14, -- [3]
-							1602606663.261, -- [4]
-							2292, -- [5]
-							"Theka the Martyr", -- [6]
-							nil, -- [7]
-							8, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [10]
-						{
-							true, -- [1]
-							"Fevered Plague", -- [2]
-							14, -- [3]
-							1602606668.274, -- [4]
-							2292, -- [5]
-							"Theka the Martyr", -- [6]
-							nil, -- [7]
-							8, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [11]
-						{
-							true, -- [1]
-							"Fevered Plague", -- [2]
-							14, -- [3]
-							1602606673.251, -- [4]
-							2292, -- [5]
-							"Theka the Martyr", -- [6]
-							nil, -- [7]
-							8, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [12]
-						{
-							true, -- [1]
-							"Fevered Plague", -- [2]
-							14, -- [3]
-							1602606678.251, -- [4]
-							2292, -- [5]
-							"Theka the Martyr", -- [6]
-							nil, -- [7]
-							8, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [13]
-						{
-							true, -- [1]
-							"Fevered Plague", -- [2]
-							14, -- [3]
-							1602606683.256, -- [4]
-							2292, -- [5]
-							"Theka the Martyr", -- [6]
-							nil, -- [7]
-							8, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [14]
-						{
-							true, -- [1]
-							"Fevered Plague", -- [2]
-							14, -- [3]
-							1602606688.263, -- [4]
-							2292, -- [5]
-							"Theka the Martyr", -- [6]
-							nil, -- [7]
-							8, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [15]
-						{
-							true, -- [1]
-							"Fevered Plague", -- [2]
-							14, -- [3]
-							1602606693.259, -- [4]
-							2292, -- [5]
-							"Theka the Martyr", -- [6]
-							nil, -- [7]
-							8, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 17,
-					},
-				},
-				["frags"] = {
-				},
-				["is_boss"] = {
-					["mapid"] = 209,
-					["diff_string"] = "normal",
-					["index"] = 1,
-					["zone"] = "Zul'Farrak",
-					["id"] = 0,
-					["ej_instance_id"] = 0,
-					["diff"] = 16,
-					["try_number"] = 4,
-				},
-				["TimeData"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["combat_counter"] = 6508,
-				["start_time"] = 330759.838,
-				["contra"] = "Sandfury Shadowhunter",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Augustin"] = 569.008502,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Augustin"] = 240.005082,
-						}, -- [1]
-					},
-				},
-			}, -- [12]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 18,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.008444,
-							["damage_from"] = {
-								["Theka the Martyr"] = true,
-							},
-							["targets"] = {
-							},
-							["serial"] = "Player-4465-01D5BF39",
-							["pets"] = {
-							},
-							["spec"] = 64,
-							["on_hold"] = false,
-							["classe"] = "MAGE",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.008444,
-							["boss_fight_component"] = true,
-							["dps_started"] = false,
-							["end_time"] = 1602606558,
-							["friendlyfire"] = {
-							},
-							["last_event"] = 0,
-							["nome"] = "Augustin",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["friendlyfire_total"] = 0,
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 536.008444,
-							["start_time"] = 1602606558,
-							["delay"] = 0,
-							["total"] = 0.008444,
-						}, -- [1]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 126.006821,
-							["damage_from"] = {
-							},
-							["targets"] = {
-								["Augustin"] = 536,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["nome"] = "Theka the Martyr",
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 536.006821,
-							["serial"] = "Creature-0-4468-209-8211-7272-000005D0F1",
-							["dps_started"] = false,
-							["end_time"] = 1602606579,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["boss_fight_component"] = true,
-							["spells"] = {
-								["_ActorTable"] = {
-									["Fevered Plague"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 354,
-										["targets"] = {
-											["Augustin"] = 536,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 536,
-										["n_min"] = 14,
-										["g_dmg"] = 0,
-										["counter"] = 14,
-										["total"] = 536,
-										["c_max"] = 0,
-										["id"] = "Fevered Plague",
-										["r_dmg"] = 0,
-										["spellschool"] = 8,
-										["a_dmg"] = 14,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 14,
-										["a_amt"] = 1,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1602606577,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 0.006821,
-							["start_time"] = 1602606512,
-							["delay"] = 0,
-							["total"] = 536.006821,
-						}, -- [2]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 18,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "MAGE",
-							["totalover"] = 0.005906,
-							["total_without_pet"] = 92.005906,
-							["total"] = 92.005906,
-							["targets_absorbs"] = {
-								["Augustin"] = 92,
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-01D5BF39",
-							["totalabsorb"] = 92.005906,
-							["last_hps"] = 2.61878877408475,
-							["targets"] = {
-								["Augustin"] = 92,
-							},
-							["totalover_without_pet"] = 0.005906,
-							["healing_taken"] = 92.005906,
-							["end_time"] = 1602606558,
-							["healing_from"] = {
-								["Augustin"] = true,
-							},
-							["boss_fight_component"] = true,
-							["nome"] = "Augustin",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Ice Barrier"] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 92,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 14,
-										["targets"] = {
-											["Augustin"] = 92,
-										},
-										["n_min"] = 8,
-										["counter"] = 7,
-										["overheal"] = 0,
-										["total"] = 92,
-										["c_max"] = 0,
-										["id"] = "Ice Barrier",
-										["targets_absorbs"] = {
-											["Augustin"] = 92,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["m_crit"] = 0,
-										["m_healed"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 92,
-										["n_amt"] = 7,
-										["totaldenied"] = 0,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1602606527,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["spec"] = 64,
-							["totaldenied"] = 0.005906,
-							["delay"] = 1602606547,
-							["last_event"] = 1602606547,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 18,
-					["_ActorTable"] = {
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 18,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["nome"] = "Augustin",
-							["spec"] = 64,
-							["grupo"] = true,
-							["tipo"] = 4,
-							["buff_uptime"] = 219,
-							["buff_uptime_targets"] = {
-							},
-							["pets"] = {
-							},
-							["classe"] = "MAGE",
-							["last_event"] = 1602606558,
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Ice Barrier"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 35,
-										["id"] = "Ice Barrier",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Arcane Intellect"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 46,
-										["id"] = "Arcane Intellect",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Ice Armor"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 46,
-										["id"] = "Ice Armor",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Dampen Magic"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 46,
-										["id"] = "Dampen Magic",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Mana Shield"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 46,
-										["id"] = "Mana Shield",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["serial"] = "Player-4465-01D5BF39",
-							["boss_fight_component"] = true,
-						}, -- [1]
-						{
-							["flag_original"] = 2632,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["boss_debuff"] = true,
-							["monster"] = true,
-							["debuff_uptime"] = 0,
-							["spellschool"] = 8,
-							["debuff_uptime_targets"] = {
-								["Augustin"] = {
-									["uptime"] = 0,
-									["actived_at"] = 1602606512,
-									["appliedamt"] = 0,
-									["activedamt"] = 1,
-									["actived"] = true,
-									["refreshamt"] = 0,
-								},
-							},
-							["boss_fight_component"] = true,
-							["nome"] = "Fevered Plague",
-							["tipo"] = 4,
-							["damage_twin"] = "Theka the Martyr",
-							["damage_spellid"] = "Fevered Plague",
-							["serial"] = "Creature-0-4468-209-8211-7272-000005D0F1",
-							["last_event"] = 1602606512,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 18,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Augustin"] = true,
-					["Konac"] = true,
-				},
-				["CombatStartedAt"] = 330759.437,
-				["overall_added"] = true,
-				["last_events_tables"] = {
-				},
-				["alternate_power"] = {
-				},
-				["cleu_events"] = {
-					["n"] = 1,
-				},
-				["totals"] = {
-					535.998859, -- [1]
-					92, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["totals_grupo"] = {
-					0, -- [1]
-					92, -- [2]
-					{
-						0, -- [1]
-						[0] = 0,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 0,
-					}, -- [4]
-				},
-				["frags_need_refresh"] = false,
-				["instance_type"] = "party",
-				["hasSaved"] = true,
-				["data_fim"] = "18:29:19",
-				["cleu_timeline"] = {
-				},
-				["TotalElapsedCombatTime"] = 330738.797,
-				["CombatEndedAt"] = 330738.797,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "18:28:33",
-				["end_time"] = 330739.013,
-				["combat_id"] = 18,
-				["spells_cast_timeline"] = {
-				},
-				["tempo_start"] = 1602606512,
-				["player_last_events"] = {
-					["Augustin"] = {
-						{
-							true, -- [1]
-							"Fevered Plague", -- [2]
-							14, -- [3]
-							1602606563.264, -- [4]
-							2169, -- [5]
-							"Theka the Martyr", -- [6]
-							nil, -- [7]
-							8, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [1]
-						{
-							true, -- [1]
-							"Fevered Plague", -- [2]
-							14, -- [3]
-							1602606568.251, -- [4]
-							2197, -- [5]
-							"Theka the Martyr", -- [6]
-							nil, -- [7]
-							8, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [2]
-						{
-							true, -- [1]
-							"Fevered Plague", -- [2]
-							14, -- [3]
-							1602606573.264, -- [4]
-							2225, -- [5]
-							"Theka the Martyr", -- [6]
-							nil, -- [7]
-							8, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [3]
-						{
-							true, -- [1]
-							"Fevered Plague", -- [2]
-							14, -- [3]
-							1602606578.265, -- [4]
-							2267, -- [5]
-							"Theka the Martyr", -- [6]
-							nil, -- [7]
-							8, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 5,
-					},
-				},
-				["frags"] = {
-				},
-				["is_boss"] = {
-					["mapid"] = 209,
-					["diff_string"] = "normal",
-					["index"] = 1,
-					["zone"] = "Zul'Farrak",
-					["id"] = 0,
-					["ej_instance_id"] = 0,
-					["diff"] = 16,
-					["try_number"] = 3,
-				},
-				["TimeData"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["combat_counter"] = 6507,
-				["start_time"] = 330693.001,
-				["contra"] = "Theka the Martyr",
-				["PhaseData"] = {
-					{
-						1, -- [1]
-						1, -- [2]
-					}, -- [1]
-					["damage_section"] = {
-					},
-					["heal_section"] = {
-					},
-					["heal"] = {
-						{
-							["Augustin"] = 92.005906,
-						}, -- [1]
-					},
-					["damage"] = {
-						{
-							["Augustin"] = 0.008444,
-						}, -- [1]
-					},
-				},
-			}, -- [13]
-			{
-				{
-					["tipo"] = 2,
-					["combatId"] = 14,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.004786,
-							["damage_from"] = {
-								["Sandfury Shadowcaster"] = true,
-								["Zul'Farrak Zombie"] = true,
-							},
-							["targets"] = {
-								["Witch Doctor Zum'rah"] = 33,
-								["Zul'Farrak Zombie"] = 166191,
-								["Zul'Farrak Dead Hero"] = 1923,
-							},
-							["pets"] = {
-							},
-							["last_dps"] = 607.009175824568,
-							["nome"] = "Augustin",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 168147.004786,
-							["spec"] = 64,
-							["serial"] = "Player-4465-01D5BF39",
-							["dps_started"] = false,
-							["end_time"] = 1602606019,
-							["classe"] = "MAGE",
-							["damage_taken"] = 3512.004786,
-							["boss_fight_component"] = true,
-							["spells"] = {
-								["_ActorTable"] = {
-									["Blizzard"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 70,
-										["targets"] = {
-											["Zul'Farrak Dead Hero"] = 1923,
-											["Zul'Farrak Zombie"] = 165402,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 167325,
-										["n_min"] = 14,
-										["g_dmg"] = 0,
-										["counter"] = 3454,
-										["total"] = 167325,
-										["c_max"] = 0,
-										["id"] = "Blizzard",
-										["r_dmg"] = 4094,
-										["spellschool"] = 16,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 3454,
-										["a_amt"] = 0,
-										["r_amt"] = 128,
-									},
-									["Flamestrike"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 71,
-										["targets"] = {
-											["Zul'Farrak Zombie"] = 789,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 789,
-										["n_min"] = 9,
-										["g_dmg"] = 0,
-										["counter"] = 32,
-										["total"] = 789,
-										["c_max"] = 0,
-										["id"] = "Flamestrike",
-										["r_dmg"] = 9,
-										["spellschool"] = 4,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 32,
-										["a_amt"] = 0,
-										["r_amt"] = 1,
-									},
-									["Fire Blast"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 33,
-										["targets"] = {
-											["Witch Doctor Zum'rah"] = 33,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 33,
-										["n_min"] = 33,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 33,
-										["c_max"] = 0,
-										["id"] = "Fire Blast",
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["grupo"] = true,
-							["total"] = 168147.004786,
-							["tipo"] = 1,
-							["colocacao"] = 1,
-							["custom"] = 0,
-							["last_event"] = 1602605999,
-							["on_hold"] = false,
-							["start_time"] = 1602605811,
-							["delay"] = 1602605999,
-							["friendlyfire"] = {
-							},
-						}, -- [1]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 1327.001809,
-							["damage_from"] = {
-								["Augustin"] = true,
-							},
-							["targets"] = {
-								["Augustin"] = 3402,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["nome"] = "Zul'Farrak Zombie",
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 3402.001809,
-							["serial"] = "Creature-0-4468-209-8211-7286-000185D260",
-							["dps_started"] = false,
-							["total"] = 3402.001809,
-							["end_time"] = 1602606019,
-							["on_hold"] = false,
-							["boss_fight_component"] = true,
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 206,
-										["targets"] = {
-											["Augustin"] = 3402,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 3402,
-										["n_min"] = 155,
-										["g_dmg"] = 0,
-										["counter"] = 19,
-										["total"] = 3402,
-										["c_max"] = 0,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 19,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1602606018,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 166191.001809,
-							["start_time"] = 1602606016,
-							["delay"] = 0,
-							["friendlyfire_total"] = 0,
-						}, -- [2]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.008157,
-							["damage_from"] = {
-								["Augustin"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["nome"] = "Zul'Farrak Dead Hero",
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.008157,
-							["serial"] = "Creature-0-4468-209-8211-7276-000005D235",
-							["dps_started"] = false,
-							["total"] = 0.008157,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["boss_fight_component"] = true,
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 1923.008157,
-							["start_time"] = 1602606019,
-							["delay"] = 0,
-							["end_time"] = 1602606019,
-						}, -- [3]
-						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.00258,
-							["damage_from"] = {
-								["Augustin"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["nome"] = "Witch Doctor Zum'rah",
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.00258,
-							["serial"] = "Creature-0-4468-209-8211-7271-000005D0F1",
-							["dps_started"] = false,
-							["total"] = 0.00258,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["boss_fight_component"] = true,
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 33.00258,
-							["start_time"] = 1602606019,
-							["delay"] = 0,
-							["end_time"] = 1602606019,
-						}, -- [4]
-					},
-				}, -- [1]
-				{
-					["tipo"] = 3,
-					["combatId"] = 14,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "MAGE",
-							["totalover"] = 0.007915,
-							["total_without_pet"] = 446.007915,
-							["total"] = 446.007915,
-							["targets_absorbs"] = {
-								["Augustin"] = 446,
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-01D5BF39",
-							["totalabsorb"] = 446.007915,
-							["last_hps"] = 1.61008456403932,
-							["targets"] = {
-								["Augustin"] = 446,
-							},
-							["totalover_without_pet"] = 0.007915,
-							["healing_taken"] = 446.007915,
-							["end_time"] = 1602606019,
-							["healing_from"] = {
-								["Augustin"] = true,
-							},
-							["boss_fight_component"] = true,
-							["nome"] = "Augustin",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Ice Barrier"] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 446,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 200,
-										["targets"] = {
-											["Augustin"] = 446,
-										},
-										["n_min"] = 80,
-										["counter"] = 3,
-										["overheal"] = 0,
-										["total"] = 446,
-										["c_max"] = 0,
-										["id"] = "Ice Barrier",
-										["targets_absorbs"] = {
-											["Augustin"] = 446,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["m_crit"] = 0,
-										["m_healed"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 446,
-										["n_amt"] = 3,
-										["totaldenied"] = 0,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1602606016,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["spec"] = 64,
-							["totaldenied"] = 0.007915,
-							["delay"] = 0,
-							["last_event"] = 1602606016,
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["tipo"] = 7,
-					["combatId"] = 14,
-					["_ActorTable"] = {
-						{
-							["received"] = 1806.00359,
-							["resource"] = 0.00359,
-							["targets"] = {
-								["Augustin"] = 1806,
-							},
-							["pets"] = {
-							},
-							["powertype"] = 0,
-							["classe"] = "MAGE",
-							["passiveover"] = 0.00359,
-							["total"] = 1806.00359,
-							["nome"] = "Augustin",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Replenish Mana"] = {
-										["total"] = 998,
-										["id"] = "Replenish Mana",
-										["totalover"] = 0,
-										["targets"] = {
-											["Augustin"] = 998,
-										},
-										["counter"] = 2,
-									},
-									["Restore Mana"] = {
-										["total"] = 808,
-										["id"] = "Restore Mana",
-										["totalover"] = 0,
-										["targets"] = {
-											["Augustin"] = 808,
-										},
-										["counter"] = 1,
-									},
-								},
-								["tipo"] = 7,
-							},
-							["grupo"] = true,
-							["boss_fight_component"] = true,
-							["flag_original"] = 1297,
-							["alternatepower"] = 0.00359,
-							["last_event"] = 1602605978,
-							["spec"] = 64,
-							["tipo"] = 3,
-							["serial"] = "Player-4465-01D5BF39",
-							["totalover"] = 0.00359,
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["tipo"] = 9,
-					["combatId"] = 14,
-					["_ActorTable"] = {
-						{
-							["flag_original"] = 1047,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Blizzard"] = {
-										["appliedamt"] = 1018,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 148,
-										["id"] = "Blizzard",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Flamestrike"] = {
-										["appliedamt"] = 8,
-										["targets"] = {
-										},
-										["activedamt"] = 0,
-										["uptime"] = 8,
-										["id"] = "Flamestrike",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["buff_uptime"] = 735,
-							["classe"] = "MAGE",
-							["buff_uptime_spells"] = {
-								["_ActorTable"] = {
-									["Ice Barrier"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 1,
-										["id"] = "Ice Barrier",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Blink"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 1,
-										["id"] = "Blink",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Arcane Intellect"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 276,
-										["id"] = "Arcane Intellect",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Dampen Magic"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 176,
-										["id"] = "Dampen Magic",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Mage Armor"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 276,
-										["id"] = "Mage Armor",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Evocation"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
-										["activedamt"] = 1,
-										["uptime"] = 5,
-										["id"] = "Evocation",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-								},
-								["tipo"] = 9,
-							},
-							["debuff_uptime"] = 156,
-							["buff_uptime_targets"] = {
-							},
-							["spec"] = 64,
-							["grupo"] = true,
-							["spell_cast"] = {
-								["Replenish Mana"] = 2,
-								["Blink"] = 1,
-								["Ice Barrier"] = 1,
-								["Counterspell"] = 1,
-								["Blizzard"] = 22,
-								["Evocation"] = 1,
-								["Restore Mana"] = 1,
-								["Fire Blast"] = 1,
-							},
-							["boss_fight_component"] = true,
-							["last_event"] = 1602606018,
-							["tipo"] = 4,
-							["nome"] = "Augustin",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-01D5BF39",
-							["debuff_uptime_targets"] = {
-							},
-						}, -- [1]
-						{
-							["flag_original"] = 2632,
-							["debuff_uptime_spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 9,
-							},
-							["pets"] = {
-							},
-							["classe"] = "UNKNOW",
-							["boss_debuff"] = true,
-							["monster"] = true,
-							["debuff_uptime"] = 1,
-							["spellschool"] = 1,
-							["debuff_uptime_targets"] = {
-								["Augustin"] = {
-									["uptime"] = 1,
-									["appliedamt"] = 0,
-									["activedamt"] = 0,
-									["actived"] = false,
-									["refreshamt"] = 0,
-								},
-							},
-							["boss_fight_component"] = true,
-							["nome"] = "Dazed",
-							["tipo"] = 4,
-							["damage_twin"] = "Zul'Farrak Zombie",
-							["damage_spellid"] = "Dazed",
-							["serial"] = "Creature-0-4468-209-8211-7286-000185D260",
-							["last_event"] = 1602606018,
-						}, -- [2]
-					},
-				}, -- [4]
-				{
-					["tipo"] = 2,
-					["combatId"] = 14,
-					["_ActorTable"] = {
-					},
-				}, -- [5]
-				["raid_roster"] = {
-					["Augustin"] = true,
-					["Konac"] = true,
-				},
-				["CombatStartedAt"] = 330405.247,
-				["overall_added"] = true,
+				["CombatStartedAt"] = 427941.1,
+				["tempo_start"] = 1602703459,
 				["last_events_tables"] = {
 					{
 						{
 							{
 								true, -- [1]
-								"!Melee", -- [2]
-								166, -- [3]
-								1602606017.453, -- [4]
-								2292, -- [5]
-								"Zul'Farrak Zombie", -- [6]
+								"Shadow Bolt", -- [2]
+								187, -- [3]
+								1602703474.385, -- [4]
+								2365, -- [5]
+								"Witch Doctor Zum'rah", -- [6]
 								nil, -- [7]
-								1, -- [8]
+								32, -- [8]
 								false, -- [9]
 								-1, -- [10]
 							}, -- [1]
 							{
 								true, -- [1]
 								"!Melee", -- [2]
-								200, -- [3]
-								1602606017.453, -- [4]
-								2292, -- [5]
+								338, -- [3]
+								1602703496.903, -- [4]
+								2178, -- [5]
 								"Zul'Farrak Zombie", -- [6]
 								nil, -- [7]
 								1, -- [8]
@@ -8714,9 +1867,9 @@ _detalhes_database = {
 							{
 								true, -- [1]
 								"!Melee", -- [2]
-								189, -- [3]
-								1602606017.453, -- [4]
-								2292, -- [5]
+								191, -- [3]
+								1602703496.903, -- [4]
+								2178, -- [5]
 								"Zul'Farrak Zombie", -- [6]
 								nil, -- [7]
 								1, -- [8]
@@ -8726,9 +1879,9 @@ _detalhes_database = {
 							{
 								true, -- [1]
 								"!Melee", -- [2]
-								204, -- [3]
-								1602606017.453, -- [4]
-								2292, -- [5]
+								166, -- [3]
+								1602703496.903, -- [4]
+								2178, -- [5]
 								"Zul'Farrak Zombie", -- [6]
 								nil, -- [7]
 								1, -- [8]
@@ -8738,9 +1891,9 @@ _detalhes_database = {
 							{
 								true, -- [1]
 								"!Melee", -- [2]
-								196, -- [3]
-								1602606017.453, -- [4]
-								2292, -- [5]
+								168, -- [3]
+								1602703496.903, -- [4]
+								2178, -- [5]
 								"Zul'Farrak Zombie", -- [6]
 								nil, -- [7]
 								1, -- [8]
@@ -8750,9 +1903,9 @@ _detalhes_database = {
 							{
 								true, -- [1]
 								"!Melee", -- [2]
-								206, -- [3]
-								1602606017.453, -- [4]
-								2292, -- [5]
+								165, -- [3]
+								1602703496.903, -- [4]
+								2178, -- [5]
 								"Zul'Farrak Zombie", -- [6]
 								nil, -- [7]
 								1, -- [8]
@@ -8762,9 +1915,9 @@ _detalhes_database = {
 							{
 								true, -- [1]
 								"!Melee", -- [2]
-								166, -- [3]
-								1602606017.453, -- [4]
-								2292, -- [5]
+								151, -- [3]
+								1602703496.903, -- [4]
+								2178, -- [5]
 								"Zul'Farrak Zombie", -- [6]
 								nil, -- [7]
 								1, -- [8]
@@ -8772,65 +1925,71 @@ _detalhes_database = {
 								-1, -- [10]
 							}, -- [7]
 							{
-								false, -- [1]
-								"Ice Barrier", -- [2]
-								166, -- [3]
-								1602606017.453, -- [4]
-								2292, -- [5]
-								"Augustin", -- [6]
-								true, -- [7]
-								0, -- [8]
+								true, -- [1]
+								"!Melee", -- [2]
+								163, -- [3]
+								1602703496.903, -- [4]
+								2178, -- [5]
+								"Zul'Farrak Zombie", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
 							}, -- [8]
 							{
-								false, -- [1]
-								"Ice Barrier", -- [2]
-								200, -- [3]
-								1602606017.453, -- [4]
-								2292, -- [5]
-								"Augustin", -- [6]
-								true, -- [7]
-								0, -- [8]
+								true, -- [1]
+								"!Melee", -- [2]
+								167, -- [3]
+								1602703496.903, -- [4]
+								2178, -- [5]
+								"Zul'Farrak Zombie", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
 							}, -- [9]
 							{
-								false, -- [1]
-								"Ice Barrier", -- [2]
-								80, -- [3]
-								1602606017.453, -- [4]
-								2292, -- [5]
-								"Augustin", -- [6]
-								true, -- [7]
-								0, -- [8]
+								true, -- [1]
+								"!Melee", -- [2]
+								161, -- [3]
+								1602703496.903, -- [4]
+								2178, -- [5]
+								"Zul'Farrak Zombie", -- [6]
+								nil, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
 							}, -- [10]
 							{
-								true, -- [1]
-								"!Melee", -- [2]
-								177, -- [3]
-								1602606018.671, -- [4]
-								1411, -- [5]
+								4, -- [1]
+								"Dazed", -- [2]
+								1, -- [3]
+								1602703496.903, -- [4]
+								2178, -- [5]
 								"Zul'Farrak Zombie", -- [6]
-								nil, -- [7]
-								1, -- [8]
+								false, -- [7]
+								false, -- [8]
 								false, -- [9]
-								-1, -- [10]
+								false, -- [10]
 							}, -- [11]
 							{
-								true, -- [1]
-								"!Melee", -- [2]
-								162, -- [3]
-								1602606018.671, -- [4]
-								1411, -- [5]
+								4, -- [1]
+								"Dazed", -- [2]
+								1, -- [3]
+								1602703496.903, -- [4]
+								2178, -- [5]
 								"Zul'Farrak Zombie", -- [6]
-								nil, -- [7]
-								1, -- [8]
+								false, -- [7]
+								false, -- [8]
 								false, -- [9]
-								-1, -- [10]
+								false, -- [10]
 							}, -- [12]
 							{
 								true, -- [1]
 								"!Melee", -- [2]
-								171, -- [3]
-								1602606018.671, -- [4]
-								1411, -- [5]
+								206, -- [3]
+								1602703499.011, -- [4]
+								508, -- [5]
 								"Zul'Farrak Zombie", -- [6]
 								nil, -- [7]
 								1, -- [8]
@@ -8840,9 +1999,9 @@ _detalhes_database = {
 							{
 								true, -- [1]
 								"!Melee", -- [2]
-								191, -- [3]
-								1602606018.671, -- [4]
-								1411, -- [5]
+								180, -- [3]
+								1602703499.011, -- [4]
+								508, -- [5]
 								"Zul'Farrak Zombie", -- [6]
 								nil, -- [7]
 								1, -- [8]
@@ -8850,49 +2009,45 @@ _detalhes_database = {
 								-1, -- [10]
 							}, -- [14]
 							{
-								true, -- [1]
-								"!Melee", -- [2]
-								173, -- [3]
-								1602606018.671, -- [4]
-								1411, -- [5]
-								"Zul'Farrak Zombie", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
+								false, -- [1]
+								"Ice Barrier", -- [2]
+								206, -- [3]
+								1602703499.317, -- [4]
+								508, -- [5]
+								"Augustin", -- [6]
+								true, -- [7]
+								0, -- [8]
 							}, -- [15]
 							{
+								false, -- [1]
+								"Ice Barrier", -- [2]
+								180, -- [3]
+								1602703499.317, -- [4]
+								508, -- [5]
+								"Augustin", -- [6]
+								true, -- [7]
+								0, -- [8]
+							}, -- [16]
+							{
 								true, -- [1]
 								"!Melee", -- [2]
-								155, -- [3]
-								1602606018.671, -- [4]
-								1411, -- [5]
+								148, -- [3]
+								1602703500.13, -- [4]
+								508, -- [5]
 								"Zul'Farrak Zombie", -- [6]
-								nil, -- [7]
+								66, -- [7]
 								1, -- [8]
 								false, -- [9]
 								-1, -- [10]
-							}, -- [16]
-							{
-								4, -- [1]
-								"Dazed", -- [2]
-								1, -- [3]
-								1602606018.671, -- [4]
-								1411, -- [5]
-								"Zul'Farrak Zombie", -- [6]
-								false, -- [7]
-								false, -- [8]
-								false, -- [9]
-								false, -- [10]
 							}, -- [17]
 							{
 								true, -- [1]
 								"!Melee", -- [2]
-								179, -- [3]
-								1602606019.07, -- [4]
-								1411, -- [5]
+								173, -- [3]
+								1602703500.13, -- [4]
+								508, -- [5]
 								"Zul'Farrak Zombie", -- [6]
-								nil, -- [7]
+								66, -- [7]
 								1, -- [8]
 								false, -- [9]
 								-1, -- [10]
@@ -8900,75 +2055,49 @@ _detalhes_database = {
 							{
 								true, -- [1]
 								"!Melee", -- [2]
-								171, -- [3]
-								1602606019.07, -- [4]
-								1411, -- [5]
+								166, -- [3]
+								1602703500.13, -- [4]
+								508, -- [5]
 								"Zul'Farrak Zombie", -- [6]
-								nil, -- [7]
+								66, -- [7]
 								1, -- [8]
 								false, -- [9]
 								-1, -- [10]
 							}, -- [19]
 							{
+								true, -- [1]
+								"!Melee", -- [2]
+								153, -- [3]
+								1602703500.13, -- [4]
+								508, -- [5]
+								"Zul'Farrak Zombie", -- [6]
+								66, -- [7]
+								1, -- [8]
+								false, -- [9]
+								-1, -- [10]
+							}, -- [20]
+							{
+								false, -- [1]
+								"Ice Barrier", -- [2]
+								66, -- [3]
+								1602703500.13, -- [4]
+								508, -- [5]
+								"Augustin", -- [6]
+								true, -- [7]
+								0, -- [8]
+							}, -- [21]
+							{
 								4, -- [1]
 								"Dazed", -- [2]
 								1, -- [3]
-								1602606019.07, -- [4]
-								382, -- [5]
+								1602703500.13, -- [4]
+								508, -- [5]
 								"Zul'Farrak Zombie", -- [6]
 								false, -- [7]
 								false, -- [8]
 								false, -- [9]
 								false, -- [10]
-							}, -- [20]
-							{
-								true, -- [1]
-								"!Melee", -- [2]
-								158, -- [3]
-								1602606019.172, -- [4]
-								382, -- [5]
-								"Zul'Farrak Zombie", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								126, -- [10]
-							}, -- [21]
-							{
-								true, -- [1]
-								"!Melee", -- [2]
-								161, -- [3]
-								1602606019.172, -- [4]
-								382, -- [5]
-								"Zul'Farrak Zombie", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								129, -- [10]
 							}, -- [22]
-							{
-								true, -- [1]
-								"!Melee", -- [2]
-								184, -- [3]
-								1602606019.172, -- [4]
-								382, -- [5]
-								"Zul'Farrak Zombie", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								152, -- [10]
-							}, -- [23]
-							{
-								true, -- [1]
-								"!Melee", -- [2]
-								193, -- [3]
-								1602606019.172, -- [4]
-								382, -- [5]
-								"Zul'Farrak Zombie", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								161, -- [10]
-							}, -- [24]
 							{
 								3, -- [1]
 								0, -- [2]
@@ -8976,14 +2105,14 @@ _detalhes_database = {
 								0, -- [4]
 								0, -- [5]
 								"Augustin", -- [6]
-							}, -- [25]
+							}, -- [23]
 						}, -- [1]
-						1602606019.873, -- [2]
+						1602703500.535, -- [2]
 						"Augustin", -- [3]
 						"MAGE", -- [4]
-						1742, -- [5]
-						"4m 36s", -- [6]
-						["dead_at"] = 276.532000000007,
+						1815, -- [5]
+						"0m 41s", -- [6]
+						["dead_at"] = 41.2849999999744,
 						["dead"] = true,
 					}, -- [1]
 				},
@@ -8993,11 +2122,11 @@ _detalhes_database = {
 					["n"] = 1,
 				},
 				["totals"] = {
-					171548.996658, -- [1]
-					446, -- [2]
+					5903, -- [1]
+					452, -- [2]
 					{
 						0, -- [1]
-						[0] = 1806,
+						[0] = 0,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -9005,10 +2134,10 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 1,
 					}, -- [4]
@@ -9016,11 +2145,11 @@ _detalhes_database = {
 					["voidzone_damage"] = 0,
 				},
 				["totals_grupo"] = {
-					168147, -- [1]
-					446, -- [2]
+					3020, -- [1]
+					452, -- [2]
 					{
 						0, -- [1]
-						[0] = 1806,
+						[0] = 0,
 						["alternatepower"] = 0,
 						[3] = 0,
 						[6] = 0,
@@ -9028,188 +2157,112 @@ _detalhes_database = {
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
 						["cc_break"] = 0,
 						["dead"] = 1,
 					}, -- [4]
 				},
-				["frags_need_refresh"] = true,
+				["frags_need_refresh"] = false,
 				["instance_type"] = "party",
-				["hasSaved"] = true,
-				["data_fim"] = "18:20:20",
+				["data_fim"] = "21:25:01",
 				["cleu_timeline"] = {
 				},
-				["TotalElapsedCombatTime"] = 330199.621,
-				["CombatEndedAt"] = 330199.621,
+				["enemy"] = nil --[[ skipped inline function ]],
+				["TotalElapsedCombatTime"] = 427680.887,
+				["CombatEndedAt"] = 427680.887,
 				["aura_timeline"] = {
 				},
 				["__call"] = {
 				},
-				["data_inicio"] = "18:15:43",
-				["end_time"] = 330200.098,
-				["combat_id"] = 14,
-				["spells_cast_timeline"] = {
-				},
-				["tempo_start"] = 1602605742,
-				["player_last_events"] = {
-					["Augustin"] = {
-						{
-							true, -- [1]
-							"!Melee", -- [2]
-							110, -- [3]
-							1602606225.094, -- [4]
-							2292, -- [5]
-							"Sandfury Shadowcaster", -- [6]
-							nil, -- [7]
-							1, -- [8]
-							false, -- [9]
-							-1, -- [10]
-						}, -- [1]
-						{
-						}, -- [2]
-						{
-						}, -- [3]
-						{
-						}, -- [4]
-						{
-						}, -- [5]
-						{
-						}, -- [6]
-						{
-						}, -- [7]
-						{
-						}, -- [8]
-						{
-						}, -- [9]
-						{
-						}, -- [10]
-						{
-						}, -- [11]
-						{
-						}, -- [12]
-						{
-						}, -- [13]
-						{
-						}, -- [14]
-						{
-						}, -- [15]
-						{
-						}, -- [16]
-						{
-						}, -- [17]
-						{
-						}, -- [18]
-						{
-						}, -- [19]
-						{
-						}, -- [20]
-						{
-						}, -- [21]
-						{
-						}, -- [22]
-						{
-						}, -- [23]
-						{
-						}, -- [24]
-						{
-						}, -- [25]
-						{
-						}, -- [26]
-						{
-						}, -- [27]
-						{
-						}, -- [28]
-						{
-						}, -- [29]
-						{
-						}, -- [30]
-						{
-						}, -- [31]
-						{
-						}, -- [32]
-						["n"] = 2,
-					},
-				},
-				["frags"] = {
-					["Zul'Farrak Dead Hero"] = 1,
-				},
-				["is_boss"] = {
-					["mapid"] = 209,
-					["diff_string"] = "normal",
-					["index"] = 1,
-					["zone"] = "Zul'Farrak",
-					["id"] = 0,
-					["ej_instance_id"] = 0,
-					["diff"] = 16,
-					["try_number"] = 2,
-				},
-				["TimeData"] = {
-				},
-				["CombatSkillCache"] = {
-				},
-				["combat_counter"] = 6503,
-				["start_time"] = 329923.089,
-				["contra"] = "Zul'Farrak Zombie",
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage_section"] = {
-					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
-							["Augustin"] = 446.007915,
+							["Augustin"] = 452.005752,
 						}, -- [1]
+					},
+					["damage_section"] = {
 					},
 					["damage"] = {
 						{
-							["Augustin"] = 168147.004786,
+							["Augustin"] = 3020.001773,
 						}, -- [1]
 					},
 				},
-			}, -- [14]
+				["end_time"] = 427681.61,
+				["combat_id"] = 19,
+				["player_last_events"] = {
+				},
+				["overall_added"] = true,
+				["combat_counter"] = 6596,
+				["spells_cast_timeline"] = {
+				},
+				["is_boss"] = {
+					["diff_string"] = "normal",
+					["index"] = 1,
+					["zone"] = "Zul'Farrak",
+					["encounter"] = nil --[[ skipped inline function ]],
+					["mapid"] = 209,
+					["try_number"] = 1,
+					["name"] = nil --[[ skipped inline function ]],
+					["id"] = 0,
+					["ej_instance_id"] = 0,
+					["diff"] = 16,
+				},
+				["data_inicio"] = "21:24:19",
+				["CombatSkillCache"] = {
+				},
+				["frags"] = {
+				},
+				["start_time"] = 427639.602,
+				["TimeData"] = {
+				},
+				["contra"] = "Zul'Farrak Zombie",
+			}, -- [2]
 			{
 				{
 					["tipo"] = 2,
-					["combatId"] = 7,
+					["combatId"] = 11,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1297,
-							["totalabsorbed"] = 0.006731,
+							["totalabsorbed"] = 0.001243,
+							["end_time"] = 1602702821,
 							["damage_from"] = {
-								["Sandfury Witch Doctor"] = true,
-								["Zul'Farrak Zombie"] = true,
+								["Environment (Falling)"] = true,
 								["Skeleton of Zum'rah"] = true,
+								["Zul'Farrak Zombie"] = true,
 							},
 							["targets"] = {
-								["Sandfury Witch Doctor"] = 2631,
-								["Witch Doctor Zum'rah"] = 31,
-								["Zul'Farrak Dead Hero"] = 2675,
-								["Skeleton of Zum'rah"] = 27,
-								["Zul'Farrak Zombie"] = 83244,
+								["Zul'Farrak Zombie"] = 206240,
+								["Zul'Farrak Dead Hero"] = 1927,
+								["Sandfury Blood Drinker"] = 5613,
 							},
 							["pets"] = {
 							},
-							["last_dps"] = 410.148198848376,
 							["nome"] = "Augustin",
-							["friendlyfire_total"] = 0,
-							["raid_targets"] = {
-								[64] = 2631,
-							},
-							["total_without_pet"] = 88608.006731,
-							["spec"] = 64,
-							["serial"] = "Player-4465-01D5BF39",
-							["dps_started"] = false,
-							["end_time"] = 1602605130,
+							["last_dps"] = 645.851274884056,
 							["classe"] = "MAGE",
-							["damage_taken"] = 2738.006731,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 213780.001243,
+							["last_event"] = 1602702819,
+							["delay"] = 1602702796,
+							["dps_started"] = false,
+							["total"] = 213780.001243,
+							["friendlyfire_total"] = 0,
+							["damage_taken"] = 277.001243,
 							["boss_fight_component"] = true,
+							["spec"] = 64,
+							["grupo"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
 									["Blizzard"] = {
@@ -9217,32 +2270,31 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 70,
+										["n_max"] = 96,
 										["targets"] = {
-											["Zul'Farrak Zombie"] = 82943,
-											["Zul'Farrak Dead Hero"] = 2675,
-											["Sandfury Witch Doctor"] = 2631,
-											["Skeleton of Zum'rah"] = 27,
+											["Zul'Farrak Zombie"] = 205570,
+											["Zul'Farrak Dead Hero"] = 1927,
+											["Sandfury Blood Drinker"] = 5613,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 88276,
-										["n_min"] = 14,
+										["n_dmg"] = 213110,
+										["n_min"] = 27,
 										["g_dmg"] = 0,
-										["counter"] = 1731,
-										["total"] = 88276,
+										["counter"] = 2965,
+										["total"] = 213110,
 										["c_max"] = 0,
 										["id"] = "Blizzard",
-										["r_dmg"] = 2312,
-										["spellschool"] = 16,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
+										["r_dmg"] = 0,
 										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 1731,
-										["a_amt"] = 0,
-										["r_amt"] = 67,
+										["n_amt"] = 2965,
+										["a_dmg"] = 0,
+										["spellschool"] = 16,
 									},
 									["Flamestrike"] = {
 										["c_amt"] = 0,
@@ -9251,94 +2303,62 @@ _detalhes_database = {
 										["g_amt"] = 0,
 										["n_max"] = 69,
 										["targets"] = {
-											["Zul'Farrak Zombie"] = 301,
+											["Zul'Farrak Zombie"] = 670,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 301,
+										["n_dmg"] = 670,
 										["n_min"] = 12,
 										["g_dmg"] = 0,
-										["counter"] = 12,
-										["total"] = 301,
+										["counter"] = 30,
+										["total"] = 670,
 										["c_max"] = 0,
 										["id"] = "Flamestrike",
 										["r_dmg"] = 0,
-										["spellschool"] = 4,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
 										["successful_casted"] = 0,
 										["b_dmg"] = 0,
-										["n_amt"] = 12,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["Fire Blast"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 31,
-										["targets"] = {
-											["Witch Doctor Zum'rah"] = 31,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 31,
-										["n_min"] = 31,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 31,
-										["c_max"] = 0,
-										["id"] = "Fire Blast",
-										["r_dmg"] = 0,
-										["spellschool"] = 4,
+										["n_amt"] = 30,
 										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
+										["spellschool"] = 4,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["grupo"] = true,
-							["total"] = 88608.006731,
-							["tipo"] = 1,
-							["colocacao"] = 1,
 							["custom"] = 0,
-							["last_event"] = 1602605111,
-							["on_hold"] = false,
-							["start_time"] = 1602604991,
-							["delay"] = 1602605111,
+							["colocacao"] = 1,
+							["tipo"] = 1,
 							["friendlyfire"] = {
 							},
+							["start_time"] = 1602702668,
+							["serial"] = "Player-4465-01D5BF39",
+							["on_hold"] = false,
 						}, -- [1]
 						{
-							["flag_original"] = 68168,
-							["totalabsorbed"] = 1813.008275,
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.002605,
 							["damage_from"] = {
 								["Augustin"] = true,
 							},
 							["targets"] = {
-								["Augustin"] = 2316,
+								["Augustin"] = 202,
 							},
 							["pets"] = {
 							},
-							["monster"] = true,
-							["nome"] = "Zul'Farrak Zombie",
+							["tipo"] = 1,
+							["end_time"] = 1602702821,
 							["classe"] = "UNKNOW",
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 2316.008275,
-							["serial"] = "Creature-0-4468-209-7958-7286-000085CF41",
-							["dps_started"] = false,
-							["total"] = 2316.008275,
-							["end_time"] = 1602605130,
-							["on_hold"] = false,
+							["total_without_pet"] = 202.002605,
+							["delay"] = 1602702584,
+							["monster"] = true,
+							["total"] = 202.002605,
+							["friendlyfire_total"] = 0,
+							["damage_taken"] = 206240.002605,
 							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
@@ -9347,66 +2367,223 @@ _detalhes_database = {
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 330,
+										["n_max"] = 202,
 										["targets"] = {
-											["Augustin"] = 2316,
+											["Augustin"] = 202,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 2316,
-										["n_min"] = 146,
+										["n_dmg"] = 202,
+										["n_min"] = 202,
 										["g_dmg"] = 0,
-										["counter"] = 14,
-										["total"] = 2316,
+										["counter"] = 1,
+										["total"] = 202,
 										["c_max"] = 0,
-										["MISS"] = 1,
 										["id"] = "!Melee",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["b_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
 										["m_crit"] = 0,
 										["a_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 0,
-										["c_min"] = 0,
-										["n_amt"] = 13,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
 										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+									["Announce Zul'Farrak Zombie"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = "Announce Zul'Farrak Zombie",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["m_crit"] = 0,
 										["r_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 2,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["last_event"] = 1602605129,
+							["nome"] = "Zul'Farrak Zombie",
+							["last_dps"] = 0,
+							["friendlyfire"] = {
+							},
+							["custom"] = 0,
+							["last_event"] = 1602702584,
+							["on_hold"] = false,
+							["start_time"] = 1602702820,
+							["serial"] = "Creature-0-4445-209-18501-7286-0000874BFF",
+							["dps_started"] = false,
+						}, -- [2]
+						{
+							["flag_original"] = 8776,
+							["totalabsorbed"] = 0.005657,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Augustin"] = 54,
+							},
+							["pets"] = {
+							},
+							["nome"] = "Skeleton of Zum'rah",
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 54.005657,
+							["last_event"] = 1602702530,
+							["dps_started"] = false,
+							["end_time"] = 1602702821,
+							["delay"] = 1602702530,
+							["classe"] = "PET",
+							["boss_fight_component"] = true,
+							["spells"] = {
+								["_ActorTable"] = {
+									["!Melee"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 54,
+										["targets"] = {
+											["Augustin"] = 54,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 54,
+										["n_min"] = 54,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 54,
+										["c_max"] = 0,
+										["id"] = "!Melee",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 1,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["damage_taken"] = 0.005657,
 							["friendlyfire"] = {
 							},
 							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 83244.008275,
-							["start_time"] = 1602605129,
-							["delay"] = 0,
+							["on_hold"] = false,
+							["start_time"] = 1602702820,
+							["serial"] = "Creature-0-4445-209-18501-7786-0000074CB7",
+							["total"] = 54.005657,
+						}, -- [3]
+						{
+							["flag_original"] = -2147483648,
+							["totalabsorbed"] = 0.003207,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Augustin"] = 21,
+							},
+							["pets"] = {
+							},
+							["nome"] = "Environment (Falling)",
 							["friendlyfire_total"] = 0,
-						}, -- [2]
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 21.003207,
+							["last_event"] = 1602702586,
+							["dps_started"] = false,
+							["end_time"] = 1602702821,
+							["delay"] = 1602702586,
+							["classe"] = "UNKNOW",
+							["boss_fight_component"] = true,
+							["spells"] = {
+								["_ActorTable"] = {
+									["Falling"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 21,
+										["targets"] = {
+											["Augustin"] = 21,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 21,
+										["n_min"] = 21,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 21,
+										["c_max"] = 0,
+										["id"] = "Falling",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 3,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["damage_taken"] = 0.003207,
+							["friendlyfire"] = {
+							},
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["start_time"] = 1602702820,
+							["serial"] = "",
+							["total"] = 21.003207,
+						}, -- [4]
 						{
 							["flag_original"] = 68168,
-							["totalabsorbed"] = 0.006081,
+							["totalabsorbed"] = 0.008983,
 							["damage_from"] = {
-								["Augustin"] = true,
 							},
 							["targets"] = {
 							},
 							["pets"] = {
 							},
-							["monster"] = true,
+							["last_event"] = 0,
 							["nome"] = "Witch Doctor Zum'rah",
-							["classe"] = "UNKNOW",
+							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 0.006081,
-							["serial"] = "Creature-0-4468-209-7958-7271-000005CD80",
-							["dps_started"] = false,
-							["total"] = 0.006081,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
+							["total_without_pet"] = 0.008983,
+							["delay"] = 0,
+							["monster"] = true,
+							["end_time"] = 1602702821,
+							["classe"] = "UNKNOW",
+							["damage_taken"] = 0.008983,
 							["boss_fight_component"] = true,
 							["spells"] = {
 								["_ActorTable"] = {
@@ -9427,572 +2604,175 @@ _detalhes_database = {
 										["c_max"] = 0,
 										["id"] = "Ward of Zum'rah",
 										["r_dmg"] = 0,
-										["a_dmg"] = 0,
+										["c_min"] = 0,
 										["m_crit"] = 0,
-										["a_amt"] = 0,
+										["r_amt"] = 0,
 										["m_amt"] = 0,
 										["successful_casted"] = 1,
 										["b_dmg"] = 0,
 										["n_amt"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["last_event"] = 0,
+							["total"] = 0.008983,
+							["last_dps"] = 0,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
 							["custom"] = 0,
 							["tipo"] = 1,
-							["damage_taken"] = 31.006081,
-							["start_time"] = 1602605130,
-							["delay"] = 0,
-							["end_time"] = 1602605130,
-						}, -- [3]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 155.008427,
-							["damage_from"] = {
-								["Augustin"] = true,
-							},
-							["targets"] = {
-								["Augustin"] = 380,
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["nome"] = "Sandfury Witch Doctor",
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 380.008427,
-							["serial"] = "Creature-0-4468-209-7958-5650-000105CD80",
-							["dps_started"] = false,
-							["total"] = 380.008427,
-							["end_time"] = 1602605130,
 							["on_hold"] = false,
-							["boss_fight_component"] = true,
-							["spells"] = {
-								["_ActorTable"] = {
-									["!Melee"] = {
-										["c_amt"] = 1,
-										["b_amt"] = 0,
-										["c_dmg"] = 380,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-											["Augustin"] = 380,
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 380,
-										["c_max"] = 380,
-										["id"] = "!Melee",
-										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
-										["c_min"] = 380,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["a_amt"] = 0,
-										["r_amt"] = 0,
-									},
-									["Healing Ward"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Healing Ward",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 11,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-									},
-									["Lava Spout Totem"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Lava Spout Totem",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 8,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-									},
-									["Flash Heal"] = {
-										["c_amt"] = 0,
-										["b_amt"] = 0,
-										["c_dmg"] = 0,
-										["g_amt"] = 0,
-										["n_max"] = 0,
-										["targets"] = {
-										},
-										["m_dmg"] = 0,
-										["n_dmg"] = 0,
-										["n_min"] = 0,
-										["g_dmg"] = 0,
-										["counter"] = 0,
-										["total"] = 0,
-										["c_max"] = 0,
-										["id"] = "Flash Heal",
-										["r_dmg"] = 0,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["a_amt"] = 0,
-										["m_amt"] = 0,
-										["successful_casted"] = 1,
-										["b_dmg"] = 0,
-										["n_amt"] = 0,
-										["c_min"] = 0,
-										["r_amt"] = 0,
-									},
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 1602605334,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 2631.008427,
-							["start_time"] = 1602605129,
-							["delay"] = 1602604960,
-							["friendlyfire_total"] = 0,
-						}, -- [4]
-						{
-							["flag_original"] = 2632,
-							["totalabsorbed"] = 0.001,
-							["damage_from"] = {
-								["Augustin"] = true,
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["monster"] = true,
-							["nome"] = "Zul'Farrak Dead Hero",
-							["classe"] = "UNKNOW",
-							["raid_targets"] = {
-							},
-							["total_without_pet"] = 0.001,
-							["serial"] = "Creature-0-4468-209-7958-7276-000005CF06",
+							["start_time"] = 1602702821,
+							["serial"] = "Creature-0-4445-209-18501-7271-00000747B7",
 							["dps_started"] = false,
-							["total"] = 0.001,
-							["friendlyfire_total"] = 0,
-							["on_hold"] = false,
-							["boss_fight_component"] = true,
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 2,
-							},
-							["last_event"] = 0,
-							["friendlyfire"] = {
-							},
-							["last_dps"] = 0,
-							["custom"] = 0,
-							["tipo"] = 1,
-							["damage_taken"] = 2675.001,
-							["start_time"] = 1602605130,
-							["delay"] = 0,
-							["end_time"] = 1602605130,
 						}, -- [5]
 						{
-							["flag_original"] = 8776,
-							["totalabsorbed"] = 0.006302,
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.005881,
 							["damage_from"] = {
 								["Augustin"] = true,
 							},
 							["targets"] = {
-								["Augustin"] = 42,
 							},
 							["pets"] = {
 							},
-							["tipo"] = 1,
+							["last_event"] = 0,
+							["nome"] = "Sandfury Blood Drinker",
 							["friendlyfire_total"] = 0,
 							["raid_targets"] = {
 							},
-							["total_without_pet"] = 42.006302,
-							["end_time"] = 1602605130,
-							["dps_started"] = false,
-							["total"] = 42.006302,
-							["serial"] = "Creature-0-4468-209-7958-7786-000005CF8E",
+							["total_without_pet"] = 0.005881,
+							["delay"] = 0,
+							["monster"] = true,
+							["end_time"] = 1602702821,
+							["classe"] = "UNKNOW",
+							["damage_taken"] = 5613.005881,
 							["boss_fight_component"] = true,
-							["nome"] = "Skeleton of Zum'rah",
 							["spells"] = {
 								["_ActorTable"] = {
-									["!Melee"] = {
+									["Blood Leech"] = {
 										["c_amt"] = 0,
 										["b_amt"] = 0,
 										["c_dmg"] = 0,
 										["g_amt"] = 0,
-										["n_max"] = 42,
+										["n_max"] = 0,
 										["targets"] = {
-											["Augustin"] = 42,
 										},
 										["m_dmg"] = 0,
-										["n_dmg"] = 42,
-										["n_min"] = 42,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
 										["g_dmg"] = 0,
-										["counter"] = 1,
-										["total"] = 42,
+										["counter"] = 0,
+										["total"] = 0,
 										["c_max"] = 0,
-										["id"] = "!Melee",
+										["id"] = "Blood Leech",
 										["r_dmg"] = 0,
-										["spellschool"] = 1,
-										["a_dmg"] = 0,
-										["m_crit"] = 0,
-										["m_amt"] = 0,
 										["c_min"] = 0,
-										["successful_casted"] = 0,
-										["b_dmg"] = 0,
-										["n_amt"] = 1,
-										["a_amt"] = 0,
+										["m_crit"] = 0,
 										["r_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
 									},
 								},
 								["tipo"] = 2,
 							},
-							["on_hold"] = false,
+							["total"] = 0.005881,
+							["last_dps"] = 0,
 							["friendlyfire"] = {
 							},
-							["last_dps"] = 0,
 							["custom"] = 0,
-							["last_event"] = 1602604965,
-							["damage_taken"] = 27.006302,
-							["start_time"] = 1602605129,
-							["delay"] = 1602604965,
-							["classe"] = "PET",
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["start_time"] = 1602702821,
+							["serial"] = "Creature-0-4445-209-18501-5649-00020747B7",
+							["dps_started"] = false,
 						}, -- [6]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.001691,
+							["damage_from"] = {
+								["Augustin"] = true,
+							},
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["last_event"] = 0,
+							["nome"] = "Zul'Farrak Dead Hero",
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.001691,
+							["delay"] = 0,
+							["monster"] = true,
+							["end_time"] = 1602702821,
+							["classe"] = "UNKNOW",
+							["damage_taken"] = 1927.001691,
+							["boss_fight_component"] = true,
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["total"] = 0.001691,
+							["last_dps"] = 0,
+							["friendlyfire"] = {
+							},
+							["custom"] = 0,
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["start_time"] = 1602702821,
+							["serial"] = "Creature-0-4445-209-18501-7276-0000074B52",
+							["dps_started"] = false,
+						}, -- [7]
 					},
 				}, -- [1]
 				{
 					["tipo"] = 3,
-					["combatId"] = 7,
+					["combatId"] = 11,
 					["_ActorTable"] = {
-						{
-							["flag_original"] = 2632,
-							["totalabsorb"] = 0.007172,
-							["last_hps"] = 0,
-							["targets_overheal"] = {
-							},
-							["targets"] = {
-							},
-							["delay"] = 0,
-							["pets"] = {
-								"Greater Healing Ward <Sandfury Witch Doctor>", -- [1]
-							},
-							["totalover_without_pet"] = 0.007172,
-							["healing_from"] = {
-							},
-							["classe"] = "UNKNOW",
-							["totalover"] = 0.007172,
-							["total_without_pet"] = 0.007172,
-							["iniciar_hps"] = false,
-							["start_time"] = 1602605130,
-							["monster"] = true,
-							["end_time"] = 1602605130,
-							["healing_taken"] = 0.007172,
-							["heal_enemy_amt"] = 1159,
-							["boss_fight_component"] = true,
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["total"] = 0.007172,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-								["Flash Heal"] = 1159,
-							},
-							["nome"] = "Sandfury Witch Doctor",
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["totaldenied"] = 0.007172,
-							["serial"] = "Creature-0-4468-209-7958-5650-000105CD80",
-							["last_event"] = 1602605111,
-						}, -- [1]
-						{
-							["flag_original"] = 8776,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["heal_enemy_amt"] = 3399,
-							["totalover"] = 0.004367,
-							["total_without_pet"] = 0.004367,
-							["total"] = 0.004367,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-								["Healing Aura"] = 3399,
-							},
-							["on_hold"] = false,
-							["serial"] = "Creature-0-4468-209-7958-8179-000005CF93",
-							["totalabsorb"] = 0.004367,
-							["last_hps"] = 0,
-							["targets"] = {
-							},
-							["totalover_without_pet"] = 0.004367,
-							["healing_taken"] = 0.004367,
-							["end_time"] = 1602605130,
-							["ownerName"] = "Sandfury Witch Doctor",
-							["nome"] = "Greater Healing Ward <Sandfury Witch Doctor>",
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["start_time"] = 1602605130,
-							["healing_from"] = {
-							},
-							["boss_fight_component"] = true,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["classe"] = "PET",
-							["totaldenied"] = 0.004367,
-							["delay"] = 0,
-							["last_event"] = 1602605128,
-						}, -- [2]
-						{
-							["flag_original"] = 8776,
-							["totalabsorb"] = 0.001085,
-							["last_hps"] = 0,
-							["healing_from"] = {
-							},
-							["targets"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["targets_overheal"] = {
-							},
-							["classe"] = "PET",
-							["totalover"] = 0.001085,
-							["total_without_pet"] = 0.001085,
-							["end_time"] = 1602605130,
-							["totalover_without_pet"] = 0.001085,
-							["healing_taken"] = 0.001085,
-							["total"] = 0.001085,
-							["serial"] = "Creature-0-4468-209-7958-7786-000005CF8E",
-							["heal_enemy_amt"] = 0,
-							["nome"] = "Skeleton of Zum'rah",
-							["targets_absorbs"] = {
-							},
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["boss_fight_component"] = true,
-							["heal_enemy"] = {
-							},
-							["start_time"] = 1602605130,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["totaldenied"] = 0.001085,
-							["delay"] = 0,
-							["last_event"] = 0,
-						}, -- [3]
-						{
-							["flag_original"] = 2632,
-							["totalabsorb"] = 0.002697,
-							["last_hps"] = 0,
-							["targets_overheal"] = {
-							},
-							["targets"] = {
-							},
-							["delay"] = 0,
-							["pets"] = {
-							},
-							["totalover_without_pet"] = 0.002697,
-							["healing_from"] = {
-							},
-							["classe"] = "UNKNOW",
-							["totalover"] = 0.002697,
-							["total_without_pet"] = 0.002697,
-							["iniciar_hps"] = false,
-							["start_time"] = 1602605130,
-							["monster"] = true,
-							["end_time"] = 1602605130,
-							["healing_taken"] = 0.002697,
-							["heal_enemy_amt"] = 0,
-							["boss_fight_component"] = true,
-							["spells"] = {
-								["_ActorTable"] = {
-								},
-								["tipo"] = 3,
-							},
-							["total"] = 0.002697,
-							["targets_absorbs"] = {
-							},
-							["heal_enemy"] = {
-							},
-							["nome"] = "Zul'Farrak Dead Hero",
-							["custom"] = 0,
-							["tipo"] = 2,
-							["on_hold"] = false,
-							["totaldenied"] = 0.002697,
-							["serial"] = "Creature-0-4468-209-7958-7276-000005CF06",
-							["last_event"] = 0,
-						}, -- [4]
-						{
-							["flag_original"] = 1297,
-							["targets_overheal"] = {
-							},
-							["pets"] = {
-							},
-							["iniciar_hps"] = false,
-							["classe"] = "MAGE",
-							["totalover"] = 0.006081,
-							["total_without_pet"] = 446.006081,
-							["total"] = 446.006081,
-							["targets_absorbs"] = {
-								["Augustin"] = 446,
-							},
-							["heal_enemy"] = {
-							},
-							["colocacao"] = 1,
-							["on_hold"] = false,
-							["serial"] = "Player-4465-01D5BF39",
-							["totalabsorb"] = 446.006081,
-							["last_hps"] = 2.06762852268591,
-							["targets"] = {
-								["Augustin"] = 446,
-							},
-							["totalover_without_pet"] = 0.006081,
-							["healing_taken"] = 446.006081,
-							["end_time"] = 1602605130,
-							["healing_from"] = {
-								["Augustin"] = true,
-							},
-							["boss_fight_component"] = true,
-							["nome"] = "Augustin",
-							["spells"] = {
-								["_ActorTable"] = {
-									["Ice Barrier"] = {
-										["c_amt"] = 0,
-										["totalabsorb"] = 446,
-										["targets_overheal"] = {
-										},
-										["n_max"] = 158,
-										["targets"] = {
-											["Augustin"] = 446,
-										},
-										["n_min"] = 142,
-										["counter"] = 3,
-										["overheal"] = 0,
-										["total"] = 446,
-										["c_max"] = 0,
-										["id"] = "Ice Barrier",
-										["targets_absorbs"] = {
-											["Augustin"] = 446,
-										},
-										["c_curado"] = 0,
-										["c_min"] = 0,
-										["m_crit"] = 0,
-										["m_healed"] = 0,
-										["m_amt"] = 0,
-										["n_curado"] = 446,
-										["n_amt"] = 3,
-										["totaldenied"] = 0,
-										["is_shield"] = true,
-										["absorbed"] = 0,
-									},
-								},
-								["tipo"] = 3,
-							},
-							["grupo"] = true,
-							["heal_enemy_amt"] = 0,
-							["start_time"] = 1602605129,
-							["custom"] = 0,
-							["tipo"] = 2,
-							["spec"] = 64,
-							["totaldenied"] = 0.006081,
-							["delay"] = 0,
-							["last_event"] = 1602605129,
-						}, -- [5]
 					},
 				}, -- [2]
 				{
 					["tipo"] = 7,
-					["combatId"] = 7,
+					["combatId"] = 11,
 					["_ActorTable"] = {
 						{
-							["received"] = 1481.005809,
-							["resource"] = 0.005809,
+							["received"] = 1274.002461,
+							["resource"] = 0.002461,
 							["targets"] = {
-								["Augustin"] = 1481,
+								["Augustin"] = 1274,
 							},
 							["pets"] = {
 							},
 							["powertype"] = 0,
 							["classe"] = "MAGE",
-							["passiveover"] = 0.005809,
-							["total"] = 1481.005809,
+							["passiveover"] = 0.002461,
+							["total"] = 1274.002461,
 							["nome"] = "Augustin",
 							["spells"] = {
 								["_ActorTable"] = {
 									["Replenish Mana"] = {
-										["total"] = 646,
+										["total"] = 406,
 										["id"] = "Replenish Mana",
 										["totalover"] = 0,
 										["targets"] = {
-											["Augustin"] = 646,
+											["Augustin"] = 406,
 										},
 										["counter"] = 1,
 									},
 									["Restore Mana"] = {
-										["total"] = 835,
+										["total"] = 868,
 										["id"] = "Restore Mana",
 										["totalover"] = 0,
 										["targets"] = {
-											["Augustin"] = 835,
+											["Augustin"] = 868,
 										},
 										["counter"] = 1,
 									},
@@ -10000,179 +2780,180 @@ _detalhes_database = {
 								["tipo"] = 7,
 							},
 							["grupo"] = true,
-							["boss_fight_component"] = true,
+							["totalover"] = 0.002461,
 							["flag_original"] = 1297,
-							["alternatepower"] = 0.005809,
-							["last_event"] = 1602605083,
-							["spec"] = 64,
 							["tipo"] = 3,
+							["last_event"] = 1602702618,
+							["spec"] = 64,
+							["alternatepower"] = 0.002461,
 							["serial"] = "Player-4465-01D5BF39",
-							["totalover"] = 0.005809,
+							["boss_fight_component"] = true,
 						}, -- [1]
 					},
 				}, -- [3]
 				{
 					["tipo"] = 9,
-					["combatId"] = 7,
+					["combatId"] = 11,
 					["_ActorTable"] = {
 						{
 							["flag_original"] = 1047,
 							["debuff_uptime_spells"] = {
 								["_ActorTable"] = {
 									["Blizzard"] = {
-										["appliedamt"] = 550,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = "Blizzard",
+										["uptime"] = 141,
 										["targets"] = {
 										},
-										["activedamt"] = 0,
-										["uptime"] = 111,
-										["id"] = "Blizzard",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 957,
 									},
 									["Flamestrike"] = {
-										["appliedamt"] = 3,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = "Flamestrike",
+										["uptime"] = 8,
 										["targets"] = {
 										},
-										["activedamt"] = 0,
-										["uptime"] = 8,
-										["id"] = "Flamestrike",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 6,
 									},
 								},
 								["tipo"] = 9,
 							},
-							["buff_uptime"] = 662,
+							["buff_uptime"] = 729,
 							["classe"] = "MAGE",
 							["buff_uptime_spells"] = {
 								["_ActorTable"] = {
 									["Ice Barrier"] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Ice Barrier",
+										["uptime"] = 60,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 3,
-										["id"] = "Ice Barrier",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 									["Blink"] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Blink",
+										["uptime"] = 1,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 1,
-										["id"] = "Blink",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 									["Arcane Intellect"] = {
-										["appliedamt"] = 1,
-										["targets"] = {
-										},
+										["counter"] = 0,
+										["actived"] = false,
 										["activedamt"] = 1,
-										["uptime"] = 217,
+										["refreshamt"] = 0,
 										["id"] = "Arcane Intellect",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
-									},
-									["Armor"] = {
-										["appliedamt"] = 1,
+										["uptime"] = 331,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 217,
-										["id"] = "Armor",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 									["Evocation"] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Evocation",
+										["uptime"] = 6,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 7,
-										["id"] = "Evocation",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 									["Mage Armor"] = {
-										["appliedamt"] = 1,
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Mage Armor",
+										["uptime"] = 331,
 										["targets"] = {
 										},
-										["activedamt"] = 1,
-										["uptime"] = 217,
-										["id"] = "Mage Armor",
-										["refreshamt"] = 0,
-										["actived"] = false,
-										["counter"] = 0,
+										["appliedamt"] = 1,
 									},
 								},
 								["tipo"] = 9,
 							},
-							["debuff_uptime"] = 119,
+							["debuff_uptime"] = 149,
 							["buff_uptime_targets"] = {
 							},
 							["spec"] = 64,
 							["grupo"] = true,
 							["spell_cast"] = {
-								["Replenish Mana"] = 1,
-								["Blink"] = 1,
 								["Ice Barrier"] = 1,
-								["Blizzard"] = 17,
+								["Blink"] = 1,
+								["Blizzard"] = 23,
 								["Evocation"] = 1,
 								["Restore Mana"] = 1,
-								["Fire Blast"] = 1,
+								["Replenish Mana"] = 1,
 							},
-							["boss_fight_component"] = true,
-							["last_event"] = 1602605130,
 							["tipo"] = 4,
-							["nome"] = "Augustin",
-							["pets"] = {
-							},
-							["serial"] = "Player-4465-01D5BF39",
 							["debuff_uptime_targets"] = {
 							},
+							["last_event"] = 1602702821,
+							["pets"] = {
+							},
+							["nome"] = "Augustin",
+							["serial"] = "Player-4465-01D5BF39",
+							["boss_fight_component"] = true,
 						}, -- [1]
 						{
-							["flag_original"] = 68168,
+							["flag_original"] = 2632,
+							["last_event"] = 0,
+							["nome"] = "Zul'Farrak Zombie",
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["spell_cast"] = {
+								["Announce Zul'Farrak Zombie"] = 2,
+							},
 							["tipo"] = 4,
+							["monster"] = true,
+							["serial"] = "Creature-0-4445-209-18501-7286-0000074C9F",
+							["boss_fight_component"] = true,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["last_event"] = 0,
 							["nome"] = "Witch Doctor Zum'rah",
 							["pets"] = {
 							},
-							["boss_fight_component"] = true,
+							["classe"] = "UNKNOW",
 							["spell_cast"] = {
 								["Ward of Zum'rah"] = 1,
 							},
-							["last_event"] = 0,
+							["tipo"] = 4,
 							["monster"] = true,
-							["serial"] = "Creature-0-4468-209-7958-7271-000005CD80",
-							["classe"] = "UNKNOW",
-						}, -- [2]
+							["serial"] = "Creature-0-4445-209-18501-7271-00000747B7",
+							["boss_fight_component"] = true,
+						}, -- [3]
 						{
 							["flag_original"] = 2632,
-							["tipo"] = 4,
-							["nome"] = "Sandfury Witch Doctor",
+							["last_event"] = 0,
+							["nome"] = "Sandfury Blood Drinker",
 							["pets"] = {
 							},
-							["boss_fight_component"] = true,
-							["spell_cast"] = {
-								["Healing Ward"] = 11,
-								["Lava Spout Totem"] = 8,
-								["Flash Heal"] = 1,
-							},
-							["last_event"] = 0,
-							["monster"] = true,
-							["serial"] = "Creature-0-4468-209-7958-5650-000105CD80",
 							["classe"] = "UNKNOW",
-						}, -- [3]
+							["spell_cast"] = {
+								["Blood Leech"] = 1,
+							},
+							["tipo"] = 4,
+							["monster"] = true,
+							["serial"] = "Creature-0-4445-209-18501-5649-00020747B7",
+							["boss_fight_component"] = true,
+						}, -- [4]
 						{
 							["flag_original"] = 2632,
 							["debuff_uptime_spells"] = {
@@ -10185,25 +2966,864 @@ _detalhes_database = {
 							["classe"] = "UNKNOW",
 							["boss_debuff"] = true,
 							["monster"] = true,
-							["debuff_uptime"] = 0,
+							["debuff_uptime"] = 4,
 							["spellschool"] = 1,
+							["boss_fight_component"] = true,
 							["debuff_uptime_targets"] = {
 								["Augustin"] = {
-									["uptime"] = 0,
-									["appliedamt"] = 0,
+									["uptime"] = 4,
+									["refreshamt"] = 0,
 									["activedamt"] = 0,
 									["actived"] = false,
-									["refreshamt"] = 0,
+									["appliedamt"] = 0,
 								},
 							},
-							["boss_fight_component"] = true,
-							["nome"] = "Dazed",
+							["last_event"] = 1602702588,
 							["tipo"] = 4,
 							["damage_twin"] = "Zul'Farrak Zombie",
+							["serial"] = "Creature-0-4445-209-18501-7286-0001074BBA",
 							["damage_spellid"] = "Dazed",
-							["serial"] = "Creature-0-4468-209-7958-7286-000085CF3F",
-							["last_event"] = 1602605130,
-						}, -- [4]
+							["nome"] = "Dazed",
+						}, -- [5]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 11,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Konac"] = true,
+					["Augustin"] = true,
+				},
+				["CombatStartedAt"] = 427185.316,
+				["overall_added"] = true,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 6587,
+				["totals"] = {
+					214056.998941, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 1274,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["totals_grupo"] = {
+					213780, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 1274,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = true,
+				["instance_type"] = "party",
+				["hasSaved"] = true,
+				["data_fim"] = "21:13:42",
+				["cleu_timeline"] = {
+				},
+				["TotalElapsedCombatTime"] = 427002.036,
+				["CombatEndedAt"] = 427002.036,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "21:08:11",
+				["end_time"] = 427002.46,
+				["combat_id"] = 11,
+				["tempo_start"] = 1602702490,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Augustin"] = 213780.001243,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["spells_cast_timeline"] = {
+				},
+				["is_boss"] = {
+					["diff_string"] = "normal",
+					["index"] = 1,
+					["zone"] = "Zul'Farrak",
+					["id"] = 0,
+					["mapid"] = 209,
+					["try_number"] = 3,
+					["diff"] = 16,
+					["ej_instance_id"] = 0,
+				},
+				["TimeData"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["player_last_events"] = {
+				},
+				["start_time"] = 426671.455,
+				["contra"] = "Zul'Farrak Zombie",
+				["frags"] = {
+					["Ward of Zum'rah"] = 1,
+					["Zul'Farrak Dead Hero"] = 1,
+					["Zul'Farrak Zombie"] = 39,
+					["Skeleton of Zum'rah"] = 4,
+					["Sandfury Blood Drinker"] = 1,
+				},
+			}, -- [3]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 10,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.004475,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Zul'Farrak Zombie"] = 545,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["last_dps"] = 66.6509080345266,
+							["classe"] = "MAGE",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 545.004475,
+							["last_event"] = 1602702440,
+							["delay"] = 1602702440,
+							["dps_started"] = false,
+							["total"] = 545.004475,
+							["friendlyfire_total"] = 0,
+							["damage_taken"] = 0.004475,
+							["boss_fight_component"] = true,
+							["spells"] = {
+								["_ActorTable"] = {
+									["Flamestrike"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 69,
+										["targets"] = {
+											["Zul'Farrak Zombie"] = 545,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 545,
+										["n_min"] = 12,
+										["g_dmg"] = 0,
+										["counter"] = 25,
+										["total"] = 545,
+										["c_max"] = 0,
+										["id"] = "Flamestrike",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 25,
+										["a_dmg"] = 0,
+										["spellschool"] = 4,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["grupo"] = true,
+							["end_time"] = 1602702473,
+							["nome"] = "Augustin",
+							["custom"] = 0,
+							["colocacao"] = 1,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1602702464,
+							["serial"] = "Player-4465-01D5BF39",
+							["spec"] = 64,
+						}, -- [1]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.003863,
+							["damage_from"] = {
+								["Augustin"] = true,
+							},
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["tipo"] = 1,
+							["end_time"] = 1602702473,
+							["classe"] = "UNKNOW",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.003863,
+							["delay"] = 0,
+							["monster"] = true,
+							["total"] = 0.003863,
+							["friendlyfire_total"] = 0,
+							["damage_taken"] = 545.003863,
+							["boss_fight_component"] = true,
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["nome"] = "Zul'Farrak Zombie",
+							["last_dps"] = 0,
+							["friendlyfire"] = {
+							},
+							["custom"] = 0,
+							["last_event"] = 0,
+							["on_hold"] = false,
+							["start_time"] = 1602702473,
+							["serial"] = "Creature-0-4445-209-18501-7286-0000874BFF",
+							["dps_started"] = false,
+						}, -- [2]
+						{
+							["flag_original"] = 68168,
+							["totalabsorbed"] = 0.004294,
+							["damage_from"] = {
+							},
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["last_event"] = 0,
+							["friendlyfire"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.004294,
+							["delay"] = 0,
+							["monster"] = true,
+							["total"] = 0.004294,
+							["classe"] = "UNKNOW",
+							["damage_taken"] = 0.004294,
+							["boss_fight_component"] = true,
+							["spells"] = {
+								["_ActorTable"] = {
+									["Ward of Zum'rah"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = "Ward of Zum'rah",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["m_crit"] = 0,
+										["r_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["nome"] = "Witch Doctor Zum'rah",
+							["last_dps"] = 0,
+							["end_time"] = 1602702473,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["start_time"] = 1602702473,
+							["serial"] = "Creature-0-4445-209-18501-7271-00000747B7",
+							["dps_started"] = false,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 10,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 10,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 10,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Flamestrike"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = "Flamestrike",
+										["uptime"] = 8,
+										["targets"] = {
+										},
+										["appliedamt"] = 5,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["pets"] = {
+							},
+							["classe"] = "MAGE",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Ice Barrier"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Ice Barrier",
+										["uptime"] = 6,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									["Dampen Magic"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Dampen Magic",
+										["uptime"] = 33,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									["Arcane Intellect"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Arcane Intellect",
+										["uptime"] = 41,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									["Mage Armor"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Mage Armor",
+										["uptime"] = 41,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 8,
+							["boss_fight_component"] = true,
+							["spec"] = 64,
+							["grupo"] = true,
+							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
+							["last_event"] = 1602702473,
+							["debuff_uptime_targets"] = {
+							},
+							["buff_uptime"] = 121,
+							["serial"] = "Player-4465-01D5BF39",
+							["nome"] = "Augustin",
+						}, -- [1]
+						{
+							["flag_original"] = 68168,
+							["last_event"] = 0,
+							["nome"] = "Witch Doctor Zum'rah",
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["spell_cast"] = {
+								["Ward of Zum'rah"] = 1,
+							},
+							["tipo"] = 4,
+							["monster"] = true,
+							["serial"] = "Creature-0-4445-209-18501-7271-00000747B7",
+							["boss_fight_component"] = true,
+						}, -- [2]
+					},
+				}, -- [4]
+				{
+					["tipo"] = 2,
+					["combatId"] = 10,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Konac"] = true,
+					["Augustin"] = true,
+				},
+				["CombatStartedAt"] = 426671.455,
+				["tempo_start"] = 1602702432,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["totals"] = {
+					545, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["totals_grupo"] = {
+					545, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+				},
+				["frags_need_refresh"] = false,
+				["instance_type"] = "party",
+				["hasSaved"] = true,
+				["data_fim"] = "21:07:54",
+				["cleu_timeline"] = {
+				},
+				["TotalElapsedCombatTime"] = 426653.674,
+				["CombatEndedAt"] = 426653.674,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "21:07:13",
+				["end_time"] = 426654.199,
+				["combat_id"] = 10,
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["damage"] = {
+						{
+							["Augustin"] = 545.004475,
+						}, -- [1]
+					},
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+				},
+				["overall_added"] = true,
+				["combat_counter"] = 6586,
+				["frags"] = {
+				},
+				["is_boss"] = {
+					["diff_string"] = "normal",
+					["index"] = 1,
+					["zone"] = "Zul'Farrak",
+					["id"] = 0,
+					["mapid"] = 209,
+					["try_number"] = 2,
+					["diff"] = 16,
+					["ej_instance_id"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["CombatSkillCache"] = {
+				},
+				["contra"] = "Zul'Farrak Zombie",
+				["start_time"] = 426613.192,
+				["TimeData"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+			}, -- [4]
+			{
+				{
+					["tipo"] = 2,
+					["combatId"] = 7,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.001378,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Sandfury Blood Drinker"] = 25,
+							},
+							["pets"] = {
+							},
+							["on_hold"] = false,
+							["last_dps"] = 1.18986188844538,
+							["classe"] = "MAGE",
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 25.001378,
+							["last_event"] = 1602702165,
+							["delay"] = 1602702165,
+							["dps_started"] = false,
+							["end_time"] = 1602702186,
+							["friendlyfire_total"] = 0,
+							["damage_taken"] = 0.001378,
+							["boss_fight_component"] = true,
+							["spec"] = 64,
+							["grupo"] = true,
+							["total"] = 25.001378,
+							["nome"] = "Augustin",
+							["custom"] = 0,
+							["colocacao"] = 1,
+							["tipo"] = 1,
+							["friendlyfire"] = {
+							},
+							["start_time"] = 1602702185,
+							["serial"] = "Player-4465-01D5BF39",
+							["spells"] = {
+								["_ActorTable"] = {
+									["Frost Nova"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 25,
+										["targets"] = {
+											["Sandfury Blood Drinker"] = 25,
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 25,
+										["n_min"] = 25,
+										["g_dmg"] = 0,
+										["counter"] = 1,
+										["total"] = 25,
+										["c_max"] = 0,
+										["id"] = "Frost Nova",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["r_amt"] = 0,
+										["m_crit"] = 0,
+										["a_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 0,
+										["b_dmg"] = 0,
+										["n_amt"] = 1,
+										["a_dmg"] = 0,
+										["spellschool"] = 16,
+									},
+								},
+								["tipo"] = 2,
+							},
+						}, -- [1]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.008909,
+							["damage_from"] = {
+							},
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["last_event"] = 0,
+							["friendlyfire"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.008909,
+							["delay"] = 0,
+							["monster"] = true,
+							["total"] = 0.008909,
+							["classe"] = "UNKNOW",
+							["damage_taken"] = 0.008909,
+							["boss_fight_component"] = true,
+							["spells"] = {
+								["_ActorTable"] = {
+									["Ward of Zum'rah"] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+										},
+										["m_dmg"] = 0,
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 0,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = "Ward of Zum'rah",
+										["r_dmg"] = 0,
+										["c_min"] = 0,
+										["m_crit"] = 0,
+										["r_amt"] = 0,
+										["m_amt"] = 0,
+										["successful_casted"] = 1,
+										["b_dmg"] = 0,
+										["n_amt"] = 0,
+										["a_amt"] = 0,
+										["a_dmg"] = 0,
+									},
+								},
+								["tipo"] = 2,
+							},
+							["nome"] = "Witch Doctor Zum'rah",
+							["last_dps"] = 0,
+							["end_time"] = 1602702186,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["start_time"] = 1602702186,
+							["serial"] = "Creature-0-4445-209-18501-7271-00000747B7",
+							["dps_started"] = false,
+						}, -- [2]
+						{
+							["flag_original"] = 2632,
+							["totalabsorbed"] = 0.00472,
+							["damage_from"] = {
+								["Augustin"] = true,
+							},
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["last_event"] = 0,
+							["friendlyfire"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.00472,
+							["delay"] = 0,
+							["monster"] = true,
+							["total"] = 0.00472,
+							["classe"] = "UNKNOW",
+							["damage_taken"] = 25.00472,
+							["boss_fight_component"] = true,
+							["spells"] = {
+								["_ActorTable"] = {
+								},
+								["tipo"] = 2,
+							},
+							["nome"] = "Sandfury Blood Drinker",
+							["last_dps"] = 0,
+							["end_time"] = 1602702186,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["on_hold"] = false,
+							["start_time"] = 1602702186,
+							["serial"] = "Creature-0-4445-209-18501-5649-00020747B7",
+							["dps_started"] = false,
+						}, -- [3]
+					},
+				}, -- [1]
+				{
+					["tipo"] = 3,
+					["combatId"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [2]
+				{
+					["tipo"] = 7,
+					["combatId"] = 7,
+					["_ActorTable"] = {
+					},
+				}, -- [3]
+				{
+					["tipo"] = 9,
+					["combatId"] = 7,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Frost Nova"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 0,
+										["refreshamt"] = 0,
+										["id"] = "Frost Nova",
+										["uptime"] = 8,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["pets"] = {
+							},
+							["classe"] = "MAGE",
+							["buff_uptime_spells"] = {
+								["_ActorTable"] = {
+									["Ice Barrier"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Ice Barrier",
+										["uptime"] = 21,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									["Dampen Magic"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Dampen Magic",
+										["uptime"] = 21,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									["Arcane Intellect"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Arcane Intellect",
+										["uptime"] = 21,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+									["Ice Armor"] = {
+										["counter"] = 0,
+										["actived"] = false,
+										["activedamt"] = 1,
+										["refreshamt"] = 0,
+										["id"] = "Ice Armor",
+										["uptime"] = 21,
+										["targets"] = {
+										},
+										["appliedamt"] = 1,
+									},
+								},
+								["tipo"] = 9,
+							},
+							["debuff_uptime"] = 8,
+							["boss_fight_component"] = true,
+							["spec"] = 64,
+							["grupo"] = true,
+							["tipo"] = 4,
+							["buff_uptime_targets"] = {
+							},
+							["last_event"] = 1602702186,
+							["debuff_uptime_targets"] = {
+							},
+							["buff_uptime"] = 84,
+							["serial"] = "Player-4465-01D5BF39",
+							["nome"] = "Augustin",
+						}, -- [1]
+						{
+							["flag_original"] = 2632,
+							["last_event"] = 0,
+							["nome"] = "Witch Doctor Zum'rah",
+							["pets"] = {
+							},
+							["classe"] = "UNKNOW",
+							["spell_cast"] = {
+								["Ward of Zum'rah"] = 1,
+							},
+							["tipo"] = 4,
+							["monster"] = true,
+							["serial"] = "Creature-0-4445-209-18501-7271-00000747B7",
+							["boss_fight_component"] = true,
+						}, -- [2]
 					},
 				}, -- [4]
 				{
@@ -10213,342 +3833,121 @@ _detalhes_database = {
 					},
 				}, -- [5]
 				["raid_roster"] = {
-					["Augustin"] = true,
 					["Konac"] = true,
+					["Augustin"] = true,
 				},
-				["CombatStartedAt"] = 329513.598,
-				["overall_added"] = true,
+				["CombatStartedAt"] = 426448.594,
+				["tempo_start"] = 1602702165,
 				["last_events_tables"] = {
-					{
-						{
-							{
-								true, -- [1]
-								"!Melee", -- [2]
-								158, -- [3]
-								1602605130.107, -- [4]
-								1870, -- [5]
-								"Zul'Farrak Zombie", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [1]
-							{
-								true, -- [1]
-								"!Melee", -- [2]
-								146, -- [3]
-								1602605130.107, -- [4]
-								1870, -- [5]
-								"Zul'Farrak Zombie", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [2]
-							{
-								true, -- [1]
-								"!Melee", -- [2]
-								330, -- [3]
-								1602605130.107, -- [4]
-								1870, -- [5]
-								"Zul'Farrak Zombie", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [3]
-							{
-								true, -- [1]
-								"!Melee", -- [2]
-								185, -- [3]
-								1602605130.107, -- [4]
-								1870, -- [5]
-								"Zul'Farrak Zombie", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [4]
-							{
-								true, -- [1]
-								"!Melee", -- [2]
-								163, -- [3]
-								1602605130.107, -- [4]
-								1870, -- [5]
-								"Zul'Farrak Zombie", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [5]
-							{
-								true, -- [1]
-								"!Melee", -- [2]
-								181, -- [3]
-								1602605130.107, -- [4]
-								1870, -- [5]
-								"Zul'Farrak Zombie", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [6]
-							{
-								true, -- [1]
-								"!Melee", -- [2]
-								166, -- [3]
-								1602605130.107, -- [4]
-								1870, -- [5]
-								"Zul'Farrak Zombie", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [7]
-							{
-								true, -- [1]
-								"!Melee", -- [2]
-								156, -- [3]
-								1602605130.133, -- [4]
-								1870, -- [5]
-								"Zul'Farrak Zombie", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [8]
-							{
-								true, -- [1]
-								"!Melee", -- [2]
-								171, -- [3]
-								1602605130.133, -- [4]
-								1870, -- [5]
-								"Zul'Farrak Zombie", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [9]
-							{
-								true, -- [1]
-								"!Melee", -- [2]
-								157, -- [3]
-								1602605130.133, -- [4]
-								1870, -- [5]
-								"Zul'Farrak Zombie", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [10]
-							{
-								false, -- [1]
-								"Ice Barrier", -- [2]
-								158, -- [3]
-								1602605130.133, -- [4]
-								1870, -- [5]
-								"Augustin", -- [6]
-								true, -- [7]
-								0, -- [8]
-							}, -- [11]
-							{
-								false, -- [1]
-								"Ice Barrier", -- [2]
-								146, -- [3]
-								1602605130.133, -- [4]
-								1870, -- [5]
-								"Augustin", -- [6]
-								true, -- [7]
-								0, -- [8]
-							}, -- [12]
-							{
-								false, -- [1]
-								"Ice Barrier", -- [2]
-								142, -- [3]
-								1602605130.133, -- [4]
-								1870, -- [5]
-								"Augustin", -- [6]
-								true, -- [7]
-								0, -- [8]
-							}, -- [13]
-							{
-								true, -- [1]
-								"!Melee", -- [2]
-								171, -- [3]
-								1602605130.616, -- [4]
-								503, -- [5]
-								"Zul'Farrak Zombie", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [14]
-							{
-								true, -- [1]
-								"!Melee", -- [2]
-								165, -- [3]
-								1602605130.616, -- [4]
-								503, -- [5]
-								"Zul'Farrak Zombie", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [15]
-							{
-								true, -- [1]
-								"!Melee", -- [2]
-								167, -- [3]
-								1602605130.616, -- [4]
-								503, -- [5]
-								"Zul'Farrak Zombie", -- [6]
-								nil, -- [7]
-								1, -- [8]
-								false, -- [9]
-								-1, -- [10]
-							}, -- [16]
-							{
-								4, -- [1]
-								"Dazed", -- [2]
-								1, -- [3]
-								1602605130.933, -- [4]
-								503, -- [5]
-								"Zul'Farrak Zombie", -- [6]
-								false, -- [7]
-								false, -- [8]
-								false, -- [9]
-								false, -- [10]
-							}, -- [17]
-							{
-								3, -- [1]
-								0, -- [2]
-								0, -- [3]
-								0, -- [4]
-								0, -- [5]
-								"Augustin", -- [6]
-							}, -- [18]
-						}, -- [1]
-						1602605131.334, -- [2]
-						"Augustin", -- [3]
-						"MAGE", -- [4]
-						1742, -- [5]
-						"3m 36s", -- [6]
-						["dead_at"] = 216.682999999961,
-						["dead"] = true,
-					}, -- [1]
 				},
 				["alternate_power"] = {
-				},
-				["combat_counter"] = 6496,
-				["totals"] = {
-					91346, -- [1]
-					446, -- [2]
-					{
-						0, -- [1]
-						[0] = 1481,
-						["alternatepower"] = 0,
-						[3] = 0,
-						[6] = 0,
-					}, -- [3]
-					{
-						["buff_uptime"] = 0,
-						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
-						["interrupt"] = 0,
-						["debuff_uptime"] = 0,
-						["cc_break"] = 0,
-						["dead"] = 1,
-					}, -- [4]
-					["frags_total"] = 0,
-					["voidzone_damage"] = 0,
-				},
-				["player_last_events"] = {
-				},
-				["frags_need_refresh"] = true,
-				["instance_type"] = "party",
-				["hasSaved"] = true,
-				["data_fim"] = "18:05:31",
-				["cleu_timeline"] = {
-				},
-				["TotalElapsedCombatTime"] = 329311.082,
-				["CombatEndedAt"] = 329311.082,
-				["aura_timeline"] = {
-				},
-				["__call"] = {
-				},
-				["data_inicio"] = "18:01:54",
-				["end_time"] = 329311.408,
-				["combat_id"] = 7,
-				["tempo_start"] = 1602604913,
-				["frags"] = {
-					["Greater Healing Ward"] = 11,
-					["Skeleton of Zum'rah"] = 4,
-					["Ward of Zum'rah"] = 1,
-				},
-				["TimeData"] = {
-				},
-				["spells_cast_timeline"] = {
-				},
-				["is_boss"] = {
-					["mapid"] = 209,
-					["diff_string"] = "normal",
-					["index"] = 1,
-					["zone"] = "Zul'Farrak",
-					["id"] = 0,
-					["ej_instance_id"] = 0,
-					["diff"] = 16,
-					["try_number"] = 1,
 				},
 				["cleu_events"] = {
 					["n"] = 1,
 				},
-				["CombatSkillCache"] = {
-				},
-				["totals_grupo"] = {
-					88608, -- [1]
-					446, -- [2]
+				["totals"] = {
+					25, -- [1]
+					0, -- [2]
 					{
 						0, -- [1]
-						[0] = 1481,
+						[0] = 0,
 						["alternatepower"] = 0,
-						[3] = 0,
 						[6] = 0,
+						[3] = 0,
 					}, -- [3]
 					{
 						["buff_uptime"] = 0,
 						["ress"] = 0,
-						["cooldowns_defensive"] = 0,
-						["dispell"] = 0,
+						["dead"] = 0,
+						["cc_break"] = 0,
 						["interrupt"] = 0,
 						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
+					}, -- [4]
+					["voidzone_damage"] = 0,
+					["frags_total"] = 0,
+				},
+				["totals_grupo"] = {
+					25, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[6] = 0,
+						[3] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["dead"] = 0,
 						["cc_break"] = 0,
-						["dead"] = 1,
+						["interrupt"] = 0,
+						["debuff_uptime"] = 0,
+						["dispell"] = 0,
+						["cooldowns_defensive"] = 0,
 					}, -- [4]
 				},
-				["start_time"] = 329094.399,
-				["contra"] = "Zul'Farrak Zombie",
+				["frags_need_refresh"] = false,
+				["instance_type"] = "party",
+				["hasSaved"] = true,
+				["data_fim"] = "21:03:06",
+				["cleu_timeline"] = {
+				},
+				["TotalElapsedCombatTime"] = 19.0050000000047,
+				["CombatEndedAt"] = 426434.851,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
 				["PhaseData"] = {
 					{
 						1, -- [1]
 						1, -- [2]
 					}, -- [1]
-					["damage_section"] = {
+					["damage"] = {
+						{
+							["Augustin"] = 25.001378,
+						}, -- [1]
 					},
 					["heal_section"] = {
 					},
 					["heal"] = {
 						{
-							["Augustin"] = 446.006081,
 						}, -- [1]
 					},
-					["damage"] = {
-						{
-							["Augustin"] = 88608.006731,
-						}, -- [1]
+					["damage_section"] = {
 					},
 				},
-			}, -- [15]
+				["end_time"] = 426366.927,
+				["combat_id"] = 7,
+				["overall_added"] = true,
+				["player_last_events"] = {
+				},
+				["combat_counter"] = 6583,
+				["frags"] = {
+				},
+				["is_boss"] = {
+					["diff_string"] = "normal",
+					["index"] = 1,
+					["zone"] = "Zul'Farrak",
+					["id"] = 0,
+					["mapid"] = 209,
+					["try_number"] = 1,
+					["diff"] = 16,
+					["ej_instance_id"] = 0,
+				},
+				["contra"] = "Sandfury Blood Drinker",
+				["CombatSkillCache"] = {
+				},
+				["data_inicio"] = "21:02:45",
+				["start_time"] = 426345.915,
+				["TimeData"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+			}, -- [5]
 		},
 	},
 	["last_version"] = "v1.13.3.189",
@@ -10580,7 +3979,7 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = 631.532104492188,
+					["y"] = 631.526000976563,
 					["x"] = -1160.94877624512,
 					["w"] = 234.897445678711,
 					["h"] = 136.641067504883,
@@ -10614,7 +4013,7 @@ _detalhes_database = {
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = 631.5322265625,
+					["y"] = 631.526123046875,
 					["x"] = -929.012847900391,
 					["w"] = 228.974395751953,
 					["h"] = 136.640808105469,
@@ -10674,9 +4073,9 @@ _detalhes_database = {
 		["custom"] = "",
 		["next"] = "",
 	},
-	["last_instance_time"] = 1602618894,
+	["last_instance_time"] = 1602703691,
 	["active_profile"] = "Default",
-	["last_day"] = "13",
+	["last_day"] = "14",
 	["benchmark_db"] = {
 		["frame"] = {
 		},
@@ -10774,7 +4173,7 @@ _detalhes_database = {
 			["row_texture"] = "Glamour2",
 			["arrow_anchor_y"] = 0,
 			["main_frame_locked"] = true,
-			["author"] = "Details! Team",
+			["main_frame_strata"] = "LOW",
 			["enabled"] = true,
 			["arrow_size"] = 10,
 			["use_spark"] = false,
@@ -10785,12 +4184,7 @@ _detalhes_database = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["row_color"] = {
-				0.443137254901961, -- [1]
-				0.592156862745098, -- [2]
-				1, -- [3]
-				0.480826139450073, -- [4]
-			},
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
 			["y"] = -147.105743408203,
 			["per_second"] = {
@@ -10807,22 +4201,27 @@ _detalhes_database = {
 			["x"] = 0.00750732421875,
 			["font_face"] = "Friz Quadrata TT",
 			["font_size"] = 10,
-			["main_frame_strata"] = "LOW",
+			["row_color"] = {
+				0.443137254901961, -- [1]
+				0.592156862745098, -- [2]
+				1, -- [3]
+				0.480826139450073, -- [4]
+			},
 			["point"] = "CENTER",
 			["row_height"] = 17,
 			["scale"] = 1,
 		},
+	},
+	["announce_firsthit"] = {
+		["enabled"] = true,
+		["channel"] = "SELF",
 	},
 	["announce_prepots"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
 		["reverse"] = false,
 	},
-	["combat_counter"] = 6553,
-	["announce_firsthit"] = {
-		["enabled"] = true,
-		["channel"] = "SELF",
-	},
+	["combat_counter"] = 6601,
 	["last_realversion"] = 142,
 	["cached_talents"] = {
 		["Player-4465-01D5BF39"] = {
@@ -11694,7 +5093,7 @@ _detalhes_database = {
 			}, -- [47]
 		},
 	},
-	["combat_id"] = 54,
+	["combat_id"] = 24,
 	["savedStyles"] = {
 		{
 			["show_statusbar"] = false,
@@ -11739,8 +5138,8 @@ _detalhes_database = {
 			},
 			["switch_healer"] = false,
 			["bars_sort_direction"] = 1,
-			["backdrop_texture"] = "None",
 			["switch_healer_in_combat"] = false,
+			["menu_icons_size"] = 1,
 			["instance_button_anchor"] = {
 				-27, -- [1]
 				1, -- [2]
@@ -11760,7 +5159,7 @@ _detalhes_database = {
 					1, -- [3]
 				},
 			},
-			["menu_icons_size"] = 1,
+			["backdrop_texture"] = "None",
 			["switch_all_roles_in_combat"] = {
 				2, -- [1]
 				1, -- [2]
@@ -11804,8 +5203,10 @@ _detalhes_database = {
 					1, -- [3]
 					1, -- [4]
 				},
+				["textL_custom_text"] = "{data3}{data2}",
+				["texture_background"] = "Blizzard",
 				["alpha"] = 0,
-				["textR_class_colors"] = false,
+				["textL_class_colors"] = false,
 				["backdrop"] = {
 					["enabled"] = false,
 					["texture"] = "Details BarBorder 2",
@@ -11817,11 +5218,9 @@ _detalhes_database = {
 					},
 					["size"] = 12,
 				},
-				["texture_background"] = "Blizzard",
-				["textL_custom_text"] = "{data3}{data2}",
 				["no_icon"] = false,
 				["font_size"] = 11,
-				["textL_class_colors"] = false,
+				["textR_class_colors"] = false,
 				["font_face"] = "Arial Narrow",
 				["texture_class_colors"] = true,
 				["height"] = 20,
@@ -11851,8 +5250,11 @@ _detalhes_database = {
 				["onenter"] = 1,
 			},
 			["plugins_grow_direction"] = 1,
-			["desaturated_menu"] = false,
-			["show_sidebars"] = false,
+			["switch_damager"] = false,
+			["auto_hide_menu"] = {
+				["left"] = true,
+				["right"] = true,
+			},
 			["strata"] = "LOW",
 			["menu_anchor_down"] = {
 				-22, -- [1]
@@ -11903,10 +5305,17 @@ _detalhes_database = {
 				true, -- [3]
 				true, -- [4]
 			},
-			["switch_damager"] = false,
-			["auto_hide_menu"] = {
-				["left"] = true,
-				["right"] = true,
+			["menu2_anchor_down"] = {
+				32, -- [1]
+				0, -- [2]
+			},
+			["statusbar_info"] = {
+				["alpha"] = 0,
+				["overlay"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
 			},
 			["row_show_animation"] = {
 				["anim"] = "Fade",
@@ -11914,10 +5323,10 @@ _detalhes_database = {
 				},
 			},
 			["bars_grow_direction"] = 1,
-			["hide_icon"] = true,
-			["toolbar_side"] = 2,
-			["grab_on_top"] = false,
 			["switch_damager_in_combat"] = false,
+			["toolbar_side"] = 2,
+			["hide_icon"] = true,
+			["grab_on_top"] = false,
 			["micro_displays_side"] = 2,
 			["menu2_anchor"] = {
 				32, -- [1]
@@ -11947,18 +5356,8 @@ _detalhes_database = {
 			["bg_g"] = 0,
 			["window_scale"] = 1,
 			["hide_in_combat"] = false,
-			["statusbar_info"] = {
-				["alpha"] = 0,
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
-			},
-			["menu2_anchor_down"] = {
-				32, -- [1]
-				0, -- [2]
-			},
+			["show_sidebars"] = false,
+			["desaturated_menu"] = false,
 			["hide_in_combat_type"] = 1,
 			["wallpaper"] = {
 				["enabled"] = false,
@@ -12026,114 +5425,29 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["flag_original"] = 68168,
-					["totalabsorbed"] = 2386.101602,
+					["totalabsorbed"] = 536.044985,
+					["monster"] = true,
 					["damage_from"] = {
 						["Augustin"] = true,
 					},
 					["targets"] = {
-						["Augustin"] = 10561,
+						["Augustin"] = 3232,
 					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
+					["tipo"] = 1,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
-					["total_without_pet"] = 10561.101602,
-					["last_event"] = 0,
-					["monster"] = true,
+					["total_without_pet"] = 3232.044985,
+					["damage_taken"] = 498.044985,
+					["fight_component"] = true,
+					["end_time"] = 1602701631,
 					["dps_started"] = false,
-					["total"] = 10561.101602,
-					["damage_taken"] = 2513.101602,
 					["friendlyfire_total"] = 0,
 					["nome"] = "Sandfury Shadowcaster",
 					["spells"] = {
 						["_ActorTable"] = {
-							["Shadow Word: Pain"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 85,
-								["targets"] = {
-									["Augustin"] = 85,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 85,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 1,
-								["total"] = 85,
-								["c_max"] = 0,
-								["id"] = "Shadow Word: Pain",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["m_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 2,
-								["b_dmg"] = 0,
-								["n_amt"] = 1,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-							["Shadow Bolt"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 285,
-								["targets"] = {
-									["Augustin"] = 9128,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 9128,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 47,
-								["total"] = 9128,
-								["c_max"] = 0,
-								["id"] = "Shadow Bolt",
-								["r_dmg"] = 2590,
-								["a_dmg"] = 2675,
-								["a_amt"] = 14,
-								["m_crit"] = 0,
-								["n_amt"] = 45,
-								["m_amt"] = 0,
-								["successful_casted"] = 40,
-								["b_dmg"] = 0,
-								["RESIST"] = 2,
-								["c_min"] = 0,
-								["r_amt"] = 16,
-							},
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 138,
-								["targets"] = {
-									["Augustin"] = 1348,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 1348,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 11,
-								["total"] = 1348,
-								["c_max"] = 0,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 11,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
 							["Demon Skin"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
@@ -12155,71 +5469,129 @@ _detalhes_database = {
 								["m_crit"] = 0,
 								["a_amt"] = 0,
 								["m_amt"] = 0,
-								["successful_casted"] = 15,
+								["successful_casted"] = 5,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
 								["r_amt"] = 0,
+								["c_min"] = 0,
+							},
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 101,
+								["targets"] = {
+									["Augustin"] = 195,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 195,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 2,
+								["total"] = 195,
+								["c_max"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["c_min"] = 0,
+								["m_crit"] = 0,
+								["r_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 2,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Shadow Bolt"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 309,
+								["targets"] = {
+									["Augustin"] = 3037,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 3037,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 16,
+								["total"] = 3037,
+								["c_max"] = 0,
+								["id"] = "Shadow Bolt",
+								["r_dmg"] = 552,
+								["c_min"] = 0,
+								["r_amt"] = 4,
+								["m_crit"] = 0,
+								["n_amt"] = 15,
+								["m_amt"] = 0,
+								["successful_casted"] = 12,
+								["b_dmg"] = 0,
+								["RESIST"] = 1,
+								["a_amt"] = 3,
+								["a_dmg"] = 726,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["serial"] = "Creature-0-4468-209-7958-5648-000685CD80",
-					["end_time"] = 1602604501,
-					["last_dps"] = 0,
-					["custom"] = 0,
-					["tipo"] = 1,
-					["on_hold"] = false,
-					["start_time"] = 1602604405,
 					["delay"] = 0,
+					["total"] = 3232.044985,
 					["friendlyfire"] = {
 					},
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1602701596,
+					["serial"] = "Creature-0-4445-209-18501-5648-00010747B8",
+					["last_dps"] = 0,
 				}, -- [1]
 				{
 					["flag_original"] = 1297,
-					["totalabsorbed"] = 0.239707,
+					["totalabsorbed"] = 0.09487,
+					["damage_taken"] = 22519.09487,
 					["damage_from"] = {
-						["Theka the Martyr"] = true,
-						["Sandfury Soul Eater"] = true,
+						["Witch Doctor Zum'rah"] = true,
 						["Skeleton of Zum'rah"] = true,
+						["Sandfury Soul Eater"] = true,
 						["Sandfury Blood Drinker"] = true,
 						["Environment (Falling)"] = true,
-						["Sandfury Witch Doctor"] = true,
+						["Scarab"] = true,
 						["Sandfury Shadowcaster"] = true,
 						["Zul'Farrak Dead Hero"] = true,
+						["Sandfury Witch Doctor"] = true,
 						["Zul'Farrak Zombie"] = true,
 						["Sandfury Shadowhunter"] = true,
-						["Scarab"] = true,
+						["Lava Spout Totem <Sandfury Witch Doctor>"] = true,
 					},
 					["targets"] = {
-						["Witch Doctor Zum'rah"] = 117,
-						["Zul'Farrak Dead Hero"] = 33668,
-						["Sandfury Blood Drinker"] = 948,
-						["Sandfury Shadowhunter"] = 25,
-						["Sandfury Witch Doctor"] = 3661,
-						["Sandfury Shadowcaster"] = 2513,
-						["Scarab"] = 347,
-						["Zul'Farrak Zombie"] = 1397367,
-						["Skeleton of Zum'rah"] = 135,
-						["Lava Spout Totem <Sandfury Witch Doctor>"] = 41,
+						["Witch Doctor Zum'rah"] = 54,
+						["Zul'Farrak Dead Hero"] = 2078,
+						["Sandfury Blood Drinker"] = 7436,
+						["Sandfury Witch Doctor"] = 1070,
+						["Sandfury Shadowcaster"] = 498,
+						["Sandfury Soul Eater"] = 25,
+						["Zul'Farrak Zombie"] = 211378,
+						["Scarab"] = 498,
+						["Skeleton of Zum'rah"] = 73,
 					},
-					["tipo"] = 1,
 					["pets"] = {
 					},
-					["serial"] = "Player-4465-01D5BF39",
+					["delay"] = 0,
+					["nome"] = "Augustin",
 					["classe"] = "MAGE",
 					["raid_targets"] = {
-						[64] = 2654,
+						[2] = 50,
 					},
-					["total_without_pet"] = 1438822.239707,
-					["friendlyfire"] = {
-					},
-					["friendlyfire_total"] = 0,
-					["dps_started"] = false,
-					["total"] = 1438822.239707,
-					["end_time"] = 1602604501,
+					["total_without_pet"] = 223110.09487,
 					["last_dps"] = 0,
-					["nome"] = "Augustin",
+					["dps_started"] = false,
+					["total"] = 223110.09487,
+					["friendlyfire_total"] = 0,
+					["end_time"] = 1602701631,
+					["boss_fight_component"] = true,
+					["spec"] = 64,
+					["grupo"] = true,
 					["spells"] = {
 						["_ActorTable"] = {
 							["Chilled"] = {
@@ -12229,122 +5601,29 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 0,
 								["targets"] = {
-									["Sandfury Shadowhunter"] = 0,
-									["Zul'Farrak Zombie"] = 0,
-									["Sandfury Witch Doctor"] = 0,
 									["Sandfury Blood Drinker"] = 0,
+									["Zul'Farrak Zombie"] = 0,
 								},
 								["m_dmg"] = 0,
 								["n_dmg"] = 0,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 12,
+								["counter"] = 10,
 								["total"] = 0,
 								["c_max"] = 0,
+								["c_min"] = 0,
 								["id"] = "Chilled",
-								["EVADE"] = 4,
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["RESIST"] = 8,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["c_min"] = 0,
+								["r_amt"] = 0,
 								["n_amt"] = 0,
-								["b_dmg"] = 0,
-								["r_amt"] = 0,
-							},
-							["Frost Nova"] = {
-								["c_amt"] = 5,
-								["b_amt"] = 0,
-								["c_dmg"] = 229,
-								["g_amt"] = 0,
-								["n_max"] = 25,
-								["targets"] = {
-									["Sandfury Shadowhunter"] = 25,
-									["Sandfury Witch Doctor"] = 117,
-									["Sandfury Shadowcaster"] = 237,
-									["Zul'Farrak Dead Hero"] = 23,
-									["Zul'Farrak Zombie"] = 1986,
-									["Scarab"] = 46,
-									["Sandfury Blood Drinker"] = 355,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 2560,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 113,
-								["total"] = 2789,
-								["c_max"] = 47,
-								["id"] = "Frost Nova",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["a_amt"] = 0,
 								["m_crit"] = 0,
-								["RESIST"] = 1,
+								["b_dmg"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 107,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["!Autoshot"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 41,
-								["targets"] = {
-									["Lava Spout Totem <Sandfury Witch Doctor>"] = 41,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 41,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 1,
-								["total"] = 41,
-								["c_max"] = 0,
-								["id"] = "!Autoshot",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
 								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 1,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["Frostbolt"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 327,
-								["targets"] = {
-									["Zul'Farrak Zombie"] = 576,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 576,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 2,
-								["total"] = 576,
-								["c_max"] = 0,
-								["id"] = "Frostbolt",
-								["r_dmg"] = 0,
+								["RESIST"] = 2,
 								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 2,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["EVADE"] = 8,
 							},
 							["Blizzard"] = {
 								["c_amt"] = 0,
@@ -12353,285 +5632,190 @@ _detalhes_database = {
 								["g_amt"] = 0,
 								["n_max"] = 96,
 								["targets"] = {
-									["Skeleton of Zum'rah"] = 135,
-									["Zul'Farrak Zombie"] = 1390348,
-									["Sandfury Witch Doctor"] = 2631,
-									["Zul'Farrak Dead Hero"] = 33363,
+									["Zul'Farrak Zombie"] = 207813,
+									["Zul'Farrak Dead Hero"] = 2008,
+									["Sandfury Blood Drinker"] = 5613,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 1426477,
+								["n_dmg"] = 215434,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 24216,
-								["total"] = 1426477,
+								["counter"] = 3051,
+								["total"] = 215434,
 								["c_max"] = 0,
 								["id"] = "Blizzard",
-								["r_dmg"] = 13413,
-								["a_dmg"] = 0,
+								["r_dmg"] = 0,
+								["c_min"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
+								["r_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
-								["n_amt"] = 24216,
+								["n_amt"] = 3051,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+							["Frost Nova"] = {
+								["c_amt"] = 3,
+								["b_amt"] = 0,
+								["c_dmg"] = 130,
+								["g_amt"] = 0,
+								["n_max"] = 25,
+								["targets"] = {
+									["Skeleton of Zum'rah"] = 73,
+									["Scarab"] = 25,
+									["Sandfury Shadowcaster"] = 47,
+									["Zul'Farrak Dead Hero"] = 70,
+									["Sandfury Soul Eater"] = 25,
+									["Zul'Farrak Zombie"] = 1353,
+									["Sandfury Witch Doctor"] = 23,
+									["Sandfury Blood Drinker"] = 195,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 1681,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 73,
+								["total"] = 1811,
+								["c_max"] = 44,
+								["id"] = "Frost Nova",
+								["r_dmg"] = 0,
 								["c_min"] = 0,
-								["r_amt"] = 393,
+								["m_crit"] = 0,
+								["r_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 70,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 							["Flamestrike"] = {
 								["c_amt"] = 1,
 								["b_amt"] = 0,
-								["c_dmg"] = 93,
+								["c_dmg"] = 90,
 								["g_amt"] = 0,
-								["n_max"] = 71,
+								["n_max"] = 70,
 								["targets"] = {
-									["Zul'Farrak Dead Hero"] = 282,
-									["Zul'Farrak Zombie"] = 4457,
+									["Zul'Farrak Zombie"] = 2212,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 4646,
+								["n_dmg"] = 2122,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 190,
-								["total"] = 4739,
-								["c_max"] = 93,
+								["counter"] = 99,
+								["total"] = 2212,
+								["c_max"] = 90,
 								["id"] = "Flamestrike",
-								["r_dmg"] = 15,
-								["a_dmg"] = 0,
+								["r_dmg"] = 0,
+								["c_min"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
+								["r_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
-								["n_amt"] = 189,
-								["c_min"] = 0,
-								["r_amt"] = 2,
+								["n_amt"] = 98,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 							["Cone of Cold"] = {
-								["c_amt"] = 2,
+								["c_amt"] = 1,
 								["b_amt"] = 0,
-								["c_dmg"] = 590,
+								["c_dmg"] = 570,
 								["g_amt"] = 0,
-								["n_max"] = 158,
+								["n_max"] = 316,
 								["targets"] = {
-									["Sandfury Witch Doctor"] = 913,
-									["Scarab"] = 301,
-									["Sandfury Shadowcaster"] = 2276,
-									["Sandfury Blood Drinker"] = 593,
+									["Scarab"] = 473,
+									["Sandfury Witch Doctor"] = 1047,
+									["Sandfury Shadowcaster"] = 451,
+									["Sandfury Blood Drinker"] = 1628,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 3493,
+								["n_dmg"] = 3029,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 25,
-								["total"] = 4083,
-								["c_max"] = 298,
+								["counter"] = 13,
+								["total"] = 3599,
+								["c_max"] = 570,
 								["id"] = "Cone of Cold",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
+								["r_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
-								["n_amt"] = 23,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["n_amt"] = 12,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 							["Fire Blast"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 33,
+								["n_max"] = 28,
 								["targets"] = {
-									["Witch Doctor Zum'rah"] = 117,
+									["Witch Doctor Zum'rah"] = 54,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 117,
+								["n_dmg"] = 54,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 4,
-								["total"] = 117,
+								["counter"] = 2,
+								["total"] = 54,
 								["c_max"] = 0,
 								["id"] = "Fire Blast",
-								["r_dmg"] = 24,
+								["r_dmg"] = 26,
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
-								["n_amt"] = 4,
-								["c_min"] = 0,
+								["n_amt"] = 2,
 								["r_amt"] = 1,
+								["c_min"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["grupo"] = true,
-					["boss_fight_component"] = true,
-					["spec"] = 64,
+					["tipo"] = 1,
 					["custom"] = 0,
 					["last_event"] = 0,
+					["friendlyfire"] = {
+					},
+					["start_time"] = 1602701369,
+					["serial"] = "Player-4465-01D5BF39",
 					["on_hold"] = false,
-					["start_time"] = 1602602963,
-					["delay"] = 0,
-					["damage_taken"] = 46902.239707,
 				}, -- [2]
 				{
 					["flag_original"] = 2632,
-					["totalabsorbed"] = 5555.126926,
-					["damage_from"] = {
-						["Augustin"] = true,
-					},
-					["targets"] = {
-						["Augustin"] = 11954,
-					},
-					["monster"] = true,
-					["pets"] = {
-					},
-					["boss_fight_component"] = true,
-					["friendlyfire_total"] = 0,
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 11954.126926,
-					["last_event"] = 0,
+					["totalabsorbed"] = 1476.057544,
 					["dps_started"] = false,
-					["fight_component"] = true,
-					["end_time"] = 1602604501,
-					["last_dps"] = 0,
-					["classe"] = "UNKNOW",
-					["nome"] = "Sandfury Blood Drinker",
-					["spells"] = {
-						["_ActorTable"] = {
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 318,
-								["targets"] = {
-									["Augustin"] = 11388,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 11388,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 63,
-								["total"] = 11388,
-								["c_max"] = 0,
-								["DODGE"] = 1,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["a_dmg"] = 1849,
-								["a_amt"] = 10,
-								["m_crit"] = 0,
-								["b_dmg"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["m_amt"] = 0,
-								["n_amt"] = 61,
-								["r_amt"] = 0,
-								["MISS"] = 1,
-							},
-							["Blood Leech"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 82,
-								["targets"] = {
-									["Augustin"] = 566,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 566,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 8,
-								["total"] = 566,
-								["c_max"] = 0,
-								["id"] = "Blood Leech",
-								["r_dmg"] = 0,
-								["RESIST"] = 1,
-								["a_dmg"] = 82,
-								["m_crit"] = 0,
-								["a_amt"] = 1,
-								["m_amt"] = 0,
-								["successful_casted"] = 33,
-								["b_dmg"] = 0,
-								["n_amt"] = 7,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["serial"] = "Creature-0-4468-209-7958-5649-000005CD81",
-					["total"] = 11954.126926,
-					["damage_taken"] = 948.126926,
-					["custom"] = 0,
-					["tipo"] = 1,
-					["on_hold"] = false,
-					["start_time"] = 1602604379,
-					["delay"] = 0,
-					["friendlyfire"] = {
-					},
-				}, -- [3]
-				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 1687.106123,
 					["damage_from"] = {
 						["Augustin"] = true,
 					},
 					["targets"] = {
-						["Augustin"] = 4330,
+						["Augustin"] = 2300,
 					},
 					["pets"] = {
 						"Lava Spout Totem <Sandfury Witch Doctor>", -- [1]
 					},
-					["end_time"] = 1602604501,
+					["tipo"] = 1,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
-					["total_without_pet"] = 4330.106123,
-					["serial"] = "Creature-0-4468-209-7958-5650-000185CD81",
-					["boss_fight_component"] = true,
-					["dps_started"] = false,
-					["total"] = 4330.106123,
+					["total_without_pet"] = 1990.057544,
+					["damage_taken"] = 1070.057544,
 					["monster"] = true,
+					["end_time"] = 1602701631,
+					["friendlyfire"] = {
+					},
 					["friendlyfire_total"] = 0,
 					["nome"] = "Sandfury Witch Doctor",
 					["spells"] = {
 						["_ActorTable"] = {
-							["!Melee"] = {
-								["c_amt"] = 1,
-								["b_amt"] = 0,
-								["c_dmg"] = 380,
-								["g_amt"] = 0,
-								["n_max"] = 225,
-								["targets"] = {
-									["Augustin"] = 4330,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 3950,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 26,
-								["total"] = 4330,
-								["c_max"] = 380,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["DODGE"] = 1,
-								["a_dmg"] = 311,
-								["m_crit"] = 0,
-								["m_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 24,
-								["a_amt"] = 2,
-								["r_amt"] = 0,
-							},
 							["Healing Ward"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
@@ -12649,15 +5833,15 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Healing Ward",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
+								["r_amt"] = 0,
 								["m_amt"] = 0,
-								["successful_casted"] = 68,
+								["successful_casted"] = 25,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 							["Lava Spout Totem"] = {
 								["c_amt"] = 0,
@@ -12676,17 +5860,113 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Lava Spout Totem",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
+								["r_amt"] = 0,
 								["m_amt"] = 0,
-								["successful_casted"] = 63,
+								["successful_casted"] = 23,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
-							["Flash Heal"] = {
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 184,
+								["targets"] = {
+									["Augustin"] = 1990,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 1990,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 12,
+								["total"] = 1990,
+								["c_max"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["c_min"] = 0,
+								["m_crit"] = 0,
+								["r_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 12,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["delay"] = 0,
+					["total"] = 2300.057544,
+					["last_dps"] = 0,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1602701611,
+					["serial"] = "Creature-0-4445-209-18501-5650-00038747B7",
+					["fight_component"] = true,
+				}, -- [3]
+				{
+					["flag_original"] = 2632,
+					["totalabsorbed"] = 2956.055793,
+					["damage_from"] = {
+						["Augustin"] = true,
+					},
+					["targets"] = {
+						["Augustin"] = 5201,
+					},
+					["pets"] = {
+					},
+					["nome"] = "Sandfury Blood Drinker",
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 5201.055793,
+					["delay"] = 0,
+					["monster"] = true,
+					["fight_component"] = true,
+					["end_time"] = 1602701631,
+					["damage_taken"] = 7436.055793,
+					["friendlyfire_total"] = 0,
+					["boss_fight_component"] = true,
+					["spells"] = {
+						["_ActorTable"] = {
+							["!Melee"] = {
+								["c_amt"] = 2,
+								["b_amt"] = 0,
+								["c_dmg"] = 673,
+								["g_amt"] = 0,
+								["n_max"] = 192,
+								["targets"] = {
+									["Augustin"] = 5201,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 4528,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 32,
+								["total"] = 5201,
+								["c_max"] = 369,
+								["c_min"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["r_amt"] = 0,
+								["a_dmg"] = 521,
+								["m_crit"] = 0,
+								["b_dmg"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 3,
+								["n_amt"] = 26,
+								["MISS"] = 2,
+								["DODGE"] = 2,
+							},
+							["Blood Leech"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
@@ -12701,54 +5981,55 @@ _detalhes_database = {
 								["counter"] = 0,
 								["total"] = 0,
 								["c_max"] = 0,
-								["id"] = "Flash Heal",
+								["id"] = "Blood Leech",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
+								["r_amt"] = 0,
 								["m_amt"] = 0,
-								["successful_casted"] = 1,
+								["successful_casted"] = 14,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["fight_component"] = true,
+					["dps_started"] = false,
+					["total"] = 5201.055793,
 					["last_dps"] = 0,
-					["last_event"] = 0,
-					["damage_taken"] = 3661.106123,
-					["custom"] = 0,
 					["tipo"] = 1,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1602701576,
+					["serial"] = "Creature-0-4445-209-18501-5649-00018747B8",
 					["friendlyfire"] = {
 					},
-					["start_time"] = 1602604456,
-					["delay"] = 0,
-					["on_hold"] = false,
 				}, -- [4]
 				{
 					["flag_original"] = 2600,
-					["totalabsorbed"] = 266.02039,
+					["totalabsorbed"] = 234.014567,
 					["damage_from"] = {
 						["Augustin"] = true,
 					},
 					["targets"] = {
-						["Augustin"] = 266,
+						["Augustin"] = 234,
 					},
+					["damage_taken"] = 498.014567,
 					["pets"] = {
 					},
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
-					["total_without_pet"] = 266.02039,
-					["damage_taken"] = 347.02039,
+					["total_without_pet"] = 234.014567,
+					["last_dps"] = 0,
 					["fight_component"] = true,
-					["end_time"] = 1602604556,
-					["serial"] = "Creature-0-4468-209-7958-7269-000205CD80",
-					["on_hold"] = false,
+					["end_time"] = 1602701699,
+					["delay"] = 0,
+					["friendlyfire_total"] = 0,
 					["nome"] = "Scarab",
 					["spells"] = {
 						["_ActorTable"] = {
@@ -12757,261 +6038,190 @@ _detalhes_database = {
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 188,
+								["n_max"] = 133,
 								["targets"] = {
-									["Augustin"] = 266,
+									["Augustin"] = 234,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 266,
+								["n_dmg"] = 234,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
 								["counter"] = 2,
-								["total"] = 266,
+								["total"] = 234,
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
+								["r_amt"] = 0,
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 2,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_dps"] = 0,
-					["total"] = 266.02039,
-					["dps_started"] = false,
-					["custom"] = 0,
-					["tipo"] = 1,
+					["total"] = 234.014567,
 					["friendlyfire"] = {
 					},
-					["start_time"] = 1602604551,
-					["delay"] = 0,
-					["friendlyfire_total"] = 0,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1602701694,
+					["serial"] = "Creature-0-4445-209-18501-7269-000B0747B7",
+					["dps_started"] = false,
 				}, -- [5]
 				{
-					["flag_original"] = 68168,
-					["totalabsorbed"] = 1759.036679,
+					["flag_original"] = 2632,
+					["totalabsorbed"] = 161.009158,
 					["damage_from"] = {
-						["Augustin"] = true,
 					},
 					["targets"] = {
-						["Augustin"] = 4396,
+						["Augustin"] = 307,
 					},
 					["pets"] = {
 					},
-					["boss_fight_component"] = true,
+					["last_dps"] = 0,
+					["monster"] = true,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
-					["total_without_pet"] = 4396.036679,
-					["serial"] = "Creature-0-4468-209-7958-7246-000185CD83",
-					["on_hold"] = false,
-					["monster"] = true,
-					["total"] = 4396.036679,
-					["dps_started"] = false,
+					["total_without_pet"] = 307.009158,
+					["delay"] = 0,
+					["fight_component"] = true,
+					["end_time"] = 1602702143,
 					["friendlyfire_total"] = 0,
+					["damage_taken"] = 0.009158,
 					["nome"] = "Sandfury Shadowhunter",
 					["spells"] = {
 						["_ActorTable"] = {
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 161,
+								["targets"] = {
+									["Augustin"] = 161,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 161,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 1,
+								["total"] = 161,
+								["c_max"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["c_min"] = 0,
+								["m_crit"] = 0,
+								["r_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 1,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
 							["Shoot"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 162,
+								["n_max"] = 146,
 								["targets"] = {
-									["Augustin"] = 2412,
+									["Augustin"] = 146,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 2412,
+								["n_dmg"] = 146,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 17,
-								["total"] = 2412,
+								["counter"] = 1,
+								["total"] = 146,
 								["c_max"] = 0,
 								["id"] = "Shoot",
 								["r_dmg"] = 0,
-								["a_dmg"] = 421,
-								["m_crit"] = 0,
-								["a_amt"] = 3,
-								["m_amt"] = 0,
-								["successful_casted"] = 14,
-								["b_dmg"] = 0,
-								["n_amt"] = 17,
 								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 307,
-								["targets"] = {
-									["Augustin"] = 1984,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 1984,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 9,
-								["total"] = 1984,
-								["c_max"] = 0,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["a_dmg"] = 191,
 								["m_crit"] = 0,
+								["r_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 1,
+								["b_dmg"] = 0,
+								["n_amt"] = 1,
 								["a_amt"] = 1,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 9,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 146,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["fight_component"] = true,
-					["end_time"] = 1602604640,
-					["last_dps"] = 0,
-					["last_event"] = 0,
-					["custom"] = 0,
 					["tipo"] = 1,
 					["friendlyfire"] = {
 					},
-					["start_time"] = 1602604583,
-					["delay"] = 0,
-					["damage_taken"] = 25.036679,
+					["total"] = 307.009158,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1602702139,
+					["serial"] = "Creature-0-4445-209-18501-7246-00050747B9",
+					["dps_started"] = false,
 				}, -- [6]
 				{
 					["flag_original"] = 2632,
-					["totalabsorbed"] = 6994.080036,
+					["totalabsorbed"] = 0.03412,
 					["damage_from"] = {
 						["Augustin"] = true,
 					},
 					["targets"] = {
-						["Augustin"] = 13682,
+						["Augustin"] = 187,
 					},
-					["serial"] = "Creature-0-4468-209-7958-7286-000085CED9",
 					["pets"] = {
 					},
-					["boss_fight_component"] = true,
 					["dps_started"] = false,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
-					["total_without_pet"] = 13682.080036,
+					["total_without_pet"] = 187.03412,
+					["tipo"] = 1,
+					["damage_taken"] = 54.03412,
 					["monster"] = true,
-					["fight_component"] = true,
-					["end_time"] = 1602604793,
+					["end_time"] = 1602702186,
 					["friendlyfire"] = {
 					},
-					["last_event"] = 0,
-					["nome"] = "Zul'Farrak Zombie",
+					["friendlyfire_total"] = 0,
+					["boss_fight_component"] = true,
 					["spells"] = {
 						["_ActorTable"] = {
-							["!Melee"] = {
+							["Shadow Bolt"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 330,
+								["n_max"] = 187,
 								["targets"] = {
-									["Augustin"] = 13682,
+									["Augustin"] = 187,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 13682,
+								["n_dmg"] = 187,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 85,
-								["total"] = 13682,
+								["counter"] = 1,
+								["total"] = 187,
 								["c_max"] = 0,
-								["DODGE"] = 1,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["MISS"] = 2,
-								["b_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 1,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["c_min"] = 0,
-								["n_amt"] = 82,
-								["a_dmg"] = 171,
-								["r_amt"] = 0,
-							},
-							["Announce Zul'Farrak Zombie"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Announce Zul'Farrak Zombie",
-								["r_dmg"] = 0,
+								["id"] = "Shadow Bolt",
+								["r_dmg"] = 187,
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
 								["a_amt"] = 0,
 								["m_amt"] = 0,
-								["successful_casted"] = 6,
+								["successful_casted"] = 1,
 								["b_dmg"] = 0,
-								["n_amt"] = 0,
+								["n_amt"] = 1,
+								["r_amt"] = 1,
 								["c_min"] = 0,
-								["r_amt"] = 0,
 							},
-						},
-						["tipo"] = 2,
-					},
-					["total"] = 13682.080036,
-					["last_dps"] = 0,
-					["on_hold"] = false,
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 1397367.080036,
-					["start_time"] = 1602604746,
-					["delay"] = 0,
-					["friendlyfire_total"] = 0,
-				}, -- [7]
-				{
-					["flag_original"] = 68168,
-					["totalabsorbed"] = 0.036725,
-					["damage_from"] = {
-						["Augustin"] = true,
-					},
-					["targets"] = {
-					},
-					["pets"] = {
-					},
-					["dps_started"] = false,
-					["friendlyfire"] = {
-					},
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.036725,
-					["serial"] = "Creature-0-4468-209-7958-7271-000005CD80",
-					["monster"] = true,
-					["total"] = 0.036725,
-					["friendlyfire_total"] = 0,
-					["damage_taken"] = 117.036725,
-					["nome"] = "Witch Doctor Zum'rah",
-					["spells"] = {
-						["_ActorTable"] = {
 							["Ward of Zum'rah"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
@@ -13029,82 +6239,82 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Ward of Zum'rah",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
+								["c_min"] = 0,
 								["m_crit"] = 0,
-								["a_amt"] = 0,
+								["r_amt"] = 0,
 								["m_amt"] = 0,
-								["successful_casted"] = 6,
+								["successful_casted"] = 5,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["c_min"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["last_event"] = 0,
-					["last_dps"] = 0,
-					["boss_fight_component"] = true,
-					["custom"] = 0,
-					["tipo"] = 1,
-					["on_hold"] = false,
-					["start_time"] = 1602605128,
 					["delay"] = 0,
-					["end_time"] = 1602605131,
-				}, -- [8]
+					["total"] = 187.03412,
+					["nome"] = "Witch Doctor Zum'rah",
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1602702182,
+					["serial"] = "Creature-0-4445-209-18501-7271-00000747B7",
+					["last_dps"] = 0,
+				}, -- [7]
 				{
 					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.050389,
+					["totalabsorbed"] = 2179.058405,
 					["damage_from"] = {
 						["Augustin"] = true,
 					},
 					["targets"] = {
-						["Augustin"] = 187,
+						["Augustin"] = 9827,
 					},
-					["serial"] = "Creature-0-4468-209-7958-7276-000005CF06",
 					["pets"] = {
 					},
-					["nome"] = "Zul'Farrak Dead Hero",
-					["fight_component"] = true,
-					["friendlyfire_total"] = 0,
+					["nome"] = "Zul'Farrak Zombie",
+					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
-					["total_without_pet"] = 187.050389,
-					["dps_started"] = false,
+					["total_without_pet"] = 9827.058405,
+					["delay"] = 0,
+					["fight_component"] = true,
 					["monster"] = true,
-					["end_time"] = 1602605131,
-					["damage_taken"] = 33668.050389,
-					["last_event"] = 0,
+					["end_time"] = 1602702317,
+					["damage_taken"] = 211378.058405,
+					["friendlyfire_total"] = 0,
 					["boss_fight_component"] = true,
 					["spells"] = {
 						["_ActorTable"] = {
 							["!Melee"] = {
-								["c_amt"] = 1,
+								["c_amt"] = 4,
 								["b_amt"] = 0,
-								["c_dmg"] = 187,
+								["c_dmg"] = 1294,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["n_max"] = 206,
 								["targets"] = {
-									["Augustin"] = 187,
+									["Augustin"] = 9827,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 0,
+								["n_dmg"] = 8533,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 1,
-								["total"] = 187,
-								["c_max"] = 187,
+								["counter"] = 58,
+								["total"] = 9827,
+								["c_max"] = 373,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
+								["r_amt"] = 0,
+								["m_crit"] = 0,
+								["a_amt"] = 5,
+								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["n_amt"] = 51,
+								["a_dmg"] = 923,
+								["MISS"] = 3,
 							},
 							["Announce Zul'Farrak Zombie"] = {
 								["c_amt"] = 0,
@@ -13123,51 +6333,53 @@ _detalhes_database = {
 								["c_max"] = 0,
 								["id"] = "Announce Zul'Farrak Zombie",
 								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
 								["c_min"] = 0,
-								["successful_casted"] = 1,
+								["m_crit"] = 0,
+								["r_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 2,
 								["b_dmg"] = 0,
 								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["total"] = 187.050389,
+					["dps_started"] = false,
+					["total"] = 9827.058405,
+					["last_dps"] = 0,
+					["tipo"] = 1,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1602702286,
+					["serial"] = "Creature-0-4445-209-18501-7286-0000874BC4",
 					["friendlyfire"] = {
 					},
-					["on_hold"] = false,
-					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
-					["start_time"] = 1602605127,
-					["delay"] = 0,
-					["classe"] = "UNKNOW",
-				}, -- [9]
+				}, -- [8]
 				{
-					["flag_original"] = 8776,
-					["totalabsorbed"] = 0.022912,
+					["flag_original"] = 2632,
+					["totalabsorbed"] = 258.014509,
 					["damage_from"] = {
 						["Augustin"] = true,
 					},
 					["targets"] = {
-						["Augustin"] = 143,
+						["Augustin"] = 772,
 					},
 					["pets"] = {
 					},
-					["last_event"] = 0,
-					["classe"] = "PET",
+					["tipo"] = 1,
+					["friendlyfire_total"] = 0,
 					["raid_targets"] = {
 					},
-					["total_without_pet"] = 143.022912,
+					["total_without_pet"] = 772.014509,
+					["fight_component"] = true,
 					["last_dps"] = 0,
 					["dps_started"] = false,
-					["end_time"] = 1602605131,
-					["serial"] = "Creature-0-4468-209-7958-7786-000005CF8E",
-					["on_hold"] = false,
+					["total"] = 772.014509,
+					["monster"] = true,
+					["classe"] = "UNKNOW",
 					["boss_fight_component"] = true,
 					["spells"] = {
 						["_ActorTable"] = {
@@ -13176,16 +6388,16 @@ _detalhes_database = {
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 52,
+								["n_max"] = 164,
 								["targets"] = {
-									["Augustin"] = 143,
+									["Augustin"] = 772,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 143,
+								["n_dmg"] = 772,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 3,
-								["total"] = 143,
+								["counter"] = 7,
+								["total"] = 772,
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
@@ -13195,45 +6407,114 @@ _detalhes_database = {
 								["m_amt"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
-								["n_amt"] = 3,
-								["c_min"] = 0,
+								["n_amt"] = 7,
 								["r_amt"] = 0,
+								["c_min"] = 0,
 							},
 						},
 						["tipo"] = 2,
 					},
-					["damage_taken"] = 135.022912,
-					["total"] = 143.022912,
-					["nome"] = "Skeleton of Zum'rah",
+					["delay"] = 0,
+					["end_time"] = 1602702822,
+					["nome"] = "Zul'Farrak Dead Hero",
+					["damage_taken"] = 2078.014509,
 					["custom"] = 0,
-					["tipo"] = 1,
+					["last_event"] = 0,
 					["friendlyfire"] = {
 					},
-					["start_time"] = 1602605125,
+					["start_time"] = 1602702813,
+					["serial"] = "Creature-0-4445-209-18501-7276-0000074B52",
+					["on_hold"] = false,
+				}, -- [9]
+				{
+					["flag_original"] = 8776,
+					["totalabsorbed"] = 0.013797,
+					["damage_from"] = {
+						["Augustin"] = true,
+					},
+					["targets"] = {
+						["Augustin"] = 245,
+					},
+					["damage_taken"] = 73.013797,
+					["pets"] = {
+					},
+					["fight_component"] = true,
+					["tipo"] = 1,
+					["classe"] = "PET",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 245.013797,
+					["last_dps"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1602702822,
 					["delay"] = 0,
 					["friendlyfire_total"] = 0,
+					["boss_fight_component"] = true,
+					["spells"] = {
+						["_ActorTable"] = {
+							["!Melee"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 54,
+								["targets"] = {
+									["Augustin"] = 245,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 245,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 5,
+								["total"] = 245,
+								["c_max"] = 0,
+								["id"] = "!Melee",
+								["r_dmg"] = 0,
+								["c_min"] = 0,
+								["m_crit"] = 0,
+								["r_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 5,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["total"] = 245.013797,
+					["nome"] = "Skeleton of Zum'rah",
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1602702809,
+					["serial"] = "Creature-0-4445-209-18501-7786-0000074CB7",
+					["friendlyfire"] = {
+					},
 				}, -- [10]
 				{
 					["flag_original"] = -2147483648,
-					["totalabsorbed"] = 0.006001,
+					["totalabsorbed"] = 0.012515,
 					["damage_from"] = {
 					},
 					["targets"] = {
-						["Augustin"] = 2,
+						["Augustin"] = 39,
 					},
+					["damage_taken"] = 0.012515,
 					["pets"] = {
 					},
-					["last_event"] = 0,
+					["tipo"] = 1,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
-					["total_without_pet"] = 2.006001,
-					["fight_component"] = true,
+					["total_without_pet"] = 39.012515,
+					["last_dps"] = 0,
 					["dps_started"] = false,
-					["end_time"] = 1602606310,
-					["serial"] = "",
-					["damage_taken"] = 0.006001,
-					["nome"] = "Environment (Falling)",
+					["end_time"] = 1602702822,
+					["delay"] = 0,
+					["friendlyfire_total"] = 0,
+					["boss_fight_component"] = true,
 					["spells"] = {
 						["_ActorTable"] = {
 							["Falling"] = {
@@ -13241,217 +6522,87 @@ _detalhes_database = {
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 2,
+								["n_max"] = 21,
 								["targets"] = {
-									["Augustin"] = 2,
+									["Augustin"] = 39,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 2,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 1,
-								["total"] = 2,
-								["c_max"] = 0,
-								["id"] = "Falling",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 1,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["on_hold"] = false,
-					["total"] = 2.006001,
-					["friendlyfire"] = {
-					},
-					["custom"] = 0,
-					["tipo"] = 1,
-					["last_dps"] = 0,
-					["start_time"] = 1602606306,
-					["delay"] = 0,
-					["friendlyfire_total"] = 0,
-				}, -- [11]
-				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 359.017731,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Augustin"] = 839,
-					},
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 839.017731,
-					["last_event"] = 0,
-					["friendlyfire_total"] = 0,
-					["dps_started"] = false,
-					["end_time"] = 1602606559,
-					["last_dps"] = 0,
-					["serial"] = "Creature-0-4468-209-8211-7272-000005D0F1",
-					["nome"] = "Theka the Martyr",
-					["spells"] = {
-						["_ActorTable"] = {
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 261,
-								["targets"] = {
-									["Augustin"] = 261,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 261,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 1,
-								["total"] = 261,
-								["c_max"] = 0,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 1,
-								["r_amt"] = 0,
-								["c_min"] = 0,
-							},
-							["Fevered Plague"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 354,
-								["targets"] = {
-									["Augustin"] = 578,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 578,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 17,
-								["total"] = 578,
-								["c_max"] = 0,
-								["id"] = "Fevered Plague",
-								["r_dmg"] = 0,
-								["a_dmg"] = 14,
-								["m_crit"] = 0,
-								["a_amt"] = 1,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 17,
-								["c_min"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["monster"] = true,
-					["total"] = 839.017731,
-					["friendlyfire"] = {
-					},
-					["on_hold"] = false,
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.017731,
-					["start_time"] = 1602606478,
-					["delay"] = 0,
-					["boss_fight_component"] = true,
-				}, -- [12]
-				{
-					["flag_original"] = 74312,
-					["totalabsorbed"] = 0.011193,
-					["damage_from"] = {
-						["Augustin"] = true,
-					},
-					["targets"] = {
-					},
-					["pets"] = {
-					},
-					["classe"] = "PET",
-					["last_event"] = 0,
-					["friendlyfire_total"] = 0,
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.011193,
-					["serial"] = "Creature-0-4447-209-9609-6017-000005D9C8",
-					["fight_component"] = true,
-					["end_time"] = 1602607578,
-					["last_dps"] = 0,
-					["ownerName"] = "Sandfury Witch Doctor",
-					["nome"] = "Lava Spout Totem <Sandfury Witch Doctor>",
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 2,
-					},
-					["on_hold"] = false,
-					["friendlyfire"] = {
-					},
-					["total"] = 0.011193,
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 41.011193,
-					["start_time"] = 1602607575,
-					["delay"] = 0,
-					["dps_started"] = false,
-				}, -- [13]
-				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 542.010089,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Augustin"] = 542,
-					},
-					["pets"] = {
-					},
-					["fight_component"] = true,
-					["friendlyfire"] = {
-					},
-					["friendlyfire_total"] = 0,
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 542.010089,
-					["serial"] = "Creature-0-4447-209-9609-7247-000085D930",
-					["monster"] = true,
-					["total"] = 542.010089,
-					["classe"] = "UNKNOW",
-					["on_hold"] = false,
-					["nome"] = "Sandfury Soul Eater",
-					["spells"] = {
-						["_ActorTable"] = {
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 303,
-								["targets"] = {
-									["Augustin"] = 542,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 542,
+								["n_dmg"] = 39,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
 								["counter"] = 2,
-								["total"] = 542,
+								["total"] = 39,
 								["c_max"] = 0,
-								["id"] = "!Melee",
+								["id"] = "Falling",
+								["r_dmg"] = 0,
+								["c_min"] = 0,
+								["m_crit"] = 0,
+								["r_amt"] = 0,
+								["m_amt"] = 0,
+								["successful_casted"] = 0,
+								["b_dmg"] = 0,
+								["n_amt"] = 2,
+								["a_amt"] = 0,
+								["a_dmg"] = 0,
+							},
+						},
+						["tipo"] = 2,
+					},
+					["total"] = 39.012515,
+					["nome"] = "Environment (Falling)",
+					["custom"] = 0,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["start_time"] = 1602702813,
+					["serial"] = "",
+					["friendlyfire"] = {
+					},
+				}, -- [11]
+				{
+					["flag_original"] = 8776,
+					["totalabsorbed"] = 0.015685,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Augustin"] = 310,
+					},
+					["on_hold"] = false,
+					["pets"] = {
+					},
+					["last_event"] = 0,
+					["classe"] = "PET",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 310.015685,
+					["friendlyfire_total"] = 0,
+					["end_time"] = 1602703121,
+					["dps_started"] = false,
+					["total"] = 310.015685,
+					["fight_component"] = true,
+					["ownerName"] = "Sandfury Witch Doctor",
+					["nome"] = "Lava Spout Totem <Sandfury Witch Doctor>",
+					["friendlyfire"] = {
+					},
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+							["Lava Spout Totem"] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 155,
+								["targets"] = {
+									["Augustin"] = 310,
+								},
+								["m_dmg"] = 0,
+								["n_dmg"] = 310,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 2,
+								["total"] = 310,
+								["c_max"] = 0,
+								["id"] = "Lava Spout Totem",
 								["r_dmg"] = 0,
 								["a_dmg"] = 0,
 								["m_crit"] = 0,
@@ -13460,459 +6611,86 @@ _detalhes_database = {
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
 								["n_amt"] = 2,
-								["c_min"] = 0,
 								["r_amt"] = 0,
+								["c_min"] = 0,
 							},
 						},
-						["tipo"] = 2,
 					},
-					["last_event"] = 0,
-					["end_time"] = 1602607669,
-					["damage_taken"] = 0.010089,
+					["serial"] = "Creature-0-4448-209-18931-6017-0000074EF9",
 					["custom"] = 0,
 					["tipo"] = 1,
 					["last_dps"] = 0,
-					["start_time"] = 1602607664,
+					["start_time"] = 1602703111,
 					["delay"] = 0,
-					["dps_started"] = false,
-				}, -- [14]
+					["damage_taken"] = 0.015685,
+				}, -- [12]
 				{
 					["flag_original"] = 68168,
-					["totalabsorbed"] = 0.001328,
+					["totalabsorbed"] = 175.010766,
+					["on_hold"] = false,
 					["damage_from"] = {
+						["Augustin"] = true,
 					},
 					["targets"] = {
-						["Augustin"] = 0,
+						["Augustin"] = 175,
 					},
 					["pets"] = {
 					},
-					["monster"] = true,
-					["last_dps"] = 0,
+					["fight_component"] = true,
 					["classe"] = "UNKNOW",
 					["raid_targets"] = {
 					},
-					["total_without_pet"] = 0.001328,
-					["delay"] = 0,
-					["fight_component"] = true,
-					["end_time"] = 1602608375,
+					["total_without_pet"] = 175.010766,
+					["last_event"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1602703949,
+					["friendlyfire"] = {
+					},
 					["friendlyfire_total"] = 0,
-					["damage_taken"] = 0.001328,
-					["nome"] = "Glasshide Basilisk",
+					["nome"] = "Sandfury Soul Eater",
 					["spells"] = {
+						["tipo"] = 2,
 						["_ActorTable"] = {
 							["!Melee"] = {
 								["c_amt"] = 0,
 								["b_amt"] = 0,
 								["c_dmg"] = 0,
 								["g_amt"] = 0,
-								["n_max"] = 0,
+								["n_max"] = 175,
 								["targets"] = {
-									["Augustin"] = 0,
+									["Augustin"] = 175,
 								},
 								["m_dmg"] = 0,
-								["n_dmg"] = 0,
+								["n_dmg"] = 175,
 								["n_min"] = 0,
 								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
+								["counter"] = 1,
+								["total"] = 175,
 								["c_max"] = 0,
 								["id"] = "!Melee",
 								["r_dmg"] = 0,
-								["r_amt"] = 0,
+								["a_dmg"] = 0,
 								["m_crit"] = 0,
+								["a_amt"] = 0,
 								["m_amt"] = 0,
-								["c_min"] = 0,
 								["successful_casted"] = 0,
 								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
+								["n_amt"] = 1,
+								["r_amt"] = 0,
+								["c_min"] = 0,
 							},
 						},
-						["tipo"] = 2,
 					},
-					["tipo"] = 1,
-					["total"] = 0.001328,
-					["on_hold"] = false,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["friendlyfire"] = {
-					},
-					["start_time"] = 1602608372,
-					["serial"] = "Creature-0-4447-1-41-5419-000005A8BE",
-					["dps_started"] = false,
-				}, -- [15]
-				{
-					["flag_original"] = 66888,
-					["totalabsorbed"] = 0.005808,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Kichy"] = 0,
-						["Végzet"] = 0,
-						["Gadgetzan Bruiser"] = 0,
-						["Augustin"] = 0,
-					},
-					["enemy"] = true,
-					["pets"] = {
-					},
-					["last_event"] = 0,
-					["classe"] = "UNGROUPPLAYER",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.005808,
-					["dps_started"] = false,
-					["fight_component"] = true,
-					["end_time"] = 1602609265,
-					["serial"] = "Player-4465-01B89D4D",
-					["friendlyfire"] = {
-					},
-					["nome"] = "Mythael",
-					["spells"] = {
-						["_ActorTable"] = {
-							["Scatter Shot"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Gadgetzan Bruiser"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Scatter Shot",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
-							},
-							["Arcane Shot"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Kichy"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Arcane Shot",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
-							},
-							["Aimed Shot"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Kichy"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Aimed Shot",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
-							},
-							["Multi-Shot"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Kichy"] = 0,
-									["Végzet"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Multi-Shot",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
-							},
-							["!Autoshot"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Kichy"] = 0,
-									["Augustin"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "!Autoshot",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
-							},
-							["Serpent Sting"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Kichy"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Serpent Sting",
-								["r_dmg"] = 0,
-								["a_dmg"] = 0,
-								["m_crit"] = 0,
-								["a_amt"] = 0,
-								["c_min"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["m_amt"] = 0,
-								["r_amt"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["last_dps"] = 0,
-					["on_hold"] = false,
-					["total"] = 0.005808,
-					["custom"] = 0,
-					["tipo"] = 1,
-					["damage_taken"] = 0.005808,
-					["start_time"] = 1602609262,
-					["delay"] = 0,
-					["friendlyfire_total"] = 0,
-				}, -- [16]
-				{
-					["flag_original"] = 2632,
-					["totalabsorbed"] = 0.008226,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Augustin"] = 0,
-					},
-					["pets"] = {
-					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.008226,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.008226,
-					["delay"] = 0,
 					["monster"] = true,
-					["end_time"] = 1602612353,
-					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
-					["nome"] = "Sandfury Firecaller",
-					["spells"] = {
-						["_ActorTable"] = {
-							["Fireball"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Augustin"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Fireball",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-							["!Melee"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Augustin"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "!Melee",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["tipo"] = 1,
-					["total"] = 0.008226,
-					["on_hold"] = false,
+					["total"] = 175.010766,
+					["serial"] = "Creature-0-4447-209-19568-7247-0001075146",
 					["custom"] = 0,
-					["last_event"] = 0,
-					["last_dps"] = 0,
-					["start_time"] = 1602612350,
-					["serial"] = "Creature-0-4447-1-41-5647-000004CA73",
-					["fight_component"] = true,
-				}, -- [17]
-				{
-					["flag_original"] = 68168,
-					["totalabsorbed"] = 0.002265,
-					["damage_from"] = {
-					},
-					["targets"] = {
-						["Augustin"] = 0,
-					},
-					["pets"] = {
-					},
-					["dps_started"] = false,
-					["damage_taken"] = 0.002265,
-					["classe"] = "UNKNOW",
-					["raid_targets"] = {
-					},
-					["total_without_pet"] = 0.002265,
+					["tipo"] = 1,
+					["damage_taken"] = 25.010766,
+					["start_time"] = 1602703945,
 					["delay"] = 0,
-					["monster"] = true,
-					["end_time"] = 1602612353,
-					["friendlyfire_total"] = 0,
-					["friendlyfire"] = {
-					},
-					["nome"] = "Sandfury Axe Thrower",
-					["spells"] = {
-						["_ActorTable"] = {
-							["Throw"] = {
-								["c_amt"] = 0,
-								["b_amt"] = 0,
-								["c_dmg"] = 0,
-								["g_amt"] = 0,
-								["n_max"] = 0,
-								["targets"] = {
-									["Augustin"] = 0,
-								},
-								["m_dmg"] = 0,
-								["n_dmg"] = 0,
-								["n_min"] = 0,
-								["g_dmg"] = 0,
-								["counter"] = 0,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Throw",
-								["r_dmg"] = 0,
-								["r_amt"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["successful_casted"] = 0,
-								["b_dmg"] = 0,
-								["n_amt"] = 0,
-								["a_amt"] = 0,
-								["a_dmg"] = 0,
-							},
-						},
-						["tipo"] = 2,
-					},
-					["tipo"] = 1,
-					["total"] = 0.002265,
-					["on_hold"] = false,
-					["custom"] = 0,
-					["last_event"] = 0,
 					["last_dps"] = 0,
-					["start_time"] = 1602612350,
-					["serial"] = "Creature-0-4447-1-41-5646-000004B211",
-					["fight_component"] = true,
-				}, -- [18]
+				}, -- [13]
 			},
 		}, -- [1]
 		{
@@ -13920,92 +6698,92 @@ _detalhes_database = {
 			["_ActorTable"] = {
 				{
 					["flag_original"] = 1297,
-					["targets_overheal"] = {
+					["healing_from"] = {
+						["Augustin"] = true,
 					},
 					["pets"] = {
 					},
 					["iniciar_hps"] = false,
-					["heal_enemy_amt"] = 0,
-					["totalover"] = 0.190829,
-					["total_without_pet"] = 21625.190829,
-					["total"] = 21625.190829,
+					["classe"] = "MAGE",
+					["totalover"] = 0.107548,
+					["total_without_pet"] = 10537.107548,
+					["total"] = 10537.107548,
 					["targets_absorbs"] = {
-						["Augustin"] = 2480,
+						["Augustin"] = 9177,
 					},
 					["heal_enemy"] = {
 					},
 					["on_hold"] = false,
 					["serial"] = "Player-4465-01D5BF39",
-					["totalabsorb"] = 20945.190829,
+					["totalabsorb"] = 9177.107548,
 					["last_hps"] = 0,
 					["targets"] = {
-						["Augustin"] = 2480,
+						["Augustin"] = 10537,
 					},
-					["totalover_without_pet"] = 0.190829,
-					["healing_taken"] = 21625.190829,
-					["fight_component"] = true,
-					["end_time"] = 1602604501,
-					["healing_from"] = {
-						["Augustin"] = true,
-					},
+					["totalover_without_pet"] = 0.107548,
+					["healing_taken"] = 10537.107548,
 					["boss_fight_component"] = true,
+					["fight_component"] = true,
+					["end_time"] = 1602701631,
+					["targets_overheal"] = {
+					},
 					["nome"] = "Augustin",
 					["spells"] = {
 						["_ActorTable"] = {
 							["Ice Barrier"] = {
 								["c_amt"] = 0,
-								["totalabsorb"] = 14112,
+								["totalabsorb"] = 6298,
 								["targets_overheal"] = {
 								},
-								["n_max"] = 290,
+								["n_max"] = 206,
 								["targets"] = {
-									["Augustin"] = 14112,
+									["Augustin"] = 6298,
 								},
 								["n_min"] = 0,
-								["counter"] = 108,
+								["counter"] = 45,
 								["overheal"] = 0,
-								["total"] = 14112,
+								["total"] = 6298,
 								["c_max"] = 0,
 								["id"] = "Ice Barrier",
 								["targets_absorbs"] = {
-									["Augustin"] = 14112,
+									["Augustin"] = 6298,
 								},
 								["c_curado"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["n_curado"] = 14112,
-								["n_amt"] = 108,
-								["totaldenied"] = 0,
 								["m_healed"] = 0,
+								["c_min"] = 0,
+								["totaldenied"] = 0,
+								["n_amt"] = 45,
+								["n_curado"] = 6298,
+								["m_amt"] = 0,
 								["absorbed"] = 0,
 							},
 							["Mana Shield"] = {
 								["c_amt"] = 0,
-								["totalabsorb"] = 6833,
+								["totalabsorb"] = 2879,
 								["targets_overheal"] = {
 								},
-								["n_max"] = 318,
+								["n_max"] = 192,
 								["targets"] = {
-									["Augustin"] = 6833,
+									["Augustin"] = 2879,
 								},
 								["n_min"] = 0,
-								["counter"] = 50,
+								["counter"] = 22,
 								["overheal"] = 0,
-								["total"] = 6833,
+								["total"] = 2879,
 								["c_max"] = 0,
 								["id"] = "Mana Shield",
 								["targets_absorbs"] = {
-									["Augustin"] = 6833,
+									["Augustin"] = 2879,
 								},
 								["c_curado"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["n_curado"] = 6833,
-								["n_amt"] = 50,
-								["totaldenied"] = 0,
 								["m_healed"] = 0,
+								["c_min"] = 0,
+								["totaldenied"] = 0,
+								["n_amt"] = 22,
+								["n_curado"] = 2879,
+								["m_amt"] = 0,
 								["absorbed"] = 0,
 							},
 							["First Aid"] = {
@@ -14015,289 +6793,47 @@ _detalhes_database = {
 								},
 								["n_max"] = 170,
 								["targets"] = {
-									["Augustin"] = 680,
+									["Augustin"] = 1360,
 								},
 								["n_min"] = 0,
-								["counter"] = 4,
+								["counter"] = 8,
 								["overheal"] = 0,
-								["total"] = 680,
+								["total"] = 1360,
 								["c_max"] = 0,
 								["id"] = "First Aid",
 								["targets_absorbs"] = {
 								},
 								["c_curado"] = 0,
 								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["n_curado"] = 680,
-								["n_amt"] = 4,
-								["totaldenied"] = 0,
 								["m_healed"] = 0,
+								["c_min"] = 0,
+								["totaldenied"] = 0,
+								["n_amt"] = 8,
+								["n_curado"] = 1360,
+								["m_amt"] = 0,
 								["absorbed"] = 0,
 							},
 						},
 						["tipo"] = 3,
 					},
 					["grupo"] = true,
-					["classe"] = "MAGE",
-					["start_time"] = 1602604250,
+					["last_event"] = 0,
+					["heal_enemy_amt"] = 0,
 					["custom"] = 0,
 					["tipo"] = 2,
+					["totaldenied"] = 0.107548,
+					["start_time"] = 1602701539,
+					["delay"] = 0,
 					["spec"] = 64,
-					["totaldenied"] = 0.190829,
-					["delay"] = 0,
-					["last_event"] = 0,
 				}, -- [1]
-				{
-					["flag_original"] = 2632,
-					["targets_overheal"] = {
-					},
-					["pets"] = {
-						"Greater Healing Ward <Sandfury Witch Doctor>", -- [1]
-					},
-					["iniciar_hps"] = false,
-					["heal_enemy_amt"] = 1159,
-					["totalover"] = 0.097311,
-					["total_without_pet"] = 0.097311,
-					["monster"] = true,
-					["total"] = 0.097311,
-					["targets_absorbs"] = {
-					},
-					["heal_enemy"] = {
-						["Flash Heal"] = 1159,
-					},
-					["on_hold"] = false,
-					["serial"] = "Creature-0-4468-209-7958-5650-000185CD81",
-					["totalabsorb"] = 0.097311,
-					["last_hps"] = 0,
-					["targets"] = {
-					},
-					["totalover_without_pet"] = 0.097311,
-					["healing_taken"] = 0.097311,
-					["end_time"] = 1602604501,
-					["start_time"] = 1602604498,
-					["nome"] = "Sandfury Witch Doctor",
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
-					["healing_from"] = {
-					},
-					["boss_fight_component"] = true,
-					["custom"] = 0,
-					["last_event"] = 0,
-					["tipo"] = 2,
-					["totaldenied"] = 0.097311,
-					["delay"] = 0,
-					["classe"] = "UNKNOW",
-				}, -- [2]
-				{
-					["flag_original"] = 8776,
-					["healing_from"] = {
-					},
-					["pets"] = {
-					},
-					["iniciar_hps"] = false,
-					["classe"] = "PET",
-					["totalover"] = 0.110457,
-					["total_without_pet"] = 0.110457,
-					["total"] = 0.110457,
-					["targets_absorbs"] = {
-					},
-					["heal_enemy"] = {
-						["Healing Aura"] = 4035,
-					},
-					["on_hold"] = false,
-					["serial"] = "Creature-0-4468-209-7958-8179-000005CDB9",
-					["totalabsorb"] = 0.110457,
-					["last_hps"] = 0,
-					["targets"] = {
-					},
-					["totalover_without_pet"] = 0.110457,
-					["healing_taken"] = 0.110457,
-					["totaldenied"] = 0.110457,
-					["end_time"] = 1602604501,
-					["ownerName"] = "Sandfury Witch Doctor",
-					["boss_fight_component"] = true,
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
-					["targets_overheal"] = {
-					},
-					["nome"] = "Greater Healing Ward <Sandfury Witch Doctor>",
-					["custom"] = 0,
-					["last_event"] = 0,
-					["heal_enemy_amt"] = 4035,
-					["start_time"] = 1602604498,
-					["delay"] = 0,
-					["tipo"] = 2,
-				}, -- [3]
-				{
-					["flag_original"] = 8776,
-					["totalabsorb"] = 0.00751,
-					["last_hps"] = 0,
-					["healing_from"] = {
-					},
-					["targets"] = {
-					},
-					["pets"] = {
-					},
-					["iniciar_hps"] = false,
-					["targets_overheal"] = {
-					},
-					["classe"] = "PET",
-					["totalover"] = 0.00751,
-					["total_without_pet"] = 0.00751,
-					["last_event"] = 0,
-					["totalover_without_pet"] = 0.00751,
-					["heal_enemy_amt"] = 0,
-					["total"] = 0.00751,
-					["serial"] = "Creature-0-4468-209-7958-7786-000005CF8E",
-					["healing_taken"] = 0.00751,
-					["boss_fight_component"] = true,
-					["targets_absorbs"] = {
-					},
-					["end_time"] = 1602605131,
-					["totaldenied"] = 0.00751,
-					["heal_enemy"] = {
-					},
-					["nome"] = "Skeleton of Zum'rah",
-					["custom"] = 0,
-					["tipo"] = 2,
-					["on_hold"] = false,
-					["start_time"] = 1602605128,
-					["delay"] = 0,
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
-				}, -- [4]
-				{
-					["flag_original"] = 2632,
-					["totalabsorb"] = 0.008856,
-					["last_hps"] = 0,
-					["healing_from"] = {
-					},
-					["targets"] = {
-					},
-					["serial"] = "Creature-0-4468-209-7958-7276-000005CF06",
-					["pets"] = {
-					},
-					["iniciar_hps"] = false,
-					["targets_overheal"] = {
-					},
-					["heal_enemy_amt"] = 0,
-					["totalover"] = 0.008856,
-					["total_without_pet"] = 0.008856,
-					["totalover_without_pet"] = 0.008856,
-					["start_time"] = 1602605128,
-					["monster"] = true,
-					["total"] = 0.008856,
-					["healing_taken"] = 0.008856,
-					["classe"] = "UNKNOW",
-					["nome"] = "Zul'Farrak Dead Hero",
-					["spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 3,
-					},
-					["end_time"] = 1602605131,
-					["boss_fight_component"] = true,
-					["heal_enemy"] = {
-					},
-					["targets_absorbs"] = {
-					},
-					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["totaldenied"] = 0.008856,
-					["delay"] = 0,
-					["tipo"] = 2,
-				}, -- [5]
-				{
-					["flag_original"] = 1298,
-					["totalabsorb"] = 0.009479,
-					["last_hps"] = 0,
-					["targets_overheal"] = {
-						["Augustin"] = 978,
-					},
-					["targets"] = {
-						["Augustin"] = 0,
-					},
-					["healing_taken"] = 0.009479,
-					["pets"] = {
-					},
-					["iniciar_hps"] = false,
-					["healing_from"] = {
-					},
-					["classe"] = "PRIEST",
-					["totalover"] = 978.009479,
-					["total_without_pet"] = 0.009479,
-					["totalover_without_pet"] = 0.009479,
-					["start_time"] = 1602607473,
-					["heal_enemy_amt"] = 0,
-					["total"] = 0.009479,
-					["end_time"] = 1602607481,
-					["spec"] = 257,
-					["nome"] = "Konac",
-					["spells"] = {
-						["_ActorTable"] = {
-							["Renew"] = {
-								["c_amt"] = 0,
-								["totalabsorb"] = 0,
-								["targets_overheal"] = {
-									["Augustin"] = 978,
-								},
-								["n_max"] = 0,
-								["targets"] = {
-									["Augustin"] = 0,
-								},
-								["n_min"] = 0,
-								["counter"] = 3,
-								["overheal"] = 978,
-								["total"] = 0,
-								["c_max"] = 0,
-								["id"] = "Renew",
-								["targets_absorbs"] = {
-								},
-								["c_curado"] = 0,
-								["m_crit"] = 0,
-								["c_min"] = 0,
-								["m_amt"] = 0,
-								["n_curado"] = 0,
-								["n_amt"] = 3,
-								["totaldenied"] = 0,
-								["m_healed"] = 0,
-								["absorbed"] = 0,
-							},
-						},
-						["tipo"] = 3,
-					},
-					["grupo"] = true,
-					["serial"] = "Player-4465-00C4D96C",
-					["heal_enemy"] = {
-					},
-					["targets_absorbs"] = {
-					},
-					["custom"] = 0,
-					["last_event"] = 0,
-					["on_hold"] = false,
-					["totaldenied"] = 0.009479,
-					["delay"] = 0,
-					["tipo"] = 2,
-				}, -- [6]
 			},
 		}, -- [2]
 		{
 			["tipo"] = 7,
 			["_ActorTable"] = {
 				{
-					["received"] = 11813.036883,
-					["resource"] = 0.241343,
+					["received"] = 1274.011326,
+					["resource"] = 0.013787,
 					["targets"] = {
 						["Augustin"] = 0,
 					},
@@ -14305,41 +6841,41 @@ _detalhes_database = {
 					},
 					["powertype"] = 0,
 					["classe"] = "MAGE",
-					["passiveover"] = 0.002962,
-					["total"] = 11813.036883,
+					["passiveover"] = 0.008865,
+					["total"] = 1274.011326,
 					["boss_fight_component"] = true,
 					["spells"] = {
 						["_ActorTable"] = {
 							["Replenish Mana"] = {
-								["total"] = 5314,
+								["total"] = 406,
 								["id"] = "Replenish Mana",
 								["totalover"] = 0,
 								["targets"] = {
 									["Augustin"] = 0,
 								},
-								["counter"] = 10,
+								["counter"] = 1,
 							},
 							["Restore Mana"] = {
-								["total"] = 6499,
+								["total"] = 868,
 								["id"] = "Restore Mana",
 								["totalover"] = 0,
 								["targets"] = {
 									["Augustin"] = 0,
 								},
-								["counter"] = 8,
+								["counter"] = 1,
 							},
 						},
 						["tipo"] = 7,
 					},
 					["grupo"] = true,
-					["nome"] = "Augustin",
+					["totalover"] = 0.008865,
 					["spec"] = 64,
-					["flag_original"] = 1297,
-					["tipo"] = 3,
-					["alternatepower"] = 0.036883,
 					["last_event"] = 0,
+					["tipo"] = 3,
+					["alternatepower"] = 0.011326,
+					["flag_original"] = 1297,
 					["serial"] = "Player-4465-01D5BF39",
-					["totalover"] = 0.002962,
+					["nome"] = "Augustin",
 				}, -- [1]
 			},
 		}, -- [3]
@@ -14351,326 +6887,284 @@ _detalhes_database = {
 					["debuff_uptime_spells"] = {
 						["_ActorTable"] = {
 							["Chilled"] = {
-								["actived_at"] = 1602606239,
-								["refreshamt"] = 10,
-								["activedamt"] = 4,
-								["appliedamt"] = 127,
+								["counter"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 56,
 								["id"] = "Chilled",
-								["uptime"] = 499,
+								["uptime"] = 215,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 6,
 							},
-							["Frostbolt"] = {
+							["Recently Bandaged"] = {
+								["counter"] = 0,
 								["refreshamt"] = 0,
 								["activedamt"] = 0,
-								["appliedamt"] = 2,
-								["id"] = "Frostbolt",
+								["uptime"] = 23,
+								["id"] = "Recently Bandaged",
+								["appliedamt"] = 1,
+								["targets"] = {
+								},
+								["actived_at"] = 1602702354,
+							},
+							["Frost Nova"] = {
+								["counter"] = 0,
+								["activedamt"] = 24,
+								["appliedamt"] = 73,
+								["id"] = "Frost Nova",
+								["uptime"] = 92,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+							["Flamestrike"] = {
+								["counter"] = 0,
+								["activedamt"] = 0,
+								["appliedamt"] = 21,
+								["id"] = "Flamestrike",
+								["uptime"] = 32,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+							["Cone of Cold"] = {
+								["counter"] = 0,
+								["appliedamt"] = 0,
+								["activedamt"] = -13,
+								["actived_at"] = 6410810528,
+								["id"] = "Cone of Cold",
 								["uptime"] = 0,
 								["targets"] = {
 								},
-								["counter"] = 0,
-							},
-							["Recently Bandaged"] = {
 								["refreshamt"] = 0,
-								["activedamt"] = 1,
-								["appliedamt"] = 1,
-								["id"] = "Recently Bandaged",
-								["uptime"] = 4,
-								["targets"] = {
-								},
-								["counter"] = 0,
 							},
 							["Blizzard"] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["activedamt"] = 0,
-								["appliedamt"] = 7271,
+								["appliedamt"] = 1010,
 								["id"] = "Blizzard",
-								["uptime"] = 1086,
+								["uptime"] = 154,
 								["targets"] = {
 								},
-								["counter"] = 0,
-							},
-							["Flamestrike"] = {
 								["refreshamt"] = 0,
-								["activedamt"] = 0,
-								["appliedamt"] = 50,
-								["id"] = "Flamestrike",
-								["uptime"] = 56,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							["Cone of Cold"] = {
-								["refreshamt"] = 0,
-								["appliedamt"] = 13,
-								["activedamt"] = -12,
-								["uptime"] = 44,
-								["id"] = "Cone of Cold",
-								["actived_at"] = 6410447798,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							["Frost Nova"] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 0,
-								["appliedamt"] = 112,
-								["id"] = "Frost Nova",
-								["uptime"] = 183,
-								["targets"] = {
-								},
-								["counter"] = 0,
 							},
 						},
 						["tipo"] = 9,
 					},
-					["buff_uptime"] = 11374,
+					["buff_uptime"] = 3584,
 					["classe"] = "MAGE",
 					["buff_uptime_spells"] = {
 						["_ActorTable"] = {
 							["Ice Barrier"] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 46,
-								["appliedamt"] = 46,
+								["counter"] = 0,
+								["activedamt"] = 24,
+								["appliedamt"] = 24,
 								["id"] = "Ice Barrier",
-								["uptime"] = 606,
+								["uptime"] = 269,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 							["Mana Shield"] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 34,
-								["appliedamt"] = 34,
+								["counter"] = 0,
+								["activedamt"] = 12,
+								["appliedamt"] = 12,
 								["id"] = "Mana Shield",
-								["uptime"] = 862,
+								["uptime"] = 367,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 							["Ice Armor"] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 40,
-								["appliedamt"] = 40,
+								["counter"] = 0,
+								["activedamt"] = 19,
+								["appliedamt"] = 19,
 								["id"] = "Ice Armor",
-								["uptime"] = 1575,
+								["uptime"] = 684,
 								["targets"] = {
 								},
-								["counter"] = 0,
+								["refreshamt"] = 0,
 							},
 							["Dampen Magic"] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 40,
-								["appliedamt"] = 40,
+								["counter"] = 0,
+								["activedamt"] = 14,
+								["appliedamt"] = 14,
 								["id"] = "Dampen Magic",
-								["uptime"] = 2244,
+								["uptime"] = 555,
 								["targets"] = {
 								},
-								["counter"] = 0,
-							},
-							["Mage Armor"] = {
 								["refreshamt"] = 0,
-								["activedamt"] = 8,
-								["appliedamt"] = 8,
-								["id"] = "Mage Armor",
-								["uptime"] = 2001,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							["Blink"] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 25,
-								["appliedamt"] = 25,
-								["id"] = "Blink",
-								["uptime"] = 25,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							["Honorless Target"] = {
-								["refreshamt"] = 0,
-								["appliedamt"] = 1,
-								["activedamt"] = 1,
-								["uptime"] = 0,
-								["id"] = "Honorless Target",
-								["actived_at"] = 1602618919,
-								["targets"] = {
-								},
-								["counter"] = 0,
 							},
 							["First Aid"] = {
-								["refreshamt"] = 0,
+								["counter"] = 0,
 								["activedamt"] = 1,
 								["appliedamt"] = 1,
 								["id"] = "First Aid",
-								["uptime"] = 4,
+								["uptime"] = 8,
 								["targets"] = {
 								},
-								["counter"] = 0,
-							},
-							["Armor"] = {
 								["refreshamt"] = 0,
-								["activedamt"] = 7,
-								["appliedamt"] = 7,
-								["id"] = "Armor",
-								["uptime"] = 435,
-								["targets"] = {
-								},
-								["counter"] = 0,
 							},
-							["Evocation"] = {
-								["refreshamt"] = 0,
-								["activedamt"] = 7,
-								["appliedamt"] = 7,
-								["id"] = "Evocation",
-								["uptime"] = 46,
+							["Blink"] = {
+								["counter"] = 0,
+								["activedamt"] = 14,
+								["appliedamt"] = 14,
+								["id"] = "Blink",
+								["uptime"] = 15,
 								["targets"] = {
 								},
-								["counter"] = 0,
-							},
-							["Red Skeletal Horse"] = {
 								["refreshamt"] = 0,
-								["appliedamt"] = 20,
-								["activedamt"] = 20,
-								["uptime"] = 0,
-								["id"] = "Red Skeletal Horse",
-								["actived_at"] = 32052195234,
-								["targets"] = {
-								},
-								["counter"] = 0,
 							},
 							["Arcane Intellect"] = {
-								["refreshamt"] = 1,
-								["activedamt"] = 47,
-								["appliedamt"] = 47,
+								["counter"] = 0,
+								["activedamt"] = 23,
+								["appliedamt"] = 23,
 								["id"] = "Arcane Intellect",
-								["uptime"] = 3576,
+								["uptime"] = 1182,
 								["targets"] = {
 								},
+								["refreshamt"] = 0,
+							},
+							["Evocation"] = {
 								["counter"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = "Evocation",
+								["uptime"] = 6,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+							["Red Skeletal Horse"] = {
+								["counter"] = 0,
+								["appliedamt"] = 7,
+								["activedamt"] = 7,
+								["actived_at"] = 11218919412,
+								["id"] = "Red Skeletal Horse",
+								["uptime"] = 0,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
+							},
+							["Mage Armor"] = {
+								["counter"] = 0,
+								["activedamt"] = 5,
+								["appliedamt"] = 5,
+								["id"] = "Mage Armor",
+								["uptime"] = 498,
+								["targets"] = {
+								},
+								["refreshamt"] = 0,
 							},
 						},
 						["tipo"] = 9,
 					},
 					["fight_component"] = true,
-					["debuff_uptime"] = 1872,
+					["debuff_uptime"] = 516,
 					["boss_fight_component"] = true,
 					["spec"] = 64,
 					["grupo"] = true,
 					["spell_cast"] = {
-						["Arcane Intellect"] = 1,
-						["Blizzard"] = 167,
-						["Frostbolt"] = 2,
-						["Mage Armor"] = 1,
-						["Fire Blast"] = 4,
-						["Shoot"] = 1,
 						["Ice Barrier"] = 7,
-						["Mana Shield"] = 1,
-						["Cone of Cold"] = 2,
-						["First Aid"] = 1,
-						["Replenish Mana"] = 10,
-						["Conjure Food"] = 1,
-						["Blink"] = 25,
-						["Frost Nova"] = 18,
-						["Conjure Water"] = 1,
+						["Blizzard"] = 25,
+						["Mage Armor"] = 1,
+						["Fire Blast"] = 2,
+						["Replenish Mana"] = 1,
+						["Blink"] = 14,
 						["Counterspell"] = 1,
-						["Evocation"] = 7,
-						["Restore Mana"] = 8,
-						["Conjure Mana Jade"] = 1,
+						["Frost Nova"] = 7,
+						["Evocation"] = 1,
+						["Restore Mana"] = 1,
+						["First Aid"] = 1,
 					},
-					["nome"] = "Augustin",
-					["tipo"] = 4,
 					["last_event"] = 0,
-					["buff_uptime_targets"] = {
-					},
-					["pets"] = {
-					},
-					["serial"] = "Player-4465-01D5BF39",
 					["debuff_uptime_targets"] = {
 					},
+					["tipo"] = 4,
+					["pets"] = {
+					},
+					["buff_uptime_targets"] = {
+					},
+					["serial"] = "Player-4465-01D5BF39",
+					["nome"] = "Augustin",
 				}, -- [1]
 				{
+					["fight_component"] = true,
 					["monster"] = true,
 					["nome"] = "Sandfury Shadowcaster",
 					["flag_original"] = 2632,
+					["spell_cast"] = {
+						["Demon Skin"] = 5,
+						["Shadow Bolt"] = 12,
+					},
 					["pets"] = {
 					},
-					["fight_component"] = true,
-					["tipo"] = 4,
 					["last_event"] = 0,
-					["spell_cast"] = {
-						["Shadow Word: Pain"] = 2,
-						["Shadow Bolt"] = 40,
-						["Demon Skin"] = 15,
-					},
-					["serial"] = "Creature-0-4468-209-7958-5648-000385CD80",
 					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4445-209-18501-5648-00020747B7",
+					["tipo"] = 4,
 				}, -- [2]
 				{
 					["flag_original"] = 2632,
+					["fight_component"] = true,
+					["nome"] = "Sandfury Witch Doctor",
+					["monster"] = true,
 					["pets"] = {
 					},
-					["monster"] = true,
-					["nome"] = "Sandfury Witch Doctor",
 					["spell_cast"] = {
-						["Healing Ward"] = 68,
-						["Lava Spout Totem"] = 63,
-						["Flash Heal"] = 1,
+						["Lava Spout Totem"] = 23,
+						["Healing Ward"] = 25,
 					},
-					["fight_component"] = true,
 					["classe"] = "UNKNOW",
-					["tipo"] = 4,
 					["last_event"] = 0,
-					["serial"] = "Creature-0-4468-209-7958-5650-000185CD81",
-					["boss_fight_component"] = true,
+					["serial"] = "Creature-0-4445-209-18501-5650-00038747B8",
+					["tipo"] = 4,
 				}, -- [3]
 				{
 					["fight_component"] = true,
-					["spell_cast"] = {
-						["Shoot"] = 14,
-					},
-					["monster"] = true,
 					["boss_fight_component"] = true,
-					["pets"] = {
-					},
-					["nome"] = "Sandfury Shadowhunter",
-					["classe"] = "UNKNOW",
 					["last_event"] = 0,
-					["tipo"] = 4,
-					["serial"] = "Creature-0-4468-209-7958-7246-000185CD83",
-					["flag_original"] = 68168,
-				}, -- [4]
-				{
-					["fight_component"] = true,
-					["monster"] = true,
-					["nome"] = "Zul'Farrak Zombie",
+					["nome"] = "Sandfury Blood Drinker",
+					["spell_cast"] = {
+						["Blood Leech"] = 14,
+					},
 					["flag_original"] = 2632,
 					["pets"] = {
 					},
-					["spell_cast"] = {
-						["Announce Zul'Farrak Zombie"] = 6,
-					},
-					["last_event"] = 0,
-					["classe"] = "UNKNOW",
 					["tipo"] = 4,
-					["serial"] = "Creature-0-4468-209-7958-7286-000005CF0C",
-					["boss_fight_component"] = true,
-				}, -- [5]
+					["classe"] = "UNKNOW",
+					["serial"] = "Creature-0-4445-209-18501-5649-00078747B7",
+					["monster"] = true,
+				}, -- [4]
 				{
 					["monster"] = true,
+					["last_event"] = 0,
+					["nome"] = "Sandfury Shadowhunter",
+					["pets"] = {
+					},
+					["classe"] = "UNKNOW",
+					["flag_original"] = 68168,
 					["tipo"] = 4,
-					["nome"] = "Witch Doctor Zum'rah",
+					["fight_component"] = true,
+					["serial"] = "Creature-0-4445-209-18501-7246-00008747BA",
+					["spell_cast"] = {
+						["Shoot"] = 1,
+					},
+				}, -- [5]
+				{
+					["flag_original"] = 2632,
+					["boss_fight_component"] = true,
 					["pets"] = {
 					},
 					["spell_cast"] = {
-						["Ward of Zum'rah"] = 6,
+						["Shadow Bolt"] = 1,
+						["Ward of Zum'rah"] = 5,
 					},
-					["flag_original"] = 68168,
+					["monster"] = true,
 					["last_event"] = 0,
-					["boss_fight_component"] = true,
-					["serial"] = "Creature-0-4468-209-7958-7271-000005CD80",
+					["tipo"] = 4,
+					["nome"] = "Witch Doctor Zum'rah",
+					["serial"] = "Creature-0-4445-209-18501-7271-00000747B7",
 					["classe"] = "UNKNOW",
 				}, -- [6]
 				{
@@ -14685,193 +7179,40 @@ _detalhes_database = {
 					["classe"] = "UNKNOW",
 					["boss_debuff"] = true,
 					["monster"] = true,
-					["debuff_uptime"] = 12,
+					["debuff_uptime"] = 20,
 					["spellschool"] = 1,
 					["debuff_uptime_targets"] = {
 						["Augustin"] = {
-							["uptime"] = 12,
-							["appliedamt"] = 0,
+							["uptime"] = 20,
+							["refreshamt"] = 0,
 							["activedamt"] = 0,
 							["actived"] = false,
-							["refreshamt"] = 0,
+							["appliedamt"] = 0,
 						},
 					},
-					["nome"] = "Dazed",
 					["boss_fight_component"] = true,
+					["last_event"] = 0,
 					["tipo"] = 4,
 					["damage_twin"] = "Zul'Farrak Zombie",
+					["serial"] = "Creature-0-4445-209-18501-7286-0000874B96",
 					["damage_spellid"] = "Dazed",
-					["serial"] = "Creature-0-4468-209-7958-7286-000085CF3F",
-					["last_event"] = 0,
+					["nome"] = "Dazed",
 				}, -- [7]
 				{
-					["flag_original"] = 1047,
-					["debuff_uptime_spells"] = {
-						["_ActorTable"] = {
-							["Psychic Scream"] = {
-								["id"] = "Psychic Scream",
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-						},
-						["tipo"] = 9,
-					},
-					["buff_uptime"] = 0,
-					["classe"] = "PRIEST",
-					["buff_uptime_spells"] = {
-						["_ActorTable"] = {
-							["Power Word: Fortitude"] = {
-								["refreshamt"] = 0,
-								["appliedamt"] = 1,
-								["activedamt"] = 1,
-								["uptime"] = 0,
-								["id"] = "Power Word: Fortitude",
-								["actived_at"] = 1602605334,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							["Divine Spirit"] = {
-								["refreshamt"] = 0,
-								["appliedamt"] = 1,
-								["activedamt"] = 1,
-								["uptime"] = 0,
-								["id"] = "Divine Spirit",
-								["actived_at"] = 1602605334,
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-							["Shadow Protection"] = {
-								["counter"] = 0,
-								["appliedamt"] = 1,
-								["activedamt"] = 1,
-								["actived_at"] = 1602612635,
-								["id"] = "Shadow Protection",
-								["uptime"] = 0,
-								["targets"] = {
-								},
-								["refreshamt"] = 0,
-							},
-							["Honorless Target"] = {
-								["id"] = "Honorless Target",
-								["targets"] = {
-								},
-								["counter"] = 0,
-							},
-						},
-						["tipo"] = 9,
-					},
-					["debuff_uptime"] = 0,
-					["buff_uptime_targets"] = {
-					},
-					["spec"] = 257,
-					["grupo"] = true,
-					["spell_cast"] = {
-						["Renew"] = 0,
-						["Psychic Scream"] = 0,
-					},
-					["debuff_uptime_targets"] = {
-					},
+					["monster"] = true,
 					["last_event"] = 0,
-					["nome"] = "Konac",
+					["nome"] = "Zul'Farrak Zombie",
 					["pets"] = {
 					},
-					["serial"] = "Player-4465-00C4D96C",
+					["classe"] = "UNKNOW",
+					["flag_original"] = 2632,
 					["tipo"] = 4,
+					["boss_fight_component"] = true,
+					["serial"] = "Creature-0-4445-209-18501-7286-0000074C9F",
+					["spell_cast"] = {
+						["Announce Zul'Farrak Zombie"] = 2,
+					},
 				}, -- [8]
-				{
-					["monster"] = true,
-					["nome"] = "Sandfury Blood Drinker",
-					["flag_original"] = 2632,
-					["pets"] = {
-					},
-					["fight_component"] = true,
-					["tipo"] = 4,
-					["last_event"] = 0,
-					["spell_cast"] = {
-						["Blood Leech"] = 33,
-					},
-					["serial"] = "Creature-0-4468-209-8211-5649-000005D0F1",
-					["classe"] = "UNKNOW",
-				}, -- [9]
-				{
-					["flag_original"] = 2632,
-					["debuff_uptime_spells"] = {
-						["_ActorTable"] = {
-						},
-						["tipo"] = 9,
-					},
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
-					["boss_debuff"] = true,
-					["monster"] = true,
-					["debuff_uptime"] = 0,
-					["spellschool"] = 8,
-					["debuff_uptime_targets"] = {
-						["Augustin"] = {
-							["uptime"] = 0,
-							["appliedamt"] = 0,
-							["activedamt"] = 1,
-							["actived"] = false,
-							["refreshamt"] = 0,
-						},
-					},
-					["nome"] = "Fevered Plague",
-					["boss_fight_component"] = true,
-					["tipo"] = 4,
-					["damage_twin"] = "Theka the Martyr",
-					["damage_spellid"] = "Fevered Plague",
-					["serial"] = "Creature-0-4468-209-8211-7272-000005D0F1",
-					["last_event"] = 0,
-				}, -- [10]
-				{
-					["monster"] = true,
-					["tipo"] = 4,
-					["nome"] = "Zul'Farrak Dead Hero",
-					["pets"] = {
-					},
-					["spell_cast"] = {
-						["Announce Zul'Farrak Zombie"] = 1,
-					},
-					["flag_original"] = 2632,
-					["last_event"] = 0,
-					["boss_fight_component"] = true,
-					["serial"] = "Creature-0-4469-209-5977-7276-000005EAA0",
-					["classe"] = "UNKNOW",
-				}, -- [11]
-				{
-					["monster"] = true,
-					["last_event"] = 0,
-					["nome"] = "Sandfury Axe Thrower",
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
-					["flag_original"] = 2632,
-					["tipo"] = 4,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-4447-1-41-5646-00000223B5",
-					["spell_cast"] = {
-						["Throw"] = 0,
-					},
-				}, -- [12]
-				{
-					["monster"] = true,
-					["last_event"] = 0,
-					["nome"] = "Sandfury Firecaller",
-					["pets"] = {
-					},
-					["classe"] = "UNKNOW",
-					["flag_original"] = 2632,
-					["tipo"] = 4,
-					["fight_component"] = true,
-					["serial"] = "Creature-0-4447-1-41-5647-000004CA73",
-					["spell_cast"] = {
-						["Fireball"] = 0,
-					},
-				}, -- [13]
 			},
 		}, -- [4]
 		{
@@ -14881,36 +7222,36 @@ _detalhes_database = {
 		}, -- [5]
 		["raid_roster"] = {
 		},
-		["tempo_start"] = 1602604464,
+		["tempo_start"] = 1602701595,
 		["last_events_tables"] = {
 		},
 		["alternate_power"] = {
 		},
-		["spells_cast_timeline"] = {
+		["cleu_timeline"] = {
 		},
-		["combat_counter"] = 6488,
+		["combat_counter"] = 6577,
 		["totals"] = {
-			1485724.795928, -- [1]
-			21625.355287, -- [2]
+			245939.376858, -- [1]
+			10537.1116, -- [2]
 			{
 				0, -- [1]
-				[0] = 11813.01477,
+				[0] = 1274.002461,
 				["alternatepower"] = 0,
-				[3] = 0,
 				[6] = 0,
+				[3] = 0,
 			}, -- [3]
 			{
 				["buff_uptime"] = 0,
 				["ress"] = 0,
-				["cooldowns_defensive"] = 0,
-				["dispell"] = 0,
+				["dead"] = 0,
+				["cc_break"] = 0,
 				["interrupt"] = 0,
 				["debuff_uptime"] = 0,
-				["cc_break"] = 0,
-				["dead"] = 0,
+				["dispell"] = 0,
+				["cooldowns_defensive"] = 0,
 			}, -- [4]
-			["frags_total"] = 0,
 			["voidzone_damage"] = 0,
+			["frags_total"] = 0,
 		},
 		["player_last_events"] = {
 		},
@@ -14919,240 +7260,201 @@ _detalhes_database = {
 		},
 		["__call"] = {
 		},
-		["data_inicio"] = "17:54:24",
-		["end_time"] = 343327.055,
-		["cleu_events"] = {
-			["n"] = 1,
-		},
+		["data_inicio"] = "20:53:15",
+		["end_time"] = 428394.871,
 		["totals_grupo"] = {
-			1438822.238152, -- [1]
-			21625.185886, -- [2]
+			223110.093017, -- [1]
+			10537.104721, -- [2]
 			{
 				0, -- [1]
-				[0] = 11813.033921,
+				[0] = 1274.002461,
 				["alternatepower"] = 0,
-				[3] = 0,
 				[6] = 0,
+				[3] = 0,
 			}, -- [3]
 			{
 				["buff_uptime"] = 0,
 				["ress"] = 0,
-				["cooldowns_defensive"] = 0,
-				["dispell"] = 0,
+				["dead"] = 0,
+				["cc_break"] = 0,
 				["interrupt"] = 0,
 				["debuff_uptime"] = 0,
-				["cc_break"] = 0,
-				["dead"] = 0,
+				["dispell"] = 0,
+				["cooldowns_defensive"] = 0,
 			}, -- [4]
 		},
 		["overall_refreshed"] = true,
-		["frags"] = {
-		},
-		["hasSaved"] = true,
-		["segments_added"] = {
-			{
-				["elapsed"] = 61.6730000000098,
-				["type"] = 6,
-				["name"] = nil --[[ skipped inline function ]],
-				["clock"] = "21:58:05",
-			}, -- [1]
-			{
-				["elapsed"] = 31.2110000000103,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "21:57:06",
-			}, -- [2]
-			{
-				["elapsed"] = 45.3240000000224,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "21:55:20",
-			}, -- [3]
-			{
-				["elapsed"] = 308.001999999979,
-				["type"] = 6,
-				["clock"] = "20:37:39",
-			}, -- [4]
-			{
-				["elapsed"] = 22,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "20:35:44",
-			}, -- [5]
-			{
-				["elapsed"] = 18.9990000000107,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "20:35:07",
-			}, -- [6]
-			{
-				["elapsed"] = 62.005999999994,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "20:33:21",
-			}, -- [7]
-			{
-				["elapsed"] = 31.0079999999725,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "20:32:29",
-			}, -- [8]
-			{
-				["elapsed"] = 38,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "20:31:23",
-			}, -- [9]
-			{
-				["elapsed"] = 31.0029999999679,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "20:26:52",
-			}, -- [10]
-			{
-				["elapsed"] = 290.005000000005,
-				["type"] = 6,
-				["clock"] = "20:17:10",
-			}, -- [11]
-			{
-				["elapsed"] = 24.0089999999618,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "20:15:48",
-			}, -- [12]
-			{
-				["elapsed"] = 60.0079999999725,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "20:13:31",
-			}, -- [13]
-			{
-				["elapsed"] = 32.0169999999926,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "20:11:39",
-			}, -- [14]
-			{
-				["elapsed"] = 40.0030000000261,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "20:10:35",
-			}, -- [15]
-			{
-				["elapsed"] = 323.999000000011,
-				["type"] = 6,
-				["clock"] = "19:57:49",
-			}, -- [16]
-			{
-				["elapsed"] = 72.0069999999832,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "19:55:28",
-			}, -- [17]
-			{
-				["elapsed"] = 22.0179999999818,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "19:54:46",
-			}, -- [18]
-			{
-				["elapsed"] = 81.0180000000401,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "19:52:38",
-			}, -- [19]
-			{
-				["elapsed"] = 31.0020000000368,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "19:51:45",
-			}, -- [20]
-			{
-				["elapsed"] = 37.0030000000261,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "19:50:47",
-			}, -- [21]
-			{
-				["elapsed"] = 36.0049999999465,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "19:00:58",
-			}, -- [22]
-			{
-				["elapsed"] = 257.008000000031,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "18:51:51",
-			}, -- [23]
-			{
-				["elapsed"] = 26.0169999999926,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "18:49:58",
-			}, -- [24]
-			{
-				["elapsed"] = 47.0029999999679,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "18:47:02",
-			}, -- [25]
-			{
-				["elapsed"] = 78.0189999999711,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "18:45:00",
-			}, -- [26]
-			{
-				["elapsed"] = 37.0120000000461,
-				["type"] = 5,
-				["name"] = "Trash Cleanup",
-				["clock"] = "18:44:04",
-			}, -- [27]
-			{
-				["elapsed"] = 326.001999999979,
-				["type"] = 6,
-				["clock"] = "18:31:41",
-			}, -- [28]
-			{
-				["elapsed"] = 33.9990000000107,
-				["type"] = 6,
-				["clock"] = "18:29:40",
-			}, -- [29]
-			{
-				["elapsed"] = 46.0120000000461,
-				["type"] = 6,
-				["clock"] = "18:28:33",
-			}, -- [30]
-		},
-		["data_fim"] = "21:59:07",
-		["overall_enemy_name"] = "-- x -- x --",
-		["CombatSkillCache"] = {
-		},
 		["PhaseData"] = {
 			{
 				1, -- [1]
 				1, -- [2]
 			}, -- [1]
-			["damage_section"] = {
+			["damage"] = {
 			},
 			["heal_section"] = {
 			},
 			["heal"] = {
 			},
-			["damage"] = {
+			["damage_section"] = {
 			},
 		},
-		["start_time"] = 339748.491,
+		["segments_added"] = {
+			{
+				["elapsed"] = 47.0129999999772,
+				["type"] = 6,
+				["name"] = nil --[[ skipped inline function ]],
+				["clock"] = "21:36:07",
+			}, -- [1]
+			{
+				["elapsed"] = 22.0229999999865,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "21:34:30",
+			}, -- [2]
+			{
+				["elapsed"] = 45.0069999999832,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "21:31:44",
+			}, -- [3]
+			{
+				["elapsed"] = 32.0189999999711,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "21:30:25",
+			}, -- [4]
+			{
+				["elapsed"] = 40.0259999999544,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "21:29:21",
+			}, -- [5]
+			{
+				["elapsed"] = 42.0079999999725,
+				["type"] = 6,
+				["name"] = nil --[[ skipped inline function ]],
+				["clock"] = "21:24:19",
+			}, -- [6]
+			{
+				["elapsed"] = 16.0009999999893,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "21:23:38",
+			}, -- [7]
+			{
+				["elapsed"] = 27.0020000000368,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "21:22:43",
+			}, -- [8]
+			{
+				["elapsed"] = 24.0080000000307,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "21:21:16",
+			}, -- [9]
+			{
+				["elapsed"] = 74.0190000000293,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "21:19:13",
+			}, -- [10]
+			{
+				["elapsed"] = 20.0130000000354,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "21:18:21",
+			}, -- [11]
+			{
+				["elapsed"] = 51.0010000000475,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "21:17:29",
+			}, -- [12]
+			{
+				["elapsed"] = 34.005999999994,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "21:16:51",
+			}, -- [13]
+			{
+				["elapsed"] = 331.005000000005,
+				["type"] = 6,
+				["clock"] = "21:08:11",
+			}, -- [14]
+			{
+				["elapsed"] = 41.0070000000415,
+				["type"] = 6,
+				["clock"] = "21:07:13",
+			}, -- [15]
+			{
+				["elapsed"] = 56.0130000000354,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "21:05:40",
+			}, -- [16]
+			{
+				["elapsed"] = 40.00900000002,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "21:04:37",
+			}, -- [17]
+			{
+				["elapsed"] = 21.0119999999879,
+				["type"] = 6,
+				["clock"] = "21:02:45",
+			}, -- [18]
+			{
+				["elapsed"] = 57,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "21:01:26",
+			}, -- [19]
+			{
+				["elapsed"] = 34,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "20:59:22",
+			}, -- [20]
+			{
+				["elapsed"] = 43.0020000000368,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "20:58:27",
+			}, -- [21]
+			{
+				["elapsed"] = 50.0040000000154,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "20:54:09",
+			}, -- [22]
+			{
+				["elapsed"] = 36.015000000014,
+				["type"] = 5,
+				["name"] = "Trash Cleanup",
+				["clock"] = "20:53:15",
+			}, -- [23]
+		},
+		["hasSaved"] = true,
+		["spells_cast_timeline"] = {
+		},
+		["data_fim"] = "21:36:54",
+		["overall_enemy_name"] = "-- x -- x --",
+		["CombatSkillCache"] = {
+		},
+		["frags"] = {
+		},
+		["start_time"] = 427211.658,
 		["TimeData"] = {
 		},
-		["cleu_timeline"] = {
+		["cleu_events"] = {
+			["n"] = 1,
 		},
 	},
 	["on_death_menu"] = true,
 	["force_font_outline"] = "",
 	["character_data"] = {
-		["logons"] = 1758,
+		["logons"] = 1774,
 	},
 	["announce_cooldowns"] = {
 		["ignored_cooldowns"] = {

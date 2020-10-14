@@ -6,7 +6,7 @@ local tStart = time()
 local combatTimer = time()
 local timeticker = nil
 local pullkills, pullxp, totalxp = 0
-local xppadding = 20
+local xppadding = 30
 
 local defaults = {
 	show = false,
@@ -22,7 +22,7 @@ local defaults = {
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-kc = CreateFrame("Frame", "KillCountFrame", UIParent)
+local kc = CreateFrame("Frame", "KillCountFrame", UIParent)
 kc:SetWidth(100)
 kc:SetHeight(200)
 kc:SetPoint("TOPLEFT", UIParent, "TOPLEFT", 5, -350)
@@ -107,6 +107,48 @@ kclistpercentages.text:SetJustifyH("RIGHT")
 kclistpercentages.text:SetTextColor(1, 1, 1, 1)
 kclistpercentages:Hide()
 
+local pullxpframe = CreateFrame("Frame", "PullExperience", kc)
+pullxpframe:SetPoint("BOTTOMLEFT", kc, "BOTTOMLEFT", 10, 40)
+pullxpframe:SetFrameStrata("LOW")
+pullxpframe.text = pullxpframe:CreateFontString(nil, "ARTWORK")
+pullxpframe.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
+pullxpframe.text:SetPoint("BOTTOMLEFT", pullxpframe, "BOTTOMLEFT", 0, 0)
+pullxpframe.text:SetText("Pull experience:")
+pullxpframe:SetWidth(pullxpframe.text:GetStringWidth())
+pullxpframe:SetHeight(pullxpframe.text:GetStringHeight())
+
+local pullxpframevalue = CreateFrame("Frame", "PullExperienceValue", kc)
+pullxpframevalue:SetPoint("BOTTOMRIGHT", kc, "BOTTOMRIGHT", -10, 40)
+pullxpframevalue:SetFrameStrata("LOW")
+pullxpframevalue.text = pullxpframevalue:CreateFontString(nil, "ARTWORK")
+pullxpframevalue.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
+pullxpframevalue.text:SetPoint("BOTTOMRIGHT", pullxpframevalue, "BOTTOMRIGHT", 0, 0)
+pullxpframevalue.text:SetJustifyH("RIGHT")
+pullxpframevalue.text:SetText("0")
+pullxpframevalue:SetWidth(pullxpframe.text:GetStringWidth())
+pullxpframevalue:SetHeight(pullxpframe.text:GetStringHeight())
+
+local totalxpframe = CreateFrame("Frame", "TotalExperience", kc)
+totalxpframe:SetPoint("BOTTOMLEFT", kc, "BOTTOMLEFT", 10, 25)
+totalxpframe:SetFrameStrata("LOW")
+totalxpframe.text = totalxpframe:CreateFontString(nil, "ARTWORK")
+totalxpframe.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
+totalxpframe.text:SetPoint("BOTTOMLEFT", totalxpframe, "BOTTOMLEFT", 0, 0)
+totalxpframe.text:SetText("Total experience:")
+totalxpframe:SetWidth(pullxpframe.text:GetStringWidth())
+totalxpframe:SetHeight(pullxpframe.text:GetStringHeight())
+
+local totalxpframevalue = CreateFrame("Frame", "TotalExperienceValue", kc)
+totalxpframevalue:SetPoint("BOTTOMRIGHT", kc, "BOTTOMRIGHT", -10, 25)
+totalxpframevalue:SetFrameStrata("LOW")
+totalxpframevalue.text = totalxpframevalue:CreateFontString(nil, "ARTWORK")
+totalxpframevalue.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
+totalxpframevalue.text:SetPoint("BOTTOMRIGHT", totalxpframevalue, "BOTTOMRIGHT", 0, 0)
+totalxpframevalue.text:SetJustifyH("RIGHT")
+totalxpframevalue.text:SetText("0")
+totalxpframevalue:SetWidth(pullxpframe.text:GetStringWidth())
+totalxpframevalue:SetHeight(pullxpframe.text:GetStringHeight())
+
 local kctimerstartstop = CreateFrame("Frame", "KillCountTimerStartStop", kc)
 kctimerstartstop:SetPoint("BOTTOMRIGHT", kc, "BOTTOMRIGHT", -10, 10)
 kctimerstartstop:SetFrameStrata("LOW")
@@ -119,7 +161,7 @@ kctimerstartstop:SetWidth(kctimerstartstop.text:GetStringWidth())
 kctimerstartstop:SetHeight(kctimerstartstop.text:GetStringHeight())
 
 local kcreset = CreateFrame("Frame", "KillCountReset", kc)
-kcreset:SetPoint("BOTTOMLEFT", kc, "BOTTOMLEFT", 10, 30)
+kcreset:SetPoint("BOTTOMLEFT", kc, "BOTTOMLEFT", 10, 10)
 kcreset:SetFrameStrata("LOW")
 kcreset.text = kcreset:CreateFontString(nil, "ARTWORK")
 kcreset.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
@@ -128,40 +170,6 @@ kcreset.text:SetText("Reset")
 kcreset.text:SetTextColor(50 / 255, 200 / 255, 50 / 255, 1)
 kcreset:SetWidth(kcreset.text:GetStringWidth())
 kcreset:SetHeight(kcreset.text:GetStringHeight())
-
-local pullxp = CreateFrame("Frame", "PullExperience", kc)
-pullxp:SetPoint("BOTTOMLEFT", kc, "BOTTOMLEFT", 10, 20)
-pullxp:SetFrameStrata("LOW")
-pullxp.text = pullxp:CreateFontString(nil, "ARTWORK")
-pullxp.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
-pullxp.text:SetPoint("BOTTOMLEFT", pullxp, "BOTTOMLEFT", 0, 0)
-pullxp.text:SetText("Pull experience:")
-
-local pullxpvalue = CreateFrame("Frame", "PullExperienceValue", kc)
-pullxpvalue:SetPoint("BOTTOMRIGHT", kc, "BOTTOMRIGHT", -10, 20)
-pullxpvalue:SetFrameStrata("LOW")
-pullxpvalue.text = pullxpvalue:CreateFontString(nil, "ARTWORK")
-pullxpvalue.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
-pullxpvalue.text:SetPoint("BOTTOMRIGHT", pullxpvalue, "BOTTOMRIGHT", 0, 0)
-pullxpvalue.text:SetJustifyH("RIGHT")
-pullxpvalue.text:SetText("0")
-
-local totalxp = CreateFrame("Frame", "TotalExperience", kc)
-totalxp:SetPoint("BOTTOMLEFT", kc, "BOTTOMLEFT", 10, 10)
-totalxp:SetFrameStrata("LOW")
-totalxp.text = totalxp:CreateFontString(nil, "ARTWORK")
-totalxp.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
-totalxp.text:SetPoint("BOTTOMLEFT", totalxp, "BOTTOMLEFT", 0, 0)
-totalxp.text:SetText("Total experience:")
-
-local totalxpvalue = CreateFrame("Frame", "TotalExperienceValue", kc)
-totalxpvalue:SetPoint("BOTTOMRIGHT", kc, "BOTTOMRIGHT", -10, 10)
-totalxpvalue:SetFrameStrata("LOW")
-totalxpvalue.text = pullxpvalue:CreateFontString(nil, "ARTWORK")
-totalxpvalue.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
-totalxpvalue.text:SetPoint("BOTTOMRIGHT", totalxpvalue, "BOTTOMRIGHT", 0, 0)
-totalxpvalue.text:SetJustifyH("RIGHT")
-totalxpvalue.text:SetText("0")
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -178,6 +186,7 @@ local function StopTimer()
 end
 
 local function StartTimer()
+	tStart = time()
 	timeticker =
 		C_Timer.NewTicker(
 		1,
@@ -194,6 +203,13 @@ local function RestartTimer()
 	StopTimer()
 	tStart = time()
 	StartTimer()
+end
+
+local function ResetTimer()
+	kctimer.text:SetText("00:00")
+	kctimerstartstop.text:SetText("Stop")
+	StopTimer()
+	tStart = time()
 end
 
 local function SortData()
@@ -261,8 +277,8 @@ local function DisplayData()
 	kclistvalues.text:SetText(values)
 	kclistpercentages.text:SetText(percentages)
 
-	totalxpvalue.text:SetText("Total experience: " .. xKillCount.experience.totaltotal)
-	pullxpvalue.text:SetText("Pull experience: " .. xKillCount.experience.pulltotal)
+	pullxpframevalue.text:SetText(xKillCount.experience.pulltotal)
+	totalxpframevalue.text:SetText(xKillCount.experience.totaltotal)
 
 	local w = kclistnames.text:GetStringWidth() + kclistpercentages.text:GetStringWidth() + 40
 	local h = kctitle.text:GetStringHeight() + kctotal.text:GetStringHeight() + kclistnames.text:GetStringHeight() + 80 + xppadding
@@ -403,24 +419,24 @@ experience:SetScript(
 	function(self, event, isInitialLogin, isReloadingUi)
 		if UnitLevel("player") == MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] then
 			xppadding = 0
-			pullxp:Hide()
-			totalxp:Hide()
+			pullxpframe:Hide()
+			totalxpframe:Hide()
 		else
 			if event ~= "PLAYER_REGEN_ENABLED" then
-				pullxp:Show()
-				totalxp:Show()
 				CalculateTotalExperience(event, isInitialLogin, isReloadingUi)
 			end
 		end
 
 		if event == "PLAYER_REGEN_DISABLED" then
-			pullxp.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
-			totalxp.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
+			pullxpframe.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
+			totalxpframe.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 		end
 		if event == "PLAYER_REGEN_ENABLED" then
-			pullxp.text:SetTextColor(1, 1, 1, 1)
-			totalxp.text:SetTextColor(1, 1, 1, 1)
+			pullxpframe.text:SetTextColor(1, 1, 1, 1)
+			totalxpframe.text:SetTextColor(1, 1, 1, 1)
 		end
+
+		DisplayData()
 	end
 )
 
@@ -498,6 +514,7 @@ kcreset:SetScript(
 			xKillCount.experience.totaltotal = 0
 			xKillCount.experience.pulltotal = 0
 
+			ResetTimer()
 			DisplayData()
 		end
 	end

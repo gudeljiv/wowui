@@ -103,7 +103,7 @@ KILLTRACK_CHAR = {
 		},
 		[5425] = {
 			["Name"] = "Starving Blisterpaw",
-			["Kills"] = 0,
+			["Kills"] = 1,
 		},
 		[5426] = {
 			["Name"] = "Blisterpaw Hyena",
@@ -195,7 +195,7 @@ KILLTRACK_CHAR = {
 		},
 		[5649] = {
 			["Name"] = "Sandfury Blood Drinker",
-			["Kills"] = 0,
+			["Kills"] = 1,
 		},
 		[7246] = {
 			["Name"] = "Sandfury Shadowhunter",
@@ -329,17 +329,17 @@ KILLTRACK_CHAR = {
 			["Name"] = "Plains Creeper",
 			["Kills"] = 3,
 		},
-		[7786] = {
-			["Name"] = "Skeleton of Zum'rah",
-			["Kills"] = 4,
+		[2371] = {
+			["Name"] = "Daggerspine Siren",
+			["Kills"] = 1,
 		},
 		[7785] = {
 			["Name"] = "Ward of Zum'rah",
 			["Kills"] = 0,
 		},
-		[7276] = {
-			["Name"] = "Zul'Farrak Dead Hero",
-			["Kills"] = 19,
+		[7786] = {
+			["Name"] = "Skeleton of Zum'rah",
+			["Kills"] = 4,
 		},
 		[2244] = {
 			["Name"] = "Syndicate Shadow Mage",
@@ -367,7 +367,7 @@ KILLTRACK_CHAR = {
 		},
 		[7286] = {
 			["Name"] = "Zul'Farrak Zombie",
-			["Kills"] = 353,
+			["Kills"] = 392,
 		},
 		[4479] = {
 			["Name"] = "Fardel Dabyrie",
@@ -493,9 +493,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Savannah Patriarch",
 			["Kills"] = 0,
 		},
-		[8996] = {
-			["Name"] = "Voidwalker Minion",
-			["Kills"] = 1,
+		[4514] = {
+			["Name"] = "ArmordEmxara",
+			["Kills"] = 0,
 		},
 		[4511] = {
 			["Name"] = "Jabalí",
@@ -509,9 +509,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Savannah Huntress",
 			["Kills"] = 0,
 		},
-		[2265] = {
-			["Name"] = "Hillsbrad Apprentice Blacksmith",
-			["Kills"] = 4,
+		[8996] = {
+			["Name"] = "Voidwalker Minion",
+			["Kills"] = 1,
 		},
 		[3673] = {
 			["Name"] = "Lord Serpentis",
@@ -537,9 +537,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Hillsbrad Footman",
 			["Kills"] = 44,
 		},
-		[5286] = {
-			["Name"] = "Longtooth Runner",
-			["Kills"] = 0,
+		[3671] = {
+			["Name"] = "Lady Anacondra",
+			["Kills"] = 1,
 		},
 		[2269] = {
 			["Name"] = "Hillsbrad Miner",
@@ -797,16 +797,16 @@ KILLTRACK_CHAR = {
 			["Name"] = "Jailor Marlgen",
 			["Kills"] = 2,
 		},
-		[3671] = {
-			["Name"] = "Lady Anacondra",
-			["Kills"] = 1,
-		},
-		[4514] = {
-			["Name"] = "ArmordEmxara",
-			["Kills"] = 0,
-		},
 		[858] = {
 			["Name"] = "Sorrow Spinner",
+			["Kills"] = 0,
+		},
+		[2265] = {
+			["Name"] = "Hillsbrad Apprentice Blacksmith",
+			["Kills"] = 4,
+		},
+		[5286] = {
+			["Name"] = "Longtooth Runner",
 			["Kills"] = 0,
 		},
 		[2449] = {
@@ -857,9 +857,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Haggard Refugee",
 			["Kills"] = 20,
 		},
-		[2371] = {
-			["Name"] = "Daggerspine Siren",
-			["Kills"] = 1,
+		[7276] = {
+			["Name"] = "Zul'Farrak Dead Hero",
+			["Kills"] = 20,
 		},
 		[2054] = {
 			["Name"] = "Sickly Refugee",
