@@ -68,7 +68,6 @@ local function CalculateTotal(event, isInitialLogin, isReloadingUi)
 		if time() - combatTimer > 3 then
 			pulltotal = 0
 			combatTimer = time()
-		-- ChatFrame6:AddMessage("TX: " .. event .. ", RESET: " .. time() - combatTimer .. "s")
 		end
 	end
 	if event == "PLAYER_ENTERING_WORLD" and (isInitialLogin or isReloadingUi) then
