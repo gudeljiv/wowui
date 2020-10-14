@@ -11,7 +11,8 @@ local xppadding = 20
 local defaults = {
 	show = false,
 	position = {from = "TOPLEFT", anchor = "UIParent", to = "TOPLEFT", x = 5, y = -350},
-	killLog = {}
+	killLog = {},
+	experience = {totaltotal = 0, pulltotal = 0}
 }
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -260,6 +261,9 @@ local function DisplayData()
 	kclistvalues.text:SetText(values)
 	kclistpercentages.text:SetText(percentages)
 
+	totalxpvalue.text:SetText("Total experience: " .. xKillCount.experience.totaltotal)
+	pullxpvalue.text:SetText("Pull experience: " .. xKillCount.experience.pulltotal)
+
 	local w = kclistnames.text:GetStringWidth() + kclistpercentages.text:GetStringWidth() + 40
 	local h = kctitle.text:GetStringHeight() + kctotal.text:GetStringHeight() + kclistnames.text:GetStringHeight() + 80 + xppadding
 	kc:SetSize(math.max(w, 250), math.max(h, 125))
@@ -357,18 +361,18 @@ kc:SetScript(
 ------------------------------
 -- Calculate XP
 ------------------------------
-local totaltotal, pulltotal, gained = 0
-local maxxp, currentxp, tolevel
+local gained = 0
+local maxxp, currentxp
 
 local function CalculateTotalExperience(event, isInitialLogin, isReloadingUi)
 	if event == "PLAYER_REGEN_DISABLED" then
 		if time() - combatTimer > 3 then
-			pulltotal = 0
+			xKillCount.experience.pulltotal = 0
 			combatTimer = time()
 		end
 	end
 	if event == "PLAYER_ENTERING_WORLD" and (isInitialLogin or isReloadingUi) then
-		pulltotal = 0
+		xKillCount.experience.pulltotal = 0
 		maxxp = UnitXPMax("player")
 		currentxp = UnitXP("player")
 	else
@@ -379,12 +383,12 @@ local function CalculateTotalExperience(event, isInitialLogin, isReloadingUi)
 		else
 			gained = newxp - currentxp
 		end
-		totaltotal = totaltotal + gained
-		pulltotal = pulltotal + gained
-		totalxpvalue.text:SetText("Total experience: " .. totaltotal)
-		pullxpvalue.text:SetText("Pull experience: " .. pulltotal)
+		xKillCount.experience.totaltotal = xKillCount.experience.totaltotal + gained
+		xKillCount.experience.pulltotal = xKillCount.experience.pulltotal + gained
 
 		currentxp = newxp
+
+		DisplayData()
 	end
 end
 
@@ -491,10 +495,8 @@ kcreset:SetScript(
 			sortedKillLog = {}
 			pullkills = 0
 
-			totalxp = 0
-			pulltotal = 0
-			totalxpvalue.text:SetText(totaltotal)
-			pullxpvalue.text:SetText(pulltotal)
+			xKillCount.experience.totaltotal = 0
+			xKillCount.experience.pulltotal = 0
 
 			DisplayData()
 		end
