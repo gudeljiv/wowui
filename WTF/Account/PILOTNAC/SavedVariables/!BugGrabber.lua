@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 2074,
 	["lastSanitation"] = 3,
-	["session"] = 2067,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -173,8 +173,8 @@ BugGrabberDB = {
 		}, -- [21]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["session"] = 1336,
 			["time"] = "2020/07/26 13:26:58",
+			["session"] = 1336,
 			["counter"] = 2,
 		}, -- [22]
 		{
@@ -554,8 +554,8 @@ BugGrabberDB = {
 		}, -- [69]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["time"] = "2020/07/27 20:37:46",
 			["session"] = 1423,
+			["time"] = "2020/07/27 20:37:46",
 			["counter"] = 4,
 		}, -- [70]
 		{
@@ -820,8 +820,8 @@ BugGrabberDB = {
 		}, -- [103]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["time"] = "2020/08/02 10:06:15",
 			["session"] = 1605,
+			["time"] = "2020/08/02 10:06:15",
 			["counter"] = 3,
 		}, -- [104]
 		{
@@ -961,8 +961,8 @@ BugGrabberDB = {
 		}, -- [121]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
-			["session"] = 1654,
 			["time"] = "2020/08/02 20:13:03",
+			["session"] = 1654,
 			["counter"] = 3,
 		}, -- [122]
 		{
@@ -1327,8 +1327,8 @@ BugGrabberDB = {
 		}, -- [167]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["session"] = 1843,
 			["time"] = "2020/08/13 21:31:07",
+			["session"] = 1843,
 			["counter"] = 6,
 		}, -- [168]
 		{
@@ -1405,8 +1405,8 @@ BugGrabberDB = {
 		}, -- [177]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\FarmLog\\FarmLog.toc",
-			["session"] = 1916,
 			["time"] = "2020/09/23 22:14:04",
+			["session"] = 1916,
 			["counter"] = 2,
 		}, -- [178]
 		{
@@ -1499,50 +1499,50 @@ BugGrabberDB = {
 		}, -- [189]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\events\\event-manager.lua",
-			["session"] = 2022,
 			["time"] = "2020/10/07 16:37:53",
+			["session"] = 2022,
 			["counter"] = 1,
 		}, -- [190]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\lists\\lists.lua",
-			["session"] = 2022,
 			["time"] = "2020/10/07 16:37:53",
+			["session"] = 2022,
 			["counter"] = 1,
 		}, -- [191]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\lists\\list-helper.lua",
-			["session"] = 2022,
 			["time"] = "2020/10/07 16:37:53",
+			["session"] = 2022,
 			["counter"] = 1,
 		}, -- [192]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\bags.lua",
-			["session"] = 2022,
 			["time"] = "2020/10/07 16:37:53",
+			["session"] = 2022,
 			["counter"] = 1,
 		}, -- [193]
 		{
 			["message"] = "(null)",
-			["time"] = "2020/07/24 16:00:06",
 			["session"] = 2022,
+			["time"] = "2020/07/24 16:00:06",
 			["counter"] = 65,
 		}, -- [194]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\utils.lua",
-			["session"] = 2022,
 			["time"] = "2020/10/07 16:37:53",
+			["session"] = 2022,
 			["counter"] = 1,
 		}, -- [195]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\services\\confirmer.lua",
-			["session"] = 2022,
 			["time"] = "2020/10/07 16:37:53",
+			["session"] = 2022,
 			["counter"] = 1,
 		}, -- [196]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\services\\dejunker.lua",
-			["session"] = 2022,
 			["time"] = "2020/10/07 16:37:53",
+			["session"] = 2022,
 			["counter"] = 1,
 		}, -- [197]
 		{
@@ -1619,8 +1619,8 @@ BugGrabberDB = {
 		}, -- [206]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\events\\events.lua",
-			["time"] = "2020/10/07 16:36:53",
 			["session"] = 2023,
+			["time"] = "2020/10/07 16:36:53",
 			["counter"] = 3,
 		}, -- [207]
 		{
@@ -1648,19 +1648,43 @@ BugGrabberDB = {
 			["counter"] = 14,
 		}, -- [210]
 		{
-			["message"] = "Interface\\AddOns\\xVermin\\SortBags.lua:455: attempt to perform arithmetic on field '?' (a nil value)",
-			["time"] = "2020/10/02 18:54:46",
-			["stack"] = "Interface\\AddOns\\xVermin\\SortBags.lua:455: in function `Initialize'\nInterface\\AddOns\\xVermin\\SortBags.lua:233: in function `Start'\nInterface\\AddOns\\xVermin\\SortBags.lua:17: in function `SortBags'\nInterface\\AddOns\\AdiBags\\core\\Layout.lua:108: in function `?'\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:117: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:117>\n[C]: ?\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:29: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:64: in function `SendMessage'\nInterface\\AddOns\\AdiBags\\core\\Bags.lua:105: in function `Close'\nInterface\\AddOns\\AdiBags\\core\\Bags.lua:224: in function `?'\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:119: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:119>\n[C]: ?\n...\n[C]: in function `CloseAuctionHouse'\n...e\\AddOns\\TradeSkillMaster\\Core\\UI\\AuctionUI\\Core.lua:214: in function `?'\n...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:86: in function `ScriptHandlerCommon'\n...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:37: in function <...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:36>\n[C]: in function `Hide'\n...AddOns\\TradeSkillMaster\\Core\\UI\\Elements\\Element.lua:128: in function <...AddOns\\TradeSkillMaster\\Core\\UI\\Elements\\Element.lua:127>\n...radeSkillMaster\\External\\LibTSMClass\\LibTSMClass-1.lua:208: in function `Hide'\n...adeSkillMaster\\Core\\UI\\Elements\\ApplicationFrame.lua:482: in function `?'\n...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:86: in function `ScriptHandlerCommon'\n...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:37: in function <...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:36>",
-			["session"] = 2055,
-			["counter"] = 5,
-		}, -- [211]
-		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'PetFrame:Hide()'.",
 			["time"] = "2020/10/11 16:59:24",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Hide'\nInterface\\FrameXML\\PetFrame.lua:62: in function <Interface\\FrameXML\\PetFrame.lua:41>\n[C]: in function `PetFrame_Update'\nInterface\\FrameXML\\PetFrame.lua:89: in function <Interface\\FrameXML\\PetFrame.lua:67>",
 			["session"] = 2067,
 			["counter"] = 6,
+		}, -- [211]
+		{
+			["message"] = "Interface\\AddOns\\nMinimap\\tab.lua:258: attempt to concatenate global 'server' (a nil value)",
+			["time"] = "2020/10/15 18:54:47",
+			["locals"] = "entry = GuildScrollFrameEntry1 {\n RightText = GuildScrollFrameEntry1RightText {\n }\n LeftText = GuildScrollFrameEntry1LeftText {\n }\n index = 1\n id = 3\n 0 = <userdata>\n}\nscrollFrame = GuildScrollFrame {\n offset = 0\n scrollChild = GuildScrollChild {\n }\n entries = <table> {\n }\n entryHeight = 17\n numEntries = 3\n scrollBar = GuildScrollFrameScrollBar {\n }\n 0 = <userdata>\n totalEntriesHeight = 51\n ScrollBar = GuildScrollFrameScrollBar {\n }\n}\nindex = 1\nheight = 17\nminWidth = 300\nzonec = nil\nclassc = <table> {\n colorStr = \"fffff468\"\n GetRGB = <function> defined @Interface\\SharedXML\\Util.lua:633\n OnLoad = <function> defined @Interface\\SharedXML\\Util.lua:622\n b = 0.410000\n GenerateHexColorMarkup = <function> defined @Interface\\SharedXML\\Util.lua:664\n WrapTextInColorCode = <function> defined @Interface\\SharedXML\\Util.lua:668\n GenerateHexColor = <function> defined @Interface\\SharedXML\\Util.lua:660\n GetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:641\n IsEqualTo = <function> defined @Interface\\SharedXML\\Util.lua:626\n g = 0.960000\n r = 1\n SetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:649\n GetRGBAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:637\n SetRGB = <function> defined @Interface\\SharedXML\\Util.lua:656\n GetRGBAAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:645\n}\nlevelc = <table> {\n b = 0\n font = \"QuestDifficulty_Difficult\"\n g = 1\n r = 1\n}\nnameserver = \"Crimineel-Golemagg\"\nrank = \"Raider\"\n_ = 3\nlevel = \"|cffffff0060|r\"\n_ = \"Rogue\"\nzone = \"Badlands\"\nnote = \"pronounced \"kri-mi-nel\"\"\nofficernote = \"\"\nconnected = true\nstatus = 0\nclass = \"ROGUE\"\n_ = -1\n(*temporary) = <function> defined @Interface\\SharedXML\\Util.lua:603\n(*temporary) = nil\n(*temporary) = \"(\"\n(*temporary) = nil\n(*temporary) = \")\"\n(*temporary) = \"ffffff00\"\n(*temporary) = \"60\"\n(*temporary) = \"attempt to concatenate global 'server' (a nil value)\"\nGuildListEntries = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n}\nstatusText = <table> {\n 0 = \"\"\n 2 = \"Do not Disturb\"\n 1 = \"AFK\"\n}\n",
+			["stack"] = "Interface\\AddOns\\nMinimap\\tab.lua:258: in function `nMinimap_UpdateGuildButton'\nInterface\\AddOns\\nMinimap\\tab.lua:298: in function `nMinimap_UpdateGuildMembers'\nInterface\\AddOns\\nMinimap\\tab.lua:344: in function `nMinimapTab_Guild_UpdateScrollFrame'\nInterface\\AddOns\\nMinimap\\tab.lua:352: in function <Interface\\AddOns\\nMinimap\\tab.lua:347>",
+			["session"] = 2068,
+			["counter"] = 19,
 		}, -- [212]
+		{
+			["message"] = "Interface\\AddOns\\nMinimap\\tab.lua:260: attempt to concatenate global 'server' (a nil value)",
+			["time"] = "2020/10/15 18:59:16",
+			["locals"] = "entry = GuildScrollFrameEntry1 {\n RightText = GuildScrollFrameEntry1RightText {\n }\n LeftText = GuildScrollFrameEntry1LeftText {\n }\n index = 1\n id = 5\n 0 = <userdata>\n}\nscrollFrame = GuildScrollFrame {\n offset = 0\n scrollChild = GuildScrollChild {\n }\n entries = <table> {\n }\n entryHeight = 17\n numEntries = 5\n scrollBar = GuildScrollFrameScrollBar {\n }\n 0 = <userdata>\n totalEntriesHeight = 85\n ScrollBar = GuildScrollFrameScrollBar {\n }\n}\nindex = 1\nheight = 17\nminWidth = 299.999969\nzonec = nil\nclassc = <table> {\n colorStr = \"fffff468\"\n GetRGB = <function> defined @Interface\\SharedXML\\Util.lua:633\n OnLoad = <function> defined @Interface\\SharedXML\\Util.lua:622\n b = 0.410000\n GenerateHexColorMarkup = <function> defined @Interface\\SharedXML\\Util.lua:664\n WrapTextInColorCode = <function> defined @Interface\\SharedXML\\Util.lua:668\n GenerateHexColor = <function> defined @Interface\\SharedXML\\Util.lua:660\n GetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:641\n IsEqualTo = <function> defined @Interface\\SharedXML\\Util.lua:626\n g = 0.960000\n r = 1\n SetRGBA = <function> defined @Interface\\SharedXML\\Util.lua:649\n GetRGBAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:637\n SetRGB = <function> defined @Interface\\SharedXML\\Util.lua:656\n GetRGBAAsBytes = <function> defined @Interface\\SharedXML\\Util.lua:645\n}\nlevelc = <table> {\n b = 0\n font = \"QuestDifficulty_Difficult\"\n g = 1\n r = 1\n}\nnameserver = \"Crimineel-Golemagg\"\nrank = \"Raider\"\n_ = 3\nlevel = \"|cffffff0060|r\"\n_ = \"Rogue\"\nzone = \"Badlands\"\nnote = \"pronounced \"kri-mi-nel\"\"\nofficernote = \"\"\nconnected = true\nstatus = 0\nclass = \"ROGUE\"\n_ = -1\n(*temporary) = <function> defined @Interface\\SharedXML\\Util.lua:603\n(*temporary) = nil\n(*temporary) = \"(\"\n(*temporary) = nil\n(*temporary) = \")\"\n(*temporary) = \"ffffff00\"\n(*temporary) = \"60\"\n(*temporary) = \"attempt to concatenate global 'server' (a nil value)\"\nGuildListEntries = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n}\nstatusText = <table> {\n 0 = \"\"\n 2 = \"Do not Disturb\"\n 1 = \"AFK\"\n}\n",
+			["stack"] = "Interface\\AddOns\\nMinimap\\tab.lua:260: in function `nMinimap_UpdateGuildButton'\nInterface\\AddOns\\nMinimap\\tab.lua:300: in function `nMinimap_UpdateGuildMembers'\nInterface\\AddOns\\nMinimap\\tab.lua:346: in function `nMinimapTab_Guild_UpdateScrollFrame'\nInterface\\AddOns\\nMinimap\\tab.lua:354: in function <Interface\\AddOns\\nMinimap\\tab.lua:349>",
+			["session"] = 2070,
+			["counter"] = 8,
+		}, -- [213]
+		{
+			["message"] = "[string \"print(GetGuildRosterInfo())\"]:1: Usage: GetGuildRosterInfo(index)",
+			["time"] = "2020/10/15 19:02:24",
+			["locals"] = "",
+			["stack"] = "[C]: in function `GetGuildRosterInfo'\n[string \"print(GetGuildRosterInfo())\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 2072,
+			["counter"] = 3,
+		}, -- [214]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\SortBags.lua:455: attempt to perform arithmetic on field '?' (a nil value)",
+			["time"] = "2020/10/02 18:54:46",
+			["stack"] = "Interface\\AddOns\\xVermin\\SortBags.lua:455: in function `Initialize'\nInterface\\AddOns\\xVermin\\SortBags.lua:233: in function `Start'\nInterface\\AddOns\\xVermin\\SortBags.lua:17: in function `SortBags'\nInterface\\AddOns\\AdiBags\\core\\Layout.lua:108: in function `?'\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:117: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:117>\n[C]: ?\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:29: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:64: in function `SendMessage'\nInterface\\AddOns\\AdiBags\\core\\Bags.lua:105: in function `Close'\nInterface\\AddOns\\AdiBags\\core\\Bags.lua:224: in function `?'\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:119: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:119>\n[C]: ?\n...\n[C]: in function `CloseAuctionHouse'\n...e\\AddOns\\TradeSkillMaster\\Core\\UI\\AuctionUI\\Core.lua:214: in function `?'\n...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:86: in function `ScriptHandlerCommon'\n...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:37: in function <...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:36>\n[C]: in function `Hide'\n...AddOns\\TradeSkillMaster\\Core\\UI\\Elements\\Element.lua:128: in function <...AddOns\\TradeSkillMaster\\Core\\UI\\Elements\\Element.lua:127>\n...radeSkillMaster\\External\\LibTSMClass\\LibTSMClass-1.lua:208: in function `Hide'\n...adeSkillMaster\\Core\\UI\\Elements\\ApplicationFrame.lua:482: in function `?'\n...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:86: in function `ScriptHandlerCommon'\n...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:37: in function <...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:36>",
+			["session"] = 2073,
+			["counter"] = 6,
+		}, -- [215]
 	},
 }

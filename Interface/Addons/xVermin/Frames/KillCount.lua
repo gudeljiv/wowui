@@ -91,8 +91,6 @@ kclistnames.text:SetPoint("TOPLEFT", kclistnames, "TOPLEFT", 0, 0)
 kclistnames.text:SetText("")
 kclistnames.text:SetJustifyH("LEFT")
 kclistnames.text:SetTextColor(1, 1, 1, 1)
-kclistnames:SetWidth(kclistnames.text:GetStringWidth())
-kclistnames:SetHeight(kclistnames.text:GetStringHeight())
 
 ----------------------------
 -- Kill list counts
@@ -105,8 +103,6 @@ kclistvalues.text:SetPoint("TOPRIGHT", kclistvalues, "TOPRIGHT", 0, 0)
 kclistvalues.text:SetText("")
 kclistvalues.text:SetJustifyH("RIGHT")
 kclistvalues.text:SetTextColor(1, 1, 1, 1)
-kclistvalues:SetWidth(kclistvalues.text:GetStringWidth())
-kclistvalues:SetHeight(kclistvalues.text:GetStringHeight())
 
 ----------------------------
 -- Kill list percentages
@@ -119,63 +115,34 @@ kclistpercentages.text:SetPoint("TOPRIGHT", kclistpercentages, "TOPRIGHT", 0, 0)
 kclistpercentages.text:SetText("")
 kclistpercentages.text:SetJustifyH("RIGHT")
 kclistpercentages.text:SetTextColor(1, 1, 1, 1)
-kclistpercentages:SetWidth(kclistpercentages.text:GetStringWidth())
-kclistpercentages:SetHeight(kclistpercentages.text:GetStringHeight())
 kclistpercentages:Hide()
 
 ----------------------------
--- Experience in one pull
+-- Wrapper frame for reset and timer buttons
 ----------------------------
-local pullxpframe = CreateFrame("Frame", "PullExperience", kc)
-pullxpframe:SetPoint("BOTTOMLEFT", kc, "BOTTOMLEFT", 10, 40)
-pullxpframe:SetFrameStrata("LOW")
-pullxpframe.text = pullxpframe:CreateFontString(nil, "ARTWORK")
-pullxpframe.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
-pullxpframe.text:SetPoint("BOTTOMLEFT", pullxpframe, "BOTTOMLEFT", 0, 0)
-pullxpframe.text:SetText("Pull experience:")
-pullxpframe:SetWidth(pullxpframe.text:GetStringWidth())
-pullxpframe:SetHeight(pullxpframe.text:GetStringHeight())
-
-local pullxpframevalue = CreateFrame("Frame", "PullExperienceValue", kc)
-pullxpframevalue:SetPoint("BOTTOMRIGHT", kc, "BOTTOMRIGHT", -10, 40)
-pullxpframevalue:SetFrameStrata("LOW")
-pullxpframevalue.text = pullxpframevalue:CreateFontString(nil, "ARTWORK")
-pullxpframevalue.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
-pullxpframevalue.text:SetPoint("BOTTOMRIGHT", pullxpframevalue, "BOTTOMRIGHT", 0, 0)
-pullxpframevalue.text:SetJustifyH("RIGHT")
-pullxpframevalue.text:SetText("0")
-pullxpframevalue:SetWidth(pullxpframe.text:GetStringWidth())
-pullxpframevalue:SetHeight(pullxpframe.text:GetStringHeight())
+local wrapper = CreateFrame("Frame", "WrapperResetTimer", kc)
+wrapper:SetPoint("BOTTOMLEFT", kc, "BOTTOMLEFT", 0, 10)
+wrapper:SetFrameStrata("LOW")
 
 ----------------------------
--- Total experience in session
+-- Reset data button
 ----------------------------
-local totalxpframe = CreateFrame("Frame", "TotalExperience", kc)
-totalxpframe:SetPoint("BOTTOMLEFT", kc, "BOTTOMLEFT", 10, 25)
-totalxpframe:SetFrameStrata("LOW")
-totalxpframe.text = totalxpframe:CreateFontString(nil, "ARTWORK")
-totalxpframe.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
-totalxpframe.text:SetPoint("BOTTOMLEFT", totalxpframe, "BOTTOMLEFT", 0, 0)
-totalxpframe.text:SetText("Total experience:")
-totalxpframe:SetWidth(pullxpframe.text:GetStringWidth())
-totalxpframe:SetHeight(pullxpframe.text:GetStringHeight())
-
-local totalxpframevalue = CreateFrame("Frame", "TotalExperienceValue", kc)
-totalxpframevalue:SetPoint("BOTTOMRIGHT", kc, "BOTTOMRIGHT", -10, 25)
-totalxpframevalue:SetFrameStrata("LOW")
-totalxpframevalue.text = totalxpframevalue:CreateFontString(nil, "ARTWORK")
-totalxpframevalue.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
-totalxpframevalue.text:SetPoint("BOTTOMRIGHT", totalxpframevalue, "BOTTOMRIGHT", 0, 0)
-totalxpframevalue.text:SetJustifyH("RIGHT")
-totalxpframevalue.text:SetText("0")
-totalxpframevalue:SetWidth(pullxpframe.text:GetStringWidth())
-totalxpframevalue:SetHeight(pullxpframe.text:GetStringHeight())
+local kcreset = CreateFrame("Frame", "KillCountReset", wrapper)
+kcreset:SetPoint("BOTTOMLEFT", wrapper, "BOTTOMLEFT", 10, 0)
+kcreset:SetFrameStrata("LOW")
+kcreset.text = kcreset:CreateFontString(nil, "ARTWORK")
+kcreset.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
+kcreset.text:SetPoint("BOTTOMLEFT", kcreset, "BOTTOMLEFT", 0, 0)
+kcreset.text:SetText("Reset")
+kcreset.text:SetTextColor(50 / 255, 200 / 255, 50 / 255, 1)
+kcreset:SetWidth(kcreset.text:GetStringWidth())
+kcreset:SetHeight(kcreset.text:GetStringHeight())
 
 ----------------------------
 -- Timer controls
 ----------------------------
-local kctimerstartstop = CreateFrame("Frame", "KillCountTimerStartStop", kc)
-kctimerstartstop:SetPoint("BOTTOMRIGHT", kc, "BOTTOMRIGHT", -10, 10)
+local kctimerstartstop = CreateFrame("Frame", "KillCountTimerStartStop", wrapper)
+kctimerstartstop:SetPoint("BOTTOMRIGHT", wrapper, "BOTTOMRIGHT", -10, 0)
 kctimerstartstop:SetFrameStrata("LOW")
 kctimerstartstop.text = kctimerstartstop:CreateFontString(nil, "ARTWORK")
 kctimerstartstop.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
@@ -186,18 +153,62 @@ kctimerstartstop:SetWidth(kctimerstartstop.text:GetStringWidth())
 kctimerstartstop:SetHeight(kctimerstartstop.text:GetStringHeight())
 
 ----------------------------
--- Reset data button
+-- Separation line
 ----------------------------
-local kcreset = CreateFrame("Frame", "KillCountReset", kc)
-kcreset:SetPoint("BOTTOMLEFT", kc, "BOTTOMLEFT", 10, 10)
-kcreset:SetFrameStrata("LOW")
-kcreset.text = kcreset:CreateFontString(nil, "ARTWORK")
-kcreset.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
-kcreset.text:SetPoint("BOTTOMLEFT", kcreset, "BOTTOMLEFT", 0, 0)
-kcreset.text:SetText("Reset")
-kcreset.text:SetTextColor(50 / 255, 200 / 255, 50 / 255, 1)
-kcreset:SetWidth(kcreset.text:GetStringWidth())
-kcreset:SetHeight(kcreset.text:GetStringHeight())
+
+local l = wrapper:CreateLine()
+l:SetColorTexture(1, 1, 1, 0.8)
+l:SetThickness(1)
+l:SetStartPoint("TOPLEFT", 10, 7)
+l:SetEndPoint("TOPRIGHT", -10, 7)
+
+----------------------------
+-- Total experience in session
+----------------------------
+local totalxpframe = CreateFrame("Frame", "TotalExperience", kc)
+totalxpframe:SetPoint("BOTTOMLEFT", l, "BOTTOMLEFT", 0, 7)
+totalxpframe:SetFrameStrata("LOW")
+totalxpframe.text = totalxpframe:CreateFontString(nil, "ARTWORK")
+totalxpframe.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
+totalxpframe.text:SetPoint("BOTTOMLEFT", totalxpframe, "BOTTOMLEFT", 0, 0)
+totalxpframe.text:SetText("Total experience:")
+totalxpframe:SetWidth(totalxpframe.text:GetStringWidth())
+totalxpframe:SetHeight(totalxpframe.text:GetStringHeight())
+
+local totalxpframevalue = CreateFrame("Frame", "TotalExperienceValue", kc)
+totalxpframevalue:SetPoint("BOTTOMRIGHT", l, "BOTTOMRIGHT", 0, 7)
+totalxpframevalue:SetFrameStrata("LOW")
+totalxpframevalue.text = totalxpframevalue:CreateFontString(nil, "ARTWORK")
+totalxpframevalue.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
+totalxpframevalue.text:SetPoint("BOTTOMRIGHT", totalxpframevalue, "BOTTOMRIGHT", 0, 0)
+totalxpframevalue.text:SetJustifyH("RIGHT")
+totalxpframevalue.text:SetText("0")
+totalxpframevalue:SetWidth(totalxpframevalue.text:GetStringWidth())
+totalxpframevalue:SetHeight(totalxpframevalue.text:GetStringHeight())
+
+----------------------------
+-- Experience in one pull
+----------------------------
+local pullxpframe = CreateFrame("Frame", "PullExperience", kc)
+pullxpframe:SetPoint("BOTTOMLEFT", totalxpframe, "BOTTOMLEFT", 0, 15)
+pullxpframe:SetFrameStrata("LOW")
+pullxpframe.text = pullxpframe:CreateFontString(nil, "ARTWORK")
+pullxpframe.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
+pullxpframe.text:SetPoint("BOTTOMLEFT", pullxpframe, "BOTTOMLEFT", 0, 0)
+pullxpframe.text:SetText("Pull experience:")
+pullxpframe:SetWidth(pullxpframe.text:GetStringWidth())
+pullxpframe:SetHeight(pullxpframe.text:GetStringHeight())
+
+local pullxpframevalue = CreateFrame("Frame", "PullExperienceValue", kc)
+pullxpframevalue:SetPoint("BOTTOMRIGHT", totalxpframevalue, "BOTTOMRIGHT", 0, 15)
+pullxpframevalue:SetFrameStrata("LOW")
+pullxpframevalue.text = pullxpframevalue:CreateFontString(nil, "ARTWORK")
+pullxpframevalue.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
+pullxpframevalue.text:SetPoint("BOTTOMRIGHT", pullxpframevalue, "BOTTOMRIGHT", 0, 0)
+pullxpframevalue.text:SetJustifyH("RIGHT")
+pullxpframevalue.text:SetText("0")
+pullxpframevalue:SetWidth(pullxpframevalue.text:GetStringWidth())
+pullxpframevalue:SetHeight(pullxpframevalue.text:GetStringHeight())
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -310,8 +321,16 @@ local function DisplayData()
 	totalxpframevalue.text:SetText(xKillCount.experience.totaltotal)
 
 	local w = kclistnames.text:GetStringWidth() + kclistpercentages.text:GetStringWidth() + 40
-	local h = kctitle.text:GetStringHeight() + kctotal.text:GetStringHeight() + kclistnames.text:GetStringHeight() + 80 + xppadding
+	local h = kctitle.text:GetStringHeight() + kctotal.text:GetStringHeight() + kclistnames.text:GetStringHeight() + 86 + xppadding
 	kc:SetSize(math.max(w, 250), math.max(h, 125))
+	wrapper:SetSize(math.max(w, 250), kcreset.text:GetStringHeight())
+
+	kclistnames:SetWidth(kclistnames.text:GetStringWidth())
+	kclistnames:SetHeight(kclistnames.text:GetStringHeight())
+	kclistvalues:SetWidth(kclistvalues.text:GetStringWidth())
+	kclistvalues:SetHeight(kclistvalues.text:GetStringHeight())
+	kclistpercentages:SetWidth(kclistpercentages.text:GetStringWidth())
+	kclistpercentages:SetHeight(kclistpercentages.text:GetStringHeight())
 end
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------

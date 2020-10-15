@@ -1,28 +1,28 @@
 
 xKillCount = {
 	["show"] = true,
+	["position"] = {
+		["y"] = -113.000053405762,
+		["x"] = 476.107757568359,
+		["to"] = "TOPLEFT",
+		["from"] = "TOPLEFT",
+	},
+	["experience"] = {
+		["pulltotal"] = 27832,
+		["totaltotal"] = 104230,
+	},
 	["killLog"] = {
 		["Zul'Farrak Dead Hero"] = {
 			["name"] = "Zul'Farrak Dead Hero",
-			["count"] = 1,
+			["count"] = 5,
 		},
 		["Zul'Farrak Zombie"] = {
 			["name"] = "Zul'Farrak Zombie",
-			["count"] = 39,
+			["count"] = 119,
 		},
 		["Sandfury Blood Drinker"] = {
 			["name"] = "Sandfury Blood Drinker",
 			["count"] = 1,
 		},
-	},
-	["experience"] = {
-		["totaltotal"] = 37511,
-		["pulltotal"] = 0,
-	},
-	["position"] = {
-		["y"] = -199.313018798828,
-		["x"] = 510.107543945313,
-		["to"] = "TOPLEFT",
-		["from"] = "TOPLEFT",
 	},
 }

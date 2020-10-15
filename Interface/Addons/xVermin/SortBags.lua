@@ -452,10 +452,12 @@ do
 
 		local free = {}
 		for item, count in pairs(counts) do
-			local stacks = ceil(count / itemStacks[item])
-			free[item] = stacks
-			if itemClasses[item] then
-				free[itemClasses[item]] = (free[itemClasses[item]] or 0) + stacks
+			if count and item then
+				local stacks = ceil(count / itemStacks[item])
+				free[item] = stacks
+				if itemClasses[item] then
+					free[itemClasses[item]] = (free[itemClasses[item]] or 0) + stacks
+				end
 			end
 		end
 		for _, slot in ipairs(model) do

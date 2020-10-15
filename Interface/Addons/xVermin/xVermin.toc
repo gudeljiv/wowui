@@ -42,6 +42,7 @@ AutoCarrot.lua
 AutoBuyAmmo.lua
 AutoDismount.lua
 AutoRepair.lua
+BetterLootMessage.lua
 BestFood.lua
 BuffSource.lua
 Bindings.lua

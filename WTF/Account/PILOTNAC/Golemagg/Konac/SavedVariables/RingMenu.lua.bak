@@ -7,16 +7,16 @@ RingMenu_ringConfig = {
 	{
 		["backdropColor"] = {
 			["a"] = 0.5,
-			["b"] = 0,
-			["g"] = 0,
 			["r"] = 0,
+			["g"] = 0,
+			["b"] = 0,
 		},
 		["radius"] = 100,
-		["numSlots"] = 12,
+		["keyBind"] = "CTRL-G",
 		["backdropScale"] = 1.5,
 		["closeOnClick"] = true,
-		["keyBind"] = "CTRL-G",
-		["firstSlot"] = 13,
 		["angle"] = 0,
+		["firstSlot"] = 13,
+		["numSlots"] = 12,
 	}, -- [1]
 }

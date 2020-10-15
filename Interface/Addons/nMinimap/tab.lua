@@ -251,11 +251,9 @@ function nMinimap_UpdateGuildButton(entry)
 			classc.b = 1
 		end
 
-		name = strsplit("-", nameserver)[0]
-		server = strsplit("-", nameserver)[1]
-
+		name, server = strsplit("-", nameserver)
 		level = WrapTextInColorCode(level, CreateColor(levelc.r, levelc.g, levelc.b, 1):GenerateHexColor())
-		name = WrapTextInColorCode(name .. "(" .. server .. ")", CreateColor(classc.r, classc.g, classc.b, 1):GenerateHexColor())
+		name = WrapTextInColorCode(name .. " (" .. server .. ")", CreateColor(classc.r, classc.g, classc.b, 1):GenerateHexColor())
 		zone = WrapTextInColorCode(zone, CreateColor(1, 1, 1, 1):GenerateHexColor())
 
 		entry.LeftText:SetFormattedText("%s %s %s", level, name, statusText[status])
