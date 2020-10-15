@@ -233,23 +233,30 @@ function nMinimap_UpdateGuildButton(entry)
 	local minWidth = scrollFrame:GetWidth()
 	local zonec, classc, levelc
 
-	local name, rank, _, level, _, zone, note, officernote, connected, status, class, _ = GetGuildRosterInfo(entry.id)
+	local nameserver, rank, _, level, _, zone, note, officernote, connected, status, class, _ = GetGuildRosterInfo(entry.id)
 
 	if connected then
 		zone = zone or UNKNOWN
 
-		if GetRealZoneText() == zone then
-			zonec = activezone
-		else
-			zonec = inactivezone
-		end
-
 		levelc = GetQuestDifficultyColor(level)
 		classc = RAID_CLASS_COLORS[class]
+		if (levelc and not levelc.r) then
+			levelc.r = 1
+			levelc.g = 1
+			levelc.b = 1
+		end
+		if (classc and not classc.r) then
+			classc.r = 1
+			classc.g = 1
+			classc.b = 1
+		end
+
+		name = strsplit("-", nameserver)[0]
+		server = strsplit("-", nameserver)[1]
 
 		level = WrapTextInColorCode(level, CreateColor(levelc.r, levelc.g, levelc.b, 1):GenerateHexColor())
-		name = WrapTextInColorCode(name, CreateColor(classc.r, classc.g, classc.b, 1):GenerateHexColor())
-		zone = WrapTextInColorCode(zone, CreateColor(zonec.r, zonec.g, zonec.b, 1):GenerateHexColor())
+		name = WrapTextInColorCode(name .. "(" .. server .. ")", CreateColor(classc.r, classc.g, classc.b, 1):GenerateHexColor())
+		zone = WrapTextInColorCode(zone, CreateColor(1, 1, 1, 1):GenerateHexColor())
 
 		entry.LeftText:SetFormattedText("%s %s %s", level, name, statusText[status])
 		entry.RightText:SetText(zone)
