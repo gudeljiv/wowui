@@ -105,7 +105,6 @@ tx:SetScript(
 		if UnitLevel("player") == MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] then
 			tx:Hide()
 		else
-			-- ChatFrame6:AddMessage("TX: " .. event .. ", " .. time() - combatTimer .. "s")
 			if event ~= "PLAYER_REGEN_ENABLED" then
 				tx:Show()
 				CalculateTotal(event, isInitialLogin, isReloadingUi)

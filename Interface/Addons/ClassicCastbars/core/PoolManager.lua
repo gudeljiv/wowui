@@ -2,7 +2,17 @@ local _, namespace = ...
 local PoolManager = {}
 namespace.PoolManager = PoolManager
 
-local framePool = CreateFramePool("Statusbar", UIParent, "SmallCastingBarFrameTemplate", PoolManager.ResetterFunc)
+local function ResetterFunc(pool, frame)
+    frame:Hide()
+    frame:SetParent(nil)
+    frame:ClearAllPoints()
+
+    if frame._data then
+        frame._data = nil
+    end
+end
+
+local framePool = CreateFramePool("Statusbar", UIParent, "SmallCastingBarFrameTemplate", ResetterFunc)
 local framesCreated = 0
 local framesActive = 0
 
@@ -29,7 +39,6 @@ end
 
 function PoolManager:InitializeNewFrame(frame)
     frame:Hide() -- New frames are always shown, hide it while we're updating it
-    frame.Flash:SetAlpha(0) -- we don't use this atm
 
     -- Some of the points set by SmallCastingBarFrameTemplate doesn't
     -- work well when user modify castbar size, so set our own points instead
@@ -37,9 +46,9 @@ function PoolManager:InitializeNewFrame(frame)
     frame.Icon:ClearAllPoints()
     frame.Text:ClearAllPoints()
     frame.Icon:SetPoint("LEFT", frame, -15, 0)
-    frame.Text:SetPoint("CENTER")
 
     -- Clear any scripts inherited from frame template
+    frame:UnregisterAllEvents()
     frame:SetScript("OnLoad", nil)
     frame:SetScript("OnEvent", nil)
     frame:SetScript("OnUpdate", nil)
@@ -51,29 +60,11 @@ function PoolManager:InitializeNewFrame(frame)
     frame.Timer:SetPoint("RIGHT", frame, -6, 0)
 end
 
-function PoolManager:ResetterFunc(pool, frame)
-    frame:Hide()
-    frame:SetParent(nil)
-    frame:ClearAllPoints()
-
-    if frame._data then
-        frame._data = nil
-    end
-end
-
 function PoolManager:GetFramePool()
     return framePool
 end
 
-function PoolManager:DebugInfo()
+--[[function PoolManager:DebugInfo()
     print(format("Created %d frames in total.", framesCreated))
     print(format("Currently active frames: %d.", framesActive))
-end
-
-if date("%d.%m") == "01.04" then -- April Fools :)
-    C_Timer.After(1800, function()
-        if not UnitIsDeadOrGhost("player") then
-            DoEmote("fart")
-        end
-    end)
-end
+end]]

@@ -25,7 +25,7 @@ Frames/TalentFrame.lua
 Experience/Player.lua
 Experience/Pet.lua
 Experience/MobsToKill.lua
-Experience/TotalXP.lua
+# Experience/TotalXP.lua
 
 Reputation/Reputation.lua
 

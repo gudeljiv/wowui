@@ -23,8 +23,6 @@ local defaults = {
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 local kc = CreateFrame("Frame", "KillCountFrame", UIParent)
-kc:SetWidth(100)
-kc:SetHeight(200)
 kc:SetPoint("TOPLEFT", UIParent, "TOPLEFT", 5, -350)
 kc:SetFrameStrata("LOW")
 kc:SetBackdrop(
@@ -41,72 +39,93 @@ kc:SetBackdropColor(0, 0, 0, 0.4)
 kc:SetFrameStrata("BACKGROUND")
 kc:CreateBeautyBorder(6)
 
+----------------------------
+-- Title of the frame
+----------------------------
 local kctitle = CreateFrame("Frame", "KillCountTitle", kc)
 kctitle:SetPoint("TOP", kc, "TOP", 0, -10)
-kctitle:SetWidth(1)
-kctitle:SetHeight(1)
 kctitle.text = kctitle:CreateFontString(nil, "ARTWORK")
 kctitle.text:SetFont(xVermin.Config.font.arial, 14, "NONE")
 kctitle.text:SetPoint("TOP", kctitle, "TOP", 0, 0)
 kctitle.text:SetText("Kill Tracker")
 kctitle.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
+kctitle:SetWidth(kctitle.text:GetStringWidth())
+kctitle:SetHeight(kctitle.text:GetStringHeight())
 
+----------------------------
+-- Total kills
+----------------------------
 local kctotal = CreateFrame("Frame", "KillCountTotal", kc)
 kctotal:SetPoint("TOPLEFT", kc, "TOPLEFT", 10, -35)
-kctotal:SetWidth(1)
-kctotal:SetHeight(1)
 kctotal.text = kctotal:CreateFontString(nil, "ARTWORK")
 kctotal.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
 kctotal.text:SetPoint("TOPLEFT", kctotal, "TOPLEFT", 0, 0)
 kctotal.text:SetText("Total: 0")
 kctotal.text:SetJustifyH("LEFT")
 kctotal.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
+kctotal:SetWidth(kctotal.text:GetStringWidth())
+kctotal:SetHeight(kctotal.text:GetStringHeight())
 
+----------------------------
+-- Timer
+----------------------------
 local kctimer = CreateFrame("Frame", "KillCountTimer", kc)
 kctimer:SetPoint("TOPRIGHT", kc, "TOPRIGHT", -10, -35)
-kctimer:SetWidth(1)
-kctimer:SetHeight(1)
 kctimer.text = kctimer:CreateFontString(nil, "ARTWORK")
 kctimer.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
 kctimer.text:SetPoint("TOPRIGHT", kctimer, "TOPRIGHT", 0, 0)
 kctimer.text:SetText("00:00")
 kctimer.text:SetJustifyH("RIGHT")
 kctimer.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
+kctimer:SetWidth(kctimer.text:GetStringWidth())
+kctimer:SetHeight(kctimer.text:GetStringHeight())
 
+----------------------------
+-- Kill list names
+----------------------------
 local kclistnames = CreateFrame("Frame", "KillCountListNames", kc)
 kclistnames:SetPoint("TOPLEFT", kc, "TOPLEFT", 10, -55)
-kclistnames:SetWidth(1)
-kclistnames:SetHeight(1)
 kclistnames.text = kclistnames:CreateFontString(nil, "ARTWORK")
 kclistnames.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
 kclistnames.text:SetPoint("TOPLEFT", kclistnames, "TOPLEFT", 0, 0)
 kclistnames.text:SetText("")
 kclistnames.text:SetJustifyH("LEFT")
 kclistnames.text:SetTextColor(1, 1, 1, 1)
+kclistnames:SetWidth(kclistnames.text:GetStringWidth())
+kclistnames:SetHeight(kclistnames.text:GetStringHeight())
 
+----------------------------
+-- Kill list counts
+----------------------------
 local kclistvalues = CreateFrame("Frame", "KillCountListValues", kc)
 kclistvalues:SetPoint("TOPRIGHT", kc, "TOPRIGHT", -10, -55)
-kclistvalues:SetWidth(1)
-kclistvalues:SetHeight(1)
 kclistvalues.text = kclistvalues:CreateFontString(nil, "ARTWORK")
 kclistvalues.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
 kclistvalues.text:SetPoint("TOPRIGHT", kclistvalues, "TOPRIGHT", 0, 0)
 kclistvalues.text:SetText("")
 kclistvalues.text:SetJustifyH("RIGHT")
 kclistvalues.text:SetTextColor(1, 1, 1, 1)
+kclistvalues:SetWidth(kclistvalues.text:GetStringWidth())
+kclistvalues:SetHeight(kclistvalues.text:GetStringHeight())
 
+----------------------------
+-- Kill list percentages
+----------------------------
 local kclistpercentages = CreateFrame("Frame", "KillCountListPercentages", kc)
 kclistpercentages:SetPoint("TOPRIGHT", kc, "TOPRIGHT", -10, -55)
-kclistpercentages:SetWidth(1)
-kclistpercentages:SetHeight(1)
 kclistpercentages.text = kclistpercentages:CreateFontString(nil, "ARTWORK")
 kclistpercentages.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
 kclistpercentages.text:SetPoint("TOPRIGHT", kclistpercentages, "TOPRIGHT", 0, 0)
 kclistpercentages.text:SetText("")
 kclistpercentages.text:SetJustifyH("RIGHT")
 kclistpercentages.text:SetTextColor(1, 1, 1, 1)
+kclistpercentages:SetWidth(kclistpercentages.text:GetStringWidth())
+kclistpercentages:SetHeight(kclistpercentages.text:GetStringHeight())
 kclistpercentages:Hide()
 
+----------------------------
+-- Experience in one pull
+----------------------------
 local pullxpframe = CreateFrame("Frame", "PullExperience", kc)
 pullxpframe:SetPoint("BOTTOMLEFT", kc, "BOTTOMLEFT", 10, 40)
 pullxpframe:SetFrameStrata("LOW")
@@ -128,6 +147,9 @@ pullxpframevalue.text:SetText("0")
 pullxpframevalue:SetWidth(pullxpframe.text:GetStringWidth())
 pullxpframevalue:SetHeight(pullxpframe.text:GetStringHeight())
 
+----------------------------
+-- Total experience in session
+----------------------------
 local totalxpframe = CreateFrame("Frame", "TotalExperience", kc)
 totalxpframe:SetPoint("BOTTOMLEFT", kc, "BOTTOMLEFT", 10, 25)
 totalxpframe:SetFrameStrata("LOW")
@@ -149,6 +171,9 @@ totalxpframevalue.text:SetText("0")
 totalxpframevalue:SetWidth(pullxpframe.text:GetStringWidth())
 totalxpframevalue:SetHeight(pullxpframe.text:GetStringHeight())
 
+----------------------------
+-- Timer controls
+----------------------------
 local kctimerstartstop = CreateFrame("Frame", "KillCountTimerStartStop", kc)
 kctimerstartstop:SetPoint("BOTTOMRIGHT", kc, "BOTTOMRIGHT", -10, 10)
 kctimerstartstop:SetFrameStrata("LOW")
@@ -156,10 +181,13 @@ kctimerstartstop.text = kctimerstartstop:CreateFontString(nil, "ARTWORK")
 kctimerstartstop.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
 kctimerstartstop.text:SetPoint("BOTTOMRIGHT", kctimerstartstop, "BOTTOMRIGHT", 0, 0)
 kctimerstartstop.text:SetText("Stop")
-kctimerstartstop.text:SetTextColor(220 / 255, 0 / 255, 100 / 255, 1)
+kctimerstartstop.text:SetTextColor(255 / 255, 255 / 255, 255 / 255, 1)
 kctimerstartstop:SetWidth(kctimerstartstop.text:GetStringWidth())
 kctimerstartstop:SetHeight(kctimerstartstop.text:GetStringHeight())
 
+----------------------------
+-- Reset data button
+----------------------------
 local kcreset = CreateFrame("Frame", "KillCountReset", kc)
 kcreset:SetPoint("BOTTOMLEFT", kc, "BOTTOMLEFT", 10, 10)
 kcreset:SetFrameStrata("LOW")
@@ -178,13 +206,6 @@ kcreset:SetHeight(kcreset.text:GetStringHeight())
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-local function StopTimer()
-	if timeticker then
-		timeticker:Cancel()
-	end
-	kctimerstartstop.text:SetText("Start")
-end
-
 local function StartTimer()
 	tStart = time()
 	timeticker =
@@ -197,11 +218,17 @@ local function StartTimer()
 	kctimerstartstop.text:SetText("Stop")
 end
 
+local function StopTimer()
+	if timeticker then
+		timeticker:Cancel()
+	end
+	kctimerstartstop.text:SetText("Start")
+end
+
 local function RestartTimer()
 	kctimer.text:SetText("00:00")
 	kctimerstartstop.text:SetText("Stop")
 	StopTimer()
-	tStart = time()
 	StartTimer()
 end
 
@@ -209,8 +236,10 @@ local function ResetTimer()
 	kctimer.text:SetText("00:00")
 	kctimerstartstop.text:SetText("Stop")
 	StopTimer()
-	tStart = time()
 end
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 local function SortData()
 	sortedKillLog = {}
@@ -451,6 +480,9 @@ kc:EnableMouse(true)
 kc:SetMovable(true)
 kc:SetClampedToScreen(true)
 
+--------------------------------
+-- Move main frame
+--------------------------------
 kc:SetScript(
 	"OnMouseDown",
 	function(self, button)
@@ -477,6 +509,9 @@ kc:SetScript(
 	end
 )
 
+--------------------------------
+-- Hide main frame
+--------------------------------
 kc:SetScript(
 	"OnHide",
 	function(self)
@@ -487,6 +522,9 @@ kc:SetScript(
 	end
 )
 
+--------------------------------
+-- Show/Hide percentages
+--------------------------------
 kc:SetScript(
 	"OnEnter",
 	function()
@@ -503,6 +541,9 @@ kc:SetScript(
 	end
 )
 
+--------------------------------
+-- Reset button click
+--------------------------------
 kcreset:SetScript(
 	"OnMouseDown",
 	function(self, button)
@@ -520,6 +561,9 @@ kcreset:SetScript(
 	end
 )
 
+--------------------------------
+-- Timer button controls
+--------------------------------
 kctimerstartstop:SetScript(
 	"OnMouseDown",
 	function(self, button)
@@ -540,7 +584,7 @@ kctimerstartstop:SetScript(
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-local function Print()
+local function kcMessages()
 	ChatFrame1:AddMessage("\124cffFFFF00(show/hide)\124r Show/Hide KillCount window: " .. (xKillCount.show and "\124cff00FF00show\124r" or "\124cffFF0000show\124r") .. "/" .. (not xKillCount.show and "\124cff00FF00hide\124r" or "\124cffFF0000hide\124r"))
 	ChatFrame1:AddMessage("\124cffFFFF00(reset)\124r Reset KillCount window position")
 end
@@ -563,5 +607,5 @@ SlashCmdList["kc_settings"] = function(msg)
 		kc:Hide()
 	end
 
-	Print()
+	kcMessages()
 end

@@ -17,13 +17,12 @@ local castSpellIDs = {
     19645, -- Anti-Magic Shield
     13901, -- Arcane Bolt
     19821, -- Arcane Bomb
-    11975, -- Arcane Explosion
+    26192, -- Arcane Explosion
     1450, -- Arcane Spirit II
     1451, -- Arcane Spirit III
     1452, -- Arcane Spirit IV
     1453, -- Arcane Spirit V
     25181, -- Arcane Weakness
-    16081, -- Arctic Wolf
     8000, -- Area Burn
     10418, -- Arugal spawn-in spell
     7124, -- Arugal's Gift
@@ -65,16 +64,7 @@ local castSpellIDs = {
     20733, -- Black Arrow
     22719, -- Black Battlestrider
     27589, -- Black Grasp of the Destroyer
-    17461, -- Black Ram
     7279, -- Black Sludge
-    470, -- Black Stallion
-    22718, -- Black War Kodo
-    22720, -- Black War Ram
-    22721, -- Black War Raptor
-    22717, -- Black War Steed
-    22723, -- Black War Tiger
-    22724, -- Black War Wolf
-    578, -- Black Wolf
     23639, -- Blackfury
     23652, -- Blackguard
     16978, -- Blazing Rapier
@@ -84,9 +74,6 @@ local castSpellIDs = {
     15783, -- Blizzard
     3264, -- Blood Howl
     16986, -- Blood Talon
-    10969, -- Blue Mechanostrider
-    6897, -- Blue Ram
-    17463, -- Blue Skeletal Horse
     11365, -- Bly's Band's Escape
     9143, -- Bomb
     1980, -- Bombard
@@ -102,11 +89,6 @@ local castSpellIDs = {
     28352, -- Breath of Sargeras
     8090, -- Bright Baubles
     7359, -- Bright Campfire
-    458, -- Brown Horse
-    18990, -- Brown Kodo
-    6899, -- Brown Ram
-    17464, -- Brown Skeletal Horse
-    6654, -- Brown Wolf
     17293, -- Burning Winds
     26381, -- Burrow
     20364, -- Bury Samuel's Remains
@@ -226,9 +208,9 @@ local castSpellIDs = {
     21048, -- Curse of the Tribes
     5267, -- Dalaran Wizard Disguise
     27723, -- Dark Desire
-    19799, -- Dark Iron Bomb
+    19784, -- Dark Iron Bomb
     5268, -- Dark Iron Dwarf Disguise
-    16588, -- Dark Mending
+    19775, -- Dark Mending
     7106, -- Dark Restore
     3335, -- Dark Sludge
     16587, -- Dark Whispers
@@ -263,7 +245,6 @@ local castSpellIDs = {
     9435, -- Detonation
     6700, -- Dimensional Portal
     13692, -- Dire Growl
-    6653, -- Dire Wolf
     1842, -- Disarm Trap
     27891, -- Disease Buffet
     11397, -- Diseased Shot
@@ -305,7 +286,6 @@ local castSpellIDs = {
     23679, -- Elementals Deck
     26636, -- Elune's Candle
     16533, -- Emberseer Start
-    8395, -- Emerald Raptor
     22647, -- Empower Pet
     7081, -- Encage
     4962, -- Encasing Webs
@@ -405,7 +385,6 @@ local castSpellIDs = {
     19943, -- Flash of Light
     9092, -- Flesh Eating Worm
     14292, -- Fling Torch
-    17458, -- Fluorescent Green Mechanostrider
     3678, -- Focusing
     24189, -- Force Punch
     22797, -- Force Reactive Disk
@@ -430,12 +409,9 @@ local castSpellIDs = {
     3595, -- Frost Oil
     17460, -- Frost Ram
     25178, -- Frost Weakness
-    10180, -- Frostbolt
     8398, -- Frostbolt Volley
     16992, -- Frostguard
     6957, -- Frostmane Strength
-    16056, -- Frostsaber
-    23509, -- Frostwolf Howler
     25840, -- Full Heal
     474, -- Fumble
     507, -- Fumble II
@@ -456,26 +432,15 @@ local castSpellIDs = {
     7023, -- Goblin Camera Connection
     10837, -- Goblin Land Mine
     12722, -- Goblin Radio
-    16060, -- Golden Sabercat
     24967, -- Gong
     11434, -- Gong Zul'Farrak Gong
     22789, -- Gordok Green Grog
     22924, -- Grasping Vines
-    18989, -- Gray Kodo
-    6777, -- Gray Ram
-    459, -- Gray Wolf
-    23249, -- Great Brown Kodo
-    23248, -- Great Gray Kodo
     25807, -- Great Heal
-    23247, -- Great White Kodo
     15441, -- Greater Arcane Amalgamation
     24997, -- Greater Dispel
     25314, -- Greater Heal
     10228, -- Greater Invisibility
-    18991, -- Green Kodo
-    17453, -- Green Mechanostrider
-    17465, -- Green Skeletal Warhorse
-    7636, -- Green Woolen Robe
     24195, -- Grom's Tribute
     4153, -- Guile of the Raptor
     24266, -- Gurubashi Mojo Madness
@@ -521,7 +486,6 @@ local castSpellIDs = {
     16869, -- Ice Tomb
     28526, -- Icebolt
     11131, -- Icicle
-    17459, -- Icy Blue Mechanostrider
     6741, -- Identify Brood
     23316, -- Ignite Flesh
     23054, -- Igniting Kroshius
@@ -550,7 +514,6 @@ local castSpellIDs = {
     885, -- Invisibility
     16746, -- Invulnerable Mail
     4068, -- Iron Grenade
-    10795, -- Ivory Raptor
     23140, -- J'eevee summons object
     23122, -- Jaina's Autograph
     9744, -- Jarkal's Translation
@@ -566,7 +529,6 @@ local castSpellIDs = {
     22790, -- Kreeg's Stout Beatdown
     4065, -- Large Copper Bomb
     4075, -- Large Seaforium Charge
-    580, -- Large Timber Wolf
     27146, -- Left Piece of Lord Valthalak's Amulet
     15463, -- Legendary Arcane Amalgamation
     10788, -- Leopard
@@ -643,7 +605,6 @@ local castSpellIDs = {
     5213, -- Molten Metal
     25150, -- Molten Rain
     20528, -- Mor'rogal Enchant
-    16084, -- Mottled Red Raptor
     14928, -- Nagmara's Love Potion
     25688, -- Narain!
     7967, -- Naralex's Nightmare
@@ -652,11 +613,9 @@ local castSpellIDs = {
     7673, -- Nether Gem
     8088, -- Nightcrawlers
     23653, -- Nightfall
-    16055, -- Nightsaber
     6199, -- Nostalgia
     7994, -- Nullify Mana
     16528, -- Numbing Pain
-    10798, -- Obsidian Raptor
     11437, -- Opening Chest
     23125, -- Orcish Orphan Whistle
     26063, -- Ouro Submerge Visual
@@ -664,7 +623,6 @@ local castSpellIDs = {
     16379, -- Ozzie Explodes
     471, -- Palamino Stallion
     16082, -- Palomino Stallion
-    10787, -- Panther
     17176, -- Panther Cage Key
     8363, -- Parasite
     6758, -- Party Fever
@@ -676,7 +634,6 @@ local castSpellIDs = {
     6461, -- Pick Lock
     16429, -- Piercing Shadow
     4982, -- Pillar Delving
-    472, -- Pinto Horse
     15728, -- Plague Cloud
     3429, -- Plague Mind
     28614, -- Pointy Spike
@@ -713,8 +670,6 @@ local castSpellIDs = {
     15050, -- Psychometry
     16072, -- Purify and Place Food
     22313, -- Purple Hands
-    17455, -- Purple Mechanostrider
-    23246, -- Purple Skeletal Warhorse
     18809, -- Pyroblast
     3229, -- Quick Bloodlust
     4979, -- Quick Flame Ward
@@ -731,11 +686,6 @@ local castSpellIDs = {
     22563, -- Recall
     21950, -- Recite Words of Celebras
     4093, -- Reconstruction
-    17456, -- Red & Blue Mechanostrider
-    10873, -- Red Mechanostrider
-    17462, -- Red Skeletal Horse
-    22722, -- Red Skeletal Warhorse
-    16080, -- Red Wolf
     23254, -- Redeeming the Soul
     20773, -- Redemption
     22430, -- Refined Scale of Onyxia
@@ -761,8 +711,6 @@ local castSpellIDs = {
     5161, -- Revive Dig Rat
     982, -- Revive Pet
     15591, -- Revive Ringo
-    18363, -- Riding Kodo
-    30174, -- Riding Turtle
     9614, -- Rift Beacon
     27738, -- Right Piece of Lord Valthalak's Amulet
     461, -- Righteous Flame On
@@ -783,7 +731,6 @@ local castSpellIDs = {
     20051, -- Runed Arcanite Rod
     21403, -- Ryson's All Seeing Eye
     21425, -- Ryson's Eye in the Sky
-    1050, -- Sacrifice
     10459, -- Sacrifice Spinneret
     27832, -- Sageblade
     19566, -- Salt Shaker
@@ -850,9 +797,7 @@ local castSpellIDs = {
     7077, -- Simple Teleport
     7078, -- Simple Teleport Group
     7079, -- Simple Teleport Other
-    8980, -- Skeletal Horse
     6469, -- Skeletal Miner Explode
-    29059, -- Skeletal Steed
     11605, -- Slam
     8809, -- Slave Drain
     1090, -- Sleep
@@ -894,12 +839,9 @@ local castSpellIDs = {
     8016, -- Spirit Decay
     17680, -- Spirit Spawn-out
     3477, -- Spirit Steal
-    10789, -- Spotted Frostsaber
-    10792, -- Spotted Panther
     17155, -- Sprinkling Purified Water
     3975, -- Standard Scope
     25298, -- Starfire
-    15781, -- Steel Mechanostrider
     10254, -- Stone Dwarf Awaken Visual
     28995, -- Stoneskin
     5265, -- Stonesplinter Trogg Disguise
@@ -909,8 +851,6 @@ local castSpellIDs = {
     4539, -- Strength of the Ages
     26181, -- Strike
     24245, -- String Together Heads
-    8394, -- Striped Frostsaber
-    10793, -- Striped Nightsaber
     16741, -- Stronghold Gauntlets
     7355, -- Stuck
     16497, -- Stun Bomb
@@ -928,12 +868,10 @@ local castSpellIDs = {
     10696, -- Summon Azure Whelpling
     25849, -- Summon Baby Shark
     10714, -- Summon Black Kingsnake
-    26656, -- Summon Black Qiraji Battle Tank
     15794, -- Summon Blackhand Dreadweaver
     15792, -- Summon Blackhand Veteran
     17567, -- Summon Blood Parrot
     13463, -- Summon Bloodpetal Mini Pests
-    25953, -- Summon Blue Qiraji Battle Tank
     10715, -- Summon Blue Racer
     8286, -- Summon Boar Spirit
     15048, -- Summon Bomb
@@ -974,7 +912,6 @@ local castSpellIDs = {
     19561, -- Summon Gnashjaw
     13258, -- Summon Goblin Bomb
     10707, -- Summon Great Horned Owl
-    26056, -- Summon Green Qiraji Battle Tank
     10718, -- Summon Green Water Snake
     10683, -- Summon Green Wing Macaw
     7762, -- Summon Gunther's Visage
@@ -1021,7 +958,6 @@ local castSpellIDs = {
     10709, -- Summon Prairie Dog
     19774, -- Summon Ragnaros
     13143, -- Summon Razelikh
-    26054, -- Summon Red Qiraji Battle Tank
     3605, -- Summon Remote-Controlled Golem
     10719, -- Summon Ribbon Snake
     3363, -- Summon Riding Gryphon
@@ -1079,7 +1015,6 @@ local castSpellIDs = {
     10703, -- Summon Wood Frog
     15999, -- Summon Worg Pup
     23152, -- Summon Xorothian Dreadsteed
-    26055, -- Summon Yellow Qiraji Battle Tank
     17709, -- Summon Zergling
     16590, -- Summon Zombie
     16473, -- Summoned Urok
@@ -1087,27 +1022,6 @@ local castSpellIDs = {
     15869, -- Superior Healing Ward
     26103, -- Sweep
     27722, -- Sweet Surprise
-    23241, -- Swift Blue Raptor
-    23238, -- Swift Brown Ram
-    23229, -- Swift Brown Steed
-    23250, -- Swift Brown Wolf
-    23220, -- Swift Dawnsaber
-    23221, -- Swift Frostsaber
-    23239, -- Swift Gray Ram
-    23252, -- Swift Gray Wolf
-    23225, -- Swift Green Mechanostrider
-    23219, -- Swift Mistsaber
-    23242, -- Swift Olive Raptor
-    23243, -- Swift Orange Raptor
-    23227, -- Swift Palomino
-    24242, -- Swift Razzashi Raptor
-    23338, -- Swift Stormsaber
-    23251, -- Swift Timber Wolf
-    23223, -- Swift White Mechanostrider
-    23240, -- Swift White Ram
-    23228, -- Swift White Steed
-    23222, -- Swift Yellow Mechanostrider
-    24252, -- Swift Zulian Tiger
     8593, -- Symbol of Life
     24160, -- Syncretist's Sigil
     3718, -- Syndicate Bomb
@@ -1116,9 +1030,7 @@ local castSpellIDs = {
     17161, -- Taking Moon Well Sample
     9795, -- Talvash's Necklace Repair
     20041, -- Tammra Sapling
-    16059, -- Tawny Sabercat
     2817, -- Teach Bark of Doom
-    18992, -- Teal Kodo
     12521, -- Teleport from Azshara Tower
     12509, -- Teleport to Azshara Tower
     3565, -- Teleport: Darnassus
@@ -1147,7 +1059,6 @@ local castSpellIDs = {
     25004, -- Throw Nightmare Object
     4164, -- Throw Rock
     4165, -- Throw Rock II
-    10790, -- Tiger
     23312, -- Time Lapse
     25158, -- Time Stop
     6470, -- Tiny Bronze Key
@@ -1173,14 +1084,12 @@ local castSpellIDs = {
     785, -- True Fulfillment
     10348, -- Tune Up
     10326, -- Turn Undead
-    10796, -- Turquoise Raptor
     10340, -- Uldaman Boss Agro
     9577, -- Uldaman Key Staff
     11568, -- Uldaman Sub-Boss Agro
     20006, -- Unholy Curse
     3670, -- Unlock Maury's Foot
     10738, -- Unlocking
-    17454, -- Unpainted Mechanostrider
     24024, -- Unstable Concoction
     16562, -- Urok Minions Vanish
     19719, -- Use Bauble
@@ -1190,7 +1099,6 @@ local castSpellIDs = {
     6354, -- Venom's Bane
     27721, -- Very Berry Cream
     18115, -- Viewing Room Student Transform - Effect
-    10799, -- Violet Raptor
     17529, -- Vitreous Focuser
     24163, -- Vodouisant's Vigilant Embrace
     21066, -- Void Bolt
@@ -1212,18 +1120,13 @@ local castSpellIDs = {
     7220, -- Weapon Chain
     7218, -- Weapon Counterweight
     11410, -- Whirling Barrage
-    15779, -- White Mechanostrider
-    6898, -- White Ram
-    468, -- White Stallion
     16724, -- Whitesoul Helm
     4520, -- Wide Sweep
     28732, -- Widow's Embrace
     9616, -- Wild Regeneration
     16598, -- Will of Shahram
     23339, -- Wing Buffet
-    581, -- Winter Wolf
     21736, -- Winterax Wisdom
-    17229, -- Winterspring Frostsaber
     22662, -- Wither
     4974, -- Wither Touch
     25121, -- Wizard Oil
@@ -1238,13 +1141,51 @@ local castSpellIDs = {
     24422, -- Zandalar Signet of Might
     24421, -- Zandalar Signet of Mojo
     24420, -- Zandalar Signet of Serenity
+    1050, -- Sacrifice
+    22651, -- Sacrifice 2 (On German client this is named Opfern but other Sacrifice is named Opferung)
+    10181, -- Frostbolt (needs to be last for chinese clients, see issue #16)
+
+    -- Channeled casts in random order. These are used to retrieve spell icon later on (namespace.channeledSpells only stores spell name)
+    -- Commented out IDs are duplicates that also has a normal cast already listed above.
+    746, -- First Aid
+    13278, -- Gnomish Death Ray
+    20577, -- Cannibalize
+    10797, -- Starshards
+    16430, -- Soul Tap
+    27640, -- Baron Rivendare's Soul Drain
+    7290, -- Soul Siphon
+    24322, -- Blood Siphon
+    27177, -- Defile
+    17401, -- Hurricane
+    740, -- Tranquility
+    20687, -- Starfall
+    6197, -- Eagle Eye
+    --1002, -- Eyes of the Beast
+    --1510, -- Volley
+    136, -- Mend Pet
+    7268, -- Arcane Missile
+    5143, -- Arcane Missiles
+    --10, -- Blizzard
+    12051, -- Evocation
+    15407, -- Mind Flay
+    2096, -- Mind Vision
+    --605, -- Mind Control
+    --126, -- Eye of Kilrogg
+    689, -- Drain Life
+    5138, -- Drain Mana
+    1120, -- Drain Soul
+    --5740, -- Rain of Fire
+    1949, -- Hellfire
+    755, -- Health Funnel
+    17854, -- Consume Shadows
+    --6358, -- Seduction Channel
 }
 
 local counter, cursor = 0, 1
 local castedSpells = {}
 namespace.castedSpells = castedSpells
 
--- temporary, ill clean up this later
+-- TODO: cleanup
 local function BuildSpellNameToSpellIDTable()
     counter = 0
 
@@ -1270,83 +1211,112 @@ end
 
 C_Timer.After(0.1, BuildSpellNameToSpellIDTable) -- run asap once the current call stack has executed
 
--- For channeled spells we need both the spell ID and cast time since
--- GetSpellInfo doesn't return any cast time for channeled casts.
--- value[1] is the cast time in seconds, value[2] is the spell ID used to retrive
--- spell icon later on.
--- TODO: merge with main spell table and just store the cast time here as table value
+-- GetSpellInfo doesn't return any cast time for channeled casts
+-- so we need to store the cast time ourself
 namespace.channeledSpells = {
     -- MISC
-    [GetSpellInfo(746)] = { 8, 746 },         -- First Aid
-    [GetSpellInfo(13278)] = { 4, 13278 },     -- Gnomish Death Ray
-    [GetSpellInfo(20577)] = { 10, 20577 },    -- Cannibalize
-    [GetSpellInfo(10797)] = { 6, 10797 },     -- Starshards
+    [GetSpellInfo(746)] = 8000,      -- First Aid
+    [GetSpellInfo(13278)] = 4000,    -- Gnomish Death Ray
+    [GetSpellInfo(20577)] = 10000,   -- Cannibalize
+    [GetSpellInfo(10797)] = 6000,    -- Starshards
+    [GetSpellInfo(16430)] = 12000,   -- Soul Tap
+    [GetSpellInfo(24323)] = 8000,    -- Blood Siphon
+    [GetSpellInfo(27640)] = 3000,    -- Baron Rivendare's Soul Drain
+    [GetSpellInfo(7290)] = 10000,    -- Soul Siphon
+    [GetSpellInfo(24322)] = 8000,    -- Blood Siphon
+    [GetSpellInfo(27177)] = 10000,   -- Defile
 
     -- DRUID
-    [GetSpellInfo(17401)] = { 10, 17401 },   -- Hurricane
-    [GetSpellInfo(740)] = { 10, 740 },       -- Tranquility
+    [GetSpellInfo(17401)] = 10000,   -- Hurricane
+    [GetSpellInfo(740)] = 10000,     -- Tranquility
+    [GetSpellInfo(20687)] = 10000,   -- Starfall
 
     -- HUNTER
-    [GetSpellInfo(6197)] = { 60, 6197 },      -- Eagle Eye
-    [GetSpellInfo(1002)] = { 60, 1002 },      -- Eyes of the Beast
-    [GetSpellInfo(1510)] = { 6, 1510 },       -- Volley
+    [GetSpellInfo(6197)] = 60000,     -- Eagle Eye
+    [GetSpellInfo(1002)] = 60000,     -- Eyes of the Beast
+    [GetSpellInfo(1510)] = 6000,      -- Volley
+    [GetSpellInfo(136)] = 5000,       -- Mend Pet
 
     -- MAGE
-    [GetSpellInfo(5143)] = { 5, 5143, },       -- Arcane Missiles
-    [GetSpellInfo(10)] = { 8, 10 },            -- Blizzard
-    [GetSpellInfo(12051)] = { 8, 12051 },      -- Evocation
+    [GetSpellInfo(5143)] = 5000,      -- Arcane Missiles
+    [GetSpellInfo(7268)] = 3000,      -- Arcane Missile
+    [GetSpellInfo(10)] = 8000,        -- Blizzard
+    [GetSpellInfo(12051)] = 8000,     -- Evocation
 
     -- PRIEST
-    [GetSpellInfo(15407)] = { 3, 15407 },     -- Mind Flay
-    [GetSpellInfo(2096)] = { 60, 2096 },      -- Mind Vision
-    [GetSpellInfo(605)] = { 3, 605 },         -- Mind Control
+    [GetSpellInfo(15407)] = 3000,     -- Mind Flay
+    [GetSpellInfo(2096)] = 60000,     -- Mind Vision
+    [GetSpellInfo(605)] = 3000,       -- Mind Control
 
     -- WARLOCK
-    [GetSpellInfo(126)] = { 45, 126 },        -- Eye of Kilrogg
-    [GetSpellInfo(689)] = { 5, 689 },         -- Drain Life
-    [GetSpellInfo(5138)] = { 5, 5138 },       -- Drain Mana
-    [GetSpellInfo(1120)] = { 15, 1120 },      -- Drain Soul
-    [GetSpellInfo(5740)] = { 8, 5740 },       -- Rain of Fire
-    [GetSpellInfo(1949)] = { 15, 1949 },      -- Hellfire
-    [GetSpellInfo(755)] = { 10, 755 },        -- Health Funnel
+    [GetSpellInfo(126)] = 45000,      -- Eye of Kilrogg
+    [GetSpellInfo(689)] = 5000,       -- Drain Life
+    [GetSpellInfo(5138)] = 5000,      -- Drain Mana
+    [GetSpellInfo(1120)] = 15000,     -- Drain Soul
+    [GetSpellInfo(5740)] = 8000,      -- Rain of Fire
+    [GetSpellInfo(1949)] = 15000,     -- Hellfire
+    [GetSpellInfo(755)] = 10000,      -- Health Funnel
+    [GetSpellInfo(17854)] = 10000,    -- Consume Shadows
+    [GetSpellInfo(6358)] = 15000,     -- Seduction Channel
 }
 
 -- List of abilities that increases cast time (reduces speed)
--- Value here is the slow percentage, from highest spell rank.
--- TODO: check if these also affect Aimed Shot/Volley + bosses
+-- Value here is the slow percentage.
 namespace.castTimeIncreases = {
-    -- WARLOCK
-    [GetSpellInfo(1714)] = 60,    -- Curse of Tongues
-    [GetSpellInfo(1098)] = 30,    -- Enslave Demon
-
-    -- ROGUE
-    [GetSpellInfo(5760)] = 60,    -- Mind-Numbing Poison
-
     -- ITEMS
-    [GetSpellInfo(17331)] = 10,   -- Fang of the Crystal Spider
+    [17331] = 10,   -- Fang of the Crystal Spider
 
     -- NPCS
-    [GetSpellInfo(7127)] = 20,    -- Wavering Will
-    [GetSpellInfo(7102)] = 25,    -- Contagion of Rot
-    [GetSpellInfo(3603)] = 35,    -- Distracting Pain
-    [GetSpellInfo(8140)] = 50,    -- Befuddlement
-    [GetSpellInfo(8272)] = 20,    -- Mind Tremor
-    [GetSpellInfo(12255)] = 15,   -- Curse of Tuten'kash
-    [GetSpellInfo(10651)] = 20,   -- Curse of the Eye
-    [GetSpellInfo(14538)] = 35,   -- Aural Shock
-    [GetSpellInfo(22247)] = 80,   -- Suppression Aura
-    [GetSpellInfo(22642)] = 50,   -- Brood Power: Bronze
-    [GetSpellInfo(23153)] = 50,   -- Brood Power: Blue
-    [GetSpellInfo(24415)] = 50,   -- Slow
-    [GetSpellInfo(19365)] = 50,   -- Ancient Dread
-    [GetSpellInfo(28732)] = 25,   -- Widow's Embrace
-    [GetSpellInfo(22909)] = 50,   -- Eye of Immol'thar
+    [7127] = 20,    -- Wavering Will
+    [7102] = 25,    -- Contagion of Rot
+    [7103] = 25,    -- Contagion of Rot 2
+    [3603] = 35,    -- Distracting Pain
+    [8140] = 50,    -- Befuddlement
+    [8272] = 20,    -- Mind Tremor
+    [12255] = 15,   -- Curse of Tuten'kash
+    [10651] = 20,   -- Curse of the Eye
+    [14538] = 35,   -- Aural Shock
+    [22247] = 80,   -- Suppression Aura
+    [22642] = 50,   -- Brood Power: Bronze
+    [23153] = 50,   -- Brood Power: Blue
+    [24415] = 50,   -- Slow
+    [19365] = 50,   -- Ancient Dread
+    [28732] = 25,   -- Widow's Embrace
+    [22909] = 50,   -- Eye of Immol'thar
+    [13338] = 50,   -- Curse of Tongues
+    [12889] = 50,   -- Curse of Tongues
+    [15470] = 50,   -- Curse of Tongues
+    [25195] = 75,   -- Curse of Tongues
+    [10653] = 20,   -- Curse of the Eye
+
+    -- WARLOCK
+    [1714] = 50,    -- Curse of Tongues Rank 1
+    [11719] = 60,   -- Curse of Tongues Rank 2
+    [1098] = 30,    -- Enslave Demon Rank 1
+    [11725] = 30,   -- Enslave Demon Rank 2
+    [11726] = 30,   -- Enslave Demon Rank 3
+    [20882] = 30,   -- Enslave Demon (NPC?)
+
+    -- ROGUE
+    [5760] = 40,    -- Mind-Numbing Poison Rank 1
+    [8692] = 50,    -- Mind-Numbing Poison Rank 2
+    [25810] = 50,   -- Mind-Numbing Poison Rank 2 incorrect?
+    [11398] = 60,   -- Mind-Numbing Poison Rank 3
 }
 
--- Spells that have cast time reduced by talents.
+-- Store both spellID and spell name in this table since UnitAura returns spellIDs but combat log doesn't.
+C_Timer.After(15, function()
+    for spellID, slowPercentage in pairs(namespace.castTimeIncreases) do
+        if GetSpellInfo(spellID) then
+            namespace.castTimeIncreases[GetSpellInfo(spellID)] = slowPercentage
+        end
+    end
+end)
+
+-- Spells that often have cast time reduced by talents.
 namespace.castTimeTalentDecreases = {
     [GetSpellInfo(403)] = 2000,      -- Lightning Bolt
-    [GetSpellInfo(421)] = 1500,      -- Chain Lightning
+    [GetSpellInfo(10605)] = 1500,    -- Chain Lightning
     [GetSpellInfo(6353)] = 4000,     -- Soul Fire
     [GetSpellInfo(116)] = 2500,      -- Frostbolt
     [GetSpellInfo(133)] = 3000,      -- Fireball
@@ -1360,67 +1330,253 @@ namespace.castTimeTalentDecreases = {
     [GetSpellInfo(8129)] = 2500,     -- Mana Burn
     [GetSpellInfo(5176)] = 1500,     -- Wrath
     [GetSpellInfo(2912)] = 3000,     -- Starfire
-    [GetSpellInfo(5185)] = 3000,     -- Healing Touch
+    [GetSpellInfo(9888)] = 3000,     -- Healing Touch
     [GetSpellInfo(2645)] = 1000,     -- Ghost Wolf
     [GetSpellInfo(691)] = 6000,      -- Summon Felhunter
     [GetSpellInfo(688)] = 6000,      -- Summon Imp
     [GetSpellInfo(697)] = 6000,      -- Summon Voidwalker
     [GetSpellInfo(712)] = 6000,      -- Summon Succubus
+    [GetSpellInfo(982)] = 4000,      -- Revive Pet
 }
 
 -- List of crowd controls.
 -- We want to stop the castbar when these auras are detected
 -- as SPELL_CAST_FAILED is not triggered when an unit gets CC'ed.
-namespace.crowdControls = {
-    [GetSpellInfo(5211)] = 1,       -- Bash
-    [GetSpellInfo(24394)] = 1,      -- Intimidation
-    [GetSpellInfo(853)] = 1,        -- Hammer of Justice
-    [GetSpellInfo(22703)] = 1,      -- Inferno Effect (Summon Infernal)
-    [GetSpellInfo(408)] = 1,        -- Kidney Shot
-    [GetSpellInfo(12809)] = 1,      -- Concussion Blow
-    [GetSpellInfo(20253)] = 1,      -- Intercept Stun
-    [GetSpellInfo(20549)] = 1,      -- War Stomp
-    [GetSpellInfo(2637)] = 1,       -- Hibernate
-    [GetSpellInfo(3355)] = 1,       -- Freezing Trap
-    [GetSpellInfo(19386)] = 1,      -- Wyvern Sting
-    [GetSpellInfo(118)] = 1,        -- Polymorph
-    [GetSpellInfo(28271)] = 1,      -- Polymorph: Turtle
-    [GetSpellInfo(28272)] = 1,      -- Polymorph: Pig
-    [GetSpellInfo(20066)] = 1,      -- Repentance
-    [GetSpellInfo(1776)] = 1,       -- Gouge
-    [GetSpellInfo(6770)] = 1,       -- Sap
-    [GetSpellInfo(1513)] = 1,       -- Scare Beast
-    [GetSpellInfo(8122)] = 1,       -- Psychic Scream
-    [GetSpellInfo(2094)] = 1,       -- Blind
-    [GetSpellInfo(5782)] = 1,       -- Fear
-    [GetSpellInfo(5484)] = 1,       -- Howl of Terror
-    [GetSpellInfo(6358)] = 1,       -- Seduction
-    [GetSpellInfo(5246)] = 1,       -- Intimidating Shout
-    [GetSpellInfo(6789)] = 1,       -- Death Coil
-    [GetSpellInfo(9005)] = 1,       -- Pounce
-    [GetSpellInfo(1833)] = 1,       -- Cheap Shot
-    [GetSpellInfo(16922)] = 1,      -- Improved Starfire
-    [GetSpellInfo(19410)] = 1,      -- Improved Concussive Shot
-    [GetSpellInfo(12355)] = 1,      -- Impact
-    [GetSpellInfo(20170)] = 1,      -- Seal of Justice Stun
-    [GetSpellInfo(15269)] = 1,      -- Blackout
-    [GetSpellInfo(18093)] = 1,      -- Pyroclasm
-    [GetSpellInfo(12798)] = 1,      -- Revenge Stun
-    [GetSpellInfo(5530)] = 1,       -- Mace Stun
-    [GetSpellInfo(19503)] = 1,      -- Scatter Shot
-    [GetSpellInfo(605)] = 1,        -- Mind Control
-    [GetSpellInfo(7922)] = 1,       -- Charge Stun
-    [GetSpellInfo(18469)] = 1,      -- Counterspell - Silenced
-    [GetSpellInfo(15487)] = 1,      -- Silence
-    [GetSpellInfo(18425)] = 1,      -- Kick - Silenced
-    [GetSpellInfo(24259)] = 1,      -- Spell Lock
-    [GetSpellInfo(18498)] = 1,      -- Shield Bash - Silenced
+namespace.crowdControls = {}
+local crowdControls = {
+    5211,       -- Bash
+    24394,      -- Intimidation
+    853,        -- Hammer of Justice
+    22703,      -- Inferno Effect (Summon Infernal)
+    408,        -- Kidney Shot
+    12809,      -- Concussion Blow
+    20253,      -- Intercept Stun
+    20549,      -- War Stomp
+    2637,       -- Hibernate
+    3355,       -- Freezing Trap
+    19386,      -- Wyvern Sting
+    118,        -- Polymorph
+    28271,      -- Polymorph: Turtle
+    28272,      -- Polymorph: Pig
+    20066,      -- Repentance
+    1776,       -- Gouge
+    6770,       -- Sap
+    1513,       -- Scare Beast
+    8122,       -- Psychic Scream
+    2094,       -- Blind
+    5782,       -- Fear
+    5484,       -- Howl of Terror
+    6358,       -- Seduction
+    5246,       -- Intimidating Shout
+    6789,       -- Death Coil
+    9005,       -- Pounce
+    1833,       -- Cheap Shot
+    16922,      -- Improved Starfire
+    19410,      -- Improved Concussive Shot
+    12355,      -- Impact
+    20170,      -- Seal of Justice Stun
+    15269,      -- Blackout
+    18093,      -- Pyroclasm
+    12798,      -- Revenge Stun
+    5530,       -- Mace Stun
+    19503,      -- Scatter Shot
+    605,        -- Mind Control
+    7922,       -- Charge Stun
+    18469,      -- Counterspell - Silenced
+    15487,      -- Silence
+    18425,      -- Kick - Silenced
+    24259,      -- Spell Lock
+    18498,      -- Shield Bash - Silenced
+    2878,       -- Turn Undead
+    710,        -- Banish
 
     -- ITEMS
-    [GetSpellInfo(13327)] = 1,      -- Reckless Charge
-    [GetSpellInfo(1090)] = 1,       -- Sleep
-    [GetSpellInfo(5134)] = 1,       -- Flash Bomb Fear
-    [GetSpellInfo(19821)] = 1,      -- Arcane Bomb Silence
+    21167,      -- Snowball
+    13327,      -- Reckless Charge
+    1090,       -- Sleep
+    5134,       -- Flash Bomb Fear
+    19821,      -- Arcane Bomb Silence
+    4068,       -- Iron Grenade
+    19769,      -- Thorium Grenade
+    13808,      -- M73 Frag Grenade
+    4069,       -- Big Iron Bomb
+    12543,      -- Hi-Explosive Bomb
+    4064,       -- Rough Copper Bomb
+    12421,      -- Mithril Frag Bomb
+    19784,      -- Dark Iron Bomb
+    4067,       -- Big Bronze Bomb
+    4066,       -- Small Bronze Bomb
+    4065,       -- Large Copper Bomb
+    835,        -- Tidal Charm
+    13181,      -- Gnomish Mind Control Cap
+    12562,      -- The Big One
+    15283,      -- Stunning Blow (Weapon Proc)
+    56,         -- Stun (Weapon Proc)
+    21152,      -- Earthshaker (Weapon Proc)
+    26108,      -- Glimpse of Madness
+    8345,       -- Control Machine (Gnomish Universal Remote trinket)
+    13235,      -- Forcefield Collapse (Gnomish Harm Prevention Belt)
+    15753,      -- Linken's Boomerang (trinket)
+    15535,      -- Enveloping Winds (Six Demon Bag trinket)
+    28406,      -- Polymorph Backfire
+    16600,      -- Might of Shahram (Blackblade of Shahram sword)
+    13907,      -- Smite Demon (Enchant Weapon - Demonslaying)
+    15822,      -- Dreamless Sleep Potion
+    16053,      -- Dominion of Soul (Orb of Draconic Energy)
+    21330,      -- Corrupted Fear (Deathmist Raiment set)
+
+    -- NPCS
+    3242,       -- Ravage
+    3271,       -- Fatigued
+    5708,       -- Swoop
+    11430,      -- Slam
+    17276,      -- Scald
+    18812,      -- Knockdown
+    3442,       -- Enslave
+    20683,      -- Highlord's Justice
+    17286,      -- Crusader's Hammer
+    3109,       -- Presence of Death
+    3143,       -- Glacial Roar
+    3263,       -- Touch of Ravenclaw
+    5106,       -- Crystal Flash
+    6266,       -- Kodo Stomp
+    6730,       -- Head Butt
+    6982,       -- Gust of Wind
+    7961,       -- Azrethoc's Stomp
+    8151,       -- Surprise Attack
+    3635,       -- Crystal Gaze
+    21188,      -- Stun Bomb Attack
+    16451,      -- Judge's Gavel
+    3589,       -- Deafening Screech
+    4320,       -- Trelane's Freezing Touch
+    6942,       -- Overwhelming Stench
+    8715,       -- Terrifying Howl
+    8817,       -- Smoke Bomb
+    25772,      -- Mental Domination
+    15859,      -- Dominate Mind
+    24753,      -- Trick
+    19408,      -- Panic
+    23364,      -- Tail Lash
+    19364,      -- Ground Stomp
+    19369,      -- Ancient Despair
+    19641,      -- Pyroclast Barrage
+    19393,      -- Soul Burn
+    20277,      -- Fist of Ragnaros
+    19780,      -- Hand of Ragnaros
+    18431,      -- Bellowing Roar
+    22289,      -- Brood Power: Green
+    22291,      -- Brood Power: Bronze
+    22561,      -- Brood Power: Green
+    19872,      -- Calm Dragonkin
+    22274,      -- Greater Polymorph
+    23310,      -- Time Lapse
+    23174,      -- Chromatic Mutation
+    23171,      -- Time Stop (Brood Affliction: Bronze)
+    22667,      -- Shadow Command
+    23603,      -- Wild Polymorph
+    23182,      -- Mark of Frost
+    25043,      -- Aura of Nature
+    24811,      -- Draw Spirit
+    25806,      -- Creature of Nightmare
+    6253,       -- Backhand
+    6466,       -- Axe Toss
+    8242,       -- Shield Slam
+    8285,       -- Rampage
+    6524,       -- Ground Tremor
+    6607,       -- Lash
+    7399,       -- Terrify
+    8150,       -- Thundercrack
+    11020,      -- Petrify
+    11641,      -- Hex
+    17307,      -- Knockout
+    16075,      -- Throw Axe
+    16104,      -- Crystallize
+    11836,      -- Freeze Solid
+    29419,      -- Flash Bomb
+    6304,       -- Rhahk'Zor Slam
+    6435,       -- Smite Slam
+    6432,       -- Smite Stomp
+    228,        -- Polymorph: Chicken
+    8040,       -- Druid's Slumber
+    7967,       -- Naralex's Nightmare
+    7139,       -- Fel Stomp
+    7621,       -- Arugal's Curse
+    7803,       -- Thundershock
+    7074,       -- Screams of the Past
+    8281,       -- Sonic Burst
+    8359,       -- Left for Dead
+    9256,       -- Deep Sleep
+    12946,      -- Putrid Stench
+    3636,       -- Crystalline Slumber
+    10093,      -- Harsh Winds
+    21808,      -- Summon Shardlings
+    21869,      -- Repulsive Gaze
+    12888,      -- Cause Insanity
+    12480,      -- Hex of Jammal'an
+    12890,      -- Deep Slumber
+    25774,      -- Mind Shatter
+    15471,      -- Enveloping Web
+    3609,       -- Paralyzing Poison
+    17492,      -- Hand of Thaurissan
+    14870,      -- Drunken Stupor
+    13902,      -- Fist of Ragnaros
+    6945,       -- Chest Pains
+    3551,       -- Skull Crack
+    15618,      -- Snap Kick
+    16508,      -- Intimidating Roar
+    16497,      -- Stun Bomb
+    17405,      -- Domination
+    16798,      -- Enchanting Lullaby
+    12734,      -- Ground Smash
+    17293,      -- Burning Winds
+    16869,      -- Ice Tomb
+    22856,      -- Ice Lock
+    16838,      -- Banshee Shriek
+}
+
+C_Timer.After(11, function()
+    for i = 1, #crowdControls do
+        local name = GetSpellInfo(crowdControls[i])
+        if name then
+            namespace.crowdControls[name] = 1
+        end
+    end
+    crowdControls = nil
+end)
+
+-- List of player interrupts that can lock out a school (not silences)
+namespace.playerInterrupts = {
+    [GetSpellInfo(2139)] = 1,  -- Counterspell
+    [GetSpellInfo(1766)] = 1,  -- Kick
+    [GetSpellInfo(8042)] = 1,  -- Earth Shock
+    [GetSpellInfo(19244)] = 1, -- Spell Lock
+    [GetSpellInfo(6552)] = 1,  -- Pummel
+    [GetSpellInfo(16979)] = 1, -- Feral Charge
+}
+
+-- Skip pushback calculation for these spells since they
+-- have chance to ignore pushback when talented, or is always immune.
+namespace.pushbackBlacklist = {
+    [GetSpellInfo(1064)] = 1,       -- Chain Heal
+    [GetSpellInfo(25357)] = 1,      -- Healing Wave
+    [GetSpellInfo(8004)] = 1,       -- Lesser Healing Wave
+    [GetSpellInfo(2061)] = 1,       -- Flash Heal
+    [GetSpellInfo(2054)] = 1,       -- Heal
+    [GetSpellInfo(2050)] = 1,       -- Lesser Heal
+    [GetSpellInfo(596)] = 1,        -- Prayer of Healing
+    [GetSpellInfo(25314)] = 1,      -- Greater Heal
+    [GetSpellInfo(19750)] = 1,      -- Flash of Light
+    [GetSpellInfo(635)] = 1,        -- Holy Light
+    -- Druid heals are afaik many times not talented so ignoring them for now
+
+    [GetSpellInfo(4068)] = 1,       -- Iron Grenade
+    [GetSpellInfo(19769)] = 1,      -- Thorium Grenade
+    [GetSpellInfo(13278)] = 1,      -- Gnomish Death Ray
+    [GetSpellInfo(20589)] = 1,      -- Escape Artist
+}
+
+-- Player spells that can't be interrupted
+namespace.uninterruptibleList = {
     [GetSpellInfo(4068)] = 1,       -- Iron Grenade
     [GetSpellInfo(19769)] = 1,      -- Thorium Grenade
     [GetSpellInfo(13808)] = 1,      -- M73 Frag Grenade
@@ -1432,29 +1588,289 @@ namespace.crowdControls = {
     [GetSpellInfo(4067)] = 1,       -- Big Bronze Bomb
     [GetSpellInfo(4066)] = 1,       -- Small Bronze Bomb
     [GetSpellInfo(4065)] = 1,       -- Large Copper Bomb
-    [GetSpellInfo(13237)] = 1,      -- Goblin Mortar
-    [GetSpellInfo(835)] = 1,        -- Tidal Charm
-    [GetSpellInfo(13181)] = 1,      -- Gnomish Mind Control Cap
-    [GetSpellInfo(12562)] = 1,      -- The Big One
-    [GetSpellInfo(15283)] = 1,      -- Stunning Blow (Weapon Proc)
-    [GetSpellInfo(56)] = 1,         -- Stun (Weapon Proc)
-    [GetSpellInfo(26108)] = 1,      -- Glimpse of Madness
+    [GetSpellInfo(13278)] = 1,      -- Gnomish Death Ray TODO: verify
+    [GetSpellInfo(23041)] = 1,      -- Call Anathema
+    [GetSpellInfo(20589)] = 1,      -- Escape Artist
+    [GetSpellInfo(20549)] = 1,      -- War Stomp
+    [GetSpellInfo(1510)] = 1,       -- Volley
+    [GetSpellInfo(20904)] = 1,      -- Aimed Shot
+    [GetSpellInfo(11605)] = 1,      -- Slam
+    [GetSpellInfo(6461)] = 1,       -- Pick Lock
+    [GetSpellInfo(1842)] = 1,       -- Disarm Trap
+    [GetSpellInfo(2641)] = 1,       -- Dismiss Pet
+    [GetSpellInfo(2480)] = 1,       -- Shoot Bow
+    [GetSpellInfo(7918)] = 1,       -- Shoot Gun
+    [GetSpellInfo(7919)] = 1,       -- Shoot Crossbow
+    [GetSpellInfo(11202)] = 1,      -- Crippling Poison
+    [GetSpellInfo(3421)] = 1,       -- Crippling Poison II
+    [GetSpellInfo(2835)] = 1,       -- Deadly Poison
+    [GetSpellInfo(2837)] = 1,       -- Deadly Poison II
+    [GetSpellInfo(11355)] = 1,      -- Deadly Poison III
+    [GetSpellInfo(11356)] = 1,      -- Deadly Poison IV
+    [GetSpellInfo(25347)] = 1,      -- Deadly Poison V
+    [GetSpellInfo(8681)] = 1,       -- Instant Poison
+    [GetSpellInfo(8686)] = 1,       -- Instant Poison II
+    [GetSpellInfo(8688)] = 1,       -- Instant Poison III
+    [GetSpellInfo(11338)] = 1,      -- Instant Poison IV
+    [GetSpellInfo(11339)] = 1,      -- Instant Poison V
+    [GetSpellInfo(11343)] = 1,      -- Instant Poison VI
+    [GetSpellInfo(5761)] = 1,       -- Mind-numbing Poison
+    [GetSpellInfo(8693)] = 1,       -- Mind-numbing Poison II
+    [GetSpellInfo(11399)] = 1,      -- Mind-numbing Poison III
+    [GetSpellInfo(13227)] = 1,      -- Wound Poison
+    [GetSpellInfo(13228)] = 1,      -- Wound Poison II
+    [GetSpellInfo(13229)] = 1,      -- Wound Poison III
+    [GetSpellInfo(13230)] = 1,      -- Wound Poison IV
+
+    -- these are technically uninterruptible but breaks on dmg
+    [GetSpellInfo(22999)] = 1,      -- Defibrillate
+    [GetSpellInfo(746)] = 1,        -- First Aid
+    [GetSpellInfo(20577)] = 1,      -- Cannibalize
+}
+
+-- Casts that should be stopped on damage received
+namespace.stopCastOnDamageList = {
+    [GetSpellInfo(8690)] = 1, -- Hearthstone
+    [GetSpellInfo(5784)] = 1, -- Summon Felsteed
+    [GetSpellInfo(23161)] = 1, -- Summon Dreadsteed
+    [GetSpellInfo(13819)] = 1, -- Summon Warhorse
+    [GetSpellInfo(23214)] = 1, -- Summon Charger
+    [GetSpellInfo(2006)] = 1, -- Resurrection
+    [GetSpellInfo(2008)] = 1, -- Ancestral Spirit
+    [GetSpellInfo(7328)] = 1, -- Redemption
+    [GetSpellInfo(22999)] = 1, -- Defibrillate
+    [GetSpellInfo(3565)] = 1, -- Teleport: Darnassus
+    [GetSpellInfo(3562)] = 1, -- Teleport: Ironforge
+    [GetSpellInfo(18960)] = 1, -- Teleport: Moonglade
+    [GetSpellInfo(3567)] = 1, -- Teleport: Orgrimmar
+    [GetSpellInfo(3561)] = 1, -- Teleport: Stormwind
+    [GetSpellInfo(3566)] = 1, -- Teleport: Thunder Bluff
+    [GetSpellInfo(3563)] = 1, -- Teleport: Undercity
+    [GetSpellInfo(556)] = 1, -- Astrall Recall
+    -- First Aid not included here since we track aura removed
+}
+
+-- Player spells that shouldn't be stopped on movement
+namespace.castStopBlacklist = {
+    [GetSpellInfo(4068)] = 1,       -- Iron Grenade
+    [GetSpellInfo(19769)] = 1,      -- Thorium Grenade
+    [GetSpellInfo(13808)] = 1,      -- M73 Frag Grenade
+    [GetSpellInfo(6405)] = 1,       -- Furgbolg Form
+}
+
+-- Casts that can't be slowed or speed up
+namespace.unaffectedCastModsSpells = {
+    -- Player Spells
+    [11605] = 1, -- Slam
+    [6651] = 1, -- Instant Toxin
+    [1842] = 1, -- Disarm Trap
+    [6461] = 1, -- Pick Lock
+    [2641] = 1, -- Dismiss Pet
+    [2480] = 1, -- Shoot Bow
+    [7918] = 1, -- Shoot Gun
+    [20549] = 1, -- War Stomp
+    [20589] = 1, -- Escape Artist
+    [22027] = 1, -- Remove Insignia
+    [6510] = 1, -- Blinding Powder
+    [7355] = 1, -- Stuck
+
+    -- NPCs and Others
+    [2835] = 1, -- Deadly Poison
+    [3131] = 1, -- Frost Breath
+    [15664] = 1, -- Venom Spit
+    [7068] = 1, -- Veil of Shadow
+    [16247] = 1, -- Curse of Thorns
+    [14030] = 1, -- Hooked Net
+    [20716] = 1, -- Sand Breath
+    [8275] = 1, -- Poisoned Shot
+    [1980] = 1, -- Bombard
+    [3015] = 1, -- Bombard II
+    [1536] = 1, -- Longshot II
+    [3007] = 1, -- Longshot III
+    [1540] = 1, -- Volley
+    [3013] = 1, -- Volley II
+    [4164] = 1, -- Throw Rock
+    [4165] = 1, -- Throw Rock II
+    [3537] = 1, -- Minions of Malathrom
+    [5567] = 1, -- Miring Mud
+    [28352] = 1, -- Breath of Sargeras
+    [7106] = 1, -- Dark Restore
+    [4075] = 1, -- Large Seaforium Charge
+    [5106] = 1, -- Crystal Flash
+    [22979] = 1, -- Shadow Flame
+    [3611] = 1, -- Minion of Morganth
+    [27794] = 1, -- Cleave
+    [25247] = 1, -- Longsight
+    [5208] = 1, -- Poisoned Harpoon
+    [14532] = 1, -- Creeper Venom
+    [3132] = 1, -- Chilling Breath
+    [3650] = 1, -- Sling Mud
+    [3651] = 1, -- Shield of Reflection
+    [3143] = 1, -- Glacial Roar
+    [6296] = 1, -- Enchant: Fiery Blaze
+    [24194] = 1, -- Uther's Tribute
+    [7364] = 1, -- Light Torch
+    [12684] = 1, -- Kadrak's Flag
+    [7919] = 1, -- Shoot Crossbow
+    [6907] = 1, -- Diseased Slime
+    [3204] = 1, -- Sapper Explode
+    [26234] = 1, -- Submerge Visual
+    [26063] = 1, -- Ouro Submerge Visual
+    [6925] = 1, -- Gift of the Xavian
+    [7951] = 1, -- Toxic Spit
+    [24195] = 1, -- Grom's Tribute
+    [16554] = 1, -- Toxic Bolt
+    [15495] = 1, -- Explosive Shot
+    [6530] = 1, -- Sling Dirt
+    [26072] = 1, -- Dust Cloud
+    [5514] = 1, -- Darken Vision
+    [11016] = 1, -- Soul Bite
+    [21050] = 1, -- Melodious Rapture
+    [4520] = 1, -- Wide Sweep
+    [4526] = 1, -- Mass Dispell
+    [6576] = 1, -- Intimidating Growl
+    [20627] = 1, -- Lightning Breath
+    [25793] = 1, -- Demon Summoning Torch
+    [23254] = 1, -- Redeeming the Soul
+    [18711] = 1, -- Forging
+    [12198] = 1, -- Marksman Hit
+    [8153] = 1, -- Owl Form
+    [6626] = 1, -- Set NG-5 Charge (Blue)
+    [6630] = 1, -- Set NG-5 Charge (Red)
+    [30081] = 1, -- Retching Plague
+    [6656] = 1, -- Remote Detonate
+    [10254] = 1, -- Stone Dwarf Awaken Visual
+    [3359] = 1, -- Drink Potion
+    [17618] = 1, -- Summon Risen Lackey
+    [8286] = 1, -- Summon Boar Spirit
+    [17235] = 1, -- Raise Undead Scarab
+    [8386] = 1, -- Attacking
+    [28311] = 1, -- Slime Bolt
+    [1698] = 1, -- Shockwave
+    [23008] = 1, -- Powerful Seaforium Charge
+    [6951] = 1, -- Decayed Strength
+    [28732] = 1, -- Widow's Embrace
+    [28995] = 1, -- Stoneskin
+    [24706] = 1, -- Toss Stink Bomb
+    [6257] = 1, -- Torch Toss
+    [7359] = 1, -- Bright Campfire
+    [16590] = 1, -- Summon Zombie
+    [9612] = 1, -- Ink Spray
+    [3436] = 1, -- Wandering Plague
+    [9636] = 1, -- Summon Swamp Spirit
+    [17204] = 1, -- Summon Skeleton
+    [7896] = 1, -- Exploding Shot
+    [23392] = 1, -- Boulder
+    [7920] = 1, -- Mebok Smart Drink
+    [8682] = 1, -- Fake Shot
+    [28614] = 1, -- Pointy Spike
+    [8016] = 1, -- Spirit Decay
+    [26102] = 1, -- Sand Blast
+    [3477] = 1, -- Spirit Steal
+    [5395] = 1, -- Death Capsule
+    [5159] = 1, -- Melt Ore
+    [5403] = 1, -- Crash of Waves
+    [8256] = 1, -- Lethal Toxin
+    [6441] = 1, -- Explosive Shells
+    [10850] = 1, -- Powerful Smelling Salts
+    [3488] = 1, -- Felstrom Resurrection
+    [10346] = 1, -- Machine Gun
+    [12740] = 1, -- Summon Infernal Servant
+    [6469] = 1, -- Skeletal Miner Explode
+    [11397] = 1, -- Diseased Shot
+    [4950] = 1, -- Summon Helcular's Puppets
+    [8363] = 1, -- Parasite
+    [16531] = 1, -- Summon Frail Skeleton
+    [16072] = 1, -- Purify and Place Food
+    [20629] = 1, -- Corrosive Venom Spit
+    [28615] = 1, -- Spike Volley
+    [19566] = 1, -- Salt Shaker
+    [7901] = 1, -- Decayed Agility
+    [7054] = 1, -- Forsaken Skills
+    [24189] = 1, -- Force Punch
+}
+
+local function IsNotChanneled(cast) return not cast.isChanneled end
+local function IsRangedSpell(cast) return cast.spellID == 20904 or cast.spellID == 1540 end -- Aimed Shot/Volley
+
+-- Buffs that modify casting speed
+namespace.castModifiers = {
+    [GetSpellInfo(22812)] = { -- Barkskin
+        value = 1.0,
+    },
+
+    [GetSpellInfo(16886)] = { -- Nature's Grace
+        value = -0.5,
+        condition = IsNotChanneled,
+    },
+
+    [GetSpellInfo(23723)] = { -- Mind Quickening
+        percentage = true,
+        value = 33,
+        condition = IsNotChanneled,
+    },
+
+    [GetSpellInfo(23733)] = { -- Blinding Light
+        percentage = true,
+        value = 33,
+        condition = IsNotChanneled,
+    },
+
+    [GetSpellInfo(20554)] = { -- Berserking
+        percentage = true,
+        value = 10,
+        condition = IsNotChanneled,
+    },
+
+    [GetSpellInfo(24542)] = { -- Nimble Healing Touch
+        percentage = true,
+        value = 40,
+        condition = function(cast) return cast.spellID == 9888 end,
+    },
+
+    [GetSpellInfo(24546)] = { -- Rapid Healing
+        percentage = true,
+        value = 40,
+        condition = function(cast) return cast.spellID == 25314 end,
+    },
+
+    [GetSpellInfo(3045)] = { -- Rapid Fire
+        percentage = true,
+        value = 40,
+        condition = IsRangedSpell,
+    },
+
+    [GetSpellInfo(6150)] = { -- Quick Shots
+        percentage = true,
+        value = 30,
+        condition = IsRangedSpell,
+    },
+
+    [GetSpellInfo(28866)] = { -- Kiss of the Spider
+        percentage = true,
+        value = 20,
+        condition = IsRangedSpell,
+    },
 }
 
 -- Addon Savedvariables
 namespace.defaultConfig = {
-    version = "10", -- settings version
-    pushbackDetect = true,
-    movementDetect = true,
+    version = "25", -- settings version
     locale = GetLocale(),
+    npcCastUninterruptibleCache = {},
+    usePerCharacterSettings = false,
 
     nameplate = {
         enabled = true,
+        showForFriendly = true,
+        showForEnemy = true,
         width = 106,
         height = 11,
         iconSize = 13,
-        showCastInfoOnly = false,
+        showBorderShield = true,
         showTimer = false,
+        showIcon = true,
+        showSpark = true,
         autoPosition = true,
         castFont = _G.STANDARD_TEXT_FONT,
         castFontSize = 8,
@@ -1466,10 +1882,16 @@ namespace.defaultConfig = {
         iconPositionY = 0,
         borderColor = { 1, 0.796078431372549, 0, 1 },
         statusColor = { 1, 0.7, 0, 1 },
+        statusColorFailed = { 1, 0, 0 },
         statusColorChannel = { 0, 1, 0, 1 },
+        statusColorUninterruptible = { 0.7, 0.7, 0.7, 1 },
         textColor = { 1, 1, 1, 1 },
         textPositionX = 0,
         textPositionY = 0,
+        textPoint = "CENTER",
+        frameLevel = 10,
+        statusBackgroundColor = { 0, 0, 0, 0.535 },
+        ignoreParentAlpha = false,
     },
 
     target = {
@@ -1477,8 +1899,10 @@ namespace.defaultConfig = {
         width = 150,
         height = 15,
         iconSize = 16,
-        showCastInfoOnly = false,
+        showBorderShield = true,
         showTimer = false,
+        showIcon = true,
+        showSpark = true,
         autoPosition = true,
         castFont = _G.STANDARD_TEXT_FONT,
         castFontSize = 10,
@@ -1490,9 +1914,196 @@ namespace.defaultConfig = {
         iconPositionY = 0,
         borderColor = { 1, 1, 1, 1 },
         statusColor = { 1, 0.7, 0, 1 },
+        statusColorFailed = { 1, 0, 0 },
         statusColorChannel = { 0, 1, 0, 1 },
+        statusColorUninterruptible = { 0.7, 0.7, 0.7, 1 },
         textColor = { 1, 1, 1, 1 },
         textPositionX = 0,
         textPositionY = 0,
+        textPoint = "CENTER",
+        frameLevel = 10,
+        statusBackgroundColor = { 0, 0, 0, 0.535 },
+        ignoreParentAlpha = false,
     },
+
+    focus = {
+        enabled = true,
+        width = 150,
+        height = 15,
+        iconSize = 16,
+        showBorderShield = true,
+        showTimer = false,
+        showIcon = true,
+        showSpark = true,
+        autoPosition = false,
+        castFont = _G.STANDARD_TEXT_FONT,
+        castFontSize = 10,
+        castStatusBar = "Interface\\TargetingFrame\\UI-StatusBar",
+        castBorder = "Interface\\CastingBar\\UI-CastingBar-Border-Small",
+        hideIconBorder = false,
+        position = { "TOPLEFT", 275, -260 },
+        iconPositionX = -5,
+        iconPositionY = 0,
+        borderColor = { 1, 1, 1, 1 },
+        statusColor = { 1, 0.7, 0, 1 },
+        statusColorFailed = { 1, 0, 0 },
+        statusColorChannel = { 0, 1, 0, 1 },
+        statusColorUninterruptible = { 0.7, 0.7, 0.7, 1 },
+        textColor = { 1, 1, 1, 1 },
+        textPositionX = 0,
+        textPositionY = 0,
+        textPoint = "CENTER",
+        frameLevel = 10,
+        statusBackgroundColor = { 0, 0, 0, 0.535 },
+        ignoreParentAlpha = false,
+    },
+
+    party = {
+        enabled = false,
+        width = 120,
+        height = 12,
+        iconSize = 16,
+        showTimer = false,
+        showBorderShield = true,
+        showIcon = true,
+        showSpark = true,
+        autoPosition = false,
+        castFont = _G.STANDARD_TEXT_FONT,
+        castFontSize = 9,
+        castStatusBar = "Interface\\TargetingFrame\\UI-StatusBar",
+        castBorder = "Interface\\CastingBar\\UI-CastingBar-Border",
+        hideIconBorder = false,
+        position = { "CENTER", 141, 6 },
+        iconPositionX = -5,
+        iconPositionY = 0,
+        borderColor = { 1, 1, 1, 1 },
+        statusColor = { 1, 0.7, 0, 1 },
+        statusColorFailed = { 1, 0, 0 },
+        statusColorChannel = { 0, 1, 0, 1 },
+        statusColorUninterruptible = { 0.7, 0.7, 0.7, 1 },
+        textColor = { 1, 1, 1, 1 },
+        textPositionX = 0,
+        textPositionY = 0,
+        textPoint = "CENTER",
+        frameLevel = 10,
+        statusBackgroundColor = { 0, 0, 0, 0.535 },
+        ignoreParentAlpha = false,
+    },
+
+    player = {
+        enabled = false,
+        width = 190,
+        height = 20,
+        iconSize = 22,
+        showBorderShield = false,
+        showTimer = false,
+        showIcon = true,
+        showSpark = true,
+        autoPosition = true,
+        castFont = _G.STANDARD_TEXT_FONT,
+        castFontSize = 12,
+        castStatusBar = "Interface\\RaidFrame\\Raid-Bar-Hp-Fill",
+        castBorder = "Interface\\CastingBar\\UI-CastingBar-Border",
+        hideIconBorder = false,
+        position = { "CENTER", -18, -87 },
+        iconPositionX = -10,
+        iconPositionY = 0,
+        borderColor = { 1, 1, 1, 1 },
+        statusColor = { 1, 0.7, 0, 1 },
+        statusColorFailed = { 1, 0, 0 },
+        statusColorChannel = { 0, 1, 0, 1 },
+        statusColorUninterruptible = { 0.7, 0.7, 0.7, 1 },
+        textColor = { 1, 1, 1, 1 },
+        textPositionX = 0,
+        textPositionY = 1,
+        textPoint = "CENTER",
+        frameLevel = 10,
+        statusBackgroundColor = { 0, 0, 0, 0.535 },
+        ignoreParentAlpha = false,
+    },
+}
+
+-- NPC spells that can't be interrupted. (Sensible defaults, doesn't include all)
+namespace.defaultConfig.npcCastUninterruptibleCache = {
+    ["11981" .. GetSpellInfo(18500)] = true, -- Flamegor Wing Buffet
+    ["12459" .. GetSpellInfo(25417)] = true, -- Blackwing Warlock Shadowbolt
+    ["12264" .. GetSpellInfo(1449)] = true, -- Shazzrah Arcane Explosion
+    ["13280" .. GetSpellInfo(22421)] = true, -- Hydrospawn Massive Geyser
+    ["11583" .. GetSpellInfo(18431)] = true, -- Nefarian Bellowing Roar
+    ["11983" .. GetSpellInfo(18500)] = true, -- Firemaw Wing Buffet
+    ["11983" .. GetSpellInfo(22539)] = true, -- Firemaw Shadow Flame
+    ["12265" .. GetSpellInfo(133)] = true, -- Lava Spawn Fireball
+    ["11492" .. GetSpellInfo(22662)] = true, -- Alzzin the Wildshaper Wither
+    ["10438" .. GetSpellInfo(116)] = true, -- Maleki the Pallid Frostbolt
+    ["12465" .. GetSpellInfo(22425)] = true, -- Death Talon Wyrmkin Fireball Voley
+    ["14020" .. GetSpellInfo(23310)] = true, -- Chromaggus Time Lapse
+    ["14020" .. GetSpellInfo(23316)] = true, -- Chromaggus Ignite Flesh
+    ["14020" .. GetSpellInfo(23309)] = true, -- Chromaggus Incinerate
+    ["14020" .. GetSpellInfo(23187)] = true, -- Chromaggus Frost Burn
+    ["14020" .. GetSpellInfo(23314)] = true, -- Chromaggus Corrosive Acid
+    ["12468" .. GetSpellInfo(2120)] = true, -- Death Talon Hatcher Flamestrike
+    ["13020" .. GetSpellInfo(9573)] = true, -- Vaelastrasz the Corrupt Flame Breath
+    ["12435" .. GetSpellInfo(22425)] = true, -- Razorgore the Untamed Fireball Volley
+    ["14601" .. GetSpellInfo(18500)] = true, -- Ebonroc Wing Buffet
+    ["14601" .. GetSpellInfo(22539)] = true, -- Ebonroc Shadow Flame
+    ["11981" .. GetSpellInfo(22539)] = true, -- Flamegor Shadow Flame
+    ["11583" .. GetSpellInfo(22539)] = true, -- Nefarian Shadow Flame
+    ["10184" .. GetSpellInfo(18500)] = true, -- Onyxia Wing Buffet
+    ["12118" .. GetSpellInfo(20604)] = true, -- Lucifron Dominate Mind
+    ["12201" .. GetSpellInfo(9483)] = true, -- Princess Theradras Boulder
+    ["10184" .. GetSpellInfo(9573)] = true, -- Onyxia Flame Breath
+    ["10184" .. GetSpellInfo(133)] = true, -- Onyxia Fireball
+    ["11492" .. GetSpellInfo(22661)] = true, -- Alzzin the Wildshaper Enervate
+    ["11490" .. GetSpellInfo(1050)] = true, -- Zevrim Thornhoof Sacrifice
+    ["11490" .. GetSpellInfo(22478)] = true,  -- Zevrim Thornhoof Intense Pain
+    ["10436" .. GetSpellInfo(16868)] = true, -- Baroness Anastari Banshee Wail
+    ["10184" .. GetSpellInfo(18431)] = true, -- Onyxia Bellowing Roar
+    ["11492" .. GetSpellInfo(9616)] = true, -- Alzzin the Wildshaper Wild Regeneration
+    ["13996" .. GetSpellInfo(22334)] = true, -- Blackwing Technician Bomb
+    ["11359" .. GetSpellInfo(16430)] = true, -- Soulflayer Soul Tap
+    ["11372" .. GetSpellInfo(24011)] = true, -- Razzashi Adder Venom Spit
+    ["14834" .. GetSpellInfo(24322)] = true, -- Hakkar Blood Siphon
+    ["14509" .. GetSpellInfo(24189)] = true, -- High Priest Thekal Force Punch
+    ["11382" .. GetSpellInfo(24314)] = true, -- Broodlord Mandokir Threatening Gaze
+    ["14750" .. GetSpellInfo(24024)] = true, -- Gurubashi Bat Rider Unstable Concoction
+    ["12259" .. GetSpellInfo(686)] = true, -- Gehennas Shadow Bolt
+    ["11339" .. GetSpellInfo(22908)] = true, -- Hakkari Shadow Hunter Volley
+    ["14507" .. GetSpellInfo(14914)] = true, -- High Priest Venoxis Holy Fire
+    ["13161" .. GetSpellInfo(21188)] = true, -- Aerie Gryphon Stun Bomb Attack
+    ["14943" .. GetSpellInfo(21188)] = true, -- Guse's War Rider Stun Bomb Attack
+    ["14947" .. GetSpellInfo(21188)] = true, -- Ichman's Gryphon Stun Bomb Attack
+    ["14944" .. GetSpellInfo(21188)] = true, -- Jeztor's War Rider Stun Bomb Attack
+    ["14945" .. GetSpellInfo(21188)] = true, -- Mulverick's War Rider Stun Bomb Attack
+    ["12119" .. GetSpellInfo(20604)] = true, -- Flamewaker Protector Dominate Mind
+    ["12459" .. GetSpellInfo(22372)] = true, -- Blackwing Warlock Demon Portal
+    ["15114" .. GetSpellInfo(22479)] = true, -- Gahz'ranka Frost Breath
+    ["15114" .. GetSpellInfo(22421)] = true, -- Gahz'ranka Massive Geyser
+    ["12557" .. GetSpellInfo(14515)] = true, -- Grethok the Controller Dominate Mind
+    ["15727" .. GetSpellInfo(26134)] = true, -- C'Thun Eye Beam
+    ["15589" .. GetSpellInfo(26134)] = true, -- Eye of C'Thun Eye Beam
+    ["15517" .. GetSpellInfo(26102)] = true, -- Ouro Sand Blast
+    ["15517" .. GetSpellInfo(26103)] = true, -- Ouro Sweep
+    ["15517" .. GetSpellInfo(26616)] = true, -- Ouro Boulder
+    ["15369" .. GetSpellInfo(25748)] = true, -- Ayamiss the Hunter Poison Stinger
+    ["15276" .. GetSpellInfo(26006)] = true, -- Emperor Vek'lor
+    ["6109" .. GetSpellInfo(21099)] = true, -- Azuregos Frost Breath
+    ["6109" .. GetSpellInfo(21097)] = true, -- Azuregos Manastorm
+    ["12397" .. GetSpellInfo(15245)] = true, -- Lord Kazzak Shadow Bolt Volley
+    ["12397" .. GetSpellInfo(7588)] = true, -- Lord Kazzak Void Bolt
+    ["14887" .. GetSpellInfo(16247)] = true, -- Ysondre Curse of Thorns
+    ["14890" .. GetSpellInfo(22686)] = true, -- Taerar Bellowing Roar
+    ["15246" .. GetSpellInfo(11981)] = true, -- Qiraji Mindslayer Mana Burn
+    ["15246" .. GetSpellInfo(17194)] = true, -- Qiraji Mindslayer Mind Blast
+    ["15246" .. GetSpellInfo(22919)] = true, -- Qiraji Mindslayer Mind Flay
+    ["15311" .. GetSpellInfo(26069)] = true, -- Anubisath Warder Silence
+    ["15311" .. GetSpellInfo(11922)] = true, -- Anubisath Warder Entangling Roots
+    ["15311" .. GetSpellInfo(12542)] = true, -- Anubisath Warder Fear
+    ["15311" .. GetSpellInfo(26072)] = true, -- Anubisath Warder Dust Cloud
+    ["15335" .. GetSpellInfo(21067)] = true, -- Flesh Hunter Poison Bolt
+    ["15247" .. GetSpellInfo(11981)] = true, -- Qiraji Brainwasher Mana Burn
+    ["15247" .. GetSpellInfo(16568)] = true, -- Qiraji Brainwasher Mind Flay
+    ["11881" .. GetSpellInfo(26616)] = true, -- Twilight Geolord Boulder
+    ["11729" .. GetSpellInfo(19452)] = true, -- Hive'Zora Hive Sister Toxic Spit
+    ["15323" .. GetSpellInfo(26381)] = true, -- Hive'Zara Sandstalker Burrow
+    ["15263" .. GetSpellInfo(785)] = true, -- The Prophet Skeram True Fulfillment
 }

@@ -36,15 +36,17 @@ local function OnDragStop(self)
     local unit = self.unitID
     if strfind(unit, "nameplate") then
         unit = "nameplate" -- make it match our DB key
+    elseif strfind(unit, "party") then
+        unit = "party"
     end
 
     -- Frame loses relativity to parent and is instead relative to UIParent after
     -- dragging so we can't just use self:GetPoint() here
     local x, y = CalcScreenGetPoint(self)
-    ClassicCastbarsDB[unit].position[1] = "CENTER" -- has to be center for CalcScreenGetPoint to work
-    ClassicCastbarsDB[unit].position[2] = x
-    ClassicCastbarsDB[unit].position[3] = y
-    ClassicCastbarsDB[unit].autoPosition = false
+    ClassicCastbars.db[unit].position[1] = "CENTER" -- has to be center for CalcScreenGetPoint to work
+    ClassicCastbars.db[unit].position[2] = x
+    ClassicCastbars.db[unit].position[3] = y
+    ClassicCastbars.db[unit].autoPosition = false
 
     -- Reanchor from UIParent back to parent frame
     self:SetParent(self.parent)
@@ -55,6 +57,8 @@ end
 function TestMode:ToggleCastbarMovable(unitID)
     if unitID == "nameplate" then
         unitID = "nameplate-testmode"
+    elseif unitID == "party" then
+        unitID = "party-testmode"
     end
 
     if self.isTesting[unitID] then
@@ -67,7 +71,7 @@ function TestMode:ToggleCastbarMovable(unitID)
         self:SetCastbarMovable(unitID)
         self.isTesting[unitID] = true
 
-        if ClassicCastbarsDB.nameplate.enabled and unitID == "nameplate-testmode" then
+        if ClassicCastbars.db.nameplate.enabled and unitID == "nameplate-testmode" then
             self:RegisterEvent("PLAYER_TARGET_CHANGED")
         end
     end
@@ -76,6 +80,12 @@ end
 function TestMode:OnOptionChanged(unitID)
     if unitID == "nameplate" then
         unitID = "nameplate-testmode"
+    elseif unitID == "party" then
+        unitID = "party-testmode"
+    end
+
+    if unitID == "player" then
+        return ClassicCastbars:SkinPlayerCastbar()
     end
 
     -- Immediately update castbar display after changing an option
@@ -87,14 +97,18 @@ function TestMode:OnOptionChanged(unitID)
 end
 
 function TestMode:SetCastbarMovable(unitID, parent)
+    local parentFrame = parent or ClassicCastbars.AnchorManager:GetAnchor(unitID)
+    if not parentFrame then
+        if unitID == "target" or unitID == "nameplate-testmode" then
+            print(_G.ERR_GENERIC_NO_TARGET)
+        end
+        return
+    end
+
     local castbar = ClassicCastbars:GetCastbarFrame(unitID)
     castbar:EnableMouse(true)
     castbar:SetMovable(true)
-
-    if unitID == "target" then
-        -- restricted frames (nameplates) can't be clamped
-        castbar:SetClampedToScreen(true)
-    end
+    castbar:SetClampedToScreen(true)
 
     castbar.tooltip = castbar.tooltip or castbar:CreateFontString(nil, "ARTWORK", "GameFontNormal")
     castbar.tooltip:SetPoint("TOP", castbar, 0, 15)
@@ -104,9 +118,6 @@ function TestMode:SetCastbarMovable(unitID, parent)
     -- Note: we use OnMouseX instead of OnDragX as it's more accurate
     castbar:SetScript("OnMouseDown", castbar.StartMoving)
     castbar:SetScript("OnMouseUp", OnDragStop)
-
-    local parentFrame = parent or ClassicCastbars.AnchorManager:GetAnchor(unitID)
-    if not parentFrame then return end -- sanity check
 
     castbar._data = dummySpellData -- Set test data for :DisplayCastbar()
     castbar.parent = parentFrame
@@ -118,23 +129,61 @@ function TestMode:SetCastbarMovable(unitID, parent)
     castbar.Timer:SetText("0.75")
     castbar.Spark:SetPoint("CENTER", castbar, "LEFT", (5 / 10) * castbar:GetWidth(), 0)
 
-    castbar:ClearAllPoints() -- needed here to work with restricted frames
-    ClassicCastbars:DisplayCastbar(castbar, unitID)
+    if IsModifierKeyDown() then
+        castbar._data.isUninterruptible = true
+    else
+        castbar._data.isUninterruptible = false
+    end
+
+    if unitID == "party-testmode" then
+        parentFrame:SetAlpha(1)
+        parentFrame:Show()
+    end
+
+    if unitID == "player" then
+        castbar.Text:SetText(dummySpellData.spellName)
+        castbar.Icon:SetTexture(dummySpellData.icon)
+        castbar.Flash:SetAlpha(0)
+        castbar.casting = nil
+		castbar.channeling = nil
+		castbar.holdTime = 0
+        castbar.fadeOut = nil
+        castbar.flash = nil
+        if IsModifierKeyDown() then
+            castbar:SetStatusBarColor(castbar.nonInterruptibleColor:GetRGB())
+        else
+            castbar:SetStatusBarColor(castbar.startCastColor:GetRGB())
+        end
+        castbar:SetAlpha(1)
+        castbar:Show()
+    else
+        ClassicCastbars:DisplayCastbar(castbar, unitID)
+    end
 end
 
 function TestMode:SetCastbarImmovable(unitID)
     local castbar = ClassicCastbars:GetCastbarFrame(unitID)
     castbar:Hide()
-    castbar.tooltip:Hide()
+    if castbar.tooltip then
+        castbar.tooltip:Hide()
+    end
 
     castbar.unitID = nil
     castbar.parent = nil
     castbar.isTesting = nil
     castbar:EnableMouse(false)
+    castbar.holdTime = 0
+
+    if unitID == "party-testmode" then
+        local parentFrame = castbar.parent or ClassicCastbars.AnchorManager:GetAnchor(unitID)
+        if parentFrame and not UnitExists("party1") then
+            parentFrame:Hide()
+        end
+    end
 end
 
 function TestMode:ReanchorOnNameplateTargetSwitch()
-    if not ClassicCastbarsDB.nameplate.enabled then return end
+    if not ClassicCastbars.db.nameplate.enabled then return end
 
     -- Reanchor castbar when we target a new nameplate/unit.
     -- We only want to show castbar for 1 nameplate at a time
