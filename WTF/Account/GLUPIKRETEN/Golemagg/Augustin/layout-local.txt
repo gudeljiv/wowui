@@ -1,4 +1,11 @@
 Version: 1
+Frame: KillCountFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 487
+Y: -154
+W: 250
+H: 142
 Frame: RangeDisplayMainFrame_playertarget
 FrameLevel: 1
 Anchor: CENTER
@@ -135,7 +142,7 @@ H: 50
 Frame: GameMenuFrame
 FrameLevel: 1
 Anchor: CENTER
-X: -7
-Y: 161
+X: -2
+Y: 146
 W: 195
 H: 292

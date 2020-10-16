@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 3279,
+	["session"] = 3293,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -3491,5 +3491,13 @@ BugGrabberDB = {
 			["session"] = 3273,
 			["counter"] = 350,
 		}, -- [441]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:132: bad argument #1 to 'pairs' (table expected, got no value)",
+			["time"] = "2020/10/16 21:27:09",
+			["locals"] = "(*temporary) = \"table expected, got no value\"\n = <function> defined =[C]:-1\n",
+			["stack"] = "[C]: in function `pairs'\nInterface\\AddOns\\xVermin\\LootHelper.lua:132: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:111>",
+			["session"] = 3281,
+			["counter"] = 1,
+		}, -- [442]
 	},
 }

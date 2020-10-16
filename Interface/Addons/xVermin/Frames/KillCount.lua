@@ -38,6 +38,7 @@ kc:SetBackdrop(
 kc:SetBackdropColor(0, 0, 0, 0.4)
 kc:SetFrameStrata("BACKGROUND")
 kc:CreateBeautyBorder(6)
+kc.isMoving = false
 
 ----------------------------
 -- Title of the frame
@@ -289,8 +290,6 @@ end
 
 local function DisplayData()
 	if xKillCount.show then
-		kc:ClearAllPoints()
-		kc:SetPoint(xKillCount.position.from, (xKillCount.position.anchor and xKillCount.position.anchor or nil), xKillCount.position.to, xKillCount.position.x, xKillCount.position.y)
 		kc:Show()
 	else
 		kc:Hide()
@@ -349,6 +348,11 @@ local function OnAddonLoaded()
 		if xKillCount[setting] == nil then
 			xKillCount[setting] = value
 		end
+	end
+
+	if xKillCount.show then
+		kc:ClearAllPoints()
+		kc:SetPoint(xKillCount.position.from, (xKillCount.position.anchor and xKillCount.position.anchor or nil), xKillCount.position.to, xKillCount.position.x, xKillCount.position.y)
 	end
 
 	SortData()
@@ -518,13 +522,14 @@ kc:SetScript(
 		if button == "LeftButton" and self.isMoving then
 			self:StopMovingOrSizing()
 			self.isMoving = false
+
+			local point, relativeTo, relativePoint, xOfs, yOfs = self:GetPoint()
+			xKillCount.position.from = point
+			xKillCount.position.anchor = relativeTo and relativeTo:GetName() or nil
+			xKillCount.position.to = relativePoint
+			xKillCount.position.x = xOfs
+			xKillCount.position.y = yOfs
 		end
-		local point, relativeTo, relativePoint, xOfs, yOfs = self:GetPoint()
-		xKillCount.position.from = point
-		xKillCount.position.anchor = relativeTo and relativeTo:GetName() or nil
-		xKillCount.position.to = relativePoint
-		xKillCount.position.x = xOfs
-		xKillCount.position.y = yOfs
 	end
 )
 

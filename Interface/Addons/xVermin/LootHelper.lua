@@ -124,19 +124,25 @@ bcf:SetScript(
 						manatick = UnitPower("player") - lastmana
 					end
 				end
-				lastmana = UnitPower("player")
 			else
 				manatick = 0
 			end
+			lastmana = UnitPower("player")
 
 			for _, costInfo in pairs(GetSpellPowerCost("Blizzard(Rank 1)")) do
-				costR1 = costInfo.cost
-				break
+				costR1 = 1
+				if costInfo and costInfo.cost then
+					costR1 = costInfo.cost
+					break
+				end
 			end
 
 			for _, costInfo in pairs(GetSpellPowerCost("Blizzard")) do
-				costMAX = costInfo.cost
-				break
+				costMAX = 1
+				if costInfo and costInfo.cost then
+					costMAX = costInfo.cost
+					break
+				end
 			end
 
 			if UnitPower("Player") == UnitPowerMax("player") or manatick == 0 then
