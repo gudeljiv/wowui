@@ -1,28 +1,32 @@
 
 xKillCount = {
 	["show"] = true,
+	["position"] = {
+		["y"] = -177.999755859375,
+		["x"] = 351.107574462891,
+		["to"] = "TOPLEFT",
+		["from"] = "TOPLEFT",
+	},
+	["experience"] = {
+		["pulltotal"] = 0,
+		["totaltotal"] = 222151,
+	},
 	["killLog"] = {
+		["Greater Healing Ward"] = {
+			["name"] = "Greater Healing Ward",
+			["count"] = 1,
+		},
 		["Zul'Farrak Dead Hero"] = {
 			["name"] = "Zul'Farrak Dead Hero",
-			["count"] = 2,
+			["count"] = 16,
 		},
 		["Zul'Farrak Zombie"] = {
 			["name"] = "Zul'Farrak Zombie",
-			["count"] = 82,
+			["count"] = 276,
 		},
 		["Sandfury Blood Drinker"] = {
 			["name"] = "Sandfury Blood Drinker",
 			["count"] = 1,
 		},
-	},
-	["experience"] = {
-		["totaltotal"] = 76398,
-		["pulltotal"] = 38887,
-	},
-	["position"] = {
-		["y"] = 0,
-		["x"] = 487.107421875,
-		["to"] = "TOPLEFT",
-		["from"] = "TOPLEFT",
 	},
 }

@@ -44,11 +44,6 @@ ChocolateBarDB = {
 	["addonVersion"] = "@project-version@",
 	["profiles"] = {
 		["Default"] = {
-			["locked"] = false,
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["moveFrames"] = false,
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -69,7 +64,21 @@ ChocolateBarDB = {
 					["width"] = 147,
 				},
 			},
-			["fixedStrata"] = true,
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
+			["forceColor"] = false,
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["b"] = 0,
+					["g"] = 0,
+					["r"] = 0,
+				},
+				["textureName"] = "None",
+			},
+			["moveFrames"] = false,
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -306,10 +315,11 @@ ChocolateBarDB = {
 					["showIcon"] = false,
 					["customLabel"] = "TSM",
 				},
-				["TestNoText"] = {
+				["Leatrix_Maps"] = {
 					["enabled"] = false,
-					["index"] = 4,
+					["showText"] = false,
 					["barName"] = "ChocolateBar1",
+					["align"] = "right",
 				},
 				["NWB"] = {
 					["index"] = 3,
@@ -319,11 +329,10 @@ ChocolateBarDB = {
 					["showIcon"] = false,
 					["customLabel"] = "N",
 				},
-				["Leatrix_Maps"] = {
+				["TestNoText"] = {
 					["enabled"] = false,
-					["showText"] = false,
+					["index"] = 4,
 					["barName"] = "ChocolateBar1",
-					["align"] = "right",
 				},
 				["picoFPS"] = {
 					["index"] = 1,
@@ -354,27 +363,18 @@ ChocolateBarDB = {
 					["align"] = "right",
 				},
 			},
-			["gap"] = 0,
 			["fontName"] = "Friz Quadrata TT",
-			["forceColor"] = false,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["fixedStrata"] = true,
 			["desaturated"] = false,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["b"] = 0,
-					["g"] = 0,
-					["r"] = 0,
-				},
-				["textureName"] = "None",
-			},
+			["gap"] = 0,
+			["locked"] = false,
 			["textColor"] = {
 				["a"] = 1,
 				["r"] = 1,
@@ -410,7 +410,7 @@ CB_PlayedTime = {
 		["total"] = 149513,
 	},
 	["Konac-"] = {
-		["total"] = 6094957,
+		["total"] = 6103460,
 	},
 	["Dotwise-"] = {
 		["total"] = 3924,
@@ -418,20 +418,20 @@ CB_PlayedTime = {
 	["Judawise-"] = {
 		["total"] = 437,
 	},
-	["Mxym-"] = {
-		["total"] = 4765,
-	},
-	["Dmitar-"] = {
-		["total"] = 55,
-	},
 	["Mohikanac-"] = {
 		["total"] = 167544,
+	},
+	["Junac-"] = {
+		["total"] = 2534,
+	},
+	["Mxym-"] = {
+		["total"] = 4765,
 	},
 	["Klhjakhsgdjh-"] = {
 		["total"] = 53,
 	},
-	["Verminz-"] = {
-		["total"] = 311368,
+	["Mxzq-"] = {
+		["total"] = 248345,
 	},
 	["Stranac-"] = {
 		["total"] = 73,
@@ -442,14 +442,14 @@ CB_PlayedTime = {
 	["Mxyzptlk-"] = {
 		["total"] = 8367,
 	},
-	["Kamenac-"] = {
-		["total"] = 1558123,
-	},
-	["Mxzq-"] = {
-		["total"] = 248345,
-	},
 	["Paydo-"] = {
 		["total"] = 18945,
+	},
+	["Verminz-"] = {
+		["total"] = 311368,
+	},
+	["Kamenac-"] = {
+		["total"] = 1558123,
 	},
 	["Kosturko-"] = {
 		["total"] = 1457,
@@ -457,8 +457,8 @@ CB_PlayedTime = {
 	["Ozrencic-"] = {
 		["total"] = 853,
 	},
-	["Junac-"] = {
-		["total"] = 2534,
+	["Dmitar-"] = {
+		["total"] = 55,
 	},
 	["Grgur-"] = {
 		["total"] = 2,

@@ -45,6 +45,9 @@ ChocolateBarDB = {
 	["profiles"] = {
 		["Default"] = {
 			["locked"] = false,
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -75,13 +78,7 @@ ChocolateBarDB = {
 					["barOffx"] = -88.3325424194336,
 				},
 			},
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
-			},
+			["fixedStrata"] = true,
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -304,16 +301,16 @@ ChocolateBarDB = {
 					["align"] = "right",
 					["index"] = 3,
 				},
-				["TestNoText"] = {
-					["enabled"] = false,
-					["index"] = 4,
-					["barName"] = "ChocolateBar1",
-				},
 				["Leatrix_Maps"] = {
 					["enabled"] = false,
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
+				},
+				["TestNoText"] = {
+					["enabled"] = false,
+					["index"] = 4,
+					["barName"] = "ChocolateBar1",
 				},
 				["NWB"] = {
 					["index"] = 3,
@@ -367,14 +364,17 @@ ChocolateBarDB = {
 				},
 			},
 			["desaturated"] = false,
-			["forceColor"] = false,
-			["fixedStrata"] = true,
 			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["fontName"] = "Friz Quadrata TT",
+			["moveFrames"] = false,
 			["gap"] = 0,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["fontName"] = "Friz Quadrata TT",
-			["moveFrames"] = false,
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
+			},
+			["forceColor"] = false,
 			["textColor"] = {
 				["a"] = 1,
 				["b"] = 1,
@@ -424,20 +424,20 @@ CB_PlayedTime = {
 	["Whatevs-"] = {
 		["total"] = 213,
 	},
-	["Mohikanac-"] = {
-		["total"] = 167544,
+	["Mxym-"] = {
+		["total"] = 4765,
 	},
 	["Klhjakhsgdjh-"] = {
 		["total"] = 53,
 	},
-	["Dmitar-"] = {
-		["total"] = 55,
+	["Junac-"] = {
+		["total"] = 2534,
 	},
 	["Stranac-"] = {
 		["total"] = 73,
 	},
-	["Junac-"] = {
-		["total"] = 2534,
+	["Dmitar-"] = {
+		["total"] = 55,
 	},
 	["Mxyzptlk-"] = {
 		["total"] = 8367,
@@ -445,31 +445,31 @@ CB_PlayedTime = {
 	["Ozrencic-"] = {
 		["total"] = 853,
 	},
-	["Mxzq-"] = {
-		["total"] = 248345,
-	},
-	["Paydo-"] = {
-		["total"] = 18945,
-	},
-	["Kosturko-"] = {
-		["total"] = 1457,
+	["Verminz-"] = {
+		["total"] = 311368,
 	},
 	["Kamenac-"] = {
 		["total"] = 1558123,
 	},
-	["Verminz-"] = {
-		["total"] = 311368,
+	["Kosturko-"] = {
+		["total"] = 1457,
+	},
+	["Paydo-"] = {
+		["total"] = 18945,
+	},
+	["Mxzq-"] = {
+		["total"] = 248345,
 	},
 	["Grgur-"] = {
 		["total"] = 2,
 	},
-	["Mxym-"] = {
-		["total"] = 4765,
+	["Mohikanac-"] = {
+		["total"] = 167544,
 	},
 	["Dotwise-"] = {
 		["total"] = 3924,
 	},
 	["Konac-"] = {
-		["total"] = 6094452,
+		["total"] = 6103119,
 	},
 }

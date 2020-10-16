@@ -8,10 +8,9 @@ xKillCount = {
 		["totaltotal"] = 0,
 	},
 	["position"] = {
-		["y"] = -350,
-		["x"] = 5,
+		["y"] = -121.999946594238,
+		["x"] = 465.000030517578,
 		["to"] = "TOPLEFT",
 		["from"] = "TOPLEFT",
-		["anchor"] = "UIParent",
 	},
 }

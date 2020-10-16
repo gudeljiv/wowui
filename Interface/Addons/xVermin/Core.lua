@@ -69,14 +69,16 @@ function xVermin:FormatNumber(num, divider)
 	return ("%s%s%s%s"):format(neg, left, mid:reverse():gsub("(%d%d%d)", "%1" .. divider):reverse(), right)
 end
 
-function xVermin:Round(num, decimals)
-	if not num then
+function xVermin:Round(number, decimals)
+	if not number then
 		return 0
 	end
 	if not decimals then
 		decimals = 0
 	end
-	return string.format("%." .. decimals .. "f", num)
+	local power = 10 ^ decimals
+
+	return floor(number * power) / power
 end
 
 function xVermin:ColorGradient(perc, ...)

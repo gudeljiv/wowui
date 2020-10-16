@@ -107,6 +107,29 @@ _detalhes_database = {
 			}, -- [6]
 			2, -- [7]
 		},
+		["Dotzdotz"] = {
+			"Dotzdotz", -- [1]
+			"Interface\\EncounterJournal\\UI-EJ-BOSS-Blood Guard Porung", -- [2]
+			{
+				0, -- [1]
+				1, -- [2]
+				0, -- [3]
+				1, -- [4]
+			}, -- [3]
+			"Interface\\PetBattles\\Weather-BurntEarth", -- [4]
+			{
+				0.087890625, -- [1]
+				0.916015625, -- [2]
+				1, -- [3]
+				0, -- [4]
+			}, -- [5]
+			{
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			}, -- [6]
+			3, -- [7]
+		},
 		["Grimoak"] = {
 			"Crippler", -- [1]
 			"", -- [2]
@@ -222,9 +245,9 @@ _detalhes_database = {
 			}, -- [6]
 			3, -- [7]
 		},
-		["Windfurÿ"] = {
-			"Windfurÿ", -- [1]
-			"Interface\\EncounterJournal\\UI-EJ-BOSS-Commander Kolurg", -- [2]
+		["Voodoo"] = {
+			"Voodoo", -- [1]
+			"Interface\\EncounterJournal\\UI-EJ-BOSS-Lord Alexei Barov", -- [2]
 			{
 				0, -- [1]
 				1, -- [2]
@@ -521,8 +544,8 @@ _detalhes_database = {
 			}, -- [6]
 			3, -- [7]
 		},
-		["Snoopyno"] = {
-			"Zulucant", -- [1]
+		["Sifuraz"] = {
+			"Sifuraz", -- [1]
 			"", -- [2]
 			{
 				0, -- [1]
@@ -542,7 +565,7 @@ _detalhes_database = {
 				1, -- [2]
 				1, -- [3]
 			}, -- [6]
-			2, -- [7]
+			5, -- [7]
 		},
 		["Moopothyz"] = {
 			"Moop", -- [1]
@@ -567,21 +590,21 @@ _detalhes_database = {
 			}, -- [6]
 			4, -- [7]
 		},
-		["Sifuraz"] = {
-			"Sifuraz", -- [1]
-			"", -- [2]
+		["Hillmoor"] = {
+			"Hillmoor", -- [1]
+			"Interface\\EncounterJournal\\UI-EJ-BOSS-Grand Champions-Horde", -- [2]
 			{
 				0, -- [1]
 				1, -- [2]
 				0, -- [3]
 				1, -- [4]
 			}, -- [3]
-			"", -- [4]
+			"Interface\\PetBattles\\Weather-BurntEarth", -- [4]
 			{
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
+				0.087890625, -- [1]
+				0.916015625, -- [2]
+				1, -- [3]
+				0, -- [4]
 			}, -- [5]
 			{
 				1, -- [1]
@@ -613,7 +636,29 @@ _detalhes_database = {
 			}, -- [6]
 			3, -- [7]
 		},
-		["nextreset"] = 1603470723,
+		["Snoopyno"] = {
+			"Zulucant", -- [1]
+			"", -- [2]
+			{
+				0, -- [1]
+				1, -- [2]
+				0, -- [3]
+				1, -- [4]
+			}, -- [3]
+			"", -- [4]
+			{
+				0, -- [1]
+				1, -- [2]
+				0, -- [3]
+				1, -- [4]
+			}, -- [5]
+			{
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			}, -- [6]
+			2, -- [7]
+		},
 		["Bladelight"] = {
 			"Blade", -- [1]
 			"", -- [2]
@@ -660,29 +705,7 @@ _detalhes_database = {
 			}, -- [6]
 			6, -- [7]
 		},
-		["Hillmoor"] = {
-			"Hillmoor", -- [1]
-			"Interface\\EncounterJournal\\UI-EJ-BOSS-Grand Champions-Horde", -- [2]
-			{
-				0, -- [1]
-				1, -- [2]
-				0, -- [3]
-				1, -- [4]
-			}, -- [3]
-			"Interface\\PetBattles\\Weather-BurntEarth", -- [4]
-			{
-				0.087890625, -- [1]
-				0.916015625, -- [2]
-				1, -- [3]
-				0, -- [4]
-			}, -- [5]
-			{
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-			}, -- [6]
-			5, -- [7]
-		},
+		["nextreset"] = 1603470723,
 		["Thordek"] = {
 			"Thordek", -- [1]
 			"Interface\\EncounterJournal\\UI-EJ-BOSS-Garrosh Hellscream", -- [2]
@@ -1075,20 +1098,20 @@ _detalhes_database = {
 			}, -- [6]
 			3, -- [7]
 		},
-		["Voodoo"] = {
-			"Voodoo", -- [1]
-			"Interface\\EncounterJournal\\UI-EJ-BOSS-Lord Alexei Barov", -- [2]
+		["Gurrak"] = {
+			"Crippler", -- [1]
+			"Interface\\EncounterJournal\\UI-EJ-BOSS-Garrosh Hellscream", -- [2]
 			{
 				0, -- [1]
 				1, -- [2]
 				0, -- [3]
 				1, -- [4]
 			}, -- [3]
-			"Interface\\PetBattles\\Weather-BurntEarth", -- [4]
+			"Interface\\PetBattles\\Weather-Windy", -- [4]
 			{
-				0.087890625, -- [1]
-				0.916015625, -- [2]
-				1, -- [3]
+				0.9453125, -- [1]
+				0.07421875, -- [2]
+				0.8203125, -- [3]
 				0, -- [4]
 			}, -- [5]
 			{
@@ -1096,7 +1119,7 @@ _detalhes_database = {
 				1, -- [2]
 				1, -- [3]
 			}, -- [6]
-			3, -- [7]
+			8, -- [7]
 		},
 		["Robwarrior"] = {
 			"Ninja Rob", -- [1]
@@ -1121,20 +1144,20 @@ _detalhes_database = {
 			}, -- [6]
 			4, -- [7]
 		},
-		["Gurrak"] = {
-			"Crippler", -- [1]
-			"Interface\\EncounterJournal\\UI-EJ-BOSS-Garrosh Hellscream", -- [2]
+		["Windfurÿ"] = {
+			"Windfurÿ", -- [1]
+			"Interface\\EncounterJournal\\UI-EJ-BOSS-Commander Kolurg", -- [2]
 			{
 				0, -- [1]
 				1, -- [2]
 				0, -- [3]
 				1, -- [4]
 			}, -- [3]
-			"Interface\\PetBattles\\Weather-Windy", -- [4]
+			"Interface\\PetBattles\\Weather-BurntEarth", -- [4]
 			{
-				0.9453125, -- [1]
-				0.07421875, -- [2]
-				0.8203125, -- [3]
+				0.087890625, -- [1]
+				0.916015625, -- [2]
+				1, -- [3]
 				0, -- [4]
 			}, -- [5]
 			{
@@ -1142,7 +1165,7 @@ _detalhes_database = {
 				1, -- [2]
 				1, -- [3]
 			}, -- [6]
-			8, -- [7]
+			3, -- [7]
 		},
 		["Klesk"] = {
 			"Klesk", -- [1]
@@ -1199,7 +1222,7 @@ _detalhes_database = {
 		["custom"] = "",
 		["next"] = "",
 	},
-	["last_instance_time"] = 1602784178,
+	["last_instance_time"] = 1602841997,
 	["active_profile"] = "Default",
 	["mythic_dungeon_currentsaved"] = {
 		["dungeon_name"] = "",
@@ -1262,12 +1285,7 @@ _detalhes_database = {
 			["point"] = "CENTER",
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["row_color"] = {
-				0.1, -- [1]
-				0.1, -- [2]
-				0.1, -- [3]
-				0.4, -- [4]
-			},
+			["main_frame_strata"] = "LOW",
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -1275,8 +1293,12 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
+			["font_size"] = 10,
+			["use_spark"] = true,
+			["x"] = 0,
+			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -1288,17 +1310,17 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
-			["font_size"] = 10,
-			["x"] = 0,
-			["font_face"] = "Friz Quadrata TT",
 			["y"] = 1.525878906250e-05,
-			["use_spark"] = true,
-			["author"] = "Details! Team",
+			["row_color"] = {
+				0.1, -- [1]
+				0.1, -- [2]
+				0.1, -- [3]
+				0.4, -- [4]
+			},
 			["main_frame_locked"] = false,
 			["arrow_anchor_y"] = 0,
 		},
 	},
-	["last_day"] = "15",
 	["cached_talents"] = {
 		["Player-4465-00C4D96C"] = {
 			{
@@ -2174,12 +2196,13 @@ _detalhes_database = {
 		["channel"] = "SELF",
 		["reverse"] = false,
 	},
+	["last_day"] = "16",
 	["benchmark_db"] = {
 		["frame"] = {
 		},
 	},
 	["character_data"] = {
-		["logons"] = 200,
+		["logons"] = 202,
 	},
 	["combat_id"] = 1,
 	["savedStyles"] = {
@@ -2226,8 +2249,8 @@ _detalhes_database = {
 			},
 			["switch_healer"] = false,
 			["bars_sort_direction"] = 1,
+			["backdrop_texture"] = "None",
 			["switch_healer_in_combat"] = false,
-			["menu_icons_size"] = 1,
 			["instance_button_anchor"] = {
 				-27, -- [1]
 				1, -- [2]
@@ -2247,7 +2270,7 @@ _detalhes_database = {
 					1, -- [3]
 				},
 			},
-			["backdrop_texture"] = "None",
+			["menu_icons_size"] = 1,
 			["switch_all_roles_in_combat"] = {
 				2, -- [1]
 				1, -- [2]
@@ -2291,10 +2314,8 @@ _detalhes_database = {
 					1, -- [3]
 					1, -- [4]
 				},
-				["textL_custom_text"] = "{data3}{data2}",
-				["texture_background"] = "Blizzard",
 				["alpha"] = 0,
-				["textL_class_colors"] = false,
+				["textR_class_colors"] = false,
 				["backdrop"] = {
 					["enabled"] = false,
 					["texture"] = "Details BarBorder 2",
@@ -2306,9 +2327,11 @@ _detalhes_database = {
 					},
 					["size"] = 12,
 				},
+				["texture_background"] = "Blizzard",
+				["textL_custom_text"] = "{data3}{data2}",
 				["no_icon"] = false,
 				["font_size"] = 11,
-				["textR_class_colors"] = false,
+				["textL_class_colors"] = false,
 				["font_face"] = "Arial Narrow",
 				["texture_class_colors"] = true,
 				["height"] = 20,
@@ -2338,11 +2361,8 @@ _detalhes_database = {
 				["onenter"] = 1,
 			},
 			["plugins_grow_direction"] = 1,
-			["switch_damager"] = false,
-			["auto_hide_menu"] = {
-				["left"] = true,
-				["right"] = true,
-			},
+			["desaturated_menu"] = false,
+			["show_sidebars"] = false,
 			["strata"] = "LOW",
 			["menu_anchor_down"] = {
 				-22, -- [1]
@@ -2393,17 +2413,10 @@ _detalhes_database = {
 				true, -- [3]
 				true, -- [4]
 			},
-			["menu2_anchor_down"] = {
-				32, -- [1]
-				0, -- [2]
-			},
-			["statusbar_info"] = {
-				["alpha"] = 0,
-				["overlay"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-				},
+			["switch_damager"] = false,
+			["auto_hide_menu"] = {
+				["left"] = true,
+				["right"] = true,
 			},
 			["row_show_animation"] = {
 				["anim"] = "Fade",
@@ -2411,10 +2424,10 @@ _detalhes_database = {
 				},
 			},
 			["bars_grow_direction"] = 1,
-			["switch_damager_in_combat"] = false,
-			["toolbar_side"] = 2,
 			["hide_icon"] = true,
+			["toolbar_side"] = 2,
 			["grab_on_top"] = false,
+			["switch_damager_in_combat"] = false,
 			["micro_displays_side"] = 2,
 			["menu2_anchor"] = {
 				32, -- [1]
@@ -2444,8 +2457,18 @@ _detalhes_database = {
 			["bg_g"] = 0,
 			["window_scale"] = 1,
 			["hide_in_combat"] = false,
-			["show_sidebars"] = false,
-			["desaturated_menu"] = false,
+			["statusbar_info"] = {
+				["alpha"] = 0,
+				["overlay"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+				},
+			},
+			["menu2_anchor_down"] = {
+				32, -- [1]
+				0, -- [2]
+			},
 			["hide_in_combat_type"] = 1,
 			["wallpaper"] = {
 				["enabled"] = false,
@@ -2628,12 +2651,12 @@ _detalhes_database = {
 		}, -- [5]
 		["raid_roster"] = {
 		},
-		["tempo_start"] = 1602783285,
+		["tempo_start"] = 1602837194,
 		["last_events_tables"] = {
 		},
 		["alternate_power"] = {
 		},
-		["combat_counter"] = 1955,
+		["combat_counter"] = 1967,
 		["totals"] = {
 			0, -- [1]
 			0, -- [2]
@@ -2718,7 +2741,7 @@ _detalhes_database = {
 			}, -- [4]
 		},
 	},
-	["combat_counter"] = 1959,
+	["combat_counter"] = 1975,
 	["announce_firsthit"] = {
 		["enabled"] = true,
 		["channel"] = "SELF",
@@ -2740,6 +2763,5 @@ _detalhes_database = {
 		["channel"] = "SELF",
 	},
 	["cached_specs"] = {
-		["Player-4465-00C4D96C"] = 257,
 	},
 }

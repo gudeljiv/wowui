@@ -1,6 +1,44 @@
 local _, xVermin = ...
 
 local ai = false
+local costR1, costMAX
+
+----------------------------------------------------------
+-- LOOT HELPER - hide some of the UI
+----------------------------------------------------------
+local lm = CreateFrame("Frame", "LootModeWarningFrame")
+lm:SetPoint("TOP", UIParent, "TOP", 0, -50)
+lm.text = lm:CreateFontString(nil, "ARTWORK")
+lm.text:SetFont(xVermin.Config.font.arial, 50, "NONE")
+lm.text:SetShadowOffset(1, -1)
+lm.text:SetPoint("TOP", lm, "TOP", 0, 0)
+lm.text:SetText("LOOT MODE")
+lm.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
+lm:SetWidth(lm.text:GetStringWidth())
+lm:SetHeight(lm.text:GetStringHeight())
+lm:Hide()
+
+----------------------------------------------------------
+-- BLIZZARD counter
+----------------------------------------------------------
+local bcf = CreateFrame("Frame", "BlizzardCountFrame")
+bcf:SetPoint("TOP", UIParent, "TOP", 0, -50)
+bcf.text = bcf:CreateFontString(nil, "ARTWORK")
+bcf.text:SetFont(xVermin.Config.font.arial, 50, "NONE")
+bcf.text:SetShadowOffset(1, -1)
+bcf.text:SetPoint("TOP", bcf, "TOP", 0, 0)
+bcf.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
+
+----------------------------------------------------------
+-- Mana tick counter
+----------------------------------------------------------
+local mcf = CreateFrame("Frame", "ManaCountFrame")
+mcf:SetPoint("LEFT", PlayerFrame, "RIGHT", 5, 2)
+mcf.text = mcf:CreateFontString(nil, "ARTWORK")
+mcf.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
+mcf.text:SetShadowOffset(1, -1)
+mcf.text:SetPoint("TOP", mcf, "TOP", 0, 0)
+mcf.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 
 local function Set(autointeract)
 	-- SetCVar("AutoInteract", autointeract and "1" or "0")
@@ -13,6 +51,8 @@ local function Set(autointeract)
 		TargetFrame:EnableMouse(false)
 		LootFrame:SetAlpha(0)
 		GameTooltip:SetScript("OnShow", GameTooltip.Hide)
+		lm:Show()
+		bcf:Hide()
 	else
 		SetBinding("MOUSEWHEELDOWN", "MULTIACTIONBAR2BUTTON1", 1)
 		SetBinding("MOUSEWHEELUP", "MULTIACTIONBAR2BUTTON2", 1)
@@ -22,6 +62,8 @@ local function Set(autointeract)
 		TargetFrame:EnableMouse(true)
 		LootFrame:SetAlpha(1)
 		GameTooltip:SetScript("OnShow", GameTooltip.Show)
+		lm:Hide()
+		bcf:Show()
 	end
 
 	ai = autointeract
@@ -52,6 +94,67 @@ btn:SetScript(
 			Set(not ai)
 		else
 			f:RegisterEvent("PLAYER_REGEN_ENABLED")
+		end
+	end
+)
+
+local lastmana = nil
+local ticktime = time()
+local bcount, base, casting
+local manatick = 0
+local manaticktotal = 0
+bcf:RegisterEvent("PLAYER_ENTERING_WORLD")
+bcf:RegisterEvent("PLAYER_REGEN_DISABLED")
+bcf:RegisterUnitEvent("UNIT_POWER_UPDATE")
+bcf:SetScript(
+	"OnEvent",
+	function(self, event, ...)
+		if xVermin.Class == "MAGE" then
+			if event == PLAYER_REGEN_DISABLED then
+				if time() - ticktime > 3 then
+					manaticktotal = 0
+					ticktime = time()
+				end
+			end
+
+			base, casting = GetManaRegen()
+			if (xVermin:Round(base, 2) or xVermin:Round(casting, 2)) > 0 then
+				if lastmana then
+					if UnitPower("player") > lastmana then
+						manatick = UnitPower("player") - lastmana
+					end
+				end
+				lastmana = UnitPower("player")
+			else
+				manatick = 0
+			end
+
+			for _, costInfo in pairs(GetSpellPowerCost("Blizzard(Rank 1)")) do
+				costR1 = costInfo.cost
+				break
+			end
+
+			for _, costInfo in pairs(GetSpellPowerCost("Blizzard")) do
+				costMAX = costInfo.cost
+				break
+			end
+
+			if UnitPower("Player") == UnitPowerMax("player") or manatick == 0 then
+				manatick = 0
+			end
+
+			bcount = floor(UnitPower("Player") / costR1) .. " (" .. floor(UnitPower("Player") / costMAX) .. ")"
+
+			bcf.text:SetText(bcount)
+			mcf.text:SetText(manatick)
+
+			bcf:SetWidth(bcf.text:GetStringWidth())
+			bcf:SetHeight(bcf.text:GetStringHeight())
+			mcf:SetWidth(mcf.text:GetStringWidth())
+			mcf:SetHeight(mcf.text:GetStringHeight())
+		else
+			bcf:Hide()
+			self:UnregisterAllEvents()
 		end
 	end
 )

@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 3278,
 	["lastSanitation"] = 3,
-	["session"] = 3215,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -165,8 +165,8 @@ BugGrabberDB = {
 		}, -- [20]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["session"] = 1336,
 			["time"] = "2020/07/26 13:26:58",
+			["session"] = 1336,
 			["counter"] = 2,
 		}, -- [21]
 		{
@@ -546,8 +546,8 @@ BugGrabberDB = {
 		}, -- [68]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["time"] = "2020/07/27 20:37:46",
 			["session"] = 1423,
+			["time"] = "2020/07/27 20:37:46",
 			["counter"] = 4,
 		}, -- [69]
 		{
@@ -805,8 +805,8 @@ BugGrabberDB = {
 		}, -- [101]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["time"] = "2020/08/02 10:06:15",
 			["session"] = 1605,
+			["time"] = "2020/08/02 10:06:15",
 			["counter"] = 3,
 		}, -- [102]
 		{
@@ -946,8 +946,8 @@ BugGrabberDB = {
 		}, -- [119]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
-			["session"] = 1654,
 			["time"] = "2020/08/02 20:13:03",
+			["session"] = 1654,
 			["counter"] = 3,
 		}, -- [120]
 		{
@@ -1420,8 +1420,8 @@ BugGrabberDB = {
 		}, -- [179]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Experience.lua",
-			["session"] = 1943,
 			["time"] = "2020/08/19 21:35:15",
+			["session"] = 1943,
 			["counter"] = 6,
 		}, -- [180]
 		{
@@ -2032,8 +2032,8 @@ BugGrabberDB = {
 		}, -- [256]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["session"] = 2448,
 			["time"] = "2020/08/13 21:31:07",
+			["session"] = 2448,
 			["counter"] = 9,
 		}, -- [257]
 		{
@@ -2382,8 +2382,8 @@ BugGrabberDB = {
 		}, -- [300]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\ClickToMove\\ClickToMove.toc",
-			["session"] = 2740,
 			["time"] = "2020/09/30 12:15:00",
+			["session"] = 2740,
 			["counter"] = 10,
 		}, -- [301]
 		{
@@ -3206,14 +3206,14 @@ BugGrabberDB = {
 		}, -- [404]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Examiner\\Examiner.toc",
-			["time"] = "2020/10/14 21:40:43",
 			["session"] = 3191,
+			["time"] = "2020/10/14 21:40:43",
 			["counter"] = 2,
 		}, -- [405]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\NovaInstanceTracker\\NovaInstanceTracker.toc",
-			["time"] = "2020/10/14 21:40:43",
 			["session"] = 3191,
+			["time"] = "2020/10/14 21:40:43",
 			["counter"] = 2,
 		}, -- [406]
 		{
@@ -3241,10 +3241,255 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [409]
 		{
-			["message"] = "(null)",
-			["time"] = "2020/07/24 16:00:06",
-			["session"] = 3204,
-			["counter"] = 187,
+			["message"] = "Interface\\FrameXML\\UIDropDownMenu.lua:987: attempt to index local 'button' (a nil value)",
+			["time"] = "2020/10/16 11:41:38",
+			["locals"] = "level = 1\nvalue = nil\ndropDownFrame = nil\nanchorName = Minimap {\n 0 = <userdata>\n beautyShadow = <table> {\n }\n timer = 0\n beautyBorder = <table> {\n }\n SetPoint = <function> defined @Interface\\AddOns\\xVermin\\xVermin.lua:130\n}\nxOffset = -97.999947\nyOffset = -3\nmenuList = nil\nbutton = nil\nautoHideDelay = nil\nlistFrame = DropDownList1 {\n 0 = <userdata>\n dropdown = Atr_Duration {\n }\n shouldRefresh = true\n numButtons = 3\n maxWidth = 83.733334\n}\nlistFrameName = \"DropDownList1\"\ntempFrame = nil\npoint = nil\nrelativePoint = nil\nrelativeTo = nil\n(*temporary) = <function> defined @Interface\\FrameXML\\UIDropDownMenu.lua:25\n(*temporary) = nil\n(*temporary) = \"createframes\"\n(*temporary) = true\n(*temporary) = <function> defined @Interface\\FrameXML\\UIDropDownMenu.lua:306\n(*temporary) = 1\n(*temporary) = 0\n(*temporary) = 24\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'button' (a nil value)\"\nUIDropDownMenuDelegate = <unnamed> {\n 0 = <userdata>\n}\nGetChild = <function> defined @Interface\\FrameXML\\UIDropDownMenu.lua:63\n",
+			["stack"] = "Interface\\FrameXML\\UIDropDownMenu.lua:987: in function `ToggleDropDownMenu'\nInterface\\AddOns\\nMinimap\\core.lua:120: in function <Interface\\AddOns\\nMinimap\\core.lua:118>",
+			["session"] = 3221,
+			["counter"] = 1,
 		}, -- [410]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:83: Attempt to register unknown event \"UNIT_POWER_CHANGED\"",
+			["time"] = "2020/10/16 13:20:38",
+			["locals"] = "(*temporary) = BlizzardCountFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n(*temporary) = \"UNIT_POWER_CHANGED\"\n",
+			["stack"] = "[C]: in function `RegisterEvent'\nInterface\\AddOns\\xVermin\\LootHelper.lua:83: in main chunk",
+			["session"] = 3228,
+			["counter"] = 1,
+		}, -- [411]
+		{
+			["message"] = "(null)",
+			["session"] = 3228,
+			["time"] = "2020/07/24 16:00:06",
+			["counter"] = 190,
+		}, -- [412]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:89: attempt to index global 'CahtFrame6' (a nil value)",
+			["time"] = "2020/10/16 13:25:57",
+			["locals"] = "self = BlizzardCountFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nevent = \"PLAYER_ENTERING_WORLD\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = <table> {\n 1 = <table> {\n }\n}\n(*temporary) = 1\n(*temporary) = <table> {\n hasRequiredAura = false\n type = 0\n name = \"MANA\"\n cost = 795\n minCost = 795\n requiredAuraID = 0\n costPercent = 0\n costPerSec = 0\n}\n(*temporary) = \"attempt to index global 'CahtFrame6' (a nil value)\"\nb1 = <table> {\n 1 = <table> {\n }\n}\nbm = <table> {\n 1 = <table> {\n }\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:89: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:86>",
+			["session"] = 3232,
+			["counter"] = 2,
+		}, -- [413]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:89: attempt to concatenate field 'cost' (a nil value)",
+			["time"] = "2020/10/16 13:26:49",
+			["locals"] = "self = BlizzardCountFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nevent = \"PLAYER_ENTERING_WORLD\"\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = ChatFrame6 {\n GatherSelectedText = <function> defined =[C]:-1\n RefreshIfNecessary = <function> defined =[C]:-1\n OnPostShow = <function> defined =[C]:-1\n CalculateLineAlphaValueFromTimestamp = <function> defined =[C]:-1\n ScrollUp = <function> defined =[C]:-1\n tellTimer = 136893.646000\n fadeDurationSecs = 3\n GetFading = <function> defined =[C]:-1\n IsTextCopyable = <function> defined =[C]:-1\n shouldFadeAfterInactivity = true\n SetIndentedWordWrap = <function> defined =[C]:-1\n GetJustifyV = <function> defined =[C]:-1\n ScrollToBottom = <function> defined =[C]:-1\n GetMaxLines = <function> defined =[C]:-1\n GetIndentedWordWrap = <function> defined =[C]:-1\n buttonSide = \"left\"\n GetFont = <function> defined =[C]:-1\n SetMaxLines = <function> defined =[C]:-1\n CalculateSelectingCharacterIndicesForVisibleLine = <function> defined =[C]:-1\n OnPostUpdate = <function> defined =[C]:-1\n RefreshDisplay = <function> defined =[C]:-1\n SetFontObject = <function> defined =[C]:-1\n textIsCopyable = false\n SetOnScrollChangedCallback = <function> defined =[C]:-1\n ResizeButton = ChatFrame6ResizeButton {\n }\n overrideFadeTimestamp = 0\n MarkDisplayDirty = <function> defined =[C]:-1\n GetMessageInfo = <function> defined =[C]:-1\n GetOnScrollChangedCallback = <function> defined =[C]:-1\n AtTop = <function> defined =[C]:-1\n GetFontObject = <function> defined =[C]:-1\n CanEffectivelyFade = <function> defined =[C]:-1\n OnPreSizeChanged = <function> defined =[C]:-1\n GetScrollOffset = <function> defined =[C]:-1\n GetSpacing = <function> defined =[C]:-1\n OnPreLoad = <function> defined =[C]:-1\n SetSpacing = <function> defined =[C]:-1\n name = \"Debug\"\n CalculateLineSpacing = <function> defined =[C]:-1\n AddMessage = <function> defined =[C]:-1\n InitializeFontableFrame = <function> defined =[C]:-1\n GetShadowColor = <function> defined =[C]:-1\n isUninteractable = false\n SetOnTextCopiedCallback = <function> defined =[C]:-1\n originalShow = <function> defined =[C]:-1\n RemoveMessagesByPredicate = <function> defined =[C]:-1\n TransformMessages = <function> defined =[C]:-1\n SetShadowColor = <function> defined =[C]:-1\n buttonFrame = ChatFrame6ButtonFrame {\n }\n HasFontObject = <function> defined =[C]:-1\n isDocked = 1\n GetOnTextCopiedCallback = <function> defined =[C]:-1\n SetFading = <function> defined =[C]:-1\n OnPostHide = <function> defined =[C]:-1\n alternativeDefaultLanguage = \"Orcish\"\n isInitialized = 1\n GetNumVisibleLines = <function> defined =[C]:-1\n GetInsertMode = <function> defined =[C]:-1\n SetTimeVisible = <function> defined =[C]:-1\n hasOwnFontObject = true\n Clear = <function> defined =[C]:-1\n oldAlpha = 0.247059\n channelList = <table> {\n }\n GetTimeVisible = <function> defined =[C]:-1\n IsSelectingText = <function> defined =[C]:-1\n SetTextCopyable = <function> defined =[C]:-1\n Show = <function> defined @Interface\\FrameXML\\FrameLocks.lua:135\n BackFillMessage = <function> defined =[C]:-1\n UnpackageEntry = <function> defined =[C]:-1\n FontStringContainer = <unnamed> {\n }\n SetShadowOffset = <function> defined =[C]:-1\n messageTypeList = <table> {\n }\n flashTimer = 0\n timeVisibleSecs = 120\n PackageEntry = <function> defined =[C]:-1\n MakeFontObjectCustom = <function> defined =[C]:-1\n fontObject = table: 000001E35FB01CE0 {\n }\n SetInsertMode = <function> defined =[C]:-1\n originalHide = <function> defined =[C]:-1\n ScrollDown = <function> defined =[C]:-1\n zoneChannelList = <table> {\n }\n SetScrollOffset = <function> defined =[C]:-1\n onDisplayRefreshedCallback = <function> defined =[C]:-1\n insertMode = 2\n ResetSelectingText = <function> defined =[C]:-1\n Hide = <function> defined @Interface\\FrameXML\\FrameLocks.lua:131\n GetTextColor = <function> defined =[C]:-1\n CallOnDisplayRefreshed = <function> defined =[C]:-1\n 0 = <userdata>\n UpdateSelectingText = <function> defined =[C]:-1\n OnFontObjectUpdated = <function> defined =[C]:-1\n MarkLayoutDirty = <function> defined =[C]:-1\n SetFont = <function> defined =[C]:-1\n OnPostMouseDown = <function>",
+			["stack"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:89: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:86>",
+			["session"] = 3233,
+			["counter"] = 1,
+		}, -- [414]
+		{
+			["message"] = "[string \"print(GetSpellPowerCost(\"Blizzard(Rank 1)\").0)\"]:1: ')' expected near '.0'",
+			["time"] = "2020/10/16 13:31:26",
+			["locals"] = "(*temporary) = \"print(GetSpellPowerCost(\"Blizzard(Rank 1)\").0)\"\n",
+			["stack"] = "[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 3233,
+			["counter"] = 1,
+		}, -- [415]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:103: attempt to concatenate global 'costMAX' (a nil value)",
+			["time"] = "2020/10/16 13:36:29",
+			["locals"] = "self = BlizzardCountFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nevent = \"PLAYER_ENTERING_WORLD\"\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = ChatFrame6 {\n GatherSelectedText = <function> defined =[C]:-1\n RefreshIfNecessary = <function> defined =[C]:-1\n OnPostShow = <function> defined =[C]:-1\n CalculateLineAlphaValueFromTimestamp = <function> defined =[C]:-1\n ScrollUp = <function> defined =[C]:-1\n tellTimer = 137474.787000\n fadeDurationSecs = 3\n GetFading = <function> defined =[C]:-1\n IsTextCopyable = <function> defined =[C]:-1\n shouldFadeAfterInactivity = true\n SetIndentedWordWrap = <function> defined =[C]:-1\n GetJustifyV = <function> defined =[C]:-1\n ScrollToBottom = <function> defined =[C]:-1\n GetMaxLines = <function> defined =[C]:-1\n GetIndentedWordWrap = <function> defined =[C]:-1\n buttonSide = \"left\"\n GetFont = <function> defined =[C]:-1\n SetMaxLines = <function> defined =[C]:-1\n CalculateSelectingCharacterIndicesForVisibleLine = <function> defined =[C]:-1\n OnPostUpdate = <function> defined =[C]:-1\n RefreshDisplay = <function> defined =[C]:-1\n SetFontObject = <function> defined =[C]:-1\n textIsCopyable = false\n SetOnScrollChangedCallback = <function> defined =[C]:-1\n ResizeButton = ChatFrame6ResizeButton {\n }\n overrideFadeTimestamp = 0\n MarkDisplayDirty = <function> defined =[C]:-1\n GetMessageInfo = <function> defined =[C]:-1\n GetOnScrollChangedCallback = <function> defined =[C]:-1\n AtTop = <function> defined =[C]:-1\n GetFontObject = <function> defined =[C]:-1\n CanEffectivelyFade = <function> defined =[C]:-1\n OnPreSizeChanged = <function> defined =[C]:-1\n GetScrollOffset = <function> defined =[C]:-1\n GetSpacing = <function> defined =[C]:-1\n OnPreLoad = <function> defined =[C]:-1\n SetSpacing = <function> defined =[C]:-1\n name = \"Debug\"\n CalculateLineSpacing = <function> defined =[C]:-1\n AddMessage = <function> defined =[C]:-1\n InitializeFontableFrame = <function> defined =[C]:-1\n GetShadowColor = <function> defined =[C]:-1\n isUninteractable = false\n SetOnTextCopiedCallback = <function> defined =[C]:-1\n originalShow = <function> defined =[C]:-1\n RemoveMessagesByPredicate = <function> defined =[C]:-1\n TransformMessages = <function> defined =[C]:-1\n SetShadowColor = <function> defined =[C]:-1\n buttonFrame = ChatFrame6ButtonFrame {\n }\n HasFontObject = <function> defined =[C]:-1\n isDocked = 1\n GetOnTextCopiedCallback = <function> defined =[C]:-1\n SetFading = <function> defined =[C]:-1\n OnPostHide = <function> defined =[C]:-1\n alternativeDefaultLanguage = \"Orcish\"\n isInitialized = 1\n GetNumVisibleLines = <function> defined =[C]:-1\n GetInsertMode = <function> defined =[C]:-1\n SetTimeVisible = <function> defined =[C]:-1\n hasOwnFontObject = true\n Clear = <function> defined =[C]:-1\n oldAlpha = 0.247059\n channelList = <table> {\n }\n GetTimeVisible = <function> defined =[C]:-1\n IsSelectingText = <function> defined =[C]:-1\n SetTextCopyable = <function> defined =[C]:-1\n Show = <function> defined @Interface\\FrameXML\\FrameLocks.lua:135\n BackFillMessage = <function> defined =[C]:-1\n UnpackageEntry = <function> defined =[C]:-1\n FontStringContainer = <unnamed> {\n }\n SetShadowOffset = <function> defined =[C]:-1\n messageTypeList = <table> {\n }\n flashTimer = 0\n timeVisibleSecs = 120\n PackageEntry = <function> defined =[C]:-1\n MakeFontObjectCustom = <function> defined =[C]:-1\n fontObject = table: 000001E36D6D9C90 {\n }\n SetInsertMode = <function> defined =[C]:-1\n originalHide = <function> defined =[C]:-1\n ScrollDown = <function> defined =[C]:-1\n zoneChannelList = <table> {\n }\n SetScrollOffset = <function> defined =[C]:-1\n onDisplayRefreshedCallback = <function> defined =[C]:-1\n insertMode = 2\n ResetSelectingText = <function> defined =[C]:-1\n Hide = <function> defined @Interface\\FrameXML\\FrameLocks.lua:131\n GetTextColor = <function> defined =[C]:-1\n CallOnDisplayRefreshed = <function> defined =[C]:-1\n 0 = <userdata>\n UpdateSelectingText = <function> defined =[C]:-1\n OnFontObjectUpdated = <function> defined =[C]:-1\n MarkLayoutDirty = <function> defined =[C]:-1\n SetFont = <function> defined =[C]:-1\n OnPostMouseDown = <function>",
+			["stack"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:103: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:86>",
+			["session"] = 3234,
+			["counter"] = 1,
+		}, -- [416]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:87: attempt to call global 'UnitCastingInfo' (a nil value)",
+			["time"] = "2020/10/16 13:39:17",
+			["locals"] = "self = BlizzardCountFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nevent = \"PLAYER_ENTERING_WORLD\"\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = 9\n(*temporary) = nil\n(*temporary) = \"player\"\n(*temporary) = \"attempt to call global 'UnitCastingInfo' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:87: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:86>",
+			["session"] = 3235,
+			["counter"] = 1,
+		}, -- [417]
+		{
+			["message"] = "[string \"print(UnitMana(\"Player\"))\"]:1: attempt to call global 'UnitMana' (a nil value)",
+			["time"] = "2020/10/16 13:40:53",
+			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = nil\n(*temporary) = \"Player\"\n(*temporary) = \"attempt to call global 'UnitMana' (a nil value)\"\n",
+			["stack"] = "[string \"print(UnitMana(\"Player\"))\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 3236,
+			["counter"] = 2,
+		}, -- [418]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:27: attempt to index global 'f' (a nil value)",
+			["time"] = "2020/10/16 13:44:18",
+			["locals"] = "autointeract = true\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"OnShow\"\n(*temporary) = 69783\n(*temporary) = \"attempt to index global 'f' (a nil value)\"\nai = false\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:27: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:16>\nInterface\\AddOns\\xVermin\\LootHelper.lua:65: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:62>",
+			["session"] = 3237,
+			["counter"] = 2,
+		}, -- [419]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:101: attempt to call upvalue 'time' (a number value)",
+			["time"] = "2020/10/16 14:06:12",
+			["locals"] = "self = BlizzardCountFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nevent = \"UNIT_POWER_UPDATE\"\n(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = 3462\n(*temporary) = 3504\n(*temporary) = 42\n(*temporary) = 1602849965\n(*temporary) = \"attempt to call upvalue 'time' (a number value)\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:57\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Class = \"MAGE\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:49\n ClassColor = <table> {\n }\n Config = <table> {\n }\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:72\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:97\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:82\n}\nlastmana = 3462\ntime = 1602849965\ncostR1 = 272\ncostMAX = 795\nbcf = BlizzardCountFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:101: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:98>",
+			["session"] = 3248,
+			["counter"] = 14,
+		}, -- [420]
+		{
+			["message"] = "Interface\\AddOns\\Auctionator\\zcUtils.lua:322: attempt to call global 'time' (a number value)",
+			["time"] = "2020/10/16 14:07:22",
+			["locals"] = "(*temporary) = 1602850042\n(*temporary) = \"attempt to call global 'time' (a number value)\"\ngDeferredCalls = <table> {\n}\n",
+			["stack"] = "Interface\\AddOns\\Auctionator\\zcUtils.lua:322: in function `CheckDeferredCall'\nInterface\\AddOns\\Auctionator\\Auctionator-8.1.0.lua:2780: in function `Atr_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>",
+			["session"] = 3249,
+			["counter"] = 1,
+		}, -- [421]
+		{
+			["message"] = "...eSkillMaster\\Core\\Service\\Accounting\\GoldTracker.lua:200: attempt to call global 'time' (a number value)",
+			["time"] = "2020/10/16 14:07:59",
+			["locals"] = "goldLog = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n 6 = <table> {\n }\n 7 = <table> {\n }\n 8 = <table> {\n }\n 9 = <table> {\n }\n 10 = <table> {\n }\n 11 = <table> {\n }\n 12 = <table> {\n }\n 13 = <table> {\n }\n 14 = <table> {\n }\n 15 = <table> {\n }\n 16 = <table> {\n }\n 17 = <table> {\n }\n 18 = <table> {\n }\n 19 = <table> {\n }\n 20 = <table> {\n }\n 21 = <table> {\n }\n 22 = <table> {\n }\n 23 = <table> {\n }\n 24 = <table> {\n }\n 25 = <table> {\n }\n 26 = <table> {\n }\n 27 = <table> {\n }\n 28 = <table> {\n }\n 29 = <table> {\n }\n 30 = <table> {\n }\n 31 = <table> {\n }\n 32 = <table> {\n }\n 33 = <table> {\n }\n 34 = <table> {\n }\n 35 = <table> {\n }\n 36 = <table> {\n }\n 37 = <table> {\n }\n 38 = <table> {\n }\n 39 = <table> {\n }\n 40 = <table> {\n }\n 41 = <table> {\n }\n 42 = <table> {\n }\n 43 = <table> {\n }\n 44 = <table> {\n }\n 45 = <table> {\n }\n 46 = <table> {\n }\n 47 = <table> {\n }\n 48 = <table> {\n }\n 49 = <table> {\n }\n 50 = <table> {\n }\n 51 = <table> {\n }\n 52 = <table> {\n }\n 53 = <table> {\n }\n 54 = <table> {\n }\n 55 = <table> {\n }\n 56 = <table> {\n }\n 57 = <table> {\n }\n 58 = <table> {\n }\n 59 = <table> {\n }\n 60 = <table> {\n }\n 61 = <table> {\n }\n 62 = <table> {\n }\n 63 = <table> {\n }\n 64 = <table> {\n }\n 65 = <table> {\n }\n 66 = <table> {\n }\n 67 = <table> {\n }\n 68 = <table> {\n }\n 69 = <table> {\n }\n 70 = <table> {\n }\n 71 = <table> {\n }\n 72 = <table> {\n }\n 73 = <table> {\n }\n 74 = <table> {\n }\n 75 = <table> {\n }\n 76 = <table> {\n }\n 77 = <table> {\n }\n 78 = <table> {\n }\n 79 = <table> {\n }\n 80 = <table> {\n }\n 81 = <table> {\n }\n 82 = <table> {\n }\n 83 = <table> {\n }\n 84 = <table> {\n }\n 85 = <table> {\n }\n 86 = <table> {\n }\n 87 = <table> {\n }\n 88 = <table> {\n }\n 89 = <table> {\n }\n 90 = <table> {\n }\n 91 = <table> {\n }\n 92 = <table> {\n }\n 93 = <table> {\n }\n 94 = <table> {\n }\n 95 = <table> {\n }\n 96 = <table> {\n }\n 97 = <table> {\n }\n 98 = <table> {\n }\n 99 = <table> {\n }\n 100 = <table> {\n }\n 101 = <table> {\n }\n 102 = <table> {\n }\n 103 = <table> {\n }\n 104 = <table> {\n }\n 105 = <table> {\n }\n 106 = <table> {\n }\n 107 = <table> {\n }\n 108 = <table> {\n }\n 109 = <table> {\n }\n 110 = <table> {\n }\n 111 = <table> {\n }\n 112 = <table> {\n }\n 113 = <table> {\n }\n 114 = <table> {\n }\n 115 = <table> {\n }\n 116 = <table> {\n }\n 117 = <table> {\n }\n 118 = <table> {\n }\n 119 = <table> {\n }\n 120 = <table> {\n }\n 121 = <table> {\n }\n 122 = <table> {\n }\n 123 = <table> {\n }\n 124 = <table> {\n }\n 125 = <table> {\n }\n 126 = <table> {\n }\n 127 = <table> {\n }\n 128 = <table> {\n }\n 129 = <table> {\n }\n 130 = <table> {\n }\n 131 = <table> {\n }\n 132 = <table> {\n }\n 133 = <table> {\n }\n 134 = <table> {\n }\n 135 = <table> {\n }\n 136 = <table> {\n }\n 137 = <table> {\n }\n 138 = <table> {\n }\n 139 = <table> {\n }\n 140 = <table> {\n }\n 141 = <table> {\n }\n 142 = <table> {\n }\n 143 = <table> {\n }\n 144 = <table> {\n }\n 145 = <table> {\n }\n 146 = <table> {\n }\n 147 = <table> {\n }\n 148 = <table> {\n }\n 149 = <table> {\n }\n 150 = <table> {\n }\n 151 = <table> {\n }\n 152 = <table> {\n }\n 153 = <table> {\n }\n 154 = <table> {\n }\n 155 = <table> {\n }\n 156 = <table> {\n }\n 157 = <table> {\n }\n 158 = <table> {\n }\n 159 = <table> {\n }\n 160 = <table> {\n }\n 161 = <table> {\n }\n 162 = <table> {\n }\n 163 = <table> {\n }\n 164 = <table> {\n }\n 165 = <table> {\n }\n 166 = <table> {\n }\n 167 = <table> {\n }\n 168 = <table> {\n }\n 169 = <table> {\n }\n 170 = <table> {\n }\n 171 = <table> {\n }\n 172 = <table> {\n }\n 173 = <table> {\n }\n 174 = <table> {\n }\n 175 = <table> {\n }\n 176 = <table> {\n }\n 177 = <table> {\n }\n 178 = <table> {\n }\n 179 = <table> {\n }\n 180 = <table> {\n }\n 181 = <table> {\n }\n 182 = <table> {\n }\n 183 = <table> {\n }\n 184 = <table> {\n }\n 185 = <table> {\n }\n 186 = <table> {\n }\n 187 = <table> {\n }\n 188 = <table> {\n }\n 189 = <table> {\n }\n 190 = <table> {\n }\n 191 = <table> {\n }\n 192 = <table> {\n }\n 193 = <table> {\n }\n 194 = <table> {\n }\n 195 = <table> {\n }\n 196 = <table> {\n }\n 197 = <table> {\n }\n 198 = <table> {\n }\n 199 = <table> {\n }\n 200 = <table> {\n }\n 201 = <table> {\n }\n 202 = <table> {\n }\n 203 = <table> {\n }\n 204 = <table> {\n }\n 205 = <table> {\n }\n 206 = <table> {\n }\n 207 = <table> {\n }\n 208 = <table> {\n }\n 209 = <table> {\n }\n 21",
+			["stack"] = "...eSkillMaster\\Core\\Service\\Accounting\\GoldTracker.lua:200: in function `UpdateGoldLog'\n...eSkillMaster\\Core\\Service\\Accounting\\GoldTracker.lua:255: in function `PlayerLogGold'\n...eSkillMaster\\Core\\Service\\Accounting\\GoldTracker.lua:100: in function `OnDisable'\nInterface\\AddOns\\TradeSkillMaster\\Core\\Lib\\Addon.lua:94: in function `OnDisableHelper'\nInterface\\AddOns\\TradeSkillMaster\\Core\\Lib\\Addon.lua:84: in function `callback'\n...erface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Event.lua:85: in function `ProcessEvent'\n...erface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Event.lua:101: in function <...erface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Event.lua:93>",
+			["session"] = 3249,
+			["counter"] = 1,
+		}, -- [422]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:101: attempt to call global 'time' (a number value)",
+			["time"] = "2020/10/16 14:08:13",
+			["locals"] = "self = BlizzardCountFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nevent = \"UNIT_POWER_UPDATE\"\n(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = 3923\n(*temporary) = 3965\n(*temporary) = 42\n(*temporary) = 1602850093\n(*temporary) = \"attempt to call global 'time' (a number value)\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:57\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Class = \"MAGE\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:49\n ClassColor = <table> {\n }\n Config = <table> {\n }\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:72\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:97\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:82\n}\nlastmana = 3923\nadssdfasdf = 1602850086\ncostR1 = 272\ncostMAX = 795\nbcf = BlizzardCountFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:101: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:98>",
+			["session"] = 3250,
+			["counter"] = 3,
+		}, -- [423]
+		{
+			["message"] = "[string \"--[==[ Error in 'Instance Lock (24h)':'init...\"]:282: attempt to call global 'time' (a number value)",
+			["time"] = "2020/10/16 14:08:13",
+			["locals"] = "forcereset = nil\nforcemesg = nil\ndb = <table> {\n sess = <table> {\n }\n History = <table> {\n }\n HistoryDay = <table> {\n }\n histGeneration = 20\n config = <table> {\n }\n Instances = <table> {\n }\n}\n(*temporary) = 1602850093\n(*temporary) = \"attempt to call global 'time' (a number value)\"\nhistZoneKey = <function> defined --[==[ Error in 'Instance Lock (24h)':'initialization' ]==] return function() -- Do not remove this comment, it is part of this trigger: Instance History\nlocal function chatMsg(...)\n    DEFAULT_CHAT_FRAME:AddMessage(\"\\124cFFFF0000\"..(aura_env and aura_env.id or \"Instance History\")..\"\\124r: \"..string.format(...))\nend\n\nlocal function debug(...)\n    local db = WeakAurasSaved.instanceHistoryDb;\n    \n    if db.config.debug then\n        chatMsg(...)\n    end\nend\n\nlocal function deepcopy(orig)\n    local orig_type = type(orig)\n    local copy\n    if orig_type == 'table' then\n        copy = {}\n        for orig_key, orig_value in next, orig, nil do\n            copy[deepcopy(orig_key)] = deepcopy(orig_value)\n        end\n        setmetatable(copy, deepcopy(getmetatable(orig)))\n    else -- number, string, boolean, etc\n        copy = orig\n    end\n    return copy\nend\n\nlocal function pad(n)\n    local s = \"\";\n    \n    for i=1,n do\n        s = s..\"     \";\n    end\n    \n    return s;\nend\n\nlocal fudebug = <function> defined --[==[ Error in 'Instance Lock (24h)':'initialization' ]==] return function() -- Do not remove this comment, it is part of this trigger: Instance History\nlocal function chatMsg(...)\n    DEFAULT_CHAT_FRAME:AddMessage(\"\\124cFFFF0000\"..(aura_env and aura_env.id or \"Instance History\")..\"\\124r: \"..string.format(...))\nend\n\nlocal function debug(...)\n    local db = WeakAurasSaved.instanceHistoryDb;\n    \n    if db.config.debug then\n        chatMsg(...)\n    end\nend\n\nlocal function deepcopy(orig)\n    local orig_type = type(orig)\n    local copy\n    if orig_type == 'table' then\n        copy = {}\n        for orig_key, orig_value in next, orig, nil do\n            copy[deepcopy(orig_key)] = deepcopy(orig_value)\n        end\n        setmetatable(copy, deepcopy(getmetatable(orig)))\n    else -- number, string, boolean, etc\n        copy = orig\n    end\n    return copy\nend\n\nlocal function pad(n)\n    local s = \"\";\n    \n    for i=1,n do\n        s = s..\"     \";\n    end\n    \n    return s;\nend\n\nlocal functiongenerationAdvance = <function> defined --[==[ Error in 'Instance Lock (24h)':'initialization' ]==] return function() -- Do not remove this comment, it is part of this trigger: Instance History\nlocal function chatMsg(...)\n    DEFAULT_CHAT_FRAME:AddMessage(\"\\124cFFFF0000\"..(aura_env and aura_env.id or \"Instance History\")..\"\\124r: \"..string.format(...))\nend\n\nlocal function debug(...)\n    local db = WeakAurasSaved.instanceHistoryDb;\n    \n    if db.config.debug then\n        chatMsg(...)\n    end\nend\n\nlocal function deepcopy(orig)\n    local orig_type = type(orig)\n    local copy\n    if orig_type == 'table' then\n        copy = {}\n        for orig_key, orig_value in next, orig, nil do\n            copy[deepcopy(orig_key)] = deepcopy(orig_value)\n        end\n        setmetatable(copy, deepcopy(getmetatable(orig)))\n    else -- number, string, boolean, etc\n        copy = orig\n    end\n    return copy\nend\n\nlocal function pad(n)\n    local s = \"\";\n    \n    for i=1,n do\n        s = s..\"     \";\n    end\n    \n    return s;\nend\n\nloHistoryUpdate = <function> defined --[==[ Error in 'Instance Lock (24h)':'initialization' ]==] return function() -- Do not remove this comment, it is part of this trigger: Instance History\nlocal function chatMsg(...)\n    DEFAULT_CHAT_FRAME:AddMessage(\"\\124cFFFF0000\"..(aura_env and aura_env.id or \"Instance History\")..\"\\124r: \"..string.format(...))\nend\n\nlocal function debug(...)\n    local db = WeakAurasSaved.instanceHistoryDb;\n    \n    if db.config.debug then\n        chatMsg(...)\n    end\nend\n\nlocal function deepcopy(orig)\n    local orig_type = type(orig)\n    local copy\n    if orig_type == 'table' then\n        copy = {}\n        for orig_key, orig_value in next, orig, nil do\n            copy[deepcopy(orig_key)] = deepcopy(orig_value)\n    ",
+			["stack"] = "[string \"--[==[ Error in 'Instance Lock (24h)':'init...\"]:282: in function <[string \"--[==[ Error in 'Instance Lock (24h)':'init...\"]:246>",
+			["session"] = 3250,
+			["counter"] = 1,
+		}, -- [424]
+		{
+			["message"] = "Interface\\AddOns\\Details\\core\\gears.lua:2291: attempt to call global 'time' (a number value)",
+			["time"] = "2020/10/16 14:08:13",
+			["locals"] = "self = <table> {\n _callback = <function> defined @Interface\\SharedXML\\C_TimerAugment.lua:14\n _remainingIterations = 1\n}\ntargetPlayer = nil\n(*temporary) = 1602850093\n(*temporary) = \"attempt to call global 'time' (a number value)\"\ntalentWatchClassic = <unnamed> {\n 0 = <userdata>\n cooldown = 0\n delayedUpdate = <table> {\n }\n}\n_detalhes = <table> {\n SetBarSpecIconSettings = <function> defined @Interface\\AddOns\\Details\\gumps\\janela_principal.lua:4288\n APITopics = <table> {\n }\n InitializeRunCodeWindow = <function> defined @Interface\\AddOns\\Details\\core\\windows.lua:4496\n EntrarEmCombate = <function> defined @Interface\\AddOns\\Details\\core\\control.lua:368\n hex = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:687\n BuildSpellList = <function> defined @Interface\\AddOns\\Details\\functions\\spellcache.lua:315\n opened_windows = 3\n RefreshAttributeTextSize = <function> defined @Interface\\AddOns\\Details\\gumps\\janela_principal.lua:7552\n PotionList = <table> {\n }\n EndRefresh = <function> defined @Interface\\AddOns\\Details\\core\\control.lua:1859\n FechaJanelaInfo = <function> defined @Interface\\AddOns\\Details\\gumps\\janela_info.lua:399\n GetMode = <function> defined @Interface\\AddOns\\Details\\classes\\classe_instancia.lua:148\n SetMode = <function> defined @Interface\\AddOns\\Details\\classes\\classe_instancia.lua:2706\n RestoreState_CurrentMythicDungeonRun = <function> defined @Interface\\AddOns\\Details\\functions\\profiles.lua:1488\n APIVersion = 142\n IsPluginEnabled = <function> defined @Interface\\AddOns\\Details\\core\\plugins.lua:58\n StopTalentLoadingAnimation = <function> defined @Interface\\AddOns\\Details\\core\\gears.lua:2630\n ImportProfile = <function> defined @Interface\\AddOns\\Details\\functions\\profiles.lua:1639\n show_totalhitdamage_on_overkill = false\n raid = 3\n SetNickname = <function> defined @Interface\\AddOns\\Details\\Libs\\NickTag-1.0\\NickTag-1.0.lua:495\n color_by_arena_team = true\n SortKeyGroupHeal = <function> defined @Interface\\AddOns\\Details\\classes\\classe_heal.lua:125\n SortKeyGroup = <function> defined @Interface\\AddOns\\Details\\classes\\classe_damage.lua:133\n IsInEncounter = <function> defined @Interface\\AddOns\\Details\\core\\parser.lua:5265\n Check_ZONE_CHANGED_NEW_AREA = <function> defined @Interface\\AddOns\\Details\\core\\parser.lua:4023\n plugin_window_pos = <table> {\n }\n gump = <table> {\n }\n CaptureRefresh = <function> defined @Interface\\AddOns\\Details\\core\\parser.lua:3677\n NewModule = <function> defined @Interface\\AddOns\\GatherMate2\\Libs\\AceAddon-3.0\\AceAddon-3.0.lua:235\n InstancesToStoreData = <table> {\n }\n name_space_info = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:1385\n ShowDelayMsg = <function> defined @Interface\\AddOns\\Details\\boot.lua:722\n Resize = <function> defined @Interface\\AddOns\\Details\\classes\\classe_instancia.lua:1867\n GetEncounterActorsName = <function> defined @Interface\\AddOns\\Details\\functions\\boss.lua:306\n RequestCloudData = <function> defined @Interface\\AddOns\\Details\\core\\network.lua:763\n RestauraJanela = <function> defined @Interface\\AddOns\\Details\\classes\\classe_instancia.lua:1429\n default_skin_to_use = \"Minimalistic\"\n GetOpenedWindowsAmount = <function> defined @Interface\\AddOns\\Details\\classes\\classe_instancia.lua:256\n GetInstanceGroup = <function> defined @Interface\\AddOns\\Details\\gumps\\janela_principal.lua:8013\n deadlog_events = 32\n Dump = <function> defined @Interface\\AddOns\\Details\\core\\windows.lua:7143\n OpenNewsWindow = <function> defined @Interface\\AddOns\\Details\\gumps\\janela_news.lua:9\n last_instance_id = 209\n _detalhes_props = <table> {\n }\n atributo_energy = <table> {\n }\n UnitDamageOnUnit = <function> defined @Interface\\AddOns\\Details\\functions\\api2.lua:1123\n name_space_generic = <function> defined @Interface\\AddOns\\Details\\core\\util.lua:1395\n storage = <table> {\n }\n AddOnStartTime = 139377.745000\n ContainerSortEnemies = <function> defined @Interface\\AddOns\\Details\\classes\\classe_damage.lua:250\n ToolBar = <table> {\n }\n FixToolbarMenu = <function> defined @Interface\\AddOns\\Details\\classes\\classe_instancia.lua:1422\n UseWestNumericalSystem = <function> defined @Interface\\AddOns\\Details\\core\\",
+			["stack"] = "Interface\\AddOns\\Details\\core\\gears.lua:2291: in function <Interface\\AddOns\\Details\\core\\gears.lua:2288>\nInterface\\SharedXML\\C_TimerAugment.lua:16: in function <Interface\\SharedXML\\C_TimerAugment.lua:14>",
+			["session"] = 3250,
+			["counter"] = 1,
+		}, -- [425]
+		{
+			["message"] = "Interface\\AddOns\\Auctionator\\Auctionator-8.1.0.lua:922: attempt to call global 'time' (a number value)",
+			["time"] = "2020/10/16 14:08:13",
+			["locals"] = "addonName = \"Blizzard_AuctionUI\"\n(*temporary) = 1602850093\n(*temporary) = \"attempt to call global 'time' (a number value)\"\nzc = <table> {\n IsEnglishLocale = <function> defined @Interface\\AddOns\\Auctionator\\AuctionatorLocalize.lua:63\n msg_red = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:570\n TrimBrackets = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:955\n tallyAdd = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:1108\n msg_yellow = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:572\n msg = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:699\n GetArrayElemOrFirst = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:136\n NumToBool = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:524\n printmem = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:1018\n ParseBattlePetLink = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:417\n ShowHide = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:33\n StringStartsWith = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:892\n StringEndsWith = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:872\n round = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:564\n CopyDeep = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:984\n ClearTable = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:975\n CheckDeferredCall = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:320\n priceToMoneyString = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:803\n tallyPrint = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:1120\n TrimQuotes = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:935\n GetArrayElemOrNil = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:151\n BoolToNum = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:514\n If = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:107\n periodic = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:343\n Min = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:77\n msg_pink = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:571\n SetTextIf = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:44\n QuoteString = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:923\n msg_str = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:589\n ItemNamefromLink = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:447\n enc64 = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:201\n Val = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:55\n IsBattlePetLink = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:409\n msg_ex = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:708\n printableLink = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:1005\n PrintTable = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:373\n StringContains = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:854\n StringSame = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:836\n PullItemIntoMemory = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:482\n priceToString = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:767\n PrintKeysSorted = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:118\n val2gsc = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:749\n Negate = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:534\n IsTextQuoted = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:916\n BoolToString = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:504\n msg_badErr = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:606\n msg_color = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:576\n HSV2RGB = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:614\n md = <function> defined @Interface\\AddOns\\Auctionator\\zcUtils.lua:636\n words = <function> defined @Interface\\AddOns\\Auctionator\\zcUti",
+			["stack"] = "Interface\\AddOns\\Auctionator\\Auctionator-8.1.0.lua:922: in function `Atr_OnAddonLoaded'\nInterface\\AddOns\\Auctionator\\Auctionator-8.1.0.lua:168: in function `Atr_EventHandler'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>\n[C]: in function `LoadAddOn'\n...e\\AddOns\\TradeSkillMaster\\Core\\UI\\AuctionUI\\Core.lua:43: in function `pendingCallback'\n...erface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Delay.lua:171: in function <...erface\\AddOns\\TradeSkillMaster\\LibTSM\\Util\\Delay.lua:136>",
+			["session"] = 3250,
+			["counter"] = 1,
+		}, -- [426]
+		{
+			["message"] = "TellMeWhen: Interface\\AddOns\\TellMeWhen\\TellMeWhen-8.6.9.lua:1294: attempt to call field 'time' (a number value)",
+			["time"] = "2020/10/16 14:08:13",
+			["stack"] = "Interface\\AddOns\\TellMeWhen\\TellMeWhen-8.6.9.lua:2781: in function <Interface\\AddOns\\TellMeWhen\\TellMeWhen.lua:2738>",
+			["session"] = 3250,
+			["counter"] = 1,
+		}, -- [427]
+		{
+			["message"] = "[string \"--[==[ Error in 'Instance Lock (24h)':'cust...\"]:2: attempt to call global 'time' (a number value)",
+			["time"] = "2020/10/16 14:07:22",
+			["stack"] = "[C]: in function `xpcall'\nInterface\\AddOns\\WeakAuras\\WeakAuras-3.0.0.lua:4060: in function `RunCustomTextFunc'\n...nterface\\AddOns\\WeakAuras\\SubRegionTypes\\SubText.lua:310: in function `?'\n...ace\\AddOns\\WeakAuras\\RegionTypes\\RegionPrototype.lua:34: in function `Notify'\n...ace\\AddOns\\WeakAuras\\RegionTypes\\RegionPrototype.lua:648: in function <...ace\\AddOns\\WeakAuras\\RegionTypes\\RegionPrototype.lua:638>",
+			["session"] = 3250,
+			["counter"] = 6,
+		}, -- [428]
+		{
+			["message"] = "Interface\\AddOns\\KillTrack\\KillTrack-v1.13.0.lua:510: attempt to call global 'time' (a number value)",
+			["time"] = "2020/10/16 14:08:13",
+			["locals"] = "self = <table> {\n ResetSession = <function> defined @Interface\\AddOns\\KillTrack\\KillTrack.lua:479\n ShowReset = <function> defined @Interface\\AddOns\\KillTrack\\Dialogs.lua:99\n CharGlobal = <table> {\n }\n GetSortedSessionKills = <function> defined @Interface\\AddOns\\KillTrack\\KillTrack.lua:454\n GetKills = <function> defined @Interface\\AddOns\\KillTrack\\KillTrack.lua:485\n Immediate = <table> {\n }\n Delete = <function> defined @Interface\\AddOns\\KillTrack\\KillTrack.lua:641\n ClearImmediateFilter = <function> defined @Interface\\AddOns\\KillTrack\\KillTrack.lua:361\n PlayerName = \"Augustin\"\n InitMob = <function> defined @Interface\\AddOns\\KillTrack\\KillTrack.lua:375\n SetThreshold = <function> defined @Interface\\AddOns\\KillTrack\\KillTrack.lua:328\n Options = <table> {\n }\n AddSessionKill = <function> defined @Interface\\AddOns\\KillTrack\\KillTrack.lua:437\n AddKill = <function> defined @Interface\\AddOns\\KillTrack\\KillTrack.lua:399\n ShowDelete = <function> defined @Interface\\AddOns\\KillTrack\\Dialogs.lua:84\n Temp = <table> {\n }\n Announce = <function> defined @Interface\\AddOns\\KillTrack\\KillTrack.lua:546\n Broker = <table> {\n }\n ExpTracker = <table> {\n }\n TimerFrame = <table> {\n }\n Messages = <table> {\n }\n SetImmediateThreshold = <function> defined @Interface\\AddOns\\KillTrack\\KillTrack.lua:341\n IsInGroup = <function> defined @Interface\\AddOns\\KillTrack\\KillTrack.lua:315\n Msg = <function> defined @Interface\\AddOns\\KillTrack\\KillTrack.lua:555\n GetTotalKills = <function> defined @Interface\\AddOns\\KillTrack\\KillTrack.lua:498\n PrintKills = <function> defined @Interface\\AddOns\\KillTrack\\KillTrack.lua:518\n MobList = <table> {\n }\n Command = <table> {\n }\n ShowPurge = <function> defined @Interface\\AddOns\\KillTrack\\Dialogs.lua:92\n SetImmediateFilter = <function> defined @Interface\\AddOns\\KillTrack\\KillTrack.lua:353\n Purge = <function> defined @Interface\\AddOns\\KillTrack\\KillTrack.lua:666\n Frame = <unnamed> {\n }\n ResetAchievCount = <function> defined @Interface\\AddOns\\KillTrack\\KillTrack.lua:693\n ToggleExp = <function> defined @Interface\\AddOns\\KillTrack\\KillTrack.lua:297\n GetSortedMobTable = <function> defined @Interface\\AddOns\\KillTrack\\KillTrack.lua:589\n Events = <table> {\n }\n ToggleCountMode = <function> defined @Interface\\AddOns\\KillTrack\\KillTrack.lua:366\n KillAlert = <function> defined @Interface\\AddOns\\KillTrack\\KillTrack.lua:559\n GetMob = <function> defined @Interface\\AddOns\\KillTrack\\KillTrack.lua:580\n Sort = <table> {\n }\n GetSessionStats = <function> defined @Interface\\AddOns\\KillTrack\\KillTrack.lua:506\n OnEvent = <function> defined @Interface\\AddOns\\KillTrack\\KillTrack.lua:109\n SetExp = <function> defined @Interface\\AddOns\\KillTrack\\KillTrack.lua:446\n ToggleDebug = <function> defined @Interface\\AddOns\\KillTrack\\KillTrack.lua:306\n Name = \"KillTrack\"\n Global = <table> {\n }\n Timer = <table> {\n }\n Version = \"v1.13.0\"\n Session = <table> {\n }\n Reset = <function> defined @Interface\\AddOns\\KillTrack\\KillTrack.lua:685\n}\n(*temporary) = 1602850093\n(*temporary) = \"attempt to call global 'time' (a number value)\"\n",
+			["stack"] = "Interface\\AddOns\\KillTrack\\KillTrack-v1.13.0.lua:510: in function `GetSessionStats'\nInterface\\AddOns\\KillTrack\\Broker.lua:126: in function `UpdateText'\nInterface\\AddOns\\KillTrack\\Broker.lua:138: in function `OnUpdate'\nInterface\\AddOns\\KillTrack\\Broker.lua:154: in function <Interface\\AddOns\\KillTrack\\Broker.lua:154>",
+			["session"] = 3250,
+			["counter"] = 2,
+		}, -- [429]
+		{
+			["message"] = "[string \"--[==[ Error in 'Instance Lock (24h)' ]==] ...\"]:2: attempt to call global 'time' (a number value)",
+			["time"] = "2020/10/16 14:07:22",
+			["stack"] = "[C]: in function `xpcall'\nInterface\\AddOns\\WeakAuras\\GenericTrigger.lua:544: in function <Interface\\AddOns\\WeakAuras\\GenericTrigger.lua:537>\nInterface\\AddOns\\WeakAuras\\GenericTrigger.lua:733: in function `ScanEventsInternal'\nInterface\\AddOns\\WeakAuras\\GenericTrigger.lua:694: in function `ScanEvents'\nInterface\\AddOns\\WeakAuras\\GenericTrigger.lua:1404: in function <Interface\\AddOns\\WeakAuras\\GenericTrigger.lua:1402>",
+			["session"] = 3250,
+			["counter"] = 403,
+		}, -- [430]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:108: attempt to perform arithmetic on upvalue 'manaticktotal' (a nil value)",
+			["time"] = "2020/10/16 14:12:40",
+			["locals"] = "self = BlizzardCountFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nevent = \"PLAYER_ENTERING_WORLD\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to perform arithmetic on upvalue 'manaticktotal' (a nil value)\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:57\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Class = \"MAGE\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:49\n ClassColor = <table> {\n }\n Config = <table> {\n }\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:72\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:97\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:82\n}\nlastmana = nil\nticktime = 1602850353\nmanatick = nil\nmanaticktotal = nil\ncostR1 = nil\ncostMAX = nil\nbcount = nil\nbcf = BlizzardCountFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:108: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:99>",
+			["session"] = 3252,
+			["counter"] = 1,
+		}, -- [431]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:115: attempt to perform arithmetic on upvalue 'manaticktotal' (a nil value)",
+			["time"] = "2020/10/16 14:14:37",
+			["locals"] = "self = BlizzardCountFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nevent = \"PLAYER_ENTERING_WORLD\"\n(*temporary) = nil\n(*temporary) = 0\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to perform arithmetic on upvalue 'manaticktotal' (a nil value)\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:57\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Class = \"MAGE\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:49\n ClassColor = <table> {\n }\n Config = <table> {\n }\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:72\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:97\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:82\n}\nticktime = 1602850471\nmanaticktotal = nil\nlastmana = nil\nmanatick = 0\ncostR1 = nil\ncostMAX = nil\nbcount = nil\nbcf = BlizzardCountFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:115: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:101>",
+			["session"] = 3253,
+			["counter"] = 3,
+		}, -- [432]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:116: attempt to perform arithmetic on upvalue 'manaticktotal' (a nil value)",
+			["time"] = "2020/10/16 14:16:57",
+			["locals"] = "self = BlizzardCountFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nevent = \"PLAYER_ENTERING_WORLD\"\n(*temporary) = nil\n(*temporary) = 0\n(*temporary) = 0\n(*temporary) = nil\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = true\n(*temporary) = \"attempt to perform arithmetic on upvalue 'manaticktotal' (a nil value)\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:57\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Class = \"MAGE\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:49\n ClassColor = <table> {\n }\n Config = <table> {\n }\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:72\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:97\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:82\n}\nticktime = 1602850610\nmanaticktotal = nil\nlastmana = nil\nmanatick = 0\ncostR1 = nil\ncostMAX = nil\nbcount = nil\nbcf = BlizzardCountFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:116: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:101>",
+			["session"] = 3254,
+			["counter"] = 1,
+		}, -- [433]
+		{
+			["message"] = "[string \"ManaCountFrame:SetFontSize(12)\"]:1: attempt to call method 'SetFontSize' (a nil value)",
+			["time"] = "2020/10/16 14:26:01",
+			["locals"] = "(*temporary) = nil\n(*temporary) = ManaCountFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n(*temporary) = 12\n(*temporary) = \"attempt to call method 'SetFontSize' (a nil value)\"\n",
+			["stack"] = "[string \"ManaCountFrame:SetFontSize(12)\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:2783: in function <Interface\\FrameXML\\ChatFrame.lua:2776>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function `UseAction'\nInterface\\FrameXML\\SecureTemplates.lua:338: in function `handler'\nInterface\\FrameXML\\SecureTemplates.lua:616: in function `SecureActionButton_OnClick'\n[string \"*:OnClick\"]:4: in function <[string \"*:OnClick\"]:1>",
+			["session"] = 3258,
+			["counter"] = 1,
+		}, -- [434]
+		{
+			["message"] = "[string \"print(UnitMaxPower(\"player\"))\"]:1: attempt to call global 'UnitMaxPower' (a nil value)",
+			["time"] = "2020/10/16 14:29:43",
+			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = nil\n(*temporary) = \"player\"\n(*temporary) = \"attempt to call global 'UnitMaxPower' (a nil value)\"\n",
+			["stack"] = "[string \"print(UnitMaxPower(\"player\"))\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 3260,
+			["counter"] = 1,
+		}, -- [435]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:142: ')' expected near 'then'",
+			["time"] = "2020/10/16 14:31:40",
+			["locals"] = "",
+			["stack"] = "",
+			["session"] = 3261,
+			["counter"] = 4,
+		}, -- [436]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:121: attempt to compare number with string",
+			["time"] = "2020/10/16 14:38:00",
+			["locals"] = "self = BlizzardCountFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nevent = \"PLAYER_ENTERING_WORLD\"\n(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = 20.750999\n(*temporary) = 20.750999\n(*temporary) = \"20.75\"\n(*temporary) = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:57\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Class = \"MAGE\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:49\n ClassColor = <table> {\n }\n Config = <table> {\n }\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:72\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:97\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:82\n}\n(*temporary) = 20.750999\n(*temporary) = 2\n(*temporary) = \"attempt to compare number with string\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:57\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Class = \"MAGE\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:49\n ClassColor = <table> {\n }\n Config = <table> {\n }\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:72\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:97\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:82\n}\nticktime = 1602851873\nmanaticktotal = 0\nbase = 20.750999\ncasting = 20.750999\nlastmana = nil\nmanatick = 0\ncostR1 = nil\ncostMAX = nil\nbcount = nil\nmcf = ManaCountFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nbcf = BlizzardCountFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:121: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:111>",
+			["session"] = 3267,
+			["counter"] = 27,
+		}, -- [437]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Experience/Player.lua:85: attempt to concatenate a nil value",
+			["time"] = "2020/10/16 14:44:50",
+			["locals"] = "event = \"PLAYER_ENTERING_WORLD\"\nisInitialLogin = false\nisReloadingUi = true\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = \"%\"\n(*temporary) = 14\n(*temporary) = nil\n(*temporary) = \"\"\n(*temporary) = \"1\"\n(*temporary) = \"09846\"\n(*temporary) = \"\"\n(*temporary) = \"109,846\"\n(*temporary) = \"%s%s%s%s\"\n(*temporary) = \"attempt to concatenate a nil value\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:57\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Class = \"MAGE\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:49\n ClassColor = <table> {\n }\n Config = <table> {\n }\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:83\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:101\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:86\n}\nPlayerXP = PlayerXPFrame {\n 0 = <userdata>\n XPbar = PlayerXPFrameStatusBar {\n }\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Experience/Player.lua:85: in function <Interface\\AddOns\\xVermin\\Experience/Player.lua:74>\nInterface\\AddOns\\xVermin\\Experience/Player.lua:109: in function <Interface\\AddOns\\xVermin\\Experience/Player.lua:103>",
+			["session"] = 3272,
+			["counter"] = 5,
+		}, -- [438]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Experience/Player.lua:86: attempt to concatenate a nil value",
+			["time"] = "2020/10/16 14:50:17",
+			["locals"] = "event = \"PLAYER_ENTERING_WORLD\"\nisInitialLogin = false\nisReloadingUi = true\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = <unnamed> {\n 0 = <userdata>\n}\n(*temporary) = nil\n(*temporary) = \"%\"\n(*temporary) = 14\n(*temporary) = nil\n(*temporary) = true\n(*temporary) = true\n(*temporary) = nil\n(*temporary) = true\n(*temporary) = <function> defined @Interface\\AddOns\\xVermin\\Chat.lua:31\n(*temporary) = nil\n(*temporary) = \"attempt to concatenate a nil value\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:57\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Class = \"MAGE\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:49\n ClassColor = <table> {\n }\n Config = <table> {\n }\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:87\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:105\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:90\n}\nPlayerXP = PlayerXPFrame {\n 0 = <userdata>\n XPbar = PlayerXPFrameStatusBar {\n }\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Experience/Player.lua:86: in function <Interface\\AddOns\\xVermin\\Experience/Player.lua:74>\nInterface\\AddOns\\xVermin\\Experience/Player.lua:110: in function <Interface\\AddOns\\xVermin\\Experience/Player.lua:104>",
+			["session"] = 3273,
+			["counter"] = 1,
+		}, -- [439]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:121: attempt to compare number with nil",
+			["time"] = "2020/10/16 14:44:51",
+			["locals"] = "self = BlizzardCountFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nevent = \"PLAYER_ENTERING_WORLD\"\n(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:57\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Class = \"MAGE\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:49\n ClassColor = <table> {\n }\n Config = <table> {\n }\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:83\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:101\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:86\n}\n(*temporary) = 20.750999\n(*temporary) = 2\n(*temporary) = \"attempt to compare number with nil\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:57\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Class = \"MAGE\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:49\n ClassColor = <table> {\n }\n Config = <table> {\n }\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:83\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:101\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:86\n}\nticktime = 1602852284\nmanaticktotal = 0\nbase = 20.750999\ncasting = 20.750999\nlastmana = nil\nmanatick = 0\ncostR1 = nil\ncostMAX = nil\nbcount = nil\nmcf = ManaCountFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nbcf = BlizzardCountFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:121: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:111>",
+			["session"] = 3273,
+			["counter"] = 6,
+		}, -- [440]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:312: attempt to concatenate a nil value",
+			["time"] = "2020/10/16 14:44:44",
+			["locals"] = "(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n}\n(for control) = 1\nkey = 1\nvalue = <table> {\n name = \"Zul'Farrak Zombie\"\n count = 276\n}\n(*temporary) = \"\"\n(*temporary) = nil\n(*temporary) = \"%\n\"\n(*temporary) = \"\n\"\n(*temporary) = 1\n(*temporary) = \"attempt to concatenate a nil value\"\nkc = KillCountFrame {\n 0 = <userdata>\n beautyBorder = <table> {\n }\n beautyShadow = <table> {\n }\n}\nnames = \"Zul'Farrak Zombie\n\"\npercentages = \"\"\ntotal = 294\nsortedKillLog = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n}\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:57\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Class = \"MAGE\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:49\n ClassColor = <table> {\n }\n Config = <table> {\n }\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:83\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:101\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:86\n}\nkctotal = KillCountTotal {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\npullkills = 0\nkclistnames = KillCountListNames {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkclistvalues = KillCountListValues {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkclistpercentages = KillCountListPercentages {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\npullxpframevalue = PullExperienceValue {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\ntotalxpframevalue = TotalExperienceValue {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nkctitle = KillCountTitle {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nxppadding = 30\nwrapper = WrapperResetTimer {\n 0 = <userdata>\n}\nkcreset = KillCountReset {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:312: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:290>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:355: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:343>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:377: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:373>",
+			["session"] = 3273,
+			["counter"] = 350,
+		}, -- [441]
 	},
 }

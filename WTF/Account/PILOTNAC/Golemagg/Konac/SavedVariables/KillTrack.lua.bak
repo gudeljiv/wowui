@@ -225,6 +225,10 @@ KILLTRACK_CHAR = {
 			["Name"] = "Devouring Ectoplasm",
 			["Kills"] = 0,
 		},
+		[3256] = {
+			["Name"] = "Sunscale Scytheclaw",
+			["Kills"] = 0,
+		},
 		[3384] = {
 			["Name"] = "Southsea Privateer",
 			["Kills"] = 0,
@@ -336,6 +340,10 @@ KILLTRACK_CHAR = {
 		[2261] = {
 			["Name"] = "Syndicate Watchman",
 			["Kills"] = 95,
+		},
+		[4249] = {
+			["Name"] = "Pesterhide Snarler",
+			["Kills"] = 0,
 		},
 		[3126] = {
 			["Name"] = "Armored Scorpid",
@@ -469,9 +477,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Southsea Dock Worker",
 			["Kills"] = 3,
 		},
-		[5053] = {
-			["Name"] = "Deviate Crocolisk",
-			["Kills"] = 5,
+		[7858] = {
+			["Name"] = "Southsea Swashbuckler",
+			["Kills"] = 6,
 		},
 		[3300] = {
 			["Name"] = "Adder",
@@ -593,8 +601,8 @@ KILLTRACK_CHAR = {
 			["Name"] = "Prairie Dog",
 			["Kills"] = 0,
 		},
-		[1789] = {
-			["Name"] = "Skeletal Acolyte",
+		[769] = {
+			["Name"] = "Deathstrike Tarantula",
 			["Kills"] = 0,
 		},
 		[2345] = {
@@ -653,8 +661,8 @@ KILLTRACK_CHAR = {
 			["Name"] = "Marsh Murloc",
 			["Kills"] = 0,
 		},
-		[769] = {
-			["Name"] = "Deathstrike Tarantula",
+		[1789] = {
+			["Name"] = "Skeletal Acolyte",
 			["Kills"] = 0,
 		},
 		[3130] = {
@@ -741,9 +749,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Bloodfen Scytheclaw",
 			["Kills"] = 0,
 		},
-		[7858] = {
-			["Name"] = "Southsea Swashbuckler",
-			["Kills"] = 6,
+		[5053] = {
+			["Name"] = "Deviate Crocolisk",
+			["Kills"] = 5,
 		},
 		[5268] = {
 			["Name"] = "Ironfur Bear",

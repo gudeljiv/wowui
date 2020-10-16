@@ -1,9 +1,14 @@
 
 KILLTRACK = {
-	["PRINTKILLS"] = false,
 	["COUNT_GROUP"] = false,
+	["PRINTKILLS"] = false,
 	["SHOW_EXP"] = false,
-	["TOOLTIP"] = true,
+	["BROKER"] = {
+		["MINIMAP"] = {
+			["hide"] = true,
+		},
+		["SHORT_TEXT"] = false,
+	},
 	["PRINTNEW"] = false,
 	["MOBS"] = {
 		[3466] = {
@@ -286,6 +291,11 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Devouring Ectoplasm",
 		},
+		[3256] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Sunscale Scytheclaw",
+		},
 		[3384] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
@@ -425,6 +435,11 @@ KILLTRACK = {
 			["AchievCount"] = 0,
 			["Kills"] = 95,
 			["Name"] = "Syndicate Watchman",
+		},
+		[4249] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Pesterhide Snarler",
 		},
 		[4397] = {
 			["AchievCount"] = 0,
@@ -586,10 +601,10 @@ KILLTRACK = {
 			["Kills"] = 2,
 			["Name"] = "Southsea Pirate",
 		},
-		[2406] = {
+		[7856] = {
 			["AchievCount"] = 0,
-			["Kills"] = 4,
-			["Name"] = "Mountain Lion",
+			["Kills"] = 2,
+			["Name"] = "Southsea Freebooter",
 		},
 		[7857] = {
 			["AchievCount"] = 0,
@@ -747,15 +762,15 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Snapjaw",
 		},
-		[769] = {
-			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Deathstrike Tarantula",
-		},
 		[1789] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Skeletal Acolyte",
+		},
+		[769] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Deathstrike Tarantula",
 		},
 		[2407] = {
 			["AchievCount"] = 0,
@@ -937,10 +952,10 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Bloodfen Scytheclaw",
 		},
-		[7856] = {
+		[2406] = {
 			["AchievCount"] = 0,
-			["Kills"] = 2,
-			["Name"] = "Southsea Freebooter",
+			["Kills"] = 4,
+			["Name"] = "Mountain Lion",
 		},
 		[1192] = {
 			["AchievCount"] = 0,
@@ -1001,10 +1016,5 @@ KILLTRACK = {
 	["ACHIEV_THRESHOLD"] = 1000,
 	["DISABLE_DUNGEONS"] = false,
 	["DISABLE_RAIDS"] = false,
-	["BROKER"] = {
-		["MINIMAP"] = {
-			["hide"] = true,
-		},
-		["SHORT_TEXT"] = false,
-	},
+	["TOOLTIP"] = true,
 }

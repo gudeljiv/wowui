@@ -18,7 +18,9 @@ VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
 /use item:1081
 END
 VER 3 000000000000000B "TEST" "132097"
-/run 
+/run ManaCountFrame:ClearAllPoints()
+/run ManaCountFrame:SetFontSize(12)
+/run ManaCountFrame:
 END
 VER 3 000000000000000A "TSMMacro" "INV_Misc_Flower_01"
 /click TSMAuctioningBtn

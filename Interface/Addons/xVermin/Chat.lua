@@ -142,7 +142,7 @@ local function SetChat()
 
 	local frame = ChatFrame7
 	FCF_SetWindowName(frame, "Loot")
-	FCF_SetChatWindowFontSize(nil, frame, 10)
+	FCF_SetChatWindowFontSize(nil, frame, 11)
 	ChatFrame_RemoveAllMessageGroups(frame)
 	ChatFrame7:ClearAllPoints()
 	ChatFrame7:SetClampRectInsets(0, -1, 0, 0)
@@ -153,7 +153,7 @@ local function SetChat()
 
 	local frame = ChatFrame8
 	FCF_SetWindowName(frame, "XP")
-	FCF_SetChatWindowFontSize(nil, frame, 10)
+	FCF_SetChatWindowFontSize(nil, frame, 11)
 	ChatFrame_RemoveAllMessageGroups(frame)
 	ChatFrame8:ClearAllPoints()
 	ChatFrame8:SetClampRectInsets(0, -1, 0, 0)
