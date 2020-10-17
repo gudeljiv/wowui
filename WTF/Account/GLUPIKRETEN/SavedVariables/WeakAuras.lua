@@ -168,7 +168,7 @@ WeakAurasSaved = {
 						1, -- [1]
 						1, -- [2]
 						1, -- [3]
-						0.6059664785862, -- [4]
+						1, -- [4]
 					},
 					["text_font"] = "PT Sans Narrow",
 					["text_shadowYOffset"] = -1,
@@ -590,32 +590,32 @@ WeakAurasSaved = {
 	},
 	["login_squelch_time"] = 10,
 	["frame"] = {
-		["xOffset"] = -1584.00054931641,
-		["yOffset"] = -123.501342773438,
+		["xOffset"] = -1529.00073242188,
+		["yOffset"] = -114.501342773438,
 		["height"] = 995.999877929688,
 		["width"] = 927.000305175781,
 	},
 	["instanceHistoryDb"] = {
 		["sess"] = {
-			["delayUpdate"] = 1602877896,
+			["histOldest"] = "54 |4Min:Mins;",
 			["enterLoc"] = {
 				["instance"] = -1,
 			},
-			["histOldest"] = "n/a",
-			["histLiveCount"] = 0,
+			["delayUpdate"] = 1602936734.35922,
+			["histLiveCount"] = 1,
 		},
 		["History"] = {
+			["Augustin - Golemagg:Zul'Farrak:party:1:20"] = {
+				["last"] = 1602936384,
+				["create"] = 1602933548,
+				["desc"] = "Augustin - Golemagg: Zul'Farrak - Normal",
+			},
 		},
 		["HistoryDay"] = {
-			["Augustin - Golemagg:Zul'Farrak:party:1:16"] = {
-				["last"] = 1602843246,
-				["create"] = 1602839961,
-				["desc"] = "Augustin: Zul'Farrak - Normal",
-			},
-			["Augustin - Golemagg:Zul'Farrak:party:1:12"] = {
-				["last"] = 1602839938,
-				["create"] = 1602837154,
-				["desc"] = "Augustin: Zul'Farrak - Normal",
+			["Augustin - Golemagg:Zul'Farrak:party:1:20"] = {
+				["last"] = 1602936384,
+				["create"] = 1602933548,
+				["desc"] = "Augustin - Golemagg: Zul'Farrak - Normal",
 			},
 		},
 		["histGeneration"] = 20,

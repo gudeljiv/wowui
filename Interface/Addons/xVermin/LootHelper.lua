@@ -103,9 +103,9 @@ local ticktime = time()
 local bcount, base, casting
 local manatick = 0
 local manaticktotal = 0
-bcf:RegisterEvent("PLAYER_ENTERING_WORLD")
-bcf:RegisterEvent("PLAYER_REGEN_DISABLED")
+bcf:RegisterEvent("ADDON_LOADED")
 bcf:RegisterUnitEvent("UNIT_POWER_UPDATE")
+bcf:RegisterEvent("PLAYER_REGEN_DISABLED")
 bcf:SetScript(
 	"OnEvent",
 	function(self, event, ...)
@@ -117,47 +117,47 @@ bcf:SetScript(
 				end
 			end
 
-			base, casting = GetManaRegen()
-			if (xVermin:Round(base, 2) or xVermin:Round(casting, 2)) > 0 then
-				if lastmana then
-					if UnitPower("player") > lastmana then
-						manatick = UnitPower("player") - lastmana
+			if (GetSpellPowerCost("Blizzard(Rank 1)")) then
+				base, casting = GetManaRegen()
+				if (xVermin:Round(base, 2) or xVermin:Round(casting, 2)) > 0 then
+					if lastmana then
+						if UnitPower("player") > lastmana then
+							manatick = UnitPower("player") - lastmana
+						end
+					end
+				else
+					manatick = 0
+				end
+				lastmana = UnitPower("player")
+
+				if GetSpellPowerCost("Blizzard(Rank 1)") then
+					for _, costInfo in pairs(GetSpellPowerCost("Blizzard(Rank 1)")) do
+						costR1 = costInfo.cost
+						break
 					end
 				end
-			else
-				manatick = 0
-			end
-			lastmana = UnitPower("player")
 
-			for _, costInfo in pairs(GetSpellPowerCost("Blizzard(Rank 1)")) do
-				costR1 = 1
-				if costInfo and costInfo.cost then
-					costR1 = costInfo.cost
-					break
+				if GetSpellPowerCost("Blizzard") then
+					for _, costInfo in pairs(GetSpellPowerCost("Blizzard")) do
+						costMAX = costInfo.cost
+						break
+					end
 				end
-			end
 
-			for _, costInfo in pairs(GetSpellPowerCost("Blizzard")) do
-				costMAX = 1
-				if costInfo and costInfo.cost then
-					costMAX = costInfo.cost
-					break
+				if UnitPower("Player") == UnitPowerMax("player") or manatick == 0 then
+					manatick = 0
 				end
+
+				bcount = floor(UnitPower("Player") / costR1) .. " (" .. floor(UnitPower("Player") / costMAX) .. ")"
+
+				bcf.text:SetText(bcount)
+				mcf.text:SetText(manatick)
+
+				bcf:SetWidth(bcf.text:GetStringWidth())
+				bcf:SetHeight(bcf.text:GetStringHeight())
+				mcf:SetWidth(mcf.text:GetStringWidth())
+				mcf:SetHeight(mcf.text:GetStringHeight())
 			end
-
-			if UnitPower("Player") == UnitPowerMax("player") or manatick == 0 then
-				manatick = 0
-			end
-
-			bcount = floor(UnitPower("Player") / costR1) .. " (" .. floor(UnitPower("Player") / costMAX) .. ")"
-
-			bcf.text:SetText(bcount)
-			mcf.text:SetText(manatick)
-
-			bcf:SetWidth(bcf.text:GetStringWidth())
-			bcf:SetHeight(bcf.text:GetStringHeight())
-			mcf:SetWidth(mcf.text:GetStringWidth())
-			mcf:SetHeight(mcf.text:GetStringHeight())
 		else
 			bcf:Hide()
 			self:UnregisterAllEvents()

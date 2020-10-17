@@ -198,18 +198,18 @@ DBM_AllSavedOptions = {
 		["RoleSpecAlert"] = true,
 		["WhisperStats"] = true,
 		["VoiceOverSpecW2"] = "DefaultOnly",
-		["ShowAdvSWSound"] = true,
+		["RangeFrameLocked"] = false,
 		["DontPlayPTCountdown"] = false,
 		["SpecialWarningFlashAlph5"] = 0.5,
 		["SpecialWarningDuration2"] = 1.5,
 		["HealthFrameWidth"] = 275,
+		["RangeFrameSound1"] = "none",
+		["WarningIconLeft"] = true,
 		["SpecialWarningFontColor"] = {
 			0, -- [1]
 			0, -- [2]
 			1, -- [3]
 		},
-		["WarningIconLeft"] = true,
-		["RangeFrameSound1"] = "none",
 		["HPFrameY"] = 9.28495722690528,
 		["WarningFontSize"] = 20,
 		["EventSoundVictory2"] = "None",
@@ -237,7 +237,7 @@ DBM_AllSavedOptions = {
 		["DontPlayCountdowns"] = false,
 		["ShowBigBrotherOnCombatStart"] = false,
 		["SpecialWarningIcon"] = true,
-		["RangeFrameLocked"] = false,
+		["ShowAdvSWSound"] = true,
 		["SpecialWarningFlashAlph1"] = 0.3,
 		["ShowDefeatMessage"] = true,
 		["FilterTankSpec"] = true,

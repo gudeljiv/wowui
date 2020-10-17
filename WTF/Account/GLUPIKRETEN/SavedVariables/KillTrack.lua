@@ -528,7 +528,7 @@ KILLTRACK = {
 		},
 		[7276] = {
 			["AchievCount"] = 0,
-			["Kills"] = 35,
+			["Kills"] = 43,
 			["Name"] = "Zul'Farrak Dead Hero",
 			["Exp"] = 1080,
 		},
@@ -568,10 +568,11 @@ KILLTRACK = {
 			["Name"] = "Deviate Viper",
 			["Exp"] = 37,
 		},
-		[1192] = {
+		[7286] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Toyotaa",
+			["Kills"] = 758,
+			["Name"] = "Zul'Farrak Zombie",
+			["Exp"] = 777,
 		},
 		[4479] = {
 			["AchievCount"] = 0,
@@ -585,11 +586,11 @@ KILLTRACK = {
 			["Name"] = "Hillsbrad Foreman",
 			["Exp"] = 146,
 		},
-		[4481] = {
+		[5756] = {
 			["AchievCount"] = 0,
-			["Kills"] = 30,
-			["Name"] = "Marcel Dabyrie",
-			["Exp"] = 202,
+			["Kills"] = 9,
+			["Name"] = "Deviate Venomwing",
+			["Exp"] = 47,
 		},
 		[2249] = {
 			["AchievCount"] = 0,
@@ -1171,11 +1172,11 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Burning Exile",
 		},
-		[5756] = {
+		[4481] = {
 			["AchievCount"] = 0,
-			["Kills"] = 9,
-			["Name"] = "Deviate Venomwing",
-			["Exp"] = 47,
+			["Kills"] = 30,
+			["Name"] = "Marcel Dabyrie",
+			["Exp"] = 202,
 		},
 		[4480] = {
 			["AchievCount"] = 0,
@@ -1183,15 +1184,14 @@ KILLTRACK = {
 			["Name"] = "Kenata Dabyrie",
 			["Exp"] = 88,
 		},
-		[7286] = {
+		[1192] = {
 			["AchievCount"] = 0,
-			["Kills"] = 629,
-			["Name"] = "Zul'Farrak Zombie",
-			["Exp"] = 777,
+			["Kills"] = 0,
+			["Name"] = "Toyotaa",
 		},
 		[7786] = {
 			["AchievCount"] = 0,
-			["Kills"] = 8,
+			["Kills"] = 10,
 			["Name"] = "Skeleton of Zum'rah",
 			["Exp"] = 200,
 		},

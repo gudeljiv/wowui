@@ -20589,9 +20589,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 2,
 			["H3542"] = 115269,
 		},
-		["Sturdy Quarterstaff of the Boar"] = {
-			["mr"] = 2500,
-			["H3565"] = 2500,
+		["Manual: Strong Anti-Venom"] = {
+			["H3537"] = 50000,
+			["mr"] = 50000,
 		},
 		["Wizard's Hand of Arcane Wrath"] = {
 			["H3537"] = 108028,
@@ -20632,9 +20632,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3546"] = 126438,
 			["mr"] = 126438,
 		},
-		["Manual: Strong Anti-Venom"] = {
-			["H3537"] = 50000,
-			["mr"] = 50000,
+		["Plans: Shadow Crescent Axe"] = {
+			["mr"] = 14199,
+			["H3565"] = 14199,
 		},
 		["Keller's Girdle"] = {
 			["H3546"] = 170000,
@@ -20694,9 +20694,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3556"] = 48164,
 			["mr"] = 48164,
 		},
-		["Plans: Shadow Crescent Axe"] = {
-			["mr"] = 14199,
-			["H3565"] = 14199,
+		["Formula: Enchant Weapon - Winter's Might"] = {
+			["mr"] = 798899,
+			["H3565"] = 798899,
 		},
 		["Thallium Hoop of Intellect"] = {
 			["H3540"] = 54323,
@@ -20793,9 +20793,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H3540"] = 99999,
 			["mr"] = 99999,
 		},
-		["Pattern: Frostsaber Leggings"] = {
-			["H3556"] = 8504,
-			["mr"] = 8504,
+		["Sturdy Quarterstaff of the Boar"] = {
+			["mr"] = 2500,
+			["H3565"] = 2500,
 		},
 		["Jazeraint Cloak of the Gorilla"] = {
 			["mr"] = 20000,
@@ -20812,9 +20812,9 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 0,
 			["H3565"] = 100,
 		},
-		["Formula: Enchant Weapon - Winter's Might"] = {
-			["mr"] = 798899,
-			["H3565"] = 798899,
+		["Pattern: Frostsaber Leggings"] = {
+			["H3556"] = 8504,
+			["mr"] = 8504,
 		},
 		["Gloves of the Fang"] = {
 			["H3556"] = 10800,

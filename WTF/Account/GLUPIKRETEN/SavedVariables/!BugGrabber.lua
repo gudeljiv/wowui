@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 3293,
+	["session"] = 3305,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -3496,8 +3496,48 @@ BugGrabberDB = {
 			["time"] = "2020/10/16 21:27:09",
 			["locals"] = "(*temporary) = \"table expected, got no value\"\n = <function> defined =[C]:-1\n",
 			["stack"] = "[C]: in function `pairs'\nInterface\\AddOns\\xVermin\\LootHelper.lua:132: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:111>",
-			["session"] = 3281,
-			["counter"] = 1,
+			["session"] = 3295,
+			["counter"] = 2,
 		}, -- [442]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:134: bad argument #1 to 'pairs' (table expected, got no value)",
+			["time"] = "2020/10/17 12:52:07",
+			["locals"] = "(*temporary) = \"table expected, got no value\"\n = <function> defined =[C]:-1\n",
+			["stack"] = "[C]: in function `pairs'\nInterface\\AddOns\\xVermin\\LootHelper.lua:134: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:111>",
+			["session"] = 3296,
+			["counter"] = 1,
+		}, -- [443]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:150: attempt to perform arithmetic on upvalue 'costR1' (a nil value)",
+			["time"] = "2020/10/17 12:54:09",
+			["locals"] = "self = BlizzardCountFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nevent = \"PLAYER_ENTERING_WORLD\"\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = 2340\n(*temporary) = nil\n(*temporary) = 2340\n(*temporary) = <table> {\n hasRequiredAura = false\n type = 0\n name = \"MANA\"\n cost = 320\n minCost = 320\n requiredAuraID = 0\n costPercent = 0\n costPerSec = 0\n}\n(*temporary) = 320\n(*temporary) = \"attempt to perform arithmetic on upvalue 'costR1' (a nil value)\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:57\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Class = \"MAGE\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:49\n ClassColor = <table> {\n }\n Config = <table> {\n }\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:72\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:99\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:84\n}\nticktime = 1602932043\nmanaticktotal = 0\nbase = 20.125999\ncasting = 20.125999\nlastmana = 2340\nmanatick = 0\ncostR1 = nil\ncostMAX = 320\nbcount = nil\nbcf = BlizzardCountFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nmcf = ManaCountFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:150: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:111>",
+			["session"] = 3298,
+			["counter"] = 1,
+		}, -- [444]
+		{
+			["message"] = "[string \"print( (GetSpellInfo(\"Blizzard\") )\"]:1: ')' expected near '<eof>'",
+			["time"] = "2020/10/17 13:00:53",
+			["locals"] = "(*temporary) = \"print( (GetSpellInfo(\"Blizzard\") )\"\n",
+			["stack"] = "[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 3298,
+			["counter"] = 1,
+		}, -- [445]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:121: unexpected symbol near ')'",
+			["time"] = "2020/10/17 13:02:38",
+			["locals"] = "",
+			["stack"] = "",
+			["session"] = 3299,
+			["counter"] = 4,
+		}, -- [446]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:153: attempt to perform arithmetic on upvalue 'costR1' (a nil value)",
+			["time"] = "2020/10/17 13:03:56",
+			["locals"] = "self = BlizzardCountFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nevent = \"ADDON_LOADED\"\n(*temporary) = <function> defined =[C]:-1\n(*temporary) = 0\n(*temporary) = nil\n(*temporary) = 0\n(*temporary) = 100\n(*temporary) = 0\n(*temporary) = \"attempt to perform arithmetic on upvalue 'costR1' (a nil value)\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:57\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Class = \"MAGE\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:49\n ClassColor = <table> {\n }\n Config = <table> {\n }\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:72\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:99\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:84\n}\nticktime = 1602932636\nmanaticktotal = 0\nbase = 0\ncasting = 0\nlastmana = 0\nmanatick = 0\ncostR1 = nil\ncostMAX = nil\nbcount = nil\nbcf = BlizzardCountFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nmcf = ManaCountFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:153: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:112>",
+			["session"] = 3301,
+			["counter"] = 6,
+		}, -- [447]
 	},
 }

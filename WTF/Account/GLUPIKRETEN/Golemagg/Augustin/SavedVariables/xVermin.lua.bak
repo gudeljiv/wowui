@@ -2,10 +2,26 @@
 xKillCount = {
 	["show"] = true,
 	["killLog"] = {
+		["Greater Healing Ward"] = {
+			["name"] = "Greater Healing Ward",
+			["count"] = 1,
+		},
+		["Zul'Farrak Zombie"] = {
+			["name"] = "Zul'Farrak Zombie",
+			["count"] = 79,
+		},
+		["Lava Spout Totem"] = {
+			["name"] = "Lava Spout Totem",
+			["count"] = 2,
+		},
+		["Zul'Farrak Dead Hero"] = {
+			["name"] = "Zul'Farrak Dead Hero",
+			["count"] = 5,
+		},
 	},
 	["experience"] = {
-		["totaltotal"] = 0,
-		["pulltotal"] = 0,
+		["totaltotal"] = 63762,
+		["pulltotal"] = 28844,
 	},
 	["position"] = {
 		["y"] = -153.999481201172,
