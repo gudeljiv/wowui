@@ -5,10 +5,10 @@ WeakAurasSaved = {
 	["displays"] = {
 		["Instance Lock (24h)"] = {
 			["sparkWidth"] = 15,
-			["xOffset"] = -5,
+			["xOffset"] = 0,
 			["preferToUpdate"] = false,
-			["yOffset"] = 0,
-			["anchorPoint"] = "BOTTOMLEFT",
+			["yOffset"] = 5,
+			["anchorPoint"] = "TOP",
 			["sparkRotation"] = 0,
 			["url"] = "https://wago.io/ynSYGaSVC/6",
 			["backgroundColor"] = {
@@ -23,7 +23,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["selfPoint"] = "BOTTOMRIGHT",
+			["selfPoint"] = "BOTTOM",
 			["barColor"] = {
 				0.4, -- [1]
 				0.4, -- [2]
@@ -173,7 +173,7 @@ WeakAurasSaved = {
 						1, -- [1]
 						1, -- [2]
 						1, -- [3]
-						0.6059664785862, -- [4]
+						1, -- [4]
 					},
 					["text_font"] = "PT Sans Narrow",
 					["text_shadowYOffset"] = 0,
@@ -187,7 +187,7 @@ WeakAurasSaved = {
 					["text_visible"] = true,
 				}, -- [2]
 				{
-					["text_shadowXOffset"] = 0,
+					["text_shadowXOffset"] = 1,
 					["text_text"] = "%c2",
 					["text_shadowColor"] = {
 						0, -- [1]
@@ -209,7 +209,7 @@ WeakAurasSaved = {
 						0.6059664785862, -- [4]
 					},
 					["text_font"] = "PT Sans Narrow",
-					["text_shadowYOffset"] = 0,
+					["text_shadowYOffset"] = -1,
 					["text_text_format_c2_format"] = "none",
 					["text_visible"] = true,
 					["text_anchorPoint"] = "BOTTOM",
@@ -240,7 +240,7 @@ WeakAurasSaved = {
 			["useAdjustededMax"] = false,
 			["useAdjustedMax"] = false,
 			["mirror"] = false,
-			["anchorFrameFrame"] = "ChatFrame3",
+			["anchorFrameFrame"] = "KillCountFrame",
 			["borderInFront"] = true,
 			["uid"] = "JnXsI)Znc0b",
 			["icon_side"] = "LEFT",
@@ -310,8 +310,6 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["sparkHidden"] = "NEVER",
-			["semver"] = "1.0.5",
 			["actions"] = {
 				["start"] = {
 				},
@@ -322,6 +320,8 @@ WeakAurasSaved = {
 					["do_custom"] = true,
 				},
 			},
+			["semver"] = "1.0.5",
+			["sparkHidden"] = "NEVER",
 			["id"] = "Instance Lock (24h)",
 			["anchorFrameType"] = "SELECTFRAME",
 			["frameStrata"] = 1,
@@ -590,25 +590,33 @@ WeakAurasSaved = {
 	},
 	["login_squelch_time"] = 10,
 	["frame"] = {
-		["xOffset"] = -1237.00048828125,
-		["width"] = 1308,
+		["xOffset"] = -473.0009765625,
+		["width"] = 1308.00012207031,
 		["height"] = 1092.00073242188,
-		["yOffset"] = -44.5003662109375,
+		["yOffset"] = -56.50048828125,
 	},
 	["instanceHistoryDb"] = {
 		["sess"] = {
+			["delayUpdate"] = 1602963812,
 			["enterLoc"] = {
 				["instance"] = -1,
 			},
-			["histInGroup"] = "PARTY",
-			["delayUpdate"] = 1602933563.47443,
-			["histOldest"] = "n/a",
-			["delayedReset"] = false,
-			["histLiveCount"] = 0,
+			["histOldest"] = "32 |4Min:Mins;",
+			["histLiveCount"] = 1,
 		},
 		["History"] = {
+			["Konac - Golemagg:Zul'Farrak:party:1:913"] = {
+				["last"] = 1602962165,
+				["create"] = 1602949534,
+				["desc"] = "Konac - Golemagg: Zul'Farrak - Normal",
+			},
 		},
 		["HistoryDay"] = {
+			["Konac - Golemagg:Zul'Farrak:party:1:913"] = {
+				["last"] = 1602962165,
+				["create"] = 1602949534,
+				["desc"] = "Konac - Golemagg: Zul'Farrak - Normal",
+			},
 		},
 		["histGeneration"] = 913,
 		["config"] = {

@@ -144,8 +144,8 @@ EavesDropStatsDB = {
 							["amount"] = 490,
 						},
 						[2] = {
-							["time"] = "|cffffffff10/03/20 09:51:40|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffSmite|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4445-0-31-2582-0000782D74:Dabyrie Laborer|hDabyrie Laborer|h |cffffffff347|r |cffffffffHoly|r. (372 Overkill) (Critical) ",
-							["amount"] = 719,
+							["time"] = "|cffffffff10/17/20 09:18:06|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffSmite|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4468-1-45-5646-00000A39B1:Sandfury Axe Thrower|hSandfury Axe Thrower|h |cffffffff729|r |cffffffffHoly|r. (Critical) ",
+							["amount"] = 729,
 						},
 						["icon"] = 135924,
 					},
@@ -220,8 +220,8 @@ EavesDropStatsDB = {
 					},
 					["Arcane"] = {
 						[-2] = {
-							["time"] = "|cffffffff09/20/20 12:43:16|r\n|Hunit:Creature-0-4469-0-18-8524-000066AB47:Cursed Mage|hCursed Mage|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Arcane Bolt|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffff1313284|r |cffff1313Arcane|r. ",
-							["amount"] = 284,
+							["time"] = "|cffffffff10/17/20 05:57:43|r\n|Hunit:Player-4465-01593BB7:Beniik|hBeniik|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Arcane Explosion|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffff131312|r |cffff1313Arcane|r. (278 Overkill) ",
+							["amount"] = 290,
 						},
 						[2] = {
 							["time"] = "|cffffffff09/23/20 02:58:50|r\n|Hunit:Player-4465-01AD9F53:Degpro|hDegpro|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Arcane Explosion|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffff1313406|r |cffff1313Arcane|r. (Critical) ",
@@ -230,8 +230,8 @@ EavesDropStatsDB = {
 					},
 					["Frost"] = {
 						[-2] = {
-							["time"] = "|cffffffff10/11/20 12:35:31|r\n|Hunit:Player-4465-01E3FA80:Sydonay|hSydonay|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Frostbolt|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffff1313455|r |cffff1313Frost|r. ",
-							["amount"] = 455,
+							["time"] = "|cffffffff10/17/20 05:57:35|r\n|Hunit:Player-4465-01593BB7:Beniik|hBeniik|h |Hspell:0:0:SPELL_DAMAGE|h|cffff1313Frostbolt|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Player-4465-00C4D96C:Konac|hYou|h |cffff1313690|r |cffff1313Frost|r. ",
+							["amount"] = 690,
 						},
 						[2] = {
 						},

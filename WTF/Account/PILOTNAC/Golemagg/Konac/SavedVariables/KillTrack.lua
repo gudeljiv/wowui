@@ -11,7 +11,7 @@ KILLTRACK_CHAR = {
 		},
 		[5646] = {
 			["Name"] = "Sandfury Axe Thrower",
-			["Kills"] = 1,
+			["Kills"] = 2,
 		},
 		[2449] = {
 			["Name"] = "Citizen Wilkes",
@@ -373,8 +373,8 @@ KILLTRACK_CHAR = {
 			["Name"] = "Clattering Scorpid",
 			["Kills"] = 0,
 		},
-		[3127] = {
-			["Name"] = "Venomtail Scorpid",
+		[3463] = {
+			["Name"] = "Wandering Barrens Giraffe",
 			["Kills"] = 0,
 		},
 		[2264] = {
@@ -389,9 +389,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Hillsbrad Apprentice Blacksmith",
 			["Kills"] = 4,
 		},
-		[5286] = {
-			["Name"] = "Longtooth Runner",
-			["Kills"] = 0,
+		[4358] = {
+			["Name"] = "Mirefin Puddlejumper",
+			["Kills"] = 1,
 		},
 		[2266] = {
 			["Name"] = "Hillsbrad Farmer",
@@ -413,9 +413,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Hillsbrad Footman",
 			["Kills"] = 22,
 		},
-		[3671] = {
-			["Name"] = "Lady Anacondra",
-			["Kills"] = 1,
+		[5286] = {
+			["Name"] = "Longtooth Runner",
+			["Kills"] = 0,
 		},
 		[2269] = {
 			["Name"] = "Hillsbrad Miner",
@@ -441,16 +441,16 @@ KILLTRACK_CHAR = {
 			["Name"] = "Skum",
 			["Kills"] = 0,
 		},
-		[3463] = {
-			["Name"] = "Wandering Barrens Giraffe",
+		[3127] = {
+			["Name"] = "Venomtail Scorpid",
 			["Kills"] = 0,
 		},
 		[5648] = {
 			["Name"] = "Sandfury Shadowcaster",
 			["Kills"] = 0,
 		},
-		[4358] = {
-			["Name"] = "Mirefin Puddlejumper",
+		[3671] = {
+			["Name"] = "Lady Anacondra",
 			["Kills"] = 1,
 		},
 		[923] = {
@@ -525,9 +525,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Southsea Freebooter",
 			["Kills"] = 2,
 		},
-		[3426] = {
-			["Name"] = "Zhevra Charger",
-			["Kills"] = 0,
+		[3840] = {
+			["Name"] = "Druid of the Fang",
+			["Kills"] = 24,
 		},
 		[5251] = {
 			["Name"] = "Woodpaw Trapper",
@@ -539,15 +539,15 @@ KILLTRACK_CHAR = {
 		},
 		[5645] = {
 			["Name"] = "Sandfury Hideskinner",
-			["Kills"] = 0,
+			["Kills"] = 2,
 		},
 		[5828] = {
 			["Name"] = "Mishabebe",
 			["Kills"] = 0,
 		},
-		[3840] = {
-			["Name"] = "Druid of the Fang",
-			["Kills"] = 24,
+		[3426] = {
+			["Name"] = "Zhevra Charger",
+			["Kills"] = 0,
 		},
 		[7360] = {
 			["Name"] = "Dun Garok Soldier",
@@ -555,22 +555,6 @@ KILLTRACK_CHAR = {
 		},
 		[3383] = {
 			["Name"] = "Southsea Cutthroat",
-			["Kills"] = 0,
-		},
-		[2503] = {
-			["Name"] = "Hillsbrad Foreman",
-			["Kills"] = 15,
-		},
-		[2335] = {
-			["Name"] = "Magistrate Burnside",
-			["Kills"] = 2,
-		},
-		[2612] = {
-			["Name"] = "Lieutenant Valorcall",
-			["Kills"] = 0,
-		},
-		[2914] = {
-			["Name"] = "Snake",
 			["Kills"] = 0,
 		},
 		[4343] = {
@@ -585,13 +569,29 @@ KILLTRACK_CHAR = {
 			["Name"] = "Wastewander Thief",
 			["Kills"] = 0,
 		},
-		[10038] = {
-			["Name"] = "Night Watch Guard",
+		[2914] = {
+			["Name"] = "Snake",
 			["Kills"] = 0,
 		},
 		[2560] = {
 			["Name"] = "Highland Thrasher",
 			["Kills"] = 0,
+		},
+		[2335] = {
+			["Name"] = "Magistrate Burnside",
+			["Kills"] = 2,
+		},
+		[2612] = {
+			["Name"] = "Lieutenant Valorcall",
+			["Kills"] = 0,
+		},
+		[10038] = {
+			["Name"] = "Night Watch Guard",
+			["Kills"] = 0,
+		},
+		[2503] = {
+			["Name"] = "Hillsbrad Foreman",
+			["Kills"] = 15,
 		},
 		[768] = {
 			["Name"] = "Shadow Panther",

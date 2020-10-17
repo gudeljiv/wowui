@@ -103,7 +103,9 @@ local ticktime = time()
 local bcount, base, casting
 local manatick = 0
 local manaticktotal = 0
+
 bcf:RegisterEvent("ADDON_LOADED")
+bcf:RegisterEvent("SPELLS_CHANGED")
 bcf:RegisterUnitEvent("UNIT_POWER_UPDATE")
 bcf:RegisterEvent("PLAYER_REGEN_DISABLED")
 bcf:SetScript(
@@ -117,7 +119,7 @@ bcf:SetScript(
 				end
 			end
 
-			if (GetSpellPowerCost("Blizzard(Rank 1)")) then
+			if GetSpellPowerCost("Blizzard(Rank 1)")[1].cost and GetSpellPowerCost("Blizzard(Rank 1)")[1].cost > 0 then
 				base, casting = GetManaRegen()
 				if (xVermin:Round(base, 2) or xVermin:Round(casting, 2)) > 0 then
 					if lastmana then
@@ -130,31 +132,20 @@ bcf:SetScript(
 				end
 				lastmana = UnitPower("player")
 
-				if GetSpellPowerCost("Blizzard(Rank 1)") then
-					for _, costInfo in pairs(GetSpellPowerCost("Blizzard(Rank 1)")) do
-						costR1 = costInfo.cost
-						break
-					end
-				end
-
-				if GetSpellPowerCost("Blizzard") then
-					for _, costInfo in pairs(GetSpellPowerCost("Blizzard")) do
-						costMAX = costInfo.cost
-						break
-					end
-				end
-
-				if UnitPower("Player") == UnitPowerMax("player") or manatick == 0 then
+				if UnitPower("Player") == UnitPowerMax("player") then
 					manatick = 0
 				end
 
-				bcount = floor(UnitPower("Player") / costR1) .. " (" .. floor(UnitPower("Player") / costMAX) .. ")"
+				local r1 = floor(UnitPower("Player") / GetSpellPowerCost("Blizzard(Rank 1)")[1].cost)
+				local rm = floor(UnitPower("Player") / GetSpellPowerCost("Blizzard")[1].cost)
+				local nr1 = floor((UnitPower("player") - (rm * GetSpellPowerCost("Blizzard")[1].cost)) / GetSpellPowerCost("Blizzard(Rank 1)")[1].cost)
+				bcount = r1 .. " (" .. rm .. ") .. " .. nr1
 
 				bcf.text:SetText(bcount)
-				mcf.text:SetText(manatick)
-
 				bcf:SetWidth(bcf.text:GetStringWidth())
 				bcf:SetHeight(bcf.text:GetStringHeight())
+
+				mcf.text:SetText(manatick)
 				mcf:SetWidth(mcf.text:GetStringWidth())
 				mcf:SetHeight(mcf.text:GetStringHeight())
 			end

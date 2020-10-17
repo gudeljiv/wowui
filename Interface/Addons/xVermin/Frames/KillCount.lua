@@ -6,7 +6,7 @@ local tStart = time()
 local combatTimer = time()
 local timeticker = nil
 local pullkills, pullxp, totalxp = 0
-local xppadding = 30
+local xppadding = 45
 
 local defaults = {
 	show = false,
@@ -80,6 +80,14 @@ kctimer.text:SetJustifyH("RIGHT")
 kctimer.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 kctimer:SetWidth(kctimer.text:GetStringWidth())
 kctimer:SetHeight(kctimer.text:GetStringHeight())
+
+----------------------------
+-- Kill list wrapper
+----------------------------
+
+local klwrapper = CreateFrame("Frame", "WrapperKillListFrame", kc)
+klwrapper:SetPoint("TOPLEFT", kc, "TOPLEFT", 0, -55)
+klwrapper:SetFrameStrata("LOW")
 
 ----------------------------
 -- Kill list names
@@ -164,10 +172,21 @@ l:SetStartPoint("TOPLEFT", 10, 7)
 l:SetEndPoint("TOPRIGHT", -10, 7)
 
 ----------------------------
+-- Experience per hour
+----------------------------
+
+local xpperhourframe = CreateFrame("Frame", "XPPerHour", kc)
+xpperhourframe:SetPoint("BOTTOMLEFT", l, "BOTTOMLEFT", 0, 7)
+xpperhourframe:SetFrameStrata("LOW")
+xpperhourframe.text = xpperhourframe:CreateFontString(nil, "ARTWORK")
+xpperhourframe.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
+xpperhourframe.text:SetPoint("BOTTOMLEFT", xpperhourframe, "BOTTOMLEFT", 0, 0)
+
+----------------------------
 -- Total experience in session
 ----------------------------
 local totalxpframe = CreateFrame("Frame", "TotalExperience", kc)
-totalxpframe:SetPoint("BOTTOMLEFT", l, "BOTTOMLEFT", 0, 7)
+totalxpframe:SetPoint("BOTTOMLEFT", xpperhourframe, "BOTTOMLEFT", 0, 15)
 totalxpframe:SetFrameStrata("LOW")
 totalxpframe.text = totalxpframe:CreateFontString(nil, "ARTWORK")
 totalxpframe.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
@@ -177,7 +196,7 @@ totalxpframe:SetWidth(totalxpframe.text:GetStringWidth())
 totalxpframe:SetHeight(totalxpframe.text:GetStringHeight())
 
 local totalxpframevalue = CreateFrame("Frame", "TotalExperienceValue", kc)
-totalxpframevalue:SetPoint("BOTTOMRIGHT", l, "BOTTOMRIGHT", 0, 7)
+totalxpframevalue:SetPoint("BOTTOMRIGHT", xpperhourframe, "BOTTOMRIGHT", 0, 15)
 totalxpframevalue:SetFrameStrata("LOW")
 totalxpframevalue.text = totalxpframevalue:CreateFontString(nil, "ARTWORK")
 totalxpframevalue.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
@@ -319,17 +338,39 @@ local function DisplayData()
 	pullxpframevalue.text:SetText(xKillCount.experience.pulltotal)
 	totalxpframevalue.text:SetText(xKillCount.experience.totaltotal)
 
-	local w = kclistnames.text:GetStringWidth() + kclistpercentages.text:GetStringWidth() + 40
+	local w = math.max(kclistnames.text:GetStringWidth() + kclistpercentages.text:GetStringWidth() + 40, xpperhourframe.text:GetStringWidth())
 	local h = kctitle.text:GetStringHeight() + kctotal.text:GetStringHeight() + kclistnames.text:GetStringHeight() + 86 + xppadding
-	kc:SetSize(math.max(w, 250), math.max(h, 125))
-	wrapper:SetSize(math.max(w, 250), kcreset.text:GetStringHeight())
+	kc:SetSize(math.max(w, 270), math.max(h, 125))
+	wrapper:SetSize(kc:GetWidth(), kcreset.text:GetStringHeight())
 
-	kclistnames:SetWidth(kclistnames.text:GetStringWidth())
-	kclistnames:SetHeight(kclistnames.text:GetStringHeight())
-	kclistvalues:SetWidth(kclistvalues.text:GetStringWidth())
-	kclistvalues:SetHeight(kclistvalues.text:GetStringHeight())
-	kclistpercentages:SetWidth(kclistpercentages.text:GetStringWidth())
-	kclistpercentages:SetHeight(kclistpercentages.text:GetStringHeight())
+	kclistnames:SetSize(kclistnames.text:GetStringWidth(), kclistnames.text:GetStringHeight())
+	kclistvalues:SetSize(kclistvalues.text:GetStringWidth(), kclistvalues.text:GetStringHeight())
+	kclistpercentages:SetSize(kclistpercentages.text:GetStringWidth(), kclistpercentages.text:GetStringHeight())
+
+	klwrapper:SetSize(kc:GetWidth(), kclistnames.text:GetStringHeight())
+end
+
+local XPPERHOUR_MAXXP, XPPERHOUR_XP, XPPERHOUR_TIME
+local function CalcXPPerHour()
+	XPPERHOUR_MAXXP = XPPERHOUR_MAXXP or UnitXPMax("player")
+	XPPERHOUR_XP = XPPERHOUR_XP or UnitXP("player")
+	XPPERHOUR_TIME = XPPERHOUR_TIME or time() - 1
+	local Time = time() - XPPERHOUR_TIME
+
+	if XPPERHOUR_MAXXP < UnitXPMax("player") then
+		XPPERHOUR_XP = XPPERHOUR_XP - XPPERHOUR_MAXXP
+		XPPERHOUR_MAXXP = UnitXPMax("player")
+	end
+
+	local XP = UnitXP("player") - XPPERHOUR_XP
+	local XpPerHour = math.floor(3600 * XP / Time)
+	local TimeElapsed = math.floor(Time / 60)
+	local UntilDing = XP > 0 and (XPPERHOUR_MAXXP - UnitXP("player")) / (60 * XP / Time) or 0
+
+	local output = string.format("|cffb76b45XP/hr|r: %sk  |cffffff00Ding:|r %smin  |cffffff00Time:|r %smin", floor(XpPerHour / 100) / 10, math.floor(UntilDing), TimeElapsed)
+
+	xpperhourframe.text:SetText(output)
+	xpperhourframe:SetSize(kc:GetWidth() - 20, xpperhourframe.text:GetStringHeight())
 end
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -386,6 +427,7 @@ kc:SetScript(
 			if event == "PLAYER_REGEN_DISABLED" then
 				if time() - combatTimer > 3 then
 					pullkills = 0
+					xKillCount.experience.pulltotal = 0
 					combatTimer = time()
 				end
 				kc:EnableMouse(false)
@@ -460,6 +502,7 @@ local function CalculateTotalExperience(event, isInitialLogin, isReloadingUi)
 	end
 end
 
+local cxphtimer = nil
 local experience = CreateFrame("Frame")
 experience:RegisterEvent("PLAYER_XP_UPDATE")
 experience:RegisterEvent("PLAYER_LEVEL_CHANGED")
@@ -472,7 +515,10 @@ experience:SetScript(
 		if UnitLevel("player") == MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] then
 			xppadding = 0
 			pullxpframe:Hide()
+			pullxpframevalue:Hide()
 			totalxpframe:Hide()
+			totalxpframevalue:Hide()
+			xpperhourframe:Hide()
 		else
 			if event ~= "PLAYER_REGEN_ENABLED" then
 				CalculateTotalExperience(event, isInitialLogin, isReloadingUi)
@@ -486,6 +532,16 @@ experience:SetScript(
 		if event == "PLAYER_REGEN_ENABLED" then
 			pullxpframe.text:SetTextColor(1, 1, 1, 1)
 			totalxpframe.text:SetTextColor(1, 1, 1, 1)
+		end
+
+		if not cxphtimer then
+			cxphtimer =
+				C_Timer.NewTicker(
+				1,
+				function()
+					CalcXPPerHour()
+				end
+			)
 		end
 
 		DisplayData()
@@ -549,7 +605,7 @@ kc:SetScript(
 --------------------------------
 -- Show/Hide percentages
 --------------------------------
-kc:SetScript(
+klwrapper:SetScript(
 	"OnEnter",
 	function()
 		kclistvalues:Hide()
@@ -557,7 +613,7 @@ kc:SetScript(
 	end
 )
 
-kc:SetScript(
+klwrapper:SetScript(
 	"OnLeave",
 	function()
 		kclistvalues:Show()

@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 3336,
 	["lastSanitation"] = 3,
-	["session"] = 3305,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -165,8 +165,8 @@ BugGrabberDB = {
 		}, -- [20]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["session"] = 1336,
 			["time"] = "2020/07/26 13:26:58",
+			["session"] = 1336,
 			["counter"] = 2,
 		}, -- [21]
 		{
@@ -546,8 +546,8 @@ BugGrabberDB = {
 		}, -- [68]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["time"] = "2020/07/27 20:37:46",
 			["session"] = 1423,
+			["time"] = "2020/07/27 20:37:46",
 			["counter"] = 4,
 		}, -- [69]
 		{
@@ -805,8 +805,8 @@ BugGrabberDB = {
 		}, -- [101]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["time"] = "2020/08/02 10:06:15",
 			["session"] = 1605,
+			["time"] = "2020/08/02 10:06:15",
 			["counter"] = 3,
 		}, -- [102]
 		{
@@ -946,8 +946,8 @@ BugGrabberDB = {
 		}, -- [119]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
-			["session"] = 1654,
 			["time"] = "2020/08/02 20:13:03",
+			["session"] = 1654,
 			["counter"] = 3,
 		}, -- [120]
 		{
@@ -1420,8 +1420,8 @@ BugGrabberDB = {
 		}, -- [179]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Experience.lua",
-			["session"] = 1943,
 			["time"] = "2020/08/19 21:35:15",
+			["session"] = 1943,
 			["counter"] = 6,
 		}, -- [180]
 		{
@@ -2032,8 +2032,8 @@ BugGrabberDB = {
 		}, -- [256]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["session"] = 2448,
 			["time"] = "2020/08/13 21:31:07",
+			["session"] = 2448,
 			["counter"] = 9,
 		}, -- [257]
 		{
@@ -2382,8 +2382,8 @@ BugGrabberDB = {
 		}, -- [300]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\ClickToMove\\ClickToMove.toc",
-			["session"] = 2740,
 			["time"] = "2020/09/30 12:15:00",
+			["session"] = 2740,
 			["counter"] = 10,
 		}, -- [301]
 		{
@@ -3206,14 +3206,14 @@ BugGrabberDB = {
 		}, -- [404]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Examiner\\Examiner.toc",
-			["time"] = "2020/10/14 21:40:43",
 			["session"] = 3191,
+			["time"] = "2020/10/14 21:40:43",
 			["counter"] = 2,
 		}, -- [405]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\NovaInstanceTracker\\NovaInstanceTracker.toc",
-			["time"] = "2020/10/14 21:40:43",
 			["session"] = 3191,
+			["time"] = "2020/10/14 21:40:43",
 			["counter"] = 2,
 		}, -- [406]
 		{
@@ -3258,8 +3258,8 @@ BugGrabberDB = {
 		}, -- [411]
 		{
 			["message"] = "(null)",
-			["time"] = "2020/07/24 16:00:06",
 			["session"] = 3228,
+			["time"] = "2020/07/24 16:00:06",
 			["counter"] = 190,
 		}, -- [412]
 		{
@@ -3539,5 +3539,21 @@ BugGrabberDB = {
 			["session"] = 3301,
 			["counter"] = 6,
 		}, -- [447]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:365: attempt to call method 'SetText' (a nil value)",
+			["time"] = "2020/10/17 20:54:10",
+			["locals"] = "Time = 1\nXP = 0\nXpPerHour = 0\nTimeElapsed = 0\nUntilDing = Infinite\noutput = \"|cffb76b45XP/hr|r: 0k |cffffff00Ding:|r infmin |cffffff00Time:|r 0min\"\n(*temporary) = nil\n(*temporary) = XPPerHour {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n(*temporary) = \"|cffb76b45XP/hr|r: 0k |cffffff00Ding:|r infmin |cffffff00Time:|r 0min\"\n(*temporary) = \"attempt to call method 'SetText' (a nil value)\"\nXPPERHOUR_MAXXP = 141200\nXPPERHOUR_XP = 2801\nXPPERHOUR_TIME = 1602960849\nxpperhourframe = XPPerHour {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Frames/KillCount.lua:365: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:347>\nInterface\\AddOns\\xVermin\\Frames/KillCount.lua:527: in function <Interface\\AddOns\\xVermin\\Frames/KillCount.lua:507>",
+			["session"] = 3315,
+			["counter"] = 1,
+		}, -- [448]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:122: attempt to index a nil value",
+			["time"] = "2020/10/17 21:23:19",
+			["locals"] = "self = BlizzardCountFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nevent = \"ADDON_LOADED\"\n(*temporary) = nil\n(*temporary) = \"Blizzard(Rank 1)\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index a nil value\"\nxVermin = <table> {\n LogBreak = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:56\n FormatNumber = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:57\n Debug = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:14\n Class = \"MAGE\"\n FormatValue = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:49\n ClassColor = <table> {\n }\n Config = <table> {\n }\n AOE = <function> defined @Interface\\AddOns\\xVermin\\Rotation/_Core.lua:3\n Log = <function> defined @Interface\\AddOns\\xVermin\\Debug.lua:41\n Round = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:72\n TimeFormat = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:99\n ColorGradient = <function> defined @Interface\\AddOns\\xVermin\\Core.lua:84\n}\nticktime = 1602962599\nmanaticktotal = 0\nbase = nil\ncasting = nil\nlastmana = nil\nmanatick = 0\nbcount = nil\nbcf = BlizzardCountFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\nmcf = ManaCountFrame {\n 0 = <userdata>\n text = <unnamed> {\n }\n}\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\LootHelper.lua:122: in function <Interface\\AddOns\\xVermin\\LootHelper.lua:113>",
+			["session"] = 3327,
+			["counter"] = 3,
+		}, -- [449]
 	},
 }

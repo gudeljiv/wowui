@@ -26369,7 +26369,7 @@ WeakAurasOptionsSaved = {
 		["Shoot (TEST)"] = {
 			["spells"] = {
 				[3018] = 132222,
-				[19881] = 135473,
+				[19881] = 135468,
 			},
 		},
 		["Create Hunter Epic Bow DND"] = {
@@ -54549,7 +54549,7 @@ WeakAurasOptionsSaved = {
 				[18561] = 132222,
 				[16779] = 132222,
 				[17353] = 132222,
-				[5019] = 135473,
+				[5019] = 135468,
 			},
 		},
 		["Great Rage Potion"] = {
@@ -62273,7 +62273,7 @@ WeakAurasOptionsSaved = {
 		},
 		["Auto Shot"] = {
 			["spells"] = {
-				[75] = 135473,
+				[75] = 135468,
 				[1583] = 132369,
 			},
 		},
