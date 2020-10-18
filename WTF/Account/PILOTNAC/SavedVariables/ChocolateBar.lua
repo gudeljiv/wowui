@@ -45,21 +45,31 @@ ChocolateBarDB = {
 	["profiles"] = {
 		["Default"] = {
 			["locked"] = false,
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["b"] = 0,
-					["g"] = 0,
-					["r"] = 0,
-				},
-				["textureName"] = "None",
-			},
-			["moveFrames"] = false,
 			["labelColor"] = {
 				["g"] = 0.819607843137255,
 			},
-			["fixedStrata"] = true,
+			["forceColor"] = false,
+			["barSettings"] = {
+				["ChocolateBar1"] = {
+					["barPoint"] = "TOPRIGHT",
+					["align"] = "custom",
+					["width"] = 147.000030517578,
+					["autohide"] = false,
+					["barOffy"] = -207.589706420898,
+					["hideBarInCombat"] = false,
+					["barOffx"] = -31.9219512939453,
+				},
+				["ChocolateBar2"] = {
+					["barOffy"] = -256.666748046875,
+					["barPoint"] = "TOPRIGHT",
+					["barName"] = "ChocolateBar2",
+					["align"] = "custom",
+					["barOffx"] = -88.3325424194336,
+					["index"] = 1,
+					["width"] = 147,
+				},
+			},
+			["moveFrames"] = false,
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -296,11 +306,10 @@ ChocolateBarDB = {
 					["showIcon"] = false,
 					["customLabel"] = "TSM",
 				},
-				["Leatrix_Maps"] = {
+				["TestNoText"] = {
 					["enabled"] = false,
-					["showText"] = false,
+					["index"] = 4,
 					["barName"] = "ChocolateBar1",
-					["align"] = "right",
 				},
 				["NWB"] = {
 					["index"] = 3,
@@ -310,10 +319,11 @@ ChocolateBarDB = {
 					["showIcon"] = false,
 					["customLabel"] = "N",
 				},
-				["TestNoText"] = {
+				["Leatrix_Maps"] = {
 					["enabled"] = false,
-					["index"] = 4,
+					["showText"] = false,
 					["barName"] = "ChocolateBar1",
+					["align"] = "right",
 				},
 				["picoFPS"] = {
 					["index"] = 1,
@@ -344,36 +354,26 @@ ChocolateBarDB = {
 					["align"] = "right",
 				},
 			},
-			["desaturated"] = false,
 			["gap"] = 0,
-			["forceColor"] = false,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["fixedStrata"] = true,
 			["fontName"] = "Friz Quadrata TT",
 			["textOffset"] = 2,
 			["height"] = 20,
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["barSettings"] = {
-				["ChocolateBar1"] = {
-					["barPoint"] = "TOPRIGHT",
-					["align"] = "custom",
-					["width"] = 147.000030517578,
-					["autohide"] = false,
-					["barOffy"] = -207.589706420898,
-					["hideBarInCombat"] = false,
-					["barOffx"] = -31.9219512939453,
+			["desaturated"] = false,
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["b"] = 0,
+					["g"] = 0,
+					["r"] = 0,
 				},
-				["ChocolateBar2"] = {
-					["barOffy"] = -256.666748046875,
-					["barPoint"] = "TOPRIGHT",
-					["barName"] = "ChocolateBar2",
-					["align"] = "custom",
-					["barOffx"] = -88.3325424194336,
-					["index"] = 1,
-					["width"] = 147,
-				},
+				["textureName"] = "None",
 			},
 			["textColor"] = {
 				["a"] = 1,
@@ -410,7 +410,7 @@ CB_PlayedTime = {
 		["total"] = 149513,
 	},
 	["Konac-"] = {
-		["total"] = 6128271,
+		["total"] = 6131111,
 	},
 	["Dotwise-"] = {
 		["total"] = 3924,
@@ -418,20 +418,20 @@ CB_PlayedTime = {
 	["Judawise-"] = {
 		["total"] = 437,
 	},
-	["Mohikanac-"] = {
-		["total"] = 167544,
-	},
-	["Junac-"] = {
-		["total"] = 2534,
-	},
 	["Mxym-"] = {
 		["total"] = 4765,
+	},
+	["Dmitar-"] = {
+		["total"] = 55,
+	},
+	["Mohikanac-"] = {
+		["total"] = 167544,
 	},
 	["Klhjakhsgdjh-"] = {
 		["total"] = 53,
 	},
-	["Mxzq-"] = {
-		["total"] = 248345,
+	["Verminz-"] = {
+		["total"] = 311368,
 	},
 	["Stranac-"] = {
 		["total"] = 73,
@@ -442,14 +442,14 @@ CB_PlayedTime = {
 	["Mxyzptlk-"] = {
 		["total"] = 8367,
 	},
-	["Paydo-"] = {
-		["total"] = 18945,
-	},
-	["Verminz-"] = {
-		["total"] = 311368,
-	},
 	["Kamenac-"] = {
 		["total"] = 1558123,
+	},
+	["Mxzq-"] = {
+		["total"] = 248345,
+	},
+	["Paydo-"] = {
+		["total"] = 18945,
 	},
 	["Kosturko-"] = {
 		["total"] = 1457,
@@ -457,8 +457,8 @@ CB_PlayedTime = {
 	["Ozrencic-"] = {
 		["total"] = 853,
 	},
-	["Dmitar-"] = {
-		["total"] = 55,
+	["Junac-"] = {
+		["total"] = 2534,
 	},
 	["Grgur-"] = {
 		["total"] = 2,

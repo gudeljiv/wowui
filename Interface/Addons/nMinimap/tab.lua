@@ -252,8 +252,11 @@ function nMinimap_UpdateGuildButton(entry)
 		end
 
 		name, server = strsplit("-", nameserver)
+
+		-- n = name .. " (" .. server .. ")"
+
 		level = WrapTextInColorCode(level, CreateColor(levelc.r, levelc.g, levelc.b, 1):GenerateHexColor())
-		name = WrapTextInColorCode(name .. " (" .. server .. ")", CreateColor(classc.r, classc.g, classc.b, 1):GenerateHexColor())
+		name = WrapTextInColorCode(name, CreateColor(classc.r, classc.g, classc.b, 1):GenerateHexColor())
 		zone = WrapTextInColorCode(zone, CreateColor(1, 1, 1, 1):GenerateHexColor())
 
 		entry.LeftText:SetFormattedText("%s %s %s", level, name, statusText[status])
@@ -279,9 +282,11 @@ function nMinimap_UpdateGuildMembers()
 	sort(
 		GuildListEntries,
 		function(a, b)
-			if a.name and b.name then
-				return a.name < b.name
+			if a.level ~= b.level then
+				return a.level > b.level
 			end
+
+			return a.name < b.name
 		end
 	)
 
@@ -319,20 +324,21 @@ function nMinimapTab_Guild_UpdateScrollFrame()
 
 	local addButtonIndex = 0
 	local totalButtonHeight = 0
-	local function AddButtonInfo(id, name)
+	local function AddButtonInfo(id, name, level)
 		addButtonIndex = addButtonIndex + 1
 		if not GuildListEntries[addButtonIndex] then
 			GuildListEntries[addButtonIndex] = {}
 		end
 		GuildListEntries[addButtonIndex].id = id
 		GuildListEntries[addButtonIndex].name = name
+		GuildListEntries[addButtonIndex].level = level
 		totalButtonHeight = totalButtonHeight + scrollFrame.entryHeight
 	end
 
 	for i = 1, GetNumGuildMembers() do
 		local name, rank, _, level, _, zone, note, officernote, connected, status, class, _ = GetGuildRosterInfo(i)
 		if connected and name ~= playerName .. "-" .. playerRealm then
-			AddButtonInfo(i, name)
+			AddButtonInfo(i, name, level)
 		end
 	end
 

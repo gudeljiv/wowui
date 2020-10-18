@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 3396,
 	["lastSanitation"] = 3,
-	["session"] = 3385,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -165,8 +165,8 @@ BugGrabberDB = {
 		}, -- [20]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["session"] = 1336,
 			["time"] = "2020/07/26 13:26:58",
+			["session"] = 1336,
 			["counter"] = 2,
 		}, -- [21]
 		{
@@ -546,8 +546,8 @@ BugGrabberDB = {
 		}, -- [68]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["time"] = "2020/07/27 20:37:46",
 			["session"] = 1423,
+			["time"] = "2020/07/27 20:37:46",
 			["counter"] = 4,
 		}, -- [69]
 		{
@@ -805,8 +805,8 @@ BugGrabberDB = {
 		}, -- [101]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["time"] = "2020/08/02 10:06:15",
 			["session"] = 1605,
+			["time"] = "2020/08/02 10:06:15",
 			["counter"] = 3,
 		}, -- [102]
 		{
@@ -946,8 +946,8 @@ BugGrabberDB = {
 		}, -- [119]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
-			["session"] = 1654,
 			["time"] = "2020/08/02 20:13:03",
+			["session"] = 1654,
 			["counter"] = 3,
 		}, -- [120]
 		{
@@ -1420,8 +1420,8 @@ BugGrabberDB = {
 		}, -- [179]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Experience.lua",
-			["session"] = 1943,
 			["time"] = "2020/08/19 21:35:15",
+			["session"] = 1943,
 			["counter"] = 6,
 		}, -- [180]
 		{
@@ -2032,8 +2032,8 @@ BugGrabberDB = {
 		}, -- [256]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["session"] = 2448,
 			["time"] = "2020/08/13 21:31:07",
+			["session"] = 2448,
 			["counter"] = 9,
 		}, -- [257]
 		{
@@ -2374,8 +2374,8 @@ BugGrabberDB = {
 		}, -- [299]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\ClickToMove\\ClickToMove.toc",
-			["session"] = 2740,
 			["time"] = "2020/09/30 12:15:00",
+			["session"] = 2740,
 			["counter"] = 10,
 		}, -- [300]
 		{
@@ -3198,14 +3198,14 @@ BugGrabberDB = {
 		}, -- [403]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Examiner\\Examiner.toc",
-			["time"] = "2020/10/14 21:40:43",
 			["session"] = 3191,
+			["time"] = "2020/10/14 21:40:43",
 			["counter"] = 2,
 		}, -- [404]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\NovaInstanceTracker\\NovaInstanceTracker.toc",
-			["time"] = "2020/10/14 21:40:43",
 			["session"] = 3191,
+			["time"] = "2020/10/14 21:40:43",
 			["counter"] = 2,
 		}, -- [405]
 		{
@@ -3591,8 +3591,8 @@ BugGrabberDB = {
 		}, -- [453]
 		{
 			["message"] = "(null)",
-			["time"] = "2020/07/24 16:00:06",
 			["session"] = 3342,
+			["time"] = "2020/07/24 16:00:06",
 			["counter"] = 193,
 		}, -- [454]
 		{
@@ -3698,5 +3698,13 @@ BugGrabberDB = {
 			["session"] = 3381,
 			["counter"] = 2,
 		}, -- [467]
+		{
+			["message"] = "Interface\\AddOns\\nMinimap\\tab.lua:288: attempt to call global 'dump' (a nil value)",
+			["time"] = "2020/10/18 18:06:22",
+			["locals"] = "scrollFrame = GuildScrollFrame {\n offset = 0\n scrollChild = GuildScrollChild {\n }\n entries = <table> {\n }\n entryHeight = 17\n numEntries = 16\n scrollBar = GuildScrollFrameScrollBar {\n }\n 0 = <userdata>\n totalEntriesHeight = 272\n ScrollBar = GuildScrollFrameScrollBar {\n }\n}\noffset = 0\nentries = <table> {\n 1 = GuildScrollFrameEntry1 {\n }\n 2 = GuildScrollFrameEntry2 {\n }\n 3 = GuildScrollFrameEntry3 {\n }\n 4 = GuildScrollFrameEntry4 {\n }\n 5 = GuildScrollFrameEntry5 {\n }\n 6 = GuildScrollFrameEntry6 {\n }\n 7 = GuildScrollFrameEntry7 {\n }\n 8 = GuildScrollFrameEntry8 {\n }\n 9 = GuildScrollFrameEntry9 {\n }\n 10 = GuildScrollFrameEntry10 {\n }\n 11 = GuildScrollFrameEntry11 {\n }\n 12 = GuildScrollFrameEntry12 {\n }\n 13 = GuildScrollFrameEntry13 {\n }\n 14 = GuildScrollFrameEntry14 {\n }\n 15 = GuildScrollFrameEntry15 {\n }\n 16 = GuildScrollFrameEntry16 {\n }\n 17 = GuildScrollFrameEntry17 {\n }\n 18 = GuildScrollFrameEntry18 {\n }\n 19 = GuildScrollFrameEntry19 {\n }\n 20 = GuildScrollFrameEntry20 {\n }\n 21 = GuildScrollFrameEntry21 {\n }\n 22 = GuildScrollFrameEntry22 {\n }\n 23 = GuildScrollFrameEntry23 {\n }\n 24 = GuildScrollFrameEntry24 {\n }\n 25 = GuildScrollFrameEntry25 {\n }\n 26 = GuildScrollFrameEntry26 {\n }\n 27 = GuildScrollFrameEntry27 {\n }\n 28 = GuildScrollFrameEntry28 {\n }\n 29 = GuildScrollFrameEntry29 {\n }\n 30 = GuildScrollFrameEntry30 {\n }\n 31 = GuildScrollFrameEntry31 {\n }\n 32 = GuildScrollFrameEntry32 {\n }\n 33 = GuildScrollFrameEntry33 {\n }\n 34 = GuildScrollFrameEntry34 {\n }\n 35 = GuildScrollFrameEntry35 {\n }\n 36 = GuildScrollFrameEntry36 {\n }\n 37 = GuildScrollFrameEntry37 {\n }\n 38 = GuildScrollFrameEntry38 {\n }\n 39 = GuildScrollFrameEntry39 {\n }\n 40 = GuildScrollFrameEntry40 {\n }\n 41 = GuildScrollFrameEntry41 {\n }\n 42 = GuildScrollFrameEntry42 {\n }\n 43 = GuildScrollFrameEntry43 {\n }\n 44 = GuildScrollFrameEntry44 {\n }\n 45 = GuildScrollFrameEntry45 {\n }\n 46 = GuildScrollFrameEntry46 {\n }\n 47 = GuildScrollFrameEntry47 {\n }\n 48 = GuildScrollFrameEntry48 {\n }\n 49 = GuildScrollFrameEntry49 {\n }\n 50 = GuildScrollFrameEntry50 {\n }\n 51 = GuildScrollFrameEntry51 {\n }\n 52 = GuildScrollFrameEntry52 {\n }\n 53 = GuildScrollFrameEntry53 {\n }\n 54 = GuildScrollFrameEntry54 {\n }\n 55 = GuildScrollFrameEntry55 {\n }\n 56 = GuildScrollFrameEntry56 {\n }\n 57 = GuildScrollFrameEntry57 {\n }\n 58 = GuildScrollFrameEntry58 {\n }\n 59 = GuildScrollFrameEntry59 {\n }\n 60 = GuildScrollFrameEntry60 {\n }\n 61 = GuildScrollFrameEntry61 {\n }\n 62 = GuildScrollFrameEntry62 {\n }\n 63 = GuildScrollFrameEntry63 {\n }\n 64 = GuildScrollFrameEntry64 {\n }\n 65 = GuildScrollFrameEntry65 {\n }\n 66 = GuildScrollFrameEntry66 {\n }\n 67 = GuildScrollFrameEntry67 {\n }\n 68 = GuildScrollFrameEntry68 {\n }\n 69 = GuildScrollFrameEntry69 {\n }\n 70 = GuildScrollFrameEntry70 {\n }\n 71 = GuildScrollFrameEntry71 {\n }\n 72 = GuildScrollFrameEntry72 {\n }\n 73 = GuildScrollFrameEntry73 {\n }\n 74 = GuildScrollFrameEntry74 {\n }\n 75 = GuildScrollFrameEntry75 {\n }\n 76 = GuildScrollFrameEntry76 {\n }\n 77 = GuildScrollFrameEntry77 {\n }\n 78 = GuildScrollFrameEntry78 {\n }\n 79 = GuildScrollFrameEntry79 {\n }\n 80 = GuildScrollFrameEntry80 {\n }\n 81 = GuildScrollFrameEntry81 {\n }\n 82 = GuildScrollFrameEntry82 {\n }\n 83 = GuildScrollFrameEntry83 {\n }\n 84 = GuildScrollFrameEntry84 {\n }\n 85 = GuildScrollFrameEntry85 {\n }\n 86 = GuildScrollFrameEntry86 {\n }\n 87 = GuildScrollFrameEntry87 {\n }\n 88 = GuildScrollFrameEntry88 {\n }\n 89 = GuildScrollFrameEntry89 {\n }\n 90 = GuildScrollFrameEntry90 {\n }\n 91 = GuildScrollFrameEntry91 {\n }\n 92 = GuildScrollFrameEntry92 {\n }\n 93 = GuildScrollFrameEntry93 {\n }\n 94 = GuildScrollFrameEntry94 {\n }\n 95 = GuildScrollFrameEntry95 {\n }\n 96 = GuildScrollFrameEntry96 {\n }\n 97 = GuildScrollFrameEntry97 {\n }\n 98 = GuildScrollFrameEntry98 {\n }\n 99 = GuildScrollFrameEntry99 {\n }\n 100 = GuildScrollFrameEntry100 {\n }\n 101 = GuildScrollFrameEntry101 {\n }\n 102 = GuildScrollFrameEntry102 {\n }\n 103 = GuildScrollFrameEntry103 {\n }\n 104 = GuildScrollFrameEntry104 {\n }\n 105 = GuildScrollFrameEntry105 {\n }\n 106 = GuildScrollFrameEntry106 {\n }\n 107 = GuildScrollFrameEntry107 {\n }\n 108 = GuildScrollFrameEntry108 {\n }\n 109 = Guil",
+			["stack"] = "Interface\\AddOns\\nMinimap\\tab.lua:288: in function `nMinimap_UpdateGuildMembers'\nInterface\\AddOns\\nMinimap\\tab.lua:344: in function `nMinimapTab_Guild_UpdateScrollFrame'\nInterface\\AddOns\\nMinimap\\tab.lua:352: in function <Interface\\AddOns\\nMinimap\\tab.lua:347>",
+			["session"] = 3392,
+			["counter"] = 40,
+		}, -- [468]
 	},
 }

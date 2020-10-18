@@ -1,7 +1,6 @@
 
 Blizzard_Console_SavedVars = {
 	["version"] = 3,
-	["height"] = 300,
 	["messageHistory"] = {
 		{
 			"DBCache::CancelCallback ignored", -- [1]
@@ -20,27 +19,27 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [4]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [5]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [6]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [7]
 		{
-			"Time played:", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [8]
 		{
-			"Total: 4d 1h 42m 33s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [9]
 		{
-			"Level: 0d 4h 47m 38s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [10]
 		{
@@ -128,15 +127,15 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [31]
 		{
-			"Time played:", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [32]
 		{
-			"Total: 4d 1h 43m 15s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [33]
 		{
-			"Level: 0d 4h 48m 20s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [34]
 		{
@@ -172,15 +171,15 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [42]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [43]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Total: 4d 3h 45m 58s", -- [1]
 			0, -- [2]
 		}, -- [44]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Level: 0d 6h 51m 3s", -- [1]
 			0, -- [2]
 		}, -- [45]
 		{
@@ -272,31 +271,31 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [67]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [68]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [69]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [70]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [71]
 		{
-			"Time played:", -- [1]
+			"Total: 4d 3h 47m 4s", -- [1]
 			0, -- [2]
 		}, -- [72]
 		{
-			"Total: 4d 1h 47m 7s", -- [1]
+			"Level: 0d 6h 52m 9s", -- [1]
 			0, -- [2]
 		}, -- [73]
 		{
-			"Level: 0d 4h 52m 12s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [74]
 		{
@@ -372,23 +371,23 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [92]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [93]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Total: 4d 3h 47m 45s", -- [1]
 			0, -- [2]
 		}, -- [94]
 		{
-			"Time played:", -- [1]
+			"Level: 0d 6h 52m 50s", -- [1]
 			0, -- [2]
 		}, -- [95]
 		{
-			"Total: 4d 1h 47m 50s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [96]
 		{
-			"Level: 0d 4h 52m 55s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [97]
 		{
@@ -436,27 +435,27 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [108]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [109]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [110]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [111]
 		{
-			"Time played:", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [112]
 		{
-			"Total: 4d 1h 49m 3s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [113]
 		{
-			"Level: 0d 4h 54m 8s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [114]
 		{
@@ -560,15 +559,15 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [139]
 		{
-			"Time played:", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [140]
 		{
-			"Total: 4d 1h 49m 45s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [141]
 		{
-			"Level: 0d 4h 54m 50s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [142]
 		{
@@ -648,51 +647,51 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [161]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [162]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [163]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [164]
 		{
-			"Time played:", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [165]
 		{
-			"Total: 4d 1h 51m 22s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [166]
 		{
-			"Level: 0d 4h 56m 27s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [167]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [168]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [169]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [170]
 		{
-			"Time played:", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [171]
 		{
-			"Total: 4d 1h 51m 53s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [172]
 		{
-			"Level: 0d 4h 56m 58s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [173]
 		{
@@ -760,39 +759,39 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [189]
 		{
-			"Time played:", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [190]
 		{
-			"Total: 4d 1h 52m 34s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [191]
 		{
-			"Level: 0d 4h 57m 39s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [192]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [193]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [194]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [195]
 		{
-			"Time played:", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [196]
 		{
-			"Total: 4d 1h 53m 28s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [197]
 		{
-			"Level: 0d 4h 58m 33s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [198]
 		{
@@ -816,55 +815,55 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [203]
 		{
-			"Time played:", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [204]
 		{
-			"Total: 4d 1h 54m 8s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [205]
 		{
-			"Level: 0d 4h 59m 13s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [206]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [207]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [208]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [209]
 		{
-			"Time played:", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [210]
 		{
-			"Total: 4d 1h 54m 38s", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [211]
 		{
-			"Level: 0d 4h 59m 43s", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [212]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [213]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [214]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Total: 4d 3h 50m 51s", -- [1]
 			0, -- [2]
 		}, -- [215]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Level: 0d 6h 55m 56s", -- [1]
 			0, -- [2]
 		}, -- [216]
 		{
@@ -876,15 +875,15 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [218]
 		{
-			"Time played:", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [219]
 		{
-			"Total: 4d 1h 55m 19s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [220]
 		{
-			"Level: 0d 5h 0m 24s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [221]
 		{
@@ -936,35 +935,35 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [233]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18049, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [234]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18049, effect aura: 135, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [235]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18049, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [236]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18049, effect aura: 135, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [237]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18049, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [238]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18049, effect aura: 135, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [239]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18049, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [240]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18049, effect aura: 135, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [241]
 		{
@@ -972,51 +971,51 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [242]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17873, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [243]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17897, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [244]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17873, effect aura: 13, which is wrong", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [245]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17897, effect aura: 13, which is wrong", -- [1]
+			"Total: 4d 3h 51m 32s", -- [1]
 			0, -- [2]
 		}, -- [246]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17873, effect aura: 13, which is wrong", -- [1]
+			"Level: 0d 6h 56m 37s", -- [1]
 			0, -- [2]
 		}, -- [247]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17897, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [248]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17873, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [249]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17897, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [250]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17873, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [251]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17897, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [252]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17873, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [253]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17897, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [254]
 		{
@@ -1076,123 +1075,123 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [268]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9411, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [269]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9411, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [270]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9328, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [271]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9328, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [272]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9328, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [273]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9328, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [274]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9314, effect aura: 135, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [275]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9314, effect aura: 135, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [276]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9314, effect aura: 135, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [277]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9314, effect aura: 135, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [278]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13596, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [279]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13596, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [280]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9413, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [281]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9413, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [282]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18031, effect aura: 135, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [283]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18031, effect aura: 135, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [284]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9359, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [285]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9359, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [286]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9359, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [287]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9359, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [288]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18030, effect aura: 135, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [289]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18030, effect aura: 135, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [290]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9328, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [291]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9328, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [292]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9411, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [293]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9411, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [294]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17873, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [295]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17897, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [296]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17873, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [297]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17897, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [298]
 		{
@@ -1216,19 +1215,19 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [303]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9411, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [304]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9411, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [305]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9328, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [306]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9328, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [307]
 		{
@@ -1248,139 +1247,139 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [311]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18049, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [312]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18049, effect aura: 135, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [313]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18049, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [314]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18049, effect aura: 135, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [315]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9412, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [316]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9412, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [317]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9412, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [318]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9412, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [319]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9412, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [320]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9412, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [321]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18049, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [322]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18049, effect aura: 135, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [323]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18049, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [324]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18049, effect aura: 135, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [325]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17873, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [326]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17897, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [327]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17873, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [328]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17897, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [329]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18049, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [330]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18049, effect aura: 135, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [331]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18049, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [332]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18049, effect aura: 135, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [333]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17873, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [334]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17897, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [335]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17873, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [336]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17897, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [337]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9411, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [338]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9411, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [339]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9328, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [340]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9328, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [341]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18030, effect aura: 135, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [342]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18030, effect aura: 135, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [343]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9328, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [344]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9328, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [345]
 		{
@@ -1396,19 +1395,19 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [348]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17873, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [349]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17897, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [350]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17873, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [351]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17897, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [352]
 		{
@@ -1464,67 +1463,67 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [365]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17873, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [366]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17897, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [367]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17873, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [368]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17897, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [369]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9411, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [370]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9411, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [371]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9328, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [372]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9328, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [373]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18030, effect aura: 135, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [374]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 18030, effect aura: 135, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [375]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9359, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [376]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9359, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [377]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9413, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [378]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9413, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [379]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13596, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [380]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13596, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [381]
 		{
@@ -1736,35 +1735,35 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [433]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9328, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [434]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9328, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [435]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9411, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [436]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 9411, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [437]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17873, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [438]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17897, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [439]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17873, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [440]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17897, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [441]
 		{
@@ -2104,27 +2103,27 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [525]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [526]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [527]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [528]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [529]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Total: 4d 3h 58m 1s", -- [1]
 			0, -- [2]
 		}, -- [530]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Level: 0d 7h 3m 6s", -- [1]
 			0, -- [2]
 		}, -- [531]
 		{
@@ -2416,15 +2415,15 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [603]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [604]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Total: 4d 3h 58m 41s", -- [1]
 			0, -- [2]
 		}, -- [605]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Level: 0d 7h 3m 46s", -- [1]
 			0, -- [2]
 		}, -- [606]
 		{
@@ -2456,27 +2455,27 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [613]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [614]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [615]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [616]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [617]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Total: 4d 3h 59m 24s", -- [1]
 			0, -- [2]
 		}, -- [618]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Level: 0d 7h 4m 29s", -- [1]
 			0, -- [2]
 		}, -- [619]
 		{
@@ -2696,15 +2695,15 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [673]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [674]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Total: 4d 4h 0m 5s", -- [1]
 			0, -- [2]
 		}, -- [675]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Level: 0d 7h 5m 10s", -- [1]
 			0, -- [2]
 		}, -- [676]
 		{
@@ -3356,27 +3355,27 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [838]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [839]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [840]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [841]
 		{
-			"Time played:", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [842]
 		{
-			"Total: 4d 2h 12m 26s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [843]
 		{
-			"Level: 0d 5h 17m 31s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [844]
 		{
@@ -3424,91 +3423,91 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [855]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [856]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [857]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Attempted to register existing command: ShowObjUsage\n", -- [1]
 			0, -- [2]
 		}, -- [858]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Attempted to register existing command: SetDifficulty\n", -- [1]
 			0, -- [2]
 		}, -- [859]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [860]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [861]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [862]
 		{
-			"Time played:", -- [1]
+			"Proficiency in item class 2 set to 0x0000000010", -- [1]
 			0, -- [2]
 		}, -- [863]
 		{
-			"Total: 4d 2h 13m 24s", -- [1]
+			"Proficiency in item class 4 set to 0x0000000001", -- [1]
 			0, -- [2]
 		}, -- [864]
 		{
-			"Level: 0d 5h 18m 29s", -- [1]
+			"Proficiency in item class 2 set to 0x0000004010", -- [1]
 			0, -- [2]
 		}, -- [865]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 2 set to 0x0000084010", -- [1]
 			0, -- [2]
 		}, -- [866]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 4 set to 0x0000000003", -- [1]
 			0, -- [2]
 		}, -- [867]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Proficiency in item class 2 set to 0x0000084010", -- [1]
 			0, -- [2]
 		}, -- [868]
 		{
-			"Time played:", -- [1]
+			"Proficiency in item class 4 set to 0x0000000003", -- [1]
 			0, -- [2]
 		}, -- [869]
 		{
-			"Total: 4d 2h 14m 6s", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [870]
 		{
-			"Level: 0d 5h 19m 11s", -- [1]
+			"Time set to 10/18/2020 (Sun) 18:25", -- [1]
 			0, -- [2]
 		}, -- [871]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [872]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [873]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Total: 1d 15h 51m 4s", -- [1]
 			0, -- [2]
 		}, -- [874]
 		{
-			"Time played:", -- [1]
+			"Level: 1d 14h 15m 18s", -- [1]
 			0, -- [2]
 		}, -- [875]
 		{
-			"Total: 4d 2h 14m 44s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [876]
 		{
-			"Level: 0d 5h 19m 49s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [877]
 		{
@@ -3544,15 +3543,15 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [885]
 		{
-			"Time played:", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [886]
 		{
-			"Total: 4d 2h 15m 26s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [887]
 		{
-			"Level: 0d 5h 20m 31s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [888]
 		{
@@ -3624,27 +3623,27 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [905]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [906]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [907]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [908]
 		{
-			"Time played:", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [909]
 		{
-			"Total: 4d 2h 16m 43s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [910]
 		{
-			"Level: 0d 5h 21m 48s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [911]
 		{
@@ -3684,15 +3683,15 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [920]
 		{
-			"Time played:", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [921]
 		{
-			"Total: 4d 2h 17m 24s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [922]
 		{
-			"Level: 0d 5h 22m 29s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [923]
 		{
@@ -3724,15 +3723,15 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [930]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [931]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Total: 1d 15h 51m 44s", -- [1]
 			0, -- [2]
 		}, -- [932]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Level: 1d 14h 15m 58s", -- [1]
 			0, -- [2]
 		}, -- [933]
 		{
@@ -3764,27 +3763,27 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [940]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [941]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [942]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [943]
 		{
-			"Time played:", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [944]
 		{
-			"Total: 4d 2h 18m 23s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [945]
 		{
-			"Level: 0d 5h 23m 28s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [946]
 		{
@@ -3840,15 +3839,15 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [959]
 		{
-			"Time played:", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [960]
 		{
-			"Total: 4d 2h 19m 4s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [961]
 		{
-			"Level: 0d 5h 24m 9s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [962]
 		{
@@ -3948,27 +3947,27 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [986]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [987]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [988]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [989]
 		{
-			"Time played:", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [990]
 		{
-			"Total: 4d 2h 22m 2s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [991]
 		{
-			"Level: 0d 5h 27m 7s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [992]
 		{
@@ -4008,8 +4007,9 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [1001]
 	},
-	["isShown"] = false,
+	["height"] = 300,
 	["fontHeight"] = 14,
+	["isShown"] = false,
 	["commandHistory"] = {
 	},
 }

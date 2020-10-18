@@ -339,19 +339,19 @@ MonkeyQuestConfig = {
 			["Ashenvale - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Thunder Bluff - true"] = {
+			["Melor Sends Word - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Shaman - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Melor Sends Word - false"] = {
+			["Thunder Bluff - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Ashenvale Outrunners - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Stonetalon Standstill - false"] = {
+			["Satyr Horns - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Deepmoss Spider Eggs - false"] = {
@@ -363,7 +363,7 @@ MonkeyQuestConfig = {
 			["Isha Awak - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Warsong Supplies - false"] = {
+			["Hillsbrad Foothills - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Report to Kadrak - false"] = {
@@ -375,10 +375,10 @@ MonkeyQuestConfig = {
 			["Dangerous! - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Hillsbrad Foothills - true"] = {
+			["Warsong Supplies - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Satyr Horns - false"] = {
+			["Stonetalon Standstill - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -951,10 +951,10 @@ MonkeyQuestConfig = {
 			["High Chief Winterfall - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Seal of Ascension - false"] = {
+			["The Human, Ras Frostwhisper - false"] = {
 				["m_bChecked"] = true,
 			},
-			["The Human, Ras Frostwhisper - false"] = {
+			["Seal of Ascension - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Zul'Gurub - true"] = {
@@ -969,13 +969,13 @@ MonkeyQuestConfig = {
 			["A Matter of Time - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Alterac Valley - true"] = {
+			["The Barrens - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Brotherly Love - false"] = {
 				["m_bChecked"] = true,
 			},
-			["The Barrens - true"] = {
+			["Alterac Valley - true"] = {
 				["m_bChecked"] = true,
 			},
 			["When Smokey Sings, I Get Violent - false"] = {
@@ -1120,19 +1120,19 @@ MonkeyQuestConfig = {
 		["m_bShowZoneHighlight"] = true,
 		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
 		["m_aQuestList"] = {
-			["Vanquish the Betrayers - false"] = {
+			["Encroachment - false"] = {
 				["m_bChecked"] = true,
 			},
 			["From The Wreckage.... - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Durotar - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Encroachment - false"] = {
-				["m_bChecked"] = true,
-			},
 			["Break a Few Eggs - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Vanquish the Betrayers - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Durotar - true"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -1169,6 +1169,26 @@ MonkeyQuestConfig = {
 		["m_iFrameLeft"] = 1650.51281738281,
 		["m_bGrowUp"] = false,
 	},
+	["Stonespine|Vermins"] = {
+		["m_aQuestList"] = {
+			["Sarkoth - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Valley of Trials - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Vile Familiars - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Cutting Teeth - false"] = {
+				["m_bChecked"] = true,
+			},
+		},
+	},
+	["Golemagg|Dmitar"] = {
+		["m_aQuestList"] = {
+		},
+	},
 	["Golemagg|Mohikanac"] = {
 		["m_aQuestList"] = {
 			["New Life - false"] = {
@@ -1188,22 +1208,51 @@ MonkeyQuestConfig = {
 			},
 		},
 	},
-	["Golemagg|Dmitar"] = {
+	["Golemagg|Greenwise"] = {
 		["m_aQuestList"] = {
-		},
-	},
-	["Stonespine|Vermins"] = {
-		["m_aQuestList"] = {
-			["Sarkoth - false"] = {
+			["Miner's Fortune - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Valley of Trials - true"] = {
+			["Mura Runetotem - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Vile Familiars - false"] = {
+			["Jorn Skyseer - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Cutting Teeth - false"] = {
+			["The Guns of Northwatch - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Smart Drinks - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Hezrul Bloodmark - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Deepmoss Spider Eggs - false"] = {
+				["m_bChecked"] = true,
+			},
+			["The Barrens - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Wailing Caverns - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Ziz Fizziks - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Egg Hunt - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Hamuul Runetotem - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Trouble at the Docks - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Letter to Jin'Zil - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Tribes at War - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -1258,7 +1307,7 @@ MonkeyQuestConfig = {
 			["Silithus - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Bijou's Belongings - false"] = {
+			["Urok Doomhowl - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Blackrock Spire - true"] = {
@@ -1279,62 +1328,13 @@ MonkeyQuestConfig = {
 			["Gammerita, Mon! - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Urok Doomhowl - false"] = {
+			["Bijou's Belongings - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Invaders of Alterac Valley - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Hunt the Savages - false"] = {
-				["m_bChecked"] = true,
-			},
-		},
-	},
-	["Golemagg|Greenwise"] = {
-		["m_aQuestList"] = {
-			["Miner's Fortune - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Mura Runetotem - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Jorn Skyseer - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Guns of Northwatch - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Smart Drinks - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Hezrul Bloodmark - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Deepmoss Spider Eggs - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Barrens - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Wailing Caverns - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Ziz Fizziks - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Egg Hunt - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Hamuul Runetotem - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Trouble at the Docks - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Letter to Jin'Zil - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Tribes at War - false"] = {
 				["m_bChecked"] = true,
 			},
 		},

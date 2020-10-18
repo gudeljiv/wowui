@@ -533,14 +533,14 @@ experience:SetScript(
 	"OnEvent",
 	function(self, event, isInitialLogin, isReloadingUi)
 		if UnitLevel("player") == MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] then
-			-- xpperhourframe_left:Hide()
-			-- xpperhourframe_right:Hide()
-			-- xpperhourframe_wrapper:Hide()
 			xppadding = 0
 			pullxpframe:Hide()
 			pullxpframevalue:Hide()
 			totalxpframe:Hide()
 			totalxpframevalue:Hide()
+			xpperhourframe_left:Hide()
+			xpperhourframe_right:Hide()
+			xpperhourframe_wrapper:Hide()
 		else
 			if event ~= "PLAYER_REGEN_ENABLED" then
 				CalculateTotalExperience(event, isInitialLogin, isReloadingUi)

@@ -2,7 +2,7 @@
 xKillCount = {
 	["show"] = true,
 	["position"] = {
-		["y"] = 307.999694824219,
+		["y"] = 233.000106811523,
 		["x"] = 0,
 		["to"] = "LEFT",
 		["from"] = "LEFT",
