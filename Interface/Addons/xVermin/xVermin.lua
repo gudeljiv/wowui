@@ -132,6 +132,8 @@ f:SetScript(
 
 			MultiBarBottomLeft:ClearAllPoints()
 			MultiBarBottomLeft:SetPoint("BOTTOM", MainMenuBar, "TOP", 0, -5)
+			MultiBarBottomLeft.ClearAllPoints = function()
+			end
 			MultiBarBottomLeft.SetPoint = function()
 			end
 
@@ -179,32 +181,36 @@ f:SetScript(
 				end
 			)
 
-			local point = TargetFrame.SetPoint
-			hooksecurefunc(
-				TargetFrame,
-				"SetPoint",
-				function()
-					point(TargetFrame, "CENTER", UIParent, "CENTER", 250, -96)
-				end
-			)
+			-- local point = TargetFrame.SetPoint
+			-- hooksecurefunc(
+			-- 	TargetFrame,
+			-- 	"SetPoint",
+			-- 	function()
+			-- 		point(TargetFrame, "CENTER", UIParent, "CENTER", 250, -96)
+			-- 	end
+			-- )
 
-			local point = PlayerFrame.SetPoint
-			hooksecurefunc(
-				PlayerFrame,
-				"SetPoint",
-				function()
-					point(PlayerFrame, "CENTER", UIParent, "CENTER", -250, -96)
-				end
-			)
+			-- local point = PlayerFrame.SetPoint
+			-- hooksecurefunc(
+			-- 	PlayerFrame,
+			-- 	"SetPoint",
+			-- 	function()
+			-- 		point(PlayerFrame, "CENTER", UIParent, "CENTER", -250, -96)
+			-- 	end
+			-- )
 			PlayerFrameManaBarText:SetScale(0.8)
 
 			PlayerFrame:ClearAllPoints()
 			PlayerFrame:SetPoint("CENTER", UIParent, "CENTER", -250, -96)
+			PlayerFrame.ClearAllPoints = function()
+			end
 			PlayerFrame.SetPoint = function()
 			end
 
 			TargetFrame:ClearAllPoints()
 			TargetFrame:SetPoint("CENTER", UIParent, "CENTER", 250, -96)
+			TargetFrame.ClearAllPoints = function()
+			end
 			TargetFrame.SetPoint = function()
 			end
 		end

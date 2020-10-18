@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 2090,
+	["session"] = 2104,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -1694,5 +1694,13 @@ BugGrabberDB = {
 			["session"] = 2085,
 			["counter"] = 15,
 		}, -- [216]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\Bindings.lua:20: attempt to call global 'FixBindings' (a nil value)",
+			["time"] = "2020/10/18 10:13:07",
+			["locals"] = "x = <table> {\n 1 = \"BUTTON2\"\n 2 = \"BUTTON3\"\n 3 = \"UP\"\n 4 = \"DOWN\"\n 5 = \"LEFT\"\n 6 = \"RIGHT\"\n 7 = \"A\"\n 8 = \"D\"\n 9 = \"SPACE\"\n 10 = \"NUMPAD0\"\n 11 = \"Z\"\n 12 = \"NUMLOCK\"\n 13 = \"BUTTON4\"\n 14 = \"INSERT\"\n 15 = \"DELETE\"\n 16 = \"NUMPADDIVIDE\"\n 17 = \"CTRL-F\"\n 18 = \"ENTER\"\n 19 = \"/\"\n 20 = \"SHIFT-PAGEDOWN\"\n 21 = \"R\"\n 22 = \"SHIFT-R\"\n 23 = \"CTRL-PAGEUP\"\n 24 = \"CTRL-PAGEDOWN\"\n 25 = \"CTRL-SHIFT-PAGEDOWN\"\n 26 = \"1\"\n 27 = \"2\"\n 28 = \"3\"\n 29 = \"4\"\n 30 = \"5\"\n 31 = \"6\"\n 32 = \"ALT-MOUSEWHEELUP\"\n 33 = \"SHIFT-MOUSEWHEELUP\"\n 34 = \"TAB\"\n 35 = \"E\"\n 36 = \"F\"\n 37 = \"CTRL-F1\"\n 38 = \"CTRL-F2\"\n 39 = \"CTRL-F3\"\n 40 = \"CTRL-F4\"\n 41 = \"CTRL-F5\"\n 42 = \"CTRL-F6\"\n 43 = \"CTRL-F7\"\n 44 = \"CTRL-F8\"\n 45 = \"CTRL-F9\"\n 46 = \"CTRL-F10\"\n 47 = \"H\"\n 48 = \"V\"\n 49 = \"G\"\n 50 = \"T\"\n 51 = \"SHIFT-T\"\n 52 = \"SHIFT-E\"\n 53 = \"SHIFT-D\"\n 54 = \"MOUSEWHEELDOWN\"\n 55 = \"MOUSEWHEELUP\"\n 56 = \"ALT-9\"\n 57 = \"ALT-0\"\n 58 = \"ALT-E\"\n 59 = \"ALT-R\"\n 60 = \"ALT-D\"\n 61 = \"ALT-F\"\n 62 = \"ALT-X\"\n 63 = \"SHIFT-X\"\n 64 = \"X\"\n 65 = \"F1\"\n 66 = \"F2\"\n 67 = \"F3\"\n 68 = \"F4\"\n 69 = \"F5\"\n 70 = \"F6\"\n 71 = \"F7\"\n 72 = \"ALT-S\"\n 73 = \"SHIFT-S\"\n 74 = \"SHIFT-1\"\n 75 = \"ALT-1\"\n 76 = \"SHIFT-2\"\n 77 = \"ALT-2\"\n 78 = \"SHIFT-3\"\n 79 = \"ALT-3\"\n 80 = \"SHIFT-4\"\n 81 = \"ALT-4\"\n 82 = \"SHIFT-5\"\n 83 = \"ALT-5\"\n 84 = \"CTRL-B\"\n 85 = \"CTRL-D\"\n 86 = \"K\"\n 87 = \"¸\"\n 88 = \"SHIFT-TAB\"\n 89 = \"CTRL-TAB\"\n 90 = \"CTRL-SHIFT-TAB\"\n 91 = \"SHIFT-F1\"\n 92 = \"SHIFT-F2\"\n 93 = \"SHIFT-F3\"\n 94 = \"SHIFT-F4\"\n 95 = \"SHIFT-F5\"\n 96 = \"CTRL-SHIFT-V\"\n 97 = \"ESCAPE\"\n 98 = \"B\"\n 99 = \"F8\"\n 100 = \"F9\"\n 101 = \"F10\"\n 102 = \"F11\"\n 103 = \"SHIFT-B\"\n 104 = \"C\"\n 105 = \"SHIFT-P\"\n 106 = \"U\"\n 107 = \"P\"\n 108 = \"SHIFT-I\"\n 109 = \"N\"\n 110 = \"M\"\n 111 = \"SHIFT-M\"\n 112 = \"SHIFT-SPACE\"\n 113 = \"O\"\n 114 = \"NUMPADPLUS\"\n 115 = \"NUMPADMINUS\"\n 116 = \"CTRL-=\"\n 117 = \"CTRL--\"\n 118 = \"ALT-Z\"\n 119 = \"PRINTSCREEN\"\n 120 = \"SHIFT-C\"\n}\ny = 0\n(*temporary) = nil\n(*temporary) = \"attempt to call global 'FixBindings' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\Bindings.lua:20: in function <Interface\\AddOns\\xVermin\\Bindings.lua:3>\nInterface\\AddOns\\xVermin\\Bindings.lua:134: in function <Interface\\AddOns\\xVermin\\Bindings.lua:129>",
+			["session"] = 2098,
+			["counter"] = 1,
+		}, -- [217]
 	},
 }

@@ -1,14 +1,14 @@
 
 KILLTRACK = {
+	["TOOLTIP"] = true,
+	["COUNT_GROUP"] = false,
+	["SHOW_EXP"] = false,
 	["BROKER"] = {
 		["MINIMAP"] = {
 			["hide"] = true,
 		},
 		["SHORT_TEXT"] = false,
 	},
-	["PRINTKILLS"] = false,
-	["SHOW_EXP"] = false,
-	["TOOLTIP"] = true,
 	["PRINTNEW"] = false,
 	["MOBS"] = {
 		[3466] = {
@@ -446,10 +446,10 @@ KILLTRACK = {
 			["Kills"] = 8,
 			["Name"] = "Hillsbrad Councilman",
 		},
-		[2260] = {
+		[4249] = {
 			["AchievCount"] = 0,
-			["Kills"] = 31,
-			["Name"] = "Syndicate Rogue",
+			["Kills"] = 0,
+			["Name"] = "Pesterhide Snarler",
 		},
 		[3098] = {
 			["AchievCount"] = 0,
@@ -606,10 +606,10 @@ KILLTRACK = {
 			["Kills"] = 1,
 			["Name"] = "Farmer Getz",
 		},
-		[7856] = {
+		[2406] = {
 			["AchievCount"] = 0,
-			["Kills"] = 2,
-			["Name"] = "Southsea Freebooter",
+			["Kills"] = 4,
+			["Name"] = "Mountain Lion",
 		},
 		[2914] = {
 			["AchievCount"] = 0,
@@ -631,20 +631,20 @@ KILLTRACK = {
 			["Kills"] = 2,
 			["Name"] = "Southsea Pirate",
 		},
-		[2406] = {
+		[7856] = {
 			["AchievCount"] = 0,
-			["Kills"] = 4,
-			["Name"] = "Mountain Lion",
+			["Kills"] = 2,
+			["Name"] = "Southsea Freebooter",
 		},
 		[7857] = {
 			["AchievCount"] = 0,
 			["Kills"] = 3,
 			["Name"] = "Southsea Dock Worker",
 		},
-		[7858] = {
+		[5053] = {
 			["AchievCount"] = 0,
-			["Kills"] = 6,
-			["Name"] = "Southsea Swashbuckler",
+			["Kills"] = 5,
+			["Name"] = "Deviate Crocolisk",
 		},
 		[3300] = {
 			["AchievCount"] = 0,
@@ -952,10 +952,10 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Giant Plains Creeper",
 		},
-		[5053] = {
+		[7858] = {
 			["AchievCount"] = 0,
-			["Kills"] = 5,
-			["Name"] = "Deviate Crocolisk",
+			["Kills"] = 6,
+			["Name"] = "Southsea Swashbuckler",
 		},
 		[4351] = {
 			["AchievCount"] = 0,
@@ -1027,10 +1027,10 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Sandfury Witch Doctor",
 		},
-		[4249] = {
+		[2260] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Pesterhide Snarler",
+			["Kills"] = 31,
+			["Name"] = "Syndicate Rogue",
 		},
 		[4397] = {
 			["AchievCount"] = 0,
@@ -1046,5 +1046,5 @@ KILLTRACK = {
 		["POSITION"] = {
 		},
 	},
-	["COUNT_GROUP"] = false,
+	["PRINTKILLS"] = false,
 }

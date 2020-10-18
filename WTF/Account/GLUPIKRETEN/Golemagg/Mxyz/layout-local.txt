@@ -1,9 +1,9 @@
 Version: 1
 Frame: KillCountFrame
 FrameLevel: 1
-Anchor: TOPLEFT
-X: 541
-Y: -311
+Anchor: LEFT
+X: 457
+Y: 201
 W: 270
 H: 157
 Frame: EavesDropFrame

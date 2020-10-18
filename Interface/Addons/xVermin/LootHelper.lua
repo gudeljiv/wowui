@@ -119,7 +119,7 @@ bcf:SetScript(
 				end
 			end
 
-			if GetSpellPowerCost("Blizzard(Rank 1)")[1].cost and GetSpellPowerCost("Blizzard(Rank 1)")[1].cost > 0 then
+			if GetSpellPowerCost("Blizzard(Rank 1)") and GetSpellPowerCost("Blizzard(Rank 1)")[1].cost and GetSpellPowerCost("Blizzard(Rank 1)")[1].cost > 0 then
 				base, casting = GetManaRegen()
 				if (xVermin:Round(base, 2) or xVermin:Round(casting, 2)) > 0 then
 					if lastmana then

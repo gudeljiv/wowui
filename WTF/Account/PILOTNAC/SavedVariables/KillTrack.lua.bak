@@ -1,9 +1,14 @@
 
 KILLTRACK = {
-	["PRINTKILLS"] = false,
 	["COUNT_GROUP"] = false,
+	["PRINTKILLS"] = false,
 	["SHOW_EXP"] = false,
-	["TOOLTIP"] = true,
+	["BROKER"] = {
+		["MINIMAP"] = {
+			["hide"] = true,
+		},
+		["SHORT_TEXT"] = false,
+	},
 	["PRINTNEW"] = false,
 	["MOBS"] = {
 		[3466] = {
@@ -411,10 +416,10 @@ KILLTRACK = {
 			["Kills"] = 32,
 			["Name"] = "Starving Mountain Lion",
 		},
-		[2260] = {
+		[4249] = {
 			["AchievCount"] = 0,
-			["Kills"] = 31,
-			["Name"] = "Syndicate Rogue",
+			["Kills"] = 0,
+			["Name"] = "Pesterhide Snarler",
 		},
 		[2385] = {
 			["AchievCount"] = 0,
@@ -441,10 +446,10 @@ KILLTRACK = {
 			["Kills"] = 8,
 			["Name"] = "Hillsbrad Councilman",
 		},
-		[4249] = {
+		[2260] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Pesterhide Snarler",
+			["Kills"] = 31,
+			["Name"] = "Syndicate Rogue",
 		},
 		[5650] = {
 			["AchievCount"] = 0,
@@ -601,10 +606,10 @@ KILLTRACK = {
 			["Kills"] = 1,
 			["Name"] = "Farmer Getz",
 		},
-		[7858] = {
+		[5053] = {
 			["AchievCount"] = 0,
-			["Kills"] = 6,
-			["Name"] = "Southsea Swashbuckler",
+			["Kills"] = 5,
+			["Name"] = "Deviate Crocolisk",
 		},
 		[2914] = {
 			["AchievCount"] = 0,
@@ -626,20 +631,20 @@ KILLTRACK = {
 			["Kills"] = 2,
 			["Name"] = "Southsea Pirate",
 		},
-		[2406] = {
+		[7856] = {
 			["AchievCount"] = 0,
-			["Kills"] = 4,
-			["Name"] = "Mountain Lion",
+			["Kills"] = 2,
+			["Name"] = "Southsea Freebooter",
 		},
 		[7857] = {
 			["AchievCount"] = 0,
 			["Kills"] = 3,
 			["Name"] = "Southsea Dock Worker",
 		},
-		[5053] = {
+		[7858] = {
 			["AchievCount"] = 0,
-			["Kills"] = 5,
-			["Name"] = "Deviate Crocolisk",
+			["Kills"] = 6,
+			["Name"] = "Southsea Swashbuckler",
 		},
 		[3300] = {
 			["AchievCount"] = 0,
@@ -947,10 +952,10 @@ KILLTRACK = {
 			["Kills"] = 24,
 			["Name"] = "Druid of the Fang",
 		},
-		[7856] = {
+		[2406] = {
 			["AchievCount"] = 0,
-			["Kills"] = 2,
-			["Name"] = "Southsea Freebooter",
+			["Kills"] = 4,
+			["Name"] = "Mountain Lion",
 		},
 		[4351] = {
 			["AchievCount"] = 0,
@@ -1041,10 +1046,5 @@ KILLTRACK = {
 	["ACHIEV_THRESHOLD"] = 1000,
 	["DISABLE_DUNGEONS"] = false,
 	["DISABLE_RAIDS"] = false,
-	["BROKER"] = {
-		["MINIMAP"] = {
-			["hide"] = true,
-		},
-		["SHORT_TEXT"] = false,
-	},
+	["TOOLTIP"] = true,
 }

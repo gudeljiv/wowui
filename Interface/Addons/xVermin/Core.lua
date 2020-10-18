@@ -54,18 +54,20 @@ function xVermin:FormatValue(self)
 	end
 end
 
-function xVermin:FormatNumber(num, divider)
+function xVermin:FormatNumber(number, divider)
 	if not divider then
 		divider = "."
 	end
-	if not num then
+	if not number then
 		return 0
+	else
+		number = tonumber(number)
 	end
-	if abs(num) < 1000 then
-		return num
+	if abs(number) < 1000 then
+		return number
 	end
-	local neg = num < 0 and "-" or ""
-	local left, mid, right = tostring(abs(num)):match("^([^%d]*%d)(%d*)(.-)$")
+	local neg = number < 0 and "-" or ""
+	local left, mid, right = tostring(abs(number)):match("^([^%d]*%d)(%d*)(.-)$")
 	return ("%s%s%s%s"):format(neg, left, mid:reverse():gsub("(%d%d%d)", "%1" .. divider):reverse(), right)
 end
 

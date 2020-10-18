@@ -35,7 +35,7 @@ kc:SetBackdrop(
 		insets = {left = 0, right = 0, top = 0, bottom = 0}
 	}
 )
-kc:SetBackdropColor(0, 0, 0, 0.4)
+kc:SetBackdropColor(0, 0, 0, 0.6)
 kc:SetFrameStrata("BACKGROUND")
 kc:CreateBeautyBorder(6)
 kc.isMoving = false
@@ -326,7 +326,7 @@ local function DisplayData()
 
 	for key, value in pairs(sortedKillLog) do
 		names = names .. value.name .. "\n"
-		values = values .. value.count .. "\n"
+		values = values .. xVermin:FormatNumber(value.count) .. "\n"
 		percentages = percentages .. xVermin:Round((value.count / total * 100), 1) .. "%" .. "\n"
 	end
 
@@ -335,8 +335,8 @@ local function DisplayData()
 	kclistvalues.text:SetText(values)
 	kclistpercentages.text:SetText(percentages)
 
-	pullxpframevalue.text:SetText(xKillCount.experience.pulltotal)
-	totalxpframevalue.text:SetText(xKillCount.experience.totaltotal)
+	pullxpframevalue.text:SetText(xVermin:FormatNumber(xKillCount.experience.pulltotal))
+	totalxpframevalue.text:SetText(xVermin:FormatNumber(xKillCount.experience.totaltotal))
 
 	local w = math.max(kclistnames.text:GetStringWidth() + kclistpercentages.text:GetStringWidth() + 40, xpperhourframe.text:GetStringWidth())
 	local h = kctitle.text:GetStringHeight() + kctotal.text:GetStringHeight() + kclistnames.text:GetStringHeight() + 86 + xppadding

@@ -2,8 +2,8 @@
 xKillCount = {
 	["show"] = true,
 	["position"] = {
-		["y"] = 283.999938964844,
-		["x"] = 330.999877929688,
+		["y"] = 307.999694824219,
+		["x"] = 0,
 		["to"] = "LEFT",
 		["from"] = "LEFT",
 	},
@@ -12,9 +12,5 @@ xKillCount = {
 		["pulltotal"] = 0,
 	},
 	["killLog"] = {
-		["Sandfury Hideskinner"] = {
-			["name"] = "Sandfury Hideskinner",
-			["count"] = 1,
-		},
 	},
 }

@@ -345,9 +345,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Hillsbrad Councilman",
 			["Kills"] = 8,
 		},
-		[2260] = {
-			["Name"] = "Syndicate Rogue",
-			["Kills"] = 31,
+		[4249] = {
+			["Name"] = "Pesterhide Snarler",
+			["Kills"] = 0,
 		},
 		[10756] = {
 			["Name"] = "Scalding Elemental",
@@ -621,12 +621,12 @@ KILLTRACK_CHAR = {
 			["Name"] = "Marsh Murloc",
 			["Kills"] = 0,
 		},
-		[769] = {
-			["Name"] = "Deathstrike Tarantula",
-			["Kills"] = 0,
-		},
 		[1789] = {
 			["Name"] = "Skeletal Acolyte",
+			["Kills"] = 0,
+		},
+		[769] = {
+			["Name"] = "Deathstrike Tarantula",
 			["Kills"] = 0,
 		},
 		[1767] = {
@@ -813,9 +813,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Armored Scorpid",
 			["Kills"] = 0,
 		},
-		[4249] = {
-			["Name"] = "Pesterhide Snarler",
-			["Kills"] = 0,
+		[2260] = {
+			["Name"] = "Syndicate Rogue",
+			["Kills"] = 31,
 		},
 	},
 }

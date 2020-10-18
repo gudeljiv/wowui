@@ -321,9 +321,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Starving Mountain Lion",
 			["Kills"] = 32,
 		},
-		[2260] = {
-			["Name"] = "Syndicate Rogue",
-			["Kills"] = 31,
+		[4249] = {
+			["Name"] = "Pesterhide Snarler",
+			["Kills"] = 0,
 		},
 		[2385] = {
 			["Name"] = "Feral Mountain Lion",
@@ -345,9 +345,9 @@ KILLTRACK_CHAR = {
 			["Name"] = "Hillsbrad Councilman",
 			["Kills"] = 8,
 		},
-		[4249] = {
-			["Name"] = "Pesterhide Snarler",
-			["Kills"] = 0,
+		[2260] = {
+			["Name"] = "Syndicate Rogue",
+			["Kills"] = 31,
 		},
 		[3126] = {
 			["Name"] = "Armored Scorpid",
@@ -625,8 +625,8 @@ KILLTRACK_CHAR = {
 			["Name"] = "Drywallow Vicejaw",
 			["Kills"] = 0,
 		},
-		[1789] = {
-			["Name"] = "Skeletal Acolyte",
+		[769] = {
+			["Name"] = "Deathstrike Tarantula",
 			["Kills"] = 0,
 		},
 		[1767] = {
@@ -665,8 +665,8 @@ KILLTRACK_CHAR = {
 			["Name"] = "Jailor Eston",
 			["Kills"] = 2,
 		},
-		[769] = {
-			["Name"] = "Deathstrike Tarantula",
+		[1789] = {
+			["Name"] = "Skeletal Acolyte",
 			["Kills"] = 0,
 		},
 		[2428] = {
