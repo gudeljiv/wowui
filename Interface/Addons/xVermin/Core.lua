@@ -4,6 +4,39 @@ RAID_CLASS_COLORS["SHAMAN"] = {r = 0 / 255, g = 112 / 255, b = 222 / 255, colorS
 xVermin.Class = select(2, UnitClass("player"))
 xVermin.ClassColor = RAID_CLASS_COLORS[xVermin.Class]
 
+xVermin.Color = {
+	white = "FFFFFFFF",
+	yellow = "FFFFFF00",
+	green = "FF00FF00",
+	red = "FFFF0000",
+	blue = "FF0000FF",
+	grey = "FF808080",
+	black = "FF000000",
+	cyan = "FF00FFFF",
+	teal = "FF008080",
+	navy = "FF000080",
+	purple = "FF800080",
+	maroon = "FF800000",
+	silver = "FFC0C0C0",
+	orange = "FFFFA500",
+	darkorange = "FFFF8C00",
+	royalblue = "FF4169E1",
+	Classes = {
+		mage = "FF40C7EB",
+		dk = "FFC41F3B",
+		dh = "FFFF7D0A",
+		druid = "FFFF7D0A",
+		hunter = "FFA9D271",
+		monk = "FF00FF96",
+		paladin = "FFF58CBA",
+		priest = "FFFFFFFF",
+		rogue = "FFFFF569",
+		shaman = "FF0070DE",
+		warlock = "FF8787ED",
+		warrior = "FFC79C6E"
+	}
+}
+
 SLASH_RELOAD1 = "/rl"
 SlashCmdList["RELOAD"] = function(msg)
 	ReloadUI()

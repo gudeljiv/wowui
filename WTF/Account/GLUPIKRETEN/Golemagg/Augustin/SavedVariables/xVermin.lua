@@ -1,16 +1,6 @@
 
 xKillCount = {
 	["show"] = true,
-	["position"] = {
-		["y"] = -254.000061035156,
-		["x"] = 332.000061035156,
-		["to"] = "TOPLEFT",
-		["from"] = "TOPLEFT",
-	},
-	["experience"] = {
-		["pulltotal"] = 0,
-		["totaltotal"] = 325685,
-	},
 	["killLog"] = {
 		["Sandfury Soul Eater"] = {
 			["name"] = "Sandfury Soul Eater",
@@ -28,9 +18,9 @@ xKillCount = {
 			["name"] = "Sandfury Witch Doctor",
 			["count"] = 1,
 		},
-		["Scarab"] = {
-			["name"] = "Scarab",
-			["count"] = 62,
+		["Glasshide Basilisk"] = {
+			["name"] = "Glasshide Basilisk",
+			["count"] = 2,
 		},
 		["Ward of Zum'rah"] = {
 			["name"] = "Ward of Zum'rah",
@@ -48,9 +38,19 @@ xKillCount = {
 			["name"] = "Lava Spout Totem",
 			["count"] = 2,
 		},
-		["Glasshide Basilisk"] = {
-			["name"] = "Glasshide Basilisk",
-			["count"] = 2,
+		["Scarab"] = {
+			["name"] = "Scarab",
+			["count"] = 62,
 		},
+	},
+	["experience"] = {
+		["totaltotal"] = 325685,
+		["pulltotal"] = 0,
+	},
+	["position"] = {
+		["y"] = -283,
+		["x"] = 333.000030517578,
+		["to"] = "TOPLEFT",
+		["from"] = "TOPLEFT",
 	},
 }

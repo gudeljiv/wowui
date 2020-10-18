@@ -85,9 +85,10 @@ kctimer:SetHeight(kctimer.text:GetStringHeight())
 -- Kill list wrapper
 ----------------------------
 
-local klwrapper = CreateFrame("Frame", "WrapperKillListFrame", kc)
-klwrapper:SetPoint("TOPLEFT", kc, "TOPLEFT", 0, -55)
-klwrapper:SetFrameStrata("LOW")
+local killlist_wrapper = CreateFrame("Frame", "WrapperKillListFrame", kc)
+killlist_wrapper:SetPoint("TOPLEFT", kc, "TOPLEFT", 0, -55)
+killlist_wrapper:SetFrameStrata("LOW")
+killlist_wrapper:SetBackdropColor(0, 0, 0, 0)
 
 ----------------------------
 -- Kill list names
@@ -129,15 +130,16 @@ kclistpercentages:Hide()
 ----------------------------
 -- Wrapper frame for reset and timer buttons
 ----------------------------
-local wrapper = CreateFrame("Frame", "WrapperResetTimer", kc)
-wrapper:SetPoint("BOTTOMLEFT", kc, "BOTTOMLEFT", 0, 10)
-wrapper:SetFrameStrata("LOW")
+local resettimer_wrapper = CreateFrame("Frame", "WrapperResetTimer", kc)
+resettimer_wrapper:SetPoint("BOTTOMLEFT", kc, "BOTTOMLEFT", 0, 10)
+resettimer_wrapper:SetFrameStrata("LOW")
+resettimer_wrapper:SetBackdropColor(0, 0, 0, 0)
 
 ----------------------------
 -- Reset data button
 ----------------------------
-local kcreset = CreateFrame("Frame", "KillCountReset", wrapper)
-kcreset:SetPoint("BOTTOMLEFT", wrapper, "BOTTOMLEFT", 10, 0)
+local kcreset = CreateFrame("Frame", "KillCountReset", resettimer_wrapper)
+kcreset:SetPoint("BOTTOMLEFT", resettimer_wrapper, "BOTTOMLEFT", 10, 0)
 kcreset:SetFrameStrata("LOW")
 kcreset.text = kcreset:CreateFontString(nil, "ARTWORK")
 kcreset.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
@@ -150,8 +152,8 @@ kcreset:SetHeight(kcreset.text:GetStringHeight())
 ----------------------------
 -- Timer controls
 ----------------------------
-local kctimerstartstop = CreateFrame("Frame", "KillCountTimerStartStop", wrapper)
-kctimerstartstop:SetPoint("BOTTOMRIGHT", wrapper, "BOTTOMRIGHT", -10, 0)
+local kctimerstartstop = CreateFrame("Frame", "KillCountTimerStartStop", resettimer_wrapper)
+kctimerstartstop:SetPoint("BOTTOMRIGHT", resettimer_wrapper, "BOTTOMRIGHT", -10, 0)
 kctimerstartstop:SetFrameStrata("LOW")
 kctimerstartstop.text = kctimerstartstop:CreateFontString(nil, "ARTWORK")
 kctimerstartstop.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
@@ -165,28 +167,40 @@ kctimerstartstop:SetHeight(kctimerstartstop.text:GetStringHeight())
 -- Separation line
 ----------------------------
 
-local l = wrapper:CreateLine()
-l:SetColorTexture(1, 1, 1, 0.8)
-l:SetThickness(1)
-l:SetStartPoint("TOPLEFT", 10, 7)
-l:SetEndPoint("TOPRIGHT", -10, 7)
+local separation_line = resettimer_wrapper:CreateLine()
+separation_line:SetColorTexture(1, 1, 1, 0.8)
+separation_line:SetThickness(1)
+separation_line:SetStartPoint("TOPLEFT", 10, 5)
+separation_line:SetEndPoint("TOPRIGHT", -10, 5)
 
 ----------------------------
 -- Experience per hour
 ----------------------------
 
-local xpperhourframe = CreateFrame("Frame", "XPPerHour", kc)
-xpperhourframe:SetPoint("BOTTOMLEFT", l, "BOTTOMLEFT", 0, 7)
-xpperhourframe:SetFrameStrata("LOW")
-xpperhourframe.text = xpperhourframe:CreateFontString(nil, "ARTWORK")
-xpperhourframe.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
-xpperhourframe.text:SetPoint("BOTTOMLEFT", xpperhourframe, "BOTTOMLEFT", 0, 0)
+local xpperhourframe_wrapper = CreateFrame("Frame", "XPPerHourWrapper", kc)
+xpperhourframe_wrapper:SetPoint("BOTTOMLEFT", separation_line, "TOPLEFT", 0, 5)
+xpperhourframe_wrapper:SetFrameStrata("LOW")
+xpperhourframe_wrapper:SetBackdropColor(0, 0, 0, 0)
+
+local xpperhourframe_left = CreateFrame("Frame", "KillCountTimerStartStop", xpperhourframe_wrapper)
+xpperhourframe_left:SetPoint("BOTTOMLEFT", xpperhourframe_wrapper, "BOTTOMLEFT", 0, 0)
+xpperhourframe_left:SetFrameStrata("LOW")
+xpperhourframe_left.text = xpperhourframe_left:CreateFontString(nil, "ARTWORK")
+xpperhourframe_left.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
+xpperhourframe_left.text:SetPoint("BOTTOMLEFT", xpperhourframe_left, "BOTTOMLEFT", 0, 0)
+
+local xpperhourframe_right = CreateFrame("Frame", "XPPerHourRight", xpperhourframe_wrapper)
+xpperhourframe_right:SetPoint("BOTTOMRIGHT", xpperhourframe_wrapper, "BOTTOMRIGHT", 0, 0)
+xpperhourframe_right:SetFrameStrata("LOW")
+xpperhourframe_right.text = xpperhourframe_right:CreateFontString(nil, "ARTWORK")
+xpperhourframe_right.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
+xpperhourframe_right.text:SetPoint("BOTTOMRIGHT", xpperhourframe_right, "BOTTOMRIGHT", 0, 0)
 
 ----------------------------
 -- Total experience in session
 ----------------------------
 local totalxpframe = CreateFrame("Frame", "TotalExperience", kc)
-totalxpframe:SetPoint("BOTTOMLEFT", xpperhourframe, "BOTTOMLEFT", 0, 15)
+totalxpframe:SetPoint("BOTTOMLEFT", xpperhourframe_wrapper, "BOTTOMLEFT", 0, 15)
 totalxpframe:SetFrameStrata("LOW")
 totalxpframe.text = totalxpframe:CreateFontString(nil, "ARTWORK")
 totalxpframe.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
@@ -196,7 +210,7 @@ totalxpframe:SetWidth(totalxpframe.text:GetStringWidth())
 totalxpframe:SetHeight(totalxpframe.text:GetStringHeight())
 
 local totalxpframevalue = CreateFrame("Frame", "TotalExperienceValue", kc)
-totalxpframevalue:SetPoint("BOTTOMRIGHT", xpperhourframe, "BOTTOMRIGHT", 0, 15)
+totalxpframevalue:SetPoint("BOTTOMRIGHT", xpperhourframe_wrapper, "BOTTOMRIGHT", 0, 15)
 totalxpframevalue:SetFrameStrata("LOW")
 totalxpframevalue.text = totalxpframevalue:CreateFontString(nil, "ARTWORK")
 totalxpframevalue.text:SetFont(xVermin.Config.font.arial, 12, "NONE")
@@ -337,17 +351,19 @@ local function DisplayData()
 
 	pullxpframevalue.text:SetText(xVermin:FormatNumber(xKillCount.experience.pulltotal))
 	totalxpframevalue.text:SetText(xVermin:FormatNumber(xKillCount.experience.totaltotal))
+	pullxpframevalue:SetSize(pullxpframevalue.text:GetStringWidth(), pullxpframevalue.text:GetStringHeight())
+	totalxpframevalue:SetSize(totalxpframevalue.text:GetStringWidth(), totalxpframevalue.text:GetStringHeight())
 
-	local w = math.max(kclistnames.text:GetStringWidth() + kclistpercentages.text:GetStringWidth() + 40, xpperhourframe.text:GetStringWidth())
+	local w = math.max(kclistnames.text:GetStringWidth() + kclistpercentages.text:GetStringWidth() + 40, xpperhourframe_wrapper:GetWidth())
 	local h = kctitle.text:GetStringHeight() + kctotal.text:GetStringHeight() + kclistnames.text:GetStringHeight() + 86 + xppadding
 	kc:SetSize(math.max(w, 270), math.max(h, 125))
-	wrapper:SetSize(kc:GetWidth(), kcreset.text:GetStringHeight())
+	resettimer_wrapper:SetSize(kc:GetWidth(), kcreset.text:GetStringHeight())
 
 	kclistnames:SetSize(kclistnames.text:GetStringWidth(), kclistnames.text:GetStringHeight())
 	kclistvalues:SetSize(kclistvalues.text:GetStringWidth(), kclistvalues.text:GetStringHeight())
 	kclistpercentages:SetSize(kclistpercentages.text:GetStringWidth(), kclistpercentages.text:GetStringHeight())
 
-	klwrapper:SetSize(kc:GetWidth(), kclistnames.text:GetStringHeight())
+	killlist_wrapper:SetSize(kc:GetWidth(), kclistnames.text:GetStringHeight())
 end
 
 local XPPERHOUR_MAXXP, XPPERHOUR_XP, XPPERHOUR_TIME
@@ -367,10 +383,14 @@ local function CalcXPPerHour()
 	local TimeElapsed = math.floor(Time / 60)
 	local UntilDing = XP > 0 and (XPPERHOUR_MAXXP - UnitXP("player")) / (60 * XP / Time) or 0
 
-	local output = string.format("|cffb76b45XP/hr|r: %sk  |cffffff00Ding:|r %smin  |cffffff00Time:|r %smin", floor(XpPerHour / 100) / 10, math.floor(UntilDing), TimeElapsed)
+	local output_left = string.format("|c" .. xVermin.Color.Classes.mage .. "XP/hr|r: %sk", floor(XpPerHour / 100) / 10)
+	local output_right = string.format("|c" .. xVermin.Color.yellow .. "Ding:|r %sm  |c" .. xVermin.Color.yellow .. "Time:|r %sm", math.floor(UntilDing), TimeElapsed)
 
-	xpperhourframe.text:SetText(output)
-	xpperhourframe:SetSize(kc:GetWidth() - 20, xpperhourframe.text:GetStringHeight())
+	xpperhourframe_left.text:SetText(output_left)
+	xpperhourframe_right.text:SetText(output_right)
+	xpperhourframe_wrapper:SetSize(kc:GetWidth() - 20, xpperhourframe_left.text:GetStringHeight())
+	xpperhourframe_left:SetSize(xpperhourframe_left.text:GetStringWidth(), xpperhourframe_left.text:GetStringHeight())
+	xpperhourframe_right:SetSize(xpperhourframe_right.text:GetStringWidth(), xpperhourframe_right.text:GetStringHeight())
 end
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -513,12 +533,14 @@ experience:SetScript(
 	"OnEvent",
 	function(self, event, isInitialLogin, isReloadingUi)
 		if UnitLevel("player") == MAX_PLAYER_LEVEL_TABLE[GetExpansionLevel()] then
+			-- xpperhourframe_left:Hide()
+			-- xpperhourframe_right:Hide()
+			-- xpperhourframe_wrapper:Hide()
 			xppadding = 0
 			pullxpframe:Hide()
 			pullxpframevalue:Hide()
 			totalxpframe:Hide()
 			totalxpframevalue:Hide()
-			xpperhourframe:Hide()
 		else
 			if event ~= "PLAYER_REGEN_ENABLED" then
 				CalculateTotalExperience(event, isInitialLogin, isReloadingUi)
@@ -605,7 +627,7 @@ kc:SetScript(
 --------------------------------
 -- Show/Hide percentages
 --------------------------------
-klwrapper:SetScript(
+killlist_wrapper:SetScript(
 	"OnEnter",
 	function()
 		kclistvalues:Hide()
@@ -613,7 +635,7 @@ klwrapper:SetScript(
 	end
 )
 
-klwrapper:SetScript(
+killlist_wrapper:SetScript(
 	"OnLeave",
 	function()
 		kclistvalues:Show()
