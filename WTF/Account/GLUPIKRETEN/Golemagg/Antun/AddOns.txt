@@ -1,3 +1,5 @@
 nPower: disabled
 nHealth: disabled
 Immersion: disabled
+AdiBags: disabled
+AdiBags_Config: disabled
