@@ -299,16 +299,16 @@ MonkeyQuestConfig = {
 			["Tabetha's Task - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Mage - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Shadowshard Fragments - false"] = {
+			["Return to the Marsh - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Waters of Xavian - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Return to the Marsh - false"] = {
+			["Shadowshard Fragments - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Mage - true"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -888,15 +888,15 @@ MonkeyQuestConfig = {
 		["m_bShowZoneHighlight"] = true,
 		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
 		["m_bAlwaysHeaders"] = false,
-		["m_bDisplay"] = true,
+		["m_bDisplay"] = false,
 		["m_bMinimized"] = false,
 		["m_strInitialObjectiveColour"] = "|cFFD82619",
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 1153.99987792969,
+		["m_iFrameBottom"] = 1110.36364746094,
 		["m_bHideTitleButtons"] = false,
-		["m_iFrameLeft"] = 2081.99975585938,
+		["m_iFrameLeft"] = 2004.42431640625,
 		["m_bColourDoneOrFailed"] = true,
 		["m_bLocked"] = true,
 		["m_bNoBorder"] = true,
@@ -913,7 +913,7 @@ MonkeyQuestConfig = {
 		["m_strMidObjectiveColour"] = "|cFFFFFF00",
 		["m_bCrashBorder"] = false,
 		["m_strHeaderOpenColour"] = "|cffbfbfff",
-		["m_iFrameTop"] = 1191.99987792969,
+		["m_iFrameTop"] = 1148.36364746094,
 		["m_bObjectives"] = true,
 		["m_bHideHeader"] = false,
 		["m_bShowNumQuests"] = true,
@@ -1004,19 +1004,19 @@ MonkeyQuestConfig = {
 		["m_bShowZoneHighlight"] = true,
 		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
 		["m_aQuestList"] = {
-			["Break a Few Eggs - false"] = {
+			["Durotar - true"] = {
 				["m_bChecked"] = true,
 			},
 			["From The Wreckage.... - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Durotar - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Vanquish the Betrayers - false"] = {
+			["Break a Few Eggs - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Encroachment - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Vanquish the Betrayers - false"] = {
 				["m_bChecked"] = true,
 			},
 		},

@@ -1,0 +1,1138 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.blizzard.com/wow/ui/ 
+    ..\..\FrameXML\UI.xsd">
+
+    <Font name="SortedSmallFont" inherits="SpellFont_Small" virtual="true">
+        <Shadow><Color a="1" r="0" g="0" b="0"/><Offset><AbsDimension x="1.5" y="-1.5" /></Offset></Shadow>
+    </Font>
+    <Font name="SortedButtonFont" inherits="SortedSmallFont" virtual="true">
+        <Color r="1" g="0.82" b="0" />
+    </Font>
+    <Font name="SortedButtonDisabledFont" inherits="SortedButtonFont" virtual="true">
+        <Color r="0.6" g="0.6" b="0.6" />
+    </Font>
+    <Font name="SortedCheckboxFont" inherits="SortedSmallFont" virtual="true">
+        <Color r="0.9" g="0.8" b="0.7" />
+    </Font>
+    <Font name="Sorted11Font" inherits="Game11Font" virtual="true">
+        <Shadow><Color a="1" r="0" g="0" b="0"/><Offset><AbsDimension x="2" y="-2" /></Offset></Shadow>
+    </Font>
+    <Font name="Sorted12Font" inherits="Game12Font" virtual="true">
+        <Shadow><Color a="1" r="0" g="0" b="0"/><Offset><AbsDimension x="2" y="-2" /></Offset></Shadow>
+    </Font>
+    <Font name="Sorted13Font" inherits="Game13Font" virtual="true">
+        <Shadow><Color a="1" r="0" g="0" b="0"/><Offset><AbsDimension x="2" y="-2" /></Offset></Shadow>
+    </Font>
+    <Font name="SortedTitleFont" inherits="Sorted13Font" virtual="true">
+        <Color r="1" g="0.82" b="0" />
+    </Font>
+    <Font name="SortedTabFont" inherits="Sorted12Font" virtual="true">
+        <Color r="1" g="0.82" b="0" />
+    </Font>
+    <Font name="SortedTabSelectedFont" inherits="Sorted12Font" virtual="true">
+        <Color r="1" g="1" b="1" />
+    </Font>
+
+    <Button name="SortedButtonTemplate" virtual="true">
+        <Size y="21" />
+        <NormalTexture file="Interface\Addons\Sorted\Textures\Buttons">
+            <TexCoords left="0" right="0.97" top="0" bottom="0.17"/>
+        </NormalTexture>
+        <HighlightTexture file="Interface\Addons\Sorted\Textures\Buttons" alphaMode="ADD">
+            <TexCoords left="0" right="0.97" top="0.1875" bottom="0.3575" />
+            <Color r="1" g="1" b="1" a="1" />
+        </HighlightTexture>
+        <PushedTexture file="Interface\Addons\Sorted\Textures\Buttons" alphaMode="ADD">
+            <TexCoords left="0" right="0.97" top="0.1875" bottom="0.3575" />
+            <Color r="1" g="1" b="1" a="0.4" />
+        </PushedTexture>
+        <Layers>
+            <Layer level="OVERLAY">
+                <Texture name="$parentSelectedTexture" parentKey="selectedTexture" file="Interface\Addons\Sorted\Textures\Buttons" hidden="true">
+                    <Anchors>
+                        <Anchor point="TOPLEFT"/><Anchor point="BOTTOMRIGHT"/>
+                    </Anchors>
+                    <TexCoords left="0" right="0.97" top="0.375" bottom="0.545" />
+                </Texture>
+            </Layer>
+            <Layer>
+                <FontString inherits="SortedButtonFont" justifyH="LEFT" parentKey="text" wordwrap="false">
+                    <Anchors>
+                        <Anchor point="LEFT" x="6"/>
+                        <Anchor point="RIGHT" x="-6"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+    </Button>
+
+    <Button name="SortedIconButtonTemplate" virtual="true">
+        <Size x="28" y="28"/>
+        <HighlightTexture file="Interface\Addons\Sorted\Textures\Buttons" alphaMode="ADD">
+            <TexCoords left="0" right="0.125" top="0.875" bottom="1" />
+        </HighlightTexture>
+        <Layers>
+            <Layer level="BACKGROUND">
+                <Texture name="$parentBackdrop" parentKey="bg" file="Interface\SPELLBOOK\SpellBook-SkillLineTab">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="-2" y="7"/><Anchor point="BOTTOMRIGHT" x="22" y="-14"/>
+                    </Anchors>
+                </Texture>
+            </Layer>
+            <Layer level="OVERLAY">
+                <Texture name="$parentSelectedTexture" parentKey="selectedTexture" file="Interface\Addons\Sorted\Textures\Buttons" hidden="true" alphaMode="ADD" alpha="0.8">
+                    <Anchors>
+                        <Anchor point="TOPLEFT"/><Anchor point="BOTTOMRIGHT"/>
+                    </Anchors>
+                    <TexCoords left="0.125" right="0.25" top="0.875" bottom="1" />
+                </Texture>
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnLoad>
+                function self:Select()
+                    self.selectedTexture:Show()
+                    if self:GetNormalTexture() then
+                        self:GetNormalTexture():SetPoint("TOPLEFT", -4, 4)
+                        self:GetNormalTexture():SetPoint("BOTTOMRIGHT", 4, -4)
+                    end
+                    self:GetHighlightTexture():SetPoint("TOPLEFT", -4, 4)
+                    self:GetHighlightTexture():SetPoint("BOTTOMRIGHT", 4, -4)
+                    self.selectedTexture:SetPoint("TOPLEFT", -4, 4)
+                    self.selectedTexture:SetPoint("BOTTOMRIGHT", 4, -4)
+                    self.bg:SetPoint("TOPLEFT", -5, 12)
+                    self.bg:SetPoint("BOTTOMRIGHT", 31, -20)
+                end
+
+                function self:Deselect()
+                    self.selectedTexture:Hide()
+                    if self:GetNormalTexture() then
+                        self:GetNormalTexture():SetPoint("TOPLEFT")
+                        self:GetNormalTexture():SetPoint("BOTTOMRIGHT")
+                    end
+                    self:GetHighlightTexture():SetPoint("TOPLEFT")
+                    self:GetHighlightTexture():SetPoint("BOTTOMRIGHT")
+                    self.selectedTexture:SetPoint("TOPLEFT")
+                    self.selectedTexture:SetPoint("BOTTOMRIGHT")
+                    self.bg:SetPoint("TOPLEFT", -2, 7)
+                    self.bg:SetPoint("BOTTOMRIGHT", 22, -14)
+                end
+            </OnLoad>
+            <OnEnter>
+                if self.tooltip then
+                    SortedTooltip.Schedule(function()
+                        GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+                        GameTooltip:ClearLines()
+                        GameTooltip:AddLine(self.tooltip)
+                        GameTooltip:Show()
+                    end)
+                end
+            </OnEnter>
+            <OnLeave>
+                SortedTooltip.Cancel()
+            </OnLeave>
+        </Scripts>
+    </Button>
+
+    <Button name="SortedPlusButtonTemplate" virtual="true">
+        <Size x="28" y="28"/>
+        <NormalTexture file="Interface\Addons\Sorted\Textures\UI-AddSlotButton-Up" />
+        <HighlightTexture file="Interface\Buttons\UI-Common-MouseHilight" alphaMode="ADD" />
+        <PushedTexture file="Interface\Addons\Sorted\Textures\UI-AddSlotButton-Down" />
+    </Button>
+
+    <Button name="SortedSmallPlusButtonTemplate" virtual="true">
+        <Size x="16" y="16"/>
+        <NormalTexture file="Interface\Buttons\UI-PlusButton-Up" />
+        <HighlightTexture file="Interface\Buttons\UI-PlusButton-Hilight" alphaMode="ADD" />
+        <PushedTexture file="Interface\Buttons\UI-PlusButton-Down" />
+        <DisabledTexture file="Interface\Buttons\UI-PlusButton-Disabled" />
+    </Button>
+
+    <Button name="SortedSmallMinusButtonTemplate" virtual="true">
+        <Size x="16" y="16"/>
+        <NormalTexture file="Interface\Buttons\UI-MinusButton-Up" />
+        <HighlightTexture file="Interface\Buttons\UI-PlusButton-Hilight" alphaMode="ADD" />
+        <PushedTexture file="Interface\Buttons\UI-MinusButton-Down" />
+        <DisabledTexture file="Interface\Buttons\UI-MinusButton-Disabled" />
+    </Button>
+
+    <Button name="SortedDeleteButtonTemplate" virtual="true">
+        <Size x="24" y="24"/>
+        <NormalTexture file="Interface\Buttons\UI-Panel-MinimizeButton-Disabled" />
+        <HighlightTexture file="Interface\Buttons\UI-Common-MouseHilight" alphaMode="ADD" />
+        <PushedTexture file="Interface\Buttons\UI-Panel-MinimizeButton-Down" />
+        <Scripts>
+            <OnLoad>
+                if not self:GetParent().deleteButtons then
+                    self:GetParent().deleteButtons = {self}
+                    self:GetParent():HookScript("OnEnter", function(self)
+                        for _, button in pairs(self.deleteButtons) do
+                            button:SetNormalTexture("Interface\\Buttons\\UI-Panel-MinimizeButton-Up") 
+                        end
+                    end)
+                    self:GetParent():HookScript("OnLeave", function(self)
+                        for _, button in pairs(self.deleteButtons) do
+                            button:SetNormalTexture("Interface\\Buttons\\UI-Panel-MinimizeButton-Disabled") 
+                        end
+                    end)
+                else
+                    table.insert(self:GetParent().deleteButtons, self)
+                end
+            </OnLoad>
+        </Scripts>
+    </Button>
+
+    <Frame name="SortedSidePanelTemplate" virtual="true">
+        <Layers>
+            <!--Layer level="BACKGROUND">
+                <Texture name="$parentBackground" file="Interface\FrameGeneral\UI-Background-Rock" tile="true">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="4" y="-4" />
+                        <Anchor point="BOTTOMRIGHT" x="-4" y="4" />
+                    </Anchors>
+                </Texture>
+            </Layer-->
+            <Layer level="BORDER">
+                <Texture name="$parentBorderTopLeft" file="Interface\FrameGeneral\UI-Frame">
+                    <TexCoords left="0.625" right="0.75" top="0.25" bottom="0.375" />
+                    <Size x="16" y="16"/>
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="-4" y="4"/>
+                    </Anchors>
+                </Texture>
+                <Texture name="$parentBorderTop" file="Interface\FrameGeneral\UI-Frame">
+                    <TexCoords left="0.75" right="0.8" top="0.25" bottom="0.375" />
+                    <Size y="16"/>
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="12" y="4"/>
+                        <Anchor point="RIGHT" />
+                    </Anchors>
+                </Texture>
+                <Texture name="$parentBorderLeft" file="Interface\FrameGeneral\UI-Frame">
+                    <TexCoords left="0.625" right="0.75" top="0.375" bottom="0.4" />
+                    <Size x="16"/>
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="-4" y="-12"/>
+                        <Anchor point="BOTTOM" y="12" />
+                    </Anchors>
+                </Texture>
+                <Texture name="$parentBorderBottomLeft" file="Interface\FrameGeneral\UI-Frame">
+                    <TexCoords left="0" right="0.125" top="0.625" bottom="0.75" />
+                    <Size x="16" y="16" />
+                    <Anchors>
+                        <Anchor point="BOTTOMLEFT" x="-4" y="-4"/>
+                    </Anchors>
+                </Texture>
+                <Texture name="$parentBorderBottom" file="Interface\FrameGeneral\UI-Frame">
+                    <TexCoords left="0.12" right="0.125" top="0.625" bottom="0.75" />
+                    <Size y="16" />
+                    <Anchors>
+                        <Anchor point="BOTTOMLEFT" x="12" y="-4"/>
+                        <Anchor point="RIGHT" />
+                    </Anchors>
+                </Texture>
+            </Layer>
+        </Layers>
+        <Frames>
+            <Frame name="$parentShadowFrame" frameLevel="5">
+                <Size y="4" />
+                <Anchors>
+                    <Anchor point="BOTTOMLEFT" x="4" y="4" />
+                    <Anchor point="RIGHT" x="-4"/>
+                </Anchors>
+                <Layers>
+                    <Layer>
+                        <Texture name="$parentBackgroundShadow" file="Interface\Addons\Sorted\Textures\UI-Shadow">
+                            <Anchors><Anchor point="TOPLEFT"/><Anchor point="BOTTOMRIGHT"/></Anchors>
+                            <TexCoords left="0.3" right="0.35" top="0.51" bottom="0.8" />
+                        </Texture>
+                    </Layer>
+                </Layers>
+            </Frame>
+        </Frames>
+    </Frame>
+
+    <Button name="SortedDropdownButtonTemplate" virtual="true">
+        <NormalTexture file="Interface\Addons\Sorted\Textures\UI-Highlight" alphaMode="ADD" alpha="0.1">
+            <TexCoords left="0.2" right="0.8"/>
+        </NormalTexture>
+        <HighlightTexture file="Interface\Addons\Sorted\Textures\UI-Highlight" alphaMode="ADD" alpha="1">
+            <TexCoords left="0.2" right="0.8"/>
+        </HighlightTexture>
+        <PushedTexture file="Interface\Addons\Sorted\Textures\UI-Highlight" alphaMode="ADD" alpha="0.6">
+            <TexCoords left="0.2" right="0.8"/>
+        </PushedTexture>
+        <NormalFont style="Sorted12Font"/>
+    </Button>
+
+    <CheckButton name="SortedCheckButtonTemplate" frameLevel="576" inherits="UICheckButtonTemplate" virtual="true">
+        <Size x="24" y="26" />
+        <Frames>
+            <Button name="$parentClickable" parentKey="clickable">
+                <Size y="22" />
+                <Anchors>
+                    <Anchor point="LEFT" y="0.5" />
+                </Anchors>
+                <Scripts>
+                    <OnLoad>
+                        self:RegisterForClicks("LeftButtonDown")
+                        self:GetParent():GetPushedTexture():SetAlpha(0.5)
+                    </OnLoad>
+                    <OnClick>
+                        if self:GetParent():GetChecked() then
+                            PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_OFF)
+                        else
+                            PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON)
+                        end
+                        self:GetParent():Click()
+                    </OnClick>
+                    <OnEnter>
+                        self:GetParent().hilight:Show()
+                        self:GetParent():SetButtonState("PUSHED")
+                    </OnEnter>
+                    <OnLeave>
+                        self:GetParent().hilight:Hide()
+                        self:GetParent():SetButtonState("NORMAL")
+                    </OnLeave>
+                    <OnMouseDown>
+                        self:GetParent().pushed:Show()
+                    </OnMouseDown>
+                    <OnMouseUp>
+                        self:GetParent().pushed:Hide()
+                    </OnMouseUp>
+                </Scripts>
+            </Button>       
+        </Frames>
+        <Layers>
+            <Layer level="BACKGROUND" textureSubLevel ="0">
+                <FontString name="$parentText" parentKey="text" inherits="SortedCheckboxFont" justifyH="LEFT" justifyV="MIDDLE">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativePoint="TOPRIGHT" y="2"/>
+                        <Anchor point="BOTTOM" y="0"/>
+                        <Anchor point="RIGHT" relativeTo="$parentClickable" x="-2"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+            <Layer level="BACKGROUND" textureSubLevel ="1">
+                <Texture name="$parentHighlightTexture" parentKey="hilight" file="Interface\WorldMap\UI-QuestPoi-HighlightBar" alphaMode="ADD" alpha="1" hidden="true">
+                    <Anchors><Anchor point="TOPLEFT" relativeTo="$parentClickable"/><Anchor point="BOTTOMRIGHT" relativeTo="$parentClickable"/></Anchors>
+                </Texture>
+                <Texture name="$parentPushedTexture" parentKey="pushed" file="Interface\WorldMap\UI-QuestPoi-HighlightBar" alphaMode="ADD" alpha="0.5" hidden="true">
+                    <Anchors><Anchor point="TOPLEFT" relativeTo="$parentClickable"/><Anchor point="BOTTOMRIGHT" relativeTo="$parentClickable"/></Anchors>
+                </Texture>
+            </Layer>
+        </Layers>
+    </CheckButton>
+
+    <Frame name="SortedTitleBarDiv" virtual="true">
+        <Size x="14" y="22"/>
+        <Layers>
+            <Layer>
+                <Texture name="$parentTexture" parentKey="texture"/>
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnLoad>
+                if Sorted_IsClassic() then
+                    self.texture:SetTexture("Interface\\FrameGeneral\\UI-Frame")
+                    self.texture:SetTexCoord(0.6484375, 0.7578125, 0.015625, 0.1885)
+                else
+                    self.texture:SetTexture("Interface\\FrameGeneral\\UIFrameMetal2x")
+                    self.texture:SetTexCoord(0.191407, 0.21875, 0.2911, 0.335)
+                end
+                self.texture:SetAllPoints()
+            </OnLoad>
+        </Scripts>
+    </Frame>
+
+    <!--CheckButton name="SortedCheckButtonTemplate" inherits="UICheckButtonTemplate" virtual="true">
+        <Size x="24" y="26" />
+    </CheckButton-->
+
+    <!--FontString name="SortedCheckButtonTextTemplate" inherits="SortedCheckboxFont" justifyH="LEFT" justifyV="MIDDLE" virtual="true">
+        <Anchors><Anchor point="TOPLEFT" relativePoint="TOPRIGHT" x="-2" y="1" /><Anchor point="BOTTOM" y="1"/></Anchors>
+    </FontString-->
+
+	<Button name="SortedTabButtonTemplate" virtual="true">
+		<Size>
+            <AbsDimension x="115" y="32"/>
+        </Size>
+        <Layers>
+        	<Layer level="BACKGROUND">
+        		<Texture name="$parentLeftDisabled" parentKey="LeftDisabled" file="Interface\Addons\Sorted\Textures\Config-Tab-Active">
+        			<Size>
+        				<AbsDimension x="16" y="32"/>
+        			</Size>
+        			<Anchors>
+        				<Anchor point="BOTTOMLEFT">
+        					<Offset>
+        						<AbsDimension x="0" y="-3"/>
+        					</Offset>
+        				</Anchor>
+        			</Anchors>
+					<TexCoords left="0" right="0.25" top="0" bottom="1.0"/>
+        		</Texture>
+				<Texture name="$parentMiddleDisabled" parentKey="MiddleDisabled" file="Interface\Addons\Sorted\Textures\Config-Tab-Active">
+        			<Size>
+        				<AbsDimension x="32" y="32"/>
+        			</Size>
+        			<Anchors>
+        				<Anchor point="LEFT" relativeKey="$parent.LeftDisabled" relativePoint="RIGHT"/>
+        			</Anchors>
+					<TexCoords left="0.25" right="0.75" top="0" bottom="1.0"/>
+        		</Texture>
+				<Texture name="$parentRightDisabled" parentKey="RightDisabled" file="Interface\Addons\Sorted\Textures\Config-Tab-Active">
+        			<Size>
+        				<AbsDimension x="16" y="32"/>
+        			</Size>
+        			<Anchors>
+        				<Anchor point="LEFT" relativeKey="$parent.MiddleDisabled" relativePoint="RIGHT"/>
+        			</Anchors>
+					<TexCoords left="0.75" right="1.0" top="0" bottom="1.0"/>
+        		</Texture>
+				<Texture name="$parentLeft" parentKey="Left" file="Interface\Addons\Sorted\Textures\Config-Tab-Inactive">
+        			<Size>
+        				<AbsDimension x="16" y="32"/>
+        			</Size>
+        			<Anchors>
+        				<Anchor point="BOTTOMLEFT"/>
+        			</Anchors>
+					<TexCoords left="0" right="0.25" top="0" bottom="1.0"/>
+        		</Texture>
+				<Texture name="$parentMiddle" parentKey="Middle" file="Interface\Addons\Sorted\Textures\Config-Tab-Inactive">
+        			<Size>
+        				<AbsDimension x="32" y="32"/>
+        			</Size>
+        			<Anchors>
+        				<Anchor point="LEFT" relativeKey="$parent.Left" relativePoint="RIGHT"/>
+        			</Anchors>
+					<TexCoords left="0.25" right="0.75" top="0" bottom="1.0"/>
+        		</Texture>
+				<Texture name="$parentRight" parentKey="Right" file="Interface\Addons\Sorted\Textures\Config-Tab-Inactive">
+        			<Size>
+        				<AbsDimension x="16" y="32"/>
+        			</Size>
+        			<Anchors>
+        				<Anchor point="LEFT" relativeKey="$parent.Middle" relativePoint="RIGHT"/>
+        			</Anchors>
+					<TexCoords left="0.75" right="1.0" top="0" bottom="1.0"/>
+        		</Texture>
+        	</Layer>
+        </Layers>
+		<Scripts>
+			<OnLoad>
+				PanelTemplates_TabResize(self, 0, nil, self.minWidth);
+			</OnLoad>
+		</Scripts>
+		<ButtonText name="$parentText" parentKey="Text">
+			<Size>
+				<AbsDimension x="0" y="13"/>
+			</Size>
+			<Anchors>
+				<Anchor point="BOTTOM">
+					<Offset>
+						<AbsDimension x="0" y="5"/>
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</ButtonText>
+		<NormalFont style="SortedButtonFont"/>
+		<HighlightFont style="SortedButtonFont"/>
+		<DisabledFont style="SortedButtonFont"/>
+		<HighlightTexture name="$parentHighlightTexture" parentKey="HighlightTexture" file="Interface\PaperDollInfoFrame\UI-Character-Tab-Highlight" alphaMode="ADD">
+			<Size>
+				<AbsDimension x="5" y="32"/>
+			</Size>
+			<Anchors>
+				<Anchor point="BOTTOM">
+					<Offset>
+						<AbsDimension x="2" y="-8"/>
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</HighlightTexture>
+    </Button>
+
+    <Frame name="SortedShadowedFrame" virtual="true">
+        <Layers>
+            <Layer level="BACKGROUND" textureSubLevel="1">
+                <Texture name="$parentTexBG" parentKey="bg" file="Interface\Addons\Sorted\Textures\UI-Background" horizTile="true" vertTile="true">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" />
+                        <Anchor point="BOTTOMRIGHT" />
+                    </Anchors>
+                </Texture>
+            </Layer>
+            <Layer level="BACKGROUND" textureSubLevel="2">
+                <Texture name="$parentTexBGGlow" parentKey="glow" file="Interface\Addons\Sorted\Textures\UI-Background-Glow" alphaMode="ADD" alpha="1">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" />
+                        <Anchor point="BOTTOMRIGHT" />
+                    </Anchors>
+                </Texture>
+            </Layer>
+            <Layer level="BORDER">
+                <Texture name="$parentShadowTopLeft" parentKey="shadow1" file="Interface\Addons\Sorted\Textures\UI-Shadow" alpha="0.5">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" />
+                        <Anchor point="BOTTOMRIGHT" relativePoint="TOPLEFT" x="128" y="-128" />
+                    </Anchors>
+                    <TexCoords left="0.5" right="0.749" top="0" bottom="0.495" />
+                </Texture>
+                <Texture name="$parentShadowTop" parentKey="shadow2" file="Interface\Addons\Sorted\Textures\UI-Shadow" alpha="0.5">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="128" />
+                        <Anchor point="BOTTOMRIGHT" relativePoint="TOPRIGHT" x="-128" y="-128" />
+                    </Anchors>
+                    <TexCoords left="0" right="0.1" top="0" bottom="0.495" />
+                </Texture>
+                <Texture name="$parentShadowTopRight" parentKey="shadow3" file="Interface\Addons\Sorted\Textures\UI-Shadow" alpha="0.5">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativePoint="TOPRIGHT" x="-128" />
+                        <Anchor point="BOTTOMRIGHT" relativePoint="TOPRIGHT" x="-0" y="-128" />
+                    </Anchors>
+                    <TexCoords left="0.755" right="1" top="0" bottom="0.495" />
+                </Texture>
+                <Texture name="$parentShadowRight" parentKey="shadow4" file="Interface\Addons\Sorted\Textures\UI-Shadow" alpha="0.5">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativePoint="TOPRIGHT" x="-128" y="-128" />
+                        <Anchor point="BOTTOMRIGHT" x="0" y="128" />
+                    </Anchors>
+                    <TexCoords left="0.255" right="0.5" top="0" bottom="0.3" />
+                </Texture>
+                <Texture name="$parentShadowBottomRight" parentKey="shadow5" file="Interface\Addons\Sorted\Textures\UI-Shadow" alpha="0.5">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativePoint="BOTTOMRIGHT" x="-128" y="128" />
+                        <Anchor point="BOTTOMRIGHT" x="0" />
+                    </Anchors>
+                    <TexCoords left="0.755" right="1" top="0.55" bottom="1" />
+                </Texture>
+                <Texture name="$parentShadowBottom" parentKey="shadow6" file="Interface\Addons\Sorted\Textures\UI-Shadow" alpha="0.5">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" x="128" y="128" />
+                        <Anchor point="BOTTOMRIGHT" x="-128" />
+                    </Anchors>
+                    <TexCoords left="0.3" right="0.4" top="0.55" bottom="1" />
+                </Texture>
+                <Texture name="$parentShadowBottomLeft" parentKey="shadow7" file="Interface\Addons\Sorted\Textures\UI-Shadow" alpha="0.5">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativePoint="BOTTOMLEFT" x="0" y="128" />
+                        <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMLEFT" x="128" />
+                    </Anchors>
+                    <TexCoords left="0.5" right="0.745" top="0.55" bottom="1" />
+                </Texture>
+                <Texture name="$parentShadowLeft" parentKey="shadow8" file="Interface\Addons\Sorted\Textures\UI-Shadow" alpha="0.5">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativePoint="TOPLEFT" x="0" y="-128" />
+                        <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMLEFT" x="128" y="128" />
+                    </Anchors>
+                    <TexCoords left="0" right="0.245" top="0.7" bottom="0.8" />
+                </Texture>
+            </Layer>
+        </Layers>
+    </Frame>
+
+    <Frame name="OutsetFrameTemplate" virtual="true">
+        <Layers>
+            <Layer level="BACKGROUND">
+                <Texture name="$parentBackground" file="Interface\FrameGeneral\UI-Background-Rock"  horizTile="true" vertTile="true">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" />
+                        <Anchor point="BOTTOMRIGHT" y="-1" />
+                    </Anchors>
+                </Texture>
+            </Layer>
+            <Layer level="BORDER">
+                <Texture name="$parent_OutsetTexTL" file="Interface\FrameGeneral\UI-Frame">
+                    <Size x="6" y="6" />
+                    <Anchors>
+                        <Anchor point="TOPLEFT" />
+                    </Anchors>
+                    <TexCoords left="0.953125" right="1" top="0.015625‬‬" bottom="0.0625‬‬‬" />
+                </Texture>
+                <Texture name="$parent_OutsetTextL" file="Interface\FrameGeneral\UI-Frame">
+                    <Size x="6" />
+                    <Anchors>
+                        <Anchor point="TOPLEFT" y="-6" />
+                        <Anchor point="BOTTOM" y="5" />
+                    </Anchors>
+                    <TexCoords left="0.953125" right="1" top="0.0625‬‬" bottom="0.1484375‬‬‬" />
+                </Texture>
+                <Texture name="$parent_OutsetTexBL" file="Interface\FrameGeneral\UI-Frame">
+                    <Size x="6" y="6" />
+                    <Anchors>
+                        <Anchor point="BOTTOMLEFT" y="-1" />
+                    </Anchors>
+                    <TexCoords left="0.953125" right="1" top="0.1484375‬‬‬" bottom="0.1953125‬" />
+                </Texture>
+                <Texture name="$parent_OutsetTexTR" file="Interface\FrameGeneral\UI-Frame">
+                    <Size x="6" y="6" />
+                    <Anchors>
+                        <Anchor point="TOPRIGHT" />
+                    </Anchors>
+                    <TexCoords left="1" right="0.953125" top="0.015625‬‬" bottom="0.0625‬‬‬" />
+                </Texture>
+                <Texture name="$parent_OutsetTextR" file="Interface\FrameGeneral\UI-Frame">
+                    <Size x="6" />
+                    <Anchors>
+                        <Anchor point="TOPRIGHT" y="-6" />
+                        <Anchor point="BOTTOM" y="5" />
+                    </Anchors>
+                    <TexCoords left="1" right="0.953125" top="0.0625‬‬" bottom="0.1484375‬‬‬" />
+                </Texture>
+                <Texture name="$parent_OutsetTexBR" file="Interface\FrameGeneral\UI-Frame">
+                    <Size x="6" y="6" />
+                    <Anchors>
+                        <Anchor point="BOTTOMRIGHT" y="-1" />
+                    </Anchors>
+                    <TexCoords left="1" right="0.953125" top="0.1484375‬‬‬" bottom="0.1953125‬" />
+                </Texture>
+            </Layer>
+        </Layers>
+    </Frame>
+
+    <Button name="SortedColumnHeaderTemplate" virtual="true">
+        <Scripts>
+            <OnLoad>
+                if Sorted_IsClassic() then
+                    self:SetPoint("TOP", 0, -3)
+                    self:SetPoint("BOTTOM", 0, -1)
+                else
+                    self:SetPoint("TOP", 0, -2)
+                    self:SetPoint("BOTTOM")
+                end
+            </OnLoad>
+        </Scripts>
+        <HighlightTexture file="Interface\WorldMap\UI-QuestPoi-HighlightBar" alphaMode="ADD"/>
+        <PushedTexture file="Interface\WorldMap\UI-QuestPoi-HighlightBar" alphaMode="ADD"/>
+        <Layers>
+            <Layer level="BACKGROUND">
+                <Texture name="$parent-TexL" file="Interface\Addons\Sorted\Textures\UI-Tab">
+                    <Size x="6"/>
+                    <Anchors>
+                        <Anchor point="TOPLEFT" />
+                        <Anchor point="BOTTOM" />
+                    </Anchors>
+                    <TexCoords left="0.01" right="0.2‬" top="0" bottom="1" />
+                </Texture>
+                <Texture name="$parent-TexC" file="Interface\Addons\Sorted\Textures\UI-Tab">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="6" />
+                        <Anchor point="BOTTOMRIGHT" x="-6" />
+                    </Anchors>
+                    <TexCoords left="0.2" right="0.8" top="0" bottom="1" />
+                </Texture>
+                <Texture name="$parent-TexR" file="Interface\Addons\Sorted\Textures\UI-Tab">
+                    <Size x="6"/>
+                    <Anchors>
+                        <Anchor point="TOP" />
+                        <Anchor point="BOTTOMRIGHT" />
+                    </Anchors>
+                    <TexCoords left="0.8" right="0.99" top="0" bottom="1" />
+                </Texture>
+            </Layer>
+            <Layer>
+                <FontString name="$parentText" parentKey="text" inherits="SortedTabTextTemplate" justifyH="CENTER">
+                    <Anchors>
+                        <Anchor point="BOTTOM" y="4"/>
+                    </Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+    </Button>
+
+    <Button name="SortedSideTabButtonTemplate" frameLevel="1" virtual="true">
+        <Layers>
+            <Layer level="BACKGROUND">
+				<Texture name="$parentLeftBG" parentKey="bgLeft" file="Interface\Addons\Sorted\Textures\SideTab-Backdrop">
+        			<Size>
+        				<AbsDimension y="20"/>
+        			</Size>
+        			<Anchors>
+        				<Anchor point="BOTTOMLEFT" />
+        				<Anchor point="RIGHT" />
+        			</Anchors>
+					<TexCoords left="0.0" right="1.0" top="0.84375" bottom="1.0"/>
+        		</Texture>
+				<Texture name="$parentRightBG" parentKey="bgRight" file="Interface\Addons\Sorted\Textures\SideTab-Backdrop">
+        			<Size>
+        				<AbsDimension y="20"/>
+        			</Size>
+        			<Anchors>
+        				<Anchor point="TOPLEFT"/>
+        				<Anchor point="RIGHT"/>
+        			</Anchors>
+					<TexCoords left="0.0" right="1.0" top="0.0" bottom="0.15625"/>
+        		</Texture>
+				<Texture name="$parentMiddleBG" parentKey="bgMiddle" file="Interface\Addons\Sorted\Textures\SideTab-Backdrop">
+        			<Size>
+        				<AbsDimension y="20"/>
+        			</Size>
+        			<Anchors>
+        				<Anchor point="TOPLEFT" relativeTo="$parentRightBG" relativePoint="BOTTOMLEFT"/>
+        				<Anchor point="BOTTOMRIGHT" relativeTo="$parentLeftBG" relativePoint="TOPRIGHT"/>
+        			</Anchors>
+					<TexCoords left="0.0" right="1.0" top="0.15625" bottom="0.84375"/>
+        		</Texture>
+            </Layer>
+        	<Layer level="ARTWORK">
+        		<Texture name="$parentLeftDisabled" file="Interface\Addons\Sorted\Textures\SideTab-Active">
+        			<Size>
+        				<AbsDimension y="20"/>
+        			</Size>
+        			<Anchors>
+        				<Anchor point="BOTTOMLEFT" />
+        				<Anchor point="RIGHT" />
+        			</Anchors>
+					<TexCoords left="0.453125‬" right="1" top="0.15625" bottom="0.0" />
+        		</Texture>
+				<Texture name="$parentRightDisabled" file="Interface\Addons\Sorted\Textures\SideTab-Active">
+        			<Size>
+        				<AbsDimension y="20"/>
+        			</Size>
+        			<Anchors>
+        				<Anchor point="TOPLEFT"/>
+        				<Anchor point="RIGHT"/>
+        			</Anchors>
+					<TexCoords left="0.453125‬" right="1.0" top="1.0" bottom="0.84375"/>
+        		</Texture>
+				<Texture name="$parentMiddleDisabled" file="Interface\Addons\Sorted\Textures\SideTab-Active">
+        			<Anchors>
+        				<Anchor point="TOPLEFT" relativeTo="$parentRightDisabled" relativePoint="BOTTOMLEFT"/>
+        				<Anchor point="BOTTOMRIGHT" relativeTo="$parentLeftDisabled" relativePoint="TOPRIGHT"/>
+        			</Anchors>
+					<TexCoords left="0.453125‬" right="1" top="0.15625" bottom="0.84375"/>
+        		</Texture>
+				<Texture name="$parentLeft" file="Interface\Addons\Sorted\Textures\SideTab-Inactive">
+        			<Size>
+        				<AbsDimension y="20"/>
+        			</Size>
+        			<Anchors>
+        				<Anchor point="BOTTOMLEFT" />
+        				<Anchor point="RIGHT" />
+        			</Anchors>
+					<TexCoords left="0.0" right="1.0" top="0.84375" bottom="1.0"/>
+        		</Texture>
+				<Texture name="$parentRight" file="Interface\Addons\Sorted\Textures\SideTab-Inactive">
+        			<Size>
+        				<AbsDimension y="20"/>
+        			</Size>
+        			<Anchors>
+        				<Anchor point="TOPLEFT"/>
+        				<Anchor point="RIGHT"/>
+        			</Anchors>
+					<TexCoords left="0.0" right="1.0" top="0.0" bottom="0.15625"/>
+        		</Texture>
+				<Texture name="$parentMiddle" file="Interface\Addons\Sorted\Textures\SideTab-Inactive">
+        			<Size>
+        				<AbsDimension y="20"/>
+        			</Size>
+        			<Anchors>
+        				<Anchor point="TOPLEFT" relativeTo="$parentRight" relativePoint="BOTTOMLEFT"/>
+        				<Anchor point="BOTTOMRIGHT" relativeTo="$parentLeft" relativePoint="TOPRIGHT"/>
+        			</Anchors>
+					<TexCoords left="0.0" right="1.0" top="0.15625" bottom="0.84375"/>
+        		</Texture>
+        	</Layer>
+        </Layers>
+        <ButtonText name="$parentText" justifyH="CENTER" justifyV="MIDDLE">
+			<Size>
+				<AbsDimension x="0" y="0"/>
+			</Size>
+			<Anchors>
+				<Anchor point="CENTER">
+					<Offset>
+						<AbsDimension x="-2" y="-4"/>
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</ButtonText>
+        <Frames>
+            <Frame name="$parentTextFrame" parentKey="textFrame">
+                <Anchors>
+                    <Anchor point="TOPLEFT"/>
+                    <Anchor point="BOTTOMRIGHT"/>
+                </Anchors>
+            </Frame>
+        </Frames>
+		<NormalFont style="SortedTabFont"/>
+		<HighlightFont style="SortedTabFont"/>
+		<DisabledFont style="SortedTabFont"/>
+        <Scripts>
+            <OnLoad>
+                _G[self:GetName().."LeftDisabled"]:Hide()
+                _G[self:GetName().."RightDisabled"]:Hide()
+                _G[self:GetName().."MiddleDisabled"]:Hide()
+                self.buttonText = self:GetFontString()
+                self.buttonText:SetParent(self.textFrame)
+                self.buttonText:SetText(Sorted.Localize(self.buttonText:GetText()))
+                local ag = self.textFrame:CreateAnimationGroup()
+                local a = ag:CreateAnimation("Rotation", nil)
+                a:SetDuration(0)
+                a:SetDegrees(90)
+                ag:SetLooping("REPEAT")
+                ag:Play()
+            </OnLoad>
+            <OnEnter>
+                self.buttonText:SetFontObject("SortedTabSelectedFont")
+            </OnEnter>
+            <OnLeave>
+                if not self.selected then
+                    self.buttonText:SetFontObject("SortedTabFont")
+                end
+            </OnLeave>
+            <OnMouseDown>
+                if self.selected then
+                    self.buttonText:SetPoint("CENTER", -4, -5)
+                else
+                    self.buttonText:SetPoint("CENTER", -1, -5)
+                end
+            </OnMouseDown>
+            <OnMouseUp>
+                if self.selected then
+                    self.buttonText:SetPoint("CENTER", -5, -4)
+                else
+                    self.buttonText:SetPoint("CENTER", -2, -4)
+                end
+            </OnMouseUp>
+        </Scripts>
+		<HighlightTexture name="$parentHighlightTexture" file="Interface\Addons\Sorted\Textures\UI-Tab-RealHighlight-Rotated" alphaMode="ADD">
+			<Anchors>
+				<Anchor point="TOPLEFT">
+					<Offset>
+						<AbsDimension x="0" y="-3"/>
+					</Offset>
+				</Anchor>
+				<Anchor point="BOTTOMRIGHT">
+					<Offset>
+						<AbsDimension x="5" y="3"/>
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</HighlightTexture>
+		<PushedTexture name="$parentHighlightTexture" file="Interface\Addons\Sorted\Textures\UI-Tab-RealHighlight-Rotated" alphaMode="ADD">
+			<Anchors>
+				<Anchor point="TOPLEFT">
+					<Offset>
+						<AbsDimension x="0" y="-3"/>
+					</Offset>
+				</Anchor>
+				<Anchor point="BOTTOMRIGHT">
+					<Offset>
+						<AbsDimension x="5" y="3"/>
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</PushedTexture>
+    </Button>
+    
+    <FontString name="SortedTabTextTemplate" inherits="Sorted12Font" justifyH="LEFT" justifyV="MIDDLE" virtual="true">
+        <Color r="0.9" g="0.84" b="0.78" />
+    </FontString>
+    
+    <ScrollFrame name="SortedItemListTemplate" inherits="SortedShadowedFrame" virtual="true">
+        <Scripts>
+            <OnLoad>
+                SortedItemList_OnLoad(self)
+            </OnLoad>
+        </Scripts>
+        <Layers>
+            <Layer level="OVERLAY">
+                <FontString name="$parentWarningString" parentKey="warningString" inherits="Sorted13Font" justifyH="CENTER" justifyV="MIDDLE" text="" wrap="true">
+                    <Anchors><Anchor point="TOPLEFT"/><Anchor point="BOTTOMRIGHT" x="-22"/></Anchors>
+                </FontString>
+            </Layer>
+        </Layers>
+    </ScrollFrame>
+
+
+    <Button name="SortedBagSlotsTemplate" inherits="InsetFrameTemplate" enableMouse="true" virtual="true">
+        <Size x="80" />
+        <Anchors>
+            <Anchor point="TOP" />
+            <Anchor point="BOTTOMLEFT" x="1" y="3" />
+        </Anchors>
+        <Layers>
+            <Layer>
+                <FontString name="$parentSlash" inherits="Sorted12Font" justifyH="CENTER" justifyV="MIDDLE" text="/">
+                    <Anchors><Anchor point="CENTER" x="2" /></Anchors>
+                    <Color r="0.82" g="0.79" b="0.75" />
+                </FontString>
+                <FontString name="$parentTotalText" inherits="Sorted12Font" text="" justifyV="MIDDLE">
+                    <Anchors><Anchor point="LEFT" relativeTo="$parentSlash" relativePoint="RIGHT" x="-2" y="-1" /></Anchors>
+                    <Color r="0.82" g="0.79" b="0.75" />
+                </FontString>
+                <FontString name="$parentText" inherits="Sorted13Font" text="" justifyV="MIDDLE">
+                    <Anchors><Anchor point="RIGHT" relativeTo="$parentSlash" relativePoint="LEFT" x="0" y="0" /></Anchors>
+                </FontString>
+            </Layer>
+            <Layer>
+                <Texture name="$parentHighlightLeft" file="Interface\Buttons\ButtonHilight-Square" alphaMode="ADD" hidden="true" parentKey="highlightLeft">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="2" y="-2"/>
+                        <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMLEFT" x="10" y="2"/>
+                    </Anchors>
+                    <TexCoords left="0" right="0.25" top="0" bottom="1"/>
+                </Texture>
+                <Texture name="$parentHighlightRight" file="Interface\Buttons\ButtonHilight-Square" alphaMode="ADD" hidden="true" parentKey="highlightRight">
+                    <Anchors>
+                        <Anchor point="TOPRIGHT" x="-2" y="-2"/>
+                        <Anchor point="BOTTOMLEFT" relativePoint="BOTTOMRIGHT" x="-10" y="2"/>
+                    </Anchors>
+                    <TexCoords left="0.75" right="1" top="0" bottom="1"/>
+                </Texture>
+                <Texture name="$parentHighlightMiddle" file="Interface\Buttons\ButtonHilight-Square" alphaMode="ADD" hidden="true" parentKey="highlightMiddle">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativeTo="$parentHighlightLeft" relativePoint="TOPRIGHT"/>
+                        <Anchor point="BOTTOMRIGHT" relativeTo="$parentHighlightRight" relativePoint="BOTTOMLEFT"/>
+                    </Anchors>
+                    <TexCoords left="0.25" right="0.75" top="0" bottom="1"/>
+                </Texture>
+                <Texture name="$parentPushedLeft" file="Interface\Buttons\ButtonHilight-Square" alphaMode="ADD" hidden="true" parentKey="pushedLeft">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" x="2" y="-2"/>
+                        <Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMLEFT" x="10" y="2"/>
+                    </Anchors>
+                    <TexCoords left="0" right="0.25" top="0" bottom="1"/>
+                </Texture>
+                <Texture name="$parentPushedRight" file="Interface\Buttons\ButtonHilight-Square" alphaMode="ADD" hidden="true" parentKey="pushedRight">
+                    <Anchors>
+                        <Anchor point="TOPRIGHT" x="-2" y="-2"/>
+                        <Anchor point="BOTTOMLEFT" relativePoint="BOTTOMRIGHT" x="-10" y="2"/>
+                    </Anchors>
+                    <TexCoords left="0.75" right="1" top="0" bottom="1"/>
+                </Texture>
+                <Texture name="$parentPushedMiddle" file="Interface\Buttons\ButtonHilight-Square" alphaMode="ADD" hidden="true" parentKey="pushedMiddle">
+                    <Anchors>
+                        <Anchor point="TOPLEFT" relativeTo="$parentPushedLeft" relativePoint="TOPRIGHT"/>
+                        <Anchor point="BOTTOMRIGHT" relativeTo="$parentPushedRight" relativePoint="BOTTOMLEFT"/>
+                    </Anchors>
+                    <TexCoords left="0.25" right="0.75" top="0" bottom="1"/>
+                </Texture>
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnLoad>
+                if self:GetID() == 252 and Sorted_IsClassic() then
+                    return
+                end
+
+                function self:IsEnabled()
+                    return Sorted_currentPlayerSelected and (self:GetID() == 254 or ((self:GetID() == 255 or self:GetID() == 252) and Sorted_bankIsOpened))
+                end
+
+                local function ReregisterEvents()
+                    SortedFrame:RegisterEvent("BAG_UPDATE")
+                    SortedFrame_OnBagUpdate()
+                end
+
+                local function OnClick(self)
+                    if not Sorted_IsClassic() then
+                        if self:IsEnabled() then
+                            SortedFrame:UnregisterEvent("BAG_UPDATE")
+                            if self:GetID() == 254 then
+                                SortBags()
+                            elseif self:GetID() == 255 then
+                                SortBankBags()
+                            elseif self:GetID() == 255 then
+                                SortBankBags()
+                            elseif self:GetID() == 252 then
+                                SortReagentBankBags()
+                            end
+                            C_Timer.After(1, ReregisterEvents)
+                        end
+                        SortedTooltip.Cancel()
+                    end
+                end
+
+                function self:ShowTooltip()
+                    SortedTooltip.Schedule(function()
+                        GameTooltip:SetOwner(self, "ANCHOR_LEFT")
+                        GameTooltip:ClearLines()
+
+                        local containers
+                        if self:GetID() == 254 then
+                            GameTooltip:AddLine(Sorted.Localize("TOOLTIP_TITLE_BAGS"), 1, 1, 1, 1)
+                            containers = Sorted_ContainersOfType("BAGS")
+                        elseif self:GetID() == 255 then
+                            GameTooltip:AddLine(Sorted.Localize("TOOLTIP_TITLE_BANK"), 1, 1, 1, 1)
+                            containers = Sorted_ContainersOfType("BANK")
+                        elseif self:GetID() == 252 then
+                            GameTooltip:AddLine(Sorted.Localize("TOOLTIP_TITLE_REAGENTS"), 1, 1, 1, 1)
+                            containers = Sorted_ContainersOfType("REAGENT")
+                        end
+                        GameTooltip:AddLine(" ")
+
+                        for i,container in pairs(containers) do
+                            local itemName, _, itemRarity
+
+                            if container ~= BANK_CONTAINER and container ~= BACKPACK_CONTAINER and container ~= REAGENTBANK_CONTAINER then
+                                local invID = ContainerIDToInventoryID(container)
+                                local itemLink = GetInventoryItemLink("player", invID)
+                                if itemLink then
+                                    itemName, _, itemRarity = GetItemInfo(itemLink)
+                                end
+                            else
+                                if self:GetID() == 254 then
+                                    itemName, itemRarity = BACKPACK_TOOLTIP, 1
+                                elseif self:GetID() == 255 then
+                                    itemName, itemRarity = BANK, 1
+                                elseif self:GetID() == 252 then
+                                    itemName, itemRarity = REAGENT_BANK, 1
+                                end
+                            end
+
+                            if itemName then
+                                local r,g,b = Sorted_GetItemQualityColor(itemRarity)
+                                local r2, g2, b2 = 1, 1, 1
+                                if GetContainerNumFreeSlots(container) == 0 then
+                                    r2, g2, b2 = 1, 0.2, 0.2
+                                elseif GetContainerNumSlots(container) * 0.1 >= GetContainerNumFreeSlots(container) then
+                                    r2, g2, b2 = 1, 0.82, 0
+                                end
+                                GameTooltip:AddDoubleLine(itemName, (GetContainerNumSlots(container) - GetContainerNumFreeSlots(container)).."|cFFD1C9BF/"..GetContainerNumSlots(container), r, g, b, r2, g2, b2)
+                            end
+                        end
+
+                        if not Sorted_IsClassic() then
+                            GameTooltip:AddLine(" ")
+                            if self:GetID() == 254 then
+                                GameTooltip:AddLine(Sorted.Localize("TOOLTIP_CLEANUP_BAGS"))
+                            elseif self:GetID() == 255 then
+                                GameTooltip:AddLine(Sorted.Localize("TOOLTIP_CLEANUP_BANK"))
+                            elseif self:GetID() == 252 then
+                                GameTooltip:AddLine(Sorted.Localize("TOOLTIP_CLEANUP_REAGENTS"))
+                            end
+                        end
+
+                        GameTooltip:Show()
+                    end)
+                end
+
+                function self:UpdateText() 
+                    local usedSlots, numSlots
+                    if self:GetID() == 254 then
+                        -- Bags
+                        usedSlots, numSlots = Sorted_GetNumSlots("BAGS")
+                    elseif self:GetID() == 255 then
+                        --Bank
+                        if not Sorted_GetBankCached() then
+                            _G[self:GetName().."Text"]:SetTextColor(0.82, 0.79, 0.75, 1)
+                            _G[self:GetName().."Text"]:SetText("N")
+                            _G[self:GetName().."TotalText"]:SetText("A")
+                            return
+                        end
+                        usedSlots, numSlots = Sorted_GetNumSlots("BANK")
+                    elseif self:GetID() == 253 then
+                        --Keyring
+                        numSlots = GetContainerNumSlots(KEYRING_CONTAINER)
+                        usedSlots = 32 - GetContainerNumFreeSlots(KEYRING_CONTAINER)
+                    elseif self:GetID() == 252 then
+                        -- Reagent bank
+                        if not Sorted_GetBankCached() then
+                            _G[self:GetName().."Text"]:SetTextColor(0.82, 0.79, 0.75, 1)
+                            _G[self:GetName().."Text"]:SetText("N")
+                            _G[self:GetName().."TotalText"]:SetText("A")
+                            return
+                        end
+                        usedSlots, numSlots = Sorted_GetNumSlots("REAGENT")
+                    else
+                        -- Single container
+                        numSlots = GetContainerNumSlots(self:GetID())
+                        usedSlots = numSlots - GetContainerNumFreeSlots(self:GetID())
+                    end
+                    _G[self:GetName().."Text"]:SetText(usedSlots)
+                    _G[self:GetName().."TotalText"]:SetText(numSlots)
+
+                    if usedSlots and numSlots then
+                        if (usedSlots == numSlots) then
+                            _G[self:GetName().."Text"]:SetTextColor(1, 0.2, 0.2, 1)
+                        -- Set colour to yellow when bags are 95% full
+                        elseif (usedSlots >= numSlots * 0.95) then
+                            _G[self:GetName().."Text"]:SetTextColor(1, 0.82, 0, 1)
+                        else
+                            _G[self:GetName().."Text"]:SetTextColor(1, 1, 1, 1)
+                        end
+                    end
+                end
+                self:RegisterEvent("BAG_UPDATE")
+                self:RegisterEvent("BANKFRAME_OPENED")
+                self:RegisterEvent("PLAYER_ENTERING_WORLD")
+                self:RegisterForClicks("LeftButtonUp")
+                self:SetScript("OnClick", OnClick)
+            </OnLoad>
+            <OnEvent> 
+                self:UpdateText()
+                if self:IsMouseOver() then
+                    self:ShowTooltip()
+                end
+            </OnEvent>
+            <OnShow> 
+                self:UpdateText()
+            </OnShow>
+            <OnEnter>
+                if self:IsEnabled() then
+                    self.highlightLeft:Show()
+                    self.highlightMiddle:Show()
+                    self.highlightRight:Show()
+
+                    self:ShowTooltip()
+                end
+            </OnEnter>
+            <OnLeave>
+                self.highlightLeft:Hide()
+                self.highlightMiddle:Hide()
+                self.highlightRight:Hide()
+
+                SortedTooltip.Cancel()
+            </OnLeave>
+            <OnMouseDown>
+                if self:IsEnabled() then
+                    self.pushedLeft:Show()
+                    self.pushedMiddle:Show()
+                    self.pushedRight:Show()
+                end
+            </OnMouseDown>
+            <OnMouseUp>
+                self.pushedLeft:Hide()
+                self.pushedMiddle:Hide()
+                self.pushedRight:Hide()
+            </OnMouseUp>
+        </Scripts>
+    </Button>
+
+    <Frame name="SortedLargeInputBoxTemplate" inherits="InsetFrameTemplate" virtual="true">
+		<Size x="110" y="28"/>
+        <Frames>
+            <EditBox name="$parentEditBox" parentKey="editBox" inherits="InputBoxScriptTemplate" autoFocus="false" hidden="false">
+                <Anchors>
+                    <Anchor point="TOPLEFT" x="4" y="-4"/><Anchor point="BOTTOMRIGHT" x="-4" y="3"/>
+                </Anchors>
+                <Layers>
+                    <Layer level="BACKGROUND">
+                        <Texture parentKey="bgLeft" file="Interface\Addons\Sorted\Textures\Search-Backdrop">
+                            <Anchors><Anchor point="TOPLEFT"/><Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMLEFT" x="12"/></Anchors>
+                            <TexCoords left="1" right="0.5" top="0" bottom="1" />
+                        </Texture>
+                        <Texture parentKey="bg" file="Interface\Addons\Sorted\Textures\Search-Backdrop">
+                            <Anchors><Anchor point="TOPLEFT" x="12"/><Anchor point="BOTTOMRIGHT" x="-12"/></Anchors>
+                            <TexCoords left="0" right="0.5" top="0" bottom="1" />
+                        </Texture>
+                        <Texture parentKey="bgRight" file="Interface\Addons\Sorted\Textures\Search-Backdrop">
+                            <Anchors><Anchor point="TOPLEFT" relativePoint="TOPRIGHT" x="-12"/><Anchor point="BOTTOMRIGHT"/></Anchors>
+                            <TexCoords left="0.5" right="1" top="0" bottom="1" />
+                        </Texture>
+                    </Layer>
+                </Layers>
+                <FontString inherits="Sorted12Font">
+                    <Anchors>
+                        <Anchor point="LEFT" x="6"/>
+                    </Anchors>
+                </FontString>
+        		<TextInsets left="10" right="10" bottom="5" top="5"/>
+            </EditBox>
+        </Frames>
+	</Frame>
+</Ui>
