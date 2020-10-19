@@ -1,3 +1,0 @@
-
-oUFPhanxAuraConfig = nil
-oUFPhanxConfigPC = nil

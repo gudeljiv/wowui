@@ -2,3 +2,5 @@ WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
 nPower: disabled
 Immersion: disabled
+AdiBags: disabled
+AdiBags_Config: disabled
