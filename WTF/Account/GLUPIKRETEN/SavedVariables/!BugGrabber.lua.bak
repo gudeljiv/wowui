@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 3398,
 	["lastSanitation"] = 3,
+	["session"] = 3399,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -165,8 +165,8 @@ BugGrabberDB = {
 		}, -- [20]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["time"] = "2020/07/26 13:26:58",
 			["session"] = 1336,
+			["time"] = "2020/07/26 13:26:58",
 			["counter"] = 2,
 		}, -- [21]
 		{
@@ -546,8 +546,8 @@ BugGrabberDB = {
 		}, -- [68]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["session"] = 1423,
 			["time"] = "2020/07/27 20:37:46",
+			["session"] = 1423,
 			["counter"] = 4,
 		}, -- [69]
 		{
@@ -805,8 +805,8 @@ BugGrabberDB = {
 		}, -- [101]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["session"] = 1605,
 			["time"] = "2020/08/02 10:06:15",
+			["session"] = 1605,
 			["counter"] = 3,
 		}, -- [102]
 		{
@@ -946,8 +946,8 @@ BugGrabberDB = {
 		}, -- [119]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
-			["time"] = "2020/08/02 20:13:03",
 			["session"] = 1654,
+			["time"] = "2020/08/02 20:13:03",
 			["counter"] = 3,
 		}, -- [120]
 		{
@@ -1420,8 +1420,8 @@ BugGrabberDB = {
 		}, -- [179]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Experience.lua",
-			["time"] = "2020/08/19 21:35:15",
 			["session"] = 1943,
+			["time"] = "2020/08/19 21:35:15",
 			["counter"] = 6,
 		}, -- [180]
 		{
@@ -2368,8 +2368,8 @@ BugGrabberDB = {
 		}, -- [298]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\ClickToMove\\ClickToMove.toc",
-			["time"] = "2020/09/30 12:15:00",
 			["session"] = 2740,
+			["time"] = "2020/09/30 12:15:00",
 			["counter"] = 10,
 		}, -- [299]
 		{
@@ -3192,14 +3192,14 @@ BugGrabberDB = {
 		}, -- [402]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Examiner\\Examiner.toc",
-			["session"] = 3191,
 			["time"] = "2020/10/14 21:40:43",
+			["session"] = 3191,
 			["counter"] = 2,
 		}, -- [403]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\NovaInstanceTracker\\NovaInstanceTracker.toc",
-			["session"] = 3191,
 			["time"] = "2020/10/14 21:40:43",
+			["session"] = 3191,
 			["counter"] = 2,
 		}, -- [404]
 		{
@@ -3585,8 +3585,8 @@ BugGrabberDB = {
 		}, -- [452]
 		{
 			["message"] = "(null)",
-			["session"] = 3342,
 			["time"] = "2020/07/24 16:00:06",
+			["session"] = 3342,
 			["counter"] = 193,
 		}, -- [453]
 		{
@@ -3702,9 +3702,25 @@ BugGrabberDB = {
 		}, -- [467]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["time"] = "2020/08/13 21:31:07",
 			["session"] = 3397,
+			["time"] = "2020/08/13 21:31:07",
 			["counter"] = 12,
 		}, -- [468]
+		{
+			["message"] = "Interface\\AddOns\\Sorted\\Sorting.lua:832: attempt to index local 'a' (a nil value)",
+			["time"] = "2020/10/19 14:34:47",
+			["locals"] = "a = nil\nb = SortedFrameTabsMenuBinding {\n 0 = <userdata>\n pushed = SortedFrameTabsMenuBindingPushedTexture {\n }\n clickable = SortedFrameTabsMenuBindingClickable {\n }\n text = SortedFrameTabsMenuBindingText {\n }\n hilight = SortedFrameTabsMenuBindingHighlightTexture {\n }\n}\n(*temporary) = <table> {\n 7 = 10\n 1 = 1\n 2 = 2\n 4 = 6\n 8 = 5\n 9 = 8\n 5 = 11\n 10 = 9\n 3 = 4\n 6 = 7\n 12 = 3\n 11 = 12\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'a' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\Sorted\\Sorting.lua:832: in function <Interface\\AddOns\\Sorted\\Sorting.lua:831>\n[C]: in function `sort'\nInterface\\AddOns\\Sorted\\Sorting.lua:831: in function <Interface\\AddOns\\Sorted\\Sorting.lua:830>\n[C]: in function `Show'\nInterface\\AddOns\\Sorted\\Sorting.lua:680: in function <Interface\\AddOns\\Sorted\\Sorting.lua:652>",
+			["session"] = 3399,
+			["counter"] = 1,
+		}, -- [469]
+		{
+			["message"] = "Interface\\AddOns\\Sorted\\Sorting.lua:832: attempt to index local 'b' (a nil value)",
+			["time"] = "2020/10/19 14:34:20",
+			["locals"] = "a = SortedFrameTabsMenuItem Level {\n 0 = <userdata>\n pushed = SortedFrameTabsMenuItem LevelPushedTexture {\n }\n clickable = SortedFrameTabsMenuItem LevelClickable {\n }\n text = SortedFrameTabsMenuItem LevelText {\n }\n hilight = SortedFrameTabsMenuItem LevelHighlightTexture {\n }\n}\nb = nil\n(*temporary) = 6\n(*temporary) = <table> {\n 7 = 10\n 1 = 1\n 2 = 2\n 4 = 6\n 8 = 5\n 9 = 8\n 5 = 11\n 10 = 9\n 3 = 4\n 6 = 7\n 12 = 3\n 11 = 12\n}\n(*temporary) = SortedFrameTabsMenuItem Level {\n 0 = <userdata>\n pushed = SortedFrameTabsMenuItem LevelPushedTexture {\n }\n clickable = SortedFrameTabsMenuItem LevelClickable {\n }\n text = SortedFrameTabsMenuItem LevelText {\n }\n hilight = SortedFrameTabsMenuItem LevelHighlightTexture {\n }\n}\n(*temporary) = nil\n(*temporary) = \"attempt to index local 'b' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\Sorted\\Sorting.lua:832: in function <Interface\\AddOns\\Sorted\\Sorting.lua:831>\n[C]: in function `sort'\nInterface\\AddOns\\Sorted\\Sorting.lua:831: in function <Interface\\AddOns\\Sorted\\Sorting.lua:830>\n[C]: in function `Show'\nInterface\\AddOns\\Sorted\\Sorting.lua:680: in function <Interface\\AddOns\\Sorted\\Sorting.lua:652>",
+			["session"] = 3399,
+			["counter"] = 2,
+		}, -- [470]
 	},
 }
