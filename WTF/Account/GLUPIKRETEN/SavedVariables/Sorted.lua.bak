@@ -3,12 +3,16 @@ Sorted_Data = {
 	["Player-4465-01C75D20"] = {
 		["bankUsedSlots"] = 80,
 		["class"] = "PRIEST",
-		["settingsProfile"] = 1,
+		["settingsProfile"] = 3,
 		["race"] = 5,
 		["level"] = 5,
 		["realm"] = "Golemagg",
 		["minimized"] = false,
 		["timeItemsAdded"] = {
+			["7070::::::"] = {
+				["count"] = 105,
+				["time"] = 1603110453,
+			},
 			["13456::::::"] = {
 				["count"] = 39,
 				["time"] = 1603110453,
@@ -17,11 +21,23 @@ Sorted_Data = {
 				["count"] = 40,
 				["time"] = 1603110453,
 			},
+			["3369::::::"] = {
+				["count"] = 202,
+				["time"] = 1603110453,
+			},
 			["53::::::"] = {
 				["count"] = 1,
 				["time"] = 1603110388,
 			},
+			["6371::::::"] = {
+				["count"] = 160,
+				["time"] = 1603110453,
+			},
 			["51::::::"] = {
+				["count"] = 1,
+				["time"] = 1603110388,
+			},
+			["52::::::"] = {
 				["count"] = 1,
 				["time"] = 1603110388,
 			},
@@ -29,32 +45,12 @@ Sorted_Data = {
 				["count"] = 39,
 				["time"] = 1603110453,
 			},
-			["7067::::::"] = {
-				["count"] = 26,
-				["time"] = 1603110453,
-			},
-			["7070::::::"] = {
-				["count"] = 105,
-				["time"] = 1603110453,
-			},
-			["6144::::::"] = {
+			["3275::11::::"] = {
 				["count"] = 1,
 				["time"] = 1603110388,
 			},
-			["3369::::::"] = {
-				["count"] = 202,
-				["time"] = 1603110453,
-			},
-			["52::::::"] = {
-				["count"] = 1,
-				["time"] = 1603110388,
-			},
-			["7068::::::"] = {
-				["count"] = 101,
-				["time"] = 1603110453,
-			},
-			["7080::::::"] = {
-				["count"] = 36,
+			["3818::::::"] = {
+				["count"] = 186,
 				["time"] = 1603110453,
 			},
 			["6948::::::"] = {
@@ -65,35 +61,39 @@ Sorted_Data = {
 				["count"] = 35,
 				["time"] = 1603110438,
 			},
-			["3275::11::::"] = {
-				["count"] = 1,
+			["14046::::::"] = {
+				["count"] = 4,
 				["time"] = 1603110388,
 			},
 			["7077::::::"] = {
 				["count"] = 75,
 				["time"] = 1603110453,
 			},
+			["7067::::::"] = {
+				["count"] = 26,
+				["time"] = 1603110453,
+			},
 			["36::::::"] = {
 				["count"] = 1,
 				["time"] = 1603110388,
 			},
-			["3818::::::"] = {
-				["count"] = 186,
+			["7080::::::"] = {
+				["count"] = 36,
 				["time"] = 1603110453,
 			},
-			["6371::::::"] = {
-				["count"] = 160,
+			["7068::::::"] = {
+				["count"] = 101,
 				["time"] = 1603110453,
 			},
-			["14046::::::"] = {
-				["count"] = 4,
+			["6144::::::"] = {
+				["count"] = 1,
 				["time"] = 1603110388,
 			},
 		},
 		["favoritedItems"] = {
 		},
-		["money"] = 609694,
-		["lastLogged"] = 1603110388,
+		["money"] = 744500,
+		["lastLogged"] = 1603180360,
 		["name"] = "Mxyz",
 		["faction"] = "Horde",
 		["bankNumSlots"] = 94,
@@ -102,54 +102,54 @@ Sorted_Data = {
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 40,
-					["bindType"] = 0,
-					["subClassID"] = 0,
-					["level"] = 40,
 					["classID"] = 7,
-					["expacID"] = 254,
-					["minLevel"] = 0,
+					["bindType"] = 0,
+					["level"] = 40,
 					["name"] = "Mageweave Cloth",
-					["bound"] = false,
+					["subClassID"] = 0,
 					["value"] = 250,
+					["bound"] = false,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [1]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 40,
-					["bindType"] = 0,
-					["subClassID"] = 0,
-					["level"] = 40,
 					["classID"] = 7,
-					["expacID"] = 254,
-					["minLevel"] = 0,
+					["bindType"] = 0,
+					["level"] = 40,
 					["name"] = "Mageweave Cloth",
-					["bound"] = false,
+					["subClassID"] = 0,
 					["value"] = 250,
+					["bound"] = false,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [2]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 40,
-					["bindType"] = 0,
-					["subClassID"] = 0,
-					["level"] = 40,
 					["classID"] = 7,
-					["expacID"] = 254,
-					["minLevel"] = 0,
+					["bindType"] = 0,
+					["level"] = 40,
 					["name"] = "Mageweave Cloth",
-					["bound"] = false,
+					["subClassID"] = 0,
 					["value"] = 250,
+					["bound"] = false,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [3]
 				{
 					["equipLoc"] = "INVTYPE_HAND",
 					["effectiveILvl"] = 45,
-					["bindType"] = 2,
-					["subClassID"] = 4,
-					["level"] = 45,
 					["classID"] = 4,
-					["expacID"] = 254,
-					["minLevel"] = 40,
+					["bindType"] = 2,
+					["level"] = 45,
 					["name"] = "Plated Fist of Hakoo",
-					["bound"] = false,
+					["subClassID"] = 4,
 					["value"] = 4061,
+					["bound"] = false,
+					["minLevel"] = 40,
+					["expacID"] = 254,
 				}, -- [4]
 				{
 				}, -- [5]
@@ -302,132 +302,132 @@ Sorted_Data = {
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 40,
-					["bindType"] = 0,
-					["subClassID"] = 0,
-					["level"] = 40,
 					["classID"] = 7,
-					["expacID"] = 254,
-					["minLevel"] = 0,
+					["bindType"] = 0,
+					["level"] = 40,
 					["name"] = "Mageweave Cloth",
-					["bound"] = false,
+					["subClassID"] = 0,
 					["value"] = 250,
+					["bound"] = false,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [5]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 40,
-					["bindType"] = 0,
-					["subClassID"] = 0,
-					["level"] = 40,
 					["classID"] = 7,
-					["expacID"] = 254,
-					["minLevel"] = 0,
+					["bindType"] = 0,
+					["level"] = 40,
 					["name"] = "Mageweave Cloth",
-					["bound"] = false,
+					["subClassID"] = 0,
 					["value"] = 250,
+					["bound"] = false,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [6]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 40,
-					["bindType"] = 0,
-					["subClassID"] = 0,
-					["level"] = 40,
 					["classID"] = 7,
-					["expacID"] = 254,
-					["minLevel"] = 0,
+					["bindType"] = 0,
+					["level"] = 40,
 					["name"] = "Mageweave Cloth",
-					["bound"] = false,
+					["subClassID"] = 0,
 					["value"] = 250,
+					["bound"] = false,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [7]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 40,
-					["bindType"] = 0,
-					["subClassID"] = 0,
-					["level"] = 40,
 					["classID"] = 7,
-					["expacID"] = 254,
-					["minLevel"] = 0,
+					["bindType"] = 0,
+					["level"] = 40,
 					["name"] = "Mageweave Cloth",
-					["bound"] = false,
+					["subClassID"] = 0,
 					["value"] = 250,
+					["bound"] = false,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [8]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 40,
-					["bindType"] = 0,
-					["subClassID"] = 0,
-					["level"] = 40,
 					["classID"] = 7,
-					["expacID"] = 254,
-					["minLevel"] = 0,
+					["bindType"] = 0,
+					["level"] = 40,
 					["name"] = "Mageweave Cloth",
-					["bound"] = false,
+					["subClassID"] = 0,
 					["value"] = 250,
+					["bound"] = false,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [9]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 40,
-					["bindType"] = 0,
-					["subClassID"] = 0,
-					["level"] = 40,
 					["classID"] = 7,
-					["expacID"] = 254,
-					["minLevel"] = 0,
+					["bindType"] = 0,
+					["level"] = 40,
 					["name"] = "Mageweave Cloth",
-					["bound"] = false,
+					["subClassID"] = 0,
 					["value"] = 250,
+					["bound"] = false,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [10]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 40,
-					["bindType"] = 0,
-					["subClassID"] = 0,
-					["level"] = 40,
 					["classID"] = 7,
-					["expacID"] = 254,
-					["minLevel"] = 0,
+					["bindType"] = 0,
+					["level"] = 40,
 					["name"] = "Mageweave Cloth",
-					["bound"] = false,
+					["subClassID"] = 0,
 					["value"] = 250,
+					["bound"] = false,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [11]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 40,
-					["bindType"] = 0,
-					["subClassID"] = 0,
-					["level"] = 40,
 					["classID"] = 7,
-					["expacID"] = 254,
-					["minLevel"] = 0,
+					["bindType"] = 0,
+					["level"] = 40,
 					["name"] = "Mageweave Cloth",
-					["bound"] = false,
+					["subClassID"] = 0,
 					["value"] = 250,
+					["bound"] = false,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [12]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 40,
-					["bindType"] = 0,
-					["subClassID"] = 0,
-					["level"] = 40,
 					["classID"] = 7,
-					["expacID"] = 254,
-					["minLevel"] = 0,
+					["bindType"] = 0,
+					["level"] = 40,
 					["name"] = "Mageweave Cloth",
-					["bound"] = false,
+					["subClassID"] = 0,
 					["value"] = 250,
+					["bound"] = false,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [13]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 40,
-					["bindType"] = 0,
-					["subClassID"] = 0,
-					["level"] = 40,
 					["classID"] = 7,
-					["expacID"] = 254,
-					["minLevel"] = 0,
+					["bindType"] = 0,
+					["level"] = 40,
 					["name"] = "Mageweave Cloth",
-					["bound"] = false,
+					["subClassID"] = 0,
 					["value"] = 250,
+					["bound"] = false,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [14]
 				{
 				}, -- [15]
@@ -478,171 +478,171 @@ Sorted_Data = {
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 40,
-					["bindType"] = 0,
-					["subClassID"] = 0,
-					["level"] = 40,
 					["classID"] = 7,
-					["expacID"] = 254,
-					["minLevel"] = 0,
+					["bindType"] = 0,
+					["level"] = 40,
 					["name"] = "Mageweave Cloth",
-					["bound"] = false,
+					["subClassID"] = 0,
 					["value"] = 250,
+					["bound"] = false,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [1]
 				{
 					["equipLoc"] = "INVTYPE_WRIST",
 					["effectiveILvl"] = 45,
-					["bindType"] = 2,
-					["subClassID"] = 3,
-					["level"] = 45,
 					["classID"] = 4,
-					["expacID"] = 254,
-					["minLevel"] = 40,
+					["bindType"] = 2,
+					["level"] = 45,
 					["name"] = "Khan's Bindings",
-					["bound"] = false,
+					["subClassID"] = 3,
 					["value"] = 4933,
+					["bound"] = false,
+					["minLevel"] = 40,
+					["expacID"] = 254,
 				}, -- [2]
 				{
 					["equipLoc"] = "INVTYPE_WAIST",
 					["effectiveILvl"] = 42,
-					["bindType"] = 2,
-					["subClassID"] = 1,
-					["level"] = 42,
 					["classID"] = 4,
-					["expacID"] = 254,
-					["minLevel"] = 36,
+					["bindType"] = 2,
+					["level"] = 42,
 					["name"] = "Lunar Belt of Intellect",
-					["bound"] = false,
+					["subClassID"] = 1,
 					["value"] = 2628,
+					["bound"] = false,
+					["minLevel"] = 36,
+					["expacID"] = 254,
 				}, -- [3]
 				{
 					["equipLoc"] = "INVTYPE_SHOULDER",
 					["effectiveILvl"] = 45,
-					["bindType"] = 2,
-					["subClassID"] = 1,
-					["level"] = 45,
 					["classID"] = 4,
-					["expacID"] = 254,
-					["minLevel"] = 40,
+					["bindType"] = 2,
+					["level"] = 45,
 					["name"] = "Royal Amice of the Owl",
-					["bound"] = false,
+					["subClassID"] = 1,
 					["value"] = 5037,
+					["bound"] = false,
+					["minLevel"] = 40,
+					["expacID"] = 254,
 				}, -- [4]
 				{
 					["equipLoc"] = "INVTYPE_LEGS",
 					["effectiveILvl"] = 43,
-					["bindType"] = 2,
-					["subClassID"] = 3,
-					["level"] = 43,
 					["classID"] = 4,
-					["expacID"] = 254,
-					["minLevel"] = 38,
+					["bindType"] = 2,
+					["level"] = 43,
 					["name"] = "Ravager's Woolies",
-					["bound"] = false,
+					["subClassID"] = 3,
 					["value"] = 8367,
+					["bound"] = false,
+					["minLevel"] = 38,
+					["expacID"] = 254,
 				}, -- [5]
 				{
 					["equipLoc"] = "INVTYPE_LEGS",
 					["effectiveILvl"] = 43,
-					["bindType"] = 2,
-					["subClassID"] = 1,
-					["level"] = 43,
 					["classID"] = 4,
-					["expacID"] = 254,
-					["minLevel"] = 38,
+					["bindType"] = 2,
+					["level"] = 43,
 					["name"] = "Darkmist Pants of the Owl",
-					["bound"] = false,
+					["subClassID"] = 1,
 					["value"] = 5413,
+					["bound"] = false,
+					["minLevel"] = 38,
+					["expacID"] = 254,
 				}, -- [6]
 				{
 					["equipLoc"] = "INVTYPE_HAND",
 					["effectiveILvl"] = 45,
-					["bindType"] = 2,
-					["subClassID"] = 4,
-					["level"] = 45,
 					["classID"] = 4,
-					["expacID"] = 254,
-					["minLevel"] = 40,
+					["bindType"] = 2,
+					["level"] = 45,
 					["name"] = "Plated Fist of Hakoo",
-					["bound"] = false,
+					["subClassID"] = 4,
 					["value"] = 4061,
+					["bound"] = false,
+					["minLevel"] = 40,
+					["expacID"] = 254,
 				}, -- [7]
 				{
 					["equipLoc"] = "INVTYPE_CLOAK",
 					["effectiveILvl"] = 36,
-					["bindType"] = 2,
-					["subClassID"] = 1,
-					["level"] = 36,
 					["classID"] = 4,
-					["expacID"] = 254,
-					["minLevel"] = 31,
+					["bindType"] = 2,
+					["level"] = 36,
 					["name"] = "Trickster's Cloak of the Eagle",
-					["bound"] = false,
+					["subClassID"] = 1,
 					["value"] = 2431,
+					["bound"] = false,
+					["minLevel"] = 31,
+					["expacID"] = 254,
 				}, -- [8]
 				{
 					["equipLoc"] = "INVTYPE_CLOAK",
 					["effectiveILvl"] = 43,
-					["bindType"] = 2,
-					["subClassID"] = 1,
-					["level"] = 43,
 					["classID"] = 4,
-					["expacID"] = 254,
-					["minLevel"] = 38,
+					["bindType"] = 2,
+					["level"] = 43,
 					["name"] = "Bloodwoven Cloak of the Owl",
-					["bound"] = false,
+					["subClassID"] = 1,
 					["value"] = 4044,
+					["bound"] = false,
+					["minLevel"] = 38,
+					["expacID"] = 254,
 				}, -- [9]
 				{
 					["equipLoc"] = "INVTYPE_CHEST",
 					["effectiveILvl"] = 43,
-					["bindType"] = 2,
-					["subClassID"] = 4,
-					["level"] = 43,
 					["classID"] = 4,
-					["expacID"] = 254,
-					["minLevel"] = 40,
+					["bindType"] = 2,
+					["level"] = 43,
 					["name"] = "Symbolic Breastplate",
-					["bound"] = false,
+					["subClassID"] = 4,
 					["value"] = 5290,
+					["bound"] = false,
+					["minLevel"] = 40,
+					["expacID"] = 254,
 				}, -- [10]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 45,
-					["bindType"] = 0,
-					["subClassID"] = 0,
-					["level"] = 45,
 					["classID"] = 0,
-					["expacID"] = 254,
-					["minLevel"] = 35,
+					["bindType"] = 0,
+					["level"] = 45,
 					["name"] = "Superior Healing Potion",
-					["bound"] = false,
+					["subClassID"] = 0,
 					["value"] = 250,
+					["bound"] = false,
+					["minLevel"] = 35,
+					["expacID"] = 254,
 				}, -- [11]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 42,
-					["bindType"] = 0,
-					["subClassID"] = 8,
-					["level"] = 42,
 					["classID"] = 9,
-					["expacID"] = 254,
-					["minLevel"] = 0,
+					["bindType"] = 0,
+					["level"] = 42,
 					["name"] = "Formula: Enchant Shield - Stamina",
-					["bound"] = false,
+					["subClassID"] = 8,
 					["value"] = 1100,
+					["bound"] = false,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [12]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 63,
-					["bindType"] = 0,
-					["subClassID"] = 4,
-					["level"] = 63,
 					["classID"] = 9,
-					["expacID"] = 254,
-					["minLevel"] = 0,
+					["bindType"] = 0,
+					["level"] = 63,
 					["name"] = "Plans: Hammer of the Titans",
-					["bound"] = false,
+					["subClassID"] = 4,
 					["value"] = 20000,
+					["bound"] = false,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [13]
 				{
 					["equipLoc"] = "",
@@ -651,17 +651,17 @@ Sorted_Data = {
 					["subClassID"] = 0,
 					["level"] = 1,
 					["quality"] = 1,
-					["texture"] = 134414,
-					["count"] = 1,
 					["link"] = "|cffffffff|Hitem:6948::::::::5:::::::|h[Hearthstone]|h|r",
 					["classID"] = 15,
 					["expacID"] = 254,
 					["hasNoValue"] = true,
-					["minLevel"] = 0,
+					["value"] = 0,
+					["count"] = 1,
 					["itemID"] = 6948,
 					["name"] = "Hearthstone",
 					["bound"] = true,
-					["value"] = 0,
+					["minLevel"] = 0,
+					["texture"] = 134414,
 				}, -- [14]
 				{
 				}, -- [15]
@@ -720,13 +720,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 135819,
 					["itemID"] = 7077,
-					["name"] = "Heart of Fire",
+					["value"] = 400,
 					["count"] = 10,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 135819,
+					["name"] = "Heart of Fire",
+					["minLevel"] = 0,
 				}, -- [1]
 				{
 					["equipLoc"] = "",
@@ -739,13 +739,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 135819,
 					["itemID"] = 7077,
-					["name"] = "Heart of Fire",
+					["value"] = 400,
 					["count"] = 10,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 135819,
+					["name"] = "Heart of Fire",
+					["minLevel"] = 0,
 				}, -- [2]
 				{
 					["equipLoc"] = "",
@@ -758,13 +758,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 135819,
 					["itemID"] = 7077,
-					["name"] = "Heart of Fire",
+					["value"] = 400,
 					["count"] = 10,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 135819,
+					["name"] = "Heart of Fire",
+					["minLevel"] = 0,
 				}, -- [3]
 				{
 					["equipLoc"] = "",
@@ -777,13 +777,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 135819,
 					["itemID"] = 7077,
-					["name"] = "Heart of Fire",
+					["value"] = 400,
 					["count"] = 10,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 135819,
+					["name"] = "Heart of Fire",
+					["minLevel"] = 0,
 				}, -- [4]
 				{
 					["equipLoc"] = "",
@@ -796,13 +796,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 135819,
 					["itemID"] = 7077,
-					["name"] = "Heart of Fire",
+					["value"] = 400,
 					["count"] = 10,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 135819,
+					["name"] = "Heart of Fire",
+					["minLevel"] = 0,
 				}, -- [5]
 				{
 					["equipLoc"] = "",
@@ -815,13 +815,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 135819,
 					["itemID"] = 7077,
-					["name"] = "Heart of Fire",
+					["value"] = 400,
 					["count"] = 10,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 135819,
+					["name"] = "Heart of Fire",
+					["minLevel"] = 0,
 				}, -- [6]
 				{
 					["equipLoc"] = "",
@@ -830,17 +830,17 @@ Sorted_Data = {
 					["subClassID"] = 0,
 					["level"] = 25,
 					["quality"] = 1,
-					["texture"] = 134714,
-					["count"] = 5,
 					["link"] = "|cffffffff|Hitem:7070::::::::5:::::::|h[Elemental Water]|h|r",
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["value"] = 400,
+					["count"] = 5,
 					["itemID"] = 7070,
 					["name"] = "Elemental Water",
 					["bound"] = false,
-					["value"] = 400,
+					["minLevel"] = 0,
+					["texture"] = 134714,
 				}, -- [7]
 				{
 					["equipLoc"] = "",
@@ -853,13 +853,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 134714,
 					["itemID"] = 7070,
-					["name"] = "Elemental Water",
+					["value"] = 400,
 					["count"] = 10,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 134714,
+					["name"] = "Elemental Water",
+					["minLevel"] = 0,
 				}, -- [8]
 				{
 					["equipLoc"] = "",
@@ -872,13 +872,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 134714,
 					["itemID"] = 7070,
-					["name"] = "Elemental Water",
+					["value"] = 400,
 					["count"] = 10,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 134714,
+					["name"] = "Elemental Water",
+					["minLevel"] = 0,
 				}, -- [9]
 				{
 					["equipLoc"] = "",
@@ -891,13 +891,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 134714,
 					["itemID"] = 7070,
-					["name"] = "Elemental Water",
+					["value"] = 400,
 					["count"] = 10,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 134714,
+					["name"] = "Elemental Water",
+					["minLevel"] = 0,
 				}, -- [10]
 				{
 					["equipLoc"] = "",
@@ -910,13 +910,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 134714,
 					["itemID"] = 7070,
-					["name"] = "Elemental Water",
+					["value"] = 400,
 					["count"] = 10,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 134714,
+					["name"] = "Elemental Water",
+					["minLevel"] = 0,
 				}, -- [11]
 				{
 					["equipLoc"] = "",
@@ -929,13 +929,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 134714,
 					["itemID"] = 7070,
-					["name"] = "Elemental Water",
+					["value"] = 400,
 					["count"] = 10,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 134714,
+					["name"] = "Elemental Water",
+					["minLevel"] = 0,
 				}, -- [12]
 				{
 					["equipLoc"] = "",
@@ -948,13 +948,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 134714,
 					["itemID"] = 7070,
-					["name"] = "Elemental Water",
+					["value"] = 400,
 					["count"] = 10,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 134714,
+					["name"] = "Elemental Water",
+					["minLevel"] = 0,
 				}, -- [13]
 				{
 					["equipLoc"] = "",
@@ -967,13 +967,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 134714,
 					["itemID"] = 7070,
-					["name"] = "Elemental Water",
+					["value"] = 400,
 					["count"] = 10,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 134714,
+					["name"] = "Elemental Water",
+					["minLevel"] = 0,
 				}, -- [14]
 				{
 				}, -- [15]
@@ -1032,13 +1032,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 134714,
 					["itemID"] = 7070,
-					["name"] = "Elemental Water",
+					["value"] = 400,
 					["count"] = 10,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 134714,
+					["name"] = "Elemental Water",
+					["minLevel"] = 0,
 				}, -- [1]
 				{
 					["equipLoc"] = "",
@@ -1051,13 +1051,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 134714,
 					["itemID"] = 7070,
-					["name"] = "Elemental Water",
+					["value"] = 400,
 					["count"] = 10,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 134714,
+					["name"] = "Elemental Water",
+					["minLevel"] = 0,
 				}, -- [2]
 				{
 					["equipLoc"] = "",
@@ -1070,13 +1070,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 134714,
 					["itemID"] = 7070,
-					["name"] = "Elemental Water",
+					["value"] = 400,
 					["count"] = 10,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 134714,
+					["name"] = "Elemental Water",
+					["minLevel"] = 0,
 				}, -- [3]
 				{
 					["equipLoc"] = "",
@@ -1089,13 +1089,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 135805,
 					["itemID"] = 7068,
-					["name"] = "Elemental Fire",
+					["value"] = 400,
 					["count"] = 1,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 135805,
+					["name"] = "Elemental Fire",
+					["minLevel"] = 0,
 				}, -- [4]
 				{
 					["equipLoc"] = "",
@@ -1108,13 +1108,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 135805,
 					["itemID"] = 7068,
-					["name"] = "Elemental Fire",
+					["value"] = 400,
 					["count"] = 10,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 135805,
+					["name"] = "Elemental Fire",
+					["minLevel"] = 0,
 				}, -- [5]
 				{
 					["equipLoc"] = "",
@@ -1127,13 +1127,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 135805,
 					["itemID"] = 7068,
-					["name"] = "Elemental Fire",
+					["value"] = 400,
 					["count"] = 10,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 135805,
+					["name"] = "Elemental Fire",
+					["minLevel"] = 0,
 				}, -- [6]
 				{
 					["equipLoc"] = "",
@@ -1146,13 +1146,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 135805,
 					["itemID"] = 7068,
-					["name"] = "Elemental Fire",
+					["value"] = 400,
 					["count"] = 10,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 135805,
+					["name"] = "Elemental Fire",
+					["minLevel"] = 0,
 				}, -- [7]
 				{
 					["equipLoc"] = "",
@@ -1165,13 +1165,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 135805,
 					["itemID"] = 7068,
-					["name"] = "Elemental Fire",
+					["value"] = 400,
 					["count"] = 10,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 135805,
+					["name"] = "Elemental Fire",
+					["minLevel"] = 0,
 				}, -- [8]
 				{
 					["equipLoc"] = "",
@@ -1184,13 +1184,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 135805,
 					["itemID"] = 7068,
-					["name"] = "Elemental Fire",
+					["value"] = 400,
 					["count"] = 10,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 135805,
+					["name"] = "Elemental Fire",
+					["minLevel"] = 0,
 				}, -- [9]
 				{
 					["equipLoc"] = "",
@@ -1203,13 +1203,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 135805,
 					["itemID"] = 7068,
-					["name"] = "Elemental Fire",
+					["value"] = 400,
 					["count"] = 10,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 135805,
+					["name"] = "Elemental Fire",
+					["minLevel"] = 0,
 				}, -- [10]
 				{
 					["equipLoc"] = "",
@@ -1222,13 +1222,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 135805,
 					["itemID"] = 7068,
-					["name"] = "Elemental Fire",
+					["value"] = 400,
 					["count"] = 10,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 135805,
+					["name"] = "Elemental Fire",
+					["minLevel"] = 0,
 				}, -- [11]
 				{
 					["equipLoc"] = "",
@@ -1241,13 +1241,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 135805,
 					["itemID"] = 7068,
-					["name"] = "Elemental Fire",
+					["value"] = 400,
 					["count"] = 10,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 135805,
+					["name"] = "Elemental Fire",
+					["minLevel"] = 0,
 				}, -- [12]
 				{
 					["equipLoc"] = "",
@@ -1260,13 +1260,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 135805,
 					["itemID"] = 7068,
-					["name"] = "Elemental Fire",
+					["value"] = 400,
 					["count"] = 10,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 135805,
+					["name"] = "Elemental Fire",
+					["minLevel"] = 0,
 				}, -- [13]
 				{
 					["equipLoc"] = "",
@@ -1279,13 +1279,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 135805,
 					["itemID"] = 7068,
-					["name"] = "Elemental Fire",
+					["value"] = 400,
 					["count"] = 10,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 135805,
+					["name"] = "Elemental Fire",
+					["minLevel"] = 0,
 				}, -- [14]
 				{
 				}, -- [15]
@@ -1344,13 +1344,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 134572,
 					["itemID"] = 7067,
-					["name"] = "Elemental Earth",
+					["value"] = 400,
 					["count"] = 6,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 134572,
+					["name"] = "Elemental Earth",
+					["minLevel"] = 0,
 				}, -- [1]
 				{
 					["equipLoc"] = "",
@@ -1363,13 +1363,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 134572,
 					["itemID"] = 7067,
-					["name"] = "Elemental Earth",
+					["value"] = 400,
 					["count"] = 10,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 134572,
+					["name"] = "Elemental Earth",
+					["minLevel"] = 0,
 				}, -- [2]
 				{
 					["equipLoc"] = "",
@@ -1382,13 +1382,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 134572,
 					["itemID"] = 7067,
-					["name"] = "Elemental Earth",
+					["value"] = 400,
 					["count"] = 10,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 134572,
+					["name"] = "Elemental Earth",
+					["minLevel"] = 0,
 				}, -- [3]
 				{
 					["equipLoc"] = "",
@@ -1401,13 +1401,13 @@ Sorted_Data = {
 					["classID"] = 7,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 132895,
 					["itemID"] = 14342,
-					["name"] = "Mooncloth",
+					["value"] = 4000,
 					["count"] = 20,
 					["bound"] = false,
-					["value"] = 4000,
-					["texture"] = 132895,
+					["name"] = "Mooncloth",
+					["minLevel"] = 0,
 				}, -- [4]
 				{
 					["equipLoc"] = "",
@@ -1420,13 +1420,13 @@ Sorted_Data = {
 					["classID"] = 7,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 132895,
 					["itemID"] = 14342,
-					["name"] = "Mooncloth",
+					["value"] = 4000,
 					["count"] = 20,
 					["bound"] = false,
-					["value"] = 4000,
-					["texture"] = 132895,
+					["name"] = "Mooncloth",
+					["minLevel"] = 0,
 				}, -- [5]
 				{
 					["equipLoc"] = "",
@@ -1439,13 +1439,13 @@ Sorted_Data = {
 					["classID"] = 7,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 134200,
 					["itemID"] = 4625,
-					["name"] = "Firebloom",
+					["value"] = 250,
 					["count"] = 15,
 					["bound"] = false,
-					["value"] = 250,
-					["texture"] = 134200,
+					["name"] = "Firebloom",
+					["minLevel"] = 0,
 				}, -- [6]
 				{
 					["equipLoc"] = "",
@@ -1458,13 +1458,13 @@ Sorted_Data = {
 					["classID"] = 7,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 134200,
 					["itemID"] = 4625,
-					["name"] = "Firebloom",
+					["value"] = 250,
 					["count"] = 20,
 					["bound"] = false,
-					["value"] = 250,
-					["texture"] = 134200,
+					["name"] = "Firebloom",
+					["minLevel"] = 0,
 				}, -- [7]
 				{
 					["equipLoc"] = "",
@@ -1477,13 +1477,13 @@ Sorted_Data = {
 					["classID"] = 7,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 134193,
 					["itemID"] = 3818,
-					["name"] = "Fadeleaf",
+					["value"] = 125,
 					["count"] = 6,
 					["bound"] = false,
-					["value"] = 125,
-					["texture"] = 134193,
+					["name"] = "Fadeleaf",
+					["minLevel"] = 0,
 				}, -- [8]
 				{
 					["equipLoc"] = "",
@@ -1496,13 +1496,13 @@ Sorted_Data = {
 					["classID"] = 7,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 134193,
 					["itemID"] = 3818,
-					["name"] = "Fadeleaf",
+					["value"] = 125,
 					["count"] = 20,
 					["bound"] = false,
-					["value"] = 125,
-					["texture"] = 134193,
+					["name"] = "Fadeleaf",
+					["minLevel"] = 0,
 				}, -- [9]
 				{
 					["equipLoc"] = "",
@@ -1515,13 +1515,13 @@ Sorted_Data = {
 					["classID"] = 7,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 134193,
 					["itemID"] = 3818,
-					["name"] = "Fadeleaf",
+					["value"] = 125,
 					["count"] = 20,
 					["bound"] = false,
-					["value"] = 125,
-					["texture"] = 134193,
+					["name"] = "Fadeleaf",
+					["minLevel"] = 0,
 				}, -- [10]
 				{
 					["equipLoc"] = "",
@@ -1534,13 +1534,13 @@ Sorted_Data = {
 					["classID"] = 7,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 134193,
 					["itemID"] = 3818,
-					["name"] = "Fadeleaf",
+					["value"] = 125,
 					["count"] = 20,
 					["bound"] = false,
-					["value"] = 125,
-					["texture"] = 134193,
+					["name"] = "Fadeleaf",
+					["minLevel"] = 0,
 				}, -- [11]
 				{
 					["equipLoc"] = "",
@@ -1553,13 +1553,13 @@ Sorted_Data = {
 					["classID"] = 7,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 134193,
 					["itemID"] = 3818,
-					["name"] = "Fadeleaf",
+					["value"] = 125,
 					["count"] = 20,
 					["bound"] = false,
-					["value"] = 125,
-					["texture"] = 134193,
+					["name"] = "Fadeleaf",
+					["minLevel"] = 0,
 				}, -- [12]
 				{
 					["equipLoc"] = "",
@@ -1572,13 +1572,13 @@ Sorted_Data = {
 					["classID"] = 7,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 134193,
 					["itemID"] = 3818,
-					["name"] = "Fadeleaf",
+					["value"] = 125,
 					["count"] = 20,
 					["bound"] = false,
-					["value"] = 125,
-					["texture"] = 134193,
+					["name"] = "Fadeleaf",
+					["minLevel"] = 0,
 				}, -- [13]
 				{
 					["equipLoc"] = "",
@@ -1591,13 +1591,13 @@ Sorted_Data = {
 					["classID"] = 7,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 134193,
 					["itemID"] = 3818,
-					["name"] = "Fadeleaf",
+					["value"] = 125,
 					["count"] = 20,
 					["bound"] = false,
-					["value"] = 125,
-					["texture"] = 134193,
+					["name"] = "Fadeleaf",
+					["minLevel"] = 0,
 				}, -- [14]
 				{
 				}, -- [15]
@@ -1656,13 +1656,13 @@ Sorted_Data = {
 					["classID"] = 7,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 134193,
 					["itemID"] = 3818,
-					["name"] = "Fadeleaf",
+					["value"] = 125,
 					["count"] = 20,
 					["bound"] = false,
-					["value"] = 125,
-					["texture"] = 134193,
+					["name"] = "Fadeleaf",
+					["minLevel"] = 0,
 				}, -- [1]
 				{
 					["equipLoc"] = "",
@@ -1675,13 +1675,13 @@ Sorted_Data = {
 					["classID"] = 7,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 134193,
 					["itemID"] = 3818,
-					["name"] = "Fadeleaf",
+					["value"] = 125,
 					["count"] = 20,
 					["bound"] = false,
-					["value"] = 125,
-					["texture"] = 134193,
+					["name"] = "Fadeleaf",
+					["minLevel"] = 0,
 				}, -- [2]
 				{
 					["equipLoc"] = "",
@@ -1694,13 +1694,13 @@ Sorted_Data = {
 					["classID"] = 7,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 134193,
 					["itemID"] = 3818,
-					["name"] = "Fadeleaf",
+					["value"] = 125,
 					["count"] = 20,
 					["bound"] = false,
-					["value"] = 125,
-					["texture"] = 134193,
+					["name"] = "Fadeleaf",
+					["minLevel"] = 0,
 				}, -- [3]
 				{
 					["equipLoc"] = "",
@@ -1713,13 +1713,13 @@ Sorted_Data = {
 					["classID"] = 7,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 133849,
 					["itemID"] = 3369,
-					["name"] = "Grave Moss",
+					["value"] = 25,
 					["count"] = 2,
 					["bound"] = false,
-					["value"] = 25,
-					["texture"] = 133849,
+					["name"] = "Grave Moss",
+					["minLevel"] = 0,
 				}, -- [4]
 				{
 					["equipLoc"] = "",
@@ -1732,13 +1732,13 @@ Sorted_Data = {
 					["classID"] = 7,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 133849,
 					["itemID"] = 3369,
-					["name"] = "Grave Moss",
+					["value"] = 25,
 					["count"] = 20,
 					["bound"] = false,
-					["value"] = 25,
-					["texture"] = 133849,
+					["name"] = "Grave Moss",
+					["minLevel"] = 0,
 				}, -- [5]
 				{
 					["equipLoc"] = "",
@@ -1751,13 +1751,13 @@ Sorted_Data = {
 					["classID"] = 7,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 133849,
 					["itemID"] = 3369,
-					["name"] = "Grave Moss",
+					["value"] = 25,
 					["count"] = 20,
 					["bound"] = false,
-					["value"] = 25,
-					["texture"] = 133849,
+					["name"] = "Grave Moss",
+					["minLevel"] = 0,
 				}, -- [6]
 				{
 					["equipLoc"] = "",
@@ -1770,13 +1770,13 @@ Sorted_Data = {
 					["classID"] = 7,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 133849,
 					["itemID"] = 3369,
-					["name"] = "Grave Moss",
+					["value"] = 25,
 					["count"] = 20,
 					["bound"] = false,
-					["value"] = 25,
-					["texture"] = 133849,
+					["name"] = "Grave Moss",
+					["minLevel"] = 0,
 				}, -- [7]
 				{
 					["equipLoc"] = "",
@@ -1789,13 +1789,13 @@ Sorted_Data = {
 					["classID"] = 7,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 133849,
 					["itemID"] = 3369,
-					["name"] = "Grave Moss",
+					["value"] = 25,
 					["count"] = 20,
 					["bound"] = false,
-					["value"] = 25,
-					["texture"] = 133849,
+					["name"] = "Grave Moss",
+					["minLevel"] = 0,
 				}, -- [8]
 				{
 					["equipLoc"] = "",
@@ -1808,13 +1808,13 @@ Sorted_Data = {
 					["classID"] = 7,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 133849,
 					["itemID"] = 3369,
-					["name"] = "Grave Moss",
+					["value"] = 25,
 					["count"] = 20,
 					["bound"] = false,
-					["value"] = 25,
-					["texture"] = 133849,
+					["name"] = "Grave Moss",
+					["minLevel"] = 0,
 				}, -- [9]
 				{
 					["equipLoc"] = "",
@@ -1827,13 +1827,13 @@ Sorted_Data = {
 					["classID"] = 7,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 133849,
 					["itemID"] = 3369,
-					["name"] = "Grave Moss",
+					["value"] = 25,
 					["count"] = 20,
 					["bound"] = false,
-					["value"] = 25,
-					["texture"] = 133849,
+					["name"] = "Grave Moss",
+					["minLevel"] = 0,
 				}, -- [10]
 				{
 					["equipLoc"] = "",
@@ -1846,13 +1846,13 @@ Sorted_Data = {
 					["classID"] = 7,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 133849,
 					["itemID"] = 3369,
-					["name"] = "Grave Moss",
+					["value"] = 25,
 					["count"] = 20,
 					["bound"] = false,
-					["value"] = 25,
-					["texture"] = 133849,
+					["name"] = "Grave Moss",
+					["minLevel"] = 0,
 				}, -- [11]
 				{
 					["equipLoc"] = "",
@@ -1865,13 +1865,13 @@ Sorted_Data = {
 					["classID"] = 7,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 133849,
 					["itemID"] = 3369,
-					["name"] = "Grave Moss",
+					["value"] = 25,
 					["count"] = 20,
 					["bound"] = false,
-					["value"] = 25,
-					["texture"] = 133849,
+					["name"] = "Grave Moss",
+					["minLevel"] = 0,
 				}, -- [12]
 				{
 					["equipLoc"] = "",
@@ -1884,13 +1884,13 @@ Sorted_Data = {
 					["classID"] = 7,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 133849,
 					["itemID"] = 3369,
-					["name"] = "Grave Moss",
+					["value"] = 25,
 					["count"] = 20,
 					["bound"] = false,
-					["value"] = 25,
-					["texture"] = 133849,
+					["name"] = "Grave Moss",
+					["minLevel"] = 0,
 				}, -- [13]
 				{
 					["equipLoc"] = "",
@@ -1903,13 +1903,13 @@ Sorted_Data = {
 					["classID"] = 7,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 133849,
 					["itemID"] = 3369,
-					["name"] = "Grave Moss",
+					["value"] = 25,
 					["count"] = 20,
 					["bound"] = false,
-					["value"] = 25,
-					["texture"] = 133849,
+					["name"] = "Grave Moss",
+					["minLevel"] = 0,
 				}, -- [14]
 				{
 				}, -- [15]
@@ -1968,13 +1968,13 @@ Sorted_Data = {
 					["classID"] = 7,
 					["expacID"] = 254,
 					["hasNoValue"] = true,
-					["minLevel"] = 0,
+					["texture"] = 132880,
 					["itemID"] = 20725,
-					["name"] = "Nexus Crystal",
+					["value"] = 0,
 					["count"] = 19,
 					["bound"] = false,
-					["value"] = 0,
-					["texture"] = 132880,
+					["name"] = "Nexus Crystal",
+					["minLevel"] = 0,
 				}, -- [1]
 				{
 					["equipLoc"] = "",
@@ -1987,13 +1987,13 @@ Sorted_Data = {
 					["classID"] = 7,
 					["expacID"] = 254,
 					["hasNoValue"] = true,
-					["minLevel"] = 0,
+					["texture"] = 132880,
 					["itemID"] = 20725,
-					["name"] = "Nexus Crystal",
+					["value"] = 0,
 					["count"] = 20,
 					["bound"] = false,
-					["value"] = 0,
-					["texture"] = 132880,
+					["name"] = "Nexus Crystal",
+					["minLevel"] = 0,
 				}, -- [2]
 				{
 					["equipLoc"] = "",
@@ -2006,13 +2006,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 136007,
 					["itemID"] = 7080,
-					["name"] = "Essence of Water",
+					["value"] = 400,
 					["count"] = 6,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 136007,
+					["name"] = "Essence of Water",
+					["minLevel"] = 0,
 				}, -- [3]
 				{
 					["equipLoc"] = "",
@@ -2025,13 +2025,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 136007,
 					["itemID"] = 7080,
-					["name"] = "Essence of Water",
+					["value"] = 400,
 					["count"] = 10,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 136007,
+					["name"] = "Essence of Water",
+					["minLevel"] = 0,
 				}, -- [4]
 				{
 					["equipLoc"] = "",
@@ -2044,13 +2044,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 136007,
 					["itemID"] = 7080,
-					["name"] = "Essence of Water",
+					["value"] = 400,
 					["count"] = 10,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 136007,
+					["name"] = "Essence of Water",
+					["minLevel"] = 0,
 				}, -- [5]
 				{
 					["equipLoc"] = "",
@@ -2063,13 +2063,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 136007,
 					["itemID"] = 7080,
-					["name"] = "Essence of Water",
+					["value"] = 400,
 					["count"] = 10,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 136007,
+					["name"] = "Essence of Water",
+					["minLevel"] = 0,
 				}, -- [6]
 				{
 					["equipLoc"] = "",
@@ -2082,13 +2082,13 @@ Sorted_Data = {
 					["classID"] = 0,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 48,
+					["texture"] = 134800,
 					["itemID"] = 13456,
-					["name"] = "Greater Frost Protection Potion",
+					["value"] = 750,
 					["count"] = 4,
 					["bound"] = false,
-					["value"] = 750,
-					["texture"] = 134800,
+					["name"] = "Greater Frost Protection Potion",
+					["minLevel"] = 48,
 				}, -- [7]
 				{
 					["equipLoc"] = "",
@@ -2101,13 +2101,13 @@ Sorted_Data = {
 					["classID"] = 0,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 48,
+					["texture"] = 134800,
 					["itemID"] = 13456,
-					["name"] = "Greater Frost Protection Potion",
+					["value"] = 750,
 					["count"] = 5,
 					["bound"] = false,
-					["value"] = 750,
-					["texture"] = 134800,
+					["name"] = "Greater Frost Protection Potion",
+					["minLevel"] = 48,
 				}, -- [8]
 				{
 					["equipLoc"] = "",
@@ -2120,13 +2120,13 @@ Sorted_Data = {
 					["classID"] = 0,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 48,
+					["texture"] = 134800,
 					["itemID"] = 13456,
-					["name"] = "Greater Frost Protection Potion",
+					["value"] = 750,
 					["count"] = 5,
 					["bound"] = false,
-					["value"] = 750,
-					["texture"] = 134800,
+					["name"] = "Greater Frost Protection Potion",
+					["minLevel"] = 48,
 				}, -- [9]
 				{
 					["equipLoc"] = "",
@@ -2139,13 +2139,13 @@ Sorted_Data = {
 					["classID"] = 0,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 48,
+					["texture"] = 134800,
 					["itemID"] = 13456,
-					["name"] = "Greater Frost Protection Potion",
+					["value"] = 750,
 					["count"] = 5,
 					["bound"] = false,
-					["value"] = 750,
-					["texture"] = 134800,
+					["name"] = "Greater Frost Protection Potion",
+					["minLevel"] = 48,
 				}, -- [10]
 				{
 					["equipLoc"] = "",
@@ -2158,13 +2158,13 @@ Sorted_Data = {
 					["classID"] = 0,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 48,
+					["texture"] = 134800,
 					["itemID"] = 13456,
-					["name"] = "Greater Frost Protection Potion",
+					["value"] = 750,
 					["count"] = 5,
 					["bound"] = false,
-					["value"] = 750,
-					["texture"] = 134800,
+					["name"] = "Greater Frost Protection Potion",
+					["minLevel"] = 48,
 				}, -- [11]
 				{
 					["equipLoc"] = "",
@@ -2177,13 +2177,13 @@ Sorted_Data = {
 					["classID"] = 0,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 48,
+					["texture"] = 134800,
 					["itemID"] = 13456,
-					["name"] = "Greater Frost Protection Potion",
+					["value"] = 750,
 					["count"] = 5,
 					["bound"] = false,
-					["value"] = 750,
-					["texture"] = 134800,
+					["name"] = "Greater Frost Protection Potion",
+					["minLevel"] = 48,
 				}, -- [12]
 				{
 					["equipLoc"] = "",
@@ -2196,13 +2196,13 @@ Sorted_Data = {
 					["classID"] = 0,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 48,
+					["texture"] = 134800,
 					["itemID"] = 13456,
-					["name"] = "Greater Frost Protection Potion",
+					["value"] = 750,
 					["count"] = 5,
 					["bound"] = false,
-					["value"] = 750,
-					["texture"] = 134800,
+					["name"] = "Greater Frost Protection Potion",
+					["minLevel"] = 48,
 				}, -- [13]
 				{
 					["equipLoc"] = "",
@@ -2215,13 +2215,13 @@ Sorted_Data = {
 					["classID"] = 0,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 48,
+					["texture"] = 134800,
 					["itemID"] = 13456,
-					["name"] = "Greater Frost Protection Potion",
+					["value"] = 750,
 					["count"] = 5,
 					["bound"] = false,
-					["value"] = 750,
-					["texture"] = 134800,
+					["name"] = "Greater Frost Protection Potion",
+					["minLevel"] = 48,
 				}, -- [14]
 				{
 				}, -- [15]
@@ -2346,262 +2346,262 @@ Sorted_Data = {
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 1,
-					["bindType"] = 1,
-					["subClassID"] = 0,
-					["level"] = 1,
 					["classID"] = 15,
-					["expacID"] = 254,
-					["minLevel"] = 0,
+					["bindType"] = 1,
+					["level"] = 1,
 					["name"] = "Hearthstone",
-					["bound"] = true,
+					["subClassID"] = 0,
 					["value"] = 0,
+					["bound"] = true,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [1]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 41,
-					["bindType"] = 0,
-					["subClassID"] = 0,
-					["level"] = 41,
 					["classID"] = 7,
-					["expacID"] = 254,
-					["minLevel"] = 0,
+					["bindType"] = 0,
+					["level"] = 41,
 					["name"] = "Firebloom",
-					["bound"] = false,
+					["subClassID"] = 0,
 					["value"] = 250,
+					["bound"] = false,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [2]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 41,
-					["bindType"] = 0,
-					["subClassID"] = 0,
-					["level"] = 41,
 					["classID"] = 7,
-					["expacID"] = 254,
-					["minLevel"] = 0,
+					["bindType"] = 0,
+					["level"] = 41,
 					["name"] = "Firebloom",
-					["bound"] = false,
+					["subClassID"] = 0,
 					["value"] = 250,
+					["bound"] = false,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [3]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 40,
-					["bindType"] = 0,
-					["subClassID"] = 0,
-					["level"] = 40,
 					["classID"] = 7,
-					["expacID"] = 254,
-					["minLevel"] = 0,
+					["bindType"] = 0,
+					["level"] = 40,
 					["name"] = "Mageweave Cloth",
-					["bound"] = false,
+					["subClassID"] = 0,
 					["value"] = 250,
+					["bound"] = false,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [4]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 40,
-					["bindType"] = 0,
-					["subClassID"] = 0,
-					["level"] = 40,
 					["classID"] = 7,
-					["expacID"] = 254,
-					["minLevel"] = 0,
+					["bindType"] = 0,
+					["level"] = 40,
 					["name"] = "Mageweave Cloth",
-					["bound"] = false,
+					["subClassID"] = 0,
 					["value"] = 250,
+					["bound"] = false,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [5]
 				{
 					["equipLoc"] = "INVTYPE_CLOAK",
 					["effectiveILvl"] = 43,
-					["bindType"] = 2,
-					["subClassID"] = 1,
-					["level"] = 43,
 					["classID"] = 4,
-					["expacID"] = 254,
-					["minLevel"] = 38,
+					["bindType"] = 2,
+					["level"] = 43,
 					["name"] = "Bloodwoven Cloak of the Owl",
-					["bound"] = false,
+					["subClassID"] = 1,
 					["value"] = 4044,
+					["bound"] = false,
+					["minLevel"] = 38,
+					["expacID"] = 254,
 				}, -- [6]
 				{
 					["equipLoc"] = "INVTYPE_WAIST",
 					["effectiveILvl"] = 42,
-					["bindType"] = 2,
-					["subClassID"] = 1,
-					["level"] = 42,
 					["classID"] = 4,
-					["expacID"] = 254,
-					["minLevel"] = 36,
+					["bindType"] = 2,
+					["level"] = 42,
 					["name"] = "Lunar Belt of Intellect",
-					["bound"] = false,
+					["subClassID"] = 1,
 					["value"] = 2628,
+					["bound"] = false,
+					["minLevel"] = 36,
+					["expacID"] = 254,
 				}, -- [7]
 				{
 					["equipLoc"] = "INVTYPE_LEGS",
 					["effectiveILvl"] = 43,
-					["bindType"] = 2,
-					["subClassID"] = 1,
-					["level"] = 43,
 					["classID"] = 4,
-					["expacID"] = 254,
-					["minLevel"] = 38,
+					["bindType"] = 2,
+					["level"] = 43,
 					["name"] = "Darkmist Pants of the Owl",
-					["bound"] = false,
+					["subClassID"] = 1,
 					["value"] = 5413,
+					["bound"] = false,
+					["minLevel"] = 38,
+					["expacID"] = 254,
 				}, -- [8]
 				{
 					["equipLoc"] = "INVTYPE_LEGS",
 					["effectiveILvl"] = 43,
-					["bindType"] = 2,
-					["subClassID"] = 3,
-					["level"] = 43,
 					["classID"] = 4,
-					["expacID"] = 254,
-					["minLevel"] = 38,
+					["bindType"] = 2,
+					["level"] = 43,
 					["name"] = "Ravager's Woolies",
-					["bound"] = false,
+					["subClassID"] = 3,
 					["value"] = 8367,
+					["bound"] = false,
+					["minLevel"] = 38,
+					["expacID"] = 254,
 				}, -- [9]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 45,
-					["bindType"] = 0,
-					["subClassID"] = 0,
-					["level"] = 45,
 					["classID"] = 0,
-					["expacID"] = 254,
-					["minLevel"] = 35,
+					["bindType"] = 0,
+					["level"] = 45,
 					["name"] = "Superior Healing Potion",
-					["bound"] = false,
+					["subClassID"] = 0,
 					["value"] = 250,
+					["bound"] = false,
+					["minLevel"] = 35,
+					["expacID"] = 254,
 				}, -- [10]
 				{
 					["equipLoc"] = "INVTYPE_CLOAK",
 					["effectiveILvl"] = 36,
-					["bindType"] = 2,
-					["subClassID"] = 1,
-					["level"] = 36,
 					["classID"] = 4,
-					["expacID"] = 254,
-					["minLevel"] = 31,
+					["bindType"] = 2,
+					["level"] = 36,
 					["name"] = "Trickster's Cloak of the Eagle",
-					["bound"] = false,
+					["subClassID"] = 1,
 					["value"] = 2431,
+					["bound"] = false,
+					["minLevel"] = 31,
+					["expacID"] = 254,
 				}, -- [11]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 63,
-					["bindType"] = 0,
-					["subClassID"] = 4,
-					["level"] = 63,
 					["classID"] = 9,
-					["expacID"] = 254,
-					["minLevel"] = 0,
+					["bindType"] = 0,
+					["level"] = 63,
 					["name"] = "Plans: Hammer of the Titans",
-					["bound"] = false,
+					["subClassID"] = 4,
 					["value"] = 20000,
+					["bound"] = false,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [12]
 				{
 					["equipLoc"] = "INVTYPE_CHEST",
 					["effectiveILvl"] = 43,
-					["bindType"] = 2,
-					["subClassID"] = 4,
-					["level"] = 43,
 					["classID"] = 4,
-					["expacID"] = 254,
-					["minLevel"] = 40,
+					["bindType"] = 2,
+					["level"] = 43,
 					["name"] = "Symbolic Breastplate",
-					["bound"] = false,
+					["subClassID"] = 4,
 					["value"] = 5290,
+					["bound"] = false,
+					["minLevel"] = 40,
+					["expacID"] = 254,
 				}, -- [13]
 				{
 					["equipLoc"] = "INVTYPE_SHOULDER",
 					["effectiveILvl"] = 45,
-					["bindType"] = 2,
-					["subClassID"] = 1,
-					["level"] = 45,
 					["classID"] = 4,
-					["expacID"] = 254,
-					["minLevel"] = 40,
+					["bindType"] = 2,
+					["level"] = 45,
 					["name"] = "Royal Amice of the Owl",
-					["bound"] = false,
+					["subClassID"] = 1,
 					["value"] = 5037,
+					["bound"] = false,
+					["minLevel"] = 40,
+					["expacID"] = 254,
 				}, -- [14]
 				{
 					["equipLoc"] = "INVTYPE_WRIST",
 					["effectiveILvl"] = 45,
-					["bindType"] = 2,
-					["subClassID"] = 3,
-					["level"] = 45,
 					["classID"] = 4,
-					["expacID"] = 254,
-					["minLevel"] = 40,
+					["bindType"] = 2,
+					["level"] = 45,
 					["name"] = "Khan's Bindings",
-					["bound"] = false,
+					["subClassID"] = 3,
 					["value"] = 4933,
+					["bound"] = false,
+					["minLevel"] = 40,
+					["expacID"] = 254,
 				}, -- [15]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 40,
-					["bindType"] = 0,
-					["subClassID"] = 0,
-					["level"] = 40,
 					["classID"] = 7,
-					["expacID"] = 254,
-					["minLevel"] = 0,
+					["bindType"] = 0,
+					["level"] = 40,
 					["name"] = "Mageweave Cloth",
-					["bound"] = false,
+					["subClassID"] = 0,
 					["value"] = 250,
+					["bound"] = false,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [16]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 42,
-					["bindType"] = 0,
-					["subClassID"] = 8,
-					["level"] = 42,
 					["classID"] = 9,
-					["expacID"] = 254,
-					["minLevel"] = 0,
+					["bindType"] = 0,
+					["level"] = 42,
 					["name"] = "Formula: Enchant Shield - Stamina",
-					["bound"] = false,
+					["subClassID"] = 8,
 					["value"] = 1100,
+					["bound"] = false,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [17]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 40,
-					["bindType"] = 0,
-					["subClassID"] = 0,
-					["level"] = 40,
 					["classID"] = 7,
-					["expacID"] = 254,
-					["minLevel"] = 0,
+					["bindType"] = 0,
+					["level"] = 40,
 					["name"] = "Mageweave Cloth",
-					["bound"] = false,
+					["subClassID"] = 0,
 					["value"] = 250,
+					["bound"] = false,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [18]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 40,
-					["bindType"] = 0,
-					["subClassID"] = 0,
-					["level"] = 40,
 					["classID"] = 7,
-					["expacID"] = 254,
-					["minLevel"] = 0,
+					["bindType"] = 0,
+					["level"] = 40,
 					["name"] = "Mageweave Cloth",
-					["bound"] = false,
+					["subClassID"] = 0,
 					["value"] = 250,
+					["bound"] = false,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [19]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 40,
-					["bindType"] = 0,
-					["subClassID"] = 0,
-					["level"] = 40,
 					["classID"] = 7,
-					["expacID"] = 254,
-					["minLevel"] = 0,
+					["bindType"] = 0,
+					["level"] = 40,
 					["name"] = "Mageweave Cloth",
-					["bound"] = false,
+					["subClassID"] = 0,
 					["value"] = 250,
+					["bound"] = false,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [20]
 				{
 				}, -- [21]
@@ -2646,32 +2646,13 @@ Sorted_Data = {
 					["classID"] = 1,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 133652,
 					["itemID"] = 14046,
-					["name"] = "Runecloth Bag",
+					["value"] = 5000,
 					["count"] = 1,
 					["bound"] = false,
-					["value"] = 5000,
-					["texture"] = 133652,
-				},
-				[0] = {
-					["equipLoc"] = "INVTYPE_BAG",
-					["effectiveILvl"] = 52,
-					["bindType"] = 0,
-					["subClassID"] = 0,
-					["level"] = 52,
-					["quality"] = 1,
-					["link"] = "|cffffffff|Hitem:14046::::::::5:::::::|h[Runecloth Bag]|h|r",
-					["classID"] = 1,
-					["expacID"] = 254,
-					["hasNoValue"] = false,
-					["minLevel"] = 0,
-					["itemID"] = 14046,
 					["name"] = "Runecloth Bag",
-					["count"] = 1,
-					["bound"] = false,
-					["value"] = 5000,
-					["texture"] = 133652,
+					["minLevel"] = 0,
 				},
 				[-3] = {
 					["equipLoc"] = "INVTYPE_BAG",
@@ -2684,13 +2665,13 @@ Sorted_Data = {
 					["classID"] = 1,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 133652,
 					["itemID"] = 14046,
-					["name"] = "Runecloth Bag",
+					["value"] = 5000,
 					["count"] = 1,
 					["bound"] = false,
-					["value"] = 5000,
-					["texture"] = 133652,
+					["name"] = "Runecloth Bag",
+					["minLevel"] = 0,
 				},
 				[-1] = {
 					["equipLoc"] = "INVTYPE_BAG",
@@ -2703,13 +2684,32 @@ Sorted_Data = {
 					["classID"] = 1,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 133652,
 					["itemID"] = 14046,
-					["name"] = "Runecloth Bag",
+					["value"] = 5000,
 					["count"] = 1,
 					["bound"] = false,
-					["value"] = 5000,
+					["name"] = "Runecloth Bag",
+					["minLevel"] = 0,
+				},
+				[0] = {
+					["equipLoc"] = "INVTYPE_BAG",
+					["effectiveILvl"] = 52,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 52,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:14046::::::::5:::::::|h[Runecloth Bag]|h|r",
+					["classID"] = 1,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
 					["texture"] = 133652,
+					["itemID"] = 14046,
+					["value"] = 5000,
+					["count"] = 1,
+					["bound"] = false,
+					["name"] = "Runecloth Bag",
+					["minLevel"] = 0,
 				},
 			},
 			[-4] = {
@@ -2724,13 +2724,13 @@ Sorted_Data = {
 					["classID"] = 1,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 133629,
 					["itemID"] = 3914,
-					["name"] = "Journeyman's Backpack",
+					["value"] = 6250,
 					["count"] = 1,
 					["bound"] = false,
-					["value"] = 6250,
-					["texture"] = 133629,
+					["name"] = "Journeyman's Backpack",
+					["minLevel"] = 0,
 				}, -- [1]
 				{
 					["equipLoc"] = "INVTYPE_BAG",
@@ -2743,13 +2743,13 @@ Sorted_Data = {
 					["classID"] = 1,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 133629,
 					["itemID"] = 3914,
-					["name"] = "Journeyman's Backpack",
+					["value"] = 6250,
 					["count"] = 1,
 					["bound"] = false,
-					["value"] = 6250,
-					["texture"] = 133629,
+					["name"] = "Journeyman's Backpack",
+					["minLevel"] = 0,
 				}, -- [2]
 				{
 					["equipLoc"] = "INVTYPE_BAG",
@@ -2762,13 +2762,13 @@ Sorted_Data = {
 					["classID"] = 1,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 133629,
 					["itemID"] = 3914,
-					["name"] = "Journeyman's Backpack",
+					["value"] = 6250,
 					["count"] = 1,
 					["bound"] = false,
-					["value"] = 6250,
-					["texture"] = 133629,
+					["name"] = "Journeyman's Backpack",
+					["minLevel"] = 0,
 				}, -- [3]
 				{
 					["equipLoc"] = "INVTYPE_BAG",
@@ -2781,13 +2781,13 @@ Sorted_Data = {
 					["classID"] = 1,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 133629,
 					["itemID"] = 3914,
-					["name"] = "Journeyman's Backpack",
+					["value"] = 6250,
 					["count"] = 1,
 					["bound"] = false,
-					["value"] = 6250,
-					["texture"] = 133629,
+					["name"] = "Journeyman's Backpack",
+					["minLevel"] = 0,
 				}, -- [4]
 				{
 					["equipLoc"] = "INVTYPE_BAG",
@@ -2800,13 +2800,13 @@ Sorted_Data = {
 					["classID"] = 1,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 133629,
 					["itemID"] = 3914,
-					["name"] = "Journeyman's Backpack",
+					["value"] = 6250,
 					["count"] = 1,
 					["bound"] = false,
-					["value"] = 6250,
-					["texture"] = 133629,
+					["name"] = "Journeyman's Backpack",
+					["minLevel"] = 0,
 				}, -- [5]
 				{
 				}, -- [6]
@@ -2815,184 +2815,184 @@ Sorted_Data = {
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 25,
+					["classID"] = 5,
 					["bindType"] = 0,
 					["subClassID"] = 0,
-					["level"] = 25,
-					["classID"] = 5,
-					["expacID"] = 254,
-					["minLevel"] = 0,
 					["name"] = "Elemental Water",
 					["bound"] = false,
 					["value"] = 400,
+					["level"] = 25,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [1]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 55,
+					["classID"] = 7,
 					["bindType"] = 0,
 					["subClassID"] = 0,
-					["level"] = 55,
-					["classID"] = 7,
-					["expacID"] = 254,
-					["minLevel"] = 0,
 					["name"] = "Mooncloth",
 					["bound"] = false,
 					["value"] = 4000,
+					["level"] = 55,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [2]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 25,
+					["classID"] = 5,
 					["bindType"] = 0,
 					["subClassID"] = 0,
-					["level"] = 25,
-					["classID"] = 5,
-					["expacID"] = 254,
-					["minLevel"] = 0,
 					["name"] = "Fire Oil",
 					["bound"] = false,
 					["value"] = 12,
+					["level"] = 25,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [3]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 25,
+					["classID"] = 5,
 					["bindType"] = 0,
 					["subClassID"] = 0,
-					["level"] = 25,
-					["classID"] = 5,
-					["expacID"] = 254,
-					["minLevel"] = 0,
 					["name"] = "Fire Oil",
 					["bound"] = false,
 					["value"] = 12,
+					["level"] = 25,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [4]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 58,
+					["classID"] = 0,
 					["bindType"] = 0,
 					["subClassID"] = 0,
-					["level"] = 58,
-					["classID"] = 0,
-					["expacID"] = 254,
-					["minLevel"] = 48,
 					["name"] = "Greater Frost Protection Potion",
 					["bound"] = false,
 					["value"] = 750,
+					["level"] = 58,
+					["minLevel"] = 48,
+					["expacID"] = 254,
 				}, -- [5]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 58,
+					["classID"] = 0,
 					["bindType"] = 0,
 					["subClassID"] = 0,
-					["level"] = 58,
-					["classID"] = 0,
-					["expacID"] = 254,
-					["minLevel"] = 48,
 					["name"] = "Greater Frost Protection Potion",
 					["bound"] = false,
 					["value"] = 750,
+					["level"] = 58,
+					["minLevel"] = 48,
+					["expacID"] = 254,
 				}, -- [6]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 58,
+					["classID"] = 0,
 					["bindType"] = 0,
 					["subClassID"] = 0,
-					["level"] = 58,
-					["classID"] = 0,
-					["expacID"] = 254,
-					["minLevel"] = 48,
 					["name"] = "Greater Frost Protection Potion",
 					["bound"] = false,
 					["value"] = 750,
+					["level"] = 58,
+					["minLevel"] = 48,
+					["expacID"] = 254,
 				}, -- [7]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 58,
+					["classID"] = 0,
 					["bindType"] = 0,
 					["subClassID"] = 0,
-					["level"] = 58,
-					["classID"] = 0,
-					["expacID"] = 254,
-					["minLevel"] = 48,
 					["name"] = "Greater Frost Protection Potion",
 					["bound"] = false,
 					["value"] = 750,
+					["level"] = 58,
+					["minLevel"] = 48,
+					["expacID"] = 254,
 				}, -- [8]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 58,
+					["classID"] = 0,
 					["bindType"] = 0,
 					["subClassID"] = 0,
-					["level"] = 58,
-					["classID"] = 0,
-					["expacID"] = 254,
-					["minLevel"] = 48,
 					["name"] = "Greater Frost Protection Potion",
 					["bound"] = false,
 					["value"] = 750,
+					["level"] = 58,
+					["minLevel"] = 48,
+					["expacID"] = 254,
 				}, -- [9]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 58,
+					["classID"] = 0,
 					["bindType"] = 0,
 					["subClassID"] = 0,
-					["level"] = 58,
-					["classID"] = 0,
-					["expacID"] = 254,
-					["minLevel"] = 48,
 					["name"] = "Greater Frost Protection Potion",
 					["bound"] = false,
 					["value"] = 750,
+					["level"] = 58,
+					["minLevel"] = 48,
+					["expacID"] = 254,
 				}, -- [10]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 25,
+					["classID"] = 5,
 					["bindType"] = 0,
 					["subClassID"] = 0,
-					["level"] = 25,
-					["classID"] = 5,
-					["expacID"] = 254,
-					["minLevel"] = 0,
 					["name"] = "Elemental Water",
 					["bound"] = false,
 					["value"] = 400,
+					["level"] = 25,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [11]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 25,
+					["classID"] = 5,
 					["bindType"] = 0,
 					["subClassID"] = 0,
-					["level"] = 25,
-					["classID"] = 5,
-					["expacID"] = 254,
-					["minLevel"] = 0,
 					["name"] = "Fire Oil",
 					["bound"] = false,
 					["value"] = 12,
+					["level"] = 25,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [12]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 25,
+					["classID"] = 5,
 					["bindType"] = 0,
 					["subClassID"] = 0,
-					["level"] = 25,
-					["classID"] = 5,
-					["expacID"] = 254,
-					["minLevel"] = 0,
 					["name"] = "Elemental Water",
 					["bound"] = false,
 					["value"] = 400,
+					["level"] = 25,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [13]
 				{
 					["equipLoc"] = "",
 					["effectiveILvl"] = 25,
+					["classID"] = 5,
 					["bindType"] = 0,
 					["subClassID"] = 0,
-					["level"] = 25,
-					["classID"] = 5,
-					["expacID"] = 254,
-					["minLevel"] = 0,
 					["name"] = "Fire Oil",
 					["bound"] = false,
 					["value"] = 12,
+					["level"] = 25,
+					["minLevel"] = 0,
+					["expacID"] = 254,
 				}, -- [14]
 				{
 					["equipLoc"] = "",
@@ -3001,17 +3001,17 @@ Sorted_Data = {
 					["subClassID"] = 0,
 					["level"] = 25,
 					["quality"] = 1,
-					["texture"] = 134818,
-					["count"] = 20,
 					["link"] = "|cffffffff|Hitem:6371::::::::5:::::::|h[Fire Oil]|h|r",
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["value"] = 12,
+					["count"] = 20,
 					["itemID"] = 6371,
 					["name"] = "Fire Oil",
 					["bound"] = false,
-					["value"] = 12,
+					["minLevel"] = 0,
+					["texture"] = 134818,
 				}, -- [15]
 				{
 					["equipLoc"] = "",
@@ -3020,17 +3020,17 @@ Sorted_Data = {
 					["subClassID"] = 0,
 					["level"] = 25,
 					["quality"] = 1,
-					["texture"] = 134818,
-					["count"] = 20,
 					["link"] = "|cffffffff|Hitem:6371::::::::5:::::::|h[Fire Oil]|h|r",
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["value"] = 12,
+					["count"] = 20,
 					["itemID"] = 6371,
 					["name"] = "Fire Oil",
 					["bound"] = false,
-					["value"] = 12,
+					["minLevel"] = 0,
+					["texture"] = 134818,
 				}, -- [16]
 				{
 					["equipLoc"] = "",
@@ -3039,17 +3039,17 @@ Sorted_Data = {
 					["subClassID"] = 0,
 					["level"] = 25,
 					["quality"] = 1,
-					["texture"] = 134818,
-					["count"] = 20,
 					["link"] = "|cffffffff|Hitem:6371::::::::5:::::::|h[Fire Oil]|h|r",
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["value"] = 12,
+					["count"] = 20,
 					["itemID"] = 6371,
 					["name"] = "Fire Oil",
 					["bound"] = false,
-					["value"] = 12,
+					["minLevel"] = 0,
+					["texture"] = 134818,
 				}, -- [17]
 				{
 					["equipLoc"] = "",
@@ -3062,13 +3062,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 134818,
 					["itemID"] = 6371,
-					["name"] = "Fire Oil",
+					["value"] = 12,
 					["count"] = 20,
 					["bound"] = false,
-					["value"] = 12,
-					["texture"] = 134818,
+					["name"] = "Fire Oil",
+					["minLevel"] = 0,
 				}, -- [18]
 				{
 					["equipLoc"] = "",
@@ -3081,13 +3081,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 134818,
 					["itemID"] = 6371,
-					["name"] = "Fire Oil",
+					["value"] = 12,
 					["count"] = 20,
 					["bound"] = false,
-					["value"] = 12,
-					["texture"] = 134818,
+					["name"] = "Fire Oil",
+					["minLevel"] = 0,
 				}, -- [19]
 				{
 					["equipLoc"] = "",
@@ -3100,13 +3100,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 134818,
 					["itemID"] = 6371,
-					["name"] = "Fire Oil",
+					["value"] = 12,
 					["count"] = 20,
 					["bound"] = false,
-					["value"] = 12,
-					["texture"] = 134818,
+					["name"] = "Fire Oil",
+					["minLevel"] = 0,
 				}, -- [20]
 				{
 					["equipLoc"] = "",
@@ -3119,13 +3119,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 134818,
 					["itemID"] = 6371,
-					["name"] = "Fire Oil",
+					["value"] = 12,
 					["count"] = 20,
 					["bound"] = false,
-					["value"] = 12,
-					["texture"] = 134818,
+					["name"] = "Fire Oil",
+					["minLevel"] = 0,
 				}, -- [21]
 				{
 					["equipLoc"] = "",
@@ -3138,13 +3138,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 134818,
 					["itemID"] = 6371,
-					["name"] = "Fire Oil",
+					["value"] = 12,
 					["count"] = 20,
 					["bound"] = false,
-					["value"] = 12,
-					["texture"] = 134818,
+					["name"] = "Fire Oil",
+					["minLevel"] = 0,
 				}, -- [22]
 				{
 					["equipLoc"] = "",
@@ -3157,13 +3157,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 135819,
 					["itemID"] = 7077,
-					["name"] = "Heart of Fire",
+					["value"] = 400,
 					["count"] = 5,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 135819,
+					["name"] = "Heart of Fire",
+					["minLevel"] = 0,
 				}, -- [23]
 				{
 					["equipLoc"] = "",
@@ -3176,13 +3176,13 @@ Sorted_Data = {
 					["classID"] = 5,
 					["expacID"] = 254,
 					["hasNoValue"] = false,
-					["minLevel"] = 0,
+					["texture"] = 135819,
 					["itemID"] = 7077,
-					["name"] = "Heart of Fire",
+					["value"] = 400,
 					["count"] = 10,
 					["bound"] = false,
-					["value"] = 400,
-					["texture"] = 135819,
+					["name"] = "Heart of Fire",
+					["minLevel"] = 0,
 				}, -- [24]
 				{
 				}, -- [25]
@@ -3351,6 +3351,2353 @@ Sorted_Data = {
 		["bagsNumSlots"] = 76,
 		["bagsUsedSlots"] = 1,
 	},
+	["Player-4465-01D5BF39"] = {
+		["bankUsedSlots"] = 7,
+		["class"] = "MAGE",
+		["settingsProfile"] = 3,
+		["race"] = 5,
+		["level"] = 49,
+		["realm"] = "Golemagg",
+		["minimized"] = false,
+		["timeItemsAdded"] = {
+			["2320::::::"] = {
+				["count"] = 7,
+				["time"] = 1603180514,
+			},
+			["17032::::::"] = {
+				["count"] = 9,
+				["time"] = 1603180465,
+			},
+			["17056::::::"] = {
+				["count"] = 2,
+				["time"] = 1603180465,
+			},
+			["3928::::::"] = {
+				["count"] = 6,
+				["time"] = 1603180514,
+			},
+			["12029::::::"] = {
+				["count"] = 1,
+				["time"] = 1603180464,
+			},
+			["4305::::::"] = {
+				["count"] = 5,
+				["time"] = 1603180514,
+			},
+			["5011::::::"] = {
+				["count"] = 1,
+				["time"] = 1603180464,
+			},
+			["7269::11::::"] = {
+				["count"] = 1,
+				["time"] = 1603180465,
+			},
+			["15382::1::::"] = {
+				["count"] = 1,
+				["time"] = 1603180464,
+			},
+			["7520::::::"] = {
+				["count"] = 1,
+				["time"] = 1603180464,
+			},
+			["20516::::::"] = {
+				["count"] = 5,
+				["time"] = 1603180465,
+			},
+			["2321::::::"] = {
+				["count"] = 33,
+				["time"] = 1603180514,
+			},
+			["4421::::::"] = {
+				["count"] = 4,
+				["time"] = 1603180465,
+			},
+			["3182::::::"] = {
+				["count"] = 9,
+				["time"] = 1603180514,
+			},
+			["13331::14::::"] = {
+				["count"] = 1,
+				["time"] = 1603180465,
+			},
+			["14212::::::"] = {
+				["count"] = 1,
+				["time"] = 1603180464,
+			},
+			["14269::1::::"] = {
+				["count"] = 1,
+				["time"] = 1603180464,
+			},
+			["14258::1::::"] = {
+				["count"] = 1,
+				["time"] = 1603180464,
+			},
+			["5216::1::::"] = {
+				["count"] = 1,
+				["time"] = 1603180464,
+			},
+			["4945::11::::"] = {
+				["count"] = 1,
+				["time"] = 1603180514,
+			},
+			["4941::::::"] = {
+				["count"] = 10,
+				["time"] = 1603180514,
+			},
+			["17031::::::"] = {
+				["count"] = 10,
+				["time"] = 1603180465,
+			},
+			["1710::::::"] = {
+				["count"] = 4,
+				["time"] = 1603180514,
+			},
+			["9791::::::"] = {
+				["count"] = 1,
+				["time"] = 1603180464,
+			},
+			["6149::::::"] = {
+				["count"] = 12,
+				["time"] = 1603180465,
+			},
+			["6948::::::"] = {
+				["count"] = 1,
+				["time"] = 1603180465,
+			},
+			["6505::11::::"] = {
+				["count"] = 1,
+				["time"] = 1603180464,
+			},
+			["14262::1::::"] = {
+				["count"] = 1,
+				["time"] = 1603180464,
+			},
+			["9911::1::::"] = {
+				["count"] = 1,
+				["time"] = 1603180464,
+			},
+			["14221::::::"] = {
+				["count"] = 1,
+				["time"] = 1603180464,
+			},
+			["14046::::::"] = {
+				["count"] = 4,
+				["time"] = 1603180464,
+			},
+			["3739::11::::"] = {
+				["count"] = 1,
+				["time"] = 1603180464,
+			},
+			["14529::::::"] = {
+				["count"] = 3,
+				["time"] = 1603180465,
+			},
+			["14530::::::"] = {
+				["count"] = 40,
+				["time"] = 1603180465,
+			},
+		},
+		["favoritedItems"] = {
+		},
+		["money"] = 2063340,
+		["lastLogged"] = 1603180464,
+		["name"] = "Augustin",
+		["faction"] = "Horde",
+		["bankNumSlots"] = 58,
+		["containers"] = {
+			{
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 41,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 41,
+					["classID"] = 0,
+					["expacID"] = 254,
+					["minLevel"] = 31,
+					["name"] = "Greater Mana Potion",
+					["bound"] = false,
+					["value"] = 120,
+				}, -- [1]
+				{
+				}, -- [2]
+				{
+				}, -- [3]
+				{
+				}, -- [4]
+				{
+				}, -- [5]
+				{
+				}, -- [6]
+				{
+				}, -- [7]
+				{
+				}, -- [8]
+				{
+				}, -- [9]
+				{
+				}, -- [10]
+				{
+				}, -- [11]
+				{
+				}, -- [12]
+				{
+				}, -- [13]
+				{
+				}, -- [14]
+				{
+				}, -- [15]
+				{
+				}, -- [16]
+				{
+				}, -- [17]
+				{
+				}, -- [18]
+				{
+				}, -- [19]
+				{
+				}, -- [20]
+				{
+				}, -- [21]
+				{
+				}, -- [22]
+				{
+				}, -- [23]
+				{
+				}, -- [24]
+				{
+				}, -- [25]
+				{
+				}, -- [26]
+				{
+				}, -- [27]
+				{
+				}, -- [28]
+				{
+				}, -- [29]
+				{
+				}, -- [30]
+				{
+				}, -- [31]
+				{
+				}, -- [32]
+				{
+				}, -- [33]
+				{
+				}, -- [34]
+				{
+				}, -- [35]
+				{
+				}, -- [36]
+			}, -- [1]
+			{
+				{
+				}, -- [1]
+				{
+				}, -- [2]
+				{
+				}, -- [3]
+				{
+				}, -- [4]
+				{
+				}, -- [5]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 1,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 1,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:17056::::::::49:::::::|h[Light Feather]|h|r",
+					["classID"] = 15,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 0,
+					["itemID"] = 17056,
+					["name"] = "Light Feather",
+					["count"] = 2,
+					["bound"] = false,
+					["value"] = 7,
+					["texture"] = 132917,
+				}, -- [6]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 30,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 30,
+					["classID"] = 7,
+					["expacID"] = 254,
+					["minLevel"] = 0,
+					["name"] = "Silk Cloth",
+					["bound"] = false,
+					["value"] = 150,
+				}, -- [7]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 30,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 30,
+					["classID"] = 7,
+					["expacID"] = 254,
+					["minLevel"] = 0,
+					["name"] = "Silk Cloth",
+					["bound"] = false,
+					["value"] = 150,
+				}, -- [8]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 40,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 40,
+					["classID"] = 7,
+					["expacID"] = 254,
+					["minLevel"] = 0,
+					["name"] = "Mageweave Cloth",
+					["bound"] = false,
+					["value"] = 250,
+				}, -- [9]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 40,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 40,
+					["classID"] = 7,
+					["expacID"] = 254,
+					["minLevel"] = 0,
+					["name"] = "Mageweave Cloth",
+					["bound"] = false,
+					["value"] = 250,
+				}, -- [10]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 40,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 40,
+					["classID"] = 7,
+					["expacID"] = 254,
+					["minLevel"] = 0,
+					["name"] = "Mageweave Cloth",
+					["bound"] = false,
+					["value"] = 250,
+				}, -- [11]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 40,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 40,
+					["classID"] = 7,
+					["expacID"] = 254,
+					["minLevel"] = 0,
+					["name"] = "Mageweave Cloth",
+					["bound"] = false,
+					["value"] = 250,
+				}, -- [12]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 40,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 40,
+					["classID"] = 7,
+					["expacID"] = 254,
+					["minLevel"] = 0,
+					["name"] = "Mageweave Cloth",
+					["bound"] = false,
+					["value"] = 250,
+				}, -- [13]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 20,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 20,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:17031::::::::49:::::::|h[Rune of Teleportation]|h|r",
+					["classID"] = 5,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 0,
+					["itemID"] = 17031,
+					["name"] = "Rune of Teleportation",
+					["count"] = 10,
+					["bound"] = false,
+					["value"] = 250,
+					["texture"] = 134419,
+				}, -- [14]
+				{
+				}, -- [15]
+				{
+				}, -- [16]
+				{
+				}, -- [17]
+				{
+				}, -- [18]
+				{
+				}, -- [19]
+				{
+				}, -- [20]
+				{
+				}, -- [21]
+				{
+				}, -- [22]
+				{
+				}, -- [23]
+				{
+				}, -- [24]
+				{
+				}, -- [25]
+				{
+				}, -- [26]
+				{
+				}, -- [27]
+				{
+				}, -- [28]
+				{
+				}, -- [29]
+				{
+				}, -- [30]
+				{
+				}, -- [31]
+				{
+				}, -- [32]
+				{
+				}, -- [33]
+				{
+				}, -- [34]
+				{
+				}, -- [35]
+				{
+				}, -- [36]
+			}, -- [2]
+			{
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 40,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 40,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:17032::::::::49:::::::|h[Rune of Portals]|h|r",
+					["classID"] = 5,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 0,
+					["itemID"] = 17032,
+					["name"] = "Rune of Portals",
+					["count"] = 9,
+					["bound"] = false,
+					["value"] = 500,
+					["texture"] = 134421,
+				}, -- [1]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 1,
+					["bindType"] = 4,
+					["subClassID"] = 0,
+					["level"] = 1,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:7269::::::::49:::11::::|h[Deino's Flask]|h|r",
+					["classID"] = 12,
+					["expacID"] = 254,
+					["hasNoValue"] = true,
+					["minLevel"] = 0,
+					["itemID"] = 7269,
+					["name"] = "Deino's Flask",
+					["count"] = 1,
+					["bound"] = true,
+					["value"] = 0,
+					["texture"] = 132788,
+				}, -- [2]
+				{
+					["equipLoc"] = "INVTYPE_FINGER",
+					["effectiveILvl"] = 46,
+					["bindType"] = 2,
+					["subClassID"] = 0,
+					["level"] = 46,
+					["classID"] = 4,
+					["expacID"] = 254,
+					["minLevel"] = 41,
+					["name"] = "Lodestone Hoop of Stamina",
+					["bound"] = false,
+					["value"] = 5538,
+				}, -- [3]
+				{
+					["equipLoc"] = "INVTYPE_FEET",
+					["effectiveILvl"] = 44,
+					["bindType"] = 2,
+					["subClassID"] = 4,
+					["level"] = 44,
+					["classID"] = 4,
+					["expacID"] = 254,
+					["minLevel"] = 40,
+					["name"] = "Tyrant's Greaves",
+					["bound"] = false,
+					["value"] = 4701,
+				}, -- [4]
+				{
+					["equipLoc"] = "INVTYPE_FEET",
+					["effectiveILvl"] = 45,
+					["bindType"] = 2,
+					["subClassID"] = 4,
+					["level"] = 45,
+					["classID"] = 4,
+					["expacID"] = 254,
+					["minLevel"] = 40,
+					["name"] = "Gothic Sabatons of the Bear",
+					["bound"] = false,
+					["value"] = 4749,
+				}, -- [5]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 58,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 58,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:14530::::::::49:::::::|h[Heavy Runecloth Bandage]|h|r",
+					["classID"] = 0,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 0,
+					["itemID"] = 14530,
+					["name"] = "Heavy Runecloth Bandage",
+					["count"] = 20,
+					["bound"] = false,
+					["value"] = 1000,
+					["texture"] = 133682,
+				}, -- [6]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 58,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 58,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:14530::::::::49:::::::|h[Heavy Runecloth Bandage]|h|r",
+					["classID"] = 0,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 0,
+					["itemID"] = 14530,
+					["name"] = "Heavy Runecloth Bandage",
+					["count"] = 20,
+					["bound"] = false,
+					["value"] = 1000,
+					["texture"] = 133682,
+				}, -- [7]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 52,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 52,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:14529::::::::49:::::::|h[Runecloth Bandage]|h|r",
+					["classID"] = 0,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 0,
+					["itemID"] = 14529,
+					["name"] = "Runecloth Bandage",
+					["count"] = 3,
+					["bound"] = false,
+					["value"] = 500,
+					["texture"] = 133681,
+				}, -- [8]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 41,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 41,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:6149::::::::49:::::::|h[Greater Mana Potion]|h|r",
+					["classID"] = 0,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 31,
+					["itemID"] = 6149,
+					["name"] = "Greater Mana Potion",
+					["count"] = 2,
+					["bound"] = false,
+					["value"] = 120,
+					["texture"] = 134853,
+				}, -- [9]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 41,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 41,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:6149::::::::49:::::::|h[Greater Mana Potion]|h|r",
+					["classID"] = 0,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 31,
+					["itemID"] = 6149,
+					["name"] = "Greater Mana Potion",
+					["count"] = 5,
+					["bound"] = false,
+					["value"] = 120,
+					["texture"] = 134853,
+				}, -- [10]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 41,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 41,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:6149::::::::49:::::::|h[Greater Mana Potion]|h|r",
+					["classID"] = 0,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 31,
+					["itemID"] = 6149,
+					["name"] = "Greater Mana Potion",
+					["count"] = 5,
+					["bound"] = false,
+					["value"] = 120,
+					["texture"] = 134853,
+				}, -- [11]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 40,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 40,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:4421::::::::49:::::::|h[Scroll of Protection III]|h|r",
+					["classID"] = 0,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 30,
+					["itemID"] = 4421,
+					["name"] = "Scroll of Protection III",
+					["count"] = 4,
+					["bound"] = false,
+					["value"] = 100,
+					["texture"] = 134943,
+				}, -- [12]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 45,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 45,
+					["classID"] = 0,
+					["expacID"] = 254,
+					["minLevel"] = 35,
+					["name"] = "Superior Healing Potion",
+					["bound"] = false,
+					["value"] = 250,
+				}, -- [13]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 45,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 45,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:3928::::::::49:::::::|h[Superior Healing Potion]|h|r",
+					["classID"] = 0,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 35,
+					["itemID"] = 3928,
+					["name"] = "Superior Healing Potion",
+					["count"] = 1,
+					["bound"] = false,
+					["value"] = 250,
+					["texture"] = 134833,
+				}, -- [14]
+				{
+				}, -- [15]
+				{
+				}, -- [16]
+				{
+				}, -- [17]
+				{
+				}, -- [18]
+				{
+				}, -- [19]
+				{
+				}, -- [20]
+				{
+				}, -- [21]
+				{
+				}, -- [22]
+				{
+				}, -- [23]
+				{
+				}, -- [24]
+				{
+				}, -- [25]
+				{
+				}, -- [26]
+				{
+				}, -- [27]
+				{
+				}, -- [28]
+				{
+				}, -- [29]
+				{
+				}, -- [30]
+				{
+				}, -- [31]
+				{
+				}, -- [32]
+				{
+				}, -- [33]
+				{
+				}, -- [34]
+				{
+				}, -- [35]
+				{
+				}, -- [36]
+			}, -- [3]
+			{
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 45,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 45,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:3928::::::::49:::::::|h[Superior Healing Potion]|h|r",
+					["classID"] = 0,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 35,
+					["itemID"] = 3928,
+					["name"] = "Superior Healing Potion",
+					["count"] = 1,
+					["bound"] = false,
+					["value"] = 250,
+					["texture"] = 134833,
+				}, -- [1]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 45,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 45,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:3928::::::::49:::::::|h[Superior Healing Potion]|h|r",
+					["classID"] = 0,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 35,
+					["itemID"] = 3928,
+					["name"] = "Superior Healing Potion",
+					["count"] = 1,
+					["bound"] = false,
+					["value"] = 250,
+					["texture"] = 134833,
+				}, -- [2]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 45,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 45,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:3928::::::::49:::::::|h[Superior Healing Potion]|h|r",
+					["classID"] = 0,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 35,
+					["itemID"] = 3928,
+					["name"] = "Superior Healing Potion",
+					["count"] = 1,
+					["bound"] = false,
+					["value"] = 250,
+					["texture"] = 134833,
+				}, -- [3]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 45,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 45,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:3928::::::::49:::::::|h[Superior Healing Potion]|h|r",
+					["classID"] = 0,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 35,
+					["itemID"] = 3928,
+					["name"] = "Superior Healing Potion",
+					["count"] = 1,
+					["bound"] = false,
+					["value"] = 250,
+					["texture"] = 134833,
+				}, -- [4]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 45,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 45,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:3928::::::::49:::::::|h[Superior Healing Potion]|h|r",
+					["classID"] = 0,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 35,
+					["itemID"] = 3928,
+					["name"] = "Superior Healing Potion",
+					["count"] = 1,
+					["bound"] = false,
+					["value"] = 250,
+					["texture"] = 134833,
+				}, -- [5]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 31,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 31,
+					["classID"] = 0,
+					["expacID"] = 254,
+					["minLevel"] = 21,
+					["name"] = "Greater Healing Potion",
+					["bound"] = false,
+					["value"] = 125,
+				}, -- [6]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 31,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 31,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:1710::::::::49:::::::|h[Greater Healing Potion]|h|r",
+					["classID"] = 0,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 21,
+					["itemID"] = 1710,
+					["name"] = "Greater Healing Potion",
+					["count"] = 1,
+					["bound"] = false,
+					["value"] = 125,
+					["texture"] = 134832,
+				}, -- [7]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 31,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 31,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:1710::::::::49:::::::|h[Greater Healing Potion]|h|r",
+					["classID"] = 0,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 21,
+					["itemID"] = 1710,
+					["name"] = "Greater Healing Potion",
+					["count"] = 1,
+					["bound"] = false,
+					["value"] = 125,
+					["texture"] = 134832,
+				}, -- [8]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 31,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 31,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:1710::::::::49:::::::|h[Greater Healing Potion]|h|r",
+					["classID"] = 0,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 21,
+					["itemID"] = 1710,
+					["name"] = "Greater Healing Potion",
+					["count"] = 1,
+					["bound"] = false,
+					["value"] = 125,
+					["texture"] = 134832,
+				}, -- [9]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 31,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 31,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:1710::::::::49:::::::|h[Greater Healing Potion]|h|r",
+					["classID"] = 0,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 21,
+					["itemID"] = 1710,
+					["name"] = "Greater Healing Potion",
+					["count"] = 1,
+					["bound"] = false,
+					["value"] = 125,
+					["texture"] = 134832,
+				}, -- [10]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 31,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 31,
+					["classID"] = 0,
+					["expacID"] = 254,
+					["minLevel"] = 21,
+					["name"] = "Greater Healing Potion",
+					["bound"] = false,
+					["value"] = 125,
+				}, -- [11]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 55,
+					["bindType"] = 1,
+					["subClassID"] = 0,
+					["level"] = 55,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:20516::::::::49:::::::|h[Bobbing Apple]|h|r",
+					["classID"] = 0,
+					["expacID"] = 254,
+					["hasNoValue"] = true,
+					["minLevel"] = 0,
+					["itemID"] = 20516,
+					["name"] = "Bobbing Apple",
+					["count"] = 5,
+					["bound"] = true,
+					["value"] = 0,
+					["texture"] = 133975,
+				}, -- [12]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 40,
+					["bindType"] = 3,
+					["subClassID"] = 0,
+					["level"] = 40,
+					["quality"] = 3,
+					["link"] = "|cff0070dd|Hitem:13331::::::::49:::14::::|h[Red Skeletal Horse]|h|r",
+					["classID"] = 15,
+					["expacID"] = 254,
+					["hasNoValue"] = true,
+					["minLevel"] = 40,
+					["itemID"] = 13331,
+					["name"] = "Red Skeletal Horse",
+					["count"] = 1,
+					["bound"] = true,
+					["value"] = 0,
+					["texture"] = 132264,
+				}, -- [13]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 1,
+					["bindType"] = 1,
+					["subClassID"] = 0,
+					["level"] = 1,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:6948::::::::49:::::::|h[Hearthstone]|h|r",
+					["classID"] = 15,
+					["expacID"] = 254,
+					["hasNoValue"] = true,
+					["minLevel"] = 0,
+					["itemID"] = 6948,
+					["name"] = "Hearthstone",
+					["count"] = 1,
+					["bound"] = true,
+					["value"] = 0,
+					["texture"] = 134414,
+				}, -- [14]
+				{
+				}, -- [15]
+				{
+				}, -- [16]
+				{
+				}, -- [17]
+				{
+				}, -- [18]
+				{
+				}, -- [19]
+				{
+				}, -- [20]
+				{
+				}, -- [21]
+				{
+				}, -- [22]
+				{
+				}, -- [23]
+				{
+				}, -- [24]
+				{
+				}, -- [25]
+				{
+				}, -- [26]
+				{
+				}, -- [27]
+				{
+				}, -- [28]
+				{
+				}, -- [29]
+				{
+				}, -- [30]
+				{
+				}, -- [31]
+				{
+				}, -- [32]
+				{
+				}, -- [33]
+				{
+				}, -- [34]
+				{
+				}, -- [35]
+				{
+				}, -- [36]
+			}, -- [4]
+			{
+				{
+				}, -- [1]
+				{
+				}, -- [2]
+				{
+				}, -- [3]
+				{
+				}, -- [4]
+				{
+				}, -- [5]
+				{
+				}, -- [6]
+				{
+				}, -- [7]
+				{
+				}, -- [8]
+				{
+				}, -- [9]
+				{
+				}, -- [10]
+				{
+				}, -- [11]
+				{
+				}, -- [12]
+				{
+				}, -- [13]
+				{
+				}, -- [14]
+				{
+				}, -- [15]
+				{
+				}, -- [16]
+				{
+				}, -- [17]
+				{
+				}, -- [18]
+				{
+				}, -- [19]
+				{
+				}, -- [20]
+				{
+				}, -- [21]
+				{
+				}, -- [22]
+				{
+				}, -- [23]
+				{
+				}, -- [24]
+				{
+				}, -- [25]
+				{
+				}, -- [26]
+				{
+				}, -- [27]
+				{
+				}, -- [28]
+				{
+				}, -- [29]
+				{
+				}, -- [30]
+				{
+				}, -- [31]
+				{
+				}, -- [32]
+				{
+				}, -- [33]
+				{
+				}, -- [34]
+				{
+				}, -- [35]
+				{
+				}, -- [36]
+			}, -- [5]
+			{
+				{
+				}, -- [1]
+				{
+				}, -- [2]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 20,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 20,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:2321::::::::49:::::::|h[Fine Thread]|h|r",
+					["classID"] = 7,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 0,
+					["itemID"] = 2321,
+					["name"] = "Fine Thread",
+					["count"] = 20,
+					["bound"] = false,
+					["value"] = 25,
+					["texture"] = 132912,
+				}, -- [3]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 20,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 20,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:3182::::::::49:::::::|h[Spider's Silk]|h|r",
+					["classID"] = 7,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 0,
+					["itemID"] = 3182,
+					["name"] = "Spider's Silk",
+					["count"] = 9,
+					["bound"] = false,
+					["value"] = 387,
+					["texture"] = 136113,
+				}, -- [4]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 20,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 20,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:2321::::::::49:::::::|h[Fine Thread]|h|r",
+					["classID"] = 7,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 0,
+					["itemID"] = 2321,
+					["name"] = "Fine Thread",
+					["count"] = 13,
+					["bound"] = false,
+					["value"] = 25,
+					["texture"] = 132912,
+				}, -- [5]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 35,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 35,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:4305::::::::49:::::::|h[Bolt of Silk Cloth]|h|r",
+					["classID"] = 7,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 0,
+					["itemID"] = 4305,
+					["name"] = "Bolt of Silk Cloth",
+					["count"] = 5,
+					["bound"] = false,
+					["value"] = 600,
+					["texture"] = 132907,
+				}, -- [6]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 5,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 5,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:2320::::::::49:::::::|h[Coarse Thread]|h|r",
+					["classID"] = 7,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 0,
+					["itemID"] = 2320,
+					["name"] = "Coarse Thread",
+					["count"] = 7,
+					["bound"] = false,
+					["value"] = 2,
+					["texture"] = 132891,
+				}, -- [7]
+				{
+				}, -- [8]
+				{
+				}, -- [9]
+				{
+				}, -- [10]
+				{
+				}, -- [11]
+				{
+				}, -- [12]
+				{
+				}, -- [13]
+				{
+				}, -- [14]
+				{
+				}, -- [15]
+				{
+				}, -- [16]
+				{
+				}, -- [17]
+				{
+				}, -- [18]
+				{
+				}, -- [19]
+				{
+				}, -- [20]
+				{
+				}, -- [21]
+				{
+				}, -- [22]
+				{
+				}, -- [23]
+				{
+				}, -- [24]
+				{
+				}, -- [25]
+				{
+				}, -- [26]
+				{
+				}, -- [27]
+				{
+				}, -- [28]
+				{
+				}, -- [29]
+				{
+				}, -- [30]
+				{
+				}, -- [31]
+				{
+				}, -- [32]
+				{
+				}, -- [33]
+				{
+				}, -- [34]
+				{
+				}, -- [35]
+				{
+				}, -- [36]
+			}, -- [6]
+			{
+				{
+				}, -- [1]
+				{
+				}, -- [2]
+				{
+				}, -- [3]
+				{
+				}, -- [4]
+				{
+				}, -- [5]
+				{
+				}, -- [6]
+				{
+				}, -- [7]
+				{
+				}, -- [8]
+				{
+				}, -- [9]
+				{
+				}, -- [10]
+				{
+				}, -- [11]
+				{
+				}, -- [12]
+				{
+				}, -- [13]
+				{
+				}, -- [14]
+				{
+				}, -- [15]
+				{
+				}, -- [16]
+				{
+				}, -- [17]
+				{
+				}, -- [18]
+				{
+				}, -- [19]
+				{
+				}, -- [20]
+				{
+				}, -- [21]
+				{
+				}, -- [22]
+				{
+				}, -- [23]
+				{
+				}, -- [24]
+				{
+				}, -- [25]
+				{
+				}, -- [26]
+				{
+				}, -- [27]
+				{
+				}, -- [28]
+				{
+				}, -- [29]
+				{
+				}, -- [30]
+				{
+				}, -- [31]
+				{
+				}, -- [32]
+				{
+				}, -- [33]
+				{
+				}, -- [34]
+				{
+				}, -- [35]
+				{
+				}, -- [36]
+			}, -- [7]
+			{
+				{
+				}, -- [1]
+				{
+				}, -- [2]
+				{
+				}, -- [3]
+				{
+				}, -- [4]
+				{
+				}, -- [5]
+				{
+				}, -- [6]
+				{
+				}, -- [7]
+				{
+				}, -- [8]
+				{
+				}, -- [9]
+				{
+				}, -- [10]
+				{
+				}, -- [11]
+				{
+				}, -- [12]
+				{
+				}, -- [13]
+				{
+				}, -- [14]
+				{
+				}, -- [15]
+				{
+				}, -- [16]
+				{
+				}, -- [17]
+				{
+				}, -- [18]
+				{
+				}, -- [19]
+				{
+				}, -- [20]
+				{
+				}, -- [21]
+				{
+				}, -- [22]
+				{
+				}, -- [23]
+				{
+				}, -- [24]
+				{
+				}, -- [25]
+				{
+				}, -- [26]
+				{
+				}, -- [27]
+				{
+				}, -- [28]
+				{
+				}, -- [29]
+				{
+				}, -- [30]
+				{
+				}, -- [31]
+				{
+				}, -- [32]
+				{
+				}, -- [33]
+				{
+				}, -- [34]
+				{
+				}, -- [35]
+				{
+				}, -- [36]
+			}, -- [8]
+			{
+				{
+				}, -- [1]
+				{
+				}, -- [2]
+				{
+				}, -- [3]
+				{
+				}, -- [4]
+				{
+				}, -- [5]
+				{
+				}, -- [6]
+				{
+				}, -- [7]
+				{
+				}, -- [8]
+				{
+				}, -- [9]
+				{
+				}, -- [10]
+				{
+				}, -- [11]
+				{
+				}, -- [12]
+				{
+				}, -- [13]
+				{
+				}, -- [14]
+				{
+				}, -- [15]
+				{
+				}, -- [16]
+				{
+				}, -- [17]
+				{
+				}, -- [18]
+				{
+				}, -- [19]
+				{
+				}, -- [20]
+				{
+				}, -- [21]
+				{
+				}, -- [22]
+				{
+				}, -- [23]
+				{
+				}, -- [24]
+				{
+				}, -- [25]
+				{
+				}, -- [26]
+				{
+				}, -- [27]
+				{
+				}, -- [28]
+				{
+				}, -- [29]
+				{
+				}, -- [30]
+				{
+				}, -- [31]
+				{
+				}, -- [32]
+				{
+				}, -- [33]
+				{
+				}, -- [34]
+				{
+				}, -- [35]
+				{
+				}, -- [36]
+			}, -- [9]
+			{
+				{
+				}, -- [1]
+				{
+				}, -- [2]
+				{
+				}, -- [3]
+				{
+				}, -- [4]
+				{
+				}, -- [5]
+				{
+				}, -- [6]
+				{
+				}, -- [7]
+				{
+				}, -- [8]
+				{
+				}, -- [9]
+				{
+				}, -- [10]
+				{
+				}, -- [11]
+				{
+				}, -- [12]
+				{
+				}, -- [13]
+				{
+				}, -- [14]
+				{
+				}, -- [15]
+				{
+				}, -- [16]
+				{
+				}, -- [17]
+				{
+				}, -- [18]
+				{
+				}, -- [19]
+				{
+				}, -- [20]
+				{
+				}, -- [21]
+				{
+				}, -- [22]
+				{
+				}, -- [23]
+				{
+				}, -- [24]
+				{
+				}, -- [25]
+				{
+				}, -- [26]
+				{
+				}, -- [27]
+				{
+				}, -- [28]
+				{
+				}, -- [29]
+				{
+				}, -- [30]
+				{
+				}, -- [31]
+				{
+				}, -- [32]
+				{
+				}, -- [33]
+				{
+				}, -- [34]
+				{
+				}, -- [35]
+				{
+				}, -- [36]
+			}, -- [10]
+			[0] = {
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 40,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 40,
+					["classID"] = 7,
+					["expacID"] = 254,
+					["minLevel"] = 0,
+					["name"] = "Mageweave Cloth",
+					["bound"] = false,
+					["value"] = 250,
+				}, -- [1]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 40,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 40,
+					["classID"] = 7,
+					["expacID"] = 254,
+					["minLevel"] = 0,
+					["name"] = "Mageweave Cloth",
+					["bound"] = false,
+					["value"] = 250,
+				}, -- [2]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 40,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 40,
+					["classID"] = 7,
+					["expacID"] = 254,
+					["minLevel"] = 0,
+					["name"] = "Mageweave Cloth",
+					["bound"] = false,
+					["value"] = 250,
+				}, -- [3]
+				{
+					["equipLoc"] = "INVTYPE_FEET",
+					["effectiveILvl"] = 44,
+					["bindType"] = 2,
+					["subClassID"] = 4,
+					["level"] = 44,
+					["classID"] = 4,
+					["expacID"] = 254,
+					["minLevel"] = 40,
+					["name"] = "Tyrant's Greaves",
+					["bound"] = false,
+					["value"] = 4701,
+				}, -- [4]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 40,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 40,
+					["classID"] = 7,
+					["expacID"] = 254,
+					["minLevel"] = 0,
+					["name"] = "Mageweave Cloth",
+					["bound"] = false,
+					["value"] = 250,
+				}, -- [5]
+				{
+					["equipLoc"] = "INVTYPE_FEET",
+					["effectiveILvl"] = 45,
+					["bindType"] = 2,
+					["subClassID"] = 4,
+					["level"] = 45,
+					["classID"] = 4,
+					["expacID"] = 254,
+					["minLevel"] = 40,
+					["name"] = "Gothic Sabatons of the Bear",
+					["bound"] = false,
+					["value"] = 4749,
+				}, -- [6]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 30,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 30,
+					["classID"] = 7,
+					["expacID"] = 254,
+					["minLevel"] = 0,
+					["name"] = "Silk Cloth",
+					["bound"] = false,
+					["value"] = 150,
+				}, -- [7]
+				{
+					["equipLoc"] = "INVTYPE_FINGER",
+					["effectiveILvl"] = 46,
+					["bindType"] = 2,
+					["subClassID"] = 0,
+					["level"] = 46,
+					["classID"] = 4,
+					["expacID"] = 254,
+					["minLevel"] = 41,
+					["name"] = "Lodestone Hoop of Stamina",
+					["bound"] = false,
+					["value"] = 5538,
+				}, -- [8]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 30,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 30,
+					["classID"] = 7,
+					["expacID"] = 254,
+					["minLevel"] = 0,
+					["name"] = "Silk Cloth",
+					["bound"] = false,
+					["value"] = 150,
+				}, -- [9]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 40,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 40,
+					["classID"] = 7,
+					["expacID"] = 254,
+					["minLevel"] = 0,
+					["name"] = "Mageweave Cloth",
+					["bound"] = false,
+					["value"] = 250,
+				}, -- [10]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 52,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 52,
+					["classID"] = 0,
+					["expacID"] = 254,
+					["minLevel"] = 0,
+					["name"] = "Runecloth Bandage",
+					["bound"] = false,
+					["value"] = 500,
+				}, -- [11]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 58,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 58,
+					["classID"] = 0,
+					["expacID"] = 254,
+					["minLevel"] = 0,
+					["name"] = "Heavy Runecloth Bandage",
+					["bound"] = false,
+					["value"] = 1000,
+				}, -- [12]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 58,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 58,
+					["classID"] = 0,
+					["expacID"] = 254,
+					["minLevel"] = 0,
+					["name"] = "Heavy Runecloth Bandage",
+					["bound"] = false,
+					["value"] = 1000,
+				}, -- [13]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 1,
+					["bindType"] = 4,
+					["subClassID"] = 0,
+					["level"] = 1,
+					["classID"] = 12,
+					["expacID"] = 254,
+					["minLevel"] = 0,
+					["name"] = "Deino's Flask",
+					["bound"] = true,
+					["value"] = 0,
+				}, -- [14]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 40,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 40,
+					["classID"] = 5,
+					["expacID"] = 254,
+					["minLevel"] = 0,
+					["name"] = "Rune of Portals",
+					["bound"] = false,
+					["value"] = 500,
+				}, -- [15]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 45,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 45,
+					["classID"] = 0,
+					["expacID"] = 254,
+					["minLevel"] = 35,
+					["name"] = "Superior Healing Potion",
+					["bound"] = false,
+					["value"] = 250,
+				}, -- [16]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 45,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 45,
+					["classID"] = 0,
+					["expacID"] = 254,
+					["minLevel"] = 35,
+					["name"] = "Superior Healing Potion",
+					["bound"] = false,
+					["value"] = 250,
+				}, -- [17]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 40,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 40,
+					["classID"] = 0,
+					["expacID"] = 254,
+					["minLevel"] = 30,
+					["name"] = "Scroll of Protection III",
+					["bound"] = false,
+					["value"] = 100,
+				}, -- [18]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 41,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 41,
+					["classID"] = 0,
+					["expacID"] = 254,
+					["minLevel"] = 31,
+					["name"] = "Greater Mana Potion",
+					["bound"] = false,
+					["value"] = 120,
+				}, -- [19]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 41,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 41,
+					["classID"] = 0,
+					["expacID"] = 254,
+					["minLevel"] = 31,
+					["name"] = "Greater Mana Potion",
+					["bound"] = false,
+					["value"] = 120,
+				}, -- [20]
+				{
+				}, -- [21]
+				{
+				}, -- [22]
+				{
+				}, -- [23]
+				{
+				}, -- [24]
+				{
+				}, -- [25]
+				{
+				}, -- [26]
+				{
+				}, -- [27]
+				{
+				}, -- [28]
+				{
+				}, -- [29]
+				{
+				}, -- [30]
+				{
+				}, -- [31]
+				{
+				}, -- [32]
+				{
+				}, -- [33]
+				{
+				}, -- [34]
+				{
+				}, -- [35]
+				{
+				}, -- [36]
+				[-2] = {
+					["equipLoc"] = "INVTYPE_BAG",
+					["effectiveILvl"] = 52,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 52,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:14046::::::::49:::::::|h[Runecloth Bag]|h|r",
+					["classID"] = 1,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 0,
+					["itemID"] = 14046,
+					["name"] = "Runecloth Bag",
+					["count"] = 1,
+					["bound"] = false,
+					["value"] = 5000,
+					["texture"] = 133652,
+				},
+				[0] = {
+					["equipLoc"] = "INVTYPE_BAG",
+					["effectiveILvl"] = 52,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 52,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:14046::::::::49:::::::|h[Runecloth Bag]|h|r",
+					["classID"] = 1,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 0,
+					["itemID"] = 14046,
+					["name"] = "Runecloth Bag",
+					["count"] = 1,
+					["bound"] = false,
+					["value"] = 5000,
+					["texture"] = 133652,
+				},
+				[-3] = {
+					["equipLoc"] = "INVTYPE_BAG",
+					["effectiveILvl"] = 52,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 52,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:14046::::::::49:::::::|h[Runecloth Bag]|h|r",
+					["classID"] = 1,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 0,
+					["itemID"] = 14046,
+					["name"] = "Runecloth Bag",
+					["count"] = 1,
+					["bound"] = false,
+					["value"] = 5000,
+					["texture"] = 133652,
+				},
+				[-1] = {
+					["equipLoc"] = "INVTYPE_BAG",
+					["effectiveILvl"] = 52,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 52,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:14046::::::::49:::::::|h[Runecloth Bag]|h|r",
+					["classID"] = 1,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 0,
+					["itemID"] = 14046,
+					["name"] = "Runecloth Bag",
+					["count"] = 1,
+					["bound"] = false,
+					["value"] = 5000,
+					["texture"] = 133652,
+				},
+			},
+			[-4] = {
+				{
+					["equipLoc"] = "INVTYPE_BAG",
+					["effectiveILvl"] = 25,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 25,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:857::::::::49:::::::|h[Large Red Sack]|h|r",
+					["classID"] = 1,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 0,
+					["itemID"] = 857,
+					["name"] = "Large Red Sack",
+					["count"] = 1,
+					["bound"] = false,
+					["value"] = 2500,
+					["texture"] = 133643,
+				}, -- [1]
+				{
+					["equipLoc"] = "INVTYPE_BAG",
+					["effectiveILvl"] = 35,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 35,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:10050::::::::49:::::::|h[Mageweave Bag]|h|r",
+					["classID"] = 1,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 0,
+					["itemID"] = 10050,
+					["name"] = "Mageweave Bag",
+					["count"] = 1,
+					["bound"] = false,
+					["value"] = 2500,
+					["texture"] = 133640,
+				}, -- [2]
+				{
+					["equipLoc"] = "INVTYPE_BAG",
+					["effectiveILvl"] = 35,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 35,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:10050::::::::49:::::::|h[Mageweave Bag]|h|r",
+					["classID"] = 1,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 0,
+					["itemID"] = 10050,
+					["name"] = "Mageweave Bag",
+					["count"] = 1,
+					["bound"] = false,
+					["value"] = 2500,
+					["texture"] = 133640,
+				}, -- [3]
+				{
+				}, -- [4]
+				{
+				}, -- [5]
+				{
+				}, -- [6]
+			},
+			[-1] = {
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 9,
+					["bindType"] = 1,
+					["subClassID"] = 0,
+					["level"] = 9,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:4945::::::::49:::11::::|h[Faintly Glowing Skull]|h|r",
+					["classID"] = 0,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 0,
+					["itemID"] = 4945,
+					["name"] = "Faintly Glowing Skull",
+					["count"] = 1,
+					["bound"] = true,
+					["value"] = 37,
+					["texture"] = 133728,
+				}, -- [1]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 10,
+					["bindType"] = 1,
+					["subClassID"] = 0,
+					["level"] = 10,
+					["quality"] = 1,
+					["link"] = "|cffffffff|Hitem:4941::::::::49:::::::|h[Really Sticky Glue]|h|r",
+					["classID"] = 0,
+					["expacID"] = 254,
+					["hasNoValue"] = false,
+					["minLevel"] = 0,
+					["itemID"] = 4941,
+					["name"] = "Really Sticky Glue",
+					["count"] = 10,
+					["bound"] = true,
+					["value"] = 11,
+					["texture"] = 134712,
+				}, -- [2]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 31,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 31,
+					["classID"] = 0,
+					["expacID"] = 254,
+					["minLevel"] = 21,
+					["name"] = "Greater Healing Potion",
+					["bound"] = false,
+					["value"] = 125,
+				}, -- [3]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 31,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 31,
+					["classID"] = 0,
+					["expacID"] = 254,
+					["minLevel"] = 21,
+					["name"] = "Greater Healing Potion",
+					["bound"] = false,
+					["value"] = 125,
+				}, -- [4]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 31,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 31,
+					["classID"] = 0,
+					["expacID"] = 254,
+					["minLevel"] = 21,
+					["name"] = "Greater Healing Potion",
+					["bound"] = false,
+					["value"] = 125,
+				}, -- [5]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 31,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 31,
+					["classID"] = 0,
+					["expacID"] = 254,
+					["minLevel"] = 21,
+					["name"] = "Greater Healing Potion",
+					["bound"] = false,
+					["value"] = 125,
+				}, -- [6]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 31,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 31,
+					["classID"] = 0,
+					["expacID"] = 254,
+					["minLevel"] = 21,
+					["name"] = "Greater Healing Potion",
+					["bound"] = false,
+					["value"] = 125,
+				}, -- [7]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 31,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 31,
+					["classID"] = 0,
+					["expacID"] = 254,
+					["minLevel"] = 21,
+					["name"] = "Greater Healing Potion",
+					["bound"] = false,
+					["value"] = 125,
+				}, -- [8]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 45,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 45,
+					["classID"] = 0,
+					["expacID"] = 254,
+					["minLevel"] = 35,
+					["name"] = "Superior Healing Potion",
+					["bound"] = false,
+					["value"] = 250,
+				}, -- [9]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 45,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 45,
+					["classID"] = 0,
+					["expacID"] = 254,
+					["minLevel"] = 35,
+					["name"] = "Superior Healing Potion",
+					["bound"] = false,
+					["value"] = 250,
+				}, -- [10]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 45,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 45,
+					["classID"] = 0,
+					["expacID"] = 254,
+					["minLevel"] = 35,
+					["name"] = "Superior Healing Potion",
+					["bound"] = false,
+					["value"] = 250,
+				}, -- [11]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 45,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 45,
+					["classID"] = 0,
+					["expacID"] = 254,
+					["minLevel"] = 35,
+					["name"] = "Superior Healing Potion",
+					["bound"] = false,
+					["value"] = 250,
+				}, -- [12]
+				{
+					["equipLoc"] = "",
+					["effectiveILvl"] = 45,
+					["bindType"] = 0,
+					["subClassID"] = 0,
+					["level"] = 45,
+					["classID"] = 0,
+					["expacID"] = 254,
+					["minLevel"] = 35,
+					["name"] = "Superior Healing Potion",
+					["bound"] = false,
+					["value"] = 250,
+				}, -- [13]
+				{
+				}, -- [14]
+				{
+				}, -- [15]
+				{
+				}, -- [16]
+				{
+				}, -- [17]
+				{
+				}, -- [18]
+				{
+				}, -- [19]
+				{
+				}, -- [20]
+				{
+				}, -- [21]
+				{
+				}, -- [22]
+				{
+				}, -- [23]
+				{
+				}, -- [24]
+				{
+				}, -- [25]
+				{
+				}, -- [26]
+				{
+				}, -- [27]
+				{
+				}, -- [28]
+				{
+				}, -- [29]
+				{
+				}, -- [30]
+				{
+				}, -- [31]
+				{
+				}, -- [32]
+				{
+				}, -- [33]
+				{
+				}, -- [34]
+				{
+				}, -- [35]
+				{
+				}, -- [36]
+			},
+			[-2] = {
+				{
+					["hasNoValue"] = false,
+					["count"] = 1,
+				}, -- [1]
+				{
+					["hasNoValue"] = false,
+					["count"] = 1,
+				}, -- [2]
+				{
+					["hasNoValue"] = false,
+					["count"] = 1,
+				}, -- [3]
+				{
+					["hasNoValue"] = false,
+					["count"] = 1,
+				}, -- [4]
+				{
+					["hasNoValue"] = false,
+					["count"] = 1,
+				}, -- [5]
+				{
+					["hasNoValue"] = false,
+					["count"] = 1,
+				}, -- [6]
+				{
+					["hasNoValue"] = false,
+					["count"] = 1,
+				}, -- [7]
+				{
+					["hasNoValue"] = false,
+					["count"] = 1,
+				}, -- [8]
+				{
+					["hasNoValue"] = false,
+					["count"] = 1,
+				}, -- [9]
+				{
+					["hasNoValue"] = false,
+					["count"] = 1,
+				}, -- [10]
+				{
+					["hasNoValue"] = false,
+					["count"] = 1,
+				}, -- [11]
+				{
+					["hasNoValue"] = false,
+					["count"] = 1,
+				}, -- [12]
+				{
+					["hasNoValue"] = false,
+					["count"] = 1,
+				}, -- [13]
+				{
+					["hasNoValue"] = false,
+					["count"] = 1,
+				}, -- [14]
+				{
+					["hasNoValue"] = false,
+					["count"] = 1,
+				}, -- [15]
+				{
+					["hasNoValue"] = false,
+					["count"] = 1,
+				}, -- [16]
+				{
+					["hasNoValue"] = false,
+					["count"] = 1,
+				}, -- [17]
+				{
+					["hasNoValue"] = false,
+					["count"] = 1,
+				}, -- [18]
+				{
+					["hasNoValue"] = false,
+					["count"] = 1,
+				}, -- [19]
+				{
+					["hasNoValue"] = false,
+					["count"] = 1,
+				}, -- [20]
+				{
+					["hasNoValue"] = false,
+					["count"] = 1,
+				}, -- [21]
+				{
+					["hasNoValue"] = false,
+					["count"] = 1,
+				}, -- [22]
+				{
+					["hasNoValue"] = false,
+					["count"] = 1,
+				}, -- [23]
+				{
+					["hasNoValue"] = false,
+					["count"] = 1,
+				}, -- [24]
+				{
+					["hasNoValue"] = false,
+					["count"] = 1,
+				}, -- [25]
+				{
+					["hasNoValue"] = false,
+					["count"] = 1,
+				}, -- [26]
+				{
+					["hasNoValue"] = false,
+					["count"] = 1,
+				}, -- [27]
+				{
+					["hasNoValue"] = false,
+					["count"] = 1,
+				}, -- [28]
+				{
+					["hasNoValue"] = false,
+					["count"] = 1,
+				}, -- [29]
+				{
+					["hasNoValue"] = false,
+					["count"] = 1,
+				}, -- [30]
+				{
+					["hasNoValue"] = false,
+					["count"] = 1,
+				}, -- [31]
+				{
+					["hasNoValue"] = false,
+					["count"] = 1,
+				}, -- [32]
+				{
+				}, -- [33]
+				{
+				}, -- [34]
+				{
+				}, -- [35]
+				{
+				}, -- [36]
+			},
+		},
+		["bagsNumSlots"] = 76,
+		["bagsUsedSlots"] = 24,
+	},
 }
 Sorted_enabledColumns = {
 	true, -- [1]
@@ -3367,11 +5714,11 @@ Sorted_enabledColumns = {
 	true, -- [12]
 }
 Sorted_settingsProfiles = {
-	{
+	[3] = {
 		["categories"] = {
 			{
-				["name"] = "Weapons",
 				["icon"] = "inv_sword_04",
+				["name"] = "Weapons",
 				["filterGroups"] = {
 					{
 						["filters"] = {
@@ -3417,8 +5764,8 @@ Sorted_settingsProfiles = {
 				},
 			}, -- [1]
 			{
-				["name"] = "Armor",
 				["icon"] = "inv_chest_plate14",
+				["name"] = "Armor",
 				["filterGroups"] = {
 					{
 						["filters"] = {
@@ -3459,8 +5806,8 @@ Sorted_settingsProfiles = {
 				},
 			}, -- [2]
 			{
-				["name"] = "Accessories",
 				["icon"] = "INV_Crown_02",
+				["name"] = "Accessories",
 				["filterGroups"] = {
 					{
 						["filters"] = {
@@ -3502,8 +5849,8 @@ Sorted_settingsProfiles = {
 				},
 			}, -- [3]
 			{
-				["name"] = "Containers",
 				["icon"] = "inv_misc_bag_06",
+				["name"] = "Containers",
 				["filterGroups"] = {
 					{
 						["filters"] = {
@@ -3541,6 +5888,7 @@ Sorted_settingsProfiles = {
 				},
 			}, -- [4]
 			{
+				["icon"] = "Spell_Nature_MoonKey",
 				["filterGroups"] = {
 					{
 						["filters"] = {
@@ -3562,12 +5910,11 @@ Sorted_settingsProfiles = {
 						},
 					}, -- [1]
 				},
-				["icon"] = "Spell_Nature_MoonKey",
 				["name"] = "Keys",
 			}, -- [5]
 			{
-				["name"] = "Item Enhancements",
 				["icon"] = "INV_Misc_ArmorKit_03",
+				["name"] = "Item Enhancements",
 				["filterGroups"] = {
 					{
 						["filters"] = {
@@ -3604,8 +5951,8 @@ Sorted_settingsProfiles = {
 				},
 			}, -- [6]
 			{
-				["name"] = "Consumables",
 				["icon"] = "inv_misc_food_38",
+				["name"] = "Consumables",
 				["filterGroups"] = {
 					{
 						["filters"] = {
@@ -3635,8 +5982,8 @@ Sorted_settingsProfiles = {
 				},
 			}, -- [7]
 			{
-				["name"] = "Trade Goods",
 				["icon"] = "trade_blacksmithing",
+				["name"] = "Trade Goods",
 				["filterGroups"] = {
 					{
 						["filters"] = {
@@ -3668,8 +6015,8 @@ Sorted_settingsProfiles = {
 				},
 			}, -- [8]
 			{
-				["name"] = "Recipes",
 				["icon"] = "inv_scroll_05",
+				["name"] = "Recipes",
 				["filterGroups"] = {
 					{
 						["filters"] = {
@@ -3701,8 +6048,8 @@ Sorted_settingsProfiles = {
 				},
 			}, -- [9]
 			{
-				["name"] = "Quest Items",
 				["icon"] = "INV_Misc_Note_06",
+				["name"] = "Quest Items",
 				["filterGroups"] = {
 					{
 						["filters"] = {
@@ -3718,8 +6065,8 @@ Sorted_settingsProfiles = {
 				},
 			}, -- [10]
 			{
-				["name"] = "Miscellaneous",
 				["icon"] = "inv_misc_gear_08",
+				["name"] = "Miscellaneous",
 				["filterGroups"] = {
 					{
 						["filters"] = {
@@ -3747,26 +6094,26 @@ Sorted_settingsProfiles = {
 				},
 			}, -- [11]
 		},
-		["fontSize"] = 0,
-		["scale"] = 0.850600957870483,
+		["combineStacks"] = 2,
+		["smoothScrolling"] = 2,
 		["keepFilters"] = 2,
 		["fontOutline"] = 0,
 		["iconSize"] = 20.0359992980957,
-		["profileName"] = "Mxyz  (Golemagg)",
-		["categoriesWidth"] = 125.548004150391,
-		["backdropAlpha"] = 1,
+		["profileName"] = "Default",
 		["smoothingAmount"] = 0.150000005960464,
-		["scrollSpeed"] = 3,
-		["tooltipDelay"] = 0.0100000002980232,
-		["smoothScrolling"] = 2,
-		["font"] = "Friz Quadrata TT",
+		["backdropAlpha"] = 1,
+		["favoritesOnTop"] = 2,
 		["animations"] = 2,
-		["combineStacks"] = 2,
+		["tooltipDelay"] = 0.0100000002980232,
+		["scrollSpeed"] = 3,
+		["font"] = "Friz Quadrata TT",
+		["categoriesWidth"] = 125.548004150391,
+		["fontSize"] = 0,
 		["iconBorders"] = 1,
 		["padding"] = 2,
-		["favoritesOnTop"] = 2,
+		["scale"] = 1,
 		["categoriesUseIcons"] = 1,
-	}, -- [1]
+	},
 }
 Sorted_sortButtonOrder = {
 	1, -- [1]

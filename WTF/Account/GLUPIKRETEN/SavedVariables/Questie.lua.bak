@@ -35,15 +35,15 @@ QuestieConfig = {
 		["Kosturko - Golemagg"] = "Default",
 		["Mxys - Golemagg"] = "Default",
 		["Vermins - Stonespine"] = "Default",
-		["Jaroslav - Golemagg"] = "Default",
+		["Mxyzptlk - Golemagg"] = "Default",
 		["Mxym - Golemagg"] = "Default",
 		["Vermins - Dreadmist"] = "Default",
-		["Mxyzptlk - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
 		["Testxv - Golemagg"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
 		["Koloman - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default",
+		["Jaroslav - Golemagg"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Default",
 		["Antun - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Default",
@@ -108,8 +108,8 @@ QuestieConfig = {
 				[4841] = true,
 				[840] = true,
 				[848] = true,
+				[1087] = true,
 				[6062] = true,
-				[865] = true,
 				[872] = true,
 				[880] = true,
 				[888] = true,
@@ -125,7 +125,7 @@ QuestieConfig = {
 				[826] = true,
 				[849] = true,
 				[5052] = true,
-				[1087] = true,
+				[865] = true,
 				[842] = true,
 				[881] = true,
 				[6381] = true,
@@ -2294,8 +2294,7 @@ QuestieConfig = {
 			},
 		},
 		["Mxyz - Golemagg"] = {
-			["collapsedZones"] = {
-			},
+			["TrackerWidth"] = 0,
 			["AutoUntrackedQuests"] = {
 			},
 			["migrationVersion"] = 1,
@@ -2312,7 +2311,13 @@ QuestieConfig = {
 			["TrackerHiddenQuests"] = {
 			},
 			["trackerSetpoint"] = "AUTO",
+			["TrackerHiddenObjectives"] = {
+			},
+			["TrackedQuests"] = {
+			},
 			["collapsedQuests"] = {
+			},
+			["collapsedZones"] = {
 			},
 			["journey"] = {
 				{
@@ -2489,11 +2494,6 @@ QuestieConfig = {
 					["Quest"] = 792,
 					["Timestamp"] = 1595616518,
 				}, -- [26]
-			},
-			["TrackerHiddenObjectives"] = {
-			},
-			["TrackerWidth"] = 0,
-			["TrackedQuests"] = {
 			},
 		},
 		["Verminz - Golemagg"] = {
@@ -6495,7 +6495,7 @@ QuestieConfig = {
 				[3921] = true,
 				[825] = true,
 				[857] = true,
-				[550] = true,
+				[805] = true,
 				[3923] = true,
 				[6301] = true,
 				[3924] = true,
@@ -6505,23 +6505,23 @@ QuestieConfig = {
 				[858] = true,
 				[890] = true,
 				[6393] = true,
-				[805] = true,
+				[1096] = true,
 				[6283] = true,
 				[1068] = true,
-				[6384] = true,
+				[804] = true,
 				[827] = true,
-				[6641] = true,
+				[868] = true,
 				[891] = true,
 				[6571] = true,
-				[1094] = true,
-				[868] = true,
+				[549] = true,
+				[6386] = true,
 				[6385] = true,
 				[541] = true,
 				[828] = true,
 				[216] = true,
 				[892] = true,
 				[924] = true,
-				[549] = true,
+				[1094] = true,
 				[5730] = true,
 				[4542] = true,
 				[5726] = true,
@@ -6580,15 +6580,15 @@ QuestieConfig = {
 				[6381] = true,
 				[6382] = true,
 				[1060] = true,
-				[804] = true,
+				[6384] = true,
 				[581] = true,
-				[6386] = true,
+				[6641] = true,
 				[900] = true,
 				[1095] = true,
 				[5041] = true,
 				[499] = true,
 				[5881] = true,
-				[1096] = true,
+				[550] = true,
 				[837] = true,
 				[869] = true,
 				[901] = true,
@@ -9520,10 +9520,17 @@ QuestieConfig = {
 			},
 		},
 		["Augustin - Golemagg"] = {
-			["TrackerWidth"] = 0,
+			["collapsedZones"] = {
+			},
 			["AutoUntrackedQuests"] = {
 			},
-			["migrationVersion"] = 1,
+			["TrackerLocation"] = {
+				"TOPLEFT", -- [1]
+				"UIParent", -- [2]
+				"CENTER", -- [3]
+				892.53369140625, -- [4]
+				504.242248535156, -- [5]
+			},
 			["complete"] = {
 				[6282] = true,
 				[837] = true,
@@ -9639,48 +9646,6 @@ QuestieConfig = {
 			},
 			["hidden"] = {
 				[819] = true,
-			},
-			["TrackedQuests"] = {
-				[501] = true,
-				[527] = true,
-				[496] = true,
-				[498] = true,
-				[567] = true,
-				[509] = true,
-			},
-			["trackerSetpoint"] = "AUTO",
-			["_tom_waypoint"] = {
-				1413, -- [1]
-				0.546943765281174, -- [2]
-				0.371882640586797, -- [3]
-				["world"] = true,
-				["cleardistance"] = 10,
-				["title"] = "Chen's Empty Keg",
-				["arrivaldistance"] = 15,
-				["callbacks"] = {
-					["distance"] = {
-					},
-					["minimap"] = {
-					},
-					["world"] = {
-					},
-				},
-				["crazy"] = true,
-				["persistent"] = true,
-				["minimap"] = true,
-			},
-			["collapsedQuests"] = {
-			},
-			["collapsedZones"] = {
-			},
-			["TrackerLocation"] = {
-				"TOPLEFT", -- [1]
-				"UIParent", -- [2]
-				"CENTER", -- [3]
-				892.53369140625, -- [4]
-				504.242248535156, -- [5]
-			},
-			["TrackerHiddenObjectives"] = {
 			},
 			["journey"] = {
 				{
@@ -11892,6 +11857,41 @@ QuestieConfig = {
 					["Event"] = "Level",
 					["NewLevel"] = 49,
 				}, -- [304]
+			},
+			["trackerSetpoint"] = "AUTO",
+			["_tom_waypoint"] = {
+				1413, -- [1]
+				0.546943765281174, -- [2]
+				0.371882640586797, -- [3]
+				["world"] = true,
+				["cleardistance"] = 10,
+				["title"] = "Chen's Empty Keg",
+				["arrivaldistance"] = 15,
+				["callbacks"] = {
+					["distance"] = {
+					},
+					["minimap"] = {
+					},
+					["world"] = {
+					},
+				},
+				["crazy"] = true,
+				["persistent"] = true,
+				["minimap"] = true,
+			},
+			["TrackerHiddenObjectives"] = {
+			},
+			["TrackerWidth"] = 0,
+			["migrationVersion"] = 1,
+			["TrackedQuests"] = {
+				[501] = true,
+				[527] = true,
+				[496] = true,
+				[498] = true,
+				[567] = true,
+				[509] = true,
+			},
+			["collapsedQuests"] = {
 			},
 		},
 		["Grgur - Golemagg"] = {

@@ -480,16 +480,15 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Highland Thrasher",
 		},
+		[3130] = {
+			["AchievCount"] = 0,
+			["Kills"] = 0,
+			["Name"] = "Thunder Lizard",
+		},
 		[9396] = {
 			["AchievCount"] = 0,
 			["Kills"] = 0,
 			["Name"] = "Ground Pounder",
-		},
-		[8886] = {
-			["AchievCount"] = 0,
-			["Kills"] = 14,
-			["Name"] = "Deviate Python",
-			["Exp"] = 6,
 		},
 		[4343] = {
 			["AchievCount"] = 0,
@@ -532,11 +531,11 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Theka the Martyr",
 		},
-		[2371] = {
+		[7786] = {
 			["AchievCount"] = 0,
-			["Kills"] = 1,
-			["Name"] = "Daggerspine Siren",
-			["Exp"] = 34,
+			["Kills"] = 18,
+			["Name"] = "Skeleton of Zum'rah",
+			["Exp"] = 200,
 		},
 		[1192] = {
 			["AchievCount"] = 0,
@@ -548,11 +547,11 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Ward of Zum'rah",
 		},
-		[7276] = {
+		[2371] = {
 			["AchievCount"] = 0,
-			["Kills"] = 72,
-			["Name"] = "Zul'Farrak Dead Hero",
-			["Exp"] = 1080,
+			["Kills"] = 1,
+			["Name"] = "Daggerspine Siren",
+			["Exp"] = 34,
 		},
 		[2244] = {
 			["AchievCount"] = 0,
@@ -578,11 +577,11 @@ KILLTRACK = {
 			["Name"] = "Mudsnout Shaman",
 			["Exp"] = 28,
 		},
-		[5755] = {
+		[2503] = {
 			["AchievCount"] = 0,
-			["Kills"] = 4,
-			["Name"] = "Deviate Viper",
-			["Exp"] = 37,
+			["Kills"] = 194,
+			["Name"] = "Hillsbrad Foreman",
+			["Exp"] = 146,
 		},
 		[4481] = {
 			["AchievCount"] = 0,
@@ -602,11 +601,11 @@ KILLTRACK = {
 			["Name"] = "Fardel Dabyrie",
 			["Exp"] = 197,
 		},
-		[4480] = {
+		[5755] = {
 			["AchievCount"] = 0,
-			["Kills"] = 2,
-			["Name"] = "Kenata Dabyrie",
-			["Exp"] = 88,
+			["Kills"] = 4,
+			["Name"] = "Deviate Viper",
+			["Exp"] = 37,
 		},
 		[7286] = {
 			["AchievCount"] = 1,
@@ -863,11 +862,11 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "ArmordEmxara",
 		},
-		[7858] = {
+		[5053] = {
 			["AchievCount"] = 0,
-			["Kills"] = 70,
-			["Name"] = "Southsea Swashbuckler",
-			["Exp"] = 293,
+			["Kills"] = 5,
+			["Name"] = "Deviate Crocolisk",
+			["Exp"] = 15,
 		},
 		[7847] = {
 			["AchievCount"] = 0,
@@ -880,11 +879,11 @@ KILLTRACK = {
 			["Name"] = "Blacksmith Verringtan",
 			["Exp"] = 54,
 		},
-		[2407] = {
+		[7858] = {
 			["AchievCount"] = 0,
-			["Kills"] = 4,
-			["Name"] = "Cat",
-			["Exp"] = 29,
+			["Kills"] = 70,
+			["Name"] = "Southsea Swashbuckler",
+			["Exp"] = 293,
 		},
 		[923] = {
 			["AchievCount"] = 0,
@@ -955,11 +954,11 @@ KILLTRACK = {
 			["Name"] = "Southsea Dock Worker",
 			["Exp"] = 293,
 		},
-		[5053] = {
+		[2407] = {
 			["AchievCount"] = 0,
-			["Kills"] = 5,
-			["Name"] = "Deviate Crocolisk",
-			["Exp"] = 15,
+			["Kills"] = 4,
+			["Name"] = "Cat",
+			["Exp"] = 29,
 		},
 		[1909] = {
 			["AchievCount"] = 0,
@@ -1177,11 +1176,11 @@ KILLTRACK = {
 			["Name"] = "Jailor Eston",
 			["Exp"] = 23,
 		},
-		[2503] = {
+		[4480] = {
 			["AchievCount"] = 0,
-			["Kills"] = 194,
-			["Name"] = "Hillsbrad Foreman",
-			["Exp"] = 146,
+			["Kills"] = 2,
+			["Name"] = "Kenata Dabyrie",
+			["Exp"] = 88,
 		},
 		[2428] = {
 			["AchievCount"] = 0,
@@ -1194,11 +1193,11 @@ KILLTRACK = {
 			["Kills"] = 0,
 			["Name"] = "Scarlet Zealot",
 		},
-		[7786] = {
+		[7276] = {
 			["AchievCount"] = 0,
-			["Kills"] = 18,
-			["Name"] = "Skeleton of Zum'rah",
-			["Exp"] = 200,
+			["Kills"] = 72,
+			["Name"] = "Zul'Farrak Dead Hero",
+			["Exp"] = 1080,
 		},
 		[2305] = {
 			["AchievCount"] = 0,
@@ -1227,10 +1226,11 @@ KILLTRACK = {
 			["Name"] = "Highland Strider",
 			["Exp"] = 322,
 		},
-		[3130] = {
+		[8886] = {
 			["AchievCount"] = 0,
-			["Kills"] = 0,
-			["Name"] = "Thunder Lizard",
+			["Kills"] = 14,
+			["Name"] = "Deviate Python",
+			["Exp"] = 6,
 		},
 		[3835] = {
 			["AchievCount"] = 0,

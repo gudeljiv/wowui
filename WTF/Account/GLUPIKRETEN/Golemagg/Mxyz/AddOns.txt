@@ -3,5 +3,6 @@ nHealth: disabled
 WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
 Immersion: disabled
-AdiBags: disabled
-AdiBags_Config: disabled
+AdiBags: enabled
+AdiBags_Config: enabled
+Sorted: disabled

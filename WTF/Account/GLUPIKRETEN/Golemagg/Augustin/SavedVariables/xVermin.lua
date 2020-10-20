@@ -48,9 +48,9 @@ xKillCount = {
 		["pulltotal"] = 0,
 	},
 	["position"] = {
-		["y"] = -283,
-		["x"] = 333.000030517578,
-		["to"] = "TOPLEFT",
-		["from"] = "TOPLEFT",
+		["y"] = 263.85888671875,
+		["x"] = 348.68017578125,
+		["to"] = "LEFT",
+		["from"] = "LEFT",
 	},
 }
