@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 3403,
+	["session"] = 3413,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -3722,5 +3722,21 @@ BugGrabberDB = {
 			["session"] = 3399,
 			["counter"] = 2,
 		}, -- [470]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\AutoCarrot.lua:9: attempt to index upvalue 'AutoCarrot' (a function value)",
+			["time"] = "2020/10/20 15:54:07",
+			["locals"] = "(*temporary) = <function> defined @Interface\\AddOns\\xVermin\\AutoCarrot.lua:8\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index upvalue 'AutoCarrot' (a function value)\"\nAutoCarrot = <function> defined @Interface\\AddOns\\xVermin\\AutoCarrot.lua:8\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\AutoCarrot.lua:9: in function <Interface\\AddOns\\xVermin\\AutoCarrot.lua:8>",
+			["session"] = 3410,
+			["counter"] = 1624,
+		}, -- [471]
+		{
+			["message"] = "Interface\\AddOns\\xVermin\\AutoCarrot.lua:32: attempt to index upvalue 'AutoCarrot' (a function value)",
+			["time"] = "2020/10/20 15:57:33",
+			["locals"] = "itemId = nil\n(*temporary) = <function> defined @Interface\\AddOns\\xVermin\\AutoCarrot.lua:8\n(*temporary) = false\n(*temporary) = true\n(*temporary) = \"attempt to index upvalue 'AutoCarrot' (a function value)\"\nAutoCarrot = <function> defined @Interface\\AddOns\\xVermin\\AutoCarrot.lua:8\n",
+			["stack"] = "Interface\\AddOns\\xVermin\\AutoCarrot.lua:32: in function <Interface\\AddOns\\xVermin\\AutoCarrot.lua:8>",
+			["session"] = 3411,
+			["counter"] = 367,
+		}, -- [472]
 	},
 }

@@ -1,48 +1,43 @@
 local _, xVermin = ...
 
-local AutoCarrot_trinketId = nil
+local AutoCarrot = {
+	TrinketID = nil,
+	Enabled = true
+}
 
-local f = CreateFrame("Frame")
-f:SetScript(
-	"OnUpdate",
-	function()
-		if (AutoCarrot_Disabled) then
-			return
+local function AC()
+	if not AutoCarrot.Enabled then
+		return
+	end
+
+	local itemId = GetInventoryItemID("player", 13)
+
+	if IsMounted() then
+		if itemId and itemId ~= 11122 then
+			AutoCarrot.TrinketID = itemId
+			EquipItemByName(11122, 13)
+		else
+			AutoCarrot.TrinketID = nil
+			EquipItemByName(11122, 13)
 		end
-		if (IsMounted()) then
-			local itemId = GetInventoryItemID("player", 13)
-			if (itemId) then
-				if (itemId ~= 11122) then
-					AutoCarrot_trinketId = itemId
-					EquipItemByName(11122, 13) -- Carrot on a Stick
-				end
-			else
-				AutoCarrot_trinketId = nil
-				EquipItemByName(11122, 13) -- Carrot on a Stick
+	else
+		if itemId then
+			if itemId ~= 11122 then
+				AutoCarrot.TrinketID = itemId
+			elseif AutoCarrot.TrinketID then
+				EquipItemByName(AutoCarrot.TrinketID, 13)
 			end
 		else
-			local itemId = GetInventoryItemID("player", 13)
-			if (itemId) then
-				if (itemId ~= 11122) then
-					AutoCarrot_trinketId = itemId
-				elseif (AutoCarrot_trinketId) then
-					EquipItemByName(AutoCarrot_trinketId, 13)
-				end
-				EquipItemByName(AutoCarrot_trinketId, 13)
-			else
-				AutoCarrot_trinketId = nil
-			end
+			AutoCarrot.TrinketID = nil
 		end
 	end
-)
+end
 
-SLASH_AUTOCARROT1 = "/autocarrot"
-SLASH_AUTOCARROT2 = "/ac"
+local f = CreateFrame("Frame")
+f:SetScript("OnUpdate", AC)
+
+SLASH_AUTOCARROT1 = "/ac"
 SlashCmdList["AUTOCARROT"] = function(msg)
-	AutoCarrot_Disabled = not AutoCarrot_Disabled
-	if (AutoCarrot_Disabled) then
-		print("|cffed9121AutoCarrot: |cffff0000disabled")
-	else
-		print("|cffed9121AutoCarrot: |cff1eff00enabled")
-	end
+	AutoCarrot.Enabled = not AutoCarrot.Enabled
+	print("|cffed9121AutoCarrot: |cff" .. (AutoCarrot.Enabled and "ff0000disabled" or "1eff00enabled"))
 end
