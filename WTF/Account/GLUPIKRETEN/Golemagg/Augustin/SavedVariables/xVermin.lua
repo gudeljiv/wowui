@@ -1,56 +1,28 @@
 
 xKillCount = {
 	["show"] = true,
-	["killLog"] = {
-		["Sandfury Soul Eater"] = {
-			["name"] = "Sandfury Soul Eater",
-			["count"] = 3,
-		},
-		["Zul'Farrak Dead Hero"] = {
-			["name"] = "Zul'Farrak Dead Hero",
-			["count"] = 37,
-		},
-		["Sandfury Blood Drinker"] = {
-			["name"] = "Sandfury Blood Drinker",
-			["count"] = 2,
-		},
-		["Sandfury Witch Doctor"] = {
-			["name"] = "Sandfury Witch Doctor",
-			["count"] = 1,
-		},
-		["Glasshide Basilisk"] = {
-			["name"] = "Glasshide Basilisk",
-			["count"] = 2,
-		},
-		["Ward of Zum'rah"] = {
-			["name"] = "Ward of Zum'rah",
-			["count"] = 2,
-		},
-		["Greater Healing Ward"] = {
-			["name"] = "Greater Healing Ward",
-			["count"] = 2,
-		},
-		["Zul'Farrak Zombie"] = {
-			["name"] = "Zul'Farrak Zombie",
-			["count"] = 547,
-		},
-		["Lava Spout Totem"] = {
-			["name"] = "Lava Spout Totem",
-			["count"] = 2,
-		},
-		["Scarab"] = {
-			["name"] = "Scarab",
-			["count"] = 62,
-		},
-	},
-	["experience"] = {
-		["totaltotal"] = 377449,
-		["pulltotal"] = 0,
-	},
 	["position"] = {
-		["y"] = -200.523452758789,
-		["x"] = 487.509307861328,
+		["y"] = -219.999954223633,
+		["x"] = 481.000061035156,
 		["to"] = "TOPLEFT",
 		["from"] = "TOPLEFT",
+	},
+	["experience"] = {
+		["pulltotal"] = 1505,
+		["totaltotal"] = 29321,
+	},
+	["killLog"] = {
+		["Skeletal Flayer"] = {
+			["name"] = "Skeletal Flayer",
+			["count"] = 52,
+		},
+		["Slavering Ghoul"] = {
+			["name"] = "Slavering Ghoul",
+			["count"] = 24,
+		},
+		["Black Rat"] = {
+			["name"] = "Black Rat",
+			["count"] = 4,
+		},
 	},
 }
