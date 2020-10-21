@@ -107,7 +107,7 @@ KILLTRACK_CHAR = {
 		},
 		[5649] = {
 			["Name"] = "Sandfury Blood Drinker",
-			["Kills"] = 4,
+			["Kills"] = 5,
 		},
 		[4124] = {
 			["Name"] = "Needles Cougar",
@@ -167,7 +167,7 @@ KILLTRACK_CHAR = {
 		},
 		[7246] = {
 			["Name"] = "Sandfury Shadowhunter",
-			["Kills"] = 0,
+			["Kills"] = 1,
 		},
 		[1816] = {
 			["Name"] = "Diseased Grizzly",
@@ -203,7 +203,7 @@ KILLTRACK_CHAR = {
 		},
 		[7276] = {
 			["Name"] = "Zul'Farrak Dead Hero",
-			["Kills"] = 85,
+			["Kills"] = 103,
 		},
 		[2110] = {
 			["Name"] = "Black Rat",
@@ -215,7 +215,7 @@ KILLTRACK_CHAR = {
 		},
 		[7286] = {
 			["Name"] = "Zul'Farrak Zombie",
-			["Kills"] = 1346,
+			["Kills"] = 1609,
 		},
 		[5755] = {
 			["Name"] = "Deviate Viper",
@@ -615,7 +615,7 @@ KILLTRACK_CHAR = {
 		},
 		[7247] = {
 			["Name"] = "Sandfury Soul Eater",
-			["Kills"] = 4,
+			["Kills"] = 9,
 		},
 		[2351] = {
 			["Name"] = "Gray Bear",
@@ -639,7 +639,7 @@ KILLTRACK_CHAR = {
 		},
 		[7269] = {
 			["Name"] = "Scarab",
-			["Kills"] = 126,
+			["Kills"] = 284,
 		},
 		[7271] = {
 			["Name"] = "Witch Doctor Zum'rah",
@@ -647,7 +647,7 @@ KILLTRACK_CHAR = {
 		},
 		[7786] = {
 			["Name"] = "Skeleton of Zum'rah",
-			["Kills"] = 26,
+			["Kills"] = 35,
 		},
 		[2371] = {
 			["Name"] = "Daggerspine Siren",
@@ -789,6 +789,10 @@ KILLTRACK_CHAR = {
 			["Name"] = "Dreaming Whelp",
 			["Kills"] = 0,
 		},
+		[1821] = {
+			["Name"] = "Carrion Lurker",
+			["Kills"] = 1,
+		},
 		[2959] = {
 			["Name"] = "Prairie Stalker",
 			["Kills"] = 0,
@@ -805,10 +809,6 @@ KILLTRACK_CHAR = {
 			["Name"] = "Farmer Kalaba",
 			["Kills"] = 4,
 		},
-		[1821] = {
-			["Name"] = "Carrion Lurker",
-			["Kills"] = 1,
-		},
 		[2956] = {
 			["Name"] = "Adult Plainstrider",
 			["Kills"] = 0,
@@ -817,16 +817,20 @@ KILLTRACK_CHAR = {
 			["Name"] = "Deviate Venomwing",
 			["Kills"] = 9,
 		},
-		[4391] = {
-			["Name"] = "Swamp Ooze",
-			["Kills"] = 0,
-		},
 		[2448] = {
 			["Name"] = "Clerk Horrace Whitesteed",
 			["Kills"] = 1,
 		},
+		[4391] = {
+			["Name"] = "Swamp Ooze",
+			["Kills"] = 0,
+		},
 		[2960] = {
 			["Name"] = "Prairie Wolf Alpha",
+			["Kills"] = 0,
+		},
+		[1867] = {
+			["Name"] = "Dalaran Apprentice",
 			["Kills"] = 0,
 		},
 		[4397] = {
@@ -845,13 +849,13 @@ KILLTRACK_CHAR = {
 			["Name"] = "Starving Blisterpaw",
 			["Kills"] = 1,
 		},
-		[1867] = {
-			["Name"] = "Dalaran Apprentice",
-			["Kills"] = 0,
-		},
 		[1804] = {
 			["Name"] = "Wailing Death",
 			["Kills"] = 0,
+		},
+		[2581] = {
+			["Name"] = "Dabyrie Militia",
+			["Kills"] = 259,
 		},
 		[11357] = {
 			["Name"] = "DieBUSTA",
@@ -865,24 +869,24 @@ KILLTRACK_CHAR = {
 			["Name"] = "Darkfang Spider",
 			["Kills"] = 1,
 		},
-		[2581] = {
-			["Name"] = "Dabyrie Militia",
-			["Kills"] = 259,
-		},
 		[6020] = {
 			["Name"] = "Slimeshell Makrura",
 			["Kills"] = 0,
-		},
-		[747] = {
-			["Name"] = "Marsh Murloc",
-			["Kills"] = 4,
 		},
 		[2589] = {
 			["Name"] = "Syndicate Mercenary",
 			["Kills"] = 2,
 		},
+		[747] = {
+			["Name"] = "Marsh Murloc",
+			["Kills"] = 4,
+		},
 		[3237] = {
 			["Name"] = "Wooly Kodo",
+			["Kills"] = 0,
+		},
+		[2560] = {
+			["Name"] = "Highland Thrasher",
 			["Kills"] = 0,
 		},
 		[620] = {
@@ -891,10 +895,6 @@ KILLTRACK_CHAR = {
 		},
 		[2612] = {
 			["Name"] = "Lieutenant Valorcall",
-			["Kills"] = 0,
-		},
-		[1860] = {
-			["Name"] = "Konvhug",
 			["Kills"] = 0,
 		},
 		[1822] = {
@@ -921,12 +921,12 @@ KILLTRACK_CHAR = {
 			["Name"] = "Theka the Martyr",
 			["Kills"] = 0,
 		},
-		[750] = {
-			["Name"] = "Marsh Inkspewer",
-			["Kills"] = 2,
-		},
 		[2449] = {
 			["Name"] = "Citizen Wilkes",
+			["Kills"] = 2,
+		},
+		[750] = {
+			["Name"] = "Marsh Inkspewer",
 			["Kills"] = 2,
 		},
 		[2244] = {
@@ -937,13 +937,13 @@ KILLTRACK_CHAR = {
 			["Name"] = "Deviate Python",
 			["Kills"] = 14,
 		},
-		[751] = {
-			["Name"] = "Marsh Flesheater",
-			["Kills"] = 0,
-		},
 		[2373] = {
 			["Name"] = "Mudsnout Shaman",
 			["Kills"] = 4,
+		},
+		[751] = {
+			["Name"] = "Marsh Flesheater",
+			["Kills"] = 0,
 		},
 		[5249] = {
 			["Name"] = "Woodpaw Mongrel",
@@ -993,6 +993,10 @@ KILLTRACK_CHAR = {
 			["Name"] = "Farmer Getz",
 			["Kills"] = 4,
 		},
+		[1860] = {
+			["Name"] = "Konvhug",
+			["Kills"] = 0,
+		},
 		[4479] = {
 			["Name"] = "Fardel Dabyrie",
 			["Kills"] = 34,
@@ -1001,21 +1005,17 @@ KILLTRACK_CHAR = {
 			["Name"] = "Marcel Dabyrie",
 			["Kills"] = 30,
 		},
-		[2560] = {
-			["Name"] = "Highland Thrasher",
-			["Kills"] = 0,
-		},
 		[2404] = {
 			["Name"] = "Blacksmith Verringtan",
 			["Kills"] = 1,
 		},
-		[2503] = {
-			["Name"] = "Hillsbrad Foreman",
-			["Kills"] = 194,
-		},
 		[769] = {
 			["Name"] = "Deathstrike Tarantula",
 			["Kills"] = 61,
+		},
+		[2503] = {
+			["Name"] = "Hillsbrad Foreman",
+			["Kills"] = 194,
 		},
 		[1791] = {
 			["Name"] = "Slavering Ghoul",
@@ -1043,6 +1043,10 @@ KILLTRACK_CHAR = {
 		},
 		[3463] = {
 			["Name"] = "Wandering Barrens Giraffe",
+			["Kills"] = 0,
+		},
+		[7274] = {
+			["Name"] = "Sandfury Executioner",
 			["Kills"] = 0,
 		},
 	},

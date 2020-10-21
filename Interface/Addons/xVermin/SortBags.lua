@@ -452,7 +452,7 @@ do
 
 		local free = {}
 		for item, count in pairs(counts) do
-			if count and item then
+			if count and item and itemStacks and itemStacks[item] then
 				local stacks = ceil(count / itemStacks[item])
 				free[item] = stacks
 				if itemClasses[item] then

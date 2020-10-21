@@ -107,7 +107,7 @@ KILLTRACK_CHAR = {
 		},
 		[5649] = {
 			["Name"] = "Sandfury Blood Drinker",
-			["Kills"] = 3,
+			["Kills"] = 5,
 		},
 		[4124] = {
 			["Name"] = "Needles Cougar",
@@ -167,7 +167,7 @@ KILLTRACK_CHAR = {
 		},
 		[7246] = {
 			["Name"] = "Sandfury Shadowhunter",
-			["Kills"] = 0,
+			["Kills"] = 1,
 		},
 		[1816] = {
 			["Name"] = "Diseased Grizzly",
@@ -203,7 +203,7 @@ KILLTRACK_CHAR = {
 		},
 		[7276] = {
 			["Name"] = "Zul'Farrak Dead Hero",
-			["Kills"] = 81,
+			["Kills"] = 103,
 		},
 		[2110] = {
 			["Name"] = "Black Rat",
@@ -215,7 +215,7 @@ KILLTRACK_CHAR = {
 		},
 		[7286] = {
 			["Name"] = "Zul'Farrak Zombie",
-			["Kills"] = 1257,
+			["Kills"] = 1609,
 		},
 		[5755] = {
 			["Name"] = "Deviate Viper",
@@ -276,6 +276,10 @@ KILLTRACK_CHAR = {
 		[7857] = {
 			["Name"] = "Southsea Dock Worker",
 			["Kills"] = 109,
+		},
+		[10081] = {
+			["Name"] = "Dustwraith",
+			["Kills"] = 1,
 		},
 		[922] = {
 			["Name"] = "Silt Crawler",
@@ -555,7 +559,7 @@ KILLTRACK_CHAR = {
 		},
 		[5650] = {
 			["Name"] = "Sandfury Witch Doctor",
-			["Kills"] = 1,
+			["Kills"] = 2,
 		},
 		[4129] = {
 			["Name"] = "Hecklefang Snarler",
@@ -611,7 +615,7 @@ KILLTRACK_CHAR = {
 		},
 		[7247] = {
 			["Name"] = "Sandfury Soul Eater",
-			["Kills"] = 3,
+			["Kills"] = 9,
 		},
 		[2351] = {
 			["Name"] = "Gray Bear",
@@ -635,7 +639,7 @@ KILLTRACK_CHAR = {
 		},
 		[7269] = {
 			["Name"] = "Scarab",
-			["Kills"] = 62,
+			["Kills"] = 284,
 		},
 		[7271] = {
 			["Name"] = "Witch Doctor Zum'rah",
@@ -643,7 +647,7 @@ KILLTRACK_CHAR = {
 		},
 		[7786] = {
 			["Name"] = "Skeleton of Zum'rah",
-			["Kills"] = 22,
+			["Kills"] = 35,
 		},
 		[2371] = {
 			["Name"] = "Daggerspine Siren",
@@ -783,6 +787,10 @@ KILLTRACK_CHAR = {
 		},
 		[741] = {
 			["Name"] = "Dreaming Whelp",
+			["Kills"] = 0,
+		},
+		[7274] = {
+			["Name"] = "Sandfury Executioner",
 			["Kills"] = 0,
 		},
 		[2959] = {
