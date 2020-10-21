@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 3412,
+	["session"] = 3418,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -3738,5 +3738,27 @@ BugGrabberDB = {
 			["session"] = 3411,
 			["counter"] = 367,
 		}, -- [472]
+		{
+			["message"] = "[string \"--[==[ Error in 'Citrine':'condition' ]==] ...\"]:4: attempt to call global 'dump' (a nil value)",
+			["time"] = "2020/10/21 10:17:04",
+			["stack"] = "[C]: in function `xpcall'\n...ace\\AddOns\\WeakAuras\\RegionTypes\\RegionPrototype.lua:289: in function `RunCode'\n[string \"--[==[ Error in 'Citrine':'condition checks...\"]:34: in function `?'\nInterface\\AddOns\\WeakAuras\\Conditions.lua:604: in function `RunConditions'\nInterface\\AddOns\\WeakAuras\\WeakAuras-3.0.0.lua:3923: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3889>\nInterface\\AddOns\\WeakAuras\\WeakAuras-3.0.0.lua:4004: in function `UpdatedTriggerState'\nInterface\\AddOns\\WeakAuras\\GenericTrigger.lua:820: in function `ScanWithFakeEvent'\nInterface\\AddOns\\WeakAuras\\GenericTrigger.lua:1092: in function `LoadDisplays'\nInterface\\AddOns\\WeakAuras\\WeakAuras-3.0.0.lua:1659: in function `LoadDisplays'\nInterface\\AddOns\\WeakAuras\\WeakAuras-3.0.0.lua:1478: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:1362>\nInterface\\AddOns\\WeakAuras\\WeakAuras-3.0.0.lua:1639: in function `Resume'\n...dOns\\WeakAurasOptions\\OptionsFrames\\OptionsFrame.lua:193: in function <...dOns\\WeakAurasOptions\\OptionsFrames\\OptionsFrame.lua:174>\n[C]: in function `Hide'\n...terface\\AddOns\\WeakAurasOptions\\WeakAurasOptions-3.0.0.lua:540: in function <...terface\\AddOns\\WeakAurasOptions\\WeakAurasOptions.lua:538>",
+			["session"] = 3416,
+			["counter"] = 3,
+		}, -- [473]
+		{
+			["message"] = "[string \"--[==[ Error in 'Citrine':'condition' ]==] ...\"]:5: attempt to call global 'dump' (a nil value)",
+			["time"] = "2020/10/21 10:17:45",
+			["stack"] = "[C]: in function `xpcall'\n...ace\\AddOns\\WeakAuras\\RegionTypes\\RegionPrototype.lua:289: in function `RunCode'\n[string \"--[==[ Error in 'Citrine':'condition checks...\"]:42: in function `?'\nInterface\\AddOns\\WeakAuras\\Conditions.lua:604: in function `RunConditions'\nInterface\\AddOns\\WeakAuras\\WeakAuras-3.0.0.lua:3923: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3889>\nInterface\\AddOns\\WeakAuras\\WeakAuras-3.0.0.lua:4021: in function `UpdatedTriggerState'\nInterface\\AddOns\\WeakAuras\\GenericTrigger.lua:738: in function `ScanEventsInternal'\nInterface\\AddOns\\WeakAuras\\GenericTrigger.lua:694: in function `ScanEvents'\nInterface\\AddOns\\WeakAuras\\GenericTrigger.lua:840: in function <Interface\\AddOns\\WeakAuras\\GenericTrigger.lua:825>",
+			["session"] = 3416,
+			["counter"] = 1,
+		}, -- [474]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'WeakAuras' tried to call the protected function 'UNKNOWN()'.",
+			["time"] = "2020/10/20 18:51:12",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: ?\n[C]: in function `xpcall'\nInterface\\AddOns\\WeakAuras\\WeakAuras-3.0.0.lua:4953: in function `AnchorFrame'\n...ace\\AddOns\\WeakAuras\\RegionTypes\\RegionPrototype.lua:856: in function `Expand'\nInterface\\AddOns\\WeakAuras\\WeakAuras-3.0.0.lua:3842: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3836>\nInterface\\AddOns\\WeakAuras\\WeakAuras-3.0.0.lua:3922: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3889>\nInterface\\AddOns\\WeakAuras\\WeakAuras-3.0.0.lua:4021: in function `UpdatedTriggerState'\nInterface\\AddOns\\WeakAuras\\GenericTrigger.lua:738: in function `ScanEventsInternal'\nInterface\\AddOns\\WeakAuras\\GenericTrigger.lua:694: in function `ScanEvents'\nInterface\\AddOns\\WeakAuras\\GenericTrigger.lua:840: in function <Interface\\AddOns\\WeakAuras\\GenericTrigger.lua:825>",
+			["session"] = 3418,
+			["counter"] = 4,
+		}, -- [475]
 	},
 }

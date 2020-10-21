@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 2108,
 	["lastSanitation"] = 3,
-	["session"] = 2107,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -173,8 +173,8 @@ BugGrabberDB = {
 		}, -- [21]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["session"] = 1336,
 			["time"] = "2020/07/26 13:26:58",
+			["session"] = 1336,
 			["counter"] = 2,
 		}, -- [22]
 		{
@@ -554,8 +554,8 @@ BugGrabberDB = {
 		}, -- [69]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["time"] = "2020/07/27 20:37:46",
 			["session"] = 1423,
+			["time"] = "2020/07/27 20:37:46",
 			["counter"] = 4,
 		}, -- [70]
 		{
@@ -820,8 +820,8 @@ BugGrabberDB = {
 		}, -- [103]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["time"] = "2020/08/02 10:06:15",
 			["session"] = 1605,
+			["time"] = "2020/08/02 10:06:15",
 			["counter"] = 3,
 		}, -- [104]
 		{
@@ -961,8 +961,8 @@ BugGrabberDB = {
 		}, -- [121]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
-			["session"] = 1654,
 			["time"] = "2020/08/02 20:13:03",
+			["session"] = 1654,
 			["counter"] = 3,
 		}, -- [122]
 		{
@@ -1327,8 +1327,8 @@ BugGrabberDB = {
 		}, -- [167]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["session"] = 1843,
 			["time"] = "2020/08/13 21:31:07",
+			["session"] = 1843,
 			["counter"] = 6,
 		}, -- [168]
 		{
@@ -1405,8 +1405,8 @@ BugGrabberDB = {
 		}, -- [177]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\FarmLog\\FarmLog.toc",
-			["session"] = 1916,
 			["time"] = "2020/09/23 22:14:04",
+			["session"] = 1916,
 			["counter"] = 2,
 		}, -- [178]
 		{
@@ -1499,50 +1499,50 @@ BugGrabberDB = {
 		}, -- [189]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\events\\event-manager.lua",
-			["session"] = 2022,
 			["time"] = "2020/10/07 16:37:53",
+			["session"] = 2022,
 			["counter"] = 1,
 		}, -- [190]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\lists\\lists.lua",
-			["session"] = 2022,
 			["time"] = "2020/10/07 16:37:53",
+			["session"] = 2022,
 			["counter"] = 1,
 		}, -- [191]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\lists\\list-helper.lua",
-			["session"] = 2022,
 			["time"] = "2020/10/07 16:37:53",
+			["session"] = 2022,
 			["counter"] = 1,
 		}, -- [192]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\bags.lua",
-			["session"] = 2022,
 			["time"] = "2020/10/07 16:37:53",
+			["session"] = 2022,
 			["counter"] = 1,
 		}, -- [193]
 		{
 			["message"] = "(null)",
-			["time"] = "2020/07/24 16:00:06",
 			["session"] = 2022,
+			["time"] = "2020/07/24 16:00:06",
 			["counter"] = 65,
 		}, -- [194]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\utils.lua",
-			["session"] = 2022,
 			["time"] = "2020/10/07 16:37:53",
+			["session"] = 2022,
 			["counter"] = 1,
 		}, -- [195]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\services\\confirmer.lua",
-			["session"] = 2022,
 			["time"] = "2020/10/07 16:37:53",
+			["session"] = 2022,
 			["counter"] = 1,
 		}, -- [196]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\services\\dejunker.lua",
-			["session"] = 2022,
 			["time"] = "2020/10/07 16:37:53",
+			["session"] = 2022,
 			["counter"] = 1,
 		}, -- [197]
 		{
@@ -1619,8 +1619,8 @@ BugGrabberDB = {
 		}, -- [206]
 		{
 			["message"] = "Error loading Interface\\AddOns\\Dejunk\\src\\events\\events.lua",
-			["time"] = "2020/10/07 16:36:53",
 			["session"] = 2023,
+			["time"] = "2020/10/07 16:36:53",
 			["counter"] = 3,
 		}, -- [207]
 		{
@@ -1687,20 +1687,20 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [215]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'TargetFrameToT:Show()'.",
-			["time"] = "2020/09/23 13:06:51",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Show'\nInterface\\FrameXML\\TargetFrame.lua:910: in function <Interface\\FrameXML\\TargetFrame.lua:905>\n[C]: ?\n[C]: in function `TargetofTarget_Update'\nInterface\\FrameXML\\TargetFrame.lua:420: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[C]: ?\n[C]: ?",
-			["session"] = 2085,
-			["counter"] = 15,
-		}, -- [216]
-		{
 			["message"] = "Interface\\AddOns\\xVermin\\Bindings.lua:20: attempt to call global 'FixBindings' (a nil value)",
 			["time"] = "2020/10/18 10:13:07",
 			["locals"] = "x = <table> {\n 1 = \"BUTTON2\"\n 2 = \"BUTTON3\"\n 3 = \"UP\"\n 4 = \"DOWN\"\n 5 = \"LEFT\"\n 6 = \"RIGHT\"\n 7 = \"A\"\n 8 = \"D\"\n 9 = \"SPACE\"\n 10 = \"NUMPAD0\"\n 11 = \"Z\"\n 12 = \"NUMLOCK\"\n 13 = \"BUTTON4\"\n 14 = \"INSERT\"\n 15 = \"DELETE\"\n 16 = \"NUMPADDIVIDE\"\n 17 = \"CTRL-F\"\n 18 = \"ENTER\"\n 19 = \"/\"\n 20 = \"SHIFT-PAGEDOWN\"\n 21 = \"R\"\n 22 = \"SHIFT-R\"\n 23 = \"CTRL-PAGEUP\"\n 24 = \"CTRL-PAGEDOWN\"\n 25 = \"CTRL-SHIFT-PAGEDOWN\"\n 26 = \"1\"\n 27 = \"2\"\n 28 = \"3\"\n 29 = \"4\"\n 30 = \"5\"\n 31 = \"6\"\n 32 = \"ALT-MOUSEWHEELUP\"\n 33 = \"SHIFT-MOUSEWHEELUP\"\n 34 = \"TAB\"\n 35 = \"E\"\n 36 = \"F\"\n 37 = \"CTRL-F1\"\n 38 = \"CTRL-F2\"\n 39 = \"CTRL-F3\"\n 40 = \"CTRL-F4\"\n 41 = \"CTRL-F5\"\n 42 = \"CTRL-F6\"\n 43 = \"CTRL-F7\"\n 44 = \"CTRL-F8\"\n 45 = \"CTRL-F9\"\n 46 = \"CTRL-F10\"\n 47 = \"H\"\n 48 = \"V\"\n 49 = \"G\"\n 50 = \"T\"\n 51 = \"SHIFT-T\"\n 52 = \"SHIFT-E\"\n 53 = \"SHIFT-D\"\n 54 = \"MOUSEWHEELDOWN\"\n 55 = \"MOUSEWHEELUP\"\n 56 = \"ALT-9\"\n 57 = \"ALT-0\"\n 58 = \"ALT-E\"\n 59 = \"ALT-R\"\n 60 = \"ALT-D\"\n 61 = \"ALT-F\"\n 62 = \"ALT-X\"\n 63 = \"SHIFT-X\"\n 64 = \"X\"\n 65 = \"F1\"\n 66 = \"F2\"\n 67 = \"F3\"\n 68 = \"F4\"\n 69 = \"F5\"\n 70 = \"F6\"\n 71 = \"F7\"\n 72 = \"ALT-S\"\n 73 = \"SHIFT-S\"\n 74 = \"SHIFT-1\"\n 75 = \"ALT-1\"\n 76 = \"SHIFT-2\"\n 77 = \"ALT-2\"\n 78 = \"SHIFT-3\"\n 79 = \"ALT-3\"\n 80 = \"SHIFT-4\"\n 81 = \"ALT-4\"\n 82 = \"SHIFT-5\"\n 83 = \"ALT-5\"\n 84 = \"CTRL-B\"\n 85 = \"CTRL-D\"\n 86 = \"K\"\n 87 = \"¸\"\n 88 = \"SHIFT-TAB\"\n 89 = \"CTRL-TAB\"\n 90 = \"CTRL-SHIFT-TAB\"\n 91 = \"SHIFT-F1\"\n 92 = \"SHIFT-F2\"\n 93 = \"SHIFT-F3\"\n 94 = \"SHIFT-F4\"\n 95 = \"SHIFT-F5\"\n 96 = \"CTRL-SHIFT-V\"\n 97 = \"ESCAPE\"\n 98 = \"B\"\n 99 = \"F8\"\n 100 = \"F9\"\n 101 = \"F10\"\n 102 = \"F11\"\n 103 = \"SHIFT-B\"\n 104 = \"C\"\n 105 = \"SHIFT-P\"\n 106 = \"U\"\n 107 = \"P\"\n 108 = \"SHIFT-I\"\n 109 = \"N\"\n 110 = \"M\"\n 111 = \"SHIFT-M\"\n 112 = \"SHIFT-SPACE\"\n 113 = \"O\"\n 114 = \"NUMPADPLUS\"\n 115 = \"NUMPADMINUS\"\n 116 = \"CTRL-=\"\n 117 = \"CTRL--\"\n 118 = \"ALT-Z\"\n 119 = \"PRINTSCREEN\"\n 120 = \"SHIFT-C\"\n}\ny = 0\n(*temporary) = nil\n(*temporary) = \"attempt to call global 'FixBindings' (a nil value)\"\n",
 			["stack"] = "Interface\\AddOns\\xVermin\\Bindings.lua:20: in function <Interface\\AddOns\\xVermin\\Bindings.lua:3>\nInterface\\AddOns\\xVermin\\Bindings.lua:134: in function <Interface\\AddOns\\xVermin\\Bindings.lua:129>",
 			["session"] = 2098,
 			["counter"] = 1,
+		}, -- [216]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'TargetFrameToT:Show()'.",
+			["time"] = "2020/09/23 13:06:51",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Show'\nInterface\\FrameXML\\TargetFrame.lua:910: in function <Interface\\FrameXML\\TargetFrame.lua:905>\n[C]: ?\n[C]: in function `TargetofTarget_Update'\nInterface\\FrameXML\\TargetFrame.lua:420: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[C]: ?\n[C]: ?",
+			["session"] = 2108,
+			["counter"] = 16,
 		}, -- [217]
 	},
 }

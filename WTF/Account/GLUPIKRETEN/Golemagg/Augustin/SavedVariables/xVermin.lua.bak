@@ -1,56 +1,16 @@
 
 xKillCount = {
 	["show"] = true,
-	["position"] = {
-		["y"] = -91.8228607177735,
-		["x"] = 497.136535644531,
-		["to"] = "TOPLEFT",
-		["from"] = "TOPLEFT",
+	["killLog"] = {
 	},
 	["experience"] = {
+		["totaltotal"] = 0,
 		["pulltotal"] = 0,
-		["totaltotal"] = 377449,
 	},
-	["killLog"] = {
-		["Sandfury Soul Eater"] = {
-			["name"] = "Sandfury Soul Eater",
-			["count"] = 3,
-		},
-		["Zul'Farrak Dead Hero"] = {
-			["name"] = "Zul'Farrak Dead Hero",
-			["count"] = 37,
-		},
-		["Sandfury Blood Drinker"] = {
-			["name"] = "Sandfury Blood Drinker",
-			["count"] = 2,
-		},
-		["Sandfury Witch Doctor"] = {
-			["name"] = "Sandfury Witch Doctor",
-			["count"] = 1,
-		},
-		["Scarab"] = {
-			["name"] = "Scarab",
-			["count"] = 62,
-		},
-		["Ward of Zum'rah"] = {
-			["name"] = "Ward of Zum'rah",
-			["count"] = 2,
-		},
-		["Greater Healing Ward"] = {
-			["name"] = "Greater Healing Ward",
-			["count"] = 2,
-		},
-		["Zul'Farrak Zombie"] = {
-			["name"] = "Zul'Farrak Zombie",
-			["count"] = 547,
-		},
-		["Lava Spout Totem"] = {
-			["name"] = "Lava Spout Totem",
-			["count"] = 2,
-		},
-		["Glasshide Basilisk"] = {
-			["name"] = "Glasshide Basilisk",
-			["count"] = 2,
-		},
+	["position"] = {
+		["y"] = -257.999877929688,
+		["x"] = 456.999908447266,
+		["to"] = "TOPLEFT",
+		["from"] = "TOPLEFT",
 	},
 }

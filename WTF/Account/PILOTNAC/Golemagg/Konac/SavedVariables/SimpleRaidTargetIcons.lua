@@ -29,5 +29,10 @@ SRTIExternalUF = {
 		"Grid2LayoutHeader1UnitButton3", -- [3]
 		"Grid2LayoutHeader1UnitButton4", -- [4]
 		"Grid2LayoutHeader1UnitButton5", -- [5]
+		"Grid2LayoutHeader2UnitButton1", -- [6]
+		"Grid2LayoutHeader2UnitButton2", -- [7]
+		"Grid2LayoutHeader2UnitButton3", -- [8]
+		"Grid2LayoutHeader2UnitButton4", -- [9]
+		"Grid2LayoutHeader2UnitButton5", -- [10]
 	},
 }

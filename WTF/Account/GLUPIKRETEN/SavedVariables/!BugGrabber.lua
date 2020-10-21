@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 3414,
 	["lastSanitation"] = 3,
+	["session"] = 3419,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -165,8 +165,8 @@ BugGrabberDB = {
 		}, -- [20]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["time"] = "2020/07/26 13:26:58",
 			["session"] = 1336,
+			["time"] = "2020/07/26 13:26:58",
 			["counter"] = 2,
 		}, -- [21]
 		{
@@ -546,8 +546,8 @@ BugGrabberDB = {
 		}, -- [68]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["session"] = 1423,
 			["time"] = "2020/07/27 20:37:46",
+			["session"] = 1423,
 			["counter"] = 4,
 		}, -- [69]
 		{
@@ -805,8 +805,8 @@ BugGrabberDB = {
 		}, -- [101]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["session"] = 1605,
 			["time"] = "2020/08/02 10:06:15",
+			["session"] = 1605,
 			["counter"] = 3,
 		}, -- [102]
 		{
@@ -946,8 +946,8 @@ BugGrabberDB = {
 		}, -- [119]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
-			["time"] = "2020/08/02 20:13:03",
 			["session"] = 1654,
+			["time"] = "2020/08/02 20:13:03",
 			["counter"] = 3,
 		}, -- [120]
 		{
@@ -1420,8 +1420,8 @@ BugGrabberDB = {
 		}, -- [179]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Experience.lua",
-			["time"] = "2020/08/19 21:35:15",
 			["session"] = 1943,
+			["time"] = "2020/08/19 21:35:15",
 			["counter"] = 6,
 		}, -- [180]
 		{
@@ -2368,8 +2368,8 @@ BugGrabberDB = {
 		}, -- [298]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\ClickToMove\\ClickToMove.toc",
-			["time"] = "2020/09/30 12:15:00",
 			["session"] = 2740,
+			["time"] = "2020/09/30 12:15:00",
 			["counter"] = 10,
 		}, -- [299]
 		{
@@ -3192,14 +3192,14 @@ BugGrabberDB = {
 		}, -- [402]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Examiner\\Examiner.toc",
-			["session"] = 3191,
 			["time"] = "2020/10/14 21:40:43",
+			["session"] = 3191,
 			["counter"] = 2,
 		}, -- [403]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\NovaInstanceTracker\\NovaInstanceTracker.toc",
-			["session"] = 3191,
 			["time"] = "2020/10/14 21:40:43",
+			["session"] = 3191,
 			["counter"] = 2,
 		}, -- [404]
 		{
@@ -3585,8 +3585,8 @@ BugGrabberDB = {
 		}, -- [452]
 		{
 			["message"] = "(null)",
-			["session"] = 3342,
 			["time"] = "2020/07/24 16:00:06",
+			["session"] = 3342,
 			["counter"] = 193,
 		}, -- [453]
 		{
@@ -3702,8 +3702,8 @@ BugGrabberDB = {
 		}, -- [467]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["time"] = "2020/08/13 21:31:07",
 			["session"] = 3397,
+			["time"] = "2020/08/13 21:31:07",
 			["counter"] = 12,
 		}, -- [468]
 		{
@@ -3739,12 +3739,26 @@ BugGrabberDB = {
 			["counter"] = 367,
 		}, -- [472]
 		{
+			["message"] = "[string \"--[==[ Error in 'Citrine':'condition' ]==] ...\"]:4: attempt to call global 'dump' (a nil value)",
+			["time"] = "2020/10/21 10:17:04",
+			["stack"] = "[C]: in function `xpcall'\n...ace\\AddOns\\WeakAuras\\RegionTypes\\RegionPrototype.lua:289: in function `RunCode'\n[string \"--[==[ Error in 'Citrine':'condition checks...\"]:34: in function `?'\nInterface\\AddOns\\WeakAuras\\Conditions.lua:604: in function `RunConditions'\nInterface\\AddOns\\WeakAuras\\WeakAuras-3.0.0.lua:3923: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3889>\nInterface\\AddOns\\WeakAuras\\WeakAuras-3.0.0.lua:4004: in function `UpdatedTriggerState'\nInterface\\AddOns\\WeakAuras\\GenericTrigger.lua:820: in function `ScanWithFakeEvent'\nInterface\\AddOns\\WeakAuras\\GenericTrigger.lua:1092: in function `LoadDisplays'\nInterface\\AddOns\\WeakAuras\\WeakAuras-3.0.0.lua:1659: in function `LoadDisplays'\nInterface\\AddOns\\WeakAuras\\WeakAuras-3.0.0.lua:1478: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:1362>\nInterface\\AddOns\\WeakAuras\\WeakAuras-3.0.0.lua:1639: in function `Resume'\n...dOns\\WeakAurasOptions\\OptionsFrames\\OptionsFrame.lua:193: in function <...dOns\\WeakAurasOptions\\OptionsFrames\\OptionsFrame.lua:174>\n[C]: in function `Hide'\n...terface\\AddOns\\WeakAurasOptions\\WeakAurasOptions-3.0.0.lua:540: in function <...terface\\AddOns\\WeakAurasOptions\\WeakAurasOptions.lua:538>",
+			["session"] = 3416,
+			["counter"] = 3,
+		}, -- [473]
+		{
+			["message"] = "[string \"--[==[ Error in 'Citrine':'condition' ]==] ...\"]:5: attempt to call global 'dump' (a nil value)",
+			["time"] = "2020/10/21 10:17:45",
+			["stack"] = "[C]: in function `xpcall'\n...ace\\AddOns\\WeakAuras\\RegionTypes\\RegionPrototype.lua:289: in function `RunCode'\n[string \"--[==[ Error in 'Citrine':'condition checks...\"]:42: in function `?'\nInterface\\AddOns\\WeakAuras\\Conditions.lua:604: in function `RunConditions'\nInterface\\AddOns\\WeakAuras\\WeakAuras-3.0.0.lua:3923: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3889>\nInterface\\AddOns\\WeakAuras\\WeakAuras-3.0.0.lua:4021: in function `UpdatedTriggerState'\nInterface\\AddOns\\WeakAuras\\GenericTrigger.lua:738: in function `ScanEventsInternal'\nInterface\\AddOns\\WeakAuras\\GenericTrigger.lua:694: in function `ScanEvents'\nInterface\\AddOns\\WeakAuras\\GenericTrigger.lua:840: in function <Interface\\AddOns\\WeakAuras\\GenericTrigger.lua:825>",
+			["session"] = 3416,
+			["counter"] = 1,
+		}, -- [474]
+		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'WeakAuras' tried to call the protected function 'UNKNOWN()'.",
 			["time"] = "2020/10/20 18:51:12",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: ?\n[C]: in function `xpcall'\nInterface\\AddOns\\WeakAuras\\WeakAuras-3.0.0.lua:4953: in function `AnchorFrame'\n...ace\\AddOns\\WeakAuras\\RegionTypes\\RegionPrototype.lua:856: in function `Expand'\nInterface\\AddOns\\WeakAuras\\WeakAuras-3.0.0.lua:3842: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3836>\nInterface\\AddOns\\WeakAuras\\WeakAuras-3.0.0.lua:3922: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3889>\nInterface\\AddOns\\WeakAuras\\WeakAuras-3.0.0.lua:4021: in function `UpdatedTriggerState'\nInterface\\AddOns\\WeakAuras\\GenericTrigger.lua:738: in function `ScanEventsInternal'\nInterface\\AddOns\\WeakAuras\\GenericTrigger.lua:694: in function `ScanEvents'\nInterface\\AddOns\\WeakAuras\\GenericTrigger.lua:840: in function <Interface\\AddOns\\WeakAuras\\GenericTrigger.lua:825>",
-			["session"] = 3414,
-			["counter"] = 1,
-		}, -- [473]
+			["session"] = 3419,
+			["counter"] = 5,
+		}, -- [475]
 	},
 }
