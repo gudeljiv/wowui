@@ -243,8 +243,8 @@ NeatPlatesHubSettings = {
 		},
 		["ThreatGlowEnable"] = true,
 		["ColorDangerGlowMode"] = 2,
-		["AdvancedEnableUnitCache"] = true,
 		["WidgetRangeIndicator"] = false,
+		["AdvancedEnableUnitCache"] = true,
 		["TextColorElite"] = {
 			["a"] = 0.501959681510925,
 			["r"] = 0.901958823204041,
@@ -347,7 +347,7 @@ NeatPlatesHubSettings = {
 		},
 		["HighlightFocusMode"] = 1,
 		["StatusTextCenter"] = 5,
-		["UnitSpotlightScale"] = 1.4,
+		["TextShowServerIndicator"] = true,
 		["TextColorHostilePlayer"] = {
 			["a"] = 0.999997794628143,
 			["r"] = 0.999997794628143,
@@ -356,7 +356,7 @@ NeatPlatesHubSettings = {
 		},
 		["WidgetAuraTrackPoison"] = true,
 		["StatusTextRightColor"] = true,
-		["TextShowServerIndicator"] = true,
+		["UnitSpotlightScale"] = 1.4,
 		["ColorHostilePlayer"] = {
 			["a"] = 0.999997794628143,
 			["r"] = 0.999997794628143,
@@ -416,13 +416,13 @@ NeatPlatesHubSettings = {
 			["b"] = 0.823527574539185,
 		},
 		["FriendlyAlphaSpotlightMode"] = "None",
-		["ScaleIgnoreInactive"] = false,
 		["ColorFriendlyPlayer"] = {
 			["a"] = 0.999997794628143,
 			["r"] = 0,
 			["g"] = 0,
 			["b"] = 0.999997794628143,
 		},
+		["ScaleIgnoreInactive"] = false,
 		["ColorPartyAggroGlow"] = true,
 		["OpacitySpotlightMouseover"] = false,
 		["CustomFocusColor"] = false,

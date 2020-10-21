@@ -1,7 +1,119 @@
 
 Grid2DB = {
 	["namespaces"] = {
-		["Grid2RaidDebuffs"] = {
+		["Grid2Frame"] = {
+			["profiles"] = {
+				["Default"] = {
+					["frameColor"] = {
+						["a"] = 0,
+					},
+					["fontSize"] = 12,
+					["frameBorder"] = 1,
+					["extraThemes"] = {
+						{
+							["frameColor"] = {
+								["a"] = 0,
+								["b"] = 0,
+								["g"] = 0,
+								["r"] = 0,
+							},
+							["fontSize"] = 12,
+							["frameBorder"] = 1,
+							["iconSize"] = 14,
+							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
+							["frameBorderDistance"] = -1,
+							["frameHeight"] = 30,
+							["barTexture"] = "Glamour2",
+							["mouseoverColor"] = {
+								["a"] = 1,
+								["b"] = 1,
+								["g"] = 1,
+								["r"] = 1,
+							},
+							["frameWidths"] = {
+								[10] = 55,
+								[5] = 55,
+							},
+							["frameBorderColor"] = {
+								["a"] = 0,
+								["b"] = 0,
+								["g"] = 0,
+								["r"] = 0,
+							},
+							["frameBorderTexture"] = "None",
+							["frameContentColor"] = {
+								["a"] = 0,
+								["b"] = 0,
+								["g"] = 0,
+								["r"] = 0,
+							},
+							["orientation"] = "VERTICAL",
+							["frameHeights"] = {
+								[10] = 20,
+								[5] = 25,
+							},
+							["mouseoverHighlight"] = false,
+							["frameWidth"] = 55,
+							["frameTexture"] = "Glamour2",
+						}, -- [1]
+						{
+							["frameColor"] = {
+								["a"] = 0,
+								["r"] = 0,
+								["g"] = 0,
+								["b"] = 0,
+							},
+							["fontSize"] = 12,
+							["frameBorder"] = 1,
+							["iconSize"] = 14,
+							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
+							["frameBorderDistance"] = -1,
+							["frameHeight"] = 25,
+							["barTexture"] = "Glamour2",
+							["frameBorderColor"] = {
+								["a"] = 0,
+								["r"] = 0,
+								["g"] = 0,
+								["b"] = 0,
+							},
+							["frameWidths"] = {
+								[10] = 55,
+								[5] = 55,
+							},
+							["frameTexture"] = "Glamour2",
+							["mouseoverColor"] = {
+								["a"] = 1,
+								["r"] = 1,
+								["g"] = 1,
+								["b"] = 1,
+							},
+							["mouseoverHighlight"] = false,
+							["frameHeights"] = {
+								[10] = 20,
+								[5] = 25,
+							},
+							["frameContentColor"] = {
+								["a"] = 0,
+								["r"] = 0,
+								["g"] = 0,
+								["b"] = 0,
+							},
+							["orientation"] = "VERTICAL",
+							["frameWidth"] = 55,
+							["frameBorderTexture"] = "None",
+						}, -- [2]
+					},
+					["frameBorderDistance"] = -2,
+					["frameHeight"] = 50,
+					["frameTexture"] = "Glamour2",
+					["barTexture"] = "Glamour2",
+					["frameContentColor"] = {
+						["a"] = 0,
+					},
+					["frameWidth"] = 120,
+					["frameBorderTexture"] = "None",
+				},
+			},
 		},
 		["Grid2Layout"] = {
 			["global"] = {
@@ -27,7 +139,7 @@ Grid2DB = {
 					["minimapIcon"] = {
 						["hide"] = true,
 					},
-					["PosY"] = 79.9998963435435,
+					["PosY"] = 79.999880067501,
 					["extraThemes"] = {
 						{
 							["BackgroundTexture"] = "None",
@@ -96,134 +208,23 @@ Grid2DB = {
 					["BorderG"] = 0.501960784313726,
 					["Spacing"] = 1,
 					["BackgroundR"] = 0.101960784313725,
-					["PosX"] = -253.33334044218,
-				},
-			},
-		},
-		["Grid2AoeHeals"] = {
-		},
-		["Grid2Options"] = {
-		},
-		["Grid2Frame"] = {
-			["profiles"] = {
-				["Default"] = {
-					["frameColor"] = {
-						["a"] = 0,
-					},
-					["fontSize"] = 12,
-					["frameBorder"] = 1,
-					["extraThemes"] = {
-						{
-							["frameColor"] = {
-								["a"] = 0,
-								["b"] = 0,
-								["g"] = 0,
-								["r"] = 0,
-							},
-							["fontSize"] = 12,
-							["frameBorder"] = 1,
-							["iconSize"] = 14,
-							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
-							["frameBorderDistance"] = -1,
-							["frameHeight"] = 30,
-							["barTexture"] = "Glamour2",
-							["mouseoverColor"] = {
-								["a"] = 1,
-								["b"] = 1,
-								["g"] = 1,
-								["r"] = 1,
-							},
-							["frameWidths"] = {
-								[10] = 55,
-								[5] = 55,
-							},
-							["frameBorderColor"] = {
-								["a"] = 0,
-								["b"] = 0,
-								["g"] = 0,
-								["r"] = 0,
-							},
-							["frameBorderTexture"] = "None",
-							["orientation"] = "VERTICAL",
-							["frameContentColor"] = {
-								["a"] = 0,
-								["b"] = 0,
-								["g"] = 0,
-								["r"] = 0,
-							},
-							["mouseoverHighlight"] = false,
-							["frameHeights"] = {
-								[10] = 20,
-								[5] = 25,
-							},
-							["frameWidth"] = 55,
-							["frameTexture"] = "Glamour2",
-						}, -- [1]
-						{
-							["frameColor"] = {
-								["a"] = 0,
-								["r"] = 0,
-								["g"] = 0,
-								["b"] = 0,
-							},
-							["fontSize"] = 12,
-							["frameBorder"] = 1,
-							["iconSize"] = 14,
-							["mouseoverTexture"] = "Blizzard Quest Title Highlight",
-							["frameBorderDistance"] = -1,
-							["frameHeight"] = 25,
-							["barTexture"] = "Glamour2",
-							["frameBorderColor"] = {
-								["a"] = 0,
-								["r"] = 0,
-								["g"] = 0,
-								["b"] = 0,
-							},
-							["frameWidths"] = {
-								[10] = 55,
-								[5] = 55,
-							},
-							["frameTexture"] = "Glamour2",
-							["mouseoverColor"] = {
-								["a"] = 1,
-								["r"] = 1,
-								["g"] = 1,
-								["b"] = 1,
-							},
-							["frameHeights"] = {
-								[10] = 20,
-								[5] = 25,
-							},
-							["mouseoverHighlight"] = false,
-							["orientation"] = "VERTICAL",
-							["frameContentColor"] = {
-								["a"] = 0,
-								["r"] = 0,
-								["g"] = 0,
-								["b"] = 0,
-							},
-							["frameWidth"] = 55,
-							["frameBorderTexture"] = "None",
-						}, -- [2]
-					},
-					["frameBorderDistance"] = -2,
-					["frameHeight"] = 50,
-					["frameTexture"] = "Glamour2",
-					["barTexture"] = "Glamour2",
-					["frameContentColor"] = {
-						["a"] = 0,
-					},
-					["frameWidth"] = 120,
-					["frameBorderTexture"] = "None",
+					["PosX"] = -253.333352649212,
 				},
 			},
 		},
 		["LibDualSpec-1.0"] = {
 		},
+		["Grid2Options"] = {
+		},
+		["Grid2RaidDebuffs"] = {
+		},
+		["Grid2AoeHeals"] = {
+		},
 	},
 	["profileKeys"] = {
-		["Mxyz - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
 		["Augustin - Golemagg"] = "Default",
+		["Mxyz - Golemagg"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

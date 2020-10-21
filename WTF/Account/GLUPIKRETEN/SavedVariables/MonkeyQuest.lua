@@ -287,28 +287,46 @@ MonkeyQuestConfig = {
 	},
 	["Golemagg|Augustin"] = {
 		["m_aQuestList"] = {
+			["Shadowshard Fragments - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Journey to the Marsh - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Mage - true"] = {
+				["m_bChecked"] = false,
+			},
+			["Waters of Xavian - false"] = {
+				["m_bChecked"] = true,
+			},
+			["A Plague Upon Thee - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Return to the Marsh - false"] = {
+				["m_bChecked"] = true,
+			},
 			["Zul'Farrak - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Maraudon - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Journey to the Marsh - false"] = {
-				["m_bChecked"] = true,
-			},
 			["Tabetha's Task - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Return to the Marsh - false"] = {
+			["Western Plaguelands - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Waters of Xavian - false"] = {
+			["Tirisfal Glades - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Shadowshard Fragments - false"] = {
+			["Barov Family Fortune - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Mage - true"] = {
+			["Scholomance - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Scarlet Diversions - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -888,13 +906,13 @@ MonkeyQuestConfig = {
 		["m_bShowZoneHighlight"] = true,
 		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
 		["m_bAlwaysHeaders"] = false,
-		["m_bDisplay"] = false,
+		["m_bDisplay"] = true,
 		["m_bMinimized"] = false,
 		["m_strInitialObjectiveColour"] = "|cFFD82619",
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 1153.99987792969,
+		["m_iFrameBottom"] = 747.000122070313,
 		["m_bHideTitleButtons"] = false,
 		["m_iFrameLeft"] = 2081.99975585938,
 		["m_bColourDoneOrFailed"] = true,
@@ -1004,19 +1022,19 @@ MonkeyQuestConfig = {
 		["m_bShowZoneHighlight"] = true,
 		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
 		["m_aQuestList"] = {
-			["Break a Few Eggs - false"] = {
+			["Durotar - true"] = {
 				["m_bChecked"] = true,
 			},
 			["From The Wreckage.... - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Durotar - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Vanquish the Betrayers - false"] = {
+			["Break a Few Eggs - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Encroachment - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Vanquish the Betrayers - false"] = {
 				["m_bChecked"] = true,
 			},
 		},

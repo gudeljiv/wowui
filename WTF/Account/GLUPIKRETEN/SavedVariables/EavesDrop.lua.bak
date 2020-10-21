@@ -78,11 +78,11 @@ EavesDropDB = {
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
-			["SCROLLBUTTON"] = true,
-			["TEXTSIZE"] = 13,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
+			["TEXTSIZE"] = 13,
+			["SCROLLBUTTON"] = true,
 			["NUMLINES"] = 16,
 			["LINEHEIGHT"] = 16,
 			["HIDETAB"] = true,
@@ -91,7 +91,7 @@ EavesDropDB = {
 		},
 		["Kosturko - Golemagg"] = {
 		},
-		["Spija - Genesis"] = {
+		["DRUID"] = {
 		},
 		["Golemagg"] = {
 		},
@@ -114,7 +114,7 @@ EavesDropDB = {
 			["NUMLINES"] = 16,
 			["y"] = 236.195578993564,
 		},
-		["DRUID"] = {
+		["Spija - Genesis"] = {
 		},
 		["Korupcija - Stonespine"] = {
 		},

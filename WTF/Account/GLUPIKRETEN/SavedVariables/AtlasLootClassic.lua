@@ -153,10 +153,6 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Vermin - Golemagg"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 			["GUI"] = {
 				["point"] = {
 					nil, -- [1]
@@ -172,6 +168,10 @@ AtlasLootClassicDB = {
 					3, -- [4]
 					0, -- [5]
 				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
 			},
 		},
 		["Mxyzptlk - Golemagg"] = {
@@ -220,26 +220,6 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Default"] = {
-			["GUI"] = {
-				["point"] = {
-					"TOP", -- [1]
-					nil, -- [2]
-					"TOP", -- [3]
-					-302.000030517578, -- [4]
-					-209.000076293945, -- [5]
-				},
-				["selected"] = {
-					nil, -- [1]
-					"Uldaman", -- [2]
-					nil, -- [3]
-					1, -- [4]
-					0, -- [5]
-				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
-			},
 			["Addons"] = {
 				["Favourites"] = {
 					["lists"] = {
@@ -249,6 +229,26 @@ AtlasLootClassicDB = {
 							},
 						},
 					},
+				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
+			["GUI"] = {
+				["point"] = {
+					nil, -- [1]
+					nil, -- [2]
+					"CENTER", -- [3]
+					-302.000030517578, -- [4]
+					188.999954223633, -- [5]
+				},
+				["selected"] = {
+					nil, -- [1]
+					"BlackwingLair", -- [2]
+					8, -- [3]
+					3, -- [4]
+					0, -- [5]
 				},
 			},
 		},

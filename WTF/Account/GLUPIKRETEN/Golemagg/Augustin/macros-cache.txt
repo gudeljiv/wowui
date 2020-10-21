@@ -1,3 +1,11 @@
+VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:shift]Portal: Undercity;Teleport: Undercity
+END
+VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [mod:shift]Portal: Orgrimmar;Teleport: Orgrimmar
+END
 VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [mod:shift]Portal: Thunder Bluff;Teleport: Thunder Bluff
@@ -15,13 +23,5 @@ END
 VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
-/cast Fireball
-END
-VER 3 0000000001000005 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [mod:shift]Portal: Undercity;Teleport: Undercity
-END
-VER 3 0000000001000006 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [mod:shift]Portal: Orgrimmar;Teleport: Orgrimmar
+/cast [mod:alt]Fireball(Rank 1);Fireball
 END

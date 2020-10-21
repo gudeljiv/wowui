@@ -41,6 +41,11 @@ ChocolateBarDB = {
 	["addonVersion"] = "@project-version@",
 	["profiles"] = {
 		["Default"] = {
+			["locked"] = false,
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["barSettings"] = {
 				["ChocolateBar1"] = {
 					["barPoint"] = "TOPRIGHT",
@@ -60,20 +65,6 @@ ChocolateBarDB = {
 					["index"] = 1,
 					["width"] = 147,
 				},
-			},
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
-			},
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["background"] = {
-				["tile"] = true,
-				["color"] = {
-					["a"] = 0,
-					["b"] = 0,
-					["g"] = 0,
-					["r"] = 0,
-				},
-				["textureName"] = "None",
 			},
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
@@ -316,16 +307,16 @@ ChocolateBarDB = {
 					["align"] = "right",
 					["index"] = 3,
 				},
-				["TestNoText"] = {
-					["enabled"] = false,
-					["index"] = 4,
-					["barName"] = "ChocolateBar1",
-				},
 				["Leatrix_Maps"] = {
 					["enabled"] = false,
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
+				},
+				["TestNoText"] = {
+					["enabled"] = false,
+					["index"] = 4,
+					["barName"] = "ChocolateBar1",
 				},
 				["NWB"] = {
 					["index"] = 3,
@@ -377,15 +368,24 @@ ChocolateBarDB = {
 					["customLabel"] = "KT",
 				},
 			},
-			["fontName"] = "Friz Quadrata TT",
-			["fixedStrata"] = true,
-			["gap"] = 0,
-			["moveFrames"] = false,
 			["desaturated"] = false,
+			["fixedStrata"] = true,
+			["fontName"] = "Friz Quadrata TT",
+			["moveFrames"] = false,
+			["gap"] = 0,
 			["textOffset"] = 2,
 			["height"] = 20,
 			["forceColor"] = false,
-			["locked"] = false,
+			["background"] = {
+				["tile"] = true,
+				["color"] = {
+					["a"] = 0,
+					["b"] = 0,
+					["g"] = 0,
+					["r"] = 0,
+				},
+				["textureName"] = "None",
+			},
 			["textColor"] = {
 				["a"] = 1,
 				["r"] = 1,
@@ -412,19 +412,19 @@ CB_PlayedTime = {
 		["total"] = 1719,
 	},
 	["Mxyz-"] = {
-		["total"] = 145822,
+		["total"] = 146110,
 	},
 	["Antun-"] = {
 		["total"] = 794,
 	},
 	["Vermin-"] = {
-		["total"] = 199978,
+		["total"] = 200071,
 	},
 	["Judawise-"] = {
 		["total"] = 437,
 	},
-	["Dmitar-"] = {
-		["total"] = 1872,
+	["Whatevs-"] = {
+		["total"] = 213,
 	},
 	["Mxym-"] = {
 		["total"] = 4765,
@@ -435,14 +435,14 @@ CB_PlayedTime = {
 	["Koloman-"] = {
 		["total"] = 129,
 	},
-	["Vermins-"] = {
-		["total"] = 3014,
-	},
-	["Whatevs-"] = {
-		["total"] = 213,
-	},
 	["Mxyzptlk-"] = {
 		["total"] = 8398,
+	},
+	["Dmitar-"] = {
+		["total"] = 1872,
+	},
+	["Vermins-"] = {
+		["total"] = 3014,
 	},
 	["Dotwise-"] = {
 		["total"] = 3924,
@@ -466,7 +466,7 @@ CB_PlayedTime = {
 		["total"] = 1248,
 	},
 	["Augustin-"] = {
-		["total"] = 389818,
+		["total"] = 392080,
 	},
 	["Pitchwise-"] = {
 		["total"] = 390,

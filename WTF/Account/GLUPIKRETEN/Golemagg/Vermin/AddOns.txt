@@ -4,3 +4,5 @@ Immersion: disabled
 AdiBags: enabled
 AdiBags_Config: enabled
 Sorted: disabled
+WeakAurasCompanion: enabled
+WeakAurasArchive: enabled

@@ -39,11 +39,6 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Mxyz - Golemagg"] = {
-			["minimap"] = {
-				["shown"] = false,
-				["minimapPos"] = 35.6918309653034,
-				["hide"] = true,
-			},
 			["GUI"] = {
 				["selected"] = {
 					nil, -- [1]
@@ -52,6 +47,11 @@ AtlasLootClassicDB = {
 					1, -- [4]
 					0, -- [5]
 				},
+			},
+			["minimap"] = {
+				["shown"] = false,
+				["minimapPos"] = 35.6918309653034,
+				["hide"] = true,
 			},
 		},
 		["Pitchwise - Golemagg"] = {
@@ -166,17 +166,17 @@ AtlasLootClassicDB = {
 			},
 			["GUI"] = {
 				["point"] = {
-					"TOP", -- [1]
+					nil, -- [1]
 					nil, -- [2]
-					"TOP", -- [3]
+					"CENTER", -- [3]
 					-302.000030517578, -- [4]
-					-209.000076293945, -- [5]
+					188.999954223633, -- [5]
 				},
 				["selected"] = {
 					nil, -- [1]
-					"Uldaman", -- [2]
-					nil, -- [3]
-					1, -- [4]
+					"BlackwingLair", -- [2]
+					8, -- [3]
+					3, -- [4]
 					0, -- [5]
 				},
 			},
@@ -186,6 +186,10 @@ AtlasLootClassicDB = {
 		["Jaroslav - Golemagg"] = {
 		},
 		["Vermin - Golemagg"] = {
+			["minimap"] = {
+				["shown"] = false,
+				["hide"] = true,
+			},
 			["GUI"] = {
 				["point"] = {
 					nil, -- [1]
@@ -201,10 +205,6 @@ AtlasLootClassicDB = {
 					3, -- [4]
 					0, -- [5]
 				},
-			},
-			["minimap"] = {
-				["shown"] = false,
-				["hide"] = true,
 			},
 		},
 		["Testxv - Golemagg"] = {
