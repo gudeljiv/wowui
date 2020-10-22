@@ -1,7 +1,6 @@
 
 Blizzard_Console_SavedVars = {
 	["version"] = 3,
-	["height"] = 300,
 	["messageHistory"] = {
 		{
 			"DBCache::CancelCallback ignored", -- [1]
@@ -148,7 +147,7 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [36]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [37]
 		{
@@ -156,115 +155,115 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [38]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Attempted to register existing command: ShowObjUsage\n", -- [1]
 			0, -- [2]
 		}, -- [39]
 		{
-			"Attempted to register existing command: ShowObjUsage\n", -- [1]
+			"Attempted to register existing command: SetDifficulty\n", -- [1]
 			0, -- [2]
 		}, -- [40]
 		{
-			"Attempted to register existing command: SetDifficulty\n", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [41]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [42]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [43]
 		{
-			"Got new connection 3", -- [1]
+			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
 		}, -- [44]
 		{
-			"Proficiency in item class 2 set to 0x0000000080", -- [1]
+			"Proficiency in item class 2 set to 0x0000008080", -- [1]
 			0, -- [2]
 		}, -- [45]
 		{
-			"Proficiency in item class 2 set to 0x0000008080", -- [1]
+			"Proficiency in item class 4 set to 0x0000000001", -- [1]
 			0, -- [2]
 		}, -- [46]
 		{
-			"Proficiency in item class 4 set to 0x0000000001", -- [1]
+			"Proficiency in item class 2 set to 0x000000c080", -- [1]
 			0, -- [2]
 		}, -- [47]
 		{
-			"Proficiency in item class 2 set to 0x000000c080", -- [1]
+			"Proficiency in item class 2 set to 0x000008c080", -- [1]
 			0, -- [2]
 		}, -- [48]
 		{
-			"Proficiency in item class 2 set to 0x000008c080", -- [1]
+			"Proficiency in item class 4 set to 0x0000000003", -- [1]
 			0, -- [2]
 		}, -- [49]
 		{
-			"Proficiency in item class 4 set to 0x0000000003", -- [1]
+			"Proficiency in item class 2 set to 0x000008c080", -- [1]
 			0, -- [2]
 		}, -- [50]
 		{
-			"Proficiency in item class 2 set to 0x000008c080", -- [1]
+			"Proficiency in item class 4 set to 0x0000000003", -- [1]
 			0, -- [2]
 		}, -- [51]
 		{
-			"Proficiency in item class 4 set to 0x0000000003", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [52]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"Time set to 10/22/2020 (Thu) 8:57", -- [1]
 			0, -- [2]
 		}, -- [53]
 		{
-			"Time set to 10/22/2020 (Thu) 8:57", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [54]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [55]
 		{
-			"Time played:", -- [1]
+			"Total: 0d 2h 20m 26s", -- [1]
 			0, -- [2]
 		}, -- [56]
 		{
-			"Total: 0d 2h 20m 26s", -- [1]
+			"Level: 0d 1h 26m 53s", -- [1]
 			0, -- [2]
 		}, -- [57]
 		{
-			"Level: 0d 1h 26m 53s", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [58]
 		{
-			"Time played:", -- [1]
+			"Total: 0d 2h 21m 20s", -- [1]
 			0, -- [2]
 		}, -- [59]
 		{
-			"Total: 0d 2h 21m 20s", -- [1]
+			"Level: 0d 1h 27m 47s", -- [1]
 			0, -- [2]
 		}, -- [60]
 		{
-			"Level: 0d 1h 27m 47s", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [61]
 		{
-			"World transfer pending...", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [62]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [63]
 		{
-			"Time played:", -- [1]
+			"Total: 0d 2h 21m 34s", -- [1]
 			0, -- [2]
 		}, -- [64]
 		{
-			"Total: 0d 2h 21m 34s", -- [1]
+			"Level: 0d 1h 28m 1s", -- [1]
 			0, -- [2]
 		}, -- [65]
 		{
-			"Level: 0d 1h 28m 1s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [66]
 		{
@@ -504,7 +503,7 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [125]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [126]
 		{
@@ -512,111 +511,111 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [127]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Attempted to register existing command: ShowObjUsage\n", -- [1]
 			0, -- [2]
 		}, -- [128]
 		{
-			"Attempted to register existing command: ShowObjUsage\n", -- [1]
+			"Attempted to register existing command: SetDifficulty\n", -- [1]
 			0, -- [2]
 		}, -- [129]
 		{
-			"Attempted to register existing command: SetDifficulty\n", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [130]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [131]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [132]
 		{
-			"Got new connection 3", -- [1]
+			"Proficiency in item class 2 set to 0x0000000001", -- [1]
 			0, -- [2]
 		}, -- [133]
 		{
-			"Proficiency in item class 2 set to 0x0000000001", -- [1]
+			"Proficiency in item class 2 set to 0x0000000005", -- [1]
 			0, -- [2]
 		}, -- [134]
 		{
-			"Proficiency in item class 2 set to 0x0000000005", -- [1]
+			"Proficiency in item class 2 set to 0x000000000d", -- [1]
 			0, -- [2]
 		}, -- [135]
 		{
-			"Proficiency in item class 2 set to 0x000000000d", -- [1]
+			"Proficiency in item class 2 set to 0x000000040d", -- [1]
 			0, -- [2]
 		}, -- [136]
 		{
-			"Proficiency in item class 2 set to 0x000000040d", -- [1]
+			"Proficiency in item class 4 set to 0x0000000001", -- [1]
 			0, -- [2]
 		}, -- [137]
 		{
-			"Proficiency in item class 4 set to 0x0000000001", -- [1]
+			"Proficiency in item class 2 set to 0x000000440d", -- [1]
 			0, -- [2]
 		}, -- [138]
 		{
-			"Proficiency in item class 2 set to 0x000000440d", -- [1]
+			"Proficiency in item class 4 set to 0x0000000005", -- [1]
 			0, -- [2]
 		}, -- [139]
 		{
-			"Proficiency in item class 4 set to 0x0000000005", -- [1]
+			"Proficiency in item class 4 set to 0x0000000007", -- [1]
 			0, -- [2]
 		}, -- [140]
 		{
-			"Proficiency in item class 4 set to 0x0000000007", -- [1]
+			"Proficiency in item class 2 set to 0x000000440d", -- [1]
 			0, -- [2]
 		}, -- [141]
 		{
-			"Proficiency in item class 2 set to 0x000000440d", -- [1]
+			"Proficiency in item class 4 set to 0x0000000007", -- [1]
 			0, -- [2]
 		}, -- [142]
 		{
-			"Proficiency in item class 4 set to 0x0000000007", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [143]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"Time set to 10/22/2020 (Thu) 9:03", -- [1]
 			0, -- [2]
 		}, -- [144]
 		{
-			"Time set to 10/22/2020 (Thu) 9:03", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [145]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [146]
 		{
-			"Time played:", -- [1]
+			"Total: 4d 1h 2m 3s", -- [1]
 			0, -- [2]
 		}, -- [147]
 		{
-			"Total: 4d 1h 2m 3s", -- [1]
+			"Level: 0d 5h 0m 55s", -- [1]
 			0, -- [2]
 		}, -- [148]
 		{
-			"Level: 0d 5h 0m 55s", -- [1]
+			"Skill 95 increased from 149 to 150", -- [1]
 			0, -- [2]
 		}, -- [149]
 		{
-			"Skill 95 increased from 149 to 150", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [150]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [151]
 		{
-			"Time played:", -- [1]
+			"Total: 4d 1h 2m 56s", -- [1]
 			0, -- [2]
 		}, -- [152]
 		{
-			"Total: 4d 1h 2m 56s", -- [1]
+			"Level: 0d 5h 1m 48s", -- [1]
 			0, -- [2]
 		}, -- [153]
 		{
-			"Level: 0d 5h 1m 48s", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13599, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [154]
 		{
@@ -1416,7 +1415,7 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [353]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 13599, effect aura: 13, which is wrong", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [354]
 		{
@@ -1424,163 +1423,163 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [355]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Attempted to register existing command: ShowObjUsage\n", -- [1]
 			0, -- [2]
 		}, -- [356]
 		{
-			"Attempted to register existing command: ShowObjUsage\n", -- [1]
+			"Attempted to register existing command: SetDifficulty\n", -- [1]
 			0, -- [2]
 		}, -- [357]
 		{
-			"Attempted to register existing command: SetDifficulty\n", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [358]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [359]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [360]
 		{
-			"Got new connection 3", -- [1]
+			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
 		}, -- [361]
 		{
-			"Proficiency in item class 2 set to 0x0000000080", -- [1]
+			"Proficiency in item class 2 set to 0x0000000081", -- [1]
 			0, -- [2]
 		}, -- [362]
 		{
-			"Proficiency in item class 2 set to 0x0000000081", -- [1]
+			"Proficiency in item class 2 set to 0x0000000089", -- [1]
 			0, -- [2]
 		}, -- [363]
 		{
-			"Proficiency in item class 2 set to 0x0000000089", -- [1]
+			"Proficiency in item class 2 set to 0x0000000099", -- [1]
 			0, -- [2]
 		}, -- [364]
 		{
-			"Proficiency in item class 2 set to 0x0000000099", -- [1]
+			"Proficiency in item class 2 set to 0x0000000199", -- [1]
 			0, -- [2]
 		}, -- [365]
 		{
-			"Proficiency in item class 2 set to 0x0000000199", -- [1]
+			"Proficiency in item class 2 set to 0x0000000599", -- [1]
 			0, -- [2]
 		}, -- [366]
 		{
-			"Proficiency in item class 2 set to 0x0000000599", -- [1]
+			"Proficiency in item class 2 set to 0x00000005b9", -- [1]
 			0, -- [2]
 		}, -- [367]
 		{
-			"Proficiency in item class 2 set to 0x00000005b9", -- [1]
+			"Proficiency in item class 2 set to 0x00000005bb", -- [1]
 			0, -- [2]
 		}, -- [368]
 		{
-			"Proficiency in item class 2 set to 0x00000005bb", -- [1]
+			"Proficiency in item class 2 set to 0x00000085bb", -- [1]
 			0, -- [2]
 		}, -- [369]
 		{
-			"Proficiency in item class 2 set to 0x00000085bb", -- [1]
+			"Proficiency in item class 4 set to 0x0000000001", -- [1]
 			0, -- [2]
 		}, -- [370]
 		{
-			"Proficiency in item class 4 set to 0x0000000001", -- [1]
+			"Proficiency in item class 2 set to 0x000000c5bb", -- [1]
 			0, -- [2]
 		}, -- [371]
 		{
-			"Proficiency in item class 2 set to 0x000000c5bb", -- [1]
+			"Proficiency in item class 2 set to 0x000004c5bb", -- [1]
 			0, -- [2]
 		}, -- [372]
 		{
-			"Proficiency in item class 2 set to 0x000004c5bb", -- [1]
+			"Proficiency in item class 2 set to 0x000004c5fb", -- [1]
 			0, -- [2]
 		}, -- [373]
 		{
-			"Proficiency in item class 2 set to 0x000004c5fb", -- [1]
+			"Proficiency in item class 4 set to 0x0000000009", -- [1]
 			0, -- [2]
 		}, -- [374]
 		{
-			"Proficiency in item class 4 set to 0x0000000009", -- [1]
+			"Proficiency in item class 4 set to 0x000000000d", -- [1]
 			0, -- [2]
 		}, -- [375]
 		{
-			"Proficiency in item class 4 set to 0x000000000d", -- [1]
+			"Proficiency in item class 4 set to 0x000000000f", -- [1]
 			0, -- [2]
 		}, -- [376]
 		{
-			"Proficiency in item class 4 set to 0x000000000f", -- [1]
+			"Proficiency in item class 4 set to 0x000000004f", -- [1]
 			0, -- [2]
 		}, -- [377]
 		{
-			"Proficiency in item class 4 set to 0x000000004f", -- [1]
+			"Proficiency in item class 2 set to 0x000004c5fb", -- [1]
 			0, -- [2]
 		}, -- [378]
 		{
-			"Proficiency in item class 2 set to 0x000004c5fb", -- [1]
+			"Proficiency in item class 4 set to 0x000000004f", -- [1]
 			0, -- [2]
 		}, -- [379]
 		{
-			"Proficiency in item class 4 set to 0x000000004f", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [380]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"Time set to 10/22/2020 (Thu) 9:06", -- [1]
 			0, -- [2]
 		}, -- [381]
 		{
-			"Time set to 10/22/2020 (Thu) 9:06", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [382]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [383]
 		{
-			"Time played:", -- [1]
+			"Total: 2d 7h 50m 29s", -- [1]
 			0, -- [2]
 		}, -- [384]
 		{
-			"Total: 2d 7h 50m 29s", -- [1]
+			"Level: 0d 2h 43m 0s", -- [1]
 			0, -- [2]
 		}, -- [385]
 		{
-			"Level: 0d 2h 43m 0s", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [386]
 		{
-			"Time played:", -- [1]
+			"Total: 2d 7h 51m 23s", -- [1]
 			0, -- [2]
 		}, -- [387]
 		{
-			"Total: 2d 7h 51m 23s", -- [1]
+			"Level: 0d 2h 43m 54s", -- [1]
 			0, -- [2]
 		}, -- [388]
 		{
-			"Level: 0d 2h 43m 54s", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [389]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [390]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [391]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [392]
 		{
-			"Time played:", -- [1]
+			"Total: 2d 7h 52m 54s", -- [1]
 			0, -- [2]
 		}, -- [393]
 		{
-			"Total: 2d 7h 52m 54s", -- [1]
+			"Level: 0d 2h 45m 25s", -- [1]
 			0, -- [2]
 		}, -- [394]
 		{
-			"Level: 0d 2h 45m 25s", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [395]
 		{
@@ -1588,103 +1587,103 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [396]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Sorting particles normally.", -- [1]
 			0, -- [2]
 		}, -- [397]
 		{
-			"Sorting particles normally.", -- [1]
+			"Water detail changed to 3", -- [1]
 			0, -- [2]
 		}, -- [398]
 		{
-			"Water detail changed to 3", -- [1]
+			"Ripple detail changed to 2", -- [1]
 			0, -- [2]
 		}, -- [399]
 		{
-			"Ripple detail changed to 2", -- [1]
+			"Reflection mode changed to 3", -- [1]
 			0, -- [2]
 		}, -- [400]
 		{
-			"Reflection mode changed to 3", -- [1]
+			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
 		}, -- [401]
 		{
-			"Reflection downscale changed to 0", -- [1]
+			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [402]
 		{
-			"Sunshafts quality changed to 2", -- [1]
+			"Enabling BSP node cache (first time - starting up)", -- [1]
 			0, -- [2]
 		}, -- [403]
 		{
-			"Enabling BSP node cache (first time - starting up)", -- [1]
+			"WorldPoolUsage must be stream, dynamic or static.", -- [1]
 			0, -- [2]
 		}, -- [404]
 		{
-			"WorldPoolUsage must be stream, dynamic or static.", -- [1]
+			"CVar 'worldPoolUsage' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [405]
 		{
-			"CVar 'worldPoolUsage' failed validation for its initial value.", -- [1]
+			"Alpha map bit depth set to 8bit on restart.", -- [1]
 			0, -- [2]
 		}, -- [406]
 		{
-			"Alpha map bit depth set to 8bit on restart.", -- [1]
+			"Volume fog enabled.", -- [1]
 			0, -- [2]
 		}, -- [407]
 		{
-			"Volume fog enabled.", -- [1]
+			"Projected textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [408]
 		{
-			"Projected textures enabled.", -- [1]
+			"Shadow mode changed to 4 - 4 band dynamic shadows, 2048", -- [1]
 			0, -- [2]
 		}, -- [409]
 		{
-			"Shadow mode changed to 4 - 4 band dynamic shadows, 2048", -- [1]
+			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
 		}, -- [410]
 		{
-			"Shadow texture size changed to 2048.", -- [1]
+			"Soft shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [411]
 		{
-			"Soft shadows changed to 1.", -- [1]
+			"SSAO mode set to 4", -- [1]
 			0, -- [2]
 		}, -- [412]
 		{
-			"SSAO mode set to 4", -- [1]
+			"SSAO distance value set to 100.000000", -- [1]
 			0, -- [2]
 		}, -- [413]
 		{
-			"SSAO distance value set to 100.000000", -- [1]
+			"SSAO blur set to 2", -- [1]
 			0, -- [2]
 		}, -- [414]
 		{
-			"SSAO blur set to 2", -- [1]
+			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
 		}, -- [415]
 		{
-			"SkyCloudLOD set to 0", -- [1]
+			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [416]
 		{
-			"Terrain mip level changed to 0.", -- [1]
+			"Render scale changed to 1", -- [1]
 			0, -- [2]
 		}, -- [417]
 		{
-			"Render scale changed to 1", -- [1]
+			"Resample quality changed to 1", -- [1]
 			0, -- [2]
 		}, -- [418]
 		{
-			"Resample quality changed to 1", -- [1]
+			"MSAA disabled", -- [1]
 			0, -- [2]
 		}, -- [419]
 		{
-			"MSAA disabled", -- [1]
+			"MSAA for alpha-test enabled.", -- [1]
 			0, -- [2]
 		}, -- [420]
 		{
-			"MSAA for alpha-test enabled.", -- [1]
+			"Component texture lod changed to 0", -- [1]
 			0, -- [2]
 		}, -- [421]
 		{
@@ -1692,47 +1691,47 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [422]
 		{
-			"Component texture lod changed to 0", -- [1]
+			"World preload object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [423]
 		{
-			"World preload object sort enabled.", -- [1]
+			"World load object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [424]
 		{
-			"World load object sort enabled.", -- [1]
+			"World preload non critical disabled.", -- [1]
 			0, -- [2]
 		}, -- [425]
 		{
-			"World preload non critical disabled.", -- [1]
+			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [426]
 		{
-			"World preload high res textures enabled.", -- [1]
+			"FFX: Anti Aliasing Mode set to CMAA", -- [1]
 			0, -- [2]
 		}, -- [427]
 		{
-			"FFX: Anti Aliasing Mode set to CMAA", -- [1]
+			"FFX: Color Blind Test Mode Disabled", -- [1]
 			0, -- [2]
 		}, -- [428]
 		{
-			"FFX: Color Blind Test Mode Disabled", -- [1]
+			"FFX: Color correction enabled", -- [1]
 			0, -- [2]
 		}, -- [429]
 		{
-			"FFX: Color correction enabled", -- [1]
+			"Full memory crash dump disabled", -- [1]
 			0, -- [2]
 		}, -- [430]
 		{
-			"Full memory crash dump disabled", -- [1]
+			"Error display disabled", -- [1]
 			0, -- [2]
 		}, -- [431]
 		{
-			"Error display disabled", -- [1]
+			"Error display shown", -- [1]
 			0, -- [2]
 		}, -- [432]
 		{
-			"Error display shown", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [433]
 		{
@@ -1740,43 +1739,43 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [434]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"Now filtering: all messages", -- [1]
 			0, -- [2]
 		}, -- [435]
 		{
-			"Now filtering: all messages", -- [1]
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [436]
 		{
-			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [437]
 		{
-			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [438]
 		{
-			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [439]
 		{
-			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"[GlueLogin] Starting loginlauncherPortal=\"eu.actual.battle.net\" loginPortal=\"eu.actual.battle.net:1119\"", -- [1]
 			0, -- [2]
 		}, -- [440]
 		{
-			"[GlueLogin] Starting loginlauncherPortal=\"eu.actual.battle.net\" loginPortal=\"eu.actual.battle.net:1119\"", -- [1]
+			"[GlueLogin] Resetting", -- [1]
 			0, -- [2]
 		}, -- [441]
 		{
-			"[GlueLogin] Resetting", -- [1]
+			"[IBN_Login] Initializing", -- [1]
 			0, -- [2]
 		}, -- [442]
 		{
-			"[IBN_Login] Initializing", -- [1]
+			"[IBN_Login] Attempting logonhost=\"eu.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
 		}, -- [443]
 		{
-			"[IBN_Login] Attempting logonhost=\"eu.actual.battle.net\" port=\"1119\"", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [444]
 		{
@@ -1788,147 +1787,147 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [446]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"[GlueLogin] Logon complete.", -- [1]
 			0, -- [2]
 		}, -- [447]
 		{
-			"[GlueLogin] Logon complete.", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [448]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"[IBN_Login] Requesting realm list ticket", -- [1]
 			0, -- [2]
 		}, -- [449]
 		{
-			"[IBN_Login] Requesting realm list ticket", -- [1]
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [450]
 		{
-			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [451]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [452]
 		{
-			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			"[IBN_Login] Requesting last played charsnumSubRegions=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [453]
 		{
-			"[IBN_Login] Requesting last played charsnumSubRegions=\"1\"", -- [1]
+			"[GlueLogin] Realm list ready.", -- [1]
 			0, -- [2]
 		}, -- [454]
 		{
-			"[GlueLogin] Realm list ready.", -- [1]
+			"[IBN_Login] Joining realmsubRegion=\"43-101-89\" realmAddress=\"43-4-8\"", -- [1]
 			0, -- [2]
 		}, -- [455]
 		{
-			"[IBN_Login] Joining realmsubRegion=\"43-101-89\" realmAddress=\"43-4-8\"", -- [1]
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [456]
 		{
-			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			"NetClient::HandleConnect()\n", -- [1]
 			0, -- [2]
 		}, -- [457]
 		{
-			"NetClient::HandleConnect()\n", -- [1]
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [458]
 		{
-			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [459]
 		{
-			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
+			"[GlueLogin] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [460]
 		{
-			"[GlueLogin] Disconnecting from authentication server.", -- [1]
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
 			0, -- [2]
 		}, -- [461]
 		{
-			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
 		}, -- [462]
 		{
-			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			"[GlueLogin] Disconnected from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [463]
 		{
-			"[GlueLogin] Disconnected from authentication server.", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [464]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [465]
 		{
-			"Got new connection 3", -- [1]
+			"Proficiency in item class 2 set to 0x0000000400", -- [1]
 			0, -- [2]
 		}, -- [466]
 		{
-			"Proficiency in item class 2 set to 0x0000000400", -- [1]
+			"Proficiency in item class 4 set to 0x0000000001", -- [1]
 			0, -- [2]
 		}, -- [467]
 		{
-			"Proficiency in item class 4 set to 0x0000000001", -- [1]
+			"Proficiency in item class 2 set to 0x0000004400", -- [1]
 			0, -- [2]
 		}, -- [468]
 		{
-			"Proficiency in item class 2 set to 0x0000004400", -- [1]
+			"Proficiency in item class 2 set to 0x0000084400", -- [1]
 			0, -- [2]
 		}, -- [469]
 		{
-			"Proficiency in item class 2 set to 0x0000084400", -- [1]
+			"Proficiency in item class 4 set to 0x0000000003", -- [1]
 			0, -- [2]
 		}, -- [470]
 		{
-			"Proficiency in item class 4 set to 0x0000000003", -- [1]
+			"Proficiency in item class 2 set to 0x0000084400", -- [1]
 			0, -- [2]
 		}, -- [471]
 		{
-			"Proficiency in item class 2 set to 0x0000084400", -- [1]
+			"Proficiency in item class 4 set to 0x0000000003", -- [1]
 			0, -- [2]
 		}, -- [472]
 		{
-			"Proficiency in item class 4 set to 0x0000000003", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [473]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"Time set to 10/22/2020 (Thu) 9:11", -- [1]
 			0, -- [2]
 		}, -- [474]
 		{
-			"Time set to 10/22/2020 (Thu) 9:11", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [475]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [476]
 		{
-			"Time played:", -- [1]
+			"Total: 4d 13h 18m 53s", -- [1]
 			0, -- [2]
 		}, -- [477]
 		{
-			"Total: 4d 13h 18m 53s", -- [1]
+			"Level: 0d 1h 14m 45s", -- [1]
 			0, -- [2]
 		}, -- [478]
 		{
-			"Level: 0d 1h 14m 45s", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [479]
 		{
-			"Time played:", -- [1]
+			"Total: 4d 13h 19m 46s", -- [1]
 			0, -- [2]
 		}, -- [480]
 		{
-			"Total: 4d 13h 19m 46s", -- [1]
+			"Level: 0d 1h 15m 38s", -- [1]
 			0, -- [2]
 		}, -- [481]
 		{
-			"Level: 0d 1h 15m 38s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [482]
 		{
@@ -1948,15 +1947,15 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [486]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Skill 95 increased from 248 to 249", -- [1]
 			0, -- [2]
 		}, -- [487]
 		{
-			"Skill 95 increased from 248 to 249", -- [1]
+			"Skill 228 increased from 249 to 250", -- [1]
 			0, -- [2]
 		}, -- [488]
 		{
-			"Skill 228 increased from 249 to 250", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [489]
 		{
@@ -1972,15 +1971,15 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [492]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Skill 136 increased from 173 to 174", -- [1]
 			0, -- [2]
 		}, -- [493]
 		{
-			"Skill 136 increased from 173 to 174", -- [1]
+			"Skill 95 increased from 249 to 250", -- [1]
 			0, -- [2]
 		}, -- [494]
 		{
-			"Skill 95 increased from 249 to 250", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [495]
 		{
@@ -2000,31 +1999,31 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [499]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Skill 228 increased from 250 to 251", -- [1]
 			0, -- [2]
 		}, -- [500]
 		{
-			"Skill 228 increased from 250 to 251", -- [1]
+			"Skill 228 increased from 251 to 252", -- [1]
 			0, -- [2]
 		}, -- [501]
 		{
-			"Skill 228 increased from 251 to 252", -- [1]
+			"Skill 95 increased from 250 to 251", -- [1]
 			0, -- [2]
 		}, -- [502]
 		{
-			"Skill 95 increased from 250 to 251", -- [1]
+			"Skill 228 increased from 252 to 253", -- [1]
 			0, -- [2]
 		}, -- [503]
 		{
-			"Skill 228 increased from 252 to 253", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [504]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Skill 95 increased from 251 to 252", -- [1]
 			0, -- [2]
 		}, -- [505]
 		{
-			"Skill 95 increased from 251 to 252", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [506]
 		{
@@ -2088,11 +2087,11 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [521]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Skill 95 increased from 252 to 253", -- [1]
 			0, -- [2]
 		}, -- [522]
 		{
-			"Skill 95 increased from 252 to 253", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [523]
 		{
@@ -2100,39 +2099,39 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [524]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Skill 95 increased from 253 to 254", -- [1]
 			0, -- [2]
 		}, -- [525]
 		{
-			"Skill 95 increased from 253 to 254", -- [1]
+			"Skill 228 increased from 253 to 254", -- [1]
 			0, -- [2]
 		}, -- [526]
 		{
-			"Skill 228 increased from 253 to 254", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [527]
 		{
-			"World transfer pending...", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [528]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [529]
 		{
-			"Time played:", -- [1]
+			"Total: 4d 14h 14m 51s", -- [1]
 			0, -- [2]
 		}, -- [530]
 		{
-			"Total: 4d 14h 14m 51s", -- [1]
+			"Level: 0d 2h 10m 43s", -- [1]
 			0, -- [2]
 		}, -- [531]
 		{
-			"Level: 0d 2h 10m 43s", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [532]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [533]
 		{
@@ -2140,31 +2139,31 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [534]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [535]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [536]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [537]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [538]
 		{
-			"Time played:", -- [1]
+			"Total: 4d 14h 23m 38s", -- [1]
 			0, -- [2]
 		}, -- [539]
 		{
-			"Total: 4d 14h 23m 38s", -- [1]
+			"Level: 0d 2h 19m 30s", -- [1]
 			0, -- [2]
 		}, -- [540]
 		{
-			"Level: 0d 2h 19m 30s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [541]
 		{
@@ -2172,31 +2171,31 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [542]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [543]
 		{
-			"Time played:", -- [1]
+			"Total: 4d 14h 24m 31s", -- [1]
 			0, -- [2]
 		}, -- [544]
 		{
-			"Total: 4d 14h 24m 31s", -- [1]
+			"Level: 0d 2h 20m 23s", -- [1]
 			0, -- [2]
 		}, -- [545]
 		{
-			"Level: 0d 2h 20m 23s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [546]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Skill 136 increased from 174 to 175", -- [1]
 			0, -- [2]
 		}, -- [547]
 		{
-			"Skill 136 increased from 174 to 175", -- [1]
+			"Skill 95 increased from 254 to 255", -- [1]
 			0, -- [2]
 		}, -- [548]
 		{
-			"Skill 95 increased from 254 to 255", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [549]
 		{
@@ -2204,15 +2203,15 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [550]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Skill 136 increased from 175 to 176", -- [1]
 			0, -- [2]
 		}, -- [551]
 		{
-			"Skill 136 increased from 175 to 176", -- [1]
+			"Skill 228 increased from 254 to 255", -- [1]
 			0, -- [2]
 		}, -- [552]
 		{
-			"Skill 228 increased from 254 to 255", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [553]
 		{
@@ -2232,27 +2231,27 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [557]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [558]
 		{
-			"World transfer pending...", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [559]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [560]
 		{
-			"Time played:", -- [1]
+			"Total: 4d 14h 32m 31s", -- [1]
 			0, -- [2]
 		}, -- [561]
 		{
-			"Total: 4d 14h 32m 31s", -- [1]
+			"Level: 0d 2h 28m 23s", -- [1]
 			0, -- [2]
 		}, -- [562]
 		{
-			"Level: 0d 2h 28m 23s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [563]
 		{
@@ -3252,7 +3251,7 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [812]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 14635, effect aura: 22, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [813]
 		{
@@ -3260,7 +3259,7 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [814]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 14635, effect aura: 22, which is wrong", -- [1]
+			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17995, effect aura: 13, which is wrong", -- [1]
 			0, -- [2]
 		}, -- [815]
 		{
@@ -3268,7 +3267,7 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [816]
 		{
-			"CGast - CGItemStatsSummary::ParseSpellRec is being called for spellID: 17995, effect aura: 13, which is wrong", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [817]
 		{
@@ -3820,31 +3819,31 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [954]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [955]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [956]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [957]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [958]
 		{
-			"Time played:", -- [1]
+			"Total: 4d 15h 7m 39s", -- [1]
 			0, -- [2]
 		}, -- [959]
 		{
-			"Total: 4d 15h 7m 39s", -- [1]
+			"Level: 0d 3h 3m 31s", -- [1]
 			0, -- [2]
 		}, -- [960]
 		{
-			"Level: 0d 3h 3m 31s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [961]
 		{
@@ -3872,19 +3871,19 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [967]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [968]
 		{
-			"Time played:", -- [1]
+			"Total: 4d 15h 8m 33s", -- [1]
 			0, -- [2]
 		}, -- [969]
 		{
-			"Total: 4d 15h 8m 33s", -- [1]
+			"Level: 0d 3h 4m 25s", -- [1]
 			0, -- [2]
 		}, -- [970]
 		{
-			"Level: 0d 3h 4m 25s", -- [1]
+			"DBCache::CancelCallback ignored", -- [1]
 			0, -- [2]
 		}, -- [971]
 		{
@@ -4000,16 +3999,305 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [999]
 		{
-			"DBCache::CancelCallback ignored", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [1000]
 		{
 			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [1001]
+		{
+			"Sorting particles normally.", -- [1]
+			0, -- [2]
+		}, -- [1002]
+		{
+			"Water detail changed to 3", -- [1]
+			0, -- [2]
+		}, -- [1003]
+		{
+			"Ripple detail changed to 2", -- [1]
+			0, -- [2]
+		}, -- [1004]
+		{
+			"Reflection mode changed to 3", -- [1]
+			0, -- [2]
+		}, -- [1005]
+		{
+			"Reflection downscale changed to 0", -- [1]
+			0, -- [2]
+		}, -- [1006]
+		{
+			"Sunshafts quality changed to 2", -- [1]
+			0, -- [2]
+		}, -- [1007]
+		{
+			"Enabling BSP node cache (first time - starting up)", -- [1]
+			0, -- [2]
+		}, -- [1008]
+		{
+			"WorldPoolUsage must be stream, dynamic or static.", -- [1]
+			0, -- [2]
+		}, -- [1009]
+		{
+			"CVar 'worldPoolUsage' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [1010]
+		{
+			"Alpha map bit depth set to 8bit on restart.", -- [1]
+			0, -- [2]
+		}, -- [1011]
+		{
+			"Volume fog enabled.", -- [1]
+			0, -- [2]
+		}, -- [1012]
+		{
+			"Projected textures enabled.", -- [1]
+			0, -- [2]
+		}, -- [1013]
+		{
+			"Shadow mode changed to 4 - 4 band dynamic shadows, 2048", -- [1]
+			0, -- [2]
+		}, -- [1014]
+		{
+			"Shadow texture size changed to 2048.", -- [1]
+			0, -- [2]
+		}, -- [1015]
+		{
+			"Soft shadows changed to 1.", -- [1]
+			0, -- [2]
+		}, -- [1016]
+		{
+			"SSAO mode set to 4", -- [1]
+			0, -- [2]
+		}, -- [1017]
+		{
+			"SSAO distance value set to 100.000000", -- [1]
+			0, -- [2]
+		}, -- [1018]
+		{
+			"SSAO blur set to 2", -- [1]
+			0, -- [2]
+		}, -- [1019]
+		{
+			"SkyCloudLOD set to 0", -- [1]
+			0, -- [2]
+		}, -- [1020]
+		{
+			"Terrain mip level changed to 0.", -- [1]
+			0, -- [2]
+		}, -- [1021]
+		{
+			"Render scale changed to 1", -- [1]
+			0, -- [2]
+		}, -- [1022]
+		{
+			"Resample quality changed to 1", -- [1]
+			0, -- [2]
+		}, -- [1023]
+		{
+			"MSAA disabled", -- [1]
+			0, -- [2]
+		}, -- [1024]
+		{
+			"MSAA for alpha-test enabled.", -- [1]
+			0, -- [2]
+		}, -- [1025]
+		{
+			"Component texture lod changed to 0", -- [1]
+			0, -- [2]
+		}, -- [1026]
+		{
+			"Component texture lod changed to 0", -- [1]
+			0, -- [2]
+		}, -- [1027]
+		{
+			"World preload object sort enabled.", -- [1]
+			0, -- [2]
+		}, -- [1028]
+		{
+			"World load object sort enabled.", -- [1]
+			0, -- [2]
+		}, -- [1029]
+		{
+			"World preload non critical disabled.", -- [1]
+			0, -- [2]
+		}, -- [1030]
+		{
+			"World preload high res textures enabled.", -- [1]
+			0, -- [2]
+		}, -- [1031]
+		{
+			"FFX: Anti Aliasing Mode set to CMAA", -- [1]
+			0, -- [2]
+		}, -- [1032]
+		{
+			"FFX: Color Blind Test Mode Disabled", -- [1]
+			0, -- [2]
+		}, -- [1033]
+		{
+			"FFX: Color correction enabled", -- [1]
+			0, -- [2]
+		}, -- [1034]
+		{
+			"Full memory crash dump disabled", -- [1]
+			0, -- [2]
+		}, -- [1035]
+		{
+			"Error display disabled", -- [1]
+			0, -- [2]
+		}, -- [1036]
+		{
+			"Error display shown", -- [1]
+			0, -- [2]
+		}, -- [1037]
+		{
+			"Displaying errors through fatal errors", -- [1]
+			0, -- [2]
+		}, -- [1038]
+		{
+			"Displaying errors through fatal errors", -- [1]
+			0, -- [2]
+		}, -- [1039]
+		{
+			"Now filtering: all messages", -- [1]
+			0, -- [2]
+		}, -- [1040]
+		{
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [1041]
+		{
+			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [1042]
+		{
+			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [1043]
+		{
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			0, -- [2]
+		}, -- [1044]
+		{
+			"[GlueLogin] Starting loginlauncherPortal=\"eu.actual.battle.net\" loginPortal=\"eu.actual.battle.net:1119\"", -- [1]
+			0, -- [2]
+		}, -- [1045]
+		{
+			"[GlueLogin] Resetting", -- [1]
+			0, -- [2]
+		}, -- [1046]
+		{
+			"[IBN_Login] Initializing", -- [1]
+			0, -- [2]
+		}, -- [1047]
+		{
+			"[IBN_Login] Attempting logonhost=\"eu.actual.battle.net\" port=\"1119\"", -- [1]
+			0, -- [2]
+		}, -- [1048]
+		{
+			"[GlueLogin] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [1049]
+		{
+			"[GlueLogin] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [1050]
+		{
+			"[GlueLogin] Waiting for server response.", -- [1]
+			0, -- [2]
+		}, -- [1051]
+		{
+			"[GlueLogin] Logon complete.", -- [1]
+			0, -- [2]
+		}, -- [1052]
+		{
+			"[GlueLogin] Waiting for realm list.", -- [1]
+			0, -- [2]
+		}, -- [1053]
+		{
+			"[IBN_Login] Requesting realm list ticket", -- [1]
+			0, -- [2]
+		}, -- [1054]
+		{
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [1055]
+		{
+			"[GlueLogin] Waiting for realm list.", -- [1]
+			0, -- [2]
+		}, -- [1056]
+		{
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [1057]
+		{
+			"[IBN_Login] Requesting last played charsnumSubRegions=\"1\"", -- [1]
+			0, -- [2]
+		}, -- [1058]
+		{
+			"[GlueLogin] Realm list ready.", -- [1]
+			0, -- [2]
+		}, -- [1059]
+		{
+			"[IBN_Login] Joining realmsubRegion=\"43-101-89\" realmAddress=\"43-4-8\"", -- [1]
+			0, -- [2]
+		}, -- [1060]
+		{
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [1061]
+		{
+			"NetClient::HandleConnect()\n", -- [1]
+			0, -- [2]
+		}, -- [1062]
+		{
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			0, -- [2]
+		}, -- [1063]
+		{
+			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
+			0, -- [2]
+		}, -- [1064]
+		{
+			"[GlueLogin] Disconnecting from authentication server.", -- [1]
+			0, -- [2]
+		}, -- [1065]
+		{
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			0, -- [2]
+		}, -- [1066]
+		{
+			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			0, -- [2]
+		}, -- [1067]
+		{
+			"[GlueLogin] Disconnected from authentication server.", -- [1]
+			0, -- [2]
+		}, -- [1068]
+		{
+			"[GlueLogin] Explicitly disconnecting from realm server", -- [1]
+			0, -- [2]
+		}, -- [1069]
+		{
+			"Disconnecting for reason 14", -- [1]
+			0, -- [2]
+		}, -- [1070]
+		{
+			"NetClient::HandleDisconnect()\n", -- [1]
+			0, -- [2]
+		}, -- [1071]
+		{
+			"[IBN_BackInterface] Session with Battle.net destroyed.", -- [1]
+			0, -- [2]
+		}, -- [1072]
+		{
+			"[GlueLogin] Disconnected from WoWpreviouslyConnected=\"false\"", -- [1]
+			0, -- [2]
+		}, -- [1073]
 	},
-	["isShown"] = false,
+	["height"] = 300,
 	["fontHeight"] = 14,
+	["isShown"] = false,
 	["commandHistory"] = {
 	},
 }
