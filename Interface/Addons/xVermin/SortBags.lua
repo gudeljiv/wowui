@@ -418,7 +418,7 @@ do
 	end
 
 	local function assign(slot, item)
-		if counts[item] > 0 then
+		if counts[item] > 0 and itemStacks and itemStacks[item] then
 			local count
 			if SortBagsRightToLeft and mod(counts[item], itemStacks[item]) ~= 0 then
 				count = mod(counts[item], itemStacks[item])

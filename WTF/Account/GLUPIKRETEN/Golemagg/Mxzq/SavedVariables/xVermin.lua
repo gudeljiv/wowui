@@ -1,20 +1,24 @@
 
 xKillCount = {
 	["show"] = true,
-	["position"] = {
-		["y"] = 328.438232421875,
-		["x"] = 481.449920654297,
-		["to"] = "LEFT",
-		["from"] = "LEFT",
-	},
 	["killLog"] = {
 		["Highland Strider"] = {
 			["name"] = "Highland Strider",
-			["count"] = 2,
+			["count"] = 4,
 		},
 		["Plains Creeper"] = {
 			["name"] = "Plains Creeper",
-			["count"] = 1,
+			["count"] = 2,
 		},
+	},
+	["experience"] = {
+		["pulltotal"] = 680,
+		["totaltotal"] = 966,
+	},
+	["position"] = {
+		["y"] = 289.499816894531,
+		["x"] = 443.999908447266,
+		["to"] = "LEFT",
+		["from"] = "LEFT",
 	},
 }

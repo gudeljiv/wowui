@@ -7,7 +7,7 @@ KILLTRACK_CHAR = {
 		},
 		[2559] = {
 			["Name"] = "Highland Strider",
-			["Kills"] = 33,
+			["Kills"] = 35,
 		},
 		[2620] = {
 			["Name"] = "Prairie Dog",
@@ -29,13 +29,13 @@ KILLTRACK_CHAR = {
 			["Name"] = "Giant Plains Creeper",
 			["Kills"] = 0,
 		},
-		[2563] = {
-			["Name"] = "Plains Creeper",
-			["Kills"] = 22,
-		},
 		[2761] = {
 			["Name"] = "Cresting Exile",
 			["Kills"] = 0,
+		},
+		[2563] = {
+			["Name"] = "Plains Creeper",
+			["Kills"] = 23,
 		},
 	},
 }

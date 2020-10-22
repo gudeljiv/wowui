@@ -1,6 +1,6 @@
 
 xKillCount = {
-	["show"] = true,
+	["show"] = false,
 	["position"] = {
 		["y"] = 273.000061035156,
 		["x"] = 348,

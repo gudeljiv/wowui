@@ -1,20 +1,56 @@
 
 xKillCount = {
 	["show"] = true,
-	["killLog"] = {
-		["Whip Lasher"] = {
-			["name"] = "Whip Lasher",
-			["count"] = 17,
-		},
-	},
-	["experience"] = {
-		["totaltotal"] = 2766,
-		["pulltotal"] = 0,
-	},
 	["position"] = {
-		["y"] = -257.999877929688,
-		["x"] = 456.999908447266,
+		["y"] = -259.000091552734,
+		["x"] = 452.999969482422,
 		["to"] = "TOPLEFT",
 		["from"] = "TOPLEFT",
+	},
+	["experience"] = {
+		["pulltotal"] = 3099,
+		["totaltotal"] = 46302,
+	},
+	["killLog"] = {
+		["Rotting Worm"] = {
+			["name"] = "Rotting Worm",
+			["count"] = 103,
+		},
+		["Rotting Cadaver"] = {
+			["name"] = "Rotting Cadaver",
+			["count"] = 50,
+		},
+		["Roach"] = {
+			["name"] = "Roach",
+			["count"] = 1,
+		},
+		["Scarlet Hound"] = {
+			["name"] = "Scarlet Hound",
+			["count"] = 1,
+		},
+		["Skeletal Terror"] = {
+			["name"] = "Skeletal Terror",
+			["count"] = 10,
+		},
+		["Scarlet Invoker"] = {
+			["name"] = "Scarlet Invoker",
+			["count"] = 1,
+		},
+		["Scarlet Knight"] = {
+			["name"] = "Scarlet Knight",
+			["count"] = 7,
+		},
+		["Blighted Zombie"] = {
+			["name"] = "Blighted Zombie",
+			["count"] = 46,
+		},
+		["Black Rat"] = {
+			["name"] = "Black Rat",
+			["count"] = 2,
+		},
+		["Scarlet Medic"] = {
+			["name"] = "Scarlet Medic",
+			["count"] = 1,
+		},
 	},
 }

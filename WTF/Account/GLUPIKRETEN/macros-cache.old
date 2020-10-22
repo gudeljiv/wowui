@@ -5,22 +5,17 @@ END
 VER 3 0000000000000004 "Drink" "Inv_misc_questionmark"
 #showtooltip
 /use [nocombat]item:0
-/castsequence [combat] reset=combat item:13443,item:6149
+/castsequence [combat] reset=combat 
 END
 VER 3 0000000000000003 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
-/castsequence [combat] reset=combat item:13446
+/use [nocombat]item:3771
+/castsequence [combat] reset=combat item:1710
 END
 VER 3 0000000000000005 "PF" "Inv_misc_questionmark"
-#showtooltip item:1081
+#showtooltip item:12184
 /cast feed pet
-/use item:1081
-END
-VER 3 000000000000000B "TEST" "132097"
-/run ManaCountFrame:ClearAllPoints()
-/run ManaCountFrame:SetFontSize(12)
-/run ManaCountFrame:
+/use item:12184
 END
 VER 3 000000000000000A "TSMMacro" "INV_Misc_Flower_01"
 /click TSMAuctioningBtn
