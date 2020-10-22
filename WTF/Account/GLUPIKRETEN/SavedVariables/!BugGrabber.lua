@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 3443,
+	["session"] = 3447,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -3796,5 +3796,13 @@ BugGrabberDB = {
 			["session"] = 3442,
 			["counter"] = 1,
 		}, -- [480]
+		{
+			["message"] = "[string \"print(FLOOR(52/5) - 1)\"]:1: attempt to call global 'FLOOR' (a string value)",
+			["time"] = "2020/10/22 12:51:20",
+			["locals"] = "(*temporary) = <function> defined @Interface\\FrameXML\\RestrictedInfrastructure.lua:116\n(*temporary) = \"Areas\"\n(*temporary) = 10.400000\n(*temporary) = \"attempt to call global 'FLOOR' (a string value)\"\n",
+			["stack"] = "[string \"print(FLOOR(52/5) - 1)\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
+			["session"] = 3444,
+			["counter"] = 1,
+		}, -- [481]
 	},
 }

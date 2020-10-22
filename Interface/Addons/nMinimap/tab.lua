@@ -337,7 +337,8 @@ function nMinimapTab_Guild_UpdateScrollFrame()
 
 	for i = 1, GetNumGuildMembers() do
 		local name, rank, _, level, _, zone, note, officernote, connected, status, class, _ = GetGuildRosterInfo(i)
-		if connected and name ~= playerName .. "-" .. playerRealm then
+		-- if connected and name ~= playerName .. "-" .. playerRealm then
+		if connected then
 			AddButtonInfo(i, name, level)
 		end
 	end

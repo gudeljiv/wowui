@@ -152,7 +152,7 @@ WeakAurasSaved = {
 				},
 			},
 			["uid"] = ")OLyGVxasS6",
-			["semver"] = "1.0.0",
+			["cooldownTextDisabled"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
@@ -165,7 +165,7 @@ WeakAurasSaved = {
 			["displayIcon"] = 132805,
 			["xOffset"] = 160,
 			["ignoreOptionsEventErrors"] = true,
-			["cooldownTextDisabled"] = false,
+			["semver"] = "1.0.0",
 			["zoom"] = 0,
 			["auto"] = true,
 			["tocversion"] = 11304,
@@ -540,9 +540,6 @@ WeakAurasSaved = {
 			["semver"] = "1.0.0",
 			["tocversion"] = 11304,
 			["id"] = "GEMS",
-			["groupIcon"] = 134105,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SELECTFRAME",
 			["animation"] = {
 				["start"] = {
 					["easeStrength"] = 3,
@@ -563,14 +560,17 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["config"] = {
-			},
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SELECTFRAME",
+			["groupIcon"] = 134105,
 			["borderInset"] = 1,
 			["uid"] = "Ow32WYEI1Ji",
+			["config"] = {
+			},
 			["conditions"] = {
 			},
-			["xOffset"] = 40,
 			["anchorFrameFrame"] = "MultiBarBottomRightButton12",
+			["xOffset"] = 40,
 		},
 		["INSTANCE LOCK"] = {
 			["sparkWidth"] = 15,
@@ -671,14 +671,14 @@ WeakAurasSaved = {
 						["event"] = "Health",
 						["subeventPrefix"] = "SPELL",
 						["debuffType"] = "HELPFUL",
+						["custom"] = "function(event, ...)\n    if aura_env[event] then\n        aura_env[event](...) \n    end\nend",
 						["events"] = "CHAT_MSG_SYSTEM,INSTANCE_BOOT_START, INSTANCE_BOOT_STOP, GROUP_ROSTER_UPDATE, PLAYER_ENTERING_WORLD, ZONE_CHANGED_NEW_AREA, RAID_INSTANCE_WELCOME, PLAYER_LEAVING_WORLD, PLAYER_CAMPING, CHAT_MSG_ADDON, SEND_INSTANCE_RESET_REQUEST",
-						["spellIds"] = {
-						},
 						["subeventSuffix"] = "_CAST_START",
 						["names"] = {
 						},
 						["unit"] = "player",
-						["custom"] = "function(event, ...)\n    if aura_env[event] then\n        aura_env[event](...) \n    end\nend",
+						["spellIds"] = {
+						},
 						["custom_hide"] = "timed",
 					},
 					["untrigger"] = {
@@ -941,10 +941,10 @@ WeakAurasSaved = {
 						["custom_type"] = "stateupdate",
 						["event"] = "Health",
 						["use_unit"] = true,
-						["custom"] = "function(a, e, t)\n    local currentMana = UnitPower(\"player\" , 0)\n    \n    if currentMana >= UnitPowerMax(\"player\", 0) then\n        return false\n    end\n    \n    if e == \"UNIT_POWER_FREQUENT\" and currentMana > aura_env.lastMana and GetTime() >= aura_env.lastCast + 5 then\n        local duration = 2\n        a[\"\"] = {\n            show = true,\n            changed = true,\n            duration = duration,\n            expirationTime = GetTime() + duration,\n            progressType = \"timed\",\n            autoHide = true\n        }\n        aura_env.lastMana = currentMana\n        \n    elseif e == \"UNIT_SPELLCAST_SUCCEEDED\" and currentMana < aura_env.lastMana then\n        local duration = 6 -- why?\n        --local duration = 5\n        a[\"\"] = {\n            show = true,\n            changed = true,\n            duration = duration,\n            expirationTime = GetTime() + duration,\n            progressType = \"timed\",\n            autoHide = true\n        }\n        aura_env.lastMana = currentMana\n        aura_env.lastCast = GetTime()\n    end\n    return true\nend",
 						["spellIds"] = {
 						},
 						["events"] = "UNIT_SPELLCAST_SUCCEEDED:player UNIT_POWER_FREQUENT:player",
+						["custom"] = "function(a, e, t)\n    local currentMana = UnitPower(\"player\" , 0)\n    \n    if currentMana >= UnitPowerMax(\"player\", 0) then\n        return false\n    end\n    \n    if e == \"UNIT_POWER_FREQUENT\" and currentMana > aura_env.lastMana and GetTime() >= aura_env.lastCast + 5 then\n        local duration = 2\n        a[\"\"] = {\n            show = true,\n            changed = true,\n            duration = duration,\n            expirationTime = GetTime() + duration,\n            progressType = \"timed\",\n            autoHide = true\n        }\n        aura_env.lastMana = currentMana\n        \n    elseif e == \"UNIT_SPELLCAST_SUCCEEDED\" and currentMana < aura_env.lastMana then\n        local duration = 6 -- why?\n        --local duration = 5\n        a[\"\"] = {\n            show = true,\n            changed = true,\n            duration = duration,\n            expirationTime = GetTime() + duration,\n            progressType = \"timed\",\n            autoHide = true\n        }\n        aura_env.lastMana = currentMana\n        aura_env.lastCast = GetTime()\n    end\n    return true\nend",
 						["use_sourceUnit"] = true,
 						["check"] = "event",
 						["subeventPrefix"] = "SPELL",
@@ -1094,9 +1094,13 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["config"] = {
-			},
 			["uid"] = "dvZawXAyrxC",
+			["sparkColor"] = {
+				0.93725490196078, -- [1]
+				1, -- [2]
+				0.94509803921569, -- [3]
+				1, -- [4]
+			},
 			["texture"] = "Glamour2",
 			["anchorFrameType"] = "SELECTFRAME",
 			["frameStrata"] = 5,
@@ -1118,11 +1122,7 @@ WeakAurasSaved = {
 			["alpha"] = 1,
 			["width"] = 115,
 			["version"] = 1,
-			["sparkColor"] = {
-				0.93725490196078, -- [1]
-				1, -- [2]
-				0.94509803921569, -- [3]
-				1, -- [4]
+			["config"] = {
 			},
 			["inverse"] = false,
 			["color"] = {
@@ -1850,14 +1850,24 @@ WeakAurasSaved = {
 	},
 	["instanceHistoryDb"] = {
 		["sess"] = {
-			["delayUpdate"] = 1603357268,
+			["histOldest"] = "35 |4Min:Mins;",
 			["enterLoc"] = {
 				["instance"] = -1,
 			},
-			["histOldest"] = "n/a",
-			["histLiveCount"] = 0,
+			["delayUpdate"] = 1603367550.625,
+			["histLiveCount"] = 2,
 		},
 		["History"] = {
+			["Augustin - Golemagg:Zul'Farrak:party:1:41"] = {
+				["last"] = 1603366080,
+				["create"] = 1603364562,
+				["desc"] = "Augustin - Golemagg: Zul'Farrak - Normal",
+			},
+			["Augustin - Golemagg:Zul'Farrak:party:1:42"] = {
+				["last"] = 1603367111,
+				["create"] = 1603366095,
+				["desc"] = "Augustin - Golemagg: Zul'Farrak - Normal",
+			},
 		},
 		["HistoryDay"] = {
 			["Augustin - Golemagg:Dire Maul:party:1:41"] = {
@@ -1865,14 +1875,9 @@ WeakAurasSaved = {
 				["create"] = 1603298991,
 				["desc"] = "Augustin - Golemagg: Dire Maul - Normal",
 			},
-			["Augustin - Golemagg:Zul'Farrak:party:1:34"] = {
-				["last"] = 1603275585,
-				["create"] = 1603274484,
-				["desc"] = "Augustin - Golemagg: Zul'Farrak - Normal",
-			},
-			["Augustin - Golemagg:Zul'Farrak:party:1:29"] = {
-				["last"] = 1603271154,
-				["create"] = 1603270244,
+			["Augustin - Golemagg:Zul'Farrak:party:1:39"] = {
+				["last"] = 1603288721,
+				["create"] = 1603287260,
 				["desc"] = "Augustin - Golemagg: Zul'Farrak - Normal",
 			},
 			["Augustin - Golemagg:Zul'Farrak:party:1:37"] = {
@@ -1880,24 +1885,14 @@ WeakAurasSaved = {
 				["create"] = 1603283514,
 				["desc"] = "Augustin - Golemagg: Zul'Farrak - Normal",
 			},
-			["Augustin - Golemagg:Zul'Farrak:party:1:33"] = {
-				["last"] = 1603274473,
-				["create"] = 1603273172,
-				["desc"] = "Augustin - Golemagg: Zul'Farrak - Normal",
-			},
-			["Augustin - Golemagg:Zul'Farrak:party:1:32"] = {
-				["last"] = 1603273160,
-				["create"] = 1603271988,
-				["desc"] = "Augustin - Golemagg: Zul'Farrak - Normal",
-			},
 			["Augustin - Golemagg:Zul'Farrak:party:1:36"] = {
 				["last"] = 1603283168,
 				["create"] = 1603281016,
 				["desc"] = "Augustin - Golemagg: Zul'Farrak - Normal",
 			},
-			["Augustin - Golemagg:Zul'Farrak:party:1:39"] = {
-				["last"] = 1603288721,
-				["create"] = 1603287260,
+			["Augustin - Golemagg:Zul'Farrak:party:1:42"] = {
+				["last"] = 1603367111,
+				["create"] = 1603366095,
 				["desc"] = "Augustin - Golemagg: Zul'Farrak - Normal",
 			},
 			["Augustin - Golemagg:Zul'Farrak:party:1:40"] = {
@@ -1915,13 +1910,13 @@ WeakAurasSaved = {
 				["create"] = 1603298249,
 				["desc"] = "Augustin - Golemagg: Dire Maul - Normal",
 			},
-			["Augustin - Golemagg:Zul'Farrak:party:1:35"] = {
-				["last"] = 1603281001,
-				["create"] = 1603279307,
+			["Augustin - Golemagg:Zul'Farrak:party:1:41"] = {
+				["last"] = 1603366080,
+				["create"] = 1603364562,
 				["desc"] = "Augustin - Golemagg: Zul'Farrak - Normal",
 			},
 		},
-		["histGeneration"] = 41,
+		["histGeneration"] = 42,
 		["config"] = {
 			["displayMin"] = 0,
 			["debug"] = false,

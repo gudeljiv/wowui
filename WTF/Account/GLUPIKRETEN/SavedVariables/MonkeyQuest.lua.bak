@@ -296,7 +296,7 @@ MonkeyQuestConfig = {
 			["Scarlet Diversions - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Scholomance - true"] = {
+			["Maraudon - true"] = {
 				["m_bChecked"] = true,
 			},
 			["A Plague Upon Thee - false"] = {
@@ -308,10 +308,10 @@ MonkeyQuestConfig = {
 			["Zul'Farrak - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Maraudon - true"] = {
+			["Barov Family Fortune - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Barov Family Fortune - false"] = {
+			["Scholomance - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Tabetha's Task - false"] = {

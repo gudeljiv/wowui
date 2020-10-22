@@ -657,6 +657,10 @@ kcreset:SetScript(
 			xKillCount.experience.totaltotal = 0
 			xKillCount.experience.pulltotal = 0
 
+			XPPERHOUR_MAXXP = UnitXPMax("player")
+			XPPERHOUR_XP = UnitXP("player")
+			XPPERHOUR_TIME = time() - 1
+
 			ResetTimer()
 			DisplayData()
 		end
