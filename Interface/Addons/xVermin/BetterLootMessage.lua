@@ -73,7 +73,19 @@ local translateTable = {
 	["FACTION_STANDING_INCREASED_BONUS"] = "%s: + %d. (+%.1f bonus)",
 	["FACTION_STANDING_INCREASED_DOUBLE_BONUS"] = "%s: + %d. (+%.1f + %.1f bonus)",
 	["FACTION_STANDING_INCREASED_GENERIC"] = "%s: +",
-	["SKILL_RANK_UP"] = "%s = %d"
+	["SKILL_RANK_UP"] = "%s = %d",
+	["LOOT_ROLL_GREED"] = "%s (GREED): %s|Hitem:%d:%d:%d:%d|h[%s]|h%s",
+	["LOOT_ROLL_GREED_SELF"] = "You (GREED): %s|Hitem:%d:%d:%d:%d|h[%s]|h%s",
+	["LOOT_ROLL_NEED"] = "%s (NEED): %s|Hitem:%d:%d:%d:%d|h[%s]|h%s",
+	["LOOT_ROLL_NEED_SELF"] = "You (NEED): %s|Hitem:%d:%d:%d:%d|h[%s]|h%s",
+	["LOOT_ROLL_PASSED"] = "%s (PASS): %s|Hitem:%d:%d:%d:%d|h[%s]|h%s",
+	["LOOT_ROLL_PASSED_SELF"] = "You (PASS): %s|Hitem:%d:%d:%d:%d|h[%s]|h%s",
+	["LOOT_ROLL_ROLLED"] = "%s (%d): %s|Hitem:%d:%d:%d:%d|h[%s]|h%s",
+	["LOOT_ROLL_ROLLED_GREED"] = "%d (GREED): %s|Hitem:%d:%d:%d:%d|h[%s]|h%s",
+	["LOOT_ROLL_ROLLED_GREED_SELF"] = "You %d (GREED): %s|Hitem:%d:%d:%d:%d|h[%s]|h%s",
+	["LOOT_ROLL_ROLLED_NEED"] = "%d (NEED): %s|Hitem:%d:%d:%d:%d|h[%s]|h%s",
+	["LOOT_ROLL_ROLLED_NEED_SELF"] = "You %d (NEED): %s|Hitem:%d:%d:%d:%d|h[%s]|h%s",
+	["LOOT_ROLL_ROLLED_SELF"] = "You %d: %s|Hitem:%d:%d:%d:%d|h[%s]|h%s"
 }
 
 table.foreach(

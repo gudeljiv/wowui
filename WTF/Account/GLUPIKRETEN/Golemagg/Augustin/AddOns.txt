@@ -6,3 +6,8 @@ Immersion: disabled
 AdiBags: enabled
 AdiBags_Config: enabled
 Sorted: disabled
+Grid2: disabled
+Grid2Options: disabled
+Grid2RaidDebuffs: disabled
+Grid2RaidDebuffsOptions: disabled
+Grid2LDB: disabled

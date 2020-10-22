@@ -8,9 +8,29 @@ xKillCount = {
 		["from"] = "TOPLEFT",
 	},
 	["experience"] = {
-		["pulltotal"] = 0,
-		["totaltotal"] = 0,
+		["pulltotal"] = 8150,
+		["totaltotal"] = 31431,
 	},
 	["killLog"] = {
+		["Sandfury Witch Doctor"] = {
+			["name"] = "Sandfury Witch Doctor",
+			["count"] = 2,
+		},
+		["Greater Healing Ward"] = {
+			["name"] = "Greater Healing Ward",
+			["count"] = 1,
+		},
+		["Zul'Farrak Dead Hero"] = {
+			["name"] = "Zul'Farrak Dead Hero",
+			["count"] = 1,
+		},
+		["Zul'Farrak Zombie"] = {
+			["name"] = "Zul'Farrak Zombie",
+			["count"] = 46,
+		},
+		["Scarab"] = {
+			["name"] = "Scarab",
+			["count"] = 35,
+		},
 	},
 }

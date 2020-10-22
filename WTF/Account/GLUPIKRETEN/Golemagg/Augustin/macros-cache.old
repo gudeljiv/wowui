@@ -1,3 +1,13 @@
+VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast [mod:alt]Frostbolt(Rank 1);Frostbolt
+END
+VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/startattack
+/cast Fire Blast
+END
 VER 3 0000000001000001 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /startattack
@@ -14,14 +24,4 @@ END
 VER 3 0000000001000007 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [mod:shift]Portal: Thunder Bluff;Teleport: Thunder Bluff
-END
-VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/startattack
-/cast [mod:alt]Frostbolt(Rank 1);Frostbolt
-END
-VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
-#showtooltip
-/startattack
-/cast Fire Blast
 END

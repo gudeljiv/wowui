@@ -15,6 +15,10 @@ SRTIExternalUF = {
 	["blizzard_compactraidframes"] = {
 		"CompactRaidFrame1", -- [1]
 		"CompactRaidFrame2", -- [2]
+		"CompactRaidFrame3", -- [3]
+		"CompactRaidFrame4", -- [4]
+		"CompactRaidFrame5", -- [5]
+		"CompactRaidFrame6", -- [6]
 	},
 	["aptechka"] = {
 		"NugRaid1UnitButton1", -- [1]

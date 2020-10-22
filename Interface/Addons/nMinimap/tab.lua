@@ -221,7 +221,7 @@ function nMinimap:UpdateGuildText(self)
 	end
 end
 
-local GuildScroll = CreateScrollFrame("Guild", 300, 340, 1000)
+local GuildScroll = CreateScrollFrame("Guild", 300, 550, 1000)
 
 function nMinimap_UpdateGuildButton(entry)
 	local scrollFrame = GuildScrollFrame
@@ -259,7 +259,7 @@ function nMinimap_UpdateGuildButton(entry)
 		name = WrapTextInColorCode(name, CreateColor(classc.r, classc.g, classc.b, 1):GenerateHexColor())
 		zone = WrapTextInColorCode(zone, CreateColor(1, 1, 1, 1):GenerateHexColor())
 
-		entry.LeftText:SetFormattedText("%s %s %s", level, name, statusText[status])
+		entry.LeftText:SetFormattedText("%s %s", level, name)
 		entry.RightText:SetText(zone)
 
 		minWidth = math.max(minWidth, entry.LeftText:GetWidth() + entry.RightText:GetWidth() + 100)
@@ -308,7 +308,7 @@ function nMinimap_UpdateGuildMembers()
 		end
 	end
 
-	usedHeight = math.min(usedHeight, 340)
+	usedHeight = math.min(usedHeight)
 
 	if not scrollFrame:IsVisible() then
 		scrollFrame:SetHeight(usedHeight)
@@ -335,7 +335,7 @@ function nMinimapTab_Guild_UpdateScrollFrame()
 		totalButtonHeight = totalButtonHeight + scrollFrame.entryHeight
 	end
 
-	for i = 1, GetNumGuildMembers() do
+	for i = 1, select(3, GetNumGuildMembers()) do
 		local name, rank, _, level, _, zone, note, officernote, connected, status, class, _ = GetGuildRosterInfo(i)
 		-- if connected and name ~= playerName .. "-" .. playerRealm then
 		if connected then
@@ -391,7 +391,7 @@ end
 
 -- // Friends Frame
 
-local FriendsScroll = CreateScrollFrame("Friends", 300, 340, 200)
+local FriendsScroll = CreateScrollFrame("Friends", 300, 550, 200)
 
 function nMinimap_UpdateFriendButton(entry)
 	local scrollFrame = FriendsScrollFrame
@@ -537,7 +537,7 @@ function nMinimap_UpdateFriends()
 		end
 	end
 
-	usedHeight = math.min(usedHeight, 340)
+	usedHeight = math.min(usedHeight)
 
 	if not scrollFrame:IsVisible() then
 		scrollFrame:SetHeight(usedHeight)
@@ -667,7 +667,7 @@ local function NumberOfActiveAddon()
 	return active
 end
 
-local MemoryScroll = CreateScrollFrame("Memory", 300, 340, NUM_ADDONS_TO_DISPLAY)
+local MemoryScroll = CreateScrollFrame("Memory", 300, 550, NUM_ADDONS_TO_DISPLAY)
 
 function nMinimap_UpdateMemoryButton(entry)
 	local scrollFrame = MemoryScrollFrame
@@ -719,7 +719,7 @@ function nMinimap_UpdateMemory()
 		end
 	end
 
-	usedHeight = math.min(usedHeight, 340)
+	usedHeight = math.min(usedHeight)
 
 	scrollFrame:SetHeight(usedHeight)
 	scrollFrame.scrollChild:SetHeight(usedHeight)
