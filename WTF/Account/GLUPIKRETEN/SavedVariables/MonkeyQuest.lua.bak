@@ -311,7 +311,7 @@ MonkeyQuestConfig = {
 			["Maraudon - true"] = {
 				["m_bChecked"] = false,
 			},
-			["Divino-matic Rod - false"] = {
+			["Zul'Farrak - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Scarab Shells - false"] = {
@@ -329,7 +329,7 @@ MonkeyQuestConfig = {
 			["Gahz'rilla - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Zul'Farrak - true"] = {
+			["Divino-matic Rod - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Scarlet Diversions - false"] = {
@@ -508,16 +508,16 @@ MonkeyQuestConfig = {
 			["Guile of the Raptor - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Call to Arms - false"] = {
+			["The Hammer May Fall - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Hillsbrad Foothills - true"] = {
 				["m_bChecked"] = true,
 			},
-			["The Hammer May Fall - false"] = {
+			["Call to Arms - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Arathi Highlands - true"] = {
+			["Raising Spirits - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Foul Magics - false"] = {
@@ -526,7 +526,7 @@ MonkeyQuestConfig = {
 			["Sigil of Strom - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Raising Spirits - false"] = {
+			["Arathi Highlands - true"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -936,7 +936,7 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 979,
+		["m_iFrameBottom"] = 1153.99987792969,
 		["m_bHideTitleButtons"] = false,
 		["m_iFrameLeft"] = 2081.99975585938,
 		["m_bColourDoneOrFailed"] = true,
@@ -1046,19 +1046,19 @@ MonkeyQuestConfig = {
 		["m_bShowZoneHighlight"] = true,
 		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
 		["m_aQuestList"] = {
-			["Break a Few Eggs - false"] = {
+			["Durotar - true"] = {
 				["m_bChecked"] = true,
 			},
 			["From The Wreckage.... - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Durotar - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Vanquish the Betrayers - false"] = {
+			["Break a Few Eggs - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Encroachment - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Vanquish the Betrayers - false"] = {
 				["m_bChecked"] = true,
 			},
 		},

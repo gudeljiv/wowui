@@ -293,7 +293,7 @@ MonkeyQuestConfig = {
 			["Scarlet Diversions - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Zul'Farrak - true"] = {
+			["Divino-matic Rod - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Gahz'rilla - false"] = {
@@ -311,7 +311,7 @@ MonkeyQuestConfig = {
 			["Scarab Shells - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Divino-matic Rod - false"] = {
+			["Zul'Farrak - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Maraudon - true"] = {
@@ -508,16 +508,16 @@ MonkeyQuestConfig = {
 			["Guile of the Raptor - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Raising Spirits - false"] = {
+			["Arathi Highlands - true"] = {
 				["m_bChecked"] = true,
 			},
 			["Hillsbrad Foothills - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Arathi Highlands - true"] = {
+			["Raising Spirits - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Call to Arms - false"] = {
+			["The Hammer May Fall - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Foul Magics - false"] = {
@@ -526,7 +526,7 @@ MonkeyQuestConfig = {
 			["Sigil of Strom - false"] = {
 				["m_bChecked"] = true,
 			},
-			["The Hammer May Fall - false"] = {
+			["Call to Arms - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -1013,19 +1013,19 @@ MonkeyQuestConfig = {
 		["m_bShowZoneHighlight"] = true,
 		["m_strCompleteObjectiveColour"] = "|cFF00FF19",
 		["m_aQuestList"] = {
-			["Encroachment - false"] = {
+			["Vanquish the Betrayers - false"] = {
 				["m_bChecked"] = true,
 			},
 			["From The Wreckage.... - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Break a Few Eggs - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Vanquish the Betrayers - false"] = {
-				["m_bChecked"] = true,
-			},
 			["Durotar - true"] = {
+				["m_bChecked"] = true,
+			},
+			["Encroachment - false"] = {
+				["m_bChecked"] = true,
+			},
+			["Break a Few Eggs - false"] = {
 				["m_bChecked"] = true,
 			},
 		},

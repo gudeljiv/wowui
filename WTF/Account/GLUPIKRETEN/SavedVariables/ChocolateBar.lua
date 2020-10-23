@@ -42,6 +42,9 @@ ChocolateBarDB = {
 	["profiles"] = {
 		["Default"] = {
 			["locked"] = false,
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -72,10 +75,10 @@ ChocolateBarDB = {
 					["barOffx"] = -88.3325424194336,
 				},
 			},
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
+			["moduleOptions"] = {
+				["MoreChocolate"] = {
+				},
 			},
-			["moveFrames"] = false,
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -324,16 +327,16 @@ ChocolateBarDB = {
 					["showText"] = false,
 					["customLabel"] = "N",
 				},
-				["TestNoText"] = {
-					["enabled"] = false,
-					["index"] = 4,
-					["barName"] = "ChocolateBar1",
-				},
 				["Leatrix_Maps"] = {
 					["enabled"] = false,
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
+				},
+				["TestNoText"] = {
+					["enabled"] = false,
+					["index"] = 4,
+					["barName"] = "ChocolateBar1",
 				},
 				["Prat"] = {
 					["enabled"] = false,
@@ -374,18 +377,15 @@ ChocolateBarDB = {
 					["customLabel"] = "G2",
 				},
 			},
-			["desaturated"] = false,
 			["gap"] = 0,
-			["moduleOptions"] = {
-				["MoreChocolate"] = {
-				},
-			},
 			["forceColor"] = false,
+			["fixedStrata"] = true,
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
 			["fontName"] = "Friz Quadrata TT",
 			["textOffset"] = 2,
 			["height"] = 20,
-			["fixedStrata"] = true,
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["desaturated"] = false,
+			["moveFrames"] = false,
 			["textColor"] = {
 				["a"] = 1,
 				["b"] = 1,
@@ -412,7 +412,7 @@ CB_PlayedTime = {
 		["total"] = 1719,
 	},
 	["Mxyz-"] = {
-		["total"] = 148225,
+		["total"] = 148913,
 	},
 	["Antun-"] = {
 		["total"] = 794,
@@ -438,11 +438,11 @@ CB_PlayedTime = {
 	["Augustin-"] = {
 		["total"] = 413954,
 	},
-	["Dmitar-"] = {
-		["total"] = 1872,
+	["Whatevs-"] = {
+		["total"] = 213,
 	},
-	["Vermins-"] = {
-		["total"] = 3014,
+	["Mxyzptlk-"] = {
+		["total"] = 8494,
 	},
 	["Dotwise-"] = {
 		["total"] = 3924,
@@ -465,13 +465,13 @@ CB_PlayedTime = {
 	["Grgur-"] = {
 		["total"] = 1248,
 	},
-	["Mxyzptlk-"] = {
-		["total"] = 8494,
+	["Vermins-"] = {
+		["total"] = 3014,
 	},
 	["Koloman-"] = {
 		["total"] = 129,
 	},
-	["Whatevs-"] = {
-		["total"] = 213,
+	["Dmitar-"] = {
+		["total"] = 1872,
 	},
 }
