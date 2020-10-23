@@ -13,6 +13,13 @@ X: -170
 Y: 133
 W: 30
 H: 30
+Frame: GameMenuFrame
+FrameLevel: 1
+Anchor: CENTER
+X: -40
+Y: 151
+W: 195
+H: 312
 Frame: InterfaceOptionsFrame
 FrameLevel: 1
 Anchor: TOP
@@ -41,10 +48,3 @@ X: -27
 Y: 27
 W: 50
 H: 50
-Frame: GameMenuFrame
-FrameLevel: 1
-Anchor: CENTER
-X: -40
-Y: 151
-W: 195
-H: 292

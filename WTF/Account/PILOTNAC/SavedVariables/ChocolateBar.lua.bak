@@ -45,6 +45,9 @@ ChocolateBarDB = {
 	["profiles"] = {
 		["Default"] = {
 			["locked"] = false,
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -74,9 +77,6 @@ ChocolateBarDB = {
 					["index"] = 1,
 					["barOffx"] = -88.3325424194336,
 				},
-			},
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
 			},
 			["moveFrames"] = false,
 			["objSettings"] = {
@@ -314,16 +314,16 @@ ChocolateBarDB = {
 					["showText"] = false,
 					["customLabel"] = "N",
 				},
-				["TestNoText"] = {
-					["enabled"] = false,
-					["index"] = 4,
-					["barName"] = "ChocolateBar1",
-				},
 				["Leatrix_Maps"] = {
 					["enabled"] = false,
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
+				},
+				["TestNoText"] = {
+					["enabled"] = false,
+					["index"] = 4,
+					["barName"] = "ChocolateBar1",
 				},
 				["TradeSkillMaster"] = {
 					["index"] = 3,
@@ -433,20 +433,20 @@ CB_PlayedTime = {
 	["Whatevs-"] = {
 		["total"] = 213,
 	},
-	["Mohikanac-"] = {
-		["total"] = 167544,
+	["Mxym-"] = {
+		["total"] = 4765,
 	},
 	["Klhjakhsgdjh-"] = {
 		["total"] = 53,
 	},
-	["Dmitar-"] = {
-		["total"] = 55,
+	["Junac-"] = {
+		["total"] = 2534,
 	},
 	["Stranac-"] = {
 		["total"] = 73,
 	},
-	["Junac-"] = {
-		["total"] = 2534,
+	["Dmitar-"] = {
+		["total"] = 55,
 	},
 	["Mxyzptlk-"] = {
 		["total"] = 8367,
@@ -454,31 +454,31 @@ CB_PlayedTime = {
 	["Ozrencic-"] = {
 		["total"] = 853,
 	},
-	["Mxzq-"] = {
-		["total"] = 248345,
-	},
-	["Paydo-"] = {
-		["total"] = 18945,
-	},
-	["Kosturko-"] = {
-		["total"] = 1457,
+	["Verminz-"] = {
+		["total"] = 311368,
 	},
 	["Kamenac-"] = {
 		["total"] = 1558123,
 	},
-	["Verminz-"] = {
-		["total"] = 311368,
+	["Kosturko-"] = {
+		["total"] = 1457,
+	},
+	["Paydo-"] = {
+		["total"] = 18945,
+	},
+	["Mxzq-"] = {
+		["total"] = 248345,
 	},
 	["Grgur-"] = {
 		["total"] = 2,
 	},
-	["Mxym-"] = {
-		["total"] = 4765,
+	["Mohikanac-"] = {
+		["total"] = 167544,
 	},
 	["Dotwise-"] = {
 		["total"] = 3924,
 	},
 	["Konac-"] = {
-		["total"] = 6150777,
+		["total"] = 6167895,
 	},
 }

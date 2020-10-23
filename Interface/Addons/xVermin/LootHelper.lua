@@ -111,7 +111,10 @@ bcf:RegisterEvent("PLAYER_REGEN_DISABLED")
 bcf:SetScript(
 	"OnEvent",
 	function(self, event, ...)
-		if xVermin.Class == "MAGE" then
+		if xVermin.Class == "MAGE" or xVermin.Class == "SHAMAN" or xVermin.Class == "PRIEST" or xVermin.Class == "HUNTER" or xVermin.Class == "PALADIN" or xVermin.Class == "WARLOCK" then
+			---------------------------------------------------------
+			-- mana ticks
+			---------------------------------------------------------
 			if event == PLAYER_REGEN_DISABLED then
 				if time() - ticktime > 3 then
 					manaticktotal = 0
@@ -119,23 +122,29 @@ bcf:SetScript(
 				end
 			end
 
-			if GetSpellPowerCost("Blizzard(Rank 1)") and GetSpellPowerCost("Blizzard(Rank 1)")[1].cost and GetSpellPowerCost("Blizzard(Rank 1)")[1].cost > 0 then
-				base, casting = GetManaRegen()
-				if (xVermin:Round(base, 2) or xVermin:Round(casting, 2)) > 0 then
-					if lastmana then
-						if UnitPower("player") > lastmana then
-							manatick = UnitPower("player") - lastmana
-						end
+			base, casting = GetManaRegen()
+			if (xVermin:Round(base, 2) or xVermin:Round(casting, 2)) > 0 then
+				if lastmana then
+					if UnitPower("player") > lastmana then
+						manatick = UnitPower("player") - lastmana
 					end
-				else
-					manatick = 0
 				end
-				lastmana = UnitPower("player")
+			else
+				manatick = 0
+			end
+			lastmana = UnitPower("player")
+			if UnitPower("Player") == UnitPowerMax("player") then
+				manatick = 0
+			end
 
-				if UnitPower("Player") == UnitPowerMax("player") then
-					manatick = 0
-				end
+			mcf.text:SetText(manatick)
+			mcf:SetWidth(mcf.text:GetStringWidth())
+			mcf:SetHeight(mcf.text:GetStringHeight())
 
+			---------------------------------------------------------
+			-- blizzard counter
+			---------------------------------------------------------
+			if GetSpellPowerCost("Blizzard(Rank 1)") and GetSpellPowerCost("Blizzard(Rank 1)")[1].cost and GetSpellPowerCost("Blizzard(Rank 1)")[1].cost > 0 then
 				local r1 = floor(UnitPower("Player") / GetSpellPowerCost("Blizzard(Rank 1)")[1].cost)
 				local rm = floor(UnitPower("Player") / GetSpellPowerCost("Blizzard")[1].cost)
 				local nr1 = floor((UnitPower("player") - (rm * GetSpellPowerCost("Blizzard")[1].cost)) / GetSpellPowerCost("Blizzard(Rank 1)")[1].cost)
@@ -144,14 +153,14 @@ bcf:SetScript(
 				bcf.text:SetText(bcount)
 				bcf:SetWidth(bcf.text:GetStringWidth())
 				bcf:SetHeight(bcf.text:GetStringHeight())
-
-				mcf.text:SetText(manatick)
-				mcf:SetWidth(mcf.text:GetStringWidth())
-				mcf:SetHeight(mcf.text:GetStringHeight())
+			else
+				bcf:Hide()
+				self:UnregisterEvent("SPELLS_CHANGED")
 			end
 		else
-			bcf:Hide()
 			self:UnregisterAllEvents()
+			bcf:Hide()
+			mcf:Hide()
 		end
 	end
 )

@@ -9,7 +9,7 @@ VER 3 0000000000000003 "Dispel" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000009 "Drink" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:0
+/use [nocombat]item:8766
 /castsequence [combat] reset=combat 
 END
 VER 3 0000000000000002 "Flash Heal" "135907"
@@ -18,7 +18,7 @@ VER 3 0000000000000002 "Flash Heal" "135907"
 END
 VER 3 0000000000000008 "Food" "Inv_misc_questionmark"
 #showtooltip
-/use [nocombat]item:8948
+/use [nocombat]item:0
 /castsequence [combat] reset=combat 
 END
 VER 3 0000000000000006 "Heal" "INV_MISC_QUESTIONMARK"

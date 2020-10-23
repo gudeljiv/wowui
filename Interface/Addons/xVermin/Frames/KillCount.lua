@@ -502,7 +502,6 @@ local function CalculateTotalExperience(event, isInitialLogin, isReloadingUi)
 		end
 	end
 	if event == "PLAYER_ENTERING_WORLD" and (isInitialLogin or isReloadingUi) then
-		xKillCount.experience.pulltotal = 0
 		maxxp = UnitXPMax("player")
 		currentxp = UnitXP("player")
 	else

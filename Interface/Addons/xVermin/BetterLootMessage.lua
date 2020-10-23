@@ -90,9 +90,9 @@ local translateTable = {
 
 table.foreach(
 	translateTable,
-	function(k, v)
-		if _G[k] ~= nil and stringPaternMatch(_G[k], v) == true then
-			_G[k] = v
+	function(key, value)
+		if _G[key] ~= nil and stringPaternMatch(_G[key], value) == true then
+			_G[key] = value
 		end
 	end
 )

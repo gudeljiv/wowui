@@ -1,16 +1,224 @@
 
 xKillCount = {
 	["show"] = true,
-	["position"] = {
-		["y"] = -277.000030517578,
-		["x"] = 373.999877929688,
-		["to"] = "TOPLEFT",
-		["from"] = "TOPLEFT",
+	["killLog"] = {
+		["Miner Hackett"] = {
+			["name"] = "Miner Hackett",
+			["count"] = 1,
+		},
+		["Boulderfist Ogre"] = {
+			["name"] = "Boulderfist Ogre",
+			["count"] = 8,
+		},
+		["Spirit of Old"] = {
+			["name"] = "Spirit of Old",
+			["count"] = 27,
+		},
+		["Dalaran Worker"] = {
+			["name"] = "Dalaran Worker",
+			["count"] = 2,
+		},
+		["Dalaran Shield Guard"] = {
+			["name"] = "Dalaran Shield Guard",
+			["count"] = 19,
+		},
+		["Mountain Yeti"] = {
+			["name"] = "Mountain Yeti",
+			["count"] = 4,
+		},
+		["Highland Strider"] = {
+			["name"] = "Highland Strider",
+			["count"] = 33,
+		},
+		["Marcel Dabyrie"] = {
+			["name"] = "Marcel Dabyrie",
+			["count"] = 1,
+		},
+		["Ferocious Yeti"] = {
+			["name"] = "Ferocious Yeti",
+			["count"] = 23,
+		},
+		["Fardel Dabyrie"] = {
+			["name"] = "Fardel Dabyrie",
+			["count"] = 1,
+		},
+		["Hillsbrad Councilman"] = {
+			["name"] = "Hillsbrad Councilman",
+			["count"] = 4,
+		},
+		["Giant Yeti"] = {
+			["name"] = "Giant Yeti",
+			["count"] = 4,
+		},
+		["Clerk Horrace Whitesteed"] = {
+			["name"] = "Clerk Horrace Whitesteed",
+			["count"] = 1,
+		},
+		["Forest Moss Creeper"] = {
+			["name"] = "Forest Moss Creeper",
+			["count"] = 1,
+		},
+		["Hillsbrad Peasant"] = {
+			["name"] = "Hillsbrad Peasant",
+			["count"] = 7,
+		},
+		["Highland Thrasher"] = {
+			["name"] = "Highland Thrasher",
+			["count"] = 2,
+		},
+		["Elemental Slave"] = {
+			["name"] = "Elemental Slave",
+			["count"] = 2,
+		},
+		["Hillsbrad Miner"] = {
+			["name"] = "Hillsbrad Miner",
+			["count"] = 28,
+		},
+		["Cave Yeti"] = {
+			["name"] = "Cave Yeti",
+			["count"] = 28,
+		},
+		["Hillsbrad Farmer"] = {
+			["name"] = "Hillsbrad Farmer",
+			["count"] = 13,
+		},
+		["Hillsbrad Farmhand"] = {
+			["name"] = "Hillsbrad Farmhand",
+			["count"] = 8,
+		},
+		["Citizen Wilkes"] = {
+			["name"] = "Citizen Wilkes",
+			["count"] = 2,
+		},
+		["Farmer Kalaba"] = {
+			["name"] = "Farmer Kalaba",
+			["count"] = 1,
+		},
+		["Healing Ward"] = {
+			["name"] = "Healing Ward",
+			["count"] = 1,
+		},
+		["Farmer Getz"] = {
+			["name"] = "Farmer Getz",
+			["count"] = 1,
+		},
+		["Giant Moss Creeper"] = {
+			["name"] = "Giant Moss Creeper",
+			["count"] = 3,
+		},
+		["Magistrate Burnside"] = {
+			["name"] = "Magistrate Burnside",
+			["count"] = 1,
+		},
+		["Hillsbrad Footman"] = {
+			["name"] = "Hillsbrad Footman",
+			["count"] = 9,
+		},
+		["Young Mesa Buzzard"] = {
+			["name"] = "Young Mesa Buzzard",
+			["count"] = 2,
+		},
+		["Plains Creeper"] = {
+			["name"] = "Plains Creeper",
+			["count"] = 3,
+		},
+		["Kegan Darkmar"] = {
+			["name"] = "Kegan Darkmar",
+			["count"] = 1,
+		},
+		["Alina"] = {
+			["name"] = "Alina",
+			["count"] = 1,
+		},
+		["Dabyrie Militia"] = {
+			["name"] = "Dabyrie Militia",
+			["count"] = 2,
+		},
+		["Ricter"] = {
+			["name"] = "Ricter",
+			["count"] = 1,
+		},
+		["Farmer Ray"] = {
+			["name"] = "Farmer Ray",
+			["count"] = 1,
+		},
+		["Warden Belamoore"] = {
+			["name"] = "Warden Belamoore",
+			["count"] = 1,
+		},
+		["Hillsbrad Foreman"] = {
+			["name"] = "Hillsbrad Foreman",
+			["count"] = 10,
+		},
+		["Dermot"] = {
+			["name"] = "Dermot",
+			["count"] = 1,
+		},
+		["Hulking Mountain Lion"] = {
+			["name"] = "Hulking Mountain Lion",
+			["count"] = 1,
+		},
+		["Dalaran Theurgist"] = {
+			["name"] = "Dalaran Theurgist",
+			["count"] = 11,
+		},
+		["Starving Mountain Lion"] = {
+			["name"] = "Starving Mountain Lion",
+			["count"] = 22,
+		},
+		["Witherbark Troll"] = {
+			["name"] = "Witherbark Troll",
+			["count"] = 1,
+		},
+		["Gray Bear"] = {
+			["name"] = "Gray Bear",
+			["count"] = 2,
+		},
+		["Vicious Gray Bear"] = {
+			["name"] = "Vicious Gray Bear",
+			["count"] = 29,
+		},
+		["Hillsbrad Sentry"] = {
+			["name"] = "Hillsbrad Sentry",
+			["count"] = 5,
+		},
+		["Boulderfist Enforcer"] = {
+			["name"] = "Boulderfist Enforcer",
+			["count"] = 16,
+		},
+		["Magma Totem"] = {
+			["name"] = "Magma Totem",
+			["count"] = 2,
+		},
+		["Witherbark Witch Doctor"] = {
+			["name"] = "Witherbark Witch Doctor",
+			["count"] = 3,
+		},
+		["Elder Gray Bear"] = {
+			["name"] = "Elder Gray Bear",
+			["count"] = 15,
+		},
+		["Dabyrie Laborer"] = {
+			["name"] = "Dabyrie Laborer",
+			["count"] = 17,
+		},
+		["Dalaran Summoner"] = {
+			["name"] = "Dalaran Summoner",
+			["count"] = 5,
+		},
+		["Mountain Lion"] = {
+			["name"] = "Mountain Lion",
+			["count"] = 3,
+		},
 	},
 	["experience"] = {
-		["pulltotal"] = 0,
-		["totaltotal"] = 1408,
+		["totaltotal"] = 132748,
+		["pulltotal"] = 3090,
 	},
-	["killLog"] = {
+	["position"] = {
+		["y"] = 150.000106811523,
+		["x"] = 2.00001430511475,
+		["to"] = "LEFT",
+		["from"] = "LEFT",
 	},
 }

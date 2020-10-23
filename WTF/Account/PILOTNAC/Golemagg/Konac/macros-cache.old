@@ -5,18 +5,23 @@ END
 VER 3 0000000001000004 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast Shadow Word: Pain
+/w vermin !f
 END
 VER 3 0000000001000001 "AR" "INV_MISC_QUESTIONMARK"
 #showtooltip Renew
 /follow augustin
 /target augustin
-/cast Renew(Rank 8)
+/follow vermin
+/target vermin
+/cast Renew(Rank 6)
 END
 VER 3 0000000001000002 "BUFF" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /follow augustin
 /target augustin
-/castsequence Power Word: Fortitude, Divine Spirit, Shadow Protection
+/follow vermin
+/target vermin
+/castsequence reset=10 Power Word: Fortitude(Rank 2), Divine Spirit, Shadow Protection
 END
 VER 3 0000000001000003 "SR" "INV_MISC_QUESTIONMARK"
 #showtooltip Renew
