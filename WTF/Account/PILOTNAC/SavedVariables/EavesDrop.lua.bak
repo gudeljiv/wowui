@@ -25,20 +25,20 @@ EavesDropDB = {
 		["Mxys - Golemagg"] = "Default",
 		["Spija - Genesis"] = "Spija - Genesis",
 		["Stranac - Golemagg"] = "Stranac - Golemagg",
-		["Junac - Golemagg"] = "Default",
-		["Slanac - Golemagg"] = "Default",
-		["Vermin - Golemagg"] = "Default",
+		["Mohikanac - Golemagg"] = "Default",
+		["Dmitar - Golemagg"] = "Default",
+		["Dotwise - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
-		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
+		["Paydo - Dreadmist"] = "Default",
 		["Korupcija - Genesis"] = "Default",
 		["Korupcija - Stonespine"] = "Default",
 		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
-		["Paydo - Dreadmist"] = "Default",
+		["Kosturko - Golemagg"] = "Kosturko - Golemagg",
 		["Judawise - Golemagg"] = "Default",
-		["Dotwise - Golemagg"] = "Default",
-		["Dmitar - Golemagg"] = "Default",
-		["Mohikanac - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Default",
+		["Slanac - Golemagg"] = "Default",
+		["Junac - Golemagg"] = "Default",
 		["Kamenac - Golemagg"] = "Default",
 	},
 	["profiles"] = {
@@ -46,39 +46,39 @@ EavesDropDB = {
 			["LINEWIDTH"] = 130,
 			["BORDER"] = {
 				["a"] = 0,
-				["b"] = 0.607843137254902,
-				["g"] = 0.607843137254902,
 				["r"] = 0.607843137254902,
+				["g"] = 0.607843137254902,
+				["b"] = 0.607843137254902,
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
+			["SCROLLBUTTON"] = true,
+			["TEXTSIZE"] = 13,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
-			["TEXTSIZE"] = 13,
-			["NUMLINES"] = 16,
 			["HIDETAB"] = true,
 			["LINEHEIGHT"] = 16,
-			["SCROLLBUTTON"] = true,
+			["NUMLINES"] = 16,
 		},
 		["Mxyz - Golemagg"] = {
 			["LINEWIDTH"] = 130,
 			["BORDER"] = {
 				["a"] = 0,
-				["r"] = 0.607843137254902,
-				["g"] = 0.607843137254902,
 				["b"] = 0.607843137254902,
+				["g"] = 0.607843137254902,
+				["r"] = 0.607843137254902,
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
+			["SCROLLBUTTON"] = true,
+			["TEXTSIZE"] = 13,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
-			["TEXTSIZE"] = 13,
-			["NUMLINES"] = 16,
 			["HIDETAB"] = true,
 			["LINEHEIGHT"] = 16,
-			["SCROLLBUTTON"] = true,
+			["NUMLINES"] = 16,
 		},
 		["Verminz - Golemagg"] = {
 			["LINEWIDTH"] = 100,
@@ -88,9 +88,9 @@ EavesDropDB = {
 			["x"] = 536.000144269463,
 			["TEXTSIZE"] = 12,
 			["FONT"] = "Arial Narrow",
-			["HIDETAB"] = true,
-			["SCROLLBUTTON"] = true,
 			["NUMLINES"] = 14,
+			["SCROLLBUTTON"] = true,
+			["HIDETAB"] = true,
 		},
 		["Junac - Golemagg"] = {
 		},
@@ -124,20 +124,20 @@ EavesDropDB = {
 			["LINEWIDTH"] = 130,
 			["BORDER"] = {
 				["a"] = 0,
-				["r"] = 0.607843137254902,
-				["g"] = 0.607843137254902,
 				["b"] = 0.607843137254902,
+				["g"] = 0.607843137254902,
+				["r"] = 0.607843137254902,
 			},
 			["y"] = 236.195578993564,
 			["x"] = 551.714104134467,
-			["SCROLLBUTTON"] = true,
+			["HIDETAB"] = true,
 			["TEXTSIZE"] = 13,
+			["SCROLLBUTTON"] = true,
+			["NUMLINES"] = 16,
+			["LINEHEIGHT"] = 16,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
-			["NUMLINES"] = 16,
-			["LINEHEIGHT"] = 16,
-			["HIDETAB"] = true,
 		},
 		["Mxys - Golemagg"] = {
 		},
@@ -145,11 +145,11 @@ EavesDropDB = {
 		},
 		["Stranac - Golemagg"] = {
 		},
-		["Dotwise - Golemagg"] = {
+		["Slanac - Golemagg"] = {
 		},
-		["Greenwise - Golemagg"] = {
+		["Pitchwise - Genesis"] = {
 		},
-		["Dmitar - Golemagg"] = {
+		["Mxyzptlk - Golemagg"] = {
 		},
 		["Kosturko - Golemagg"] = {
 		},
@@ -160,29 +160,29 @@ EavesDropDB = {
 		["Default"] = {
 			["BORDER"] = {
 				["a"] = 0,
-				["r"] = 0.607843137254902,
-				["g"] = 0.607843137254902,
 				["b"] = 0.607843137254902,
+				["g"] = 0.607843137254902,
+				["r"] = 0.607843137254902,
 			},
 			["LINEWIDTH"] = 130,
 			["x"] = 551.714104134467,
 			["TEXTSIZE"] = 13,
-			["NUMLINES"] = 16,
-			["SCROLLBUTTON"] = true,
-			["LINEHEIGHT"] = 16,
-			["HIDETAB"] = true,
 			["FRAME"] = {
 				["a"] = 0.4,
 			},
+			["SCROLLBUTTON"] = true,
+			["LINEHEIGHT"] = 16,
+			["HIDETAB"] = true,
+			["NUMLINES"] = 16,
 			["y"] = 236.195578993564,
 		},
 		["Judawise - Golemagg"] = {
 		},
-		["Mxyzptlk - Golemagg"] = {
+		["Dmitar - Golemagg"] = {
 		},
-		["Pitchwise - Genesis"] = {
+		["Greenwise - Golemagg"] = {
 		},
-		["Slanac - Golemagg"] = {
+		["Dotwise - Golemagg"] = {
 		},
 		["Kamenac - Golemagg"] = {
 		},
