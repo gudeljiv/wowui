@@ -301,6 +301,9 @@ local function SortData()
 	table.sort(
 		sortedKillLog,
 		function(a, b)
+			if a.count == b.count then
+				return a.name < b.name
+			end
 			return a.count > b.count
 		end
 	)

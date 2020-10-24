@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 3483,
+	["session"] = 3487,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -3873,8 +3873,24 @@ BugGrabberDB = {
 			["time"] = "2020/09/09 20:53:10",
 			["locals"] = "InCombatSkipped",
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetShown'\nInterface\\FrameXML\\MultiActionBars.lua:36: in function <Interface\\FrameXML\\MultiActionBars.lua:34>\nInterface\\FrameXML\\MultiActionBars.lua:52: in function `MultiActionBar_Update'\nInterface\\FrameXML\\InterfaceOptionsPanels.lua:1175: in function `setFunc'\nInterface\\FrameXML\\InterfaceOptionsPanels.lua:87: in function <Interface\\FrameXML\\InterfaceOptionsPanels.lua:83>\n[C]: in function `pcall'\nInterface\\FrameXML\\InterfaceOptionsFrame.lua:217: in function <Interface\\FrameXML\\InterfaceOptionsFrame.lua:216>\n[C]: in function `securecall'\nInterface\\FrameXML\\InterfaceOptionsFrame.lua:252: in function <Interface\\FrameXML\\InterfaceOptionsFrame.lua:248>\n[C]: in function `Click'\nInterface\\FrameXML\\UIParent.lua:3353: in function `ToggleGameMenu'\n[string \"TOGGLEGAMEMENU\"]:1: in function <[string \"TOGGLEGAMEMENU\"]:1>",
-			["session"] = 3479,
-			["counter"] = 4,
+			["session"] = 3486,
+			["counter"] = 5,
 		}, -- [490]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'TradeSkillMaster' tried to call the protected function 'TSM_UI_ELEMENT:ApplicationFrame:14150b:Hide()'.",
+			["time"] = "2020/10/24 18:45:06",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Hide'\n...AddOns\\TradeSkillMaster\\Core\\UI\\Elements\\Element.lua:129: in function <...AddOns\\TradeSkillMaster\\Core\\UI\\Elements\\Element.lua:128>\n...radeSkillMaster\\External\\LibTSMClass\\LibTSMClass-1.lua:208: in function `Hide'\n...ddOns\\TradeSkillMaster\\Core\\UI\\DestroyingUI\\Core.lua:318: in function <...ddOns\\TradeSkillMaster\\Core\\UI\\DestroyingUI\\Core.lua:316>\n(tail call): ?\n(tail call): ?\n(tail call): ?\n(tail call): ?\n...\\TradeSkillMaster\\LibTSM\\Util\\FSMClasses\\Machine.lua:178: in function <...\\TradeSkillMaster\\LibTSM\\Util\\FSMClasses\\Machine.lua:160>\n(tail call): ?\n...\\TradeSkillMaster\\LibTSM\\Util\\FSMClasses\\Machine.lua:138: in function <...\\TradeSkillMaster\\LibTSM\\Util\\FSMClasses\\Machine.lua:114>\n(tail call): ?\n...ddOns\\TradeSkillMaster\\Core\\UI\\DestroyingUI\\Core.lua:269: in function `?'\n...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:86: in function `ScriptHandlerCommon'\n...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:37: in function <...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:36>",
+			["session"] = 3487,
+			["counter"] = 1,
+		}, -- [491]
+		{
+			["message"] = "...AddOns\\TradeSkillMaster\\Core\\UI\\Elements\\Element.lua:381: assertion failed!",
+			["time"] = "2020/10/24 18:45:26",
+			["locals"] = "(*temporary) = nil\n",
+			["stack"] = "[C]: in function `assert'\n...AddOns\\TradeSkillMaster\\Core\\UI\\Elements\\Element.lua:381: in function <...AddOns\\TradeSkillMaster\\Core\\UI\\Elements\\Element.lua:380>\n...radeSkillMaster\\External\\LibTSMClass\\LibTSMClass-1.lua:208: in function `Draw'\n...ce\\AddOns\\TradeSkillMaster\\Core\\UI\\Elements\\Text.lua:155: in function <...ce\\AddOns\\TradeSkillMaster\\Core\\UI\\Elements\\Text.lua:154>\n...radeSkillMaster\\External\\LibTSMClass\\LibTSMClass-1.lua:208: in function `Draw'\n...s\\TradeSkillMaster\\Core\\UI\\Elements\\ActionButton.lua:259: in function <...s\\TradeSkillMaster\\Core\\UI\\Elements\\ActionButton.lua:235>\n...radeSkillMaster\\External\\LibTSMClass\\LibTSMClass-1.lua:208: in function `Draw'\n...s\\TradeSkillMaster\\Core\\UI\\Elements\\ActionButton.lua:364: in function `?'\n...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:86: in function `ScriptHandlerCommon'\n...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:37: in function <...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:36>",
+			["session"] = 3487,
+			["counter"] = 4,
+		}, -- [492]
 	},
 }

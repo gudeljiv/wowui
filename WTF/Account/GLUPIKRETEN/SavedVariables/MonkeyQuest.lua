@@ -511,22 +511,13 @@ MonkeyQuestConfig = {
 			["Arathi Highlands - true"] = {
 				["m_bChecked"] = true,
 			},
-			["Hillsbrad Foothills - true"] = {
-				["m_bChecked"] = true,
-			},
-			["Raising Spirits - false"] = {
-				["m_bChecked"] = true,
-			},
-			["The Hammer May Fall - false"] = {
-				["m_bChecked"] = true,
-			},
-			["Foul Magics - false"] = {
+			["Call to Arms - false"] = {
 				["m_bChecked"] = true,
 			},
 			["Sigil of Strom - false"] = {
 				["m_bChecked"] = true,
 			},
-			["Call to Arms - false"] = {
+			["Foul Magics - false"] = {
 				["m_bChecked"] = true,
 			},
 		},
@@ -884,7 +875,7 @@ MonkeyQuestConfig = {
 		["m_iHighlightAlpha"] = 0,
 		["m_bShowQuestLevel"] = false,
 		["m_bShowDailyNumQuests"] = false,
-		["m_iFrameBottom"] = 1153.99987792969,
+		["m_iFrameBottom"] = 979,
 		["m_bHideCompletedQuests"] = true,
 		["m_iFrameLeft"] = 2081.99975585938,
 		["m_bColourDoneOrFailed"] = true,

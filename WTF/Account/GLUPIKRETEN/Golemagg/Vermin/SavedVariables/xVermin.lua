@@ -28,7 +28,7 @@ xKillCount = {
 		},
 		["Highland Strider"] = {
 			["name"] = "Highland Strider",
-			["count"] = 33,
+			["count"] = 34,
 		},
 		["Marcel Dabyrie"] = {
 			["name"] = "Marcel Dabyrie",
@@ -41,6 +41,14 @@ xKillCount = {
 		["Fardel Dabyrie"] = {
 			["name"] = "Fardel Dabyrie",
 			["count"] = 1,
+		},
+		["Giant Plains Creeper"] = {
+			["name"] = "Giant Plains Creeper",
+			["count"] = 1,
+		},
+		["Witherbark Axe Thrower"] = {
+			["name"] = "Witherbark Axe Thrower",
+			["count"] = 10,
 		},
 		["Hillsbrad Councilman"] = {
 			["name"] = "Hillsbrad Councilman",
@@ -86,6 +94,10 @@ xKillCount = {
 			["name"] = "Hillsbrad Farmhand",
 			["count"] = 8,
 		},
+		["Plains Creeper"] = {
+			["name"] = "Plains Creeper",
+			["count"] = 9,
+		},
 		["Citizen Wilkes"] = {
 			["name"] = "Citizen Wilkes",
 			["count"] = 2,
@@ -96,31 +108,39 @@ xKillCount = {
 		},
 		["Healing Ward"] = {
 			["name"] = "Healing Ward",
+			["count"] = 4,
+		},
+		["Highland Fleshstalker"] = {
+			["name"] = "Highland Fleshstalker",
+			["count"] = 2,
+		},
+		["Magistrate Burnside"] = {
+			["name"] = "Magistrate Burnside",
 			["count"] = 1,
 		},
 		["Farmer Getz"] = {
 			["name"] = "Farmer Getz",
 			["count"] = 1,
 		},
-		["Giant Moss Creeper"] = {
-			["name"] = "Giant Moss Creeper",
-			["count"] = 3,
-		},
-		["Magistrate Burnside"] = {
-			["name"] = "Magistrate Burnside",
-			["count"] = 1,
-		},
 		["Hillsbrad Footman"] = {
 			["name"] = "Hillsbrad Footman",
 			["count"] = 9,
 		},
+		["Warden Belamoore"] = {
+			["name"] = "Warden Belamoore",
+			["count"] = 1,
+		},
+		["Dabyrie Laborer"] = {
+			["name"] = "Dabyrie Laborer",
+			["count"] = 17,
+		},
 		["Young Mesa Buzzard"] = {
 			["name"] = "Young Mesa Buzzard",
-			["count"] = 2,
-		},
-		["Plains Creeper"] = {
-			["name"] = "Plains Creeper",
 			["count"] = 3,
+		},
+		["Farmer Ray"] = {
+			["name"] = "Farmer Ray",
+			["count"] = 1,
 		},
 		["Kegan Darkmar"] = {
 			["name"] = "Kegan Darkmar",
@@ -134,24 +154,24 @@ xKillCount = {
 			["name"] = "Dabyrie Militia",
 			["count"] = 2,
 		},
-		["Ricter"] = {
-			["name"] = "Ricter",
+		["Magma Totem"] = {
+			["name"] = "Magma Totem",
+			["count"] = 5,
+		},
+		["Mesa Buzzard"] = {
+			["name"] = "Mesa Buzzard",
 			["count"] = 1,
 		},
-		["Farmer Ray"] = {
-			["name"] = "Farmer Ray",
-			["count"] = 1,
-		},
-		["Warden Belamoore"] = {
-			["name"] = "Warden Belamoore",
-			["count"] = 1,
+		["Starving Mountain Lion"] = {
+			["name"] = "Starving Mountain Lion",
+			["count"] = 22,
 		},
 		["Hillsbrad Foreman"] = {
 			["name"] = "Hillsbrad Foreman",
 			["count"] = 10,
 		},
-		["Dermot"] = {
-			["name"] = "Dermot",
+		["Ricter"] = {
+			["name"] = "Ricter",
 			["count"] = 1,
 		},
 		["Hulking Mountain Lion"] = {
@@ -162,17 +182,17 @@ xKillCount = {
 			["name"] = "Dalaran Theurgist",
 			["count"] = 11,
 		},
-		["Starving Mountain Lion"] = {
-			["name"] = "Starving Mountain Lion",
-			["count"] = 22,
+		["Gray Bear"] = {
+			["name"] = "Gray Bear",
+			["count"] = 2,
 		},
 		["Witherbark Troll"] = {
 			["name"] = "Witherbark Troll",
 			["count"] = 1,
 		},
-		["Gray Bear"] = {
-			["name"] = "Gray Bear",
-			["count"] = 2,
+		["Dermot"] = {
+			["name"] = "Dermot",
+			["count"] = 1,
 		},
 		["Vicious Gray Bear"] = {
 			["name"] = "Vicious Gray Bear",
@@ -186,21 +206,21 @@ xKillCount = {
 			["name"] = "Boulderfist Enforcer",
 			["count"] = 16,
 		},
-		["Magma Totem"] = {
-			["name"] = "Magma Totem",
-			["count"] = 2,
+		["Witherbark Headhunter"] = {
+			["name"] = "Witherbark Headhunter",
+			["count"] = 10,
 		},
 		["Witherbark Witch Doctor"] = {
 			["name"] = "Witherbark Witch Doctor",
-			["count"] = 3,
+			["count"] = 15,
 		},
 		["Elder Gray Bear"] = {
 			["name"] = "Elder Gray Bear",
 			["count"] = 15,
 		},
-		["Dabyrie Laborer"] = {
-			["name"] = "Dabyrie Laborer",
-			["count"] = 17,
+		["Giant Moss Creeper"] = {
+			["name"] = "Giant Moss Creeper",
+			["count"] = 3,
 		},
 		["Dalaran Summoner"] = {
 			["name"] = "Dalaran Summoner",
@@ -212,8 +232,8 @@ xKillCount = {
 		},
 	},
 	["experience"] = {
-		["totaltotal"] = 132748,
-		["pulltotal"] = 3090,
+		["totaltotal"] = 146967,
+		["pulltotal"] = 220,
 	},
 	["position"] = {
 		["y"] = 150.000106811523,

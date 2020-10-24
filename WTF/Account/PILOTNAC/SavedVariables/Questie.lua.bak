@@ -645,11 +645,11 @@ QuestieConfig = {
 				[502] = true,
 				[878] = true,
 			},
-			["TrackedQuests"] = {
+			["TrackerHiddenQuests"] = {
 			},
 			["TrackerHiddenObjectives"] = {
 			},
-			["TrackerHiddenQuests"] = {
+			["TrackedQuests"] = {
 			},
 		},
 	},

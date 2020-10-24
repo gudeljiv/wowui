@@ -8,8 +8,8 @@ xKillCount = {
 		["from"] = "LEFT",
 	},
 	["experience"] = {
-		["pulltotal"] = 2905,
-		["totaltotal"] = 129658,
+		["pulltotal"] = 735,
+		["totaltotal"] = 146747,
 	},
 	["killLog"] = {
 		["Miner Hackett"] = {
@@ -38,7 +38,7 @@ xKillCount = {
 		},
 		["Highland Strider"] = {
 			["name"] = "Highland Strider",
-			["count"] = 33,
+			["count"] = 34,
 		},
 		["Marcel Dabyrie"] = {
 			["name"] = "Marcel Dabyrie",
@@ -51,6 +51,14 @@ xKillCount = {
 		["Fardel Dabyrie"] = {
 			["name"] = "Fardel Dabyrie",
 			["count"] = 1,
+		},
+		["Giant Plains Creeper"] = {
+			["name"] = "Giant Plains Creeper",
+			["count"] = 1,
+		},
+		["Witherbark Axe Thrower"] = {
+			["name"] = "Witherbark Axe Thrower",
+			["count"] = 10,
 		},
 		["Hillsbrad Councilman"] = {
 			["name"] = "Hillsbrad Councilman",
@@ -106,6 +114,14 @@ xKillCount = {
 		},
 		["Healing Ward"] = {
 			["name"] = "Healing Ward",
+			["count"] = 4,
+		},
+		["Highland Fleshstalker"] = {
+			["name"] = "Highland Fleshstalker",
+			["count"] = 2,
+		},
+		["Warden Belamoore"] = {
+			["name"] = "Warden Belamoore",
 			["count"] = 1,
 		},
 		["Farmer Getz"] = {
@@ -116,21 +132,21 @@ xKillCount = {
 			["name"] = "Giant Moss Creeper",
 			["count"] = 3,
 		},
-		["Magma Totem"] = {
-			["name"] = "Magma Totem",
-			["count"] = 2,
-		},
-		["Boulderfist Enforcer"] = {
-			["name"] = "Boulderfist Enforcer",
-			["count"] = 16,
-		},
-		["Witherbark Troll"] = {
-			["name"] = "Witherbark Troll",
-			["count"] = 1,
+		["Dalaran Summoner"] = {
+			["name"] = "Dalaran Summoner",
+			["count"] = 5,
 		},
 		["Dabyrie Laborer"] = {
 			["name"] = "Dabyrie Laborer",
 			["count"] = 17,
+		},
+		["Young Mesa Buzzard"] = {
+			["name"] = "Young Mesa Buzzard",
+			["count"] = 3,
+		},
+		["Plains Creeper"] = {
+			["name"] = "Plains Creeper",
+			["count"] = 9,
 		},
 		["Kegan Darkmar"] = {
 			["name"] = "Kegan Darkmar",
@@ -144,45 +160,45 @@ xKillCount = {
 			["name"] = "Dabyrie Militia",
 			["count"] = 2,
 		},
-		["Young Mesa Buzzard"] = {
-			["name"] = "Young Mesa Buzzard",
-			["count"] = 2,
-		},
-		["Plains Creeper"] = {
-			["name"] = "Plains Creeper",
-			["count"] = 3,
-		},
-		["Dalaran Summoner"] = {
-			["name"] = "Dalaran Summoner",
+		["Magma Totem"] = {
+			["name"] = "Magma Totem",
 			["count"] = 5,
+		},
+		["Boulderfist Enforcer"] = {
+			["name"] = "Boulderfist Enforcer",
+			["count"] = 16,
+		},
+		["Dermot"] = {
+			["name"] = "Dermot",
+			["count"] = 1,
 		},
 		["Hillsbrad Foreman"] = {
 			["name"] = "Hillsbrad Foreman",
 			["count"] = 10,
 		},
-		["Warden Belamoore"] = {
-			["name"] = "Warden Belamoore",
-			["count"] = 1,
+		["Dalaran Theurgist"] = {
+			["name"] = "Dalaran Theurgist",
+			["count"] = 11,
 		},
 		["Hulking Mountain Lion"] = {
 			["name"] = "Hulking Mountain Lion",
-			["count"] = 1,
-		},
-		["Dermot"] = {
-			["name"] = "Dermot",
 			["count"] = 1,
 		},
 		["Gray Bear"] = {
 			["name"] = "Gray Bear",
 			["count"] = 2,
 		},
+		["Witherbark Troll"] = {
+			["name"] = "Witherbark Troll",
+			["count"] = 1,
+		},
+		["Ricter"] = {
+			["name"] = "Ricter",
+			["count"] = 1,
+		},
 		["Starving Mountain Lion"] = {
 			["name"] = "Starving Mountain Lion",
 			["count"] = 22,
-		},
-		["Dalaran Theurgist"] = {
-			["name"] = "Dalaran Theurgist",
-			["count"] = 11,
 		},
 		["Vicious Gray Bear"] = {
 			["name"] = "Vicious Gray Bear",
@@ -196,13 +212,13 @@ xKillCount = {
 			["name"] = "Farmer Ray",
 			["count"] = 1,
 		},
-		["Ricter"] = {
-			["name"] = "Ricter",
-			["count"] = 1,
+		["Witherbark Headhunter"] = {
+			["name"] = "Witherbark Headhunter",
+			["count"] = 10,
 		},
 		["Witherbark Witch Doctor"] = {
 			["name"] = "Witherbark Witch Doctor",
-			["count"] = 3,
+			["count"] = 15,
 		},
 		["Elder Gray Bear"] = {
 			["name"] = "Elder Gray Bear",

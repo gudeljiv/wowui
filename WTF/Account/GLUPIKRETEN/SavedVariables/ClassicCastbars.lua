@@ -13,14 +13,14 @@ ClassicCastbarsDB = {
 		["iconPositionY"] = 0,
 		["textPositionX"] = 0,
 		["showSpark"] = true,
+		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
+		["ignoreParentAlpha"] = false,
+		["showIcon"] = true,
 		["statusColorFailed"] = {
 			1, -- [1]
 			0, -- [2]
 			0, -- [3]
 		},
-		["ignoreParentAlpha"] = false,
-		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
-		["showIcon"] = true,
 		["borderColor"] = {
 			1, -- [1]
 			0.796078431372549, -- [2]
