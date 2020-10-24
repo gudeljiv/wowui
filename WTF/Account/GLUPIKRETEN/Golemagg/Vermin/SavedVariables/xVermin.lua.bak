@@ -8,8 +8,8 @@ xKillCount = {
 		["from"] = "LEFT",
 	},
 	["experience"] = {
-		["pulltotal"] = 735,
-		["totaltotal"] = 146747,
+		["pulltotal"] = 101,
+		["totaltotal"] = 147573,
 	},
 	["killLog"] = {
 		["Miner Hackett"] = {
@@ -104,6 +104,10 @@ xKillCount = {
 			["name"] = "Hillsbrad Farmhand",
 			["count"] = 8,
 		},
+		["Plains Creeper"] = {
+			["name"] = "Plains Creeper",
+			["count"] = 9,
+		},
 		["Citizen Wilkes"] = {
 			["name"] = "Citizen Wilkes",
 			["count"] = 2,
@@ -116,37 +120,37 @@ xKillCount = {
 			["name"] = "Healing Ward",
 			["count"] = 4,
 		},
-		["Highland Fleshstalker"] = {
-			["name"] = "Highland Fleshstalker",
-			["count"] = 2,
-		},
-		["Warden Belamoore"] = {
-			["name"] = "Warden Belamoore",
-			["count"] = 1,
-		},
-		["Farmer Getz"] = {
-			["name"] = "Farmer Getz",
-			["count"] = 1,
+		["Dalaran Summoner"] = {
+			["name"] = "Dalaran Summoner",
+			["count"] = 5,
 		},
 		["Giant Moss Creeper"] = {
 			["name"] = "Giant Moss Creeper",
 			["count"] = 3,
 		},
-		["Dalaran Summoner"] = {
-			["name"] = "Dalaran Summoner",
-			["count"] = 5,
+		["Farmer Getz"] = {
+			["name"] = "Farmer Getz",
+			["count"] = 1,
+		},
+		["Hillsbrad Footman"] = {
+			["name"] = "Hillsbrad Footman",
+			["count"] = 9,
+		},
+		["Warden Belamoore"] = {
+			["name"] = "Warden Belamoore",
+			["count"] = 1,
 		},
 		["Dabyrie Laborer"] = {
 			["name"] = "Dabyrie Laborer",
 			["count"] = 17,
 		},
+		["Boulderfist Enforcer"] = {
+			["name"] = "Boulderfist Enforcer",
+			["count"] = 16,
+		},
 		["Young Mesa Buzzard"] = {
 			["name"] = "Young Mesa Buzzard",
 			["count"] = 3,
-		},
-		["Plains Creeper"] = {
-			["name"] = "Plains Creeper",
-			["count"] = 9,
 		},
 		["Kegan Darkmar"] = {
 			["name"] = "Kegan Darkmar",
@@ -164,9 +168,9 @@ xKillCount = {
 			["name"] = "Magma Totem",
 			["count"] = 5,
 		},
-		["Boulderfist Enforcer"] = {
-			["name"] = "Boulderfist Enforcer",
-			["count"] = 16,
+		["Mesa Buzzard"] = {
+			["name"] = "Mesa Buzzard",
+			["count"] = 1,
 		},
 		["Dermot"] = {
 			["name"] = "Dermot",
@@ -176,9 +180,9 @@ xKillCount = {
 			["name"] = "Hillsbrad Foreman",
 			["count"] = 10,
 		},
-		["Dalaran Theurgist"] = {
-			["name"] = "Dalaran Theurgist",
-			["count"] = 11,
+		["Witherbark Troll"] = {
+			["name"] = "Witherbark Troll",
+			["count"] = 1,
 		},
 		["Hulking Mountain Lion"] = {
 			["name"] = "Hulking Mountain Lion",
@@ -188,17 +192,17 @@ xKillCount = {
 			["name"] = "Gray Bear",
 			["count"] = 2,
 		},
-		["Witherbark Troll"] = {
-			["name"] = "Witherbark Troll",
-			["count"] = 1,
-		},
-		["Ricter"] = {
-			["name"] = "Ricter",
-			["count"] = 1,
+		["Dalaran Theurgist"] = {
+			["name"] = "Dalaran Theurgist",
+			["count"] = 11,
 		},
 		["Starving Mountain Lion"] = {
 			["name"] = "Starving Mountain Lion",
 			["count"] = 22,
+		},
+		["Ricter"] = {
+			["name"] = "Ricter",
+			["count"] = 1,
 		},
 		["Vicious Gray Bear"] = {
 			["name"] = "Vicious Gray Bear",
@@ -224,9 +228,9 @@ xKillCount = {
 			["name"] = "Elder Gray Bear",
 			["count"] = 15,
 		},
-		["Hillsbrad Footman"] = {
-			["name"] = "Hillsbrad Footman",
-			["count"] = 9,
+		["Highland Fleshstalker"] = {
+			["name"] = "Highland Fleshstalker",
+			["count"] = 4,
 		},
 		["Magistrate Burnside"] = {
 			["name"] = "Magistrate Burnside",

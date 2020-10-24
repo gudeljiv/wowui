@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 3486,
 	["lastSanitation"] = 3,
+	["session"] = 3495,
 	["errors"] = {
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\Frames/CharacterFrame.lua:49: attempt to index global 'frame' (a nil value)",
@@ -165,8 +165,8 @@ BugGrabberDB = {
 		}, -- [20]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasLootClassic\\AtlasLootClassic.toc",
-			["time"] = "2020/07/26 13:26:58",
 			["session"] = 1336,
+			["time"] = "2020/07/26 13:26:58",
 			["counter"] = 2,
 		}, -- [21]
 		{
@@ -546,8 +546,8 @@ BugGrabberDB = {
 		}, -- [68]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AdvancedTradeSkillWindow\\atsw_abstraction.lua",
-			["session"] = 1423,
 			["time"] = "2020/07/27 20:37:46",
+			["session"] = 1423,
 			["counter"] = 4,
 		}, -- [69]
 		{
@@ -805,8 +805,8 @@ BugGrabberDB = {
 		}, -- [101]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Inspect-Inspect.lua",
-			["session"] = 1605,
 			["time"] = "2020/08/02 10:06:15",
+			["session"] = 1605,
 			["counter"] = 3,
 		}, -- [102]
 		{
@@ -946,8 +946,8 @@ BugGrabberDB = {
 		}, -- [119]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Bags.lua",
-			["time"] = "2020/08/02 20:13:03",
 			["session"] = 1654,
+			["time"] = "2020/08/02 20:13:03",
 			["counter"] = 3,
 		}, -- [120]
 		{
@@ -1420,8 +1420,8 @@ BugGrabberDB = {
 		}, -- [179]
 		{
 			["message"] = "Error loading Interface\\AddOns\\xVermin\\Experience.lua",
-			["time"] = "2020/08/19 21:35:15",
 			["session"] = 1943,
+			["time"] = "2020/08/19 21:35:15",
 			["counter"] = 6,
 		}, -- [180]
 		{
@@ -2360,8 +2360,8 @@ BugGrabberDB = {
 		}, -- [297]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\ClickToMove\\ClickToMove.toc",
-			["time"] = "2020/09/30 12:15:00",
 			["session"] = 2740,
+			["time"] = "2020/09/30 12:15:00",
 			["counter"] = 10,
 		}, -- [298]
 		{
@@ -3169,14 +3169,14 @@ BugGrabberDB = {
 		}, -- [399]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Examiner\\Examiner.toc",
-			["session"] = 3191,
 			["time"] = "2020/10/14 21:40:43",
+			["session"] = 3191,
 			["counter"] = 2,
 		}, -- [400]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\NovaInstanceTracker\\NovaInstanceTracker.toc",
-			["session"] = 3191,
 			["time"] = "2020/10/14 21:40:43",
+			["session"] = 3191,
 			["counter"] = 2,
 		}, -- [401]
 		{
@@ -3562,8 +3562,8 @@ BugGrabberDB = {
 		}, -- [449]
 		{
 			["message"] = "(null)",
-			["session"] = 3342,
 			["time"] = "2020/07/24 16:00:06",
+			["session"] = 3342,
 			["counter"] = 193,
 		}, -- [450]
 		{
@@ -3671,8 +3671,8 @@ BugGrabberDB = {
 		}, -- [463]
 		{
 			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster_AppHelper\\AppData.lua",
-			["time"] = "2020/08/13 21:31:07",
 			["session"] = 3397,
+			["time"] = "2020/08/13 21:31:07",
 			["counter"] = 12,
 		}, -- [464]
 		{
@@ -3762,8 +3762,8 @@ BugGrabberDB = {
 		}, -- [475]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\KillTrack\\KillTrack.toc",
-			["time"] = "2020/10/22 09:09:38",
 			["session"] = 3440,
+			["time"] = "2020/10/22 09:09:38",
 			["counter"] = 2,
 		}, -- [476]
 		{
@@ -3876,5 +3876,21 @@ BugGrabberDB = {
 			["session"] = 3486,
 			["counter"] = 5,
 		}, -- [490]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'TradeSkillMaster' tried to call the protected function 'TSM_UI_ELEMENT:ApplicationFrame:14150b:Hide()'.",
+			["time"] = "2020/10/24 18:45:06",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Hide'\n...AddOns\\TradeSkillMaster\\Core\\UI\\Elements\\Element.lua:129: in function <...AddOns\\TradeSkillMaster\\Core\\UI\\Elements\\Element.lua:128>\n...radeSkillMaster\\External\\LibTSMClass\\LibTSMClass-1.lua:208: in function `Hide'\n...ddOns\\TradeSkillMaster\\Core\\UI\\DestroyingUI\\Core.lua:318: in function <...ddOns\\TradeSkillMaster\\Core\\UI\\DestroyingUI\\Core.lua:316>\n(tail call): ?\n(tail call): ?\n(tail call): ?\n(tail call): ?\n...\\TradeSkillMaster\\LibTSM\\Util\\FSMClasses\\Machine.lua:178: in function <...\\TradeSkillMaster\\LibTSM\\Util\\FSMClasses\\Machine.lua:160>\n(tail call): ?\n...\\TradeSkillMaster\\LibTSM\\Util\\FSMClasses\\Machine.lua:138: in function <...\\TradeSkillMaster\\LibTSM\\Util\\FSMClasses\\Machine.lua:114>\n(tail call): ?\n...ddOns\\TradeSkillMaster\\Core\\UI\\DestroyingUI\\Core.lua:269: in function `?'\n...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:86: in function `ScriptHandlerCommon'\n...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:37: in function <...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:36>",
+			["session"] = 3487,
+			["counter"] = 1,
+		}, -- [491]
+		{
+			["message"] = "...AddOns\\TradeSkillMaster\\Core\\UI\\Elements\\Element.lua:381: assertion failed!",
+			["time"] = "2020/10/24 18:45:26",
+			["locals"] = "(*temporary) = nil\n",
+			["stack"] = "[C]: in function `assert'\n...AddOns\\TradeSkillMaster\\Core\\UI\\Elements\\Element.lua:381: in function <...AddOns\\TradeSkillMaster\\Core\\UI\\Elements\\Element.lua:380>\n...radeSkillMaster\\External\\LibTSMClass\\LibTSMClass-1.lua:208: in function `Draw'\n...ce\\AddOns\\TradeSkillMaster\\Core\\UI\\Elements\\Text.lua:155: in function <...ce\\AddOns\\TradeSkillMaster\\Core\\UI\\Elements\\Text.lua:154>\n...radeSkillMaster\\External\\LibTSMClass\\LibTSMClass-1.lua:208: in function `Draw'\n...s\\TradeSkillMaster\\Core\\UI\\Elements\\ActionButton.lua:259: in function <...s\\TradeSkillMaster\\Core\\UI\\Elements\\ActionButton.lua:235>\n...radeSkillMaster\\External\\LibTSMClass\\LibTSMClass-1.lua:208: in function `Draw'\n...s\\TradeSkillMaster\\Core\\UI\\Elements\\ActionButton.lua:364: in function `?'\n...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:86: in function `ScriptHandlerCommon'\n...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:37: in function <...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:36>",
+			["session"] = 3487,
+			["counter"] = 4,
+		}, -- [492]
 	},
 }

@@ -396,7 +396,7 @@ end
 
 function Stack()
 	for _, src in ipairs(model) do
-		if src.item and src.count < itemStacks[src.item] and src.item ~= src.targetItem then
+		if itemStacks and src.item and src.count < itemStacks[src.item] and src.item ~= src.targetItem then
 			for _, dst in ipairs(model) do
 				if dst ~= src and dst.item and dst.item == src.item and dst.count < itemStacks[dst.item] and dst.item ~= dst.targetItem then
 					Move(src, dst)

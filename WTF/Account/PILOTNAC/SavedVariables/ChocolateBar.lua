@@ -44,26 +44,7 @@ ChocolateBarDB = {
 	["addonVersion"] = "@project-version@",
 	["profiles"] = {
 		["Default"] = {
-			["barSettings"] = {
-				["ChocolateBar1"] = {
-					["barPoint"] = "TOPRIGHT",
-					["align"] = "custom",
-					["width"] = 147.000030517578,
-					["autohide"] = false,
-					["barOffy"] = -207.589706420898,
-					["hideBarInCombat"] = false,
-					["barOffx"] = -31.9219512939453,
-				},
-				["ChocolateBar2"] = {
-					["barOffy"] = -256.666748046875,
-					["barPoint"] = "TOPRIGHT",
-					["barName"] = "ChocolateBar2",
-					["align"] = "custom",
-					["barOffx"] = -88.3325424194336,
-					["index"] = 1,
-					["width"] = 147,
-				},
-			},
+			["locked"] = false,
 			["background"] = {
 				["tile"] = true,
 				["color"] = {
@@ -74,9 +55,11 @@ ChocolateBarDB = {
 				},
 				["textureName"] = "None",
 			},
+			["forceColor"] = false,
+			["labelColor"] = {
+				["g"] = 0.819607843137255,
+			},
 			["moveFrames"] = false,
-			["locked"] = false,
-			["fixedStrata"] = true,
 			["objSettings"] = {
 				["RangeDisplay"] = {
 					["enabled"] = false,
@@ -322,16 +305,16 @@ ChocolateBarDB = {
 					["showIcon"] = false,
 					["customLabel"] = "TSM",
 				},
-				["TestNoText"] = {
-					["enabled"] = false,
-					["index"] = 4,
-					["barName"] = "ChocolateBar1",
-				},
 				["Leatrix_Maps"] = {
 					["enabled"] = false,
 					["showText"] = false,
 					["barName"] = "ChocolateBar1",
 					["align"] = "right",
+				},
+				["TestNoText"] = {
+					["enabled"] = false,
+					["index"] = 4,
+					["barName"] = "ChocolateBar1",
 				},
 				["NWB"] = {
 					["index"] = 3,
@@ -370,19 +353,36 @@ ChocolateBarDB = {
 					["align"] = "right",
 				},
 			},
-			["fontName"] = "Friz Quadrata TT",
 			["desaturated"] = false,
-			["forceColor"] = false,
 			["moduleOptions"] = {
 				["MoreChocolate"] = {
 				},
 			},
+			["fontPath"] = "Fonts\\FRIZQT__.TTF",
+			["fixedStrata"] = true,
 			["gap"] = 0,
 			["textOffset"] = 2,
 			["height"] = 20,
-			["fontPath"] = "Fonts\\FRIZQT__.TTF",
-			["labelColor"] = {
-				["g"] = 0.819607843137255,
+			["fontName"] = "Friz Quadrata TT",
+			["barSettings"] = {
+				["ChocolateBar1"] = {
+					["barPoint"] = "TOPRIGHT",
+					["align"] = "custom",
+					["width"] = 147.000030517578,
+					["autohide"] = false,
+					["barOffy"] = -207.589706420898,
+					["hideBarInCombat"] = false,
+					["barOffx"] = -31.9219512939453,
+				},
+				["ChocolateBar2"] = {
+					["barOffy"] = -256.666748046875,
+					["barPoint"] = "TOPRIGHT",
+					["barName"] = "ChocolateBar2",
+					["align"] = "custom",
+					["barOffx"] = -88.3325424194336,
+					["index"] = 1,
+					["width"] = 147,
+				},
 			},
 			["textColor"] = {
 				["a"] = 1,
@@ -419,7 +419,7 @@ CB_PlayedTime = {
 		["total"] = 149513,
 	},
 	["Konac-"] = {
-		["total"] = 6176738,
+		["total"] = 6182314,
 	},
 	["Dotwise-"] = {
 		["total"] = 3924,
@@ -427,20 +427,20 @@ CB_PlayedTime = {
 	["Judawise-"] = {
 		["total"] = 437,
 	},
-	["Mxym-"] = {
-		["total"] = 4765,
-	},
-	["Dmitar-"] = {
-		["total"] = 55,
-	},
 	["Mohikanac-"] = {
 		["total"] = 167544,
+	},
+	["Junac-"] = {
+		["total"] = 2534,
+	},
+	["Mxym-"] = {
+		["total"] = 4765,
 	},
 	["Klhjakhsgdjh-"] = {
 		["total"] = 53,
 	},
-	["Verminz-"] = {
-		["total"] = 311368,
+	["Mxzq-"] = {
+		["total"] = 248345,
 	},
 	["Stranac-"] = {
 		["total"] = 73,
@@ -451,14 +451,14 @@ CB_PlayedTime = {
 	["Mxyzptlk-"] = {
 		["total"] = 8367,
 	},
-	["Kamenac-"] = {
-		["total"] = 1558123,
-	},
-	["Mxzq-"] = {
-		["total"] = 248345,
-	},
 	["Paydo-"] = {
 		["total"] = 18945,
+	},
+	["Verminz-"] = {
+		["total"] = 311368,
+	},
+	["Kamenac-"] = {
+		["total"] = 1558123,
 	},
 	["Kosturko-"] = {
 		["total"] = 1457,
@@ -466,8 +466,8 @@ CB_PlayedTime = {
 	["Ozrencic-"] = {
 		["total"] = 853,
 	},
-	["Junac-"] = {
-		["total"] = 2534,
+	["Dmitar-"] = {
+		["total"] = 55,
 	},
 	["Grgur-"] = {
 		["total"] = 2,

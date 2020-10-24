@@ -12,7 +12,7 @@ Anchor: LEFT
 X: 444
 Y: 289
 W: 270
-H: 181
+H: 157
 Frame: EavesDropFrame
 FrameLevel: 1
 Anchor: RIGHT

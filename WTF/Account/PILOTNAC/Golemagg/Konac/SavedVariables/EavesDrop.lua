@@ -181,8 +181,8 @@ EavesDropStatsDB = {
 					},
 					["Touch of Weakness"] = {
 						[-2] = {
-							["time"] = "|cffffffff09/25/20 09:24:39|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffTouch of Weakness|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4468-0-4-2053-00016E43D2:Haggard Refugee|hHaggard Refugee|h |cffffffff72|r |cffffffffShadow|r. ",
-							["amount"] = 72,
+							["time"] = "|cffffffff10/24/20 07:44:58|r\n|Hunit:Player-4465-00C4D96C:Konac|hYour|h |Hspell:0:0:SPELL_DAMAGE|h|cffffffffTouch of Weakness|r|h |Haction:SPELL_DAMAGE|hhit|h |Hunit:Creature-0-4469-0-8-2738-000094423A:Stromgarde Cavalryman|hStromgarde Cavalryman|h |cffffffff79|r |cffffffffShadow|r. ",
+							["amount"] = 79,
 						},
 						[2] = {
 						},
