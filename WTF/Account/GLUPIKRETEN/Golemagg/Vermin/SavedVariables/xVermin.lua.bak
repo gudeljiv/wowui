@@ -1,120 +1,100 @@
 
 xKillCount = {
 	["show"] = true,
-	["killLog"] = {
-		["Withervine Creeper"] = {
-			["name"] = "Withervine Creeper",
-			["count"] = 2,
-		},
-		["Saltstone Gazer"] = {
-			["name"] = "Saltstone Gazer",
-			["count"] = 6,
-		},
-		["Bloodfen Raptor"] = {
-			["name"] = "Bloodfen Raptor",
-			["count"] = 6,
-		},
-		["Sparkleshell Tortoise"] = {
-			["name"] = "Sparkleshell Tortoise",
-			["count"] = 5,
-		},
-		["Crag Stalker"] = {
-			["name"] = "Crag Stalker",
-			["count"] = 1,
-		},
-		["Thundering Boulderkin"] = {
-			["name"] = "Thundering Boulderkin",
-			["count"] = 1,
-		},
-		["Scorpid Reaver"] = {
-			["name"] = "Scorpid Reaver",
-			["count"] = 18,
-		},
-		["Mirefin Puddlejumper"] = {
-			["name"] = "Mirefin Puddlejumper",
-			["count"] = 1,
-		},
-		["Scorpid Terror"] = {
-			["name"] = "Scorpid Terror",
-			["count"] = 3,
-		},
-		["Silithid Hive Drone"] = {
-			["name"] = "Silithid Hive Drone",
-			["count"] = 1,
-		},
-		["Mirefin Murloc"] = {
-			["name"] = "Mirefin Murloc",
-			["count"] = 4,
-		},
-		["Thunderhawk Cloudscraper"] = {
-			["name"] = "Thunderhawk Cloudscraper",
-			["count"] = 1,
-		},
-		["Salt Flats Scavenger"] = {
-			["name"] = "Salt Flats Scavenger",
-			["count"] = 9,
-		},
-		["Salt Flats Vulture"] = {
-			["name"] = "Salt Flats Vulture",
-			["count"] = 2,
-		},
-		["Swirling Vortex"] = {
-			["name"] = "Swirling Vortex",
-			["count"] = 1,
-		},
-		["Bloodfen Screecher"] = {
-			["name"] = "Bloodfen Screecher",
-			["count"] = 3,
-		},
-		["Sparkleshell Snapper"] = {
-			["name"] = "Sparkleshell Snapper",
-			["count"] = 15,
-		},
-		["Darkfang Spider"] = {
-			["name"] = "Darkfang Spider",
-			["count"] = 4,
-		},
-		["Drywallow Vicejaw"] = {
-			["name"] = "Drywallow Vicejaw",
-			["count"] = 6,
-		},
-		["Darkfang Lurker"] = {
-			["name"] = "Darkfang Lurker",
-			["count"] = 3,
-		},
-		["Drywallow Crocolisk"] = {
-			["name"] = "Drywallow Crocolisk",
-			["count"] = 3,
-		},
-		["Silithid Searcher"] = {
-			["name"] = "Silithid Searcher",
-			["count"] = 3,
-		},
-		["Theramore Infiltrator"] = {
-			["name"] = "Theramore Infiltrator",
-			["count"] = 9,
-		},
-		["Saltstone Basilisk"] = {
-			["name"] = "Saltstone Basilisk",
-			["count"] = 13,
-		},
-		["Thunderhead"] = {
-			["name"] = "Thunderhead",
-			["count"] = 1,
-		},
-		["Saltstone Crystalhide"] = {
-			["name"] = "Saltstone Crystalhide",
-			["count"] = 15,
-		},
-	},
-	["experience"] = {
-		["totaltotal"] = 42934,
-		["pulltotal"] = 0,
-	},
 	["position"] = {
-		["y"] = -223.999984741211,
-		["x"] = 405,
+		["y"] = -126.999984741211,
+		["x"] = 378.000030517578,
 		["to"] = "TOPLEFT",
 		["from"] = "TOPLEFT",
+	},
+	["experience"] = {
+		["pulltotal"] = 638,
+		["totaltotal"] = 25798,
+	},
+	["killLog"] = {
+		["Lashtail Raptor"] = {
+			["name"] = "Lashtail Raptor",
+			["count"] = 9,
+		},
+		["Healing Ward"] = {
+			["name"] = "Healing Ward",
+			["count"] = 3,
+		},
+		["Bloodscalp Warrior"] = {
+			["name"] = "Bloodscalp Warrior",
+			["count"] = 1,
+		},
+		["Stranglethorn Raptor"] = {
+			["name"] = "Stranglethorn Raptor",
+			["count"] = 12,
+		},
+		["Stranglethorn Tiger"] = {
+			["name"] = "Stranglethorn Tiger",
+			["count"] = 1,
+		},
+		["Young Stranglethorn Raptor"] = {
+			["name"] = "Young Stranglethorn Raptor",
+			["count"] = 1,
+		},
+		["Bloodscalp Hunter"] = {
+			["name"] = "Bloodscalp Hunter",
+			["count"] = 11,
+		},
+		["Crystal Spine Basilisk"] = {
+			["name"] = "Crystal Spine Basilisk",
+			["count"] = 3,
+		},
+		["Panther"] = {
+			["name"] = "Panther",
+			["count"] = 2,
+		},
+		["Bloodscalp Mystic"] = {
+			["name"] = "Bloodscalp Mystic",
+			["count"] = 11,
+		},
+		["Bloodscalp Scavenger"] = {
+			["name"] = "Bloodscalp Scavenger",
+			["count"] = 7,
+		},
+		["Bloodscalp Witch Doctor"] = {
+			["name"] = "Bloodscalp Witch Doctor",
+			["count"] = 5,
+		},
+		["Bloodscalp Headhunter"] = {
+			["name"] = "Bloodscalp Headhunter",
+			["count"] = 6,
+		},
+		["Bloodscalp Scout"] = {
+			["name"] = "Bloodscalp Scout",
+			["count"] = 16,
+		},
+		["Young Lashtail Raptor"] = {
+			["name"] = "Young Lashtail Raptor",
+			["count"] = 2,
+		},
+		["Bloodscalp Axe Thrower"] = {
+			["name"] = "Bloodscalp Axe Thrower",
+			["count"] = 2,
+		},
+		["Bloodscalp Tiger"] = {
+			["name"] = "Bloodscalp Tiger",
+			["count"] = 4,
+		},
+		["Bloodscalp Berserker"] = {
+			["name"] = "Bloodscalp Berserker",
+			["count"] = 8,
+		},
+		["Bloodscalp Beastmaster"] = {
+			["name"] = "Bloodscalp Beastmaster",
+			["count"] = 4,
+		},
+		["Bloodscalp Shaman"] = {
+			["name"] = "Bloodscalp Shaman",
+			["count"] = 3,
+		},
+		["Earthgrab Totem"] = {
+			["name"] = "Earthgrab Totem",
+			["count"] = 2,
+		},
 	},
 }

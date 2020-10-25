@@ -1,20 +1,10 @@
 
 xKillCount = {
 	["show"] = true,
-	["position"] = {
-		["y"] = -126.999984741211,
-		["x"] = 378.000030517578,
-		["to"] = "TOPLEFT",
-		["from"] = "TOPLEFT",
-	},
-	["experience"] = {
-		["pulltotal"] = 638,
-		["totaltotal"] = 25798,
-	},
 	["killLog"] = {
 		["Lashtail Raptor"] = {
 			["name"] = "Lashtail Raptor",
-			["count"] = 9,
+			["count"] = 15,
 		},
 		["Healing Ward"] = {
 			["name"] = "Healing Ward",
@@ -40,61 +30,71 @@ xKillCount = {
 			["name"] = "Bloodscalp Hunter",
 			["count"] = 11,
 		},
-		["Crystal Spine Basilisk"] = {
-			["name"] = "Crystal Spine Basilisk",
-			["count"] = 3,
+		["Bloodscalp Mystic"] = {
+			["name"] = "Bloodscalp Mystic",
+			["count"] = 11,
 		},
 		["Panther"] = {
 			["name"] = "Panther",
 			["count"] = 2,
 		},
-		["Bloodscalp Mystic"] = {
-			["name"] = "Bloodscalp Mystic",
-			["count"] = 11,
+		["Bloodscalp Shaman"] = {
+			["name"] = "Bloodscalp Shaman",
+			["count"] = 5,
 		},
 		["Bloodscalp Scavenger"] = {
 			["name"] = "Bloodscalp Scavenger",
 			["count"] = 7,
 		},
-		["Bloodscalp Witch Doctor"] = {
-			["name"] = "Bloodscalp Witch Doctor",
-			["count"] = 5,
+		["Bloodscalp Beastmaster"] = {
+			["name"] = "Bloodscalp Beastmaster",
+			["count"] = 4,
 		},
 		["Bloodscalp Headhunter"] = {
 			["name"] = "Bloodscalp Headhunter",
 			["count"] = 6,
 		},
-		["Bloodscalp Scout"] = {
-			["name"] = "Bloodscalp Scout",
-			["count"] = 16,
-		},
-		["Young Lashtail Raptor"] = {
-			["name"] = "Young Lashtail Raptor",
-			["count"] = 2,
-		},
-		["Bloodscalp Axe Thrower"] = {
-			["name"] = "Bloodscalp Axe Thrower",
-			["count"] = 2,
+		["Bloodscalp Berserker"] = {
+			["name"] = "Bloodscalp Berserker",
+			["count"] = 8,
 		},
 		["Bloodscalp Tiger"] = {
 			["name"] = "Bloodscalp Tiger",
 			["count"] = 4,
 		},
-		["Bloodscalp Berserker"] = {
-			["name"] = "Bloodscalp Berserker",
-			["count"] = 8,
-		},
-		["Bloodscalp Beastmaster"] = {
-			["name"] = "Bloodscalp Beastmaster",
-			["count"] = 4,
-		},
-		["Bloodscalp Shaman"] = {
-			["name"] = "Bloodscalp Shaman",
+		["Bloodscalp Axe Thrower"] = {
+			["name"] = "Bloodscalp Axe Thrower",
 			["count"] = 3,
+		},
+		["Young Lashtail Raptor"] = {
+			["name"] = "Young Lashtail Raptor",
+			["count"] = 3,
+		},
+		["Crystal Spine Basilisk"] = {
+			["name"] = "Crystal Spine Basilisk",
+			["count"] = 3,
+		},
+		["Bloodscalp Scout"] = {
+			["name"] = "Bloodscalp Scout",
+			["count"] = 16,
+		},
+		["Bloodscalp Witch Doctor"] = {
+			["name"] = "Bloodscalp Witch Doctor",
+			["count"] = 5,
 		},
 		["Earthgrab Totem"] = {
 			["name"] = "Earthgrab Totem",
 			["count"] = 2,
 		},
+	},
+	["experience"] = {
+		["totaltotal"] = 38213,
+		["pulltotal"] = 9986,
+	},
+	["position"] = {
+		["y"] = -126.999984741211,
+		["x"] = 378.000030517578,
+		["to"] = "TOPLEFT",
+		["from"] = "TOPLEFT",
 	},
 }
