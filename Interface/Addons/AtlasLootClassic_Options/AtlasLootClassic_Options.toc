@@ -1,36 +1,34 @@
-﻿## Interface: 11302
+﻿## Interface: 11305
 ## Author: Lag
-## Version: v1.1.9-beta
+## Version: v1.5.6
 ## Dependencies: AtlasLootClassic
 ## LoadOnDemand: 1
 
 ## Title: AtlasLoot Classic |cFF22B14C[Options]|r
 ## Title-deDE: AtlasLootClassic |cFF22B14C[Optionen]|r
-## Title-esES: AtlasLoot Classic |cFF22B14C[Options]|r
-## Title-esMX: AtlasLoot Classic |cFF22B14C[Options]|r
+## Title-esES: AtlasLoot Classic |cFF22B14C[Opciones]|r
+## Title-esMX: AtlasLoot Classic |cFF22B14C[Opciones]|r
 ## Title-frFR: AtlasLoot Classic |cFF22B14C[Options]|r
 ## Title-itIT: AtlasLoot Classic |cFF22B14C[Options]|r
-## Title-koKR: AtlasLoot Classic |cFF22B14C[Options]|r
-## Title-ptBR: AtlasLoot Classic |cFF22B14C[Options]|r
+## Title-koKR: AtlasLoot 클래식 |cFF22B14C[옵션]|r
+## Title-ptBR: AtlasLoot Classic |cFF22B14C[Opções]|r
 ## Title-ruRU: AtlasLoot Classic |cFF22B14C[Настройки]|r
-## Title-zhCN: AtlasLoot Classic |cFF22B14C[Options]|r
-## Title-zhTW: AtlasLoot Classic |cFF22B14C[Options]|r
+## Title-zhCN: AtlasLoot经典版 |cFF22B14C[选项]|r
+## Title-zhTW: 副本戰利品查詢經典版 |cFF22B14C[設定選項]|r
 ## Notes: AtlasLoot options module
 ## Notes-deDE: AtlasLoot Optionen
-## Notes-esES: AtlasLoot options module
-## Notes-esMX: AtlasLoot options module
-## Notes-frFR: AtlasLoot options module
+## Notes-esES: AtlasLoot módulo de opciones
+## Notes-esMX: AtlasLoot módulo de opciones
+## Notes-frFR: Module des options
 ## Notes-itIT: AtlasLoot options module
-## Notes-koKR: AtlasLoot options module
-## Notes-ptBR: AtlasLoot options module
+## Notes-koKR: AtlasLoot 설정 모듈
+## Notes-ptBR: Módulo de opções de AtlasLoot
 ## Notes-ruRU: Настройки модулей AtlasLoot
-## Notes-zhCN: AtlasLoo t选项模块
-## Notes-zhTW: AtlasLoot options module
+## Notes-zhCN: AtlasLoot t选项模块
+## Notes-zhTW: 副本戰利品查詢的選項設定。
 
 ## X-Category: Map
 ## X-License: GPL v2
-
-## X-AtlasLoot-LootModule: 0
 
 embeds.xml
 

@@ -12,7 +12,7 @@ L:SetGeneralLocalization{
 	name 		= "가무라"
 }
 -----------------------------
---  Lady Serevess  --
+--  Lady Sarevess  --
 -----------------------------
 L = DBM:GetModLocalization("LadySerevess")
 
@@ -277,6 +277,64 @@ L:SetGeneralLocalization{
 -------------------------
 --  Upper Blackrock Spire-229J/229M (4C)  --
 -----------------------------
+--  Pyroguard Emberseer  --
+-----------------------------
+L = DBM:GetModLocalization("PyroguardEmberseer")
+
+L:SetGeneralLocalization{
+	name 		= "불의수호자 엠버시어"
+}
+L:SetMiscLocalization{
+	Pull		= "%s|1이;가; 힘을 되찾기 시작합니다!"
+}
+-----------------------------
+--  Solakar Flamewreath  --
+-----------------------------
+L = DBM:GetModLocalization("SolakarFlamewreath")
+
+L:SetGeneralLocalization{
+	name 		= "화염고리 솔라카르"
+}
+-----------------------------
+--  Goraluk Anvilcrack  --
+-----------------------------
+L = DBM:GetModLocalization("GoralukAnvilcrack")
+
+L:SetGeneralLocalization{
+	name 		= "고랄루크 앤빌크랙"
+}
+-----------------------------
+--  Jed Runewatcher  --
+-----------------------------
+L = DBM:GetModLocalization("JedRunewatcher")
+
+L:SetGeneralLocalization{
+	name 		= "제드 룬와처"
+}
+-----------------------------
+--  Warchief Rend Blackhand  --
+-----------------------------
+L = DBM:GetModLocalization("WarchiefRendBlackhand")
+
+L:SetGeneralLocalization{
+	name 		= "대족장 렌드 블랙핸드"
+}
+-----------------------------
+--  The Beast  --
+-----------------------------
+L = DBM:GetModLocalization("TheBeast")
+
+L:SetGeneralLocalization{
+	name 		= "괴수"
+}
+-----------------------------
+--  General Drakkisath  --
+-----------------------------
+L = DBM:GetModLocalization("GeneralDrakkisath")
+
+L:SetGeneralLocalization{
+	name 		= "사령관 드라키사스"
+}
 
 -------------------------
 --  Deadmines (3L/5C)  --
@@ -396,7 +454,7 @@ L:SetGeneralLocalization{
 	name 		= "일리아나 레이븐오크"
 }
 -----------------------------
---  Magister Kelendris  --
+--  Magister Kalendris  --
 -----------------------------
 L = DBM:GetModLocalization(408)
 
@@ -640,7 +698,7 @@ L:SetGeneralLocalization{
 }
 
 -----------------------------
---  Mordress Fire Eye  --
+--  Mordresh Fire Eye  --
 -----------------------------
 L = DBM:GetModLocalization("MordreshFireEye")
 
@@ -676,7 +734,7 @@ L:SetGeneralLocalization{
 }
 
 -----------------------------
---  PlaguemawtheRotting  --
+--  Plaguemaw the Rotting  --
 -----------------------------
 L = DBM:GetModLocalization("PlaguemawtheRotting")
 
@@ -826,6 +884,121 @@ L:SetGeneralLocalization{
 -------------------------
 --  Scholomance 289M (13C)  --
 -----------------------------
+--  Kirtonos the Herald  --
+-----------------------------
+L = DBM:GetModLocalization("KirtonostheHerald")
+
+L:SetGeneralLocalization{
+	name 		= "사자 키르토노스"
+}
+
+-----------------------------
+--  Jandice Barov  --
+-----------------------------
+L = DBM:GetModLocalization("JandiceBarov")
+
+L:SetGeneralLocalization{
+	name 		= "잔다이스 바로브"
+}
+
+-----------------------------
+--  Rattlegore  --
+-----------------------------
+L = DBM:GetModLocalization("Rattlegore")
+
+L:SetGeneralLocalization{
+	name 		= "들창어금니"
+}
+
+-----------------------------
+--  Marduk Blackpool  --
+-----------------------------
+L = DBM:GetModLocalization("MardukBlackpool")
+
+L:SetGeneralLocalization{
+	name 		= "마르두크 블랙풀"
+}
+
+-----------------------------
+--  Vectus  --
+-----------------------------
+L = DBM:GetModLocalization("Vectus")
+
+L:SetGeneralLocalization{
+	name 		= "벡투스"
+}
+
+-----------------------------
+--  Ras Frostwhisper  --
+-----------------------------
+L = DBM:GetModLocalization("RasFrostwhisper")
+
+L:SetGeneralLocalization{
+	name 		= "라스 프로스트위스퍼"
+}
+
+-----------------------------
+--  Instructor Malicia  --
+-----------------------------
+L = DBM:GetModLocalization("InstructorMalicia")
+
+L:SetGeneralLocalization{
+	name 		= "조교 말리시아"
+}
+
+-----------------------------
+--  Doctor Theolen Krastinov  --
+-----------------------------
+L = DBM:GetModLocalization("DoctorTheolenKrastinov")
+
+L:SetGeneralLocalization{
+	name 		= "학자 테올렌 크라스티노브"
+}
+
+-----------------------------
+--  Lorekeeper Polkelt  --
+-----------------------------
+L = DBM:GetModLocalization("LorekeeperPolkelt")
+
+L:SetGeneralLocalization{
+	name 		= "현자 폴켈트"
+}
+
+-----------------------------
+--  The Ravenian  --
+-----------------------------
+L = DBM:GetModLocalization("TheRavenian")
+
+L:SetGeneralLocalization{
+	name 		= "라베니안"
+}
+
+-----------------------------
+--  Lord Alexei Barov  --
+-----------------------------
+L = DBM:GetModLocalization("LordAlexeiBarov")
+
+L:SetGeneralLocalization{
+	name 		= "군주 알렉세이 바로브"
+}
+
+-----------------------------
+--  Lady Illucia Barov  --
+-----------------------------
+L = DBM:GetModLocalization("LadyIlluciaBarov")
+
+L:SetGeneralLocalization{
+	name 		= "여군주 일루시아 바로브"
+}
+
+-----------------------------
+--  Darkmaster Gandling  --
+-----------------------------
+L = DBM:GetModLocalization("DarkmasterGandling")
+
+L:SetGeneralLocalization{
+	name 		= "암흑스승 간들링"
+}
 
 -------------------------
 --  Shadowfang Keep 33M (14C)  --
@@ -911,7 +1084,7 @@ L:SetGeneralLocalization{
 }
 
 -------------------------
---  Stormwind Stockaid 34M (10L/15C)  --
+--  Stormwind Stockade 34M (10L/15C)  --
 -----------------------------
 --  Targorr the Dread  --
 -----------------------------
@@ -1036,7 +1209,7 @@ L:SetGeneralLocalization{
 }
 
 -----------------------------
---  Narub'enkan  --
+--  Nerub'enkan  --
 -----------------------------
 L = DBM:GetModLocalization(452)
 
@@ -1069,6 +1242,12 @@ L = DBM:GetModLocalization(455)
 
 L:SetGeneralLocalization{
 	name 		= "먹보 람스타인"
+}
+L:SetTimerLocalization{
+	TimerGuards	= "보초병 등장"
+}
+L:SetOptionLocalization{
+	TimerGuards	= "보스를 쓰러트리면 검은호위대 보초병 등장 타이머 바 표시"
 }
 
 -----------------------------
@@ -1259,7 +1438,7 @@ L:SetGeneralLocalization{
 }
 
 -----------------------------
---  Veran the Everliving  --
+--  Verdan the Everliving  --
 -----------------------------
 L = DBM:GetModLocalization(480)
 

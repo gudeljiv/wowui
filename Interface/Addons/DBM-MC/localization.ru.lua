@@ -82,6 +82,12 @@ L = DBM:GetModLocalization("Majordomo")
 L:SetGeneralLocalization{
 	name = "Мажордом Экзекутус"
 }
+L:SetTimerLocalization{
+	timerShieldCD		= "Следующий Щит"
+}
+L:SetOptionLocalization{
+	timerShieldCD		= "Показывать таймер для следующего Щита (Damage/Reflect)"
+}
 
 ----------------
 --  Ragnaros  --
@@ -114,4 +120,13 @@ L:SetOptionLocalization{
 L:SetMiscLocalization{
 	Submerge	= "ПРИДИТЕ, МОИ СЛУГИ! ЗАЩИТИТЕ СВОЕГО ХОЗЯИНА!",
 	Pull		= "Нахальные щенки! Вы сами обрекли себя на смерть! Узрите же Повелителя в гневе!"
+}
+
+-----------------
+--  MC: Trash  --
+-----------------
+L = DBM:GetModLocalization("MCTrash")
+
+L:SetGeneralLocalization{
+	name = "ОН: Треш"
 }

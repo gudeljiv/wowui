@@ -13,6 +13,7 @@ local module = {}
 -- ["ModuleName"] = moduleReference
 ---@type table<string, Module>
 local modules = {}
+QuestieLoader._modules = modules -- store reference so modules can be iterated for profiling
 
 ---@return Module @Module reference
 function QuestieLoader:CreateBlankModule()
@@ -42,3 +43,10 @@ function QuestieLoader:ImportModule(name)
     return modules[name]
   end
 end
+
+function QuestieLoader:PopulateGlobals() -- called when debugging is enabled
+  for name, module in pairs(modules) do
+    _G[name] = module
+  end
+end
+

@@ -1,7 +1,7 @@
 
 Grid2DB = {
 	["namespaces"] = {
-		["Grid2AoeHeals"] = {
+		["LibDualSpec-1.0"] = {
 		},
 		["Grid2Layout"] = {
 			["profiles"] = {
@@ -9,6 +9,14 @@ Grid2DB = {
 					["BackgroundG"] = 0.101960784313725,
 					["BackgroundTexture"] = "None",
 					["BorderB"] = 0.501960784313726,
+					["BackgroundB"] = 0.101960784313725,
+					["layouts"] = {
+						["arena"] = "By Group & Class",
+						["party"] = "By Group & Class",
+						["solo"] = "By Group & Class",
+						["raid"] = "By Group & Class",
+					},
+					["PosX"] = -248.888471232498,
 					["extraThemes"] = {
 						{
 							["BackgroundTexture"] = "None",
@@ -73,16 +81,8 @@ Grid2DB = {
 							["PosX"] = 0,
 						}, -- [2]
 					},
-					["layouts"] = {
-						["raid"] = "By Group & Class",
-						["arena"] = "By Group & Class",
-						["solo"] = "By Group & Class",
-						["party"] = "By Group & Class",
-					},
-					["BorderG"] = 0.501960784313726,
-					["BackgroundB"] = 0.101960784313725,
-					["PosX"] = -248.888471232498,
 					["Spacing"] = 1,
+					["BorderG"] = 0.501960784313726,
 					["BackgroundA"] = 0,
 					["BorderR"] = 0.501960784313726,
 					["BorderTexture"] = "None",
@@ -97,11 +97,20 @@ Grid2DB = {
 					["BackgroundTexture"] = "None",
 					["BorderB"] = 0.501960784313726,
 					["layouts"] = {
-						["party"] = "By Group & Class",
 						["raid"] = "By Group & Class",
-						["solo"] = "By Group & Class",
 						["arena"] = "By Group & Class",
+						["solo"] = "By Group & Class",
+						["party"] = "By Group & Class",
 					},
+					["BackgroundB"] = 0.101960784313725,
+					["BorderR"] = 0.501960784313726,
+					["BorderTexture"] = "None",
+					["anchor"] = "CENTER",
+					["BackgroundG"] = 0.101960784313725,
+					["minimapIcon"] = {
+						["hide"] = true,
+					},
+					["PosY"] = 79.999838360142,
 					["extraThemes"] = {
 						{
 							["BackgroundTexture"] = "None",
@@ -197,19 +206,10 @@ Grid2DB = {
 							["Spacing"] = 1,
 						}, -- [3]
 					},
-					["BorderR"] = 0.501960784313726,
-					["BorderTexture"] = "None",
-					["anchor"] = "CENTER",
-					["BackgroundG"] = 0.101960784313725,
-					["minimapIcon"] = {
-						["hide"] = true,
-					},
-					["PosY"] = 79.999838360142,
-					["BackgroundR"] = 0.101960784313725,
 					["BackgroundA"] = 0,
 					["BorderG"] = 0.501960784313726,
 					["PosX"] = -253.333301786579,
-					["BackgroundB"] = 0.101960784313725,
+					["BackgroundR"] = 0.101960784313725,
 					["Spacing"] = 1,
 				},
 				["Konac - Golemagg"] = {
@@ -221,6 +221,14 @@ Grid2DB = {
 					["BackgroundG"] = 0.101960784313725,
 					["BackgroundTexture"] = "None",
 					["BorderB"] = 0.501960784313726,
+					["BackgroundB"] = 0.101960784313725,
+					["layouts"] = {
+						["party"] = "By Group & Class",
+						["raid"] = "By Group & Class",
+						["solo"] = "By Group & Class",
+						["arena"] = "By Group & Class",
+					},
+					["Spacing"] = 1,
 					["extraThemes"] = {
 						{
 							["BackgroundTexture"] = "None",
@@ -285,16 +293,8 @@ Grid2DB = {
 							["FrameLock"] = false,
 						}, -- [2]
 					},
-					["layouts"] = {
-						["arena"] = "By Group & Class",
-						["party"] = "By Group & Class",
-						["solo"] = "By Group & Class",
-						["raid"] = "By Group & Class",
-					},
-					["PosX"] = -253.333330269654,
-					["BackgroundB"] = 0.101960784313725,
-					["Spacing"] = 1,
 					["BorderG"] = 0.501960784313726,
+					["PosX"] = -253.333330269654,
 					["BackgroundA"] = 0,
 					["BorderR"] = 0.501960784313726,
 					["BorderTexture"] = "None",
@@ -307,9 +307,11 @@ Grid2DB = {
 				},
 			},
 		},
-		["LibDualSpec-1.0"] = {
+		["Grid2AoeHeals"] = {
 		},
 		["Grid2Options"] = {
+		},
+		["Grid2RaidDebuffs"] = {
 		},
 		["Grid2Frame"] = {
 			["profiles"] = {
@@ -351,18 +353,18 @@ Grid2DB = {
 								["g"] = 1,
 								["r"] = 1,
 							},
-							["orientation"] = "VERTICAL",
 							["frameHeights"] = {
 								[10] = 40,
 								[5] = 50,
 							},
-							["mouseoverHighlight"] = false,
+							["orientation"] = "VERTICAL",
 							["frameContentColor"] = {
 								["a"] = 0,
 								["b"] = 0,
 								["g"] = 0,
 								["r"] = 0,
 							},
+							["mouseoverHighlight"] = false,
 							["frameWidth"] = 125,
 							["frameTexture"] = "Glamour2",
 						}, -- [1]
@@ -397,18 +399,18 @@ Grid2DB = {
 								["g"] = 0,
 								["b"] = 0,
 							},
-							["frameHeights"] = {
-								[5] = 45,
-								[10] = 50,
-							},
 							["frameContentColor"] = {
 								["a"] = 0,
 								["r"] = 0,
 								["g"] = 0,
 								["b"] = 0,
 							},
-							["orientation"] = "VERTICAL",
+							["frameHeights"] = {
+								[5] = 45,
+								[10] = 50,
+							},
 							["mouseoverHighlight"] = false,
+							["orientation"] = "VERTICAL",
 							["frameWidth"] = 125,
 							["frameBorderTexture"] = "None",
 						}, -- [2]
@@ -443,18 +445,18 @@ Grid2DB = {
 								["g"] = 1,
 								["b"] = 1,
 							},
-							["orientation"] = "VERTICAL",
 							["frameContentColor"] = {
 								["a"] = 0,
 								["r"] = 0,
 								["g"] = 0,
 								["b"] = 0,
 							},
+							["orientation"] = "VERTICAL",
+							["mouseoverHighlight"] = false,
 							["frameHeights"] = {
 								[25] = 20,
 								[40] = 20,
 							},
-							["mouseoverHighlight"] = false,
 							["frameWidth"] = 120,
 							["frameTexture"] = "Glamour2",
 						}, -- [3]
@@ -509,18 +511,18 @@ Grid2DB = {
 								["g"] = 1,
 								["r"] = 1,
 							},
+							["mouseoverHighlight"] = false,
 							["frameContentColor"] = {
 								["a"] = 0,
 								["b"] = 0,
 								["g"] = 0,
 								["r"] = 0,
 							},
-							["mouseoverHighlight"] = false,
+							["orientation"] = "VERTICAL",
 							["frameHeights"] = {
 								[10] = 20,
 								[5] = 25,
 							},
-							["orientation"] = "VERTICAL",
 							["frameWidth"] = 55,
 							["frameTexture"] = "Glamour2",
 						}, -- [1]
@@ -555,17 +557,17 @@ Grid2DB = {
 								["g"] = 0,
 								["b"] = 0,
 							},
-							["mouseoverHighlight"] = false,
 							["orientation"] = "VERTICAL",
+							["mouseoverHighlight"] = false,
+							["frameHeights"] = {
+								[10] = 20,
+								[5] = 25,
+							},
 							["frameContentColor"] = {
 								["a"] = 0,
 								["r"] = 0,
 								["g"] = 0,
 								["b"] = 0,
-							},
-							["frameHeights"] = {
-								[10] = 20,
-								[5] = 25,
 							},
 							["frameWidth"] = 55,
 							["frameBorderTexture"] = "None",
@@ -614,18 +616,18 @@ Grid2DB = {
 								["g"] = 1,
 								["b"] = 1,
 							},
-							["frameHeights"] = {
-								[10] = 20,
-								[5] = 25,
-							},
 							["frameContentColor"] = {
 								["a"] = 0,
 								["r"] = 0,
 								["g"] = 0,
 								["b"] = 0,
 							},
-							["orientation"] = "VERTICAL",
+							["frameHeights"] = {
+								[10] = 20,
+								[5] = 25,
+							},
 							["mouseoverHighlight"] = false,
+							["orientation"] = "VERTICAL",
 							["frameWidth"] = 55,
 							["frameBorderColor"] = {
 								["a"] = 0,
@@ -665,18 +667,18 @@ Grid2DB = {
 								["g"] = 0,
 								["r"] = 0,
 							},
+							["mouseoverHighlight"] = false,
 							["frameContentColor"] = {
 								["a"] = 0,
 								["b"] = 0,
 								["g"] = 0,
 								["r"] = 0,
 							},
-							["mouseoverHighlight"] = false,
+							["orientation"] = "VERTICAL",
 							["frameHeights"] = {
 								[10] = 20,
 								[5] = 25,
 							},
-							["orientation"] = "VERTICAL",
 							["frameWidth"] = 55,
 							["frameTexture"] = "Glamour2",
 						}, -- [2]
@@ -690,8 +692,6 @@ Grid2DB = {
 					["frameBorderDistance"] = -2,
 				},
 			},
-		},
-		["Grid2RaidDebuffs"] = {
 		},
 	},
 	["profileKeys"] = {
@@ -834,21 +834,21 @@ Grid2DB = {
 						["b"] = 0,
 					},
 					["type"] = "bar",
-					["orientation"] = "HORIZONTAL",
-					["backColor"] = {
-						["a"] = 0.389516115188599,
-						["b"] = 0,
-						["g"] = 0,
-						["r"] = 0,
-					},
 					["location"] = {
 						["y"] = 0,
 						["relPoint"] = "CENTER",
 						["point"] = "CENTER",
 						["x"] = 0,
 					},
-					["level"] = 2,
+					["backColor"] = {
+						["a"] = 0.389516115188599,
+						["b"] = 0,
+						["g"] = 0,
+						["r"] = 0,
+					},
 					["backTexture"] = "Glamour2",
+					["level"] = 2,
+					["orientation"] = "HORIZONTAL",
 					["texture"] = "Glamour2",
 				},
 				["corner-bottom-left"] = {
@@ -1146,21 +1146,21 @@ Grid2DB = {
 						["b"] = 0,
 					},
 					["type"] = "bar",
-					["backTexture"] = "Glamour2",
+					["orientation"] = "HORIZONTAL",
 					["backColor"] = {
 						["a"] = 0.389516115188599,
 						["b"] = 0,
 						["g"] = 0,
 						["r"] = 0,
 					},
-					["orientation"] = "HORIZONTAL",
-					["level"] = 2,
 					["location"] = {
 						["y"] = 0,
 						["relPoint"] = "CENTER",
 						["point"] = "CENTER",
 						["x"] = 0,
 					},
+					["level"] = 2,
+					["backTexture"] = "Glamour2",
 					["texture"] = "Glamour2",
 				},
 				["corner-bottom-left"] = {
@@ -1538,16 +1538,6 @@ Grid2DB = {
 						["b"] = 1,
 					},
 				},
-				["buff-PowerWordShield"] = {
-					["type"] = "buff",
-					["spellName"] = 10901,
-					["color1"] = {
-						["a"] = 1,
-						["r"] = 0,
-						["g"] = 1,
-						["b"] = 1,
-					},
-				},
 				["debuff-WeakenedSoul"] = {
 					["type"] = "debuff",
 					["spellName"] = 6788,
@@ -1565,6 +1555,16 @@ Grid2DB = {
 					["color1"] = {
 						["a"] = 1,
 						["r"] = 1,
+						["g"] = 1,
+						["b"] = 1,
+					},
+				},
+				["buff-PowerWordShield"] = {
+					["type"] = "buff",
+					["spellName"] = 10901,
+					["color1"] = {
+						["a"] = 1,
+						["r"] = 0,
 						["g"] = 1,
 						["b"] = 1,
 					},
@@ -1766,21 +1766,21 @@ Grid2DB = {
 				["health"] = {
 					["texture"] = "Glamour2",
 					["type"] = "bar",
-					["location"] = {
-						["y"] = 0,
-						["relPoint"] = "CENTER",
-						["point"] = "CENTER",
-						["x"] = 0,
-					},
+					["backTexture"] = "Glamour2",
 					["backColor"] = {
 						["a"] = 0.389516115188599,
 						["r"] = 0,
 						["g"] = 0,
 						["b"] = 0,
 					},
-					["backTexture"] = "Glamour2",
-					["level"] = 2,
 					["orientation"] = "HORIZONTAL",
+					["level"] = 2,
+					["location"] = {
+						["y"] = 0,
+						["relPoint"] = "CENTER",
+						["point"] = "CENTER",
+						["x"] = 0,
+					},
 					["color1"] = {
 						["a"] = 1,
 						["b"] = 0,

@@ -1,6 +1,6 @@
 ﻿if GetLocale() ~= "frFR" then return end
-if not DBM_GUI_Translations then DBM_GUI_Translations = {} end
-local L = DBM_GUI_Translations
+if not DBM_GUI_L then DBM_GUI_L = {} end
+local L = DBM_GUI_L
 
 L.MainFrame = "Deadly Boss Mods"
 
@@ -78,10 +78,6 @@ L.WarningIconLeft 			= "Afficher l'icône du côté gauche"
 L.WarningIconRight 			= "Afficher l'icône du côté droit"
 L.WarningIconChat 			= "Afficher les icônes dans la fenêtre de chat"
 L.WarningAlphabetical		= "Arranger les noms de manière alphabétique"
-L.Warn_FontType				= "Choisir une police"
-L.Warn_FontStyle			= "Contours de la police"
-L.Warn_FontShadow			= "Ombre"
-L.Warn_FontSize				= "Taille de la police: %d"
 L.Warn_Duration				= "Durée de l'alerte: %0.1f sec"
 L.None						= "Aucun"
 L.Outline					= "Simple"
@@ -104,7 +100,7 @@ L.ShowKillMessage 			= "Afficher les messages de victoire dans la fenêtre de ch
 L.ShowWipeMessage 			= "Afficher les messages de défaite dans la fenêtre de chat"
 L.ShowGuildMessages 		= "Afficher les messages engagement/victoire/défaite en guilde dans la fenêtre de chat"
 L.ShowRecoveryMessage 		= "Afficher les messages de récupération des timers dans la fenêtre de chat"
-L.WhisperMessages			= "Options des chuchotements"
+L.Area_WhisperMessages		= "Options des chuchotements"
 L.AutoRespond 				= "Répondre automatiquement aux chuchotements pendant les combats"
 L.WhisperStats 				= "Inclure les victoires/défaites dans les réponses"
 L.DisableStatusWhisper 		= "Désactiver les chuchotements de statut pour le groupe entier (requiert Chef de groupe). S'appplique seulement aux raids normaux/heroïques/mythiques et aux donjons défis/mythiques."
@@ -117,8 +113,6 @@ L.BarDBM					= "DBM (animations)"
 L.BarSimple					= "Simple (pas d'animation)"
 L.BarStartColor				= "Couleur de départ"
 L.BarEndColor 				= "Couleur de fin"
-L.Bar_Font					= "Police pour les barres"
-L.Bar_FontSize				= "Taille de cette police: %d"
 L.Bar_Height				= "Hauteur de la barre: %d"
 L.Slider_BarOffSetX 		= "Décalage en X: %d"
 L.Slider_BarOffSetY 		= "Décalage en Y: %d"
@@ -150,38 +144,25 @@ L.ExpandUpwards				= "S'étendre vers le haut"
 L.FillUpBars				= "Remplir les barres"
 L.ClickThrough				= "Désactiver toute interaction avec la souris (clic à travers)"
 L.Bar_Decimal				= "Afficher les décimales en dessous de: %d"
-L.Bar_DBMOnly				= "Les options ci-dessous ne fonctionnent qu'avec les styles de barre \"DBM\""
 L.Bar_EnlargeTime			= "Agrandir la barre en dessous de: %d"
-L.Bar_EnlargePercent		= "Agrandir la barre en dessous de(%): %0.1f%%"
 L.BarSpark					= "Eclaircissement de front"
 L.BarFlash					= "Clignotement vers la fin"
 L.BarSort					= "Arranger en fonction du temps restant"
 L.BarColorByType			= "Couleur par type"
 
 -- Tab: Spec Warn Frame
-L.Panel_SpecWarnFrame		= "Alertes spéciales"
+L.Panel_SpecWarnFrame		= "Alertes Raid spéciales"
 L.Area_SpecWarn				= "Options des alertes spéciales"
 L.SpecWarn_ClassColor		= "Utiliser des couleurs selon les classes pour les alertes spéciales"
 L.ShowSWarningsInChat 		= "Afficher les alertes spéciales dans la fenêtre de discussion"
 L.SWarnNameInNote			= "Utiliser les options SW5 si une note personnalisée contient votre nom"
-L.SpecWarn_FlashFrame		= "Faire flasher l'écran lors des alertes spéciales"
 L.SpecWarn_FlashFrameRepeat	= "Répéter %d fois (si activé)" --was missing
-L.SpecWarn_Font				= "Police de texte des alertes spéciales"
-L.SpecWarn_FontSize			= "Taille de la police: %d"
-L.SpecWarn_FontColor		= "Couleur du texte"
-L.SpecWarn_FontType			= "Choisissez la police"
 L.SpecWarn_FlashRepeat		= "Répéter Flash" --was missing
 L.SpecWarn_FlashColor		= "Couleur du flash"
 L.SpecWarn_FlashDur			= "Durée du flash: %0.1f"
 L.SpecWarn_FlashAlpha		= "Taux alpha du flash: %0.1f"
 L.SpecWarn_DemoButton		= "Aff. un exemple"
-L.SpecWarn_MoveMe			= "Définir la position"
 L.SpecWarn_ResetMe			= "Réinit. les valeurs"
-L.SpecialWarnSound			= "Son des alertes spéciales vous affectant vous ou votre rôle"
-L.SpecialWarnSound2			= "Son des alertes spéciales affectant tout le monde"
-L.SpecialWarnSound3			= "Son des alertes spéciales TRES IMPORTANTES"
-L.SpecialWarnSound4			= "Son des alertes spéciales de fuite"
-L.SpecialWarnSound5			= "Son des alertes spéciales avec des notes contenant votre nom"
 
 -- Tab: Spoken Alerts Frame
 L.Panel_SpokenAlerts		= "Alertes Vocales"
@@ -203,7 +184,6 @@ L.SpecWarn_AlwaysVoice		= "Toujours jouer toutes les alertes vocales (Outrepasse
 L.Panel_SpamFilter			= "Filtres globaux et de spam"
 L.Area_SpamFilter_Outgoing	= "Options des filtres globaux"
 L.SpamBlockNoShowAnnounce	= "Ne pas afficher d'annonces ou jouer de sons d'alerte"
-L.SpamBlockNoSpecWarn		= "Ne pas afficher d'annonces ou jouer de sons d'alerte spéciales"
 L.SpamBlockNoShowTimers		= "Ne pas afficher les timers de module (Boss Mod/CM/LFG/Respawn)"
 L.SpamBlockNoShowUTimers	= "Ne pas afficher au joueur les timers envoyés (Personnalisés/Pull/Pause)"
 L.SpamBlockNoSetIcon		= "Ne pas placer d'icônes sur les cibles"
@@ -273,7 +253,7 @@ L.ChallengeTimerRealm		= "Serveur"
 L.Area_AutoLogging			= "Options d'enregistrement auto"
 L.AutologBosses				= "Automatiquement enregistrer le combat contre un boss en utilisant le combat log de Blizzard (Il faut utiliser la commande /dbm pull avant le boss pour que ce soit compatible avec <a href=\"http://www.warcraftlogs.com\">|cff3588ffwarcraftlogs.com|r</a>)"
 L.AdvancedAutologBosses		= "Automatiquement enregistrer le combat contre un boss en utilisant Transcriptor"
-L.LogOnlyRaidBosses			= "N'enregistrer que les combats contre un boss (exclus RdR/dongeon/scenario)"
+L.LogOnlyNonTrivial			= "N'enregistrer que les combats contre un boss (exclus RdR/dongeon/scenario)"
 --
 L.Area_3rdParty				= "Options des Addons tiers"
 L.ShowBBOnCombatStart		= "Effectuer la vérification des buffs de Big Brother au début des combats"
@@ -284,7 +264,6 @@ L.AutoAcceptGuildInvite		= "Accepter les invitations venant d'un membre de la gu
 L.Area_Advanced				= "Options Avancées"
 L.FakeBW					= "Prétendre être BigWigs lors des vérifications de versions au lieu de DBM (Utile pour les guildes qui forcent l'utilisation de BigWigs)"
 L.AITimer					= "Utiliser un générateur automatique de timers pour des nouveaux combats utilisant l'IA intégrée de DBM (Utile pout engager les boss jamais vus sur la beta). Note: ceci ne fonctionnera pas correctement s'il y a plusieurs adds avec la même abilité"
-L.AutoCorrectTimer			= "Corriger automatiquement les timers trop longs (Utile pour les guildes sur le contenu haut niveau pour lequel les bossmods ne sont pas encore mis à jour)"
 
 L.Panel_Profile				= "Profils"
 L.Area_CreateProfile		= "Création de Profil"
@@ -308,4 +287,10 @@ L.SelectModProfileCopyNote	= "Copier uniquement les réglages des notes depuis"
 L.SelectModProfileDelete	= "Supprimer les réglages pour"
 
 -- Misc
+L.FontType					= "Choisir une police"
+L.FontStyle					= "Contours de la police"
+L.FontColor					= "Couleur du texte"
+L.FontShadow				= "Ombre"
+L.FontSize					= "Taille de la police: %d"
+
 L.FontHeight	= 16

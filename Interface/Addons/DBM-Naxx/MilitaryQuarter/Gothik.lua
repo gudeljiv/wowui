@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Gothik", "DBM-Naxx", 4)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20190824201836")
+mod:SetRevision("20201020205903")
 mod:SetCreatureID(16060)
 mod:SetEncounterID(1109)
 mod:SetModelID(16279)
@@ -12,6 +12,7 @@ mod:RegisterEventsInCombat(
 )
 
 --TODO, actual naxx 40 waves, right now 25 man are used
+--(source.type = "NPC" and source.firstSeen = timestamp) or (target.type = "NPC" and target.firstSeen = timestamp)
 local warnWaveNow		= mod:NewAnnounce("WarningWaveSpawned", 3, nil, false)
 local warnWaveSoon		= mod:NewAnnounce("WarningWaveSoon", 2)
 local warnRiderDown		= mod:NewAnnounce("WarningRiderDown", 4)

@@ -101,15 +101,26 @@ L:SetWarningLocalization{
 }
 L:SetTimerLocalization{
 	TimerSubmerge		= "Submerge",
-	TimerEmerge			= "Emerge"
+	TimerEmerge			= "Emerge",
+	timerCombatStart	= "~" .. DBM_CORE_L.GENERIC_TIMER_COMBAT
 }
 L:SetOptionLocalization{
 	WarnSubmerge		= "Show warning for submerge",
 	TimerSubmerge		= "Show timer for submerge",
 	WarnEmerge			= "Show warning for emerge",
-	TimerEmerge			= "Show timer for emerge"
+	TimerEmerge			= "Show timer for emerge",
+	timerCombatStart	= DBM_CORE_L.OPTION_TIMER_COMBAT
 }
 L:SetMiscLocalization{
 	Submerge	= "COME FORTH, MY SERVANTS! DEFEND YOUR MASTER!",
 	Pull		= "Impudent whelps! You've rushed headlong to your own deaths! See now, the master stirs!\r\n"
+}
+
+-----------------
+--  MC: Trash  --
+-----------------
+L = DBM:GetModLocalization("MCTrash")
+
+L:SetGeneralLocalization{
+	name = "MC: Trash"
 }

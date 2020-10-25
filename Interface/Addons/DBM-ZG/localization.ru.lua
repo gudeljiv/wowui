@@ -10,9 +10,6 @@ L = DBM:GetModLocalization("Venoxis")
 L:SetGeneralLocalization{
 	name = "Верховный жрец Веноксис"
 }
-L:SetOptionLocalization{
-	RangeFrame		= "Показывать окно дистанции"
-}
 
 -------------------
 --  Jeklik  --
@@ -42,7 +39,7 @@ L:SetGeneralLocalization{
 }
 
 L:SetWarningLocalization({
-	WarnSimulKill	= "Первый адд пал - воскрешение через ~12 сек."
+	WarnSimulKill	= "Первый адд пал - воскрешение через ~15 сек."
 })
 
 L:SetTimerLocalization({
@@ -55,9 +52,12 @@ L:SetOptionLocalization({
 })
 
 L:SetMiscLocalization({
-	PriestDied	= "%s dies.",
-	YellPhase2	= "Shirvallah, fill me with your RAGE!",
-	YellKill	= "Hakkar binds me no more!  Peace at last!"
+	PriestDied	= "%s умирает.",
+	YellPhase2	= "Ширвалла, наполни меня своим ГНЕВОМ!",
+	YellKill	= "Хаккар больше не властен надо мной! Наконец-то я обрел покой!",
+	Thekal		= "Верховный жрец Текал",
+	Zath		= "Ревнитель Зат",
+	LorKhan		= "Ревнитель Лор'Кхан"
 })
 
 -------------------
@@ -88,7 +88,8 @@ L:SetGeneralLocalization{
 }
 L:SetMiscLocalization{
 	Bloodlord 	= "Мандокир Повелитель Крови",
-	Ohgan		= "Охган"
+	Ohgan		= "Охган",
+	GazeYell	= "Я за тобой слежу"
 }
 
 -------------------
@@ -97,7 +98,7 @@ L:SetMiscLocalization{
 L = DBM:GetModLocalization("EdgeOfMadness")
 
 L:SetGeneralLocalization{
-	name = "Edge of Madness"
+	name = "Грань Безумия"
 }
 L:SetMiscLocalization{
 	Hazzarah = "Хазза'рах",

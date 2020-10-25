@@ -20,17 +20,6 @@ SRTIExternalUF = {
 		"CompactRaidFrame5", -- [5]
 		"CompactRaidFrame6", -- [6]
 	},
-	["aptechka"] = {
-		"NugRaid1UnitButton1", -- [1]
-		"NugRaid2UnitButton1", -- [2]
-		"NugRaid3UnitButton1", -- [3]
-		"NugRaid4UnitButton1", -- [4]
-		"NugRaid5UnitButton1", -- [5]
-		"NugRaid6UnitButton1", -- [6]
-		"NugRaid7UnitButton1", -- [7]
-		"NugRaid8UnitButton1", -- [8]
-		"NugRaid1UnitButton2", -- [9]
-	},
 	["grid2"] = {
 		"Grid2LayoutHeader1UnitButton1", -- [1]
 		"Grid2LayoutHeader1UnitButton2", -- [2]
@@ -42,5 +31,16 @@ SRTIExternalUF = {
 		"Grid2LayoutHeader2UnitButton3", -- [8]
 		"Grid2LayoutHeader2UnitButton4", -- [9]
 		"Grid2LayoutHeader2UnitButton5", -- [10]
+	},
+	["aptechka"] = {
+		"NugRaid1UnitButton1", -- [1]
+		"NugRaid2UnitButton1", -- [2]
+		"NugRaid3UnitButton1", -- [3]
+		"NugRaid4UnitButton1", -- [4]
+		"NugRaid5UnitButton1", -- [5]
+		"NugRaid6UnitButton1", -- [6]
+		"NugRaid7UnitButton1", -- [7]
+		"NugRaid8UnitButton1", -- [8]
+		"NugRaid1UnitButton2", -- [9]
 	},
 }

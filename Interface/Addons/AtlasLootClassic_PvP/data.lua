@@ -34,6 +34,7 @@ end
 
 local NORMAL_ITTYPE = data:AddItemTableType("Item", "Item")
 local SET_ITTYPE = data:AddItemTableType("Set", "Item")
+local ICON_ITTYPE = data:AddItemTableType("Dummy")
 
 local QUEST_EXTRA_ITTYPE = data:AddExtraItemTableType("Quest")
 local PRICE_EXTRA_ITTYPE = data:AddExtraItemTableType("Price")
@@ -79,6 +80,46 @@ local KEYS = {	-- Keys
 	},
 }
 
+local HORDE, ALLIANCE, RANK_FORMAT = "Horde", "Alliance", AL["|cff33ff99Rank:|r %s"]
+local GetRankName, GetRankIcon = AtlasLoot.Data.Requirements.GetPvPRankName, AtlasLoot.Data.Requirements.GetPvPRankIcon
+local PVP_RANKS = {	-- Keys
+	name = AL["PvP Ranks"],
+	TableType = ICON_ITTYPE,
+	ExtraList = true,
+	[NORMAL_DIFF] = {
+		{ 1, 136782, FACTION_HORDE },
+		{ 2, GetRankIcon(1), GetRankName(1, HORDE), format(RANK_FORMAT, 1) },
+		{ 3, GetRankIcon(2), GetRankName(2, HORDE), format(RANK_FORMAT, 2) },
+		{ 4, GetRankIcon(3), GetRankName(3, HORDE), format(RANK_FORMAT, 3) },
+		{ 5, GetRankIcon(4), GetRankName(4, HORDE), format(RANK_FORMAT, 4) },
+		{ 6, GetRankIcon(5), GetRankName(5, HORDE), format(RANK_FORMAT, 5) },
+		{ 7, GetRankIcon(6), GetRankName(6, HORDE), format(RANK_FORMAT, 6) },
+		{ 8, GetRankIcon(7), GetRankName(7, HORDE), format(RANK_FORMAT, 7) },
+		{ 9, GetRankIcon(8), GetRankName(8, HORDE), format(RANK_FORMAT, 8) },
+		{ 10, GetRankIcon(9), GetRankName(9, HORDE), format(RANK_FORMAT, 9) },
+		{ 11, GetRankIcon(10), GetRankName(10, HORDE), format(RANK_FORMAT, 10) },
+		{ 12, GetRankIcon(11), GetRankName(11, HORDE), format(RANK_FORMAT, 11) },
+		{ 13, GetRankIcon(12), GetRankName(12, HORDE), format(RANK_FORMAT, 12) },
+		{ 14, GetRankIcon(13), GetRankName(13, HORDE), format(RANK_FORMAT, 13) },
+		{ 15, GetRankIcon(14), GetRankName(14, HORDE), format(RANK_FORMAT, 14) },
+		{ 16, 136781, FACTION_ALLIANCE },
+		{ 17, GetRankIcon(1), GetRankName(1, ALLIANCE), format(RANK_FORMAT, 1) },
+		{ 18, GetRankIcon(2), GetRankName(2, ALLIANCE), format(RANK_FORMAT, 2) },
+		{ 19, GetRankIcon(3), GetRankName(3, ALLIANCE), format(RANK_FORMAT, 3) },
+		{ 20, GetRankIcon(4), GetRankName(4, ALLIANCE), format(RANK_FORMAT, 4) },
+		{ 21, GetRankIcon(5), GetRankName(5, ALLIANCE), format(RANK_FORMAT, 5) },
+		{ 22, GetRankIcon(6), GetRankName(6, ALLIANCE), format(RANK_FORMAT, 6) },
+		{ 23, GetRankIcon(7), GetRankName(7, ALLIANCE), format(RANK_FORMAT, 7) },
+		{ 24, GetRankIcon(8), GetRankName(8, ALLIANCE), format(RANK_FORMAT, 8) },
+		{ 25, GetRankIcon(9), GetRankName(9, ALLIANCE), format(RANK_FORMAT, 9) },
+		{ 26, GetRankIcon(10), GetRankName(10, ALLIANCE), format(RANK_FORMAT, 10) },
+		{ 27, GetRankIcon(11), GetRankName(11, ALLIANCE), format(RANK_FORMAT, 11) },
+		{ 28, GetRankIcon(12), GetRankName(12, ALLIANCE), format(RANK_FORMAT, 12) },
+		{ 29, GetRankIcon(13), GetRankName(13, ALLIANCE), format(RANK_FORMAT, 13) },
+		{ 30, GetRankIcon(14), GetRankName(14, ALLIANCE), format(RANK_FORMAT, 14) },
+	},
+}
+
 --[[
 0 - Unknown
 1 - Hated
@@ -96,7 +137,7 @@ data["AlteracValley"] = {
 	AtlasMapID = "AlteracValley",
 	ContentType = PVP_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
-	ContentPhase = 3,
+	ContentPhase = 2.5,
 	items = {
 		{ -- AVRepExalted
 			name = _G["FACTION_STANDING_LABEL8"],
@@ -210,6 +251,7 @@ data["AlteracValley"] = {
 				{ 17, 19031 }, -- Frostwolf Battle Tabard
 			},
 		},
+		PVP_RANKS,
 	},
 }
 
@@ -218,7 +260,7 @@ data["WarsongGulch"] = {
 	AtlasMapID = "WarsongGulch",
 	ContentType = PVP_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
-	ContentPhase = 3,
+	ContentPhase = 2.5,
 	items = {
 		{ -- WSGRepExalted
 			name = _G["FACTION_STANDING_LABEL8"],
@@ -370,33 +412,33 @@ data["WarsongGulch"] = {
 			[HORDE_DIFF] = {
 				{ 1, "f889rep6" },
 				{ 2, "INV_Box_01", nil, "10 - 19", nil }, -- WSGRepHonored1019
-				{ 3, 20444 }, -- Sentinel's Medallion
-				{ 4, 20428 }, -- Caretaker's Cape
-				{ 5, 20431 }, -- Lorekeeper's Ring
-				{ 6, 20439 }, -- Protector's Band
+				{ 3, 20442 }, -- Scout's Medallion
+				{ 4, 20427 }, -- Battle Healer's Cloak
+				{ 5, 20426 }, -- Advisor's Ring
+				{ 6, 20429 }, -- Legionnaire's Band
 				{ 8, "INV_Box_01", nil, "20 - 29", nil }, -- WSGRepHonored2029
-				{ 9, 19541 }, -- Sentinel's Medallion
-				{ 10, 19533 }, -- Caretaker's Cape
-				{ 11, 19525 }, -- Lorekeeper's Ring
-				{ 12, 19517 }, -- Protector's Band
+				{ 9, 19537 }, -- Scout's Medallion
+				{ 10, 19529 }, -- Battle Healer's Cloak
+				{ 11, 19521 }, -- Advisor's Ring
+				{ 12, 19513 }, -- Legionnaire's Band
 				{ 17, "INV_Box_01", nil, "30 - 39", nil }, -- WSGRepHonored3039
-				{ 18, 19540 }, -- Sentinel's Medallion
-				{ 19, 19532 }, -- Caretaker's Cape
-				{ 20, 19524 }, -- Lorekeeper's Ring
-				{ 21, 19515 }, -- Protector's Band
+				{ 18, 19536 }, -- Scout's Medallion
+				{ 19, 19528 }, -- Battle Healer's Cloak
+				{ 20, 19520 }, -- Advisor's Ring
+				{ 21, 19512 }, -- Legionnaire's Band
 				{ 23, "INV_Box_01", nil, "40 - 49", nil }, -- WSGRepHonored4049
-				{ 24, 19539 }, -- Sentinel's Medallion
-				{ 25, 19531 }, -- Caretaker's Cape
-				{ 26, 19523 }, -- Lorekeeper's Ring
-				{ 27, 19516 }, -- Protector's Band
+				{ 24, 19535 }, -- Scout's Medallion
+				{ 25, 19527 }, -- Battle Healer's Cloak
+				{ 26, 19519 }, -- Advisor's Ring
+				{ 27, 19511 }, -- Legionnaire's Band
 				{ 28, 17348 }, -- Major Healing Draught
 				{ 29, 17351 }, -- Major Mana Draught
 				{ 101, "f889rep6" },
 				{ 102, "INV_Box_01", nil, "50 - 59", nil }, -- WSGRepHonored5059
-				{ 103, 19538 }, -- Sentinel's Medallion
-				{ 104, 19530 }, -- Caretaker's Cape
-				{ 105, 19522 }, -- Lorekeeper's Ring
-				{ 106, 19514 }, -- Protector's Band
+				{ 103, 19534 }, -- Scout's Medallion
+				{ 104, 19526 }, -- Battle Healer's Cloak
+				{ 105, 19518 }, -- Advisor's Ring
+				{ 106, 19510 }, -- Legionnaire's Band
 			},
 		},
 		{ -- WSGRepFriendly
@@ -438,6 +480,7 @@ data["WarsongGulch"] = {
 				{ 21, 19066 }, -- Warsong Gulch Runecloth Bandage
 			},
 		},
+		PVP_RANKS,
 	},
 }
 
@@ -652,6 +695,7 @@ data["ArathiBasin"] = {
 				{ 23, 20072 }, -- Defiler's Talisman
 			},
 		},
+		PVP_RANKS,
 	},
 }
 
@@ -689,13 +733,13 @@ data["ClassSets"] = {
 		},
 		{ -- Rare
 			name = ALIL["Rare"],
-			ContentPhase = 6,
+			ContentPhase = 2,
 			[ALLIANCE_DIFF] = {
 				{ 1, 547 }, -- Warlock
 				{ 3, 549 }, -- Priest
 				{ 16, 546 }, -- Mage
 				{ 5, 548 }, -- Rogue
-				{ 20, 539 }, -- Druid
+				{ 20, 551 }, -- Druid
 				{ 7, 550 }, -- Hunter
 				{ 9, 545 }, -- Warrior
 				{ 24, 544 }, -- Paladin
@@ -712,17 +756,89 @@ data["ClassSets"] = {
 				{ 22, 538 }, -- Shaman
 			},
 		},
+		PVP_RANKS,
 	},
 }
 
-data["Weapons"] = {
-	name = ALIL["Weapons"],
+data["Armor"] = {
+	name = AL["Armor"],
 	ContentType = GENERAL_CONTENT,
 	LoadDifficulty = LOAD_DIFF,
 	ContentPhase = 2,
 	items = {
 		{ -- PVPWeapons
-			name = ALIL["Weapons"],
+			name = AL["Armor"],
+			[ALLIANCE_DIFF] = {
+				{ 1,  18664 }, -- A Treatise on Military Ranks
+
+				{ 3, 18443 }, -- Master Sergeant's Insignia
+				{ 4, 18444 }, -- Master Sergeant's Insignia
+				{ 5, 18442 }, -- Master Sergeant's Insignia
+
+				{ 7, 18456 }, -- Sergeant Major's Silk Cuffs
+				{ 8, 18457 }, -- Sergeant Major's Silk Cuffs
+
+				{ 10, 18452 }, -- Sergeant Major's Leather Armsplints
+				{ 11, 18453 }, -- Sergeant Major's Leather Armsplints
+
+				{ 13, 18448 }, -- Sergeant Major's Chain Armguards
+				{ 14, 18449 }, -- Sergeant Major's Chain Armguards
+
+				{ 16,  15196 }, -- Private's Tabard
+
+				{ 18, 16342 }, -- Sergeant's Cape
+				{ 19, 18441 }, -- Sergeant's Cape
+				{ 20, 18440 }, -- Sergeant's Cape
+
+				{ 22, 18445 }, -- Sergeant Major's Plate Wristguards
+				{ 23, 18447 }, -- Sergeant Major's Plate Wristguards
+
+				{ 25, 18454 }, -- Sergeant Major's Dragonhide Armsplints
+				{ 26, 18455 }, -- Sergeant Major's Dragonhide Armsplints
+
+			},
+			[HORDE_DIFF] = {
+				{ 1, 18675 }, -- Military Ranks of the Horde & Alliance
+
+				{ 3, 16335 }, -- Senior Sergeant's Insignia
+				{ 4, 18428 }, -- Senior Sergeant's Insignia
+				{ 5, 15200 }, -- Senior Sergeant's Insignia
+
+				{ 7, 16486 }, -- First Sergeant's Silk Cuffs
+				{ 8, 18437 }, -- First Sergeant's Silk Cuffs
+
+				{ 10, 16497 }, -- First Sergeant's Leather Armguards
+				{ 11, 18435 }, -- First Sergeant's Leather Armguards
+
+				{ 13, 18429 }, -- First Sergeant's Plate Bracers
+				{ 14, 18430 }, -- First Sergeant's Plate Bracers
+
+				{ 16,  15197 }, -- Scout's Tabard
+
+				{ 18, 18461 }, -- Sergeant's Cloak
+				{ 19, 16341 }, -- Sergeant's Cloak
+				{ 20, 18427 }, -- Sergeant's Cloak
+
+				{ 22, 16532 }, -- First Sergeant's Mail Wristguards
+				{ 23, 18432 }, -- First Sergeant's Mail Wristguards
+
+				{ 25, 18434 }, -- First Sergeant's Dragonhide Armguards
+				{ 26, 18436 }, -- First Sergeant's Dragonhide Armguards
+
+			},
+		},
+		PVP_RANKS,
+	},
+}
+
+data["Weapons"] = {
+	name = AL["Weapons"],
+	ContentType = GENERAL_CONTENT,
+	LoadDifficulty = LOAD_DIFF,
+	ContentPhase = 2,
+	items = {
+		{ -- PVPWeapons
+			name = AL["Weapons"],
 			[ALLIANCE_DIFF] = {
 				{ 1,  18827 }, -- Grand Marshal's Handaxe
 				{ 2,  18830 }, -- Grand Marshal's Sunderer
@@ -770,6 +886,7 @@ data["Weapons"] = {
 				{ 23, 23469 }, -- High Warlord's Tome of Mending
 			},
 		},
+		PVP_RANKS,
 	},
 }
 
@@ -796,19 +913,40 @@ data["Mounts"] = {
 				{ 5, 18248 }, -- Red Skeletal Warhorse
 			},
 		},
-	}
-}
-
---[[
-data["DireMaul"] = {
-	MapID = 2597,
-	AtlasMapID = "AlteracValley",
-	ContentType = PVP_CONTENT,
-	LoadDifficulty = LOAD_DIFF,
-	items = {
-
-		ExtraList = true,
+		PVP_RANKS,
 	},
 }
 
-]]--
+data["Insignia"] = {
+	name = AL["Insignia"],
+	ContentType = GENERAL_CONTENT,
+	LoadDifficulty = LOAD_DIFF,
+	ContentPhase = 2,
+	items = {
+		{
+			name = AL["Insignia"],
+			[ALLIANCE_DIFF] = {
+				{ 1,  18854 }, -- Warrior
+				{ 2,  18856 }, -- Hunter
+				{ 3,  18857 }, -- Rogue
+				{ 4,  18858 }, -- Warlock
+				{ 5,  18862 }, -- Priest
+				{ 6,  18863 }, -- Druid
+				{ 7,  18864 }, -- Paladin
+				{ 8,  18859 }, -- Mage
+
+			},
+			[HORDE_DIFF] = {
+				{ 1,  18834 }, -- Warrior
+				{ 2,  18846 }, -- Hunter
+				{ 3,  18849 }, -- Rogue
+				{ 4,  18852 }, -- Warlock
+				{ 5,  18851 }, -- Priest
+				{ 6,  18853 }, -- Druid
+				{ 7,  18845 }, -- Shaman
+				{ 8,  18850 }, -- Mage
+			},
+		},
+		PVP_RANKS,
+	},
+}

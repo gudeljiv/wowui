@@ -275,7 +275,7 @@ function Button:Create()
 
 	-- counter
 	button.count = button:CreateFontString(buttonName.."_count", "ARTWORK", "AtlasLoot_ItemAmountFont")
-	button.count:SetPoint("BOTTOMRIGHT", button.icon, "BOTTOMRIGHT", 0, 1)
+	button.count:SetPoint("BOTTOMRIGHT", button.icon, "BOTTOMRIGHT", -1, 1)
 	button.count:SetJustifyH("RIGHT")
 	button.count:SetHeight(15)
 	button.count:SetText(15)
@@ -333,11 +333,18 @@ function Button:Create()
 	button.secButton.completed:Hide()
 
 	button.secButton.count = button.secButton:CreateFontString(buttonName.."_secCount", "ARTWORK", "AtlasLoot_ItemAmountFont")
-	button.secButton.count:SetPoint("BOTTOMRIGHT", button.secButton.icon, "BOTTOMRIGHT", 0, 1)
+	button.secButton.count:SetPoint("BOTTOMRIGHT", button.secButton.icon, "BOTTOMRIGHT", -1, 1)
 	button.secButton.count:SetJustifyH("RIGHT")
 	button.secButton.count:SetHeight(15)
 	button.secButton.count:SetText(15)
 	button.secButton.count:Hide()
+
+	button.secButton.pvp = button.secButton:CreateTexture(buttonName.."_secButtonPvp")
+	button.secButton.pvp:SetPoint("BOTTOMRIGHT", button.secButton.icon, "BOTTOMRIGHT", -3, 3)
+	button.secButton.pvp:SetHeight(13)
+	button.secButton.pvp:SetWidth(13)
+	button.secButton.pvp:SetDrawLayer(button.secButton.icon:GetDrawLayer(), 1)
+	button.secButton.pvp:Hide()
 
 	button.secButton.phaseIndicator = button.secButton:CreateTexture(buttonName.."_phaseIndicator", "OVERLAY")
 	button.secButton.phaseIndicator:SetPoint("TOPLEFT", button.secButton.icon)
@@ -424,6 +431,13 @@ function Button:CreateSecOnly(frame)
 	button.secButton.count:SetHeight(15)
 	button.secButton.count:SetText(15)
 	button.secButton.count:Hide()
+
+	button.secButton.pvp = button.secButton:CreateTexture(buttonName.."_secButtonPvp")
+	button.secButton.pvp:SetPoint("BOTTOMRIGHT", button.secButton.icon, "BOTTOMRIGHT", -3, 3)
+	button.secButton.pvp:SetHeight(13)
+	button.secButton.pvp:SetWidth(13)
+	button.secButton.pvp:SetDrawLayer(button.secButton.icon:GetDrawLayer(), 1)
+	button.secButton.pvp:Hide()
 
 	button.secButton.phaseIndicator = button.secButton:CreateTexture(buttonName.."_phaseIndicator", "OVERLAY")
 	button.secButton.phaseIndicator:SetPoint("TOPLEFT", button.secButton.icon)
@@ -555,13 +569,20 @@ function Proto:SetContentTable(tab, formatTab, setOnlySec)
 			end
 
 			if not tab[FACTION_INFO_IS_SET_ID] then
-				horde = ( horde and alliance ) and ( PLAYER_FACTION_ID == 0 and horde or alliance ) or horde and horde or ( alliance and alliance or nil )
-				if type(horde) == "table" then
-					for i = 1, #horde do
-						tab[i+1] = horde[i]
+				local usedFaction
+
+				if PLAYER_FACTION_ID == 0  then
+					usedFaction = horde
+				else
+					usedFaction = alliance
+				end
+
+				if type(usedFaction) == "table" then
+					for i = 1, #usedFaction do
+						tab[i+1] = usedFaction[i]
 					end
-				elseif horde and horde ~= true then
-					tab[2] = horde
+				elseif usedFaction and usedFaction ~= true then
+					tab[2] = usedFaction
 				end
 				tab[FACTION_INFO_IS_SET_ID] = true
 			end
@@ -639,6 +660,11 @@ function Proto:SetContentTable(tab, formatTab, setOnlySec)
 			end
 		end
 	end
+
+	-- dumb but that fix vanishing text...
+	if self.name then
+		self.name:GetWidth()
+	end
 end
 
 function Proto:SetType(typ, val)
@@ -688,6 +714,10 @@ end
 
 function Proto:SetDifficultyID(diffID)
 	self.__atlaslootinfo.difficulty = diffID
+end
+
+function Proto:SetNpcID(npcID)
+	self.__atlaslootinfo.npcID = npcID
 end
 
 function Proto:GetTypeFunctions()
@@ -1083,6 +1113,7 @@ local function CopyBox_SetCopyText(self, text)
 		return false
 	end
 
+	if self:IsShown() then self:Hide() end
 	self:SetText(text)
 	self.tLenght:SetText(text)
 	self:SetWidth(self.tLenght:GetStringWidth() + 20)

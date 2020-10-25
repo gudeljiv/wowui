@@ -12,6 +12,8 @@ local Profession = AtlasLoot.Data.Profession
 local Sets = AtlasLoot.Data.Sets
 local Mount = AtlasLoot.Data.Mount
 local ContentPhase = AtlasLoot.Data.ContentPhase
+local Droprate = AtlasLoot.Data.Droprate
+local Requirements = AtlasLoot.Data.Requirements
 local ItemFrame, Favourites
 
 -- lua
@@ -32,6 +34,7 @@ local GetItemString = AtlasLoot.ItemString.Create
 local ITEM_COLORS = {}
 local DUMMY_ITEM_ICON = "Interface\\Icons\\INV_Misc_QuestionMark"
 local SET_ITEM = "|cff00ff00"..AL["Set item"]..":|r "
+local WHITE_TEXT = "|cffffffff%s|r"
 
 local itemIsOnEnter, buttonOnEnter = nil, nil
 
@@ -55,7 +58,7 @@ ClickHandler:Add(
 	{
 		{ "ChatLink", 		AL["Chat Link"], 			AL["Add item into chat"] },
 		{ "DressUp", 		AL["Dress up"], 			AL["Shows the item in the Dressing room"] },
-		{ "SetFavourite", 	AL["Set Favourite"], 		AL["Set the item as favourite"] },
+		{ "SetFavourite", 	AL["Set Favourite"], 		AL["Set/Remove the item as favourite"] },
 		{ "ShowExtraItems", AL["Show extra items"], 	AL["Shows extra items (tokens,mats)"] },
 		{ "WoWHeadLink", 	AL["Show WowHead link"], 	AL["Shows a copyable link for WoWHead"] },
 	}
@@ -106,7 +109,7 @@ function Item.OnSet(button, second)
 				button.ItemString = GetItemString(button.ItemID)
 			end
 		end
-		button.Droprate = button.__atlaslootinfo.Droprate
+		button.Droprate = Droprate:GetData(button.__atlaslootinfo.npcID, button.ItemID)-- button.__atlaslootinfo.Droprate
 
 		Item.Refresh(button)
 	end
@@ -205,15 +208,21 @@ function Item.OnEnter(button, owner)
 		tooltip:SetHyperlink(button.ItemString)
 	else
 		tooltip:SetItemByID(button.ItemID)
+		--tooltip:SetHyperlink("item:"..button.ItemID)
+		-- small fix for auctionatorTT as it not hooks SetItemByID
+		if _G.Atr_ShowTipWithPricing then
+			local itemName, itemLink = GetItemInfo(button.ItemID)
+			_G.Atr_ShowTipWithPricing(tooltip, itemLink)
+		end
 	end
-	if button.Droprate and db.showDropRate then
-		tooltip:AddDoubleLine(AL["Droprate:"], button.Droprate.."%")
+	if button.Droprate and AtlasLoot.db.showDropRate then
+		tooltip:AddDoubleLine(AL["Droprate:"], format(WHITE_TEXT, button.Droprate.."%"))
 	end
 	if AtlasLoot.db.showIDsInTT then
-		tooltip:AddDoubleLine("ItemID:", button.ItemID or 0)
+		tooltip:AddDoubleLine("ItemID:", format(WHITE_TEXT, button.ItemID or 0))
 	end
 	if AtlasLoot.db.ContentPhase.enableTT and ContentPhase:GetForItemID(button.ItemID) then
-		tooltip:AddDoubleLine(AL["Content phase:"], ContentPhase:GetForItemID(button.ItemID))
+		tooltip:AddDoubleLine(AL["Content phase:"], format(WHITE_TEXT, ContentPhase:GetForItemID(button.ItemID)))
 	end
 	if button.ItemID == 12784 then tooltip:AddLine("Arcanite Reaper Hoooooo!") end
 	tooltip:Show()
@@ -250,6 +259,10 @@ function Item.OnClear(button)
 	button.secButton.ItemString = nil
 	button.secButton.SetData = nil
 	button.secButton.RawName = nil
+	button.secButton.pvp:Hide()
+
+	itemIsOnEnter = nil
+	buttonOnEnter = nil
 
 	button.secButton.overlay:Hide()
 	if button.ExtraFrameShown then
@@ -273,6 +286,11 @@ function Item.Refresh(button)
 
 	if button.type == "secButton" then
 		button:SetNormalTexture(itemTexture or DUMMY_ITEM_ICON)
+
+		if Requirements.HasPvPRequirements(itemID) then
+			button.pvp:SetTexture(Requirements.GetPvPRankIconForItem(itemID))
+			button.pvp:Show()
+		end
 	else
 		-- ##################
 		-- icon
@@ -294,6 +312,9 @@ function Item.Refresh(button)
 			(Mount.IsMount(button.ItemID) and ALIL["Mount"] or nil) or
 			( Sets:GetItemSetForItemID(itemID) and AL["|cff00ff00Set item:|r "] or "")..GetItemDescInfo(itemEquipLoc, itemType, itemSubType)
 		)
+		if Requirements.HasRequirements(itemID) then
+			button.extra:SetText(Requirements.GetReqString(itemID)..button.extra:GetText())
+		end
 	end
 	if Favourites and Favourites:IsFavouriteItemID(itemID) then
 		Favourites:SetFavouriteIcon(itemID, button.favourite)
@@ -303,12 +324,14 @@ function Item.Refresh(button)
 	end
 	--elseif Recipe.IsRecipe(itemID) then
 	if AtlasLoot.db.ContentPhase.enableOnItems then
-		local phaseT = Recipe.IsRecipe(itemID) and Recipe.GetPhaseTextureForItemID(itemID) or ContentPhase:GetPhaseTextureForItemID(itemID)
-		if phaseT then
+		local phaseT, active = ContentPhase:GetPhaseTextureForItemID(itemID)
+		if phaseT and not active then
 			button.phaseIndicator:SetTexture(phaseT)
 			button.phaseIndicator:Show()
 		end
 	end
+	-- Set tt so the text gets loaded
+	AtlasLootScanTooltip:SetItemByID(itemID)
 	return true
 end
 
@@ -326,7 +349,7 @@ end
 -- Item dess up
 --################################
 function Item.ShowQuickDressUp(itemLink, ttFrame)
-	if not itemLink or ( not IsEquippableItem(itemLink) and not Mount.IsMount(itemLink) ) then return end
+	if not itemLink or not ttFrame or ( not IsEquippableItem(itemLink) and not Mount.IsMount(itemLink) ) then return end
 	if not Item.previewTooltipFrame then
 		local name = "AtlasLoot-SetToolTip"
 		local frame = CreateFrame("Frame", name)
@@ -360,6 +383,7 @@ function Item.ShowQuickDressUp(itemLink, ttFrame)
 	local frame = Item.previewTooltipFrame
 
 	-- calculate point for frame
+	if not ttFrame.GetOwner or not ttFrame:GetOwner() then return end
 	local x,y = ttFrame:GetOwner():GetCenter()
 	local fPoint, oPoint = "BOTTOMLEFT", "TOPRIGHT"
 

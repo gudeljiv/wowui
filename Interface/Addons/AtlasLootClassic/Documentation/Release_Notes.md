@@ -2,6 +2,187 @@
 
 This mod is distributed under Version 2 of the GPL.  A copy of the GPL is included in this zip file with links to non-english translations.
 
+## v1.5.5 (Aug. 21, 2020)
+
+- Add Gyromatic Icemaker in Gnomeregan
+- Replace "The Darksoul" in "Misc Sets" with "Shard of the Gods"
+- Add General Rajaxx encounter loot
+- Add Warblade of the Hakkari (Off hand) for Hakkar
+
+## v1.5.4 (Jul. 31, 2020)
+
+- update loot sources for Phase 5
+
+## v1.5.3 (Jul. 30, 2020)
+
+- Update content phase
+
+## v1.5.2 (Jul. 10, 2020)
+
+- Update .toc version
+- Add Eternal Quintessence
+- Add required reputation into faction tooltip
+- Add Circle of Cenarius P5 dailies rewards
+- Flag some items that are Alli/Horde only
+- Add AQ40 Bug Trio Kill order
+- Add Talisman of Binding Shard
+- Add missing Darkmoon items
+- Update droprates and content phases
+- Fix a bug that sometimes cause vanishing text
+
+## v1.5.1 (Apr. 25, 2020)
+
+- Tome of Polymorph: Turtle available in P4
+- Some more ZG Content phase updates
+
+## v1.5.0 (Apr. 16, 2020)
+
+- Content phase 4
+- revert some lvl range changes
+
+## v1.4.8 (Apr. 07, 2020)
+
+- Update .toc version
+- Update lvl ranges
+- Removed double entry ( Death Knight Darkreaver / Scholo )
+- Add Sandarr Dunereaver
+- Fix Horde Honored Items for Warsong ( thanks AndreWaehlisch )
+
+## v1.4.7 (Mar. 07, 2020)
+
+- Update droprates
+- Outrider's Plate Legguards set P6
+- fix rare error with compare tooltips
+
+## v1.4.6 (Feb. 12, 2020)
+
+- Updates for BWL
+
+## v1.4.5 (Jan. 16, 2020)
+
+- Update translations
+
+## v1.4.4 (Dec. 24, 2019)
+
+- Favourites lists are now sorted by name
+- Fix some dungeon levels
+- Update data
+
+## v1.4.3 (Dec. 15, 2019)
+
+- Update content phases
+- Update much crafting min skill
+- Fix alliance druid rare pvp set
+- Fix lua error when in combat
+
+## v1.4.2 (Dec. 11, 2019)
+
+- Set Phase 2.5
+- Add PvP Ranks overview
+- Fix missing random enchants on gear
+
+## v1.4.1 (Dec. 02, 2019)
+
+- Items for Sets now show PvP Rank requirements
+- Set Sack of Gems for every Dragon (Ony, Nef,...)
+- Add some missing Class requirements
+- Fix bug with selected boss reset after every reopen
+- Translation updates. Big thanks to all the translators!!!
+
+## v1.4.0 (Dec. 01, 2019)
+
+- New: Items now show class / PvP rank icons
+- Add PvP Non set armor
+- Set Panzor in BRD as rare
+- Add level for Avatar of Hakkar
+- Fix bug with empty boss names
+
+## v1.3.5 (Nov. 30, 2019)
+
+- add Phase 2.5 for PvP
+- move out Phalanx (BRD) into own boss
+- fix bug with item display on first load
+
+## v1.3.4 (Nov. 13, 2019)
+
+- Set content phase 2
+- Update drop data
+- Fix bug with auto selection
+
+## v1.3.3 (Oct. 28, 2019)
+
+- Fix bug with kr translation
+- Droprate for Leaf and Eye should be 50% ( yes @MadSeasonShow )
+
+## v1.3.2 (Oct. 20, 2019)
+
+- Add Boss level for Dire Maul bosses
+- Add missing translations for Spanish big thanks @Rick !
+- Also big thanks to all the other translators
+- Fix some rare markers for LBRS thanks @wallrik
+
+## v1.3.1 (Oct. 15, 2019)
+
+- Add Legendarys into Collections
+- Add PvP Insignia
+- Move Zul'Farrak / Dustwraith into Phase 1
+
+## v1.3.0 (Oct. 12, 2019)
+
+- Add AtlasLootClassic_Data module (Needs game restart!)
+- Add Sources addon that shows dropsources in item tooltips
+- Update DireMaul content phase
+- Middle click on MiniMapButton now ignores auto selection
+- Fix some typos (thanks @AntiTcb)
+- Move Worldbosses into the DungeonsAndRaids module
+
+## v1.2.3 (Oct. 09, 2019)
+
+- Update content phases
+- Mark Zul'Farrak rares
+- Fix bug with autoselection lootpage update
+- Add quest requirements for DireMaul books
+
+## v1.2.2 (Oct. 02, 2019)
+
+- Update BRD/LBRS loot
+- Add much more drop rate data from classic.wowhead.com. Use their tool/addon and help them to get more data!
+
+## v1.2.1 (Oct. 01, 2019)
+
+- Add a option to show level for bosses
+- Small fixes
+
+## v1.2.0 (Sep. 30, 2019)
+
+- Add droprates for dungeons / raids
+- Add auto select for dungeons / raids
+- Update content phase items
+- Add License back into zip file
+
+## v1.1.12 (Sep. 18, 2019)
+
+- Update BRD loottables
+- Some small bugfixes
+- Translation updates. Big thanks to all the translators!!!
+- Maps: Add Uldaman map data
+
+## v1.1.11 (Sep. 14, 2019)
+
+- Fix koKR translation
+
+## v1.1.10 (Sep. 14, 2019)
+
+- Profession rank updates
+- Add most missing profession skill ranks
+- Fix useGameTooltip function
+- Maps: Add data for WorldBosses
+- Maps: Entrance map support
+
+## v1.1.9-beta (Sep. 03, 2019)
+
+- Add support for AtlasLootClassic_Maps Module
+
 ## v1.1.8-beta (Aug. 31, 2019)
 
 - Split Scarlet Monastery into wings

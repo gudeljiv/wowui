@@ -28,15 +28,11 @@ local TooltipList = {
 
 
 function Tooltip.GetTooltip()
-	return _G[AtlasLoot.db.Tooltip.tooltip or STANDART_TOOLTIP] or AtlasLootTooltip
+	return AtlasLoot.db.Tooltip.useGameTooltip and _G["GameTooltip"] or ( _G[AtlasLoot.db.Tooltip.tooltip or STANDART_TOOLTIP] or AtlasLootTooltip )
 end
 
 function Tooltip:AddTooltipSource(src)
 	TooltipList[#TooltipList+1] = src
-end
-
-function Tooltip:Refresh()
-	AtlasLoot.db.Tooltip.tooltip = AtlasLoot.db.Tooltip.useGameTooltip and "GameTooltip" or "AtlasLootTooltip"
 end
 
 -- Hook
@@ -118,8 +114,18 @@ AtlasLoot:AddInitFunc(HookInit)
 
 local PLAYER_GUID_REGISTER = {
 	["Player-4463-003F795C"] = format(GOLD, "AtlasLoot Author"),
+	["Player-4466-015209F9"] = format(GOLD, "AtlasLoot Author"),
 	["Player-4455-00D28DDC"] = format(SILVER, "AtlasLoot Friend"),
+	["Player-4463-00A5D43D"] = format(SILVER, "AtlasLoot Friend"),
 	["Player-4476-0054EED9"] = format(COPPER, "aka god of shadow"),
+	["Player-4476-0166DB51"] = format(COPPER, "god of shadow"),
+	["Player-4466-00B9FEDF"] = format(SILVER, "AtlasLoot Friend"), --K
+	["player-4466-00BB4DD8"] = format(SILVER, "AtlasLoot Friend"), --D
+	--holz
+	["Player-4463-00784DB2"] = format("|T132800:0|t "..COLOR, "AtlasLoot Friend"),
+	["Player-4749-01CB4830"] = format("|T132800:0|t "..COLOR, "AtlasLoot Friend"),
+	--
+	["Player-4463-00C0F307"] = format("|T135349:0|t "..COLOR, "AtlasLoot Friend"),
 }
 
 local function AddText(self)

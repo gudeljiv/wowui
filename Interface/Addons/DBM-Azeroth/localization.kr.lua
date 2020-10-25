@@ -31,7 +31,7 @@ L:SetGeneralLocalization{
 }
 
 L:SetMiscLocalization({
-	Pull		= "Peace is but a fleeting dream! Let the NIGHTMARE reign!"
+	Pull		= "평화란 부질없는 꿈일 뿐! 이 세상은 악몽이 지배할 것이다!"
 })
 
 -- Ysondre (Feralas)
@@ -53,7 +53,7 @@ L:SetGeneralLocalization{
 }
 
 L:SetMiscLocalization({
---	Pull		= "The strands of LIFE have been severed! The Dreamers must be avenged!"--Does not have one :\
+	Pull		= "네놈들의 마음속에서 어둠이 느껴지는구나. 사악한 존재가 쉴 곳은 없다!"
 })
 
 -- Emeriss (Duskwood)

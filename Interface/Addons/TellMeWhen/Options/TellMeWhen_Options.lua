@@ -237,9 +237,7 @@ function IE:OnInitialize()
 		-- GLOBALS: StaticPopupDialogs, StaticPopup_Show, EXIT_GAME, CANCEL, ForceQuit
 		StaticPopupDialogs["TMWOPT_RESTARTNEEDED"] = {
 			text = L["ERROR_MISSINGFILE_OPT"], 
-			button1 = EXIT_GAME,
-			button2 = CANCEL,
-			OnAccept = ForceQuit,
+			button1 = OKAY,
 			timeout = 0,
 			showAlert = true,
 			whileDead = true,
@@ -252,9 +250,7 @@ function IE:OnInitialize()
 	elseif not TMW.DOGTAG then
 		StaticPopupDialogs["TMWOPT_RESTARTNEEDED"] = {
 			text = L["ERROR_MISSINGFILE_OPT_NOREQ"], 
-			button1 = EXIT_GAME,
-			button2 = CANCEL,
-			OnAccept = ForceQuit,
+			button1 = OKAY,
 			timeout = 0,
 			showAlert = true,
 			whileDead = true,
@@ -659,6 +655,9 @@ function IE:PositionPanels(parentPageName, panelList)
 	for _, panelColumn in ipairs(panelColumns) do
 		for _, panel in TMW:Vararg(panelColumn:GetChildren()) do
 			panel:Hide()
+
+			-- Reset the top anchor so we don't have accidental circular anchorings while iterating below
+			panel:SetPoint("TOP") 
 		end
 		wipe(panelColumn.currentPanels)
 	end
@@ -1103,7 +1102,7 @@ CScriptProvider = TMW:NewClass("CScriptProvider"){
 	end,
 
 	CScriptRemoveAll = function(self)
-		self.__CScripts = null
+		self.__CScripts = nil
 	end,
 
 	CScriptCall = function(self, script, ...)

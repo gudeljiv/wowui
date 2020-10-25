@@ -3,6 +3,61 @@ if not TMW then return end
 TMW.CHANGELOG_LASTVER="7.4.0"
 
 TMW.CHANGELOG = [==[
+## v8.7.6
+* Totem timer functions are once again based on Blizzard's GetTotemInfo API that was restored in patch 1.13.4.
+
+## v8.7.5
+
+### Bug Fixes
+* Fix #1764 - Fix resizing of the main configuration window, the color picker, and a few others.
+* Fix #1790 - Attack Power condition doesn't work.
+* Fix #1786 - TimerBar.lua:162: TexCoord out of range
+
+## v8.7.4
+### Bug Fixes
+* Fixed Fire Resistance Totem being classified as a fire totem rather than a water totem.
+* Fix #1761 - Earth and Water totems were switched with one another.
+* Fix #1764 - Fix resizing of the main configuration window, the color picker, and a few others.
+
+## v8.7.3
+* Added a new "Any Totem" condition that will check all totem slots.
+* Updated totem checking to account for removal of totem APIs in 1.13.3. Totem deaths cannot be accounted for.
+
+### Bug Fixes
+* Fix #1742 - Errors related to improper escaping of user input for the suggestion list.
+* Fixed error `bad argument #1 to 'strlower' (string expected, got boolean)` when using Diminishing Returns icons
+* Fix #1755 - Swing Timer conditions with durations other than zero seconds were not triggering updates at the proper moment.
+* Fixed error `PlayerNames.lua:96: attempt to concatenate field "?" (a nil value)`
+
+## v8.7.2
+### Bug Fixes
+* Fixed handling of spell names in French that have a space before a colon.
+* Classic: Fixed detection of weapon imbues with charges.
+
+## v8.7.1
+* Classic: Added a pet happiness condition.
+
+### Bug Fixes
+* Classic: Fixed errors when checking the health of non-existent units with Real Mob Health installed.
+
+## v8.7.0
+* Classic: Updated the Cast condition and icon type to use LibClassicCasterino for approximations of others' spell casts.
+* Classic: Aura durations might now be correct for abilities whose durations are variable by combopoints.
+* The Missing Buffs/Debuffs icon type now sorts by lowest duration first.
+* Switched to DRList-1.0 (from DRData-1.0) for DR category data.
+* Added events to the Combat Event icon type for swing & spell dodges/blocks/parries.
+* Classic: Added support for Real Mob Health and LibClassicMobHealth. Real Mob Health is the better approach, and must be installed standalone.
+* Classic: Added instructions to the Swing Timer icon type on how to get Wand "swing" timers.
+* Added an option to Spell Cooldown icons and Cooldown conditions to prevent the GCD from being ignored.
+* Classic: Added a Spell Autocasting condition.
+
+### Bug Fixes
+* Fixed an uncommon issue that could cause some event-driven icons to not update correctly after one of the units being tracked by an icon stops existing.
+* Classic: Fixed the Unit Class condition's options.
+* Classic: Fixed the Weapon Imbue icon type & Condition for offhands.
+* Classic: Fixed talented aura duration tracking.
+* Classic: Fixed combopoint tracking.
+
 ## v8.6.9
 * Classic: Aura durations now account for learned talents.
 * Classic: Swing Timer now accounts for next-swing abilities.
@@ -115,7 +170,7 @@ TMW.CHANGELOG = [==[
 
 ## v8.5.4
 * New icon drag operation - Insert.
-* Added Dark Icon and Mag'har to Unit Race condition.
+* Added Dark Iron and Mag'har to Unit Race condition.
 * Added Stagger to the Resouce Display icon type.
 
 ### Bug Fixes

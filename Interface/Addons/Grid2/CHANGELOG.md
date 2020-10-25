@@ -1,7 +1,11 @@
 # Grid2
 
-## r988 (2020-10-07)
+## r991 (2020-10-18)
 
+- *Added some new exceptions to indicators names blacklist, see ticket (#882)  
+    *Now Clean Database Profile button renames indicators with an invalid name.  
+- Bump version  
+- Retail TOC Update  
 - -Disabled animations for square indicator (a shape indicator can be used instead).  
     -Minor bugs fixes.  
 - -Removed animation options for text indicators.  

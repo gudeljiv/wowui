@@ -1,12 +1,11 @@
 local mod	= DBM:NewMod("Lethon", "DBM-Azeroth")
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20190824201836")
+mod:SetRevision("20200817152042")
 mod:SetCreatureID(14888)--121821 TW ID, 14888 classic ID
 --mod:SetModelID(17887)
-mod:SetZone()
 
-mod:RegisterCombat("combat")
+mod:RegisterCombat("combat_yell", L.Pull)
 
 
 mod:RegisterEventsInCombat(
@@ -18,12 +17,12 @@ mod:RegisterEventsInCombat(
 
 --TODO, maybe taunt special warnings for classic version when it matters more.
 --TODO, needs valid spellIds for Classic
-local warnNoxiousBreath			= mod:NewStackAnnounce(24818, 2, nil, "Tank")
+local warnNoxiousBreath			= mod:NewStackAnnounce(24818, 2, nil, "Tank", 2)
 
 local specWarnSleepingFog		= mod:NewSpecialWarningDodge(24814, nil, nil, nil, 2, 2)
 --local specWarnShadowBoltWhirl	= mod:NewSpecialWarningDodge(243468, nil, nil, nil, 2, 2)
 
---local timerNoxiousBreathCD		= mod:NewCDTimer(18.3, 24818, nil, "Tank", nil, 5, nil, DBM_CORE_TANK_ICON)--Iffy
+--local timerNoxiousBreathCD		= mod:NewCDTimer(18.3, 24818, nil, "Tank", nil, 5, nil, DBM_CORE_L.TANK_ICON)--Iffy
 local timerSleepingFogCD		= mod:NewCDTimer(16.8, 24814, nil, nil, nil, 3)
 --local timerShadowBoltWhirlCD	= mod:NewCDTimer(15.8, 243468, nil, nil, nil, 3)
 

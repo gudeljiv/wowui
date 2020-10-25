@@ -59,9 +59,16 @@ L:SetOptionLocalization{
 	WarnShatter	= "Announce Shatter status"
 }
 L:SetMiscLocalization{
-	Phase4 	= "Нечистотон начинает раскалываться!",
-	Phase5 	= "Нечистотон едва держится!",
-	Phase6 	= "Explodes."
+	Slow 		= "замедляется!",
+	Freezing 	= "замораживается!",
+	Frozen	 	= "застывает!",
+	Phase4 		= "начинает раскалываться!",
+	Phase5 		= "едва держится!",
+	Phase6 		= "взрывается!",
+
+	HitsRemain	= "Hits Remaining",
+	Frost		= "Frost",
+	Physical	= "Physical"
 }
 -------------
 -- Huhuran --
@@ -94,7 +101,7 @@ L:SetGeneralLocalization{
 }
 L:SetWarningLocalization{
 	WarnEyeTentacle 	= "Появляются глазные отростки!",
-	WarnClawTentacle	= "Появляется когтещупальце!",
+	WarnClawTentacle2	= "Появляется когтещупальце!",
 	WarnGiantEyeTentacle	= "Появляется гигантский глазной отросток!",
 	WarnGiantClawTentacle	= "Появляется гигантское когтещупальце!",
 	WarnWeakened 		= "К'Тун ослаблен! Бейте его!"

@@ -4,89 +4,101 @@ local _QuestieQuest = QuestieQuest.private
 
 ---@type QuestieDB
 local QuestieDB = QuestieLoader:ImportModule("QuestieDB")
----@type QuestieDBZone
-local QuestieDBZone = QuestieLoader:ImportModule("QuestieDBZone")
+---@type ZoneDB
+local ZoneDB = QuestieLoader:ImportModule("ZoneDB")
 ---@type QuestiePlayer
 local QuestiePlayer = QuestieLoader:ImportModule("QuestiePlayer")
+---@type QuestieCorrections
+local QuestieCorrections = QuestieLoader:ImportModule("QuestieCorrections")
 
 
 _QuestieQuest.objectiveSpawnListCallTable = {
-    ["monster"] = function(id, Objective)
-        local npc = QuestieDB:GetNPC(id)
-        if not npc then
+    ["monster"] = function(id, objective)
+        local rank, name, spawns, waypoints = unpack(QuestieDB.QueryNPC(id, "rank", "name", "spawns", "waypoints"))
+        if (not name) then
+            Questie:Debug(DEBUG_CRITICAL, "Name missing for NPC:", id)
+            return nil
+        end
+
+        if (not spawns) then
+            Questie:Debug(DEBUG_CRITICAL, "Spawn data missing for NPC:", id)
+            spawns = {}
+        end
+        if QuestieCorrections.questNPCBlacklist[id] then -- remove spawns
+            spawns = {}
+            waypoints = {}
+        end
+        if 2 == rank then -- a rare mob spawn
+            waypoints = {}
+        end
+
+        local _GetIconScale = function() return Questie.db.global.monsterScale or 1 end
+
+        return {
+            [id] = {
+                Id = id,
+                Name = name,
+                Spawns = spawns,
+                Waypoints = waypoints,
+                Hostile = true,
+                Icon = ICON_TYPE_SLAY,
+                GetIconScale = _GetIconScale,
+                IconScale = _GetIconScale(),
+                TooltipKey = "m_" .. id, -- todo: use ID based keys
+            }
+        }
+    end,
+    ["object"] = function(id, objective)
+        local name, spawns = unpack(QuestieDB.QueryObject(id, "name", "spawns"))
+        if not name then
             -- todo: log this
             return nil
         end
-        local ret = {}
-        local mon = {};
 
-        mon.Name = npc.name
-        mon.Spawns = npc.spawns
-        mon.Icon = ICON_TYPE_SLAY
-        mon.Id = id
-        mon.GetIconScale = function() return Questie.db.global.monsterScale or 1 end
-        mon.IconScale = mon:GetIconScale();
-        mon.TooltipKey = "m_" .. id -- todo: use ID based keys
-
-        ret[id] = mon;
-        return ret
-    end,
-    ["object"] = function(id, Objective)
-        local object = QuestieDB:GetObject(id)
-        if not object then
-            -- todo: log this
-            return nil
+        if not spawns then
+            Questie:Debug(DEBUG_CRITICAL, "Spawn data missing for object:", id)
+            spawns = {}
         end
-        local ret = {}
-        local obj = {}
 
-        obj.Name = object.name
-        obj.Spawns = object.spawns
-        obj.Icon = ICON_TYPE_LOOT
-        obj.GetIconScale = function() return Questie.db.global.objectScale or 1 end
-        obj.IconScale = obj:GetIconScale()
-        obj.TooltipKey = "o_" .. id
-        obj.Id = id
+        local _GetIconScale = function() return Questie.db.global.objectScale or 1 end
 
-        ret[id] = obj
-        return ret
+        return {
+            [id] = {
+                Id = id,
+                Name = name,
+                Spawns = spawns,
+                Icon = ICON_TYPE_LOOT,
+                GetIconScale = _GetIconScale,
+                IconScale = _GetIconScale(),
+                TooltipKey = "o_" .. id,
+            }
+        }
     end,
-    ["event"] = function(id, Objective)
-        local ret = {}
-        ret[1] = {};
-        ret[1].Name = Objective.Description or "Event Trigger";
-        ret[1].Icon = ICON_TYPE_EVENT
-        ret[1].GetIconScale = function() return Questie.db.global.eventScale or 1.35 end
-        ret[1].IconScale = ret[1]:GetIconScale();
-        ret[1].Id = id or 0
-        if Objective.Coordinates then
-            ret[1].Spawns = Objective.Coordinates
-        elseif Objective.Description then-- we need to fall back to old questie data, some events are missing in the new DB
-            ret[1].Spawns = {}
-            local questie2data = TEMP_Questie2Events[Objective.Description];
-            if questie2data and questie2data["locations"] then
-                for i, spawn in pairs(questie2data["locations"]) do
-                    local zid = Questie2ZoneTableInverse[spawn[1]];
-                    if zid then
-                        zid = QuestieDBZone:GetAreaIdByUIMapID(zid)
-                        if zid then
-                            if not ret[1].Spawns[zid] then
-                                ret[1].Spawns[zid] = {};
-                            end
-                            local x = spawn[2] * 100;
-                            local y = spawn[3] * 100;
-                            tinsert(ret[1].Spawns[zid], {x, y});
-                        end
-                    end
-                end
-            end
+    ["event"] = function(id, objective)
+        local spawns = {}
+        if objective.Coordinates then
+            spawns = objective.Coordinates
+        else
+            Questie:Error("Missing event data for Objective:", objective.Description, "id:", id)
         end
-        return ret
+
+        local _GetIconScale = function() return Questie.db.global.eventScale or 1.35 end
+
+        return {
+            [1] = {
+                Id = id or 0,
+                Name = objective.Description or "Event Trigger",
+                Spawns = spawns,
+                Icon = ICON_TYPE_EVENT,
+                GetIconScale = _GetIconScale,
+                IconScale = _GetIconScale(),
+            }
+        }
     end,
-    ["item"] = function(id, Objective)
+    ["item"] = function(itemId, Objective)
         local ret = {};
-        local item = QuestieDB:GetItem(id);
-        if item ~= nil and item.Sources ~= nil then
+        local item = QuestieDB:GetItem(itemId);
+        if item ~= nil and item.Sources ~= nil and (not item.Hidden) then
             for _, source in pairs(item.Sources) do
                 if _QuestieQuest.objectiveSpawnListCallTable[source.Type] and source.Type ~= "item" then -- anti-recursive-loop check, should never be possible but would be bad if it was
                     local sourceList = _QuestieQuest.objectiveSpawnListCallTable[source.Type](source.Id, Objective);
@@ -95,9 +107,12 @@ _QuestieQuest.objectiveSpawnListCallTable = {
                     else
                         for id, sourceData in pairs(sourceList) do
                             if not ret[id] then
-                                ret[id] = {};
-                                ret[id].Name = sourceData.Name;
-                                ret[id].Spawns = {};
+                                ret[id] = {}
+                                ret[id].Name = sourceData.Name
+                                ret[id].Spawns = {}
+                                ret[id].Waypoints = {}
+                                ret[id].Hostile = true
+                                ret[id].ItemId = item.Id
                                 if source.Type == "object" then
                                     ret[id].Icon = ICON_TYPE_OBJECT
                                     ret[id].GetIconScale = function() return Questie.db.global.objectScale or 1 end
@@ -120,6 +135,16 @@ _QuestieQuest.objectiveSpawnListCallTable = {
                                     end
                                 end
                             end
+                            if sourceData.Waypoints and not Item.Hidden then
+                                for zone, spawns in pairs(sourceData.Waypoints) do
+                                    if not ret[id].Waypoints[zone] then
+                                        ret[id].Waypoints[zone] = {};
+                                    end
+                                    for _, spawn in pairs(spawns) do
+                                        tinsert(ret[id].Waypoints[zone], spawn);
+                                    end
+                                end
+                            end
                         end
                     end
                 end
@@ -130,7 +155,7 @@ _QuestieQuest.objectiveSpawnListCallTable = {
 }
 
 function _QuestieQuest:LevelRequirementsFulfilled(quest, playerLevel, minLevel, maxLevel)
-    return (quest.level >= minLevel or Questie.db.char.lowlevel) and quest.level <= maxLevel and quest.requiredLevel <= playerLevel
+    return (quest.level == 60 and quest.requiredLevel == 1) or (quest.level >= minLevel or Questie.db.char.lowlevel) and quest.level <= maxLevel and (quest.requiredLevel <= playerLevel or Questie.db.char.manualMinLevelOffset or Questie.db.char.manualMinLevelOffsetAbsolute)
 end
 
 -- We always want to show a quest if it is a childQuest and its parent is in the quest log

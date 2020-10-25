@@ -2,19 +2,23 @@ AtlasLoot.AtlasLootDBDefaults = {
 	profile = {
 		showIDsInTT = false,
 		showLvlRange = true,
+		enableBossLevel = false,
 		showMinEnterLvl = false,
 		enableWoWHeadIntegration = true,
 		useEnglishWoWHead = false,
+		enableAutoSelect = true,
+		enableAutoSelectBoss = true,
+		showDropRate = true,
 		ContentPhase = {
 			enableOnLootTable = true,
 			enableOnItems = true,
 			enableOnCrafting = true,
 			enableOnSets = true,
 			enableTT = false,
-			activePhase = 1,
 		},
 		Tooltip = {	-- Core\Tooltip.lua
 			tooltip = "AtlasLootTooltip",
+			useGameTooltip = true,
 		},
 		GUI = {		-- GUI\GUI.lua
 			point = {"CENTER"},
@@ -23,7 +27,6 @@ AtlasLoot.AtlasLootDBDefaults = {
 			classFilter = false,
 			autoselect = true,
 			ExpansionIcon = true,
-
 			mainFrame = {
 				bgColor = {r = 0.45, g = 0.45, b = 0.45, a = 1},
 				scale = 1,

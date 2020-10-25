@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Broodlord", "DBM-BWL", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20190824201836")
+mod:SetRevision("20200817152042")
 mod:SetCreatureID(12017)
 mod:SetEncounterID(612)
 mod:SetModelID(14308)
@@ -13,16 +13,13 @@ mod:RegisterEventsInCombat(
 	"SPELL_AURA_REMOVED 24573"
 )
 
---TODO, more timers?
+--Mortal Strike: 10-20, Blast Wave: 12-32, Knock Away: 13-30. i.e., timers on this fight would be near useless
+--(ability.id = 18670 or ability.id = 23331 or ability.id = 24573) and type = "cast"
 local warnBlastWave		= mod:NewSpellAnnounce(23331, 2)
 local warnKnockAway		= mod:NewSpellAnnounce(18670, 3)
-local warnMortal		= mod:NewTargetNoFilterAnnounce(24573, 2, nil, "Tank", 2)
+local warnMortal		= mod:NewTargetNoFilterAnnounce(24573, 2, nil, "Tank|Healer", 4)
 
-local timerMortal		= mod:NewTargetTimer(5, 24573, nil, "Tank", 2, 5, nil, DBM_CORE_TANK_ICON)
-
---function mod:OnCombatStart(delay)
-
---end
+local timerMortal		= mod:NewTargetTimer(5, 24573, nil, "Tank|Healer", 4, 5, nil, DBM_CORE_L.TANK_ICON)
 
 do
 	local BlastWave, KnockAway = DBM:GetSpellInfo(23331), DBM:GetSpellInfo(18670)

@@ -11,3 +11,4 @@ Grid2Options: enabled
 Grid2RaidDebuffs: enabled
 Grid2RaidDebuffsOptions: enabled
 Grid2LDB: enabled
+TownsfolkTracker: disabled

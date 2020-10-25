@@ -1,31 +1,31 @@
-﻿## Interface: 11302
+﻿## Interface: 11305
 ## Author: Lag
-## Version: v1.1.9-beta
+## Version: v1.5.6
 ## Dependencies: AtlasLootClassic
 ## LoadOnDemand: 1
 
 ## Title: AtlasLootClassic |cFF0099FF[Dungeons and Raids]|r
 ## Title-deDE: AtlasLootClassic |cFF0099FF[Instanzen und Raids]|r
-## Title-esES: AtlasLootClassic |cFF0099FF[Dungeons and Raids]|r
-## Title-esMX: AtlasLootClassic |cFF0099FF[Dungeons and Raids]|r
-## Title-frFR: AtlasLootClassic |cFF0099FF[Dungeons and Raids]|r
+## Title-esES: AtlasLootClassic |cFF0099FF[Mazmorras y Bandas]|r
+## Title-esMX: AtlasLootClassic |cFF0099FF[Mazmorras y Bandas]|r
+## Title-frFR: AtlasLoot Classic |cFF0099FF[Donjons et Raids]|r
 ## Title-itIT: AtlasLootClassic |cFF0099FF[Dungeons and Raids]|r
-## Title-koKR: AtlasLootClassic |cFF0099FF[Dungeons and Raids]|r
-## Title-ptBR: AtlasLootClassic |cFF0099FF[Dungeons and Raids]|r
+## Title-koKR: AtlasLoot 클래식 |cFF0099FF[던전과 공격대]|r
+## Title-ptBR: AtlasLootClassic |cFF0099FF[Masmorras e Raides]|r
 ## Title-ruRU: AtlasLootClassic |cFF0099FF[Подземелья и Рейды]|r
-## Title-zhCN: AtlasLootClassic |cFF0099FF[Dungeons and Raids]|r
-## Title-zhTW: AtlasLootClassic |cFF0099FF[Dungeons and Raids]|r
+## Title-zhCN: AtlasLoot经典版 |cFF0099FF[地下城和团队]|r
+## Title-zhTW: 副本戰利品查詢經典版 |cFF0099FF[地城和團隊]|r
 ## Notes: AtlasLoot loot tables from Dungeons and Raids
 ## Notes-deDE: AtlasLoot Beuteverzeichnis der Instanzen und Raids
-## Notes-esES: AtlasLoot loot tables from Dungeons and Raids
-## Notes-esMX: AtlasLoot loot tables from Dungeons and Raids
-## Notes-frFR: AtlasLoot loot tables from Dungeons and Raids
+## Notes-esES: AtlasLoot tablas de botín de Mazmorras y Bandas
+## Notes-esMX: AtlasLoot tablas de botín de Calabozos y Bandas
+## Notes-frFR: Tables de butin des donjons et raids
 ## Notes-itIT: AtlasLoot loot tables from Dungeons and Raids
-## Notes-koKR: AtlasLoot loot tables from Dungeons and Raids
-## Notes-ptBR: AtlasLoot loot tables from Dungeons and Raids
-## Notes-ruRU: Таблицы добычи AtlasLoot с Подземелий и Рейдов
+## Notes-koKR: 던전과 공격대의 AtlasLoot 전리품 테이블
+## Notes-ptBR: Tabelas de saque AtlasLoot de Masmorras e Raides
+## Notes-ruRU: Таблицы добычи AtlasLoot для подземелий и рейдов.
 ## Notes-zhCN: AtlasLoot 地下城&团队副本掉落列表
-## Notes-zhTW: AtlasLoot loot tables from Dungeons and Raids
+## Notes-zhTW: 地城和團隊物品資料庫。
 
 ## X-Category: Map
 ## X-License: GPL v2
@@ -35,3 +35,4 @@
 Locales\Locales.xml
 
 data.lua
+droprate.lua

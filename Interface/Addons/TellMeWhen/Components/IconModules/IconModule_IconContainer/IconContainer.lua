@@ -62,7 +62,6 @@ function IconContainer:SetBorder(size, color, inset)
 		self.border:SetBorderSize(size)
 		self.border:SetColor(TMW:StringToRGBA(color))
 	end
-
 end
 
 

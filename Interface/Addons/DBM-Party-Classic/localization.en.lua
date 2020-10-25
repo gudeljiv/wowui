@@ -11,7 +11,7 @@ L:SetGeneralLocalization{
 	name 		= "Ghamoo-Ra"
 }
 -----------------------------
---  Lady Serevess  --
+--  Lady Sarevess  --
 -----------------------------
 L = DBM:GetModLocalization("LadySerevess")
 
@@ -276,6 +276,64 @@ L:SetGeneralLocalization{
 -------------------------
 --  Upper Blackrock Spire-229J/229M (4C)  --
 -----------------------------
+--  Pyroguard Emberseer  --
+-----------------------------
+L = DBM:GetModLocalization("PyroguardEmberseer")
+
+L:SetGeneralLocalization{
+	name 		= "Pyroguard Emberseer"
+}
+L:SetMiscLocalization{
+	Pull		= "%s begins to regain its strength!"
+}
+-----------------------------
+--  Solakar Flamewreath  --
+-----------------------------
+L = DBM:GetModLocalization("SolakarFlamewreath")
+
+L:SetGeneralLocalization{
+	name 		= "Solakar Flamewreath"
+}
+-----------------------------
+--  Goraluk Anvilcrack  --
+-----------------------------
+L = DBM:GetModLocalization("GoralukAnvilcrack")
+
+L:SetGeneralLocalization{
+	name 		= "Goraluk Anvilcrack"
+}
+-----------------------------
+--  Jed Runewatcher  --
+-----------------------------
+L = DBM:GetModLocalization("JedRunewatcher")
+
+L:SetGeneralLocalization{
+	name 		= "Jed Runewatcher"
+}
+-----------------------------
+--  Warchief Rend Blackhand  --
+-----------------------------
+L = DBM:GetModLocalization("WarchiefRendBlackhand")
+
+L:SetGeneralLocalization{
+	name 		= "Warchief Rend Blackhand"
+}
+-----------------------------
+--  The Beast  --
+-----------------------------
+L = DBM:GetModLocalization("TheBeast")
+
+L:SetGeneralLocalization{
+	name 		= "The Beast"
+}
+-----------------------------
+--  General Drakkisath  --
+-----------------------------
+L = DBM:GetModLocalization("GeneralDrakkisath")
+
+L:SetGeneralLocalization{
+	name 		= "General Drakkisath"
+}
 
 -------------------------
 --  Deadmines (3L/5C)  --
@@ -395,12 +453,12 @@ L:SetGeneralLocalization{
 	name 		= "Illyanna Ravensoak"
 }
 -----------------------------
---  Magister Kelendris  --
+--  Magister Kalendris  --
 -----------------------------
 L = DBM:GetModLocalization(408)
 
 L:SetGeneralLocalization{
-	name 		= "Magister Kelendris"
+	name 		= "Magister Kalendris"
 }
 -----------------------------
 --  Immol'thar  --
@@ -639,7 +697,7 @@ L:SetGeneralLocalization{
 }
 
 -----------------------------
---  Mordress Fire Eye  --
+--  Mordresh Fire Eye  --
 -----------------------------
 L = DBM:GetModLocalization("MordreshFireEye")
 
@@ -675,7 +733,7 @@ L:SetGeneralLocalization{
 }
 
 -----------------------------
---  PlaguemawtheRotting  --
+--  Plaguemaw the Rotting  --
 -----------------------------
 L = DBM:GetModLocalization("PlaguemawtheRotting")
 
@@ -825,6 +883,121 @@ L:SetGeneralLocalization{
 -------------------------
 --  Scholomance 289M (13C)  --
 -----------------------------
+--  Kirtonos the Herald  --
+-----------------------------
+L = DBM:GetModLocalization("KirtonostheHerald")
+
+L:SetGeneralLocalization{
+	name 		= "Kirtonos the Herald"
+}
+
+-----------------------------
+--  Jandice Barov  --
+-----------------------------
+L = DBM:GetModLocalization("JandiceBarov")
+
+L:SetGeneralLocalization{
+	name 		= "Jandice Barov"
+}
+
+-----------------------------
+--  Rattlegore  --
+-----------------------------
+L = DBM:GetModLocalization("Rattlegore")
+
+L:SetGeneralLocalization{
+	name 		= "Rattlegore"
+}
+
+-----------------------------
+--  Marduk Blackpool  --
+-----------------------------
+L = DBM:GetModLocalization("MardukBlackpool")
+
+L:SetGeneralLocalization{
+	name 		= "Marduk Blackpool"
+}
+
+-----------------------------
+--  Vectus  --
+-----------------------------
+L = DBM:GetModLocalization("Vectus")
+
+L:SetGeneralLocalization{
+	name 		= "Vectus"
+}
+
+-----------------------------
+--  Ras Frostwhisper  --
+-----------------------------
+L = DBM:GetModLocalization("RasFrostwhisper")
+
+L:SetGeneralLocalization{
+	name 		= "Ras Frostwhisper"
+}
+
+-----------------------------
+--  Instructor Malicia  --
+-----------------------------
+L = DBM:GetModLocalization("InstructorMalicia")
+
+L:SetGeneralLocalization{
+	name 		= "Instructor Malicia"
+}
+
+-----------------------------
+--  Doctor Theolen Krastinov  --
+-----------------------------
+L = DBM:GetModLocalization("DoctorTheolenKrastinov")
+
+L:SetGeneralLocalization{
+	name 		= "Doctor Theolen Krastinov"
+}
+
+-----------------------------
+--  Lorekeeper Polkelt  --
+-----------------------------
+L = DBM:GetModLocalization("LorekeeperPolkelt")
+
+L:SetGeneralLocalization{
+	name 		= "Lorekeeper Polkelt"
+}
+
+-----------------------------
+--  The Ravenian  --
+-----------------------------
+L = DBM:GetModLocalization("TheRavenian")
+
+L:SetGeneralLocalization{
+	name 		= "The Ravenian"
+}
+
+-----------------------------
+--  Lord Alexei Barov  --
+-----------------------------
+L = DBM:GetModLocalization("LordAlexeiBarov")
+
+L:SetGeneralLocalization{
+	name 		= "Lord Alexei Barov"
+}
+
+-----------------------------
+--  Lady Illucia Barov  --
+-----------------------------
+L = DBM:GetModLocalization("LadyIlluciaBarov")
+
+L:SetGeneralLocalization{
+	name 		= "Lady Illucia Barov"
+}
+
+-----------------------------
+--  Darkmaster Gandling  --
+-----------------------------
+L = DBM:GetModLocalization("DarkmasterGandling")
+
+L:SetGeneralLocalization{
+	name 		= "Darkmaster Gandling"
+}
 
 -------------------------
 --  Shadowfang Keep 33M (14C)  --
@@ -925,7 +1098,7 @@ L:SetGeneralLocalization{
 L = DBM:GetModLocalization("KamDeepfury")
 
 L:SetGeneralLocalization{
-	name 		= "Kam Deepfuryd"
+	name 		= "Kam Deepfury"
 }
 -----------------------------
 --  Hamhock  --
@@ -1068,6 +1241,12 @@ L = DBM:GetModLocalization(455)
 
 L:SetGeneralLocalization{
 	name 		= "Ramstein the Gorger"
+}
+L:SetTimerLocalization{
+	TimerGuards	= "Sentries Spawn"
+}
+L:SetOptionLocalization{
+	TimerGuards	= "Upon defeat of boss, show timer for the arrival of Black Guard Sentries"
 }
 
 -----------------------------
@@ -1258,12 +1437,12 @@ L:SetGeneralLocalization{
 }
 
 -----------------------------
---  Veran the Everliving  --
+--  Verdan the Everliving  --
 -----------------------------
 L = DBM:GetModLocalization(480)
 
 L:SetGeneralLocalization{
-	name 		= "Veran the Everliving"
+	name 		= "Verdan the Everliving"
 }
 
 -----------------------------

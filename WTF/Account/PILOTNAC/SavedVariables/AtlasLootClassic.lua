@@ -17,12 +17,12 @@ AtlasLootClassicDB = {
 		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
 		["Mxym - Golemagg"] = "Default",
 		["Mxys - Golemagg"] = "Default",
+		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
 		["Vermin - Golemagg"] = "Vermin - Golemagg",
-		["Slanac - Golemagg"] = "Default",
 		["Augustin - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
-		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
+		["Slanac - Golemagg"] = "Default",
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 		["Antun - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",
@@ -32,7 +32,7 @@ AtlasLootClassicDB = {
 		["Whatevs - Stonespine"] = "Default",
 	},
 	["global"] = {
-		["__addonrevision"] = 1010009,
+		["__addonrevision"] = 1050006,
 	},
 	["profiles"] = {
 		["Mxzq - Golemagg"] = {

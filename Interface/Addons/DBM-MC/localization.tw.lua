@@ -70,7 +70,7 @@ L:SetGeneralLocalization{
 L = DBM:GetModLocalization("Golemagg")
 
 L:SetGeneralLocalization{
-	name = "『焚化者』古雷曼格"
+	name = "焚化者古雷曼格"
 }
 
 -----------------
@@ -81,7 +81,12 @@ L = DBM:GetModLocalization("Majordomo")
 L:SetGeneralLocalization{
 	name = "管理者埃克索圖斯"
 }
-
+L:SetTimerLocalization{
+	timerShieldCD		= "下一個護盾"
+}
+L:SetOptionLocalization{
+	timerShieldCD		= "為下一個護盾顯示計時器"
+}
 ----------------
 --  Ragnaros  --
 ----------------
@@ -106,5 +111,14 @@ L:SetOptionLocalization{
 }
 L:SetMiscLocalization{
 	Submerge	= "出現吧，我的奴僕! 保衛你們的主人!",
-	Pull		= "你這個莽撞的傢伙!你簡直是自尋死路!看吧，你驚動了主人!"
+	Pull		= "你這個莽撞的傢伙！你簡直是自尋死路！看吧，你驚動了主人！"
+}
+
+-----------------
+--  MC: Trash  --
+-----------------
+L = DBM:GetModLocalization("MCTrash")
+
+L:SetGeneralLocalization{
+	name = "MC: 全程計時"
 }

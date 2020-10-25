@@ -212,7 +212,7 @@ data["Blacksmithing"] = {
 	TableType = PROF_ITTYPE,
 	items = {
 		{
-			name = ALIL["Weapons"].." - "..ALIL["Daggers"],
+			name = AL["Weapons"].." - "..ALIL["Daggers"],
 			[NORMAL_DIFF] = {
 				{ 1, 23638 }, --Black Amnesty / 66
 				{ 2, 16995 }, --Heartseeker / 63
@@ -226,7 +226,7 @@ data["Blacksmithing"] = {
 			}
 		},
 		{
-			name = ALIL["Weapons"].." - "..AL["Axes"],
+			name = AL["Weapons"].." - "..AL["Axes"],
 			[NORMAL_DIFF] = {
 				{ 1, "INV_sword_04", nil, ALIL["One-Handed Axes"] },
 				{ 2, 20897 }, --Dark Iron Destroyer / 65
@@ -251,7 +251,7 @@ data["Blacksmithing"] = {
 			}
 		},
 		{
-			name = ALIL["Weapons"].." - "..AL["Maces"],
+			name = AL["Weapons"].." - "..AL["Maces"],
 			[NORMAL_DIFF] = {
 				{ 1, "INV_sword_04", nil, ALIL["One-Handed Maces"] },
 				{ 2, 23650 }, --Ebon Hand / 70
@@ -279,7 +279,7 @@ data["Blacksmithing"] = {
 			}
 		},
 		{
-			name = ALIL["Weapons"].." - "..AL["Swords"],
+			name = AL["Weapons"].." - "..AL["Swords"],
 			[NORMAL_DIFF] = {
 				{ 1, "INV_sword_04", nil, ALIL["One-Handed Swords"] },
 				{ 2, 23652 }, --Blackguard / 70
@@ -306,14 +306,14 @@ data["Blacksmithing"] = {
 			}
 		},
 		{
-			name = ALIL["Weapons"].." - "..ALIL["Polearms"],
+			name = AL["Weapons"].." - "..ALIL["Polearms"],
 			[NORMAL_DIFF] = {
 				{ 1, 23639 }, --Blackfury / 66
 				{ 2, 10011 }, --Blight / 50
 			}
 		},
 		{
-			name = ALIL["Armor"].." - "..ALIL["Chest"],
+			name = AL["Armor"].." - "..ALIL["Chest"],
 			[MAIL_DIFF] = {
 				{ 1, 27590 }, --Obsidian Mail Tunic / 72
 				{ 2, 24136 }, --Bloodsoul Breastplate / 65
@@ -351,7 +351,7 @@ data["Blacksmithing"] = {
 			},
 		},
 		{
-			name = ALIL["Armor"].." - "..ALIL["Feet"],
+			name = AL["Armor"].." - "..ALIL["Feet"],
 			[MAIL_DIFF] = {
 				{ 1, 23629 }, --Heavy Timbermaw Boots / 64
 				{ 2, 16656 }, --Radiant Boots / 58
@@ -372,7 +372,7 @@ data["Blacksmithing"] = {
 			},
 		},
 		{
-			name = ALIL["Armor"].." - "..ALIL["Hand"],
+			name = AL["Armor"].." - "..ALIL["Hand"],
 			[MAIL_DIFF] = {
 				{ 1, 27589 }, --Black Grasp of the Destroyer / 70
 				{ 2, 24138 }, --Bloodsoul Gauntlets / 65
@@ -399,7 +399,7 @@ data["Blacksmithing"] = {
 			},
 		},
 		{
-			name = ALIL["Armor"].." - "..ALIL["Head"],
+			name = AL["Armor"].." - "..ALIL["Head"],
 			[MAIL_DIFF] = {
 				{ 1, 16728 }, --Helm of the Great Chief / 61
 				{ 2, 16659 }, --Radiant Circlet / 59
@@ -423,7 +423,7 @@ data["Blacksmithing"] = {
 			},
 		},
 		{
-			name = ALIL["Armor"].." - "..ALIL["Legs"],
+			name = AL["Armor"].." - "..ALIL["Legs"],
 			[MAIL_DIFF] = {
 				{ 1, 16725 }, --Radiant Leggings / 61
 				{ 2, 9931 }, --Mithril Scale Pants / 42
@@ -448,7 +448,7 @@ data["Blacksmithing"] = {
 			},
 		},
 		{
-			name = ALIL["Armor"].." - "..ALIL["Shoulder"],
+			name = AL["Armor"].." - "..ALIL["Shoulder"],
 			[MAIL_DIFF] = {
 				{ 1, 24137 }, --Bloodsoul Shoulders / 65
 				{ 2, 20873 }, --Fiery Chain Shoulders / 62
@@ -470,7 +470,7 @@ data["Blacksmithing"] = {
 			},
 		},
 		{
-			name = ALIL["Armor"].." - "..ALIL["Waist"],
+			name = AL["Armor"].." - "..ALIL["Waist"],
 			[MAIL_DIFF] = {
 				{ 1, 27588 }, --Light Obsidian Belt / 68
 				{ 2, 20872 }, --Fiery Chain Girdle / 59
@@ -488,7 +488,7 @@ data["Blacksmithing"] = {
 			},
 		},
 		{
-			name = ALIL["Armor"].." - "..ALIL["Wrist"],
+			name = AL["Armor"].." - "..ALIL["Wrist"],
 			[MAIL_DIFF] = {
 				{ 1, 9937 }, --Mithril Scale Bracers / 43
 				{ 2, 7223 }, --Golden Scale Bracers / 37
@@ -782,7 +782,7 @@ data["Engineering"] = {
 	TableType = PROF_ITTYPE,
 	items = {
 		{
-			name = ALIL["Armor"],
+			name = AL["Armor"],
 			[NORMAL_DIFF] = {
 				{ 1, 22797 }, --Force Reactive Disk / 65
 				{ 3, 12903 }, --Gnomish Harm Prevention Belt / 43
@@ -793,7 +793,7 @@ data["Engineering"] = {
 			}
 		},
 		{
-			name = ALIL["Armor"].." - "..ALIL["Head"],
+			name = AL["Armor"].." - "..ALIL["Head"],
 			[NORMAL_DIFF] = {
 				{ 1, 24357 }, --Bloodvine Lens / 65
 				{ 2, 24356 }, --Bloodvine Goggles / 65
@@ -818,7 +818,7 @@ data["Engineering"] = {
 			}
 		},
 		{
-			name = ALIL["Armor"].." - "..ALIL["Trinket"],
+			name = AL["Armor"].." - "..ALIL["Trinket"],
 			[NORMAL_DIFF] = {
 				{ 1, 19830 }, --Arcanite Dragonling / 60
 				{ 2, 23082 }, --Ultra-Flash Shadow Reflector / 60
@@ -854,7 +854,7 @@ data["Engineering"] = {
 			}
 		},
 		{
-			name = ALIL["Weapons"].." - "..ALIL["Guns"],
+			name = AL["Weapons"].." - "..ALIL["Guns"],
 			[NORMAL_DIFF] = {
 				{ 1, 22795 }, --Core Marksman Rifle / 65
 				{ 2, 19833 }, --Flawless Arcanite Rifle / 61
@@ -900,8 +900,8 @@ data["Engineering"] = {
 				{ 15, 3942 }, --Whirring Bronze Gizmo / 25
 				{ 16, 3938 }, --Bronze Tube / 21
 				{ 17, 3973 }, --Silver Contact / 18
-				{ 18, 3929 }, --Coarse Blasting Powder / 15
-				{ 19, 3926 }, --Copper Modulator / 13
+				{ 18, 3926 }, --Copper Modulator / 13
+				{ 19, 3929 }, --Coarse Blasting Powder / 15
 				{ 20, 3924 }, --Copper Tube / 10
 				{ 21, 3922 }, --Handful of Copper Bolts / 8
 				{ 22, 3918 }, --Rough Blasting Powder / 5
@@ -1007,7 +1007,7 @@ data["Tailoring"] = {
 	TableType = PROF_ITTYPE,
 	items = {
 		{
-			name = ALIL["Armor"].." - "..ALIL["Cloak"],
+			name = AL["Armor"].." - "..ALIL["Cloak"],
 			[NORMAL_DIFF] = {
 				{ 1, 28208 }, --Glacial Cloak / 80
 				{ 2, 28210 }, --Gaea's Embrace / 70
@@ -1028,7 +1028,7 @@ data["Tailoring"] = {
 			}
 		},
 		{
-			name = ALIL["Armor"].." - "..ALIL["Chest"],
+			name = AL["Armor"].." - "..ALIL["Chest"],
 			[NORMAL_DIFF] = {
 				{ 1, 28207 }, --Glacial Vest / 80
 				{ 2, 28480 }, --Sylvan Vest / 70
@@ -1085,7 +1085,7 @@ data["Tailoring"] = {
 			},
 		},
 		{
-			name = ALIL["Armor"].." - "..ALIL["Feet"],
+			name = AL["Armor"].." - "..ALIL["Feet"],
 			[NORMAL_DIFF] = {
 				{ 1, 24093 }, --Bloodvine Boots / 65
 				{ 2, 24903 }, --Runed Stygian Boots / 63
@@ -1107,7 +1107,7 @@ data["Tailoring"] = {
 			}
 		},
 		{
-			name = ALIL["Armor"].." - "..ALIL["Hand"],
+			name = AL["Armor"].." - "..ALIL["Hand"],
 			[NORMAL_DIFF] = {
 				{ 1, 28205 }, --Glacial Gloves / 80
 				{ 2, 22869 }, --Mooncloth Gloves / 62
@@ -1135,7 +1135,7 @@ data["Tailoring"] = {
 			}
 		},
 		{
-			name = ALIL["Armor"].." - "..ALIL["Head"],
+			name = AL["Armor"].." - "..ALIL["Head"],
 			[NORMAL_DIFF] = {
 				{ 1, 28481 }, --Sylvan Crown / 70
 				{ 2, 18452 }, --Mooncloth Circlet / 62
@@ -1155,7 +1155,7 @@ data["Tailoring"] = {
 			}
 		},
 		{
-			name = ALIL["Armor"].." - "..ALIL["Legs"],
+			name = AL["Armor"].." - "..ALIL["Legs"],
 			[NORMAL_DIFF] = {
 				{ 1, 23667 }, --Flarecore Leggings / 70
 				{ 2, 24092 }, --Bloodvine Leggings / 65
@@ -1184,7 +1184,7 @@ data["Tailoring"] = {
 			}
 		},
 		{
-			name = ALIL["Armor"].." - "..ALIL["Body"],
+			name = AL["Armor"].." - "..ALIL["Body"],
 			[NORMAL_DIFF] = {
 				{ 1, 12085 }, --Tuxedo Shirt / 1 / 245
 				{ 2, 12080 }, --Pink Mageweave Shirt / 47 / 240
@@ -1211,7 +1211,7 @@ data["Tailoring"] = {
 			}
 		},
 		{
-			name = ALIL["Armor"].." - "..ALIL["Shoulder"],
+			name = AL["Armor"].." - "..ALIL["Shoulder"],
 			[NORMAL_DIFF] = {
 				{ 1, 28482 }, --Sylvan Shoulders / 70 / 315
 				{ 2, 23663 }, --Mantle of the Timbermaw / 64 / 315
@@ -1231,7 +1231,7 @@ data["Tailoring"] = {
 			}
 		},
 		{
-			name = ALIL["Armor"].." - "..ALIL["Waist"],
+			name = AL["Armor"].." - "..ALIL["Waist"],
 			[NORMAL_DIFF] = {
 				{ 1, 24902 }, --Runed Stygian Belt / 63 / 315
 				{ 2, 22866 }, --Belt of the Archmage / 62 / 315
@@ -1247,7 +1247,7 @@ data["Tailoring"] = {
 			}
 		},
 		{
-			name = ALIL["Armor"].." - "..ALIL["Wrist"],
+			name = AL["Armor"].." - "..ALIL["Wrist"],
 			[NORMAL_DIFF] = {
 				{ 1, 28209 }, --Glacial Wrists / 80 / 315
 				{ 2, 22759 }, --Flarecore Wraps / 64 / 320
@@ -1301,7 +1301,7 @@ data["Leatherworking"] = {
 	TableType = PROF_ITTYPE,
 	items = {
 		{
-			name = ALIL["Armor"].." - "..ALIL["Cloak"],
+			name = AL["Armor"].." - "..ALIL["Cloak"],
 			[NORMAL_DIFF] = {
 				{ 1, 22927 }, --Hide of the Wild / 62 / 320
 				{ 2, 22928 }, --Shifting Cloak / 62 / 320
@@ -1321,7 +1321,7 @@ data["Leatherworking"] = {
 			}
 		},
 		{
-			name = ALIL["Armor"].." - "..ALIL["Chest"],
+			name = AL["Armor"].." - "..ALIL["Chest"],
 			[LEATHER_DIFF] = {
 				{ 1, 28219 }, --Polar Tunic / 80 / 320
 				{ 2, 24121 }, --Primal Batskin Jerkin / 65 / 320
@@ -1373,7 +1373,7 @@ data["Leatherworking"] = {
 			},
 		},
 		{
-			name = ALIL["Armor"].." - "..ALIL["Feet"],
+			name = AL["Armor"].." - "..ALIL["Feet"],
 			[LEATHER_DIFF] = {
 				{ 1, 28473 }, --Bramblewood Boots / 70 / 320
 				{ 2, 22922 }, --Mongoose Boots / 62 / 320
@@ -1396,7 +1396,7 @@ data["Leatherworking"] = {
 			},
 		},
 		{
-			name = ALIL["Armor"].." - "..ALIL["Hand"],
+			name = AL["Armor"].." - "..ALIL["Hand"],
 			[LEATHER_DIFF] = {
 				{ 1, 28220 }, --Polar Gloves / 80 / 320
 				{ 2, 24122 }, --Primal Batskin Gloves / 65 / 320
@@ -1438,7 +1438,7 @@ data["Leatherworking"] = {
 			},
 		},
 		{
-			name = ALIL["Armor"].." - "..ALIL["Head"],
+			name = AL["Armor"].." - "..ALIL["Head"],
 			[LEATHER_DIFF] = {
 				{ 1, 28472 }, --Bramblewood Helm / 70 / 320
 				{ 2, 20854 }, --Molten Helm / 60 / 320
@@ -1458,7 +1458,7 @@ data["Leatherworking"] = {
 			},
 		},
 		{
-			name = ALIL["Armor"].." - "..ALIL["Legs"],
+			name = AL["Armor"].." - "..ALIL["Legs"],
 			[LEATHER_DIFF] = {
 				{ 1, 19097 }, --Devilsaur Leggings / 60 / 320
 				{ 2, 19091 }, --Runic Leather Pants / 60 / 320
@@ -1492,7 +1492,7 @@ data["Leatherworking"] = {
 			},
 		},
 		{
-			name = ALIL["Armor"].." - "..ALIL["Shoulder"],
+			name = AL["Armor"].." - "..ALIL["Shoulder"],
 			[LEATHER_DIFF] = {
 				{ 1, 24125 }, --Blood Tiger Shoulders / 65 / 320
 				{ 2, 23706 }, --Golden Mantle of the Dawn / 64 / 320
@@ -1516,7 +1516,7 @@ data["Leatherworking"] = {
 			},
 		},
 		{
-			name = ALIL["Armor"].." - "..ALIL["Waist"],
+			name = AL["Armor"].." - "..ALIL["Waist"],
 			[LEATHER_DIFF] = {
 				{ 1, 23709 }, --Corehound Belt / 70 / 320
 				{ 2, 23710 }, --Molten Belt / 70 / 320
@@ -1544,7 +1544,7 @@ data["Leatherworking"] = {
 			},
 		},
 		{
-			name = ALIL["Armor"].." - "..ALIL["Wrist"],
+			name = AL["Armor"].." - "..ALIL["Wrist"],
 			[LEATHER_DIFF] = {
 				{ 1, 28221 }, --Polar Bracers / 80 / 320
 				{ 2, 24123 }, --Primal Batskin Bracers / 65 / 320
@@ -1803,31 +1803,31 @@ data["Cooking"] = {
 				{ 4, 6501 }, --Clam Chowder / 265
 				{ 5, 18241 }, --Filet of Redgill / 265
 				{ 6, 20916 }, --Mithril Headed Trout / 215
-				{ 7, 13028 }, --Goldthorn Tea / 215
-				{ 8, 7828 }, --Rockscale Cod / 190
-				{ 9, 7755 }, --Bristle Whisker Catfish / 140
-				{ 10, 20626 }, --Undermine Clam Chowder / 130
-				{ 11, 2548 }, --Succulent Pork Ribs / 130
-				{ 12, 6417 }, --Dig Rat Stew / 130
-				{ 13, 2545 }, --Cooked Crab Claw / 125
-				{ 14, 2543 }, --Westfall Stew / 115
-				{ 15, 7827 }, --Rainbow Fin Albacore / 90
-				{ 16, 7754 }, --Loch Frenzy Delight / 90
-				{ 17, 7753 }, --Longjaw Mud Snapper / 90
-				{ 18, 8607 }, --Smoked Bear Meat / 80
-				{ 19, 6413 }, --Scorpid Surprise / 60
-				{ 20, 7752 }, --Slitherskin Mackerel / 45
-				{ 21, 2538 }, --Charred Wolf Meat / 45
-				{ 22, 7751 }, --Brilliant Smallfish / 45
-				{ 23, 2540 }, --Roasted Boar Meat / 45
+				{ 7, 7828 }, --Rockscale Cod / 190
+				{ 8, 7755 }, --Bristle Whisker Catfish / 140
+				{ 9, 20626 }, --Undermine Clam Chowder / 130
+				{ 10, 2548 }, --Succulent Pork Ribs / 130
+				{ 11, 6417 }, --Dig Rat Stew / 130
+				{ 12, 2545 }, --Cooked Crab Claw / 125
+				{ 13, 2543 }, --Westfall Stew / 115
+				{ 14, 7827 }, --Rainbow Fin Albacore / 90
+				{ 15, 7754 }, --Loch Frenzy Delight / 90
+				{ 16, 7753 }, --Longjaw Mud Snapper / 90
+				{ 17, 8607 }, --Smoked Bear Meat / 80
+				{ 18, 6413 }, --Scorpid Surprise / 60
+				{ 19, 7752 }, --Slitherskin Mackerel / 45
+				{ 20, 2538 }, --Charred Wolf Meat / 45
+				{ 21, 7751 }, --Brilliant Smallfish / 45
+				{ 22, 2540 }, --Roasted Boar Meat / 45
 			},
 		},
 		{
-			name = ALIL["Special"],
+			name = AL["Special"],
 			[NORMAL_DIFF] = {
 				{ 1, 15906 }, --Dragonbreath Chili / 240
 				{ 2, 8238 }, --Savory Deviate Delight / 125
 				{ 3, 9513 }, --Thistle Tea / 100
+				{ 16, 13028 }, --Goldthorn Tea / 215
 			},
 		},
 	}

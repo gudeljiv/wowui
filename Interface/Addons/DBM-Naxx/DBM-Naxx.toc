@@ -1,4 +1,4 @@
-## Interface: 11302
+## Interface: 11305
 ## X-Min-Interface: 11302
 ## Title:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Naxxramas|r
 ## Title-deDE:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Naxxramas|r
@@ -7,6 +7,9 @@
 ## Title-zhCN:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0纳克萨玛斯|r
 ## Title-koKR:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0낙스라마스|r
 ## Title-esES:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Naxxramas|r
+## Title-esMX:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Naxxramas|r
+## Title-ptBR:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Naxxramas|r
+## Title-frFR:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Naxxramas|r
 ## Author: Tandanu/Nitram/MysticalOS
 ## LoadOnDemand: 1
 ## RequiredDeps: DBM-Core
@@ -15,7 +18,7 @@
 ## X-DBM-Mod: 1
 ## X-DBM-Mod-Type: RAID
 ## X-DBM-Mod-Category: Classic
-## X-DBM-Mod-Has-Single-Format: 1
+## X-DBM-StatTypes: normal
 ## X-DBM-Mod-SubCategories: Arachnid Quarter,Construct Quarter,Plague Quarter,Military Quarter,Frostwyrm Lair
 ## X-DBM-Mod-SubCategories-deDE: Das Arachnidenviertel,Das Konstruktviertel,Das Seuchenviertel,Das Militärviertel,Frostwyrmhort
 ## X-DBM-Mod-SubCategories-ruRU: Паучий квартал,Квартал Мерзости,Чумной квартал,Военный квартал,Логово ледяного змея
@@ -25,9 +28,11 @@
 ## X-DBM-Mod-SubCategories-frFR: Quartier des Arachnides,Quartier des Assemblages,Quartier de la Peste,Quartier Militaire,Aile de glace
 ## X-DBM-Mod-SubCategories-esES: El Arrabal Arácnido,El Arrabal de los Ensamblajes,El Arrabal de la Plaga,El Arrabal Militar,Guarida Helada
 ## X-DBM-Mod-SubCategories-esMX: El Arrabal Arácnido,El Arrabal de los Ensamblajes,El Arrabal de la Plaga,El Arrabal Militar,Guarida Helada
+## X-DBM-Mod-SubCategories-ptBR: O Distrito dos Aracnídeos,O Distrito dos Constructos,O Distrito da Peste,O Distrito Militar,Covil do Sapphiron
 ## X-DBM-Mod-MapID: 533
 ## X-DBM-Mod-Sort: 8
 ## X-DBM-Mod-MinCoreRevision: 12473
+## X-DBM-Mod-MinExpansion: 0
 localization.en.lua
 localization.de.lua
 localization.fr.lua
@@ -35,6 +40,8 @@ localization.ru.lua
 localization.tw.lua
 localization.kr.lua
 localization.es.lua
+localization.mx.lua
+localization.br.lua
 localization.cn.lua
 ArachnidQuarter\Anub'Rekhan.lua
 ArachnidQuarter\Faerlina.lua

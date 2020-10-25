@@ -1,25 +1,24 @@
 ---@class QuestieProfessions
 local QuestieProfessions = QuestieLoader:CreateModule("QuestieProfessions");
----@type QuestieQuest
-local QuestieQuest = QuestieLoader:ImportModule("QuestieQuest")
+
 local playerProfessions = {}
 local professionTable = {}
 
 function QuestieProfessions:Update()
     Questie:Debug(DEBUG_DEVELOP, "QuestieProfession: Update")
     ExpandSkillHeader(0) -- Expand all header
-    local isProfUpdate = false
+    local isProfessionUpdate = false
 
     for i=1, GetNumSkillLines() do
         if i > 14 then break; end -- We don't have to go through all the weapon skills
 
-        local skillName, isHeader, isExpanded, skillRank, _, _, _, _, _, _, _, _, _ = GetSkillLineInfo(i)
+        local skillName, isHeader, _, skillRank, _, _, _, _, _, _, _, _, _ = GetSkillLineInfo(i)
         if isHeader == nil and professionTable[skillName] then
-            isProfUpdate = true -- A profession leveled up, not something like "Defense"
-            playerProfessions[professionTable[skillName]] = skillRank
+            isProfessionUpdate = true -- A profession leveled up, not something like "Defense"
+            playerProfessions[professionTable[skillName]] = {skillName, skillRank}
         end
     end
-    return isProfUpdate
+    return isProfessionUpdate
 end
 
 -- This function is just for debugging purpose
@@ -28,17 +27,47 @@ function QuestieProfessions:GetPlayerProfessions()
     return playerProfessions
 end
 
-local function HasProfession(prof)
-    return prof == nil or playerProfessions[prof] ~= nil
+function QuestieProfessions:GetProfessionNames()
+    local professionNames = {}
+    for _, data in pairs(playerProfessions) do
+        table.insert(professionNames, data[1])
+    end
+
+    return professionNames
 end
 
-local function HasProfessionSkill(prof, skillLevel)
-    return skillLevel == nil or playerProfessions[prof] >= skillLevel
+local function _HasProfession(profession)
+    return profession == nil or playerProfessions[profession] ~= nil
 end
 
-function QuestieProfessions:HasProfessionAndSkill(reqSkill)
-    return reqSkill == nil or (HasProfession(reqSkill[1]) and HasProfessionSkill(reqSkill[1], reqSkill[2]))
+local function _HasSkillLevel(profession, skillLevel)
+    return skillLevel == nil or playerProfessions[profession][2] >= skillLevel
 end
+
+function QuestieProfessions:HasProfessionAndSkillLevel(requiredSkill)
+    if requiredSkill == nil then
+        return true
+    end
+
+    local profession = requiredSkill[1]
+    local skillLevel = requiredSkill[2]
+    return _HasProfession(profession) and _HasSkillLevel(profession, skillLevel)
+end
+
+QuestieProfessions.professionKeys = {
+    FIRST_AID = 129,
+    BLACKSMITHING = 164,
+    LEATHERWORKING = 165,
+    ALCHEMY = 171,
+    HERBALISM = 182,
+    COOKING = 185,
+    MINING = 186,
+    TAILORING = 197,
+    ENGINEERING = 202,
+    ENCHANTING = 333,
+    FISHING = 356,
+    SKINNING = 393
+}
 
 -- There are no quests for Skinning and Mining so we don't need them
 professionTable = {
@@ -48,7 +77,6 @@ professionTable = {
     ["Secourisme"] = 129,
     ["Primeiros Socorros"] = 129,
     ["Первая помощь"] = 129,
-    ["急救"] = 129,
     ["急救"] = 129,
     ["응급치료"] = 129,
 
@@ -73,8 +101,6 @@ professionTable = {
     ["가죽세공"] = 165,
 
     ["Alchemy"] = 171,
-    ["Alchimie"] = 171,
-    ["Alquimia"] = 171,
     ["Alchimie"] = 171,
     ["Alquimia"] = 171,
     ["Алхимия"] = 171,
@@ -139,14 +165,12 @@ professionTable = {
     ["Encantamento"] = 333,
     ["Наложение чар"] = 333,
     ["附魔"] = 333,
-    ["附魔"] = 333,
     ["마법부여"] = 333,
 
     ["Fishing"] = 356,
     ["Angeln"] = 356,
     ["Pesca"] = 356,
     ["Pêche"] = 356,
-    ["Pesca"] = 356,
     ["Рыбная ловля"] = 356,
     ["钓鱼"] = 356,
     ["釣魚"] = 356,
@@ -161,4 +185,28 @@ professionTable = {
     ["剥皮"] = 393,
     ["剝皮"] = 393,
     ["무두질"] = 393,
+
+    -- alternate naming scheme (used by DB)
+    ["Enchanter"] = 333,
+    ["Tailor"] = 197,
+    ["Leatherworker"] = 165,
+    ["Engineer"] = 202,
+    ["Blacksmith"] = 164,
+    ["Herbalist"] = 182,
+    ["Fisherman"] = 356,
+    ["Fishmonger"] = 356,
+    ["Skinner"] = 393,
+    ["Alchemist"] = 171,
+    ["Miner"] = 186,
+    ["Cook"] = 185,
+    ["Chef"] = 185,
+    ["Butcher"] = 185,
+    ["Physician"] = 129,
+    ["Weapon Crafter"] = 164,
+    ["Leathercrafter"] = 165,
+    ["Armorsmith"] = 164,
+    ["Weaponsmith"] = 164,
+    ["Surgeon"] = 129
 }
+
+QuestieProfessions.professionTable = professionTable

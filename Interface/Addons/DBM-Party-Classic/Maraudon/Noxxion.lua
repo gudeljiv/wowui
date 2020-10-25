@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod(423, "DBM-Party-Classic", 8, 232)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20190824201836")
+mod:SetRevision("20200623220427")
 mod:SetCreatureID(13282)
 mod:SetEncounterID(422)
 
@@ -15,11 +15,12 @@ mod:RegisterEventsInCombat(
 local warningSpawns					= mod:NewSpellAnnounce(21707, 2)
 local warningUppercut				= mod:NewSpellAnnounce(10966, 2)
 
-local timerSpawnsCD					= mod:NewAITimer(180, 21707, nil, nil, nil, 1, nil, DBM_CORE_DAMAGE_ICON)
-local timerUppercutCD				= mod:NewAITimer(180, 10966, nil, nil, nil, 5, nil, DBM_CORE_TANK_ICON)
+local timerSpawnsCD					= mod:NewAITimer(180, 21707, nil, nil, nil, 1, nil, DBM_CORE_L.DAMAGE_ICON)
+local timerUppercutCD				= mod:NewAITimer(180, 10966, nil, nil, nil, 5, nil, DBM_CORE_L.TANK_ICON)
 
 function mod:OnCombatStart(delay)
-	timerUppercutCD:Start(1-delay)
+	timerSpawnsCD:Start(1-delay)--6
+	timerUppercutCD:Start(1-delay)--18
 end
 
 do

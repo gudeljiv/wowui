@@ -508,7 +508,13 @@ function TMW:CleanString(text)
 	text = replace(text, "[^:] ;", "; ") -- remove all spaces before semicolons
 	text = replace(text, "; ", ";") -- remove all spaces after semicolons
 	text = replace(text, ";;", ";") -- remove all double semicolons
-	text = replace(text, " :", ":") -- remove all single spaces before colons
+
+	-- Don't do this on the French client.
+	-- https://www.iwillteachyoualanguage.com/learn/french/french-tips/french-punctuation
+	if GetLocale() ~= "frFR" then
+		text = replace(text, " :", ":") -- remove all single spaces before colons
+	end
+
 	text = replace(text, ":  ", ": ") -- remove all double spaces after colons (DONT REMOVE ALL DOUBLE SPACES EVERYWHERE, SOME SPELLS HAVE TYPO'd NAMES WITH 2 SPACES!)
 	text = gsub(text, ";", "; ") -- add spaces after all semicolons. Never used to do this, but it just looks so much better (DONT USE replace!).
 	if frame then
@@ -1642,6 +1648,74 @@ function TMW.GetCurrentSpecializationRole()
 	return role
 end
 
+
+
+-- Cast info
+
+local LibClassicCasterino = LibStub("LibClassicCasterino")
+local UnitIsUnit, CastingInfo, ChannelInfo
+	= UnitIsUnit, CastingInfo, ChannelInfo
+
+local castEventHandler = function(event, unit)
+	TMW:Fire("TMW_UNIT_CAST_UPDATE", unit)
+end
+
+-- TODO: Do we need to also register the game's UNIT_SPELLCAST_SUCCEEDED and UNIT_SPELLCAST_FAILED_QUIET? Casterino doesn't provide them.
+LibClassicCasterino:RegisterCallback("UNIT_SPELLCAST_START", castEventHandler)
+LibClassicCasterino:RegisterCallback("UNIT_SPELLCAST_DELAYED", castEventHandler)
+LibClassicCasterino:RegisterCallback("UNIT_SPELLCAST_STOP", castEventHandler)
+LibClassicCasterino:RegisterCallback("UNIT_SPELLCAST_FAILED", castEventHandler)
+LibClassicCasterino:RegisterCallback("UNIT_SPELLCAST_INTERRUPTED", castEventHandler)
+LibClassicCasterino:RegisterCallback("UNIT_SPELLCAST_CHANNEL_START", castEventHandler)
+LibClassicCasterino:RegisterCallback("UNIT_SPELLCAST_CHANNEL_UPDATE", castEventHandler)
+LibClassicCasterino:RegisterCallback("UNIT_SPELLCAST_CHANNEL_STOP", castEventHandler)
+
+function TMW.UnitCastingInfo(unit)
+	if unit == "player" or UnitIsUnit(unit, "player") then
+		return CastingInfo()
+	else
+		return LibClassicCasterino:UnitCastingInfo(unit)
+	end
+end
+function TMW.UnitChannelInfo(unit)
+	if unit == "player" or UnitIsUnit(unit, "player") then
+		return ChannelInfo()
+	else
+		return LibClassicCasterino:UnitChannelInfo(unit)
+	end
+end
+
+
+-- LibMobHealth
+TMW.UnitHealth = UnitHealth
+TMW.UnitHealthMax = UnitHealthMax
+if RealMobHealth then
+	local GetUnitHealth = RealMobHealth.GetUnitHealth
+
+	function TMW.UnitHealth(unit)
+		return GetUnitHealth(unit) or 0
+	end
+	function TMW.UnitHealthMax(unit)
+		local _, max = GetUnitHealth(unit)
+		return max or 0
+	end
+else
+	-- Standalone install of LCMH is LOD
+	LoadAddOn("LibClassicMobHealth-1.0")
+	local CMH = LibStub("LibClassicMobHealth-1.0", true)
+	if CMH then
+		function TMW.UnitHealth(unit)
+			return CMH:GetUnitCurrentHP(unit)
+		end
+		function TMW.UnitHealthMax(unit)
+			return CMH:GetUnitMaxHP(unit)
+		end
+	end
+end
+
+
+
+
 do	-- TMW:GetParser()
 	local Parser, LT1, LT2, LT3, RT1, RT2, RT3
 	function TMW:GetParser()
@@ -1669,7 +1743,8 @@ end
 local fixedRaceAtlasNames = {
 	["highmountaintauren"] = "highmountain",
 	["lightforgeddraenei"] = "lightforged",
-	["scourge"] = "undead"
+	["scourge"] = "undead",
+	["zandalaritroll"] = "zandalari",
 };
 function TMW:GetRaceIconInfo(race)
 	race = race:lower()

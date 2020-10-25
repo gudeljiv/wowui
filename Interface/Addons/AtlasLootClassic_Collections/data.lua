@@ -39,7 +39,7 @@ local PRICE_EXTRA_ITTYPE = data:AddExtraItemTableType("Price")
 local SET_EXTRA_ITTYPE = data:AddExtraItemTableType("Set")
 
 local SET_CONTENT = data:AddContentType(AL["Sets"], ATLASLOOT_PVP_COLOR)
-local WORLD_BOSS_CONTENT = data:AddContentType(AL["World Bosses"], ATLASLOOT_WORLD_BOSS_COLOR)
+--local WORLD_BOSS_CONTENT = data:AddContentType(AL["World Bosses"], ATLASLOOT_WORLD_BOSS_COLOR)
 local COLLECTIONS_CONTENT = data:AddContentType(AL["Collections"], ATLASLOOT_COLLECTIONS_COLOR)
 local WORLD_EVENT_CONTENT = data:AddContentType(AL["World Events"], ATLASLOOT_SEASONALEVENTS_COLOR)
 
@@ -302,187 +302,7 @@ data["MiscSets"] = {
 				-- Dagger / Mace
 				{ 5,  65 }, -- Spider's Kiss
 				-- Trinket
-				{ 16,  444 }, -- Shard of the Gods / 60
-			},
-		},
-	},
-}
-
-data["Azuregos"] = {
-	name = AL["Azuregos"],
-	ContentType = WORLD_BOSS_CONTENT,
-	LoadDifficulty = LOAD_DIFF,
-	ContentPhase = 2,
-	items = {
-		{ -- AAzuregos
-			name = AL["Azuregos"],
-			npcId = 6109,
-			DisplayIDs = {{11460}},
-			[NORMAL_DIFF] = {
-				{ 1,  19132 }, -- Crystal Adorned Crown
-				{ 2,  18208 }, -- Drape of Benediction
-				{ 3,  18541 }, -- Puissant Cape
-				{ 4,  18547 }, -- Unmelting Ice Girdle
-				{ 5,  18545 }, -- Leggings of Arcane Supremacy
-				{ 6,  19131 }, -- Snowblind Shoes
-				{ 7,  19130 }, -- Cold Snap
-				{ 8,  17070 }, -- Fang of the Mystics
-				{ 9,  18202 }, -- Eskhandar's Left Claw
-				{ 10, 18542 }, -- Typhoon
-				{ 16, 18704 }, -- Mature Blue Dragon Sinew
-			},
-		},
-		{ -- ASpiritA
-			name = AL["Spirit of Azuregos"],
-			npcId = 15481,
-			DisplayIDs = {{15473}},
-			ExtraList = true,
-			[NORMAL_DIFF] = {
-				{ 1,  20949 }, -- Magical Ledger
-			},
-		},
-	},
-}
-
-data["LordKazzak"] = {
-	name = AL["Lord Kazzak"],
-	ContentType = WORLD_BOSS_CONTENT,
-	LoadDifficulty = LOAD_DIFF,
-	ContentPhase = 2,
-	items = {
-		{ -- KKazzak
-			name = AL["Lord Kazzak"],
-			npcId = 12397,
-			DisplayIDs = {{12449}},
-			[NORMAL_DIFF] = {
-				{ 1,  18546 }, -- Infernal Headcage
-				{ 2,  17111 }, -- Blazefury Medallion
-				{ 3,  18204 }, -- Eskhandar's Pelt
-				{ 4,  19135 }, -- Blacklight Bracer
-				{ 5,  18544 }, -- Doomhide Gauntlets
-				{ 6,  19134 }, -- Flayed Doomguard Belt
-				{ 7,  19133 }, -- Fel Infused Leggings
-				{ 8,  18543 }, -- Ring of Entropy
-				{ 9,  17112 }, -- Empyrean Demolisher
-				{ 10, 17113 }, -- Amberseal Keeper
-				{ 16, 18665 }, -- The Eye of Shadow
-			},
-		},
-	},
-}
-
-data["DragonsOfNightmare"] = {
-	name = AL["Dragons of Nightmare"],
-	ContentType = WORLD_BOSS_CONTENT,
-	LoadDifficulty = LOAD_DIFF,
-	ContentPhase = 4,
-	items = {
-		{ -- DLethon
-			name = AL["Lethon"],
-			npcId = 14888,
-			DisplayIDs = {{15365}},
-			[NORMAL_DIFF] = {
-				{ 1,  20628 }, -- Deviate Growth Cap
-				{ 2,  20626 }, -- Black Bark Wristbands
-				{ 3,  20630 }, -- Gauntlets of the Shining Light
-				{ 4,  20625 }, -- Belt of the Dark Bog
-				{ 5,  20627 }, -- Dark Heart Pants
-				{ 6,  20629 }, -- Malignant Footguards
-				{ 9,  20579 }, -- Green Dragonskin Cloak
-				{ 10, 20615 }, -- Dragonspur Wraps
-				{ 11, 20616 }, -- Dragonbone Wristguards
-				{ 12, 20618 }, -- Gloves of Delusional Power
-				{ 13, 20617 }, -- Ancient Corroded Leggings
-				{ 14, 20619 }, -- Acid Inscribed Greaves
-				{ 15, 20582 }, -- Trance Stone
-				{ 16, 20644 }, -- Nightmare Engulfed Object
-				{ 17, 20600 }, -- Malfurion's Signet Ring
-				{ 24, 20580 }, -- Hammer of Bestial Fury
-				{ 25, 20581 }, -- Staff of Rampant Growth
-				{ 30, 20381 }, -- Dreamscale
-			},
-		},
-		{ -- DEmeriss
-			name = AL["Emeriss"],
-			npcId = 14889,
-			DisplayIDs = {{15366}},
-			[NORMAL_DIFF] = {
-				{ 1,  20623 }, -- Circlet of Restless Dreams
-				{ 2,  20622 }, -- Dragonheart Necklace
-				{ 3,  20624 }, -- Ring of the Unliving
-				{ 4,  20621 }, -- Boots of the Endless Moor
-				{ 5,  20599 }, -- Polished Ironwood Crossbow
-				{ 9,  20579 }, -- Green Dragonskin Cloak
-				{ 10, 20615 }, -- Dragonspur Wraps
-				{ 11, 20616 }, -- Dragonbone Wristguards
-				{ 12, 20618 }, -- Gloves of Delusional Power
-				{ 13, 20617 }, -- Ancient Corroded Leggings
-				{ 14, 20619 }, -- Acid Inscribed Greaves
-				{ 15, 20582 }, -- Trance Stone
-				{ 16, 20644 }, -- Nightmare Engulfed Object
-				{ 17, 20600 }, -- Malfurion's Signet Ring
-				{ 24, 20580 }, -- Hammer of Bestial Fury
-				{ 25, 20581 }, -- Staff of Rampant Growth
-				{ 30, 20381 }, -- Dreamscale
-			},
-		},
-		{ -- DTaerar
-			name = AL["Taerar"],
-			npcId = 14890,
-			DisplayIDs = {{15363}, {15367}},
-			[NORMAL_DIFF] = {
-				{ 1,  20633 }, -- Unnatural Leather Spaulders
-				{ 2,  20631 }, -- Mendicant's Slippers
-				{ 3,  20634 }, -- Boots of Fright
-				{ 4,  20632 }, -- Mindtear Band
-				{ 5,  20577 }, -- Nightmare Blade
-				{ 9,  20579 }, -- Green Dragonskin Cloak
-				{ 10, 20615 }, -- Dragonspur Wraps
-				{ 11, 20616 }, -- Dragonbone Wristguards
-				{ 12, 20618 }, -- Gloves of Delusional Power
-				{ 13, 20617 }, -- Ancient Corroded Leggings
-				{ 14, 20619 }, -- Acid Inscribed Greaves
-				{ 15, 20582 }, -- Trance Stone
-				{ 16, 20644 }, -- Nightmare Engulfed Object
-				{ 17, 20600 }, -- Malfurion's Signet Ring
-				{ 24, 20580 }, -- Hammer of Bestial Fury
-				{ 25, 20581 }, -- Staff of Rampant Growth
-				{ 30, 20381 }, -- Dreamscale
-			},
-		},
-		{ -- DYsondre
-			name = AL["Ysondre"],
-			npcId = 14887,
-			DisplayIDs = {{15364}},
-			[NORMAL_DIFF] = {
-				{ 1,  20637 }, -- Acid Inscribed Pauldrons
-				{ 2,  20635 }, -- Jade Inlaid Vestments
-				{ 3,  20638 }, -- Leggings of the Demented Mind
-				{ 4,  20639 }, -- Strangely Glyphed Legplates
-				{ 5,  20636 }, -- Hibernation Crystal
-				{ 6,  20578 }, -- Emerald Dragonfang
-				{ 9,  20579 }, -- Green Dragonskin Cloak
-				{ 10, 20615 }, -- Dragonspur Wraps
-				{ 11, 20616 }, -- Dragonbone Wristguards
-				{ 12, 20618 }, -- Gloves of Delusional Power
-				{ 13, 20617 }, -- Ancient Corroded Leggings
-				{ 14, 20619 }, -- Acid Inscribed Greaves
-				{ 15, 20582 }, -- Trance Stone
-				{ 16, 20644 }, -- Nightmare Engulfed Object
-				{ 17, 20600 }, -- Malfurion's Signet Ring
-				{ 24, 20580 }, -- Hammer of Bestial Fury
-				{ 25, 20581 }, -- Staff of Rampant Growth
-				{ 30, 20381 }, -- Dreamscale
-			},
-		},
-		{ -- DTrash
-			name = AL["Trash"],
-			ExtraList = true,
-			[NORMAL_DIFF] = {
-				{ 1,  21146 }, -- Fragment of the Nightmare's Corruption
-				{ 2,  21147 }, -- Fragment of the Nightmare's Corruption
-				{ 3,  21148 }, -- Fragment of the Nightmare's Corruption
-				{ 4,  21149 }, -- Fragment of the Nightmare's Corruption
+				{ 16,  241 }, -- Shard of the Gods / 60
 			},
 		},
 	},
@@ -622,6 +442,7 @@ data["Mounts"] = {
 				{ 24,  2414 }, -- Pinto Bridle
 				{ 25,  5656 }, -- Brown Horse Bridle
 				{ 26,  5655 }, -- Chestnut Mare Bridle
+				{ 27,  2411 }, -- Black Stallion Bridle
 				{ 13,  18902 }, -- Reins of the Swift Stormsaber
 				{ 14,  18767 }, -- Reins of the Swift Mistsaber
 				{ 15,  18766 }, -- Reins of the Swift Frostsaber
@@ -689,6 +510,54 @@ data["Tabards"] = {
 	},
 }
 
+data["Legendarys"] = {
+	name = AL["Legendarys"],
+	ContentType = COLLECTIONS_CONTENT,
+	LoadDifficulty = LOAD_DIFF,
+	TableType = NORMAL_ITTYPE,
+	items = {
+		{
+			name = AL["Legendarys"],
+			[NORMAL_ITTYPE] = {
+				{ 1,  19019 }, -- Thunderfury, Blessed Blade of the Windseeker
+
+				{ 3,  22631 }, -- Atiesh, Greatstaff of the Guardian / Priest
+				{ 4,  22589 }, -- Atiesh, Greatstaff of the Guardian / Mage
+				{ 5,  22630 }, -- Atiesh, Greatstaff of the Guardian / Warlock
+				{ 6,  22632 }, -- Atiesh, Greatstaff of the Guardian / Druid
+
+				{ 16,  17182 }, -- Sulfuras, Hand of Ragnaros
+
+				{ 18,  21176 }, -- Black Qiraji Resonating Crystal
+			},
+		},
+		{
+			name = ALIL["Quest Item"],
+			[NORMAL_ITTYPE] = {
+				{ 1,  19018 }, -- Dormant Wind Kissed Blade
+				{ 2,  19017 }, -- Essence of the Firelord
+				{ 3,  19016 }, -- Vessel of Rebirth
+				{ 4,  18564 }, -- Bindings of the Windseeker / Right
+				{ 5,  18563 }, -- Bindings of the Windseeker / Left
+				{ 7,  17204 }, -- Eye of Sulfuras
+				{ 9,  17771 }, -- Elementium Bar
+				{ 16,  22736 }, -- Andonisus, Reaper of Souls
+				{ 17,  22737 }, -- Atiesh, Greatstaff of the Guardian
+				{ 18,  22733 }, -- Staff Head of Atiesh
+				{ 19,  22734 }, -- Base of Atiesh
+				{ 20,  22727 }, -- Frame of Atiesh
+				{ 21,  22726 }, -- Splinter of Atiesh
+			},
+		},
+		{
+			name = AL["Unobtainable"],
+			[NORMAL_ITTYPE] = {
+				{ 1,  17782 }, -- Talisman of Binding Shard
+				{ 16,  20221 }, -- Foror's Fabled Steed
+			},
+		},
+	},
+}
 
 data["GurubashiArena"] = {
 	name = AL["Gurubashi Arena"],
@@ -1055,7 +924,7 @@ data["ElementalInvasions"] = {
 	ContentType = WORLD_EVENT_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	TableType = NORMAL_ITTYPE,
-	ContentPhase = 2,
+	ContentPhase = 2.5,
 	items = {
 		{ -- ElementalInvasion
 			name = AL["Elemental Invasions"],
@@ -1096,8 +965,16 @@ data["Darkmoon"] = {
 				{ 2,  19267 }, -- Darkmoon Card: Maelstrom
 				{ 3,  19257 }, -- Darkmoon Card: Heroism
 				{ 4,  19277 }, -- Darkmoon Card: Twisting Nether
-				{ 16,  19491 }, -- Amulet of the Darkmoon
-				{ 17,  19426 }, -- Orb of the Darkmoon
+				{ 16,  19491, 19182, [ATLASLOOT_IT_AMOUNT2] = 1200 }, -- Amulet of the Darkmoon
+				{ 17,  19426, 19182, [ATLASLOOT_IT_AMOUNT2] = 1200 }, -- Orb of the Darkmoon
+				{ 19,  19293, 19182, [ATLASLOOT_IT_AMOUNT2] = 50 }, -- Last Year's Mutton
+				{ 20,  19291, 19182, [ATLASLOOT_IT_AMOUNT2] = 50 }, -- Darkmoon Storage Box
+				{ 22,  9249, 19182, [ATLASLOOT_IT_AMOUNT2] = 40 }, -- Schematic: Steam Tonk Controller
+				{ 23,  19296, 19182, [ATLASLOOT_IT_AMOUNT2] = 40 }, -- Greater Darkmoon Prize
+				{ 25,  19297, 19182, [ATLASLOOT_IT_AMOUNT2] = 12 }, -- Lesser Darkmoon Prize
+				{ 27,  19292, 19182, [ATLASLOOT_IT_AMOUNT2] = 10 }, -- Last Month's Mutton
+				{ 29,  19298, 19182, [ATLASLOOT_IT_AMOUNT2] = 5 }, -- Minor Darkmoon Prize
+				{ 30,  19295, 19182, [ATLASLOOT_IT_AMOUNT2] = 5 }, -- Darkmoon Flower
 			},
 		},
 	},
@@ -1183,6 +1060,38 @@ data["SilithusAbyssal"] = {
 				{ 24, 20661 }, -- Abyssal Leather Gloves
 				{ 25, 20662 }, -- Abyssal Plate Greaves
 				{ 26, 20513 }, -- Abyssal Crest
+			},
+		},
+	},
+}
+
+data["AQOpening"] = {
+	name = AL["AQ opening"],
+	ContentType = WORLD_EVENT_CONTENT,
+	LoadDifficulty = NORMAL_DIFF,
+	TableType = NORMAL_ITTYPE,
+	ContentPhase = 5,
+	items = {
+		{
+			name = AL["AQ opening"],
+			[NORMAL_DIFF] = {
+				{ 1,  21138 }, -- Red Scepter Shard
+				{ 2,  21529 }, -- Amulet of Shadow Shielding
+				{ 3,  21530 }, -- Onyx Embedded Leggings
+				{ 5,  21139 }, -- Green Scepter Shard
+				{ 6,  21531 }, -- Drake Tooth Necklace
+				{ 7,  21532 }, -- Drudge Boots
+				{ 9,  21137 }, -- Blue Scepter Shard
+				{ 10, 21517 }, -- Gnomish Turban of Psychic Might
+				{ 11, 21527 }, -- Darkwater Robes
+				{ 12, 21526 }, -- Band of Icy Depths
+				{ 13, 21025 }, -- Recipe: Dirge's Kickin' Chimaerok Chops
+				{ 16, 21175 }, -- The Scepter of the Shifting Sands
+				{ 17, 21176 }, -- Black Qiraji Resonating Crystal
+				{ 18, 21523 }, -- Fang of Korialstrasz
+				{ 19, 21521 }, -- Runesword of the Red
+				{ 20, 21522 }, -- Shadowsong's Sorrow
+				{ 21, 21520 }, -- Ravencrest's Legacy
 			},
 		},
 	},

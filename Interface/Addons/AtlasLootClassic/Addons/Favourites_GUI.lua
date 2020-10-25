@@ -646,19 +646,16 @@ function GUI:UpdateDropDown()
     local listDb
     local db = Favourites:GetDb()
     if db.activeList[2] == true then
-        listDb = Favourites:GetGlobaleLists()
+        listDb = Favourites:GetGlobaleLists(true)
     else
-        listDb = Favourites:GetProfileLists()
+        listDb = Favourites:GetProfileLists(true)
     end
-    for k,v in pairs(listDb) do
+    for i,v in ipairs(listDb) do
         dataEntrys[ #dataEntrys + 1 ] = {
-            id = k,
-            name = Favourites:GetListName(k, db.activeList[2] == true, true),
-            --coinTexture = tabVal.CoinTexture,
-            tt_title = Favourites:GetListName(k, db.activeList[2] == true, true),
+            id = v.id,
+            name = v.nameIcon,
+            tt_title = v.nameIcon,
         }
-
-        Favourites:GetListName(k, db.activeList[2] == true, true)
     end
 
     self.dropDownData = data
@@ -750,12 +747,12 @@ function GUI:Create()
 
         frame.content.optionsButton = AtlasLoot.GUI.CreateButton()
         frame.content.optionsButton:SetPoint("LEFT", frame.content.isGlobal.frame.text, "RIGHT", 5, 0)
-        frame.content.optionsButton:SetText(ALIL["Settings"])
+        frame.content.optionsButton:SetText(AL["Settings"])
         frame.content.optionsButton:SetScript("OnClick", ShowOptionsOnClick)
 
         frame.content.showAllItems = AtlasLoot.GUI.CreateButton()
         frame.content.showAllItems:SetPoint("LEFT", frame.content.bottomBg, "LEFT", 2, 0)
-        frame.content.showAllItems:SetText(ALIL["Show all items"])
+        frame.content.showAllItems:SetText(AL["Show all items"])
         frame.content.showAllItems:SetScript("OnClick", ShowAllItemsOnClick)
 
         frame.content.editBox = CreateFrame("EditBox", nil, frame.content, "InputBoxTemplate")

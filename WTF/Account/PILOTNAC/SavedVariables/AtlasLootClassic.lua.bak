@@ -1,7 +1,7 @@
 
 AtlasLootClassicDB = {
 	["global"] = {
-		["__addonrevision"] = 1010009,
+		["__addonrevision"] = 1050006,
 	},
 	["profileKeys"] = {
 		["Mxzq - Golemagg"] = "Default",
@@ -20,12 +20,12 @@ AtlasLootClassicDB = {
 		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
 		["Mxym - Golemagg"] = "Default",
 		["Mxys - Golemagg"] = "Default",
+		["Slanac - Golemagg"] = "Default",
 		["Jaroslav - Golemagg"] = "Jaroslav - Golemagg",
-		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Augustin - Golemagg"] = "Default",
 		["Grgur - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
-		["Slanac - Golemagg"] = "Default",
+		["Vermin - Golemagg"] = "Vermin - Golemagg",
 		["Klhjakhsgdjh - Golemagg"] = "Klhjakhsgdjh - Golemagg",
 		["Antun - Golemagg"] = "Default",
 		["Judawise - Golemagg"] = "Judawise - Golemagg",

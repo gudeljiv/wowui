@@ -58,7 +58,14 @@ Type:RegisterIconDefaults{
 
 
 if pclass == "HUNTER" then
-	Type:RegisterConfigPanel_XMLTemplate(130, "TellMeWhen_AutoshootSwingTimerTip")
+	Type:RegisterConfigPanel_XMLTemplate(130, "TellMeWhen_AutoshootSwingTimerTip", { 
+		spellID = 75
+	})
+elseif pclass == "MAGE" or pclass == "PRIEST" or pclass == "WARLOCK" then
+	Type:RegisterConfigPanel_XMLTemplate(130, "TellMeWhen_AutoshootSwingTimerTip", { 
+		spellID = 5019,
+		descriptiveName = GetSpellInfo(5009) -- "Wands" (best i could do - couldnt find "Wand")
+	})
 end
 
 Type:RegisterConfigPanel_XMLTemplate(165, "TellMeWhen_IconStates", {
@@ -88,10 +95,6 @@ local function SwingTimer_OnEvent(icon, event, unit, _, _, _, spellID)
 		-- Update the icon's texture when the player changes weapons.
 		local wpnTexture = GetInventoryItemTexture("player", icon.Slot)
 		icon:SetInfo("texture", wpnTexture or GetSpellTexture(15590))
-
-	elseif event == "TMW_COMMON_SWINGTIMER_CHANGED" then
-		-- Queue an icon update when the swing timer updates.
-		icon.NextUpdateTime = 0
 	end
 end
 
@@ -123,13 +126,19 @@ function Type:Setup(icon)
 	-- Convert the slot name to a slotID.
 	icon.Slot = GetInventorySlotInfo(icon.SwingTimerSlot)
 
+	local SwingTimer = SwingTimers[icon.Slot]
+	if not SwingTimer then
+		-- invalid slot
+		icon:SetInfo("texture", "Interface\\Icons\\INV_Misc_QuestionMark")
+		return
+	end
 
 	local wpnTexture = GetInventoryItemTexture("player", icon.Slot)
 	icon:SetInfo("texture", wpnTexture or GetSpellTexture(15590))
 	
 	
 	-- Register events and setup update functions.
-	TMW:RegisterCallback("TMW_COMMON_SWINGTIMER_CHANGED", SwingTimer_OnEvent, icon)
+	icon:RegisterSimpleUpdateEvent("TMW_COMMON_SWINGTIMER_CHANGED")
 	icon:RegisterEvent("UNIT_INVENTORY_CHANGED")
 	
 	icon:SetScript("OnEvent", SwingTimer_OnEvent)

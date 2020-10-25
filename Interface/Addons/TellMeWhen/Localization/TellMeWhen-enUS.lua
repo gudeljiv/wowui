@@ -109,24 +109,16 @@ L["ICONMENU_CTRLGROUP_UNAVAILABLEID_DESC"] = [[Only the first icon in a group (i
 L["ERROR_MISSINGFILE_REQFILE"] = "A required file"
 L["ERROR_MISSINGFILE"] = [[A complete restart of WoW is required to use TellMeWhen %s.
 
-%s was not loaded. 
-
-Would you like to restart WoW now?]]
+%s was not loaded.]]
 L["ERROR_MISSINGFILE_NOREQ"] = [[A complete restart of WoW may be required to fully use TellMeWhen %s:
 
-%s was not loaded.
-
-Would you like to restart WoW now?]]
+%s was not loaded.]]
 L["ERROR_MISSINGFILE_OPT"] = [[A complete restart of WoW is required to configure TellMeWhen %s:
 
-%s was not loaded.
-
-Would you like to restart WoW now?]]
+%s was not loaded.]]
 L["ERROR_MISSINGFILE_OPT_NOREQ"] = [[A complete restart of WoW may be required to fully configure TellMeWhen %s:
 
-%s was not loaded.
-
-Would you like to restart WoW now?]]
+%s was not loaded.]]
 
 
 L["ANCHOR_CURSOR_DUMMY"] = "TellMeWhen Cursor Anchor Dummy"
@@ -639,6 +631,7 @@ L["AIR"] = "Air"
 L["MUSHROOM"] = "Mushroom %d"
 L["RUNEOFPOWER"] = "Rune %d"
 L["GENERICTOTEM"] = "Totem %d"
+L["GENERICTOTEM_ANY"] = "Any Totem"
 L["RUNES"] = "Rune(s) to check"
 
 
@@ -669,6 +662,10 @@ L["ICONMENU_MANACHECK"] = "Power check"
 L["ICONMENU_MANACHECK_DESC"] = "Check this to enable changing the color of the icon when you are out of mana/rage/runic power/etc."
 L["ICONMENU_COOLDOWNCHECK"] = "Cooldown check"
 L["ICONMENU_COOLDOWNCHECK_DESC"] = "Check this to cause the icon to be considered unusable if it is on cooldown."
+L["ICONMENU_GCDASUNUSABLE"] = "Don't ignore GCD"
+L["ICONMENU_GCDASUNUSABLE_DESC"] = [[Normally, TellMeWhen classifies cooldowns on GCD as being usable.
+
+Enable this setting to prevent that behavior, making spells on the GCD be treated as unusable.]]
 L["ICONMENU_DONTREFRESH"] = "Don't Refresh"
 L["ICONMENU_DONTREFRESH_DESC"] = "Check to force the cooldown to not reset if the trigger occurs while it is still counting down."
 L["ICONMENU_CLEU_NOREFRESH"] = "Don't Refresh"
@@ -1430,6 +1427,9 @@ L["CONDITIONPANEL_OVERLAYED_DESC"] = "Checks if a given spell has the activation
 L["CONDITIONPANEL_CURRENTSPELL"] = "Spell Queued"
 L["CONDITIONPANEL_CURRENTSPELL_DESC"] = "Checks if a given next-swing spell is currently activated."
 
+L["CONDITIONPANEL_AUTOSPELL"] = "Spell Autocasting"
+L["CONDITIONPANEL_AUTOSPELL_DESC"] = "Checks if a given spell or ability is autocasting."
+
 L["CONDITIONPANEL_INTERRUPTIBLE"] = "Interruptible"
 L["CONDITIONPANEL_NAME"] = "Unit Name"
 L["CONDITIONPANEL_NAMETOMATCH"] = "Name to Match"
@@ -1509,6 +1509,7 @@ L["CONDITIONPANEL_OLD_DESC"] = "<|cffff1300OLD|r> - There is a newer/better vers
 L["CONDITIONPANEL_BITFLAGS_CHOOSEMENU_TYPES"] = "Choose Types..."
 L["CONDITIONPANEL_BITFLAGS_CHOOSERACE"] = "Choose Races..."
 L["CONDITIONPANEL_BITFLAGS_CHOOSECLASS"] = "Choose Classes..."
+L["CONDITIONPANEL_BITFLAGS_CHOOSEVALUES"] = "Choose Values..."
 L["CONDITIONPANEL_BITFLAGS_SELECTED"] = "|cff7fffffSelected|r:"
 L["CONDITIONPANEL_BITFLAGS_NOT"] = "Not"
 L["CONDITIONPANEL_BITFLAGS_ALWAYS"] = "Always True"
@@ -1830,7 +1831,7 @@ L["GROUPSELECT_TOOLTIP"] = [[|cff7fffffClick|r to edit.
 |cff7fffffClick-and-drag|r to reorder or change domain.]]
 
 L["GROUP_UNAVAILABLE"] = "|TInterface/PaperDollInfoFrame/UI-GearManager-LeaveItem-Transparent:20|t This group cannot be shown due to its overly-restrictive spec/role settings."
-L["GROUP_CANNOT_INTERACTIVELY_POSITION"] = "Could not reposition group because the anchor target is restricted. Use the manual position controls in the group settings."
+L["GROUP_CANNOT_INTERACTIVELY_POSITION"] = "Cannot interactively reposition %s because the anchor target is restricted. Use the manual position controls in the group settings."
 
 --[=[L["CNDT_SLIDER_DESC_BASE"] = [[|cff7fffffMousewheel|r to adjust.
 |cff7fffffShift-Mousewheel|r to adjust x10.
@@ -2279,7 +2280,9 @@ L["SOUNDERROR2"] = [[Custom WAV files are not supported by WoW 4.0+
 
 (Sounds built into WoW will still work, though)]]
 L["SOUNDERROR3"] = "Only OGG and MP3 files are supported!"
-L["SOUNDERROR4"] = "Since WoW 8.2, Custom files must be under the Interface directory"
+L["SOUNDERROR4"] = [[Since WoW 8.2, custom files must be under the Interface directory. 
+
+Your entered path should start with "Interface/".]]
 
 L["ANN_TAB"] = "Text"
 L["ANN_TAB_DESC"] = [[Outputs text to chat channels, UI frames, or other AddOns.]]
@@ -2296,6 +2299,7 @@ L["ANN_STICKY"] = "Sticky"
 L["ANN_SHOWICON"] = "Show icon texture"
 L["ANN_SHOWICON_DESC"] = "Some text destinations can show a texture along with the text. Check this to enable that feature."
 L["ANN_SUB_CHANNEL"] = "Sub section"
+L["ANN_INSTANCE_RESTRICTED"] = [[Due to Blizzard restrictions, this method only works when inside an instance or when used with a Click trigger.]]
 L["ANN_WHISPERTARGET"] = "Whisper target"
 L["ANN_WHISPERTARGET_DESC"] = [[Input the name of the player that you would like to whisper.
 
@@ -2530,7 +2534,7 @@ Icon can be filtered by the spell that caused the interrupt. The spell that was 
 Note the difference between the two interrupt events - both will always occur when a spell is interrupted, but each filters the spells involved differently.]]
 L["CLEU_SPELL_LEECH"] = "Resource Leech"
 L["CLEU_SPELL_LEECH_DESC"] = "Occurs when resources (health/mana/rage/energy/etc) are removed from one unit and simultaneously given to another."
-L["CLEU_SPELL_MISSED"] = "Spell Miss"
+L["CLEU_SPELL_MISSED"] = "Spell Miss/Resist"
 L["CLEU_SPELL_CREATE"] = "Spell Create"
 L["CLEU_SPELL_CREATE_DESC"] = "Occurs when an object, such as a hunter trap or a mage portal, is created."
 L["CLEU_SPELL_SUMMON"] = "Spell Summon"
@@ -2556,6 +2560,12 @@ L["CLEU_PARTY_KILL"] = "Party Kill"
 L["CLEU_PARTY_KILL_DESC"] = "Occurs when someone in your party kills something."
 
 
+L["CLEU_SPELL_MISSED_DODGE"] = "Spell/Ability Dodge" -- custom event
+L["CLEU_SPELL_MISSED_PARRY"] = "Spell/Ability Parry" -- custom event
+L["CLEU_SPELL_MISSED_BLOCK"] = "Spell/Ability Block" -- custom event
+L["CLEU_SWING_MISSED_DODGE"] = "Swing Dodge" -- custom event
+L["CLEU_SWING_MISSED_PARRY"] = "Swing Parry" -- custom event
+L["CLEU_SWING_MISSED_BLOCK"] = "Swing Block" -- custom event
 
 L["CLEU_CAT_CAST"] = "Casts"
 L["CLEU_CAT_SWING"] = "Melee/Ranged"
@@ -2866,6 +2876,7 @@ L["DR-ControlledRoot"] = "Controlled roots"
 L["DR-Charge"] = "Charge"
 L["DR-CheapShot"] = "Cheap Shot / Pounce"
 L["DR-Hibernate"] = "Hibernate"
+L["DR-KidneyShot"] = "Kidney Shot"
 
 L["CONDITIONPANEL_CREATURETYPE"] = "Unit Creature Type"
 L["CONDITIONPANEL_CREATURETYPE_LABEL"] = "Creature Type(s)"

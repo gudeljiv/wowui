@@ -11,49 +11,29 @@ GMMONEY = {
 			["GOLD"] = 76343,
 			["CLASS"] = "HUNTER",
 		},
+		["Augustin"] = {
+			["GOLD"] = 2857573,
+			["CLASS"] = "MAGE",
+		},
 		["Mxyz"] = {
-			["GOLD"] = 1604944,
+			["GOLD"] = 1602128,
 			["CLASS"] = "PRIEST",
 		},
-		["Testxv"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "HUNTER",
+		["Battitude"] = {
+			["GOLD"] = 98,
+			["CLASS"] = "ROGUE",
 		},
 		["Mxyzptlk"] = {
 			["GOLD"] = 41,
 			["CLASS"] = "WARLOCK",
 		},
-		["Antun"] = {
-			["GOLD"] = 9,
-			["CLASS"] = "SHAMAN",
-		},
-		["Battitude"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "ROGUE",
-		},
-		["Augustin"] = {
-			["GOLD"] = 2835844,
-			["CLASS"] = "MAGE",
-		},
-		["Dmitar"] = {
-			["GOLD"] = 0,
-			["CLASS"] = "PRIEST",
-		},
-		["Grgur"] = {
-			["GOLD"] = 50,
-			["CLASS"] = "WARLOCK",
-		},
-		["Jaroslav"] = {
-			["GOLD"] = 250730,
-			["CLASS"] = "DRUID",
-		},
 		["Vermin"] = {
-			["GOLD"] = 649147,
+			["GOLD"] = 607490,
 			["CLASS"] = "WARRIOR",
 		},
 	},
 }
 GMMONEYSET = {
-	["FULLDISP"] = true,
 	["TEXTMODE"] = true,
+	["FULLDISP"] = true,
 }

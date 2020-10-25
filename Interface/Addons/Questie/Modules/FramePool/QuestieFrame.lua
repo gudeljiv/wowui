@@ -1,9 +1,13 @@
 ---@type QuestieFramePool
-local QuestieFramePool = QuestieLoader:ImportModule("QuestieFramePool");
+local QuestieFramePool = QuestieLoader:ImportModule("QuestieFramePool")
 ---@type QuestieMap
-local QuestieMap = QuestieLoader:ImportModule("QuestieMap");
+local QuestieMap = QuestieLoader:ImportModule("QuestieMap")
 ---@type QuestieDBMIntegration
-local QuestieDBMIntegration = QuestieLoader:ImportModule("QuestieDBMIntegration");
+local QuestieDBMIntegration = QuestieLoader:ImportModule("QuestieDBMIntegration")
+---@type QuestieDB
+local QuestieDB = QuestieLoader:ImportModule("QuestieDB")
+---@type QuestieQuestBlacklist
+local QuestieQuestBlacklist = QuestieLoader:ImportModule("QuestieQuestBlacklist")
 
 local HBDPins = LibStub("HereBeDragonsQuestie-Pins-2.0")
 
@@ -11,7 +15,9 @@ QuestieFramePool.Qframe = {}
 
 local _Qframe = {}
 
+---@return IconFrame
 function QuestieFramePool.Qframe:New(frameId, OnEnter)
+    ---@class IconFrame
     local newFrame = CreateFrame("Button", "QuestieFrame"..frameId)
     newFrame.frameId = frameId;
 
@@ -51,8 +57,34 @@ function QuestieFramePool.Qframe:New(frameId, OnEnter)
     glowt:SetHeight(18)
     glowt:SetAllPoints(newFrame.glow)
 
+    ---@class IconTexture
     newFrame.texture = newTexture;
+    newFrame.texture.OLDSetVertexColor = newFrame.texture.SetVertexColor;
+    function newFrame.texture:SetVertexColor(r, g, b, a)
+        self:OLDSetVertexColor(r,g,b,a);
+        --We save the colors to the texture object, this way we don't need to use GetVertexColor
+        self.r = r or 1;
+        self.g = g or 1;
+        self.b = b or 1;
+        self.a = a or 1;
+    end
+    --We save the colors to the texture object, this way we don't need to use GetVertexColor
+    newFrame.texture:SetVertexColor(1,1,1,1);
+
     newFrame.glowTexture = glowt
+    newFrame.glowTexture.OLDSetVertexColor = newFrame.glowTexture.SetVertexColor;
+    function newFrame.glowTexture:SetVertexColor(r, g, b, a)
+        self:OLDSetVertexColor(r,g,b,a);
+        --We save the colors to the texture object, this way we don't need to use GetVertexColor
+        self.r = r or 1;
+        self.g = g or 1;
+        self.b = b or 1;
+        self.a = a or 1;
+    end
+
+    --We save the colors to the texture object, this way we don't need to use GetVertexColor
+    newFrame.glowTexture:SetVertexColor(1,1,1,1);
+
     newFrame.glowTexture:SetTexture(ICON_TYPE_GLOW)
     newFrame.glow:Hide()
     newFrame.glow:SetPoint("CENTER", -9, -9) -- 2 pixels bigger than normal icon
@@ -78,21 +110,10 @@ function QuestieFramePool.Qframe:New(frameId, OnEnter)
     newFrame.FakeUnhide = _Qframe.FakeUnhide
     newFrame.OnShow = _Qframe.OnShow
     newFrame.OnHide = _Qframe.OnHide
+    newFrame.ShouldBeHidden = _Qframe.ShouldBeHidden
 
-    newFrame.data = {}
+    newFrame.data = nil
     newFrame:Hide()
-
-
-    hooksecurefunc(newFrame, "Hide", function()
-        if newFrame.OnHide then
-            newFrame:OnHide()
-        end
-    end)
-    hooksecurefunc(newFrame, "Show", function()
-        if newFrame.OnShow then
-            newFrame:OnShow()
-        end
-    end)
 
     return newFrame
 end
@@ -114,37 +135,47 @@ function _Qframe:OnLeave()
             line:SetColorTexture(line.dR, line.dG, line.dB, line.dA)
         end
     end
+
+    if self.data.touchedPins then
+        for i=#self.data.touchedPins,1,-1 do
+            local entry = self.data.touchedPins[i]
+            local icon = entry.icon;
+            icon.texture:SetVertexColor(unpack(entry.color));
+        end
+        self.data.touchedPins = nil;
+    end
 end
 
 function _Qframe:OnClick(button)
-    --_QuestieFramePool:Questie_Click(self)
-    if self and self.data and self.data.UiMapID and WorldMapFrame and WorldMapFrame:IsShown() then
+    if self and self.UiMapID and WorldMapFrame and WorldMapFrame:IsShown() then
         if button == "RightButton" then
             local currentMapParent = WorldMapFrame:GetMapID()
             if currentMapParent then
-                currentMapParent = QuestieZoneToParentTable[currentMapParent];
+                local mapInfo = C_Map.GetMapInfo(currentMapParent)
+                currentMapParent = mapInfo.parentMapID
+
                 if currentMapParent and currentMapParent > 0 then
                     WorldMapFrame:SetMapID(currentMapParent)
                 end
             end
         else
-            if self.data.UiMapID ~= WorldMapFrame:GetMapID() then
-                WorldMapFrame:SetMapID(self.data.UiMapID);
+            if self.UiMapID ~= WorldMapFrame:GetMapID() then
+                WorldMapFrame:SetMapID(self.UiMapID);
             end
         end
         if self.data.Type == "available" and IsShiftKeyDown() then
             StaticPopupDialogs["QUESTIE_CONFIRMHIDE"]:SetQuest(self.data.QuestData.Id)
             StaticPopup_Show ("QUESTIE_CONFIRMHIDE")
-        elseif self.data.Type == "manual" and IsShiftKeyDown() then
+        elseif self.data.Type == "manual" and IsShiftKeyDown() and not self.data.ManualTooltipData.disableShiftToRemove then
             QuestieMap:UnloadManualFrames(self.data.id)
         end
     end
-    if self and self.data and self.data.UiMapID and IsControlKeyDown() and TomTom and TomTom.AddWaypoint then
+    if self and self.UiMapID and IsControlKeyDown() and TomTom and TomTom.AddWaypoint then
         -- tomtom integration (needs more work, will come with tracker
         if Questie.db.char._tom_waypoint and TomTom.RemoveWaypoint then -- remove old waypoint
             TomTom:RemoveWaypoint(Questie.db.char._tom_waypoint)
         end
-        Questie.db.char._tom_waypoint = TomTom:AddWaypoint(self.data.UiMapID, self.x/100, self.y/100, {title = self.data.Name, crazy = true})
+        Questie.db.char._tom_waypoint = TomTom:AddWaypoint(self.UiMapID, self.x/100, self.y/100, {title = self.data.Name, crazy = true})
     elseif self.miniMapIcon then
         local _, _, _, x, y = self:GetPoint()
         Minimap:PingLocation(x, y)
@@ -153,21 +184,27 @@ end
 
 function _Qframe:GlowUpdate()
     if self.glow and self.glow.IsShown and self.glow:IsShown() then
-        self.glow:SetWidth(self:GetWidth() * 1.13)
-        self.glow:SetHeight(self:GetHeight() * 1.13)
-        self.glow:SetPoint("CENTER", self, 0, 0)
+        --Due to this always being 1:1 we can assume that if one isn't correct, the other isn't either
+        --We can also assume that both change at the same time so we only check one.
+        if(self.glow:GetWidth() ~= self:GetWidth() * 1.13) then ---self.glow:GetHeight() ~= self:GetHeight() * 1.13
+            self.glow:SetSize(self:GetWidth() * 1.13, self:GetHeight() * 1.13)
+            self.glow:SetPoint("CENTER", self, 0, 0)
+        end
         if self.data and self.data.ObjectiveData and self.data.ObjectiveData.Color and self.glowTexture then
-            local _, _, _, alpha = self.texture:GetVertexColor()
-            self.glowTexture:SetVertexColor(self.data.ObjectiveData.Color[1], self.data.ObjectiveData.Color[2], self.data.ObjectiveData.Color[3], alpha or 1)
+            --Due to us now saving the alpha inside of the texture we don't need to check the main texture anymore.
+            --The question is is it faster to get and compare or just set straight up?
+            if(self.glowTexture.r ~= self.data.ObjectiveData.Color[1] or self.glowTexture.g ~= self.data.ObjectiveData.Color[2] or self.glowTexture.b ~= self.data.ObjectiveData.Color[3] or self.texture.a ~= self.glowTexture.a) then
+                self.glowTexture:SetVertexColor(self.data.ObjectiveData.Color[1], self.data.ObjectiveData.Color[2], self.data.ObjectiveData.Color[3], self.texture.a or 1)
+            end
         end
     end
 end
 
-function _Qframe:BaseOnUpdate()
-    if self.GlowUpdate then
-        self:GlowUpdate()
-    end
-end
+--function _Qframe:BaseOnUpdate() -- why do this here when its called in QuestieMap.fadeLogicTimerShown?
+--    if self.GlowUpdate then
+--        self:GlowUpdate()
+--    end
+--end
 
 function _Qframe:BaseOnShow()
     local data = self.data
@@ -201,13 +238,16 @@ function _Qframe:UpdateTexture(texture)
     --Different settings depending on noteType
     local globalScale = 0.7
     local objectiveColor = false
+    local alpha = 1;
 
     if(self.miniMapIcon) then
         globalScale = Questie.db.global.globalMiniMapScale;
         objectiveColor = Questie.db.global.questMinimapObjectiveColors;
+        alpha = 0;
     else
         globalScale = Questie.db.global.globalScale;
         objectiveColor = Questie.db.global.questObjectiveColors;
+        alpha = 1;
     end
 
     self.texture:SetTexture(texture)
@@ -217,7 +257,7 @@ function _Qframe:UpdateTexture(texture)
     if self.data.IconColor ~= nil and objectiveColor then
         colors = self.data.IconColor
     end
-    self.texture:SetVertexColor(colors[1], colors[2], colors[3], 1);
+    self.texture:SetVertexColor(colors[1], colors[2], colors[3], alpha);
 
     if self.data.IconScale then
         local scale = 16 * ((self.data:GetIconScale() or 1)*(globalScale or 0.7));
@@ -230,14 +270,23 @@ function _Qframe:UpdateTexture(texture)
 end
 
 function _Qframe:Unload()
+    if not self._loaded then
+        self._needsUnload = true
+        return -- icon is still in the draw queue
+    end
+    self._needsUnload = nil
+    self._loaded = nil
+    --Questie:Debug(DEBUG_SPAM, "[_Qframe:Unload]")
     self:SetScript("OnUpdate", nil)
     self:SetScript("OnShow", nil)
     self:SetScript("OnHide", nil)
     self:SetFrameStrata("FULLSCREEN");
     self:SetFrameLevel(0);
 
-    if(QuestieMap.minimapFramesShown[self.frameId]) then
-        QuestieMap.minimapFramesShown[self.frameId] = nil;
+    -- Reset questIdFrames so they won't be toggled again
+    local frameName = self:GetName()
+    if frameName and self.data.Id and QuestieMap.questIdFrames[self.data.Id] and QuestieMap.questIdFrames[self.data.Id][frameName] then
+        QuestieMap.questIdFrames[self.data.Id][frameName] = nil
     end
 
     --We are reseting the frames, making sure that no data is wrong.
@@ -277,8 +326,13 @@ function _Qframe:Unload()
     self:Hide()
     self.glow:Hide()
     self.data = nil -- Just to be safe
-    self.loaded = nil
-    self.x = nil;self.y = nil;self.AreaID = nil
+    self.x = nil
+    self.y = nil
+    self.AreaID = nil
+    self.UiMapID = nil
+    self.lastGlowFade = nil
+    self.worldX = nil
+    self.worldY = nil
     QuestieFramePool:RecycleFrame(self)
 end
 
@@ -339,14 +393,27 @@ function _Qframe:FakeUnhide()
     end
 end
 
-function _Qframe:OnShow()
-    if self.miniMapIcon then
-        QuestieMap.minimapFramesShown[self.frameId] = self
-    end
-end
+---Checks wheather the frame/icon should be hidden or not
+---@return boolean @True if the frame/icon should be hidden and :FakeHide should be called, false otherwise
+function _Qframe:ShouldBeHidden()
+    local questieGlobalDB = Questie.db.global
+    if (not Questie.db.char.enabled)
+        or ((not questieGlobalDB.enableObjectives) and (self.data.Type == "monster" or self.data.Type == "object" or self.data.Type == "event" or self.data.Type == "item"))
+        or ((not questieGlobalDB.enableTurnins) and self.data.Type == "complete")
+        or ((not questieGlobalDB.enableAvailable) and self.data.Type == "available")
+        or ((not Questie.db.char.showRepeatableQuests) and QuestieDB:IsRepeatable(self.data.Id))
+        or ((not Questie.db.char.showEventQuests) and QuestieDB:IsActiveEventQuest(self.data.Id))
+        or ((not Questie.db.char.showDungeonQuests) and QuestieDB:IsDungeonQuest(self.data.Id))
+        or ((not Questie.db.char.showRaidQuests) and QuestieDB:IsRaidQuest(self.data.Id))
+        or ((not Questie.db.char.showPvPQuests) and QuestieDB:IsPvPQuest(self.data.Id))
+        or ((not Questie.db.char.showAQWarEffortQuests) and QuestieQuestBlacklist.AQWarEffortQuests[self.data.Id])
+        or ((not questieGlobalDB.enableMapIcons) and (not self.miniMapIcon))
+        or ((not questieGlobalDB.enableMiniMapIcons) and (self.miniMapIcon))
+        or (self.data.ObjectiveData and self.data.ObjectiveData.HideIcons)
+        or (self.data.QuestData and self.data.QuestData.HideIcons and self.data.Type ~= "complete") then
 
-function _Qframe:OnHide()
-    if self.miniMapIcon then
-        QuestieMap.minimapFramesShown[self.frameId] = nil
+        return true
     end
+
+    return false
 end

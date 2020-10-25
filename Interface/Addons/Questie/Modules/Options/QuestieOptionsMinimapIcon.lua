@@ -11,19 +11,22 @@ local QuestieOptions = QuestieLoader:ImportModule("QuestieOptions");
 local QuestieJourney = QuestieLoader:ImportModule("QuestieJourney");
 ---@type QuestieLib
 local QuestieLib = QuestieLoader:ImportModule("QuestieLib");
+---@type QuestieMenu
+local QuestieMenu = QuestieLoader:ImportModule("QuestieMenu")
 
 local minimapIconLDB = nil
 
 function QuestieOptionsMinimapIcon:Initialize()
-    minimapIconLDB = LibStub("LibDataBroker-1.1"):NewDataObject("MinimapIcon", {
+    minimapIconLDB = LibStub("LibDataBroker-1.1"):NewDataObject("Questie", {
         type = "data source",
         text = "Questie",
         icon = ICON_TYPE_COMPLETE,
 
         OnClick = function (self, button)
             if button == "LeftButton" then
-                if IsShiftKeyDown() then
-                    QuestieQuest:ToggleNotes();
+                if IsShiftKeyDown() and IsControlKeyDown() then
+                    Questie.db.char.enabled = (not Questie.db.char.enabled)
+                    QuestieQuest:ToggleNotes(Questie.db.char.enabled)
 
                     -- CLose config window if it's open to avoid desyncing the Checkbox
                     QuestieOptions:HideFrame();
@@ -33,7 +36,7 @@ function QuestieOptionsMinimapIcon:Initialize()
                     return
                 end
 
-                QuestieOptions:OpenConfigWindow()
+                QuestieMenu:Show()
 
                 if QuestieJourney:IsShown() then
                     QuestieJourney.ToggleJourneyWindow();
@@ -49,7 +52,7 @@ function QuestieOptionsMinimapIcon:Initialize()
                     return;
                 elseif IsControlKeyDown() then
                     Questie.db.profile.minimap.hide = true;
-                    Questie.minimapConfigIcon:Hide("MinimapIcon");
+                    Questie.minimapConfigIcon:Hide("Questie");
                     return;
                 end
             end
@@ -57,7 +60,7 @@ function QuestieOptionsMinimapIcon:Initialize()
 
         OnTooltipShow = function (tooltip)
             tooltip:AddLine("Questie ".. QuestieLib:GetAddonVersionString(), 1, 1, 1);
-            tooltip:AddLine(Questie:Colorize(QuestieLocale:GetUIString('ICON_LEFT_CLICK') , 'gray') .. ": ".. QuestieLocale:GetUIString('ICON_TOGGLE'));
+            tooltip:AddLine(Questie:Colorize(QuestieLocale:GetUIString('ICON_LEFT_CLICK') , 'gray') .. ": ".. QuestieLocale:GetUIString('MENU_TOGGLE'));
             tooltip:AddLine(Questie:Colorize(QuestieLocale:GetUIString('ICON_SHIFTLEFT_CLICK') , 'gray') .. ": ".. QuestieLocale:GetUIString('ICON_TOGGLE_QUESTIE'));
             tooltip:AddLine(Questie:Colorize(QuestieLocale:GetUIString('ICON_RIGHT_CLICK') , 'gray') .. ": ".. QuestieLocale:GetUIString('ICON_JOURNEY'));
             tooltip:AddLine(Questie:Colorize(QuestieLocale:GetUIString('ICON_CTRLRIGHT_CLICK') , 'gray') .. ": ".. QuestieLocale:GetUIString('ICON_HIDE'));

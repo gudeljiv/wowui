@@ -1,4 +1,4 @@
-if GetLocale() ~= "esES" and GetLocale() ~= "esMX" then return end
+if GetLocale() ~= "esES" then return end
 local L
 
 ------------
@@ -51,20 +51,24 @@ L:SetGeneralLocalization{
 	name = "Viscidus"
 }
 L:SetWarningLocalization{
-	WarnFreeze	= "Freeze: %d/3",
-	WarnShatter	= "Shatter: %d/3"
+	WarnFreeze	= "Congelación: %d/3",
+	WarnShatter	= "Hacerse añicos: %d/3"
 }
 L:SetOptionLocalization{
-	WarnFreeze	= "Announce Freeze status",
-	WarnShatter	= "Announce Shatter status"
+	WarnFreeze	= "Anunciar congelación",
+	WarnShatter	= "Anunciar hacerse añicos"
 }
 L:SetMiscLocalization{
-	Slow	= "comienza a ir más despacio!",
-	Freezing= "se está congelando!",
-	Frozen	= "no se puede mover!",
-	Phase4 	= "comienza a desmoronarse!",
+	Slow	= "comienza a remitir!",
+	Freezing= "se queda inmóvil!",
+	Frozen	= "está paralizada!",
+	Phase4 	= "empieza a desmoronarse!",
 	Phase5 	= "parece a punto de hacerse añicos!",
-	Phase6 	= "explota"--Might want to double check this, since no further messages appeared after the previous one.
+	Phase6 	= "explota!",
+
+	HitsRemain	= "Golpes restantes",
+	Frost		= "Escarcha",
+	Physical	= "Daño físico"
 }
 -------------
 -- Huhuran --
@@ -83,8 +87,8 @@ L:SetGeneralLocalization{
 	name = "Los Emperadores Gemelos"
 }
 L:SetMiscLocalization{
-	Veklor = "Emperor Vek'lor",
-	Veknil = "Emperor Vek'nilash"
+	Veklor = "Emperador Vek'lor",
+	Veknil = "Emperador Vek'nilash"
 }
 
 ------------
@@ -97,24 +101,38 @@ L:SetGeneralLocalization{
 }
 L:SetWarningLocalization{
 	WarnEyeTentacle			= "Tentáculo ocular",
-	WarnWeakened			= "C'Thun vulnerable",
-	SpecWarnWeakened		= "¡C'Thun vulnerable!"
+	WarnClawTentacle2		= "Tentáculo Garral",
+	WarnGiantEyeTentacle	= "Tentáculo ocular gigante",
+	WarnGiantClawTentacle	= "Tentáculo garral gigante",
+	SpecWarnWeakened		= "¡C'Thun está débil!"
 }
 L:SetTimerLocalization{
 	TimerEyeTentacle		= "Siguiente Tentáculo ocular",
-	TimerWeakened			= "Vulnerabilidad termina"
+	TimerClawTentacle		= "Siguiente Tentáculo Garral",
+	TimerGiantEyeTentacle	= "Siguiente Tentáculo ocular gigante",
+	TimerGiantClawTentacle	= "Siguiente Tentáculo garral gigante",
+	TimerWeakened			= "Debilidad termina"
 }
 L:SetOptionLocalization{
 	WarnEyeTentacle			= "Mostrar aviso cuando aparezca un Tentáculo ocular",
-	WarnWeakened			= "Mostrar aviso cuando C'Thun se vuelva vulnerable",
-	SpecWarnWeakened		= "Mostrar aviso especial cuando C'Thun se vuelva vulnerable",
+	WarnClawTentacle2		= "Mostrar aviso cuando aparezca un Tentáculo Garral",
+	WarnGiantEyeTentacle	= "Mostrar aviso cuando aparezca un Tentáculo ocular gigante",
+	WarnGiantClawTentacle	= "Mostrar aviso cuando aparezca un Tentáculo garral gigante",
+	WarnWeakened			= "Mostrar aviso cuando C'Thun se vuelva débil",
+	SpecWarnWeakened		= "Mostrar aviso especial cuando C'Thun se vuelva débil",
 	TimerEyeTentacle		= "Mostrar temporizador para el siguiente Tentáculo ocular",
-	TimerWeakened			= "Mostrar temporizador para la duración de la vulnerabilidad de C'Thun",
+	TimerClawTentacle		= "Mostrar temporizador para el siguiente Tentáculo Garral",
+	TimerGiantEyeTentacle	= "Mostrar temporizador para el siguiente Tentáculo ocular gigante",
+	TimerGiantClawTentacle	= "Mostrar temporizador para el siguiente Tentáculo garral gigante",
+	TimerWeakened			= "Mostrar temporizador para la duración de la debilidad de C'Thun",
 	RangeFrame				= "Mostrar marco de distancia (10 m)"
 }
 L:SetMiscLocalization{
+	Stomach		= "Estómago",
 	Eye			= "Ojo de C'Thun",
-	Weakened 	= "está débil!"
+	FleshTent	= "Tentáculo de carne",
+	Weakened 	= "está débil!",
+	NotValid	= "AQ40 parcialmente limpiado. Quedan %s jefes opcionales."
 }
 ----------------
 -- Ouro --
@@ -125,8 +143,8 @@ L:SetGeneralLocalization{
 	name = "Ouro"
 }
 L:SetWarningLocalization{
-	WarnSubmerge		= "Ouro ha regresado",
-	WarnEmerge			= "Ouro se sumerge"
+	WarnSubmerge		= "Ouro se sumerge",
+	WarnEmerge			= "Ouro regresa"
 }
 L:SetTimerLocalization{
 	TimerSubmerge		= "Sumersión",
@@ -137,4 +155,12 @@ L:SetOptionLocalization{
 	TimerSubmerge		= "Mostrar temporizador para cuando Ouro se sumerja",
 	WarnEmerge			= "Mostrar aviso cuando Ouro regrese a la superficie",
 	TimerEmerge			= "Mostrar temporizador para cuando Ouro regrese a la superficie"
+}
+----------------
+-- AQ40 Trash --
+----------------
+L = DBM:GetModLocalization("AQ40Trash")
+
+L:SetGeneralLocalization{
+	name = "AQ40: Bichos"
 }

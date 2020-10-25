@@ -50,6 +50,7 @@ SpellCache.CONST = {
 		[3355] = true, -- Freezing Trap Effect
 		[14308] = true, -- Freezing Trap Effect
 		[14309] = true, -- Freezing Trap Effect
+		[19675] = true, -- Feral Charge Effect
 	},
 
 	-- A list of spells that should be excluded from the cache
@@ -232,7 +233,8 @@ TMW:RegisterCallback("TMW_OPTIONS_LOADED", function()
 							strfind(name, "%d.%d") or -- Number Dot Number is probably a patch number, used often for internal spells
 							(strfind(name, "vehicle") and strfind(name, "%f[%a]vehicle%f[%A]")) or
 							(strfind(name, "credit") and strfind(name, "%f[%a]credit%f[%A]")) or
-							(strfind(name, "effect") and strfind(name, "%f[%a]effect%f[%A]")) or
+							-- 'effect' is used quite bit in classic for lots of real things. Don't blacklist it.
+							-- (strfind(name, "effect") and strfind(name, "%f[%a]effect%f[%A]")) or
 							(strfind(name, "camera") and strfind(name, "%f[%a]camera%f[%A]")) or
 							(strfind(name, "ph") and strfind(name, "%f[%a]ph%f[%A]")) or
 							(strfind(name, "proc") and strfind(name, "%f[%a]proc%f[%A]")) or

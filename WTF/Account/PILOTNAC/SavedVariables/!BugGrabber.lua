@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 2136,
+	["session"] = 2138,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -1694,20 +1694,12 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [216]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'TargetFrameToT:Show()'.",
-			["time"] = "2020/09/23 13:06:51",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Show'\nInterface\\FrameXML\\TargetFrame.lua:910: in function <Interface\\FrameXML\\TargetFrame.lua:905>\n[C]: ?\n[C]: in function `TargetofTarget_Update'\nInterface\\FrameXML\\TargetFrame.lua:420: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[C]: ?\n[C]: ?",
-			["session"] = 2112,
-			["counter"] = 18,
-		}, -- [217]
-		{
 			["message"] = "Interface\\AddOns\\xVermin\\SortBags.lua:426: bad argument #2 to 'min' (number expected, got nil)",
 			["time"] = "2020/10/22 10:51:08",
 			["stack"] = "[C]: in function `min'\nInterface\\AddOns\\xVermin\\SortBags.lua:426: in function <Interface\\AddOns\\xVermin\\SortBags.lua:420>\nInterface\\AddOns\\xVermin\\SortBags.lua:489: in function `Initialize'\nInterface\\AddOns\\xVermin\\SortBags.lua:233: in function `Start'\nInterface\\AddOns\\xVermin\\SortBags.lua:17: in function `SortBags'\nInterface\\AddOns\\AdiBags\\core\\Layout.lua:108: in function `?'\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:117: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:117>\n[C]: ?\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:29: in function <...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n...ags\\libs\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:64: in function `SendMessage'\nInterface\\AddOns\\AdiBags\\core\\Bags.lua:105: in function `Close'\nInterface\\AddOns\\AdiBags\\core\\Bags.lua:224: in function `?'\n...\n[C]: in function `CloseAuctionHouse'\n...e\\AddOns\\TradeSkillMaster\\Core\\UI\\AuctionUI\\Core.lua:214: in function `?'\n...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:86: in function `ScriptHandlerCommon'\n...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:37: in function <...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:36>\n[C]: in function `Hide'\n...AddOns\\TradeSkillMaster\\Core\\UI\\Elements\\Element.lua:129: in function <...AddOns\\TradeSkillMaster\\Core\\UI\\Elements\\Element.lua:128>\n...radeSkillMaster\\External\\LibTSMClass\\LibTSMClass-1.lua:208: in function `Hide'\n...adeSkillMaster\\Core\\UI\\Elements\\ApplicationFrame.lua:482: in function `?'\n...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:86: in function `ScriptHandlerCommon'\n...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:37: in function <...ddOns\\TradeSkillMaster\\LibTSM\\Util\\ScriptWrapper.lua:36>",
 			["session"] = 2114,
 			["counter"] = 1,
-		}, -- [218]
+		}, -- [217]
 		{
 			["message"] = "[string \"Pre=\"Power Word: Fortitude(Rank \" Sp={1,2,1...\"]:1: attempt to compare table with number",
 			["time"] = "2020/10/23 09:25:03",
@@ -1715,7 +1707,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"Pre=\"Power Word: Fortitude(Rank \" Sp={1,2,1...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 2116,
 			["counter"] = 1,
-		}, -- [219]
+		}, -- [218]
 		{
 			["message"] = "[string \"Pre=\"Mark of the Wild(Rank \" Sp={1,2,14,26,...\"]:1: attempt to compare table with number",
 			["time"] = "2020/10/23 09:25:38",
@@ -1723,7 +1715,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"Pre=\"Mark of the Wild(Rank \" Sp={1,2,14,26,...\"]:1: in main chunk\n[C]: in function `RunScript'\nInterface\\FrameXML\\ChatFrame.lua:2033: in function `?'\nInterface\\FrameXML\\ChatFrame.lua:4695: in function `ChatEdit_ParseText'\nInterface\\FrameXML\\ChatFrame.lua:4356: in function `ChatEdit_SendText'\nInterface\\FrameXML\\ChatFrame.lua:4392: in function `ChatEdit_OnEnterPressed'\n[string \"*:OnEnterPressed\"]:1: in function <[string \"*:OnEnterPressed\"]:1>",
 			["session"] = 2116,
 			["counter"] = 1,
-		}, -- [220]
+		}, -- [219]
 		{
 			["message"] = "Interface\\AddOns\\BestBuff\\BestBuff.lua:146: attempt to index global 'this' (a nil value)",
 			["time"] = "2020/10/23 09:28:10",
@@ -1731,7 +1723,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\BestBuff\\BestBuff.lua:146: in function `BestBuff_OnLoad'\n[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
 			["session"] = 2117,
 			["counter"] = 1,
-		}, -- [221]
+		}, -- [220]
 		{
 			["message"] = "Interface\\AddOns\\BestBuff\\BestBuff.lua:135: attempt to index global 'self' (a nil value)",
 			["time"] = "2020/10/23 09:30:23",
@@ -1739,7 +1731,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\BestBuff\\BestBuff.lua:135: in function `BestBuff_OnLoad'\n[string \"*:OnLoad\"]:1: in function <[string \"*:OnLoad\"]:1>",
 			["session"] = 2118,
 			["counter"] = 1,
-		}, -- [222]
+		}, -- [221]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Leatrix_Maps' tried to call the protected function 'CompactRaidFrame1:ClearAllPoints()'.",
 			["time"] = "2020/10/23 10:39:13",
@@ -1747,7 +1739,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `ClearAllPoints'\nInterface\\FrameXML\\FlowContainer.lua:157: in function `FlowContainer_DoLayout'\nInterface\\FrameXML\\FlowContainer.lua:17: in function `FlowContainer_ResumeUpdates'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:185: in function `CompactRaidFrameContainer_LayoutFrames'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:130: in function `CompactRaidFrameContainer_TryUpdate'\n...actRaidFrames\\Blizzard_CompactRaidFrameContainer.lua:57: in function `CompactRaidFrameContainer_OnEvent'\n[string \"*:OnEvent\"]:1: in function <[string \"*:OnEvent\"]:1>",
 			["session"] = 2121,
 			["counter"] = 1,
-		}, -- [223]
+		}, -- [222]
 		{
 			["message"] = "Interface\\AddOns\\Lorti UI Classic\\core\\frames.lua:126: attempt to index global 'CompactRaidFrameContainerBorderFrame' (a nil value)",
 			["time"] = "2020/10/23 16:17:55",
@@ -1755,7 +1747,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\Lorti UI Classic\\core\\frames.lua:126: in function `ColorRaid'\nInterface\\AddOns\\Lorti UI Classic\\core\\frames.lua:134: in function <Interface\\AddOns\\Lorti UI Classic\\core\\frames.lua:133>",
 			["session"] = 2131,
 			["counter"] = 9,
-		}, -- [224]
+		}, -- [223]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ItemRack' tried to call the protected function 'ItemRackButton0:SetAttribute()'.",
 			["time"] = "2020/08/02 11:49:42",
@@ -1763,7 +1755,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `SetAttribute'\nInterface\\AddOns\\ItemRack\\ItemRackButtons.lua:35: in function `InitButtons'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:282: in function `func'\nInterface\\AddOns\\ItemRack\\ItemRack-3.45.nil.lua:970: in function `OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>",
 			["session"] = 2132,
 			["counter"] = 8,
-		}, -- [225]
+		}, -- [224]
 		{
 			["message"] = "Interface\\AddOns\\xVermin\\SortBags.lua:399: attempt to compare number with nil",
 			["time"] = "2020/10/24 20:22:35",
@@ -1771,6 +1763,14 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\xVermin\\SortBags.lua:399: in function `Stack'\nInterface\\AddOns\\xVermin\\SortBags.lua:254: in function <Interface\\AddOns\\xVermin\\SortBags.lua:241>",
 			["session"] = 2136,
 			["counter"] = 3,
+		}, -- [225]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'TargetFrameToT:Show()'.",
+			["time"] = "2020/09/23 13:06:51",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Show'\nInterface\\FrameXML\\TargetFrame.lua:910: in function <Interface\\FrameXML\\TargetFrame.lua:905>\n[C]: ?\n[C]: in function `TargetofTarget_Update'\nInterface\\FrameXML\\TargetFrame.lua:420: in function `TargetFrame_OnUpdate'\n[string \"*:OnUpdate\"]:1: in function <[string \"*:OnUpdate\"]:1>\n[C]: ?\n[C]: ?",
+			["session"] = 2138,
+			["counter"] = 19,
 		}, -- [226]
 	},
 }

@@ -1,3 +1,4 @@
+-- Last update: 2020/07/28 （重新整理）
 if GetLocale() ~= "zhCN" then return end
 local L
 
@@ -12,7 +13,7 @@ L:SetGeneralLocalization{
 	name 		= "加摩拉"
 }
 -----------------------------
---  Lady Serevess  --
+--  Lady Sarevess  --
 -----------------------------
 L = DBM:GetModLocalization("LadySerevess")
 
@@ -108,7 +109,7 @@ L:SetGeneralLocalization{
 L = DBM:GetModLocalization(375)
 
 L:SetGeneralLocalization{
-	name 		= "Warden Stilgiss"
+	name 		= "典狱官斯迪尔基斯"
 }
 -----------------------------
 --  Fineous Darkvire  --
@@ -200,7 +201,144 @@ L:SetGeneralLocalization{
 }
 
 -------------------------
---  Deadmines (3)  --
+--  Lower Blackrock Spire-229J/229M (6L/3C)  --
+-----------------------------
+--  Highlord Omokk  --
+-----------------------------
+L = DBM:GetModLocalization(388)
+
+L:SetGeneralLocalization{
+	name 		= "欧莫克大王"
+}
+-----------------------------
+--  Shadow Hunter Vosh'gajin  --
+-----------------------------
+L = DBM:GetModLocalization(389)
+
+L:SetGeneralLocalization{
+	name 		= "暗影猎手沃许加斯"
+}
+-----------------------------
+--  War Master Voone  --
+-----------------------------
+L = DBM:GetModLocalization(390)
+
+L:SetGeneralLocalization{
+	name 		= "指挥官沃恩"
+}
+-----------------------------
+--  Mother Smolderweb  --
+-----------------------------
+L = DBM:GetModLocalization(391)
+
+L:SetGeneralLocalization{
+	name 		= "烟网蛛后"
+}
+-----------------------------
+--  Urok Doomhowl  --
+-----------------------------
+L = DBM:GetModLocalization(392)
+
+L:SetGeneralLocalization{
+	name 		= "乌洛克"
+}
+-----------------------------
+--  Quartermaster Zigris  --
+-----------------------------
+L = DBM:GetModLocalization(393)
+
+L:SetGeneralLocalization{
+	name 		= "军需官兹格雷斯"
+}
+-----------------------------
+--  Halycon  --
+-----------------------------
+L = DBM:GetModLocalization(394)
+
+L:SetGeneralLocalization{
+	name 		= "哈雷肯"
+}
+-----------------------------
+--  Gizrul  --
+-----------------------------
+L = DBM:GetModLocalization(395)
+
+L:SetGeneralLocalization{
+	name 		= "奴役者基兹卢尔"
+}
+-----------------------------
+--  Overlord Wyrmthalak  --
+-----------------------------
+L = DBM:GetModLocalization(396)
+
+L:SetGeneralLocalization{
+	name 		= "维姆萨拉克"
+}
+
+-------------------------
+--  Upper Blackrock Spire-229J/229M (4C)  --
+-----------------------------
+--  Pyroguard Emberseer  --
+-----------------------------
+L = DBM:GetModLocalization("PyroguardEmberseer")
+
+L:SetGeneralLocalization{
+	name 		= "烈焰卫士艾博希尔"
+}
+L:SetMiscLocalization{
+	Pull		= "%s 开始恢复实力!"
+}
+-----------------------------
+--  Solakar Flamewreath  --
+-----------------------------
+L = DBM:GetModLocalization("SolakarFlamewreath")
+
+L:SetGeneralLocalization{
+	name 		= "索拉卡·火冠"
+}
+-----------------------------
+--  Goraluk Anvilcrack  --
+-----------------------------
+L = DBM:GetModLocalization("GoralukAnvilcrack")
+
+L:SetGeneralLocalization{
+	name 		= "古拉鲁克"
+}
+-----------------------------
+--  Jed Runewatcher  --
+-----------------------------
+L = DBM:GetModLocalization("JedRunewatcher")
+
+L:SetGeneralLocalization{
+	name 		= "杰德"
+}
+-----------------------------
+--  Warchief Rend Blackhand  --
+-----------------------------
+L = DBM:GetModLocalization("WarchiefRendBlackhand")
+
+L:SetGeneralLocalization{
+	name 		= "大酋长雷德·黑手"
+}
+-----------------------------
+--  The Beast  --
+-----------------------------
+L = DBM:GetModLocalization("TheBeast")
+
+L:SetGeneralLocalization{
+	name 		= "比斯巨兽"
+}
+-----------------------------
+--  General Drakkisath  --
+-----------------------------
+L = DBM:GetModLocalization("GeneralDrakkisath")
+
+L:SetGeneralLocalization{
+	name 		= "达基萨斯将军"
+}
+
+-------------------------
+--  Deadmines (3L/5C)  --
 -----------------------------
 --  Rhahk'Zor  --
 -----------------------------
@@ -267,7 +405,7 @@ L:SetGeneralLocalization{
 }
 
 -------------------------
---  Dire Maul-230J/429M (4)  --
+--  Dire Maul-230J/429M (4L/6C)  --
 -----------------------------
 --  Zevrim Thornhoof  --
 -----------------------------
@@ -317,7 +455,7 @@ L:SetGeneralLocalization{
 	name 		= "伊琳娜·暗木"
 }
 -----------------------------
---  Magister Kelendris  --
+--  Magister Kalendris  --
 -----------------------------
 L = DBM:GetModLocalization(408)
 
@@ -398,7 +536,7 @@ L:SetGeneralLocalization{
 }
 
 -------------------------
---  Gnomeregan-231J/90M (5)  --
+--  Gnomeregan-231J/90M (5L/7C)  --
 -----------------------------
 --  Grubbis  --
 -----------------------------
@@ -441,82 +579,7 @@ L:SetGeneralLocalization{
 }
 
 -------------------------
---  Lower Blackrock Spire-229J/229M (6)  --
------------------------------
---  Highlord Omokk  --
------------------------------
-L = DBM:GetModLocalization(388)
-
-L:SetGeneralLocalization{
-	name 		= "欧莫克大王"
-}
------------------------------
---  Shadow Hunter Vosh'gajin  --
------------------------------
-L = DBM:GetModLocalization(389)
-
-L:SetGeneralLocalization{
-	name 		= "暗影猎手沃许加斯"
-}
------------------------------
---  War Master Voone  --
------------------------------
-L = DBM:GetModLocalization(390)
-
-L:SetGeneralLocalization{
-	name 		= "指挥官沃恩"
-}
------------------------------
---  Mother Smolderweb  --
------------------------------
-L = DBM:GetModLocalization(391)
-
-L:SetGeneralLocalization{
-	name 		= "烟网蛛后"
-}
------------------------------
---  Urok Doomhowl  --
------------------------------
-L = DBM:GetModLocalization(392)
-
-L:SetGeneralLocalization{
-	name 		= "乌洛克"
-}
------------------------------
---  Quartermaster Zigris  --
------------------------------
-L = DBM:GetModLocalization(393)
-
-L:SetGeneralLocalization{
-	name 		= "军需官兹格雷斯"
-}
------------------------------
---  Halycon  --
------------------------------
-L = DBM:GetModLocalization(394)
-
-L:SetGeneralLocalization{
-	name 		= "哈雷肯"
-}
------------------------------
---  Gizrul  --
------------------------------
-L = DBM:GetModLocalization(395)
-
-L:SetGeneralLocalization{
-	name 		= "奴役者基兹卢尔"
-}
------------------------------
---  Overlord Wyrmthalak  --
------------------------------
-L = DBM:GetModLocalization(396)
-
-L:SetGeneralLocalization{
-	name 		= "维姆萨拉克"
-}
-
--------------------------
---  Maraudon-232J/349M (7)  --
+--  Maraudon-232J/349M (6L/8C)  --
 -----------------------------
 --  Noxxion  --
 -----------------------------
@@ -590,7 +653,7 @@ L:SetGeneralLocalization{
 }
 
 -------------------------
---  Ragefire Chasm (7)  --
+--  Ragefire Chasm (7L/9C)  --
 -----------------------------
 --  Oggleflint  --
 -----------------------------
@@ -625,7 +688,7 @@ L:SetGeneralLocalization{
 }
 
 -------------------------
---  Razorfen Downs -233J/129M (9)  --
+--  Razorfen Downs -233J/129M (8L/10C)  --
 -----------------------------
 --  Tuten'kash  --
 -----------------------------
@@ -636,7 +699,7 @@ L:SetGeneralLocalization{
 }
 
 -----------------------------
---  Mordress Fire Eye  --
+--  Mordresh Fire Eye  --
 -----------------------------
 L = DBM:GetModLocalization("MordreshFireEye")
 
@@ -672,7 +735,7 @@ L:SetGeneralLocalization{
 }
 
 -----------------------------
---  PlaguemawtheRotting  --
+--  Plaguemaw the Rotting  --
 -----------------------------
 L = DBM:GetModLocalization("PlaguemawtheRotting")
 
@@ -681,7 +744,7 @@ L:SetGeneralLocalization{
 }
 
 -------------------------
---  Razorfen Kraul -234J/47M (10)  --
+--  Razorfen Kraul -234J/47M (9L/11C)  --
 -----------------------------
 --  Roogug  --
 -----------------------------
@@ -755,7 +818,7 @@ L:SetGeneralLocalization{
 }
 
 -------------------------
---  Scarlet Monastery (11)  --
+--  Scarlet Monastery 189M (12C)  --
 -----------------------------
 --  Interrogator Vishas  --
 -----------------------------
@@ -820,58 +883,126 @@ L:SetGeneralLocalization{
 }
 
 -------------------------
---  Stormwind Stockaid (12)  --
+--  Scholomance 289M (13C)  --
 -----------------------------
---  Targorr the Dread  --
+--  Kirtonos the Herald  --
 -----------------------------
-L = DBM:GetModLocalization("Targorr")
+L = DBM:GetModLocalization("KirtonostheHerald")
 
 L:SetGeneralLocalization{
-	name 		= "可怕的塔格尔"
+	name 		= "传令官基尔图诺斯"
 }
+
 -----------------------------
---  Kam Deepfury  --
+--  Jandice Barov  --
 -----------------------------
-L = DBM:GetModLocalization("KamDeepfury")
+L = DBM:GetModLocalization("JandiceBarov")
 
 L:SetGeneralLocalization{
-	name 		= "卡姆·深怒"
+	name 		= "詹迪斯·巴罗夫"
 }
+
 -----------------------------
---  Hamhock  --
+--  Rattlegore  --
 -----------------------------
-L = DBM:GetModLocalization("Hamhock")
+L = DBM:GetModLocalization("Rattlegore")
 
 L:SetGeneralLocalization{
-	name 		= "哈姆霍克"
+	name 		= "血骨傀儡"
 }
+
 -----------------------------
---  Bazil Thredd  --
+--  Marduk Blackpool  --
 -----------------------------
-L = DBM:GetModLocalization("BazilThredd")
+L = DBM:GetModLocalization("MardukBlackpool")
 
 L:SetGeneralLocalization{
-	name 		= "巴基尔·斯瑞德"
+	name 		= "马杜克·布莱克波尔"
 }
+
 -----------------------------
---  Dextren Ward  --
+--  Vectus  --
 -----------------------------
-L = DBM:GetModLocalization("DextrenWard")
+L = DBM:GetModLocalization("Vectus")
 
 L:SetGeneralLocalization{
-	name 		= "迪克斯特·瓦德"
+	name 		= "维克图斯"
 }
+
 -----------------------------
---  Bruegal Ironknuckle  --
+--  Ras Frostwhisper  --
 -----------------------------
-L = DBM:GetModLocalization("BruegalIronknuckle")
+L = DBM:GetModLocalization("RasFrostwhisper")
 
 L:SetGeneralLocalization{
-	name 		= "布鲁戈·艾尔克纳寇"
+	name 		= "莱斯·霜语"
+}
+
+-----------------------------
+--  Instructor Malicia  --
+-----------------------------
+L = DBM:GetModLocalization("InstructorMalicia")
+
+L:SetGeneralLocalization{
+	name 		= "讲师玛丽希亚"
+}
+
+-----------------------------
+--  Doctor Theolen Krastinov  --
+-----------------------------
+L = DBM:GetModLocalization("DoctorTheolenKrastinov")
+
+L:SetGeneralLocalization{
+	name 		= "瑟尔林·卡斯迪诺夫教授"
+}
+
+-----------------------------
+--  Lorekeeper Polkelt  --
+-----------------------------
+L = DBM:GetModLocalization("LorekeeperPolkelt")
+
+L:SetGeneralLocalization{
+	name 		= "博学者普克尔特"
+}
+
+-----------------------------
+--  The Ravenian  --
+-----------------------------
+L = DBM:GetModLocalization("TheRavenian")
+
+L:SetGeneralLocalization{
+	name 		= "拉文尼亚"
+}
+
+-----------------------------
+--  Lord Alexei Barov  --
+-----------------------------
+L = DBM:GetModLocalization("LordAlexeiBarov")
+
+L:SetGeneralLocalization{
+	name 		= "阿雷克斯·巴罗夫"
+}
+
+-----------------------------
+--  Lady Illucia Barov  --
+-----------------------------
+L = DBM:GetModLocalization("LadyIlluciaBarov")
+
+L:SetGeneralLocalization{
+	name 		= "伊露希亚·巴罗夫"
+}
+
+-----------------------------
+--  Darkmaster Gandling  --
+-----------------------------
+L = DBM:GetModLocalization("DarkmasterGandling")
+
+L:SetGeneralLocalization{
+	name 		= "黑暗院长加丁"
 }
 
 -------------------------
---  Shadowfang Keep (15)  --
+--  Shadowfang Keep 33M (14C)  --
 -----------------------------
 --  Rethilgore  --
 -----------------------------
@@ -954,7 +1085,238 @@ L:SetGeneralLocalization{
 }
 
 -------------------------
---  Wailing Caverns 229J/70M (12L/16C)  --
+--  Stormwind Stockaid 34M (10L/15C)  --
+-----------------------------
+--  Targorr the Dread  --
+-----------------------------
+L = DBM:GetModLocalization("Targorr")
+
+L:SetGeneralLocalization{
+	name 		= "可怕的塔格尔"
+}
+-----------------------------
+--  Kam Deepfury  --
+-----------------------------
+L = DBM:GetModLocalization("KamDeepfury")
+
+L:SetGeneralLocalization{
+	name 		= "卡姆·深怒"
+}
+-----------------------------
+--  Hamhock  --
+-----------------------------
+L = DBM:GetModLocalization("Hamhock")
+
+L:SetGeneralLocalization{
+	name 		= "哈姆霍克"
+}
+-----------------------------
+--  Bazil Thredd  --
+-----------------------------
+L = DBM:GetModLocalization("BazilThredd")
+
+L:SetGeneralLocalization{
+	name 		= "巴基尔·斯瑞德"
+}
+-----------------------------
+--  Dextren Ward  --
+-----------------------------
+L = DBM:GetModLocalization("DextrenWard")
+
+L:SetGeneralLocalization{
+	name 		= "迪克斯特·瓦德"
+}
+-----------------------------
+--  Bruegal Ironknuckle  --
+-----------------------------
+L = DBM:GetModLocalization("BruegalIronknuckle")
+
+L:SetGeneralLocalization{
+	name 		= "布鲁戈·艾尔克纳寇"
+}
+
+-------------------------
+--  Stratholme 236J/329M (10L/16C)  --
+-----------------------------
+--  Hearthsinger Forresten  --
+-----------------------------
+L = DBM:GetModLocalization(443)
+
+L:SetGeneralLocalization{
+	name 		= "弗雷斯特恩"
+}
+
+-----------------------------
+--  Timmy the Cruel  --
+-----------------------------
+L = DBM:GetModLocalization(445)
+
+L:SetGeneralLocalization{
+	name 		= "悲惨的提米"
+}
+
+-----------------------------
+--  Malor the Zealous  --
+-----------------------------
+L = DBM:GetModLocalization(749)
+
+L:SetGeneralLocalization{
+	name 		= "狂热的玛洛尔"
+}
+
+-----------------------------
+--  Cannon Master Willey  --
+-----------------------------
+L = DBM:GetModLocalization(446)
+
+L:SetGeneralLocalization{
+	name 		= "炮手威利"
+}
+
+-----------------------------
+--  Archivist Galford  --
+-----------------------------
+L = DBM:GetModLocalization(448)
+
+L:SetGeneralLocalization{
+	name 		= "档案管理员加尔福特"
+}
+
+-----------------------------
+--  Balnazzar  --
+-----------------------------
+L = DBM:GetModLocalization(449)
+
+L:SetGeneralLocalization{
+	name 		= "巴纳扎尔"
+}
+
+-----------------------------
+--  The Unforgiven  --
+-----------------------------
+L = DBM:GetModLocalization(450)
+
+L:SetGeneralLocalization{
+	name 		= "不可宽恕者"
+}
+
+-----------------------------
+--  Baroness Anastari  --
+-----------------------------
+L = DBM:GetModLocalization(451)
+
+L:SetGeneralLocalization{
+	name 		= "安娜丝塔丽男爵夫人"
+}
+
+-----------------------------
+--  Narub'enkan  --
+-----------------------------
+L = DBM:GetModLocalization(452)
+
+L:SetGeneralLocalization{
+	name 		= "奈鲁布恩坎"
+}
+
+-----------------------------
+--  Maleki the Pallid  --
+-----------------------------
+L = DBM:GetModLocalization(453)
+
+L:SetGeneralLocalization{
+	name 		= "苍白的玛勒基"
+}
+
+-----------------------------
+--  Magistrate Barthilas  --
+-----------------------------
+L = DBM:GetModLocalization(454)
+
+L:SetGeneralLocalization{
+	name 		= "巴瑟拉斯镇长"
+}
+
+-----------------------------
+--  Ramstein the Gorger  --
+-----------------------------
+L = DBM:GetModLocalization(455)
+
+L:SetGeneralLocalization{
+	name 		= "吞咽者拉姆斯登"
+}
+L:SetTimerLocalization{
+	TimerGuards	= "哨兵出现"
+}
+L:SetOptionLocalization{
+	TimerGuards	= "击败首领后，为精英护卫的出现显示计时器。"
+}
+
+-----------------------------
+--  Baron Rivendare  --
+-----------------------------
+L = DBM:GetModLocalization(456)
+
+L:SetGeneralLocalization{
+	name 		= "瑞文戴尔男爵"
+}
+
+-------------------------
+--  Sunken Temple 237J/109M (11L/17C)  --
+-----------------------------
+--  Avatar of Hakkar  --
+-----------------------------
+L = DBM:GetModLocalization(457)
+
+L:SetGeneralLocalization{
+	name 		= "哈卡的化身"
+}
+-----------------------------
+--  Jammal'an the Prophet  --
+-----------------------------
+L = DBM:GetModLocalization(458)
+
+L:SetGeneralLocalization{
+	name 		= "预言者迦玛兰"
+}
+----------------------------------------------
+--	Wardens of the Dream					--
+--	(Dreamscythe, Weaver, Morphaz, Hazzas)	--
+----------------------------------------------
+L = DBM:GetModLocalization("Dreamscythe")
+
+L:SetGeneralLocalization{
+	name 		= "德姆塞卡尔"
+}
+
+L = DBM:GetModLocalization("Weaver")
+
+L:SetGeneralLocalization{
+	name 		= "德拉维沃尔"
+}
+
+L = DBM:GetModLocalization("Morphaz")
+
+L:SetGeneralLocalization{
+	name 		= "摩弗拉斯"
+}
+
+L = DBM:GetModLocalization("Hazzas")
+
+L:SetGeneralLocalization{
+	name 		= "哈扎斯"
+}
+
+-----------------------------
+--  Shade of Eranikus  --
+-----------------------------
+L = DBM:GetModLocalization(463)
+
+L:SetGeneralLocalization{
+	name 		= "伊兰尼库斯的阴影"
+}
+
+-------------------------
+--  Uldaman 229J/70M (12L/18C)  --
 -----------------------------
 --  Revelosh  --
 -----------------------------
@@ -1021,7 +1383,7 @@ L:SetGeneralLocalization{
 }
 
 -------------------------
---  Wailing Caverns 240J/43M (13L/17C)  --
+--  Wailing Caverns 240J/43M (13L/19C)  --
 -----------------------------
 --  Lady Anacondra  --
 -----------------------------
@@ -1077,7 +1439,7 @@ L:SetGeneralLocalization{
 }
 
 -----------------------------
---  Veran the Everliving  --
+--  Verdan the Everliving  --
 -----------------------------
 L = DBM:GetModLocalization(480)
 
@@ -1104,7 +1466,7 @@ L:SetGeneralLocalization{
 }
 
 -------------------------
---  Zul'Farrak 241J/209M (14L/18C)  --
+--  Zul'Farrak 241J/209M (14L/20C)  --
 -----------------------------
 --  Ghaz'rilla  --
 -----------------------------
