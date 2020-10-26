@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Gluth", "DBM-Naxx", 2)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20200623220427")
+mod:SetRevision("20201025150202")
 mod:SetCreatureID(15932)
 mod:SetEncounterID(1108)
 mod:SetModelID(16064)
@@ -16,7 +16,7 @@ local warnDecimateSoon	= mod:NewSoonAnnounce(28374, 2)
 local warnDecimateNow	= mod:NewSpellAnnounce(28374, 3)
 
 local enrageTimer		= mod:NewBerserkTimer(420)
-local timerDecimate		= mod:NewCDTimer(104, 28374, nil, nil, nil, 2)
+local timerDecimate		= mod:NewCDTimer(120, 28374, nil, nil, nil, 2)--120-182
 
 function mod:OnCombatStart(delay)
 	enrageTimer:Start(420 - delay)
@@ -35,5 +35,3 @@ do
 		end
 	end
 end
-
-
