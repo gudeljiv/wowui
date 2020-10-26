@@ -1,7 +1,7 @@
 
 Grid2DB = {
 	["namespaces"] = {
-		["Grid2AoeHeals"] = {
+		["LibDualSpec-1.0"] = {
 		},
 		["Grid2Layout"] = {
 			["global"] = {
@@ -19,6 +19,18 @@ Grid2DB = {
 						["solo"] = "By Group & Class",
 						["raid"] = "By Group & Class",
 					},
+					["BackgroundR"] = 0.101960784313725,
+					["BorderR"] = 0.501960784313726,
+					["PosX"] = -253.333301786579,
+					["anchor"] = "CENTER",
+					["BackgroundG"] = 0.101960784313725,
+					["minimapIcon"] = {
+						["hide"] = true,
+					},
+					["PosY"] = 79.999838360142,
+					["BackgroundB"] = 0.101960784313725,
+					["BackgroundA"] = 0,
+					["BorderG"] = 0.501960784313726,
 					["extraThemes"] = {
 						{
 							["BackgroundTexture"] = "None",
@@ -40,7 +52,7 @@ Grid2DB = {
 							["anchor"] = "CENTER",
 							["clamp"] = true,
 							["groupAnchor"] = "TOPLEFT",
-							["PosY"] = 58.1331980188616,
+							["PosY"] = 58.1331973278132,
 							["FrameLock"] = false,
 							["BackgroundB"] = 0.101960784313725,
 							["BackgroundA"] = 0,
@@ -49,7 +61,7 @@ Grid2DB = {
 							["BorderTexture"] = "None",
 							["horizontal"] = false,
 							["BackgroundG"] = 0.101960784313725,
-							["PosX"] = -282.666770927116,
+							["PosX"] = -282.666741012806,
 						}, -- [1]
 						{
 							["BackgroundTexture"] = "None",
@@ -114,26 +126,16 @@ Grid2DB = {
 							["FrameDisplay"] = "Always",
 						}, -- [3]
 					},
-					["BorderR"] = 0.501960784313726,
 					["BorderTexture"] = "None",
-					["anchor"] = "CENTER",
-					["BackgroundG"] = 0.101960784313725,
-					["minimapIcon"] = {
-						["hide"] = true,
-					},
-					["PosY"] = 79.999838360142,
-					["BackgroundR"] = 0.101960784313725,
-					["BackgroundA"] = 0,
-					["BorderG"] = 0.501960784313726,
-					["PosX"] = -253.333301786579,
-					["BackgroundB"] = 0.101960784313725,
 					["Spacing"] = 1,
 				},
 			},
 		},
-		["LibDualSpec-1.0"] = {
+		["Grid2AoeHeals"] = {
 		},
 		["Grid2Options"] = {
+		},
+		["Grid2RaidDebuffs"] = {
 		},
 		["Grid2Frame"] = {
 			["profiles"] = {
@@ -170,18 +172,18 @@ Grid2DB = {
 							},
 							["frameTexture"] = "Glamour2",
 							["frameBorderTexture"] = "None",
-							["mouseoverHighlight"] = false,
 							["frameHeights"] = {
 								[10] = 40,
 								[5] = 50,
 							},
+							["mouseoverHighlight"] = false,
+							["orientation"] = "VERTICAL",
 							["frameContentColor"] = {
 								["a"] = 0,
 								["r"] = 0,
 								["g"] = 0,
 								["b"] = 0,
 							},
-							["orientation"] = "VERTICAL",
 							["frameWidth"] = 125,
 							["frameBorderColor"] = {
 								["a"] = 0,
@@ -221,18 +223,18 @@ Grid2DB = {
 								["g"] = 1,
 								["r"] = 1,
 							},
-							["orientation"] = "VERTICAL",
 							["frameContentColor"] = {
 								["a"] = 0,
 								["b"] = 0,
 								["g"] = 0,
 								["r"] = 0,
 							},
-							["mouseoverHighlight"] = false,
+							["orientation"] = "VERTICAL",
 							["frameHeights"] = {
 								[5] = 45,
 								[10] = 50,
 							},
+							["mouseoverHighlight"] = false,
 							["frameWidth"] = 125,
 							["frameTexture"] = "Glamour2",
 						}, -- [2]
@@ -262,18 +264,18 @@ Grid2DB = {
 							},
 							["frameTexture"] = "Glamour2",
 							["frameBorderTexture"] = "None",
-							["frameHeights"] = {
-								[25] = 20,
-								[40] = 20,
-							},
 							["frameContentColor"] = {
 								["a"] = 0,
 								["b"] = 0,
 								["g"] = 0,
 								["r"] = 0,
 							},
-							["mouseoverHighlight"] = false,
+							["frameHeights"] = {
+								[25] = 20,
+								[40] = 20,
+							},
 							["orientation"] = "VERTICAL",
+							["mouseoverHighlight"] = false,
 							["frameWidth"] = 120,
 							["frameBorderColor"] = {
 								["a"] = 0,
@@ -285,25 +287,24 @@ Grid2DB = {
 					},
 					["frameBorderDistance"] = -2,
 					["frameHeight"] = 50,
-					["frameBorderTexture"] = "None",
+					["frameTexture"] = "Glamour2",
 					["barTexture"] = "Glamour2",
 					["frameContentColor"] = {
 						["a"] = 0,
 					},
 					["frameWidth"] = 120,
-					["frameTexture"] = "Glamour2",
+					["frameBorderTexture"] = "None",
 				},
 			},
-		},
-		["Grid2RaidDebuffs"] = {
 		},
 	},
 	["profileKeys"] = {
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
 		["Mxzq - Golemagg"] = "Default",
-		["Augustin - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",
+		["Battlearm - Golemagg"] = "Default",
+		["Augustin - Golemagg"] = "Default",
 		["Battitude - Golemagg"] = "Default",
 	},
 	["profiles"] = {

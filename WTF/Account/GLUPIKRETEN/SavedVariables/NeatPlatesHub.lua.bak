@@ -201,7 +201,7 @@ NeatPlatesHubSettings = {
 		["OpacityFilterUntitledFriendlyNPC"] = false,
 		["HighHealthThreshold"] = 0.7,
 		["ScaleTargetSpotlight"] = false,
-		["HideCooldownSpiral"] = false,
+		["HideCooldownSpiral"] = true,
 		["WidgetAuraAlignment"] = 1,
 		["WidgetDebuffLookup"] = {
 		},
@@ -248,14 +248,14 @@ NeatPlatesHubSettings = {
 		},
 		["OpacitySpotlightMouseover"] = false,
 		["ColorDangerGlowMode"] = 2,
-		["ScaleIgnoreInactive"] = false,
-		["WidgetRangeIndicator"] = false,
 		["ColorFriendlyPlayer"] = {
 			["a"] = 0.999997794628143,
 			["r"] = 0,
 			["g"] = 0,
 			["b"] = 0.999997794628143,
 		},
+		["AdvancedEnableUnitCache"] = true,
+		["ScaleIgnoreInactive"] = false,
 		["EnemyStatusTextMode"] = "HealthFunctionNone",
 		["ColorThreatSafe"] = {
 			["a"] = 0.999997794628143,
@@ -324,7 +324,7 @@ NeatPlatesHubSettings = {
 		["WidgetDebuffTrackList"] = "",
 		["ClassEnemyIcon"] = false,
 		["OpacitySpotlight"] = 0.85,
-		["OpacityFiltered"] = 0,
+		["OpacityFiltered"] = -0,
 		["OpacityTarget"] = 1,
 		["WidgetTargetHighlight"] = true,
 		["ColorLowHealth"] = {
@@ -353,8 +353,8 @@ NeatPlatesHubSettings = {
 			["g"] = 0,
 			["b"] = 0,
 		},
-		["UnitSpotlightScale"] = 1.4,
 		["TextShowServerIndicator"] = true,
+		["UnitSpotlightScale"] = 1.4,
 		["TextColorHostilePlayer"] = {
 			["a"] = 0.999997794628143,
 			["r"] = 0.999997794628143,
@@ -427,7 +427,7 @@ NeatPlatesHubSettings = {
 			["g"] = 0.701959252357483,
 			["b"] = 0.301960110664368,
 		},
-		["AdvancedEnableUnitCache"] = true,
+		["WidgetRangeIndicator"] = false,
 		["ColorPartyAggroGlow"] = true,
 		["ThreatGlowEnable"] = true,
 		["CustomFocusColor"] = false,

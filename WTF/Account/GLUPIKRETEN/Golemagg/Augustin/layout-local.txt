@@ -5,7 +5,7 @@ Anchor: TOPLEFT
 X: 453
 Y: -259
 W: 270
-H: 217
+H: 219
 Frame: RangeDisplayMainFrame_playertarget
 FrameLevel: 1
 Anchor: CENTER
@@ -17,7 +17,7 @@ Frame: EavesDropFrame
 FrameLevel: 1
 Anchor: RIGHT
 X: -44
-Y: 272
+Y: 250
 W: 154
 H: 322
 Frame: PlayerFrame
@@ -139,13 +139,6 @@ X: 243
 Y: -107
 W: 50
 H: 50
-Frame: DetailsPluginContainerWindow
-FrameLevel: 1
-Anchor: TOP
-X: -7
-Y: -113
-W: 925
-H: 600
 Frame: GameMenuFrame
 FrameLevel: 1
 Anchor: CENTER

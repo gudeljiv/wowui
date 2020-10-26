@@ -4,6 +4,7 @@ TomTomDB = {
 		["Dotwise - Golemagg"] = "Default",
 		["Mxyz - Golemagg"] = "Default",
 		["Verminz - Golemagg"] = "Default",
+		["Battlearm - Golemagg"] = "Default",
 		["Battitude - Golemagg"] = "Default",
 		["Dmitar - Golemagg"] = "Default",
 		["Mxym - Golemagg"] = "Default",
@@ -65,6 +66,7 @@ TomTomWaypointsM = {
 		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
 		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
 		["Verminz - Golemagg"] = "Verminz - Golemagg",
+		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
 		["Battitude - Golemagg"] = "Battitude - Golemagg",
 		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
 		["Mxym - Golemagg"] = "Mxym - Golemagg",
@@ -89,6 +91,8 @@ TomTomWaypointsM = {
 		["Mxyz - Golemagg"] = {
 		},
 		["Verminz - Golemagg"] = {
+		},
+		["Battlearm - Golemagg"] = {
 		},
 		["Battitude - Golemagg"] = {
 		},

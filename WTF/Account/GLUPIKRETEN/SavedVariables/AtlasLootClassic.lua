@@ -5,6 +5,7 @@ AtlasLootClassicDB = {
 		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
 		["Pitchwise - Golemagg"] = "Pitchwise - Golemagg",
 		["Elohssa - Stonespine"] = "Elohssa - Stonespine",
+		["Battlearm - Golemagg"] = "Default",
 		["Paydo - Dreadmist"] = "Paydo - Dreadmist",
 		["Greenwise - Golemagg"] = "Greenwise - Golemagg",
 		["Battitude - Golemagg"] = "Default",
@@ -62,6 +63,8 @@ AtlasLootClassicDB = {
 			},
 		},
 		["Elohssa - Stonespine"] = {
+		},
+		["Battlearm - Golemagg"] = {
 		},
 		["Paydo - Dreadmist"] = {
 			["minimap"] = {

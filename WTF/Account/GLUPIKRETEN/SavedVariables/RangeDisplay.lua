@@ -10,6 +10,7 @@ RangeDisplayDB3 = {
 		["Koloman - Golemagg"] = "Default",
 		["Jaroslav - Golemagg"] = "Default",
 		["Antun - Golemagg"] = "Default",
+		["Battlearm - Golemagg"] = "Default",
 		["Mxyzptlk - Golemagg"] = "Default",
 		["Vermin - Golemagg"] = "Default",
 		["Dmitar - Golemagg"] = "Default",

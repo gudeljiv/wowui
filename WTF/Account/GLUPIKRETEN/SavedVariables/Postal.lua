@@ -4,6 +4,7 @@ Postal3ClassicDB = {
 		["Dotwise - Golemagg"] = "Dotwise - Golemagg",
 		["Mxyz - Golemagg"] = "Mxyz - Golemagg",
 		["Verminz - Golemagg"] = "Verminz - Golemagg",
+		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
 		["Battitude - Golemagg"] = "Battitude - Golemagg",
 		["Dmitar - Golemagg"] = "Dmitar - Golemagg",
 		["Mxym - Golemagg"] = "Mxym - Golemagg",
@@ -28,16 +29,17 @@ Postal3ClassicDB = {
 				"Antun|Golemagg|Horde|2|SHAMAN", -- [1]
 				"Augustin|Golemagg|Horde|53|MAGE", -- [2]
 				"Battitude|Golemagg|Horde|1|ROGUE", -- [3]
-				"Dmitar|Golemagg|Horde|3|PRIEST", -- [4]
-				"Grgur|Golemagg|Horde|2|WARLOCK", -- [5]
-				"Jaroslav|Golemagg|Horde|10|DRUID", -- [6]
-				"Koloman|Golemagg|Horde|1|MAGE", -- [7]
-				"Mxyzptlk|Golemagg|Horde|6|WARLOCK", -- [8]
-				"Mxyz|Golemagg|Horde|5|PRIEST", -- [9]
-				"Mxzq|Golemagg|Horde|34|HUNTER", -- [10]
-				"Testxv|Golemagg|Horde|1|HUNTER", -- [11]
-				"Vermins|Stonespine|Horde|2|WARRIOR", -- [12]
-				"Vermin|Golemagg|Horde|34|WARRIOR", -- [13]
+				"Battlearm|Golemagg|Horde|1|SHAMAN", -- [4]
+				"Dmitar|Golemagg|Horde|3|PRIEST", -- [5]
+				"Grgur|Golemagg|Horde|2|WARLOCK", -- [6]
+				"Jaroslav|Golemagg|Horde|10|DRUID", -- [7]
+				"Koloman|Golemagg|Horde|1|MAGE", -- [8]
+				"Mxyzptlk|Golemagg|Horde|6|WARLOCK", -- [9]
+				"Mxyz|Golemagg|Horde|5|PRIEST", -- [10]
+				"Mxzq|Golemagg|Horde|34|HUNTER", -- [11]
+				"Testxv|Golemagg|Horde|1|HUNTER", -- [12]
+				"Vermins|Stonespine|Horde|2|WARRIOR", -- [13]
+				"Vermin|Golemagg|Horde|34|WARRIOR", -- [14]
 			},
 		},
 	},
@@ -58,6 +60,8 @@ Postal3ClassicDB = {
 					"Greenwise|Golemagg|Horde", -- [1]
 				},
 			},
+		},
+		["Battlearm - Golemagg"] = {
 		},
 		["Battitude - Golemagg"] = {
 		},

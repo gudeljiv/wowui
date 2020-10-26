@@ -5,6 +5,7 @@ LS_TOASTS_GLOBAL_CONFIG = {
 		["Mxyz - Golemagg"] = "Default",
 		["Pitchwise - Golemagg"] = "Default",
 		["Elohssa - Stonespine"] = "Default",
+		["Battlearm - Golemagg"] = "Default",
 		["Paydo - Dreadmist"] = "Default",
 		["Kosturko - Golemagg"] = "Default",
 		["Battitude - Golemagg"] = "Default",

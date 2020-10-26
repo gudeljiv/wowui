@@ -1,1 +1,2 @@
-TownsfolkTracker: disabled
+WeakAurasCompanion: enabled
+WeakAurasArchive: enabled

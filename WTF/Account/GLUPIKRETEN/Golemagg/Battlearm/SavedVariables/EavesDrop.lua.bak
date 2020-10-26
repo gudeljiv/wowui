@@ -1,0 +1,10 @@
+
+EavesDropStatsDB = {
+	["profileKeys"] = {
+		["Battlearm - Golemagg"] = "Battlearm - Golemagg",
+	},
+	["profiles"] = {
+		["Battlearm - Golemagg"] = {
+		},
+	},
+}
